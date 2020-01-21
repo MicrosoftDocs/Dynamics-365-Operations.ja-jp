@@ -3,7 +3,7 @@ title: X++ およびデバッガーの機能
 description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。 これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,383 +12,425 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26801
-ms.assetid: 27c65e79-df74-4249-b684-97e1d40da753
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a814a8c0694b63e85a6dde3d2e747f609095334e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0d42b23459c3ef81384a759ba3373f9c9b0bcf95
+ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183341"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854052"
 ---
-# <a name="x-and-debugger-features"></a><span data-ttu-id="877de-104">X++ およびデバッガーの機能</span><span class="sxs-lookup"><span data-stu-id="877de-104">X++ and debugger features</span></span>
+# <a name="x-and-debugger-features"></a><span data-ttu-id="0254b-104">X++ およびデバッガーの機能</span><span class="sxs-lookup"><span data-stu-id="0254b-104">X++ and debugger features</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="877de-105">このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。</span><span class="sxs-lookup"><span data-stu-id="877de-105">This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features.</span></span> <span data-ttu-id="877de-106">これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。</span><span class="sxs-lookup"><span data-stu-id="877de-106">This is a walkthrough of the new features with exercises included to practice using these features.</span></span> 
+<span data-ttu-id="0254b-105">このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。</span><span class="sxs-lookup"><span data-stu-id="0254b-105">This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features.</span></span> <span data-ttu-id="0254b-106">これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。</span><span class="sxs-lookup"><span data-stu-id="0254b-106">This is a walkthrough of the new features with exercises included to practice using these features.</span></span> 
 
-<span data-ttu-id="877de-107">以前のバージョンでは、X++ コードは疑似コードつまり P コードにコンパイルされ、サーバーまたはクライアント アプリケーションで解釈されていました。</span><span class="sxs-lookup"><span data-stu-id="877de-107">In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application.</span></span> <span data-ttu-id="877de-108">このコードは、その後、CIL にコンパイルされました。</span><span class="sxs-lookup"><span data-stu-id="877de-108">This code was then subject to further compilation into CIL.</span></span> <span data-ttu-id="877de-109">今日の話はずっと単純です - CIL だけがサポートされ、このコードは新しいコンパイラから生成されます。</span><span class="sxs-lookup"><span data-stu-id="877de-109">Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler.</span></span> <span data-ttu-id="877de-110">このチュートリアルでは、X++ 言語に追加された新しい機能の一部について説明します。</span><span class="sxs-lookup"><span data-stu-id="877de-110">In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language.</span></span> <span data-ttu-id="877de-111">シナリオを実行するとき、デバッガーの新機能の一部が表示されます。</span><span class="sxs-lookup"><span data-stu-id="877de-111">As we run through the scenarios, you’ll also see some of the new features in the debugger.</span></span>
+<span data-ttu-id="0254b-107">以前のバージョンでは、X++ コードは疑似コードつまり P コードにコンパイルされ、サーバーまたはクライアント アプリケーションで解釈されていました。</span><span class="sxs-lookup"><span data-stu-id="0254b-107">In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application.</span></span> <span data-ttu-id="0254b-108">このコードは、その後、CIL にコンパイルされました。</span><span class="sxs-lookup"><span data-stu-id="0254b-108">This code was then subject to further compilation into CIL.</span></span> <span data-ttu-id="0254b-109">今日の話はずっと単純です - CIL だけがサポートされ、このコードは新しいコンパイラから生成されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-109">Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler.</span></span> <span data-ttu-id="0254b-110">このチュートリアルでは、X++ 言語に追加された新しい機能の一部について説明します。</span><span class="sxs-lookup"><span data-stu-id="0254b-110">In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language.</span></span> <span data-ttu-id="0254b-111">シナリオを実行するとき、デバッガーの新機能の一部が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-111">As we run through the scenarios, you’ll also see some of the new features in the debugger.</span></span>
 
-## <a name="declare-anywhere"></a><span data-ttu-id="877de-112">任意の場所で宣言</span><span class="sxs-lookup"><span data-stu-id="877de-112">Declare anywhere</span></span>
-<span data-ttu-id="877de-113">以前は、すべてのローカル変数を、使用しているメソッドの先頭に配置する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="877de-113">Previously, all local variables had to be placed at the start of the method in which they’re used.</span></span> <span data-ttu-id="877de-114">現在は、変数のスコープを詳細に制御できます。</span><span class="sxs-lookup"><span data-stu-id="877de-114">Now, you have fine-grained control over the scope of your variables.</span></span> <span data-ttu-id="877de-115">この新しい機能では、変数のための小さなスコープを用意することができ、この外では変数を参照することはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-115">With this new feature, it’s possible to provide smaller scopes for variables, outside of which the variables can’t be referenced.</span></span> <span data-ttu-id="877de-116">変数の有効期間は宣言されているスコープです。</span><span class="sxs-lookup"><span data-stu-id="877de-116">The lifetime of the variable is the scope in which it’s declared.</span></span> <span data-ttu-id="877de-117">以下に示すように、スコープは、for ステートメントおよび using ステートメント内においてブロック レベルで開始することができます (複合ステートメント内)。</span><span class="sxs-lookup"><span data-stu-id="877de-117">Scopes can be started at the block level (inside compound statements), in for statements, and in using statements as we will see below.</span></span> <span data-ttu-id="877de-118">スコープを小さくすることにはいくつかの利点があります。</span><span class="sxs-lookup"><span data-stu-id="877de-118">There are several advantages to making scopes small.</span></span>
+## <a name="declare-anywhere"></a><span data-ttu-id="0254b-112">任意の場所で宣言</span><span class="sxs-lookup"><span data-stu-id="0254b-112">Declare anywhere</span></span>
+<span data-ttu-id="0254b-113">以前は、すべてのローカル変数を、使用しているメソッドの先頭に配置する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="0254b-113">Previously, all local variables had to be placed at the start of the method in which they’re used.</span></span> <span data-ttu-id="0254b-114">現在は、変数のスコープを詳細に制御できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-114">Now, you have fine-grained control over the scope of your variables.</span></span> <span data-ttu-id="0254b-115">この新しい機能では、変数のための小さなスコープを用意することができ、この外では変数を参照することはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-115">With this new feature, it’s possible to provide smaller scopes for variables, outside of which the variables can’t be referenced.</span></span> <span data-ttu-id="0254b-116">変数の有効期間は宣言されているスコープです。</span><span class="sxs-lookup"><span data-stu-id="0254b-116">The lifetime of the variable is the scope in which it’s declared.</span></span> <span data-ttu-id="0254b-117">以下に示すように、スコープは、for ステートメントおよび using ステートメント内においてブロック レベルで開始することができます (複合ステートメント内)。</span><span class="sxs-lookup"><span data-stu-id="0254b-117">Scopes can be started at the block level (inside compound statements), in for statements, and in using statements as we will see below.</span></span> <span data-ttu-id="0254b-118">スコープを小さくすることにはいくつかの利点があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-118">There are several advantages to making scopes small.</span></span>
 
--   <span data-ttu-id="877de-119">読みやすさが向上しました。</span><span class="sxs-lookup"><span data-stu-id="877de-119">Readability is enhanced.</span></span>
--   <span data-ttu-id="877de-120">コードの長期保守中に変数が不適切に再利用されるリスクを軽減することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-120">You can reduce the risk of reusing a variable inappropriately during long-term maintenance of the code.</span></span>
--   <span data-ttu-id="877de-121">リファクタリングがかなり簡単になります。</span><span class="sxs-lookup"><span data-stu-id="877de-121">Refactoring becomes much easier.</span></span> <span data-ttu-id="877de-122">使用すべきでないコンテキストで変数が再使用される心配をせずに、コードをコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="877de-122">You can copy code in without having to worry about variables being reused in contexts they shouldn’t.</span></span>
+-   <span data-ttu-id="0254b-119">読みやすさが向上しました。</span><span class="sxs-lookup"><span data-stu-id="0254b-119">Readability is enhanced.</span></span>
+-   <span data-ttu-id="0254b-120">コードの長期保守中に変数が不適切に再利用されるリスクを軽減することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-120">You can reduce the risk of reusing a variable inappropriately during long-term maintenance of the code.</span></span>
+-   <span data-ttu-id="0254b-121">リファクタリングがかなり簡単になります。</span><span class="sxs-lookup"><span data-stu-id="0254b-121">Refactoring becomes much easier.</span></span> <span data-ttu-id="0254b-122">使用すべきでないコンテキストで変数が再使用される心配をせずに、コードをコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-122">You can copy code in without having to worry about variables being reused in contexts they shouldn’t.</span></span>
 
-### <a name="example"></a><span data-ttu-id="877de-123">例</span><span class="sxs-lookup"><span data-stu-id="877de-123">Example</span></span>
+### <a name="example"></a><span data-ttu-id="0254b-123">例</span><span class="sxs-lookup"><span data-stu-id="0254b-123">Example</span></span>
 
-<span data-ttu-id="877de-124">この例では、使用される「for」ステートメント内のループ カウンターを宣言します。</span><span class="sxs-lookup"><span data-stu-id="877de-124">In this example, we declare the loop counter inside the 'for' statement in which it's used.</span></span>
+<span data-ttu-id="0254b-124">この例では、使用される「for」ステートメント内のループ カウンターを宣言します。</span><span class="sxs-lookup"><span data-stu-id="0254b-124">In this example, we declare the loop counter inside the 'for' statement in which it's used.</span></span>
 
-      void MyMethod()
-      {
-        for (int i = 0; i < 10; i++)
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        info(strfmt("i is %1", i));
+    }
+}
+```
+
+<span data-ttu-id="0254b-125">変数のスコープは for ステートメントそのものであり、条件式とループ更新部分を含みます。</span><span class="sxs-lookup"><span data-stu-id="0254b-125">The scope of the variable is the for statement itself, including the condition expression and the loop update parts.</span></span> <span data-ttu-id="0254b-126">この範囲外で値を使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-126">The value can’t be used outside this scope.</span></span> <span data-ttu-id="0254b-127">それを試行すると、次が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-127">If you attempt to do that, you will get the following.</span></span>
+
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 7)
         {
-          info(strfmt("i is %1", i));
-        }
-      }
-
-<span data-ttu-id="877de-125">変数のスコープは for ステートメントそのものであり、条件式とループ更新部分を含みます。</span><span class="sxs-lookup"><span data-stu-id="877de-125">The scope of the variable is the for statement itself, including the condition expression and the loop update parts.</span></span> <span data-ttu-id="877de-126">この範囲外で値を使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-126">The value can’t be used outside this scope.</span></span> <span data-ttu-id="877de-127">それを試行すると、次が表示されます。</span><span class="sxs-lookup"><span data-stu-id="877de-127">If you attempt to do that, you will get the following.</span></span>
-
-      void MyMethod()
-      {
-        for (int i = 0; i < 10; i++)
-        {
-          if (i == 7)
-          {
             break;
-          }
         }
-        info(strfmt("Found: %1", i));
-      }
+    }
+    info(strfmt("Found: %1", i));
+}
+```
 
-<span data-ttu-id="877de-128">コンパイラは情報の呼び出しで次のエラー メッセージを発行します: 'i' が宣言されていません。</span><span class="sxs-lookup"><span data-stu-id="877de-128">The compiler will issue an error message in the info call: 'i' is not declared.</span></span>
+<span data-ttu-id="0254b-128">コンパイラは情報の呼び出しで次のエラー メッセージを発行します: 'i' が宣言されていません。</span><span class="sxs-lookup"><span data-stu-id="0254b-128">The compiler will issue an error message in the info call: 'i' is not declared.</span></span>
 
-### <a name="example"></a><span data-ttu-id="877de-129">例</span><span class="sxs-lookup"><span data-stu-id="877de-129">Example</span></span>
+### <a name="example"></a><span data-ttu-id="0254b-129">例</span><span class="sxs-lookup"><span data-stu-id="0254b-129">Example</span></span>
 
-<span data-ttu-id="877de-130">スコープを確立できる場所がもう 1 つあります。using ステートメントは、X++ 言語のもう 1 つの新しいコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="877de-130">There's another place where scopes can be established: the using statement, which is another newcomer to the X++ language.</span></span>
+<span data-ttu-id="0254b-130">範囲を規定できる場所は他にもあります:  `using` のステートメントは、 X++ 言語が新たに利用可能です。</span><span class="sxs-lookup"><span data-stu-id="0254b-130">There's another place where scopes can be established: the `using` statement, which is another newcomer to the X++ language.</span></span>
 
-      static void AnotherMethod()
-      {
-        str textFromFile;
+```xpp
+static void AnotherMethod()
+{
+    str textFromFile;
 
-        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
-        {
-          textFromFile = sr.ReadToEnd();
-        }
-      }
+    using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
+    {
+        textFromFile = sr.ReadToEnd();
+    }
+}
+```
 
-<span data-ttu-id="877de-131">原則として、IDisposable オブジェクトを使用する場合は、明細書の使用において宣言しインスタンスを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-131">As a rule, when you use an IDisposable object, you should declare and instantiate it in a using statement.</span></span> <span data-ttu-id="877de-132">using ステートメントは、オブジェクトのメソッドを呼び出すときに例外が発生した場合でも、正しい方法でオブジェクトの Dispose メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="877de-132">The using statement calls the Dispose method on the object in the correct way, even if an exception occurs while you are calling methods on the object.</span></span> <span data-ttu-id="877de-133">オブジェクトを try ブロック内に配置してから finally ブロック内で明示的に Dispose を呼び出すことにより、同じ結果を達成することができます。実際、これはコンパイラが using ステートメントを翻訳する方法です。</span><span class="sxs-lookup"><span data-stu-id="877de-133">You can achieve the same result by putting the object inside a try block, and then explicitly calling Dispose in a finally block; in fact, this is how the using statement is translated by the compiler.</span></span> <span data-ttu-id="877de-134">宣言は、提供できる、どこのステートメントにも提供できるようになりました。宣言は構文的なステートメントおよび申告ステートメントです。</span><span class="sxs-lookup"><span data-stu-id="877de-134">Declarations can now be provided anywhere statements can be provided-- a declaration is syntactically a statement, a declaration statement.</span></span> <span data-ttu-id="877de-135">したがって、使用する直前に宣言を提供できます。</span><span class="sxs-lookup"><span data-stu-id="877de-135">You can, therefore, provide declarations immediately prior to the usage.</span></span> <span data-ttu-id="877de-136">変数をすべて 1 ヶ所で宣言する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="877de-136">You don’t have to declare the variables all in one place.</span></span>
+<span data-ttu-id="0254b-131">ルールとしては、 **IDisposable** オブジェクトを使用する際に、ステートメントを使用した宣言とインスタンス化をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-131">As a rule, when you use an **IDisposable** object, you should declare and instantiate it in a using statement.</span></span> <span data-ttu-id="0254b-132">このステートメントを使用すると、予期しない例外が発生した場合であっても、オブジェクト上で **Dispose** メソッドを正常な方法で呼び出します。</span><span class="sxs-lookup"><span data-stu-id="0254b-132">The using statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you are calling methods on the object.</span></span> <span data-ttu-id="0254b-133">オブジェクトを try ブロック内に配置してから finally ブロック内で明示的に Dispose を呼び出すことにより、同じ結果を達成することができます。実際、これはコンパイラが using ステートメントを翻訳する方法です。</span><span class="sxs-lookup"><span data-stu-id="0254b-133">You can achieve the same result by putting the object inside a try block, and then explicitly calling Dispose in a finally block; in fact, this is how the using statement is translated by the compiler.</span></span> <span data-ttu-id="0254b-134">宣言は、提供できる、どこのステートメントにも提供できるようになりました。宣言は構文的なステートメントおよび申告ステートメントです。</span><span class="sxs-lookup"><span data-stu-id="0254b-134">Declarations can now be provided anywhere statements can be provided-- a declaration is syntactically a statement, a declaration statement.</span></span> <span data-ttu-id="0254b-135">したがって、使用する直前に宣言を提供できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-135">You can, therefore, provide declarations immediately prior to the usage.</span></span> <span data-ttu-id="0254b-136">変数をすべて 1 ヶ所で宣言する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-136">You don’t have to declare the variables all in one place.</span></span>
 
-### <a name="example"></a><span data-ttu-id="877de-137">例</span><span class="sxs-lookup"><span data-stu-id="877de-137">Example</span></span>
+### <a name="example"></a><span data-ttu-id="0254b-137">例</span><span class="sxs-lookup"><span data-stu-id="0254b-137">Example</span></span>
 
-<span data-ttu-id="877de-138">次のサンプルは、上記の機能のいくつかを示しています。</span><span class="sxs-lookup"><span data-stu-id="877de-138">The following sample shows some of the features described above.</span></span>
+<span data-ttu-id="0254b-138">次のサンプルは、上記の機能のいくつかを示しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-138">The following sample shows some of the features described above.</span></span>
 
-      // loop variable declared within the loop: It will
-      // not be misused outside the loop
-      for(int i = 1; i < 10; i++)
-      {
-      // Because this value is not used from outside the loop,
-      // its declaration belongs in this smaller scope.
-        str s = int2str(i);
-        info(s);
-      }
+```xpp
+// loop variable declared within the loop: It will
+// not be misused outside the loop
+for(int i = 1; i < 10; i++)
+{
+    // Because this value is not used from outside the loop,
+    // its declaration belongs in this smaller scope.
+    str s = int2str(i);
+    info(s);
+}
+```
 
-<span data-ttu-id="877de-139">混乱を避けるために、X++ コンパイラは、囲みスコープ内または同じスコープであっても、別の変数を隠す変数を導入しようとすると、エラーを発行します。</span><span class="sxs-lookup"><span data-stu-id="877de-139">To avoid confusion, the X++ compiler will issue an error if you attempt to introduce a variable that would hide another variable in an enclosing scope or even in the same scope.</span></span> <span data-ttu-id="877de-140">たとえば、次のコードは、以下の診断メッセージを発行するコンパイラの原因になります。「i 」と呼ばれるローカルの変数はこのスコープでは宣言されません。それは既に親または現在のスコープで別のものを表示している「 i 」が別の意味になってしまうためです。</span><span class="sxs-lookup"><span data-stu-id="877de-140">For instance, the following code will cause the compiler to issue the following diagnostic message: A local variable named 'i' cannot be declared in this scope because it would give a different meaning to 'i', which is already used in a parent or current scope to denote something else.</span></span>
+<span data-ttu-id="0254b-139">混乱を避けるために、X++ コンパイラは、囲みスコープ内または同じスコープであっても、別の変数を隠す変数を導入しようとすると、エラーを発行します。</span><span class="sxs-lookup"><span data-stu-id="0254b-139">To avoid confusion, the X++ compiler will issue an error if you attempt to introduce a variable that would hide another variable in an enclosing scope or even in the same scope.</span></span> <span data-ttu-id="0254b-140">たとえば、次のコードは、以下の診断メッセージを発行するコンパイラの原因になります。「i 」と呼ばれるローカルの変数はこのスコープでは宣言されません。それは既に親または現在のスコープで別のものを表示している「 i 」が別の意味になってしまうためです。</span><span class="sxs-lookup"><span data-stu-id="0254b-140">For instance, the following code will cause the compiler to issue the following diagnostic message: A local variable named 'i' cannot be declared in this scope because it would give a different meaning to 'i', which is already used in a parent or current scope to denote something else.</span></span>
 
-      {
+```xpp
+{
+    int i;
+    {
         int i;
-        {
-          int i;
-        }
-      }
+    }
+}
+```      
 
-<span data-ttu-id="877de-141">これは C\# のルールとよく似ていますが、シャドウが診断されていない C ++ のルールとは異なります。</span><span class="sxs-lookup"><span data-stu-id="877de-141">This aligns well with the rules that are known from C\#, but is different from the rule in C++ where shadowing is not diagnosed.</span></span>
+<span data-ttu-id="0254b-141">これは C\# のルールとよく似ていますが、シャドウが診断されていない C ++ のルールとは異なります。</span><span class="sxs-lookup"><span data-stu-id="0254b-141">This aligns well with the rules that are known from C\#, but is different from the rule in C++ where shadowing is not diagnosed.</span></span>
 
-### <a name="exercise"></a><span data-ttu-id="877de-142">練習</span><span class="sxs-lookup"><span data-stu-id="877de-142">Exercise</span></span>
+### <a name="exercise"></a><span data-ttu-id="0254b-142">練習</span><span class="sxs-lookup"><span data-stu-id="0254b-142">Exercise</span></span>
 
-<span data-ttu-id="877de-143">FMVehicleInventoryServiceClass のコードを変更して、より小さなスコープを使用します。</span><span class="sxs-lookup"><span data-stu-id="877de-143">Adapt the code in FMVehicleInventoryServiceClass to use smaller scopes.</span></span>
+<span data-ttu-id="0254b-143">**FMVehicleInventoryServiceClass** 内でコードを応用して、より小さな範囲を使用します。</span><span class="sxs-lookup"><span data-stu-id="0254b-143">Adapt the code in **FMVehicleInventoryServiceClass** to use smaller scopes.</span></span>
 
-## <a name="static-constructors-and-static-fields"></a><span data-ttu-id="877de-144">静的コンストラクターおよび静的フィールド</span><span class="sxs-lookup"><span data-stu-id="877de-144">Static constructors and static fields</span></span>
-<span data-ttu-id="877de-145">静的コンストラクターおよび静的フィールドは、X++ 言語の新しい機能です。</span><span class="sxs-lookup"><span data-stu-id="877de-145">Static constructors and static fields are new features in the X++ language.</span></span> <span data-ttu-id="877de-146">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="877de-146">Static constructors are guaranteed to run before any static or instance calls are made to the class.</span></span> <span data-ttu-id="877de-147">C\# では、静的の概念が実行中のアプリケーション ドメイン全体に関係します。</span><span class="sxs-lookup"><span data-stu-id="877de-147">In C\#, the concept of static relates to the whole executing application domain.</span></span> <span data-ttu-id="877de-148">静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</span><span class="sxs-lookup"><span data-stu-id="877de-148">The execution of the static constructor is relative to the user’s session.</span></span> <span data-ttu-id="877de-149">静的コンストラクターには、次のプロファイルがあります。</span><span class="sxs-lookup"><span data-stu-id="877de-149">The static constructor has the following profile.</span></span>
+## <a name="static-constructors-and-static-fields"></a><span data-ttu-id="0254b-144">静的コンストラクターおよび静的フィールド</span><span class="sxs-lookup"><span data-stu-id="0254b-144">Static constructors and static fields</span></span>
+<span data-ttu-id="0254b-145">静的コンストラクターおよび静的フィールドは、X++ 言語の新しい機能です。</span><span class="sxs-lookup"><span data-stu-id="0254b-145">Static constructors and static fields are new features in the X++ language.</span></span> <span data-ttu-id="0254b-146">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-146">Static constructors are guaranteed to run before any static or instance calls are made to the class.</span></span> <span data-ttu-id="0254b-147">C\# では、静的の概念が実行中のアプリケーション ドメイン全体に関係します。</span><span class="sxs-lookup"><span data-stu-id="0254b-147">In C\#, the concept of static relates to the whole executing application domain.</span></span> <span data-ttu-id="0254b-148">静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</span><span class="sxs-lookup"><span data-stu-id="0254b-148">The execution of the static constructor is relative to the user’s session.</span></span> <span data-ttu-id="0254b-149">静的コンストラクターには、次のプロファイルがあります。</span><span class="sxs-lookup"><span data-stu-id="0254b-149">The static constructor has the following profile.</span></span>
 
-    static void TypeNew() 
+```xpp
+static void TypeNew() 
+```
 
-<span data-ttu-id="877de-150">静的コンストラクターを明示的に呼び出すことはありません。コンパイラは、クラスの他のメソッドに先立って、静的コンストラクターを 1 回だけ確実に呼び出すコードを生成します。</span><span class="sxs-lookup"><span data-stu-id="877de-150">You’ll never call the static constructor explicitly; the compiler will generate code to ensure that the constructor is called exactly once prior to any other method on the class.</span></span> <span data-ttu-id="877de-151">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-151">A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed only once.</span></span> <span data-ttu-id="877de-152">静的コンストラクターに指定できるパラメーターはなく、静的としてマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-152">No parameters can be provided for the static constructor, and it must be marked as static.</span></span> <span data-ttu-id="877de-153">静的フィールドは静的キーワードを使用して宣言されているフィールドです。</span><span class="sxs-lookup"><span data-stu-id="877de-153">Static fields are fields that are declared using the static keyword.</span></span> <span data-ttu-id="877de-154">概念的には、クラスのインスタンスではなくクラスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-154">Conceptually they apply to the class, not instances of the class.</span></span>
+<span data-ttu-id="0254b-150">静的コンストラクターを明示的に呼び出すことはありません。コンパイラは、クラスの他のメソッドに先立って、静的コンストラクターを 1 回だけ確実に呼び出すコードを生成します。</span><span class="sxs-lookup"><span data-stu-id="0254b-150">You’ll never call the static constructor explicitly; the compiler will generate code to ensure that the constructor is called exactly once prior to any other method on the class.</span></span> <span data-ttu-id="0254b-151">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-151">A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed only once.</span></span> <span data-ttu-id="0254b-152">静的コンストラクターに指定できるパラメーターはなく、静的としてマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-152">No parameters can be provided for the static constructor, and it must be marked as static.</span></span> <span data-ttu-id="0254b-153">静的フィールドは静的キーワードを使用して宣言されているフィールドです。</span><span class="sxs-lookup"><span data-stu-id="0254b-153">Static fields are fields that are declared using the static keyword.</span></span> <span data-ttu-id="0254b-154">概念的には、クラスのインスタンスではなくクラスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-154">Conceptually they apply to the class, not instances of the class.</span></span>
 
-### <a name="example"></a><span data-ttu-id="877de-155">例</span><span class="sxs-lookup"><span data-stu-id="877de-155">Example</span></span>
+### <a name="example"></a><span data-ttu-id="0254b-155">例</span><span class="sxs-lookup"><span data-stu-id="0254b-155">Example</span></span>
 
-<span data-ttu-id="877de-156">下の例ではインスタンスと呼ばれる単一を、静的コンストラクターを使用して作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="877de-156">We'll show how a singleton, called instance in the example below, can be created by using the static constructor.</span></span>
+<span data-ttu-id="0254b-156">下の例ではインスタンスと呼ばれる単一を、静的コンストラクターを使用して作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="0254b-156">We'll show how a singleton, called instance in the example below, can be created by using the static constructor.</span></span>
 
-    public class Singleton
+```xpp
+public class Singleton
+{
+    private static Singleton instance;
+
+    private void new()
     {
-      private static Singleton instance;
+    }
 
-      private void new()
-      {
-      }
-
-      static void TypeNew()
-      {
+    static void TypeNew()
+    {
         instance = new Singleton();
-      }
+    }
 
-      public static Singleton instance()
-      {
+    public static Singleton instance()
+    {
         return Singleton::instance;
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-157">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。これは、以下で消費されます。</span><span class="sxs-lookup"><span data-stu-id="877de-157">The singleton will guarantee that only one instance of the class will ever be called, which is consumed by the following.</span></span>
+<span data-ttu-id="0254b-157">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。これは、以下で消費されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-157">The singleton will guarantee that only one instance of the class will ever be called, which is consumed by the following.</span></span>
 
+```xpp
+{
+    // Your code here.
+    Singleton i = Singleton::instance();
+}
+```
+
+## <a name="assignment-of-field-members-inline"></a><span data-ttu-id="0254b-158">フィールド メンバー インラインの割り当て</span><span class="sxs-lookup"><span data-stu-id="0254b-158">Assignment of field members inline</span></span>
+<span data-ttu-id="0254b-159">フィールド自体の宣言などと共に、フィールド インラインに値を代入できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-159">It's now possible to assign a value to a field inline, i.e. along with the declaration of the field itself.</span></span> <span data-ttu-id="0254b-160">これは、静的フィールドとインスタンス フィールドの両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-160">This applies to both static and instance fields.</span></span> <span data-ttu-id="0254b-161">次のコードでは、field1 と field2 の値はこの方法で定義されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-161">In the following code, the values of field1 and field2 are defined in this fashion.</span></span>
+
+```xpp
+public class MyClass2
+{
+    int field1 = 1;
+    str field2 = "Banana";
+
+    void new()
     {
-        …
-        Singleton i = Singleton::instance();
-      }
-
-## <a name="assignment-of-field-members-inline"></a><span data-ttu-id="877de-158">フィールド メンバー インラインの割り当て</span><span class="sxs-lookup"><span data-stu-id="877de-158">Assignment of field members inline</span></span>
-<span data-ttu-id="877de-159">フィールド自体の宣言などと共に、フィールド インラインに値を代入できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-159">It's now possible to assign a value to a field inline, i.e. along with the declaration of the field itself.</span></span> <span data-ttu-id="877de-160">これは、静的フィールドとインスタンス フィールドの両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-160">This applies to both static and instance fields.</span></span> <span data-ttu-id="877de-161">次のコードでは、field1 と field2 の値はこの方法で定義されます。</span><span class="sxs-lookup"><span data-stu-id="877de-161">In the following code, the values of field1 and field2 are defined in this fashion.</span></span>
-
-    public class MyClass2
-    {
-      int field1 = 1;
-      str field2 = "Banana";
-
-      void new()
-      {
-        // …
-      }
+        // Your code here.
     }
+}
+```
 
-<span data-ttu-id="877de-162">上記のコードは、以下と同じ意味を持ちます。</span><span class="sxs-lookup"><span data-stu-id="877de-162">The code above has the same semantic meaning as:</span></span>  
+<span data-ttu-id="0254b-162">上記のコードは、以下と同じ意味を持ちます。</span><span class="sxs-lookup"><span data-stu-id="0254b-162">The code above has the same semantic meaning as:</span></span>  
 
-    public class MyClass2
+```xpp
+public class MyClass2
+{
+    int field1;
+    str field2;
+
+    void new()
     {
-      int field1;
-      str field2;
-
-      void new()
-      {
         this.field1 = 1;
         this.field2 = "Banana";
-        // …
-      }
+        // Your code here.
     }
+}
+```
 
-<span data-ttu-id="877de-163">インライン割り当ては、静的メンバーとインスタンス メンバーの両方で機能します。</span><span class="sxs-lookup"><span data-stu-id="877de-163">The inline assignments work for both static and instance members.</span></span>
+<span data-ttu-id="0254b-163">インライン割り当ては、静的メンバーとインスタンス メンバーの両方で機能します。</span><span class="sxs-lookup"><span data-stu-id="0254b-163">The inline assignments work for both static and instance members.</span></span>
 
-## <a name="constsreadonly"></a><span data-ttu-id="877de-164">Consts/読み取り専用</span><span class="sxs-lookup"><span data-stu-id="877de-164">Consts/Readonly</span></span>
-<span data-ttu-id="877de-165">マクロの概念は、引き続き X++ で完全にサポートされています。</span><span class="sxs-lookup"><span data-stu-id="877de-165">The concept of macros continues to be fully supported in X++.</span></span> <span data-ttu-id="877de-166">ただし、\#定義の代わりに定数を使用することには、多くのメリットがあります。</span><span class="sxs-lookup"><span data-stu-id="877de-166">However, using constants instead of \#defines has a number of benefits.</span></span>
+## <a name="constsreadonly"></a><span data-ttu-id="0254b-164">Consts/読み取り専用</span><span class="sxs-lookup"><span data-stu-id="0254b-164">Consts/Readonly</span></span>
+<span data-ttu-id="0254b-165">マクロの概念は、引き続き X++ で完全にサポートされています。</span><span class="sxs-lookup"><span data-stu-id="0254b-165">The concept of macros continues to be fully supported in X++.</span></span> <span data-ttu-id="0254b-166">ただし、\#定義の代わりに定数を使用することには、多くのメリットがあります。</span><span class="sxs-lookup"><span data-stu-id="0254b-166">However, using constants instead of \#defines has a number of benefits.</span></span>
 
--   <span data-ttu-id="877de-167">ドキュメント コメントは定数に対して追加することができますが、マクロの値に対して追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-167">You can add a documentation comment to the const, not to the value of the macro.</span></span> <span data-ttu-id="877de-168">最終的に、言語サービスによってこれが選択され、ユーザーに適切な情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="877de-168">Ultimately, the language service will pick this up and provide good information to the user.</span></span>
--   <span data-ttu-id="877de-169">定数は、IntelliSense で知られています。</span><span class="sxs-lookup"><span data-stu-id="877de-169">The const is known by IntelliSense.</span></span>
--   <span data-ttu-id="877de-170">定数は相互参照されるので、特定の定数のすべての参照を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="877de-170">The const is cross referenced, so you can find all references of a particular constant.</span></span> <span data-ttu-id="877de-171">これは、マクロのケースではありません。</span><span class="sxs-lookup"><span data-stu-id="877de-171">This is not the case for a macro.</span></span>
--   <span data-ttu-id="877de-172">定数は、プライベート、プロテクト、またはパブリックのいずれかのアクセス修飾子となります。</span><span class="sxs-lookup"><span data-stu-id="877de-172">The const is subject to access modifiers, either private, protected, or public.</span></span> <span data-ttu-id="877de-173">マクロのアクセシビリティが十分に理解されていないか、厳密に定義されていません。</span><span class="sxs-lookup"><span data-stu-id="877de-173">The accessibility of macros is not well understood or even rigorously defined.</span></span>
--   <span data-ttu-id="877de-174">Consts にはスコープがありますが、マクロにはスコープはありません。</span><span class="sxs-lookup"><span data-stu-id="877de-174">Consts have scope, while macros do not.</span></span>
--   <span data-ttu-id="877de-175">デバッガーには定数の値および読み取り専用変数を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-175">You can see the value of consts and readonly variables in the debugger.</span></span>
+-   <span data-ttu-id="0254b-167">ドキュメント コメントは定数に対して追加することができますが、マクロの値に対して追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-167">You can add a documentation comment to the const, not to the value of the macro.</span></span> <span data-ttu-id="0254b-168">最終的に、言語サービスによってこれが選択され、ユーザーに適切な情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-168">Ultimately, the language service will pick this up and provide good information to the user.</span></span>
+-   <span data-ttu-id="0254b-169">定数は、IntelliSense で知られています。</span><span class="sxs-lookup"><span data-stu-id="0254b-169">The const is known by IntelliSense.</span></span>
+-   <span data-ttu-id="0254b-170">定数は相互参照されるので、特定の定数のすべての参照を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-170">The const is cross referenced, so you can find all references of a particular constant.</span></span> <span data-ttu-id="0254b-171">これは、マクロのケースではありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-171">This is not the case for a macro.</span></span>
+-   <span data-ttu-id="0254b-172">定数は、プライベート、プロテクト、またはパブリックのいずれかのアクセス修飾子となります。</span><span class="sxs-lookup"><span data-stu-id="0254b-172">The const is subject to access modifiers, either private, protected, or public.</span></span> <span data-ttu-id="0254b-173">マクロのアクセシビリティが十分に理解されていないか、厳密に定義されていません。</span><span class="sxs-lookup"><span data-stu-id="0254b-173">The accessibility of macros is not well understood or even rigorously defined.</span></span>
+-   <span data-ttu-id="0254b-174">Consts にはスコープがありますが、マクロにはスコープはありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-174">Consts have scope, while macros do not.</span></span>
+-   <span data-ttu-id="0254b-175">デバッガーには定数の値および読み取り専用変数を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-175">You can see the value of consts and readonly variables in the debugger.</span></span>
 
-<span data-ttu-id="877de-176">クラス スコープ (クラスの宣言) で定義されているマクロは、すべての派生クラスのすべてのメソッドで効率的に使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-176">Macros that are defined in class scopes (in class declarations) are effectively available in all methods of all derived classes.</span></span> <span data-ttu-id="877de-177">これはもともとレガシーなコンパイラ マクロ実装のバグでしたが、この抜け穴はアプリケーション プログラマがよく利用しています。</span><span class="sxs-lookup"><span data-stu-id="877de-177">This was originally a bug in the legacy compiler macro implementation, but this loophole is now massively exploited by application programmers.</span></span> <span data-ttu-id="877de-178">新しい X++ コンパイラには、この機能が残されていますが、この機能を使用する新しいコードは記述しないでください。</span><span class="sxs-lookup"><span data-stu-id="877de-178">The new X++ compiler still honors this, but no new code that uses this should be written.</span></span> <span data-ttu-id="877de-179">この特定の機能は、コンパイラのパフォーマンスにも大きく影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="877de-179">This particular feature also considerably impacts compiler performance.</span></span> <span data-ttu-id="877de-180">定数は、下記のようにクラス レベルで宣言できます。</span><span class="sxs-lookup"><span data-stu-id="877de-180">Constants can be declared at the class level as suggested below.</span></span>
+<span data-ttu-id="0254b-176">クラス スコープ (クラスの宣言) で定義されているマクロは、すべての派生クラスのすべてのメソッドで効率的に使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-176">Macros that are defined in class scopes (in class declarations) are effectively available in all methods of all derived classes.</span></span> <span data-ttu-id="0254b-177">これはもともとレガシーなコンパイラ マクロ実装のバグでしたが、この抜け穴はアプリケーション プログラマがよく利用しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-177">This was originally a bug in the legacy compiler macro implementation, but this loophole is now massively exploited by application programmers.</span></span> <span data-ttu-id="0254b-178">新しい X++ コンパイラには、この機能が残されていますが、この機能を使用する新しいコードは記述しないでください。</span><span class="sxs-lookup"><span data-stu-id="0254b-178">The new X++ compiler still honors this, but no new code that uses this should be written.</span></span> <span data-ttu-id="0254b-179">この特定の機能は、コンパイラのパフォーマンスにも大きく影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="0254b-179">This particular feature also considerably impacts compiler performance.</span></span> <span data-ttu-id="0254b-180">定数は、下記のようにクラス レベルで宣言できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-180">Constants can be declared at the class level as suggested below.</span></span>
 
-    private const str MyConstant = 'SomeValue';
+```xpp
+private const str MyConstant = 'SomeValue';
+```
 
-<span data-ttu-id="877de-181">次に、定数を二重コロン構文を使用して参照することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-181">The constants can then be referenced by using the double-colon syntax.</span></span>
+<span data-ttu-id="0254b-181">次に、定数を二重コロン構文を使用して参照することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-181">The constants can then be referenced by using the double-colon syntax.</span></span>
 
-      str value = MyClass::MyConstant;
+```xpp
+str value = MyClass::MyConstant;
+```
 
-<span data-ttu-id="877de-182">定数が定義されているクラスのスコープにいる場合は、型名の接頭語 (上記の例では MyClass) を省略できます。</span><span class="sxs-lookup"><span data-stu-id="877de-182">If you're in the scope of the class where the const is defined, you can omit the type name prefix (MyClass in the example above).</span></span> <span data-ttu-id="877de-183">このようにマクロ ライブラリの概念を簡単に実装することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-183">You can easily implement the concept of a macro library this way.</span></span> <span data-ttu-id="877de-184">マクロ シンボルのリストは、パブリック const の定義を持つクラスになります。</span><span class="sxs-lookup"><span data-stu-id="877de-184">The list of macro symbols becomes a class with public const definitions.</span></span>
+<span data-ttu-id="0254b-182">定数が定義されているクラスのスコープにいる場合は、型名の接頭語 (上記の例では MyClass) を省略できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-182">If you're in the scope of the class where the const is defined, you can omit the type name prefix (MyClass in the example above).</span></span> <span data-ttu-id="0254b-183">このようにマクロ ライブラリの概念を簡単に実装することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-183">You can easily implement the concept of a macro library this way.</span></span> <span data-ttu-id="0254b-184">マクロ シンボルのリストは、パブリック const の定義を持つクラスになります。</span><span class="sxs-lookup"><span data-stu-id="0254b-184">The list of macro symbols becomes a class with public const definitions.</span></span>
 
-### <a name="exercise"></a><span data-ttu-id="877de-185">練習</span><span class="sxs-lookup"><span data-stu-id="877de-185">Exercise</span></span>
+### <a name="exercise"></a><span data-ttu-id="0254b-185">練習</span><span class="sxs-lookup"><span data-stu-id="0254b-185">Exercise</span></span>
 
-<span data-ttu-id="877de-186">フリート アプリケーションには、以下のマクロ定義を含む FMDataHelper クラスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="877de-186">The fleet application contains the FMDataHelper class that contains the following macro definitions.</span></span>
+<span data-ttu-id="0254b-186">フリート アプリケーションには **FMDataHelper** クラスが含まれており、次のマクロ定義を実装しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-186">The fleet application contains the **FMDataHelper** class that contains the following macro definitions.</span></span>
 
-    public class FMDataHelper
-    {
-      #define.FMSvcTechUserId('FMSvcTec')
-      #define.FMClerkUserId('FMClerk')
-      #define.FMManagerUserId('FMMgr')
-      #define.FMSvcTechUserGrpId('FMSvcTech')
-      #define.FMClerkUserGrpId('FMClerk')
-      #define.FMManagerUserGrpId('FMManager')
-    …
-    }
+```xpp
+public class FMDataHelper
+{
+    #define.FMSvcTechUserId('FMSvcTec')
+    #define.FMClerkUserId('FMClerk')
+    #define.FMManagerUserId('FMMgr')
+    #define.FMSvcTechUserGrpId('FMSvcTech')
+    #define.FMClerkUserGrpId('FMClerk')
+    #define.FMManagerUserGrpId('FMManager')
+}
+```
 
-<span data-ttu-id="877de-187">これらを定数定義に変更し、それに従ってマクロが使用される場所を更新します。</span><span class="sxs-lookup"><span data-stu-id="877de-187">Change these to const definitions and update the places where the macros are used accordingly.</span></span>
+<span data-ttu-id="0254b-187">これらを定数定義に変更し、それに従ってマクロが使用される場所を更新します。</span><span class="sxs-lookup"><span data-stu-id="0254b-187">Change these to const definitions and update the places where the macros are used accordingly.</span></span>
 
-<span data-ttu-id="877de-188">また、定数を変数のみとして定義することもできます。</span><span class="sxs-lookup"><span data-stu-id="877de-188">You can also define consts solely as variables.</span></span> <span data-ttu-id="877de-189">コンパイラはインバリアントを維持して、値を変更できないようにします。</span><span class="sxs-lookup"><span data-stu-id="877de-189">The compiler will maintain the invariant that the value can't be modified.</span></span>
+<span data-ttu-id="0254b-188">また、定数を変数のみとして定義することもできます。</span><span class="sxs-lookup"><span data-stu-id="0254b-188">You can also define consts solely as variables.</span></span> <span data-ttu-id="0254b-189">コンパイラはインバリアントを維持して、値を変更できないようにします。</span><span class="sxs-lookup"><span data-stu-id="0254b-189">The compiler will maintain the invariant that the value can't be modified.</span></span>
 
-    {
-      const int Blue = 0x0000FF;
-      const int Green = 0x00FF00;
-      const int Red = 0xFF0000;
-    }
+```xpp
+{
+    const int Blue = 0x0000FF;
+    const int Green = 0x00FF00;
+    const int Red = 0xFF0000;
+}
+```
 
-<span data-ttu-id="877de-190">読み取り専用フィールドには値を 1 回だけ割り当てることがき、その値は変わりません。フィールドには、インラインで (フィールドが宣言した場所)、またはコンストラクターで値を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="877de-190">Read-only fields can only be assigned a value once, and that value never changes; the field can be assigned its value either inline, at the place where the field is declared, or in the constructor.</span></span> <span data-ttu-id="877de-191">現時点では、定数と読み取り専用の唯一の違いです。</span><span class="sxs-lookup"><span data-stu-id="877de-191">Currently, that's the only difference between const and read-only.</span></span>
+<span data-ttu-id="0254b-190">読み取り専用フィールドには値を 1 回だけ割り当てることがき、その値は変わりません。フィールドには、インラインで (フィールドが宣言した場所)、またはコンストラクターで値を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-190">Read-only fields can only be assigned a value once, and that value never changes; the field can be assigned its value either inline, at the place where the field is declared, or in the constructor.</span></span> <span data-ttu-id="0254b-191">現時点では、定数と読み取り専用の唯一の違いです。</span><span class="sxs-lookup"><span data-stu-id="0254b-191">Currently, that's the only difference between const and read-only.</span></span>
 
-<a name="var"></a><span data-ttu-id="877de-192">Var</span><span class="sxs-lookup"><span data-stu-id="877de-192">Var</span></span>
----
+## <a name="var"></a><span data-ttu-id="0254b-192">Var</span><span class="sxs-lookup"><span data-stu-id="0254b-192">Var</span></span>
 
-<span data-ttu-id="877de-193">コンパイラが初期化式から種類を判断することができる場合は、変数の種類を明示的に提供せずに変数を宣言することができるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-193">You can now declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression.</span></span> <span data-ttu-id="877de-194">変数が、まだ厳密に型指定されている明確な型であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="877de-194">Note that the variable is still strongly-typed into one, unambiguous type.</span></span> <span data-ttu-id="877de-195">(コンパイラが型を推定する) 初期化式が用意されている宣言でのみ var を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-195">It's only possible to use var on declarations where initialization expressions are provided (from which the compiler will infer the type).</span></span> <span data-ttu-id="877de-196">コードを読みやすくできる状況がありますが、この機能を誤用すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="877de-196">There are situations where this can make code easier to read, but this feature shouldn't be misused.</span></span> <span data-ttu-id="877de-197">次のルールを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="877de-197">You should consider the following rules:</span></span>
+<span data-ttu-id="0254b-193">コンパイラが初期化式から種類を判断することができる場合は、変数の種類を明示的に提供せずに変数を宣言することができるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-193">You can now declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression.</span></span> <span data-ttu-id="0254b-194">変数が、まだ厳密に型指定されている明確な型であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-194">Note that the variable is still strongly-typed into one, unambiguous type.</span></span> <span data-ttu-id="0254b-195">(コンパイラが型を推定する) 初期化式が用意されている宣言でのみ var を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-195">It's only possible to use var on declarations where initialization expressions are provided (from which the compiler will infer the type).</span></span> <span data-ttu-id="0254b-196">コードを読みやすくできる状況がありますが、この機能を誤用すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-196">There are situations where this can make code easier to read, but this feature shouldn't be misused.</span></span> <span data-ttu-id="0254b-197">次のルールを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-197">You should consider the following rules:</span></span>
 
--   <span data-ttu-id="877de-198">代入の右側から見て変数の型が明らかである場合、または正確な型が重要でない場合は、var を使用してローカル変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="877de-198">Use var to declare local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.</span></span>
+-   <span data-ttu-id="0254b-198">代入の右側から見て変数の型が明らかである場合、または正確な型が重要でない場合は、var を使用してローカル変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="0254b-198">Use var to declare local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.</span></span>
 
-
-~~~
+    ```xpp
     // When the type of a variable is clear from the context, use var 
     // in the declaration. 
     var var1 = "This is clearly a string.";
     var var2 = 27; // This is an integer (not a real).
     var i = System.Convert::ToInt32(3.4);
-~~~
+    ````
 
--   <span data-ttu-id="877de-199">種類が初期化式から明らかでない場合は、var を使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="877de-199">Don't use var when the type isn't apparent from the initialization expression.</span></span>
+-   <span data-ttu-id="0254b-199">種類が初期化式から明らかでない場合は、var を使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="0254b-199">Don't use var when the type isn't apparent from the initialization expression.</span></span>
 
-        // When the type of a variable is not clear from the context, use an 
-        // explicit type. 
-            int var4 = myObject.ResultSoFar();
+    ```xpp
+    // When the type of a variable is not clear from the context, use an 
+    // explicit type. 
+    int var4 = myObject.ResultSoFar();
+    ```
+    
+-   <span data-ttu-id="0254b-200">for ループ カウンターの宣言には、var を使用します。</span><span class="sxs-lookup"><span data-stu-id="0254b-200">Use var for the declarations of for loop counters.</span></span>
+-   <span data-ttu-id="0254b-201">using 文内で破棄可能なオブジェクトには、var を使用します。</span><span class="sxs-lookup"><span data-stu-id="0254b-201">Use var for disposable objects inside using statements.</span></span>
 
--   <span data-ttu-id="877de-200">for ループ カウンターの宣言には、var を使用します。</span><span class="sxs-lookup"><span data-stu-id="877de-200">Use var for the declarations of for loop counters.</span></span>
--   <span data-ttu-id="877de-201">using 文内で破棄可能なオブジェクトには、var を使用します。</span><span class="sxs-lookup"><span data-stu-id="877de-201">Use var for disposable objects inside using statements.</span></span>
+## <a name="private-and-protected-member-variables"></a><span data-ttu-id="0254b-202">プライベートおよび保護されたメンバー変数</span><span class="sxs-lookup"><span data-stu-id="0254b-202">Private and protected member variables</span></span>
+<span data-ttu-id="0254b-203">以前は、クラスで定義されたすべてのメンバー変数が可変保護されていました。</span><span class="sxs-lookup"><span data-stu-id="0254b-203">Previously, all member variables defined in a class were invariably protected.</span></span> <span data-ttu-id="0254b-204">private、protected、および public キーワードを加えることにより、メンバー変数の表示を明示的にできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-204">It's now possible to make the visibility of member variables explicit by adding the private, protected, and public keywords.</span></span> <span data-ttu-id="0254b-205">これらの修飾子の解釈は明白であり、メソッドのセマンティクスに沿っています。</span><span class="sxs-lookup"><span data-stu-id="0254b-205">The interpretation of these modifiers is obvious and aligns with the semantics for methods:</span></span>
 
-## <a name="private-and-protected-member-variables"></a><span data-ttu-id="877de-202">プライベートおよび保護されたメンバー変数</span><span class="sxs-lookup"><span data-stu-id="877de-202">Private and protected member variables</span></span>
-<span data-ttu-id="877de-203">以前は、クラスで定義されたすべてのメンバー変数が可変保護されていました。</span><span class="sxs-lookup"><span data-stu-id="877de-203">Previously, all member variables defined in a class were invariably protected.</span></span> <span data-ttu-id="877de-204">private、protected、および public キーワードを加えることにより、メンバー変数の表示を明示的にできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-204">It's now possible to make the visibility of member variables explicit by adding the private, protected, and public keywords.</span></span> <span data-ttu-id="877de-205">これらの修飾子の解釈は明白であり、メソッドのセマンティクスに沿っています。</span><span class="sxs-lookup"><span data-stu-id="877de-205">The interpretation of these modifiers is obvious and aligns with the semantics for methods:</span></span>
+-   <span data-ttu-id="0254b-206">プライベート メンバーは、定義されているクラス内でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-206">A private member can only be used within the class where it's defined.</span></span>
+-   <span data-ttu-id="0254b-207">保護されたメンバーは、それが定義されているクラスとそのすべてのサブクラスで使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-207">A protected member can be used in the class where it's defined, and all subclasses thereof.</span></span>
+-   <span data-ttu-id="0254b-208">パブリック メンバーは、どこででも使用することができ、定義されているクラス階層の範囲外に表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-208">A public member can be used anywhere: it's visible outside the confines of the class hierarchy in which it's defined.</span></span>
 
--   <span data-ttu-id="877de-206">プライベート メンバーは、定義されているクラス内でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-206">A private member can only be used within the class where it's defined.</span></span>
--   <span data-ttu-id="877de-207">保護されているメンバーは、それが定義されているクラスとそのすべてのサブクラスで使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-207">a protected member can be used in the class where it's defined, and all subclasses thereof.</span></span>
--   <span data-ttu-id="877de-208">パブリック メンバーは、どこででも使用することができ、定義されているクラス階層の範囲外に表示されます。</span><span class="sxs-lookup"><span data-stu-id="877de-208">A public member can be used anywhere: it's visible outside the confines of the class hierarchy in which it's defined.</span></span>
+<span data-ttu-id="0254b-209">明示的なモディファイアーで実装されていないメンバー変数の既定値は、引き続き保護されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-209">The default for member variables that aren't adorned with an explicit modifier is still protected.</span></span> <span data-ttu-id="0254b-210">可視性を明示的に指定する習慣をつける必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-210">You should make it a habit of explicitly specifying the visibility.</span></span> <span data-ttu-id="0254b-211">説明のように、メンバー 変数が public として定義されている場合、定義されているクラス外で消費される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-211">As described, when a member variable is defined as public, it may be consumed outside of the class in which it's defined.</span></span> <span data-ttu-id="0254b-212">この場合、変数をホストしているオブジェクトを指定する修飾子は、(メソッド呼び出しの場合と同様に) ドット表記を使用して指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-212">In this case, a qualifier designating the object hosting the variable has to be specified, using the dot notation (as is the case for method calls).</span></span> <span data-ttu-id="0254b-213">上記のコードを再利用:</span><span class="sxs-lookup"><span data-stu-id="0254b-213">Reusing the code from above:</span></span>
 
-<span data-ttu-id="877de-209">明示的なモディファイアーで実装されていないメンバー変数の既定値は、引き続き保護されています。</span><span class="sxs-lookup"><span data-stu-id="877de-209">The default for member variables that aren't adorned with an explicit modifier is still protected.</span></span> <span data-ttu-id="877de-210">可視性を明示的に指定する習慣をつける必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-210">You should make it a habit of explicitly specifying the visibility.</span></span> <span data-ttu-id="877de-211">説明のように、メンバー 変数が public として定義されている場合、定義されているクラス外で消費される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="877de-211">As described, when a member variable is defined as public, it may be consumed outside of the class in which it's defined.</span></span> <span data-ttu-id="877de-212">この場合、変数をホストしているオブジェクトを指定する修飾子は、(メソッド呼び出しの場合と同様に) ドット表記を使用して指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-212">In this case, a qualifier designating the object hosting the variable has to be specified, using the dot notation (as is the case for method calls).</span></span> <span data-ttu-id="877de-213">上記のコードを再利用:</span><span class="sxs-lookup"><span data-stu-id="877de-213">Reusing the code from above:</span></span>
+```xpp
+public class MyClass2
+{
+    int field1;
+    str field2;
 
-    public class MyClass2
+    void new()
     {
-      int field1;
-      str field2;
-
-      void new()
-      {
         this.field1 = 1;   // Explicit object designated
         field2 = "Banana";  // 'this' assumed, as usual
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-214">この場合、field1 には明示的な 'this' を使用してアクセスします。</span><span class="sxs-lookup"><span data-stu-id="877de-214">In this case, field1 is accessed using the explicit 'this.'</span></span> <span data-ttu-id="877de-215">修飾子。</span><span class="sxs-lookup"><span data-stu-id="877de-215">qualifier.</span></span> <span data-ttu-id="877de-216">**注記**: 消費者にクラスの内部作業を公開することになり、クラスの実装と消費者の間に強い依存関係が生じるため、メンバー変数をパブリックにすることはお勧めできません。</span><span class="sxs-lookup"><span data-stu-id="877de-216">**Note**: Making a member variable public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers.</span></span> <span data-ttu-id="877de-217">常に、実装ではなくコントラクトにのみ依存させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-217">You should always strive to only depend on a contract, not an implementation.</span></span>
+<span data-ttu-id="0254b-214">この場合、field1 には明示的な 'this' を使用してアクセスします。</span><span class="sxs-lookup"><span data-stu-id="0254b-214">In this case, field1 is accessed using the explicit 'this.'</span></span> <span data-ttu-id="0254b-215">修飾子。</span><span class="sxs-lookup"><span data-stu-id="0254b-215">qualifier.</span></span> 
 
-## <a name="finally-in-trycatch-statements"></a><span data-ttu-id="877de-218">最後に try/catch 明細書において</span><span class="sxs-lookup"><span data-stu-id="877de-218">Finally in try/catch statements</span></span>
-<span data-ttu-id="877de-219">try/catch 文にオプションの finally 句を追加できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-219">Try/catch statements can now include an optional finally clause.</span></span> <span data-ttu-id="877de-220">セマンティクスは C\# やその他のマネージド言語と同じです。</span><span class="sxs-lookup"><span data-stu-id="877de-220">The semantics are the same as they are in C\# and other managed languages.</span></span> <span data-ttu-id="877de-221">finally 句のステートメントは、通常または例外を介してコントロールが try ブロックを離れるときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="877de-221">The statements in the finally clause are executed when control leaves the try block, either normally or through an exception.</span></span>
+> [!NOTE]
+> <span data-ttu-id="0254b-216">メンバー変数を公開することは、クラスの内部動作をそのコンシューマに公開し、クラスの実装とそのコンシューマ間に強い依存関係を作成するため、あまり推奨されていません。</span><span class="sxs-lookup"><span data-stu-id="0254b-216">Making a member variable public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers.</span></span> <span data-ttu-id="0254b-217">常に、実装ではなくコントラクトにのみ依存させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-217">You should always strive to only depend on a contract, not an implementation.</span></span>
 
-      try
-      {
-        // ...
-      }
-      catch
-      {
-        // Executes when any exception is thrown in the dynamic
-        // scope in the try block.
-      }
-      finally
-      {
-        // Executed irrespective of how the try block exits.
-      }
+## <a name="finally-in-trycatch-statements"></a><span data-ttu-id="0254b-218">最後に try/catch 明細書において</span><span class="sxs-lookup"><span data-stu-id="0254b-218">Finally in try/catch statements</span></span>
+<span data-ttu-id="0254b-219">try/catch 文にオプションの finally 句を追加できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-219">Try/catch statements can now include an optional finally clause.</span></span> <span data-ttu-id="0254b-220">セマンティクスは C\# やその他のマネージド言語と同じです。</span><span class="sxs-lookup"><span data-stu-id="0254b-220">The semantics are the same as they are in C\# and other managed languages.</span></span> <span data-ttu-id="0254b-221">finally 句のステートメントは、通常または例外を介してコントロールが try ブロックを離れるときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-221">The statements in the finally clause are executed when control leaves the try block, either normally or through an exception.</span></span>
 
-## <a name="event-handlers-and-prepost-methods"></a><span data-ttu-id="877de-222">イベント ハンドラーおよび予備または転記メソッド</span><span class="sxs-lookup"><span data-stu-id="877de-222">Event handlers and Pre/Post methods</span></span>
-<span data-ttu-id="877de-223">旧式 X++ では、特定のメソッドがメソッドの実行前後に実行されるようにメタデータで指定できました。</span><span class="sxs-lookup"><span data-stu-id="877de-223">In legacy X++, it was possible to prescribe in metadata that certain methods were to be executed prior to and after the execution of a method.</span></span> <span data-ttu-id="877de-224">サブスクリプションが何を呼び出すかに関する情報は、パブリッシャーに記録されていますが、これは環境には役立ちません。</span><span class="sxs-lookup"><span data-stu-id="877de-224">The information about what subscribes call was recorded on the publisher, which isn't useful in the environment.</span></span> <span data-ttu-id="877de-225">サブスクライバーに SubscribesTo 属性を指定することにより、コードを通じて前後のハンドラーを指定できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-225">It's now possible to provide Pre and Post handlers through code, by providing the SubscribesTo attribute on the subscribers.</span></span>
+```xpp
+try
+{
+    // ...
+}
+catch
+{
+    // Executes when any exception is thrown in the dynamic
+    // scope in the try block.
+}
+finally
+{
+    // Executed irrespective of how the try block exits.
+}
+```
 
-### <a name="example"></a><span data-ttu-id="877de-226">例</span><span class="sxs-lookup"><span data-stu-id="877de-226">Example</span></span>
+## <a name="event-handlers-and-prepost-methods"></a><span data-ttu-id="0254b-222">イベント ハンドラーおよび予備または転記メソッド</span><span class="sxs-lookup"><span data-stu-id="0254b-222">Event handlers and Pre/Post methods</span></span>
+<span data-ttu-id="0254b-223">旧式 X++ では、特定のメソッドがメソッドの実行前後に実行されるようにメタデータで指定できました。</span><span class="sxs-lookup"><span data-stu-id="0254b-223">In legacy X++, it was possible to prescribe in metadata that certain methods were to be executed prior to and after the execution of a method.</span></span> <span data-ttu-id="0254b-224">サブスクリプションが何を呼び出すかに関する情報は、パブリッシャーに記録されていますが、これは環境には役立ちません。</span><span class="sxs-lookup"><span data-stu-id="0254b-224">The information about what subscribes call was recorded on the publisher, which isn't useful in the environment.</span></span> <span data-ttu-id="0254b-225">サブスクライバーに SubscribesTo 属性を指定することにより、コードを通じて前後のハンドラーを指定できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-225">It's now possible to provide Pre and Post handlers through code, by providing the SubscribesTo attribute on the subscribers.</span></span>
 
-    [PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-      public static void PreHandler(XppPrePostArgs arguments)
-      {
-        int arg = arguments.getArg("i");
-      }
+### <a name="example"></a><span data-ttu-id="0254b-226">例</span><span class="sxs-lookup"><span data-stu-id="0254b-226">Example</span></span>
 
-      [PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-      public static void PostHandler(XppPrePostArgs arguments)
-      {
-        int arg = arguments.getArg("i");
-        int retvalFromMethod = arguments.getReturnValue();
-      }
+```xpp
+[PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PreHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+}
 
-      public int Publisher(int i)
-      {
-        return 1;
-      }
+[PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PostHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+    int retvalFromMethod = arguments.getReturnValue();
+}
 
-<span data-ttu-id="877de-227">この例は、Publisher という公開メソッドを示しています。</span><span class="sxs-lookup"><span data-stu-id="877de-227">This example shows a publishing method called Publisher.</span></span> <span data-ttu-id="877de-228">2 人のサブスクライバーが PreHandlerFor と PostHandlerFor に登録されています。</span><span class="sxs-lookup"><span data-stu-id="877de-228">Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor.</span></span> <span data-ttu-id="877de-229">このコードは、変数と戻り値にアクセスする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="877de-229">The code shows how to access the variables, and the return values.</span></span> <span data-ttu-id="877de-230">**注記**: アプリケーション コードに重要なアプリケーション イベントを公開するための多数の委任がないため、この機能は下位互換性のために提供されています。</span><span class="sxs-lookup"><span data-stu-id="877de-230">**Note**: This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events.</span></span> <span data-ttu-id="877de-231">前後のハンドラーは、パラメーターの追加または変更のため、パラメータータイプの変更ため、メソッドが呼び出されなくなったり、別の状況で呼び出されたりしたために容易に中断する可能があります。</span><span class="sxs-lookup"><span data-stu-id="877de-231">Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances.</span></span> <span data-ttu-id="877de-232">属性はバインディング イベント ハンドラーをデリゲートするためにも使用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-232">Attributes are also used for binding event handlers to delegates:</span></span>
+public int Publisher(int i)
+{
+    return 1;
+}
+```
 
-      [SubscribesTo(
-        classstr(FMRentalCheckoutProcessor),  
-        delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
-      public static void RentalFinalizedEventHandler(
-        FMRental rentalrecord, Struct rentalConfirmation)
-      {
-      }
+<span data-ttu-id="0254b-227">この例は、Publisher という公開メソッドを示しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-227">This example shows a publishing method called Publisher.</span></span> <span data-ttu-id="0254b-228">2 人のサブスクライバーが PreHandlerFor と PostHandlerFor に登録されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-228">Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor.</span></span> <span data-ttu-id="0254b-229">このコードは、変数と戻り値にアクセスする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-229">The code shows how to access the variables, and the return values.</span></span> 
 
-      delegate void RentalTransactionAboutTobeFinalizedEvent(
+<span data-ttu-id="0254b-230">この機能は、アプリケーションコードに代行機能が多くないことから、下位互換性を保つために提供されており、重要なアプリケーション イベントを発行する目的で提供されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-230">This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events.</span></span> <span data-ttu-id="0254b-231">前後のハンドラーは、パラメーターの追加または変更のため、パラメータータイプの変更ため、メソッドが呼び出されなくなったり、別の状況で呼び出されたりしたために容易に中断する可能があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-231">Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances.</span></span> <span data-ttu-id="0254b-232">属性はバインディング イベント ハンドラーをデリゲートするためにも使用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-232">Attributes are also used for binding event handlers to delegates:</span></span>
+
+```xpp
+[SubscribesTo(
+    classstr(FMRentalCheckoutProcessor),  
+    delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+public static void RentalFinalizedEventHandler(
+    FMRental rentalrecord, Struct rentalConfirmation)
+{
+}
+
+    delegate void RentalTransactionAboutTobeFinalizedEvent(
         FMRental fmrentalrecord, struct RentalConfirmation)
-      {
-      }
+{
+}
+```
 
-<span data-ttu-id="877de-233">この場合、SubscribesTo 属性は、FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent デリゲートが呼び出されたときにメソッド RentalFinalizedEventHandler を呼び出す必要があることを指定します。</span><span class="sxs-lookup"><span data-stu-id="877de-233">In this case, the SubscribesTo attribute specifies that the method RentalFinalizedEventHandler should be called when the FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent delegate is called.</span></span> <span data-ttu-id="877de-234">パブリッシャーとサブスクライバーの間のバインディングは属性を通じて行われるため、サブスクライバーが呼び出される順序を指定する方法はありません。</span><span class="sxs-lookup"><span data-stu-id="877de-234">Since the binding between the publisher and subscribers is done through attributes, there's no way of specifying the sequence in which subscribers are called.</span></span>
+<span data-ttu-id="0254b-233">この場合、SubscribesTo 属性は、FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent デリゲートが呼び出されたときにメソッド RentalFinalizedEventHandler を呼び出す必要があることを指定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-233">In this case, the SubscribesTo attribute specifies that the method RentalFinalizedEventHandler should be called when the FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent delegate is called.</span></span> <span data-ttu-id="0254b-234">パブリッシャーとサブスクライバーの間のバインディングは属性を通じて行われるため、サブスクライバーが呼び出される順序を指定する方法はありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-234">Since the binding between the publisher and subscribers is done through attributes, there's no way of specifying the sequence in which subscribers are called.</span></span>
 
-## <a name="extension-methods"></a><span data-ttu-id="877de-235">拡張メソッド</span><span class="sxs-lookup"><span data-stu-id="877de-235">Extension methods</span></span>
-<span data-ttu-id="877de-236">拡張メソッド機能を使用すると、メソッドを別の拡張クラスに記述することによって、拡張メソッドを対象クラスに追加できます。</span><span class="sxs-lookup"><span data-stu-id="877de-236">The extension method feature lets you add extension methods to a target class by writing the methods in a separate extension class.</span></span> <span data-ttu-id="877de-237">次のルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-237">The following rules apply:</span></span>
+## <a name="extension-methods"></a><span data-ttu-id="0254b-235">拡張メソッド</span><span class="sxs-lookup"><span data-stu-id="0254b-235">Extension methods</span></span>
+<span data-ttu-id="0254b-236">拡張メソッド機能を使用すると、メソッドを別の拡張クラスに記述することによって、拡張メソッドを対象クラスに追加できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-236">The extension method feature lets you add extension methods to a target class by writing the methods in a separate extension class.</span></span> <span data-ttu-id="0254b-237">次のルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-237">The following rules apply:</span></span>
 
--   <span data-ttu-id="877de-238">拡張クラスは静的でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="877de-238">The extension class must be static.</span></span>
--   <span data-ttu-id="877de-239">拡張クラスの名前は、10 文字の接尾語 \_Extension で終了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-239">The name of the extension class must end with the ten-character suffix \_Extension.</span></span> <span data-ttu-id="877de-240">ただし、接尾辞に先行する名前の部分には制限はありません。</span><span class="sxs-lookup"><span data-stu-id="877de-240">However, there's no restriction on the part of the name that precedes the suffix.</span></span>
--   <span data-ttu-id="877de-241">拡張子クラス内のすべての拡張子メソッドは、パブリック静的として宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-241">Every extension method in the extension class must be declared as public static.</span></span>
--   <span data-ttu-id="877de-242">すべての拡張メソッドの最初のパラメーターは、拡張メソッドが拡張する型です。</span><span class="sxs-lookup"><span data-stu-id="877de-242">The first parameter in every extension method is the type that the extension method extends.</span></span> <span data-ttu-id="877de-243">ただし、拡張メソッドが呼び出されると、呼び出し元は最初のパラメーターに対して何も渡す必要がありません。</span><span class="sxs-lookup"><span data-stu-id="877de-243">However, when the extension method is called, the caller must not pass in anything for the first parameter.</span></span> <span data-ttu-id="877de-244">代わりに、システムが最初のパラメーターに必要なオブジェクトを自動的に渡します。</span><span class="sxs-lookup"><span data-stu-id="877de-244">Instead, the system automatically passes in the required object for the first parameter.</span></span>
+-   <span data-ttu-id="0254b-238">拡張クラスは静的でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="0254b-238">The extension class must be static.</span></span>
+-   <span data-ttu-id="0254b-239">拡張クラスの名前は、10 文字の接尾語 \_Extension で終了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-239">The name of the extension class must end with the ten-character suffix \_Extension.</span></span> <span data-ttu-id="0254b-240">ただし、接尾辞に先行する名前の部分には制限はありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-240">However, there's no restriction on the part of the name that precedes the suffix.</span></span>
+-   <span data-ttu-id="0254b-241">拡張子クラス内のすべての拡張子メソッドは、パブリック静的として宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-241">Every extension method in the extension class must be declared as public static.</span></span>
+-   <span data-ttu-id="0254b-242">すべての拡張メソッドの最初のパラメーターは、拡張メソッドが拡張する型です。</span><span class="sxs-lookup"><span data-stu-id="0254b-242">The first parameter in every extension method is the type that the extension method extends.</span></span> <span data-ttu-id="0254b-243">ただし、拡張メソッドが呼び出されると、呼び出し元は最初のパラメーターに対して何も渡す必要がありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-243">However, when the extension method is called, the caller must not pass in anything for the first parameter.</span></span> <span data-ttu-id="0254b-244">代わりに、システムが最初のパラメーターに必要なオブジェクトを自動的に渡します。</span><span class="sxs-lookup"><span data-stu-id="0254b-244">Instead, the system automatically passes in the required object for the first parameter.</span></span>
 
-<span data-ttu-id="877de-245">拡張クラスにプライベートまたは保護された静的メソッドを含めることは完全に有効です。</span><span class="sxs-lookup"><span data-stu-id="877de-245">It's perfectly valid to have private or protected static methods in an extension class.</span></span> <span data-ttu-id="877de-246">これらは通常、実装の詳細に使用され、拡張として公開されません。</span><span class="sxs-lookup"><span data-stu-id="877de-246">These are typically used for implementation details and are not exposed as extensions.</span></span> <span data-ttu-id="877de-247">次の例は、いくつかの拡張メソッドを保持している拡張機能クラスを示しています。</span><span class="sxs-lookup"><span data-stu-id="877de-247">The example below illustrates an extension class holding a few extension methods:</span></span>
+<span data-ttu-id="0254b-245">拡張クラスにプライベートまたは保護された静的メソッドを含めることは完全に有効です。</span><span class="sxs-lookup"><span data-stu-id="0254b-245">It's perfectly valid to have private or protected static methods in an extension class.</span></span> <span data-ttu-id="0254b-246">これらは通常、実装の詳細に使用され、拡張として公開されません。</span><span class="sxs-lookup"><span data-stu-id="0254b-246">These are typically used for implementation details and are not exposed as extensions.</span></span> <span data-ttu-id="0254b-247">次の例は、いくつかの拡張メソッドを保持している拡張機能クラスを示しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-247">The example below illustrates an extension class holding a few extension methods:</span></span>
 
-    public static class AtlInventLocation_Extension
-    {
-      public static InventLocation refillEnabled(
+```xpp
+public static class AtlInventLocation_Extension
+{
+    public static InventLocation refillEnabled(
         InventLocation _warehouse, 
         boolean _isRefillEnabled = true)
-      {
+    {
         _warehouse.ReqRefill = _isRefillEnabled;
         return _warehouse;
-      }
-
-      public static InventLocation save(InventLocation _warehouse)
-      {
-        _warehouse.write();
-        return _warehouse;
-      }
     }
 
-### <a name="why-use-extension-methods"></a><span data-ttu-id="877de-248">なぜ拡張メソッドを使用しますか。</span><span class="sxs-lookup"><span data-stu-id="877de-248">Why use extension methods?</span></span>
-
-<span data-ttu-id="877de-249">拡張メソッドの手法は、拡張するクラスのソース コードには影響しません。</span><span class="sxs-lookup"><span data-stu-id="877de-249">The extension method technique doesn't affect the source code of the class it extends.</span></span> <span data-ttu-id="877de-250">したがって、クラスへの追加はオーバーレイなしで行うことができます。</span><span class="sxs-lookup"><span data-stu-id="877de-250">Therefore, the addition to the class can be done without over-layering.</span></span> <span data-ttu-id="877de-251">ターゲット クラスへのアップグレードは、既存の拡張メソッドの影響を受けることはありません。</span><span class="sxs-lookup"><span data-stu-id="877de-251">Upgrades to the target class are never affected by any existing extension methods.</span></span> <span data-ttu-id="877de-252">ただし、ターゲット クラスへのアップグレードで拡張メソッドとして同じ名前のメソッドが追加される場合、拡張メソッドはターゲット クラスのオブジェクトを通して到達できなくなります。</span><span class="sxs-lookup"><span data-stu-id="877de-252">However, if an upgrade to the target class adds a method that has the same name as your extension method, your extension method becomes unreachable through objects of the target class.</span></span> <span data-ttu-id="877de-253">拡張メソッドは使いやすいです。</span><span class="sxs-lookup"><span data-stu-id="877de-253">Extension methods are easy to use.</span></span> <span data-ttu-id="877de-254">拡張メソッドの手法では、通常のインスタンス メソッドを呼び出すときによく使うドット区切り構文と同じものを使用します。</span><span class="sxs-lookup"><span data-stu-id="877de-254">The extension method technique uses the same dot-delimited syntax that you routinely use the call regular instance methods.</span></span> <span data-ttu-id="877de-255">拡張メソッドは、ターゲット クラスのすべてのパブリック コンポーネントにアクセスできますが、保護されたまたはプライベートのオブジェクトにはアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="877de-255">Extension methods can access all public artifacts of the target class, but they can't access things that are protected or private.</span></span> <span data-ttu-id="877de-256">この方法では、拡張メソッドは糖衣構文の種類とみなすことができます。</span><span class="sxs-lookup"><span data-stu-id="877de-256">In this way, extension methods can be seen as a kind of syntactic sugar.</span></span>
-
-### <a name="where-can-extension-methods-be-applied"></a><span data-ttu-id="877de-257">拡張メソッドはどこに適用できるか</span><span class="sxs-lookup"><span data-stu-id="877de-257">Where can extension methods be applied?</span></span>
-
-<span data-ttu-id="877de-258">拡張メソッドのターゲットは、次のアプリケーション オブジェクト タイプのいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-258">The target of an extension method must be one of the following application object types:</span></span>
-
--   <span data-ttu-id="877de-259">クラス</span><span class="sxs-lookup"><span data-stu-id="877de-259">Class</span></span>
--   <span data-ttu-id="877de-260">テーブル</span><span class="sxs-lookup"><span data-stu-id="877de-260">Table</span></span>
--   <span data-ttu-id="877de-261">表示</span><span class="sxs-lookup"><span data-stu-id="877de-261">View</span></span>
--   <span data-ttu-id="877de-262">マップ</span><span class="sxs-lookup"><span data-stu-id="877de-262">Map</span></span>
-
-<span data-ttu-id="877de-263">目標タイプに関係なく、拡張機能*クラス*はタイプに拡張メソッドを追加するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="877de-263">Regardless of the target type, an extension *class* is used to add extension methods to the type.</span></span> <span data-ttu-id="877de-264">たとえば、拡張テーブルは、メソッドをテーブルに追加するために使用されて*いません*し、拡張テーブルというものは存在しません。</span><span class="sxs-lookup"><span data-stu-id="877de-264">For example, an extension table is *not* used to add methods to a table, and there's no such thing as an extension table.</span></span>
-
-## <a name="using-clauses"></a><span data-ttu-id="877de-265">句の使用</span><span class="sxs-lookup"><span data-stu-id="877de-265">Using clauses</span></span>
-<span data-ttu-id="877de-266">以前は、X++ で作成されなかったマネージド コンポーネントに対するすべての参照が、各タイプの名前空間を含むを完全修飾名を使用して行われていました。</span><span class="sxs-lookup"><span data-stu-id="877de-266">Previously, all references to managed artifacts that weren't authored in X++ was done using fully qualified names, including the namespace for each type.</span></span> <span data-ttu-id="877de-267">これはまだ可能ですが、このようなコンポーネントの使用の煩わしさを軽減をするために、句を使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-267">This is still possible, but you can now provide using clauses to make the use of such artifacts less onerous.</span></span> <span data-ttu-id="877de-268">using ステートメントとは対照的に、各 using 句はその句が適用されるクラスに先行します。</span><span class="sxs-lookup"><span data-stu-id="877de-268">As opposed to a using statement, each using clause precedes the class in which the clause is applied.</span></span> <span data-ttu-id="877de-269">完全修飾名の短縮名を導入するエイリアスを提供することもできます。</span><span class="sxs-lookup"><span data-stu-id="877de-269">It's also possible to provide aliases that introduce a short name for a fully qualified name.</span></span> <span data-ttu-id="877de-270">エイリアスは、以下に示すように名前空間とクラスを示すことができます。</span><span class="sxs-lookup"><span data-stu-id="877de-270">Aliases can denote namespaces and classes as shown below.</span></span>
-
-### <a name="example"></a><span data-ttu-id="877de-271">例</span><span class="sxs-lookup"><span data-stu-id="877de-271">Example</span></span>
-
-<span data-ttu-id="877de-272">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="877de-272">Consider the following code:</span></span>
-
-     using System;
-    using IONS=System.IO; // Namespace alias
-    using Alist=System.Collections.ArrayList; // Class alias
-
-    public class MyClass2
+    public static InventLocation save(InventLocation _warehouse)
     {
-      public static void Main(Args a)
-      {
+        _warehouse.write();
+        return _warehouse;
+    }
+}
+```
+
+### <a name="why-use-extension-methods"></a><span data-ttu-id="0254b-248">なぜ拡張メソッドを使用しますか。</span><span class="sxs-lookup"><span data-stu-id="0254b-248">Why use extension methods?</span></span>
+
+<span data-ttu-id="0254b-249">拡張メソッドの手法は、拡張するクラスのソース コードには影響しません。</span><span class="sxs-lookup"><span data-stu-id="0254b-249">The extension method technique doesn't affect the source code of the class it extends.</span></span> <span data-ttu-id="0254b-250">したがって、クラスへの追加はオーバーレイなしで行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-250">Therefore, the addition to the class can be done without over-layering.</span></span> <span data-ttu-id="0254b-251">ターゲット クラスへのアップグレードは、既存の拡張メソッドの影響を受けることはありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-251">Upgrades to the target class are never affected by any existing extension methods.</span></span> <span data-ttu-id="0254b-252">ただし、ターゲット クラスへのアップグレードで拡張メソッドとして同じ名前のメソッドが追加される場合、拡張メソッドはターゲット クラスのオブジェクトを通して到達できなくなります。</span><span class="sxs-lookup"><span data-stu-id="0254b-252">However, if an upgrade to the target class adds a method that has the same name as your extension method, your extension method becomes unreachable through objects of the target class.</span></span> <span data-ttu-id="0254b-253">拡張メソッドは使いやすいです。</span><span class="sxs-lookup"><span data-stu-id="0254b-253">Extension methods are easy to use.</span></span> <span data-ttu-id="0254b-254">拡張メソッドの手法では、通常のインスタンス メソッドを呼び出すときによく使うドット区切り構文と同じものを使用します。</span><span class="sxs-lookup"><span data-stu-id="0254b-254">The extension method technique uses the same dot-delimited syntax that you routinely use the call regular instance methods.</span></span> <span data-ttu-id="0254b-255">拡張メソッドは、ターゲット クラスのすべてのパブリック コンポーネントにアクセスできますが、保護されたまたはプライベートのオブジェクトにはアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-255">Extension methods can access all public artifacts of the target class, but they can't access things that are protected or private.</span></span> <span data-ttu-id="0254b-256">この方法では、拡張メソッドは糖衣構文の種類とみなすことができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-256">In this way, extension methods can be seen as a kind of syntactic sugar.</span></span>
+
+### <a name="where-can-extension-methods-be-applied"></a><span data-ttu-id="0254b-257">拡張メソッドはどこに適用できるか</span><span class="sxs-lookup"><span data-stu-id="0254b-257">Where can extension methods be applied?</span></span>
+
+<span data-ttu-id="0254b-258">拡張メソッドのターゲットは、次のアプリケーション オブジェクト タイプのいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-258">The target of an extension method must be one of the following application object types:</span></span>
+
+-   <span data-ttu-id="0254b-259">クラス</span><span class="sxs-lookup"><span data-stu-id="0254b-259">Class</span></span>
+-   <span data-ttu-id="0254b-260">テーブル</span><span class="sxs-lookup"><span data-stu-id="0254b-260">Table</span></span>
+-   <span data-ttu-id="0254b-261">表示</span><span class="sxs-lookup"><span data-stu-id="0254b-261">View</span></span>
+-   <span data-ttu-id="0254b-262">マップ</span><span class="sxs-lookup"><span data-stu-id="0254b-262">Map</span></span>
+
+<span data-ttu-id="0254b-263">目標タイプに関係なく、拡張機能*クラス*はタイプに拡張メソッドを追加するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-263">Regardless of the target type, an extension *class* is used to add extension methods to the type.</span></span> <span data-ttu-id="0254b-264">たとえば、拡張テーブルは、メソッドをテーブルに追加するために使用されて*いません*し、拡張テーブルというものは存在しません。</span><span class="sxs-lookup"><span data-stu-id="0254b-264">For example, an extension table is *not* used to add methods to a table, and there's no such thing as an extension table.</span></span>
+
+## <a name="using-clauses"></a><span data-ttu-id="0254b-265">句の使用</span><span class="sxs-lookup"><span data-stu-id="0254b-265">Using clauses</span></span>
+<span data-ttu-id="0254b-266">以前は、X++ で作成されなかったマネージド コンポーネントに対するすべての参照が、各タイプの名前空間を含むを完全修飾名を使用して行われていました。</span><span class="sxs-lookup"><span data-stu-id="0254b-266">Previously, all references to managed artifacts that weren't authored in X++ was done using fully qualified names, including the namespace for each type.</span></span> <span data-ttu-id="0254b-267">これはまだ可能ですが、このようなコンポーネントの使用の煩わしさを軽減をするために、句を使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-267">This is still possible, but you can now provide using clauses to make the use of such artifacts less onerous.</span></span> <span data-ttu-id="0254b-268">using ステートメントとは対照的に、各 using 句はその句が適用されるクラスに先行します。</span><span class="sxs-lookup"><span data-stu-id="0254b-268">As opposed to a using statement, each using clause precedes the class in which the clause is applied.</span></span> <span data-ttu-id="0254b-269">完全修飾名の短縮名を導入するエイリアスを提供することもできます。</span><span class="sxs-lookup"><span data-stu-id="0254b-269">It's also possible to provide aliases that introduce a short name for a fully qualified name.</span></span> <span data-ttu-id="0254b-270">エイリアスは、以下に示すように名前空間とクラスを示すことができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-270">Aliases can denote namespaces and classes as shown below.</span></span>
+
+### <a name="example"></a><span data-ttu-id="0254b-271">例</span><span class="sxs-lookup"><span data-stu-id="0254b-271">Example</span></span>
+
+<span data-ttu-id="0254b-272">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-272">Consider the following code:</span></span>
+
+```xpp
+using System;
+using IONS=System.IO; // Namespace alias
+using Alist=System.Collections.ArrayList; // Class alias
+
+public class MyClass2
+{
+    public static void Main(Args a)
+    {
         Int32 I; // Alternative to System.Int32
         Alist al; // Using a class alias
 
@@ -398,20 +440,22 @@ ms.locfileid: "2183341"
         al.Add(1);
 
         s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
-      }
     }
+}
+```
 
-## <a name="differences-between-legacy-x-and-new-x"></a><span data-ttu-id="877de-273">レガシー X++ と新しい X++ の違い</span><span class="sxs-lookup"><span data-stu-id="877de-273">Differences between legacy X++ and new X++</span></span>
-<span data-ttu-id="877de-274">このセクションでは、旧式 X++ と新しい X++ の違いを説明します。</span><span class="sxs-lookup"><span data-stu-id="877de-274">In this section, we'll see some of the differences between legacy X++ and the new X++.</span></span>
+## <a name="differences-between-legacy-x-and-new-x"></a><span data-ttu-id="0254b-273">レガシー X++ と新しい X++ の違い</span><span class="sxs-lookup"><span data-stu-id="0254b-273">Differences between legacy X++ and new X++</span></span>
+<span data-ttu-id="0254b-274">このセクションでは、旧式 X++ と新しい X++ の違いを説明します。</span><span class="sxs-lookup"><span data-stu-id="0254b-274">In this section, we'll see some of the differences between legacy X++ and the new X++.</span></span>
 
-### <a name="reals-are-decimals"></a><span data-ttu-id="877de-275">Reals は Decimals です</span><span class="sxs-lookup"><span data-stu-id="877de-275">Reals are Decimals</span></span>
+### <a name="reals-are-decimals"></a><span data-ttu-id="0254b-275">Reals は Decimals です</span><span class="sxs-lookup"><span data-stu-id="0254b-275">Reals are Decimals</span></span>
 
-<span data-ttu-id="877de-276">実際の値を表すために使用されるタイプは、解釈された X++ から変更されています。</span><span class="sxs-lookup"><span data-stu-id="877de-276">The type used to represent real values has changed from interpreted X++.</span></span> <span data-ttu-id="877de-277">新しいタイプは、古いタイプの値をすべて表すことができるので、コードを書き直す必要はありません。</span><span class="sxs-lookup"><span data-stu-id="877de-277">This won't require you to rewrite any code, because the new type can express all of the values that the old one could.</span></span> <span data-ttu-id="877de-278">完全な開示のためにこの材料を提供します。</span><span class="sxs-lookup"><span data-stu-id="877de-278">We provide this material in the interest of full disclosure only.</span></span> <span data-ttu-id="877de-279">実数タイプのすべてのインスタンスが .NET 小数タイプ (System.Decimal) のインスタンスとして実装されます。</span><span class="sxs-lookup"><span data-stu-id="877de-279">All instances of the real type are now implemented as instances of the .NET decimal type (System.Decimal).</span></span> <span data-ttu-id="877de-280">以前のバージョンでの real 型と同様に、バイナリ コード化された小数点以下の型での decimal 型は浮動小数点の型とは違い、丸め誤差に対する対応力があります。</span><span class="sxs-lookup"><span data-stu-id="877de-280">Just as the real type in previous versions, the decimal type in a binary coded decimal type that, unlike floating point type, is resilient to rounding errors.</span></span> <span data-ttu-id="877de-281">10 進型の範囲と解像度は、元の型とは異なります。</span><span class="sxs-lookup"><span data-stu-id="877de-281">The range and resolution of the decimal type are different from the original types.</span></span> <span data-ttu-id="877de-282">元の X++ 実数型は 16 桁をサポートし、小数点の配置位置を指し示す指数をサポートしていました。</span><span class="sxs-lookup"><span data-stu-id="877de-282">The original X++ real type supported 16 digits and an exponent that defined where the decimal point is placed.</span></span> <span data-ttu-id="877de-283">新しい X++ 実数型は、正の 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) から 負の 79,228,162,514,264,337,593,543,950,335 (-(2⁹⁶-1)) までの 10 進数を表すことができます。</span><span class="sxs-lookup"><span data-stu-id="877de-283">The new X++ real type can represent decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) to negative 79,228,162,514,264,337,593,543,950,335 (-(2⁹⁶-1)).</span></span> <span data-ttu-id="877de-284">新しい実数型は、丸めの必要性を排除しません。</span><span class="sxs-lookup"><span data-stu-id="877de-284">The new real type doesn't eliminate the need for rounding.</span></span> <span data-ttu-id="877de-285">たとえば、次のコードは、1 ではなく 0.9999999999999999999999999999 という結果を生成します。</span><span class="sxs-lookup"><span data-stu-id="877de-285">For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.</span></span> <span data-ttu-id="877de-286">これは、以下の変数の値を表示するためにデバッガーを使用するとすぐに見られます。</span><span class="sxs-lookup"><span data-stu-id="877de-286">This is readily seen when using the debugger to show the value of the variables below.</span></span>
+<span data-ttu-id="0254b-276">実際の値を表すために使用されるタイプは、解釈された X++ から変更されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-276">The type used to represent real values has changed from interpreted X++.</span></span> <span data-ttu-id="0254b-277">新しいタイプは、古いタイプの値をすべて表すことができるので、コードを書き直す必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-277">This won't require you to rewrite any code, because the new type can express all of the values that the old one could.</span></span> <span data-ttu-id="0254b-278">完全な開示のためにこの材料を提供します。</span><span class="sxs-lookup"><span data-stu-id="0254b-278">We provide this material in the interest of full disclosure only.</span></span> <span data-ttu-id="0254b-279">実数タイプのすべてのインスタンスが .NET 小数タイプ (System.Decimal) のインスタンスとして実装されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-279">All instances of the real type are now implemented as instances of the .NET decimal type (System.Decimal).</span></span> <span data-ttu-id="0254b-280">以前のバージョンでの real 型と同様に、バイナリ コード化された小数点以下の型での decimal 型は浮動小数点の型とは違い、丸め誤差に対する対応力があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-280">Just as the real type in previous versions, the decimal type in a binary coded decimal type that, unlike floating point type, is resilient to rounding errors.</span></span> <span data-ttu-id="0254b-281">10 進型の範囲と解像度は、元の型とは異なります。</span><span class="sxs-lookup"><span data-stu-id="0254b-281">The range and resolution of the decimal type are different from the original types.</span></span> <span data-ttu-id="0254b-282">元の X++ 実数型は 16 桁をサポートし、小数点の配置位置を指し示す指数をサポートしていました。</span><span class="sxs-lookup"><span data-stu-id="0254b-282">The original X++ real type supported 16 digits and an exponent that defined where the decimal point is placed.</span></span> <span data-ttu-id="0254b-283">新しい X++ 実数型は、正の 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) から 負の 79,228,162,514,264,337,593,543,950,335 (-(2⁹⁶-1)) までの 10 進数を表すことができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-283">The new X++ real type can represent decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) to negative 79,228,162,514,264,337,593,543,950,335 (-(2⁹⁶-1)).</span></span> <span data-ttu-id="0254b-284">新しい実数型は、丸めの必要性を排除しません。</span><span class="sxs-lookup"><span data-stu-id="0254b-284">The new real type doesn't eliminate the need for rounding.</span></span> <span data-ttu-id="0254b-285">たとえば、次のコードは、1 ではなく 0.9999999999999999999999999999 という結果を生成します。</span><span class="sxs-lookup"><span data-stu-id="0254b-285">For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.</span></span> <span data-ttu-id="0254b-286">これは、以下の変数の値を表示するためにデバッガーを使用するとすぐに見られます。</span><span class="sxs-lookup"><span data-stu-id="0254b-286">This is readily seen when using the debugger to show the value of the variables below.</span></span>
 
-    public class MyClass2
+```xpp
+public class MyClass2
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         real dividend = 1.0;
         real divisor = 3.0;
         str stringvalue;
@@ -421,196 +465,259 @@ ms.locfileid: "2183341"
 
         valueAsDecimal = value;
         info(valueAsDecimal.ToString("G28"));
-
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-287">1/3 の値を正確に表せる小数点以下の桁数はありません。</span><span class="sxs-lookup"><span data-stu-id="877de-287">No number of decimals will suffice to represent the value of 1/3 accurately.</span></span> <span data-ttu-id="877de-288">ここで得られる不一致は、有限数の小数しか提供されないことによるものです。</span><span class="sxs-lookup"><span data-stu-id="877de-288">The discrepancy obtained here is due to the fact that only a finite number of decimals are provided.</span></span> <span data-ttu-id="877de-289">必要な小数点以下の桁数まで丸めるには、Round 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="877de-289">You should use the Round function to round to the number of decimals required.</span></span>
+<span data-ttu-id="0254b-287">1/3 の値を正確に表せる小数点以下の桁数はありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-287">No number of decimals will suffice to represent the value of 1/3 accurately.</span></span> <span data-ttu-id="0254b-288">ここで得られる不一致は、有限数の小数しか提供されないことによるものです。</span><span class="sxs-lookup"><span data-stu-id="0254b-288">The discrepancy obtained here is due to the fact that only a finite number of decimals are provided.</span></span> <span data-ttu-id="0254b-289">必要な小数点以下の桁数まで丸めるには、Round 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="0254b-289">You should use the Round function to round to the number of decimals required.</span></span>
 
-      value = round(value, 2);
+```xpp
+value = round(value, 2);
+```
 
-## <a name="internal-representation"></a><span data-ttu-id="877de-290">内部表示</span><span class="sxs-lookup"><span data-stu-id="877de-290">Internal representation</span></span>
-<span data-ttu-id="877de-291">10 進数は、符号と数値の桁ごとの値が 0～9 の範囲にある数値と、流動少数点の整数部と小数部分を区切るための位置を示すスケーリング係数で構成される浮動小数点値です。</span><span class="sxs-lookup"><span data-stu-id="877de-291">A decimal number is a floating-point value that consists of a sign, a numeric value where each digit in the value ranges from 0 to 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.</span></span> <span data-ttu-id="877de-292">実数値のバイナリ表現は、96ビットの整数を除算し、それが小数部分であることを指定するために使用する 1 ビットの符号、96ビットの整数、スケーリング係数で構成されます。</span><span class="sxs-lookup"><span data-stu-id="877de-292">The binary representation of a real value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the 96-bit integer and specify what portion of it is a decimal fraction.</span></span> <span data-ttu-id="877de-293">拡大縮小係数は、0 から 28 の範囲の指数に暗黙的に 10 を引いたものです。</span><span class="sxs-lookup"><span data-stu-id="877de-293">The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28.</span></span> <span data-ttu-id="877de-294">したがって、10 進数のバイナリ表現は ((-2⁹⁶ ～ 2⁹⁶)/10(0\\ ～\\ 28)) を表します。ここで -(2⁹⁶-1) は表現できる最小値と等しく、2⁹⁶-1 は最大値に等しくなります。</span><span class="sxs-lookup"><span data-stu-id="877de-294">Therefore, the binary representation of a decimal value represents ((-2⁹⁶ to 2⁹⁶)/10(0\\ to\\ 28)), where -(2⁹⁶-1) is equal to the minimum value and 2⁹⁶-1 is equal to the maximum value that can be expressed.</span></span>
+## <a name="internal-representation"></a><span data-ttu-id="0254b-290">内部表示</span><span class="sxs-lookup"><span data-stu-id="0254b-290">Internal representation</span></span>
+<span data-ttu-id="0254b-291">10 進数は、符号と数値の桁ごとの値が 0～9 の範囲にある数値と、流動少数点の整数部と小数部分を区切るための位置を示すスケーリング係数で構成される浮動小数点値です。</span><span class="sxs-lookup"><span data-stu-id="0254b-291">A decimal number is a floating-point value that consists of a sign, a numeric value where each digit in the value ranges from 0 to 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.</span></span> <span data-ttu-id="0254b-292">実数値のバイナリ表現は、96ビットの整数を除算し、それが小数部分であることを指定するために使用する 1 ビットの符号、96ビットの整数、スケーリング係数で構成されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-292">The binary representation of a real value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the 96-bit integer and specify what portion of it is a decimal fraction.</span></span> <span data-ttu-id="0254b-293">拡大縮小係数は、0 から 28 の範囲の指数に暗黙的に 10 を引いたものです。</span><span class="sxs-lookup"><span data-stu-id="0254b-293">The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28.</span></span> <span data-ttu-id="0254b-294">したがって、10 進数のバイナリ表現は ((-2⁹⁶ ～ 2⁹⁶)/10(0\\ ～\\ 28)) を表します。ここで -(2⁹⁶-1) は表現できる最小値と等しく、2⁹⁶-1 は最大値に等しくなります。</span><span class="sxs-lookup"><span data-stu-id="0254b-294">Therefore, the binary representation of a decimal value represents ((-2⁹⁶ to 2⁹⁶)/10(0\\ to\\ 28)), where -(2⁹⁶-1) is equal to the minimum value and 2⁹⁶-1 is equal to the maximum value that can be expressed.</span></span>
 
-## <a name="string-truncation"></a><span data-ttu-id="877de-295">文字列の切り捨て</span><span class="sxs-lookup"><span data-stu-id="877de-295">String truncation</span></span>
-<span data-ttu-id="877de-296">文字列の切り捨ては、新しい機能ではありません。</span><span class="sxs-lookup"><span data-stu-id="877de-296">String truncation is not a new feature.</span></span> <span data-ttu-id="877de-297">ただし、コードが以前のバージョンの IL で実行されると、ここで説明されている自動文字列の切り捨ては行われません。</span><span class="sxs-lookup"><span data-stu-id="877de-297">However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place.</span></span> <span data-ttu-id="877de-298">文字列値は、最大文字数を格納するために X++ で宣言できます。</span><span class="sxs-lookup"><span data-stu-id="877de-298">String values can be declared in X++ to contain a maximum number of characters.</span></span> <span data-ttu-id="877de-299">これは通常、以下に示すように、この情報を拡張データ型でエンコードすることによって実現されます。クレジット カード番号は 20 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-299">Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters.</span></span> <span data-ttu-id="877de-300">[![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) 長さ制約を X++ 構文で直接指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="877de-300">[![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:</span></span>
+## <a name="string-truncation"></a><span data-ttu-id="0254b-295">文字列の切り捨て</span><span class="sxs-lookup"><span data-stu-id="0254b-295">String truncation</span></span>
+<span data-ttu-id="0254b-296">文字列の切り捨ては、新しい機能ではありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-296">String truncation is not a new feature.</span></span> <span data-ttu-id="0254b-297">ただし、コードが以前のバージョンの IL で実行されると、ここで説明されている自動文字列の切り捨ては行われません。</span><span class="sxs-lookup"><span data-stu-id="0254b-297">However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place.</span></span> <span data-ttu-id="0254b-298">文字列値は、最大文字数を格納するために X++ で宣言できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-298">String values can be declared in X++ to contain a maximum number of characters.</span></span> <span data-ttu-id="0254b-299">これは通常、以下に示すように、この情報を拡張データ型でエンコードすることによって実現されます。クレジット カード番号は 20 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-299">Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters.</span></span> 
 
-    str 20 creditCardNumber;
+![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)
 
-<span data-ttu-id="877de-301">これらの値に対するすべての割り当ては最大長に暗黙的に切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="877de-301">All assignments to these values are implicitly truncated to this maximum length.</span></span>
+<span data-ttu-id="0254b-301">X++構文では、長さの制約を直接指定することも可能です。</span><span class="sxs-lookup"><span data-stu-id="0254b-301">It's also possible to specify length constraints directly in the X++ syntax:</span></span>
 
-### <a name="exercise"></a><span data-ttu-id="877de-302">練習</span><span class="sxs-lookup"><span data-stu-id="877de-302">Exercise</span></span>
+```xpp
+str 20 creditCardNumber;
+```
 
-<span data-ttu-id="877de-303">静的メイン メソッドに含めることにより、デバッガーで次のコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="877de-303">Run the following code in the debugger by including it in a static main method:</span></span>
+<span data-ttu-id="0254b-302">これらの値に対するすべての割り当ては最大長に暗黙的に切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="0254b-302">All assignments to these values are implicitly truncated to this maximum length.</span></span>
 
-    creditCardNumber = "12345678901234567890Excess string";
+### <a name="exercise"></a><span data-ttu-id="0254b-303">練習</span><span class="sxs-lookup"><span data-stu-id="0254b-303">Exercise</span></span>
 
-## <a name="casting"></a><span data-ttu-id="877de-304">キャスティング</span><span class="sxs-lookup"><span data-stu-id="877de-304">Casting</span></span>
-<span data-ttu-id="877de-305">X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。</span><span class="sxs-lookup"><span data-stu-id="877de-305">The previous version of X++ was very permissive in its treatment of type casting.</span></span> <span data-ttu-id="877de-306">アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。</span><span class="sxs-lookup"><span data-stu-id="877de-306">Both up-casting and down-casting were allowed without intervention from the programmer.</span></span> <span data-ttu-id="877de-307">レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-307">Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment.</span></span> <span data-ttu-id="877de-308">X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。</span><span class="sxs-lookup"><span data-stu-id="877de-308">In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain.</span></span> <span data-ttu-id="877de-309">キャストはダウン キャストまたはアップ キャストのいずれかです。</span><span class="sxs-lookup"><span data-stu-id="877de-309">A cast is either a down-cast or an up-cast.</span></span> <span data-ttu-id="877de-310">この説明の準備として、いくつかのわかりやすいクラス階層、[![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) を紹介します。ご覧のとおり、MotorVehicle クラスは Animal クラスとは関係ありません。</span><span class="sxs-lookup"><span data-stu-id="877de-310">To set the stage for this discussion, we introduce a few self-explanatory class hierarchies: [![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) As you can see, the MotorVehicle class isn't related to the Animal class.</span></span> <span data-ttu-id="877de-311">**up-cast** は派生型の式を基本型に割り当てる場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="877de-311">An **up-cast** happens when assigning an expression of a derived type to a base type:</span></span>
+<span data-ttu-id="0254b-304">静的メイン メソッドに含めることにより、デバッガーで次のコードを実行します。</span><span class="sxs-lookup"><span data-stu-id="0254b-304">Run the following code in the debugger by including it in a static main method:</span></span>
 
-      Animal a = new Horse();
+```xpp
+creditCardNumber = "12345678901234567890Excess string";
+```
 
-<span data-ttu-id="877de-312">**down-cast**は、基本型の式を派生変数に代入する場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="877de-312">A **down-cast** happens when assigning an expression of a base type to a derived variable.</span></span>
+## <a name="casting"></a><span data-ttu-id="0254b-305">キャスティング</span><span class="sxs-lookup"><span data-stu-id="0254b-305">Casting</span></span>
+<span data-ttu-id="0254b-306">X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。</span><span class="sxs-lookup"><span data-stu-id="0254b-306">The previous version of X++ was very permissive in its treatment of type casting.</span></span> <span data-ttu-id="0254b-307">アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-307">Both up-casting and down-casting were allowed without intervention from the programmer.</span></span> <span data-ttu-id="0254b-308">レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-308">Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment.</span></span> <span data-ttu-id="0254b-309">X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。</span><span class="sxs-lookup"><span data-stu-id="0254b-309">In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain.</span></span> <span data-ttu-id="0254b-310">キャストはダウン キャストまたはアップ キャストのいずれかです。</span><span class="sxs-lookup"><span data-stu-id="0254b-310">A cast is either a down-cast or an up-cast.</span></span> <span data-ttu-id="0254b-311">この議論の準備段階として、いくつかのクラス階層をご案内します:</span><span class="sxs-lookup"><span data-stu-id="0254b-311">To set the stage for this discussion, we introduce a few self-explanatory class hierarchies:</span></span> 
 
-    Horse h = new Animal();
+![Casting\_DebugFeatures](./media/casting_debugfeatures.png) 
 
-<span data-ttu-id="877de-313">アップキャストとダウンキャストの両方が X++ でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="877de-313">Both up-casts and down-casts are supported in X++.</span></span> <span data-ttu-id="877de-314">ただし、ダウン キャストは危険であり、できる限り回避する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-314">However, down-casts are dangerous and should be avoided whenever possible.</span></span> <span data-ttu-id="877de-315">割り当てが意味をなさないため、上記の例は実行時に InvalidCastException で失敗します。</span><span class="sxs-lookup"><span data-stu-id="877de-315">The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense.</span></span> <span data-ttu-id="877de-316">X++ はオブジェクトおよび formrun などの、いくつかのタイプで遅延バインドをサポートします。</span><span class="sxs-lookup"><span data-stu-id="877de-316">X++ supports late binding on a few types, like object and formrun.</span></span> <span data-ttu-id="877de-317">これは、つまり、そのメソッドがその型に対して明示的に宣言されていない場合、コンパイラは、コンパイル時に、それらの型に対して呼び出されているメソッドを見てもエラーを診断しないということを意味します。</span><span class="sxs-lookup"><span data-stu-id="877de-317">This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type.</span></span> <span data-ttu-id="877de-318">開発者は彼らが何をしているかを把握しているとみなされます。</span><span class="sxs-lookup"><span data-stu-id="877de-318">It's assumed that the developer knows what they're doing.</span></span> <span data-ttu-id="877de-319">たとえば、フォーム内で検索される次のコードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="877de-319">For instance, the following code may be found in a form.</span></span>
+<span data-ttu-id="0254b-313">ご覧の通り、MotorVehicle クラスには Animal クラスとの関連がありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-313">As you can see, the MotorVehicle class isn't related to the Animal class.</span></span> <span data-ttu-id="0254b-314">**up-cast** は派生型の式を基本型に割り当てる場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="0254b-314">An **up-cast** happens when assigning an expression of a derived type to a base type:</span></span>
 
-    Object o = element.args().caller();
-      o.MyMethod(3.14, “Banana”);
+```xpp
+Animal a = new Horse();
+```
 
-<span data-ttu-id="877de-320">コンパイラは、このメソッドがオブジェクト クラスで宣言されていないため、MyMethod メソッドのパラメーター、戻り値などをチェックすることはできません。</span><span class="sxs-lookup"><span data-stu-id="877de-320">The compiler can't check the parameters, return values, etc. for the MyMethod method, since this method isn't declared on the object class.</span></span> <span data-ttu-id="877de-321">実行時には、リフレクションを使用して呼び出しが行われます。これは通常の呼び出しよりも桁違いに低速化されます。</span><span class="sxs-lookup"><span data-stu-id="877de-321">At runtime, the call will be made using reflection, which is orders of magnitude slower than normal calls.</span></span> <span data-ttu-id="877de-322">遅延バインディング型で実際に定義されているメソッドの呼び出しは必然的にチェックされることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="877de-322">Note that calls to methods that are actually defined on the late binding types will be naturally checked.</span></span> <span data-ttu-id="877de-323">たとえば、ToString() へ呼び出します。</span><span class="sxs-lookup"><span data-stu-id="877de-323">For example, the call to ToString():</span></span>
+<span data-ttu-id="0254b-315">**down-cast**は、基本型の式を派生変数に代入する場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="0254b-315">A **down-cast** happens when assigning an expression of a base type to a derived variable.</span></span>
 
-    o.ToString(45);
+```xpp
+Horse h = new Animal();
+```
 
-<span data-ttu-id="877de-324">コンパイル エラーの原因になります。</span><span class="sxs-lookup"><span data-stu-id="877de-324">will cause a compilation error:</span></span>
+<span data-ttu-id="0254b-316">アップキャストとダウンキャストの両方が X++ でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="0254b-316">Both up-casts and down-casts are supported in X++.</span></span> <span data-ttu-id="0254b-317">ただし、ダウン キャストは危険であり、できる限り回避する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-317">However, down-casts are dangerous and should be avoided whenever possible.</span></span> <span data-ttu-id="0254b-318">割り当てが意味をなさないため、上記の例は実行時に InvalidCastException で失敗します。</span><span class="sxs-lookup"><span data-stu-id="0254b-318">The example above will fail with an InvalidCastException at runtime, since the assignment doesn't make sense.</span></span> <span data-ttu-id="0254b-319">X++ はオブジェクトおよび formrun などの、いくつかのタイプで遅延バインドをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0254b-319">X++ supports late binding on a few types, like object and formrun.</span></span> <span data-ttu-id="0254b-320">これは、つまり、そのメソッドがその型に対して明示的に宣言されていない場合、コンパイラは、コンパイル時に、それらの型に対して呼び出されているメソッドを見てもエラーを診断しないということを意味します。</span><span class="sxs-lookup"><span data-stu-id="0254b-320">This means that the compiler won't diagnose any errors at compile-time when it sees a method being called on those types, if that method isn't declared explicitly on the type.</span></span> <span data-ttu-id="0254b-321">開発者は彼らが何をしているかを把握しているとみなされます。</span><span class="sxs-lookup"><span data-stu-id="0254b-321">It's assumed that the developer knows what they're doing.</span></span> <span data-ttu-id="0254b-322">たとえば、フォーム内で検索される次のコードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-322">For instance, the following code may be found in a form.</span></span>
 
-    'Object.toString' expects 0 argument(s), but 1 specified.
+```xpp
+Object o = element.args().caller();
+    o.MyMethod(3.14, “Banana”);
+```
 
-<span data-ttu-id="877de-325">ToStringメソッド がオブジェクト クラスで定義されているため。</span><span class="sxs-lookup"><span data-stu-id="877de-325">because the ToString method is defined on the object class.</span></span> <span data-ttu-id="877de-326">以前のバージョンの X++ の実装とは違いが 1 つあります。これは、たとえパラメーターのプロファイルが完全に正しくない場合でも、メソッドの名前が正しい限り、関連のないオブジェクトに対してメソッドを呼び出すことができるという事実に関連しています。</span><span class="sxs-lookup"><span data-stu-id="877de-326">There's one difference from the implementation of previous version of X++, related to the fact that methods could be called on unrelated objects, as long as the name of the method was correct, even if the parameter profiles weren't entirely correct.</span></span> <span data-ttu-id="877de-327">これは、CIL ではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="877de-327">This isn't supported in CIL.</span></span>
+<span data-ttu-id="0254b-323">コンパイラは、このメソッドがオブジェクト クラスで宣言されていないため、MyMethod メソッドのパラメーター、戻り値などをチェックすることはできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-323">The compiler can't check the parameters, return values, etc. for the MyMethod method, since this method isn't declared on the object class.</span></span> <span data-ttu-id="0254b-324">実行時には、リフレクションを使用して呼び出しが行われます。これは通常の呼び出しよりも桁違いに低速化されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-324">At runtime, the call will be made using reflection, which is orders of magnitude slower than normal calls.</span></span> <span data-ttu-id="0254b-325">遅延バインディング型で実際に定義されているメソッドの呼び出しは必然的にチェックされることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-325">Note that calls to methods that are actually defined on the late binding types will be naturally checked.</span></span> <span data-ttu-id="0254b-326">たとえば、ToString() へ呼び出します。</span><span class="sxs-lookup"><span data-stu-id="0254b-326">For example, the call to ToString():</span></span>
 
-### <a name="example"></a><span data-ttu-id="877de-328">例</span><span class="sxs-lookup"><span data-stu-id="877de-328">Example</span></span>
+```xpp
+o.ToString(45);
+```
 
-    public class MyClass2
+<span data-ttu-id="0254b-327">コンパイル エラーの原因になります。</span><span class="sxs-lookup"><span data-stu-id="0254b-327">will cause a compilation error:</span></span>
+
+```xpp
+'Object.toString' expects 0 argument(s), but 1 specified.
+```
+
+<span data-ttu-id="0254b-328">ToStringメソッド がオブジェクト クラスで定義されているため。</span><span class="sxs-lookup"><span data-stu-id="0254b-328">because the ToString method is defined on the object class.</span></span> <span data-ttu-id="0254b-329">以前のバージョンの X++ の実装とは違いが 1 つあります。これは、たとえパラメーターのプロファイルが完全に正しくない場合でも、メソッドの名前が正しい限り、関連のないオブジェクトに対してメソッドを呼び出すことができるという事実に関連しています。</span><span class="sxs-lookup"><span data-stu-id="0254b-329">There's one difference from the implementation of previous version of X++, related to the fact that methods could be called on unrelated objects, as long as the name of the method was correct, even if the parameter profiles weren't entirely correct.</span></span> <span data-ttu-id="0254b-330">これは、CIL ではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0254b-330">This isn't supported in CIL.</span></span>
+
+### <a name="example"></a><span data-ttu-id="0254b-331">例</span><span class="sxs-lookup"><span data-stu-id="0254b-331">Example</span></span>
+
+```xpp
+public class MyClass2
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         Object obj = new Car();
         Horse horse = obj; // exception now thrown
         horse.run();    // Used to call car.run()!
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-329">コード内で IS 演算子と AS 演算子を自由に使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="877de-329">You should use the IS and AS operators liberally in your code.</span></span> <span data-ttu-id="877de-330">指定した式が特定の型 (派生型を含む) の場合は、IS 演算子を使用することができます。AS 演算子は、特定のタイプへのキャストを実行し、キャストが使用できない場合は null を返します。</span><span class="sxs-lookup"><span data-stu-id="877de-330">The IS operator can be used if the expression provided is of a particular type (including derived types); the AS operator will perform casting into the given type and return null if a cast isn't possible.</span></span>
+<span data-ttu-id="0254b-332">コード内で IS 演算子と AS 演算子を自由に使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-332">You should use the IS and AS operators liberally in your code.</span></span> <span data-ttu-id="0254b-333">指定した式が特定の型 (派生型を含む) の場合は、IS 演算子を使用することができます。AS 演算子は、特定のタイプへのキャストを実行し、キャストが使用できない場合は null を返します。</span><span class="sxs-lookup"><span data-stu-id="0254b-333">The IS operator can be used if the expression provided is of a particular type (including derived types); the AS operator will perform casting into the given type and return null if a cast isn't possible.</span></span>
 
-## <a name="compiler-diagnoses-attempts-to-store-objects-in-containers"></a><span data-ttu-id="877de-331">コンパイラは、オブジェクトをコンテナに格納しようとすると診断します</span><span class="sxs-lookup"><span data-stu-id="877de-331">Compiler diagnoses attempts to store objects in containers</span></span>
-<span data-ttu-id="877de-332">以前の X++ コンパイラでは、実行時に失敗した場合でもコンテナーにオブジェクト参照を格納することができました。</span><span class="sxs-lookup"><span data-stu-id="877de-332">In previous incarnations of the X++ compiler, it was possible to store object references into containers, even though this would fail at runtime.</span></span> <span data-ttu-id="877de-333">これは不可能です。</span><span class="sxs-lookup"><span data-stu-id="877de-333">This is no longer possible.</span></span> <span data-ttu-id="877de-334">コンパイラは、コンテナーへのオブジェクト参照の保存の試みを確認したとき</span><span class="sxs-lookup"><span data-stu-id="877de-334">When the compiler sees an attempt to store an object reference into a container:</span></span>
+## <a name="compiler-diagnoses-attempts-to-store-objects-in-containers"></a><span data-ttu-id="0254b-334">コンパイラは、オブジェクトをコンテナに格納しようとすると診断します</span><span class="sxs-lookup"><span data-stu-id="0254b-334">Compiler diagnoses attempts to store objects in containers</span></span>
+<span data-ttu-id="0254b-335">以前の X++ コンパイラでは、実行時に失敗した場合でもコンテナーにオブジェクト参照を格納することができました。</span><span class="sxs-lookup"><span data-stu-id="0254b-335">In previous incarnations of the X++ compiler, it was possible to store object references into containers, even though this would fail at runtime.</span></span> <span data-ttu-id="0254b-336">これは不可能です。</span><span class="sxs-lookup"><span data-stu-id="0254b-336">This is no longer possible.</span></span> <span data-ttu-id="0254b-337">コンパイラは、コンテナーへのオブジェクト参照の保存の試みを確認したとき</span><span class="sxs-lookup"><span data-stu-id="0254b-337">When the compiler sees an attempt to store an object reference into a container:</span></span>
 
-    container c = [new Query()];
+```xpp
+container c = [new Query()];
+```
 
-<span data-ttu-id="877de-335">エラー メッセージを発行します。</span><span class="sxs-lookup"><span data-stu-id="877de-335">It will issue the error message:</span></span>
+<span data-ttu-id="0254b-338">エラー メッセージを発行します。</span><span class="sxs-lookup"><span data-stu-id="0254b-338">It will issue the error message:</span></span>
 
-    Instances of type 'Query' cannot be added to a container.
+```xpp
+Instances of type 'Query' cannot be added to a container.
+```
 
-<span data-ttu-id="877de-336">コンテナーに追加される要素のタイプが任意のタイプである場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。</span><span class="sxs-lookup"><span data-stu-id="877de-336">If the type of the element that is added to the container is any type that the compiler can't make the determination of whether the value is a reference type.</span></span> <span data-ttu-id="877de-337">コンパイラは、ユーザーが何をしているのかを把握していることを前提としてこれを許可します。</span><span class="sxs-lookup"><span data-stu-id="877de-337">The compiler will allow this under the assumption that the user knows what they're doing.</span></span> <span data-ttu-id="877de-338">コンパイラは次のコードを誤っていると診断しません。</span><span class="sxs-lookup"><span data-stu-id="877de-338">The compiler won't diagnose the following code as erroneous:</span></span>
+<span data-ttu-id="0254b-339">コンテナーに追加される要素のタイプが任意のタイプである場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。</span><span class="sxs-lookup"><span data-stu-id="0254b-339">If the type of the element that is added to the container is any type that the compiler can't make the determination of whether the value is a reference type.</span></span> <span data-ttu-id="0254b-340">コンパイラは、ユーザーが何をしているのかを把握していることを前提としてこれを許可します。</span><span class="sxs-lookup"><span data-stu-id="0254b-340">The compiler will allow this under the assumption that the user knows what they're doing.</span></span> <span data-ttu-id="0254b-341">コンパイラでは次のコードがエラーとして診断されませんが、実行時にエラーが表示されます :</span><span class="sxs-lookup"><span data-stu-id="0254b-341">The compiler won't diagnose the following code as erroneous but an error will be thrown at runtime.:</span></span>
 
-    anytype a = new Query();
-            container c = [a];
+```xpp
+anytype a = new Query();
+    container c = [a];
+```
 
-<span data-ttu-id="877de-339">しかし、実行時にエラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="877de-339">but an error will be thrown at runtime.</span></span>
+## <a name="cross-company-clause-can-contain-arbitrary-expressions"></a><span data-ttu-id="0254b-342">会社間の句には任意の式を含めることができます</span><span class="sxs-lookup"><span data-stu-id="0254b-342">Cross company clause can contain arbitrary expressions</span></span>
+<span data-ttu-id="0254b-343">会社間の句は、検索ステートメントを考慮する必要のある会社を示すために select ステートメントで使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-343">The cross company clause can be used on select statements to indicate the companies that the search statement should take into account.</span></span> <span data-ttu-id="0254b-344">構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。</span><span class="sxs-lookup"><span data-stu-id="0254b-344">The syntax has been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.</span></span>
 
-## <a name="cross-company-clause-can-contain-arbitrary-expressions"></a><span data-ttu-id="877de-340">会社間の句には任意の式を含めることができます</span><span class="sxs-lookup"><span data-stu-id="877de-340">Cross company clause can contain arbitrary expressions</span></span>
-<span data-ttu-id="877de-341">会社間の句は、検索ステートメントを考慮する必要のある会社を示すために select ステートメントで使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-341">The cross company clause can be used on select statements to indicate the companies that the search statement should take into account.</span></span> <span data-ttu-id="877de-342">構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。</span><span class="sxs-lookup"><span data-stu-id="877de-342">The syntax has been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.</span></span>
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: mycompanies t;
+}
+```
 
-      private void SampleMethod()
-      {
-        MyTable t;
-        container mycompanies = ['dat', 'dmo'];
-        select crosscompany: mycompanies t;
-      }
+<span data-ttu-id="0254b-345">現在は、この目的で変数を使用することなく、式を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-345">Now, it's possible to provide the expression without having to use a variable for this purpose.</span></span>
 
-<span data-ttu-id="877de-343">現在は、この目的で変数を使用することなく、式を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-343">Now, it's possible to provide the expression without having to use a variable for this purpose.</span></span>
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: (['dat'] + ['dmo']) t;
+}
+```
 
-      private void SampleMethod()
-      {
-        MyTable t;
-        container mycompanies = ['dat', 'dmo'];
-        select crosscompany: (['dat'] + ['dmo']) t;
-      }
+## <a name="mkdate-predefined-function-no-longer-accepts-shorthand-values"></a><span data-ttu-id="0254b-346">定義済みの mkDate 関数はショートハンド値を受け入れません</span><span class="sxs-lookup"><span data-stu-id="0254b-346">mkDate predefined function no longer accepts shorthand values</span></span>
+<span data-ttu-id="0254b-347">旧式システムでは、mkDate 関数の年の引数に「短縮形」の値を使用できました。</span><span class="sxs-lookup"><span data-stu-id="0254b-347">In legacy systems, it was possible to use "shorthand" values for the year argument of the mkDate function.</span></span> <span data-ttu-id="0254b-348">結果は、次のコード サンプルで確認できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-348">The effect can be seen in the following code sample.</span></span>
 
-## <a name="mkdate-predefined-function-no-longer-accepts-shorthand-values"></a><span data-ttu-id="877de-344">定義済みの mkDate 関数はショートハンド値を受け入れません</span><span class="sxs-lookup"><span data-stu-id="877de-344">mkDate predefined function no longer accepts shorthand values</span></span>
-<span data-ttu-id="877de-345">旧式システムでは、mkDate 関数の年の引数に「短縮形」の値を使用できました。</span><span class="sxs-lookup"><span data-stu-id="877de-345">In legacy systems, it was possible to use "shorthand" values for the year argument of the mkDate function.</span></span> <span data-ttu-id="877de-346">結果は、次のコード サンプルで確認できます。</span><span class="sxs-lookup"><span data-stu-id="877de-346">The effect can be seen in the following code sample.</span></span>
+```xpp
+static void Job16(Args _args)
+{
+    int y;
+    date d;
 
-    static void Job16(Args _args)
+    for (y = 0; y < 150; y++)
     {
-      int y;
-      date d;
-
-      for (y = 0; y < 150; y++)
-      {
         d = mkDate(1,1,y);  
         info(strFmt("%1 - %2", y, year(d)));
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-347">レガシ システムでこのコードを実行すると、次の値が生成されます: 0 – 2000 1 – 2001 2 – 2002 …</span><span class="sxs-lookup"><span data-stu-id="877de-347">Running this code in the legacy system will produce the following values: 0 – 2000 1 – 2001 2 – 2002 …</span></span> <span data-ttu-id="877de-348">27 - 2027 28 - 2028 29 - 2029 **30 - 2030** **31 - 1931** 32 - 1932 33 - 1933 …</span><span class="sxs-lookup"><span data-stu-id="877de-348">27 – 2027 28 – 2028 29 – 2029 **30 – 2030** **31 – 1931** 32 – 1932 33 – 1933 …</span></span> <span data-ttu-id="877de-349">97 - 1997 98: 1998 **99 - 1999** **100 - 1900** これらの値はもうサポートされません。</span><span class="sxs-lookup"><span data-stu-id="877de-349">97 – 1997 98 – 1998 **99 – 1999** **100 – 1900** We no longer support these values.</span></span> <span data-ttu-id="877de-350">このような値を使用しようとすると、mkDate 関数は null の日付 (1900年1月1日) を返します。</span><span class="sxs-lookup"><span data-stu-id="877de-350">Attempts to use such values will cause the mkDate function to return the null date (1/1/1900).</span></span>
+<span data-ttu-id="0254b-349">レガシ システムでこのコードを実行すると、次の値が生成されます: 0 – 2000 1 – 2001 2 – 2002 …</span><span class="sxs-lookup"><span data-stu-id="0254b-349">Running this code in the legacy system will produce the following values: 0 – 2000 1 – 2001 2 – 2002 …</span></span> <span data-ttu-id="0254b-350">27 - 2027 28 - 2028 29 - 2029 **30 - 2030** **31 - 1931** 32 - 1932 33 - 1933 …</span><span class="sxs-lookup"><span data-stu-id="0254b-350">27 – 2027 28 – 2028 29 – 2029 **30 – 2030** **31 – 1931** 32 – 1932 33 – 1933 …</span></span> <span data-ttu-id="0254b-351">97 - 1997 98: 1998 **99 - 1999** **100 - 1900** これらの値はもうサポートされません。</span><span class="sxs-lookup"><span data-stu-id="0254b-351">97 – 1997 98 – 1998 **99 – 1999** **100 – 1900** We no longer support these values.</span></span> <span data-ttu-id="0254b-352">このような値を使用しようとすると、mkDate 関数は null の日付 (1900年1月1日) を返します。</span><span class="sxs-lookup"><span data-stu-id="0254b-352">Attempts to use such values will cause the mkDate function to return the null date (1/1/1900).</span></span>
 
-## <a name="obsolete-statement-types"></a><span data-ttu-id="877de-351">古いステートメント タイプ</span><span class="sxs-lookup"><span data-stu-id="877de-351">Obsolete statement types</span></span>
-<span data-ttu-id="877de-352">次のステートメントがサポートされなくなりました。</span><span class="sxs-lookup"><span data-stu-id="877de-352">The following statements are no longer supported.</span></span>
+## <a name="obsolete-statement-types"></a><span data-ttu-id="0254b-353">古いステートメント タイプ</span><span class="sxs-lookup"><span data-stu-id="0254b-353">Obsolete statement types</span></span>
+<span data-ttu-id="0254b-354">次のステートメントがサポートされなくなりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-354">The following statements are no longer supported.</span></span>
 
-### <a name="pause-and-window-statements"></a><span data-ttu-id="877de-353">一時停止およびウィンドウ ステートメント</span><span class="sxs-lookup"><span data-stu-id="877de-353">Pause and Window statements</span></span>
+### <a name="pause-and-window-statements"></a><span data-ttu-id="0254b-355">一時停止およびウィンドウ ステートメント</span><span class="sxs-lookup"><span data-stu-id="0254b-355">Pause and Window statements</span></span>
 
-<span data-ttu-id="877de-354">X++ pause ステートメントは、影響下にあったポップアップ **印刷ウィンドウ**が削除されたため、現在はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="877de-354">The X++ pause statement is no longer supported because the pop-up **Print Window** that it affected has been removed.</span></span> <span data-ttu-id="877de-355">pause および window ステートメントは主に、実行環境と同じである、MorphX 開発環境内でデバッグのために使用されていました。</span><span class="sxs-lookup"><span data-stu-id="877de-355">The pause and window statements were mainly used for debugging within the MorphX development environment, which was the same as the execution environment.</span></span> <span data-ttu-id="877de-356">2 つが分離されたため、MorphX 環境を Visual Studio に置き換えると、これらのステートメントに関連性がなくなります。</span><span class="sxs-lookup"><span data-stu-id="877de-356">Since the two are now separated, with Visual Studio taking the place of the MorphX environment, these statements are no longer relevant.</span></span>
+<span data-ttu-id="0254b-356">X++ pause ステートメントは、影響下にあったポップアップ **印刷ウィンドウ**が削除されたため、現在はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0254b-356">The X++ pause statement is no longer supported because the pop-up **Print Window** that it affected has been removed.</span></span> <span data-ttu-id="0254b-357">pause および window ステートメントは主に、実行環境と同じである、MorphX 開発環境内でデバッグのために使用されていました。</span><span class="sxs-lookup"><span data-stu-id="0254b-357">The pause and window statements were mainly used for debugging within the MorphX development environment, which was the same as the execution environment.</span></span> <span data-ttu-id="0254b-358">2 つが分離されたため、MorphX 環境を Visual Studio に置き換えると、これらのステートメントに関連性がなくなります。</span><span class="sxs-lookup"><span data-stu-id="0254b-358">Since the two are now separated, with Visual Studio taking the place of the MorphX environment, these statements are no longer relevant.</span></span>
 
-### <a name="print-statement"></a><span data-ttu-id="877de-357">明細書の印刷</span><span class="sxs-lookup"><span data-stu-id="877de-357">Print statement</span></span>
+### <a name="print-statement"></a><span data-ttu-id="0254b-359">明細書の印刷</span><span class="sxs-lookup"><span data-stu-id="0254b-359">Print statement</span></span>
 
-<span data-ttu-id="877de-358">X++ print ステートメントは、デバッグのためだけに存在していた、もう 1 つのステートメントです。</span><span class="sxs-lookup"><span data-stu-id="877de-358">The X++ print statement is another statement that existed only for debugging purposes.</span></span> <span data-ttu-id="877de-359">これはまだ存在しており、その基本的な考えは変わりません。</span><span class="sxs-lookup"><span data-stu-id="877de-359">It still exists, and its basic idea is unchanged.</span></span> <span data-ttu-id="877de-360">ただし、印刷は System.Diagnostics.WriteLine を通じて出力されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-360">But print now outputs through System.Diagnostics.WriteLine.</span></span> <span data-ttu-id="877de-361">製品の構成では、送付された書面による情報の詳細を決定します。</span><span class="sxs-lookup"><span data-stu-id="877de-361">The product configuration determines the detail of the written information is sent.</span></span> <span data-ttu-id="877de-362">[![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) 情報ログを使用することにより、出力がデバッガーおよび実行中のフォームに表示されるため、より魅力的になります。</span><span class="sxs-lookup"><span data-stu-id="877de-362">[![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.</span></span>
+<span data-ttu-id="0254b-360">X++ print ステートメントは、デバッグのためだけに存在していた、もう 1 つのステートメントです。</span><span class="sxs-lookup"><span data-stu-id="0254b-360">The X++ print statement is another statement that existed only for debugging purposes.</span></span> <span data-ttu-id="0254b-361">これはまだ存在しており、その基本的な考えは変わりません。</span><span class="sxs-lookup"><span data-stu-id="0254b-361">It still exists, and its basic idea is unchanged.</span></span> <span data-ttu-id="0254b-362">ただし、印刷は System.Diagnostics.WriteLine を通じて出力されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-362">But print now outputs through System.Diagnostics.WriteLine.</span></span> <span data-ttu-id="0254b-363">製品の構成では、送付された書面による情報の詳細を決定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-363">The product configuration determines the detail of the written information is sent.</span></span> 
 
-## <a name="the-ignore-list"></a><span data-ttu-id="877de-363">Ignore リスト</span><span class="sxs-lookup"><span data-stu-id="877de-363">The Ignore list</span></span>
-<span data-ttu-id="877de-364">従来の環境はすべて解釈されたため、一部のパーツをコンパイルせず、残りの部分を使用することも可能でした。</span><span class="sxs-lookup"><span data-stu-id="877de-364">Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest.</span></span> <span data-ttu-id="877de-365">正常にコンパイルしたメソッドのみを呼び出す場合、問題はありません。ただし、正常にコンパイルされなかったメソッドを呼び出そうとすると、問題が発生します。</span><span class="sxs-lookup"><span data-stu-id="877de-365">As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled.</span></span> <span data-ttu-id="877de-366">この作業方法は CIL では機能しません。</span><span class="sxs-lookup"><span data-stu-id="877de-366">This way of working doesn't work in CIL.</span></span> <span data-ttu-id="877de-367">アセンブリは正常に行われたコンパイルから生成され、ランタイム システムは未完了の組み立てを読み込むことができません。</span><span class="sxs-lookup"><span data-stu-id="877de-367">Assemblies are generated from successful compilations and the runtime system can't load incomplete assemblies.</span></span> <span data-ttu-id="877de-368">しかし、従来のアプリケーションを新しい環境に移植する際には、段階的なやり方で実行することが有益であり、すべてを移植する前にアプリケーションの一部をテストする必要もあり、そのための正当なシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="877de-368">However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported.</span></span> <span data-ttu-id="877de-369">これはこの非常に限定されたシナリオでは役立ちますが、システムが展開された後は、実行時に発生する問題を隠してしまう可能性があるため、アプリケーションの生産準備ができた後は使用すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="877de-369">While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed.</span></span> <span data-ttu-id="877de-370">プロジェクトのコンテキスト メニューから「ベスト プラクティスの抑制を編集」を選択することで、XML でメソッドを指定できます。</span><span class="sxs-lookup"><span data-stu-id="877de-370">This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project.</span></span> <span data-ttu-id="877de-371">これにより、除外項目を管理する XML ドキュメントが開きます。</span><span class="sxs-lookup"><span data-stu-id="877de-371">This will open an XML document where the exclusions are maintained.</span></span>
+![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)
 
-## <a name="new-debugger-features"></a><span data-ttu-id="877de-372">新しいデバッガーの機能</span><span class="sxs-lookup"><span data-stu-id="877de-372">New Debugger features</span></span>
-<span data-ttu-id="877de-373">このセクションでは、Visual Studio のデバッグ環境に追加した新機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="877de-373">This section provides information about the new features that we've added to the debugging experience in Visual Studio.</span></span>
+<span data-ttu-id="0254b-365">Infolog の出力はデバッガと実行中のフォームに表示されるため、Infolog を使用する方が効力があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-365">You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.</span></span>
 
-### <a name="adding-tostring-methods-to-your-classes"></a><span data-ttu-id="877de-374">クラスへの ToString メソッドの追加</span><span class="sxs-lookup"><span data-stu-id="877de-374">Adding ToString methods to your classes</span></span>
+## <a name="the-ignore-list"></a><span data-ttu-id="0254b-366">Ignore リスト</span><span class="sxs-lookup"><span data-stu-id="0254b-366">The Ignore list</span></span>
+<span data-ttu-id="0254b-367">従来の環境はすべて解釈されたため、一部のパーツをコンパイルせず、残りの部分を使用することも可能でした。</span><span class="sxs-lookup"><span data-stu-id="0254b-367">Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest.</span></span> <span data-ttu-id="0254b-368">正常にコンパイルしたメソッドのみを呼び出す場合、問題はありません。ただし、正常にコンパイルされなかったメソッドを呼び出そうとすると、問題が発生します。</span><span class="sxs-lookup"><span data-stu-id="0254b-368">As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled.</span></span> <span data-ttu-id="0254b-369">この作業方法は CIL では機能しません。</span><span class="sxs-lookup"><span data-stu-id="0254b-369">This way of working doesn't work in CIL.</span></span> <span data-ttu-id="0254b-370">アセンブリは正常に行われたコンパイルから生成され、ランタイム システムは未完了の組み立てを読み込むことができません。</span><span class="sxs-lookup"><span data-stu-id="0254b-370">Assemblies are generated from successful compilations and the runtime system can't load incomplete assemblies.</span></span> <span data-ttu-id="0254b-371">しかし、従来のアプリケーションを新しい環境に移植する際には、段階的なやり方で実行することが有益であり、すべてを移植する前にアプリケーションの一部をテストする必要もあり、そのための正当なシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="0254b-371">However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported.</span></span> <span data-ttu-id="0254b-372">これはこの非常に限定されたシナリオでは役立ちますが、システムが展開された後は、実行時に発生する問題を隠してしまう可能性があるため、アプリケーションの生産準備ができた後は使用すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-372">While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed.</span></span> <span data-ttu-id="0254b-373">プロジェクトのコンテキスト メニューから「ベスト プラクティスの抑制を編集」を選択することで、XML でメソッドを指定できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-373">This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project.</span></span> <span data-ttu-id="0254b-374">これにより、除外項目を管理する XML ドキュメントが開きます。</span><span class="sxs-lookup"><span data-stu-id="0254b-374">This will open an XML document where the exclusions are maintained.</span></span>
 
-<span data-ttu-id="877de-375">多くの場合、ToString() メソッドをクラスに追加することが利点となります。</span><span class="sxs-lookup"><span data-stu-id="877de-375">It's often a benefit to add ToString() methods to your classes.</span></span> <span data-ttu-id="877de-376">これを行うのに費やした労力は何度も戻ってきます。それは簡単です。</span><span class="sxs-lookup"><span data-stu-id="877de-376">The effort spent doing this comes back many times and it's easy to do.</span></span> <span data-ttu-id="877de-377">このアドバイスは、レガシ X++ にも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="877de-377">This advice also holds true for legacy X++.</span></span> <span data-ttu-id="877de-378">**注記**: ToString メソッドが予期しない時に呼び出されることがあるため、ここでオブジェクトの状態を変更することはお勧めできません。</span><span class="sxs-lookup"><span data-stu-id="877de-378">**Note**: Since ToString methods can be called at unpredictable times, it isn't a good idea to change the state of the object here.</span></span>
+## <a name="new-debugger-features"></a><span data-ttu-id="0254b-375">新しいデバッガーの機能</span><span class="sxs-lookup"><span data-stu-id="0254b-375">New Debugger features</span></span>
+<span data-ttu-id="0254b-376">このセクションでは、Visual Studio のデバッグ環境に追加した新機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="0254b-376">This section provides information about the new features that we've added to the debugging experience in Visual Studio.</span></span>
 
-### <a name="identifying-unselected-fields"></a><span data-ttu-id="877de-379">選択されていないフィールドの識別</span><span class="sxs-lookup"><span data-stu-id="877de-379">Identifying unselected fields</span></span>
+### <a name="adding-tostring-methods-to-your-classes"></a><span data-ttu-id="0254b-377">クラスへの ToString メソッドの追加</span><span class="sxs-lookup"><span data-stu-id="0254b-377">Adding ToString methods to your classes</span></span>
 
-<span data-ttu-id="877de-380">フィールドが select ステートメントのフィールドの一覧に表示されない場合に、テーブルのフィールドを使用することがバグの一般的な発生源となります。</span><span class="sxs-lookup"><span data-stu-id="877de-380">It's a common source of bugs to use fields from a table when these fields don't appear in the field list in a select statement.</span></span> <span data-ttu-id="877de-381">このようなフィールドには、そのタイプに従って既定値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="877de-381">Such fields will have a default value according to their type.</span></span> <span data-ttu-id="877de-382">値が選択されているかどうかはデバッガーで確認できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="877de-382">It's now possible in the debugger to see if a value has been selected or not.</span></span>
+<span data-ttu-id="0254b-378">多くの場合、ToString() メソッドをクラスに追加することが利点となります。</span><span class="sxs-lookup"><span data-stu-id="0254b-378">It's often a benefit to add ToString() methods to your classes.</span></span> <span data-ttu-id="0254b-379">これを行うのに費やした労力は何度も戻ってきます。それは簡単です。</span><span class="sxs-lookup"><span data-stu-id="0254b-379">The effort spent doing this comes back many times and it's easy to do.</span></span> <span data-ttu-id="0254b-380">このアドバイスは、レガシ X++ にも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="0254b-380">This advice also holds true for legacy X++.</span></span> 
 
-#### <a name="exercise"></a><span data-ttu-id="877de-383">練習</span><span class="sxs-lookup"><span data-stu-id="877de-383">Exercise</span></span>
+> [!NOTE]
+> <span data-ttu-id="0254b-381">ToString メソッドは予期しないときに呼び出される場合があるため、ここでオブジェクトの状態を変更することは推奨しません。</span><span class="sxs-lookup"><span data-stu-id="0254b-381">Since ToString methods can be called at unpredictable times, it isn't a good idea to change the state of the object here.</span></span>
 
-<span data-ttu-id="877de-384">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="877de-384">Consider the following code:</span></span>
+### <a name="identifying-unselected-fields"></a><span data-ttu-id="0254b-382">選択されていないフィールドの識別</span><span class="sxs-lookup"><span data-stu-id="0254b-382">Identifying unselected fields</span></span>
 
-    class MyClass
+<span data-ttu-id="0254b-383">フィールドが select ステートメントのフィールドの一覧に表示されない場合に、テーブルのフィールドを使用することがバグの一般的な発生源となります。</span><span class="sxs-lookup"><span data-stu-id="0254b-383">It's a common source of bugs to use fields from a table when these fields don't appear in the field list in a select statement.</span></span> <span data-ttu-id="0254b-384">このようなフィールドには、そのタイプに従って既定値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-384">Such fields will have a default value according to their type.</span></span> <span data-ttu-id="0254b-385">値が選択されているかどうかはデバッガーで確認できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0254b-385">It's now possible in the debugger to see if a value has been selected or not.</span></span>
+
+#### <a name="exercise"></a><span data-ttu-id="0254b-386">練習</span><span class="sxs-lookup"><span data-stu-id="0254b-386">Exercise</span></span>
+
+<span data-ttu-id="0254b-387">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-387">Consider the following code:</span></span>
+
+```xpp
+class MyClass
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         FMRental rental;
 
         select EndMileage, RentalId from rental;
 
         rental.Comments = "Something";
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-385">代入ステートメントにブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="877de-385">Set a breakpoint on the assignment statement.</span></span> <span data-ttu-id="877de-386">クラスをプロジェクトのスタートアップ オブジェクトにして、F5 キーを押して開始します。</span><span class="sxs-lookup"><span data-stu-id="877de-386">Make your class the startup object in your project, and start by pressing F5.</span></span> <span data-ttu-id="877de-387">ブレークポイントが検出されたときは、ローカル ウィンドウでレンタル変数を展開して表示します。</span><span class="sxs-lookup"><span data-stu-id="877de-387">When the breakpoint is encountered, view the rental variable by expanding it in the locals window.</span></span> <span data-ttu-id="877de-388">次の図に似たものが表示されます。</span><span class="sxs-lookup"><span data-stu-id="877de-388">You'll see something similar to the following graphic.</span></span> <span data-ttu-id="877de-389">[![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) 選択されていないフィールドが null として表示されるとき、選択された値で表示される選択されたフィールド (EndMileage および RentalId) を確認できます。</span><span class="sxs-lookup"><span data-stu-id="877de-389">[![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null.</span></span> <span data-ttu-id="877de-390">これは、その値がデータベースからフェッチされなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="877de-390">This signifies their value wasn't fetched from the database.</span></span> <span data-ttu-id="877de-391">当然、これはデバッグ コンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="877de-391">Obviously, this is a debugging artifact.</span></span> <span data-ttu-id="877de-392">選択されていないフィールドの値は、フィールドのタイプの規定値になります。</span><span class="sxs-lookup"><span data-stu-id="877de-392">The values of the unselected fields will be the default value for the type of the field.</span></span> <span data-ttu-id="877de-393">これをステップオーバーし、デバッガーが実際の値のレンダリングをどのように変更するかを確認します。</span><span class="sxs-lookup"><span data-stu-id="877de-393">Step over this and notice how the debugger changes the rendering to the actual value.</span></span> <span data-ttu-id="877de-394">**注記**: テーブルがキャッシュに設定されている場合、システムは常にコードに含まれるフィールド リストに関係なく、テーブル全体からすべてのフィールドをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="877de-394">**Note**: If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.</span></span>
+<span data-ttu-id="0254b-388">代入ステートメントにブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-388">Set a breakpoint on the assignment statement.</span></span> <span data-ttu-id="0254b-389">クラスをプロジェクトのスタートアップ オブジェクトにして、F5 キーを押して開始します。</span><span class="sxs-lookup"><span data-stu-id="0254b-389">Make your class the startup object in your project, and start by pressing F5.</span></span> <span data-ttu-id="0254b-390">ブレークポイントが検出されたときは、ローカル ウィンドウでレンタル変数を展開して表示します。</span><span class="sxs-lookup"><span data-stu-id="0254b-390">When the breakpoint is encountered, view the rental variable by expanding it in the locals window.</span></span> <span data-ttu-id="0254b-391">次の図に似たものが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-391">You'll see something similar to the following graphic.</span></span> 
 
-### <a name="the-auto-and-infolog-windows"></a><span data-ttu-id="877de-395">自動および情報ログ ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="877de-395">The Auto and Infolog Windows</span></span>
+![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)
 
-<span data-ttu-id="877de-396">デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="877de-396">The debugger will allow you to easily access certain parts of the state of the application.</span></span> <span data-ttu-id="877de-397">この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。</span><span class="sxs-lookup"><span data-stu-id="877de-397">This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed.</span></span> <span data-ttu-id="877de-398">[![自動 \_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) また、情報ログに書き込まれるデータを示すウィンドウもあります。</span><span class="sxs-lookup"><span data-stu-id="877de-398">[![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog.</span></span> <span data-ttu-id="877de-399">[![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)</span><span class="sxs-lookup"><span data-stu-id="877de-399">[![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)</span></span>
+<span data-ttu-id="0254b-393">選択されているフィールド (EndMileage と RentalId) には選択された値が表示され、選択されていないフィールドには null が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-393">You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null.</span></span> <span data-ttu-id="0254b-394">これは、その値がデータベースからフェッチされなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="0254b-394">This signifies their value wasn't fetched from the database.</span></span> <span data-ttu-id="0254b-395">当然、これはデバッグ コンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="0254b-395">Obviously, this is a debugging artifact.</span></span> <span data-ttu-id="0254b-396">選択されていないフィールドの値は、フィールドのタイプの規定値になります。</span><span class="sxs-lookup"><span data-stu-id="0254b-396">The values of the unselected fields will be the default value for the type of the field.</span></span> <span data-ttu-id="0254b-397">これをステップオーバーし、デバッガーが実際の値のレンダリングをどのように変更するかを確認します。</span><span class="sxs-lookup"><span data-stu-id="0254b-397">Step over this and notice how the debugger changes the rendering to the actual value.</span></span> 
 
-### <a name="new-breakpoint-features"></a><span data-ttu-id="877de-400">新しいブレークポイント機能</span><span class="sxs-lookup"><span data-stu-id="877de-400">New breakpoint features</span></span>
+> [!NOTE]
+> <span data-ttu-id="0254b-398">テーブルにキャッシュが設定されている場合は、コードで指定されているフィールドリストに関係なく、常にテーブル全体からすべてのフィールドがフェッチされます。</span><span class="sxs-lookup"><span data-stu-id="0254b-398">If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.</span></span>
 
-<span data-ttu-id="877de-401">Visual Studio デバッガーでは、条件付きブレークポイントと、ヒット カウントによってトリガーされたブレークポイントをサポートします。</span><span class="sxs-lookup"><span data-stu-id="877de-401">The Visual Studio debugger supports conditional breakpoints and breakpoints that are triggered by hit count.</span></span> <span data-ttu-id="877de-402">また、ブレークポイントをヒットするとき、ユーザーのためにシステムが特定のアクションを実行させることができます。</span><span class="sxs-lookup"><span data-stu-id="877de-402">You can also have the system perform specific actions for you as you hit the breakpoint.</span></span> <span data-ttu-id="877de-403">これらの機能のいずれも従来のデバッガーでは使用できませんでした。</span><span class="sxs-lookup"><span data-stu-id="877de-403">None of these features were available in the legacy debugger.</span></span> <span data-ttu-id="877de-404">これらについて以下に詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="877de-404">These are explained below:</span></span>
+### <a name="the-auto-and-infolog-windows"></a><span data-ttu-id="0254b-399">自動および情報ログ ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="0254b-399">The Auto and Infolog Windows</span></span>
 
--   <span data-ttu-id="877de-405">ヒット カウントを使用することで、デバッガーが実行を中断する前にブレークポイントがヒットする回数を決定できます。</span><span class="sxs-lookup"><span data-stu-id="877de-405">Hit count enables you to determine how many times the breakpoint is hit before the debugger breaks execution.</span></span> <span data-ttu-id="877de-406">既定では、デバッガーはブレークポイントがヒットするたびに実行を中断します。</span><span class="sxs-lookup"><span data-stu-id="877de-406">By default, the debugger breaks execution every time that the breakpoint is hit.</span></span> <span data-ttu-id="877de-407">ブレークポイントが 2 回ヒットするたび、または 10 回ヒットするたび、または 512 回ヒットするたび、またはユーザーが選択した回数ヒットするたびにデバッガーが中断するよう、ヒット カウントを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-407">You can set a hit count to tell the debugger to break every 2 times the breakpoint is hit, or every 10 times, or every 512 times, or any other number you choose.</span></span> <span data-ttu-id="877de-408">一部のバグは、最初にユーザー プログラムがループを実行し、関数を呼び出し、または変数へアクセスする際に現れないため、ヒット数は役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="877de-408">Hit counts can be useful because some bugs don't appear the first time your program executes a loop, calls a function, or accesses a variable.</span></span> <span data-ttu-id="877de-409">場合によっては、100 回または 1000 回繰り返すまでバグが表示されない可能性があります、</span><span class="sxs-lookup"><span data-stu-id="877de-409">Sometimes, the bug might not appear until the 100th or the 1000th iteration.</span></span> <span data-ttu-id="877de-410">このような問題をデバッグするには、ヒット数が 100 または 1000 のブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="877de-410">To debug such a problem, you can set a breakpoint with a hit count of 100 or 1000.</span></span>
--   <span data-ttu-id="877de-411">条件は、ブレークポイントがヒットするかスキップするかを決定する式です。</span><span class="sxs-lookup"><span data-stu-id="877de-411">Condition is an expression that determines whether the breakpoint is hit or skipped.</span></span> <span data-ttu-id="877de-412">デバッガーは、ブレークポイントに到達すると、条件を評価します。</span><span class="sxs-lookup"><span data-stu-id="877de-412">When the debugger reaches the breakpoint, it'll evaluate the condition.</span></span> <span data-ttu-id="877de-413">条件が満たされた場合にのみ、ブレークポイントにヒットします。</span><span class="sxs-lookup"><span data-stu-id="877de-413">The breakpoint will be hit only if the condition is satisfied.</span></span> <span data-ttu-id="877de-414">場所ブレークポイントを持つ条件を使用して、特定の条件が true の時にのみ指定された場所で停止することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-414">You can use a condition with a location breakpoint to stop at a specified location only when a certain condition is true.</span></span> <span data-ttu-id="877de-415">たとえば、勘定残高がマイナスにならないように、銀行決済プログラムをデバッグしているとします。</span><span class="sxs-lookup"><span data-stu-id="877de-415">For example, suppose you're debugging a banking program where the account balance is never allowed to go below zero.</span></span> <span data-ttu-id="877de-416">コード内の特定の場所でブレークポイントを設定し、残高 &lt; 0 などの条件をそれぞれに添付する場合があります。</span><span class="sxs-lookup"><span data-stu-id="877de-416">You might set breakpoints at certain locations in the code and attach a condition such as balance &lt; 0 to each one.</span></span> <span data-ttu-id="877de-417">プログラムを実行するとき、残高が 0 より小さい場合にのみこれらの場所で実行が中断されます。</span><span class="sxs-lookup"><span data-stu-id="877de-417">When you run the program, execution will break at those locations only when the balance is less than zero.</span></span> <span data-ttu-id="877de-418">最初のブレークポイントの位置で変数およびプログラムの状態を調べ、2 つ目のブレークポイントの位置まで実行を続行、などを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="877de-418">You can examine variables and program state at the first breakpoint location, and then continue execution to the second breakpoint location, and so on.</span></span>
--   <span data-ttu-id="877de-419">アクションは、ブレークポイントがヒットした場合に発生する必要のあるものを指定します。</span><span class="sxs-lookup"><span data-stu-id="877de-419">Action specifies something that should occur when the breakpoint is hit.</span></span> <span data-ttu-id="877de-420">既定では、デバッガーは実行を中断しますが、代わりにメッセージを印刷するか Visual Studio マクロを実行するかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="877de-420">By default, the debugger breaks execution, but you can choose to print a message or run a Visual Studio macro instead.</span></span> <span data-ttu-id="877de-421">中断するのではなく、メッセージを印刷する場合は、ブレークポイントは Trace ステートメントと非常に類似します。</span><span class="sxs-lookup"><span data-stu-id="877de-421">If you decide to print a message instead of breaking, the breakpoint has an effect very similar to a Trace statement.</span></span> <span data-ttu-id="877de-422">このブレークポイントを使用するメソッドはトレース ポイントと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="877de-422">This method of using breakpoints is called trace points.</span></span>
+<span data-ttu-id="0254b-400">デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0254b-400">The debugger will allow you to easily access certain parts of the state of the application.</span></span> <span data-ttu-id="0254b-401">この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-401">This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed.</span></span> 
 
-#### <a name="exercise"></a><span data-ttu-id="877de-423">練習</span><span class="sxs-lookup"><span data-stu-id="877de-423">Exercise</span></span>
+![Autos\_DebugFeatures](./media/autos_debugfeatures.png)
 
-<span data-ttu-id="877de-424">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="877de-424">Consider the following code:</span></span>
+<span data-ttu-id="0254b-403">また、Infolog に書き込まれるデータを表示するウィンドウもあります。</span><span class="sxs-lookup"><span data-stu-id="0254b-403">There is also a window showing the data that is written to the Infolog.</span></span> 
 
-    class PVsClass
+![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)
+
+### <a name="new-breakpoint-features"></a><span data-ttu-id="0254b-405">新しいブレークポイント機能</span><span class="sxs-lookup"><span data-stu-id="0254b-405">New breakpoint features</span></span>
+
+<span data-ttu-id="0254b-406">Visual Studio デバッガーでは、条件付きブレークポイントと、ヒット カウントによってトリガーされたブレークポイントをサポートします。</span><span class="sxs-lookup"><span data-stu-id="0254b-406">The Visual Studio debugger supports conditional breakpoints and breakpoints that are triggered by hit count.</span></span> <span data-ttu-id="0254b-407">また、ブレークポイントをヒットするとき、ユーザーのためにシステムが特定のアクションを実行させることができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-407">You can also have the system perform specific actions for you as you hit the breakpoint.</span></span> <span data-ttu-id="0254b-408">これらの機能のいずれも従来のデバッガーでは使用できませんでした。</span><span class="sxs-lookup"><span data-stu-id="0254b-408">None of these features were available in the legacy debugger.</span></span> <span data-ttu-id="0254b-409">これらについて以下に詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="0254b-409">These are explained below:</span></span>
+
+-   <span data-ttu-id="0254b-410">ヒット カウントを使用することで、デバッガーが実行を中断する前にブレークポイントがヒットする回数を決定できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-410">Hit count enables you to determine how many times the breakpoint is hit before the debugger breaks execution.</span></span> <span data-ttu-id="0254b-411">既定では、デバッガーはブレークポイントがヒットするたびに実行を中断します。</span><span class="sxs-lookup"><span data-stu-id="0254b-411">By default, the debugger breaks execution every time that the breakpoint is hit.</span></span> <span data-ttu-id="0254b-412">ブレークポイントが 2 回ヒットするたび、または 10 回ヒットするたび、または 512 回ヒットするたび、またはユーザーが選択した回数ヒットするたびにデバッガーが中断するよう、ヒット カウントを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-412">You can set a hit count to tell the debugger to break every 2 times the breakpoint is hit, or every 10 times, or every 512 times, or any other number you choose.</span></span> <span data-ttu-id="0254b-413">一部のバグは、最初にユーザー プログラムがループを実行し、関数を呼び出し、または変数へアクセスする際に現れないため、ヒット数は役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="0254b-413">Hit counts can be useful because some bugs don't appear the first time your program executes a loop, calls a function, or accesses a variable.</span></span> <span data-ttu-id="0254b-414">場合によっては、100 回または 1000 回繰り返すまでバグが表示されない可能性があります、</span><span class="sxs-lookup"><span data-stu-id="0254b-414">Sometimes, the bug might not appear until the 100th or the 1000th iteration.</span></span> <span data-ttu-id="0254b-415">このような問題をデバッグするには、ヒット数が 100 または 1000 のブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-415">To debug such a problem, you can set a breakpoint with a hit count of 100 or 1000.</span></span>
+-   <span data-ttu-id="0254b-416">条件は、ブレークポイントがヒットするかスキップするかを決定する式です。</span><span class="sxs-lookup"><span data-stu-id="0254b-416">Condition is an expression that determines whether the breakpoint is hit or skipped.</span></span> <span data-ttu-id="0254b-417">デバッガーは、ブレークポイントに到達すると、条件を評価します。</span><span class="sxs-lookup"><span data-stu-id="0254b-417">When the debugger reaches the breakpoint, it'll evaluate the condition.</span></span> <span data-ttu-id="0254b-418">条件が満たされた場合にのみ、ブレークポイントにヒットします。</span><span class="sxs-lookup"><span data-stu-id="0254b-418">The breakpoint will be hit only if the condition is satisfied.</span></span> <span data-ttu-id="0254b-419">場所ブレークポイントを持つ条件を使用して、特定の条件が true の時にのみ指定された場所で停止することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-419">You can use a condition with a location breakpoint to stop at a specified location only when a certain condition is true.</span></span> <span data-ttu-id="0254b-420">たとえば、勘定残高がマイナスにならないように、銀行決済プログラムをデバッグしているとします。</span><span class="sxs-lookup"><span data-stu-id="0254b-420">For example, suppose you're debugging a banking program where the account balance is never allowed to go below zero.</span></span> <span data-ttu-id="0254b-421">コード内の特定の場所でブレークポイントを設定し、残高 &lt; 0 などの条件をそれぞれに添付する場合があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-421">You might set breakpoints at certain locations in the code and attach a condition such as balance &lt; 0 to each one.</span></span> <span data-ttu-id="0254b-422">プログラムを実行するとき、残高が 0 より小さい場合にのみこれらの場所で実行が中断されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-422">When you run the program, execution will break at those locations only when the balance is less than zero.</span></span> <span data-ttu-id="0254b-423">最初のブレークポイントの位置で変数およびプログラムの状態を調べ、2 つ目のブレークポイントの位置まで実行を続行、などを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="0254b-423">You can examine variables and program state at the first breakpoint location, and then continue execution to the second breakpoint location, and so on.</span></span>
+-   <span data-ttu-id="0254b-424">アクションは、ブレークポイントがヒットした場合に発生する必要のあるものを指定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-424">Action specifies something that should occur when the breakpoint is hit.</span></span> <span data-ttu-id="0254b-425">既定では、デバッガーは実行を中断しますが、代わりにメッセージを印刷するか Visual Studio マクロを実行するかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-425">By default, the debugger breaks execution, but you can choose to print a message or run a Visual Studio macro instead.</span></span> <span data-ttu-id="0254b-426">中断するのではなく、メッセージを印刷する場合は、ブレークポイントは Trace ステートメントと非常に類似します。</span><span class="sxs-lookup"><span data-stu-id="0254b-426">If you decide to print a message instead of breaking, the breakpoint has an effect very similar to a Trace statement.</span></span> <span data-ttu-id="0254b-427">このブレークポイントを使用するメソッドはトレース ポイントと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="0254b-427">This method of using breakpoints is called trace points.</span></span>
+
+#### <a name="exercise"></a><span data-ttu-id="0254b-428">練習</span><span class="sxs-lookup"><span data-stu-id="0254b-428">Exercise</span></span>
+
+<span data-ttu-id="0254b-429">次のコードを考慮してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-429">Consider the following code:</span></span>
+
+```xpp
+class PVsClass
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         int i;
         for (i = 0; i < 10; i++)
         {
-          print i;
+            print i;
         }
-      }
     }
+}
+```
 
-<span data-ttu-id="877de-425">そのステートメントが選択されているときに F9 キーを押すことで、印刷明細書にブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="877de-425">Put a breakpoint on the print statements by pressing F9 while that statement is selected.</span></span> <span data-ttu-id="877de-426">これにより、通常の無条件ブレークポイントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="877de-426">This will create a normal, unconditional breakpoint.</span></span> <span data-ttu-id="877de-427">ここで、マウスを使用して、ブレークポイントのコンテキスト メニューを開き、**条件**を選択します。</span><span class="sxs-lookup"><span data-stu-id="877de-427">Now, use the mouse to open the context menu for the breakpoint and select **Condition**.</span></span> <span data-ttu-id="877de-428">"i" 変数が 5 を超えたときにブレークポイントが発生することを示す条件を配置します。</span><span class="sxs-lookup"><span data-stu-id="877de-428">Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5.</span></span> <span data-ttu-id="877de-429">スタートアップ プロジェクトとしてクラスを設定し、プロジェクト内のスタートアップ項目としてコードを含むクラスを設定します。</span><span class="sxs-lookup"><span data-stu-id="877de-429">Set the class as a startup project, and the class containing the code as the startup item in the project.</span></span> <span data-ttu-id="877de-430">コードを実行します。</span><span class="sxs-lookup"><span data-stu-id="877de-430">Run the code.</span></span> <span data-ttu-id="877de-431">デバッガーを使用して「i」の値を自由に変更してください。</span><span class="sxs-lookup"><span data-stu-id="877de-431">Feel free to modify the value of 'i' using the debugger.</span></span> <span data-ttu-id="877de-432">ここで、このブレークポイントを削除し、ヒット カウント機能を使用して同じことを実現します。</span><span class="sxs-lookup"><span data-stu-id="877de-432">Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing.</span></span> <span data-ttu-id="877de-433">**注記**: ブレークポイントにはいくつかの条件があります。</span><span class="sxs-lookup"><span data-stu-id="877de-433">**Note**: A breakpoint can have several conditions.</span></span> <span data-ttu-id="877de-434">多くの場合、ブレークポイントにカーソルを置くと役立つツールヒントが表示されれば便利です。</span><span class="sxs-lookup"><span data-stu-id="877de-434">It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear.</span></span> <span data-ttu-id="877de-435">トレース ポイントは、しばしばトレースの実行に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="877de-435">Trace points are often useful tot race execution.</span></span> <span data-ttu-id="877de-436">対象の行に追跡ポイントを挿入し、変数の値を記録します。</span><span class="sxs-lookup"><span data-stu-id="877de-436">Insert a trace point on the line in question and log the value of the variable.</span></span> <span data-ttu-id="877de-437">トレース出力がデバッガーの出力ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="877de-437">The trace output will appear in the output window in the debugger.</span></span>
+<span data-ttu-id="0254b-430">そのステートメントが選択されているときに F9 キーを押すことで、印刷明細書にブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-430">Put a breakpoint on the print statements by pressing F9 while that statement is selected.</span></span> <span data-ttu-id="0254b-431">これにより、通常の無条件ブレークポイントが作成されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-431">This will create a normal, unconditional breakpoint.</span></span> <span data-ttu-id="0254b-432">ここで、マウスを使用して、ブレークポイントのコンテキスト メニューを開き、**条件**を選択します。</span><span class="sxs-lookup"><span data-stu-id="0254b-432">Now, use the mouse to open the context menu for the breakpoint and select **Condition**.</span></span> <span data-ttu-id="0254b-433">"i" 変数が 5 を超えたときにブレークポイントが発生することを示す条件を配置します。</span><span class="sxs-lookup"><span data-stu-id="0254b-433">Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5.</span></span> <span data-ttu-id="0254b-434">スタートアップ プロジェクトとしてクラスを設定し、プロジェクト内のスタートアップ項目としてコードを含むクラスを設定します。</span><span class="sxs-lookup"><span data-stu-id="0254b-434">Set the class as a startup project, and the class containing the code as the startup item in the project.</span></span> <span data-ttu-id="0254b-435">コードを実行します。</span><span class="sxs-lookup"><span data-stu-id="0254b-435">Run the code.</span></span> <span data-ttu-id="0254b-436">デバッガーを使用して「i」の値を自由に変更してください。</span><span class="sxs-lookup"><span data-stu-id="0254b-436">Feel free to modify the value of 'i' using the debugger.</span></span> <span data-ttu-id="0254b-437">ここで、このブレークポイントを削除し、ヒット カウント機能を使用して同じことを実現します。</span><span class="sxs-lookup"><span data-stu-id="0254b-437">Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing.</span></span> 
 
-### <a name="the-immediate-window"></a><span data-ttu-id="877de-438">直接ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="877de-438">The immediate window</span></span>
+> [!NOTE]
+> <span data-ttu-id="0254b-438">ブレークポイントには、いくつかの条件があります。</span><span class="sxs-lookup"><span data-stu-id="0254b-438">A breakpoint can have several conditions.</span></span> <span data-ttu-id="0254b-439">多くの場合、ブレークポイントにカーソルを置くと役立つツールヒントが表示されれば便利です。</span><span class="sxs-lookup"><span data-stu-id="0254b-439">It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear.</span></span> <span data-ttu-id="0254b-440">トレース ポイントは、しばしばトレースの実行に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0254b-440">Trace points are often useful tot race execution.</span></span> <span data-ttu-id="0254b-441">対象の行に追跡ポイントを挿入し、変数の値を記録します。</span><span class="sxs-lookup"><span data-stu-id="0254b-441">Insert a trace point on the line in question and log the value of the variable.</span></span> <span data-ttu-id="0254b-442">トレース出力がデバッガーの出力ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="0254b-442">The trace output will appear in the output window in the debugger.</span></span>
 
-<span data-ttu-id="877de-439">直接ウィンドウは VS デバッガーの便利な機能で、ユーザーはいつでも評価するために式と明細書を入力できます。</span><span class="sxs-lookup"><span data-stu-id="877de-439">The immediate window is a useful feature in the VS debugger that allows the user to enter expression and statements to evaluate at any given time.</span></span> <span data-ttu-id="877de-440">この機能は現在、X++スタックには実装されていません。多くの言語、特に \# の場合と同様です。</span><span class="sxs-lookup"><span data-stu-id="877de-440">This feature isn't currently implemented in the X++ stack, as is the case for many other languages, notably F\#.</span></span> <span data-ttu-id="877de-441">ただし、それは精通したユーザーが直接ウィンドウから益を得られないという意味ではありません。</span><span class="sxs-lookup"><span data-stu-id="877de-441">However, that doesn't mean that the savvy user can't benefit from the immediate window.</span></span> <span data-ttu-id="877de-442">スニペットは X++ ではなく C\# で表す必要があることを示すだけです。</span><span class="sxs-lookup"><span data-stu-id="877de-442">It just means that snippets must be expressed in C\#, not in X++.</span></span> <span data-ttu-id="877de-443">これがどのように大きな効果を発揮するかについての詳細を記述した、別のドキュメントがあります。</span><span class="sxs-lookup"><span data-stu-id="877de-443">There's a separate document that describes the details of how this can be done to great effect.</span></span>
+### <a name="the-immediate-window"></a><span data-ttu-id="0254b-443">直接ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="0254b-443">The immediate window</span></span>
+
+<span data-ttu-id="0254b-444">直接ウィンドウは VS デバッガーの便利な機能で、ユーザーはいつでも評価するために式と明細書を入力できます。</span><span class="sxs-lookup"><span data-stu-id="0254b-444">The immediate window is a useful feature in the VS debugger that allows the user to enter expression and statements to evaluate at any given time.</span></span> <span data-ttu-id="0254b-445">この機能は現在、X++スタックには実装されていません。多くの言語、特に \# の場合と同様です。</span><span class="sxs-lookup"><span data-stu-id="0254b-445">This feature isn't currently implemented in the X++ stack, as is the case for many other languages, notably F\#.</span></span> <span data-ttu-id="0254b-446">ただし、それは精通したユーザーが直接ウィンドウから益を得られないという意味ではありません。</span><span class="sxs-lookup"><span data-stu-id="0254b-446">However, that doesn't mean that the savvy user can't benefit from the immediate window.</span></span> <span data-ttu-id="0254b-447">スニペットは X++ ではなく C\# で表す必要があることを示すだけです。</span><span class="sxs-lookup"><span data-stu-id="0254b-447">It just means that snippets must be expressed in C\#, not in X++.</span></span> <span data-ttu-id="0254b-448">これがどのように大きな効果を発揮するかについての詳細を記述した、別のドキュメントがあります。</span><span class="sxs-lookup"><span data-stu-id="0254b-448">There's a separate document that describes the details of how this can be done to great effect.</span></span>
 
 
 

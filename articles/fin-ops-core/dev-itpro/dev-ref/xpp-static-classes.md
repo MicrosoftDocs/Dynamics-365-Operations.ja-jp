@@ -3,7 +3,7 @@ title: X++ 静的クラス
 description: このトピックでは、 X++ の静的クラスについて説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,31 +16,31 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 332af4c36cd3780252945a66cba03c1af9ea77d2
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 6920775d85ee2c2b0c421c28a1b4401a58d3ac4f
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778681"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872641"
 ---
-# <a name="x-static-classes"></a><span data-ttu-id="b579c-103">X++ 静的クラス</span><span class="sxs-lookup"><span data-stu-id="b579c-103">X++ static classes</span></span>
+# <a name="x-static-classes"></a><span data-ttu-id="8befc-103">X++ 静的クラス</span><span class="sxs-lookup"><span data-stu-id="8befc-103">X++ static classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b579c-104">このトピックでは、 X++ の静的クラス メンバーについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b579c-104">This topic describes static class members in X++.</span></span> <span data-ttu-id="b579c-105">一般に、静的メソッドは次のような場合を対象とします。</span><span class="sxs-lookup"><span data-stu-id="b579c-105">In general, static methods are intended for these cases:</span></span>
+<span data-ttu-id="8befc-104">このトピックでは、 X++ の静的クラス メンバーについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8befc-104">This topic describes static class members in X++.</span></span> <span data-ttu-id="8befc-105">一般に、静的メソッドは次のような場合を対象とします。</span><span class="sxs-lookup"><span data-stu-id="8befc-105">In general, static methods are intended for these cases:</span></span>
 
--   <span data-ttu-id="b579c-106">このメソッドは、クラス内で宣言されているメンバー変数にアクセスする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="b579c-106">The method has no reason to access the member variables that are declared in the class.</span></span>
--   <span data-ttu-id="b579c-107">このメソッドは、クラスのインスタンス (静的でない) メソッドを呼び出す理由はありません。</span><span class="sxs-lookup"><span data-stu-id="b579c-107">The method has no reason to call any instance (non-static) methods of the class.</span></span>
+-   <span data-ttu-id="8befc-106">このメソッドは、クラス内で宣言されているメンバー変数にアクセスする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="8befc-106">The method has no reason to access the member variables that are declared in the class.</span></span>
+-   <span data-ttu-id="8befc-107">このメソッドは、クラスのインスタンス (静的でない) メソッドを呼び出す理由はありません。</span><span class="sxs-lookup"><span data-stu-id="8befc-107">The method has no reason to call any instance (non-static) methods of the class.</span></span>
 
-<span data-ttu-id="b579c-108">静的クラス メンバーを宣言するには、**静的** キーワードを使用します。</span><span class="sxs-lookup"><span data-stu-id="b579c-108">You declare static class members by using the **static** keyword.</span></span> <span data-ttu-id="b579c-109">**静的** キーワードは、存在するクラスのインスタンス数に関係なく、メソッドの 1 つのインスタンスだけを作成するようシステムに指示します。</span><span class="sxs-lookup"><span data-stu-id="b579c-109">The **static** keyword instructs the system to create only one instance of the method, regardless of the number of instances of the class there are.</span></span> <span data-ttu-id="b579c-110">この 1 つのインスタンスは、セッション全体で使用されます。</span><span class="sxs-lookup"><span data-stu-id="b579c-110">This one instance is used throughout your session.</span></span> 
+<span data-ttu-id="8befc-108">静的クラス メンバーを宣言するには、**静的** キーワードを使用します。</span><span class="sxs-lookup"><span data-stu-id="8befc-108">You declare static class members by using the **static** keyword.</span></span> <span data-ttu-id="8befc-109">**静的** キーワードは、存在するクラスのインスタンス数に関係なく、メソッドの 1 つのインスタンスだけを作成するようシステムに指示します。</span><span class="sxs-lookup"><span data-stu-id="8befc-109">The **static** keyword instructs the system to create only one instance of the method, regardless of the number of instances of the class there are.</span></span> <span data-ttu-id="8befc-110">この 1 つのインスタンスは、セッション全体で使用されます。</span><span class="sxs-lookup"><span data-stu-id="8befc-110">This one instance is used throughout your session.</span></span> 
 
-### <a name="static-methods"></a><span data-ttu-id="b579c-111">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="b579c-111">Static methods</span></span>
+### <a name="static-methods"></a><span data-ttu-id="8befc-111">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="8befc-111">Static methods</span></span>
 
-<span data-ttu-id="b579c-112">このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b579c-112">This section describes a scenario where a software key type is used to help prevent piracy.</span></span> <span data-ttu-id="b579c-113">ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。</span><span class="sxs-lookup"><span data-stu-id="b579c-113">Each instance of a software key can have its own unique value.</span></span> <span data-ttu-id="b579c-114">ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。</span><span class="sxs-lookup"><span data-stu-id="b579c-114">Because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys.</span></span> <span data-ttu-id="b579c-115">したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="b579c-115">Therefore, the method that contains the conformance validation logic should be static.</span></span> 
+<span data-ttu-id="8befc-112">このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8befc-112">This section describes a scenario where a software key type is used to help prevent piracy.</span></span> <span data-ttu-id="8befc-113">ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。</span><span class="sxs-lookup"><span data-stu-id="8befc-113">Each instance of a software key can have its own unique value.</span></span> <span data-ttu-id="8befc-114">ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。</span><span class="sxs-lookup"><span data-stu-id="8befc-114">Because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys.</span></span> <span data-ttu-id="8befc-115">したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="8befc-115">Therefore, the method that contains the conformance validation logic should be static.</span></span> 
 
-<span data-ttu-id="b579c-116">**静的**キーワード使用して宣言されるメソッドの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b579c-116">Here is an example of a method that is declared by using the **static** keyword.</span></span>
+<span data-ttu-id="8befc-116">**静的**キーワード使用して宣言されるメソッドの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8befc-116">Here is an example of a method that is declared by using the **static** keyword.</span></span>
 
-```X++
+```xpp
 public class SoftwareKey
 {
     static public boolean validateSoftwareKey(str _softwareKeyString)
@@ -51,64 +51,64 @@ public class SoftwareKey
 }
 ```
 
-<span data-ttu-id="b579c-117">次の例では、クラスで静的メソッドを呼び出す前に **SoftwareKey** クラスのインスタンスを構築する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="b579c-117">In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class.</span></span> <span data-ttu-id="b579c-118">静的な **validateSoftwareKey** メソッドを呼び出すときは、構文はそのメソッドを含むクラスの名前で始まります。</span><span class="sxs-lookup"><span data-stu-id="b579c-118">When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method.</span></span> <span data-ttu-id="b579c-119">コロンのペア (::) は、クラス名を静的メソッド名に接続するために使用します。</span><span class="sxs-lookup"><span data-stu-id="b579c-119">A pair of colons (::) is used to connect the class name to the static method name.</span></span>
+<span data-ttu-id="8befc-117">次の例では、クラスで静的メソッドを呼び出す前に **SoftwareKey** クラスのインスタンスを構築する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="8befc-117">In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class.</span></span> <span data-ttu-id="8befc-118">静的な **validateSoftwareKey** メソッドを呼び出すときは、構文はそのメソッドを含むクラスの名前で始まります。</span><span class="sxs-lookup"><span data-stu-id="8befc-118">When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method.</span></span> <span data-ttu-id="8befc-119">コロンのペア (::) は、クラス名を静的メソッド名に接続するために使用します。</span><span class="sxs-lookup"><span data-stu-id="8befc-119">A pair of colons (::) is used to connect the class name to the static method name.</span></span>
 
-```X++
+```xpp
 boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
 ```
 
-### <a name="static-fields"></a><span data-ttu-id="b579c-120">静的フィールド</span><span class="sxs-lookup"><span data-stu-id="b579c-120">Static fields</span></span>
+### <a name="static-fields"></a><span data-ttu-id="8befc-120">静的フィールド</span><span class="sxs-lookup"><span data-stu-id="8befc-120">Static fields</span></span>
 
-<span data-ttu-id="b579c-121">静的フィールドは、**静的** キーワードを使用して宣言される変数です。</span><span class="sxs-lookup"><span data-stu-id="b579c-121">Static fields are variables that are declared by using the **static** keyword.</span></span> <span data-ttu-id="b579c-122">概念的には、クラスに適用され、クラスのインスタンスには適用されません。</span><span class="sxs-lookup"><span data-stu-id="b579c-122">Conceptually, they apply to the class, not to instances of the class.</span></span>
+<span data-ttu-id="8befc-121">静的フィールドは、**静的** キーワードを使用して宣言される変数です。</span><span class="sxs-lookup"><span data-stu-id="8befc-121">Static fields are variables that are declared by using the **static** keyword.</span></span> <span data-ttu-id="8befc-122">概念的には、クラスに適用され、クラスのインスタンスには適用されません。</span><span class="sxs-lookup"><span data-stu-id="8befc-122">Conceptually, they apply to the class, not to instances of the class.</span></span>
 
-## <a name="static-constructors"></a><span data-ttu-id="b579c-123">静的コンストラクター</span><span class="sxs-lookup"><span data-stu-id="b579c-123">Static constructors</span></span>
+## <a name="static-constructors"></a><span data-ttu-id="8befc-123">静的コンストラクター</span><span class="sxs-lookup"><span data-stu-id="8befc-123">Static constructors</span></span>
 
-<span data-ttu-id="b579c-124">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="b579c-124">A static constructor is guaranteed to run before any static or instance calls are made to the class.</span></span> <span data-ttu-id="b579c-125">静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</span><span class="sxs-lookup"><span data-stu-id="b579c-125">The execution of the static constructor is relative to the user’s session.</span></span> <span data-ttu-id="b579c-126">静的コンストラクターには、次の構文があります。</span><span class="sxs-lookup"><span data-stu-id="b579c-126">The static constructor has the following syntax.</span></span>
+<span data-ttu-id="8befc-124">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="8befc-124">A static constructor is guaranteed to run before any static or instance calls are made to the class.</span></span> <span data-ttu-id="8befc-125">静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</span><span class="sxs-lookup"><span data-stu-id="8befc-125">The execution of the static constructor is relative to the user’s session.</span></span> <span data-ttu-id="8befc-126">静的コンストラクターには、次の構文があります。</span><span class="sxs-lookup"><span data-stu-id="8befc-126">The static constructor has the following syntax.</span></span>
 
-```X++
+```xpp
 static void TypeNew()
 ```
 
-<span data-ttu-id="b579c-127">静的コンストラクターは明示的に呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="b579c-127">You never explicitly call the static constructor.</span></span> <span data-ttu-id="b579c-128">コンパイラは、コンストラクターがクラスの他のメソッドの前に正確に 1 回呼び出されるようにするコードを生成します。</span><span class="sxs-lookup"><span data-stu-id="b579c-128">The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class.</span></span> <span data-ttu-id="b579c-129">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="b579c-129">A static constructor is used to initialize any static data or perform a particular action that must be performed only one time.</span></span> <span data-ttu-id="b579c-130">静的コンストラクターに指定できるパラメーターはなく、**静的**としてマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b579c-130">No parameters can be provided for the static constructor, and it must be marked as **static**.</span></span> 
+<span data-ttu-id="8befc-127">静的コンストラクターは明示的に呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="8befc-127">You never explicitly call the static constructor.</span></span> <span data-ttu-id="8befc-128">コンパイラは、コンストラクターがクラスの他のメソッドの前に正確に 1 回呼び出されるようにするコードを生成します。</span><span class="sxs-lookup"><span data-stu-id="8befc-128">The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class.</span></span> <span data-ttu-id="8befc-129">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="8befc-129">A static constructor is used to initialize any static data or perform a particular action that must be performed only one time.</span></span> <span data-ttu-id="8befc-130">静的コンストラクターに指定できるパラメーターはなく、**静的**としてマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8befc-130">No parameters can be provided for the static constructor, and it must be marked as **static**.</span></span> 
 
-<span data-ttu-id="b579c-131">次のコード例は、静的コンストラクターを使用して単一のインスタンスを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b579c-131">The following code example shows how to create a singleton instance by using a static constructor.</span></span>
+<span data-ttu-id="8befc-131">次のコード例は、静的コンストラクターを使用して単一のインスタンスを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8befc-131">The following code example shows how to create a singleton instance by using a static constructor.</span></span>
 
-```X++
+```xpp
 public class Singleton
 {
-  private static Singleton instance;
+    private static Singleton instance;
 
-  private void new()
-  {
-  }
+    private void new()
+    {
+    }
 
-  static void TypeNew()
-  {
-    instance = new Singleton();
-  }
+    static void TypeNew()
+    {
+        instance = new Singleton();
+    }
 
-  public static Singleton Instance()
-  {
-    return Singleton::instance;
-  }
+    public static Singleton Instance()
+    {
+        return Singleton::instance;
+    }
 }
 ```
 
-<span data-ttu-id="b579c-132">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。</span><span class="sxs-lookup"><span data-stu-id="b579c-132">The singleton guarantees that only one instance of the class will ever be called.</span></span> <span data-ttu-id="b579c-133">次の例は、単一をインスタンス化する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b579c-133">The following example shows how to instantiate the singleton.</span></span>
+<span data-ttu-id="8befc-132">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。</span><span class="sxs-lookup"><span data-stu-id="8befc-132">The singleton guarantees that only one instance of the class will ever be called.</span></span> <span data-ttu-id="8befc-133">次の例は、単一をインスタンス化する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8befc-133">The following example shows how to instantiate the singleton.</span></span>
 
-```X++
+```xpp
 Singleton i = Singleton::Instance();
 ```
 
-## <a name="static-methods"></a><span data-ttu-id="b579c-134">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="b579c-134">Static methods</span></span>
+## <a name="static-methods"></a><span data-ttu-id="8befc-134">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="8befc-134">Static methods</span></span>
 
-<span data-ttu-id="b579c-135">*クラス メソッド*とも呼ばれる静的メソッドは、クラスに属しており、キーワード **static** を使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="b579c-135">Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**.</span></span> <span data-ttu-id="b579c-136">静的メソッドを使用する前に、オブジェクトのインスタンスを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="b579c-136">You don't have to instantiate an object before you use static methods.</span></span> <span data-ttu-id="b579c-137">静的メソッドは多くの場合、テーブルに格納されているデータを操作するために使用します。</span><span class="sxs-lookup"><span data-stu-id="b579c-137">Static methods are often used to work with data that is stored in tables.</span></span> <span data-ttu-id="b579c-138">メンバー変数は静的メソッドで使用できません。</span><span class="sxs-lookup"><span data-stu-id="b579c-138">Member variables can't be used in a static method.</span></span> <span data-ttu-id="b579c-139">静的メソッドを呼び出すには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="b579c-139">You use the following syntax to call static methods.</span></span>
+<span data-ttu-id="8befc-135">*クラス メソッド*とも呼ばれる静的メソッドは、クラスに属しており、キーワード **static** を使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="8befc-135">Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**.</span></span> <span data-ttu-id="8befc-136">静的メソッドを使用する前に、オブジェクトのインスタンスを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="8befc-136">You don't have to instantiate an object before you use static methods.</span></span> <span data-ttu-id="8befc-137">静的メソッドは多くの場合、テーブルに格納されているデータを操作するために使用します。</span><span class="sxs-lookup"><span data-stu-id="8befc-137">Static methods are often used to work with data that is stored in tables.</span></span> <span data-ttu-id="8befc-138">メンバー変数は静的メソッドで使用できません。</span><span class="sxs-lookup"><span data-stu-id="8befc-138">Member variables can't be used in a static method.</span></span> <span data-ttu-id="8befc-139">静的メソッドを呼び出すには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="8befc-139">You use the following syntax to call static methods.</span></span>
 
-```X++
+```xpp
 ClassName::methodName();
 ```
 
-## <a name="static-and-instance-methods"></a><span data-ttu-id="b579c-140">静的およびインスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="b579c-140">Static and instance methods</span></span>
+## <a name="static-and-instance-methods"></a><span data-ttu-id="8befc-140">静的およびインスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="8befc-140">Static and instance methods</span></span>
 
-<span data-ttu-id="b579c-141">メソッドのアクセサー キーワードは、どのメソッドが静的であるか、静的でないかに関係なく、同じクラスにある 2 つのメソッド間の呼び出しを制限することはありません。</span><span class="sxs-lookup"><span data-stu-id="b579c-141">The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static.</span></span> <span data-ttu-id="b579c-142">静的メソッドでは、**新しい**コンストラクター メソッドが**プライベート** モディファイアーで修飾されている場合でも、**新しい**コンストラクター メソッドに対する呼び出しは有効です。</span><span class="sxs-lookup"><span data-stu-id="b579c-142">In a static method, calls to the **new** constructor method are valid even if the **new** constructor method is decorated with the **private** modifier.</span></span> <span data-ttu-id="b579c-143">これらの呼び出しの構文では、**新しい**キーワードを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b579c-143">The syntax for these calls requires that the **new** keyword be used.</span></span> <span data-ttu-id="b579c-144">静的メソッドのコードは、クラスのインスタンス メソッドを呼び出す前に、独自のクラスのインスタンス オブジェクトを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b579c-144">The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.</span></span>
+<span data-ttu-id="8befc-141">メソッドのアクセサー キーワードは、どのメソッドが静的であるか、静的でないかに関係なく、同じクラスにある 2 つのメソッド間の呼び出しを制限することはありません。</span><span class="sxs-lookup"><span data-stu-id="8befc-141">The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static.</span></span> <span data-ttu-id="8befc-142">静的メソッドでは、**新しい**コンストラクター メソッドが**プライベート** モディファイアーで修飾されている場合でも、**新しい**コンストラクター メソッドに対する呼び出しは有効です。</span><span class="sxs-lookup"><span data-stu-id="8befc-142">In a static method, calls to the **new** constructor method are valid even if the **new** constructor method is decorated with the **private** modifier.</span></span> <span data-ttu-id="8befc-143">これらの呼び出しの構文では、**新しい**キーワードを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8befc-143">The syntax for these calls requires that the **new** keyword be used.</span></span> <span data-ttu-id="8befc-144">静的メソッドのコードは、クラスのインスタンス メソッドを呼び出す前に、独自のクラスのインスタンス オブジェクトを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8befc-144">The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.</span></span>
 
