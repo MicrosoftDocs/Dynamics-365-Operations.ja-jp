@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: gboyko
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b57601b8ac24162636f493465a98e1f671a6f30f
-ms.sourcegitcommit: 72ffe00a65fbf1b4a7fe58c4df50975899637cc6
+ms.openlocfilehash: 97a755dd655ac84b99ccf9f95c4acfc465f323d3
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2807739"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898932"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>ワークフローへの休暇要求の送信
-
-[!include [banner](includes/preview-banner.md)]
 
 ## <a name="overview"></a>概要
 

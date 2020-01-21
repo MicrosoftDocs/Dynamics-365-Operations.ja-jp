@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Finance バージョン 10.0.7 の機能のプレビュー (2020 年 1 月)
+title: Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能と変更点
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.7 の新機能または変更された機能について説明します。
 author: roschlom
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: a0edfac4d1e23f467c5148c46aeab08527d600bd
-ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
+ms.openlocfilehash: db784f2bb6103bddf84d228d217f65f57072d7e9
+ms.sourcegitcommit: cfaad79bcb1460ee0e7ad5a2c596f9199e14c53a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2808009"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944417"
 ---
-# <a name="preview-features-in-dynamics-365-finance-version-1007-january-2020"></a>Dynamics 365 Finance バージョン 10.0.7 の機能のプレビュー (2020 年 1 月)
+# <a name="whats-new-and-changed-in-dynamics-365-finance-version-1007-january-2020"></a>Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能と変更点
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.7 用 Finance and Operations 向けプラットフォーム更新プログラム 31 の新機能または変更されたプレビュー機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
 
@@ -119,7 +118,7 @@ ms.locfileid: "2808009"
 
 ### <a name="platform-update-31"></a>プラットフォーム update 31
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 に関する詳細については、[プラットフォーム更新プログラム 31 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 の詳細については、[プラットフォーム更新プログラム 31 の新機能と変更点](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md)を参照してください。
 
 
 ### <a name="bug-fixes"></a>バグ修正 

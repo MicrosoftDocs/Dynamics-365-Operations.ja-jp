@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8500da8b43bea3cc98b7a978834157556ad68c16
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: dfe636204d6234e4d7bac90ec0d44edccf13f53d
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778718"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872658"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 
@@ -54,7 +54,7 @@ ms.locfileid: "2778718"
 
 次の例は、アクセサー メソッドを使用して変数データを公開する方法を示しています。 変数 **名**は保護されるため、プロテクト変数へのアクセスを許可するために、アクセサー (取得と設定) メソッドが実装されます。 変数**姓**は公開されているため、コードで変数の値を直接取得して設定することができます。
 
-```X++
+```xpp
 // This is the class definition.
 public class HasAFirstName
 {
@@ -93,7 +93,7 @@ public static void TestLastName()
 
 次の例では、**ポイント** クラスのパラメーターなしのコンストラクターを定義しています。
 
-```X++
+```xpp
 class Point
 {
 
@@ -120,7 +120,7 @@ class Point
 
 クラス コンストラクターは、クラスのインスタンスを作成するだけでなく、他のオブジェクトをインスタンス化することもできます。 たとえば、次のコードは、境界を定義するため 2 つの**ポイント**オブジェクトを使用する**長方形**クラスを申告します。 この場合、**ポイント** クラスには 2 つの **実数** パラメーターを持つコンストラクターが存在します。
 
-```X++
+```xpp
 
 class Point
 {
@@ -166,7 +166,7 @@ info(any2Str(customRectangle.lowerLeft.y));
 
 コンストラクター、**新規**は、クラスの新しいインスタンスを返します。 次のコード例は、ポイント クラスのインスタンスを 2 つ作成する方法を示しています。
 
-```X++
+```xpp
 // Declare a variable to refer to a Point instance.
 Point myPoint;
 
@@ -189,7 +189,7 @@ Point ap = new Point();
 
 次の例は、**finalize** メソッドの呼び出しの基本構造を示しています。
 
-```X++
+```xpp
 // From any method in a class.
 if (condition)
 {
@@ -202,7 +202,7 @@ if (condition)
 
 参照変数を **Null** に設定してオブジェクトを終了します。 この方法を使用すると、他の変数がそのオブジェクトをポイントしていない場合にのみオブジェクトが破棄されます。 他のコードが変数を使用していないことを確認する必要があります。 次の例では、参照変数を作成して、**Null** に設定する方法を示します。
 
-```X++
+```xpp
 Point myPoint = new Point();
 myPoint = null;
 ```
@@ -213,7 +213,7 @@ myPoint = null;
 
 インスタンス メソッドは、クラスから作成される各インスタンスに埋め込まれます。 メソッドの使用前に、オブジェクトのインスタンスを作成する必要があります。 次のコードは、インスタンス メソッドを定義して、それをインスタンスから呼び出す方法を示しています。
 
-```X++
+```xpp
 class Square
 {
 
@@ -242,8 +242,8 @@ info(int2Str(area));
 
 静的メソッドを呼び出すには、次の構文を使用します。
 
-```X++
-    ClassName::methodName();
+```xpp
+ClassName::methodName();
 ```
 
 インスタンス メソッドを静的メソッドに変換する場合は、クライアントを再起動する必要があります。 それ以外の場合、コンパイラは変更を検出しません。 インスタンス メソッドを静的メソッドに変換した後は、クラスのインスタンスからメソッドを呼び出すことができなくなります。 代わりに、クラス自体からメソッドを呼び出す必要があります。 静的メソッドの詳細については、[X++ 静的クラス](xpp-static-classes.md)を参照してください。
@@ -252,7 +252,7 @@ info(int2Str(area));
 
 **メイン**メソッドは、メニュー オプションから直接実行されるクラス メソッドです。 このメソッドでは、オブジェクトのインスタンスを作成してから、必要なメンバー メソッドを呼び出す必要があります。 **\_args** パラメーターを使用して、メソッドにデータを転送できます。
 
-```X++
+```xpp
 static void main (Args _args)
 {
     // Your code here.
@@ -269,17 +269,17 @@ static void main (Args _args)
 
 次の例は、2 つのメソッドを示しています。 1 つの方法に戻り値の型がありますが、他の方法には戻り値の型がありません。
 
-```X++
-    void methodNameNoReturnValue()
-    {
-        // Your code here.
-    }
+```xpp
+void methodNameNoReturnValue()
+{
+    // Your code here.
+}
 
-    // If a method returns something, you must specify the return type and include a return statement.
-    int methodNameIntegerReturnValue()
-    {
-        return 1;
-    }
+// If a method returns something, you must specify the return type and include a return statement.
+int methodNameIntegerReturnValue()
+{
+    return 1;
+}
 ```
 
 ### <a name="syntax"></a>構文
@@ -304,7 +304,7 @@ MethodName = *識別子*
 
 ### <a name="example-of-a-method-that-doesnt-have-a-return-type"></a>戻り値の型を設定していないメソッドの例
 
-```X++
+```xpp
 void update ()
 {   
     // Variable declared and initialized
@@ -330,7 +330,7 @@ void update ()
 
 次の例では、**checkAccountBlocked** メソッドはブール値を返し、**amountCur** パラメーターで動作します。
 
-```X++
+```xpp
 boolean checkAccountBlocked(AmountCur amountCur)
 {
     if (this.blocked == CustVendorBlocked::All 
@@ -359,7 +359,7 @@ boolean checkAccountBlocked(AmountCur amountCur)
 
 次の例は、メソッドの見出しのみを示しています。
 
-```X++
+```xpp
 // A method that cannot be overridden
 final int dontAlterMe() 
 
@@ -398,7 +398,7 @@ display int value()
 ### <a name="examples-of-optional-parameters"></a>オプション パラメーターの例
 
 既定のパラメータを持つクラスのコード例を次に示します。
-```X++
+```xpp
 // This is an example of a function being used as the default.
 public class Person 
 {
@@ -434,7 +434,7 @@ info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
 
 次の例では、2 番目の省略可能なパラメーターにスキップできないことを示します。 最初の方法には 2 つの省略可能なパラメーターがあります。 2 つ目の方法は、最初のメソッドの呼び出し元です。 呼び出し元は\_i3 の既定値のみをオーバーライドすることを希望していますが、コンパイラでは、すべての前のオプション パラメーターが呼び出しでオーバーライドされている必要があります。 
 
-```X++
+```xpp
 public class Additions 
 {
     static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
@@ -458,7 +458,7 @@ info(int2Str(Additions::AddThreeInts(1, 2, 99)));
 
 クラス変数は既定で保護されます。 クラスの内部実装の詳細を非表示にすることで、そのクラスを使用するコードを破棄することなくクラスの実装を後で変更することができます。 参照変数からデータにアクセスするには、アクセサー メソッドを作成する必要があります。 次の例では、アクセス メソッドを使用して変数 **x** および **y** にアクセスする **Point** クラスを定義します。
 
-```X++
+```xpp
 class Point
 {
     // Instance variables
@@ -497,7 +497,7 @@ class Point
 
 これらのメソッド宣言は、**Point** クラスが外部からの変数へのアクセスを提供する方法を示しています。 その他のオブジェクトは、アクセサー メソッドを使ってインスタンス変数 **Point** オブジェクトを操作できます。
 
-```X++
+```xpp
 Point myPoint = new Point();
 // Set the x variable using the accessor method.
 myPoint.setX(4.0);
@@ -526,7 +526,7 @@ info(any2Str(myPoint.getX()));
 
 次の例は、2 つのローカル関数である **localFunctionA** および **localFunctionB** の有効な宣言を示しています。 ローカル関数への呼び出しは、必要に応じて、この例の関数宣言の後に行われます。
 
-```X++
+```xpp
 static void StaticFunction()
 {
     int number = 654;

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 339e7f0f3343718f5089b01cf1a1c563054cd6c0
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 1380640d6dc028828e0615900b0488b21f130051
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778683"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872640"
 ---
 # <a name="x-variables"></a>X++ 変数
 
@@ -44,7 +44,7 @@ X++ で作成されていないマネージ型の変数を宣言するときは�
 
 ## <a name="variable-examples"></a>変数の例
 
-```X++
+```xpp
 // An example of two valid variable names.
 str variableName;
 CustInfo custNumber;
@@ -139,7 +139,7 @@ public class NamespaceExample
 
 ## <a name="var-examples"></a>var の例
 
-```X++
+```xpp
 // When the type of a variable is clear from
 // the context, use var in the declaration.
 var var1 = "This is clearly a string.";
@@ -167,64 +167,74 @@ int var4 = myObject.ResultSoFar();
 
 次の例では、使用される **for** ステートメント内のループ カウンターを宣言します。
 
-    void MyMethod()
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 0; i < 10; i++)
-        {
-            info(strfmt("i is %1", i));
-        }
+        info(strfmt("i is %1", i));
     }
+}
+```
 
 変数のスコープは **for** ステートメントそのものであり、条件式とループ更新部分を含みます。 この範囲外で値を使用することはできません。 
 
 次の例では、コンパイラが **info** ステートメントに達すると、「'i' が宣言されていません」というエラー メッセージを発行します。
 
-    void MyMethod()
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 0; i < 10; i++)
+        if (i == 7)
         {
-            if (i == 7)
-            {
-                break;
-            }
+            break;
         }
-        // The next statement causes a compiler error.
-        info(strfmt("Found: %1", i));
     }
+    // The next statement causes a compiler error.
+    info(strfmt("Found: %1", i));
+}
+```
 
 また、以下の例に示されるように、変数を **using** ステートメントにスコープすることができます。
 
-    static void AnotherMethod()
+```xpp
+static void AnotherMethod()
+{
+    str textFromFile;
+    using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
     {
-        str textFromFile;
-        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
-        {
-            textFromFile = sr.ReadToEnd();
-        }
+        textFromFile = sr.ReadToEnd();
     }
+}
+```
 
 **IDisposable** を実装するオブジェクトを使用するときは、**using** ステートメントで、そのオブジェクトを宣言し、インスタンスを作成する必要があります。 **using** ステートメントは、オブジェクトのメソッドを呼び出すときに例外が発生した場合でも、正しい方法でオブジェクトの **Dispose** メソッドを呼び出します。 オブジェクトを **try** ブロック内に配置してから **finally** ブロック内で **Dispose** を明示的に呼び出すことにより、同じ結果を達成することができます。 実際、コンパイラはこの方法だけで **using** ステートメントを変換します。 
 
 次の例は、説明してきた機能のいくつかを示しています。
 
-    // loop variable declared within the loop: It will
-    // not be misused outside the loop
-    for(int i = 1; i < 10; i++)
-    {
-        // Because this value is not used from outside the loop,
-        // its declaration belongs in this smaller scope.
-        str s = int2str(i);
-        info(s);
-    }
+```xpp
+// loop variable declared within the loop: It will
+// not be misused outside the loop
+for(int i = 1; i < 10; i++)
+{
+    // Because this value is not used from outside the loop,
+    // its declaration belongs in this smaller scope.
+    str s = int2str(i);
+    info(s);
+}
+```
 
 混乱を避けるために、コンパイラは囲みスコープ内または同じスコープであっても、別の変数を隠す変数を導入しようとすると、エラー メッセージを発行します。 たとえば、次のコードは、以下の診断メッセージを発行するコンパイラの原因になります: 「i と呼ばれるローカルの変数はこのスコープでは宣言されません。それは既に親または現在のスコープで別のものを表示している i が別の意味になってしまうためです。」
 
+```xpp
+{
+    int i;
     {
         int i;
-        {
-            int i;
-        }
     }
+}
+```
 
 ## <a name="constants-read-only-variables-and-macros"></a>定数、読み取り専用変数、およびマクロ
 
@@ -241,21 +251,27 @@ int var4 = myObject.ResultSoFar();
 
 次の例に示すように、定数はクラス レベルで宣言できます。
 
-    private const str MyConstant = 'SomeValue';
+```xpp
+private const str MyConstant = 'SomeValue';
+```
 
 次に、定数を二重コロン (::) 構文を使用して参照することができます。
 
-    str value = MyClass::MyConstant;
+```xpp
+str value = MyClass::MyConstant;
+```
 
 定数 (**const**) が定義されているクラスのスコープにいる場合は、型名の接頭語 (上記の例では **MyClass**) を省略できます。 したがって、マクロ ライブラリの概念を簡単に実装することができます。 マクロ シンボルのリストは、パブリック **const** の定義を持つクラスになります。 
 
 また、定数を変数のみとして定義することができます。 コンパイラはインバリアントを維持して、値を変更できないようにします。
 
-    {
-        const int Blue = 0x0000FF;
-        const int Green = 0x00FF00;
-        const int Red = 0xFF0000;
-    }
+```xpp
+{
+    const int Blue = 0x0000FF;
+    const int Green = 0x00FF00;
+    const int Red = 0xFF0000;
+}
+```
 
 ## <a name="null-values-for-data-types"></a>データ型の null 値
 その他の数多くのデータベース管理システム (DBMS) で使用できる **null** 値の概念がサポートされていません。 X++ の変数は、常にタイプと値を持ちます。ただし、各データ タイプでは、1 つの値が **null** と見なされます (たとえば、**validateField** テーブル メソッドの実行時)。

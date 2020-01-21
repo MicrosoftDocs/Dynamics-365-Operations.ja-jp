@@ -1,7 +1,7 @@
 ---
 title: バッチ処理とバッチ サーバー
 description: このトピックでは、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
-author: maertenm
+author: Peakerbl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
-ms.author: maertenm
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12bdb89602793d1fa2bd22585f0c33270b57c3c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b822a21ca22c3d3365de671b13350e729d1511c6
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191799"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945407"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 

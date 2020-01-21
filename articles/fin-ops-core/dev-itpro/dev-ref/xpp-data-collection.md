@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8336d8d05abe2267c24aa6aef89edf25dd7f814
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 8d9d6ef8758ceecc2093bbe99949104e7e14e5bc
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778691"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872653"
 ---
 # <a name="x-collection-classes"></a>X++ コレクション クラス
 
@@ -42,8 +42,10 @@ X++ 言語の構文には、配列とコンテナーという 2 種類の複合�
 
 **構造体**を除くすべてのコレクション クラスのコンストラクターは、**型**システム列挙型の要素である型パラメーターをとります。 コレクション インスタンスは、その型のアイテムのみを格納できます。 **Types::AnyType** 列挙要素は、**Set** オブジェクトなどのコレクション オブジェクトを作成するために使用できない特殊なケースです。 **null** 値は、**Set** オブジェクトに要素として格納できません。 また、**マップ** オブジェクトで **null** はキーになることはできません。 反復子または列挙子を使用して、コレクション オブジェクトを介して反復することができます。 反復子を取得する方法を示す一般的な例を次に示します。
 
-    new MapIterator(myMap)
-    myMap.getEnumerator()
+```xpp
+new MapIterator(myMap)
+myMap.getEnumerator()
+```
 
 **設定**オブジェクトで、任意の要素が追加または反復子が作成された後に削除される場合、反復子インスタンスは読み取りまたはコレクションによるステップで使用されることはなくなります。 
 

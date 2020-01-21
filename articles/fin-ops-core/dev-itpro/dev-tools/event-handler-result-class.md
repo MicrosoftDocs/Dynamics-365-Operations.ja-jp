@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed2678f01c3cdd5dfdceedd18e26cfdd070be539
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eada0bfe60dfebc3bf1e24d89fa76be475e12d12
+ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191686"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854051"
 ---
 # <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a>要求または応答シナリオの EventHandlerResult クラス
 
@@ -35,9 +35,9 @@ ms.locfileid: "2191686"
 
 プラットフォーム更新プログラム 5 では、1 つ以上のサブスクライバーが結果を提示している場合にロジックが失敗することを確認する追加の静的コンストラクターが、**EventHandlerResult** クラスにあります。 新しいコンストラクターの名前は、**newSingleResponse**。 このメソッドを使用して **EventHandlerResult** オブジェクトをインスタンス化したとき、2 番目のデリゲート ハンドラー メソッドが結果を提供しようとすると、このフレームワークはただちに例外をスローします。
 
-```
-    EventHandlerResult result = EventHandlerResult::newSingleResponse();
-    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+```xpp
+EventHandlerResult result = EventHandlerResult::newSingleResponse();
+this.validateWarehouseTypeDelegate(this.WarehouseType, result);
 ```
 
 ## <a name="ieventhandlerresultvalidator-interface"></a>IEventHandlerResultValidator インターフェイス
@@ -46,8 +46,8 @@ ms.locfileid: "2191686"
 
 たとえば、**newSingleResponse** 静的コンストラクターは単にインスタンス化を **newWithResultValidator** 静的コンストラクターに委任し、次のようになります。
 
-```
-    return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
+```xpp
+return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
 ```
 
 ## <a name="accept-and-reject-requestresponse-scenarios"></a>要求/応答シナリオを承認して拒否する
@@ -58,31 +58,31 @@ ms.locfileid: "2191686"
 
 **EventHandlerAcceptResult** クラスを使用するとき、デリゲート ハンドラー メソッドは **承認** メソッドの呼び出しによってのみ応答できます。 **EventHandlerRejectResult** クラスを使用するとき、**否認** メソッドのみを呼び出すことができます。
 
-```
-    [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
-    public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
-        InventLocationType _inventLocationType, 
-        EventHandlerAcceptResult _result)
+```xpp
+[SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
+public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
+    InventLocationType _inventLocationType, 
+    EventHandlerAcceptResult _result)
+{
+    switch (_inventLocationType)
     {
-        switch (_inventLocationType)
-        {
-            case InventLocationType::Standard: 
-            case InventLocationType::Quarantine: 
-            case InventLocationType::Transit: 
-                _result.accept(); 
-                break; 
-        }     
-    }
+        case InventLocationType::Standard: 
+        case InventLocationType::Quarantine: 
+        case InventLocationType::Transit: 
+            _result.accept(); 
+            break; 
+    }     
+}
 ```
 
 2 つの新しいクラスには、最大で 1 つのサブスクライバーが拒否または承認で応答するシナリオで使用するための **newSingleResponse** 静的コンストラクターも含まれています。 いずれかのサブスクライバーが応答したかどうかは **hasResult** メソッドをクエリすることによってまだ回答できます。承認/否認は、**EventHandlerAcceptResult** および **EventHandlerRejectResult** クラスの **isAccepted** または **isRejected** のいずれかのメソッドをそれぞれ呼び出すことによってクエリされます。
 
-```
-    boolean ret = false;
-    EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
-    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
-    if (result.hasResult())
-    {
-        ret = result.isAccepted();
-    }
+```xpp
+boolean ret = false;
+EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
+this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+if (result.hasResult())
+{
+    ret = result.isAccepted();
+}
 ```

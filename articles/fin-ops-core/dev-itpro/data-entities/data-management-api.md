@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
-ms.date: 05/09/2019
+ms.date: 12/04/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 42e69df1672b522679e74345410d25e5469fa827
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0b71a6bf173c4fd16b1f79f630224ccae75c7367
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249145"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888672"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API は、クラウド配置とオンプレミス配置の両方で使用できます。 オンプレミス配置では、現在この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) (バージョン 7.2)、ビルド 7.0.4709.41184 以降で利用可能です。
+このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 オンプレミス配置では、現在この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) (バージョン 7.2)、ビルド 7.0.4709.41184 以降で利用可能です。
 
 オンプレミス サポートが追加されましたが、API 名は変更されていません。 したがって、Microsoft は、クラウド配置とオンプレミス配置の両方に対して単一の API セットを維持することができます。
 
@@ -434,6 +434,17 @@ HTTP/1.1 200 OK
 
 > [!NOTE]
 > Blob ストレージ内のファイルはストレージに 7 日間残ります。 次に、そのファイルは自動的に削除されます。
+
+## <a name="getting-the-list-of-errors"></a>エラーの一覧を取得する
+GetExecutionErrors は、ジョブ実行のエラーのリストを取得するために使用できます。 API は、Execution ID をパラメーターとして取り、JSON リストでエラー メッセージのセットを返します。
+
+```
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
+BODY
+{"executionId":"<executionId>"}
+
+```
 
 ## <a name="import-and-export-processes"></a>プロセスのインポートとエクスポート
 

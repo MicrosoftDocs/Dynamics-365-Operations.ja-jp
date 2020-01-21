@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd12535768a989c78ae016931078e783398b7bf6
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 700990148bf677cebc60da55e6e0558422c6e1e0
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778689"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872647"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
@@ -38,19 +38,27 @@ ms.locfileid: "2778689"
 
 **Exception** 列挙値をスローするには、**throw** キーワードを使用します。 たとえば、次のステートメントは例外エラーをスローします。
 
-    throw Exception::error;
+```xpp
+throw Exception::error;
+```
 
 列挙値をスローするのではなく、**Global::error** メソッドの出力を**スロー**のオペランドとして使用することがベスト プラクティスです。
 
-    throw Global::error("The parameter value is invalid.");
+```xpp
+throw Global::error("The parameter value is invalid.");
+```
 
 **Global::error** メソッドは、対応するテキストにラベルを自動的に変換します。 この機能は、ローカライズ可能なコードを書くのに役立ちます。 
 
-    throw Global::error("@SYS98765");
+```xpp
+throw Global::error("@SYS98765");
+```
 
 **Global** クラスの静的メソッドは、**Global::** プレフィックスなしで呼び出すことができます。 たとえば、**Global::error** メソッドは、次のように呼び出すことができます。
 
-    error("My message.");
+```xpp
+error("My message.");
+```
 
 ## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、最後に retry ステートメント
 
@@ -65,22 +73,24 @@ ms.locfileid: "2778689"
 > [!NOTE] 
 > **再試行**ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、**試行**ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
 
-    try 
-    { 
-        // Code here.
-    }
-    catch (Exception::Numeric) 
-    { 
-        info("Caught a Numeric exception."); 
-    }
-    catch 
-    { 
-        info("Caught an exception."); 
-    }
-    finally
-    {
-        // Executed no matter how the try block exits.
-    }
+```xpp
+try 
+{ 
+    // Code here.
+}
+catch (Exception::Numeric) 
+{ 
+    info("Caught a Numeric exception."); 
+}
+catch 
+{ 
+    info("Caught an exception."); 
+}
+finally
+{
+    // Executed no matter how the try block exits.
+}
+```
 
 ### <a name="the-system-exception-handler"></a>システム例外ハンドラー
 
@@ -110,10 +120,12 @@ ms.locfileid: "2778689"
 
 次のコードは、**error** メソッドの宣言方法を示しています。
 
-    static Exception error
-        (SysInfoLogStr txt,
-        URL helpURL = '',
-        SysInfoAction _sysInfoAction = null)
+```xpp
+static Exception error
+    (SysInfoLogStr txt,
+    URL helpURL = '',
+    SysInfoAction _sysInfoAction = null)
+```
 
 戻り値の型は、**Exception::Error** 列挙値です。 **error** メソッドは例外をスローしません。 **throw** ステートメントで使用できる列挙値を提供するだけです。 **throw** ステートメントは例外をスローします。 **エラー**メソッドのパラメーターの説明を次に示します。 最初のパラメーターのみ必要です。
 
@@ -139,209 +151,219 @@ ms.locfileid: "2778689"
 
 次のコード例は、Infolog の例外を示しています。
 
-    // This example shows that a direct throw of Exception::Error does not
-    // display a message in the Infolog. This is why we recommend the 
-    // Global::error method. 
-    static void TryCatchThrowError1Job(Args _args)
+```xpp
+// This example shows that a direct throw of Exception::Error does not
+// display a message in the Infolog. This is why we recommend the 
+// Global::error method. 
+static void TryCatchThrowError1Job(Args _args)
+{
+/***
+    The 'throw' does not directly add a message to the Infolog.
+    The exception is caught.
+***/    
+    try
     {
-    /***
-      The 'throw' does not directly add a message to the Infolog.
-      The exception is caught.
-    ***/    
-        try
-        {
-            info("In the 'try' block. (j1)");
-            throw Exception::Error;
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-
-    /**********  Actual Infolog output
-    Message (03:43:45 pm)
-    In the 'try' block. (j1)
-    Caught 'Exception::Error'.
-    **********/
+        info("In the 'try' block. (j1)");
+        throw Exception::Error;
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+
+/**********  Actual Infolog output
+Message (03:43:45 pm)
+In the 'try' block. (j1)
+Caught 'Exception::Error'.
+**********/
+}
+```
 
 ### <a name="using-the-error-method-to-write-exception-information-to-the-infolog"></a>エラー メソッドを使用して例外情報を情報ログに記述
 
 次のコード例では、**error** メソッドを使用して例外情報を Infolog に書き出します。
 
-    // This example shows that the use of the Global::error method 
-    // is a reliable way to display exceptions in the Infolog. 
-    static void TryCatchGlobalError2Job(Args _args)
-    {
-        /***
-        The 'Global::error()' does directly add a message to the Infolog.
-        The exception is caught.
-        ***/
-        try
-        {
-            info("In the 'try' block. (j2)");
-            throw Global::error("Written to the Infolog.");
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-
-    /***  Infolog output
-    Message (03:51:44 pm)
-    In the 'try' block. (j2)
-    Written to the Infolog.
-    Caught 'Exception::Error'.
+```xpp
+// This example shows that the use of the Global::error method 
+// is a reliable way to display exceptions in the Infolog. 
+static void TryCatchGlobalError2Job(Args _args)
+{
+    /***
+    The 'Global::error()' does directly add a message to the Infolog.
+    The exception is caught.
     ***/
+    try
+    {
+        info("In the 'try' block. (j2)");
+        throw Global::error("Written to the Infolog.");
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+
+/***  Infolog output
+Message (03:51:44 pm)
+In the 'try' block. (j2)
+Written to the Infolog.
+Caught 'Exception::Error'.
+***/
+}
+```
 
 ### <a name="handling-a-clrerror"></a>CLRError の処理
 
 次のコード例は、**CLRError** 例外を処理します。
 
-    // This example shows that a CLRError exception is not displayed 
-    // in the Infolog unless you catch the exception and manually
-    // call the info method. The use of the CLRInterop::getLastException
-    // method is also demonstrated. 
-    static void TryCatchCauseCLRError3Job(Args _args)
+```xpp
+// This example shows that a CLRError exception is not displayed 
+// in the Infolog unless you catch the exception and manually
+// call the info method. The use of the CLRInterop::getLastException
+// method is also demonstrated. 
+static void TryCatchCauseCLRError3Job(Args _args)
+{
+    /***
+    The 'netString.Substring(-2)' causes a CLRError,
+    but it does not directly add a message to the Infolog.
+    The exception is caught.
+    ***/
+    System.String netString = "Net string.";
+    System.Exception netExcepn;
+    try
     {
-        /***
-        The 'netString.Substring(-2)' causes a CLRError,
-        but it does not directly add a message to the Infolog.
-        The exception is caught.
-        ***/
-        System.String netString = "Net string.";
-        System.Exception netExcepn;
-        try
-        {
-            info("In the 'try' block. (j3)");
-            netString.Substring(-2); // Causes CLR Exception.
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-        catch (Exception::CLRError)
-        {
-            info("Caught 'Exception::CLRError'.");
-            netExcepn = CLRInterop::getLastException();
-            info(netExcepn.ToString());
-        }
-
-    /**********  Actual Infolog output (truncated for display)
-    Message (03:55:10 pm)
-    In the 'try' block. (j3)
-    Caught 'Exception::CLRError'.
-    System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
-        System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
-    Parameter name: startIndex
-       at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
-       at System.String.Substring(Int32 startIndex)
-       at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
-       Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
-    **********/
+        info("In the 'try' block. (j3)");
+        netString.Substring(-2); // Causes CLR Exception.
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+    catch (Exception::CLRError)
+    {
+        info("Caught 'Exception::CLRError'.");
+        netExcepn = CLRInterop::getLastException();
+        info(netExcepn.ToString());
+    }
+
+/**********  Actual Infolog output (truncated for display)
+Message (03:55:10 pm)
+In the 'try' block. (j3)
+Caught 'Exception::CLRError'.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
+    System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+    at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+    at System.String.Substring(Int32 startIndex)
+    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
+    Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
+**********/
+}
+```
 
 ### <a name="using-a-retry-statement"></a>再試行ステートメントの使用
 
 次のコード例では、**retry** ステートメントを使用しています。
 
-    // This example shows how to use the retry statement. The print
-    // statements are included because retry causes earlier Infolog 
-    // messages to be erased. 
-    static void TryCatchRetry4Job(Args _args)
+```xpp
+// This example shows how to use the retry statement. The print
+// statements are included because retry causes earlier Infolog 
+// messages to be erased. 
+static void TryCatchRetry4Job(Args _args)
+{
+    /***
+    Demonstration of 'retry'. The Infolog output is partially erased
+    by 'retry', but the Print window is fully displayed.
+    ***/
+    Exception excepnEnum;
+    int nCounter = 0;
+    try
     {
-        /***
-        Demonstration of 'retry'. The Infolog output is partially erased
-        by 'retry', but the Print window is fully displayed.
-        ***/
-        Exception excepnEnum;
-        int nCounter = 0;
-        try
+        info("        .");
+        print("        .");
+        info("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
+        print("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
+        nCounter++;
+        if (nCounter >= 3) // Prevent infinite loop.
         {
-            info("        .");
-            print("        .");
-            info("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
-            print("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
-            nCounter++;
-            if (nCounter >= 3) // Prevent infinite loop.
-            {
-                info("---- Will now throw a warning, which is not caught.");
-                print("---- Will now throw a warning, which is not caught.");
-                throw Global::warning("This warning will not be caught. [" + int2str(nCounter) + "]");
-            }
-            else
-            {
-                info("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
-                print("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
-            }
-            excepnEnum = Global::error("This error message is written to the Infolog.");
-            throw excepnEnum;
+            info("---- Will now throw a warning, which is not caught.");
+            print("---- Will now throw a warning, which is not caught.");
+            throw Global::warning("This warning will not be caught. [" + int2str(nCounter) + "]");
         }
-        catch (Exception::Error)
+        else
         {
-            info("Caught 'Exception::Error'.");
-            print("Caught 'Exception::Error'.");
-            retry;
+            info("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
+            print("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
         }
-        info("End of job.");
-        print("End of job.");
-
-    /**********  Actual Infolog output
-    Message (04:33:56 pm)
-            .
-    In the 'try' block, [2]. (j4)
-    ---- Will now throw a warning, which is not caught.
-    This warning will not be caught. [3]
-    **********/
+        excepnEnum = Global::error("This error message is written to the Infolog.");
+        throw excepnEnum;
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+        print("Caught 'Exception::Error'.");
+        retry;
+    }
+    info("End of job.");
+    print("End of job.");
+
+/**********  Actual Infolog output
+Message (04:33:56 pm)
+            .
+In the 'try' block, [2]. (j4)
+---- Will now throw a warning, which is not caught.
+This warning will not be caught. [3]
+**********/
+}
+```
 
 ### <a name="throwing-an-exception-inside-a-transaction"></a>トランザクション内での例外のスロー
 
 次のコード例は、トランザクション ブロックに例外をスローします。
 
-    // This examples uses three levels of try nesting to illustrate
-    // where an exception is caught when the exception is thrown inside
-    // a ttsBegin-ttsCommit transaction block. 
-    static void TryCatchTransaction5Job(Args _args)
+```xpp
+// This examples uses three levels of try nesting to illustrate
+// where an exception is caught when the exception is thrown inside
+// a ttsBegin-ttsCommit transaction block. 
+static void TryCatchTransaction5Job(Args _args)
+{
+    /***
+    Shows an exception that is thrown inside a ttsBegin - ttsCommit
+    transaction block cannot be caught inside that block.
+    ***/
+    try
     {
-        /***
-        Shows an exception that is thrown inside a ttsBegin - ttsCommit
-        transaction block cannot be caught inside that block.
-        ***/
         try
         {
+            ttsbegin;
             try
             {
-                ttsbegin;
-                try
-                {
-                    throw error("Throwing exception inside transaction.");
-                }
-                catch (Exception::Error)
-                {
-                    info("Catch_1: Unexpected, caught in 'catch' inside the transaction block.");
-                }
-                ttscommit;
+                throw error("Throwing exception inside transaction.");
             }
             catch (Exception::Error)
             {
-                info("Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.");
+                info("Catch_1: Unexpected, caught in 'catch' inside the transaction block.");
             }
+            ttscommit;
         }
         catch (Exception::Error)
         {
-            info("Catch_3: Unexpected, caught in 'catch' far outside the transaction block.");
+            info("Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.");
         }
-        info("End of job.");
-
-    /**********  Actual Infolog output
-    Message (04:12:34 pm)
-    Throwing exception inside transaction.
-    Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.
-    End of job.
-    **********/
     }
+    catch (Exception::Error)
+    {
+        info("Catch_3: Unexpected, caught in 'catch' far outside the transaction block.");
+    }
+    info("End of job.");
+
+/**********  Actual Infolog output
+Message (04:12:34 pm)
+Throwing exception inside transaction.
+Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.
+End of job.
+**********/
+}
+```
 
 ### <a name="using-globalerror-with-a-sysinfoaction-parameter"></a>SysInfoAction パラメーターでの Global::error の使用
 
@@ -358,52 +380,56 @@ ms.locfileid: "2778689"
 
 #### <a name="part-1-calling-globalerror"></a>パート 1: Global::error を呼び出す
 
-    static void Job_SysInfoAction(Args _args)
+```xpp
+static void Job_SysInfoAction(Args _args)
+{
+    try
     {
-        try
-        {
-            throw Global::error
-                ("Click me to make the Print window display."
-                ,""
-                ,new SysInfoAction_PrintWindow_Demo()
-                );
-        }
-        catch
-        {
-            warning("Issuing a warning from the catch block.");
-        }
+        throw Global::error
+            ("Click me to make the Print window display."
+            ,""
+            ,new SysInfoAction_PrintWindow_Demo()
+            );
     }
+    catch
+    {
+        warning("Issuing a warning from the catch block.");
+    }
+}
+```
 
 #### <a name="part-2-the-sysinfoaction_printwindow_demo-class"></a>パート 2: SysInfoAction\_PrintWindow\_Demo クラス
 
-    public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
+```xpp
+public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
+{
+    str m_sGreeting; // In classDeclaration.
+    public str description()
     {
-        str m_sGreeting; // In classDeclaration.
-        public str description()
-        {
-            return "Starts the Print Window for demonstration.";
-        }
-        public void run()
-        {
-            print("This appears in the Print window.");
-            print(m_sGreeting);
-
-            /*********** Actual Infolog output
-            Message (03:19:28 pm)
-            Click me to make the Print window display.
-            Issuing a warning from the catch block.
-            ***************/
-        }
-        public container pack()
-        {
-            return ["Packed greeting."]; // Literal container.
-        }
-        public boolean unpack(container packedClass, Object object = null)
-        {
-            [m_sGreeting] = packedClass;
-            return true;
-        }
+        return "Starts the Print Window for demonstration.";
     }
+    public void run()
+    {
+        print("This appears in the Print window.");
+        print(m_sGreeting);
+
+        /*********** Actual Infolog output
+        Message (03:19:28 pm)
+        Click me to make the Print window display.
+        Issuing a warning from the catch block.
+            ***************/
+    }
+    public container pack()
+    {
+        return ["Packed greeting."]; // Literal container.
+    }
+    public boolean unpack(container packedClass, Object object = null)
+    {
+        [m_sGreeting] = packedClass;
+        return true;
+    }
+}
+```
 
 ## <a name="list-of-exceptions"></a>例外のリスト
 

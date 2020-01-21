@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 3359ce7303a85fe5f124ddee4fff354b3670e1a6
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: fe49f6f3a6d36a10d35d043cec53882004f1afdd
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578256"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935478"
 ---
 # <a name="deployment-options"></a>配置オプション
 
@@ -56,7 +56,7 @@ Finance and Operations アプリをクラウドまたはオンプレミスで展
 - サンドボックス環境を立ち上げます。
 - オペレーティング システム更新のスケジュール設定を含む、インフラストラクチャを管理します。
 
-これらの機能を配置および管理するための原価が増えると、配置コストおよび総保有コスト (TCO) の増大につながる可能性があります。 Finance and Operations アプリおよび更新プログラムを展開するためのツールは、Lifecycle Services を通じてパートナーおよび顧客に提供されます。 クラウド展開オプションとは異なり、Advanced Analytics サービスと Azure Machine Learning サービスはオンプレミス展開オプションに含まれていません。 
+これらの機能を配置および管理するための原価が増えると、配置コストおよび総保有コスト (TCO) の増大につながる可能性があります。 Finance and Operations アプリおよび更新プログラムを展開するためのツールは、Lifecycle Services を通じてパートナーおよび顧客に提供されます。 クラウド展開オプションとは異なり、Advanced Analytics と Azure Machine Learning はオンプレミス展開オプションには含まれていません。 
 
 オンプレミス オプションではまだ有効になっていない機能がいくつかあります。 これらの機能は、将来の更新で利用可能になります。 詳細については、[オンプレミス配置で実装されていない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md) を参照してください。
 

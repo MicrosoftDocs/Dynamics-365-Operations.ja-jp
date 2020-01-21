@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95b1b7ca4fa7c397f399baed2f74e8eafd4dcbaa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1eed88ae1ebe63f9536498a64dd2f5643c58356
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812491"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885937"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
 

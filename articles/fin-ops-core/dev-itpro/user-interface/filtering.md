@@ -3,7 +3,7 @@ title: フィルター処理のオプション
 description: このトピックでは、利用可能なフィルター処理オプションについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d5c5487d3b37aad1547ce7c5661ddfa2d561184
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: c52e3b97b0128b6b2ff3a647ceb1b4c2dcaab0e6
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578271"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931277"
 ---
 # <a name="filtering-options"></a>フィルター処理のオプション
 
@@ -68,6 +68,8 @@ Finance and Operations アプリでのフィルター処理と Dynamics AX 2012 
 | 「四角」と「円」の間              | “square..circle”                               |
 
 先行するテンプレートと一致しないクエリ構文は、**一致**演算子として解釈されます。
+
+列に格納されている空白値を検索する構文については AX2012 と同じであることを留意してください。 **一致する** 演算子や **と等しい** 演算子のいずれにおいても、 **""** と入力して現在の列に対して空白値の行を取得することができます。 たとえば、 **名前が ""** と入力すると、名前が空白のレコードを検索します。    
 
 ## <a name="filter-pane"></a>フィルター ウィンドウ
 フィルタ ウィンドウは、完全なページ一覧をフィルター処理する使いやすいインターフェイスを提供します。 フィルタ ウィンドウは、フィルター処理するデータがユーザーに表示されるように、画面の左側からスライド インし、ページのコンテンツを右側にプッシュするインライン ウィンドウです。 ユーザーは、ページの左側にあるシステム定義の **フィルターの表示** ボタンをクリックして、このフィルター メカニズムを開きます。 開いた後、フィルター ウィンドウは、ユーザーが新しいページに移動するまで、または**フィルターの非表示**ボタンを使用してユーザーがフィルター ウィンドウを閉じるまで、フィルター ウィンドウは表示されたままになります。

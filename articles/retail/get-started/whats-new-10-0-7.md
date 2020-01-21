@@ -1,9 +1,9 @@
 ---
 title: Dynamics 365 Retail バージョン 10.0.7 の機能をプレビューする
-description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
+description: このトピックでは、Dynamics 365 Retail の新機能と変更点について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 11/13/2019
+ms.date: 01/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: db79b4cdd19cf50e69abab523350004bde1f12fb
-ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
+ms.openlocfilehash: 4d1064634de8bff2ce0d32288911a950bac95a51
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2805511"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946179"
 ---
-# <a name="preview-features-in-dynamics-365-retail-version-1007"></a>Dynamics 365 Retail バージョン 10.0.7 の機能をプレビューする
+# <a name="whats-new-and-changed-in-dynamics-365-retail-version-1007"></a>Dynamics 365 Retail バージョン 10.0.7 の新機能と変更点
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Retail 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "2805511"
 
 ### <a name="platform-update-31"></a>プラットフォーム update 31
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 に関する詳細については、[プラットフォーム更新プログラム 31 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md) を参照してください。
+Microsoft Dynamics 365 Retail 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 の詳細については、[プラットフォーム更新プログラム 31 の新機能と変更点](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md)を参照してください。
 
 
 ### <a name="bug-fixes"></a>バグ修正 

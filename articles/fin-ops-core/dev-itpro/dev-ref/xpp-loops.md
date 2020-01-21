@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96a20bf3601ac17189e59e5634a8cb73707ea087
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: fd04b193a88304df9f08df7bd107d3a7d0782715
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872644"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
@@ -48,7 +48,7 @@ ms.locfileid: "2778686"
 
 次のコード例では、整数の配列内の項目が出力されます。
 
-```X++
+```xpp
 int integers[10];
 for (int i = 0; i < 10; i++)
 {
@@ -69,7 +69,7 @@ for (int i = 0; i < 10; i++)
 
 次のコード例は、コンテナーを走査してコンテナーの内容を出力する **while** ループを示します。
 
-```X++
+```xpp
 container cont = ["one", "two", "three"];
 int no = 0;
 while (no <= conlen(cont))
@@ -82,7 +82,7 @@ while (no <= conlen(cont))
 
 ## <a name="dowhile-loops"></a>do...while ループ
 
-**do...while*** ループの構文は次のとおりです。
+**do...while** の構文ループは次のとおりです。
 
 **do {** *ステートメント* **} while (** *式* **) ;**
 
@@ -92,7 +92,7 @@ while (no <= conlen(cont))
 
 次のコード例では、 `realNumber` より大きい10の最小累乗を検索します。
 
-```X++
+```xpp
 int FindPower(real realNumber)
 {
     int exponent = -1;
@@ -117,7 +117,7 @@ int FindPower(real realNumber)
 
 次のコード例では、 `Iarray[i] <= 0` の場合、ループ内の残りのステートメントは実行されず、 **if** ステートメントが再度試行される前に `i` が増分されます。
 
-```X++
+```xpp
 int Iarray[100];
 for (int i = 0; i < 100; i++)
 {
@@ -140,7 +140,7 @@ for (int i = 0; i < 100; i++)
 
 **while** ループにおける **break** ステートメントの例 ループ内で使用すると、ループは終了し、ループに続くステートメントから実行が継続します。 これは、 **do... while** と **for** ループでも機能します。 
 
-```X++
+```xpp
 var mainMenu = SysDictMenu::newMainMenu();
 var enum = mainMenu.getEnumerator();
 var found = false;

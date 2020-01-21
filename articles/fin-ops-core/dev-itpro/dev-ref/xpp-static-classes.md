@@ -3,7 +3,7 @@ title: X++ 静的クラス
 description: このトピックでは、 X++ の静的クラスについて説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 332af4c36cd3780252945a66cba03c1af9ea77d2
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 6920775d85ee2c2b0c421c28a1b4401a58d3ac4f
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778681"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872641"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 
@@ -40,7 +40,7 @@ ms.locfileid: "2778681"
 
 **静的**キーワード使用して宣言されるメソッドの例を次に示します。
 
-```X++
+```xpp
 public class SoftwareKey
 {
     static public boolean validateSoftwareKey(str _softwareKeyString)
@@ -53,7 +53,7 @@ public class SoftwareKey
 
 次の例では、クラスで静的メソッドを呼び出す前に **SoftwareKey** クラスのインスタンスを構築する必要はありません。 静的な **validateSoftwareKey** メソッドを呼び出すときは、構文はそのメソッドを含むクラスの名前で始まります。 コロンのペア (::) は、クラス名を静的メソッド名に接続するために使用します。
 
-```X++
+```xpp
 boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
 ```
 
@@ -65,7 +65,7 @@ boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
 
 静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。 静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。 静的コンストラクターには、次の構文があります。
 
-```X++
+```xpp
 static void TypeNew()
 ```
 
@@ -73,30 +73,30 @@ static void TypeNew()
 
 次のコード例は、静的コンストラクターを使用して単一のインスタンスを作成する方法を示しています。
 
-```X++
+```xpp
 public class Singleton
 {
-  private static Singleton instance;
+    private static Singleton instance;
 
-  private void new()
-  {
-  }
+    private void new()
+    {
+    }
 
-  static void TypeNew()
-  {
-    instance = new Singleton();
-  }
+    static void TypeNew()
+    {
+        instance = new Singleton();
+    }
 
-  public static Singleton Instance()
-  {
-    return Singleton::instance;
-  }
+    public static Singleton Instance()
+    {
+        return Singleton::instance;
+    }
 }
 ```
 
 単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。 次の例は、単一をインスタンス化する方法を示しています。
 
-```X++
+```xpp
 Singleton i = Singleton::Instance();
 ```
 
@@ -104,7 +104,7 @@ Singleton i = Singleton::Instance();
 
 *クラス メソッド*とも呼ばれる静的メソッドは、クラスに属しており、キーワード **static** を使用して作成されます。 静的メソッドを使用する前に、オブジェクトのインスタンスを作成する必要はありません。 静的メソッドは多くの場合、テーブルに格納されているデータを操作するために使用します。 メンバー変数は静的メソッドで使用できません。 静的メソッドを呼び出すには、次の構文を使用します。
 
-```X++
+```xpp
 ClassName::methodName();
 ```
 

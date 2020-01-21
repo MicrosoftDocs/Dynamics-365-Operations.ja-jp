@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf13d37028b669f6dd61779ef8970429ad7f3f9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f4acea8ab36db2b64ffeb712762b8878b3a71b4f
+ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811716"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854050"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C# の統合言語クエリ (LINQ) プロバイダー
 
@@ -42,10 +42,10 @@ LINQ プロバイダーでは、.NET マネージド言語を使用して業務�
 ## <a name="two-syntactical-mechanisms-for-accessing-linq"></a>LINQ にアクセスするための 2 つの構文メカニズム
 次のテーブルに示すように、LINQ を使用する構文的アプローチは 2 つあります。
 
-|                                                                    | **X++**                                                                                   | **C\# および Visual Basic**           |
-|-----------------|-----------------------|------------------------------------|
-| **標準メソッドの呼び出し構文による LINQ。**                           | 実用的ではありません。 ジェネリックの言語サポートは、LINQ にとって重要で、X++ ではサポートされていません。 | 必須のラムダ構文が使用可能です。 |
-| **コンパイラで認識される特殊な構文による LINQ。** | 使用不可。                                                                            | 簡単に使用できます。          |
+|                                                                | X++              | C\# と Visual Basic      |
+|----------------------------------------------------------------|------------------|---------------------------|
+| 標準メソッドの呼び出し構文による LINQ。                           | 実用的ではありません。 ジェネリックの言語サポートは、LINQ にとって重要で、X++ ではサポートされていません。 | 必須のラムダ構文が使用可能です。 |
+| コンパイラで認識される特殊な構文による LINQ。 | 使用不可。   | 簡単に使用できます。 |
 
 C\# (または Visual Basic) の LINQ プロバイダーにアクセスするには、2 つの構文メカニズムがあります。
 
@@ -55,55 +55,64 @@ C\# (または Visual Basic) の LINQ プロバイダーにアクセスするに
 このトピックでは、簡単な特殊構文から始めて、LINQ の各構文メカニズムを検討します。
 
 ## <a name="linq-by-specialized-syntax-in-c"></a>C\# の特殊な構文による LINQ
-一部の .NET 言語は、書きやすい代替方法として LINQ 向けの特殊な構文を理解します。 C\# はそのような言語の 1 つです。 ***var に関する注記:*** C\# で LINQ を使用するには、変数を宣言するために使用される\#キーワード **var** を理解する必要があります。 var キーワードは、変数に割り当てられているものによって変数のデータ型を把握するようにコンパイラに指示します。 この機能は、X++ でも利用可能になりました。 タイプはソース コード内に暗黙的に格納されており、コンパイルが完了した後にタイプは解決され、変更されません。
+一部の .NET 言語は、書きやすい代替方法として LINQ 向けの特殊な構文を理解します。 C\# はそのような言語の 1 つです。 
+
+C\# で LINQ を使用するには、変数の宣言に使われる、C\# のキーワード **var**を理解する必要があります。 var キーワードは、変数に割り当てられているものによって変数のデータ型を把握するようにコンパイラに指示します。 この機能は、X++ でも利用可能になりました。 タイプはソース コード内に暗黙的に格納されており、コンパイルが完了した後にタイプは解決され、変更されません。
 
 ### <a name="comparing-x-to-c-linq"></a>X++ to C\# LINQ の比較
 
 X++ 言語は、便利で使いやすい `while select` ステートメントをサポートしています。 これは、X++ `while select` 構文と特殊な C\#LINQ の構文を比較しないようにするためです。 最初に、これが X++ のサンプルです。
 
-    CustTable ct;     // X++, traditional while select.
-    CustTrans trans;
+```xpp
+CustTable ct;     // X++, traditional while select.
+CustTrans trans;
 
-    while select * from ct
-        where ct.AccountNum >= ‘4000’
-        join RecId from trans
-        where trans.RecId == ct.RecId
-        order by ct.AccountNum desc
-    {
-        print ct.AccountNum;
-    }
+while select * from ct
+    where ct.AccountNum >= ‘4000’
+    join RecId from trans
+    where trans.RecId == ct.RecId
+    order by ct.AccountNum desc
+{
+    print ct.AccountNum;
+}
+```
 
 次は、特殊な LINQ 構文と同等の C\# のクエリです。
 
-    // Get access to the data provider:       // C#, with specialized LINQ syntax.
-    var provider = new QueryProvider(null);
+```csharp
+// C#, with specialized LINQ syntax.
+// Get access to the data provider:       
+var provider = new QueryProvider(null);
 
-    var customers = new QueryCollection(provider);
-    var customerTransactions = new QueryCollection(provider);
+var customers = new QueryCollection(provider);
+var customerTransactions = new QueryCollection(provider);
 
-    var query = from ct in customers
-                from trans in customerTransactions
-                where ct.AccountNum >= “4000”
-                where trans.AccountNum == ct.AccountNum
-                orderby ct.AccountNum descending
-                select ct;
+var query = from ct in customers
+            from trans in customerTransactions
+            where ct.AccountNum >= “4000”
+            where trans.AccountNum == ct.AccountNum
+            orderby ct.AccountNum descending
+            select ct;
 
-    foreach (var ct in query)
-    {
-        System.Console.WriteLine(ct.AccountNum);
-    }
+foreach (var ct in query)
+{
+    System.Console.WriteLine(ct.AccountNum);
+}
+```
 
-## <a name="linq-query-in-c-by-method-syntax-using-the-lambda-operator-gt"></a>ラムダ演算子 =&gt; を使用しているメソッドの構文による C\# の LINQ クエリ
-次は、C\# での LINQ の別の用途です。今回以外では、LINQ API を呼び出すためにより多くの標準構文が使用されます。 このアプローチでは、ラムダ演算子 **=&gt;** も使用されます。 次の C\# クエリは、前述の C\# クエリと機能的に同等です。
+## <a name="linq-query-in-c-by-method-syntax-using-the-lambda-operator-"></a>メソッド構文による C\# の LINQ クエリでは、ラムダ演算子 > を使用します
+次は、C\# での LINQ の別の用途です。今回以外では、LINQ API を呼び出すためにより多くの標準構文が使用されます。 この方法では、ラムダ演算子 `>` を使用します。 次の C\# クエリは、前述の C\# クエリと機能的に同等です。
 
-    var query = customers
-        .Where(c => string.Compare(c.AccountNum, "4000") >= 0)
-        .Join(customers, 
-              primary => primary.AccountNum,
-              foreign => foreign.AccountNum,
-              (primary, foreign) => new { P = primary, F = foreign })
-        .OrderBy(primaryAndForeign => primaryAndForeign.P.AccountNum)
-        .Select(primaryAndForeign => primaryAndForeign.P);
+```csharp
+var query = customers
+    .Where(c => string.Compare(c.AccountNum, "4000") >= 0)
+    .Join(customers, 
+        primary => primary.AccountNum,
+        foreign => foreign.AccountNum,
+        (primary, foreign) => new { P = primary, F = foreign })
+    .OrderBy(primaryAndForeign => primaryAndForeign.P.AccountNum)
+    .Select(primaryAndForeign => primaryAndForeign.P);
+```
 
 X++ で使用されている `while select` 構文と C\# の特殊な LINQ 構文 (Visual Basic には特に優れた LINQ 構文があります) の間に良好な一致があります。 特殊な LINQ 構文は実際、結合を表現する際に有効ですが、C\# コンパイラに組み込まれた特殊な構文は Finance and Operations アプリケーションが提供する拡張機能を処理しません。
 
@@ -111,12 +120,15 @@ X++ で使用されている `while select` 構文と C\# の特殊な LINQ 構�
 
 LINQ プロバイダーへの拡張機能で拡張できない特殊な LINQ 構文の制限。 対照的に、メソッド呼び出しとラムダ演算子の標準構文は必要に応じて拡張できます。 たとえば、LINQ フレームワークは、C\# で LINQ の特別な構文で表されない会社間のヒントに対するメソッドを提供します。 ただし、クエリを作成する能力のため、この制限は大きな問題ではありません。 難解な LINQ メソッドへの呼び出しを特殊な LINQ 構文に追加できます。 次の C\# コードは、**crosscompany** メソッドに対してこれが実行されていることを示しています。
 
-    var query = (from ct in customers
-                from trans in customerTransactions
-                where ct.AccountNum >= “4000”
-                where trans.AccountNum == ct.AccountNum
-                orderby ct.AccountNum descending
-                select ct).crosscompany();      // C#, mixing LINQ syntax mechanisms.
+```csharp
+// C#, mixing LINQ syntax mechanisms.
+var query = (from ct in customers
+            from trans in customerTransactions
+            where ct.AccountNum >= “4000”
+            where trans.AccountNum == ct.AccountNum
+            orderby ct.AccountNum descending
+            select ct).crosscompany();      
+```
 
 ## <a name="linq-query-execution"></a>LINQ クエリの実行
 LINQ クエリ用に生成されたコードは、実行時にツリーを構築します。 クエリの結果が要求されるときは、このツリーは、ツリーを解釈するバックエンドに渡され、クエリで表された形でデータを提供します。 X++ コンパイラは、クエリを表すツリーも作成しますが、X++ コンパイラには、データベース バックエンドの機能についての詳細な知識があります。 これには、以下のサブセクションで説明する重要な意味があります。
@@ -125,10 +137,12 @@ LINQ クエリ用に生成されたコードは、実行時にツリーを構築
 
 C\# コンパイラは多くの場合、互換性のない LINQ クエリをバックエンドで処理できないため、実行時に発生するエラーを予測および診断できません。 たとえば、次の C\# コード ブロックで、特殊な LINQ 構文が C\# コンパイラに基づいて有効化されます。 まだ実行時にエラーが発生します。
 
-    var customerQuery = from c in db.Customers    // C#
-                        where (from o in db.Orders
-                        where o.ShipCountry == “Germany”
-                        select o.CustomerID).Contains(c.CustomerID);
+```csharp
+var customerQuery = from c in db.Customers    
+                    where (from o in db.Orders
+                    where o.ShipCountry == “Germany”
+                    select o.CustomerID).Contains(c.CustomerID);
+```
 
 このクエリは現在のデータ レイヤーでは処理できず、コンパイル時にエラーが診断されない間に、実行時にエラーが発生します。
 
@@ -140,30 +154,31 @@ C\# コンパイラは多くの場合、互換性のない LINQ クエリをバ�
 
 LINQ によって提供されるモデルでは、クエリをサブクエリで構成できます。 X++ 言語は、この機能を正しく提供することはできません。 これを理解するには、次の C\# LINQ コードを考えてみてください。 フラグは、データの結果の順序を制御するメソッドに渡されます。
 
-    private IEnumerable RichCustomers(bool orderByName)    // C#
-    {
-        // Create a query for the rich customers. Note carefully
-        // that no data is fetched when this is executed.
-        var q = from c in customers where c.AmountMst > 1000000.0m select c;
+```csharp
+private IEnumerable RichCustomers(bool orderByName) 
+{
+    // Create a query for the rich customers. Note carefully
+    // that no data is fetched when this is executed.
+    var q = from c in customers where c.AmountMst > 1000000.0m select c;
 
-        if (orderByName)
-        {
-            // Add the order by clause to the existing query.
-            // Still no data is yet fetched.
-            return q.OrderBy(c => c.AccountNum);
-        }
-        else
-        {
-            return q;
-        }
+    if (orderByName)
+    {
+        // Add the order by clause to the existing query.
+        // Still no data is yet fetched.
+        return q.OrderBy(c => c.AccountNum);
     }
+    else
+    {
+        return q;
+    }
+}
+```
 
 ### <a name="set-based-operations-with-linq"></a>LINQ を使ったセットに基づく操作
 
 LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レコードの更新、削除、挿入のモデルはセット ベース操作の式には役に立ちません。 現在、セットベース操作に変換される LINQ モデルに追加する拡張機能に取り組んできます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [X++ と X++ コンパイラの変更](programming-language-support.md)
 

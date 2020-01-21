@@ -1,7 +1,7 @@
 ---
 title: SQL インデックスの最適化を処理するバッチ ジョブ
 description: このトピックでは、分割されたインデックスを再構築するために使用するシステム バッチ ジョブを説明します。
-author: sericks
+author: Peakerbl
 manager: AnnBe
 ms.date: 02/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ganas
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform update 22
-ms.openlocfilehash: 4e5d9246ea6684b3210395b4d56d74c1f41f0495
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be84c09efd547ae8beb341f8289829438c74b2b2
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191800"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945404"
 ---
 # <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
 
@@ -33,7 +33,7 @@ ms.locfileid: "2191800"
 
 **システム ジョブ パラメーターを調整** ページでパラメータの値を変更し、ジョブを実行できる期間とターゲットとできるインデックスの数を最大値で指定できます。 DTU しきい値は、システムがビジー状態のときにこのジョブが開始するのを防ぎます。 既定の DTU しきい値が 50 の場合、つまりインデックスがジョブの再構築をスケジュールされているときにシステムが 50% 以上の DTU を使用している場合、ジョブはインデックスを再構築しないで早期に終了します。
  
-![システム ジョブ調整パラメータ ページのスクリーンショット](media/SystemJobParameters.PNG "システム ジョブ調整パラメータ ページのスクリーンショット")
+![システム ジョブ パラメータの調整ページのスクリーンショット](media/SystemJobParameters.PNG "システム ジョブ パラメータの調整ページのスクリーンショット")
  
 このジョブを実行すると、以下に影響を与える可能性があります。
 -   SQL リソースの処理にかかる時間。

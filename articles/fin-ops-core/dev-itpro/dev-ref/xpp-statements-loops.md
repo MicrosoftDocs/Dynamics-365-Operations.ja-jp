@@ -1,9 +1,9 @@
 ---
-title: X++ ステートメント
+title: コメント、使用、および印刷ステートメント
 description: このトピックでは、X++のステートメントについて説明します。
 author: robinarh
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 390e9218cc4522972751fcf5094df9e1fa3fa5e6
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 5bc89acd1efa43a06b63c0db62a314f60d0144cf
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778684"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872643"
 ---
-# <a name="x-statements"></a>X++ ステートメント
+# <a name="comments-using-and-print-statements"></a>コメント、使用、および印刷ステートメント
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "2778684"
 
 コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには **//** スタイルまたは **/\*** スタイルのいずれかを使用できます。 ただし、ベスト プラクティスは、コメント、および複数行コメントの**//** スタイルを使用するためのものです。
 
-```X++
-    // This is an example of a comment.
-    /* Here is another example of a comment. */
+```xpp
+// This is an example of a comment.
+/* Here is another example of a comment. */
 ```
 
 ## <a name="print-statements"></a>print ステートメント
@@ -53,8 +53,7 @@ ms.locfileid: "2778684"
 
 次のコード例は、任意の日付型を文字列に自動的に変換する Print ステートメントを示します。 呼び出し時に、 **info** の前に **Global::** を付ける必要はありません。
 
-```X++
-
+```xpp
 str hello = "Hello";
 int fortytwo = 42;
 utcDateTime now = DateTimeUtil::utcNow();
@@ -73,7 +72,6 @@ info(int2Str(fortytwo));
 // Output to Infolog window:
 // Hello
 // 42
-
 ```
 
 ## <a name="todo-comments"></a>TODO コメント
@@ -93,7 +91,7 @@ info(int2Str(fortytwo));
 
 次の例は、 **TODO** コメントを示します。
 
-```X++
+```xpp
 // An example of using TODO in the // style of comment.
 public boolean isLate()
 {
@@ -118,7 +116,7 @@ public boolean isLate()
 
 次の例では、**using** 句、名前空間エイリアス、およびクラス エイリアスを示しています。
 
-```X++
+```xpp
 using System;
 using IONS=System.IO; // Namespace alias
 using Alist=System.Collections.ArrayList; // Class alias
@@ -142,7 +140,7 @@ class UsingClass
 
 この構文では、*ステートメント*はステートメントのブロックとすることができ、*式*は **IDisposable** を実装するオブジェクトを宣言してインスタンス化します。 次の例では､**StreamReader** オブジェクトを作成して使用します。
 
-```X++
+```xpp
 static void AnotherMethod()
 {
     str textFromFile;

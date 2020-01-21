@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) の新機能
 description: このトピックでは、LCS リリース ノートのブログ投稿へのリンクを提供します。
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a590e4eda0c0cdeba244cab8c88a5fe18dac7cff
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1ec1e00b3516f20747345a19f23aef9a65daef2f
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812121"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872315"
 ---
 # <a name="whats-new-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能
 
@@ -31,6 +31,9 @@ ms.locfileid: "2812121"
 Microsoft Dynamics Lifecycle Services (LCS) は、事前販売からの実装および工程にいたるまでプロジェクトを管理するのに、顧客とそのパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 プロジェクトの局面および携わる業界に基づいて、このサイトはプロジェクトの管理を支援するチェックリストとツールを提供します。 このサイトは、ダッシュボードを提供し、単一の場所で最新のプロジェクト情報を取得できます。 
 
 このリンクを使って [Lifecycle Services の Web サイト](https://lcs.dynamics.com/) を開きます。 詳細については、[Lifecycle Services (LCS) ユーザー ガイド](lcs-user-guide.md)を参照してください。
+
+> [!IMPORTANT]
+> このトピックは今後、現在のリリース計画へのリンクで更新されません。 Lifecycle Services の最新機能については、[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158)を参照してください。
 
 次のリストは、過去 2 年間に発行された LCS の各リリース ノートのブログ投稿へのリンクを提供します。
 

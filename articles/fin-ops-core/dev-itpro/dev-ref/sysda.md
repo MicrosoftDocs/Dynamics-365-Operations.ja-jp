@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b31c5196cfd1610a9bc2f3d50db1b7496964163d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 37da0a13176e73b09e4b62c4e4fce9d37e7ca2d3
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191608"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872655"
 ---
 # <a name="access-data-by-using-the-sysda-classes"></a>SysDa クラスを使用したデータへのアクセス
 
@@ -51,7 +51,7 @@ SysDa API には、カスタムクエリを作成するための広範な API �
 
 次の例では**intField**\<= **5** のTestTableのすべての行を検索します。
 
-```X++
+```xpp
 // t is the table buffer that will hold the result.
 TestTable t;
 
@@ -99,7 +99,7 @@ while (ss.next(so))
 
 次の例では、**intField** = **50** のすべての行について、**stringField** を **"fifty"** に更新します。
 
-```X++
+```xpp
 TestTable t;
 
 // Create an update query to find rows where intField = 50.
@@ -142,7 +142,7 @@ info("Updated value is: " + t1.stringField);
 
 次の例では、行を **intField** = **40** と**stringField** = **"en-us"** を TestTable に挿入します。
 
-```X++
+```xpp
 TestTable t;
 
 // Specify the fields in the new row.
@@ -200,7 +200,7 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 次の例では、**intField** が偶数である行を削除します。
 
-```X++
+```xpp
 TestTable t;
 
 // Build the query that specifies which rows to delete.

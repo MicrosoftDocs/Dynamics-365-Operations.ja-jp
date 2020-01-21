@@ -3,7 +3,7 @@ title: 新しい環境の配置
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: manado
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 93fa4352f83a94c12d30c470581ad925189dfb87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e2bfcc70c3b78f3e941ee6a698f68b45ec126e0a
+ms.sourcegitcommit: db4eae8c42cbc4df80cc0c902428a1f64525c762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191590"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885553"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
@@ -40,6 +40,7 @@ ms.locfileid: "2191590"
 8. この環境に関連する**通知**を受け取る **2 つのユーザー電子メール アドレス**を指定します。 これらのユーザーは、既にプロジェクト チームに所属しているユーザー (ISV またはパートナーなど) に追加されます。
 9. 製品で**システム管理者**として設定される**ユーザー**の**電子メール アドレス**を選択します。
 10. 構成を検証した後、**送信** をクリックして配置をトリガーします。
+11. Retail チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
 
 環境配置はすぐに開始され、完了までに **1 ～ 2 時間**かかることがあります。 
 
@@ -55,3 +56,6 @@ ms.locfileid: "2191590"
 
 > [!NOTE]
 > 環境を再配置するには、環境を削除し、上記の手順を使用してもう一度を配置する必要があります。 
+
+> [!IMPORTANT]
+> クラウドで Retail チャネルの機能を利用している顧客に対しては、業務の継続的なサポートを徹底するにあたり、2020 年 1月 31日 までに [Retail Cloud Scale Unit を初期化する](initialize-retail-channels.md) ことをお願いしています。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。

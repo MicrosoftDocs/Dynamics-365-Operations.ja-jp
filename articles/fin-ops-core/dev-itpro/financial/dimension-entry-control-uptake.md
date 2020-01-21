@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6ae74557ea5bf45de68b9bc781f826fa6081247
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b80666036aaebecab01f580403427c15bf6395b4
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812109"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888669"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -192,7 +192,7 @@ DimensionEntryControlHeader.updateValues(
 DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 
 > [!NOTE] 
-updateValues メソッド 呼び出しの最初の パラメーター が NoYesUnchangedUnchanged::の場合は、allowEdit の新しい呼び出しは必要ありません。 同様に、updateValues メソッドの 2 番目のパラメーターの呼び出しが false の場合、loadAttributeValueSet への呼び出しは必要ありません。
+> updateValues メソッド 呼び出しの最初の パラメーター が NoYesUnchangedUnchanged::の場合は、allowEdit の新しい呼び出しは必要ありません。 同様に、updateValues メソッドの 2 番目のパラメーターの呼び出しが false の場合、loadAttributeValueSet への呼び出しは必要ありません。
 
 ## <a name="methods-to-potentially-remove"></a>削除する可能性のあるメソッド
 分析コード エントリ コントロールを保持するデータソースまたは tabpage/グループの残りのメソッドは、カスタム ロジックがない場合、削除することができます。 次のテーブルは、削除する必要があるカスタマイズのないメソッドの例を示しています。

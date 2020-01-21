@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 11c171ef25e086a1b1b8b6fe34b8fcfaafa4d9ab
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c5de3138152c66a96903a7f1cf564e44dd3e6a0b
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811693"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914947"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.3.1 で、2019 年 9 月にリリースされました。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2019 年 12 月にリリースされたバージョン 2.4.0 です。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
@@ -39,11 +39,17 @@ ms.locfileid: "2811693"
 | 2.1.0               | このバージョンでは、**準備**および**更新**が 2 つの個別のステップである 2 段階サービスが可能になります。 |
 | 2.1.1               | このバージョンはダウンロードが失敗したときに発生する LCS 管理ボタンが利用できない問題を修正します。 その他の変更には、Azure Storage との通信を改善し TLS 1.2 を有効にする Azure Storage ライブラリの更新を含みます。  |
 | 2.1.2               | このバージョンには、更新されたAzure依存関係が含まれており、ダウンロードの安定性を向上し、ファイルがダウンロードされた場合に正しく評価するロジックを使用 これにより、ファイルが完全にダウンロードされるという問題が修正されますが、論理上数バイトが不足していると見なされ、ダウンロードに失敗します。  |
-| 2.2.0               | このバージョンは、クリーンアップ中にロックされた dll を修正し、Office 365 にも使用される ADFS をサポートするための前提条件を有効にします。 |
+| 2.2.0               | このバージョンでは、クリーンアップ中にロックされた dll を修正し、Office 365 でも使用される Active Directory フェデレーション サービス (ADFS) をサポートするための前提条件を有効にします。 |
 | 2.3.0               | このバージョンに、配置前スクリプトと配置後スクリプトのサポートが追加されます。  |
-| 2.3.1               | このバージョンでは、一部の環境でのクリーンアップ中に発生する可能性があるオーケストレーション サービスのクラッシュを修正します。<br><br>プラットフォーム更新プログラム 29 以前のバージョン 10.0.5 を配置するには、FinancialReportingDeployer.exe.config の自動更新に対する配置前スクリプトの使用が必要になります。それは [オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework) で検索できます。 |
+| 2.3.1               | このバージョンでは、一部の環境でのクリーンアップ中に発生する可能性があるオーケストレーション サービスのクラッシュを修正します。<br><br>プラットフォーム更新プログラム 29 以前のバージョン 10.0.5 を展開するには、FinancialReportingDeployer.exe.config. の自動更新に事前配置スクリプトを使用する必要があります。詳細については、[オンプレミス展開のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework)を参照してください。 |
+| 2.4.0               | このバージョンでは、展開の問題が修正され、ローカル エージェントのランタイムがアップグレードされます。 |
 
-## <a name="whats-new-in-local-agent-230"></a>Local agent 2.3.0 の新機能
+## <a name="whats-new-in-local-agent-240"></a>ローカル エージェント 2.4.0 の新機能
+
+- ローカル エージェント 2.4.0 では、Lifecycle Services (LCS) から最新の変更を取り込むために .Net Framework 4.8 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
+- このリリースでは、AXSFType の展開時に展開が終了した AOSSetupHybridCloud.exe の 255/-1 終了エラーも修正されます。
+
+## <a name="whats-new-in-local-agent-230"></a>ローカル エージェント 2.3.0 の新機能
 
 - ローカル エージェント 2.3.0 は、カスタム実行を有効にします [配置前および配置後のスクリプト](../../dev-itpro/lifecycle-services/pre-post-scripts.md)。
 - これは、古いプラットフォーム更新プログラムの展開に関して 2.2.0 で採用された問題を修正します。
@@ -52,10 +58,10 @@ ms.locfileid: "2811693"
 > [!IMPORTANT]
 > このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md) を参照してください。 
 
-## <a name="whats-new-in-local-agent-210"></a>Local agent 2.1.0 の新機能
+## <a name="whats-new-in-local-agent-210"></a>ローカル エージェント 2.1.0 の新機能
 - ローカル エージェント 2.1.0 では、**環境の準備**および**環境の更新**が 2 つの異なる手順および明示的アクションである 2 フェーズのサービスを有効にします。 事前準備を行い、ユーザーが準備中に環境を使用できるようにし、実際の更新環境アクションが発生する際にダウンタイムを通知することで、オンプレミス環境に更新プログラムを適用する場合に顧客が取る必要があるダウンタイムの合計が削減されます。
 
-## <a name="whats-new-in-local-agent-200"></a>Local agent 2.0.0 の新機能
+## <a name="whats-new-in-local-agent-200"></a>ローカル エージェント 2.0.0 の新機能
 - ローカル エージェント 2.0.0 はプラットフォーム更新プログラム 12 を展開できます。
 - プラットフォーム更新 12 の配置の初回成功まで、[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)は有効になります。
 - プラットフォーム更新 12 の配置の初回成功時は、[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)は無効になります。 配置が成功した後、定期的な更新エクスペリエンスを使用して環境を更新することができます。

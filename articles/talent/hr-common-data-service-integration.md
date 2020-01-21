@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: 1b98a498fa0c026d16fa1317b2a463057c8f8c68
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: cc358679e74a1869753e372a2fa216220ae8777a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832804"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898655"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service 統合のコンフィギュレーション
-
-[!include [banner](includes/banner.md)]
 
 Common Data Service と Microsoft Dynamics 365 Talent のインスタンス間の統合を、有効または無効にすることができます。 また、同期の詳細を表示したり、追跡データをクリアしたり、エンティティを再同期して、2 つの環境間のデータ問題をトラブルシューティングすることもできます。
 

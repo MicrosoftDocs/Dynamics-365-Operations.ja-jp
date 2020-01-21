@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e00b78793a76e469058b8df5713228e8fa60c0d4
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 06e69fd6d25f805ab5ba8a56f1884db8ca05ffef
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832687"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897086"
 ---
 # <a name="integration-from-dynamics-365-talent-to-dynamics-365-finance"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Talent および Dynamics 365 Finance から統合できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator) と共に使用可能な Talent から Finance へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance へのデータ フロー。 テンプレートでは、Finance から Talent にデータを戻す機能は提供されません。 
 

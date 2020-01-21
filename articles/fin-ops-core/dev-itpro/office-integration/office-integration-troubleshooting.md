@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14651bbaaf761afdbd17ddb8a89cb6ae6845b119
-ms.sourcegitcommit: 9267608347c9781fb4ba70f1384ca24da69c716d
+ms.openlocfilehash: 658d04451f1adfdc72e164bd7eee70cb26a38d94
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2810017"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934923"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -130,6 +130,10 @@ Office ストアへの戻しが必要な場合、標準値は次のとおりで�
 ### <a name="how-do-i-make-an-entity-available-in-the-excel-add-in-andor-as-an-open-in-excel-option"></a>エンティティを Excel アドインまたは Excel で開くオプションとして使用できるようにするにはどうすればよいですか?
 
 エンティティが "IsPublic = Yes" としてマークされており、固有の PublicEntityName と PublicCollectionName の値がある場合は、ODataサービス経由で使用できるようになります。 (できればGoogle Chromeで) 環境の $metadata フィード を調べることによって、同じ PublicEntityName と PublicCollectionName の値を持つ既存のエンティティがないことを確認します: https://*SomeFullEnvironmentURL*.dynamics.com/data/$metadata
+
+### <a name="why-are-date-and-time-values-in-utc-in-the-excel-add-in"></a>Excel アドインで日付と時刻の値がUTCに設定されるのはなぜですか？
+
+Excelアドイン、データ管理 フレームワーク、 Power BI レポートはすべて、データベース レベル で データと直接やり取りするように設計されています。 ユーザーのタイムゾーンに合わせて日付と時刻のデータを調整するクライアントが存在しないため、日付と時刻の値はすべて UTC となります。
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 

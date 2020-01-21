@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: d71144ce58f376cc850a0e09168277ac957e3519
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a131a7bf08b4e34ca6d72606c910769a28e33f7a
+ms.sourcegitcommit: db4eae8c42cbc4df80cc0c902428a1f64525c762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183465"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885554"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
@@ -29,6 +29,9 @@ ms.locfileid: "2183465"
 アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Retail Cloud Scale Unit (RCSU) を初期化する必要があります。 初期化は Retail Cloud Scale Unit を展開します。
 
 このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
+
+> [!IMPORTANT]
+> クラウド環境で Retail チャネルの機能を利用しているお客様の場合は、業務の継続的なサポートを徹底するにあたり、2020年 1月 31日 までに Retail チャネルを更新して Retail Cloud Scale Unit を ご利用頂くよう推奨します。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 

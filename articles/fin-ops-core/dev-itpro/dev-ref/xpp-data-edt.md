@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d283dd81e6d08f6c3e8bc868fcdcd433ea341a
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: aa864fbdcda3d06dc12fd21ccbcb9bc9bae7acdb
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778688"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872652"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 
@@ -49,12 +49,14 @@ ms.locfileid: "2778688"
 
 ## <a name="edt-example"></a>EDT 例
 
-    public void EdtMethod()
-    {
-        // Example of declaring EDT variables where
-        // a UserGroupID (integer) variable is declared and initialized to 1.
-        UserGroupID groupID = 1;
+```xpp
+public void EdtMethod()
+{
+    // Example of declaring EDT variables where
+    // a UserGroupID (integer) variable is declared and initialized to 1.
+    UserGroupID groupID = 1;
 
-        // An Amount (real) variable is declared.
-        Amount currency;
-    }
+    // An Amount (real) variable is declared.
+    Amount currency;
+}
+```

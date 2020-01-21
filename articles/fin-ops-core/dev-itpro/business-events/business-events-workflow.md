@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/17/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,15 +15,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 783383a8251caff2c1f5e9585481cbad56441a1d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7e8d4401316b8ffed91067bd27871c135326604b
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769750"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935376"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。   
 
@@ -81,6 +82,8 @@ ms.locfileid: "2769750"
 - 作業項目に完了す準備ができている場合は、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
 - 回答が提供された後で **WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
 
+作業項目の外部完了を可能にするには、作業項目のアクション マネージャー クラスは、IValidateWorkflowWorkItemAction インターフェイスを実装する必要があります。 標準の WorkflowWorkItemActionManager クラスはこのインターフェイスを実装しています。 プラットフォーム更新 32 では、IValidateWorkflowWorkItemAction インターフェイスの実装をおこなうために TrvWorkflowWorkItemActionManager クラスが更新されます。 例として、既存の IValidateWorkflowWorkItemAction 実装を使用して、その他の WorkflowWorkItemActionManager クラスについての更新を通知します。
+
 Microsoft Power Automate で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを使用する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
 
 ## <a name="templates-for-work-item-completion-in-power-automate"></a>Power Automate での作業項目完了のテンプレート
@@ -93,10 +96,18 @@ Power Automate での作業項目完了に関する次のテンプレートが�
 
 ## <a name="troubleshooting-workflow-business-events"></a>ワークフロー ビジネスイベントのトラブルシューティング
 
-ワークフロー ビジネスイベントにてエラーを発生させずに完了するには、正確な作業が必要になる多くの重要な要素があります:
+### <a name="troubleshooting-workflow-issues"></a>ワークフローの問題に関するトラブルシューティング ###
+ワークフローが正常に稼働し、期待通りに作業項目を作成できることを確認します。 ワークフローがアプリケーション内で動作せず、状態の変化が発生した場合、イベントは発生しません。 必要に応じてワークフローの設定を調整します。 この調整を行うには、 **ワークフローの履歴** フォームの詳細を確認してください。
 
-- **ワークフロー** - ワークフローが正常に動作することと、各項目が正しく作成されていることを確認します。 ワークフローがアプリケーション内で動作せず、状態の変化が発生した場合、イベントは発生しません。 必要に応じてワークフローの設定を調整します。 この調整を行うには、 **ワークフローの履歴** フォームの詳細を確認してください。
+### <a name="troubleshooting-power-automate-issues"></a>Power Automate の問題に関するトラブルシューティング ###
+Power Automate サブスクリプションが、**アクティブ イベント** タブの **システム管理 > 設定 > ビジネス イベント > ビジネス イベント カタログ** で利用可能なことを確認します。Power Automateサブスクリプションがそこにない場合は、Power Automate をチェックして、必要に応じて再作成します。
 
-- **Power Automate** - **有効なイベント** タブの **システム管理 > 設定 > ビジネスイベント > ビジネスイベント カタログ** にて Power Automate のサブスクリプションが有効になっていることを確認してください。 Power Automate のサブスクリプションが存在しない場合は、 Power Automate を確認し、必要に応じて再作成してください。
+### <a name="troubleshooting-business-events-issues"></a>ビジネス イベントの問題に関するトラブルシューティング ###
+Power Automate を作成することでその他のビジネス イベントが正常に発生し、他のビジネスイベントがトリガーから外されることを確認します。 たとえば、フリー テキストのインボイス転記済イベントは、単一行のフリー テキスト インボイスを作成して転記することでトリガーできます。 詳細については [ビジネス イベントのトラブルシューティング](troubleshooting.md) を参照してください。
 
-- **ビジネスイベント** - Power Automate を作成して別のビジネスイベントを発生させることにより、他のビジネスイベントが発生していることを確認してください。 たとえば、フリー テキストのインボイス転記済イベントは、単一行のフリー テキスト インボイスを作成して転記することでトリガーできます。 詳細については [ビジネス イベントのトラブルシューティング](troubleshooting.md) を参照してください。
+### <a name="troubleshooting-work-item-approval-via-power-automate"></a>Power Automate を介して作業項目承認のトラブルシューティング ### 
+フローが作業項目の承認を対処しようとしているが、起動しない場合は、次のステップを検証します。
+- 作業項目が作成され、それにより適用されるユーザーは Web クライアントで承認を待機していることを見ることができますか？
+ - フローからのイベント サブスクリプションは、ビジネス イベント フォームで見ることができますか？
+- ワークフロー構成とフローからのイベント サブスクリプションは、正しい法的エンティティ (企業) 向けになっていますか？
+

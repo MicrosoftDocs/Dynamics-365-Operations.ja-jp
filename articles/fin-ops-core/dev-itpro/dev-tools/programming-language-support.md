@@ -3,7 +3,7 @@ title: X++ と X++ コンパイラの変更
 description: このトピックでは、Finance and Operations アプリケーションのコンパイラに対する変更点について説明します。
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,17 +12,16 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26781
-ms.assetid: 056d4064-e365-487c-a606-e2fadfe28242
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaa6d6c3546072974740701205af349d0484b72e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c11b4d26d4368093f22220a6aac5862fad1188e4
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812021"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914923"
 ---
 # <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 
@@ -58,16 +57,18 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
 -   `finally` キーワードを `try` および `catch` キーワードの後に使用できるようになりました。 セマンティクスは C\# のセマンティクスと同じです。 finally 句に指定されたステートメントは、try ブロックが例外をスローしたかどうかにかかわらず実行されます。
 -   `using` キーワードは、.NET 名前空間を参照するための省略形として追加されました。 次のコード例は、using キーワードを使用して名前空間を参照する2つの方法を示しています。
 
-        using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
-        using           System.CodeDom;      // Contains the class named CodeComment.
+    ```xpp
+    using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
+    using           System.CodeDom;      // Contains the class named CodeComment.
 
-        public class MyClass2
-        {
-            static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
-            CodeComment codeComment          = new CodeComment("I am a comment.");
+    public class MyClass2
+    {
+        static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
+        CodeComment codeComment          = new CodeComment("I am a comment.");
 
-            // More X++ code here.
-        }
+        // More X++ code here.
+    }
+    ```
 
 -   クラスのフィールドをフィールドの declaration ステートメントで初期化することができるようになりました。 これは、前のコード例で 2 回示されています。
 -   メソッドの開始時だけでなく、小さなスコープ内で変数を宣言することができます。
@@ -75,14 +76,16 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
 -   クラスのフィールドを静的にすることができます。 以前のバージョンでは、インスタンス フィールドのみ許可されていました。
 -   クラスは、1 つの静的コンストラクターを持つことができます。 以前のバージョンでは、インスタンス コンストラクターのみ使用できました。 次の X++のコード例は、新しいキーワード typenew による 、静的コンストラクターの構文を示しています。
 
-        .    public class MyClass4
-            {
-                static utcdatetime utcInitialized3;  // Static variable member.
-                static void typenew()                // Static constructor member. 'typenew' is a new keyword.
-                {
-                utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
-                }
-            }
+    ```xpp
+    public class MyClass4
+    {
+        static utcdatetime utcInitialized3;  // Static variable member.
+        static void typenew()                // Static constructor member. 'typenew' is a new keyword.
+        {
+            utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
+        }
+    }
+    ```
 
 -   属性の修飾で、接尾語に `Attribute` がある場合、クラスまたはメソッドのような属性名の接尾語を省略できます。 したがって、X++ は C\# を結合し、`[MyFavoriteAttribute]` を要求する代わりに `[MyFavorite]` を許可します。
 -   デリゲートはクラスにだけでなく、テーブル、フォーム、またはクエリで定義できるようになりました。
@@ -104,8 +107,7 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
 -   **AOT** &gt; **Jobs** &gt; **MyJob** の意味にジョブの概念はありません。 X++ メソッドをすばやく簡単に実行するには、`static Main` メソッドをクラスに追加し、そのクラスを Microsoft Visual Studio のプロジェクトのスタートアップ オブジェクト フォームとして設定します。 プロジェクトが実行されるときは、`Main`メソッドが実行されます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [C# の統合言語クエリ (LINQ) プロバイダー](linq-provider-c.md)
 

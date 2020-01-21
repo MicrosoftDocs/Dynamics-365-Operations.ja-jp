@@ -1,9 +1,9 @@
 ---
 title: オンプレミス配置の計画および準備
 description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: e00d7abc5dab238d4e7d48ff66d6b45fc3b99a4a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8cbe0118bcaba37a63964dcbd48e43219526c13e
+ms.sourcegitcommit: a2c75429f4944de88bf10223e4346043a44ace27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772346"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854459"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -196,7 +196,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 Finance + Operations の現在のリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、ノードは交換する必要があります。
 
 ### <a name="environment-orchestrator"></a>環境オーケストレーター
-オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、[Service Fabric クラスターの能力計画に関する考慮事項](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-capacity)を参照してください。
+オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、 [Service Fabric スタンドアロン クラスタの展開計画](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
 ### <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 AOS のようなミッション クリティカルなサービスは、コア、メモリ、ディスクなどの専用リソースを持つ仮想ホストでホストする必要があります。

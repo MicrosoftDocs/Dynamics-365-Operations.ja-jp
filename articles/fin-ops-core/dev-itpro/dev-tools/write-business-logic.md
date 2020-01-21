@@ -3,7 +3,7 @@ title: C# および X++ ソース コードを使用したビジネス ロジッ
 description: このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,17 +12,16 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26821
-ms.assetid: 78f3c89c-2035-486d-9fba-35dd3c121d7d
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7265c90db353c6cc199c44e083be9aecfc5db536
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 82d649d91d3218c7f24440f1564d97cd4f514235
+ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812120"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854049"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
@@ -37,7 +36,10 @@ ms.locfileid: "2812120"
 -   C\# の言語統合クエリ (LINQ) を使用してデータをフェッチする。
 
 ## <a name="prerequisite"></a>前提条件
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 **注記**: **ソリューション内の項目に対してのみシンボルを読み込む**チェック ボックスがオンになっている場合、\#C プロジェクトのデバッグサポートは機能しません。 このオプションが既定で選択されているため、演習を実行する前に変更する必要があります。 Visual Studio で、 **Dynamics 365** &gt; **オプション** をクリックし、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスをオフにします。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 
+
+> [!NOTE]
+> **ソリューション内の項目のシンボルの読み込み**チェック ボックスがオンになっている場合、C\# プロジェクトのデバッグ サポートは機能しません。 このオプションが既定で選択されているため、演習を実行する前に変更する必要があります。 Visual Studio で、 **Dynamics 365** &gt; **オプション** をクリックし、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスをオフにします。
 
 ## <a name="scenario"></a>シナリオ
 危険な運転習慣の経歴を持つ運転手に、余りにも多くの車がレンタルされています。 フリート管理レンタル会社は、外部ソースからドライブ レコードを確認する必要があります。 上級管理職は、運転免許とその関連情報を管理する法人である運輸省 (DOT) が運用するサービスに加入することに決まりました。 このサービスは、指定された一意のライセンス番号の引用数を取得します。 X++ ソース コードから直接外部サービスを呼び出すことは容易ではありません。 Visual Studio にはサービスを呼び出す「コードビハインド」を (C\# で) 生成するツールがあり、これらのツールにより開発作業が簡単になります。 Visual Studio を活用してコードを記述することが当然の選択です。 ただし、このチュートリアルでは物流が簡単なラボ環境の範囲を超えているため、コードは実際に外部サービスを呼び出しません。 代わりに、サービス コールのモック実装を提供します。 このチュートリアルの目標は、C\# の現在の状態と X++ との相互運用性の理解について教えることです。
@@ -70,7 +72,8 @@ ms.locfileid: "2812120"
 
 1.  **ソリューション エクスプローラー**で、DriversLicenseEvaluator プロジェクト ノードを展開し、**参照**を右クリックしてから**参照の追加**をクリックします。
 2.  **参照**をクリックし、次のパスを入力します: C:\\Packages\\bin
-    -   *一部の環境では、パッケージ フォルダーの場所はその c: ドライブにはありません。*
+
+    注: 一部の環境では、パッケージ フォルダーの場所が c: ドライブ上に存在していません。
 
 3.  **ファイル名**フィールドに、パターン \*LINQ\*.dll を入力してから **Enter** を押します。 LINQ という名前が入っている、アセンブリの一覧が表示されます。 その一覧から、次のファイルを選択し、**追加**をクリックします。
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.dll
@@ -91,65 +94,69 @@ ms.locfileid: "2812120"
 8.  **ソリューション エクスプローラー**で、**DriversLicenseChecker.cs** を右クリックしてから、**コードの表示**をクリックします。
 9.  **DriversLicenseEvaluator** 名前空間に、次の使用する 3 つのステートメントを追加し、外部クラスを参照するコードの冗長性を減らします。 Dynamics.AX.Application の使用。Microsoft.Dynamics.AX.Framework.Linq.Data の使用。Microsoft.Dynamics.AX.Xpp の使用。ユーザーの C\# コードは以下の例のように見えるはずです。
 
-        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Text;
-        using System.Threading.Tasks;
+    ```xpp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-        namespace DriversLicenseEvaluator
+    namespace DriversLicenseEvaluator
+    {
+        using Dynamics.AX.Application;
+        using Microsoft.Dynamics.AX.Framework.Linq.Data;
+        using Microsoft.Dynamics.Ax.Xpp;
+
+        public class DriversLicenseChecker
         {
-          using Dynamics.AX.Application;
-          using Microsoft.Dynamics.AX.Framework.Linq.Data;
-          using Microsoft.Dynamics.Ax.Xpp;
-
-          public class DriversLicenseChecker
-          {
-          }
         }
+    }
+    ```
 
 10. クラス CheckDriversLicense を次のコードに置き換えます。 
 
-> [!TIP] 
-> C:\\FMLab ディレクトリ内の DriversLicenseChecker.cs ファイルからコードに貼り付けることもできます。
+    > [!TIP] 
+    > C:\\FMLab ディレクトリ内の DriversLicenseChecker.cs ファイルからコードに貼り付けることもできます。
 
-          public class DriversLicenseChecker
-          {
-            public static bool CheckDriversLicense(long customerId)
+    ```xpp
+    public class DriversLicenseChecker
+    {
+        public static bool CheckDriversLicense(long customerId)
+        {
+            // Use LINQ to get back to the information about the license number
+            FMCustomer customer;
+            QueryProvider provider = new AXQueryProvider(null);
+            var customers = new QueryCollection<FMCustomer>(provider);
+
+            // Build the query (but do not execute it)
+            var query = from c in customers 
+                where c.RecId == customerId 
+                select c;
+
+            // Execute the query:
+            customer = query.FirstOrDefault();
+            if (customer == null)
             {
-              // Use LINQ to get back to the information about the license number
-              FMCustomer customer;
-              QueryProvider provider = new AXQueryProvider(null);
-              var customers = new QueryCollection<FMCustomer>(provider);
-
-              // Build the query (but do not execute it)
-              var query = from c in customers 
-                    where c.RecId == customerId 
-                    select c;
-
-              // Execute the query:
-              customer = query.FirstOrDefault();
-              if (customer == null)
-              {
                 throw new ArgumentException
-                  ("The customerId does not designate a customer");
-              }
+                    ("The customerId does not designate a customer");
+            }
 
-              if (string.IsNullOrEmpty(customer.DriverLicense))
-              {
+            if (string.IsNullOrEmpty(customer.DriverLicense))
+            {
                 // No driver's license was recorded. Veto the rental.
                 return false;
-              }
-
-              // Call the DOT web service to validate the license number.
-              // This is not practical for this lab, because all the service providers
-              // charge for this service. Instead, just assume that any license number
-              // that contains the sequence "89" is valid.
-              // In the demo data, this is true for Adrian Lannin,
-              // but not for Phil Spencer.
-              return customer.DriverLicense.Contains("89");
             }
-          }
+
+            // Call the DOT web service to validate the license number.
+            // This is not practical for this lab, because all the service providers
+            // charge for this service. Instead, just assume that any license number
+            // that contains the sequence "89" is valid.
+            // In the demo data, this is true for Adrian Lannin,
+            // but not for Phil Spencer.
+            return customer.DriverLicense.Contains("89");
+        }
+    }
+    ```
 
 ### <a name="understand-the-linq-code"></a>LINQ コードを理解する
 
@@ -171,29 +178,34 @@ ms.locfileid: "2812120"
 
 ### <a name="preparatory-overview"></a>準備の概要
 
-テーブルにレコードを追加しようとすると、そのレコードがデータベースに書き込まれる前に、OnValidateWrite イベントが発生します。 FMRental テーブルに対して OnValidateWrite イベントが発生するたびに、CheckDriversLicense メソッドが呼び出されることを必要とします。 これを行うには、イベントによって呼び出され、checkDriversLicense メソッドを呼び出す C\# メソッドを記述する必要があります。 つまり、CheckDriversLicense メソッドを呼び出すイベント ハンドラーを記述する必要があります。 イベント ハンドラー メソッドは、型のパラメーター、DataEventArgsを受け取ります。 イベント ハンドラーは、レコードを承認または拒否するかを DataEventArgs 構造の値に設定できます。 イベント ハンドラー メソッドを書き込んだ後は、イベントに割り当てて接続するか、または FMRental テーブルのメンバーである OnValidatedWrite をデリゲートして追加します。 FMRental フォームのデータ ソースの init メソッドにこの割り当てを記述します。 デリゲートへのこの割り当ては奇妙に思える場合があります。 結局のところ、既存のコード (FMRental) を変更して、ハンドラーを追加します。これはイベントが提供する予定の疎結合の主な価値提案と矛盾しています。 この割り当てステップは一時的です。 最終的に、X++ の場合と同じストーリーが C\# でも発生します。属性は、デリゲートとハンドアラーを結合するメカニズムとして、C\# イベント ハンドラーに適用されます。 **注記**: フォームが開かれると、データソースの init メソッドが呼び出されます。 技術的には、init メソッドは FormDataSource クラスから継承されます。
+テーブルにレコードを追加しようとすると、そのレコードがデータベースに書き込まれる前に、OnValidateWrite イベントが発生します。 FMRental テーブルに対して OnValidateWrite イベントが発生するたびに、CheckDriversLicense メソッドが呼び出されることを必要とします。 これを行うには、イベントによって呼び出され、checkDriversLicense メソッドを呼び出す C\# メソッドを記述する必要があります。 つまり、CheckDriversLicense メソッドを呼び出すイベント ハンドラーを記述する必要があります。 イベント ハンドラー メソッドは、型のパラメーター、DataEventArgsを受け取ります。 イベント ハンドラーは、レコードを承認または拒否するかを DataEventArgs 構造の値に設定できます。 イベント ハンドラー メソッドを書き込んだ後は、イベントに割り当てて接続するか、または FMRental テーブルのメンバーである OnValidatedWrite をデリゲートして追加します。 FMRental フォームのデータ ソースの init メソッドにこの割り当てを記述します。 デリゲートへのこの割り当ては奇妙に思える場合があります。 結局のところ、既存のコード (FMRental) を変更して、ハンドラーを追加します。これはイベントが提供する予定の疎結合の主な価値提案と矛盾しています。 この割り当てステップは一時的です。 最終的に、X++ の場合と同じストーリーが C\# でも発生します。属性は、デリゲートとハンドアラーを結合するメカニズムとして、C\# イベント ハンドラーに適用されます。 
+
+> [!NOTE]
+> データ ソース init メソッドは、フォームを開いたときに呼び出されます。 技術的には、init メソッドは FormDataSource クラスから継承されます。
 
 ### <a name="write-an-event-handler-method"></a>イベント ハンドラー メソッドの記述
 
 C\# では、次のイベント ハンドラー メソッドを記述して DriversLicenseChecker クラスに追加します。
 
-      public static void OnValidatedWriteHandler(Common table, DataEventArgs args)
-      {
-        var validateEventArgs = args as ValidateEventArgs;
+```xpp
+public static void OnValidatedWriteHandler(Common table, DataEventArgs args)
+{
+    var validateEventArgs = args as ValidateEventArgs;
 
-        // Do not check if already rejected.
-        if (validateEventArgs.parmValidateResult())
+    // Do not check if already rejected.
+    if (validateEventArgs.parmValidateResult())
+    {
+        var rentalTable = table as FMRental;
+        if (rentalTable == null)
         {
-          var rentalTable = table as FMRental;
-          if (rentalTable == null)
-          {
             throw new ArgumentNullException("table");
-          }
-
-          var result = CheckDriversLicense(rentalTable.Customer);
-          validateEventArgs.parmValidateResult(result);
         }
-      }
+
+        var result = CheckDriversLicense(rentalTable.Customer);
+        validateEventArgs.parmValidateResult(result);
+    }
+}
+```
 
 プロジェクト ノードを右クリックしてから**ビルド**をクリックし、DriversLicenseEvaluator プロジェクトをビルドします。
 
@@ -201,18 +213,21 @@ C\# では、次のイベント ハンドラー メソッドを記述して Driv
 
 次の手順を実行し、**移行されたフリート管理**という名前の X++ プロジェクトから **DriversLicenseEvaluator** という名前の C\# プロジェクトへの参照を作成します。
 
-1.  FleetManagement Migrated プロジェクトを右クリックし、**追加** をクリックして **参照** をクリックします。 **プロジェクト** 参照タブで DriversLicenseEvaluator プロジェクトの行を選択し、**OK** をクリックします。 [![AddReference\_LinqC](./media/addreference_linqc1.png)](./media/addreference_linqc1.png)
+1.  FleetManagement Migrated プロジェクトを右クリックし、**追加** をクリックして **参照** をクリックします。 **プロジェクト** 参照タブで DriversLicenseEvaluator プロジェクトの行を選択し、**OK** をクリックします。 
+
+    ![AddReference\_LinqC](./media/addreference_linqc1.png)
+
 2.  FleetManagement Migrated プロジェクトで、**References** ノードを展開すると、**DriversLicenseEvaluator** プロジェクトへの新しい参照が表示されます。
 
-[![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)](./media/solutionexplorerreferences_linqc2.png) 
+    ![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)
 
 #### <a name="build-sequence"></a>ビルド順序
 
 C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated プロジェクトのビルド前にビルドされます。 これは、追加された参照によって、フリート プロジェクトがプロジェクトに依存するためです。 ビルド シーケンスを簡単に確認するには、FleetManagement ソリューションを右クリックし、 **プロジェクト ビルド順序** をクリックして、 **相互関係** をクリックします。
 
-[![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png)
+![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)
 
-[![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png)
+![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)
 
 ### <a name="add-your-event-handler-to-a-delegate"></a>委任へのイベント ハンドラーの追加
 
@@ -223,8 +238,10 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 5.  **メソッド** を右クリックし、**オーバーライド &gt; メソッド** をクリックします。 リストには、まだ上書きされていないデータ ソース上のすべてのメソッドが表示されます。 **init** を選択すると、**FMRental.xpp** ファイルが X++ コード エディタ内に開き、カーソルが init メソッドのテンプレートの近くに表示されます。
 6.  **初期化**メソッド本体の最後に、+= 演算子を使用してデリゲートに 1 つの割り当てを追加します。
 
-          FMRental.onValidatedWrite += eventhandler
-           (DriversLicenseEvaluator.DriversLicenseChecker::OnValidatedWriteHandler);
+    ```xpp
+    FMRental.onValidatedWrite += eventhandler
+        (DriversLicenseEvaluator.DriversLicenseChecker::OnValidatedWriteHandler);
+    ```
 
 7.  クリックして保存し、ソリューション全体を構築します。
 
@@ -240,18 +257,21 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 2.  **FMRental** を右クリックし、**スタートアップ オブジェクトとして設定** をクリックします。
 3.  DriversLicenseChecker.cs のコード エディターで、OnValidateWriteHandler メソッドを検索します。 次のコード行を検索します。
 
-        var result = CheckDriversLicense(rentalTable.Customer);
-
+    ```xpp
+    var result = CheckDriversLicense(rentalTable.Customer);
+    ```
+    
 4.  このコード行にブレークポイントを設定します。 その線の左余白をクリックすると、これが行なわれます。 ブレークポイントが設定されている場合は、赤いドットが表示されます。
 5.  CheckDriversLicense メソッドでは、次の行で別のブレークポイントを設定します。
 
-        if (string.IsNullOrEmpty(customer.DriverLicense))
-
+    ```xpp
+    if (string.IsNullOrEmpty(customer.DriverLicense))
+    ```
 ### <a name="run-the-test"></a>テストの実行
 
 このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics 365 &gt; オプション &gt; デバッグ** の順に移動し、 **ソリューション内の項目に対してのみシンボルを読み込む** チェック ボックスが選択されていないことを確認します。 
 
-[![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) 
+![Options\_LinqC](./media/options_linqc2.png)
 
 > [!TIP] 
 > C\# コードでブレークポイントに到達できない場合、**モジュール**ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
@@ -260,18 +280,12 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 2.  **車両レンタル ID** をクリックすると詳細が表示されます。
 3.  フォームの左上隅にある**編集**アイコンをクリックします。 アイコンは鉛筆のように見えます。
 4.  **レンタル**セクションの**終了**フィールドで、1 日ごとに日付を増加させます。
-
-    [![FMRentalDetails](./media/fmrental.jpg)](./media/fmrental.jpg)
-
 5.  **保存**ボタンをクリックします。 これにより、強調表示されたブレークポイントで Visual Studio にフォーカスが移動します。 この行は、OnValidatedWrite イベントが発生し、ハンドラー メソッド が呼び出されたことを示しています。
 6.  **F5** キーを押して実行を続行します。 すぐに、その他のブレークポイントが強調表示されます。
 7.  ブレークポイントの数行上で、変数の顧客を検索します。
 8.  顧客変数を右クリックし、**QuickWatch** をクリックします。 長整数値は、LINQ クエリが機能していることを証明します。 
 
-    [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
+    ![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)
 
 9.  **F5** キーを押して**保存**操作を完了します。
-
-
-
 

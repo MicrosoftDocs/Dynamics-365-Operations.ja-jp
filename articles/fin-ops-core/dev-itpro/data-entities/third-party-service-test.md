@@ -3,7 +3,7 @@ title: サード パーティ ユーティリティを使用したテスト サ�
 description: このトピックでは、サービスをテストするサード パーティのユーティリティを設定する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c6a4290cd99484741916308ff42f55d1a127b0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 89a1a01416f3fd25d1a56a5ab227538ce5597210
+ms.sourcegitcommit: b0cecde9cbc4fab57e3942c0e79143601a202480
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771012"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890977"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -109,7 +109,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```
 
-17. 要求を保存および送信し、結果を確認します。
+17. 要求を保存および送信し、結果を確認します。 使用するユーザー アカウントが、データを持つ既定の会社に対して設定されていることを確認する必要があります。 または、OData 要求のクエリ パラメーターとして、クロス会社 =true を指定することもできます。
 
     ![結果](./media/postman15.png)
 

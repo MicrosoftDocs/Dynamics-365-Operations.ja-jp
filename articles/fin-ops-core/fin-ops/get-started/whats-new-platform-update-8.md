@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations Enterprise Edition プラット�
 description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/26/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 623cfbde9a650697c37de382f1acf8a7a27c3b24
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a5190a71d6d65a6c28065ccf40ac92bc68e8ca10
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812450"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
@@ -63,7 +63,7 @@ Dynamics 365 for Finance and Operations Enterprise Edition の分析レポート
 
 この展開オプションは、を Microsoft クラウドに複製することなく、社内のビジネス プロセスの実行、ローカル トランザクションのサポート、ローカルの格納をサポートします。 そのような場合、Microsoft クラウド (クラウドとエッジのシナリオで参照) での業務データの一般的なレプリケーションはオフになります。
 
-データのクラウド同期により、Microsoft は業務プロセスにインテリジェンスを組み込むことができます。埋め込まれた分析、機械学習、および広範囲の機能は、Microsoft クラウドで最も効果的に提供されます。 このオプションでは、顧客はビジネス データのクラウド同期をオンまたはオフにするオプションを選択できるようになりました。 顧客がクラウド同期をオフにしている場合、業務データにその受託者の境界が残ることはありません。 また、組み込み Power BI、集計ビュー、Azure Machine Learning サービス ベースの効率性などの機能は、クラウド データ同期をオフにしても使用できません。 顧客は、クラウドへのデータ同期をオンにするだけで、組み込みインテリジェンス機能を利用することができます。
+データのクラウド同期により、Microsoft は業務プロセスにインテリジェンスを組み込むことができます。埋め込まれた分析、機械学習、および広範囲の機能は、Microsoft クラウドで最も効果的に提供されます。 このオプションでは、顧客はビジネス データのクラウド同期をオンまたはオフにするオプションを選択できるようになりました。 顧客がクラウド同期をオフにしている場合、業務データにその受託者の境界が残ることはありません。 また、クラウド データ同期がオフになっている場合、埋め込み Power BI、集計ビュー、Azure Machine Learning などの関数は使用できません。 顧客は、クラウドへのデータ同期をオンにするだけで、組み込みインテリジェンス機能を利用することができます。
 
 オンプレミス ビジネス データおよびクラウド データ同期の両方の環境はクラウド + Edge 配置オプションと呼ばれます。 これらのオプションの相違をより詳しく比較するには、表を参照してください。
 

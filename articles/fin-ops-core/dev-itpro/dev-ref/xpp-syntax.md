@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b02bc4e16b0fc37c5981963a377a26375949ce0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e931d3681f34772d137c5a2ae3e672e55ef2891f
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191673"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872651"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -831,11 +831,11 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester こ�
 
 このセクションでは、Backus Naur Form (BNF) の X++ の文法について説明します。 次に、BNF の小さな例について説明します。
 
-    AA ::= BB  CC_SYM
-    BB ::= JJ_SYM
-       ::= KK_SYM
-
- 
+```xpp
+AA ::= BB  CC_SYM
+BB ::= JJ_SYM
+   ::= KK_SYM
+```
 
 `AA` は生産ルールの名前です。 `AA` は `BB` が必要で、続いて CC\_SYM となります。 `BB` も生産ルールです。 したがって、`BB` はターミナルではありません。 `BB` は、JJ\_SYM または KK\_SYM のいずれかである必要があります。 JJ\_SYM と KK\_SYM の両方は他の生産ルールの名前ではないためターミナルです。 CC\_SYM もターミナルです。
 
@@ -845,6 +845,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
 
 このセクションには、X++文法を定義する BNF が含まれています。
 
+```xpp
     CMPL_UNIT ::= RETTYPEID  FUNC_HDR  FUNC_HEAD  BODY
               ::= RETTYPEID  DATA_HDR  CLASS_DECL
               ::= EXPR_HDR  IF_EXPR  SEMIOPT
@@ -1342,7 +1343,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
            ::= CHANGESITE_SYM
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
-
+```
  
 
 ## <a name="x-language-syntax-is-stricter-in-microsoft-dynamics-ax-2012"></a>X++ 言語の構文は Microsoft Dynamics AX 2012 では厳密です

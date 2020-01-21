@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 02114c975d26718ff2df0feee1ed625954f0eeca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4031a31da4370e3228cfe82082b9e74fc32db7f3
+ms.sourcegitcommit: b0cecde9cbc4fab57e3942c0e79143601a202480
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811370"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890979"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -93,9 +93,13 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 ### <a name="for-a-microsoft-dynamics-365-finance--operations-on-premises-environment"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の場合
 
-Finance + Operations において、既定のクラウド ベースの WOPI サーバーは、添付ファイルを読み込んでプレビューを提供することはできません。 プレビューが必要な場合は、[オンプレミス Office Online サーバー インスタンスをインストールし](https://technet.microsoft.com/library/jj219455.aspx)、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存**をクリックします。
+財務 + 運営の規定のクラウドベース WOPI サーバーが、プレビューを提供する添付ファイルを読み込みできません。 プレビューが必要な場合は、[オンプレミス Office Online サーバー インスタンスをインストールし](https://technet.microsoft.com/library/jj219455.aspx)、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存**をクリックします。
 
 プレビューが必要な場合は、**Office Web アプリケーション サーバー** フィールドを `https://localhost` に設定します。 プレビューは、その後は、エラー メッセージではなく、「プレビューを利用できません」というメッセージを表示します。
+
+### <a name="document-preview-wopi-will-not-work-in-environments-with-ip-whitelisting-enabled"></a>ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
+
+プレビューを提供する WOPI サービスは、ファイルのレンダリングを取得するためのファイル サービスへと接続し返すことができないため、ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
 
 ## <a name="other-configuration"></a>他のコンフィギュレーション
 
@@ -156,7 +160,7 @@ Finance + Operations において、既定のクラウド ベースの WOPI サ�
 
 はい。 SharePoint 記憶域はネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
 
-### <a name="how-does-the-default-storage-location-for-document-management-change-in-finnce--operations-environments"></a>Finnce + Operations 環境では、ドキュメント管理の既定の保管場所はどのように変更されますか？
+### <a name="how-does-the-default-storage-location-for-document-management-change-in-finance--operations-environments"></a>ドキュメント管理の規定の保存スペース場所は、財務 + 運営環境ではどのように変わりますか？
 
 Finance + Operations 環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダとなります。
 

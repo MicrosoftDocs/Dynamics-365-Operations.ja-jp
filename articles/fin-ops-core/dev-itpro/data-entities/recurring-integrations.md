@@ -3,7 +3,7 @@ title: 定期統合
 description: このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/19/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,21 +17,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c2558cfb93c09283969056755edea9d25ee894f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: de77ef68e9ae6fcb5588abcf3879e58f6941b508
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183467"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914714"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
 [!include [banner](../includes/banner.md)]
 
-データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。 多くの労力と計画によって、企業の業種 (LOB) システムとさまざまなソース システム間のサード パーティ統合が構築されます。 Microsoft Dynamics AX 2012 では、アプリケーション統合フレームワーク (AIF) を通じてこのようなシナリオを可能にします。 統合ソリューション ビルダーから顧客ユーザーに含まれるすべての関係者に対して、このプロセスの簡略化に努めてきました。
-
-## <a name="architecture"></a>アーキテクチャ
-統合では、次の操作が行われます。
+移行を繰り返し行うと以下の処理が行われます:
 
 - これは、データ エンティティとデータ管理フレームワークで構築されます。
 - Finance and Operations とあらゆるサード パーティ製アプリケーションやサービスで、ドキュメントまたはファイルの交換を可能にします。
@@ -43,8 +40,8 @@ ms.locfileid: "2183467"
 
     ![繰り返し実行される統合を設定](./media/set-up-recurring.png)
 
-## <a name="authorization-for-the-integration-rest-api"></a>統合 REST API の承認
-統合 REST API は、他のサービス エンドポイントと同じ OAuth 2.0 認証モデルを使用します。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、アプリケーションに適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
+## <a name="authorization-for-the-integration-rest-api"></a>REST API 統合の承認
+REST API の統合は、その他の サービス エンドポイント と同じ OAuth 2.0 認証モデルを使用しています。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、アプリケーションに適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
 
 > [!NOTE]
 > この機能は、オンプレミス バージョンの Dynamics 365 Finance + Operations (オンプレミス) ではサポートされていません。
@@ -94,7 +91,7 @@ ms.locfileid: "2183467"
 ## <a name="submitting-data-to-recurring-data-jobs"></a>定期的なデータ ジョブにデータを送信
 統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのポーリング (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
 
-## <a name="integration-rest-apis"></a>REST API 統合
+## <a name="integration-rest-apis"></a>REST API の統合
 次の API セットは、統合クライアントとアプリケーション間でデータを交換するために使用されます。
 
 ### <a name="api-for-import-enqueue"></a>インポート (エンキュー) の API
@@ -137,7 +134,7 @@ blob にアップロードされたファイルがない場合、デキュー AP
 次 の API を使用します。
 
 > [!NOTE]
-> **/enqueue** の応答の本文は、**/ack** 転記要求の本文で送信する必要があります。
+> **/dequeue** の要求本文は、 **/ack** POST 要求の本文で送信する必要があります。
 
 ```
 https://<base URL>/api/connector/ack/<activity ID>
@@ -180,6 +177,17 @@ BODY
 
 > [!NOTE]
 > BLOB ストレージ内のファイルは、ストレージに 7 日間残ります。その後、自動的に削除されます。
+
+### <a name="api-to-get-the-list-of-execution-errors"></a>実行エラーの一覧を取得する API
+GetExecutionErrors は、ジョブ実行のエラーのリストを取得するために使用できます。 API は、Execution ID をパラメーターとして取り、JSON リストでエラー メッセージのセットを返します。
+
+```
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
+BODY
+{"executionId":"<executionId>"}
+
+```
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 ### <a name="viewing-the-batch-job-status-for-recurring-integrations-from-the-data-management-workspace"></a>データ管理ワークスペースからの定期的な統合バッチ ジョブのステータスの表示

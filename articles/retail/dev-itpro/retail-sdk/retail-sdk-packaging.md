@@ -3,7 +3,7 @@ title: 配置可能小売パッケージの作成
 description: このトピックでは、Microsoft Dynamics 365 Retail の配置可能小売パッケージを作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/22/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4dcac0c767b4e80c6cbae4faab89dca5863883d
-ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
+ms.openlocfilehash: e99d78fe69981d49e97c06432fcd7a98c90e1672
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2830175"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935375"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
@@ -142,15 +142,15 @@ Retail SDK に関する詳細については、[Retail ソフトウエア開発�
 
 CRT、Retail Server、ハードウェア ステーション、またはプロキシに新しい拡張機能がある場合は、関連する拡張構成ファイルの\<構成\>セクションに拡張アセンブリの詳細を登録する必要があります。 すべての拡張設定ファイルは次で見つけることができます。\\RetailSDK\\資産フォルダ。 すべての拡張機能は拡張ファイルの情報に基づいて読み込まれるため、アセンブリを登録する必要があります。
 
-パッケージを行う前に、次の構成ファイルを更新する必要があります (この領域でカスタマイズがある場合)。
+パッケージを使用する前に、次の構成ファイルを更新する必要があります (この領域でカスタマイズがある場合)。
 
-- **CommerceRuntime.Ext.config** – すべての CRT 拡張および依存アセンブリを登録します。 また、この場所には、Retail サーバー拡張機能の依存アセンブリを含める必要があります。
+- **CommerceRuntime.Ext.config** – すべての CRT 拡張機能、CRT、Retail サーバー依存アセンブリ、そしてカスタム キー値ペア構成を登録します。 拡張機能のコンフィギュレーション値のキー名には、先頭に "ext" を付ける必要があります。 Commerce Runtime 初期化ではこの規則が適用され、この規則が使用されない場合は読み込まれません。 プレフィックスを追加して、制御されるサブ領域 ("ext.CusomStorageConfig.CustomKeyCart" など) を表すことができます。
 
 > [!NOTE]
-> 拡張機能が Newtonsoft.Json.Portable またはその他のアセンブリに依存している場合は、明示的に追加します。 帯域外 (OOB) Retail サーバーまたは CRT が使用しているため、これらのアセンブリが、既定でパッケージまたは Retail サーバー フォルダーに含まれるとは仮定しないでください。 今後、OOB 機能でこれらのアセンブリを使用していない場合は、削除することができます。 その結果、すべての拡張機能に依存するアセンブリを明示的に常に含めることによって、それらを適切なフォルダにパッケージ化して配置する必要があります。
+> 拡張機能が Newtonsoft.Json.Portable またはその他のアセンブリに依存している場合は、明示的に追加します。 既定では、パッケージ内または Retail サーバー フォルダにおいて、これらのアセンブリを OOB 機能で使用していない場合は、これらのアセンブリは含まれない可能性があります。 よって、拡張機能にはすべての拡張機能依存アセンブリを明示的に常に含め、それらを適切なフォルダにパッケージ化して配置する必要があります。
 
+**例: 拡張機能アセンブリと拡張キー値ペアの構成の登録方法**
 
-**例**
 
  ```C#
     <?xml version="1.0" encoding="utf-8"?>
@@ -159,22 +159,32 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
             <!-- Register your own assemblies here. -->
             <add source="assembly" value="my custom library" />
         </composition>
+        
+        <settings>
+             <add name="ext.myCustomKey1" value="myCustomValue1" />
+             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+        </settings>
     </commerceRuntimeExtensions>
 ```
 
-- **ommerceRuntime.MPOSOffline.Ext.config** – すべての CRT 拡張および依存アセンブリを登録します。
+- **CommerceRuntime.MPOSOffline.Ext.config** – すべての CRT 拡張機能、依存アセンブリ、そして拡張キー値ペア構成を登録します。 拡張機能のコンフィギュレーション値のキー名には、先頭に "ext" を付ける必要があります。 Commerce Runtime 初期化ではこの規則が適用され、それ以外の場合は読み込まれないため、プレフィックスを追加して制御するサブ領域を表すことができます。 例: "ext.CusomStorageConfig.CustomKeyCart"
 
-**例**
+**例: 拡張機能アセンブリと拡張キー値ペアの構成の登録方法**
 
-    ```C#
+```C#
     <?xml version="1.0" encoding="utf-8"?>
     <commerceRuntimeExtensions>
         <composition>
             <!-- Register your own assemblies or types here. -->
             <add source="assembly" value=" my custom library" />
         </composition>
+        
+        <settings>
+             <add name="ext.myCustomKey1" value="myCustomValue1" />
+             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+        </settings>
     </commerceRuntimeExtensions>
-    ```
+```
 
 - **HardwareStation.Extension.config** – すべてのハードウェア ステーション拡張機能を登録します。
 
