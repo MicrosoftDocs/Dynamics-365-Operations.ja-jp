@@ -18,39 +18,37 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9f3fa269217bc03a15fde6ee0fc9d0c502c17b3e
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 32f3bab38233833498ed566fa1558a023b3bc0dd
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009125"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2899223"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-talent-february-14-2019"></a><span data-ttu-id="7ffe4-103">Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 14 日)</span><span class="sxs-lookup"><span data-stu-id="7ffe4-103">What's new or changed in Dynamics 365 Talent (February 14, 2019)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-14-2019"></a><span data-ttu-id="4f118-103">Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 14 日)</span><span class="sxs-lookup"><span data-stu-id="4f118-103">What's new or changed in Dynamics 365 Talent (February 14, 2019)</span></span>
 
-[!include [banner](includes/banner.md)]
+<span data-ttu-id="4f118-104">このトピックでは、 Talent の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="4f118-104">This topic describes features that are either new or changed in Talent.</span></span>
 
-<span data-ttu-id="7ffe4-104">このトピックでは、 Talent の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-104">This topic describes features that are either new or changed in Talent.</span></span>
+## <a name="changes-in-attract"></a><span data-ttu-id="4f118-105">Attract の変更</span><span class="sxs-lookup"><span data-stu-id="4f118-105">Changes in Attract</span></span>
+<span data-ttu-id="4f118-106">このリリースには、マイナーなバグ修正が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4f118-106">There are minor bug fixes included with this release.</span></span>
 
-## <a name="changes-in-attract"></a><span data-ttu-id="7ffe4-105">Attract の変更</span><span class="sxs-lookup"><span data-stu-id="7ffe4-105">Changes in Attract</span></span>
-<span data-ttu-id="7ffe4-106">このリリースには、マイナーなバグ修正が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-106">There are minor bug fixes included with this release.</span></span>
-
-## <a name="changes-in-onboarding"></a><span data-ttu-id="7ffe4-107">オンボードの変更</span><span class="sxs-lookup"><span data-stu-id="7ffe4-107">Changes in Onboarding</span></span>
-<span data-ttu-id="7ffe4-108">このリリースには、マイナーなバグ修正が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-108">There are minor bug fixes included with this release.</span></span>
+## <a name="changes-in-onboarding"></a><span data-ttu-id="4f118-107">オンボードの変更</span><span class="sxs-lookup"><span data-stu-id="4f118-107">Changes in Onboarding</span></span>
+<span data-ttu-id="4f118-108">このリリースには、マイナーなバグ修正が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4f118-108">There are minor bug fixes included with this release.</span></span>
  
-## <a name="changes-in-core-hr"></a><span data-ttu-id="7ffe4-109">Core HR の変更</span><span class="sxs-lookup"><span data-stu-id="7ffe4-109">Changes in Core HR</span></span> 
-<span data-ttu-id="7ffe4-110">**ビルド 8.1.2146**</span><span class="sxs-lookup"><span data-stu-id="7ffe4-110">**Build 8.1.2146**</span></span>
+## <a name="changes-in-core-hr"></a><span data-ttu-id="4f118-109">Core HR の変更</span><span class="sxs-lookup"><span data-stu-id="4f118-109">Changes in Core HR</span></span> 
+<span data-ttu-id="4f118-110">**ビルド 8.1.2146**</span><span class="sxs-lookup"><span data-stu-id="4f118-110">**Build 8.1.2146**</span></span>
 
-### <a name="employee-fixed-compensation-entity-doesnt-export-all-records"></a><span data-ttu-id="7ffe4-111">従業員の固定報酬のエンティティは、すべてのレコードをエクスポートしない</span><span class="sxs-lookup"><span data-stu-id="7ffe4-111">Employee fixed compensation entity doesn't export all records</span></span>
-<span data-ttu-id="7ffe4-112">この変更により、**従業員の固定報酬**エンティティですべてのレコードをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-112">With this change, the **Employee fixed compensation** entity will now export all records.</span></span> <span data-ttu-id="7ffe4-113">既存の従業員の固定報酬レコードを作成および更新するためにエンティティを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-113">The entity can be used to create and update existing fixed compensation records for employees.</span></span> 
+### <a name="employee-fixed-compensation-entity-doesnt-export-all-records"></a><span data-ttu-id="4f118-111">従業員の固定報酬のエンティティは、すべてのレコードをエクスポートしない</span><span class="sxs-lookup"><span data-stu-id="4f118-111">Employee fixed compensation entity doesn't export all records</span></span>
+<span data-ttu-id="4f118-112">この変更により、**従業員の固定報酬**エンティティですべてのレコードをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="4f118-112">With this change, the **Employee fixed compensation** entity will now export all records.</span></span> <span data-ttu-id="4f118-113">既存の従業員の固定報酬レコードを作成および更新するためにエンティティを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="4f118-113">The entity can be used to create and update existing fixed compensation records for employees.</span></span> 
 
-### <a name="employment-end-date-doesnt-honor-employee-preferred-time-zone-settings"></a><span data-ttu-id="7ffe4-114">雇用終了日が従業員の優先タイム ゾーンの設定を遵守しない</span><span class="sxs-lookup"><span data-stu-id="7ffe4-114">Employment end date doesn't honor employee preferred time zone settings</span></span>
-<span data-ttu-id="7ffe4-115">会社での雇用を作成または終了するときに、雇用終了日がユーザーの優先タイムゾーンを遵守するようになりました。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-115">Employment end dates are now honoring the user-preferred time zone when creating or ending employment with a company.</span></span>
+### <a name="employment-end-date-doesnt-honor-employee-preferred-time-zone-settings"></a><span data-ttu-id="4f118-114">雇用終了日が従業員の優先タイム ゾーンの設定を遵守しない</span><span class="sxs-lookup"><span data-stu-id="4f118-114">Employment end date doesn't honor employee preferred time zone settings</span></span>
+<span data-ttu-id="4f118-115">会社での雇用を作成または終了するときに、雇用終了日がユーザーの優先タイムゾーンを遵守するようになりました。</span><span class="sxs-lookup"><span data-stu-id="4f118-115">Employment end dates are now honoring the user-preferred time zone when creating or ending employment with a company.</span></span>
  
-### <a name="uk-addresses-display-in-analytics-as-eastern-switzerland-addresses"></a><span data-ttu-id="7ffe4-116">Analytics で英国の住所が東部スイスの住所として表示される</span><span class="sxs-lookup"><span data-stu-id="7ffe4-116">UK addresses display in Analytics as Eastern Switzerland addresses</span></span>
-<span data-ttu-id="7ffe4-117">今回のリリースで、**人事管理**「場所別の人数」レポートでの住所の不整合を修正する変更が行われました。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-117">In this release, a change has been made to correct misalignment in addresses in the **Personnel Management** "Headcount by location" report.</span></span>
+### <a name="uk-addresses-display-in-analytics-as-eastern-switzerland-addresses"></a><span data-ttu-id="4f118-116">Analytics で英国の住所が東部スイスの住所として表示される</span><span class="sxs-lookup"><span data-stu-id="4f118-116">UK addresses display in Analytics as Eastern Switzerland addresses</span></span>
+<span data-ttu-id="4f118-117">今回のリリースで、**人事管理**「場所別の人数」レポートでの住所の不整合を修正する変更が行われました。</span><span class="sxs-lookup"><span data-stu-id="4f118-117">In this release, a change has been made to correct misalignment in addresses in the **Personnel Management** "Headcount by location" report.</span></span>
  
-### <a name="termination-code-is-not-populated-on-the-worker-position-assignment-record-when-ending-the-position"></a><span data-ttu-id="7ffe4-118">職位の終了時に、作業者の職位の割り当てレコードに退職コードが設定されない</span><span class="sxs-lookup"><span data-stu-id="7ffe4-118">Termination code is not populated on the worker position assignment record when ending the position</span></span>
-<span data-ttu-id="7ffe4-119">従業員の職位の割り当ての終了時に、「退職理由」コードを既定として設定する変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-119">A change has been made to default the "Termination reason" code when ending the employees position assignment.</span></span>
+### <a name="termination-code-is-not-populated-on-the-worker-position-assignment-record-when-ending-the-position"></a><span data-ttu-id="4f118-118">職位の終了時に、作業者の職位の割り当てレコードに退職コードが設定されない</span><span class="sxs-lookup"><span data-stu-id="4f118-118">Termination code is not populated on the worker position assignment record when ending the position</span></span>
+<span data-ttu-id="4f118-119">従業員の職位の割り当ての終了時に、「退職理由」コードを既定として設定する変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="4f118-119">A change has been made to default the "Termination reason" code when ending the employees position assignment.</span></span>
 
-### <a name="new-entity-created-for-job-compensation-levels"></a><span data-ttu-id="7ffe4-120">ジョブの報酬レベルに対して作成された新しいエンティティ</span><span class="sxs-lookup"><span data-stu-id="7ffe4-120">New entity created for job compensation levels</span></span>
-<span data-ttu-id="7ffe4-121">新しいデータ管理フレームワーク (DMF) エンティティが作成されました。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-121">A new data management framework (DMF) entity was created.</span></span> <span data-ttu-id="7ffe4-122">エンティティは、報酬レベル、市場価値、およびシステムで定義されている各ジョブの調査情報の作成と更新を提供します。</span><span class="sxs-lookup"><span data-stu-id="7ffe4-122">The entity provides for creation and updates to compensation levels, market values, and survey information for each job defined in the system.</span></span>
+### <a name="new-entity-created-for-job-compensation-levels"></a><span data-ttu-id="4f118-120">ジョブの報酬レベルに対して作成された新しいエンティティ</span><span class="sxs-lookup"><span data-stu-id="4f118-120">New entity created for job compensation levels</span></span>
+<span data-ttu-id="4f118-121">新しいデータ管理フレームワーク (DMF) エンティティが作成されました。</span><span class="sxs-lookup"><span data-stu-id="4f118-121">A new data management framework (DMF) entity was created.</span></span> <span data-ttu-id="4f118-122">エンティティは、報酬レベル、市場価値、およびシステムで定義されている各ジョブの調査情報の作成と更新を提供します。</span><span class="sxs-lookup"><span data-stu-id="4f118-122">The entity provides for creation and updates to compensation levels, market values, and survey information for each job defined in the system.</span></span>

@@ -3,7 +3,7 @@ title: Lifecycle Services の電子申告コンフィギュレーションのダ
 description: このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,59 +18,59 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 49785835ee2da911d7b8d1360e1c42f850f1153f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771496"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934657"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="ed10f-103">Lifecycle Services から電子申告コンフィギュレーションをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="ed10f-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="94539-103">Lifecycle Services から電子申告コンフィギュレーションをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="94539-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ed10f-104">このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-104">This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="94539-104">このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="94539-104">This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="ed10f-105">このチュートリアル ガイドは Microsoft Dynamics Lifecycle Services (LCS) から 電子申告 (ER) コンフィギュレーションの最新バージョンをダウンロードするプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-105">This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="94539-105">このチュートリアル ガイドは Microsoft Dynamics Lifecycle Services (LCS) から 電子申告 (ER) コンフィギュレーションの最新バージョンをダウンロードするプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="94539-105">This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-1. <span data-ttu-id="ed10f-106">次のロールの 1 つを使用してアプリケーションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="ed10f-106">Sign in to the application by using one of the following roles:</span></span>
+1. <span data-ttu-id="94539-106">次のロールの 1 つを使用してアプリケーションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="94539-106">Sign in to the application by using one of the following roles:</span></span>
 
-    - <span data-ttu-id="ed10f-107">電子申告開発者</span><span class="sxs-lookup"><span data-stu-id="ed10f-107">Electronic reporting developer</span></span>
-    - <span data-ttu-id="ed10f-108">電子申告機能コンサルタント</span><span class="sxs-lookup"><span data-stu-id="ed10f-108">Electronic reporting functional consultant</span></span>
-    - <span data-ttu-id="ed10f-109">システム管理者</span><span class="sxs-lookup"><span data-stu-id="ed10f-109">System administrator</span></span>
+    - <span data-ttu-id="94539-107">電子申告開発者</span><span class="sxs-lookup"><span data-stu-id="94539-107">Electronic reporting developer</span></span>
+    - <span data-ttu-id="94539-108">電子申告機能コンサルタント</span><span class="sxs-lookup"><span data-stu-id="94539-108">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="94539-109">システム管理者</span><span class="sxs-lookup"><span data-stu-id="94539-109">System administrator</span></span>
 
-2. <span data-ttu-id="ed10f-110">**組織管理** &gt; **電子申告**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-110">Go to **Organization administration** &gt; **Electronic reporting**.</span></span>
-3. <span data-ttu-id="ed10f-111">**コンフィギュレーション プロバイダー**セクションで、**Microsoft** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-111">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
-4. <span data-ttu-id="ed10f-112">**Microsoft** タイルで**リポジトリ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ed10f-112">On the **Microsoft** tile, click **Repositories**.</span></span>
+2. <span data-ttu-id="94539-110">**組織管理** &gt; **ワークスペース** &gt; **電子申告**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="94539-110">Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.</span></span>
+3. <span data-ttu-id="94539-111">**コンフィギュレーション プロバイダー**セクションで、**Microsoft** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-111">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
+4. <span data-ttu-id="94539-112">**Microsoft** タイルで**リポジトリ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94539-112">On the **Microsoft** tile, click **Repositories**.</span></span>
 
-    <span data-ttu-id="ed10f-113">[![MS オープン MS リポジトリ リスト用 LCS からの ER 更新](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="ed10f-113">[![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
+    <span data-ttu-id="94539-113">[![MS オープン MS リポジトリ リスト用 LCS からの ER 更新](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="94539-113">[![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
 
-5. <span data-ttu-id="ed10f-114">**コンフィギュレーション リポジトリ** ページのグリッドで、**LCS** タイプの既存のリポジトリを選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-114">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="ed10f-115">このリポジトリがグリッドに表示されない場合は、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ed10f-115">If this repository doesn't appear in the grid, follow these steps:</span></span>
+5. <span data-ttu-id="94539-114">**コンフィギュレーション リポジトリ** ページのグリッドで、**LCS** タイプの既存のリポジトリを選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-114">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="94539-115">このリポジトリがグリッドに表示されない場合は、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="94539-115">If this repository doesn't appear in the grid, follow these steps:</span></span>
 
-    1. <span data-ttu-id="ed10f-116">**追加**をクリックして新しいリポジトリを追加します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-116">Click **Add** to add a new repository.</span></span>
-    2. <span data-ttu-id="ed10f-117">リポジトリ タイプとして、**LCS** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-117">Select **LCS** as the repository type.</span></span>
-    3. <span data-ttu-id="ed10f-118">**リポジトリの作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ed10f-118">Click **Create repository**.</span></span>
-    4. <span data-ttu-id="ed10f-119">メッセージが表示されたら、承認の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="ed10f-119">If prompted, follow the authorization instructions.</span></span>
-    5. <span data-ttu-id="ed10f-120">リポジトリの名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-120">Enter a name and description for the repository.</span></span>
-    6. <span data-ttu-id="ed10f-121">**OK** をクリックして、新しいリポジトリ エントリを確認します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-121">Click **OK** to confirm the new repository entry.</span></span>
-    7. <span data-ttu-id="ed10f-122">グリッドで、**LCS** タイプの新しいリポジトリを選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-122">In the grid, select the new repository of the **LCS** type.</span></span>
+    1. <span data-ttu-id="94539-116">**追加**をクリックして新しいリポジトリを追加します。</span><span class="sxs-lookup"><span data-stu-id="94539-116">Click **Add** to add a new repository.</span></span>
+    2. <span data-ttu-id="94539-117">リポジトリ タイプとして、**LCS** を選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-117">Select **LCS** as the repository type.</span></span>
+    3. <span data-ttu-id="94539-118">**リポジトリの作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="94539-118">Click **Create repository**.</span></span>
+    4. <span data-ttu-id="94539-119">メッセージが表示されたら、承認の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="94539-119">If prompted, follow the authorization instructions.</span></span>
+    5. <span data-ttu-id="94539-120">リポジトリの名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="94539-120">Enter a name and description for the repository.</span></span>
+    6. <span data-ttu-id="94539-121">**OK** をクリックして、新しいリポジトリ エントリを確認します。</span><span class="sxs-lookup"><span data-stu-id="94539-121">Click **OK** to confirm the new repository entry.</span></span>
+    7. <span data-ttu-id="94539-122">グリッドで、**LCS** タイプの新しいリポジトリを選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-122">In the grid, select the new repository of the **LCS** type.</span></span>
 
-6. <span data-ttu-id="ed10f-123">**開く**をクリックして、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-123">Click **Open** to view the list of ER configurations for the selected repository.</span></span>
+6. <span data-ttu-id="94539-123">**開く**をクリックして、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="94539-123">Click **Open** to view the list of ER configurations for the selected repository.</span></span>
 
-    <span data-ttu-id="ed10f-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="ed10f-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
+    <span data-ttu-id="94539-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="94539-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
 
-7. <span data-ttu-id="ed10f-125">左ウィンドウのコンフィギュレーション ツリーで必要な ER コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-125">In the configurations tree in the left pane, select the ER configuration that you require.</span></span>
-8. <span data-ttu-id="ed10f-126">**バージョン**クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ed10f-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
-9. <span data-ttu-id="ed10f-127">**インポート**をクリックして、LCS から現在のインスタンスに選択したバージョンをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="ed10f-127">Click **Import** to download the selected version from LCS to the current instance.</span></span>
+7. <span data-ttu-id="94539-125">左ウィンドウのコンフィギュレーション ツリーで必要な ER コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-125">In the configurations tree in the left pane, select the ER configuration that you require.</span></span>
+8. <span data-ttu-id="94539-126">**バージョン**クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="94539-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
+9. <span data-ttu-id="94539-127">**インポート**をクリックして、LCS から現在のインスタンスに選択したバージョンをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="94539-127">Click **Import** to download the selected version from LCS to the current instance.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="ed10f-128">**インポート**ボタンは、現在のインスタンスにある ER コンフィギュレーション バージョンでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="ed10f-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
+    > <span data-ttu-id="94539-128">**インポート**ボタンは、現在のインスタンスにある ER コンフィギュレーション バージョンでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="94539-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
 
-    <span data-ttu-id="ed10f-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="ed10f-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
+    <span data-ttu-id="94539-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="94539-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ed10f-130">ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。</span><span class="sxs-lookup"><span data-stu-id="ed10f-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="ed10f-131">不整合の問題が検出されると、通知を受け取る場合があります。</span><span class="sxs-lookup"><span data-stu-id="ed10f-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="ed10f-132">インポートしたコンフィギュレーションのバージョンを使用する前に、それらの問題を解決する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ed10f-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="ed10f-133">詳細については、このトピックの関連記事の一覧を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ed10f-133">For more information, see the list of related articles for this topic.</span></span>
+> <span data-ttu-id="94539-130">ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。</span><span class="sxs-lookup"><span data-stu-id="94539-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="94539-131">不整合の問題が検出されると、通知を受け取る場合があります。</span><span class="sxs-lookup"><span data-stu-id="94539-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="94539-132">インポートしたコンフィギュレーションのバージョンを使用する前に、それらの問題を解決する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94539-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="94539-133">詳細については、このトピックの関連記事の一覧を参照してください。</span><span class="sxs-lookup"><span data-stu-id="94539-133">For more information, see the list of related articles for this topic.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ed10f-134">追加リソース</span><span class="sxs-lookup"><span data-stu-id="ed10f-134">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="94539-134">追加リソース</span><span class="sxs-lookup"><span data-stu-id="94539-134">Additional resources</span></span>
 
-[<span data-ttu-id="ed10f-135">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="ed10f-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="94539-135">電子申告 (ER) の概要</span><span class="sxs-lookup"><span data-stu-id="94539-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
