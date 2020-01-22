@@ -18,49 +18,47 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aa50b2ec688a97a1aeeb9621ad6fa3600cd06318
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1d6b5f5f7b62c400679df5eb014dee05f02e11d0
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550185"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897491"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-november-27-2018"></a><span data-ttu-id="e82a8-103">Dynamics 365 Talent - Core HR (2018 年 11 月 27 日) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="e82a8-103">What's new or changed in Dynamics 365 Talent - Core HR (November 27, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-november-27-2018"></a><span data-ttu-id="c34ef-103">Dynamics 365 Talent - Core HR (2018 年 11 月 27 日) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="c34ef-103">What's new or changed in Dynamics 365 Talent - Core HR (November 27, 2018)</span></span>
 
-[!include [banner](includes/banner.md)]
+<span data-ttu-id="c34ef-104">**ビルド 8.1.2064**</span><span class="sxs-lookup"><span data-stu-id="c34ef-104">**Build 8.1.2064**</span></span>
 
-<span data-ttu-id="e82a8-104">**ビルド 8.1.2064**</span><span class="sxs-lookup"><span data-stu-id="e82a8-104">**Build 8.1.2064**</span></span>
-
-<span data-ttu-id="e82a8-105">このトピックでは、Core HR の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="e82a8-105">This topic describes features that are either new or changed in Core HR.</span></span>
+<span data-ttu-id="c34ef-105">このトピックでは、Core HR の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="c34ef-105">This topic describes features that are either new or changed in Core HR.</span></span>
 
 
-## <a name="changes"></a><span data-ttu-id="e82a8-106">変更</span><span class="sxs-lookup"><span data-stu-id="e82a8-106">Changes</span></span>
+## <a name="changes"></a><span data-ttu-id="c34ef-106">変更</span><span class="sxs-lookup"><span data-stu-id="c34ef-106">Changes</span></span>
 
-### <a name="unable-to-create-a-note-in-case-management"></a><span data-ttu-id="e82a8-107">ケース管理にメモを作成できない</span><span class="sxs-lookup"><span data-stu-id="e82a8-107">Unable to create a note in Case Management</span></span>
+### <a name="unable-to-create-a-note-in-case-management"></a><span data-ttu-id="c34ef-107">ケース管理にメモを作成できない</span><span class="sxs-lookup"><span data-stu-id="c34ef-107">Unable to create a note in Case Management</span></span>
 
-<span data-ttu-id="e82a8-108">ケース管理のケース ログでメモを編集または作成しようとするときの問題のために、変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="e82a8-108">A change has been made for an issue when attempting to edit or create a note in the case log of Case Management.</span></span>
+<span data-ttu-id="c34ef-108">ケース管理のケース ログでメモを編集または作成しようとするときの問題のために、変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="c34ef-108">A change has been made for an issue when attempting to edit or create a note in the case log of Case Management.</span></span>
 
-### <a name="misspelled-word-on-the-analytics-tab-in-the-compensation-workspace"></a><span data-ttu-id="e82a8-109">報酬のワークスペースの分析タブでの誤った表記の単語</span><span class="sxs-lookup"><span data-stu-id="e82a8-109">Misspelled word on the analytics tab in the compensation workspace</span></span> 
+### <a name="misspelled-word-on-the-analytics-tab-in-the-compensation-workspace"></a><span data-ttu-id="c34ef-109">報酬のワークスペースの分析タブでの誤った表記の単語</span><span class="sxs-lookup"><span data-stu-id="c34ef-109">Misspelled word on the analytics tab in the compensation workspace</span></span> 
 
-<span data-ttu-id="e82a8-110">報酬ワークスペースの、報酬分析グラフの「Ethnic Origin」のスペルを修正するための変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="e82a8-110">A change has been made to correct the spelling of 'Ethnic Origin' in the compensation analytics chart in the compensation workspace.</span></span>
+<span data-ttu-id="c34ef-110">報酬ワークスペースの、報酬分析グラフの「Ethnic Origin」のスペルを修正するための変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="c34ef-110">A change has been made to correct the spelling of 'Ethnic Origin' in the compensation analytics chart in the compensation workspace.</span></span>
 
-### <a name="employee-self-service-workspace-not-displaying-when-a-user-isnt-assigned-to-a-worker"></a><span data-ttu-id="e82a8-111">従業員セルフ サービス ワークスペースは、ユーザーが作業者に割り当てられていないときには表示されない</span><span class="sxs-lookup"><span data-stu-id="e82a8-111">Employee self-service workspace not displaying when a user isn't assigned to a worker</span></span> 
+### <a name="employee-self-service-workspace-not-displaying-when-a-user-isnt-assigned-to-a-worker"></a><span data-ttu-id="c34ef-111">従業員セルフ サービス ワークスペースは、ユーザーが作業者に割り当てられていないときには表示されない</span><span class="sxs-lookup"><span data-stu-id="c34ef-111">Employee self-service workspace not displaying when a user isn't assigned to a worker</span></span> 
 
-<span data-ttu-id="e82a8-112">**従業員セルフ サービス** ワークスペースが、作業者に割り当てられていないユーザーの起動時の最初のページとして選択されているときに変更されました。</span><span class="sxs-lookup"><span data-stu-id="e82a8-112">A change has been made when the **Employee self-service** workspace is selected as the initial page on startup for a user who is not assigned to a worker.</span></span> <span data-ttu-id="e82a8-113">この状況では、既定のダッシュ ボードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e82a8-113">In this situation, the default dashboard will be displayed.</span></span>
+<span data-ttu-id="c34ef-112">**従業員セルフ サービス** ワークスペースが、作業者に割り当てられていないユーザーの起動時の最初のページとして選択されているときに変更されました。</span><span class="sxs-lookup"><span data-stu-id="c34ef-112">A change has been made when the **Employee self-service** workspace is selected as the initial page on startup for a user who is not assigned to a worker.</span></span> <span data-ttu-id="c34ef-113">この状況では、既定のダッシュ ボードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c34ef-113">In this situation, the default dashboard will be displayed.</span></span>
 
-### <a name="leave-and-absence-error-object-reference-not-set-to-an-instance-of-an-object"></a><span data-ttu-id="e82a8-114">休暇と欠勤エラー: オブジェクト参照がオブジェクトのインスタンスに設定されていない</span><span class="sxs-lookup"><span data-stu-id="e82a8-114">Leave and Absence error: Object reference not set to an instance of an object</span></span>
+### <a name="leave-and-absence-error-object-reference-not-set-to-an-instance-of-an-object"></a><span data-ttu-id="c34ef-114">休暇と欠勤エラー: オブジェクト参照がオブジェクトのインスタンスに設定されていない</span><span class="sxs-lookup"><span data-stu-id="c34ef-114">Leave and Absence error: Object reference not set to an instance of an object</span></span>
 
-<span data-ttu-id="e82a8-115">**自分自身に割り当てられた作業項目**リストに休暇と欠勤の記録を承認した後、このエラーを修正するための休暇と欠勤への変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="e82a8-115">Changes have been made to Leave and Absence to correct this error after approving leave and absence records in the **Work items assigned to me** list.</span></span>
+<span data-ttu-id="c34ef-115">**自分自身に割り当てられた作業項目**リストに休暇と欠勤の記録を承認した後、このエラーを修正するための休暇と欠勤への変更が加えられました。</span><span class="sxs-lookup"><span data-stu-id="c34ef-115">Changes have been made to Leave and Absence to correct this error after approving leave and absence records in the **Work items assigned to me** list.</span></span>
 
-### <a name="unable-to-recall-an-image-workflow"></a><span data-ttu-id="e82a8-116">イメージのワークフローを取り消すことができない</span><span class="sxs-lookup"><span data-stu-id="e82a8-116">Unable to recall an image workflow</span></span>
+### <a name="unable-to-recall-an-image-workflow"></a><span data-ttu-id="c34ef-116">イメージのワークフローを取り消すことができない</span><span class="sxs-lookup"><span data-stu-id="c34ef-116">Unable to recall an image workflow</span></span>
 
-<span data-ttu-id="e82a8-117">イメージのワークフローを取り消した後は、ワークフローは「キャンセル済」に設定され、従業員セルフ サービス ワークスペースの既存の要求を削除することができます。</span><span class="sxs-lookup"><span data-stu-id="e82a8-117">After recalling an image workflow, the workflow will be set to "cancelled" and the existing request can be deleted in the employee self-service workspace.</span></span>
+<span data-ttu-id="c34ef-117">イメージのワークフローを取り消した後は、ワークフローは「キャンセル済」に設定され、従業員セルフ サービス ワークスペースの既存の要求を削除することができます。</span><span class="sxs-lookup"><span data-stu-id="c34ef-117">After recalling an image workflow, the workflow will be set to "cancelled" and the existing request can be deleted in the employee self-service workspace.</span></span>
 
-### <a name="rehired-employees-or-contractors-show-up-multiple-times-after-termination"></a><span data-ttu-id="e82a8-118">退職後に何度も表示される再雇用された従業員や契約社員</span><span class="sxs-lookup"><span data-stu-id="e82a8-118">Rehired employees or contractors show up multiple times after termination</span></span> 
+### <a name="rehired-employees-or-contractors-show-up-multiple-times-after-termination"></a><span data-ttu-id="c34ef-118">退職後に何度も表示される再雇用された従業員や契約社員</span><span class="sxs-lookup"><span data-stu-id="c34ef-118">Rehired employees or contractors show up multiple times after termination</span></span> 
 
-<span data-ttu-id="e82a8-119">この更新により、再雇用されて退職した従業員は退職リストに 1 回のみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="e82a8-119">With this update, terminated employees that are rehired will only display one time in the exited list.</span></span> 
+<span data-ttu-id="c34ef-119">この更新により、再雇用されて退職した従業員は退職リストに 1 回のみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="c34ef-119">With this update, terminated employees that are rehired will only display one time in the exited list.</span></span> 
 
-## <a name="known-issue"></a><span data-ttu-id="e82a8-120">既知の問題</span><span class="sxs-lookup"><span data-stu-id="e82a8-120">Known issue</span></span>
+## <a name="known-issue"></a><span data-ttu-id="c34ef-120">既知の問題</span><span class="sxs-lookup"><span data-stu-id="c34ef-120">Known issue</span></span>
 
-- <span data-ttu-id="e82a8-121">**問題**: 作業者に新しい添付ファイルを追加する時、**新規**および**編集**ボタンが灰色表示になります。</span><span class="sxs-lookup"><span data-stu-id="e82a8-121">**Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out.</span></span> 
-- <span data-ttu-id="e82a8-122">**回避策:** 添付ファイル ページを開く前に、**作業者**ページの Factbox が閉じていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e82a8-122">**Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="e82a8-123">**作業者**ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。</span><span class="sxs-lookup"><span data-stu-id="e82a8-123">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="e82a8-124">(この問題は次のプラットフォーム更新プログラムで修正されます。)</span><span class="sxs-lookup"><span data-stu-id="e82a8-124">(This issue will be fixed in the next platform update.)</span></span>
+- <span data-ttu-id="c34ef-121">**問題**: 作業者に新しい添付ファイルを追加する時、**新規**および**編集**ボタンが灰色表示になります。</span><span class="sxs-lookup"><span data-stu-id="c34ef-121">**Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out.</span></span> 
+- <span data-ttu-id="c34ef-122">**回避策:** 添付ファイル ページを開く前に、**作業者**ページの Factbox が閉じていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="c34ef-122">**Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="c34ef-123">**作業者**ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。</span><span class="sxs-lookup"><span data-stu-id="c34ef-123">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="c34ef-124">(この問題は次のプラットフォーム更新プログラムで修正されます。)</span><span class="sxs-lookup"><span data-stu-id="c34ef-124">(This issue will be fixed in the next platform update.)</span></span>
