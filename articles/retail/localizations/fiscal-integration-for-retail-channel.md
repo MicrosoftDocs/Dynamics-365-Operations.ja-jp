@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812310"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915250"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の概要
 
@@ -138,9 +138,14 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 - [ポーランド向け会計プリンター統合サンプル](emea-pol-fpi-sample.md)
 - [オーストリア向け会計登録サービス統合サンプル](emea-aut-fi-sample.md)
 - [チェコ共和国向け会計登録サービス統合サンプル](emea-cze-fi-sample.md)
+- [スウェーデン向け制御ユニットの統合サンプル](./emea-swe-fi-sample.md)
 
 次の会計統合機能は、Retail SDK でも利用可能ですが、現在は会計統合フレームワークを利用していません。 この機能の会計統合フレームワークへの移行は、今後の更新で予定されています。
 
-- [フランスのキャッシュ レジスター機能](emea-fra-cash-registers.md)
-- [ノルウェイのキャッシュ レジスター機能](emea-nor-cash-registers.md)
-- [スウェーデン用の管理単位との Retail POS の統合](./retail-sdk-control-unit-sample.md)
+
+- [フランス向けデジタル署名](emea-fra-cash-registers.md)
+- [ノルウェー向けデジタル署名](emea-nor-cash-registers.md)
+
+Retail SDK で使用可能な次のレガシ会計統合機能は、会計統合フレームワークを使用せず、それ以降の更新では推奨されません。
+
+- [スウェーデン向け制御ユニットの統合サンプル (レガシ)](./retail-sdk-control-unit-sample.md)

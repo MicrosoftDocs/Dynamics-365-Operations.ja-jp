@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832818"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898692"
 ---
 # <a name="formalize-business-processes"></a>業務プロセスの形式化
-
-[!include [banner](includes/banner.md)]
 
 業務プロセス機能を使用すると、組織内で完了する必要のある業務プロセス用の業務プロセス テンプレートを作成できます。 たとえば、会社が毎年人事管理 (HR) 監査を完了するとします。 この場合、監査プロセスを構成するすべてのタスクを追跡するテンプレートを作成することができます。 このテンプレートにより、監査が行われるたびにすべてのタスクが行われたことを保証できます。 また、タスクが特定の順序で行われる必要がある場合、テンプレートにより、それらが正しい順序で行われたことも保証できます。
 

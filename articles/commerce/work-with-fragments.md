@@ -3,7 +3,7 @@ title: フラグメントで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d92b9077f8584bfa0710bbaacbc7caa3220baa4a
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698099"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914703"
 ---
 # <a name="work-with-fragments"></a>フラグメントで動作 
 
@@ -126,3 +126,5 @@ ms.locfileid: "2698099"
 [テンプレートの使用](work-with-templates.md)
 
 [プリセット レイアウトの使用](work-with-layouts.md)
+
+[公開グループで動作](publish-groups.md)

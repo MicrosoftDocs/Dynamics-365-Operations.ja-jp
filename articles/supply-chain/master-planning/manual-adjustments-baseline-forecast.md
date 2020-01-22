@@ -3,7 +3,7 @@ title: ベースライン予測に対して手動調整を行う
 description: このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1c9963a54a052549a6bfeabcb3d91b7b0f3cf68e
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815137"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935419"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -70,8 +70,9 @@ ms.locfileid: "2815137"
 
 **メモ :**
 
+-   機能管理から**需要予測詳細における予測モデルの選択**を有効にすると、**需要予測の詳細**ページで、過去の予測に含める予測モデルを選択できるようになります。
 -   このページの **予測** セクションに表示される信頼区間は、信頼区間の上限と信頼区間の下限の差を表します。 上限と下限の値を確認するには、**履歴需要と予測のグラフィック表示** セクションでグラフをポイントします。
--   需要予測 Microsoft Azure Machine Learning サービスを使用する際は、生成される予測に必要な信頼レベルの割合を指定できます。 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルは、需要予測が信頼区間の範囲外になるリスクが 5% あることを示します。
+-   需要予測 Microsoft Azure Machine Learning を使用する際は、生成される予測に必要な信頼レベルの割合を指定できます。 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルは、需要予測が信頼区間の範囲外になるリスクが 5% あることを示します。
 
 また、**予測** セクションの **予測** 行の値を変更することによって、**需要予測の詳細** ページで予測に手動調整を加えることもできます。
 

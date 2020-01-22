@@ -3,7 +3,7 @@ title: ユーザーのサインインに対するカスタム ページの設定
 description: このトピックでは Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697569"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945562"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>ユーザー ログイン用のカスタム ページの設定
 
@@ -136,11 +136,11 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの**�
 1. 以前にコンフィギュレーションした**サインインと登録**ポリシーで、ナビゲーション ウィンドウで、**ページ レイアウト**を選択します。
 1. **統一登録またはサインインのページ**のレイアウトを選択します。
 1. **カスタム ページ コンテンツの使用**オプションを、**はい**に設定します。
-1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、**www.\<my domain\>.com/sign-in?preloadscripts=true** と入力します。
+1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、「``www.<my domain>.com/sign-in?preloadscripts=true``」を入力します。
 1. **ページ レイアウト バージョン (プレビュー)** フィールドで、**1.2.0** を選択します。
 1. **ローカル アカウントの登録ページ**のレイアウトを選択します。
 1. **カスタム ページ コンテンツの使用**オプションを、**はい**に設定します。
-1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、**www.\<my domain\>.com/sign-in?preloadscripts=true** と入力します。
+1. **カスタム ページの URI** フィールドに、完全なサインアップ URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、「``www.<my domain>.com/sign-up?preloadscripts=true``」を入力します。
 1. **ページ レイアウト バージョン (プレビュー)** フィールドで、**1.2.0** を選択します。
 1. **ユーザー属性** セクションで、次の手順を実行します。
 
@@ -156,7 +156,7 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの**�
 1. 以前にコンフィギュレーションした**プロファイル編集**ポリシーで、ナビゲーション ウィンドウで、**ページ レイアウト**を選択します。
 1. **プロファイル編集ページ**のレイアウトを選択します。
 1. **カスタム ページ コンテンツの使用**オプションを、**はい**に設定します。
-1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、**www.\<my domain\>.com/sign-in?preloadscripts=true** と入力します。
+1. **カスタム ページの URI** フィールドに、完全なプロファイル編集 URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、「``www.<my domain>.com/profile-edit?preloadscripts=true``」を入力します。
 1. **ページ レイアウト バージョン (プレビュー)** フィールドで、**1.2.0** を選択します。
 1. **ユーザー属性** セクションで、次の手順を実行します。
 
@@ -170,12 +170,14 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの**�
 1. 以前にコンフィギュレーションした**パスワードのリセット** ポリシーで、ナビゲーション ウィンドウで、**ページ レイアウト**を選択します。
 1. **新しいパスワード ページ**のレイアウトを選択します。
 1. **カスタム ページ コンテンツの使用**オプションを、**はい**に設定します。
-1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、**www.\<my domain\>.com/sign-in?preloadscripts=true** と入力します。
+1. **カスタム ページの URI** フィールドに、完全なパスワード リセット URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、「``www.<my domain>.com/passwordreset?preloadscripts=true``」を入力します。
 1. **ページ レイアウト バージョン (プレビュー)** フィールドで、**1.2.0** を選択します。
 1. **アカウントの検証ページ**のレイアウトを選択します。
 1. **カスタム ページ コンテンツの使用**オプションを、**はい**に設定します。
-1. **カスタム ページのURI** フィールドに、完全なサインイン URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、**www.\<my domain\>.com/sign-in?preloadscripts=true** と入力します。
+1. **カスタム ページの URI** フィールドに、完全なパスワード リセット検証 URL を入力します。 **preloadscripts=true** 接尾語を含めます。 たとえば、「``www.<my domain>.com/passwordreset-verification?preloadscripts=true``」を入力します。
 1. **ページ レイアウト バージョン (プレビュー)** フィールドで、**1.2.0** を選択します。
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>ラベルと説明の既定のテキスト文字列のカスタマイズ
 
@@ -193,15 +195,15 @@ global.json ファイルを更新して変更内容を公開すると、コマ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オンライン ストアの概要](online-store-overview.md)
-
-[E コマース サイトの作成](create-ecommerce-site.md)
+[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [新しい E コマース サイトの配置](deploy-ecommerce-site.md)
 
+[E コマース サイトの作成](create-ecommerce-site.md)
+
 [チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
 
-[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
+[robots.txt ファイルの管理](manage-robots-txt-files.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 

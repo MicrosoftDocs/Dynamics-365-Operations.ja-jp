@@ -3,7 +3,7 @@ title: オムニ チャネル支払の概要
 description: このトピックでは、Dynamics 365 Retail でのオムニ チャネルの支払概要を示します。
 author: rubendel
 manager: AnnBe
-ms.date: 05/12/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e20662eb9b8530edf2ebe6c1e7ce07ad18aba286
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017577"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2854015"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 
@@ -58,7 +58,7 @@ ms.locfileid: "2017577"
 
 #### <a name="card-present-and-card-not-present-connectors"></a>「カードあり」と「カードなし」のコネクタ
 
-支払 SDK は、2 セットの支払い用アプリケーション プログラミング インターフェイス (APIs) に依存します。 最初の APIs セットは、**iPaymentProcessor** と呼ばれます。 これは、コール センターおよび Microsoft Dynamics 電子商取引プラットフォームで使用できる「カードなし」の支払コネクタを実装するために使用されます。 **iPaymentProcessor** インターファイスについては、支払いをカバーする[支払コネクタと支払デバイスの実装](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) ホワイト ペーパーを参照してください。 
+支払 SDK は、2 セットの支払い用アプリケーション プログラミング インターフェイス (APIs) に依存します。 最初の APIs セットは、**iPaymentProcessor** と呼ばれます。 これは、コール センターおよび Microsoft Dynamics 電子商取引プラットフォームで使用できる「カードなし」の支払コネクタを実装するために使用されます。 **iPaymentProcessor** インターファイスについては、支払いをカバーする[支払コネクタと支払デバイスの実装](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) ホワイト ペーパーを参照してください。 
 
 2 番目の APIs セットは、**iNamedRequestHandler** と呼ばれます。 この機能は、支払ターミナルを使用する「カードあり」の支払統合をサポートします。 **INamedRequestHandler** インターフェイスの詳細については、[支払ターミナルの支払統合を作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension) を参照してください。 
 

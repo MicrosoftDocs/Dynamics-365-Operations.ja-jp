@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8f790cae031b1a1d97f5409974b5d024ed6ceec5
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 11f200f2d9e58940ea8ddd4f626203fa3802ca01
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814562"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898021"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>会社固有の人事管理 (HR) パラメーターの設定
-
-[!include [banner](includes/banner.md)]
 
 他のパラメーター設定は会社固有ですが、人事管理 (HR) のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。
 

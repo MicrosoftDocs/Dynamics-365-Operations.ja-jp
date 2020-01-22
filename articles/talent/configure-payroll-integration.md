@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 075b2bdfa08bb190f66b6d60074e1263feedcf70
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251042"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898539"
 ---
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の給与統合のコンフィギュレーション
-
-[!include [banner](includes/banner.md)]
+# <a name="configure-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の給与統合のコンフィギュレーション
 
 Microsoft Dynamics 365 Talent および Ceridian Dayforce 間での統合は、このトピックで説明するいくつかのコンフィギュレーション手順に依存します。 支払の実行を処理する前に、Talent および Dayforce の両方で、統合をコンフィギュレーションする必要があります。
 

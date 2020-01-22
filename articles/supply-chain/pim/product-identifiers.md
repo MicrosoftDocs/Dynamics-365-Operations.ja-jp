@@ -3,12 +3,12 @@ title: 製品 ID
 description: このトピックでは、さまざまな種類の製品 ID に関する情報を提供し、製品データに製品 ID を追加する方法について説明します。
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250602"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934889"
 ---
 # <a name="product-identifiers"></a>製品 ID 
 
@@ -43,6 +43,9 @@ Dynamics 365 Supply Chain Management では、製品の主要な識別子は製�
 Supply Chain Management を実装するときは、製品番号の戦略を特に考慮する必要があります。 適正な番号付けシステムは、物流フローが改善され、エラーを防ぐのに役立ちます。 適正な商品 ID は、最大 15 の文字です。 原則的には、10 文字未満で、5 つ以上の分類文字が含まれています。 高速検索を有効にするため、検索名を使用することもできます。 検索名は、製品の分類を表す追加の名前です。
 
 Common Data Service を使用すると、Supply Chain Management の製品番号も、Common Data Service の製品番号になります。 製品バリアントは、特徴的製品として Common Data Service に同期されます。
+
+> [!NOTE]
+> 製品番号を「%」で開始することはできません。
 
 ## <a name="item-number-and-product-dimensions"></a>品目番号および製品分析コード
 

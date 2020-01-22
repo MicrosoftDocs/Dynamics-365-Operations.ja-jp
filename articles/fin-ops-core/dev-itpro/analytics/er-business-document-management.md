@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824523"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933911"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
-ビジネス ユーザーは、[電子申告 (ER) の概要](general-electronic-reporting.md) を使用し、さまざまな国 / 地域の法的要件に従って発信ドキュメントの形式を構成できます。 また、生成されるドキュメントに配置されるアプリケーション データを指定するため、データフローを定義することもできます。 ER フレームワークは、定義済みテンプレートを使用して、Microsoft Office 形式 (Excel Workbooks または Word ドキュメント) で発信ドキュメントを生成します。 必要なドキュメントが生成されるときに、構成されたデータフローに従って、テンプレートに必要なデータが設定されます。 特定の発信ドキュメントを生成するために、ER ソリューションの一部として、構成された各形式を公開できます。 これは、異なる発信ドキュメントを生成するために使用できるテンプレートを含める ER 形式コンフィギュレーションによって、表示されます。 ビジネス ユーザーは、このフレームワークを使用して、必要なビジネス ドキュメントを管理できます。
+ビジネス ユーザーは、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国 / 地域の法的要件に従って発信ドキュメントの形式を構成できます。 また、生成されるドキュメントに配置されるアプリケーション データを指定するため、データフローを定義することもできます。 ER フレームワークは、定義済みテンプレートを使用して、Microsoft Office 形式 (Excel Workbooks または Word ドキュメント) で発信ドキュメントを生成します。 必要なドキュメントが生成されるときに、構成されたデータフローに従って、テンプレートに必要なデータが設定されます。 特定の発信ドキュメントを生成するために、ER ソリューションの一部として、構成された各形式を公開できます。 これは、異なる発信ドキュメントを生成するために使用できるテンプレートを含める ER 形式コンフィギュレーションによって、表示されます。 ビジネス ユーザーは、このフレームワークを使用して、必要なビジネス ドキュメントを管理できます。
 
 **ビジネス ドキュメント管理**は、ER フレームワークを基盤に構築されており、ビジネス ユーザーが Microsoft Office 365 サービスまたは適切な Microsoft Office デスクトップ アプリケーションを使用して、ビジネス ドキュメント テンプレートを編集することができます。 ドキュメントを編集する際には、ビジネス ドキュメントのデザインを変更したり、ソース コードの変更および新しい配置無しで、追加データ用のプレス ホルダーを追加したりします。 ER フレームワークには、ビジネス ドキュメントのテンプレートを更新するために必要な知識がありません。
 
@@ -59,7 +59,7 @@ Microsoft Office のデスクトップ アプリケーションを使用して�
 
 さらに多くのレポートが使用可能になります。 追加のレポートに関する特別な通知は、個別に送信されます。 
 
-2019 年 10 月のリリースに予定されているすべてのレポートの全一覧は、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) に表示されています。 この機能の詳細を知るには、このトピックの例を実行します。
+2019 年 10 月のリリースに予定されているすべてのレポートの全一覧は、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) に表示されています。 この機能の詳細を知るには、このトピックの例を実行します。
 
 ## <a name="configure-er-parameters"></a>ER パラメーターのコンフィギュレーション
 

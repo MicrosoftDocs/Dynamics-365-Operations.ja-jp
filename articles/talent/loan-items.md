@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 73ffe05d8c869418f7601025e8ce19e1b05c952f
-ms.sourcegitcommit: 0dd8d0510214f92936a9dd214b404c5c8103587b
+ms.openlocfilehash: 03dbc4028ecd6e6247e20119c5c8be806b350406
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2419249"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898274"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>作業者へ貸与された品目の管理
-
-[!include [banner](includes/banner.md)]
 
 貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。 
 

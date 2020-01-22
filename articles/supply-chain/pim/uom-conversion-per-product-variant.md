@@ -3,12 +3,12 @@ title: 製品バリアントごとの測定単位の変換
 description: このトピックでは、測定単位の変換を製品バリアントに設定する方法について説明します。
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249451"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935102"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 このトピックでは、測定単位の変換を製品バリアントに設定する方法について説明します。 これには、設定の例が含まれています。
 
 この機能により、会社は同じ製品のバリアント間で異なる単位換算を定義することができます。 このトピックでは次の例が使用されます。 ある会社が S、M、L および XL のサイズの T シャツを販売しています。 T シャツは製品として定義され、また製品のバリアントとして異なるサイズが定義されています。 T シャツはボックスに梱包することができ、1 つのボックスに 5 枚の T シャツが入りますが、XL サイズは 4 枚だけ入ります。 会社は**個**単位で T シャツの異なるバリアントを追跡する必要がありますが、T シャツは**ボックス**単位で販売されています。 在庫単位と販売単位の間の変換は 1 ボックス = 5 個で、XL のバリアントの場合は 1 ボックス = 4 個になります。
-
-## <a name="setup"></a>セットアップ
-
-**製品情報パラメーター** ページの**測定単位変換の有効化**オプションを使用し、**すべてのプロセス**に有効化された製品、または**倉庫プロセス**にのみ有効化された製品の機能を使用してパラメーターを構成することができます。
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>バリアントごとの単位変換の製品の設定
 
 製品バリアントは**製品サブタイプ**の製品に対してのみ作成することができます: **製品マスター**。 詳細については、[製品マスターの作成](tasks/create-product-master.md) を参照してください。
 
 この機能は CW プロセスに設定されている製品には有効ではありません。 
-
-製品マスターの作成中に、**製品の詳細**ページの**測定単位の変換の有効化**オプションを使用して測定単位の変換を有効にします。
 
 製品マスターとリリース済製品バリアントが作成された場合、バリアントごとに単位変換を設定することができます。 次のページの製品または製品バリアントのコンテキスト内で単位変換ページを開くためのメニュー項目については、こちらをご覧ください。
 

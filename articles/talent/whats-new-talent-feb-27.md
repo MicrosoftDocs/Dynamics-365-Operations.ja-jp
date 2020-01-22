@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024002"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897675"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 27 日)
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -90,7 +88,7 @@ Microsoft Dynamics 365 Finance and Operations のプラットフォーム更新�
 ### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Core HR 統合テンプレートに対する変更 (Talent Common Data Service から Finance)
 Core HR のテンプレートは、「高度なクエリ テンプレート」に更新されています。 したがって、既定では、高度なクエリはこのテンプレートを使用して作成されたプロジェクトに使用できます。 さらに、既定のマッピング機能は、高度なクエリ エディターでのみ表示されます。 (既定のマッピング機能は「FN」としてマッピングに表示されます)。
 
-マッピング エラーの詳細については、[Dynamics 365 Talent: Core HR (2018 年 12 月 14 日) の新機能および変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14) を参照してください。
+マッピング エラーの詳細については、[Dynamics 365 Talent: Core HR の新機能または変更された機能 (2018 年 12 月 14 日)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14) を参照してください。
 
 新しいテンプレートを使用するには、新しいプロジェクトを作成し、新しい Talent 統合テンプレートを選択します。
 

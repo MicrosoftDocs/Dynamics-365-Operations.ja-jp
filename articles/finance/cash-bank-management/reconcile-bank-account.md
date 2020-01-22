@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e1281171a656a73a35d4990fd8a34b35c1c6db8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdfc65d02d4468aee094a92e6760400c5e25af8f
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188283"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888658"
 ---
 # <a name="reconcile-a-bank-account"></a>銀行口座の調整
 
@@ -64,7 +64,7 @@ ms.locfileid: "2188283"
 
 8.  未調整の銀行トランザクションを表示するには、**未調整銀行トランザクション**レポートを使用します。 銀行口座の口座取引明細書を表示するには、**口座取引明細書**レポートを使用します。
 
-# <a name="cancel-bank-statement-reconciliation"></a>口座取引明細書調整のキャンセル 
+## <a name="cancel-bank-statement-reconciliation"></a>口座取引明細書調整のキャンセル 
 
 口座取引明細書調整のキャンセル機能を使用すると、口座取引明細書調整をキャンセルできます。 この機能を使用するには、**機能管理**ワークスペースで**口座取引明細書調整のキャンセル**機能を有効にします。 また、**口座取引明細書の編集を許可**パラメーターを有効にする必要があります。 これを行うには、**現金および銀行管理 > 設定 > 現金および銀行管理パラメーター > 口座調整**の順に移動します。
  

@@ -1,0 +1,92 @@
+---
+title: Commerce プレビュー環境に関するよく寄せられる質問
+description: このトピックでは、Microsoft Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問に対する回答を示します。
+author: v-chgri
+manager: annbe
+ms.date: 12/10/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: v-chgri
+ms.search.validFrom: 2019-12-10
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
+ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "2906096"
+---
+# <a name="commerce-preview-environment-faq"></a>Commerce プレビュー環境に関するよく寄せられる質問
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+このトピックでは、Microsoft Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問に対する回答を示します。
+
+**Commerce プレビュー環境の招待を別のテナントに転送することはできますか ?**
+
+はい。 招待の転送に関しては、[Commerce プレビューの転送フォーム](https://aka.ms/Dynamics365CommercePreviewTransferForm) を使用できます。
+
+**招待の転送にはどのくらい時間がかかりますか ?**
+
+転送には平均で約 3 ～ 5 営業日かかります。 ただし、例外が適用される場合があります。
+
+**Commerce プレビュー環境は、Dynamics 365 Finance または Dynamics 365 サプライ チェーン プロジェクトと連携しますか ?**
+
+一連番号 Commerce プレビュー環境は Dynamics 365 Retail プロジェクトでのみ機能します。
+
+**現在 Retail を実装する顧客に対して、Commerce プレビュー環境を E コマース店舗として使用できますか ?**
+
+一連番号 Commerce プレビュー環境は単なる評価環境です。 Retail を実装する顧客に環境が必要な場合は、Microsoft にお問い合わせください。
+
+**Commerce プレビュー環境を使用して、Retail を実装する既存のアプリケーション/環境の上に E コマース機能をプロビジョニングできますか ?**
+
+一連番号 現在 Commerce プレビュー環境は、バージョン10.0.6 のデモデータを含む Retail 最小在庫管理単位 (SKU) プロジェクトで展開された新しい環境でのみ使用できます。
+
+**Microsoft Dynamics Lifecycle Services (LCS) を介して Microsoft Azure で Commerce プレビュー環境を展開するには、どのような費用がかかりますか ?**
+
+Retail は、サブスクリプションでホストされている唯一のコンポーネントです。 Retail Cloud Scale Unit (Rcsu) や E コマースなどのその他のコンポーネントは、Microsoft サブスクリプションでホストされます。 [Azure 価格計算ツール](https://azure.microsoft.com/pricing/calculator/) を使用してこのコストを見積もることができます。
+
+**Commerce プレビュー環境で現在サポートされている Azure 地域はどこですか ?**
+
+Commerce プレビュー環境は、北米地域でのみ展開できます。
+
+**完全な OneBox 仮想マシン (VM) オプションを含む、ダウンロード可能な仮想ハード ディスク (VHD) はありますか ?**
+
+Dynamics 365 Retail Cloud Scale Unit (RCSU) および E コマースは、完全なサービスとしてのソフトウェア (SaaS) であり、クラウドでホストされている必要があります。
+
+**Commerce プレビュー環境は、どのくらいの期間使用できますか ?**
+
+Commerce プレビュー環境には、E コマースのプロビジョニング日から 30 日間という期限設定があります。
+
+**Commerce プレビュー環境の期限設定を延長できますか ?**
+
+はい。 [Commerce プレビュー拡張フォーム](https://aka.ms/Dynamics365CommercePreviewExtensionForm) を使用してサポート チームに連絡することができます。
+
+**Commerce プレビュー環境に対して複数の要求を行うことができますか ?**
+
+承諾される要求ごとに 1 つの Commerce プレビュー環境のクォータを交付します。 複数のプレビュー環境が必要な場合は、Microsoft にお問い合わせください。 連絡先情報については、次のセクションを参照してください。
+
+## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Dynamics 365 Commerce プレビュー環境の連絡先情報
+
+Commerce プレビュー環境に関するご質問またはご要望がある場合、Microsoftに連絡するには、[Microsoft Dynamics 365 Commerce プレビュー Yammer グループ](https://aka.ms/Dynamics365CommercePreviewYammer) にアクセスしてください。
+
+Yammer グループにアクセスしようとして問題が発生した場合は、<Dynamics365Commerce@microsoft.com> から電子メールで Microsoft にお問い合わせください。 この電子メール アドレスはアクティブに監視されていません。 したがって、応答に遅延が予想されます。
+
+## <a name="additional-resources"></a>追加リソース
+
+[Commerce プレビュー環境の概要](cpe-overview.md)
+
+[Commerce プレビュー環境のプロビジョニング](provisioning-guide.md)
+
+[Commerce プレビュー環境のコンフィギュレーション](cpe-post-provisioning.md)
+
+[Commerce プレビュー環境のオプション機能のコンフィギュレーション](cpe-optional-features.md)

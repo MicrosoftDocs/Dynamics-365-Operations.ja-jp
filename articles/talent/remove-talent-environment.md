@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: bbc65a77b7c3df6545dfd7aa2109aba5c4e1b57b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e752d658388fc6cb6f4b84ac83cb12a71522199b
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773038"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898113"
 ---
 # <a name="remove-talent-environments"></a>Talent 環境の削除
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent のテスト ドライブ環境または実稼動環境の削除について説明します。
 

@@ -3,7 +3,7 @@ title: サイト ページにスクリプト コードを追加してテレメ�
 description: このトピックでは、クライアント側のテレメトリの収集をサポートするクライアント側のスクリプト コードをサイト ページに追加する方法について説明します。
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a5f82426d87cd2e0faa0195a841899bb03f9df08
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 79d0e11946f3c6f4704d3a726d33de0378eb53bd
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697339"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914542"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>サイト ページにスクリプト コードを追加してテレメトリをサポートする
 
@@ -64,7 +64,9 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 
 [サイト テーマの選択](select-site-theme.md)
 
-[お気に入りの追加](add-favicon.md)
+[CSS 上書きファイルの作業](css-override-files.md)
+
+[ファビコンの追加](add-favicon.md)
 
 [ようこそメッセージの追加](add-welcome-message.md)
 

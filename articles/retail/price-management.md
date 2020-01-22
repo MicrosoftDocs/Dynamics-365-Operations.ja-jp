@@ -3,7 +3,7 @@ title: 小売販売の価格管理
 description: このトピックでは、Dynamics 365 Retail で販売価格を作成および管理するための概念について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025221"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934774"
 ---
 # <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
@@ -221,11 +221,11 @@ Microsoft Dynamics 365 で販売価格を設定する場合、設定する価格
 
 小売価格決定は、非小売エンティティの代わりに小売エンティティで使用するよう設計されています。 具体的には、倉庫ごとではなく店舗ごとに価格を設定するよう設計されています。
 
-小売価格決定エンジンは、次の価格決定機能をサポートしていません。
+小売価格決定エンジンは、次の価格決定機能を**サポートしていません**。
 
-- サイト分析コードおよび倉庫保管分析コードを使用して価格を設定
-- 属性ベースの価格決定
-- 仕入先割引のパススルー
+- サイトまたはサイトおよび倉庫保管分析コードによる価格設定はサポートされていません。 売買契約でサイト分析コードのみを指定した場合は、小売価格設定によってサイトが無視され、すべてのサイトに売買契約が適用されます。 サイトと倉庫の両方を指定した場合は、小売業者が店舗の価格グループを使用して各店舗 / 倉庫の価格を制御することが予想されるため、この動作は未定義 / 未テストになります。
+- 属性ベースの価格設定はサポートされていません。
+- 仕入先割引のパススルーはサポートされていません。
 
 加えて、小売価格決定エンジン **のみ** が次の価格決定機能をサポートします。
 

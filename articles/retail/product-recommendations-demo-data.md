@@ -3,7 +3,7 @@ title: オムニ チャネル製品推奨事項のデモ データ
 description: このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングルボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2226139"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872329"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>オムニ チャネル製品推奨事項のデモ データ
 
 このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングルボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
 
-オムニ チャンネルの製品推奨事項は、編集上精選された、またはプログラムで生成された一連の製品一覧を提供します。 これらの一覧は、ビジネスのニーズに応じて、いくつかのシナリオで使用できます。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](product-recommendaitons-overview.md)を参照してください。
+オムニ チャンネルの製品推奨事項は、編集上精選された、またはプログラムで生成された一連の製品一覧を提供します。 これらの一覧は、ビジネスのニーズに応じて、いくつかのシナリオで使用できます。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](../commerce/product-recommendations.md)を参照してください。
 
 レベル 2 およびそれ以上の Dynamics 環境では、製品推奨事項は顧客データに基づいて自動的に計算されます。
 製品推奨事項のデモ データを使用しても、環境で既にプロビジョニングされている製品推奨ソリューション、およびその使用に関連するコストが無効になることはありません。
@@ -68,6 +68,6 @@ ms.locfileid: "2226139"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[製品推奨事項の概要](product-recommendations-overview.md)
+[製品推奨事項の概要](../commerce/product-recommendations.md)
 
-[環境計画](environment-planning.md)
+[環境計画](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

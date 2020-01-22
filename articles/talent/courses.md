@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 26e76d68c6d5c8bd965e65e65d57f239fb8a2918
-ms.sourcegitcommit: 87e8b811680b1f87a973ce1680f07d657fa23046
+ms.openlocfilehash: c68601b150e5c0963bfba0fa1c6c866abdd092cb
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "1701393"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898876"
 ---
 # <a name="set-up-training-courses"></a>トレーニング コースの設定
-
-[!include [banner](includes/banner.md)]
 
 人事管理の管理者とマネージャーは、作業者に提供されるトレーニングに関する情報を管理するためにコース機能を使用できます。
 

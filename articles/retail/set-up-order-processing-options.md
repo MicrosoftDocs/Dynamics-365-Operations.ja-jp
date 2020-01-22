@@ -3,7 +3,7 @@ title: コール センター チャネルの設定
 description: このトピックでは、Dynamics 365 Retail を使用してコール センターの注文処理方法について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4ebe25f91cd4228537254dc0b7891c8584981775
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024824"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934703"
 ---
 # <a name="set-up-call-center-channels"></a>コール センター チャネルの設定
 
@@ -81,3 +81,6 @@ ms.locfileid: "2024824"
 
 
 コール センター チャネルの設定とチャネル ユーザーの定義が完了したら、必要なシステム動作を保証します。すべての必要なコール センター パラメータが、**小売** \> **チャンネル設定** \> **コール センター設定** \> **コール センター パラメータ** で定義されていることを確認してください。 関連する番号順序も定義されていることを確認してください。
+
+> [!NOTE]
+> コール センター機能を使用するには、**複数の出荷先**のコンフィギュレーション キーが有効になっている必要があります。 このコンフィギュレーション キーは、**システム管理**\> **設定** \> **ライセンス コンフィギュレーション**の下で、**取引コンフィギュレーション** キーで検索できます。 これは、販売注文明細行レベルでコンフィギュレーションされた配送先住所に基づいて、さまざまな検証を実行するコール センター機能のために必要です。 

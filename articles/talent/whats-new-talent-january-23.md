@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 3c7a389ef4a651135836ce682d7cda95c536011a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: f97462f088fc1a3cb94f2a34204fc09f1cd66fb0
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550208"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2899131"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-23-2019"></a>Dynamics 365 Talent - Core HR の新機能および変更された機能 (2019 年 1 月 23 日)
-
-[!include [banner](includes/banner.md)]
 
 **ビルド 8.1.2121**
 
@@ -54,4 +52,4 @@ ms.locfileid: "2550208"
 この変更により、**猶予期間**および**カレンダー** フィールドが**変更の管理**ページに追加され、将来および過去の従業員のデータデータ入力が可能になりました。
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 23
-マイナーなバグ修正は、Finance and Operations のプラットフォーム更新プログラム 23 の一部として含まれています。 詳細については、[新機能および変更された機能 Dynamics 365 Finance and Operations プラットフォーム更新プログラム 23 (1月2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23) を参照してください。 
+マイナーなバグ修正は、Finance and Operations のプラットフォーム更新プログラム 23 の一部として含まれています。 詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23) を参照してください。 

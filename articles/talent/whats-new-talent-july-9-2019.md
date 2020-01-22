@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023956"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897629"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 9 日)
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -36,6 +34,7 @@ ms.locfileid: "2023956"
 今回のリリースには、Dynamics 365 Talent: Attract のマイナーなバグ修正が含まれています。
 
 ### <a name="coming-soon-in-attract"></a>Attract で間もなく公開
+
 #### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
 承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
@@ -50,7 +49,7 @@ ms.locfileid: "2023956"
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 28
 
-Finance and Operations のプラットフォーム更新プロフラム 28 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 28 (2019 年 7 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28) を参照してください。
+Finance and Operations のプラットフォーム更新プロフラム 28 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 28 (2019 年 7 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28) を参照してください。
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service のカスタム フィールドに対するエンティティのサポート 
 

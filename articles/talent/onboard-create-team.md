@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814838"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897192"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard を使用した採用チームの作成
+# <a name="create-a-hiring-team"></a>採用チームの作成
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 Talent: Onboard では、採用チームを作成でき�
 2. **チーム**で、**追加** (プラス記号 \[**+**\]) タイルを選択します。
 3. **新しいチームの作成**ダイアログ ボックスの**チーム名**で、採用チームの名前を入力します。
 
-    ![[Onboard で新しいチームを作成する](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[新しいチームをオンボードで作成する](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. **チーム メンバーを選択**で、各チーム メンバーの名前または電子メール アドレスを入力します。
 
@@ -51,11 +51,11 @@ Microsoft Dynamics 365 Talent: Onboard では、採用チームを作成でき�
 2. チームを選択します。
 3. **ガイド** タブで、**ガイドを追加**を選択します。
 
-    ![[チームへの研修用ガイドの追加](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[研修用ガイドをチームに追加する](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. チームに割り当てる各研修用ガイドのチェック ボックスをオンにし、**追加**を選択します。
 
-    ![[研修用ガイドを選択し、チームに追加する](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[チームに追加する研修用ガイドの選択](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>研修テンプレートを採用チームに割り当てる
 
@@ -67,7 +67,7 @@ Microsoft Dynamics 365 Talent: Onboard では、採用チームを作成でき�
 
 4. チームに割り当てる各テンプレートのチェック ボックスをオンにし、**追加**を選択します。
 
-    ![[テンプレートを選択し、チームに追加する](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[チームに追加するテンプレートの選択](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>参照
 

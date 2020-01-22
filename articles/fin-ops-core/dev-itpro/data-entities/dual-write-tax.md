@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b6be53e9a2065373ca37c2791568a8161823803f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 86e74086a5a74c7af5f2572d1a653a1658d729c0
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772413"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853862"
 ---
-## <a name="integrated-tax"></a>統合された税
+# <a name="integrated-tax"></a>統合された税
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "2772413"
 
 次の表に示すように、税データには、データ操作中に連携して動作するエンティティ マップのコレクションが含まれています。
 
-Finance and Operations   | Customer Engagement アプリケーション
+Finance and Operations   | その他の Dynamics 365 アプリ
 -------------------------|---------------------------------
 税コード                  | msdyn\_taxcodes.md
 税グループ               | msdyn\_taxgroups.md

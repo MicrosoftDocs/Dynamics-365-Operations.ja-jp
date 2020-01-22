@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0fad51fcb092c95103356f17618a647dd166b95
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 62d3c168967bd680b3ded56e627730324f2a5ec6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697366"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945585"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>オンライン チャネルと E コマース サイトの関連付け
 
@@ -40,16 +40,16 @@ Microsoft Dynamics Lifecycle Services (LCS) ポータルを使用して E コマ
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オンライン ストアの概要](online-store-overview.md)
-
-[E コマース サイトの作成](create-ecommerce-site.md)
+[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [新しい E コマース サイトの配置](deploy-ecommerce-site.md)
 
-[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
+[E コマース サイトの作成](create-ecommerce-site.md)
+
+[robots.txt ファイルの管理](manage-robots-txt-files.md)
+
+[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
