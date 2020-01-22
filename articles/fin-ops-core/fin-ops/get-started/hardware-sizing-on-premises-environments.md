@@ -1,9 +1,9 @@
 ---
 title: オンプレミス環境のハードウェアのサイズ設定要件
 description: このトピックでは、オンプレミス環境のハードウェアのサイズ設定要件を一覧表示します。
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812560"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870267"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -137,7 +137,7 @@ A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.ne
 
 ## <a name="environment-orchestrator"></a>環境オーケストレーター
 
-オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これはクラスタのピーク負荷に合わせて調整する必要があります。 詳細については、[Service Fabric クラスターの能力計画に関する考慮事項](/azure/service-fabric/service-fabric-cluster-capacity)を参照してください。
+オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これはクラスタのピーク負荷に合わせて調整する必要があります。 詳細については、[Service Fabric のスタンドアロン クラスター展開の計画および準備](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
 ## <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 

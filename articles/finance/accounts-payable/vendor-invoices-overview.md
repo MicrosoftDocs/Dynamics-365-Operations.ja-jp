@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
+ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772171"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2890330"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
@@ -76,7 +76,7 @@ ms.locfileid: "2772171"
 
 このオプションでは、発注書に対して少なくとも 1 つの製品受領書が転記されていることを前提としています。 それらの製品受領書に基づいて仕入先請求書が作成され、その数量が反映されます。 請求書の財務情報は、請求書の転記時に入力する情報に基づいて指定されます。
 
-詳細については、[仕入先の請求書を記録し、入庫済数量と一致](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md) を参照してください。
+詳細については、[仕入先の請求書を記録し、入庫済数量と一致](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md) を参照してください。
 
 ## <a name="working-with-multiple-invoices"></a>複数の請求書の処理
 

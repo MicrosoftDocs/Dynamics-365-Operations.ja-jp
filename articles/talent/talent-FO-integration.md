@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
-ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
+ms.openlocfilehash: 0222a187b071c5178069ed0bd5223fbf7fb31b6f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2830189"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897076"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talent から Dynamics 365 Finance への統合に関する FAQ
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Talent が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
 
@@ -48,7 +46,7 @@ Attract および Onboard に関しては、すべてのデータが Common Data
 
 財務分析コードは、現在 Common Data Service にはなく、結果として既定のテンプレートの一部ではありません。 このエンティティは計画されていますが、現在利用可能なリリース タイムラインはありません。
 
-Finance で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance 間のリンクを構成する方法の詳細については、[Dynamics 365 Talent - Core HR (2018 年 10 月 31日) の新機能および変更された機能](whats-new-talent-october-31.md) を参照してください。
+Finance で存在しますが、Talent では存在しないデータに関しては、Talent の**リンクの構成**を使用して 2 つのシステムを相互にリンクします。 Talent および Finance and Operations 間のリンクを構成する方法の詳細については、[Dynamics 365 Talent - Core HR (2018 年 10 月 31 日)) の新機能および変更された機能](whats-new-talent-october-31.md) を参照してください。
 
 ![財務分析コードのマップ](media/MapFinancialDimensions.png)
 

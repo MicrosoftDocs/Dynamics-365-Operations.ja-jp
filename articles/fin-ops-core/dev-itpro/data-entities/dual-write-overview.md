@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 072564446b74318ffc8e8e6ad4fd16f4421e7854
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772390"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853909"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>ほぼリアルタイムの Common Data Service とのデータ統合
 
@@ -59,7 +59,7 @@ Finance and Operations アプリと Common Data Service は、デュアル書き
 Finance and Operations アプリと Common Data Service 間の統合を設定するには、次の手順に従います。
     
 1. デュアル書き込みシステムの設定については、デュアル書き込みプレビューの発表の[ステップ バイ ステップ ガイド](https://aka.ms/dualwrite-docs) を参照してください。
-2. [Finance and Operations、Common Data Service、および Customer Engagement 統合](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096)Yammer グループから、ソリューションをダウンロードしてインストールします。 パッケージには、次の 5 つのソリューションが含まれています。
+2. [デュアル書き込みを介して Finance and Operations および CDS/CE の統合](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer グループからソリューションをダウンロードおよびインストールします。 パッケージには、次の 5 つのソリューションが含まれています。
 
     + Dynamics365Company
     + CurrencyExchangeRates
