@@ -3,7 +3,7 @@ title: Lifecycle Services の電子申告コンフィギュレーションのダ
 description: このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 49785835ee2da911d7b8d1360e1c42f850f1153f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771496"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934657"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services から電子申告コンフィギュレーションをダウンロードする
 
@@ -39,7 +39,7 @@ ms.locfileid: "2771496"
     - 電子申告機能コンサルタント
     - システム管理者
 
-2. **組織管理** &gt; **電子申告**の順に移動します。
+2. **組織管理** &gt; **ワークスペース** &gt; **電子申告**の順に移動します。
 3. **コンフィギュレーション プロバイダー**セクションで、**Microsoft** タイルを選択します。
 4. **Microsoft** タイルで**リポジトリ**をクリックします。
 

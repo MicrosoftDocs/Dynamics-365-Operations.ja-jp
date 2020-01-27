@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 83b4734190163ebd2dc29096632642bd45c61e8f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e2d79ee9e182df4a4efe65beb685567b1e7446ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773880"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897445"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-29-2019"></a>Dynamics 365 Talent (2019 年 10 月 29 日) の新機能および変更された機能
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 

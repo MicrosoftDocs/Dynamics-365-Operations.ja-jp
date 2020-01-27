@@ -3,7 +3,7 @@ title: ワークフローに関するよく寄せられる質問
 description: このトピックでは、ワークフロー システムについてよく寄せられる質問に回答します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772700"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934912"
 ---
 # <a name="workflow-faq"></a>ワークフローに関するよく寄せられる質問
 
@@ -37,7 +37,7 @@ ms.locfileid: "2772700"
 現在、ワークフローのエクスポート機能には、ワークフロー名が 48 文字を超えないようにする制限があります。 48 文字を超える名前を使用すると、「サーバーは要求の認証に失敗しました」というエラーが発生するか、またはファイルがファイル タイプなしでエクスポートされるのを防ぐことができます。 詳細については、次のブログ記事を参照してください [ワークフローのエクスポートに関するトラブルシューティング](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting)。
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>ワークフローの送信者はワークフローを承認することもできますか。
-はい、そのように構成されている場合、ワークフローの送信者は、ワークフローを承認することもできます。 この動作を回避するには、**ワークフロー パラメーター > 一般 > 承認者 > 送信者による承認を許可しない**を**はい**に設定します。
+はい、そのように構成されている場合、ワークフローの送信者は、ワークフローを承認することもできます。 この動作を回避するには、**システム管理 > ワークフロー > ワークフロー パラメーター > 一般 > 承認者 > 送信者による承認を許可しない**を**はい**に設定します。
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>ユーザーに通知を行うためにワークフローに警告を追加することはできますか?
 通知を行うワークフローへの警告の追加に関する注意事項の重要な領域を次に示します。
@@ -51,3 +51,6 @@ ms.locfileid: "2772700"
     - [ビジネス イベントのあるワークフロー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) 顧客は探している通知のあるフローをトリガーがすることができました。   
 
 要約すると、ユーザーがワークフロー作業項目を割り当てられた時、アクション センターから適切な通知を取得できなかった場合、[ワークフロー ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) と Microsoft Power Automate を活用して、追加のまたは異なる通知を行います。
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>ワークフロー エディターで、ADFS の起動時に発生する問題 
+アップグレードされた環境で Active Directory フェデレーション サービス (AD FS) を実行している場合、ワークフロー エディターで問題が発生する可能性があります。 その場合、ADFS 設定の **Microsoft Dynamics 365 for Operations オンプレミス - ワークフロー - ネイティブ アプリケーション** プロパティに、URL 「https://dynamicsaxworkfloweditor/」が追加されていることを確認してください。

@@ -3,7 +3,7 @@ title: エンティティへの変更追跡の有効化
 description: Finance and Operations からのデータの差分エクスポートを有効にする追跡の変更を使用します。
 author: Milindav2
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6159b09aeb89278474222e7d2b97cb82bffc5aaf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 49c7ae3cb5a6d674ef8716ef322fcc631016f5b0
+ms.sourcegitcommit: 8a9d711b029894448478afbc282cd4ca071cb1bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183425"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853825"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 
-変更追跡は、データ管理を使用して Finance and Operations からのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 BYOD と BYOD 以外のシナリオで変更の追跡を有効にすることができますが、必要があることのみを表示、自分のデータベースの持ち込み (BYOD) ユース ケースでのみ、エンティティでこれがサポートされている場合は変更の追跡が削除を追跡できます。
+変更追跡は、データ管理を使用して Finance and Operations からのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 BYOD と BYOD 以外のシナリオで変更の追跡を有効にすることができますが、必要があることのみを表示、自分のデータベースの持ち込み (BYOD) ユース ケースでのみ、エンティティでこれがサポートされている場合は変更の追跡が削除を追跡できます。 削除処理は エンティティ内 の ルート データ ソース に対してのみ追跡されます。
 
 ## <a name="enable-change-tracking-for-byod"></a>BYOD の変更追跡を有効する
 データ ストア (BYOD) に 1 つまたは複数のエンティティを発行するとき、変更追跡を有効にすることができます。

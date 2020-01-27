@@ -3,7 +3,7 @@ title: データ管理エラーの説明
 description: このトピックでは、データ管理で発生する可能性があるエラー メッセージについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 64a4af138879ffa7d16ab5759812ff6139dbef4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 894eb3b19fe26f2b7b5f8f1f9a930f4ddabfc2e7
+ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183427"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2943276"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これはエラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。 このトピックが最新の状態になるように、フィードバック依頼を優先するよう努めます。
@@ -42,3 +42,7 @@ ms.locfileid: "2183427"
 
 ## <a name="xml-is-not-in-correct-format-exception-from-hresult-0xc0010009"></a>XML が正しい形式ではありません-HRESULT: 0xC0010009 からの例外
 これは、ファイルにおける XML 形式のすべての問題をカバーする汎用メッセージです。 たとえば、データ プロジェクトには、操作に使用されているファイルに存在しない列のマッピングがあります。 これは、ファイルから特定の列が削除され、このファイルがすぐに使用される場合に発生する可能性があります。 データ プロジェクトでマッピングを修正するか、すべての列が正常に存在するようにファイルを修正します。
+
+## <a name="error-while-uploading-a-file-during-export"></a>エクスポート時のファイルのアップロード中にエラーが発生する
+開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure のストレージ エミュレータが使用できないか、旧バージョンの エミュレータ が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポートのジョブを再実行してください。 ストレージのエミュレータは [Azure ストレージ エミュレータ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) からインストールすることができます。
+

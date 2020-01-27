@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1609927ed47ac90226967eba6950f8eb20e9fdb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 8f86a0b651bfa16aeb1c483daceed321699ead83
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697776"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945654"
 ---
 # <a name="select-page-layouts"></a>ページ レイアウトの選択
 
@@ -73,4 +73,6 @@ ms.locfileid: "2697776"
 [製品ページの拡充](enrich-product-page.md)
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
+
+[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
 

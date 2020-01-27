@@ -3,7 +3,7 @@ title: MICROSOFT プレビュー ソフトウェア ライセンス条件
 description: これらのライセンス条件は、お客様と Microsoft Corporation (またはその関連会社の 1 つ) の間の契約です。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 049/26/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: affaaeb0937eddca412f633056c7b79a91eff7e2
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e23da1b7f2aa3ccce6dddfc9065e34ec6abeaf39
+ms.sourcegitcommit: b806f0c94d703bec39680fead827733361d47045
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277746"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935841"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件 
 

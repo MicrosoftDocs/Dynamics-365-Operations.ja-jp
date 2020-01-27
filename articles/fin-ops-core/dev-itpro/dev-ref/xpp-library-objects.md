@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c4c37e5dba5ced60534eeef61281a016063f6b
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 72550c188617b6e675986a067537d128fd091212
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778690"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872649"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 
@@ -91,7 +91,7 @@ X システム クラスから派生するクラスは、*アプリケーショ�
 
 次の例は、代替アプリケーション クラスのインスタンスを参照するいくつかの特殊な変数を使用するための構文を示しています。
 
-```X++
+```xpp
 TreeNode treeNode;
 Args     args;
 FormRun  formRun;
@@ -128,7 +128,7 @@ info("Method is ending. This is a message in the Infolog.");
 1.  **RunBaseBatch** クラスを拡張するクラスを作成します。
 2.  次の例に示すように、**RunBaseBatch.runsImpersonated** メソッドをオーバーライドし、値 **true** を返します。
 
-    ```X++
+    ```xpp
     public boolean runsImpersonated()
     {
         return true;
@@ -155,7 +155,7 @@ info("Method is ending. This is a message in the Infolog.");
 
 次の例では、**InventTransferMultiShip** クラスが実装されています。 **BatchDialog::main** メソッドは、**バッチ処理**ダイアログ ボックスを作成します。
 
-```X++
+```xpp
 static void noRecurrenceButton(Args _args)
 {
     Args a;

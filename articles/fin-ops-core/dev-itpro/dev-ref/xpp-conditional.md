@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da572b40ca0919bfa9d5d620b8b02345d0ed4f2a
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 709694ec8468ce9b1d682846652787b3f794322f
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778694"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872656"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 
@@ -42,7 +42,7 @@ ms.locfileid: "2778694"
 
 ### <a name="examples-of-if-and-ifelse-statements"></a>if および if...else ステートメントの例
 
-```X++
+```xpp
 // if statement
 if (a > 4)
 {
@@ -84,7 +84,7 @@ else
 
 Switch ステートメントに **break** キーワードを含めると、case ブランチの実行は終了し、switch に続くステートメントが実行されます。 次の例のように、Debtor のアカウント番号が 1000 の場合、プログラムは "作業をする" が実行され、 switch ステートメントの後で実行が継続されます。
 
-```X++
+```xpp
 switch (Debtor.AccountNo)
 {
     case "1000":
@@ -101,7 +101,7 @@ switch (Debtor.AccountNo)
 
 次のコード例では、breakステートメントを省略して最初のcase 分岐から実行をドロップします。 Xが10の場合、bはaに割り当てられ、dはcに割り当てられます。 Xが11の場合、dはcに割り当てられます。 Xが12の場合、fはeに割り当てられます。
 
-```X++
+```xpp
  switch (x)
  {
      case 10:
@@ -117,7 +117,7 @@ switch (Debtor.AccountNo)
 
 Break ステートメントを使用しない場合は、switch ステートメントのプログラム フローが次のケースに進みます。 コード セグメント AとBには同じ動作が設定されています。 
 
-```X++
+```xpp
 // Code segment A (break omitted)
 case 13:
 case 17:
@@ -144,13 +144,13 @@ case 13, 17, 21, 500;
 
 次のコード例では、メソッド呼び出しからのブール値の戻り値に基づいて、2つの文字列のいずれかを返します。 ブール式は、CustTable テーブルに、RecIdフィールド値を1とする行が含まれているかどうかを示します。 このブール式が true (つまり、RecId! = 0) である場合は、found が結果に割り当てられます。 それ以外の場合、代替のnot foundが結果に割り当てられます。
 
-```X++
+```xpp
 result = (custTable::find("1").RecId) ? "found" : "not found";
 ```
 
 三項演算子を使用してステートメントをネストできます。 次の例では、 **x** の値に基づいて、3つの値のいずれかを **レベル** に割り当てます。
 
-```X++
+```xpp
 int x = 1001;
 str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);

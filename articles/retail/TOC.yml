@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: クラウド配置
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: クラウド配置のシステム要件
+                - name: 小売クライアント コンポーネントのシステム要件
                   href: get-started/system-requirements.md
                 - name: オンプレミス配置
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: 新機能および変更された機能
               items:
-                - name: Retail バージョン 10.0.7 の機能のプレビュー
+                - name: Retail バージョン 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail バージョン 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail バージョン 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: 以前のバージョンの新機能および変更された機能
                   items:
                     - name: Finance and Operations ホーム ページの新機能および変更された機能
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations アプリ 10.0.5 (2019 年 10 月)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations 10.0.4 (2019 年 7 月)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: 削除済みまたは非推奨の機能
@@ -788,10 +782,8 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: 小売階層
               href: retail-hierarchies.md
-            - name: 属性および属性グループ
+            - name: 属性および属性グループの管理
               href: attribute-attributegroups-lifecycle.md
-            - name: 属性の作成と管理
-              href: create-manage-attributes.md
             - name: 小売製品の設定
               href: set-up-retail-products.md
             - name: 製品の作成
@@ -1146,7 +1138,9 @@
               items:
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-swe-cash-registers.md
-                - name: 管理単位との Retail POS の統合サンプル
+                - name: スウェーデン向け制御ユニットの統合サンプル
+                  href: localizations/emea-swe-fi-sample.md
+                - name: 制御ユニット (レガシ) との Retail POS の統合サンプル
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Retail タスク
           items:

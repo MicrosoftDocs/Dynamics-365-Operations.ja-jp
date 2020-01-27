@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 023aa314da09a94c76d6e0f2bbb72d998d8eea71
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: de3b7cd9170ab0af95d4317d9145e1c468b5b65a
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812328"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853974"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
@@ -131,6 +131,6 @@ E コマース サイトは、LCS の管理された環境では配置されて�
 <a name="additional-resources"></a>その他のリソース
 --------
 
-[支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+[支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
 [配置可能な小売パッケージの作成](retail-sdk/retail-sdk-packaging.md)

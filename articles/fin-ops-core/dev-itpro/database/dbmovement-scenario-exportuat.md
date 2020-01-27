@@ -3,7 +3,7 @@ title: 標準ユーザー承認テスト (UAT) データベースのコピーの
 description: このトピックでは、Finance and Operations に対してデータベースをエクスポートするシナリオついて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b834c3481d526126103aaa68b389e39e88ce5a0b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7fc99cf91c91c05e466ff1195c4ec1004ed27d0c
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770964"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934736"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -64,10 +64,9 @@ Microsoft Azure SQL データベース プラットフォームによる最新�
 - 必要な場合は、後で戻すことができるように、既存の AxDB データベースのコピーを保持します。
 - **AxDB\_fromProd** などの新しい名前の下に新しいデータベースをインポートします。
 
-最高のパフォーマンスを保証するには、\*.bacpac ファイルをインポート元のローカル コンピューターにコピーします。 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
+最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```

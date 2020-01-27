@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: a8cdf02aa5d976d504a727932297be1a36e5df37
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: ad72d2da2214b90e61f07699193ec7b27c525c58
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832686"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897016"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
-
-[!include [banner](includes/banner.md)]
 
 このチュートリアルでは Microsoft Dynamics 365 Talent: Core HR から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Core HR の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
 

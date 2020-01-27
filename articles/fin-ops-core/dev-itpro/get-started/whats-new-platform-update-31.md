@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の機能のプレビュー
+title: Finance and Operations に関するプラットフォーム更新プログラム 31 の新機能と変更点 (2020 年 1月)
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/13/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: 29860abd70d7c077e594e9e98bf295dcb51f744d
-ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
+ms.openlocfilehash: 0337b7cda7261d862da01ed8daf5cdb34ac03078
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2805510"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935429"
 ---
-# <a name="preview-features-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の機能のプレビュー
+# <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations に関するプラットフォーム更新プログラム 31 の新機能と変更点 (2020 年 1月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更されたプレビュー機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
 

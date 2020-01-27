@@ -3,7 +3,7 @@ title: アカウント管理ページとモジュール
 description: このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページおよびモジュールについて説明します。
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785386"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885812"
 ---
 # <a name="account-management-pages-and-modules"></a>アカウント管理ページとモジュール
 
@@ -58,7 +58,7 @@ ms.locfileid: "2785386"
 
 ### <a name="user-profile-page"></a>ユーザー プロファイル ページ
 
-ユーザー プロファイル ページには、ユーザー名や電子メール アドレスなど、ユーザー アカウントの詳細が表示されます。 ユーザー プロファイル モジュールが使用されます。 電子メール アドレスは削除できませんが、編集はできます。
+ユーザー プロファイル ページには、ユーザー名や電子メール アドレスなど、ユーザー アカウントの詳細が表示されます。 ユーザー プロファイル モジュールが使用されます。 電子メール アドレスは削除できませんが、編集はできます。 ユーザー プロファイル ページには、ユーザーが推奨リストのパーソナル化など、特定の機能からのオプトインまたはオプトアウトができるようにするユーザー設定も表示されます。 
 
 ### <a name="user-address-page"></a>ユーザー アドレス ページ
 
@@ -80,7 +80,7 @@ ms.locfileid: "2785386"
 
 [購入ボックス モジュール](add-buy-box.md)
 
-[買い物カゴ モジュール](add-cart-module.md)
+[カート モジュール](add-cart-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 

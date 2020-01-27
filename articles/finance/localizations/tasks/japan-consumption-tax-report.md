@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3414dd50de0db4bd3550d5510aa54773795f076f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34b9216411ced7e4cd7e2fa78932d094daf0646d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174662"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915260"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 
@@ -62,3 +62,5 @@ ms.locfileid: "2174662"
 24. [アクション] ペインで [消費税申告] をクリックします。
     * [レポートを印刷] をクリックして、最終レポートを生成します。  
 
+> [!NOTE]
+> 2019 年 10 月 1 日から提出される消費税申告書を計算するには、**機能管理**ワークスペースの**消費税申告書**機能を有効にする必要があります。 詳細については [機能管理の概要](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832841"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898320"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した Talent の拡張
-
-[!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Power Apps および Microsoft Power Automate を使用する Microsoft Dynamics 365 Talent の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを Power Apps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
@@ -108,7 +106,7 @@ Power Apps を使用して作成されたアプリケーションは、Attract �
 
 このアプリは、参照を送信するための従業員セルフサービス (ESS) に埋め込むことも、社内ポータルでハイパーリンクとして使用してスタンドアロン アプリとして実行することもできます。
 
-**照会アプリ**をダウンロードするには、Microsoft ダウンロード センターの [Dynamics 365 Talent拡張機能ソリューション : 照会アプリ](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d)に移動します。 このアプリをインポートしてカスタマイズし、機能を追加することができます。
+**照会アプリ**をダウンロードするには、Microsoft ダウンロード センターの [Dynamics 365 Talent拡張機能ソリューション : 照会アプリ](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d)に移動します。 このアプリをインポートしてカスタマイズし、機能を追加することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 

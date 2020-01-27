@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 085f4e3036208b4d261b2b137d96d6f3799407ff
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 061f506494a4cf9836f737808426f38c5fa4ce08
+ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769626"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "2947493"
 ---
 # <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
 
@@ -65,8 +65,8 @@ ms.locfileid: "2769626"
 
 | パターン        | 同期式のプログラミング パラダイム    | 非同期式のプログラミング パラダイム |
 |----------------|-------------------------------------|-----------------------------------|
-| OData          | DbResourceContextaveChanges         | DbResourceContextaveChangesAsync |
-| 顧客サービス | httpRequestetResponse               | httpRequesteginGetResponse |
+| OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
+| 顧客サービス | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
 | バッチ データ API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 

@@ -1,9 +1,9 @@
 ---
-title: スウェーデン用の管理単位との Retail POS の統合
+title: スウェーデンのコントロール ユニットとの Retail POS の統合サンプル (レガシ)
 description: このトピックは、スウェーデンの管理単位統合サンプルのビルドとインストールのガイドです。
 author: EvgenyPopovMBS
 manager: Annbe
-ms.date: 02/27/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,16 +16,19 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 338a48dfa6cd5925707424e51e1e8aaf07daf22c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9c3826f7064865b7c4e57d00a21136eaed9f45f3
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812296"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915159"
 ---
-# <a name="sample-for-retail-pos-integration-with-control-units-for-sweden"></a>スウェーデン用の管理単位との Retail POS の統合
+# <a name="sample-for-retail-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンのコントロール ユニットとの Retail POS の統合サンプル (レガシ)
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> このサンプル会計統合機能は、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[スウェーデンのコントロール ユニット統合サンプル](./emea-swe-fi-sample.md#migrating-from-the-earlier-integration-sample)を使用してください。
 
 **サンプル コードの通知**
 
@@ -33,7 +36,7 @@ ms.locfileid: "2812296"
 
 **技術サポートは提供されません。コード配布を許可する Microsoft の使用許諾契約がない限り、このコードを配布することはできません。**
 
-このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Dynamics 365 Retail 拡張機能を作成する方法を示します。 特に、このサンプルには Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
+このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Dynamics 365 Retail 拡張機能を作成する方法を示します。 特に、このサンプルには Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 コントロール ユニットは、POS がペアリングされているハードウェア ステーションに物理的に接続されていることを前提としています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
 
 このサンプルは、Retail ソフトウェア開発キット (SDK) の一部です。 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
@@ -41,6 +44,63 @@ ms.locfileid: "2812296"
 
 > [!NOTE]
 > 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+
+## <a name="overview-of-integration-with-control-units"></a>コントロール ユニットとの統合の概要
+
+サンプルには、次の機能が含まれます。
+
+- 営業、返品、レシートのコピーは、POS がペアリングされているハードウェア ステーションに物理的に接続済みのコントロール ユニットに自動登録されます。
+- 登録されたトランザクションのコントロール ユニットの制御コードと製造番号は、コントロール ユニットからキャプチャされ、トランザクションに保存されます。 (このデータは_会計データ_とも呼ばれます。) 会計データは、**小売店のトランザクション**ページで表示できます。
+- コントロール ユニットの制御コードと製造番号のカスタム フィールドはレシート形式に追加できるため、トランザクションの会計データをレシートに印刷できます。
+- トランザクションの会計データは、**電子ジャーナル (スウェーデン)** チャネル レポートに印刷されます。
+- コントロール ユニットでのトランザクションの登録中に障害が発生した場合、トランザクションの会計データは空白のままになります。 この場合、新しいトランザクションを開始することはできず、現在のシフトを閉じることもできません。 オペレーターは、未登録のトランザクションをコントロール ユニットに再登録するよう求められます。 2 回目の試行が失敗した場合、オペレーターは、特別な許可があれば登録をスキップできます。 オペレーターがコントロール ユニットでのトランザクションの登録をスキップした場合、このイベントに関する情報は会計データではなくトランザクションに保存されます。
+
+> [!NOTE]
+> 現時点では、コントロール ユニット統合サンプルは顧客注文をサポートしていません。 ただし、顧客注文をサポートするサンプルは、後日入手可能になります。
+
+## <a name="setting-up-integration-with-control-units"></a>コントロール ユニットとの統合のセットアップ
+
+Retail POS がスウェーデンのコントロール ユニットと統合されるように、次の設定を指定する必要があります。
+
+1. 会計登録の構成を作成し、ハードウェア プロファイルに割り当てます。
+
+    1. **会計登録の構成**ページで、新しい会計登録の構成レコードを作成します。 構成の名前と説明を設定します。
+    2. 構成の内容を入力します。 このサンプルで構成は、消費税コードとコントロール ユニットの VAT グループ間のマッピングを確立する XML ファイルです。 最大 4 つの消費税コードをマッピングできます。 次の構成例では、**VAT10** および **VAT20** はマッピングする必要がある消費税コードを表しています。
+
+        ``` xml
+        <UnitConfiguration>
+            <TaxMapping>
+                <Tax taxCode="VAT10" controlUnitTaxId="1"/>
+                <Tax taxCode="VAT20" controlUnitTaxId="2"/>
+            </TaxMapping>
+        </UnitConfiguration>
+        ```
+
+        アクション ペインで**サンプル構成のエクスポート** をクリックして、サンプル構成をエクスポートすることもできます。
+
+    3. **ハードウェア プロファイル**ページで、POS がペアリングされ、コントロール ユニットが接続されているハードウェア ステーションのハードウェア プロファイルを選択します。 **会計登録**ファストタブで、以下のフィールドを設定します。
+
+        - **会計登録** フィールドで、**サードパーティ要因**を選択します。
+        - **構成**フィールドで、作成した会計登録の構成名を選択します。
+
+2. レシートレイアウト用のカスタム フィールドを設定し、コントロール ユニットの制御コードと製造番号がレシートに印刷されるようにします。
+
+    1. **言語テキスト** ページで、カスタムレシートレイアウト フィールドのキャプションに 2 つのレコードを追加します。 適切なフィールドで、キャプションの言語 ID (たとえば**sv-se**)、テキスト ID (たとえば **900001** や **900002**)、キャプション テキスト (たとえば**制御コード**や**コントロール ユニット ID** ) を指定します。
+    2. **カスタム フィールド** ページで、カスタムレシートレイアウトのフィールドに 2 つのレコードを追加します。 **タイプ**フィールドで、**レシート**を選択します。 カスタム レシート レイアウトのフィールドの名前とキャプションを指定します。
+
+        - 制御コード:
+
+            - **名前:** **FiscalRegisterControlCode**
+            - **キャプション テキスト ID**: 制御コード フィールドに指定したテキスト ID (前の例では **900001**)
+
+        - コントロール ユニットの製造番号:
+
+            - **名前:** **FiscalRegisterId**
+            - **キャプション テキスト ID**: コントロール ユニット ID フィールドに指定したテキスト ID (前の例では **900002**)
+
+    3. 販売レシートの形式については、レシート レイアウトの**フッター** セクションのレシート形式デザイナーで、指定されたキャプションのフィールドを追加します (前の例では**制御コード**および**コントロール ユニット**)。
+
+3. 店舗の作業者の POS アクセス許可グループおよび個々のアクセス許可の設定を更新します。 アクセス許可グループに割り当てられている作業者が会計登録を省略できるようにするには、**会計登録のスキップを許可する**チェックボックスをオンにします。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -220,7 +280,7 @@ ms.locfileid: "2812296"
     1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** 構成ファイルの **構成** セクションに、次のセクションを追加します。
 
         ``` xml
-        <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
         ```
 
     2. ハードウェア ステーション構成ファイルの **構成** セクションに、次のセクションを追加します。
@@ -251,5 +311,13 @@ ms.locfileid: "2812296"
 
         ---
 
-3. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+3. **BuildTools\\Customization.settings** パッケージ カスタマイズ コンフィギュレーション ファイルに以下の変更を加えます。
+
+   - 展開可能なパッケージにハードウェア ステーション拡張機能を含めるために、次の行を追加します。
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll"/>
+        ```
+
+4. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
+5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+

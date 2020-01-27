@@ -3,7 +3,7 @@ title: 埋め込み Power Apps
 description: このトピックでは、Power Apps をクライアントに組み込んで製品の機能を拡張する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824496"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870244"
 ---
 # <a name="embed-microsoft-power-apps"></a>埋め込み Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Power Apps の埋め込みに関する詳細については、短い [Power Apps
 
     - **名前**フィールドは、埋め込まれた Power App を含むボタンまたはタブのテキストを示します。 多くの場合、このフィールドで Power App の名前を繰り返すことができます。
     - **アプリ ID** は、埋め込む Power App の GUID です。 この値を取得するには、[web.powerapps.com](https://web.powerapps.com) で Power App を検索し、**詳細**の**アプリ ID** フィールドを探します。
-    - **Power App のデータを入力する**では、必要に応じて、 Power App に入力として渡すデータが含まれているフィールドを選択することができます。 Power App が Finance and Operations アプリから送信されるデータにどのようにアクセスするかの詳細に関しては、このトピックの後の [Finance and Operations アプリからのデータを活用する Power App の構築](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps)を参照してください。
+    - **Power App のデータを入力する**では、必要に応じて、 Power App に入力として渡すデータが含まれているフィールドを選択することができます。 Power App が Finance and Operations アプリから送信されるデータにどのようにアクセスするかの詳細に関しては、このトピックの後の [Finance and Operations アプリからのデータを活用する Power App の構築](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps)を参照してください。
     - 埋め込む Power App のタイプに一致する**アプリケーション サイズ**を選択します。 モバイル デバイス用に作成された Power Apps に対しては**シン**を選択し、タブレット用に作成された Power Apps に対しては**ワイド**を選択します。 これにより、埋め込み Power App に十分な容量を確保できます。
     - **法人**クイック タブには、Power App が利用できる法人を選択する機能があります。 既定では、Power App はすべての法人で表示されます。
 
@@ -101,7 +101,7 @@ Power App がページに埋め込まれた後、その Power App の設定を�
 
 Power App がページに埋め込まれた後、必要に応じて削除するには 2 つの方法があります。
 
-- このトピックの前半にある[埋め込み Power App を編集](#editing-an-embedded-powerapp)セクションからの手順を使用して、**Power App を編集**ウィンドウに移動します。 ウィンドウに、削除する埋め込み型 Power App の情報が表示されていることを確認してから、**削除**ボタンをクリックします。
+- このトピックの前半にある[埋め込み Power App を編集](#editing-an-embedded-power-app)セクションからの手順を使用して、**Power App を編集**ウィンドウに移動します。 ウィンドウに、削除する埋め込み型 Power App の情報が表示されていることを確認してから、**削除**ボタンをクリックします。
 - 埋め込まれた Power App は、個人用設定データとして保存されるため、ページの個人用設定をクリアすると、そのページの埋め込まれた Power Apps も削除されます。 ページの個人用設定をクリアするのは、永久的なもので元に戻すことはできないことに注意してください。 ページの個人用設定を削除するには、**オプション**を選択し、**このフォームのパーソナライズ**をクリックします。 **管理**メニューで**クリア**ボタンを選択します。 ブラウザを更新した後、このページの以前のすべての個人用設定は、削除されます。 個人用設定を使用してページを最適化する方法の詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md)を参照してください。
 
 ## <a name="appendix"></a>付録

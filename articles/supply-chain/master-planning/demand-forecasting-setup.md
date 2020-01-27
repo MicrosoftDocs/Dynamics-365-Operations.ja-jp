@@ -3,7 +3,7 @@ title: 需要予測の設定
 description: このトピックでは、需要予測の準備として実行する必要のある設定タスクについて説明します。
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813802"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935494"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
@@ -63,7 +63,7 @@ ms.locfileid: "2813802"
 
 需要予測の観点からみてすべての品目は同じ方法で動作しません。 同様の品目は、一つの品目配賦キーおよびトランザクション タイプなどのパラメーターにグループ化でき、予測方法の設定は品目配賦キーごとに設定できます。 **需要予測パラメーター**ページの左ウィンドウにある**品目配賦キー**をクリックします。 
 
-予測を生成する場合、Supply Chain Management では、Machine Learning Web サービスを使用します。 サービスに接続するには、Microsoft Azure Machine Learning Studio にサインインする場合は、次の情報を提供する必要があります。
+予測を生成する場合、Supply Chain Management では、Machine Learning Web サービスを使用します。 サービスに接続するには、Microsoft Azure Machine Learning Studio (クラシック) にサインインする際に、次の情報を提供する必要があります。
 
 -   Web サービス アプリケーション プログラミング インターフェイス (API) キー
 -   Web サービス エンドポイント URL
@@ -71,7 +71,7 @@ ms.locfileid: "2813802"
 -   Azure ストレージ アカウント キー
 
 > [!NOTE]
-> カスタム ストレージ アカウントを使用している場合にのみ、Azure ストレージ アカウントの名前とキーが必要です。 オンプレミス バージョンを展開する場合、Machine Learning サービスを履歴データにアクセスできるようにするため、Azure のカスタム ストレージ アカウントが必要です。 
+> カスタム ストレージ アカウントを使用している場合にのみ、Azure ストレージ アカウントの名前とキーが必要です。 オンプレミス バージョンを展開する場合、Machine Learning を履歴データにアクセスできるようにするため、Azure のカスタム ストレージ アカウントが必要です。 
 
 要求予測を作成する場合、Machine Learning Studio または Supply Chain Management の需要予測実験を使用して自分のサービスを配置できます。 需要予測実験を Web サービスとして展開するための手順は、Supply Chain Management で入手可能です。 **需要予測パラメーター**ページで、**Azure Machine Learning** タブをクリックします。
 

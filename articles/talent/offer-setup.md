@@ -3,7 +3,7 @@ title: Attract でのオファー管理の設定
 description: このトピックでは、Microsoft Dynamics 365 Talent でのオファーの設定方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832725"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890558"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Attract でのオファー管理の設定
 
@@ -45,9 +45,11 @@ Dynamics 365 Talent: Attract で候補者がオファー ステージに進む�
 
     >[!NOTE]
     > **オファー データ** ページには、**候補者の詳細**および**職務の詳細**セクションがあります。 Attract はいくつかのオファー データ プレースホルダーをすぐに提供します。
-    
+    > 
     > ページには、さまざまなオファー データ プレースホルダーを論理的なグループにまとめるセクションがあります。 これらのセクションは、オファーの作成プロセスでオファー データおよびデータ設定を維持するのに役立ちます。
-
+    > 
+    > プレースホルダーの値の一覧を作成するには、列タイトルとしてプレースホルダーを含む 1 つの列とその下の行の選択リストを含む Excel ワークシートをアップロードします。 同じプレースホルダーが別のデータ ルール セットで参照されている場合は、共通の値セットがあることを確認してください。
+    
 1.  新しいオファー データ セクションを作成するには、**セクションを追加**をクリックし、セクションの一意の名前を入力します。
 
 1.  任意のセクションにオファー データ プレースホルダーを追加するには、**オファー データを追加**をクリックし、プレースホルダーの一意の名前を入力します。

@@ -1,7 +1,7 @@
 ---
 title: バッチ処理の概要
 description: このトピックでは、バッチ処理の概要を示します。
-author: hasaid
+author: Peakerbl
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-ms.author: hasaid
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74829a9586aae6983bf952027151cfde01cd47e2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 58d84ef3a37810cb0946f246ea733a31001241c5
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811946"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945403"
 ---
 # <a name="batch-processing-overview"></a>バッチ処理の概要
 

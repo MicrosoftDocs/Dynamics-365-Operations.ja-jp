@@ -1,7 +1,7 @@
 ---
 title: ユーザー受け入れテストの作成と自動化
 description: このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。
-author: kfend
+author: robadawy
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ntecklu
+ms.author: robadawy
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4dfcb49bb255a13ac1a9f5845a8151ea07668ba6
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 3e8f2073719baaafc5f57ab7750b8ce3bbe3d6b7
+ms.sourcegitcommit: acfa7307f09927c97f0272b11e74ff60c15d5f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812049"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888832"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 

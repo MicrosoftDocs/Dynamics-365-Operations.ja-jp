@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: gboyko
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1e568da97d5a7a8d349d9d12b7b163eb5427e4b
-ms.sourcegitcommit: 72ffe00a65fbf1b4a7fe58c4df50975899637cc6
+ms.openlocfilehash: f5659dbc2a9909c53ebe6b581715f10af2c9126d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2807738"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898562"
 ---
 # <a name="authentication-with-the-talent-data-api"></a>Talent データ API による認証
-
-[!include [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Talent データのアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 

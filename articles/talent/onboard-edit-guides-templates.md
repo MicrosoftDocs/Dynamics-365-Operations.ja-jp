@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812882"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897123"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard で研修用ガイドとテンプレートの編集
+# <a name="edit-onboarding-guides-and-templates"></a>研修用ガイドとテンプレートの編集
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
 1. **活動**タブで、項目を右から編集領域にドラッグします。
 2. ガイドをセクションに分けて整理するには、**新しいセクション**項目を編集領域にドラッグし、セクション名とオプションの説明を入力します。
 
-    ![[新しいセクションを研修用ガイドまたはテンプレートに追加する](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[研修用ガイドまたはテンプレートへの新しいセクションの追加](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. 新しい採用に対する活動を追加して完了するには、**新しい活動**項目を編集領域にドラッグし、活動の名前と説明を入力します。
 
-    ![[新しい活動を研修用ガイドまたはテンプレートに追加する](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[研修用ガイドまたはテンプレートへの新しい活動の追加](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. 豊富な内容を研修用ガイドに追加します。
 
@@ -129,7 +129,7 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
     - Microsoft Forms フォームを追加するには、**Microsoft Forms** 項目を編集領域にドラッグし、活動の名前と説明を入力し、Microsoft Forms フォームの URL を入力して、画面領域のサイズを指定します。
     - Web コンテンツを含む iframe を追加するには、**Web コンテンツ (iframe)** 項目を編集領域にドラッグし、活動の名前と説明を入力し、Web コンテンツの URL を入力して、画面領域のサイズを指定します。
 
-    ![[豊富な内容を研修用ガイドまたはテンプレートに追加する](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[研修用ガイドまたはテンプレートに豊富な内容を追加する](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. オプション: 各活動の右の領域で、活動を特定の個人またはロールに割り当て、期日と連絡担当者を追加し、カテゴリの色を割り当てます。 個人またはロールに活動を割り当てると、各個人に対してタスクが作成されます。 このタスクは、Onboard の**タスク** メニューに表示されます。
 
@@ -148,7 +148,7 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
 1. **連絡先**タブで、**新しい連絡先**を選択します。
 2. **チーム メンバーの追加**ダイアログ ボックスで、連絡担当者の名前または電子メール アドレスを入力し、連絡担当者が新しい採用を支援する方法を示す簡単な説明を入力してから、**追加**を選択します。 
 
-    ![[連絡先を研修用ガイドまたはテンプレートに追加する](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[研修用ガイドまたはテンプレートに連絡先を追加する](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     別の方法として、1 つ以上の連絡先を**候補**から選択できます。
 
@@ -169,7 +169,7 @@ Microsoft Dynamics 365 Talent: Onboard で研修用ガイドまたはテンプ�
     - リンクを追加するには、**リンク** タブを選択し、リンクの名前と住所を入力してから、**追加**を選択します。
     - マップを追加するには、**マップ** タブを選択し、マップの名前と住所を入力してから、**追加**を選択します。 Onboard には、指定するアドレスのマップが含まれます。
 
-    ![[リソースを研修用ガイドまたはテンプレートに追加する](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[研修用ガイドまたはテンプレートにリソースを追加する](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. **保存**を選択して作業内容を保存します。
 

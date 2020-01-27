@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45418b1c68e1a110f590eb562cda1b93a571f181
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 3b6beeb05448ed675729fd85c7dfadcd6a3019cc
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778692"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872654"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 
@@ -44,7 +44,7 @@ X++ は1次元配列のみをサポートしています。 ただし、複数�
 
 ### <a name="array-examples"></a>配列の例
 
-```X++
+```xpp
 public void ArrayMethod()
 {
     int myArray[10]; // Fixed-length array with 10 integers.
@@ -81,44 +81,48 @@ public void ArrayMethod()
 
 C++ および C\# などの一部の言語を使用すると、1 つ以上のインデックスを持つ配列を宣言できます。 つまり、「配列の配列」を定義することができます。 X++ では、1 次元配列のみサポートされているため、複数の配列インデックスを直接作成できません。 ただし、このセクションに記載されているメソッドを使用して、複数のインデックスを実装することができます。 たとえば、国別分析コードにより獲得される量を保持するため、2 つの分析コードを持つ配列を宣言します。 10 の国と 3 つの分析コードがあります。 C++ および C\# では、次の配列を宣言します。
 
-    // This is C# or C++ code, not X++ code.
-    real earning[10, 3];
+```xpp
+// This is C# or C++ code, not X++ code.
+real earning[10, 3];
+```
 
 ただし、X++ はこの申告をサポートしていません。 代わりに、要素の数が各分析コード内の要素の製品である 1 次元配列を定義することができます。 次に例を示します。
 
-    public void MultipleArrayMethod()
-    {
-        // Step 1: define a one-dimensional array with the number
-        // of elements that is the product of the elements in each dimension.
-        real earnings[10*3];
+```xpp
+public void MultipleArrayMethod()
+{
+    // Step 1: define a one-dimensional array with the number
+    // of elements that is the product of the elements in each dimension.
+    real earnings[10*3];
 
-        // Step 2: to refer to a specific element, such as earnings[i,j], write the following:
-        // declare i and j (maybe) and assign the value to something
-        int i = 1;
-        int j = 2;
-        real element = earnings[(i-1)*3 + j];
-    }
+    // Step 2: to refer to a specific element, such as earnings[i,j], write the following:
+    // declare i and j (maybe) and assign the value to something
+    int i = 1;
+    int j = 2;
+    real element = earnings[(i-1)*3 + j];
+}
 
-    // This can be written into a macro like this:
-    #localmacro.earningIndex
-    (%1-1)*3+%2
-    #endmacro
+// This can be written into a macro like this:
+#localmacro.earningIndex
+(%1-1)*3+%2
+#endmacro
 
-    public void CallTheMacro()
-    {
-        // Next, call the specific element within the macro like this:
-        int i = 1;
-        int j = 2;
-        real element = earnings[#earningIndex(i,j)];
+public void CallTheMacro()
+{
+    // Next, call the specific element within the macro like this:
+    int i = 1;
+    int j = 2;
+    real element = earnings[#earningIndex(i,j)];
 
-        // The previous scheme can be extended to any number of dimensions.
-        // The element a[i1, i2, ..., ik] can be accessed by computing the
-        // offset into an array containing (d1*d2*...*dk) elements.
-        //(i1 - 1)*d2*d3*..*dk +
-        //(i2 - 1)*d3*d4*...*dk + .... +
-        //(ik-1 -1)*dk +
-        //(ik-1)
-    }
+    // The previous scheme can be extended to any number of dimensions.
+    // The element a[i1, i2, ..., ik] can be accessed by computing the
+    // offset into an array containing (d1*d2*...*dk) elements.
+    //(i1 - 1)*d2*d3*..*dk +
+    //(i2 - 1)*d3*d4*...*dk + .... +
+    //(ik-1 -1)*dk +
+    //(ik-1)
+}
+```
 
 ## <a name="container"></a>コンテナー
 
@@ -140,103 +144,105 @@ Dynamics AX 2012 では、コンテナーのオブジェクト参照を格納す
 
 ### <a name="container-examples"></a>コンテナーの例
 
-    public void ContainerExample() 
-    {
-        // First, declare the variables you are using.  
-        container myContainer;
-        container myContainer4;
-        container myContainer5; 
-        // Three ways to declare a container.
-        myContainer = [1];
-        myContainer += [2];
-        myContainer4 = myContainer5;
+```xpp
+public void ContainerExample() 
+{
+    // First, declare the variables you are using.  
+    container myContainer;
+    container myContainer4;
+    container myContainer5; 
+    // Three ways to declare a container.
+    myContainer = [1];
+    myContainer += [2];
+    myContainer4 = myContainer5;
 
-        // Declare a container.
-        container cr3;
+    // Declare a container.
+    container cr3;
 
-        // Assign a literal container to a container variable.
-        cr3 = [22, "blue"];
+    // Assign a literal container to a container variable.
+    cr3 = [22, "blue"];
 
-        // Declare and assign a container.
-        container cr2 = [1, "blue", true];
+    // Declare and assign a container.
+    container cr2 = [1, "blue", true];
 
-        // Mimic container modification (implicitly creates a copy).
-        cr3 += [16, strMyColorString];
-        cr3 = conIns(cr3, 1, 3.14);
-        cr3 = conPoke(cr3, 2, "violet");
+    // Mimic container modification (implicitly creates a copy).
+    cr3 += [16, strMyColorString];
+    cr3 = conIns(cr3, 1, 3.14);
+    cr3 = conPoke(cr3, 2, "violet");
 
-        // Assignment of a container (implicitly creates a copy).
-        cr2 = cr3;
+    // Assignment of a container (implicitly creates a copy).
+    cr2 = cr3;
 
-        // Read a value from the container.
-        str  myStr = conPeek(cr2, 1);
+    // Read a value from the container.
+    str  myStr = conPeek(cr2, 1);
 
-        // One statement that does multiple assignments from a container.
-        str myStr;
-        int myInt;
-        container cr4 = ["Hello", 22, 20\07\1988];
-        [myStr, myInt] = cr4; // "Hello", 22
+    // One statement that does multiple assignments from a container.
+    str myStr;
+    int myInt;
+    container cr4 = ["Hello", 22, 20\07\1988];
+    [myStr, myInt] = cr4; // "Hello", 22
 
-        // Example of applying the = operator to a container. The example
-        // initializes myContainer2 and myContainer33.
-        myContainer2 = [2, "apple"];
+    // Example of applying the = operator to a container. The example
+    // initializes myContainer2 and myContainer33.
+    myContainer2 = [2, "apple"];
 
-        // Next, you make a copy of myContainer33 and assign the copy to myContainer2.
-        myContainer33 = [33, "grape"];
-        myContainer2 = myContainer33;  // The container that myContainer2 had been holding is no longer available and cannot be recovered.
-        // An example of building a new container by
-        // assigning a new value to myContainer33 through the += operator.
-        myContainer33 += [34, "banana"];
-    }
+    // Next, you make a copy of myContainer33 and assign the copy to myContainer2.
+    myContainer33 = [33, "grape"];
+    myContainer2 = myContainer33;  // The container that myContainer2 had been holding is no longer available and cannot be recovered.
+    // An example of building a new container by
+    // assigning a new value to myContainer33 through the += operator.
+    myContainer33 += [34, "banana"];
+}
 
-    // List class example. In this example, variable2 and variable3 refer to the same List object.
-    static void JobC(Args _args)
-    {
-        container variable2, variable33;
-        variable2 += [98];
-        variable33 = variable2;
-        variable2 += [97];
-    }
+// List class example. In this example, variable2 and variable3 refer to the same List object.
+static void JobC(Args _args)
+{
+    container variable2, variable33;
+    variable2 += [98];
+    variable33 = variable2;
+    variable2 += [97];
+}
 
-    // Container example. The variable2 and variable3 hold different containers.
-    static void JobL(Args _args)
-    {
-        List variable2,variable33;
-        variable2 = new List(Types::Integer);
-        variable2.addEnd(98);
-        variable33 = variable2;
-        variable2.addEnd(97);
-    }
+// Container example. The variable2 and variable3 hold different containers.
+static void JobL(Args _args)
+{
+    List variable2,variable33;
+    variable2 = new List(Types::Integer);
+    variable2.addEnd(98);
+    variable33 = variable2;
+    variable2.addEnd(97);
+}
 
-    // The automatic type conversion by anytype also applies to the special syntax for making multiple
-    // assignments from a container in one statement. This is shown in the following code example,
-    // which assigns a str to an int, and an int to a str.
-    static void JobContainerMultiAssignmentUsesAnytype(Args _args)
-    {
-        container con2;
-        int int4;
-        str str7;
-        con2 = ["11", 222];
-        [int4, str7] = con2;
-        info(strfmt("int4==11==(%1), str7==222==(%2)", int4, str7));
-    }
+// The automatic type conversion by anytype also applies to the special syntax for making multiple
+// assignments from a container in one statement. This is shown in the following code example,
+// which assigns a str to an int, and an int to a str.
+static void JobContainerMultiAssignmentUsesAnytype(Args _args)
+{
+    container con2;
+    int int4;
+    str str7;
+    con2 = ["11", 222];
+    [int4, str7] = con2;
+    info(strfmt("int4==11==(%1), str7==222==(%2)", int4, str7));
+}
 
-    /***  Output:
-    Message (10:36:22 am)
-    int4==11==(11), str7==222==(222)
-    ***/
+/***  Output:
+Message (10:36:22 am)
+int4==11==(11), str7==222==(222)
+***/
 
-    static void UseQuery()
-    {
-        // An example of how the compiler diagnoses attempts to store object in containers
-        container c = [new Query()];   // This statement will cause the error message shown below.
-        /*** Instance of type 'Query' cannot be added to a container. ***/
+static void UseQuery()
+{
+    // An example of how the compiler diagnoses attempts to store object in containers
+    container c = [new Query()];   // This statement will cause the error message shown below.
+    /*** Instance of type 'Query' cannot be added to a container. ***/
 
-        // An example of a code that won't cause an error message, but will
-        // cause an error message to be thrown at runtime.
-        anytype a = new Query();
-        container d = [a];
-    }
+    // An example of a code that won't cause an error message, but will
+    // cause an error message to be thrown at runtime.
+    anytype a = new Query();
+    container d = [a];
+}
+```
 
 ## <a name="classes-as-data-types"></a>データ型としてのクラス
 
@@ -258,46 +264,50 @@ AX 2012 およびそれ以前のバージョンでは、クライアントまた
 
 次の例では、**field1** に明示的な **this** 修飾子を使用することでアクセスします。 この場合、そのアプローチは消費者にクラスの内部作業を公開することになり、クラスの実装と消費者の間に強い依存関係が生じるため、メンバー変数をパブリックにすることをお勧めできない場合があります。 常に、実装ではなくコントラクトにのみ依存させる必要があります。
 
-    public class AnotherClass3
+```xpp
+public class AnotherClass3
+{
+    int field1;
+    str field2;
+    void new()
     {
-        int field1;
-        str field2;
-        void new()
-        {
-            this.field1 = 1;   // Explicit object designated.
-            field2 = "Banana";  // 'this' assumed, as usual.
-        }
+        this.field1 = 1;   // Explicit object designated.
+        field2 = "Banana";  // 'this' assumed, as usual.
     }
+}
+```
 
 ### <a name="static-constructors-and-static-fields"></a>静的コンストラクターおよび静的フィールド
 
 *静的フィールド*は**静的**キーワードを使用して宣言されているフィールドです。 概念的には、クラスのインスタンスではなく静的フィールドに適用されます。 静的コンストラクターは、静的呼び出しまたはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。 静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。 静的コンストラクターは明示的に呼び出さないでください。 代わりに、コンパイラはコンストラクターがクラスの他のメソッドの前に正確に 1 回呼び出されるようにするコードを生成します。 静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のあるアクションを実行するために使用されます。 静的コンストラクターのパラメーターを指定することはできず、**静的** キーワードでマークされる必要があります。
 
-    // An example of how a singleton (call instance in the example below)
-    // can be created using the static constructor.
-    public class Singleton
+```xpp
+// An example of how a singleton (call instance in the example below)
+// can be created using the static constructor.
+public class Singleton
+{
+    private static Singleton instance;
+    private void new()
     {
-        private static Singleton instance;
-        private void new()
-        {
-        }
-        static void TypeNew()    // This is the static constructor.
-        {
-            instance = new Singleton();
-        }
-
-        public static Singleton Instance()
-        {
-            return Singleton::instance;
-        }
+    }
+    static void TypeNew()    // This is the static constructor.
+    {
+        instance = new Singleton();
     }
 
-    // The singleton ensures that only one instance of the class
-    // will be called, which is consumed by the following. 
+    public static Singleton Instance()
     {
-        // Your code here.
-        Singleton i = Singleton::Instance();
+        return Singleton::instance;
     }
+}
+
+// The singleton ensures that only one instance of the class
+// will be called, which is consumed by the following. 
+{
+    // Your code here.
+    Singleton i = Singleton::Instance();
+}
+```
 
 ### <a name="class-elements-in-application-explorer"></a>アプリケーション エクスプローラーのクラス要素
 
@@ -305,26 +315,30 @@ AX 2012 およびそれ以前のバージョンでは、クライアントまた
 
 次の例では、変数 **m\_priority** および **m\_rectangle** はクラスのメンバーです。
 
-    // An example of a classDeclaration.
-    public class YourDerivedClass extends YourBaseClass
+```xpp
+// An example of a classDeclaration.
+public class YourDerivedClass extends YourBaseClass
+{
+    int m_priority;
+    Rectangle m_rectangle;
+    void new(int _length, int _width)
     {
-        int m_priority;
-        Rectangle m_rectangle;
-        void new(int _length, int _width)
-        {
-            this.m_rectangle = new Rectangle(_length, _width);
-        }
+        this.m_rectangle = new Rectangle(_length, _width);
     }
+}
+```
 
 **新しい**演算子には、**新しい**演算子を使用して、クラスのインスタンスを作成するときに実行されるロジックが含まれます。 **新規** メソッドのロジックは、オブジェクトを作成し、そのオブジェクトを **classDeclaration** で宣言された変数に割り当てることができます。 各クラスは、**新しい**方法を 1 つだけ持つことが可能です。 ただし、**新しい**メソッドでは、多くの場合基本クラスの**新しい**メソッドを呼び出す必要があります。 基本クラスの<**新規**メソッドを呼び出すには、**super()** を呼び出します。 
 
 次の例は、前の **classDeclaration** の例の **YourDerivedClass** クラスの **new** メソッドを示しています。 この**新しい**メソッドで、コードは**長方形**クラスのインスタンスを構築します。 インスタンスは、**m\_rectangle** 変数に割り当てられます。 **この**例で使用されているキーワードは省略可能ですが、指定した場合は、IntelliSense を使用する方が便利な場合があります。
 
-    // An example of the new method from the previous classDeclaration example.
-    void new(int _length, int _width)
-    {
-        this.m_rectangle = new Rectangle(_length, _width);
-    }
+```xpp
+// An example of the new method from the previous classDeclaration example.
+void new(int _length, int _width)
+{
+    this.m_rectangle = new Rectangle(_length, _width);
+}
+```
 
 ### <a name="garbage-collection"></a>ガベージ コレクション
 
@@ -348,23 +362,25 @@ AX 2012 およびそれ以前のバージョンでは、クライアントまた
 
 ターゲット クラスへのアップグレードは、既存の拡張メソッドの影響を受けることはありません。 ただし、ターゲット クラスへのアップグレードで拡張メソッドとして同じ名前のメソッドが追加される場合、拡張メソッドはターゲット クラスのオブジェクトを通して到達できなくなります。 拡張メソッドの手法では、通常のインスタンス メソッドを呼び出すときによく使うドット区切り構文と同じものを使用します。 拡張メソッドは、ターゲット クラスのすべてのパブリック コンポーネントにアクセスできますが、保護されたまたはプライベートのオブジェクトには何もアクセスできません。 したがって、拡張メソッドは構文砂糖の一種と考えることができます。 目標タイプに関係なく、拡張機能クラスはタイプに拡張メソッドを追加するために使用されます。 たとえば、拡張テーブルは、メソッドをテーブルに追加するために使用されていませんし、拡張テーブルというものは存在しません。
 
-    // An example of an extension class holding a few extension methods.
-    public static class AtlInventLocation_Extension
+```xpp
+// An example of an extension class holding a few extension methods.
+public static class AtlInventLocation_Extension
+{
+    public static InventLocation refillEnabled(
+        InventLocation _warehouse,
+        boolean _isRefillEnabled = true)
     {
-        public static InventLocation refillEnabled(
-           InventLocation _warehouse,
-           boolean _isRefillEnabled = true)
-        {
-           _warehouse.ReqRefill = _isRefillEnabled;
-           return _warehouse;
-        }
-
-        public static InventLocation save(InventLocation _warehouse)
-        {
-           _warehouse.write();
-           return _warehouse;
-        }
+        _warehouse.ReqRefill = _isRefillEnabled;
+        return _warehouse;
     }
+
+    public static InventLocation save(InventLocation _warehouse)
+    {
+        _warehouse.write();
+        return _warehouse;
+    }
+}
+```
 
 ## <a name="delegates-as-data-types"></a>データ型としてのデリゲート
 
@@ -372,23 +388,25 @@ AX 2012 およびそれ以前のバージョンでは、クライアントまた
 
 ### <a name="delegate-examples"></a>デリゲートの例
 
-    abstract class VarDatClass
+```xpp
+abstract class VarDatClass
+{
+    // delegatemethod examples
+    // An example of declaring a delegate.
+    delegate void notifyChange(utcdatetime _dateTime, str _changeDescription)
     {
-        // delegatemethod examples
-        // An example of declaring a delegate.
-        delegate void notifyChange(utcdatetime _dateTime, str _changeDescription)
-        {
-        }
-
-        // An example of subscribing an event handler to a delegate.
-        public static void notifyStatic(utcDateTime _dateTime, str _changeDescription)
-        {
-            info("A notification has occurred calling static handler:" +
-                DateTimeUtil::toStr(_dateTime) +
-                " Message:" +
-                _changeDescription);
-        }
     }
+
+    // An example of subscribing an event handler to a delegate.
+    public static void notifyStatic(utcDateTime _dateTime, str _changeDescription)
+    {
+        info("A notification has occurred calling static handler:" +
+            DateTimeUtil::toStr(_dateTime) +
+            " Message:" +
+            _changeDescription);
+    }
+}
+```
 
 ## <a name="tables-as-data-types"></a>データ型としてのテーブル
 
@@ -410,35 +428,39 @@ AX 2012 およびそれ以前のバージョンでは、クライアントまた
 
 次の例では、顧客テーブルの現在のレコードにあるフィールドの内容を出力します。
 
-    // Declares and allocates space for one CustTable record.
-    public void myMethod()
-    {
-        CustomerTable custTable;
-    }
+```xpp
+// Declares and allocates space for one CustTable record.
+public void myMethod()
+{
+    CustomerTable custTable;
+}
 
-    // An example of referencing table variables.
-    public void printAccountNo()
-    {
-        CustomerTable custTable;
-        print custTable.AccountNo;  // Prints the field reference.
-    }
+// An example of referencing table variables.
+public void printAccountNo()
+{
+    CustomerTable custTable;
+    print custTable.AccountNo;  // Prints the field reference.
+}
+```
 
 次の例では、**fieldCnt** および **fieldCnt2Id** メソッドを使用しています。 **fieldCnt** メソッドは、テーブル内のフィールドの数をカウントしますが、**fieldCnt2Id** はフィールド番号の ID を返します。 たとえば、**fieldCnt2Id** メソッドを使用して、テーブルでそのフィールド番号 6 が ID 54 を持っていることを確認します。 この変換は、表内のフィールドの ID が連続しているという保証がないため、この変換が必要です。
 
-    // An example of the various possibilities for referencing fields in records.
-    public void printCust()
+```xpp
+// An example of the various possibilities for referencing fields in records.
+public void printCust()
+{
+    int i, n, k;
+    CustomerTable custTable;
+    DictTable dictTable;
+    dictTable = new DictTable(custTable.TableId);
+    n = dictTable.fieldCnt();
+    print "Number of fields in table: ", n;
+    for(i=1; i<=n; i++)
     {
-        int i, n, k;
-        CustomerTable custTable;
-        DictTable dictTable;
-        dictTable = new DictTable(custTable.TableId);
-        n = dictTable.fieldCnt();
-        print "Number of fields in table: ", n;
-        for(i=1; i<=n; i++)
-        {
-            k = dictTable.fieldCnt2Id(i);
-            print "The ", dictTable.fieldName(k),
-            " field with Id=",k, " contains '",
-            custTable.(k), "'";
-        }
+        k = dictTable.fieldCnt2Id(i);
+        print "The ", dictTable.fieldName(k),
+        " field with Id=",k, " contains '",
+        custTable.(k), "'";
     }
+}
+```

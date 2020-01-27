@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009425"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915204"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent により、従業員および雇用データを効率的に入力できます。 過去、有効、および未来の従業員および契約社員の作業履歴情報をすばやく更新できます。
 
-また、簡易ナビゲーション エクスペリエンスを有効にして、関連情報をすばやく検索し、必要な変更を行うこともできます。 この機能は、サンドボックス環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能**に移動します。 **拡張された作業者フォームおよびナビゲーション**を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
+また、簡易ナビゲーション エクスペリエンスを有効にして、関連情報をすばやく検索し、必要な変更を行うこともできます。 この機能は、すべての環境で使用可能になりました。 この機能を有効にするには、**システム管理 > 機能管理 > 新規 > 合理化された従業員エントリ > 有効にする**の順に移動します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
 
 ## <a name="view-options"></a>オプションの表示
 

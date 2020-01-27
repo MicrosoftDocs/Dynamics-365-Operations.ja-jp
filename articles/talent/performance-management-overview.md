@@ -3,7 +3,7 @@ title: パフォーマンス管理
 description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590508"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921153"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
-
-[!include [banner](includes/banner.md)]
 
 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。  
 
@@ -91,6 +89,8 @@ ms.locfileid: "1590508"
 **コンピテンシー** セクションを使用して、従業員のコンピテンシーの話し合い、確認、および評価することもできます。 必要なだけのコンピテンシーを追加し、評価する必要のあるコンピテンシーかどうかを選択できます。 
 
 作成したテンプレートに基づく新しい確認を作成できます。 たとえば、1 対 1、開発計画、定期的な確認のためのテンプレートを作成できます。 新しい確認を作成するときにテンプレートを選択できます。
+
+レビューを印刷するには、**レビューを印刷**ボタンを選択します。 **レビュー** ページにボタンが表示されない場合は、**機能管理**ワークスペースでその機能が有効になっていることを確認してください。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>業績確認に含めることができるコンポーネント
 業績確認に複数のタイプの情報を含めることができます。 確認の詳細、測定、活動、評価、サインオフ、添付ファイルが含まれます。

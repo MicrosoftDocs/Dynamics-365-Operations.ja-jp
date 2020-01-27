@@ -3,7 +3,7 @@ title: 既定の財務分析コード
 description: このトピックでは、既定の財務分析コードについて説明します。 ここでは、分析コードのがどのように生成されるか、その分析に使用されるAPI、および元帳分析コードの作成に使用する方法について説明します。
 author: jasonsto
 manager: annbe
-ms.date: 10/02/2019
+ms.date: 01/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59a8926dff4cbd54533a0bde5d73d9a532a4a94a
-ms.sourcegitcommit: 69f8233e86b32347474a25d83b4ac5920f60407d
+ms.openlocfilehash: d42a495590f177452a737a3c20fd062ffe2a424d
+ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2538466"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "2947494"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -35,19 +35,19 @@ ms.locfileid: "2538466"
 
 250 以上のページによって、既定の財務分析コードを入力できます。 分析コードは、ファストタブに値および説明と共に一覧表示されています。 標準デモデータでは、30以上の分析コードを使用できます。 ただし、次の **財務分析コード** ファストタブには、次の5つの分析コード、BusinessUnit、課、部門、ItemGroup、プロジェクト のみを表示しています。 
 
-![財務分析コード ファストタブ](./media/DefaultDimensionEntry.png "財務分析コード ファストタブ")
+![財務分析 ファストタブ](./media/DefaultDimensionEntry.png "財務分析 ファストタブ")
 
 ### <a name="dimensions-list"></a>分析コード リスト
 
 分析コードは、最初に勘定構造の一覧に基づいてフィルター処理されており、これらは現在の会社またはページで指定されている会社の元帳に関連付けられています。 次に、それらの構造に関連付けられている分析コードの一覧と、それらの構造に関連付けられている有効となっている高度なルールの一覧が結合されたリストが表示されます。 
 
-![財務分析コード リスト](./media/FinancialDimensionList.png "財務分析コード リスト")
+![財務分析 ファストタブ リスト](./media/FinancialDimensionList.png "財務分析 ファストタブ リスト")
 
 ### <a name="ledger-page"></a>元帳 ページ
 
 **元帳** ページ (**一般会計 \> 設定 \> 元帳**) にて、会社の勘定構造を管理できます。 
 
-![USMF会社の元帳ページ](./media/LedgerStructureConfiguration.png "USMF会社の元帳ページ")
+![USMF 企業 の 台帳ページです](./media/LedgerStructureConfiguration.png "USMF 企業 の 台帳ページです")
 
 ### <a name="account-structures-where-the-number-of-dimensions-varies"></a>分析コードの数が変動する勘定構造
 
@@ -55,17 +55,17 @@ ms.locfileid: "2538466"
 
 **3つの分析コードを使っている勘定構造**
 
-![USMF社の貸借対照表勘定構造](./media/BalanceSheetAccountStructureSetup.png "USMF社の貸借対照表勘定構造")
+![USMF 企業の貸借対照表勘定の構造設定](./media/BalanceSheetAccountStructureSetup.png "USMF 企業の貸借対照表勘定の構造設定")
 
 **5つの分析コードを使っている勘定構造**
 
-![USMF社の損益勘定構造設定](./media/PandLAccountStructureSetup.png "USMF社の損益勘定構造設定")
+![USMF 企業の損益計算書勘定の構造設定](./media/PandLAccountStructureSetup.png "USMF 企業の損益計算書勘定の構造設定")
 
 上記の図に示した2つの勘定構造の間には、BusinessUnit、Department、CostCenter, ItemGroup、の4つの固有の分析コードがあります。 これら4つの分析コードは、既定の分析コードの一覧に表示されます。 さらに、高度なルールを介してアカウント構造に連係されている高度なルール構造からの分析コードが検証されます。 この例では、高度なルール構造から分析コードを検証した結果、5番目の分析コードがデフォルトの分析コードのリストに追加されています。
 
 以下の図は、プロジェクト分析コードがデフォルト分析コードのリストに組み込むための高度なルールを示しています。
 
-![損益勘定構造にリンクされている損益勘定構造](./media/AdvancedRuleLinked.png "損益勘定構造にリンクされている損益勘定構造")
+![損益計算書勘定の構造設定の複雑なルール](./media/AdvancedRuleLinked.png "損益計算書勘定の構造設定の複雑なルール")
 
 以下の図は、ルール構造を示しています。
 
@@ -91,11 +91,11 @@ ms.locfileid: "2538466"
 
 それぞれの値は、DimensionAttributeValueSetItem テーブルに独立した行として保存されますが、親レコードの外部キーは同じものとなります。
 
-![すべての既定の分析コード値のSQL結果](./media/SQLResultofAllDefaultDimensionValues.png "すべての既定の分析コード値のSQL結果")
+![すべての既定の分析コードを表すSQL結果](./media/SQLResultofAllDefaultDimensionValues.png "すべての既定の分析コードを表すSQL結果")
 
 データは、これらのテーブルを介して直接照会できます。 また、以下の図に示すように **DimensionAttributeValueSetItemView** を使用してクエリを実行することもできます。
 
-![DimensionAttributeValueSetItemViewを使用してデータを照会](./media/SQLofAllDefaultDimensionValues.png "DimensionAttributeValueSetItemViewを使用してデータを照会")
+![DimensionAttributeValueSetItemView を使用したデータの問い合わせ](./media/SQLofAllDefaultDimensionValues.png "DimensionAttributeValueSetItemView を使用したデータの問い合わせ")
 
 ### <a name="empty-values"></a>空の値
 
@@ -105,11 +105,11 @@ ms.locfileid: "2538466"
 
 ほとんどの分析コードと同様に、テーブルに挿入されたレコードは変更できません。 これらは最初に作成されますが、その後更新または削除されることがありません。 たとえば、ユーザーがプロジェクトIDを分析コードとして追加し、変更を保存したとします。
 
-![既定の分析コードエントリと追加された値](./media/Part2-1DefaultDimensionEntry.png "既定の分析コードエントリと追加された値")
+![既定の分析コードの入力と入力後の値](./media/Part2-1DefaultDimensionEntry.png "既定の分析コードの入力と入力後の値")
 
 この場合でも、新しい行が追加された場合でも、SQLクエリは以前と同様の3つの行を返します。 新しい値が追加されると、分析コードフレームワークは新しい値セットレコードと、前の分析コードセットを変更するのではなく、新しい値セットにリンクされている4つの追加の値セットアイテムレコードを作成します。
 
-![sqlクエリのすべての既定の分析コード値に対するSQLクエリと出力 (列追加)](./media/Part2SQLResultsValueSet.png "sqlクエリのすべての既定の分析コード値に対するSQLクエリと出力 (列追加)")
+![新規セットにおけるすべての既定の分析コードを参照するSQL問い合わせと出力結果 (列の調整済み)](./media/Part2SQLResultsValueSet.png "新規セットにおけるすべての既定の分析コードを参照するSQL問い合わせと (列の調整がされた) 出力結果")
 
 ## <a name="copy-patterns"></a>パターンのコピー
 
@@ -121,7 +121,7 @@ ms.locfileid: "2538466"
 
 以下の例を、"仮想注文" ドキュメントに基づいて進めていきます。 このドキュメントは、品目としてのサービスを含む顧客販売注文であると考えることができます。 または、在庫品目を品目として含む仕入先の発注書であると考えることもできます。 以下の図に示すように、処理内のさまざまな時点で既定の分析コードを入力または上書きすることができます。
 
-![標準ドキュメントの既定の分析コードソース](./media/DefaultDimensionSourcesGraph.png "標準ドキュメントの既定の分析コードソース")
+![一般的なドキュメントにおける既定の分析コードのソース](./media/DefaultDimensionSourcesGraph.png "一般的なドキュメントにおける既定の分析コードのソース")
 
 注文ドキュメントの場合は、ビジネスロジックに相当する既定の分析コードが複数用意されています。 この例で使用される発注書のように、ドキュメントヘッダーには既定の分析コードのセットが含まれている場合があります。 この例では、顧客または仕入先のオーダーには一連の既定の分析コードが存在します。 注文のビジネスロジックによっては、これらのさまざまな既定の分析コードの組み合わせによって優先順位が異なる場合があります。 既定の分析コードの中で優先順位が高いものは、他の既定の分析コードを置き換えることがあります。 また、既定の分析コードがマージされる場合もあります。
 
@@ -129,23 +129,23 @@ ms.locfileid: "2538466"
 
 以下の図は、ある販売店の主勘定に入力された既定の分析コードを示しています。
 
-![入力された特定の仕入先勘定の既定の分析コード](./media/DefaultDimensionVendor.png "入力された特定の仕入先勘定の既定の分析コード")
+![一般的なベンダーのアカウントに入力された既定の分析コード](./media/DefaultDimensionVendor.png "一般的なベンダーのアカウントに入力された既定の分析コード")
 
 以下の図は、仕入先レコードの既定の分析コード参照に対するSQLクエリを示しています。
 
-![仕入先レコードのデフォルトの分析コード参照に対するSQLクエリ](./media/DefaultDimensions3-SQLVendor.png "仕入先レコードのデフォルトの分析コード参照に対するSQLクエリ")
+![ベンダーのレコードにおける既定の分析コードを参照するSQL問い合わせ](./media/DefaultDimensions3-SQLVendor.png "ベンダーのレコードにおける既定の分析コードを参照するSQL問い合わせ")
 
 以下の図は、作成された既定の分析コードを示しています。
 
-![既定の分析コードの生成](./media/DefaultDimensions3-SQLResultVendor.png "既定の分析コードの生成")
+![既定の分析コードの結果](./media/DefaultDimensions3-SQLResultVendor.png "既定の分析コードの結果")
 
 以下の図は、この仕入先に対して作成された新しい発注書を示しています。 既定の分析コードがドキュメントヘッダーにコピーされます。
 
-![既定の分析コードドキュメントヘッダーにコピーされた既定の分析コード (発注書)](./media/DefaultDimensions3-CopiedToDocHeader.png "既定の分析コードドキュメントヘッダーにコピーされた既定の分析コード (発注書)")
+![ドキュメントヘッダーにコピーされた既定の分析コード (注文書)](./media/DefaultDimensions3-CopiedToDocHeader.png "ドキュメントヘッダーにコピーされた既定の分析コード (注文書)")
 
 以下の図は、SQLクエリとヘッダレコードへの既定の分析コード参照を示しています。 
 
-![発注書レコードのデフォルトのディメンションを表示するSQLクエリと出力](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "発注書レコードのデフォルトのディメンションを表示するSQLクエリと出力")
+![注文書レコードにおける既定の分析コードを参照するSQL問い合わせと出力結果](./media/DefaultDimensions3-SQLCopiedToDocHeader.png "注文書レコードにおける既定の分析コードを表示するSQL問い合わせと出力結果")
 
 以下の図にあるように、仕入先を選択するとただちに、発注書ヘッダーに既に存在する分析コードが仕入先の分析コードによって置き換えられます。
 
@@ -153,27 +153,27 @@ ms.locfileid: "2538466"
 
 したがって、既定の分析コードの外部キーをコピーする必要があります。 以下の図は、仕入先から購買発注へ既定の分析コードをコピーするために使用されるコードを示しています。
 
-![仕入先から購買発注へのデフォルトディメンションのコピーに使用されるコード](./media/DefaultDimensions3-6CodetoCopy.png "仕入先から購買発注へのデフォルトディメンションのコピーに使用されるコード")
+![既定の分析コードをベンダーから注文書へとコピーする際に使用するコード](./media/DefaultDimensions3-6CodetoCopy.png "既定の分析コードをベンダーから注文書へとコピーする際に使用するコード")
 
 次の図は、ユーザーがプロジェクト分析コード値を入力した後のヘッダー分析コードを示しています。 
 
-![伝票ヘッダ (発注書)でユーザが変更した既定の分析コード](./media/DefaultDimensions3-7DocumentHeader.png "伝票ヘッダ (発注書)でユーザが変更した既定の分析コード")
+![ユーザーが修正したドキュメントヘッダー上の既定の分析コード (注文書)](./media/DefaultDimensions3-7DocumentHeader.png "ユーザーが修正したドキュメントヘッダー上の既定の分析コード (注文書)")
 
 以下の図は、ヘッダレコードの既定の分析コード参照に対するSQLクエリを示しています。
 
-![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQLクエリ")
+![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL クエリ")
 
 以下の図は、作成された既定の分析コードを示しています。
 
-![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "発注書レコードの更新された既定の分析コード")
+![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "注文書レコードにおける更新された既定の分析コードを表示した出力結果")
 
 ユーザーが **ライン** ビューに切り替えて明細行を入力すると、以下の図に示すように、発注書ヘッダーから既定の分析コードがコピーされます。
 
-![伝票明細(発注書)にコピーされた既定の分析コード](./media/DefaultDimensions3-9CopiedToLine.png "伝票明細(発注書)にコピーされた既定の分析コード")
+![ドキュメントの明細にコピーされた既定の分析コード (注文書明細)](./media/DefaultDimensions3-9CopiedToLine.png "ドキュメントの明細にコピーされた既定の分析コード (注文書明細)")
 
 以下の図は、外部キー参照を行にコピーするために使用されるコードを示しています。 この例では、明細行はまだ保存されていません。 そのため、既定の分析コードの外部キーは、メモリのテーブルバッファーのみに表示されます。
 
-![既定の分析コードをヘッダーから行にコピーするために使用されるコード](./media/DefaultDimensions3-10CodeToCopyToLine.png "既定の分析コードをヘッダーから行にコピーするために使用されるコード")
+![既定の分析コードをヘッダーから明細へとコピーする際に使用するコード](./media/DefaultDimensions3-10CodeToCopyToLine.png "既定の分析コードをヘッダーから明細へとコピーする際に使用するコード")
 
 ## <a name="merging-patterns"></a>パターンのマージ
 
@@ -183,11 +183,11 @@ ms.locfileid: "2538466"
 
 次の図では、ユーザーが行の BusinessUnit 分析コードを手動で削除しました。 その結果、新しい既定の分析コード外部キーが作成され、発注書ヘッダーが更新されます。 
 
-![伝票明細(発注書)で変更された既定の分析コード](./media/DefaultDimension4-1DimOnLine.png "伝票明細(発注書)で変更された既定の分析コード")
+![ドキュメントの明細で修正された既定の分析コード (注文書明細)](./media/DefaultDimension4-1DimOnLine.png "ドキュメントの明細で修正された既定の分析コード (注文書明細)")
 
 この例ではヘッダーはまだ保存されていないため、更新された外部キーはメモリのテーブルバッファーにのみ表示されます。 ただし、以下の図に示すように、新しい既定の分析コードを照会して検索することができます。
 
-![新しい既定の分析コードを検索するSQLクエリ](./media/DefaultDimension4-1SQLDimOnLine.png "新しい既定の分析コードを検索するSQLクエリ")
+![新たな既定の分析コードを検索するSQLクエリ](./media/DefaultDimension4-1SQLDimOnLine.png "新たな既定の分析コードを検索するSQLクエリ")
 
 ![更新された既定の分析コード](./media/DefaultDimension4-2SQLResultsOnLine.png "更新された既定の分析コード")
 
@@ -197,11 +197,11 @@ ms.locfileid: "2538466"
 
 以下の図は、データベース内の既定の分析コードに対するSQLクエリを示しています。
 
-![SQLクエリ](./media/DefaultDimension4-4SQLItem.png "SQLクエリ")
+![SQL クエリ](./media/DefaultDimension4-4SQLItem.png "SQL クエリ")
 
 以下の図は、クエリの実行結果を示しています。
 
-![品目レコードの既定の分析コードを出力](./media/DefaultDimension4-4SQLResultsItem.png "品目レコードの既定の分析コードを出力")
+![品目レコードにおける既定の分析コードを表した出力結果](./media/DefaultDimension4-4SQLResultsItem.png "品目レコードにおける既定の分析コードを表した出力結果")
 
 続いて、購買注文の明細行に品目を入力します。 以下の図は、購買注文の明細行で選択された品目と、その結果の既定の分析コードを示しています。 この場合、既定の分析コード値は発注書ロジックによってマージされています。
 
@@ -255,7 +255,7 @@ ms.locfileid: "2538466"
 
 [![勘定配布ページ](./media/DefaultDimension5-1AcctDistForm.png)](./media/DefaultDimension5-1AcctDistForm.png)
 
-プロジェクト、コストセンター、ItemGroup、部門 の各分析コードの値が会計のディストリビューションに入力されています。 また、次の図に示すように、転記品目グループの既定の MainAccount の値は、購買注文の経費勘定の購買経費として品目に入力されています。 プロジェクトは、ここに該当する勘定構造の一部ではないため、表示されません。
+勘定配賦に入力された、プロジェクト、コストセンター、品目グループ、部署の値。 また、次の図に示すように、転記品目グループの既定の MainAccount の値は、購買注文の経費勘定の購買経費として品目に入力されています。 プロジェクトは、ここに該当する勘定構造の一部ではないため、表示されません。
 
 [![リリース済製品の詳細ページ](./media/DefaultDimension5-1SourceofMainAccountOnPO.png)](./media/DefaultDimension5-1SourceofMainAccountOnPO.png) 
 
@@ -263,17 +263,17 @@ ms.locfileid: "2538466"
 
 以下の図は、クエリおよびその結果となる既定のアカウントのソースを示しています。
 
-![SQLクエリ](./media/DefaultDimension5-3SQLDefaultSource.png "SQLクエリ")
+![SQL クエリ](./media/DefaultDimension5-3SQLDefaultSource.png "SQL クエリ")
 
-![既定のアカウントソースの結果表示](./media/DefaultDimension5-3SQLResultDefaultSource.png "既定のアカウントソースの結果表示")
+![結果は既定のアカウント ソースを表示します](./media/DefaultDimension5-3SQLResultDefaultSource.png "結果は既定のアカウント ソースを表示します")
 
 次の図は、品目グループの既定の勘定を含む購買注文明細行の既定の分析コードをマージするために必要なコードを示しています。 
 
-![既定の勘定コードを既定の勘定と結合に使用されるコード](./media/DefaultDimension5-4CodeToMerge.png "既定の勘定コードを既定の勘定と結合に使用されるコード")
+![既定の分析コードと既定のアカウントを統合する際に使用するコード](./media/DefaultDimension5-4CodeToMerge.png "既定の分析コードと既定のアカウントを統合する際に使用するコード")
 
 マージが完了すると、以下の図に示すクエリのように、新しい勘定科目の組み合わせが作成されます。 この動作は、既定の分析コードが相互にマージされる際の挙動と共通しています。
 
-![マージされた既定の勘定と既定の分析コードを示すSQLクエリおよび結果](./media/DefaultDimension5-5SQLResultMerged.png "マージされた既定の勘定と既定の分析コードを示すSQLクエリおよび結果")
+![統合された既定のアカウントと既定の分析コードを表すSQLクエリと実行結果](./media/DefaultDimension5-5SQLResultMerged.png "統合された既定のアカウントと既定の分析コードを表すSQLクエリと実行結果")
 
 ## <a name="common-pattern-apis"></a>一般的なAPIのパターン
 

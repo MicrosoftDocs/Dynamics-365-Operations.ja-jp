@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697454"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945516"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい E コマース テナントの配置
 
@@ -88,16 +88,16 @@ E コマースが LCS から初期化されると、システムは E コマー�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オンライン ストアの概要](online-store-overview.md)
+[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [E コマース サイトの作成](create-ecommerce-site.md)
 
 [チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
 
-[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
+[robots.txt ファイルの管理](manage-robots-txt-files.md)
+
+[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d95399fddcfeea204d97261021a4cf2b7f4ef1fe
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: ab71c1e4dcdf510d4e051735507cf068492ba196
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778693"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872650"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 
@@ -42,24 +42,26 @@ ms.locfileid: "2778693"
 
 ### <a name="anytype-examples"></a>anytype 例
 
-    // An example of using anytype variables.
-    public static str range(anytype _from, anytype _to)
-    {
-        return queryValue(_from) + '..' + queryValue(_to);
-    }
+```xpp
+// An example of using anytype variables.
+public static str range(anytype _from, anytype _to)
+{
+    return queryValue(_from) + '..' + queryValue(_to);
+}
 
-    // Another example of using anytype variables.
-    void put(int position, anytype data)
-    {
-        record = conPoke (record, position, data);
-    }
+// Another example of using anytype variables.
+void put(int position, anytype data)
+{
+    record = conPoke (record, position, data);
+}
 
-    public void AnytypeMethod()
-    {
-        // An example of automatic conversion for anytype.
-        anytype a;
-        a = "text"; // Automatically assigns a string literal.
-    }
+public void AnytypeMethod()
+{
+    // An example of automatic conversion for anytype.
+    anytype a;
+    a = "text"; // Automatically assigns a string literal.
+}
+```
 
 ## <a name="boolean"></a>ブール値
 
@@ -69,37 +71,39 @@ ms.locfileid: "2778693"
 
 ### <a name="boolean-examples"></a>ブール値の例
 
-    public void BooleanMethod()
+```xpp
+public void BooleanMethod()
+{
+    // Simple declaration of a boolean variable, b.
+    boolean b;
+
+    // Multiple declarations of booleans.
+    boolean b1, b2;
+
+    // Boolean variable is initialized to true.
+    boolean b3 = true;
+
+    // Declares a dynamic array of booleans.
+    boolean b4[];
+
+    // This example shows the most common usage of a boolean: a boolean in
+    // a conditional statement and as a result of a logical expression.
+    void main()
     {
-        // Simple declaration of a boolean variable, b.
-        boolean b;
+        // Declares a boolean called exprValue.
+        boolean exprValue;
 
-        // Multiple declarations of booleans.
-        boolean b1, b2;
+        // Assigns ExprValue the value of (7*6 == 42), which equates to true.
+        exprValue = (7*6 == 42);
 
-        // Boolean variable is initialized to true.
-        boolean b3 = true;
-
-        // Declares a dynamic array of booleans.
-        boolean b4[];
-
-        // This example shows the most common usage of a boolean: a boolean in
-        // a conditional statement and as a result of a logical expression.
-        void main()
+        // If the conditional statement is true, print "OK".
+        if (exprValue)
         {
-            // Declares a boolean called exprValue.
-            boolean exprValue;
-
-            // Assigns ExprValue the value of (7*6 == 42), which equates to true.
-            exprValue = (7*6 == 42);
-
-            // If the conditional statement is true, print "OK".
-            if (exprValue)
-            {
-                print "OK";  //"OK" is printed because the expression is true.
-            }
+            print "OK";  //"OK" is printed because the expression is true.
         }
     }
+}
+```
 
 ## <a name="date"></a>日付
 
@@ -113,40 +117,42 @@ ms.locfileid: "2778693"
 
 ### <a name="date-examples"></a>date の例
 
-    public void DateMethod()
+```xpp
+public void DateMethod()
+{
+    // Simple declaration of a date variable, d.
+    date d;
+
+    // Multiple declaration of two date variables.
+    date d1, d2;
+
+    // A date variable, d3, is initialized to the 21st of November 1998.
+    date d3 = 21\11\1998;
+
+    // Declaration of a dynamic array of dates.
+    date d4[];
+
+    // Using arithmetic operators with integer variables and dates.
+    void myMethod()
     {
-        // Simple declaration of a date variable, d.
-       date d;
+        int anInteger;
+        date aDate;
+        // Sets the date variable aDate to January 1, 1998.
+        aDate = 1\1\1998;
+        // Sets the integer variable anInteger to 30.
+        anInteger = 30;
+        // Uses an integer value in the computation of dates.
+        // This sets aDate to aDate + 30; that is the 31st of January 1998.
+        aDate = aDate + anInteger;
 
-        // Multiple declaration of two date variables.
-        date d1, d2;
-
-        // A date variable, d3, is initialized to the 21st of November 1998.
-        date d3 = 21\11\1998;
-
-        // Declaration of a dynamic array of dates.
-        date d4[];
-
-        // Using arithmetic operators with integer variables and dates.
-        void myMethod()
-        {
-            int anInteger;
-            date aDate;
-            // Sets the date variable aDate to January 1, 1998.
-            aDate = 1\1\1998;
-            // Sets the integer variable anInteger to 30.
-            anInteger = 30;
-            // Uses an integer value in the computation of dates.
-            // This sets aDate to aDate + 30; that is the 31st of January 1998.
-            aDate = aDate + anInteger;
-
-            // Create 2 variables, set bDate, and then subtract from that date.
-            date bDate;
-            int dateDifference;
-            bDate = 2\10\1998; 
-            dateDifference = bDate - aDate; // dateDifference will equal 244.
-        }
+        // Create 2 variables, set bDate, and then subtract from that date.
+        date bDate;
+        int dateDifference;
+        bDate = 2\10\1998; 
+        dateDifference = bDate - aDate; // dateDifference will equal 244.
     }
+}
+```
 
 ## <a name="enum"></a>列挙型
 
@@ -169,14 +175,16 @@ ms.locfileid: "2778693"
 
 ### <a name="enum-examples"></a>列挙型の例
 
-    public void EnumMethod()
-    {
-        // Declare the enum (a NoYes enum) in the Application Explorer.
-        NoYes done;
+```xpp
+public void EnumMethod()
+{
+    // Declare the enum (a NoYes enum) in the Application Explorer.
+    NoYes done;
 
-        // An array of Criteria enums.
-        Criteria crit[100];
-    }
+    // An array of Criteria enums.
+    Criteria crit[100];
+}
+```
 
 ## <a name="guid"></a>guid
 
@@ -194,49 +202,53 @@ ms.locfileid: "2778693"
 
 次の例は、**guid** 関数の使い方を示しています。 これらの例のコード出力は次のとおりです。
 
-    // An example of how to use the GUID functions.
-    static void GuidRoundTripJob(Args _args)
-    {
-        guid guid2;
-        str string3;
+```xpp
+// An example of how to use the GUID functions.
+static void GuidRoundTripJob(Args _args)
+{
+    guid guid2;
+    str string3;
 
-        // Convert a guid to a string, and back to a guid.
-        guid2 = newGuid();
-        info(strFmt("Info_a1:  guid2 == %1", guid2));
-        string3 = guid2str(guid2);
-        info(strFmt("Info_a2:  string3 == %1", string3));
-        guid2 = str2guid(string3);
-        info(strFmt("Info_a3:  guid2 == %1", guid2));
+    // Convert a guid to a string, and back to a guid.
+    guid2 = newGuid();
+    info(strFmt("Info_a1:  guid2 == %1", guid2));
+    string3 = guid2str(guid2);
+    info(strFmt("Info_a2:  string3 == %1", string3));
+    guid2 = str2guid(string3);
+    info(strFmt("Info_a3:  guid2 == %1", guid2));
 
-        // Test string representations of a guid. Mixing upper and lower case letters does not affect the guid.
-        guid2 = str2guid("BB345678-abcd-ABCD-0000-bbbbffff9012");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_b1:  8-4-4-4-12 format for dashes works (%1)", string3));
-        info(strFmt("Info_b2:  Mixed upper and lower case works."));
+    // Test string representations of a guid. Mixing upper and lower case letters does not affect the guid.
+    guid2 = str2guid("BB345678-abcd-ABCD-0000-bbbbffff9012");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_b1:  8-4-4-4-12 format for dashes works (%1)", string3));
+    info(strFmt("Info_b2:  Mixed upper and lower case works."));
 
-        // Test invalid dash locations, see output is all zeros. Dash locations must be exact.
-        guid2 = str2guid("CC2345678abcd-ABCD-0000-cccc9012");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_c1:  These embedded dash locations are required.  %1", string3));
+    // Test invalid dash locations, see output is all zeros. Dash locations must be exact.
+    guid2 = str2guid("CC2345678abcd-ABCD-0000-cccc9012");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_c1:  These embedded dash locations are required.  %1", string3));
 
-        // Braces {} are optional.
-        guid2 = str2guid("{DD345678-abcd-ABCD-0000-ddddaaaa9012}");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_d1:  Braces {} are optional (%1)", string3));
-    }
+    // Braces {} are optional.
+    guid2 = str2guid("{DD345678-abcd-ABCD-0000-ddddaaaa9012}");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_d1:  Braces {} are optional (%1)", string3));
+}
+```
 
 ### <a name="guid-code-output"></a>guid コード出力
 
 次の出力は、情報ログに表示されます。 文字列にはオプションの中かっこが含まれることに注意してください。
 
-    Message (02:26:46 pm)
-    Info_a1:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_a2:  string3 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_a3:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_b1:  8-4-4-4-12 format for dashes works ({BB345678-ABCD-ABCD-0000-BBBBFFFF9012})
-    Info_b2:  Mixed upper and lower case works.
-    Info_c1:  These embedded dash locations are required.  {00000000-0000-0000-0000-000000000000}
-    Info_d1:  Braces {} are optional ({DD345678-ABCD-ABCD-0000-DDDDAAAA9012})
+```xpp
+Message (02:26:46 pm)
+Info_a1:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_a2:  string3 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_a3:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_b1:  8-4-4-4-12 format for dashes works ({BB345678-ABCD-ABCD-0000-BBBBFFFF9012})
+Info_b2:  Mixed upper and lower case works.
+Info_c1:  These embedded dash locations are required.  {00000000-0000-0000-0000-000000000000}
+Info_d1:  Braces {} are optional ({DD345678-ABCD-ABCD-0000-DDDDAAAA9012})
+```
 
 ## <a name="int-and-int64"></a>int および int64
 
@@ -250,39 +262,41 @@ ms.locfileid: "2778693"
 
 次の例は、整数を宣言して式で使用する方法を示しています。 **int64** に最大整数プラス 1 を代入しようとすると、数値は 32 ビット数として解釈されるため、間違った結果になります。 したがって、番号は折り返され、代わりに -2,147,483,647 として格納されます。 この問題を防ぐためには、番号の最後に "u" を追加します。 たとえば、**int64 I = 0x8000 0000u** (0x8000 0000 は 2,147,483,648 です) を入力します。
 
-    public void IntegerMethod()
+```xpp
+public void IntegerMethod()
+{
+    // Declaration of an integer variable, i.
+    int i;
+
+    // Declaration of two int64 variables.
+    int64 i1, i2;
+
+    // An integer variable is initialized to the value 100.
+    int i3 = 100;
+
+    // Declaration of a dynamic array of integers.
+    int i4[];
+    void element()
     {
-        // Declaration of an integer variable, i.
-        int i;
+        // Two integer variables are declared and initialized.
+        int k = 1, j = 2;
 
-        // Declaration of two int64 variables.
-        int64 i1, i2;
+        // j is assigned the result of j + ((i + i) DIV 2).
+        j +=(i + i) div 2;
 
-        // An integer variable is initialized to the value 100.
-        int i3 = 100;
+        // This results in: j=3.
 
-        // Declaration of a dynamic array of integers.
-        int i4[];
-        void element()
+        if (j > 2 )
         {
-            // Two integer variables are declared and initialized.
-            int k = 1, j = 2;
-
-            // j is assigned the result of j + ((i + i) DIV 2).
-            j +=(i + i) div 2;
-
-            // This results in: j=3.
-
-            if (j > 2 )
-            {
-                print "J is greater than 2";
-            }
-            else
-            {
-                print "J is NOT greater than 2";
-            }
+            print "J is greater than 2";
+        }
+        else
+        {
+            print "J is NOT greater than 2";
         }
     }
+}
+```
 
 ## <a name="real"></a>real
 
@@ -295,102 +309,105 @@ Reals は、すべての式で使用することができ、リレーショナ�
 X++ **実数** と Microsoft .NET Framework **System.Decimal** 間の直接割り当てによって、値が正しく変換されます。 換算関数を呼び出す必要はありません。 *10 進数*は、符号、0 から 9 の範囲内の数値、および数値の整数と小数点以下を区切る浮動小数点の位置を表すスケーリング係数で構成される浮動小数点値です。 **実数**値のバイナリ表現は、1 ビットの符号、96ビットの整数、スケーリング係数で構成されます。 拡大縮小係数は、96 ビット整数を分割し、小数部の部分を指定するのに使用されます。 拡大縮小係数は、0 から 28 の範囲の指数に暗黙的に 10 を引いたものです。 したがって、10 進数のバイナリ表現は (\[-2⁹⁶ ～ 2⁹⁶\] ÷ 10(0\\ ～\\ 28)) を表します。ここで -(2⁹⁶-1) は表現できる最小値と等しく、2⁹⁶-1 は最大値になります。 
 
 > [!NOTE] 
-
 > Finance and Operations アプリケーションで **実数** 値を表すために使用されるタイプは、変換された Microsoft Dynamics AX 2012 の X++ から変更されています。 ただし、新しいタイプは、古いタイプが表すことができるすべての値を表すことができるので、コードを書き直す必要はありません。 完全な開示のためにこの材料を提供します。 
 
 **実数**タイプのすべてのインスタンスが .NET 小数タイプ (**System.Decimal**) のインスタンスとして実装されます。 以前のバージョンでの **real** 型と同様に、バイナリ コード化された小数点以下の型での decimal 型は丸め誤差に対する対応力があります。 以前のバージョンと異なる 10 進型の範囲と解像度。 元の X++ **実数** 型は 16 桁と小数点の位置を定義した指数をサポートしていました。 ただし、Finance and Operations アプリケーションの**実数**タイプは 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) から -79,228,162,514,264,337,593,543,950,335 (-\[2⁹⁶-1\]) の範囲の 10 進数を表します。 
 
 新しい**実数**タイプにはさらに丸めが必要です。 たとえば、次のコードは、1 ではなく 0.9999999999999999999999999999 という結果を生成します。 1/3 の値を正確に表せる小数点以下の桁数はありません。 ここで得られる不一致は、有限数の小数しか提供されないことによるものです。 必要な小数点以下の桁数まで丸めるには、**round** 関数を使用します。
 
-    // An example of using the debugger to show the value of the variables.
-    public static void UseTheDebugger(Args a)
-    {
-        real dividend = 1.0;
-        real divisor = 3.0;
-        str stringvalue;
-        System.Decimal valueAsDecimal;
-        real value = dividend/divisor * divisor; 
-        valueAsDecimal = value;
-        info(valueAsDecimal.ToString("G28"));
-        // An example of using the Round function to round to the number of decimals required.
-        value  = round(value, 2);
-    }
+```xpp
+// An example of using the debugger to show the value of the variables.
+public static void UseTheDebugger(Args a)
+{
+    real dividend = 1.0;
+    real divisor = 3.0;
+    str stringvalue;
+    System.Decimal valueAsDecimal;
+    real value = dividend/divisor * divisor; 
+    valueAsDecimal = value;
+    info(valueAsDecimal.ToString("G28"));
+    // An example of using the Round function to round to the number of decimals required.
+    value  = round(value, 2);
+}
+```
 
 ### <a name="real-examples"></a>real の例
 
-    public void RealMethod()
+```xpp
+public void RealMethod()
+{
+    // Simple declaration of a real variable, r.
+    real r;
+
+    // Multiple declaration of two real variables.
+    real r1, r2;
+
+    // A real variable is initialized to the approximate value of pi.
+    real r3 = 3.1415;
+
+    // Declaration of a dynamic array of reals.
+    real r4[];
+
+    // An example of a real literal written using exponential notation.
+    real r;
+    r = 1.000e3;
+    r = 1.2345e+3;
+    r = 1.2345e+03;
+    r = 1234.5e4;
+    r = 1.0e1; // Means 1.0E1 
+}
+
+// An example of automatic conversions.
+void main()
+{
+    // Declares a variable of type integer with the name exprValue.
+    int exprValue;
+
+    // Declares a real variable with the name area.
+    real area = 3.141528;
+    exprValue = Area/3;
+
+    // The expression Area/3 is a real expression because
+    // division is a real operator, and the result is 1.047176. This result is
+    // automatically converted (actually truncated) to an integer with the value 1,
+    // because exprValue is an integer.
+}
+
+// An example of a real being converted to .NET System.Decimal.
+void AnotherMain(Args _args)
+{
+    real real9;
+    System.Decimal sysdec1;
+
+    // Direct assignments supported between these types.
+    sysdec1 = 2.3456;
+    real9 = sysdec1;
+    info(strFmt("strFmt says real9 == %1", real9));
+}
+
+/***
+Message (05:48:43 pm)
+strFmt says real9 == 2.35
+***/
+
+// An example of using reals in expressions.
+void myMethod()
+{
+    // Two real variables are declared and initialized.
+    real i = 2.5, j = 2.5;
+
+    // j is assigned the result of j * i, so j=6.25.
+    j = j * i;
+    if (j > (i * 2)) // If j > 5 
     {
-        // Simple declaration of a real variable, r.
-        real r;
-
-        // Multiple declaration of two real variables.
-        real r1, r2;
-
-        // A real variable is initialized to the approximate value of pi.
-        real r3 = 3.1415;
-
-        // Declaration of a dynamic array of reals.
-        real r4[];
-
-        // An example of a real literal written using exponential notation.
-        real r;
-        r = 1.000e3;
-        r = 1.2345e+3;
-        r = 1.2345e+03;
-        r = 1234.5e4;
-        r = 1.0e1; // Means 1.0E1 
+        print "Great"; // "Great" is printed.
     }
-
-    // An example of automatic conversions.
-    void main()
+    else
     {
-        // Declares a variable of type integer with the name exprValue.
-        int exprValue;
-
-        // Declares a real variable with the name area.
-        real area = 3.141528;
-        exprValue = Area/3;
-
-        // The expression Area/3 is a real expression because
-        // division is a real operator, and the result is 1.047176. This result is
-        // automatically converted (actually truncated) to an integer with the value 1,
-        // because exprValue is an integer.
+        print "Oops"; // else "Oops" is printed.
     }
-
-    // An example of a real being converted to .NET System.Decimal.
-    void AnotherMain(Args _args)
-    {
-        real real9;
-        System.Decimal sysdec1;
-
-        // Direct assignments supported between these types.
-        sysdec1 = 2.3456;
-        real9 = sysdec1;
-        info(strFmt("strFmt says real9 == %1", real9));
-    }
-
-    /***
-    Message (05:48:43 pm)
-    strFmt says real9 == 2.35
-    ***/
-
-    // An example of using reals in expressions.
-    void myMethod()
-    {
-        // Two real variables are declared and initialized.
-        real i = 2.5, j = 2.5;
-
-        // j is assigned the result of j * i, so j=6.25.
-        j = j * i;
-        if (j > (i * 2)) // If j > 5 
-        {
-            print "Great"; // "Great" is printed.
-        }
-        else
-        {
-           print "Oops"; // else "Oops" is printed.
-        }
-    }
+}
+```
 
 ## <a name="str"></a>str
 
@@ -406,28 +423,30 @@ X++ **実数** と Microsoft .NET Framework **System.Decimal** 間の直接割�
 
 ### <a name="str-examples"></a>str の例
 
-    void StringMethod()
+```xpp
+void StringMethod()
+{
+    // Declare a dynamic string of unlimited length.
+    str unlimitedString;
+
+    // Declare a string with a maximum of 64 characters
+    // in order to force a truncation, initialized to "A".
+    str 64 maxLengthString = "A";
+
+    // Declare an array of 100 strings.
+    str 30 hundredStrings[100];
+
+    // Using strings in expressions.
+    void myMethod()
     {
-        // Declare a dynamic string of unlimited length.
-        str unlimitedString;
+        // Two strings are declared and initialized.
+        str a="Hello", b="World";
 
-        // Declare a string with a maximum of 64 characters
-        // in order to force a truncation, initialized to "A".
-        str 64 maxLengthString = "A";
-
-        // Declare an array of 100 strings.
-       str 30 hundredStrings[100];
-
-        // Using strings in expressions.
-        void myMethod()
-        {
-            // Two strings are declared and initialized.
-            str a="Hello", b="World";
-
-            // The concatenation of a, " " and b is printed in a window.
-            print a+" "+b;
-        }
+        // The concatenation of a, " " and b is printed in a window.
+        print a+" "+b;
     }
+}
+```
 
 ## <a name="timeofday"></a>timeOfDay
 
@@ -435,14 +454,16 @@ X++ **実数** と Microsoft .NET Framework **System.Decimal** 間の直接割�
 
 ### <a name="timeofday-examples"></a>timeOfDay の例
 
-    public void TimeofdayMethod()
-    {
-        // Declaration of a timeOfDay variable, time1.
-        timeOfDay time1;
+```xpp
+public void TimeofdayMethod()
+{
+    // Declaration of a timeOfDay variable, time1.
+    timeOfDay time1;
 
-        // Declaration and initialization of a timeOfDay variable to 00:21:35.
-        timeOfDay time2 = 1295;
-    }
+    // Declaration and initialization of a timeOfDay variable to 00:21:35.
+    timeOfDay time2 = 1295;
+}
+```
 
 ## <a name="utcdatetime"></a>utcdatetime
 
@@ -462,14 +483,16 @@ X++ **実数** と Microsoft .NET Framework **System.Decimal** 間の直接割�
 
 ### <a name="utcdatetime-examples"></a>utcdatetime の例
 
-    public void UtcdatetimeMethod()
-    {
-        // Declaring a utcdatetime literal.
-        utcdatetime myUtc2 = 1988-07-20T13:34:45;
+```xpp
+public void UtcdatetimeMethod()
+{
+    // Declaring a utcdatetime literal.
+    utcdatetime myUtc2 = 1988-07-20T13:34:45;
 
-        // Another example of declaring a utcdatetime literal.
-        int iDay = DateTimeUtil::day(1988-07-20T13:34:45);
+    // Another example of declaring a utcdatetime literal.
+    int iDay = DateTimeUtil::day(1988-07-20T13:34:45);
 
-        // utcdatetime using a quoted string parameter into the DateTimeUtil::parse method.
-        utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
-    }
+    // utcdatetime using a quoted string parameter into the DateTimeUtil::parse method.
+    utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
+}
+```

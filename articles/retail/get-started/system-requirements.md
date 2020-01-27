@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Retail におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fbfb937809b27538ec3d712beaf1248bbb5fa156
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d7bc7640470665b045e29fd78b1d8ba73b1a2813
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027097"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888668"
 ---
-# <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
+# <a name="system-requirements-for-retail-client-components"></a>小売クライアントコンポーネントのシステム要件
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,25 +66,24 @@ Retail Cloud 販売時点管理 (POS) は、指定されたオペレーティン
 
 ## <a name="net-framework-requirements"></a>.NET Framework 要件
 
-Retail では、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.6.2 が必要です。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+Retail では、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.7.1 以降が必要です。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。 
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
 次の Microsoft Office アプリケーションがサポートされています。
 
-- Microsoft Excel と Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
+- Microsoft Excel と Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合に関するトラブルシューティング](../../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 - Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
-# <a name="system-requirements-for-retail-client-components"></a>小売クライアントコンポーネントのシステム要件
+## <a name="system-requirements-for-retail-client-components"></a>小売クライアントコンポーネントのシステム要件
 
-> [!NOTE]
-> 実稼働に移行する前に適切なパフォーマンステストを実行することが重要です。  次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。  目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。  実装の初期段階と最終テストの前に再度、適切なパフォーマンステストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
+実稼働に移行する前に適切なパフォーマンステストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンステストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
 
 ## <a name="retail-modern-pos-for-windows-requirements"></a>Windows 用 Retail Modern POS の要件
 
 > [!NOTE]
-> - Retail Modern POS でオフライン データベースを使う場合、コンピューターは Microsoft SQL Server のすべてのシステム要件を満たす必要があります。 Retail Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2012、Service Pack 2 以降の SQL Server 2014 、または SQL Server 2016 が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
-> - 2018 年 10 月 1 日以降、Retail Modern POS や他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> - Retail Modern POS でオフライン データベースを使用する場合は、Microsoft SQL Server のすべてのシステム要件を満たしていて、システムに 10 GB 以上の空きディスク領域が必要です。 20 GB 以上の空きディスク領域を用意することをお勧めします。 Retail Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2014、Service Pack 2 の SQL Server 2016、または SQL Server 2017 以降が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
+> - 2019 年 8 月 1 日以降、Retail Modern POS や他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
 ### <a name="supported-windows-operating-systems"></a>サポートされる Windows オペレーティング システム
 
@@ -114,7 +113,7 @@ Retail では、ドキュメント回覧エージェントなどのすべての 
 ## <a name="retail-hardware-station-requirements"></a>Retail hardware station 要件
 
 > [!NOTE]
-> 2018 年 10 月 1 日以降、Retail ハードウェア ステーションや 他のクライアント側コンポーネントを使用するには、.NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> 2019 年 8 月 1 日以降、Retail ハードウェア ステーションや 他のクライアント側コンポーネントを使用するには、.NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 > このコンポーネントはサーバー証明書を利用することに注意してください。 有効期限に対してサーバー証明書を管理する必要があります。 既定では、証明書は 1 つの暦年 (365 日) で期限切れになります。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
@@ -142,7 +141,7 @@ Retail では、ドキュメント回覧エージェントなどのすべての 
 ## <a name="retail-store-scale-unit-requirements"></a>Retail Store Scale Unit の要件
 
 > [!NOTE]
-> 2018 年 10 月 1 日以降、Retail Store Scale Unit や他のクライアント側コンポーネントを使用するには、.NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> 2019 年 8 月 1 日以降、 Retail Store Scale Unit や他のクライアント側コンポーネントを使用するには、.NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 >
 > このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧*シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
 
@@ -169,22 +168,22 @@ Retail では、ドキュメント回覧エージェントなどのすべての 
 > Retail Store Scale Unit の最小システム要件を次に示します。  これらと推奨要件はどちらも、テストおよび基本的な機能のための最小要件です。  パフォーマンス テストを実行し、Retail Store Scale Unit で使用するハードウェアが期待を満していることを検証することが重要です。
 
 - 4 GB の RAM
-- コアごとの CPU 最大処理スピード 1.6 GHz (最少 2 コア)
-- 少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
+- コアごとの CPU 最小処理スピードが 1.6 GHz の i5 (または同等) (最少 2 コア)。
+- 少なくとも 15 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります)。
 
 ### <a name="recommended-system-requirements"></a>推奨システム要件
 
 - 6 GB の RAM
-- コアごとの最大処理スピード 2.4 GHz i7 (または同等のもの) (推奨 4 コア)
-- 少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
+- コアごとの CPU 最小処理スピードが 2.4 GHz の i7 (または同等) (4 つのコアを推奨)。
+- 少なくとも 20 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります)。
 
 個人のハードウェア ニーズを決定する際に次の品目も考慮することは、組織の最高の利益となります。
 
-- 物理的ネットワーク ポートの数 (ポートが増えると 1 秒あたりのスループットが強化されます。)
-- SQL Server のログ フラッシュ サイズ (これは SQL Server パフォーマンスに直接影響します。)
-- データの読み取りと書き込み能力 (これは SQL サーバー パフォーマンスに直接影響を与えます。)
-- CPU コアの数、コアごとの並行スレッドの数、およびコアあたりの速度 (これはシステムの全体的なスループットに影響します。)
-- 負荷分散が必要かどうか
+- 物理的ネットワーク ポートの数 (ポートが増えると 1 秒あたりのスループットが強化されます)。
+- SQL Server のログ フラッシュ サイズ (これは SQL Server パフォーマンスに直接影響します)。
+- データの読み取りと書き込み能力 (これは SQL サーバー パフォーマンスに直接影響を与えます)。
+- CPU コアの数、コアごとの並行スレッドの数、およびコアあたりの速度 (これはシステムの全体的なスループットに影響します)。
+- 負荷分散が必要かどうか。
 
 ## <a name="connector-requirements"></a>コネクタの要件
 
@@ -203,8 +202,8 @@ Retail では、ドキュメント回覧エージェントなどのすべての 
 ### <a name="minimum-system-requirements"></a>最少システム要件
 
 - 2 GB の RAM (4 GB の RAM を推奨)。
-- コアごとの CPU 最大処理スピード 1.6 GHz (最少 2 コア)
-- 少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
+- コアごとの CPU 最大処理スピード 1.6 GHz (最少 2 コア)。
+- 少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります)。
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
 

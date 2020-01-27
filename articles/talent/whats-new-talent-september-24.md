@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 078b513b828b97a5cfaf613970edd581fb091f9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e0c1a3bf7613db4887e0943a70ad6262a70997f0
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551337"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898969"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-24-2018"></a>Dynamics 365 Talent - Core HR (2018 年 9 月 24 日) の新機能および変更された機能
-
-[!include [banner](includes/banner.md)]
 
 **ビルド 8.1.1015.0**
 

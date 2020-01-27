@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.7 の機能のプレビュー (2020 年 1 月)
+title: Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能と変更点
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 67e3e2d9cd628c82408986a630cb295d48c4433a
-ms.sourcegitcommit: 22904808753f5b19d5eed71c943586f1cc60db26
+ms.openlocfilehash: 249ec6e977bcb298637391e14e0120c493394502
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "2805508"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946155"
 ---
-# <a name="preview-features-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Dynamics 365 Supply Chain Management 10.0.7 の機能のプレビュー (2020 年 1 月)
+# <a name="whats-new-and-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能と変更点
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
 
@@ -45,10 +45,10 @@ ms.locfileid: "2805508"
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正 
-10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493) を参照してください。
+10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?kb=4528173&bugId=386529&dbType=3&qc=d6f5cd3ead06907477eae511043a52c1d4290a12bf52374dd55faf0d28ae732e) を参照してください。
 
 ### <a name="platform-update-31"></a>プラットフォーム update 31
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 に関する詳細については、[プラットフォーム更新プログラム 31 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフォーム更新プログラム 31 が含まれています。 プラットフォーム更新プログラム 31 の詳細については、[プラットフォーム更新プログラム 31 の新機能と変更点](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md)を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?

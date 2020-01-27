@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 19006d94c9a5dc05c03eae724b7e54c4a8f50f7f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6d5104c92a2b47c9468d0317f385649d9d7ba38a
+ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812006"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853921"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -147,13 +147,43 @@ ms.locfileid: "2812006"
 
 9. 詳細の変更や検証が必要な場合は、プロセスを繰り返します。
 
-## <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
-ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Finance and Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
-
-## <a name="troubleshooting"></a>トラブルシューティング
-### <a name="the-mobile-client-app-is-not-working-correctly-on-particular-devices"></a>特定のデバイスでモバイル クライアント アプリケーションが正常に動作しない
-統合工程アプリケーションに関連付けられているキャッシュが破損しているか、古い形式なったため、クリアする必要がある場合があります。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
+## <a name="troubleshooting-the-app"></a>アプリ の トラブルシューティング
+### <a name="the-mobile-client-app-is-not-working-on-particular-devices"></a>モバイル クライアント アプリ が 特定のデバイスで動作しない
+アプリと関連付けられているキャッシュが動作不良の原因となる場合があるため、これらを削除してください。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
 アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Dynamics 365 Unified Operations** に移動し、**アプリの削除**をクリックしてアプリを完全にアンインストールしてください。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
+
+### <a name="on-android-devices-with-non-english-regions-the-comma-cant-be-used-as-the-decimal-separator-in-an-amount-field"></a>英語圏以外の Android デバイスでは、カンマが金額フィールドで小数点の記号として使用できない場合があります
+英語圏以外の Android デバイスでは、カンマを小数点の記号として標準使用してください。 金額フィールドで発生するカンマの問題は、 Android 固有の問題であり、iPhone では発生していません。 Android における金額フィールドのカンマ問題は、既定のキーボードとされている「gboard」やその他のキーボードが原因で発生しています。 SwiftKey キーボード (Microsoft 製) をインストールすることで、iPhone のようなカンマ入力が可能となります: [SwiftKey キーボード](https://www.microsoft.com/swiftkey)。
+
+### <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
+Active Directory フェデレーション サービス (AD FS) がドメインで使用されていて、かつオンプレミス環境の場合は、 Windows Integrated Authentication (WIA) ではなく、 **ADFS を構成して従来のフォームを使用した認証画面** を使用してください。 iOS と Android の Finance and Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 このスクリプトおよび問題の詳細については、[WIA に対応していないデバイスに向けたイントラネットのフォームベースの認証を構成する](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
+
+### <a name="using-multi-factor-authentication-with-finance-and-operations-apps"></a>Finance and Operations アプリで多要素認証を使用する
+Finance and Operations (モバイル クライアント) アプリでは、埋め込みブラウザー内に Azure AD  サインインの Web ページを表示することにより、Azure Active Directory (Azure AD) でのユーザー認証を容易に行えるようにします。 正常にサインインをすると、クッキーからユーザーのトークンを取得して、これは対話サービスでのやりとりに使用されます。またこれは web クライアントに共有されます。 多要素認証の仕様上、デバイス内で別のアプリへの切り替えを行うと埋め込みブラウザが閉じられてしまうため、サインインができなくなることがあります。 この問題を回避するには:
+
+- 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではアプリ がアクティブな状態を維持することができます。
+- 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
+- これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
+
+MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
+
+### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
+新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。
+- アプリからサインアウトするには、次の手順に従ってください
+    - アプリを開く
+    - アプリからサインアウトします。
+    - アプリを強制終了します。
+- 古い資格情報を破棄するには、次の手順に従ってください。
+    - アプリを開く
+    - サーバーに接続します。
+    - Azure AD のサインイン画面で、資格情報が保存されている場合は、そのカードの省略記号 (...) ボタンをクリックし、 **資格情報の破棄** を選択します。
+    - アプリを強制終了します。
+- アプリにサインインするには、次の手順に従ってください
+    - アプリを開く
+    - サーバーに接続します。
+    - Azure AD のサインイン画面にてログインします。
+
+## <a name="troubleshooting-app-content"></a>アプリ コンテンツ に関する トラブルシューティング
 
 ### <a name="i-cant-figure-out-how-to-build-or-change-something-in-my-mobile-client-content"></a>モバイル クライアント コンテンツをビルドまたは変更する方法がわかりません
 多くのリソースを活用して、モバイル クライアントのコンテンツをビルドまたは変更する方法を理解できます。
@@ -187,27 +217,3 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
     - クイック タブの展開状態が再生を妨げる可能性があるため、記録されたフォームにクイック タブを含めることはできません。
 - 展開可能なリージョン、リージョンの表示/非表示などの状態を持つユーザー インターフェイス (UI)。
 - モバイルにはチェック ボックスはありません。 JavaScript で、フィールドを Yes/No 列挙型に手動でバインドする必要があります。
-
-### <a name="using-multi-factor-authentication-with-the-finance-and-operations-app"></a>Finance and Operations アプリでの多要素認証の使用
-Finance and Operations (モバイル クライアント) アプリでは、埋め込みブラウザー内に Azure AD  サインインの Web ページを表示することにより、Azure Active Directory (Azure AD) でのユーザー認証を容易に行えるようにします。 サインインの後で、クッキーからユーザー トークンを取得し、Web クライアントと共有するユーザー インタラクション サービスと通信するときにこれを使用します。 多要素認証の仕様上、デバイス内で別のアプリへの切り替えを行うと埋め込みブラウザが閉じられてしまうため、サインインができなくなることがあります。 この回避策は次を参照してください
-- 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではアプリ がアクティブな状態を維持することができます。
-- 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
-- これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
-
-MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
-
-### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
-新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。
-- アプリからサインアウトするには、次の手順に従ってください
-    - アプリを開く
-    - アプリからサインアウトします。
-    - アプリを強制終了します。
-- 古い資格情報を破棄するには、次の手順に従ってください。
-    - アプリを開く
-    - サーバーに接続します。
-    - Azure AD のサインイン画面で、資格情報が保存されている場合は、そのカードの省略記号 (...) ボタンをクリックし、 **資格情報の破棄** を選択します。
-    - アプリを強制終了します。
-- アプリにサインインするには、次の手順に従ってください
-    - アプリを開く
-    - サーバーに接続します。
-    - Azure AD のサインイン画面にてログインします。

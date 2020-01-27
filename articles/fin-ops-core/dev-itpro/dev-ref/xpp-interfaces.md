@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a17635416e25baa35168330102d97b624488211
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 03d598d5c75b21f2876ead280aa9541b9ef59877
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778687"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872642"
 ---
 # <a name="x-interfaces"></a>X++ インターフェイス
 
@@ -48,7 +48,7 @@ ms.locfileid: "2778687"
 
 次のコード例では、**自動車** クラスが **IDrivable** インターフェイスを実装しています。 **is** キーワードは、あるクラスがインターフェイスを実装するかどうかをテストします。
 
-```X++
+```xpp
 interface IDrivable
 {
     int getSpeed()

@@ -1,28 +1,28 @@
 ---
 title: 既知の問題
 description: このトピックでは、Finance and Operations を使用する際に発生する可能性のある既知の問題を表示する方法について説明します。
-author: sericks007
+author: josaw1
 manager: AnnBe
-ms.date: 03/25/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 21861
 ms.assetid: 45699dd5-5e95-484b-8eb9-7bf32a4cf487
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: f3a3cdc526cf8537ba118a62b34190adeaefb950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89f3ef1ba0dd3899afeb92edca6e32757e329c16
+ms.sourcegitcommit: e782d627d07c3d1dce4d87ce0e92bd03b09204cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183205"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933895"
 ---
 # <a name="known-issues"></a>既知の問題
 

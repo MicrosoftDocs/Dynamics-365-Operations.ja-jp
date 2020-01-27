@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 785a29f442feb173ef26ddb1ad87974cf3363698
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 19f98aefedb986c6aafcc35e2ed74ee15ecb0fa8
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812463"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935430"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-1-may-2016"></a>Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) の新機能および変更された機能
 
@@ -204,7 +204,7 @@ ms.locfileid: "2812463"
 </tr>
 <tr>
 <td>ほぼリアルタイムの Power BI レポートおよび Microsoft Cortana Intelligence Suite (CIS) とエンティティ格納の統合を活用します。</td>
-<td>エンティティ格納は、高度な分析シナリオ用に最適化された、拡張可能で豊富な運用データ ウェアハウスです。 エンティティ格納は、Dynamics AX のすべてのインスタンスと共に配置されるようになりました。 管理者またはパワー ユーザーは Dynamics AX 集計測定をエンティティ格納内で実施して更新スケジュールを設定することができます。 エンティティ格納のデータは、Power BI DirectQuery モデルを使用してレポートできます。 したがって、ほぼリアルタイムの Power BI レポートを生成することができます。 エンティティ格納は、CIS との統合に対しても使用されます。 Dynamics AX データは高度な予測のため、Microsoft Azure Machine Learning サービスに送信されます。 結果はクライアント ユーザー インターフェイスに表示されます。</td>
+<td>エンティティ格納は、高度な分析シナリオ用に最適化された、拡張可能で豊富な運用データ ウェアハウスです。 エンティティ格納は、Dynamics AX のすべてのインスタンスと共に配置されるようになりました。 管理者またはパワー ユーザーは Dynamics AX 集計測定をエンティティ格納内で実施して更新スケジュールを設定することができます。 エンティティ格納のデータは、Power BI DirectQuery モデルを使用してレポートできます。 したがって、ほぼリアルタイムの Power BI レポートを生成することができます。 エンティティ格納は、CIS との統合に対しても使用されます。 Dynamics AX データは、高度な予測のために Microsoft Azure 機械学習に送信されます。 結果はクライアント ユーザー インターフェイスに表示されます。</td>
 </tr>
 <tr>
 <td>SQL Server Reporting Services 統合のフレームワークの改善点を活用します。</td>
@@ -243,4 +243,4 @@ ms.locfileid: "2812463"
 
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
-[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)

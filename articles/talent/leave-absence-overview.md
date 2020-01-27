@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518444"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898297"
 ---
 # <a name="leave-and-absence-management"></a>休暇の管理
-
-[!include [banner](includes/banner.md)]
 
 **休暇管理** モジュールは、休暇管理プロセスを定義するための柔軟なフレームワークを提供します。 従業員が休暇を蓄積するもしくは交付される方法を決定するために、休暇計画を作成できます。 従業員が計画に登録されると、管理者による承認を求めて休暇申請を送信できます。 休暇追跡により、ファーストレベル マネージャーと人事管理 (HR) マネージャーの両方が、休暇を取っている従業員および各従業員の残っている休暇時間を確認することができます。  
 

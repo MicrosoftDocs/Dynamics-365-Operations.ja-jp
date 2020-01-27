@@ -3,7 +3,7 @@ title: Retail セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 10/17/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 036b9458e9fa6c6f57a9db26706ca3e6784858e9
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 542a1b9826ec1a1008dc85611ad36b885a0cae10
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658895"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935403"
 ---
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 このトピックは、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。
 

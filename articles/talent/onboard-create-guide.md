@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814631"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898251"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard を使用した研修用ガイドの作成と送信
+# <a name="create-and-send-an-onboarding-guide"></a>研修用ガイドの作成と送信
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Microsoft Dynamics 365 Talent: Onboard では、自分で作成したテンプ�
 
 5. **ガイドの作成**ウィンドウの、**研修を受けるのは誰ですか**で、新規採用者の名前または電子メール アドレスを入力します。 新規採用者がまだシステムにない場合は、**今すぐ追加**を選択し、従業員の情報を入力します。
 
-    ![[研修ガイドの情報を入力する](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[研修用ガイドの情報を入力する](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. **いつ開始しますか**で、開始日を選択します。
 7. 研修用ガイドを特定の日付に新規採用者に自動的に送信する場合は、**自動送信日をスケジュール**のオプションがオンになっていることを確認し、自動送信日を選択します。 ガイドをすぐに送信するには、**自動送信日をスケジュール** オプションをオフにします。
@@ -92,7 +92,7 @@ Onboard では、複数の新規採用者に同時に研修用ガイドを送信
 1. 左側のメニューにある**ガイド**を選択し、**追加**ボタン (プラス記号 \[**+**\]) を選択します。
 2. **ガイドの作成**ウィンドウの、**研修を受けるのは誰ですか**で、新規採用者の名前または電子メール アドレスを入力します。 新規採用者がまだシステムにない場合は、**今すぐ追加**を選択し、従業員の情報を入力します。
 
-    ![[研修ガイドの情報を入力する](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[研修用ガイドの情報を入力する](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. **いつ開始しますか**で、開始日を選択します。
 4. 研修用ガイドを特定の日付に新規採用者に自動的に送信する場合は、**自動送信日をスケジュール**のオプションがオンになっていることを確認し、自動送信日を選択します。 ガイドをすぐに送信するには、**自動送信日をスケジュール** オプションをオフにします。
@@ -105,7 +105,7 @@ Onboard では、複数の新規採用者に同時に研修用ガイドを送信
 1. 左側のメニューで、**ガイド**を選択します。
 2. テンプレートを作成したいガイドの**詳細**ボタン (省略記号\[**...**\]) を選択し、**テンプレートとして保存**を選択します。
 
-    ![[テンプレートとして研修用ガイドを保存する](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[研修用ガイドをテンプレートとして保存する](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. **新規テンプレートとして保存**ウィンドウで、新しいテンプレートの名前を入力し、**保存**を選択します。
 

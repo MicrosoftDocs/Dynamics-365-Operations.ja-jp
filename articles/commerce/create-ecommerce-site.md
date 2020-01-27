@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697132"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945838"
 ---
 # <a name="create-an-e-commerce-site"></a>E コマース サイトの作成
 
@@ -59,20 +59,16 @@ E コマース サイトの開発を開始するには、最初にサイト作�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オンライン ストアの概要](online-store-overview.md)
+[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [新しい E コマース サイトの配置](deploy-ecommerce-site.md)
 
 [チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
 
-[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
+[robots.txt ファイルの管理](manage-robots-txt-files.md)
+
+[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
-
-[ホーム ページの概要の作成](authoring-home-overview.md)
-
-[新しいサイト ページの追加](add-new-page.md)

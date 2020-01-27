@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 673b313a6b1ba0489b00ea9d022c41bb603550a2
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: cf5c44ec2442fe12dd992811919bce845d2e9405
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778685"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872645"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 
@@ -37,7 +37,7 @@ ms.locfileid: "2778685"
 
 次の例では、まず **Point** という名前のクラスを作成します。 その後、**Point** クラスを拡張して、**ThreePoint** という新しいクラスを作成します。
 
-```X++
+```xpp
 class Point
 {
     // Instance fields.
@@ -71,7 +71,7 @@ class ThreePoint extends Point
 
 **最終** モディファイアーを使用して、クラスが継承されないようにすることができます。
 
-```X++
+```xpp
 public final class Attribute
 {
     int objectField;
@@ -85,7 +85,7 @@ public final class Attribute
 
 次のコード例は、サブクラスが **書き込み** メソッドを上書きします。 2 つの変数、**ポイント** する両方の型が作成されます。 一方に **1 ポイント** オブジェクトが割り当てられ、もう一方には、**3 ポイント** オブジェクトが割り当てられます。 **書き込み** メソッドが **3 ポイント** オブジェクトに対して呼び出されるとき、このメソッドの **3 ポイント** バージョンが呼び出されます。
 
-```X++
+```xpp
 class Point
 {
     // Instance fields.
@@ -143,7 +143,7 @@ point3.write();
 
 次の例は、**final** キーワードの使用方法を示しています。
 
-```X++
+```xpp
 public class Attribute
 {
     int objectVariable;

@@ -1,7 +1,7 @@
 ---
 title: 実行中のバッチ ジョブの中止
 description: このトピックでは、実行中のバッチ ジョブをキャンセルする方法について説明します。
-author: hasaid
+author: Peakerbl
 manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-ms.author: hasaid
+ms.author: peakerbl
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: 2852693220ae072566168682eae8eb5b8cd32386
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58a8ae66b126b06c62834223984f11e9694a8ed7
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191801"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945406"
 ---
 # <a name="abort-an-executing-batch-job"></a>実行中のバッチ ジョブの中止
 [!include [banner](../includes/banner.md)]

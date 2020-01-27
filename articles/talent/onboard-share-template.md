@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812836"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897146"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard で他の投稿者とコンテンツを共有する
+# <a name="share-content-with-other-contributors"></a>他の投稿者とコンテンツを共有する
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboard では、研修用ガイドおよびテ�
 
 3. **共有先**で、受信者がガイドを変更できるようにする必要がある場合は、**これらのユーザーは編集できますか**オプションを**オン**に設定します。 ガイドを共有したことを受信者に電子メールで通知する必要がある場合は、**電子メール通知を受信者に送信する**オプションを**オン**に設定します。
 
-    ![[研修用ガイドのアクセスおよび電子メールの基本設定を設定する](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[研修用ガイドのアクセスと電子メールの基本設定の設定](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. 名前または電子メール アドレスを入力し、ドロップダウン リストで目的の受信者を選択します。
 5. **アクセスの管理**タブで、受信者がガイドで実行できる操作を確認または変更できます。 受信者のアクセスを変更するには、受信者名の横にあるドロップダウン リストで、必要に応じて**表示可能**、**編集可能**、または**削除**を選択します。

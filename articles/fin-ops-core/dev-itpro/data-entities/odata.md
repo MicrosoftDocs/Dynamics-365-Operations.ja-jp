@@ -3,7 +3,7 @@ title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e31a6a8b633dd62a19dc598e0b5ce527642430c0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 901a1f5d6f235cd3c0159302fa7136a2fb33344f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771014"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914713"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -90,21 +90,26 @@ OData サービスを使用するためのコード例は、「[Microsoft Dynami
 
 $filter には組み込みの演算子があります。
 
-- 次の値と等しい
-- 等しくない
-- 次の値より大きい
-- 次の値以上
-- 次の値より小さい
-- 次の値以下
+- 等しい (eq)
+- 等しくない (ne)
+- より大きい (gt)
+- 等しい 、またはより大きい (ge)
+- より小さい (lt)
+- 等しい 、またはより小さい (le)
 - かつ
 - 又は
 - ない
-- 追加
-- 減算
-- 乗算
-- 区分
+- 加算 (add)
+- 減算 (sub)
+- 乗算 (mul)
+- 除算 (div)
+- 小数点除算 (divby)
+- 剰余 (mod)
+- 優先順位のグループ化 ({ })
 
 また、**Contains** オプションを $filter 要求とともに使用することができます。 これは、ワイルドカード文字として実装されています。 例: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+
+「持つ」 と 「含む」 の演算子には対応していません。
 
 詳細については、「[OData 演算子](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096)」を参照してください。
 
@@ -241,6 +246,21 @@ OData は、データベースに対して豊富なクエリを作成できる S
 
 OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx) を参照してください。
 
+## <a name="using-enums"></a>列挙型の使用
+列挙型は、名前空間 **Microsoft.Dynamics.DataEntities**の配下にあります。 OData クエリに列挙型を含めるには、次の構文を使用します。
+
+Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+Microsoft.Dynamics.DataEntities.NoYes'Yes'
+
+上記の列挙型の値を使用したクエリの例を次に示します。
+
+https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+
+列挙型に対応している演算子は **eq** と **ne**です。
+
 ## <a name="authentication"></a>認証
 OData は、サーバーと同じ認証スタック上に配置されます。 認証の詳細については、 [サービス エンドポイントの概要](services-home-page.md) を参照してください。
 
@@ -300,7 +320,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
-列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
+列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で OData ロジック のより詳細な処理をするために使用することができます。
 
 ### <a name="array-fields"></a>配列フィールド
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。

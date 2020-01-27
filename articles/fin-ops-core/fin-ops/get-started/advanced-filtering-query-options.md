@@ -3,7 +3,7 @@ title: 高度なフィルター処理とクエリ構文
 description: この記事では、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは matches (一致) 演算子を使う時に利用できます。
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180832"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931291"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
@@ -114,6 +114,12 @@ ms.locfileid: "2180832"
 <td>コンマで区切られた入力値と一致</td>
 <td>すべての条件をコンマで区切って入力します。</td>
 <td><strong>A、D、F、G</strong> と入力すると、&quot;A&quot;、&quot;D&quot;、&quot;F&quot; および &quot;G&quot; が検出されます。 <strong>10、20、30、100</strong> と入力すると、&quot;10、20、30、100&quot; が検出されます。</td>
+</tr>
+<tr>
+<td>"" (2 つの二重引用符)</td>
+<td>空白の値との照合</td>
+<td>このフィールドの空白値をフィルター処理する 2 つの連続する二重引用符を入力します。</td>
+<td>2 つの連続した二重引用符 (<strong>""</strong>) は、現在の列に対する値のない行を検索します。</td>
 </tr>
 <tr>
 <td>(<span class="code">SQL ステートメント</span>) (SQL ステートメントをかっこで囲む)</td>

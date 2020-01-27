@@ -3,7 +3,7 @@ title: プランへのフィルターの適用
 description: このトピックでは、計画の最適化機能の使用する場合、計画でフィルターを使用する方法について説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ff9c9f875368fcc4dd62b9c188d489e20a5c7960
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9d1431cc8db6fb28d1f1ec73ee07dd15e78f82e8
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773999"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945422"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 # <a name="apply-filters-to-a-plan"></a>プランへのフィルターの適用
 
-計画の最適化機能を使用する場合、計画にフィルターを適用できます。 計画フィルターは、常にマスター プランの実行中に適用されます。 計画フィルターは、計画を特定の品目のグループに制限し、結果のマスター プランの一部としてその他の品目が含まれないようにするのに役立ちます。
+計画の最適化機能を使用する場合、計画にフィルターを適用できます。 **計画フィルター**は、常にマスター プランの実行中に適用されます。 **計画フィルター**は、計画を特定の品目のグループに制限し、結果のマスター プランの一部としてその他の品目が含まれないようにするのに役立ちます。
 
-計画フィルターが適用され、マスター プランの実行中にランタイム フィルターも適用される場合、計画の実行には 2 つのフィルターの共通部分のみが含まれます。
+**計画フィルター**が適用され、マスター プランの実行中にランタイム フィルターも適用される場合、計画の実行には 2 つのフィルターの共通部分のみが含まれます。
+
+計画の最適化が使用されている場合、**計画フィルター**は**マスター プラン**からアクセスできます。
 
 ## <a name="example-scenario"></a>シナリオ例
 

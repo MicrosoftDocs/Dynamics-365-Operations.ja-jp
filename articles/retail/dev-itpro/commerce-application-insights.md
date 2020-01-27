@@ -3,7 +3,7 @@ title: 拡張イベントを Application Insights に記録する
 description: このトピックでは、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 8aa7d411441228f0e2fe505957e711af8b3abc8c
-ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
+ms.openlocfilehash: 348063287d0222d17e08eef4400d43de7e4ee90f
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2815878"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853975"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -170,7 +170,7 @@ ms.locfileid: "2815878"
 
 ## <a name="build-the-deployable-package"></a>配置可能なパッケージを作成します。
 
-配置可能パッケージの作成方法の詳細については、 [リテールに配置可能なパッケージを作成する](../retail-sdk-packaging.md) を参照してください。
+配置可能パッケージの作成方法の詳細については、 [リテールに配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\参照** フォルダーにコピーします。
 2. **BuildTools\\Customization.settings** ファイルを更新し、 **\<ItemGroup\>** セクションに次のエントリを追加します。

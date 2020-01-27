@@ -3,7 +3,7 @@ title: Retail 拡張リソースおよびラベル ファイルのローカラ�
 description: このトピックでは、POS UI ラベル、POS メッセージ、入庫ラベル、および Retail サーバーまたは CRT のエラー メッセージを変更する方法について説明します。 Retail サーバーまたは CRT のカスタム エラー メッセージを追加する方法についても説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d0fbf878f74cab90f65a1de5ef77f30e455cf70d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2aa401a1ce7821840375c7d583365cddc978df63
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023464"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934922"
 ---
 # <a name="localize-retail-extension-resources-and-label-files"></a>Retail 拡張リソースおよびラベル ファイルのローカライズ
 
@@ -74,7 +74,7 @@ POS 文字列のテキスト ID を取得するには、デバッグ モード�
 
 ### <a name="troubleshooting"></a>トラブルシューティング
 
-**開発者モード**オプションが POS の**設定**ページに表示されない場合は、デバッグ モードで動作していることを確認してください。 **pos.js** ファイルを開き、**Config.isDebugMode** が **true** に設定されていることを確認します。 **false** に設定されている場合、値を **true** に変更し、再度 POS を配置します。
+**開発者モード**オプションが POS の**設定**ページに表示されない場合は、デバッグ モードで動作していることを確認してください。 **pos.js** ファイルを開き、**Config.isDebugMode** が **true** に設定されていることを確認します。 **false** に設定されている場合、値を **true** に変更し、再度 POS を配置します。 **pos.js** ファイル内で **Config.isDebugMode** が見つからない場合。 JavaScript コンソールで **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** コマンドを実行して、開発者モードを起動します。 F12 を押下して 開発者コマンドツールを起動し、 **コンソール** タブを選択して JavaScript コンソールを開きます。
 
 > [!IMPORTANT]
 > クイック テストを行い、文字列 ID を取得するために、pos.js ファイル**のみ**を編集する必要があります。 そのような場合、ファイルを編集した後に、変更内容を元に戻す必要があります。 Microsoft のコア ファイルに加えた変更は展開中に上書きされます。 そのため、変更は失われます。 また、将来のバージョンでは、pos.js ファイルの編集をサポートしない可能性があります。

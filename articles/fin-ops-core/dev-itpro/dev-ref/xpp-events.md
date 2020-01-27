@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f720dfe9e1077ee4475016f198d78ae628a5abcd
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 4c45b319504fcf68eff281e303464fab80f02f7c
+ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778682"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872648"
 ---
 # <a name="x-event-terminology-and-keywords"></a>X++ イベントの用語およびキーワード
 
@@ -56,7 +56,7 @@ ms.locfileid: "2778682"
 
 次のコード例の 2 つのクラスは、イベントの定義方法、イベントのサブスクライブ方法、およびイベントを発生させる方法を示しています。 **PointWithEvent** クラスは、**移動** されたデリゲートを定義します。 **移動** メソッドは、**移動** されたデリゲートを呼び出し、その結果、イベントをサブスクライブしているすべてのオブジェクトに通知します。 **PointKeeper** クラスは、**writeMove** メソッドを定義し、そのメソッドを、**createandmove** メソッドで作成された **ポイント** インスタンスの **移動** されたデリゲートのイベント ハンドラーとして割り当てます。 
 
-```X++
+```xpp
 class PointWithEvent
 {
     // Instance fields.

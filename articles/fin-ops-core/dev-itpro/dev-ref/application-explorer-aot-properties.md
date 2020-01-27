@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f86955197c8e79ff68ac6c2a161d6b8c980a9e65
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6de75577481be45ab942c167db4df415df873b27
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183381"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872455"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 
@@ -897,7 +897,8 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 | ValidTimeStateKey     | このインデックス キーが親テーブルと有効時間状態の関係を決定するために使用されるかどうかを指定します。 既定値は **いいえ** です。 **ヒント:** このプロパティを有効にするには **AllowDuplicates** プロパティを**いいえ**、**AlternateKey** プロパティを**はい**に設定する必要があります。                                                                                                                                                                                   |
 | ValidTimeStateMode    | 2 つの有効日レコードの間にギャップが許可されるかどうかを指定します。 既定値は **NoGap** です。 **ヒント:** このプロパティを有効にするには、**AllowDuplicates** プロパティを**いいえ**に、**AlternateKey** プロパティを**はい**に、 **ValidTimeStateKey** プロパティを**はい**に設定する必要があります。                                                                                                                                                                        |
 
-**注記:** ページは最初のインデックスで並べ替えられます。
+> [!NOTE]
+> ページを最初のインデックスで並べ替えます。
 
 ## <a name="table-relation-properties"></a>テーブル関係プロパティ
 ### <a name="list-of-properties"></a>プロパティのリスト
@@ -979,7 +980,8 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tbody>
 </table>
 
-**注記:** **SaveDataPerCompany** プロパティが両方のテーブルに対して、**はい**に設定されている場合、システムは**DataAreaId** フィールドを各リレーションシップに追加します。
+> [!NOTE]
+> **SaveDataPerCompany** プロパティが両方の表に対して **はい** と設定されている場合、システムは **DataAreaId** フィールドをそれぞれの関連に追加します。
 
 ### <a name="relatedtablerole-and-query-joinrelation"></a>RelatedTableRole およびクエリ JoinRelation
 
@@ -989,7 +991,9 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 
 テーブル リレーションで、**CreateNavigationPropertyMethods** プロパティを **はい** に設定すると、テーブル バッファ クラスのナビゲーション メソッドが生成されます。 ナビゲーション メソッドは、外部キーのリレーションシップを使用してテーブル バッファの 2 つのインスタンスをリンクします。 **UnitOfWork** クラスは、このナビゲーション リンクが使用されている 1 つの領域です。 ナビゲーション メソッドの名前は、テーブル関連の **RelatedTableRole** プロパティの値からコピーされます。 この動作は、**RelatedTableRole** 値が **Properties** ウィンドウに明示的に設定され、**UseDefaultRoleNames** プロパティが **Yes** に設定されているため、**RelatedTableRole** 値を生成するときに使用されます。 プロパティ値は、子 CustTable バッファで次のナビゲーション メソッドを生成します。 ほとんど直接的に、ナビゲーション メソッドの名前は **RelatedTableRole** プロパティの値からをコピーされます。
 
-    public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
+```xpp
+public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
+```
 
 #### <a name="navigationpropertymethodnameoverride-property"></a>NavigationPropertyMethodNameOverride プロパティ
 
@@ -2041,7 +2045,8 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tbody>
 </table>
 
-**注記:** **パラメーター**または **EnumParameter** を使用すると、タイプの不一致などのエラーはコンパイル時ではなく、実行時にのみ検出されます。
+> [!NOTE]
+> **パラメーター** または **EnumParameter** プロパティを使用している場合、種類の不一致などのエラーはコンパイル時ではなく、実行時間のみで見つけることができます。
 
 ## <a name="query-properties"></a>プロパティの照会
 クエリ内では、クエリ自体のプロパティ、データ ソース、ソートに使用するフィールド、およびクエリの制限に使用する範囲を設定することができます。
@@ -2632,14 +2637,14 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 |          ColumnHeadingsStrategy           | 列見出しのレイアウトを指定します。 このプロパティを <strong>WordWrap</strong> と設定すると、見出しは列の最長フィールドよりも長い場合にラップします。 ヘッダーは、最大 8 つの明細行までラップできます。 8 つの明細行より長いヘッダーは切り詰められます。 <strong>注記:</strong> 言語によって、ヘッダーの長さが異なります。 |
 |                  列                  |                                                                                                                                                              列の数を指定します。                                                                                                                                                               |
 |                Columnspace                |                                                                                                                                                            列の間のスペースを指定します。                                                                                                                                                             |
-|                   フォント                    |                                                       テキストの書式設定を指定します。 <strong>ツール</strong> メニューの <strong>Options **&gt;**Fonts</strong> をクリックすることで、<strong>Font</strong> プロパティおよび <strong>FontSize</strong> プロパティの設定は、設定する値を上書きできます。                                                        |
-|                 フォントサイズ                  |                                                       テキストの書式設定を指定します。 <strong>ツール</strong> メニューの <strong>Options **&gt;**Fonts</strong> をクリックすることで、<strong>Font</strong> プロパティおよび <strong>FontSize</strong> プロパティの設定は、設定する値を上書きできます。                                                        |
+|                   フォント                    |                                                       テキストの書式設定を指定します。 <strong>フォント</strong> プロパティと <strong>フォントサイズ</strong> プロパティの設定が、<strong>ツール</strong> メニューの <strong>オプション &gt; フォント</strong> をクリックすることで値を上書きします。                                                        |
+|                 フォントサイズ                  |                                                       テキストの書式設定を指定します。 <strong>フォント</strong> プロパティと <strong>フォントサイズ</strong> プロパティの設定が、<strong>ツール</strong> メニューの <strong>オプション &gt; フォント</strong> をクリックすることで値を上書きします。                                                        |
 |              ForegroundColor              |                                                                                                                                                               前景色を指定します。                                                                                                                                                               |
 |                GrandHeader                |                                                                          <strong>HeaderText</strong> プロパティの値が表示されるかどうかを指定します。 <strong>GrandHeader</strong> プロパティは、レポートに複数のデータ ソースがネストされていない場合にのみ使用できます。                                                                          |
 |                GrandTotal                 |                                                                          <strong>FooterText</strong> プロパティの値が表示されるかどうかを指定します。 <strong>GrandTotal</strong> プロパティは、レポートに複数のデータ ソースがネストされていない場合にのみ使用できます。                                                                           |
 |                HeaderText                 |                                                       <strong>GrandHeader</strong> プロパティが <strong>Yes</strong> に設定されているとき、セクションの最初のレコードの上に表示されるテキストを指定します。 このプロパティは、レポートに複数のデータ ソースがネストされていない場合にのみ使用できます。                                                       |
 |                  高さ                   |                                                                                                                                                                    高さを指定します。                                                                                                                                                                    |
-|                  斜体                   |                                                       テキストの書式設定を指定します。 <strong>ツール</strong> メニューの <strong>Options **&gt;**Fonts</strong> をクリックすることで、<strong>Font</strong> プロパティおよび <strong>FontSize</strong> プロパティの設定は、設定する値を上書きできます。                                                        |
+|                  斜体                   |                                                       テキストの書式設定を指定します。 <strong>フォント</strong> プロパティと <strong>フォントサイズ</strong> プロパティの設定が、<strong>ツール</strong> メニューの <strong>オプション &gt; フォント</strong> をクリックすることで値を上書きします。                                                        |
 |     LabelTopMargin、LabelBottomMargin     |                                                                                                                                                   列見出しの上下にある余白を指定します。                                                                                                                                                    |
 |                LeftMargin                 |                                                                                                    左余白を指定します。 このプロパティを<strong>自動</strong>に設定すると、UserInfo システム テーブルに格納されている既定値が使用されます。                                                                                                     |
 | LineAbove、LineBelow、LineLeft、LineRight |                                                                                                          セクション境界線の線のタイプを指定します。 レポートに多くの明細行とボックスがある場合は、セクション内での図形管理の使用を検討します。                                                                                                          |
@@ -2653,7 +2658,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 |                 太さ                 |                                                                                                                                                        セクションの境界線の太さを指定します。                                                                                                                                                         |
 |                    上                    |                                                                                                                                                       レポートの上部の位置を変更します。                                                                                                                                                       |
 |                 TopMargin                 |                                                                                                     上余白を指定します。 このプロパティを<strong>自動</strong>に設定すると、UserInfo システム テーブルに格納されている既定値が使用されます。                                                                                                     |
-|                 下線                 |                                                       テキストの書式設定を指定します。 <strong>ツール</strong> メニューの <strong>Options **&gt;**Fonts</strong> をクリックすることで、<strong>Font</strong> プロパティおよび <strong>FontSize</strong> プロパティの設定は、設定する値を上書きできます。                                                        |
+|                 下線                 |                                                       テキストの書式設定を指定します。 <strong>フォント</strong> プロパティと <strong>フォントサイズ</strong> プロパティの設定が、<strong>ツール</strong> メニューの <strong>オプション &gt; フォント</strong> をクリックすることで値を上書きします。                                                        |
 
 ## <a name="report-query-properties"></a>レポート クエリ プロパティ
 次のテーブルでは、レポート クエリのプロパティについて説明します。 追加のレポート プロパティの詳細については、「レポート プロパティ」および「システムと共通プロパティ」セクションを参照してください。

@@ -3,7 +3,7 @@ title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573933"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935390"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -48,9 +48,9 @@ ms.locfileid: "2573933"
 | データの管理および統合      |                                                                                           | はい       | はい             |
 |                                      | コンフィギュレーション駆動型の拡張機能                                                            | 有       | 無              |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | 有       | 有             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 無              |
-|                                      | データ統合                                                                         | 有       | 有             |
-| ドキュメント管理                  |                                                                                           | 有       | 有             |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | はい              |
+|                                      | データ統合                                                                         | はい       | はい             |
+| ドキュメント管理                  |                                                                                           | はい       | はい             |
 | 財務管理                 |                                                                                           | 有       | 有             |
 | ヘルプ                                 |                                                                                           | 有       | 無              |
 | 人事管理                      |                                                                                           | はい       | はい             |
@@ -148,7 +148,7 @@ ms.locfileid: "2573933"
 
 ## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-オンプレミス展開で利用可能な小売機能の一覧を表示するには、「[オンプレミス展開で利用可能な小売機能](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md)」を参照してください。
+オンプレミス展開で利用可能な小売機能の一覧を表示するには、「[オンプレミス展開で利用可能な小売機能](../../../retail/retail-onprem.md)」を参照してください。
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

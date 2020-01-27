@@ -3,7 +3,7 @@ title: 製品ライフサイクル状態の概要
 description: 製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813549"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934843"
 ---
 # <a name="product-lifecycle-state-overview"></a>製品ライフサイクル状態の概要
 
@@ -74,11 +74,7 @@ ms.locfileid: "2813549"
 
 ## <a name="default-migration-import-and-export"></a>既定の移行、インポートおよびエクスポート 
 
-製品ライフサイクルの状態がデータ エンティティでサポートされていないと、ライフサイクルの状態はリリース済製品のデータ エンティティを通じて、変動状態に設定できません。
-
--  以前のリリースから移行において、すべての製品および製品バリアントのライフサイクルの状態は空白になります。  
--  データ エンティティを通じてリリース済製品インポートする際、既定のライフサイクルの状態は作成時に適用されます。  
--  データ エンティティを通じてリリース済製品バリアントをインポートする際、リリース済製品マスターの製品ライフサイクルの状態がインポートされます。   
+製品ライフサイクルの状態はデータ エンティティによってサポートされており、ライフサイクルの状態はリリース済製品のデータ エンティティまたはリリース済みバリアント データ エンティティのいずれかを介して、変動状態に設定できます。
 
 ## <a name="find-obsolete-products-and-products-variants"></a>古い形式の製品および製品バリアントを検索 
 

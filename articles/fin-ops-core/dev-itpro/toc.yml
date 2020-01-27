@@ -8,7 +8,9 @@
           href: index.md
         - name: 新機能および変更された機能
           items:
-            - name: Platform update 31 のプレビュー機能 (2020 年 1 月)
+            - name: Platform update 32 のプレビュー機能 (2020 年 2 月)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (2020 年 1 月)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (2019 年 11 月)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (2018 年 3 月)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: 以前のバージョンの新機能および変更された機能
+              items:
+                - name: Finance and Operations ホーム ページの新機能および変更された機能
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: ビジネス イベント
           items:
             - name: ビジネス イベントの概要
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: オンプレミス環境との PowerBI.com の統合
                   href: analytics/entity-store-on-prem.md
-                - name: オンプレミス環境用リバース プロキシの構成
+                - name: オンプレミス環境用プロキシの構成
                   href: deployment/onprem-reverseproxy.md
                 - name: オンプレミス配置への更新プログラムの適用
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: 既知の問題
                   href: lifecycle-services/known-issues.md
+                - name: Lifecycle Services (LCS) の削除された機能または非推奨の機能
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services ユーザー ガイド
               href: lifecycle-services/lcs-user-guide.md
             - name: サブスクリプション見積もりツール

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ac5a485dc03ecfa84190e18caceac05546c9021
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eba91c78f1f2fb0b1d2a42d9b6fd575c54d8e119
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183345"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872431"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183345"
 
 X++ は、エンタープライズ リソース プランニング (ERP) プログラミングおよびデータベース アプリケーションで使用する、オブジェクト指向、アプリケーション対応、およびデータ対応のプログラミング言語です。 次の表で強調表示された幅広いシステム プログラミング領域のシステム クラスを提供します。
 
-| **X++ 言語属性** | **説明** |
+| X++ 言語属性 | 説明 |
 |-----|-----|
 | **クラス**                 | システム クラスに加えて、さまざまなタイプの業務プロセスを管理するためのアプリケーション クラスもあります。 クラスのリフレクションがサポートされます。            |
 | **テーブル**                  | X++ のプログラマーは、リレーショナル テーブルにアクセスできます。 X++ には標準 SQL の大部分のキーワードと一致するキーワードが含まれます。 テーブルのリフレクションがサポートされます。 |

@@ -3,7 +3,7 @@ title: X++ およびデバッガーの機能
 description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。 これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,17 +12,16 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 26801
-ms.assetid: 27c65e79-df74-4249-b684-97e1d40da753
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a814a8c0694b63e85a6dde3d2e747f609095334e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0d42b23459c3ef81384a759ba3373f9c9b0bcf95
+ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183341"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "2854052"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 
@@ -43,79 +42,91 @@ ms.locfileid: "2183341"
 
 この例では、使用される「for」ステートメント内のループ カウンターを宣言します。
 
-      void MyMethod()
-      {
-        for (int i = 0; i < 10; i++)
-        {
-          info(strfmt("i is %1", i));
-        }
-      }
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        info(strfmt("i is %1", i));
+    }
+}
+```
 
 変数のスコープは for ステートメントそのものであり、条件式とループ更新部分を含みます。 この範囲外で値を使用することはできません。 それを試行すると、次が表示されます。
 
-      void MyMethod()
-      {
-        for (int i = 0; i < 10; i++)
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 7)
         {
-          if (i == 7)
-          {
             break;
-          }
         }
-        info(strfmt("Found: %1", i));
-      }
+    }
+    info(strfmt("Found: %1", i));
+}
+```
 
 コンパイラは情報の呼び出しで次のエラー メッセージを発行します: 'i' が宣言されていません。
 
 ### <a name="example"></a>例
 
-スコープを確立できる場所がもう 1 つあります。using ステートメントは、X++ 言語のもう 1 つの新しいコンポーネントです。
+範囲を規定できる場所は他にもあります:  `using` のステートメントは、 X++ 言語が新たに利用可能です。
 
-      static void AnotherMethod()
-      {
-        str textFromFile;
+```xpp
+static void AnotherMethod()
+{
+    str textFromFile;
 
-        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
-        {
-          textFromFile = sr.ReadToEnd();
-        }
-      }
+    using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
+    {
+        textFromFile = sr.ReadToEnd();
+    }
+}
+```
 
-原則として、IDisposable オブジェクトを使用する場合は、明細書の使用において宣言しインスタンスを作成する必要があります。 using ステートメントは、オブジェクトのメソッドを呼び出すときに例外が発生した場合でも、正しい方法でオブジェクトの Dispose メソッドを呼び出します。 オブジェクトを try ブロック内に配置してから finally ブロック内で明示的に Dispose を呼び出すことにより、同じ結果を達成することができます。実際、これはコンパイラが using ステートメントを翻訳する方法です。 宣言は、提供できる、どこのステートメントにも提供できるようになりました。宣言は構文的なステートメントおよび申告ステートメントです。 したがって、使用する直前に宣言を提供できます。 変数をすべて 1 ヶ所で宣言する必要はありません。
+ルールとしては、 **IDisposable** オブジェクトを使用する際に、ステートメントを使用した宣言とインスタンス化をする必要があります。 このステートメントを使用すると、予期しない例外が発生した場合であっても、オブジェクト上で **Dispose** メソッドを正常な方法で呼び出します。 オブジェクトを try ブロック内に配置してから finally ブロック内で明示的に Dispose を呼び出すことにより、同じ結果を達成することができます。実際、これはコンパイラが using ステートメントを翻訳する方法です。 宣言は、提供できる、どこのステートメントにも提供できるようになりました。宣言は構文的なステートメントおよび申告ステートメントです。 したがって、使用する直前に宣言を提供できます。 変数をすべて 1 ヶ所で宣言する必要はありません。
 
 ### <a name="example"></a>例
 
 次のサンプルは、上記の機能のいくつかを示しています。
 
-      // loop variable declared within the loop: It will
-      // not be misused outside the loop
-      for(int i = 1; i < 10; i++)
-      {
-      // Because this value is not used from outside the loop,
-      // its declaration belongs in this smaller scope.
-        str s = int2str(i);
-        info(s);
-      }
+```xpp
+// loop variable declared within the loop: It will
+// not be misused outside the loop
+for(int i = 1; i < 10; i++)
+{
+    // Because this value is not used from outside the loop,
+    // its declaration belongs in this smaller scope.
+    str s = int2str(i);
+    info(s);
+}
+```
 
 混乱を避けるために、X++ コンパイラは、囲みスコープ内または同じスコープであっても、別の変数を隠す変数を導入しようとすると、エラーを発行します。 たとえば、次のコードは、以下の診断メッセージを発行するコンパイラの原因になります。「i 」と呼ばれるローカルの変数はこのスコープでは宣言されません。それは既に親または現在のスコープで別のものを表示している「 i 」が別の意味になってしまうためです。
 
-      {
+```xpp
+{
+    int i;
+    {
         int i;
-        {
-          int i;
-        }
-      }
+    }
+}
+```      
 
 これは C\# のルールとよく似ていますが、シャドウが診断されていない C ++ のルールとは異なります。
 
 ### <a name="exercise"></a>練習
 
-FMVehicleInventoryServiceClass のコードを変更して、より小さなスコープを使用します。
+**FMVehicleInventoryServiceClass** 内でコードを応用して、より小さな範囲を使用します。
 
 ## <a name="static-constructors-and-static-fields"></a>静的コンストラクターおよび静的フィールド
 静的コンストラクターおよび静的フィールドは、X++ 言語の新しい機能です。 静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。 C\# では、静的の概念が実行中のアプリケーション ドメイン全体に関係します。 静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。 静的コンストラクターには、次のプロファイルがあります。
 
-    static void TypeNew() 
+```xpp
+static void TypeNew() 
+```
 
 静的コンストラクターを明示的に呼び出すことはありません。コンパイラは、クラスの他のメソッドに先立って、静的コンストラクターを 1 回だけ確実に呼び出すコードを生成します。 静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。 静的コンストラクターに指定できるパラメーターはなく、静的としてマークする必要があります。 静的フィールドは静的キーワードを使用して宣言されているフィールドです。 概念的には、クラスのインスタンスではなくクラスに適用されます。
 
@@ -123,60 +134,68 @@ FMVehicleInventoryServiceClass のコードを変更して、より小さなス�
 
 下の例ではインスタンスと呼ばれる単一を、静的コンストラクターを使用して作成する方法を説明します。
 
-    public class Singleton
+```xpp
+public class Singleton
+{
+    private static Singleton instance;
+
+    private void new()
     {
-      private static Singleton instance;
-
-      private void new()
-      {
-      }
-
-      static void TypeNew()
-      {
-        instance = new Singleton();
-      }
-
-      public static Singleton instance()
-      {
-        return Singleton::instance;
-      }
     }
+
+    static void TypeNew()
+    {
+        instance = new Singleton();
+    }
+
+    public static Singleton instance()
+    {
+        return Singleton::instance;
+    }
+}
+```
 
 単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。これは、以下で消費されます。
 
-    {
-        …
-        Singleton i = Singleton::instance();
-      }
+```xpp
+{
+    // Your code here.
+    Singleton i = Singleton::instance();
+}
+```
 
 ## <a name="assignment-of-field-members-inline"></a>フィールド メンバー インラインの割り当て
 フィールド自体の宣言などと共に、フィールド インラインに値を代入できるようになりました。 これは、静的フィールドとインスタンス フィールドの両方に適用されます。 次のコードでは、field1 と field2 の値はこの方法で定義されます。
 
-    public class MyClass2
-    {
-      int field1 = 1;
-      str field2 = "Banana";
+```xpp
+public class MyClass2
+{
+    int field1 = 1;
+    str field2 = "Banana";
 
-      void new()
-      {
-        // …
-      }
+    void new()
+    {
+        // Your code here.
     }
+}
+```
 
 上記のコードは、以下と同じ意味を持ちます。  
 
-    public class MyClass2
-    {
-      int field1;
-      str field2;
+```xpp
+public class MyClass2
+{
+    int field1;
+    str field2;
 
-      void new()
-      {
+    void new()
+    {
         this.field1 = 1;
         this.field2 = "Banana";
-        // …
-      }
+        // Your code here.
     }
+}
+```
 
 インライン割り当ては、静的メンバーとインスタンス メンバーの両方で機能します。
 
@@ -192,63 +211,70 @@ FMVehicleInventoryServiceClass のコードを変更して、より小さなス�
 
 クラス スコープ (クラスの宣言) で定義されているマクロは、すべての派生クラスのすべてのメソッドで効率的に使用できます。 これはもともとレガシーなコンパイラ マクロ実装のバグでしたが、この抜け穴はアプリケーション プログラマがよく利用しています。 新しい X++ コンパイラには、この機能が残されていますが、この機能を使用する新しいコードは記述しないでください。 この特定の機能は、コンパイラのパフォーマンスにも大きく影響を与えます。 定数は、下記のようにクラス レベルで宣言できます。
 
-    private const str MyConstant = 'SomeValue';
+```xpp
+private const str MyConstant = 'SomeValue';
+```
 
 次に、定数を二重コロン構文を使用して参照することができます。
 
-      str value = MyClass::MyConstant;
+```xpp
+str value = MyClass::MyConstant;
+```
 
 定数が定義されているクラスのスコープにいる場合は、型名の接頭語 (上記の例では MyClass) を省略できます。 このようにマクロ ライブラリの概念を簡単に実装することができます。 マクロ シンボルのリストは、パブリック const の定義を持つクラスになります。
 
 ### <a name="exercise"></a>練習
 
-フリート アプリケーションには、以下のマクロ定義を含む FMDataHelper クラスが含まれています。
+フリート アプリケーションには **FMDataHelper** クラスが含まれており、次のマクロ定義を実装しています。
 
-    public class FMDataHelper
-    {
-      #define.FMSvcTechUserId('FMSvcTec')
-      #define.FMClerkUserId('FMClerk')
-      #define.FMManagerUserId('FMMgr')
-      #define.FMSvcTechUserGrpId('FMSvcTech')
-      #define.FMClerkUserGrpId('FMClerk')
-      #define.FMManagerUserGrpId('FMManager')
-    …
-    }
+```xpp
+public class FMDataHelper
+{
+    #define.FMSvcTechUserId('FMSvcTec')
+    #define.FMClerkUserId('FMClerk')
+    #define.FMManagerUserId('FMMgr')
+    #define.FMSvcTechUserGrpId('FMSvcTech')
+    #define.FMClerkUserGrpId('FMClerk')
+    #define.FMManagerUserGrpId('FMManager')
+}
+```
 
 これらを定数定義に変更し、それに従ってマクロが使用される場所を更新します。
 
 また、定数を変数のみとして定義することもできます。 コンパイラはインバリアントを維持して、値を変更できないようにします。
 
-    {
-      const int Blue = 0x0000FF;
-      const int Green = 0x00FF00;
-      const int Red = 0xFF0000;
-    }
+```xpp
+{
+    const int Blue = 0x0000FF;
+    const int Green = 0x00FF00;
+    const int Red = 0xFF0000;
+}
+```
 
 読み取り専用フィールドには値を 1 回だけ割り当てることがき、その値は変わりません。フィールドには、インラインで (フィールドが宣言した場所)、またはコンストラクターで値を割り当てることができます。 現時点では、定数と読み取り専用の唯一の違いです。
 
-<a name="var"></a>Var
----
+## <a name="var"></a>Var
 
 コンパイラが初期化式から種類を判断することができる場合は、変数の種類を明示的に提供せずに変数を宣言することができるようになりました。 変数が、まだ厳密に型指定されている明確な型であることに注意してください。 (コンパイラが型を推定する) 初期化式が用意されている宣言でのみ var を使用することができます。 コードを読みやすくできる状況がありますが、この機能を誤用すべきではありません。 次のルールを考慮してください。
 
 -   代入の右側から見て変数の型が明らかである場合、または正確な型が重要でない場合は、var を使用してローカル変数を宣言します。
 
-
-~~~
+    ```xpp
     // When the type of a variable is clear from the context, use var 
     // in the declaration. 
     var var1 = "This is clearly a string.";
     var var2 = 27; // This is an integer (not a real).
     var i = System.Convert::ToInt32(3.4);
-~~~
+    ````
 
 -   種類が初期化式から明らかでない場合は、var を使用しないでください。
 
-        // When the type of a variable is not clear from the context, use an 
-        // explicit type. 
-            int var4 = myObject.ResultSoFar();
-
+    ```xpp
+    // When the type of a variable is not clear from the context, use an 
+    // explicit type. 
+    int var4 = myObject.ResultSoFar();
+    ```
+    
 -   for ループ カウンターの宣言には、var を使用します。
 -   using 文内で破棄可能なオブジェクトには、var を使用します。
 
@@ -256,79 +282,92 @@ FMVehicleInventoryServiceClass のコードを変更して、より小さなス�
 以前は、クラスで定義されたすべてのメンバー変数が可変保護されていました。 private、protected、および public キーワードを加えることにより、メンバー変数の表示を明示的にできるようになりました。 これらの修飾子の解釈は明白であり、メソッドのセマンティクスに沿っています。
 
 -   プライベート メンバーは、定義されているクラス内でのみ使用できます。
--   保護されているメンバーは、それが定義されているクラスとそのすべてのサブクラスで使用できます。
+-   保護されたメンバーは、それが定義されているクラスとそのすべてのサブクラスで使用できます。
 -   パブリック メンバーは、どこででも使用することができ、定義されているクラス階層の範囲外に表示されます。
 
 明示的なモディファイアーで実装されていないメンバー変数の既定値は、引き続き保護されています。 可視性を明示的に指定する習慣をつける必要があります。 説明のように、メンバー 変数が public として定義されている場合、定義されているクラス外で消費される可能性があります。 この場合、変数をホストしているオブジェクトを指定する修飾子は、(メソッド呼び出しの場合と同様に) ドット表記を使用して指定する必要があります。 上記のコードを再利用:
 
-    public class MyClass2
-    {
-      int field1;
-      str field2;
+```xpp
+public class MyClass2
+{
+    int field1;
+    str field2;
 
-      void new()
-      {
+    void new()
+    {
         this.field1 = 1;   // Explicit object designated
         field2 = "Banana";  // 'this' assumed, as usual
-      }
     }
+}
+```
 
-この場合、field1 には明示的な 'this' を使用してアクセスします。 修飾子。 **注記**: 消費者にクラスの内部作業を公開することになり、クラスの実装と消費者の間に強い依存関係が生じるため、メンバー変数をパブリックにすることはお勧めできません。 常に、実装ではなくコントラクトにのみ依存させる必要があります。
+この場合、field1 には明示的な 'this' を使用してアクセスします。 修飾子。 
+
+> [!NOTE]
+> メンバー変数を公開することは、クラスの内部動作をそのコンシューマに公開し、クラスの実装とそのコンシューマ間に強い依存関係を作成するため、あまり推奨されていません。 常に、実装ではなくコントラクトにのみ依存させる必要があります。
 
 ## <a name="finally-in-trycatch-statements"></a>最後に try/catch 明細書において
 try/catch 文にオプションの finally 句を追加できるようになりました。 セマンティクスは C\# やその他のマネージド言語と同じです。 finally 句のステートメントは、通常または例外を介してコントロールが try ブロックを離れるときに実行されます。
 
-      try
-      {
-        // ...
-      }
-      catch
-      {
-        // Executes when any exception is thrown in the dynamic
-        // scope in the try block.
-      }
-      finally
-      {
-        // Executed irrespective of how the try block exits.
-      }
+```xpp
+try
+{
+    // ...
+}
+catch
+{
+    // Executes when any exception is thrown in the dynamic
+    // scope in the try block.
+}
+finally
+{
+    // Executed irrespective of how the try block exits.
+}
+```
 
 ## <a name="event-handlers-and-prepost-methods"></a>イベント ハンドラーおよび予備または転記メソッド
 旧式 X++ では、特定のメソッドがメソッドの実行前後に実行されるようにメタデータで指定できました。 サブスクリプションが何を呼び出すかに関する情報は、パブリッシャーに記録されていますが、これは環境には役立ちません。 サブスクライバーに SubscribesTo 属性を指定することにより、コードを通じて前後のハンドラーを指定できるようになりました。
 
 ### <a name="example"></a>例
 
-    [PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-      public static void PreHandler(XppPrePostArgs arguments)
-      {
-        int arg = arguments.getArg("i");
-      }
+```xpp
+[PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PreHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+}
 
-      [PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-      public static void PostHandler(XppPrePostArgs arguments)
-      {
-        int arg = arguments.getArg("i");
-        int retvalFromMethod = arguments.getReturnValue();
-      }
+[PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PostHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+    int retvalFromMethod = arguments.getReturnValue();
+}
 
-      public int Publisher(int i)
-      {
-        return 1;
-      }
+public int Publisher(int i)
+{
+    return 1;
+}
+```
 
-この例は、Publisher という公開メソッドを示しています。 2 人のサブスクライバーが PreHandlerFor と PostHandlerFor に登録されています。 このコードは、変数と戻り値にアクセスする方法を示しています。 **注記**: アプリケーション コードに重要なアプリケーション イベントを公開するための多数の委任がないため、この機能は下位互換性のために提供されています。 前後のハンドラーは、パラメーターの追加または変更のため、パラメータータイプの変更ため、メソッドが呼び出されなくなったり、別の状況で呼び出されたりしたために容易に中断する可能があります。 属性はバインディング イベント ハンドラーをデリゲートするためにも使用されます。
+この例は、Publisher という公開メソッドを示しています。 2 人のサブスクライバーが PreHandlerFor と PostHandlerFor に登録されています。 このコードは、変数と戻り値にアクセスする方法を示しています。 
 
-      [SubscribesTo(
-        classstr(FMRentalCheckoutProcessor),  
-        delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
-      public static void RentalFinalizedEventHandler(
-        FMRental rentalrecord, Struct rentalConfirmation)
-      {
-      }
+この機能は、アプリケーションコードに代行機能が多くないことから、下位互換性を保つために提供されており、重要なアプリケーション イベントを発行する目的で提供されています。 前後のハンドラーは、パラメーターの追加または変更のため、パラメータータイプの変更ため、メソッドが呼び出されなくなったり、別の状況で呼び出されたりしたために容易に中断する可能があります。 属性はバインディング イベント ハンドラーをデリゲートするためにも使用されます。
 
-      delegate void RentalTransactionAboutTobeFinalizedEvent(
+```xpp
+[SubscribesTo(
+    classstr(FMRentalCheckoutProcessor),  
+    delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+public static void RentalFinalizedEventHandler(
+    FMRental rentalrecord, Struct rentalConfirmation)
+{
+}
+
+    delegate void RentalTransactionAboutTobeFinalizedEvent(
         FMRental fmrentalrecord, struct RentalConfirmation)
-      {
-      }
+{
+}
+```
 
 この場合、SubscribesTo 属性は、FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent デリゲートが呼び出されたときにメソッド RentalFinalizedEventHandler を呼び出す必要があることを指定します。 パブリッシャーとサブスクライバーの間のバインディングは属性を通じて行われるため、サブスクライバーが呼び出される順序を指定する方法はありません。
 
@@ -342,22 +381,24 @@ try/catch 文にオプションの finally 句を追加できるようになり�
 
 拡張クラスにプライベートまたは保護された静的メソッドを含めることは完全に有効です。 これらは通常、実装の詳細に使用され、拡張として公開されません。 次の例は、いくつかの拡張メソッドを保持している拡張機能クラスを示しています。
 
-    public static class AtlInventLocation_Extension
-    {
-      public static InventLocation refillEnabled(
+```xpp
+public static class AtlInventLocation_Extension
+{
+    public static InventLocation refillEnabled(
         InventLocation _warehouse, 
         boolean _isRefillEnabled = true)
-      {
+    {
         _warehouse.ReqRefill = _isRefillEnabled;
         return _warehouse;
-      }
+    }
 
-      public static InventLocation save(InventLocation _warehouse)
-      {
+    public static InventLocation save(InventLocation _warehouse)
+    {
         _warehouse.write();
         return _warehouse;
-      }
     }
+}
+```
 
 ### <a name="why-use-extension-methods"></a>なぜ拡張メソッドを使用しますか。
 
@@ -381,14 +422,15 @@ try/catch 文にオプションの finally 句を追加できるようになり�
 
 次のコードを考慮してください。
 
-     using System;
-    using IONS=System.IO; // Namespace alias
-    using Alist=System.Collections.ArrayList; // Class alias
+```xpp
+using System;
+using IONS=System.IO; // Namespace alias
+using Alist=System.Collections.ArrayList; // Class alias
 
-    public class MyClass2
+public class MyClass2
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         Int32 I; // Alternative to System.Int32
         Alist al; // Using a class alias
 
@@ -398,8 +440,9 @@ try/catch 文にオプションの finally 句を追加できるようになり�
         al.Add(1);
 
         s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
-      }
     }
+}
+```
 
 ## <a name="differences-between-legacy-x-and-new-x"></a>レガシー X++ と新しい X++ の違い
 このセクションでは、旧式 X++ と新しい X++ の違いを説明します。
@@ -408,10 +451,11 @@ try/catch 文にオプションの finally 句を追加できるようになり�
 
 実際の値を表すために使用されるタイプは、解釈された X++ から変更されています。 新しいタイプは、古いタイプの値をすべて表すことができるので、コードを書き直す必要はありません。 完全な開示のためにこの材料を提供します。 実数タイプのすべてのインスタンスが .NET 小数タイプ (System.Decimal) のインスタンスとして実装されます。 以前のバージョンでの real 型と同様に、バイナリ コード化された小数点以下の型での decimal 型は浮動小数点の型とは違い、丸め誤差に対する対応力があります。 10 進型の範囲と解像度は、元の型とは異なります。 元の X++ 実数型は 16 桁をサポートし、小数点の配置位置を指し示す指数をサポートしていました。 新しい X++ 実数型は、正の 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) から 負の 79,228,162,514,264,337,593,543,950,335 (-(2⁹⁶-1)) までの 10 進数を表すことができます。 新しい実数型は、丸めの必要性を排除しません。 たとえば、次のコードは、1 ではなく 0.9999999999999999999999999999 という結果を生成します。 これは、以下の変数の値を表示するためにデバッガーを使用するとすぐに見られます。
 
-    public class MyClass2
+```xpp
+public class MyClass2
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         real dividend = 1.0;
         real divisor = 3.0;
         str stringvalue;
@@ -421,21 +465,29 @@ try/catch 文にオプションの finally 句を追加できるようになり�
 
         valueAsDecimal = value;
         info(valueAsDecimal.ToString("G28"));
-
-      }
     }
+}
+```
 
 1/3 の値を正確に表せる小数点以下の桁数はありません。 ここで得られる不一致は、有限数の小数しか提供されないことによるものです。 必要な小数点以下の桁数まで丸めるには、Round 関数を使用します。
 
-      value = round(value, 2);
+```xpp
+value = round(value, 2);
+```
 
 ## <a name="internal-representation"></a>内部表示
 10 進数は、符号と数値の桁ごとの値が 0～9 の範囲にある数値と、流動少数点の整数部と小数部分を区切るための位置を示すスケーリング係数で構成される浮動小数点値です。 実数値のバイナリ表現は、96ビットの整数を除算し、それが小数部分であることを指定するために使用する 1 ビットの符号、96ビットの整数、スケーリング係数で構成されます。 拡大縮小係数は、0 から 28 の範囲の指数に暗黙的に 10 を引いたものです。 したがって、10 進数のバイナリ表現は ((-2⁹⁶ ～ 2⁹⁶)/10(0\\ ～\\ 28)) を表します。ここで -(2⁹⁶-1) は表現できる最小値と等しく、2⁹⁶-1 は最大値に等しくなります。
 
 ## <a name="string-truncation"></a>文字列の切り捨て
-文字列の切り捨ては、新しい機能ではありません。 ただし、コードが以前のバージョンの IL で実行されると、ここで説明されている自動文字列の切り捨ては行われません。 文字列値は、最大文字数を格納するために X++ で宣言できます。 これは通常、以下に示すように、この情報を拡張データ型でエンコードすることによって実現されます。クレジット カード番号は 20 文字を超えることはできません。 [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) 長さ制約を X++ 構文で直接指定することもできます。
+文字列の切り捨ては、新しい機能ではありません。 ただし、コードが以前のバージョンの IL で実行されると、ここで説明されている自動文字列の切り捨ては行われません。 文字列値は、最大文字数を格納するために X++ で宣言できます。 これは通常、以下に示すように、この情報を拡張データ型でエンコードすることによって実現されます。クレジット カード番号は 20 文字を超えることはできません。 
 
-    str 20 creditCardNumber;
+![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)
+
+X++構文では、長さの制約を直接指定することも可能です。
+
+```xpp
+str 20 creditCardNumber;
+```
 
 これらの値に対するすべての割り当ては最大長に暗黙的に切り捨てられます。
 
@@ -443,95 +495,123 @@ try/catch 文にオプションの finally 句を追加できるようになり�
 
 静的メイン メソッドに含めることにより、デバッガーで次のコードを実行します。
 
-    creditCardNumber = "12345678901234567890Excess string";
+```xpp
+creditCardNumber = "12345678901234567890Excess string";
+```
 
 ## <a name="casting"></a>キャスティング
-X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。 アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。 レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。 X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。 キャストはダウン キャストまたはアップ キャストのいずれかです。 この説明の準備として、いくつかのわかりやすいクラス階層、[![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) を紹介します。ご覧のとおり、MotorVehicle クラスは Animal クラスとは関係ありません。 **up-cast** は派生型の式を基本型に割り当てる場合に発生します。
+X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。 アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。 レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。 X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。 キャストはダウン キャストまたはアップ キャストのいずれかです。 この議論の準備段階として、いくつかのクラス階層をご案内します: 
 
-      Animal a = new Horse();
+![Casting\_DebugFeatures](./media/casting_debugfeatures.png) 
+
+ご覧の通り、MotorVehicle クラスには Animal クラスとの関連がありません。 **up-cast** は派生型の式を基本型に割り当てる場合に発生します。
+
+```xpp
+Animal a = new Horse();
+```
 
 **down-cast**は、基本型の式を派生変数に代入する場合に発生します。
 
-    Horse h = new Animal();
+```xpp
+Horse h = new Animal();
+```
 
 アップキャストとダウンキャストの両方が X++ でサポートされています。 ただし、ダウン キャストは危険であり、できる限り回避する必要があります。 割り当てが意味をなさないため、上記の例は実行時に InvalidCastException で失敗します。 X++ はオブジェクトおよび formrun などの、いくつかのタイプで遅延バインドをサポートします。 これは、つまり、そのメソッドがその型に対して明示的に宣言されていない場合、コンパイラは、コンパイル時に、それらの型に対して呼び出されているメソッドを見てもエラーを診断しないということを意味します。 開発者は彼らが何をしているかを把握しているとみなされます。 たとえば、フォーム内で検索される次のコードを参照してください。
 
-    Object o = element.args().caller();
-      o.MyMethod(3.14, “Banana”);
+```xpp
+Object o = element.args().caller();
+    o.MyMethod(3.14, “Banana”);
+```
 
 コンパイラは、このメソッドがオブジェクト クラスで宣言されていないため、MyMethod メソッドのパラメーター、戻り値などをチェックすることはできません。 実行時には、リフレクションを使用して呼び出しが行われます。これは通常の呼び出しよりも桁違いに低速化されます。 遅延バインディング型で実際に定義されているメソッドの呼び出しは必然的にチェックされることに注意してください。 たとえば、ToString() へ呼び出します。
 
-    o.ToString(45);
+```xpp
+o.ToString(45);
+```
 
 コンパイル エラーの原因になります。
 
-    'Object.toString' expects 0 argument(s), but 1 specified.
+```xpp
+'Object.toString' expects 0 argument(s), but 1 specified.
+```
 
 ToStringメソッド がオブジェクト クラスで定義されているため。 以前のバージョンの X++ の実装とは違いが 1 つあります。これは、たとえパラメーターのプロファイルが完全に正しくない場合でも、メソッドの名前が正しい限り、関連のないオブジェクトに対してメソッドを呼び出すことができるという事実に関連しています。 これは、CIL ではサポートされていません。
 
 ### <a name="example"></a>例
 
-    public class MyClass2
+```xpp
+public class MyClass2
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         Object obj = new Car();
         Horse horse = obj; // exception now thrown
         horse.run();    // Used to call car.run()!
-      }
     }
+}
+```
 
 コード内で IS 演算子と AS 演算子を自由に使用する必要があります。 指定した式が特定の型 (派生型を含む) の場合は、IS 演算子を使用することができます。AS 演算子は、特定のタイプへのキャストを実行し、キャストが使用できない場合は null を返します。
 
 ## <a name="compiler-diagnoses-attempts-to-store-objects-in-containers"></a>コンパイラは、オブジェクトをコンテナに格納しようとすると診断します
 以前の X++ コンパイラでは、実行時に失敗した場合でもコンテナーにオブジェクト参照を格納することができました。 これは不可能です。 コンパイラは、コンテナーへのオブジェクト参照の保存の試みを確認したとき
 
-    container c = [new Query()];
+```xpp
+container c = [new Query()];
+```
 
 エラー メッセージを発行します。
 
-    Instances of type 'Query' cannot be added to a container.
+```xpp
+Instances of type 'Query' cannot be added to a container.
+```
 
-コンテナーに追加される要素のタイプが任意のタイプである場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。 コンパイラは、ユーザーが何をしているのかを把握していることを前提としてこれを許可します。 コンパイラは次のコードを誤っていると診断しません。
+コンテナーに追加される要素のタイプが任意のタイプである場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。 コンパイラは、ユーザーが何をしているのかを把握していることを前提としてこれを許可します。 コンパイラでは次のコードがエラーとして診断されませんが、実行時にエラーが表示されます :
 
-    anytype a = new Query();
-            container c = [a];
-
-しかし、実行時にエラーがスローされます。
+```xpp
+anytype a = new Query();
+    container c = [a];
+```
 
 ## <a name="cross-company-clause-can-contain-arbitrary-expressions"></a>会社間の句には任意の式を含めることができます
 会社間の句は、検索ステートメントを考慮する必要のある会社を示すために select ステートメントで使用できます。 構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。
 
-      private void SampleMethod()
-      {
-        MyTable t;
-        container mycompanies = ['dat', 'dmo'];
-        select crosscompany: mycompanies t;
-      }
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: mycompanies t;
+}
+```
 
 現在は、この目的で変数を使用することなく、式を指定することができます。
 
-      private void SampleMethod()
-      {
-        MyTable t;
-        container mycompanies = ['dat', 'dmo'];
-        select crosscompany: (['dat'] + ['dmo']) t;
-      }
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: (['dat'] + ['dmo']) t;
+}
+```
 
 ## <a name="mkdate-predefined-function-no-longer-accepts-shorthand-values"></a>定義済みの mkDate 関数はショートハンド値を受け入れません
 旧式システムでは、mkDate 関数の年の引数に「短縮形」の値を使用できました。 結果は、次のコード サンプルで確認できます。
 
-    static void Job16(Args _args)
-    {
-      int y;
-      date d;
+```xpp
+static void Job16(Args _args)
+{
+    int y;
+    date d;
 
-      for (y = 0; y < 150; y++)
-      {
+    for (y = 0; y < 150; y++)
+    {
         d = mkDate(1,1,y);  
         info(strFmt("%1 - %2", y, year(d)));
-      }
     }
+}
+```
 
 レガシ システムでこのコードを実行すると、次の値が生成されます: 0 – 2000 1 – 2001 2 – 2002 … 27 - 2027 28 - 2028 29 - 2029 **30 - 2030** **31 - 1931** 32 - 1932 33 - 1933 … 97 - 1997 98: 1998 **99 - 1999** **100 - 1900** これらの値はもうサポートされません。 このような値を使用しようとすると、mkDate 関数は null の日付 (1900年1月1日) を返します。
 
@@ -544,7 +624,11 @@ X++ pause ステートメントは、影響下にあったポップアップ **�
 
 ### <a name="print-statement"></a>明細書の印刷
 
-X++ print ステートメントは、デバッグのためだけに存在していた、もう 1 つのステートメントです。 これはまだ存在しており、その基本的な考えは変わりません。 ただし、印刷は System.Diagnostics.WriteLine を通じて出力されるようになりました。 製品の構成では、送付された書面による情報の詳細を決定します。 [![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) 情報ログを使用することにより、出力がデバッガーおよび実行中のフォームに表示されるため、より魅力的になります。
+X++ print ステートメントは、デバッグのためだけに存在していた、もう 1 つのステートメントです。 これはまだ存在しており、その基本的な考えは変わりません。 ただし、印刷は System.Diagnostics.WriteLine を通じて出力されるようになりました。 製品の構成では、送付された書面による情報の詳細を決定します。 
+
+![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)
+
+Infolog の出力はデバッガと実行中のフォームに表示されるため、Infolog を使用する方が効力があります。
 
 ## <a name="the-ignore-list"></a>Ignore リスト
 従来の環境はすべて解釈されたため、一部のパーツをコンパイルせず、残りの部分を使用することも可能でした。 正常にコンパイルしたメソッドのみを呼び出す場合、問題はありません。ただし、正常にコンパイルされなかったメソッドを呼び出そうとすると、問題が発生します。 この作業方法は CIL では機能しません。 アセンブリは正常に行われたコンパイルから生成され、ランタイム システムは未完了の組み立てを読み込むことができません。 しかし、従来のアプリケーションを新しい環境に移植する際には、段階的なやり方で実行することが有益であり、すべてを移植する前にアプリケーションの一部をテストする必要もあり、そのための正当なシナリオがあります。 これはこの非常に限定されたシナリオでは役立ちますが、システムが展開された後は、実行時に発生する問題を隠してしまう可能性があるため、アプリケーションの生産準備ができた後は使用すべきではありません。 プロジェクトのコンテキスト メニューから「ベスト プラクティスの抑制を編集」を選択することで、XML でメソッドを指定できます。 これにより、除外項目を管理する XML ドキュメントが開きます。
@@ -554,7 +638,10 @@ X++ print ステートメントは、デバッグのためだけに存在して�
 
 ### <a name="adding-tostring-methods-to-your-classes"></a>クラスへの ToString メソッドの追加
 
-多くの場合、ToString() メソッドをクラスに追加することが利点となります。 これを行うのに費やした労力は何度も戻ってきます。それは簡単です。 このアドバイスは、レガシ X++ にも当てはまります。 **注記**: ToString メソッドが予期しない時に呼び出されることがあるため、ここでオブジェクトの状態を変更することはお勧めできません。
+多くの場合、ToString() メソッドをクラスに追加することが利点となります。 これを行うのに費やした労力は何度も戻ってきます。それは簡単です。 このアドバイスは、レガシ X++ にも当てはまります。 
+
+> [!NOTE]
+> ToString メソッドは予期しないときに呼び出される場合があるため、ここでオブジェクトの状態を変更することは推奨しません。
 
 ### <a name="identifying-unselected-fields"></a>選択されていないフィールドの識別
 
@@ -564,23 +651,38 @@ X++ print ステートメントは、デバッグのためだけに存在して�
 
 次のコードを考慮してください。
 
-    class MyClass
+```xpp
+class MyClass
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         FMRental rental;
 
         select EndMileage, RentalId from rental;
 
         rental.Comments = "Something";
-      }
     }
+}
+```
 
-代入ステートメントにブレークポイントを設定します。 クラスをプロジェクトのスタートアップ オブジェクトにして、F5 キーを押して開始します。 ブレークポイントが検出されたときは、ローカル ウィンドウでレンタル変数を展開して表示します。 次の図に似たものが表示されます。 [![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) 選択されていないフィールドが null として表示されるとき、選択された値で表示される選択されたフィールド (EndMileage および RentalId) を確認できます。 これは、その値がデータベースからフェッチされなかったことを示します。 当然、これはデバッグ コンポーネントです。 選択されていないフィールドの値は、フィールドのタイプの規定値になります。 これをステップオーバーし、デバッガーが実際の値のレンダリングをどのように変更するかを確認します。 **注記**: テーブルがキャッシュに設定されている場合、システムは常にコードに含まれるフィールド リストに関係なく、テーブル全体からすべてのフィールドをフェッチします。
+代入ステートメントにブレークポイントを設定します。 クラスをプロジェクトのスタートアップ オブジェクトにして、F5 キーを押して開始します。 ブレークポイントが検出されたときは、ローカル ウィンドウでレンタル変数を展開して表示します。 次の図に似たものが表示されます。 
+
+![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)
+
+選択されているフィールド (EndMileage と RentalId) には選択された値が表示され、選択されていないフィールドには null が表示されます。 これは、その値がデータベースからフェッチされなかったことを示します。 当然、これはデバッグ コンポーネントです。 選択されていないフィールドの値は、フィールドのタイプの規定値になります。 これをステップオーバーし、デバッガーが実際の値のレンダリングをどのように変更するかを確認します。 
+
+> [!NOTE]
+> テーブルにキャッシュが設定されている場合は、コードで指定されているフィールドリストに関係なく、常にテーブル全体からすべてのフィールドがフェッチされます。
 
 ### <a name="the-auto-and-infolog-windows"></a>自動および情報ログ ウィンドウ
 
-デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。 この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。 [![自動 \_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) また、情報ログに書き込まれるデータを示すウィンドウもあります。 [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
+デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。 この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。 
+
+![Autos\_DebugFeatures](./media/autos_debugfeatures.png)
+
+また、Infolog に書き込まれるデータを表示するウィンドウもあります。 
+
+![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)
 
 ### <a name="new-breakpoint-features"></a>新しいブレークポイント機能
 
@@ -594,19 +696,24 @@ Visual Studio デバッガーでは、条件付きブレークポイントと、
 
 次のコードを考慮してください。
 
-    class PVsClass
+```xpp
+class PVsClass
+{
+    public static void Main(Args a)
     {
-      public static void Main(Args a)
-      {
         int i;
         for (i = 0; i < 10; i++)
         {
-          print i;
+            print i;
         }
-      }
     }
+}
+```
 
-そのステートメントが選択されているときに F9 キーを押すことで、印刷明細書にブレークポイントを設定します。 これにより、通常の無条件ブレークポイントが作成されます。 ここで、マウスを使用して、ブレークポイントのコンテキスト メニューを開き、**条件**を選択します。 "i" 変数が 5 を超えたときにブレークポイントが発生することを示す条件を配置します。 スタートアップ プロジェクトとしてクラスを設定し、プロジェクト内のスタートアップ項目としてコードを含むクラスを設定します。 コードを実行します。 デバッガーを使用して「i」の値を自由に変更してください。 ここで、このブレークポイントを削除し、ヒット カウント機能を使用して同じことを実現します。 **注記**: ブレークポイントにはいくつかの条件があります。 多くの場合、ブレークポイントにカーソルを置くと役立つツールヒントが表示されれば便利です。 トレース ポイントは、しばしばトレースの実行に役立ちます。 対象の行に追跡ポイントを挿入し、変数の値を記録します。 トレース出力がデバッガーの出力ウィンドウに表示されます。
+そのステートメントが選択されているときに F9 キーを押すことで、印刷明細書にブレークポイントを設定します。 これにより、通常の無条件ブレークポイントが作成されます。 ここで、マウスを使用して、ブレークポイントのコンテキスト メニューを開き、**条件**を選択します。 "i" 変数が 5 を超えたときにブレークポイントが発生することを示す条件を配置します。 スタートアップ プロジェクトとしてクラスを設定し、プロジェクト内のスタートアップ項目としてコードを含むクラスを設定します。 コードを実行します。 デバッガーを使用して「i」の値を自由に変更してください。 ここで、このブレークポイントを削除し、ヒット カウント機能を使用して同じことを実現します。 
+
+> [!NOTE]
+> ブレークポイントには、いくつかの条件があります。 多くの場合、ブレークポイントにカーソルを置くと役立つツールヒントが表示されれば便利です。 トレース ポイントは、しばしばトレースの実行に役立ちます。 対象の行に追跡ポイントを挿入し、変数の値を記録します。 トレース出力がデバッガーの出力ウィンドウに表示されます。
 
 ### <a name="the-immediate-window"></a>直接ウィンドウ
 

@@ -3,7 +3,7 @@ title: タスク レコーダーのクイック リファレンス
 description: この記事では、タスク レコーダー メニュー内の各ボタンの動作を説明するクイック リファレンス シートを提供します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85db2a96003fb45c0699cd16f6be6b69859c4802
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c41f8efa2a8dde54b0544a4aba987b01c6252651
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772830"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872314"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -61,7 +61,7 @@ ms.locfileid: "2772830"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/Update-recording-steps-menu"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">開く/保存/この PC に</h3>
 これらのオプションを使用すると、コンピューターに保存されている記録を開くか、コンピューターに記録を保存できます。
 <h3 id="opensave-fromto-lcs">Lifecycle Services を開き保存する</h3>
@@ -86,7 +86,7 @@ ms.locfileid: "2772830"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="208" height="120" /></a><a href="./media/Playback-controls-menu-Pause.png"><img src="./media/Playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
+<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="208" height="120" /></a><a href="./media/playback-controls-menu-Pause.png"><img src="./media/playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
 <td><h3 id="play-next-pending-step">次の保留中のステップの再生</h3>
 このオプションを使用すると、ステップ リストの矢印で示す、次の保留中のステップがタスク レコーダーで実行および記録されます。
 <h3 id="play-to-selected-step">選択したステップまで再生</h3>

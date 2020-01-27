@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 0a0cf78304ddbe9a78a78c96bf1345c9d2da863b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7fc47364dfb78297f4c40e8a6e651c76df306740
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872429"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 
@@ -41,7 +41,8 @@ TransientSqlConnectionError 例外は、トランザクション内ではキャ�
 
 
 ### <a name="example"></a>例
-```
+
+```xpp
 public static void LargeTransactionWrapper()
 {
     try

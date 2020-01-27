@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: 4fc1591b2e76709ed0dc96d1b83b2fb8cbb88510
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 94651e2511b4a3244331dc1852f1191a68a8553c
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832920"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898399"
 ---
 # <a name="data-integration-guidance-for-dynamics-365-talent"></a>Dynamics 365 Talent のデータ統合ガイド
-
-[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>概要
 Dynamics 365 Talent は、さまざまな業務プロセスで役に立つ業務データを管理します。 このトピックでは、Talent で管理されるデータを統合するためのさまざまなオプションについてのガイドを提供し、インテグレーターが自分たちのニーズにどの技術が最も適しているかに関して十分な情報に基づいて判断ができるように、さまざまな統合テクノロジの特性について説明します。

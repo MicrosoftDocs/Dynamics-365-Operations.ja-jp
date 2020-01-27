@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9c8c963fb2212df2dfa6e7f00ddd3e55e0749214
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813986"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898343"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>アンケート結果の表示と評価
-
-[!include [banner](includes/banner.md)]
 
 このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。 
 

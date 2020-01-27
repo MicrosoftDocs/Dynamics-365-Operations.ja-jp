@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: c1b19f36c1026ae436cb45855019020b1271fdb2
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: a41a1b6fc0e3fc95aa83c40aad7b7994f3b7c0cd
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818492"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897961"
 ---
 # <a name="talent-updates"></a>人材の更新
-
-[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent は、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。 これらの更新には、定期的な更新を含むサービスに対する重要な改良を提供する、アプリケーションとプラットフォーム両方の変更が含まれます。
 
@@ -99,7 +97,7 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 サンドボックス環境でプレビュー機能を検証してから、実働環境で有効にすることができます。 機能の有効化についての詳細は、[機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
 
-すべての新機能は少なくとも 30 日間、通常は30-60日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って年 10 月と 4 月に使用可能です。 機能管理ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
+すべての新機能は少なくとも 30 日間、通常は30-60日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 機能管理ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
 
 場合によっては、通常は整数機能が有効になりますが、オフにすることはできません (機能管理ワークスペースなど)。
 

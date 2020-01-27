@@ -3,7 +3,7 @@ title: 製品の統合エクスペリエンス
 description: このトピックでは、Finance and Operations アプリと Common Data Service 間の製品データの統合について説明します。
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769732"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914774"
 ---
 # <a name="unified-product-experience"></a>製品の統合エクスペリエンス
 
@@ -52,7 +52,7 @@ Finance and Operations アプリの製品データ モデルを次に示しま�
 
 Finance and Operations | その他の Dynamics 365 アプリ | 説明
 -----------------------|--------------------------------|---
-リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれます。これには、製品の財務情報と管理情報が含まれています。 次の表に、このマッピングを示します。
+リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれます。これには、製品の財務情報と管理情報が含まれています。 
 Common Data Service リリース済特徴的製品 | 品目 | **製品**エンティティには、製品を定義するフィールドが含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
 バーコードで識別される製品番号 | msdyn\_productbarcodes | 製品のバーコードは、製品を一意に識別するために使用されます。
 既定の注文設定 | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 製品固有の測定単位換算 | msdyn_productspecificunitofmeasureconversion
 製品カテゴリ | msdyn_productcategories | 各製品カテゴリおよびその構造と特性に関する情報は、製品カテゴリ エンティティに含まれています。 
 製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して製品を分類またはグループ化します。カテゴリ階層は、製品カテゴリ階層エンティティを使用して、Common Data Service で使用できます。 
-製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 各ロールで使用するカテゴリを指定します。製品カテゴリのロール エンティティは、次のマッピングで使用されます。 
+製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。 
 製品カテゴリの割り当て | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てエンティティを使用できます。
 
 ## <a name="integration-of-products"></a>製品の統合

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 9d8aa9eaf1876a98749b91dc78bef6f173364dfc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4cd9372704c98545d2863dce3cfdb427313b08e4
+ms.sourcegitcommit: 85674cdc726bce33b2acc2963713754bb0c42185
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811685"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "2927871"
 ---
 # <a name="microsoft-fasttrack"></a>Microsoft FastTrack 
 
@@ -39,12 +39,17 @@ FastTrack を開始するには、プロジェクトがライセンスの最少�
 
 Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワークスペースがプロビジョニングされた後、FastTrack チームは現在のプロジェクト チームに連絡してプロジェクトに参加し、プログラムに関する情報を提供します。 必要なアクションはありません。 LCS のユーザー情報が最新の状態であり、設定の電子メール アドレスが監視されていることを確認する必要があります。
 
-### <a name="tiered-services"></a>階層化されたサービス 
+| FastTrack プログラム | 収益 | 技術解説 | ワーク ショップ | ワークショップ の フォローアップ | 専用の FastTrack エンジニアリング リソース |
+| --- | --- | --- | --- | --- | --- |
+| **Dynamics 365 用 FastTrack** <br></br> **ビジネス プロセス アプリケーション** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | 調整後の連結年間売上高 が $300,000 またはそれ以上 | すべてを含める | すべてを含める | すべてを含める | 含む |
+| **FastTrack エッセンシャル** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | 調整後の連結年間売上高 が $300,000 以下 | すべてを含める | 本稼働前の評価 | 含まない | 含まない |
+| \* Core HR の機能のみ | | | | | |
 
-| シート数                                                                         | 技術解説 | ワーク ショップ     | 評価                  | 指定の FastTrack ソリューション アーキテクト | コミュニティ |
-|-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
-| 20-149 の、結合された適格なアプリケーションまたはプランユーザーのサブスクリプション ライセンス、または相当額      | ✓         | 使用不可 | 電子メールによる Go-Live 評価 | 使用不可                          | ✓         |
-| 150 以上の、結合された適格なアプリケーションまたはプランユーザーのサブスクリプション ライセンス、または相当額 | ✓         | ✓             | Go-Live 評価ワークショップ  | ✓                                      | ✓         |
+次のアプリケーションに関する FastTrack 対応については、今年の後半に発表します:
+
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Dynamics 365 Layout
 
 ### <a name="fasttrack-for-services"></a>サービスの FastTrack
 

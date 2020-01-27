@@ -3,7 +3,7 @@ title: ようこそメッセージの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce Web サイトにようこそメッセージを追加する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25a4e91646916b03c8a138fc713577f429ab633c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4e9deeeaf491b77700ba0833e429f05d376a4392
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697385"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914519"
 ---
 # <a name="add-a-welcome-message"></a>ようこそメッセージの追加
 
@@ -61,7 +61,9 @@ E コマース Web サイトのようこそメッセージは、訪問者に実�
 
 [サイト テーマの選択](select-site-theme.md)
 
-[お気に入りの追加](add-favicon.md)
+[CSS 上書きファイルの作業](css-override-files.md)
+
+[ファビコンの追加](add-favicon.md)
 
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
