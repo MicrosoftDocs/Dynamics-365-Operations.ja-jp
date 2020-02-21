@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 2ff2486beb362be9095ec335cc243bd808ccdeeb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8fda02ceeb0272feb5b894a0fba87e87d2da05f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183096"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033035"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 
@@ -43,7 +43,7 @@ ms.locfileid: "2183096"
 
 ## <a name="examples"></a>例
 
-```
+```xpp
 AtlCreatorCostGroup
 
 AtlCreatorCustomer
@@ -61,7 +61,7 @@ AtlCreatorCustomer
 
 ### <a name="example"></a>例
 
-```
+```xpp
 item = new AtlCreatorProductsReleasedVariant()
     .setItemId('DemoItem')
     .setColor(ecoResColor)

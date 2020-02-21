@@ -1,9 +1,9 @@
 ---
 title: モデルとパッケージ
-description: この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
-author: robadawy
+description: このトピックでは、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
+author: jorisdg
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,21 +14,21 @@ ms.search.scope: Operations
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdbce8062b5f45393bc25f532e7041ea3755825d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 40431da9e1624693f44242a1bd5debf59429d647
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812024"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030884"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
+このトピックでは、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
 
 モデル ストアのモデルを操作するには、Microsoft Visual Studio のツールを使用します。 新しいモデルを作成、および既存のモデルのパラメータを変更することができます。
 
@@ -42,6 +42,8 @@ ms.locfileid: "2812024"
 
 -   **固有のパッケージに配置されているモデル** - このタイプのモデルを使用して、新しいモデル要素を作成し、参照モデルのメタデータとビジネス ロジックを拡張することができます。 このウィザードでは、参照モデルを選択できます。 このタイプのモデルは、独自のアセンブリとバイナリにコンパイルされるため、一般的なアップグレード、展開、アプリケーション ライフサイクル管理のコストが削減され、簡素化されます。
 -   **既存のパッケージの一部であるモデル** - このタイプのモデルを使用して、ソース コードおよびメタデータのオーバーレイなどの高度なカスタマイズを実行することができます。
+
+**モデルの作成**ウィザードで、レイヤーの **usr** を選択します。 このレイヤーには、ユーザーのカスタマイズが保存されます。 必要に応じて、**usp** レイヤーを使用してカスタマイズをパッチできます。 異なるレイヤーに同じオブジェクトの複数のバージョンがある場合は、最上位のレイヤーが優先され、使用されます。
 
 **モデルの作成** ウィザードが完了したとき、新しいプロジェクトの作成を選択した場合、名前とその場所を指定するための入力を要求されます。
 
@@ -61,7 +63,7 @@ ms.locfileid: "2812024"
 ## <a name="viewing-package-dependencies"></a>パッケージの依存関係の表示
 どのパッケージとそのモデルに他のパッケージへの依存関係があるかを示す、グラフィック表現を作成することができます。 **Dynamics 365** メニューで、**モデル管理**をポイントし、**パッケージの依存関係の表示**をクリックします。 現在のパッケージとそのモデルについて、有向グラフ マークアップ言語 (DGML) 図が生成されます。 この図は、それぞれがパッケージを表す相互依存ノードの集合です。 各ノードでは、パッケージに属するすべてのモデルを表示します。 追加のツールは、強化または図を簡略化できます。 たとえば、コメントを追加したり、ノードをあちこちに移動したり、またはノードを削除できます。 また、次の手順で、単一モデルのパッケージ依存関係を表示することもできます。
 
-1.  アプリケーション エクスプローラーがモデル ビューになっていることを確認します。AOT ノードを右クリックし、モデル ビューを選択します。
+1.  アプリケーション エクスプローラーがモデル ビューになっていることを確認します。AOT ノードを右クリックし、**モデル ビュー**を選択します。
 2.  任意のモデルを右クリックし、**パッケージの依存関係を表示** > **送信参照を表示** を選択します。
 
 選択したモデルが依存するすべてのパッケージのグラフが生成されます。 
@@ -75,28 +77,27 @@ ms.locfileid: "2812024"
 
 次の手順では、ローカル モデル ストア フォルダーが C:\AOSService\PackagesLocalDirectory であり、モデルの名前が MyModel1 であると想定しています。
 
-モデルがそれ自身のパッケージに属している場合 (たとえば: パッケージに他のモデルがない拡張機能パッケージ):
-1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス
-2. パッケージ フォルダー  C:\AOSService\PackagesLocalDirectory\MyModel1 を削除します
-3. 手順 1 からサービスを再開
-4. Visual Studio を実行している場合、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)
-5. Visual Studio で、完全なデータベース同期を実行します (Visual Studio > Dynamics 365 > データベースの同期...)
+モデルが独自のパッケージに属している場合。 たとえば、パッケージに他のモデルが含まれていない拡張パッケージ。
 
-モデルが、複数のモデルを持つパッケージに属している場合 (MyModel1 がアプリケーション スイートにオーバーレイする場合など):
-1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス
-2. モデル フォルダー  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite) を削除します
-3. 手順 1 からサービスを再開
-4. Visual Studio で、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)
-5. Visual Studio で、削除したモデルが属しているパッケージをビルドします (Visual Studio > Dynamics 365 > モデルをビルド...)
-6. Visual Studio で、完全なデータベース同期を実行します (Visual Studio > Dynamics 365 > データベースの同期...)
+1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
+2. パッケージ フォルダー C:\AOSService\PackagesLocalDirectory\MyModel1 を削除します。
+3. 手順 1 で停止したサービスを再起動します。
+4. Visual Studio を実行している場合、モデルを更新します (**Visual Studio > Dynamics 365 > モデル管理 > モデルの更新**)
+5. Visual Studio で、完全なデータベース同期を実行します (**Visual Studio > Dynamics 365 > データベースの同期**)。
+
+モデルが複数のモデルを含むパッケージに属している場合。 たとえば、MyModel1 は、アプリケーションスイートをオーバーレイします。
+
+1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
+2. モデル フォルダー C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 を削除します。 この例の場合。 PackageName=ApplicationSuite。
+3. 手順 1 で停止したサービスを再起動します。
+4. Visual Studio で、モデルを更新します (**Visual Studio > Dynamics 365 > モデル管理 > モデルの更新**)。
+5. Visual Studio で、削除したモデルが属しているパッケージをビルドします (**Visual Studio > Dynamics 365 > モデルをビルド**)。
+6. Visual Studio で、完全なデータベース同期を実行します (**Visual Studio > Dynamics 365 > データベースの同期**)。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Visual Studio の開発ツール](development-tools-overview.md)
+[Visual Studioの開発ツール](development-tools-overview.md)
 
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 [モデルのエクスポートとインポート](models-export-import.md)
-
-
-

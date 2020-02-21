@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e2907cb7eb684bce1c09ed9171ed91ffd0acbdd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 412f0ae2efa3825791a1ea4412e7a6b09511b9f0
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183090"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030909"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -38,10 +38,10 @@ ms.locfileid: "2183090"
 テスト パラメーターを生成および編集するには、 Microsoft Excel をインストールする必要があります。 
 
 ### <a name="azure-devops"></a>Azure DevOps
-テスト ケース、テスト計画、およびテストケースの結果を保存および管理するには、 Azure DevOps プロジェクトが必要です。 Azure DevOps テスト管理者またはテスト計画ライセンスが必要です。 たとえば、 Visual Studio エンタープライズ サブスクリプションを所有している場合は、既にテスト計画に対するライセンスを取得しています。 詳細については、 [Azure DevOps の価格設定](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) を参照してください。
+テスト ケース、テスト計画、およびテストケースの結果を保存および管理するには、 Azure DevOps プロジェクトが必要です。 Azure DevOps テスト管理者またはテスト計画ライセンスが必要です。 たとえば、 Visual Studio エンタープライズ サブスクリプションを所有している場合は、既にテスト計画に対するライセンスを取得しています。 詳細については、 [Azure DevOps の価格設定](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) を参照してください。
 
 ### <a name="authentication-certificate"></a>認証証明書
-RSAT は、任意の Windows 10 コンピュータにインストールされ、Web ブラウザを介して環境にリモート接続するように設計されています。
+RSAT は、任意の Windows 10 コンピュータにインストールされ、Web ブラウザーを介して環境にリモート接続するように設計されています。
 
 ![クライアント コンピュータと環境](media/client-environment.png)
 
@@ -79,28 +79,33 @@ RSATを構成するには、右上の **設定** ボタンを選択します。
 #### <a name="azure-devops"></a>Azure DevOps
 Azure DevOps プロジェクトおよびテスト計画への接続をコンフィギュレーションします。
 
-+ **Azure DevOps URL** - これは、 Azure DevOps 組織のURLです。 たとえば、https://yourAzureDevOpsUrlHere.visualStudio.com。
-+ **アクセス トークン** - ツールが Azure DevOps に接続できるようにするアクセス トークン。 個人用アクセス トークンを作成するか、保存した既存のアクセス トークンを使用する必要があります。 詳細については、[個人用アクセス トークンを使用したアクセスの認証](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) を参照してください。 
++ **Azure DevOps URL** - これは、 Azure DevOps 組織のURLです。 たとえば、`https://yourAzureDevOpsUrlHere.visualStudio.com`。
++ **アクセス トークン** - ツールが Azure DevOps に接続できるようにするアクセス トークン。 個人用アクセス トークンを作成するか、保存した既存のアクセス トークンを使用する必要があります。 詳細については、[個人用アクセス トークンを使用したアクセスの認証](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) を参照してください。 
 + **プロジェクト名** - Azure DevOps プロジェクトの名前。 RSATでは、指定された Azure DevOps URLに基づいて、使用可能なプロジェクト名とテスト プランを自動的に検出します。 その後、テスト プロジェクトおよびテスト計画を選択できます。
-+ **テスト計画** - テスト ケースを含む Azure DevOps テスト計画 詳細については[テスト計画およびテスト スイートの作成](https://www.visualstudio.com/en-us/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan) を参照してください。 
++ **テスト計画** - テスト ケースを含む Azure DevOps テスト計画 詳細については[テスト計画およびテスト スイートの作成](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan) を参照してください。 
 
 **接続のテスト** を選択し、 Azure DevOps への接続をテストします。
 
 #### <a name="test-environment"></a>テスト環境
 テスト環境への接続をコンフィギュレーションします。
 
-+ **ホスト名** - テスト環境のホスト名。 たとえば、 <myaos>.cloudax.dynamics.comのようになります。 https:// または http:/ の接頭辞を含めないでください。
-+ **SOAP ホスト名** - テスト環境のSOAP ホスト名。 通常、SOAP ホスト名は、soapの接尾語が付いたホスト名と同じです。 たとえば、 <myaos>soap.cloudax.dynamics.comのようになります。 https:// または http:/ の接頭辞を含めないでください。
-+ **管理者ユーザー名** - テスト環境での管理者ユーザーの電子メール アドレス。
-+ **拇印**: 使用している認証証明書の拇印。
++ **ホスト名** – myhost.cloudax.dynamics.com. などのテスト環境のホスト名。 https:// または http:// の接頭語を含めないでください。
++ **SOAP ホスト名** – テスト環境の SOAP ホスト名。 通常は、ホスト名に **soap** の接尾語を追加する必要があります。 たとえば、ホスト名が myhost.cloudax.dynamics.com の場合は、myhost**soap**.cloudax.dynamics.com を SOAP ホスト名として使用します。
+
+    + テスト環境の SOAP ホスト名がわからない場合は、Infrastructure.SoapServicesUrl の AOS サーバーの web.config ファイルで検索できます。
+    + テスト環境が、リモート デスクトップ アクセスを持たないセルフサービス ユーザー受け入れテスト (UAT) または高レベル サンドボックス環境 (つまり、Azure Service Fabricインフラストラクチャ上で実行されている環境) である場合、その SOAP ホスト名はホスト名と一致します。
+
++ **管理者ユーザー名** ー テスト環境の管理者ユーザーの電子メール アドレス。
++ **拇印** – 使用している認証証明書の拇印。
+
     1. 新しい証明書を作成してインストールするには、 **新規** を選択します。 プロンプトが表示されたら .cer ファイルをどこかに配置して、記録用に保存します。
-    2. プロセスが完了すると、新しい証明書がローカル マシンの信頼されたルート ストアにインストールされます。
-        
+    2. プロセスが完了すると、新しい証明書がローカル マシンの信頼されたルート店舗にインストールされます。
+
         ![正常に作成されました。](media/thumbprint-certificate.png)
 
     3. 新しく作成された証明書の拇印が、このフォームに自動的に挿入されます。 この拇印をコピーし、次のセクションで使用して、接続を信頼するようにAOSをコンフィギュレーションします。
 
-+ **会社名** - Excel パラメーター ファイルの作成時に、既定の会社として使用する会社名を指定します。 後でExcelファイルを編集して変更できます。
++ **会社名** – Excel パラメーター ファイルの作成時に、既定の会社として使用する会社名を指定します。 後でExcelファイルを編集して変更できます。
 
 
 #### <a name="run-setting"></a>実行設定
@@ -114,11 +119,18 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 ### <a name="optional-settings"></a>オプション設定
 **オプション** タブを選択して、オプションの設定をコンフィギュレーションします。
 
-+ **テスト実行 プレフィックス** - RSATはテストの実行結果を Azure DevOps に報告します。 テストの実行には、次の規則: **<Run ID> <Prefix> <Test Suite>** に従って名前が付けられます。 この設定を使用して **<Prefix>** を設定します。
-+ **テスト実行 タイムアウト** - テストの実行のタイムアウト (分単位)。 このタイムアウトに達すると、すべてのアクティブなウィンドウは閉じられ、保留中のテスト ケースは失敗します。
-+ **テスト アクション タイムアウト** - 個々のテスト ステップのタイムアウト (分単位)。 テストステップがタイムアウトになると、テスト ケースは失敗します。
++ **テストの実行の接頭語** – RSATはテストの実行結果を Azure DevOps に報告します。 テストの実行には、次の規則に従って名前が付けられます。**\<実行 ID\> \<接頭語\> \<テスト スイート\>**。 この設定を使用して、**\<接頭語\>** を設定します。
++ **テストの実行タイムアウト** – テストの実行のタイムアウト (分単位)。 このタイムアウトに達すると、すべてのアクティブなウィンドウが閉じられ、保留中のテスト ケースは失敗します。
++ **テスト アクションのタイムアウト** – 個々のテスト ステップのタイムアウト (分単位)。 テストステップがタイムアウトになると、テスト ケースは失敗します。
++ **ステップ間の一時停止** – テストケースの自動実行中にテスト ステップ間で一時停止する秒数。 既定値は **0** (ゼロ) です。 監査または調査のために、テストの実行中に強制的に一時停止するには、この値を設定します。 テスト ケースの Excel パラメーター ファイルの**全般**タブにある、**ステップ間の一時停止 (秒)** パラメーターを変更することで、個々のテスト ケースに対して一時停止を指定することもできます。
++ **最初の検証エラーでテストに失敗** – 既定では、テスト ケースに複数の検証ステップがあり、検証に失敗した場合は、最初の失敗が発生するとテスト ケースの実行が停止します。 テスト ケースは失敗としてマークされます。 すべての検証が完了するまでテスト ケースを実行する場合は、このオプションをオフにします。 その後、テスト ケースですべての検証を評価できます。
++ **失敗時にテスト スイートの実行を中止する** – 既定では、いずれかのテスト ケースが失敗した場合でもテスト スイートの実行が続行されます。 このオプションを **True** に設定すると、テスト ケースが失敗した場合にテストの実行が中止されます。 残りのすべてのテスト ケースのステータスは**未実行**になります。
++ **クラウド プロバイダー** – テスト環境のクラウド テナントのプロバイダーを選択します。 サポートされているプロバイダーは、**グローバル** (パブリッククラウド) および**中国** (主権クラウド) です。
 
-### <a name="configure-the-aos-machine-to-trust-the-connection"></a>接続を信頼するように AOS マシンを構成する
+### <a name="configure-the-test-environment-to-trust-the-connection"></a>接続を信頼するようにテスト環境を構成する
+
+#### <a name="if-your-aos-allows-for-remote-desktop-connections"></a>AOS がリモート デスクトップ接続を許可している場合
+
 証明書を作成した後、テスト自動化接続を信頼するよう AOS をコンフィギュレーションします。 マルチAOS環境では、すべてのAOSマシンに対して次の手順を繰り返します。
 
 1.  AOSマシンへのリモート デスクトップ接続を開きます。
@@ -133,22 +145,34 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 
 5.  次の例に示すように、新しい機関のエントリを追加して、 **wif.config** ファイルを更新します。 機関名に **127.0.0.1** を使用し、証明書の拇印を貼り付けます。
 
-```
-<issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
+    ```xml
+    <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
         <authority name="CN=127.0.0.1">
-          <keys>
-            <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
-          </keys>
-             <validIssuers>
-            <add name="CN=127.0.0.1" />
-          </validIssuers>
+            <keys>
+                <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
+            </keys>
+                <validIssuers>
+                    <add name="CN=127.0.0.1" />
+                </validIssuers>
         </authority>
-```
+    ```
 
-## <a name="installation-on-multiple-machines"></a>複数のマシンへのインストール
-複数のコンピューターにRSATをインストールする場合は、RSATインストールごとに新しい証明書を生成する必要があります。 証明書を生成し、RSATと同じコンピューターにインストールする必要があります。 RSATがインストールされている複数のクライアントからの接続をAOSに信頼させる場合、AOS wif.config ファイルに複数の拇印エントリを含めることができます。 次の例は、複数の拇印ノードを示しています。
+#### <a name="if-you-have-no-remote-desktop-access-to-the-server"></a>サーバーへのリモート デスクトップ アクセス権がない場合
 
-```
+テスト環境でリモート デスクトップ アクセスが許可されていない場合は、次の手順に従って、RSAT 接続を信頼するように環境を構成します。 たとえば、セルフ サービス UAT またはそれ以上のサンドボックス環境 (つまり、 Service Fabric インフラストラクチャ上で実行されている環境) では、リモート デスクトップ アクセスが許可されない場合があります。
+
+1. このトピックで前述されているように、RSAT の設定ダイアログ ボックスの**新規**ボタンを使用して、RSAT 認証証明書を作成します。
+2. サポート要求を開き、サポート エンジニアに次の情報を提供します。
+
+    - 環境 ID (Microsoft Dynamics Lifecycle Services \[LCS\] の環境ページでこの ID を確認できます。)
+    - RSAT によって生成された .cer ファイル
+    - サンドボックス環境で許容できるダウンタイム ウィンドウ (ダウンタイムは分単位で表されます。)
+
+### <a name="installation-of-rsat-on-multiple-computers"></a>複数のコンピューターへの RSAT のインストール
+
+テスト環境は、複数の RSAT 接続を信頼するように構成することができます。 複数のコンピューターに RSAT をインストールする場合は、各 RSAT のインストールに対して新しい証明書を生成する必要があります。 証明書を生成し、RSATと同じコンピューターにインストールする必要があります。 RSATがインストールされている複数のクライアントからの接続をAOSに信頼させる場合、AOS wif.config ファイルに複数の拇印エントリを含めることができます。 次の例は、複数の拇印ノードを示しています。
+
+```xml
 <keys>
     <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
     <add thumbprint="bbbbbbbbbbbbbbxxxxxxxxxxxxxxxxxxxx999999" />
@@ -158,12 +182,12 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 ## <a name="install-selenium-drivers"></a>Selenium ドライバーのインストール
 
 Selenium ドライバーを手動でインストールするには、次の手順に従います。
-1. [Selenium 3.13.1](http://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip) をダウンロードします。 または、 http://docs.seleniumhq.org/download に移動し、 **以前のリリース** をクリックします。 **3.13** を選択して、 **selenium-dotnet-strongnamed-3.13.1.zip** をダウンロードします。
+1. [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip) をダウンロードします。 または、 https://docs.seleniumhq.org/download に移動し、 **以前のリリース** をクリックします。 **3.13** を選択して、 **selenium-dotnet-strongnamed-3.13.1.zip** をダウンロードします。
 2. Selenium ライブラリをインストールします:
     + ダウンロード ファイルを解凍します。 
     + ファイル **dist\Selenium.WebDriver.StrongNamed.3.13.1.nupkg** を展開します。 このファイルを展開するには、ファイルに .zip拡張子を追加して、解凍します。 
     + **Selenium.WebDriver.StrongNamed.3.13.1.nupkg\lib** という名前のフォルダーの内容を **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** にコピーします。
-3.  [Internet Explorer ドライバー バージョン 3.4.0](http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip) をダウンロードします。 または、ブラウザーに戻り、 **3.4** フォルダを開いて、 **IEDriverServer_x64_3.4.0.zip** をダウンロードします。
+3.  [Internet Explorer ドライバー バージョン 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip) をダウンロードします。 または、ブラウザーに戻り、 **3.4** フォルダを開いて、 **IEDriverServer_x64_3.4.0.zip** をダウンロードします。
 4.  ダウンロードしたファイルを解凍し、その内容を **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** に移動します。
 
 Google Chromeをブラウザーとして使用するには、次の手順を実行します:
@@ -175,7 +199,7 @@ Google Chromeをブラウザーとして使用するには、次の手順を実�
 
 必要に応じて、RSAT認証証明書を手動で構成することができます。
 
-このプロセスに精通していない場合は、システム管理者に問い合わせてください。 Windows キットがコンピューターにインストールされていることを確認してください。 Windows キットがマシンにインストールされていない場合は、 [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) から Windows 10 SDKをダウンロードできます。 このドキュメントで説明されている手順には、これらのコンポーネントが必要です。
+このプロセスに精通していない場合は、システム管理者に問い合わせてください。 Windows キットがコンピューターにインストールされていることを確認してください。 Windows キットがマシンにインストールされていない場合は、 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) から Windows 10 SDKをダウンロードできます。 このドキュメントで説明されている手順には、これらのコンポーネントが必要です。
 
 + デスクトップ アプリ用の Windows SDK 署名ツール
 + UWP マネージド アプリ用のWindows SDK。
@@ -187,13 +211,13 @@ RSAT クライアント コンピュータで証明書ファイルを生成す�
 2. 管理者としてコマンド ライン ウィンドウを開きます。
 3. Windows SDKをインストールしたフォルダに移動します。 正確なフォルダは、Windows SDKをインストールした場所によって異なる場合があります。 Windows キット 8.1を使用することもできます。
 
-    ```
+    ```Console
     cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
     ```
 
 4. 次のコマンドを実行します。 秘密キー パスワードを要求するプロンプトが表示されたら、 **なし** を入力します。 
 
-    ```
+    ```Console
     makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
     ````
 
@@ -207,6 +231,6 @@ RSAT クライアント コンピュータで証明書ファイルを生成す�
 4. **パスワード** フィールドは空白のままにします。
 5. **証明書** ダイアログ ボックスで、 **詳細** を参照し、 **拇印** を探します。
 
-    ![拇印の一覧が表示された証明書ダイアログ](media/certificate-dialog.png)
+    ![拇印の一覧を示す証明書ダイアログ](media/certificate-dialog.png)
  
 6. 拇印をコピーして保存します。 このトピックで前述されているように、AOS をコンフィギュレーションする必要があります。

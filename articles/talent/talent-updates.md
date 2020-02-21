@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: a41a1b6fc0e3fc95aa83c40aad7b7994f3b7c0cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 4aca90cf91587168a51a0cfdee5fe61f92de0e6b
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897961"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031056"
 ---
 # <a name="talent-updates"></a>人材の更新
 
@@ -30,7 +30,7 @@ Microsoft Dynamics 365 Talent は、継続的な自動サービス更新を提�
 
 ## <a name="update-policy"></a>更新ポリシー
 
-更新はすべての環境に対して一定の調子でリリースされます。 Talent は、[Microsoft Lifecycle ポリシー](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy)に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。
+更新はすべての環境に対して一定の調子でリリースされます。 Talent は、[Microsoft Lifecycle ポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。
 
 ## <a name="release-cadence"></a>リリースの頻度
 
@@ -81,7 +81,7 @@ Talent の更新は、すべての環境に自動的に適用されます。 Tal
 
 Talent の作業の内容と、次の場所でリリースされた機能について検索できます:
 
-- [Dynamics 365 Talent ロードマップ](https://dynamics.microsoft.com/en-us/roadmap/talent/)
+- [Dynamics 365 Talent ロードマップ](https://dynamics.microsoft.com/roadmap/talent/)
 
 - [Dynamics 365 リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/)
 

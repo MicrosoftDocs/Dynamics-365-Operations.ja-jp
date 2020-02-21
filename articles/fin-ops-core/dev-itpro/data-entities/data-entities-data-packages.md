@@ -1,9 +1,9 @@
 ---
 title: データ管理の概要
-description: このトピックでは、Finance and Operations のデータの管理に関する情報を提供します。
+description: このトピックでは、Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9bb7df83ec7501e5e5df5580d1e4bd31e00af57
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4a0f92becd5a91cca7a70e8ad4b5786eeb68f54e
+ms.sourcegitcommit: c0929ebda9dfb7affe2a187336abf980ce2009a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772426"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "2994154"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -241,7 +241,7 @@ ms.locfileid: "2772426"
 ### <a name="export-process-troubleshooting"></a>プロセス トラブルシューティングをエキスポート
 - エクスポート プロセス中にエラーが発生した場合、**実行ログの表示**をクリックし、ログのテキスト、ステージング ログ詳細、詳細情報の情報ログをを確認します。
 - エクスポート プロセス中にエラーが発生し、ステージングをスキップするように指示ノートが表示された場合、**ステージングをスキップ** オプションをオフにし、エンティティを追加します。 複数のデータ エンティティをエクスポートする場合は、個々のデータ エンティティに対して**ステージングのスキップ**ボタンを使用できます。
-- プラットフォーム更新プログラム 31 以前では、エクスポート処理により処理可能なファイル サイズには 256 MB の制限がありました。 エクスポートされるレコード数が多い場合、生成されるファイル サイズがこの制限を超えないようにします。 このようなシナリオを処理するための別の方法は、データのサブセットのみをエクスポートするようエンティティでフィルターを使用することです。 現実的ではない場合、ソリューション全体で自分のデータベースの持ち込みを考慮する必要があります。 この制限は、プラットフォーム更新プログラム 31 以降では存在しません。
+- プラットフォーム更新プログラム 32 以前では、エクスポート処理により処理可能なファイル サイズには 256 MB の制限がありました。 エクスポートされるレコード数が多い場合、生成されるファイル サイズがこの制限を超えないようにします。 このようなシナリオを処理するための別の方法は、データのサブセットのみをエクスポートするようエンティティでフィルターを使用することです。 現実的ではない場合、ソリューション全体で自分のデータベースの持ち込みを考慮する必要があります。 この制限は、プラットフォーム更新プログラム 32 以降では存在しません。
 
 ### <a name="import-process-troubleshooting"></a>プロセス トラブルシューティングのインポート
 データ エンティティ ファイルをアップロードするとき、次の操作を行います。

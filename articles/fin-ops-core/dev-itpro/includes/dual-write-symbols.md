@@ -18,4 +18,4 @@
 
 ### <a name="default-values"></a>既定値
 
-Finance and Operations や その他の Dynamics 365 テーブルに 同期されたフィールドが存在しない場合は、同期されたテーブルに既定の値が割り当てられます。 場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。 たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write-customer.md#customers-v3-to-contacts) の既定値は **3** です。 共通データモデルでは、 [address1AddressTypeCode](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。 
+同期されたフィールドが Finance and Operations テーブルやその他の Dynamics 365 テーブルのいずれかに存在しない場合は、同期されたテーブルに既定の値が割り当てられます。 場合によっては、デフォルト値は、共通データモデル内の属性値へのルックアップである整数となります。 たとえば、共通データモデル の 取引先担当者 テーブルでは、 [**address1_addresstypecode**](../data-entities/dual-write/customer-mapping.md#customers-v3-to-contacts) の既定値は **3** です。 共通データモデルでは、 [address1AddressTypeCode](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/contact#address1AddressTypeCode) に対する **3** の値は **プライマリー アドレス** です。 

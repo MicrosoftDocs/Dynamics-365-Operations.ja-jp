@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 78eae2e0241bdde551964411b4b101491426d0e2
-ms.sourcegitcommit: 9bc94ef205aab58cea4a6a4453434e7ed2f3eb9a
+ms.openlocfilehash: 062317ad379347194debd412bdea7e880a696697
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774387"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003607"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -56,9 +56,9 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 - **マージ済パッケージ** – 各タイプの 1 つのパッケージを組み合わせて作成されたパッケージ。 たとえば、1 つのバイナリ更新パッケージと 1 つの AOT パッケージ、または 1 つの AOT パッケージと 1 つの小売展開可能パッケージを結合することができます。 パッケージは、LCS のプロジェクトのアセット ライブラリでマージされます。
 > [!NOTE] 
 > バイナリ パッケージおよび小売展開可能パッケージは、同じ結合済パッケージにまとめることはできません。
-
+>
 > LCS から更新をダウンロードする方法と、環境のバージョンに基づくタイルに表示される内容については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
-
+>
 > 環境がアプリケーション バージョン 8.1 以上の場合、**プラットフォーム更新パッケージ**は環境に適用されません。 8.1 以降のリリースでは、**アプリケーションおよびプラットフォームのバイナリ更新パッケージ**は、アプリケーションとプラットフォームが 1 つの累積的なパッケージにまとめられ、Microsoft によってリリースされてから適用されます。 細かい X++ 修正プログラムを適用する必要はなくなり、すべてのアプリケーションとプラットフォーム更新がまとめて取得される点にも注意してください。 つまり、環境の詳細ページで**詳細バージョン情報を表示**をクリックしても、細かい修正プログラムまたは KB に関する詳細情報が表示されません。適用する方法がないからです。 
 
 ## <a name="prerequisite-steps"></a>前提条件のステップ
@@ -111,17 +111,17 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 パッケージの配置に失敗した場合は [パッケージ アプリケーションに関する問題のトラブルシューティング](deployable-package-troubleshooting.md) のトピックを参照してください。
 
-## <a name="applying-retail-updates-and-extensions"></a>小売用の更新および拡張機能を適用する
+## <a name="applying-updates-and-extensions"></a>更新と拡張機能の適用
 
-アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Retail Cloud Scale Unit を初期化した場合は、Retail チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
+アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Cloud Scale Unit を初期化した場合は、コマース チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
 
-環境内で更新プログラムと拡張機能を適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md)を参照してください。
+コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md)を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 
 配置可能パッケージ、runbooks、および AXUpdateInstaller は、更新プログラムの適用に使用するツールです。 
 
-**配置可能パッケージ** - 配置可能パッケージとは、環境に適用できる配置の単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 LCS からダウンロードした、または開発環境で作成した配置可能なパッケージは、製品タイプ間では適用できません。 たとえば、Finance の展開可能なパッケージは Retail アプリ環境に適用することができず、その逆も同様です。 Retail アプリと互換性のある Finance and Operations アプリの既存のカスタマイズを持ち、それを Retail 環境に適用する場合、Retail 開発環境でソース コードを再パッケージする必要があり、逆の方向に移動させている場合は逆コンパイルする必要があります。   
+**配置可能パッケージ** - 配置可能パッケージとは、環境に適用できる配置の単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 LCS からダウンロードした、または開発環境で作成した配置可能なパッケージは、製品タイプ間では適用できません。 たとえば、Finance の展開可能なパッケージはコマース アプリ環境に適用することができず、その逆も同様です。 コマース アプリと互換性のある Finance and Operations アプリの既存のカスタマイズを持ち、それをコマース 環境に適用する場合、コマース 開発環境でソース コードを再パッケージする必要があり、逆の方向に移動させている場合は逆コンパイルする必要があります。   
 
 [![配置可能なパッケージの例](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 

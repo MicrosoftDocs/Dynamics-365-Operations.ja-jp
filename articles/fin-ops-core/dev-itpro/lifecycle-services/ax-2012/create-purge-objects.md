@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1df58ecd96d72c17095f71b25d5ac321888cb05c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: efab1b7230fc73587155c33e34d694402b439081
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183264"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983752"
 ---
 # <a name="create-purge-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework の削除オブジェクトの作成
 
@@ -51,7 +51,7 @@ ms.locfileid: "2183264"
 -   実稼働環境テスト環境でのデータベースとアプリケーションには、削除の影響を十分にテストします。運用環境に似たテスト環境でデータベースとアプリケーションに対するパージの影響を完全にテストします。 すべての業務プロセスをテストし、実稼働環境に削除オブジェクトを実装する前にユーザーの承認を得ます。
 -   IDMF に含まれている削除テンプレートから削除オブジェクトを作成するときは、テスト環境で、削除オブジェクトを検証して徹底的にテストします。 これらのテンプレートは標準の Microsoft Dynamics AX アプリケーションで作成され、実装と一致しない場合があります。 検出プロセスを使用して独自の削除オブジェクトまたはアーカイブ オブジェクトを作成し、適合しているテンプレートを使用できる場合は、プロセスそれらのオブジェクトをそのテンプレートと比較することをお勧めします。 探索プロセスで作成したオブジェクトとテンプレートの違いを慎重に分析し、その違いの原因を特定します。 要件に合わせるために、削除オブジェクトとアーカイブ オブジェクトの関係およびルールを手動で追加または削除します。
 -   検出プロセスで関連するすべてのテーブルを取得できるように、TableGroup プロパティが Microsoft Dynamics AX ですべてのカスタム テーブルに対して設定されていることを確認します。
--   アプリケーション オブジェクト ツリー (AOT) でのテーブルの追加、削除、更新や、IDMF を使った Microsoft Dynamics AX メタデータでのデータ ディクショナリ同期など、変更を同期します。 メタデータを同期するため、インストール後の作業を実行します。 詳細については、[データ管理フレームワークのインストール ガイド](http://www.microsoft.com/download/details.aspx?id=16111) の「インストール後の作業」セクションを参照してください。
+-   アプリケーション オブジェクト ツリー (AOT) でのテーブルの追加、削除、更新や、IDMF を使った Microsoft Dynamics AX メタデータでのデータ ディクショナリ同期など、変更を同期します。 メタデータを同期するため、インストール後の作業を実行します。 詳細については、[データ管理フレームワークのインストール ガイド](https://www.microsoft.com/download/details.aspx?id=16111) の「インストール後の作業」セクションを参照してください。
 
 | **注意**                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|

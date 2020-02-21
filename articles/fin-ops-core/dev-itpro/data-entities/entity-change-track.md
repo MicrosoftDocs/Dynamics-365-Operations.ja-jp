@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49c7ae3cb5a6d674ef8716ef322fcc631016f5b0
-ms.sourcegitcommit: 8a9d711b029894448478afbc282cd4ca071cb1bc
+ms.openlocfilehash: 95fa54c109daa5aa100e2fc77018c6f6783a8818
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853825"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029428"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
@@ -61,7 +61,7 @@ ms.locfileid: "2853825"
 - クエリの一部であるテーブルの変更進捗管理を有効にする必要があります。
 - エンティティと変更追跡クエリ (ルート テーブル上) との間に結合を作成し、エンティティ内で変更されたレコードを判断します。
 
-```
+```xpp
 public static Query defaultCTQuery()
     {
         Query q;

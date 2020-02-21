@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1307987f98900e27a35e92b8fa16988a77c262db
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 505b0f6452bc70aafef3bd7cdac506faa1288fc4
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183432"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029439"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
@@ -116,7 +116,7 @@ ms.locfileid: "2183432"
     > [!NOTE]
     > **サーバー**キーワードが必要です。
 
-    ```
+    ```xpp
     private static server str formatNameAndAddress()   // X++
     {
         DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
@@ -169,7 +169,7 @@ ms.locfileid: "2183432"
 4. **FMCustomerEntity** デザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
 5. 次の X++ コードを **postLoad** オーバーライドに貼り付けます。 **postLoad** メソッドが **void** を返すことに注意します。
 
-    ```
+    ```xpp
     public void postLoad()
     {
         super();
@@ -187,7 +187,7 @@ ms.locfileid: "2183432"
 1. **FMCustomerEntity** のデザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。
 2. 次の X++ コードを **mapEntityToDataSource** メソッドに貼り付けます。
 
-    ```
+    ```xpp
     public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
     {
         super(entityCtx, dataSourceCtx);
@@ -210,7 +210,7 @@ ms.locfileid: "2183432"
 1. この例では、**フリート管理 (移行済)** というデータ セットがあることを確認します。 データ セットはブラウザーのダッシュボードから利用できます。 右上隅にあるメニュー アイコンをクリックし、**アプリのリンク** メニューをクリックしてスクロールし、**フリート管理 (移行)** という名前のデータセットを見つけます
 2. 次の X++ コードをプロジェクトのスタートアップ オブジェクトに貼り付けます。 プロジェクトを実行します。
 
-    ```
+    ```xpp
     public static void main(Args _args)   // X++
     {
         FMCustomerEntity customer;

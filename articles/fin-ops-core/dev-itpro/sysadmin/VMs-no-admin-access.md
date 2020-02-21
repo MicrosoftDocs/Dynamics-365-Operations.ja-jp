@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 6284de23e456078a2af8fb57ffc83368ead5fd50
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7132cc3a84d0a0a92cd6a1c67cedff12684def36
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811947"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029382"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -72,11 +72,13 @@ IIS Express および Finance and Operations Visual Studio プロジェクトで
 ## <a name="is-the-admin-user-provisioning-tool-supported"></a>管理者ユーザー プロビジョニング ツールはサポートされますか?
 **管理者ユーザー プロビジョニング** ツールを使用するには現在、ユーザーが管理者である必要があります。 **管理者ユーザー プロビジョニング** ツールは通常、環境のテナントを変更するために使用され、必要ありません。 管理者ユーザーまたは他のユーザーのデータベースで情報を更新またはサインインすることができます。 この環境または同じテナントの別の環境にアクセスできるユーザーからの SID およびネットワーク エイリアス (電子メール アドレスなど) のみ必要です。 多くの場合、SID とネットワーク エイリアスは当初の環境に付属していたデータベースにあります。 次のコマンドを実行してソース環境から適切な SID とネットワーク エイリアスを取得し、それぞれ対象の環境で更新します。
 
-    -- get value from source env.
-    select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
+```Console
+-- get value from source env.
+select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
 
-    -- update value in target env.
-    update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+-- update value in target env.
+update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+```
 
 ## <a name="can-the-system-be-put-into-maintenance-mode"></a>システムをメンテナンス モードにすることはできますか。
 システムをメンテナンス モードにしてライセンス コンフィギュレーションを変更することができます。 ただし、[メンテナンス モード](maintenance-mode.md) に記載されている手順はサポートされていません。 すべての環境におけるメンテナンス モードのセルフ サービス サポートが将来 LCS に追加されます。 このサポートが LCS で利用可能になるまで、以下の手順に従ってシステムをメンテナンス モードにすることができます。
@@ -84,7 +86,7 @@ IIS Express および Finance and Operations Visual Studio プロジェクトで
 1. 開発者のマシンに RDP の接続を確立します。
 2. 開発者のマシンで、LCS から axdbadmin ユーザーの資格情報を使用して SQL Server にサインインします。 次に、AXDB データベースに切り替えて、次のコマンドを実行します。
 
-    ```
+    ```Console
     update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
     ```
 
@@ -108,5 +110,5 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 
 [開発環境またはデモ環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
-## <a name="what-do-i-need-to-know-if-i-am-developing-for-retail"></a>Retail の開発をしている場合、何を把握する必要がありますか。
-Dynamics 365 Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。
+## <a name="what-do-i-need-to-know-if-i-am-developing-for-commerce"></a>コマースの開発をしている場合、何を把握する必要がありますか。
+Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。

@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: d3641b663a5b721604a119a259ad0d5e03e11ccc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 431e9afbd07c2f78d81ee56845c7dcb25923b1bd
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812114"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003598"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、付加価値再販業者 (VAR) や、さらには一部の顧客によって大幅にカスタマイズされます。 製品をカスタマイズする機能は、アプリケーション コードのオーバーレイによって長くサポートされてきた強みです。 クラウドへの移行を、柔軟なサービスの提供や頻繁な更新と合わせて行う場合、更新がカスタム ソリューションに及ぼす影響を小さくとどめるため、侵入性の低いカスタマイズが必要となります。 この新しいモデルは *拡張性* と呼ばれており、オーバーレイによるカスタマイズに取って代わる存在となりました。
+Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー、付加価値再販業者 (VAR) や、さらには一部の顧客によって大幅にカスタマイズされます。 製品をカスタマイズする機能は、アプリケーション コードのオーバーレイによって長くサポートされてきた強みです。 クラウドへの移行を、柔軟なサービスの提供や頻繁な更新と合わせて行う場合、更新がカスタム ソリューションに及ぼす影響を小さくとどめるため、侵入性の低いカスタマイズが必要となります。 この新しいモデルは *拡張性* と呼ばれており、オーバーレイによるカスタマイズに取って代わる存在となりました。
 
-拡張性は、Finance、Supply Chain、および Retail における唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
+拡張性は、Finance、Supply Chain、およびコマースにおける唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
 
 ## <a name="introduction"></a>はじめに
 
@@ -78,7 +78,7 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 + [デリゲートを使用してアプリケーション起動をカスタマイズする](startup-customizations.md)
 
 ### <a name="tables"></a>テーブル
-+ [拡張機能を使用したテーブル内の既存のフィールドの変更(modify-existing-field.md)
++ [拡張機能を使用したテーブル内の既存のフィールドの変更](modify-existing-field.md)
 + [拡張機能を使用してテーブルにフィールドを追加](add-field-extension.md)
 + [拡張機能を使用してテーブルにインデックスを追加](add-index.md)
 + [拡張機能を使用してテーブルに関係を追加](add-relation.md)
@@ -93,25 +93,23 @@ Dynamics 365 Finance、Supply Chain、および Retail は、パートナー、�
 
 ### <a name="others"></a>その他
 + [選択したデータ型の小数点以下の精度の拡張](decimal-point-precision.md)
++ [拡張機能を通じた新しい在庫分析コードの追加](inventory-dimensions.md)
 
 ### <a name="reports"></a>レポート
-+ [電子申告 (ER) 関数の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
++ [電子申告 (ER) 機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
 + [拡張機能を使用してアプリケーション スイート レポートをカスタマイズする](../analytics/customize-app-suite-reports-with-extensions.md)
 
 ### <a name="blog-posts"></a>ブログの投稿
 
 カスタマイズに関する情報は、さまざまなトピックが取り上げられるブログでも共有されます。 このセクションには、そのようなブログの一部への参照が含まれています。
 
-+ [Dynamics 365 for Finance and Operations の拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
-+ [クラスの状態の機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
-+ [拡張メソッド](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
++ [Dynamics 365 for Finance and Operations の拡張](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extending-dynamics-365-for-operations)
++ [拡張メソッド](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-extension-methods/)
 + [拡張可能な基本列挙型](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
-+ [静的イベント サブスクリプション](https://blogs.msdn.microsoft.com/mfp/2015/12/10/x-in-ax7-static-event-subscription/)
-+ [デリゲートを通じての応答](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
-+ [onValidatingWrite へのサブスクライブ](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
-+ [在庫分析コードの機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
++ [静的イベント サブスクリプション](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
++ [onValidatingWrite へのサブスクライブ](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
 + [Dynamics 365 for Finance and Operations での拡張機能のご要望を採用します。](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
-+ [拡張可能な X++ - メソッドの署名](https://blogs.msdn.microsoft.com/mfp/2017/08/31/extensible-x-method-signatures/)
++ [拡張可能な X++ - メソッドの署名](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
 ## <a name="how-do-i-create-an-extensible-solution"></a>拡張可能なソリューションを作成するには
 

@@ -14,15 +14,15 @@ ms.search.scope: AX 2012
 ms.custom: 19021
 ms.assetid: 409386b2-98c8-44a7-be6f-252f8a21f819
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3387b3221fb8f2817d63107778877ec8661dd63b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d9d5a175ef5f30e09656614a61cd43e54ffa23be
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183262"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983751"
 ---
 # <a name="customization-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のカスタマイズ分析
 
@@ -33,7 +33,7 @@ Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテー
 <a name="prerequisites"></a>必要条件
 -------------
 
-Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があります。 モデル ファイルの詳細については、「[方法: モデルのエクスポートおよびインポート](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。
+Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があります。 モデル ファイルの詳細については、「[方法: モデルのエクスポートおよびインポート](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。
 
 ## <a name="getting-started"></a>はじめに
 カスタマイズ分析を使用するには、モデル ファイルをアップロードし、レポートを評価して、どのように変更するかを判断する必要があります。
@@ -66,7 +66,7 @@ Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があ�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[Microsoft Dynamics AX 開発のベスト プラクティス](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)
+[Microsoft Dynamics AX 開発のベスト プラクティス](https://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)
 
 
 

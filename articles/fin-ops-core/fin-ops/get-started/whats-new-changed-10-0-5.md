@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
+title: Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能と変更点
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.5 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1eed88ae1ebe63f9536498a64dd2f5643c58356
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 5af3b4d95985b61f488f3b7b61a770201c1751dc
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885937"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031005"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能と変更点
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.5 を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.197 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 バージョン 10.0.5 の詳細については [追加リソース](whats-new-changed-10-0-5.md#additional-resources) を参照してください。
+このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management を含む Finance and Operations アプリ バージョン 10.0.5 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.197 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 バージョン 10.0.5 の詳細については [追加リソース](whats-new-changed-10-0-5.md#additional-resources) を参照してください。
 
 
-最新のリリースの Dynamics 365 Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.5 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5) を参照してください。
+最新のリリースの Dynamics 365 Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.5 の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5) を参照してください。
 
 
 ## <a name="revenue-recognition"></a>収益認識
@@ -72,7 +72,7 @@ ms.locfileid: "2885937"
 
 通貨の性別を定義できるようになりました。 **通貨** ページで **Declension** を選択します。 **性別** フィールドで、**Masculine**、**Feminine**、または **Neuter** を選択します。 このパラメーターは、キャッシュ注文で現地の言語でテキストで書き込まれた金額のdeclensionに影響を与える可能性があります。 たとえば、金額 1,01 ユーロが英語の文字で、キャッシュオーダー上に *One euro 01 cent* として記載されている場合、**Neuter** として **性別** を設定すると、この金額がチェコ語に翻訳され、、*Edno euro 01 cent* として記載されます。
 
-既存の機能の詳細については、[「レポートおよびドキュメント上の金額の表示方法の更新」](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-amount-printing-forms)を参照してください。
+既存の機能の詳細については、[「レポートおよびドキュメント上の金額の表示方法の更新」](https://docs.microsoft.com/dynamics365/finance/localizations/emea-amount-printing-forms)を参照してください。
 
 ## <a name="cash-control-public-sector"></a>現金管理 (公的部門)
 
@@ -87,7 +87,7 @@ ms.locfileid: "2885937"
 ## <a name="deferred-put"></a>繰延プット
 繰延処理機能では、入力操作がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーが処理時間の増加をアドホックまたは計画外でおこない、増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
-詳細については、[倉庫作業の遅延処理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)を参照してください。
+詳細については、[倉庫作業の遅延処理](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)を参照してください。
 
 ## <a name="journal-unlock"></a>仕訳帳をロック解除する
 仕訳帳ページの新しいボタンを使用して、**システムによってロック済み** のステータスに設定されている仕訳帳のロックを「はい」に設定することでロック解除することができます。 このロック解除は、実行しているバッチジョブを分析したシステム管理者が実行でき、この仕訳帳がバッチジョブによって積極的に処理されなくなったことを確認します。 このボタンは、**機能管理** ページにある **仕訳帳のロック解除** ボタンで有効にできます。
@@ -98,7 +98,7 @@ ms.locfileid: "2885937"
 バージョン 10.0.5 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e) を参照してください。
 
 ### <a name="platform-update-29"></a>プラットフォーム update 29
-バージョン 10.0.5 には、プラットフォーム更新プログラム 29 が含まれています。 プラットフォーム更新プロフラム 29 についての詳細は、 [Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能や変更 を参照してください](whats-new-platform-update-29.md)。
+バージョン 10.0.5 には、プラットフォーム更新プログラム 29 が含まれています。 プラットフォーム更新プログラム 29 についての詳細は、[Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能と変更点](whats-new-platform-update-29.md)を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -106,11 +106,11 @@ ms.locfileid: "2885937"
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

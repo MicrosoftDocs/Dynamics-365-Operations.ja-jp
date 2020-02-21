@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 832c4121be697a2a30eb8a47628b8775ce634b2d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 46fa4009f0a7ada51535fefa49c7a132ddead8b2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812122"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029393"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -89,7 +89,7 @@ Visio ファイルを表示またはアップロードするには、次の手�
 
     この場合、**プロセスの手順**フィールドに次のテキストを入力します。
 
-    ```
+    ```Text
     Step 1
     =SubStep 1.1
     =SubStep 1.2

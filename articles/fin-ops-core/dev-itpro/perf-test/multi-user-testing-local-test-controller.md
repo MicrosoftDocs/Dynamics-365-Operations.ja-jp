@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77948279be8efc09a8de4636dd33a183e0b010e2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: ac3819ffbc8fabeeb76bfac5011df2a0bc9b84b3
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812036"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029390"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 
@@ -51,7 +51,7 @@ ms.locfileid: "2812036"
 
 2. **TestRoot** という名前の環境変数を作成し、Microsoft Windows PowerShell で次のコマンドレットを実行して **PerfSDK** フォルダーをポイントします。
 
-    ```
+    ```Console
     [ENVIRONMENT]::SETENVIRONMENTVARIABLE("TESTROOT", "K:\PERFSDK\PERFSDKLOCALDIRECTORY", "USER")
     ```
 
@@ -61,7 +61,7 @@ ms.locfileid: "2812036"
     
 3. 管理者として **コマンド プロンプト** ウィンドウを開き、次のコマンドを入力して必要な証明書を生成してインストールします。 プライベート キーのパスワードを要求するメッセージが表示されたら、**なし** を選択します。
 
-    ```
+    ```Console
     "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
     "c:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk c:\temp\authCert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
@@ -88,7 +88,7 @@ ms.locfileid: "2812036"
 
 6. 以下で、**Visual Studio Online** フォルダーの **setup.md** ファイルを置き換えます。
 
-    ```
+    ```Console
     setx testroot "%DeploymentDirectory%"
     ECHO Installing D365 prerequisites
     ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
@@ -107,7 +107,7 @@ ms.locfileid: "2812036"
 1. Microsoft Visual Studio の **テスト** メニューで、**テストの設定** にポイントして、**既定のプロセッサ アーキテクチャ** にポイントして、そして **x64** を選択します。
 2. 管理者として次のコマンドレットを実行して、開発環境の **authcert.pfx** 証明書の拇印を取得します。階層 2 以上のサンドボックス環境を構成するときに必要になるため、拇印をどこかに保存します。
 
-    ```
+    ```Console
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
@@ -152,7 +152,7 @@ ms.locfileid: "2812036"
 7. **適用** を選択して **テストの設定** ダイアログ ボックスを閉じます。
 8. C\# パフォーマンス テストに次のステートメントを追加して、C\# パフォーマンス クラスを変更します。
 
-    ```
+    ```csharp
     using MS.Dynamics.TestTools.UIHelpers.Core;
     ```
 
@@ -160,7 +160,7 @@ ms.locfileid: "2812036"
 
 9. **TestSetup()** メソッドの先頭に次の行を追加して **TestSetup** メソッドを変更します。
 
-    ```
+    ```csharp
     var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir");
     if (string.IsNullOrEmpty(testroot))
     {
@@ -173,7 +173,7 @@ ms.locfileid: "2812036"
 
 10. **TestSetup** メソッドで "マルチユーザーの場合は以下の行をコメント解除" というコードの行をコメント解除して、次の行をコメント アウトします。
 
-    ```
+    ```csharp
     Client = DispatchedClient.DefaultInstance;
     ```
 
@@ -181,7 +181,7 @@ ms.locfileid: "2812036"
 
 11. 次の例と同様に **TestCleanup** メソッドを変更します。
 
-    ```
+    ```csharp
     public void TestCleanup()
     {
         Client.Close();

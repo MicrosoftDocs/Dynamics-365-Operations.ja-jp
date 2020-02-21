@@ -1,6 +1,6 @@
 ---
-title: Visual Studio の Finance and Operations のプロジェクト タイプ
-description: Finance and Operations プロジェクト タイプは、開発ツールの一部です。
+title: Visual Studio の Finance and Operations プロジェクト タイプ
+description: Finance and Operations プロジェクト タイプは開発ツールの一部です。
 author: RobinARH
 manager: AnnBe
 ms.date: 09/12/2018
@@ -14,21 +14,21 @@ ms.search.scope: Operations
 ms.custom: 31781
 ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3aff936f15fd43d3d7e0aa034c4ad308f66ecaf4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f2de1e4ed7526dd8441b66f8966e9a9e98a23afd
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183340"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983640"
 ---
-# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations のプロジェクト タイプ
+# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations プロジェクト タイプは、開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studio ソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
+Finance and Operations プロジェクト タイプは開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studio ソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 新しい空のプロジェクトを作成するには、次の手順を実行します。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: cf8fa9e5fda092146fd294149878d1a6123e564e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bc6d32f041c3af7c2218e64d624c945556bfdb8c
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183261"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029828"
 ---
 # <a name="define-or-edit-entry-point-permissions"></a>エントリ ポイントのアクセス許可の定義または編集
 
@@ -54,7 +54,7 @@ ms.locfileid: "2183261"
 3.  セキュリティ テスト ワークスペースを閉じます。
 
 ## <a name="view-the-user-licenses-for-a-role"></a>任意のロールの複数のユーザー ライセンスの表示
-セキュリティ開発ツールを使用すると、ロールに関連付けられているユーザー ライセンスを表示することができます。 また、エントリ ポイント アクセス許可に対する変更がユーザー ライセンス与える影響を確認することができます。 このツールは、アクセス許可を読み込むかまたは更新するとき、有効なユーザー ライセンスの種類を、選択したオブジェクトによって許可されている各エントリ ポイントとオブジェクト自体の両方について計算します。 エントリ ポイントのコンフィギュレーション キーが無効になると、エントリ ポイントのユーザー ライセンスは取得されません。 ユーザー クライアント アクセス ライセンス (CAL) タイプは、セルフサービス ユーザー、タスク ユーザー、機能ユーザー、およびエンタープライズ ユーザーです。 ユーザー CAL は、アクションが関連付けられているオブジェクトである特定のメニュー項目に関連付けられています。 任意の対象については、ユーザー CAL との関連付けは、オブジェクトの **ViewUserLicense** および **MaintainUserLicense** プロパティの値に基づいて計算されます。 **ViewUserLicense** はアクセス許可の表示に対してのみ使用し、一方、**MaintainUserLicense** は、より大きなアクセス許可のセットのために使用します。 詳細については、[Microsoft Dynamics AX 2012 Licensing Guide](http://download.microsoft.com/download/C/1/0/C10B152C-9E2B-4A9D-BE1F-52718B94318B/Microsoft%20Dynamics%20AX%20Licensing%20Guide.pdf) を参照してください。
+セキュリティ開発ツールを使用すると、ロールに関連付けられているユーザー ライセンスを表示することができます。 また、エントリ ポイント アクセス許可に対する変更がユーザー ライセンス与える影響を確認することができます。 このツールは、アクセス許可を読み込むかまたは更新するとき、有効なユーザー ライセンスの種類を、選択したオブジェクトによって許可されている各エントリ ポイントとオブジェクト自体の両方について計算します。 エントリ ポイントのコンフィギュレーション キーが無効になると、エントリ ポイントのユーザー ライセンスは取得されません。 ユーザー クライアント アクセス ライセンス (CAL) タイプは、セルフサービス ユーザー、タスク ユーザー、機能ユーザー、およびエンタープライズ ユーザーです。 ユーザー CAL は、アクションが関連付けられているオブジェクトである特定のメニュー項目に関連付けられています。 任意の対象については、ユーザー CAL との関連付けは、オブジェクトの **ViewUserLicense** および **MaintainUserLicense** プロパティの値に基づいて計算されます。 **ViewUserLicense** はアクセス許可の表示に対してのみ使用し、一方、**MaintainUserLicense** は、より大きなアクセス許可のセットのために使用します。 詳細については、[Microsoft Dynamics AX 2012 Licensing Guide](https://download.microsoft.com/download/C/1/0/C10B152C-9E2B-4A9D-BE1F-52718B94318B/Microsoft%20Dynamics%20AX%20Licensing%20Guide.pdf) を参照してください。
 
 ### <a name="view-the-user-license-for-a-role"></a>任意のロールのユーザー ライセンスの表示
 

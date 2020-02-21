@@ -1,6 +1,6 @@
 ---
 title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
-description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations application のエンティティ格納に移行します。
+description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 69bbbe96c37d1377ed3619cdb5614f5ea8a742a9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5559718714ae7c1800f0bae9391a7517fee268b3
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812013"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029419"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations application のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
+このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 
 エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)」を参照してください。 [![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "2812013"
 1.  **SalesCubeV2\_CustomerInvoices** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
 2.  **フォーミュラ エディタ**ウィンドウに次の式を入力します。
 
-    ```
+    ```xpp
     FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
     ```
 
@@ -123,7 +123,7 @@ ms.locfileid: "2812013"
 5.  次に、**SalesCubeV2\_Customer** テーブルに類似したフィールドを作成します。 **SalesCubeV2\_Customer** エンティティの横にある省略記号 (...) アイコンを選択します。 右クリックし、**新しい列** を選択します。
 6.  **フォーミュラ エディタ**ウィンドウに次の式を入力します。
 
-    ```
+    ```xpp
     FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
     ```
 

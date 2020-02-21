@@ -14,15 +14,15 @@ ms.search.scope: AX 2012
 ms.custom: 11394
 ms.assetid: 86375ca9-6c2a-47a8-badc-b713b186b4e8
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fbd7ff2d346431ce7041d2e66fd812507446a4e9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5406f8322a04c27f41c22ac448bae5bbe11174b2
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183226"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983674"
 ---
 # <a name="upgrade-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) におけるアップグレード分析
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183226"
 
 このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。 アップグレード分析は、Microsoft Dynamics AX 2012 のフル バージョン、マイナー バージョン、およびインプレース アップグレードの計画に役立ちます。
 
-Microsoft Dynamics Lifecycle Services (LCS) では、Microsoft Dynamics AX 4.0 または Microsoft Dynamics AX 2009 から Microsoft Dynamics AX 2012 へのフルバージョン アップグレード、または AX 2012 のバージョンから別のバージョンへのマイナー バージョンまたはインプレース アップグレードの計画に、アップグレード分析が役立ちます。 次のグラフは、フルバージョン アップグレードとインプレース アップグレードの両方でサービスがどのように機能するかを示しています。 ![アップグレード分析サービス オプション](./media/lcsupgradeanalysisservice.png) アップグレード分析では、Rapid Data Collector (RDC) ツールを使用して、既存の環境に関する情報を分析します。 この情報は、アップグレード プロジェクトの規模の見積もりに役立ちます。 完全なバージョンのアップグレードの詳細については、[シナリオ: AX 4.0 または AX 2009 を AX 2012 にアップグレード (すべてのバージョン)](http://technet.microsoft.com/library/ccf303bb-5d58-4e22-b802-986e61720488(AX.60).aspx) を参照してください。
+Microsoft Dynamics Lifecycle Services (LCS) では、Microsoft Dynamics AX 4.0 または Microsoft Dynamics AX 2009 から Microsoft Dynamics AX 2012 へのフルバージョン アップグレード、または AX 2012 のバージョンから別のバージョンへのマイナー バージョンまたはインプレース アップグレードの計画に、アップグレード分析が役立ちます。 次のグラフは、フルバージョン アップグレードとインプレース アップグレードの両方でサービスがどのように機能するかを示しています。 ![アップグレード分析サービス オプション](./media/lcsupgradeanalysisservice.png) アップグレード分析では、Rapid Data Collector (RDC) ツールを使用して、既存の環境に関する情報を分析します。 この情報は、アップグレード プロジェクトの規模の見積もりに役立ちます。 完全なバージョンのアップグレードの詳細については、[シナリオ: AX 4.0 または AX 2009 を AX 2012 にアップグレード (すべてのバージョン)](https://technet.microsoft.com/library/ccf303bb-5d58-4e22-b802-986e61720488(AX.60).aspx) を参照してください。
 
 ## <a name="collect-and-upload-files-for-analysis-full-version-upgrade-ax-40-or-ax-2009"></a>解析のためのファイルの収集とアップロード (フル バージョン アップグレード: AX 4.0 または AX 2009)
 アップグレード分析を使用するには、RDC ツールをインストールしてから、RDC ファイルと AOD ファイルをアップロードする必要があります。 RDC ツールは、テーブルのレコードの数など、実稼働環境に関するメタデータを収集します。 **重要:** RDC ツールは、アップグレード スクリプトが読み込まれていない実稼働環境のコピーで実行する必要があります。
@@ -55,11 +55,11 @@ RDC ファイルと AOD ファイルは任意の順序でアップロードす�
 5.  使用可能なレポートの詳細については、「レポートをダウンロード」セクションを参照してください。
 
 ## <a name="collect-and-upload-files-for-analysis-in-place-upgrade-ax-2012"></a>解析のためのファイルの収集とアップロード (インプレース アップグレード: AX 2012)
-インプレース アップグレードについては、zip ファイルとしてエクスポートしたモデル ストアをアップロードする必要があります。 開始する前に、[シナリオ: AX 2012 R2 または AX 2012 R3 へのインプレース アップグレードを実行する](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx) トピックの、[準備](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx#Prerequisites) の手順に従ってください。
+インプレース アップグレードについては、zip ファイルとしてエクスポートしたモデル ストアをアップロードする必要があります。 開始する前に、[シナリオ: AX 2012 R2 または AX 2012 R3 へのインプレース アップグレードを実行する](https://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx) トピックの、[準備](https://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx#Prerequisites) の手順に従ってください。
 
 ### <a name="export-and-zip-your-model-store"></a>モデル ストアをエキスポートおよび圧縮
 
-1.  Microsoft Windows PowerShell または AxUtil コマンドライン ユーティリティを使用して、アップグレードする予定のシステムからモデル ストアをエクスポートします。 詳細については、[方法: モデル ストアのインポートとエクスポート](http://msdn.microsoft.com/library/754c52af-4025-4495-979c-f99d8c5b7d89(AX.60).aspx) を参照してください。
+1.  Microsoft Windows PowerShell または AxUtil コマンドライン ユーティリティを使用して、アップグレードする予定のシステムからモデル ストアをエクスポートします。 詳細については、[方法: モデル ストアのインポートとエクスポート](https://msdn.microsoft.com/library/754c52af-4025-4495-979c-f99d8c5b7d89(AX.60).aspx) を参照してください。
 2.  Microsoft Windows または別のシステムを使用してファイルを zip 圧縮します。
 
 ### <a name="upload-and-analyze-files"></a>ファイルのアップロードと分析

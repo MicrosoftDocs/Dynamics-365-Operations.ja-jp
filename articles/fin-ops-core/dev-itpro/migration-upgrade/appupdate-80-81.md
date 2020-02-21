@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 4ad06041e3d3399104051bfdad04ba4a471f0607
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c355535b3d0e7cf3ba71f1a995b36e827b842c2f
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191890"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029394"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 
@@ -106,9 +106,11 @@ Lifecycle Services で、手順 1 で配置した**ビルド サーバー**に�
 
 ### <a name="deployment-of-my-environment-fails-with-error-on-duplicate-objects"></a>重複するオブジェクトへの環境の配置がエラーで失敗する
 既定では、Visual Studio でオブジェクトを拡張すると、Object.*Extension1* という名前で作成されます。 Microsoft により同じオブジェクトの新しい機能拡張が導入された場合、この名前は衝突する可能性があります。 この場合、展開は、次のようなエラーで失敗します。
-```
+
+```Console
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
+
 これを防止するため、10.0.X 開発者コンピューターで拡張機能をコンパイルする必要があります。 この問題を解決するには、SystemAdministration.*Customer* など、バニティ拡張名前付け規則に従って拡張オブジェクトのいずれかの名前を変更します。
 
 ### <a name="deployment-on-my-environment-fails-with-error-on-dvts-or-etws"></a>DVT または ETW で環境での配置がエラーにより失敗する

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7d02825a32340ef14f0c425e574aeb490e0a27
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 764ae76cc839e683e6ccd3bd86a9028d749b275b
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812039"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025842"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -89,25 +89,27 @@ AutoReport および AutoLookup フィールド グループを定義し、Excel
     -   SysODataCollectionAttribute(str &lt;name&gt;, Types &lt;type&gt;, “Value”)
 -   戻り値: メソッドは、文字列のリストを返す必要があります。
 
-例 :  
+**例** 
 
-    public class ExportToExcel_SimpleEntity extends common
+```xpp
+public class ExportToExcel_SimpleEntity extends common
+{
+    [SysODataActionAttribute("Lookup_StringLookupField", true),
+    SysODataCollectionAttribute("return", Types::String, "Value")]
+    public List lookup_StringLookupField()
     {
-        [SysODataActionAttribute("Lookup_StringLookupField", true),
-        SysODataCollectionAttribute("return", Types::String, "Value")]
-        public List lookup_StringLookupField()
+        List lookupList = new List(Types::String);
+        const int items = 5;
+
+        for (int item = 0; item < items; item++)
         {
-            List lookupList = new List(Types::String);
-            const int items = 5;
-
-            for (int item = 0; item < items; item++)
-            {
-                lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
-            }
-
-            return lookupList;
+            lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
         }
+
+        return lookupList;
     }
+}
+```
 
 ## <a name="how-does-the-app-get-injected-into-a-workbook-to-start-building-a-template"></a>アプリはどのようにテンプレートの構築を開始するブックに挿入されますか。
 
@@ -174,56 +176,58 @@ Excel で開くエクスペリエンスに明示的なボタンを追加でき�
 
 このコードの例としては、**LedgerJournalTable** フォーム (**一般会計**&gt;**仕訳帳**&gt;**一般仕訳帳**) の**クリック済み**メソッド内の **OpenLinesInExcel** ボタン上で見つけることができます。
 
-        [Control("Button")]
-        class OpenLinesInExcel
-        {
-            /// <summary>
-            /// Opens the current journal in Excel for line entry and editing
-            /// </summary>
-            public void clicked()
-            {
-                super();
+```xpp
+[Control("Button")]
+class OpenLinesInExcel
+{
+    /// <summary>
+    /// Opens the current journal in Excel for line entry and editing
+    /// </summary>
+    public void clicked()
+    {
+        super();
 
-                const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
+        const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
                 DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
 
-                // Ensure the template was present
-                if (template && template.TemplateID == templateName)
-                {
-                    Map filtersToApply = new Map(Types::String, Types::String);
+        // Ensure the template was present
+        if (template && template.TemplateID == templateName)
+        {
+            Map filtersToApply = new Map(Types::String, Types::String);
 
-                    // Create lines filter
-                    ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
-                    str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
+            // Create lines filter
+            ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
+            str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
 
-                    // Create header filter
-                    filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
-                    filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
+            // Create header filter
+            filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
+            filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
 
-                    // Generate the workbook using the template and filters
-                    DocuTemplateRender renderer = new DocuTemplateRender();
-                    str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
+            // Generate the workbook using the template and filters
+            DocuTemplateRender renderer = new DocuTemplateRender();
+            str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
 
-                    // Pass the workbook to the user
-                    if (documentUrl)
-                    {
-                        Browser b = new Browser();
-                        b.navigate(documentUrl, false, false);
-                    }
-                    else
-                    {
-                        error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
-                    }
-                }
-                else
-                {
-                    warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
-                }
+            // Pass the workbook to the user
+            if (documentUrl)
+            {
+                Browser b = new Browser();
+                b.navigate(documentUrl, false, false);
             }
-
+            else
+            {
+                error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
+            }
         }
+        else
+        {
+            warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
+        }
+    }
+
+}
+```
 
 次の図は、**総勘定元帳** &gt; **仕訳帳** &gt; **一般仕訳帳** フォームを強調表示された **Excel で明細行を開く**ボタンと共に示しています。 
 
@@ -231,69 +235,73 @@ Excel で開くエクスペリエンスに明示的なボタンを追加でき�
 
 作成された Open in Excel オプションとテンプレートの Open in Excel オプションをプログラムで追加するには、ExportToExcelIGeneratedCustomExport および ExportToExcelITemplateCustomExport インターフェイスを実装して、Open in Excel オプションを追加します。 これにより、エンティティまたはテンプレートがルート データ ソースと同じテーブルを持たないフォームにオプションを追加できます。 この機能を使用する場合の例としてはデータソースのないフォーム、フォーム パーツのコレクションのみを含む可能性があります。 次の例では、**FMRental** フォームに、生成されたテンプレートと ExcelのOpen in Excel オプションをプログラムによって追加します。
 
-    [Form]
-    public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
-    {    
-    ...
-        public List getExportOptions()
+```xpp
+[Form]
+public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
+{    
+...
+    public List getExportOptions()
+    {
+        List exportOptions = new List(Types::Class);
+
+        ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
+        exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
+        exportOptions.addEnd(exportOption);
+
+        ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
+        exportOption2.displayName("Analyze rentals");
+        exportOptions.addEnd(exportOption2);
+
+        return exportOptions;
+    }
+
+    public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+    {
+        ExportToExcelDataEntityContext context = null;
+
+        if (_exportOption.id() == int2str(1))
         {
-            List exportOptions = new List(Types::Class);
-
-            ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
-            exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
-            exportOptions.addEnd(exportOption);
-
-            ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-            exportOption2.displayName("Analyze rentals");
-            exportOptions.addEnd(exportOption2);
-
-            return exportOptions;
+            context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
         }
 
-        public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+        return context;
+    }
+
+    public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
+    {
+        System.IO.Stream stream = null;
+
+        if (_exportOption.id() == int2str(2))
         {
-            ExportToExcelDataEntityContext context = null;
-
-            if (_exportOption.id() == int2str(1))
-            {
-                context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
-            }
-
-            return context;
+            stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
         }
 
-        public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-        {
-            System.IO.Stream stream = null;
+        return stream;
+    }
 
-            if (_exportOption.id() == int2str(2))
-            {
-                stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-            }
-
-            return stream;
-        }
-
-        public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-        {
-        }
-    ...
+    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+    {
+    }
+...
+```
 
 ## <a name="how-do-i-add-a-filter-for-a-programmatically-added-template-open-in-excel-option"></a>プログラムにより追加するテンプレート Excel を開くオプション用のフィルターを追加する方法がありますか。
 
 Excel で開く オプション テンプレートは、ExportToExcelITemplateCustomExport インターフェイスを実装し、getTemplate メソッドでテンプレートを提供することで、プログラムにより追加できます。 このオプションのフィルターは、updateTemplateSettings メソッドの ExportToExcelFilterBuilder API を使用してプログラムで追加できます。
 
-    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+```xpp
+public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
 
-    {
+{
 
-    _settingsEditor.SetFilterExpression(tableStr(RetailTmpBulkProductAttributeValueEntity), element.getExportToExcelFilterExpression());
+_settingsEditor.SetFilterExpression(tableStr(RetailTmpBulkProductAttributeValueEntity), element.getExportToExcelFilterExpression());
 
-    DictDataEntity dictDataEntity = new DictDataEntity(tableNum(RetailTmpBulkProductAttributeValueEntity));
+DictDataEntity dictDataEntity = new DictDataEntity(tableNum(RetailTmpBulkProductAttributeValueEntity));
 
-    _settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(), element.getExportToExcelFilterExpression());
+_settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(), element.getExportToExcelFilterExpression());
 
-    }
+}
+```
 
 フィルターがプログラムで追加された後、結果のフィルターは、**フィルター** ボタンを使用して Excel アドインで表示できます。 次の図は、**フィルター** ボタンが強調表示された Excel アドインを示しています。
 

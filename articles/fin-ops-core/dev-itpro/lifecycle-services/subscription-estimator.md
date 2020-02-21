@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 96e4702c7832f00b4d0b8649293f4168b0faefe9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 536e209644aeac3ee03b47f0a809c465c2e7f185
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183186"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003666"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
@@ -34,9 +34,11 @@ ms.locfileid: "2183186"
 
 1. LCS で、実装プロジェクトに関連付けられているプロジェクトを開きます。
 2. ページの上部にあるハンバーガー アイコン選択し、**サブスクリプション見積もりツール**を選択します。
-[![サブスクリプション見積もりツール](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
+
+    [![サブスクリプション見積もりツール](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
+
 3. サンプルの使用状況プロファイルをダウンロードします。
-4. 各タブで必要な質問に回答します。小売顧客の場合は、**Retail と Commerce** タブ上の質問に回答してください。
+4. 各タブで必要な質問に回答します。Commerce の顧客の場合は、**Retail と Commerce** タブ上の質問に回答してください。
 5. 使用状況プロファイルをローカルに保存します。
 6. 使用プロファイルをアップロードするには、**新しい見積もり** を選択し、見積もりに名前を付け、使用プロファイルをアップロードします。
 7. アップロードが完了した後、**アクティブとしてマークする**を選択し見積もりを有効にします。 生産の配置をコンフィギュレーションするために有効な見積が必要です。
@@ -59,3 +61,4 @@ ms.locfileid: "2183186"
 - **見積が作成されますが、要件を満たしていません** - このエラーは、入力されたトランザクション明細行がサブスクリプション見積もりツールの制限内にない場合に発生します。 このエラーを解決するには、サポート要求を作成し、使用プロファイルを添付します。 次に、インスタンスのサイズを手動で変更できます。
 
 その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積もりを添付します。
+ 

@@ -3,7 +3,7 @@ title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 711b25347caf324aa736aa5d1a4e2783c83d0ab9
-ms.sourcegitcommit: cb171c8073f69f81394d413ffa40018642c2b7a5
+ms.openlocfilehash: 4ce13ad0fd32f7dc95ca6f9092c30c2381c7ee3e
+ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899328"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2982350"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。 このトピックでは、関連情報を見つけやすくするために、管理者のセクションとユーザーのセクションに分かれています。
 

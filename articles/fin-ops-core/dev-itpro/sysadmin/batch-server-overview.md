@@ -3,7 +3,7 @@ title: バッチ処理とバッチ サーバー
 description: このトピックでは、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
 author: Peakerbl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b822a21ca22c3d3365de671b13350e729d1511c6
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: 7c0ad822d7029a06ab74d941d069f123851ebe68
+ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945407"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2975185"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 
@@ -98,5 +98,9 @@ Batch1 が待機中のタスクをチェックし、そのスレッドにタス�
 
 AOS2 および AOS3 を構成して他のバッチ グループからタスクを処理することができます。 これらのバッチ グループには、既定のバッチ グループが含まれています。
 
+### <a name="batch-excessive-tasks-configuration-batch-throttling"></a>過剰なタスク コンフィギュレーションのバッチ (バッチ調整)
 
+バッチ調整では、特定のバッチ クラスの 1 分あたりの平均実行回数を制限することにより過剰のタスクを防ぐことができます。 既定の上限は 1 分あたり 60 のタスクです。 その後、バッチ フレームワークは、問題のあるクラスの実行をもう 1 分中断して、その特定のクラスがシステム リソースを独占するのを防ぎます。
 
+> [!NOTE]
+> バッチ フレームワークでは、いつでもスケジュールおよび実行するように調整されていないタスクがない場合に、インスタンスを検出できます。 この場合、バッチはリソースがアイドル状態になるのを防ぐため、調整されたクラス キューからバッチ タスクをフェッチします。

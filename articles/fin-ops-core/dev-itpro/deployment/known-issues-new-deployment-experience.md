@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: f109c5d996aa31b1d71af85cdea7e8caa7e16edc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7e8672a86841a0f905f006ad85d87e8f28c70ee2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191584"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003605"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
@@ -60,7 +60,7 @@ ms.locfileid: "2191584"
 
 | **機能**                 | **説明**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| 小売                      | Retail のサポートがまだ有効ではありません。                        |
+| Commerce                      | コマースのサポートがまだ有効ではありません。                        |
 | Trace Parser                | 実績ツールはまだサポートされていません。                         |
 
 ### <a name="features-not-intended-to-be-implemented"></a>実装が意図されていない機能

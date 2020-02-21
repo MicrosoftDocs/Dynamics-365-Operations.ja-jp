@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: cc125ed4d86dda750447f66e098ad7881102120e
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: d06b67945ca5e4160ad2c9dcae7eccfd0daedaef
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572679"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003611"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 
@@ -54,6 +54,6 @@ Microsoft Dynamics Lifecycle Services (LCS) は、ゴールデン コンフィ�
 
 web.config ファイルを変更するために環境に管理者ユーザー プロビジョニング ツールを使用した場合、値が LCS の値と一致しない可能性があります。 別のアカウントを使用することを要求する場合、ターゲット サンドボックスを割り当て解除して削除し、別のアカウントを選択して再展開する必要があります。 その後、データを復元するためにデータベースの更新操作をもう 1 回実行することができます。
 
-## <a name="steps-to-complete-after-a-database-import-for-environments-that-use-retail-functionality"></a>Retail 機能を使用する環境のデータベースインポート後に実行する手順
+## <a name="steps-to-complete-after-a-database-import-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース インポート後に実行する手順
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]

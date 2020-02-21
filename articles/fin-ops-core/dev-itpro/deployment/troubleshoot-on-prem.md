@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 8b86a5bfc17284d613fd9ba3c57be99533a48fd0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80553dbec81798b94f4d042564550c86560bc55
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770934"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033009"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -410,7 +410,7 @@ localagent-configjson ファイルの **コンポーネント** セクション�
 
 **手順:** ファイル共有の設定内容を確認するには、Microsoft SQL Server Management Studio を開いてオーケストレータ データベースで次のクエリを実行します:
 
-```
+```sql
 select * from OrchestratorCommandArtifact where CommandId = 'xxx'
 ```
 
@@ -484,7 +484,7 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
 1. **psping lcsapi.lcs.dynamics.com:80** を実行します。
 2. 前述のコマンドから応答を受信しない場合は、組織の IT 部門に問い合わせます。 ファイアウォールが lcsapi へのアクセスをブロックしているか、もしくはプロキシの問題が発生しています。
 
-    ```
+    ```Console
     lcsapi.lcs.dynamics.com:443
     login.windows.net:443
     uswelcs1lcm.queue.core.windows.net:443
@@ -595,7 +595,7 @@ DataEncryption 証明書を作成するのにには、次のプロパティを�
 
 次のコマンドを使用して暗号化されたテキストを検証することもできます。
 
-```
+```powershell
 Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
 ```
 
@@ -761,7 +761,7 @@ AddAXDatabaseChangeTracking イベントのみを受け取った場合は、`htt
 
 配置中に Management Reporter レポートがチェックアウトされると、配置処理は失敗します。 レポートがチェック アウトされているかどうかを表示するには、FinancialReporting データベースで次の**選択**明細書を実行します。
 
-```
+```sql
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null
 select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not null
 select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
@@ -769,13 +769,13 @@ select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is 
 
 どのユーザーがオブジェクトをチェック アウトするかを知るには、次の**選択**ステートメントを実行します。
 
-```
+```sql
 select * from Reporting.SecurityUser where UserID = ''
 ```
 
 この問題を手動で解決するには、以下のテーブルを次のコマンドを使用して更新し、 **checkedoutto** を **null** に設定します。
 
-```
+```sql
 update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null
 update Reporting.ControlRowMaster set checkedoutto = null where checkedoutto is not null
 update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto is not null
@@ -1029,7 +1029,7 @@ Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できませ�
 
 すべてのグループとホストの一覧を検索するには、次のコマンドを実行します。
 
-```
+```powershell
 Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRetrieveManagedPassword
 ```
 
@@ -1156,25 +1156,25 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 配備手順の次のセクションをスキップまたは変更することができます。
 
-### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdplancert-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdplancert"></a>証明書の計画と取得 ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#plancert) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#plancert) で記載されたものとして)
+### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>証明書の計画と取得 ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#plancert) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#plancert) で記載されたものとして)
 
 - 同一のオンプレミスのローカル エージェント証明書を使用する必要があります。
 - 同一のスター証明書を使用することができます(AOS SSL および Service Fabric)。
 - 残りの証明書は既存の環境の証明書とは異なる可能性があります。
 
-### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mddownloadscripts-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mddownloadscripts"></a>LCS からのセットアップ スクリプトのダウンロード ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#downloadscripts) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts) で記載されたものとして)
+### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>LCS からのセットアップ スクリプトのダウンロード ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#downloadscripts) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts) で記載されたものとして)
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdsetupsfcluster-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdsetupsfcluster"></a>([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#setupsfcluster) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster) に記載されているように) スタンドアロン Service Fabric クラスタを設定します
+### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#setupsfcluster) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster) に記載されているように) スタンドアロン Service Fabric クラスタを設定します
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdconfigurelcs-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdconfigurelcs"></a>テナント用 LCS 接続 のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configurelcs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs) で記載されたものとして)
+### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>テナント用 LCS 接続 のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configurelcs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs) で記載されたものとして)
 
 - テナントに対して、このタスクを 1 回のみ実行する必要があります。
 
-### <a name="configure-ad-fs-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdconfigureadfs-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdconfigureadfs"></a>AD FS のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configureadfs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs) で記載されたものとして)
+### <a name="configure-ad-fs-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>AD FS のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configureadfs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs) で記載されたものとして)
 
 - すでに完了しているので、スクリプト 1、スクリプト 2、スクリプト 3 はスキップできます。
 - 新しい **hosturl** 値を使用している場合でも、.\\Publish-ADFSApplicationGroup.ps1 スクリプトは失敗します。 したがって、この手順を手動で完了する必要があります。
@@ -1193,7 +1193,7 @@ SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動�
 
 SQL Server を再起動すると、tempdb データベースが再作成されます。 結果として、アクセス許可が不十分です。 マスター データベースでストアド プロシージャを作成する次のスクリプトを実行します。
 
-```
+```sql
 \-----
 USE [master]
 GO
@@ -1327,13 +1327,13 @@ Import-Module -Name AzureRM -RequiredVersion 5.7.0
 
 この問題を解決するには、 **SYSTIMEZONESVERSION** の値が重要になります。
 
-```
+```sql
 select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
 ```
 
 エラー メッセージにて表示されたバージョンの値で [value] を更新します
 
-```
+```sql
 update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 ```
 
@@ -1359,7 +1359,7 @@ Finance + Operations へのログイン資格情報を入力すると、ブラ�
 
 この問題を解決するには、次の SQL Server query を実行します。
 
-```
+```sql
 update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
 ```
 
@@ -1380,7 +1380,7 @@ Chrome ブラウザーでは、最初からリダイレクトがブロックさ�
 1. [エージェント共有パス](setup-deploy-on-premises-pu12.md#setupfile) にて、 **netstandard.dll** ファイルを見つけます。 このファイルは、例えば \\wp\\\<名\>\\StandaloneSetup -\<バージョン\>\\アプリケーション\\AOS\\AXServiceApp\\AXSF\\コード\\在庫置場\\netstandard.dll に多くの場合存在します。
 2. それぞれの AOS サーバーにて、管理者権限で コマンド プロンプトを開き、次のコマンドを実行します。
 
-    ```
+    ```Console
     "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
     ```
 
@@ -1419,3 +1419,40 @@ The located assembly's manifest definition does not match the assembly reference
 **理由:** ランタイムとアプリケーションとの間に .dll の不一致があります。
 
 **解決策** : TSG\_SysClassRunner.ps1 を使用します。 詳細については、[TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner)を参照してください。
+
+## <a name="dbsync-fails-with-peap-app-version-1009-platform-update-33"></a>DBSync が PEAP APP バージョン 10.0.9 プラットフォーム更新プログラム 33 で失敗する
+**問題:** APP 10.0.9 PU33 PEAP パッケージの配置中に、AXSF アプリケーションの配置が Service Fabric エクスプローラーで「Inbuild」ステータスになると失敗する。 AXSF ノードの作業ディレクトリのログを確認すると、次の DBSync エラーが見つかります。 
+
+DBSync からのエラー メッセージ:
+ ```stacktrace
+ Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -metadatadir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -sqluser "" -sqlserver "" -sqldatabase "" -setupmode servicesync -syncmode fullall -onprem 
+Stack trace: Invalid attempt to call  running in CIL on the client.
+   at Microsoft.Dynamics.Ax.MSIL.Interop.throwException(Int32 ExceptionValue, interpret* ip)
+   at Microsoft.Dynamics.Ax.MSIL.Interop.ThrowCQLError(IL_CQL_ERR cqlErr, String p1)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrow(Exception exception)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, String elementName)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, Int32 typeId)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.ApplicationIdBridge.LoadTableById(ApplicationIdBridge* , Int32 id, ObjectIdDelegate* cb)
+   at cqlClass.callEx(cqlClass* , Char* , interpret* )
+   at Microsoft.Dynamics.Ax.MSIL.cqlClassIL.Call(IntPtr c, String methodName, Object[] parameters, Type[] types, Object[] varargs, Type[] varargsTypes)
+   at Microsoft.Dynamics.Ax.Xpp.XppObjectBase.Call(String methodName, Object[] parameters, Type[] types, Object[] varargs)
+   at Microsoft.Dynamics.Ax.Xpp.DictTable.Supportinheritance()
+   at Dynamics.AX.Application.SysDictTable.`getRootTable(Int32 _tabid) in xppSource://Source/ApplicationPlatform\AxClass_SysDictTable.xpp:line 1498
+   at Dynamics.AX.Application.SysDictTable.getRootTable(Int32 _tabid)
+   at Dynamics.AX.Application.SysDataBaseLog.`ConfigureSqlLogging() in xppSource://Source/ApplicationPlatform\AxTable_SysDataBaseLog.xpp:line 60
+   at Dynamics.AX.Application.SysDataBaseLog.ConfigureSqlLogging()
+   at SysDataBaseLog::ConfigureSqlLogging(Object[] , Boolean& )
+   at Microsoft.Dynamics.Ax.Xpp.ReflectionCallHelper.MakeStaticCall(Type type, String MethodName, Object[] parameters)
+ 
+DB sync failed.
+```
+
+**理由:** この問題が発生するのは、SQL DatabaseLog テーブルに、パッケージ内のメタデータと競合するデータが含まれているためです。
+
+**解決策:** AXDB 上で次のクエリを実行して DatabaseLog テーブルをクリーンアップしてから、配置を再試行します。
+
+```sql
+select * into databaselog_bak from databaselog
+truncate table databaselog
+```
+

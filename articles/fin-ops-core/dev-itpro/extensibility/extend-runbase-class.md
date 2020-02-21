@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a8cf9fe7a72e5246879800c184a2563422a34709
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0c5d218053647ac230d92e4e28a280ade2d554a3
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191646"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033020"
 ---
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 
@@ -42,7 +42,7 @@ SysUserLogCleanup クラスは、**RunBase** クラスです。 **RunBase** ク�
 
 次の例は、このシナリオを実装する方法を示しています。
 
-```
+```xpp
 [ExtensionOf(classStr(SysUserLogCleanup))]
 final class MySysUserLogCleanup_Extension
 {

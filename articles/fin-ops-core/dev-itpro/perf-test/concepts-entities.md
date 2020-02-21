@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 85e44f64310472fa39deed20df4faaf928279d92
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26b264f4caa4b14851528dbabd98da10ddcaaa52
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191814"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026254"
 ---
 # <a name="entities-in-the-acceptance-test-library"></a>承認テスト ライブラリのエンティティ
 
@@ -56,7 +56,7 @@ ATL のエンティティは、次のメソッドを持つことが *可能* で
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 AtlEntitySalesOrder
 
 AtlEntityTransferOrderLine
@@ -72,7 +72,7 @@ AtlEntityTransferOrderLine
 
 #### <a name="example"></a>例
 
-```
+```xpp
 public SalesQty parmQuantity(SalesQty _qty = 0)
 {
     if (!prmisDefault(_qty))
@@ -88,13 +88,13 @@ public SalesQty parmQuantity(SalesQty _qty = 0)
 
 たとえば `AtlEntityCustomer` という名前の顧客エンティティがある場合、`AtlEntitySalesOrder` エンティティのプロパティ メソッドとして `customer` への参照を公開する必要があります。
 
-```
+```xpp
 public AtlEntityCustomer parmCustomer(AtlEntityCustomer _custTable = null)
 ```
 
 プロパティ メソッドをセッターやゲッターとして使用できます。
 
-```
+```xpp
 salesOrder.parmCustomer(customer); // setter
 
 customer = salesOrder.parmCustomer(); // getter
@@ -108,7 +108,7 @@ customer = salesOrder.parmCustomer(); // getter
 
 顧客エンティティがまだ作成されておらず、近い将来にも作成されない場合、参照プロパティは対応するレコード バッファ (`CustTable`) を公開する必要があります。
 
-```
+```xpp
 public CustTable parmCustomer(CustTable _custTable = null)
 ```
 
@@ -120,7 +120,7 @@ public CustTable parmCustomer(CustTable _custTable = null)
 
 エンティティやレコード参照を持つことに加えて、`Id` 参照プロパティを導入できます。
 
-```
+```xpp
 public CustAccount customerId(CustAccount _custTable = null)
 ```
 
@@ -140,13 +140,13 @@ Fluent な初期化とエンティティの変更をサポートする Fluent �
 
 ### <a name="declaration-example"></a>宣言の例
 
-```
+```xpp
 public AtlEntitySalesLine setQty(SalesQty _qty)
 ```
     
 ### <a name="code-example"></a>コードの例
 
-```
+```xpp
 salesLine.setItem(batchItem).setInventDims([warehouse]).setQty(10).save();
 ```
 
@@ -172,7 +172,7 @@ salesLine.setItem(batchItem).setInventDims([warehouse]).setQty(10).save();
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 salesOrder.save();
 
 salesOrder.postInvoice();
@@ -182,7 +182,7 @@ salesOrder.postInvoice();
 
 コマンド オブジェクト初期化子は、コマンドのパラメーターを指定し実行できるコマンド オブジェクトを返します。
 
-```
+```xpp
 transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
 ```
 
@@ -194,7 +194,7 @@ transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 salesOrder.pick().execute();
 
 purchaseOrder.register().execute();
@@ -212,7 +212,7 @@ purchaseOrder.register().execute();
 
 #### <a name="example"></a>例
 
-```
+```xpp
 receipt = transfer.newReceipt().setEditLines(true).setExplodeLines(true);
 receipt.lines().withBatch(batch1).single().setReceiptQty(6).setScrapQty(1).save();
 receipt.lines().withBatch(batch2).single().setReceiptQty(4).setScrapQty(1).save();
@@ -225,7 +225,7 @@ receipt.post();
 
 #### <a name="example"></a>例
 
-```
+```xpp
 AtlEntityInventTransferOrderReceipt
 ```
 
@@ -242,7 +242,7 @@ AtlEntityInventTransferOrderReceipt
 元伝票の例では、ドキュメント エンティティは複合ルートとして機能し、ドキュメント行の新しいインスタンスの作成に責任があります。 この場合、元伝票エンティティはドキュメントの新しい行を初期化して返す `addLine()` メソッドを持ちます。
 
 
-```
+```xpp
 public AtlEntitySalesLine addLine()
 ```
 
@@ -254,7 +254,7 @@ public AtlEntitySalesLine addLine()
 
 #### <a name="example"></a>例
 
-```
+```xpp
 salesLine = salesOrder.addLine();
 ```
 
@@ -272,7 +272,7 @@ salesLine = salesOrder.addLine();
 
 ### <a name="example"></a>例
 
-```
+```xpp
 transferOrderLine = transferOrder.lines().withItem(item).single();
 ```
 
@@ -284,7 +284,7 @@ transferOrderLine = transferOrder.lines().withItem(item).single();
 
 ### <a name="example"></a>例
 
-```
+```xpp
 public AtlQueryWHSLoadLines lines()
 {
     return new AtlQueryWHSLoadLines().forLoadId(this.parmLoadId());

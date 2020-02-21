@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4121f0fc76076f0d50cd6f317561bae5aac0520
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: eb0a2a18490f2209cfe98d609d2fda7fd7ff7018
+ms.sourcegitcommit: 5d31d3e5f8549b761360c338bc2a1d9506c15999
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811950"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030040"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
 [!include [banner](../../includes/banner.md)]
 
 ## <a name="overview"></a>概要
-Regression Suite Automation Tool (RSAT) を使用すると、ユーザー受け入れテストの時間と費用を大幅に縮小できます。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよびコンフィギュレーションを実稼働環境に適用する前に必要です。
+Regression Suite Automation Tool (RSAT) を使用すると、ユーザー受け入れテスト (UAT) の時間と費用を大幅に縮小できます。 通常、UAT は Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよび構成を実稼働環境に適用する前に必要です。 RSAT により、機能パワー ユーザーはタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくてもタスク記録を一連の自動テストに変換できます。 タスク レコーダーの詳細については、 [タスク レコーダー のリソース](../../user-interface/task-recorder.md) を参照してください。
 
-このツールは機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートにこれらの記録を変換できるようにします。 テストライブラリは、ビジネス プロセス モデラー (BPM) ライブラリを使用して保存され、Lifecycle Services (LCS) に配布されます。 また、これらのライブラリは、テストの実行、レポート、および調査のために Azure DevOps サービス (Azure DevOps) と完全に統合されています。 テスト パラメーターは、テスト ステップから切り離され、Microsoft Excel ファイルに保存されます。
+RSATは、テストの実行、報告、および調査のために Microsoft Azure DevOps と完全に統合されています。 テスト パラメーターは、テスト ステップから切り離され、Microsoft Excel ファイルに保存されます。
 
 RSAT の使用についての定義。
 
@@ -38,22 +38,22 @@ RSAT の使用についての定義。
 + [Regression Suite Automation Tool インストールおよび構成](rsat-install-configure.md)
 + [Regression Suite Automation Tool テスト ケースの実行](rsat-run.md)
 + [予測値を検証する](rsat-validate-expected.md)
-+ [テスト ケース](rsat-chain-test-cases.md)
++ [テスト ケースのチェーン](rsat-chain-test-cases.md)
 + [派生テスト ケース](rsat-derived-test-cases.md)
 + [Regression Suite Automation Tool ベスト プラクティス](rsat-best-practices.md)
 + [Regression Suite Automation Tool のトラブルシューティング](rsat-troubleshooting.md)
 
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
-このツールは、次に定義するエンド ツー エンド フローのパーツに含まれています。 このアプリケーションは、LCS および Azure DevOps と共に、テスト ケースの作成 (タスク レコーダーを使用)、コンフィギュレーション、実行、調査、および報告に対する一連のツールを提供します。
+このツールは、次に定義するエンド ツー エンド フローのパーツに含まれています。 このアプリケーションは、Microsoft Dynamics Lifecycle Services (LCS) および Azure DevOps と共に、テスト ケースの作成 (タスク レコーダーを使用)、構成、実行、調査、および報告に対する一連のツールを提供します。
 
 ![作成、構成、実行](media/end-to-end.png)
 
 このプロセスの詳細については、[ユーザー受け入れテストを作成して自動化する](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)を参照してください。
 
-## <a name="lifecycle-services"></a>Lifecycle Services
+## <a name="lcs-and-bpm"></a>LCS および BPM
 
-Lifecycle Services (LCS) および BPM を使用することが推奨されますが、必須ではありません。 BPM では、プロジェクトとテナント間でテスト ライブラリの管理および配信を有効にします。この機能は、Microsoft パートナーや独立系ソフトウェア ベンダーにとって特に便利です。 
+LCS でビジネス プロセス モデラー (BPM) ツールを使用する必要はありません。 ただし、プロジェクトとテナント間でテスト ライブラリを管理および配布できるようにする場合、推奨されているツールは BPM です。 これらの機能は、Microsoft パートナーおよび独立系ソフトウェア ベンダー (ISV) にとって特に便利です。 BPM では、LCS ソリューションの一部としてテスト ライブラリを配布できるようにします。
 
 BPM を使用していない場合は、Azure DevOps で手動でテスト ケースを作成し、開発者記録ファイルを Azure DevOps テスト ケースに添付できます。 開発者記録ファイルは、タスク レコーダー ウィンドウから直接作成できます。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bd0d90d324872304bb1b171910ec5c7c958287a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: abc240b2d272c54f289cc900cb7e342f143fdcc1
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658845"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017741"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -66,5 +66,7 @@ ms.locfileid: "2658845"
 ファイル アップロード コントロールは、クライアントのファイルとアップロード方法を受け入れ、ファイル サービスに送信します。 ファイル サービスは新しいセッションを開始し、戦略クラスのインスタンスを作成し、**uploadFile** メソッドを呼び出します。 **uploadFile** メソッドがデータ ソース内へのファイルの格納を完了したとき、ファイルのアップロード結果クラスがファイル サービスへを返されます。 このクラスはクライアントに送り返され、後処理に対処する **OnUploadCompleted** イベントをトリガーする可能性があります。 
 
 [![ファイル アップロード シーケンス ダイアグラム](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+
+
 
 

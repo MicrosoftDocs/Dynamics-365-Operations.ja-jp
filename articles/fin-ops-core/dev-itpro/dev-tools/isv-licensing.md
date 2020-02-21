@@ -1,9 +1,9 @@
 ---
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス
-description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
-author: robadawy
+description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
+author: jorisdg
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2391cf7fdfec391e09fc6dc3739233943c9e39b
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: e327cd062b7697028571f8df428973ec96346999
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824508"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033012"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -43,7 +43,7 @@ Microsoft Dynamics エコシステムには、独立系ソフトウェア ベン
 
 ### <a name="isvs-can-generate-their-own-licenses"></a>ISV は独自のライセンスを生成可能
 
-ISV は独自のライセンスを個別に生成し、ソリューションに適用し、これらのソリューションをパートナーおよび顧客に提供できます。 各 ISV ライセンスでは、ISV ソリューションを保護するためのランタイム機能を有効にします。 また、各 ISV ライセンスは、ソフトウェアが ISV によって配布されていることを保証する ISV Authenticode 証明書に関連付けられます。
+ISV は独自のライセンスを個別に生成し、ソリューションに適用し、これらのソリューションをパートナーおよび顧客に提供できます。 各 ISV ライセンスでは、ISV ソリューションを保護するためのランタイム機能を有効にします。 また、各 ISV ライセンスは、ソフトウェアが ISV によって配布されるようにする ISV Authenticode 証明書に関連付けられます。
 
 ### <a name="a-run-time-check-makes-sure-that-an-isv-generated-license-key-exists-in-the-customers-environment"></a>ランタイム チェックにより、ISV によって生成されたライセンス キーが顧客の環境に存在することを確認します。
 
@@ -58,7 +58,10 @@ ISV は**ブール値**および**番号**の 2 つのタイプを作成でき�
 ISV ライセンスがインポート後に無効になったとき、ISV ソリューションはサーバーが再起動されるまで実行を継続します。 (サーバーの再起動後、ソリューションは無効になっています。) Application Object Server (AOS) のインスタンスの起動時にエラーがスローされます。 エラーはイベント ログに書き込まれます。
 
 ## <a name="implementing-isv-licensing-in-a-solution"></a>ソリューションへの ISV ライセンスの実装
-ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。 ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 **注記:** ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。 Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。
+ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。 ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 
+
+> [!NOTE]
+> ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。 Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。
 
 ## <a name="certificate-import-and-export"></a>証明書のインポートおよびエクスポート
 証明書は、お客様のライセンス ファイルに署名し、インポート時にライセンス ファイルを検証するために使用されます。 Authenticode 証明書は、4 つのファイル形式をサポートします。 ISV ライセンス機能については、2 つの形式で証明書ファイルが必要です。
@@ -143,18 +146,22 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     | licensecode     | Microsoft Visual Studio のライセンス コードの名前。                |
     | certificatepath | 証明書のプライベート キーのパス。                                  |
     | パスワード        | 証明書のプライベート キーのパスワード。                             |
-    | 顧客        | (手順 1 のスクリーン ショットから) 顧客のテナント名。              |
-    | serialnumber    | 顧客のテナント ID (スクリーン ショットに「シリアル番号」と表示されています)。       |
+    | 顧客        | (手順 1 のスクリーンショットから) 顧客のテナント名。              |
+    | serialnumber    | 顧客のテナント ID (スクリーンショットに "シリアル番号" と表示されています)。       |
     | expirationdate  | オプション: ライセンスの有効期限。                               |
     | usercount       | オプション: カスタム検証ロジックが必要に応じて使用できる数値。 これはユーザーになる可能性がありますが、必ずしもユーザーに限定されません。 |
 
     次に例を示します。
+ 
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
+    ``` 
 
-        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
 
+3.  ライセンスをターゲット環境にインポートします。
 
-
-3.  ライセンスをターゲット環境にインポートします。 **注記:** 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、この記事の後半の「実稼働環境」セクションを参照してください。
+    > [!NOTE]
+    > 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、このトピックの後半の "実稼働環境" セクションを参照してください。
 
     | パラメーター名                | 説明                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -168,15 +175,17 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
     次に例を示します。
 
-        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```
 
-4.  対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、次のスクリーン ショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。 
+4.  対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、次のスクリーンショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。 
 
     ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にする](./media/isv18.png)
 
 5.  非実稼働インストールでは、Visual Studio からデータベースの同期プロセスを開始する必要があります。
 
-コンフィギュレーション キーを有効にした後、次のスクリーン ショットに示すように、ボタンは表示されるようになります。 
+コンフィギュレーション キーを有効にした後、次のスクリーンショットに示すように、ボタンは表示されるようになります。 
 
 ![コンフィギュレーション キーを有効にするとボタンが表示されます](./media/isv19.png)
 
@@ -201,31 +210,67 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 一度に複数のライセンスをインストールすることができます。 別のライセンスがいずれかに依存する場合は、それに応じた名前を確認します。 (ライセンスはアルファベット順にインストールされます。)
 
 ## <a name="appendix-create-self-signed-certificates-for-test-purposes"></a>付録: テスト目的での自己署名証明書の作成
-**注記:** 自己署名証明書は、開発時にのみ使用できます。 これらは、実稼働環境でサポートされていません。
+
+> [!NOTE]
+> 自己署名証明書は、開発時にのみ使用できます。 これらは、実稼働環境でサポートされていません。
+
+プラットフォーム更新プログラム 32 またはそれ以前用:
 
 1.  テストの目的で、 自己署名の CA 証明書を作成することができます。 Visual Studio のツール プロンプトを使用して、次のコマンドを実行します。
 
-        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+    ```Console
+    makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+    ```
 
     詳細については、[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。
 
 2.  CA を使用して証明書を作成します。
 
-        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```Console
+    makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```
 
 3.  ISV 証明書を PFX 形式に変換します。
 
-        pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```Console
+    pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```
 
 4.  テスト シナリオでは、すべての AOS インスタンスに手動で自己署名 CA 証明書をインポートします。
 
-        certutil -addstore root c:\temp\ca.cer
+    ```Console
+    certutil -addstore root c:\temp\ca.cer
+    ```
 
     ただし、自己署名 ISV 証明書を使用していた場合、CA 証明書ではなくその証明書をインポートする必要があります。
 
-        certutil -addstore root c:\temp\isvcert.cer
+    ```Console
+    certutil -addstore root c:\temp\isvcert.cer
+    ```
 
+プラットフォーム更新プログラム 33 またはそれ以降用:
 
+1. テストの目的で、PowerShell コマンド `New-SelfSignedCertificate` を使用する自己署名証明書を作成します。
+    1. 証明書を作成します。
+        ```PowerShell
+        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCertTest" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1)
+        ```
+    2. 新しい証明書への参照を取得します。
+        ```PowerShell
+        [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
+        ```
+    3. 証明書が使用するセキュリティで保護された文字列パスワードを作成します。
+        ```PowerShell
+        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "########" -Force -AsPlainText
+        ```
+    4. パスワードを使用する **.pfx** ファイルとして証明書の秘密キーをエクスポートします。
+        ```PowerShell
+        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.pfx" -Password $rootcertPassword
+        ```
+    5. **.crt** ファイルとして証明書の公開キーをエクスポートします。
+        ```PowerShell
+        Export-Certificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.cer"
+        ```
 
-
+2. エクスポートされた *cer* ファイルを、ローカル コンピューターの**信頼済ルート証明機関\証明書**フォルダーにインポートします。
 

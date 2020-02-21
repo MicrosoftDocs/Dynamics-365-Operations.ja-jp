@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations へのコードの移行の準備
+title: Finance and Operations へのコード移行の準備
 description: このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。
 author: RobinARH
 manager: AnnBe
@@ -14,26 +14,26 @@ ms.search.scope: Operations
 ms.custom: 25971
 ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb8d0b118ff5382432336443c0957ce8d81bddef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4cbf45b7c847cc562e9d51899910b0d1cfcf140b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812045"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033047"
 ---
-# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
+# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
-<a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>必要条件
 -------------
 
-リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、このインスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
+リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
 
 -   [開発ツール](../dev-tools/developer-home-page.md)
 -   [モデルとパッケージ](../dev-tools/models.md)
@@ -44,7 +44,7 @@ ms.locfileid: "2812045"
 ## <a name="overview-of-the-code-migration-process"></a>コード移行プロセスの概要
 ### <a name="model-split"></a>分割されたモデル
 
-Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます: 
+Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます。 
 
 **プラットフォームパッケージ**
 
@@ -172,10 +172,12 @@ Finance and Operations では、次の主要なアクションはシステム定
 2.  以下に示すように、TODO とコード行を置き換えます。
     -   システム定義の **削除** ボタンの状態は、firstmaster データソースの AllowDelete プロパティによって制御されます。 AllowDelete を false に設定することにより、キーボード ショートカットが使用されている場合に削除タスクは実行されません。
 
-            // Delete button
-            /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: DeleteCmdButton */
-            deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
-            PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        ```xpp
+        // Delete button
+        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: DeleteCmdButton */
+        deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        ```
 
 3.  エディターで、DeleteCmdButton を探してフォーム デザインから削除します。 
 
@@ -190,18 +192,20 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 6.  **編集**ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
 
-        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
-        editCmdButton.enabled(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced);
+    ```xpp
+    /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
+    editCmdButton.enabled(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced);
 
-        if(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced)
-        {
-            element.design().ViewEditMode(ViewEditMode::Auto);
-        }
-        else
-        {
-            element.design().ViewEditMode(ViewEditMode::View);
+    if(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced)
+    {
+        element.design().ViewEditMode(ViewEditMode::Auto);
+    }
+    else
+    {
+        element.design().ViewEditMode(ViewEditMode::View);
 
-        }
+    }
+    ```
 
 7.  このボタンのその他の TODO をダブルクリックします。
 
@@ -209,71 +213,75 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 8.  モデル化された**編集**ボタンでコードを検査します。 このロジックは、フォームの task() メソッドに移動する必要があります。
 
-        [Control("CommandButton")]
-        class EditCmdButton
+    ```xpp
+    [Control("CommandButton")]
+    class EditCmdButton
+    {
+        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving this button code to the task override method and remove the control EditCmdButton. */
+        void clicked()
         {
-            /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving this button code to the task override method and remove the control EditCmdButton. */
-            void clicked()
+            if (purchCommitmentHeader.WorkflowApprovalState ==     
+                PurchCommitmentWorkflowApprovalState_PSN::Approved)
             {
-                if (purchCommitmentHeader.WorkflowApprovalState ==     
-                    PurchCommitmentWorkflowApprovalState_PSN::Approved)
-                {
-                    if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), 
-                        DialogButton::No) == DialogButton::Yes)
-                    {
-                        super();
-
-                        PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, 
-                          PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
-                    }
-                }
-                else
+                if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), 
+                    DialogButton::No) == DialogButton::Yes)
                 {
                     super();
+
+                    PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, 
+                        PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
                 }
             }
+            else
+            {
+                super();
+            }
         }
+    }
+    ```
 
 9.  Visual Studio デザイナーの左側で、**メソッド** &gt; **上書き**を右クリックし、**タスク**を選択して、フォームのタスク メソッドの上書きを追加します。
 10. システム定義の **編集** ボタンをクリックしたときに上記のコードがトリガーされるように、以下に示すようにタスク メソッドを更新します。
 
+    ```xpp
+    /// 
+        ///
         /// 
-            ///
-            /// 
-            /// 
-            /// 
-            public int task(int _taskId)
+        /// 
+        /// 
+        public int task(int _taskId)
+        {
+            #Task
+            int ret;
+
+            switch (_taskId)
             {
-                #Task
-                int ret;
+                case #taskEditRecord:
 
-                switch (_taskId)
-                {
-                    case #taskEditRecord:
-
-                        if (purchCommitmentHeader.WorkflowApprovalState == PurchCommitmentWorkflowApprovalState_PSN::Approved)
-                        {
-                            if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), DialogButton::No) == DialogButton::Yes)
-                            {
-                                ret = super(_taskId);
-
-                                PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
-                            }
-                        }
-                        else
+                    if (purchCommitmentHeader.WorkflowApprovalState == PurchCommitmentWorkflowApprovalState_PSN::Approved)
+                    {
+                        if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), DialogButton::No) == DialogButton::Yes)
                         {
                             ret = super(_taskId);
+
+                            PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
                         }
-
-                        break;
-
-                    default:
+                    }
+                    else
+                    {
                         ret = super(_taskId);
-                        break;
-                }
+                    }
 
-                return ret;
+                    break;
+
+                default:
+                    ret = super(_taskId);
+                    break;
             }
+
+            return ret;
+        }
+    ```
 
 11. エディターで、**EditCmdButton** を探してフォーム デザインから削除します。 
 
@@ -313,9 +321,11 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 13. デバッグを停止します。
 14. 例外を修正するには、メソッド宣言を FormBuildStringControl から FormBuildCheckBoxControl に変更します。
 
-        protected FormBuildStringControl getBuildControl()
-        protected FormBuildCheckBoxControl getBuildControl()
-
+    ```xpp
+    protected FormBuildStringControl getBuildControl()
+    protected FormBuildCheckBoxControl getBuildControl()
+    ```
+    
 15. プロジェクトをリビルドして、**Ctrl+F5** を押します。 キャスト エラーが解決されたため、フォームが正常に開きます。
 
     [![a](./media/a-1024x576.png)](./media/a.png)

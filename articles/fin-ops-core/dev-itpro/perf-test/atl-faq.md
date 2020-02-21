@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 8cb281d72049f73ab81ad97c50d4991b3c164a3c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 330ca2a1cfe1469a44259cce830c52ea979378c9
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191817"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033039"
 ---
 # <a name="acceptance-test-library-faq"></a>承認テスト ライブラリに関するよく寄せられる質問
 
@@ -50,7 +50,7 @@ Fluent メソッドを追加するクラスにより、異なるルールが適�
 
 ### <a name="option-1"></a>オプション 1
 
-```
+```xpp
 salesLine.setQuantity(10).setUnitPrice(100).setAmount(2000).save()
 ```
 
@@ -58,7 +58,7 @@ salesLine.setQuantity(10).setUnitPrice(100).setAmount(2000).save()
     
 ### <a name="option-2"></a>オプション 2
 
-```
+```xpp
 salesLine.setAmount(2000).setQuantity(10).setUnitPrice(100).save()
 ```
 

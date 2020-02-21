@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 475ca363f4980f26b3ca754bd223662b112ccbcf
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a25387e0ec8ff99ddb9b6c1f1c515fd92008d33a
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248830"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033027"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 
@@ -42,17 +42,21 @@ ms.locfileid: "2248830"
 
 ビジネス ロジックを **ApplicationSuite** モデルに追加する場合、そのロジックは新しい **AccountingGroupId** フィールドをクエリし、テーブル マップ レコードのタイプが **ISV1Header** である場合、ランタイム エラーが発生します。
 
-        SalesPurchTable      headerTable;
-        ...
-        ...
-        if (headerTable.AccountingGroupId)
+```xpp
+SalesPurchTable      headerTable;
+...
+...
+if (headerTable.AccountingGroupId)
+```
 
 同様に、ビジネス ロジックを **ApplicationSuite** モデルに追加する場合、およびそのロジックが **validateAccountingGroup** を照会する場合、ランタイム エラーが発生します。
 
-        SalesPurchTable      headerTable;
-        ...
-        ...
-        if (headerTable.validateAccountingGroup())
+```xpp
+SalesPurchTable      headerTable;
+...
+...
+if (headerTable.validateAccountingGroup())
+```
 
 結果として、新しいフィールドにマッピングを追加して新しいメソッドを **ISV1Header** テーブルに追加しない限り、ソリューションは破損します。 
 

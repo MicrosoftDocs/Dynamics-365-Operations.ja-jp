@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 303efc5e8f39d8d2c50f4f57dbf16231620fee0d
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b1a1c89e211528965e040b6bd42ac751f9bd695f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658834"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033052"
 ---
 # <a name="message-center-message-bar-and-message-details-faq"></a>メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
 
@@ -72,19 +72,23 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 
 [![メッセージ バー タイプ](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) 
 
-**注記:** スライダー ダイアログからメッセージング API が呼び出されても、メッセージが表示される前にそのスライダー ダイアログが閉じられると、メッセージはスライダー ダイアログの親ページのメッセージ バーに表示されます。 メッセージが表示される前にそのスライダー ダイアログ ボックスを閉じ、親ページが存在しない場合 (つまり、親とは、ワークスペース)、メッセージは、メッセージ センターにルーティングされます。 メッセージング API は必ずメッセージを表示します。 適切なホスト ページが見つからない場合は、メッセージがメッセージ センターに送信されます。
+> [!NOTE]
+> スライダー ダイアログからメッセージング API が呼び出されても、メッセージが表示される前にそのスライダー ダイアログが閉じられると、メッセージはスライダー ダイアログの親ページのメッセージ バーに表示されます。 メッセージが表示される前にそのスライダー ダイアログ ボックスを閉じ、親ページが存在しない場合 (つまり、親とは、ワークスペース)、メッセージは、メッセージ センターにルーティングされます。 メッセージング API は必ずメッセージを表示します。 適切なホスト ページが見つからない場合は、メッセージがメッセージ センターに送信されます。
 
 ## <a name="the-message-api-for-explicit-add-and-remove-messages"></a>明示的なメッセージの追加および削除の Message() API
 メッセージング システムは、従来の検証メッセージ API (**info()**、**warning()**/**checkfailed()**、および **error()**) をサポートしており、メッセージを確定的にメッセージバーまたはメッセージセンターに送信します。 メッセージング システムは、検証が再実行されたときにデータ検証に関連するメッセージ バー メッセージもクリアします。 また、メッセージング システムには、開発者が明示的にメッセージを追加したり削除したりする新しい **Message()** API が含まれます。 この API は、データ検証に必ずしも関連しないユーザー エクスペリエンスに関する情報メッセージを表示するのに便利です。 この場合、メッセージは現在のレコードが表示されるときに表示する必要があります。
 
 ![情報メッセージに使用されるメッセージ API の例](./media/messaging_singlemessagebarinfo.jpg)
 
-    messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```xpp
+messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```
 
 新しいレコードがページに表示されると、メッセージはクリアされます。
 
-    Message::Remove(messageId);
-
+```xpp
+Message::Remove(messageId);
+```
 
 以下のメッセージタイプがサポートされています: **MessageSeverity::Info**、**MessageSeverity::Warning**、および **MessageSeverity::Error**。 また、**Message()** API を使用するメッセージは確定的となります。 メッセージ バーまたはメッセージ センターにルーティングできます。
 
@@ -152,18 +156,20 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 ## <a name="messaging-from-dialogs-and-slider-dialogs"></a>ダイアログおよびスライダー ダイアログからのメッセージング
 確定的なメッセージング システムが、現在のページにメッセージを送信しようとします。 ただし、すべてのダイアログまたはスライダー ダイアログからの呼び出しが、そのダイアログまたはスライダーにルーティングされるわけではありません。 場合によっては、メッセージング システムが代わりに親ページにメッセージを送信します。 この現象は、ダイアログまたはスライダが閉じられているときにメッセージング システムが呼び出されると発生する可能性があります。 場合によっては、ダイアログまたはスライダーが閉じるプロセスを開始するときにメッセージング システムを呼び出せますが、クライアントが有効な理由から閉じるプロセスを中断します。 したがって、「不可逆地点」があり、その時点を過ぎると、メッセージング システムはもはやダイアログまたはスライダー にメッセージを送信しようとせず、メッセージを親ページに送信します。 ユーザーがフォーム上の **OK** ボタンクリックすると、下記のコード例に示すように、終了シーケンスに入ります。
 
-    closeOK()
-    {
-        // current form
-        super(); // calls close()
-        // parent or message center
-    }
-    Close()
-    {
-        // current form
-        super();// point of no return
-        // parent or message center
-    }
+```xpp
+closeOK()
+{
+    // current form
+    super(); // calls close()
+    // parent or message center
+}
+Close()
+{
+    // current form
+    super();// point of no return
+    // parent or message center
+}
+```
 
 クライアントが **closeOK()** または **close()** を直接呼び出す場合、最終的な結果がページまたは親ページである可能性があります。
 
@@ -191,14 +197,17 @@ AX 2012 では、ユーザーが無効とみなされるデータを入力また
 
 **例**
 
-    myMethod()
-    {
-        Setprefix("Posting Results");
-        Setprefix("Invoice Account: DE-001);
-        Info("Invoice FTI-000002 has been posted);
-    }
+```xpp
+myMethod()
+{
+    Setprefix("Posting Results");
+    Setprefix("Invoice Account: DE-001);
+    Info("Invoice FTI-000002 has been posted);
+}
+```
 
-**注記:** コレクションに親メッセージと単一のメッセージのみが含まれている場合、その単一のメッセージはメッセージ バーに送信され、SetPrefix ウィンドウは使用されません。
+> [!NOTE]
+> コレクションに親メッセージと単一のメッセージのみが含まれている場合、その単一のメッセージはメッセージ バーに送信され、SetPrefix ウィンドウは使用されません。
 
 ## <a name="setprefix-and-asynchronous-processes"></a>SetPrefix() および非同期プロセス
 **SetPrefix()** の使用も確定的です。 つまり、**SetPrefix()** を使用して、ページ コンテキスト (たとえば、非同期バッチ操作) が存在しない場合、結果の通知はページに関連付けられていないメッセージ センターに送信されます。

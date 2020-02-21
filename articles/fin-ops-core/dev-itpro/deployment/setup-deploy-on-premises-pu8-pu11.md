@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9edb9c924737565959d0d13b8d6818f74b32a3b7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0ad100baf335464b45922707bc89333df89daebc
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770933"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029436"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
@@ -33,7 +33,7 @@ ms.locfileid: "2770933"
 > [!IMPORTANT]
 > このトピックは、プラットフォーム更新プログラム 8 および 11 にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新 12 への展開に関する詳細については、[オンプレミス環境の設定と配置 (プラットフォーム更新 12 以降)](setup-deploy-on-premises-pu12.md) を参照してください。
 
-## <a name="finance-and-operations-components"></a>Finance and Operations のコンポーネント
+## <a name="finance-and-operations-components"></a>Finance and Operations コンポーネント
 
 Finance and Operations アプリケーションは、次の 3 つの主要なコンポーネントで構成されています。
 
@@ -73,7 +73,7 @@ Finance and Operations のビットは、Microsoft Dynamics Lifecycle Services (
 
 ## <a name="standalone-service-fabric"></a>Standalone Service Fabric
 
-Finance and Operations は スタンドアロン Service Fabric を使用します。 詳細については、[Service Fabric ドキュメント](/azure/service-fabric/) を参照してください。
+Finance and Operations はスタンドアロン Service Fabric を使用します。 詳細については、[Service Fabric ドキュメント](/azure/service-fabric/) を参照してください。
 
 Finance and Operations の設定は、Service Fabric (SF) 内に一連のアプリケーションを配置します。 展開中に、クラスター内の各ノードは、次のいずれかのノード タイプを持つように構成によって定義されます。
 
@@ -178,8 +178,8 @@ Finance and Operations のインフラストラクチャを設定するには、
 17. [資産除去債務 (SSRS) の設定](#setupssrs)
 18. [AD FS のコンフィギュレーション](#configureadfs)
 19. [コネクタを構成し、オンプレミスのローカル エージェントをインストールする](#configureconnector)
-20. [LCS から Finance and Operations (オンプレミス) 環境を配置する](#deploy)
-21. [Finance and Operations (オンプレミス) 環境に接続する](#connect)
+20. [LCS からの Finance and Operations (オンプレミス) 環境の配置](#deploy)
+21. [Finance and Operations (オンプレミス) 環境への接続](#connect)
 
 ### <a name="plandomain"></a> 1. ドメイン名と DNS ゾーンの計画
 
@@ -214,13 +214,13 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 
 #### <a name="subject-name"></a>件名
 
-```
+```Text
 CN = *.d365ffo.onprem.contoso.com
 ```
 
 #### <a name="subject-alternative-names"></a>件名の代替名
 
-```
+```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
@@ -363,13 +363,13 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 3. 既に生成されている SSL 証明書を使用している場合は、証明書生成をスキップし、configTemplate.xml ファイルの拇印を更新します。 証明書は CurrentUser\My ストアにインストールする必要があり、その秘密キーはエクスポート可能でなければなりません。
 
-> [!WARNING]
-> 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 非印刷可能な特殊文字が存在する場合、**X509 証明書が有効ではない**というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
-> ```powershell
-> dir cert:\CurrentUser\My
-> dir cert:\LocalMachine\My
-> dir cert:\LocalMachine\Root
-> ```
+    > [!WARNING]
+    > 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 非印刷可能な特殊文字が存在する場合、**X509 証明書が有効ではない**というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
+    > ```powershell
+    > dir cert:\CurrentUser\My
+    > dir cert:\LocalMachine\My
+    > dir cert:\LocalMachine\Root
+    > ```
 
 4. 各証明書の **ProtectTo** でユーザーまたはグループのセミコロンで区切られた一覧を指定します。 **ProtectTo** タグで指定された Active Directory ユーザーとグループのみに、スクリプトを使用してエクスポートされる証明書をインポートするアクセス許可があります。 エクスポートした証明書を保護するため、スクリプトによりパスワードがサポートされていません。
 
@@ -390,12 +390,12 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 2. 次の Microsoft Windows Installers (MSI) を全ての VM でアクセス可能なファイル共有にダウンロードします。
 
-| コンポーネント | リンクのダウンロード |
-|-----------|---------------|
-| SNAC – ODBC ドライバー | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| Microsoft SQL ServerManagement Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
-| Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
-| Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
+    | コンポーネント | リンクのダウンロード |
+    |-----------|---------------|
+    | SNAC – ODBC ドライバー | <https://www.microsoft.com/download/details.aspx?id=53339> |
+    | Microsoft SQL ServerManagement Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+    | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
+    | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
 
 #### <a name="follow-these-steps-for-each-vm"></a>各 VM について、これらのステップに従います。
 
@@ -460,7 +460,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 ### <a name="configurelcs"></a> 11. テナント用 LCS 接続のコンフィギュレーション
 
-Finance and Operations の展開とサービスは、オンプレミスのローカル エージェントを使用して LCS を通じて調整されます。 LCS から Finance and Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、Contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
+Finance and Operations の展開とサービスは、オンプレミスのローカル エージェントを使用して LCS を通じて調整されます。 LCS から Finance and Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、Contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書を構成する必要があります。
 
 CA から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。
 
@@ -563,10 +563,10 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 3. **モデル**タブで、必要なリリースのデモ データを選択し、zip ファイルをダウンロードします。
 
-| リリース | デモ データ |
-|-------|------|
-| オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations (オンプレミス) - デモ データ |
-| オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations, Enterprise edition (オンプレミス) - 更新プログラム 11 デモ データ |
+    | リリース | デモ データ |
+    |-------|------|
+    | オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations (オンプレミス) - デモ データ |
+    | オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations, Enterprise edition (オンプレミス) - 更新プログラム 11 デモ データ |
 
 4. zip ファイルには空のデモデータ .bak ファイルが含まれています。 必要に応じて、.bak ファイルを選択します。 たとえば、デモ データが必要な場合は、AxBootstrapDB_Demodata.bak ファイルをダウンロードします。
 
@@ -595,7 +595,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
    - **OrchestratorData** という名前の空のデータベースを作成します。 このデータベースは、オンプレミスのローカル エージェントによって配置を調整するために使用されます。
    - データベースにローカル エージェント gMSA (svc-LocalAgent$) **db\_owner** アクセス許可を与えます。
 
-#### <a name="configure-the-finance-and-operations-database"></a>Finance and Operations データベースの構成
+#### <a name="configure-the-finance-and-operations-database"></a>Finance and Operations データベースを構成する
 
 1. 次のスクリプトを実行します。
 
@@ -706,7 +706,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 この手順を完了する前に、AD FS を Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
-Finance and Operations では、AD FS の既定で標準のコンフィギュレーション以外の追加のコンフィギュレーションが必要です。 以下の手順では、Windows PowerShell は AD FS ロール サービスがインストールされているマシン上で実行されます。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。
+Finance and Operations では、AD FS の既定で標準の構成以外の追加の構成が必要です。 以下の手順では、Windows PowerShell は AD FS ロール サービスがインストールされているマシン上で実行されます。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。
 
 1. AD FS 識別子を構成して、AD FS トークン発行者と一致するようにします。
 
@@ -790,7 +790,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
 
-### <a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境に接続する
+### <a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境への接続
 
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 79871
 ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3b91aa6f753a05a78c674676b07febe27a2aac5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a5150b126485d738471a1da8a88666ae1bf75a6
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191689"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983684"
 ---
 # <a name="element-designers"></a>要素デザイナー
 

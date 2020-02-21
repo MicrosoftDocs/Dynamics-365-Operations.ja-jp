@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143ea5885801174ff86eac822f00f63f09eda7fb
-ms.sourcegitcommit: 014e86eba7ce4d151feb52aff4a7303d98235f22
+ms.openlocfilehash: 9d362be83047c0a810dfea22e8404eef6e940756
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2905766"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003641"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -41,9 +41,11 @@ ms.locfileid: "2905766"
 
 - **バイナリ更新プログラム**は、コンパイル済みで累積されています。 その後のバイナリ更新には、これまでのすべての更新が含まれます。 これらの更新は、開発環境でコンパイルする必要はなく、LCS から非開発環境に直接適用することもできます。
         
-    Retail 機能とカスタマイズされた販売時点管理 (POS) のインスタンスを持つ環境を実行している場合は、Retail SDK のパッケージに記載されている追加手順を完了する必要があります。 Microsoft Dynamics 365 Retail で、すべての更新プログラムは、アプリケーション モデルの更新プログラムでさえ、バイナリ更新プログラムとしてリリースされます。    
+    コマース機能とカスタマイズされたクラウド販売時点管理 (POS) のインスタンスを持つ環境を実行している場合は、SDK パッケージに記載されている追加手順を完了する必要があります。 Microsoft Dynamics 365 Commerce で、すべての更新プログラムは、アプリケーション モデルの更新プログラムでさえ、バイナリ更新プログラムとしてリリースされます。    
     
-    バージョン 8.1 または それ以降のバージョン の アプリケーション モデル の更新を含む Finance and Operations アプリでは、バイナリ アップデートの形式でリリースされます。
+
+    バージョン 8.1 またはそれ以降のコマースおよび Finance and Operations アプリのすべてのバージョンでは、アプリケーション モデルの更新を含むすべての更新がバイナリ更新としてリリースされます。
+
 
 - **X++ 更新プログラム**には、アプリケーション モデルの特定のアプリケーション機能への更新が含まれます。 これらの更新は、個別にダウンロードして適用することができます。 環境に適用する特定の X++ 更新プログラムを選択することができます。 依存 X++ 更新は自動的に選択され、ダウンロードされます。 X++ の更新はソース コードの更新です。 非開発環境に適用する前に、X++ の更新を開発者環境でコンパイルし、カスタマイズとマージする必要があります。 X++ の更新は、バージョン 8.0 以前にのみ適用されます。 
 

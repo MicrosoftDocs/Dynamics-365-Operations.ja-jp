@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 695997f9ed2f96a05f5f025c39fe22dc30336d45
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: a80213d34e6d12e2c802f631d8fbfb5321b4d39a
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658836"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029376"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -150,13 +150,17 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
     -   これを行うには、次の手順に従います。
         1.  フォーム **run()** の **SysLookup::tab2ComboBox** メソッド転記 **super** を呼び出し、コンボ ボックスにルックアップに表示されているタブからキャプションを設定します。
 
-                // Generate view combobox based on tabs
-                tab2ComboBoxItemMap = SysLookup::tab2ComboBox(Tab, switchView);
+            ```xpp
+            // Generate view combobox based on tabs
+            tab2ComboBoxItemMap = SysLookup::tab2ComboBox(Tab, switchView);
+            ```
 
         2.  コンボ ボックスで **modified()** をオーバーライドし、コンボ ボックスで選択した値に基づいて表示されるタブを更新します。
 
-                Tab.tabChanged(Tab.tabValue(), tab2ComboBoxItemMap.lookup(this.selection()));
-
+            ```xpp
+            Tab.tabChanged(Tab.tabValue(), tab2ComboBoxItemMap.lookup(this.selection()));
+            ```
+            
 ### <a name="open-issues"></a>未処理の問題
 
 -   **最近使用した値をルックアップに組み込むことはできますか。**

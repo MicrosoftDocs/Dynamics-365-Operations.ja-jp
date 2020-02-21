@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5431ce12adb4ae5da42f2f817a545c096246f58b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 55f640641bb6aad35fe48b1e9e4e193e5c3b0453
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183338"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983638"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 

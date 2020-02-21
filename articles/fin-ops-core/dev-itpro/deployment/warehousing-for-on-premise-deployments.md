@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c445490df4ce0c8e766f6f811bfd86d371e74be4
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: d119ab23c0b2bfc668131cd5b354b709d8045afb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548910"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026203"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -46,8 +46,10 @@ ms.locfileid: "2548910"
 AD FS および Finance + Operations 間で認証を正常に交換するために、AD FS アプリケーション グループの下の AD FS にアプリケーション エントリを登録する必要があります。 このアプリケーション エントリを作成するには、AD FS がインストールされているマシンで次の Windows PowerShell コマンドを実行します。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。
 
 1.  アプリケーションのエントリを作成する Windows PowerShell コンソールに、次のコマンドを入力します。  
-    
-        Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+
+    ```powershell
+    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+    ```
 
     - \<リソース URL\> は、たとえば `https://ax.d365ffo.onprem.contoso.com` などです (`https://ax.d365ffo.onprem.contoso.com` は、Finance + Operations にアクセスするための URL です)。
     - \<管理者ユーザー\> は、AD FS コンピューターへの管理者のアクセス権を持つ任意のユーザーにすることができます。
@@ -56,7 +58,9 @@ AD FS および Finance + Operations 間で認証を正常に交換するため�
 
 3.  アプリケーションへのアクセス許可を付与するには、次のコマンドを実行します。  
     
-        Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
+    ```powershell
+    Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
+    ```
 
 ## <a name="create-and-configure-a-user-account"></a>ユーザー アカウントの作成およびコンフィギュレーション
 

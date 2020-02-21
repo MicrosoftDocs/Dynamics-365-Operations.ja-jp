@@ -1,7 +1,7 @@
 ---
 title: AX 2012 からのアップグレード - 切替テスト (切替モック)
 description: このトピックでは、Microsoft Dynamics AX 2012 環境をオフにしてから Finance and Operations をオンにするまでの切替えプロセスをテストする方法について説明します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: fd28eaa8d9766fde7a6379e5595fe88ff43b2e02
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2d7a53ce1304cd217d7751f855a0802965cca929
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812012"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983644"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 
@@ -28,11 +28,11 @@ ms.locfileid: "2812012"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
+*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、かつ Finance and Operations をオンにする前に発生するタスクで構成されます。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
 
 切替中には、3 つの主要なワーク ストリームがあります。
 
-- **技術的なワーク ストリーム** – このワーク ストリームには、データ アップグレードの実行プロセスが含まれています。 業務では、許可されているダウンタイムの金額に制限が適用されます。 ダウンタイムの間は、AX 2012 または Finance and Operations のいずれも利用できません。 このワーク ストリームでは、業務でのダウンタイム制限を満たすために、データ アップグレード手順をチューニングする必要があります。
+- **技術的なワーク ストリーム** – このワーク ストリームには、データ アップグレードの実行プロセスが含まれています。 業務では、許可されているダウンタイムの金額に制限が適用されます。 このダウンタイム中には、AX 2012 および Finance and Operations のどちらの製品データベースも使用できません。 このワーク ストリームでは、業務でのダウンタイム制限を満たすために、データ アップグレード手順をチューニングする必要があります。
 - **機能的なワーク ストリーム** – このワーク ストリームには、データのアップグレードが完了した後に実行されるコンフィギュレーション タスクが含まれます。 機能的なワークストリームと技術的なワークストリームの両方が業務のダウンタイム制限内に収まる必要があるため、これらのタスクをすべて文書化および定量化し、リソースを割り当てる必要があります。
 - **AX 2012 ロールバック** - このワークストリームには AX 2012 環境へのロールバックが含まれています。 ロールバックする必要はありませんが、必要な場合に備えてテスト済みのプロセスがあることが非常に重要です。
 

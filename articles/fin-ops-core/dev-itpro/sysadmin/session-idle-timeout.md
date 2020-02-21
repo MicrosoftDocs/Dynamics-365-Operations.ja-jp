@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 8af87044854f7656108306442b49d26420a225c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 112027eee5ecfb1b8989c0cc107d5bb5ad64209b
+ms.sourcegitcommit: 9f4719e2be75cdfc6c59617a3141ba2fa1da00dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248720"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033786"
 ---
 # <a name="set-the-session-idle-timeout"></a>セッション アイドル タイムアウトの設定
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 セッション アイドル タイムアウト設定は、ユーザーのセッションがタイムアウトして閉じる前にユーザーが非アクティブになれる時間の長さを表します。 ユーザーブラウザセッションにのみ影響します。
 

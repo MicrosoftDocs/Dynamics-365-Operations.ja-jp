@@ -1,6 +1,6 @@
 ---
 title: 生産データベースのコピーのデバッグ
-description: このトピックでは、Finance and Operations のデバッグおよび診断のシナリオについて説明します。
+description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 03/11/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: a60dad258712440607f2001db988acc89e523ebe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e5238ede5477e29df2ce92d106de9945c90ea2d
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183417"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029434"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 
@@ -61,7 +61,7 @@ SSMS で、SQL Server、ユーザー名、およびパスワードを入力し�
 
 接続したら、データベースに対してクエリを開き、次の Transact-SQL (T-SQL) コマンドで IP アドレスを入力します。
 
-```
+```sql
 -- Create database-level firewall setting for IP a.b.c.d 
 EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
@@ -84,7 +84,7 @@ EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment',
 
 LCS で UAT 環境の環境詳細ページから値を使用するように、これらのコンフィギュレーションを更新します。
 
-```
+```xml
 <add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
 <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
 <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />

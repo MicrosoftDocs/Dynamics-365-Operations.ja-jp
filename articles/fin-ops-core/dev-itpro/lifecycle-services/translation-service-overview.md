@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 785739c2d7b7794dc4dc8506251d40a81684c3e2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 162aad9c875eea1d564c8ac89d5d0efdf2675be4
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812052"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003570"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service 概要
 
@@ -52,7 +52,7 @@ DTS では、現在次の製品バージョンがサポートされています�
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | すべてのバージョン | .ktd、.ald | .docx | |
 | Dynamics 365 Finance and Operations アプリ | すべてのバージョン | .label.txt | .docx、.html | .txt は固有のラベル形式で、.html はカスタム ヘルプ ソリューションの形式です。 |
-| Microsoft Dynamics 365 Retail | すべてのバージョン | .label.txt | .docx | |
+| Microsoft Dynamics 365 Commerce | すべてのバージョン | .label.txt | .docx | |
 | Microsoft Dynamics CRM | すべてのバージョン | .resx | .docx | |
 | Microsoft Dynamics NAV | すべてのバージョン | .etx、.stx、.resx、.txt、.xml、.xlf | .docx | .txt と .xml は NAV 固有の形式で、.xlf は Business Central の拡張リソース形式です。 |
 

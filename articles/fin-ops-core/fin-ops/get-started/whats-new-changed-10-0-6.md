@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
+title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能と変更点
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.6 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: acbd05cb6dbd5ed0739839c48321f6446e73370e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c49b30d5925479f0208f057e8a8ff5389d4c4116
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811470"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031007"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能と変更点
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.6 を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.234 です。 一般提供開始日は 11 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.6 の詳細については [追加リソース](whats-new-changed-10-0-6.md#additional-resources) を参照してください。
+このトピックでは、バージョン 10.0.6 の、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.234 です。 一般提供開始日は 11 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.6 の詳細については [追加リソース](whats-new-changed-10-0-6.md#additional-resources) を参照してください。
 
-Microsoft Dynamics 365 Retail の新機能と変更の最新のリリースについては、[Dynamics 365 Retail バージョン 10.0.6 の新機能と変更](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6) を参照してください。
+Microsoft Dynamics 365 Retail の最新のリリースの新機能と変更については、[Dynamics 365 Retail バージョン 10.0.6 の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6) を参照してください。
 
 ## <a name="product-configuration-models-v2-data-entity"></a>製品コンフィギュレーション モデル V2 データ エンティティ
 
@@ -59,7 +59,7 @@ Microsoft Dynamics 365 Retail の新機能と変更の最新のリリースに�
 バージョン 10.0.6 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7) を参照してください。
 
 ### <a name="platform-update-30"></a>プラットフォーム update 30
-バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プロフラム 30 についての詳細は、 [Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能や変更 を参照してください](whats-new-platform-update-30.md)。
+バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プログラム 30 についての詳細は、[Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能と変更点](whats-new-platform-update-30.md)を参照してください。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -67,11 +67,11 @@ Microsoft Dynamics 365 Retail の新機能と変更の最新のリリースに�
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

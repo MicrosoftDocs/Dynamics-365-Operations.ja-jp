@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 382357db252a9116e8f2df0eb22beb128b767221
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a7589003cf7ebec7408f4d7847e6afa11cb2aaed
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183332"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026197"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 
@@ -33,29 +33,41 @@ ms.locfileid: "2183332"
 オーバーレイは非常に侵入的な機能なので、使用しないことをお勧めします。 オーバーレイに代わる方法は、拡張です。 拡張子を使用すると、既存のコンポーネントを新しいモデルで拡張できます。 拡張子は維持しやすいですが、カスタマイズ時に拡張できる量は限られています。 メタデータを拡張する豊富な方法があります。 たとえば、テーブルに新しいフィールドを追加できます。 この記事では、X++ コードを拡張する方法について説明し、これらのモデルを再コンパイルせずに他のモデルで定義されているコンポーネントにメソッドと状態を追加できるようにします。 X++ 用の同様のコード拡張メカニズムが存在し、C\# で対応する機能の後でモデル化されます。 このメカニズムにより、クラスは、命名規則に従い public static メソッドをホストすることにより、拡張クラスとして指定することができます。 既存の機能では、拡張メソッドに渡される最初の引数の型は、拡張する型です。 この記事に記載する内容はその方向の次のステップであり、役に立つありのままの拡張についての説明です。 オブジェクト指向のプログラミングで、*拡張*という用語には、適切に定義された意味があります。 「クラス B がクラス A を拡張する」である場合、B が A から継承し、通常のオブジェクト指向の規則が暗示されていることを意味します。 実際、この用語は、この関係を表現するクラス宣言で使用される X++ 構文でも使用されます。 同時に複数のモデルから寄せられたメタデータについて*拡張*という用語を使用して説明します。 *拡張*という用語の過負荷を避けるために、代わりに*クラス強化*という用語を使用して、基本モデルのクラス A とそれに依存するモデルのクラス B の間の関係を指定します。ここで、B はそのモデルのコンテキストでクラス A に追加の機能を提供します。 ただし、*拡張クラス*という用語が一般的であるため、引き続き使用します。
 
 ## <a name="the-effective-class-concept"></a>有効なクラスの概念
-強化されたコンポーネントのパブリック メンバー、およびそのコンポーネントを強化するすべてのクラスの拡張機能のすべてのパブリック メンバーで構成されるクラスに条件を設けるために役立ちます。 このクラスは、指定されたモデルの有効なクラスと呼ばれます。 次の図は、基本モデルで定義された、**MyArtifact** および **MyArtifact**の拡張クラスを持つ 2 つの依存モデルで定義されたコンポーネント **MyModel** を示しています。 [![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル](./media/extensions-11.png)](./media/extensions-11.png)この例では、有効なクラスは、すべてのオリジナルのメソッドおよび拡張クラスからのすべてのパブリック コンポーネントを含む拡張モデルのクラスです。 有効なクラスは、特定のモデルで定義されているクラスの拡張機能のみが含まれているため、すべてのモデルで同じではありません。 次の図は、**MyExtensionModel** モデルの **MyArtifact** の有効クラスを示しています。 [![MyExtensionModel で MyArtifact の有効なクラス](./media/extensions-21.png)](./media/extensions-21.png) **MyModel** という名前のモデル内の **MyClass** という名前のクラスを使用して、クラス拡張について説明します。
+強化されたコンポーネントのパブリック メンバー、およびそのコンポーネントを強化するすべてのクラスの拡張機能のすべてのパブリック メンバーで構成されるクラスに条件を設けるために役立ちます。 このクラスは、指定されたモデルの有効なクラスと呼ばれます。 次の図は、基本モデルで定義された、**MyArtifact** および **MyArtifact**の拡張クラスを持つ 2 つの依存モデルで定義されたコンポーネント **MyModel** を示しています。 
 
-    class MyClass
+[![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル](./media/extensions-11.png)](./media/extensions-11.png) 
+
+この例では、有効なクラスはすべてのオリジナルのメソッドおよび拡張クラスからのすべてのパブリック コンポーネントを含む拡張モデルのクラスです。 有効なクラスは、特定のモデルで定義されているクラスの拡張機能のみが含まれているため、すべてのモデルで同じではありません。 次の図は、**MyExtensionModel** モデルの **MyArtifact** の有効クラスを示しています。 
+
+[![MyExtensionModel の MyArtifact の有効クラス](./media/extensions-21.png)](./media/extensions-21.png) 
+
+**MyModel** という名前のモデル内の **MyClass** という名前のクラスを使用して、クラス拡張について説明します。
+
+```xpp
+class MyClass
+{
+    public int mycState;
+    public str mycMethod(int arg)
     {
-        public int mycState;
-        public str mycMethod(int arg)
-        {
-            // ...
-        }
+        // ...
     }
+}
+```
 
 **MyModel** の上に構築される (つまり、MyModel に依存する) 拡張モデル (**MyExtensionModel**) に拡張クラスを導入することで、**MyClass** に新しいメソッドと状態を追加できます。
 
 ## <a name="extension-class-declarations"></a>拡張子のクラス宣言
 拡張子クラスに **ExtensionOf** 属性によって飾られているクラスで、**\_拡張子**接尾語という名も持っています。 (この名前付けの制限は、後で削除される可能性があります。) 拡張クラスの名前は、それ以外の場合重要ではありません。 このクラスは、次の例に示すように、**ExtensionOf** 属性で指定されたコンポーネントを補強します。
 
-    [ExtensionOf(classStr(MyClass))]
-    final class MyClass_Extension
+```xpp
+[ExtensionOf(classStr(MyClass))]
+final class MyClass_Extension
+{
+    private void new()
     {
-        private void new()
-        {
-        }
     }
+}
+```
 
 クラスはランタイム システムによってインスタンス化されるため、拡張クラスから派生する意味がありません。 したがって、拡張クラスは **final** としてマークする必要があります。 **classStr** コンパイル時関数は使用する必要があり、2 つの目的があります。
 
@@ -85,21 +97,25 @@ X++ はインスタンス コンストラクターおよび静的コンストラ
 
 次の例では、**ExtensionMethod** という名前の拡張メソッドを定義し、**MyClass** を補強します。
 
-    [ExtensionOf(classStr(MyClass))]
-    final class MyClass_Extension
+```xpp
+[ExtensionOf(classStr(MyClass))]
+final class MyClass_Extension
+{
+    private void new()
     {
-        private void new()
-        {
-        }
-        public int ExtensionMethod(int arg)
-        {
-        }
     }
+    public int ExtensionMethod(int arg)
+    {
+    }
+}
+```
 
 パブリック インスタンス メソッド (**ExtensionMethod**) は、拡張クラスで定義されます。 したがって、拡張クラスが定義されているモデルのコンテキストで **MyClass** で定義されているかのように使用できます。 次の例は、モデル内のメソッドを呼び出す方法を示しています。
 
-    MyClass c = new MyClass();
-    print c.ExtensionMethod(32);
+```xpp
+MyClass c = new MyClass();
+print c.ExtensionMethod(32);
+```
 
 拡張クラスで定義されているインスタンス メソッドは、強化されたコンポーネントのインスタンス メソッドとして使用されることに注意してください。 拡張メソッドは、それが補強するコンポーネントからのみパブリック メンバーにアクセスできます (プラットフォーム更新プログラム 9 またはそれ以降を使用している場合、保護されたメソッドおよびメンバーへのアクセスもサポートされています)。 この動作は仕様です。 コンポーネントは、**private**、または **internal** キーワードを通じて明示的に非表示にされる状態およびメソッドと直接やり取りできるようにする必要はありません。 それ以外の場合、明示的に非表示な状態とメソッドを直接操作すると、それらのコンポーネントの重要な実装の前提条件を無効にすることで障害が発生する可能性があります。 メソッドとメソッド本体のステートメントは、**this** キーワードを使用できます。 このコンテキストでは、**this** の型は強化されたコンポーネントの有効なクラスです。
 
@@ -107,24 +123,28 @@ X++ はインスタンス コンストラクターおよび静的コンストラ
 
 拡張クラスでパブリックおよび静的として定義されているメソッドは、強化されているコンポーネントの静的メソッドとして使用できます。
 
-    [ExtensionOf(classStr(MyClass))]
-    final class MyClass_Extension
+```xpp
+[ExtensionOf(classStr(MyClass))]
+final class MyClass_Extension
+{
+    private void new()
     {
-        private void new()
-        {
-        }
-        public int method1(int arg)
-        {
-        }
-        public static real CelsiusToFahrenheit(real celsius)
-        {
-            return (celsius * 9.0 / 5.0) + 32.0;
-        }
     }
+    public int method1(int arg)
+    {
+    }
+    public static real CelsiusToFahrenheit(real celsius)
+    {
+        return (celsius * 9.0 / 5.0) + 32.0;
+    }
+}
+```
 
 次の例は、モデル内のメソッドを呼び出す方法を示しています。
 
-    var temp = MyClass::CelsiusToFahrenheit(20.0);
+```xpp
+var temp = MyClass::CelsiusToFahrenheit(20.0);
+```
 
 静的メソッドは、パブリックの静的メソッドおよび強化されたコンポーネントの有効なクラスの状態にアクセスできます。 興味深い副作用として、**グローバル** クラスの静的拡張メソッドは接頭語なしで利用できる関数として言語で使用可能になります。
 
@@ -135,34 +155,39 @@ X++ はインスタンス コンストラクターおよび静的コンストラ
 
 コンポーネントの特定のインスタンスに関連する状態であるインスタンスの状態は、拡張クラスで指定できます。 次の例では、**state** という名前の状態を定義しています。
 
-    [ExtensionOf(classStr(MyClass))]
-    final class MyClass_Extension
+```xpp
+[ExtensionOf(classStr(MyClass))]
+final class MyClass_Extension
+{
+    public int state;
+    private void new()
     {
-        public int state;
-        private void new()
-        {
-        }
     }
+}
+```
 
 次の例は、コード内で **state** を使用する方法を示しています。
 
-    MyClass c = new MyClass();
-    c.state = 12;
+```xpp
+MyClass c = new MyClass();
+c.state = 12;
+```
 
 ### <a name="static-state"></a>静的な状態
 
 静的状態は、タイプのインスタンスではなくタイプに適用されます。 次の例は、静的な拡張状態を示しています。
 
-    [ExtensionOf(classStr(MyClass))]
-    final class MyClass_Extension
+```xpp
+[ExtensionOf(classStr(MyClass))]
+final class MyClass_Extension
+{
+    public int state;
+    public static int staticState;
+    static void TypeNew()
     {
-        public int state;
-        public static int staticState;
-        static void TypeNew()
-        {
-            staticState = 77;
-        }
+        staticState = 77;
     }
-
+}
+```
 
 

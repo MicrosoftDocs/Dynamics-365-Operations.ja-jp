@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 741001c5801604bf72ac18f0fec4be47d6c08f05
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f9f11a26fdbab8108c3f7cb61bcff0f285e75e0a
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812065"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983607"
 ---
 # <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 
@@ -162,7 +162,7 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
 11. **完了** をクリックします。 **環境** **の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](https://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 14. **次へ** をクリックします。

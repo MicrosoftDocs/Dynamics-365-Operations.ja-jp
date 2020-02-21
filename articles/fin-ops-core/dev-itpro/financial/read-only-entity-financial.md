@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7564bef57006f9493151fa3f0d234dc081e0d1f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: d80f8a50a9f1d898480a9b73eac7e93fe19168c1
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812107"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033026"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -94,33 +94,35 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 
 以前のバージョンで作業している場合、ここで説明されている手順を完了する必要があります。 最初に、エンティティ拡張機能自体を追加します。 コンテキスト メニュー (ショートカット メニュー) で **拡張機能を作成** を選択します。 次に、データを取得するコードを作成します。 エンティティ拡張子が既に確立されているため、新しいクラスを作成する必要があります。 次の例では、**ProductLine** という名前の任意の分析コードを追加します。.
     
-      [ExtensionOf(dataentityviewstr(DimensionCombinationentity))]
-        public final class DimensionCombinationentity_Extension
+```xpp    
+[ExtensionOf(dataentityviewstr(DimensionCombinationentity))]
+  public final class DimensionCombinationentity_Extension
+  {
+    private static server str getEmptyOrDimensionValueSqlString(str _attributeName)
+    {
+        str sqlStatement;
+
+        DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(_attributeName);
+
+        if (!dimensionAttribute)
         {
-            private static server str getEmptyOrDimensionValueSqlString(str _attributeName)
-            {
-                str sqlStatement;
-
-                DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(_attributeName);
-
-                if (!dimensionAttribute)
-                {
-                    sqlStatement = SysComputedColumn::returnLiteral('');
-                }
-                else
-                {
-                    sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
-                }
-
-                return sqlStatement;
-            }
-
-            /// Generates the sql to populate the FOTA view field.
-            public static server str ProductLineValue()
-            {
-                return DimensionCombinationentity::getEmptyOrDimensionValueSqlString('ProductLine');
-            }
+            sqlStatement = SysComputedColumn::returnLiteral('');
         }
+        else
+        {
+            sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
+        }
+
+        return sqlStatement;
+    }
+
+    /// Generates the sql to populate the FOTA view field.
+    public static server str ProductLineValue()
+    {
+        return DimensionCombinationentity::getEmptyOrDimensionValueSqlString('ProductLine');
+    }
+  }
+```
 
 これらのメソッドを参照するカスタム フィールドを使用して、新たに作成されたエンティティ拡張機能にフィールドを追加しました。 
 

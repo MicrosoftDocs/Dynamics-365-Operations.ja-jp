@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
+title: Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 3a2ff1738fbafd1ae80291549aee021181c4fc4e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: d5174be543201f6647dc23dc6f06f3c11fab6b69
+ms.sourcegitcommit: 6407f25c943f43e132abfb2d9b12bd1bd9db465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812118"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "2951800"
 ---
-# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
+# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
@@ -300,7 +300,7 @@ ms.locfileid: "2812118"
 
 ## <a name="exposing-class-members"></a>クラス メンバーの公開
 
-アクセス修飾子と新しい parm メソッドの変更の結果、追加のプライベート メンバーをカスタマイズに使用できるようになりました。 コマンド プラットフォームのチェーン機能により、保護されたメソッドやメンバーへの拡張クラスのアクセスが可能になります。 コマンド チェーンの詳細については、「[拡張可能な X++: コマンド チェーン](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/)」を参照してください。
+アクセス修飾子と新しい parm メソッドの変更の結果、追加のプライベート メンバーをカスタマイズに使用できるようになりました。 コマンド プラットフォームのチェーン機能により、保護されたメソッドやメンバーへの拡張クラスのアクセスが可能になります。 コマンド チェーンの詳細については、「[拡張可能な X++: コマンド チェーン](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-chain-of-command)」を参照してください。
 
 | メンバー |
 | -------------|

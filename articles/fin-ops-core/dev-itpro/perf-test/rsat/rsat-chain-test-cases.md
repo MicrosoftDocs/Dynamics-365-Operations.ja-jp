@@ -1,5 +1,5 @@
 ---
-title: テスト ケースの連鎖
+title: テスト ケースのチェーンへの変数のコピー
 description: このトピックでは、 Regression Suite Automation Tool を使用してテスト ケースを連鎖させる方法 (テストが他のテストに値を渡す機能) について説明します。
 author: robadawy
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2891866ea62ee588d4f9844f52f4b24651e25729
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c625bc4f9ce57489c20a9f4f0e490d4df8d5f6f2
+ms.sourcegitcommit: c5ef9a1d1853095ab537389b9a8e2d2adb39ed8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183091"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033079"
 ---
-# <a name="chain-test-cases"></a>テスト ケースの連鎖
+# <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 
 [!include [banner](../../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Regression Suite Automation Tool の主要な機能の１つとして、テス�
  
 ![タスク レコーダーのメニュー項目のコピー](media/task-recorder-copy.png)
 
-Excel パラメーター ファイルでは、これらの保存された値は、 **一般** タブの **保存された変数** テーブルに表示されます。
+RSAT が Excel パラメーター ファイルを生成すると、これらの保存された値が、**一般**タブの**保存された変数**テーブルに表示されます。
  
 ![Excel に保存された変数](media/saved-variables.png)
  
@@ -50,4 +50,12 @@ Excel パラメーター ファイルでは、これらの保存された値は�
 次の図では、2つの異なる変数が式で使用されています。
  
 ![Excelでの式の作成](media/formulas.png)
- 
+
+## <a name="use-variables-in-message-validation"></a>メッセージ検証での変数の使用
+
+保存された変数を、メッセージ検証タブの文字列の一部として使用することもできます。以下は、`Customer account {{variable name}} already exists.` というメッセージを検証する例です。これは、テストの実行中に情報ログに表示されます。 `{{variable name}}` は、記録中にコピーされる変数です。
+
+保存済 (コピー済) 変数は、同じテスト ケース内で、または同じテスト スイート内の複数のテスト ケース間で使用できます。
+
+![変数を含むメッセージ](media/rsat-message-with-variable.png)
+

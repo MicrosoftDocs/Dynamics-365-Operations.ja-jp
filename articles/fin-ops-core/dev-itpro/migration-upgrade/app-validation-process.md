@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - アップグレード後のタスク
-description: このトピックでは、 Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations アプリで実行する必要がある作業について説明します。
+description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations アプリで実行する必要があるタスクについて説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 11/12/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1b256b50f396426c19ce5462ce7cc329736b71ce
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 897f55f945322cb5e0df3097c7d6cf31da901300
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811956"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003668"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 
@@ -30,7 +30,7 @@ ms.locfileid: "2811956"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、 Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの Finance and Operations アプリで実行する必要がある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
+このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの Finance and Operations アプリで実行する必要があるタスクについて説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
 
 ## <a name="document-management"></a>ドキュメント管理
 
@@ -42,15 +42,15 @@ ms.locfileid: "2811956"
 
 印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。 **ドキュメント回覧** ページのネットワーク プリンターを設定して参照する必要があります。 詳細については、 [ドキュメント ルーティング エージェントをインストールしてネットワーク印刷を有効にする](../analytics/install-document-routing-agent.md) を参照してください。
 
-## <a name="retail"></a>Retail
+## <a name="commerce"></a>Commerce
 
 AX 2012 からアップグレードを完了すると、レジスターおよびデバイスを構成する必要があります。
 
-レジスターを構成するには、**Retail** > **チャネル** > **小売店舗** をクリックします。 小売チャネルの行を選択し、**レジスター** 情報ボックスを展開します。 **詳細**をクリックし、**新規**をクリックして、登録設定を完了します。
+レジスターを構成するには、**Retail と Commerce** > **チャネル** > **店舗**をクリックします。 チャネルの行を選択し、次に**レジスター**情報ボックスを展開します。 **詳細**をクリックし、**新規**をクリックして、登録設定を完了します。
 
-デバイスを構成するには、**Retail** > **チャンネル設定** > **POS 設定** をクリックし、**新規** をクリックします。
+デバイスを構成するには、**Retail と Commerce** > **チャンネル設定** > **POS 設定**をクリックし、**新規**をクリックします。
 
-また、チャネル データベースのすべてのジョブ (9999) を実行する必要があります。 **小売** > **本社の設定** > **小売用スケジューラ** > **チャネル データベース**の順にクリックします。 適切なチャネル データベースの行を選択し、**データの完全な同期** をクリックします。**9999** (**すべてのジョブ**) 配送スケジュールを選択し、**OK** をクリックします。 ジョブを実行するには、もう一度 **OK** をクリックします。
+また、チャネル データベースのすべてのジョブ (9999) を実行する必要があります。 **Retail と Commerce** > **Headquarters の設定** > **Commerce スケジューラ** > **チャネル データベース**の順にクリックします。 適切なチャネル データベースの行を選択し、**データの完全な同期** をクリックします。**9999** (**すべてのジョブ**) 配送スケジュールを選択し、**OK** をクリックします。 ジョブを実行するには、もう一度 **OK** をクリックします。
 
 ## <a name="service-industries"></a>サービス業
 

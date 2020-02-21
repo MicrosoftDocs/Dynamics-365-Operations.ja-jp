@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: e2b2f26917894b7a7045b0d39d4ae23c1fbaeada
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7dfc7495d4fe4414e4e14a01ea75faa2769456ac
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811615"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003695"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
@@ -104,4 +104,4 @@ ms.locfileid: "2811615"
 
 > [!NOTE]
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
-> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
+> - コマース顧客は、移動後にコンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。

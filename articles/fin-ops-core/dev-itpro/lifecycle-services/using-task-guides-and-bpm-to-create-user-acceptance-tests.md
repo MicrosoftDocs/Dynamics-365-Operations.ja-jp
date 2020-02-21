@@ -1,7 +1,7 @@
 ---
 title: ユーザー受け入れテストの作成と自動化
 description: このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3e8f2073719baaafc5f57ab7750b8ce3bbe3d6b7
-ms.sourcegitcommit: acfa7307f09927c97f0272b11e74ff60c15d5f9e
+ms.openlocfilehash: e9fa5b3bb44365015f0527b03abe40f8d848ed9a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2888832"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026253"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -115,7 +115,7 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 
     ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
-また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
+    また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
 
     ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fc5ba83fb5e15555617a9d8ff0e26d1137a527c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 92b98ba0de3f39c2e4d3d50a6286690bc283d954
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812103"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005744"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 Dynamics 365 Finance、Supply Chain Management、Retail、Talent、および Microsoft Dynamics AX 2012 を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。 
+このトピックでは、Dynamics 365 Finance、Supply Chain Management、コマース、人事管理、および Microsoft Dynamics AX 2012 を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。 
 
 データの要求に応答する最初のステップは、通常、個人検索レポートを使用して、要求されるデータを特定することです。 場合によっては、他のレポートを使用したり、使用している製品で特定のページにアクセスしたり、個人検索レポートを拡張したりする必要があります。 (レポートは現在 Microsoft Dynamics AX 2012 では使用できません。) このトピックでは、これらのタスクを完了するのに役立つコンテンツを示しています。
 
@@ -42,7 +42,7 @@ ms.locfileid: "2812103"
 ## <a name="product-specific-considerations"></a>製品固有の考慮事項
 
 - [AX 2012 の個人データ要求への対応](gdpr-ax2012.md)
-- [Talent での個人データ要求に対応](respond-dsr-request-talent.md)
+- [人事管理の個人データ要求への対応](respond-dsr-request-talent.md)
 - [一般データ保護規則の概要](gdpr-guide.md)
 - [Lifecycle Services (LCS) に対する GDPR データ要求](gdpr-lcs.md)
 

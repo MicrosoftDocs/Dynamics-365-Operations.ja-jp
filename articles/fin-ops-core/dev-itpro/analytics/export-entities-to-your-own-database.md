@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 1b9ba4d9010346774854250a00c7f399194f688e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54cbd4ab8ab86db2c89fcaca533910f2adf2d55b
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771180"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026147"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -61,7 +61,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 ビジネス インテリジェンス (BI) ツールとの統合に BYOD 機能を使用している場合、クラスター化された縦棒ストア インデックス (CCI) の使用を検討する必要があります。 CCI は、分析およびレポートのワークロードで一般的な読取りクエリのパフォーマンスを向上させるメモリ内インデックスです。
 
 > [!NOTE]
-> ご利用の BYOD データベースは、Finance and Operations アプリ から アクセス できる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。
+> BYOD データベースは、Finance and Operations アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。
 
 ## <a name="configuring-the-entity-export-option"></a>エンティティのエクスポート オプションのコンフィギュレーション
 
@@ -154,7 +154,7 @@ BYOD からデータを読み取るレポート システムのシナリオで�
 
 > [!NOTE]
 > BYOD 用のエクスポート プロジェクト に複数の エンティティ を追加する場合は、BYOD エクスポート の全体的な信頼性が損なわれないように注意して実行する必要があります。 同じプロジェクトに追加する エンティティ の数を決定する場合は、異なるパラメータを考慮する必要があります。 これらのパラメータには、エンティティの複雑度、予想されるエンティティごとのデータ量、ジョブレベルでのエクスポート完了までの全体的な時間が含まれている必要があります。 大量の エンティティ を追加することは避ける必要があるため、より少ないエンティティ数で複数のジョブを作成することを推奨します。
-
+>
 > BYOD のために **管理 > 定期的なデータ ジョブの管理** で定期的なエクスポートを使用することはお勧めしません。 **バッチ処理でのエクスポート** オプションを使用する必要があります。
 
 ### <a name="incremental-export"></a>差分エクスポート
@@ -199,15 +199,17 @@ BYOD は独自のデータベースであるため、データが同期されて
 
 **問題** - BYOD へのエクスポートが失敗し、次のような SSIS 例外が発生します。
 
-    An OLE DB error has occurred. Error code: 0x80004005.
+```Console
+An OLE DB error has occurred. Error code: 0x80004005.
 
-    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
+An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
 
-    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
+An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
 
-    Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
+Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
 
-    OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+```
 
 **解決策** - AZURE SQL BYOD サーバーの接続ポリシーがプロキシに設定されている場合に、この問題が発生することがあります。 [SQL DB 接続アーキテクチャ](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) の説明に従って、これを「リダイレクト」に変更する必要があります。
 

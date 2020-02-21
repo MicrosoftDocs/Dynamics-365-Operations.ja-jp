@@ -14,15 +14,15 @@ ms.search.scope: AX 2012, Operations
 ms.custom: 62753
 ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c524023eb0029690042d7e73b8eb80ac8429149a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8b21ff7e1dd7c5e0742066926305cd2c38297d0d
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812150"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983715"
 ---
 # <a name="configuration-in-lifecycle-services-overview"></a>Lifecycle Services の設定の概要
 

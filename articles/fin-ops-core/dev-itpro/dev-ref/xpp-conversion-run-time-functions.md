@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f4a6f03b96ccb9f317cbb132558a6b56660e5d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d6b369c430b6b52d3f68b2fdce429e6c20769f15
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183354"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033021"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
@@ -35,7 +35,9 @@ ms.locfileid: "2183354"
 
 **anytype** 値を**日付**値に変換します。
 
-    date any2Date(anytype object)
+```xpp
+date any2Date(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -53,28 +55,32 @@ ms.locfileid: "2183354"
 
 ### <a name="example"></a>例
 
-    static void any2DateExample(Args _args)
-    {
-            date myDate;
-            str s;
-            int i;
-            s = "2010 6 17"; // A string object, of yyyy mm dd.
-            myDate = any2Date(s);
-            Global::info(strFmt("%1  is output, from input of "2010 6 17"", myDate));
-            i = 40361; // An int object, which represents the number of days from 1900/01/01.
-            myDate = any2Date(i);
-            Global::info(strFmt("%1  is output, from input of 40361", myDate));
-    }
-    /**** Infolog display.
-    Message (04:44:15 pm)
-    6/17/2010 is output, from input of "2010 6 17"
-    7/4/2010 is output, from input of 40361
-    ****/
+```xpp
+static void any2DateExample(Args _args)
+{
+    date myDate;
+    str s;
+    int i;
+    s = "2010 6 17"; // A string object, of yyyy mm dd.
+    myDate = any2Date(s);
+    Global::info(strFmt("%1  is output, from input of "2010 6 17"", myDate));
+    i = 40361; // An int object, which represents the number of days from 1900/01/01.
+    myDate = any2Date(i);
+    Global::info(strFmt("%1  is output, from input of 40361", myDate));
+}
+/**** Infolog display.
+Message (04:44:15 pm)
+6/17/2010 is output, from input of "2010 6 17"
+7/4/2010 is output, from input of 40361
+****/
+```
 
 ## <a name="any2enum"></a>any2Enum
 **anytype** 値を、ターゲット列挙の要素の**名前**プロパティ値に変換します。
 
-    enum any2Enum(anytype object)
+```xpp
+enum any2Enum(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -92,28 +98,32 @@ ms.locfileid: "2183354"
 
 ### <a name="example"></a>例
 
-    static void any2EnumExample(Args _args)
-    {
-            NoYes myNoYes;  // NoYes is an enum.
-            int i;
-            str s;
-            i = 0;  // An int that will be converted.
-            myNoYes = any2Enum(i);
-            Global::info(strfmt("'%1' - is the output, from input of the %2 as int.", myNoYes, i));
-            s = "1";  // A str that will be converted.
-            myNoYes = any2Enum(s);
-            Global::info(strfmt("'%1' - is the output, from input of the %2 as str.", myNoYes, s));
-            /**** Infolog display.
-            Message (01:05:32 pm)
-            'No' - is the output, from input of the 0 as int.
-            'Yes' - is the output, from input of the 1 as str.
-            ****/
-    }
+```xpp
+static void any2EnumExample(Args _args)
+{
+    NoYes myNoYes;  // NoYes is an enum.
+    int i;
+    str s;
+    i = 0;  // An int that will be converted.
+    myNoYes = any2Enum(i);
+    Global::info(strfmt("'%1' - is the output, from input of the %2 as int.", myNoYes, i));
+    s = "1";  // A str that will be converted.
+    myNoYes = any2Enum(s);
+    Global::info(strfmt("'%1' - is the output, from input of the %2 as str.", myNoYes, s));
+    /**** Infolog display.
+    Message (01:05:32 pm)
+    'No' - is the output, from input of the 0 as int.
+    'Yes' - is the output, from input of the 1 as str.
+    ****/
+}
+```
 
 ## <a name="any2guid"></a>any2Guid
 指定された **anytype** オブジェクトを GUID オブジェクトに変換します。
 
-    guid any2Guid(anytype object)
+```xpp
+guid any2Guid(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -128,7 +138,9 @@ GUID オブジェクト。
 ## <a name="any2int"></a>any2Int
 **anytype** 値を **int** 値に変換します。
 
-    int any2Int(anytype object)
+```xpp
+int any2Int(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -146,33 +158,37 @@ GUID オブジェクト。
 
 ### <a name="example"></a>例
 
-    static void any2IntExample(Args _args)
-    {
-            int myInt;
-            str s;
-            NoYes a;
-            real r;
-            s = "31";
-            myInt = any2Int(s);
-            Global::info(strfmt("%1 is the output, from input of 31 as a str value.", myInt));
-            a = NoYes::No;
-            myInt = any2Int(a);
-            Global::info(strfmt("%1 is the output, from input of NoYes::No as an enum value.", myInt));
-            r = 5.34e2;
-            myInt = any2Int(r);
-            Global::info(strfmt("%1 is the output, from the input of 5.34e2 as a real value.", myInt));
-    }
-    /**** Infolog display.
-    Message (02:23:59 pm)
-    31 is the output, from input of 31 as a str value.
-    0 is the output, from input of NoYes::No as an enum value.
-    534 is the output, from the input of 5.34e2 as a real value.
-    ****/
+```xpp
+static void any2IntExample(Args _args)
+{
+    int myInt;
+    str s;
+    NoYes a;
+    real r;
+    s = "31";
+    myInt = any2Int(s);
+    Global::info(strfmt("%1 is the output, from input of 31 as a str value.", myInt));
+    a = NoYes::No;
+    myInt = any2Int(a);
+    Global::info(strfmt("%1 is the output, from input of NoYes::No as an enum value.", myInt));
+    r = 5.34e2;
+    myInt = any2Int(r);
+    Global::info(strfmt("%1 is the output, from the input of 5.34e2 as a real value.", myInt));
+}
+/**** Infolog display.
+Message (02:23:59 pm)
+31 is the output, from input of 31 as a str value.
+0 is the output, from input of NoYes::No as an enum value.
+534 is the output, from the input of 5.34e2 as a real value.
+****/
+```
 
 ## <a name="any2int64"></a>any2Int64
 **anytype** オブジェクトを **int64** オブジェクトに変換します。
 
-    int64 any2Int64(anytype object)
+```xpp
+int64 any2Int64(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -187,7 +203,9 @@ GUID オブジェクト。
 ## <a name="any2real"></a>any2Real
 **anytype** 値を**実際の**値に変換します。
 
-    real any2Real(anytype object)
+```xpp
+real any2Real(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -205,33 +223,37 @@ GUID オブジェクト。
 
 ### <a name="example"></a>例
 
-    static void any2RealExample(Args _args)
-    {
-            real myReal;
-            str s;
-            int i;
-            NoYes a;
-            s = "5.12";
-            myReal = any2Real(s);
-            Global::info(strfmt("%1 is the output from the input of 5.12 as a str object", myReal));
-            i = 64;
-            myReal = any2Real(i);
-            Global::info(strfmt("%1 is the output from the input of 64 as an int object", myReal));
-            a = NoYes::Yes;
-            myReal = any2Real(a);
-            Global::info(strfmt("%1 is the output from the input of NoYes::Yes as an enum object", myReal));
-    }
-    /****Infolog display.
-    Message (02:43:57 pm)
-    5.12 is the output from the input of 5.12 as a str object
-    64.00 is the output from the input of 64 as an int object
-    1.00 is the output from the input of NoYes::Yes as an enum object
-    ****/
+```xpp
+static void any2RealExample(Args _args)
+{
+    real myReal;
+    str s;
+    int i;
+    NoYes a;
+    s = "5.12";
+    myReal = any2Real(s);
+    Global::info(strfmt("%1 is the output from the input of 5.12 as a str object", myReal));
+    i = 64;
+    myReal = any2Real(i);
+    Global::info(strfmt("%1 is the output from the input of 64 as an int object", myReal));
+    a = NoYes::Yes;
+    myReal = any2Real(a);
+    Global::info(strfmt("%1 is the output from the input of NoYes::Yes as an enum object", myReal));
+}
+/****Infolog display.
+Message (02:43:57 pm)
+5.12 is the output from the input of 5.12 as a str object
+64.00 is the output from the input of 64 as an int object
+1.00 is the output from the input of NoYes::Yes as an enum object
+****/
+```
 
 ## <a name="any2str"></a>any2Str
 **anytype** 値を **str** 値に変換します。
 
-    str any2Str(anytype object)
+```xpp
+str any2Str(anytype object)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -249,22 +271,24 @@ GUID オブジェクト。
 
 ### <a name="example"></a>例
 
-    static void any2StrExample(Args _args)
-    {
-            str myStr;
-            anytype a;
-            a = "Any to string";
-            myStr = any2Str(a);
-            Global::info(strFmt("%1 is output, from input of Any to string as a str value", myStr));
-            a = NoYes::Yes;
-            myStr = any2Str(a);
-            Global::info(strFmt("%1 is output, from input of NoYes::Yes as an enumeration", myStr));
-    }
-    /****Infolog Display
-    Message (09:08:46 am)
-    Any to string is output, from input of Any to string as a str value
-    1 is output, from input of NoYes::Yes as an enumeration
-    ****/
+```xpp
+static void any2StrExample(Args _args)
+{
+    str myStr;
+    anytype a;
+    a = "Any to string";
+    myStr = any2Str(a);
+    Global::info(strFmt("%1 is output, from input of Any to string as a str value", myStr));
+    a = NoYes::Yes;
+    myStr = any2Str(a);
+    Global::info(strFmt("%1 is output, from input of NoYes::Yes as an enumeration", myStr));
+}
+/****Infolog Display
+Message (09:08:46 am)
+Any to string is output, from input of Any to string as a str value
+1 is output, from input of NoYes::Yes as an enumeration
+****/
+```
 
 ## <a name="anytodate"></a>anytodate
 [any2Date](#any2date) を参照してください。
@@ -291,7 +315,9 @@ GUID オブジェクト。
 
 文字列内の文字を、その文字の ASCII 値に変換します。
 
-    int char2Num(str text, int position)
+```xpp
+int char2Num(str text, int position)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -306,13 +332,17 @@ GUID オブジェクト。
 
 ### <a name="remarks"></a>備考
 
-    char2Num("ABCDEFG",3); //Returns the numeric value of C, which is 67.
-    char2Num("ABCDEFG",1); //Returns the numeric value of A, which is 65.
+```xpp
+char2Num("ABCDEFG",3); //Returns the numeric value of C, which is 67.
+char2Num("ABCDEFG",1); //Returns the numeric value of A, which is 65.
+```
 
 ## <a name="date2num"></a>date2Num
 日付を、1900 年1 月 1 日以降の日数に対応する整数に変換します。
 
-    int date2Num(date _date)
+```xpp
+int date2Num(date _date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -326,20 +356,24 @@ GUID オブジェクト。
 
 ### <a name="example"></a>例
 
-    //Returns the value377.
-    date2Num(1311901);
-    static void date2NumExample(Args _arg)
-    {
-            date d = today();
-            int i;
-            i = date2Num(d);
-            print i;
-    }
+```xpp
+//Returns the value377.
+date2Num(1311901);
+static void date2NumExample(Args _arg)
+{
+    date d = today();
+    int i;
+    i = date2Num(d);
+    print i;
+}
+```
 
 ## <a name="date2str"></a>date2Str
 指定されたデータを文字列に変換します。
 
-    str date2Str(date date, int sequence, int day, int separator1, int month, int separator2, int year [, int flags = DateFlags::None])
+```xpp
+str date2Str(date date, int sequence, int day, int separator1, int month, int separator2, int year [, int flags = DateFlags::None])
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -366,31 +400,35 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 次の例では、現在の日付を年、月、日の順に表示します。
 
-    static void Job2(Args _args)
-    {
-            date currentDate = today();
-            str s;
-            int iEnum;
-            s = date2Str
-            (currentDate, 
-                    321,
-                    DateDay::Digits2,
-                    DateSeparator::Hyphen, // separator1
-                    DateMonth::Digits2,
-                    DateSeparator::Hyphen, // separator2
-                    DateYear::Digits4
-            );
-            info("Today is:  " + s);
-    }
-    /** Example Infolog output
-    Message (12:36:21 pm)
-    Today is:  2009-01-13
-    **/
+```xpp
+static void Job2(Args _args)
+{
+    date currentDate = today();
+    str s;
+    int iEnum;
+    s = date2Str
+    (currentDate, 
+        321,
+        DateDay::Digits2,
+        DateSeparator::Hyphen, // separator1
+        DateMonth::Digits2,
+        DateSeparator::Hyphen, // separator2
+        DateYear::Digits4
+    );
+    info("Today is:  " + s);
+}
+/** Example Infolog output
+Message (12:36:21 pm)
+Today is:  2009-01-13
+**/
+```
 
 ## <a name="datetime2str"></a>datetime2Str
 **utcdatetime** 値を文字列に変換します。
 
-    str datetime2Str(utcdatetime datetime [, int flags = DateFlags::None])
+```xpp
+str datetime2Str(utcdatetime datetime [, int flags = DateFlags::None])
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -415,18 +453,22 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void jobTestDatetime2str( Args _args )
-    {
-            utcdatetime utc2 = 1959-06-17T15:44:33;
-            str s3;
-            s3 = datetime2Str( utc2 );
-            info( s3 );
-    }
+```xpp
+static void jobTestDatetime2str( Args _args )
+{
+    utcdatetime utc2 = 1959-06-17T15:44:33;
+    str s3;
+    s3 = datetime2Str( utc2 );
+    info( s3 );
+}
+```
 
 ## <a name="enum2str"></a>enum2Str
 指定された、列挙されたテキストを文字表現に変換します。
 
-    str enum2Str(enum enum)
+```xpp
+str enum2Str(enum enum)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -442,17 +484,21 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 次の例では、文字列 "含まない" を返します。 これは、**ListCode** 列挙型の **IncludeNot** 値のラベルです。
 
-    static void enum2StrExample(Args _arg)
-    {
-            ListCode l;
-            l =  ListCode::IncludeNot;
-            print enum2Str(l);
-    }
+```xpp
+static void enum2StrExample(Args _arg)
+{
+    ListCode l;
+    l =  ListCode::IncludeNot;
+    print enum2Str(l);
+}
+```
 
 ## <a name="guid2str"></a>guid2Str
 指定した GUID オブジェクトを等価の文字列に変換します。
 
-    str guid2String(guid _uuid)
+```xpp
+str guid2String(guid _uuid)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -466,23 +512,27 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void guid2StrExample()
-    {
-            guid _guid;
-            str stringGuid;
-            _guid = Global::guidFromString("{12345678-1234-1234-1234-123456789abc}");
-            print strfmt("GUID is %1", _guid);
-            stringGuid = guid2str(_guid);
-            info("String GUID is " + stringGuid);
-    }
-    /**** Output to Infolog
-    String GUID is {12345678-1234-1234-1234-123456789ABC}
-    ****/
+```xpp
+static void guid2StrExample()
+{
+    guid _guid;
+    str stringGuid;
+    _guid = Global::guidFromString("{12345678-1234-1234-1234-123456789abc}");
+    print strfmt("GUID is %1", _guid);
+    stringGuid = guid2str(_guid);
+    info("String GUID is " + stringGuid);
+}
+/**** Output to Infolog
+String GUID is {12345678-1234-1234-1234-123456789ABC}
+****/
+```
 
 ## <a name="int2str"></a>int2Str
 整数を等価の文字列に変換します。
 
-    str int2Str(int integer)
+```xpp
+str int2Str(int integer)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -496,16 +546,20 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void int2StrExample(Args _arg)
-    {
-            print "This is int2Str, value is " + int2Str(intMax());
-            print "This is int642Str, value is " + int642Str(int64Max());
-    }
+```xpp
+static void int2StrExample(Args _arg)
+{
+    print "This is int2Str, value is " + int2Str(intMax());
+    print "This is int642Str, value is " + int642Str(int64Max());
+}
+```
 
 ## <a name="int642str"></a>int642Str
 指定された*整数*パラメーターを等価のテキスト文字列に変換します。
 
-    str int642Str(int64 integer)
+```xpp
+str int642Str(int64 integer)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -519,16 +573,20 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void example()
-    {
-            print "This is int2Str, value is " + int2Str(intMax());
-            print "This is int642Str, value is " + int642Str(int64Max());
-    }
+```xpp
+static void example()
+{
+    print "This is int2Str, value is " + int2Str(intMax());
+    print "This is int642Str, value is " + int642Str(int64Max());
+}
+```
 
 ## <a name="num2char"></a>num2Char
 整数を対応する ASCII 文字に変換します。
 
-    str num2Char(int figure)
+```xpp
+str num2Char(int figure)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -542,18 +600,22 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void num2CharExample(Args _arg)
-    {
-            str s;
-            s = num2Char(42);
-            // Prints an asterisk * -the character represented by 42.
-            print s;
-    }
+```xpp
+static void num2CharExample(Args _arg)
+{
+    str s;
+    s = num2Char(42);
+    // Prints an asterisk * -the character represented by 42.
+    print s;
+}
+```
 
 ## <a name="num2date"></a>num2Date
 1900 年 1 月 1 日から指定した日数に対応する日付を取得します。
 
-    date num2Date(int _days)
+```xpp
+date num2Date(int _days)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -563,16 +625,20 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="return-value"></a>戻り値
 
-1900年1月1日以降に、*\_days* パラメーターで指定された日数の日付。
+1900 年 1 月 1 日以降に、*\_days* パラメーターで指定された日数の日付。
 
 ### <a name="remarks"></a>備考
 
-    num2Date(366); //Returns the date 01/01/1901 (1 January 1901).
+```xpp
+num2Date(366); //Returns the date 01/01/1901 (1 January 1901).
+```
 
 ## <a name="num2str"></a>num2Str
 実数を文字列に変換します。
 
-    str num2Str(real number, int character, int decimals, int separator1, int separator2)
+```xpp
+str num2Str(real number, int character, int decimals, int separator1, int separator2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -609,25 +675,31 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 次のコード例では、**num2str** メソッドの最初の呼び出しでは **16** が*小数点以下*のパラメーターに渡され、2 番目の呼び出しでは **17** が渡されます。
 
-    static void Job_Num2Str(Args _args)
-    {
-            real realNum = 0.1294567890123456777; // 19 decimals places.
-            info(Num2Str(realNum, 0, 16, DecimalSeparator::Dot, ThousandSeparator::Space)); // 16 decimal places
-            info(Num2Str(realNum, 0, 17, DecimalSeparator::Dot, ThousandSeparator::Space)); // 17 decimal places
-    }
+```xpp
+static void Job_Num2Str(Args _args)
+{
+    real realNum = 0.1294567890123456777; // 19 decimals places.
+    info(Num2Str(realNum, 0, 16, DecimalSeparator::Dot, ThousandSeparator::Space)); // 16 decimal places
+    info(Num2Str(realNum, 0, 17, DecimalSeparator::Dot, ThousandSeparator::Space)); // 17 decimal places
+}
+```
 
 ### <a name="output"></a>出力
 
 メッセージは次の Infolog 出力にあります。 出力の最初の数字には 16 桁の小数が含まれ、2 番目の数字には小数点以下 2 桁の小数のみが含まれます。
 
-    Message (10:18:12)
-    0.1294567890123457
-    0.13
+```xpp
+Message (10:18:12)
+0.1294567890123457
+0.13
+```
 
 ## <a name="str2date"></a>str2Date
 指定された文字列を**データ**値に変換します。
 
-    date str2Date(str _text, str _sequence)
+```xpp
+date str2Date(str _text, str _sequence)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -650,22 +722,28 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 たとえば、文字列の順序が月、年、さらに日である場合、*\_順序*パラメーターは **231** である必要があります。 入力パラメーターが無効な日付を指定した場合、日付 **0**(ゼロ) が返されます。 次の 2 つの例では無効な日付を指定しています。
 
-    str2Date("31/12/44", 123) // Year must be four digits to reach the minimum of January 1 1901.
-    str2Date("31/12/2044", 213) // 213 means the month occurs first in the string, but 31 cannot be a month.
+```xpp
+str2Date("31/12/44", 123) // Year must be four digits to reach the minimum of January 1 1901.
+str2Date("31/12/2044", 213) // 213 means the month occurs first in the string, but 31 cannot be a month.
+```
 
 ### <a name="example"></a>例
 
-    static void str2DateExample(Args _arg)
-    {
-            date d;
-            d = str2Date("22/11/2007", 123);
-            print d;
-    }
+```xpp
+static void str2DateExample(Args _arg)
+{
+    date d;
+    d = str2Date("22/11/2007", 123);
+    print d;
+}
+```
 
 ## <a name="str2datetime"></a>str2Datetime
 日付と時刻情報の指定した文字列から **utcdatetime** 値を生成します。
 
-    utcdatetime str2datetime( str text, int sequence )
+```xpp
+utcdatetime str2datetime( str text, int sequence )
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -682,9 +760,11 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 *text* パラメーターの日付部分の構文要件は柔軟性があります。 有効な形式のバリエーションは、**date2str** 関数と同じです。 **str2datetime** への以下の呼び出しはそれぞれ有効です。またそれらすべての出力は同じです。
 
-    utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
-    utc3 = str2datetime( "Feb-1985-25 11:04:59 pm" ,231 );
-    utc3 = str2datetime( "2 25 1985 11:04:59 pm" ,123 );
+```xpp
+utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
+utc3 = str2datetime( "Feb-1985-25 11:04:59 pm" ,231 );
+utc3 = str2datetime( "2 25 1985 11:04:59 pm" ,123 );
+```
 
 各コンポーネントの日時は、*シーケンス*パラメーター内の数字で表されます。
 
@@ -696,19 +776,23 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void JobTestStr2datetime( Args _args )
-    {
-            utcdatetime utc3;
-            str sTemp;
-            utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
-            sTemp = datetime2str( utc3 );
-            print( "sTemp == " + sTemp );
-    }
+```xpp
+static void JobTestStr2datetime( Args _args )
+{
+    utcdatetime utc3;
+    str sTemp;
+    utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
+    sTemp = datetime2str( utc3 );
+    print( "sTemp == " + sTemp );
+}
+```
 
 ## <a name="str2enum"></a>str2Enum
 ローカライズされた **Label** プロパティ値が入力文字列に一致する列挙要素を取得します。
 
-    enum str2Enum(enum _type, str _text)
+```xpp
+enum str2Enum(enum _type, str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -729,30 +813,34 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 他の言語にローカライズされたために発生する文字列の不一致を避けるために、**str2enum** 関数への入力を生成するには **enum2str** 関数を使用することをお勧めします。 次の例は、**str2enum** 関数と **enum2str** 関数を併用する適切な方法を示しています。
 
-    static void str2Enum_AcrossLangs(Args _arg)
-    {
-            BankAccountType bat;
-            str sEnumValueLabelLocalized;
-            int nInt;
-            // enum2str.
-            sEnumValueLabelLocalized = enum2str(BankAccountType::SavingsAccount);
-            info("Localized friendly string: "
-                    + sEnumValueLabelLocalized);
-            // str2enum.
-            bat = str2Enum(bat, sEnumValueLabelLocalized);
-            nInt = bat;
-            info("nInt = " + int2str(nInt));
-            /********** Actual output:
-            Message (04:32:12 pm)
-            Localized friendly string: Savings account
-            nInt = 1
-            **********/
-    }
+```xpp
+static void str2Enum_AcrossLangs(Args _arg)
+{
+    BankAccountType bat;
+    str sEnumValueLabelLocalized;
+    int nInt;
+    // enum2str.
+    sEnumValueLabelLocalized = enum2str(BankAccountType::SavingsAccount);
+    info("Localized friendly string: "
+        + sEnumValueLabelLocalized);
+    // str2enum.
+    bat = str2Enum(bat, sEnumValueLabelLocalized);
+    nInt = bat;
+    info("nInt = " + int2str(nInt));
+    /********** Actual output:
+    Message (04:32:12 pm)
+    Localized friendly string: Savings account
+    nInt = 1
+    **********/
+}
+```
 
 ## <a name="str2guid"></a>str2Guid
 文字列を GUID オブジェクトに変換します。
 
-    Guid str2Guid(str text)
+```xpp
+Guid str2Guid(str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -771,7 +859,9 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 ## <a name="str2int"></a>str2Int
 文字列を等価の整数に変換します。
 
-    int str2Int(str _text)
+```xpp
+int str2Int(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -785,17 +875,21 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void str2IntExample(Args _arg)
-    {
-            int i;
-            i = str2Int("1234567890");
-            print "i = " + int2Str(i);
-    }
+```xpp
+static void str2IntExample(Args _arg)
+{
+    int i;
+    i = str2Int("1234567890");
+    print "i = " + int2Str(i);
+}
+```
 
 ## <a name="str2int64"></a>str2Int64
 文字列を **Int64** 値に変換します。
 
-    int str2Int64(str text)
+```xpp
+int str2Int64(str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -809,23 +903,27 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void str2Int64Example(Args _args)
-    {
-            str myStr;
-            str tooBig;
-            Int64 myInt64;
-            myStr = "1234567890";
-            tooBig = int642str(int64Max()+1);
-            myInt64 = str2Int64(mystr);
-            print strfmt ("int64: %1",myInt64);
-            myInt64 = str2Int64(tooBig);
-            print strfmt ("Too big int64: %1",myInt64);
-    }
+```xpp
+static void str2Int64Example(Args _args)
+{
+    str myStr;
+    str tooBig;
+    Int64 myInt64;
+    myStr = "1234567890";
+    tooBig = int642str(int64Max()+1);
+    myInt64 = str2Int64(mystr);
+    print strfmt ("int64: %1",myInt64);
+    myInt64 = str2Int64(tooBig);
+    print strfmt ("Too big int64: %1",myInt64);
+}
+```
 
 ## <a name="str2num"></a>str2Num
 文字列を実数に変換します。
 
-    real str2Num(str _text)
+```xpp
+real str2Num(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -841,48 +939,54 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 次の例では、この関数の使用方法を示しています。
 
-    str2Num("123.45") returns the value 123.45.
-    str2Num("a123") returns the value 0.0.
-    str2Num("123a") returns the value 123.00.
+```xpp
+str2Num("123.45") returns the value 123.45.
+str2Num("a123") returns the value 0.0.
+str2Num("123a") returns the value 123.00.
+```
 
 スキャンは左から右に行われ、文字を実数の一部に変換できなくなると終了します。
 
 ### <a name="example"></a>例
 
-    static void str2NumToReal(Args _arg)
-    {
-            real r;
-            str s;
-            r = str2Num("3.15");
-            s = strFmt("r = %1", r);
-            info(s);
-    }
-    /*** Infolog output.
-    Message_@SYS14327 (02:36:12 pm)
-    r = 3.15
-    ***/
+```xpp
+static void str2NumToReal(Args _arg)
+{
+    real r;
+    str s;
+    r = str2Num("3.15");
+    s = strFmt("r = %1", r);
+    info(s);
+}
+/*** Infolog output.
+Message_@SYS14327 (02:36:12 pm)
+r = 3.15
+***/
 
-    static void str2NumExponentialSyntax(Args _args)
-    {
-            Qty qty1, qty2, qty3;
-            qty1 = str2num('1e-3'); // Bad syntax by the user.
-            qty2 = str2num('1.e-3');
-            qty3 = str2num('1.0e-3');
-            info(strfmt('Result: %1; Expected: %2', num2str(qty1, 0,3,2,0), '0.001'));
-            info(strfmt('Result: %1; Expected: %2', num2str(qty2, 0,3,2,0), '0.001'));
-            info(strfmt('Result: %1; Expected: %2', num2str(qty3, 0,3,2,0), '0.001'));
-    }
-    /*** Infolog output. The first result differs from expectations.
-    Message_@SYS14327 (02:20:55 pm)
-    Result: 1,000; Expected: 0.001
-    Result: 0,001; Expected: 0.001
-    Result: 0,001; Expected: 0.001
-    ***/
+static void str2NumExponentialSyntax(Args _args)
+{
+    Qty qty1, qty2, qty3;
+    qty1 = str2num('1e-3'); // Bad syntax by the user.
+    qty2 = str2num('1.e-3');
+    qty3 = str2num('1.0e-3');
+    info(strfmt('Result: %1; Expected: %2', num2str(qty1, 0,3,2,0), '0.001'));
+    info(strfmt('Result: %1; Expected: %2', num2str(qty2, 0,3,2,0), '0.001'));
+    info(strfmt('Result: %1; Expected: %2', num2str(qty3, 0,3,2,0), '0.001'));
+}
+/*** Infolog output. The first result differs from expectations.
+Message_@SYS14327 (02:20:55 pm)
+Result: 1,000; Expected: 0.001
+Result: 0,001; Expected: 0.001
+Result: 0,001; Expected: 0.001
+***/
+```
 
 ## <a name="str2time"></a>str2Time
 文字列を **timeOfDay** 値に変換します。
 
-    int str2Time(str _text)
+```xpp
+int str2Time(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -896,22 +1000,28 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="remarks"></a>備考
 
-    str2Time("05:01:37") //Returns the value 18097.
-    str2Time("7 o'clock") //Returns the value -1.
+```xpp
+str2Time("05:01:37") //Returns the value 18097.
+str2Time("7 o'clock") //Returns the value -1.
+```
 
 ### <a name="example"></a>例
 
-    static void str2TimeExample(Args _arg)
-    {
-            int i;
-            i = str2Time("11:30");
-            print i;
-    }
+```xpp
+static void str2TimeExample(Args _arg)
+{
+    int i;
+    i = str2Time("11:30");
+    print i;
+}
+```
 
 ## <a name="time2str"></a>time2Str
 **timeOfDay** 値を時、分、秒を含む文字列に変換します。
 
-    str time2Str(int _time, int _separator, int _timeFormat)
+```xpp
+str time2Str(int _time, int _separator, int _timeFormat)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -931,20 +1041,24 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="example"></a>例
 
-    static void TimeJob4(Args _args)
-    {
-            timeOfDay theTime = timeNow();
-            info( time2Str(theTime, TimeSeparator::Colon, TimeFormat::AMPM) );
-    }
-    /**
-    Message (04:33:56 pm)
-    04:33:56 pm
-    **/
+```xpp
+static void TimeJob4(Args _args)
+{
+    timeOfDay theTime = timeNow();
+    info( time2Str(theTime, TimeSeparator::Colon, TimeFormat::AMPM) );
+}
+/**
+Message (04:33:56 pm)
+04:33:56 pm
+**/
+```
 
 ## <a name="uint2str"></a>uint2Str
 整数を文字列に変換します。 整数が符号なしであることを前提としています。
 
-    str uint2Str(int integer)
+```xpp
+str uint2Str(int integer)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -960,8 +1074,9 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 レコード ID などの非常に大きな整数の場合は、**int2str** 関数の代わりにこの関数を使用します。
 
-    info(int2str(3123456789)); //returns -1171510507 as a string.
-    info(uint2str(3123456789)); //returns 3123456789 as a string.
-
+```xpp
+info(int2str(3123456789)); //returns -1171510507 as a string.
+info(uint2str(3123456789)); //returns 3123456789 as a string.
+```
 
 

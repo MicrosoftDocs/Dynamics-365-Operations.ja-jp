@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 869b350801ebdf15a43f295f3244bcf8ee59ef39
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e9132d367e8c683c8472656bf53ef02855cdbec7
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183343"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983655"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 

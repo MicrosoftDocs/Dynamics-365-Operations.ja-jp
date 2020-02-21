@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8340173a885ce1383fc2e89f0f3320b9c2495c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: bbc879e0c3eca93ee08f464a40252fc04b7de727
+ms.sourcegitcommit: 9433c4a594c5649e63644950b15840d5676ba407
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812014"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992332"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -41,6 +41,25 @@ ms.locfileid: "2812014"
 
 > [!NOTE]
 > この情報は、リリースごとに変更されることがあります。 したがって、頻繁に最新の情報を確認してください。
+
+## <a name="add-dimensions-to-dynamics-365-finance"></a>Dynamics 365 Finance への分析コードの追加
+
+2016 年 11 月リリースでは、Visual Studio で OData アドイン用の財務分析コードを追加がリリースされ、**DimensionCombinationEntity** の変更が大幅に簡素化されています。
+
+1. Microsoft Visual Studio で、**Dynamics 365 > アドイン > Odata の財務分析コードの追加**をクリックします。
+2. **分析コード名** の列に財務分析コードの名前を入力します。 これは、財務分析コードの正確な名前でなければなりません。 拡張機能を持つ **モデル** を選択します。 これは AppSuite レイヤーの上にする必要があります。 **適用** をクリックします。 
+
+    ![Odata の財務分析コード](media/financial-dimensions-odata.png).
+
+3. プロジェクトをコンパイルし、データベースと同期します。
+
+    ![8](media/8-300x260.png)
+
+4. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
+
+    ```Sql
+    select * from DIMENSIONCOMBINATIONENTITY 
+    ```
 
 ## <a name="add-dimensions--before-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の前に分析コードを追加します。
 たとえば、Microsoft Excel との統合で、列に配置する分析コードとの相互作用をサポートするには、最初にカスタムを使用して分析コードの列を作成する必要があります。 

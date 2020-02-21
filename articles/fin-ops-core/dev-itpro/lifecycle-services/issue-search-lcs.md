@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 18881
 ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95a99341e6940423be457d7bb76ac518b04f4834
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6aef59d814a597bf9e1854db8e3b0dc3fc8150b3
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183206"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983713"
 ---
 # <a name="issue-search-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での問題検索
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26b7a3307cd6e0b7cf4b6e38319e7bf7537a6689
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 607cb28ca7c6488dde13300d38c5f238fd2c0c4f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191754"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033005"
 ---
 # <a name="control-the-text-that-task-recorder-generates-for-a-control"></a>コントロールに対してタスク レコーダーが生成するテキストの制御
 
@@ -56,6 +56,7 @@ ms.locfileid: "2191754"
 ## <a name="case-study"></a>事例研究
 改善の事例研究のようにチェック ボックス コントロールを使用しましょう。 現在、方法 1 または方法 2 (この記事の前のセクションを参照) のいずれかを介するチェックボックスに対して命令ラベルが指定されていません。 したがって、代わりに汎用プロパティ命令ラベルが使用されます。 他のユーザーが、**失敗した場合に情報ログを表示する**という名前のフィールドのチェック ボックスをオンにし記録する場合、現在の出荷タスク レコーダーは次のようになります。
 
+
 > 失敗時に情報ログ表示フィールドで、True と入力します。
 
 ただし、通常エンド ユーザーは、チェック ボックスを **True** に設定することの意味を理解していない場合があります。 したがって、次のようなラベルを生成するためのチェック ボックスの改善が推奨されます。
@@ -82,18 +83,19 @@ ms.locfileid: "2191754"
 
 次のコード例は、X++ コントロールによってプロパティ変更イベントがタスク レコーダーに記録される様子を示しています。 C++ カーネル コントロールには、同様のアプリケーション プログラミング インターフェイス (API) が存在します。 コマンド イベントに、同種の API があります。
 
-    [FormPropertyAttribute(FormPropertyKind::Value, #MyPropertyName)]
-        public str value(str_value = valueProperty.parmValue())
+```xpp
+[FormPropertyAttribute(FormPropertyKind::Value, #MyPropertyName)]
+    public str value(str_value = valueProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
+            using (var scope = SysTaskRecorder::addPropertyUserAction(#MyPropertyName, this, _value, [OptionalInstructionLabelIDOverride], [OptionalValueLabelOverride], [OptionalControlLabelOverride]))
             {
-                using (var scope = SysTaskRecorder::addPropertyUserAction(#MyPropertyName, this, _value, [OptionalInstructionLabelIDOverride], [OptionalValueLabelOverride], [OptionalControlLabelOverride]))
-                {
-                    // Property set logic goes here
-                    valueProperty.setValueOrBinding(_value);
-                }
+                // Property set logic goes here
+                valueProperty.setValueOrBinding(_value);
             }
         }
-
+    }
+```
 
 

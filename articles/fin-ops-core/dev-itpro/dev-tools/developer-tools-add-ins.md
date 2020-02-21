@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea3f360cfca23682dcc6a4ccbb968aa694013ed3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: cb18336c1075ca284ab55114ae013abba5f87665
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812028"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983662"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 

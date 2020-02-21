@@ -1,6 +1,6 @@
 ---
 title: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
-description: このトピックでは、管理者が Microsoft Dynamics 365 Finance 、Supply Chain Management、および小売のバージョン情報ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
+description: このトピックでは、管理者が Microsoft Dynamics 365 Finance、Supply Chain Management、およびコマースのバージョン情報ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 10/02/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.openlocfilehash: 2b8540b68783fb7581e55f9051c6c91cc4fa9949
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ce9f6c3d33ad6dc2ec7491bd42cafc5fff813c37
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183075"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003696"
 ---
 # <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a>組織の法律条項およびプライバシーに関する声明へのリンクの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理者が Microsoft Dynamics 365 Finance、Supply Chain Management、および小売の<strong>バージョン情報</strong>ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
+このトピックでは、管理者が Microsoft Dynamics 365 Finance、Supply Chain Management、およびコマースの<strong>バージョン情報</strong>ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
 
 組織は、多くの場合、法的およびコンプライアンス要件を満たすため、その法的な条件およびプライバシーに関する声明へのリンクをユーザーがすぐに入手して表示できるようにする必要があります。 組織の管理者は、以下の手順に従って、**バージョン情報**ウィンドウ (**設定** &gt; **バージョン情報**) で利用可能である法律条項とプライバシーに関する声明へのリンクを持つことができます。
 
@@ -40,22 +40,23 @@ ms.locfileid: "2183075"
 
     2.  組織のプライバシーに関する声明を説明するページへのリンクを入力します。
 
-> [!NOTE]
-> *https* または *http* のいずれかで始まる完全な URL を入力していることを確認します。
+        > [!NOTE]
+        > *https* または *http* のいずれかで始まる完全な URL を入力していることを確認します。
 
 2.  **保存**をクリックします。
 
-3.  小売を使用している場合は、**配送スケジュール**ページに移動します。 このページでは:
+3.  コマースを使用している場合は、**配送スケジュール** ページに移動します。 このページでは:
 
     1.  **1110 – グローバル構成** ジョブを選択します。
 
     2.  **今すぐ実行**をクリックします。
 
->   ジョブが完了したことを確認するには、**ダウンロード セッション** ページに移動します。
+        > [!NOTE]
+        > ジョブが完了したことを確認するには、**ダウンロード セッション** ページに移動します。
 
 ## <a name="validate-links"></a>リンクの検証
 
-### <a name="validate-the-links-in-finance-supply-chain-management-and-retail"></a>財務、Supply Chain Management、および小売のリンクを検証
+### <a name="validate-the-links-in-finance-supply-chain-management-and-commerce"></a>Finance、Supply Chain Management、およびコマースのリンクを検証
 
 リンクが追加されたことを確認するには、ページ上部のツールバーで **設定** アイコンをクリックし、**詳細** をクリックします。 ウィンドウの**リンク** セクションに 2 つの新しいリンクが表示されます。
 

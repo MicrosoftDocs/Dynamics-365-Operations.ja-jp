@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 4da3ab6dd87ed97877eb429197e4d5cbf191586e
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 9acee8e7a1d8b4faf4f8b0254bd1c25bd5b4c595
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578296"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029380"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 
@@ -34,7 +34,7 @@ ms.locfileid: "2578296"
 
 このトピックでは、機能のコールアウトの作成に使用される API について詳しく説明します。   
 
-![ナビゲーション ウィンドウの機能のコールアウトの変更](./media/cli_featureCallout_noLink.png "プラットフォーム更新プログラム 22 でリリースされた、ナビゲーション ウィンドウの機能のコールアウトの変更")
+![ナビゲーション ウィンドウの機能のコールアウトの変更](./media/cli_featureCallout_noLink.png "プラットフォーム更新プログラム 22 でリリースされたナビゲーション ウィンドウの機能のコールアウトの変更")
   
 ## <a name="the-got-it-button"></a>"了解" ボタン
 機能のコールアウトがトリガーされたら、ユーザは **了解** ボタンをただクリックしてポップアップを閉じることができます。 これにより、この機能コールアウトの状態が個人用設定サブシステムに保存され、特定の機能コールアウトが再度トリガーされるのを防ぎます。 
@@ -77,18 +77,20 @@ SystemNotificationsWhatsNewManager クラスには、機能のコールアウト
 ### <a name="example"></a>例
 次のコードスニペットは、*TestStringControl* というコントロールに関連付けられている機能のコールアウトをトリガーします。  
 
-    public void init() 
-    {
-         super(); 
+```xpp
+public void init() 
+{
+     super(); 
      
-         SystemNotificationsWhatsNewManager::AddWhatsNewWithActionLink(
-              MyTestKey, 
-              "My title" , 
-              "My description", 
-              TestStringControl.name(), 
-              "http://www.microsoft.com"
-         );
-    }
+     SystemNotificationsWhatsNewManager::AddWhatsNewWithActionLink(
+          MyTestKey, 
+          "My title" , 
+          "My description", 
+          TestStringControl.name(), 
+          "https://www.microsoft.com"
+     );
+}
+```
 
 ## <a name="notes"></a>摘要
 -  複数の機能のコールアウトを一度に 1 ページに表示できます。

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f6f586dc4f5dc908c5658c0191fb98f356db7f1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 158b641a1e3aaf41288d273fab2f0e391fb2b154
+ms.sourcegitcommit: c5ef9a1d1853095ab537389b9a8e2d2adb39ed8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812035"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "3033080"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 
@@ -33,9 +33,13 @@ ms.locfileid: "2812035"
  
 タスク の作成方法についての詳細は、[タスク レコーダー リソース](../../user-interface/task-recorder.md)を参照してください。
 
+RSAT がテスト ケースの Excel パラメーター ファイルを生成すると、次の図に示すように検証ステップが追加されます。 テスト ケースの実行中に使用する予測値を入力できます。 
+
+![変数の検証](media/rsat-validate-variables.png)
+
 ## <a name="validate-expected-values-using-operators"></a>演算子を使用して予測値を検証する
 
-この機能を使用するには、Regression Suite Automation Tool のインストール フォルダーの **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** という名前の構成ファイルを編集する必要があります。 ファイルを編集し、**AddOperatorFieldsToExcelValidation** の値を **true** に変更します。
+検証ステップでは、演算子を使用することもできます。 この機能を使用するには、Regression Suite Automation Tool のインストール フォルダーの **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** という名前の構成ファイルを編集する必要があります。 ファイルを編集し、**AddOperatorFieldsToExcelValidation** の値を **true** に変更します。
 
 ```Xml
 <add key=" AddOperatorFieldsToExcelValidation" value="true" />

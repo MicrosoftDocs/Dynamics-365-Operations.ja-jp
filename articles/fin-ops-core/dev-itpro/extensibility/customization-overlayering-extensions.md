@@ -1,7 +1,7 @@
 ---
 title: 拡張機能とオーバーレイによってカスタマイズする
 description: このトピックでは、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法、およびサポートされている拡張機能の詳細について説明します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79f630c5a2be6641357b8fcb727a74689e9af6d3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7cb37732a71a44e5325cb3864a59ee6f477e9246
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812115"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983637"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能とオーバーレイによってカスタマイズする
 
@@ -208,7 +208,7 @@ Microsoft Dynamics AX 2012 では、テーブルの基本クラスの仮想メ�
 1.  新しいメニュー項目、サブメニュー、メニューの参照を追加し、既存のメニューへの参照を並べて表示します。
 2.  **表示** プロパティをいいえに設定して、既存のメニュー項目、タイル、またはメニュー内のサブメニューを非表示にします。
 
-#### <a name="menuextensionsmediamenuextensions-300x137pngmediamenuextensionspng"></a>[![menuextensions](./media/menuextensions-300x137.png)](./media/menuextensions.png)
+#### <a name="menuextensionsmediamenuextensionspng"></a>[![menuextensions](./media/menuextensions-300x137.png)](./media/menuextensions.png)
 
 ## <a name="security-role-and-duty-extensions"></a>セキュリティ ロールおよび職務権限拡張機能
 セキュリティ ロールまたはセキュリティ職務権限を拡張して、これらの要素に新しい職務/特権を追加することができます。

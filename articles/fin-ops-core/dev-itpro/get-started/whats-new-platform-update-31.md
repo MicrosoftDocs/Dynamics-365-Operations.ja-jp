@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations に関するプラットフォーム更新プログラム 31 の新機能と変更点 (2020 年 1月)
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされる機能について説明します。
+title: Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
+description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされている機能について説明します。
 author: tonyafehr
 manager: AnnBe
 ms.date: 01/07/2020
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: 0337b7cda7261d862da01ed8daf5cdb34ac03078
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 3ccb24d2fb11c5ea982109b2ea19fc3fa3f3fa15
+ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935429"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2982292"
 ---
-# <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations に関するプラットフォーム更新プログラム 31 の新機能と変更点 (2020 年 1月)
+# <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更されたプレビュー機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更された機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
 
 - プレビューリリースは 2019 年 10 月です。
 - Ga (自動更新) は 2019 年 11 月です。
@@ -64,7 +64,7 @@ Web サイトのホスト コントロールが追加され、開発者はサー
 
 開発者は新しい星評価コントロールを使用することもできます。 このコントロールは、1 から 5 個の星のスケール上で 4 分の 1 ずつの評価を表示します。
 
-## <a name="updated-icon-for-finance-and-operations-apps"></a>更新された Finance and Operations アプリのアイコン
+## <a name="updated-icon-for-finance-and-operations-apps"></a>Finance and Operations アプリの更新されたアイコン
 Finance and Operations アプリ用の新しいアイコンは、Dynamics 365 の最新のアイコン スタイリングに沿っていて、Web クライアントに表示されるようになりました。
 
 ## <a name="optimization-of-loading-the-data-management-workspace"></a>データ管理ワークスペース読み込みの最適化

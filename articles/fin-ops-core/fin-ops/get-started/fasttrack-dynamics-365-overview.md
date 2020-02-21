@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 4cd9372704c98545d2863dce3cfdb427313b08e4
-ms.sourcegitcommit: 85674cdc726bce33b2acc2963713754bb0c42185
+ms.openlocfilehash: 0201d978d0f758fff45f8ca1a49e7df9a06e955b
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "2927871"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005739"
 ---
 # <a name="microsoft-fasttrack"></a>Microsoft FastTrack 
 
@@ -41,9 +41,8 @@ Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワ�
 
 | FastTrack プログラム | 収益 | 技術解説 | ワーク ショップ | ワークショップ の フォローアップ | 専用の FastTrack エンジニアリング リソース |
 | --- | --- | --- | --- | --- | --- |
-| **Dynamics 365 用 FastTrack** <br></br> **ビジネス プロセス アプリケーション** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | 調整後の連結年間売上高 が $300,000 またはそれ以上 | すべてを含める | すべてを含める | すべてを含める | 含む |
-| **FastTrack エッセンシャル** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | 調整後の連結年間売上高 が $300,000 以下 | すべてを含める | 本稼働前の評価 | 含まない | 含まない |
-| \* Core HR の機能のみ | | | | | |
+| **Dynamics 365 用 FastTrack** <br></br> **ビジネス プロセス アプリケーション** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources\* | 調整後の連結年間売上高 が $300,000 またはそれ以上 | すべてを含める | すべてを含める | すべてを含める | 含む |
+| **FastTrack エッセンシャル** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources | 調整後の連結年間売上高 が $300,000 以下 | すべてを含める | 本稼働前の評価 | 含まない | 含まない |
 
 次のアプリケーションに関する FastTrack 対応については、今年の後半に発表します:
 

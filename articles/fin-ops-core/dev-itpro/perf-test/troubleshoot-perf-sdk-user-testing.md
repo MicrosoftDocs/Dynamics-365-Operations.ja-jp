@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7d10a28588ce5990e5f53dbf22983aeabb47124
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b17ba320a4aaacb6a880d8d9f92ea356a213de8d
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191803"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029798"
 ---
 # <a name="troubleshooting-guide-for-single-user-or-multi-user-testing-with-the-performance-sdk"></a>パフォーマンスSDKを使用した、シングルユーザーまたはマルチユーザーテストのためのトラブルシューティングガイド
 
@@ -76,7 +76,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 - アプリケーション オブジェクト サーバー マシン (AOS) に証明書が 正しくインストールされていません。 以下の Microsoft Windows PowerShell スクリプトを実行し、認証が必要となる証明書をAOSマシン内で検索します。
 
-    ```
+    ```Console
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=<name of your certificate>" }
     ```
@@ -211,7 +211,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 この問題は、**SelfSigningCertificateThumbprint** フィールドが CloudEnvironment.Config ファイルに空白のままになっている場合に発生します。 CloudEnvironment.Config ファイルで、次の行を検索し、作成してインストールした証明書の拇印に貼り付けます。
 
-```
+```xml
 \<ExecutionConfigurations Key="SelfSigningCertificateThumbprint" Value="" />
 ```
 
@@ -225,7 +225,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 開発コンピューターで次の Windows PowerShell スクリプトを実行します。
 
-```
+```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319)) 
 {
@@ -251,7 +251,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="error-example"></a>エラーの例
 
-> ファイル K:\\perfSDK\\PerfSDKLocalDirectory\\SampleProject\\TestResults\\Admin501201994c\_devae648d1909-1 2018-06-25 03\_40\_51\\Out\\Common\\External\\Selenium\\IEDriverServer.exe が存在しません。 ドライバーは、 `http://selenium-release.storage.googleapis.com/index.html`にてダウンロードできます。
+> ファイル K:\\perfSDK\\PerfSDKLocalDirectory\\SampleProject\\TestResults\\Admin501201994c\_devae648d1909-1 2018-06-25 03\_40\_51\\Out\\Common\\External\\Selenium\\IEDriverServer.exe が存在しません。 ドライバーは、 `https://selenium-release.storage.googleapis.com/index.html`にてダウンロードできます。
 
 ### <a name="solution"></a>ソリューション
 

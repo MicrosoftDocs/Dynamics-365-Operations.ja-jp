@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f10c5f438fbf9cb1e0b96735aa80c923cccf016
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e75835e7299836be2a43133fbd3de3374b6ffd2f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191756"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033050"
 ---
 # <a name="system-defined-buttons"></a>システム定義ボタン
 
@@ -106,7 +106,8 @@ ms.locfileid: "2191756"
 | Form.Datasources.&lt;FirstMasterDatasource&gt;.AllowDelete | 無    | フォームはレコードの削除を許可しません。 フォームに無効なシステム定義の **削除** ボタンがあります。            |
 | Form.Datasources.&lt;FirstMasterDatasource&gt;.AllowDelete | 有   | このフォームはレコードの削除を可能にします。 フォームには、システム定義の **削除** ボタンが有効になっています (表示されている場合)。 |
 
-**注記:** フォームに新規レコード アクションがある場合、ボタン コントロールはシステム定義の**新規**ボタンの有効状態を上書きします。
+> [!NOTE]
+> フォームに新規レコード アクションがある場合、ボタン コントロールはシステム定義の**新規**ボタンの有効状態を上書きします。
 
 ### <a name="how-do-i-change-the-behavior-of-the-new-task-either-by-clicking-the-button-or-by-using-the-keyboard-shortcut"></a>新しいタスク (ボタンをクリックするまたはキーボード ショートカットを使用するかのいずれか) の動作をどのように変更しますか。
 
@@ -121,31 +122,33 @@ ms.locfileid: "2191756"
 
 - (推奨)イベントを使用します。 特に、レコードの作成と削除の前後に実行することを意図したコードを配置できる場合、これらのアクションのプリイベントとポストイベントがあります。 以下のコード例をご覧ください。
 
-      [Form]
-      public class Form1 extends FormRun
-      {
-          public void init()
-          {
-              super();
-              element.dataHelper().RecordCreating += eventhandler(this.PreRecordCreate);
-              element.dataHelper().RecordCreated  += eventhandler(this.PostRecordCreate);
-              // similar methods exist for deletion:
-              // element.dataHelper().RecordDeleting, element.dataHelper().RecordDeleted
-              //
-              // explicit actions can be triggered via:
-              // element.dataHelper().RecordCreate(), element.dataHelper().RecordDelete()        
-          }
-          public void PreRecordCreate(FormRunServiceArgs _cancellableArgs)
-          {
-              //  I can add my logic here that gets invoked before the global creation task
-              // if I need to, I can cancel the "super" of the task by doing:
-              // _cancellableArgs.cancel()
-          }
-          public void PostRecordCreate()
-          {
-              //  I can add my logic here that gets invoked after the global creation task
-          }
-      }
+    ```xpp
+    [Form]
+    public class Form1 extends FormRun
+    {
+        public void init()
+        {
+            super();
+            element.dataHelper().RecordCreating += eventhandler(this.PreRecordCreate);
+            element.dataHelper().RecordCreated  += eventhandler(this.PostRecordCreate);
+            // similar methods exist for deletion:
+            // element.dataHelper().RecordDeleting, element.dataHelper().RecordDeleted
+            //
+            // explicit actions can be triggered via:
+            // element.dataHelper().RecordCreate(), element.dataHelper().RecordDelete()        
+        }
+        public void PreRecordCreate(FormRunServiceArgs _cancellableArgs)
+        {
+            //  I can add my logic here that gets invoked before the global creation task
+            // if I need to, I can cancel the "super" of the task by doing:
+            // _cancellableArgs.cancel()
+        }
+        public void PostRecordCreate()
+        {
+            //  I can add my logic here that gets invoked after the global creation task
+        }
+    }
+    ```
 
 - 対応するデータ ソースの、**create()** または **delete()** メソッドで上書きを作成します。
 
@@ -197,13 +200,15 @@ ms.locfileid: "2191756"
 -   プリイベント/ポストイベントを持つシステム定義されたボタン (たとえば、**新規**、**削除**、および**編集**) については、適切なイベントにサブスクライブすることができます。 これらのボタンの特定のイベントについては、**新規作成**/**削除** ボタンと **編集** ボタンの対応するセクションを参照してください。
 -   タスクを直接呼び出さないシステム定義のボタン (たとえば、**SystemDefinedShowMenuButton** および **SystemDefinedShowListButton**) については、**registerOverrideMethod()** の呼び出しを通してボタンの上書きを登録でき、システム定義ボタンをクリックしたときに追加コードが実行されるようにします。
 
-        public void overrideFunction(FormCommandButtonControl _command)
-            {
-                // Put any pre-super code here 
-               // This serves as the call to super()
-                _command.clicked(); 
-                // Put any post-super code here
-            }
+    ```xpp
+    public void overrideFunction(FormCommandButtonControl _command)
+        {
+            // Put any pre-super code here 
+            // This serves as the call to super()
+            _command.clicked(); 
+            // Put any post-super code here
+        }
+    ```
 
 ### <a name="how-do-i-suppress-any-of-these-system-defined-buttons-on-a-form-but-without-suppressing-any-corresponding-task"></a>対応するタスクを抑制することなく、フォーム上のこれらのシステム定義されたボタンのいずれかを抑制するにはどうすればよいですか。
 
@@ -215,17 +220,18 @@ ms.locfileid: "2191756"
 
 ただし、これらのボタンのいずれかを抑制する必要がある場合 (決して推奨しません)、次のコード例に示すように、コードを通してコントロールを検索し、可視性を **false** に設定できます。 利用可能な場合、SysSystemDefinedButtons マクロを使用して、ボタン名を参照します。
 
-    FormCommandButtonControl attachButton;
+```xpp
+FormCommandButtonControl attachButton;
 
-       public void init()
-       {
-            #SysSystemDefinedButtons
+    public void init()
+    {
+        #SysSystemDefinedButtons
 
-            super();
+        super();
 
-            attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
-            attachButton.visible(false); 
-        }
-
+        attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
+        attachButton.visible(false); 
+    }
+```
 
 

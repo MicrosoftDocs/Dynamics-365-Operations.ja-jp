@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 6d45339f2e0ceca8e7805e70a4a371e1be583335
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 1979eac8805dff49934025fcd6b2fccdd67c013a
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914807"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029425"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 
@@ -35,18 +35,18 @@ Microsoft Azure Service Fabric cluster の **OrchestratorType** の **各** ノ�
 1. リモート アクセスを使用して、オーケストレーター仮想マシン (VM) に接続します。
 2. ```machine.config``` ファイルのパスを取得するには、次の PowerShell スクリプトを実行します。
 
-    ```Powershell
+    ```powershell
     [System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
     ```
 
 3. ```machine.config``` ファイルを編集し、次のコード例を追加します。
 
-    ```XML
-        <system.net>
-            <defaultProxy enabled="true" >
-                <proxy <<<SET YOUR PROXY SETTINGS>> />
-            </defaultProxy>
-        </system.net>
+    ```xml
+    <system.net>
+        <defaultProxy enabled="true" >
+            <proxy <<<SET YOUR PROXY SETTINGS>> />
+        </defaultProxy>
+    </system.net>
     ```
 
 4. ファイル保存します。
@@ -57,7 +57,8 @@ Microsoft Azure Service Fabric cluster の **OrchestratorType** の **各** ノ�
 ## <a name="whitelist-urls"></a>ホワイトリスト URLs
 
 LocalAgent は Azure リソースと通信する必要があります。 結果として、次の URL は プロキシやファイアウォールでホワイトリスト化される必要があり、そうすることで全ての **OrchestratorType** ノードがアクセスすることができます:
-```
+
+```Text
 - lcsapi.lcs.dynamics.com
 - login.windows.net
 - uswelcs1lcm.queue.core.windows.net

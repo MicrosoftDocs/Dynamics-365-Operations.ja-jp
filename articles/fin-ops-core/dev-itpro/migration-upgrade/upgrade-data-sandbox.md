@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0be723a0765a0deeafe1ca4353fe2091cb928447
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e7c5780674ab465ddec27f4c0a5cd48036990492
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812043"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033043"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
@@ -67,15 +67,15 @@ AX 2012 環境と統合されている他のシステムをお持ちかもしれ
 
 データベースのコピーを作成するコードの例を以下に示します。 特定のデータベース名を反映するよう、この例を変更する必要があります。
 
-```
-    BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-    NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-    GO
+```sql
+BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
+NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
+GO
 
-    RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-    MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-    MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-    NOUNLOAD,  STATS = 5
+RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
+MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
+MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
+NOUNLOAD,  STATS = 5
 ```
 ## <a name="run-the-t-sql-script-to-prepare-the-database"></a>データベースの準備のため T-SQL スクリプトを実行
 
@@ -83,98 +83,98 @@ AX 2012 環境と統合されている他のシステムをお持ちかもしれ
 
 コピーが作成されたら、次の Transact-SQL (T-SQL) スクリプトを実行します。
 
-```
-    --remove NT users as these are not supported in Azure SQL Database
-    declare 
-    @SQL varchar(255),
-    @UserName varchar(255)
+```sql
+--remove NT users as these are not supported in Azure SQL Database
+declare 
+@SQL varchar(255),
+@UserName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     userCursor CURSOR for
-    select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+declare     userCursor CURSOR for
+select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
-    OPEN userCursor
-        FETCH userCursor into @UserName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP USER [' + @UserName + ']'
-            exec(@SQL)
-            FETCH userCursor into @UserName
-          END
-    CLOSE userCursor
-    DEALLOCATE userCursor
+OPEN userCursor
+    FETCH userCursor into @UserName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP USER [' + @UserName + ']'
+           exec(@SQL)
+           FETCH userCursor into @UserName
+       END
+CLOSE userCursor
+DEALLOCATE userCursor
 
-    go
+go
 
-    --remove any AX 2012 RTM model store procedures that still exist
-    declare 
-    @SQL varchar(255),
-    @procname varchar(255)
+--remove any AX 2012 RTM model store procedures that still exist
+declare 
+@SQL varchar(255),
+@procname varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     procCursor CURSOR for
-    select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+declare     procCursor CURSOR for
+select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
 
-    OPEN procCursor
-        FETCH procCursor into @procname
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP PROCEDURE [' + @procname + ']'
-            exec(@SQL)
-            FETCH procCursor into @procname
-          END
-    CLOSE procCursor
-    DEALLOCATE procCursor
+OPEN procCursor
+    FETCH procCursor into @procname
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+           exec(@SQL)
+           FETCH procCursor into @procname
+       END
+CLOSE procCursor
+DEALLOCATE procCursor
 
-    go
+go
 
-    --If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
-    --Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
-    --The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
 
-        if exists (select 1 from sys.schemas where name = 'contoso\admin')
-    begin
-        drop schema [contoso\admin]
-    end
-    if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
-    begin
-        drop schema [CONTOSO\Domain Users]
-    end
-    go
+    if exists (select 1 from sys.schemas where name = 'contoso\admin')
+begin
+    drop schema [contoso\admin]
+end
+if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+begin
+    drop schema [CONTOSO\Domain Users]
+end
+go
 
-    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
-    declare 
-    @SQL2 varchar(255),
-    @ViewName varchar(255)
+--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
+declare 
+@SQL2 varchar(255),
+@ViewName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     viewCursor CURSOR for
+declare     viewCursor CURSOR for
 
-    select viewname = v.name
-    from sys.views v
-    order by v.name
+select viewname = v.name
+from sys.views v
+order by v.name
 
-    OPEN viewCursor
+OPEN viewCursor
 
-    FETCH viewCursor into @ViewName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL2 = 'DROP VIEW ' + @ViewName
-            exec(@SQL2)
-            FETCH viewCursor into @ViewName
-          END
-    CLOSE viewCursor
-    DEALLOCATE viewCursor
-    go
+FETCH viewCursor into @ViewName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL2 = 'DROP VIEW ' + @ViewName
+           exec(@SQL2)
+           FETCH viewCursor into @ViewName
+       END
+CLOSE viewCursor
+DEALLOCATE viewCursor
+go
 
-    -- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
-    If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
-    begin
-        drop procedure MaintainShipCarrierRole
-    end
+-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+begin
+    drop procedure MaintainShipCarrierRole
+end
 ```
 
 ## <a name="export-the-copied-database-to-a-bacpac-file"></a>コピーしたデータベースを bacpac ファイルにエクスポートする
@@ -192,7 +192,7 @@ SQLPackage.exe ツールを使用して、コピーしたデータベースを b
 
 次に、管理者として **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
 
-```
+```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
@@ -232,10 +232,10 @@ SQL データベース インスタンスへのアクセスを制限するファ
 
 管理者として **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
 
-```
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+```Console
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
 ```
 
 パラメータの説明を以下に示します。
@@ -246,7 +246,7 @@ SQL データベース インスタンスへのアクセスを制限するファ
 - **tp** (ターゲット パスワード) – ターゲット SQL データベース インスタンスの SQL パスワード。
 - **tu** (ターゲット ユーザー) – ターゲット SQL データベース インスタンスの SQL ユーザー名。 **sqladmin** を使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
 - **/p:CommandTimeout** – クエリあたりのタイムアウト値。 このパラメータによって、タイムアウトを起こさずに大きなテーブルをエクスポートできます。
-- **/p:DatabaseServiceObjective** - S1、P2、P4 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseServiceObjective** - S1、P2、P4 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
 
 コマンドを実行すると、次の警告が表示される場合があります。 これは無視してかまいません。
 
@@ -260,40 +260,40 @@ SQL データベース インスタンスへのアクセスを制限するファ
 -   適切な実績パラメーターを設定
 -   SQL Query Store 機能の有効化
 
-```
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+```sql
+CREATE USER axdeployuser FROM LOGIN axdeployuser
+EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-    CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-    CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-    ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
-    ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
 ## <a name="run-the-data-upgrade-deployable-package"></a>データ アップグレード展開可能なパッケージを実行
 
-レベル 2 サンドボックス環境では、DataUpgrade パッケージを LCS 経由で実行することはできません。 最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード展開可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
+レベル 2 サンドボックス環境では、DataUpgrade パッケージを LCS 経由で実行することはできません。 最新の Finance and Operations の更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
 
 1. [LCS](https://lcs.dynamics.com/)にサインインします。
 2. **共有資産ライブラリ** タイルを選択します。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 33d6bd1bfa4eca7daddb3680fcf06c368ff57486
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e864468420fab526cf7c8e1b259675ae7b239d91
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771530"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025843"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
@@ -58,7 +58,7 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
 6. **標準のレポート コントローラーを拡張する新しい X++ クラスを追加します。** クラスに、それが既存のアプリケーション レポートのハンドラーであることを適切に表す名前を付けます。 この例では、クラスの **SalesConfirmControllerExt** の名前を変更し、他のレポート コントローラーと区別します。
 7. **拡張クラスを使用して、カスタム デザインを読み込みます。** カスタム レポート デザインを参照する**メイン**メソッドを追加します。 (標準的なソリューションから**主要な**メソッドをコピーし、新しい**コントローラー**クラスへの参照を追加することができます。) 次に、標準的なソリューションを拡張するコードを示します。
 
-    ```
+    ```xpp
     class SalesConfirmControllerExt extends SalesConfirmController
     {
         public static SalesConfirmControllerExt construct()
@@ -81,7 +81,7 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
 8. **新しいレポート ハンドラー (X++) クラスをプロジェクトに追加します。** クラスに、それが印刷管理に基づくドキュメントのハンドラーであることを適切に表す名前を付けます。 この例では、クラスの **PrintMgtDocTypeHandlerExt** の名前を変更し、他のオブジェクト ハンドラーと区別します。
 9. **デリゲート ハンドラー メソッドを追加して、カスタム レポートの使用を開始します。** この例では、次のコードを使用して **PrintMgtDocTypeHandlerExt** クラスの **getDefaultReportFormatDelegate** メソッドを展開します。
 
-    ```
+    ```xpp
     class PrintMgtDocTypeHandlersExt
     {
         [SubscribesTo(classstr(PrintMgmtDocType), delegatestr(PrintMgmtDocType, getDefaultReportFormatDelegate))]

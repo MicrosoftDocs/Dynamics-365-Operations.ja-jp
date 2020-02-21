@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23941
 ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf3b3e9c78a1645b1b927906548e77b27b1639e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4ac35a9e4aa77f65df133a596716ccaacc11bfba
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772345"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983668"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 

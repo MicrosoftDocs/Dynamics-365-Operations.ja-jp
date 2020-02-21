@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecc8e86136c2aa11b10b7ac114526bf2fc62b817
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 34e3e2790abfac2ef61553719d25328385c562fa
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658880"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029386"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -49,7 +49,7 @@ ms.locfileid: "2658880"
 1.  Visual Studio を管理者としてオープンします。
 1.  **ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックし、デスクトップ フォルダーから **FleetManagement** **ソリューション**を選択します。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
 1.  **ソリューション エクスプローラー**で、**フリート管理**ソリューションを右クリックして**追加**をポイントしてから**新規プロジェクト**をクリックします。
-1.  作成するプロジェクト タイプとして **Finance and Operations** を選択します。
+1.  作成するプロジェクトタイプとして **Finance and Operations** を選択します。
 1.  この新しいプロジェクトに *FleetManagementUnitTestSample* と名前を付け、デスクトップの FleetManagement フォルダー (C:\Users\Public\Desktop\FleetManagement) を場所として指定してから、**OK** をクリックします。 
 1.  **ソリューション エクスプローラー**で、新規プロジェクトを右クリックしてから**プロパティ**をクリックします。
 1.  **Model** プロパティを **FleetManagementUnitTests** に設定し、**OK** をクリックします。 
@@ -64,56 +64,58 @@ ms.locfileid: "2658880"
 1. 新しいクラスのコードの最初の行で、クラスが SysTestCase クラスを拡張していることを示します。
 1. クラスのメソッドを定義する次のコードを追加します。 これらのメソッドは、2 つの追加テストを定義します。
 
-        class FMUnitTestSample extends SysTestCase
+    ```xpp
+    class FMUnitTestSample extends SysTestCase
+    {
+        public void setup()
         {
-            public void setup()
-            {
-                // Reset the test data to be sure things are clean
-                FMDataHelper::main(null);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMTotalsEngine()
-            {
-                FMRental rental;
-                FMTotalsEngine fmTotals;
-                FMRentalTotal fmRentalTotal;
-                FMRentalCharge rentalCharge;
-                FMRentalTotal expectedtotal;
-                str rentalID = '000022';
-
-                // Find a known rental
-                rental = FMRental::find(rentalID);
-
-                // Get the rental charges associated with the rental
-                // Data is seeded randomly, so this will change for each run
-                select sum(ExtendedAmount) from rentalCharge
-                        where rentalCharge.RentalId == rental.RentalId;
-
-                fmTotals = FMTotalsEngine::construct();
-                fmTotals.calculateRentalVehicleRate(rental);
-
-                // Get the totals from the engine
-                fmRentalTotal = fmTotals.totals(rental);
-
-                // Set the expected amount
-                expectedTotal = rental.VehicleRateTotal + rentalCharge.ExtendedAmount;
-
-                this.assertEquals(expectedTotal,fmRentalTotal);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMCarValidateField()
-            {
-                FMCarClass fmCar;
-
-                fmCar.NumberOfDoors = -1;
-                this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-
-                fmCar.NumberOfDoors = 4;
-                this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-            }
+            // Reset the test data to be sure things are clean
+            FMDataHelper::main(null);
         }
+
+        [SysTestMethodAttribute]
+        public void testFMTotalsEngine()
+        {
+            FMRental rental;
+            FMTotalsEngine fmTotals;
+            FMRentalTotal fmRentalTotal;
+            FMRentalCharge rentalCharge;
+            FMRentalTotal expectedtotal;
+            str rentalID = '000022';
+
+            // Find a known rental
+            rental = FMRental::find(rentalID);
+
+            // Get the rental charges associated with the rental
+            // Data is seeded randomly, so this will change for each run
+            select sum(ExtendedAmount) from rentalCharge
+                    where rentalCharge.RentalId == rental.RentalId;
+
+            fmTotals = FMTotalsEngine::construct();
+            fmTotals.calculateRentalVehicleRate(rental);
+
+            // Get the totals from the engine
+            fmRentalTotal = fmTotals.totals(rental);
+
+            // Set the expected amount
+            expectedTotal = rental.VehicleRateTotal + rentalCharge.ExtendedAmount;
+
+            this.assertEquals(expectedTotal,fmRentalTotal);
+        }
+
+        [SysTestMethodAttribute]
+        public void testFMCarValidateField()
+        {
+            FMCarClass fmCar;
+
+            fmCar.NumberOfDoors = -1;
+            this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
+
+            fmCar.NumberOfDoors = 4;
+            this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
+        }
+    }
+    ```
 
 1. 新しいクラスを保存します。 保存が完了した後、**テスト エクスプローラー**に追加 2 つのテスト ケースが表示されます。 **ソリューション エクスプローラー**で FleetManagementUnitTestSample プロジェクトを右クリックし、**ビルド** をクリックします。
 1.  **表示**メニューで、**テスト エクスプローラー**を開きます。 
@@ -125,7 +127,7 @@ ms.locfileid: "2658880"
 ## <a name="test-module-creation-to-manage-test-code-and-formadaptors"></a>テスト コードと FormAdaptors を管理するテスト モジュールの作成
 テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。
 
-1. **Visual Studio** を開き、**Finance and Operations** > **モデル管理** > **モデルの作成** に移動します。
+1. **Visual Studio**を開き、**Finance and Operations** > **モデル管理** > **モデルの作成**に移動します。
 
 2. モデル名を入力し、レイヤーを選択し、次に追加詳細を入力します。 テスト モジュールの名前に**テスト**という語を含めることをお勧めします。 既定のビルド定義は、**テスト** という単語を含むすべてのテスト モジュールを検出するように設定されています。 
    
@@ -140,7 +142,7 @@ ms.locfileid: "2658880"
 
 1. タスク レコーダーを使用してシナリオを記録します。
 
-2. Visual Studio でタスク記録をインポートするには、**Finance and Operations** > **アドイン** > **タスク記録をインポート** をクリックします。 
+2. Visual Studio にタスク記録をインポートするには、**Finance and Operations** > **アドイン** > **タスク記録をインポート**をクリックします。 
 
 3. **タスクの記録をインポート** ダイアログで、タスクの記録をインポートするテスト モジュール (ISVTestModule) を選択し、記録している xml ファイルを参照します。 
 

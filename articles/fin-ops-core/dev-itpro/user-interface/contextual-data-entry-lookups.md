@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c10ddb84d54ece70c94cbda64c859b623db499e
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: b33427afa0165985e186869444bb4a2f262ddf47
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578297"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033033"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 
@@ -90,10 +90,12 @@ NAME が入力された場合は、次のルックアップが表示されます
 
 カスタム ルックアップの実装では、ダイアログの提示など、高度な動作や非典型的な動作を提供できます。 したがって、カスタム ルックアップ シナリオが検出されると、システムは既定の曖昧さ回避動作を無効にします。 既定の曖昧性解消動作を有効にするには、**ルックアップをホストするコントロール** で *resolveAmbiguousReference* メソッド (下記参照) をオーバーライドします。 *resolveAmbiguousReferenceForControl* の呼び出しに対する 2 つ目のパラメーターは、カスタム ルックアップ シナリオについて曖昧性解消を実行しないという既定の動作をオーバーライドするものであることに注意してください。
 
-    public str resolveAmbiguousReference()
-    {
-        FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
-    }
+```xpp
+public str resolveAmbiguousReference()
+{
+    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+}
+```
 
 ### <a name="make-custom-lookup-forms-contextual"></a>カスタム ルックアップ フォームをコンテキストにする
 
@@ -113,61 +115,67 @@ NAME が入力された場合は、次のルックアップが表示されます
 
 FormHelp で定義されたカスタム ルックアップ (モデル化されていても) は、通常のカーネル ベースのルックアップ生成ルーティンをそのまま使います。 したがって、カーネルには引き続きルックアップ フォームを変更するためのフックがあります。 具体的には、ルックアップ システムに、正しいフィルターおよび並べ替えを適用するための十分な情報があります。ただし、ルックアップのグリッドで移動すべきコントロールは既知ではありません。  (バインディングに基づいて推測することは可能ですが、その推測はより高度なルックアップ フォーム デザインでは不正確である可能性があります)。カスタム ルックアップ フォームが、*SysTableLookup::filterLookupPreRun* メソッドおよび *SysTableLookup::* *filterLookupPostRun* メソッドを利用している場合、*filterLookupPostRun* で (新しい) オプション パラメーターを取得して、名前コントロールを次のように自動的に移動させます。
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
 
-            super();
+        super();
 
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control);
-        }
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control);
     }
+}
+```
 
 ルックアップ フォームが *SysTableLookup::filterLookup\** メソッドを使用しておらず、それらのメソッドを取得しない場合、以下のように、単にコントロール移動を追加することができます。
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void init()
     {
-        public void init()
-        {
-            super();
-            this.applyControlOrdering();
-        }
+        super();
+        this.applyControlOrdering();
+    }
 
-        private void applyControlOrdering()
+    private void applyControlOrdering()
+    {
+        FormControl callerControl = SysTableLookup::getCallerControl(this.args());
+        if (FormControlAmbiguousReferenceResolver::isControlValueMappedToAlternativeField(callerControl))
         {
-            FormControl callerControl = SysTableLookup::getCallerControl(this.args());
-            if (FormControlAmbiguousReferenceResolver::isControlValueMappedToAlternativeField(callerControl))
-            {
-                Grid.moveControl(ID_Control.id(), NAME_control.id());
-            }
-            else
-            {
-                Grid.moveControl(NAME_Control.id(), ID_Control.id());
-            }
+            Grid.moveControl(ID_Control.id(), NAME_control.id());
+        }
+        else
+        {
+            Grid.moveControl(NAME_Control.id(), ID_Control.id());
         }
     }
+}
+```
 
 #### <a name="scenario-2-override-of-lookup-method-manually-launching-a-form"></a>シナリオ 2: フォームを手動で起動するルックアップ メソッドの上書き
 
 シナリオ 1 とは異なり、クラス ファクトリなどの完全な手動メカニズムによって起動されるルックアップ フォームにはカーネル フックはありません。 したがって、コンテキスト データ入力動作を遵守するのはルックアップ フォームの責任です。 これを行う最も簡単な方法は、並べ替えを維持する必要があることを示す 1 つの追加パラメーターを含めることを除いて、(シナリオ 1 と同様の) SysTableLookup::filterLookup\* メソッドを活用することです。 例として以下に表示します。
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
 
-            super();
+        super();
 
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control, true);
-            }
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control, true);
     }
+}
+```
 
 ## <a name="advanced-lookup-uptake"></a>高度なルックアップの取得
 ### <a name="scenario-1-overriding-id-and-name-bindings"></a>シナリオ 1: ID と NAME バインドの上書き
@@ -182,51 +190,55 @@ FormHelp で定義されたカスタム ルックアップ (モデル化され�
 
 カスタム バインドを提供する方法のエンド ツー エンドの例を次に示します。
 
-    [Control Hosting Lookup]
-    public str resolveAmbiguousReference()
+```xpp
+[Control Hosting Lookup]
+public str resolveAmbiguousReference()
+{
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl(
+        this, true, AbsoluteFieldBinding::construct(IDField, Table), 
+        AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table));
+}
+
+[Custom Lookup Form]
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl(
-            this, true, AbsoluteFieldBinding::construct(IDField, Table), 
-            AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table));
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+
+        super();
+
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl, AbsoluteFieldBinding::construct(IDField, Table),
+            AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table)), NAME_Control, true);
     }
-
-    [Custom Lookup Form]
-    public class MyCustomLookupForm extends FormRun
-    {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
-
-            super();
-
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl, AbsoluteFieldBinding::construct(IDField, Table),
-                AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table)), NAME_Control, true);
-        }
-    }
+}
+```
 
 ### <a name="scenario-2-custom-resolution-logic"></a>シナリオ 2: カスタム解像度ロジック
 
 resolveAmbiguousReference をオーバーライドし、FormControlAmbiguousReferenceResolver 以外のものを活用することによってカスタム解決ロジックを使用できます。 このロジックは、キーボードおよびルックアップ ベースのエントリが常に同期されるように、ホストされているルックアップ フォームと共通にする必要があることに注意してください。
 
-    public str resolveAmbiguousReference()
+```xpp
+public str resolveAmbiguousReference()
+{
+    // In this sample, allow “looser” data entry by simply picking the first record that matches, if any.
+    CLI_Job _job;
+    str mappedValue = this.text();
+    if (strLen(mappedValue) > 0)
     {
-        // In this sample, allow “looser” data entry by simply picking the first record that matches, if any.
-        CLI_Job _job;
-        str mappedValue = this.text();
-        if (strLen(mappedValue) > 0)
-        {
-            select firstonly _job order by _job.Title where _job.Title like mappedValue + “*”;
-        }
-
-        if (_job.RecId)
-        {
-            mappedValue = _job.Title;
-        }
-
-        return mappedValue;
+        select firstonly _job order by _job.Title where _job.Title like mappedValue + “*”;
     }
+
+    if (_job.RecId)
+    {
+        mappedValue = _job.Title;
+    }
+
+    return mappedValue;
+}
+```
 
 ## <a name="appendix--detailed-usage-scenarios-for-contextual-data-entry"></a>付録コンテキスト データ入力の詳細な使用シナリオ
 シナリオでは、PK フィールド「ID」およびインデックス フィールド「名」を持つ「TableA」と呼ばれるテーブルがあり、FK で ID (ユーザーは最終的には ID をピックする必要がある) に関連するものを入力しようとしていると仮定します。 類似または始まる値に依存するアルゴリズムは、文字列フィールドを想定していることに注意してください。 たとえば、整数型では、高品質の解決の動作を提供することはできません。 

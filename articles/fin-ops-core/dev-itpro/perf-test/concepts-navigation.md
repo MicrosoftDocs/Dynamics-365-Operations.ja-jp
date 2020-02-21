@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 0667ba4e3ff5e48404d5fa9e5f24a6e9c1d899ef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a59e9f74667c25fe333957285ad768830990f43b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812040"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033034"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
@@ -34,13 +34,13 @@ ms.locfileid: "2812040"
 
 ナビゲーションはルート オブジェクトから開始し、モジュールを指定して、そしてエンティティはテスト データ メソッドと一緒に指定する必要があります。
 
-```
+```xpp
 data.module().entity().testDataMethod();
 ```
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 modelGroup = data.invent().modelGroups().fifo();
 
 itemBuilder = data.products().items().whsBuilder();
@@ -102,7 +102,7 @@ data.invent().parameters().enableQualityManagement();
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 data.products().items();
 
 data.whs().warehouses();
@@ -114,7 +114,7 @@ data.whs().warehouses();
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 AtlDataProductsItems
 
 AtlDataInventChargeGroups
@@ -134,7 +134,7 @@ AtlDataInventChargeGroups
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 data.helpers();
 
 data.whs().helpers();
@@ -146,7 +146,7 @@ data.whs().helpers();
 
 #### <a name="examples"></a>例
 
-```
+```xpp
 AtlDataHelpers
 
 AtlDataWHSHelpers

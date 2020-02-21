@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df2e31f53de84cc5ecb6c4fbd100ca884cace6e0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5ef4e8ccc4a9b0e2949176aca9f94675e84fd7c3
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770932"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983671"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 

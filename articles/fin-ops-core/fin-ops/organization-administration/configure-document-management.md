@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4031a31da4370e3228cfe82082b9e74fc32db7f3
-ms.sourcegitcommit: b0cecde9cbc4fab57e3942c0e79143601a202480
+ms.openlocfilehash: 240185e174b0e1f64ced9453fdd940d434cb8932
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890979"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983777"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -47,7 +47,7 @@ ms.locfileid: "2890979"
 5. **クラス** フィールドで、ドキュメント タイプの動作を定義するクラスを指定します。
 
     - **ファイルの添付** - ユーザーはファイルを要求されます。
-    - **URL の添付** - ユーザーは、`http://www.microsoft.com` のように、**メモ**フィールドに URL を入力することができます。 **添付ファイル** ページの **開く** ボタンをクリックすると [参照] タブに URL が開きます。
+    - **URL の添付** - ユーザーは、`https://www.microsoft.com` のように、**メモ**フィールドに URL を入力することができます。 **添付ファイル** ページの **開く** ボタンをクリックすると [参照] タブに URL が開きます。
     - **簡易メモ** – ユーザーは **メモ** フィールドに簡易メモを追加できます。
 
 6. **クラス** フィールドで**ファイルの添付**を指定した場合、**場所**フィールドで使用する記憶域メカニズムを指定します。

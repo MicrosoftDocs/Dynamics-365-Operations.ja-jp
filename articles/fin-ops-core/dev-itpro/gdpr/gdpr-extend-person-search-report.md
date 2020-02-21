@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd2e81fa00828836df7d515f4bd7c380b40f0e3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50d882caa29d71c741ef09f85a16953478b146ad
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248827"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033023"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 
@@ -29,7 +29,7 @@ ms.locfileid: "2248827"
 Finance and Operations アプリの担当者検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。
 
 > [!NOTE]
-> 個人検索は、Dynamics 365 Finance、Supply Chain Management、Retail および Talent に対して使用できます。 Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。
+> 個人検索は、Dynamics 365 Finance、Supply Chain Management、コマース、および人事管理に対して使用できます。 Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。
 
 ## <a name="add-another-entity-to-the-default-template"></a>既定のテンプレートへの別のエンティティの追加
 
@@ -48,7 +48,7 @@ Finance and Operations アプリの担当者検索レポートは、1 人のエ�
 2. **PersonSearchProcessor** クラスを拡張し、新しい個人検索モジュール領域をパラメータとして **PersonSearchProcessorFactoryAttribute** 属性を含むクラスを作成します。 
 3. **PersonSearchProcessor** 拡張クラスで、目的の検索ロジックで **doSearch** メソッドをオーバーライドします。 次の例のように、新しいテーブル関係を作成するために **PersonSearchResult** テーブルを拡張します。
 
-    ```
+    ```xpp
     PersonSearchResultCategory::Customer needs a relation:PersonSearchResult.ResultRecId = CustTable.RecId,PersonSearchResult.ResultTableId = CustTable.TableId
     ```
 

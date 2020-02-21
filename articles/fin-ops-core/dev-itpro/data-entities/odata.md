@@ -3,7 +3,7 @@ title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 901a1f5d6f235cd3c0159302fa7136a2fb33344f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 844dfc628345e1726476e365e184bade77caee5b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914713"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033008"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -79,7 +79,7 @@ OData サービスを使用するためのコード例は、「[Microsoft Dynami
     - $orderby
     - $skip
     - $top
-    - $expand
+    - $expand (第 1 レベルの展開のみがサポートされます)
     - $select
 
 - OData サービスでは、最大ページ サイズが 1,000 のサービス ドリブン ページングをサポートします。
@@ -192,7 +192,7 @@ OData エンティティ間のリンクは、ナビゲーション プロパテ�
 #### <a name="adding-actions-on-odata-entities"></a>OData エンティティでのアクションの追加
 アクションで動作をデータ モデルに挿入できます。 アクションを追加するには、更新可能なビューにメソッドを追加し、そのメソッドを特定の属性で修飾します。 次に例を示します。
 
-```
+```xpp
 [SysODataActionAttribute("CalcMaintenanceDuration", true)]
 public int CalculateMaintenanceDuration()
 {
@@ -203,17 +203,16 @@ public int CalculateMaintenanceDuration()
 
 この例では、**SysODataActionAttribute** クラスがアクションとして公開されている **CalculateMaintenanceDuration** メソッドを修飾します。 属性の最初の引数は公開されているアクションの名前で、2 番目の引数はこのアクションが常に利用可能かどうかを示します。 アクションとして公開されているメソッドは、任意のプリミティブ型または別のパブリックの更新可能なビューを返すことができます。 このメソッドが公開されると、OData $ メタデータに表示されます。 次に例を示します。
 
-```
+```xml
 <Action Name="CalcMaintenanceDuration" IsBound="true">
     <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
     <ReturnType Type="Edm.String" />
 </Action>
-
 ```
 
 次の OData アクションの例では、パラメーターで取り、リストを返します。
 
-```
+```xpp
 [SysODataActionAttribute("GetColors", true),
     SysODataCollectionAttribute("return", Types::Record, "CarColor")]
 public List GetColorsByAvailability(boolean onlyAvailableVehicles)
@@ -249,15 +248,15 @@ OData プロトコルは、エンティティで多くの似たフィルター�
 ## <a name="using-enums"></a>列挙型の使用
 列挙型は、名前空間 **Microsoft.Dynamics.DataEntities**の配下にあります。 OData クエリに列挙型を含めるには、次の構文を使用します。
 
-Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-Microsoft.Dynamics.DataEntities.NoYes'Yes'
+`Microsoft.Dynamics.DataEntities.NoYes'Yes'`
 
 上記の列挙型の値を使用したクエリの例を次に示します。
 
-https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+`https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'`
 
 列挙型に対応している演算子は **eq** と **ne**です。
 
@@ -271,7 +270,7 @@ OData バッチ フレームワークは、*変更セット*を使用します�
 
 **SaveChanges()** の **SaveChangesOptions.BatchWithSingleChangeset** オプションを使用すると、単一の変更セットにすべての要求がバンドルされていることを保証できます。
 
-```
+```xpp
 public static void CreateProductColors(Resources context)
 {
     var productColorsCollection = new DataServiceCollection<ProductColor>(context);
@@ -293,7 +292,7 @@ public static void CreateProductColors(Resources context)
 
 **例 1**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);
@@ -306,7 +305,7 @@ public static void CreateVendor(Resources context)
 
 **例 2**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);

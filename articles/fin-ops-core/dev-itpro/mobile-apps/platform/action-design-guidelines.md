@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e2fbf920faafaec7a17a469937fe5f4ccf73d7ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a2f44dbfb086ca89f8d3e5683f4e630944175b4d
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183150"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033045"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 
@@ -71,39 +71,43 @@ ms.locfileid: "2183150"
 
 既存のリスト ビュー ページのプロパティが表示されていない、または**コントロールのプロパティ** ダイアログ ボックスにアクセスできない場合、アプリのより古いビルドを使用している可能性があります。 この場合、ビジネス ロジック ファイルを使用して、豊富なルックアップ機能を追加できます。
 
-    function main(metadataService, dataService, cacheService, $q) { 
-        return { 
-            appInit: function (appMetadata) { 
-                metadataService.configureLookup(
-                    // specify the name of the Action to add the lookup to
-                    'Add-Reservation',                      
-                    // specify the name of the Action’s field to add the lookup to
-                    'FMRental_Customer',                    
-                    { 
-                        // specify the name of the Page for the Entity for the lookup
+```xpp
+function main(metadataService, dataService, cacheService, $q) { 
+    return { 
+        appInit: function (appMetadata) { 
+            metadataService.configureLookup(
+                // specify the name of the Action to add the lookup to
+                'Add-Reservation',                      
+                // specify the name of the Action’s field to add the lookup to
+                'FMRental_Customer',                    
+                { 
+                    // specify the name of the Page for the Entity for the lookup
                         lookupPage: 'All-Customers',          
-                        // specify the Page’s field which contains the value to set on the lookup
-                     // this value should be the same value you can type into the field on the Form
+                    // specify the Page’s field which contains the value to set on the lookup
+                // this value should be the same value you can type into the field on the Form
                         valueField: 'FMCustomer_RecId',        
                         // specify the Page’s field which contains the value to display to the user
                         // this value is only used for display. The value field is passed to the Form
                         displayField: 'FMCustomer_FullName',  
                         // set this to true to enable the rich lookup
                         showLookupPage: true                  
-                    }
-                );
-            }, 
-        }; 
-    }
+                }
+            );
+        }, 
+    }; 
+}
+```
 
 ### <a name="how-do-i-prevent-an-action-from-appearing-in-the-list-of-actions-for-a-page"></a>アクションを、ページのアクションの一覧に表示されないようにするにはどうすればよいですか。
 
 ページのアクション一覧にアクションが表示されないようにするには、ビジネス ロジックの **appInit()** セクションから次のコードを呼び出します。 このコードでは、**アクション名**はアクションの名前です (デザイナーの**アクション名**フィールドで指定したとおり)。
 
-    function main(metadataService, dataService, cacheService, $q) { 
-        return { 
-            appInit: function (appMetadata) { 
-                metadataService.configureAction('action-name', { visible: false });
-            }, 
-        }; 
-    }
+```xpp
+function main(metadataService, dataService, cacheService, $q) { 
+    return { 
+        appInit: function (appMetadata) { 
+            metadataService.configureAction('action-name', { visible: false });
+        }, 
+    }; 
+}
+```

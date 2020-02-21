@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e5034a6fcc88d09268063af4a2e54df263edc7df
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8ca156f601135c68de5d2a0e7f80d0e19b1669c4
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570541"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029392"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
@@ -73,7 +73,7 @@ ms.locfileid: "2570541"
 
 子または品目を持たないコントロールを作成した後、コントロール名は引用符で囲む必要があります (次のコードの **FMCustomer\_FullName** を参照してください)。 ただし、任意のカスタマイズがコントロールに適用される場合、コードはブロックされる必要があり、**名前**ラベルを使用する必要があります (次のコードで **FMCustomer\_画像**を参照してください)。
 
-```
+```json
 // Page root container
 "flexFlow":"column nowrap",
 "items":[

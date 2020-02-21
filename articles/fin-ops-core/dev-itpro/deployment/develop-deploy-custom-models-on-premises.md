@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 107013
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: cba62175bacf809eeb7a32530e35e24d8b71b941
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a43309a39531f94b8107aa387ea86f7ea496f71b
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772353"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983678"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 4984
 ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23d2fab21731dcf664b0e89f78b43cd6ab26fbc1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 59f5e2b15bbae440befeef91eec46861ce70689f
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812026"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983660"
 ---
 # <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 

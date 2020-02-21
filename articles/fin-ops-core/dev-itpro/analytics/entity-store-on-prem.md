@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87c4c91fcb0d0d94f0502184ddd3fb224774ff83
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 27bd3c81ff0493af28bb3ad004d0ff2ea1606230
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771457"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029440"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
@@ -31,7 +31,7 @@ ms.locfileid: "2771457"
 
 クラウド版では、Microsoft Power BI との緊密な統合を可能にするいくつかの機能が用意されています。 いくつかの機能は、オンプレミスの配置用にはまだ実装されていません。 ただし、オンプレミス配置でのエンティティ格納を利用することで、PowerBI.com を使って Finance and Operations のデータのレポートや分析ができるようになっています。 
 
-このトピックでは、 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム26 (2019年5月)以降にて動作する、オンプレミス配置で使用できる分析機能について概説します。
+このトピックでは、 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム26 (2019 年 5 月)以降にて動作する、オンプレミス配置で使用できる分析機能について概説します。
 
 | 特性/機能                                                           | クラウド     | オンプレミス (プラットフォーム更新プログラム 26 またはそれ以降) |
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
@@ -44,14 +44,14 @@ ms.locfileid: "2771457"
 
 このトピックでは [、オンプレミス環境の設定および配置 (プラットフォーム プラットフォーム 12 および それ以降)](../deployment/setup-deploy-on-premises-pu12.md) についての補足事項を提供します。 以下のセクション番号は、該当するトピックのセクション番号に対応しています。
 
-### <a name="3-plan-your-users-and-service-accountsdeploymentsetup-deploy-on-premises-pu12mdplansvcacct"></a>[3. ユーザーとサービスのアカウントを準備する](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
+### <a name="3-plan-your-users-and-service-accounts"></a>[3. ユーザーとサービスのアカウントを準備する](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
 
 | ユーザー アカウント               | 型     | 目的 | ユーザー名 |
 |----------------------------|----------|---------|-----------|
 | AOS SQL AXDW DB 管理者 ユーザー | SQL ユーザー | アプリケーションは、このユーザーを使用して AXDW データベースに情報を入力します。 このユーザーは任意であり、エンティティストアに対応する必要がある場合にのみ作成する必要があります。 | axdwadmin |
 | AOS SQL AXDW FB 管理者 ユーザー | SQL ユーザー | アプリケーションは、このユーザーを使用して AXDW データベースに情報を入力します。 このユーザーは任意であり、エンティティストアに対応する必要がある場合にのみ作成する必要があります。 | axdwruntimeuser |
 
-### <a name="14-configure-the-databasesdeploymentsetup-deploy-on-premises-pu12mdconfiguredb"></a>[14. データベースの環境設定](../deployment/setup-deploy-on-premises-pu12.md#configuredb)
+### <a name="14-configure-the-databases"></a>[14. データベースの環境設定](../deployment/setup-deploy-on-premises-pu12.md#configuredb)
 
 本セクションの以下手順は任意の設定です。
 
@@ -60,8 +60,10 @@ ms.locfileid: "2771457"
 1. **DbServer - セキュリティ**で、 **axdwadmin** および **axdwruntimeuser** の **generateuser** フラグを **True**に設定します。 次の手順のスクリプトを実行すると、2つのユーザーが作成されます。 ユーザーのパスワードを設定するよう求められます。
 2. 次のスクリプトを実行します。
 
-        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
-        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    ```
 
     Initialize-Database.ps1 スクリプトは、以下の処理を行います:
 
@@ -76,25 +78,27 @@ ms.locfileid: "2771457"
     - VIEW SERVER STATE 権限を axdbadmin に付与します。
     - VIEW SERVER STATE 権限を axdwruntimeuser に付与します。
 
-### <a name="15-encrypt-credentialsdeploymentsetup-deploy-on-premises-pu12mdencryptcred"></a>[15. 資格情報の暗号化](../deployment/setup-deploy-on-premises-pu12.md#encryptcred)
+### <a name="15-encrypt-credentials"></a>[15. 資格情報の暗号化](../deployment/setup-deploy-on-premises-pu12.md#encryptcred)
 
 以下のように、Credentials.json ファイルを作成します。 **AosDWAuth** カテゴリは任意であり、エンティティストアが有効な場合にのみ使用されます。
 
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        },
-        "AosDWAuth": {
-            "DWUser": "<encryptedDWUser>",
-            "DWPwd": "<encryptedDWPassword>",
-            "DWRuntimeUser": "<encryptedDWRuntimeUser>",
-            "DWRuntimePwd": "<encryptedDWRuntimePassword>"
-        }
+```json
+{
+    "AosPrincipal": {
+        "AccountPassword": "<encryptedDomainUserPassword>"
+    },
+    "AosSqlAuth": {
+        "SqlUser": "<encryptedSqlUser>",
+        "SqlPwd": "<encryptedSqlPassword>"
+    },
+    "AosDWAuth": {
+        "DWUser": "<encryptedDWUser>",
+        "DWPwd": "<encryptedDWPassword>",
+        "DWRuntimeUser": "<encryptedDWRuntimeUser>",
+        "DWRuntimePwd": "<encryptedDWRuntimePassword>"
     }
+}
+```
 
 上記のコマンドの内容について説明します:
 

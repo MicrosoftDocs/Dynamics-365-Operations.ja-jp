@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: aed0d910f7fe0ca2bc36b0a80bdee6ffb9119532
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5dcfd0a667bfc0ded7855a6b1deb42d84d18a15e
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183098"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033041"
 ---
 # <a name="best-practices-for-the-acceptance-test-library"></a>承認テスト ライブラリのベスト プラクティス
 
@@ -38,7 +38,7 @@ ms.locfileid: "2183098"
 
 ### <a name="do-this"></a>操作
 
-```
+```xpp
 var item = items.default(); 
 var salesOrder = data.sales().salesOrders().createDefault();
 var salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQuantity(10).save();
@@ -46,7 +46,7 @@ var salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).se
 
 ### <a name="dont-do-this"></a>このようにしない
 
-```
+```xpp
 InventTable item; 
 AtlEntitySalesOrder salesOrder;
 AtlEntitySaleOrderLine salesLine;
@@ -73,13 +73,13 @@ salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQua
 
 ### <a name="do-this"></a>操作
 
-```
+```xpp
 var salesLine = salesOrder.addLine().setItem(item).save();
 ```
 
 ### <a name="dont-do-this"></a>このようにしない
 
-```
+```xpp
 var salesLine = salesOrder.addLine().setItemId(item.ItemId).save();
 ```
 
@@ -97,7 +97,7 @@ ID しかわからない場合は、ID を引数に取るメソッドを使用�
 
 たとえば、倉庫管理エリアには `AtlWHSTestCase` という名前の基本クラスがあります。 `data.whs()`、`data.invent()`、`data.invent().items()`、`data.invent().units()` そして他のナビゲーション オブジェクトのショートカットが含まれます。 ショートカットはテスト コードを単純にします。
 
-```
+```xpp
 class AtlWHSTestCase extends SysTestCase
 {
     AtlDataRootNote          data;
@@ -119,7 +119,7 @@ class AtlWHSTestCase extends SysTestCase
 
 ### <a name="do-this"></a>操作
 
-```
+```xpp
 class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
 …
     var item = items.default(); 
@@ -128,7 +128,7 @@ class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
 
 ### <a name="dont-do-this"></a>このようにしない
 
-```
+```xpp
 class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 …
     var item = data.invent().items().default(); 

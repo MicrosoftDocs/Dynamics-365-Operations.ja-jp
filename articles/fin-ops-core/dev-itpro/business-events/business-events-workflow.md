@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,15 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 7e8d4401316b8ffed91067bd27871c135326604b
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: e1ae969c2bbb8c80951e6394e4e582e1340804a2
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935376"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030881"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。   
 
@@ -89,8 +88,8 @@ Microsoft Power Automate で作業項目完了を設定する詳細なガイド�
 ## <a name="templates-for-work-item-completion-in-power-automate"></a>Power Automate での作業項目完了のテンプレート
 
 Power Automate での作業項目完了に関する次のテンプレートが使用できます。
-- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU26) を完了](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
-- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU29) を完了](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU26) を完了](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU29) を完了](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
 
 プラットフォーム更新プログラム 29 バージョンは、ビジネス イベント ペイロードから完了オプションを取得します。 これらのオプションはプラットフォーム更新プログラム 29 で追加され、承認アクションによりユーザーに表示されます。 
 

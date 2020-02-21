@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4594690455164882768e61572a382042f584c938
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b0175904fb7d3e9151dc6972ead8114771cbfb22
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183046"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033030"
 ---
 # <a name="lookup-controls"></a>ルックアップ コントロール
 
@@ -91,15 +91,28 @@ SysLookupMultiselect は、Microsoft Dynamics AX 2012 で廃止の対象とし�
 
 ルックアップをホストしているコントロールを決定する SelectedControl() の使用はサポートされていません。 場合によっては動作しますが、他の場合には失敗します。 たとえば、曖昧性解消ルックアップでは、コントロールを離れる行為は、曖昧性解消ルックアップをトリガーすることであるため、親フォーム上でコントロールは選択されていません。。 SelectedControl() を使用する代わりに、ルックアップをホストしているコントロールを取得するいくつかの方法があります。
 -   ルックアップ フォームの「selectTarget」を確認してください。
-
-        FormStringControl selectTarget = formRun.selectTarget();
+    ```xpp
+    FormStringControl selectTarget = formRun.selectTarget();
+    ```
 
 -   ルックアップ フォーム引数の「callerFormControl」を確認してください。 SysTableLookup::getCallerControl(Args args) はその呼び出しをカプセル化することに注意してください。
-
-        FormStringControl argsCallerFormControl = args.callerFormControl();
-
+    ```xpp
+    FormStringControl argsCallerFormControl = args.callerFormControl();
+    ```
+    
 ルックアップ フォーム インスタンスがカーネルによって自動的にスピン アップされる場合、selectTarget および callerFormControl が自動的に設定されることに注意してください。 フォーム インスタンスがアプリケーション コードで作成される場合、これらを次のように手動で設定できます。
-public void lookup() { Args args = new Args(formStr(<formName>)); args.caller(element); args.callerFormControl(this); FormRun formRun = classfactory.formRunClass(args); formRun.init(); this.performFormLookup(formRun); }
+
+```xpp
+public void lookup()
+{
+    Args args = new Args(formStr(<formName>));
+    args.caller(element);
+    args.callerFormControl(this);
+    FormRun formRun = classfactory.formRunClass(args);
+    formRun.init();
+    this.performFormLookup(formRun);
+}
+```
 
 ### <a name="creating-a-slider-dialog-instead-of-a-lookup-form-when-the-lookup-button-is-used"></a>ルックアップ ボタンを使用する際のスライダーのダイアログ (ルックアップ フォームの代わりに) を作成しています
 

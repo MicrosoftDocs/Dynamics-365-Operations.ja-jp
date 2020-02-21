@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6b953be6b264aeccfe4f9dd80235314ce627d2e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a28e7f4594c98e440cc2b431ba3cb8ae5920d46e
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811942"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033037"
 ---
 # <a name="build-workspaces"></a>ワークスペースの構築
 
@@ -480,37 +480,38 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 13. **SysDataCacheContextId** をクリックします。 **プロパティ** ウィンドウで、**フィールドのマップ** プロパティを **SysDataCacheContextId** に設定します。 **注記:** フィールドが一覧に表示されない場合は、**Ctrl+S** キーを押してテーブルを保存しなければならない場合があります。
 14. **F7** キーを押して、テーブルのコードを表示します。 または、**FMTReturnAndPickupTableCache** を右クリックし、その後**コードの表示**をクリックします。
 15. テーブルに、次の表示メソッドを追加します。 フォームは後でこれらのメソッドを使用します。
-
-        public display FMTName fullName()
-        {
-            return this.FirstName + ' ' + this.LastName;
-        }
-        public display container customerImage()
-        {
-            ImageReference imgRef;
-            container imgContainer = this.Image;
-            if(imgContainer == connull())
+    ```xpp
+    public display FMTName fullName()
+    {
+        return this.FirstName + ' ' + this.LastName;
+    }
+    public display container customerImage()
+    {
+        ImageReference imgRef;
+        container imgContainer = this.Image;
+        if(imgContainer == connull())
             {
                 imgRef = ImageReference::constructForSymbol("Person");
                 imgContainer = imgRef.pack();
             }
             return imgContainer;
-        }
-        public display str rentalVehicle()
+    }
+    public display str rentalVehicle()
+    {
+        FMTVehicle vehicle;
+        str value;
+        if(this.Vehicle == 0)
         {
-            FMTVehicle vehicle;
-            str value;
-            if(this.Vehicle == 0)
-            {
-                value = "No vehicle assigned";
-            }
-            else
-            {
-                select vehicle where vehicle.RecId == this.Vehicle;
-                value = vehicle.Description;
-            }
-            return value;
+            value = "No vehicle assigned";
         }
+        else
+        {
+            select vehicle where vehicle.RecId == this.Vehicle;
+            value = vehicle.Description;
+        }
+        return value;
+    }
+    ```
 
 16. **Ctrl+S** キーを押して保存します。
 
@@ -524,27 +525,29 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 4.  新しい **FMTPickupAndReturnClass** クラスがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  クラスに次のコードを追加します。
 
-        [SysDataSetExtension(classStr(FMTPickupAndReturnClass)), // The name of this class
-        SysDataSetCacheTableExtension(tableStr(FMTPickupAndReturnTableCache))] // The name of the cache table
-        class FMTPickupAndReturnClass extends SysDataSetQuery implements SysIDataSet
+    ```xpp
+    [SysDataSetExtension(classStr(FMTPickupAndReturnClass)), // The name of this class
+    SysDataSetCacheTableExtension(tableStr(FMTPickupAndReturnTableCache))] // The name of the cache table
+    class FMTPickupAndReturnClass extends SysDataSetQuery implements SysIDataSet
+    {
+        public SysDataCacheRefreshFrequency parmRefreshFrequency()
         {
-            public SysDataCacheRefreshFrequency parmRefreshFrequency()
-            {
-                return 600; // Cache refresh frequency, in seconds.
-            }
-            public SysQueryableIdentifier parmQueryableIdentifier()
-            {
-                return queryStr(FMTPickupAndReturnQuery); // The name of the query.
-            }
-            public SysDataCacheTypeId parmCacheTypeId()
-            {
-                return tableNum(FMTPickupAndReturnTableCache); // The name of the table.
-            }
-            public static FMTPickupAndReturnClass construct()
-            {
-                return new FMTPickupAndReturnClass();
-            }
+            return 600; // Cache refresh frequency, in seconds.
         }
+        public SysQueryableIdentifier parmQueryableIdentifier()
+        {
+            return queryStr(FMTPickupAndReturnQuery); // The name of the query.
+        }
+        public SysDataCacheTypeId parmCacheTypeId()
+        {
+            return tableNum(FMTPickupAndReturnTableCache); // The name of the table.
+        }
+        public static FMTPickupAndReturnClass construct()
+        {
+            return new FMTPickupAndReturnClass();
+        }
+    }
+    ```
 
 6.  **Ctrl+S** キーを押して保存します。
 
@@ -562,15 +565,17 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 8.  **F7** キーを押して、フォームのコードを表示します。
 9.  次のコードに示すように、データ キャッシュに対処できることができるようフォームをインストルメント化します。
 
-        [Form]
-        public class FMTReturningTodayPart extends FormRun implements SysIDataSetConsumerForm
+    ```xpp
+    [Form]
+    public class FMTReturningTodayPart extends FormRun implements SysIDataSetConsumerForm
+    {
+        public void registerDatasourceOnQueryingEvent()
         {
-            public void registerDatasourceOnQueryingEvent()
-            {
-                FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
-                    eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
-            }
+            FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
+                eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
         }
+    }
+    ```
 
 10. **Ctrl+S** キーを押して保存します。
 
@@ -581,47 +586,51 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 1.  ソリューション エクスプローラーで、**FmtCompleteRental** フォームをダブルクリックしてデザイナーで開きます。
 2.  **F7** キーを押して、フォームのコードを表示します。
 
-        public void init()
+    ```xpp
+    public void init()
+    {
+        //If this form was opened with a Rental as context
+        if(element.args() != null && element.args().record() != null && element.args().record().TableId == tablenum(FMTRental))
         {
-            //If this form was opened with a Rental as context
-            if(element.args() != null && element.args().record() != null && element.args().record().TableId == tablenum(FMTRental))
+            //Get the Rental context
+            rentalDS = FormDataUtil::getFormDataSource(element.args().record());
+            rental = element.args().record();
+            if(rental != null)
             {
-                //Get the Rental context
-                rentalDS = FormDataUtil::getFormDataSource(element.args().record());
-                rental = element.args().record();
-                if(rental != null)
-                {
-                    select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
-                }
+                select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
             }
-            super();
         }
+        super();
+    }
+    ```
 
 3.  **init()** メソッドを次のコードと一致するように更新します。
 
-        public void init()
+    ```xpp
+    public void init()
+    {
+        //If this form was opened with a record context
+        if(element.args() != null && element.args().record() != null))
         {
-            //If this form was opened with a record context
-            if(element.args() != null && element.args().record() != null))
+            //Get that context
+            rentalDS = FormDataUtil::getFormDataSource(element.args().record());
+            if(element.args().record().TableId == tableNum(FMTPickupAndReturnTableCache))
             {
-                //Get that context
-                rentalDS = FormDataUtil::getFormDataSource(element.args().record());
-                if(element.args().record().TableId == tableNum(FMTPickupAndReturnTableCache))
-                {
-                    FMTPickupAndReturnTableCache cacheRecord = element.args().record();
-                    select firstonly forupdate rental where rental.RentalId == cacheRecord.RentalId;
-                }
-                else if(element.args().record().TableId == tableNum(FMTRental))
-                {
-                    rental = element.args().record();
-                }
-                if(rental != null)
-                {
-                    select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
-                }
+                FMTPickupAndReturnTableCache cacheRecord = element.args().record();
+                select firstonly forupdate rental where rental.RentalId == cacheRecord.RentalId;
             }
-            super();
+            else if(element.args().record().TableId == tableNum(FMTRental))
+            {
+                rental = element.args().record();
+            }
+            if(rental != null)
+            {
+                select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
+            }
         }
+        super();
+    }
+    ```
 
 4.  **Ctrl+S** キーを押して保存します。
 
@@ -650,15 +659,17 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 2.  **F7** キーを押して、フォームのコードを表示します。
 3.  **OKButton** の **clicked()** コードを検索します。 呼び出しフォームでのデータ ソースの調査呼び出しは、このメソッドの最後の方です。 そのコード行の直前に、次の **if** ステートメントを追加してキャッシュ テーブルから処理済のレンタルを削除します。
 
-        . . .
-        if(rentalDS.table() == tableNum(FMTPickupAndReturnTableCache))
-        {
-            //Delete updated record from backing cache
-            FMTPickupAndReturnTableCache cacheRecord = element.args().record();
-            cacheRecord.delete();
-        }
-        rentalDS.research(true);
-        }
+    ```xpp
+    . . .
+    if(rentalDS.table() == tableNum(FMTPickupAndReturnTableCache))
+    {
+        //Delete updated record from backing cache
+        FMTPickupAndReturnTableCache cacheRecord = element.args().record();
+        cacheRecord.delete();
+    }
+    rentalDS.research(true);
+    }
+    ```
 
 4.  **Ctrl+S** キーを押して保存します。
 

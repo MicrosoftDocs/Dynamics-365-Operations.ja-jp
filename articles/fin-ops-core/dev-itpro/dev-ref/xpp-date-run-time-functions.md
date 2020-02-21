@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82cb173c4690ca4099a462af8dbfd43ff6b293b0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 29a05b0fe89bacdb93ef9d662ca32a3d0b89b56e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183350"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026198"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
@@ -35,7 +35,9 @@ ms.locfileid: "2183350"
 
 番号で指定されている曜日の名前を取得します。
 
-    str dayName(int number)
+```xpp
+str dayName(int number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -53,19 +55,23 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void dayNameExample(Args _arg)
-    {
-            str s;
-            ;
-            s = dayName(01);
-            print "First day of the week's name is " + s;
-            pause;
-    }
+```xpp
+static void dayNameExample(Args _arg)
+{
+    str s;
+    ;
+    s = dayName(01);
+    print "First day of the week's name is " + s;
+    pause;
+}
+```
 
 ## <a name="dayofmth"></a>dayOfMth
 指定された日付の月内の日数を計算します。
 
-    int dayOfMth(date date)
+```xpp
+int dayOfMth(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -79,24 +85,30 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    dayOfMth(31122001) //returns 31.
+```xpp
+dayOfMth(31122001) //returns 31.
+```
 
 ### <a name="example"></a>例
 
-    static void dayOfMthExample(Args _arg)
-    {
-            date d = today();
-            int i;
-            ;
-            i = dayOfMth(d);
-            print "Today's day of the month is " + int2Str(i);
-            pause;
-    }
+```xpp
+static void dayOfMthExample(Args _arg)
+{
+    date d = today();
+    int i;
+    ;
+    i = dayOfMth(d);
+    print "Today's day of the month is " + int2Str(i);
+    pause;
+}
+```
 
 ## <a name="dayofwk"></a>dayOfWk
 指定された日付の週内の日数を計算します。 **注記:** 月曜日は **1**、火曜日は **2**、日曜日は **7** として表されます。
 
-    int dayOfWk(date date)
+```xpp
+int dayOfWk(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -110,20 +122,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void dayOfWkExample(Args _arg)
-    {
-            date d = today();
-            int i;
-            ;
-            i = dayOfWk(d);
-            print "Today's day of the week is " + int2Str(i);
-            pause;
-    }
+```xpp
+static void dayOfWkExample(Args _arg)
+{
+    date d = today();
+    int i;
+    ;
+    i = dayOfWk(d);
+    print "Today's day of the week is " + int2Str(i);
+    pause;
+}
+```
 
 ## <a name="dayofyr"></a>dayOfYr
 1 月 1 日から指定された日までの日数を計算します。
 
-    int dayOfYr(date _date)
+```xpp
+int dayOfYr(date _date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -141,20 +157,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void dayOfYrExample(Args _arg)
-    {
-            date d = today();
-            int i;
-            ;
-            i = dayOfYr(d);
-            print "Today's day of the year is " + int2Str(i);
-            pause;
-    }
+```xpp
+static void dayOfYrExample(Args _arg)
+{
+    date d = today();
+    int i;
+    ;
+    i = dayOfYr(d);
+    print "Today's day of the year is " + int2Str(i);
+    pause;
+}
+```
 
 ## <a name="endmth"></a>endMth
 指定した日付の月の最後の日付を計算します。
 
-    date endMth(date date)
+```xpp
+date endMth(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -168,13 +188,17 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    endMth(0221988); //Returns the date 2921988 because 1988 is a leap year.
-    endMth(0221989); //Returns the date 2821989.
+```xpp
+endMth(0221988); //Returns the date 2921988 because 1988 is a leap year.
+endMth(0221989); //Returns the date 2821989.
+```
 
 ## <a name="mkdate"></a>mkDate
 日、月、および年を示す 3 つの整数に基づいて日付を作成します。
 
-    date mkDate(int day, int month, int year)
+```xpp
+date mkDate(int day, int month, int year)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -194,20 +218,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void mkDateExample(Args _arg)
-    {
-            date d;
-            ;
-            // Returns the date 0112005.
-            d = mkDate(1, 1, 2005);
-            print d;
-            pause;
-    }
+```xpp
+static void mkDateExample(Args _arg)
+{
+    date d;
+    ;
+    // Returns the date 0112005.
+    d = mkDate(1, 1, 2005);
+    print d;
+    pause;
+}
+```
 
 ## <a name="mthname"></a>mthName
 指定された月の名前を取得します
 
-    str monthName(int number)
+```xpp
+str monthName(int number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -225,20 +253,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void mthNameExample(Args _arg)
-    {
-            str s;
-            ;
-            // MthName(6) returns the text string "June".
-            s = mthName(6);
-            print "Month name is " + s;
-            pause;
-    }
+```xpp
+static void mthNameExample(Args _arg)
+{
+    str s;
+    ;
+    // MthName(6) returns the text string "June".
+    s = mthName(6);
+    print "Month name is " + s;
+    pause;
+}
+```
 
 ## <a name="mthofyr"></a>mthOfYr
 指定された日付の年内の月数を取得します。 **注記:** 1 月は **1**、2 月は **2**、12 月は **12** となります。
 
-    int mthOfYr(date date)
+```xpp
+int mthOfYr(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -252,19 +284,23 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void mthOfYrExample(Args _arg)
-    {
-            int i;
-            ;
-            i = mthOfYr(today());
-            print "The number of the month in today's date is " + int2Str(i);
-            pause;
-    }
+```xpp
+static void mthOfYrExample(Args _arg)
+{
+    int i;
+    ;
+    i = mthOfYr(today());
+    print "The number of the month in today's date is " + int2Str(i);
+    pause;
+}
+```
 
 ## <a name="nextmth"></a>nextMth
 指定した日付に最も近い、対応する次の月の日付を取得します。
 
-    date nextMth(date date)
+```xpp
+date nextMth(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -278,25 +314,31 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    nextMth(2921996); //returns 29/03/1996.
-    nextMth(3111996); //returns 2921996, because 1996 is a leap year.
+```xpp
+nextMth(2921996); //returns 29/03/1996.
+nextMth(3111996); //returns 2921996, because 1996 is a leap year.
+```
 
 ### <a name="example"></a>例
 
-    static void nextMthExample(Args _arg)
-    {
-            date d;
-            ;
-            d = nextMth(today());
-            print "Closest date next month is "
-            + date2Str(d, 2, 2, -1, 2, -1, 4);
-            pause;
-    }
+```xpp
+static void nextMthExample(Args _arg)
+{
+    date d;
+    ;
+    d = nextMth(today());
+    print "Closest date next month is "
+    + date2Str(d, 2, 2, -1, 2, -1, 4);
+    pause;
+}
+```
 
 ## <a name="nextqtr"></a>nextQtr
 指定した日付に最も近い、対応する次の四半期の日付を取得します。
 
-    date nextQtr(date date)
+```xpp
+date nextQtr(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -314,20 +356,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void nextQtrExample(Args _arg)
-    {
-            date d;
-            ;
-            d = nextQtr(today());
-            print "Closest date next quarter is "
-                    + date2Str(d, 2, 2, -1, 2, -1, 4);
-            pause;
-    }
+```xpp
+static void nextQtrExample(Args _arg)
+{
+    date d;
+    ;
+    d = nextQtr(today());
+    print "Closest date next quarter is "
+        + date2Str(d, 2, 2, -1, 2, -1, 4);
+    pause;
+}
+```
 
 ## <a name="nextyr"></a>nextYr
 指定した日付に最も近い、対応する次の年の日付を取得します。
 
-    date nextYr(date date)
+```xpp
+date nextYr(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -345,20 +391,24 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void nextYrExample(Args _arg)
-    {
-            date d;
-            ;
-            d = nextYr(today());
-            print "Closest date next year is "
-                    + date2Str(d, 2, 2, -1, 2, -1, 4);
-            pause;
-    }
+```xpp
+static void nextYrExample(Args _arg)
+{
+    date d;
+    ;
+    d = nextYr(today());
+    print "Closest date next year is "
+        + date2Str(d, 2, 2, -1, 2, -1, 4);
+    pause;
+}
+```
 
 ## <a name="prevmth"></a>prevMth
 指定した日付に最も近い、対応する前の月の日付を取得します。
 
-    date prevMth(date date)
+```xpp
+date prevMth(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -372,13 +422,17 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    prevMth(3131996); //Returns the date 29/02/1996 because 1996 is a leap year.
-    prevMth(2821998); //Returns the date 28/01/1998.
+```xpp
+prevMth(3131996); //Returns the date 29/02/1996 because 1996 is a leap year.
+prevMth(2821998); //Returns the date 28/01/1998.
+```
 
 ## <a name="prevqtr"></a>prevQtr
 指定した日付に最も近い、対応する前の四半期の日付を取得します。
 
-    date prevQtr(date date)
+```xpp
+date prevQtr(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -392,13 +446,17 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    prevQtr(3041998); //Returns the date 30/01/1998.
-    prevQtr(2951996); //Returns the date 29/02/1996, because 1996 is a leap year.
+```xpp
+prevQtr(3041998); //Returns the date 30/01/1998.
+prevQtr(2951996); //Returns the date 29/02/1996, because 1996 is a leap year.
+```
 
 ## <a name="prevyr"></a>prevYr
 指定した日付に最も近い、対応する前の年の日付を取得します。
 
-    date prevYr(date date)
+```xpp
+date prevYr(date date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -412,13 +470,17 @@ ms.locfileid: "2183350"
 
 ### <a name="remarks"></a>備考
 
-    prevYr(2921996); //Returns the date 28/02/1995 because 1996 is a leap year.
-    prevYr(2821998); //Returns the date 28/02/1997.
+```xpp
+prevYr(2921996); //Returns the date 28/02/1995 because 1996 is a leap year.
+prevYr(2821998); //Returns the date 28/02/1997.
+```
 
 ## <a name="systemdateget"></a>systemDateGet
 設定されている場合は、セッションの日付を取得します。
 
-    date systemDateGet()
+```xpp
+date systemDateGet()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -432,28 +494,32 @@ ms.locfileid: "2183350"
 
 次の例は、Infolog ウィンドウの日付を示しています。
 
-    static void Job_systemDateGet(Args _arg)
-    {
-            info( date2Str(
-                    systemDateGet(),        // X++ language function.
-                    321,                    // 321 = ymd
-                    DateDay::Digits2,
-                    DateSeparator::Hyphen,  // separator1
-                    DateMonth::Digits2,
-                    DateSeparator::Hyphen,  // separator2
-                    DateYear::Digits4
-            )
-    );
-    /*********** Actual Infolog output
-    Message (03:46:00 pm)
-    2012-04-16
-    ***********/
-    }
+```xpp
+static void Job_systemDateGet(Args _arg)
+{
+    info( date2Str(
+        systemDateGet(),        // X++ language function.
+        321,                    // 321 = ymd
+        DateDay::Digits2,
+        DateSeparator::Hyphen,  // separator1
+        DateMonth::Digits2,
+        DateSeparator::Hyphen,  // separator2
+        DateYear::Digits4
+    )
+);
+/*********** Actual Infolog output
+Message (03:46:00 pm)
+2012-04-16
+***********/
+}
+```
 
 ## <a name="systemdateset"></a>systemDateSet
 システム日付を変更します。
 
-    date systemDateSet(date _date)
+```xpp
+date systemDateSet(date _date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -473,17 +539,21 @@ ms.locfileid: "2183350"
 
 次の例では、システムの日付を今日の日付に設定します。
 
-    static void systemDateSetExample(Args _arg)
-    {
-            date d = today();
-            d = systemDateSet(d);
-            print d;
-    }
+```xpp
+static void systemDateSetExample(Args _arg)
+{
+    date d = today();
+    d = systemDateSet(d);
+    print d;
+}
+```
 
 ## <a name="timenow"></a>timeNow
 現在のシステム時刻を取得します。
 
-    int timeNow()
+```xpp
+int timeNow()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -491,19 +561,23 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void timeNowExample(Args _arg)
-    {
-            int i;
-            ;
-            i = timeNow();
-            print "The number of seconds since midnight is " + int2Str(i);
-            pause;
-    }
+```xpp
+static void timeNowExample(Args _arg)
+{
+    int i;
+    ;
+    i = timeNow();
+    print "The number of seconds since midnight is " + int2Str(i);
+    pause;
+}
+```
 
 ## <a name="today"></a>今日
 システムの現在の日付を取得します。
 
-    date today()
+```xpp
+date today()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -511,19 +585,23 @@ ms.locfileid: "2183350"
 
 ### <a name="example"></a>例
 
-    static void todayExample(Args _arg)
-    {
-            date d;
-            ;
-            d = today();
-            print "Today's date is " + date2Str(d, 0, 2, -1, 2, -1, 4);
-            pause;
-    }
+```xpp
+static void todayExample(Args _arg)
+{
+    date d;
+    ;
+    d = today();
+    print "Today's date is " + date2Str(d, 0, 2, -1, 2, -1, 4);
+    pause;
+}
+```
 
 ## <a name="wkofyr"></a>wkOfYr
 ISO 8601 仕様に従って、日付に該当する年の週を計算します。
 
-    int wkOfYr(date _date)
+```xpp
+int wkOfYr(date _date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -539,52 +617,58 @@ ISO 8601 仕様に従って、日付に該当する年の週を計算します�
 
 次のコード例は、**wkOfYr** 関数と **Global::weekOfYear** メソッドを比較します。 関数とメソッドは異なる結果を生成します。
 
-    // X++ job, under AOT > Jobs.
-    static void WeekTests3Job(Args _args)
-    {
-    int weekNum, i;
-    date dateTest;
-    str sMessages[];
-    //---------------------------------------------
-    sMessages[1] = "----- #1.  For Sunday, January 5, 2003 -----";
-    dateTest = 512003; // DayMonthYear  format.
-    weekNum = wkOfYr(dateTest);
-    sMessages[2] = int2str(weekNum) + " = wkOfYr funtion";
-    weekNum = Global::weekOfYear(dateTest);
-    sMessages[3] = int2str(weekNum) + " = Global::weekOfYear method";
-    //---------------------------------------------
-    sMessages[4] = " ";
-    sMessages[5] = "----- #2.  For Wednesday, August 20, 2003 -----";
-    dateTest = 2082003;
-    weekNum = wkOfYr(dateTest);
-    sMessages[6] = int2str(weekNum) + " = wkOfYr funtion";
-    weekNum = Global::weekOfYear(dateTest);
-    sMessages[7] = int2str(weekNum) + " = Global::weekOfYear method";
-    //---------------------------------------------
-    sMessages[8] = " ";
-    sMessages[9] = "----- #3.  For Sunday, December 28, 2003 -----";
-    dateTest = 28122003;
-    weekNum = wkOfYr(dateTest);
-    sMessages[10] = int2str(weekNum) + " = wkOfYr funtion";
-    weekNum = Global::weekOfYear(dateTest);
-    sMessages[11] = int2str(weekNum) + " = Global::weekOfYear method";
-    for (i=1; i<= 11; i++)
-    {
-    Global::info(sMessages[i]);
-    }
-    }
+```xpp
+// X++ job, under AOT > Jobs.
+static void WeekTests3Job(Args _args)
+{
+int weekNum, i;
+date dateTest;
+str sMessages[];
+//---------------------------------------------
+sMessages[1] = "----- #1.  For Sunday, January 5, 2003 -----";
+dateTest = 512003; // DayMonthYear  format.
+weekNum = wkOfYr(dateTest);
+sMessages[2] = int2str(weekNum) + " = wkOfYr funtion";
+weekNum = Global::weekOfYear(dateTest);
+sMessages[3] = int2str(weekNum) + " = Global::weekOfYear method";
+//---------------------------------------------
+sMessages[4] = " ";
+sMessages[5] = "----- #2.  For Wednesday, August 20, 2003 -----";
+dateTest = 2082003;
+weekNum = wkOfYr(dateTest);
+sMessages[6] = int2str(weekNum) + " = wkOfYr funtion";
+weekNum = Global::weekOfYear(dateTest);
+sMessages[7] = int2str(weekNum) + " = Global::weekOfYear method";
+//---------------------------------------------
+sMessages[8] = " ";
+sMessages[9] = "----- #3.  For Sunday, December 28, 2003 -----";
+dateTest = 28122003;
+weekNum = wkOfYr(dateTest);
+sMessages[10] = int2str(weekNum) + " = wkOfYr funtion";
+weekNum = Global::weekOfYear(dateTest);
+sMessages[11] = int2str(weekNum) + " = Global::weekOfYear method";
+for (i=1; i<= 11; i++)
+{
+Global::info(sMessages[i]);
+}
+}
+```
 
 上記の例は、次の情報を表示のために情報ログに送信します。 出力は、**wkOfYr** と **Global::weekOfYear** の間に違いがあることを示しています。 
 
-    Message (01:59:13 pm) ----- 
-    #1. For Sunday, January 5, 2003 ----- 1 = wkOfYr function 2 = Global::weekOfYear method ----- 
-    #2. For Wednesday, August 20, 2003 ----- 34 = wkOfYr function 34 = Global::weekOfYear method ----- 
-    #3. For Sunday, December 28, 2003 ----- 52 = wkOfYr function 1 = Global::weekOfYear method
+```xpp
+Message (01:59:13 pm) ----- 
+#1. For Sunday, January 5, 2003 ----- 1 = wkOfYr function 2 = Global::weekOfYear method ----- 
+#2. For Wednesday, August 20, 2003 ----- 34 = wkOfYr function 34 = Global::weekOfYear method ----- 
+#3. For Sunday, December 28, 2003 ----- 52 = wkOfYr function 1 = Global::weekOfYear method
+```
 
 ## <a name="year"></a>年
 **date** 値から年を取得します。
 
-    int year(date _date)
+```xpp
+int year(date _date)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -598,7 +682,8 @@ ISO 8601 仕様に従って、日付に該当する年の週を計算します�
 
 ### <a name="remarks"></a>備考
 
-    year(0221998); //Returns the value 1998.
-
+```xpp
+year(0221998); //Returns the value 1998.
+```
 
 

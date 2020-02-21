@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 775097c087c342ad46453bf38ea5bdbe69853540
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bf959ed2f504aa68c72f1f59bcd907210cd476b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183318"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033025"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
@@ -41,7 +41,8 @@ Microsoft は、使用されていない分析コード フィールドの限定
 - リアルベース 1 つ
 - utcdatetime ベース 1 つ
  
-  これにより、標準アプリケーションのインベントリ ディメンションの合計数が 25 になります。
+これにより、標準アプリケーションのインベントリ ディメンションの合計数が 25 になります。
+
 - 4 製品分析コード: 色、サイズ、スタイル、およびコンフィギュレーション
 - 5 つの追跡用分析コード: シリアル、バッチ、所有者、プロファイル (ロシアのみ)、および GTD (ロシアのみ)
 - 6. 保管分析コード: サイト、倉庫、場所、ステータス、ライセンス プレートおよびパレット (アップグレードと移行のみ)
@@ -69,7 +70,7 @@ VAR により、物理的データ モデルと論理的実装が結合されま
  
 **例: InventDimStyle_Extension** 
 
-```
+```xpp
 /// <summary>
 /// The <c>InventDimStyle_Extension</c> class extends the <c>InventDim</c> table with behavior for the style dimension.
 /// </summary>
@@ -98,7 +99,7 @@ final class InventDimStyle_Extension
 
 分析コードは、次のように参照することができます。
 
-```
+```xpp
 //Setting a value
 inventDim.parmISVDim("Some value");
 

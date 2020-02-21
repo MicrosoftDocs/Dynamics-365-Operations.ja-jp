@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c33f9aeb8d388b8c1140fd951359cd96594fc88a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7cb078e7262b019a6e0df9c0ea56b44ef8a9b9c1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251098"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025841"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
@@ -57,47 +57,54 @@ ms.locfileid: "2251098"
 7. ThirdPartyTMSEngines プロジェクトで、Supply Chain Management 固有のアセンブリへの参照を追加します。
    -   X++ タイプの参照を有効にするアプリケーション アセンブリ。 これらのアセンブリは、次の場所にあります。 \[パッケージ ルート\] は、C:\\Packages など、展開されたアセンブリが配置されている場所のパスです。
 
-           [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
-           [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
-           [Packages root]\ApplicationSuite\bin\Dynamics.AX.ApplicationSuite.dll
-
+        ```xpp
+        [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
+        [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
+        [Packages root]\ApplicationSuite\bin\Dynamics.AX.ApplicationSuite.dll
+        ```
+        
    -   データ、LINQ、および補助機能へのアクセスを有効にするフレームワーク アセンブリ。 これらすべてのアセンブリは \[パッケージ ルート\]\\ 在庫置場で見つけることができます。
 
-           Microsoft.Dynamics.ApplicationPlatform.Environment.dll
-           Microsoft.Dynamics.AX.Data.Core.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.AdoNet.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
-           Microsoft.Dynamics.AX.Server.Core.dll
-           Microsoft.Dynamics.AX.Xpp.AxShared.dll
-           Microsoft.Dynamics.AX.Xpp.Support.dll
+        ```xpp 
+        Microsoft.Dynamics.ApplicationPlatform.Environment.dll
+        Microsoft.Dynamics.AX.Data.Core.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.AdoNet.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
+        Microsoft.Dynamics.AX.Server.Core.dll
+        Microsoft.Dynamics.AX.Xpp.AxShared.dll
+        Microsoft.Dynamics.AX.Xpp.Support.dll
+        ```
 
    -   コア TMS アセンブリ (エンジンを含む) と TMS ベース アセンブリ (ヘルパー、定数、データ転送クラス定義などを含む) これらのアセンブリは、次の場所にあります。
 
-           [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.dll
-           [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.Base.dll
-
+        ```xpp
+        [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.dll
+        [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.Base.dll
+        ```
 8. ThirdPartyTMSEngines プロジェクトで生成された C\# クラスの名前を **SampleRatingEngine** に変更します。
 9. エンジンを実装します。 この例ではレート エンジンを作成しているため、レート エンジンの基本クラスを継承しています。 基本クラスは、レート エンジン インターフェイス (**TMSFwkIRateEngine**) のほとんどを実装します。 レート法の実装が必要なだけです。 この例を単純にするために、このメソッドではハードコーディングされたレートを 100 として登録します。 **TMSFwkIAccessorialEngine** などの、任意のエンジン インターフェイスを実装するエンジンを作成することができます。 すべてのエンジン インターフェイスは X++ で定義されます。
 
-       namespace ThirdPartyTMSEngines
-       {
-           using Dynamics.AX.Application;
-           using Microsoft.Dynamics.Ax.Tms.Base.Data;
-           using Microsoft.Dynamics.Ax.Tms.Base.Utility;
-           using Microsoft.Dynamics.Ax.Tms.Bll;
-           using System.Xml.Linq;
-           public class SampleRatingEngine : BaseRateEngine
-           {
-               public override RatingDto rate(TmsTransactionFacade transactionFacade, XElement shipment, TMSRateMasterCode rateMasterCode)
-               {
-                   XElement re = shipment.RetrieveOrCreateRatingEntity(this.RatingDto);
-                   re.AddRate(TmsRateType.Rate, 100);
-                   return this.RatingDto;
-               }
-           }
-       }
+    ```xpp
+    namespace ThirdPartyTMSEngines
+    {
+        using Dynamics.AX.Application;
+        using Microsoft.Dynamics.Ax.Tms.Base.Data;
+        using Microsoft.Dynamics.Ax.Tms.Base.Utility;
+        using Microsoft.Dynamics.Ax.Tms.Bll;
+        using System.Xml.Linq;
+        public class SampleRatingEngine : BaseRateEngine
+        {
+            public override RatingDto rate(TmsTransactionFacade transactionFacade, XElement shipment, TMSRateMasterCode rateMasterCode)
+            {
+               XElement re = shipment.RetrieveOrCreateRatingEntity(this.RatingDto);
+               re.AddRate(TmsRateType.Rate, 100);
+               return this.RatingDto;
+            }
+        }
+    }
+    ```
 
 10. ソリューションをビルドします。
 11. TMSThirdParty プロジェクトに新しい参照を追加します。 参照は、ThirdPartyTMSEngines プロジェクトを指す必要があります。 完了したら、ソリューションは次のようになります。 

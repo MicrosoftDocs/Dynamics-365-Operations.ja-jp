@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84c2cb8536c7f2e37ede9287940baa08422a06d3
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 75211cee52a7b9d5e624aea8400e3aee9b5b10a7
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578263"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029381"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
@@ -131,15 +131,17 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **詳細ボタンを動作させる方法。**
     -   情報ボックスの下部にある **詳細** ボタンをクリックすると、関連するレコードの完全な一覧を含むバッキング フォームに移動します。 このボタンは、次の例のように **クリック済み** メソッドをオーバーライドする通常のボタン コントロールを使用して実装する必要があります。 グリッドのデータを提供するテーブルの **TableRef** および **ListPageRef** プロパティに必ず入力してください。
 
-            [Control("Button")]
-            class More
-            {
-            public void clicked()
-                   {    
-                        super();  
-                        FormPartUtil::openShowMoreForm(element, <TableName>);     
-                   }
+        ```xpp
+        [Control("Button")]
+        class More
+        {
+        public void clicked()
+            {    
+                super();  
+                FormPartUtil::openShowMoreForm(element, <TableName>);     
             }
+        }
+        ```
 
 ### <a name="open-issues"></a>未処理の問題
 

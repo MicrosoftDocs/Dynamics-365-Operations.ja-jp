@@ -1,7 +1,7 @@
 ---
 title: デリゲートを使用してアプリケーション起動をカスタマイズする
 description: このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 8fbf5d231816e8238d1a84787157adc61eb37624
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c1978e468e67de5a22427dae9a7f1b55163c5a16
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183311"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983648"
 ---
 # <a name="customize-application-startup-by-using-delegates"></a>デリゲートを使用してアプリケーション起動をカスタマイズする
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: b18ab3481ce9ad46edc2176e2d9f53933b518d0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78e90f55bca66d68602871b3820e9605801ec774
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180509"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026280"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -31,7 +31,7 @@ ms.locfileid: "2180509"
 - 誤ってサブスクリプションが正しくない Azure AD テナントに対して購入されました。
 
     > [!NOTE]
-    > クラウド サービス プロバイダーであり、既存の顧客に Finance and Operations アプリのサブスクリプションを販売する場合は、その顧客との再販業者関係を要求して、顧客の既存の Azure AD テナントにサブスクリプションを配置する必要があります。 Microsoft パートナー センターで新しい顧客レコードを作成する場合、顧客の新しい Azure AD テナントを作成します。
+    > ユーザーがクラウド サービス プロバイダーであり、既存の顧客に Finance and Operations アプリのサブスクリプションを販売する場合は、その顧客との再販業者関係を要求して、顧客の既存の Azure AD テナントにサブスクリプションを配置する必要があります。 Microsoft パートナー センターで新しい顧客レコードを作成する場合、顧客の新しい Azure AD テナントを作成します。
 
 - サブスクリプションが購入された後、顧客は Azure AD テナントの構造を変更します。
 
@@ -76,7 +76,7 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
     1. 管理者ユーザーを除くすべてのユーザー アカウントを削除します。
     2. USERINFO の管理者ユーザー レコードを修正します。
 
-        ```
+        ```sql
         UPDATE USERINFO
         SET SID='mysid', NETWORKALIAS='myalias/email', NETWORKDOMAIN='https://sts.windows.net'
         WHERE ID = 'Admin'
@@ -84,13 +84,14 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 
 6. 正しいセキュリティ識別子 (SID) および ID プロバイダーを持つ他のすべてのユーザーを再インポートします。
 7. 適切なテーブルでテナント ID を更新するには、次のコマンドを実行します。
-
-    - 名前 = 'TENANTID' の際は SYSSERVICECONFIGURATIONSETTING から VALUE を選択します
-    - POWERBICONFIG から TENANTID を選択します
-    - PROVISIONINGMESSAGETABLE から TENANTID を選択します
-    - B2BINVITATIONCONFIG から TENANTID を選択します
-    - RETAILSHAREDPARAMETERS から TENANTID を選択します
-
+    ```sql
+    - select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
+    - select TENANTID from POWERBICONFIG
+    - select TENANTID from PROVISIONINGMESSAGETABLE
+    - select TENANTID from B2BINVITATIONCONFIG
+    - select TENANTID from RETAILSHAREDPARAMETERS
+    ```
+    
 8. 環境を完全に構成します。 この手順の一部として、統合のエンドポイントをコンフィギュレーションします。
 9. 新しい LCS プロジェクトのユーザー受け入れテスト (UAT) 環境でスモーク テストを実行します。 これらのテストでは、ユーザーのサインイン、統合、ワークフロー、印刷、レポート、および構成やユーザー情報に依存する同様のプロセスに焦点を当てる必要があります。
 10. 実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が終了し、UAT を完了した後に、新しいテナントに移動するためのサポート要求を開く必要があります。 実稼働環境を新しいテナントに移動するプロセスには、48 ～ 72 時間のダウンタイムの延長が必要です。

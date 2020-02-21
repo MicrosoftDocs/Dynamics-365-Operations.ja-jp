@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0ed38161ffff8f77a8d15400728beacee8431607
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8a486ed941d97852cb1ecc971a6cea3b77076c13
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769984"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026123"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 
@@ -68,7 +68,7 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 ### <a name="turning-on-embedded-links-in-business-documents"></a>ビジネス ドキュメントでのリンクの埋め込みを有効にする
 PDF ドキュメントで埋め込みドリルスルー リンクの使用を可能にするコードを次に示します。 
 
-```
+```xpp
 class Controller extends SrsReportRunController
 {
     protected void preRunModifyContract()

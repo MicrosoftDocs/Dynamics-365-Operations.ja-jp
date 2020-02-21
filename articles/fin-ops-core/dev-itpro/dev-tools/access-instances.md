@@ -1,9 +1,9 @@
 ---
 title: 開発環境の配置とアクセス
 description: このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,21 +14,21 @@ ms.search.scope: Operations
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c532425ae6b186b9df5923adc17350f85888c4ef
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4f4e7ddabcdd21f41a0ead41fe4c7c2c07a3ed58
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769568"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029422"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
+このトピックでは、開発インスタンスへのアクセス、オンプレミス開発仮想マシン (VM) の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 
 ## <a name="definitions"></a>定義
 
@@ -40,39 +40,48 @@ ms.locfileid: "2769568"
 
 ## <a name="deploying-cloud-development-environments"></a>クラウド開発環境の配置
 
-クラウドホスト環境を展開するプロセスは、LCS トライアルまたはパートナー プロジェクトと、LCS 顧客実装プロジェクトで異なります。
+クラウド ホスト環境を展開するプロセスは、Lifecycle Services (LCS) トライアルまたはパートナー プロジェクトと、LCS 顧客実装プロジェクトで異なります。
 
 **試用版**または**パートナー**プロジェクト用:
 
 1. LCS プロジェクトと Azure サブスクリプションの間に接続を作成します。 Azure サブスクリプション ID が必要であり、サブスクリプションの使用を承認します。
 2. 配置する **環境** の下で **+** を選択します。
+
     ![LCS Onboard の方法](media/access-instances-5.jpeg)
+    
 3. アプリケーションとプラットフォーム バージョンを選択します。
 4. 環境のトポロジを選択します。 クラウドにホストされている環境の使用、または VHD のダウンロードのいずれかを選択することができます。 詳細については、[プレビュー サブスクリプションのサインアップ](sign-up-preview-subscription.md) を参照してください。
+
     ![環境のトポロジの選択](media/access-instances-2.jpeg)
+    
 5. クラウドでホストされている環境を選択した場合は、使用する Azure コネクタを選択します。 **配置** を選択します。
+
     ![環境の配置](media/access-instances-3.jpeg)
+    
 6. クラウド ホスト環境を選択しなかった場合は、ダウンロードする VHD を選択します。
 
 **顧客実装**プロジェクト用:
-1. LCS 実装プロジェクトにログオンします。
+1. LCS 実装プロジェクトにサインインします。
 2. **構成** を選択して配置します。
+
     ![開発、テスト、およびコンフィギュレーション](media/access-instances-6.jpeg)
+    
 3. アプリケーションとプラットフォーム バージョンを選択します。
 4. 設定を指定し、**保存** を選択します。
+
     ![配置設定](media/access-instances-7.jpeg)
 
 顧客には、Microsoft の Azure サブスクリプションでホストされている無料の「開発とテスト」環境が 1 つ提供されます。 「開発およびテスト」には、**開発**と**ビルドおよびテスト**の 2 種類の環境があります。 開発およびカスタマイズ活動については、**開発**環境をコンフィギュレーションします。 **ビルドおよびテスト**標準的な開発活動では環境はサポートされていません。 代わりに、日単位ビルドおよびテストの自動化に使用されます。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。  
 
 追加の開発とビルド環境は、ユーザー自身の Azure サブスクリプションで購入またはホストすることができます。 独自のサブスクリプションに環境を展開するには、**クラウド ホスト環境** ページに移動します。
 
-![クラウド ホスト インスタンス](media/CloudHostedPicture.JPG)
+![クラウド ホスト インスタンス](media/CloudHostedPicture.jpg)
 
 ## <a name="cloud-environment-that-is-provisioned-through-lcs"></a>LCS を通じてプロビジョニングされるクラウド環境
 
 クラウド環境が LCS を通じてプロビジョニングされると、次の操作が行われます。
 + クラウド環境を要求するユーザーは、その環境内の管理者としてプロビジョニングされます。
-+ ユーザー アカウントは開発用 VM にプロビジョニングされ、リモート デスクトップ経由での環境へのアクセスを許可します。これらの資格情報は LCS の環境ページからアクセスできます。
++ ユーザー アカウントは開発用 VM にプロビジョニングされ、リモート デスクトップを使用して環境へのアクセスを許可します。これらの資格情報は LCS の環境ページからアクセスできます。
 
 ### <a name="accessing-an-instance-through-a-url"></a>URL を試用したインスタンスへのアクセス
 
@@ -80,9 +89,9 @@ ms.locfileid: "2769568"
 
 1. LCS プロジェクト ページに移動します。
 2. **環境**セクションで、配置された環境をクリックします。
-3. 環境ページが開くと、右上隅で、**ログイン** &gt; **Finance and Operations にログオン** をクリックして、アプリケーションにアクセスできます。
+3. 環境ページが開くと、右上隅で、**ログイン** &gt; **Finance and Operations にログオン**をクリックして、アプリケーションにアクセスできます。
 4. 有効なエンド ユーザー資格情報を使用して、アプリケーションにサインインします。 現在の LCS ユーザーが最初に環境を展開したユーザーである場合は、そのユーザーは有効な終了ユーザーおよびアプリケーションの管理者である可能性があります。
-5. ブラウザーで、サインインした後にベース URL を記録します。 たとえば、ベース URL は、**https://dynamicsAx7aosContoso.cloud.dynamics.com** である可能性があります。
+5. ブラウザーで、サインインした後にベース URL を記録します。 たとえば、ベース URL は、`https://dynamicsAx7aosContoso.cloud.dynamics.com` である可能性があります。
 
 ### <a name="accessing-the-cloud-instance-through-remote-desktop"></a>リモート デスクトップを使用したクラウド インスタンスへのアクセス
 
@@ -92,42 +101,44 @@ ms.locfileid: "2769568"
 
 配置された**プラットフォーム更新プログラム 12 以前**の環境の対象:
 1.  VM 名をクリックします。
-2.  表示されているローカル管理者のユーザー名とパスワードを使用して、リモート デスクトップ経由でクラウド VM に接続します。 目のアイコンをクリックしてパスワードを表示することができます。
+2.  表示されているローカル管理者のユーザー名とパスワードを使用して、リモート デスクトップ経由でクラウド VM に接続します。 パスワードの表示アイコンを選択してパスワードを表示することができます。
 
-配置された**プラットフォーム更新プログラム 12 以降**の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 顧客が、Microsoft サブスクリプションで実行されている開発環境またはビルド環境の仮想マシン (VM) 管理者アカウントにアクセスすることはできません。 したがって、環境が Azure サブスクリプションで実行されていない限り、管理者アカウントは非表示になります。 詳細については、[管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)を参照してください。 
+配置された**プラットフォーム更新プログラム 12 以降**の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 顧客が、Microsoft サブスクリプションで実行されている開発環境またはビルド環境の仮想マシン管理者アカウントにアクセスすることはできません。 したがって、環境が Azure サブスクリプションで実行されていない限り、管理者アカウントは非表示になります。 詳細については、[管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)を参照してください。 
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 
 ## <a name="vm-that-is-running-on-premises"></a>オンプレミスで実行されている VM
 仮想ハード ディスク (VHD) は LCS からダウンロードができるようになり、ローカル コンピューター上に設定可能です。 このシステムは、開発者によるアクセスを目的としており、Finance and Operations アプリの事前構成済みワンボックス開発環境です。 VHD は、資産タイプの**ダウンロード可能な VHD** の下で、LCS の共有アセットライブラリで使用可能です。
 
-1. LCS のメイン ページに移動して**共有アセット ライブラリ**を選択するか、または [こちら (共有アセット ライブラリ)](https://lcs.dynamics.com/V2/SharedAssetLibrary) をクリックします。
+1. LCS のメイン ページに移動して**共有アセット ライブラリ**を選択するか、または [共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動します。 
 2. 資産タイプの**ダウンロード可能な VHD** を選択します。
 3. 目的の Finance and Operation バージョンに基づいて、探している VHD を検索します。 VHD は、ダウンロードする必要がある複数のファイル パーツに分割されています。 たとえば、 "VHD - 10.0.5" で始まる資産ファイルは、バージョン 10.0.5 をインストールするために必要な別のファイルです。
 4. 目的の VHD に関連付けられているすべてのファイル (パーツ) をローカル フォルダーにダウンロードします。
 5. ダウンロードが完了したら、ダウンロードした実行可能ファイルを実行して、ソフトウェア使用許諾契約に同意し、VHD を抽出するファイル パスを選択します。
-6. これにより、ローカルの仮想マシン (VM) を実行するのに使用できるローカル VHD ファイルが作成されます。
+6. これにより、ローカルの仮想マシンを実行するのに使用できるローカル VHD ファイルが作成されます。
 
-### <a name="retail-configuration"></a>Retail コンフィギュレーション
+### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-Retail もコンフィギュレーションしている場合は、このセクションの手順に従います。
+コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
 
 ダウンロード可能な VHD を POS のカスタマイズに使用するには、次の手順も実行する必要があります。
 
 -   ホスト コンピューターで、入れ子になった VM サポートを有効にします。 詳細については、[入れ子仮想化の仮想マシンで Hyper-v を実行](https://msdn.microsoft.com/virtualization/hyperv_on_windows/user_guide/nesting) を参照してください。
 
-### <a name="running-the-virtual-machine-vm-locally"></a>仮想マシン (VM) をローカルで実行
+### <a name="running-the-virtual-machine-locally"></a>仮想マシンをローカルで実行
 
 Hyper-V マネージャーから VM を実行するには、これらの手順に従います。
 
-1. VM を起動するには、**開始** をクリックします。
-2. ウィンドウで VM を開くには、**接続** をクリックします。
-3. ツール バーで **Ctrl + Alt + Delete** ボタンをクリックしてください。 VM は、ほとんどのキーボード コマンドを受け取りますが、その中に Ctrl + Alt + Del は含まれていません。 したがって、ボタンまたはメニュー コマンドを使用する必要があります。
+1. VM を起動するには、**開始**を選択します。
+2. ウィンドウで VM を開くには、**接続**を選択します。
+3. ツール バーで **Ctrl + Alt + Delete** ボタンを選択してください。 VM は、ほとんどのキーボード コマンドを受け取りますが、その中に Ctrl + Alt + Del は含まれていません。 したがって、ボタンまたはメニュー コマンドを使用する必要があります。
 4. 次の資格情報を使用して VM にログインします。
    - ユーザー名: **管理者**
    - パスワード: <strong>pass@word1</strong>
 
-   **ヒント:** 画面解像度を変更することにより、VM ウィンドウのサイズを変更することができます。 VM でデスクトップを右クリックし、**画面の解像度** をクリックします。 ディスプレイに適した解像度を選択します。
+    > [!TIP]
+    > 画面解像度を変更することにより、VM ウィンドウのサイズを変更することができます。 VM でデスクトップを右クリックし、**画面の解像度** をクリックします。 ディスプレイに適した解像度を選択します。
+   
 5. 管理者ユーザーを準備します。 詳細については、次のセクションを参照してください。
 6. バッチ マネージャー サービスを起動します。 このステップは、バッチ ジョブまたはワークフローを実行している場合に必要です。
    1.  管理者として**コマンド プロンプト** ウィンドウを開きます。
@@ -135,7 +146,7 @@ Hyper-V マネージャーから VM を実行するには、これらの手順�
 
    また、サービスを **サービス** ウィンドウから開始することができます。
 
-#### <a name="retail-configuration"></a>Retail コンフィギュレーション
+#### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
 POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要があります。
 
@@ -147,11 +158,11 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 開発者がアクセスするには、インスタンスで管理者である必要があります。 管理者としての資格情報をプロビジョニングするには、デスクトップにある管理者プロビジョニング ツールを実行し、ツールにメール アドレス (Azure AD 資格情報) を入力します。
 
 1.  デスクトップから、管理者として管理者ユーザーのプロビジョニング ツールを実行します (アイコンを右クリックし、**管理者として実行**をクリックします)。
-2.  電子メール アドレスを入力し、**送信**をクリックします。
+2.  電子メール アドレスを入力し、**送信**を選択します。
 
-### <a name="retail-configuration"></a>Retail コンフィギュレーション
+### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-Retail もコンフィギュレーションしている場合は、このセクションの手順に従います。
+コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
 
 #### <a name="for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operations の場合、バージョン 1611
 
@@ -167,19 +178,22 @@ Retail もコンフィギュレーションしている場合は、このセク�
 2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](https://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
 3.  テナントとユーザー ID の Azure AD を照会します。 Windows PowerShell 統合スクリプト環境 (ISE) ウィンドウを管理者権限で開き、次のコマンドを実行します。 Azure AD 資格情報を求められます。 以前に管理者プロビジョニング ツールで使用したのと同じユーザー アカウントを使用します。
 
-        $msocred = Get-Credential 
-        Connect-MsolService -Credential $msocred 
-        $company = Get-MsolCompanyInformation 
-        Write-Host "TenantID: $($company.ObjectId)" 
-        $msocred.UserName 
-        $users = Get-MsolUser -SearchString "$($msocred.username)" 
-        foreach($u in $users) 
+    ```powershell
+    $msocred = Get-Credential 
+    Connect-MsolService -Credential $msocred 
+    $company = Get-MsolCompanyInformation 
+    Write-Host "TenantID: $($company.ObjectId)" 
+    $msocred.UserName 
+    $users = Get-MsolUser -SearchString "$($msocred.username)" 
+    foreach($u in $users) 
+    { 
+        if($u.SignInName -eq $msocred.UserName) 
         { 
-            if($u.SignInName -eq $msocred.UserName) 
-            { 
-               Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
-            } 
-        }
+            Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
+        } 
+    }
+    ```
+        
     [![Windows PowerShell ISE ウィンドウのコマンド](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  次の SQL スクリプトを更新し、その環境の AXDB で実行します。 上記の Windows PowerShell スクリプト出力から次のパラメーターの値を指定します。
@@ -188,36 +202,38 @@ Retail もコンフィギュレーションしている場合は、このセク�
     -   **UserId** – たとえば、a036b5d8-bc8c-4abe-8eec-17516ea913ec
 
     <!-- -->
-
-        DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
-        SET @TenantId = ‘‘ 
-        SET @UserId = ‘‘ 
-        IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
-            BEGIN 
-            UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
-            UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
-            UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = ‘000160’
-            END 
-        ELSE 
-            BEGIN 
-            RAISERROR (15600, -1, -1, ‘TenantId and UserId must be set before running this script’) 
-            END
+    ```sql
+    DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
+    SET @TenantId = ‘‘ 
+    SET @UserId = ‘‘ 
+    IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
+        BEGIN 
+        UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
+        UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
+        UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = ‘000160’
+        END 
+    ELSE 
+        BEGIN 
+        RAISERROR (15600, -1, -1, ‘TenantId and UserId must be set before running this script’) 
+        END
+    ```
 
 5.  管理者特権の**コマンド プロンプト** ウィンドウで **IISRESET** を実行することにより、インターネット インフォメーション サービス (IIS) をリセットします。
 6.  新しい管理者ユーザーを使用するようにリアルタイム サービス プロファイルを更新します。
-    1.  **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **Real-time Service プロファイル**の順にクリックします。
-    2.  **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **Real-time Service プロファイル**の順にクリックします。
-    3.  以前に使用したユーザーを使用するように JBB レコードを編集します (たとえば、**administrator@contosoax7.onmicrosoft.com**)。
+    1.  **小売とコマース** &gt; **本社の設定** &gt; **コマース スケジューラ** &gt; **リアルタイム サービス プロファイル**の順に移動します。
+    3.  以前に使用したユーザーを使用するように JBB レコードを編集します (たとえば、`administrator@contosoax7.onmicrosoft.com`)。
     4.  既定のチャネル データベースの CDX ジョブ 1070 (スタッフ) を実行します。
     5.  クライアント上の **ダウンロード セッション** ページを表示して、ジョブが成功したことを確認します。
 
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
-ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[ローカル開発 (VHD) 環境の名前変更](../migration-upgrade/vso-machine-renaming.md) を参照してください。
+ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: `https://usnconeboxax1aos.cloud.onebox.dynamics.com`。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[ローカル開発 (VHD) 環境の名前変更](../migration-upgrade/vso-machine-renaming.md) を参照してください。
 
-#### <a name="retail-configuration"></a>Retail コンフィギュレーション
+#### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-Retail Cloud POS アプリの URL は <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> です。構成手順を完了した後に、この VM が Azure AD テナントでプロビジョニングされます。 Azure AD 管理者アカウントは、デモ データ内のレジ担当者アカウントにマップされます。 この環境の Retail POS デバイスを簡単にアクティブにするには、このレジ担当者アカウントを使用できます。
+POS アプリケーションの URL は `https://usnconeboxax1pos.cloud.onebox.dynamics.com/`です。　 
+
+クラウド POS アプリケーションの URL は `https://usnconeboxax1pos.cloud.onebox.dynamics.com` です。　 構成手順を完了すると、この VM には Azure AD テナントがプロビジョニングされます。 Azure AD 管理者アカウントは、デモ データ内のレジ担当者アカウントにマップされます。 この環境の POS デバイスを簡単にアクティブにするには、このレジ担当者アカウントを使用できます。
 
 -   出納係ユーザー ID: **000160**
 -   出納係パスワード: **123**
@@ -235,9 +251,9 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     -   **DataAccess.Database** - このキーは、データベースの名前を保持します。
     -   **Aos.AppRoot** - このキーは、Application Object Server (AOS) Web アプリケーションのルート フォルダーをポイントします。
 
-### <a name="retail-configuration"></a>Retail コンフィギュレーション
+### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-Retail ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 小売アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
+ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
 -   [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
 -   [小売販売時点管理 (POS) デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
 
@@ -248,6 +264,4 @@ Retail ソフトウェア開発キット (SDK) は、C:\RetailSDK にありま�
 2.  **AOSDeploy.cmd** を右クリックして**管理者として実行** をクリックします。
 
 このプロセス時間がかかる場合があります。 cmd.exe ウィンドウが終了すると、プロセスが完了します。 ランタイムを再配置せずに AOS を再起動するのみの場合は、管理者の **Command Prompt** ウィンドウから **iisreset** を実行するか、IIS から AOSWebApplication を再起動します。
-
-
 

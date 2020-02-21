@@ -14,15 +14,15 @@ ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 641fa4844ab929652030d4267d50869a8d0aa472
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7cd63d6756c1d4878dd0ce46bcbee330b14a12f5
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183221"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983673"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 

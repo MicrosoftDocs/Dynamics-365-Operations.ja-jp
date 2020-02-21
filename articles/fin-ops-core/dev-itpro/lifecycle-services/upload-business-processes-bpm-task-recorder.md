@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 18991
 ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ae6dd8d680ca9cd0f9ec9b7b2d365df35dd90ba
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: db9295162c37b292678457b0cfd19ee8a210de46
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812050"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983672"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 

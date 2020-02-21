@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
-ms.date: 12/04/2019
+ms.date: 02/07/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 0b71a6bf173c4fd16b1f79f630224ccae75c7367
-ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
+ms.openlocfilehash: b0a07e3a5723789196f86cd88f5387efc03343bc
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2888672"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033010"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -36,12 +36,12 @@ ms.locfileid: "2888672"
 
 | 決定ポイント      | 定期統合 API | データ管理フレームワークのパッケージ API |
 |---------------------|--------------------------------------|-----------------------------|
-| スケジューリング          | Finance and Operations アプリのスケジュール設定 | Finance and Operations アプリ外でのスケジュール設定 |
-| 形式              | ファイルおよびデータ パッケージ | データ パッケージのみ |
+| スケジューリング          | Finance and Operations アプリのスケジューリング | Finance and Operations アプリ以外のスケジューリング |
+| Format              | ファイルおよびデータ パッケージ | データ パッケージのみ |
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
 | サービス タイプ        | 顧客サービス | データ プロトコル (OData) アクションを開きます |
-| 在庫状態        | Microsoft Dynamics Finance and Operations (2016年2月) 以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
+| 在庫状態        | Microsoft Dynamics Finance and Operations (2016 年 2 月) およびそれ以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
 
 定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。
 
@@ -64,20 +64,21 @@ GetImportStagingErrorFileUrl API は、エラーファイルのURLを取得し�
 
 POST /Data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportStagingErrorFileUrl
 
-    Body
-    {
-        "executionId":"<string>",
-        "entityName":"<string>"
-    }
+```json
+Body
+{
+    "executionId":"<string>",
+    "entityName":"<string>"
+}
 
+Successful Response:
 
-    Successful Response:
-
-    HTTP/1.1 200 OK
-    {
-      "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-      "value":"<errorfileurl>"
-    }
+HTTP/1.1 200 OK
+{
+    "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+    "value":"<errorfileurl>"
+}
+```
 
 **入力パラメーター**
 
@@ -103,20 +104,22 @@ GenerateImportTargetErrorKeysFile API は、エラーファイルを生成しま
 
 POST /Data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GenerateImportTargetErrorKeysFile
 
-    Body
+```json
+Body
 
-    {
-      "executionId":"<string>",
-      "entityName":"<string>"
-    }
+{
+    "executionId":"<string>",
+    "entityName":"<string>"
+}
 
-    Successful Response:
+Successful Response:
 
-    HTTP/1.1 200 OK
-    {
-      "@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
-      "value": <errorsExist>
-    }
+HTTP/1.1 200 OK
+{
+    "@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
+    "value": <errorsExist>
+}
+```
 
 **入力パラメーター**
 
@@ -142,7 +145,7 @@ POST /Data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.Genera
 
 **疑似コードの例**
 
-```
+```csharp
 errorsExist = GenerateImportTargetErrorKeysFile(executionId, entityName)
 
 if (errorsExist)
@@ -160,7 +163,7 @@ if (errorsExist)
 }
 ```
 
-```CSharp
+```csharp
 POST
 /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportTargetErrorKeysFileUrl
 
@@ -202,7 +205,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > SAS は有効期限の時間枠中にのみ有効です。 ウィンドウが経過した後に発行されるすべての要求はエラーを返します。 詳細については、[共有アクセス署名 (SA) の使用](/azure/storage/common/storage-dotnet-shared-access-signature-part-1) を参照してください。
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
 BODY
 {
@@ -243,7 +246,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > プラットフォーム更新プログラム 12 を起動すると、**ImportFromPackage** API は複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
 BODY
 {
@@ -299,11 +302,11 @@ HTTP/1.1 200 OK
 - この API を呼び出す前に、エクスポート データ プロジェクトを作成する必要があります。 プロジェクトが存在しない場合、API の呼び出しには、エラーが返されます。
 - 変更履歴がオンの場合は、最後の実行後に更新または作成されたレコードのみがエクスポートされます。 (つまり、デルタのみが返されます。)
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
 BODY
 {
-    "definitionGroupId":"<Data project Id>",
+    "definitionGroupId":"<Data project name>",
     "packageName":"<Name to use for downloaded file.>",
     "executionId":"<Execution Id if it is a rerun>",
     "reExecute":<bool>,
@@ -343,7 +346,7 @@ HTTP/1.1 200 OK
 
 **GetExportedPackageUrl** API は、**ExportToPackage** を呼び出すことでエクスポートされたデータ パッケージの URL を取得するために使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
 BODY
 {"executionId":"<Execution Id>"}
@@ -381,7 +384,7 @@ HTTP/1.1 200 OK
 
 **GetExecutionSummaryStatus** API は、インポート ジョブとエクスポート ジョブの両方に使用されます。 これは、データ プロジェクト実行ジョブのステータスの確認に使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
 BODY
 {"executionId":"<executionId>"}
@@ -438,12 +441,10 @@ HTTP/1.1 200 OK
 ## <a name="getting-the-list-of-errors"></a>エラーの一覧を取得する
 GetExecutionErrors は、ジョブ実行のエラーのリストを取得するために使用できます。 API は、Execution ID をパラメーターとして取り、JSON リストでエラー メッセージのセットを返します。
 
-```
-
+```json
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
 BODY
 {"executionId":"<executionId>"}
-
 ```
 
 ## <a name="import-and-export-processes"></a>プロセスのインポートとエクスポート

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Smitha Nataraj, Lars-Bo
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: fcb57b6164546d154b1496d0d42f2d2af4e94bef
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 31cbc2c7a0ab447758346cfbe4a6a046e57a9bf3
+ms.sourcegitcommit: 6407f25c943f43e132abfb2d9b12bd1bd9db465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191637"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "2951795"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
@@ -90,7 +90,7 @@ ms.locfileid: "2191637"
     
 クラス階層構造の詳細については、次のブログ記事を参照してください。
 
-+ [SysExtension フレームワーク – 問題発生時](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [SysExtension フレームワーク – 問題発生時](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
 + [Dynamics 365 for Finance and Operations への拡張機能のご要望の採用 #2 - SysExtension フレームワーク](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## <a name="deprecation"></a>廃止

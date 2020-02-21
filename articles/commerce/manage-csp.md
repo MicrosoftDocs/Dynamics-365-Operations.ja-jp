@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc3f06920e00f0e554e5dd25b1a2728f7270133
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 83146401df20e459581b1af6e17d4beb3430b066
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698039"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003546"
 ---
 # <a name="manage-content-security-policy-csp"></a>Content Security Policy (CSP) の管理
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerceの Content Security Policy (CSP) を管理する方法について説明します。

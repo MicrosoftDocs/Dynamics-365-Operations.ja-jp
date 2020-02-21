@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6d7c50c39d166f4b69843dea110d12e3a3b870
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0585d9ed683052612826272f868e957cccb4f4a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191603"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026204"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 
@@ -30,8 +30,7 @@ ms.locfileid: "2191603"
 
 このトピックでは、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。
 
-<a name="overview"></a>概要
---------
+# <a name="overview"></a>概要
 
 コンパイル時関数は、X++ コードのコンパイル時に早期実行されます。 アプリケーション エクスプローラーに保存されているメタデータの変更に対してコードを復元するためには、可能な限り X++ で使用する必要があります。 コンパイル時関数は、コンパイラによって入力値が検証されます。 入力された値が見つからず、アプリケーション エクスプローラーの既存のオブジェクトが一致しない場合は、コンパイラーはエラーを発行します。 コンパイラは実行時に変数に含まれる値を判別できないため、これらの関数への入力はリテラルでなければなりません。 コンパイル時関数は、メタデータ アサーション関数です。 アプリケーション エクスプローラーでエンティティを表す引数を取得し、コンパイル時にその引数を検証します。 実行時に影響を与えません。 属性は **SysAttribute** クラスから継承するクラスです。 フォーム、レポート、クエリ、メニュー のメタデータの検証をサポートするには、コントロールの **AutoDeclaration** プロパティを使用します。 これらの機能のほとんどは、アプリケーション エクスプローラーにある項目に関するメタデータを取得します。 いくつかの一般的なコンパイル時機能は、次のとおりです。
 
@@ -51,7 +50,9 @@ ms.locfileid: "2191603"
 
 ### <a name="syntax"></a>構文
 
-    str classStr(class class)
+```xpp
+str classStr(class class)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -68,22 +69,25 @@ ms.locfileid: "2191603"
 これは、コンパイル時関数です。 詳細については、「[概要](#overview)」を参照してください。
 
 ### <a name="example"></a>例
-
-    static void attributeStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = attributeStr(AifDocumentOperationAttribute);
-        print s;
-        pause;
-    }
+```xpp
+static void attributeStrExample(Args _args)
+{
+    str s;
+    ;
+    s = attributeStr(AifDocumentOperationAttribute);
+    print s;
+    pause;
+}
+``` 
 
 ## <a name="classnum"></a>classNum
 指定されたクラスの ID を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int classNum(class class)
+```xpp
+int classNum(class class)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -101,21 +105,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void classNumExample(Args _args)
-    {
-        int i;
-        ;
-        i = classNum(Global);
-        print i;
-        pause;
-    }
+```xpp
+static void classNumExample(Args _args)
+{
+    int i;
+    ;
+    i = classNum(Global);
+    print i;
+    pause;
+}
+```
 
 ## <a name="classstr"></a>classStr
 文字列としてクラスの名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str classStr(class class)
+```xpp
+str classStr(class class)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -133,21 +141,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void clStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = classStr(Global);
-        print s;
-        pause;
-    }
+```xpp
+static void clStrExample(Args _args)
+{
+    str s;
+    ;
+    s = classStr(Global);
+    print s;
+    pause;
+}
+```
 
 ## <a name="configurationkeynum"></a>configurationKeyNum
 指定されたコンフィギュレーション キーの ID を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int configurationKeyNum(str keyname)
+```xpp
+int configurationKeyNum(str keyname)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -165,21 +177,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void configurationKeyNum(Args _args)
-    {
-        int i;
-        ;
-        i = configurationKeyNum(AIF);
-        print i;
-        pause;
-    }
+```xpp
+static void configurationKeyNum(Args _args)
+{
+    int i;
+    ;
+    i = configurationKeyNum(AIF);
+    print i;
+    pause;
+}
+```
 
 ## <a name="configurationkeystr"></a>configurationKeyStr
 文字列としてコンフィギュレーション キーの名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str configurationKeyStr(str keyname)
+```xpp
+str configurationKeyStr(str keyname)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -197,21 +213,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void configurationKeyStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = configurationKeyStr(AIF);
-        print s;
-        pause;
-    }
+```xpp
+static void configurationKeyStrExample(Args _args)
+{
+    str s;
+    ;
+    s = configurationKeyStr(AIF);
+    print s;
+    pause;
+}
+```
 
 ## <a name="dataentitydatasourcestr"></a>dataEntityDataSourceStr
 データ エンティティのデータ ソースの名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str dataEntityDataSourceStr(str dataEntity, str dataSource)
+```xpp
+str dataEntityDataSourceStr(str dataEntity, str dataSource)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -230,14 +250,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="delegatestr"></a>delegateStr
 委任の名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str delegateStr(str class, str instanceDelegate)
+```xpp
+str delegateStr(str class, str instanceDelegate)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -256,14 +278,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="dimensionhierarchylevelstr"></a>dimensionHierarchyLevelStr
 分析コード階層レベルの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str dimensionHierarchyLevelStr(str dimensionHierarchyLevel)
+```xpp
+str dimensionHierarchyLevelStr(str dimensionHierarchyLevel)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -281,14 +305,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="dimensionhierarchystr"></a>dimensionHierarchyStr
 分析コード階層の名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str dimensionHierarchyStr(str dimensionHierarchy)
+```xpp
+str dimensionHierarchyStr(str dimensionHierarchy)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -306,14 +332,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="dimensionreferencestr"></a>dimensionReferenceStr
 分析コード参照の名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str dimensionReferenceStr(str dimensionReference)
+```xpp
+str dimensionReferenceStr(str dimensionReference)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -331,14 +359,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="dutystr"></a>dutyStr
 指定したセキュリティ職務権限の名前を表す文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str dutyStr(str securityDuty)
+```xpp
+str dutyStr(str securityDuty)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -356,14 +386,16 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="enumcnt"></a>enumCnt
 指定された列挙型の要素数を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int enumCnt(enum enumtype)
+```xpp
+int enumCnt(enum enumtype)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -381,14 +413,18 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    enumCnt(NoYes); //Returns 2, as the two elements are Yes and No.
+```xpp
+enumCnt(NoYes); //Returns 2, as the two elements are Yes and No.
+```
 
 ## <a name="enumliteralstr"></a>enumLiteralStr
 指定した文字列が指定した列挙型の要素であるかどうかを示します。
 
 ### <a name="syntax"></a>構文
 
-    enumLiteralStr(enum enum, string str)
+```xpp
+\enumLiteralStr(enum enum, string str)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -406,20 +442,23 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void getEnumValueAsString()
-    {
-        str i;
-        i = enumLiteralStr(ABCEnum, "valueInABCEnum");
-        print i;
-        pause;
-    }
+```xpp
+static void getEnumValueAsString()
+{
+    str i;
+    i = enumLiteralStr(ABCEnum, "valueInABCEnum");
+    print i;
+    pause;
+}
+```
 
 ## <a name="enumnum"></a>enumNum
 指定された列挙型の ID を取得します。
 
 ### <a name="syntax"></a>構文
-
-    int enumNum(enum enum)
+```xpp
+int enumNum(enum enum)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -437,21 +476,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void enumNum(Args _args)
-    {
-        int i;
-        ;
-        i = enumNum(ABC);
-        print i;
-        pause;
-    }
+```xpp
+static void enumNum(Args _args)
+{
+    int i;
+    ;
+    i = enumNum(ABC);
+    print i;
+    pause;
+}
+```
 
 ## <a name="enumstr"></a>enumStr
 文字列として列挙型の名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str enumStr(enum enum)
+```xpp
+str enumStr(enum enum)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -469,21 +512,25 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void enumStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = enumStr(ABC);
-        print s;
-        pause;
-    }
+```xpp
+static void enumStrExample(Args _args)
+{
+    str s;
+    ;
+    s = enumStr(ABC);
+    print s;
+    pause;
+}
+```
 
 ## <a name="extendedtypenum"></a>extendedTypeNum
 指定された拡張データ型の ID を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int extendedTypeNum(int str)
+```xpp
+int extendedTypeNum(int str)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -501,25 +548,29 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void EDTNum(Args _args)
-    {
-        int i;
-        str s;
-        ;
+```xpp
+static void EDTNum(Args _args)
+{
+    int i;
+    str s;
+    ;
 
-        i = extendedTypeNum(AccountName);
-        s = extendedTypeStr(AccountName);
-        print  int2Str(i);
-        print  s;
-        pause;
-    }
+    i = extendedTypeNum(AccountName);
+    s = extendedTypeStr(AccountName);
+    print  int2Str(i);
+    print  s;
+    pause;
+}
+```
 
 ## <a name="extendedtypestr"></a>extendedTypeStr
 文字列として拡張データ型の名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str extendedTypeStr(int str)
+```xpp
+str extendedTypeStr(int str)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -537,25 +588,29 @@ ms.locfileid: "2191603"
 
 ### <a name="example"></a>例
 
-    static void EDTStr(Args _args)
-    {
-        int i;
-        str s;
-        ;
+```xpp
+static void EDTStr(Args _args)
+{
+    int i;
+    str s;
+    ;
 
-        i = extendedTypeNum(AccountName);
-        s = extendedTypeStr(AccountName);
-        print  int2Str(i);
-        print  s;
-        pause;
-    }
+    i = extendedTypeNum(AccountName);
+    s = extendedTypeStr(AccountName);
+    print  int2Str(i);
+    print  s;
+    pause;
+}
+```
 
 ## <a name="fieldnum"></a>fieldNum
 指定したフィールドの ID 番号を返します。
 
 ### <a name="syntax"></a>構文
 
-    int fieldNum(str tableName, str fieldName)
+```xpp
+int fieldNum(str tableName, str fieldName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -576,25 +631,29 @@ ms.locfileid: "2191603"
 
 次の例では、**CashDisc** フィールドの番号を **CustTable** テーブルに出力します。
 
-    static void fieldNumExample(Args _args)
-    {
-        int myInt;
-        ;
+```xpp
+static void fieldNumExample(Args _args)
+{
+    int myInt;
+    ;
 
-        myInt = fieldNum(CustTable, CashDisc);
-        Global::info(strfmt("CashDisc has a field ID of %1 in the CustTable table.", myInt));
-    }
-    /****Infolog Display
-    Message (10:40:00 am)
-    CashDisc has a field ID of 10 in the CustTable table.
-    ****/
+    myInt = fieldNum(CustTable, CashDisc);
+    Global::info(strfmt("CashDisc has a field ID of %1 in the CustTable table.", myInt));
+}
+/****Infolog Display
+Message (10:40:00 am)
+CashDisc has a field ID of 10 in the CustTable table.
+****/
+```
 
 ## <a name="fieldpname"></a>fieldPName
 指定されたフィールドのラベルを取得します。
 
 ### <a name="syntax"></a>構文
 
-    str fieldPName(str tableid, str fieldid)
+```xpp
+str fieldPName(str tableid, str fieldid)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -615,25 +674,29 @@ ms.locfileid: "2191603"
 
 次の例では、**CashDisc** フィールドのラベルを出力します。
 
-    static void fieldPNameExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldPNameExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldPName(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the label of the CashDisc field.", myText));
-    }
-    /****Infolog Display
-    Message (02:00:57 pm)
-    Cash discount is the label of the CashDisc field.
-    ****/
+    myText = fieldPName(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the label of the CashDisc field.", myText));
+}
+/****Infolog Display
+Message (02:00:57 pm)
+Cash discount is the label of the CashDisc field.
+****/
+```
 
 ## <a name="fieldstr"></a>fieldStr
 指定したフィールドのフィールド名を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str fieldStr(str tableid, str fieldid)
+```xpp
+str fieldStr(str tableid, str fieldid)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -654,25 +717,29 @@ ms.locfileid: "2191603"
 
 次の例では、**CashDisc** フィールドの名前を *myText* 変数に割り当てます。
 
-    static void fieldStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldStr(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the specified field.", myText));
-    }
-    /****Infolog Display
-    Message (09:11:52 am)
-    CashDisc is the specified field.
-    ****/
+    myText = fieldStr(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the specified field.", myText));
+}
+/****Infolog Display
+Message (09:11:52 am)
+CashDisc is the specified field.
+****/
+```
 
 ## <a name="formcontrolstr"></a>formControlStr
 X++ コンパイラは、コントロールがフォームに存在するかどうかをチェックし、関数呼び出しを有効なコントロール名の文字列で置き換えます。
 
 ### <a name="syntax"></a>構文
 
-    str formControlStr(formName, controlName)
+```xpp
+str formControlStr(formName, controlName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -691,14 +758,16 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="formdatafieldstr"></a>formDataFieldStr
 フォームのデータ フィールドの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str formDataFieldStr(str formName, str dataSource, str dataField)
+```xpp
+str formDataFieldStr(str formName, str dataSource, str dataField)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -718,14 +787,18 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
+```xpp
+str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
+```
 
 ## <a name="formdatasourcestr"></a>formDataSourceStr
 フォームのデータ ソースの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str formDataSourceStr(str formName, str dataSource)
+```xpp
+str formDataSourceStr(str formName, str dataSource)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -744,14 +817,18 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    str b = formDataSourceStr(FMVehicle, FMModelRate);
+```xpp
+str b = formDataSourceStr(FMVehicle, FMModelRate);
+```
 
 ## <a name="formmethodstr"></a>formMethodStr
 フォームのメソッドの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str formMethodStr(str formName, str methodName)
+```xpp
+str formMethodStr(str formName, str methodName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -772,14 +849,18 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 次の例では、**showDialog** メソッドの名前を出力します。
 
-    str c = formMethodStr(Batch,showDialog);
+```xpp
+str c = formMethodStr(Batch,showDialog);
+```
 
 ## <a name="formstr"></a>formStr
 フォームの名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str formStr(str form)
+```xpp
+str formStr(str form)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -799,23 +880,27 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 次の例では、InventDim フォームの名前を出力します。
 
-    static void formStrExample(Args _arg)
-    {
-        ;
+```xpp
+static void formStrExample(Args _arg)
+{
+    ;
 
-        Global::info(formStr(InventDim));
-    }
-    /****Infolog Display
-    Message (11:04:39 am)
-    InventDim
-    ****/
+    Global::info(formStr(InventDim));
+}
+/****Infolog Display
+Message (11:04:39 am)
+InventDim
+****/
+```
 
 ## <a name="identifierstr"></a>identifierStr
 指定された識別子を文字列に変換します。
 
 ### <a name="syntax"></a>構文
 
-    str identifierStr(str ident)
+```xpp
+str identifierStr(str ident)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -835,26 +920,30 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 次のコード例では、*myvar* 変数名を *thevar* 変数に割り当てています。
 
-    static void indentifierStrExample(Args _args)
-    {
-        str myvar;
-        str thevar
-        ;
+```xpp
+static void indentifierStrExample(Args _args)
+{
+    str myvar;
+    str thevar
+    ;
 
-        thevar = "[" + identifierStr(myvar) + "]";
-        Global::info(strfmt(thevar));
-    }
-    /****Infolog Display
-    Message (09:19:49 am)
-    [myvar]
-    ****/
+    thevar = "[" + identifierStr(myvar) + "]";
+    Global::info(strfmt(thevar));
+}
+/****Infolog Display
+Message (09:19:49 am)
+[myvar]
+****/
+```
 
 ## <a name="indexnum"></a>indexNum
 指定されたインデックスを数字に変換します。
 
 ### <a name="syntax"></a>構文
 
-    int indexNum(str tableid, str indexid)
+```xpp
+int indexNum(str tableid, str indexid)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -875,23 +964,27 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 次の例では、当事者インデックスのインデックス値を返します。
 
-    static void indexNumExample(Args _arg)
-    {
-        ;
+```xpp
+static void indexNumExample(Args _arg)
+{
+    ;
 
-        Global::info(strfmt("%1 is the index number of Party.", indexNum(CustTable, Party)));
-    }
-    /****Infolog Display
-    Message (11:28:03 am)
-    3 is the index number of Party.
-    ****/
+    Global::info(strfmt("%1 is the index number of Party.", indexNum(CustTable, Party)));
+}
+/****Infolog Display
+Message (11:28:03 am)
+3 is the index number of Party.
+****/
+```
 
 ## <a name="indexstr"></a>indexStr
 指定されたインデックスを文字列に変換します。
 
 ### <a name="syntax"></a>構文
 
-    str indexStr(str tableid, str indexid)
+```xpp
+str indexStr(str tableid, str indexid)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -912,25 +1005,29 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 次の例では、**CashDisc** インデックス値を *myText* 変数に割り当てます。
 
-    static void fieldStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldStr(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the specified index.", myText));
-    }
-    /****Infolog Display
-    Message (09:11:52 am)
-    CashDisc is the specified index.
-    ****/
+    myText = fieldStr(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the specified index.", myText));
+}
+/****Infolog Display
+Message (09:11:52 am)
+CashDisc is the specified index.
+****/
+```
 
 ## <a name="licensecodenum"></a>licenseCodeNum
 指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    int licenseCodeNum(str codename)
+```xpp
+int licenseCodeNum(str codename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -948,25 +1045,29 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    static void licenseCodeNumExample(Args args)
-    {
-        int i;
-        ;
+```xpp
+static void licenseCodeNumExample(Args args)
+{
+    int i;
+    ;
 
-        i = licenseCodeNum(SysMorphX);
-        Global::info(strfmt("%1 is the license code number for SysMorphX.", i));
-    }
-    /****Infolog Display
-    Message (01:52:35 pm)
-    24 is the license code number for SysMorphX.
-    ****/
+    i = licenseCodeNum(SysMorphX);
+    Global::info(strfmt("%1 is the license code number for SysMorphX.", i));
+}
+/****Infolog Display
+Message (01:52:35 pm)
+24 is the license code number for SysMorphX.
+****/
+```
 
 ## <a name="licensecodestr"></a>licenseCodeStr
 指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str licenseCodeStr(str codename)
+```xpp
+str licenseCodeStr(str codename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -984,25 +1085,29 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    static void licenseCodeStrExample(Args _arg)
-    {
-        str s;
-        ;
+```xpp
+static void licenseCodeStrExample(Args _arg)
+{
+    str s;
+    ;
 
-        s = licenseCodeStr(SysMorphX);
-        Global::info(strfmt("%1 is the license code string for SysMorphX.", s));
-    }
-    /****Infolog Display
-    Message (02:33:56 pm)
-    SysMorphX is the license code string for SysMorphX.
-    ****/
+    s = licenseCodeStr(SysMorphX);
+    Global::info(strfmt("%1 is the license code string for SysMorphX.", s));
+}
+/****Infolog Display
+Message (02:33:56 pm)
+SysMorphX is the license code string for SysMorphX.
+****/
+```
 
 ## <a name="literalstr"></a>literalStr
 指定した文字列がリテラル文字列であることを検証します。そうでない場合は、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str literalStr(int str)
+```xpp
+str literalStr(int str)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1020,21 +1125,25 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = literalStr("This is a literal str");
-        print s;
-        pause;
-    }
+    s = literalStr("This is a literal str");
+    print s;
+    pause;
+}
+```
 
 ## <a name="maxdate"></a>maxDate
 日付型の変数に使用できる最大値を取得します。
 
 ### <a name="syntax"></a>構文
 
-    date maxDate()
+```xpp
+date maxDate()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -1046,21 +1155,25 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    static void maxDateExample(Args _arg)
-    {
-        date maximumDate;
-        ;
-        maximumDate = maxDate();
-        print maximumDate;
-        pause;
-    }
+```xpp
+static void maxDateExample(Args _arg)
+{
+    date maximumDate;
+    ;
+    maximumDate = maxDate();
+    print maximumDate;
+    pause;
+}
+```
 
 ## <a name="maxint"></a>maxInt
 **int** 型に格納可能な最大符号付き値を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int maxInt()
+```xpp
+int maxInt()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -1072,20 +1185,24 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    static void maxIntExample(Args _arg)
-    {
-        int i;
-        ;
-        print "The maximum value for type int is " + int2Str(maxInt());
-        pause;
-    }
+```xpp
+static void maxIntExample(Args _arg)
+{
+    int i;
+    ;
+    print "The maximum value for type int is " + int2Str(maxInt());
+    pause;
+}
+```
 
 ## <a name="measurementstr"></a>measurementStr
 測定の名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str measurementStr(str measurement)
+```xpp
+str measurementStr(str measurement)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1103,14 +1220,16 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="measurestr"></a>measureStr
 メジャーの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str measureStr(str measure)
+```xpp
+str measureStr(str measure)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1128,14 +1247,16 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="menuitemactionstr"></a>menuItemActionStr
 指定したメニュー項目のアクションがアプリケーション オブジェクト ツリー (Application Explorer) に存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str menuItemActionStr(class menuitem)
+```xpp
+str menuItemActionStr(class menuitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1153,29 +1274,33 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## <a name="menuitemdisplaystr"></a>menuItemDisplayStr
 指定したメニュー項目の表示がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str menuitemdisplaystr(class menuItem)
+```xpp
+str menuitemdisplaystr(class menuItem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1193,29 +1318,33 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## <a name="menuitemoutputstr"></a>menuItemOutputStr
 指定したメニュー項目の出力がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str menuItemOutputStr(class menuitem)
+```xpp
+str menuItemOutputStr(class menuitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1233,29 +1362,33 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## <a name="menustr"></a>menuStr
 指定したメニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str menuStr(class menu)
+```xpp
+str menuStr(class menu)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1273,29 +1406,33 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## <a name="methodstr"></a>methodStr
 指定したメソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str methodStr(class class, int method)
+```xpp
+str methodStr(class class, int method)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1314,23 +1451,27 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    {
-        #define.timeout(50)
-        str s;
-        SysHelpInitTimeOut SysHelpInitTimeOut;
-        ;
+```xpp
+{
+    #define.timeout(50)
+    str s;
+    SysHelpInitTimeOut SysHelpInitTimeOut;
+    ;
 
-        s = methodStr(SysHelpInitTimeOut, timeout);
-        print s;
-        pause;
-    }
+    s = methodStr(SysHelpInitTimeOut, timeout);
+    print s;
+    pause;
+}
+```
 
 ## <a name="minint"></a>minInt
 **int** 型に格納可能な最小符号付き値を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int minInt()
+```xpp
+int minInt()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -1342,21 +1483,25 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    static void minIntExample(Args _arg)
-    {
-        int i;
-        ;
-        i = minInt();
-        print "minInt() is " + int2Str(i);    
-        pause;
-    }
+```xpp
+static void minIntExample(Args _arg)
+{
+    int i;
+    ;
+    i = minInt();
+    print "minInt() is " + int2Str(i);    
+    pause;
+}
+```
 
 ## <a name="privilegestr"></a>privilegeStr
 権限の名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str privilegeStr(str privilege)
+```xpp
+str privilegeStr(str privilege)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1374,14 +1519,16 @@ X++ コンパイラは、コントロールがフォームに存在するかど�
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="querydatasourcestr"></a>queryDatasourceStr
 X++ コンパイラは、データ ソースがクエリに存在するかどうかをチェックし、関数呼び出しを有効なデータ ソース名の文字列で置き換えます。
 
 ### <a name="syntax"></a>構文
 
-    str queryDataSourceStr(queryName, dataSourceName)
+```xpp
+str queryDataSourceStr(queryName, dataSourceName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1400,14 +1547,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="querymethodstr"></a>queryMethodStr
 クエリのメソッドの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str queryMethodStr(str queryName, str methodName)
+```xpp
+str queryMethodStr(str queryName, str methodName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1426,14 +1575,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="querystr"></a>queryStr
 既存のクエリを表す文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str queryStr(str query)
+```xpp
+str queryStr(str query)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1451,25 +1602,29 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    static void queryStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void queryStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = queryStr(AssetTable);
-        Global::info(strfmt("%1 is the name of the query.",myText));
-    }
-    /****Infolog Display
-    Message (09:45:16 am)
-    AssetTable is the name of the query.
-    ****/
+    myText = queryStr(AssetTable);
+    Global::info(strfmt("%1 is the name of the query.",myText));
+}
+/****Infolog Display
+Message (09:45:16 am)
+AssetTable is the name of the query.
+****/
+```
 
 ## <a name="reportstr"></a>reportStr
 指定したレポートの名前を表す文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str reportStr(str report)
+```xpp
+str reportStr(str report)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1489,25 +1644,29 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次の例では、**AssetAddition** レポートの名前を *MyTxt* 変数に割り当てます。
 
-    static void reportStrExample(Args _args)
-    {
-        str MyTxt;
-        ;
+```xpp
+static void reportStrExample(Args _args)
+{
+    str MyTxt;
+    ;
 
-        MyTxt = reportStr(AssetAddition);
-        Global::info(strfmt("%1 is the name of the report.", MyTxt));
-    }
-    /****Infolog Display.
-    Message (10:46:36 am)
-    AssetAddition is the name of the report.
-    ****/
+    MyTxt = reportStr(AssetAddition);
+    Global::info(strfmt("%1 is the name of the report.", MyTxt));
+}
+/****Infolog Display.
+Message (10:46:36 am)
+AssetAddition is the name of the report.
+****/
+```
 
 ## <a name="resourcestr"></a>resourceStr
 指定したリソースがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str resourceStr(str resourcename)
+```xpp
+str resourceStr(str resourcename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1525,18 +1684,22 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        print "Str for resource StyleSheet_Help_Axapta is " 
-            + resourceStr(StyleSheet_Help_Axapta);
-        pause;
-    }
+```xpp
+{
+    print "Str for resource StyleSheet_Help_Axapta is " 
+        + resourceStr(StyleSheet_Help_Axapta);
+    pause;
+}
+```
 
 ## <a name="rolestr"></a>roleStr
 指定したセキュリティ ロールの名前を表す文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str roleStr(str securityRole)
+```xpp
+str roleStr(str securityRole)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1554,14 +1717,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="ssrsreportstr"></a>ssrsReportStr
 指定したレポートの名前を表す文字列を取得します。 レポート コントローラー クラスで実行されるレポートを指定する場合は、この関数を使用します。
 
 ### <a name="syntax"></a>構文
 
-    str ssrsReportStr(str report, str design)
+```xpp
+str ssrsReportStr(str report, str design)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1580,26 +1745,30 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    public static void main(Args _args)
-    {
-        // Initializing the object for a controller class, in this case, the class named AssetListingController.
-        SrsReportRunController controller = new AssetListingController();
+```xpp
+public static void main(Args _args)
+{
+    // Initializing the object for a controller class, in this case, the class named AssetListingController.
+    SrsReportRunController controller = new AssetListingController();
 
-        // Getting the properties of the called object (in this case AssetListing MenuItem)
-        controller.parmArgs(_args);
-        // Setting the Report name for the controller.
-        controller.parmReportName(ssrsReportStr(AssetListing, Report));
+    // Getting the properties of the called object (in this case AssetListing MenuItem)
+    controller.parmArgs(_args);
+    // Setting the Report name for the controller.
+    controller.parmReportName(ssrsReportStr(AssetListing, Report));
 
-        // Initiate the report execution.
-        controller.startOperation();
-    }
+    // Initiate the report execution.
+    controller.startOperation();
+}
+```
 
 ## <a name="staticdelegatestr"></a>staticDelegateStr
 静的デリゲートの名前を返します。
 
 ### <a name="syntax"></a>構文
 
-    str staticDelegateStr(str class, str delegate)
+```xpp
+str staticDelegateStr(str class, str delegate)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1618,14 +1787,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="staticmethodstr"></a>staticMethodStr
 指定した静的メソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str staticMethodStr(class class, int method)
+```xpp
+str staticMethodStr(class class, int method)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1644,14 +1815,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="tablecollectionstr"></a>tableCollectionStr
 指定したテーブル コレクションがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str tableCollectionStr(class tablecollection)
+```xpp
+str tableCollectionStr(class tablecollection)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1669,14 +1842,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="tablefieldgroupstr"></a>tableFieldGroupStr
 文字列としてフィールド グループの名前を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str tableFieldGroupStr(str tableName, str fieldGroupName)
+```xpp
+str tableFieldGroupStr(str tableName, str fieldGroupName)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1697,23 +1872,27 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次の例では、**編集** フィールド グループの名前を文字列として取得します。
 
-    static void tableFieldGroupStrExample(Args _arg)
-    {
-        ;
+```xpp
+static void tableFieldGroupStrExample(Args _arg)
+{
+    ;
 
-        Global::info(tableFieldGroupStr(AccountingDistribution, Editing));
-    }
-    /****Infolog Display
-    Message (03:14:54 pm)
-    Editing
-    ****/
+    Global::info(tableFieldGroupStr(AccountingDistribution, Editing));
+}
+/****Infolog Display
+Message (03:14:54 pm)
+Editing
+****/
+```
 
 ## <a name="tablemethodstr"></a>tableMethodStr
 指定したメソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str tableMethodStr(int table, int method)
+```xpp
+str tableMethodStr(int table, int method)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1732,14 +1911,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="tablenum"></a>tableNum
 特定のテーブルのテーブル ID を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int tableNum(str table)
+```xpp
+int tableNum(str table)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1759,26 +1940,30 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次の例では、**tableID** 変数を 77 に設定します。これは、**CustTable** テーブルの **ID** です。
 
-    static void tableNumExample(Args _args)
-    {
-        int tableID;
-        ;
+```xpp
+static void tableNumExample(Args _args)
+{
+    int tableID;
+    ;
 
-        tableID = tableNum(CustTable);
-        Global::info(strfmt("%1 is the table ID for the CustTable table.", tableID));
+    tableID = tableNum(CustTable);
+    Global::info(strfmt("%1 is the table ID for the CustTable table.", tableID));
 
-    }
-    /****Infolog Display
-    Message (11:15:54 am)
-    77 is the table ID for the CustTable table.
-    ****/
+}
+/****Infolog Display
+Message (11:15:54 am)
+77 is the table ID for the CustTable table.
+****/
+```
 
 ## <a name="tablepname"></a>tablePName
 指定されたテーブルの出力可能な名前を含む文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str tablePName(str table)
+```xpp
+str tablePName(str table)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1798,25 +1983,29 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次の例では、**CustTable** テーブルのラベルを *MyText* 変数に割り当てます。
 
-    static void tablePNameExample(Args _args)
-    {
-        str MyText;
-        ;
+```xpp
+static void tablePNameExample(Args _args)
+{
+    str MyText;
+    ;
 
-        MyText = tablePname(CustTable);
-        Global::info(strfmt("%1 is the label of the CustTable table.", MyText));
-    }
-    /**** Infolog Display.
-    Message (12:13:53 pm)
-    Customers is the label of the CustTable table.
-    ****/
+    MyText = tablePname(CustTable);
+    Global::info(strfmt("%1 is the label of the CustTable table.", MyText));
+}
+/**** Infolog Display.
+Message (12:13:53 pm)
+Customers is the label of the CustTable table.
+****/
+```
 
 ## <a name="tablestaticmethodstr"></a>tableStaticMethodStr
 指定した静的メソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str tableStaticMethodStr(int table, int method)
+```xpp
+str tableStaticMethodStr(int table, int method)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1835,14 +2024,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="tablestr"></a>tableStr
 指定したテーブルの名前を含む文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str tableStr(str table)
+```xpp
+str tableStr(str table)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1862,25 +2053,29 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次の例では、**CustTable** テーブルの名前を *MyTxt* 変数に割り当てます。
 
-    static void tableStrExample(Args _args)
-    {
-        str MyTxt;
-        ;
+```xpp
+static void tableStrExample(Args _args)
+{
+    str MyTxt;
+    ;
 
-        MyTxt = tableStr(CustTable);
-        Global::info(strfmt("%1 is the str output of the input of CustTable.", MyTxt));
-    }
-    /**** Infolog Display. 
-    Message (01:21:49 pm)
-    CustTable is the str output of the input of CustTable.
-    ****/
+    MyTxt = tableStr(CustTable);
+    Global::info(strfmt("%1 is the str output of the input of CustTable.", MyTxt));
+}
+/**** Infolog Display. 
+Message (01:21:49 pm)
+CustTable is the str output of the input of CustTable.
+****/
+```
 
 ## <a name="tilestr"></a>tileStr
 指定したタイルの名前を表す文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str tileStr(str tile)
+```xpp
+str tileStr(str tile)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1898,14 +2093,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="varstr"></a>varStr
 指定した変数の名前を含む文字列を取得します。
 
 ### <a name="syntax"></a>構文
 
-    str varStr(str var)
+```xpp
+str varStr(str var)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1923,26 +2120,30 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    static void varStrExample(Args _arg)
-    {
-        str myString;
-        anytype myVariable;
-        ;
+```xpp
+static void varStrExample(Args _arg)
+{
+    str myString;
+    anytype myVariable;
+    ;
 
-        myString = varStr(myVariable);
-        Global::info(strfmt("%1 is the variable name.", myString));
-    }
-    /****Infolog Display.
-    Message (02:26:56 pm)
-    myVariable is the variable name.
-    ****/
+    myString = varStr(myVariable);
+    Global::info(strfmt("%1 is the variable name.", myString));
+}
+/****Infolog Display.
+Message (02:26:56 pm)
+myVariable is the variable name.
+****/
+```
 
 ## <a name="webactionitemstr"></a>webActionItemStr
 指定した Web アクション項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webActionItemStr(class webactionitem)
+```xpp
+str webActionItemStr(class webactionitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -1960,13 +2161,15 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webActionItemStr(EPFlushData);
-        print "webactionitem str is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webActionItemStr(EPFlushData);
+    print "webactionitem str is " + s;
+    pause;
+}
+```
 
 ## <a name="webdisplaycontentitemstr"></a>webDisplayContentItemStr
 指定したWeb 表示のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
@@ -1991,21 +2194,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webDisplayContentItemStr(EPAdmin);
-        print "string for webcontent display item EPAdmin is " + s;
-        pause;
-    }
+    s = webDisplayContentItemStr(EPAdmin);
+    print "string for webcontent display item EPAdmin is " + s;
+    pause;
+}
+```
 
 ## <a name="webformstr"></a>webFormStr
 指定した Web フォームがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webFormStr(str name)
+```xpp
+str webFormStr(str name)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2023,20 +2230,24 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webFormStr(EPAdmin);
-        print "String for web form EPAdmin is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webFormStr(EPAdmin);
+    print "String for web form EPAdmin is " + s;
+    pause;
+}
+```
 
 ## <a name="webletitemstr"></a>webletItemStr
 指定した Weblet 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webletItemStr(class webletitem)
+```xpp
+str webletItemStr(class webletitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2054,20 +2265,24 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webletItemStr(WebFormWeblet);
-        print "String for WebFormWeblet is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webletItemStr(WebFormWeblet);
+    print "String for WebFormWeblet is " + s;
+    pause;
+}
+```
 
 ## <a name="webmenustr"></a>webMenuStr
 指定した Web メニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webMenuStr(str name)
+```xpp
+str webMenuStr(str name)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2085,20 +2300,24 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webMenuStr(ECPAdmin);
-        print "String for web menu ECPAdmin is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webMenuStr(ECPAdmin);
+    print "String for web menu ECPAdmin is " + s;
+    pause;
+}
+```
 
 ## <a name="weboutputcontentitemstr"></a>webOutputContentItemStr
 指定したWeb 出力のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webOutputContentItemStr(class weboutputcontentitem)
+```xpp
+str webOutputContentItemStr(class weboutputcontentitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2116,20 +2335,24 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webOutputContentItemStr(EPPriceList);
-        print "string for weboutput content item EPPriceList is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webOutputContentItemStr(EPPriceList);
+    print "string for weboutput content item EPPriceList is " + s;
+    pause;
+}
+```
 
 ## <a name="webpagedefstr"></a>webpageDefStr
 指定した Web ページ定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webpageDefStr(str pagename)
+```xpp
+str webpageDefStr(str pagename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2147,14 +2370,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="webreportstr"></a>webReportStr
 指定した Web レポートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webReportStr(str name)
+```xpp
+str webReportStr(str name)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2172,20 +2397,24 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
-        s = webReportStr(EPCSSSalesConfirm);
-        print "String for web report EPCSSalesConfirm is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webReportStr(EPCSSSalesConfirm);
+    print "String for web report EPCSSalesConfirm is " + s;
+    pause;
+}
+```
 
 ## <a name="websitedefstr"></a>websiteDefStr
 指定した Web サイトの定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str websiteDefStr(str resourcename)
+```xpp
+str websiteDefStr(str resourcename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2203,21 +2432,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = websiteDefStr(AxSiteDef_1033_xip);
-        print "string for web site definition AxSiteDef_1033_xip is " + s;
-        pause;
-    }
+    s = websiteDefStr(AxSiteDef_1033_xip);
+    print "string for web site definition AxSiteDef_1033_xip is " + s;
+    pause;
+}
+```
 
 ## <a name="websitetempstr"></a>webSiteTempStr
 指定した Web サイトのテンプレートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str websiteTempStr(str resourcename)
+```xpp
+str websiteTempStr(str resourcename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2235,14 +2468,16 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    No example.
+例なし。
 
 ## <a name="webstaticfilestr"></a>webStaticFileStr
 指定した Web 静的ファイルがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webStaticFileStr(str pagename)
+```xpp
+str webStaticFileStr(str pagename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2260,21 +2495,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webStaticFileStr(AXEP);
-        print "string for web static file AXEP is " + s;
-        pause;
-    }
+    s = webStaticFileStr(AXEP);
+    print "string for web static file AXEP is " + s;
+    pause;
+}
+```
 
 ## <a name="weburlitemstr"></a>webUrlItemStr
 指定した Web URL 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webUrlItemStr(class weburlitem)
+```xpp
+str webUrlItemStr(class weburlitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2292,21 +2531,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webUrlItemStr(EPAdmin);
-        print "string for web url item EPAdmin is " + s;
-        pause;
-    }
+    s = webUrlItemStr(EPAdmin);
+    print "string for web url item EPAdmin is " + s;
+    pause;
+}
+```
 
 ## <a name="webwebpartstr"></a>webWebPartStr
 指定した Web パーツがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str webWebpartStr(str resourcename)
+```xpp
+str webWebpartStr(str resourcename)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2324,21 +2567,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webWebpartStr(AxWebParts_cab);
-        print "string for web part AxWebParts_cab is " + s;
-        pause;
-    }
+    s = webWebpartStr(AxWebParts_cab);
+    print "string for web part AxWebParts_cab is " + s;
+    pause;
+}
+```
 
 ## <a name="workflowapprovalstr"></a>workflowApprovalStr
 アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー承認の名前を文字列として取得します。
 
 ### <a name="syntax"></a>構文
 
-    str workflowapprovalstr(approval approval)
+```xpp
+str workflowapprovalstr(approval approval)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2358,21 +2605,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次のコード例では、変数 *str s* を **MyWorkflowApproval** に設定します。これは、アプリケーション エクスプローラーでのワークフロー承認の名前です。
 
-    static void MyWorkflowApprovalStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowapprovalstr(MyWorkflowApproval);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowApprovalStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowapprovalstr(MyWorkflowApproval);
+    print s;
+    pause;
+}
+```
 
 ## <a name="workflowcategorystr"></a>workflowCategoryStr
 アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー カテゴリの名前を文字列として取得します。
 
 ### <a name="syntax"></a>構文
 
-    str workflowcategorystr(category category)
+```xpp
+str workflowcategorystr(category category)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2392,21 +2643,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次のコード例では、変数 *str s* を **MyWorkflowCategory** に設定します。これは、アプリケーション エクスプローラーでのワークフロー カテゴリの名前です。
 
-    static void MyWorkflowCategoryStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowcategorystr(MyWorkflowCategory);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowCategoryStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowcategorystr(MyWorkflowCategory);
+    print s;
+    pause;
+}
+```
 
 ## <a name="workflowtaskstr"></a>workflowTaskStr
 アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー タスクの名前を文字列として取得します。
 
 ### <a name="syntax"></a>構文
 
-    str workflowtaskstr(task task)
+```xpp
+str workflowtaskstr(task task)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2426,21 +2681,25 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 次のコード例では、変数 *str s* を **MyWorkflowTask** に設定します。これは、アプリケーション エクスプローラーでのワークフロー タスクの名前です。
 
-    static void MyWorkflowTaskStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowtaskstr(MyWorkflowTask);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowTaskStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowtaskstr(MyWorkflowTask);
+    print s;
+    pause;
+}
+```
 
 ## <a name="workflowtypestr"></a>workflowTypeStr
 指定したワークフロー タイプがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。
 
 ### <a name="syntax"></a>構文
 
-    str workflowTypeStr(str workflow)
+```xpp
+str workflowTypeStr(str workflow)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -2458,14 +2717,15 @@ X++ コンパイラは、データ ソースがクエリに存在するかどう
 
 ### <a name="example"></a>例
 
-    static void workFlowTypeStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workFlowTypeStr(BudgetAccountEntryType);
-        print s;
-        pause;
-    }
-
+```xpp
+static void workFlowTypeStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workFlowTypeStr(BudgetAccountEntryType);
+    print s;
+    pause;
+}
+```
 
 

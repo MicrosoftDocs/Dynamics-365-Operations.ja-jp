@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c5de3138152c66a96903a7f1cf564e44dd3e6a0b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 161930d19f3408c2ebecd1b3796c94be69838ed3
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914947"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029420"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -73,7 +73,7 @@ ms.locfileid: "2914947"
 
 > [!NOTE]
 > 現在の配置では、ローカル エージェントの以前のバージョンを要求する場合は、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリからそれをダウンロードします。 ローカル エージェント バージョン v1.1.0 をダウンロードするには、**共用資産ライブラリ - >モデル**に移動し、Dynamics 365 for Finance and Operations オンプレミス - ローカル エージェント v1.1.0** をクリックします。
-
+>
 > プラットフォーム更新プログラム 12 の展開および更新プログラム フローの完成には、バージョン 2.0.0 かそれ以降のバージョンが必要です。
 
 1. LCS で、**プロジェクト設定** > **オンプレミス コネクタ**を選択します。
@@ -93,7 +93,7 @@ ms.locfileid: "2914947"
 3. localagent-config.json ファイルを \\DynamicsAgent\\LocalAgent にコピーします。
 4. **コマンド プロンプト** ウィンドウで、C:\\DynamicsAgent\\LocalAgent に移動して、次のコマンドを実行します。
 
-    ```
+    ```Console
     LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
@@ -104,7 +104,7 @@ ms.locfileid: "2914947"
 6. Service Fabric Explorer を調べ、**Orchestrator** ノードの **展開済みアプリケーション** セクションにアプリケーションがないことを確めて、ローカル エージェントが正常にクリーンアップされことを確認します。
 7. ローカル エージェントが正常にクリーンアップされた後は、次のコマンドを実行します。
 
-    ```
+    ```Console
     LocalAgentCLI.exe Install <path of localagent-config.json>
     ```
 

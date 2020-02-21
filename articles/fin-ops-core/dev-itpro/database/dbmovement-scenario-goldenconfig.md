@@ -1,9 +1,9 @@
 ---
 title: ゴールデン コンフィギュレーション プロモーション
-description: このトピックでは、Finance and Operations の ゴールデン コンフィギュレーション プロモーション について説明します。
+description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 75eddfb4b4195b960bc03bc5fab5d0c8be0bdd9a
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: c97e4d8d980688c61d1ef7a487a51e9cf500206b
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824507"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029426"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -67,7 +67,7 @@ ms.locfileid: "2824507"
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、アプリケーション オブジェクト サーバー (AOS) により内部で使用されています。 これは無視できます。 |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 
-### <a name="if-youre-running-retail-components-document-encrypted-and-environment-specific-values"></a>小売コンポーネントを実行している場合は、暗号化された、環境固有の値を文書化します。
+### <a name="if-youre-running-commerce-components-document-encrypted-and-environment-specific-values"></a>コマース コンポーネントを実行している場合、暗号化された値および環境固有の値を文書化する
 
 次のページの値は、環境固有またはデータベースで暗号化されています。 したがって、インポートされた値はすべて正しくありません。
 
@@ -78,7 +78,7 @@ ms.locfileid: "2824507"
 
 ソース SQL Server データベースをエクスポートする前に、データベース ユーザーを削除する必要があるため、そのデータベースのコピーを作成してください。 元のデータベースを修正する代わりに、コピーで作業することができます。 次のスクリプトは、既定の AxDB データベースをバックアップし、それを新しいインスタンス名に変更して同じインスタンスに復元します。 このスクリプトを使用するには、最初に D:\\backups のパスが存在することを確認します。
 
-```
+```sql
 BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
 NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
 GO
@@ -99,7 +99,7 @@ NOUNLOAD, STATS = 5
 
 データベースのエクスポートとインポートに成功するには、これらすべての変更が必要です。
 
-```
+```sql
 update sysglobalconfiguration
 set value = 'SQLAZURE'
 where name = 'BACKENDDB'
@@ -130,7 +130,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 > [!IMPORTANT]
 > 140 フォルダに現在のバージョンが反映されます。 サンドボックス環境で使用可能なバージョンを使用する必要があります。 したがって、開発環境に [Microsoft SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/library/mt238290.aspx)をインストールする必要が生じる場合があります。
 
-```
+```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
 ```
@@ -166,7 +166,7 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 3. **サンドボックスから実稼働環境** ダイアログ ボックスで、次の手順に従います。
 
     1. **ソース環境名称** フィールドで、データベースのコピー元のサンドボックス環境を選択します。
-    2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信してください。
+    2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 4 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信することをお勧めします。
     3. 下部にあるチェック ボックスをオンにして、条項に同意します。
 
 ## <a name="reconfigure-environment-specific-settings"></a>環境の固有の設定を変更

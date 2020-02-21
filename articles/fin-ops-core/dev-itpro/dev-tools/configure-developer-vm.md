@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23361
 ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f584e0444b60cdf7dbd01a4b2f0ca16bb00b210
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c1dbcb645b21e9344f9c5adf79292cc6c33be5d7
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191701"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983666"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 

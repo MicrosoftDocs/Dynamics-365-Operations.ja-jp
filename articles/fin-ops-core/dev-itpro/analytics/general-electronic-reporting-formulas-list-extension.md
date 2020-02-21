@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dd3d0b01dafc536f760af2ffd2cb97feae92a27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4a64d6929bbe316ea0eacd9684cb28cf9034ca20
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770045"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026172"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
@@ -57,7 +57,7 @@ ms.locfileid: "2770045"
 
 次に例を示します。
 
-```
+```xpp
 /// <summary>
 /// Returns the characters from the middle of a text string, given a starting position and length.
 /// </summary>

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23921
 ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4208f824473080461e260321f40a3960ac359e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 81c5bfa79dda5fc96b0733bdbef889cbf0106310
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811723"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983686"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
@@ -53,7 +53,7 @@ X++ コードをデバッグするには、次の手順を実行します。
 
    [![ホバー](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Finance and Operations アプリケーションに固有の、もう 1 つのツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示**メニューで、**情報ログ**をクリックします。 
+   Finance and Operations アプリケーションに固有である別のツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示**メニューで、**情報ログ**をクリックします。 
 
    [![情報ログ](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b230906ea479f09320852c642fdcf13dc701ddc1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 06bf0415c0120014a22dcacbb30bf22056e1d1ad
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191602"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026199"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 
@@ -37,7 +37,9 @@ ms.locfileid: "2191602"
 
 ### <a name="syntax"></a>構文
 
-    container conDel(container container, int start, int number)
+```xpp
+container conDel(container container, int start, int number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -53,19 +55,23 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void conDelExample(Args _args)
-    {
-            container c = ["Hello world", 1, 3.14];
-            // Deletes the first two items from the container.
-            c = conDel(c, 1, 2);
-    }
+```xpp
+static void conDelExample(Args _args)
+{
+    container c = ["Hello world", 1, 3.14];
+        // Deletes the first two items from the container.
+        c = conDel(c, 1, 2);
+}
+```
 
 ## <a name="confind"></a>conFind
 コンテナー内の最初の要素または一連の要素を検索します。
 
 ### <a name="syntax"></a>構文
 
-    int conFind (container container, anytype element,... )
+```xpp
+int conFind (container container, anytype element,... )
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -84,23 +90,27 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void conFindExample(Args _args)
-    {
-            container c = ["item1", "item2", "item3"];
-            int i;
-            int j;
-            i = conFind(c, "item2");
-            j = conFind(c, "item4");
-            print "Position of 'item2' in container is " + int2Str(i);
-            print "Position of 'item4' in container is " + int2Str(j);
-    }
+```xpp
+static void conFindExample(Args _args)
+{
+    container c = ["item1", "item2", "item3"];
+    int i;
+    int j;
+    i = conFind(c, "item2");
+    j = conFind(c, "item4");
+    print "Position of 'item2' in container is " + int2Str(i);
+    print "Position of 'item4' in container is " + int2Str(j);
+}
+```
 
 ## <a name="conins"></a>conIns
 コンテナーに 1 つまたは複数の要素を挿入します。
 
 ### <a name="syntax"></a>構文
 
-    container conIns (container container, int start, anytype element, ... )
+```xpp
+container conIns (container container, int start, anytype element, ... )
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -118,36 +128,42 @@ ms.locfileid: "2191602"
 
 コンテナーの最初の要素は、番号 **1** によって指定されます。. n 番目の要素の後に挿入するには、*開始*パラメーターは n+1 でなければなりません。 また、**+=** 演算子を使用して任意のタイプの値をコンテナに追加することができます。 たとえば、最初の 10 ループ反復処理の自乗値を含むコンテナーを作成するには、次のコードを使用します。
 
-    int i;
-    container c;
+```xpp
+int i;
+container c;
 
-    for (i = 1; i < = 10; i++)
-    {
-            c += i*i;
-    }
+for (i = 1; i < = 10; i++)
+{
+    c += i*i;
+}
+```
 
 ### <a name="example"></a>例
 
-    static void conInsExample(Args _arg)
-    {
-            container c;
-            int i;
+```xpp
+static void conInsExample(Args _arg)
+{
+    container c;
+    int i;
 
-            c = conIns(c,1,"item1");
-            c = conIns(c,2,"item2");
-            for (i = 1 ; i <= conLen(c) ; i++)
-            {
-                    // Prints the content of a container.
-                    print conPeek(c, i);
-            }
+    c = conIns(c,1,"item1");
+    c = conIns(c,2,"item2");
+    for (i = 1 ; i <= conLen(c) ; i++)
+    {
+        // Prints the content of a container.
+        print conPeek(c, i);
     }
+}
+```
 
 ## <a name="conlen"></a>conLen
 コンテナー内の要素の数を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int conLen(container container)
+```xpp
+int conLen(container container)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -161,22 +177,26 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void conLenExample(Args _arg)
-    {
-            container c;
-            int i;
+```xpp
+static void conLenExample(Args _arg)
+{
+    container c;
+    int i;
 
-            c = conins(["item1", "item2"], 1);
-            for (i = 1 ; i <= conLen(c) ; i++)
-            {
-                    print conPeek(c, i);
-            }
+    c = conins(["item1", "item2"], 1);
+    for (i = 1 ; i <= conLen(c) ; i++)
+    {
+            print conPeek(c, i);
     }
+}
+```
 
 ## <a name="connull"></a>conNull
 空のコンテナーを取得します。
 
-    container conNull()
+```xpp
+container conNull()
+```
 
 ### <a name="remarks"></a>備考
 
@@ -188,22 +208,26 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void conNullExample(Args _arg)
-    {
-            container c = ["item1", "item2", "item3"];
+```xpp
+static void conNullExample(Args _arg)
+{
+    container c = ["item1", "item2", "item3"];
 
-            print "Size of container is " + int2str(conLen(c));
-            // Set the container to null.
-            c = conNull();
-            print "Size of container after conNull() is " + int2Str(conLen(c));
-    }
+    print "Size of container is " + int2str(conLen(c));
+    // Set the container to null.
+    c = conNull();
+    print "Size of container after conNull() is " + int2Str(conLen(c));
+}
+```
 
 ## <a name="conpeek"></a>conPeek
 コンテナーから特定の要素を取得し、換算が必要な場合は別のデータ型に変換します。
 
 ### <a name="syntax"></a>構文
 
-    anytype conPeek(container container, int number)
+```xpp
+anytype conPeek(container container, int number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -218,44 +242,48 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void main(Args _args)
+```xpp
+static void main(Args _args)
+{
+    container cnI, cnJ;
+    int i, j;
+    anytype aty;
+    info("container cnI ...");
+    cnI = ["itemBlue", "itemYellow"];
+    for (i=1; i <= conLen(cnI); i++)
     {
-            container cnI, cnJ;
-            int i, j;
-            anytype aty;
-            info("container cnI ...");
-            cnI = ["itemBlue", "itemYellow"];
-            for (i=1; i <= conLen(cnI); i++)
-            {
-                    aty = conPeek(cnI, i);
-                    info(int2str(i) + " :  " + aty);
-            }
-
-            info("container cnJ ...");
-            cnJ = conIns(cnI, 2, "ItemInserted");
-            for (j=1; j <= conLen(cnJ); j++)
-            {
-                    aty = conPeek(cnJ, j);
-                    info(int2str(j) + " :  " + aty);
-            }
+        aty = conPeek(cnI, i);
+        info(int2str(i) + " :  " + aty);
     }
-    /***  Output pasted from InfoLog ...
-    Message (10:20:03 am)
-    container cnI ...
-    1 :  itemBlue
-    2 :  itemYellow
-    container cnJ ...
-    1 :  itemBlue
-    2 :  ItemInserted
-    3 :  itemYellow
-    ***/
+
+    info("container cnJ ...");
+    cnJ = conIns(cnI, 2, "ItemInserted");
+    for (j=1; j <= conLen(cnJ); j++)
+    {
+        aty = conPeek(cnJ, j);
+        info(int2str(j) + " :  " + aty);
+    }
+}
+/***  Output pasted from InfoLog ...
+Message (10:20:03 am)
+container cnI ...
+1 :  itemBlue
+2 :  itemYellow
+container cnJ ...
+1 :  itemBlue
+2 :  ItemInserted
+3 :  itemYellow
+***/
+```
 
 ## <a name="conpoke"></a>conPoke
 既存の要素を 1 つ以上を置換することでコンテナーを変更します。
 
 ### <a name="syntax"></a>構文
 
-    container conPoke(container container, int start, anytype element, ...)
+```xpp
+container conPoke(container container, int start, anytype element, ...)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -275,24 +303,25 @@ ms.locfileid: "2191602"
 
 ### <a name="example"></a>例
 
-    static void conPokeExample(Args _arg)
+```xpp
+static void conPokeExample(Args _arg)
+{
+    container c1 = ["item1", "item2", "item3"];
+    container c2;
+    int i;
+    void conPrint(container c)
     {
-            container c1 = ["item1", "item2", "item3"];
-            container c2;
-            int i;
-            void conPrint(container c)
-            {
-                    for (i = 1 ; i <= conLen(c) ; i++)
-                    {
-                            print conPeek(c, i);
-                    }
-            }
-
-            conPrint(c1);
-            c2 = conPoke(c1, 2, "PokedItem");
-            print "";
-            conPrint(c2);
+        for (i = 1 ; i <= conLen(c) ; i++)
+        {
+            print conPeek(c, i);
+        }
     }
 
+    conPrint(c1);
+    c2 = conPoke(c1, 2, "PokedItem");
+    print "";
+    conPrint(c2);
+}
+```
 
 
