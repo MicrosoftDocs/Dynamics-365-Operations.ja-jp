@@ -1,0 +1,8 @@
+## <a name="sales-tax-ledger-posting-groups-v2-to-msdyn_taxpostinggroups"></a><span data-ttu-id="0a42e-101">消費税元帳転記グループ V2 を msdyn_taxpostinggroups へ</span><span class="sxs-lookup"><span data-stu-id="0a42e-101">Sales tax ledger posting groups V2 to msdyn_taxpostinggroups</span></span>
+
+<span data-ttu-id="0a42e-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="0a42e-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="0a42e-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="0a42e-103">Finance and Operations field</span></span> | <span data-ttu-id="0a42e-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="0a42e-104">Map type</span></span> | <span data-ttu-id="0a42e-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="0a42e-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="0a42e-106">既定値</span><span class="sxs-lookup"><span data-stu-id="0a42e-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="0a42e-107">TAXPOSTINGGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="0a42e-107">TAXPOSTINGGROUPCODE</span></span> | = | <span data-ttu-id="0a42e-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="0a42e-108">msdyn_name</span></span> | 
+<span data-ttu-id="0a42e-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="0a42e-109">DESCRIPTION</span></span> | = | <span data-ttu-id="0a42e-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="0a42e-110">msdyn_description</span></span> | 

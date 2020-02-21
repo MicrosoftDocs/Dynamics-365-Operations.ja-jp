@@ -1,0 +1,2 @@
+ [!IMPORTANT]
+> <span data-ttu-id="33952-101">このトピックに記載されている機能は、プライベート プレビュー リリースの一部として、対象とするユーザーが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="33952-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="33952-102">コンテンツおよび機能は、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="33952-102">The content and the functionality are subject to change.</span></span> 

@@ -1,0 +1,9 @@
+## <a name="chart-of-accounts-to-msdyn_chartofaccountses"></a><span data-ttu-id="ac915-101">勘定科目表を msdyn_chartofaccountses へ</span><span class="sxs-lookup"><span data-stu-id="ac915-101">Chart of accounts to msdyn_chartofaccountses</span></span>
+
+<span data-ttu-id="ac915-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="ac915-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="ac915-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="ac915-103">Finance and Operations field</span></span> | <span data-ttu-id="ac915-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="ac915-104">Map type</span></span> | <span data-ttu-id="ac915-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="ac915-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="ac915-106">既定値</span><span class="sxs-lookup"><span data-stu-id="ac915-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="ac915-107">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="ac915-107">DESCRIPTION</span></span> | = | <span data-ttu-id="ac915-108">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="ac915-108">msdyn_description</span></span> | 
+<span data-ttu-id="ac915-109">MAINACCOUNTMASK</span><span class="sxs-lookup"><span data-stu-id="ac915-109">MAINACCOUNTMASK</span></span> | = | <span data-ttu-id="ac915-110">msdyn_mainaccountmask</span><span class="sxs-lookup"><span data-stu-id="ac915-110">msdyn_mainaccountmask</span></span> | 
+<span data-ttu-id="ac915-111">CHARTOFACCOUNTS</span><span class="sxs-lookup"><span data-stu-id="ac915-111">CHARTOFACCOUNTS</span></span> | = | <span data-ttu-id="ac915-112">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="ac915-112">msdyn_name</span></span> | 

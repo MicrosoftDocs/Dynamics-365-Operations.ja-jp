@@ -1,0 +1,7 @@
+## <a name="configurations-to-msdyn_productconfigurations"></a><span data-ttu-id="25286-101">コンフィギュレーションを msdyn_productconfigurations へ</span><span class="sxs-lookup"><span data-stu-id="25286-101">Configurations to msdyn_productconfigurations</span></span>
+
+<span data-ttu-id="25286-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="25286-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="25286-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="25286-103">Finance and Operations field</span></span> | <span data-ttu-id="25286-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="25286-104">Map type</span></span> | <span data-ttu-id="25286-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="25286-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="25286-106">既定値</span><span class="sxs-lookup"><span data-stu-id="25286-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="25286-107">CONFIGURATIONID</span><span class="sxs-lookup"><span data-stu-id="25286-107">CONFIGURATIONID</span></span> | >> | <span data-ttu-id="25286-108">msdyn_productconfiguration</span><span class="sxs-lookup"><span data-stu-id="25286-108">msdyn_productconfiguration</span></span> | 

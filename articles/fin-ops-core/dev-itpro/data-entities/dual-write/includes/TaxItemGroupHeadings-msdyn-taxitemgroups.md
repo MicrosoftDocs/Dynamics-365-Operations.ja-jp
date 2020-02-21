@@ -1,0 +1,8 @@
+## <a name="item-sales-tax-group-to-msdyn_taxitemgroups"></a><span data-ttu-id="a0481-101">品目消費税グループを msdyn_taxitemgroups へ</span><span class="sxs-lookup"><span data-stu-id="a0481-101">Item sales tax group to msdyn_taxitemgroups</span></span>
+
+<span data-ttu-id="a0481-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="a0481-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="a0481-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="a0481-103">Finance and Operations field</span></span> | <span data-ttu-id="a0481-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="a0481-104">Map type</span></span> | <span data-ttu-id="a0481-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="a0481-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="a0481-106">既定値</span><span class="sxs-lookup"><span data-stu-id="a0481-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="a0481-107">TAXITEMGROUP</span><span class="sxs-lookup"><span data-stu-id="a0481-107">TAXITEMGROUP</span></span> | = | <span data-ttu-id="a0481-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="a0481-108">msdyn_name</span></span> | 
+<span data-ttu-id="a0481-109">NAME</span><span class="sxs-lookup"><span data-stu-id="a0481-109">NAME</span></span> | = | <span data-ttu-id="a0481-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="a0481-110">msdyn_description</span></span> | 

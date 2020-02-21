@@ -1,0 +1,8 @@
+## <a name="all-products-to-msdyn_globalproducts"></a><span data-ttu-id="2e5bb-101">すべての製品を msdyn_globalproducts へ</span><span class="sxs-lookup"><span data-stu-id="2e5bb-101">All products to msdyn_globalproducts</span></span>
+
+<span data-ttu-id="2e5bb-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="2e5bb-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="2e5bb-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="2e5bb-103">Finance and Operations field</span></span> | <span data-ttu-id="2e5bb-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="2e5bb-104">Map type</span></span> | <span data-ttu-id="2e5bb-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="2e5bb-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="2e5bb-106">既定値</span><span class="sxs-lookup"><span data-stu-id="2e5bb-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="2e5bb-107">PRODUCTNAME</span><span class="sxs-lookup"><span data-stu-id="2e5bb-107">PRODUCTNAME</span></span> | >> | <span data-ttu-id="2e5bb-108">msdyn_productname</span><span class="sxs-lookup"><span data-stu-id="2e5bb-108">msdyn_productname</span></span> | 
+<span data-ttu-id="2e5bb-109">PRODUCTNUMBER</span><span class="sxs-lookup"><span data-stu-id="2e5bb-109">PRODUCTNUMBER</span></span> | >> | <span data-ttu-id="2e5bb-110">msdyn_productnumber</span><span class="sxs-lookup"><span data-stu-id="2e5bb-110">msdyn_productnumber</span></span> | 

@@ -1,0 +1,8 @@
+## <a name="product-category-hierarchies-to-msdyn_productcategoryhierarchies"></a><span data-ttu-id="d4830-101">製品カテゴリ階層を msdyn_productcategoryhierarchies へ</span><span class="sxs-lookup"><span data-stu-id="d4830-101">Product category hierarchies to msdyn_productcategoryhierarchies</span></span>
+
+<span data-ttu-id="d4830-102">このテンプレートは、Finance and Operations アプリと Common Data Service 間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="d4830-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="d4830-103">Finance and Operations フィールド</span><span class="sxs-lookup"><span data-stu-id="d4830-103">Finance and Operations field</span></span> | <span data-ttu-id="d4830-104">タイプのマッピング</span><span class="sxs-lookup"><span data-stu-id="d4830-104">Map type</span></span> | <span data-ttu-id="d4830-105">その他の Dynamics 365 フィールド</span><span class="sxs-lookup"><span data-stu-id="d4830-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="d4830-106">既定値</span><span class="sxs-lookup"><span data-stu-id="d4830-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="d4830-107">HIERARCHYNAME</span><span class="sxs-lookup"><span data-stu-id="d4830-107">HIERARCHYNAME</span></span> | = | <span data-ttu-id="d4830-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="d4830-108">msdyn_name</span></span> | 
+<span data-ttu-id="d4830-109">HIERARCHYDESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="d4830-109">HIERARCHYDESCRIPTION</span></span> | = | <span data-ttu-id="d4830-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="d4830-110">msdyn_description</span></span> | 

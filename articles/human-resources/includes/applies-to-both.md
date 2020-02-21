@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="aab89-101">この記事は、Dynamics 365 Human Resources および Dynamics 365 Finance の **人事管理** ワークスペースの両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="aab89-101">This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance.</span></span>

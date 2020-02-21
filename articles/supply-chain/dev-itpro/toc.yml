@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Common Data Service の組織階層
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Common Data Service での会社の概念
+                - name: Common Data Services での会社の概念
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: 統合された顧客マスター
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -142,15 +142,15 @@
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operations の顧客への Sales の勘定の直接同期
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Sales 製品への Finance and Operations の製品の直接同期
+                    - name: Sales の 製品への Finance and Operations の製品の直接同期
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: 販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期
+                    - name: Finance and Operations への Sales の販売見積書ヘッダーおよび明細行の直接同期
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: 販売注文の Sales と Finance and Operations の間の直接同期
+                    - name: Sales と Finance and Operations 間での販売注文の直接同期
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: 売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
+                    - name: Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Field Service との統合のコンフィギュレーション
                   items:
@@ -158,7 +158,7 @@
                       href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operations の製品と Field Service の製品との同期
                       href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Field Service のワーク オーダーと Finance and Operations の販売注文との同期
+                    - name: Field Service の作業指示書と Finance and Operations の販売注文との同期
                       href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
                       href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -172,7 +172,7 @@
                       href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operations から Field Service への倉庫の同期
                       href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
+                    - name: Field Service から Finance and Operations への作業指示書の同期
                       href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Project Service Automation 統合のコンフィギュレーション
                   items:
@@ -330,13 +330,13 @@
               href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Azure Resource Manager の研修の完了
           href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Azure ExpressRoute および Finance and Operations の購入
+        - name: Azure ExpressRoute および Finance and Operations
           href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Finance and Operations のアーキテクチャ
+        - name: Finance and Operations アーキテクチャ
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: クラウド環境への更新プログラムの適用
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+        - name: クラウドでホストされている小売チャネル コンポーネントへの更新プログラムと拡張機能の適用
           href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Retail Cloud Scale Unit の初期化
           href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -472,7 +472,7 @@
           href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: モデルとパッケージ
           href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Finance and Operations のプロジェクト タイプ
+        - name: Finance and Operations プロジェクト タイプ
           href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Visual Studio 用のツールおよびアドイン
           href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: 機密データへのアクセスを管理
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Talent を使用した個人データ要求への対応
+        - name: Human Resources を使用した個人データ要求への対応
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2012 の個人データ要求への対応
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1210,13 +1210,13 @@
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Dynamics 365 のサポートの概要
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
-    - name: 中国の 21Vianet で運用される Finance and Operations に対するサポートの取得
+    - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: プレミア サポート チケットの記録
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Dynamics サービス エンジニアリング チームへの要求の送信
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Finance and Operations の技術サポートの設定
+    - name: Finance and Operations のテクニカル サポートの設定
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: 予定された保守ウィンドウに関するよく寄せられる質問
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1340,7 +1340,7 @@
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: AX 2009 からのデータの移行
       items:
-        - name: AX 2009 から Finance and Operations へのデータ移行
+        - name: AX 2009 から Finance and Operations へのデータの移行
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2009 の移行 － データ移行ツールのインストール
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
