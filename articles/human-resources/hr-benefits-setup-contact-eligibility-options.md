@@ -1,0 +1,49 @@
+---
+title: 個人の連絡先適格性オプションのコンフィギュレーション
+description: Microsoft Dynamics 365 Human Resources にて、個人の連絡先の適格性オプションをコンフィギュレーションします。 個人の連絡先は、受益者または扶養家族とすることができます。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-human-resources
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: 7521
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: a50c5e54d224a2f8607284eb105381ffb6ef7ad9
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3009697"
+---
+# <a name="configure-personal-contact-eligibility-options"></a><span data-ttu-id="fdb9b-104">個人の連絡先適格性オプションのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="fdb9b-104">Configure personal contact eligibility options</span></span>
+
+[!include [banner](includes/preview-feature.md)]
+
+<span data-ttu-id="fdb9b-105">この記事では、Microsoft Dynamics 365 Human Resources で給付金で使用する個人の連絡先のタイプをコンフィギュレーションする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-105">This article shows you how to configure types of personal contacts to use in benefits in Microsoft Dynamics 365 Human Resources.</span></span> <span data-ttu-id="fdb9b-106">個人の連絡先は、受益者または扶養家族とすることができます。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-106">Personal contacts can be beneficiaries or dependents.</span></span> 
+
+1. <span data-ttu-id="fdb9b-107">**給付金管理**ワーク スペースの**設定**で、**個人の連絡先適格性オプション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-107">In the **Benefits management** workspace, under **Setup**, select **Personal contact eligibility options**.</span></span>
+
+2. <span data-ttu-id="fdb9b-108">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-108">Select **New**.</span></span>
+
+3. <span data-ttu-id="fdb9b-109">次のフィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-109">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="fdb9b-110">フィールド</span><span class="sxs-lookup"><span data-stu-id="fdb9b-110">Field</span></span> | <span data-ttu-id="fdb9b-111">説明</span><span class="sxs-lookup"><span data-stu-id="fdb9b-111">Description</span></span> |
+   | --- | --- |
+   | <span data-ttu-id="fdb9b-112">**適格性オプション**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-112">**Eligibility option**</span></span> | <span data-ttu-id="fdb9b-113">適格性オプションを識別する固有の適格性オプション名またはコード。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-113">A unique eligibility option name or code to identify the eligibility option.</span></span> |
+   | <span data-ttu-id="fdb9b-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-114">**Description**</span></span> | <span data-ttu-id="fdb9b-115">適格性オプションの簡単な説明。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-115">A brief description of the eligibility option.</span></span> |
+   | <span data-ttu-id="fdb9b-116">**連絡先適格性コード**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-116">**Contact eligibility code**</span></span> | <span data-ttu-id="fdb9b-117">個人の適格性オプションを最もよく表しているシステムコードです。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-117">The system code that best describes the personal eligibility option.</span></span> <span data-ttu-id="fdb9b-118">次から選択できます。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-118">You can choose from:</span></span> <ul><li><span data-ttu-id="fdb9b-119">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="fdb9b-119">Relationship</span></span></li><li><span data-ttu-id="fdb9b-120">学生</span><span class="sxs-lookup"><span data-stu-id="fdb9b-120">Student</span></span></li><li><span data-ttu-id="fdb9b-121">規定年齢を超えた被扶養者</span><span class="sxs-lookup"><span data-stu-id="fdb9b-121">Overage dependent</span></span></li><li><span data-ttu-id="fdb9b-122">規定年齢を過ぎた無効な被扶養者</span><span class="sxs-lookup"><span data-stu-id="fdb9b-122">Over-aged disabled dependent</span></span></li></ul> |
+   | <span data-ttu-id="fdb9b-123">**ステータス**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-123">**Status**</span></span> | <span data-ttu-id="fdb9b-124">適格性オプションの状態。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-124">The status of the eligibility option.</span></span> <span data-ttu-id="fdb9b-125">適格性オプション状態が無効に設定されている場合は、個人の連絡先に対して、その個人連絡先の適格性オプションを選択することはできません。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-125">If the status for an eligibility option is set to inactive, then you can’t select that personal contact eligibility option for personal contacts.</span></span> |
+   | <span data-ttu-id="fdb9b-126">**リレーションシップ**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-126">**Relationship**</span></span> | <span data-ttu-id="fdb9b-127">個人の連絡先と従業員の関係を指定します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-127">Specifies the relationship between the personal contact and the employee.</span></span> <span data-ttu-id="fdb9b-128">このフィールドは、連絡先の適格性コードがリレーションシップに設定されている場合にのみ有効になります。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-128">This field is only active if the contact eligibility code is set to Relationship.</span></span> |
+   | <span data-ttu-id="fdb9b-129">**年齢**</span><span class="sxs-lookup"><span data-stu-id="fdb9b-129">**Age**</span></span> | <span data-ttu-id="fdb9b-130">給付金プランの受給資格を持つ個人連絡先の最大年齢。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-130">The maximum age of an eligible personal contact for the benefit plan.</span></span> <span data-ttu-id="fdb9b-131">このフィールドは、リレーションシップを選択した場合にのみ有効になります。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-131">This field is only active if you select a relationship.</span></span> <span data-ttu-id="fdb9b-132">この年齢は、個人の連絡先の計算された年齢と比較されます。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-132">This age is compared with the calculated age of the personal contact.</span></span> <span data-ttu-id="fdb9b-133">計算された年齢: (補充日 – 個人連絡先の生年月日 / 365)。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-133">Calculated age is: (Coverage date – personal contact birth date / 365).</span></span> <span data-ttu-id="fdb9b-134">この数値は、常に整数です。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-134">This number is always an integer.</span></span> |
+
+4. <span data-ttu-id="fdb9b-135">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="fdb9b-135">Select **Save**.</span></span> 

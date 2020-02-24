@@ -1,0 +1,136 @@
+---
+title: オンライン チャネルの設定
+description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいオンライン チャネルを作成する方法について説明します。
+author: samjarawan
+manager: annbe
+ms.date: 01/27/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: samjar
+ms.search.validFrom: 2020-01-20
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002430"
+---
+# <a name="set-up-an-online-channel"></a><span data-ttu-id="f06e6-103">オンライン チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-103">Set up an online channel</span></span>
+
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="f06e6-104">このトピックでは、Microsoft Dynamics 365 Commerce に新しいオンライン チャネルを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-104">This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="f06e6-105">概要</span><span class="sxs-lookup"><span data-stu-id="f06e6-105">Overview</span></span>
+
+<span data-ttu-id="f06e6-106">Dynamics 365 Commerce は複数の小売チャンネルをサポートします。</span><span class="sxs-lookup"><span data-stu-id="f06e6-106">Dynamics 365 Commerce supports multiple retail channels.</span></span> <span data-ttu-id="f06e6-107">これらの小売チャンネルには、オンライン ストア、コール センター、および小売用店舗 (従来型の店舗とも呼ばれる) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f06e6-107">These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores).</span></span> <span data-ttu-id="f06e6-108">オンライン ストアは、小売店舗に加えて小売業者のオンライン ストアから製品を購入するオプションを顧客に提供します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-108">Online stores give customers the option of purchasing products from the retailer's online store in addition to its retail stores.</span></span>
+
+<span data-ttu-id="f06e6-109">Commerce でオンライン ストアを作成するには、最初にオンライン チャネルを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f06e6-109">To create an online store in Commerce, you must first create an online channel.</span></span> 
+
+<span data-ttu-id="f06e6-110">新しいオンライン チャネルを作成する前に、[チャネル設定の前提条件](channels-prerequisites.md) を完了していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f06e6-110">Before you create a new online channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).</span></span>
+
+## <a name="create-and-configure-a-new-online-channel"></a><span data-ttu-id="f06e6-111">新しいオンライン チャネルを作成およびコンフィギュレーションする</span><span class="sxs-lookup"><span data-stu-id="f06e6-111">Create and configure a new online channel</span></span>
+
+<span data-ttu-id="f06e6-112">新しいオンライン チャネルを作成してコンフィギュレーションするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f06e6-112">To create and configure a new online channel, follow these steps.</span></span>
+
+1. <span data-ttu-id="f06e6-113">ナビゲーション ウィンドウで、**モジュール \> チャネル \> オンライン ストア**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-113">In the navigation pane, go to **Modules \> Channels \> Online Stores**.</span></span>
+1. <span data-ttu-id="f06e6-114">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-114">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="f06e6-115">**名前**フィールドで、新しいチャネルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-115">In the **Name** field, provide a name for the new channel.</span></span>
+1. <span data-ttu-id="f06e6-116">**法人**ドロップダウンで、適切な法人を入力します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-116">In the **Legal entity** drop-down, enter the appropriate legal entity.</span></span>
+1. <span data-ttu-id="f06e6-117">**倉庫**ドロップダウンで、適切な倉庫を入力します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-117">In the **Warehouse** drop-down, enter the appropriate warehouse.</span></span>
+1. <span data-ttu-id="f06e6-118">**店舗タイム ゾーン** フィールドで、適切なタイム ゾーンを選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-118">In the **Store time zone** field, select the appropriate time zone.</span></span>
+1. <span data-ttu-id="f06e6-119">**通貨**フィールドで、適切な通貨を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-119">In the **Currency** field, select the appropriate currency.</span></span>
+1. <span data-ttu-id="f06e6-120">**既定の顧客**フィールドで、有効な既定の顧客を指定します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-120">In the **Default customer** field, provide a valid default customer.</span></span>
+1. <span data-ttu-id="f06e6-121">**顧客アドレス帳**フィールドで、有効なアドレス帳を指定します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-121">In the **Customer address book** field, provide a valid address book.</span></span>
+1. <span data-ttu-id="f06e6-122">**機能プロファイル** フィールドで、該当する場合は機能プロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-122">In the **Functionality profile** field, select a functionality profile if applicable.</span></span>
+1. <span data-ttu-id="f06e6-123">**電子メール通知プロファイル** フィールドに、有効な電子メール通知プロファイルを指定します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-123">In the **Email notification profile** field, provide a valid email notification profile.</span></span>
+1. <span data-ttu-id="f06e6-124">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-124">On the action pane, select **Save**.</span></span>
+
+<span data-ttu-id="f06e6-125">次の図は、新しいオンライン チャネルの作成を示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-125">The following image shows the creation of a new online channel.</span></span>
+
+![新しいオンライン チャネル](media/channel-setup-online-1.png)
+
+<span data-ttu-id="f06e6-127">次の図は、オンライン チャネルの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-127">The following image shows an example online channel.</span></span>
+
+![オンライン チャネルの例](media/channel-setup-online-2.png)
+
+## <a name="set-up-languages"></a><span data-ttu-id="f06e6-129">言語の設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-129">Set up languages</span></span>
+
+<span data-ttu-id="f06e6-130">E コマース サイトで複数の言語をサポートする場合は、**言語**セクションを展開し、必要に応じて追加の言語を追加します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-130">If your e-Commerce site will support multiple languages, expand the **Languages** section and add additional languages as needed.</span></span>
+
+## <a name="set-up-payment-account"></a><span data-ttu-id="f06e6-131">支払勘定の設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-131">Set up payment account</span></span>
+
+<span data-ttu-id="f06e6-132">**支払勘定**セクション内から、サードパーティの支払プロバイダーを追加できます。</span><span class="sxs-lookup"><span data-stu-id="f06e6-132">From within the **Payment account** section, you can add a third-party payment provider.</span></span> <span data-ttu-id="f06e6-133">Adyen 支払コネクタ設定の詳細については、[Adyen 向け Dynamics 365 Payment Connector](../retail/dev-itpro/adyen-connector.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f06e6-133">For information on settting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).</span></span>
+
+## <a name="additional-channel-set-up"></a><span data-ttu-id="f06e6-134">追加チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-134">Additional channel set up</span></span>
+
+<span data-ttu-id="f06e6-135">オンライン チャネルの設定に必要な追加タスクには、支払方法、荷渡方法、およびフルフィルメント グループの割り当ての設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-135">Additional tasks required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.</span></span>
+
+<span data-ttu-id="f06e6-136">次の図は、**設定**タブの**荷渡方法**、**支払方法**、および**フルフィルメント グループの割り当て**の設定オプションを示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-136">The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.</span></span>
+
+![追加のオンライン チャネル設定アクション](media/channel-setup-online-3.png)
+
+### <a name="set-up-payment-methods"></a><span data-ttu-id="f06e6-138">支払方法の設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-138">Set up payment methods</span></span>
+
+<span data-ttu-id="f06e6-139">支払方法を設定するには、このチャネルでサポートされている各支払タイプに対して、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f06e6-139">To set up payment methods, for each payment type supported on this channel follow these steps.</span></span>
+
+1. <span data-ttu-id="f06e6-140">アクション ウィンドウで、**設定**タブを選択し、**支払方法**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-140">On the action pane, select the **Set Up** tab, then select **Payment methods**.</span></span>
+1. <span data-ttu-id="f06e6-141">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-141">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="f06e6-142">ナビゲーション ウィンドウで、目的の支払方法を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-142">In the navigation pane, select a desired payment method.</span></span>
+1. <span data-ttu-id="f06e6-143">**全般**セクションで、**操作名**を指定し、その他の必要な設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-143">In the **General** section, provide an **Operation name** and configure any other desired settings.</span></span>
+1. <span data-ttu-id="f06e6-144">支払タイプに必要に応じて追加の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-144">Configure any additional settings as required for the payment type.</span></span>
+1. <span data-ttu-id="f06e6-145">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-145">On the action pane, select **Save**.</span></span>
+
+<span data-ttu-id="f06e6-146">次の図は、現金支払い方法の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-146">The following image shows an example of a cash payment method.</span></span>
+
+![支払方法の例](media/channel-setup-retail-5.png)
+
+### <a name="set-up-modes-of-delivery"></a><span data-ttu-id="f06e6-148">荷渡方法の設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-148">Set up modes of delivery</span></span>
+
+<span data-ttu-id="f06e6-149">構成されたデリバリー モードは、**アクション ウィンドウ**の**設定**タブで**デリバリー モード**を選択することによって確認できます。</span><span class="sxs-lookup"><span data-stu-id="f06e6-149">You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.</span></span>  
+
+<span data-ttu-id="f06e6-150">デリバリー モードを変更または追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f06e6-150">To change or add a mode of delivery, follow these steps.</span></span>
+
+1. <span data-ttu-id="f06e6-151">ナビゲーション ウィンドウで、**モジュール \> 在庫管理 \> デリバリー モード**に移動します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-151">In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.</span></span>
+1. <span data-ttu-id="f06e6-152">アクション ウィンドウで、**新規**を選択して新しいデリバリー モードを作成するか、既存のモードを選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-152">On the action pane, select **New** to create a new mode of delivery, or select an existing mode.</span></span>
+1. <span data-ttu-id="f06e6-153">**小売チャネル** セクションで、**行の追加**を選択してチャネルを追加します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-153">In the **Retail channels** section, select **Add line** to add the channel.</span></span> <span data-ttu-id="f06e6-154">各チャネルを個別に追加する代わりに、組織ノードを使用してチャネルを追加すると、チャネルの追加を効率化できます。</span><span class="sxs-lookup"><span data-stu-id="f06e6-154">Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.</span></span>
+
+<span data-ttu-id="f06e6-155">次の図は、デリバリー モードの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-155">The following image shows an example of a mode of delivery.</span></span>
+
+![荷渡方法の設定](media/channel-setup-retail-7.png)
+
+### <a name="set-up-a-fulfillment-group-assignment"></a><span data-ttu-id="f06e6-157">フルフィルメント グループの割り当ての設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-157">Set up a fulfillment group assignment</span></span>
+
+<span data-ttu-id="f06e6-158">フルフィルメント グループの割り当てを設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f06e6-158">To set up a fulfillment group assignment, follow these steps.</span></span>
+
+1. <span data-ttu-id="f06e6-159">アクション ウィンドウで、**設定**タブを選択し、**フルフィルメント グループの割り当て**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-159">On the action pane, select the **Set up** tab, then select **Fulfillment group assignment**.</span></span>
+1. <span data-ttu-id="f06e6-160">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-160">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="f06e6-161">**フルフィルメント グループ** ドロップダウン リストで、フルフィルメント グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-161">In the **Fulfillment group** drop-down list, select a fulfillment group.</span></span>
+1. <span data-ttu-id="f06e6-162">**説明**ドロップダウン リストに、説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-162">In the **Description** drop-down list, enter a description.</span></span>
+1. <span data-ttu-id="f06e6-163">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f06e6-163">On the action pane, select **Save**.</span></span>
+
+<span data-ttu-id="f06e6-164">次の図は、フルフィルメント グループの割り当ての設定の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f06e6-164">The following image shows an example of a fulfillment group assignment setup.</span></span>
+
+![フルフィルメント グループの割り当ての設定](media/channel-setup-retail-9.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="f06e6-166">追加リソース</span><span class="sxs-lookup"><span data-stu-id="f06e6-166">Additional resources</span></span>
+
+[<span data-ttu-id="f06e6-167">チャネルの概要</span><span class="sxs-lookup"><span data-stu-id="f06e6-167">Channels overview</span></span>](channels-overview.md)
+
+[<span data-ttu-id="f06e6-168">チャネル設定の前提条件</span><span class="sxs-lookup"><span data-stu-id="f06e6-168">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+
+[<span data-ttu-id="f06e6-169">小売チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-169">Set up a retail channel</span></span>](channel-setup-retail.md)
+
+[<span data-ttu-id="f06e6-170">コール センターのチャネルの設定</span><span class="sxs-lookup"><span data-stu-id="f06e6-170">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+
+[<span data-ttu-id="f06e6-171">Adyen 向け Dynamics 365 Payment Connector</span><span class="sxs-lookup"><span data-stu-id="f06e6-171">Dynamics 365 Payment Connector for Adyen</span></span>](../retail/dev-itpro/adyen-connector.md)
