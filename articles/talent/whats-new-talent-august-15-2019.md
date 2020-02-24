@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cfb122cd01fcaae331f61327966916388d70e923
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: cfefc6ea654a3012137a1135db5696da39a19048
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897836"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006012"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-13-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 8 月 13 日)
 
@@ -54,7 +54,7 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 29
 
-Finance and Operations のプラットフォーム更新プロフラム 29 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Finance and Operations のプラットフォーム更新プログラム 29 に関する詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プログラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 

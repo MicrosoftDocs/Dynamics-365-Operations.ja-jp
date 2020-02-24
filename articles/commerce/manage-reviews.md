@@ -3,7 +3,7 @@ title: 評価とレビューの管理
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価およびレビューの管理ツールを使用して、評価およびレビューを管理する方法について説明します。
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698029"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027245"
 ---
 # <a name="manage-ratings-and-reviews"></a>評価とレビューの管理
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の評価およびレビューの管理ツールを使用して、評価およびレビューを管理する方法について説明します。
@@ -39,6 +38,16 @@ Dynamics 365 Commerce は、Microsoft Azure 認知サービスを使用して、
 - 応答するか削除して、レビューをモデレートします。
 - 顧客の要求に応じて、顧客のレビューを削除します。
 - 評価とレビューの傾向を分析できるように、すべての製品の評価とレビューのデータを Microsoft Power BI テンプレートに一括インポートします。
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>評価およびレビューの管理機能へのアクセス
+
+E コマース サイト管理ツールの評価およびレビューの管理機能にアクセスするには、次の手順を実行します。
+
+1. [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com) にサイン インします。
+1. E コマースを初期化する環境を含むプロジェクトを開きます。
+1. **環境**セクションで、環境を選択します。
+1. **環境機能**で、**小売管理**を選択します。
+1. **E コマース**タブの**リンク**で、**E コマース サイト管理ツール**を選択します。
 
 ## <a name="read-a-review"></a>レビューの読み取り 
 

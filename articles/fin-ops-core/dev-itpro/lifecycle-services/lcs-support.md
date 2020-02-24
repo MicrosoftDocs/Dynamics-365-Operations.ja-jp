@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの入手
+title: Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
 description: このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
 author: kfend
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812138"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005519"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの入手
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
 
 [!include [banner](../includes/banner.md)]
 
@@ -90,6 +90,6 @@ CustomerSource へのサインインやアクセス、e ラーニング、検索
 
 ## <a name="additional-resources"></a>追加リソース
 - [Dynamics 365 Retail に関するサポートの利用](../../../retail/retail-support.md)
-- [Microsoft Dynamics 365 Talent に関するサポートの利用](../../../talent/talent-support.md)
-- Microsoft Dynamics サポート提供の詳細については、[Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md) を参照してください。
+- [Microsoft Dynamics 365 Human Resources に関するサポートの利用](../../../human-resources/hr-admin-troubleshooting-support.md)
+- Microsoft Dynamics サポート提供の詳細については、[Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)を参照してください。
 

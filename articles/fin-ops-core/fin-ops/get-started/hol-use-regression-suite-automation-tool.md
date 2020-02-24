@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811652"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025807"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool チュートリアルの使用
 
@@ -93,7 +93,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 - この機能を使用するには、RSAT のインストールホルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
 
-    ```
+    ```xml
     <add key="AddOperatorFieldsToExcelValidation" value="false" />
     ```
 
@@ -136,7 +136,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 - この機能を使用するには、RSAT のインストールホルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
 
-    ```
+    ```xml
     <add key="LogGeneration" value="false" />
     ```
 
@@ -155,7 +155,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 - この機能を使用するには、RSAT のインストール フォルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
 
-    ```
+    ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
@@ -196,7 +196,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 - Azure ポイントインタイム復元を使用して、第 1 層環境以外でテストを再実行します。
 - Excel 関数の **RANDOM** や **NOW** を使用して、独自の組み合わせを生成することはできますが、その作業量は大幅に多くなります。 次に例を示します。
 
-    ```
+    ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
     ```
 
@@ -227,13 +227,13 @@ RSAT は、**コマンド プロンプト** ウィンドウから呼び出すこ
 1. 管理者として**コマンド プロンプト** ウィンドウを開きます。
 2. このツールをインストール ディレクトリから実行します。
 
-    ```
+    ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
     ```
 
 3. すべてのコマンドのリスト
 
-    ```
+    ```Console
     C:\Program Files (x86)\Regression Suite Automation Tool>Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe help
 
     Usage:
@@ -275,7 +275,7 @@ RSAT は、**コマンド プロンプト** ウィンドウから呼び出すこ
 
 管理者モードで Microsoft Windows PowerShell Integrated Scripting Environment (ISE) を開き、**Untitled1.ps1** という名前のウィンドウに次のコードを貼り付けます。
 
-```
+```powershell
 param ( [int]$start = 1, [int]$nr = 1 )
 function UpdateCustomer
 {
@@ -314,7 +314,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 次の例は、オープン データ プロトコル (OData) 呼び出しを使用して、発注書のオーダー状態を検索します。 ステータスが**請求済**ではない場合、たとえば、請求書を転記する RSAT のテスト ケースを呼び出すことができます。
 
-```
+```xpp
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

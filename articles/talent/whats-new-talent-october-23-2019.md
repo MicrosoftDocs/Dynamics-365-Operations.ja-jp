@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896799"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006267"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Dynamics 365 Talent (2019 年 10 月 23 日) の新機能および変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "2896799"
 
 ### <a name="platform-update-30-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30
 
-詳細については、[Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30)を参照してください。
+詳細については、[Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30) を参照してください。
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>福利厚生の自由登録プレビュー機能を削除する
 
@@ -89,4 +89,4 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 機能は、すべてのリリースで追加および更新されます 機能管理エクスペリエンスは、各リリースで提供されている機能のリストを表示できるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。
 
-機能管理に伴う変更の詳細については、[機能管理の概要](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)を参照してください。
+機能管理に伴う変更の詳細については、[機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)を参照してください。

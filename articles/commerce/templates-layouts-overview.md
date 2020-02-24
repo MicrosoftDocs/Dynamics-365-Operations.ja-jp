@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914844"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002685"
 ---
 # <a name="templates-and-layouts-overview"></a>テンプレートとレイアウトの概要
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 テンプレートは、Microsoft Dynamics 365 Commerce ページ モデルの基本要素です。 サイト作成ワークフローにおける効率と一貫性を最大化することを目標としている場合は、Web サイトのテンプレートを活用するための方法を理解しておくことが重要です。 初期にテンプレート構造を決めておくことは重要で、日々の、季節ごとの、およびサイト全体のブランドを更新する際の費用と機敏性に大きく影響します。 適切に構成されたテンプレートには、他にも利点があります。 たとえば、サイト全体の検索エンジン最適化 (SEO) スコアを改善し、バグの数を最小限に抑えるのに役立ちます。

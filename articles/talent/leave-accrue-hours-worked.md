@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898622"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006081"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>作業時間に基づいて休暇を見越計上する
 
 ## <a name="overview"></a>概要
 
-時給の従業員を持つ組織は、組織での勤続年数ではなく、作業時間に基づいて休暇を付与することができます。 作業時間のデータは通常、時間と出勤に関するシステムに格納されます。 Talent: Core HR では、通常および残業の作業時間をインポートしたり、従業員の報酬の基準として使用することがことができます。
+時給の従業員を持つ組織は、組織での勤続年数ではなく、作業時間に基づいて休暇を付与することができます。 作業時間のデータは通常、時間と出勤に関するシステムに格納されます。 
 
 ## <a name="leave-plans"></a>休暇計画
 

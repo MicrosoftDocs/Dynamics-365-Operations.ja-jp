@@ -3,7 +3,7 @@ title: 仕入れ先の設定
 description: このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249398"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012448"
 ---
 # <a name="set-up-vendor-accounts"></a>仕入れ先の設定
 
@@ -88,7 +88,7 @@ Microsoft Office 365 の個人連絡先に仕入先の連絡先を追加でき�
 -   **請求書** – この仕入先に対して転記された請求書はありません。
 -   **すべて** – この仕入先は、すべてのトランザクション タイプに対して保留中です。 これらのトランザクション タイプには、購買要求、請求書や支払が含まれています。
 -   **支払** – この仕入先に対して生成する支払はありません。
--   **要求** – 購買要求のみを作成できます。 その他のトランザクションは作成されません。
+-   **要求** – 仕入先に対して購買要求を作成することはできませんし、仕入先が保留中に設定される前に既に作成された要求明細行は、発注書に変換できません。 ポリシーが発注書を自動的に作成するよう設定している場合、仕入先の要求明細行がキャンセルされます。
 -   **なし** – 仕入先は非アクティブにするために保留状態になりません。
 
 仕入先が保留中の場合、その理由、および保留中の状態が終了する日付を指定できます。 終了日を入力しなかった場合、仕入先の保留中状態は無期限に持続します。

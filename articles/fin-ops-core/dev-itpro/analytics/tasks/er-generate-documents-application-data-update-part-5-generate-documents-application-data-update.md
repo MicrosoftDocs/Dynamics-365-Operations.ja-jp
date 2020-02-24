@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d95feb3395c36f9cf8a23770dc3173377067d9b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184879"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026066"
 ---
 # <a name="generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントの生成
 
@@ -58,7 +58,7 @@ ms.locfileid: "2184879"
 6. [OK] をクリックします。
 
 ## <a name="review-er-format-executions-results"></a>ER 形式の実行の結果を確認する
-    * 生成した XML ファイルを確認します。  
+生成した XML ファイルを確認します。  
 1. ページを閉じます。
 2. [税] > [申告] > [対外貿易] > [イントラスタット] の順に移動します。
     * 生成した電子ドキュメントに含まれているイントラスタット トランザクションを含むこのフォームを開きます。  

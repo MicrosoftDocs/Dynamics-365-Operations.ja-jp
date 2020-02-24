@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: arotkin
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70604ed16d72e519724aeb2c33bd4a91a8b26c8c
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 8e35b0f71ff41bade266fb177e4500c7d124ed1f
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946039"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002662"
 ---
 # <a name="verify-page-content-accessibility"></a>ページ コンテンツのアクセシビリティの検証
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のページ コンテンツのアクセシビリティを検証する方法について説明します。

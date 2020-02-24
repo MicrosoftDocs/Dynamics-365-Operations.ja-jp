@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 8739bb1afdbea40c7f1c77064ee6b052516903d1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1b59fdbdd9ed46f42afd3e7310d2cd3f076edd95
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898205"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006382"
 ---
 # <a name="get-the-onboard-app"></a>Onboard アプリを入手する
 
@@ -32,7 +32,7 @@ ms.locfileid: "2898205"
 > [!NOTE]
 > 無料試用版には、ビジネス用電子メール アカウントが必要です。
 
-Onboard のサブスクリプションは、スタンドアロン アプリまたは Dynamics 365 Talent の一部として購入できます。 Talent は、Dynamics 365 Talent: Attract、Onboard、および Core HR を含む包括的な人事管理 (HCM) システムです。 Onboard の購入方法の詳細については、[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) を参照してください。
+Onboard のサブスクリプションは、スタンドアロン アプリまたは Dynamics 365 Talent の一部として購入できます。 Onboard の購入方法の詳細については、[Onboard 製品ページ](https://dynamics.microsoft.com/talent/onboard/) を参照してください。
 
 試用版または購入プロセス中に、Microsoft 365 の電子メール アドレスとパスワードを設定します。 これらの値を記録しておいてください。
 
