@@ -19,16 +19,16 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8f73c034563fb1cc6b05091b4c47e2a788d1a8b6
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 4db774783dba4b1cea9552da3cff29a9528bd496
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945539"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002177"
 ---
 # <a name="configure-your-domain-name"></a>ドメイン名のコンフィギュレーション
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。 

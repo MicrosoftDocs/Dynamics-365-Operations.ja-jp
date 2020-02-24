@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc68289514dc3b201b423091c92fa128d3065707
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536804"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002546"
 ---
 # <a name="view-and-design-financial-reports"></a>財務諸表の表示およびデザイン
 
@@ -172,8 +172,8 @@ ms.locfileid: "2536804"
 3. **ファイル**、**新規**、**列定義**の順にクリックして新しい列定義を作成します。
 4. **列 A** で、**DESC** を列タイプとして選択します。
 5. **列 B** で、**FD** を列タイプとして選択します。
-6. **分析コード フィルター**フィールドをダブルクリックします。
-7. **分析コード**ウィンドウで、**部門**列をダブルクリックします。
+6. **分析コード フィルター** フィールドをダブルクリックします。
+7. **分析コード** ウィンドウで、**部門**列をダブルクリックします。
 8. 個々または範囲を選択したダイアログで、 **元** フィールドの**省略**をクリックして、部門の一覧を表示します。
 9. 部門 **022**、**販売とマーケティング**を選択し、**OK** をクリックします。
 10. 部門 23 から 25 でステップ 5 から 8 を繰り返します。
@@ -197,4 +197,4 @@ ms.locfileid: "2536804"
 
 [財務諸表の表示](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting ブログ](https://blogs.msdn.com/b/dynamics_financial_reporting/)

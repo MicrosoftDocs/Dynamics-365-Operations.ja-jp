@@ -1,9 +1,9 @@
 ---
 title: モバイル アプリのホーム ページ
-description: このトピックでは、Finance and Operations Mobile アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
+description: このトピックでは、Finance and Operations (Dynamics 365) モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: aaff4e3b3bfb079e183a12a5a85e452eed6df51d
-ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
+ms.openlocfilehash: 012b51b66c831a66a54c7c868735e310f05eb8c1
+ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853935"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2975200"
 ---
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations Mobile アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
+このトピックでは、**Finance and Operations (Dynamics 365)** モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 
 <a name="overview"></a>概要
 --------
@@ -80,7 +80,7 @@ ms.locfileid: "2853935"
 <tr class="odd">
 <td>1</td>
 <td>システム管理者</td>
-<td>組織内の Finance and Operations アプリを実装します。</td>
+<td>組織で Finance and Operations アプリを実装します。</td>
 <td><ul><li>まだ Microsoft Dynamics 365 のバージョンを配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。</li><li>使用可能なモバイル ワークスペースの一覧は、<a href="mobile-workspaces-released.md">最近リリースされたモバイル ワークスペース</a> を参照してください。</li></ul></td>
 </tr>
 <tr class="even">

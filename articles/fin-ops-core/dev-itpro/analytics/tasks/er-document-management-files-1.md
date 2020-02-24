@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 29c13e729223a98d7f45244c5a796bca6e3baaf3
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550836"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026137"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)
 
@@ -61,7 +61,7 @@ ms.locfileid: "2550836"
 11. ツリーで、「Customer invoice model」を選択します。
 
 ## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a>ドキュメント管理のファイルへのアクセスをサポートするために取得したモデルを作成します。
-    * Microsoft 提供の設定から取得した顧客請求書モデルの設定を作成します。 この設定を使用してドキュメント管理のファイルにアクセスし、このモデルに基づいて作成する電子ドキュメント用にそれらのファイルを使用します。  
+Microsoft 提供の設定から取得した顧客請求書モデルの設定を作成します。 この設定を使用してドキュメント管理のファイルにアクセスし、このモデルに基づいて作成する電子ドキュメント用にそれらのファイルを使用します。  
 1. [コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。
 2. [新規] フィールドで、「名称から取得: 顧客請求書モデル、Microsoft」を入力します。
 3. [名称] フィールドに、「顧客請求書モデル（カスタム）」を入力します。

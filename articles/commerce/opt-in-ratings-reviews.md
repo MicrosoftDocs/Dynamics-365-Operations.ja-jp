@@ -3,7 +3,7 @@ title: 評価とレビューを使用するためのオプト イン
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトで評価およびレビューを使用するためのオプト イン方法について説明します。
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,25 +18,24 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10e3c33af232fa46df09a103b2e73eae09a909eb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697983"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027268"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>評価とレビューを使用するためのオプト イン
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイトで評価およびレビューを使用するためのオプト イン方法について説明します。
 
 ## <a name="overview"></a>概要
 
-評価およびレビューのソリューションは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Commerce で利用可能にできる オムニチャネル ソリューションです。 LCS は、小売業者が環境を準備から使用停止まで管理するために使用する管理ポータルです。
+評価およびレビューのソリューションは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Commerce で利用可能にできるオムニチャネル ソリューションです。 LCS は、小売業者が環境を準備から使用停止まで管理するために使用する管理ポータルです。
 
-評価を使用し、E コマース Web サイトのソリューションをレビューする場合は、最初にオプト インをクリックする必要があります。
+Commerce Web サイトで評価とレビューのソリューションを使用する場合は、Dynamics 365 Commerce で E コマース サイトを展開する際に、評価とレビューをオプトインする必要があります。
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>評価とレビューを使用するためのオプト イン
 
@@ -51,6 +50,9 @@ ms.locfileid: "2697983"
 
 1. E コマース初期化プロセスを完了します。
 
+> [!NOTE] 
+> 既存の Dynamics 365 Commerce の顧客であり、評価とレビューをオプトインせずに E コマース サイトを既に展開していて、Dynamics 365 Commerce パッケージから評価とレビューを使用する場合は、サービス要求を送信してください。 サービス要求を送信する方法については、[サービス要求送信プロセス](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json)を参照してください。 
+
 ## <a name="additional-resources"></a>追加リソース
 
 [評価とレビューの概要](ratings-reviews-overview.md)
@@ -60,3 +62,5 @@ ms.locfileid: "2697983"
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+

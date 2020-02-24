@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812583"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006175"
 ---
 # <a name="connect-the-help-system"></a>ヘルプ システムに接続する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ向けのヘルプ システムのコンポーネント (Dynamics 365 Finance、Supply Chain Management、小売業、人材など) について説明します。 これらのコンポーネントを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。
+このトピックでは、Finance and Operations アプリ向けのヘルプ システムのコンポーネント (Dynamics 365 Finance、Supply Chain Management、Commerce、および Human Resourcesなど) について説明します。 これらのコンポーネントを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 
@@ -43,7 +43,7 @@ ms.locfileid: "2812583"
 ## <a name="connecting-the-help-system"></a>ヘルプ システムの接続
 
 > [!NOTE]
-> **タスク ガイド** タブは、現在 Dynamics 365 Talent および Retail では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Retail および Talent の両方に関する docs.microsoft.com サイト上でも利用可能な、手順を追ったヘルプ。
+> **タスク ガイド** タブは、現在 Dynamics 365 Human Resources および Commerce では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 Human Resources でのはじめにエクスペリエンスのタスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Human Resources および Commerce の両方に関する docs.microsoft.com サイト上で手順を追ったヘルプを利用できます。
 
 **システム パラメーター** ページを使用して、システム管理者は実装に向けてヘルプ システムのピースを繋ぎ合せます。
 
@@ -60,11 +60,11 @@ ms.locfileid: "2812583"
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
 3. BPM ライブラリの表示順序を選択します。 これにより、ライブラリからのタスク記録が **ヘルプ** ウィンドウに表示される順序が決まります。
 
-これらのステップを完了したのちに、**ヘルプ** ウィンドウを開いて**タスク ガイド** タブをクリックできます。Finance and Operations アプリケーションの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
+これらのステップを完了したのちに**ヘルプ** ウィンドウを開いて**タスク ガイド** タブをクリックできます。Finance and Operations アプリの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
 
 ### <a name="showing-translated-task-guides"></a>翻訳されたタスク ガイドの表示
 
-翻訳されたタスク ガイドは、2016 年 5 月の APQC 統合ライブラリおよび「はじめに」ライブラリで初めて同梱されました。 Finance and Operations アプリケーションでローカライズされたタスク ガイドのヘルプを参照するには、5 月のライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、**オプション** &gt; **基本設定** の [言語の設定] でユーザーごとに制御されます。
+翻訳されたタスク ガイドは、2016 年 5 月の APQC 統合ライブラリおよび「はじめに」ライブラリで初めて同梱されました。 Finance and Operations アプリでローカライズされたタスク ガイドのヘルプを参照するには、5 月のライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、**オプション** &gt; **基本設定** の [言語の設定] でユーザーごとに制御されます。
 
 > [!NOTE]
 > 多くの作業ガイドが翻訳されていますが、現在クライアントには翻訳済みのタスクガイドの名前は表示されません。 また、現時点では 2016 年 2 月にリリースされたタスク ガイドのみが 5 月のライブラリで翻訳版として利用可能です。 翻訳の追加のあるライブラリ更新をリリース予定です。
@@ -78,7 +78,7 @@ ms.locfileid: "2812583"
 
 ### <a name="create-custom-help-with-task-guides"></a>タスク ガイドを使用したカスタム ヘルプの作成
 
-実装を反映するタスク記録を作成して LCS 業務プロセス ライブラリに保存することで、財務、Supply Chain Management、および小売のカスタム ヘルプを作成できます。 [Talent] のカスタム タスク ガイドを作成することはできません。
+実装を反映するタスク記録を作成して LCS 業務プロセス ライブラリに保存することで、Finance、Supply Chain Management、および Commerce のカスタム ヘルプを作成できます。 Human Resources のカスタム タスク ガイドを作成することはできません。
 
 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 APQC 統合グローバル ライブラリのコピーを作成して開き、タスクの記録を開いて変更し、変更がある記録を保存します。 詳細については、[タスク レコーダーのリソース](../../dev-itpro/user-interface/task-recorder.md) を参照してください。
 
@@ -86,7 +86,7 @@ ms.locfileid: "2812583"
 
 Microsoft は、カスタム ヘルプのサイトを作成およびヘルプ ウィンドウに接続する方法について説明するホワイト ペーパーおよびサンプル コードを提供しています。 詳細については、以下を参照してください。
 
-- [Finance and Operations アプリケーションのカスタム ヘルプの作成 (ホワイト ペーパー)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Finance and Operations アプリ (ホワイト ペーパー) のカスタム ヘルプの作成](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [カスタム ヘルプ GitHub リポジトリ](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>追加リソース

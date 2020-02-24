@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771636"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025857"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
@@ -111,7 +111,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 2. F7 キーを押し、コードの定義の背後にあるコードにアクセスします。
 3. 次の X++ コードを追加します。
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 このセクションでは、フォーム グループ コントロールで Power BI レポート (.pbix リソース) の埋め込みに使用されるヘルパー クラスに関する情報を提供します。
 
 #### <a name="syntax"></a>構文
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

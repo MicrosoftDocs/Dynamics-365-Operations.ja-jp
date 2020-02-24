@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a96955b72fcc5b0e2975f4bb1e619062be33e20
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248760"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005589"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
@@ -53,11 +53,11 @@ ms.locfileid: "2248760"
 <tr class="odd">
 <td>次の製品のいずれかを組織内に配置する必要があります。
 <ul><li>Finance and Operations アプリ</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations アプリが配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ Talent が配置されていない場合、システム管理者は<a href="https://www.microsoft.com/dynamics365/talent">Talent ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations アプリが配置されていない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">
@@ -69,7 +69,7 @@ ms.locfileid: "2248760"
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-Finance and Operations モバイル アプリをダウンロードしてインストールします。
+Finance and Operations モバイル アプリのダウンロードとインストール。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

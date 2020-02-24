@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697845"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002938"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>買い物カゴとチェックアウト ページの概要
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要を示します。
@@ -65,11 +65,11 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 ### <a name="shipping-address"></a>出荷先住所
 
-品目を出荷する必要がある場合、出荷先住所を入力する必要があります。 各ロケールの出荷先住所の形式は、Dynamics 365 Retail でコンフィギュレーションできます。 たとえば、品目が米国に出荷される場合、出荷先住所には番地、都道府県、および郵便番号が含まれている必要があります。 英数字の検証、最大の長さ、および数字に対する検証など、基本的な入力検証が、出荷先住所フィールドに対して実行されます。 アドレス自体の有効性は検証されませんが、この検証はカスタマイズされたサード パーティ サービスを使用します。
+品目を出荷する必要がある場合、出荷先住所を入力する必要があります。 各ロケールの出荷先住所の形式は、Dynamics 365 Commerce でコンフィギュレーションできます。 たとえば、品目が米国に出荷される場合、出荷先住所には番地、都道府県、および郵便番号が含まれている必要があります。 英数字の検証、最大の長さ、および数字に対する検証など、基本的な入力検証が、出荷先住所フィールドに対して実行されます。 アドレス自体の有効性は検証されませんが、この検証はカスタマイズされたサード パーティ サービスを使用します。
 
 出荷先住所は、「出荷」オプションが選択されている買い物カゴ内のすべての品目に対して適用されます。 オンライン スタート キットで提供されているチェックアウト フローを使用する場合、買い物カゴの個別の品目を異なる住所に出荷することはできません。 この機能が必要な場合、チェックアウト モジュールをカスタマイズすることによって実装できます。
 
-出荷先住所が指定された後、Dynamics 365 Commerce オンライン ストアから使用可能な出荷方法が表示されます。 出荷方法およびサポートされる住所は、Retail でコンフィギュレーションできます。
+出荷先住所が指定された後、Dynamics 365 Commerce オンライン ストアから使用可能な出荷方法が表示されます。 出荷方法およびサポートされる住所は、コマースでコンフィギュレーションできます。
 
 ### <a name="payment"></a>支払
 

@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d314875287b0d69909c91450cd67c628d708cd3a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1a094402f4ed81de2f9b10f3c40557bc103eb65
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174262"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005828"
 ---
 # <a name="compensation-power-bi-content"></a>補償 Power BI コンテンツ
 
@@ -33,7 +33,7 @@ ms.locfileid: "2174262"
 次の製品のいずれかを使用する場合、**補償** Power BI コンテンツは、**補償管理**ワークスペースに表示されます。
 
 - Finance and Operations アプリ
-- Microsoft Dynamics 365 Talent
+- Microsoft Dynamics 365 Human Resources
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **補償** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。

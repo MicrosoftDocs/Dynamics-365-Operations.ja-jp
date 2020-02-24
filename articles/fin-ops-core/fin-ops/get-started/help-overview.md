@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811675"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005706"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811675"
 このトピックでは、ヘルプ システムのコンポーネントの概要を提供します。 ヘルプ システムは、次の製品により共有されます。
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 使用している製品のヘルプ ウィンドウからヘルプを表示できます。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "2811675"
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
-docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) が上記のアプリケーションの製品ドキュメントの主要ソースです。 サイトには次のような機能が含まれています。
+docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) が上記のアプリケーションの製品ドキュメントの主要ソースです。 サイトには次のような機能が含まれています。
 
 - **最新のコンテンツへのアクセス** – サイトは、製品のドキュメントのより速い、より柔軟な作成、出荷、および更新方法を提供します。 したがって、最新の技術情報にアクセスできることを確実にするために役立ちます。
 - **専門家が記述した内容** – サイトは Microsoft 内外のコミュニティ メンバーによって拡張できる豊富な製品ドキュメントのセットを提供します。
@@ -73,7 +73,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.mic
 
 [Microsoft Dynamics365 のドキュメントへの投稿方法](https://youtu.be/m5djioozRbg)ビデオ (上記参照) は YouTube の Microsoft Dynamics 365 チャンネルに含まれています。
 
-詳細については、[寄稿者ガイド](https://docs.microsoft.com/en-us/contribute) を参照してください。
+詳細については、[寄稿者ガイド](https://docs.microsoft.com/contribute) を参照してください。
 
 > [!NOTE]
 > 現時点では英語のコンテンツへの寄稿のみを受け付けています。
@@ -106,12 +106,12 @@ Microsoft は、2017 年 12 月までの Dynamics 365 for Finance and Operations
 ヘルプ ウィンドウから、クライアントに適用する記事にアクセスできます。 最初にヘルプ ウィンドウを開いてから**ヘルプ** タブをクリックすると、現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。
 
 > [!IMPORTANT]
-> このセクションは Dynamics 365 Talent には適用されません。 [Talent] のヘルプ システムは、製品のタスクのガイドに自動的に関連付けられます。 さらに、[Talent] のカスタム タスク ガイドを作成することはできません。
+> このセクションは Dynamics 365 Human Resources には適用されません。 Human Resources のヘルプ システムは、製品のタスク ガイドに自動的に関連付けられます。 また、Human Resources のカスタム タスク ガイドを作成することはできません。
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
-ヘルプ ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が、財務、Supply Chain Managment、および小売で**システム パラメーター** ページに進み、いくつかの設定をコンフィギュレーションする必要があります。
+ヘルプ ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が、Finance、Supply Chain Managment、および Commerce で**システム パラメーター** ページに進み、いくつかの設定を構成する必要があります。
 
 > [!NOTE]
 > - ヘルプを構成するには、アプリを導入しているテナントと同じアカウントを使用してサインイン必要があります。

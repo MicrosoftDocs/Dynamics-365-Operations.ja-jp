@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697937"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003237"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>デモ データを使用した製品推奨事項の取得
 このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
@@ -39,7 +39,7 @@ ms.locfileid: "2697937"
 製品推奨事項デモ日付を有効にするには、それぞれの環境に Dynamics 365 Commerce プレビュー デモ拡張機能を配置する必要があります。 これを行うと、製品推奨事項デモ データが自動的に有効になります。
 
 ## <a name="default-demo-data"></a>既定のデモ データ
-各 Onebox タイプの環境には、コンマで区切られた 'reco_demo_data' ファイルに格納されたプリロード済の一連の製品推奨事項のデモ データが含まれ、Retail Server 上にあります。
+各 Onebox タイプの環境には、コンマで区切られた 'reco_demo_data.csv' ファイルに格納されたプリロード済の一連の製品推奨事項のデモ データが含まれ、Commerce Scale Unit 上にあります。
 
 データは、次の列に沿って構成されています。
 

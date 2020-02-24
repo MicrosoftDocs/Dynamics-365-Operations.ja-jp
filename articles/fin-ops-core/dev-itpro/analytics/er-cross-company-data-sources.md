@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: f2e6b4f20464993f736b013dde40527aba2258ed
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: dd4680a698aec8f6c650519855c5cce1b9cafd0a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667647"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026186"
 ---
 # <a name="cross-company-data-sources-in-electronic-reporting-er"></a>電子申告 (ER) における会社間データ ソース
 
@@ -51,7 +51,7 @@ ms.locfileid: "2667647"
 
 したがって、次の式は有効です。
 
-```
+```ER Expression
 FILTER (MyTable, MyTable.dataAreaID = $StringUserInputParameter)
 While shown below expressions will not pass the validation:
 FILTER (MyTable, MyTable.dataAreaID = MyTable2RecordsList.MyField)

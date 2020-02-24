@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899038"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006290"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 30 日)
 
@@ -41,7 +41,7 @@ ms.locfileid: "2899038"
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>カナダおよび東南アジアの地域サポート
 
-2019 年 8 月 1 日に、カナダおよび東南アジアの地域で Talent が使用可能になることをお知らせします。 この変更により、カナダおよびアジアの地域で環境を作成できるようになり、それらの場所だけですべての Talent データが管理されるようになります。 新しい環境ダイアログで場所を選択し、[Talent のプロビジョニング](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent) で説明されているように、その環境を LCS での Talent のプロビジョニングに使用することにより、新しい地域に環境を作成することができます。
+2019 年 8 月 1 日に、カナダおよび東南アジアの地域で Talent が使用可能になることをお知らせします。 この変更により、カナダおよびアジアの地域で環境を作成できるようになり、それらの場所だけですべての Talent データが管理されるようになります。 新しい環境ダイアログで場所を選択し、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) で説明されているように、その環境を LCS での Talent のプロビジョニングに使用することにより、新しい地域に環境を作成することができます。
 
 他の地域からカナダおよびアジア地域への既存のプロジェクトのデータ移行はサポートされていません。 新しいプロジェクトのみ、これら新しくサポートされる地域にプロビジョニングできます。
 

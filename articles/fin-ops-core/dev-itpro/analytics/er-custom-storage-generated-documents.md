@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771401"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030869"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
@@ -56,7 +56,7 @@ ms.locfileid: "2771401"
 
 ER フォーマットが生成するドキュメントのルーティング方法を指定するには、[電子申告 (ER) の送信先](electronic-reporting-destinations.md) を構成する必要があります。 生成するドキュメントをファイルとして保存するように構成する各 ER の送信先では、ドキュメントのドキュメント タイプを指定する必要があります。 異なる ER フォーマットが生成するドキュメントをルーティングするには、異なるドキュメント タイプが使用できます。
 
-1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
+1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
 2. このドキュメント タイプをその他のドキュメント タイプから区別するには、名前に特定のキーワードを含めます。 たとえば、次の図では、名前は **(ローカル) フォルダー**です。
 3. **クラス** フィールドには、**ファイルの添付**を指定します。
 4. **グループ** フィールドには、**ファイル**を指定します。
@@ -70,7 +70,7 @@ ER フォーマットが生成するドキュメントのルーティング方�
 
 **ERDocuManagement** クラスの **insertFile()** メソッドのコードを確認します。 生成されたファイルがレコードに関連付けられた時、**AttachingFile()** イベントが発生することに注意します。
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ public DocuRef insertFile(
     1. Application Object Server (AOS) サービスを実行するサーバーのローカル ファイル システムのフォルダに、生成したファイルを保存します。
     2. 新しいドキュメント タイプ (たとえば、名前に "(ローカル)" キーワードが含まれている **FileX** タイプ) が ER 実行ジョブ ログのレコードにファイルが関連付けられている時に使用される場合にのみ、これら生成されたファイルは保存されます。
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()
