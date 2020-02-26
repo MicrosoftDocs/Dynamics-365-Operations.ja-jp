@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3e77aabc1629fec3c929a72185eac8fcb353cd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b6789a83b303c792cf20f3b4bd203bc679e63610
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191752"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033051"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 
@@ -55,7 +55,9 @@ ms.locfileid: "2191752"
 
 これらの実行速度を達成するためにクエリのパフォーマンスを改善する方法については、「よくある間違いとクエリを最適化するためのヒント」セクションを参照してください。 クエリのバッキングがあり、25 ミリ秒実行速度のしきい値を満たすことができないタイルについては、タイルでの更新頻度を低い値のいずれかに設定する必要があります (たとえば、10 分または 24 時間)。 より効率の低いクエリ (まれである) を持つタイルの値を頻繁に更新する必要がある場合は、次のコードを追加して、キャッシュされたセットに影響するアクションが発生したときにキャッシュを手動で更新できます。
 
-    TileDataService::forceRefresh(tilestr(<tileName>), formRun)
+```xpp
+TileDataService::forceRefresh(tilestr(<tileName>), formRun)
+```
 
 頻繁に変更されないデータ セットの例としては、コンフィギュレーションがない製品です。 このカウントを示すタイルは、10 分の更新頻度があります。 ただし、以前にコンフィギュレーションされていなかった製品に対するコンフィギュレーションが定義される場合、データ キャッシュを強制更新するよう商品フォームが計測されると、タイル カウントは依然として応答しているように見える場合があります。
 
@@ -85,35 +87,39 @@ ms.locfileid: "2191752"
 
 3 番目のステップは、キャッシュ クエリとキャッシュ テーブルの間のリレーションシップを定義するクラスを作成することです。 このクラスでは、いくつかの属性を定義する必要があり、適切なフレームワーク データ キャッシング クラスを拡張して実装する必要があります。 次のコードは、予約管理ワークスペースの対応するクラスを示しています。
 
-    [SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
-    SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
-    class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
+```xpp
+[SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
+SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
+class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
+{
+    public SysDataCacheRefreshFrequency parmRefreshFrequency()
     {
-        public SysDataCacheRefreshFrequency parmRefreshFrequency()
-        {
-            return 600; // Cache refresh frequency, in seconds.
-        }
-        public SysQueryableIdentifier parmQueryableIdentifier()
-        {
-            return queryStr(FMPickupAndReturnQuery); // The name of the query.
-        }
-        public SysDataCacheTypeId parmCacheTypeId()
-        {
-            return tableNum(FMPickupAndReturnCache); // The name of the table.
-        }
-        public static FMPickupAndReturn construct()
-        {
-            return new FMPickupAndReturn();
-        }
+        return 600; // Cache refresh frequency, in seconds.
     }
+    public SysQueryableIdentifier parmQueryableIdentifier()
+    {
+        return queryStr(FMPickupAndReturnQuery); // The name of the query.
+    }
+    public SysDataCacheTypeId parmCacheTypeId()
+    {
+        return tableNum(FMPickupAndReturnCache); // The name of the table.
+    }
+    public static FMPickupAndReturn construct()
+    {
+        return new FMPickupAndReturn();
+    }
+}
+```
 
 状況によっては、**parmQueryableToCacheMapping()** メソッドを実装しなければならない場合もあります。 このメソッドは、キャッシュ テーブル内の少なくとも 1 つの列名が、バッキング テーブル内の対応する列の名前と一致しない場合に必要です (たとえば、名前は同じですが異なるテーブルの 2 つのフィールドを追加する必要がある場合など)。 この場合、キャッシュ テーブルとバッキング テーブルの間で列マッピングを定義するためにこのメソッドを実装することができます。 構文は、**Query::Insert\_RecordSet()** メソッド (<https://msdn.microsoft.com/library/query.insert_recordset.aspx>) の構文と同じです。
 
-    public Map parmQueryableToCacheMapping()
-    {
-        Map sourceToTargetMap = super();
-        return sourceToTargetMap;
-    }
+```xpp
+public Map parmQueryableToCacheMapping()
+{
+    Map sourceToTargetMap = super();
+    return sourceToTargetMap;
+}
+```
 
 ### <a name="form-implementation"></a>フォーム実装
 
@@ -125,19 +131,21 @@ ms.locfileid: "2191752"
 
 次のコードは、**FMPickingUpTodayPart** フォームの例です。これは、予約管理ワークスペースのタブ付きリストの1つです。
 
-    [Form]public class FMPickingUpTodayPart extends FormRun
-    implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandler
-    {
-        public void registerDatasourceOnQueryingEvent()
-        {    
-            FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
-            FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
-        }
-        public void onFilterChanged()
-        {    
-            FMPickupAndReturnCache_DS.executeQuery();    
-        }    
+```xpp
+[Form]public class FMPickingUpTodayPart extends FormRun
+implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandler
+{
+    public void registerDatasourceOnQueryingEvent()
+    {    
+        FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
+        FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
     }
+    public void onFilterChanged()
+    {    
+        FMPickupAndReturnCache_DS.executeQuery();    
+    }    
+}
+```
 
 ### <a name="additional-examples"></a>追加の例
 

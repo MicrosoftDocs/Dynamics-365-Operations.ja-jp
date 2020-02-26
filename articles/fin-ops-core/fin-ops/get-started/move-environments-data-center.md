@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 40571ea9c47456250bd2bcb7f2c9959525c4aac1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 44296225770191a3e841d7fb186d1d7dbfcd2a8e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811614"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003692"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -72,7 +72,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 
 > [!NOTE]
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
-> - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
+> - コマース顧客は、移動後にコンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
 
 ## <a name="move-production-environments"></a>実稼働環境の移動
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9a3c5e08cb9515b85c205efa1dc5d97247c4ec98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c751c2e2bbff164170d34441b96866e9a772a77f
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183339"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026196"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
@@ -45,7 +45,7 @@ SysMailer フレームワークは電子メール プロバイダー、メッセ
 
 次の例は **CustCollectionsEmail** クラスから取得されます。 メッセージ ビルダーの呼び出しをつなぎ、条件付きで送信者のアドレス (「元」住所) を設定し、添付ファイルを追加する機能など、フレームワークの複数の機能を示します。
 
-```
+```xpp
 using (System.IO.Stream attachmentStream = this.generateAttachment())
 {
     var messageBuilder = new SysMailerMessageBuilder();
@@ -79,7 +79,7 @@ using (System.IO.Stream attachmentStream = this.generateAttachment())
 
 次の例は **VendRequestCompanyWorkflowManager** クラスから取得されます。 非対話型で単一のメッセージを送信する方法を示します。
 
-```
+```xpp
 // The vendor <vendor name> has been approved and has been added to the vendor master.
 messageText = strFmt("@SYS134393", DirPartyTable::findRec(vendRequestCompany.VendParty).Name);
 // Request
@@ -95,7 +95,7 @@ SysMailerFactory::sendNonInteractive(messageBuilder.getMessage());
 
 次の例は **UserAdAddManager** クラスから取得されます。 送信する電子メールの一覧を反復処理する前に、バッチ電子メール プロバイダーのインスタンスを取得する方法を示します。
 
-```
+```xpp
 var mail = SysMailerFactory::getNonInteractiveMailer();
 var messageBuilder = new SysMailerMessageBuilder();
 for (i = 1; i <= conLen(_notifyCon); i++)
@@ -143,7 +143,7 @@ for (i = 1; i <= conLen(_notifyCon); i++)
 - **ExportAttribute** – フレームワークでは、この属性を使用してプラグインを検出します。 属性は、プラグインが **SysIMailer** の実装であるため SysMailer フレームワークの一部であることを指定します。
 - **ExportMetadataAttribute** – フレームワークでは、この属性を使用して、特定のメタデータを持つプラグインの特定のインスタンスを検索します。 属性は、単一のプロバイダーをすばやく検出できるように電子メール プロバイダーの ID を指定します。 **2 つの電子メール プロバイダーは、同じ ID を持つ必要はありません。**
 
-```
+```xpp
 using System.IO;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
@@ -167,7 +167,7 @@ public class SysMailerEML implements SysIMailerInteractive
 - **getId** – このメソッドは、**ExportMetadataAttribute** 属性で指定される 同じ ID を返します。
 - **getDescription** – このメソッドは、どのように電子メールを送信するかを示す非技術的な記述を返します。
 
-```
+```xpp
 public SysMailerId getId()
 {
     return #SysMailerEML_ID;
@@ -183,7 +183,7 @@ public SysMailerDescription getDescription()
 
 **SysIMailerInteractive** および **SysIMailerNonInteractive** インターフェイスは非常に簡単です。 これらは **sendInteractive** および **sendNonInteractive** メソッド、をそれぞれ実装します。 電子メール プロバイダーは、その機能に応じて、一方または両方の方法を実装できます。 実装されている各メソッドは、電子メールの作成と送信に使用する .NET **System.Net.Mail.MailMessage** オブジェクトを選択します。
 
-```
+```xpp
 public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 {
     using (var emlStream = this.generateEmlFile(_message))

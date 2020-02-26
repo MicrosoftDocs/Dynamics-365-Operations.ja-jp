@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: a5190a71d6d65a6c28065ccf40ac92bc68e8ca10
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 57ab02ffe620c0e23bd12ebfb0567a9f4c703d1e
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935431"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005692"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "2935431"
 
 ## <a name="introducing-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations Enterprise Edition を含みます
 
-ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations Enterprise Edition") と製品アイコンが Web クライアントに表示されます。 一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 Talent は、"Dynamics 365 Unified Operations." と表示されるようになりました。
+ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations Enterprise Edition") と製品アイコンが Web クライアントに表示されます。 一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 Human Resources は、"Dynamics 365 Unified Operations." と表示されるようになりました。
 
 ## <a name="development-and-customization--changing-the-extended-data-type-edt-on-a-table-field-using-table-extensions"></a>開発およびカスタマイズ - テーブル拡張を使用してテーブル フィールドの拡張データ タイプ (EDT) を変更する
 

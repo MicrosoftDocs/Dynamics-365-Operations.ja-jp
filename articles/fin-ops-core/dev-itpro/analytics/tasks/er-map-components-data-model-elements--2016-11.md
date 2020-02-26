@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184741"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026243"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)
 
@@ -98,7 +98,7 @@ ms.locfileid: "2184741"
 2. ページを閉じます。
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>コンフィギュレーションの書式設定の現在のバージョンのステータスの変更
-    * 次の手順では、支払ドキュメント生成に使用するために、ドラフトから完了に書式コンフィギュレーションのステータスを変更します。  
+次の手順では、支払ドキュメント生成に使用するために、ドラフトから完了に書式コンフィギュレーションのステータスを変更します。  
 1. [状態の変更] をクリックします。
 2. [完了] をクリックします。
 3. [説明] フィールドに値を入力します。
@@ -108,7 +108,7 @@ ms.locfileid: "2184741"
     * コンフィギュレーションの設定が完了したバージョン 1.1 として保存されることに注意してください。これはデータ モデルのバージョン 1 に基づく書式のバージョン 1 です。  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>形式の完了したバージョンの有効期間の定義
-    * 各書式のバージョンは、特定の日付をから使用開始するように設定できます。 複数の書式のバージョンを特定の日付に有効にする場合は、最新書式 (バージョン番号に基づく) を使用できるように選択します。 セッション日付値は、適切なバージョンの選択に使用されます。  
+各書式のバージョンは、特定の日付をから使用開始するように設定できます。 複数の書式のバージョンを特定の日付に有効にする場合は、最新書式 (バージョン番号に基づく) を使用できるように選択します。 セッション日付値は、適切なバージョンの選択に使用されます。  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>会社から作成した形式へのアクセスの制限
 1. [ISO 国/地域コード] セクションを展開します。

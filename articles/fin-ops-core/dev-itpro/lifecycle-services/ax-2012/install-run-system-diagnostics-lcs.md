@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0aabd979627c130fb6968f5bc8dab48c33954ed4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 92a6a47c3d39c23dead7e28f905d871d7a3574c4
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550896"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983605"
 ---
 # <a name="install-and-run-system-diagnostics"></a>システム診断のインストールと実行 
 
@@ -43,7 +43,7 @@ Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を�
 
 このセクションでは、Lifecycle Services 診断サービス (LCSDiagFXService.exe) が実行されるサービス アカウントに必要なアクセス許可について説明します。
 
--   サービス アカウントは、Microsoft Dynamics AX のユーザーで、**BusinessConnector** ロールのメンバーであるドメイン アカウントである必要があります。 可能な場合、アカウントは、.NET Business Connector プロキシに使用する同じアカウントを使用することを強くお勧めします。 詳細については、[.NET Business Connector プロキシ アカウントを指定](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) および [セキュリティ ロールにユーザーを割り当てる](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx) を参照してください。
+-   サービス アカウントは、Microsoft Dynamics AX のユーザーで、**BusinessConnector** ロールのメンバーであるドメイン アカウントである必要があります。 可能な場合、アカウントは、.NET Business Connector プロキシに使用する同じアカウントを使用することを強くお勧めします。 詳細については、[.NET Business Connector プロキシ アカウントを指定](https://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) および [セキュリティ ロールにユーザーを割り当てる](https://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx) を参照してください。
 
     | **メモ**                                                                                                                     |
     |------------------------------------------------------------------------------------------------------------------------------|
@@ -89,8 +89,8 @@ SQL Server ビジネス データベースをホストするサーバー上の W
 <tr class="odd">
 <td>レジストリで権限を設定するには、既に存在しているアクセス特権を削減することはできません。 セキュリティの詳細設定については、以下を参照してください。
 <ul>
-<li><a href="http://technet.microsoft.com/library/jj134043.aspx">Windows Server 2012 アクセス制御と承認の概要</a></li>
-<li><a href="http://technet.microsoft.com/library/cc730772.aspx">Windows Server 2008 R2 セキュリティの詳細設定のプロパティ ページ - アクセス許可タブ</a></li>
+<li><a href="https://technet.microsoft.com/library/jj134043.aspx">Windows Server 2012 アクセス制御と承認の概要</a></li>
+<li><a href="https://technet.microsoft.com/library/cc730772.aspx">Windows Server 2008 R2 セキュリティの詳細設定のプロパティ ページ - アクセス許可タブ</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -109,7 +109,7 @@ Group Policy では、AOS のサービスをリモートで利用できるよう
 
 #### <a name="configure-windows-event-log-and-wmi-permissions"></a>Windows イベント ログおよび WMI のアクセス許可をコンフィギュレーションする
 
-サービス アカウントは、環境内の各サーバー上の Windows イベント ログを読み取ることができ、リモートで Windows Management Instrumentation 接続を監視できる必要があります。 詳細については、「[ローカル グループへのメンバーの追加](http://technet.microsoft.com/library/cc772524(v=WS.10).aspx)」を参照してください。
+サービス アカウントは、環境内の各サーバー上の Windows イベント ログを読み取ることができ、リモートで Windows Management Instrumentation 接続を監視できる必要があります。 詳細については、「[ローカル グループへのメンバーの追加](https://technet.microsoft.com/library/cc772524(v=WS.10).aspx)」を参照してください。
 
 -   環境内の各サーバーでは、サービス アカウントを**イベント ログ リーダー**ローカル グループ、**配分 COM ユーザー**ローカル グループ、および**パフォーマンス ユーザーの監視** ローカル グループに追加します。
 
@@ -140,15 +140,15 @@ AOS インスタンスまたは Microsoft Dynamics AX SQL Server ビジネス �
 
 7.  パフォーマンス モニター ユーザー グループで手順 6 を繰り返し、すべてのウィンドウを閉じます。
 
-詳細については、「[リモート WMI 接続の保護](http://msdn.microsoft.com/library/windows/desktop/aa393266(v=vs.85).aspx)」を参照してください。
+詳細については、「[リモート WMI 接続の保護](https://msdn.microsoft.com/library/windows/desktop/aa393266(v=vs.85).aspx)」を参照してください。
 
 #### <a name="configure-sql-server-permissions"></a>SQL Server のアクセス許可をコンフィギュレーションします
 
 サービス アカウントは、Microsoft Dynamics AX ビジネス データベースのデータを読み取ることができ、SQL Server の既定の動的管理ビューにアクセスできる必要があります。
 
-1.  Microsoft Dynamics AX ビジネス データベースがインストールされている SQL Server インスタンスに、ログインとしてサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ログインの作成](http://msdn.microsoft.com/library/aa337562.aspx)」を参照してください。
-2.  ビジネス データベースのユーザーとしてアカウントを追加します。 このステップを実行する方法の詳細については、「[方法: データベース ユーザーの作成](http://msdn.microsoft.com/library/aa337545.aspx)」を参照してください。
-3.  ビジネス データベースの db\_datareader ロールにサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ロールに参加](http://msdn.microsoft.com/library/ff877886.aspx)」を参照してください。
+1.  Microsoft Dynamics AX ビジネス データベースがインストールされている SQL Server インスタンスに、ログインとしてサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ログインの作成](https://msdn.microsoft.com/library/aa337562.aspx)」を参照してください。
+2.  ビジネス データベースのユーザーとしてアカウントを追加します。 このステップを実行する方法の詳細については、「[方法: データベース ユーザーの作成](https://msdn.microsoft.com/library/aa337545.aspx)」を参照してください。
+3.  ビジネス データベースの db\_datareader ロールにサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ロールに参加](https://msdn.microsoft.com/library/ff877886.aspx)」を参照してください。
 4.  サービス アカウントに SQL Server インスタンスの VIEW SERVER STATE 権限を付与します。
     1.  SQL Server Management Studio で、**データベース**を展開し、**Microsoft Dynamics AX** データベースを右クリックし、**プロパティ**をクリックします。
     2.  **アクセス許可**をクリックし、次に**サーバーのアクセス許可を表示**をクリックします。
@@ -157,7 +157,7 @@ AOS インスタンスまたは Microsoft Dynamics AX SQL Server ビジネス �
 
 ### <a name="verify-that-the-net-business-connector-service-is-running-in-the-environment"></a>この環境で .NET Business connector サービスが実行されていることを確認する
 
-Business Connector サービスは、Lifecycle Services 診断サービスがインストールされているホストで実行する必要があります。 1 つ以上の環境が見つかると、.Ne ビジネス コネクタ プロキシ アカウントは、Microsoft Dynamics AX Application Object Server (AOS) インスタンスを実行している各サーバーと同じものである必要があります。 詳細については、[.NET Business Connector のインストール](http://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx) を参照してください。
+Business Connector サービスは、Lifecycle Services 診断サービスがインストールされているホストで実行する必要があります。 1 つ以上の環境が見つかると、.Ne ビジネス コネクタ プロキシ アカウントは、Microsoft Dynamics AX Application Object Server (AOS) インスタンスを実行している各サーバーと同じものである必要があります。 詳細については、[.NET Business Connector のインストール](https://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx) を参照してください。
 
 ### <a name="install-the-microsoft-dynamics-lifecycle-services-system-diagnostics"></a>Microsoft Dynamics Lifecycle Services システム診断のインストール
 
@@ -206,7 +206,7 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
 1.  **環境の検出** ウィンドウで初期データ収集を実行するには、**今すぐ収集** をクリックします。 初めて環境を検出した直後に最初のコレクションを実行することをお勧めします。
 2.  コレクション ジョブのスケジューリングに使用できるコレクション コマンドを生成するするには、**コレクション コマンドを生成** をクリックします。
 3.  生成されたコマンドをクリップボードにコピーします。
-4.  **Windows タスク スケジューラ**などのスケジュール エンジンを使用して実行するコマンドをスケジュール設定します。 **タスク スケジューラ**の使用の詳細については、[タスクのスケジュール](http://technet.microsoft.com/library/cc766428.aspx) を参照してください
+4.  **Windows タスク スケジューラ**などのスケジュール エンジンを使用して実行するコマンドをスケジュール設定します。 **タスク スケジューラ**の使用の詳細については、[タスクのスケジュール](https://technet.microsoft.com/library/cc766428.aspx) を参照してください
 
 ## <a name="use-same-x509-certificate-for-all-environments"></a>すべての環境で同じ X509 証明書を使用する
 

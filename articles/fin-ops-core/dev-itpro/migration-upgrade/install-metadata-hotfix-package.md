@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 79822
 ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143886e342e1c901a7cf2b87ef6deec7dc1515fe
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 22b795b0c60793963d40128eaa25e40c28ea6c43
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812047"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983712"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80d71d2390e7b6e39798d0f061b584ad229a2459
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20d3da65028b455ab1602e3a8b443ea7e585b1f0
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897307"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030899"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-17-2018"></a>Dynamics 365 Talent - Core HR (2018 年 9 月 17 日) の新機能および変更された機能
 
@@ -41,7 +41,7 @@ Finance and Operations のプラットフォーム更新プログラム 18 は T
 
 -   必須フィールドおよびその他のフィールドは、個人用設定により非表示にすることができます。 これによりユーザーは、ビジネス ロジックにより既定に設定されている必須フィールドが表示されない、簡略化された経験を作成できます。 非表示の必須フィールドは、保存しようとするときに空の場合には一時的に表示されます。
 
--   Finance and Operations のプラットフォーム更新プログラム 18 では、Talent の Web クライアントは Microsoft Fluent Design とのビジュアルに対応するようになります。
+-   Finance and Operations のプラットフォーム更新プログラム 18 では、Talent Web クライアントは Microsoft Fluent Design とのビジュアルに対応するようになります。
 
     -   フィールドが “読み取りモード“ である場合、単にフィールドで編集オプションを選択して、編集するフォームを切り替えます。
 
@@ -49,7 +49,7 @@ Finance and Operations のプラットフォーム更新プログラム 18 は T
 
     -   ワークスペースとページのヘッダーは太字です。
 
--   非置き換えルックアップの動作が改良されました。 詳細については、[非置き換えルックアップの動作の改良](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0) を参照してください。
+-   非置き換えルックアップの動作が改良されました。 詳細については、[非置き換えルックアップの動作の改良](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups) を参照してください。
 
 ## <a name="bug-fixes"></a>バグ修正
 

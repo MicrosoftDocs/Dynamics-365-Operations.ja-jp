@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2eadff772fe2324fcdc29fcc05fb64d3312298ef
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dff4891fad18b4117006e0ab3c36c09d2532f5a8
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191888"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033029"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 
 [!include [banner](../includes/banner.md)]
 
-プログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations へのコンテキスト メニュー コードを移行するプロセスの概要を説明します。 また、コンテキスト メニューのユーザー エクスペリエンス (UX) ガイドラインも含まれています。
+プログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations へのコンテキスト メニュー コードの移行移行プロセスの概要を説明します。 また、コンテキスト メニューのユーザー エクスペリエンス (UX) ガイドラインも含まれています。
 
-Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリック コンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 Finance and Operations では、同様の機能を提供する代わりに **ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 これらの上書きが削除され、待機モデルが消去されるため、開発者は次の 2 つの上書きを作成する必要があります。**getContextMenuOptions()** によりコンテキスト メニューのオプションを追加し、**selectedMenuOption()** によりユーザーの選択を処理します。
+Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリック コンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 Finance and Operations では、同様の機能を提供する代わりに,**ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 これらの上書きが削除され、待機モデルが消去されるため、開発者は次の 2 つの上書きを作成する必要があります。**getContextMenuOptions()** によりコンテキスト メニューのオプションを追加し、**selectedMenuOption()** によりユーザーの選択を処理します。
 
 ## <a name="migrate-context-menu-code"></a>コンテキスト メニュー コードの移行 
 **PopupMenu** API から **ContextMenu** API への移行は、3 つの主な段階に分けることができます。
@@ -43,20 +43,24 @@ Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **
 
 #### <a name="before"></a>以前
 
-    public void context()
-    {
-        ...
-        int listCreateRoot = listMenu.insertItem("@SYS5480");
-        ...
+```xpp
+public void context()
+{
+    ...
+    int listCreateRoot = listMenu.insertItem("@SYS5480");
+    ...
+```
 
 #### <a name="after"></a>変更後
 
-    [Form]
-    public class MainAccount extends FormRun
-    {
-        ...
-        public const int listCreateRoot = 1;
-        ...
+```xpp
+[Form]
+public class MainAccount extends FormRun
+{
+    ...
+    public const int listCreateRoot = 1;
+    ...
+```
 
 ### <a name="step-2-build-the-context-menu"></a>手順 2 コンテキスト メニューの構築
 
@@ -87,54 +91,58 @@ Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **
 
 ### <a name="original-code"></a>オリジナル コピー
 
-    public void context()
-    {       
-        PopupMenu  listMenu        = new PopupMenu(element.hWnd());
-        int        listCreateRoot  = listMenu.insertItem("@SYS5480");
-        int        selectedMenu;
-        selectedMenu = listMenu.draw();
-        switch (selectedMenu)
-        {
-            case -1:
-                break;
-            case listCreateRoot:
-                mainAccount_ds.create();
-                break;
-            default:
-                break;
-        }
+```xpp
+public void context()
+{       
+    PopupMenu  listMenu        = new PopupMenu(element.hWnd());
+    int        listCreateRoot  = listMenu.insertItem("@SYS5480");
+    int        selectedMenu;
+    selectedMenu = listMenu.draw();
+    switch (selectedMenu)
+    {
+        case -1:
+            break;
+        case listCreateRoot:
+            mainAccount_ds.create();
+            break;
+        default:
+            break;
     }
+}
+```
 
 ### <a name="migrated-code"></a>移行されたコード
 
-    // Define new form-level constant for each context menu option
-    public const int listCreateRoot = 1;
-    // Define new override on the control for building the context menu
-    public str getContextMenuOptions()
+```xpp
+// Define new form-level constant for each context menu option
+public const int listCreateRoot = 1;
+// Define new override on the control for building the context menu
+public str getContextMenuOptions()
+{
+    str ret;
+    ContextMenu menu = new ContextMenu(); 
+    ContextMenuOption option = ContextMenuOption::Create("@SYS5480", listCreateRoot);
+    List menuOptions = new List(Types::Class); 
+    // Add label and ID of menu option
+    menuOptions.addEnd(option); 
+    menu.ContextMenuOptions(menuOptions);
+    return menu.Serialize();
+}
+// Define new override on the control for processing the user selection
+public void selectedMenuOption(int selectedOption)
+{
+    switch (selectedOption)
     {
-        str ret;
-        ContextMenu menu = new ContextMenu(); 
-        ContextMenuOption option = ContextMenuOption::Create("@SYS5480", listCreateRoot);
-        List menuOptions = new List(Types::Class); 
-        // Add label and ID of menu option
-        menuOptions.addEnd(option); 
-        menu.ContextMenuOptions(menuOptions);
-        return menu.Serialize();
+        case -1:
+            break;
+        case listCreateRoot:
+            mainAccount_ds.create();
+            break;
+        default:
+            break;
     }
-    // Define new override on the control for processing the user selection
-    public void selectedMenuOption(int selectedOption)
-    {
-        switch (selectedOption)
-        {
-            case -1:
-                break;
-            case listCreateRoot:
-                mainAccount_ds.create();
-                break;
-            default:
-                break;
-        }
-    }
+}
+```
 
 ## <a name="ux-guidelines-for-context-menus"></a>コンテキスト メニューの UX ガイドライン
 コンテキスト メニューを移行する際、次のガイドラインを考慮してください。

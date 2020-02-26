@@ -1,9 +1,9 @@
 ---
 title: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
-description: このトピックでは、Finance and Operations に対してデータベースをエクスポートするシナリオついて説明します。
+description: このトピックでは、Finance and Operations のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 7fc99cf91c91c05e466ff1195c4ec1004ed27d0c
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: ca32e156179f0d133e0c9dd863bbe37da6a6edac
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934736"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029432"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -66,8 +66,7 @@ Microsoft Azure SQL データベース プラットフォームによる最新�
 
 最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
 
-```
-
+```Console
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```
 
@@ -84,7 +83,7 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<ta
 
 インポートされたデータベースに対して、次の SQL スクリプトを実行します。 このスクリプトは、ソース データベースから削除したユーザーを追加し、この SQL Server インスタンスの SQL のログインに正しくリンクします。 スクリプトはまた、変更の追跡を元に戻します。 必ず、データベースの名前を使用できるように、最後の **ALTER DATABASE** ステートメントを編集してください。
 
-```
+```sql
 CREATE USER axdeployuser FROM LOGIN axdeployuser
 EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
@@ -151,7 +150,7 @@ DEALLOCATE retail_ftx;
 
 ソース データベースで変更追跡が有効になっている場合は、ターゲット環境の新たなプロビジョニング データベースで有効にしてください。 変更追跡を有効にするには、**ALTER DATABASE** コマンドを使用します。
 
-```
+```sql
 ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
 ```
 
@@ -239,7 +238,7 @@ Microsoft SQL Server Management Studio インストーラーをダウンロー�
 - LCS で環境ページの **更新** タイルを使用し、ソース環境のプラットフォームに一致するように現在の環境のプラットフォームをアップグレードします。
 - データベースで必要なバージョンを調整する次のクエリを実行します。
 
-    ```
+    ```sql
     UPDATE SQLSYSTEMVARIABLES
 
     SET VALUE = 138

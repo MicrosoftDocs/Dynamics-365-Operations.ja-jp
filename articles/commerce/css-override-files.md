@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b5a50fc0c9060117cdddc0875446afc2edc12a11
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 3c40145ea76296c1b8df9284af820534e3c869d4
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915442"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001855"
 ---
 # <a name="work-with-css-override-files"></a>CSS 上書きファイルの作業
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のカスケード スタイル シート (CSS) 上書きファイルを使用する理由、タイミング、および方法について説明します。

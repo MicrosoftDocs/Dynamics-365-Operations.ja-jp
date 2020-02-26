@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 793de48badfa1dfd79e9bc2e99fc74db8bdf1eab
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 2b9c1eccbf532e1d7ec47142a2bc3870ef89c183
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658846"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033036"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
@@ -49,12 +49,16 @@ ms.locfileid: "2658846"
 ## <a name="runtime-class-declaration"></a>ランタイム: クラス宣言
 <strong>FormTemplateControl</strong> または <strong>FormTemplateControl</strong><em> から派生した型を拡張する X++ クラスを宣言します。***FormTemplateControl</em>* には、テンプレート ID やリソース バンドルなど、すべてのコントロールに必要な基本的なプロパティが含まれています。 次の例では、基本コントロール クラス、<strong>FormTemplateControl</strong> を拡張しています。
 
-    class MyControl extends FormTemplateControl
+```xpp
+class MyControl extends FormTemplateControl
+```
 
 ## <a name="runtime-formcontrolattribute"></a>ランタイム: FormControlAttribute
 **FormControlAttribute** 属性を X++ クラス宣言に適用する必要があります。
 
-    [FormControlAttribute(<Template ID>, <Resource Bundle Path>, <Build class name>))]
+```xpp
+[FormControlAttribute(<Template ID>, <Resource Bundle Path>, <Build class name>))]
+```
 
 以下の引数を供給する必要があります。
 
@@ -64,8 +68,10 @@ ms.locfileid: "2658846"
 
 次の例は、"MyControl" という名前のコントロールの標準的なクラスと属性の宣言を示しています。
 
-    [FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
-    class MyControl extends FormTemplateControl
+```xpp
+[FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
+class MyControl extends FormTemplateControl
+```
 
 ## <a name="runtime-formcommandattribute"></a>ランタイム: FormCommandAttribute
 **FormCommandAttribute** は、コントロール クラスのメソッドに適用されるため、メソッドをコントロールの JavaScript クラスから呼び出すことができます。 この属性を適用したメソッドは**コマンド**と呼ばれます。 **FormCommandAttribute** は、コントロールの JavaScript クラスから直接アクセスする必要がある X++ メソッドのみで使用します。 のみ使用します。 コマンドとしての役割を果たす X++ メソッドは、文字列の引数のみ受け入れることができます。 このメソッドは、文字列引数を他の型にシリアル化または逆シリアル化するために必要な操作を実行する必要があります。 **FormCommandAttribute** は、X++ 内からメソッドが使用される場合、X++ メソッドの動作に影響を与えません。 **FormCommandAttribute** は、JavaScript からアクセス可能な外のエンドポイントとして X++ メソッドを公開します。 したがって、すべてのコマンドは脅威モデル化およびエクスプロイトのためにテストされる必要があります。また、そのすべての引数について検証を実行する必要があります。 基礎となる X++ メソッドは、X++ からアクセスできないようにプライベート宣言する必要があります。 X++ コードがこのメソッドの動作にアクセスする必要がある場合は、個別の X++ メソッドは **FormCommandAttribute** なしで public として宣言する必要があります。 このパブリック メソッドには、X++と JavaScript の両方で必要な共有コードが含まれている必要があります。 **FormCommandAttribute** を使用した private X++ メソッドは、このパブリック メソッドを呼び出して、共有コードにアクセスできます。 この方法では、コア共有 X++ ロジックを実行する前に、JavaScript (引数の型の逆シリアル化、引数の検証、セキュリティの検証など) からの呼び出しに特定なロジックをコマンドで実行できます。 次の引数を **FormCommandAttribute** コンストラクターに指定します。
@@ -79,11 +85,13 @@ ms.locfileid: "2658846"
 
 次の例では、"SetText" という名前のコマンドを宣言しています。
 
-    [FormCommandAttribute("SetText")]
-    private void setText(str value)
-    {
-        // Add implementation code here.
-    }
+```xpp
+[FormCommandAttribute("SetText")]
+private void setText(str value)
+{
+    // Add implementation code here.
+}
+```
 
 ## <a name="runtime-formpropertyattribute"></a>ランタイム: FormPropertyAttribute
 **FormPropertyAttribute** は、コントロール クラスのメソッドに適用されるため、X++ メソッドをコントロールの JavaScript クラスから **FormProperty** ゲッター/セッターとして呼び出すことができます。 この属性を適用したメソッドは**プロパティ**と呼ばれます。 コントロールの JavaScript クラスから直接アクセスする必要がある X++ メソッドの **FormPropertyAttribute** のみ使用します。 **FormPropertyAttribute** は、X++ 内からメソッドが使用される場合、X++ メソッドの動作に影響を与えません。 すべてのプロパティは、ブラウザーにエンドポイントを公開します。 したがって、すべてのプロパティは脅威モデル化およびエクスプロイトのためにテストされる必要があります。 基礎となる X++ メソッドは、他の X++ コードからアクセスできないようにプライベート宣言する必要があります。 別の X++ コードがプロパティにアクセスする必要がある場合、別のパブリック X++ メソッドを **FormPropertyAttibute** なしで宣言し、このメソッドに共有プロパティ ロジックを移動します。 次に、このメソッドを **FormPropertyAttribute を持つプライベート X++ メソッドから呼び出します。この方法により、コア共有 X++ ロジックを実行する前に、JavaScript からの呼び出しに固有のロジック (引数の型の逆シリアル化、引数の検証、セキュリティの検証など) をプロパティで実行できます。** 基本となる X++ メソッドは、必要なタイプのプロパティを受け入れて返す必要があります。 目的の型が EDT である場合は、プロパティは、EDT の基本データ型を受け入れ、返す必要があります。 サポートされているプロパティの種類は次のとおりです。
@@ -103,7 +111,7 @@ ms.locfileid: "2658846"
 
 次の例は、一般的なプロパティ宣言を示しています。 ほとんどのプロパティは、以下のように取得/設定に同じ定型コードを共有します。 textProperty 変数は、このプロパティの FormProperty の後ろにあるフィールドです。
 
-```
+```xpp
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
 private str parmText(str _value = textProperty.parmValue())
 {
@@ -127,7 +135,7 @@ private str parmText(str _value = textProperty.parmValue())
 
 次の例は、典型的なコントロールの X++ ランタイム クラスで使用されている **FormProperty** を示しています。
 
-```
+```xpp
 [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
 class MyControl extends FormTemplateControl
 {             
@@ -177,44 +185,46 @@ class MyControl extends FormTemplateControl
 ## <a name="runtime-formbindingutilinitbinding-method"></a>ランタイム: FormBindingUtil::initbinding メソッド
 **FormBindingUtil** は、コントロール フレームワークで提供される API です。 データ ソースで FormProperties をデータ フィールドおよびデータ メソッドにバインドするために使用されます。 次の例では、DataSource1 という名前のデータ ソース上の "Value" という名前のデータ フィールドを、ランタイムクラスの textProperty FormProperty にバインドします。
 
-    [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
-    class MyControl extends FormTemplateControl
+```xpp
+[FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
+class MyControl extends FormTemplateControl
+{
+    FormProperty textProperty;
+
+    public void new(FormBuildControl _build, FormRun _formRun)
     {
-        FormProperty textProperty;
+        super(_build, _formRun);
+        this.setTemplateId("MyControl");
+        this.setResourceBundleName("/resources/html/MyControl");
+        textProperty = this.addProperty(
+        methodStr(MyControl, parmText), Types::String);
+    }
 
-        public void new(FormBuildControl _build, FormRun _formRun)
-        {
-            super(_build, _formRun);
-            this.setTemplateId("MyControl");
-            this.setResourceBundleName("/resources/html/MyControl");
-            textProperty = this.addProperty(
-            methodStr(MyControl, parmText), Types::String);
-        }
-
-        public void applyBuild()
-        {
-            BuildMyControl build;
+    public void applyBuild()
+    {
+        BuildMyControl build;
             
-            super();
+        super();
            
-            build = this.build();
-            if(build)
-            {
-                this.parmText(FormBindingUtil::initBinding(
-                "DataSource1", "Value", this.formRun()));
-            }
-        }
-
-        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-        private str parmText(str _value = textProperty.parmValue())
+        build = this.build();
+        if(build)
         {
-            if(!prmIsDefault(_value))
-            {
-                textProperty.setValueOrBinding(_value);
-            }
-            return textProperty.parmValue();
+            this.parmText(FormBindingUtil::initBinding(
+            "DataSource1", "Value", this.formRun()));
         }
     }
+
+    [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+    private str parmText(str _value = textProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
+        {
+            textProperty.setValueOrBinding(_value);
+        }
+        return textProperty.parmValue();
+    }
+}
+```
 
 ## <a name="design-time-the-x-build-class"></a>デザイン時間: X++ ビルド クラス
 ビルド クラスは、コントロールのデザイン時の動作を定義します。 このクラスは、プロパティ シートに表示されるプロパティと、フォーム デザイナーでモデル化されたときのコントロールの動作を決定します。 デザイン時クラスの仕事は、後でアクセスするために実行時クラスの設計時間情報を取り込むことです。
@@ -222,30 +232,34 @@ class MyControl extends FormTemplateControl
 ## <a name="design-time-class-declaration--formdesigncontrolattribute"></a>デザイン時間: クラス宣言 & FormDesignControlAttribute
 FormDesignControlAttribute は、フォームのデザイン ノードを右クリックしたときに、コントロールが Visual Studio フォーム デザイナーに表示されるために必要です。 FromDesignControlAttribute が欠落している場合は、コントロールは、必須の X++ コードを介してのみフォームに追加することができます (例えば、フォームの addControlEx メソッドを介して)。
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
-    {
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
 
-    }
+}
+```
 
 ## <a name="design-time-formdesignpropertyattribute"></a>デザイン時間: FormDesignPropertyAttribute
 デザイン時間クラスのメソッドにこの属性を配置すると、最初の引数により (および 2 番目の引数により指定されたセクションで) 指定された新しいプロパティが、プロパティの取得/設定メソッドとして動作する対応する X++ メソッドと共にこのコントロールのプロパティ シートに表示されます。
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
-    {
-        str text; 
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
+    str text; 
 
-        [FormDesignPropertyAttribute("Text", "Data")]
-        public str Text(str _value = text)
+    [FormDesignPropertyAttribute("Text", "Data")]
+    public str Text(str _value = text)
+    {
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
-            {
-                text = _value;
-            }
-            return text;
+            text = _value;
         }
+        return text;
     }
+}
+```
 
 ## <a name="design-time-formdesignproperty-attribute"></a>デザイン時間: FormDesignProperty** **属性
 プロパティ シート内の特殊な動作のために、標準の FormDesignPropertyAttribute と一緒に適用できるいくつかの FormDesignProperty 属性があります。 特殊なビヘイビアーには、プロパティを値のリストから選択できるコンボ ボックスとして有効にすることが含まれます。 使用されたさまざまな種類のリストが以下に列挙されています。 ユーザーがコンボ ボックスから項目を選択するたびに、その項目の文字列名が、その属性を使用して X++ メソッドのゲッター/セッターに渡されます。
@@ -273,62 +287,66 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 次の例は、フォーム開発者がデザイン タイム クラスのデータ ソースとデータ フィールドを指定できるようにするために使用される標準プロパティを示しています。
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
+    str dataSource; 
+    str dataField;
+    str dataMethod;
+
+    [FormDesignPropertyAttribute("Data source", "Data"),
+     FormDesignPropertyDataSourceAttribute]
+    public str DataSource(str _value = dataSource)
     {
-        str dataSource; 
-        str dataField;
-        str dataMethod;
-
-        [FormDesignPropertyAttribute("Data source", "Data"),
-         FormDesignPropertyDataSourceAttribute]
-        public str DataSource(str _value = dataSource)
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
-            {
-                dataSource = _value;
-            }
-            return dataSource;
+            dataSource = _value;
         }
-
-        [FormDesignPropertyAttribute("Data Field", "Data"),
-         FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
-        public str DataField(str _value = dataField)
-        {
-            if(!prmIsDefault(dataField))
-            {
-                dataField = _value;
-            }
-            return dataField;
-        }
-
-        [FormDesignPropertyAttribute("Data Method", "Data"),
-         FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
-        public str DataMethod(str _value = dataMethod)
-        {
-            if(!prmIsDefault(dataMethod))
-            {
-                dataMethod = _value;
-            }
-            return dataMethod;
-        }
+        return dataSource;
     }
+
+    [FormDesignPropertyAttribute("Data Field", "Data"),
+     FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
+    public str DataField(str _value = dataField)
+    {
+        if(!prmIsDefault(dataField))
+        {
+            dataField = _value;
+        }
+        return dataField;
+    }
+
+    [FormDesignPropertyAttribute("Data Method", "Data"),
+     FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
+    public str DataMethod(str _value = dataMethod)
+    {
+        if(!prmIsDefault(dataMethod))
+        {
+            dataMethod = _value;
+        }
+        return dataMethod;
+    }
+}
+```
 
 上記のようなデザイン時クラスを持つコントロールは、以下に示すように、指定されたデータ ソースと applyBuild メソッド内のデータ フィールドにバインドできます。
 
-    public void applyBuild()
+```xpp
+public void applyBuild()
+{
+    BuildMyControl build;
+
+    super();
+
+    build = this.build();
+    if(build)
     {
-        BuildMyControl build;
-
-        super();
-
-        build = this.build();
-        if(build)
-        {
-            this.parmText(FormBindingUtil::initBinding(
-            build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
-        }
+        this.parmText(FormBindingUtil::initBinding(
+        build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
     }
+}
+```
 
 データ フィールドとデータ メソッドの両方を FormBindingUtil::initBinding に渡すと、データ フィールド バインディングはデータ メソッド バインディングを上書きします。
 
@@ -341,11 +359,15 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 **data-dyn-bind**、データ バインディング属性は - 宣言 HTML-based API を使用して、要素の属性、プロパティおよび CSS、または DOM イベントの処理などの変更のような、多くの一般的な DOM 操作を標準化しています。 データ バインディング属性は、複雑な JavaScript を必要とせずにこれらの動作を可能にします。 複雑な JavaScript を記述するのではなく、データ バインド属性を使用することで、コントロールの設計、デバッグ、および維持をより簡単にすることによって、コントロールの開発者の貴重な時間を節約することができます。 ただし、シナリオが必要とする場合、複合 JavaScript が引き続き使用可能です。 データ バインディング属性は、HTML 要素の動作をコントロール開発者が提供する値に結合します。 指定された値は、単純な JavaScript [変数](https://www.w3schools.com/js/js_variables.asp)、JavaScript [比較](https://www.w3schools.com/js/js_comparisons.asp)、[算術](https://www.w3schools.com/js/js_arithmetic.asp)式、JavaScript [関数](https://www.w3schools.com/js/js_functions.asp)、JSON [オブジェクト](https://www.w3schools.com/js/js_json_objects.asp)のいずれかになります。 提供される値は、このドキュメントで説明されている API を使用して作成された、観察可能な変数でもあります。 指定された値が HTML 要素にバインドされる方法は、データ バインディング属性で使用されるバインディング ハンドラーによって決まります。 このドキュメントでは、サポートされているすべてのバインディング ハンドラーの一覧を提供します。 バインディング ハンドラーで使用する場合、データ バインディング属性には次の構文が必要です。 **data-dyn-bind** の構文は次のとおりです。
 
-    data-dyn-bind="[first binding handler]: [value to bind to]"
+```xpp
+data-dyn-bind="[first binding handler]: [value to bind to]"
+```
 
 データ バインディング属性はバインディング ハンドラーと値のペアのコンマ区切りリストを受け入れます。したがって、一度に複数のバインディング ハンドラーをバインディング属性に指定できます。 次の例では、div 要素の **visible** プロパティを true にバインドし、div 要素の **textContent** プロパティを "Hi" にバインドします。
 
-    data-dyn-bind="text: 'Hi', visible: true"
+```xpp
+data-dyn-bind="text: 'Hi', visible: true"
+```
 
 データ バインディング属性は、コントロール フレームワークによって認識されるカスタム HTML 属性です。 データ バインディング属性は、任意の HTML 要素に適用できます。 一部の HTML 要素には、バンディング ハンドラーが変更する動作がない可能性があります。 たとえば、**&lt;svg&gt;** 要素でのテキスト バインディング ハンドラーの使用は、**&lt;svg&gt;** 要素に textContent プロパティがないため、テキストを表示しません。 コントロール フレームワークは、実行時にコントロールのテンプレートで指定されたデータ バインディングを読み取り、実行します。 ブラウザーでのコントロールのライフサイクルは、次のように要約できます。
 
@@ -367,7 +389,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 次の例では、title 属性と name 属性を作成し、その値を設定します。
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="attr: {title: 'Hello', name: 'Greeting'}"></div>
 
@@ -377,7 +399,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 次の例では、式と関数を使用します。 ただし、下の例のようにインライン HTML として JavaScript 関数を使用することはお勧めできません。
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="attr: {title: false? 'Hello':'World', name: function(){return 'Greetings';}()}"></div>
 
@@ -401,7 +423,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 
 次の例は、要素がクリックされたときの警告メッセージ「Hello」を示しています。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -418,7 +440,7 @@ self.ElementClicked = function (event) {
 
 次の例では、子要素のクリック イベントが親要素までバブル アップできなくなります。 次の例では、子要素をクリックするとメッセージ「こんにちは」を含む警告が 1 つだけ表示されます。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -446,7 +468,7 @@ self.ElementClicked = function (event) {
 
 次の例では、ブラウザの既定の動作が実行できなくなります。 アンカー タグについては、既定のハイパーリンク動作が防止されるため、要素のクリック時にブラウザーがリンクに移動しません。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -460,7 +482,7 @@ self.LinkClicked = function (event) {
 </script>
 
 <!-- In your control’s template HTM file -->
-<a href="http://www.microsoft.com" data-dyn-bind="click: $control.LinkClicked">Click here</a>
+<a href="https://www.microsoft.com" data-dyn-bind="click: $control.LinkClicked">Click here</a>
 ```
 
 #### <a name="css"></a>css
@@ -481,7 +503,7 @@ self.LinkClicked = function (event) {
 
 CSS クラス名を追加する条件。 条件が true の場合は、CSS のクラス名は追加されます。 条件が false の場合は、CSS のクラス名は削除されます。 指定した条件が監視可能な値 ($ dyn.value 経由) に依存する場合、監視可能な値が変わるたびに条件が再評価され、関連する CSS クラス名が新しい条件に基づいて追加/削除されます。 次の例では、CSS クラス名 「red」、「green」、および「yellow」を追加します。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -507,7 +529,7 @@ self.yellow = $dyn.observable(true);
 
 イベント バインディング ハンドラーへの引数の詳細については、[jQuery - .bind()](https://api.jquery.com/bind/) を参照してください。 次の例では、mouseover イベントにサブスクライブし、要素がポイントされたときにアラートを表示します。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -535,7 +557,7 @@ self.elementHovered = function (event) { alert($dyn.format('{0}',$(event.target)
 
 **foreach** のスコープの範囲内では、次のスコープ変数が有用であり、反復可能な子要素である $data、インデックス、コントロール、ユーザー独自のスコープ変数で使用できます。 次の例では、**foreach** を使用して配列の各色の期間要素を表示します。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -558,7 +580,7 @@ self.colors = ['Red','Blue','Green'];
 
 次の例では、入れ子になった **foreach** バインディングを示しています。 この例では、インデックス フレームワーク スコープ変数とカスタム スコープ変数を使用して、親要素からバインド コンテキストにアクセスする方法を示します。
 
-```
+```xpp
     // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -617,7 +639,7 @@ self.colors = [
 
 子要素を表示するかどうかを決定します。 次の例では、**show** および **text** 要素を条件付きでバインドしています。
 
-```
+```xpp
     // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -662,7 +684,7 @@ self.show(true);
 
 バインディング ハンドラーが適用される要素の幅をピクセル単位で指定します。 次の例では、**MyControl** のサイズを指定しています。
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <!-- this boilerplate binding ensures that the control’s container is sized based on the height and width properties -->
 <div id="MyControl" data-dyn-bind="sizing: $dyn.layout.sizing($control)"></div>
@@ -671,7 +693,7 @@ self.show(true);
 
 次の例では、**bigbox** 変数の値に応じてコントロールを大きくまたは小さくします。
 
-```
+```xpp
 // Later on, the value of the “show” observable changes to true
 <script>
 ...
@@ -696,7 +718,7 @@ self.bigBox = true;
 
 バインドするテキスト。 次の例では、div 要素の textContext プロパティをコントロールの text プロパティにバインドします。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -721,7 +743,7 @@ self.text = "Hello";
 
 スコープ変数名をキーとし、その値がスコープ変数の初期値であるオブジェクト配列。 次の例では、"Hello" および "World" という名前のスコープ変数を作成し、その値を表示します。
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="vars: {$myVar: 'Hello', $myObs: $dyn.observable('World')}">
 <span data-dyn-bind="text: $dyn.format('{0} {1}!', $myVar, $myObs)">
@@ -751,7 +773,7 @@ Hello World!
 
 要素が表示されるかどうかを決定します。 次の例では、コントロールの最も外側の div 要素の可視性を設定します。
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -771,7 +793,7 @@ self.Visible(false); // set the X++ observable property to false
 
 *$control* スコープ変数は、コントロールの JavaScript インスタンスのプロパティと関数にアクセスできる HTML テンプレートでバインドを提供します。 次の例では、div 要素の表示をコントロールの表示プロパティにバインドします。
 
-```
+```xpp
 <div id="MyControl" data-dyn-bind="visible: $control.Visible"></div>
 ```
 
@@ -788,7 +810,7 @@ $index スコープ変数は、**foreach** バインディングに含まれる�
 
 **Visible** プロパティは、ベース JavaScript クラスから継承されます (**$dyn.ui.Controls.apply** 経由)。 ランタイムクラスが基本 **FormControl** X++ クラスから継承する X++ には、**Visible** プロパティもあります。 このプロパティを表示されたバインディング ハンドラーにそのままバインドし、コントロールの HTML テンプレートのルート要素に配置します。 このフレームワークは残りの部分を処理します。 次の例は、表示プロパティの使用方法を示しています。
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div id="MyControl" data-dyn-bind="visible: $control.Visible"></div>
 ```
@@ -800,7 +822,7 @@ $index スコープ変数は、**foreach** バインディングに含まれる�
 
 オブザーバブルの変更に関数をサブスクライブします。 廃棄を使用することをお勧めします。
 
-```
+```xpp
 $dyn.observe(observable, observer, [context], [disposableObserver])
 ```
 
@@ -828,13 +850,13 @@ $dyn.observe(observable, observer, [context], [disposableObserver])
 
 サブスクライブ解除に使用されたオブザーバブル、ID、Dispose 関数 (パブリック)。次の例は、myObs オブザーバブルをサブスクライブし、myObs オブザーバブルの値が変化すると必ず指定された関数を実行します。
 
-```
+```xpp
 $dyn.observe(myObs, function (value) { console.log(value);});
 ```
 
 次の例は、$dyn.value を使用してオブザーバブルの値にアクセスするだけで、関数がオブザーバブルの値に自動的にサブスクライブする方法を示しています。 最初の関数は、他の 2 つの監視可能な値 (FirstName と LastName) の値に依存する監視可能な値のように扱われます。 観測可能なオブジェクト (FirstName または LastName) のいずれかが値を変更するたびに、最初の関数の値も変更されます。 この場合、2 つ目の関数 (コールバック関数) は、観察可能な値の連結をコンソールに記録します。
 
-```
+```xpp
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 $dyn.observe(
@@ -851,7 +873,7 @@ $dyn.observe(
 
 次の例は、前の例と同様に実行されます。 ただし、この例では、連結を処理するために、myComp という名前の計算されたオブザーバブルを使用します。
 
-```
+```xpp
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 self.myComp = $dyn.computed(function () {
@@ -875,7 +897,7 @@ $dyn.observe(
 
 監視可能な変数を作成します。
 
-```
+```xpp
 $dyn.observable([initial value])
 ```
 
@@ -891,7 +913,9 @@ $dyn.observable([initial value])
 
 新しく作成された observable。次の例では、「Hello」という名前の変数を作成し、それを監視します。
 
-    var greeting = $dyn.observable("Hello");
+```xpp
+var greeting = $dyn.observable("Hello");
+```
 
 #### <a name="dynvalue"></a>$dyn.value
 
@@ -899,7 +923,7 @@ $dyn.observable([initial value])
 
 監視可能な変数の値にアクセス。 オブサーバー関数 (バインディング ハンドラーへ渡されるバインディング式だけでなく、**$dyn.observe** または **$dyn.computed** に渡されるオブザーバーなど) の内部から **$dyn.value** が呼び出されると、 観測可能なオブジェクトへの依存関係が作成されます。 これにより、オブザーバブルの値が変更されるたびにバインディング ハンドラーまたはコールバックが再実行されます。 この依存関係は **$dyn.value** を使用すると自動的に作成されるため、このような依存関係を意図的に作成する場合は **$dyn.value** のみを使用することが重要です。 依存関係を作成せずに observable の値にアクセスするには、$dyn.peek を使用する必要があります。
 
-```
+```xpp
 $dyn.value(observable)
 ```
 
@@ -915,7 +939,7 @@ $dyn.value(observable)
 
 監視可能なプロパティの現在の値。次の例では、observable という名前の変数を返し、コンソールに出力します。
 
-```
+```xpp
 console.log($dyn.value(observable));
 ```
 
@@ -925,7 +949,7 @@ console.log($dyn.value(observable));
 
 依存関係の作成なしで、監視可能な変数の値にアクセス。 依存関係の詳細については、$dyn.value 機能を参照してください。
 
-```
+```xpp
 $dyn.peek(observable)
 ```
 
@@ -941,7 +965,7 @@ $dyn.peek(observable)
 
 監視可能な値の現在の値。次の例では、observable という名前の変数を返し、コンソールに出力します。
 
-```
+```xpp
 console.log($dyn.peek(observable));
 ```
 
@@ -951,7 +975,7 @@ console.log($dyn.peek(observable));
 
 機能を監視範囲と共にラッピングします。 観測可能なオブジェクトを、**$dyn.value** 機能を使用して機能からアクセスする場合、その観測可能なオブジェクトの値が変更されるたびにこの機能を再度実行するようになります。 **$dyn.peek** を使用してアクセスされるオブザーバブルは、値が変わったときに関数を再実行しません。
 
-```
+```xpp
 $dyn.computed(observer, [context], [disposableObserver])
 ```
 
@@ -1000,7 +1024,7 @@ $dyn.computed(observer, [context], [disposableObserver])
 
 指定された関数が返されたときに呼び出すコールバック関数。 コールバックには、呼び出された関数が返す値が渡されます。 次の例では、**printName** 関数で **apply** 関数を呼び出します。
 
-```
+```xpp
 self.Name = "Joanne M Gordon";
 var printName = function () {
     console.log(this.Name);
@@ -1010,7 +1034,7 @@ $dyn.callFunction(printName, self);
 
 次の例では、**getWholeName** 関数を呼び出します。
 
-```
+```xpp
 var getWholeName = function (first, middle, last) {
     var wholeName = first + " " + middle + " " + last;
     return wholeName;
@@ -1048,7 +1072,7 @@ $dyn.callFunction(getWholeName, null, [firstName , middleName, lastName], printN
 
 ##### <a name="example-1"></a>例 1
 
-```
+```xpp
 var first = "Joanne";
 var middle = "M";
 var last = "Gordon";
@@ -1073,7 +1097,7 @@ var $dyn.format("Your name is : {0} {1} {2}", first, middle, last);
 
 識別子が見つかった場合の、現在のカルチャ内のラベル文字列。 それ以外の場合、提供された識別子を文字列として返します。 次の例では、"greeting" という名前のラベルを返して出力します。
 
-```
+```xpp
 Globalize.addCultureInfo("en", {
     messages: {
         "greeting": "Hello!"

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4ba47e2e433ddbdb90632a29507fefdc29db9449
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d3f0ccfc14798e51af30bd005130d10b4ee56fa9
+ms.sourcegitcommit: 6407f25c943f43e132abfb2d9b12bd1bd9db465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183312"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "2951794"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
@@ -43,7 +43,7 @@ X++ では、ファクトリはリフレクションを使用して、次のタ�
 
 X++ では、2 つの拡張フレームワークは同じ目的で機能します。 ファクトリ メソッドの実装担当者は、使用する拡張フレームワークを決定します。
 
-+ [SysExtension](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [SysExtension](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
 
   - この拡張フレームワークは、利用しやすくするためにカスタム属性を使用します。
   - 同じインスタンスが繰り返し作成されるときに、パフォーマンスを多少節約する単一をサポートします。 この拡張フレームワークは、ステートレスなサブクラスに特に便利です。

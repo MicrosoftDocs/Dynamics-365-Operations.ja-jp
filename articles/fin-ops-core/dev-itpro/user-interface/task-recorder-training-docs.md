@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812652"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006198"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>タスク レコーダーによるドキュメントやトレーニングの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "2812652"
 このトピックでは、タスク レコーダーとタスク ガイド、タスク記録の作成方法、また Microsoft タスク ガイドのカスタマイズ方法とそれをヘルプに含める方法について説明します。
 
 > [!IMPORTANT]
-> Dynamics 365 Talent 用のタスク ガイドを記録できますが、それをビジネス プロセス モデラー (BPM) ライブラリに保存したり、またはこの時点でヘルプ ウィンドウから開くことはできません。 ローカルまたはネットワーク上の場所に保存することはでき、タスク レコーダーを使用して開き再生します。 
+> Dynamics 365 Human Resources 用のタスク ガイドを記録できますが、それをビジネス プロセス モデラー (BPM) ライブラリに保存したり、またはこの時点でヘルプ ウィンドウから開くことはできません。 ローカルまたはネットワーク上の場所に保存することはでき、タスク レコーダーを使用して開き再生します。 
 
 <a name="learn-about-task-recorder"></a>タスク レコーダーについて学ぶ
 -------------------------

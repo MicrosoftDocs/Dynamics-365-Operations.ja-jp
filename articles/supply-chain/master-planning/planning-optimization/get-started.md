@@ -3,7 +3,7 @@ title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773995"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971467"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ ms.locfileid: "2773995"
 
 1. LCS にサインインし、目的の環境を開きます。
 1. **完全な詳細**に移動します。
-1. **メンテナンス**を選択するか、**環境アドイン** クイック タブまで下にスクロールします。
+1. **環境アドイン** クイック タブまで下にスクロールします。
 1. **新しいアドインのインストール**を選択します。
 1. **計画の最適化**を選択します。
 1. インストール ガイドに従って、契約条件に同意します。
 1. **インストール**を選択します。
+1. **環境アドイン** クイック タブに、計画最適化がインストールされていることを確認する必要があります。
+1. 数分後、**インストールしています**が**インストール済み**に変わります (ページを更新する必要があります)。 インストールすると、Dynamics 365 Supply Chain Management で計画最適化を有効にする準備が整います。
 
 ### <a name="planning-optimization-integration"></a>計画の最適化の統合
 
-計画の最適化アドインをマスター プランに使用するかどうかを構成するには、**マスター プラン** \> **セットアップ** \> **計画の最適化の統合** \> **統合パラメーター** の順に進みます。
+計画の最適化アドインをマスター プランに使用するかどうかを構成するには、**マスター プラン** \> **セットアップ** \> **計画最適化パラメーター**の順に進みます。
 
 #### <a name="connection-status"></a>接続状態
 

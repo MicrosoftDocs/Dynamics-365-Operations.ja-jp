@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 49cdd6bb1d3189ce216b53a0dca7ba2d91b224e9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: acc41a419d5f530a781d3f803bfb1b6fc10440bb
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812518"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003868"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -295,6 +295,6 @@ Windows Server 2016 の Active Directory Federation Services (AD FS) は必要�
 - Microsoft Excel と Microsoft Word のアドインを実行するには、Windows 用の Microsoft Office 2016 (またはそれ以降) をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合に関するトラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 - Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
-## <a name="hardware-and-software-requirements-for-retail-components"></a>小売コンポーネントのハードウェアおよびソフトウェア要件
+## <a name="hardware-and-software-requirements-for-commerce-components"></a>コマース コンポーネントのハードウェアおよびソフトウェア要件
 
-現在、Finance + Operations は Retail コンポーネントを含んでいません。
+現在、Finance + Operations はコマース コンポーネントを含んでいません。

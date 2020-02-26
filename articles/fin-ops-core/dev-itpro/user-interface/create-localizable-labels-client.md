@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d727d43cbb02c1caa18cfb4460044b8aa2b100d
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 8f5a99bd8028aac7e208d0e310eb67bb781eb067
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627572"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029378"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 
@@ -50,38 +50,50 @@ ms.locfileid: "2627572"
 ## <a name="3-request-the-label-file-as-a-javascript-file-by-using-resource-manager"></a>3. リソース マネージャーを使用して、ラベル ファイルを JavaScript ファイルとして要求する
 タグ読み込みスクリプトを使用して、JavaScript ファイルを読み込みます。 ローディング タグは、ラベル リソース コントローラーがそこにあるため、/Resources/Labels のラベル ファイルを参照する必要があります。 **注記:** 拡張可能なコントロールの場合、コントローラーは自動的にラベル ファイル名を JavaScript のラベル ID の先頭に追加します。
 
-    <script src="/Resources/Labels/ClockControl.js"></script>
+```javascript
+<script src="/Resources/Labels/ClockControl.js"></script>
+```
 
 返される JavaScript ファイルには、次の例のようなコードが含まれます。
 
-    Globalize.addCultureInfo("en-us", {
-        messages: {
-            ClockControl_Seconds: "seconds"
-        }
-    });
+```javascript
+Globalize.addCultureInfo("en-us", {
+    messages: {
+        ClockControl_Seconds: "seconds"
+    }
+});
+```
 
 カルチャ情報は、現在のユーザーのカルチャに基づいて自動的に挿入されます。 コントロールの部分でユーザーのカルチャの設定、変更、読み取りに必要なアクションはありません。 上記のコードは、jQuery Globalize ラベル記憶域に各ラベル文字列を追加します。 HTML と JavaScript 全体でラベルを参照することができます。 スクリプト ファイルにある JavaScript コードは、ブラウザーによってファイルが読み込まれた時点で実行されます。 したがって、ラベルはすぐに使用できる状態になります。 HTML に他のスクリプト読み込みタグの**後**、ラベルスクリプトの読み込みタグを必ず追加してください。 スクリプト読み込みタグは、上から順に処理されます。 最後にラベル スクリプトを読み込むことによって、他のスクリプトが競合を起こさないようにするか、スクリプト ラベル ファイルに設定されているラベルを上書きすることができます。
 
 ## <a name="4-use-localizable-labels-in-html-and-javascript"></a>4. HTML と JavaScript でローカライズ可能なラベルを使用する
 次のフレームワーク アプリケーション プログラミング インターフェイス (API) は、HTML (内部 **data-dyn-bind**) または JavaScript でラベルにアクセスするために使用できます。 **HTML**
 
-    <!-- Example of using a localizable label with a Label Control. Supply the label to the "Text" property on the control -->
-    <div data-dyn-role="Label" data-dyn-bind="Text: $dyn.label('ClockControl_Seconds')"></div>
-    <!-- Example of using a localizable label with a basic HTML element. Supply the label to the "text" binding handler for the element -->
-    <div data-dyn-bind="text: $dyn.label('ClockControl_Seconds')"></div>
+```javascript
+<!-- Example of using a localizable label with a Label Control. Supply the label to the "Text" property on the control -->
+<div data-dyn-role="Label" data-dyn-bind="Text: $dyn.label('ClockControl_Seconds')"></div>
+<!-- Example of using a localizable label with a basic HTML element. Supply the label to the "text" binding handler for the element -->
+<div data-dyn-bind="text: $dyn.label('ClockControl_Seconds')"></div>
+```
 
 **JavaScript**
 
-    /* Example of using a localizable label in JavaScript. */
-    var string mylabel = $dyn.label('ClockControl_Seconds');
+```javascript
+/* Example of using a localizable label in JavaScript. */
+var string mylabel = $dyn.label('ClockControl_Seconds');
+```
 
 HTML または JavaScript の変数を介してラベル ID を渡すこともできます。 **HTML**
 
-    <div data-dyn-bind="text: $dyn.label($data.SecondsLabel)"></div>
+```javascript
+<div data-dyn-bind="text: $dyn.label($data.SecondsLabel)"></div>
+```
 
 **JavaScript**
 
-    var string mylabel = $dyn.label(self.SecondsLabel);
+```javascript
+var string mylabel = $dyn.label(self.SecondsLabel);
+```
 
 **$dyn.label** API は、適切な名前のラベルを検索し、ユーザーにテキストを表示するために使用する文字列を返します。 この API は、現在のユーザーのカルチャに基づいてラベルを自動的に選択します。
 

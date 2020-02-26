@@ -1,6 +1,6 @@
 ---
 title: クラウド配置のシステム要件
-description: このトピックは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
+description: このトピックでは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
 ms.date: 09/16/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 89f8f3de14ae7f6aa152e6dae72a7000fe9d3714
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: da8d8e25ab76bff3a2f55e1673f0efbd14ebc7b5
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811520"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029831"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -48,7 +48,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
-- アプリは、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 この待機時間は、ブラウザー クライアントからアプリをホストする Microsoft Azure データ センターまでの待機時間のことです。 [AzureSpeed.com](http://www.azurespeed.com) にてネットワークの待機時間をテストすることをお勧めします。
+- アプリは、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 この待機時間は、ブラウザー クライアントからアプリをホストする Microsoft Azure データ センターまでの待機時間のことです。 [AzureSpeed.com](https://www.azurespeed.com) にてネットワークの待機時間をテストすることをお勧めします。
 - アプリに対する帯域幅の要件は、シナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) を超える帯域幅が必要です。 ただし、ワークスペースや大がかりなカスタマイズを含む高度な伝送データ要件があるシナリオには、帯域幅を増やすことを勧めます。
 
 一般に、アプリはインターネットに最適化されます。 ブラウザー クライアントから Azure データセンターへのラウンド トリップの数は非常に小さく、全伝送データは圧縮されます。

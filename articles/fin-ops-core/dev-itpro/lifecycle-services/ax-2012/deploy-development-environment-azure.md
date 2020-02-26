@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: df28d81831799e0e37e987e250d99ab951400700
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c36db050438fec57495f59b0c16911add6710130
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812067"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983610"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 
@@ -78,7 +78,7 @@ Azure サブスクリプションに Lifecycle Services プロジェクトを接
 
 -   [仮想ネットワークの概要](https://msdn.microsoft.com/library/windowsazure/jj156007.aspx)
 -   [仮想ネットワークのコンフィギュレーション タスク](https://msdn.microsoft.com/library/jj156206.aspx)
--   [テスト用にシミュレーションしたハイブリッド クラウド環境を設定する](http://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
+-   [テスト用にシミュレーションしたハイブリッド クラウド環境を設定する](https://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
 -   [Windows Server 2012 ルーティングおよびリモート アクセスサービス (RRAS) を使用した Azure 仮想ネットワークのサイト間 VPN](https://msdn.microsoft.com/library/dn636917.aspx)
 -   [管理ポータルに仮想ネットワーク ゲートウェイを構成する](https://msdn.microsoft.com/library/azure/jj156210.aspx)
 
@@ -253,7 +253,7 @@ Azure に開発環境を配置するには、以下の手順に従ってくだ�
 11. **完了**をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](https://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 14. **次へ** をクリックします。
@@ -375,10 +375,10 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 <tr class="even">
 <td>Microsoft Dynamics AX ウェブ検索ツールの使用</td>
 <td><ul>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212924">開発者用の Web 検索</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212925">システム管理者用の Web 検索</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212922">アプリケーション ユーザー用の Web 検索</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=194311">結合された Web 検索</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212924">開発者用の Web 検索</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212925">システム管理者用の Web 検索</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212922">アプリケーション ユーザー用の Web 検索</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=194311">結合された Web 検索</a></li>
 </ul></td>
 </tr>
 </tbody>

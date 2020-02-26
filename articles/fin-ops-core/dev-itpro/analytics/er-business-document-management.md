@@ -3,7 +3,7 @@ title: ビジネス ドキュメント管理の概要
 description: このトピックでは、ER フレームワークのビジネス ドキュメント管理機能を使用する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933911"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957370"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -122,7 +122,7 @@ ER コンフィギュレーションのインポートの詳細については�
 4. ページを更新して、新しい機能にアクセスします。
 
 >[!NOTE]
-> また、新しいビジネス ドキュメント管理インターフェイスを使用するために、**ビジネス ドキュメント管理の Office 同様の UI エクスペリエンス**を有効にする必要があります。
+> ビジネス ドキュメント管理で新しいドキュメント ユーザー インターフェイスを使用する方法の詳細については、[ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス](er-business-document-management-new-template-ui.md) を参照してください。
 
 ![機能管理ワークスペース](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![ドキュメント管理のドキュメント タイプを設定](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>パラメータの設定
+### <a name="SetupBdmParameters">パラメータの設定</a>
 
 基本ビジネス ドキュメント管理パラメータは、**ビジネス ドキュメント パラメーター**ページで設定できます。 特定のユーザーのみがページにアクセスできます。 これには、次のものが含まれます。
 
@@ -166,6 +166,9 @@ ER コンフィギュレーションのインポートの詳細については�
 ![ビジネス ドキュメント管理パラメーターの設定](./media/BDM-Overview-BDMSetting.png)
 
 選択したドキュメント タイプは会社固有であり、選択したドキュメント タイプがコンフィギュレーションされている会社のビジネス ドキュメント管理をユーザーが使用する場合に使用されます。 ユーザーがもう一つの会社のビジネス ドキュメント管理を使用している際、この会社にコンフィギュレーションされていない場合は、選択された同じドキュメント タイプが使われます。 ドキュメント タイプが構成されている際、**SharePoint ドキュメント**タイプ フィールドで選択されたものの代わりに使用されます。
+
+> [!NOTE]
+> **SharePoint ドキュメント タイプ**のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Office 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Office 365 のテンプレートの作成](#EditInOffice365) を参照してください。
 
 ## <a name="configure-access-permissions"></a>アクセス許可のコンフィギュレーション
 
@@ -258,23 +261,18 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>他のプロバイダーが所有する編集テンプレートを開始
 
-1. ビジネス ドキュメント管理ワークスペースで、**新規ドキュメント**を選択します。
+1. ビジネス ドキュメント管理ワークスペースで、テンプレートとして使用するドキュメントを選択します。
 
-![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM_overview_new_template1.png)
+![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingTemplate3.png)
 
-2. テンプレートとして使用するドキュメントを選択します。
+3. **新しいドキュメント**を選択し、**タイトル** フィールドで、必要に応じて編集可能なテンプレートのタイトルを変更します。 このテキストは、自動的に作成される ER 形式コンフィギュレーションに名前を付けるために使用されます。 編集したテンプレートを含む、このコンフィギュレーション (**顧客 FTI レポート (GER) コピー**) のドラフト バージョンは、現在のユーザーに対して ER 形式を実行するよう自動的に設定されます。 同時に、基本 ER 形式コンフィギュレーションからの変更されていない元のテンプレートを使用して、他のユーザーがこの ER 形式を実行します。
+4. **名前**フィールドで、自動的に作成される編集可能なテンプレートの最初のリビジョンの名前を変更します。
+5. **コメント**フィールドで、自動的に作成された編集可能なテンプレートのリビジョンのコメントを変更します。
+6. **OK** を選択して、編集プロセスの開始を確認します。
 
-![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM_overview_new_template2.png)
+![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingTemplate4.png)
 
-3. **ドキュメントの作成**をクリックします。
-4.  **タイトル**フィールドで、必要に応じて編集可能なテンプレートのタイトルを変更します。 このテキストは、自動的に作成される ER 形式コンフィギュレーションに名前を付けるために使用されます。 編集したテンプレートを含む、このコンフィギュレーション (**顧客 FTI レポート (GER) コピー**) のドラフト バージョンは、現在のユーザーに対して ER 形式を実行するよう自動的に設定されます。 同時に、基本 ER 形式コンフィギュレーションからの変更されていない元のテンプレートを使用して、他のユーザーがこの ER 形式を実行します。
-5. **名前**フィールドで、自動的に作成される編集可能なテンプレートの最初のリビジョンの名前を変更します。
-6. **コメント**フィールドで、自動的に作成された編集可能なテンプレートのリビジョンの注釈を変更します。
-7. **OK** を選択して、編集プロセスの開始を確認します。
-
-![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM_overview_new_template3.png)
-
-**新規ドキュメント**オプションは、別のプロバイダー (この例では Microsoft) によって提供されている ER フォーマット コンフィギュレーションのテンプレートに対して、常に使用できます。 **新規ドキュメント**をクリックすると、現在のプロバイダーと他のプロバイダーが所有するすべてのテンプレートが表示されます。 テンプレートを選択すると、編集用に開かれます。 編集したテンプレートは、自動的に生成される新規 ER 形式コンフィギュレーションで保存されます。
+**新規ドキュメント**オプションは、リビジョンのない現在の、および別のプロバイダー (この例では Microsoft) によって提供されている ER フォーマット コンフィギュレーションのテンプレートに対して、常に使用できます。 編集したテンプレートは、自動的に生成される新規 ER 形式コンフィギュレーションで保存されます。
 
 ### <a name="start-editing-a-template"></a>テンプレートの編集開始
 
@@ -282,7 +280,7 @@ ER コンフィギュレーションのインポートの詳細については�
 2. **名前**フィールドで、自動的に作成される編集可能なテンプレートの最初のリビジョンの名前を変更します。
 3. **コメント**フィールドで、自動的に作成された編集可能なテンプレートのリビジョンの注釈を変更します。
 
-    ![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM_overview_new_template4.png)
+    ![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingTemplate5.png)
 
 5. **OK** を選択して、編集プロセスの開始を確認します。
 
@@ -290,13 +288,16 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Office 365 でテンプレートを編集
+### <a name="EditInOffice365">Office 365 でテンプレートを編集</a>
 
-Office 365 機能を使用して、テンプレートを変更します。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、ER フレームワーク用にコンフィギュレーションされているプライマリ テンプレートのストレージ (既定では、Azure blob storage) に保存されている編集可能なテンプレートに対して自動的に保存されます。
+Office 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure blob storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
 
 ![ビジネス ドキュメント管理のテンプレートのエディター ページ](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Office のデスクトップ アプリケーションでのテンプレートの編集
+### <a name="EditInOfficeDesktopApp">Office のデスクトップ アプリケーションでのテンプレートの編集</a>
+
+> [!NOTE]
+> この機能は、**SharePoint ドキュメント タイプ** パラメーターが正しくコンフィギュレーションされている場合にのみ使用可能です。 詳細については、[パラメーターのコンフィギュレーション](#SetupBdmParameters) を参照してください。
 
 1. **デスクトップ アプリケーションで開く**オプションを選択して、Office のデスクトップ アプリケーション (この例では Excel) の機能を使用し、テンプレートを変更します。 編集可能なテンプレートは、固定保管場所から、SharePoint フォルダーとしてビジネス ドキュメント管理パラメータでコンフィギュレーションされている一時的な保管場所にコピーされます。
 2. Office のデスクトップ Excel アプリケーションにて、一時的なファイルの保管場所からテンプレートを開くことを確認します。
@@ -386,7 +387,7 @@ Office 365 機能を使用して、テンプレートを変更します。 た�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>**ドキュメントの編集**を選択したが、Finance and Operations の **BDM テンプレート エディター**ページが開く代わりに、Office 365 の Web ページに送信されました。
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>**ドキュメントの編集**を選択したが、Finance and Operations の **BDM テンプレート エディター** ページが開く代わりに、Office 365 の Web ページに送信されました。
 これは、Office 365 リダイレクトに関する既知の問題です。 これは、最初に Office 365 に署名したときに発生します。 この問題を回避するには、ブラウザーの**戻る**ボタンを選択して戻ることができます。
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>最初のアプリケーション セッションで Office 365 を使用してテンプレートを編集する方法と、テンプレートを調整して 2 番目のアプリケーション セッションでテンプレートを使う方法を理解し、変更が生成されたビジネス ドキュメントにどのように影響するかを確認します。 Office デスクトップ アプリケーションを使用してこれを行うことができますか。
@@ -411,3 +412,4 @@ Office 365 機能を使用して、テンプレートを変更します。 た�
 [ER を使用して生成されるドキュメントへの画像や図形の埋め込み](electronic-reporting-embed-images-shapes.md)
 
 [Power BI にデータをプルするよう電子申告 (ER) を構成する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

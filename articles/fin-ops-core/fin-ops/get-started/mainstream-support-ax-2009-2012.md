@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 933aa8e6edd224b019425896b9a5e844f6aef69e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9c3e0b45aad726308a0e305dc481f1fa3a7a6af7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180510"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006160"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 
@@ -32,10 +32,10 @@ Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 �
 
 Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、それらの変更を必要に応じて選択的に統合できます。 顧客やパートナーは、Lifecycle Services (LCS) で公開されている、および問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
 
-Dynamics 365 Finance、Supply Chain Management、小売およびテナントなどの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
+Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
 
 - Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page)」を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、利用可能な更新プログラムを使い、Dynamics AX 2012 R3 で Finance and Operations アプリを更新する必要があります。 アップグレードに関する追加情報は、「[AX 2012 から Finance and Operations アプリへのアップグレード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)」トピックにあります。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) トピックにあります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

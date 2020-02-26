@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4351ac324044b44a16cb64f20af79f0f5b1cc23d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ad12693bc638ee8cac12fec7e45a54e73ff0fad4
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191674"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026206"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
@@ -35,7 +35,9 @@ ms.locfileid: "2191674"
 
 文字列や別の文字列内の式を検索します。
 
-    int match(str pattern, str text)
+```xpp
+int match(str pattern, str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -137,7 +139,9 @@ ms.locfileid: "2191674"
 ## <a name="stralpha"></a>strAlpha
 文字列の英数字のみをコピーします。
 
-    str strAlpha(str _text)
+```xpp
+str strAlpha(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -155,19 +159,23 @@ ms.locfileid: "2191674"
 
 ### <a name="example"></a>例
 
-    static void strAlphaExample(Args _arg)
-    {
-            str s;
-            ;
-            s = strAlpha("?a*bc123.");
-            print s;
-            pause;
-    }
+```xpp
+static void strAlphaExample(Args _arg)
+{
+    str s;
+    ;
+    s = strAlpha("?a*bc123.");
+    print s;
+    pause;
+}
+```
 
 ## <a name="strcmp"></a>strCmp
 2 つの文字列を比較します。
 
-    int strCmp(str text1, str text2)
+```xpp
+int strCmp(str text1, str text2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -184,15 +192,19 @@ ms.locfileid: "2191674"
 
 このメソッドで実行される比較では、大文字と小文字が区別されます。
 
-    print strCmp("abc", "abc"); //Returns the value 0.
-    print strCmp("abc", "ABC"); //Returns the value 1.
-    print strCmp("aaa", "bbb"); //Returns the value -1.
-    print strCmp("ccc", "bbb"); //Returns the value 1.
+```xpp
+print strCmp("abc", "abc"); //Returns the value 0.
+print strCmp("abc", "ABC"); //Returns the value 1.
+print strCmp("aaa", "bbb"); //Returns the value -1.
+print strCmp("ccc", "bbb"); //Returns the value 1.
+```
 
 ## <a name="strcolseq"></a>strColSeq
 すべての大文字を小文字に変換し、アクセントのあるすべての文字を、対応するアクセントのない小文字に変換します。
 
-    str strColSeq(str text)
+```xpp
+str strColSeq(str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -217,17 +229,21 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 次の例では、**abcdeabcde** を出力します。
 
+```xpp
     static void strColSeqExample(Args _arg)
     {
             ;
             print strColSeq("");
             pause;
     }
+```
 
 ## <a name="strdel"></a>strDel
 指定されたサブ文字列が削除された文字列のコピーを作成します。
 
-    str strDel(str _text, int _position, int _number)
+```xpp
+str strDel(str _text, int _position, int _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -245,13 +261,17 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 **strDel** 関数は、**substr** 関数を補完します。
 
-    strDel("ABCDEFGH",2,3); //Returns the string "AEFGH".
-    strDel("ABCDEFGH",4,3); //Returns the string "ABCGH".
+```xpp
+strDel("ABCDEFGH",2,3); //Returns the string "AEFGH".
+strDel("ABCDEFGH",4,3); //Returns the string "ABCGH".
+```
 
 ## <a name="strfind"></a>strFind
 指定された文字のいずれかの 1 番目の文字列を検索します。
 
-    int strFind(str _text, str _characters, int _position, int _number)
+```xpp
+int strFind(str _text, str _characters, int _position, int _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -270,15 +290,19 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 文字列の先頭から最後まで検索するには、*\_位置*パラメーターの値として **1** を使用します。 *\_番号*パラメーターの値がマイナスである場合、システムは指定された位置から後方に文字数を検索します。 検索では大文字と小文字が区別されません。 次に例を示します。
 
-    strFind("ABCDEFGHIJ","KHD",1,10); //Returns the value 4 (the position where "D" was found).
-    strFind("ABCDEFGHIJ","KHD",10,-10); //Returns the value 8 (the position where "H" was found).
+```xpp
+strFind("ABCDEFGHIJ","KHD",1,10); //Returns the value 4 (the position where "D" was found).
+strFind("ABCDEFGHIJ","KHD",10,-10); //Returns the value 8 (the position where "H" was found).
+```
 
 **strFind** 関数は、**strNFind** 関数を補完します。
 
 ## <a name="strfmt"></a>strFmt
 指定された文字列を書式設定し、すべての n を n 番目の引数に置き換えます。
 
-    str strFmt(str _string, ...)
+```xpp
+str strFmt(str _string, ...)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -296,35 +320,39 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 ### <a name="example"></a>例
 
-    static void strFmtExampleJob(Args _arg)
-    {
-            System.Double sysDouble;
-            real r = 8.3456789;
-            int  i = 42;
-            utcDateTime utc = str2DateTime("2008-01-16 13:44:55" ,321); // 321 == YMD.
-            str  s;
-            ;
-            s = strFmt("real = %1, int = %2, utcDateTime = %3, [%4]", r, i, utc);
-            info("X1:  " + s);
-            //
-            sysDouble = r;
-            s = System.String::Format("{0:##.####}", sysDouble);
-            info("N1:  " + s);
-            //
-            s = System.String::Format("{0,6:C}", sysDouble); // $
-            info("N2:  " + s);
-            /**********  Actual Infolog output
-            Message (02:16:05 pm)
-            X1:  real = 8.35, int = 42, utcDateTime = 1/16/2008 01:44:55 pm, [%4]
-            N1:  8.3457
-            N2:   $8.35
-            **********/
-    }
+```xpp
+static void strFmtExampleJob(Args _arg)
+{
+    System.Double sysDouble;
+    real r = 8.3456789;
+    int  i = 42;
+    utcDateTime utc = str2DateTime("2008-01-16 13:44:55" ,321); // 321 == YMD.
+    str  s;
+    ;
+    s = strFmt("real = %1, int = %2, utcDateTime = %3, [%4]", r, i, utc);
+    info("X1:  " + s);
+    //
+    sysDouble = r;
+    s = System.String::Format("{0:##.####}", sysDouble);
+    info("N1:  " + s);
+    //
+    s = System.String::Format("{0,6:C}", sysDouble); // $
+    info("N2:  " + s);
+    /**********  Actual Infolog output
+    Message (02:16:05 pm)
+    X1:  real = 8.35, int = 42, utcDateTime = 1/16/2008 01:44:55 pm, [%4]
+    N1:  8.3457
+    N2:   $8.35
+    **********/
+}
+```
 
 ## <a name="strins"></a>strIns
 1 つの文字列を別の文字列に挿入して文字列を作成します。
 
-    str strIns(str _text1, str _text2, int _position)
+```xpp
+str strIns(str _text1, str _text2, int _position)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -342,13 +370,17 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 **strIns** 関数は、**strDel** 関数を補完します。 *\_位置*パラメーターの値が元の文字列より長くなる場合、挿入する文字列が元の文字列の末尾に追加されます。
 
-    strIns("ABFGH","CDE",3); //Returns the string "ABCDEFGH".
-    strIns("ABCD","EFGH",10); //Returns the string "ABCDEFGH".
+```xpp
+strIns("ABFGH","CDE",3); //Returns the string "ABCDEFGH".
+strIns("ABCD","EFGH",10); //Returns the string "ABCDEFGH".
+```
 
 ## <a name="strkeep"></a>strKeep
 2 番目の入力文字列で指定する最初の入力文字列の文字のみを使用して文字列を作成します。
 
-    str strKeep(str _text1, str _text2)
+```xpp
+str strKeep(str _text1, str _text2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -363,15 +395,19 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 ### <a name="remarks"></a>備考
 
-    strKeep("ABBCDDEFGHB","BCD"); //Returns the string "BBCDDB".
-    strKeep("abcZcba","bc") //Returns the string "bccb".
+```xpp
+strKeep("ABBCDDEFGHB","BCD"); //Returns the string "BBCDDB".
+strKeep("abcZcba","bc") //Returns the string "bccb".
+```
 
 **strKeep** 関数は、**strRem** 関数を補完します。
 
 ## <a name="strlen"></a>strLen
 指定した文字列の長さを計算します。
 
-    int strLen(str text)
+```xpp
+int strLen(str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -385,13 +421,17 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 ### <a name="remarks"></a>備考
 
-    strLen("ABC"); //Returns the value 3.
-    strLen("ABCDEFGHIJ"); //Returns the value 10.
+```xpp
+strLen("ABC"); //Returns the value 3.
+strLen("ABCDEFGHIJ"); //Returns the value 10.
+```
 
 ## <a name="strline"></a>strLine
 複数の行にまたがる文字列から 1 つの行を取得します。
 
-    str strLine(str string, int count)
+```xpp
+str strLine(str string, int count)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -410,7 +450,7 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
 
 ### <a name="example"></a>例
 
-```X++
+```xpp
 str mytxt = "first-line\nsecond-line\nlast-line";
 // Prints "second-line".
 print strLine(mytxt,1);
@@ -421,7 +461,9 @@ print strLine(mytxt,2);
 ## <a name="strltrim"></a>strLTrim
 テキスト文字列から先行する空白を削除します。
 
-    str strLTrim(str text)
+```xpp
+str strLTrim(str text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -439,13 +481,17 @@ print strLine(mytxt,2);
 
 ### <a name="example"></a>例
 
-    // Returns the text string "ABC-DEFG".
-    strLTrim("   ABC-DEFG");
+```xpp
+// Returns the text string "ABC-DEFG".
+strLTrim("   ABC-DEFG");
+```
 
 ## <a name="strlwr"></a>strLwr
 指定された文字列のすべての文字を小文字に変換します。
 
-    str strLwr(str _text)
+```xpp
+str strLwr(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -463,17 +509,20 @@ print strLine(mytxt,2);
 
 ### <a name="example"></a>例
 
-    static void strLwrExample(Args _args)
-    {
-            // Returns the text string "abcdd55efghij".
-            print strLwr("Abcdd55EFGHIJ");
-            pause;
-    }
-
+```xpp
+static void strLwrExample(Args _args)
+{
+    // Returns the text string "abcdd55efghij".
+    print strLwr("Abcdd55EFGHIJ");
+    pause;
+}
+```
 ## <a name="strnfind"></a>strNFind
 指定した文字リストに含まれていない文字の 1 番目の文字列の一部を検索します。
 
-    int strNFind(str _text, str _characters, int _position, int _number)
+```xpp
+int strNFind(str _text, str _characters, int _position, int _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -492,17 +541,21 @@ print strLine(mytxt,2);
 
 検索では大文字と小文字が区別されません。 文字列の先頭から最後まで検索するには、*\_位置*パラメーターの値として **1** を使用します。 マイナス記号が*\_番号*パラメーターの前にある場合、*\_位置*パラメーターで指定された位置から逆の順序で文字が検索されます。
 
-    strNFind("ABCDEFGHIJ","ABCDHIJ",1,10); //Returns the value 5 (the position of "E");
-    strNFind("CDEFGHIJ","CDEFGIJ",10,-10); //Returns the value 6 (the position of "H").
-    strNFind("abcdef","abCdef",3,2) //Returns the value 0.
-    strNFind("abcdef", "abcef",3,2) //Returns the value 4.
+```xpp
+strNFind("ABCDEFGHIJ","ABCDHIJ",1,10); //Returns the value 5 (the position of "E");
+strNFind("CDEFGHIJ","CDEFGIJ",10,-10); //Returns the value 6 (the position of "H").
+strNFind("abcdef","abCdef",3,2) //Returns the value 0.
+strNFind("abcdef", "abcef",3,2) //Returns the value 4.
+```
 
 **strNFind** 関数は、**strFind** 関数を補完します。
 
 ## <a name="strpoke"></a>strPoke
 別の文字列で文字列の一部を上書きします。
 
-    str strPoke(str _text1, str _text2, int _position)
+```xpp
+str strPoke(str _text1, str _text2, int _position)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -520,14 +573,18 @@ print strLine(mytxt,2);
 
 新しい文字列は、元の文字列より長くすることができます。 ただし、*\_位置*パラメーターの値がを文字列の長さを超える場合、元の文字列が置換なしで返されます。
 
-    strPoke("12345678","AAA",3); //Returns the string "12AAA678".
-    strPoke("abcde","4567",4); //Returns the string "abc4567".
-    strPoke("abcde", "4567", "10"); //Returns the string "abcde".
+```xpp
+strPoke("12345678","AAA",3); //Returns the string "12AAA678".
+strPoke("abcde","4567",4); //Returns the string "abc4567".
+strPoke("abcde", "4567", "10"); //Returns the string "abcde".
+```
 
 ## <a name="strprompt"></a>strPrompt
 指定されたピリオド文字数の後に、コロンと空白文字が続く文字列を追加します。
 
-    str strPrompt(str _string, _int len)
+```xpp
+str strPrompt(str _string, _int len)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -544,25 +601,31 @@ print strLine(mytxt,2);
 
 特別な場合では、*\_len* パラメーターの値が元の文字列の長さより少し大きい場合のみ、末尾へのスペース追加に最も高い優先順位が付与されます。 次に、優先順位がコロンに指定されます。 期間には、最下位の優先順位が付けられます。 *\_len* パラメーターの負の値は、後ろにスペースを付けた入力文字列を返します。
 
-    strPrompt("ab",-1); //Returns "ab ".
-    strPrompt("ab",3); //Returns "ab ".
-    strPrompt("ab",4); //Returns "ab: ".
-    strPrompt("ab",5); //Returns "ab.: ".
-    strPrompt("ab",6); //Returns "ab..: ".
+```xpp
+strPrompt("ab",-1); //Returns "ab ".
+strPrompt("ab",3); //Returns "ab ".
+strPrompt("ab",4); //Returns "ab: ".
+strPrompt("ab",5); //Returns "ab.: ".
+strPrompt("ab",6); //Returns "ab..: ".
+```
 
 ### <a name="example"></a>例
 
-    static void JobStrPromptDemo(Args _args)
-    {
-            // Printed string is "[abc..: ]"
-            print "[", strPrompt("abc", 7), "]";
-            pause;
-    }
+```xpp
+static void JobStrPromptDemo(Args _args)
+{
+    // Printed string is "[abc..: ]"
+    print "[", strPrompt("abc", 7), "]";
+    pause;
+}
+```
 
 ## <a name="strrem"></a>strRem
 別の文字列から 1 つの文字列で指定されている文字を削除します。
 
-    str strRem(str text1, str text2)
+```xpp
+str strRem(str text1, str text2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -579,15 +642,19 @@ print strLine(mytxt,2);
 
 この関数は、大文字小文字を区別します。
 
-    strRem("abcd_abcd","Bc"); //Returns the string "abd_abd".
-    strRem("ABCDEFGABCDEFG","ACEG"); //Returns the string "BDFBDF".
+```xpp
+strRem("abcd_abcd","Bc"); //Returns the string "abd_abd".
+strRem("ABCDEFGABCDEFG","ACEG"); //Returns the string "BDFBDF".
+```
 
  この関数は、**strKeep** 関数を補完します。
 
 ## <a name="strrep"></a>strRep
 文字の文字列を繰り返します。
 
-    str strRep(str _text, str _number)
+```xpp
+str strRep(str _text, str _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -604,19 +671,23 @@ print strLine(mytxt,2);
 
 次の例では、テキスト文字列 **ABABABABABAB** を出力します。
 
-    static void strRepExample(Args _arg)
-    {
-            str strL;
-            ;
-            strL = strRep("AB",6);
-            print strL;
-            pause;
-    }
+```xpp
+static void strRepExample(Args _arg)
+{
+    str strL;
+    ;
+    strL = strRep("AB",6);
+    print strL;
+    pause;
+}
+```
 
 ## <a name="strrtrim"></a>strRTrim
 文字列の末尾から空白文字を削除します。
 
-    str strRTrim(str _text)
+```xpp
+str strRTrim(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -630,15 +701,19 @@ print strLine(mytxt,2);
 
 ### <a name="remarks"></a>備考
 
-    strRTrim("ABC-DEFG- "); //Returns the string "ABC-DEFG-".
-    strRTrim(" CD "); //Returns " CD".
+```xpp
+strRTrim("ABC-DEFG- "); //Returns the string "ABC-DEFG-".
+strRTrim(" CD "); //Returns " CD".
+```
 
 **strRTrim** 関数は、**strLTrim** 関数を補完します。
 
 ## <a name="strscan"></a>strScan
 別の文字列と一致する文字列を検索します。
 
-    int strScan(str _text1, str _text2, int _position, int _number)
+```xpp
+int strScan(str _text1, str _text2, int _position, int _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -657,13 +732,17 @@ print strLine(mytxt,2);
 
 この比較では大文字と小文字は区別されません。 *\_位置*パラメーターが **1** 未満の値は **1** として扱われます。 スキャンの方向は、*\_number* パラメーターで指定されている符号で制御されます。 プラス記号は、連続する各比較が文字列の末尾に 1 つ近い位置から開始することを示します。 マイナス記号は、各比較が文字列の先頭に 1 つ近い位置から開始することを示します。
 
-    strScan("ABCDEFGHIJ","DEF",1,10); //Returns the value 4.
-    strScan ("ABCDEFGHIJ","CDE",10,-10); //Returns the value 3.
+```xpp
+strScan("ABCDEFGHIJ","DEF",1,10); //Returns the value 4.
+strScan ("ABCDEFGHIJ","CDE",10,-10); //Returns the value 3.
+```
 
 ## <a name="strupr"></a>strUpr
 文字列内のすべての文字を大文字に変換します。
 
-    str strUpr(str _text)
+```xpp
+str strUpr(str _text)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -683,16 +762,20 @@ print strLine(mytxt,2);
 
 次の例は **ABCDD55EFGHIJ** を出力します。
 
-    static void strUprExample(Args _args)
-    {
-            print strUpr("Abcdd55EFGhiJ");
-            pause;
-    }
+```xpp
+static void strUprExample(Args _args)
+{
+    print strUpr("Abcdd55EFGhiJ");
+    pause;
+}
+```
 
 ## <a name="substr"></a>subStr
 文字列の一部を取得します。
 
-    str subStr(str _text, int _position, int _number)
+```xpp
+str subStr(str _text, int _position, int _number)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -710,11 +793,12 @@ print strLine(mytxt,2);
 
 マイナス記号が*\_番号*パラメーターの値より前にある場合、指定された位置から後方に部分文字列を選択します。
 
-    subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
-    subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-    subStr("abcdef"),2,99) //Returns the string "cdef".
-    subStr("abcdef",2,3) //Returns the string "bcd".
-    subStr("abcdef",2,-3); //Returns the string "ab".
-
+```xpp
+subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
+subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
+subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,3) //Returns the string "bcd".
+subStr("abcdef",2,-3); //Returns the string "ab".
+```
 
 

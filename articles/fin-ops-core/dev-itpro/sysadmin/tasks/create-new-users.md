@@ -3,7 +3,7 @@ title: 新規ユーザーの作成
 description: ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。
 author: maertenm
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c347a34a389c32d005cc8086c4a1349ecb8a698
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6d884dfe30be5684a90925d4d2d9ab7eebca5b44
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570524"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029812"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 
@@ -30,9 +30,12 @@ ms.locfileid: "2570524"
 ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。
 
 ## <a name="associate-a-user-with-a-license-new-license-types-only"></a>ユーザーをライセンスに関連付ける (新しいライセンスタイプのみ)
-2019 年 10 月に追加された新しいライセンスタイプのいずれかを使用している場合は、ユーザーはライセンスに関連付けられている必要があります。 ライセンスに関連付けられているユーザーは、最初にログインしたときに、ロールを持たないシステムユーザーとして自動的に追加されます。 ライセンスに関連付けられていないユーザーには、警告メッセージが表示されます。
+2019 年 10 月に追加された新しいライセンスタイプのいずれかを使用している場合は、ユーザーはライセンスに関連付けられている必要があります。 ライセンスに関連付けられているユーザーは、最初にログインしたときに、ロールを持たないシステムユーザーとして自動的に追加されます。
 
 システム管理者は、[Microsoft 365 管理者センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)で、[ユーザーにライセンスを割り当てる](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)ことができます。
+
+## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>外部のユーザーをライセンスに関連付ける (新しいライセンスタイプのみ)
+環境が配置されたテナントの外部ユーザーは、ライセンスを割り当てることができるように、ホスト テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示されている必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) を参照してください。
 
 ## <a name="add-a-new-user"></a>新しいユーザーを追加する
 1. **システム管理 \> ユーザー \> ユーザー**の順に移動します。
@@ -42,7 +45,7 @@ ms.locfileid: "2570524"
 5. **ドメイン**フィールドに、ユーザーのドメインを入力します。  
 6. **エイリアス**フィールドに、ユーザーのエイリアスを入力します。  
 7. **法人**フィールドで、目的の会社を選択します。 
-8. **ユーザーのロール**クイックタブで、**ロールの割り当て**を選択し、[ユーザーをセキュリティロールに割り当てます。](assign-users-security-roles.md)
+8. **ユーザーのロール** クイック タブで、**ロールの割り当て**を選択し、ユーザーをセキュリティ ロールに割り当てます。 詳細については、[ユーザーのセキュリティ ロールへの割り当て](assign-users-security-roles.md) を参照してください。
 9. **OK** を選択します。
 10. **保存** を選択します。
 

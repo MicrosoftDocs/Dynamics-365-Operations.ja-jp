@@ -1,6 +1,6 @@
 ---
 title: データ タスクの自動化
-description: このトピックでは、Finance and Operations におけるデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
+description: このトピックでは、Finance and Operations でのデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/04/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: 4892564e2afc748510153d2981e54de7cecd27ad
-ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
+ms.openlocfilehash: 45f92ee7216799832aced37df6922cad4ccab028
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2888673"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033011"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
@@ -30,7 +30,6 @@ ms.locfileid: "2888673"
 
 > [!IMPORTANT]
 > 現時点では、オンプレミス環境ではデータ タスクの自動化はサポートされていません。
-
 > データタスクの自動化を実行するユーザーは、アプリケーションの環境および LCS プロジェクトと同じテナントに存在するユーザーである必要があります。
 
 データ タスクの自動化のために次の方法をお勧めします。
@@ -66,7 +65,7 @@ ms.locfileid: "2888673"
 ### <a name="manifest-root"></a>マニフェスト ルート
 **\<TestManifest\>** 要素は、マニフェストのルートです。 その他のすべての要素はこの要素の子です。
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup />
@@ -91,7 +90,7 @@ ms.locfileid: "2888673"
 ### <a name="data-files"></a>データ ファイル
 **\<DataFile\>** 要素は、マニフェスト内のタスクが使用するデータ パッケージとデータ ファイルを定義します。 データ ファイルは、LCS プロジェクトの LCS アセット ライブラリまたは共有アセット ライブラリのいずれかになければなりません。
 
-```
+```xml
 <DataFile ID='SharedSetup' name='Demo data-7.3-100-System and Shared'  assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsHQUS' name='Demo data-7.3-200-Financials-HQUS' assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
@@ -109,7 +108,7 @@ ms.locfileid: "2888673"
 ### <a name="data-project-definition"></a>データ プロジェクト定義
 **\<JobDefinition\>** 要素は、データ プロジェクト定義を定義します。 マニフェストには複数のジョブ定義があります。
 
-```
+```xml
 <JobDefinition ID='ImportJobDefinition_1'>
     <Operation>Import</Operation>
     <ConfigurationOnly>No</ConfigurationOnly>
@@ -157,7 +156,7 @@ ms.locfileid: "2888673"
 ### <a name="entity-setup"></a>エンティティ設定
 **エンティティ設定** セクションは、マニフェストのタスクが使用するエンティティの特性を定義します。 マニフェスト内のタスクによって使用されるエンティティごとに、1 つずつ複数の定義が存在する可能性があります。
 
-```
+```xml
 <EntitySetup ID='Generic'>
     <Entity name='*'>
         <SourceDataFormatName>Package</SourceDataFormatName>
@@ -210,7 +209,7 @@ ms.locfileid: "2888673"
 ### <a name="test-groups"></a>テスト グループ
 テスト グループは、マニフェストの関連するタスクを整理するために使用できます。 マニフェストには複数のテスト グループがあります。
 
-```
+```xml
 <TestGroup name='Set up Financials'>
     <TestCase Title='Import shared set up data package' ID='3933885' RepeatCount='1' TraceParser='off' TimeOut='20'>
         <DataFile RefID='SharedSetup' />
@@ -291,7 +290,7 @@ ms.locfileid: "2888673"
 ## <a name="example-1-configuration-management-for-data-projects"></a>例 1: データ プロジェクトの構成管理
 **\<ConfigurationOnly\>** 要素はデータプロジェクトに構成タスクを作成するために使用できます。 ConfigurationOnly が はい に設定されている場合は、データプロジェクトが作成されるのみで実行はされません。 これにより、環境に渡るデータプロジェクトの管理を自動でおこなうことができます。
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup>
@@ -373,7 +372,7 @@ ms.locfileid: "2888673"
 ## <a name="example-2-automated-setup-of-demo-data"></a>例 2: デモ データの自動設定
 次のマニフェストは、デモ データ パッケージが共有アセット ライブラリに格納されている場合の 3 つの法人のデモ データの設定を示しています。 以前の例とこの例との違いは、データプロジェクトを実際に実行して、デモデータを設定することです。 これは、ConfigurationOnly オプションを使用しない、またはマニフェストの一貫性に対してこれを使うことに対して、いいえと設定することで達成されます。
 
-```
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <TestManifest name='Data management demo data set up'>
     <SharedSetup>

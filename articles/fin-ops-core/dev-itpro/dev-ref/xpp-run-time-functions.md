@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5585aac0d3cf4cb44734e49733ed8e650ac43175
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 71c59a744faf1eabd24eb45dd330be3a4a979915
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769569"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033019"
 ---
 # <a name="x-runtime-function-resources"></a>X++ ランタイム関数リソース
 
@@ -40,11 +40,15 @@ X++ 言語は、約 200 のシステム関数を提供しており、これら�
 
 X++ ランタイム関数のロジックは、次の .NET アセンブリでも実装されています。
 
-    Microsoft.Dynamics.AX.Xpp.Support.DLL
+```xpp
+Microsoft.Dynamics.AX.Xpp.Support.DLL
+```
 
 このアセンブリ内で、X++ ランタイム関数は次のクラスの静的メソッドとして実装されます。
 
-    Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
+```xpp
+Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
+```
 
 ## <a name="categories-and-functions"></a>カテゴリおよび機能
 次のテーブルは、X++ 関数のカテゴリのみを一覧表示して説明しています。 これらのカテゴリは、多数の機能を理解するのに役立つものです。 ただし、カテゴリでは任意の正式コンストラクトが表されません。
@@ -169,7 +173,9 @@ static void beepExample(Args _args)
 ## <a name="newguid"></a>newGuid
 グローバル一意識別子 (GUID) を作成します。
 
-    guid newGuid()
+```xpp
+guid newGuid()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -179,18 +185,22 @@ GUID。
 
 次の例では、GUID を作成します。
 
-    static void newGuidExample(Args _arg)
-    {
-            guid myGuid;
+```xpp
+static void newGuidExample(Args _arg)
+{
+    guid myGuid;
 
-            myGuid = newguid();
-            print strfmt("The GUID is: %1", myGuid);
-    }
+    myGuid = newguid();
+    print strfmt("The GUID is: %1", myGuid);
+}
+```
 
 ## <a name="sleep"></a>sleep
 指定されたミリ秒間、現在のスレッドの実行を一時停止します。
 
-    int sleep(int _duration)
+```xpp
+int sleep(int _duration)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -204,15 +214,16 @@ GUID。
 
 ### <a name="example"></a>例
 
-    static void sleepExample(Args _arg)
-    {
-            int seconds = 10;
-            int i;
+```xpp
+static void sleepExample(Args _arg)
+{
+    int seconds = 10;
+    int i;
 
-            i = sleep(seconds*1000);
-            print "job slept for " + int2str(i/1000) + " seconds";
-    }
-
+    i = sleep(seconds*1000);
+    print "job slept for " + int2str(i/1000) + " seconds";
+}
+```
 
 
 

@@ -14,15 +14,15 @@ ms.search.scope: AX 2012, Operations
 ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3816bed58a74d886b59c3863b61047813c455d21
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: ca904049e3814e57cf832400f7a4144316a70f85
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812124"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983608"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 

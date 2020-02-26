@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: d9c34b3ae3f55d3316b8a6d21318f446d06494de
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1051cd79260ad9429cd9c4decf62208b31c47ee
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191815"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033040"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 
@@ -44,7 +44,7 @@ ms.locfileid: "2191815"
 
 ## <a name="examples"></a>例
 
-```
+```xpp
 AtlCommandInventMark
 
 AtlCommandSalesReturnOrderLineRegister
@@ -58,7 +58,7 @@ AtlCommandSalesReturnOrderLineRegister
 
 ### <a name="example"></a>例
 
-```
+```xpp
 salesLine.pick().setInventDims([locationOut]).setQty(pickedQty).execute();
 ```
 
@@ -84,7 +84,7 @@ salesLine.pick().setInventDims([locationOut]).setQty(pickedQty).execute();
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 onHandAdjustment.forItem(item).setQuantity(10).execute();
     
 picking.forSalesLine(salesLine).setInventDims([warehouse, batch1]).setQuantity(10).execute();

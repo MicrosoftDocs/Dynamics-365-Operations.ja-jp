@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91550918f39a40e5b98fccfd6afcd499c189c462
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4c900cd404aae367176ef1e45345f0ee248656f0
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183448"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026099"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017年7月) (バージョン7.2) 以降のリリースでサポートされています。
+> この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) (バージョン7.2) 以降のリリースでサポートされています。
 
 ## <a name="introduction"></a>はじめに
 このトピックでは、Microsoft Power BI Embedded を使用して提供される、分析ワークスペースとレポートのセキュリティ保護を支援するアプリケーション開発者向けにウォークスルーを提供します。 ビューアーのアクセス権に基づいてレポートおよびデータ セット両方へのアクセスを保護するための推奨方法について説明します。 このトピックに記載されている手法を使用することにより、ユーザーからレポートを非表示にし、有効な会社のコンテキストに基づいて、特定のユーザーに適したデータ セットを表示するためにレポートをフィルター処理することができます。
@@ -65,7 +65,7 @@ Power BI レポート フィルターと **フィルター** ウィンドウは�
 1. 分析ワークスペースのメニュー項目を追加します。
 2. ユーザーがメニュー項目にアクセスできることを確認するために、フォームの初期化に **hasMenuItemAccess** アプリケーション プログラミング インターフェイス (API) が使用されていることを確認します。
 
-    ```
+    ```xpp
     // Note: secure entry point into the Workspace's Analytics report
     if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
     {

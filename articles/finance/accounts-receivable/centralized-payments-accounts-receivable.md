@@ -3,7 +3,7 @@ title: 売掛金勘定の集中支払
 description: 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じトランザクションを複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59942fadb0fb702c59c95f75359f1a3036e4668f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178713"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000096"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>売掛金勘定の集中支払
 
@@ -88,8 +88,8 @@ Fabrikam は、Fabrikam 顧客 4000 の Northwind Traders について 580.00 �
 
 | アカウント                             | 借方金額 | 貸方金額 |
 |-------------------------------------|--------------|---------------|
-| 売掛金 (Fabrikam East) | 600.00       |               |
-| 売上 (Fabrikam East)               |              | 600.00        |
+| 売掛金 (Fabrikam East) | 580.00       |               |
+| 売上 (Fabrikam East)               |              | 580.00        |
 
 ### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Fabrikam 顧客 4000 について支払が Fabrikam で受領および転記される
 

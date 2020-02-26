@@ -1,0 +1,50 @@
+---
+title: 大量採用プロジェクトの作成
+description: この手順では、大量雇用プロジェクトを設定するプロセスについて説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 19d2f41f92aef7739e8e36012e207b96af155190
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3009710"
+---
+# <a name="create-a-mass-hire-project"></a>大量採用プロジェクトの作成
+
+
+
+この手順では、大量雇用プロジェクトを設定するプロセスについて説明します。 リクルーターは大量雇用プロジェクトを使用して、簡単に複数の職位を作成し、多数の作業者をこれらの職位に採用することができます。 この手順を開始するには、[人事管理] > [採用] > [大量雇用プロジェクト] の順に移動します。 この手順の作成に使用するデモ データの会社は USMF です。
+
+1. [新規] をクリックします。
+2. [大量雇用プロジェクト] フィールドに、値を入力します。
+3. [説明] フィールドに値を入力します。
+4. [プロジェクト開始] フィールドに、日付を入力します。
+5. [プロジェクト終了] フィールドに、日付を入力します。
+6. [プロジェクトを開く] をクリックします。
+7. [はい] をクリックします。
+8. [職位を開く] をクリックします。
+9. [数量] フィールドに、作成する職位の数を入力します。
+    * 開始日は、新しい作業者の採用日付になります。  
+    * 終了日は、新しい作業者の退職日になります。  
+    * 新しい作業者が従業員または契約者かどうかを指定します。  
+10. [ジョブ] フィールドで、ドロップ ダウン ボタンをクリックして、職位を作成するジョブを選択します。
+11. 一覧で、目的のレコードを見つけ、選択します。
+12. 一覧で、選択された行のリンクをクリックします。
+    * 既定のフルタイム相当値は、選択したジョブから取得されます。 必要に応じて手動でこれを変更できます。  
+    * 必要に応じて、新しい職位の [部門] を選択します。  
+13. [OK] をクリックします。
+

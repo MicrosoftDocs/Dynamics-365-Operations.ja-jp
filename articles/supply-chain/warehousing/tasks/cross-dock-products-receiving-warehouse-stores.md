@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563392"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004091"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>受入倉庫から店舗までのクロスドッキング製品
 
@@ -31,7 +31,7 @@ ms.locfileid: "1563392"
 
 1. [すべての発注書] に移動します。
 2. 一覧から購買注文ポリシーを選択し、リンクをクリックして注文を開きます。
-3. アクション ウィンドウで、[小売] をクリックします。
+3. アクション ウィンドウで、小売りとコマースをクリックします。
 4. [クロスドッキング] をクリックします。
 5. [編集] をクリックします。
     * [明細] セクションの品目をフィルタ処理するためにカテゴリを使用できます。  

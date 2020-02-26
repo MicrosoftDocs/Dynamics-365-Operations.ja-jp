@@ -3,7 +3,7 @@ title: 著作権に関する注意事項の追加
 description: このトピックでは、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914577"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025485"
 ---
 # <a name="add-a-copyright-notice"></a>著作権に関する注意事項の追加
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
@@ -48,8 +48,8 @@ ms.locfileid: "2914577"
 1. ナビゲーション ウィンドウで、**フッター**の横にある省略記号ボタン (**...**) を選択してから、**モジュールの追加**を選択します。
 1. ダイアログ ボックスで、**フッター カテゴリ**を選択し、**OK** を選択します。
 1. ナビゲーション ウィンドウで、**フッター カテゴリ**の横にある省略記号ボタンを選択してから、**モジュールの追加**を選択します。
-1. ダイアログ ボックスで、**コンテンツ リッチ ブロック項目**を選択し、**OK** を選択します。
-1. ナビゲーション ウィンドウで、**コンテンツ リッチ ブロック項目**を選択します。
+1. ダイアログ ボックスで、**テキスト ブロック**を選択し、**OK** を選択します。
+1. 左のナビゲーション ウィンドウで、**テキスト ブロック**を選択します。
 1. 右側のプロパティ ウィンドウの、**段落**フィールドで、著作権に関するメッセージを追加します。 たとえば、**(C) Fabrikam 2019** と入力します。
 1. **保存**を選択し、**チェックイン**を選択してから、**公開**を選択します。
 1. **テンプレート**に移動し、テンプレートを選択してから、**チェックアウト**を選択します。

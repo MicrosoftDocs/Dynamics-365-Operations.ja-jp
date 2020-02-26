@@ -8,6 +8,12 @@
         - name: Talent の新機能および変更された機能
           href: whats-new.md
           items:
+            - name: 2020 年 1 月 21 日
+              href: whats-new-talent-january-21-2020.md
+            - name: 2020 年 1 月 14 日
+              href: whats-new-talent-january-14-2020.md
+            - name: 2020 年 1 月 7 日
+              href: whats-new-talent-january-7-2020.md
             - name: 2019 年 12 月 17 日
               href: whats-new-talent-december-17-2019.md
             - name: 2019 年 12 月 12 日
@@ -28,12 +34,12 @@
               href: whats-new-talent-october-8-2019.md
             - name: 2019 年 10 月 1 日
               href: whats-new-talent-october-1-2019.md
-            - name: 2019 年 9 月 17 日
-              href: whats-new-talent-september-17-2019.md
-            - name: 2019 年 9 月 10 日
-              href: whats-new-talent-september-12-2019.md
             - name: 新機能アーカイブ 2019
               items:
+                - name: 2019 年 9 月 17 日
+                  href: whats-new-talent-september-17-2019.md
+                - name: 2019 年 9 月 10 日
+                  href: whats-new-talent-september-12-2019.md
                 - name: 2019 年 8 月 27 日
                   href: whats-new-talent-august-28-2019.md
                 - name: 2019 年 8 月 22 日
@@ -136,18 +142,14 @@
           href: talent-updates.md
         - name: Talent のプロビジョニング
           href: provisioning-talent.md
-        - name: Core HR インスタンスのコピー
-          href: hr-copy-instance.md
-        - name: Talent 環境の削除
-          href: remove-talent-environment.md
         - name: 機能の管理
           href: access-preview-feature.md
-        - name: オンボード プロビジョニング
+        - name: Onboard のプロビジョニング
           href: modular-app-tech-faq.md
-        - name: Power Apps アプリの埋め込み
+        - name: Attract および Onboard からのデータのエクスポート
+          href: attract-onboard-export-data.md
+        - name: Microsoft Power Apps の埋め込み
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Common Data Service の Core HR エンティティ
-          href: CoreHREntities.md
         - name: Talent に関するサポートの利用
           href: talent-support.md
     - name: Attract による組織のスタッフ配置
@@ -232,266 +234,19 @@
           href: onboard-view-status.md
         - name: 採用チームの作成
           href: onboard-create-team.md
-    - name: Core HR による従業員の管理
-      items:
-        - name: 従業員の編成
-          items:
-            - name: 部門、職務、職位を使用した従業員の編成
-              href: departments-jobs-positions.md
-            - name: 職務のコンポーネントの設定
-              href: create-job.md
-            - name: 合理化された従業員の入力とナビゲーション
-              href: streamlined-employee-entry.md
-            - name: 部門の作成と部門階層への取り込み
-              href: create-department-add-department-hierarchy.md
-            - name: 法人間の HR パラメーターの設定
-              href: set-up-hr-parameters-across-legal-entities.md
-            - name: 会社固有の HR パラメーターの設定
-              href: set-up-company-specific-hr-parameters.md
-            - name: Talent の日付と時刻のフィールド
-              href: date-time-fields-in-talent.md
-            - name: 個人のアクションに関するよく寄せられる質問
-              href: personnel-actions-faq.md
-            - name: 業務プロセスの形式化
-              href: formalize-business-processes.md
-            - name: ワークフローを使用した従業員情報の管理
-              href: workflow-manage-employee-information.md
-            - name: 番号順序の設定
-              items:
-                - name: 番号順序の概要
-                  href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 番号順序を個別に設定する
-                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ウィザードを使用した番号順序の設定
-                  href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 組織と組織階層のコンフィギュレーション
-              items:
-                - name: 組織の概要
-                  href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 組織階層の計画
-                  href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 組織階層の作成
-                  href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 法人の作成
-                  href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 作業単位の作成
-                  href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: グローバル アドレス帳の設定
-              items:
-                - name: グローバル アドレス帳の概要
-                  href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: グローバル アドレス帳およびその他のアドレス帳の計画
-                  href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: グローバル アドレス帳の構成
-                  href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
-                  href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: ワークフローのコンフィギュレーション
-              items:
-                - name: ワークフローの概要
-                  href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフロー要素
-                  href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフローの承認プロセスでのアクション
-                  href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフローの作成
-                  href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                  items:
-                    - name: ワークフロー プロパティのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 手動タスクのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 自動化タスクのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 承認プロセスのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 承認ステップのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 手動決定のコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 条件付き意思決定のコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 並列活動のコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 並列分岐のコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                    - name: 品目ワークフローのコンフィギュレーション
-                      href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: メッセージ処理バッチ ジョブのコンフィギュレーション
-                  href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフローの作業項目をデリゲート
-                  href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフロー履歴の表示
-                  href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする
-                  href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 警告の設定
-              items:
-                - name: 警告の概要
-                  href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 警告ルールの作成
-                  href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 警告のバッチ処理
-                  href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: ケースの管理
-              items:
-                - name: ケース管理の概要
-                  href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: ケース セキュリティ、プロセス、およびカテゴリの計画
-                  href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: ドキュメント管理のコンフィギュレーション
-              href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
-              href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 日時データとタイム ゾーン
-              href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: 休暇および欠勤の設定
-          items:
-            - name: 休暇および欠勤の管理
-              href: leave-absence-overview.md
-            - name: 休暇および欠勤の概念
-              href: leave-absence-concepts.md
-            - name: 作業時間に基づく休暇取得権利の発生
-              href: leave-accrue-hours-worked.md
-            - name: 作業時間カレンダー
-              href: working-time-calendars.md
-        - name: 報酬プランの設定
-          items:
-            - name: 報酬プランの概要
-              href: compensation-plans.md
-            - name: 固定報酬プランの作成
-              href: create-fixed-compensation-plans.md
-            - name: 変動報酬プランの作成
-              href: create-variable-compensation-plans.md
-            - name: 報酬の処理
-              href: process-compensation.md
-            - name: 職務のコンポーネントの設定
-              href: create-job.md
-        - name: 従業員の育成とトレーニング
-          items:
-            - name: パフォーマンス管理
-              href: performance-management-overview.md
-            - name: 要員のスキルとビジネス ニーズの調整
-              href: skills.md
-            - name: トレーニング コースの設定
-              href: courses.md
-            - name: 業績仕訳への追加および称賛の送信
-              href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 目標の作成
-              href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: 業績の確認の作成
-              href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: 福利厚生プログラムの定義および管理
-          items:
-            - name: 福利厚生プログラムの定義および管理
-              href: manage-benefit-program.md
-            - name: 給付金の適格性ポリシー
-              href: benefit-eligibility-policies.md
-            - name: 医療費負担適正化法 (Affordable Care Act) 報告の生成
-              href: generate-aca-reports.md
-            - name: 作業者への貸与品目の管理
-              href: loan-items.md
-        - name: アンケートによる主要メトリックスの評価
-          items:
-            - name: アンケートによる情報の収集
-              href: questionnaires.md
-            - name: アンケートのデザイン
-              href: design-questionnaires.md
-            - name: アンケートの配布とスケジューリング
-              href: distribute-questionnaires.md
-            - name: アンケート結果の表示と評価
-              href: evaluate-questionnaire-results.md
-        - name: 職場の安全性とコンプライアンス (米国)
-          items:
-            - name: Talent での個人データ要求に対応
-              href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: フォーム I-9 就労資格確認書
-              href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: アメリカ障害者法 (ADA) への準拠
-              href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: 統合
-      items:
-        - name: Dynamics 365 for Talent のデータ統合ガイド
-          href: data-integration.md
-        - name: Common Data Service 統合のコンフィギュレーション
-          href: hr-common-data-service-integration.md
-        - name: Dynamics 365 for Finance and Operations との統合
-          href: talent-financeandoperations-integration.md
-        - name: Talent と Dayforce 間の給与統合のコンフィギュレーション
-          href: configure-payroll-integration.md
-        - name: 統合に関してよく寄せられる質問
-          href: talent-fo-integration.md
-        - name: Azure Logic Apps を使用した定期的なデータのエクスポート
-          href: tutorial-integration-recurring-export.md
-        - name: Office 統合
-          items:
-            - name: Office 統合のチュートリアル
-              href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Excel でのエンティティ データの更新
-              href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: '[Excel で開く] エクスペリエンスの作成'
-              href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Office 統合のトラブルシューティング
-              href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: 拡張性
       items:
-        - name: ワークスペースの埋め込み Power BI
-          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Power Apps および Power Automate を使用した Talent の拡張
-          href: extensibility-examples.md
-        - name: モバイル アプリ
-          items:
-            - name: モバイル ワークスペース
-              items:
-                - name: 会社のディレクトリ モバイル ワークスペース
-                  href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: 自分のチーム モバイル ワークスペース
-                  href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: 採用データの変更の追跡
           href: process-auditing.md
         - name: Attract での拡張性
           href: extensibility-attract.md
-        - name: Core HR のカスタム フィールド
-          href: corehr-custom-fields.md
-        - name: エンティティ API 照会
-          items:
-            - name: 認証
-              href: api-odata-authentication.md
-            - name: エンティティ
-              items:
-                - name: MyLeaveRequests
-                  items:
-                    - name: MyLeaveRequests の概要
-                      href: api-myleaverequests-overview.md
-                    - name: 休暇申請をワークフローに送信する
-                      href: api-myleaverequests-submit.md
-    - name: Talent のトラブルシューティング
+        - name: Power Apps および Power Automate を使用した Talent の拡張
+          href: extensibility-examples.md
+    - name: Attract および Onboard のトラブルシューティング
       items:
-        - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
-          href: talent-batch-history-cleanup.md
         - name: LinkedIn への職務の投稿のトラブルシューティング
           href: attract-troubleshoot-linkedin.md
-        - name: 分析レポートが更新されない
-          href: analytic-reports-not-updated.md
-        - name: PowerApps 管理センターで環境を作成できない
-          href: create-envi-powerapps-admin-ctr.md
-        - name: Talent クライアントの接続が切断される
-          href: client-disconnects.md
-        - name: 職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
-          href: avoid-text-truncation-position-hierarchy-visio.md
-        - name: 報酬プロセスを実行する
-          href: run-compensation-process.md
-        - name: LCS にタスク ガイドを保存して再生する
-          href: save-play-task-guides-LCS.md
-        - name: セキュリティ ロールで個人住所にアクセスする
-          href: security-roles-addresses.md
-        - name: Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
-          href: talent-not-in-home-CDS.md
-        - name: ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない
+        - name: ユーザーが Human Resources にアクセスできるが、Onboard または Attract アプリにアクセスできない
           href: user-access-core-hr.md
-        - name: Talent のレポート オプション
-          href: talent-reporting-options.md
-        - name: 統合に関してよく寄せられる質問
-          href: talent-FO-integration.md
         - name: Azure Active Directory ユーザーが人員ピッカーで見つからない
           href: people-picker-user-not-found.md

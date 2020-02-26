@@ -1,6 +1,6 @@
 ---
-title: Talent での個人データ要求に対応
-description: このトピックでは、データ コントローラとして Dynamics 365 Talent for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。
+title: 人事管理の個人データ要求への対応
+description: このトピックでは、データ コントローラとして Dynamics 365 Human Resources for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。
 author: shielasogge
 manager: AnnBe
 ms.date: 01/31/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 975ed0ba3b74c0fe0c1a8c649f572987eb9912e4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a2e69aa51816460173c29dc6665071c1a95569f1
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811713"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005742"
 ---
-# <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
+# <a name="respond-to-requests-for-personal-data-in-human-resources"></a>人事管理の個人データ要求への対応
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Talent を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
+このトピックは、Microsoft Dynamics 365 Human Resources を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
 
-Talent で、Microsoft はプロセッサとして動作します。 データ プロセッサとして、 Talent はデータ コントローラとしての GDPR 責務に適応させるプロセスと機能を提供します。
+人事管理では、Microsoft はプロセッサとして動作します。 データ プロセッサとして、人事管理はデータ コントローラとしての GDPR 責務に適応させるプロセスと機能を提供します。
 
 ## <a name="rights"></a>権限
 
@@ -43,7 +43,7 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 
 ### <a name="right-to-modify"></a>修正するには右\*
 
-+ 高度な検索とフィルターを使用して修正すべきデータを見つけ、Talent で直接データを修正します。
++ 高度な検索とフィルターを使用して修正すべきデータを見つけ、人事管理で直接データを修正します。
 
 \* 個人データと見なされるデータの一部は、製品または機能で直接変更することはできません。 このデータは通常、財務法 (税法など)、詐欺防止 (セキュリティ監査証跡)、または業界認定への準拠のために「現状のまま」保たれる金融取引やその他の業務データの一部です 。 コントローラーとして、不正確または未完了の個人データを修正する責任があります。
 
@@ -67,12 +67,12 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 
 ## <a name="additional-notes-that-apply-to-requests-for-personal-data"></a>個人データの要求に適用される追加のメモ
 
-+ Microsoft Power BI で見つかる個人データは、Talent で入力される情報から生成され、レポート目的でそのアプリケーションに転送されます。 Talent の情報から、レポート、Excel にエクスポートおよび個人検索レポートなどのツールを使用して個人データの要求を満たす必要があります。 DSR 要求を満たすために Power BI から追加の報告を行う必要はありません。 
-+ Talent は、レコードに関連付けられたドキュメントをエクスポートしません。 これらの添付ファイルは、手動でダウンロードし、DSR を作成した個人と共有する必要があります。
++ Microsoft Power BI で見つかる個人データは、人事管理で入力される情報から生成され、レポート目的でそのアプリケーションに転送されます。 人事管理の情報から、レポート、Excel にエクスポートおよび個人検索レポートなどのツールを使用して個人データの要求を満たす必要があります。 DSR 要求を満たすために Power BI から追加の報告を行う必要はありません。 
++ 人事管理は、レコードに関連付けられたドキュメントをエクスポートしません。 これらの添付ファイルは、手動でダウンロードし、DSR を作成した個人と共有する必要があります。
 + トランザクション データがマスター レコードに関連付けられている場合、レコードは削除できません。 
 + 同様に、転記済または完了済みのトランザクションは削除できません。
 
-### <a name="reasons-why-certain-personal-data-may-not-be-modified-or-deleted-in-talent"></a>Talent で特定の個人データを変更または削除できない理由
+### <a name="reasons-why-certain-personal-data-may-not-be-modified-or-deleted-in-human-resources"></a>人事管理で特定の個人データを変更または削除できない理由
 
 次のテーブルは、特定のシナリオで個人データの変更または削除が制限される理由を示しています。
 
@@ -84,7 +84,7 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 
 ## <a name="additional-information"></a>追加情報
 
-退職済作業者のみ Talent から削除できます。 退職済従業者を削除するには、これらの手順に従います。
+退職済作業者のみを人事管理から削除できます。 退職済従業者を削除するには、これらの手順に従います。
 
 + 作業者職位を削除します。 
 

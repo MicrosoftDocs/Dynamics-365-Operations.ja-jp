@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191e55d8972c5e6a5d8fa907152cf6e300093640
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c2fe393508c7f1fc86ff99c327a91ac15cd6650f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812046"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033049"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -75,7 +75,7 @@ ms.locfileid: "2812046"
 
 7.  オプション: 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
     
-    ```
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
@@ -85,15 +85,19 @@ ms.locfileid: "2812046"
 
 8.  手順 5 からコマンド プロンプトを使用して、次のコマンドを実行します。
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    データ アップグレードのクリーンアップの実行中にエラーが発生する可能性があります。スタック トレース: \'カテゴリで\'エラー\'で最初に TTSBEGIN を呼び出さずに TTSCOMMIT を呼び出します。 
+    データ アップグレードのクリーンアップの実行中に、エラーが発生する場合があります。 
     
-    これを解決するには、このコマンドを使用して、次の通りにステップを再実行します。AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
+    
+    これを解決するには、次のコマンドのステップを再実行します。 
+    
+    `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  アップグレード プロセスが正常に完了したら、新たにアップグレードしたデータベースをバックアップします。 ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 
@@ -111,7 +115,7 @@ ms.locfileid: "2812046"
 
     c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database)の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database) の手順に従います。
 
     e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -131,7 +135,7 @@ ms.locfileid: "2812046"
 
 15. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -152,7 +156,7 @@ ms.locfileid: "2812046"
 
 7.  管理者として新しい PowerShell を開き、次のように実行します。
     
-    ```
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
     ```
 
@@ -170,15 +174,15 @@ ms.locfileid: "2812046"
 
 8.  手順 6 からコマンド プロンプトを使用して、次のコマンドを実行します。
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    データ アップグレードのクリーンアップの実行中にエラーが発生する可能性があります。スタック トレース: \'カテゴリで\'エラー\'で最初に TTSBEGIN を呼び出さずに TTSCOMMIT を呼び出します。
+    データ アップグレードのクリーンアップの実行中に、エラーが発生する場合があります: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    これを解決するには、このコマンドを使用して、次の通りにステップを再実行します。AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    これを解決するには、次のコマンドのステップを再実行します: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 
@@ -214,7 +218,7 @@ ms.locfileid: "2812046"
 
 14. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -260,11 +264,11 @@ ms.locfileid: "2812046"
 
     c.  実行
 
-        A.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+        A. AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
-        B.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+        B. AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
-        C.  AxUpdateInstaller.exe execute -runbookid=upgrade
+        C. AxUpdateInstaller.exe execute -runbookid=upgrade
 
 9.  アプリケーションの拡張機能やカスタマイズを VHD にインストールしている場合は、アップグレード プロセスによって、カスタマイズに関連するデータが削除されます。 アップグレード前に、どんな方法でも環境を準備する必要がある場合は、ISV または VAR に確認します。
 
@@ -284,7 +288,7 @@ ms.locfileid: "2812046"
 
 7.  (オプション) 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
     
-    ```
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
 
@@ -295,15 +299,15 @@ ms.locfileid: "2812046"
 
 8.  手順 5 からコマンド プロンプトを使用して、次のコマンドを実行します。
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    データ アップグレードのクリーンアップの実行中にエラーが発生する可能性があります。スタック トレース: \'カテゴリで\'エラー\'で最初に TTSBEGIN を呼び出さずに TTSCOMMIT を呼び出します。
+    データ アップグレードのクリーンアップの実行中に、エラーが発生する場合があります: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    これを解決するには、このコマンドを使用して、次の通りにステップを再実行します。AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    これを解決するには、次のコマンドのステップを再実行します: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  アップグレード プロセスが正常に完了したら、新たにアップグレードしたデータベースをバックアップします。 ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 
@@ -333,7 +337,7 @@ ms.locfileid: "2812046"
 
 22. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -354,7 +358,7 @@ ms.locfileid: "2812046"
 
 7.  管理者として新しい PowerShell を開き、次のように実行します。
 
-    ```
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
     ```
 
@@ -372,15 +376,15 @@ ms.locfileid: "2812046"
 
 8.  手順 6 からコマンド プロンプトを使用して、次のコマンドを実行します。
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    データ アップグレードのクリーンアップの実行中にエラーが発生する可能性があります。スタック トレース: \'カテゴリで\'エラー\'で最初に TTSBEGIN を呼び出さずに TTSCOMMIT を呼び出します。
+    データ アップグレードのクリーンアップの実行中に、エラーが発生する場合があります: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    この問題を解決するには、このコマンドを使用して、次の通りにステップを再実行します。AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    この問題を解決するには、次のコマンドのステップを再実行します: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 
@@ -408,7 +412,7 @@ ms.locfileid: "2812046"
 
 21. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -428,7 +432,7 @@ DatabaseServer または DatabaseUser のような追加のパラメーターを
 
 -   **-DatabaseName** - アップグレードするデータベースの名前です。
 
--   **-DatabaseServer** - Finance and Operations (オンプレミス) データベースが含まれているデータベース サーバー。
+-   **-DatabaseServer** - Finance and Operations (オンプレミス) データベースが含まれているデータベース サーバーです。
 
 -   **-DatabaseUser** - SQL 認証のユーザー名です。
 
@@ -437,7 +441,8 @@ DatabaseServer または DatabaseUser のような追加のパラメーターを
 コンフィギュレーションが渡された後に、スクリプトは新しいパラメーターを使用してデータベース接続のテストを実行します。 スクリプトが接続されない場合は、Microsoft SQL Server Management Studio を使用するか、またはその他のツールを使用して、接続をデバッグすることをお勧めします。
 
 **Configure-On-Premises-Upgrade.ps1**
-```
+
+```powershell
 <#
 .Synopsis
    Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 8.x 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 10254
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 367669944a60a10eb7264d9c6fd526263c06d04a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 45617d845f3b43f5c12f795fffc835fce0dea2f9
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191685"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983659"
 ---
 # <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 
@@ -55,7 +55,7 @@ ms.locfileid: "2191685"
 ## <a name="use-the-fleet-management-application-to-rent-a-vehicle"></a>車両をレンタルするには、フリート管理アプリケーションを使用します。
 このセクションで移行したアプリで作業をしていることに留意してください。 表示されるフォームは、Microsoft Dynamics AX 2012 バージョンのサンプルから直接ポートされます。 変更および再編成されていますが、再考されてはいません。
 
-1.  Internet Explorer を開いて、Finance and Operations アプリケーションにサインインします。
+1.  Internet Explorer を開き、Finance and Operations アプリケーションにサインインします。
 2.  **ダッシュ ボード**に戻るには、ページの左上隅にある Microsoft Dynamics ロゴを選択します。[![ダッシュに戻る](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) ダッシュボードは主要な作業ハブとなります。 セクションに分類され、アプリケーションの一部になる、様々なタイルを表示することができます。 ダッシュボードは、水平スクロール用に設計されています。これは、最新のデバイスでうまく動作するための最適化です。 ダッシュボードの右側にあるボタンにはナビゲーションバーが表示されます。
 3.  ダッシュ ボードから、ナビゲーション バーを開いて**フリート管理** &gt; **共通** &gt; **顧客** &gt; **顧客**の順に移動します。 
 

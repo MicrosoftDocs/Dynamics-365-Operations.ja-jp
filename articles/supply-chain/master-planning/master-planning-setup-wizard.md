@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635129"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031070"
 ---
 # <a name="master-planning-setup-wizard"></a>マスター プランのセットアップ ウィザード
 
@@ -32,7 +32,7 @@ ms.locfileid: "2635129"
 
 このトピックでは、**マスター プランのセットアップ ウィザード**に関するガイドを提供します。 パラメーターの提案が計算される方法について説明し、また異なる会社がマスター プラン パラメータ候補の計算方法について説明し、ビジネス ニーズに基づいてさまざまな企業がビジネス ニーズに基づいてマスター プランを設定する方法を示す例も示します。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
 [Dynamics 365 Supply Chain Management のマスター プランのセットアップ ウィザード](https://youtu.be/c-e6n-8rZb4) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
@@ -184,7 +184,7 @@ ms.locfileid: "2635129"
 コントソ リテーラーは、ファッション産業の流通会社です。 売上予測に基づいて発注書を発行する必要がある場合、マスター プランを使用して計算します。 次にその特性の一部を説明します。
 
 - コントソ リテーラーは、需要予測を使用して売上を予測します。 発注書は予測に従って計画されます。
-- 小売店舗では、補充に要求を使用します。
+- 店舗では、補充に要求を使用します。
 - 主要倉庫から各店舗までのリード タイムは、すべての商品について、約 2 週間です。
 
 ウィザードでは、次の値がコントソ リテーラーに入力されます。
@@ -208,4 +208,4 @@ ms.locfileid: "2635129"
     - **質問:** 「小売店舗に補充するため、承認された要求から需要を含めますか?」
     - **回答:** 「はい、このマスター プランで定義されています。」 **1 日**が入力されます。
 
-    コントソは、小売店舗からの承認された要求を使用して、それらの店舗を補充するための計画発注書を作成します。 マスター プランは毎日実行されるため、最終日からの要求が計画に含められます。
+    Contoso は、店舗からの承認された要求を使用して、それらの店舗を補充するための計画発注書を作成します。 マスター プランは毎日実行されるため、最終日からの要求が計画に含められます。

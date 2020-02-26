@@ -1,0 +1,1620 @@
+- name: Finance and Operations の開発と管理
+  href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 新機能および変更された機能
+  items:
+    - name: Platform update 30 のプレビュー機能 (2019 年 11 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 29 (2019 年 10 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 28 (2019 年 7 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 27 (2019 年 6 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 26 (2019 年 5 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 25 (2019 年 4 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 24 (2019 年 3 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 23 (2019 年 1 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 22 (2018 年 12 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 21 (2018 年 11 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 20 (2018 年 9 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Platform update 15 (2018 年 3 月)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: ビジネス イベント
+  items:
+    - name: ビジネス イベントの概要
+      href: ../../dev-itpro/business-events/home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: アプリケーション ビジネス イベント
+      href: ../../dev-itpro/business-events/app-business-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ワークフロー ビジネス イベント
+      href: ../../dev-itpro/business-events/business-events-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス イベントとしての警告
+      href: ../../dev-itpro/business-events/alerts-business-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Microsoft Flow 内のビジネス イベント
+      href: ../../dev-itpro/business-events/business-events-flow.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス イベント開発者ドキュメント
+      href: ../../dev-itpro/business-events/business-events-dev-doc.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス イベントのトラブルシューティング
+      href: ../../dev-itpro/business-events/troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス イベントのユースケース
+      href: ../../dev-itpro/business-events/potential-use-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: チュートリアル
+      items:
+        - name: ビジネス イベントおよび Microsoft Flow
+          href: ../../dev-itpro/business-events/how-to/how-to-flow.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス イベントおよび Azure Event Grid
+          href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス イベントおよび Azure Service Bus
+          href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス イベントおよびワークフローの承認
+          href: ../../dev-itpro/business-events/how-to/how-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス イベントおよび Microsoft Forms Pro
+          href: ../../dev-itpro/business-events/how-to/FormsPro.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス イベントおよび Azure Event Hubs
+          href: ../../dev-itpro/business-events/how-to/event-hub.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 継続的デリバリー
+  items:
+    - name: 継続的デリバリーのホーム ページ
+      href: ../../dev-itpro/dev-tools/continuous-delivery-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 開発と継続的な配信に関するよく寄せられる質問
+      href: ../../dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビルド出力からのテスト パッケージの除外
+      href: ../../dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ソース コントロールを使用したサード パーティ モデルとランタイム パッケージの管理
+      href: ../../dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 自動ビルドのモデル バージョンの更新
+      href: ../../dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: データ統合
+  items:
+    - name: データ統合方法 (インポート/エクスポート) の選択
+      href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ統合 API
+      items:
+        - name: データ管理パッケージ REST API
+          href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: サービス エンドポイント
+          items:
+            - name: サービス エンドポイントの概要
+              href: ../../dev-itpro/data-entities/services-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: サービス認証のトラブルシューティング
+              href: ../../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: OData
+          href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 顧客サービスの開発
+          href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 定期統合
+          href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: サード パーティ ユーティリティを使用したテスト サービス
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Finance and Operations コネクタ
+      href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 統合のための開発
+      items:
+        - name: データ エンティティを使用したデータの統合
+          items:
+            - name: データ エンティティを使用したデータの統合の概要
+              href: ../../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: データ移行のエンティティの開発
+              href: ../../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 複合データ エンティティの開発
+              href: ../../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 会社間財務データ共有のコンフィギュレーション
+              href: ../../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: データ入力を容易にするレコード テンプレートの作成
+              href: ../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: レコード テンプレートを使用したレコードの作成
+              href: ../../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Common Data Service を使用したデータ統合
+          items:
+            - name: Common Data Service を使用したデータ統合の概要
+              href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 同期、双方向の統合
+              items:
+                - name: ほぼリアルタイムのデータ統合
+                  href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Common Data Service の組織階層
+                  href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Common Data Services での会社の概念
+                  href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 統合された顧客マスター
+                  href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 統一された製品経験
+                  href: ../../dev-itpro/data-entities/dual-write-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 統合された仕入先マスター
+                  href: ../../dev-itpro/data-entities/dual-write-vendor.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 統合されたサイトおよび倉庫
+                  href: ../../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 初期同期
+                  href: ../../dev-itpro/data-entities/dual-write-initial.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: データ統合のトラブルシューティング
+                  href: ../../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 非同期、単一方向の統合
+              items:
+                - name: 見込顧客から入金のシナリオのコンフィギュレーション
+                  items:
+                    - name: 見込顧客を現金化
+                      href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations の顧客への Sales の勘定の直接同期
+                      href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Sales の 製品への Finance and Operations の製品の直接同期
+                      href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
+                      href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations への Sales の販売見積書ヘッダーおよび明細行の直接同期
+                      href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Sales と Finance and Operations 間での販売注文の直接同期
+                      href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
+                      href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Field Service との統合のコンフィギュレーション
+                  items:
+                    - name: Field Service との統合のコンフィギュレーションの概要
+                      href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations の製品と Field Service の製品との同期
+                      href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Field Service の作業指示書と Finance and Operations の販売注文との同期
+                      href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
+                      href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Field Service から Finance and Operations への在庫振替および在庫調整の同期
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations から Field Service への在庫レベル情報の同期
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations から Field Service への製品在庫単位の同期
+                      href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations から Field Service へのプロジェクト リストの同期
+                      href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Finance and Operations から Field Service への倉庫の同期
+                      href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Field Service から Finance and Operations への作業指示書の同期
+                      href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: Project Service Automation 統合のコンフィギュレーション
+                  items:
+                    - name: Project Service Automation の概要
+                      href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: Project Service Automation 統合パラメーター
+                      href: ../../financials/project-management/PSA-parameters.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: プロジェクト契約とプロジェクトの同期
+                      href: ../../financials/project-management/project-contracts-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: プロジェクト タスクの同期
+                      href: ../../financials/project-management/project-tasks-template.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: プロジェクト経費カテゴリの同期
+                      href: ../../financials/project-management/project-categories-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: プロジェクト見積のプロジェクト予測への同期
+                      href: ../../financials/project-management/project-estimates-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+                    - name: プロジェクト実績のプロジェクト統合仕訳帳への同期
+                      href: ../../financials/project-management/project-actuals-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 外部 Web サービスの使用
+      href: ../../dev-itpro/data-entities/consume-external-web-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 電子メッセージ
+      href: ../../financials/general-ledger/electronic-messaging.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: データ管理
+  items:
+    - name: データ管理の概要
+      href: ../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ エンティティ
+      items:
+        - name: データ エンティティの概要
+          href: ../../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コンフィギュレーション データ プロジェクト
+          href: ../../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 会社間または法人間のコンフィギュレーション データのコピー
+          items:
+            - name: コンフィギュレーション データのコピーの概要
+              href: ../../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: コンフィギュレーション データ パッケージ
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: エンティティ格納を Data Lake として使用可能にする
+              href: ../../dev-itpro/data-entities/entity-store-data-lake.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コンフィギュレーション データ テンプレート
+          href: ../../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: エンティティの変更の追跡
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 標準データ エンティティに関する情報の検索
+          href: ../../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 複数のワークシート付きデータ テンプレート
+          href: ../../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: エンティティの変更追跡の有効化
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コンフィギュレーション キーおよびデータ エンティティ
+          href: ../../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コンフィギュレーション データ パッケージ
+          href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ インポート/エクスポート ジョブ
+      items:
+        - name: データ インポート/エクスポート ジョブの概要
+          href: ../../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+          href: ../../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ エンティティの開発
+      items:
+        - name: データ エンティティに関する設計原則とベスト プラクティス
+          href: ../../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 新しいデータ エンティティの作成
+          href: ../../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: データ エンティティのプロパティ
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 計算列と仮想フィールドの作成
+          href: ../../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 会社間動作
+          href: ../../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 国/地域コードの処理
+          href: ../../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 継承パターン
+          href: ../../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: データ エンティティ ウィザード ルール
+          href: ../../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: メタデータのプロパティ
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 検証、既定値、およびマップされていないフィールド
+          href: ../../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セキュリティとデータ エンティティ
+          href: ../../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: サード パーティ サービス テスト ユーティリティの使用
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 財務分析コードを公開する読み取り専用エンティティの作成
+          href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 自分のデータベースの持ち込み
+      href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 自動化エンティティ格納更新
+      href: ../../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ タスクの自動化
+      href: ../../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ検証チェックリスト ワークスペース
+      href: ../../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ管理エラーの説明
+      href: ../../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: データベース移動操作
+  items:
+    - name: 概要
+      href: ../../dev-itpro/database/dbmovement-operations.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: クイック スタート ガイド
+      items:
+        - name: データベースの更新
+          href: ../../dev-itpro/database/database-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: データベースのエクスポート
+          href: ../../dev-itpro/database/export-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: データベースのインポート
+          href: ../../dev-itpro/database/import-database.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: データベース ポイントインタイム復元
+          href: ../../dev-itpro/database/database-point-in-time-restore.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: チュートリアル
+      items:
+        - name: トレーニング用の更新
+          href: ../../dev-itpro/database/dbmovement-scenario-general-refresh.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 生産データベースのコピーのデバッグ
+          href: ../../dev-itpro/database/dbmovement-scenario-debugdiag.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
+          href: ../../dev-itpro/database/dbmovement-scenario-exportuat.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ゴールデン コンフィギュレーション プロモーション
+          href: ../../dev-itpro/database/dbmovement-scenario-goldenconfig.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 破壊試験
+          href: ../../dev-itpro/database/dbmovement-scenario-destructivetests.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: デモ データ
+  items:
+    - name: デモ データの概要
+      href: ../../fin-and-ops/get-started/demo-data.md?toc=/dynamics365/unified-operations/retail/toc.json?toc=/dev-itpro/toc.json
+    - name: データ パッケージを使用したデモ データの生成
+      href: ../../dev-itpro/data-entities/generate-demo-data-packages.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 配置
+  items:
+    - name: デモ環境の配置
+      href: ../../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: クラウド配置
+      items:
+        - name: クラウド配置の概要
+          href: ../../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セルフサービス配置
+          items:
+            - name: セルフサービス配置の概要
+              href: ../../dev-itpro/deployment/infrastructure-stack.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 新しい環境の配置
+              href: ../../dev-itpro/deployment/deployenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 配置に関するよく寄せられる質問
+              href: ../../dev-itpro/deployment/deploymentFAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: セルフサービス配置に関する既知の問題
+              href: ../../dev-itpro/deployment/known-issues-new-deployment-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 配置の保守操作
+              href: ../../dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 環境の更新
+              href: ../../dev-itpro/deployment/updateenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: セルフサービス配置で配置された環境のトラブルシューティング
+              href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Azure Resource Manager の研修の完了
+          href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Azure ExpressRoute および Finance and Operations
+          href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Finance and Operations アーキテクチャ
+          href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クラウド環境への更新プログラムの適用
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クラウドでホストされている小売チャネル コンポーネントへの更新プログラムと拡張機能の適用
+          href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Retail Cloud Scale Unit の初期化
+          href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Retail データ所在地
+          href: ../../dev-itpro/deployment/retail-data-residency.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: オンプレミス配置
+      items:
+        - name: オンプレミス配置のホーム ページ
+          href: ../../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置の概要
+          href: ../../dev-itpro/deployment/on-premises-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置の計画および準備
+          href: ../../dev-itpro/deployment/plan-onprem-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ハードウェアのサイズ要件
+          href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dynamics365/unified-operations/retail/toc.json?toc=/dev-itpro/toc.json
+        - name: 設置プロジェクトの設定
+          href: ../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス環境の設定と配置
+          items:
+            - name: オンプレミス環境の設定と配置のホーム ページ
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-environments.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: オンプレミス環境の配置 (Platform update 12 以降)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: オンプレミス環境の配置 (Platform update 8 および 11)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+              href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: カスタム モデルの開発とオンプレミス環境への配置
+          href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス環境との PowerBI.com の統合
+          href: ../../dev-itpro/analytics/entity-store-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス環境用リバース プロキシの構成
+          href: ../../dev-itpro/deployment/onprem-reverseproxy.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置への更新プログラムの適用
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス診断
+          href: ../../dev-itpro/deployment/on-premises-diagnostics.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置の再配置
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ローカル エージェント
+          items:
+            - name: AD FS Office 365 の互換性
+              href: ../../dev-itpro/deployment/onprem-adfscompatibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
+              href: ../../dev-itpro/lifecycle-services/pre-post-scripts.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ローカル エージェントの更新
+              href: ../../dev-itpro/lifecycle-services/update-local-agent.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 環境の再コンフィギュレーション
+          href: ../../dev-itpro/lifecycle-services/reconfigure-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クライアントのインターネット接続
+          href: ../../dev-itpro/user-interface/client-disconnected.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置のトラブルシューティング
+          href: ../../dev-itpro/deployment/troubleshoot-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 証明書のローテーション
+          href: ../../dev-itpro/deployment/certificate-rotation-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: カスタム コードの配置
+      items:
+        - name: 配置可能なモデル パッケージの作成
+          href: ../../dev-itpro/deployment/create-apply-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コマンド ラインからの配置可能なパッケージのインストール
+          href: ../../dev-itpro/deployment/install-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パッケージのアンインストール
+          href: ../../dev-itpro/deployment/uninstall-deployable-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パッケージ アプリケーションに関する問題のトラブルシューティング
+          href: ../../dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 開発およびカスタマイズ
+  items:
+    - name: 開発およびカスタマイズのホーム ページ
+      href: ../../dev-itpro/dev-tools/developer-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: アプリケーション スタックおよびサーバーのアーキテクチャ
+      href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ベータ評価版の入手
+      href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: プレビュー サブスクリプションのサインアップ
+      href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 開発環境の配置とアクセス
+      items:
+        - name: 開発環境
+          href: ../../dev-itpro/dev-tools/access-instances.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 1 ボックス開発環境のコンフィギュレーション
+          href: ../../dev-itpro/dev-tools/configure-developer-vm.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発マシンでの新しいユーザーの作成
+          href: ../../dev-itpro/dev-tools/enable-development-machine.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
+          href: ../../dev-itpro/sysadmin/VMs-no-admin-access.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Azure DevOps にアクセスするためのローカル環境の名前変更
+          href: ../../dev-itpro/migration-upgrade/vso-machine-renaming.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発システム要件
+          href: ../../dev-itpro/dev-tools/development-system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: バージョン コントロール、メタデータ検索、およびナビゲーション
+      href: ../../dev-itpro/dev-tools/version-control-metadata-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: フリート管理のサンプル アプリケーション
+      items:
+        - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
+          href: ../../dev-itpro/dev-tools/fleet-management-sample.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フリート管理のサンプル アプリケーション
+          href: ../../dev-itpro/dev-tools/introduction-fleet-management-sample.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Visual Studio ツール
+      items:
+        - name: 開発ツール
+          href: ../../dev-itpro/dev-tools/development-tools-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発ツールのチュートリアル
+          href: ../../dev-itpro/dev-tools/introduction-visual-studio.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: アプリケーション チェッカー
+          items:
+            - name: アプリケーション チェッカーに対する BaseX のインストール
+              href: ../../dev-itpro/dev-tools/install-basex.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: アプリケーション エクスプローラー
+          href: ../../dev-itpro/dev-tools/application-explorer.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: プロジェクトのビルドおよびデバッグ
+          href: ../../dev-itpro/dev-tools/build-debug-project.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビルド操作
+          href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コード エディター機能
+          href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モデルとデータ モデル要素の作成
+          items:
+            - name: モデルとデータ モデル要素の作成の概要
+              href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の名前付けガイドライン
+              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: カスタマイズをオフにして機能を廃止
+              href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: カスタマイズ分析のレポート
+          href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 要素デザイナー
+          href: ../../dev-itpro/dev-tools/element-designers.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 要素の使用を決定するためのコマンド
+          href: ../../dev-itpro/dev-tools/element-usage.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モデルのエクスポートとインポート
+          href: ../../dev-itpro/dev-tools/models-export-import.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Visual Studio でのメタデータの検索
+          href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モデルとパッケージ
+          href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Finance and Operations プロジェクト タイプ
+          href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Visual Studio 用のツールおよびアドイン
+          href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Visual Studio 開発ツールの更新
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: X++ プログラミング言語
+      items:
+        - name: X++ およびデバッガーの機能
+          href: ../../dev-itpro/dev-tools/new-x-debugger-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++ コードのデバッグ
+          href: ../../dev-itpro/dev-tools/debug-xpp.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 要求または応答シナリオの EventHandlerResult クラス
+          href: ../../dev-itpro/dev-tools/event-handler-result-class.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'C# および X++ ソース コードを使用したビジネス ロジックの記述'
+          href: ../../dev-itpro/dev-tools/write-business-logic.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++ と X++ コンパイラの変更
+          href: ../../dev-itpro/dev-tools/programming-language-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'C# の LINQ プロバイダー'
+          href: ../../dev-itpro/dev-tools/linq-provider-c.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ベスト プラクティス ルールの記述
+          href: ../../dev-itpro/dev-tools/author-best-practice-rules.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: アプリケーション エクスプローラーのプロパティ
+          href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++ 言語リファレンス
+          items:
+            - name: X++ 言語リファレンスの概要
+              href: ../../dev-itpro/dev-ref/xpp-language-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 変数とデータ型
+              items:
+                - name: 変数
+                  href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: プリミティブ データ型
+                  href: ../../dev-itpro/dev-ref/xpp-data-primitive.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 複合データ型
+                  href: ../../dev-itpro/dev-ref/xpp-data-composite.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: コレクション クラス
+                  href: ../../dev-itpro/dev-ref/xpp-data-collection.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 拡張データ型
+                  href: ../../dev-itpro/dev-ref/xpp-data-edt.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ステートメント、ループ、および例外処理
+              items:
+                - name: コメント、使用、および印刷
+                  href: ../../dev-itpro/dev-ref/xpp-statements-loops.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 条件付きステートメント
+                  href: ../../dev-itpro/dev-ref/xpp-conditional.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ループ ステートメント
+                  href: ../../dev-itpro/dev-ref/xpp-loops.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 例外処理
+                  href: ../../dev-itpro/dev-ref/xpp-exceptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ の SQL 接続エラー例外
+              href: ../../dev-itpro/dev-ref/sql-connection-error.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 演算子
+              href: ../../dev-itpro/dev-ref/xpp-operators.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 演算子の優先順位
+              href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ のクラスおよびメソッド
+              items:
+                - name: クラスおよびメソッド
+                  href: ../../dev-itpro/dev-ref/xpp-classes-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 継承
+                  href: ../../dev-itpro/dev-ref/xpp-inheritance.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: 静的クラス メンバー
+                  href: ../../dev-itpro/dev-ref/xpp-static-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: インターフェイス
+                  href: ../../dev-itpro/dev-ref/xpp-interfaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: ライブラリ
+                  href: ../../dev-itpro/dev-ref/xpp-library-objects.md?toc=/dynamics365/unified-operations/retail/toc.json
+                - name: イベント
+                  href: ../../dev-itpro/dev-ref/xpp-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ データの選択と操作
+              href: ../../dev-itpro/dev-ref/xpp-data-query.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: SysDa API を使用したデータアクセス
+              href: ../../dev-itpro/dev-ref/sysda.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ マクロ
+              href: ../../dev-itpro/dev-ref/xpp-macros.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 属性クラス
+              href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 'X++ と C# の比較'
+              href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 構文
+              href: ../../dev-itpro/dev-ref/xpp-syntax.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: API、クラス、およびテーブルの参照
+      items:
+        - name: API、クラス、およびテーブルのリソース
+          href: ../../dev-itpro/dev-ref/api-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++ コンパイル時関数
+          href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: X++ ランタイム関数
+          items:
+            - name: X++ ランタイム関数のリソース
+              href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ ビジネス ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ コンテナー ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 変換ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 日付ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 数学ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ リフレクション ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ セッション ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X++ 文字列ランタイム関数
+              href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: システム テーブル
+          href: ../../dev-itpro/dev-ref/system-tables.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: システム クラス
+          items:
+            - name: A クラス
+              href: ../../dev-itpro/dev-ref/a-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: B クラス
+              href: ../../dev-itpro/dev-ref/b-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: C クラス
+              href: ../../dev-itpro/dev-ref/c-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: D クラス
+              href: ../../dev-itpro/dev-ref/d-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: E クラス
+              href: ../../dev-itpro/dev-ref/e-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormBuildAnimateControl への FieldBinding)
+              href: ../../dev-itpro/dev-ref/fieldbinding-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormBuildFastTabSummarySeparator への FormBuildButtonControl)
+              href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormBuildRealControl への FormBuildFilterPaneControl)
+              href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormButtonSeparatorControl への FormBuildReferenceControl)
+              href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormControlEventArgs への FormChangeTracker)
+              href: ../../dev-itpro/dev-ref/formchangetracker-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormFastTabHeaderControl への FormDataObject)
+              href: ../../dev-itpro/dev-ref/formdataobject-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormGridControl への FormFastTabSummarySeparator)
+              href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormIntControl への FormGroupControl)
+              href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormNotifyEventArgs への FormListBoxControl)
+              href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormRealControl への FormObject)
+              href: ../../dev-itpro/dev-ref/formobject-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormStringControl への FormReferenceControl)
+              href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: F クラス (FormWindowControl への FormTabControl)
+              href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: G クラス
+              href: ../../dev-itpro/dev-ref/g-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: H クラス
+              href: ../../dev-itpro/dev-ref/h-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: I クラス
+              href: ../../dev-itpro/dev-ref/i-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: J クラス
+              href: ../../dev-itpro/dev-ref/j-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: K クラス
+              href: ../../dev-itpro/dev-ref/k-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: L クラス
+              href: ../../dev-itpro/dev-ref/l-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: M クラス
+              href: ../../dev-itpro/dev-ref/m-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: N クラス
+              href: ../../dev-itpro/dev-ref/n-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: O クラス
+              href: ../../dev-itpro/dev-ref/o-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: P クラス
+              href: ../../dev-itpro/dev-ref/p-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Q クラス
+              href: ../../dev-itpro/dev-ref/q-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: R クラス
+              href: ../../dev-itpro/dev-ref/r-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: S クラス
+              href: ../../dev-itpro/dev-ref/s-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: T クラス
+              href: ../../dev-itpro/dev-ref/t-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: U クラス
+              href: ../../dev-itpro/dev-ref/u-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: V クラス
+              href: ../../dev-itpro/dev-ref/v-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: W クラス
+              href: ../../dev-itpro/dev-ref/w-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: X クラス
+              href: ../../dev-itpro/dev-ref/x-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 拡張性
+      items:
+        - name: 拡張機能のホーム ページ
+          href: ../../dev-itpro/extensibility/extensibility-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 概要と使用開始
+          items:
+            - name: アプリケーション機能拡張計画
+              href: ../../dev-itpro/extensibility/extensibility-roadmap.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張性の要求
+              href: ../../dev-itpro/extensibility/extensibility-requests.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張性に関するよく寄せられる質問
+              href: ../../dev-itpro/extensibility/app-sealing-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: オーバーレイから拡張機能への移行
+              href: ../../dev-itpro/extensibility/migrate-overlayer-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能によるモデル要素のカスタマイズ (チュートリアル)
+              href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能およびオーバーレイによるカスタマイズ
+              href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 新機能
+          items:
+            - name: 拡張性の新機能および変更された機能
+              href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 10.0.3)
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 10.0.2)
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-2.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 10.0.1)
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-1.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 10.0)
+              href: ../../dev-itpro/extensibility/extensibility-changes-10.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.1.3)
+              href: ../../dev-itpro/extensibility/extensibility-changes-813.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.1.2)
+              href: ../../dev-itpro/extensibility/extensibility-changes-812.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.1.1)
+              href: ../../dev-itpro/extensibility/extensibility-changes-811.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.1)
+              href: ../../dev-itpro/extensibility/extensibility-changes-81.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.0.4)
+              href: ../../dev-itpro/extensibility/extensibility-changes-804.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.0.3)
+              href: ../../dev-itpro/extensibility/extensibility-changes-803.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.0.2)
+              href: ../../dev-itpro/extensibility/extensibility-changes-802.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (バージョン 8.0.1)
+              href: ../../dev-itpro/extensibility/extensibility-changes-801.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: バージョン 8.0 の拡張機能の変更
+              href: ../../dev-itpro/extensibility/changes-80.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: バージョン 7.3 の拡張機能の変更
+              href: ../../dev-itpro/extensibility/extensibility-changes-73.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の変更 (2017 年 7 月)
+              href: ../../dev-itpro/extensibility/changes-july-2017.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 基本
+          items:
+            - name: 侵入的なカスタマイズ
+              href: ../../dev-itpro/extensibility/intrusive-customizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: クラス拡張モデル
+              href: ../../dev-itpro/extensibility/class-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: メソッドのラッピングとコマンド チェーンによるクラスの拡張
+              href: ../../dev-itpro/extensibility/method-wrapping-coc.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張機能の名前付けガイドライン
+              href: ../../dev-itpro/extensibility/naming-guidelines-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
+              href: ../../dev-itpro/extensibility/refactoring-over-layering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張機能の作成
+          items:
+            - name: 列挙への値の追加
+              href: ../../dev-itpro/extensibility/add-enum-value.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張データ型の変更
+              href: ../../dev-itpro/extensibility/modify-edt.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ファクトリ メソッドのサブクラスの登録
+              href: ../../dev-itpro/extensibility/register-subclass-factory-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: EventHandlerResult を使用した応答
+              href: ../../dev-itpro/extensibility/respond-event-handler-result.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: RunBase クラスの拡張
+              href: ../../dev-itpro/extensibility/extend-runbase-class.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 委任を使用したアプリケーション起動のカスタマイズ
+              href: ../../dev-itpro/extensibility/startup-customizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブルの既存のフィールドの変更
+              href: ../../dev-itpro/extensibility/modify-existing-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フィールドのテーブルへの追加
+              href: ../../dev-itpro/extensibility/add-field-extension.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: インデックスのテーブルへの追加
+              href: ../../dev-itpro/extensibility/add-index.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブルへの関係の追加
+              href: ../../dev-itpro/extensibility/add-relation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブルのプロパティの変更
+              href: ../../dev-itpro/extensibility/modify-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブルへのメソッドの追加
+              href: ../../dev-itpro/extensibility/add-method-table.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブル レコードの有効期間中の業務処理の実行
+              href: ../../dev-itpro/extensibility/subscribe-table-events.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フォームへのデータ ソースの追加
+              href: ../../dev-itpro/extensibility/add-datasource.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フォーム キャプションの変更
+              href: ../../dev-itpro/extensibility/change-caption-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フォーム コントロールのプロパティの変更
+              href: ../../dev-itpro/extensibility/modify-control-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 番号順序のスコープの拡張
+              href: ../../dev-itpro/extensibility/extend-number-sequence-scope.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 新規在庫分析コードの追加
+              href: ../../dev-itpro/extensibility/inventory-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 価格と割引の拡張性
+              href: ../../dev-itpro/extensibility/pricing-app73.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブル マップ拡張
+              href: ../../dev-itpro/extensibility/map-extensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: インターフェイスとして使用されるテーブル マップの拡張
+              href: ../../dev-itpro/extensibility/maps-as-interfaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: バージョン管理で使用されるテーブル マップの拡張
+              href: ../../dev-itpro/extensibility/maps-with-versioning.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 選択したデータ型の小数点以下の精度の拡張
+              href: ../../dev-itpro/extensibility/decimal-point-precision.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張可能なソリューションの作成
+          items:
+            - name: 拡張可能なコードの書き込み
+              href: ../../dev-itpro/extensibility/writing-extensible-code.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: クラス
+              href: ../../dev-itpro/extensibility/extensible-classes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: メソッド
+              href: ../../dev-itpro/extensibility/extensible-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フォーム
+              href: ../../dev-itpro/extensibility/extensible-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張データ型
+              href: ../../dev-itpro/extensibility/extensible-edts.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 拡張可能な列挙
+              href: ../../dev-itpro/extensibility/extensible-enums.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 委任
+              href: ../../dev-itpro/extensibility/extensible-code-delegates.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テーブル
+              href: ../../dev-itpro/extensibility/extensible-tables.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: メソッドの拡張属性
+              href: ../../dev-itpro/extensibility/extensibility-attributes.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 変更の分割
+              href: ../../dev-itpro/extensibility/breaking-changes.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: パフォーマンス
+      items:
+        - name: Trace Parser を使用したトレースの実行
+          href: ../../dev-itpro/perf-test/trace-trace-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト
+          href: ../../dev-itpro/perf-test/single-user-test-perf-sdk.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+          href: ../../dev-itpro/perf-test/multi-user-testing-local-test-controller.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
+          href: ../../dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+          href: ../../dev-itpro/perf-test/troubleshoot-perf-sdk-user-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+          href: ../../dev-itpro/perf-test/perfsdk-tutorial-lbd.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
+          href: ../../dev-itpro/perf-test/trace-parser.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パフォーマンス タイマー
+          href: ../../dev-itpro/perf-test/performance-timer.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Visual Studio でのテストのサポート
+      items:
+        - name: テストと検証
+          href: ../../dev-itpro/perf-test/testing-validation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Visual Studio でのプロジェクトのテスト
+          href: ../../dev-itpro/perf-test/testing-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 継続的なビルドおよびテストの自動化をサポートする環境の配置
+          href: ../../dev-itpro/perf-test/continuous-build-test-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
+          href: ../../dev-itpro/perf-test/systest-filtering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 承認テストのライブラリ
+          items:
+            - name: 承認テスト ライブラリのリソース
+              href: ../../dev-itpro/perf-test/acceptance-test-library.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ナビゲーション概念
+              href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: テスト データ メソッド
+              href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリのエンティティ
+              href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリのコマンド
+              href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリの作成者
+              href: ../../dev-itpro/perf-test/concepts-creators.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリのクエリ
+              href: ../../dev-itpro/perf-test/concepts-queries.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 詳細のクラス
+              href: ../../dev-itpro/perf-test/concepts-specifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリ コード生成ウィザード
+              href: ../../dev-itpro/perf-test/code-generation-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 承認テスト ライブラリのベスト プラクティス
+              href: ../../dev-itpro/perf-test/atl-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: よく寄せられる質問
+              href: ../../dev-itpro/perf-test/atl-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 日付の有効期間
+      href: ../../dev-itpro/dev-tools/date-effectivity.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ISV ライセンス
+      href: ../../dev-itpro/dev-tools/isv-licensing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: オンプレミスの ISV ライセンス
+      href: ../../dev-itpro/dev-tools/isv-licensing-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: 一般データ保護規則 (GDPR)
+  items:
+    - name: 一般データ保護規則の概要
+      href: ../../dev-itpro/gdpr/gdpr-guide.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: GDPR データ要求への応答
+      items:
+        - name: GDPR データ要求への応答のリソース
+          href: ../../dev-itpro/gdpr/gdpr-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 資産分類
+          href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 個人検索レポート
+          href: ../../dev-itpro/gdpr/gdpr-person-search-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 個人検索レポートの拡張
+          href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 機密データへのアクセスを管理
+          href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Talent を使用した個人データ要求への対応
+          href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 の個人データ要求への対応
+          href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: LCS に対する GDPR データ要求
+          href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Lifecycle Services
+  items:
+    - name: Lifecycle Services に関するリソース
+      items:
+        - name: Lifecycle Services のリソース
+          href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 顧客向け LCS
+          href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: パートナー向け LCS
+          href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 新機能
+          href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 既知の問題
+          href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Lifecycle Services ユーザー ガイド
+      href: ../../dev-itpro/lifecycle-services/lcs-user-guide.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: サブスクリプション見積もりツール
+      href: ../../dev-itpro/lifecycle-services/subscription-estimator.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: セキュリティのコンフィギュレーション
+      href: ../../dev-itpro/lifecycle-services/configure-lcs-security.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 問題検索
+      href: ../../dev-itpro/lifecycle-services/issue-search-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 構成マネージャー
+      items:
+        - name: 構成マネージャーの概要
+          href: ../../dev-itpro/lifecycle-services/configuration-manager-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 構成マネージャーの設定
+          href: ../../dev-itpro/lifecycle-services/set-up-configuration-manager-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コード アップグレード サービスのコンフィギュレーション
+      href: ../../dev-itpro/lifecycle-services/configure-execute-code-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 方法の作成または更新
+      href: ../../dev-itpro/lifecycle-services/create-methodology.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラー
+      href: ../../dev-itpro/lifecycle-services/bpm-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラーの業務プロセス ライブラリ
+      href: ../../dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラー ライブラリの作成、編集、参照
+      href: ../../dev-itpro/lifecycle-services/creating-editing-browsing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラーでのタスクの完了
+      href: ../../dev-itpro/lifecycle-services/complete-tasks-bpm.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: BPM ライブラリの活動ダイアグラムでの作業
+      href: ../../dev-itpro/lifecycle-services/using-activity-diagrams.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: BPM ライブラリと Azure DevOps の同期
+      href: ../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
+      href: ../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラーのフローチャート
+      href: ../../dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: カスタムの業務プロセスのビジネス プロセス モデラーへのアップロード
+      href: ../../dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: モニタリングおよび診断
+      href: ../../dev-itpro/lifecycle-services/monitoring-diagnostics.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 環境サービスの再開
+      href: ../../dev-itpro/lifecycle-services/restart-environment-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 稼働停止をレポート
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ユーザー サインインの追跡
+      href: ../../dev-itpro/lifecycle-services/user-logins.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 資産ライブラリ
+      href: ../../dev-itpro/lifecycle-services/asset-library.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: LCS 内のツールを使用した、パフォーマンスのトラブルシューティング
+      href: ../../dev-itpro/lifecycle-services/performancetroubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: クックブックの照会
+      href: ../../dev-itpro/lifecycle-services/querycookbook.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Microsoft Dynamics 365 Translation Service
+      items:
+        - name: Dynamics 365 Translation Service の概要
+          href: ../../dev-itpro/lifecycle-services/translation-service-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ユーザー インタ フェース ファイルの翻訳
+          href: ../../dev-itpro/lifecycle-services/use-translation-service.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ドキュメント ファイルの翻訳
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-ua.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 翻訳メモリ ファイル
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-tm.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: モバイル プラットフォーム
+  items:
+    - name: モバイル プラットフォームのリソース
+      href: ../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 使用開始
+      items:
+        - name: モバイル プラットフォームを使い始める
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-getting-started.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: アーキテクチャと設計の考慮事項
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ビジネス ロジック イベント
+          href: ../../dev-itpro/mobile-apps/platform/business-logic-events-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ページ デザインのガイドライン
+          href: ../../dev-itpro/mobile-apps/platform/page-design-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: アクション デザインのガイドライン
+          href: ../../dev-itpro/mobile-apps/platform/action-design-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フォーム デザインの要件
+          href: ../../dev-itpro/mobile-apps/platform/form-design-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 一般的なタスク
+      items:
+        - name: SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クリック可能なモバイル アプリ ページ上でのフィールドの作成
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フィールドの数の表示
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/display-count-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モバイル ワークスペースのセキュリティの強化
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: モバイル ワークスペースのローカライズ
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペースのクラスを使用してフィールドを必須にする
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: サーバー側の開発のリファレンス
+      items:
+        - name: サーバー側の開発 (ワークスペース X++ API)
+          href: ../../dev-itpro/mobile-apps/platform/mobile-workspace-server-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: クライアント側の開発のリファレンス
+      items:
+        - name: クライアント側の設計 API
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クライアント API
+          items:
+            - name: クライアント API ホームページ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/client-apis-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageState 列挙
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: アプリケーション モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 延期モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/defer.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: イベント モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 管理モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: コンテナー モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: フィールド モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ファイル アップローダー モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: グループ モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ハイパーリンク モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 画像モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 入力モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: リスト モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 参照モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: マルチ参照モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ページ モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ページリンク モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: パート モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: サービス モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 値モジュール
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Application タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ApplicationMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: AsyncService タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: CacheService タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: CompleteEventArgs タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ContainerControl タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ContainerControlDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ContainerControlMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ControlMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: DataService タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Deferred タイプ<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Design タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: EventHook タイプ<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Field タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: FieldDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: FieldMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: FileUploader タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: FileUploaderDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: FileUploaderMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: GenericValue タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: getDataSource タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Group タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: GroupDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: GroupMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: HyperLink タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: HyperLinkDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: HyperLinkMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Image タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ImageDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ImageMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: InputControl タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: InputControlDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: InputControlMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: List タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ListDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ListMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Lookup タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: LookupDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: LookupMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: MetadataService タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: MultiLookup タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: MultiLookupDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: MultiLookupMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: NavigationArgs タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: NumberSequenceConfig タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Page タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageData タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageLink タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageLinkDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageLinkMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageOptions タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageSubmitArgs タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PageTarget タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Part タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PartDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: PartMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: Row タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 値のタイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ValueDesign タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ValueMetadata タイプ
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool の概要
+      href: ../../dev-itpro/perf-test/rsat/rsat-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: インストールとコンフィギュレーション
+      href: ../../dev-itpro/perf-test/rsat/rsat-install-configure.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
+      href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: テスト ケースの実行
+      href: ../../dev-itpro/perf-test/rsat/rsat-run.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 予測値の検証
+      href: ../../dev-itpro/perf-test/rsat/rsat-validate-expected.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: テスト ケースのチェーン
+      href: ../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 派生テスト ケース
+      href: ../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Regression Suite Automation Tool チュートリアルの使用
+      href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ベスト プラクティス
+      href: ../../dev-itpro/perf-test/rsat/rsat-best-practices.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: トラブルシューティング
+      href: ../../dev-itpro/perf-test/rsat/rsat-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Lifecycle Services を使用したリリースのソリューション
+  items:
+    - name: 開発とリリース
+      href: ../../dev-itpro/lcs-solutions/lcs-solutions-app-source.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ステージおよび公開
+      href: ../../dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 方法の追加
+      href: ../../dev-itpro/lcs-solutions/methodologies-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ビジネス プロセス モデラー ライブラリの設定
+      href: ../../dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コードの移行
+      href: ../../dev-itpro/lcs-solutions/code-migration-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: アプリケーションの検証
+      href: ../../dev-itpro/lcs-solutions/app-validation-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: データ パッケージの処理と使用
+      href: ../../dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ソリューション データベースのバックアップ
+      href: ../../dev-itpro/lcs-solutions/database-backup-lcs-solutions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ローカライズと規制の機能
+      items:
+        - name: グローバリゼーション リソース
+          href: ../../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ローカリゼーション機能の分類
+          href: ../../dev-itpro/lcs-solutions/classify-localization-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 国/地域コンテキストの適用
+          href: ../../dev-itpro/lcs-solutions/apply-country-context.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 機能タイトルの規制証明情報
+          href: ../../dev-itpro/lcs-solutions/regulatory-certifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 規制の更新
+          href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ローカライズ モデルの分類
+          href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 規制の警告の送信
+          href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: サポート
+  items:
+    - name: Finance and Operations および Lifecycle Services のサポートの取得
+      href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dynamics 365 のサポートの概要
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
+      href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: プレミア サポート チケットの記録
+      href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Dynamics サービス エンジニアリング チームへの要求の送信
+      href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Finance and Operations のテクニカル サポートの設定
+      href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 予定された保守ウィンドウに関するよく寄せられる質問
+      href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: クラウドの工程とサービス
+      href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Finance and Operations サポート エクスペリエンスの管理
+      href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: システム管理
+  items:
+    - name: システム管理ホーム ページ
+      href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 法律条項およびプライバシーに関する声明へのリンクの追加
+      href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ライセンス コードとコンフィギュレーション キーのレポート
+      href: ../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 会社間データ共有
+      href: ../../dev-itpro/sysadmin/cross-company-data-sharing.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: メンテナンス モード
+      href: ../../dev-itpro/sysadmin/maintenance-mode.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コンフィギュレーション済みのシステム アカウント
+      href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: B2B ユーザーの Azure AD へのエクスポート
+      href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: セキュリティ
+      items:
+        - name: ロールベース セキュリティ
+          href: ../../dev-itpro/sysadmin/role-based-security.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セキュリティ アーキテクチャ
+          href: ../../dev-itpro/sysadmin/security-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セッション アイドル タイムアウトの設定
+          href: ../../dev-itpro/sysadmin/session-idle-timeout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 最初から用意されているセキュリティ レポート
+          href: ../../dev-itpro/sysadmin/security-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 新規ユーザーの作成
+          href: ../../dev-itpro/sysadmin/tasks/create-new-users.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ユーザーの一括インポート
+          href: ../../dev-itpro/sysadmin/tasks/import-bulk-users.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 職務分掌の設定
+          href: ../../dev-itpro/sysadmin/tasks/set-up-segregation-duties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 職務分掌の競合の識別と解決
+          href: ../../dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ユーザーのセキュリティ ロールへの割り当て
+          href: ../../dev-itpro/sysadmin/tasks/assign-users-security-roles.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: バッチ処理
+      items:
+        - name: バッチ処理の概要
+          href: ../../dev-itpro/sysadmin/batch-processing-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ処理とバッチ サーバー
+          href: ../../dev-itpro/sysadmin/batch-server-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ ジョブの作成
+          href: ../../dev-itpro/sysadmin/tasks/create-batch-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ ジョブのコピー
+          href: ../../dev-itpro/sysadmin/copy-batch-job.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 有効なバッチ期間
+          href: ../../dev-itpro/sysadmin/activeperiod.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ マネージャーのセキュリティ ロール
+          href: ../../dev-itpro/sysadmin/runby.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
+          href: ../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ警告のコンフィギュレーション
+          href: ../../dev-itpro/sysadmin/alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張バッチ フォーム
+          href: ../../dev-itpro/sysadmin/enhanced-forms.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: バッチ履歴のクリーンアップ
+          href: ../../dev-itpro/sysadmin/batch-history-cleanup.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 実行中のバッチ ジョブの中止
+          href: ../../dev-itpro/sysadmin/batch-abort.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 最適化アドバイザー
+      items:
+        - name: 最適化アドバイザーの概要
+          href: ../../dev-itpro/sysadmin/optimization-advisor-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 最適化アドバイザーのルールの作成
+          href: ../../dev-itpro/sysadmin/create-rules-optimization-advisor.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 稼働停止をレポート
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: アップグレード、更新プログラム、および修正プログラム
+  items:
+    - name: アップグレード、更新プログラム、および修正プログラムのリソース
+      href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: AX 2012 からのアップグレード
+      items:
+        - name: AX 2012 から Finance and Operations へのアップグレード
+          href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画の策定
+          href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積
+          href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 'AX 2012 アップグレード: 分析のためのデモ環境の展開'
+          href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - 開発環境でのデータ アップグレード
+          href: ../../dev-itpro/migration-upgrade/data-upgrade-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
+          href: ../../dev-itpro/migration-upgrade/prepare-data-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - 切替テスト
+          href: ../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - アップグレード後のタスク
+          href: ../../dev-itpro/migration-upgrade/app-validation-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - 機能テスト合格
+          href: ../../dev-itpro/migration-upgrade/upgrade-functional-validation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - Go-Live の準備
+          href: ../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 アップグレード - Go-Live
+          href: ../../dev-itpro/migration-upgrade/2012-upgrade-cutover.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2012 からのアップグレードに影響する変更
+          items:
+            - name: 勘定科目表の区切り記号を一意にする
+              href: ../../dev-itpro/migration-upgrade/chart-accounts-delimiter-unique.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 単一伝票仕訳帳と通貨再評価のアップグレード
+              href: ../../dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: プロジェクト リソースのスケジューリング データ モデル
+              href: ../../dev-itpro/migration-upgrade/data-model-changes-resource-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: ワークフロー サブシステムの変更
+              href: ../../dev-itpro/migration-upgrade/workflow-subsystem.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 分析キューブの代わりに使用する集計モデル
+              href: ../../dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: アップグレードした販売キューブのエンティティ格納への移行
+              href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 予算計画のアップグレード
+              href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: AX 2009 からのデータの移行
+      items:
+        - name: AX 2009 から Finance and Operations へのデータの移行
+          href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － データ移行ツールのインストール
+          href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － マップの生成
+          href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － テンプレートの作成
+          href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － 移行グループの作成
+          href: ../../dev-itpro/migration-upgrade/create-definition.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － パッケージのエクスポート
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-export-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: AX 2009 の移行 － パッケージのインポート
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-import-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コードの移行とアップグレード
+      items:
+        - name: コードの移行とホーム ページのアップグレード
+          href: ../../dev-itpro/migration-upgrade/code-migration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コード移行の準備
+          href: ../../dev-itpro/migration-upgrade/prepare-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Azure DevOps マッピングの構成
+          href: ../../dev-itpro/migration-upgrade/configure-vso-solution.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 分割されたモデル
+          href: ../../dev-itpro/dev-tools/model-split.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: デリゲートを使用したモデル間の依存関係の解決
+          href: ../../dev-itpro/migration-upgrade/delegates-migration.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 最新の更新プログラムへのアップグレード (クラウド)
+      items:
+        - name: 最新の更新プログラムに移行するためのプロセス
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 1 つのバージョンへのパス
+          items:
+            - name: 最新バージョンへのセルフサービス アップグレード
+              href: ../../dev-itpro/migration-upgrade/self-service-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+            - name: 再構築して最新バージョンに更新
+              href: ../../dev-itpro/migration-upgrade/appupdate-80-81.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
+          href: ../../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 最新のプラットフォーム更新プログラムの環境への適用
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発環境またはデモ環境でのデータのアップグレード
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-to-latest-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発ツールの更新
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 最新の更新プログラムに対してコードをコンパイルするための計画と準備
+          href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 最新の更新プログラムへのアップグレード (オンプレミス)
+      items:
+        - name: オンプレミス配置への更新プログラムの適用
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミス配置の再配置
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: オンプレミスの 7.x から 8.1 へのインプレース アップグレード
+          href: ../../dev-itpro/migration-upgrade/on-prem-upgrade.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 修正プログラム
+      items:
+        - name: Lifecycle Services から更新プログラムを入手
+          href: ../../dev-itpro/migration-upgrade/download-hotfix-lcs.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: クラウド環境への更新プログラムの適用
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 開発環境でのメタデータ修正プログラムのインストール
+          href: ../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 1 ボックス環境の Reporting Services への修正プログラムの適用
+          href: ../../dev-itpro/migration-upgrade/patch-reporting-service-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Visual Studio 開発ツールの更新
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 廃止
+      items:
+        - name: 削除済みまたは非推奨の機能
+          href: ../../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 方法とメタデータの要素の廃止
+          href: ../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 非推奨 API
+          href: ../../dev-itpro/migration-upgrade/deprecated-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: ユーザー インターフェイス開発
+  items:
+    - name: ユーザー インターフェイス開発のホーム ページ
+      href: ../../dev-itpro/user-interface/user-interface-development-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: チュートリアル
+      items:
+        - name: レンタル料金のタイプ フォームの構築
+          href: ../../dev-itpro/user-interface/build-rental-charge-type-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 顧客フォームの構築
+          href: ../../dev-itpro/user-interface/build-customer-form.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ナビゲーションの構築
+          href: ../../dev-itpro/user-interface/build-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペースの構築
+          href: ../../dev-itpro/user-interface/build-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: フォーム
+      items:
+        - name: ナビゲーション概念
+          href: ../../dev-itpro/user-interface/page-navigation.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Web クライアントのページ レイアウト
+          href: ../../dev-itpro/user-interface/page-layout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: Dynamics Symbol フォント
+          href: ../../dev-itpro/user-interface/symbol-font.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 保存されているビュー
+          href: ../../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 保存されたビューを十分に活用するフォームの作成
+          href: ../../dev-itpro/user-interface/understanding-saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: カスタム パターンを使用するテスト フォーム
+          href: ../../dev-itpro/user-interface/testing-forms-custom-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セキュリティ保護された共有可能な URL (ディープ リンク) の作成
+          href: ../../dev-itpro/user-interface/create-deep-links.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フォーム、製品、およびコントロールのユーザー補助機能
+          href: ../../dev-itpro/user-interface/enable-accessibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フィールドの説明のカスタマイズ
+          href: ../../dev-itpro/user-interface/customize-field-help.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コントロール
+      items:
+        - name: アクション コントロール
+          href: ../../dev-itpro/user-interface/action-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 入力コントロールとグリッド列のサイズ
+          href: ../../dev-itpro/user-interface/sizing-input-controls-grid-columns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ツリー コントロールでのチェック ボックスのサポート
+          href: ../../dev-itpro/user-interface/check-box-tree-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フィルター処理のオプション
+          href: ../../dev-itpro/user-interface/filtering.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: PowerApps ホスト コントロール
+          href: ../../dev-itpro/user-interface/powerapps-host-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ウィンドウの管理
+      items:
+        - name: コンテキスト メニュー コードの移行
+          href: ../../dev-itpro/migration-upgrade/code-migration-context-menus.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: マウス ダブルクリック ロジックの移行
+          href: ../../dev-itpro/migration-upgrade/code-migration-double-click.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ルックアップのコンテキスト データ入力
+          href: ../../dev-itpro/user-interface/contextual-data-entry-lookups.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: HierarchyViewer コントロール
+          href: ../../dev-itpro/user-interface/hierarchy-viewer-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ルックアップ コントロール
+          href: ../../dev-itpro/user-interface/lookups-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ファイルのアップロード コントロール
+          href: ../../dev-itpro/user-interface/file-upload-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: システム定義ボタン
+          href: ../../dev-itpro/user-interface/system-defined-buttons.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ページまたはグリッドの画像
+          href: ../../dev-itpro/user-interface/images-form-grid.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 入力、テーブル、およびグリッド コントロール用のフォントと背景
+          href: ../../dev-itpro/user-interface/specify-color-font-background-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 右から左へ読み書きする言語のサポートと双方向のテキスト
+          href: ../../dev-itpro/user-interface/bidirectional-support.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペース タイル用のアイコンの作成
+          href: ../../dev-itpro/user-interface/create-icons-workspace-tiles.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張可能なコントロールのためのパブリック JavaScript API
+          href: ../../dev-itpro/user-interface/public-javascript-apis.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コントロールのチェックリスト
+          href: ../../dev-itpro/user-interface/control-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: メッセージ
+      items:
+        - name: 機能のコールアウト
+          href: ../../dev-itpro/user-interface/feature-callouts.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: スライダー ダイアログとメッセージ ボックス ダイアログ
+          href: ../../dev-itpro/user-interface/slider-messagebox.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
+          href: ../../dev-itpro/user-interface/messaging-api-center-bar-details.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
+          href: ../../dev-itpro/user-interface/messaging-user.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: フォーム パターンのガイドライン
+      items:
+        - name: 移行後のフォームのフォーム パターン
+          href: ../../dev-itpro/user-interface/select-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フォームのスタイルとパターン
+          href: ../../dev-itpro/user-interface/form-styles-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フォーム パターンをサポートしている Visual Studio アドイン
+          href: ../../dev-itpro/user-interface/form-pattern-add-ins.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: フォーム パターン
+      items:
+        - name: フォームの全般的なガイドライン
+          href: ../../dev-itpro/user-interface/general-form-guidelines.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 詳細マスター フォーム パターン
+          href: ../../dev-itpro/user-interface/details-master-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 詳細トランザクション フォーム パターン
+          href: ../../dev-itpro/user-interface/details-transaction-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フォーム パターン セクション リストのフォーム パターン
+          href: ../../dev-itpro/user-interface/section-list-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: リスト ページのフォーム パターン
+          href: ../../dev-itpro/user-interface/list-page-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 簡易詳細のフォーム パターン
+          href: ../../dev-itpro/user-interface/simple-details-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 簡易リストおよび簡易詳細のフォーム パターン
+          href: ../../dev-itpro/user-interface/simple-list-details-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 簡易リストのフォーム パターン
+          href: ../../dev-itpro/user-interface/simple-list-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 目次のフォーム パターン
+          href: ../../dev-itpro/user-interface/table-of-contents-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: タスク ダブルのフォーム パターン
+          href: ../../dev-itpro/user-interface/task-double-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: タスク シングルのフォーム パターン
+          href: ../../dev-itpro/user-interface/task-single-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ウィザードのフォーム パターン
+          href: ../../dev-itpro/user-interface/wizard-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペースのフォーム パターン
+          href: ../../dev-itpro/user-interface/workspace-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: 副次フォーム パターン
+      items:
+        - name: 高度な選択のフォーム パターン
+          href: ../../dev-itpro/user-interface/advanced-selection-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ダイアログのフォーム パターン
+          href: ../../dev-itpro/user-interface/dialog-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ダイアログ削除のフォーム パターン
+          href: ../../dev-itpro/user-interface/drop-dialog-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ルックアップのフォーム パターン
+          href: ../../dev-itpro/user-interface/lookup-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 情報ボックスのフォーム パターン
+          href: ../../dev-itpro/user-interface/factbox-form-patterns.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: サブ パターン
+      items:
+        - name: カスタム フィルター グループのサブパターン
+          href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 分析コード エントリ コントロールのサブパターン
+          href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 分析コード式ビルダーのサブパターン
+          href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フィールドおよびフィールド グループのサブパターン
+          href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: フィルターおよびツールバーのサブパターン
+          href: ../../dev-itpro/user-interface/filters-toolbar-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: テキスト入力のサブパターン
+          href: ../../dev-itpro/user-interface/fill-text-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 水平フィールドおよびボタン グループのサブパターン
+          href: ../../dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 画像のプレビューのサブパターン
+          href: ../../dev-itpro/user-interface/image-preview-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: リスト パネルのサブパターン
+          href: ../../dev-itpro/user-interface/list-panel-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 入れ子になった簡易リストおよび簡易詳細のサブパターン
+          href: ../../dev-itpro/user-interface/nested-simple-list-details-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション グラフのフォーム パターン
+          href: ../../dev-itpro/user-interface/section-chart-form-pattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション Power BI のサブパターン
+          href: ../../dev-itpro/user-interface/section-powerbi-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション関連リンクのサブパターン
+          href: ../../dev-itpro/user-interface/section-related-links-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション積み上げグラフのサブパターン
+          href: ../../dev-itpro/user-interface/section-stacked-chart-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション タブ付きリストのサブパターン
+          href: ../../dev-itpro/user-interface/section-tabbed-list-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: セクション タイルのサブパターン
+          href: ../../dev-itpro/user-interface/section-tiles-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 表形式フィールドのサブパターン
+          href: ../../dev-itpro/user-interface/tabular-fields-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ツールバーおよびフィールドのサブパターン
+          href: ../../dev-itpro/user-interface/toolbar-fields-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ツールバーおよびリストのサブパターン
+          href: ../../dev-itpro/user-interface/toolbar-list-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペース ページ フィルター グループのサブパターン
+          href: ../../dev-itpro/user-interface/workspace-filter-group-subpattern.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: コントロールの拡張機能
+      items:
+        - name: 拡張可能なコントロールの構築
+          href: ../../dev-itpro/user-interface/build-extensible-control.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張可能なコントロールのためのキーボード ショートカット
+          href: ../../dev-itpro/user-interface/keyboard-shortcuts-controls.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張可能なコントロールのプログラミング リファレンス
+          href: ../../dev-itpro/user-interface/extensible-control-programming-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コントロールの拡張機能
+          href: ../../dev-itpro/user-interface/control-extensibility.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ローカライズ可能なラベルの作成
+          href: ../../dev-itpro/user-interface/create-localizable-labels-client.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: 拡張可能なコントロール レイアウトのガイドライン
+          href: ../../dev-itpro/user-interface/extensible-controls-layout.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: コントロールに対してタスク レコーダーが生成するテキストの制御
+          href: ../../dev-itpro/user-interface/task-recorder-control-text.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: ワークスペースの構築
+      items:
+        - name: 運用ワークスペースの構築
+          href: ../../dev-itpro/user-interface/build-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: ワークスペースのタイルおよびリストのキャッシュ
+          href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: タスク レコーダー
+      items:
+        - name: タスク レコーダーのリソース
+          href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: タスク レコーダーのクイック リファレンス
+          href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/retail/toc.json
+        - name: タスク レコーダーによるドキュメントやトレーニングの作成
+          href: ../../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json

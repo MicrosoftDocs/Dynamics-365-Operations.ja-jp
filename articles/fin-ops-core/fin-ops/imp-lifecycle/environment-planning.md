@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 83d5bfb4940179e95638df99ad840c17ae35ef71
-ms.sourcegitcommit: b806f0c94d703bec39680fead827733361d47045
+ms.openlocfilehash: 2ba1ad7b13b538620fa99629e109e9f0dc257fab
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935840"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003820"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -57,11 +57,10 @@ ms.locfileid: "2935840"
 | レベル 1 | レベル 2 以上 |
 |--------|-------------------|
 | シングルボックス環境 | マルチボックス環境 |
-| すべてのコンポーネントは仮想マシンの同じサーバーにインストールされています。 これらのコンポーネントには、アプリケーション オブジェクト サーバー (AOS)、データベース、Dynamics 365 Retail、および Management Reporter が含まれます。 これらのコンポーネントには、Application Object Server (AOS)、データベース、Dynamics 365 Retail および Management Reporter が含まれます。 | コンポーネントは複数のクラウド サービスにインストールされており、一般的には１つ以上の アプリケーション オブジェクト サーバー (AOS) を含んでいます。 |
-| Microsoft SQL Server で使用 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
-| この構造は本稼働環境の構造によって異なり、これは開発チームの効率性を最大限に高めることを意図しています。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 |
-| さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 |
-| この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
+
+| すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、アプリケーション オブジェクト サーバー (AOS)、データベース、Dynamics 365 Commerce、および Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
+
+| Microsoft SQL Server を使用します。 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/) を使用します。 | | この構造は本稼働環境の構造によって異なり、これは開発チームの効率性を最大限に高めることを意図しています。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 | | さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 | | この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
 
 ## <a name="standard-cloud-offer"></a>標準クラウド サービス
 
@@ -157,7 +156,7 @@ ms.locfileid: "2935840"
 ![サブスクリプション見積](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、Finance and Operations データベースを SQL Server から Azure SQL Database 環境にコピーする手順は、Microsoft からサービスとして利用できます。 したがって、データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
+> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、Finance and Operations データベースを SQL Server から Azure SQL データベース環境にコピーする手順は、Microsoft からサービスとして利用できます。 したがって、データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
 
 ### <a name="purchasing-add-on-environments"></a>アドオン環境の購入
 

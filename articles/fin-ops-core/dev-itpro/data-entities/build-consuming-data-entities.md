@@ -3,7 +3,7 @@ title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cbc9120814d54a59922e5e90c882879518d26a7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9d3b5e77611c9b08d2a6c19e4c09dc03a3e1467c
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769743"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029825"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -30,13 +30,18 @@ ms.locfileid: "2769743"
 
 このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。 データのインポートとエクスポート、統合、および OData サービスなどのさまざまな統合シナリオで、これらのデータ エンティティが使用される方法もプレビューされます。
 
-## <a name="prerequisites"></a>前提条件
+最初のエンティティを構築する準備が整ったら、次の作業を行う必要があります。
+- 独自のパッケージとモデルを作成します。 詳細については、[モデルとパッケージ](../dev-tools/models.md) を参照してください。
+- 新しいプロジェクトを作成し、作成したばかりのプロジェクトにモデル プロパティを設定します。
+
+## <a name="prerequisites"></a>必要条件
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングする必要があります。
 
 このチュートリアルでは、baseUrl はインスタンスのベース URL を指します。
 
 - クラウド環境では、ベース URL は Microsoft Dynamics Lifecycle Services (LCS) から取得されます。
-- ローカル仮想マシン (VM) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
+- [ローカル仮想マシン (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
+- FMLab サンプル コードを C: にダウンロードします。 詳細については、[FMLab サンプル コード](https://github.com/Microsoft/FMLab) を参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
 - Microsoft Visual Studio のデータ エンティティの開発
@@ -76,7 +81,7 @@ FMLabCustomerEntity
 
 ### <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
-1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** の順にクリックしてから、**Finance and Operations のプロジェクト** を選択します。
+1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト**をクリックして、**Finance and Operations プロジェクト**を選択します。
 2. プロジェクトを右クリックして **プロパティ** をクリックし、プロジェクトがフリート管理モデルであることを確認します。 設定されていない場合、**モデル** プロパティを**フリート管理**に設定します。
 
 ### <a name="add-a-new-data-entity-to-your-project"></a>プロジェクトへの新しいデータ エンティティの追加
@@ -87,7 +92,7 @@ FMLabCustomerEntity
 4. **データ エンティティ** ウィザードで、作成しているデータ エンティティのプロパティを指定します。 次のスクリーン ショットに表示される値を使用します。
 
     > [!NOTE]
-    > エンティティの名前に「_」や数字 (0...9) を使用することはできません。 これらの文字を使用すると、後でマッピング エラーが発生することがあります。
+    > エンティティの名前に '\_' や数字 (0...9) を使用することはできません。 これらの文字を使用すると、後でマッピング エラーが発生することがあります。
 
     [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
@@ -167,7 +172,7 @@ FMLabCustomerEntity
 1. ソリューション エクスプローラーで、**追加** &gt; **新しい項目** &gt; **実行可能なクラス**をクリックして、実行可能なクラスをプロジェクトに追加します。
 2. 次のコードをコピーしてクラスに貼り付け、データ エンティティをテストします。
 
-    ```
+    ```xpp
     public static void main(Args _args)
     {
         FMLabCustomerEntity customer;
@@ -210,7 +215,7 @@ FMLabCustomerEntity
 
 1. インポートすることができる CSV ファイルのサンプルを作成します。 次のテキストをコピーし、**FM Lab Customer Import.csv** として保存します。
 
-    ```
+    ```Console
     CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
     ```
 
@@ -293,9 +298,9 @@ FMLabCustomerEntity
 このセクションでは、標準の OData 構文の一部を使用し、フリート管理モデルで公開されている OData エンティティを操作して照会します。 最初に、以下の手順に従って、JSON 形式のデータを表示する Internet Explorer を有効にします。
 
 1. すべての Internet Explorer ウィンドウを閉じます。
-2. C:\\FMLab に移動し、json.ie.reg ファイルを選択してダブルクリックします。
+2. C:\\FMLab に移動し、json-ie.reg ファイルを選択してダブルクリックします。
 3. **レジストリ エディター** ダイアログ ボックスで、**はい**をクリックします。
-4. **OK** をクリックします。
+4. **OK**をクリックします。
 
 Internet Explorer  を使用して一部の OData URI を表示できるようになりました。
 
@@ -321,7 +326,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 
 6. 顧客のすべての詳細とともにすべての**レンタル**レコードを取得するには、URL "\[baseURL\]/data/FleetRentals?$expand=CustomerRole" を入力します。次の例は、**レンタル**レコードと、リンクされた顧客の詳細を JSON 形式で示しています。
 
-    ```
+    ```Text
     "@odata.context":"https://testax32aos.cloud.test.dynamics.com/en/data/$metadata#FleetRentals","value":
     {  
         { 
@@ -353,7 +358,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 1. ソリューション エクスプローラーで、**FMRentalEntity** を右クリックしてから、**コードの表示**を選択します。
 2. 次のコード明細行をコピーし、**コード**ウィンドウに貼り付けます。
 
-    ```
+    ```xpp
     public class FMRentalEntity extends common
     {
         [SysODataActionAttribute("ReturnRental", true)]
@@ -381,7 +386,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 5. ソリューション エクスプローラーで、**OdataProxyGenerator.tt** をダブルクリックします。
 6. コード エディターで、次の文字列を組織の URL に置き換えます。
 
-    ```
+    ```xpp
     <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
     ```
 
@@ -422,7 +427,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 ### <a name="max-join-limits"></a>最大結合の制限
 エンティティの開発中に、エンティティの全体的な構造が最大統合制限である 26 を超えないように注意してください。 これが既定の制限です。 統合制限を増やすことは意図しない結果をもたらす可能性があるためお勧めできません。 この制限を超えると、エンティティはレコードの処理に失敗する可能性が高く、次の SQL エラーが発生します。 また、エラーを回避するエンティティで列の合計数を管理することもお勧めします。
 
-```
+```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
 

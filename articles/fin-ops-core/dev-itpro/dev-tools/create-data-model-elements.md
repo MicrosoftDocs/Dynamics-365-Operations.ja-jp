@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23421
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94b1975d64d5de914dcf98f7bc8812dabf5d8425
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58a07b4a35db236bbe1a90126bf1fc19a4c532e5
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249314"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983665"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルの作成、およびデータモデル要素の作成についての概要
 

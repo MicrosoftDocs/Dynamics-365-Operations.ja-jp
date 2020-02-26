@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c415a7a2f2c71a79974283897ffbed587713d40a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 38a27ca9f678ff0cdd48876ecb0ecf2388ee4c97
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191746"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003844"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "2191746"
 
 デモ データは、実装サポートとデモの目的でリリースされる基本データ セットです。 現在のデモ データセットは、次の業種をサポートしています。
 
-- Retail
+- Commerce
 - 配布
 - サービス業
 - 公的機関

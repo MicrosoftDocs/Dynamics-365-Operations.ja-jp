@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.openlocfilehash: 7a1e502ae5913e45f8162cc9303a1c56822981fb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1aeefea500a4a545bd7d573673dc37c6d023f4b2
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183232"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983676"
 ---
 # <a name="security-upgrade-advisor-tool-user-guide"></a>セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
 
@@ -72,13 +72,13 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 
 ウィザードの出力は、指定した接頭語で名前が付けられた AOT のカスタム ロールです。 ユーザーはこれらのロールに自動的に割り当てられません。 ロールが生成されると、各ユーザーにロールを手動で割り当てる必要があります。 **次へ**をクリックすると、ウィザードの各ステップを実行します。 **キャンセル**をクリックすると、ウィザードが閉じます。
 
-1. 使用している Application Object Server (AOS) のインスタンスに接続されているクライアント接続を排除します。 詳細については、[AOS からユーザーを排除](http://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx) を参照してください。
+1. 使用している Application Object Server (AOS) のインスタンスに接続されているクライアント接続を排除します。 詳細については、[AOS からユーザーを排除](https://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx) を参照してください。
 2. **管理ツール** &gt; **サービス**で、**Microsoft Dynamics AX Object Server 6.0** サービスを停止します。
 3. Windows PowerShell または AXUtil を使用して、**SecurityUpgradeAdvisorTool.axmodel** モデルを Microsoft Dynamics AX 2012 AOT にインポートします。
 
        Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
 
-   詳細については、「[方法: モデルのエクスポートとインポート](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。
+   詳細については、「[方法: モデルのエクスポートとインポート](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。
 
 4. **Microsoft Dynamics AX Object Server 6.0** サービスを開始します。
 5. Security Upgrade Advisor プロジェクトを開いて、<strong>フォーム</strong>&gt;<strong>SecurityUpgradeWizard</strong> フォームを開きます。

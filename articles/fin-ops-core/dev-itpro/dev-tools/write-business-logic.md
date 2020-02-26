@@ -3,7 +3,7 @@ title: C# および X++ ソース コードを使用したビジネス ロジッ
 description: このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
 author: pvillads
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82d649d91d3218c7f24440f1564d97cd4f514235
-ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
+ms.openlocfilehash: 7576c8cc084615edae1a0bf2479091e7e736ce2e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854049"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030880"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
@@ -94,7 +94,7 @@ ms.locfileid: "2854049"
 8.  **ソリューション エクスプローラー**で、**DriversLicenseChecker.cs** を右クリックしてから、**コードの表示**をクリックします。
 9.  **DriversLicenseEvaluator** 名前空間に、次の使用する 3 つのステートメントを追加し、外部クラスを参照するコードの冗長性を減らします。 Dynamics.AX.Application の使用。Microsoft.Dynamics.AX.Framework.Linq.Data の使用。Microsoft.Dynamics.AX.Xpp の使用。ユーザーの C\# コードは以下の例のように見えるはずです。
 
-    ```xpp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -118,7 +118,7 @@ ms.locfileid: "2854049"
     > [!TIP] 
     > C:\\FMLab ディレクトリ内の DriversLicenseChecker.cs ファイルからコードに貼り付けることもできます。
 
-    ```xpp
+    ```csharp
     public class DriversLicenseChecker
     {
         public static bool CheckDriversLicense(long customerId)
@@ -187,7 +187,7 @@ ms.locfileid: "2854049"
 
 C\# では、次のイベント ハンドラー メソッドを記述して DriversLicenseChecker クラスに追加します。
 
-```xpp
+```csharp
 public static void OnValidatedWriteHandler(Common table, DataEventArgs args)
 {
     var validateEventArgs = args as ValidateEventArgs;
@@ -264,7 +264,7 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 4.  このコード行にブレークポイントを設定します。 その線の左余白をクリックすると、これが行なわれます。 ブレークポイントが設定されている場合は、赤いドットが表示されます。
 5.  CheckDriversLicense メソッドでは、次の行で別のブレークポイントを設定します。
 
-    ```xpp
+    ```csharp
     if (string.IsNullOrEmpty(customer.DriverLicense))
     ```
 ### <a name="run-the-test"></a>テストの実行

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d18b71c1fc7f3f0c39172bd9edf19b4e60a2bf8
-ms.sourcegitcommit: cfaad79bcb1460ee0e7ad5a2c596f9199e14c53a
+ms.openlocfilehash: 08aec836ce4b7b6a59c445f138365f101a78c68e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944431"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030925"
 ---
 # <a name="reverse-journal-posting"></a>仕訳帳の転記の取消
 
@@ -68,5 +68,5 @@ ms.locfileid: "2944431"
 
 伝票明細行の数が 100 行以下である場合、取消プロセスがすぐに実行されます。 結果は、取消ができなかった理由にしたがって、取消ができなかったすべての伝票を表示するダイアログ ボックス内に表示されます。 **OK** を選択してダイアログ ボックスを閉じます。
 
-トランザクションを取り消すことができるのは、取消のためのビジネス ルールに合致している場合だけです。 このトピックで説明されている機能を使用して仕入先支払を取り消すことはできません。 仕入先支払は、[仕入先支払の取消](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment) に一覧表示されている手順に従って取り消す必要があります。
+トランザクションを取り消すことができるのは、取消のためのビジネス ルールに合致している場合だけです。 このトピックで説明されている機能を使用して仕入先支払を取り消すことはできません。 仕入先支払は、[仕入先支払の取消](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) に一覧表示されている手順に従って取り消す必要があります。
 

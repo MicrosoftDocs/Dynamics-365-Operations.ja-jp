@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 16ca0284fe442e40476bbf61bca070cfc0dc3f92
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b059ec2b56840f0a146302a00e3e3a781470c07a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174580"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002556"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -40,7 +40,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
-この例では、ローカルのエンティティ ストアで Retail 分析ソリューションが消費する集計モデルをステージングします。 Retail アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 
+この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 
 
 1. クライアントで**エンティティ格納**ページを開きます。 (**システム管理** \> **設定** \> **エンティティ格納**の順に選択します。) 
 2. **RetailCube** 集計測定を選択し、**更新** を選択します。 

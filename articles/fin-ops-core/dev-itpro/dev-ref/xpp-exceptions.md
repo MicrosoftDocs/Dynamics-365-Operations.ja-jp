@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 700990148bf677cebc60da55e6e0558422c6e1e0
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 3630e20dbac33c8c4ec76a5fb93f3c59bac94660
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872647"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029424"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
@@ -30,7 +30,7 @@ ms.locfileid: "2872647"
 
 このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。 
 
-*例外*はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は**例外**列挙の値で表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー**列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
+*例外*はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の System.Exception クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー**列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
 
 **Global::error** メソッドは多くの場合、情報ログに診断情報を書き込む最善の方法です。 たとえば、メソッドは無効な入力パラメーター値を受け取る場合があります。 この場合、メソッドは例外をスローして、このエラー状況を処理するためのロジックを含む **catch** コード ブロックにすぐにコントロールを転送します。 例外がスローされる場合、コントロールを受け取る **Catch** ブロックの場所を必ずしも知る必要はありません。
 
@@ -58,6 +58,27 @@ throw Global::error("@SYS98765");
 
 ```xpp
 error("My message.");
+```
+
+プラットフォーム更新 31 以降のバージョンでは、**throw** キーワードを使用して .NET 例外をスローできます。
+
+```xpp
+throw new InvalidOperationException("This function is not allowed");
+```
+
+また、プラットフォーム更新 31 以降では、**throw** キーワードを catch block の内部で使用することもできます。 そのような場合、**throw** は C\# の **rethrow** ステートメントのように動作します。 元の例外、例外メッセージ、およびコール スタックなどのコンテキストは再スローされ、呼び出しコード内のすべての catch ステートメントで使用可能になります。
+
+```xpp
+try
+{
+    throw Exception::error;
+}
+catch
+{
+    // locally handle exception
+    // then rethrow for caller
+    throw;
+}
 ```
 
 ## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、最後に retry ステートメント
@@ -106,7 +127,33 @@ finally
 
 ### <a name="exceptions-and-clr-interop"></a>例外および CLR 相互運用
 
-共通言語欄タイム (CLR) が管理するアセンブリ内にある、Microsoft .NET Framework クラスおよびメソッドを呼び出すことができます。 .NET Framework の **System.Exception** インスタンスがスローされたとき、**Exception::CLRError** を参照することによってコードでそのインスタンスをキャッチできます。 コードは、**CLRInterop::getLastException** メソッドを呼び出すことによって、**System.Exception** インスタンスへの参照を取得できます。
+共通言語欄タイム (CLR) が管理するアセンブリ内にある、Microsoft .NET Framework クラスおよびメソッドを呼び出すことができます。 .NET Framework **System.Exception** インスタンスをスローすると、コードは **System.Exception** 型の変数を宣言して .NET の例外をキャッチするか、次の例に示すように、その派生クラスの 1 つを特定の .NET 例外タイプをキャッチすることでキャッチできます。
+
+```xpp
+System.ArgumentException ex;
+try
+{
+    throw new System.ArgumentException("Invalid argument specified");
+}
+catch(ex)
+{
+    error(ex.Message);
+}
+```
+
+プラットフォーム更新 31 より前のリリースでは、**Exception::CLRError** を参照することによって .NET 例外をキャッチできます。 コードは、**CLRInterop::getLastException** メソッドを呼び出すことによって、**System.Exception** インスタンスへの参照を取得できます。
+
+```xpp
+try
+{
+    // call to .NET code which throws exception
+}
+catch(Exception::CLRError)
+{
+    System.Exception ex = CLRInterop::getLastException();
+    error(ex.Message);
+}
+```
 
 ### <a name="ensuring-that-exceptions-are-shown"></a>例外が表示されるようにする
 

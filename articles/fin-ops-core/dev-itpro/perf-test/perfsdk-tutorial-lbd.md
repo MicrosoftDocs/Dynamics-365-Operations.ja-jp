@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 10d409134d258591ae1f2d0f8bd510e13026a7f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7ab6c0236fc3508fcdcb5b6cb11e5b328bf06821
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191810"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029391"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -32,12 +32,12 @@ ms.locfileid: "2191810"
 
   > [!IMPORTANT]
   > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的には、代替ソリューションに向けた推奨案の提案に取り組んでいきます。  
-  
+  >
   > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 サポート サイクルが終了するまで継続して使用することができます。 
- 
- >  - クラウド ベースの負荷テストサービスをご利用の場合は、同サービスは2020年3月31日までの間、継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 
- 
- > 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
+  >
+  >  - クラウド ベースの負荷テストサービスをご利用の場合は、同サービスは2020 年 3 月 31 日までの間、継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 
+  >
+  > 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
 
 
 ## <a name="prerequisites"></a>必要条件
@@ -85,7 +85,7 @@ ms.locfileid: "2191810"
 
 4. テストの認証に使用する証明書を生成します。 証明書ファイルを生成するには、管理者として [コマンド プロンプト] ウィンドウを開き、次のコマンドを実行します。 プライベート キーのパスワードを要求するメッセージが表示されたら、**なし** を選択します。
 
-    ```
+    ```Console
     "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
     "c:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk c:\temp\authCert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
@@ -106,7 +106,7 @@ ms.locfileid: "2191810"
 6. **authcert.pfx** ファイルを **PerfSDK** フォルダにコピーします。
 7. 管理者として Microsoft Windows PowerShell ウィンドウを開き、次のコマンドを実行してインストールされている証明書拇印を取得します。
 
-    ```
+    ```powershell
     cd Cert:\LocalMachine\My
 
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
@@ -211,13 +211,13 @@ ms.locfileid: "2191810"
 
 7. Service Fabric Explorer では、AOS ノードのための **コード** パッケージを検索し、省略記号ボタン (**...**) を選択し、アプリケーションを再起動させるため**再起動**を選択します。
 
-    ![Service Fabric Explorer から Finance and Operations を再起動](./media/ServiceFabricExplorerRestart.png)
+    ![Service Fabric Explorer から Finance and Operations の再起動](./media/ServiceFabricExplorerRestart.png)
 
 ### <a name="run-the-single-user-test"></a>単一ユーザー テストを実行
 
 1. **PerfSDKSample** プロジェクトで、**PurchaseReq.cs** ファイルを検索します。 このファイルは、サンプル シングルユーザー テストです。 ファイルで、次の行をコメントアウトします。
 
-    ```
+    ```csharp
     if (this.TestContext !=null)
     {
         timerProvider = new TimerProvider(this.TestContext);
@@ -240,20 +240,20 @@ ms.locfileid: "2191810"
 
 このトピックの前半の情報を使用してシングルユーザー テストを作成した後は、マルチユーザー テストに変換することができます。 テスト スクリプトに **MS.Dynamics.TestTools.UIHelpers.Core;** を追加して、**TestSetup** メソッドで次の行を見つけます。
 
-```
+```csharp
 Client = DispatchedClient.DefaultInstance;
 ```
 
 その行を以下の行に置き換えます。
 
-```
+```csharp
 DispatchedClientHelper helper = new DispatchedClientHelper();
 Client = helper.GetClient();
 ```
 
 タスクのインポーターによって生成されたテスト スクリプトには次の明細行と似ている明細行が含まれている場合があります。
 
-```
+```csharp
 UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 ```
 
@@ -265,7 +265,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 
 1. Visual Studio エディターで、**ProcureToPay.cs** ファイルを開き、**TestSetup** メソッドに次の行を追加します。
 
-    ```
+    ```csharp
     var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir"); 
     if (string.IsNullOrEmpty(testroot)) 
     {
@@ -277,7 +277,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 2. [https://www.microsoft.com/download/details.aspx?id=50420](https://www.microsoft.com/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
 3. **Visual Studio Online** フォルダ内の **setup.cmd** ファイル内容を次のコードと一致するように変更します。
 
-    ```
+    ```Console
     setx testroot "%DeploymentDirectory%"
     ECHO Installing D365 prerequisites
     ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
@@ -289,7 +289,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 
 4. **CloudCtuFakeACSInstall.cmd** ファイルの内容を変更して、**インポート**コマンドに **'パスワード'** の代わりに空の文字列が入るようにします。 スクリプトの 3 行目は、次の行に似ているはずです。
 
-    ```
+    ```powershell
     set MyStoreInstallCmd= .... $pfxcert.Import('%TestCertPath%', '', 'Exportable,PersistKeySet')....
     ```
 
@@ -336,7 +336,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 Initialization method <Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
 ```
 
@@ -356,7 +356,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
 System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
@@ -374,7 +374,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 - 証明書が AOS マシンに正しくインストールされていません。 AOS マシンで証明書が見つかることを確認するには、次の Windows PowerShell スクリプトを実行します。
 
-    ```
+    ```powershell
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
@@ -391,7 +391,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 テストが失敗すると、次のエラー メッセージが表示されます。
 
-```
+```csharp
 System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at <web address> that could accept the message. This is often caused by an incorrect address or SOAP action. 
 ```
 
@@ -412,7 +412,7 @@ CloudEnvironment.Config ファイルで、次のキーに対して指定され�
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.InvalidOperationException: Could not enumerate AX users ---> System.ServiceModel.FaultException'1[System.ComponentModel.Win32Exception]: Forbidden
 ```
 
@@ -436,7 +436,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.ServiceModel.Security.MessageSecurityException: An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail. ---> System.ServiceModel.FaultException: At least one security token in the message could not be validated.
 ```
 
@@ -454,7 +454,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 <Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Could not find endpoint element with name 'ClientCommunicationManager' and contract 'Microsoft.Dynamics.Client.InteractionService.Communication.Reliable.IReliableCommunicationManager' in the ServiceModel client configuration section. This might be because no configuration file was found for your application, or because no endpoint element matching this name could be found in the client element.. at System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
 ```
 
@@ -475,7 +475,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 Initialization method <Test class name>.TestSetup threw exception. 
 System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> MS.Dynamics.TestTools.TestLogging.EvaluateException: Assert.Fail failed. DateTime="10/13/2017 14:42:55" "The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception.".
 ```
@@ -494,7 +494,7 @@ System.TypeInitializationException: System.TypeInitializationException: The type
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```Text
 The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception. --->
 Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not specified in settings
 ```
@@ -503,7 +503,7 @@ Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not speci
 
 この問題は、CloudEnvironment.Config ファイルで **SelfSigningCertificateThumbprint** キーの値が指定されていない場合に発生します。 CloudEnvironment.Config ファイルで、次の行を検索し、作成してインストールした証明書の拇印に貼り付けます。
 
-```
+```xml
 <ExecutionConfigurations Key="SelfSigningCertificateThumbprint" Value="" />
 ```
 
@@ -511,7 +511,7 @@ Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not speci
 
 #### <a name="error-example"></a>エラーの例
 
-```
+```csharp
 System.TypeInitializationException: System.TypeInitializationException: The type initializer for
 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
 System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
@@ -527,7 +527,7 @@ System.Net.Sockets.SocketException: An existing connection was forcibly closed b
 
 開発コンピューターで次の Windows PowerShell スクリプトを実行します。
 
-```
+```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319)) 
 {
@@ -540,7 +540,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 このエラーは、Microsoft Visual Studio Online を使用してロード テストを実行する場合にのみ発生します。
 
 #### <a name="error-example"></a>エラーの例
-```
+```Text
 Test method MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend threw exception: 
 System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---> System.InvalidOperationException: Service w3svc was not found on computer '.'. ---> System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
 ```

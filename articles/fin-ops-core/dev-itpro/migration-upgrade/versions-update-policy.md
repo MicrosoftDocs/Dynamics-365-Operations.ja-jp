@@ -3,7 +3,7 @@ title: ソフトウェアのライフサイクル ポリシーおよびクラウ
 description: このトピックでは、Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 12/10/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: bed48a5308757d4d92c0c7ed1191321a3c4c7952
-ms.sourcegitcommit: 274ff2bb6872ff714781b348b29fd9f1affff9d0
+ms.openlocfilehash: 2460e43375e99df2165b09e16dab85b92e25bcfd
+ms.sourcegitcommit: c6f6408d5e56e6c827d3e29706773e65dc6c01e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2904025"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2974935"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -31,9 +31,9 @@ ms.locfileid: "2904025"
 このトピックでは、Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 
 ## <a name="modern-lifecycle-policy"></a>Modern Lifecycle ポリシー
-Finance and Operations オンライン サービスは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881) を参照してください。 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、Finance and Operations オンライン サービスに対する更新で最新の状態にする必要があります。
+Finance and Operations オンライン サービスは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881) を参照してください。 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、Finance and Operations オンライン サービスに対する更新で最新の状態にする必要があります:
 
-- Finance and Operations のサブスクリプションを購入し、以下のアプリケーション バージョンで運用している顧客には、プラットフォームおよび財務諸表の継続的な更新が行われます。 Microsoft は最大 2 回の連続したサービス更新プログラムを延期するオプションを付きで、これらのコンポーネントを継続的に更新します。
+- Finance and Operations のサブスクリプションを購入し、以下のアプリケーション バージョンで運用しているユーザーには、プラットフォームおよび財務諸表の継続的な更新が行われます。 Microsoft は最大 3 回の連続したサービス更新プログラムを延期するオプションを付きで、これらのコンポーネントを継続的に更新します。
     - Dynamics 365 for Operations バージョン 1611 (2016 年 11 月)
     - Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月)
     - Dynamics 365 for Finance and Operations、Enterprise edition 7.3
@@ -45,7 +45,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 
     - **重要な修正** - 重要な修正には、セキュリティ修正およびサービスがサポートする可用性サービス レベル アグリーメント (SLA) に準拠するために必要な修正が含まれます。 重要な修正プログラムは、最新のプラットフォーム更新プログラム バージョンで、およびバージョン 8.1 で動作している顧客の場合は最新のサービス更新プログラムで利用可能になります。 さらに、顧客とオンライン サービスを保護するため、Microsoft は顧客の環境に重要な修正プログラムを直接適用する場合があります。 重要な修正プログラムを適用する必要がある場合、Microsoft は必要なダウンタイム ウィンドウ (ダウンタイムが発生する場合) についてお客様に通知し、修正プログラムを適用可能な環境に適用します。 重要な修正プログラムにより、システムが最新の更新バージョンに更新されます。
 
-    - **重要ではない更新** – 以下のアプリケーション リリースで動作しているユーザーは、重要ではない更新を導入するには、最新の Finance and Operations プラットフォームと財務レポートのバージョンに更新する必要があります。 
+    - **重要ではない更新** – 以下のアプリケーション リリースで動作しているユーザーは、重要ではない更新を展開するために、最新の Finance and Operations プラットフォームと財務諸表のバージョンに更新する必要があります。 
     
        - Dynamics 365 for Operations バージョン 1611 (2016 年 11 月)
        - Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月)
@@ -59,7 +59,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 >
 > Microsoft は、サービスの終了に達しているバージョンの問題を修正しません。 Microsoft は、以前のバージョンで発生した問題の調査とトラブルシューティングも行いません。 サービスの終了に達したバージョンで問題が発生した場合は、最新の更新プログラムに更新し、それでも問題が解決されない場合は、その問題を報告する必要があります。
 >
-> すべての環境は、引き続き Microsoft によって運用されます。 環境に関するすべての自動プロセス (監視や自動修復など) も、引き続きそのままです。
+> すべての環境は、引き続き Microsoft によって運用されます。 監視や自動修復など、環境に関するすべての自動プロセスも、サポートされるバージョンにおいては引き続きそのままです。
 
 ## <a name="dates-and-versions-for-application-and-platform-releases"></a>アプリケーションおよびプラットフォーム リリースの日付とバージョン
 
@@ -88,7 +88,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 | Dynamics AX                                                 | メジャー リリース              | [7.0](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016)                    | 7.0.1265.3015    | 2016 年 2 月    | 2017 年 6 月          |
 
 
-\*すべてのユーザーは、2019 年 4 月までに Finance and Operations の最新バージョンにする必要があります。 ただし、Microsoft に提出された[拡張要求](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page)を実行しなかったユーザーには例外を設けます。 2019 年 1 月 1 日までに拡張機能要求を送信したユーザーは、拡張機能要求が満たされるまでバージョン 7.3 がサポートされます。 ユーザーは、拡張機能要求が満たされてから 90 日以内に最新バージョンにアップグレードする必要があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-ops/get-started/one-version.md)を参照してください。
+\* すべてのユーザーは、2019 年 4 月までに Finance and Operations の最新バージョンにする必要があります。 ただし、Microsoft に提出された[拡張要求](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page)を実行しなかったユーザーには例外を設けます。 2019 年 1 月 1 日までに拡張機能要求を送信したユーザーは、拡張機能要求が満たされるまでバージョン 7.3 がサポートされます。 ユーザーは、拡張機能要求が満たされてから 90 日以内に最新バージョンにアップグレードする必要があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-ops/get-started/one-version.md)を参照してください。
 
 ### <a name="table-3-platform-releases"></a>表 3: プラットフォームのリリース
 

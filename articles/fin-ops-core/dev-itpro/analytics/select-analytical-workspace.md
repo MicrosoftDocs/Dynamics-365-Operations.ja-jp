@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 49f3d858c648fcbe222cf77bb79e8b639d88e057
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a3c2dc3f195a7eca2eebc8598690e03ee719b7e2
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183447"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030882"
 ---
 # <a name="select-analytical-workspaces-from-powerbicom"></a>PowerBI.comからの分析ワークスペースの選択
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183447"
 
 アプリケーション スイートにバンドルされている分析ワークスペースは、ユーザーにビジネス データに関する適切な洞察を提供します。 ただし、場合によっては、標準レポートを組織のユーザー専用に設計されたカスタムレポートに置き換えることが必要になることがあります。
 
-PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 Finance and Operations のプラットフォーム更新プログラム 26 では、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
+PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 Finance and Operations のプラットフォーム更新プログラム 26 で、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
 
 > [!IMPORTANT]
 > このトピックで説明する機能は、個人用設定ではありません。 分析ワークスペースのカスタマイズは、有効な法人のすべてのユーザーに適用されます。
@@ -47,7 +47,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 
 ### <a name="embed-a-powerbicom-report-in-an-analytical-workspace"></a>分析ワークスペースへのPowerBI.comレポートの埋め込み
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3lP5m]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
 
 [PowerBI.com レポートを埋め込む方法](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) ビデオ (上記参照) は、YouTube の [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 

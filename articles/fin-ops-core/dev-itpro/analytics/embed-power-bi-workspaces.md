@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 78d14d3bf8f04e841b60589d97b55bfeda64d23a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1bea7664f2a0ff3f4e15edc6bc808943ab704cc8
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550068"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030786"
 ---
 # <a name="embedded-power-bi-in-workspaces"></a>ワークスペースの埋め込み Power BI
 
@@ -50,7 +50,7 @@ Power BI ワークスペースは、ほぼリアルタイムの情報に基づ�
 
 ## <a name="edit-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースで埋め込みレポートを編集する
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3nnj4]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
 
 [分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ) のビデオ (上記) は YouTube で利用可能な[プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 33221
 ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60dc9d97d6d474d994be245d518820db5efeeae7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d025604f7266f224d2e159ffb53177ef443744cf
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191691"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983685"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

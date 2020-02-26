@@ -1,7 +1,7 @@
 ---
 title: 拡張機能によってモデル要素をカスタマイズする
 description: このチュートリアルでは、フリート管理拡張モデルを詳しく見ていきます。 拡張機能を示すために、このモデルにはフリート管理アプリケーションの機能を拡張する要素が含まれています。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c680d6eb96efde12ce07a7502483ecac091cdce1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 996c31c682ff507ba6a204f2881c19b006e37d1f
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812020"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033028"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -266,36 +266,39 @@ ms.locfileid: "2812020"
 14. **ソリューション エクスプローラー**で、**FEVehicleEventHandlers** をダブルクリックしてコード エディターを開きます。
 15. 右クリックし、手順 12 にコピーしたイベント ハンドラー メソッドを貼り付けます。
 
-        Class FMVehicleEventHandlers
+    ```xpp
+    Class FMVehicleEventHandlers
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
+        public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
         {
-            /// <summary>
-            ///
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
-            public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
-            {
-            }
         }
-
+    }
+    ```
 
 
 16. 次のコードを **FMVehicle\_onValidatedWrite** イベント ハンドラーに挿入します。 このコードは、シリンダの数が 8 を超えることができないことを検証します。
 
-           [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
-            public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
-            {
-                ValidateEventArgs validateArgs = e as ValidateEventArgs;
-                FMVehicle vehicle = sender as FMVehicle;
-                boolean result = validateArgs.parmValidateResult();
+    ```xpp
+    [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
+    public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
+        {
+            ValidateEventArgs validateArgs = e as ValidateEventArgs;
+            FMVehicle vehicle = sender as FMVehicle;
+            boolean result = validateArgs.parmValidateResult();
 
-                if (vehicle.NumberOfCylinders > 8)
-                {
-                    result = checkFailed("Invalid number of cylinders.");
-                    validateArgs.parmValidateResult(result);
-                }
+            if (vehicle.NumberOfCylinders > 8)
+            {
+                result = checkFailed("Invalid number of cylinders.");
+                validateArgs.parmValidateResult(result);
             }
+        }
+    ```
 
 17. FMVehicleEventHandlers クラス を保存する 
 
@@ -342,8 +345,9 @@ ms.locfileid: "2812020"
 
 2.  フリート管理拡張モデルのクラスでイベント ハンドラー メソッドを貼り付け、X++ コードを追加して実装します。
 
-<!-- -->
+    <!-- -->
 
+    ```xpp
     /// <summary>
     ///
     /// </summary>
@@ -353,39 +357,69 @@ ms.locfileid: "2812020"
     public static void AddLine_OnClicked(FormControl sender, FormControlEventArgs e)
     {
     }
-
+    ```
+    
 -   AddLine\_OnClicked イベント ハンドラーを実装すると、**sender** パラメーターを使用して、ボタン コントロール インスタンスにアクセスできます。
 
-<!-- -->
-
+    <!-- -->
+    ```xpp
     FormButtonControl button = sender as FormButtonControl;
+    ```
 
 -   親フォームや、変数のいずれかにアクセスする場合は、この例では、**FormRun** インスタンスとデータ ソースのいずれかにアクセスする方法が示されています。
 
-<!-- -->
-
+    <!-- -->
+    ```xpp
     FormRun fr;
     fr = sender.formRun();
     var frDs = fr.dataSource("FMRental");
+    ``` 
 
 ## <a name="experiment-with-event-handlers-on-form-data-sources"></a>フォーム データ ソースでのイベント ハンドラーを試す
 テーブル、フォーム コントロールおよびその他の要素タイプと同じように、フォーム データ ソースとフォーム データ ソース フィールドはフレームワーク レベルのイベントを提供します。 次の例は、フォーム データ ソースの ValidatingWrite イベントまたはフォーム データ ソースの検証イベントを使用して FMRental フォームのユーザー入力を検証する方法を示しています。 この機能は、Platform Update 7 以降で利用できます。
 
-```
-    /// <summary>
-    /// When saving a new rental, prevent setting the start mileage on the FMRental form to a value that is equal to 1
-    /// </summary>
-    [FormDataSourceEventHandler(formDataSourceStr(FMRental, FMRental), FormDataSourceEventType::ValidatingWrite)]
-    public static void FMRental_OnValidatingWrite(FormDataSource sender, FormDataSourceEventArgs e)
+```xpp
+/// <summary>
+/// When saving a new rental, prevent setting the start mileage on the FMRental form to a value that is equal to 1
+/// </summary>
+[FormDataSourceEventHandler(formDataSourceStr(FMRental, FMRental), FormDataSourceEventType::ValidatingWrite)]
+public static void FMRental_OnValidatingWrite(FormDataSource sender, FormDataSourceEventArgs e)
+{
+    var datasource = sender as FormDataSource;
+    var args = e as FormDataSourceCancelEventArgs;
+    if (args != null && datasource != null)
     {
-        var datasource = sender as FormDataSource;
-        var args = e as FormDataSourceCancelEventArgs;
-        if (args != null && datasource != null)
+        FMRental record = datasource.cursor() as FMRental;
+        if (record.recId == 0)
+        {
+            if(record.startmileage == 1)
+            {
+                boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
+                args.cancel(doCancel);
+            }
+        }
+    }
+}
+```
+
+```xpp
+/// <summary>
+/// Prevent changing the start mileage field on the FMRental form to a value that is equal to 1
+/// </summary>
+[FormDataFieldEventHandler(formDataFieldStr(FMRental, FMRental, StartMileage), FormDataFieldEventType::Validating)]
+public static void StartMileage_OnValidating(FormDataObject sender, FormDataFieldEventArgs e)
+{
+    var dataObject = sender as FormDataObject;
+    var args = e as FormDataFieldCancelEventArgs;
+    if (args != null && dataObject != null)
+    {
+        var datasource = dataObject.datasource() as FormDataSource;
+        if (datasource != null)
         {
             FMRental record = datasource.cursor() as FMRental;
-            if (record.recId == 0)
+            if (record.RecId > 0)
             {
-                if(record.startmileage == 1)
+                if (record.StartMileage == 1 )
                 {
                     boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
                     args.cancel(doCancel);
@@ -393,44 +427,20 @@ ms.locfileid: "2812020"
             }
         }
     }
-```
-```
-    /// <summary>
-    /// Prevent changing the start mileage field on the FMRental form to a value that is equal to 1
-    /// </summary>
-    [FormDataFieldEventHandler(formDataFieldStr(FMRental, FMRental, StartMileage), FormDataFieldEventType::Validating)]
-    public static void StartMileage_OnValidating(FormDataObject sender, FormDataFieldEventArgs e)
-    {
-        var dataObject = sender as FormDataObject;
-        var args = e as FormDataFieldCancelEventArgs;
-        if (args != null && dataObject != null)
-        {
-            var datasource = dataObject.datasource() as FormDataSource;
-            if (datasource != null)
-            {
-                FMRental record = datasource.cursor() as FMRental;
-                if (record.RecId > 0)
-                {
-                    if (record.StartMileage == 1 )
-                    {
-                        boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
-                        args.cancel(doCancel);
-                    }
-                }
-            }
-        }
-    }
+}
 ```
 ## <a name="experiment-with-table-extension-display-and-edit-methods"></a>テーブル 拡張子ディスプレイを試し、メソッドを編集
 拡張メソッドを使用すると、新しい表示を作成してテーブルを拡張し、オーバーレイ X++ コード無しでテーブルのメソッドを編集します (拡張メソッドは、\_ 拡張子の接尾語という名のクラスに属する必要があります)。 たとえば、このクラスは、CupHoldersDisplay と呼ばれる拡張表示メソッドを使用して、FMVehicle テーブルを拡張する方法を表示します。
 
-    public static class FMVehicle_Extension
+```xpp
+public static class FMVehicle_Extension
+{
+    public static display int CupHoldersDisplay(FMVehicle vehicle)
     {
-       public static display int CupHoldersDisplay(FMVehicle vehicle)
-       {
-         return 7;
-       }
+        return 7;
     }
+}
+```
 
 フォームまたはフォームの拡張機能では、以下の画像に示すように、「Data Source = FMVehicle」および「Data method ="FMVehicle\_Extension::CupHoldersDisplay」を設定することによってこの表示メソッドにコントロールをバインドできます。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinarh
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 31e66922bd98ff832b172d3928dd910aa5bb2071
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: a3138292d67258ab96e7b42000bbbbe87864f630
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564133"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029385"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 
@@ -41,7 +41,7 @@ ms.locfileid: "2564133"
 
 これらの潜在的な問題のため、キーの組み合わせを選択する際はこのガイダンスに従うことをお勧めします。
 
-- 現在、Finance and Operations アプリで使用されている、または今後の実装で計画されているキーの組み合わせは、選択**しない**でください。
+- 現在、Finance and Operations アプリで使用されているか、または今後の実装が計画されているキーの組み合わせを選択**しない**でください。
 - サポートされているすべてのブラウザーで機能するためのキーの組み合わせを選択**します**。
 - サポートされているブラウザで使用されているショートカットを上書きするときは**よく**注意してください。 重要な、または頻繁に使用されるブラウザー機能のショートカットを無効にしないでください。
 - コントロール固有の動作のために、より長いキーの組み合わせ (3 つのキー) を使用**します**。 ユーザー定義のキーボード ショートカット用に、短い組み合わせを予約する必要があります。
@@ -232,7 +232,7 @@ Finance and Operations アプリおよびサポートされているブラウザ
 
 1. コントロールのプロトタイプにショートカット オブジェクトを定義します。 次に、ショートカット オブジェクト内のキーボード ショートカットを定義します。 これらのショートカットは、次の構造が必要です。 使用しようとしているキー コードが、$dyn.ui.KeyCodes オブジェクトで定義されていることを確認します。
 
-    ```
+    ```Text
     Shortcuts: {
         Name: {
             Keys: { modifier1: true, modifier2:true, 
@@ -248,7 +248,7 @@ Finance and Operations アプリおよびサポートされているブラウザ
 
     キーボード ショートカットに 1 つ以上のキー コードを適用する必要がある場合は、次のように、コードの配列で渡します。
 
-    ```
+    ```Text
     Keys: {modifier1:true, 
         keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
     // Note: If any of these keyCodes match then the handler is called. I.E. 
@@ -256,7 +256,7 @@ Finance and Operations アプリおよびサポートされているブラウザ
     ```
 2. 次のコードを使用して keyDown ハンドラーを追加します。
 
-    ```
+    ```Text
     keydown: function (event) {
         $dyn.util.handleShortcuts(this, event);
     },
@@ -267,14 +267,14 @@ Finance and Operations アプリおよびサポートされているブラウザ
     > [!IMPORTANT]
     > 「keyDown」では、大文字と小文字が区別されます。
 
-    ```
+    ```Text
     <div data-dyn-bind="keyDown: $data.keydown"></div>;
     ```
 
 ### <a name="examples"></a>例
 次にフォーム例を示します。
 
-```
+```Text
 Shortcuts: {
     Save: {
         Keys: { ctrl: true, keyCode: $dyn.ui.KeyCodes.letterS },
@@ -301,7 +301,8 @@ Shortcuts: {
 ```
 
 フォーム コントロールを拡張するダイアログの例を次に示します。
-```
+
+```Text
 Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
     InvokeDefaultButton: {
         Keys: { keyCode: $dyn.ui.KeyCodes.enter },

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b387736b1ffe91e1fa7d0ebc9ec7d84af8aca3b0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a619c0010833197b0d3a7d7559a13d3938f0ba81
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183230"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983675"
 ---
 # <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183230"
 
 このトピックでは、アプリケーション オブジェクト ツリー (AOT) におけるテーブル要素の <strong>プロパティ</strong> ウィンドウにあるプロパティについて説明します。 テーブル要素は、<strong>データ ディクショナリ</strong> &gt; <strong>テーブル</strong> にあります。
 
-プロパティ値の設定に関するガイドラインについては、[テーブル プロパティのベスト プラクティス](http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx) を参照してください。 次は、テーブル要素の下のサブ要素になっている AOT 要素のプロパティについてのトピックの一覧です。
+プロパティ値の設定に関するガイドラインについては、[テーブル プロパティのベスト プラクティス](https://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx) を参照してください。 次は、テーブル要素の下のサブ要素になっている AOT 要素のプロパティについてのトピックの一覧です。
 
 ## <a name="table-properties"></a>表のプロパティ
 次のテーブルは、AOT でのテーブル要素のプロパティを示しています。
@@ -46,7 +46,7 @@ ms.locfileid: "2183230"
 <tbody>
 <tr class="odd">
 <td><strong><span class="ui">抽象</span></strong></td>
-<td>テーブルが継承をサポートするかどうかを指定します。 既定値は [<span class="ui">いいえ</span>] です。 値が<span class="ui">はい</span>である場合、テーブルが、<span class="code">update_recordset</span>および<span class="code">select</span> ステートメントのような X++ SQL ステートメントの直接ターゲットにはなりません。 このプロパティは、<span class="ui">SupportInheritance</span> プロパティが [<span class="ui">いいえ</span>] に設定されている場合は使用できません。 詳細については、「<a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
+<td>テーブルが継承をサポートするかどうかを指定します。 既定値は [<span class="ui">いいえ</span>] です。 値が<span class="ui">はい</span>である場合、テーブルが、<span class="code">update_recordset</span>および<span class="code">select</span> ステートメントのような X++ SQL ステートメントの直接ターゲットにはなりません。 このプロパティは、<span class="ui">SupportInheritance</span> プロパティが [<span class="ui">いいえ</span>] に設定されている場合は使用できません。 詳細については、「<a href="https://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
 <td>AX 2012</td>
 </tr>
 <tr class="even">
@@ -130,7 +130,7 @@ ms.locfileid: "2183230"
 </tr>
 <tr class="even">
 <td><strong><span class="ui">拡張</span></strong></td>
-<td>プロパティ値として選択された別のテーブルからテーブルを派生させます。 <span class="ui">SupportInheritance</span> プロパティが <span class="ui">Yes</span> に設定されている場合、値は null です。 詳細については、「<a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
+<td>プロパティ値として選択された別のテーブルからテーブルを派生させます。 <span class="ui">SupportInheritance</span> プロパティが <span class="ui">Yes</span> に設定されている場合、値は null です。 詳細については、「<a href="https://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
 <td>AX 2012</td>
 </tr>
 <tr class="odd">
@@ -140,7 +140,7 @@ ms.locfileid: "2183230"
 </tr>
 <tr class="even">
 <td><strong><span class="ui">ID</span></strong></td>
-<td>システムによって生成されたテーブル <span class="code">ID</span> を指定します。 詳細については、「<a href="http://msdn.microsoft.com/library/2951f194-4362-460e-8607-7f9fc0022449(AX.60).aspx">アプリケーション オブジェクト ID</a>」を参照してください。</td>
+<td>システムによって生成されたテーブル <span class="code">ID</span> を指定します。 詳細については、「<a href="https://msdn.microsoft.com/library/2951f194-4362-460e-8607-7f9fc0022449(AX.60).aspx">アプリケーション オブジェクト ID</a>」を参照してください。</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -150,7 +150,7 @@ ms.locfileid: "2183230"
 <li><strong><span class="ui">はい</span></strong> - テーブルの属性が親分析コード (スター スキーマ) に連結されることを示します。</li>
 <li><strong><span class="ui">いいえ</span></strong> - テーブル (スノーフレーク スキーマ) に対して個別の分析コードが生成されることを示します。</li>
 </ul>
-分析コードおよびスターとスノーフレーク スキーマの詳細については、<a href="http://go.microsoft.com/fwlink/?LinkId=115450">分析コードの概要 (SQL Server 2005 オンライン ブック)</a> を参照してください。</td>
+分析コードおよびスターとスノーフレーク スキーマの詳細については、<a href="https://go.microsoft.com/fwlink/?LinkId=115450">分析コードの概要 (SQL Server 2005 オンライン ブック)</a> を参照してください。</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -283,7 +283,7 @@ ms.locfileid: "2183230"
 </tbody>
 </table>
 </div>
-詳細については、「<a href="http://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
+詳細については、「<a href="https://msdn.microsoft.com/library/cb4803e7-9a29-4c54-be43-63722557dac6(AX.60).aspx">テーブル継承の概要</a>」を参照してください。</td>
 <td>AX 2012</td>
 </tr>
 <tr class="even">
@@ -304,12 +304,12 @@ ms.locfileid: "2183230"
 </tr>
 <tr class="even">
 <td><strong><span class="ui">TableGroup</span></strong></td>
-<td>テーブルが属するグループを決定します。 <a href="http://msdn.microsoft.com/library/3330d438-ab53-44db-9a9b-a044ed19608d(AX.60).aspx">テーブル グループ</a>は、テーブルに含まれるデータのタイプに応じてテーブルを分類する方法を提供します。 テーブルをデータ ソースとして使用することにより、フォーム内のテーブルから更新または削除するときにシステムがユーザーに確認を求めるかどうか定義するためにテーブル グループを使用することができます。 データをエクスポートするとき、テーブル グループを使用してレコードをフィルターすることができます。</td>
+<td>テーブルが属するグループを決定します。 <a href="https://msdn.microsoft.com/library/3330d438-ab53-44db-9a9b-a044ed19608d(AX.60).aspx">テーブル グループ</a>は、テーブルに含まれるデータのタイプに応じてテーブルを分類する方法を提供します。 テーブルをデータ ソースとして使用することにより、フォーム内のテーブルから更新または削除するときにシステムがユーザーに確認を求めるかどうか定義するためにテーブル グループを使用することができます。 データをエクスポートするとき、テーブル グループを使用してレコードをフィルターすることができます。</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">TableType</span></strong></td>
-<td>Microsoft Dynamics AX 2009 にある <strong><span class="ui">一時的な</span></strong> プロパティを置き換えます。 詳細については、<a href="http://msdn.microsoft.com/library/9986b514-6079-499a-b491-9a95589f8229(AX.60).aspx">一時テーブルおよび TableType プロパティ</a> を参照してください。</td>
+<td>Microsoft Dynamics AX 2009 にある <strong><span class="ui">一時的な</span></strong> プロパティを置き換えます。 詳細については、<a href="https://msdn.microsoft.com/library/9986b514-6079-499a-b491-9a95589f8229(AX.60).aspx">一時テーブルおよび TableType プロパティ</a> を参照してください。</td>
 <td>AX 2012</td>
 </tr>
 <tr class="even">
@@ -317,14 +317,14 @@ ms.locfileid: "2183230"
 <td>次の操作を実行できるようにします。
 <ul>
 <li>フォーム キャプションにテーブル フィールド データを追加します。</li>
-<li>ルックアップ フォームに追加のフィールドを表示します。 詳細については、<a href="http://msdn.microsoft.com/library/2e365e4b-842a-44eb-b0fa-6fa4c8c1e0fe(AX.60).aspx">方法: ルックアップ フォームでコントロールの追加</a>を参照してください。 <strong><span class="code">TitleField1</span></strong> プロパティは、フォーム上のフィールドでルックアップ リストを有効化するときにも使用されます。 <strong><span class="code">TitleField1</span></strong> および <strong><span class="code">TitleField2</span></strong> プロパティに指定するフィールドはキー値でマージすることができます</li>
+<li>ルックアップ フォームに追加のフィールドを表示します。 詳細については、<a href="https://msdn.microsoft.com/library/2e365e4b-842a-44eb-b0fa-6fa4c8c1e0fe(AX.60).aspx">方法: ルックアップ フォームでコントロールの追加</a>を参照してください。 <strong><span class="code">TitleField1</span></strong> プロパティは、フォーム上のフィールドでルックアップ リストを有効化するときにも使用されます。 <strong><span class="code">TitleField1</span></strong> および <strong><span class="code">TitleField2</span></strong> プロパティに指定するフィールドはキー値でマージすることができます</li>
 <li>ツールヒントにフィールドの情報を表示します。</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">TypicalRowCount</span></strong></td>
-<td>テーブル内に通常表示されるレコード数を指定します。 <strong><span class="code">AnalysisSelection</span></strong> プロパティが設定されていない場合は、<strong><span class="code">TypicalRowCount</span></strong> プロパティは、Microsoft SQL Server Reporting Services 用のレポート ビルダーを使用してレコードを選択する方法を決定します。 <strong><span class="code">TypicalRowCount</span></strong> プロパティの設定は、ドロップダウン リスト、リスト ボックス、フィルタリングされたリスト ボックスを使用してテーブル レコードを選択するかどうかに影響します。 詳細については、<a href="http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">テーブル プロパティのベスト プラクティス</a> を参照してください。</td>
+<td>テーブル内に通常表示されるレコード数を指定します。 <strong><span class="code">AnalysisSelection</span></strong> プロパティが設定されていない場合は、<strong><span class="code">TypicalRowCount</span></strong> プロパティは、Microsoft SQL Server Reporting Services 用のレポート ビルダーを使用してレコードを選択する方法を決定します。 <strong><span class="code">TypicalRowCount</span></strong> プロパティの設定は、ドロップダウン リスト、リスト ボックス、フィルタリングされたリスト ボックスを使用してテーブル レコードを選択するかどうかに影響します。 詳細については、<a href="https://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">テーブル プロパティのベスト プラクティス</a> を参照してください。</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -353,7 +353,7 @@ ms.locfileid: "2183230"
 <a name="additional-resources"></a>その他のリソース
 --------
 
-[AOT のデータ ディクショナリ ノード](http://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)
+[AOT のデータ ディクショナリ ノード](https://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32b689eda2847d05190645e3a643338710011fc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f3602e24089714462628460f02e3ea4fc7afa18
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174577"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025867"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -87,7 +87,7 @@ ms.locfileid: "2174577"
 1. Internet Explorer を開き、インスタンスの基本 URL に移動し、サインインします。
 
     1. クラウド環境では、ベース URL は LCS から取得されます。
-    2. ローカル VM の、基準 URL は https://usnconeboxax1aos.cloud.onebox.dynamics.comです
+    2. ローカル VM の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
 
 2. ダッシュ ボードで、右にスクロールし、**予約管理**タイルをクリックします。
 3. **概要** セクションで、**すべてのレンタル** タイルをクリックします。
@@ -188,7 +188,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 1. **ソリューション エクスプローラー**で、**FMRentalsByCustUIBuilder** クラスをダブルクリックしてデザイナーを開きます。
 2. クラス**構築**メソッドを検索して、次のように初期化コードを更新します
 
-    ```
+    ```xpp
     public void build()
     {
         Dialog dialogLocal = this.dialog();

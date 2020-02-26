@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89a1a01416f3fd25d1a56a5ab227538ce5597210
-ms.sourcegitcommit: b0cecde9cbc4fab57e3942c0e79143601a202480
+ms.openlocfilehash: 3b4a1067e7f0457632b0fafa149a4e0104f89afe
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890977"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033006"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -77,7 +77,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
 10. **テスト**タブで、応答が妥当であることを検証し、環境変数で返される認証トークンを格納するテストを作成します。 次に例を示します。
 
-    ```
+    ```csharp
     var json = JSON.parse(responseBody);
     tests["Get Azure AD Token"] = !json.error && responseBody !== '' && responseBody !== '{}' && json.access_token !== '';
     postman.setEnvironmentVariable("bearerToken", json.access_token);
@@ -94,7 +94,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
 14. OData サービスを介して、目的のデータ エンティティに対して作成、読み取り、更新、または削除 (CRUD) 操作を実行する要求を作成します。 必要に応じて URL を作成します。 詳細については、[データ プロトコル (OData) を開く](odata.md) を参照してください。 前に示したように、環境に格納されている変数を使用して、要求をパラメーター化することが便利であることがわかる場合があります。 次の GET クエリの例では、**Customer Account** パラメーターが使用されています。 クエリは、環境変数で指定された顧客アカウントの名前とアドレスの詳細を返します。 特殊文字は、URL に正しくエンコードされる必要があることに注意してください。
 
-    ```
+    ```Console
     https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
     ```
 
@@ -104,7 +104,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
 16. 応答を検証するためのテストを作成します。 次の例では、空でない JSON 形式のデータが応答本文に返されるかどうかをテストします。
 
-    ```
+    ```csharp
     var json = JSON.parse(responseBody);
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```

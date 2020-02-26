@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 357c58bed8360a4371e90e0767fe63c0aaebd147
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 077622c92c6a58a73e290313dcba89cb3fcb4596
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812038"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026256"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -199,11 +199,13 @@ Excel アプリケーションは、Office フレームワークの新しいア�
 11. **FMTemplateRegistrations** を開きます。 FMTemplateRegistrations.xpp コード ファイルが表示されます。
 12. 既存の行の 1 つをコピーし、テンプレート名、リソース名、説明、表示名、および**現在のレコード フィルターの適用**と **Office で開くメニューに表示**の値を指定して変更します。 表示名は、[Excel で開く] オプションとして表示されるテキストです。 ユーザーがその項目の上にポインタを置くと説明が表示されます。 表示名と説明には、ラベルまたは静的な文字列を使用できます。 コードは次の例のようになります。
 
-        this.addTemplate(
-            OfficeAppApplicationType::Excel, 
-            resourceStr(FleetCustomersBasicTemplate), 
-            resourceStr(FleetCustomersBasicTemplate), 
-            "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
+    ```xpp
+    this.addTemplate(
+        OfficeAppApplicationType::Excel, 
+        resourceStr(FleetCustomersBasicTemplate), 
+        resourceStr(FleetCustomersBasicTemplate), 
+        "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
+    ```
 
 13. コードを保存します。 既存のコードを上書きするか、新しいファイルとしてそれを保存するかを尋ねられたら、**上書き**をクリックします。
 14. ソリューションをビルドします (Ctrl + Shift + B キーを押します)。
@@ -276,24 +278,25 @@ Excel アプリケーションは、Office フレームワークの新しいア�
 3.  **メソッド** を右クリックし、 **新規メソッド** をクリックします。
 4.  次の例から **lookup\_Country** コードを追加します。
 
-        public class FMCustomerEntity extends common
+    ```xpp
+    public class FMCustomerEntity extends common
+    {
+        [SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
+        SysODataCollectionAttribute("_fields", Types::String), //Types in context
+        SysODataFieldLookupAttribute("Country")] //Name of field
+        public static str lookup_Country(Array _fields)
         {
-            [SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
-            SysODataCollectionAttribute("_fields", Types::String), //Types in context
-            SysODataFieldLookupAttribute("Country")] //Name of field
-            public static str lookup_Country(Array _fields)
-            {
-                OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
+            OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
 
-                result.items().value(1, "US");
-                result.items().value(2, "AU");
-                result.items().value(3, "FR");
-                result.items().value(4, "GR");
-                result.items().value(5, "NZ");
+            result.items().value(1, "US");
+            result.items().value(2, "AU");
+            result.items().value(3, "FR");                result.items().value(4, "GR");
+            result.items().value(5, "NZ");
 
-                return result.serialize();
-            }
+            return result.serialize();
         }
+    }
+    ```
 
 5.  コードを保存します。 既存のコードを上書きするか、新しいファイルとして保存するかを尋ねられたら、**上書き**をクリックします。
 6.  ソリューションをビルドします (Ctrl + Shift + B キーを押します)。

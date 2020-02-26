@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 6a405b2182f288de1cb79c92d5ab4b3365e6783c
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: b5b6570782854b9e5d9b88d05328c2936d4b998e
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578254"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033015"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -36,7 +36,7 @@ ms.locfileid: "2578254"
 
 ビジネス イベントのキャプチャの背後にある目的を明確に把握している必要があります。 つまり、ビジネス イベントをキャプチャする理由、および受信者が使用する方法です。
 
-ビジネス イベントをキャプチャして、Finance and Operation で発生するビジネス イベントに応じて Dynamics 365 Finance and Operations アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネスイベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
+ビジネス イベントをキャプチャして、Finance and Operations で発生するビジネス イベントに応答して Dynamics 365 Finance and Operations アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネス イベントに対する良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
 
 データを受信者に転送し、効果的にデータ エクスポート シナリオを実現することを目的としている場合、ビジネス イベントに対する良いユースケースはありません。 実際、データ転送シナリオのビジネス イベントの使用は、ビジネス イベント フレームワークの誤用になります。 このようなシナリオでは、データ管理で既に使用可能であるデータ エクスポート メカニズムを使用し続ける必要があります。
 
@@ -90,7 +90,7 @@ ms.locfileid: "2578254"
 
 1. **newFrom\<my\_buffer\>** 静的メソッドを実装します。 メソッド名の \<my\_buffer\> の部分は通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
 
-    ```
+    ```xpp
     static public SalesInvoicePostedBusinessEvent
     newFromCustInvoiceJour(CustInvoiceJour _custInvoiceJour)
     {
@@ -103,9 +103,9 @@ ms.locfileid: "2578254"
 
 2. **BusinessEventsBase** クラスを拡張します。
 
-    ```
+    ```xpp
     [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    'AccountsReceivable:SalesOrderInvoicePostedBusinessEventName','AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',ModuleAxapta::SalesOrder)]
     public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 
@@ -113,7 +113,7 @@ ms.locfileid: "2578254"
 
 3. プライベート **新規** メソッドを実装します。 このメソッドは静的コンストラクター メソッドからのみ呼び出されます。
 
-    ```
+    ```xpp
     private void new()
     {
     }
@@ -121,7 +121,7 @@ ms.locfileid: "2578254"
 
 4. 内部状態を維持するプライベート **parm** メソッドを実装します。
 
-    ```
+    ```xpp
     private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour _custInvoiceJour = custInvoiceJour)
     {
         custInvoiceJour = _custInvoiceJour;
@@ -131,7 +131,7 @@ ms.locfileid: "2578254"
 
 5. **buildContract** メソッドを実装します。 このステップには **EventContract** スタブが必要であることに注意してください。
 
-    ```
+    ```xpp
     [Wrappable(true), Replaceable(true)]
     public BusinessEventsContract buildContract()
     {
@@ -144,7 +144,7 @@ ms.locfileid: "2578254"
 
 これは、「転記された販売注文請求書」ビジネス イベントの完全な実装です。
 
-```
+```xpp
 /// <summary>
 /// Sales order invoice posted business event.
 /// </summary>
@@ -193,7 +193,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 1. **BusinessEventContract** クラスを拡張します。
 
-    ```
+    ```xpp
     [DataContract]
     public final class SalesInvoicePostedBusinessEventContract extends
     BusinessEventsContract
@@ -203,7 +203,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 2. 契約状態を保持するプライベート変数を追加します。
 
-    ```
+    ```xpp
     private CustInvoiceAccount invoiceAccount;
     private CustInvoiceId invoiceId;
     private SalesIdBase salesId;
@@ -216,7 +216,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 3. プライベート初期化メソッドを実装します。
 
-    ```
+    ```xpp
     private void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
@@ -234,7 +234,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 4. 静的コンストラクター メソッドを実装します。
 
-    ```
+    ```xpp
     public static SalesInvoicePostedBusinessEventContract
     newFromCustInvoiceJour(CustInvoiceJour _custInvoiceJour)
     {
@@ -248,7 +248,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 5. 契約状態にアクセスするための **parm** メソッドを実装します。
 
-    ```
+    ```xpp
     [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount = invoiceAccount)
     {
@@ -263,7 +263,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 > - **RecId** 値はビジネス イベントのペイロードの一部にすることはできません。 代わりに代替キー (AK) を使用します。
 > - 列挙型 (enum) 値は、公開する前にそのシンボル値に変換する必要があります。 **enum2Symbol** メソッドを使用して列挙型の値をシンボル文字列に変換します。 次に例を示します。
 >
->    ```
+>    ```xpp
 >    status = enum2Symbol(enumNum(CustVendDisputeStatus), _custDispute.Status);
 >    ```
 
@@ -271,7 +271,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 
 これは、「転記された販売注文請求書」ビジネス イベント契約の完全な実装です。
 
-```
+```xpp
 /// <summary>
 /// The data contract for a SalesInvoicePostedBusinessEvent
 /// </summary>
@@ -377,7 +377,7 @@ BusinessEventsContract
 
 ビジネス イベント フレームワークは、ビジネス イベントが消費者に公開されるかどうか決定します。 一般的なルールとして、ビジネス イベントが有効かどうかに関わらず、アプリケーションはビジネス イベントを常に送信する必要があります。 重要な追加ロジックが必要な場合、またはビジネス イベントを送信するためのロジックがパフォーマンスに影響する場合は、ビジネス イベントの送信に関連付けられたビジネス ロジックを実行する前に、アプリケーションは特定のビジネス イベントが有効化されているかどうか確認することができます。 この確認は **BusinessEventsConfigurationReader::isBusinessEventEnabled** メソッドを介して実行されます。
 
-```
+```xpp
 if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(CollectionStatusUpdatedBusinessEvent)))
 {
     while select dispute
@@ -410,7 +410,7 @@ if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(Collectio
 
 標準的なビジネス イベント契約、およびペイロードに含める必要がある追加情報で構成される契約を作成します。
 
-```
+```xpp
 [DataContract]
 public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
@@ -427,7 +427,7 @@ extends BusinessEventsContract
 
 プライベート契約の値を初期化する **初期化** メソッドを作成します。
 
-```
+```xpp
 private void initialize(CustFreeTextInvoicePostedBusinessEventContract
 _custFreeTextInvoicePostedBusinessEventContract)
 {
@@ -440,7 +440,7 @@ _custFreeTextInvoicePostedBusinessEventContract)
 
 標準契約を引数として取得し **初期化** メソッドを呼び出す、静的 **newFrom** メソッドを作成します。
 
-```
+```xpp
 public static CustFreeTextInvoicePostedBusinessEventExtendedContract
 newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
 _custFreeTextInvoicePostedBusinessEventContract)
@@ -455,7 +455,7 @@ _custFreeTextInvoicePostedBusinessEventContract)
 
 **parm** メソッドを標準データ コントラクトからコピーして、クラスの標準契約インスタンス内で値を取得およびセットするように各メソッドを修正します。
 
-```
+```xpp
 [DataMember('InvoiceAccount')]
 public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
 = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
@@ -473,7 +473,7 @@ custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
 
 #### <a name="step-5-add-parm-methods-for-additional-payload-data"></a>ステップ 5: 追加ペイロード データのために parm メソッドを追加する
 
-```
+```xpp
 [DataMember('CustomerClassification')]
 public CustomerClassification parmCustomerClassification(CustomerClassification
 _customerClassification = customerClassification)
@@ -485,7 +485,7 @@ _customerClassification = customerClassification)
 
 これは拡張ビジネス契約の完全な実装です。
 
-```
+```xpp
 [DataContract]
 public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
@@ -575,7 +575,7 @@ extends BusinessEventsContract
 
 標準ビジネス イベント契約をロードしてペイロード拡張機能を投入する **next** を呼び出す、ビルド契約の実装を提供します。 これは完全なクラスです。
 
-```
+```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
 public final class FreeTextInvoicePostedBusinessEventContract_Extension
 {
@@ -602,7 +602,7 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 カスタム ペイロード コンテキストは **BusinessEventsCommitLogPayloadContext** クラスから拡張される必要があります。
 
-```
+```xpp
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
@@ -618,7 +618,7 @@ class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContex
 
 新しいペイロード コンテキスト タイプを構築するには、**BusinessEventsSender.buildPayloadContext** メソッドに対してコマンド チェーン (CoC) 拡張機能を記述する必要があります。
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessEventsSender))]
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
@@ -642,7 +642,7 @@ public final class CustomPayloadContextBusinessEventsSender_Extension
 
 **BusinessEventsServiceBusAdapter** には **addProperties** という名前の CoC メソッドがあります。
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
@@ -689,7 +689,7 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 
 新しいエンドポイント アダプター クラスは、**IBusinessEventsEndpoint** インターフェイスを実装している必要があります。 また、**BusinessEventsEndpointAttribute** 属性で装飾する必要もあります。
 
-```
+```xpp
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 {
@@ -697,7 +697,7 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 
 **初期化**メソッドを実装して、渡された **BusinessEventsEndpoint** バッファーのタイプを確認し、次の例が示すように、バッファーが適切な型である場合は初期化します。
 
-```
+```xpp
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
@@ -723,7 +723,7 @@ if (!customField)
 
 ![ビジネス イベントのエンドポイント](../media/customendpoint5.png)
 
-```
+```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
 final public class CustomBusinessEventsEndpointConfiguration_Extension
 {
@@ -758,7 +758,7 @@ final public class CustomBusinessEventsEndpointConfiguration_Extension
 
 人が判読可能な形式にするため、**DateTimeIso8601** という名前の拡張データ型 (EDT) をデータ契約の値の型として使用します。 または、**DateTimeIso8601** EDTから派生した EDT を使用します。
 
-```X++
+```xpp
 [DataMember("TestIsoEdtUtcDateTime")]
 public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._testIsoDateTime)
 {

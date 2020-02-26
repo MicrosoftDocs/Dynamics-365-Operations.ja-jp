@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 9a707df565218900e727a3c0cacf2f7f629dc365
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 47905da239317d54e37b3c5b8a9d452e55097e30
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249716"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005740"
 ---
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 
@@ -44,7 +44,7 @@ ms.locfileid: "2249716"
 <tr>
 <td>人事管理における休暇管理</td>
 <td>休暇トランザクションを入力するための機能は含まれていません。 また、マネージャーとして休暇トランザクションを承認する機能は含まれていません。 他のモジュールとの統合に必要な設定機能は、<strong>Human Resources 2</strong> コンフィギュレーション キーから使用できます。</td>
-<td>Dynamics 365 Talent で実装済み</td>
+<td>Dynamics 365 Human Resources で実装済み</td>
 </tr>
 <tr>
 <td>警告</td>
@@ -93,9 +93,9 @@ ms.locfileid: "2249716"
 </tr>
 <tr>
 <td>外部アンケートおよび機能の採用</td>
-<td>アンケートの外部公開機能および開いているジョブは、将来の更新で Talent に追加されます。</td>
+<td>アンケートの外部公開機能および開いているジョブは、将来の更新で人事管理に追加されます。</td>
 <td>外部アンケートの機能は、実装されていません。
-<p>採用機能は、Talent: Attract で利用可能です。</p>
+<p>採用機能は、Microsoft Dynamics 365 Talent: Attract で利用可能です。</p>
 </td>
 </tr>
 <tr>

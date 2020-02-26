@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0a998079d04decc9458eddb581da39f996c02113
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 58d44afe8ee14fd8af57b1c1813adc32a46eb8d4
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812057"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983645"
 ---
 # <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 
@@ -85,7 +85,7 @@ AX 2012 R3 環境内の仮想マシンにログオンするには、次の手順
 5.  フォームの先頭の近くにある編集 (鉛筆) アイコンをクリックします。
 6.  環境に追加する仮想マシンの数を示します。 次に、それらの仮想マシンのサイズを指定します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](https://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 7.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 8.  **次へ** をクリックします。

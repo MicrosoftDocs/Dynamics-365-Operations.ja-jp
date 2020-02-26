@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10668b7c12bc70aa2f09e6049648543ca502245e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cd5221f41adbb7e2d803c863b2884a825a7b328d
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772347"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033004"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 
@@ -50,7 +50,7 @@ AOT 配置可能パッケージはアプリケーションのカスタマイズ�
 3. コマンド プロンプト ウィンドウを開き、配置可能パッケージを展開したフォルダーに移動します。
 4. 次のコマンドを実行します。
 
-    ```
+    ```Console
     AXUpdateInstaller.exe devinstall
     ```
 
@@ -80,7 +80,7 @@ AOT 配置可能パッケージはアプリケーションのカスタマイズ�
        1. 管理者としてコマンド プロンプト ウィンドウを開きます。
        2. 展開したフォルダーに移動し、コンピューターにインストールされているすべてのコンポーネントの一覧を表示するため、次のコマンドを実行します。
 
-           ```
+           ```Console
            AXUpdateInstaller.exe list
            ```
 
@@ -97,7 +97,7 @@ DefaultTopologyData.xml ファイルのトポロジの情報に基づいて、�
 
 - すべての VM で、次のコマンドを実行して Runbook を生成します。
 
-    ```
+    ```Console
     AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
     ```
 
@@ -110,7 +110,7 @@ DefaultTopologyData.xml ファイルのトポロジの情報に基づいて、�
 
     **例**
 
-    ```
+    ```Console
     AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
     ```
 
@@ -123,31 +123,31 @@ Runbook には、環境を更新するために実行する必要がある一連
 
     1. 次のコマンドを実行して、Runbook をインポートします。
 
-        ```
+        ```Console
         AXUpdateInstaller.exe import -runbookfile=[runbookFile]
         ```
 
         **例**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe import -runbookfile="VAL200AA2BMEDIU-runbook.xml"
         ```
 
     2. Runbook を確認します。
 
-        ```
+        ```Console
         AXUpdateInstaller.exe list
         ```
 
     3. runbook を実行します。
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid=[runbookID]
         ```
 
         **例**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook"
         ```
 
@@ -155,13 +155,13 @@ Runbook には、環境を更新するために実行する必要がある一連
 
         手動ステップについては、指示に従い、Runbook でステップを完了済とマークする以下のコマンドを実行します。
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookID=[runbookID] -setstepcomplete=[stepID]
         ```
 
         **例**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=2
         ```
 
@@ -169,13 +169,13 @@ Runbook には、環境を更新するために実行する必要がある一連
 
     4. Runbook をエクスポートします。
 
-        ```
+        ```Console
         AXUpdateInstaller.exe export -runbookid=[runbookID] -runbookfile=[runbookFile]
         ```
 
         **例**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe export -runbookid="VAL200AA2BMEDIU-runbook" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
         ```
 
@@ -184,7 +184,7 @@ Runbook には、環境を更新するために実行する必要がある一連
 ## <a name="verify-installation"></a>インストールの確認
 1. 新しい更新プログラムがインストールされていることを確認するには、次のコマンドを実行します。
 
-    ```
+    ```Console
     AXUpdateInstaller.exe list
     ```
 
@@ -201,13 +201,13 @@ Runbook には、環境を更新するために実行する必要がある一連
 ## <a name="troubleshooting"></a>トラブルシューティング
 - runbook の段階で失敗した場合は、次のコマンドを実行して再実行できます。
 
-    ```
+    ```Console
     AXUpdateInstaller.exe execute -runbookid=[runbookID] -rerunstep=[stepID]
     ```
 
 - バージョンの不一致やダウングレード、または同じ展開可能パッケージのインストールを防止するには、次のコマンドを実行します。
 
-    ```
+    ```Console
     AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
     ```
 

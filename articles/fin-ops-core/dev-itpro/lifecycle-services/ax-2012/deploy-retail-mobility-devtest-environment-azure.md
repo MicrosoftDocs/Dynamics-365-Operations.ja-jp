@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 33e242f3d23f34011ab425515173cb552b436ab7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 83d3bfb24a1edca26d1e7ea23bfd6ce148390c24
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812156"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983747"
 ---
 # <a name="deploy-retail-mobility-devtest-environments-on-azure"></a>Azure での Retail Mobility 開発/テスト環境の配置
 
@@ -162,7 +162,7 @@ Azure に Retail Mobility 開発/テスト環境を配置するには、以下�
 11. **完了** をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
     -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、 [Azure 上での AX 2012 R3の 配置計画](plan-2012-r3-deployment-azure.md) を参照してください。
-    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
+    -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](https://azure.microsoft.com/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
 14. **次へ** をクリックします。
@@ -177,12 +177,12 @@ Retail Mobility 開発/テスト環境が Azure に配置されたので、オ�
 
 | 前提条件                                                                                                                                                     | 詳細                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。 前述のように、Dynamics AX はオンプレミスまたは Azure にインストールできます。 | [Microsoft Dynamics AX のシステム設定](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
+| Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。 前述のように、Dynamics AX はオンプレミスまたは Azure にインストールできます。 | [Microsoft Dynamics AX のシステム設定](https://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
 | Dynamics AX にデータをインポートします。                                                                                                                                    | Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。 手順については、 [データ転送ツール (ベータ版) をテストする](test-data-transfer-tool-beta-2012.md) を参照してください。 |
-| Async Server を設定およびコンフィギュレーションします。                                                                                                                               | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
-| Real-time Service を設定およびコンフィギュレーションします。                                                                                                                          | [Commerce Data Exchange Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
-| Commerce Data Exchange のメタデータの同期                                                                                                                        | [小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |
-| Retail サーバーの一般公開 URL を使用して、Retail サーバーのチャネル プロファイルを作成します。                                                                | [チャンネル プロファイルの設定](http://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)                                                                                                                                                                                                      |
+| Async Server を設定およびコンフィギュレーションします。                                                                                                                               | [Commerce Data Exchange: Async Server](https://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
+| Real-time Service を設定およびコンフィギュレーションします。                                                                                                                          | [Commerce Data Exchange Real-time Service](https://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
+| Commerce Data Exchange のメタデータの同期                                                                                                                        | [小売用スケジューラのパラメーターを入力する](https://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |
+| Retail サーバーの一般公開 URL を使用して、Retail サーバーのチャネル プロファイルを作成します。                                                                | [チャンネル プロファイルの設定](https://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)                                                                                                                                                                                                      |
 
 ### 
 

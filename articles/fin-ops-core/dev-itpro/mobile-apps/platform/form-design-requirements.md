@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e203f7ed32b5372d290ebdf31b3593d946d95984
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 770281ee933c03ee435f45289f58bc6442d8dac8
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183109"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033046"
 ---
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 
@@ -77,11 +77,15 @@ ms.locfileid: "2183109"
 
 新しいモバイル固有フォームを作成するのではなく、モバイル フレームワークと連携できるように、既存のフォームを変更する場合は、条件付きでモバイル固有のシナリオのフォームの動作を変更する必要があります。 Web クライアント ユーザーがページ/アクションをデザインするセッション中、またはモバイル ユーザーのページ/アクションを読み込むためにモバイル フレームワーク バック エンドが作成したセッション中に、コードにアクセスしているかどうかを決定するために X++ コードでは次の静的 X++ アプリケーション プログラミング インターフェイス (API) を使用することができます。 **モバイル デザイナーで、フォームが使用されている場合**
 
-    SysTaskRecorderController::isDesigningApp()
+```xpp
+SysTaskRecorderController::isDesigningApp()
+```
 
 **モバイル フレームワークによりバックエンドからページをロードしてアクションを実行するフォームを使用している場合**
 
-    SysTaskRecorderController::isExecutingApp()
+```xpp
+SysTaskRecorderController::isExecutingApp()
+```
 
 #### <a name="form-control-support"></a>フォーム コントロールのサポート
 

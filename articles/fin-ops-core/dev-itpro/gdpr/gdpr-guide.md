@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d15e87b5fe21d5e13802d4f2aa820bfd29fab5a4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4ac3b085b7fb8d552977206ea8d298bad04b6475
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183293"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005529"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -56,7 +56,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + **C1** - C1 は Microsoft の直接顧客 (エンタープライズ クラウドの IT 管理者) です。
 + **C2** - C2 は C1 の顧客です。
 
-Finance and Operations アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
+Finance and Operations アプリでは、Microsoft はプロセッサとして動作します。 データ プロセッサとして、Finance and Operations はデータ コントローラーとしての GDPR 責務に適応するのに役立つプロセスと機能を提供します。
 
 次の図は、顧客からアプリケーション データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 それぞれのアプリケーションで、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
@@ -74,16 +74,16 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 <tbody>
 <tr class="odd">
 <td>
-<h3><strong>役割</strong></h3>
+<strong>役割</strong>
 </td>
 <td>
-<h3><strong>シナリオ</strong></h3>
+<strong>シナリオ</strong>
 </td>
 <td>
-<h3><strong>実装</strong></h3>
+<strong>実装</strong>
 </td>
 <td>
-<h3><strong>データ アクセスのレベル</strong></h3>
+<strong>データ アクセスのレベル</strong>
 </td>
 </tr>
 <tr class="even">
@@ -138,7 +138,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 </td>
 <td>
 <ul>
-<li>Finance and Operations を使用して、データを特定し、要求を満たします。 </li>
+<li>Finance and Operations を使用してデータを検索し、要求を処理します。 </li>
 <li>カスタマイズを記述します。</li>
 <li>サード パーティに共有コントローラー DSR を求めます。</li>
 <li>Microsoft にアクティビティ データを求めます。</li> 
@@ -211,7 +211,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 + 製品が直接アクションを有効にする場合、個人データを匿名にします。
 + 個人データを消去または変更するカスタマイズを作成します。
 
-\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスのために必要なビジネス データの削除機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの削除のための機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 ### <a name="right-to-port"></a>移植するには右
 
@@ -281,7 +281,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 コントローラーをサポートするために、このレポートでは、**データ管理** 作業領域で利用可能な既存のエンティティ モデル レポート機能を改善しています。 **データ管理** ワークスペースは、ほとんどのロールの種類のパッケージ化された表現のコレクションを提供します。 これらの表現はエンティティと呼ばれます。
 
 > [!NOTE]
-> 個人検索レポートは、Finance、Supply Chain Managament、Retail および Talent に対して使用できます。 現在、レポートは Microsoft Dynamics AX 2012 をサポートしていません。 
+> 個人検索レポートは、Finance、Supply Chain Management、コマース、および人事管理に対して使用できます。 現在、レポートは Microsoft Dynamics AX 2012 をサポートしていません。 
 
 エンティティは特定のロールのインスタンスを表します。 データ管理機能を使用すると、コントローラーはエンティティ データを、コロン区切り値、コンマ区切り値 (CSV)、セミコロン区切り値、タブ区切り値、Microsoft Excel、および XML などの複数の形式にエクスポートできます。
 

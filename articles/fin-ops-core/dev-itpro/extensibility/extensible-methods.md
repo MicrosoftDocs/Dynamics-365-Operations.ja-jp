@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 44c50fb6cf4c4096e74e9ecb50f880c6a946c103
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0209f4e3035350b586cc7a4161a4d3251fadf60b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191633"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033031"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
@@ -51,23 +51,25 @@ ms.locfileid: "2191633"
             
         次の例では、**findOrderHeader** が交換可能です。
 
-            private Common findOrderHeader(boolean _forUpdate)
+        ```xpp
+        private Common findOrderHeader(boolean _forUpdate)
+        {
+            switch (this.InventTransType)
             {
-                switch (this.InventTransType)
-                {
-                    case InventTransType::Sales:
-                        return this.salesTable(_forUpdate);
+                case InventTransType::Sales:
+                    return this.salesTable(_forUpdate);
 
-                    default: 
-                        return this.findOrderHeaderDefault(_forUpdate);
-                }
+                default: 
+                    return this.findOrderHeaderDefault(_forUpdate);
             }
+        }
 
-            [Replaceable]
-            protected Common findOrderHeaderDefault(boolean _forUpdate)
-            {
-                throw error(Error::wrongUseOfFunction(funcName()));
-            }
+        [Replaceable]
+        protected Common findOrderHeaderDefault(boolean _forUpdate)
+        {
+            throw error(Error::wrongUseOfFunction(funcName()));
+        }
+        ```
 
 + **While** – メソッドの途中では **while** ブロックを回避してください。**while** ブロックを拡張しにくくなるからです。 理想的には、**while** ブロックのロジックは、拡張機能を有効にする別のメソッドに置く必要があります。
 

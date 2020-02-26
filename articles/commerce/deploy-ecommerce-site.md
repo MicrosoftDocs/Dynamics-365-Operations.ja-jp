@@ -3,7 +3,7 @@ title: 新しい E コマース テナントの配置
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい E コマース テナントを配置する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945516"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001786"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい E コマース テナントの配置
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい E コマース テナントを配置する方法について説明します。
 
 ## <a name="overview"></a>概要
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) は、パートナーや顧客がプロジェクト環境を管理したり、Microsoft Dynamics 製品や機能に関する最新情報を表示したり、サポート インシデントを作成、追跡、参照したりするために使用できる、クラウドベースのコラボレーション ワークスペースです。 E コマースの管理機能は LCS に統合されています。
 
 LCS の詳細については、[Lifecycle Services ユーザー ガイド](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)を参照してください。
@@ -80,11 +80,16 @@ E コマースを初期化する前に、プロジェクト、環境、および
 1. 次のページで必要な情報を入力し、フォームを送信します。 **E コマース** タブに戻り、初期化が開始されていることを確認します。
 1. 初期化の状態を表示するには、**更新**もしくは後で **E コマース** タブに戻ります。
     
-E コマースが LCS から初期化されると、システムは E コマースに必要な複数のコンポーネントをプロビジョニングし、それらを環境に関連付けます。 プロビジョニングが完了すると、**小売管理**ページの **E コマース** タブが更新されて、プロビジョニングが反映されます。 このページには、最新のカスタマイズ配置と、進行中の他の配置状態が表示されます。 また、E コマース サイトおよび E コマース サイト管理ツール (オーサリング ツール) へのリンクも含まれています。
+E コマースが LCS から初期化されると、システムは E コマースに必要な複数のコンポーネントをプロビジョニングし、それらを環境に関連付けます。 プロビジョニングが完了すると、**小売管理**ページの **E コマース** タブが更新されて、プロビジョニングが反映されます。 このページには、最新のカスタマイズ配置と、進行中の他の配置状態が表示されます。 また、E コマース サイトおよび作成されるサイトの E コマース サイト ビルダーへのリンクも含まれています。
 
-## <a name="access-the-authoring-environment"></a>作成環境へのアクセス
+## <a name="access-site-builder"></a>サイト ビルダーへのアクセス
 
-作成環境にアクセスするには、**小売管理**ページの **E コマース** タブに移動します。 そこに、E コマース サイトとサイト管理ツールへのリンクが表示されます。
+サイト ビルダーにアクセスするには、LCS の**小売管理**ウィンドウの **E コマース** タブに移動し、**E コマース サイトの管理ツール**のリンクを選択します。 サイト ビルダー ランディング ページには、テナント レベルのビューが表示されます。 このページから次の操作を実行できます。
+
+- テナント レベルの設定を変更します。
+- 作成したサイトで、表示するためのアクセス許可を持っているサイトに移動します。 
+- 管理および報告などのレビュー機能にアクセスします。
+- 新しいサイトを作成します。 新しいサイトを作成する方法の詳細については、[新しい E コマース サイトの作成](create-ecommerce-site.md) を参照してください。 
 
 ## <a name="additional-resources"></a>追加リソース
 

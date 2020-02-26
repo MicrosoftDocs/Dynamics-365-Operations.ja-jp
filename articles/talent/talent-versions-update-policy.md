@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818482"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006058"
 ---
 # <a name="talent-system-requirements"></a>Talent のシステム要件
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Attract、Onboard、および Core HR を含め、Microsoft Dynamics 365 Talent の要件について説明します。 また、Talent が利用可能な国および地域、Talent データの言語とローカライズの概要について説明します。 さらに、このトピックでは Talent の更新ポリシーについて説明します。
+このトピックでは、Attract および Onboard を含む、Microsoft Dynamics 365 Talent の要件について説明します。 また、Talent が利用可能な国および地域、Talent データの言語とローカライズの概要について説明します。 さらに、このトピックでは Talent の更新ポリシーについて説明します。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 

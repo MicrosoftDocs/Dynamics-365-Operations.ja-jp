@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: fc244b1f3b67bac89197df8cdc9e5eec16a7d9f0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5bacd83317df7034934eccd709df9af8a5447408
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769747"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030879"
 ---
 # <a name="business-events-and-microsoft-forms-pro"></a>ビジネスイベントと Microsoft Forms Pro
 
@@ -48,7 +48,7 @@ Forms Pro を使用したことがない場合は、まず [Forms Pro のドキ�
 
 3. 販売注文のステータスが更新されるたびにビジネス イベントにトリガーされるフローを設定します (次のステップの図を参照してください)。 トリガーされた後、フローはフォーム コネクタを使用して、販売注文に登録されている顧客の電子メール アドレスに調査を送信します。
 
-    シナリオに必要な顧客の電子メール アドレスとその他の情報は、ビジネス イベント ペイロードに含まれる必要があります。 ペイロードにこのデータがない場合は、適切なフィールドが含まれるように拡張できます。 詳細については [ビジネス イベント開発者ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc) を参照してください。
+    シナリオに必要な顧客の電子メール アドレスとその他の情報は、ビジネス イベント ペイロードに含まれる必要があります。 ペイロードにこのデータがない場合は、適切なフィールドが含まれるように拡張できます。 詳細については [ビジネス イベント開発者ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc) を参照してください。
 
 4. このシナリオの調整には Microsoft Power Automate が使用されるため、アプリケーションで **変更ベースのアラートが発生した場合** ビジネス イベントを有効化しないでください。 代わりに、ビジネス イベントを直接サブスクライブするように Power Automate を設定します。
 

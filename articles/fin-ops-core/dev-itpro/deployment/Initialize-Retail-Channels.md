@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a131a7bf08b4e34ca6d72606c910769a28e33f7a
-ms.sourcegitcommit: db4eae8c42cbc4df80cc0c902428a1f64525c762
+ms.openlocfilehash: e9080af24844a5bf1da92b4f87b0193219698e89
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885554"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024649"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
@@ -31,7 +31,7 @@ ms.locfileid: "2885554"
 このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
 
 > [!IMPORTANT]
-> クラウド環境で Retail チャネルの機能を利用しているお客様の場合は、業務の継続的なサポートを徹底するにあたり、2020年 1月 31日 までに Retail チャネルを更新して Retail Cloud Scale Unit を ご利用頂くよう推奨します。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
+> クラウド環境で Retail チャネルの機能を利用しているお客様の場合は、業務の継続的なサポートを徹底するにあたり、2020 年 1月 31日 までに Retail チャネルを更新して Retail Cloud Scale Unit を ご利用頂くよう推奨します。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -55,7 +55,7 @@ ms.locfileid: "2885554"
 
 ### <a name="database-refresh-and-cloud-scale-units"></a>データベースの更新とクラウド スケール ユニット
 
-始める前に [Retail 機能を使用する環境でデータベースを更新した後に完了する手順](../database/database-refresh.md#steps-to-complete-after-a-database-refresh-for-environments-that-use-retail-functionality) について慣れていることを確認して下さい。
+始める前に [Retail 機能を使用する環境でデータベースを更新した後に完了する手順](../database/database-refresh.md) について慣れていることを確認して下さい。
 
 データベース更新の一部として (チャネル データベース フォームで) スケール ユニット チャネル データベース レコードを環境を越えて移動できません。 これはレコードが環境固有のコンフィギュレーションを表すためです。
 

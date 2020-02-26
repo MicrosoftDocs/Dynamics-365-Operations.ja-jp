@@ -1,5 +1,5 @@
 ---
-title: 例外の調査/解決
+title: 例外の調査または解決
 description: '[仕入先請求ポリシー] は、[仕入先請求書] ページを使用して仕入先請求書を転記するか、仕入先請求書の [ポリシー違反] ページを開いたときに実行されます。'
 author: abruer
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2f2e7d401e97aeab9dbc74f65e1a0c03eb0c880
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 68694e08550083c38feb4389f82d83c535e978c3
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189341"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000229"
 ---
-# <a name="researchresolve-exceptions"></a>例外の調査/解決
+# <a name="research-or-resolve-exceptions"></a>例外の調査または解決
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

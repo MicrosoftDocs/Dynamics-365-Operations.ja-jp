@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914622"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001418"
 ---
 # <a name="add-languages-to-your-site"></a>サイトに言語を追加する
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-Web サイトは、Dynamics 365 Commerce がサポートする任意の言語にローカライズできます。 (サポートされている言語の一覧については、このトピックの後半で説明されています。) Web サイトに言語を追加するには、まず、サイトにバインドされているオンライン ストアに言語を追加する必要があります。
+Web サイトは、Commerce がサポートする任意の言語にローカライズできます。 (サポートされている言語の一覧については、このトピックの後半で説明されています。) Web サイトに言語を追加するには、まず、サイトにバインドされているオンライン ストアに言語を追加する必要があります。
 
 ## <a name="add-a-language-to-an-online-store"></a>オンライン ストアに言語を追加する
 
 オンライン ストアに言語を追加するには、次の手順に従います。
 
-1. サイトの Dynamics 365 Retail 環境を開きます。
-1. **Retail \> チャネル \> オンライン ストア**の順に移動して、環境用にコンフィギュレーションされているオンライン ストアの一覧にアクセスします。 または、検索用語として**オンライン ストア**を入力します。
+1. サイトの Dynamics 365 Commerce 環境を開きます。
+1. **Retail と Commerce \> チャネル \> オンライン ストア**の順に移動して、環境用にコンフィギュレーションされているオンライン ストアの一覧にアクセスします。 または、検索用語として**オンライン ストア**を入力します。
 1. 言語を追加するオンライン ストアを選択します。
 1. **言語**クイック タブで、**追加**を選択します。
 1. **言語**フィールドで、追加する言語を選択します。

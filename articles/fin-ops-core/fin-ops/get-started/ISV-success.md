@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-4-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 6139d9049f63c97b0b1beaa19ac0c83eb906b732
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1cf3f5bd2580031612ca1ce2fd01d91ec072a7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180517"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003693"
 ---
 # <a name="microsoft-dynamics-insider-program"></a>Microsoft Dynamics Insider Program
 [!include [banner](../includes/banner.md)] 
@@ -34,7 +34,7 @@ ms.locfileid: "2180517"
 
 **"DRI"** とは、特定の担当者を意味します。
 
- **"Dynamics Online サービス"** とは、Dynamics 365 Finance、Supply Chain Management または小売という意味です。
+ **"Dynamics Online サービス"** とは、Dynamics 365 Finance、Supply Chain Management またはコマースという意味です。
  
 **Solution Package** とは、 Dynamics Online サービスに対して本プログラムの参加者が開発したソフトウェア、データ、メディア、サービス、またはその他の素材を指します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "2180517"
 
 **2.1    サービスの範囲**  本プログラムの参加者は、参加者から取得したソリューションパッケージにおけるドメインの専門知識を有します。  本契約は、 Dynamics Online サービス（「顧客」）を実行または使用するにあたり、参加者のソリューションパッケージを展開した顧客から報告された問題をマイクロソフトが参加者にどのように伝達するかを規定します。  本プログラムの参加者は、サポートの問題点を修正し、Microsoftに対する追加費用なしで顧客に解決策 (セクション3.4にて定義) を提供します。  
 
-**2.2 プレビューの期間**  本プレビューの期間は、参加者がこれらプレビュー期間および2019年7月1日に終了することを受け入れた日を開始日とします。
+**2.2 プレビューの期間**  本プレビューの期間は、参加者がこれらプレビュー期間および 2019 年 7 月 1 日に終了することを受け入れた日を開始日とします。
 
 ### <a name="section-3------support-to-customers"></a>セクション3-顧客へのサポート。
 

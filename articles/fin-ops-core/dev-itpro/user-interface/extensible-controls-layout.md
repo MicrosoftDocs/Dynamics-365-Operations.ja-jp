@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e9d38894a5b83da5302a36903c4467785ea94a2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4416bfb5198869c5fce75e67d4ce637362d6379a
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183056"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029375"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 
@@ -61,7 +61,9 @@ ms.locfileid: "2183056"
 
 **使用例:**
 
-    <div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```html
+<div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```
 
 ### <a name="sizing"></a>サイズ変更
 
@@ -73,7 +75,9 @@ ms.locfileid: "2183056"
 
 **使用例:**
 
-    <div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```html
+<div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```
 
 **サイズ変更バインディング ハンドラーに関する注意事項:**
 
@@ -85,7 +89,9 @@ ms.locfileid: "2183056"
 
 **例 :**
 
-    <div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```html
+<div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```
 
 <a name="faq"></a>よく寄せられる質問
 ---

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f084326c6e4a809d82990c58150a39408d04a4d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41170e2bbbbbc716cdc1b5fea288c5680edcc0ad
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812048"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029435"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -48,7 +48,7 @@ Finance and Operations は、各モデルが個別のパッケージにある、
 
 デリゲート メソッドは、デリゲート インスタンスとデリゲート ハンドラー間のコントラクトを定義する手段として機能します。 デリゲートは、アクション自体を行ないません。 これは、void 型を持ち、メソッドにコードがないことによって適用されます。 
 
-```
+```xpp
 delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _result)
 {
 }
@@ -101,7 +101,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 Foundation レイヤー下部にある TaxCalculator クラスには、Suite レイヤーの DiscountRate へのアクセス権がないため、委任を使用して受領合計を更新し、税計算に使用する必要があります。 SimpleTax クラスでは、署名のハンドラーによって必要な状態情報とともにデリゲート メソッド applyDiscountDelegate を作成します。 デリゲート メソッドは、デリゲート インスタンスとハンドラー間のコントラクトを定義することが唯一の目的のため、常に空です。 
 
-```
+```xpp
 delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _result)
 {
 } 

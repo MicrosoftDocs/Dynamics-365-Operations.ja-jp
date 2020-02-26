@@ -3,7 +3,7 @@ title: カスタム サービスの開発
 description: このトピックでは、カスタム サービスの作成方法を説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a6f2edbce218d0064b606d8a96ff83049435ab5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e20bedabd929cd2030577eec6c3c0ade3932835a
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183435"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033003"
 ---
 # <a name="custom-service-development"></a>顧客サービスの開発
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations 用にカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
+Finance and Operations に対してカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
 
 - SOAP エンドポイント
 - JSON エンドポイント
@@ -50,7 +50,7 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 **非開発環境でのエンドポイントの例**
 
-`https://<env-name>soap.cloudax.dynamics.com/soap/services/UserSessionService?wsdl`
+`https://<baseurl>/soap/services/UserSessionService?wsdl`
 
 カスタム サービスの詳細については、次を参照してください。
 

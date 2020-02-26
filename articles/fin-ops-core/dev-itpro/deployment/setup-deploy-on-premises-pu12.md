@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: d2326e0381779c0a4ab2261a2f30bc4fae300801
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e86ac7c61f92f3dc62bdb5fd4b0e84b60b43d9f1
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770935"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029438"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -234,13 +234,13 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 
 #### <a name="subject-name"></a>件名
 
-```
+```Text
 CN = *.d365ffo.onprem.contoso.com
 ```
 
 #### <a name="subject-alternative-names"></a>件名の代替名
 
-```
+```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
@@ -406,13 +406,13 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 3. 既に生成されている SSL 証明書を使用している場合は、証明書生成をスキップし、configTemplate.xml ファイルの拇印を更新します。 証明書は CurrentUser\My ストアにインストールする必要があり、その秘密キーはエクスポート可能でなければなりません。
 
-> [!WARNING]
-> 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 印刷できない特殊文字がある場合、**X509 証明書が無効です**というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
-> ```powershell
-> dir cert:\CurrentUser\My
-> dir cert:\LocalMachine\My
-> dir cert:\LocalMachine\Root
-> ```
+    > [!WARNING]
+    > 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 印刷できない特殊文字がある場合、**X509 証明書が無効です**というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
+    > ```powershell
+    > dir cert:\CurrentUser\My
+    > dir cert:\LocalMachine\My
+    > dir cert:\LocalMachine\Root
+    > ```
 
 4. 各証明書の **ProtectTo** でユーザーまたはグループのセミコロンで区切られた一覧を指定します。 **ProtectTo** タグで指定された Active Directory ユーザーとグループのみに、スクリプトを使用してエクスポートされる証明書をインポートするアクセス許可があります。 エクスポートした証明書を保護するため、スクリプトによりパスワードがサポートされていません。
 
@@ -692,11 +692,11 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 3. **モデル**タブで、必要なリリースのデモ データを選択し、zip ファイルをダウンロードします。
 
-| リリース | デモ データ |
-|-------|------|
-| オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations オンプレミス - デモ データ |
-| オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 11 デモ データ |
-| オンプレミスのプラットフォーム更新プログラム 2018 年 3 月 12 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 12 デモ データ |
+    | リリース | デモ データ |
+    |-------|------|
+    | オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations オンプレミス - デモ データ |
+    | オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 11 デモ データ |
+    | オンプレミスのプラットフォーム更新プログラム 2018 年 3 月 12 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 12 デモ データ |
 
 4. zip ファイルには空のデモデータ .bak ファイルが含まれています。 必要に応じて、.bak ファイルを選択します。 たとえば、デモ データが必要な場合は、AxBootstrapDB_Demodata.bak ファイルをダウンロードします。
 
@@ -953,7 +953,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 2. 新しい展開では、環境のトポロジを選択し、展開を開始するウィザードを完了します。
 
-![配置](./media/Deploy.png)
+    ![配置](./media/Deploy.png)
 
 3. 既存のプラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 を展開する場合: 
     - ローカル エージェントを更新します。 詳細については、[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md) を参照してください。
@@ -961,24 +961,25 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
     - [環境を再構成して新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) の手順を実行している間に、プラットフォーム更新 12 を配置します。
 4. LCS は準備フェーズ中に環境の Service Fabric アプリケーション パッケージを組み立てます。 配置を開始するローカル エージェントにメッセージを送信します。 下記のように、**準備中** ステータスが表示されます。
 
-![準備中](./media/Preparing.png)
+    ![準備中](./media/Preparing.png)
 
-以下に示すような環境の詳細ページに移動するには、**完全な詳細**をクリックします。
+    以下に示すような環境の詳細ページに移動するには、**完全な詳細**をクリックします。
 
-![Details_Preparing](./media/Details_Preparing.png)
+    ![Details_Preparing](./media/Details_Preparing.png)
 
 5. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。 表示されているとおりに、配置の開始がしたときに、ステータスは**配置**に変更します。
 
-![配置しています](./media/Deploying.png)
+    ![配置しています](./media/Deploying.png)
 
-![Details_Deploying](./media/Details_Deploying.png)
+    ![Details_Deploying](./media/Details_Deploying.png)
 
-展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
+    展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
 
-![失敗](./media/Failed.png)
+    ![失敗](./media/Failed.png)
 
-再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
-![配置済み](./media/Deployed.png)
+    再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
+
+    ![配置済み](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Finance + Operations 環境への接続
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
@@ -989,8 +990,8 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
-- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
+- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 
 ## <a name="known-issues"></a>既知の問題

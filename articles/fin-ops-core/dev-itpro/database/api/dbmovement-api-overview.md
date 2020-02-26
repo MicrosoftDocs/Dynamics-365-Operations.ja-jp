@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: a122b98c396d1f25c94944ea0caba80d35ba282b
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: b1f109074eb5ed893ec652157a5af454d1d45b94
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573570"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003616"
 ---
 # <a name="database-movement-api"></a>データベース移動 API
 
@@ -35,7 +35,7 @@ ms.locfileid: "2573570"
 
 * Dynamics 365 Finance
 * Dynamics 365 Supply Chain Management
-* Dynamics 365 Retail
+* Dynamics 365 Commerce
 
 ## <a name="next-steps"></a>次のステップ
 

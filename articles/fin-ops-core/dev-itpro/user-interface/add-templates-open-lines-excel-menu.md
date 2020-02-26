@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e98dfa95d74163339dc114724b8a4f96b53719f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 29fdb629c5c34a533683a280fb011f8fa712dcdf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570485"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025817"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
@@ -40,142 +40,144 @@ ms.locfileid: "2570485"
 
 3.  新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。 実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。 この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。 エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。 **LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。
 
-        using Microsoft.Dynamics.Platform.Integration.Office;  
-        public class TestNewTemplate extends DocuTemplateRegistrationBase implements LedgerIJournalExcelTemplate
+    ```xpp
+    using Microsoft.Dynamics.Platform.Integration.Office;  
+    public class TestNewTemplate extends DocuTemplateRegistrationBase implements LedgerIJournalExcelTemplate
+    {
+        private const DocuTemplateName ExcelTemplateName = resourceStr(TestNewTemplate);
+        private const EntityName LineEntityName = tableStr(LedgerJournalLineEntity);
+        private const FieldName LineEntityJournalNum = fieldStr(LedgerJournalLineEntity, JournalBatchNumber);
+        private const FieldName LineEntityDataAreaId = fieldStr(LedgerJournalLineEntity, dataAreaId);
+        private const FieldName HeaderEntityName = tableStr(LedgerJournalHeaderEntity);
+        private const FieldName HeaderEntityJournalNum = fieldStr(LedgerJournalHeaderEntity, JournalBatchNumber);
+        private const FieldName HeaderEntityDataAreaId = fieldStr(LedgerJournalHeaderEntity, dataAreaId);
+        /// <summary>
+        /// A boolean value which indicates whether the journal type is supported for the Excel template.
+        /// </summary>
+        /// <param name = "_ledgerJournalType">The ledger journal type.</param>
+        /// <returns>True if the journal type is supported; otherwise, false.</returns>
+        public boolean isJournalTypeSupported(LedgerJournalType _ledgerJournalType)
         {
-            private const DocuTemplateName ExcelTemplateName = resourceStr(TestNewTemplate);
-            private const EntityName LineEntityName = tableStr(LedgerJournalLineEntity);
-            private const FieldName LineEntityJournalNum = fieldStr(LedgerJournalLineEntity, JournalBatchNumber);
-            private const FieldName LineEntityDataAreaId = fieldStr(LedgerJournalLineEntity, dataAreaId);
-            private const FieldName HeaderEntityName = tableStr(LedgerJournalHeaderEntity);
-            private const FieldName HeaderEntityJournalNum = fieldStr(LedgerJournalHeaderEntity, JournalBatchNumber);
-            private const FieldName HeaderEntityDataAreaId = fieldStr(LedgerJournalHeaderEntity, dataAreaId);
-            /// <summary>
-            /// A boolean value which indicates whether the journal type is supported for the Excel template.
-            /// </summary>
-            /// <param name = "_ledgerJournalType">The ledger journal type.</param>
-            /// <returns>True if the journal type is supported; otherwise, false.</returns>
-            public boolean isJournalTypeSupported(LedgerJournalType _ledgerJournalType)
-            {
-                return _ledgerJournalType == LedgerJournalType::Daily;
-            }
-            /// <summary>
-            /// Gets the document template name.
-            /// </summary>
-            /// <returns>The document template name</returns>
-            public DocuTemplateName documentTemplateName()
-            {
-                return ExcelTemplateName;
-            }
-            /// <summary>
-            /// Gets a collection of the supported account types for the entity.
-            /// </summary>
-            /// <returns>A collection of <c>LedgerJournalACType</c> values.</returns>
-            public Set supportedAccountTypes()
-            {
-                Set accountTypeSet = new Set(Types::Integer);
-                accountTypeSet.add(LedgerJournalACType::Ledger);
-                return accountTypeSet;
-            }
-            /// <summary>
-            /// Gets a collection of the supported offset account types for the entity.
-            /// </summary>
-            /// <returns>A collection of <c>LedgerJournalACType</c> values.</returns>
-            public Set supportedOffsetAccountTypes()
-            {
-                Set offsetAccountTypeSet = new Set(Types::Integer);
-                offsetAccountTypeSet.add(LedgerJournalACType::Ledger);
-                return offsetAccountTypeSet;
-            }
-            /// <summary>
-            /// Validates the journal is valid for the template.
-            /// </summary>
-            /// <param name = "_ledgerJournalTable">The <c>LedgerJournalTable</c> record.</param>
-            /// <returns>True if the journal is valid for the template; otherwise, false.</returns>
-            public boolean validateJournalForTemplate(LedgerJournalTable _ledgerJournalTable)
-            {
-                return LedgerJournalExcelTemplate::validateJournalForTemplate(_ledgerJournalTable, this);
-            }
-            public void registerTemplates()
-            {
-                this.addTemplate(
-                    OfficeAppApplicationType::Excel,
-                    ExcelTemplateName,
-                    ExcelTemplateName,
-                    'Test new template',
-                    'Test new template',
-                    NoYes::No,
-                    NoYes::No,
-                    NoYes::No);
-            }
-            /// <summary>
-            /// The resource name of the header entity.
-            /// </summary>
-            /// <returns>The resource name of the header entity.</returns>
-            public EntityName headerEntityName()
-            {
-                return HeaderEntityName;
-            }
-            /// <summary>
-            /// The resource name of the line entity.
-            /// </summary>
-            /// <returns>The resource name of the line entity.</returns>
-            public EntityName lineEntityName()
-            {
-                return LineEntityName;
-            }
-            /// <summary>
-            /// The field name for the header journal batch number.
-            /// </summary>
-            /// <returns>The field name for the header journal batch number.</returns>
-            public FieldName headerJournalBatchNumberFieldName()
-            {
-                return HeaderEntityJournalNum;
-            }
-            /// <summary>
-            /// The field name for the header data area.
-            /// </summary>
-            /// <returns>The field name for the header data area.</returns>
-            public FieldName headerDataAreaFieldName()
-            {
-                return HeaderEntityDataAreaId;
-            }
-            /// <summary>
-            /// The field name for the line journal batch number.
-            /// </summary>
-            /// <returns>The field name for the line journal batch number.</returns>
-            public FieldName lineJournalBatchNumberFieldName()
-            {
-                return LineEntityJournalNum;
-            }
-            /// <summary>
-            /// The field name for the line data area.
-            /// </summary>
-            /// <returns>The field name for the line data area.</returns>
-            public FieldName lineDataAreaFieldName()
-            {
-                return LineEntityDataAreaId;
-            }
-            /// <summary>
-            /// Append additional filter to the default filtering behavior.
-            /// </summary>
-            /// <returns>The original filter with new filter(s) appended; Otherwise, the original filter</returns>
-            public FilterCollectionNode appendHeaderEntityFilters(FilterCollectionNode _headerFilter, ExportToExcelFilterTreeBuilder _headerFilterBuilder)
-            {
-                return _headerFilter;
-            }
-            /// <summary>
-            /// Append additional filter to the default filtering behavior.
-            /// </summary>
-            /// <returns>The original filter with new filter(s) appended; Otherwise, the original filter</returns>
-            public FilterCollectionNode appendLineEntityFilters(FilterCollectionNode _lineFilter, ExportToExcelFilterTreeBuilder _lineFilterBuilder)
-            {
-                FilterCollectionNode lineFilter = _lineFilterBuilder.and(
-                    _lineFilterBuilder.areEqual(fieldStr(LedgerJournalLineEntity, AccountType), LedgerJournalACType::Ledger),
-                    _lineFilterBuilder.areEqual(fieldStr(LedgerJournalLineEntity, OffsetAccountType), LedgerJournalACType::Ledger));
-                return _lineFilterBuilder.and(_lineFilter, lineFilter);
-            }
+            return _ledgerJournalType == LedgerJournalType::Daily;
         }
+        /// <summary>
+        /// Gets the document template name.
+        /// </summary>
+        /// <returns>The document template name</returns>
+        public DocuTemplateName documentTemplateName()
+        {
+            return ExcelTemplateName;
+        }
+        /// <summary>
+        /// Gets a collection of the supported account types for the entity.
+        /// </summary>
+        /// <returns>A collection of <c>LedgerJournalACType</c> values.</returns>
+        public Set supportedAccountTypes()
+        {
+            Set accountTypeSet = new Set(Types::Integer);
+            accountTypeSet.add(LedgerJournalACType::Ledger);
+            return accountTypeSet;
+        }
+        /// <summary>
+        /// Gets a collection of the supported offset account types for the entity.
+        /// </summary>
+        /// <returns>A collection of <c>LedgerJournalACType</c> values.</returns>
+        public Set supportedOffsetAccountTypes()
+        {
+            Set offsetAccountTypeSet = new Set(Types::Integer);
+            offsetAccountTypeSet.add(LedgerJournalACType::Ledger);
+            return offsetAccountTypeSet;
+        }
+        /// <summary>
+        /// Validates the journal is valid for the template.
+        /// </summary>
+        /// <param name = "_ledgerJournalTable">The <c>LedgerJournalTable</c> record.</param>
+        /// <returns>True if the journal is valid for the template; otherwise, false.</returns>
+        public boolean validateJournalForTemplate(LedgerJournalTable _ledgerJournalTable)
+        {
+            return LedgerJournalExcelTemplate::validateJournalForTemplate(_ledgerJournalTable, this);
+        }
+        public void registerTemplates()
+        {
+            this.addTemplate(
+                OfficeAppApplicationType::Excel,
+                ExcelTemplateName,
+                ExcelTemplateName,
+                'Test new template',
+                'Test new template',
+                NoYes::No,
+                NoYes::No,
+                NoYes::No);
+        }
+        /// <summary>
+        /// The resource name of the header entity.
+        /// </summary>
+        /// <returns>The resource name of the header entity.</returns>
+        public EntityName headerEntityName()
+        {
+            return HeaderEntityName;
+        }
+        /// <summary>
+        /// The resource name of the line entity.
+        /// </summary>
+        /// <returns>The resource name of the line entity.</returns>
+        public EntityName lineEntityName()
+        {
+            return LineEntityName;
+        }
+        /// <summary>
+        /// The field name for the header journal batch number.
+        /// </summary>
+        /// <returns>The field name for the header journal batch number.</returns>
+        public FieldName headerJournalBatchNumberFieldName()
+        {
+            return HeaderEntityJournalNum;
+        }
+        /// <summary>
+        /// The field name for the header data area.
+        /// </summary>
+        /// <returns>The field name for the header data area.</returns>
+        public FieldName headerDataAreaFieldName()
+        {
+            return HeaderEntityDataAreaId;
+        }
+        /// <summary>
+        /// The field name for the line journal batch number.
+        /// </summary>
+        /// <returns>The field name for the line journal batch number.</returns>
+        public FieldName lineJournalBatchNumberFieldName()
+        {
+            return LineEntityJournalNum;
+        }
+        /// <summary>
+        /// The field name for the line data area.
+        /// </summary>
+        /// <returns>The field name for the line data area.</returns>
+        public FieldName lineDataAreaFieldName()
+        {
+            return LineEntityDataAreaId;
+        }
+        /// <summary>
+        /// Append additional filter to the default filtering behavior.
+        /// </summary>
+        /// <returns>The original filter with new filter(s) appended; Otherwise, the original filter</returns>
+        public FilterCollectionNode appendHeaderEntityFilters(FilterCollectionNode _headerFilter, ExportToExcelFilterTreeBuilder _headerFilterBuilder)
+        {
+            return _headerFilter;
+        }
+        /// <summary>
+        /// Append additional filter to the default filtering behavior.
+        /// </summary>
+        /// <returns>The original filter with new filter(s) appended; Otherwise, the original filter</returns>
+        public FilterCollectionNode appendLineEntityFilters(FilterCollectionNode _lineFilter, ExportToExcelFilterTreeBuilder _lineFilterBuilder)
+        {
+            FilterCollectionNode lineFilter = _lineFilterBuilder.and(
+                _lineFilterBuilder.areEqual(fieldStr(LedgerJournalLineEntity, AccountType), LedgerJournalACType::Ledger),
+                _lineFilterBuilder.areEqual(fieldStr(LedgerJournalLineEntity, OffsetAccountType), LedgerJournalACType::Ledger));
+            return _lineFilterBuilder.and(_lineFilter, lineFilter);
+        }
+    }
+    ```
 
 4.  新しいリソースを含むプロジェクト/モデルを構築します。 新しいリソース 1 つと、新しいクラス 1 つが必要です。 
 

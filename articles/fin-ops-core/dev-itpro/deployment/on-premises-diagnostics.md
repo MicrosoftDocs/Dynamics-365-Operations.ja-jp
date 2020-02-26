@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 4cf14e714ee60384f4873532b660a545fda42711
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34f527c8724363a9a02780b7063ba573e4b95c23
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183388"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033007"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -125,7 +125,7 @@ Logstash が起動時に実行されることを確認するために、Non-Suck
 1. Nssm.exe を Logstash の bin フォルダーにコピーする (たとえば、C:\\ELK\\Logstash\\6.2.4\\bin\\) 。
 2. bin フォルダーから Windows PowerShell を開き、次のコマンドを実行します。
 
-    ```
+    ```Console
     .\nssm.exe install Logstash
     ```
 
@@ -139,7 +139,7 @@ Logstash が起動時に実行されることを確認するために、Non-Suck
 
 4. 次のコマンドを実行します。
 
-    ```
+    ```Console
     .\nssm.exe start Logstash
     ```
 
@@ -162,7 +162,7 @@ Winlogbeat が Orchestrator ノード上で実行されている場合、**Tags*
 
 Winlogbeat には、サービス インストーラーが含まれています。 Microsoft は、このインストーラーを使用して、各ノード上のサービスとして Winlogbeat を設定しました。 Windows ロゴキーと R キーを同時に押して、ツールの実行を開始し、次のコマンドを実行します。
 
-```
+```powershell
 powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-winlogbeat.ps1
 ```
 
@@ -171,7 +171,7 @@ Kibana は、Elasticsearch の診断データをクエリするインターフ�
 
 Microsoft は Kibana を C:\\ELK\\Kibana にダウンロードし、次の方法で kibana.yml ファイルを構成しました。
 
-```
+```Console
 server.host: "10.0.0.14"
 server.name: "Dyn365FinOps On-Premises Diagnostics"
 elasticsearch.url: "http://ORCH1:9200"
@@ -196,7 +196,7 @@ Microsoft は Kibana を Logstash と同じ方法でサービスとして実行�
     [![検索の時間枠](./media/time-visualize.png)](./media/time-visualize.png) 
 
 - **AOS ノードからイベントを検索:** ノードからすべてのイベントを検索するために、検索フィールドに **host:AOS1** と入力します。
-- **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある**関連するドキュメントを表示します**をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Microsoft Dynamics AX Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
+- **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある**関連するドキュメントを表示します**をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
 
     [![関連するドキュメントを表示します](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
 
@@ -225,7 +225,7 @@ Microsoft では、Kibana からコンマ区切り値 (CSV) 形式でエクス�
 
 無料の機能だけを有効にし、他の X-Pack の試用版の機能を使用しないように、Microsoft は、elasticsearch.yml および kibana.yml のコンフィギュレーション ファイルに次の設定を追加しました。
 
-```
+```Console
 xpack.graph.enabled: false
 xpack.ml.enabled: false
 xpack.security.enabled: false
@@ -236,7 +236,7 @@ xpack.watcher.enabled: false
 
 X-Pack を動作させるには、logstash.yml 構成ファイルも次のように構成する必要があります。
 
-```
+```Console
 xpack.monitoring.elasticsearch.url: "http://orch1:9200"
 ```
 

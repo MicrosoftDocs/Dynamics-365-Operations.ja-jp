@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2af454f1efc2b4f13e62ca872ec0eec0e521efe1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 36f885a00b1e91c5156fd416f5f728dacc4359e6
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811700"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029797"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
@@ -92,19 +92,19 @@ Azure のサポートを得るには、次の表に示すリソースを使用�
 </tr>
 <tr class="even">
 <td>請求書に関連する質問について援助を受けます</td>
-<td>サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要を確認するには、<a href="http://azure.microsoft.com/support/understand-your-bill/">請求書を理解する</a>ページに移動してください。</td>
+<td>サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要を確認するには、<a href="https://azure.microsoft.com/support/understand-your-bill/">請求書を理解する</a>ページに移動してください。</td>
 </tr>
 <tr class="odd">
 <td>コミュニティに質問する</td>
-<td><a href="http://www.windowsazure.com/support/forums/">Azure フォーラム</a>ページに移動し、Azure コミュニティからの質問のヘルプを入手します。</td>
+<td><a href="https://www.windowsazure.com/support/forums/">Azure フォーラム</a>ページに移動し、Azure コミュニティからの質問のヘルプを入手します。</td>
 </tr>
 <tr class="even">
 <td>Azure サービス ダッシュ ボードの使用</td>
-<td><a href="http://www.windowsazure.com/support/service-dashboard/">Azure サービス ダッシュ ボード</a>ページに移動して、Azure プラットフォームおよびサービスの現在のステータスを取得します。</td>
+<td><a href="https://www.windowsazure.com/support/service-dashboard/">Azure サービス ダッシュ ボード</a>ページに移動して、Azure プラットフォームおよびサービスの現在のステータスを取得します。</td>
 </tr>
 <tr class="odd">
 <td>Azure サポート チームとのサポート チケットを入力します。</td>
-<td><a href="http://www.windowsazure.com/support/options/">Azure サポート オプション</a>ページに移動し、サポートを受けるをクリックしてサポート チケットを開きます。 Azure サポート チームは、以下に関連する問題の解決をサポートします。
+<td><a href="https://www.windowsazure.com/support/options/">Azure サポート オプション</a>ページに移動し、サポートを受けるをクリックしてサポート チケットを開きます。 Azure サポート チームは、以下に関連する問題の解決をサポートします。
 <ul>
 <li>Azure サブスクリプションのサイズを大きくする要求</li>
 <li>Azure 管理ポータルの使用時のエラー</li>
@@ -141,7 +141,7 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 </tr>
 <tr class="odd">
 <td>コミュニティに質問する</td>
-<td><a href="http://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX フォーラム</a>ページに移動し、Microsoft Dynamics AX コミュニティからの質問のヘルプを入手します。</td>
+<td><a href="https://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX フォーラム</a>ページに移動し、Microsoft Dynamics AX コミュニティからの質問のヘルプを入手します。</td>
 </tr>
 <tr class="even">
 <td>クラウドを利用したサポート ツールの使用</td>

@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations アプリに関するプラットフォーム更新プログラム 32 のプレビュー機能 (2020 年 2月)
-description: このトピックでは、Finance and Operations アプリに関するプラットフォーム更新プログラム 32 のプレビュー機能について記載しています。
+title: Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
+description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 32 でプレビューされている機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
-ms.openlocfilehash: 2a3738d8d3466602e2fb8e78bb627a5bcd25da6f
-ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
+ms.openlocfilehash: fb9f4127bcaa79e2f8ff30c2b02f2ef8be04b172
+ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "2902714"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2982291"
 ---
-# <a name="preview-features-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>Finance and Operations アプリに関するプラットフォーム更新プログラム 32 のプレビュー機能 (2020 年 2月)
+# <a name="whats-new-or-changed-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Finance and Operations アプリに関するプラットフォーム更新プログラム 32 のプレビュー機能について記載しています。 このバージョンのビルド番号は 7.0.5493 で、次のスケジュールで使用できます。
+このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 32 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5493 で、次のスケジュールで使用できます。
 
 - **プレビュー リリース** 2019 年 12 月
 - **一般提供 (自己更新):** 2020 年 1 月

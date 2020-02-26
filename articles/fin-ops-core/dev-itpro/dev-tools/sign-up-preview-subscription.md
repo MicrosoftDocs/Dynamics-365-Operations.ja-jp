@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3b4719b619c2336209599b3535a70da82332f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 589cb15a51215f383a87dea4b31ab05ffa1f303b
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191659"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003600"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -47,7 +47,7 @@ ms.locfileid: "2191659"
     > [!IMPORTANT]
     > 今回のリリースでは、Office 365 または Microsoft Dynamics CRM Online などの他のオンライン サービスに関連付けられている、既存の資格情報を使用しないようお勧めします。
 
-- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Retail、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、CustomerSource、PartnerSource、ソース情報、および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
+- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、CustomerSource、PartnerSource、ソース情報、および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
 - **Microsoft Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 Office 365 管理者センターは、ユーザーおよびサブスクリプションの管理機能を提供するために使用されます。
 - **環境** - 必要に応じて、仮想マシン (VM) の単一インスタンスをいくつでも配置できます。 これらのインスタンスを *環境* と呼び出ます。
 
@@ -79,7 +79,7 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 5. プロジェクト タイプを選択します。
 6. プロジェクト情報を入力し、**作成**を選択します。
 
-    Retail を評価する予定がある場合は、**製品名**フィールドで **Microsoft Dynamics 365 Retail** を必ず選択します。
+    コマースを評価する予定がある場合は、**製品名**フィールドで **Microsoft Dynamics 365 Commerce** を必ず選択します。
 
     インスタンスを管理するための新しいプロジェクトが作成されます。
 

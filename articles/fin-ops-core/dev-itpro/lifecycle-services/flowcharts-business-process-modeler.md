@@ -1,7 +1,7 @@
 ---
 title: ビジネス プロセス モデラー (BPM) のフローチャート
 description: この記事では、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 2cb2692b0da4b93ced8186f520221e6932d77fff
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a45eacef6941c68a45090727ea360e3002ade697
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812148"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983714"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -45,9 +45,9 @@ Dynamics 365 Finance and Operations アプリからの既定の接続フロー�
 | スクリプト                    | スクリプトによって実行されるアクション。                                                                                                                                    |
 | ループ                      | 反復的に実行されるアクション。                                                                                                                                   |
 | サービス                   | サービスによって実行されるアクション。                                                                                                                                   |
-| マニュアル                    | Finance and Operations アプリの外部で実行されるステップ。                                                                                                                               |
-| 入庫                   | サービスやスクリプトを使用せずに Finance and Operations アプリ外から受信した情報。                                                                                  |
-| 送信                      | サービスやスクリプトを使用せずに Finance and Operations アプリ外に送信した情報。                                                                                           |
+| マニュアル                    | Finance and Operations アプリの外部で実行される手順。                                                                                                                               |
+| 入庫                   | サービスまたはスクリプトを使用せずに Finance and Operations アプリの外部から受信した情報。                                                                                  |
+| 送信                      | サービスまたはスクリプトを使用せずに Finance and Operations アプリの外部に送信された情報。                                                                                           |
 | ユーザー                      | ユーザーによって実行されるアクション。                                                                                                                                      |
 | 折りたたみ済                 | ダイアグラムに表示されていないサブプロセス。 折りたたまれたプロセスは展開できません。                                                                          |
 | 方向キー                     | プロセス ステップ間のフローの方向を示します。                                                                                                               |
@@ -130,7 +130,7 @@ LCS でギャップ機能が廃止されていることに注意してくださ�
 5.  オプション: ギャップ分析をコンマ区切りファイルにエクスポートするには、右クリックしてアプリケーション バーを表示し、**エクスポート** をクリックします。 .csv ファイルが作成されます。 ファイルを Visual Studio Team Foundation Server にインポートして、ギャップを埋めるために必要な作業を表す作業項目を作成することができます。
 
 ## <a name="unconnected-flowcharts"></a>未接続のフローチャート
-未接続のフローチャートは、Finance and Operations アプリ以外で実行される高度な業務プロセスを記述するのに非常に役立ちます。
+未接続のフローチャートは、Finance and Operations アプリの外部で実行される高度な業務プロセスを記述するのに非常に役立ちます。
 ### <a name="upload-an-unconnected-flowchart"></a>未接続のフローチャートをアップロード
 
 1.  **自分のライブラリ** セクションで、ライブラリを開きます。

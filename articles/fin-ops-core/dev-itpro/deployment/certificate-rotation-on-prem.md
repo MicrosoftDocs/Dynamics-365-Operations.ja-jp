@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 67625a33e620c8806fbaf651fdc82689ac3d50a2
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4c943d976d4e1e1533f540092df463f864cc6e5b
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769599"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033002"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -81,7 +81,7 @@ ms.locfileid: "2769599"
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    `````
+    ```
 
 
 ## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric Cluster 内での新しい証明書のアクティブ化
@@ -89,72 +89,73 @@ ms.locfileid: "2769599"
 ### <a name="service-fabric-with-certificates-that-are-not-expired"></a>期限切れになっていない証明書を含む Service Fabric
 
 1. Clusterconfig.json ファイルを編集します。 ファイル内の次のセクションを検索します。  
-    ```
-                       "security":  {
-                                        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-                                        "ClusterCredentialType":  "X509",
-                                        "ServerCredentialType":  "X509",
-                                        "CertificateInformation":  {
-                                                                       "ClusterCertificate":  {
-                                                                                                  "X509StoreName":  "My",
-                                                                                                  "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                                                                              },
-                                                                       "ServerCertificate":  {
-                                                                                                 "X509StoreName":  "My",
-                                                 "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                                                                             },
-                                                                       "ClientCertificateThumbprints":  [
-                                                                                                            {
-                                                                                                                "CertificateThumbprint": "*Old client thumbprint*",
-                                                                                                                "IsAdmin":  true
-                                                                                                            }
-                                                                                                        ]
-                                                                   }
-                                    },
+    ```json
+    "security": {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*Old client thumbprint*",
+                                            "IsAdmin":  true
+                                       }
+                                             ]
+                                   }
+                },
     ```
 
 2. ファイルのそのセクションを、次のセクションと置換します。
 
-    ```
-                       "security":  {
-                                        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-                                        "ClusterCredentialType":  "X509",
-                                        "ServerCredentialType":  "X509",
-                                        "CertificateInformation":  {
-                                                                       "ClusterCertificate":  {
-                                                                                                  "X509StoreName":  "My",
-                                                                                                  "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                 ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
-                                                                                              },
-                                                                       "ServerCertificate":  {
-                                                                                                 "X509StoreName":  "My",
-                                                                                                 "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                 ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
-                                                                                             },
-                                                                       "ClientCertificateThumbprints":  [
-                                                                                                            {
-                                                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
-                                                                                                                "IsAdmin":  false
-                                                                                                            },
-                                                                                                            {
-                                                                                                                "CertificateThumbprint":  "New Client Thumbprint",
-                                                                                                                "IsAdmin":  true
-                                                                                                            }
-                                                                                                        ]
-                                                                   }
-                                    },
+    ```json
+    "security":  {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+                                        "ClusterCertificate":  {
+                                                                    "X509StoreName":  "My",
+                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
+                                                               },
+                                        "ServerCertificate":   {
+                                                                    "X509StoreName":  "My",
+                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
+                                                               },
+                                        "ClientCertificateThumbprints":  [
+                                                                                                                                                                                           {
+                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
+                                                                                "IsAdmin":  false
+                                                                            },
+                                                                            {
+                                                                                "CertificateThumbprint":  "New Client Thumbprint",
+                                                                                "IsAdmin":  true
+                                                                            }
+                                                                          ]
+                                       }
+                    },
     ```
 
 3. 新しいサムプリントと古いサムプリント値を編集します。 
 
 4. 2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。
 
-    ```
+    ```json
     {
     "name": "Dynamics365Operations",
     "clusterConfigurationVersion": "2.0.0",
     "apiVersion": "10-2017",
     ```
+    
 5. Clusterconfig.json ファイルを保存します。
 
 6. 次の PowerShell コマンドを実行します。
@@ -212,14 +213,14 @@ ms.locfileid: "2769599"
 
 > [!NOTE]
 >  ただし、クライアント、データ署名、および暗号化証明書は置換のみ行われます。 また、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」で説明されているように、資格情報の Credentials.json ファイルを再作成する必要があります。
-
+>
 > 続行する前に、ロケール Dynamics データベースのバックアップを作成する必要があります。
 
 1. LCS で、証明書の変更を希望する環境についての「完全な詳細情報」リンクを選択します。
 
 2. **管理** を選択し、**更新の設定** を選択します。
 
-    !更新設定の適用[](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. 拇印を、以前にコンフィギュレーションした新しい拇印に変更します (これらの属性は、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルを確認してください)。
 

@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 368fefc37c17cbad663aada32fc34ebc0533fb69
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 15cdd5226560c53fc07e7a840b9acb286f26d7df
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183270"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003595"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
@@ -61,132 +61,132 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
 
 ### <a name="describe-the-alert"></a>警告の説明
 
-1. 適切なフィールドに警告に関する情報を入力します。 必須フィールドは赤いアスタリスクで示されます (<strong>\</strong><em>)。次の表に、**Describe the alert</em>* ページのフィールドの詳細を示します。
+1. 適切なフィールドに警告に関する情報を入力します。 必須フィールドは赤いアスタリスクで示されます。 次のテーブルでは、**警告の説明**ページのフィールドの詳細について説明します。
 
-<table >
-        <tr>
-            <td >
-            <p><strong>フィールド</strong></p>
-            </td>
-            <td >
-            <p><strong>説明</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>肩書き</p>
-            </td>
-            <td>
-            <p>影響の区分を識別するために、内容を示すタイトルを入力します。 たとえば、<strong>、2018 年 1 月1 日時点での請求書ドキュメントの変更</strong>を入力します。</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>説明</p>
-            </td>
-            <td>
-            <p>法律の簡単な概要を入力します。 説明は、エンタープライズ リソース プランニング (ERP) に関連する問題に重点を置く必要があります。これにより、ユーザーは、最初に法律を読むことなく、要件を高いレベルで理解することができます。 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>国</p>
-            </td>
-            <td>
-            <p>法律が適用される国または地域を選択します。 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>業</p>
-            </td>
-            <td>
-            <p>要件が特定の業界にのみ適用される場合は、業界を選択します。 たとえば、<strong>公的機関</strong>、<strong>小売</strong>、または<strong>製造</strong>を選択します。 </p><br/>            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>機能リファレンス</p>
-            </td>
-            <td>
-            <p>分かっている場合は、機能リファレンスを入力します。 特定の国の機能一覧は、ローカライズ ポータルで確認できます: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>。 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>法執行日</p>
-            </td>
-            <td>
-            <p>影響を受ける顧客が法律に準拠し始める必要がある日付を選択します。  </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>政府発表日</p>
-            </td>
-            <td>
-            <p>所轄官庁が変更を発表した日付を選択します。 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>最新の提出日</p>
-            </td>
-            <td>
-            <p>新しいまたは変更されたレポートの最初の提出期限を選択します。     </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>法律へのリンク </p>
-            </td>
-            <td>
-            <p>発行済みの法律、解釈規定、実装ガイダンスまたはユーザーが要件を理解または実装するのに役立つその他の有用な文書へのリンクを 1 つ以上入力します。</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>屋号</p>
-            </td>
-            <td>
-            <p>警告を送信しているユーザーの会社名を入力します。         </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>連絡先名</p>
-            </td>
-            <td>
-            <p>警告を送信している担当者の名前を入力します。     </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>連絡先の電子メール</p>
-            </td>
-            <td>
-            <p>警告の送信者の電子メール アドレス。   </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p>業務プロセス</p>
-            </td>
-            <td>
-            <p><strong>警告の送信</strong> ウィザードで選択したビジネスプロセス。</p>
-            </td>
-        </tr>
-        <tr>
-            <td>コメント</td>
-            <td>
-            <p>ユーザーが要件を理解または実装するのに役立つ追加情報を入力します。 <strong>送信</strong>をクリックしてコメントを保存します。 複数のコメントを追加でき、個別に提出する必要があります。 コメントは追加された順に保存されます。 </p>
-            </td>
-        </tr>
-        <tr>
-            <td> アタッチメント </td>
-            <td> <p><strong>アップロード</strong> ボタンをクリックし、添付ファイルとして追加するファイルを選択して参照します。 ファイルを選択した後、アップロードされリンクされたファイルとして表示されます。 各サイズが 5 MB のファイルを、最大 3 つ追加することができます。 添付されたファイルを削除するには、ファイルのタイトルの下にある <strong>削除</strong> をクリックします。 <strong>注記:</strong> 添付ファイルは公開されているものでなければなりません。 これらは妥当性や顧客固有/パートナー固有のものではありません。</p>
-            </td>
-        </tr>
-</table>
+    <table >
+            <tr>
+                <td >
+                <p><strong>フィールド</strong></p>
+                </td>
+                <td >
+                <p><strong>説明</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>肩書き</p>
+                </td>
+                <td>
+                <p>影響の区分を識別するために、内容を示すタイトルを入力します。 たとえば、<strong>、2018 年 1 月1 日時点での請求書ドキュメントの変更</strong>を入力します。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>説明</p>
+                </td>
+                <td>
+                <p>法律の簡単な概要を入力します。 説明は、エンタープライズ リソース プランニング (ERP) に関連する問題に重点を置く必要があります。これにより、ユーザーは、最初に法律を読むことなく、要件を高いレベルで理解することができます。 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>国</p>
+                </td>
+                <td>
+                <p>法律が適用される国または地域を選択します。 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>業</p>
+                </td>
+                <td>
+                <p>要件が特定の業界にのみ適用される場合は、業界を選択します。 たとえば、<strong>公的機関</strong>、<strong>コマース</strong>、または<strong>製造</strong>を選択します。 </p><br/>            </td>
+            </tr>
+            <tr>
+                <td>
+                <p>機能リファレンス</p>
+                </td>
+                <td>
+                <p>分かっている場合は、機能リファレンスを入力します。 特定の国の機能一覧は、ローカライズ ポータルで確認できます: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>。 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>法執行日</p>
+                </td>
+                <td>
+                <p>影響を受ける顧客が法律に準拠し始める必要がある日付を選択します。  </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>政府発表日</p>
+                </td>
+                <td>
+                <p>所轄官庁が変更を発表した日付を選択します。 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>最新の提出日</p>
+                </td>
+                <td>
+                <p>新しいまたは変更されたレポートの最初の提出期限を選択します。     </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>法律へのリンク </p>
+                </td>
+                <td>
+                <p>発行済みの法律、解釈規定、実装ガイダンスまたはユーザーが要件を理解または実装するのに役立つその他の有用な文書へのリンクを 1 つ以上入力します。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>屋号</p>
+                </td>
+                <td>
+                <p>警告を送信しているユーザーの会社名を入力します。         </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>連絡先名</p>
+                </td>
+                <td>
+                <p>警告を送信している担当者の名前を入力します。     </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>連絡先の電子メール</p>
+                </td>
+                <td>
+                <p>警告の送信者の電子メール アドレス。   </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>業務プロセス</p>
+                </td>
+                <td>
+                <p><strong>警告の送信</strong> ウィザードで選択したビジネスプロセス。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>コメント</td>
+                <td>
+                <p>ユーザーが要件を理解または実装するのに役立つ追加情報を入力します。 <strong>送信</strong>をクリックしてコメントを保存します。 複数のコメントを追加でき、個別に提出する必要があります。 コメントは追加された順に保存されます。 </p>
+                </td>
+            </tr>
+            <tr>
+                <td> アタッチメント </td>
+                <td> <p><strong>アップロード</strong> ボタンをクリックし、添付ファイルとして追加するファイルを選択して参照します。 ファイルを選択した後、アップロードされリンクされたファイルとして表示されます。 各サイズが 5 MB のファイルを、最大 3 つ追加することができます。 添付されたファイルを削除するには、ファイルのタイトルの下にある <strong>削除</strong> をクリックします。 <strong>注記:</strong> 添付ファイルは公開されているものでなければなりません。 これらは妥当性や顧客固有/パートナー固有のものではありません。</p>
+                </td>
+            </tr>
+    </table>
 
 2.  すべての情報入力が完了したら、同意チェック ボックスを選択します (**この規制の警告を送信することで、Microsoft がこの警告に関する追加の情報を入手する目的で私に連絡することに同意します。Microsoft のプライバシーに関する声明**) 。 チェック ボックスを選択すると、**送信** ボタンが使用できるようになります。
 3.  警告を保存して送信するには、**送信**をクリックします。

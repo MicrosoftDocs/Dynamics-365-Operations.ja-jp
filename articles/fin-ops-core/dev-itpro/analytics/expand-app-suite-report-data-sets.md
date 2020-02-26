@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 63ffd716d5d15c352d0056e29746e3e9718661a7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 94b4646344d519742de33e2e9aaf0704fc6c10fb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771179"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026148"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 
@@ -75,7 +75,7 @@ ms.locfileid: "2771179"
 8. **新しいレポート ハンドラー (X++) クラスをプロジェクトに追加します。** クラスに、それが既存のアプリケーション レポートのハンドラーであることを適切に表す名前を付けます。 この例では、クラスの **FERentalsByCustomerHandler** の名前を変更し、他のレポート ハンドラーと区別します。
 9. **PostHandler メソッドを追加して、カスタム レポートの使用を開始します。** この例では、次のコードを使用して標準ソリューション **FMRentalsByCustController** のコントローラー クラスを展開します。
 
-    ```
+    ```xpp
     class FERentalsByCustomerHandler
     {
         [PostHandlerFor(classStr(FMRentalsByCustController), staticMethodStr(FMRentalsByCustController, construct))]
@@ -93,7 +93,7 @@ ms.locfileid: "2771179"
 
     - **オプション 1: データ処理ポストハンドラーを追加します。** 標準ソリューションの結果セットに対して 1 つのパスを使用する一括挿入操作にはこの手法を適用します。 テーブル ルックアップを使用してデータ セットを展開するコードを次に示します。
 
-        ```
+        ```xpp
         class FERentalsByCustomerHandler
         {
             [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, processReport))]
@@ -116,7 +116,7 @@ ms.locfileid: "2771179"
 
     - **オプション 2: イベントを挿入する一時テーブルを追加します。** この手法を行ごとの計算に適用します。 テーブル ルックアップを使用してデータ セットを展開するコードを次に示します。
 
-        ```
+        ```xpp
         class FERentalsByCustomerHandler
         {
             [DataEventHandlerAttribute(tableStr(TmpFMRentalsByCust), DataEventType::Inserting)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b976dbba2c648aac87173828c52f19337daac236
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 8a4bc5c202cbf7588d6433bc3c78c9dd37642f4d
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572680"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003613"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -82,7 +82,7 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは完全に処理され復元が開始される前にターゲット システムで停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 これにより、いずれかのシステムから Azure ストレージにオーファン ファイルが存在しないことが保証されます。 これは、データベースがターゲット環境にリストアされた後にオーファン ファイルを処理できないため重要です。 復元後、統合ジョブを再開することができます。
 - LCS でプロジェクト所有者または環境マネージャーのロールを持つユーザーは、すべての非実稼働環境の SQL とマシンの資格情報にアクセスできます。
 
-## <a name="steps-to-complete-after-a-database-refresh-for-environments-that-use-retail-functionality"></a>Retail 機能を使用する環境のデータベース更新後に実行する手順
+## <a name="steps-to-complete-after-a-database-refresh-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース更新後に実行する手順
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## <a name="known-issues"></a>既知の問題

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: d06047b7262d70d14a0b834f5f3902cd809f083d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5002e232ea6ecf797f4fbd5ef20224b810071e16
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183097"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033038"
 ---
 # <a name="acceptance-test-library-code-generation-wizard"></a>受け入れテスト ライブラリ コード生成ウィザード
 
@@ -50,7 +50,7 @@ ms.locfileid: "2183097"
 - `default` メソッドを `AtlData` クラスに追加する。
 - `setMainRecordField` メソッドを上書きし、テーブル上の `modifiedField(_fieldId)` メソッドを呼び出す。
 
-    ```
+    ```xpp
     protected void setMainRecordField(FieldId _fieldId, anytype _value)
     {
         super(_fieldId, _value);

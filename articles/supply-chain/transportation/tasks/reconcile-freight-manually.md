@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843244"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026317"
 ---
 # <a name="reconcile-freight-manually"></a>運賃の手動調整
 
@@ -37,7 +37,7 @@ ms.locfileid: "1843244"
 3. リストで、積荷 ID 00006 を持つ積荷を選択します。
 
 ## <a name="create-a-carrier-invoice"></a>運送業者の請求書を作成する
-    * 運賃を手動で調整して、配送業者の請求書を自動的に受け取らない場合、運賃請求書に基づいて請求書を作成できます。  
+運賃を手動で調整して、配送業者の請求書を自動的に受け取らない場合、運賃請求書に基づいて請求書を作成できます。  
 1. [関連情報] をクリックします。
 2. [運賃請求書の詳細] をクリックします。
 3. [運賃請求書の請求書の生成] をクリックします。
@@ -45,7 +45,7 @@ ms.locfileid: "1843244"
 5. [OK] をクリックします。
 
 ## <a name="reconcile-the-invoice"></a>請求書を調整する
-    * 配送業者の請求書と運賃請求書を調整する場合、1 行ずつ処理します。  
+配送業者の請求書と運賃請求書を調整する場合、1 行ずつ処理します。  
 1. [運賃請求書と請求書の照合] をクリックします。
 2. [請求書の詳細] セクションを展開します。
 3. [一致しない運賃請求書の詳細] セクションを展開します。

@@ -14,15 +14,15 @@ ms.search.scope: AX 2012
 ms.custom: 15031
 ms.assetid: 01c38560-f588-4558-a7ec-3af1bb518069
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b47d493d01ac5d54f125a4fdaa99d57733b7cba5
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 86042088e89e5a8dc1e50c577b01071682389e8f
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812072"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983753"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -40,8 +40,8 @@ Microsoft Dynamics Lifecycle Services では、ビジネス プロセス モデ�
 ビジネス プロセス モデラーを使用するには、次の製品が必要です。
 
 -   AX 2012 R3 および Microsoft Dynamics AX 2012 R2 の累積的な更新プログラム 7 に含まれるタスク レコーダーは、ビジネス プロセス モデラーにおけるカスタム プロセスの生成をサポートしています。 前のリリースでは、更新されたタスク レコーダーは修正プログラムとして使用できます。 この修正プログラムには、クライアントの更新プログラムとモデル ファイルが含まれています。 Microsoft Dynamics AX 2012 のすべてのクライアントに、クライアント用更新プログラムをインストールする必要があります。 2 つの修正プログラムを使用できます。
-    -   Microsoft Dynamics AX 2012 R2 – サポート技術情報の記事 [2863182](http://go.microsoft.com/fwlink/?LinkId=309911)
-    -   Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 Feature Pack – サポート技術情報の記事 [2863182](http://go.microsoft.com/fwlink/?LinkId=309910)
+    -   Microsoft Dynamics AX 2012 R2 – サポート技術情報の記事 [2863182](https://go.microsoft.com/fwlink/?LinkId=309911)
+    -   Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 Feature Pack – サポート技術情報の記事 [2863182](https://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Office 2010 またはそれ以降のバージョンではドキュメントの生成をサポートします。
 -   Windows Media Player は業務プロセス ビデオの再生をサポートします。
 

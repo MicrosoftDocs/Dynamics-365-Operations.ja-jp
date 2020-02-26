@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 6c51b15d6c4d173ad621428c555d102e3faac747
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: da7367f69ec58d4e51d715b37c8d02ec63ecaa5e
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812022"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029418"
 ---
 # <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "2812022"
 
 最初に、拡張モデルに新しいクラスを作成します。 このクラスは InventTable テーブルを拡張し、読みやすく理解しやすい方法でテーブルのフィールドとメソッドにアクセスできるようにします 強化クラスに正しい名前を選択することが重要です。 この名前は、展開されるすべてのモデルのすべてのタイプにわたって一意でなければなりません。 詳細については、[拡張機能の名前付けのガイドライン](naming-guidelines-extensions.md) を参照してください。
 
-```
+```xpp
 [ExtensionOf(tableStr(InventTable))]
 final class InventTableMy_Extension
 {
@@ -56,7 +56,7 @@ final class InventTableMy_Extension
 
 たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。
 
-```
+```xpp
 class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68e96816f822627f3b73f76fc5dc1e4fcd62dda8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7fdd434feff4288a57f34e3f11c0b106c6d4067
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183436"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029441"
 ---
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 
@@ -80,28 +80,32 @@ ms.locfileid: "2183436"
 
 データ ソースで適用されるコンフィギュレーション キーと国/地域の動作は、フィールドの動作に似ています。 これらの値は、フィールド レベルに適用された場合と同様に、データ ソースから推測されます。 次に例を示します。
 
-    Entity E1
+```Text
+Entity E1
 
-        |_ Data Source 1 (DS1)
+    |_ Data Source 1 (DS1)
 
-              Field1
+        Field1
 
-              Field2
+        Field2
 
-        |_Data Source 2 (DS2) UK
+    |_Data Source 2 (DS2) UK
 
-              Field3
+        Field3
 
-              Field4
+            Field4
+```
 
 #### <a name="evaluation-at-the-entity-e1-level"></a>エンティティ E1 レベルで評価
 
-    Entity E1
+```Text
+Entity E1
 
-    |_F1
+|_F1
 
-    |_F2
+|_F2
 
-    |_F3 (UK inferred)
+|_F3 (UK inferred)
 
-    |_F4 (UK inferred)
+|_F4 (UK inferred)
+```

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 74934
 ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22f325961c460ca03525b7a0bb9cea4e34e7a5be
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e1409013891f5ef165847373475abe2bc4676598
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772344"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983667"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 
@@ -33,7 +33,7 @@ ms.locfileid: "2772344"
 <a name="application-explorer"></a>アプリケーション エクスプローラー
 --------------------
 
-アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素の作成、デザイン、編集、およびビルドを行うには、Finance and Operations プロジェクトを使用する必要があります。
+アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素を作成、デザイン、編集、および構築するには、Finance and Operations プロジェクトを使用する必要があります。
 
 ### <a name="application-explorer-views"></a>アプリケーション エクスプローラー ビュー
 

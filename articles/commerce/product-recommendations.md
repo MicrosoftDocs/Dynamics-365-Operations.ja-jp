@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770050"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024982"
 ---
 # <a name="product-recommendations-overview"></a>製品推奨事項の概要
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce を使用して、E コマース Web サイトおよび販売時点管理 (POS) デバイスで製品推奨事項を表示できます。 製品推奨事項とは、顧客が興味を持っている可能性がある品目です。 推奨事項は、オンライン ストアおよび従来型店舗における他の顧客の購入傾向に基づいています。
@@ -45,6 +44,7 @@ Microsoft Dynamics 365 Commerce を使用して、E コマース Web サイト�
 - **E コマースの参照またはランディング ページの店舗ページにおいて:** 顧客または店舗スタッフが店舗ページにアクセスする場合、推奨エンジンは、**新規**、**ベストセラー**、および**トレンド** リストの製品を提案することができます。
 - **製品の詳細ページにおいて:** 顧客または店舗スタッフが**製品の詳細**ページにアクセスした場合、推奨エンジンは購入される可能性がある追加の品目を提案します。 これらの品目は、**人気製品**リストに表示されます。
 - **トランザクション ページまたはチェックアウト ページにおいて:** 推奨エンジンは、買い物カゴ内の品目のリスト全体に基づいて提案します。 これらの項目は、**よく一緒に購入される製品**リストに表示されます。
+- **パーソナライズされた推奨事項:** マーチャンダイザーは、既存のリストシナリオをその顧客に基づいてパーソナライズできる新しい機能に加えて、サインインしたユーザーにパーソナライズされた**おすすめ**リストを提供できます。 詳細については、機能ドキュメント参照してください: [パーソナライズされた推奨事項を有効にします。](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>推奨サービス
 
@@ -56,6 +56,10 @@ Microsoft Dynamics 365 Commerce を使用して、E コマース Web サイト�
 ## <a name="additional-resources"></a>追加リソース
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
+
+[パーソナライズされた推奨事項の有効化](personalized-recommendations.md)
+
+[製品収集モジュールの概要](product-collection-module-overview.md)
 
 [Curated 製品推奨事項リストの作成](create-editorial-recommendation-lists.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbe32361c8278ee2dc3d87f216b11a5862f3fac8
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 08b455599e0f903e8744ca35d74fcc429111960e
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550895"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033022"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -30,7 +30,7 @@ ms.locfileid: "2550895"
 
 たとえば、モデルには次のコードが含まれています。
 
-```
+```xpp
 class BusinessLogic1
 {
     str doSomething(int arg) 
@@ -42,7 +42,7 @@ class BusinessLogic1
 
 同じメソッド名を再利用することにより、拡張クラス内の **doSomething** メソッドの機能を強化することができるようになりました。 拡張クラスは強化されたクラスが定義されているモデルを参照するパッケージに属している必要があります。
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
 {
@@ -61,7 +61,7 @@ final class BusinessLogic1_Extension
 
 現在は次のコードを実行します。
 
-```
+```xpp
 BusinessLogic1 object = new BusinessLogic1();
 info(object.doSomething(33));
 ```
@@ -70,7 +70,7 @@ info(object.doSomething(33));
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 > [!IMPORTANT]
-> このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべて Platform Update 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
+> このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべてプラットフォーム更新プログラム 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
 例: アプリケーション スイート モデルに存在するクラスを増補する独自の拡張モデルを作成し、CoC を使用している場合や保護されたメソッド/変数にアクセスする場合は、アプリケーション スイートと拡張モデルの両方を構築する必要があります。 ランタイム環境でこの機能を配置するには、両方のモデルを含む配置可能なパッケージを作成する必要があります。
 
 ## <a name="capabilities"></a>処理能力
@@ -87,7 +87,7 @@ info(object.doSomething(33));
 
 たとえば、次の簡単なクラスには、既定のパラメーターを持つメソッドがあります。
 
-``` 
+```xpp
 class Person 
 {
     public void salute(str message = "Hi") {...}
@@ -96,7 +96,7 @@ class Person
 
 この場合、ラッパー メソッドは次の例のようにする必要があります。
 
-```
+```xpp
 [ExtensionOf(classStr(Person))]
 final class APerson_Extension
 {
@@ -114,7 +114,7 @@ final class APerson_Extension
 
 たとえば、次の **A** クラスがあります。
 
-```
+```xpp
 class A 
 {
     public static void aStaticMethod(int parameter1)
@@ -126,7 +126,7 @@ class A
  
 この場合、ラッパー メソッドは次の例のようにする必要があります。
 
-```
+```xpp
 [ExtensionOf(classStr(A)]
 final class An_Extension
 {
@@ -160,7 +160,7 @@ final class An_Extension
 ### <a name="wrapping-a-base-method-in-an-extension-of-a-derived-class"></a>派生クラスの拡張で基本メソッドをラッピング
 次の例は、派生クラスの拡張機能で基準メソッドをラップする方法を示しています。 この例では、次のクラス階層が使用されます。
 
-```
+```xpp
 class A
 {
     public void salute(str message)
@@ -175,7 +175,7 @@ class C extends A {}
 
 したがって、1 つの基本クラス **A** があり、2 つのクラス **B** および **C** が **A** から派生します。ここに示すように、派生クラスの 1 つ (この場合は **B**) の拡張クラスを追加または作成します。
 
-```
+```xpp
 [ExtensionOf(classStr(B))]
 final class B_Extension
 {
@@ -191,7 +191,7 @@ final class B_Extension
 
 これらの 3 つのクラスを使用するメソッドを実装すると、この動作はより明確になります。
 
-```
+```xpp
 class ProgramTest 
 {
     public static void main(Args args)
@@ -217,7 +217,7 @@ class ProgramTest
 ### <a name="the-hookable-attribute"></a>Hookable 属性
 メソッドが **[Hookable(false)]** として明示的にマークされている場合、メソッドを拡張子クラスで囲むことはできません。 次の例では、**anyMethod** は **AnyClass1** を補強するクラスでラップできません。
 
-```
+```xpp
 class AnyClass1 
 {
     [HookableAttribute(false)]
@@ -230,7 +230,7 @@ class AnyClass1
 
 次の例では、**doSomething** メソッドは、パブリック メソッドである場合でもラップできないものとして明示的にマークされます。 **doSomethingElse** メソッドは、最後のメソッドであっても、折り返し可能と明示的にマークされます。
 
-```
+```xpp
 class AnyClass2 
 {
     [Wrappable(false)]

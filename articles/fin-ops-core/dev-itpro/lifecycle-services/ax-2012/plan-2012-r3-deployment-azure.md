@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 43f39eb44d3e01662e71f0c319ae549aba52488a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6eec628256ce076e4ed13168b7480e4ae3c6a2db
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812056"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029826"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
@@ -86,13 +86,13 @@ Azure を使用するには、サブスクリプションを購入する必要�
 Azure のサブスクリプションを既に持っている場合、次に注意します。
 
 -   **定期売買のサイズを表示する:** Azure 管理ポータルで、定期売買のサイズを表示することができます。 これを行うには、[[Azure管理ポータル](https://manage.windowsazure.com/)] にログオンし、**設定**&gt;**使用** をクリックします。
--   **定期購読のサイズを増やす:** 定期売買のサイズを増やすには、Azure サポート チームにてサポート チケットを作成する必要があります。 これを行うには、[[Azure サポート オプション](http://azure.microsoft.com/support/options/)] ページに移動し、**サポートを受ける** をクリックしてサポート チケットを作成します。 サポート チケットを作成するとき、チケットが課金サポートに対応していることを確認します。
+-   **定期購読のサイズを増やす:** 定期売買のサイズを増やすには、Azure サポート チームにてサポート チケットを作成する必要があります。 これを行うには、[[Azure サポート オプション](https://azure.microsoft.com/support/options/)] ページに移動し、**サポートを受ける** をクリックしてサポート チケットを作成します。 サポート チケットを作成するとき、チケットが課金サポートに対応していることを確認します。
 
 > [!NOTE]
 > クラウド ソリューション プロバイダー (CSP) プログラムは、Azure Resource Manager (ARM) 要件のため Lifecycle Services によって現在サポートされていません。
 
 ## <a name="purchase-and-azure-support-plan"></a>発注書および Azure サポート計画
-Azure サポート計画では Azure の技術および課金サポートを提供します。 Azure サポート プランは、Azure 展開のサポーの適切なレベルを選択できる柔軟なサポート オプションを提供しています。 サポート オプションには、Azure サブスクリプションに含まれているサポート サービスから、無料のサポート サービスまでさまざまです。 利用可能なサポート プランについて学び、プランを購入するには、[[Azure サポート計画](http://www.windowsazure.com/support/plans/)] ページをご覧ください。
+Azure サポート計画では Azure の技術および課金サポートを提供します。 Azure サポート プランは、Azure 展開のサポーの適切なレベルを選択できる柔軟なサポート オプションを提供しています。 サポート オプションには、Azure サブスクリプションに含まれているサポート サービスから、無料のサポート サービスまでさまざまです。 利用可能なサポート プランについて学び、プランを購入するには、[[Azure サポート計画](https://www.windowsazure.com/support/plans/)] ページをご覧ください。
 
 ## <a name="become-familiar-with-the-azure-management-portal"></a>Azure 管理ポータルを使いこなせるようになります
 Azure 管理ポータルは、開発者および IT プロフェッショナルに、その Azure コンポーネントをプロビジョニング、構成、監視、および管理する機能を提供します。 今後使用するために、管理ポータルについてよく理解しておくことが重要です。
@@ -124,13 +124,13 @@ Azure VM エージェントは、Lifecycle Services を通じて展開された�
 必要に応じて、配置のためのクラウド サービス リソース要件を検討し、Azure サポートから Azure サブスクリプションの追加クラウド サービス キャパシティを要求してください。
 
 ## <a name="plan-for-storage-accounts"></a>ストレージ アカウントの計画
-Lifecycle Services で作成された各プロジェクトについては、1 つまたは複数の個別のストレージ アカウントが Azure 定期売買で作成されます。 ストレージ アカウントは、プロジェクトを Azure サブスクリプションに接続すると作成されます。 このストレージ アカウントは、ローカル冗長ストレージ (LRS) アカウントであり、展開に必要なスクリプトと VHD を格納するために使用されます。 最初の Premium ストレージ有効トポロジがプロジェクトから配置されると、各プロジェクトが作成され Premium ストレージ アカウントが追加されます。 ストレージ アカウントは、配置が同じ Azure サブスクリプションに行われる場合でも、Lifecycle Services プロジェクト間で共有されません。 Premium ストレージ アカウントが作成されると、それもまた LRS として作成されます。 ストレージの詳細については、[ここ](http://azure.microsoft.com/pricing/details/storage) をクリックしてください。 同じ Lifecycle Services (LCS) プロジェクトと Azure コネクタに展開されるトポロジと環境の数を検討します。 Premium ストレージ アカウントとは別に、既定では、LCS プロジェクトおよび Azure コネクタごとにストレージ アカウントが 1 つ存在します。 Azure Storage には[限度](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits)があるので注意してください。具体的には、標準ストレージ アカウントあたり 20,000 IOPS (秒単位の入力/出力オペレーション) です。 VHD あたり 500 IOPS と組み合わせると、調整が発生する前に約 40 個の***利用効率が高い*** VHDが残されます。 これを軽減するには、複数の Azure コネクタや複数の LCS プロジェクトを活用することをお勧めします。 たとえば、1 つの LCS プロジェクトで製造環境を、別で開発/テスト環境を検討します。 
+Lifecycle Services で作成された各プロジェクトについては、1 つまたは複数の個別のストレージ アカウントが Azure 定期売買で作成されます。 ストレージ アカウントは、プロジェクトを Azure サブスクリプションに接続すると作成されます。 このストレージ アカウントは、ローカル冗長ストレージ (LRS) アカウントであり、展開に必要なスクリプトと VHD を格納するために使用されます。 最初の Premium ストレージ有効トポロジがプロジェクトから配置されると、各プロジェクトが作成され Premium ストレージ アカウントが追加されます。 ストレージ アカウントは、配置が同じ Azure サブスクリプションに行われる場合でも、Lifecycle Services プロジェクト間で共有されません。 Premium ストレージ アカウントが作成されると、それもまた LRS として作成されます。 ストレージの詳細については、[ここ](https://azure.microsoft.com/pricing/details/storage) をクリックしてください。 同じ Lifecycle Services (LCS) プロジェクトと Azure コネクタに展開されるトポロジと環境の数を検討します。 Premium ストレージ アカウントとは別に、既定では、LCS プロジェクトおよび Azure コネクタごとにストレージ アカウントが 1 つ存在します。 Azure Storage には[限度](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits)があるので注意してください。具体的には、標準ストレージ アカウントあたり 20,000 IOPS (秒単位の入力/出力オペレーション) です。 VHD あたり 500 IOPS と組み合わせると、調整が発生する前に約 40 個の***利用効率が高い*** VHDが残されます。 これを軽減するには、複数の Azure コネクタや複数の LCS プロジェクトを活用することをお勧めします。 たとえば、1 つの LCS プロジェクトで製造環境を、別で開発/テスト環境を検討します。 
 
 > [!NOTE]
 > インストール VHD など、LCS が配置するすべての VHD が高度に使用されるわけではありません。
 
 ## <a name="plan-your-sql-server-configuration"></a>SQL Server 構成の計画
-Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS を達成し、読み取り操作での待機時間は非常に短くなります。 Premium Storage は、生産能力で使用される AX 2012 R3 配置に必要です。 Azure DS シリーズ VM が選択されている場合、高可用性配置では Premium Storage が既定で有効になります。 Premium Storage は、現時点では DS シリーズ VM 上でのみ提供されています。 他のすべての記憶域ニーズに非 Premium ストレージが使用されているとき、SQL Server AlwaysOn データベース サーバーだけで Premium Storage が有効になります。 SQL Server AlwaysOn 可用性セットが作成されると、Lifecycle Services は、選択された DS シリーズ VM でサポートされているすべてのディスク スロットに対してディスクをアタッチします。 VM ディスク能力の詳細については、[ここ](https://msdn.microsoft.com/library/azure/dn197896.aspx) をクリックします。 異なる VM サイズには、スループットと IOPS の最大値が変化します。 結果として、 SQL Server の構成を計画しているときは、ビジネスに最も効率的でコスト効果の良いソリューションを展開するために、これらの制限に精通してください。 [Premium Storage: Azure 仮想マシン ワークロード向け高性能ストレージ](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)に関するページ (特に、**Premium Storage の使用時の調整**に関するセッション) にあるガイドラインに従ってください。 SQL Server AlwaysOn 可用性セットは、Lifecycle Services を通じて自動的に作成されます。 生産システムで使用するための高可用性トポロジを配置する前に、データおよびパフォーマンスのニーズを考慮することが重要です。 Azure Premium Storage については、[こちら](http://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)をご覧ください。 Premium Storage で配置を計画すると、高可用性トポロジには、原価とパフォーマンスの目標を達成するためのコンフィギュレーション オプションが提供されます。 高可用性のトポロジの詳細設定では、次の SQL Server 構成オプションが表示されます。
+Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS を達成し、読み取り操作での待機時間は非常に短くなります。 Premium Storage は、生産能力で使用される AX 2012 R3 配置に必要です。 Azure DS シリーズ VM が選択されている場合、高可用性配置では Premium Storage が既定で有効になります。 Premium Storage は、現時点では DS シリーズ VM 上でのみ提供されています。 他のすべての記憶域ニーズに非 Premium ストレージが使用されているとき、SQL Server AlwaysOn データベース サーバーだけで Premium Storage が有効になります。 SQL Server AlwaysOn 可用性セットが作成されると、Lifecycle Services は、選択された DS シリーズ VM でサポートされているすべてのディスク スロットに対してディスクをアタッチします。 VM ディスク能力の詳細については、[ここ](https://msdn.microsoft.com/library/azure/dn197896.aspx) をクリックします。 異なる VM サイズには、スループットと IOPS の最大値が変化します。 結果として、 SQL Server の構成を計画しているときは、ビジネスに最も効率的でコスト効果の良いソリューションを展開するために、これらの制限に精通してください。 [Premium Storage: Azure 仮想マシン ワークロード向け高性能ストレージ](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)に関するページ (特に、**Premium Storage の使用時の調整**に関するセッション) にあるガイドラインに従ってください。 SQL Server AlwaysOn 可用性セットは、Lifecycle Services を通じて自動的に作成されます。 生産システムで使用するための高可用性トポロジを配置する前に、データおよびパフォーマンスのニーズを考慮することが重要です。 Azure Premium Storage については、[こちら](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)をご覧ください。 Premium Storage で配置を計画すると、高可用性トポロジには、原価とパフォーマンスの目標を達成するためのコンフィギュレーション オプションが提供されます。 高可用性のトポロジの詳細設定では、次の SQL Server 構成オプションが表示されます。
 
 -   **SQL Server イメージ コンフィギュレーションのカスタマイズ** - このオプションを使用すると、カスタム SQL Server Enterprise イメージまたは Azure Gallery SQL Server Enterprise イメージを使用できます。
     -   カスタム SQL Server イメージ (既定) - このイメージには、SQL Server Enterprise 2014の試用版が含まれています。 評価版ライセンスは 3〜6 か月間有効です。 既存の EA/etc. ライセンスを使用する場合は、このオプションを使用します。
@@ -148,7 +148,7 @@ VM に関連付けられている各ディスクのサイズ (GB 単位) を指�
 -   100 GB – 1024 GB 値を許可します。
 -   既定値は 128 GB です。
 -   使用されるディスクのサイズは、使用される Premium Storage 階層を決定します。
--   Premium Storage 層は、原価、ディスクあたりの IPOPS、および展開されるシステムのスループットを示しています。 詳細については、[ここ](http://azure.microsoft.com/pricing/details/storage/) をクリックしてください。
+-   Premium Storage 層は、原価、ディスクあたりの IPOPS、および展開されるシステムのスループットを示しています。 詳細については、[ここ](https://azure.microsoft.com/pricing/details/storage/) をクリックしてください。
 -   すべてのディスクは 64k クラスター サイズにフォーマットします。 これにより、パフォーマンスが最大 20％ 向上します。 
 
 TempDB とログは、パフォーマンスの向上のために記憶域上に配置されます。 そのストレージ領域にコンフィギュレーションされているディスクの数に対して、1 つの仮想ディスクが作成されます。 次に、仮想ディスクは次のようにパーティション化されます。
@@ -160,13 +160,13 @@ TempDB とログは、パフォーマンスの向上のために記憶域上に�
 
 他の考慮事項を念頭に置く必要があります。
 
--   配置を計画するときは、対象とする Azure 領域で Premium Storage を使用できることを確認します。 詳細については、[ここ](http://azure.microsoft.com/services/preview/) をクリックしてください。
+-   配置を計画するときは、対象とする Azure 領域で Premium Storage を使用できることを確認します。 詳細については、[ここ](https://azure.microsoft.com/services/preview/) をクリックしてください。
 -   会社のネットワークと Azure の間で VPN/Express ルート接続 (または計画) がある場合、Premium ストレージ アカウントをサポートしている Azure 地域でこれが行われていることが確認します。
--   使用に関する制限について理解するためには [Azure Premium Storage ドキュメント](http://azure.microsoft.com/documentation/services/storage/) を参照してください。
+-   使用に関する制限について理解するためには [Azure Premium Storage ドキュメント](https://azure.microsoft.com/documentation/services/storage/) を参照してください。
 -   可用性トポロジーで非 Premium ストレージ VM がデプロイされている場合は、上記のすべての SQL Server のコンフィギュレーションを適用できますが、Premium ストレージのメリットは適用されません。
 -   配置ために Lifecycle Services プロジェクトを設定するとき、Premium Storage をサポートする地域を選択する必要があります。
 
-展開サービスにより実装される SQL Server ベスト プラクティスには、SQL Server チームにより推奨されるベスト プラクティスが含まれます。 詳細については、[ここ](http://blogs.technet.com/b/dataplatforminsider/archive/2014/09/12/new-vm-images-optimized-for-transactional-and-dw-workloads-in-azure-vm-gallery.aspx) をクリックしてください。 さらに、次の項目が実行されます。
+展開サービスにより実装される SQL Server ベスト プラクティスには、SQL Server チームにより推奨されるベスト プラクティスが含まれます。 詳細については、[ここ](https://blogs.technet.com/b/dataplatforminsider/archive/2014/09/12/new-vm-images-optimized-for-transactional-and-dw-workloads-in-azure-vm-gallery.aspx) をクリックしてください。 さらに、次の項目が実行されます。
 
 -   複数の一時ファイル (CPU コアごとに 1 つ)。
 -   SQL Server の最大メモリを使用可能なコンピューター RAM の 90% に設定します。
@@ -174,17 +174,17 @@ TempDB とログは、パフォーマンスの向上のために記憶域上に�
 -   トレース フラグの有効  -T1204、 -T1222。
 
 ## <a name="estimate-costs-and-understand-the-azure-billing-process"></a>減価を見積もり、Azure 請求プロセスに同意
-Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格計算ツール](http://azure.microsoft.com/pricing/calculator/)を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](http://azure.microsoft.com/support/understand-your-bill/) を参照してください。 
+Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格計算ツール](https://azure.microsoft.com/pricing/calculator/)を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](https://azure.microsoft.com/support/understand-your-bill/) を参照してください。 
 
 > [!NOTE]
 > 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができます。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure 上の AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) という記事の中です。
 
 ## <a name="consider-legal-and-regulatory-requirements"></a>法的および規制要件を考慮する
-Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure セキュリティ センター](http://azure.microsoft.com/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
+Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure セキュリティ センター](https://azure.microsoft.com/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
 
--   **セキュリティ:** [Azure セキュリティ ページ](http://www.windowsazure.com/support/trust-center/security/) は地理的に分散されているデータ センター内に安全な環境を提供するために Microsoft が取っている条項の概要を示します。 セキュリティ関連リソースの広範なリストの中で、[情報の要求についての標準応答: セキュリティおよびプライバシー](https://www.microsoft.com/download/details.aspx?id=26647) ホワイト ペーパーがどのように Azure の提案されたプリンシパルを満たし、国際標準化機構 (ISO) 27001:2005 および ISO 27002 にマップされているかを概説します。
--   **プライバシー:** [Azure プライバシー ページ](http://www.windowsazure.com/support/trust-center/privacy/) は、Azure 環境のプライバシーに関する取り組みを説明する複数のリソースへのリンクが含まれています。 [Azure のプライバシーに関する声明](http://www.windowsazure.com/support/legal/privacy-statement/)へのリンクが含まれています。
--   **コンプライアンス:** [Azure コンプライアンス ページ](http://www.windowsazure.com/support/trust-center/compliance/) は、独自の業界に適用される特定の法律および規制を順守し、シナリオを使用するためのリソースを提供します。
+-   **セキュリティ:** [Azure セキュリティ ページ](https://www.windowsazure.com/support/trust-center/security/) は地理的に分散されているデータ センター内に安全な環境を提供するために Microsoft が取っている条項の概要を示します。 セキュリティ関連リソースの広範なリストの中で、[情報の要求についての標準応答: セキュリティおよびプライバシー](https://www.microsoft.com/download/details.aspx?id=26647) ホワイト ペーパーがどのように Azure の提案されたプリンシパルを満たし、国際標準化機構 (ISO) 27001:2005 および ISO 27002 にマップされているかを概説します。
+-   **プライバシー:** [Azure プライバシー ページ](https://www.windowsazure.com/support/trust-center/privacy/) は、Azure 環境のプライバシーに関する取り組みを説明する複数のリソースへのリンクが含まれています。 [Azure のプライバシーに関する声明](https://www.windowsazure.com/support/legal/privacy-statement/)へのリンクが含まれています。
+-   **コンプライアンス:** [Azure コンプライアンス ページ](https://www.windowsazure.com/support/trust-center/compliance/) は、独自の業界に適用される特定の法律および規制を順守し、シナリオを使用するためのリソースを提供します。
 
 ## <a name="consider-licensing-requirements"></a>ライセンス供与の要件の検討
 AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライセンス供与は、重要な考慮事項です。 Azure での展開は、 Azure に固有な特別なライセンス条項であるか、およびそれらの条項がソリューションの全体的な適合性を備えているかを評価します。 ライセンス供与の要件は、Azure に配置する AX 2012 R3 仮想マシン環境の種類によって異なります。 次のテーブルに詳細を示します。
@@ -203,32 +203,32 @@ AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライ
 <td>デモ</td>
 <td>仮想マシン環境に含まれるソフトウェアは、ソフトウェア ライセンス条項の項目に従って、時間制限付きで使用許諾されます。
 <ul>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397371">AX 2013 R3 デモ環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397371">AX 2013 R3 CU8 デモ環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397371">5. Retail Essentials デモ環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397371">AX 2013 R3 デモ環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397371">AX 2013 R3 CU8 デモ環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397371">5. Retail Essentials デモ環境のソフトウェア ライセンス条項</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>開発/テストおよび高可用性</td>
 <td>仮想マシン環境を含めすべてのソフトウェアには適切なライセンスが必要です。 パートナーとマイクロソフトの担当者共に、ライセンスのニーズを十分に調査してください。 仮想マシン環境に含まれる個々のソフトウェアの条件を調査する必要があります。 仮想マシン環境に含まれるソフトウェアの完全な一覧については、ソフトウェア ライセンス条項を参照してください。
 <ul>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">開発環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">共有の SQL Server 環境による開発用のソフトウェア ライセンス条件</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">テスト環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=507496&amp;amp;clcid=0x409">5. Retail Essentials 開発/テスト環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=507494">5. Retail E-commerce 開発/テスト環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=507496">5. Retail Mobility 開発/テスト環境のソフトウェア ライセンス条項</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">高可用性環境のソフトウェア ライセンス条項</a> </li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397363">開発環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397363">共有の SQL Server 環境による開発用のソフトウェア ライセンス条件</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397363">テスト環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=507496&amp;amp;clcid=0x409">5. Retail Essentials 開発/テスト環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=507494">5. Retail E-commerce 開発/テスト環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=507496">5. Retail Mobility 開発/テスト環境のソフトウェア ライセンス条項</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkId=397363">高可用性環境のソフトウェア ライセンス条項</a> </li>
 </ul>
 <p>ライセンス条項と要件を確認する際には、Azure に配置するために特に適用される条項、および使用目的に適用される条項に特に注意する必要があります。 たとえば、Microsoft Office は Azure に固有の条件を持ちますが、これらの条件は、開発またはテスト目的で Office を配置するか、または生産目的で Office を配置するかどうかによって異なります。</p>
 <p>開始するうえで役立ついくつかのリソースを以下のリンクに示します。 以下にリンクされているリソースのほとんどに、複数の製品およびシナリオの詳細な情報へのリンクが含まれています。ただし、追加の情報を確認しなければならない場合があります。 この情報は、ライセンスを取得した製品の承認済みの使用に関するガイドに役立つ情報です。 同意ではありません。 ボリューム ライセンス契約にもとづいてライセンスされている製品の使用は、その契約の条件によって支配されます。 ここにリンクされている情報と契約に矛盾がある場合、契約の使用条件が有効となります。</p>
 <ul>
-<li><strong>仮想マシン ライセンスによく寄せられる質問</strong> Azure 仮想マシンのライセンスに関するよくある質問は、<a href="http://www.windowsazure.com/pricing/licensing-faq/">このページ</a>で回答されています。</li>
-<li><strong>Microsoft 製品の使用権限と製品リスト</strong>ビジネス上の意思決定を効果的にし、IT 購入価値を最大化するために、<a href="http://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>で、Microsoft ボリューム ライセンス製品のライセンスモデル、プログラム、シナリオ、および使用条件について詳細を確認します。</li>
+<li><strong>仮想マシン ライセンスによく寄せられる質問</strong> Azure 仮想マシンのライセンスに関するよくある質問は、<a href="https://www.windowsazure.com/pricing/licensing-faq/">このページ</a>で回答されています。</li>
+<li><strong>Microsoft 製品の使用権限と製品リスト</strong>ビジネス上の意思決定を効果的にし、IT 購入価値を最大化するために、<a href="https://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>で、Microsoft ボリューム ライセンス製品のライセンスモデル、プログラム、シナリオ、および使用条件について詳細を確認します。</li>
 </ul>
 <ul>
-<li><strong>Azure プログラムのソフトウェア保証によるライセンス モビリティ</strong>ソフトウェア保証によるライセンス モビリティにより、Microsoft ボリューム ライセンスの顧客は、Azure でアクティブなソフトウェア保証を使用して、適格なサーバー アプリケーションを配置する柔軟性を得ることができます。 このソフトウェア保証給付金では、新しいライセンスを購入する必要がなく、関連するモビリティ費用がかかりません。 これにより、既存のライセンスを Azure クラウド プラットフォームに簡単に展開できます。 詳細については、<a href="http://www.windowsazure.com/pricing/license-mobility/">このページ</a>を参照してください。 開発、テスト、および SharePoint の高可用性トポロジ トライアル版用に、Visual Studio、SQL Server および Office が提供されています。 評価の範囲は 30〜180 日間です。 それに応じてライセンスを適用してください。</li>
-<li><strong>Microsoft Dynamics AX ボリューム ライセンス バイヤー ガイド</strong> Microsoft Dynamics AX を使用したキー ライセンス オプションの概要については、<a href="http://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>を参照してください。</li>
+<li><strong>Azure プログラムのソフトウェア保証によるライセンス モビリティ</strong>ソフトウェア保証によるライセンス モビリティにより、Microsoft ボリューム ライセンスの顧客は、Azure でアクティブなソフトウェア保証を使用して、適格なサーバー アプリケーションを配置する柔軟性を得ることができます。 このソフトウェア保証給付金では、新しいライセンスを購入する必要がなく、関連するモビリティ費用がかかりません。 これにより、既存のライセンスを Azure クラウド プラットフォームに簡単に展開できます。 詳細については、<a href="https://www.windowsazure.com/pricing/license-mobility/">このページ</a>を参照してください。 開発、テスト、および SharePoint の高可用性トポロジ トライアル版用に、Visual Studio、SQL Server および Office が提供されています。 評価の範囲は 30〜180 日間です。 それに応じてライセンスを適用してください。</li>
+<li><strong>Microsoft Dynamics AX ボリューム ライセンス バイヤー ガイド</strong> Microsoft Dynamics AX を使用したキー ライセンス オプションの概要については、<a href="https://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>を参照してください。</li>
 <li><strong>Office 365 ProPlus の共有コンピュータの有効化</strong> 共有コンピューターの有効化により、複数のユーザーがアクセスする組織内のコンピュータに Office 365 ProPlus を配置できます。 詳細については、<a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">このページ</a>を参照してください。</li>
 </ul></td>
 </tr>
@@ -254,7 +254,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 2 つの AX 2012 R3 デモ環境があります。1 方の環境には累積更新プログラム 8 があり、もう 1 つ方にはありません。 次のテーブルは、それぞれの環境に関する詳細を示します。 
 
 > [!NOTE]
-> 各環境に含まれる仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> 各環境に含まれる仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
 <tbody>
@@ -367,7 +367,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 この環境を配置して、Retail Essentials をデモしてください。 Retail Essentials は、Microsoft Dynamics AX の小売中心のコンフィギュレーション オプションです。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail Essentials をデモンストレーションするために必要なソフトウェアとサンプル データが既にインストールされています。 次のテーブルは、既定の Retail Essentials デモ環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
 <tbody>
@@ -432,13 +432,13 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 それらの BI 開発の実行については、目的に対する 1 つのインスタンスを配置することができます。 その他のすべてのインスタンスは BI で配置されません。 提供されている開発用 VM には、すべての AX 2012 R3 コンポーネントが Visual Studio 2013 および AX 2012 R3 開発ツールとともにインストールされています。 VM は、展開時に Active Directory ドメインに結合されます。 カスタマイズ オプションとして Active Directory ドメインを指定する場合は、VM はそのドメインに参加します。 開発 VM は、AX 2012 R3 チェックリストの時点まで配置され、すべてのソフトウェアがインストールされていることがテスト環境にリストされます。 
 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 ## <a name="test-environment"></a>テスト環境
 この環境には、既定で数台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 のテストに必要なすべてのソフトウェアが既にインストールされています。 次のテーブルは、既定のテスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
 
 <table>
 <tbody>
@@ -642,7 +642,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 この環境を配置して、Retail essentials の機能を開発またはテストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail Essentials の開発とテストで必要となるソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Essentials 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
 <tbody>
@@ -702,7 +702,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 この環境を配置して、AX 2012 R3 と完全に統合されたオンライン販売チャネルを作成し、テストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、小売電子商取引に必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail E-commerce 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
 <tbody>
@@ -739,7 +739,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 ## <a name="retail-mobility-devtest-environment"></a>Retail mobility 開発/テスト環境
 この環境を配置することで、販売スタッフが販売トランザクションを処理し、顧客注文を入力し、店舗内のどこでもモバイル デバイスを使用して日々の操作と在庫管理を実行できます。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail mobilityに必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Mobility 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 > [!NOTE]
-> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となりません。
+> この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となりません。
 
 <table>
 <tbody>
@@ -778,7 +778,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 この環境を配置して、高可用性のためにコンフィギュレーションできる環境で AX 2012 R3 を使用します。 この環境には、数台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 を使用するために必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の高可用性環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
-> Azure Premium Storage は高可用性環境が必要です。 詳細については、 [Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md) を参照してください。 この環境の仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/support/legal/sla/)の対象となります。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
+> Azure Premium Storage は高可用性環境が必要です。 詳細については、 [Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md) を参照してください。 この環境の仮想マシンは、Azure [サービス レベル アグリーメント](https://azure.microsoft.com/support/legal/sla/)の対象となります。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
 
 <table>
 <tbody>
@@ -789,7 +789,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td><strong>ソフトウェア インストール済み</strong></td>
 </tr>
 <tr class="even">
-<td>3 <strong>注記:</strong> 3 つのドメイン コントローラがこの環境に配置されています。 1 つのドメイン コントローラーが失敗すると、Azure の<a href="http://azure.microsoft.com/support/legal/sla/">サービス レベル同意書</a>に準拠するために、2 つのオンライン ドメイン コントローラーを残しておく必要があります。</td>
+<td>3 <strong>注記:</strong> 3 つのドメイン コントローラがこの環境に配置されています。 1 つのドメイン コントローラーが失敗すると、Azure の<a href="https://azure.microsoft.com/support/legal/sla/">サービス レベル同意書</a>に準拠するために、2 つのオンライン ドメイン コントローラーを残しておく必要があります。</td>
 <td>ドメイン コントローラー</td>
 <td><strong>サイズ:</strong> D1: 基本的な計算層 (1 コア、3.5 GB メモリ)</br><strong>既定名:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>

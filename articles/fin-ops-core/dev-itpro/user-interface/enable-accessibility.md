@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 10bdaa673aa5fbb087c9e93343a57f632b19be2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b1d8c45ada061629f5fc220eb227fd93eb7f1778
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183057"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029384"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "2183057"
 ## <a name="images"></a>イメージ
 画像を表示するとき、画像を説明するラベルが必要です。 イメージがレコードの状態またはステータスを表す場合は、付随するヘルプ テキストまたは追加の列に、状態またはステータスの説明文を含める必要があります。 イメージがロゴのような記号である場合は、説明は必要ありません。 「進行中」などのステータスを伝えるフォームまたはグリッド上にイメージがある場合、スクリーン リーダーを使用している人に読み取られるツールチップがイメージにあることを確認します。
 
-```
+```xpp
 public display container statusImageDataMethod()
 {
 ImageReference statusImage;
@@ -99,9 +99,11 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 ***例***
 
-    <http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
-    <button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
-    <div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
+```html
+<http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
+<button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
+<div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
+```
 
 **ビジー状態であることを示します** 
 
@@ -111,7 +113,9 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 ***例***
 
-    <p aria-live=”polite” aria-busy=”true”></p>
+```xpp
+<p aria-live=”polite” aria-busy=”true”></p>
+```
 
 **内容が検証されて、有効でないことを示す** 
 
@@ -145,7 +149,7 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 - *aria-expanded (状態)* - 要素または別のグループ化されている要素が、現在展開されているか折りたたまれているかを示します。
 
-**該当するコンテキスト メニューの説明** - Finance and Operations アプリは、コンテキストメニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
+**該当するコンテキスト メニューの説明** - Finance and Operations アプリはコンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
 
 - *aria-haspopup* - 要素にポップアップ コンテキスト メニューまたはサブ レベルのメニューがあることを示します。
 

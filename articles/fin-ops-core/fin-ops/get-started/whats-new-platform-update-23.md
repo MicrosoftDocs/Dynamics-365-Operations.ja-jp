@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: 81f5fda16c0fdc39b781cce4190d55d4d622b9f1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cfb86686913ab07d4999f01a137536600f5fa3a7
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191726"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029351"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
@@ -44,7 +44,7 @@ ms.locfileid: "2191726"
 
 プラットフォーム更新プログラム 23 以降、会社間クエリを含むグリッドでは、グリッド内の他の列と同様、列ドロップダウン メニューを使用して、ユーザーが *法人* 列をフィルター処理できます。 たとえば、ユーザーが特定の顧客のグローバル トランザクションを見ているとき、会社の小さいサブセット内のトランザクションを検索することがあります。 この機能が追加される前は、[フィルターまたは並べ替えの編集] ダイアログ ボックスの [顧客範囲] タブを使用してフィルタ処理するか、ページ固有のカスタム フィルターを使用する必要がありました。
 
-![法人によるフィルター処理](media/legalEntityFiltering.png "法人によるフィルター処理")
+![法人によるフィルター](media/legalEntityFiltering.png "法人によるフィルター")
 
 ## <a name="export-to-excel"></a>Excel にエクスポート
 
@@ -70,7 +70,7 @@ Microsoft Dynamics AX 2009 以前のバージョンでは、X++ からのイン�
 
 インデックス ヒントを指定する既存の X++ コードがある場合、新しい API が呼び出されるまで現在の動作は変更されません。 詳細については、次の例を参照してください。
 
-```
+```xpp
 public void testIndexHintRegularTable()
 {
     SysDataAccessDBLogTestTable tbl1;

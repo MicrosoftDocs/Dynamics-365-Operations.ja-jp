@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 83ff430b04fb9e8ff48e0c4537a1afa0c64c71a5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7e9951a09c2ac9dd524bd1cbce4a8875b8772aba
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847389"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026327"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -153,9 +153,10 @@ ms.locfileid: "1847389"
 
 業務プロセスの作成の最初の手順は、コントローラー クラスの作成です。これは、コントローラーのデフォルトの動作を実装する **ProcessGuideController** 抽象クラスから拡張されます。 新しいクラスの名前は **ProdProcessGuideProductionStartController** であり、**StartProdOrder** の **WHSWorkExecuteMode** で修飾されます。 **WHSWorkExecuteDisplay** クラスで使用されたのと同じ **SysExtension** ベースのインスタンス化が使用されます。これは、ユーザーがこのモードのメニュー項目を実行するときにコントローラーをインスタンス化するのに役立ちます。
 
-<pre><code>
+```xpp
 [WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
-public class ProdProcessGuideProductionStartController extends ProcessGuideController</code></pre>
+public class ProdProcessGuideProductionStartController extends ProcessGuideController
+```
 
 > [!NOTE]
 > クラスの名前付けパターンは、**\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller** です。 これは、コントローラー クラスに使用されるパターンであり、その他のクラスを拡張するためのものです。
@@ -169,18 +170,18 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 -   **ProdProcessGuidePromptProductionIdStep** クラスを **ProcessGuideStepName** 属性で修飾します。
 
-    ```X++
+    ```xpp
     [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
     ```
 
 -   コントローラー クラスで、抽象メソッド **initialStepName()** を実装して、ステップの名前を戻します。
 
-    ```X++
+    ```xpp
     protected final ProcessGuideStepName initialStepName()
     {
         return classStr(ProdProcessGuidePromptProductionIdStep);
-     }
-     ````   
+    }
+    ````   
     
 > [!NOTE]
 > **ProcessGuideStepName** 属性の値は、上記のように、クラス名と完全に一致する必要はありません。 ただし、これを実装することにより、クラスを使用する場合の相互参照に関する均一性とタイプ セーフが生じます。 この名前付け規則を使用することをお勧めします。
@@ -200,14 +201,18 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 -   **ProdProcessGuidePromptProductionIdPageBuilder** クラスを **ProcessGuidePageBuilderName** 属性で修飾します。
 
-``[ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder``
+    ```xpp
+    [ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
+    ```
 
 -   **ProdProcessGuidePromptProductionIdStep** クラスで、抽象メソッド **pageBuilderName()** を実装してこの名前を返します。
 
-    ``protected final ProcessGuidePageBuilderName pageBuilderName()
+    ```xpp
+    protected final ProcessGuidePageBuilderName pageBuilderName()
     {
         return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
-     }``    
+    }
+    ```    
 
 > [!TIP]
 > ステップ ファクトリと同様、ページ ビルダ ファクトリに実装される抽象ファクトリ パターンもあります。 ですから、まれに、異なる戦略でページ ビルダーのインスタンス化が必要になることがありますが、その場合は次のようにすることができます。
@@ -221,18 +226,23 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 -   **addDataControls()** メソッドを使用してテキスト ボックスを追加します。
 
-    ``protected final void addDataControls(ProcessGuidePage _page)
+    ```xpp
+    protected final void addDataControls(ProcessGuidePage _page)
     {
         _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
-     }``   
+    }
+    ```   
 
 -   **addActionControls()** メソッドを使用して **OK** および **Cancel** ボタンを追加します。
 
-    ``protected final void addActionControls(ProcessGuidePage _page) {
+    ```xpp
+    protected final void addActionControls(ProcessGuidePage _page)
+    {
         #ProcessGuideActionNames
         _page.addButton(step.createAction(#ActionOK), true);
         _page.addButton(step.createAction(#ActionCancelExitProcess));
-     }``   
+    }
+    ``` 
 
 これは、ボタンの前に、データ コントロールを追加します。 ただし、データ コントロールとボタンが散在する画面を作成する場合、柔軟性の代わりに **addControls()** メソッドを上書きできます。
 
@@ -249,12 +259,14 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 検証に成功したらを、ステップを完了としてマークします。 これは、基本クラスで行われますが、手順の完了を決定する条件を実装する必要があります。 オーバーライドされた次のメソッドがそれを行います。
 
-``protected final boolean isComplete()
+```xpp
+protected final boolean isComplete()
 {
     WhsrfPassthrough pass = controller.parmSessionState().parmPass();
     ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
         return (prodId != '');
- }``   
+}
+```   
 
 ### <a name="step-two-view-order-details-and-confirm"></a>ステップ 2: 注文の詳細を表示して確認
 
@@ -262,14 +274,16 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 ProdProcessGuideConfirmProductionOrderStep クラスは、次のようになります。
 
-``[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+```xpp
+[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
 public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 {
     protected final ProcessGuidePageBuilderName pageBuilderName()
     {
         return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
      }
- }``     
+}
+```     
 
 ユーザーはここに値を入力してないため、**isComplete()** メソッドを上書きする必要はありません。 ユーザーが **OK** をクリックすると、ステップが完了します。
 
@@ -277,7 +291,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 その後、**addActionControls()** が上書きされ、2 つのボタン (**OK** ボタンと、プロセスをキャンセルしてプロセスの先頭に戻る **Cancel** ボタン) を追加します。
 
-```X++
+```xpp
 /// <summary>
 /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
 /// and then confirm.
@@ -320,7 +334,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 
 次のコード例は、そのクラスと **doExecute()** メソッドの実装を示しています。 このメソッドは単に、、セッションの状態から注文 ID とユーザー ID を取得し、この製造オーダーを開始するメソッドを呼び出すだけです。
 
-```X++
+```xpp
 /// <summary>
 /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
 /// </summary>
@@ -353,7 +367,7 @@ public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWi
 
 **ProcessGuideController** 基本クラスは、**ProcessGuideNavigationAgentDefault** クラスのインスタンスを作成します。これは、ソースおよび出力先のステップの簡単なマップである事前に定義されたナビゲーション工順に依存しています。 生産開始シナリオでは、条件分岐がないため、この実装で十分です。 したがって、必要があるのは、**initializeNavigationRoute()** メソッドをオーバーライドしてナビゲーション工順を定義することだけです。
 
-```X++
+```xpp
     protected ProcessGuideNavigationRoute initializeNavigationRoute()
     {
         ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
@@ -379,7 +393,7 @@ public class ProdProcessGuideStartProductionOrderStep extends ProcessGuideStepWi
 
 アクション クラスはユーザーの操作を表すため、この例では、 **OK** アクションを使用して、アクションの作成方法を表示します。
 
-```X++
+```xpp
 [ProcessGuideActionName(#ActionOK)]
 public class ProcessGuideOKAction extends ProcessGuideAction
 {
@@ -391,8 +405,8 @@ public class ProcessGuideOKAction extends ProcessGuideAction
      {
         step.executeOKAction();
       }
-  }
-  ```    
+}
+```    
 
 クラスは 2 つの抽象メソッドを実装する必要があります。
 
@@ -402,7 +416,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 アクションは、**ProcessGuideActionName** 属性に基づいて **SysExtension** フレームワークを使用してインスタンス化されます。 ページ ビルダーのインスタンス化と同様、ステップ クラスは、既定のアクション ファクトリを実装し、それを上書きすることができます。 ページ ビルダーは、次のようにボタン コントロールを追加します。
 
-```X++
+```xpp
 _page.addButton(step.createAction(#ActionOK), true);
 ```
 
@@ -417,7 +431,7 @@ _page.addButton(step.createAction(#ActionOK), true);
     1.  **initialStepName()** を上書きして、最初のステップの名前を指定します。
     2.  **initializeNavigationRoute()** を上書きして、ナビゲーション マップを作成します。
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
         /// </summary>
@@ -447,7 +461,7 @@ _page.addButton(step.createAction(#ActionOK), true);
     1.  **isComplete()** を上書きし、ステップが完了と見なされるタイミングを指定します。
     2.  **pageBuilderName()** を上書きし、使用するページ ビルダーを指定します。
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
         /// that prompts the user for a production order id.
@@ -476,7 +490,7 @@ _page.addButton(step.createAction(#ActionOK), true);
     1.  **addDataControls()** を上書きし、**製品 ID** テキスト ボックスを追加します。
     2.  **addActionControls()** をオーバーライドして **OK** および **Cancel** ボタンを追加します。
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
         /// that prompts the user for a production order id.
@@ -503,7 +517,7 @@ _page.addButton(step.createAction(#ActionOK), true);
 
     1.  **pageBuilderName()** を上書きし、使用するページ ビルダーを指定します。
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
         /// details and confirming the same.
@@ -525,7 +539,7 @@ _page.addButton(step.createAction(#ActionOK), true);
 
     2.  **addActionControls()** をオーバーライドして **OK** および **Cancel** ボタンを追加します。
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
         /// and then confirm.
@@ -565,7 +579,7 @@ _page.addButton(step.createAction(#ActionOK), true);
 
     1.  **doExecute()** を上書きして生産プロセスの開始を実行し、プロセスの完了メッセージを追加します。
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
         /// </summary>

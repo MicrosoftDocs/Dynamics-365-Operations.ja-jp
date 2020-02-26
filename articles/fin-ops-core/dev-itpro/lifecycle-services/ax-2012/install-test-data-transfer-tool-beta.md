@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c07d3c939741a12c01e0af87cbc27aa9e2d6039e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 48dc3922dae3a390b0f804c1e11df7794261a372
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812061"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983745"
 ---
 # <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
 
@@ -38,7 +38,7 @@ Microsoft SQL Server の使用経験がある開発者またはデータベー�
 エクスポート中に、ツールが各テーブルに対して 3 つのファイルを作成します。 エクスポートされるすべてのテーブルに対して十分なハード ディスク領域があることを確認します。
 
 ## <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
-1.  「[Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?LinkId=228148)」のダウンロード可能なツール セクションからツールを取得し、ローカル フォルダーに展開します。
+1.  「[Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkId=228148)」のダウンロード可能なツール セクションからツールを取得し、ローカル フォルダーに展開します。
 2.  **AX2012TestDataTransferTool.msi** を右クリックして**管理者として実行** をクリックします。
 3.  **設定** **ウィザード**で、ライセンス条項に同意してからツールのバイナリおよびファイルをインストールする場所を選択します。 既定では、ツールは %Program Files%/Microsoft Dynamics AX 2012 のテスト データ転送ツール (ベータ) にインストールされています。
 

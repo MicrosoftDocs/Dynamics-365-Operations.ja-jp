@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations は、Dynamics 365 Finance および Dynamics 365 Supply Chain Management でライセンス供与されています。 これらのライセンスの変更の詳細については、「[Dynamics 365 ライセンスの更新](https://docs.microsoft.com/dynamics365/licensing/update)」を参照してください。

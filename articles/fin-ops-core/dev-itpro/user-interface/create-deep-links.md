@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f50bc958fcb6fc846cd217e4c2c945a37b9e40e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cc5371d05990c5187cdc3def211aff89b69cb016
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183062"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029379"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 
@@ -58,7 +58,9 @@ URL ジェネレータにより、開発者はルート移動可能な特定の�
 ## <a name="usage"></a>用途
 URL ジェネレーターは、次の名前空間の下の X++ からアクセス可能な .NET ライブラリです。
 
-    Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```xpp
+Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```
 
 #### <a name="requirements"></a>必要量
 
@@ -75,7 +77,7 @@ URL ジェネレーターは、アクティブなユーザー セッションま
 
 #### <a name="example"></a>例
 
-```
+```xpp
 // gets the generator instance
 var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
 var currentHost   = new System.Uri(UrlUtility::getUrl());

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 53e30e8ac2e655a3e650309bf0f01db8305f2fe1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4901de5b667a16929291e4e885659d735b4de985
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191824"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033042"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 
@@ -61,7 +61,7 @@ ms.locfileid: "2191824"
 3.  詳細ビューで使用されるフォームが、フィルター ウィンドウを使用して固有のキー フィールドでフィルターできることを確認します。
 4.  デザイナーで、リスト ビュー ページが詳細表示ページにリンクされていることを確認します。 リストをクリックしてプロパティを開き、ルックアップを使用して詳細表示ページを設定します。 
 
-![詳細ビュー ページへのリスト ビュー ページのリンク](media/listtodetailsdesigner.png)
+    ![詳細ビュー ページへのリスト ビュー ページのリンク](media/listtodetailsdesigner.png)
 
 ### <a name="how-do-i-add-a-reference-field-that-enables-navigation-to-a-related-entity"></a>ナビゲーションを有効にする参照フィールドを関連するエンティティに追加する方法はありますか。
 
@@ -69,13 +69,13 @@ ms.locfileid: "2191824"
 2.  ページに参照されているエンティティから参照フィールドが含まれていることを確認します。
 3.  参照先のフィールドが参照先のエンティティのデータ ソースにバインドされており、参照先のエンティティが参照を含むエンティティのデータ ソースに*外部結合*(1-0..1) または*内部結合*(1-1) されていることを確認します。 たとえば、次の図では、FMRental は参照を含むエンティティで、FMVehicle は参照されたエンティティです。
 
-![参照フィールドを参照されるエンティティのデータ ソースにバインドする](media/relatedentityform.png)
+    ![参照フィールドを参照されるエンティティのデータ ソースにバインドする](media/relatedentityform.png)
 
 4.  参照されているエンティティに対して個別の詳細ビュー ページを作成したことを確認します。
 5.  参照フィールドがページに追加されたことを確認します。
 6.  デザイナーで、参照フィールドが参照されているエンティティの詳細表示にリンクされていることを確認します。 たとえば、次の図では、車両詳細は参照されたエンティティの詳細ビュー ページです。
 
-![参照フィールドの参照先のエンティティの詳細ビューへのリンク](media/referencepagedesigner.png)
+     ![参照フィールドの参照先のエンティティの詳細ビューへのリンク](media/referencepagedesigner.png)
 
 ### <a name="how-do-i-add-a-list-that-contains-items-from-a-related-entity-to-a-details-view-page"></a>関連するエンティティからの品目を含む一覧を、詳細ビュー ページに追加する方法はありますか。
 
@@ -95,40 +95,44 @@ ms.locfileid: "2191824"
 5.  同じフォームを使用して、関連するエンティティから目的のフィールドを持つリストのみを含む別のリスト ビュー ページを作成します。
 6.  詳細表示ページで、リスト表示ページにリンクする PageLinkControl を追加します。 現在、ビジネス ロジックを使用して PageLinkControl を追加する必要があります。 次の例は、Fleet Management が使用するコードを示しています。
 
-        function main(metadataService, dataService, cacheService, $q) { 
-            return { 
-                appInit: function (appMetadata) { 
-                    metadataService.addLink( 
-                        'Customer-details', // the Page to add the link to 
-                        'Customer-rentals', // the Page the link goes to 
-                        'cust-rentals-nav-control', // unique name for the control 
-                        'Rentals', // text to display for the link in the UI 
-                        true, // show/hide the count for items on the linked page 
-                        ); 
-                }, 
-            }; 
-        }
+    ```xpp
+    function main(metadataService, dataService, cacheService, $q) { 
+        return { 
+            appInit: function (appMetadata) { 
+                metadataService.addLink( 
+                    'Customer-details', // the Page to add the link to 
+                    'Customer-rentals', // the Page the link goes to 
+                    'cust-rentals-nav-control', // unique name for the control 
+                    'Rentals', // text to display for the link in the UI 
+                    true, // show/hide the count for items on the linked page 
+                    ); 
+            }, 
+        }; 
+    }
+    ```
 
 ###### <a name="how-do-i-read-data-from-a-hidden-page"></a>非表示ページからデータを読み取るにはどうすればよいですか。
 
 1.  希望するデータでコントロールを含むページを識別または作成します。
 2.  次のコード例をご覧ください。ナビゲーション メニューからページを非表示にし、提供される API を使用してページ上のデータにアクセスします。 「My-Hidden-Page」および「My-Field-Id」は、それぞれページおよびコントロールの名前であり、デザイナーで対応するページを表示するときに確認できることに注意してください。
 
-        function main(metadataService, dataService, cacheService, $q) {
-            myField1Value = ''; // This variable will be populated in appInit, and can then be used elsewhere in the business logic. 
-            return { 
-                appInit: function (appMetadata) { 
-                    var myHiddenPage = metadataService.findPage('My-Hidden-Page');
-                    if(myHiddenPage) {
-                        var dataPromise = dataService.getPageData(myHiddenPage.Id,'','',0);
-                        dataPromise.then(function (result) {
-                            var myField1Id = metadataService.findControl(myHiddenPage, 'My-Field-1').Id;
-                            myField1Value = result.data[myField1Id];
-                        }
+    ```xpp
+    function main(metadataService, dataService, cacheService, $q) {
+        myField1Value = ''; // This variable will be populated in appInit, and can then be used elsewhere in the business logic. 
+        return { 
+            appInit: function (appMetadata) { 
+                var myHiddenPage = metadataService.findPage('My-Hidden-Page');
+                if(myHiddenPage) {
+                    var dataPromise = dataService.getPageData(myHiddenPage.Id,'','',0);
+                    dataPromise.then(function (result) {
+                        var myField1Id = metadataService.findControl(myHiddenPage, 'My-Field-1').Id;
+                        myField1Value = result.data[myField1Id];
                     }
-            }; 
-        }
-        
+                }
+        }; 
+    }
+    ```
+
 ### <a name="how-do-i-adjust-the-number-of-records-returned-in-a-list-page-using-list-fetch-size"></a>リスト フェッチ サイズを使用して、リスト ページで返されるレコードの数を調整する方法はありますか。
 
 リストページで返されるレコードの数は、**List fetch size** 値によって制御されます。 既定は 50 レコードです。 **リスト フェッチ サイズ** は、最初に読み込まれたときにページにより返されたレコードの最大数と、検索を使用して特定のレコード セットが検索されたときに返されたレコードの最大数を示します。 値を大きくしすぎないように注意が必要です。ユーザー エクスペリエンスに悪影響を与える可能性があります。

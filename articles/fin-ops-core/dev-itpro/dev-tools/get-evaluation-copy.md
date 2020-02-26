@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 85243
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5172486300541d76da47f449cb5dba1447f1bf7e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 706b4646d9c9140f5ef3a6b7defd19c9f776a284
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536986"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983658"
 ---
 # <a name="get-evaluation-copies"></a>ベータ評価版の入手
 

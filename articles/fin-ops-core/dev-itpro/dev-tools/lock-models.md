@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e17eb9e552788793d2b4046a5598dc9480f4eb8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a8bcaf6189ba9eea7b3fe6db8a8d47d1b100b4f1
+ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191679"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3033013"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 
@@ -30,7 +30,7 @@ ms.locfileid: "2191679"
 
 この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。 開発者は引き続きそのモデルを拡張することができます。 この記事では、古い形式の機能を廃止する方法についても説明します。
 
-通常、他のモデルに依存するモデルでアプリケーションを構築します。 少なくとも、モデルは提供されているアプリケーション プラットフォーム モデルによって異なります。 Finance and Operations アプリケーションは、Microsoft Azure クラウド プラットフォーム上で実行されます。 つまり、Microsoft によって管理されているデータ センターでオフプレミスで実行されます。 基本的なモデルでは多数の仕入先からの変更をサポートできないため、アプリケーションはこれらのモデルのコンポーネントを重層化することができません。 したがって、アプリケーションをビルドするには、オーバーレイの代わりに拡張機能を使用する必要があります。 依存しているモデルのすべてのコンポーネントは、ドキュメント化のために利用可能ですが、他の人の知的財産をコンパイラし、クラウドで実行することはできません。
+通常、他のモデルに依存するモデルでアプリケーションを構築します。 少なくとも、モデルは提供されているアプリケーション プラットフォーム モデルによって異なります。 Finance and Operations アプリケーションは、Microsoft Azure クラウド プラットフォームで実行されます。 つまり、Microsoft によって管理されているデータ センターでオフプレミスで実行されます。 基本的なモデルでは多数の仕入先からの変更をサポートできないため、アプリケーションはこれらのモデルのコンポーネントを重層化することができません。 したがって、アプリケーションをビルドするには、オーバーレイの代わりに拡張機能を使用する必要があります。 依存しているモデルのすべてのコンポーネントは、ドキュメント化のために利用可能ですが、他の人の知的財産をコンパイラし、クラウドで実行することはできません。
 
 ## <a name="locking-customizations"></a>カスタマイズのロック
 オーバーレイヤーから拡張にモデルを移行するには、次の 3 つの手順が必要です。
@@ -41,12 +41,14 @@ ms.locfileid: "2191679"
 
 現在、カスタマイズを無効にするプロパティを操作するために使用できるツールはありません。 代わりに、次の例に示すように**カスタマイズ** XML 要素をモデル記述子ファイルに追加する必要があります。 モデル記述子ファイルは ...\\&lt;packages&gt;\\&lt;package name&gt;\\Descriptor\\&lt;model name&gt;.xml で見つけることができます。
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <Customization>DoNotAllow</Customization>
-    <Description>My cool locked application</Description>
-    ...
-    <</AxModelInfo>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Customization>DoNotAllow</Customization>
+<Description>My cool locked application</Description>
+...
+<</AxModelInfo>
+```
 
 カスタマイズ設定には次の 3 つのレベルがあります。
 
@@ -54,42 +56,51 @@ ms.locfileid: "2191679"
 -   **ソフト ロック** ソフト ロックが必要な場合、**カスタマイズ** 要素内の **AllowAndWarn** というテキストを使用してください。
 -   **確定ロック** – モデルのカスタマイズを無効にするには、前の例に示すように、**カスタマイズ**要素内に **DoNotAllow** というテキストを使用します。
 
-**注記:** 記述子ファイル内の要素は、アルファベット順に一覧表示する必要があります。
+> [!NOTE]
+> 記述子ファイル内の要素は、アルファベット順に一覧表示する必要があります。
 
 ## <a name="backward-compatibility-of-the-platform"></a>プラットフォームの下位互換性
 より新しいバージョンの依存プラットフォーム モデルがインストールされていても、アプリケーションを実行し続ける必要があります。 したがって、これらのプラットフォーム モデルで行ったすべての変更に対して、後方互換性のための厳しい要件を適用します。 次の例を通して、この点を明確にできます。 この例では、次のクラスを含むベース モデル M があります。
 
-    public void DoSomething(int arg)
-    {
-        // Do great stuff
-    }
+```xpp
+public void DoSomething(int arg)
+{
+    // Do great stuff
+}
+```
 
 モデル M に依存するモデルでは、**DoSomething** クラスが提供するすべての便利な機能を活用したいと考えるでしょう。 したがって、次のコードがあります。
 
-    {
-        var c = new SomeClass();
-        c.DoSomething(42);
-    }
+```xpp
+{
+    var c = new SomeClass();
+    c.DoSomething(42);
+}
+```
 
 後で、仕入先 (Microsoft など) が依存するモデル (モデル M) の新しく更新されたバージョンをリリースします。 このモデルがリリースされるときに、再コンパイルなしで実行する必要があるため、パブリック インターフェイスをサポートする必要があります。 次のように、別のパラメーターを追加してメソッド シグネチャを変更したとします。
 
-    public void DoSomething(int arg, str anotherArg)
-    {
-        // Do greater stuff
-    }
+```xpp
+public void DoSomething(int arg, str anotherArg)
+{
+    // Do greater stuff
+}
+```
 
 この場合、アプリを中断します。 コールで前提となるパラメーター プロファイルが呼び出し先のパラメーター プロファイルと同じではないため、共通言語ランタイム (CLR) はメソッドを呼び出すことができません (呼び出しコードは 1 つのパラメーターが提供しましたが、現在は 2 つのパラメーターが必要です)。 したがって、公的に消費可能なものを制限することは良い考えです。 内容がプライベートである場合は、モデルの外部から誰も使用することはできません。 ただし、コンポーネントを内部にするというオプションもあります。 **内部**モディファイアーをクラスまたはメソッドに適用する場合、コンポーネントはモデルの内部でのみ表示され、外部からアクセスされることはありません。 基本的に、モデルの外部からは、内部でもプライベートでもないものが使用されると想定する必要があります。 したがって、永続的にサポートする必要があります。 絶対にパブリックまたは保護済みにする必要がある場合を除き、パブリックまたは保護済みにせずに、インターフェイスを使用して、モデルの境界の外部にある関係のない実装の詳細を非表示にします。 内部の可視性指定子でメタデータ (コードとは逆に) をマークする方法はありません。
 
 ## <a name="testing-internal-functionality"></a>内部機能のテスト
 モデルの表面積を制限することによって、カスタマイズを許可しないモデルで問題を解決できるようになり、アプリケーションが円滑に実行されることを保証します。 しかし、内部化することで、コードをテストする能力が制限されてしまうと主張するかもしれません。 この状況を解決するには、テストするパッケージをテスト パッケージに通知します。 つまり、テスト パッケージは内部の項目にアクセスできます。 このソリューションを実装するには、次の例のように記述子ファイルを編集します。
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <AxModelInfo xmlns:i=http://www.w3.org/2001/XMLSchema-instance>
-    <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>ExternalPackageName</d2p1:string>
-    </InternalsVisibleTo>
-    ...
-    </AxModelInfo>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i=http://www.w3.org/2001/XMLSchema-instance>
+<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+<d2p1:string>ExternalPackageName</d2p1:string>
+</InternalsVisibleTo>
+...
+</AxModelInfo>
+```
 
 **InternalsVisibleTo** 要素に含めることにより、任意の数の外部パッケージを提供することができます。 この情報は、テスト コードを含むパッケージではなく、テストするコードを含むパッケージに提供されます。 つまり、パッケージは情報を共有する人物を決定します。 **注記:** **AxModelInfo** の下の要素はアルファベット順でなければなりません。
 
@@ -103,43 +114,49 @@ ms.locfileid: "2191679"
 
 次の例では、**DoSomething** メソッドはモデルの最初のリリースで定義されています。
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    void DoSomething()
     {
-        void DoSomething()
-        {
-            // Do great stuff
-        }
+        // Do great stuff
     }
+}
+```
 
 2 回目のリリースで、目標を達成するよりよい方法があることを見つけました。 したがって、新しい実装を追加し、古い実装を廃止します。
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    [SysObsolete("Use DoSomethingNew instead", false)]
+    void DoSomething()
     {
-        [SysObsolete("Use DoSomethingNew instead", false)]
-        void DoSomething()
-        {
-            // Do great stuff
-        }
-
-        void DoSomethingNew()
-        {
-        }
+        // Do great stuff
     }
+
+    void DoSomethingNew()
+    {
+    }
+}
+```
 
 既存のすべての顧客は引き続き旧バージョンを呼び出します。 この状況は適切ですが、顧客は新しいバージョンの利点を活用できません。 クラスに対してコード化するユーザーは、**SysObsolete** 属性の引数で指定したメッセージと共にビルド警告を受け取ります。 多くの場合、これらのクライアントは新たなメソッドを使用するようにコードを更新します。 時間の経過と共に、より多くのクライアントが新しいバージョンに移行します。 したがって、ある時点では、メソッドに対してハード エラーをコーディングするのが理にかなっています。
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    [SysObsolete("Use DoSomethingNew instead", true)]
+    void DoSomething()
     {
-        [SysObsolete("Use DoSomethingNew instead", true)]
-        void DoSomething()
-        {
-            // Do great stuff
-        }
-
-        void DoSomethingNew()
-        {
-        }
+        // Do great stuff
     }
+
+    void DoSomethingNew()
+    {
+    }
+}
+```
 
 改めて、前述の理由から、古いメソッドがプライベートまたは内部にならなかったので、完全に削除することができません。
 

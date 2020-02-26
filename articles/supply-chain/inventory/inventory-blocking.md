@@ -3,7 +3,7 @@ title: 在庫ブロック
 description: このトピックでは、Supply Chain Management の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814378"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971490"
 ---
 # <a name="inventory-blocking"></a>在庫ブロック
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Supply Chain Management の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
+このトピックでは、Supply Chain Management の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 
 在庫品目は、次の方法でブロックできます。
 -   手動
@@ -43,6 +43,9 @@ ms.locfileid: "2814378"
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>品質指示の作成による品目のブロック
 **品質指示**ページの品質指示の作成によって確認する必要がある品目を指定できます。 品質指示を作成すると、指定する品目の数量がブロックされます。 品質指示に関連付けられるサンプリング計画は、検査する必要のある項目の数量のみを制御します。ブロックする数量ではありません。 品質指示に入力される品目の数量は、ブロックされる数量になります。サンプリング計画で検査に送るように指定する数量とは無関係です。
+
+> [!NOTE]
+> マスター プランでは、バッチの有効期限とブロックの在庫ステータス機能の使用はサポートされていません。 その結果、マスター プラン中に手持在庫が二重に除外される可能性があります。 期限切れバッチのブロックについては、在庫ステータスではなくバッチ状態コードの利用をお勧めします。
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>品質指示を生成するプロセスによる品目のブロック
 品質プロセス中で品目が検査必要となっている場合、その品目の数量が自動的にブロックされます。 したがって、品質指示が自動的に生成されると、品質指示に関連付けられている品目サンプリング計画によって、ブロックする品目の数量と、検査する品目の数量の両方が制御されます。 **品目サンプリング** ページの**完全ブロック** オプションがオンの場合は、たとえば、購買注文明細行について、その全数量が検査中にブロックされます。品目のサンプリング数量には関係しません。

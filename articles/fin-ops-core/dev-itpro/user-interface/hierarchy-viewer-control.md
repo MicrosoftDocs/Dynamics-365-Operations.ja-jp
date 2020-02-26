@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac51cda77ab609713c201924dee2ecac74140477
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 7c23dceec0c445f468db0f45384b8d78cfff5690
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658841"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029377"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
@@ -42,16 +42,18 @@ HierarchyViewer コントロールは、常に単一ブランチで最大 3 つ�
 ## <a name="business-logic-interaction"></a>ビジネス ロジック インタラクション
 HierarchyViewer コントロールは、データの視覚化とナビゲーションを提供します。 HierarchyViewer コントロールは、読み取り専用のコントロールです。 エンティティ (従業員、製品、または組織) を選択するために使用でき、HierarchyViewer コントロール外のフォームのその他の表示および入力フィールドで、対応するデータを管理できます。 これは、各ノードの各ユーザーのフォーカスで発生する選択イベントによって実行されます。
 
-    public void init(){
-        …    
-        // HierarchyViewer is the auto-declared name for the control.
-        // handleNodeSelected is your event handler.
-        HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
-    }
-    public void handeNodeSelected(int _nodeId)
-    {
-        // do something
-    }
+```xpp
+public void init(){
+    …    
+    // HierarchyViewer is the auto-declared name for the control.
+    // handleNodeSelected is your event handler.
+    HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
+}
+public void handeNodeSelected(int _nodeId)
+{
+    // do something
+}
+```
 
 ## <a name="authoring-a-hierarchyviewer-instance"></a>HierarchyViewer インスタンスの作成
 HierarchyViewer インスタンスを作成するには、次のようにします。
@@ -65,36 +67,42 @@ HierarchyViewer コントロールは、主に静的な方法でノードを移�
 
 コントロールの一般的な使用方法は、階層のサーバー側「メモリ内」マップを初期化し、ロードオンデマンド セマンティクスを使用してユーザーが対話型で階層を探索するときに、コントロールを動的に更新します。
 
-    public void init()
+```xpp
+public void init()
+{
+    HcmPositionNode node;
+    nodeMap = new Map(Types::Int64, Types::Class);
+    hierarchyMap = new Map(Types::Int64, Types::Int64);
+    firstNodeId = 0;
+    // Initialize the organization node
+    node = HcmPositionNode::newParameters(this.getNextNodeId(), HcmPositionNodeType::Enterprise, -1, 0, "@SYS317690", "");
+    rootNode = node;
+    if (selectedNode == null)
     {
-        HcmPositionNode node;
-        nodeMap = new Map(Types::Int64, Types::Class);
-        hierarchyMap = new Map(Types::Int64, Types::Int64);
-        firstNodeId = 0;
-        // Initialize the organization node
-        node = HcmPositionNode::newParameters(this.getNextNodeId(), HcmPositionNodeType::Enterprise, -1, 0, "@SYS317690", "");
-        rootNode = node;
-        if (selectedNode == null)
-        {
-            selectedNode = rootNode;
-        }
-        this.insertNewNodeAndUpdateParent(node);
+        selectedNode = rootNode;
     }
+    this.insertNewNodeAndUpdateParent(node);
+}
+```
 
 コントロールの **applyBuild** メソッドをオーバーライドします。 ここで、コントローラー クラスのインスタンスを渡します。
 
+```xpp
     public void applyBuild()
-    {
-        super();
-        YourControllerClass controller = new YourControllerClass();
-        this.initControl(controller);
-    }
+{
+    super();
+    YourControllerClass controller = new YourControllerClass();
+    this.initControl(controller);
+}
+```
 
 ノード構造全体を設定する必要はありません。 代わりに、必要に応じてノードを設定します。
 
-    public void initHcmPositionFromCurrentNode(HcmPosition _hcmPosition)
-    protected void insertNewNodeAndLoadDescendants(HcmPositionNode _node, int _depth, HcmPositionNode _parentNode = null, Common _common = null)
-    protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _common = null)
+```xpp
+public void initHcmPositionFromCurrentNode(HcmPosition _hcmPosition)
+protected void insertNewNodeAndLoadDescendants(HcmPositionNode _node, int _depth, HcmPositionNode _parentNode = null, Common _common = null)
+protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _common = null)
+```
 
 ## <a name="changing-node-visuals"></a>ノード ビジュアルの変更
 ノードのビジュアルを変更することはできません。 **ExtendedStyle** プロパティを使用して操作することができる既定のレイアウトを持つ一連のバインドされていないコントロールをコントロールが提供して、作成者が選択できる既定の代替セットを提供することが設計の目的です。

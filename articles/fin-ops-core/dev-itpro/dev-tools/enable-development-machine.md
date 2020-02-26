@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50162d709a69c1e9ee5d88c89a2c99727c995bed
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e20022babce6355b4d6c0d75cf28ead8701bc183
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811721"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029421"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 
@@ -49,9 +49,9 @@ ms.locfileid: "2811721"
 
     **例**
 
-        > ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1
+    -  `ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1`
 
-        > ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2
+    -  `ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2`
 
 4.  1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。
     1.  Visual Studio で、 **ソース管理エクスプローラー**を開き、ワークスペース ドロップダウンから **ワークスペースの管理**を選択します。

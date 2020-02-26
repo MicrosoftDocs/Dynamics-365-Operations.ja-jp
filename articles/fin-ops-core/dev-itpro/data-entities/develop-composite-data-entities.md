@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520e970f126a1b5d06822faf153cdb2f89f6e6d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 45da5f3c72889f391b7a7fc15fdbcb0013135d65
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183428"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029429"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 
@@ -41,7 +41,7 @@ ms.locfileid: "2183428"
 
 リンクされたエンティティに基づいて、これらのエンティティは、エンティティの埋め込み要素タグを持つ XML ドキュメントとして公開されます。 XML はデータ管理で複合エンティティを公開する唯一の方法です。
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Document>
 
@@ -118,7 +118,7 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 
 2. 別の方法として、複合エンティティ リストのメタデータを更新するために次のジョブを書き込むことができます。
 
-    ```
+    ```xpp
     DMFDataPopulation::refreshCompositeEntityList();
     ```
 

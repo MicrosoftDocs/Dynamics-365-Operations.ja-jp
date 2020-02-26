@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835588"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025831"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 
@@ -49,7 +49,7 @@ ms.locfileid: "1835588"
 10. ページを閉じます。
 
 ## <a name="find-the-applicable-discount"></a>適用できる割引の検索
-    * [顧客口座] フィールドには顧客番号 US-001 が含まれていることを確認してください。   
+[顧客口座] フィールドには顧客番号 US-001 が含まれていることを確認してください。   
 1. [品目番号] フィールドに、'T0012' を入力します。
     * [数量] フィールドが 1 に設定されていることを確認してください。  
     * 製品 T0012 に表示される次の価格決定の詳細は、複数の売買契約から取得されます: 単価は 1,000 CAD で、割引率は 5 です。  

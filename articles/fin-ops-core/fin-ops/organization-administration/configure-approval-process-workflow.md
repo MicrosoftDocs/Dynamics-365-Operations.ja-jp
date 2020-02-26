@@ -3,7 +3,7 @@ title: ワークフローでの承認プロセスのコンフィギュレーシ�
 description: 承認プロセスのプロパティをコンフィギュレーションするには、次の手順に従います。
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811384"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983767"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>ワークフローでの承認プロセスのコンフィギュレーション
 
@@ -138,11 +138,12 @@ ms.locfileid: "2811384"
 
 ## <a name="specify-a-final-approver"></a>最終承認者を指定する
 
-承認のためにドキュメントを送信した人物が承認者であるような場合は、最終承認者を指定することができます。 最終承認者を指定するには、次の手順に従います。
+承認のためにドキュメントを送信したユーザーが承認者であり、「申請者による承認を禁止する」が使用されている場合、最終承認者を指定できます。 最終承認者を指定するには、次の手順に従います。
 
-1. 左ウィンドウで**詳細設定**をクリックします。
-2. **最終承認者の使用**チェック ボックスをオンにします。
-3. 最終承認者とするユーザーを一覧から選択します。
+1. ワークフロー エディターで承認要素を右クリックし、**プロパティ**を選択して、**プロパティ**フォームを開きます。
+2. 左ウィンドウで**詳細設定**をクリックします。
+3. **最終承認者の使用**チェック ボックスをオンにします。
+4. 最終承認者とするユーザーを一覧から選択します。
 
 ## <a name="set-a-time-limit"></a>期限の設定
 

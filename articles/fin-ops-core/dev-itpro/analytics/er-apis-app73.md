@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 63f9065a87fc0ebbed411d82b0f7f61f1651d941
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7b5e9223281c276a8228238de5ab455dcb626fcd
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183395"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025868"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 
@@ -37,25 +37,25 @@ ER API には 2 つのタイプの変更があります。
 
 外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 たとえば、追加の変更をせずに外部クラスにアクセスすることができます。
 
-```
+```xpp
 var destination = new ERFileDestinationMemory();
 ```
 
 名前空間のエイリアスを作成することもできます。
 
-```
+```xpp
 using LF = Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。
 
-```
+```xpp
 var destination = new LF.ERFileDestinationMemory();
 ```
 
@@ -67,7 +67,7 @@ var destination = new LF.ERFileDestinationMemory();
 
 アプリケーション 更新 7.3 より前
 
-```
+```xpp
 // pattern
 ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
 // sample code
@@ -76,7 +76,7 @@ ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMi
 
 アプリケーション更新プログラム 7.3 以降
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
 // sample code
@@ -87,7 +87,7 @@ ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGro
 
 アプリケーション 更新 7.3 より前
 
-```
+```xpp
 // pattern
 ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
 // sample code
@@ -96,7 +96,7 @@ ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
 
 アプリケーション更新プログラム 7.3 以降
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
 // sample code
@@ -107,7 +107,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).r
 
 アプリケーション 更新 7.3 より前
 
-```
+```xpp
 // pattern
 ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
 // sample code
@@ -116,7 +116,7 @@ ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable
 
 アプリケーション更新プログラム 7.3 以降
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
 // sample code
@@ -127,14 +127,14 @@ ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymMod
 
 アプリケーション 更新 7.3 より前
 
-```
+```xpp
 // sample code
 new ERFileDestinationBrowser();
 ```
 
 アプリケーション更新プログラム 7.3 以降
 
-```
+```xpp
 // sample code
 ERObjectsFactory::createFileDestinationBrowser();
 ```
@@ -143,7 +143,7 @@ ERObjectsFactory::createFileDestinationBrowser();
 
 アプリケーション 更新 7.3 より前
 
-```
+```xpp
 // pattern
 ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
 // sample code
@@ -152,7 +152,7 @@ ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagem
 
 アプリケーション更新プログラム 7.3 以降
 
-```
+```xpp
 // pattern
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code

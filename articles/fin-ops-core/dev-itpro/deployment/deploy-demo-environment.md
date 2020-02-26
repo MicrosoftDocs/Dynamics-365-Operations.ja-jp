@@ -1,6 +1,6 @@
 ---
 title: デモ環境の配置
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 これは、Dynamics 365 Finance、Supply Chain Management、および Retail に適用されます。
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 これは Dynamics 365 Finance、Supply Chain Management、およびコマースに適用されます。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 10/01/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 6063698690c4d0b80984747099d6e1f40d3a0d7b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 63a812f386afe2e89936e1c104b347bed6a9ea2d
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772348"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003606"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
@@ -32,7 +32,7 @@ ms.locfileid: "2772348"
 
 - Dynamics 365 Finance
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 
 ## <a name="prerequisites"></a>必要条件
 展開を開始する前に、次の前提条件が満たされていることを確認します。
@@ -47,8 +47,8 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 1. LCS でプロジェクトを開き、**環境**セクションでプラス記号 (**+**) をクリックします。
 2. Azure 環境トポロジを選択し、**デモ** を選択します。
 3. トポロジを選択します。
-    - Finance and Operations で、Finance and Operations 用の最新の Azure Resource Manager (ARM) トポロジを選択します。
-    - 小売には、**Dynamics 365 for Retail - Demo** を選択します。
+    - Finance and Operations では、Finance and Operations の最新の Azure Resource Manager (ARM) トポロジを選択します。
+    - コマースで、**Dynamics 365 for Commerce - デモ**を選択します。
 4. **環境の配置**ダイアログ ボックスに、環境の名前を入力します。 この名前は Azure サブスクリプションで一意である必要があります。 環境を簡単に識別できるようにするには、ユーザー名とトポロジを使用して略語を作成することを検討してください。
 5. 仮想マシン (VM) のサイズを選択します。 ARM 用に有効になっている VM のすべてのサイズは、v2 で終わります。 Finance and Operations のワークロードには、D* v2 サイズを使用する必要があります。 D12v2 をお勧めします。
 6. **インスタンス** フィールドを 1 に設定します。
@@ -70,4 +70,4 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 2. 右にスクロールし、**環境の詳細** ウィンドウの **クラウド サービス** で、適切なリンクをクリックします。
 
       - **Finance and Operations にログオン**
-      - **小売にログオン**
+      - **コマースにログオン**

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio の開発ツール
 description: Visual Studio 2015 は、開発用の単一統合開発環境 (IDE) です。
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 23401
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7cf678a342377974648065bf2f53be1b880f814
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8962832b410a90709277e866ebbddc475a1d7e1a
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812027"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983661"
 ---
 # <a name="development-tools-in-visual-studio"></a>Visual Studio の開発ツール
 
@@ -39,7 +39,7 @@ Visual Studio で、モデル ストアはアプリケーション エクスプ�
 ![アプリケーション エクスプローラー](media/1_devotoolsconcept.png)
 
 ### <a name="the-project-template"></a>プロジェクト テンプレート
-単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、 [Visual Studioの Finance and Operations プロジェクトタイプ](projects.md) を参照してください。
+単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、[Visual Studio の Finance and Operations プロジェクト タイプ](projects.md) を参照してください。
 
 ![ソリューション エクスプローラー](media/2_devotoolsconcept.png)
 

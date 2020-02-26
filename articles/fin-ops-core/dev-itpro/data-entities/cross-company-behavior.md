@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a104711574c87ba90f291f57b74412c7a3e8fb9c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 274dff9779bce4404cc54378f248e1616bb3c9eb
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191543"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029433"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 
@@ -56,18 +56,20 @@ ms.locfileid: "2191543"
 
 **CustomerList** 表示に関する前述の情報が与えられた場合、システムは、SQL **表示の作成**ステートメントを生成して実行することによって、基盤となる SQL Server システムに表示を作成します。
 
-    CREATE VIEW [dbo].[CUSTOMERLIST] 
-    AS 
-        SELECT T1.accountnum AS ACCOUNTNUM, 
-               T1.dataareaid AS DATAAREAID,  -- AllowCrossCompany =No caused this line.
-               T1.partition  AS PARTITION, 
-               T1.recid      AS RECID, 
-               T2.partition  AS PARTITION#2, 
-               T2.name       AS NAME 
-        FROM   custtable T1 
-               CROSS JOIN dirpartytable T2 
-        WHERE  ( T1.party = T2.recid 
-                 AND ( T1.partition = T2.partition ) ) 
+```sql
+CREATE VIEW [dbo].[CUSTOMERLIST] 
+AS 
+       SELECT T1.accountnum AS ACCOUNTNUM, 
+              T1.dataareaid AS DATAAREAID,  -- AllowCrossCompany =No caused this line.
+              T1.partition  AS PARTITION, 
+              T1.recid      AS RECID, 
+              T2.partition  AS PARTITION#2, 
+              T2.name       AS NAME 
+       FROM   custtable T1 
+              CROSS JOIN dirpartytable T2 
+       WHERE ( T1.party = T2.recid 
+              AND ( T1.partition = T2.partition ) ) 
+```
 
 ### <a name="making-dirpartytable-the-root-data-source"></a>DirPartyTable をルート データ ソースにする
 
@@ -75,18 +77,20 @@ ms.locfileid: "2191543"
 
 **CustomerList** ビューの 2 つのデータ ソース テーブルの位置を入れ替えて、DirPartyTable テーブルをルート データ ソースにします。
 
-    CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
-    AS 
-        SELECT T1.name       AS NAME, 
-               T1.partition  AS PARTITION, 
-               T1.recid      AS RECID, 
-               T2.partition  AS PARTITION#2, 
-               T2.accountnum AS ACCOUNTNUM 
-        FROM   dirpartytable T1 
-               CROSS JOIN custtable T2 
-        WHERE  ( T2.party = T1.recid 
-                 AND ( T2.partition = T1.partition ) ) 
-    go 
+```sql
+CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
+AS 
+       SELECT T1.name       AS NAME, 
+              T1.partition  AS PARTITION, 
+              T1.recid      AS RECID, 
+              T2.partition  AS PARTITION#2, 
+              T2.accountnum AS ACCOUNTNUM 
+       FROM   dirpartytable T1 
+              CROSS JOIN custtable T2 
+       WHERE  ( T2.party = T1.recid 
+              AND ( T2.partition = T1.partition ) ) 
+go 
+```
 
 この場合、SQL の**ビューの作成**ステートメントは、次の 2 つの相違点を除いて同じです。
 
@@ -114,15 +118,17 @@ ms.locfileid: "2191543"
 
 **PrimaryCompanyContext** 値が空でない値に設定されている場合、エンティティは共有エンティティとして動作できません。 **dataAreaId** フィールドは、SQL **Create View** ステートメントに追加されます。
 
-    CREATE VIEW [dbo].[FMCUSTGROUPENTITY] 
-    AS 
-        SELECT T1.custgroup   AS GROUPNAME, 
-               T1.description AS DESCRIPTION, 
-               T1.dataareaid  AS DATAAREAID,   -- dataAreaId is added. 
-               T1.recversion  AS RECVERSION, 
-               T1.partition   AS PARTITION, 
-               T1.recid       AS RECID 
-        FROM   fmcustgroup T1 
+```sql
+CREATE VIEW [dbo].[FMCUSTGROUPENTITY] 
+AS 
+       SELECT T1.custgroup   AS GROUPNAME, 
+              T1.description AS DESCRIPTION, 
+              T1.dataareaid  AS DATAAREAID,   -- dataAreaId is added. 
+              T1.recversion  AS RECVERSION, 
+              T1.partition   AS PARTITION, 
+              T1.recid       AS RECID 
+       FROM   fmcustgroup T1 
+```
 
 ## <a name="run-time-the-behavior-of-data-entities-for-crosscompany"></a>実行時: 会社間のデータ エンティティの動作
 X++ コードのコンテキストでは、データ エンティティの会社間の動作はテーブルの動作に似ています。 エンティティの **PrimaryCompanyContext** プロパティが値を持たないおよびが空白の場合、エンティティが共有テーブルと同様に動作します。
@@ -162,15 +168,17 @@ X++ コードのコンテキストでは、データ エンティティの会社
 > [!NOTE]
 > *法人エンティティ*および*データ エンティティ*の両方が*エンティティ*という語を使用していますが、混合しないでください。 法人およびデータ エンティティは、まったく異なる 2 つの概念です。 **PrimaryCompanyContext** プロパティが空のとき、SQL の **ビューの作成** ステートメントには、通常、システムの **dataAreaId** 列についての記述は含まれていません。 ただし、現在の例では、データ エンティティの **LegalEntity** 通常フィールドが原因で **dataAreaId** が「半参照」になります。 このフィールドは、次の SQL ステートメントに表示されます。
 
-    CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
-    AS 
-        SELECT T1.custgroup   AS NAME, 
-               T1.description AS DESCRIPTION, 
-               T1.dataareaid  AS LEGALENTITY,   -- dataAreadId is named LegalEntity. 
-               T1.recversion  AS RECVERSION, 
-               T1.partition   AS PARTITION, 
-               T1.recid       AS RECID 
-        FROM   fmcustgroup T1 
+```sql
+CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
+AS 
+       SELECT T1.custgroup   AS NAME, 
+              T1.description AS DESCRIPTION, 
+              T1.dataareaid  AS LEGALENTITY,   -- dataAreadId is named LegalEntity. 
+              T1.recversion  AS RECVERSION, 
+              T1.partition   AS PARTITION, 
+              T1.recid       AS RECID 
+       FROM   fmcustgroup T1 
+```
 
 ### <a name="purpose-of-this-example"></a>この例の目的
 
