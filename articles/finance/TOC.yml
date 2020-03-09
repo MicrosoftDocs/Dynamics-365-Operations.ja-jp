@@ -150,6 +150,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: 保存されているビュー
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                - name: グリッド機能
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: PowerApps アプリの埋め込み
@@ -940,9 +942,11 @@
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: 消費税レポート コードの設定
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: 消費税の二重通貨のサポート
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: 元帳トランザクション別消費税詳細 (レポート)
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: 消費税精算期間の設定
+                - name: 消費税決済期間の設定
                   href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
                 - name: 源泉徴収税の設定
                   href: general-ledger/tasks/set-up-withholding-tax.md
@@ -1102,6 +1106,8 @@
                   href: public-sector/interest-distribution.md
             - name: 公的機関での調達
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: リード タイムに基づいた明細行配送日の計算
+              href: public-sector/po-delivery-date.md
             - name: 公的機関のセキュリティ ロール
               href: public-sector/security-roles-public-sector.md
             - name: 公的機関の資金
@@ -1298,6 +1304,8 @@
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: SPED 会計 – レイアウト 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: SPED EFD 貢献度の設定
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: 法人用パラメーター
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: 法人パラメーターの設定
@@ -2793,7 +2801,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: 採用
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 小売チャネルの実績
+                - name: Retail チャネルの実績
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/finance/toc.json
                 - name: 販売と収益性のパフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -2807,6 +2815,8 @@
               items:
                 - name: ドキュメント レポート サービスの概要
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: サポートされるフォント
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: オンプレミスの配置の SSRS のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: 印刷中
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

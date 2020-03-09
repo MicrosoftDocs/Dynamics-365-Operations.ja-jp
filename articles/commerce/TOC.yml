@@ -60,7 +60,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: オンプレミス配置のシステム要件
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
-                - name: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+                - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance + Operations (on-premises) の購入
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
@@ -88,7 +88,7 @@
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce バージョン 10.0.8 (2020 年 2 月)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Commerce バージョン 10.0.7 (2020 年 1 月)
+                    - name: Retail バージョン 10.0.7 (2020 年 1 月)
                       href: get-started/whats-new-10-0-7.md
                 - name: 削除済みまたは非推奨の機能
                   items:
@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: 保存されているビュー
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: グリッド機能
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: PowerApps アプリの埋め込み
@@ -184,7 +186,7 @@
               items:
                 - name: Commerce コンポーネント
                   href: retail-components.md
-                - name: コマース スケール ユニット アーキテクチャ
+                - name: Commerce Scale Unit アーキテクチャ
                   href: dev-itpro/retail-server-architecture.md
                 - name: ストア内トポロジを選択します。
                   href: dev-itpro/retail-in-store-topology.md
@@ -202,9 +204,9 @@
                   href: retail-onprem.md
             - name: 配置と修正プログラム
               items:
-                - name: コマース スケール ユニット
+                - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
-                - name: コマース スケール ユニットのコンフィギュレーションとインストール
+                - name: Commerce Scale Unit のコンフィギュレーションとインストール
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Modern POS のコンフィギュレーションとインストール
                   href: retail-modern-pos-device-activation.md
@@ -306,7 +308,7 @@
                           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
                     - name: 既定の顧客およびアドレス帳の設定
                       href: default-customer.md
-                - name: 小売チャネルの前提条件
+                - name: Retail チャネルの前提条件
                   items:
                     - name: 情報コードおよび情報コード グループ
                       href: info-codes-retail.md
@@ -438,8 +440,6 @@
                   href: configure-call-center-delivery.md
                 - name: 詐欺警告の設定および使用
                   href: set-up-fraud-alerts.md
-                - name: コール センターの連続プログラムの設定
-                  href: set-up-continuity-program.md
             - name: 追加のチャネルのコンフィギュレーション
               items:
                 - name: 組織階層へのチャネルの追加
@@ -450,18 +450,22 @@
                       href: omni-auto-charges.md
                     - name: ヘッダー請求金額を一致する販売明細行に比例配分する
                       href: pro-rate-charges-matching-lines.md
-                - name: 小売店舗の管理
+                - name: 連続プログラムの管理
+                  items:
+                    - name: コール センターの連続プログラムの設定
+                      href: set-up-continuity-program.md
+                    - name: 連続スケジュールの定義
+                      href: tasks/define-continuity-schedules.md
+                - name: Retail 店舗の管理
                   items:
                     - name: 店舗の営業時間の作成と変更
                       href: dev-itpro/store-hours.md
-                    - name: コマース スケール ユニット
+                    - name: Commerce Scale Unit
                       href: dev-itpro/retail-store-system-begin.md
                 - name: コール センターの管理
                   items:
                     - name: コール センターの注文保留のコンフィギュレーションおよび作業
                       href: work-with-order-holds.md
-                    - name: 連続スケジュールの定義
-                      href: tasks/define-continuity-schedules.md
                 - name: 支払
                   items:
                     - name: 支払方法
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: オンライン支払手段を Adyen コネクタで保存
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: ギフト カードとクレジット メモの操作へのシームレスなオフライン切り替え
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: 請求書の支払シナリオを設定する
                       href: payinvoice.md
                     - name: 重複支払の防止
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: 小売製品の設定
                   href: set-up-retail-products.md
-                - name: 小売製品階層
+                - name: 製品階層
                   items:
-                    - name: 小売階層
+                    - name: Commerce 階層
                       href: retail-hierarchies.md
                     - name: 新しい製品階層の作成
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: クロス ドッキングおよび集中的購買のルールとパラメーターの設定
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: POS でのインバウンド在庫操作
+                      href: pos-inbound-inventory-operation.md
+                    - name: POS でのアウトバウンド在庫操作
+                      href: pos-outbound-inventory-operation.md
+                    - name: 小売チャンネルの引当可能在庫数量の計算
+                      href: calculated-inventory-retail-channels.md
                 - name: 発注書
                   items:
                     - name: 発注書の概要
@@ -714,7 +726,7 @@
               href: statement-posting-eod.md
             - name: バッチ追跡品目の処理の改善
               href: batch.md
-            - name: 明細書に影響を及ぼすコマース パラメーターのコンフィギュレーション
+            - name: 明細書に影響を及ぼす Commerce パラメーターのコンフィギュレーション
               href: tasks/parameter-configurations-retail-statements.md
             - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
               href: tasks/payment-configurations-retail-statements.md
@@ -726,6 +738,18 @@
               href: tasks/store-configurations-retail-statements.md
             - name: オンラインの販売と支払の転記
               href: tasks/posting-online-sales-payments.md
+        - name: 作業者タスクの管理
+          items:
+            - name: タスク管理の概要
+              href: task-mgmt-overview.md
+            - name: タスク管理のコンフィギュレーション
+              href: task-mgmt-configure.md
+            - name: タスク リストの作成とタスクの追加
+              href: task-mgmt-create-lists.md
+            - name: タスク リストを店舗または従業員に割り当てる
+              href: task-mgmt-assign-lists.md
+            - name: POS でのタスク管理
+              href: task-mgmt-pos.md
         - name: E コマース サイトの管理
           items:
             - name: オンライン ストアの概要
@@ -880,6 +904,8 @@
                   items:
                     - name: 購入ボックス モジュール
                       href: add-buy-box.md
+                    - name: 評価およびレビュー モジュール
+                      href: ratings-reviews-modules.md
                 - name: 購買モジュール
                   items:
                     - name: 買い物カゴ モジュール
@@ -930,9 +956,9 @@
               href: set-up-rfm-analysis.md
         - name: ローカライズと規制の機能
           items:
-            - name: コマース チャネルの会計統合の概要
+            - name: Commerce チャネルの会計統合の概要
               href: localizations/fiscal-integration-for-retail-channel.md
-            - name: コマース チャネルの会計統合の設定
+            - name: Commerce チャネルの会計統合の設定
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: オーストリア
               items:
@@ -1042,7 +1068,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: 採用
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-                - name: 小売チャネルの実績
+                - name: Retail チャネルの実績
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: 販売と収益性のパフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1056,6 +1082,8 @@
               items:
                 - name: ドキュメント レポート サービスの概要
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: サポートされるフォント
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: オンプレミスの配置の SSRS のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: 印刷中
@@ -1786,7 +1814,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: 拡張性
           items:
-            - name: コマース開発と拡張性
+            - name: Commerce 開発と拡張性
               href: dev-itpro/dev-retail-home-page.md
             - name: オンライン チャネルの拡張性
               items:
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: プレビュー モジュールとデバッグ モジュール
                       href: e-commerce-extensibility/test-module.md
-                    - name: デバッグ モジュール
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: モックを使用したテスト モジュール
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: ページ モックを使用したテスト モジュール
@@ -1976,6 +2002,8 @@
                   href: dev-itpro/pos-run-samples.md
                 - name: デバイス管理実装ガイダンス
                   href: implementation-considerations-devices.md
+                - name: POS カート ビューのイベントおよびハンドラー
+                  href: dev-itpro/cart-view-handlers.md
             - name: Hardware Station の拡張機能
               items:
                 - name: Hardware Station の拡張機能
@@ -2032,6 +2060,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: 拡張イベントを Application Insights に記録
                   href: dev-itpro/commerce-application-insights.md
+                - name: ビジネス ロジックでの非同期 Commerce (CRT) API の作成
+                  href: dev-itpro/async-commerce-extension.md
             - name: 支払コネクタの拡張機能
               items:
                 - name: 支払ターミナルの支払統合の作成
@@ -2048,6 +2078,8 @@
                   href: payment-connector-data-fields.md
                 - name: 支払コネクタの重複支払保護の有効化
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Service Fabric 配置でのアプリケーション エクスプローラー用支払パッケージの作成
+                  href: dev-itpro/payment-connector-package.md
             - name: サード パーティ E コマースの拡張機能
               items:
                 - name: オンライン ストアのコンフィギュレーション
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Finance and Operations アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

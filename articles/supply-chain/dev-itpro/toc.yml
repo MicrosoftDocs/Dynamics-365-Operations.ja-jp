@@ -336,7 +336,7 @@
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: クラウド環境への更新プログラムの適用
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: クラウドでホストされている小売チャネル コンポーネントへの更新プログラムと拡張機能の適用
+        - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
           href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Retail Cloud Scale Unit の初期化
           href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -362,7 +362,7 @@
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: オンプレミス環境の配置 (Platform update 8 および 11)
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+            - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
               href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: カスタム モデルの開発とオンプレミス環境への配置
           href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -456,8 +456,6 @@
           items:
             - name: モデルとデータ モデル要素の作成の概要
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: 拡張機能の名前付けガイドライン
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: カスタマイズをオフにして機能を廃止
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: カスタマイズ分析のレポート
