@@ -45,7 +45,11 @@
                 - name: Platform update 15 (2018 年 3 月)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: 削除済みまたは非推奨の機能
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: 削除済みまたは非推奨の Platform の機能
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: 以前のリリースの削除済みまたは非推奨の機能
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 延期された AX 2012 の機能
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: オンプレミス配置に実装されない機能
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: 同期、双方向の統合
                       items:
-                        - name: ほぼリアルタイムのデータ統合
+                        - name: 二重書き込みのホームページ
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: 二重書き込みの概要
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Common Data Service の組織階層
                           href: data-entities/dual-write/organization-mapping.md
@@ -396,7 +402,7 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: クラウド環境への更新プログラムの適用
                   href: deployment/apply-deployable-package-system.md
-                - name: クラウドでホストされている小売チャネル コンポーネントへの更新プログラムと拡張機能の適用
+                - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
                   href: deployment/Update-retail-channel.md
                 - name: Retail Cloud Scale Unit の初期化
                   href: deployment/Initialize-Retail-Channels.md
@@ -422,7 +428,7 @@
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: オンプレミス環境の配置 (Platform update 8 および 11)
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
-                    - name: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+                    - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
                 - name: カスタム モデルの開発とオンプレミス環境への配置
                   href: deployment/develop-deploy-custom-models-on-premises.md
@@ -940,11 +946,11 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: パートナー向け LCS
                   href: lifecycle-services/getting-started-lcs.md
-                - name: 新機能
+                - name: Lifecycle Services の新機能および変更された機能
                   href: lifecycle-services/whats-new-lcs.md
                 - name: 既知の問題
                   href: lifecycle-services/known-issues.md
-                - name: Lifecycle Services (LCS) の削除された機能または非推奨の機能
+                - name: Lifecycle Services (LCS) の削除済みまたは非推奨の機能
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services ユーザー ガイド
               href: lifecycle-services/lcs-user-guide.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md
