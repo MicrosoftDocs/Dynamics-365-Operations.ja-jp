@@ -17,58 +17,57 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0585d9ed683052612826272f868e957cccb4f4a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f5378f5dcfaf03d13b7268d3c34186e5b449a79c
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026204"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082024"
 ---
-# <a name="x-compile-time-functions"></a><span data-ttu-id="d5946-103">X++ コンパイル時関数</span><span class="sxs-lookup"><span data-stu-id="d5946-103">X++ compile-time functions</span></span>
+# <a name="x-compile-time-functions"></a><span data-ttu-id="b4f0d-103">X++ コンパイル時関数</span><span class="sxs-lookup"><span data-stu-id="b4f0d-103">X++ compile-time functions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d5946-104">このトピックでは、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。</span><span class="sxs-lookup"><span data-stu-id="d5946-104">This topic lists the compile-time functions and describes their syntax, parameters, and return values.</span></span>
+<span data-ttu-id="b4f0d-104">このトピックでは、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-104">This topic lists the compile-time functions and describes their syntax, parameters, and return values.</span></span>
 
-# <a name="overview"></a><span data-ttu-id="d5946-105">概要</span><span class="sxs-lookup"><span data-stu-id="d5946-105">Overview</span></span>
+# <a name="overview"></a><span data-ttu-id="b4f0d-105">概要</span><span class="sxs-lookup"><span data-stu-id="b4f0d-105">Overview</span></span>
 
-<span data-ttu-id="d5946-106">コンパイル時関数は、X++ コードのコンパイル時に早期実行されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-106">Compile-time functions are executed early during compilation of X++ code.</span></span> <span data-ttu-id="d5946-107">アプリケーション エクスプローラーに保存されているメタデータの変更に対してコードを復元するためには、可能な限り X++ で使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d5946-107">They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer.</span></span> <span data-ttu-id="d5946-108">コンパイル時関数は、コンパイラによって入力値が検証されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-108">Compile-time functions have their input value verified by the compiler.</span></span> <span data-ttu-id="d5946-109">入力された値が見つからず、アプリケーション エクスプローラーの既存のオブジェクトが一致しない場合は、コンパイラーはエラーを発行します。</span><span class="sxs-lookup"><span data-stu-id="d5946-109">If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error.</span></span> <span data-ttu-id="d5946-110">コンパイラは実行時に変数に含まれる値を判別できないため、これらの関数への入力はリテラルでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="d5946-110">The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time.</span></span> <span data-ttu-id="d5946-111">コンパイル時関数は、メタデータ アサーション関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-111">A compile-time function is a metadata assertion function.</span></span> <span data-ttu-id="d5946-112">アプリケーション エクスプローラーでエンティティを表す引数を取得し、コンパイル時にその引数を検証します。</span><span class="sxs-lookup"><span data-stu-id="d5946-112">It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time.</span></span> <span data-ttu-id="d5946-113">実行時に影響を与えません。</span><span class="sxs-lookup"><span data-stu-id="d5946-113">It has no effect at run time.</span></span> <span data-ttu-id="d5946-114">属性は **SysAttribute** クラスから継承するクラスです。</span><span class="sxs-lookup"><span data-stu-id="d5946-114">Attributes are classes that inherit from the **SysAttribute** class.</span></span> <span data-ttu-id="d5946-115">フォーム、レポート、クエリ、メニュー のメタデータの検証をサポートするには、コントロールの **AutoDeclaration** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="d5946-115">To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls.</span></span> <span data-ttu-id="d5946-116">これらの機能のほとんどは、アプリケーション エクスプローラーにある項目に関するメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-116">Most of these functions retrieve metadata about items that are in the Application Explorer.</span></span> <span data-ttu-id="d5946-117">いくつかの一般的なコンパイル時機能は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d5946-117">Some common compile time functions are as follows:</span></span>
+<span data-ttu-id="b4f0d-106">コンパイル時関数は、X++ コードのコンパイル時に早期実行されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-106">Compile-time functions are executed early during compilation of X++ code.</span></span> <span data-ttu-id="b4f0d-107">アプリケーション エクスプローラーに保存されているメタデータの変更に対してコードを復元するためには、可能な限り X++ で使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-107">They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer.</span></span> <span data-ttu-id="b4f0d-108">コンパイル時関数は、コンパイラによって入力値が検証されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-108">Compile-time functions have their input value verified by the compiler.</span></span> <span data-ttu-id="b4f0d-109">入力された値が見つからず、アプリケーション エクスプローラーの既存のオブジェクトが一致しない場合は、コンパイラーはエラーを発行します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-109">If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error.</span></span> <span data-ttu-id="b4f0d-110">コンパイラは実行時に変数に含まれる値を判別できないため、これらの関数への入力はリテラルでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-110">The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time.</span></span> <span data-ttu-id="b4f0d-111">コンパイル時関数は、メタデータ アサーション関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-111">A compile-time function is a metadata assertion function.</span></span> <span data-ttu-id="b4f0d-112">アプリケーション エクスプローラーでエンティティを表す引数を取得し、コンパイル時にその引数を検証します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-112">It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time.</span></span> <span data-ttu-id="b4f0d-113">実行時に影響を与えません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-113">It has no effect at run time.</span></span> <span data-ttu-id="b4f0d-114">属性は **SysAttribute** クラスから継承するクラスです。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-114">Attributes are classes that inherit from the **SysAttribute** class.</span></span> <span data-ttu-id="b4f0d-115">フォーム、レポート、クエリ、メニュー のメタデータの検証をサポートするには、コントロールの **AutoDeclaration** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-115">To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls.</span></span> <span data-ttu-id="b4f0d-116">これらの機能のほとんどは、アプリケーション エクスプローラーにある項目に関するメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-116">Most of these functions retrieve metadata about items that are in the Application Explorer.</span></span> <span data-ttu-id="b4f0d-117">いくつかの一般的なコンパイル時機能は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-117">Some common compile time functions are as follows:</span></span>
 
--   <span data-ttu-id="d5946-118">`classNum` – クラスの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-118">`classNum` – Retrieves the ID of a class.</span></span>
--   <span data-ttu-id="d5946-119">`classStr` – コンパイル時に、その名前のクラスが存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="d5946-119">`classStr` – During compile time, verifies that a class of that name exists.</span></span> <span data-ttu-id="d5946-120">この方法は、実行時にエラーを後で発見するよりも優れています。</span><span class="sxs-lookup"><span data-stu-id="d5946-120">This approach is better than discovering the error later during run time.</span></span>
--   <span data-ttu-id="d5946-121">`evalBuf`– X++ コードの入力文字列を評価し、結果を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-121">`evalBuf`– Evaluates the input string of X++ code, and then returns the results as a string.</span></span>
--   <span data-ttu-id="d5946-122">`literalStr` – は、文字列 `"@SYS12345"` などのラベルの文字列表示が与えられたときにラベル ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-122">`literalStr` – retrieves a label ID when given the string representation of a label, such as the string `"@SYS12345"`.</span></span> <span data-ttu-id="d5946-123">たとえば、`myLabel.exists(literalStr("@SYS12345"));`。</span><span class="sxs-lookup"><span data-stu-id="d5946-123">For example, `myLabel.exists(literalStr("@SYS12345"));`.</span></span>
+-   <span data-ttu-id="b4f0d-118">`classNum` – クラスの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-118">`classNum` – Retrieves the ID of a class.</span></span>
+-   <span data-ttu-id="b4f0d-119">`classStr` – コンパイル時に、その名前のクラスが存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-119">`classStr` – During compile time, verifies that a class of that name exists.</span></span> <span data-ttu-id="b4f0d-120">この方法は、実行時にエラーを後で発見するよりも優れています。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-120">This approach is better than discovering the error later during run time.</span></span>
+-   <span data-ttu-id="b4f0d-121">`evalBuf`– X++ コードの入力文字列を評価し、結果を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-121">`evalBuf`– Evaluates the input string of X++ code, and then returns the results as a string.</span></span>
+-   <span data-ttu-id="b4f0d-122">`literalStr` – は、文字列 `"@SYS12345"` などのラベルの文字列表示が与えられたときにラベル ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-122">`literalStr` – retrieves a label ID when given the string representation of a label, such as the string `"@SYS12345"`.</span></span> <span data-ttu-id="b4f0d-123">たとえば、`myLabel.exists(literalStr("@SYS12345"));`。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-123">For example, `myLabel.exists(literalStr("@SYS12345"));`.</span></span>
 
-| <span data-ttu-id="d5946-124">**メモ**</span><span class="sxs-lookup"><span data-stu-id="d5946-124">**Note**</span></span>                                                         |
-|------------------------------------------------------------------|
-| <span data-ttu-id="d5946-125">X++ コンパイル時関数は .NET プログラムから呼び出すことはできません。</span><span class="sxs-lookup"><span data-stu-id="d5946-125">X++ compile time functions cannot be called from a .NET program.</span></span> |
+> [!NOTE]
+> <span data-ttu-id="b4f0d-124">X++ コンパイル時関数は .NET プログラムから呼び出すことはできません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-124">X++ compile time functions cannot be called from a .NET program.</span></span>
 
-### <a name="functions"></a><span data-ttu-id="d5946-126">関数</span><span class="sxs-lookup"><span data-stu-id="d5946-126">Functions</span></span>
+### <a name="functions"></a><span data-ttu-id="b4f0d-125">関数</span><span class="sxs-lookup"><span data-stu-id="b4f0d-125">Functions</span></span>
 
-## <a name="attributestr"></a><span data-ttu-id="d5946-127">attributeStr</span><span class="sxs-lookup"><span data-stu-id="d5946-127">attributeStr</span></span>
-<span data-ttu-id="d5946-128">指定した属性クラスがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-128">Validates that the specified attribute class exists in the Application Explorer; if not, a compiler error occurs.</span></span>
+## <a name="attributestr"></a><span data-ttu-id="b4f0d-126">attributeStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-126">attributeStr</span></span>
+<span data-ttu-id="b4f0d-127">指定した属性クラスがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-127">Validates that the specified attribute class exists in the Application Explorer; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-129">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-129">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-128">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-128">Syntax</span></span>
 
 ```xpp
 str classStr(class class)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-130">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-129">Parameters</span></span>
 
-| <span data-ttu-id="d5946-131">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-131">Parameter</span></span> | <span data-ttu-id="d5946-132">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-132">Description</span></span>                            |
+| <span data-ttu-id="b4f0d-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-130">Parameter</span></span> | <span data-ttu-id="b4f0d-131">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-131">Description</span></span>                            |
 |-----------|----------------------------------------|
-| <span data-ttu-id="d5946-133">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-133">class</span></span>     | <span data-ttu-id="d5946-134">検証する属性の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-134">The name of the attribute to validate.</span></span> |
+| <span data-ttu-id="b4f0d-132">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-132">class</span></span>     | <span data-ttu-id="b4f0d-133">検証する属性の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-133">The name of the attribute to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-135">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-135">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-134">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-134">Return Value</span></span>
 
-<span data-ttu-id="d5946-136">属性の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-136">The name of the attribute.</span></span>
+<span data-ttu-id="b4f0d-135">属性の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-135">The name of the attribute.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-137">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-137">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-136">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-136">Remarks</span></span>
 
-<span data-ttu-id="d5946-138">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-138">This is a compile-time function.</span></span> <span data-ttu-id="d5946-139">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-139">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-137">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-137">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-138">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-138">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-140">例</span><span class="sxs-lookup"><span data-stu-id="d5946-140">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-139">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-139">Example</span></span>
 ```xpp
 static void attributeStrExample(Args _args)
 {
@@ -80,30 +79,30 @@ static void attributeStrExample(Args _args)
 }
 ``` 
 
-## <a name="classnum"></a><span data-ttu-id="d5946-141">classNum</span><span class="sxs-lookup"><span data-stu-id="d5946-141">classNum</span></span>
-<span data-ttu-id="d5946-142">指定されたクラスの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-142">Retrieves the ID of the specified class.</span></span>
+## <a name="classnum"></a><span data-ttu-id="b4f0d-140">classNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-140">classNum</span></span>
+<span data-ttu-id="b4f0d-141">指定されたクラスの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-141">Retrieves the ID of the specified class.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-143">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-143">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-142">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-142">Syntax</span></span>
 
 ```xpp
 int classNum(class class)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-144">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-144">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-143">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-143">Parameters</span></span>
 
-| <span data-ttu-id="d5946-145">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-145">Parameter</span></span> | <span data-ttu-id="d5946-146">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-146">Description</span></span>                             |
+| <span data-ttu-id="b4f0d-144">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-144">Parameter</span></span> | <span data-ttu-id="b4f0d-145">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-145">Description</span></span>                             |
 |-----------|-----------------------------------------|
-| <span data-ttu-id="d5946-147">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-147">class</span></span>     | <span data-ttu-id="d5946-148">ID を取得するクラス。</span><span class="sxs-lookup"><span data-stu-id="d5946-148">The class for which to retrieve the ID.</span></span> |
+| <span data-ttu-id="b4f0d-146">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-146">class</span></span>     | <span data-ttu-id="b4f0d-147">ID を取得するクラス。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-147">The class for which to retrieve the ID.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-149">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-149">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-148">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-148">Return Value</span></span>
 
-<span data-ttu-id="d5946-150">指定されたクラスの ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-150">The ID of the specified class.</span></span>
+<span data-ttu-id="b4f0d-149">指定されたクラスの ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-149">The ID of the specified class.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-151">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-151">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-150">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-150">Remarks</span></span>
 
-<span data-ttu-id="d5946-152">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-152">This is a compile-time function.</span></span> <span data-ttu-id="d5946-153">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-153">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-151">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-151">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-152">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-152">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-154">例</span><span class="sxs-lookup"><span data-stu-id="d5946-154">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-153">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-153">Example</span></span>
 
 ```xpp
 static void classNumExample(Args _args)
@@ -116,30 +115,30 @@ static void classNumExample(Args _args)
 }
 ```
 
-## <a name="classstr"></a><span data-ttu-id="d5946-155">classStr</span><span class="sxs-lookup"><span data-stu-id="d5946-155">classStr</span></span>
-<span data-ttu-id="d5946-156">文字列としてクラスの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-156">Retrieves the name of a class as a string.</span></span>
+## <a name="classstr"></a><span data-ttu-id="b4f0d-154">classStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-154">classStr</span></span>
+<span data-ttu-id="b4f0d-155">文字列としてクラスの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-155">Retrieves the name of a class as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-157">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-157">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-156">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-156">Syntax</span></span>
 
 ```xpp
 str classStr(class class)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-158">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-157">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-157">Parameters</span></span>
 
-| <span data-ttu-id="d5946-159">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-159">Parameter</span></span> | <span data-ttu-id="d5946-160">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-160">Description</span></span>                      |
+| <span data-ttu-id="b4f0d-158">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-158">Parameter</span></span> | <span data-ttu-id="b4f0d-159">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-159">Description</span></span>                      |
 |-----------|----------------------------------|
-| <span data-ttu-id="d5946-161">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-161">class</span></span>     | <span data-ttu-id="d5946-162">返すクラスの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-162">The name of the class to return.</span></span> |
+| <span data-ttu-id="b4f0d-160">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-160">class</span></span>     | <span data-ttu-id="b4f0d-161">返すクラスの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-161">The name of the class to return.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-163">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-163">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-162">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-162">Return Value</span></span>
 
-<span data-ttu-id="d5946-164">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-164">The name of the class.</span></span>
+<span data-ttu-id="b4f0d-163">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-163">The name of the class.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-165">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-165">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-164">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-164">Remarks</span></span>
 
-<span data-ttu-id="d5946-166">リテラル テキストの代わりにこの関数を使用して、クラス名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-166">Use this function instead of literal text to retrieve a string that contains the class name.</span></span> <span data-ttu-id="d5946-167">クラスが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-167">If the class does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-168">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-168">This is a compile-time function.</span></span> <span data-ttu-id="d5946-169">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-169">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-165">リテラル テキストの代わりにこの関数を使用して、クラス名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-165">Use this function instead of literal text to retrieve a string that contains the class name.</span></span> <span data-ttu-id="b4f0d-166">クラスが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-166">If the class does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-167">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-167">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-168">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-168">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-170">例</span><span class="sxs-lookup"><span data-stu-id="d5946-170">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-169">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-169">Example</span></span>
 
 ```xpp
 static void clStrExample(Args _args)
@@ -152,30 +151,30 @@ static void clStrExample(Args _args)
 }
 ```
 
-## <a name="configurationkeynum"></a><span data-ttu-id="d5946-171">configurationKeyNum</span><span class="sxs-lookup"><span data-stu-id="d5946-171">configurationKeyNum</span></span>
-<span data-ttu-id="d5946-172">指定されたコンフィギュレーション キーの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-172">Retrieves the ID of the specified configuration key.</span></span>
+## <a name="configurationkeynum"></a><span data-ttu-id="b4f0d-170">configurationKeyNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-170">configurationKeyNum</span></span>
+<span data-ttu-id="b4f0d-171">指定されたコンフィギュレーション キーの ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-171">Retrieves the ID of the specified configuration key.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-173">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-173">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-172">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-172">Syntax</span></span>
 
 ```xpp
 int configurationKeyNum(str keyname)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-174">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-173">Parameters</span></span>
 
-| <span data-ttu-id="d5946-175">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-175">Parameter</span></span> | <span data-ttu-id="d5946-176">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-176">Description</span></span>                                       |
+| <span data-ttu-id="b4f0d-174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-174">Parameter</span></span> | <span data-ttu-id="b4f0d-175">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-175">Description</span></span>                                       |
 |-----------|---------------------------------------------------|
-| <span data-ttu-id="d5946-177">keyname</span><span class="sxs-lookup"><span data-stu-id="d5946-177">keyname</span></span>   | <span data-ttu-id="d5946-178">ID を返すコンフィギュレーション キー。</span><span class="sxs-lookup"><span data-stu-id="d5946-178">The configuration key for which to return the ID.</span></span> |
+| <span data-ttu-id="b4f0d-176">keyname</span><span class="sxs-lookup"><span data-stu-id="b4f0d-176">keyname</span></span>   | <span data-ttu-id="b4f0d-177">ID を返すコンフィギュレーション キー。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-177">The configuration key for which to return the ID.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-179">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-179">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-178">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-178">Return Value</span></span>
 
-<span data-ttu-id="d5946-180">指定されたコンフィギュレーション キーの ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-180">The ID of the specified configuration key.</span></span>
+<span data-ttu-id="b4f0d-179">指定されたコンフィギュレーション キーの ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-179">The ID of the specified configuration key.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-181">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-181">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-180">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-180">Remarks</span></span>
 
-<span data-ttu-id="d5946-182">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-182">This is a compile-time function.</span></span> <span data-ttu-id="d5946-183">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-183">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-181">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-181">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-182">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-182">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-184">例</span><span class="sxs-lookup"><span data-stu-id="d5946-184">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-183">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-183">Example</span></span>
 
 ```xpp
 static void configurationKeyNum(Args _args)
@@ -188,30 +187,30 @@ static void configurationKeyNum(Args _args)
 }
 ```
 
-## <a name="configurationkeystr"></a><span data-ttu-id="d5946-185">configurationKeyStr</span><span class="sxs-lookup"><span data-stu-id="d5946-185">configurationKeyStr</span></span>
-<span data-ttu-id="d5946-186">文字列としてコンフィギュレーション キーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-186">Retrieves the name of a configuration key as a string.</span></span>
+## <a name="configurationkeystr"></a><span data-ttu-id="b4f0d-184">configurationKeyStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-184">configurationKeyStr</span></span>
+<span data-ttu-id="b4f0d-185">文字列としてコンフィギュレーション キーの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-185">Retrieves the name of a configuration key as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-187">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-187">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-186">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-186">Syntax</span></span>
 
 ```xpp
 str configurationKeyStr(str keyname)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-188">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-188">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-187">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-187">Parameters</span></span>
 
-| <span data-ttu-id="d5946-189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-189">Parameter</span></span> | <span data-ttu-id="d5946-190">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-190">Description</span></span>                        |
+| <span data-ttu-id="b4f0d-188">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-188">Parameter</span></span> | <span data-ttu-id="b4f0d-189">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-189">Description</span></span>                        |
 |-----------|------------------------------------|
-| <span data-ttu-id="d5946-191">keyname</span><span class="sxs-lookup"><span data-stu-id="d5946-191">keyname</span></span>   | <span data-ttu-id="d5946-192">コンフィギュレーション キーの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-192">The name of the configuration key.</span></span> |
+| <span data-ttu-id="b4f0d-190">keyname</span><span class="sxs-lookup"><span data-stu-id="b4f0d-190">keyname</span></span>   | <span data-ttu-id="b4f0d-191">コンフィギュレーション キーの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-191">The name of the configuration key.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-193">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-193">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-192">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-192">Return Value</span></span>
 
-<span data-ttu-id="d5946-194">コンフィギュレーション キーの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-194">The name of the configuration key.</span></span>
+<span data-ttu-id="b4f0d-193">コンフィギュレーション キーの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-193">The name of the configuration key.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-195">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-195">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-194">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-194">Remarks</span></span>
 
-<span data-ttu-id="d5946-196">リテラル テキストの代わりにこの関数を使用して、構成キー名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-196">Use this function instead of literal text to retrieve a string that contains the configuration key name.</span></span> <span data-ttu-id="d5946-197">キーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-197">If the key does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-198">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-198">This is a compile-time function.</span></span> <span data-ttu-id="d5946-199">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-199">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-195">リテラル テキストの代わりにこの関数を使用して、構成キー名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-195">Use this function instead of literal text to retrieve a string that contains the configuration key name.</span></span> <span data-ttu-id="b4f0d-196">キーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-196">If the key does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-197">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-197">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-198">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-198">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-200">例</span><span class="sxs-lookup"><span data-stu-id="d5946-200">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-199">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-199">Example</span></span>
 
 ```xpp
 static void configurationKeyStrExample(Args _args)
@@ -224,223 +223,223 @@ static void configurationKeyStrExample(Args _args)
 }
 ```
 
-## <a name="dataentitydatasourcestr"></a><span data-ttu-id="d5946-201">dataEntityDataSourceStr</span><span class="sxs-lookup"><span data-stu-id="d5946-201">dataEntityDataSourceStr</span></span>
-<span data-ttu-id="d5946-202">データ エンティティのデータ ソースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-202">Retrieves the name of a data source of a data entity.</span></span>
+## <a name="dataentitydatasourcestr"></a><span data-ttu-id="b4f0d-200">dataEntityDataSourceStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-200">dataEntityDataSourceStr</span></span>
+<span data-ttu-id="b4f0d-201">データ エンティティのデータ ソースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-201">Retrieves the name of a data source of a data entity.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-203">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-203">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-202">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-202">Syntax</span></span>
 
 ```xpp
 str dataEntityDataSourceStr(str dataEntity, str dataSource)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-204">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-204">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-203">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-203">Parameters</span></span>
 
-| <span data-ttu-id="d5946-205">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-205">Parameter</span></span>  | <span data-ttu-id="d5946-206">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-206">Description</span></span>                  |
+| <span data-ttu-id="b4f0d-204">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-204">Parameter</span></span>  | <span data-ttu-id="b4f0d-205">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-205">Description</span></span>                  |
 |------------|------------------------------|
-| <span data-ttu-id="d5946-207">dataEntity</span><span class="sxs-lookup"><span data-stu-id="d5946-207">dataEntity</span></span> | <span data-ttu-id="d5946-208">データ エンティティの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-208">The name of the data entity.</span></span> |
-| <span data-ttu-id="d5946-209">dataSource</span><span class="sxs-lookup"><span data-stu-id="d5946-209">dataSource</span></span> | <span data-ttu-id="d5946-210">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-210">The name of the data source.</span></span> |
+| <span data-ttu-id="b4f0d-206">dataEntity</span><span class="sxs-lookup"><span data-stu-id="b4f0d-206">dataEntity</span></span> | <span data-ttu-id="b4f0d-207">データ エンティティの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-207">The name of the data entity.</span></span> |
+| <span data-ttu-id="b4f0d-208">dataSource</span><span class="sxs-lookup"><span data-stu-id="b4f0d-208">dataSource</span></span> | <span data-ttu-id="b4f0d-209">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-209">The name of the data source.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-211">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-211">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-210">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-210">Return Value</span></span>
 
-<span data-ttu-id="d5946-212">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-212">The name of the data source.</span></span>
+<span data-ttu-id="b4f0d-211">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-211">The name of the data source.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-213">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-213">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-212">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-212">Remarks</span></span>
 
-<span data-ttu-id="d5946-214">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-214">This is a compile-time function.</span></span> <span data-ttu-id="d5946-215">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-215">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-213">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-213">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-214">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-214">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-216">例</span><span class="sxs-lookup"><span data-stu-id="d5946-216">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-215">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-215">Example</span></span>
 
-<span data-ttu-id="d5946-217">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-217">No example.</span></span>
+<span data-ttu-id="b4f0d-216">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-216">No example.</span></span>
 
-## <a name="delegatestr"></a><span data-ttu-id="d5946-218">delegateStr</span><span class="sxs-lookup"><span data-stu-id="d5946-218">delegateStr</span></span>
-<span data-ttu-id="d5946-219">委任の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-219">Returns the name of the delegate.</span></span>
+## <a name="delegatestr"></a><span data-ttu-id="b4f0d-217">delegateStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-217">delegateStr</span></span>
+<span data-ttu-id="b4f0d-218">委任の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-218">Returns the name of the delegate.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-220">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-220">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-219">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-219">Syntax</span></span>
 
 ```xpp
 str delegateStr(str class, str instanceDelegate)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-221">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-221">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-220">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-220">Parameters</span></span>
 
-| <span data-ttu-id="d5946-222">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-222">Parameter</span></span>        | <span data-ttu-id="d5946-223">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-223">Description</span></span>                            |
+| <span data-ttu-id="b4f0d-221">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-221">Parameter</span></span>        | <span data-ttu-id="b4f0d-222">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-222">Description</span></span>                            |
 |------------------|----------------------------------------|
-| <span data-ttu-id="d5946-224">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-224">class</span></span>            | <span data-ttu-id="d5946-225">クラス、テーブル、またはフォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-225">The name of the class, table, or form.</span></span> |
-| <span data-ttu-id="d5946-226">instanceDelegate</span><span class="sxs-lookup"><span data-stu-id="d5946-226">instanceDelegate</span></span> | <span data-ttu-id="d5946-227">インスタンス デリゲートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-227">The name of the instance delegate.</span></span>     |
+| <span data-ttu-id="b4f0d-223">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-223">class</span></span>            | <span data-ttu-id="b4f0d-224">クラス、テーブル、またはフォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-224">The name of the class, table, or form.</span></span> |
+| <span data-ttu-id="b4f0d-225">instanceDelegate</span><span class="sxs-lookup"><span data-stu-id="b4f0d-225">instanceDelegate</span></span> | <span data-ttu-id="b4f0d-226">インスタンス デリゲートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-226">The name of the instance delegate.</span></span>     |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-228">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-228">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-227">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-227">Return Value</span></span>
 
-<span data-ttu-id="d5946-229">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-229">The name of the delegate.</span></span>
+<span data-ttu-id="b4f0d-228">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-228">The name of the delegate.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-230">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-230">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-229">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-229">Remarks</span></span>
 
-<span data-ttu-id="d5946-231">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-231">This is a compile-time function.</span></span> <span data-ttu-id="d5946-232">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-232">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-230">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-230">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-231">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-231">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-233">例</span><span class="sxs-lookup"><span data-stu-id="d5946-233">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-232">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-232">Example</span></span>
 
-<span data-ttu-id="d5946-234">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-234">No example.</span></span>
+<span data-ttu-id="b4f0d-233">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-233">No example.</span></span>
 
-## <a name="dimensionhierarchylevelstr"></a><span data-ttu-id="d5946-235">dimensionHierarchyLevelStr</span><span class="sxs-lookup"><span data-stu-id="d5946-235">dimensionHierarchyLevelStr</span></span>
-<span data-ttu-id="d5946-236">分析コード階層レベルの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-236">Returns the name of the dimension hierarchy level.</span></span>
+## <a name="dimensionhierarchylevelstr"></a><span data-ttu-id="b4f0d-234">dimensionHierarchyLevelStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-234">dimensionHierarchyLevelStr</span></span>
+<span data-ttu-id="b4f0d-235">分析コード階層レベルの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-235">Returns the name of the dimension hierarchy level.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-237">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-237">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-236">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-236">Syntax</span></span>
 
 ```xpp
 str dimensionHierarchyLevelStr(str dimensionHierarchyLevel)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-238">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-238">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-237">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-237">Parameters</span></span>
 
-| <span data-ttu-id="d5946-239">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-239">Parameter</span></span>               | <span data-ttu-id="d5946-240">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-240">Description</span></span>                                |
+| <span data-ttu-id="b4f0d-238">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-238">Parameter</span></span>               | <span data-ttu-id="b4f0d-239">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-239">Description</span></span>                                |
 |-------------------------|--------------------------------------------|
-| <span data-ttu-id="d5946-241">dimensionHierarchyLevel</span><span class="sxs-lookup"><span data-stu-id="d5946-241">dimensionHierarchyLevel</span></span> | <span data-ttu-id="d5946-242">分析コード階層レベルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-242">The name of the dimension hierarchy level.</span></span> |
+| <span data-ttu-id="b4f0d-240">dimensionHierarchyLevel</span><span class="sxs-lookup"><span data-stu-id="b4f0d-240">dimensionHierarchyLevel</span></span> | <span data-ttu-id="b4f0d-241">分析コード階層レベルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-241">The name of the dimension hierarchy level.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-243">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-243">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-242">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-242">Return Value</span></span>
 
-<span data-ttu-id="d5946-244">分析コード階層レベルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-244">The name of the dimension hierarchy level.</span></span>
+<span data-ttu-id="b4f0d-243">分析コード階層レベルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-243">The name of the dimension hierarchy level.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-245">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-245">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-244">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-244">Remarks</span></span>
 
-<span data-ttu-id="d5946-246">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-246">This is a compile-time function.</span></span> <span data-ttu-id="d5946-247">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-247">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-245">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-245">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-246">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-246">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-248">例</span><span class="sxs-lookup"><span data-stu-id="d5946-248">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-247">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-247">Example</span></span>
 
-<span data-ttu-id="d5946-249">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-249">No example.</span></span>
+<span data-ttu-id="b4f0d-248">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-248">No example.</span></span>
 
-## <a name="dimensionhierarchystr"></a><span data-ttu-id="d5946-250">dimensionHierarchyStr</span><span class="sxs-lookup"><span data-stu-id="d5946-250">dimensionHierarchyStr</span></span>
-<span data-ttu-id="d5946-251">分析コード階層の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-251">Returns the name of the dimension hierarchy.</span></span>
+## <a name="dimensionhierarchystr"></a><span data-ttu-id="b4f0d-249">dimensionHierarchyStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-249">dimensionHierarchyStr</span></span>
+<span data-ttu-id="b4f0d-250">分析コード階層の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-250">Returns the name of the dimension hierarchy.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-252">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-252">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-251">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-251">Syntax</span></span>
 
 ```xpp
 str dimensionHierarchyStr(str dimensionHierarchy)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-253">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-253">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-252">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-252">Parameters</span></span>
 
-| <span data-ttu-id="d5946-254">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-254">Parameter</span></span>          | <span data-ttu-id="d5946-255">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-255">Description</span></span>                          |
+| <span data-ttu-id="b4f0d-253">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-253">Parameter</span></span>          | <span data-ttu-id="b4f0d-254">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-254">Description</span></span>                          |
 |--------------------|--------------------------------------|
-| <span data-ttu-id="d5946-256">dimensionHierarchy</span><span class="sxs-lookup"><span data-stu-id="d5946-256">dimensionHierarchy</span></span> | <span data-ttu-id="d5946-257">分析コード階層の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-257">The name of the dimension hierarchy.</span></span> |
+| <span data-ttu-id="b4f0d-255">dimensionHierarchy</span><span class="sxs-lookup"><span data-stu-id="b4f0d-255">dimensionHierarchy</span></span> | <span data-ttu-id="b4f0d-256">分析コード階層の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-256">The name of the dimension hierarchy.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-258">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-258">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-257">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-257">Return Value</span></span>
 
-<span data-ttu-id="d5946-259">分析コード階層の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-259">The name of the dimension hierarchy.</span></span>
+<span data-ttu-id="b4f0d-258">分析コード階層の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-258">The name of the dimension hierarchy.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-260">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-260">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-259">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-259">Remarks</span></span>
 
-<span data-ttu-id="d5946-261">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-261">This is a compile-time function.</span></span> <span data-ttu-id="d5946-262">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-262">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-260">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-260">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-261">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-261">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-263">例</span><span class="sxs-lookup"><span data-stu-id="d5946-263">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-262">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-262">Example</span></span>
 
-<span data-ttu-id="d5946-264">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-264">No example.</span></span>
+<span data-ttu-id="b4f0d-263">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-263">No example.</span></span>
 
-## <a name="dimensionreferencestr"></a><span data-ttu-id="d5946-265">dimensionReferenceStr</span><span class="sxs-lookup"><span data-stu-id="d5946-265">dimensionReferenceStr</span></span>
-<span data-ttu-id="d5946-266">分析コード参照の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-266">Returns the name of the dimension reference.</span></span>
+## <a name="dimensionreferencestr"></a><span data-ttu-id="b4f0d-264">dimensionReferenceStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-264">dimensionReferenceStr</span></span>
+<span data-ttu-id="b4f0d-265">分析コード参照の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-265">Returns the name of the dimension reference.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-267">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-267">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-266">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-266">Syntax</span></span>
 
 ```xpp
 str dimensionReferenceStr(str dimensionReference)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-268">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-268">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-267">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-267">Parameters</span></span>
 
-| <span data-ttu-id="d5946-269">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-269">Parameter</span></span>          | <span data-ttu-id="d5946-270">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-270">Description</span></span>                          |
+| <span data-ttu-id="b4f0d-268">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-268">Parameter</span></span>          | <span data-ttu-id="b4f0d-269">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-269">Description</span></span>                          |
 |--------------------|--------------------------------------|
-| <span data-ttu-id="d5946-271">dimensionReference</span><span class="sxs-lookup"><span data-stu-id="d5946-271">dimensionReference</span></span> | <span data-ttu-id="d5946-272">分析コード参照の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-272">The name of the dimension reference.</span></span> |
+| <span data-ttu-id="b4f0d-270">dimensionReference</span><span class="sxs-lookup"><span data-stu-id="b4f0d-270">dimensionReference</span></span> | <span data-ttu-id="b4f0d-271">分析コード参照の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-271">The name of the dimension reference.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-273">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-273">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-272">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-272">Return Value</span></span>
 
-<span data-ttu-id="d5946-274">分析コード参照の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-274">The name of the dimension reference.</span></span>
+<span data-ttu-id="b4f0d-273">分析コード参照の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-273">The name of the dimension reference.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-275">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-275">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-274">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-274">Remarks</span></span>
 
-<span data-ttu-id="d5946-276">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-276">This is a compile-time function.</span></span> <span data-ttu-id="d5946-277">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-277">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-275">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-275">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-276">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-276">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-278">例</span><span class="sxs-lookup"><span data-stu-id="d5946-278">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-277">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-277">Example</span></span>
 
-<span data-ttu-id="d5946-279">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-279">No example.</span></span>
+<span data-ttu-id="b4f0d-278">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-278">No example.</span></span>
 
-## <a name="dutystr"></a><span data-ttu-id="d5946-280">dutyStr</span><span class="sxs-lookup"><span data-stu-id="d5946-280">dutyStr</span></span>
-<span data-ttu-id="d5946-281">指定したセキュリティ職務権限の名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-281">Retrieves a string that represents the name of the specified security duty.</span></span>
+## <a name="dutystr"></a><span data-ttu-id="b4f0d-279">dutyStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-279">dutyStr</span></span>
+<span data-ttu-id="b4f0d-280">指定したセキュリティ職務権限の名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-280">Retrieves a string that represents the name of the specified security duty.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-282">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-282">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-281">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-281">Syntax</span></span>
 
 ```xpp
 str dutyStr(str securityDuty)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-283">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-283">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-282">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-282">Parameters</span></span>
 
-| <span data-ttu-id="d5946-284">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-284">Parameter</span></span>    | <span data-ttu-id="d5946-285">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-285">Description</span></span>                    |
+| <span data-ttu-id="b4f0d-283">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-283">Parameter</span></span>    | <span data-ttu-id="b4f0d-284">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-284">Description</span></span>                    |
 |--------------|--------------------------------|
-| <span data-ttu-id="d5946-286">securityDuty</span><span class="sxs-lookup"><span data-stu-id="d5946-286">securityDuty</span></span> | <span data-ttu-id="d5946-287">セキュリティ職務権限の名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-287">The name of the security duty.</span></span> |
+| <span data-ttu-id="b4f0d-285">securityDuty</span><span class="sxs-lookup"><span data-stu-id="b4f0d-285">securityDuty</span></span> | <span data-ttu-id="b4f0d-286">セキュリティ職務権限の名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-286">The name of the security duty.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-288">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-288">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-287">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-287">Return Value</span></span>
 
-<span data-ttu-id="d5946-289">文字列のセキュリティ職務の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-289">The name of the security duty in a string.</span></span>
+<span data-ttu-id="b4f0d-288">文字列のセキュリティ職務の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-288">The name of the security duty in a string.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-290">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-290">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-289">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-289">Remarks</span></span>
 
-<span data-ttu-id="d5946-291">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-291">This is a compile-time function.</span></span> <span data-ttu-id="d5946-292">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-292">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-290">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-290">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-291">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-291">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-293">例</span><span class="sxs-lookup"><span data-stu-id="d5946-293">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-292">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-292">Example</span></span>
 
-<span data-ttu-id="d5946-294">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-294">No example.</span></span>
+<span data-ttu-id="b4f0d-293">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-293">No example.</span></span>
 
-## <a name="enumcnt"></a><span data-ttu-id="d5946-295">enumCnt</span><span class="sxs-lookup"><span data-stu-id="d5946-295">enumCnt</span></span>
-<span data-ttu-id="d5946-296">指定された列挙型の要素数を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-296">Retrieves the number of elements in the specified enumeration type.</span></span>
+## <a name="enumcnt"></a><span data-ttu-id="b4f0d-294">enumCnt</span><span class="sxs-lookup"><span data-stu-id="b4f0d-294">enumCnt</span></span>
+<span data-ttu-id="b4f0d-295">指定された列挙型の要素数を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-295">Retrieves the number of elements in the specified enumeration type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-297">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-297">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-296">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-296">Syntax</span></span>
 
 ```xpp
 int enumCnt(enum enumtype)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-298">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-298">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-297">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-297">Parameters</span></span>
 
-| <span data-ttu-id="d5946-299">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-299">Parameter</span></span> | <span data-ttu-id="d5946-300">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-300">Description</span></span>           |
+| <span data-ttu-id="b4f0d-298">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-298">Parameter</span></span> | <span data-ttu-id="b4f0d-299">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-299">Description</span></span>           |
 |-----------|-----------------------|
-| <span data-ttu-id="d5946-301">enumtype</span><span class="sxs-lookup"><span data-stu-id="d5946-301">enumtype</span></span>  | <span data-ttu-id="d5946-302">列挙型タイプ。</span><span class="sxs-lookup"><span data-stu-id="d5946-302">The enumeration type.</span></span> |
+| <span data-ttu-id="b4f0d-300">enumtype</span><span class="sxs-lookup"><span data-stu-id="b4f0d-300">enumtype</span></span>  | <span data-ttu-id="b4f0d-301">列挙型タイプ。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-301">The enumeration type.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-303">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-303">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-302">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-302">Return Value</span></span>
 
-<span data-ttu-id="d5946-304">指定された列挙型の要素数。</span><span class="sxs-lookup"><span data-stu-id="d5946-304">The number of elements in the specified enumeration type.</span></span>
+<span data-ttu-id="b4f0d-303">指定された列挙型の要素数。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-303">The number of elements in the specified enumeration type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-305">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-305">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-304">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-304">Remarks</span></span>
 
-<span data-ttu-id="d5946-306">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-306">This is a compile-time function.</span></span> <span data-ttu-id="d5946-307">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-307">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-305">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-305">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-306">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-306">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-308">例</span><span class="sxs-lookup"><span data-stu-id="d5946-308">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-307">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-307">Example</span></span>
 
 ```xpp
 enumCnt(NoYes); //Returns 2, as the two elements are Yes and No.
 ```
 
-## <a name="enumliteralstr"></a><span data-ttu-id="d5946-309">enumLiteralStr</span><span class="sxs-lookup"><span data-stu-id="d5946-309">enumLiteralStr</span></span>
-<span data-ttu-id="d5946-310">指定した文字列が指定した列挙型の要素であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="d5946-310">Indicates whether the specified string is an element of the specified enumeration type.</span></span>
+## <a name="enumliteralstr"></a><span data-ttu-id="b4f0d-308">enumLiteralStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-308">enumLiteralStr</span></span>
+<span data-ttu-id="b4f0d-309">指定した文字列が指定した列挙型の要素であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-309">Indicates whether the specified string is an element of the specified enumeration type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-311">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-311">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-310">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-310">Syntax</span></span>
 
 ```xpp
 \enumLiteralStr(enum enum, string str)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-312">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-312">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-311">Parameters</span></span>
 
-| <span data-ttu-id="d5946-313">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-313">Parameter</span></span> | <span data-ttu-id="d5946-314">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-314">Description</span></span>                                                      |
+| <span data-ttu-id="b4f0d-312">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-312">Parameter</span></span> | <span data-ttu-id="b4f0d-313">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-313">Description</span></span>                                                      |
 |-----------|------------------------------------------------------------------|
-| <span data-ttu-id="d5946-315">列挙型</span><span class="sxs-lookup"><span data-stu-id="d5946-315">enum</span></span>      | <span data-ttu-id="d5946-316">指定された値を取得する列挙型。</span><span class="sxs-lookup"><span data-stu-id="d5946-316">The enumeration type from which to retrieve the specified value.</span></span> |
+| <span data-ttu-id="b4f0d-314">列挙型</span><span class="sxs-lookup"><span data-stu-id="b4f0d-314">enum</span></span>      | <span data-ttu-id="b4f0d-315">指定された値を取得する列挙型。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-315">The enumeration type from which to retrieve the specified value.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-317">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-317">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-316">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-316">Return Value</span></span>
 
-<span data-ttu-id="d5946-318">指定された文字列が見つかった場合の *str* パラメーターの値。それ以外の場合は、コンパイル エラーです。</span><span class="sxs-lookup"><span data-stu-id="d5946-318">The value of the *str* parameter if the specified string was found; otherwise, a compilation error.</span></span>
+<span data-ttu-id="b4f0d-317">指定された文字列が見つかった場合の *str* パラメーターの値。それ以外の場合は、コンパイル エラーです。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-317">The value of the *str* parameter if the specified string was found; otherwise, a compilation error.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-319">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-319">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-318">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-318">Remarks</span></span>
 
-<span data-ttu-id="d5946-320">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-320">This is a compile-time function.</span></span> <span data-ttu-id="d5946-321">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-321">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-319">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-319">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-320">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-320">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-322">例</span><span class="sxs-lookup"><span data-stu-id="d5946-322">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-321">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-321">Example</span></span>
 
 ```xpp
 static void getEnumValueAsString()
@@ -452,29 +451,29 @@ static void getEnumValueAsString()
 }
 ```
 
-## <a name="enumnum"></a><span data-ttu-id="d5946-323">enumNum</span><span class="sxs-lookup"><span data-stu-id="d5946-323">enumNum</span></span>
-<span data-ttu-id="d5946-324">指定された列挙型の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-324">Retrieves the ID of the specified enumeration type.</span></span>
+## <a name="enumnum"></a><span data-ttu-id="b4f0d-322">enumNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-322">enumNum</span></span>
+<span data-ttu-id="b4f0d-323">指定された列挙型の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-323">Retrieves the ID of the specified enumeration type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-325">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-325">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-324">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-324">Syntax</span></span>
 ```xpp
 int enumNum(enum enum)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-326">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-326">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-325">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-325">Parameters</span></span>
 
-| <span data-ttu-id="d5946-327">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-327">Parameter</span></span> | <span data-ttu-id="d5946-328">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-328">Description</span></span>                                 |
+| <span data-ttu-id="b4f0d-326">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-326">Parameter</span></span> | <span data-ttu-id="b4f0d-327">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-327">Description</span></span>                                 |
 |-----------|---------------------------------------------|
-| <span data-ttu-id="d5946-329">列挙型</span><span class="sxs-lookup"><span data-stu-id="d5946-329">enum</span></span>      | <span data-ttu-id="d5946-330">ID を返す列挙。</span><span class="sxs-lookup"><span data-stu-id="d5946-330">The enumeration for which to return the ID.</span></span> |
+| <span data-ttu-id="b4f0d-328">列挙型</span><span class="sxs-lookup"><span data-stu-id="b4f0d-328">enum</span></span>      | <span data-ttu-id="b4f0d-329">ID を返す列挙。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-329">The enumeration for which to return the ID.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-331">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-331">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-330">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-330">Return Value</span></span>
 
-<span data-ttu-id="d5946-332">指定された列挙型の ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-332">The ID of the specified enumeration type.</span></span>
+<span data-ttu-id="b4f0d-331">指定された列挙型の ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-331">The ID of the specified enumeration type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-333">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-333">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-332">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-332">Remarks</span></span>
 
-<span data-ttu-id="d5946-334">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-334">This is a compile-time function.</span></span> <span data-ttu-id="d5946-335">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-335">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-333">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-333">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-334">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-334">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-336">例</span><span class="sxs-lookup"><span data-stu-id="d5946-336">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-335">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-335">Example</span></span>
 
 ```xpp
 static void enumNum(Args _args)
@@ -487,30 +486,30 @@ static void enumNum(Args _args)
 }
 ```
 
-## <a name="enumstr"></a><span data-ttu-id="d5946-337">enumStr</span><span class="sxs-lookup"><span data-stu-id="d5946-337">enumStr</span></span>
-<span data-ttu-id="d5946-338">文字列として列挙型の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-338">Retrieves the name of an enumeration as a string.</span></span>
+## <a name="enumstr"></a><span data-ttu-id="b4f0d-336">enumStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-336">enumStr</span></span>
+<span data-ttu-id="b4f0d-337">文字列として列挙型の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-337">Retrieves the name of an enumeration as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-339">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-339">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-338">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-338">Syntax</span></span>
 
 ```xpp
 str enumStr(enum enum)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-340">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-339">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-339">Parameters</span></span>
 
-| <span data-ttu-id="d5946-341">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-341">Parameter</span></span> | <span data-ttu-id="d5946-342">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-342">Description</span></span>                  |
+| <span data-ttu-id="b4f0d-340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-340">Parameter</span></span> | <span data-ttu-id="b4f0d-341">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-341">Description</span></span>                  |
 |-----------|------------------------------|
-| <span data-ttu-id="d5946-343">列挙型</span><span class="sxs-lookup"><span data-stu-id="d5946-343">enum</span></span>      | <span data-ttu-id="d5946-344">列挙型の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-344">The name of the enumeration.</span></span> |
+| <span data-ttu-id="b4f0d-342">列挙型</span><span class="sxs-lookup"><span data-stu-id="b4f0d-342">enum</span></span>      | <span data-ttu-id="b4f0d-343">列挙型の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-343">The name of the enumeration.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-345">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-345">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-344">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-344">Return Value</span></span>
 
-<span data-ttu-id="d5946-346">列挙型の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-346">The name of the enumeration.</span></span>
+<span data-ttu-id="b4f0d-345">列挙型の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-345">The name of the enumeration.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-347">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-347">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-346">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-346">Remarks</span></span>
 
-<span data-ttu-id="d5946-348">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-348">This is a compile-time function.</span></span> <span data-ttu-id="d5946-349">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-349">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-347">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-347">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-348">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-348">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-350">例</span><span class="sxs-lookup"><span data-stu-id="d5946-350">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-349">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-349">Example</span></span>
 
 ```xpp
 static void enumStrExample(Args _args)
@@ -523,30 +522,30 @@ static void enumStrExample(Args _args)
 }
 ```
 
-## <a name="extendedtypenum"></a><span data-ttu-id="d5946-351">extendedTypeNum</span><span class="sxs-lookup"><span data-stu-id="d5946-351">extendedTypeNum</span></span>
-<span data-ttu-id="d5946-352">指定された拡張データ型の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-352">Retrieves the ID of the specified extended data type.</span></span>
+## <a name="extendedtypenum"></a><span data-ttu-id="b4f0d-350">extendedTypeNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-350">extendedTypeNum</span></span>
+<span data-ttu-id="b4f0d-351">指定された拡張データ型の ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-351">Retrieves the ID of the specified extended data type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-353">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-353">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-352">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-352">Syntax</span></span>
 
 ```xpp
 int extendedTypeNum(int str)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-354">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-353">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-353">Parameters</span></span>
 
-| <span data-ttu-id="d5946-355">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-355">Parameter</span></span> | <span data-ttu-id="d5946-356">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-356">Description</span></span>                                        |
+| <span data-ttu-id="b4f0d-354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-354">Parameter</span></span> | <span data-ttu-id="b4f0d-355">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-355">Description</span></span>                                        |
 |-----------|----------------------------------------------------|
-| <span data-ttu-id="d5946-357">str</span><span class="sxs-lookup"><span data-stu-id="d5946-357">str</span></span>       | <span data-ttu-id="d5946-358">ID を返す拡張データ型。</span><span class="sxs-lookup"><span data-stu-id="d5946-358">The extended data type for which to return the ID.</span></span> |
+| <span data-ttu-id="b4f0d-356">str</span><span class="sxs-lookup"><span data-stu-id="b4f0d-356">str</span></span>       | <span data-ttu-id="b4f0d-357">ID を返す拡張データ型。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-357">The extended data type for which to return the ID.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-359">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-359">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-358">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-358">Return Value</span></span>
 
-<span data-ttu-id="d5946-360">指定された拡張データ型の ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-360">The ID of the specified extended data type.</span></span>
+<span data-ttu-id="b4f0d-359">指定された拡張データ型の ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-359">The ID of the specified extended data type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-361">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-361">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-360">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-360">Remarks</span></span>
 
-<span data-ttu-id="d5946-362">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-362">This is a compile-time function.</span></span> <span data-ttu-id="d5946-363">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-363">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-361">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-361">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-362">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-362">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-364">例</span><span class="sxs-lookup"><span data-stu-id="d5946-364">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-363">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-363">Example</span></span>
 
 ```xpp
 static void EDTNum(Args _args)
@@ -563,30 +562,30 @@ static void EDTNum(Args _args)
 }
 ```
 
-## <a name="extendedtypestr"></a><span data-ttu-id="d5946-365">extendedTypeStr</span><span class="sxs-lookup"><span data-stu-id="d5946-365">extendedTypeStr</span></span>
-<span data-ttu-id="d5946-366">文字列として拡張データ型の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-366">Retrieves the name of an extended data type as a string.</span></span>
+## <a name="extendedtypestr"></a><span data-ttu-id="b4f0d-364">extendedTypeStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-364">extendedTypeStr</span></span>
+<span data-ttu-id="b4f0d-365">文字列として拡張データ型の名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-365">Retrieves the name of an extended data type as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-367">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-367">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-366">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-366">Syntax</span></span>
 
 ```xpp
 str extendedTypeStr(int str)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-368">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-367">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-367">Parameters</span></span>
 
-| <span data-ttu-id="d5946-369">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-369">Parameter</span></span> | <span data-ttu-id="d5946-370">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-370">Description</span></span>                         |
+| <span data-ttu-id="b4f0d-368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-368">Parameter</span></span> | <span data-ttu-id="b4f0d-369">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-369">Description</span></span>                         |
 |-----------|-------------------------------------|
-| <span data-ttu-id="d5946-371">str</span><span class="sxs-lookup"><span data-stu-id="d5946-371">str</span></span>       | <span data-ttu-id="d5946-372">拡張データ型の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-372">The name of the extended data type.</span></span> |
+| <span data-ttu-id="b4f0d-370">str</span><span class="sxs-lookup"><span data-stu-id="b4f0d-370">str</span></span>       | <span data-ttu-id="b4f0d-371">拡張データ型の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-371">The name of the extended data type.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-373">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-373">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-372">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-372">Return Value</span></span>
 
-<span data-ttu-id="d5946-374">拡張データ型の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-374">The name of the extended data type.</span></span>
+<span data-ttu-id="b4f0d-373">拡張データ型の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-373">The name of the extended data type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-375">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-375">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-374">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-374">Remarks</span></span>
 
-<span data-ttu-id="d5946-376">リテラル テキストの代わりにこの関数を使用すると、拡張データ型名を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-376">Use this function instead of literal text to return a string that contains the extended data type name.</span></span> <span data-ttu-id="d5946-377">データ タイプが存在しない場合、**extendedTypeStr** 関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-377">If the data type does not exist, the **extendedTypeStr** function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-378">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-378">This is a compile-time function.</span></span> <span data-ttu-id="d5946-379">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-379">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-375">リテラル テキストの代わりにこの関数を使用すると、拡張データ型名を含む文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-375">Use this function instead of literal text to return a string that contains the extended data type name.</span></span> <span data-ttu-id="b4f0d-376">データ タイプが存在しない場合、**extendedTypeStr** 関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-376">If the data type does not exist, the **extendedTypeStr** function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-377">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-377">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-378">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-378">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-380">例</span><span class="sxs-lookup"><span data-stu-id="d5946-380">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-379">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-379">Example</span></span>
 
 ```xpp
 static void EDTStr(Args _args)
@@ -603,33 +602,33 @@ static void EDTStr(Args _args)
 }
 ```
 
-## <a name="fieldnum"></a><span data-ttu-id="d5946-381">fieldNum</span><span class="sxs-lookup"><span data-stu-id="d5946-381">fieldNum</span></span>
-<span data-ttu-id="d5946-382">指定したフィールドの ID 番号を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-382">Returns the ID number of the specified field.</span></span>
+## <a name="fieldnum"></a><span data-ttu-id="b4f0d-380">fieldNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-380">fieldNum</span></span>
+<span data-ttu-id="b4f0d-381">指定したフィールドの ID 番号を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-381">Returns the ID number of the specified field.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-383">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-383">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-382">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-382">Syntax</span></span>
 
 ```xpp
 int fieldNum(str tableName, str fieldName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-384">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-384">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-383">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-383">Parameters</span></span>
 
-| <span data-ttu-id="d5946-385">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-385">Parameter</span></span> | <span data-ttu-id="d5946-386">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-386">Description</span></span>            |
+| <span data-ttu-id="b4f0d-384">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-384">Parameter</span></span> | <span data-ttu-id="b4f0d-385">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-385">Description</span></span>            |
 |-----------|------------------------|
-| <span data-ttu-id="d5946-387">tableName</span><span class="sxs-lookup"><span data-stu-id="d5946-387">tableName</span></span> | <span data-ttu-id="d5946-388">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-388">The name of the table.</span></span> |
-| <span data-ttu-id="d5946-389">fieldName</span><span class="sxs-lookup"><span data-stu-id="d5946-389">fieldName</span></span> | <span data-ttu-id="d5946-390">フィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-390">The name of the field.</span></span> |
+| <span data-ttu-id="b4f0d-386">tableName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-386">tableName</span></span> | <span data-ttu-id="b4f0d-387">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-387">The name of the table.</span></span> |
+| <span data-ttu-id="b4f0d-388">fieldName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-388">fieldName</span></span> | <span data-ttu-id="b4f0d-389">フィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-389">The name of the field.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-391">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-391">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-390">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-390">Return Value</span></span>
 
-<span data-ttu-id="d5946-392">指定されたフィールドの ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-392">The ID of the specified field.</span></span>
+<span data-ttu-id="b4f0d-391">指定されたフィールドの ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-391">The ID of the specified field.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-393">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-393">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-392">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-392">Remarks</span></span>
 
-<span data-ttu-id="d5946-394">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-394">This is a compile-time function.</span></span> <span data-ttu-id="d5946-395">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-395">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-393">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-393">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-394">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-394">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-396">例</span><span class="sxs-lookup"><span data-stu-id="d5946-396">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-395">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-395">Example</span></span>
 
-<span data-ttu-id="d5946-397">次の例では、**CashDisc** フィールドの番号を **CustTable** テーブルに出力します。</span><span class="sxs-lookup"><span data-stu-id="d5946-397">The following example prints the number of the **CashDisc** field in the **CustTable** table.</span></span>
+<span data-ttu-id="b4f0d-396">次の例では、**CashDisc** フィールドの番号を **CustTable** テーブルに出力します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-396">The following example prints the number of the **CashDisc** field in the **CustTable** table.</span></span>
 
 ```xpp
 static void fieldNumExample(Args _args)
@@ -646,33 +645,33 @@ CashDisc has a field ID of 10 in the CustTable table.
 ****/
 ```
 
-## <a name="fieldpname"></a><span data-ttu-id="d5946-398">fieldPName</span><span class="sxs-lookup"><span data-stu-id="d5946-398">fieldPName</span></span>
-<span data-ttu-id="d5946-399">指定されたフィールドのラベルを取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-399">Retrieves the label of the specified field.</span></span>
+## <a name="fieldpname"></a><span data-ttu-id="b4f0d-397">fieldPName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-397">fieldPName</span></span>
+<span data-ttu-id="b4f0d-398">指定されたフィールドのラベルを取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-398">Retrieves the label of the specified field.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-400">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-400">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-399">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-399">Syntax</span></span>
 
 ```xpp
 str fieldPName(str tableid, str fieldid)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-401">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-401">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-400">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-400">Parameters</span></span>
 
-| <span data-ttu-id="d5946-402">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-402">Parameter</span></span> | <span data-ttu-id="d5946-403">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-403">Description</span></span>                                  |
+| <span data-ttu-id="b4f0d-401">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-401">Parameter</span></span> | <span data-ttu-id="b4f0d-402">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-402">Description</span></span>                                  |
 |-----------|----------------------------------------------|
-| <span data-ttu-id="d5946-404">tableid</span><span class="sxs-lookup"><span data-stu-id="d5946-404">tableid</span></span>   | <span data-ttu-id="d5946-405">指定されたフィールドを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-405">The table that contains the specified field.</span></span> |
-| <span data-ttu-id="d5946-406">fieldid</span><span class="sxs-lookup"><span data-stu-id="d5946-406">fieldid</span></span>   | <span data-ttu-id="d5946-407">変換するフィールド。</span><span class="sxs-lookup"><span data-stu-id="d5946-407">The field to convert.</span></span>                        |
+| <span data-ttu-id="b4f0d-403">tableid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-403">tableid</span></span>   | <span data-ttu-id="b4f0d-404">指定されたフィールドを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-404">The table that contains the specified field.</span></span> |
+| <span data-ttu-id="b4f0d-405">fieldid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-405">fieldid</span></span>   | <span data-ttu-id="b4f0d-406">変換するフィールド。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-406">The field to convert.</span></span>                        |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-408">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-408">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-407">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-407">Return Value</span></span>
 
-<span data-ttu-id="d5946-409">フィールドのラベル。</span><span class="sxs-lookup"><span data-stu-id="d5946-409">The label of the field.</span></span>
+<span data-ttu-id="b4f0d-408">フィールドのラベル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-408">The label of the field.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-410">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-410">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-409">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-409">Remarks</span></span>
 
-<span data-ttu-id="d5946-411">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-411">This is a compile-time function.</span></span> <span data-ttu-id="d5946-412">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-412">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-410">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-410">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-411">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-411">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-413">例</span><span class="sxs-lookup"><span data-stu-id="d5946-413">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-412">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-412">Example</span></span>
 
-<span data-ttu-id="d5946-414">次の例では、**CashDisc** フィールドのラベルを出力します。</span><span class="sxs-lookup"><span data-stu-id="d5946-414">The following example prints the label of the **CashDisc** field.</span></span>
+<span data-ttu-id="b4f0d-413">次の例では、**CashDisc** フィールドのラベルを出力します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-413">The following example prints the label of the **CashDisc** field.</span></span>
 
 ```xpp
 static void fieldPNameExample(Args _arg)
@@ -689,33 +688,33 @@ Cash discount is the label of the CashDisc field.
 ****/
 ```
 
-## <a name="fieldstr"></a><span data-ttu-id="d5946-415">fieldStr</span><span class="sxs-lookup"><span data-stu-id="d5946-415">fieldStr</span></span>
-<span data-ttu-id="d5946-416">指定したフィールドのフィールド名を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-416">Retrieves the field name of the specified field.</span></span>
+## <a name="fieldstr"></a><span data-ttu-id="b4f0d-414">fieldStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-414">fieldStr</span></span>
+<span data-ttu-id="b4f0d-415">指定したフィールドのフィールド名を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-415">Retrieves the field name of the specified field.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-417">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-417">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-416">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-416">Syntax</span></span>
 
 ```xpp
 str fieldStr(str tableid, str fieldid)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-418">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-418">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-417">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-417">Parameters</span></span>
 
-| <span data-ttu-id="d5946-419">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-419">Parameter</span></span> | <span data-ttu-id="d5946-420">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-420">Description</span></span>                        |
+| <span data-ttu-id="b4f0d-418">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-418">Parameter</span></span> | <span data-ttu-id="b4f0d-419">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-419">Description</span></span>                        |
 |-----------|------------------------------------|
-| <span data-ttu-id="d5946-421">tableid</span><span class="sxs-lookup"><span data-stu-id="d5946-421">tableid</span></span>   | <span data-ttu-id="d5946-422">フィールドを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-422">The table that contains the field.</span></span> |
-| <span data-ttu-id="d5946-423">fieldid</span><span class="sxs-lookup"><span data-stu-id="d5946-423">fieldid</span></span>   | <span data-ttu-id="d5946-424">変換するフィールド。</span><span class="sxs-lookup"><span data-stu-id="d5946-424">The field to convert.</span></span>              |
+| <span data-ttu-id="b4f0d-420">tableid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-420">tableid</span></span>   | <span data-ttu-id="b4f0d-421">フィールドを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-421">The table that contains the field.</span></span> |
+| <span data-ttu-id="b4f0d-422">fieldid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-422">fieldid</span></span>   | <span data-ttu-id="b4f0d-423">変換するフィールド。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-423">The field to convert.</span></span>              |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-425">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-425">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-424">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-424">Return Value</span></span>
 
-<span data-ttu-id="d5946-426">指定したフィールドのフィールド名。</span><span class="sxs-lookup"><span data-stu-id="d5946-426">The field name of the specified field.</span></span>
+<span data-ttu-id="b4f0d-425">指定したフィールドのフィールド名。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-425">The field name of the specified field.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-427">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-427">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-426">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-426">Remarks</span></span>
 
-<span data-ttu-id="d5946-428">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-428">This is a compile-time function.</span></span> <span data-ttu-id="d5946-429">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-429">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-427">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-427">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-428">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-428">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-430">例</span><span class="sxs-lookup"><span data-stu-id="d5946-430">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-429">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-429">Example</span></span>
 
-<span data-ttu-id="d5946-431">次の例では、**CashDisc** フィールドの名前を *myText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d5946-431">The following example assigns the name of the **CashDisc** field to the *myText* variable.</span></span>
+<span data-ttu-id="b4f0d-430">次の例では、**CashDisc** フィールドの名前を *myText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-430">The following example assigns the name of the **CashDisc** field to the *myText* variable.</span></span>
 
 ```xpp
 static void fieldStrExample(Args _arg)
@@ -732,153 +731,153 @@ CashDisc is the specified field.
 ****/
 ```
 
-## <a name="formcontrolstr"></a><span data-ttu-id="d5946-432">formControlStr</span><span class="sxs-lookup"><span data-stu-id="d5946-432">formControlStr</span></span>
-<span data-ttu-id="d5946-433">X++ コンパイラは、コントロールがフォームに存在するかどうかをチェックし、関数呼び出しを有効なコントロール名の文字列で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d5946-433">Causes the X++ compiler to check whether the control exists on the form, and to replace the function call with a string of the valid control name.</span></span>
+## <a name="formcontrolstr"></a><span data-ttu-id="b4f0d-431">formControlStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-431">formControlStr</span></span>
+<span data-ttu-id="b4f0d-432">X++ コンパイラは、コントロールがフォームに存在するかどうかをチェックし、関数呼び出しを有効なコントロール名の文字列で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-432">Causes the X++ compiler to check whether the control exists on the form, and to replace the function call with a string of the valid control name.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-434">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-434">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-433">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-433">Syntax</span></span>
 
 ```xpp
 str formControlStr(formName, controlName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-435">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-435">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-434">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-434">Parameters</span></span>
 
-| <span data-ttu-id="d5946-436">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-436">Parameter</span></span>   | <span data-ttu-id="d5946-437">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-437">Description</span></span>                                                          |
+| <span data-ttu-id="b4f0d-435">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-435">Parameter</span></span>   | <span data-ttu-id="b4f0d-436">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-436">Description</span></span>                                                          |
 |-------------|----------------------------------------------------------------------|
-| <span data-ttu-id="d5946-438">formName</span><span class="sxs-lookup"><span data-stu-id="d5946-438">formName</span></span>    | <span data-ttu-id="d5946-439">引用符ではなく、フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-439">The name of the form, not in quotation marks.</span></span>                        |
-| <span data-ttu-id="d5946-440">controlName</span><span class="sxs-lookup"><span data-stu-id="d5946-440">controlName</span></span> | <span data-ttu-id="d5946-441">フォーム上のコントロールの名前で、引用符ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5946-441">The name of the control that is on the form, not in quotation marks.</span></span> |
+| <span data-ttu-id="b4f0d-437">formName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-437">formName</span></span>    | <span data-ttu-id="b4f0d-438">引用符ではなく、フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-438">The name of the form, not in quotation marks.</span></span>                        |
+| <span data-ttu-id="b4f0d-439">controlName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-439">controlName</span></span> | <span data-ttu-id="b4f0d-440">フォーム上のコントロールの名前で、引用符ではありません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-440">The name of the control that is on the form, not in quotation marks.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-442">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-442">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-441">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-441">Return Value</span></span>
 
-<span data-ttu-id="d5946-443">アプリケーション エクスプローラーで表示されるコントロールの名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-443">A string that contains the name of the control as it appears in the Application Explorer.</span></span>
+<span data-ttu-id="b4f0d-442">アプリケーション エクスプローラーで表示されるコントロールの名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-442">A string that contains the name of the control as it appears in the Application Explorer.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-444">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-444">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-443">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-443">Remarks</span></span>
 
-<span data-ttu-id="d5946-445">コントロールがフォームに存在しないとコンパイラが判断した場合、コンパイル エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-445">A compile error is issued if the compiler determines that the control does not exist on the form.</span></span> <span data-ttu-id="d5946-446">X++ コードが引用符が含まれる文字列を使用してコントロールの名前を入力する場合、実行時までエラーを検出できません。</span><span class="sxs-lookup"><span data-stu-id="d5946-446">If your X++ code uses a string that contains quotation marks to supply the control name, the error cannot be discovered until run time.</span></span> <span data-ttu-id="d5946-447">この機能を使用すると、コンパイラはコンパイル時にエラーを早期に検出することができます。</span><span class="sxs-lookup"><span data-stu-id="d5946-447">Use of this function enables the compiler to discover the error earlier at compile time.</span></span> <span data-ttu-id="d5946-448">コンパイラにより実行される **formControlStr** などの X++ 関数は、コンパイル時関数と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="d5946-448">X++ functions such as **formControlStr** that are executed by the compiler are called compile-time functions or compile-time functions.</span></span> <span data-ttu-id="d5946-449">入力パラメーターが引用符で囲まれた標準の文字列ではないのはそのためです。</span><span class="sxs-lookup"><span data-stu-id="d5946-449">That is why the input parameters are not standard strings in quotation marks.</span></span> <span data-ttu-id="d5946-450">コンパイル時関数は、コンパイラによって出力される P コードまたはその他の実行可能ファイルでは表現されません。</span><span class="sxs-lookup"><span data-stu-id="d5946-450">Compile-time functions are not represented in the p-code or other executable that is output by the compiler.</span></span> <span data-ttu-id="d5946-451">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-451">This is a compile-time function.</span></span> <span data-ttu-id="d5946-452">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-452">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-444">コントロールがフォームに存在しないとコンパイラが判断した場合、コンパイル エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-444">A compile error is issued if the compiler determines that the control does not exist on the form.</span></span> <span data-ttu-id="b4f0d-445">X++ コードが引用符が含まれる文字列を使用してコントロールの名前を入力する場合、実行時までエラーを検出できません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-445">If your X++ code uses a string that contains quotation marks to supply the control name, the error cannot be discovered until run time.</span></span> <span data-ttu-id="b4f0d-446">この機能を使用すると、コンパイラはコンパイル時にエラーを早期に検出することができます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-446">Use of this function enables the compiler to discover the error earlier at compile time.</span></span> <span data-ttu-id="b4f0d-447">コンパイラにより実行される **formControlStr** などの X++ 関数は、コンパイル時関数と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-447">X++ functions such as **formControlStr** that are executed by the compiler are called compile-time functions or compile-time functions.</span></span> <span data-ttu-id="b4f0d-448">入力パラメーターが引用符で囲まれた標準の文字列ではないのはそのためです。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-448">That is why the input parameters are not standard strings in quotation marks.</span></span> <span data-ttu-id="b4f0d-449">コンパイル時関数は、コンパイラによって出力される P コードまたはその他の実行可能ファイルでは表現されません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-449">Compile-time functions are not represented in the p-code or other executable that is output by the compiler.</span></span> <span data-ttu-id="b4f0d-450">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-450">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-451">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-451">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-453">例</span><span class="sxs-lookup"><span data-stu-id="d5946-453">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-452">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-452">Example</span></span>
 
-<span data-ttu-id="d5946-454">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-454">No example.</span></span>
+<span data-ttu-id="b4f0d-453">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-453">No example.</span></span>
 
-## <a name="formdatafieldstr"></a><span data-ttu-id="d5946-455">formDataFieldStr</span><span class="sxs-lookup"><span data-stu-id="d5946-455">formDataFieldStr</span></span>
-<span data-ttu-id="d5946-456">フォームのデータ フィールドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-456">Returns the name of a data field in a form.</span></span>
+## <a name="formdatafieldstr"></a><span data-ttu-id="b4f0d-454">formDataFieldStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-454">formDataFieldStr</span></span>
+<span data-ttu-id="b4f0d-455">フォームのデータ フィールドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-455">Returns the name of a data field in a form.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-457">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-457">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-456">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-456">Syntax</span></span>
 
 ```xpp
 str formDataFieldStr(str formName, str dataSource, str dataField)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-458">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-458">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-457">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-457">Parameters</span></span>
 
-| <span data-ttu-id="d5946-459">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-459">Parameter</span></span>  | <span data-ttu-id="d5946-460">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-460">Description</span></span>                        |
+| <span data-ttu-id="b4f0d-458">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-458">Parameter</span></span>  | <span data-ttu-id="b4f0d-459">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-459">Description</span></span>                        |
 |------------|------------------------------------|
-| <span data-ttu-id="d5946-461">formName</span><span class="sxs-lookup"><span data-stu-id="d5946-461">formName</span></span>   | <span data-ttu-id="d5946-462">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-462">The name of the form.</span></span>              |
-| <span data-ttu-id="d5946-463">dataSource</span><span class="sxs-lookup"><span data-stu-id="d5946-463">dataSource</span></span> | <span data-ttu-id="d5946-464">フォームのデータ ソース。</span><span class="sxs-lookup"><span data-stu-id="d5946-464">The data source of the form.</span></span>       |
-| <span data-ttu-id="d5946-465">dataField</span><span class="sxs-lookup"><span data-stu-id="d5946-465">dataField</span></span>  | <span data-ttu-id="d5946-466">データ ソースのデータ フィールド。</span><span class="sxs-lookup"><span data-stu-id="d5946-466">The data field of the data source.</span></span> |
+| <span data-ttu-id="b4f0d-460">formName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-460">formName</span></span>   | <span data-ttu-id="b4f0d-461">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-461">The name of the form.</span></span>              |
+| <span data-ttu-id="b4f0d-462">dataSource</span><span class="sxs-lookup"><span data-stu-id="b4f0d-462">dataSource</span></span> | <span data-ttu-id="b4f0d-463">フォームのデータ ソース。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-463">The data source of the form.</span></span>       |
+| <span data-ttu-id="b4f0d-464">dataField</span><span class="sxs-lookup"><span data-stu-id="b4f0d-464">dataField</span></span>  | <span data-ttu-id="b4f0d-465">データ ソースのデータ フィールド。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-465">The data field of the data source.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-467">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-467">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-466">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-466">Return Value</span></span>
 
-<span data-ttu-id="d5946-468">フォームのデータ フィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-468">The name of a data field in a form.</span></span>
+<span data-ttu-id="b4f0d-467">フォームのデータ フィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-467">The name of a data field in a form.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-469">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-469">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-468">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-468">Remarks</span></span>
 
-<span data-ttu-id="d5946-470">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-470">This is a compile-time function.</span></span> <span data-ttu-id="d5946-471">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-471">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-469">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-469">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-470">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-470">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-472">例</span><span class="sxs-lookup"><span data-stu-id="d5946-472">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-471">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-471">Example</span></span>
 
 ```xpp
 str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
 ```
 
-## <a name="formdatasourcestr"></a><span data-ttu-id="d5946-473">formDataSourceStr</span><span class="sxs-lookup"><span data-stu-id="d5946-473">formDataSourceStr</span></span>
-<span data-ttu-id="d5946-474">フォームのデータ ソースの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-474">Returns the name of a data source in a form.</span></span>
+## <a name="formdatasourcestr"></a><span data-ttu-id="b4f0d-472">formDataSourceStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-472">formDataSourceStr</span></span>
+<span data-ttu-id="b4f0d-473">フォームのデータ ソースの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-473">Returns the name of a data source in a form.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-475">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-475">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-474">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-474">Syntax</span></span>
 
 ```xpp
 str formDataSourceStr(str formName, str dataSource)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-476">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-476">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-475">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-475">Parameters</span></span>
 
-| <span data-ttu-id="d5946-477">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-477">Parameter</span></span>  | <span data-ttu-id="d5946-478">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-478">Description</span></span>                  |
+| <span data-ttu-id="b4f0d-476">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-476">Parameter</span></span>  | <span data-ttu-id="b4f0d-477">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-477">Description</span></span>                  |
 |------------|------------------------------|
-| <span data-ttu-id="d5946-479">formName</span><span class="sxs-lookup"><span data-stu-id="d5946-479">formName</span></span>   | <span data-ttu-id="d5946-480">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-480">The name of the form.</span></span>        |
-| <span data-ttu-id="d5946-481">dataSource</span><span class="sxs-lookup"><span data-stu-id="d5946-481">dataSource</span></span> | <span data-ttu-id="d5946-482">フォームのデータ ソース。</span><span class="sxs-lookup"><span data-stu-id="d5946-482">The data source of the form.</span></span> |
+| <span data-ttu-id="b4f0d-478">formName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-478">formName</span></span>   | <span data-ttu-id="b4f0d-479">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-479">The name of the form.</span></span>        |
+| <span data-ttu-id="b4f0d-480">dataSource</span><span class="sxs-lookup"><span data-stu-id="b4f0d-480">dataSource</span></span> | <span data-ttu-id="b4f0d-481">フォームのデータ ソース。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-481">The data source of the form.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-483">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-483">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-482">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-482">Return Value</span></span>
 
-<span data-ttu-id="d5946-484">フォームのデータ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-484">The name of a data source in a form.</span></span>
+<span data-ttu-id="b4f0d-483">フォームのデータ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-483">The name of a data source in a form.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-485">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-485">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-484">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-484">Remarks</span></span>
 
-<span data-ttu-id="d5946-486">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-486">This is a compile-time function.</span></span> <span data-ttu-id="d5946-487">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-487">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-485">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-485">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-486">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-486">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-488">例</span><span class="sxs-lookup"><span data-stu-id="d5946-488">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-487">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-487">Example</span></span>
 
 ```xpp
 str b = formDataSourceStr(FMVehicle, FMModelRate);
 ```
 
-## <a name="formmethodstr"></a><span data-ttu-id="d5946-489">formMethodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-489">formMethodStr</span></span>
-<span data-ttu-id="d5946-490">フォームのメソッドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-490">Returns the name of a method of a form.</span></span>
+## <a name="formmethodstr"></a><span data-ttu-id="b4f0d-488">formMethodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-488">formMethodStr</span></span>
+<span data-ttu-id="b4f0d-489">フォームのメソッドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-489">Returns the name of a method of a form.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-491">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-491">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-490">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-490">Syntax</span></span>
 
 ```xpp
 str formMethodStr(str formName, str methodName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-492">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-492">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-491">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-491">Parameters</span></span>
 
-| <span data-ttu-id="d5946-493">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-493">Parameter</span></span>  | <span data-ttu-id="d5946-494">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-494">Description</span></span>             |
+| <span data-ttu-id="b4f0d-492">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-492">Parameter</span></span>  | <span data-ttu-id="b4f0d-493">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-493">Description</span></span>             |
 |------------|-------------------------|
-| <span data-ttu-id="d5946-495">formName</span><span class="sxs-lookup"><span data-stu-id="d5946-495">formName</span></span>   | <span data-ttu-id="d5946-496">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-496">The name of the form.</span></span>   |
-| <span data-ttu-id="d5946-497">methodName</span><span class="sxs-lookup"><span data-stu-id="d5946-497">methodName</span></span> | <span data-ttu-id="d5946-498">フォームのメソッド。</span><span class="sxs-lookup"><span data-stu-id="d5946-498">The method of the form.</span></span> |
+| <span data-ttu-id="b4f0d-494">formName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-494">formName</span></span>   | <span data-ttu-id="b4f0d-495">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-495">The name of the form.</span></span>   |
+| <span data-ttu-id="b4f0d-496">methodName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-496">methodName</span></span> | <span data-ttu-id="b4f0d-497">フォームのメソッド。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-497">The method of the form.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-499">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-499">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-498">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-498">Return Value</span></span>
 
-<span data-ttu-id="d5946-500">フォームのメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-500">The name of a method in a form.</span></span>
+<span data-ttu-id="b4f0d-499">フォームのメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-499">The name of a method in a form.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-501">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-501">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-500">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-500">Remarks</span></span>
 
-<span data-ttu-id="d5946-502">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-502">This is a compile-time function.</span></span> <span data-ttu-id="d5946-503">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-503">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-501">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-501">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-502">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-502">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-504">例</span><span class="sxs-lookup"><span data-stu-id="d5946-504">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-503">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-503">Example</span></span>
 
-<span data-ttu-id="d5946-505">次の例では、**showDialog** メソッドの名前を出力します。</span><span class="sxs-lookup"><span data-stu-id="d5946-505">The following example prints the name of the **showDialog** method.</span></span>
+<span data-ttu-id="b4f0d-504">次の例では、**showDialog** メソッドの名前を出力します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-504">The following example prints the name of the **showDialog** method.</span></span>
 
 ```xpp
 str c = formMethodStr(Batch,showDialog);
 ```
 
-## <a name="formstr"></a><span data-ttu-id="d5946-506">formStr</span><span class="sxs-lookup"><span data-stu-id="d5946-506">formStr</span></span>
-<span data-ttu-id="d5946-507">フォームの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-507">Retrieves the name of a form.</span></span>
+## <a name="formstr"></a><span data-ttu-id="b4f0d-505">formStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-505">formStr</span></span>
+<span data-ttu-id="b4f0d-506">フォームの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-506">Retrieves the name of a form.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-508">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-508">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-507">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-507">Syntax</span></span>
 
 ```xpp
 str formStr(str form)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-509">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-509">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-508">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-508">Parameters</span></span>
 
-| <span data-ttu-id="d5946-510">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-510">Parameter</span></span> | <span data-ttu-id="d5946-511">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-511">Description</span></span>         |
+| <span data-ttu-id="b4f0d-509">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-509">Parameter</span></span> | <span data-ttu-id="b4f0d-510">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-510">Description</span></span>         |
 |-----------|---------------------|
-| <span data-ttu-id="d5946-512">フォーム</span><span class="sxs-lookup"><span data-stu-id="d5946-512">form</span></span>      | <span data-ttu-id="d5946-513">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-513">The name of a form.</span></span> |
+| <span data-ttu-id="b4f0d-511">フォーム</span><span class="sxs-lookup"><span data-stu-id="b4f0d-511">form</span></span>      | <span data-ttu-id="b4f0d-512">フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-512">The name of a form.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-514">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-514">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-513">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-513">Return Value</span></span>
 
-<span data-ttu-id="d5946-515">フォームの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-515">A string that represents the name of the form.</span></span>
+<span data-ttu-id="b4f0d-514">フォームの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-514">A string that represents the name of the form.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-516">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-516">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-515">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-515">Remarks</span></span>
 
-<span data-ttu-id="d5946-517">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-517">This is a compile-time function.</span></span> <span data-ttu-id="d5946-518">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-518">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-516">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-516">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-517">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-517">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-519">例</span><span class="sxs-lookup"><span data-stu-id="d5946-519">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-518">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-518">Example</span></span>
 
-<span data-ttu-id="d5946-520">次の例では、InventDim フォームの名前を出力します。</span><span class="sxs-lookup"><span data-stu-id="d5946-520">The following example prints the name of the InventDim form.</span></span>
+<span data-ttu-id="b4f0d-519">次の例では、InventDim フォームの名前を出力します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-519">The following example prints the name of the InventDim form.</span></span>
 
 ```xpp
 static void formStrExample(Args _arg)
@@ -893,32 +892,32 @@ InventDim
 ****/
 ```
 
-## <a name="identifierstr"></a><span data-ttu-id="d5946-521">identifierStr</span><span class="sxs-lookup"><span data-stu-id="d5946-521">identifierStr</span></span>
-<span data-ttu-id="d5946-522">指定された識別子を文字列に変換します。</span><span class="sxs-lookup"><span data-stu-id="d5946-522">Converts the specified identifier to a string.</span></span>
+## <a name="identifierstr"></a><span data-ttu-id="b4f0d-520">identifierStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-520">identifierStr</span></span>
+<span data-ttu-id="b4f0d-521">指定された識別子を文字列に変換します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-521">Converts the specified identifier to a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-523">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-523">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-522">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-522">Syntax</span></span>
 
 ```xpp
 str identifierStr(str ident)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-524">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-524">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-523">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-523">Parameters</span></span>
 
-| <span data-ttu-id="d5946-525">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-525">Parameter</span></span> | <span data-ttu-id="d5946-526">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-526">Description</span></span>                |
+| <span data-ttu-id="b4f0d-524">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-524">Parameter</span></span> | <span data-ttu-id="b4f0d-525">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-525">Description</span></span>                |
 |-----------|----------------------------|
-| <span data-ttu-id="d5946-527">ident</span><span class="sxs-lookup"><span data-stu-id="d5946-527">ident</span></span>     | <span data-ttu-id="d5946-528">変換する ID。</span><span class="sxs-lookup"><span data-stu-id="d5946-528">The identifier to convert.</span></span> |
+| <span data-ttu-id="b4f0d-526">ident</span><span class="sxs-lookup"><span data-stu-id="b4f0d-526">ident</span></span>     | <span data-ttu-id="b4f0d-527">変換する ID。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-527">The identifier to convert.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-529">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-529">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-528">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-528">Return Value</span></span>
 
-<span data-ttu-id="d5946-530">指定した ID を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-530">A string that represents the specified identifier.</span></span>
+<span data-ttu-id="b4f0d-529">指定した ID を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-529">A string that represents the specified identifier.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-531">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-531">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-530">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-530">Remarks</span></span>
 
-<span data-ttu-id="d5946-532">**identifierStr** 関数使用する場合、ベスト プラクティス警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-532">You will receive a best practice warning if you use the **identifierStr** function.</span></span> <span data-ttu-id="d5946-533">これは、**identifierStr** に対して存在チェックが実行されたために発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-533">This occurs because existence checking is performed for **identifierStr**.</span></span> <span data-ttu-id="d5946-534">使用可能な場合は、より具体的なコンパイル時の関数を使用してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-534">Try to use a more specific compile-time function if one is available.</span></span> <span data-ttu-id="d5946-535">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-535">This is a compile-time function.</span></span> <span data-ttu-id="d5946-536">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-536">For more information, [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-531">**identifierStr** 関数使用する場合、ベスト プラクティス警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-531">You will receive a best practice warning if you use the **identifierStr** function.</span></span> <span data-ttu-id="b4f0d-532">これは、**identifierStr** に対して存在チェックが実行されたために発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-532">This occurs because existence checking is performed for **identifierStr**.</span></span> <span data-ttu-id="b4f0d-533">使用可能な場合は、より具体的なコンパイル時の関数を使用してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-533">Try to use a more specific compile-time function if one is available.</span></span> <span data-ttu-id="b4f0d-534">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-534">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-535">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-535">For more information, [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-537">例</span><span class="sxs-lookup"><span data-stu-id="d5946-537">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-536">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-536">Example</span></span>
 
-<span data-ttu-id="d5946-538">次のコード例では、*myvar* 変数名を *thevar* 変数に割り当てています。</span><span class="sxs-lookup"><span data-stu-id="d5946-538">The following code example assigns the *myvar* variable name to the *thevar* variable.</span></span>
+<span data-ttu-id="b4f0d-537">次のコード例では、*myvar* 変数名を *thevar* 変数に割り当てています。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-537">The following code example assigns the *myvar* variable name to the *thevar* variable.</span></span>
 
 ```xpp
 static void indentifierStrExample(Args _args)
@@ -936,33 +935,33 @@ Message (09:19:49 am)
 ****/
 ```
 
-## <a name="indexnum"></a><span data-ttu-id="d5946-539">indexNum</span><span class="sxs-lookup"><span data-stu-id="d5946-539">indexNum</span></span>
-<span data-ttu-id="d5946-540">指定されたインデックスを数字に変換します。</span><span class="sxs-lookup"><span data-stu-id="d5946-540">Converts the specified index to a number.</span></span>
+## <a name="indexnum"></a><span data-ttu-id="b4f0d-538">indexNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-538">indexNum</span></span>
+<span data-ttu-id="b4f0d-539">指定されたインデックスを数字に変換します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-539">Converts the specified index to a number.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-541">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-541">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-540">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-540">Syntax</span></span>
 
 ```xpp
 int indexNum(str tableid, str indexid)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-542">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-542">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-541">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-541">Parameters</span></span>
 
-| <span data-ttu-id="d5946-543">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-543">Parameter</span></span> | <span data-ttu-id="d5946-544">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-544">Description</span></span>                        |
+| <span data-ttu-id="b4f0d-542">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-542">Parameter</span></span> | <span data-ttu-id="b4f0d-543">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-543">Description</span></span>                        |
 |-----------|------------------------------------|
-| <span data-ttu-id="d5946-545">tableid</span><span class="sxs-lookup"><span data-stu-id="d5946-545">tableid</span></span>   | <span data-ttu-id="d5946-546">フィールド インデックスを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-546">The table that contains the index.</span></span> |
-| <span data-ttu-id="d5946-547">indexid</span><span class="sxs-lookup"><span data-stu-id="d5946-547">indexid</span></span>   | <span data-ttu-id="d5946-548">変換するインデックス。</span><span class="sxs-lookup"><span data-stu-id="d5946-548">The index to convert.</span></span>              |
+| <span data-ttu-id="b4f0d-544">tableid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-544">tableid</span></span>   | <span data-ttu-id="b4f0d-545">フィールド インデックスを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-545">The table that contains the index.</span></span> |
+| <span data-ttu-id="b4f0d-546">indexid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-546">indexid</span></span>   | <span data-ttu-id="b4f0d-547">変換するインデックス。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-547">The index to convert.</span></span>              |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-549">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-549">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-548">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-548">Return Value</span></span>
 
-<span data-ttu-id="d5946-550">指定されたインデックスを表すインデックス番号。</span><span class="sxs-lookup"><span data-stu-id="d5946-550">The index number that represents the specified index.</span></span>
+<span data-ttu-id="b4f0d-549">指定されたインデックスを表すインデックス番号。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-549">The index number that represents the specified index.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-551">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-551">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-550">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-550">Remarks</span></span>
 
-<span data-ttu-id="d5946-552">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-552">This is a compile-time function.</span></span> <span data-ttu-id="d5946-553">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-553">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-551">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-551">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-552">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-552">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-554">例</span><span class="sxs-lookup"><span data-stu-id="d5946-554">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-553">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-553">Example</span></span>
 
-<span data-ttu-id="d5946-555">次の例では、当事者インデックスのインデックス値を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-555">The following example returns the index value of the Party index.</span></span>
+<span data-ttu-id="b4f0d-554">次の例では、当事者インデックスのインデックス値を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-554">The following example returns the index value of the Party index.</span></span>
 
 ```xpp
 static void indexNumExample(Args _arg)
@@ -977,33 +976,33 @@ Message (11:28:03 am)
 ****/
 ```
 
-## <a name="indexstr"></a><span data-ttu-id="d5946-556">indexStr</span><span class="sxs-lookup"><span data-stu-id="d5946-556">indexStr</span></span>
-<span data-ttu-id="d5946-557">指定されたインデックスを文字列に変換します。</span><span class="sxs-lookup"><span data-stu-id="d5946-557">Converts the specified index to a string.</span></span>
+## <a name="indexstr"></a><span data-ttu-id="b4f0d-555">indexStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-555">indexStr</span></span>
+<span data-ttu-id="b4f0d-556">指定されたインデックスを文字列に変換します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-556">Converts the specified index to a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-558">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-558">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-557">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-557">Syntax</span></span>
 
 ```xpp
 str indexStr(str tableid, str indexid)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-559">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-559">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-558">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-558">Parameters</span></span>
 
-| <span data-ttu-id="d5946-560">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-560">Parameter</span></span> | <span data-ttu-id="d5946-561">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-561">Description</span></span>                        |
+| <span data-ttu-id="b4f0d-559">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-559">Parameter</span></span> | <span data-ttu-id="b4f0d-560">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-560">Description</span></span>                        |
 |-----------|------------------------------------|
-| <span data-ttu-id="d5946-562">tableid</span><span class="sxs-lookup"><span data-stu-id="d5946-562">tableid</span></span>   | <span data-ttu-id="d5946-563">フィールド インデックスを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-563">The table that contains the index.</span></span> |
-| <span data-ttu-id="d5946-564">indexid</span><span class="sxs-lookup"><span data-stu-id="d5946-564">indexid</span></span>   | <span data-ttu-id="d5946-565">変換するインデックス。</span><span class="sxs-lookup"><span data-stu-id="d5946-565">The index to convert.</span></span>              |
+| <span data-ttu-id="b4f0d-561">tableid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-561">tableid</span></span>   | <span data-ttu-id="b4f0d-562">フィールド インデックスを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-562">The table that contains the index.</span></span> |
+| <span data-ttu-id="b4f0d-563">indexid</span><span class="sxs-lookup"><span data-stu-id="b4f0d-563">indexid</span></span>   | <span data-ttu-id="b4f0d-564">変換するインデックス。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-564">The index to convert.</span></span>              |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-566">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-566">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-565">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-565">Return Value</span></span>
 
-<span data-ttu-id="d5946-567">指定インデックスを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-567">A string that represents the specified index.</span></span>
+<span data-ttu-id="b4f0d-566">指定インデックスを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-566">A string that represents the specified index.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-568">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-568">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-567">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-567">Remarks</span></span>
 
-<span data-ttu-id="d5946-569">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-569">This is a compile-time function.</span></span> <span data-ttu-id="d5946-570">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-570">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-568">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-568">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-569">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-569">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-571">例</span><span class="sxs-lookup"><span data-stu-id="d5946-571">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-570">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-570">Example</span></span>
 
-<span data-ttu-id="d5946-572">次の例では、**CashDisc** インデックス値を *myText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d5946-572">The following example assigns the **CashDisc** index value to the *myText* variable.</span></span>
+<span data-ttu-id="b4f0d-571">次の例では、**CashDisc** インデックス値を *myText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-571">The following example assigns the **CashDisc** index value to the *myText* variable.</span></span>
 
 ```xpp
 static void fieldStrExample(Args _arg)
@@ -1020,30 +1019,30 @@ CashDisc is the specified index.
 ****/
 ```
 
-## <a name="licensecodenum"></a><span data-ttu-id="d5946-573">licenseCodeNum</span><span class="sxs-lookup"><span data-stu-id="d5946-573">licenseCodeNum</span></span>
-<span data-ttu-id="d5946-574">指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-574">Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.</span></span>
+## <a name="licensecodenum"></a><span data-ttu-id="b4f0d-572">licenseCodeNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-572">licenseCodeNum</span></span>
+<span data-ttu-id="b4f0d-573">指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-573">Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-575">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-575">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-574">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-574">Syntax</span></span>
 
 ```xpp
 int licenseCodeNum(str codename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-576">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-576">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-575">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-575">Parameters</span></span>
 
-| <span data-ttu-id="d5946-577">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-577">Parameter</span></span> | <span data-ttu-id="d5946-578">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-578">Description</span></span>                               |
+| <span data-ttu-id="b4f0d-576">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-576">Parameter</span></span> | <span data-ttu-id="b4f0d-577">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-577">Description</span></span>                               |
 |-----------|-------------------------------------------|
-| <span data-ttu-id="d5946-579">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-579">codename</span></span>  | <span data-ttu-id="d5946-580">検証するライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-580">The name of the license code to validate.</span></span> |
+| <span data-ttu-id="b4f0d-578">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-578">codename</span></span>  | <span data-ttu-id="b4f0d-579">検証するライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-579">The name of the license code to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-581">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-581">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-580">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-580">Return Value</span></span>
 
-<span data-ttu-id="d5946-582">指定されたライセンス コードの数。</span><span class="sxs-lookup"><span data-stu-id="d5946-582">The number of the specified license code.</span></span>
+<span data-ttu-id="b4f0d-581">指定されたライセンス コードの数。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-581">The number of the specified license code.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-583">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-583">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-582">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-582">Remarks</span></span>
 
-<span data-ttu-id="d5946-584">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-584">This is a compile-time function.</span></span> <span data-ttu-id="d5946-585">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-585">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-583">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-583">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-584">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-584">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-586">例</span><span class="sxs-lookup"><span data-stu-id="d5946-586">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-585">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-585">Example</span></span>
 
 ```xpp
 static void licenseCodeNumExample(Args args)
@@ -1060,30 +1059,30 @@ Message (01:52:35 pm)
 ****/
 ```
 
-## <a name="licensecodestr"></a><span data-ttu-id="d5946-587">licenseCodeStr</span><span class="sxs-lookup"><span data-stu-id="d5946-587">licenseCodeStr</span></span>
-<span data-ttu-id="d5946-588">指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-588">Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.</span></span>
+## <a name="licensecodestr"></a><span data-ttu-id="b4f0d-586">licenseCodeStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-586">licenseCodeStr</span></span>
+<span data-ttu-id="b4f0d-587">指定したライセンス コードがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-587">Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-589">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-589">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-588">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-588">Syntax</span></span>
 
 ```xpp
 str licenseCodeStr(str codename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-590">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-590">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-589">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-589">Parameters</span></span>
 
-| <span data-ttu-id="d5946-591">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-591">Parameter</span></span> | <span data-ttu-id="d5946-592">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-592">Description</span></span>                               |
+| <span data-ttu-id="b4f0d-590">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-590">Parameter</span></span> | <span data-ttu-id="b4f0d-591">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-591">Description</span></span>                               |
 |-----------|-------------------------------------------|
-| <span data-ttu-id="d5946-593">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-593">codename</span></span>  | <span data-ttu-id="d5946-594">検証するライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-594">The name of the license code to validate.</span></span> |
+| <span data-ttu-id="b4f0d-592">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-592">codename</span></span>  | <span data-ttu-id="b4f0d-593">検証するライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-593">The name of the license code to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-595">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-595">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-594">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-594">Return Value</span></span>
 
-<span data-ttu-id="d5946-596">指定されたライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-596">The name of the specified license code.</span></span>
+<span data-ttu-id="b4f0d-595">指定されたライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-595">The name of the specified license code.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-597">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-597">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-596">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-596">Remarks</span></span>
 
-<span data-ttu-id="d5946-598">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-598">This is a compile-time function.</span></span> <span data-ttu-id="d5946-599">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-599">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-597">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-597">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-598">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-598">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-600">例</span><span class="sxs-lookup"><span data-stu-id="d5946-600">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-599">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-599">Example</span></span>
 
 ```xpp
 static void licenseCodeStrExample(Args _arg)
@@ -1100,30 +1099,30 @@ SysMorphX is the license code string for SysMorphX.
 ****/
 ```
 
-## <a name="literalstr"></a><span data-ttu-id="d5946-601">literalStr</span><span class="sxs-lookup"><span data-stu-id="d5946-601">literalStr</span></span>
-<span data-ttu-id="d5946-602">指定した文字列がリテラル文字列であることを検証します。そうでない場合は、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-602">Validates that the specified string can be a literal string; if not, a compiler error occurs.</span></span>
+## <a name="literalstr"></a><span data-ttu-id="b4f0d-600">literalStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-600">literalStr</span></span>
+<span data-ttu-id="b4f0d-601">指定した文字列がリテラル文字列であることを検証します。そうでない場合は、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-601">Validates that the specified string can be a literal string; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-603">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-603">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-602">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-602">Syntax</span></span>
 
 ```xpp
 str literalStr(int str)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-604">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-604">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-603">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-603">Parameters</span></span>
 
-| <span data-ttu-id="d5946-605">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-605">Parameter</span></span> | <span data-ttu-id="d5946-606">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-606">Description</span></span>             |
+| <span data-ttu-id="b4f0d-604">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-604">Parameter</span></span> | <span data-ttu-id="b4f0d-605">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-605">Description</span></span>             |
 |-----------|-------------------------|
-| <span data-ttu-id="d5946-607">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-607">codename</span></span>  | <span data-ttu-id="d5946-608">検証する文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-608">The string to validate.</span></span> |
+| <span data-ttu-id="b4f0d-606">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-606">codename</span></span>  | <span data-ttu-id="b4f0d-607">検証する文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-607">The string to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-609">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-609">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-608">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-608">Return Value</span></span>
 
-<span data-ttu-id="d5946-610">有効な場合は、リテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-610">The literal string if valid.</span></span>
+<span data-ttu-id="b4f0d-609">有効な場合は、リテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-609">The literal string if valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-611">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-611">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-610">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-610">Remarks</span></span>
 
-<span data-ttu-id="d5946-612">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-612">This is a compile-time function.</span></span> <span data-ttu-id="d5946-613">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-613">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-611">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-611">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-612">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-612">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-614">例</span><span class="sxs-lookup"><span data-stu-id="d5946-614">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-613">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-613">Example</span></span>
 
 ```xpp
 {
@@ -1136,24 +1135,24 @@ str literalStr(int str)
 }
 ```
 
-## <a name="maxdate"></a><span data-ttu-id="d5946-615">maxDate</span><span class="sxs-lookup"><span data-stu-id="d5946-615">maxDate</span></span>
-<span data-ttu-id="d5946-616">日付型の変数に使用できる最大値を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-616">Retrieves the maximum value allowed for a variable of type date.</span></span>
+## <a name="maxdate"></a><span data-ttu-id="b4f0d-614">maxDate</span><span class="sxs-lookup"><span data-stu-id="b4f0d-614">maxDate</span></span>
+<span data-ttu-id="b4f0d-615">日付型の変数に使用できる最大値を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-615">Retrieves the maximum value allowed for a variable of type date.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-617">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-617">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-616">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-616">Syntax</span></span>
 
 ```xpp
 date maxDate()
 ```
 
-### <a name="return-value"></a><span data-ttu-id="d5946-618">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-618">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-617">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-617">Return Value</span></span>
 
-<span data-ttu-id="d5946-619">**日付** の変数に使用できる最大値は、**2154-12-31**です。</span><span class="sxs-lookup"><span data-stu-id="d5946-619">The maximum value allowed for a variable of type **date**, which is **2154-12-31**.</span></span>
+<span data-ttu-id="b4f0d-618">**日付** の変数に使用できる最大値は、**2154-12-31**です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-618">The maximum value allowed for a variable of type **date**, which is **2154-12-31**.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-620">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-620">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-619">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-619">Remarks</span></span>
 
-<span data-ttu-id="d5946-621">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-621">This is a compile-time function.</span></span> <span data-ttu-id="d5946-622">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-622">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-620">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-620">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-621">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-621">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-623">例</span><span class="sxs-lookup"><span data-stu-id="d5946-623">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-622">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-622">Example</span></span>
 
 ```xpp
 static void maxDateExample(Args _arg)
@@ -1166,24 +1165,24 @@ static void maxDateExample(Args _arg)
 }
 ```
 
-## <a name="maxint"></a><span data-ttu-id="d5946-624">maxInt</span><span class="sxs-lookup"><span data-stu-id="d5946-624">maxInt</span></span>
-<span data-ttu-id="d5946-625">**int** 型に格納可能な最大符号付き値を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-625">Retrieves the maximum signed value that can be stored in an **int** type.</span></span>
+## <a name="maxint"></a><span data-ttu-id="b4f0d-623">maxInt</span><span class="sxs-lookup"><span data-stu-id="b4f0d-623">maxInt</span></span>
+<span data-ttu-id="b4f0d-624">**int** 型に格納可能な最大符号付き値を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-624">Retrieves the maximum signed value that can be stored in an **int** type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-626">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-626">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-625">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-625">Syntax</span></span>
 
 ```xpp
 int maxInt()
 ```
 
-### <a name="return-value"></a><span data-ttu-id="d5946-627">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-627">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-626">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-626">Return Value</span></span>
 
-<span data-ttu-id="d5946-628">整数の許容値の最大値。</span><span class="sxs-lookup"><span data-stu-id="d5946-628">The maximum value allowed value of an integer.</span></span>
+<span data-ttu-id="b4f0d-627">整数の許容値の最大値。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-627">The maximum value allowed value of an integer.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-629">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-629">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-628">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-628">Remarks</span></span>
 
-<span data-ttu-id="d5946-630">その他の整数値は、戻り値以下になります。</span><span class="sxs-lookup"><span data-stu-id="d5946-630">Any other integer will be less than or equal to the returned value.</span></span> <span data-ttu-id="d5946-631">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-631">This is a compile-time function.</span></span> <span data-ttu-id="d5946-632">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-632">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-629">その他の整数値は、戻り値以下になります。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-629">Any other integer will be less than or equal to the returned value.</span></span> <span data-ttu-id="b4f0d-630">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-630">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-631">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-631">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-633">例</span><span class="sxs-lookup"><span data-stu-id="d5946-633">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-632">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-632">Example</span></span>
 
 ```xpp
 static void maxIntExample(Args _arg)
@@ -1195,84 +1194,84 @@ static void maxIntExample(Args _arg)
 }
 ```
 
-## <a name="measurementstr"></a><span data-ttu-id="d5946-634">measurementStr</span><span class="sxs-lookup"><span data-stu-id="d5946-634">measurementStr</span></span>
-<span data-ttu-id="d5946-635">測定の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-635">Returns the name of a measurement.</span></span>
+## <a name="measurementstr"></a><span data-ttu-id="b4f0d-633">measurementStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-633">measurementStr</span></span>
+<span data-ttu-id="b4f0d-634">測定の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-634">Returns the name of a measurement.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-636">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-636">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-635">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-635">Syntax</span></span>
 
 ```xpp
 str measurementStr(str measurement)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-637">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-637">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-636">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-636">Parameters</span></span>
 
-| <span data-ttu-id="d5946-638">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-638">Parameter</span></span>   | <span data-ttu-id="d5946-639">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-639">Description</span></span>                  |
+| <span data-ttu-id="b4f0d-637">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-637">Parameter</span></span>   | <span data-ttu-id="b4f0d-638">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-638">Description</span></span>                  |
 |-------------|------------------------------|
-| <span data-ttu-id="d5946-640">測定値</span><span class="sxs-lookup"><span data-stu-id="d5946-640">measurement</span></span> | <span data-ttu-id="d5946-641">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-641">The name of the measurement.</span></span> |
+| <span data-ttu-id="b4f0d-639">測定値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-639">measurement</span></span> | <span data-ttu-id="b4f0d-640">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-640">The name of the measurement.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-642">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-642">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-641">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-641">Return Value</span></span>
 
-<span data-ttu-id="d5946-643">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-643">The name of the measurement.</span></span>
+<span data-ttu-id="b4f0d-642">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-642">The name of the measurement.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-644">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-644">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-643">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-643">Remarks</span></span>
 
-<span data-ttu-id="d5946-645">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-645">This is a compile-time function.</span></span> <span data-ttu-id="d5946-646">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-646">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-644">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-644">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-645">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-645">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-647">例</span><span class="sxs-lookup"><span data-stu-id="d5946-647">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-646">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-646">Example</span></span>
 
-<span data-ttu-id="d5946-648">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-648">No example.</span></span>
+<span data-ttu-id="b4f0d-647">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-647">No example.</span></span>
 
-## <a name="measurestr"></a><span data-ttu-id="d5946-649">measureStr</span><span class="sxs-lookup"><span data-stu-id="d5946-649">measureStr</span></span>
-<span data-ttu-id="d5946-650">メジャーの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-650">Returns the name of a measure.</span></span>
+## <a name="measurestr"></a><span data-ttu-id="b4f0d-648">measureStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-648">measureStr</span></span>
+<span data-ttu-id="b4f0d-649">メジャーの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-649">Returns the name of a measure.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-651">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-651">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-650">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-650">Syntax</span></span>
 
 ```xpp
 str measureStr(str measure)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-652">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-652">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-651">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-651">Parameters</span></span>
 
-| <span data-ttu-id="d5946-653">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-653">Parameter</span></span> | <span data-ttu-id="d5946-654">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-654">Description</span></span>              |
+| <span data-ttu-id="b4f0d-652">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-652">Parameter</span></span> | <span data-ttu-id="b4f0d-653">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-653">Description</span></span>              |
 |-----------|--------------------------|
-| <span data-ttu-id="d5946-655">測定</span><span class="sxs-lookup"><span data-stu-id="d5946-655">measure</span></span>   | <span data-ttu-id="d5946-656">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-656">The name of the measure.</span></span> |
+| <span data-ttu-id="b4f0d-654">測定</span><span class="sxs-lookup"><span data-stu-id="b4f0d-654">measure</span></span>   | <span data-ttu-id="b4f0d-655">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-655">The name of the measure.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-657">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-657">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-656">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-656">Return Value</span></span>
 
-<span data-ttu-id="d5946-658">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-658">The name of the measure.</span></span>
+<span data-ttu-id="b4f0d-657">測定の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-657">The name of the measure.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-659">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-659">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-658">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-658">Remarks</span></span>
 
-<span data-ttu-id="d5946-660">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-660">This is a compile-time function.</span></span> <span data-ttu-id="d5946-661">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-661">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-659">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-659">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-660">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-660">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-662">例</span><span class="sxs-lookup"><span data-stu-id="d5946-662">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-661">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-661">Example</span></span>
 
-<span data-ttu-id="d5946-663">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-663">No example.</span></span>
+<span data-ttu-id="b4f0d-662">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-662">No example.</span></span>
 
-## <a name="menuitemactionstr"></a><span data-ttu-id="d5946-664">menuItemActionStr</span><span class="sxs-lookup"><span data-stu-id="d5946-664">menuItemActionStr</span></span>
-<span data-ttu-id="d5946-665">指定したメニュー項目のアクションがアプリケーション オブジェクト ツリー (Application Explorer) に存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-665">Validates that the specified menu item action exists in the Application Object Tree (Application Explorer); if it does not, a compiler error occurs.</span></span>
+## <a name="menuitemactionstr"></a><span data-ttu-id="b4f0d-663">menuItemActionStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-663">menuItemActionStr</span></span>
+<span data-ttu-id="b4f0d-664">指定したメニュー項目のアクションがアプリケーション オブジェクト ツリー (Application Explorer) に存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-664">Validates that the specified menu item action exists in the Application Object Tree (Application Explorer); if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-666">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-666">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-665">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-665">Syntax</span></span>
 
 ```xpp
 str menuItemActionStr(class menuitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-667">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-667">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-666">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-666">Parameters</span></span>
 
-| <span data-ttu-id="d5946-668">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-668">Parameter</span></span> | <span data-ttu-id="d5946-669">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-669">Description</span></span>                                   |
+| <span data-ttu-id="b4f0d-667">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-667">Parameter</span></span> | <span data-ttu-id="b4f0d-668">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-668">Description</span></span>                                   |
 |-----------|-----------------------------------------------|
-| <span data-ttu-id="d5946-670">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-670">codename</span></span>  | <span data-ttu-id="d5946-671">検証するメニュー項目アクションの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-671">The name of the menu item action to validate.</span></span> |
+| <span data-ttu-id="b4f0d-669">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-669">codename</span></span>  | <span data-ttu-id="b4f0d-670">検証するメニュー項目アクションの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-670">The name of the menu item action to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-672">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-672">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-671">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-671">Return Value</span></span>
 
-<span data-ttu-id="d5946-673">有効な場合の、メニュー項目アクションの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-673">The name of the menu item action, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-672">有効な場合の、メニュー項目アクションの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-672">The name of the menu item action, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-674">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-674">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-673">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-673">Remarks</span></span>
 
-<span data-ttu-id="d5946-675">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-675">This is a compile-time function.</span></span> <span data-ttu-id="d5946-676">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-676">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-674">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-674">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-675">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-675">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-677">例</span><span class="sxs-lookup"><span data-stu-id="d5946-677">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-676">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-676">Example</span></span>
 
 ```xpp
 {
@@ -1293,30 +1292,30 @@ str menuItemActionStr(class menuitem)
 }
 ```
 
-## <a name="menuitemdisplaystr"></a><span data-ttu-id="d5946-678">menuItemDisplayStr</span><span class="sxs-lookup"><span data-stu-id="d5946-678">menuItemDisplayStr</span></span>
-<span data-ttu-id="d5946-679">指定したメニュー項目の表示がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-679">Validates that the specified menu item display exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="menuitemdisplaystr"></a><span data-ttu-id="b4f0d-677">menuItemDisplayStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-677">menuItemDisplayStr</span></span>
+<span data-ttu-id="b4f0d-678">指定したメニュー項目の表示がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-678">Validates that the specified menu item display exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-680">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-680">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-679">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-679">Syntax</span></span>
 
 ```xpp
 str menuitemdisplaystr(class menuItem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-681">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-681">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-680">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-680">Parameters</span></span>
 
-| <span data-ttu-id="d5946-682">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-682">Parameter</span></span> | <span data-ttu-id="d5946-683">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-683">Description</span></span>                                    |
+| <span data-ttu-id="b4f0d-681">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-681">Parameter</span></span> | <span data-ttu-id="b4f0d-682">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-682">Description</span></span>                                    |
 |-----------|------------------------------------------------|
-| <span data-ttu-id="d5946-684">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-684">codename</span></span>  | <span data-ttu-id="d5946-685">検証するメニュー項目nの表示の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-685">The name of the menu item display to validate.</span></span> |
+| <span data-ttu-id="b4f0d-683">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-683">codename</span></span>  | <span data-ttu-id="b4f0d-684">検証するメニュー項目nの表示の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-684">The name of the menu item display to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-686">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-686">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-685">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-685">Return Value</span></span>
 
-<span data-ttu-id="d5946-687">有効な場合の、指定されたメニューの表示の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-687">The name of the specified menu item display, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-686">有効な場合の、指定されたメニューの表示の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-686">The name of the specified menu item display, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-688">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-688">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-687">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-687">Remarks</span></span>
 
-<span data-ttu-id="d5946-689">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-689">This is a compile-time function.</span></span> <span data-ttu-id="d5946-690">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-690">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-688">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-688">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-689">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-689">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-691">例</span><span class="sxs-lookup"><span data-stu-id="d5946-691">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-690">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-690">Example</span></span>
 
 ```xpp
 {
@@ -1337,30 +1336,30 @@ str menuitemdisplaystr(class menuItem)
 }
 ```
 
-## <a name="menuitemoutputstr"></a><span data-ttu-id="d5946-692">menuItemOutputStr</span><span class="sxs-lookup"><span data-stu-id="d5946-692">menuItemOutputStr</span></span>
-<span data-ttu-id="d5946-693">指定したメニュー項目の出力がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-693">Validates that the specified menu item output exists in the Application Explorer; if not, a compiler error occurs.</span></span>
+## <a name="menuitemoutputstr"></a><span data-ttu-id="b4f0d-691">menuItemOutputStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-691">menuItemOutputStr</span></span>
+<span data-ttu-id="b4f0d-692">指定したメニュー項目の出力がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-692">Validates that the specified menu item output exists in the Application Explorer; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-694">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-694">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-693">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-693">Syntax</span></span>
 
 ```xpp
 str menuItemOutputStr(class menuitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-695">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-695">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-694">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-694">Parameters</span></span>
 
-| <span data-ttu-id="d5946-696">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-696">Parameter</span></span> | <span data-ttu-id="d5946-697">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-697">Description</span></span>                                   |
+| <span data-ttu-id="b4f0d-695">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-695">Parameter</span></span> | <span data-ttu-id="b4f0d-696">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-696">Description</span></span>                                   |
 |-----------|-----------------------------------------------|
-| <span data-ttu-id="d5946-698">codename</span><span class="sxs-lookup"><span data-stu-id="d5946-698">codename</span></span>  | <span data-ttu-id="d5946-699">検証するメニュー項目出力の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-699">The name of the menu item output to validate.</span></span> |
+| <span data-ttu-id="b4f0d-697">codename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-697">codename</span></span>  | <span data-ttu-id="b4f0d-698">検証するメニュー項目出力の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-698">The name of the menu item output to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-700">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-700">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-699">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-699">Return Value</span></span>
 
-<span data-ttu-id="d5946-701">有効な場合、指定されたメニュー項目が出力されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-701">The specified menu item output if valid.</span></span>
+<span data-ttu-id="b4f0d-700">有効な場合、指定されたメニュー項目が出力されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-700">The specified menu item output if valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-702">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-702">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-701">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-701">Remarks</span></span>
 
-<span data-ttu-id="d5946-703">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-703">This is a compile-time function.</span></span> <span data-ttu-id="d5946-704">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-704">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-702">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-702">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-703">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-703">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-705">例</span><span class="sxs-lookup"><span data-stu-id="d5946-705">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-704">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-704">Example</span></span>
 
 ```xpp
 {
@@ -1381,30 +1380,30 @@ str menuItemOutputStr(class menuitem)
 }
 ```
 
-## <a name="menustr"></a><span data-ttu-id="d5946-706">menuStr</span><span class="sxs-lookup"><span data-stu-id="d5946-706">menuStr</span></span>
-<span data-ttu-id="d5946-707">指定したメニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-707">Validates that the specified menu exists in the Application Explorer; if not, a compiler error occurs.</span></span>
+## <a name="menustr"></a><span data-ttu-id="b4f0d-705">menuStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-705">menuStr</span></span>
+<span data-ttu-id="b4f0d-706">指定したメニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-706">Validates that the specified menu exists in the Application Explorer; if not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-708">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-708">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-707">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-707">Syntax</span></span>
 
 ```xpp
 str menuStr(class menu)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-709">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-709">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-708">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-708">Parameters</span></span>
 
-| <span data-ttu-id="d5946-710">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-710">Parameter</span></span> | <span data-ttu-id="d5946-711">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-711">Description</span></span>                       |
+| <span data-ttu-id="b4f0d-709">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-709">Parameter</span></span> | <span data-ttu-id="b4f0d-710">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-710">Description</span></span>                       |
 |-----------|-----------------------------------|
-| <span data-ttu-id="d5946-712">メニュー</span><span class="sxs-lookup"><span data-stu-id="d5946-712">menu</span></span>      | <span data-ttu-id="d5946-713">検証するメニューの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-713">The name of the menu to validate.</span></span> |
+| <span data-ttu-id="b4f0d-711">メニュー</span><span class="sxs-lookup"><span data-stu-id="b4f0d-711">menu</span></span>      | <span data-ttu-id="b4f0d-712">検証するメニューの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-712">The name of the menu to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-714">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-714">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-713">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-713">Return Value</span></span>
 
-<span data-ttu-id="d5946-715">有効な場合の指定されたメニュー項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-715">The name of the specified menu item if valid.</span></span>
+<span data-ttu-id="b4f0d-714">有効な場合の指定されたメニュー項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-714">The name of the specified menu item if valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-716">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-716">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-715">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-715">Remarks</span></span>
 
-<span data-ttu-id="d5946-717">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-717">This is a compile-time function.</span></span> <span data-ttu-id="d5946-718">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-718">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-716">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-716">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-717">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-717">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-719">例</span><span class="sxs-lookup"><span data-stu-id="d5946-719">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-718">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-718">Example</span></span>
 
 ```xpp
 {
@@ -1425,31 +1424,31 @@ str menuStr(class menu)
 }
 ```
 
-## <a name="methodstr"></a><span data-ttu-id="d5946-720">methodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-720">methodStr</span></span>
-<span data-ttu-id="d5946-721">指定したメソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-721">Validates that the specified method exists in the specified class; if it does not, a compiler error occurs.</span></span>
+## <a name="methodstr"></a><span data-ttu-id="b4f0d-719">methodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-719">methodStr</span></span>
+<span data-ttu-id="b4f0d-720">指定したメソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-720">Validates that the specified method exists in the specified class; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-722">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-722">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-721">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-721">Syntax</span></span>
 
 ```xpp
 str methodStr(class class, int method)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-723">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-723">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-722">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-722">Parameters</span></span>
 
-| <span data-ttu-id="d5946-724">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-724">Parameter</span></span> | <span data-ttu-id="d5946-725">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-725">Description</span></span>                         |
+| <span data-ttu-id="b4f0d-723">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-723">Parameter</span></span> | <span data-ttu-id="b4f0d-724">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-724">Description</span></span>                         |
 |-----------|-------------------------------------|
-| <span data-ttu-id="d5946-726">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-726">class</span></span>     | <span data-ttu-id="d5946-727">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-727">The name of the class.</span></span>              |
-| <span data-ttu-id="d5946-728">メソッド</span><span class="sxs-lookup"><span data-stu-id="d5946-728">method</span></span>    | <span data-ttu-id="d5946-729">検証するメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-729">The name of the method to validate.</span></span> |
+| <span data-ttu-id="b4f0d-725">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-725">class</span></span>     | <span data-ttu-id="b4f0d-726">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-726">The name of the class.</span></span>              |
+| <span data-ttu-id="b4f0d-727">メソッド</span><span class="sxs-lookup"><span data-stu-id="b4f0d-727">method</span></span>    | <span data-ttu-id="b4f0d-728">検証するメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-728">The name of the method to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-730">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-730">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-729">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-729">Return Value</span></span>
 
-<span data-ttu-id="d5946-731">有効な場合の、指定されたメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-731">The name of the specified method, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-730">有効な場合の、指定されたメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-730">The name of the specified method, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-732">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-732">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-731">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-731">Remarks</span></span>
 
-<span data-ttu-id="d5946-733">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-733">This is a compile-time function.</span></span> <span data-ttu-id="d5946-734">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-734">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-732">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-732">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-733">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-733">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-735">例</span><span class="sxs-lookup"><span data-stu-id="d5946-735">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-734">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-734">Example</span></span>
 
 ```xpp
 {
@@ -1464,24 +1463,24 @@ str methodStr(class class, int method)
 }
 ```
 
-## <a name="minint"></a><span data-ttu-id="d5946-736">minInt</span><span class="sxs-lookup"><span data-stu-id="d5946-736">minInt</span></span>
-<span data-ttu-id="d5946-737">**int** 型に格納可能な最小符号付き値を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-737">Retrieves the minimum signed value that can be stored in an **int** type.</span></span>
+## <a name="minint"></a><span data-ttu-id="b4f0d-735">minInt</span><span class="sxs-lookup"><span data-stu-id="b4f0d-735">minInt</span></span>
+<span data-ttu-id="b4f0d-736">**int** 型に格納可能な最小符号付き値を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-736">Retrieves the minimum signed value that can be stored in an **int** type.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-738">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-738">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-737">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-737">Syntax</span></span>
 
 ```xpp
 int minInt()
 ```
 
-### <a name="return-value"></a><span data-ttu-id="d5946-739">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-739">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-738">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-738">Return Value</span></span>
 
-<span data-ttu-id="d5946-740">**int** 型の最小値です。</span><span class="sxs-lookup"><span data-stu-id="d5946-740">The minimum value of an **int** type.</span></span>
+<span data-ttu-id="b4f0d-739">**int** 型の最小値です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-739">The minimum value of an **int** type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-741">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-741">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-740">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-740">Remarks</span></span>
 
-<span data-ttu-id="d5946-742">その他の整数値は、戻り値以上になります。</span><span class="sxs-lookup"><span data-stu-id="d5946-742">Any other integer value will be greater than or equal to the returned value.</span></span> <span data-ttu-id="d5946-743">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-743">This is a compile-time function.</span></span> <span data-ttu-id="d5946-744">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-744">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-741">その他の整数値は、戻り値以上になります。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-741">Any other integer value will be greater than or equal to the returned value.</span></span> <span data-ttu-id="b4f0d-742">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-742">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-743">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-743">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-745">例</span><span class="sxs-lookup"><span data-stu-id="d5946-745">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-744">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-744">Example</span></span>
 
 ```xpp
 static void minIntExample(Args _arg)
@@ -1494,113 +1493,113 @@ static void minIntExample(Args _arg)
 }
 ```
 
-## <a name="privilegestr"></a><span data-ttu-id="d5946-746">privilegeStr</span><span class="sxs-lookup"><span data-stu-id="d5946-746">privilegeStr</span></span>
-<span data-ttu-id="d5946-747">権限の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-747">Returns the name of the privilege.</span></span>
+## <a name="privilegestr"></a><span data-ttu-id="b4f0d-745">privilegeStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-745">privilegeStr</span></span>
+<span data-ttu-id="b4f0d-746">権限の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-746">Returns the name of the privilege.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-748">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-748">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-747">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-747">Syntax</span></span>
 
 ```xpp
 str privilegeStr(str privilege)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-749">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-749">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-748">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-748">Parameters</span></span>
 
-| <span data-ttu-id="d5946-750">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-750">Parameter</span></span> | <span data-ttu-id="d5946-751">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-751">Description</span></span>                                 |
+| <span data-ttu-id="b4f0d-749">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-749">Parameter</span></span> | <span data-ttu-id="b4f0d-750">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-750">Description</span></span>                                 |
 |-----------|---------------------------------------------|
-| <span data-ttu-id="d5946-752">権限</span><span class="sxs-lookup"><span data-stu-id="d5946-752">privilege</span></span> | <span data-ttu-id="d5946-753">名前を返す対象の特権。</span><span class="sxs-lookup"><span data-stu-id="d5946-753">The privilege for which to return the name.</span></span> |
+| <span data-ttu-id="b4f0d-751">権限</span><span class="sxs-lookup"><span data-stu-id="b4f0d-751">privilege</span></span> | <span data-ttu-id="b4f0d-752">名前を返す対象の特権。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-752">The privilege for which to return the name.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-754">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-754">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-753">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-753">Return Value</span></span>
 
-<span data-ttu-id="d5946-755">権限の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-755">The name of the privilege.</span></span>
+<span data-ttu-id="b4f0d-754">権限の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-754">The name of the privilege.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-756">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-756">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-755">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-755">Remarks</span></span>
 
-<span data-ttu-id="d5946-757">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-757">This is a compile-time function.</span></span> <span data-ttu-id="d5946-758">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-758">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-756">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-756">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-757">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-757">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-759">例</span><span class="sxs-lookup"><span data-stu-id="d5946-759">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-758">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-758">Example</span></span>
 
-<span data-ttu-id="d5946-760">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-760">No example.</span></span>
+<span data-ttu-id="b4f0d-759">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-759">No example.</span></span>
 
-## <a name="querydatasourcestr"></a><span data-ttu-id="d5946-761">queryDatasourceStr</span><span class="sxs-lookup"><span data-stu-id="d5946-761">queryDatasourceStr</span></span>
-<span data-ttu-id="d5946-762">X++ コンパイラは、データ ソースがクエリに存在するかどうかをチェックし、関数呼び出しを有効なデータ ソース名の文字列で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="d5946-762">Causes the X++ compiler to check whether the data source exists on the query, and to replace the function call with a string of the valid data source name.</span></span>
+## <a name="querydatasourcestr"></a><span data-ttu-id="b4f0d-760">queryDatasourceStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-760">queryDatasourceStr</span></span>
+<span data-ttu-id="b4f0d-761">X++ コンパイラは、データ ソースがクエリに存在するかどうかをチェックし、関数呼び出しを有効なデータ ソース名の文字列で置き換えます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-761">Causes the X++ compiler to check whether the data source exists on the query, and to replace the function call with a string of the valid data source name.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-763">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-763">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-762">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-762">Syntax</span></span>
 
 ```xpp
 str queryDataSourceStr(queryName, dataSourceName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-764">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-764">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-763">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-763">Parameters</span></span>
 
-| <span data-ttu-id="d5946-765">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-765">Parameter</span></span>      | <span data-ttu-id="d5946-766">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-766">Description</span></span>                                                               |
+| <span data-ttu-id="b4f0d-764">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-764">Parameter</span></span>      | <span data-ttu-id="b4f0d-765">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-765">Description</span></span>                                                               |
 |----------------|---------------------------------------------------------------------------|
-| <span data-ttu-id="d5946-767">queryName</span><span class="sxs-lookup"><span data-stu-id="d5946-767">queryName</span></span>      | <span data-ttu-id="d5946-768">引用符ではなく、クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-768">The name of the query, not in quotation marks.</span></span>                            |
-| <span data-ttu-id="d5946-769">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="d5946-769">dataSourceName</span></span> | <span data-ttu-id="d5946-770">クエリ上のデータ ソースの名前で、引用符ではありません。</span><span class="sxs-lookup"><span data-stu-id="d5946-770">The name of the data source that is on the query, not in quotation marks.</span></span> |
+| <span data-ttu-id="b4f0d-766">queryName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-766">queryName</span></span>      | <span data-ttu-id="b4f0d-767">引用符ではなく、クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-767">The name of the query, not in quotation marks.</span></span>                            |
+| <span data-ttu-id="b4f0d-768">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-768">dataSourceName</span></span> | <span data-ttu-id="b4f0d-769">クエリ上のデータ ソースの名前で、引用符ではありません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-769">The name of the data source that is on the query, not in quotation marks.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-771">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-771">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-770">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-770">Return Value</span></span>
 
-<span data-ttu-id="d5946-772">アプリケーション エクスプローラーで表示されるデータ ソースの名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-772">A string that contains the name of the data source as it appears in the Application Explorer.</span></span>
+<span data-ttu-id="b4f0d-771">アプリケーション エクスプローラーで表示されるデータ ソースの名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-771">A string that contains the name of the data source as it appears in the Application Explorer.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-773">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-773">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-772">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-772">Remarks</span></span>
 
-<span data-ttu-id="d5946-774">データ ソースがクエリに存在しないとコンパイラが判断した場合、コンパイル エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d5946-774">A compile error is issued if the compiler determines that the data source does not exist on the query.</span></span> <span data-ttu-id="d5946-775">X++ コードが引用符が含まれる文字列を使用してデータ ソースの名前を入力する場合、実行時までエラーを検出できません。</span><span class="sxs-lookup"><span data-stu-id="d5946-775">If your X++ code uses a string that contains quotation marks to supply the data source name, the error cannot be discovered until run time.</span></span> <span data-ttu-id="d5946-776">この機能を使用すると、コンパイラはコンパイル時にエラーを早期に検出することができます。</span><span class="sxs-lookup"><span data-stu-id="d5946-776">Use of this function enables the compiler to discover the error earlier at compile time.</span></span> <span data-ttu-id="d5946-777">コンパイラにより実行される **queryDataSourceStr** などの X++ 関数は、コンパイル時関数とみなされます。</span><span class="sxs-lookup"><span data-stu-id="d5946-777">X++ functions such as **queryDataSourceStr** that are executed by the compiler are referred to as compile-time functions or compile-time functions.</span></span> <span data-ttu-id="d5946-778">入力パラメーターが引用符で囲まれた標準の文字列ではないのはそのためです。</span><span class="sxs-lookup"><span data-stu-id="d5946-778">That is why the input parameters are not standard strings in quotation marks.</span></span> <span data-ttu-id="d5946-779">コンパイル時関数は、コンパイラによって出力される P コードまたはその他の実行可能ファイルでは表現されません。</span><span class="sxs-lookup"><span data-stu-id="d5946-779">Compile-time functions are not represented in the p-code or other executable that is output by the compiler.</span></span> <span data-ttu-id="d5946-780">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-780">This is a compile-time function.</span></span> <span data-ttu-id="d5946-781">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-781">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-773">データ ソースがクエリに存在しないとコンパイラが判断した場合、コンパイル エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-773">A compile error is issued if the compiler determines that the data source does not exist on the query.</span></span> <span data-ttu-id="b4f0d-774">X++ コードが引用符が含まれる文字列を使用してデータ ソースの名前を入力する場合、実行時までエラーを検出できません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-774">If your X++ code uses a string that contains quotation marks to supply the data source name, the error cannot be discovered until run time.</span></span> <span data-ttu-id="b4f0d-775">この機能を使用すると、コンパイラはコンパイル時にエラーを早期に検出することができます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-775">Use of this function enables the compiler to discover the error earlier at compile time.</span></span> <span data-ttu-id="b4f0d-776">コンパイラにより実行される **queryDataSourceStr** などの X++ 関数は、コンパイル時関数とみなされます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-776">X++ functions such as **queryDataSourceStr** that are executed by the compiler are referred to as compile-time functions or compile-time functions.</span></span> <span data-ttu-id="b4f0d-777">入力パラメーターが引用符で囲まれた標準の文字列ではないのはそのためです。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-777">That is why the input parameters are not standard strings in quotation marks.</span></span> <span data-ttu-id="b4f0d-778">コンパイル時関数は、コンパイラによって出力される P コードまたはその他の実行可能ファイルでは表現されません。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-778">Compile-time functions are not represented in the p-code or other executable that is output by the compiler.</span></span> <span data-ttu-id="b4f0d-779">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-779">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-780">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-780">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-782">例</span><span class="sxs-lookup"><span data-stu-id="d5946-782">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-781">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-781">Example</span></span>
 
-<span data-ttu-id="d5946-783">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-783">No example.</span></span>
+<span data-ttu-id="b4f0d-782">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-782">No example.</span></span>
 
-## <a name="querymethodstr"></a><span data-ttu-id="d5946-784">queryMethodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-784">queryMethodStr</span></span>
-<span data-ttu-id="d5946-785">クエリのメソッドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-785">Returns the name of a method of a query.</span></span>
+## <a name="querymethodstr"></a><span data-ttu-id="b4f0d-783">queryMethodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-783">queryMethodStr</span></span>
+<span data-ttu-id="b4f0d-784">クエリのメソッドの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-784">Returns the name of a method of a query.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-786">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-786">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-785">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-785">Syntax</span></span>
 
 ```xpp
 str queryMethodStr(str queryName, str methodName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-787">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-787">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-786">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-786">Parameters</span></span>
 
-| <span data-ttu-id="d5946-788">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-788">Parameter</span></span>  | <span data-ttu-id="d5946-789">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-789">Description</span></span>             |
+| <span data-ttu-id="b4f0d-787">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-787">Parameter</span></span>  | <span data-ttu-id="b4f0d-788">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-788">Description</span></span>             |
 |------------|-------------------------|
-| <span data-ttu-id="d5946-790">queryName</span><span class="sxs-lookup"><span data-stu-id="d5946-790">queryName</span></span>  | <span data-ttu-id="d5946-791">クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-791">The name of the query.</span></span>  |
-| <span data-ttu-id="d5946-792">methodName</span><span class="sxs-lookup"><span data-stu-id="d5946-792">methodName</span></span> | <span data-ttu-id="d5946-793">フォームのメソッド。</span><span class="sxs-lookup"><span data-stu-id="d5946-793">The method of the form.</span></span> |
+| <span data-ttu-id="b4f0d-789">queryName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-789">queryName</span></span>  | <span data-ttu-id="b4f0d-790">クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-790">The name of the query.</span></span>  |
+| <span data-ttu-id="b4f0d-791">methodName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-791">methodName</span></span> | <span data-ttu-id="b4f0d-792">フォームのメソッド。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-792">The method of the form.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-794">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-794">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-793">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-793">Return Value</span></span>
 
-<span data-ttu-id="d5946-795">クエリのメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-795">The name of a method in a query.</span></span>
+<span data-ttu-id="b4f0d-794">クエリのメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-794">The name of a method in a query.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-796">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-796">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-795">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-795">Remarks</span></span>
 
-<span data-ttu-id="d5946-797">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-797">This is a compile-time function.</span></span> <span data-ttu-id="d5946-798">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-798">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-796">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-796">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-797">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-797">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-799">例</span><span class="sxs-lookup"><span data-stu-id="d5946-799">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-798">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-798">Example</span></span>
 
-<span data-ttu-id="d5946-800">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-800">No example.</span></span>
+<span data-ttu-id="b4f0d-799">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-799">No example.</span></span>
 
-## <a name="querystr"></a><span data-ttu-id="d5946-801">queryStr</span><span class="sxs-lookup"><span data-stu-id="d5946-801">queryStr</span></span>
-<span data-ttu-id="d5946-802">既存のクエリを表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-802">Retrieves a string that represents an existing query.</span></span>
+## <a name="querystr"></a><span data-ttu-id="b4f0d-800">queryStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-800">queryStr</span></span>
+<span data-ttu-id="b4f0d-801">既存のクエリを表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-801">Retrieves a string that represents an existing query.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-803">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-803">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-802">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-802">Syntax</span></span>
 
 ```xpp
 str queryStr(str query)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-804">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-804">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-803">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-803">Parameters</span></span>
 
-| <span data-ttu-id="d5946-805">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-805">Parameter</span></span> | <span data-ttu-id="d5946-806">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-806">Description</span></span>            |
+| <span data-ttu-id="b4f0d-804">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-804">Parameter</span></span> | <span data-ttu-id="b4f0d-805">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-805">Description</span></span>            |
 |-----------|------------------------|
-| <span data-ttu-id="d5946-807">クエリ</span><span class="sxs-lookup"><span data-stu-id="d5946-807">query</span></span>     | <span data-ttu-id="d5946-808">取得するクエリ。</span><span class="sxs-lookup"><span data-stu-id="d5946-808">The query to retrieve.</span></span> |
+| <span data-ttu-id="b4f0d-806">クエリ</span><span class="sxs-lookup"><span data-stu-id="b4f0d-806">query</span></span>     | <span data-ttu-id="b4f0d-807">取得するクエリ。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-807">The query to retrieve.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-809">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-809">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-808">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-808">Return Value</span></span>
 
-<span data-ttu-id="d5946-810">クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-810">The name of the query.</span></span>
+<span data-ttu-id="b4f0d-809">クエリの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-809">The name of the query.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-811">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-811">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-810">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-810">Remarks</span></span>
 
-<span data-ttu-id="d5946-812">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-812">This is a compile-time function.</span></span> <span data-ttu-id="d5946-813">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-813">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-811">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-811">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-812">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-812">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-814">例</span><span class="sxs-lookup"><span data-stu-id="d5946-814">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-813">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-813">Example</span></span>
 
 ```xpp
 static void queryStrExample(Args _arg)
@@ -1617,32 +1616,32 @@ AssetTable is the name of the query.
 ****/
 ```
 
-## <a name="reportstr"></a><span data-ttu-id="d5946-815">reportStr</span><span class="sxs-lookup"><span data-stu-id="d5946-815">reportStr</span></span>
-<span data-ttu-id="d5946-816">指定したレポートの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-816">Retrieves a string that represents the name of the specified report.</span></span>
+## <a name="reportstr"></a><span data-ttu-id="b4f0d-814">reportStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-814">reportStr</span></span>
+<span data-ttu-id="b4f0d-815">指定したレポートの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-815">Retrieves a string that represents the name of the specified report.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-817">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-817">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-816">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-816">Syntax</span></span>
 
 ```xpp
 str reportStr(str report)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-818">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-818">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-817">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-817">Parameters</span></span>
 
-| <span data-ttu-id="d5946-819">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-819">Parameter</span></span> | <span data-ttu-id="d5946-820">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-820">Description</span></span>                              |
+| <span data-ttu-id="b4f0d-818">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-818">Parameter</span></span> | <span data-ttu-id="b4f0d-819">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-819">Description</span></span>                              |
 |-----------|------------------------------------------|
-| <span data-ttu-id="d5946-821">レポート</span><span class="sxs-lookup"><span data-stu-id="d5946-821">report</span></span>    | <span data-ttu-id="d5946-822">名前を返す対象のレポート。</span><span class="sxs-lookup"><span data-stu-id="d5946-822">The report for which to return the name.</span></span> |
+| <span data-ttu-id="b4f0d-820">レポート</span><span class="sxs-lookup"><span data-stu-id="b4f0d-820">report</span></span>    | <span data-ttu-id="b4f0d-821">名前を返す対象のレポート。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-821">The report for which to return the name.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-823">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-823">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-822">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-822">Return Value</span></span>
 
-<span data-ttu-id="d5946-824">レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-824">The name of the report.</span></span>
+<span data-ttu-id="b4f0d-823">レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-823">The name of the report.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-825">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-825">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-824">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-824">Remarks</span></span>
 
-<span data-ttu-id="d5946-826">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-826">This is a compile-time function.</span></span> <span data-ttu-id="d5946-827">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-827">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-825">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-825">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-826">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-826">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-828">例</span><span class="sxs-lookup"><span data-stu-id="d5946-828">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-827">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-827">Example</span></span>
 
-<span data-ttu-id="d5946-829">次の例では、**AssetAddition** レポートの名前を *MyTxt* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d5946-829">The following example assigns the name of the **AssetAddition** report to the *MyTxt* variable.</span></span>
+<span data-ttu-id="b4f0d-828">次の例では、**AssetAddition** レポートの名前を *MyTxt* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-828">The following example assigns the name of the **AssetAddition** report to the *MyTxt* variable.</span></span>
 
 ```xpp
 static void reportStrExample(Args _args)
@@ -1659,30 +1658,30 @@ AssetAddition is the name of the report.
 ****/
 ```
 
-## <a name="resourcestr"></a><span data-ttu-id="d5946-830">resourceStr</span><span class="sxs-lookup"><span data-stu-id="d5946-830">resourceStr</span></span>
-<span data-ttu-id="d5946-831">指定したリソースがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-831">Validates that the specified resource exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="resourcestr"></a><span data-ttu-id="b4f0d-829">resourceStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-829">resourceStr</span></span>
+<span data-ttu-id="b4f0d-830">指定したリソースがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-830">Validates that the specified resource exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-832">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-832">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-831">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-831">Syntax</span></span>
 
 ```xpp
 str resourceStr(str resourcename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-833">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-833">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-832">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-832">Parameters</span></span>
 
-| <span data-ttu-id="d5946-834">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-834">Parameter</span></span>    | <span data-ttu-id="d5946-835">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-835">Description</span></span>                           |
+| <span data-ttu-id="b4f0d-833">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-833">Parameter</span></span>    | <span data-ttu-id="b4f0d-834">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-834">Description</span></span>                           |
 |--------------|---------------------------------------|
-| <span data-ttu-id="d5946-836">resourcename</span><span class="sxs-lookup"><span data-stu-id="d5946-836">resourcename</span></span> | <span data-ttu-id="d5946-837">検証するリソースの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-837">The name of the resource to validate.</span></span> |
+| <span data-ttu-id="b4f0d-835">resourcename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-835">resourcename</span></span> | <span data-ttu-id="b4f0d-836">検証するリソースの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-836">The name of the resource to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-838">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-838">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-837">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-837">Return Value</span></span>
 
-<span data-ttu-id="d5946-839">有効な場合の、指定されたリソースの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-839">The name of the specified resource, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-838">有効な場合の、指定されたリソースの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-838">The name of the specified resource, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-840">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-840">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-839">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-839">Remarks</span></span>
 
-<span data-ttu-id="d5946-841">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-841">This is a compile-time function.</span></span> <span data-ttu-id="d5946-842">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-842">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-840">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-840">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-841">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-841">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-843">例</span><span class="sxs-lookup"><span data-stu-id="d5946-843">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-842">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-842">Example</span></span>
 
 ```xpp
 {
@@ -1692,58 +1691,58 @@ str resourceStr(str resourcename)
 }
 ```
 
-## <a name="rolestr"></a><span data-ttu-id="d5946-844">roleStr</span><span class="sxs-lookup"><span data-stu-id="d5946-844">roleStr</span></span>
-<span data-ttu-id="d5946-845">指定したセキュリティ ロールの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-845">Retrieves a string that represents the name of the specified security role.</span></span>
+## <a name="rolestr"></a><span data-ttu-id="b4f0d-843">roleStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-843">roleStr</span></span>
+<span data-ttu-id="b4f0d-844">指定したセキュリティ ロールの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-844">Retrieves a string that represents the name of the specified security role.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-846">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-846">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-845">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-845">Syntax</span></span>
 
 ```xpp
 str roleStr(str securityRole)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-847">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-847">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-846">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-846">Parameters</span></span>
 
-| <span data-ttu-id="d5946-848">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-848">Parameter</span></span>    | <span data-ttu-id="d5946-849">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-849">Description</span></span>                    |
+| <span data-ttu-id="b4f0d-847">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-847">Parameter</span></span>    | <span data-ttu-id="b4f0d-848">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-848">Description</span></span>                    |
 |--------------|--------------------------------|
-| <span data-ttu-id="d5946-850">securityRole</span><span class="sxs-lookup"><span data-stu-id="d5946-850">securityRole</span></span> | <span data-ttu-id="d5946-851">セキュリティ ロールの名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-851">The name of the security role.</span></span> |
+| <span data-ttu-id="b4f0d-849">securityRole</span><span class="sxs-lookup"><span data-stu-id="b4f0d-849">securityRole</span></span> | <span data-ttu-id="b4f0d-850">セキュリティ ロールの名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-850">The name of the security role.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-852">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-852">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-851">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-851">Return Value</span></span>
 
-<span data-ttu-id="d5946-853">文字列のセキュリティ ロールの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-853">The name of the security role in a string.</span></span>
+<span data-ttu-id="b4f0d-852">文字列のセキュリティ ロールの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-852">The name of the security role in a string.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-854">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-854">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-853">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-853">Remarks</span></span>
 
-<span data-ttu-id="d5946-855">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-855">This is a compile-time function.</span></span> <span data-ttu-id="d5946-856">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-856">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-854">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-854">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-855">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-855">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-857">例</span><span class="sxs-lookup"><span data-stu-id="d5946-857">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-856">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-856">Example</span></span>
 
-<span data-ttu-id="d5946-858">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-858">No example.</span></span>
+<span data-ttu-id="b4f0d-857">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-857">No example.</span></span>
 
-## <a name="ssrsreportstr"></a><span data-ttu-id="d5946-859">ssrsReportStr</span><span class="sxs-lookup"><span data-stu-id="d5946-859">ssrsReportStr</span></span>
-<span data-ttu-id="d5946-860">指定したレポートの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-860">Retrieves a string that represents the name of the specified report.</span></span> <span data-ttu-id="d5946-861">レポート コントローラー クラスで実行されるレポートを指定する場合は、この関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="d5946-861">Use this function when you want to specify the report that should be run by a report controller class.</span></span>
+## <a name="ssrsreportstr"></a><span data-ttu-id="b4f0d-858">ssrsReportStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-858">ssrsReportStr</span></span>
+<span data-ttu-id="b4f0d-859">指定したレポートの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-859">Retrieves a string that represents the name of the specified report.</span></span> <span data-ttu-id="b4f0d-860">レポート コントローラー クラスで実行されるレポートを指定する場合は、この関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-860">Use this function when you want to specify the report that should be run by a report controller class.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-862">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-862">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-861">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-861">Syntax</span></span>
 
 ```xpp
 str ssrsReportStr(str report, str design)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-863">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-863">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-862">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-862">Parameters</span></span>
 
-| <span data-ttu-id="d5946-864">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-864">Parameter</span></span> | <span data-ttu-id="d5946-865">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-865">Description</span></span>                                                |
+| <span data-ttu-id="b4f0d-863">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-863">Parameter</span></span> | <span data-ttu-id="b4f0d-864">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-864">Description</span></span>                                                |
 |-----------|------------------------------------------------------------|
-| <span data-ttu-id="d5946-866">レポート</span><span class="sxs-lookup"><span data-stu-id="d5946-866">report</span></span>    | <span data-ttu-id="d5946-867">名前を返す対象のレポート。</span><span class="sxs-lookup"><span data-stu-id="d5946-867">The report to return the name for.</span></span>                         |
-| <span data-ttu-id="d5946-868">design</span><span class="sxs-lookup"><span data-stu-id="d5946-868">design</span></span>    | <span data-ttu-id="d5946-869">レポートに関連付けられているデザインの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-869">The name of the design that is associated with the report.</span></span> |
+| <span data-ttu-id="b4f0d-865">レポート</span><span class="sxs-lookup"><span data-stu-id="b4f0d-865">report</span></span>    | <span data-ttu-id="b4f0d-866">名前を返す対象のレポート。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-866">The report to return the name for.</span></span>                         |
+| <span data-ttu-id="b4f0d-867">design</span><span class="sxs-lookup"><span data-stu-id="b4f0d-867">design</span></span>    | <span data-ttu-id="b4f0d-868">レポートに関連付けられているデザインの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-868">The name of the design that is associated with the report.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-870">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-870">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-869">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-869">Return Value</span></span>
 
-<span data-ttu-id="d5946-871">レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-871">The name of the report.</span></span>
+<span data-ttu-id="b4f0d-870">レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-870">The name of the report.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-872">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-872">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-871">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-871">Remarks</span></span>
 
-<span data-ttu-id="d5946-873">**ssrsReportStr** 関数は、有効なレポートに属しているかどうかを検証するために、渡された 2 つの値を解析します。</span><span class="sxs-lookup"><span data-stu-id="d5946-873">The **ssrsReportStr** function parses the two values that are passed to it, to validate whether they belong to a valid report.</span></span> <span data-ttu-id="d5946-874">コントローラーが、どのレポート デザインの組み合わせを呼び出す必要があるかを判断できるように、メニュー項目が controller() を指しているときは、レポート名を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d5946-874">The report name must be set when a menu item points to a controller(), so that the controller can determine which report-design combination must be invoked.</span></span> <span data-ttu-id="d5946-875">**ssrsReportStr** 関数を使用すると、レポートおよびデザイン名のコンパイル時の検証で役立ちます。</span><span class="sxs-lookup"><span data-stu-id="d5946-875">Use of the **ssrsReportStr** function provides the benefit of compile-time validation for the report and design name.</span></span> <span data-ttu-id="d5946-876">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-876">This is a compile-time function.</span></span> <span data-ttu-id="d5946-877">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-877">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-872">**ssrsReportStr** 関数は、有効なレポートに属しているかどうかを検証するために、渡された 2 つの値を解析します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-872">The **ssrsReportStr** function parses the two values that are passed to it, to validate whether they belong to a valid report.</span></span> <span data-ttu-id="b4f0d-873">コントローラーが、どのレポート デザインの組み合わせを呼び出す必要があるかを判断できるように、メニュー項目が controller() を指しているときは、レポート名を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-873">The report name must be set when a menu item points to a controller(), so that the controller can determine which report-design combination must be invoked.</span></span> <span data-ttu-id="b4f0d-874">**ssrsReportStr** 関数を使用すると、レポートおよびデザイン名のコンパイル時の検証で役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-874">Use of the **ssrsReportStr** function provides the benefit of compile-time validation for the report and design name.</span></span> <span data-ttu-id="b4f0d-875">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-875">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-876">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-876">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-878">例</span><span class="sxs-lookup"><span data-stu-id="d5946-878">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-877">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-877">Example</span></span>
 
 ```xpp
 public static void main(Args _args)
@@ -1761,116 +1760,116 @@ public static void main(Args _args)
 }
 ```
 
-## <a name="staticdelegatestr"></a><span data-ttu-id="d5946-879">staticDelegateStr</span><span class="sxs-lookup"><span data-stu-id="d5946-879">staticDelegateStr</span></span>
-<span data-ttu-id="d5946-880">静的デリゲートの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="d5946-880">Returns the name of a static delegate.</span></span>
+## <a name="staticdelegatestr"></a><span data-ttu-id="b4f0d-878">staticDelegateStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-878">staticDelegateStr</span></span>
+<span data-ttu-id="b4f0d-879">静的デリゲートの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-879">Returns the name of a static delegate.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-881">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-881">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-880">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-880">Syntax</span></span>
 
 ```xpp
 str staticDelegateStr(str class, str delegate)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-882">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-882">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-881">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-881">Parameters</span></span>
 
-| <span data-ttu-id="d5946-883">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-883">Parameter</span></span> | <span data-ttu-id="d5946-884">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-884">Description</span></span>                          |
+| <span data-ttu-id="b4f0d-882">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-882">Parameter</span></span> | <span data-ttu-id="b4f0d-883">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-883">Description</span></span>                          |
 |-----------|--------------------------------------|
-| <span data-ttu-id="d5946-885">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-885">class</span></span>     | <span data-ttu-id="d5946-886">クラス、テーブル、またはフォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-886">The name of a class, table, or form.</span></span> |
-| <span data-ttu-id="d5946-887">デリゲート</span><span class="sxs-lookup"><span data-stu-id="d5946-887">delegate</span></span>  | <span data-ttu-id="d5946-888">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-888">The name of the delegate.</span></span>            |
+| <span data-ttu-id="b4f0d-884">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-884">class</span></span>     | <span data-ttu-id="b4f0d-885">クラス、テーブル、またはフォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-885">The name of a class, table, or form.</span></span> |
+| <span data-ttu-id="b4f0d-886">デリゲート</span><span class="sxs-lookup"><span data-stu-id="b4f0d-886">delegate</span></span>  | <span data-ttu-id="b4f0d-887">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-887">The name of the delegate.</span></span>            |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-889">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-889">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-888">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-888">Return Value</span></span>
 
-<span data-ttu-id="d5946-890">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-890">The name of the delegate.</span></span>
+<span data-ttu-id="b4f0d-889">委任の名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-889">The name of the delegate.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-891">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-891">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-890">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-890">Remarks</span></span>
 
-<span data-ttu-id="d5946-892">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-892">This is a compile-time function.</span></span> <span data-ttu-id="d5946-893">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-893">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-891">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-891">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-892">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-892">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-894">例</span><span class="sxs-lookup"><span data-stu-id="d5946-894">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-893">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-893">Example</span></span>
 
-<span data-ttu-id="d5946-895">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-895">No example.</span></span>
+<span data-ttu-id="b4f0d-894">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-894">No example.</span></span>
 
-## <a name="staticmethodstr"></a><span data-ttu-id="d5946-896">staticMethodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-896">staticMethodStr</span></span>
-<span data-ttu-id="d5946-897">指定した静的メソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-897">Validates that the specified static method exists in the specified class; if it does not, a compiler error occurs.</span></span>
+## <a name="staticmethodstr"></a><span data-ttu-id="b4f0d-895">staticMethodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-895">staticMethodStr</span></span>
+<span data-ttu-id="b4f0d-896">指定した静的メソッドが指定したクラスに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-896">Validates that the specified static method exists in the specified class; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-898">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-898">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-897">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-897">Syntax</span></span>
 
 ```xpp
 str staticMethodStr(class class, int method)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-899">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-899">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-898">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-898">Parameters</span></span>
 
-| <span data-ttu-id="d5946-900">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-900">Parameter</span></span> | <span data-ttu-id="d5946-901">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-901">Description</span></span>                                |
+| <span data-ttu-id="b4f0d-899">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-899">Parameter</span></span> | <span data-ttu-id="b4f0d-900">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-900">Description</span></span>                                |
 |-----------|--------------------------------------------|
-| <span data-ttu-id="d5946-902">クラス</span><span class="sxs-lookup"><span data-stu-id="d5946-902">class</span></span>     | <span data-ttu-id="d5946-903">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-903">The name of the class.</span></span>                     |
-| <span data-ttu-id="d5946-904">メソッド</span><span class="sxs-lookup"><span data-stu-id="d5946-904">method</span></span>    | <span data-ttu-id="d5946-905">検証する静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-905">The name of the static method to validate.</span></span> |
+| <span data-ttu-id="b4f0d-901">クラス</span><span class="sxs-lookup"><span data-stu-id="b4f0d-901">class</span></span>     | <span data-ttu-id="b4f0d-902">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-902">The name of the class.</span></span>                     |
+| <span data-ttu-id="b4f0d-903">メソッド</span><span class="sxs-lookup"><span data-stu-id="b4f0d-903">method</span></span>    | <span data-ttu-id="b4f0d-904">検証する静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-904">The name of the static method to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-906">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-906">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-905">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-905">Return Value</span></span>
 
-<span data-ttu-id="d5946-907">有効な場合の、指定された静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-907">The name of the static method, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-906">有効な場合の、指定された静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-906">The name of the static method, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-908">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-908">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-907">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-907">Remarks</span></span>
 
-<span data-ttu-id="d5946-909">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-909">This is a compile-time function.</span></span> <span data-ttu-id="d5946-910">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-910">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-908">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-908">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-909">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-909">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-911">例</span><span class="sxs-lookup"><span data-stu-id="d5946-911">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-910">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-910">Example</span></span>
 
-<span data-ttu-id="d5946-912">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-912">No example.</span></span>
+<span data-ttu-id="b4f0d-911">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-911">No example.</span></span>
 
-## <a name="tablecollectionstr"></a><span data-ttu-id="d5946-913">tableCollectionStr</span><span class="sxs-lookup"><span data-stu-id="d5946-913">tableCollectionStr</span></span>
-<span data-ttu-id="d5946-914">指定したテーブル コレクションがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-914">Validates that the specified table collection exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="tablecollectionstr"></a><span data-ttu-id="b4f0d-912">tableCollectionStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-912">tableCollectionStr</span></span>
+<span data-ttu-id="b4f0d-913">指定したテーブル コレクションがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-913">Validates that the specified table collection exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-915">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-915">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-914">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-914">Syntax</span></span>
 
 ```xpp
 str tableCollectionStr(class tablecollection)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-916">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-916">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-915">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-915">Parameters</span></span>
 
-| <span data-ttu-id="d5946-917">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-917">Parameter</span></span>       | <span data-ttu-id="d5946-918">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-918">Description</span></span>                                   |
+| <span data-ttu-id="b4f0d-916">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-916">Parameter</span></span>       | <span data-ttu-id="b4f0d-917">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-917">Description</span></span>                                   |
 |-----------------|-----------------------------------------------|
-| <span data-ttu-id="d5946-919">tablecollection</span><span class="sxs-lookup"><span data-stu-id="d5946-919">tablecollection</span></span> | <span data-ttu-id="d5946-920">検証するテーブル コレクションの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-920">The name of the table collection to validate.</span></span> |
+| <span data-ttu-id="b4f0d-918">tablecollection</span><span class="sxs-lookup"><span data-stu-id="b4f0d-918">tablecollection</span></span> | <span data-ttu-id="b4f0d-919">検証するテーブル コレクションの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-919">The name of the table collection to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-921">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-921">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-920">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-920">Return Value</span></span>
 
-<span data-ttu-id="d5946-922">有効な場合の、指定されたテーブル コレクションの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-922">The name of the specified table collection, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-921">有効な場合の、指定されたテーブル コレクションの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-921">The name of the specified table collection, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-923">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-923">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-922">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-922">Remarks</span></span>
 
-<span data-ttu-id="d5946-924">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-924">This is a compile-time function.</span></span> <span data-ttu-id="d5946-925">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-925">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-923">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-923">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-924">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-924">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-926">例</span><span class="sxs-lookup"><span data-stu-id="d5946-926">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-925">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-925">Example</span></span>
 
-<span data-ttu-id="d5946-927">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-927">No example.</span></span>
+<span data-ttu-id="b4f0d-926">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-926">No example.</span></span>
 
-## <a name="tablefieldgroupstr"></a><span data-ttu-id="d5946-928">tableFieldGroupStr</span><span class="sxs-lookup"><span data-stu-id="d5946-928">tableFieldGroupStr</span></span>
-<span data-ttu-id="d5946-929">文字列としてフィールド グループの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-929">Retrieves the name of a field group as a string.</span></span>
+## <a name="tablefieldgroupstr"></a><span data-ttu-id="b4f0d-927">tableFieldGroupStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-927">tableFieldGroupStr</span></span>
+<span data-ttu-id="b4f0d-928">文字列としてフィールド グループの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-928">Retrieves the name of a field group as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-930">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-930">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-929">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-929">Syntax</span></span>
 
 ```xpp
 str tableFieldGroupStr(str tableName, str fieldGroupName)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-931">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-931">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-930">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-930">Parameters</span></span>
 
-| <span data-ttu-id="d5946-932">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-932">Parameter</span></span>      | <span data-ttu-id="d5946-933">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-933">Description</span></span>                              |
+| <span data-ttu-id="b4f0d-931">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-931">Parameter</span></span>      | <span data-ttu-id="b4f0d-932">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-932">Description</span></span>                              |
 |----------------|------------------------------------------|
-| <span data-ttu-id="d5946-934">tableName</span><span class="sxs-lookup"><span data-stu-id="d5946-934">tableName</span></span>      | <span data-ttu-id="d5946-935">フィールド グループを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-935">The table that contains the field group.</span></span> |
-| <span data-ttu-id="d5946-936">fieldGroupName</span><span class="sxs-lookup"><span data-stu-id="d5946-936">fieldGroupName</span></span> | <span data-ttu-id="d5946-937">テーブル内のフィールド グループ。</span><span class="sxs-lookup"><span data-stu-id="d5946-937">The field group in the table.</span></span>            |
+| <span data-ttu-id="b4f0d-933">tableName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-933">tableName</span></span>      | <span data-ttu-id="b4f0d-934">フィールド グループを含むテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-934">The table that contains the field group.</span></span> |
+| <span data-ttu-id="b4f0d-935">fieldGroupName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-935">fieldGroupName</span></span> | <span data-ttu-id="b4f0d-936">テーブル内のフィールド グループ。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-936">The field group in the table.</span></span>            |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-938">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-938">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-937">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-937">Return Value</span></span>
 
-<span data-ttu-id="d5946-939">文字列としてのフィールド グループの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-939">The name of the field group as a string.</span></span>
+<span data-ttu-id="b4f0d-938">文字列としてのフィールド グループの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-938">The name of the field group as a string.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-940">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-940">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-939">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-939">Remarks</span></span>
 
-<span data-ttu-id="d5946-941">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-941">This is a compile-time function.</span></span> <span data-ttu-id="d5946-942">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-942">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-940">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-940">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-941">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-941">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-943">例</span><span class="sxs-lookup"><span data-stu-id="d5946-943">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-942">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-942">Example</span></span>
 
-<span data-ttu-id="d5946-944">次の例では、**編集** フィールド グループの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-944">The following example retrieves the name of the **Editing** field group as a string.</span></span>
+<span data-ttu-id="b4f0d-943">次の例では、**編集** フィールド グループの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-943">The following example retrieves the name of the **Editing** field group as a string.</span></span>
 
 ```xpp
 static void tableFieldGroupStrExample(Args _arg)
@@ -1885,60 +1884,60 @@ Editing
 ****/
 ```
 
-## <a name="tablemethodstr"></a><span data-ttu-id="d5946-945">tableMethodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-945">tableMethodStr</span></span>
-<span data-ttu-id="d5946-946">指定したメソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-946">Validates that the specified method exists in the specified table; if it does not, a compiler error occurs.</span></span>
+## <a name="tablemethodstr"></a><span data-ttu-id="b4f0d-944">tableMethodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-944">tableMethodStr</span></span>
+<span data-ttu-id="b4f0d-945">指定したメソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-945">Validates that the specified method exists in the specified table; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-947">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-947">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-946">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-946">Syntax</span></span>
 
 ```xpp
 str tableMethodStr(int table, int method)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-948">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-948">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-947">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-947">Parameters</span></span>
 
-| <span data-ttu-id="d5946-949">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-949">Parameter</span></span> | <span data-ttu-id="d5946-950">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-950">Description</span></span>                         |
+| <span data-ttu-id="b4f0d-948">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-948">Parameter</span></span> | <span data-ttu-id="b4f0d-949">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-949">Description</span></span>                         |
 |-----------|-------------------------------------|
-| <span data-ttu-id="d5946-951">テーブル</span><span class="sxs-lookup"><span data-stu-id="d5946-951">table</span></span>     | <span data-ttu-id="d5946-952">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-952">The name of the table.</span></span>              |
-| <span data-ttu-id="d5946-953">メソッド</span><span class="sxs-lookup"><span data-stu-id="d5946-953">method</span></span>    | <span data-ttu-id="d5946-954">検証するメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-954">The name of the method to validate.</span></span> |
+| <span data-ttu-id="b4f0d-950">テーブル</span><span class="sxs-lookup"><span data-stu-id="b4f0d-950">table</span></span>     | <span data-ttu-id="b4f0d-951">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-951">The name of the table.</span></span>              |
+| <span data-ttu-id="b4f0d-952">メソッド</span><span class="sxs-lookup"><span data-stu-id="b4f0d-952">method</span></span>    | <span data-ttu-id="b4f0d-953">検証するメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-953">The name of the method to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-955">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-955">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-954">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-954">Return Value</span></span>
 
-<span data-ttu-id="d5946-956">有効な場合の、メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-956">The name of the method, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-955">有効な場合の、メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-955">The name of the method, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-957">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-957">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-956">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-956">Remarks</span></span>
 
-<span data-ttu-id="d5946-958">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-958">This is a compile-time function.</span></span> <span data-ttu-id="d5946-959">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-959">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-957">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-957">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-958">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-958">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-960">例</span><span class="sxs-lookup"><span data-stu-id="d5946-960">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-959">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-959">Example</span></span>
 
-<span data-ttu-id="d5946-961">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-961">No example.</span></span>
+<span data-ttu-id="b4f0d-960">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-960">No example.</span></span>
 
-## <a name="tablenum"></a><span data-ttu-id="d5946-962">tableNum</span><span class="sxs-lookup"><span data-stu-id="d5946-962">tableNum</span></span>
-<span data-ttu-id="d5946-963">特定のテーブルのテーブル ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-963">Retrieves the table ID of the specified table.</span></span>
+## <a name="tablenum"></a><span data-ttu-id="b4f0d-961">tableNum</span><span class="sxs-lookup"><span data-stu-id="b4f0d-961">tableNum</span></span>
+<span data-ttu-id="b4f0d-962">特定のテーブルのテーブル ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-962">Retrieves the table ID of the specified table.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-964">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-964">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-963">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-963">Syntax</span></span>
 
 ```xpp
 int tableNum(str table)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-965">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-965">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-964">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-964">Parameters</span></span>
 
-| <span data-ttu-id="d5946-966">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-966">Parameter</span></span> | <span data-ttu-id="d5946-967">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-967">Description</span></span>                             |
+| <span data-ttu-id="b4f0d-965">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-965">Parameter</span></span> | <span data-ttu-id="b4f0d-966">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-966">Description</span></span>                             |
 |-----------|-----------------------------------------|
-| <span data-ttu-id="d5946-968">テーブル</span><span class="sxs-lookup"><span data-stu-id="d5946-968">table</span></span>     | <span data-ttu-id="d5946-969">テーブル ID を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-969">The table to retrieve the table ID for.</span></span> |
+| <span data-ttu-id="b4f0d-967">テーブル</span><span class="sxs-lookup"><span data-stu-id="b4f0d-967">table</span></span>     | <span data-ttu-id="b4f0d-968">テーブル ID を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-968">The table to retrieve the table ID for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-970">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-970">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-969">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-969">Return Value</span></span>
 
-<span data-ttu-id="d5946-971">特定のテーブルのテーブル ID</span><span class="sxs-lookup"><span data-stu-id="d5946-971">The table ID of the specified table.</span></span>
+<span data-ttu-id="b4f0d-970">特定のテーブルのテーブル ID</span><span class="sxs-lookup"><span data-stu-id="b4f0d-970">The table ID of the specified table.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-972">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-972">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-971">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-971">Remarks</span></span>
 
-<span data-ttu-id="d5946-973">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-973">This is a compile-time function.</span></span> <span data-ttu-id="d5946-974">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-974">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-972">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-972">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-973">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-973">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-975">例</span><span class="sxs-lookup"><span data-stu-id="d5946-975">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-974">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-974">Example</span></span>
 
-<span data-ttu-id="d5946-976">次の例では、**tableID** 変数を 77 に設定します。これは、**CustTable** テーブルの **ID** です。</span><span class="sxs-lookup"><span data-stu-id="d5946-976">The following example sets the **tableID** variable to 77, which is the **ID** of the **CustTable** table.</span></span>
+<span data-ttu-id="b4f0d-975">次の例では、**tableID** 変数を 77 に設定します。これは、**CustTable** テーブルの **ID** です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-975">The following example sets the **tableID** variable to 77, which is the **ID** of the **CustTable** table.</span></span>
 
 ```xpp
 static void tableNumExample(Args _args)
@@ -1956,32 +1955,32 @@ Message (11:15:54 am)
 ****/
 ```
 
-## <a name="tablepname"></a><span data-ttu-id="d5946-977">tablePName</span><span class="sxs-lookup"><span data-stu-id="d5946-977">tablePName</span></span>
-<span data-ttu-id="d5946-978">指定されたテーブルの出力可能な名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-978">Retrieves a string that contains the printable name of the specified table.</span></span>
+## <a name="tablepname"></a><span data-ttu-id="b4f0d-976">tablePName</span><span class="sxs-lookup"><span data-stu-id="b4f0d-976">tablePName</span></span>
+<span data-ttu-id="b4f0d-977">指定されたテーブルの出力可能な名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-977">Retrieves a string that contains the printable name of the specified table.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-979">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-979">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-978">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-978">Syntax</span></span>
 
 ```xpp
 str tablePName(str table)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-980">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-980">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-979">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-979">Parameters</span></span>
 
-| <span data-ttu-id="d5946-981">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-981">Parameter</span></span> | <span data-ttu-id="d5946-982">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-982">Description</span></span>                                   |
+| <span data-ttu-id="b4f0d-980">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-980">Parameter</span></span> | <span data-ttu-id="b4f0d-981">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-981">Description</span></span>                                   |
 |-----------|-----------------------------------------------|
-| <span data-ttu-id="d5946-983">テーブル</span><span class="sxs-lookup"><span data-stu-id="d5946-983">table</span></span>     | <span data-ttu-id="d5946-984">印刷可能な名前を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-984">The table to retrieve the printable name for.</span></span> |
+| <span data-ttu-id="b4f0d-982">テーブル</span><span class="sxs-lookup"><span data-stu-id="b4f0d-982">table</span></span>     | <span data-ttu-id="b4f0d-983">印刷可能な名前を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-983">The table to retrieve the printable name for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-985">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-985">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-984">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-984">Return Value</span></span>
 
-<span data-ttu-id="d5946-986">指定されたテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-986">The name of the specified table.</span></span>
+<span data-ttu-id="b4f0d-985">指定されたテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-985">The name of the specified table.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-987">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-987">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-986">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-986">Remarks</span></span>
 
-<span data-ttu-id="d5946-988">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-988">This is a compile-time function.</span></span> <span data-ttu-id="d5946-989">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-989">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-987">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-987">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-988">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-988">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-990">例</span><span class="sxs-lookup"><span data-stu-id="d5946-990">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-989">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-989">Example</span></span>
 
-<span data-ttu-id="d5946-991">次の例では、**CustTable** テーブルのラベルを *MyText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d5946-991">The following example assigns the label of the **CustTable** table to the *MyText* variable.</span></span>
+<span data-ttu-id="b4f0d-990">次の例では、**CustTable** テーブルのラベルを *MyText* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-990">The following example assigns the label of the **CustTable** table to the *MyText* variable.</span></span>
 
 ```xpp
 static void tablePNameExample(Args _args)
@@ -1998,60 +1997,60 @@ Customers is the label of the CustTable table.
 ****/
 ```
 
-## <a name="tablestaticmethodstr"></a><span data-ttu-id="d5946-992">tableStaticMethodStr</span><span class="sxs-lookup"><span data-stu-id="d5946-992">tableStaticMethodStr</span></span>
-<span data-ttu-id="d5946-993">指定した静的メソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-993">Validates that the specified static method exists in the specified table; if it does not, a compiler error occurs.</span></span>
+## <a name="tablestaticmethodstr"></a><span data-ttu-id="b4f0d-991">tableStaticMethodStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-991">tableStaticMethodStr</span></span>
+<span data-ttu-id="b4f0d-992">指定した静的メソッドが指定したテーブルに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-992">Validates that the specified static method exists in the specified table; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-994">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-994">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-993">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-993">Syntax</span></span>
 
 ```xpp
 str tableStaticMethodStr(int table, int method)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-995">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-995">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-994">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-994">Parameters</span></span>
 
-| <span data-ttu-id="d5946-996">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-996">Parameter</span></span> | <span data-ttu-id="d5946-997">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-997">Description</span></span>                                |
+| <span data-ttu-id="b4f0d-995">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-995">Parameter</span></span> | <span data-ttu-id="b4f0d-996">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-996">Description</span></span>                                |
 |-----------|--------------------------------------------|
-| <span data-ttu-id="d5946-998">テーブル</span><span class="sxs-lookup"><span data-stu-id="d5946-998">table</span></span>     | <span data-ttu-id="d5946-999">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-999">The name of the table.</span></span>                     |
-| <span data-ttu-id="d5946-1000">メソッド</span><span class="sxs-lookup"><span data-stu-id="d5946-1000">method</span></span>    | <span data-ttu-id="d5946-1001">検証する静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1001">The name of the static method to validate.</span></span> |
+| <span data-ttu-id="b4f0d-997">テーブル</span><span class="sxs-lookup"><span data-stu-id="b4f0d-997">table</span></span>     | <span data-ttu-id="b4f0d-998">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-998">The name of the table.</span></span>                     |
+| <span data-ttu-id="b4f0d-999">メソッド</span><span class="sxs-lookup"><span data-stu-id="b4f0d-999">method</span></span>    | <span data-ttu-id="b4f0d-1000">検証する静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1000">The name of the static method to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1002">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1002">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1001">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1001">Return Value</span></span>
 
-<span data-ttu-id="d5946-1003">指定された静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1003">The name of the specified static method.</span></span>
+<span data-ttu-id="b4f0d-1002">指定された静的メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1002">The name of the specified static method.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1004">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1004">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1003">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1003">Remarks</span></span>
 
-<span data-ttu-id="d5946-1005">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1005">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1006">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1006">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1004">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1004">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1005">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1005">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1007">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1007">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1006">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1006">Example</span></span>
 
-<span data-ttu-id="d5946-1008">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-1008">No example.</span></span>
+<span data-ttu-id="b4f0d-1007">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1007">No example.</span></span>
 
-## <a name="tablestr"></a><span data-ttu-id="d5946-1009">tableStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1009">tableStr</span></span>
-<span data-ttu-id="d5946-1010">指定したテーブルの名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1010">Retrieves a string that contains the name the specified table.</span></span>
+## <a name="tablestr"></a><span data-ttu-id="b4f0d-1008">tableStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1008">tableStr</span></span>
+<span data-ttu-id="b4f0d-1009">指定したテーブルの名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1009">Retrieves a string that contains the name the specified table.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1011">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1011">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1010">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1010">Syntax</span></span>
 
 ```xpp
 str tableStr(str table)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1012">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1012">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1011">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1011">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1013">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1013">Parameter</span></span> | <span data-ttu-id="d5946-1014">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1014">Description</span></span>                         |
+| <span data-ttu-id="b4f0d-1012">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1012">Parameter</span></span> | <span data-ttu-id="b4f0d-1013">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1013">Description</span></span>                         |
 |-----------|-------------------------------------|
-| <span data-ttu-id="d5946-1015">テーブル</span><span class="sxs-lookup"><span data-stu-id="d5946-1015">table</span></span>     | <span data-ttu-id="d5946-1016">文字列を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="d5946-1016">The table to retrieve a string for.</span></span> |
+| <span data-ttu-id="b4f0d-1014">テーブル</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1014">table</span></span>     | <span data-ttu-id="b4f0d-1015">文字列を取得するテーブル。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1015">The table to retrieve a string for.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1017">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1017">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1016">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1016">Return Value</span></span>
 
-<span data-ttu-id="d5946-1018">指定したテーブルの名前を含む文字列値。</span><span class="sxs-lookup"><span data-stu-id="d5946-1018">A string value that contains the name of the specified table.</span></span>
+<span data-ttu-id="b4f0d-1017">指定したテーブルの名前を含む文字列値。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1017">A string value that contains the name of the specified table.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1019">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1019">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1018">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1018">Remarks</span></span>
 
-<span data-ttu-id="d5946-1020">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1020">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1021">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1021">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1019">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1019">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1020">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1020">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1022">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1022">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1021">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1021">Example</span></span>
 
-<span data-ttu-id="d5946-1023">次の例では、**CustTable** テーブルの名前を *MyTxt* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="d5946-1023">The following example assigns the name of the **CustTable** table to the *MyTxt* variable.</span></span>
+<span data-ttu-id="b4f0d-1022">次の例では、**CustTable** テーブルの名前を *MyTxt* 変数に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1022">The following example assigns the name of the **CustTable** table to the *MyTxt* variable.</span></span>
 
 ```xpp
 static void tableStrExample(Args _args)
@@ -2068,57 +2067,57 @@ CustTable is the str output of the input of CustTable.
 ****/
 ```
 
-## <a name="tilestr"></a><span data-ttu-id="d5946-1024">tileStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1024">tileStr</span></span>
-<span data-ttu-id="d5946-1025">指定したタイルの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1025">Retrieves a string that represents the name of the specified tile.</span></span>
+## <a name="tilestr"></a><span data-ttu-id="b4f0d-1023">tileStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1023">tileStr</span></span>
+<span data-ttu-id="b4f0d-1024">指定したタイルの名前を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1024">Retrieves a string that represents the name of the specified tile.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1026">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1026">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1025">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1025">Syntax</span></span>
 
 ```xpp
 str tileStr(str tile)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1027">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1027">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1026">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1026">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1028">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1028">Parameter</span></span> | <span data-ttu-id="d5946-1029">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1029">Description</span></span>           |
+| <span data-ttu-id="b4f0d-1027">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1027">Parameter</span></span> | <span data-ttu-id="b4f0d-1028">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1028">Description</span></span>           |
 |-----------|-----------------------|
-| <span data-ttu-id="d5946-1030">tile</span><span class="sxs-lookup"><span data-stu-id="d5946-1030">tile</span></span>      | <span data-ttu-id="d5946-1031">タイルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1031">The name of the tile.</span></span> |
+| <span data-ttu-id="b4f0d-1029">tile</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1029">tile</span></span>      | <span data-ttu-id="b4f0d-1030">タイルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1030">The name of the tile.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1032">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1032">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1031">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1031">Return Value</span></span>
 
-<span data-ttu-id="d5946-1033">文字列のタイルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1033">The name of the tile in a string.</span></span>
+<span data-ttu-id="b4f0d-1032">文字列のタイルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1032">The name of the tile in a string.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1034">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1034">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1033">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1033">Remarks</span></span>
 
-<span data-ttu-id="d5946-1035">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1035">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1036">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1036">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1034">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1034">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1035">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1035">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1037">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1037">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1036">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1036">Example</span></span>
 
-<span data-ttu-id="d5946-1038">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-1038">No example.</span></span>
+<span data-ttu-id="b4f0d-1037">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1037">No example.</span></span>
 
-## <a name="varstr"></a><span data-ttu-id="d5946-1039">varStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1039">varStr</span></span>
-<span data-ttu-id="d5946-1040">指定した変数の名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1040">Retrieves a string that contains the name of the specified variable.</span></span>
+## <a name="varstr"></a><span data-ttu-id="b4f0d-1038">varStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1038">varStr</span></span>
+<span data-ttu-id="b4f0d-1039">指定した変数の名前を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1039">Retrieves a string that contains the name of the specified variable.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1041">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1041">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1040">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1040">Syntax</span></span>
 
 ```xpp
 str varStr(str var)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1042">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1042">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1041">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1041">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1043">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1043">Parameter</span></span> | <span data-ttu-id="d5946-1044">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1044">Description</span></span>               |
+| <span data-ttu-id="b4f0d-1042">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1042">Parameter</span></span> | <span data-ttu-id="b4f0d-1043">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1043">Description</span></span>               |
 |-----------|---------------------------|
-| <span data-ttu-id="d5946-1045">var</span><span class="sxs-lookup"><span data-stu-id="d5946-1045">var</span></span>       | <span data-ttu-id="d5946-1046">変数の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1046">The name of the variable.</span></span> |
+| <span data-ttu-id="b4f0d-1044">var</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1044">var</span></span>       | <span data-ttu-id="b4f0d-1045">変数の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1045">The name of the variable.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1047">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1047">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1046">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1046">Return Value</span></span>
 
-<span data-ttu-id="d5946-1048">指定した変数の名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-1048">A string that contains the name of the specified variable.</span></span>
+<span data-ttu-id="b4f0d-1047">指定した変数の名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1047">A string that contains the name of the specified variable.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1049">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1049">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1048">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1048">Remarks</span></span>
 
-<span data-ttu-id="d5946-1050">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1050">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1051">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1051">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1049">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1049">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1050">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1050">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1052">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1052">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1051">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1051">Example</span></span>
 
 ```xpp
 static void varStrExample(Args _arg)
@@ -2136,30 +2135,30 @@ myVariable is the variable name.
 ****/
 ```
 
-## <a name="webactionitemstr"></a><span data-ttu-id="d5946-1053">webActionItemStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1053">webActionItemStr</span></span>
-<span data-ttu-id="d5946-1054">指定した Web アクション項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1054">Validates that the specified web action item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webactionitemstr"></a><span data-ttu-id="b4f0d-1052">webActionItemStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1052">webActionItemStr</span></span>
+<span data-ttu-id="b4f0d-1053">指定した Web アクション項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1053">Validates that the specified web action item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1055">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1055">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1054">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1054">Syntax</span></span>
 
 ```xpp
 str webActionItemStr(class webactionitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1056">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1056">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1055">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1055">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1057">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1057">Parameter</span></span>     | <span data-ttu-id="d5946-1058">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1058">Description</span></span>                                  |
+| <span data-ttu-id="b4f0d-1056">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1056">Parameter</span></span>     | <span data-ttu-id="b4f0d-1057">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1057">Description</span></span>                                  |
 |---------------|----------------------------------------------|
-| <span data-ttu-id="d5946-1059">webactionitem</span><span class="sxs-lookup"><span data-stu-id="d5946-1059">webactionitem</span></span> | <span data-ttu-id="d5946-1060">検証する Web アクション項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1060">The name of the web action item to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1058">webactionitem</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1058">webactionitem</span></span> | <span data-ttu-id="b4f0d-1059">検証する Web アクション項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1059">The name of the web action item to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1061">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1061">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1060">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1060">Return Value</span></span>
 
-<span data-ttu-id="d5946-1062">有効な場合の、指定された Web アクション項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1062">The name of the specified web action item, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1061">有効な場合の、指定された Web アクション項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1061">The name of the specified web action item, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1063">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1063">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1062">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1062">Remarks</span></span>
 
-<span data-ttu-id="d5946-1064">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1064">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1065">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1065">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1063">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1063">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1064">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1064">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1066">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1066">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1065">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1065">Example</span></span>
 
 ```xpp
 {
@@ -2171,28 +2170,30 @@ str webActionItemStr(class webactionitem)
 }
 ```
 
-## <a name="webdisplaycontentitemstr"></a><span data-ttu-id="d5946-1067">webDisplayContentItemStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1067">webDisplayContentItemStr</span></span>
-<span data-ttu-id="d5946-1068">指定したWeb 表示のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1068">Validates that the specified web display content item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webdisplaycontentitemstr"></a><span data-ttu-id="b4f0d-1066">webDisplayContentItemStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1066">webDisplayContentItemStr</span></span>
+<span data-ttu-id="b4f0d-1067">指定したWeb 表示のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1067">Validates that the specified web display content item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1069">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1069">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1068">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1068">Syntax</span></span>
 
-    str webDisplayContentItemStr(class webdisplaycontentitem)
+```xpp
+str webDisplayContentItemStr(class webdisplaycontentitem)
+```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1070">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1070">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1069">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1069">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1071">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1071">Parameter</span></span>             | <span data-ttu-id="d5946-1072">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1072">Description</span></span>                                           |
+| <span data-ttu-id="b4f0d-1070">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1070">Parameter</span></span>             | <span data-ttu-id="b4f0d-1071">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1071">Description</span></span>                                           |
 |-----------------------|-------------------------------------------------------|
-| <span data-ttu-id="d5946-1073">webdisplaycontentitem</span><span class="sxs-lookup"><span data-stu-id="d5946-1073">webdisplaycontentitem</span></span> | <span data-ttu-id="d5946-1074">検証する Web 表示コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1074">The name of the web display content item to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1072">webdisplaycontentitem</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1072">webdisplaycontentitem</span></span> | <span data-ttu-id="b4f0d-1073">検証する Web 表示コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1073">The name of the web display content item to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1075">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1075">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1074">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1074">Return Value</span></span>
 
-<span data-ttu-id="d5946-1076">有効な場合の、指定された Web 表示コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1076">The name of the specified web display content item, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1075">有効な場合の、指定された Web 表示コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1075">The name of the specified web display content item, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1077">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1077">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1076">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1076">Remarks</span></span>
 
-<span data-ttu-id="d5946-1078">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1078">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1079">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1079">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1077">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1077">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1078">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1078">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1080">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1080">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1079">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1079">Example</span></span>
 
 ```xpp
 {
@@ -2205,30 +2206,30 @@ str webActionItemStr(class webactionitem)
 }
 ```
 
-## <a name="webformstr"></a><span data-ttu-id="d5946-1081">webFormStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1081">webFormStr</span></span>
-<span data-ttu-id="d5946-1082">指定した Web フォームがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1082">Validates that the specified web form exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webformstr"></a><span data-ttu-id="b4f0d-1080">webFormStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1080">webFormStr</span></span>
+<span data-ttu-id="b4f0d-1081">指定した Web フォームがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1081">Validates that the specified web form exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1083">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1083">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1082">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1082">Syntax</span></span>
 
 ```xpp
 str webFormStr(str name)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1084">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1084">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1083">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1083">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1085">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1085">Parameter</span></span> | <span data-ttu-id="d5946-1086">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1086">Description</span></span>                           |
+| <span data-ttu-id="b4f0d-1084">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1084">Parameter</span></span> | <span data-ttu-id="b4f0d-1085">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1085">Description</span></span>                           |
 |-----------|---------------------------------------|
-| <span data-ttu-id="d5946-1087">名前</span><span class="sxs-lookup"><span data-stu-id="d5946-1087">name</span></span>      | <span data-ttu-id="d5946-1088">検証する Web フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1088">The name of the web form to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1086">名前</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1086">name</span></span>      | <span data-ttu-id="b4f0d-1087">検証する Web フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1087">The name of the web form to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1089">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1089">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1088">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1088">Return Value</span></span>
 
-<span data-ttu-id="d5946-1090">有効な場合の、指定された Web フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1090">The name of the specified web form, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1089">有効な場合の、指定された Web フォームの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1089">The name of the specified web form, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1091">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1091">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1090">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1090">Remarks</span></span>
 
-<span data-ttu-id="d5946-1092">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1092">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1093">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1093">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1091">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1091">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1092">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1092">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1094">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1094">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1093">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1093">Example</span></span>
 
 ```xpp
 {
@@ -2240,30 +2241,30 @@ str webFormStr(str name)
 }
 ```
 
-## <a name="webletitemstr"></a><span data-ttu-id="d5946-1095">webletItemStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1095">webletItemStr</span></span>
-<span data-ttu-id="d5946-1096">指定した Weblet 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1096">Validates that the specified weblet item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webletitemstr"></a><span data-ttu-id="b4f0d-1094">webletItemStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1094">webletItemStr</span></span>
+<span data-ttu-id="b4f0d-1095">指定した Weblet 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1095">Validates that the specified weblet item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1097">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1097">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1096">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1096">Syntax</span></span>
 
 ```xpp
 str webletItemStr(class webletitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1098">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1098">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1097">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1097">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1099">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1099">Parameter</span></span>  | <span data-ttu-id="d5946-1100">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1100">Description</span></span>                              |
+| <span data-ttu-id="b4f0d-1098">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1098">Parameter</span></span>  | <span data-ttu-id="b4f0d-1099">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1099">Description</span></span>                              |
 |------------|------------------------------------------|
-| <span data-ttu-id="d5946-1101">webletitem</span><span class="sxs-lookup"><span data-stu-id="d5946-1101">webletitem</span></span> | <span data-ttu-id="d5946-1102">検証する Weblet 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1102">The name of the weblet item to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1100">webletitem</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1100">webletitem</span></span> | <span data-ttu-id="b4f0d-1101">検証する Weblet 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1101">The name of the weblet item to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1103">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1103">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1102">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1102">Return Value</span></span>
 
-<span data-ttu-id="d5946-1104">有効な場合の、指定された Weblet 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1104">The name of the specified weblet item, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1103">有効な場合の、指定された Weblet 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1103">The name of the specified weblet item, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1105">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1105">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1104">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1104">Remarks</span></span>
 
-<span data-ttu-id="d5946-1106">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1106">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1107">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1107">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1105">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1105">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1106">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1106">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1108">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1108">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1107">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1107">Example</span></span>
 
 ```xpp
 {
@@ -2275,30 +2276,30 @@ str webletItemStr(class webletitem)
 }
 ```
 
-## <a name="webmenustr"></a><span data-ttu-id="d5946-1109">webMenuStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1109">webMenuStr</span></span>
-<span data-ttu-id="d5946-1110">指定した Web メニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1110">Validates that the specified web menu exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webmenustr"></a><span data-ttu-id="b4f0d-1108">webMenuStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1108">webMenuStr</span></span>
+<span data-ttu-id="b4f0d-1109">指定した Web メニューがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1109">Validates that the specified web menu exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1111">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1111">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1110">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1110">Syntax</span></span>
 
 ```xpp
 str webMenuStr(str name)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1112">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1111">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1111">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1113">Parameter</span></span> | <span data-ttu-id="d5946-1114">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1114">Description</span></span>                           |
+| <span data-ttu-id="b4f0d-1112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1112">Parameter</span></span> | <span data-ttu-id="b4f0d-1113">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1113">Description</span></span>                           |
 |-----------|---------------------------------------|
-| <span data-ttu-id="d5946-1115">名前</span><span class="sxs-lookup"><span data-stu-id="d5946-1115">name</span></span>      | <span data-ttu-id="d5946-1116">検証する Web メニューの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1116">The name of the web menu to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1114">名前</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1114">name</span></span>      | <span data-ttu-id="b4f0d-1115">検証する Web メニューの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1115">The name of the web menu to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1117">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1117">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1116">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1116">Return Value</span></span>
 
-<span data-ttu-id="d5946-1118">有効な場合の、指定された Web メニューの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1118">The name of the specified web menu, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1117">有効な場合の、指定された Web メニューの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1117">The name of the specified web menu, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1119">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1119">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1118">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1118">Remarks</span></span>
 
-<span data-ttu-id="d5946-1120">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1120">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1121">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1121">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1119">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1119">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1120">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1120">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1122">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1122">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1121">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1121">Example</span></span>
 
 ```xpp
 {
@@ -2310,30 +2311,30 @@ str webMenuStr(str name)
 }
 ```
 
-## <a name="weboutputcontentitemstr"></a><span data-ttu-id="d5946-1123">webOutputContentItemStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1123">webOutputContentItemStr</span></span>
-<span data-ttu-id="d5946-1124">指定したWeb 出力のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1124">Validates that the specified web output content item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="weboutputcontentitemstr"></a><span data-ttu-id="b4f0d-1122">webOutputContentItemStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1122">webOutputContentItemStr</span></span>
+<span data-ttu-id="b4f0d-1123">指定したWeb 出力のコンテンツ項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1123">Validates that the specified web output content item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1125">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1125">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1124">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1124">Syntax</span></span>
 
 ```xpp
 str webOutputContentItemStr(class weboutputcontentitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1126">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1126">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1125">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1127">Parameter</span></span>            | <span data-ttu-id="d5946-1128">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1128">Description</span></span>                                          |
+| <span data-ttu-id="b4f0d-1126">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1126">Parameter</span></span>            | <span data-ttu-id="b4f0d-1127">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1127">Description</span></span>                                          |
 |----------------------|------------------------------------------------------|
-| <span data-ttu-id="d5946-1129">weboutputcontentitem</span><span class="sxs-lookup"><span data-stu-id="d5946-1129">weboutputcontentitem</span></span> | <span data-ttu-id="d5946-1130">検証する Web 出力コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1130">The name of the web output content item to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1128">weboutputcontentitem</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1128">weboutputcontentitem</span></span> | <span data-ttu-id="b4f0d-1129">検証する Web 出力コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1129">The name of the web output content item to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1131">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1131">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1130">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1130">Return Value</span></span>
 
-<span data-ttu-id="d5946-1132">有効な場合の、指定された Web 出力コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1132">The name of the specified web output content item, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1131">有効な場合の、指定された Web 出力コンテンツ項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1131">The name of the specified web output content item, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1133">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1133">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1132">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1132">Remarks</span></span>
 
-<span data-ttu-id="d5946-1134">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1134">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1135">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1135">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1133">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1133">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1134">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1134">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1136">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1136">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1135">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1135">Example</span></span>
 
 ```xpp
 {
@@ -2345,57 +2346,57 @@ str webOutputContentItemStr(class weboutputcontentitem)
 }
 ```
 
-## <a name="webpagedefstr"></a><span data-ttu-id="d5946-1137">webpageDefStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1137">webpageDefStr</span></span>
-<span data-ttu-id="d5946-1138">指定した Web ページ定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1138">Validates that the specified Web page definition exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webpagedefstr"></a><span data-ttu-id="b4f0d-1136">webpageDefStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1136">webpageDefStr</span></span>
+<span data-ttu-id="b4f0d-1137">指定した Web ページ定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1137">Validates that the specified Web page definition exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1139">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1139">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1138">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1138">Syntax</span></span>
 
 ```xpp
 str webpageDefStr(str pagename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1140">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1140">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1139">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1139">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1141">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1141">Parameter</span></span> | <span data-ttu-id="d5946-1142">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1142">Description</span></span>                                      |
+| <span data-ttu-id="b4f0d-1140">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1140">Parameter</span></span> | <span data-ttu-id="b4f0d-1141">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1141">Description</span></span>                                      |
 |-----------|--------------------------------------------------|
-| <span data-ttu-id="d5946-1143">pagename</span><span class="sxs-lookup"><span data-stu-id="d5946-1143">pagename</span></span>  | <span data-ttu-id="d5946-1144">検証する Web ページ定義の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1144">The name of the Web page definition to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1142">pagename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1142">pagename</span></span>  | <span data-ttu-id="b4f0d-1143">検証する Web ページ定義の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1143">The name of the Web page definition to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1145">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1145">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1144">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1144">Return Value</span></span>
 
-<span data-ttu-id="d5946-1146">有効な場合の、指定された Web ページ定義の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1146">The name of the specified web-page definition, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1145">有効な場合の、指定された Web ページ定義の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1145">The name of the specified web-page definition, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1147">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1147">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1146">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1146">Remarks</span></span>
 
-<span data-ttu-id="d5946-1148">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1148">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1149">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1149">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1147">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1147">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1148">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1148">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1150">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1150">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1149">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1149">Example</span></span>
 
-<span data-ttu-id="d5946-1151">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-1151">No example.</span></span>
+<span data-ttu-id="b4f0d-1150">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1150">No example.</span></span>
 
-## <a name="webreportstr"></a><span data-ttu-id="d5946-1152">webReportStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1152">webReportStr</span></span>
-<span data-ttu-id="d5946-1153">指定した Web レポートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1153">Validates that the specified web report exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webreportstr"></a><span data-ttu-id="b4f0d-1151">webReportStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1151">webReportStr</span></span>
+<span data-ttu-id="b4f0d-1152">指定した Web レポートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1152">Validates that the specified web report exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1154">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1154">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1153">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1153">Syntax</span></span>
 
 ```xpp
 str webReportStr(str name)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1155">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1155">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1154">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1154">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1156">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1156">Parameter</span></span> | <span data-ttu-id="d5946-1157">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1157">Description</span></span>                             |
+| <span data-ttu-id="b4f0d-1155">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1155">Parameter</span></span> | <span data-ttu-id="b4f0d-1156">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1156">Description</span></span>                             |
 |-----------|-----------------------------------------|
-| <span data-ttu-id="d5946-1158">名前</span><span class="sxs-lookup"><span data-stu-id="d5946-1158">name</span></span>      | <span data-ttu-id="d5946-1159">検証する Web レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1159">The name of the web report to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1157">名前</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1157">name</span></span>      | <span data-ttu-id="b4f0d-1158">検証する Web レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1158">The name of the web report to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1160">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1160">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1159">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1159">Return Value</span></span>
 
-<span data-ttu-id="d5946-1161">有効な場合の、指定された Web レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1161">The name of the specified web report, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1160">有効な場合の、指定された Web レポートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1160">The name of the specified web report, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1162">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1162">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1161">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1161">Remarks</span></span>
 
-<span data-ttu-id="d5946-1163">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1163">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1164">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1164">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1162">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1162">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1163">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1163">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1165">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1165">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1164">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1164">Example</span></span>
 
 ```xpp
 {
@@ -2407,30 +2408,30 @@ str webReportStr(str name)
 }
 ```
 
-## <a name="websitedefstr"></a><span data-ttu-id="d5946-1166">websiteDefStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1166">websiteDefStr</span></span>
-<span data-ttu-id="d5946-1167">指定した Web サイトの定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1167">Validates that the specified web-site definition exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="websitedefstr"></a><span data-ttu-id="b4f0d-1165">websiteDefStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1165">websiteDefStr</span></span>
+<span data-ttu-id="b4f0d-1166">指定した Web サイトの定義がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1166">Validates that the specified web-site definition exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1168">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1168">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1167">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1167">Syntax</span></span>
 
 ```xpp
 str websiteDefStr(str resourcename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1169">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1169">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1168">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1170">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1170">Parameter</span></span>    | <span data-ttu-id="d5946-1171">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1171">Description</span></span>                                      |
+| <span data-ttu-id="b4f0d-1169">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1169">Parameter</span></span>    | <span data-ttu-id="b4f0d-1170">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1170">Description</span></span>                                      |
 |--------------|--------------------------------------------------|
-| <span data-ttu-id="d5946-1172">resourcename</span><span class="sxs-lookup"><span data-stu-id="d5946-1172">resourcename</span></span> | <span data-ttu-id="d5946-1173">検証する Web サイト定義の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1173">The name of the Web site definition to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1171">resourcename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1171">resourcename</span></span> | <span data-ttu-id="b4f0d-1172">検証する Web サイト定義の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1172">The name of the Web site definition to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1174">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1174">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1173">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1173">Return Value</span></span>
 
-<span data-ttu-id="d5946-1175">有効な場合の、指定された Web サイト定義の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1175">The name of the specified web-site definition, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1174">有効な場合の、指定された Web サイト定義の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1174">The name of the specified web-site definition, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1176">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1176">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1175">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1175">Remarks</span></span>
 
-<span data-ttu-id="d5946-1177">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1177">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1178">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1178">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1176">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1176">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1177">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1177">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1179">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1179">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1178">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1178">Example</span></span>
 
 ```xpp
 {
@@ -2443,57 +2444,57 @@ str websiteDefStr(str resourcename)
 }
 ```
 
-## <a name="websitetempstr"></a><span data-ttu-id="d5946-1180">webSiteTempStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1180">webSiteTempStr</span></span>
-<span data-ttu-id="d5946-1181">指定した Web サイトのテンプレートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1181">Validates that the specified web-site template exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="websitetempstr"></a><span data-ttu-id="b4f0d-1179">webSiteTempStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1179">webSiteTempStr</span></span>
+<span data-ttu-id="b4f0d-1180">指定した Web サイトのテンプレートがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1180">Validates that the specified web-site template exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1182">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1182">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1181">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1181">Syntax</span></span>
 
 ```xpp
 str websiteTempStr(str resourcename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1183">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1183">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1182">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1184">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1184">Parameter</span></span>    | <span data-ttu-id="d5946-1185">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1185">Description</span></span>                                    |
+| <span data-ttu-id="b4f0d-1183">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1183">Parameter</span></span>    | <span data-ttu-id="b4f0d-1184">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1184">Description</span></span>                                    |
 |--------------|------------------------------------------------|
-| <span data-ttu-id="d5946-1186">resourcename</span><span class="sxs-lookup"><span data-stu-id="d5946-1186">resourcename</span></span> | <span data-ttu-id="d5946-1187">検証する Web サイト テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1187">The name of the Web site template to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1185">resourcename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1185">resourcename</span></span> | <span data-ttu-id="b4f0d-1186">検証する Web サイト テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1186">The name of the Web site template to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1188">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1188">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1187">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1187">Return Value</span></span>
 
-<span data-ttu-id="d5946-1189">有効な場合の、指定された Web テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1189">The name of the specified web-site template, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1188">有効な場合の、指定された Web テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1188">The name of the specified web-site template, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1190">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1190">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1189">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1189">Remarks</span></span>
 
-<span data-ttu-id="d5946-1191">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1191">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1192">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1192">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1190">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1190">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1191">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1191">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1193">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1193">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1192">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1192">Example</span></span>
 
-<span data-ttu-id="d5946-1194">例なし。</span><span class="sxs-lookup"><span data-stu-id="d5946-1194">No example.</span></span>
+<span data-ttu-id="b4f0d-1193">例なし。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1193">No example.</span></span>
 
-## <a name="webstaticfilestr"></a><span data-ttu-id="d5946-1195">webStaticFileStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1195">webStaticFileStr</span></span>
-<span data-ttu-id="d5946-1196">指定した Web 静的ファイルがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1196">Validates that the specified web static file exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webstaticfilestr"></a><span data-ttu-id="b4f0d-1194">webStaticFileStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1194">webStaticFileStr</span></span>
+<span data-ttu-id="b4f0d-1195">指定した Web 静的ファイルがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1195">Validates that the specified web static file exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1197">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1197">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1196">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1196">Syntax</span></span>
 
 ```xpp
 str webStaticFileStr(str pagename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1198">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1198">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1197">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1197">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1199">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1199">Parameter</span></span> | <span data-ttu-id="d5946-1200">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1200">Description</span></span>                                  |
+| <span data-ttu-id="b4f0d-1198">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1198">Parameter</span></span> | <span data-ttu-id="b4f0d-1199">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1199">Description</span></span>                                  |
 |-----------|----------------------------------------------|
-| <span data-ttu-id="d5946-1201">pagename</span><span class="sxs-lookup"><span data-stu-id="d5946-1201">pagename</span></span>  | <span data-ttu-id="d5946-1202">検証する Web 静的ファイル テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1202">The name of the web static file to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1200">pagename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1200">pagename</span></span>  | <span data-ttu-id="b4f0d-1201">検証する Web 静的ファイル テンプレートの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1201">The name of the web static file to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1203">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1203">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1202">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1202">Return Value</span></span>
 
-<span data-ttu-id="d5946-1204">有効な場合の、指定された Web 静的ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1204">The name of the specified web static file, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1203">有効な場合の、指定された Web 静的ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1203">The name of the specified web static file, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1205">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1205">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1204">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1204">Remarks</span></span>
 
-<span data-ttu-id="d5946-1206">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1206">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1207">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1207">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1205">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1205">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1206">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1206">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1208">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1208">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1207">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1207">Example</span></span>
 
 ```xpp
 {
@@ -2506,30 +2507,30 @@ str webStaticFileStr(str pagename)
 }
 ```
 
-## <a name="weburlitemstr"></a><span data-ttu-id="d5946-1209">webUrlItemStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1209">webUrlItemStr</span></span>
-<span data-ttu-id="d5946-1210">指定した Web URL 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1210">Validates that the specified web URL item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="weburlitemstr"></a><span data-ttu-id="b4f0d-1208">webUrlItemStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1208">webUrlItemStr</span></span>
+<span data-ttu-id="b4f0d-1209">指定した Web URL 項目がアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1209">Validates that the specified web URL item exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1211">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1211">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1210">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1210">Syntax</span></span>
 
 ```xpp
 str webUrlItemStr(class weburlitem)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1212">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1212">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1211">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1211">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1213">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1213">Parameter</span></span>  | <span data-ttu-id="d5946-1214">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1214">Description</span></span>                               |
+| <span data-ttu-id="b4f0d-1212">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1212">Parameter</span></span>  | <span data-ttu-id="b4f0d-1213">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1213">Description</span></span>                               |
 |------------|-------------------------------------------|
-| <span data-ttu-id="d5946-1215">weburlitem</span><span class="sxs-lookup"><span data-stu-id="d5946-1215">weburlitem</span></span> | <span data-ttu-id="d5946-1216">検証する Web URL 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1216">The name of the web URL item to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1214">weburlitem</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1214">weburlitem</span></span> | <span data-ttu-id="b4f0d-1215">検証する Web URL 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1215">The name of the web URL item to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1217">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1217">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1216">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1216">Return Value</span></span>
 
-<span data-ttu-id="d5946-1218">有効な場合の、指定された Web URL 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1218">The name of the specified web URL item, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1217">有効な場合の、指定された Web URL 項目の名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1217">The name of the specified web URL item, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1219">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1219">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1218">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1218">Remarks</span></span>
 
-<span data-ttu-id="d5946-1220">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1220">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1221">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1221">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1219">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1219">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1220">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1220">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1222">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1222">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1221">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1221">Example</span></span>
 
 ```xpp
 {
@@ -2542,30 +2543,30 @@ str webUrlItemStr(class weburlitem)
 }
 ```
 
-## <a name="webwebpartstr"></a><span data-ttu-id="d5946-1223">webWebPartStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1223">webWebPartStr</span></span>
-<span data-ttu-id="d5946-1224">指定した Web パーツがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1224">Validates that the specified web part exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="webwebpartstr"></a><span data-ttu-id="b4f0d-1222">webWebPartStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1222">webWebPartStr</span></span>
+<span data-ttu-id="b4f0d-1223">指定した Web パーツがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1223">Validates that the specified web part exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1225">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1225">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1224">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1224">Syntax</span></span>
 
 ```xpp
 str webWebpartStr(str resourcename)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1226">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1226">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1225">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1225">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1227">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1227">Parameter</span></span>    | <span data-ttu-id="d5946-1228">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1228">Description</span></span>                           |
+| <span data-ttu-id="b4f0d-1226">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1226">Parameter</span></span>    | <span data-ttu-id="b4f0d-1227">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1227">Description</span></span>                           |
 |--------------|---------------------------------------|
-| <span data-ttu-id="d5946-1229">resourcename</span><span class="sxs-lookup"><span data-stu-id="d5946-1229">resourcename</span></span> | <span data-ttu-id="d5946-1230">検証する Web パーツの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1230">The name of the web part to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1228">resourcename</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1228">resourcename</span></span> | <span data-ttu-id="b4f0d-1229">検証する Web パーツの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1229">The name of the web part to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1231">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1231">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1230">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1230">Return Value</span></span>
 
-<span data-ttu-id="d5946-1232">有効な場合の、指定された Web パーツの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1232">The name of the specified web part, if it is valid.</span></span>
+<span data-ttu-id="b4f0d-1231">有効な場合の、指定された Web パーツの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1231">The name of the specified web part, if it is valid.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1233">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1233">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1232">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1232">Remarks</span></span>
 
-<span data-ttu-id="d5946-1234">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1234">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1235">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1235">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1233">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1233">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1234">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1234">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1236">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1236">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1235">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1235">Example</span></span>
 
 ```xpp
 {
@@ -2578,32 +2579,32 @@ str webWebpartStr(str resourcename)
 }
 ```
 
-## <a name="workflowapprovalstr"></a><span data-ttu-id="d5946-1237">workflowApprovalStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1237">workflowApprovalStr</span></span>
-<span data-ttu-id="d5946-1238">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー承認の名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1238">Retrieves the name of a workflow approval in the Application Object Tree (Application Explorer) as a string.</span></span>
+## <a name="workflowapprovalstr"></a><span data-ttu-id="b4f0d-1236">workflowApprovalStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1236">workflowApprovalStr</span></span>
+<span data-ttu-id="b4f0d-1237">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー承認の名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1237">Retrieves the name of a workflow approval in the Application Object Tree (Application Explorer) as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1239">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1239">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1238">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1238">Syntax</span></span>
 
 ```xpp
 str workflowapprovalstr(approval approval)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1240">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1240">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1239">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1239">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1241">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1241">Parameter</span></span> | <span data-ttu-id="d5946-1242">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1242">Description</span></span>                                             |
+| <span data-ttu-id="b4f0d-1240">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1240">Parameter</span></span> | <span data-ttu-id="b4f0d-1241">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1241">Description</span></span>                                             |
 |-----------|---------------------------------------------------------|
-| <span data-ttu-id="d5946-1243">承認</span><span class="sxs-lookup"><span data-stu-id="d5946-1243">approval</span></span>  | <span data-ttu-id="d5946-1244">ワークフローの承認のアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1244">The Application Explorer name of the workflow approval.</span></span> |
+| <span data-ttu-id="b4f0d-1242">承認</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1242">approval</span></span>  | <span data-ttu-id="b4f0d-1243">ワークフローの承認のアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1243">The Application Explorer name of the workflow approval.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1245">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1245">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1244">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1244">Return Value</span></span>
 
-<span data-ttu-id="d5946-1246">ワークフローの承認のアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-1246">A string that represents the Application Explorer name of the workflow approval.</span></span>
+<span data-ttu-id="b4f0d-1245">ワークフローの承認のアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1245">A string that represents the Application Explorer name of the workflow approval.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1247">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1247">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1246">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1246">Remarks</span></span>
 
-<span data-ttu-id="d5946-1248">リテラル テキストの代わりにこの関数を使用して、ワークフロー承認名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1248">Use this function instead of literal text to retrieve a string that contains the workflow approval name.</span></span> <span data-ttu-id="d5946-1249">ワークフローの承認が存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1249">If the workflow approval does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-1250">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1250">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1251">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1251">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1247">リテラル テキストの代わりにこの関数を使用して、ワークフロー承認名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1247">Use this function instead of literal text to retrieve a string that contains the workflow approval name.</span></span> <span data-ttu-id="b4f0d-1248">ワークフローの承認が存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1248">If the workflow approval does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-1249">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1249">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1250">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1250">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1252">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1252">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1251">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1251">Example</span></span>
 
-<span data-ttu-id="d5946-1253">次のコード例では、変数 *str s* を **MyWorkflowApproval** に設定します。これは、アプリケーション エクスプローラーでのワークフロー承認の名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1253">The following code example sets the variable *str s* to **MyWorkflowApproval** which is the name of the workflow approval in the Application Explorer.</span></span>
+<span data-ttu-id="b4f0d-1252">次のコード例では、変数 *str s* を **MyWorkflowApproval** に設定します。これは、アプリケーション エクスプローラーでのワークフロー承認の名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1252">The following code example sets the variable *str s* to **MyWorkflowApproval** which is the name of the workflow approval in the Application Explorer.</span></span>
 
 ```xpp
 static void MyWorkflowApprovalStrExample(Args _args)
@@ -2616,32 +2617,32 @@ static void MyWorkflowApprovalStrExample(Args _args)
 }
 ```
 
-## <a name="workflowcategorystr"></a><span data-ttu-id="d5946-1254">workflowCategoryStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1254">workflowCategoryStr</span></span>
-<span data-ttu-id="d5946-1255">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー カテゴリの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1255">Retrieves the name of a workflow category in the Application Object Tree (Application Explorer) as a string.</span></span>
+## <a name="workflowcategorystr"></a><span data-ttu-id="b4f0d-1253">workflowCategoryStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1253">workflowCategoryStr</span></span>
+<span data-ttu-id="b4f0d-1254">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー カテゴリの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1254">Retrieves the name of a workflow category in the Application Object Tree (Application Explorer) as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1256">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1256">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1255">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1255">Syntax</span></span>
 
 ```xpp
 str workflowcategorystr(category category)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1257">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1257">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1256">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1258">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1258">Parameter</span></span> | <span data-ttu-id="d5946-1259">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1259">Description</span></span>                                             |
+| <span data-ttu-id="b4f0d-1257">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1257">Parameter</span></span> | <span data-ttu-id="b4f0d-1258">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1258">Description</span></span>                                             |
 |-----------|---------------------------------------------------------|
-| <span data-ttu-id="d5946-1260">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="d5946-1260">category</span></span>  | <span data-ttu-id="d5946-1261">ワークフロー カテゴリーのアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1261">The Application Explorer name of the workflow category.</span></span> |
+| <span data-ttu-id="b4f0d-1259">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1259">category</span></span>  | <span data-ttu-id="b4f0d-1260">ワークフロー カテゴリーのアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1260">The Application Explorer name of the workflow category.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1262">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1262">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1261">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1261">Return Value</span></span>
 
-<span data-ttu-id="d5946-1263">ワークフロー カテゴリのアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-1263">A string that represents the Application Explorer name of the workflow category.</span></span>
+<span data-ttu-id="b4f0d-1262">ワークフロー カテゴリのアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1262">A string that represents the Application Explorer name of the workflow category.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1264">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1264">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1263">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1263">Remarks</span></span>
 
-<span data-ttu-id="d5946-1265">リテラル テキストの代わりにこの関数を使用して、ワークフロー カテゴリ名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1265">Use this function instead of literal text to retrieve a string that contains the workflow category name.</span></span> <span data-ttu-id="d5946-1266">ワークフローのカテゴリーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1266">If the workflow category does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-1267">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1267">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1268">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1268">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1264">リテラル テキストの代わりにこの関数を使用して、ワークフロー カテゴリ名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1264">Use this function instead of literal text to retrieve a string that contains the workflow category name.</span></span> <span data-ttu-id="b4f0d-1265">ワークフローのカテゴリーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1265">If the workflow category does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-1266">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1266">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1267">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1267">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1269">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1269">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1268">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1268">Example</span></span>
 
-<span data-ttu-id="d5946-1270">次のコード例では、変数 *str s* を **MyWorkflowCategory** に設定します。これは、アプリケーション エクスプローラーでのワークフロー カテゴリの名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1270">The following code example sets the variable *str s* to **MyWorkflowCategory** which is the name of the workflow category in the Application Explorer.</span></span>
+<span data-ttu-id="b4f0d-1269">次のコード例では、変数 *str s* を **MyWorkflowCategory** に設定します。これは、アプリケーション エクスプローラーでのワークフロー カテゴリの名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1269">The following code example sets the variable *str s* to **MyWorkflowCategory** which is the name of the workflow category in the Application Explorer.</span></span>
 
 ```xpp
 static void MyWorkflowCategoryStrExample(Args _args)
@@ -2654,32 +2655,32 @@ static void MyWorkflowCategoryStrExample(Args _args)
 }
 ```
 
-## <a name="workflowtaskstr"></a><span data-ttu-id="d5946-1271">workflowTaskStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1271">workflowTaskStr</span></span>
-<span data-ttu-id="d5946-1272">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー タスクの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1272">Retrieves the name of a workflow task in the Application Object Tree (Application Explorer) as a string.</span></span>
+## <a name="workflowtaskstr"></a><span data-ttu-id="b4f0d-1270">workflowTaskStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1270">workflowTaskStr</span></span>
+<span data-ttu-id="b4f0d-1271">アプリケーション オブジェクト ツリー (アプリケーション エクスプローラー) でワークフロー タスクの名前を文字列として取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1271">Retrieves the name of a workflow task in the Application Object Tree (Application Explorer) as a string.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1273">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1273">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1272">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1272">Syntax</span></span>
 
 ```xpp
 str workflowtaskstr(task task)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1274">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1274">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1273">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1273">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1275">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1275">Parameter</span></span> | <span data-ttu-id="d5946-1276">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1276">Description</span></span>                                         |
+| <span data-ttu-id="b4f0d-1274">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1274">Parameter</span></span> | <span data-ttu-id="b4f0d-1275">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1275">Description</span></span>                                         |
 |-----------|-----------------------------------------------------|
-| <span data-ttu-id="d5946-1277">タスク</span><span class="sxs-lookup"><span data-stu-id="d5946-1277">task</span></span>      | <span data-ttu-id="d5946-1278">ワークフロー タスクのアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1278">The Application Explorer name of the workflow task.</span></span> |
+| <span data-ttu-id="b4f0d-1276">タスク</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1276">task</span></span>      | <span data-ttu-id="b4f0d-1277">ワークフロー タスクのアプリケーション エクスプローラーの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1277">The Application Explorer name of the workflow task.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1279">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1279">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1278">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1278">Return Value</span></span>
 
-<span data-ttu-id="d5946-1280">ワークフロー タスクのアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="d5946-1280">A string that represents the Application Explorer name of the workflow task.</span></span>
+<span data-ttu-id="b4f0d-1279">ワークフロー タスクのアプリケーション エクスプローラーの名前を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1279">A string that represents the Application Explorer name of the workflow task.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1281">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1281">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1280">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1280">Remarks</span></span>
 
-<span data-ttu-id="d5946-1282">リテラル テキストの代わりにこの関数を使用して、ワークフロー タスク名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1282">Use this function instead of literal text to retrieve a string that contains the workflow task name.</span></span> <span data-ttu-id="d5946-1283">ワークフローのタスクーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1283">If the workflow task does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="d5946-1284">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1284">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1285">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1285">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1281">リテラル テキストの代わりにこの関数を使用して、ワークフロー タスク名を含む文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1281">Use this function instead of literal text to retrieve a string that contains the workflow task name.</span></span> <span data-ttu-id="b4f0d-1282">ワークフローのタスクーが存在しない場合、関数は、コンパイル時に、構文エラーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1282">If the workflow task does not exist, the function generates a syntax error at compile time.</span></span> <span data-ttu-id="b4f0d-1283">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1283">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1284">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1284">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1286">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1286">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1285">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1285">Example</span></span>
 
-<span data-ttu-id="d5946-1287">次のコード例では、変数 *str s* を **MyWorkflowTask** に設定します。これは、アプリケーション エクスプローラーでのワークフロー タスクの名前です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1287">The following code example sets the variable *str s* to **MyWorkflowTask** which is the name of the workflow task in the Application Explorer.</span></span>
+<span data-ttu-id="b4f0d-1286">次のコード例では、変数 *str s* を **MyWorkflowTask** に設定します。これは、アプリケーション エクスプローラーでのワークフロー タスクの名前です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1286">The following code example sets the variable *str s* to **MyWorkflowTask** which is the name of the workflow task in the Application Explorer.</span></span>
 
 ```xpp
 static void MyWorkflowTaskStrExample(Args _args)
@@ -2692,30 +2693,30 @@ static void MyWorkflowTaskStrExample(Args _args)
 }
 ```
 
-## <a name="workflowtypestr"></a><span data-ttu-id="d5946-1288">workflowTypeStr</span><span class="sxs-lookup"><span data-stu-id="d5946-1288">workflowTypeStr</span></span>
-<span data-ttu-id="d5946-1289">指定したワークフロー タイプがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d5946-1289">Validates that the specified workflow type exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
+## <a name="workflowtypestr"></a><span data-ttu-id="b4f0d-1287">workflowTypeStr</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1287">workflowTypeStr</span></span>
+<span data-ttu-id="b4f0d-1288">指定したワークフロー タイプがアプリケーション エクスプローラーに存在することを検証します。そうでなければ、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1288">Validates that the specified workflow type exists in the Application Explorer; if it does not, a compiler error occurs.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="d5946-1290">構文</span><span class="sxs-lookup"><span data-stu-id="d5946-1290">Syntax</span></span>
+### <a name="syntax"></a><span data-ttu-id="b4f0d-1289">構文</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1289">Syntax</span></span>
 
 ```xpp
 str workflowTypeStr(str workflow)
 ```
 
-### <a name="parameters"></a><span data-ttu-id="d5946-1291">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1291">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b4f0d-1290">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1290">Parameters</span></span>
 
-| <span data-ttu-id="d5946-1292">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5946-1292">Parameter</span></span> | <span data-ttu-id="d5946-1293">説明</span><span class="sxs-lookup"><span data-stu-id="d5946-1293">Description</span></span>                                |
+| <span data-ttu-id="b4f0d-1291">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1291">Parameter</span></span> | <span data-ttu-id="b4f0d-1292">説明</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1292">Description</span></span>                                |
 |-----------|--------------------------------------------|
-| <span data-ttu-id="d5946-1294">ワークフロー</span><span class="sxs-lookup"><span data-stu-id="d5946-1294">workflow</span></span>  | <span data-ttu-id="d5946-1295">検証するワークフロー タイプの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1295">The name of the workflow type to validate.</span></span> |
+| <span data-ttu-id="b4f0d-1293">ワークフロー</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1293">workflow</span></span>  | <span data-ttu-id="b4f0d-1294">検証するワークフロー タイプの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1294">The name of the workflow type to validate.</span></span> |
 
-### <a name="return-value"></a><span data-ttu-id="d5946-1296">戻り値</span><span class="sxs-lookup"><span data-stu-id="d5946-1296">Return Value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b4f0d-1295">戻り値</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1295">Return Value</span></span>
 
-<span data-ttu-id="d5946-1297">ワークフロー タイプの名前。</span><span class="sxs-lookup"><span data-stu-id="d5946-1297">The name of the workflow type.</span></span>
+<span data-ttu-id="b4f0d-1296">ワークフロー タイプの名前。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1296">The name of the workflow type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="d5946-1298">備考</span><span class="sxs-lookup"><span data-stu-id="d5946-1298">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b4f0d-1297">備考</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1297">Remarks</span></span>
 
-<span data-ttu-id="d5946-1299">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="d5946-1299">This is a compile-time function.</span></span> <span data-ttu-id="d5946-1300">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d5946-1300">For more information, see [Overview](#overview).</span></span>
+<span data-ttu-id="b4f0d-1298">これは、コンパイル時関数です。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1298">This is a compile-time function.</span></span> <span data-ttu-id="b4f0d-1299">詳細については、「[概要](#overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1299">For more information, see [Overview](#overview).</span></span>
 
-### <a name="example"></a><span data-ttu-id="d5946-1301">例</span><span class="sxs-lookup"><span data-stu-id="d5946-1301">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b4f0d-1300">例</span><span class="sxs-lookup"><span data-stu-id="b4f0d-1300">Example</span></span>
 
 ```xpp
 static void workFlowTypeStrExample(Args _args)

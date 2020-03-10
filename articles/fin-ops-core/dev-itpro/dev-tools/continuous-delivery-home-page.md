@@ -17,43 +17,43 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cfce182c6026aa73bcc14646332dd7f7848153b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 447d523cb509f03f5e0dac178cdb9df456055b14
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811719"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057126"
 ---
-# <a name="continuous-delivery-home-page"></a><span data-ttu-id="1b08b-103">継続的な配信ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="1b08b-103">Continuous delivery home page</span></span>
+# <a name="continuous-delivery-home-page"></a><span data-ttu-id="025f5-103">継続的な配信ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="025f5-103">Continuous delivery home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1b08b-104">以下のトピックでは、ソリューションの継続的な配信に関連するツールとガイドラインについて説明します。</span><span class="sxs-lookup"><span data-stu-id="1b08b-104">These topics describe tools and guidelines related to continuous delivery of your solution.</span></span>
+<span data-ttu-id="025f5-104">以下のトピックでは、ソリューションの継続的な配信に関連するツールとガイドラインについて説明します。</span><span class="sxs-lookup"><span data-stu-id="025f5-104">These topics describe tools and guidelines related to continuous delivery of your solution.</span></span>
 
-<a name="faq-and-guidelines"></a><span data-ttu-id="1b08b-105">よく寄せられる質問とガイドライン</span><span class="sxs-lookup"><span data-stu-id="1b08b-105">FAQ and guidelines</span></span>
+<a name="faq-and-guidelines"></a><span data-ttu-id="025f5-105">よく寄せられる質問とガイドライン</span><span class="sxs-lookup"><span data-stu-id="025f5-105">FAQ and guidelines</span></span>
 ------------------
 
-- [<span data-ttu-id="1b08b-106">開発と継続的な配信に関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="1b08b-106">Development and continuous delivery FAQ</span></span>](continuous-delivery-faq.md)
+- [<span data-ttu-id="025f5-106">開発と継続的な配信に関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="025f5-106">Development and continuous delivery FAQ</span></span>](continuous-delivery-faq.md)
 
-## <a name="build-and-test-automation"></a><span data-ttu-id="1b08b-107">ビルドおよびテストの自動化</span><span class="sxs-lookup"><span data-stu-id="1b08b-107">Build and test automation</span></span>
-- [<span data-ttu-id="1b08b-108">継続的なビルドとテストの自動化をサポートする環境を配置して使用する</span><span class="sxs-lookup"><span data-stu-id="1b08b-108">Deploy and use an environment that supports continuous build and test automation</span></span>](../perf-test/continuous-build-test-automation.md)
-- [<span data-ttu-id="1b08b-109">テストと検証</span><span class="sxs-lookup"><span data-stu-id="1b08b-109">Testing and validations</span></span>](../perf-test/testing-validation.md)
-- [<span data-ttu-id="1b08b-110">Retail SDK を継続的ビルド システム (Azure DevOps) と統合</span><span class="sxs-lookup"><span data-stu-id="1b08b-110">Integrate the Retail SDK with the continuous build system (Azure DevOps)</span></span>](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
-- [<span data-ttu-id="1b08b-111">クラスおよびメソッドの属性を使用した SysTest フィルター処理</span><span class="sxs-lookup"><span data-stu-id="1b08b-111">SysTest filtering using class and method attributes</span></span>](../perf-test/systest-filtering.md)
-- [<span data-ttu-id="1b08b-112">承認テスト ライブラリのリソース</span><span class="sxs-lookup"><span data-stu-id="1b08b-112">Acceptance test library resources</span></span>](../perf-test/acceptance-test-library.md)
+## <a name="build-and-test-automation"></a><span data-ttu-id="025f5-107">ビルドおよびテストの自動化</span><span class="sxs-lookup"><span data-stu-id="025f5-107">Build and test automation</span></span>
+- [<span data-ttu-id="025f5-108">継続的なビルドとテストの自動化をサポートする環境を配置して使用する</span><span class="sxs-lookup"><span data-stu-id="025f5-108">Deploy and use an environment that supports continuous build and test automation</span></span>](../perf-test/continuous-build-test-automation.md)
+- [<span data-ttu-id="025f5-109">テストと検証</span><span class="sxs-lookup"><span data-stu-id="025f5-109">Testing and validations</span></span>](../perf-test/testing-validation.md)
+- [<span data-ttu-id="025f5-110">コマースおよび Finance のビルド システムのマージ</span><span class="sxs-lookup"><span data-stu-id="025f5-110">Merge the build systems for Commerce and Finance</span></span>](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [<span data-ttu-id="025f5-111">クラスおよびメソッドの属性を使用した SysTest フィルター処理</span><span class="sxs-lookup"><span data-stu-id="025f5-111">SysTest filtering using class and method attributes</span></span>](../perf-test/systest-filtering.md)
+- [<span data-ttu-id="025f5-112">承認テスト ライブラリのリソース</span><span class="sxs-lookup"><span data-stu-id="025f5-112">Acceptance test library resources</span></span>](../perf-test/acceptance-test-library.md)
 
-### <a name="advanced-topics-in-build-automation"></a><span data-ttu-id="1b08b-113">ビルド自動化に関する詳細</span><span class="sxs-lookup"><span data-stu-id="1b08b-113">Advanced topics in build automation</span></span>
-- [<span data-ttu-id="1b08b-114">ビルド出力からのテスト パッケージの除外</span><span class="sxs-lookup"><span data-stu-id="1b08b-114">Exclude test packages from build output</span></span>](exclude-test-packages.md)
-- [<span data-ttu-id="1b08b-115">ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理</span><span class="sxs-lookup"><span data-stu-id="1b08b-115">Manage third-party models and runtime packages by using source control</span></span>](manage-runtime-packages.md)
-- [<span data-ttu-id="1b08b-116">自動ビルドのモデル バージョンの更新</span><span class="sxs-lookup"><span data-stu-id="1b08b-116">Update model versions in the automated build</span></span>](version-models-build.md)
+### <a name="advanced-topics-in-build-automation"></a><span data-ttu-id="025f5-113">ビルド自動化に関する詳細</span><span class="sxs-lookup"><span data-stu-id="025f5-113">Advanced topics in build automation</span></span>
+- [<span data-ttu-id="025f5-114">ビルド出力からのテスト パッケージの除外</span><span class="sxs-lookup"><span data-stu-id="025f5-114">Exclude test packages from build output</span></span>](exclude-test-packages.md)
+- [<span data-ttu-id="025f5-115">ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理</span><span class="sxs-lookup"><span data-stu-id="025f5-115">Manage third-party models and runtime packages by using source control</span></span>](manage-runtime-packages.md)
+- [<span data-ttu-id="025f5-116">自動ビルドのモデル バージョンの更新</span><span class="sxs-lookup"><span data-stu-id="025f5-116">Update model versions in the automated build</span></span>](version-models-build.md)
 
-### <a name="blogs"></a><span data-ttu-id="1b08b-117">ブログ</span><span class="sxs-lookup"><span data-stu-id="1b08b-117">Blogs</span></span>
+### <a name="blogs"></a><span data-ttu-id="025f5-117">ブログ</span><span class="sxs-lookup"><span data-stu-id="025f5-117">Blogs</span></span>
 
-- [<span data-ttu-id="1b08b-118">開発とカスタマイズに関する内部者向けヒント (ブログ)</span><span class="sxs-lookup"><span data-stu-id="1b08b-118">Insider tips on development and customization (blog)</span></span>](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
+- [<span data-ttu-id="025f5-118">開発とカスタマイズに関する内部者向けヒント (ブログ)</span><span class="sxs-lookup"><span data-stu-id="025f5-118">Insider tips on development and customization (blog)</span></span>](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
-## <a name="servicing"></a><span data-ttu-id="1b08b-119">サービス</span><span class="sxs-lookup"><span data-stu-id="1b08b-119">Servicing</span></span>
-- [<span data-ttu-id="1b08b-120">Lifecycle Services (LCS) から更新プログラムをダウンロード</span><span class="sxs-lookup"><span data-stu-id="1b08b-120">Download updates from Lifecycle Services (LCS)</span></span>](../migration-upgrade/download-hotfix-lcs.md)
-- [<span data-ttu-id="1b08b-121">クラウド環境への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="1b08b-121">Apply updates to cloud environments</span></span>](../deployment/apply-deployable-package-system.md)
-- [<span data-ttu-id="1b08b-122">開発環境でのメタデータ修正プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="1b08b-122">Install metadata hotfixes in development environments</span></span>](../migration-upgrade/install-metadata-hotfix-package.md)
-- [<span data-ttu-id="1b08b-123">1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="1b08b-123">Patch SQL Server Reporting Services (SSRS) in one-box environments</span></span>](../migration-upgrade/patch-reporting-service-environment.md)
-- [<span data-ttu-id="1b08b-124"> Visual Studio の開発ツールを更新する</span><span class="sxs-lookup"><span data-stu-id="1b08b-124">Update the Visual Studio development tools</span></span>](update-development-tools.md)
+## <a name="servicing"></a><span data-ttu-id="025f5-119">サービス</span><span class="sxs-lookup"><span data-stu-id="025f5-119">Servicing</span></span>
+- [<span data-ttu-id="025f5-120">Lifecycle Services (LCS) から更新プログラムをダウンロード</span><span class="sxs-lookup"><span data-stu-id="025f5-120">Download updates from Lifecycle Services (LCS)</span></span>](../migration-upgrade/download-hotfix-lcs.md)
+- [<span data-ttu-id="025f5-121">クラウド環境への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="025f5-121">Apply updates to cloud environments</span></span>](../deployment/apply-deployable-package-system.md)
+- [<span data-ttu-id="025f5-122">開発環境でのメタデータ修正プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="025f5-122">Install metadata hotfixes in development environments</span></span>](../migration-upgrade/install-metadata-hotfix-package.md)
+- [<span data-ttu-id="025f5-123">1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="025f5-123">Patch SQL Server Reporting Services (SSRS) in one-box environments</span></span>](../migration-upgrade/patch-reporting-service-environment.md)
+- [<span data-ttu-id="025f5-124"> Visual Studio の開発ツールを更新する</span><span class="sxs-lookup"><span data-stu-id="025f5-124">Update the Visual Studio development tools</span></span>](update-development-tools.md)
