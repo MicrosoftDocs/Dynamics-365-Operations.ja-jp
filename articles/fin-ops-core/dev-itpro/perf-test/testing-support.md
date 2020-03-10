@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c095f04269cb1a28fc16971acf1d5badb167c67
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 497a98e1082b75eaa9a3448dea8d963414144722
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578310"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082009"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 
@@ -37,19 +37,24 @@ ms.locfileid: "2578310"
 ## <a name="author-unitcomponent-test-code-by-using-the-systest-framework"></a>SysTest フレームワークを使用して単位またはコンポーネント テスト コードを作成
 Visual Studio でプロジェクトを作成するときは、X++ 単体テストを追加できます。 **SysTestCase** を含むクラスを拡張し、その後 **SysTestMethodAttribute** 属性を追加するか、またはメソッド名に "test" を含むケースを接頭語として付けます。
 
-    class FMUnitTestSample extends SysTestCase
+```xpp
+class FMUnitTestSample extends SysTestCase
+{
+    [SysTestMethod]
+    public void testTotalsEngineConfig()
     {
-        [SysTestMethod]
-        public void testTotalsEngineConfig()
-        {
-        }
     }
+}
+```
 
 クラスを保存すると、C\# テストが表示されるのと同じように、テスト エクスプローラーに各テストが表示されます。 
 
 [![テスト エクスプローラーに表示されるテストの例](./media/2_support.png)](./media/2_support.png) 
 
-テスト エクスプローラーで、テストを実行したり、右クリックからの選択したテストの実行やデバッグによってテスト ケースをデバッグしたりできます。 **注記:** テストを実行する前に、テストが含まれるように、プロジェクトを構築する必要があります。 
+テスト エクスプローラーで、テストを実行したり、右クリックからの選択したテストの実行やデバッグによってテスト ケースをデバッグしたりできます。 
+
+> [!NOTE]
+> テストを実行する前に、テストが含まれるようプロジェクトを構築する必要があります。 
 
 [![選択したテストを実行またはデバッグするための右クリックの例](./media/3_support.png)](./media/3_support.png) 
 

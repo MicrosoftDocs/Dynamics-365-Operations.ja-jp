@@ -3,7 +3,7 @@ title: Finance and Operations アプリのプラットフォーム更新プロ�
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 32 でプレビューされている機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 01/21/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
-ms.openlocfilehash: fb9f4127bcaa79e2f8ff30c2b02f2ef8be04b172
-ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
+ms.openlocfilehash: 9d39be4c943487a293166f542f9edd42fefa6093
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2982291"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087241"
 ---
 # <a name="whats-new-or-changed-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 
@@ -82,13 +82,13 @@ ms.locfileid: "2982291"
 
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
-### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
+### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
-- *非推奨*機能は、積極的に開発はされていませんが、将来のアップデートで削除される可能性があります。
+- *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 329d8aca67a9b82d31582f40c70c3677aa9e9980
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f5e84265cc2a5b14849a5bb47b0f492a0b0f2218
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004595"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057897"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -170,7 +170,7 @@ ms.locfileid: "3004595"
 
 ## <a name="build-the-deployable-package"></a>配置可能なパッケージを作成します。
 
-配置可能パッケージの作成方法の詳細については、 [リテールに配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
+配置可能パッケージの作成方法の詳細については、 [配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\参照** フォルダーにコピーします。
 2. **BuildTools\\Customization.settings** ファイルを更新し、 **\<ItemGroup\>** セクションに次のエントリを追加します。
@@ -183,11 +183,11 @@ ms.locfileid: "3004595"
 3. Microsoft Visual Studio 2015 の MSBuild **Command Prompt** ウィンドウを開いて、Retail SDK フォルダのルートにある **作成** コマンドを実行します。
 4. 配備可能なパッケージを生成するには、次のコマンドを入力します。
 
-    ```console
+    ```Console
     msbuild /t:rebuild
     ```
 
-5. **RetailSDK\\Packages\\RetailDeployablePackage** フォルダーで、リテールに配置可能パッケージを見つけます。 **content.folder** フォルダに移動して、3つのファイルがパッケージに含まれていることを確認します。(**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**)
+5. **RetailSDK\\Packages\\RetailDeployablePackage** フォルダーで、配置可能パッケージを検索します。 **content.folder** フォルダに移動して、3つのファイルがパッケージに含まれていることを確認します。(**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**)
 6. 展開可能パッケージを Microsoft Dynamics Lifecycle Services (LCS) の共有されたアセット ライブラリにアップロードします。
 7. LCS で、ご利用の環境のメイン ページを開き、**環境の機能** \> **Retail と Commerce** \> **管理**を選択します。
 8. **拡張機能の適用** を選択し、ライブラリから拡張機能を選択します。

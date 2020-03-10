@@ -3,7 +3,7 @@ title: POS ビューの拡張によるカスタム列およびアプリ バー �
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 184ca22edbaf55452ffdf78e0f36cf99a4f1248a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 961530e7627457709f392535404c252ea2e761eb
+ms.sourcegitcommit: 1e181db51abbf70bbf1f9af8ad6d8c67bafe5adb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004647"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "3082098"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -64,15 +64,14 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SearchStockCountView            | 無                            | はい                          | いいえ                                   |
 | StockCountDetailsView           | いいえ                            | はい                          | いいえ                                   |
 | ResumeCartView                  | いいえ                            | はい                          | はい                                    |
-| OrderFulfillmentView            | いいえ                            | いいえ                           | はい                                   |
-| InventoryLookupMatrixView       | 無                            | 無                           | 有                                   |
+| InventoryLookupMatrixView       | いいえ                            | いいえ                           | はい                                   |
 | SuspendTransactionView          | 無                            | 有                          | 無                               |   
 | ManageShiftView                 | 無                            | 無                           | 有                               |  
 | ReportDetailsView               | 無                            | 無                           | 有                               |
 | SearchReceiptsView              | 無                            | 無                           | 有                               |
 | StockCountDetailsView           | いいえ                            | いいえ                           | はい                               |
 | TransferOrderDetailsView        | いいえ                            | いいえ                           | はい                               |
-| FulfillmentLineView             | いいえ                            | はい                          | いいえ                               |
+| FulfillmentLineView             | いいえ                            | はい                          | はい                               |
 | ReturnTransactionView           | いいえ                            | はい                          | はい                               |
 | PickingAndReceivingDetailsView  | いいえ                            | はい                          | はい                    |
 | PickingAndReceivingDetailsView (高度な倉庫)  | いいえ                            | はい                          | はい           |
@@ -97,7 +96,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 6. **Search** フォルダーで、**CustomCustomerSearchColumns.ts** という Typescript ファイルを作成します。
 7. **CustomCustomerSearchColumns.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。
 
-    ```Typescript
+    ```typescript
     import { ICustomerSearchColumn } from "PosApi/Extend/Views/SearchView";
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
     import { ProxyEntities } from "PosApi/Entities";
@@ -105,7 +104,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 8. ファイルに既存の列とカスタム列を追加します。
 
-    ```Typescript
+    ```typescript
     export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
         return [
             {
@@ -149,7 +148,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 12. **en-us** フォルダーで、**resources.resjson** というファイルを作成します。
 13. **resources.resjson** ファイルに次のコードを追加します。
 
-    ```Typescript
+    ```typescript
     {
         //======================== Sample View extensions strings. ========================
         "string_0" : "Quick compare products",
@@ -171,10 +170,10 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     ```
 
 14. **SearchExtension** フォルダーで、**DialogSample** というフォルダーを作成します。
-15. **DialogSample** フォルダーで、**MessageDialog.ts** という Typescript ファイルを作成します。
+15. **DialogSample** フォルダーで、**MessageDialog.ts** という TypeScript ファイルを作成します。
 16. **MessageDialog.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。
 
-    ```Typescript
+    ```typescript
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
     import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
     import { ClientEntities } from "PosApi/Entities";
@@ -182,13 +181,13 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 17. **MessageDialog** という名前のクラスを作成します。
 
-    ```Typescript
+    ```typescript
     export default class MessageDialog {}
     ```
 
 18. **MessageDialog** クラスで、次の **show** メソッドを追加します。
 
-    ```Typescript
+    ```typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
         let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
         {
@@ -227,7 +226,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 19. ここで、選択した顧客に関する詳細を含むダイアログ ボックスを開くために、検索ビューにカスタムのアプリ バー ボタンを追加します。 **ViewExtensions** フォルダーで、**ViewCustomerSummaryCommand.ts** という Typescript ファイルを作成します。
 20. **ViewCustomerSummaryCommand.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。
 
-    ```Typescript
+    ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
@@ -237,19 +236,19 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 21. **ViewCustomerSummaryCommand** という名前のクラスを作成し、**CustomerSearchExtensionCommandBase** からクラスを拡張します。
 
-    ```Typescript
+    ```typescript
     export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
     ```
 
 22. **ViewCustomerSummaryCommand** クラスで、選択した顧客を検索するときに、結果をキャプチャするプライベート変数を宣言します。
 
-    ```Typescript
+    ```typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
     ```
 
 23. クラス **コンストラクター** メソッドを追加して、検索ハンドラーを初期化してクリアします。
 
-    ```Typescript
+    ```typescript
     constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
         super(context);
         this.id = "viewCustomerSummaryCommand";
@@ -269,7 +268,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 24. **init** メソッドを追加して、**表示**プロパティを初期化します。
 
-    ```Typescript
+    ```typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
         this.isVisible = true;
     }
@@ -277,7 +276,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 25. アプリ ボタン クリック ハンドラーを処理する**実行**メソッドを追加します。 **execute** メソッドは、ハンドラーから選択した顧客のデータを読み取り、単純なダイアログ ボックスに表示します。
 
-    ```Typescript
+    ```typescript
     protected execute(): void {
         let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
         if (!ObjectExtensions.isNullOrUndefined(customer)) {
@@ -292,7 +291,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
     コード サンプルの全体は次のようになります。
 
-    ```Typescript
+    ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
@@ -351,7 +350,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 26. **SearchExtension** フォルダーで、**manifest.json** という JSON ファイルを作成します。
 27. **manifest.json** ファイルに次のコードを追加します。
 
-    ```Typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -380,7 +379,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 28. **POS.Extensions** プロジェクトで **extensions.json** ファイルを開き、**SearchExtension** サンプルで更新して、POS が実行時にこの拡張機能に含まれるようにします。
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
         {
@@ -395,7 +394,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 29. **tsconfig.json** ファイルで、除外リストに拡張パッケージ フォルダーをコメントアウトします。 POS は、このファイルを使用して、拡張機能を追加または除外します。 既定では、リストに除外された拡張リスト全体が含まれています。 拡張機能を POS の一部として含めるには、次に示すように、拡張フォルダーの名前を追加し、除外リストの拡張子をコメントアウトします。
 
-    ```Typescript
+    ```typescript
     "exclude": [
     "SampleExtensions"
     //"SampleExtensions2",

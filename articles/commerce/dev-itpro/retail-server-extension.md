@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0dcfb0fd1821f6a132e2df628c1d8ae96196f794
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7df5f001f4596dc2b57187e4e5aa14ac65c2f46b
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004629"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070776"
 ---
 # <a name="create-a-new-retail-server-extension"></a>新しい Retail Server 拡張機能の作成
 
@@ -150,7 +150,7 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 6. 拡張機能プロジェクトをビルドし、バイナリを **\\RetailServer\\webroot\\bin\\Ext** フォルダーにドロップします。
 7. **extensionComposition** セクションで新しい Commerce Scale Unit 拡張ライブラリ名を追加して、**\\RetailServer\\Webroot** フォルダーの Commerce Scale Unit web.config ファイルを更新します。
 
-    ```
+    ```xml
     <extensionComposition>
     <!-- Please use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
     If you host in an application with a bin folder, this is not required. -->
@@ -167,4 +167,4 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 
 10. クライアントで Commerce Scale Unit 拡張機能を呼び出すには、Commerce プロキシを生成する必要があります。 その後、プロキシを使用して、クライアントから新しい Commerce Scale Unit API を呼び出すことができます。
 
-    プロキシの生成方法については、[Retail プロキシの生成](typescript-proxy-retail-pos.md) を参照してください。
+    プロキシの生成方法の詳細については、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md) を参照してください。

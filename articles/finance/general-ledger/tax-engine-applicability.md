@@ -16,12 +16,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 49bdeb012ac85cdd6a5758a3774e4094a040d078
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5d442bacb99a1772e43e5a8fef80566a32ca7b8c
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771765"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070470"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -63,22 +63,25 @@ CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリ�
 
 ![CGST 条件の詳細](media/gte-tax-document-applicability-cgst-condition.png)
 
-条件は、実際には、[電子申告](../../dev-itpro/analytics/general-electronic-reporting.md) 式です。 これは**データ ソース**の左側のフィールドと右側の**関数**で構成されています。 サポートされている関数の一覧については、[関数](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions) を参照してください。 
+条件は、実際には、[電子申告](../../dev-itpro/analytics/general-electronic-reporting.md) 式です。 これは**データ ソース**の左側のフィールドと右側の**関数**で構成されています。 サポートされている機能の一覧については、[電子申告 (ER) のフォーミュラ デザイナー](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md) を参照してください。 
 
 次の条件は、*課税対象文書のタイプ*を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。 つまり HSN コードまたは SAC のいずれかを指定する必要があります。
-```
+
+```sql
 AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
     Header.'Taxable Document Type'<>"Invent transfer order shipment",
     Header.'Taxable Document Type'<>"Invent transfer order", 
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
+
 ### <a name="enable-gst-for-intra-state-inventory-transfer-order"></a>州内在庫移動オーダーに対して GST を有効にする
 このシナリオでは、GST 登録番号が出荷元と出荷先の倉庫間で異なる場合、インド政府が州内在庫移動オーダーの GST の計算を要求するとします。 
 
 #### <a name="structure-of-the-data-source-in-the-formula-designer"></a>フォーミュラ デザイナーのデータソースの構造
 フォーミュラ デザイナーの左端には、課税対象文書と税務書類に定義されているすべてのフィールドと、課税対象文書に定義されている参照モデルがあります。
-```
+
+```Text
 Header
 └───Header fields
 └───Lines
@@ -88,9 +91,11 @@ Header
 |               └───Tax measures
 Reference models
 ```
+
 #### <a name="change-the-applicability-condition"></a>適用条件を変更する
 適用条件を変更するには**ヘッダー > 明細行 > GST 登録番号**および**ヘッダー > 明細行 > パーティ GST 登録番号**の順に移動します。 これらは、倉庫からの出荷および倉庫への出荷の GST 登録番号を表します。 条件は以下のように変更できます。
-```
+
+```Text
 AND(
     OR(
        AND(
@@ -110,6 +115,7 @@ AND(
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
+
 データ ソースからフィールドを選択し、**データ ソースの追加**を使用して、式にフィールドを追加します。 「課税対象文書のタイプ」のように、名前に空白がある場合は、データ ソース フィールドの単一引用符を使用してください。 「在庫移動オーダー」のように空白がある場合は、値に対して二重引用符を使用します。
 
 編集が完了した後に、**テスト**をクリックして式をテストします。
@@ -129,7 +135,8 @@ AND(
 上のスクリーンショットでは、税タイプ GST のルックアップのためのすべてのデータはコンフィギュレーションから来ているので、**ソース タイプ**は**コンフィギュレーション**です。
 
 GST のルックアップを条件に変換する場合は次のように表示されます。
-``` 
+
+```Text 
 OR(
     AND(Exempt=Exempt.No,
         AND('Tax Direction' = "Sales tax receivable",
@@ -147,6 +154,7 @@ OR(
     )
 )
 ```
+
 ### <a name="lookup-for-dynamic-applicability-rules"></a>動的適用ルールのルックアップ
 多くの適用ルールは、ランタイム データに依存します。 たとえば、一部の税コンポーネントは特定の商品またはサービスにのみ適用されるため、税務取引の種類が異なると税率も異なります。 
 

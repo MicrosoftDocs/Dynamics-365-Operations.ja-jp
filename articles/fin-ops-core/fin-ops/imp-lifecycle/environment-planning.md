@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 2ba1ad7b13b538620fa99629e109e9f0dc257fab
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 14e3f86a1b0c3654c68740ced13f24997a52a039
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003820"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075937"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -136,11 +136,11 @@ ms.locfileid: "3003820"
 | パブリック URL                            | ✓ | ✓ | サポートされていません |
 | 統合開発               | ✓ | ✓ | 追加の設定が必要です。 (たとえば、管理者ユーザー プロビジョニング ツールを実行します。) |
 | Azure DevOps                          | ✓ | ✓ | 追加の設定が必要です。 (たとえば、コンピューター名を変更します。) |
-| LCS から配置可能なパッケージを適用 | 自動化 | 自動化 | Runbook を通じて手動 |
+| LCS から配置可能なパッケージを適用 | 自動化 | 自動化 | コマンド ライン Runbook (AxUpdateInstaller.exe ツール) |
 | LCS からデータ パッケージを展開      | ✓ | ✓ | サポートされていません |
 | 管理                           | Microsoft が管理 | お客様/パートナーが管理 | お客様/パートナーが管理 |
-| コスト モデル                            | 定額 (価格は、環境が 24/7 である場合と同じ)。 | 従量課金制 (環境が 8 時間の場合、8 時間分お支払い)。 | ハードウェア関連 |
-| 制限                           | 仮想マシンのローカル管理者アクセスは無効です。 | なし | なし |
+| コスト モデル                            | 定額 (価格は、環境が 24/7 である場合と同じ)。 | 従量課金制 (環境が 8 時間の場合、8 時間分お支払い。)。 コストは、選択した仮想マシン サイズ、ディスク サイズと設定、およびプレミアム ストレージ設定に基づきます | ハードウェア関連 |
+| 制限                           | 1) 仮想マシン (VM) のローカル管理者アクセスは無効です。 2) 制限付きディスク サイズ 3) VM 仕様は、Microsoft によって定義されます | なし。 VM スペック、ディスク サイズ、およびストレージの設定を完全に制御できます。 VM への管理者アクセスがあります。 | なし |
 
 > [!IMPORTANT]
 > Microsoft が管理する Tier1 環境 (標準 および アドオン) では 、ローカル管理者アクセスを必要とするアクションを実行できなくなりました。 これらのアクションには、サード パーティ ツールのインストールおよび Microsoft Power BI レポートの開発が含まれます。 管理者のアクセス許可が必要な場合は、クラウド ホスト環境または環境イメージ (ダウンロード可能な VHD) を代わりに使用します。 詳細については、[管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../../dev-itpro/sysadmin/vms-no-admin-access.md)を参照してください。

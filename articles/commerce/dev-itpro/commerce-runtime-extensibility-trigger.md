@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c7c29a72fbb7153c7464c14646d9a632678cc2ab
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: c3078494d9f5feaed956f5d4f85018c09753f1f4
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004594"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070440"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 
@@ -46,8 +46,7 @@ Commerce Runtime (CRT) トリガーによって CRT のワークフローを拡�
 3.  要求の解決前にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuting** メソッドに記述します。
 4.  要求の解決後にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuted** メソッドに記述します。
 
-<!-- -->
-
+    ```xml
     /// <summary>
     /// The interface for request trigger.
     /// </summary>
@@ -108,6 +107,7 @@ Commerce Runtime (CRT) トリガーによって CRT のワークフローを拡�
                 //Custom logic
             }
         }
+    ```
 
 ## <a name="trigger-commerceruntimeconfig-updates-for-70"></a>7.0 の CommerceRunTime.config 更新プログラムをトリガーする
 CRT を拡張するときは、ユーザー独自のアセンブリ内で拡張機能を記述する必要があります。 トリガー拡張子をアセンブリに書き込んだ後、Commerce Scale Unit bin フォルダーに拡張子ライブラリをコピーし、実行時にトリガーがロードされるように、CRT の commerceRuntime.config ファイルの**合成**セクションに入力を追加します。 次の例は、**CRTExtensionTrigger** アセンブリ内のトリガー実装のエントリを含む .config ファイルを示しています。 

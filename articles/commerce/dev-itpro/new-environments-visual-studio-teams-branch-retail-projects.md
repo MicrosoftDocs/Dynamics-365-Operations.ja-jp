@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 8f33ea9299301da7735b97a5b1b0538129eb4a89
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2df647ac782b95a16207a28bac66748cd9ee11db
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004664"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070784"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-commerce-projects"></a>コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -261,11 +261,11 @@ X++ および Retail SDK をマッピングするには、現在のワークス�
     7. 環境再プロビジョニング ツールを実行します。 (LCS 資産ライブラリで最新バージョンを見つけて、**Maintain** 関数を使用して展開します。)
     8. ツールが成功したことを確認します。 次のクエリでは、更新されたすべてのローカル開発コンピューターの URL が表示されます。
 
-        ```
+        ```sql
         select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1
         ```
 
-    9. コマースでは、古いデータを削除するために**小売用スケジューラの初期化**ジョブを実行します。
+    9. コマースで、**コマース スケジューラの初期化**ジョブを実行して、古いデータを削除します。
 
 6. ユーザーアカウントを使用してコマースにサインインできることを確認してください。 本稼働データベースの管理者でない場合は、管理者プロビジョニング ツールを実行して所有権を取得することができます。 (このツールは **PackagesLocalDirectory/bin** フォルダーにあります。)
 7. Commerce Data Exchange (CDX) データの同期が機能することを確認します。 コマースでは、**ダウンロード セッション**に移動します。 多くの適用済セッションが表示されます。 表示されない場合は、ジョブ **9999** を選択して実行してください。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e4354452cbd9d0af0d73331d142f1a0fa60cddd9
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 173b57acb6fa8b040aa85e02dc44c5e3d87f423b
+ms.sourcegitcommit: 33fb057cd3b7b19b97e9c8941655516f7225b0f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004583"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3087920"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -34,11 +34,11 @@ ms.locfileid: "3004583"
 - [オンライン チャネルの拡張性](../../commerce/e-commerce-extensibility/overview.md)
 
 ## <a name="components-and-architecture"></a>コンポーネントとアーキテクチャ
--   [コマース コンポーネント](../retail-components.md)
+-   [Commerce コンポーネント](../retail-components.md)
 -   [Modern POS (MPOS) アーキテクチャ](retail-modern-pos-architecture.md)
--   [Retail Server のアーキテクチャ](retail-server-architecture.md)
+-   [コマース スケール ユニット アーキテクチャ](retail-server-architecture.md)
 -   [オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI コンテンツ](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+-   [小売チャネルの実績 PowerBI.com ソリューション](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## <a name="deployment"></a>配置
 -   [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
@@ -76,7 +76,8 @@ ms.locfileid: "3004583"
 - [POS (MPOS) のトリガーと印刷](pos-trigger-printing.md)
 - [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
 - [管理者アクセスのないクラウド ホスト開発環境での開発](cloud-dev-box.md)
-- [クラウド POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
+- [Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
+- [POS カート ビュー イベントとハンドラー](cart-view-handlers.md)
 
 ## <a name="integrating-commerce"></a>コマースの統合
 -   [ブランドの作成と Retail Experience アプリへの適用](create-retail-experience-app.md)
@@ -100,11 +101,12 @@ ms.locfileid: "3004583"
 -   [プロパティを販売注文に追加](add-properties-sales-order.md)
 -   [小売チャネルのシークレットを管理](manage-secrets.md)
 -   [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
+-   [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)
 
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
-- [Retail SDK 小売パッケージ](retail-sdk/retail-sdk-packaging.md)
-- [Retail and Finance 用ビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
+- [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail ソフトウェア開発キット (SDK) のサンプル](retail-sdk/retail-sdk-samples.md)
 - [チャネル データベース拡張機能](channel-db-extensions.md) 
 - [拡張機能を介したカスタム Commerce Data Exchange 同期の有効化](cdx-extensibility.md)
@@ -130,3 +132,4 @@ ms.locfileid: "3004583"
 - [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
+- [Service Fabric 配置でアプリケーション エクスプローラーの支払パッケージの作成](payment-connector-package.md)

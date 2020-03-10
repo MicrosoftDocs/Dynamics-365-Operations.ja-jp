@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b3c9c107b691550651be56b13e9f6dbc07058848
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 480b232fa74e40a0acd5a1f5f0ba9ca26ef80b20
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004638"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070777"
 ---
 # <a name="peripheral-simulator-for-commerce"></a>コマースの周辺機器シミュレーター
 
@@ -114,7 +114,7 @@ ms.locfileid: "3004638"
 
 #### <a name="assign-the-hardware-profile-to-a-register"></a>レジスターへのハードウェア プロファイルの割り当て
 
-1. ハードウェア プロファイルを作成した後に、チャンネルは、**小売りとコマース** &gt; **チャネル設定** &gt; **POS の設定** &gt; **登録** の順に移動します。
+1. ハードウェア プロファイルを作成した後、**Retail とコマース** &gt; **チャネル設定** &gt; **POS の設定** &gt; **登録**の順に移動します。
 2. **POS レジスター** リストでは、周辺機器シミュレーターを使用する必要があるレジスターに対して、**レジスター番号** フィールドにあるリンクをクリックします。
 3. **編集** をクリックします。
 4. **プロファイル** セクションの **ハードウェア プロファイル** フィールドでは、仮想周辺機器用に作成したハードウェア プロファイルを選択します。
@@ -472,7 +472,7 @@ POS シミュレーターは、Windows プリンターをテストするため�
 
 次の例は、エクスポートされたファイルに含まれるデータを示しています。
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
    <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
@@ -533,4 +533,4 @@ POS シミュレーターは、Windows プリンターをテストするため�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[小売り用周辺機器](../retail-peripherals-overview.md)
+[周辺機器](../retail-peripherals-overview.md)

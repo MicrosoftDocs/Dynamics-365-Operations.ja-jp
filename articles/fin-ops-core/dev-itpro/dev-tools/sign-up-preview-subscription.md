@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 589cb15a51215f383a87dea4b31ab05ffa1f303b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 218e46d6cc90d24d9481d2eb741f9bb7c6e6c4b2
+ms.sourcegitcommit: 69e41165cd07434ab0d1a35f749018b5659b063e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003600"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037196"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -74,7 +74,7 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 3. サブスクライブするために使用したアカウントを使用してサインインします。
 4. プラス記号 (**+**) を選択して新しいプロジェクトを作成します。
 
-    [![プロジェクトの作成](./media/11-1024x473.jpg)](./media/11.jpg)
+    [![プロジェクトの作成](./media/11.jpg)](./media/11.jpg)
 
 5. プロジェクト タイプを選択します。
 6. プロジェクト情報を入力し、**作成**を選択します。

@@ -13,14 +13,14 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31
+ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 3689ad9ae776cd425c43d14746b0db6c3d94495d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca034abea3b8ef126d6fac58efa3d29c64c6fe1b
+ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004646"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3078057"
 ---
 # <a name="device-activation-of-a-customized-modern-pos"></a>カスタマイズされた Modern POS のデバイスの有効化
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f74915a43e2647822e55f5d240bff49b569af2a3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 524b0c9ce7a9e08195c3da941fac1cd9a18d0030
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004600"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057902"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -237,7 +237,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 電子商取引またはコール センターなどのカード不提示シナリオでは、特別な国間、通貨間、市場間の考慮事項が適用されます。 詳細は、<MicrosoftDynamics@adyen.com> にお問い合わせください
 
 #### <a name="supported-dynamics-365-payment-features"></a>サポートされる Dynamics 365 支払フィーチャ
-次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連の Dynamics 365 支払フィーチャを示します。 これらのフィーチャは、2018 年 12 月に支払 SDK および一部の小売コンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
+次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連のフィーチャを示します。 これらのフィーチャは、2018 年 12 月に支払 SDK および一部のコンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
 
 | スキーム | カードあり | カードなし |
 |---|:-:|:-:|
@@ -274,7 +274,7 @@ Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使
 
 POS 端末、コール センター、または電子商取引で支払を処理するには、新しいクレジット カードに対して新しい既定の支払プロセッサを構成する必要があります。 次の手順に従って、既定の支払プロセッサを構成します。
 
-1. 小売り用バックオフィスにサインインして、**売掛\> 支払設定\> 支払サービス** の順に移動します。
+1. バックオフィスにサインインして、**売掛\> 支払設定\> 支払サービス**の順に移動します。
 2. アクション ウィンドウで、**新規** を選択してから、**設定** タブに、以下の情報を入力します。
 
     | フィールド | 説明 | サンプル値 |

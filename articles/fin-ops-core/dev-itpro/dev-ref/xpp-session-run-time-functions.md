@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f721b0244a7c222b2b304be4d08054dd7380266
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23eced0fe9c757d667df0355d782072ab6e5ecb6
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191677"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082022"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 
@@ -35,7 +35,9 @@ ms.locfileid: "2191677"
 
 現在の会社に使用できる拡張を取得します。
 
-    str curExt()
+```xpp
+str curExt()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -43,18 +45,22 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void curExtExample(Args _arg)
-    {
-            str s;
-            // Sets s to the extension of the current company.
-            s = curExt();
-            print "Current extension is " + s;
-    }
+```xpp
+static void curExtExample(Args _arg)
+{
+    str s;
+    // Sets s to the extension of the current company.
+    s = curExt();
+    print "Current extension is " + s;
+}
+```
 
 ## <a name="curuserid"></a>curUserId
 現在のユーザーを表す数値以外の ID を取得します。
 
-    str curUserId()
+```xpp
+str curUserId()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -62,17 +68,21 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void curUserIdExample(Args _arg)
-    {
-            str s;
-            s = curUserId();
-            print "Current user ID is " + s;
-    }
+```xpp
+static void curUserIdExample(Args _arg)
+{
+    str s;
+    s = curUserId();
+    print "Current user ID is " + s;
+}
+```
 
 ## <a name="funcname"></a>funcName
 現在の関数コンテキストを含む文字列を取得します。
 
-    str funcName()
+```xpp
+str funcName()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -84,15 +94,19 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void funcNameExample(Args _arg)
-    {
-            print "Current function context is " + funcName();
-    }
+```xpp
+static void funcNameExample(Args _arg)
+{
+    print "Current function context is " + funcName();
+}
+```
 
 ## <a name="getcurrentpartition"></a>getCurrentPartition
 現在のパーティションの短い名前を取得します。
 
-    str getCurrentPartition()
+```xpp
+str getCurrentPartition()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -106,27 +120,31 @@ ms.locfileid: "2191677"
 
 次のコード例は、X++ 言語の **getCurrentPartition** 関数、および関連する関数またはメソッドへの呼び出しおよび出力を示しています。
 
-    static public void Main(Args _args)  // X++ method.
-    {
-            int64 iPartition;
-            str sPartition;
-            SelectableDataArea oSelectableDataArea;  // System ExDT.
-            iPartition = getCurrentPartitionRecId();
-            sPartition = getcurrentpartition();
-            oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
-            Global::info( strFmt(
-                    "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
-                    iPartition, sPartition, oSelectableDataArea) );
-    }
-    /**** Pasted from Infolog window:
-    Message_@SYS14327 (03:42:38 pm)
-    getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
-    ****/
+```xpp
+static public void Main(Args _args)  // X++ method.
+{
+    int64 iPartition;
+    str sPartition;
+    SelectableDataArea oSelectableDataArea;  // System ExDT.
+    iPartition = getCurrentPartitionRecId();
+    sPartition = getcurrentpartition();
+    oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
+    Global::info( strFmt(
+            "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
+            iPartition, sPartition, oSelectableDataArea) );
+}
+/**** Pasted from Infolog window:
+Message_@SYS14327 (03:42:38 pm)
+getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
+****/
+```
 
 ## <a name="getcurrentpartitionrecid"></a>getCurrentPartitionRecId
 現在のパーティションの **RecId** フィールドを取得します。
 
-    int64 getCurrentPartitionRecId()
+```xpp
+int64 getCurrentPartitionRecId()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -140,27 +158,31 @@ ms.locfileid: "2191677"
 
 次のコード例は、X++ 言語の **getCurrentPartitionRecId** 関数、および関連する関数またはメソッドへの呼び出しおよび出力を示しています。
 
-    static public void Main(Args _args)  // X++ method.
-    {
-            int64 iPartition;
-            str sPartition;
-            SelectableDataArea oSelectableDataArea;  // System ExDT.
-            iPartition = getCurrentPartitionRecId();
-            sPartition = getcurrentpartition();
-            oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
-            Global::info( strFmt(
-                    "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
-                    iPartition, sPartition, oSelectableDataArea) );
-    }
-    /**** Pasted from Infolog window:
-    Message_@SYS14327 (03:42:38 pm)
-    getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
-    ****/
+```xpp
+static public void Main(Args _args)  // X++ method.
+{
+    int64 iPartition;
+    str sPartition;
+    SelectableDataArea oSelectableDataArea;  // System ExDT.
+    iPartition = getCurrentPartitionRecId();
+    sPartition = getcurrentpartition();
+    oSelectableDataArea = Global::getCompany( tableNum(BankAccountTable) );
+    Global::info( strFmt(
+            "getCurrentPartitionRecId =%1 , getCurrentPartition =%2 , getCompany =%3",
+            iPartition, sPartition, oSelectableDataArea) );
+}
+/**** Pasted from Infolog window:
+Message_@SYS14327 (03:42:38 pm)
+getCurrentPartitionRecId =5637144576 , getCurrentPartition =initial , getCompany =ceu
+****/
+```
 
 ## <a name="getprefix"></a>getPrefix
 **setPrefix** 関数が連続して呼び出された後、現在の実行接頭辞を取得します。
 
-    str getPrefix()
+```xpp
+str getPrefix()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -172,17 +194,21 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void getPrefixExample(Args _arg)
-    {
-            setPrefix("Prefix");
-            setPrefix("Another prefix");
-            print getPrefix();
-    }
+```xpp
+static void getPrefixExample(Args _arg)
+{
+    setPrefix("Prefix");
+    setPrefix("Another prefix");
+    print getPrefix();
+}
+```
 
 ## <a name="sessionid"></a>sessionId
 現在のセッションのセッション番号を取得します。
 
-    int sessionId()
+```xpp
+int sessionId()
+```
 
 ### <a name="return-value"></a>戻り値
 
@@ -194,17 +220,21 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void sessionIdExample(Args _arg)
-    {
-            int session;
-            session = sessionId();
-            print "This session ID is number " + int2Str(session);
-    }
+```xpp
+static void sessionIdExample(Args _arg)
+{
+    int session;
+    session = sessionId();
+    print "This session ID is number " + int2Str(session);
+}
+```
 
 ## <a name="prmisdefault"></a>prmIsDefault
 現在のメソッドの指定されたパラメータに既定値があるかどうかを判定します。
 
-    int prmIsDefault(anytype argument)
+```xpp
+int prmIsDefault(anytype argument)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -218,36 +248,40 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void prmIsDefaultExample(Args _arg)
+```xpp
+static void prmIsDefaultExample(Args _arg)
+{
+    void fn(boolean b = true, int j = 42)
     {
-            void fn(boolean b = true, int j = 42)
-            {
-                    if (prmIsDefault(b) == 1)
-                    {
-                            print "First parameter is using the default value.";
-                    }
-                    else
-                    {
-                            print "First parameter is not using the default value.";
-                    }
-            }
-            fn();
-            fn(false);
+        if (prmIsDefault(b) == 1)
+        {
+            print "First parameter is using the default value.";
+        }
+        else
+        {
+            print "First parameter is not using the default value.";
+        }
     }
+    fn();
+    fn(false);
+}
+```
 
 ## <a name="runas"></a>runAs
 別のユーザーのセキュリティ コンテキストで、X++ メソッドを実行する呼び出し元を有効にします。 この関数は、バッチ処理で最もよく使用されます。
 
-    container runAs(
-            str userId,
-            int classId,
-            str staticMethodName
-            [,
-            container params,
-            str company,
-            str language,
-            str partition
-            ])
+```xpp
+container runAs(
+    str userId,
+    int classId,
+    str staticMethodName
+    [,
+    container params,
+    str company,
+    str language,
+    str partition
+    ])
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -273,23 +307,27 @@ ms.locfileid: "2191677"
 
 次の例では、**EventJobDueDate** クラスの **runDueDateEventsForUser** メソッドを呼び出します。 このコードは、ユーザーのセキュリティ コンテキストで実行されます。 新しいクラスのメソッドに適用することによって、このコードを実行します。
 
-    server static public void Main(Args _args)
-    {
-            RunAsPermission perm;
-            UserId runAsUser;
-            SysUserInfo userInfo;
-            userInfo = SysUserInfo::find();
-            runAsUser = userInfo.Id;
-            perm = new RunAsPermission(runAsUser);
-            perm.assert();
-            runAs(runAsUser, classnum(EventJobDueDate), "runDueDateEventsForUser");
-            CodeAccessPermission::revertAssert();
-    }
+```xpp
+server static public void Main(Args _args)
+{
+    RunAsPermission perm;
+    UserId runAsUser;
+    SysUserInfo userInfo;
+    userInfo = SysUserInfo::find();
+    runAsUser = userInfo.Id;
+    perm = new RunAsPermission(runAsUser);
+    perm.assert();
+    runAs(runAsUser, classnum(EventJobDueDate), "runDueDateEventsForUser");
+    CodeAccessPermission::revertAssert();
+}
+```
 
 ## <a name="setprefix"></a>setPrefix
 現在の実行スコープの接頭語を設定します。
 
-    int setPrefix(str _prefix)
+```xpp
+int setPrefix(str _prefix)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -307,12 +345,13 @@ ms.locfileid: "2191677"
 
 ### <a name="example"></a>例
 
-    static void setPrefixExample(Args _arg)
-    {
-            int i;
-            i = setPrefix("Prefix");
-            print i;
-    }
-
+```xpp
+static void setPrefixExample(Args _arg)
+{
+    int i;
+    i = setPrefix("Prefix");
+    print i;
+}
+```
 
 

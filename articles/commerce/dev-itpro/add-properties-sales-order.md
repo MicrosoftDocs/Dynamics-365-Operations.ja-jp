@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aa92380b6ff5349c048608ce05c391dfd73c9a66
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae3f1fdc78267eacf8d3ff515605cc51207ac103
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004603"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070469"
 ---
 # <a name="add-properties-to-sales-orders"></a>プロパティを販売注文に追加
 
@@ -77,10 +77,12 @@ ms.locfileid: "3004603"
 ## <a name="set-the-attribute-on-a-sales-order"></a>販売注文書で属性を設定
 Commerce Runtime 内にビジネス ロジックを追加することにより属性を販売注文に追加することができます。 次のコードを追加して、カートに属性を追加し、カートを保存します。それから、カートから受注を作成します。
 
-    var cart = orderManager.GetCart(cartId, accountNumber, false);
-    cart.AttributeValues.Add(new AttributeTextValue { Name = "GiftWrap", TextValue = "Yes" });
-    orderManager.SaveCart(cart);
-    orderManager.CreateOrderFromCart(...);
+```typescript
+var cart = orderManager.GetCart(cartId, accountNumber, false);
+cart.AttributeValues.Add(new AttributeTextValue { Name = "GiftWrap", TextValue = "Yes" });
+orderManager.SaveCart(cart);
+orderManager.CreateOrderFromCart(...);
+```
 
 ## <a name="next-steps"></a>次のステップ
 Commerce Runtime で販売注文を作成した後は、新しい属性を表示できます。

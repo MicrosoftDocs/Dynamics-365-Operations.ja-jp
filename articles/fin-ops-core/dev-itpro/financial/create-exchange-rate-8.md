@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
+title: Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定する方法について説明します。
 author: aolson
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: bd9a354fadad027e03f0bd3e631046609316f802
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a62ebc9dcb8c725c4976c9622ffcfdb759115d43
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183308"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080753"
 ---
-# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
+# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 
@@ -67,7 +67,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 1. 拡張機能を使用して、新しい為替レート プロバイダーを表す **ExchangeRateProvider** の拡張可能列挙体に新しい値を追加します。
 2. 開発モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
 
-    ```
+    ```xpp
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
     using Microsoft.Dynamics.Currency.Instrumentation;
     using System.Collections;
@@ -84,7 +84,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 3. クラスに、次の定数と変数宣言を追加します。 **ProviderId** の独自のグローバル一意識別子 (GUID) を提供します。
 
-    ```
+    ```xpp
     private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
     private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
     private const str OANDADateFormat = 'yyyy-MM-dd';
@@ -110,7 +110,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 4. **get\_Name** メソッドを実装します。 ラベルを使用して、正しい変換を有効にする必要があります。 ユーザーは、プロバイダーの構成情報を設定すると、ここで指定されている名前を変更できます。
 
-    ```
+    ```xpp
     public ExchangeRateProviderName get_Name()
     {
         return "@CurrencyExchange:Currency_ConfigField_OandaName";
@@ -119,7 +119,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 5. **get\_Id** メソッドを実装します。 このメソッドは、このプロバイダーを一意に識別する GUID を返します。
 
-    ```
+    ```xpp
     public ExchangeRateProviderId get_Id()
     {
         return ProviderId;
@@ -128,7 +128,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 6. **set\_Factory** メソッドを実装します。 為替レート プロバイダー フレームワークは、このメソッドを呼び出して、プロバイダーの **IExchangeRateProviderFrameworkFactory** インターフェイスを実装するオブジェクトを設定します。 このファクトリを使用して、前の図のインターフェイスの一部を表す新しいオブジェクトのインスタンスを作成できます。
 
-    ```
+    ```xpp
     public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
     {
         factory = _factory;
@@ -141,7 +141,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
    - **fixedBaseIsoCurrency** プロパティを、為替レート サービスから返される為替レートの固定ベース通貨を表す 3 文字の国際標準化機構 (ISO) 通貨コードに設定します。 為替レート サービスが固定基本通貨をサポートしていない場合は、空の文字列を返します。 たとえば、ユーロは固定基本通貨としてよく使用されます。 新しいプロバイダーを作成するときは、正しい値を選択できるように、為替レート サービスをかならず調査してください。
    - サービスが日付範囲全体を表す単一のレートを返すことができる場合、**singleRateForDateRange** プロパティを **true** に設定します。 たとえば、1 か月の平均為替レートを表す単一の為替レートを返すには、この設定を使用できます。 サービスがこの機能をサポートしていない場合は、このプロパティを **false** に設定します。
 
-     ```
+     ```xpp
      public IExchangeRateProviderSupportedOptions GetSupportedOptions()
      {
        IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
@@ -155,7 +155,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 8. **GetConfigurationDefaults** メソッドを実装します。 既定のコンフィギュレーションは、為替レート プロバイダの既定コンフィギュレーションの設定を表す名前と値の組です。 これらの設定はプロバイダーが登録されたときに自動的に読み込まれますが、ユーザーは変更できます。 これらの文字列を使用可能な値に変換する場合は、必要な対策を講じてください。 値フィールドは、SQL で暗号化フィールドとして格納されます。 したがって、アプリケーション プログラミング インターフェイス (API) などの機密データはより安全になります。
 
-    ```
+    ```xpp
     public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
     {
         IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
@@ -169,7 +169,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 9. **ValidateConfigurationDetail** メソッドを実装します。 このメソッドにより、為替レート プロバイダーは、**為替レート プロバイダーの構成**ページでユーザーが変更する構成情報を検証できます。
 
-    ```
+    ```xpp
     public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
     {
         boolean result = true;
@@ -200,7 +200,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 10. **EnumNameForLookup** メソッドを実装します。 このメソッドは、為替レート プロバイダーが特定の **ExchangeRateProviderPropertyKey** キーを参照できるようにします。 適切なキーに対して列挙された既存の型の名前を返します。 この機能が必要でない場合は、空の文字列を返します。
 
-    ```
+    ```xpp
     public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
     {
         if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
@@ -224,7 +224,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
     - 為替レートが返されるときは、**IExchangeRateRequest** クラスのインスタンスが提供する日付ではなく、為替レート サービスが提供する日付を常に使用します。 この方法では、為替レート サービスが予期されていない日付のレートを返す場合があるため、返される為替レートが正しい日付に関連付けられていることを保証できます。 たとえば、将来の日付に対して為替レートが要求されると、一部のプロバイダーは、エラーをスローしたり何も返さない代わりに、最新の為替レートを返します。
     - 為替レート サービスからの為替レートを取得するときにエラーが発生する場合は、カスタム エラー メッセージをスローしないようにします。 このフレームワークは、予想される通貨ペアをプロバイダーから取得できないという一般的なエラーメッセージを投げて問題があることをユーザーに警告します。 その他のエラーのログを記録する必要がある場合、**CurrencyEventSource** を使用します。 例については、次のコードで **catch** ステートメントおよび **oandaKey** 変数に対する **IF** 条件を参照してください。。
 
-    ```
+    ```xpp
     public IExchangeRateResponse GetExchangeRates(IExchangeRateRequest _request, IExchangeRateProviderConfig _config)
     {
         System.Exception exception;
@@ -356,7 +356,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 12. 次のヘルパー メソッドを実装します。 これらのメソッドはこの例に固有のものであり、すべてのプロバイダーに必須ではありません。
 
-    ```
+    ```xpp
     private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
     {
         ExchangeRateProviderOANDAQuoteType quoteType = 

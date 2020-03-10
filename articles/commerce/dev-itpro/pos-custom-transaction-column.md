@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a55c48e6aab30779ddcb3d7cd00487f09b585d99
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 00b8c2b66995348eabc6db655b26559cf54399a5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004656"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057657"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "3004656"
 
 ## <a name="add-a-custom-column-to-the-page"></a>ページへのカスタム列の追加
 1. Dynamics 365 Commerce へサインインします。
-2. **Retail** > **チャネル設定** > **POS 設定** > **POS** > **画面レイアウト**と移動します。 または、検索ばーで **画面レイアウト** を検索します。
+2. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS** > **画面レイアウト**の順に移動します。 または、検索ばーで **画面レイアウト** を検索します。
 3. **F3MGR** 画面レイアウト ID を選択した後、アクション バーで **デザイナー** ボタンをクリックします。
 4. デザイナーを起動する Azure Active Directory (AAD) の資格情報をインストールおよび入力するよう求められる場合、指示に従ってください。
 5. レイアウト サイズから **1440 x 960: フル レイアウト** を選択し、**レイアウト デザイナー** ボタンをクリックします。
@@ -64,7 +64,7 @@ ms.locfileid: "3004656"
 6. **LinesGrid** フォルダーに、新しい Typescript ファイルを追加し、**CustomColumn1Configuration.ts** と名前を付けます。
 7. 次の **import** 明細書を追加して、関連するエンティティおよびコンテキストをインポートします。
 
-    ```Typescript
+    ```typescript
     import {
 
         ICustomLinesGridColumnContext,
@@ -77,24 +77,24 @@ ms.locfileid: "3004656"
     ```
 8. **LinesCustomGridColumn1** という名前の新しいクラスを作成し、**CustomLinesGridColumnBase** から拡張します。
 
-    ```Typescript
+    ```typescript
     export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {}
     ```
 9. クラス内で、選択した支払/入金明細行をキャプチャするプライベート変数を宣言します。
 
-    ```Typescript
+    ```typescript
     private _selectedTenderLines: ProxyEntities.TenderLine[ ];
     ```
 10. クラスのコンストラクター メソッドを作成して、コンテキストを初期化します。
 
-    ```Typescript
+    ```typescript
     constructor(context: ICustomLinesGridColumnContext) {
         super(context);
     }
     ```
 11. 次の列のタイトルと配置のメソッドを追加します。
 
-    ```Typescript
+    ```typescript
     public title(): string {
         return "Line number";
     } 
@@ -104,13 +104,15 @@ ms.locfileid: "3004656"
     }
     ```
 12. 行番号を返す列計算値メソッドを追加します。
-    ```Typescript
+    ```typescript
     public computeValue(cartLine: ProxyEntities.CartLine): string {
         return cartLine.LineNumber.toString();
     }
     ```
+
     クラス全体のコードは次のとおりです。
-    ```Typescript
+
+    ```typescript
     import {
         ICustomLinesGridColumnContext,
         CustomLinesGridColumnBase
@@ -136,10 +138,11 @@ ms.locfileid: "3004656"
         }
     }
     ```
+
 13. 新しい .json ファイルを **CustomColumnExtensions** フォルダーの下に作成し、**manifest.json** という名前を付けます。
 14. **manifest.json** ファイルで、生成されたコードを次のコードに置き換えます。
 
-    ```Typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
             "name": "Pos_Extensibility_Samples",
@@ -167,14 +170,12 @@ ms.locfileid: "3004656"
      "deliveryGrid": {
          "customColumn1": { "modulePath": "Cart/DeliveryGrid/CustomColumn1Configuration" }
      }
-
-    
     ```
     
     
 15. **extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**CustomColumnExtensions** サンプルで更新し、実行時に POS にこの拡張機能が含まれるようにします。
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -188,7 +189,7 @@ ms.locfileid: "3004656"
     ```
 16. **tsconfig.json** ファイルを開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。 POS では、このファイルを使用して、拡張機能を追加または除外します。 既定では、リストにすべての除外された拡張子が含まれています。 POS の一部である拡張子を含める場合は、拡張子フォルダー名を追加し、以下のように拡張子リストから拡張子をコメントする必要があります。
 
-    ```Typescript
+    ```typescript
     "exclude": [
         "AuditEventExtensionSample",
         "B2BSample",

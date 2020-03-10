@@ -16,14 +16,14 @@ ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-29-10
+ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: f4a8c98a32fa89effea5812bdfa935ecfc27006f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b043dbc93bc16571a0fcdaf4bf520d4c6de97ca6
+ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3078056"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]
@@ -55,26 +55,26 @@ API の多くは、拡張機能で消費できます。 たとえば、外部の
 
     パターンは、"PosApi/Consume/Module name" からの {api name} のインポートです。
  
-    ```Typescript
+    ```typescript
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
     ```
 
 2.  必要な場合は、クライアントのエンティティとプロキシ エンティティをインポートします。
 
-    ```Typescript
+    ```typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
     ```
 3.  API 変数を宣言し、POS ランタイムを使用して実行します。これには、this.context.runtime.executeAsync("api name") を使用してランタイムにアクセスできます。
 
-    ```Typescript
+    ```typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
     
     たとえば、支払/入金の削除を実行する場合は、SaveAttributesOnCartClientRequest api を使用し、次の手順を参照してください。
  
-    ```Typescript
+    ```typescript
     let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
      attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
@@ -88,12 +88,12 @@ API の多くは、拡張機能で消費できます。 たとえば、外部の
     new SaveAttributesOnCartClientRequest(attributeValues);
 
     result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
-
     ```
+
 ### <a name="samples-showing-how-to-access-apis"></a>API にアクセスする方法を示すサンプル
 
 **現在の買い物カゴを取得**
-```
+```typescript
 // Gets the current cart.
 
  let currentCart: ProxyEntities.Cart;
@@ -107,8 +107,9 @@ API の多くは、拡張機能で消費できます。 たとえば、外部の
 currentCart = getCurrentCartClientResponse.data.result;
 
 ```
+
 **買い物カゴに追加された現在の顧客を取得**
-```
+```typescript
  // Gets the current customer.
 
  let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
@@ -127,10 +128,10 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
+
 **強制無効トランザクション**
-```
+```typescript
  // Force void tarnsaction.
-```Typescript
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
 
  new VoidTransactionOperationRequest<VoidTransactionOperationResponse>(false, this.context.logger.getNewCorrelationId());

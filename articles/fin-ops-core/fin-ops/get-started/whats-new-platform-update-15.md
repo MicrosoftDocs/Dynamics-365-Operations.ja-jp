@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: 5b04fceeaf3f345f6af57fcc8433a9448ff43de3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 47d5c98060f2d58c065aec59c7665a6020342ed4
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811421"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081957"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -102,7 +102,7 @@ Dynamics 365 for Finance and Operations ではカスタム フィールドへの
 
 **ISO 27018 (個人データの保護)** – ISO 27018 は、クラウド内の個人情報の保護を対象としています。 Dynamics 365 for Finance and Operations は ISO 27018 認証を取得しています。マイクロソフトのサービスを使用して業務を管理するとき、個人の機密データはクラウドで安全かつ保護されることを理解していただくことを望みます。また、業務に独自の ISO 27018 認証の取得を選択した場合、監査担当者は Finance and Operations に ISO 27108 認証があることを評価します。 
 
-**SOC-1/Type-2 および SOC-2/Type-2** – サービス組織制御レポート (SOC) は、クラウド サービスに財務データが安全かつ保護されていることを保証するためのコントロールの設定があることを確認するのに役立ちます。 Finance and Operations は SOC-1/Type-2 および SOC-2/Type-2 認証を獲得しました。
+**SOC-1/Type-2 および SOC-2/Type-2** – サービス組織制御レポート (SOC) は、クラウド サービスに財務データが安全かつ保護されていることを保証するためのコントロールの設定があることを確認するのに役立ちます。 Finance and Operations は、SOC-1/Type-2 および SOC-2/Type-2 の認証を取得しています。
 
 ## <a name="support-for-display-and-edit-methods-on-form-data-sources-using-augmentation-classes-extensionof"></a>拡張クラス (ExtensionOf) を使用したフォーム データ ソースの表示および編集メソッドのサポート
 
@@ -110,7 +110,7 @@ Dynamics 365 for Finance and Operations ではカスタム フィールドへの
 
 #### <a name="class-extension-for-a-form"></a>フォームのクラスの拡張機能
 
-```
+```xpp
 [ExtensionOf(formstr(abForm))]
 public final class abClassForm_Extension
 {
@@ -137,7 +137,7 @@ public final class abClassForm_Extension
 
 #### <a name="class-extension-for-a-table"></a>テーブルのクラスの拡張機能
 
-```
+```xpp
 [ExtensionOf(tablestr(abTable))]
 public final class abClassTable_Extension
 {

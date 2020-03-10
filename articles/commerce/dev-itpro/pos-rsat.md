@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 77a5919abb4be30b25868f7317dd14dad6c12179
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fcf3b707386baa7b75fe55933e59757bb07511f8
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004649"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070782"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -226,7 +226,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 
 POS RSAT のプレビュー バージョンを使用している場合、RSAT のインストール後に、Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config 構成ファイルに次の設定を追加します。 このファイルは、メインの RSAT インストール フォルダ (通常は C:\Program Files (x86)\Regression Suite Automation Tool) にあります。
 
-```Xml
+```xml
 <add key="RetailPos" value="true" />
 ```
 
@@ -241,9 +241,8 @@ POS RSAT のプレビュー バージョンを使用している場合、RSAT �
     + **Cloud POS URL** – テストを実行する Cloud POS 環境の URL を入力します。
     + **Commerce Scale Unit URL** – デバイスがまだ有効化されていない場合にデバイスの有効化に使用する、Commerce Scale Unit URL を入力します。
 
-
-> [!NOTE]
-> Cloud POS および Commerce Scale Unit URL は Finance and Operations 環境から取得できます。 **Retail とコマース > チャネル設定 > チャネル プロファイル**の順に移動します。 LCS 環境ページから URL を取得することもできます。
+        > [!NOTE]
+        > Cloud POS および Commerce Scale Unit URL は Finance and Operations 環境から取得できます。 **Retail とコマース > チャネル設定 > チャネル プロファイル**の順に移動します。 LCS 環境ページから URL を取得することもできます。
    
    + **AAD ユーザー電子メール** - デバイスの有効化に使用する Azure Active Directory (Azure AD) ユーザーの電子メール アドレスを入力します。 Azure AD ユーザーは、デバイスを有効にするアクセス許可を持っている必要があります。
    + **AAD パスワード** - デバイスの有効化に使用する Azure AD ユーザーのパスワードを入力します。

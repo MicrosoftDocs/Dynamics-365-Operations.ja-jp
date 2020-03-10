@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3b0615f85f1db18cb56a9a63a4b4b4b9150b6038
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 07235088e2163d0894393293794d4d4d4ca520eb
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004624"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070786"
 ---
 # <a name="implement-a-return-policy-by-using-triggers"></a>トリガーを使用して返品ポリシーを実装してください
 
@@ -41,117 +41,131 @@ ms.locfileid: "3004624"
 3.  **トリガー** フォルダーの下の POS.Core プロジェクトに新しい TypeScript ファイルを追加し、ExtensionTrigger.ts という名前をつけます。
 4.  トリガー インターフェイスへの参照を追加し、コードの新しいモジュールを作成します。 ExtensionTrigger.ts ファイルに次のコードを追加します。
 
-        <///<reference path="TransactionTriggers.ts" />
-        ///<reference path="TriggerHelper.ts" />
-        ///<reference path="TriggerManager.ts" />
-        ///<reference path="ApplicationTriggers.ts" />
-        ///<reference path="ProductTriggers.ts" />
-        ///<reference path="../IAsyncResult.ts" />
-        ///<reference path="../Entities/CommerceTypes.g.ts" />
-        ///<reference path='ITrigger.ts' />
-        module Commerce.Triggers.Samples {
-            "use strict";
-        }
+    ```typescript
+    <///<reference path="TransactionTriggers.ts" />
+    ///<reference path="TriggerHelper.ts" />
+    ///<reference path="TriggerManager.ts" />
+    ///<reference path="ApplicationTriggers.ts" />
+    ///<reference path="ProductTriggers.ts" />
+    ///<reference path="../IAsyncResult.ts" />
+    ///<reference path="../Entities/CommerceTypes.g.ts" />
+    ///<reference path='ITrigger.ts' />
+    module Commerce.Triggers.Samples {
+        "use strict";
+    }
+    ```
 
 ## <a name="scenario-1-30day-return-policy"></a>シナリオ 1: 30 日返品ポリシー
 30日間の返品ポリシーを実装するには、新しいクラスを作成し、IPreConfirmReturnTransactionTrigger インターフェイスを実装して、IPreConfrimReturnTransactionTrigger を拡張します。 このトリガーは、トランザクションから項目を返す前に呼び出されます。
 
 1.  モジュール Commerce.Triggers.Samples で IPreConfirmReturnTransactionTrigger を実装する新しいクラスを作成します。 次のコードの例に示すように、PreConfirmReturnTransactionTrigger と名前を付けます。
 
-        /*** Implementation of a pre-confirm return transaction trigger that validates that the transaction being returned is within the return period. */
-        export class PreConfirmReturnTransactionTrigger implements IPreConfirmReturnTransactionTrigger {
-        }
+    ```typescript
+    /*** Implementation of a pre-confirm return transaction trigger that validates that the transaction being returned is within the return period. */
+    export class PreConfirmReturnTransactionTrigger implements IPreConfirmReturnTransactionTrigger {
+    }
+    ```
 
 2.  インターフェイスから**実行**メソッドを実装して、返品条件を検証するコードを追加します。
 
-        private static MILLISECONDS_PER_DAY: number = 100;
-        private static RETURN_PERIOD_IN_DAYS: number = 0;
-        private static RETURN_PERIOD_ENDED_ERROR_CODE: string = "Cannot return, you are past return date";
-        /*** Executes the trigger. */
-        public execute(options: IPreConfirmReturnTransactionTriggerOptions):     Commerce.IAsyncResult<Commerce.ICancelableResult> {
-            var timeDiff: number = Math.abs(new Date().getTime() - options.originalTransaction.BusinessDate.getTime());
-            var diffDays: number = Math.ceil(timeDiff / PreConfirmReturnTransactionTrigger.MILLISECONDS_PER_DAY);
-            if (diffDays > PreConfirmReturnTransactionTrigger.RETURN_PERIOD_IN_DAYS) {
-                var error: Proxy.Entities.Error = new     Proxy.Entities.Error(PreConfirmReturnTransactionTrigger.RETURN_PERIOD_ENDED_ERROR_CODE);
-                return Commerce.AsyncResult.createRejected([error]);
-            }
-            return Commerce.AsyncResult.createResolved({ canceled: false });
+    ```typescript
+    private static MILLISECONDS_PER_DAY: number = 100;
+    private static RETURN_PERIOD_IN_DAYS: number = 0;
+    private static RETURN_PERIOD_ENDED_ERROR_CODE: string = "Cannot return, you are past return date";
+    /*** Executes the trigger. */
+    public execute(options: IPreConfirmReturnTransactionTriggerOptions):     Commerce.IAsyncResult<Commerce.ICancelableResult> {
+        var timeDiff: number = Math.abs(new Date().getTime() - options.originalTransaction.BusinessDate.getTime());
+        var diffDays: number = Math.ceil(timeDiff / PreConfirmReturnTransactionTrigger.MILLISECONDS_PER_DAY);
+        if (diffDays > PreConfirmReturnTransactionTrigger.RETURN_PERIOD_IN_DAYS) {
+            var error: Proxy.Entities.Error = new     Proxy.Entities.Error(PreConfirmReturnTransactionTrigger.RETURN_PERIOD_ENDED_ERROR_CODE);
+            return Commerce.AsyncResult.createRejected([error]);
         }
+        return Commerce.AsyncResult.createResolved({ canceled: false });
+    }
+    ```
 
 ## <a name="scenario-2-limit-of-three-returns-per-transaction"></a>シナリオ 2: トランザクションごとに返品 3 回の制限
 3 回限りの制限を実装するには、新しいクラスを作成し、IPreVoidProductsTrigger インターフェイスを実装します。 このトリガーは、トランザクション内の項目を無効にする前に呼び出されます。
 
 1.  モジュール Commerce.Triggers.Samples で IPreVoidProductsTrigger インターフェイスを実装する PreVoidProductsTrigger という名前の新しいクラスを作成します。 このコードは、前の手順で作成した PreConfirmReturnTransactionTrigger クラスの外にあることを確認します。
 
-        /*** Implementation of a pre-customer add trigger that is used to ensure a blocked customer is not added to sale. */
-        export class PreVoidProductsTrigger implements IPreVoidProductsTrigger {
-        }
+    ```typescript
+    /*** Implementation of a pre-customer add trigger that is used to ensure a blocked customer is not added to sale. */
+    export class PreVoidProductsTrigger implements IPreVoidProductsTrigger {
+    }
+    ```
 
 2.  インターフェイスから**実行**メソッドを実装して、無効条件を検証するコードを追加します。
 
-        private static VOID_ERROR_CODE: string = "Void is not allowed anymore.";
-        /*** Executes the trigger. */
-        public execute(options: IPreVoidProductsTriggerOptions): IAsyncResult<ICancelableResult> {
-            var result: AsyncResult<ICancelableResult> = new AsyncResult<ICancelableResult>(null);
-            if (!options.cartLines[0].IsVoided && this.getVoidedQuantity(options.cart) > 2) {
-                var error: Proxy.Entities.Error =
-                new Proxy.Entities.Error(PreVoidProductsTrigger.VOID_ERROR_CODE);
-                result.reject([error]);
-            } else {
-                result.resolve({ canceled: false });
-            }
-            return result;
+    ```typescript
+    private static VOID_ERROR_CODE: string = "Void is not allowed anymore.";
+    /*** Executes the trigger. */
+    public execute(options: IPreVoidProductsTriggerOptions): IAsyncResult<ICancelableResult> {
+        var result: AsyncResult<ICancelableResult> = new AsyncResult<ICancelableResult>(null);
+        if (!options.cartLines[0].IsVoided && this.getVoidedQuantity(options.cart) > 2) {
+            var error: Proxy.Entities.Error =
+            new Proxy.Entities.Error(PreVoidProductsTrigger.VOID_ERROR_CODE);
+            result.reject([error]);
+        } else {
+            result.resolve({ canceled: false });
         }
+        return result;
+    }
 
-        private getVoidedQuantity(cart: Proxy.Entities.Cart): number {
-            var voidedQuantity: number = 0;
-            cart.CartLines.forEach((cartLine: Proxy.Entities.CartLine) => {
-            if (cartLine.IsVoided) {
-                voidedQuantity = voidedQuantity + 1;
-            }
-            });
-            return voidedQuantity;
+    private getVoidedQuantity(cart: Proxy.Entities.Cart): number {
+        var voidedQuantity: number = 0;
+        cart.CartLines.forEach((cartLine: Proxy.Entities.CartLine) => {
+        if (cartLine.IsVoided) {
+            voidedQuantity = voidedQuantity + 1;
         }
+        });
+        return voidedQuantity;
+    }
+    ```
 
 3.  MPOS ログオン後に 2 つのトリガーを登録します。 上記の手順で作成した 2 つのクラスの後、同じモジュールの Commerce.Triggers.Samples 内にある同じファイルに、次のコードをコピーします。
 
-        /*** Implementation of a post log on trigger that is used to perform conditional registration of other triggers.*/
-        export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
-            private static alreadyRegistered: boolean = false;
-            /*** Executes the trigger.*/
-            public execute(options: IPostLogOnTriggerOptions): IVoidAsyncResult {
-                // Check to ensure the triggers have not already been registered.
-                if (!ConditionalRegistrationPostLogOnTrigger.alreadyRegistered) {
-                    this.performRegistration();
-                    // Set already registered field to true to prevent duplicate trigger registration.
-                    ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
-                }
-                return VoidAsyncResult.createResolved();
+    ```typescript
+    /*** Implementation of a post log on trigger that is used to perform conditional registration of other triggers.*/
+    export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
+        private static alreadyRegistered: boolean = false;
+        /*** Executes the trigger.*/
+        public execute(options: IPostLogOnTriggerOptions): IVoidAsyncResult {
+            // Check to ensure the triggers have not already been registered.
+            if (!ConditionalRegistrationPostLogOnTrigger.alreadyRegistered) {
+                this.performRegistration();
+                // Set already registered field to true to prevent duplicate trigger registration.
+                ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
             }
+            return VoidAsyncResult.createResolved();
+        }
 
-            /*** Perform the conditional registration of triggers.*/
-            private performRegistration(): void {
-            var conditionIsMet: boolean = true;
+        /*** Perform the conditional registration of triggers.*/
+        private performRegistration(): void {
+        var conditionIsMet: boolean = true;
+        TriggerManager.instance.register(
+            CancelableTriggerType.PreVoidProducts,
+            new PreVoidProductsTrigger());
+        if (conditionIsMet) {
             TriggerManager.instance.register(
-                CancelableTriggerType.PreVoidProducts,
-                new PreVoidProductsTrigger());
-            if (conditionIsMet) {
-                TriggerManager.instance.register(
-                CancelableTriggerType.PreReturnTransaction,
-                new PreConfirmReturnTransactionTrigger());
-        }}}
+            CancelableTriggerType.PreReturnTransaction,
+            new PreConfirmReturnTransactionTrigger());
+    }}}
+    ```
 
 4.  DOMCOntentLoaded イベント中に PostLogon トリガーを登録します。 Commerce.Triggers.Samples モジュール内のすべてのクラスの外に、次のコードをコピーします。
 
-        /**
-        * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
-        * @remarks These trigger types include: ApplicationStart, PreLogOn, and PostLogOn.
-        */
-        document.addEventListener("DOMContentLoaded", function (): void {
-            Commerce.Triggers.TriggerManager.instance.register(
-            Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
-            new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
-        });
+    ```typescript
+    /**
+    * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
+    * @remarks These trigger types include: ApplicationStart, PreLogOn, and PostLogOn.
+    */
+    document.addEventListener("DOMContentLoaded", function (): void {
+        Commerce.Triggers.TriggerManager.instance.register(
+        Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
+        new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
+    });
+    ```
 
 ## <a name="build-the-project"></a>プロジェクトの構築
 1.  プロジェクトをコンパイル、およびリビルドします。

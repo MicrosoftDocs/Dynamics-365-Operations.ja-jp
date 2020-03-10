@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f8e088fa470ec64c5a06c52598b3e7b59d871e0a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: cdb9307abe91ca44e539a0413a7fcf4e6c145a2e
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004571"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070441"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -65,25 +65,25 @@ Hardware Station は、プリンター、キャッシュ ドロワー、スキ�
 -   新しい **CashDispenser** コントローラーは、**ApiController** と **IHardwareStationController** を拡張する必要があります。
 -   ここの **エクスポート** 属性文字列は、このコントローラーが使用されるデバイスを指定します: \[Export("CASHDISPENSER", typeof(IHardwareStationController))\]
 
-<!-- -->
-
-    namespace Contoso
+```csharp
+namespace Contoso
+{
+    namespace Commerce.HardwareStation.CashDispenserSample
     {
-        namespace Commerce.HardwareStation.CashDispenserSample
-        {
-            using System;
-            using System.Composition;
-            using System.Web.Http;
-            using Microsoft.Dynamics.Commerce.HardwareStation;
-            using Microsoft.Dynamics.Retail.Diagnostics;
-            /// <summary>
-            /// Cash dispenser web API controller class.
-            /// </summary>
-            [Export("CASHDISPENSER", typeof(IHardwareStationController))]
-            public class CashDispenserController : ApiController, IHardwareStationController
-            { 
-                // Add your controller code here
-            }
+        using System;
+        using System.Composition;
+        using System.Web.Http;
+        using Microsoft.Dynamics.Commerce.HardwareStation;
+        using Microsoft.Dynamics.Retail.Diagnostics;
+        /// <summary>
+        /// Cash dispenser web API controller class.
+        /// </summary>
+        [Export("CASHDISPENSER", typeof(IHardwareStationController))]
+        public class CashDispenserController : ApiController, IHardwareStationController
+        { 
+            // Add your controller code here
+        }
+```
 
 ### <a name="scenario-2-adding-a-new-device-type-for-an-existing-device"></a>シナリオ 2: 既存のデバイスの新しいデバイス タイプを追加する
 
@@ -92,30 +92,30 @@ Hardware Station は、プリンター、キャッシュ ドロワー、スキ�
 -   **エクスポート** 属性文字列は、このコントローラーが使用されるデバイスを指定します: \[Export("MSR", typeof(IHardwareStationController))\]
 -   MSR に対して複数のコントローラーが存在するため、ハードウェア ステーションは構成ファイルを使用して実行時にどの実装を使用するかを決定します。 詳細については、この記事の後半の "Hardware Station の拡張機能コンフィギュレーション" セクションを参照してください。
 
-<!-- -->
-
-    namespace Contoso
+```csharp
+namespace Contoso
+{
+    namespace Commerce.HardwareStation.RamblerService
     {
-        namespace Commerce.HardwareStation.RamblerService
+        using System;
+        using System.Composition;
+        using System.Threading.Tasks;
+        using System.Web.Http;
+        using System.Web.Http.Controllers;
+        using Microsoft.Dynamics.Commerce.HardwareStation;
+        using Microsoft.Dynamics.Commerce.HardwareStation.DataEntity;
+        using Microsoft.Dynamics.Commerce.HardwareStation.Models;
+        using Microsoft.Dynamics.Retail.Diagnostics;
+        /// <summary>
+        /// MSR device web API controller class.
+        /// </summary>
+        [Export("MSR", typeof(IHardwareStationController))]
+        [Authorize]
+        public class AudioJackMSRController : ApiController, IHardwareStationController
         {
-            using System;
-            using System.Composition;
-            using System.Threading.Tasks;
-            using System.Web.Http;
-            using System.Web.Http.Controllers;
-            using Microsoft.Dynamics.Commerce.HardwareStation;
-            using Microsoft.Dynamics.Commerce.HardwareStation.DataEntity;
-            using Microsoft.Dynamics.Commerce.HardwareStation.Models;
-            using Microsoft.Dynamics.Retail.Diagnostics;
-            /// <summary>
-            /// MSR device web API controller class.
-            /// </summary>
-            [Export("MSR", typeof(IHardwareStationController))]
-            [Authorize]
-            public class AudioJackMSRController : ApiController, IHardwareStationController
-            {
-                // Add controller implementation here
-            }
+            // Add controller implementation here
+        }
+```
 
 ## <a name="hardware-station-extensibility-configuration"></a>Hardware Station 拡張機能コンフィギュレーション
 ### <a name="configuration-for-iis-hosted-hardware-station"></a>IIS でホストされているハードウェア ステーションのコンフィギュレーション

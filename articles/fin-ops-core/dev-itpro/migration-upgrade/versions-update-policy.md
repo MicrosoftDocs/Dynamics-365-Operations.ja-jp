@@ -3,7 +3,7 @@ title: ソフトウェアのライフサイクル ポリシーおよびクラウ
 description: このトピックでは、Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2460e43375e99df2165b09e16dab85b92e25bcfd
-ms.sourcegitcommit: c6f6408d5e56e6c827d3e29706773e65dc6c01e0
+ms.openlocfilehash: 08ce1dad5968bd45dffd41e9c659fca03e36f97d
+ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "2974935"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3085855"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -96,7 +96,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 
 | **リリース**                                                                                                                                                  | **ビルド番号** | **在庫状態** | **有効期限**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
-| [プラットフォーム update 31](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31)               | 7.0.5457        | 2019 年 1 月   | 該当なし (継続的に更新) |
+| [プラットフォーム update 31](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31)               | 7.0.5457        | 2020 年 1 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 30](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-30)               | 7.0.5407        | 2019 年 11 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 29](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29)               | 7.0.5372        | 2019 年 10 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 28](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28)               | 7.0.5314        | 2019 年 7 月   | 該当なし (継続的に更新) |
@@ -117,7 +117,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 | [プラットフォーム update 7](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-7)                     | 7.0.4542.16189   | 2017 年 5 月         | 2018 年 5 月                   |
 | [プラットフォーム update 6](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-6)                     | 7.0.4509.16180   | 2017 年 4 月       | 2018 年 4 月                 |
 | [プラットフォーム update 5](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-5)                     | 7.0.4475.16165   | 2017 年 3 月       | 2018 年 3 月                 |
-| [プラットフォーム update 4](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-4)                     | 7.0.4425.16161   | 2017 年 2月    | 2018 年 2 月              |
+| [プラットフォーム update 4](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-4)                     | 7.0.4425.16161   | 2017 年 2 月    | 2018 年 2 月              |
 | [プラットフォーム update 3](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-3)                     | 7.0.4307.16141   | 2016 年 11 月    | 2017 年 11 月              |
 | [プラットフォーム update 2](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-2)                     | 7.0.4230.16130   | 2016 年 8 月      | 2017 年 8 月                |
 | [プラットフォーム update 1](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016) | 7.0.4127.16103   | 2016 年 5 月         | 2017 年 5 月                   |

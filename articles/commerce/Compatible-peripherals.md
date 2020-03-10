@@ -1,6 +1,6 @@
 ---
 title: Retail の周辺機器互換性
-description: このトピックでは、Dynamics 365 Commerce との互換性のテストが完了している Retail 周辺機器を示します。
+description: このトピックでは、Dynamics 365 Commerce との互換性のテストが完了している周辺機器を示します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 10/08/2017
@@ -19,18 +19,18 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e993567a5bf69df05a03e45c2cd9c2cd31207b16
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 5366d5f6ea93bf26bdcc173403e55f389ba87ebd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029822"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057658"
 ---
 # <a name="peripheral-compatibility-for-retail"></a>Retail の周辺機器互換性
 
 [!include [banner](../includes/banner.md)]
 
-このページに挙げられたデバイスは、[小売の周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator)を使用して Dynamics 365 Commerce との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
+このページに挙げられたデバイスでは、[コマースの周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator) を使用して Dynamics 365 Commerce との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
 
 ## <a name="compatible-devices-by-type"></a>タイプ別の互換性のあるデバイス
 
@@ -63,15 +63,15 @@ ms.locfileid: "3029822"
 
 ## <a name="device-compatiblity-testing"></a>デバイス互換性テスト
 
-デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[小売の周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator)を参照してください。
+デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator) を参照してください。
 
 デバイスが正常にテストされたら、互換性を確認するため、テスト結果を <drpc@microsoft.com> に送信する必要があります。 このシミュレーターは、Dynamics 365 内のハードウェア プロファイルのダウンロード リンク経由で取得することができます。 デバイス メーカーは、Dynamics 365 にアクセスできない可能性があります。 周辺機器シミュレーターのコピーを入手するには、<drpc@microsoft.com> にお問い合わせください。
 
-実稼働環境に送られるすべての Retail 周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定がテストされていることを示している場合でも、UAT テストの一環としてテストを行う必要があります。 その場合は、テスト結果は Microsoft に送信する必要はありません。 他の成功したテスト結果についてはすべて、互換性のあるデバイスの一覧を作成できるように <drpc@microsoft.com> に送信することをお勧めします。
+実稼働環境に送られるすべての周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定がテストされていることを示している場合でも、UAT テストの一環としてテストを行う必要があります。 その場合は、テスト結果は Microsoft に送信する必要はありません。 他の成功したテスト結果についてはすべて、互換性のあるデバイスの一覧を作成できるように <drpc@microsoft.com> に送信することをお勧めします。
 
 ## <a name="supported-devices"></a>サポート対象デバイス
 
-既に互換性がテストされて Microsoft に結果が送信されたデバイスのみ、新しい実装でサポートされます。 これは、新しい実装が適切にテストされ、以前にテストされたデバイスのライブラリを作成するために必要です。 以前は、Microsoft がデバイスで内部テストを実施し、結果が [Retail 周辺機器の概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-peripherals-overview)などの適切な場所に掲載されていました。 市場のデバイスにはさまざまなバリエーションがあるため、このプロセスでは対応できません。 そのため、今後は、テストの大半をパートナー、お客様、および (最も重要な点として) デバイスの製造元が行う必要があります。 原則的には、パートナーやお客様が互換性のあるデバイスの一覧に基づいて周辺機器を選択できるように、デバイスは製造元により事前にテストされます。
+既に互換性がテストされて Microsoft に結果が送信されたデバイスのみ、新しい実装でサポートされます。 これは、新しい実装が適切にテストされ、以前にテストされたデバイスのライブラリを作成するために必要です。 以前は、Microsoft がデバイスで内部テストを実施し、結果が [周辺機器](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-peripherals-overview) などの適切な場所に掲載されていました。 市場のデバイスにはさまざまなバリエーションがあるため、このプロセスでは対応できません。 そのため、今後は、テストの大半をパートナー、お客様、および (最も重要な点として) デバイスの製造元が行う必要があります。 原則的には、パートナーやお客様が互換性のあるデバイスの一覧に基づいて周辺機器を選択できるように、デバイスは製造元により事前にテストされます。
 
 ## <a name="disclaimer"></a>免責事項
 

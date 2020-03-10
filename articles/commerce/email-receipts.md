@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2c06e72f22dcc65909d58cf61c86c56b912690ad
-ms.sourcegitcommit: c0edf2f59d40bda784ea2472c21293c4a450770e
+ms.openlocfilehash: 8be7e17a2e2c65c74a62fd69f6663ffd1a7bb410
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029205"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070773"
 ---
 # <a name="send-email-receipts-from-modern-pos-mpos"></a>Modern POS (MPOS) からの電子メール レシートの送信
 
@@ -77,7 +77,7 @@ Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトラン�
 
 ### <a name="set-up-an-email-template-for-receipts"></a>受信者の電子メール テンプレートを設定
 
-1. **組織管理 &gt; 設定 &gt; 電子メール テンプレート**の順に移動します。
+1. **組織管理 &gt; 設定 &gt; 組織の電子メール テンプレート**の順に移動します。
 2. **Ctrl+N** キーを押して新しいテンプレートを作成します。
 3. **概要**タブで、次のフィールドを入力します。
 

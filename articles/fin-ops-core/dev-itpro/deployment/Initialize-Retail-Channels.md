@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e9080af24844a5bf1da92b4f87b0193219698e89
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 82b5e93052e0f55295b72d1b4bdfba0290560e3b
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024649"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057975"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
@@ -31,7 +31,7 @@ ms.locfileid: "3024649"
 このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
 
 > [!IMPORTANT]
-> クラウド環境で Retail チャネルの機能を利用しているお客様の場合は、業務の継続的なサポートを徹底するにあたり、2020 年 1月 31日 までに Retail チャネルを更新して Retail Cloud Scale Unit を ご利用頂くよう推奨します。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
+> クラウドで Retail チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、2020 年 1 月 31 日までに Cloud Scale Unit を使用する Retail チャネルの更新を行う必要があります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -50,12 +50,12 @@ ms.locfileid: "3024649"
 
 ## <a name="configure-retail-channels-to-use-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit を使用する小売チャネルの構成
 
-1. Retail Cloud Scale Unit が展開された後で、本社のクライアントで **Retail > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース** の順に移動して、この Retail Cloud Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
+1. Retail Cloud Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース**の順に移動して、この Retail Cloud Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
 2. 各小売りチャンネルに移動して、対応する Retail Cloud Scale Unit のチャンネル プロファイルを選択します。
 
 ### <a name="database-refresh-and-cloud-scale-units"></a>データベースの更新とクラウド スケール ユニット
 
-始める前に [Retail 機能を使用する環境でデータベースを更新した後に完了する手順](../database/database-refresh.md) について慣れていることを確認して下さい。
+始める前に [コマース機能を使用する環境でデータベースを更新した後に完了する手順](../database/database-refresh.md) に精通していることを確認して下さい。
 
 データベース更新の一部として (チャネル データベース フォームで) スケール ユニット チャネル データベース レコードを環境を越えて移動できません。 これはレコードが環境固有のコンフィギュレーションを表すためです。
 
@@ -64,7 +64,7 @@ ms.locfileid: "3024649"
 スケール ユニットがすでに存在するのと同じバージョンの展開を選択することで、コンポーネントを変更することなくスケール ユニットの再配置を発行できます。 これは次の手順により LCS で行うことができます:
 
 1. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
-2. [小売設定の配置] ページで再配置するスケール ユニットを選択します。
+2. 設定の配置ページで再配置するスケール ユニットを選択します。
 3. スケール ユニットの操作メニューで **更新** を選択します。
 4. スライダーの **バージョンの選択** のドロップダウンで **バージョンの指定** オプションを選択します
 5. **バージョンの指定** の下のテキスト ボックスに、スケール ユニットの **現在のバージョン** ラベルの横に表示されたバージョンを入力します。
@@ -80,18 +80,18 @@ ms.locfileid: "3024649"
 
 展開する追加の RCSU ごとに、チャネル データ ベースグループを 個別に作成することもお勧めします。 これを行うには、次の手順に従います。
 
-1. 小売本社で、**Retail > Retail Headquarters > Retail スケジューラーの設定 > チャンネル データベース グループ** の順に移動します。
+1. コマース バックオフィスで、**Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャネル データベース グループ**の順に移動します。
 2. 新しいチャネル データベース グループを作成します。
-3. **Retail > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース** フォームの順に移動し、新しく作成された RCSU に対応するチャンネル データベースを選択します。
+3. **Retail とコマース> Retail Headquarters > Retail スケジューラの設定 > チャネル データベース** フォームの順に移動し、新しく作成された RCSU に対応するチャネル データベースを選択します。
 4. **編集** を選択して、新しいチャンネル データベース グループを選択します。
 5. **保存** を選択します。
 6. 選択したチャンネル データベースに対して **完全データ同期の実行** を選択します。
 
-## <a name="additional-considerations-if-you-initialize-cloud-hosted-retail-channel-components-in-an-existing-environment"></a>既存の環境でクラウドにホストされた Retail チャネル コンポーネントを初期化する場合の追加の考慮事項
+## <a name="additional-considerations-if-you-initialize-cloud-hosted-commerce-channel-components-in-an-existing-environment"></a>既存の環境でクラウドにホストされたコマース チャネル コンポーネントを初期化する場合の追加の考慮事項
 
-環境でクラウドでホストされている Retail チャネル コンポーネントを既に使用している場合、Retail Cloud Scale Unit の初期化はそれらのコンポーネントの更新時にダウンタイムを減らすのに役立ちます。 Retail Cloud Scale Unit の初期化を行う前に、追加の計画が必要です。
+環境でクラウドでホストされているコマース チャネル コンポーネントを既に使用している場合、Retail Cloud Scale Unit の初期化はそれらのコンポーネントの更新時にダウンタイムを減らすのに役立ちます。 Retail Cloud Scale Unit の初期化を行う前に、追加の計画が必要です。
 
-クラウドでホストされた小売チャネル コンポーネントを使用する環境で最初のクラウド スケール ユニットを初期化するときに、初期化プロセスではクラウドでホストされたチャネル コンポーネントに関連付けられているチャネルを最初のスケール ユニットに移行します。 店舗スケール ユニットに関連付けられたチャンネルは影響を受けません。
+クラウドでホストされたコマース チャネル コンポーネントを使用する環境で最初のクラウド スケール ユニットを初期化するときに、初期化プロセスではクラウドでホストされたチャネル コンポーネントに関連付けられているチャネルを最初のスケール ユニットに移行します。 店舗スケール ユニットに関連付けられたチャンネルは影響を受けません。
 
 移行プロセスはチャネルに対して透過的です。 スケール ユニットの初期化が始まった後、次の操作が自動的に実行されます。
 
@@ -112,7 +112,7 @@ ms.locfileid: "3024649"
 
 初期化期間中に実行される内容を以下に示します。
 
-- POS オフライン機能を有効にしない限り、クラウドでホストされた小売チャネルは機能しません。
+- POS オフライン機能を有効にしない限り、クラウドでホストされたコマース チャネルは機能しません。
 - オフライン機能がオンになっている POS デバイスは機能が制限されます。
 - Retail サーバーに依存しているすべての電子商取引クライアントが中断されます。
 - Retail Store Scale Unit でホストされているチャネルは影響されません。

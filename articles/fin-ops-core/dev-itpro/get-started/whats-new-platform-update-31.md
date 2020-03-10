@@ -3,7 +3,7 @@ title: Finance and Operations アプリのプラットフォーム更新プロ�
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされている機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: 3ccb24d2fb11c5ea982109b2ea19fc3fa3f3fa15
-ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
+ms.openlocfilehash: d98733d01ca7373ab2bd9bae48206f82a1d91f78
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2982292"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070434"
 ---
 # <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42a495590f177452a737a3c20fd062ffe2a424d
-ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
+ms.openlocfilehash: f4d4fa5520cfc35f0671a89fd107629d4b57fca1
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "2947494"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080786"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -291,7 +291,7 @@ ms.locfileid: "2947494"
 
 **例: DimensionDefaultFacade::serviceMergeDefaultDimensions ()**
 
-```
+```xpp
 public static DimensionDefault serviceMergeDefaultDimensions(
     DimensionDefault _value1,
     DimensionDefault _value2,
@@ -305,7 +305,7 @@ ServiceReplaceAttributeValue **()** APIは、1つの分析コード値をある�
 
 **例: DimensionDefaultFacade::serviceReplaceAttributeValue ()** 
 
-```
+```xpp
 public static DimensionDefault serviceReplaceAttributeValue(
     DimensionDefault _target,
     DimensionDefault _source,
@@ -318,7 +318,7 @@ public static DimensionDefault serviceReplaceAttributeValue(
 
 **例: DimensionDefaultFacade::serviceReplaceAttributeValue ()** 
 
-```
+```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(
     DimensionDefault _defaultDimension1,
     DimensionDefault _defaultDimension2,
@@ -334,7 +334,7 @@ public static DimensionDefault serviceMergeValidDefaultDimensions(
 
 **例: LedgerDimensionFacade.serviceCreateLedgerDimension()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimension(
     RecId            _ledgerDimensionId,
     DimensionDefault _dimensionDefault1 = 0,
@@ -349,7 +349,7 @@ public static LedgerDimensionAccount serviceCreateLedgerDimension(
 
 **例: LedgerDimensionFacade.serviceCreateLedgerDimensionForType()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
     LedgerDimensionType _ledgerDimensionType,
     LedgerDimensionBase _ledgerDimensionId,
@@ -364,7 +364,7 @@ public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
 
 **例: LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
     DimensionDefault    _defaultDimension,
     LedgerDimensionBase _ledgerDimensionId)
@@ -376,7 +376,7 @@ public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
 
 **例: LedgerDimensionFacade::serviceLedgerDimensionFromLedgerDims()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceLedgerDimensionFromLedgerDims(
     LedgerDimensionBase _ledgerDimensionId1,
     LedgerDimensionBase _ledgerDimensionId2 = 0,
@@ -391,7 +391,7 @@ public static LedgerDimensionAccount serviceLedgerDimensionFromLedgerDims(
 
 **例: LedgerDimensionFacade::serviceMergeLedgerDimensions()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceMergeLedgerDimensions(
     LedgerDimensionBase _ledgerDimension1,
     LedgerDimensionBase _ledgerDimension2,
@@ -404,6 +404,6 @@ public static LedgerDimensionBase serviceMergeLedgerDimensions(
 
 **例: LedgerDimensionFacade::serviceCreateLedgerDimFromLedgerDim()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimFromLedgerDim(LedgerDimensionAccount _ledgerDimension)
 ```

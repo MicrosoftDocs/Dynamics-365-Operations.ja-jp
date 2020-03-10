@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: a823ea5c0033059b3b78ab7d32852a140388e531
-ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
+ms.openlocfilehash: e9cac025feb9e43a5ded4f398326bd3fdbe3b844
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2830222"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081983"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントと Microsoft Power Automate
 
@@ -77,7 +77,7 @@ ms.locfileid: "2830222"
 
 14.  メッセージの本文および、必須項目を入力します。
 
-    <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
+     <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
 
 15. フローを保存します。
 

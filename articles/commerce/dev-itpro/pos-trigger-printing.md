@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: af42ef0480d5a5c61cb69841dc161cabe0a06caa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 49763cb6b9979fd0b9249527cc598804eb9239af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004654"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070780"
 ---
 # <a name="modern-pos-mpos-triggers-and-printing"></a>Modern POS (MPOS) のトリガーと印刷
 
@@ -668,7 +668,7 @@ ms.locfileid: "3004654"
 14. また、**…\\RetailSDK\\参照**フォルダーでアセンブリを貼り付けます。
 15. **commerceruntime.ext.config**ファイルを開き、\<構成\>セクションでカスタム アセンブリ情報を追加します。
 
-    ```
+    ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
     ```
 

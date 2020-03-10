@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 786c7a29faf0c8735d0b55be94497cecb96e370f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ccb4dcc55ec0a0637de62b6d6a6a4d7b5d702b40
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004660"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057683"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
@@ -52,7 +52,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 4. **POSAPIExtension** の下で **TriggersHandlers** という名前の新しいフォルダーを作成します。
 5. **TriggersHandlers** フォルダーに、新しい Typescript ファイルを追加し、**PreEndTransactionTrigger.ts** と名前を付けます。
 6. 次の **import** 明細書を追加して、関連するエンティティおよびコンテキストをインポートします。
-   ```Typescript
+   ```typescript
    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
    import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -68,11 +68,11 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
    ```
 7. **PreEndTransactionTrigger** と呼ばれる新しいクラスを作成し、**PreEndTransactionTrigger** から拡張します。
-    ```Typescript
+    ```typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
     ```
 8. クラス内で、属性名と値の例に対して次の変数を宣言します。
-    ```Typescript
+    ```typescript
     private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
     private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
     private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
@@ -82,7 +82,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
     ```
 9. トリガー**実行**メソッドを実装し、既存の POS API を呼び出します。 **execute** メソッドは、API を呼び出して現在の買い物カゴと顧客を取得し、買い物カゴに属性を保存します。
-    ```Typescript
+    ```typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
 
@@ -173,7 +173,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 
     全体的なコードは次の例のようになります。 
     
-    ```Typescript
+    ```typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
     import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -300,7 +300,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 10. 新しい json ファイルを POSAPIExtension フォルダーの下に作成し、manifest.json という名前を付けます。
 
 11. manifest.json ファイルに、次のコードをコピーして貼り付けます。 このコードをコピーする前に、既定で生成されたコードを削除してください。
-    ```Typescript
+    ```typescript
     {
 
         "$schema": "../manifestSchema.json",
@@ -320,7 +320,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
     }
     ```
 12. **extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**POSAPIExtension** サンプルで更新し、実行時に POS にこの拡張機能が含まれるようにします。
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -342,7 +342,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
     > SampleExtensions2 と POSAPIExtension の両方をコメント アウトします。
     
     
-    ```Typescript
+    ```typescript
     "exclude": [
 
         "AuditEventExtensionSample",

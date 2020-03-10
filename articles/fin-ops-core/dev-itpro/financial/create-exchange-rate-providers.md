@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40e82485930098ae244f43a35be39d1efb0ecbe0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 53b12228396e8a4e9e1ad461f95b968b57eefd56
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191573"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080761"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -41,7 +41,11 @@ ms.locfileid: "2191573"
 -   **フレームワーク** – プロバイダーからの為替レートの取得および、その為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
 
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
-次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 [![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png)この図に示されているインターフェイスおよびクラスは次のとおりです。
+次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 
+
+[![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png) 
+
+図で表示されるインターフェイスおよびクラスを次に示します。
 
 - **IExchangeRateProvider** – このインタフェースを実装すると、為替レート プロバイダー フレームワークがクラスを為替レート プロバイダーとして認識できるようになります。
 - **IExchangeRateProviderFrameworkFactory** – このインターフェイスにより、為替レート プロバイダーは、図の中のいくつかのインターフェイスを表す様々なタイプのプロバイダー フレームワーク クラスを作成することができます。
@@ -60,60 +64,70 @@ ms.locfileid: "2191573"
 
 1.  自身の開発モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
 
-        using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
-        using Microsoft.Dynamics.Currency.Instrumentation;
-        using System.Collections;
-        /// <summary>
-        /// The <c>ExchangeRateProviderOanda</c> class is an exchange rate provider for OANDA.
-        /// </summary>
-        class ExchangeRateProviderOanda implements IExchangeRateProvider
-        {
-        }
+    ```xpp
+    using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
+    using Microsoft.Dynamics.Currency.Instrumentation;
+    using System.Collections;
+    /// <summary>
+    /// The <c>ExchangeRateProviderOanda</c> class is an exchange rate provider for OANDA.
+    /// </summary>
+    class ExchangeRateProviderOanda implements IExchangeRateProvider
+    {
+    }
+    ```
 
 2.  クラスに、次の定数と変数宣言を追加します。
 
-        private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
-        private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
-        private const str OANDADateFormat = 'yyyy-MM-dd';
-        private const str HttpWebRequestMethod = 'GET';
-        private const str HttpWebRequestContentType = 'application/xml';
-        private const str HttpHeaderAuthorization = 'Authorization';
-        private const str KeyTokenPrefix = 'Bearer ';
-        private const str XPathQuote = '//response/quotes/quote';
-        private const str XPathAverageBid = '//bid';
-        private const str XPathAverageAsk = '//ask';
-        private const str XPathLowBid = '//low_bid';
-        private const str XPathLowAsk = '//low_ask';
-        private const str XPathMidpoint = '//midpoint';
-        private const str XPathDate = '//quote/date';
-        private const str XPathHighBid = '//high_bid';
-        private const str XPathHighAsk = '//high_ask';
-        private const str QuoteParameterAverages = 'averages';
-        private const str QuoteParameterLows = 'lows';
-        private const str QuoteParameterMidPoint = 'midpoint';
-        private const str QuoteParameterHighs = 'highs';
-        IExchangeRateProviderFrameworkFactory factory;
+    ```xpp
+    private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
+    private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
+    private const str OANDADateFormat = 'yyyy-MM-dd';
+    private const str HttpWebRequestMethod = 'GET';
+    private const str HttpWebRequestContentType = 'application/xml';
+    private const str HttpHeaderAuthorization = 'Authorization';
+    private const str KeyTokenPrefix = 'Bearer ';
+    private const str XPathQuote = '//response/quotes/quote';
+    private const str XPathAverageBid = '//bid';
+    private const str XPathAverageAsk = '//ask';
+    private const str XPathLowBid = '//low_bid';
+    private const str XPathLowAsk = '//low_ask';
+    private const str XPathMidpoint = '//midpoint';
+    private const str XPathDate = '//quote/date';
+    private const str XPathHighBid = '//high_bid';
+    private const str XPathHighAsk = '//high_ask';
+    private const str QuoteParameterAverages = 'averages';
+    private const str QuoteParameterLows = 'lows';
+    private const str QuoteParameterMidPoint = 'midpoint';
+    private const str QuoteParameterHighs = 'highs';
+    IExchangeRateProviderFrameworkFactory factory;
+    ```
 
 3.  **get\_Name** メソッドを実装します。 ラベルは、適切な変換を有効にするために使用します。 ユーザーは、プロバイダーのコンフィギュレーション情報を設定すると、ここで提供される名前を変更できます。
 
-        public ExchangeRateProviderName get_Name()
-        {
-            return "@CurrencyExchange:Currency_ConfigField_OandaName";
-        }
+    ```xpp
+    public ExchangeRateProviderName get_Name()
+    {
+        return "@CurrencyExchange:Currency_ConfigField_OandaName";
+    }
+    ```
 
 4.  **get\_Id** メソッドを実装します。 このメソッドは、このプロバイダーを一意に識別するために使用されるグローバル一意識別子 (GUID) を返します。
 
-        public ExchangeRateProviderId get_Id()
-        {
-            return ProviderId;
-        }
+    ```xpp
+    public ExchangeRateProviderId get_Id()
+    {
+        return ProviderId;
+    }
+    ```
 
 5.  **set\_Factory** メソッドを実装します。 為替レート プロバイダー フレームワークは、このメソッドを呼び出して、プロバイダーの **IExchangeRateProviderFrameworkFactory** インターフェイスを実装するオブジェクトを設定します。 このファクトリを使用して、前の図のインターフェイスの一部を表す新しいオブジェクトのインスタンスを作成できます。
 
-        public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
-        {
-            factory = _factory;
-        }
+    ```xpp
+    public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
+    {
+        factory = _factory;
+    }
+    ```
 
 6.  **GetSupportedOptions** メソッドを実装します。 このメソッドは、為替レート プロバイダーは、一部のフレームワーク機能をサポートするかどうかを示します。
 
@@ -121,68 +135,74 @@ ms.locfileid: "2191573"
     -   **fixedBaseIsoCurrency** プロパティを、為替レート サービスから返される為替レートの固定ベース通貨を表す 3 文字の国際標準化機構 (ISO) 通貨コードに設定します。 為替レート サービスが固定基本通貨をサポートしていない場合は、空の文字列を返します。 たとえば、ユーロは固定基本通貨としてよく使用されます。 新しいプロバイダーを作成するときは、正しい値を選択できるように、為替レート サービスをかならず調査してください。
     -   サービスが日付範囲全体を表す単一のレートを返すことができる場合、**singleRateForDateRange** プロパティを **true** に設定します。 たとえば、1 か月の平均為替レートを表す単一の為替レートを返すには、この設定を使用できます。 サービスがこの機能をサポートしていない場合は、このプロパティを **false** に設定します。
 
-    <!-- -->
-
-        public IExchangeRateProviderSupportedOptions GetSupportedOptions()
-        {
-            IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
-            options.set_doesSupportSpecificCurrencyPairs(true);
-            options.set_doesSupportSpecificDates(false);
-            options.set_fixedBaseIsoCurrency('');
-            options.set_singleRateForDateRange(true);
-        return options;
+    ```xpp
+    public IExchangeRateProviderSupportedOptions GetSupportedOptions()
+    {
+        IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
+        options.set_doesSupportSpecificCurrencyPairs(true);
+        options.set_doesSupportSpecificDates(false);
+        options.set_fixedBaseIsoCurrency('');
+        options.set_singleRateForDateRange(true);
+    return options;
+    ```
 
 7.  **GetConfigurationDefaults** メソッドを実装します。 既定のコンフィギュレーションは、為替レート プロバイダの既定コンフィギュレーションの設定を表す名前と値の組です。 これらの設定はプロバイダーが登録されたときに自動的に読み込まれますが、ユーザーは変更できます。 これらの文字列を使用可能な値に変換する場合は、必要な対策を講じてください。 値フィールドは、SQL で暗号化フィールドとして格納されます。 したがって、アプリケーション プログラミング インターフェイス (API) などの機密データはより安全になります。
 
-        public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
-        {
-            IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_ServiceTimeout", '5000');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
-            configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
-            return configurationDefaults;
-        }
+    ```xpp
+    public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
+    {
+        IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_ServiceTimeout", '5000');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
+        return configurationDefaults;
+    }
+    ```
 
 8.  **ValidateConfigurationDetail** メソッドを実装します。 このメソッドにより、為替レート プロバイダーは、**為替レート プロバイダーの構成**ページでユーザーが変更した構成情報を検証できます。
 
-        public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
+    ```xpp
+    public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
+    {
+        boolean result = true;
+        switch (_key)
         {
-            boolean result = true;
-            switch (_key)
-            {
-                case "@CurrencyExchange:Currency_ConfigField_DecimalPlaces":
-                    int decimals = str2Int(_value);
-                    if ((decimals > 12) || (decimals < 1))
-                    {
-                        CurrencyEventSource eventSource = CurrencyEventSource::Log;
-                        eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
-                        error("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
-                        result = false;
-                    }
-                    break;
-                case "@CurrencyExchange:Currency_ConfigField_OandaAPIKey":
-                    if (_value == '')
-                    {
-                        CurrencyEventSource eventSource = CurrencyEventSource::Log;
-                        eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
-                        warning("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
-                    }
-                    break;
-            }
-            return result;
+            case "@CurrencyExchange:Currency_ConfigField_DecimalPlaces":
+                int decimals = str2Int(_value);
+                if ((decimals > 12) || (decimals < 1))
+                {
+                    CurrencyEventSource eventSource = CurrencyEventSource::Log;
+                    eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
+                    error("@CurrencyExchange:Currency_ConfigMessage_DecimalPlacesInvalid");
+                    result = false;
+                }
+                break;
+            case "@CurrencyExchange:Currency_ConfigField_OandaAPIKey":
+                if (_value == '')
+                {
+                    CurrencyEventSource eventSource = CurrencyEventSource::Log;
+                    eventSource.ImportExchangeRateMark("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
+                    warning("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
+                }
+                break;
         }
+        return result;
+    }
+    ```
 
 9.  **EnumNameForLookup** メソッドを実装します。 このメソッドは、為替レート プロバイダーが特定の **ExchangeRateProviderPropertyKey** キーを参照できるようにします。 適切なキーに対して列挙された既存の型の名前を返します。 この機能が必要でない場合は、空の文字列を返します。
 
-        public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
+    ```xpp
+    public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
+    {
+        if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
         {
-            if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
-            {
-                return enumStr(ExchangeRateProviderOANDAQuoteType);
-            }
-            return '';
+            return enumStr(ExchangeRateProviderOANDAQuoteType);
         }
+        return '';
+    }
+    ```
 
 10. **GetExchangeRates** メソッドを実装します。 このメソッドは、構成情報と、**IExchangeRateRequest** インターフェイスを使用して、交換レート サービスを呼び出すとともに、**IExchangeRateResponse** クラスの適切なインスタンスを返します。 このメソッドを記述するときは、以下の重要な点を考慮します。
 
@@ -195,8 +215,7 @@ ms.locfileid: "2191573"
     -   為替レートが返されるときは、**IExchangeRateRequest** クラスのインスタンスが提供する日付ではなく、為替レート サービスが提供する日付を常に使用します。 この方法では、為替レート サービスが予期されていない日付のレートを返す場合があるため、返される為替レートが正しい日付に関連付けられていることを保証できます。 たとえば、将来の日付に対して為替レートが要求されると、一部のプロバイダーは、エラーをスローしたり何も返さない代わりに、最新の為替レートを返します。
     -   為替レート サービスからの為替レートを取得するときにエラーが発生する場合は、カスタム エラー メッセージをスローしないようにします。 このフレームワークは、予想される通貨ペアをプロバイダーから取得できないという一般的なエラーメッセージを投げて問題があることをユーザーに警告します。 その他のエラーのログを記録する必要がある場合、**CurrencyEventSource** を使用します。 例については、次のコードで **catch** ステートメントおよび **oandaKey** 変数に対する **IF** 条件を参照してください。。
 
-    <!-- -->
-
+        ```xpp
         public IExchangeRateResponse GetExchangeRates(IExchangeRateRequest _request, IExchangeRateProviderConfig _config)
         {
             System.Exception exception;
@@ -322,114 +341,117 @@ ms.locfileid: "2191573"
             }
             return response;
         }
+        ```
 
 11. 次のヘルパー メソッドを実装します。 これらのメソッドはこの例に固有のものであり、すべてのプロバイダーに必須ではありません。
 
-        private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
+    ```xpp
+    private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
+    {
+        ExchangeRateProviderOANDAQuoteType quoteType = 
+            str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
+        str quoteTypeParameter;
+        switch (quoteType)
         {
-            ExchangeRateProviderOANDAQuoteType quoteType = 
-                str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
-            str quoteTypeParameter;
-            switch (quoteType)
-            {
-                case ExchangeRateProviderOANDAQuoteType::AverageAsk:
-                case ExchangeRateProviderOANDAQuoteType::AverageBid:
-                    quoteTypeParameter = QuoteParameterAverages;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowAsk:
-                case ExchangeRateProviderOANDAQuoteType::LowBid:
-                    quoteTypeParameter = QuoteParameterLows;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::MidPoint:
-                    quoteTypeParameter = QuoteParameterMidPoint;
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighAsk:
-                case ExchangeRateProviderOANDAQuoteType::HighBid:
-                    quoteTypeParameter = QuoteParameterHighs;
-                    break;
-            }
-            return quoteTypeParameter;
+            case ExchangeRateProviderOANDAQuoteType::AverageAsk:
+            case ExchangeRateProviderOANDAQuoteType::AverageBid:
+                quoteTypeParameter = QuoteParameterAverages;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowAsk:
+            case ExchangeRateProviderOANDAQuoteType::LowBid:
+                quoteTypeParameter = QuoteParameterLows;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::MidPoint:
+                quoteTypeParameter = QuoteParameterMidPoint;
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighAsk:
+            case ExchangeRateProviderOANDAQuoteType::HighBid:
+                quoteTypeParameter = QuoteParameterHighs;
+                break;
         }
-        private void readRate(IExchangeRateProviderConfig _config, System.Xml.XmlNode _xmlQuoteNode, List _rates)
+        return quoteTypeParameter;
+    }
+    private void readRate(IExchangeRateProviderConfig _config, System.Xml.XmlNode _xmlQuoteNode, List _rates)
+    {
+        System.Xml.XmlNode xmlRateNode;
+        CurrencyExchangeRate exchangeRate;
+        str value;
+        ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
+        // Find the exchange rate
+        switch (quoteType)
         {
-            System.Xml.XmlNode xmlRateNode;
-            CurrencyExchangeRate exchangeRate;
-            str value;
-            ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteType"));
-            // Find the exchange rate
-            switch (quoteType)
+            case ExchangeRateProviderOANDAQuoteType::AverageBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::AverageAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageAsk);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::LowAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowAsk);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::MidPoint:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathMidpoint);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighBid:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighBid);
+                break;
+            case ExchangeRateProviderOANDAQuoteType::HighAsk:
+                xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighAsk);
+                break;
+        }
+        if (xmlRateNode)
+        {
+            value = xmlRateNode.get_InnerText();
+            exchangeRate = str2num(value);
+            if (exchangeRate)
             {
-                case ExchangeRateProviderOANDAQuoteType::AverageBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::AverageAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathAverageAsk);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::LowAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathLowAsk);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::MidPoint:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathMidpoint);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighBid:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighBid);
-                    break;
-                case ExchangeRateProviderOANDAQuoteType::HighAsk:
-                    xmlRateNode = _xmlQuoteNode.SelectSingleNode(XPathHighAsk);
-                    break;
-            }
-            if (xmlRateNode)
-            {
-                value = xmlRateNode.get_InnerText();
-                exchangeRate = str2num(value);
-                if (exchangeRate)
-                {
-                    _rates.addEnd(exchangeRate);
-                }
+                _rates.addEnd(exchangeRate);
             }
         }
-        private void processResult(IExchangeRateProviderConfig _config, boolean _singleRateForDateRange, System.DateTime _defaultDate, 
-            str _xmlString, List _rates, List _dates)
+    }
+    private void processResult(IExchangeRateProviderConfig _config, boolean _singleRateForDateRange, System.DateTime _defaultDate, 
+        str _xmlString, List _rates, List _dates)
+    {
+        System.Xml.XmlDocument xmlDom = new System.Xml.XmlDocument();
+        System.Xml.XmlNode xmlQuoteNode, xmlDateNode;
+        ValidFromDate exchangeDate;
+        str value;
+        xmlDom.LoadXml(_xmlString);
+        // Find the Quote
+        xmlQuoteNode = xmlDom.SelectSingleNode(XPathQuote);
+        if (xmlQuoteNode)
         {
-            System.Xml.XmlDocument xmlDom = new System.Xml.XmlDocument();
-            System.Xml.XmlNode xmlQuoteNode, xmlDateNode;
-            ValidFromDate exchangeDate;
-            str value;
-            xmlDom.LoadXml(_xmlString);
-            // Find the Quote
-            xmlQuoteNode = xmlDom.SelectSingleNode(XPathQuote);
-            if (xmlQuoteNode)
+            this.readRate(_config, xmlQuoteNode, _rates);
+            // Find the date of the exchange rate.
+            xmlDateNode = xmlQuoteNode.SelectSingleNode(XPathDate);
+            if (xmlDateNode || _singleRateForDateRange)
             {
-                this.readRate(_config, xmlQuoteNode, _rates);
-                // Find the date of the exchange rate.
-                xmlDateNode = xmlQuoteNode.SelectSingleNode(XPathDate);
-                if (xmlDateNode || _singleRateForDateRange)
+                if (xmlDateNode)
                 {
-                    if (xmlDateNode)
+                    value = xmlDateNode.get_InnerText();
+                }    
+                if (value)
+                {
+                    // convert the date from UTC to local timezone.
+                    exchangeDate = System.DateTime::Parse(value, System.Globalization.CultureInfo::get_CurrentUICulture(),
+                        System.Globalization.DateTimeStyles::AssumeUniversal);
+                    if (exchangeDate)
                     {
-                        value = xmlDateNode.get_InnerText();
-                    }    
-                    if (value)
-                    {
-                        // convert the date from UTC to local timezone.
-                        exchangeDate = System.DateTime::Parse(value, System.Globalization.CultureInfo::get_CurrentUICulture(),
-                            System.Globalization.DateTimeStyles::AssumeUniversal);
-                        if (exchangeDate)
-                        {
-                            _dates.addEnd(exchangeDate);
-                        }
-                    }
-                    else if (!value && _singleRateForDateRange)
-                    {
-                        exchangeDate = _defaultDate;
                         _dates.addEnd(exchangeDate);
                     }
                 }
+                else if (!value && _singleRateForDateRange)
+                {
+                    exchangeDate = _defaultDate;
+                    _dates.addEnd(exchangeDate);
+                }
             }
         }
+    }
+    ```
 
 12. **ExchangeRateProviderOanda** クラスをコンパイルします。 プロバイダーは、SysOperation の一部として実行されます。 問題をデバッグするときに、次のフレームワーク クラスおよびメソッドを理解しておくと便利です。
     -   **ExchangeRateProviderFactory.initialize()** - このメソッドは、為替レート プロバイダーのインスタンスを作成し、為替レートの登録またはインポート時に呼び出されます。 プロバイダーにインスタンスが作成されていない場合、ここでデバッグを開始します。

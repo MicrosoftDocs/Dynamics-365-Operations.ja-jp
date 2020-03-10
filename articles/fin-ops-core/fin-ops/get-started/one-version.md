@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c79e98309025c312c1827acf813a36a838e15cb8
-ms.sourcegitcommit: 7a855deed9f95ca2589f38db214890464b2b9061
+ms.openlocfilehash: 4ce09fc234d8ba3aa195ab2a375db0ec5500b562
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951246"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058002"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -54,7 +54,7 @@ ms.locfileid: "2951246"
 
 ### <a name="what-does-the-service-update-contain"></a>サービス更新プログラムには何が含まれていますか?
 
-リリース 8.1 以降では、サービスの更新には、規制の更新を含むサービスの重要な改良であるアプリケーション (財務、レポート、小売を含む) とプラットフォームの変更が含められます。 新しいエクスペリエンスは構成可能になります。 サービス更新プログラムには、下位互換性があります。 この更新プログラムを代表する 1 つのバージョンがあります。
+リリース 8.1 以降では、サービスの更新には、規制の更新を含むサービスの重要な改良であるアプリケーション (財務、レポート、コマースを含む) とプラットフォームの変更が含められます。 新しいエクスペリエンスは構成可能になります。 サービス更新プログラムには、下位互換性があります。 この更新プログラムを代表する 1 つのバージョンがあります。
 
 ### <a name="what-is-a-regulatory-update"></a>規制の更新とは何ですか?
 
@@ -230,36 +230,36 @@ Microsoft は、サービスの終了に達しているバージョンの問題�
 
 最新のアプリケーションにアップグレードする方法については、[最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1)を参照してください。 [8.0 から 8.1 への](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81)更新では、データのアップグレードは不要です。ダウンタイムが大幅に削減されるセルフ サービスの更新になります。
 
-## <a name="retail-service-updates"></a>小売サービスの更新プログラム
+## <a name="commerce-service-updates"></a>コマース サービスの更新
 
-### <a name="what-options-are-available-to-minimize-impact-to-my-retail-cloud-components"></a>Retail クラウド コンポーネントへの影響を最小限に抑えるためにどのオプションを使用できますか?
+### <a name="what-options-are-available-to-minimize-impact-to-my-commerce-cloud-components"></a>コマース クラウド コンポーネントへの影響を最小限に抑えるためにどのオプションを使用できますか?
 
-Retail クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail Cloud Scale Unit (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) サイトにある発行済みのリリース情報を参照してください。
+コマース クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail Cloud Scale Unit (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) サイトにある発行済みのリリース情報を参照してください。
 
-### <a name="will-there-be-options-to-take-individual-hotfixes-for-my-retail-solution-components"></a>Retail ソリューション コンポーネントの個別の修正プログラムを取得するオプションはありますか?
+### <a name="will-there-be-options-to-take-individual-hotfixes-for-my-commerce-solution-components"></a>コマース ソリューション コンポーネントの個別の修正プログラムを取得するオプションはありますか?
 
-Retail コンポーネントのすべての修正プログラムは累積的です。
+コマース コンポーネントのすべての修正プログラムは累積的です。
 
 ### <a name="what-are-the-maintenance-downtime-requirements-that-may-impact-channel-operations"></a>チャンネル工程に影響を与える可能性のある保守ダウンタイム要件は何ですか?
 
-冗長性の業務ニーズがある小売業者のため、Modern POS オフライン機能では、インターネットから切断中またはクラウド環境の更新中にコア Retail POS 処理を使用できます。 Retail Store Scale Unit を運用している店舗では、サポート クラウド メンテナンス期間中もコア POS 処理のサポートを伴う処理を継続します。 詳細については、[オンラインおよびオフライン販売時点管理 (POS) 処理](../../../retail/pos-operations.md)を参照してください。
+冗長性の業務ニーズがある小売業者のため、Modern POS オフライン機能では、インターネットから切断中またはクラウド環境の更新中にコア POS 処理を使用できます。 Commerce Scale Unit を運用している店舗では、サポート クラウド メンテナンス期間中もコア POS 処理のサポートを伴う処理を継続します。 詳細については、[オンラインおよびオフライン販売時点管理 (POS) 処理](../../../retail/pos-operations.md)を参照してください。
 
 ### <a name="when-will-i-need-to-update-my-in-store-components"></a>店舗内コンポーネントを更新する必要があるのはいつですか?
 
 店舗内のすべてのコンポーネントは、サポートを維持するために、1 年以内にリリースされたソフトウェアを実行している必要があります。 ユーザーには、自己ホスト コンポーネントを更新し (店舗かプライベートで管理するデータ センターにインストールされているコンポーネントなど)、これらのコンポーネントのインストールされているバージョンが積極的にサポートされていることを確認する責任があります。
 
-### <a name="will-there-continue-to-be-backward-compatibility-for-the-in-store-retail-components"></a>店舗内小売コンポーネントの下位互換性は続行されますか?
+### <a name="will-there-continue-to-be-backward-compatibility-for-the-in-store-components"></a>店舗内コンポーネントの下位互換性は続行されますか?
 
-クラウドにホストされているコンポーネントの更新では、そのバージョンのリリース日から 12 か月間、小売業者によって自己ホストされるコンポーネント バージョンとの下位互換性が保持され続けます (店舗またはプライベート データ センターにインストールされているコンポーネントなど - Modern Point of Sale、Retail Store Scale Unit、Hardware Station)。 自己ホストされているコンポーネントは、クラウドでホストされているコンポーネントと同時に更新する必要はなく、独立したリズムで更新できるため、店舗に更新を展開する時間があります。
+クラウドにホストされているコンポーネントの更新では、そのバージョンのリリース日から 12 か月間、小売業者によって自己ホストされるコンポーネント バージョンとの下位互換性が保持され続けます (店舗またはプライベート データ センターにインストールされているコンポーネントなど - Modern Point of Sale、Commerce Scale Unit、Hardware Station)。 自己ホストされているコンポーネントは、クラウドでホストされているコンポーネントと同時に更新する必要はなく、独立したリズムで更新できるため、店舗に更新を展開する時間があります。
 
 ### <a name="what-options-are-available-for-updating-in-store-components-across-my-organization"></a>組織全体で店舗内コンポーネントを更新するためにどのようなオプションを使用できますか?
 
 ユーザーは、店舗ごとに手動で自己ホストされているコンポーネントを更新するか、Microsoft System Center Configuration Manager、Microsoft Intune などの一括更新ツールを使用するかを選択できます。
 
-### <a name="what-options-do-i-have-to-slowly-enable-new-functionality-across-my-retail-channels"></a>Retail チャネル全体で新しい機能を徐々に有効にするどのようなオプションがありますか?
+### <a name="what-options-do-i-have-to-slowly-enable-new-functionality-across-my-channels"></a>チャネル全体で新しい機能を徐々に有効にするどのようなオプションがありますか?
 
 Microsoft では、店舗、デバイス、およびユーザー全体で機能拡張を徐々に展開して有効にするいくつかのメカニズムを提供しています。
 
 - **画面レイアウト デザイナー**: POS のほとんどのビジュアル要素は、顧客組織の管理ユーザーによって構成され、集中管理されます。 つまり、対応する画面レイアウトに含まれるように明示的に設定されていない限り、新しい POS の操作は POS に自動的に表示されません。 画面レイアウトは、画面レイアウト デザイナーを使用して構成され、店舗または POS デバイスに固有の場合があります。 詳細については、[販売時点管理 (POS) の画面レイアウト](../../../retail/pos-screen-layouts.md)を参照してください。
-- **機能プロファイル、POS のアクセス許可、Retail パラメーター**: POS の機能の重要な要素は通常、ユーザーがコンフィギュレーション可能です。 これは、機能プロファイル、POS のアクセス許可、小売パラメーター、または該当するシナリオにおけるデバイス、レジスター、店舗、またはユーザー レベルの機能の管理を可能にするその他のコントロールを通じて設定できます。
-- **Modern POS および Retail Store Scale Unit**: Modern POS および Retail Store Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。
+- **機能プロファイル、POS のアクセス許可、コマース パラメーター** – POS の機能の重要な要素は通常、ユーザーがコンフィギュレーション可能です。 これは、機能プロファイル、POS のアクセス許可、コマース パラメーター、または該当するシナリオにおけるデバイス、レジスター、店舗、またはユーザー レベルの機能の管理を可能にするその他のコントロールを通じて設定できます。
+- **Modern POS および Commerce Scale Unit** – Modern POS および Commerce Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。

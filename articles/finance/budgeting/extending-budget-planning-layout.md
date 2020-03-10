@@ -16,12 +16,12 @@ ms.search.region:
 ms.author: ryansand
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 8adfc3512cdf7a98234ff698e67682a87cb9db91
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 59fc5f3daa58c6744fbfdb180dc4994867593b97
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191707"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080751"
 ---
 # <a name="extend-the-budget-planning-layout"></a>予算計画レイアウトの拡張
 
@@ -68,7 +68,7 @@ BudgetPlanWorksheetEntity エンティティに列を追加するには、次の
 1. **BudgetPlan** フォームで拡張機能を作成します。
 2. **TransactionCurrencyAmount** や **数量** フィールドに存在する新しいイベント ハンドラーで、イベントやカスタマイズを新しいフィールドに複製します。 次の例は **CurrencyAmount** と **数量** の両方に現在存在する標準イベントを示します。 これらのイベントは、元の 36 の **CurrencyAmount** と **Quantity** の値を超えて作成する必要があります。
 
-    ```
+    ```xpp
     [FormDataFieldEventHandler(formDataFieldStr(BudgetPlan, BudgetPlanLineActiveView, TransactionCurrencyAmount37), FormDataFieldEventType::Modified)]
     publicstaticvoid transactionCurrencyAmount37\_OnModified(FormDataObject \_sender, FormDataFieldEventArgs \_e)
     {
@@ -99,7 +99,7 @@ BudgetPlanLineActiveView と BudgetPlanLine テーブル間のマッピングを
 
 - 新しいクラスを作成して **gettingBudgetPlanLineFieldName** デリゲートからイベント ハンドラー メソッドに貼り付けます。 拡張した **TransactionCurrencyAmount** と **数量** 各フィールドごとに明細書が必要です。
 
-    ```
+    ```xpp
     [SubscribesTo(classStr(BudgetPlanLineFieldActiveViewMapping), staticDelegateStr(BudgetPlanLineFieldActiveViewMapping, gettingBudgetPlanLineFieldName))]
     publicstaticvoid BudgetPlanLineFieldActiveViewMapping\_gettingBudgetPlanLineFieldName(FieldName \_budgetPlanLineActiveViewFieldName, EventHandlerResult \_result)
     {

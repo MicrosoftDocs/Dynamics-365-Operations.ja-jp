@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: b603c8f482409a9dcefabd390898f40694e5c927
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bcc14db924bf926bc4ea3a8ef1059a7ade245863
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191813"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082010"
 ---
 # <a name="queries-in-the-acceptance-test-library"></a>承認テスト ライブラリのクエリ
 
@@ -43,7 +43,7 @@ ms.locfileid: "2191813"
 
 ## <a name="examples"></a>例
 
-```
+```xpp
 AtlQueryWHSLoadLines
 
 AtlQueryInventTransferOrderLines
@@ -59,7 +59,7 @@ AtlQueryInventTransferOrderLines
 
 ### <a name="example"></a>例
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forSalesOrder(salesOrder).single();
 ```
 
@@ -78,7 +78,7 @@ loadLine = data.whs().loadLines().query().forSalesOrder(salesOrder).single();
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single();
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();

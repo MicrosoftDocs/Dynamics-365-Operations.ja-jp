@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c3939c4f8f24a27e957179519334c06c58a6d6ca
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f80b588fc802209591aad10be77fbd17b8d981db
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004576"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070435"
 ---
 # <a name="extend-the-default-cloud-scale-unit-metadata-controller"></a>既定の Cloud Scale Unit メタデータ コントローラーの拡張
 
@@ -34,26 +34,27 @@ OData を Microsoft Dynamics 365 Commerce と共に使用するとき、メタ�
 
 Commerce Scale Unit には、**CommerceModelFactory** という既定メタデータ コントローラーがあります。 既定のコント ローラーを拡張するには、**エクスポート** 属性と **IEdmModelFactory** インターフェイスを使用する新しいクラスを作成します。 既存のコードを追加してオーバーライドすることができます。 たとえば、新しいエンティティ セット、新しいアクション、新しい複合型、または新しい例外タイプを追加することができます。 次の例では、**ExtendedEdmModelFactory** クラスは **CommerceModelFactory** メタデータ コントローラーを拡張して、**NewAction** という新しいアクションおよび **NewEntities** という新しいエンティティ セットを作成します。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。
 
-    namespace Microsoft.Dynamics.RetailServer.Samples.Extensions
+```xpp
+namespace Microsoft.Dynamics.RetailServer.Samples.Extensions
+{
+    using System.ComponentModel.Composition;
+    using Microsoft.Dynamics.Retail.StoreServerServiceLibrary;
+    [Export(typeof(IEdmModelFactory))]
+    public class ExtendedEdmModelFactory : CommerceModelFactory
     {
-        using System.ComponentModel.Composition;
-        using Microsoft.Dynamics.Retail.StoreServerServiceLibrary;
-        [Export(typeof(IEdmModelFactory))]
-        public class ExtendedEdmModelFactory : CommerceModelFactory
+        protected override void BuildNonBindableActions()
         {
-            protected override void BuildNonBindableActions()
-            {
-                base.BuildNonBindableActions();
-                var NewAction = BindAction("NewAction");
-                NewAction.Returns<string>();
-            }
-            protected override void BuildEntitySets()
-            {
-                base.BuildEntitySets();
-                BuildEntitySet<NewEntity>("NewEntities");
-            }
+            base.BuildNonBindableActions();
+            var NewAction = BindAction("NewAction");
+            NewAction.Returns<string>();
+        }
+        protected override void BuildEntitySets()
+        {
+            base.BuildEntitySets();
+            BuildEntitySet<NewEntity>("NewEntities");
         }
     }
-
+}
+```
 
 

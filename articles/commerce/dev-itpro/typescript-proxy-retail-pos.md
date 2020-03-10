@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 957dfb330e25c1a0a119c4bf42e1e5fa25095b05
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9293a218baffe128745cf7fe43fc16b952f9eea5
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004623"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070774"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -54,19 +54,18 @@ Retail SDK\\Reference\\CommerceProxyGenerator.<version_number> フォルダー�
 1. プロキシを生成する前に、カスタマイズした Commerce Scale Unit、CRT、およびその他の依存ライブラリを、**Retail SDK\\Reference** フォルダにコピーします。
 2. 管理者モードでコマンド プロンプトを開き、**...\\Retail SDK\\参照** フォルダーに移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
 
-
-```
-CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-
-```
+    ```Console
+    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
+    ```
 
 > [!NOTE]
 > 次の場所から Microsoft.Dynamics.Retail.RetailServerLibrary.dll ファイルを使用します: \RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.<version_number>\build\
 
-``` 
+```Console
 Ex:
 CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
 ```
+
 実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Commerce Scale Unit 拡張ライブラリの名前に置き換えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。
 
 > [!NOTE]
@@ -80,7 +79,7 @@ CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.
 1. **Customization.settings** ファイルを **...Retail SDK\\BuildTools** から開きます。
 2. **RetailServerLibraryPathForProxyGeneration** ノードの下には、次に示すように、すべてのカスタム Retail サーバー拡張ライブラリを含めます。
 
-    ```
+    ```xml
     <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>;
     ```
 
@@ -91,7 +90,7 @@ CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.
 5. ソリューションの **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** を開きます。
 6. **UsingStatements.Extensions.txt** で、CRT エンティティの名前空間および要求/応答の名前空間の **using** ステートメントを追加します。 たとえば、CRT 拡張機能で **Contoso.Commerce.Runtime.DataModel** 名前空間を使用する場合、ここに示すように、追加プロキシを生成するため **UsingStatements.Extensions.txt** にその名前空間を追加します。
 
-    ```
+    ```csharp
     using Contoso.Commerce.Runtime.DataModel;
     ```
 
@@ -121,7 +120,7 @@ Retail サーバー拡張機能ごとに、別個のプロキシを生成する�
 
     次に例を示します。
 
-    ```
+    ```xml
     <CommerceProxyGeneratorExtendedAssemblyPaths Include="..\..\RetailServer\Extensions.StoreHoursSample\bin\$(Configuration)\net451\$(AssemblyNamePrefix).RetailServer.StoreHoursSample.dll" />
     ```
 
@@ -164,7 +163,7 @@ Retail サーバー拡張機能ごとに、別個のプロキシを生成する�
 
     次に例を示します。
 
-    ```
+    ```xml
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
     ```
 
@@ -174,7 +173,7 @@ Retail サーバー拡張機能ごとに、別個のプロキシを生成する�
 
     次に例を示します。
 
-    ```
+    ```xml
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
     ```
 

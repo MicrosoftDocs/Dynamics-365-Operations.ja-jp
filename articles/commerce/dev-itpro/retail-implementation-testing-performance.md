@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 058cac582ee4eefb138993abf7dc233da8cdfcf8
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9260b6105305ec6227c9b5188c119fc3daa38420
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004643"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057654"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -53,7 +53,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、[IT プロおよび開発者向け Microsoft Dynamics 365 Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) を参照してください。
+詳細については、[IT プロおよび開発者向けコマース](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) トピックを参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 
@@ -86,7 +86,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 
 さらにパフォーマンスの問題を大きく修正するには、新しいパフォーマンステストを行う必要があります。 多くの場合、大きな問題は、他のより小さな問題をマスクします。 上記の問題が解決された後、次の問題を検出し、パフォーマンスが顧客の期待に達するまで処理されます。
 
-## <a name="additional-resources"></a>その他のリソース
-[Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
+## <a name="additional-resources"></a>追加リソース
+[コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)

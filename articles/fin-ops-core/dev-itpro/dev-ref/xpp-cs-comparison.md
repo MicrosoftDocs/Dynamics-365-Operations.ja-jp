@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 450f014ed5cd18b0d3db29780679b16478eab610
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: dde9d5e35fecc6c6b6004e86ad492c8acce00721
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872659"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080785"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -94,8 +94,8 @@ static void JobRs001a_HelloWorld(Args _args)
     {
         // These two methods are also from the Global class.
         // The + operator concatenates two strings.
-        warning("This is like info," + " but is for warnings, 3.");
-        error("This is like info," + " but is for errors, 4.");
+        warning("This is like info, but is for warnings, 3.");
+        error("This is like info, but is for errors, 4.");
     }
 }
 ```
@@ -109,7 +109,7 @@ Hello World、2。
 
 #### <a name="c-sample"></a>C# サンプル
 
-次の C# プログラムは、以前の X++ プログラムを書き直したものです。 X++ と C# の違いは、X++ の行をコメントアウトして C# の構文に置き換えることで強調表示されます。
+次の C# プログラムは、以前の X++ プログラムを書き直したものです。 
 
 ```csharp
 using System;
@@ -123,22 +123,17 @@ class Pgm_CSharp
     {
         if (1 == 1) 
         {
-            Console .Out .WriteLine(
-                "Hello World, Explicit .Out , 1.");
-            Console .WriteLine(
-                "Hello World, Implicit default to .Out , 2.");
+            Console .Out .WriteLine("Hello World, Explicit .Out , 1.");
+            Console .WriteLine("Hello World, Implicit default to .Out , 2.");
         }
         if (1 != 1)
         {
-            Console .Error .WriteLine(
-                "This message will not appear.");
+            Console .Error .WriteLine("This message will not appear.");
         }
         else
         {
-            Console .Error .WriteLine(".Error is like .Out,"
-                + " but can be for warnings, 3.");
-            Console .Error .WriteLine(".Error is like .Out,"
-                + " but is for errors, 4.");
+            Console .Error .WriteLine(".Error is like .Out, but can be for warnings, 3.");
+            Console .Error .WriteLine(".Error is like .Out, but is for errors, 4.");
         }
     }
 }
@@ -148,7 +143,7 @@ class Pgm_CSharp
 
 C# コンソールへの実際の出力を次に示します。
 
-```csharp
+```Console
 Hello World, Explicit .Out, 1. 
 Hello World, Implicit default to .Out, 2. 
 .Error is like .Out, but can be for warnings, 3. 
@@ -230,18 +225,21 @@ public class Pgm_CSharp
 {
     static void Main( string[] args )
     {
-        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowWhile();
+        new Pgm_CSharp().WhileLoops();
     }
-    void Rs002a_CSharp_ControlOFlowWhile()
+
+    void WhileLoops()
     {
         int nLoops = 1;
         while (nLoops <= 88)
         {
-            Console.Out.WriteLine( nLoops.ToString() );
-            Console.Out.WriteLine( "(Press any key to resume.)" );
+            Console.Out.WriteLine(nLoops.ToString());
+            Console.Out.WriteLine("(Press any key to resume.)");
             // Paused until user presses a key.
             Console.In.Read();
-            if ((nLoops % 4) == 0) break;
+            if ((nLoops % 4) == 0) {
+                break;
+            }
             ++ nLoops;
         }
         Console.Beep();
@@ -249,14 +247,12 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+ 
 ##### <a name="output"></a>出力
 
 C# プログラムのコンソール出力は次のとおりです。
 
 ```csharp
-[C:\MyDirectory\]
->> Rosetta_CSharp_1.exe
 1
 (Press any key to resume.)
 2
@@ -283,8 +279,7 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     {
         print ii;
         pause;
-        // You must click the OK button to proceed
-        // beyond a pause statement.
+        // You must click the OK button to proceed beyond a pause statement.
         // ii is always less than 99.
         if (ii < 99)
         {
@@ -295,7 +290,7 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     pause;
 }
 ```
- 
+ 
 ##### <a name="output"></a>出力
 
 X++ 印刷ウィンドウの出力は次のようになります。
@@ -315,12 +310,11 @@ public class Pgm_CSharp
 {
     static void Main( string[] args )
     {
-        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowFor();
+        new Pgm_CSharp().ForLoops();
     }
-    void Rs002a_CSharp_ControlOFlowFor()
+    void ForLoops()
     {
-        int nLoops = 1,
-            ii;
+        int nLoops = 1, ii;
         for (ii = 1; ii < 5; ii++)
         {
             Console.Out.WriteLine(ii.ToString());
@@ -337,7 +331,7 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+ 
 ##### <a name="output"></a>出力
 
 C# プログラムのコンソール出力は次のとおりです。
@@ -372,9 +366,9 @@ X++ と C# の両方では、**switch** ステートメントに、キーワー�
 #### <a name="x-switch-example"></a>X++ 切り替えの例
 
 以下に、X++ スイッチの例を示します。
--   case iTemp: および case (93-90): は、**case** 式は、C\# とは異なり、定数に限定されないことを示すため。
+-   `case iTemp:` および `case (93-90):` は、**case** 式が C\# のように、定数に限定されないことを示します。
 -   `//break;` は、 X++ では `break;` ステートメントが必須ではないことを示していますが、ほとんどの場合望ましいです。
--   case 2, (93-90), 5: は、X++ でが、1 つの **case** 句に複数の式をリストできることを示すため。
+-   `case 2, (93-90), 5:` は、X++ の 1 つの **case** 句に複数の式をリストできることを示します。
 
 ```xpp
 static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
@@ -456,7 +450,7 @@ iEnum is one of these values: 2,3,5: 3
 >>
 ***/
 ```
- 
+ 
 ## <a name="x-c-comparison-string-case-and-delimiters"></a>X++、C# の比較: 文字列の大文字小文字の区別および区切り記号
 このセクションでは、X++ と C\# の混合ケーシングによる文字列の処理を比較します。 また、X++ で使用できる文字列の区切り記号についても説明します。
 
@@ -601,9 +595,9 @@ public class Pgm_CSharp
 {
     static public void Main( string[] args )
     {
-        new Pgm_CSharp().Rs005a_CSharp_ArraySimple();
+        new Pgm_CSharp().ArraySimple();
     }
-    private void Rs005a_CSharp_ArraySimple()
+    private void ArraySimple()
     {
         const int const_iMacroArrayLength = 3;
         // In C# the length is set at construction during run.
@@ -615,8 +609,7 @@ public class Pgm_CSharp
         sSports[const_iMacroArrayLength - 1] = "Baseball";
         for (xx=0; xx < const_iMacroArrayLength; xx++)
         {
-            Console.WriteLine( xx.ToString()
-                + " , [" + sSports[xx] + "]" );
+            Console.WriteLine(xx.ToString() + " , [" + sSports[xx] + "]");
         }
         Console.WriteLine("-------- YEARS --------");
         // In C# you must construct the array before assigning to it.
@@ -625,8 +618,7 @@ public class Pgm_CSharp
         years[10 - 1] = 1930;
         for (xx=0; xx < 10; xx++)
         {
-            Console.WriteLine( xx.ToString()
-                + " , [" + years[xx].ToString() + "]" );
+            Console.WriteLine(xx.ToString() + " , [" + years[xx].ToString() + "]");
         }
     }
 } // EOClass
@@ -687,8 +679,8 @@ ListIterator literator;
 ```csharp
 // C#
 using System;
-using SysCollGen = System.Collections.Generic;
-SysCollGen.List<string> listStrings ,list2 ,listMerged; SysCollGen.IEnumerator<string> literator;
+using System.Collections.Generic;
+List<string> listStrings ,list2 ,listMerged; IEnumerator<string> literator;
 ```
 
 ### <a name="example-2-construction-of-a-list"></a>例 2: リストの作成
@@ -702,7 +694,7 @@ listStrings = new List( Types::String );
 
 ```csharp
 // C#
-listStrings = new SysCollGen.List<string>;
+listStrings = new List<string>;
 ```
 
 ### <a name="example-3-add-items-to-a-list"></a>例 3: リストに品目を追加
@@ -711,23 +703,23 @@ X++ と C# 両方では、コレクションはコレクションの末尾に項
 
 ```xpp
 // X++
-listStrings.addEnd ("String\_BB."); 
-listStrings.addStart ("String\_AA.");
+listStrings.addEnd ("StringBB."); 
+listStrings.addStart ("StringAA.");
 // Iterator performs a midpoint insert at current position. 
 listIterator.insert ("dog");
 ```
 
 ```csharp
 // C#
-listStrings.Add ("String\_BB."); 
-listStrings.Insert (0 ,"String\_AA.");
+listStrings.Add ("StringBB."); 
+listStrings.Insert (0 ,"StringAA.");
 // Index 7 determines the insertion point.
 listStrings.Insert (7 ,"dog");
 ```
 
 ### <a name="example-4-iterate-through-a-list"></a>例 4: リストを繰り返す
 
-X++ と C\# にはイテレータ クラスがあり、次の例に示すように、コレクション内の項目のステップを活用できます。
+X++ と C\# にはイテレータ クラスがあり、次の例に示すように、コレクション内の項目のステップを活用できます。 
 
 ```xpp
 // X++
@@ -834,9 +826,9 @@ MapIterator mapIter;
 
 ```csharp
 // C#
-SysCollGen.Dictionary<int,string> dictKeyValue;
-SysCollGen.IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
-SysCollGen.KeyValuePair<int,string> kvpCurrentKeyValuePair;
+Dictionary<int,string> dictKeyValue;
+IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
+KeyValuePair<int,string> kvpCurrentKeyValuePair;
 ```
 
 ### <a name="example-2-construction-of-the-collection"></a>例 2: コレクションの作成
@@ -850,7 +842,7 @@ mapKeyValue = new Map(Types::Integer, Types::String);
 
 ```csharp
 // C#
-dictKeyValue = new SysCollGen.Dictionary<int,string>();
+dictKeyValue = new Dictionary<int,string>();
 ```
 
 ### <a name="example-3-add-an-item-to-the-collection"></a>例 3: 品目をコレクションに追加
@@ -871,7 +863,7 @@ dictKeyValue.Add(xx ,xx.ToString() + “_Value”);
 
 列挙子は、次のコード例に示すように、キー値コレクションを X++ と C\# の双方でループ処理するために使用されます。
 
-```
+```xpp
 // X++ 
 enumer = mapKeyValue.getEnumerator();
 while (enumer.moveNext())
@@ -907,8 +899,7 @@ mapKeyValue.insert(
 ```csharp
 // C#
 dictKeyValue[102] = 
-    “The semi-hidden .item property” 
-    + ” in C#, Updated the value for key 102.”;
+    “The semi-hidden .item property in C#, Updated the value for key 102.”;
 ```
 
 ### <a name="example-6-delete-one-item"></a>例 6: 1つの品目を削除
@@ -979,10 +970,8 @@ static void JobRs008a_Exceptions(Args _args)
     int iIndex = 77;
     try
     {
-        info("On purpose, this uses an invalid index for this array: "
-            + sStrings[iIndex]);
-        warning("This message does not appear in the Infolog,"
-            + " it is unreached code.");
+        info("On purpose, this uses an invalid index for this array: " + sStrings[iIndex]);
+        warning("This message does not appear in the Infolog," + " it is unreached code.");
     }
     // Next is a catch for some of the values of
     // the X++ Exception enumeration.
@@ -1010,7 +999,7 @@ static void JobRs008a_Exceptions(Args _args)
 }
 ```
 
- 
+ 
 ##### <a name="output"></a>出力
 
 情報ログ ウィンドウからの出力を次に示します。
@@ -1043,22 +1032,16 @@ public class Pgm_CSharp
         string[] sStrings = new string[4];
         try
         {
-            Console.WriteLine
-                ("On purpose, this uses an invalid index"
-                + " for this array: " + sStrings[77]);
-            Console.Error.WriteLine
-                ("This message does not appear in the Infolog,"
-                + " it is unreached code.");
+            Console.WriteLine("On purpose, this uses an invalid index for this array: " + sStrings[77]);
+            Console.Error.WriteLine("This message does not appear in the Infolog, it is unreached code.");
         }
         catch (NullReferenceException exc)
         {
-            Console.WriteLine("(e1) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e1) In catch block for -- " + exc.GetType().ToString() );
         }
         catch (IndexOutOfRangeException exc)
         {
-            Console.WriteLine("(e2) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e2) In catch block for -- " + exc.GetType().ToString() );
         }
         // In C#, System.Exception is the base of all
         // .NET Framework exception classes.
@@ -1066,9 +1049,7 @@ public class Pgm_CSharp
         // this next catch.
         catch (Exception exc)
         {
-            Console.WriteLine
-                ("This last 'catch' is of the abstract"
-                + " base type Exception: "
+            Console.WriteLine("This last 'catch' is of the abstract base type Exception: "
                 + exc.GetType().ToString());
         }
         // The preceding catch of System.Exception makes this catch of
@@ -1080,19 +1061,17 @@ public class Pgm_CSharp
         //}
         finally
         {
-            Console.WriteLine
-                ("'finally' is not an X++ keyword,"
-                + " although it is in C#.");
+            Console.WriteLine("'finally' is not an X++ keyword, although it is in C#.");
         }
         Console.WriteLine("End of program.");
     }
 } // EOClass
 ```
 
- 
+ 
 ##### <a name="output"></a>出力
 
-C\# コンソールへの実際の出力を次に示します。
+C\# コンソールへの出力を次に示します。
 
 ```csharp
 (e2) In catch block for -- System.IndexOutOfRangeException
@@ -1113,7 +1092,7 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     str sStrings[4];
     str sTemp;
     int iIndex = 0;
-    ;
+
     sStrings[1] = "First array element.";
     try
     {
@@ -1123,11 +1102,9 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     }
     catch (Exception::Error)
     {
-        print("In catch of -- Exception::Error (will retry)."
-            + " Entering catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Entering catch.");
         ++iIndex;
-        print("In catch of -- Exception::Error (will retry).
-            + " Leaving catch.");
+        print("In catch of -- Exception::Error (will retry). + " Leaving catch.");
         // Here is the retry statement.
         retry;
     }
@@ -1171,9 +1148,7 @@ public class Pgm_CSharp
         {
             if (bReturnCode)
             {
-                bReturnCode = this
-.Rs008b_CSharp_ExceptionsAndRetry_Callee
-(ref iIndex);
+                bReturnCode = this.Rs008b_CSharp_ExceptionsAndRetry_Callee(ref iIndex);
             }
             else
             {
@@ -1181,9 +1156,9 @@ public class Pgm_CSharp
             }
         }
         Console.WriteLine("End of C# caller method.");
-        }
-    private bool Rs008b_CSharp_ExceptionsAndRetry_Callee
-        (ref int iIndex)
+    }
+    
+    private bool Rs008b_CSharp_ExceptionsAndRetry_Callee(ref int iIndex)
     {
         bool bReturnCode = true; // Means call this method again.
         string[] sStrings = new string[4];
@@ -1191,19 +1166,16 @@ public class Pgm_CSharp
         sStrings[0] = "First array element.";
         try
         {
-            Console.WriteLine("At top of try block: "
-                + iIndex.ToString());
+            Console.WriteLine("At top of try block: " + iIndex.ToString());
             sTemp = sStrings[iIndex];
             Console.WriteLine( "The array element is: " + sTemp );
             bReturnCode = false; // Means do not call this method again.
         }
         catch (Exception)
         {
-            Console.WriteLine
-                ("In catch of -- Exception. Entering catch.");
+            Console.WriteLine("In catch of -- Exception. Entering catch.");
             ++iIndex; // The 'ref' parameter in C#.
-            Console.WriteLine
-                ("In catch of -- Exception. Leaving catch.");
+            Console.WriteLine("In catch of -- Exception. Leaving catch.");
             //retry;
             // In C# we let the caller method do the work
             // that the retry keyword does in X++.
@@ -1214,7 +1186,7 @@ public class Pgm_CSharp
 }
 ```
 
- 
+ 
 #### <a name="output"></a>出力
 
 コンソールへの出力を次に示します。
@@ -1340,10 +1312,8 @@ class XppClass
     {
         XppClass myXppClass = new XppClass();
         // Subscribe two event handler methods to the delegate.
-        myXppClass.myDelegate += eventHandler
-            (myXppClass.myEventSubscriberMethod2);
-        myXppClass.myDelegate += eventHandler
-            (XppClass::myEventSubscriberMethod3);
+        myXppClass.myDelegate += eventHandler(myXppClass.myEventSubscriberMethod2);
+        myXppClass.myDelegate += eventHandler(XppClass::myEventSubscriberMethod3);
         // Raise the event by calling the delegate one time,
         // which calls all the subscribed event handler methods.
         myXppClass.myDelegate(_stringFromJob);
@@ -1375,10 +1345,8 @@ public class CsClass
     {
         CsClass myCsClass = new CsClass();
         // Subscribe two event handler methods to the delegate.
-        myCsClass.MyEvent += new MyDelegate
-            (myCsClass.MyEventSubscriberMethod2);
-        myCsClass.MyEvent += new MyDelegate
-            (CsClass.MyEventSubscriberMethod3);
+        myCsClass.MyEvent += new MyDelegate(myCsClass.MyEventSubscriberMethod2);
+        myCsClass.MyEvent += new MyDelegate(CsClass.MyEventSubscriberMethod3);
         // Raise the event by calling the event one time, which
         // then calls all the subscribed event handler methods.
         myCsClass.MyEvent("The information from the C# Main.");
@@ -1399,7 +1367,7 @@ public class CsClass
 ```csharp
 CsClass.exe C#, hello from instance event handler 
 2: The information from the C\# Main. C\#, hello from static event handler 
-3: The information from the C\# Main. |
+3: The information from the C\# Main.
 ```
 
 ### <a name="events-and-the-aot"></a>イベントおよび AOT
@@ -1567,7 +1535,7 @@ Message (04:02:29 pm)
 4001 , The Bulb
 ***/
 ```
- 
+ 
 ### <a name="x-sql-keywords"></a>X++ SQL キーワード
 
 次の X++ SQL キーワードは、ANSI SQL に含まれていないものです。
@@ -1619,7 +1587,7 @@ static void OByWhere453Job(Args _args)
     }
 }
 ```
- 
+ 
 ### <a name="aggregate-fields"></a>集計フィールド
 
 次のテーブルは、**選択** 列リストの集計フィールドが X++ SQL と ANSI SQL の間でどのように参照されるかの相違点を示しています。 集計フィールドとは、**合計**または**平均**などの機能によって派生したものです。
@@ -1671,5 +1639,4 @@ End.
 |null の結果。|**while** select ステートメントで、**where** 句がすべての行を除外する場合、それをレポートする特別なカウント行は返されません。|**select** で、**where** 句がすべての行を除外する場合、特別なカウント行が返されます。 カウント値は 0 です。|コメントはありません。|
 |戻された行を移動するためのカーソル。|while select 文は、カーソル機能を提供します。 代わりに、**next** キーワードを使用することもできます。|**select** ステートメントから戻される行間ループのために、**cursor** を宣言することができます。||
 |**From** 句。|列がリストされず、1 つのテーブルだけが参照される場合、**from** キーワードはオプションです。 次の 2 つの構文オプションは同等です。 <br>`select \* from tCustTable;` <br>`select tCustTable;`|**選択**ステートメントは、**from** 句が使用されていない限り、テーブルから読み取ることはできません。|X++ SQL では、シンプルな**選択**ステートメントが返された最初の行でテーブル バッファ変数を入力します。 これは、次のコード フラグメントによって示されています。 <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
-
 

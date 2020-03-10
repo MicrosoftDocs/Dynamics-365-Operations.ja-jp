@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b80666036aaebecab01f580403427c15bf6395b4
-ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
+ms.openlocfilehash: 9f18e6341bf2746fd653330d512d2ff67033525a
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2888669"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080754"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -98,9 +98,12 @@ ms.locfileid: "2888669"
 
 ## <a name="upgrade-script-todos"></a>スクリプト TODO のアップグレード
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012 
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.reactivate();</code></pre>
+DimensionEntryControl.reactivate();
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 reactivate メソッドは、分析コード エントリ コントロールを現在の設定でリフレッシュします。 このメソッドは、会社または表示された分析コード リストが変更された場合にのみ、コントロールを更新します。 この呼び出しは、これらのどちらも以前に変更されていない場合に削除できます。 それ以外の場合は、呼び出しはそのままにします。 reactivate() の直前で parmCompany() が呼び出され、それが reactivate() より前に呼び出された唯一の DEC API であり、そのメソッドがデータソースの active() 中に呼び出された場合、最適化を手動で行うことでパフォーマンスを向上させ、コードの取り込みを削減することができます。
@@ -108,8 +111,10 @@ reactivate メソッドは、分析コード エントリ コントロールを�
 1.  データ ソースのアクティブ プロセス中に、parmCompany() および reactivate() 呼び出しを削除します。
 2.  最初のユーザーとフォームとのやりとりの前に呼び出されるフォーム init()、run()、datasource init()、または同様のメソッドでは、次のコード行を追加します。
 
-    <pre><code>DimensionEntryControl.parmCompanyReference(
-        fieldStr([myTable], [myCompanyContextField]);</code></pre>
+    ```xpp
+    DimensionEntryControl.parmCompanyReference(
+        fieldStr([myTable], [myCompanyContextField]);
+    ```
     
     この変更により、DEC はアクティブなレコードが変更されたときに更新される会社フィールド参照を自動的に見つけ出し、それに応じてディメンションのリストを更新できます。 
 
@@ -117,79 +122,113 @@ reactivate メソッドは、分析コード エントリ コントロールを�
 > これを parmDisplayedDimensionSet() の使用と組み合わせないでください。そうすると、分析コードの一覧が想定外のものになることがあります。 会社の選択フィールドの変更されたメソッドなど、他のすべての場所で、データ ソースがその時点で読み取られるプロセスではないため、会社内の変更をすぐに反映するように parmCompany() を呼び出す必要があります。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.setEditability(true, 0);</code></pre>
+DimensionEntryControl.setEditability(true, 0);
+```
+
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 特定の編集可能なディメンション セットが必要な場合は、この呼び出しを次のように置き換えます。
-<pre><code>DimensionEntryControl.parmEditableDimensionSet(
-    editableDimensionSet);</code></pre>
-    
+
+```xpp
+DimensionEntryControl.parmEditableDimensionSet(
+    editableDimensionSet);
+```
+
 > [!NOTE] 
 > editableDimensionSet パラメーターのタイプは、 DimensionEnumeration です。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012 
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 This method can be removed if there is 
 no custom implementation */
-// dimensionDefaultingController.pageActivated();</code></pre>
+// dimensionDefaultingController.pageActivated();
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 このコールを、分析コード エントリ コントロールの親コントロールの pageActivated メソッドまたは Form Init メソッド内で実行する場合、削除することができます。 上記の場所以外のメソッド呼び出しの意図は明確ではありません。 呼び出しを削除して、コントロールをテストします。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.deleted();</code></pre>
+DimensionEntryControl.deleted();
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 データ ソースの削除メソッド内にはない deleted() の呼び出しのために、TODO が残されます。 これらの呼び出しは、データソースの削除メソッド内にのみ存在すると予想され、置換はありません。 呼び出しを削除して、コントロールをテストしてみてください。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-// dimensionDefaultingController.writing();</code></pre>
+// dimensionDefaultingController.writing();
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 分析コード エントリ コントロール フレームワークは、値を保存します。 呼び出しを削除して、コントロールをテストします。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-dimensionDefaultingController::findBackingEntityInstance();</code></pre>
+dimensionDefaultingController::findBackingEntityInstance();
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 エンティティを検索するには、getEntityInstance メソッドを DimensionAttributeValue から呼び出す必要があります。 この呼び出しを次のようなものに置き換えます。
-<pre><code>DimensionAttributeValue dimAttrValue = 
+
+```xpp
+DimensionAttributeValue dimAttrValue = 
     DimensionAttributeValue::
         findByDimensionAttributeAndValueNoError(
             dimensionAttributeTable, dimensionValue);
 if (dimAttrValue) {
     common = dimAttrValue.getEntityInstance();
-}</code></pre>
+}
+```
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);</code></pre>
+DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations  
 ここに 1 つのパラメーターがある場合のみ updateValues() メソッドが呼び出されるため、呼び出しは allowEdit() の呼び出しに置き換えることができます。
-<pre><code>DimensionEntryControlHeader.allowEdit(
-    NoYesUnchanged::Yes);</code></pre>
+
+```xpp
+DimensionEntryControlHeader.allowEdit(
+    NoYesUnchanged::Yes);
+```
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(
-    NoYesUnchanged::No, true);</code></pre>
+    NoYesUnchanged::No, true);
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 この場合、updateValues() の呼び出しには 2 つのパラメーターがあるので、コントロールの編集機能を変更するには allowEdit() の呼び出しと置き換え、コントロールの値をクリアするには loadAttributeValueSet() の呼び出しと置き換える必要があります。
-<pre><code>DimensionEntryControlHeader.allowEdit(
+
+```xpp
+DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::No);
-DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
+DimensionEntryControlHeader.loadAttributeValueSet(0);
+```
 
 > [!NOTE] 
 > updateValues メソッド 呼び出しの最初の パラメーター が NoYesUnchangedUnchanged::の場合は、allowEdit の新しい呼び出しは必要ありません。 同様に、updateValues メソッドの 2 番目のパラメーターの呼び出しが false の場合、loadAttributeValueSet への呼び出しは必要ありません。
@@ -198,64 +237,99 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 分析コード エントリ コントロールを保持するデータソースまたは tabpage/グループの残りのメソッドは、カスタム ロジックがない場合、削除することができます。 次のテーブルは、削除する必要があるカスタマイズのないメソッドの例を示しています。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public int active(){int ret;ret = super();return ret;}</code></pre>
+
+```xpp
+public int active(){int ret;ret = super();return ret;}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void delete(){super();}</code></pre>
-### Finance and Operations 
-このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
-### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void deleted(){super();}</code></pre>
+```xpp
+public void delete(){super();}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void deleting(){super();}</code></pre>
+
+```xpp
+public void deleted(){super();}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public boolean validateDelete(){boolean ret;ret = super();return ret;}</code></pre>
+
+```xpp
+public void deleting(){super();}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void write(){super();}</code></pre>
+
+```xpp
+public boolean validateDelete(){boolean ret;ret = super();return ret;}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void writing(){super();}</code></pre>
-### Finance and Operations 
+
+```xpp
+public void write(){super();}
+```
+
+### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void written(){super();}</code></pre>
-### Finance and Operations 
+
+```xpp
+public void writing(){super();}
+```
+
+### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public boolean validateWrite(){boolean ret;ret = super();return ret;}</code></pre>
-### Finance and Operations 
+
+```xpp
+public void written(){super();}
+```
+
+### <a name="finance-and-operations"></a>Finance and Operations 
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
-<pre><code>public void pageActivated()
+
+```xpp
+public boolean validateWrite(){boolean ret;ret = super();return ret;}
+```
+
+### <a name="finance-and-operations"></a>Finance and Operations 
+このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
+
+### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
+
+```xpp
+public void pageActivated()
 {
     super();
     /* TODO: (Code Upgrade) [Dimension entry control] This method can be removed if 
     there is no custom implementation */
     // dimensionDefaultingController.pageActivated();
-}</code></pre>
-### Finance and Operations 
+}
+```
+
+### <a name="finance-and-operations"></a>Finance and Operations 
 この方法は分析コード エントリ コントロールを保持する TabPage またはグループになります。 カスタム ロジックがない場合は、メソッドを削除することができます。
 
 ## <a name="compile-errors"></a>コンパイル エラー
@@ -265,10 +339,16 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
 
 <strong>フォームで (PurchTable)。</strong>
-<pre><code>purchTableForm.parmDimensionDefaultingControllerHeader(
-    dimensionDefaultingControllerHeader);</code></pre>
+
+```xpp
+purchTableForm.parmDimensionDefaultingControllerHeader(
+    dimensionDefaultingControllerHeader);
+```
+
 <strong>クラス内 (PurchTableForm):</strong>
-<pre><code>public DimensionDefaultingController 
+
+```xpp
+public DimensionDefaultingController 
 parmDimensionDefaultingControllerHeader(
     DimensionDefaultingController 
         _dimensionDefaultingControllerHeader = 
@@ -277,15 +357,22 @@ parmDimensionDefaultingControllerHeader(
    dimensionDefaultingControllerHeader =
        _dimensionDefaultingControllerHeader;
    return dimensionDefaultingControllerHeader;
-}</code></pre>
+}
+```
 
 ### <a name="finance-and-operations"></a>Finance and Operations 
 
 <strong>フォームで (PurchTable)。</strong>
-<pre><code>purchTableForm.parmDimensionEntryControlHeader(
-    DimensionEntryControlHeader);</code></pre>
+
+```xpp
+purchTableForm.parmDimensionEntryControlHeader(
+    DimensionEntryControlHeader);
+```
+
 <strong>クラス内 (PurchTableForm):</strong>
-<pre><code>public DimensionEntryControl 
+
+```xpp
+public DimensionEntryControl 
 parmDimensionEntryControlHeader(
     DimensionEntryControl 
        _dimensionEntryControlHeader = 
@@ -295,8 +382,8 @@ parmDimensionEntryControlHeader(
     dimensionEntryControlHeader =
         _dimensionEntryControlHeader;
     return dimensionEntryControlHeader;
-}</code></pre>
-
+}
+```
 
 
 ## <a name="additional-resources"></a>追加リソース

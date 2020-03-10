@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: d8264a7025af079ca178470559020e2807ece877
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3d27706f1f2d575fef10e86a3926683929ef2b84
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003604"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057128"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -30,22 +30,22 @@ ms.locfileid: "3003604"
 
 ## <a name="overview"></a>概要
 
-オンプレミス環境では、チャネル機能は Commerce Store Scale Unit の使用により排他的に有効になります。 Store Scale Unit の概要については、[Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
+オンプレミス環境では、チャネル機能は Commerce Scale Unit の使用により排他的に有効になります。 概要については、[Commerce Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
 
-クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Store Scale Unit をインストールすることによってのみ、チャネル コンポーネントを使用できます。
+クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit をインストールすることによってのみ、チャネル コンポーネントを使用できます。
 
 ## <a name="prerequisites"></a>必要条件 
 
-チャネル コンポーネントのインストールを開始する前に、まずオンプレミス環境のすべての事前インストール手順を完了してください。 この手順は、[オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)で説明されています。 さらに、Retail の全機能を使用するは、バージョン 8.1.1 をインストールする必要があります。 バージョン 8.1.2 に更新することをお勧めします。
+チャネル コンポーネントのインストールを開始する前に、まずオンプレミス環境のすべての事前インストール手順を完了してください。 この手順は、[オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)で説明されています。 さらに、コマースの全機能を使用するは、バージョン 8.1.1 をインストールする必要があります。 バージョン 8.1.2 に更新することをお勧めします。
 
 > [!NOTE]
-> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Retail Store Scale Unit (RSSU) をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の RSSU デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
+> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Commerce Scale Unit をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の Commerce Scale Unit デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
 
 ## <a name="installation-steps"></a>インストール手順
 
-1.  以前に作成した [アプリケーションの共有](setup-deploy-on-premises-pu12.md#setupfile) ( **LocalAgent** 共有フォルダではありません) にて、共有を行う場所のルートディレクトリに **selfservicepackages** という名称のフォルダを作成します。  
-2.  各 AOS コンピューターで、簡単にアクセスできるディレクトリを作成します (**C:/selfservicepackages** など)。
-3.  いづれかのAOSコンピュータ (どれでも構いません) 上で、次のPowerShellスクリプトを実行します。
+1. 以前に作成した [アプリケーションの共有](setup-deploy-on-premises-pu12.md#setupfile) ( **LocalAgent** 共有フォルダではありません) にて、共有を行う場所のルートディレクトリに **selfservicepackages** という名称のフォルダを作成します。  
+2. 各 AOS コンピューターで、簡単にアクセスできるディレクトリを作成します (**C:/selfservicepackages** など)。
+3. いづれかのAOSコンピュータ (どれでも構いません) 上で、次のPowerShellスクリプトを実行します。
 
     ```powershell
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
@@ -84,9 +84,9 @@ ms.locfileid: "3003604"
 10.  新しく生成されたサーバー アプリケーションを編集し、**シークレットをリセット** を選択します。
 
      > [!NOTE]
-     > これは、各 Commerce Store Scale Unit でこのスクリプトを実行する重要なセキュリティ手法です。  これにより、セキュリティが最大化され、セキュリティ侵害が発生した場合のワークロードが最小化されます。 
+     > これは、各 Commerce Scale Unit でこのスクリプトを実行する重要なセキュリティ手法です。  これにより、セキュリティが最大化され、セキュリティ侵害が発生した場合のワークロードが最小化されます。 
      >
-     > このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Store Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Store Scale Unit で更新する必要があります。
+     > このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Commerce Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Commerce Scale Unit で更新する必要があります。
 
 11.  **Retail とコマース** &gt; **バックオフィスの設定** &gt; **コマース スケジューラ** &gt; **Microsoft Dynamics AX のコネクタ**の順に移動します。
 12.  アクション ウィンドウで **編集** を選択します。
@@ -110,7 +110,7 @@ ms.locfileid: "3003604"
 26.  **全般**タブで、**初期化**リンクを選択し、コマース機能のシード データを構成します。
 
      > [!NOTE]
-     > 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  バックオフィスで、**ダウンロード**機能が試行されると (たとえば、Store Scale Unit または Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
+     > 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  バックオフィスで、**ダウンロード**機能が試行されると (たとえば、Commerce Scale Unit または Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
      >
      > 周辺機器シミュレータ (本社の ハードウェアプロファイル ページにてダウンロードできます) は、最低でも1つのハードウェア プロファイルが作成され、動作可能となるまで使用することができません。 それらが完了していれば、以下のスクリプトを実行することができます。
      >
@@ -118,4 +118,4 @@ ms.locfileid: "3003604"
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-28. Store Scale Unit をインストールするためのインストール手順に従います。 手順については、[Retail Store Scale Unit のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 

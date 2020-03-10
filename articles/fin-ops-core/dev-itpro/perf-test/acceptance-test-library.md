@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 9f71b1d13d4e2d7ad2507ff9a97e6545ca35d44b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a633eb436f5e72e583dd5ed576a75369ef0311dc
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191816"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081958"
 ---
 # <a name="acceptance-test-library-resources"></a>承認テスト ライブラリ のリソース
 
@@ -39,7 +39,7 @@ ms.locfileid: "2191816"
 
 ## <a name="example-of-a-test-that-is-written-in-atl"></a>ATL で記述されたテストの例
 
-```
+```xpp
 // Create the data root node
 var data = AtlDataRootNode::construct();
 

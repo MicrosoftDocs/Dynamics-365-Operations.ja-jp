@@ -3,7 +3,7 @@ title: Microsoft Power Automate の ビジネス イベント
 description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で使用可能となるビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/19/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 29928d4ab04ae64d4d075f15d2eb9f09adbfd2ff
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8d776e426a872499c35c6a764206a88aef7ed570
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769774"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075913"
 ---
 # <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate の ビジネス イベント
 
@@ -46,9 +46,9 @@ ms.locfileid: "2769774"
 
 フローが保存されると、選択したビジネス イベントに対するサブスクリプションが環境インスタンスに追加されます。 サブスクリプション プロセスの一部として、必要なエンドポイントが設定され、対応するビジネス イベントが有効にされます。
 
-トリガーまたはフローのいずれかを削除または無効化すると、ビジネス イベントは自動的に購読解除されます。
+トリガーが削除されるか、フローがオフになっている場合は、ビジネス イベントのエンドポイントが自動的に削除されます。
 
-複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。
+複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。 1 つのイベントごとの既定のエンドポイント制限は、10 であることに注意してください。 必要に応じて、**ビジネス イベント パラメーター** ページの**イベントごとに許可されるエンドポイント**を調整します。
 
 > [!NOTE]
 > Power Automate エンドポイントは、手動で構成することはできません。 上記の説明に従って、エンドポイントは Power Automate で自動的に作成されます。

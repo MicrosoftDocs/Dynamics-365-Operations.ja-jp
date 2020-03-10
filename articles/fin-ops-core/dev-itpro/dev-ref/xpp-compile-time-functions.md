@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0585d9ed683052612826272f868e957cccb4f4a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f5378f5dcfaf03d13b7268d3c34186e5b449a79c
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026204"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082024"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 
@@ -39,9 +39,8 @@ ms.locfileid: "3026204"
 -   `evalBuf`– X++ コードの入力文字列を評価し、結果を文字列として返します。
 -   `literalStr` – は、文字列 `"@SYS12345"` などのラベルの文字列表示が与えられたときにラベル ID を取得します。 たとえば、`myLabel.exists(literalStr("@SYS12345"));`。
 
-| **メモ**                                                         |
-|------------------------------------------------------------------|
-| X++ コンパイル時関数は .NET プログラムから呼び出すことはできません。 |
+> [!NOTE]
+> X++ コンパイル時関数は .NET プログラムから呼び出すことはできません。
 
 ### <a name="functions"></a>関数
 
@@ -2176,7 +2175,9 @@ str webActionItemStr(class webactionitem)
 
 ### <a name="syntax"></a>構文
 
-    str webDisplayContentItemStr(class webdisplaycontentitem)
+```xpp
+str webDisplayContentItemStr(class webdisplaycontentitem)
+```
 
 ### <a name="parameters"></a>パラメーター
 

@@ -3,7 +3,7 @@ title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 08/22/2019
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9308f06d922416320b7249bae7738c7fac5b16ec
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2876a1208c855899b5d2e38d448649fc611dffc1
+ms.sourcegitcommit: f52ddcad105aac4ad2caef709751ff80caf363c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811417"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036942"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -30,14 +30,14 @@ ms.locfileid: "2811417"
 
 ## <a name="microsoft-365-admin-center"></a>Microsoft 365 管理ビュー
 
-あなたの組織がFinance and Operationsのサブスクリプションを購入したら、次の手順を実行するテナントテナント管理者によって、あなたの組織のAzure Active Directory (Azure AD) テナントを有効にする必要があります。
+組織が Finance and Operations のサブスクリプションを購入したら、テナント管理者は、組織の Azure Active Directory (Azure AD) テナントを有効にし、次の手順を完了する必要があります。
 
 1. Inprivate/Incognito ブラウズセッションを開いて、[Microsoft 365 管理センター](https://admin.microsoft.com/)に移動します。
 2. テナント管理者の資格情報を使用してログインします。
-3. **請求 > サブスクリプション** に移動して、有効な **Dynamics 365 Unified Operations** サブスクリプションがある事を確認してください。 
+3. **請求 > 製品 & サービス**に移動して、配置するアプリケーションに対して有効なサブスクリプションがあることを確認します。 
    > [!NOTE]
-   > サブスクリプションが表示されない場合は、ライセンスパートナーに問い合わせて、サブスクリプショントランザクションの状態と、サブスクリプションのテナントを確認してください。 既定では、すべてのMicrosoftオンラインサービスが同じAzure ADテナント上で実行されている必要があります。
-4. 有効な**Dynamics 365 Unified Operations**サブスクリプションが表示されている場合は、LCSにログインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
+   > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態と、サブスクリプションのテナントを確認してください。 既定では、すべてのMicrosoftオンラインサービスが同じAzure ADテナント上で実行されている必要があります。
+4. 問題のサブスクリプションが有効と表示されている場合は、LCS にサインインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
 5. 別のプライベートブラウザータブを開き、[Lifecycle Services](https://lcs.dynamics.com)に移動します。 現在のテナント管理者の資格情報を使用してアクセスするには、**ログイン** を選択します。
 6. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
 7. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
@@ -52,7 +52,7 @@ ms.locfileid: "2811417"
 
 LCS で完了する最初の手順は、**プロジェクトのオンボード**です。 この手順は、Microsoft が管理するすべての環境を展開する前に、**2019 年 8 月 22 日 (PST) またはそれ以降**に作成されたすべての LCS 実装プロジェクトに必要です。 **プロジェクトのオンボード**機能には、アクション センターの通知または LCS 実装プロジェクト メニューを使用してアクセスできます。 LCS の**プロジェクト オンボード**にアクセスするには、プロジェクト所有者セキュリティ ロールに割り当てられている必要があります。
 
-LCS を開始するには、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。 
+LCS を開始するには、[Finance and Operations アプリ顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。 
 
 ## <a name="fasttrack-onboarding-services"></a>FastTrack オンボード サービス
 

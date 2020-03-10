@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7576c8cc084615edae1a0bf2479091e7e736ce2e
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: f5f1087613e94d0458ff0c8e7f0b35ee882c08d2
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030880"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070407"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
@@ -257,7 +257,7 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 2.  **FMRental** を右クリックし、**スタートアップ オブジェクトとして設定** をクリックします。
 3.  DriversLicenseChecker.cs のコード エディターで、OnValidateWriteHandler メソッドを検索します。 次のコード行を検索します。
 
-    ```xpp
+    ```csharp
     var result = CheckDriversLicense(rentalTable.Customer);
     ```
     

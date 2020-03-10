@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 813ab2e7244301a4f3b595659e25ce342dec4731
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f07510cf406969ebd5bcf98fa7d15442a362de70
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191596"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082021"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
@@ -42,7 +42,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real abs(real arg)
+```xpp
+real abs(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -56,19 +58,21 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void absExample(Args _args)
+```xpp
+static void absExample(Args _args)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = abs(-3.14);
+    r2 = abs(3.14);
+    if (r1 == r2)
     {
-        real r1;
-        real r2;
-        ;
-        r1 = abs(-3.14);
-        r2 = abs(3.14);
-        if (r1 == r2)
-        {
-            print "abs of values are the same";
-            pause;
-        }
+        print "abs of values are the same";
+        pause;
     }
+}
+```
 
 ## <a name="acos"></a>acos
 実数の逆余弦を取得します。
@@ -78,7 +82,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real acos(real arg)
+```xpp
+real acos(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -92,16 +98,18 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void acosExample(Args _args)
-    {
-        real r;
-        str  s;
-        ;
-        r = acos(0.0);
-        s = strFmt("The arc cosine of 0.0 is %1 ", r);
-        print s;
-        pause;
-    }
+```xpp
+static void acosExample(Args _args)
+{
+    real r;
+    str  s;
+    ;
+    r = acos(0.0);
+    s = strFmt("The arc cosine of 0.0 is %1 ", r);
+    print s;
+    pause;
+}
+```
 
 ## <a name="asin"></a>asin
 実数の逆正弦を取得します。
@@ -111,7 +119,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real asin(real arg)
+```xpp
+real asin(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -132,7 +142,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real atan(real arg)
+```xpp
+real atan(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -150,21 +162,25 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void atanExample(Args _args)
-    {
-        real r;
-        ;
-        r = atan(1.0);
-        print strFmt("The Arc Tangent of 1.0 is %1", r);
-        pause;
-    }
+```xpp
+static void atanExample(Args _args)
+{
+    real r;
+    ;
+    r = atan(1.0);
+    print strFmt("The Arc Tangent of 1.0 is %1", r);
+    pause;
+}
+```
 
 ## <a name="corrflagget"></a>corrFlagGet
 実数の修正フラグの状態を取得します。
 
 ### <a name="syntax"></a>構文
 
-    int corrFlagGet(real arg)
+```xpp
+int corrFlagGet(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -180,19 +196,23 @@ ms.locfileid: "2191596"
 
 次の例は、**1** を表示します。
 
-    static void corrFlagGetExample(Args _args)
-    {
-        real rr;
-        rr = corrFlagSet(0.36,2);
-        print(corrFlagGet(rr));
-    }
+```xpp
+static void corrFlagGetExample(Args _args)
+{
+    real rr;
+    rr = corrFlagSet(0.36,2);
+    print(corrFlagGet(rr));
+}
+```
 
 ## <a name="corrflagset"></a>corrFlagSet
 実数の補正フラグをコントロールします。
 
 ### <a name="syntax"></a>構文
 
-    real corrFlagSet(real real, int arg)
+```xpp
+real corrFlagSet(real real, int arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -212,7 +232,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real cos(real arg)
+```xpp
+real cos(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -232,14 +254,16 @@ ms.locfileid: "2191596"
 
 次のコード例は、**0.76** を表示します。
 
-    static void cosExample(Args _arg)
-    {
-        real r;
-        ;
-        r = cos(15);
-        print strFmt("Cos of 15 is %1", r);
-        pause;
-    }
+```xpp
+static void cosExample(Args _arg)
+{
+    real r;
+    ;
+    r = cos(15);
+    print strFmt("Cos of 15 is %1", r);
+    pause;
+}
+```
 
 ## <a name="cosh"></a>cosh
 実数の双曲線余弦を取得します。
@@ -249,7 +273,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real cosh(real arg)
+```xpp
+real cosh(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -267,21 +293,25 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void coshExample(Args _arg)
-    {
-        real r;
-        ;
-        r = cosh(0.1);
-        print "The hyperbolic cosine of 0.1 is " + num2Str(r, 2, 2, 1, 1);
-        pause;
-    }
+```xpp
+static void coshExample(Args _arg)
+{
+    real r;
+    ;
+    r = cosh(0.1);
+    print "The hyperbolic cosine of 0.1 is " + num2Str(r, 2, 2, 1, 1);
+    pause;
+}
+```
 
 ## <a name="decround"></a>decRound
 指定された小数点以下の桁数となるように数値の端数を丸めます。
 
 ### <a name="syntax"></a>構文
 
-    real decRound(real figure, int decimals)
+```xpp
+real decRound(real figure, int decimals)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -311,7 +341,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real exp(real arg)
+```xpp
+real exp(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -329,24 +361,28 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void expExample(Args _arg)
-    {
-        real r1;
-        real r2;
-        ;
-        r1 = exp(2.302585093);
-        r2 = exp10(2.302585093);
-        print strFmt("exp of 2.302585093 is %1", r1);
-        print strFmt("exp10 of 230258 is %1", r2);
-        pause;
-    }
+```xpp
+static void expExample(Args _arg)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = exp(2.302585093);
+    r2 = exp10(2.302585093);
+    print strFmt("exp of 2.302585093 is %1", r1);
+    print strFmt("exp10 of 230258 is %1", r2);
+    pause;
+}
+```
 
 ## <a name="exp10"></a>exp10
 指定した実数の値の常用逆対数を取得します。
 
 ### <a name="syntax"></a>構文
 
-    real exp10(real decimal)
+```xpp
+real exp10(real decimal)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -360,24 +396,28 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void exp10Example(Args _arg)
-    {
-        real r1;
-        real r2;
-        ;
-        r1 = exp(2.302585093);
-        r2 = exp10(2.302585093);
-        print strFmt("exp of 2.302585093 is %1", r1);
-        print strFmt("exp10 of 230258 is %1", r2);
-        pause;
-    }
+```xpp
+static void exp10Example(Args _arg)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = exp(2.302585093);
+    r2 = exp10(2.302585093);
+    print strFmt("exp of 2.302585093 is %1", r1);
+    print strFmt("exp10 of 230258 is %1", r2);
+    pause;
+}
+```
 
 ## <a name="frac"></a>frac
 実数の小数部を取得します。
 
 ### <a name="syntax"></a>構文
 
-    real frac(real decimal)
+```xpp
+real frac(real decimal)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -398,7 +438,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real log10(real arg)
+```xpp
+real log10(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -419,7 +461,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real logN(real arg)
+```xpp
+real logN(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -440,7 +484,9 @@ ms.locfileid: "2191596"
 
 2 つの指定した値の大きい方を取得します。
 
-    anytype max(anytype object1, anytype object2)
+```xpp
+anytype max(anytype object1, anytype object2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -463,7 +509,9 @@ ms.locfileid: "2191596"
 
 2 つの指定した値の小さい方を取得します。
 
-    anytype min(anytype object1, anytype object2)
+```xpp
+anytype min(anytype object1, anytype object2)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -482,22 +530,26 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void minExample(Args _arg)
-    {
-            anytype a;
-            real r = 3.0;
-            real s = 2.0;
+```xpp
+static void minExample(Args _arg)
+{
+    anytype a;
+    real r = 3.0;
+    real s = 2.0;
 
-            a = min(r, s);
-            print num2Str(a, 1, 2, 1, 1) + " is less than the other number.";
-    }
+    a = min(r, s);
+    print num2Str(a, 1, 2, 1, 1) + " is less than the other number.";
+}
+```
 
 ## <a name="power"></a>power
 実数を別の実数でべき乗します。
 
 ### <a name="syntax"></a>構文
 
-    real power(real arg, real exponent)
+```xpp
+real power(real arg, real exponent)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -520,7 +572,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real round(real _arg, real _decimals)
+```xpp
+real round(real _arg, real _decimals)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -551,7 +605,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real sin(real _arg)
+```xpp
+real sin(real _arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -569,28 +625,32 @@ ms.locfileid: "2191596"
 
 ### <a name="example"></a>例
 
-    static void sinExample(Args _arg)
-    {
-        real angleDegrees = 15.0;
-        real angleRadians;
-        real pi = 3.14;
-        real r;
-        ;
-        angleRadians = pi * angleDegrees / 180;
-        r = sin(angleRadians);
-        print "sin of a "
-            + num2Str(angleDegrees, 2, 2, 1, 1)
-            + " degree angle is "
-            + num2Str(r, 2, 10, 1, 1);
-        pause;
-    }
+```xpp
+static void sinExample(Args _arg)
+{
+    real angleDegrees = 15.0;
+    real angleRadians;
+    real pi = 3.14;
+    real r;
+    ;
+    angleRadians = pi * angleDegrees / 180;
+    r = sin(angleRadians);
+    print "sin of a "
+        + num2Str(angleDegrees, 2, 2, 1, 1)
+        + " degree angle is "
+        + num2Str(r, 2, 10, 1, 1);
+    pause;
+}
+```
 
 ## <a name="sinh"></a>sinh
 実数の双曲線正弦を取得します。
 
 ### <a name="syntax"></a>構文
 
-    real sinh(real _arg)
+```xpp
+real sinh(real _arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -610,21 +670,23 @@ ms.locfileid: "2191596"
 
 次の例は、**sinh** 関数を示しています。
 
-    static void sinhExample(Args _arg)
-    {
-        real angleDegrees = 45.0;
-        real angleRadians;
-        real pi = 3.14;
-        real r;
-        ;
-        angleRadians = pi * angleDegrees / 180;
-        r = sinh(angleRadians);
-        print "sinh of a "
-        + num2Str(angleDegrees, 2, 2, 1, 1)
-        + " degree angle is "
-        + num2Str(r, 2, 15, 1, 1);
-        pause;
-    }
+```xpp
+static void sinhExample(Args _arg)
+{
+    real angleDegrees = 45.0;
+    real angleRadians;
+    real pi = 3.14;
+    real r;
+    ;
+    angleRadians = pi * angleDegrees / 180;
+    r = sinh(angleRadians);
+    print "sinh of a "
+    + num2Str(angleDegrees, 2, 2, 1, 1)
+    + " degree angle is "
+    + num2Str(r, 2, 15, 1, 1);
+    pause;
+}
+```
 
 <a name="tan"></a>tan
 ---
@@ -633,7 +695,9 @@ ms.locfileid: "2191596"
 
 ### <a name="syntax"></a>構文
 
-    real tan(real arg)
+```xpp
+real tan(real arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -653,21 +717,25 @@ ms.locfileid: "2191596"
 
 次の例は、**tan** 関数を示しています。
 
-    static void tanExample(Args _arg)
-    {
-        real r;
-        ;
-        r = tan(250);
-        print strFmt("Tan of 250 is %1", r);
-        pause;
-    }
+```xpp
+static void tanExample(Args _arg)
+{
+    real r;
+    ;
+    r = tan(250);
+    print strFmt("Tan of 250 is %1", r);
+    pause;
+}
+```
 
 ## <a name="tanh"></a>tanh
 実数の双曲線正接を取得します。
 
 ### <a name="syntax"></a>構文
 
-    real tanh(real _arg)
+```xpp
+real tanh(real _arg)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -683,22 +751,26 @@ ms.locfileid: "2191596"
 
 次の例は、**tanh** 関数を示しています。
 
-    static void tanhExample(Args _arg)
-    {
-        real r;
-        ;
-        r = tanh(0.1);
-        print "The hyperbolic tangent of angle 0.1 is "
-        + num2Str(r, 2, 10, 1, 1);
-        pause;
-    }
+```xpp
+static void tanhExample(Args _arg)
+{
+    real r;
+    ;
+    r = tanh(0.1);
+    print "The hyperbolic tangent of angle 0.1 is "
+    + num2Str(r, 2, 10, 1, 1);
+    pause;
+}
+```
 
 ## <a name="trunc"></a>trunc
 小数点以下を削除して実数を切り捨てます。
 
 ### <a name="syntax"></a>構文
 
-    real trunc(real _decimal)
+```xpp
+real trunc(real _decimal)
+```
 
 ### <a name="parameters"></a>パラメーター
 
@@ -718,14 +790,15 @@ ms.locfileid: "2191596"
 
 次の例では、2.7147 を 2.00 に切り捨てます。
 
-    static void truncExample(Args _arg)
-    {
-        real r;
-        ;
-        r = trunc(2.7147);
-        print strFmt("r = %1",  r);
-        pause;
-    }
-
+```xpp
+static void truncExample(Args _arg)
+{
+    real r;
+    ;
+    r = trunc(2.7147);
+    print strFmt("r = %1",  r);
+    pause;
+}
+```
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9deff4f5efb5d7c17b72d67f28a0be02dd2492ec
-ms.sourcegitcommit: c0edf2f59d40bda784ea2472c21293c4a450770e
+ms.openlocfilehash: ae662491d93459d65db716fb612145d3915e2a0f
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029204"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070436"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
@@ -85,9 +85,9 @@ Web ストア フロントを HTTPS 経由でアクセスする場合は、前�
 
 E コマースの Web サイトは、web.configで指定された作業単位数 (チャネル) で動作します。これを変更するには、以下の OU \# を変更します。 Fabrikam はデモ データ内で「077」であることに注意してください。 RetailStorefrontWebSite の web.config 内の "retailServerUrl" を更新する必要があります。 ローカル ホストの代わりにマシン名を使用するには、次の 2 つのフィールドを更新する必要があります。
 
-    <ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
+-  `<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">`
 
-    <add key="OperatingUnitNumber" value="068" />
+-  `<add key="OperatingUnitNumber" value="068" />`
 
 ## <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 ### <a name="authentication-providers-that-you-are-using"></a>使用している認証プロバイダー
@@ -96,8 +96,10 @@ E コマース プラットフォームは、認証のためのメカニズム�
 
 1.  web.config ファイルを編集し、次のように変更してください。
 
-        redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
-
+    ```xml
+    redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
+    ```
+    
     後続のステップは、追加プロバイダーを登録する場合にのみ行う必要があります。
 
 2.  **Retail 共有パラメーター -&gt; ID プロバイダーを開く**フォームは、追加プロバイダーを登録するために使用できます。
