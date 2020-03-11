@@ -17,131 +17,131 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002315"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057859"
 ---
-# <a name="warehouse-set-up"></a><span data-ttu-id="904a1-103">倉庫の設定</span><span class="sxs-lookup"><span data-stu-id="904a1-103">Warehouse set up</span></span>
+# <a name="warehouse-set-up"></a><span data-ttu-id="37898-103">倉庫の設定</span><span class="sxs-lookup"><span data-stu-id="37898-103">Warehouse set up</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="904a1-104">このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="904a1-104">This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="37898-104">このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="37898-104">This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="904a1-105">概要</span><span class="sxs-lookup"><span data-stu-id="904a1-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="37898-105">概要</span><span class="sxs-lookup"><span data-stu-id="37898-105">Overview</span></span>
 
-<span data-ttu-id="904a1-106">各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。</span><span class="sxs-lookup"><span data-stu-id="904a1-106">Each Commerce channel requires a configured warehouse to be associated with it.</span></span> <span data-ttu-id="904a1-107">次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。</span><span class="sxs-lookup"><span data-stu-id="904a1-107">The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel.</span></span> <span data-ttu-id="904a1-108">倉庫の設定に関する詳細については、[倉庫管理の概要](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="904a1-108">For more information regarding warehouse setup, please see the [Warehouse management overview](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).</span></span>
+<span data-ttu-id="37898-106">各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。</span><span class="sxs-lookup"><span data-stu-id="37898-106">Each Commerce channel requires a configured warehouse to be associated with it.</span></span> <span data-ttu-id="37898-107">次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。</span><span class="sxs-lookup"><span data-stu-id="37898-107">The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel.</span></span> <span data-ttu-id="37898-108">倉庫の設定に関する詳細については、[倉庫管理の概要](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="37898-108">For more information regarding warehouse setup, please see the [Warehouse management overview](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).</span></span>
 
-## <a name="configure-a-warehouse-site"></a><span data-ttu-id="904a1-109">倉庫サイトのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="904a1-109">Configure a warehouse site</span></span>
+## <a name="configure-a-warehouse-site"></a><span data-ttu-id="37898-109">倉庫サイトのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="37898-109">Configure a warehouse site</span></span>
 
-<span data-ttu-id="904a1-110">倉庫を設定する前に、倉庫サイトをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-110">Before setting up a warehouse, you need to configure a warehouse site.</span></span>
+<span data-ttu-id="37898-110">倉庫を設定する前に、倉庫サイトをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-110">Before setting up a warehouse, you need to configure a warehouse site.</span></span>
 
-<span data-ttu-id="904a1-111">倉庫のサイトをコンフィギュレーションするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="904a1-111">To configure a warehouse site, follow these steps.</span></span>
+<span data-ttu-id="37898-111">倉庫のサイトをコンフィギュレーションするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="37898-111">To configure a warehouse site, follow these steps.</span></span>
 
-1. <span data-ttu-id="904a1-112">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> サイト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="904a1-112">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Sites**.</span></span>
-1. <span data-ttu-id="904a1-113">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-113">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="904a1-114">**サイト**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-114">In the **Site** field, enter a value.</span></span>
-1. <span data-ttu-id="904a1-115">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-115">In the **Name** field, enter a value.</span></span>
-1. <span data-ttu-id="904a1-116">**一般**セクションで、適切な**タイム ゾーン**を設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-116">In the **General** section, set the appropriate **Time zone**.</span></span>
-1. <span data-ttu-id="904a1-117">**住所**セクションに、住所を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-117">In the **Addresses** section, enter an address.</span></span>
-1. <span data-ttu-id="904a1-118">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-118">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="37898-112">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> サイト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="37898-112">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Sites**.</span></span>
+1. <span data-ttu-id="37898-113">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-113">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="37898-114">**サイト**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-114">In the **Site** field, enter a value.</span></span>
+1. <span data-ttu-id="37898-115">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-115">In the **Name** field, enter a value.</span></span>
+1. <span data-ttu-id="37898-116">**一般**セクションで、適切な**タイム ゾーン**を設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-116">In the **General** section, set the appropriate **Time zone**.</span></span>
+1. <span data-ttu-id="37898-117">**住所**セクションに、住所を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-117">In the **Addresses** section, enter an address.</span></span>
+1. <span data-ttu-id="37898-118">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-118">On the action pane, select **Save**.</span></span>
 
-<span data-ttu-id="904a1-119">次の図は、倉庫サイトの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="904a1-119">The following image shows an example warehouse site.</span></span>
+<span data-ttu-id="37898-119">次の図は、倉庫サイトの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="37898-119">The following image shows an example warehouse site.</span></span>
 
 ![倉庫サイトの例](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a><span data-ttu-id="904a1-121">倉庫の設定</span><span class="sxs-lookup"><span data-stu-id="904a1-121">Set up a warehouse</span></span>
+## <a name="set-up-a-warehouse"></a><span data-ttu-id="37898-121">倉庫の設定</span><span class="sxs-lookup"><span data-stu-id="37898-121">Set up a warehouse</span></span>
 
-<span data-ttu-id="904a1-122">倉庫を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="904a1-122">To set up a warehouse, follow these steps.</span></span>
+<span data-ttu-id="37898-122">倉庫を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="37898-122">To set up a warehouse, follow these steps.</span></span>
 
-1. <span data-ttu-id="904a1-123">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="904a1-123">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
-1. <span data-ttu-id="904a1-124">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-124">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="904a1-125">**倉庫**フィールドで値を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-125">In the **Warehouse** field, enter a value.</span></span>  <span data-ttu-id="904a1-126">これが小売用店舗への 1:1 マッピングである場合は、店舗名または地域の配送センターの名前を使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="904a1-126">If this is a 1:1 mapping to a retail store, consider using the store name or the name of a regional distribution center.</span></span>
-1. <span data-ttu-id="904a1-127">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-127">In the **Name** field, enter a value.</span></span>
-1. <span data-ttu-id="904a1-128">**サイト**ドロップダウン リストで、以前に作成した倉庫サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-128">In the **Site** drop-down list, select the warehouse site created previously.</span></span>
-1. <span data-ttu-id="904a1-129">**タイプ**フィールドで、**既定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-129">In the **Type** field, select **Default**.</span></span>
-    - <span data-ttu-id="904a1-130">**検査倉庫**を設定する場合は、最初に次の手順に従って、**タイプ**が**検査**に設定されている追加の倉庫を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-130">If you want to set a **Quarantine warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Quarantine**.</span></span>
-    - <span data-ttu-id="904a1-131">**トランジット倉庫**を設定する場合は、最初に次の手順に従って、**タイプ**が**トランジット**に設定されている追加の倉庫を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-131">If you want to set a **Transit warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Transit**.</span></span>
-1. <span data-ttu-id="904a1-132">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-132">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="37898-123">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="37898-123">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="37898-124">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-124">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="37898-125">**倉庫**フィールドで値を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-125">In the **Warehouse** field, enter a value.</span></span>  <span data-ttu-id="37898-126">これが店舗への 1:1 マッピングである場合は、店舗名または地域の配送センターの名前を使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="37898-126">If this is a 1:1 mapping to a store, consider using the store name or the name of a regional distribution center.</span></span>
+1. <span data-ttu-id="37898-127">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-127">In the **Name** field, enter a value.</span></span>
+1. <span data-ttu-id="37898-128">**サイト**ドロップダウン リストで、以前に作成した倉庫サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-128">In the **Site** drop-down list, select the warehouse site created previously.</span></span>
+1. <span data-ttu-id="37898-129">**タイプ**フィールドで、**既定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-129">In the **Type** field, select **Default**.</span></span>
+    - <span data-ttu-id="37898-130">**検査倉庫**を設定する場合は、最初に次の手順に従って、**タイプ**が**検査**に設定されている追加の倉庫を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-130">If you want to set a **Quarantine warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Quarantine**.</span></span>
+    - <span data-ttu-id="37898-131">**トランジット倉庫**を設定する場合は、最初に次の手順に従って、**タイプ**が**トランジット**に設定されている追加の倉庫を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-131">If you want to set a **Transit warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Transit**.</span></span>
+1. <span data-ttu-id="37898-132">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-132">On the action pane, select **Save**.</span></span>
 
-## <a name="set-up-inventory-aisles"></a><span data-ttu-id="904a1-133">通路を設定します</span><span class="sxs-lookup"><span data-stu-id="904a1-133">Set up inventory aisles</span></span>
+## <a name="set-up-inventory-aisles"></a><span data-ttu-id="37898-133">通路を設定します</span><span class="sxs-lookup"><span data-stu-id="37898-133">Set up inventory aisles</span></span>
 
-<span data-ttu-id="904a1-134">在庫通路を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="904a1-134">To set up inventory aisles, follow these steps.</span></span>
+<span data-ttu-id="37898-134">在庫通路を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="37898-134">To set up inventory aisles, follow these steps.</span></span>
 
-1. <span data-ttu-id="904a1-135">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 場所の設定 \> 在庫通路**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="904a1-135">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Location setup \> Inventory aisles**.</span></span>
-1. <span data-ttu-id="904a1-136">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-136">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="904a1-137">**倉庫**ドロップダウン リストで、以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-137">In the **Warehouse** drop-down list, select the warehouse created previously.</span></span>
-1. <span data-ttu-id="904a1-138">**通路**フィールドに、名前を入力します (例: "Def")。</span><span class="sxs-lookup"><span data-stu-id="904a1-138">In the **Aisle** field, enter a name (for example, "Def").</span></span>
-1. <span data-ttu-id="904a1-139">**名前**フィールドに、名前を入力します (例: "既定の通路")。</span><span class="sxs-lookup"><span data-stu-id="904a1-139">In the **Name** field, enter a name (for example, "Default aisle").</span></span>
-1. <span data-ttu-id="904a1-140">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-140">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="37898-135">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 場所の設定 \> 在庫通路**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="37898-135">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Location setup \> Inventory aisles**.</span></span>
+1. <span data-ttu-id="37898-136">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-136">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="37898-137">**倉庫**ドロップダウン リストで、以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-137">In the **Warehouse** drop-down list, select the warehouse created previously.</span></span>
+1. <span data-ttu-id="37898-138">**通路**フィールドに、名前を入力します (例: "Def")。</span><span class="sxs-lookup"><span data-stu-id="37898-138">In the **Aisle** field, enter a name (for example, "Def").</span></span>
+1. <span data-ttu-id="37898-139">**名前**フィールドに、名前を入力します (例: "既定の通路")。</span><span class="sxs-lookup"><span data-stu-id="37898-139">In the **Name** field, enter a name (for example, "Default aisle").</span></span>
+1. <span data-ttu-id="37898-140">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-140">On the action pane, select **Save**.</span></span>
 
-## <a name="set-up-warehouse-inventory-locations"></a><span data-ttu-id="904a1-141">倉庫の在庫場所の設定</span><span class="sxs-lookup"><span data-stu-id="904a1-141">Set up warehouse inventory locations</span></span>
+## <a name="set-up-warehouse-inventory-locations"></a><span data-ttu-id="37898-141">倉庫の在庫場所の設定</span><span class="sxs-lookup"><span data-stu-id="37898-141">Set up warehouse inventory locations</span></span>
 
-<span data-ttu-id="904a1-142">標準、破損、および返品された在庫の倉庫の在庫場所を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="904a1-142">To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.</span></span>
+<span data-ttu-id="37898-142">標準、破損、および返品された在庫の倉庫の在庫場所を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="37898-142">To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.</span></span>
 
-1. <span data-ttu-id="904a1-143">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="904a1-143">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
-1. <span data-ttu-id="904a1-144">以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-144">Select the warehouse you created previously.</span></span>
-1. <span data-ttu-id="904a1-145">アクション ウィンドウで、**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-145">On the action pane, select **Edit**.</span></span>
-1. <span data-ttu-id="904a1-146">アクション ウィンドウで、**倉庫**を選択し、**在庫場所**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-146">On the action pane, select **Warehouse**, and then select **Inventory location**.</span></span>
-1. <span data-ttu-id="904a1-147">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-147">On the action pane, select **New**.</span></span> <span data-ttu-id="904a1-148">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-148">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
-    1. <span data-ttu-id="904a1-149">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-149">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
-    1. <span data-ttu-id="904a1-150">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="904a1-150">Set **Manual update** to **Yes**</span></span>
-    1. <span data-ttu-id="904a1-151">**場所**ボックスに、倉庫の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-151">In the **Location** box, enter the name of the warehouse.</span></span>
-    1. <span data-ttu-id="904a1-152">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-152">On the action pane, select **Save**.</span></span>
- 1. <span data-ttu-id="904a1-153">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-153">On the action pane, select **New**.</span></span>  <span data-ttu-id="904a1-154">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-154">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
-    1. <span data-ttu-id="904a1-155">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-155">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span>  
-    1. <span data-ttu-id="904a1-156">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="904a1-156">Set **Manual update** to **Yes**</span></span>
-    1. <span data-ttu-id="904a1-157">**場所**ボックスに、「破損」と入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-157">In the **Location** box, enter "Damaged".</span></span>
-    1. <span data-ttu-id="904a1-158">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-158">On the action pane, select **Save**.</span></span>
- 1. <span data-ttu-id="904a1-159">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-159">On the action pane, select **New**.</span></span>  <span data-ttu-id="904a1-160">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="904a1-160">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
-    1. <span data-ttu-id="904a1-161">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-161">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
-    1. <span data-ttu-id="904a1-162">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="904a1-162">Set **Manual update** to **Yes**</span></span>
-    1. <span data-ttu-id="904a1-163">**場所**ボックスに、「返品」と入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-163">In the **Location** box, enter "Returns".</span></span>
-    1. <span data-ttu-id="904a1-164">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-164">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="37898-143">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="37898-143">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="37898-144">以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-144">Select the warehouse you created previously.</span></span>
+1. <span data-ttu-id="37898-145">アクション ウィンドウで、**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-145">On the action pane, select **Edit**.</span></span>
+1. <span data-ttu-id="37898-146">アクション ウィンドウで、**倉庫**を選択し、**在庫場所**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-146">On the action pane, select **Warehouse**, and then select **Inventory location**.</span></span>
+1. <span data-ttu-id="37898-147">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-147">On the action pane, select **New**.</span></span> <span data-ttu-id="37898-148">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-148">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="37898-149">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-149">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
+    1. <span data-ttu-id="37898-150">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="37898-150">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="37898-151">**場所**ボックスに、倉庫の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-151">In the **Location** box, enter the name of the warehouse.</span></span>
+    1. <span data-ttu-id="37898-152">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-152">On the action pane, select **Save**.</span></span>
+ 1. <span data-ttu-id="37898-153">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-153">On the action pane, select **New**.</span></span>  <span data-ttu-id="37898-154">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-154">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="37898-155">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-155">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span>  
+    1. <span data-ttu-id="37898-156">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="37898-156">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="37898-157">**場所**ボックスに、「破損」と入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-157">In the **Location** box, enter "Damaged".</span></span>
+    1. <span data-ttu-id="37898-158">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-158">On the action pane, select **Save**.</span></span>
+ 1. <span data-ttu-id="37898-159">アクション ウィンドウで、**新規**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-159">On the action pane, select **New**.</span></span>  <span data-ttu-id="37898-160">**倉庫**ドロップダウン リストには、既定で新しい倉庫を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37898-160">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="37898-161">**通路**ボックスに、前に指定した通路の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-161">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
+    1. <span data-ttu-id="37898-162">**手動更新**を**はい**に設定する</span><span class="sxs-lookup"><span data-stu-id="37898-162">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="37898-163">**場所**ボックスに、「返品」と入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-163">In the **Location** box, enter "Returns".</span></span>
+    1. <span data-ttu-id="37898-164">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-164">On the action pane, select **Save**.</span></span>
     
-<span data-ttu-id="904a1-165">次の図は、サンフランシスコの倉庫在庫場所の設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="904a1-165">The following image shows a San Francisco warehouse inventory location setup.</span></span>
+<span data-ttu-id="37898-165">次の図は、サンフランシスコの倉庫在庫場所の設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="37898-165">The following image shows a San Francisco warehouse inventory location setup.</span></span>
 
 ![在庫場所の設定例](media/warehouse-inventory-locations.png)
     
-## <a name="complete-warehouse-setup"></a><span data-ttu-id="904a1-167">倉庫の設定の完了</span><span class="sxs-lookup"><span data-stu-id="904a1-167">Complete warehouse setup</span></span>
+## <a name="complete-warehouse-setup"></a><span data-ttu-id="37898-167">倉庫の設定の完了</span><span class="sxs-lookup"><span data-stu-id="37898-167">Complete warehouse setup</span></span>
 
-<span data-ttu-id="904a1-168">倉庫の設定を完了するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="904a1-168">To complete warehouse setup, follow these steps.</span></span>
+<span data-ttu-id="37898-168">倉庫の設定を完了するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="37898-168">To complete warehouse setup, follow these steps.</span></span>
 
-1. <span data-ttu-id="904a1-169">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="904a1-169">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
-1. <span data-ttu-id="904a1-170">以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-170">Select the warehouse you previously created.</span></span>
-1. <span data-ttu-id="904a1-171">アクション ウィンドウで、**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-171">On the action pane, select **Edit**.</span></span>
-1. <span data-ttu-id="904a1-172">**在庫および倉庫管理**で:</span><span class="sxs-lookup"><span data-stu-id="904a1-172">Under **Inventory and warehouse management**:</span></span>
-    1. <span data-ttu-id="904a1-173">**既定の受入場所**を上記で作成した既定の場所に設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-173">Set **Default receipt location** to the default location created above.</span></span>
-    1. <span data-ttu-id="904a1-174">**既定の払出場所**を上記で作成した既定の場所に設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-174">Select **Default issue location** to the default location created above.</span></span>
-1. <span data-ttu-id="904a1-175">**住所**セクションで、倉庫の住所を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-175">Under the **Addresses** section, enter a warehouse address.</span></span>
-1. <span data-ttu-id="904a1-176">**小売**セクションで:</span><span class="sxs-lookup"><span data-stu-id="904a1-176">Under the **Retail** section:</span></span> 
-    1. <span data-ttu-id="904a1-177">**既定の返品場所**ボックスに、以前に作成した返品場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-177">In the **Default return location** box, enter the returns location created previously.</span></span>
-    1. <span data-ttu-id="904a1-178">**格納**を**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-178">Set **Store** to **Yes**.</span></span>
-    1. <span data-ttu-id="904a1-179">**重量**を**1.00**に設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-179">Set **Weight** to **1.00**.</span></span> 
-    1. <span data-ttu-id="904a1-180">**保管分析コード**ボックスに、以前に作成した既定の場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="904a1-180">In the **Storage Dimensions** box, enter the default location created previously.</span></span>
-1. <span data-ttu-id="904a1-181">**倉庫**セクションで、**現物マイナス在庫**を**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="904a1-181">Under the **Warehouse** section, set **Physical negative inventory** to **Yes**.</span></span>
-1. <span data-ttu-id="904a1-182">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="904a1-182">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="37898-169">ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="37898-169">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="37898-170">以前に作成した倉庫を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-170">Select the warehouse you previously created.</span></span>
+1. <span data-ttu-id="37898-171">アクション ウィンドウで、**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-171">On the action pane, select **Edit**.</span></span>
+1. <span data-ttu-id="37898-172">**在庫および倉庫管理**で:</span><span class="sxs-lookup"><span data-stu-id="37898-172">Under **Inventory and warehouse management**:</span></span>
+    1. <span data-ttu-id="37898-173">**既定の受入場所**を上記で作成した既定の場所に設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-173">Set **Default receipt location** to the default location created above.</span></span>
+    1. <span data-ttu-id="37898-174">**既定の払出場所**を上記で作成した既定の場所に設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-174">Select **Default issue location** to the default location created above.</span></span>
+1. <span data-ttu-id="37898-175">**住所**セクションで、倉庫の住所を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-175">Under the **Addresses** section, enter a warehouse address.</span></span>
+1. <span data-ttu-id="37898-176">**小売**セクションで:</span><span class="sxs-lookup"><span data-stu-id="37898-176">Under the **Retail** section:</span></span> 
+    1. <span data-ttu-id="37898-177">**既定の返品場所**ボックスに、以前に作成した返品場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-177">In the **Default return location** box, enter the returns location created previously.</span></span>
+    1. <span data-ttu-id="37898-178">**格納**を**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-178">Set **Store** to **Yes**.</span></span>
+    1. <span data-ttu-id="37898-179">**重量**を**1.00**に設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-179">Set **Weight** to **1.00**.</span></span> 
+    1. <span data-ttu-id="37898-180">**保管分析コード**ボックスに、以前に作成した既定の場所を入力します。</span><span class="sxs-lookup"><span data-stu-id="37898-180">In the **Storage Dimensions** box, enter the default location created previously.</span></span>
+1. <span data-ttu-id="37898-181">**倉庫**セクションで、**現物マイナス在庫**を**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="37898-181">Under the **Warehouse** section, set **Physical negative inventory** to **Yes**.</span></span>
+1. <span data-ttu-id="37898-182">アクション ウィンドウで、**保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="37898-182">On the action pane, select **Save**.</span></span>
 
-<span data-ttu-id="904a1-183">次の図は、コンフィギュレーション済倉庫の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="904a1-183">The following image shows details for a configured warehouse.</span></span>
+<span data-ttu-id="37898-183">次の図は、コンフィギュレーション済倉庫の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="37898-183">The following image shows details for a configured warehouse.</span></span>
 
 ![コンフィギュレーション済倉庫の例](media/warehouse-sample.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="904a1-185">追加リソース</span><span class="sxs-lookup"><span data-stu-id="904a1-185">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="37898-185">追加リソース</span><span class="sxs-lookup"><span data-stu-id="37898-185">Additional resources</span></span>
 
-[<span data-ttu-id="904a1-186">倉庫管理の概要</span><span class="sxs-lookup"><span data-stu-id="904a1-186">Warehouse management overview</span></span>](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[<span data-ttu-id="37898-186">倉庫管理の概要</span><span class="sxs-lookup"><span data-stu-id="37898-186">Warehouse management overview</span></span>](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
 
-[<span data-ttu-id="904a1-187">チャネルの概要</span><span class="sxs-lookup"><span data-stu-id="904a1-187">Channels overview</span></span>](channels-overview.md)
+[<span data-ttu-id="37898-187">チャネルの概要</span><span class="sxs-lookup"><span data-stu-id="37898-187">Channels overview</span></span>](channels-overview.md)
 
-[<span data-ttu-id="904a1-188">チャネル設定の前提条件</span><span class="sxs-lookup"><span data-stu-id="904a1-188">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+[<span data-ttu-id="37898-188">チャネル設定の前提条件</span><span class="sxs-lookup"><span data-stu-id="37898-188">Channel setup prerequisites</span></span>](channels-prerequisites.md)
 
-[<span data-ttu-id="904a1-189">小売チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="904a1-189">Set up a retail channel</span></span>](channel-setup-retail.md)
+[<span data-ttu-id="37898-189">小売チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="37898-189">Set up a retail channel</span></span>](channel-setup-retail.md)
     
-[<span data-ttu-id="904a1-190">オンライン チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="904a1-190">Set up an online channel</span></span>](channel-setup-online.md)
+[<span data-ttu-id="37898-190">オンライン チャネルの設定</span><span class="sxs-lookup"><span data-stu-id="37898-190">Set up an online channel</span></span>](channel-setup-online.md)
 
-[<span data-ttu-id="904a1-191">コール センターのチャネルの設定</span><span class="sxs-lookup"><span data-stu-id="904a1-191">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+[<span data-ttu-id="37898-191">コール センターのチャネルの設定</span><span class="sxs-lookup"><span data-stu-id="37898-191">Set up a call center channel</span></span>](channel-setup-callcenter.md)
 
 
 

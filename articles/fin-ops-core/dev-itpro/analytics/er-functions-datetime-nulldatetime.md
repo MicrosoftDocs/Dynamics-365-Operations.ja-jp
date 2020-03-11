@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4165f6e064d12200907ac76b6779d35bc578daba
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 3cd4c152d4e220a2f6315265ed5e44d148134279
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917491"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042263"
 ---
-# <span data-ttu-id="794f0-103"><a name="NULLDATETIME">NULLDATETIME ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="794f0-103"><a name="NULLDATETIME">NULLDATETIME ER function</a></span></span>
+# <span data-ttu-id="adf26-103"><a name="NULLDATETIME">NULLDATETIME ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="adf26-103"><a name="NULLDATETIME">NULLDATETIME ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="794f0-104">`NULLDATETIME` 関数は、**null** の日時値 (1900 年 1 月 1 日) を表す *DateTime* 値を協定世界時 (グリニッジ標準時 \[GMT\]) で返します。</span><span class="sxs-lookup"><span data-stu-id="794f0-104">The `NULLDATETIME` function returns a *DateTime* value that represents the **null** date/time value (January 1, 1900) in Coordinated Universal Time (Greenwich Mean Time \[GMT\]).</span></span>
+<span data-ttu-id="adf26-104">`NULLDATETIME` 関数は、**null** の日時値 (1900 年 1 月 1 日) を表す *DateTime* 値を協定世界時 (グリニッジ標準時 \[GMT\]) で返します。</span><span class="sxs-lookup"><span data-stu-id="adf26-104">The `NULLDATETIME` function returns a *DateTime* value that represents the **null** date/time value (January 1, 1900) in Coordinated Universal Time (Greenwich Mean Time \[GMT\]).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="794f0-105">構文</span><span class="sxs-lookup"><span data-stu-id="794f0-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="adf26-105">構文</span><span class="sxs-lookup"><span data-stu-id="adf26-105">Syntax</span></span>
 
-```
+```vb
 NULLDATETIME ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="794f0-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="794f0-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="adf26-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="adf26-106">Return values</span></span>
 
-<span data-ttu-id="794f0-107">*日時*</span><span class="sxs-lookup"><span data-stu-id="794f0-107">*DateTime*</span></span>
+<span data-ttu-id="adf26-107">*日時*</span><span class="sxs-lookup"><span data-stu-id="adf26-107">*DateTime*</span></span>
 
-<span data-ttu-id="794f0-108">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="794f0-108">The resulting date/time value.</span></span>
+<span data-ttu-id="adf26-108">結果日時値。</span><span class="sxs-lookup"><span data-stu-id="adf26-108">The resulting date/time value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="794f0-109">例</span><span class="sxs-lookup"><span data-stu-id="794f0-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="adf26-109">例</span><span class="sxs-lookup"><span data-stu-id="adf26-109">Example</span></span>
 
-<span data-ttu-id="794f0-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` は、**言語と国/地域の基本設定**セクションにタイムゾーン値 **(GMT) 協定世界時** を持つアプリケーション ユーザーによって開始されたプロセス中に呼び出されると、文字列値 **1900-01-01T00:00:00.0000000+00:00** を返します。</span><span class="sxs-lookup"><span data-stu-id="794f0-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returns the string value **1900-01-01T00:00:00.0000000+00:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT) Coordinated Universal Time** in the **Language and country/region preferences** section.</span></span>
+<span data-ttu-id="adf26-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` は、**言語と国/地域の基本設定**セクションにタイムゾーン値 **(GMT) 協定世界時** を持つアプリケーション ユーザーによって開始されたプロセス中に呼び出されると、文字列値 **1900-01-01T00:00:00.0000000+00:00** を返します。</span><span class="sxs-lookup"><span data-stu-id="adf26-110">`DATETIMEFORMAT( NULLDATETIME(), "O")` returns the string value **1900-01-01T00:00:00.0000000+00:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT) Coordinated Universal Time** in the **Language and country/region preferences** section.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="794f0-111">追加リソース</span><span class="sxs-lookup"><span data-stu-id="794f0-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="adf26-111">追加リソース</span><span class="sxs-lookup"><span data-stu-id="adf26-111">Additional resources</span></span>
 
-[<span data-ttu-id="794f0-112">日時の関数</span><span class="sxs-lookup"><span data-stu-id="794f0-112">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="adf26-112">日時の関数</span><span class="sxs-lookup"><span data-stu-id="adf26-112">Date and time functions</span></span>](er-functions-category-datetime.md)

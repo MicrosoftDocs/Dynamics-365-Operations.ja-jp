@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b15277dba26dc7864193b11a127944daca6b989f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: a518f255a4488c5ed6e007b1787e678fd88aff36
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916042"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041725"
 ---
-# <span data-ttu-id="15036-103"><a name="NOT">NOT ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="15036-103"><a name="NOT">NOT ER function</a></span></span>
+# <span data-ttu-id="6595e-103"><a name="NOT">NOT ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="6595e-103"><a name="NOT">NOT ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="15036-104">`NOT` 関数は、指定された条件の取消論理値を*ブール*値として返します。</span><span class="sxs-lookup"><span data-stu-id="15036-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
+<span data-ttu-id="6595e-104">`NOT` 関数は、指定された条件の取消論理値を*ブール*値として返します。</span><span class="sxs-lookup"><span data-stu-id="6595e-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="15036-105">構文</span><span class="sxs-lookup"><span data-stu-id="15036-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6595e-105">構文</span><span class="sxs-lookup"><span data-stu-id="6595e-105">Syntax</span></span>
 
-```
+```vb
 NOT (condition)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="15036-106">引数</span><span class="sxs-lookup"><span data-stu-id="15036-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="6595e-106">引数</span><span class="sxs-lookup"><span data-stu-id="6595e-106">Arguments</span></span>
 
-<span data-ttu-id="15036-107">`condition`: *ブール値*</span><span class="sxs-lookup"><span data-stu-id="15036-107">`condition`: *Boolean*</span></span>
+<span data-ttu-id="6595e-107">`condition`: *ブール値*</span><span class="sxs-lookup"><span data-stu-id="6595e-107">`condition`: *Boolean*</span></span>
 
-<span data-ttu-id="15036-108">取り消す必要がある有効な条件式。</span><span class="sxs-lookup"><span data-stu-id="15036-108">A valid conditional expression that must be reversed.</span></span>
+<span data-ttu-id="6595e-108">取り消す必要がある有効な条件式。</span><span class="sxs-lookup"><span data-stu-id="6595e-108">A valid conditional expression that must be reversed.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="15036-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="15036-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="6595e-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="6595e-109">Return values</span></span>
 
-<span data-ttu-id="15036-110">*ブール型*</span><span class="sxs-lookup"><span data-stu-id="15036-110">*Boolean*</span></span>
+<span data-ttu-id="6595e-110">*ブール型*</span><span class="sxs-lookup"><span data-stu-id="6595e-110">*Boolean*</span></span>
 
-<span data-ttu-id="15036-111">結果*ブール*値。</span><span class="sxs-lookup"><span data-stu-id="15036-111">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="6595e-111">結果*ブール*値。</span><span class="sxs-lookup"><span data-stu-id="6595e-111">The resulting *Boolean* value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="15036-112">例</span><span class="sxs-lookup"><span data-stu-id="15036-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6595e-112">例</span><span class="sxs-lookup"><span data-stu-id="6595e-112">Example</span></span>
 
-<span data-ttu-id="15036-113">`NOT (TRUE)` は、**FALSE** 返します。</span><span class="sxs-lookup"><span data-stu-id="15036-113">`NOT (TRUE)` returns **FALSE**.</span></span>
+<span data-ttu-id="6595e-113">`NOT (TRUE)` は、**FALSE** 返します。</span><span class="sxs-lookup"><span data-stu-id="6595e-113">`NOT (TRUE)` returns **FALSE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="15036-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="15036-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="6595e-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6595e-114">Additional resources</span></span>
 
-[<span data-ttu-id="15036-115">論理機能</span><span class="sxs-lookup"><span data-stu-id="15036-115">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="6595e-115">論理機能</span><span class="sxs-lookup"><span data-stu-id="6595e-115">Logical functions</span></span>](er-functions-category-logical.md)
