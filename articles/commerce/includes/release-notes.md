@@ -1,6 +1,0 @@
-> [!IMPORTANT]
-> <span data-ttu-id="e44ec-101">**Dynamics 365 リリース プランの発表**</span><span class="sxs-lookup"><span data-stu-id="e44ec-101">**Announcing the Dynamics 365 release plans**</span></span>
->
-> <span data-ttu-id="e44ec-102">当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?</span><span class="sxs-lookup"><span data-stu-id="e44ec-102">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span> 
-> 
-> <span data-ttu-id="e44ec-103">[ビジネス アプリケーションとプラットフォームに関するリリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="e44ec-103">Check out the [Business applications and platform release plans](https://go.microsoft.com/fwlink/?linkid=2010158).</span></span> <span data-ttu-id="e44ec-104">あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つの場所でそれらの情報を参照できます。</span><span class="sxs-lookup"><span data-stu-id="e44ec-104">We've captured all the details, end to end, top to bottom, in a single place that you can use for planning.</span></span> <span data-ttu-id="e44ec-105">リリース プランのバージョンに応じて、新しいサービスおよび機能や、今後リリースされる新しい機能に関する情報を検索できます。</span><span class="sxs-lookup"><span data-stu-id="e44ec-105">Depending on the version of the release plans, you can find out about new services and capabilities, as well as new features releasing in the future.</span></span>
