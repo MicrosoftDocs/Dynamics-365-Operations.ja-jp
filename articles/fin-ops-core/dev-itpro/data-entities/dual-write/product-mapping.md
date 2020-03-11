@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019877"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081154"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
@@ -109,7 +109,7 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 
 製品分析コードは、製品バリアントを識別する特性です。 また、4 つの製品分析コード (色、サイズ、スタイル、コンフィギュレーション) が Common Data Service にマップされて、製品バリアントを定義します。 次の図は、製品分析コードの色のデータ モデルを示しています。 サイズ、スタイル、およびコンフィギュレーションに同じモデルが適用されます。 
 
-![製品のデータ モデル](media/dual-write-product-2.PNG)
+![製品のデータ モデル](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 
 次の図のデータ モデルで示すように、測定単位と対応する換算は Common Data Service で利用できます。
 
-![製品のデータ モデル](media/dual-write-product-3.PNG)
+![製品のデータ モデル](media/dual-write-product-three.png)
 
 測定単位の概念は、Finance and Operations アプリとその他の Dynamics 365 アプリの間で統合されています。 Finance and Operations アプリの各単位クラスでは、単位グループは、単位クラスに属している単位を含む Dynamics 365 アプリで作成されます。 また、既定の基本単位は、すべての単位グループに対して作成されます。 
 
@@ -205,13 +205,13 @@ Dynamics 365 for Finance and Operations と Common Data Service の製品との�
 
 他の Dynamics 365 アプリのユーザーについては、この製品は UI の **msdyn_productnumber** で識別されます (フィールドのラベルが**製品番号**であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) フィールドは表示されません。 
 
-アプリが Common Data Service の上に構築されている場合、(productnumber) の使用 (つまり、固有の製品 ID で統合キーとして使用し、msdyn_productnumber ではない) には特別な注意が必要です。最後のものは一意ではないためです。 
+Common Data Service でアプリを作成した場合は、**製品番号** (固有の製品 ID) を統合キーとして使用することに注意する必要があります。 **msdyn_productnumber** は一意ではないので使用しないでください。 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>製品の初期同期と、Common Data Service から Finance and Operations へのデータの移行
 
 ### <a name="initial-synchronization-of-products"></a>製品の初期同期 
 
-デュアル書き込みが有効になっている場合、Dynamics 365 Finance and Operations の製品は Common Data Service および他の Dynamics 365 アプリに同期されます。 デュアル書き込みの前に Common Data Service および他の Dynamics 365 アプリで作成された製品は、Finance and Operations の製品データに更新および照合されません。
+デュアル書き込みが有効になっている場合、Finance and Operations アプリの製品は Common Data Service および他の Dynamics 365 のモデル駆動型アプリに同期されます。 デュアル書き込みがリリースされる前に Common Data Service および他の Dynamics 365 アプリで作成された製品は、Finance and Operations アプリの製品データに更新および照合されません。
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの製品データの照合
 

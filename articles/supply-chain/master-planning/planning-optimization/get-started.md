@@ -3,7 +3,7 @@ title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
-ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
+ms.openlocfilehash: 3e64699005387adcc92e2e7c9fefad68a9de85c0
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "2971467"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076135"
 ---
+# <a name="get-started-with-planning-optimization"></a>計画の最適化の使用を開始する
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="get-started-with-planning-optimization"></a>計画の最適化の使用を開始する
 
 現時点では、計画の最適化機能では、Microsoft Dynamics 365 Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 既定では、Dynamics Lifecycle Services (LCS) で、計画の最適化機能は有効になっていません。 したがって、オンにする前に評価を行う機会があります。
 
@@ -44,6 +44,9 @@ ms.locfileid: "2971467"
 ### <a name="install-the-add-in"></a>アドインのインストール
 
 計画の最適化を使用するには、Dynamics 365 Supply Chain Management 用の計画の最適化アドインをインストールします。 LCS プロジェクトからアドインにアクセスし、Supply Chain Management ユーザーインターフェイス (UI) から計画の最適化機能を有効にすることができます。
+
+> [!NOTE]
+> 計画最適化の要件は、LCSが有効になっている高可用性環境であり、(OneBox 環境ではなく) Dynamics 365 Supply Chain Management バージョン 10.0.7 以降です。
 
 1. LCS にサインインし、目的の環境を開きます。
 1. **完全な詳細**に移動します。

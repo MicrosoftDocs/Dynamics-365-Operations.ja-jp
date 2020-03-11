@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ff9d722640c86333cb1f9174c640adc2e76e9a5f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023224"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057559"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "3023224"
 - Retail POS で完了した販売と返品に関する情報を、税務当局が運営する外部の Web サービスに安全に送信します。
 - デジタル署名での販売トランザクション データの改ざん防止を保証するのに役立ちます。
 
-会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的な小売シナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、コマース コンポーネントのいくつかの拡張機能で構成され、ソフトウェア開発キット (SDK) が含まれます。 会計統合のサンプルの詳細については、「[Retail SDK の会計統合のサンプル](#fiscal-integration-samples-in-the-retail-sdk)」を参照してください。 小売 SDK のダウンロードと使用方法については、[小売 ソフトウェアの開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+会計統合機能は、Retail POS と会計デバイスおよび会計サービスとの統合のさらなる開発とカスタマイズのための共通のソリューションを提供するフレームワークです。 この機能には、特定の国または地域の基本的なシナリオをサポートし、特定の会計デバイスまたはサービスと連携する会計統合サンプルも含まれています。 会計統合サンプルは、コマース コンポーネントのいくつかの拡張機能で構成され、ソフトウェア開発キット (SDK) が含まれます。 会計統合のサンプルの詳細については、「[Retail SDK の会計統合のサンプル](#fiscal-integration-samples-in-the-retail-sdk)」を参照してください。 小売 SDK のダウンロードと使用方法については、[小売 ソフトウェアの開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 他の会計デバイスまたはサービスと Retail POS を統合する、または他の国や地域の要件をカバーするために、会計統合サンプルでサポートされていない他のシナリオをサポートするには、既存の会計統合サンプルを拡張するか、例として既存のサンプルを使用することによって新しいサンプルを作成する必要があります。
 

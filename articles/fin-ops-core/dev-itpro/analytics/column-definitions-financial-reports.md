@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771544"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070763"
 ---
 # <a name="column-definitions-in-financial-reports"></a>財務諸表での列の定義
 
@@ -120,11 +120,11 @@ ms.locfileid: "2771544"
 | 調整                     | これらの金額が使用可能な場合、列の金額を期間調整金額に制限します。 |
 | XAD                     | 期間調整金額が除外されるように、列の金額を制限します。 |
 | PT                      | これらのトランザクションが使用できる場合は、転記済トランザクションのみが含まれるように、列の金額を制限します。 |
-| UPT                     | これらのトランザクションが使用できる場合は、未転記のトランザクションのみが含まれるように、列の金額を制限します。<p><strong>注 :</strong> すべてのデータ プロバイダー が未転記トランザクションをサポートするわけではありません。 詳細については、<a href='https://go.microsoft.com/fwlink/?LinkID=162565'>データ統合ガイド</a> Microsoft Dynamics ERP システムを参照してください。</p> |
+| UPT                     | これらのトランザクションが使用できる場合は、未転記のトランザクションのみが含まれるように、列の金額を制限します。<p><strong>注 :</strong> すべてのデータ プロバイダー が未転記トランザクションをサポートするわけではありません。 </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>レポート単位に列を制限
 
-1. レポート デザイナーで、変更する列定義を開きます。
+1. [レポート デザイナー] で、変更する列定義を開きます。
 2. 制限する列の**列制限**セルをダブルクリックします。
 3. **レポート単位選択**ダイアログ ボックスで、**レポート ツリー**の一覧からツリーを選択します。
 4. 単位のリストを展開または折りたたみ、レポート単位を選択し、**OK** をクリックします 。

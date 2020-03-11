@@ -1,6 +1,6 @@
 ---
 title: 小売機能プロファイルの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce に小売機能プロファイルを作成する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce に機能プロファイルを作成する方法について説明します。
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002846"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057351"
 ---
 # <a name="create-a-retail-functionality-profile"></a>小売機能プロファイルの作成
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce に小売機能プロファイルを作成する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce に機能プロファイルを作成する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-小売機能プロファイルは、オンライン チャネルに使用されるさまざまな設定を提供します。 各小売チャネルでは、小売機能プロファイルを指定する必要があります。
+コマース機能プロファイルは、オンライン チャネルに使用されるさまざまな設定を提供します。 各チャネルでは、機能プロファイルを指定する必要があります。
 
-## <a name="create-a-retail-functionality-profile"></a>小売機能プロファイルの作成
+## <a name="create-a-functionality-profile"></a>機能プロファイルの作成
 
-小売機能プロファイルを作成するには、次の手順に従います。
+機能プロファイルを作成するには、次の手順に従います。
 
 1. ナビゲーション ウィンドウで、**モジュール \> チャネル設定 \> POS プロファイル \> 機能プロファイル**の順に移動します。
 1. アクション ウィンドウで、**新規**を選択します。
@@ -51,9 +51,9 @@ ms.locfileid: "3002846"
 1. **情報コード** セクションで、必要に応じて設定を変更します。
 1. **レシート番号**セクションで、必要に応じて設定を変更します。 
   
-次の画像は、小売機能ファイルの例を示しています。
+次の図は、機能プロファイルの例を示しています。
   
-![小売機能プロファイルの例](media/retail-functionality-profile.png)
+![機能プロファイルの例](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

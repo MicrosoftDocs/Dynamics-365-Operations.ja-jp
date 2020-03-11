@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029960"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 7 日)
 
@@ -47,7 +47,7 @@ ms.locfileid: "3029960"
 
 - **休暇および欠勤のプレビュー機能** - 詳細については、[休暇および欠勤のプレビュー機能](hr-leave-and-absence-overview.md?leave-and-absence-preview-features) を参照してください。
 
-- **福利厚生管理プレビュー機能** - 既知の問題など、詳細については[福利厚生管理の概要](hr-benefits-management-overview.md)を参照してください。
+- **福利厚生管理プレビュー機能** - 既知の問題など、詳細については[福利厚生管理の概要](hr-benefits-management-overview.md) を参照してください。
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -68,5 +68,11 @@ ms.locfileid: "3029960"
 | 新しい変動報酬の設定エンティティ | **変動報酬プラン タイプ**</br>**変動報酬プラン**</br>**給付ルール**</br>**変動報酬プラン レベル** |
 | 新しい**作業者カレンダー雇用**エンティティ | 追加された**作業カレンダー エンティティ** |
 | 新しい**給与職位詳細**エンティティ | 追加された**給与職位詳細** |
-| 新しい**肩書**エンティティ | 追加済み**タイトル**。 新しい**肩書**エンティティは、Human Resources と Common Data Service 間で同期プロセスに含められますが、最初は**職位**または**職務**エンティティから参照されることはありません。 |
+| 新しい**肩書**エンティティ | 追加済み**タイトル**。 新しい**タイトル** エンティティが、Human Resources と Common Data Service の間の同期プロセスに含まれます。 **職位**または**ジョブ** エンティティから最初に参照されることはありません。 |
 
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

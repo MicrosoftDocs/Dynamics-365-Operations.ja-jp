@@ -1,9 +1,9 @@
 ---
 title: オンプレミス配置のホーム ページ
 description: このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770949"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090592"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
@@ -50,17 +50,17 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
-- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
+- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
 - [オンプレミス環境の再配置](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [オンプレミス配置で使用できる小売機能](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Commerce
+- [オンプレミス配置で使用できるコマースの機能](../../../retail/retail-onprem.md)
 - [オンプレミス環境での小売チャネルのコンポーネントのインストール手順](deploy-retail-onprem.md)
-- [コンフィギュレーション、インストール、および有効化 Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [コンフィギュレーションおよびインストール Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../../../retail/retail-modern-pos-device-activation.md)
+- [コマース スケール ユニットのコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>アップグレード
 - [オンプレミス環境のインプレース アップグレード プロセス](../migration-upgrade/on-prem-upgrade.md)

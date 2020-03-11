@@ -3,7 +3,7 @@ title: Human Resources のプロビジョニング
 description: ''
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3a7987a9b385fb6ba0294dc46b0d66be8228f06
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026270"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071617"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -62,9 +62,6 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
 3. Human Resources テスト ドライブ エクスペリエンスで使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
 
 4. Human Resources は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、この記事の「Power Apps 環境の選択」セクションを参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。
-
-    > [!NOTE]
-    > 既存の環境を表示、または新しい環境を作成するために、Human Resources をプロビジョニングするテナント管理者は Power Apps P2 ライセンスに割り当てられる必要があります。 組織に Power Apps P2 ライセンスがない場合、CSP または [Power Apps 価格ページ](https://powerapps.microsoft.com/pricing/) から入手することができます。
 
 5. Human Resources をプロビジョニングする環境を選択します。
 

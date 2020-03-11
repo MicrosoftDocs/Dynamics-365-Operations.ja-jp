@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002315"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057859"
 ---
 # <a name="warehouse-set-up"></a>倉庫の設定
 
@@ -59,7 +59,7 @@ ms.locfileid: "3002315"
 
 1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 倉庫**の順に移動します。
 1. アクション ウィンドウで、**新規**を選択します。
-1. **倉庫**フィールドで値を入力します。  これが小売用店舗への 1:1 マッピングである場合は、店舗名または地域の配送センターの名前を使用することを検討してください。
+1. **倉庫**フィールドで値を入力します。  これが店舗への 1:1 マッピングである場合は、店舗名または地域の配送センターの名前を使用することを検討してください。
 1. **名前**フィールドに値を入力します。
 1. **サイト**ドロップダウン リストで、以前に作成した倉庫サイトを選択します。
 1. **タイプ**フィールドで、**既定**を選択します。

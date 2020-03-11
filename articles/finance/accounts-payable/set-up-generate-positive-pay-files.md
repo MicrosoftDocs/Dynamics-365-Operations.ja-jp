@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 600e3279536857dbb804ef420572fad42fe72311
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0c44d172e8ed9cdb9c26501b3f4eb9fef4f8cf0b
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189525"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059404"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
@@ -81,63 +81,66 @@ ms.locfileid: "2189525"
 確認後支払ファイルは、データ エンティティを使用して作成されます。 確認後支払ファイルを生成する前に、小切手情報を銀行と通信できる形式に変換するのに使用する変換入力形式を設定する必要があります。 **確認後支払形式** ページで、ファイル形式の ID と説明を作成できます。 変換入力形式は、XML タイプにする必要があります。 特定の形式は、使用している変換ファイルによって異なります。 たとえば、サンプル XSLT (Extensible Stylesheet Language Transformations) ファイルは**XML-Element**形式を使用するよう指定されています。 **変換に使用されるファイルのアップロード** アクションを使用して、銀行が必要な形式の変換ファイルの場所を指定します。
 
 ## <a name="example-xslt-file-for-positive-pay-file"></a>例: 確認後支払ファイル用 XSLT ファイル
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
-      <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
-      <xsl:template match="/">
+
+```xml
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
+  <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
+  <xsl:template match="/">
+    <xsl:value-of select="'
+'" />
+    <Document>
+      <xsl:value-of select="'
+'" />
+      <!--Header Begin-->
+      <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
+      <xsl:value-of select="'
+'" />
+      <!--Header End-->
+      <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
+        <!--Cheque Detail begin-->
+        <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:choose>
+          <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
+            <xsl:value-of select='string("Yes")'/>
+          </xsl:when>
+          <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
+            <xsl:value-of select='string("No")'/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select='string(" ")'/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='string("Payment")'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='TRANSDATE/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='CHEQUENUM/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='AMOUNTCUR/text()'/>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='string("BOA-#1812")'/>
+        <xsl:value-of select="','" />
+        <xsl:choose>
+          <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
+            <xsl:value-of select='VENDGROUP/text()'/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select='CUSTGROUP/text()'/>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="','" />
+        <xsl:value-of select='TRANSDATE/text()'/>
         <xsl:value-of select="'
-    '" />
-        <Document>
-          <xsl:value-of select="'
-    '" />
-          <!--Header Begin-->
-          <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
-          <xsl:value-of select="'
-    '" />
-          <!--Header End-->
-          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
-            <!--Cheque Detail begin-->
-            <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
-                <xsl:value-of select='string("Yes")'/>
-              </xsl:when>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
-                <xsl:value-of select='string("No")'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='string(" ")'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("Payment")'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='CHEQUENUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='AMOUNTCUR/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("BOA-#1812")'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
-                <xsl:value-of select='VENDGROUP/text()'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='CUSTGROUP/text()'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="'
-    '" />
-          </xsl:for-each>
-        </Document>
-      </xsl:template>
-    </xsl:stylesheet>
+'" />
+      </xsl:for-each>
+    </Document>
+  </xsl:template>
+</xsl:stylesheet>
+```
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>銀行口座への確認後支払形式の割り当て
 確認後支払情報を生成する銀行口座ごとに、前のセクションで指定した確認後支払形式を割り当てる必要があります。 **銀行口座** ページで、銀行口座に対応する確認後支払形式を選択します。 **確認後の開始日** フィールドに、確認後支払ファイルを生成する最初の日付を入力します。 このフィールドに日付を入力することが重要です。 それ以外の場合は、生成する最初の確認後支払ファイルは、この銀行口座に対して作成されているすべての小切手が含まれます。

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1fffc7141c041873f39f716aaf1a775984ef499c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023114"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057697"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) か Cloud POS かの選択
 
@@ -60,7 +60,7 @@ MPOS および CPOS は大部分は同じですが、理解しておくべき重
 Windows、iOS、または Android デバイスの MPOS は、デバイスでパッケージ化され、インストールされ、およびサービス対象となるアプリケーションです。
 
 - **Windows** – Windows アプリケーションの MPOS には、すべてのアプリケーション コードおよび埋め込み型 Commerce Runtime (CRT) が含まれています。 
-- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Commerce Scale Unit の CPOS サーバーから取得されます。 詳細については、[Retail Store Scale Unit 概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)をご覧ください。
+- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Commerce Scale Unit の CPOS サーバーから取得されます。 詳細については、[Commerce Scale Unit の概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin) を参照してください。
 
 #### <a name="cpos"></a>CPOS
 

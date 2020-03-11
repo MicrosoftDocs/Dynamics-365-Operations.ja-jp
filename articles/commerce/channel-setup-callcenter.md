@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ec42ab920868f541eeac54556f4f24cb1efaa3a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002453"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057882"
 ---
 # <a name="set-up-a-call-center-channel"></a>コール センターのチャネルの設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "3002453"
 
 ## <a name="overview"></a>概要
 
-Dynamics 365 Commerce では、コール センターはアプリケーションで定義できる小売チャネルのタイプです。 コール センター エンティティのチャネルを定義すると、システムによって特定のデータと注文処理の既定値を販売注文に関連付けることができます。 会社では、Commerce の複数のコール センター チャネルを定義できます。 
+Dynamics 365 Commerce では、コール センターはアプリケーションで定義できるチャネルのタイプです。 コール センター エンティティのチャネルを定義すると、システムによって特定のデータと注文処理の既定値を販売注文に関連付けることができます。 会社では、Commerce の複数のコール センター チャネルを定義できます。 
 
 新しいコール センター チャネルを作成する前に、[チャネル設定の前提条件](channels-prerequisites.md) を完了していることを確認してください。
 

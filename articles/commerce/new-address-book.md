@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d8158f676a005f683d71f503c0a0eb3e50635e2a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4fe97e3e2f8265c1dc67a4052f45125b693c7218
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003398"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057536"
 ---
 # <a name="create-new-address-book"></a>新しいアドレス帳の作成
 
@@ -52,7 +52,7 @@ Commerce では、顧客リストやチャネルの従業員リストを保存�
 
 [情報コードおよび情報コード グループ](info-codes-retail.md)           
 
-[小売機能プロファイル](retail-functionality-profile.md)   
+[小売機能プロファイルの作成](retail-functionality-profile.md)      
 
 [画面レイアウトの概要](pos-screen-layouts.md)       
 

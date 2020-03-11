@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8209f8ce9d244ab7c82f897e4f59283e94e0522
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 75f20632074cb4dead98991fd6522ab9b20b9965
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915674"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041231"
 ---
 # <a name="JSONVALUE">JSONVALUE ER 関数</a>
 
@@ -33,7 +33,7 @@ ms.locfileid: "2915674"
 
 ## <a name="syntax"></a>構文
 
-```
+```vb
 JSONVALUE (input, path)
 ```
 

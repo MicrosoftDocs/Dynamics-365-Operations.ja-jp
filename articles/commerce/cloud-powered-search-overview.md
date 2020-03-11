@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002246"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057836"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "3002246"
 
 ## <a name="overview"></a>概要
 
-製品の発見可能性は、カテゴリの閲覧、検索、およびフィルタリングにより、顧客が迅速かつ簡単に製品を見つけられることを保証するのに役立ちます。 小売業者は、製品の検出を、すべての小売チャンネルでの顧客とのやり取りにおける主要なツールと考えています。
+製品の発見可能性は、カテゴリの閲覧、検索、およびフィルタリングにより、顧客が迅速かつ簡単に製品を見つけられることを保証するのに役立ちます。 小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。
 
 顧客は、Web 検索エンジン、洗練された E コマース Web サイト、ソーシャル アプリ、検索用語の入力時に表示される自動提案、ファセット ナビゲーション、および強調表示のほぼ瞬時の応答時間に慣れています。 探している製品を、ある E コマース ストアで十分な速さで見つけることができなければ、顧客は別の E コマース ストアへ移動してしまいます。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e1087821b357c578993cdd5742399c5ec0ecc95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001809"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057965"
 ---
 # <a name="create-a-default-customer"></a>既定の顧客の作成
 
@@ -33,7 +33,7 @@ ms.locfileid: "3001809"
 
 ## <a name="overview"></a>概要
 
-小売またはオンライン チャネルを作成する場合、既定の顧客を指定する必要があります。 顧客グループおよび顧客のアドレス帳を最初に作成した後に、簡単に既定の顧客を作成できます。
+チャネルを作成する場合、既定の顧客を指定する必要があります。 顧客グループおよび顧客のアドレス帳を最初に作成した後に、簡単に既定の顧客を作成できます。
 
 ## <a name="create-a-customer-group"></a>顧客グループの作成
 

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 612ded1f68cc8e1b26b8046501bae1707175e23a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5e7e6897f19dc0303ffbd3111f93669a91daa1b
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188329"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059379"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
@@ -40,7 +40,7 @@ ms.locfileid: "2188329"
 銀行ファイル レイアウト定義を Finance のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Finance ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>インポートされた口座取引明細書のタイム ゾーンの違い
-インポート ファイルの日付と時刻の値は、 Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成**ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
+インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成**ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。
@@ -58,9 +58,11 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 
 1.  XML ファイルを作成し、次のテキストをコピーします。
 
-        <Batch><![CDATA[PASTESTATEMENTFILEHERE
+    ```xml
+    <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
-
+    ```
+    
 2.  口座取引明細書ファイルの内容をコピーし、XML ファイルに貼り **PASTESTATEMENTFILEHERE** を置換します。
 
 ### <a name="debug-the-xslt"></a>XSLT のデバッグ

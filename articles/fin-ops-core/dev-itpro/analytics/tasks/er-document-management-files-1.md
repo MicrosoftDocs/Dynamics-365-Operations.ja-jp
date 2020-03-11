@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026137"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042830"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)
 
@@ -36,10 +36,14 @@ ms.locfileid: "3026137"
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Microsoft 提供の設定リストにアクセスする
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * 「Litware, Inc.」を確認します プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。  
+
+    「Litware, Inc.」を確認します プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。  
+
 2. 「Litware, Inc.」を選択します プロバイダー
 3. [リポジトリ] をクリックします。
-    * 「運営リソース」のストックがすでにある場合、現在のサブタスクの残りの手順を省略します。  
+
+    「運営リソース」のストックがすでにある場合、現在のサブタスクの残りの手順を省略します。  
+
 4. [追加] をクリックしてドロップ ダイアログを開きます。
 5. [設定リポジトリ タイプ] フィールドで、「運営 リソース」と入力します。
 6. [リポジトリの作成] をクリックします。
@@ -51,9 +55,13 @@ ms.locfileid: "3026137"
 3. [フィルターの表示] をクリックします。
 4. [開く] をクリックします。
 5. ツリーで、「Customer invoice model」を選択します。
-    * モデル設定「顧客請求書モデル」を選択し、インポートします。  
+
+    モデル設定「顧客請求書モデル」を選択し、インポートします。  
+
 6. [インポート] をクリックします。
-    * [選択した設定のバージョン 1 のインポート] をクリックします。  
+
+    [選択した設定のバージョン 1 のインポート] をクリックします。  
+
 7. [はい] をクリックします。
 8. ページを閉じます。
 9. ページを閉じます。
@@ -65,6 +73,5 @@ Microsoft 提供の設定から取得した顧客請求書モデルの設定を�
 1. [コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。
 2. [新規] フィールドで、「名称から取得: 顧客請求書モデル、Microsoft」を入力します。
 3. [名称] フィールドに、「顧客請求書モデル（カスタム）」を入力します。
-    * 顧客請求書モデル（カスタム）  
 4. [コンフィギュレーションの作成] をクリックします。
 

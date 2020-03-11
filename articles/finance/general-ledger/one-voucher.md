@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810702"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058020"
 ---
 # <a name="one-voucher"></a>1 つの伝票
 
@@ -156,7 +156,7 @@ ms.locfileid: "2810702"
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>同じ請求書に転記されていない複数の支払を決済
 
-このシナリオは通常、顧客が複数の支払い方法を使用して購入代金を支払うことができる小売企業にあります。 このシナリオでは、組織は転記されていない複数の支払を記録し、顧客請求書に対して決済をする必要があります。
+このシナリオは通常、顧客が複数の支払い方法を使用して購入代金を支払うことができる企業にあります。 このシナリオでは、組織は転記されていない複数の支払を記録し、顧客請求書に対して決済をする必要があります。
 
 Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) に追加された新機能により、単一の請求書に対して転記されていない複数の支払が決済されます。 複数の顧客支払は、1 つの伝票で入力する必要はもうありません。
 

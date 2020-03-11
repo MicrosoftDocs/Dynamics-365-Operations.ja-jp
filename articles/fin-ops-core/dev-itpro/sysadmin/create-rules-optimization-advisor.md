@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 27066cd860d78743d5ae7c851876eb62fe019245
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e14949b871534868c42d2b26a116e10ff9f05179
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180993"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081999"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>最適化アドバイザーのためのルールを作成します
 
@@ -36,7 +36,7 @@ ms.locfileid: "2180993"
 
 **最適化アドバイザー**の新しいルールを作成するために、**SelfHealingRule** 抽象クラスを拡張する新しいクラスの追加、**IDiagnosticsRule** インターフェイスの実装、および **DiagnosticRule** 属性によって修飾がされます。 クラスは **DiagnosticsRuleSubscription** 属性で修飾されるメソッドも必要です。 慣例として、これは **opportunityTitle** メソッドで実行されます。これについては後で説明します。 この新しいクラスは **SelfHealingRules** に依存関係を持つカスタム モデルに追加することができます。 実装されている **RFQTitleSelfHealingRule** と呼ばれるルールを以下の例に示します。
 
-```
+```xpp
 [DiagnosticsRule] 
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
@@ -46,7 +46,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 
 **SelfHealingRule** 抽象クラスは、派生クラスで実装される必要がある抽象メソッドを持っています。 コアは**評価**方法です。ルールによって識別される案件の一覧を返します。 営業案件は法人ごと、またはシステム全体に適用できます。
 
-```
+```xpp
 protected List evaluate() 
 { 
     List results = new List(Types::Record); 
@@ -82,7 +82,7 @@ protected List evaluate()
 
 次のコードは **findRFQCasesWithEmptyTitle** メソッドを示しており、空のタイトルがある RFQ ケースの ID を返します。
 
-```
+```xpp
 private container findRFQCasesWithEmptyTitle() 
 { 
     container result; 
@@ -115,7 +115,7 @@ private container findRFQCasesWithEmptyTitle()
 
 実装例を次に示します。 未加工の文字列は単純化のために使用されていますが、正しい実装にはラベルが必要です。 
 
-```
+```xpp
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
                              'Assign titles to Request for Quotation cases', 
                              DiagnosticsRunFrequency::Daily,  
@@ -128,7 +128,7 @@ public str opportunityTitle()
 
 **opportunityDetails** によって返された説明が作業ウィンドウに表示され、営業案件に関する詳細を示します。 これは **SelfHealingOpportunity** 引数を取ります。これは営業案件についての詳細を提供するために使用される **データ** フィールドです。 例では、メソッドは空のタイトルを持つ RFQ ケースの ID を返します。 
 
-```
+```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
 { 
     str details = ''; 
@@ -153,7 +153,7 @@ public str opportunityDetails(SelfHealingOpportunity _opportunity)
 
 **provideHealingAction** は修復アクションを指定すると true を返します。それ以外の場合は false を返します。 true が返された場合、**performAction** メソッドを実装する必要があるか、またはエラーがスローされます。 **performAction** メソッドは **SelfHealingOpportunity** 引数を取ります。この引数では、データをアクションに使用できます。 例では、手動で修正するために、アクションが **PurchRFQCaseTableListPage** を開きます。 
 
-```
+```xpp
 public boolean providesHealingAction() 
 { 
     return true; 
@@ -172,7 +172,7 @@ protected void performAction(SelfHealingOpportunity _opportunity)
 > [!NOTE]
 > メニュー項目は、セキュリティが正常に機能するためのアクション メニュー項目である必要があります。 **メニュー項目の表示** などのその他のメニュー項目タイプは、正しく動作しません。
 
-```
+```xpp
 public MenuName securityMenuItem() 
 { 
     return menuItemActionStr(PurchRFQCaseTitleAction); 
@@ -181,7 +181,7 @@ public MenuName securityMenuItem()
 
 ルールがコンパイルされたら、次のジョブを実行してユーザー インターフェイス (UI) に表示させます。
 
-```
+```xpp
 class ScanNewRulesJob 
 {         
     public static void main(Args _args) 
@@ -197,7 +197,7 @@ class ScanNewRulesJob
 
 次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。
 
-```
+```xpp
 [DiagnosticsRuleAttribute]
 public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
 {

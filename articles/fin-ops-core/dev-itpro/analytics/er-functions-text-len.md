@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6f2a661dd3a85c658ff85f5886d98f665e28718
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 3e0ba19e762574dde4f9038b87ce352d13f714f4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915582"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041058"
 ---
 # <a name="LEN">LEN ER 関数</a>
 
@@ -33,7 +33,7 @@ ms.locfileid: "2915582"
 
 ## <a name="syntax"></a>構文
 
-```
+```vb
 LEN (text)
 ```
 

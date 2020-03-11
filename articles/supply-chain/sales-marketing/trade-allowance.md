@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251158"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057782"
 ---
 # <a name="trade-allowance-management"></a>取引割引管理
 
 [!include [banner](../includes/banner.md)]
 
-取引割引管理により、会社が量および行動目標を達成する顧客に対して小売の「能力給」金銭的報奨を提供する販売プロモーション プログラムを管理するのに役立ちます。 機能の処理能力は、プロモーション資金の予算および配賦から、割引契約の設定、請求の作成と処理、支払い処理、プロモーション効果分析まで、包括的な利益のレベル上げプロセスに重点を置く企業向けに設計されています。
+取引割引管理により、会社が量および行動目標を達成する顧客に対して「能力給」金銭的報奨を提供する販売プロモーション プログラムを管理するのに役立ちます。 機能の処理能力は、プロモーション資金の予算および配賦から、割引契約の設定、請求の作成と処理、支払い処理、プロモーション効果分析まで、包括的な利益のレベル上げプロセスに重点を置く企業向けに設計されています。
 
 
 この記事では、取引割引管理機能の広範な概要を提供し、販売プロモーション プログラムの管理に関連する標準的な一連のタスクを理解します。 運営および意思決定責任を持つ複数タイプのユーザーは、この機能を使用してそれぞれの目標を達成します。
@@ -77,7 +77,7 @@ ms.locfileid: "2251158"
 
 取引割引契約は**取引割引契約**ページに記録されます。 **取引割引契約**ページを開き、**販売およびマーケティング** \> **取引割引** \> **取引割引契約**の順に選択します。
 
-![取引割引契約ページ](./media/trade-allowance-management-agreements-page.png "取引割引契約ページ")
+![取引割引契約のページ](./media/trade-allowance-management-agreements-page.png "取引割引契約のページ")
 
 #### <a name="header"></a>表題
 
