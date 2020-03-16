@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f510a9f7bb01ce03b4a70854173a6a7a910fea33
-ms.sourcegitcommit: 36b68a529cb60a915450856f3e2fa514014b8ff1
+ms.openlocfilehash: ed798e1b7848bdb647f3ef0ca6a61b073b89e646
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2829589"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059364"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
@@ -37,8 +37,10 @@ ms.locfileid: "2829589"
 
 3. 編集のためファイルを開き、列見出しのために次の行を追加します。
 
-        LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason
-
+    ```Text
+    LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason
+    ```
+    
 4. ファイルで、7 桁に満たない郵便番号コードには前にゼロを追加します。 7 桁に満たない郵便番号コードは認められません。
 
 ## <a name="create-a-data-import-project-and-import-the-data"></a>データのインポート プロジェクトを作成し、データをインポートします。

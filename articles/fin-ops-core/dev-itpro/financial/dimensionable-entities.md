@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49e6830a25a1c4e2532b8038926637429413884f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fd8e6be590ba86d0cff099e3abc1c29d0bf6079c
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191568"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080755"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "2191568"
 
 > [!IMPORTANT]
 > 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 ビューを、DimAttribute の分析コード値のソースとして使用することはできません。 これはうまくいくように見えますが、分析コードのファクト データがデータベースにインポートされるようにするため、MR が行ごとの処理にフォールバックされます。 これにより、パフォーマンスがかなり低下したり、レポートが遮断されます。 
-
+>
 > 財務分析コードのデータのソースとして使用する基本テーブルには、30 文字以内の固有ナチュラル キー値が必用であり、その値はそのテーブル内の 1 つの RECID を解決する必要があります。 拡張された名前列は、追加のコンテキストをユーザーに表示する場合にのみ使用され、ナチュラル キー エントリの一意性を解決するためには使用されないため、もう 1 つのソース結合 (DirPartyTable や別の場所など) から取得できます。
      
 財務分析コードは、トランザクションおよび分析プロセスに必要な再利用可能な値にする必要があります。 これらの分析コードは、複数のトランザクションにわたって全体的な再利用を提供できるデータのソースを表す必要があります。 他の分析コード値に表示される際、高変動を表す ID データを供給するバッキング テーブルを選択しないでください。 これにより、ストレージと処理のコストが増加し、パフォーマンスと分析の価値に悪影響を及ぼします。
@@ -77,13 +77,14 @@ ms.locfileid: "2191568"
 1. **プロパティ**ウィンドウの **TitleField2** フィールドに、**名前**を入力します。
 1. バッキング テーブルのプロパティを確認し、使用している config キーを識別します。 **表示**で、バッキング テーブルと同じ**コンフィギュレーション キー**を入力します。
 
-  > [!IMPORTANT]
-  > 管理者以外のユーザーに、新しいビューのセキュリティ アクセス権を付与する必要があります。
-  > - オーバーレイが使用されるリリース 7.2 およびそれ以前では、**DimensionEssentials** を検索し、プロジェクトに追加します。 **DimensionEssentials** を展開し、**アクセス許可**を右クリックし、その後**新しいアクセス許可**を選択します。 **プロパティ** ウィンドウで、**アクセス レベル**を**読み取り**に設定します。 **セキュリティ権限**をクリックし、**読み取り**の**アクセス レベル**を**アクセス許可**ノードの下に追加します。 これらの 1 つを使用しているモデルに拡張することが必要な場合があります。
-  > - 拡張機能が使用されているリリース 7.3 以降では、新しいビューと共にカスタム モデルで新しいセキュリティ権限を作成します。 **アクセス許可** ノードを右クリックし、**新しいアクセス許可** を選択します。 上記の手順 2 で作成した新しい DimAttribute[DimensionName] ビューの名前を入力し、**アクセス レベル** を**読み取り**に設定します。 **セキュリティ職務権限 SysServerAXBasicMaintain** を検索します。 右クリックし、**拡張機能の作成** を作成します。 必要に応じて拡張機能の名前を変更します。 新たに作成された **セキュリティ特権** を **特権リスト** にドラッグ アンド ドロップします。  
+    > [!IMPORTANT]
+    > 管理者以外のユーザーに、新しいビューのセキュリティ アクセス権を付与する必要があります。
+    > - オーバーレイが使用されるリリース 7.2 およびそれ以前では、**DimensionEssentials** を検索し、プロジェクトに追加します。 **DimensionEssentials** を展開し、**アクセス許可**を右クリックし、その後**新しいアクセス許可**を選択します。 **プロパティ** ウィンドウで、**アクセス レベル**を**読み取り**に設定します。 **セキュリティ権限**をクリックし、**読み取り**の**アクセス レベル**を**アクセス許可**ノードの下に追加します。 これらの 1 つを使用しているモデルに拡張することが必要な場合があります。
+    > - 拡張機能が使用されているリリース 7.3 以降では、新しいビューと共にカスタム モデルで新しいセキュリティ権限を作成します。 **アクセス許可** ノードを右クリックし、**新しいアクセス許可** を選択します。 上記の手順 2 で作成した新しい DimAttribute[DimensionName] ビューの名前を入力し、**アクセス レベル** を**読み取り**に設定します。 **セキュリティ職務権限 SysServerAXBasicMaintain** を検索します。 右クリックし、**拡張機能の作成** を作成します。 必要に応じて拡張機能の名前を変更します。 新たに作成された **セキュリティ特権** を **特権リスト** にドラッグ アンド ドロップします。  
        
 14. **表示** を右クリックし、**コードの表示** を選択します。 ビューに次のコードを追加します。 これにより、分析コード フレームワークに登録されます。 CustTable に対して作成されたビューを使用する例を次に示します。
-      ```
+
+      ```xpp
       [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
       registerDimensionEnabledTypeIdentifiersDelegate))]
@@ -93,6 +94,7 @@ ms.locfileid: "2191568"
          _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
       ```
+
 15. **Microsoft Dynamics 365** を選択し、**オプション**をクリックします。 **ベスト プラクティス** を選択します。 モデルを選択し、**Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker** が表示されるまでスクロールします。 ルールとその子が選択されていることを確認します。
 16.  ビューをビルドしてから同期します。
 
@@ -100,10 +102,12 @@ ms.locfileid: "2191568"
 
 この時点で SQL Server Management Studio で次のクエリを実行して、正しいデータが引き出されているかを確認をする必要があります。 CustTable に対して作成されたビューを使用する省略例を次に示します。
 
-      select * from DIMATTRIBUTECUSTTABLE
+```sql
+select * from DIMATTRIBUTECUSTTABLE
+```
     
 
-| KEY_   | 値    | データ範囲 ID | パーティション | RECID   | 氏名           | パーティション 2 |
+| キー   | 値    | データ範囲 ID | パーティション | RECID   | NAME           | パーティション 2 |
 |-------------|--------------|----------------|---------------|-------------|--------------------|------------------|
 | 22565425322 | US\_SI\_0129 | ussi           | 5637144576    | 22565425322 | Adventure Services | 5637144576       |
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | アルペン エレクトロニクス | 5637144576       |
@@ -113,7 +117,7 @@ ms.locfileid: "2191568"
 
 バッキング テーブルのナチュラル キーを削除または名前を変更するときに分析コード フレームワークと統合するには、バッキング テーブルの delete メソッドと、update または renamePrimaryKey メソッドにカスタム コードを記述する必要があります。 テーブルがナチュラル キーの更新をブロックする場合、renamePrimaryKey のオーバーライドを使用する必要があります。 存在しない場合は、更新メソッドでコードを格納できます。 CustTable からの例を次に示します。
 
-```
+```xpp
 public void delete()
 {
     if (!DimensionValidation::canDeleteEntityValue(this))
@@ -145,7 +149,9 @@ public void renamePrimaryKey()
 
 分析コードとして消費できるエンティティのリストはサーバー上でキャッシュされるため、キャッシュをクリアする呼び出しが実行されるか、クライアントとサーバーの両方が再起動されるまで新しいエンティティの作成は既存のエンティティのリストに表示されません。 キャッシュをクリアして新しいビューをすぐに表示させるには、実行可能なクラス内で次のコード行を実行する必要があります。
 
-      DimensionCache::clearAllScopes();
+```xpp
+DimensionCache::clearAllScopes();
+```
 
 ## <a name="step-5-verify-that-the-dimension-appears-in-the-use-value-from-lookup"></a>手順 5: 分析コードが [ルックアップからの値を使用] に表示されることを確認する
 
@@ -167,23 +173,25 @@ public void renamePrimaryKey()
 
 新しいエンティティのデータ エンティティも作成し、そのエンティティが既定の分析コードへの参照を持っている場合、persistEntity() メソッドにこのコードを追加します。
 
-```
+```xpp
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
 {
-     this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+    this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
 }
-                                                                                                
-e.g.
+```                                                                                            
+**例**
 
+```xpp
 public void persistEntity(DataEntityRuntimeContext _entityCtx)
 {
-     if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-     {
-          this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
-     }
+    if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+    {
+        this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+    }
 
-     super(_entityCtx);
+    super(_entityCtx);
 }
 ```
+
 > [!NOTE]
 > これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。

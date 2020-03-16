@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1ffb940a27f055eb42d7975b9fafc25f1b3fb3c
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: a60904e460b92732c4bba5371a72ba41a31c28bf
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578298"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081959"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 
@@ -85,77 +85,84 @@ Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、�
 
 このコードは、現在のバージョンでは必要ありません。
 
-    int mouseDown(int x, int y, int button, boolean ctrl, boolean shift)
+```xpp
+int mouseDown(int x, int y, int button, boolean ctrl, boolean shift)
+{
+    int idx,f;
+    FormTreeItem        parentNode, node;
+    int                 parentMode;
+    boolean             enabled;
+    #FormTreeControl;
+    [idx,f] = this.hitTest(x,y);
+    parentNode  = this.getItem(this.getParent(idx));
+    node        = this.getItem(idx);
+    if (node)
     {
-        int idx,f;
-        FormTreeItem        parentNode, node;
-        int                 parentMode;
-        boolean             enabled;
-        #FormTreeControl;
-        [idx,f] = this.hitTest(x,y);
-        parentNode  = this.getItem(this.getParent(idx));
-        node        = this.getItem(idx);
-        if (node)
+        if(parentNode)
         {
-            if(parentNode)
-            {
-                if (element.enabled(parentNode.data()))
-                parentMode = true;
-            }
-            else
-                parentMode  = true;
-            if ((f & #FTCHT_ONITEMICON) && parentMode)
-            {
-                if (!node.overlayImage())
-                {
-                    enabled = (element.enabled(this.getItem(idx).data()) ? false : true);
-                    element.enabled(this.getItem(idx).data(), enabled);
-                    element.drawTree();
-                }
-                return 1;
-            }
+            if (element.enabled(parentNode.data()))
+            parentMode = true;
         }
-        return super(x, y, button, ctrl, shift);
+        else
+            parentMode  = true;
+        if ((f & #FTCHT_ONITEMICON) && parentMode)
+        {
+            if (!node.overlayImage())
+            {
+                enabled = (element.enabled(this.getItem(idx).data()) ? false : true);
+                element.enabled(this.getItem(idx).data(), enabled);
+                element.drawTree();
+            }
+            return 1;
+        }
     }
+    return super(x, y, button, ctrl, shift);
+}
+```
 
 現在のバージョンでは、まだあらかじめ選択されているノードがユーザーに表示されるシナリオの選択されている状態を設定します。 また、開発者は、FormTreeItem の作成時に、状態を明示的にまだ設定することができます。 ただし、現在の画像を指定する代わりに、開発者は FormTreeItem の **stateChecked** プロパティを設定できます。 開発者は、チェック ボックスの状態がいつ変更されるかを知る必要がある場合、**checkedStateChanged()** メソッドをオーバーライドできます。
 
 ## <a name="basic-check-box-use-for-tree-controls-in-the-current-version"></a>現在のバージョンのツリー コントロールに使用する基本的なチェック ボックス
 モデル化されたツリー コントロールの**チェック ボックス** プロパティが**はい**に設定されていることを確認します。 ノードの状態を明示的に設定するには、次のコードを使用します。
 
-    formTreeItem.stateChecked(FormTreeCheckedState::Checked);
-    formTreeControl.setItem(formTreeItem);
+```xpp
+formTreeItem.stateChecked(FormTreeCheckedState::Checked);
+formTreeControl.setItem(formTreeItem);
+```
 
 現在の状態のノードを調べるには、次のコードを使用します。
 
-    FormTreeItem formTreeItem = formTreeControl.getItem(formTreeControl.getSelection());
-    FormTreeCheckedState currentState;
-    if (formTreeItem != null)
+```xpp
+FormTreeItem formTreeItem = formTreeControl.getItem(formTreeControl.getSelection());
+FormTreeCheckedState currentState;
+if (formTreeItem != null)
+{
+    currentState = formTreeItem.stateChecked();
+    switch (currentState)
     {
-        currentState = formTreeItem.stateChecked();
-        switch (currentState)
-        {
-            case FormTreeCheckedState::Unchecked:
-                /* unchecked */
-                break;
-            case FormTreeCheckedState::Checked:
-                /*checked */
-                break;
-            case FormTreeCheckedState::Partial:
-                /* parent has children checked */
-                break;
-            default:
-                /* shouldn’t get here */
-                break;
-        }
+        case FormTreeCheckedState::Unchecked:
+            /* unchecked */
+            break;
+        case FormTreeCheckedState::Checked:
+            /*checked */
+            break;
+        case FormTreeCheckedState::Partial:
+            /* parent has children checked */
+            break;
+        default:
+            /* shouldn’t get here */
+            break;
     }
+}
+```
 
 ノードのチェック状態 (**idx** はノード インデックス) に対応または追跡するには、次のコードを使用します。
 
-    public void checkedStateChanged(int _Idx, FormTreeCheckedState _newState)
-    {
-        super(_Idx, _newState);
-    }
-
+```xpp
+public void checkedStateChanged(int _Idx, FormTreeCheckedState _newState)
+{
+    super(_Idx, _newState);
+}
+```
 
 

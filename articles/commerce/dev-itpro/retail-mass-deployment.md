@@ -13,14 +13,14 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31
+ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 354152d57938cfd310b09492f2cfd20129af99f6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 33442ffb9724352d5ad33a37bd436e39df49b95e
+ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004642"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3078031"
 ---
 # <a name="mass-deployment-of-self-service-components"></a>セルフサービス コンポーネントの一括配置
 
@@ -58,7 +58,7 @@ ms.locfileid: "3004642"
 
 次のコマンドは、Modern POS の現在のインストールをサイレント更新します。 このコマンドには、現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 このコマンドは、構成ファイルが存在する場合は、インストーラーと同じファイルの場所にある構成ファイルを使用します。
 
-```
+```Console
 ModernPOSSetup_V72.exe -S
 ```
 
@@ -69,7 +69,7 @@ ModernPOSSetup_V72.exe -S
 
 次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Commerce Scale Unit の現在のインストールをサイレント更新します。 (このコンフィギュレーション ファイルは、インストーラーの実行可能ファイルと同じ場所にない可能性があります。) このコマンドは、前提条件のチェックをスキップし、インストール手順に進みます。 テストおよび開発の目的にのみ、このコマンドを使用することをお勧めします。
 
-```
+```Console
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
@@ -89,7 +89,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 このコマンドは、構成ファイルが存在する場合、インストーラーの実行可能ファイルと同じ場所にある構成ファイルを使用します。 複数の構成ファイルが使用可能な場合は使用しないでください。
 
-```
+```Console
 ModernPOSSetup_V73.exe -S
 ```
 
@@ -100,7 +100,7 @@ ModernPOSSetup_V73.exe -S
 
 次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Modern POS の現在のインストールをサイレント インストールします。 この構成ファイルは、インストーラーの実行可能ファイルと同じ場所にないか、複数の構成ファイルが使用可能な場合があります。
 
-```
+```Console
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 ```
 
@@ -111,7 +111,7 @@ ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 
 次のコマンドにより、Retail ハードウェア ステーションがサイレントでインストール (または更新) されます。 現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 また、**-SkipMerchantInfo** の区切り記号を使用して、ユーティリティを通じたマーチャント口座情報のダウンロードをスキップすることもできます。 このコマンドは、インストーラーの実行可能ファイルと同じ場所にある構成ファイルを使用します。
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 ```
 
@@ -122,6 +122,6 @@ HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 
 次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Retail ハードウェア ステーションの現在のインストールをサイレント インストールします。 この構成ファイルは、インストーラーの実行可能ファイルと同じ場所にないか、複数の構成ファイルが使用可能な場合があります。
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```

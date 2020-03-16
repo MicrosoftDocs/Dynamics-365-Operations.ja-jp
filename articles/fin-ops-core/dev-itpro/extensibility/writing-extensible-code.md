@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 10c75d91ec00d44fdeecb69a84d9d60188bb033c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a35d7dcf74e836b913bab714ca11e3fe27396fe0
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812019"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082012"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 
@@ -64,7 +64,7 @@ SOLID は、コードを簡単に拡張できるようにするために使用�
 
 次に例を示します。
 
-```
+```xpp
 public void processOrder(SalesOrder _salesOrder)
     {
         if (this.approveOrder(_salesOrder))

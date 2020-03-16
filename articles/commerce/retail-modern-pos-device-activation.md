@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 30c4edf3130814c1c536b21d0bc1c545dfcb0ab1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 941607fabfb668be7610f2994ac580e7b217a6f1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004616"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070749"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -113,7 +113,9 @@ ms.locfileid: "3004616"
 
 オンプレミス環境で使用する Modern POS をインストールする場合は、次のようにコマンド ラインからインストーラーを起動する必要があります。
 
-    ModernPosSetupOffline.exe -UseAdfsAuthentication
+```Console
+ModernPosSetupOffline.exe -UseAdfsAuthentication
+```
 
 Modern POS インストーラーは、まず関連付けられているファイルを抽出し、インストールを開始します。
 
@@ -199,7 +201,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
     > [!NOTE]
     > **外部識別子** フィールドは空のままです。 この動作は予期されています。 したがって、これは無視できます。
 
-この手順は、Retail Cloud POS または Modern POS を有効化する前に完了する必要があります。 詳細については、[ Retail 有効化アカウントの管理とデバイスの検証](set-up-activation-accounts-validate-devices-hq.md) を参照してください。
+この手順は、Retail Cloud POS または Modern POS を有効化する前に完了する必要があります。 詳細については、[有効化アカウントの管理とデバイスの検証](set-up-activation-accounts-validate-devices-hq.md) を参照してください。
 
 ### <a name="run-the-validate-devices-for-activation-check"></a>有効化チェックのためにデバイス検証を実行
 
@@ -224,7 +226,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 > 配置可能パッケージの詳細については、[配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md)の記事を参照してください。
 
 1. Modern POS アプリケーションが環境にアップロードされた後、デバイスでパッケージのバージョンを選択することができます。 パッケージ一覧には、新しいアップロードされたアプリケーションが含まれている必要があります。
-2. Modern POS アプリケーションを更新するには、[Modern POS のダウンロードおよびインストール](#download-and-install-retail-modern-pos) セクションの手順に従ってください。 インプレース更新を行うには、新しいバージョンのセルフ サービス インストーラーを実行します。 アンインストールは必須でないか、推奨されていません。 デバイスの有効化状態は更新後も維持されます。
+2. Modern POS アプリケーションを更新するには、[Modern POS のダウンロードおよびインストール](#download-and-install-modern-pos) セクションの手順に従ってください。 インプレース更新を行うには、新しいバージョンのセルフ サービス インストーラーを実行します。 アンインストールは必須でないか、推奨されていません。 デバイスの有効化状態は更新後も維持されます。
 3. インストーラーは、現在インストールされているコンフィギュレーション設定を使用します。 コマースでのさまざまな構成の変更によって構成ファイルが変更されている場合、更新によって Modern POS アプリケーションの設定が変更されることはありません。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
@@ -255,13 +257,13 @@ Modern POS インストーラーは、まず関連付けられているファイ
     1. 管理者として**コマンド プロンプト** ウィンドウを開きます。
     2. 次のコマンドを入力します。
 
-        ```
+        ```Console
         lodctr /s:"perf_backup.txt"
         ```
 
     3. 次のコマンドを入力します。
 
-        ```
+        ```Console
         lodctr /R
         ```
 
@@ -320,4 +322,4 @@ Modern POS インストーラーは、まず関連付けられているファイ
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+[POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)

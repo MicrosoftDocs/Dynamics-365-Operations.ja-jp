@@ -3,7 +3,7 @@ title: セルフサービス配置の概要
 description: このトピックでは、セルフサービス配置の概要を示します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c5879456a1f820fed62e3d06fce4159f1cf530cd
-ms.sourcegitcommit: b8f8ccab2cd9d848e5ecd71caaf0a63237e2236b
+ms.openlocfilehash: 19f6fea7fc55a2eef6ad7124a1553d72a23bc9cd
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957002"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087242"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -58,7 +58,7 @@ ms.locfileid: "2957002"
 
 - ドキュメントのプレビュー エクスペリエンスが改善され、印刷処理の性能が向上しました。 この変更前は、画面に表示されたドキュメントは、HTML ビューアーを使用して表示されていました。 HTML 形式では、組み込みドリルスルー リンクや折りたたみ可能なセクションなどのインタラクティブ機能がサポートされていましたが、これはサービスによって表示されるドキュメントの実際の表示ではありませんでした。 新しい埋め込み PDF ビューアーを使用して、顧客は印刷されたドキュメントと一致するプレビューにアクセスできます。 詳細については、[埋め込みビュアーを使用してPDFドキュメントのプレビューをする](../analytics/preview-pdf-documents.md) を参照してください。
 
-- 組み込み SSRS フレームワークを使用して表示されるドキュメント レポートでは、カスタム フォントはサポートされなくなりました。 Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、270 以上の標準のビジネス対応フォントへのアクセスが含まれます。 このポートフォリオは、サービスが新しい地域や業界に拡大するにつれて増え続けます。 ただし、サービスでは、顧客環境でのカスタム フォントのインストールはサポートされなくなりました。 サービスでサポートされるフォントのコレクションを拡張する要求は、その都度考慮されます。
+- 組み込み SSRS フレームワークを使用して表示されるドキュメント レポートでは、カスタム フォントはサポートされなくなりました。 Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、何百もの [標準のビジネス対応フォント](../analytics/supported-fonts.md) へのアクセスが含まれます。 このポートフォリオは、サービスが新しい地域や業界に拡大するにつれて増え続けます。 ただし、サービスでは、顧客環境でのカスタム フォントのインストールはサポートされなくなりました。 サービスでサポートされるフォントのコレクションを拡張する要求は、その都度考慮されます。
 
 - サービスでは、SQL Server Reporting Services (SSRS) レポートに埋め込まれた Visual Basic スクリプトを使用して定義されるビジネス ロジックはサポートされなくなりました。 実行時にデータを書式設定および評価するために使用される Tablix コントロールで定義された Visual Basic 式は、引き続き完全にサポートされます。 ただし、サービスは Visual Basic スクリプト関数で定義された指示を無視します。 この変更は、サービスのセキュリティと信頼性の向上に必要でした。
 

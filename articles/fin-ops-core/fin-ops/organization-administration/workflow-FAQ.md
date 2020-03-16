@@ -3,7 +3,7 @@ title: ワークフローに関するよく寄せられる質問
 description: このトピックでは、ワークフロー システムについてよく寄せられる質問に回答します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934912"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076089"
 ---
 # <a name="workflow-faq"></a>ワークフローに関するよく寄せられる質問
 
@@ -48,9 +48,13 @@ ms.locfileid: "2934912"
     - 今後の更新で、ユーザーにワークフロー 作業項目が割り当てられるようにアクション センター メッセージを追加します。 
 - ワークフローへの通知の追加
     - アクション センター メッセージは、X++ のワークフローから作成されたメッセージのように、特定のユーザーに対して作成されます。
-    - [ビジネス イベントのあるワークフロー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) 顧客は探している通知のあるフローをトリガーがすることができました。   
+    - 顧客が探している通知を持つフローをトリガーするために使用できる [ビジネス イベントのあるワークフロー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow)。   
 
 要約すると、ユーザーがワークフロー作業項目を割り当てられた時、アクション センターから適切な通知を取得できなかった場合、[ワークフロー ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) と Microsoft Power Automate を活用して、追加のまたは異なる通知を行います。
 
-## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>ワークフロー エディターで、ADFS の起動時に発生する問題 
+## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>AD FS 下でワークフロー エディターを起動できないのはなぜですか。
 アップグレードされた環境で Active Directory フェデレーション サービス (AD FS) を実行している場合、ワークフロー エディターで問題が発生する可能性があります。 その場合、ADFS 設定の **Microsoft Dynamics 365 for Operations オンプレミス - ワークフロー - ネイティブ アプリケーション** プロパティに、URL 「https://dynamicsaxworkfloweditor/」が追加されていることを確認してください。
+
+## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>ワークフロー処理で SQL デッドロックが発生するのはなぜですか。 
+**ワークフロー パラメーター** ページの**バッチごとのワークフロー項目数**のフィールドの既定値は 0 です。 値が 0 の場合、既定がバッチあたり 20 項目に変更されます。 バッチごとの項目数が大きいと (> 40) SQL デッドロックが発生することがあるため、この値を調整する場合は注意が必要です。
+

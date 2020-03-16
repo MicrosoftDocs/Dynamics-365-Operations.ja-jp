@@ -16,12 +16,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 2cb7bf6e624fa5a62911ab99f35f20e6dd2175c3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 886f48a7c03154d886940eb849ef0d522a3799c6
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004641"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057652"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "3004641"
 POSが本部との接続を失った場合にサポートしている宗さんの一覧については、 [オンラインおよびオフラインでの店頭(POS)操作](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) 参照してください。。
 
 ## <a name="supported-deployment-and-maintenance-capabilities"></a>サポートされている導入及びメンテナンスの機能
-一括配置は Modern POS ではサポートされますが、Commerce Scale Unit ではサポートされません。 詳細については、 [Retail セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment) をご参照ください。
+一括配置は Modern POS ではサポートされますが、Commerce Scale Unit ではサポートされません。 詳細については、 [セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment) を参照してください。
 
 ## <a name="deployed-components"></a>配置可能なコンポーネント
 次に示すコンポーネントは、すべて1つのインストーラーを使って配置されます。 これらをそれぞれ個別でインストールする必要はありません。
@@ -66,11 +66,11 @@ POSが本部との接続を失った場合にサポートしている宗さん�
 MPOS オフラインモードの詳細については、以下を参照してください。
 - [オフライン販売時点管理 (POS) の機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality)
 - [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)
-- [Retail セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
+- [セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
 
 ### <a name="commerce-scale-unit"></a>コマース スケール ユニット
 Commerce Scale Unit は、実店舗などお客様の環境に配置することが可能な、バックオフィスや本部 (HQ) への通信が切断された場合でも継続して業務を行うことをサポートするコンポーネントです。 
 
 詳細については、以下を参照してください。
-- [Retail Store Scale Unit の構成とインストール](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
-- [Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [コマース スケール ユニットのコンフィギュレーションとインストール](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [コマース スケール ユニット](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)

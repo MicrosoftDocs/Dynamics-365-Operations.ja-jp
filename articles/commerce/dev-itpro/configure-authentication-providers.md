@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bceebe2bed4ec8cb71857998f759063fab5fe531
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd8e66881bab04a5d973082c18aab4e6ba98c18a
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004591"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070437"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 
@@ -40,5 +40,6 @@ Commerce Scale Unit で使用できるようにするため、OpenID プロバ�
 2.  配送スケジュール 1110 を実行します。
 3.  テスト オンライン ストアについては、次の例に示すように、正しいリダイレクト URL とドメインを指定できるように web.config ファイルを編集します。 第三者のオンライン ストアを使用している場合、この情報を必要に応じて保存できます。
 
-        redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
-
+    ```xml
+    redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
+    ```

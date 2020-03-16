@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 899b1a87d3537347a409ed2e8303c5bd8b0173db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fec2ce7e5e02caaa96c8cd372193ef0894f82453
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004657"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070783"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
@@ -73,7 +73,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 7. **ProductAvailabilityPanel.html** ファイルを開いて、次のコードを貼り付けます。
 
-    ```
+    ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <head>
@@ -98,7 +98,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 8. **ProductAvailabilityPanel.ts** ファイルを開いて、次のコードを貼り付けます。
 
-    ```
+    ```typescript
     /**
         SAMPLE CODE NOTICE
         THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
@@ -119,6 +119,8 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
     カスタム ロジックを書くために、POS のアプリケーション プログラミング インターフェイス (API) からコントロールやその他のデータ オブジェクトのリストをインポートしました。
 
+## <a name="add-constructor-and-initialize-data-list"></a>コンストラクターの追加とデータ リストの初期化
+
 次に、コンストラクターを追加して、製品の可用性情報でデータ リストを初期化する必要があります。 この方法で、ページに移動するときに、製品の可用性情報が読み込まれます。
 
 > [!NOTE]
@@ -126,7 +128,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 1. **SampleExtensions** フォルダーで新しい .json ファイルを追加し、**manifest.json** と名前を付け、次のコードを貼り付けます。
 
-    ```
+    ```json
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -170,7 +172,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 3. **extensions.json** ファイルを開いて、次のコードを貼り付けます。
 
-    ```
+    ```json
     {
         "extensionPackages": [
             {
@@ -187,7 +189,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 4. **tsconfig.json** ファイルを開いて、拡張子を含めます。 次のコードをファイルに貼り付けます。
 
-    ```
+    ```json
     "extends": "../tsconfigs/tsmodulesconfig",
     "exclude": [
         // "SampleExtensions"

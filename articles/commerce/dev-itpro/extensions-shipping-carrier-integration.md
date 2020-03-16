@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: a6598212d1b1575a3580228d9c7dd3f8002852ba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b7d17fb5ecfa5a8fa3af269d3668eb3440404d25
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004574"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057893"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 
 [!include [banner](../includes/banner.md)]
 
-販売時点管理 (POS) から顧客注文の梱包明細を生成するとき、梱包明細に品目の重量を印刷する場合があります。 パッケージについてのカスタム情報、送料に関して配送業者を呼び出す方法に関する情報、またはパッケージの返却方法についての情報を追加することもできます。 これらのシナリオを処理するため、受注処理のための梱包明細プロセスの延長ポイントが、バックオフィス、ビジネス ロジック層であるCommerce Runtime (CRT)、および POS で追加されました。 これらの拡張ポイントを使用すると、拡張を介してカスタム フローとロジックを追加できます。
+販売時点管理 (POS) から顧客注文の梱包明細を生成するとき、梱包明細に品目の重量を印刷する場合があります。 パッケージについてのカスタム情報、送料に関して配送業者を呼び出す方法に関する情報、またはパッケージの返却方法についての情報を追加することもできます。 これらのシナリオを処理するため、受注処理のための梱包明細プロセスの延長ポイントが、バックオフィス、ビジネス ロジック層である Commerce Runtime (CRT)、および POS で追加されました。 これらの拡張ポイントを使用すると、拡張を介してカスタム フローとロジックを追加できます。
 
 ## <a name="pos"></a>POS
 POS では、**PrintPackingSlipClientRequestHandler** という名前の新しい要求ハンドラーで拡張機能をオーバーライドできます。 この要求は、POS で**梱包明細を印刷する**ボタンを選択すると呼び出されます。 この要求を上書きすることによって、POS でカスタム ロジックを使用することができます。 たとえば、独自の印刷メソッドを呼び出し、追加情報を印刷できます。
@@ -40,7 +40,7 @@ POS の要求をオーバーライドするには、POS で次のオーバーラ
 
 **例**
 
-```Typescript
+```typescript
 import { PrintPackingSlipClientRequestHandler } from "PosApi/Extend/RequestHandlers/StoreFulfillmentRequestHandlers";
 import { PrintPackingSlipClientRequest, PrintPackingSlipClientResponse } from "PosApi/Consume/SalesOrders";
 import { ClientEntities } from "PosApi/Entities";
@@ -63,7 +63,7 @@ export default class PrintPackingSlipClientRequestHandlerExt extends PrintPackin
 
 要求を上書きした後は、新しい要求ハンドラー情報を含む manifest.json ファイルを更新します。
 
-```Typescript 
+```typescript 
 "requestHandlers": [
     {
         "modulePath": "Handlers/PrintPackingSlipClientRequestHandlerExt"

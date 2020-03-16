@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92b98ba0de3f39c2e4d3d50a6286690bc283d954
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 3a472a54a37c15fa1716182ade05884a714ad05d
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005744"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071721"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 
@@ -65,9 +65,9 @@ ms.locfileid: "3005744"
 
 - [現代の職場に力を与えるために、インテリジェンス、管理、セキュリティを強化する](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office 2017 年 9 月)
 
-- [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (マイクロソフト セキュリティ、2017 年 9 月)
+- [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsoft セキュリティ、2017 年 9 月)
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 GDPR および組織がデータの要求に対して実行する必要があるアクションの詳細については、[Microsoft サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers) にアクセスしてください。

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e965940a36cc3eaf0d3201be5ff8b23e3475016e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fb5de3d54616ae3551c458ce8b6a710265cb8e1d
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004590"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070439"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -57,16 +57,18 @@ Visual Studio に Retail Experience アプリを正しく読み込むことが�
 1.  Retail SDKフォルダー**全体**を Xamarin が有効なコンピューターにコピーします。 たとえば、C:\RetailSdk にコピーします。
 2.  C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln を開き、次の行を削除します。
 
-    ```
+    ```xml
     Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
     ```
 
 3.  C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj を開き、次の行を削除します。
 
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-        <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-        <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+    ```xml
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
+    <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
+    <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+    ```
 
 4.  Visual Studio で、Sample.ShoppingApp.sln を開き、Droid および iOS フォルダーから既存のプロジェクトを追加します。 (ソリューションを右クリックし、**追加** &gt; **Visual Studio の既存のプロジェクト**を選択します)。
 5.  Xamarin.Forms はアプリに必要なバージョン 2.3.2.127 の問題を修正しました。 以下の説明に従って Xamarin.Forms バージョンをアップグレードしてください:

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8fee96d79c714468b1acbe92b2eb9d1df8f885c
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 79f0b7a79e57e68a56b77e5662ab53cf13b4107d
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658878"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081955"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -31,7 +31,7 @@ ms.locfileid: "2658878"
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、Finance and Operations のメンテナンス モードについて説明します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
+このトピックでは、Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
 
 ## <a name="turn-maintenance-mode-on-and-off-on-sandbox-and-production-environments-through-lifecycle-services"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする 
 サンドボックスおよび運用環境で、Lifecycle Services (LCS) を通じて直接メンテナンス モードを有効または無効にできます。 これを行うには、次の手順を参照してください。
@@ -50,7 +50,11 @@ ms.locfileid: "2658878"
 ## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-hosted-in-a-microsoft-subscription"></a>Microsoft サブスクリプションで動作している開発テスト環境またはデモ環境にてメンテナンス モードをオンにする/オフにする。
 1. 開発者のマシンに RDP の接続を確立します。
 2. 開発者のマシンで、LCS から axdbadmin ユーザーの資格情報を使用して SQL Server にサインインします。 次に、AXDB データベースに切り替えて、次のコマンドを実行します。
-      update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+
+    ```Console
+    update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+    ```
+
 3. **World Wide Web 公開サービス** を再起動して IIS をリセットします。
 4. サービスが再起動されると、システムはメンテナンス モードになります。
 5. メンテナンス モードの活動を完了したら、ステップ 2 および 3 を繰り返しますが、値はステップ 2 で 0 に設定します。
@@ -61,8 +65,12 @@ ms.locfileid: "2658878"
 
 > [!Note]
 > 一部の仮想マシン (VM) では、Deployment.Setup.exe ツールの正確な場所が異なる場合があります。 AosServiceWebRootbin を確認してください。
-
-    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+>
+>
+>    ```Console
+>    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir 
+>    J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+>    ```
 
 次のテーブルに、このコマンドで使用されるパラメーターを示します。
 
@@ -86,5 +94,7 @@ Application Object Server (AOS) のインスタンスを再起動すると、シ
 
 次のコマンドを実行して、メンテナンス モードをオフにすることができます。
 
-    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
+```Console
+J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
+```
 

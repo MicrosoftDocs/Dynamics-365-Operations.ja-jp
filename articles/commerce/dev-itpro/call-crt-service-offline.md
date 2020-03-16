@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 27e09714571bc6b35045337a31bb602bf85dbb6c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 200e34416c9f5b974c68919988c7908a299c7cef
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004601"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070468"
 ---
 # <a name="call-the-commerce-runtime-crt-service-in-offline-mode"></a>Commerce Runtime (CRT) サービスをオフライン モードで呼び出す
 
@@ -43,12 +43,16 @@ ms.locfileid: "3004601"
 6.  Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker フォルダで、新しいプロキシ DLL をビルドして置き換えます。 また、カスタム CRT 拡張ライブラリを、Microsoft DynamicsAX\\70\\Retail Modern POS\\ClientBroker フォルダへドロップします。 (参照されるすべてのライブラリは、このフォルダにドロップする必要があります)。
 7.  DllHost.exe.config ファイルで、**RetailProxyAssemblyName** および **AdaptorCallerFullTypeName** を新しいプロキシ DLL およびアダプタ名に更新します。
 
-        <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
-        <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
+    ```xml
+    <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
+    <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
+    ```
 
 8.  CommerceRuntime.MPOSOffline.config ファイルの **&lt;構成&gt;** 要素で、commerceRuntime.config ファイルに関する新しい CRT DLL 情報を更新します。
 
-        <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
+    ```xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
+    ```
 
 9.  dllhost.exe を再起動します。 (新しい構成ファイルを読むために MPOS の dllhost.exe を再起動する必要があります。構成ファイルの変更がある場合、アップグレードをする際に必要になります。)
 

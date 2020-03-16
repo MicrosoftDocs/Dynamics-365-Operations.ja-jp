@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 08b8e734a5481fc0071fc3c0e390e56a862c8e93
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e100f63ccba52fb6609ad9abedb8518312891a11
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004627"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057650"
 ---
 # <a name="commerce-scale-unit"></a>コマース スケール ユニット
 
@@ -52,12 +52,10 @@ Commerce Scale Unit のセットアップを開始する前に、このオプシ
 
 ## <a name="get-started-with-store-scale-unit"></a>Store Scale Unit の使用を開始する
 
-開始するには、次の Commerce Scale Unit の構成に関するトピック、[Retail Store Scale Unit の構成とインストール](retail-store-scale-unit-configuration-installation.md) を確認してください。
+開始するには、次の Commerce Scale Unit の構成に関するトピック、[Commerce Scale Unit の構成とインストール](retail-store-scale-unit-configuration-installation.md) を確認してください。
 
 <a name="additional-resources"></a>追加リソース
 --------
 
-[コンフィギュレーションおよびインストール Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md)
-
-
+[コマース スケール ユニットのコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916663"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042714"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
@@ -154,7 +154,7 @@ ER では ER の式で使用される関数の一覧を拡張できます。 こ
 
 データ型が一致する場合、異なるカテゴリの関数を使用する複合式を作成できます。 関数を一緒に使用する場合は、1 つの関数からの出力のデータ型を別の関数が必要とする入力データ型に一致させます。 たとえば、フィールドの ER 形式要素へのバインディングで発生する "リストが空である" エラーを回避するには、次の例に示すように、[リスト](er-functions-category-list.md) カテゴリの関数を [論理](er-functions-category-logical.md) カテゴリの関数と組み合わせます。 ここでは、数式は [IF](er-functions-logical-if.md) 関数を使用して **IntrastatTotals** リストが空であるかどうかをテストしてから、必要な集計の値をリストから返します。 **IntrastatTotals** リストが空の場合、数式は **0** (ゼロ) を返します。
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 多くの場合、異なるカテゴリからの関数または同じカテゴリからの異なる機能を使用して、同じデータ変換結果を複数の方法で取得できます。 たとえば、前の式は [リスト](er-functions-category-list.md) カテゴリからの [COUNT](er-functions-list-count.md) 関数を使用してコンフィギュレーションすることもできます。
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

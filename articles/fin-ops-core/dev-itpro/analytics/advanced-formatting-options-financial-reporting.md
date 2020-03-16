@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a46ff0a1d6e29cc567a86fae60ff803a102d1a2e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181223"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071593"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>財務諸表の高度な形式オプション
 
@@ -216,7 +216,7 @@ ms.locfileid: "2181223"
 行定義の行に **CAL** の形式コードがあり、**関連するフォーミュラ / 行 /単位** セルに計算式を入力する場合、レポートに関連付けられた列と行の文字も入力する必要があります。 たとえば、**A.120** を入力して、列 A、行 120 を表します。 または、アット マーク (@) を使用して、すべての列を表すことができます。 たとえば **@120** を入力して、行 120 のすべての列を表します。 列の文字またはアット マーク (@) がない計算式は実数とみなされます。
 
 > [!NOTE]
-> ラベル行コードを使用して行を参照する場合、文字列とラベルの区切りとしてピリオド (.) を使用する必要があります (たとえば **A.GROSS\_MARGIN/A.SALES** など)。 アット マーク (@) を使用する場合、区切り記号は必要ではありません (**@GROSS\_MARGIN/@SALES** など)。
+> ラベル行コードを使用して行を参照する場合、文字列とラベルの区切りとしてピリオド (.) を使用する必要があります (たとえば **A.GROSS\_MARGIN/A.SALES** など)。 アット マーク (@) を使用する場合、区切り記号は必要ではありません (たとえば、 **\@GROSS\_MARGIN/@SALES**)。
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>特定の列の計算式の例
 

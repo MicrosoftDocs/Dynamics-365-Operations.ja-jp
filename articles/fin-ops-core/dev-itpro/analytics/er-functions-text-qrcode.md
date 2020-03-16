@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac0910d213ee05a2a7a7b218a6714d4f935be16
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 8a52dbce29140591baf4be97baef237dce1f2511
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916755"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040851"
 ---
 # <a name="QRCODE">QRCODE ER 機能</a>
 
@@ -33,7 +33,7 @@ ms.locfileid: "2916755"
 
 ## <a name="syntax"></a>構文
 
-```
+```vb
 QRCODE (text)
 ```
 
@@ -53,7 +53,7 @@ QRCODE (text)
 
 定義済みのテンプレートを使用して、電子報告 (ER) 形式をコンフィギュレーションし、Microsoft Office 形式 (Excel ブックまたは Word 文書) の送信ドキュメントを生成することができます。 このテンプレートには、QR コード画像のプレースホルダーとして**画像**オブジェクト (Excel ブック) または**画像コンテンツ コントロール** (Word 文書) を含めることができます。 コンフィギュレーションされた ER 形式に、このプレースホルダーを塗りつぶすために使用する**セル**要素を追加する必要があります。 QR コードにどの情報を格納するかを指定するには、この**セル**要素に対してバインドを定義する必要があります。 たとえば、次の式を含むようにバインドをコンフィギュレーションできます。
 
-```
+```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 

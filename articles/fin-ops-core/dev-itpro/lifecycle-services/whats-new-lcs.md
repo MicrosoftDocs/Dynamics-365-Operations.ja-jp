@@ -1,64 +1,50 @@
 ---
-title: Lifecycle Services (LCS) の新機能
-description: このトピックでは、LCS リリース ノートのブログ投稿へのリンクを提供します。
-author: kfend
+title: Lifecycle Services (LCS) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のリリース計画、主要な発表などへのリンクを提供します。
+author: laneswenka
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 13321
-ms.assetid: f9706e52-7d17-408d-9c1f-9033a50862b2
 ms.search.region: Global
-ms.author: kfend
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ec1e00b3516f20747345a19f23aef9a65daef2f
-ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
+ms.author: laswenka
+ms.search.validFrom: 2020-02-29
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 1ef5aa114bcc419c0760b1e35eeac8075de9f42b
+ms.sourcegitcommit: 6e30a97c4a2163366a6ed03c00784fe85e3371fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2872315"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081090"
 ---
-# <a name="whats-new-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能
+# <a name="whats-new-or-changed-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) は、事前販売からの実装および工程にいたるまでプロジェクトを管理するのに、顧客とそのパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 プロジェクトの局面および携わる業界に基づいて、このサイトはプロジェクトの管理を支援するチェックリストとツールを提供します。 このサイトは、ダッシュボードを提供し、単一の場所で最新のプロジェクト情報を取得できます。 
+Microsoft Dynamics Lifecycle Services (LCS) は、事前販売から実装および工程にいたるまでのプロジェクトを管理するのに、顧客とそのパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 プロジェクトの局面および携わる業界に基づいて、LCS はプロジェクトの管理を支援するチェックリストとツールを提供します。 さらにダッシュボードを提供し、単一の場所で最新のプロジェクト情報を取得できます。
 
-このリンクを使って [Lifecycle Services の Web サイト](https://lcs.dynamics.com/) を開きます。 詳細については、[Lifecycle Services (LCS) ユーザー ガイド](lcs-user-guide.md)を参照してください。
+LCS の使用を開始するには、[Lifecycle Services (LCS) ユーザーガイド](lcs-user-guide.md) を参照してください。
 
 > [!IMPORTANT]
-> このトピックは今後、現在のリリース計画へのリンクで更新されません。 Lifecycle Services の最新機能については、[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158)を参照してください。
+> LCS 機能およびサービスの変更は、ブログ投稿では発表されなくなります。 LCS 機能の説明については、[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) で提供されます。 このトピックでは、LCS リリースに含まれる機能を一覧表示します。
 
-次のリストは、過去 2 年間に発行された LCS の各リリース ノートのブログ投稿へのリンクを提供します。
+## <a name="february-2020---wave-2"></a>2020 年 2 月 - ウェーブ 2
 
-- [2017 年 10 月 - リリース 1](https://blogs.msdn.microsoft.com/lcs/2017/10/10/lcs-october-2017-release-1-release-notes/)
-- [2017 年 9 月 - リリース 2](https://blogs.msdn.microsoft.com/lcs/2017/09/27/lcs-september-2017-release-2-release-notes/)
-- [2017 年 9 月 - リリース 1](https://blogs.msdn.microsoft.com/lcs/2017/09/14/september-release-notes-2/)
-- [2017 年 8 月](https://blogs.msdn.microsoft.com/lcs/2017/08/17/august-release-notes-2/)
-- [2017 年 7 月](https://blogs.msdn.microsoft.com/lcs/2017/07/20/july-release-notes-2/)
-- [2017 年 6 月](https://blogs.msdn.microsoft.com/lcs/2017/06/15/june-release-notes/)
-- [2017 年 5 月](https://blogs.msdn.microsoft.com/lcs/2017/05/18/may-release-notes-2/)
-- [2017 年 4 月](https://blogs.msdn.microsoft.com/lcs/2017/04/27/april-release-notes-2/)
-- [2017 年 3 月](https://blogs.msdn.microsoft.com/lcs/2017/03/30/march-release-notes-2/)
-- [2017 年 2 月](https://blogs.msdn.microsoft.com/lcs/2017/03/03/february-release-notes-2/)
-- [2017 年 1 月](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/)
-- [2016 年 12 月](https://blogs.msdn.microsoft.com/lcs/2016/12/20/december-2016-feature-pack-release-notes/)
-- [2016 年 11 月](https://blogs.msdn.microsoft.com/lcs/2016/12/01/november-2016-release-notes/)
-- [2016 年 10 月](https://blogs.msdn.microsoft.com/lcs/2016/10/27/october-2016-release-notes/)
-- [2016 年 9 月](https://blogs.msdn.microsoft.com/lcs/2016/09/22/september-2016-release-notes/)
-- [2016 年 8 月](https://blogs.msdn.microsoft.com/lcs/2016/09/02/august-2016-release-notes/)
-- [2016 年 7 月](https://blogs.msdn.microsoft.com/lcs/2016/08/02/july-2016-release-notes/)
-- [2016 年 6 月](https://blogs.msdn.microsoft.com/lcs/2016/07/01/june-2016-release-notes/)
-- [2016 年 5 月](https://blogs.msdn.microsoft.com/lcs/2016/05/27/may-2016-release-notes/)
-- [2016 年 4 月](https://blogs.msdn.microsoft.com/lcs/2016/05/02/april-2016-release-notes/)
-- [2016 年 3 月](https://blogs.msdn.microsoft.com/lcs/2016/04/05/march-2016-release-notes/)
-- [2016 年 2 月](https://blogs.msdn.microsoft.com/lcs/2016/02/25/february-2016-release-notes/)
-- [2016 年 1 月](https://blogs.msdn.microsoft.com/lcs/2016/01/29/january-2015-release-notes/)
-- [2015 年 12 月](https://blogs.msdn.microsoft.com/lcs/2015/12/18/december-2015-release-notes/)
-- [2015 年 11 月](https://blogs.msdn.microsoft.com/lcs/2015/11/23/november-2015-release-notes/)
+| エリア | 機能 |
+|------|---------|
+| 環境アクション | **データベース移動操作に必要なプラットフォーム更新プログラム 20 またはそれ以降** - 2020 年 3 月から、データベース移動操作 (更新、インポート、エクスポート、およびポイントインタイム復元) を実行する機能には、少なくともプラットフォーム更新プログラム 20 が必要です。 この変更は、サービスの安定性をサポートするのに役立ちます。 |
+
+## <a name="february-2020---wave-1"></a>2020 年 2 月 - ウェーブ 1
+
+| エリア | 機能 |
+|------|---------|
+| 管理者 API | **データベース移動 RESTful API** - LCS は RESTful API エンドポイントを公開します。 更新をトリガーするための認証方法と適切な呼び出し方法を説明したドキュメントが提供されます。 この機能を実装するには、Microsoft Azure ロジック アプリまたはその他の繰り返しエンジンを使用して、スケジューリングと自動化を行います。 |
+
+## <a name="lcs-releases-before-november-2019"></a>2019 年 11 月以前の LCS リリース
+
+2019 年 11 月以前に発生した LCS リリースについては、[Dynamics 365 ブログ](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/) で Lifecycle Services チームが発行したブログ投稿を参照してください。

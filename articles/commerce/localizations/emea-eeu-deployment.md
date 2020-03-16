@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: ceb4d0764b345d7c8f2664b2c98c4e207bef28ee
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e04549e9812b31879f7aa5ae8e4f1c9e5a8db113
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004682"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057574"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
@@ -95,7 +95,7 @@ ms.locfileid: "3004682"
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
 
-詳細な情報は、[東ヨーロッパにおける小売向け事前請求書](./emea-eeu-advance-invoices-for-retail.md)を参照してください。
+詳細については、[東ヨーロッパにおけるコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
 
 ## <a name="production-environment"></a>実稼働環境
 
@@ -111,4 +111,4 @@ ms.locfileid: "3004682"
     ```
 
 3. Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。
-4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。

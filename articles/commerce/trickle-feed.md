@@ -1,6 +1,6 @@
 ---
 title: 小売店舗トランザクション用トリクル フィードベースの注文作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce の小売店舗トランザクションに対するトリクル フィードベースの注文作成について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce の店舗トランザクションに対するトリクル フィードベースの注文作成について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,18 +18,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f691017ad06d3416e4ba0e86d7a0bc207aba5bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004277"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057165"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>小売店舗トランザクション用トリクル フィードベースの注文作成 (パブリック プレビュー)
 
 [!include [banner](includes/banner.md)]
-
-
 
 Dynamics 365 Retail バージョン 10.0.4 およびそれ以前のバージョンでは、明細書の転記は営業終了操作で、すべてのトランザクションは 1 日の終わりに帳簿に転記されます。 その後、限られた時間枠で大規模なトランザクションを処理する必要があります。その結果、負荷、ロック、明細書の転記エラーなどが発生する場合があります。 小売業者は、1 日をとおして帳簿にある収益や支払も識別できません。
 

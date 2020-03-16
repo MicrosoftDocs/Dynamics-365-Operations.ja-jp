@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc879e0c3eca93ee08f464a40252fc04b7de727
-ms.sourcegitcommit: 9433c4a594c5649e63644950b15840d5676ba407
+ms.openlocfilehash: fb90940bb07478f518ff4e8f479d9e89b1889753
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "2992332"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080758"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -57,7 +57,7 @@ ms.locfileid: "2992332"
 
 4. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 
-    ```Sql
+    ```sql
     select * from DIMENSIONCOMBINATIONENTITY 
     ```
 
@@ -74,7 +74,7 @@ ms.locfileid: "2992332"
 5. **departmentValue** という名前の str を返す新しいプライベート静的メソッドを作成します。 
 6. この方法では、**DimensionAttributeValueCombination** から分析コードの値を取得する必要があります。 最終的な方法はこのようになります。
 
-    ```
+    ```xpp
     /// <summary>
     /// This method returns the value of Department.
     /// </summary>
@@ -114,7 +114,7 @@ ms.locfileid: "2992332"
 
 10. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 
-    ```
+    ```sql
     select * from DIMENSIONCOMBINATIONENTITY
     ```
 

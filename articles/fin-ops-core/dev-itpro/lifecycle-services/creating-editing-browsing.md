@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5b1f30d7b7ddac23217de9d65e5b795911ac5bcd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93f8a97f703538bd4ad5fcdef1dcc67a90d3adec
+ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183211"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3078032"
 ---
 # <a name="create-edit-and-browse-business-process-modeler-bpm-libraries"></a>ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
 
@@ -59,17 +59,17 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 2. コピーするライブラリのタイルで、省略記号ボタン (...) を選択し、**コピー**を選択します。
     ![Copy_a_library](./media/Copy_a_library.PNG "ライブラリのコピー")   
 3. ライブラリ名を入力し、**作成**をクリックします。
-    ![a_copied_library の作成](./media/Create_a_copied_library.PNG "ライブラリのコピーを作成")
+    ![Create a_copied_library](./media/Create_a_copied_library.PNG "ライブラリのコピーを作成")
 
 
 ## <a name="import-a-sections-of-another-library"></a>別のライブラリのセクションのインポート
 1. **業務プロセス ライブラリ**ページを開いて、編集するライブラリを開きます。 
 2. インポートする明細行に移動して**インポート**を選択します。
-     ![Select_import](./media/Select_import.PNG "インポートを選択")
+     ![Select_import](./media/Select_import.PNG "インポートの選択")
 3. **子として** または **兄弟として** を選択します。
      ![Select_child_or_sibling](./media/Select_child_or_sibling.PNG "子または兄弟を選択")
 4. ウィンドウで、インポートするライブラリを選択して**インポート**をクリックします。
-     ![Choose_library](./media/Choose_library.PNG "ライブラリの選択")
+     ![Choose_library](./media/Choose_library.PNG "ライブラリを選択")
 
 
 ## <a name="add-a-new-process"></a>新しいプロセスの追加
@@ -86,7 +86,7 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 3. プロセス ノードの名前と説明を入力します。
 4. プロセスが適用される業界と国または地域を選択します。 また、キーワードおよびリンクを追加することもできます。 キーワードでカテゴリ、認定作業、またはその他のメタデータを定義できます。 リンク (URL) を使用して、外部サイトまたはドキュメントを参照できます。
 
-    ![プロセス プロパティ](./media/NEWBPM_BlogPost08-194x300.png "プロセスの詳細")
+    ![プロパティの処理](./media/NEWBPM_BlogPost08-194x300.png "プロセスの詳細")
 
 5. プロパティの編集を完了したら、**保存** をクリックします。
 
@@ -113,11 +113,11 @@ BPM ライブラリを作成する方法はいくつかあります。 クライ
 1. **業務プロセス ライブラリ**ページで、参照するライブラリのタイルをダブルクリックします。
 2. BPM ライブラリで、プロセスを選択してそのサブステップを表示します。
 
-    ![プロセスおよびそのサブステップ](./media/2.PNG "プロセスおよびそのサブステップ")
+    ![プロセスとそのサブステップ](./media/2.PNG "プロセスとそのサブステップ")
 
 3. ツールバーのボタンを使用して、プロセスを子プロセスまたは兄弟プロセスとして追加、削除、またはインポートします。 また、**すべて折りたたみ** を選択して親プロセスのみを表示することができます。 
 
-    ![ツールバー](./media/3.PNG "ツールバー")
+    ![ツール バー](./media/3.PNG "ツール バー")
 
 ## <a name="search-a-bpm-library"></a>BPM ライブラリを検索
 

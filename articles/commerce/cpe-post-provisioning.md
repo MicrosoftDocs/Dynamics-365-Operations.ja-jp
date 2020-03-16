@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024709"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057720"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce プレビュー環境のコンフィギュレーション
 
@@ -35,7 +35,7 @@ ms.locfileid: "3024709"
 
 このトピックの手順は、Commerce プレビュー環境がプロビジョニングされた後にのみ完了してください。 Commerce プレビュー環境をプロビジョニングする方法については、[Commerce プレビュー環境のプロビジョニング](provisioning-guide.md) を参照してください。
 
-Commerce プレビュー環境をエンドツーエンドでプロビジョニングした後、環境の評価を開始する前に、追加のプロビジョニング後のコンフィギュレーション手順を完了する必要があります。 これらの手順を完了するには、Microsoft Dynamics Lifecycle Services (LCS)、Dynamics 365 Commerce、および Dynamics 365 Retail を使用する必要があります。
+Commerce プレビュー環境をエンドツーエンドでプロビジョニングした後、環境の評価を開始する前に、追加のプロビジョニング後のコンフィギュレーション手順を完了する必要があります。 これらの手順を完了するには、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Commerce を使用する必要があります。
 
 ## <a name="before-you-start"></a>始める前に
 
@@ -53,7 +53,7 @@ Commerce プレビュー環境をエンドツーエンドでプロビジョニ�
 
 LCS で作業者を ID に関連付けるには、次の手順を実行します。
 
-1. 左側のメニューを使用して、**モジュール \> Retail \> 従業員 \> 作業者**の順に移動します。
+1. 左側のメニューを使用して、**モジュール \> 小売りとコマース \> 従業員 \> 作業者**の順に移動します。
 1. リストで、次のレコードを検索し、選択します: **000713 - アンドリュー コレット**。
 1. アクション ウィンドウで、**Retail** を選択します。
 1. **既存の ID の関連付け**を選択します。
@@ -91,12 +91,12 @@ LCS のクラウド POS を有効にするには、次の手順を実行しま�
 1. **パス** フィールドの値はそのままにしておきます。
 1. **OK** を選択します。 サイトでページのリストが表示されます。
 
-## <a name="enable-jobs-in-retail"></a>Retail のジョブの有効化
+## <a name="enable-jobs"></a>ジョブの有効化
 
-Retail のジョブを有効化するには、次の手順に従います。
+コマースのジョブを有効化するには、次の手順に従います。
 
 1. 環境 (HQ) にサインインします。
-1. 左側のメニューを使用して、**Retail \> 照会およびレポート \> バッチ ジョブ**の順に移動します。
+1. 左側のメニューを使用して、**小売りとコマース \> 照会およびレポート \> バッチ ジョブ**の順に移動します。
 
     この手順の残りの部分は、次の各ジョブに対して完了する必要があります。
 
@@ -112,11 +112,11 @@ Retail のジョブを有効化するには、次の手順に従います。
     1. アクション ウィンドウの、**バッチ ジョブ** タブで、**状態の変更**を選択します。
     1. **待機中**を選択し、**OK** を選択します。
 
-### <a name="run-full-data-synchronization-in-retail"></a>Retail で完全なデータ同期の実行
+### <a name="run-full-data-synchronization"></a>完全データ同期の実行
 
-Retail で完全なデータ同期を実行するには、次の手順を実行します。
+コマースで完全なデータ同期を実行するには、次の手順を実行します。
 
-1. 左側にあるメニューを使用して、**モジュール \> Retail \> 本社の設定 \> 小売用スケジューラ \> チャネル データベース**の順に移動します。
+1. 左側のメニューを使用して、**モジュール \> 小売りとコマース \> 本社の設定 \> 小売用スケジューラ \> チャネル データベース**の順に移動します。
 1. 左側のリストで、**既定**のチャネルが選択できます。 使用可能な他のチャンネルを選択します。 このチャンネルは **scXXXXXXXXX** と呼ばれます。
 1. アクション ウィンドウで、**完全なデータの同期**を選択します。
 1. 配送スケジュールとして **9999** を入力します。

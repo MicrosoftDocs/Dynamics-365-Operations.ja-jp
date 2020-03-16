@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b09c625d262aa2ba73064a97a282023167fd7798
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 793ca88cc70869a06a3cfcd4c15ac219bca365ad
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183437"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082023"
 ---
 # <a name="consume-external-web-services"></a>外部 Web サービスの消費
 
@@ -38,7 +38,7 @@ ms.locfileid: "2183437"
 2. Visual Studio プロジェクトで、外部 Web サービス `http://www.contoso.net/stockquote.asmx` へのサービス参照を追加します。
 3. 新しい静的クラスを作成し、次の例に示すように StockQuote サービス操作をラップします。
 
-    ```
+    ```xpp
     public static string GetQuote(string s)
     {
         var binding = new System.ServiceModel.BasicHttpBinding();
@@ -55,7 +55,7 @@ ms.locfileid: "2183437"
 6. 参照として **ExternalServiceLibrary.dll** を追加します。
 7. X++ クラスでは、ExternalServiceLibrary.dll で参照されていた外部 Web サービスを使用することができます。
 
-    ```
+    ```xpp
     public static void main(Args _args)
     {
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));

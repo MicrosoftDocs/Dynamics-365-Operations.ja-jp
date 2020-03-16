@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 77bd4226009d6395a85ac8444331ba9e4014efa0
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: e27c2565b04c74a242c5e13c178e98fa9d63512e
+ms.sourcegitcommit: 33fb057cd3b7b19b97e9c8941655516f7225b0f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030910"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3087921"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-preview-february-2020"></a>Dynamics 365 Finance バージョン 10.0.9 プレビュー (2020 年 2 月) の新機能または変更された機能
 
@@ -42,6 +42,8 @@ ms.locfileid: "3030910"
  - [詳細な元帳入力を使用してトランザクションを転記する際の銀行残高の更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
  - [仕入先の入札 – 仕入先からの RFQ の質問と、集計された応答](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
+ 
+ - [与信の管理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/credit-management)
  
  - [イタリアの拡張ローカライズ: 訂正票の勘定の分割](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
  

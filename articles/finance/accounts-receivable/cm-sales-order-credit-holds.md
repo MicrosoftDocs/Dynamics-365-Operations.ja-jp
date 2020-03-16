@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015300"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057673"
 ---
 # <a name="credit-holds-for-sales-orders"></a>販売注文の与信保留
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ ms.locfileid: "3015300"
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>強制的な与信保留で与信管理保留リストに追加された注文のリリース
 強制保留の理由がある販売注文は、自動的にリリースすることはできません。 販売注文が強制的に保留され、販売注文を自動的にリリースするプロセスを使用している場合は、販売注文は**リリースの準備完了**として表示され、保留リストに残ります。 **リリース** メニューを使用して注文をリリースする必要があります。
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>与信管理における自由書式の請求書、小売注文、およびプロジェクト請求書のサポート 
-与信管理は、現在販売注文に対してのみ使用できます。 自由書式の請求書、小売の販売時点管理注文およびコールセンターの注文では、与信限度額を調整するために追加する一時的な与信限度額と保険/保証が使用されます。 この場合、ブロック ルールは使用されず、与信限度額に問題がある場合、保留リストには入れられません。
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>与信管理における自由書式の請求書、注文、およびプロジェクト請求書のサポート 
+与信管理は、現在販売注文に対してのみ使用できます。 自由書式の請求書、販売注文のポイントおよびコールセンターの注文では、与信限度額を調整するために追加する一時的な与信限度額と保険/保証が使用されます。 この場合、ブロック ルールは使用されず、与信限度額に問題がある場合、保留リストには入れられません。
 
 与信管理では、プロジェクト請求書はサポートされません。

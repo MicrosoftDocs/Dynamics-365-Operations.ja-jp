@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: c96d1f7cd1170c41f16307b704920ffba83e7bc0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: abbe8d81308bff8f3e0d2563e834af7b3c1723c8
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004680"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057575"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -676,7 +676,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
-    3. CRT用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT 用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -686,7 +686,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     1. **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** アセンブリ ファイルを検索します。
     2. ファイルをIIS Retail Server サイトがある場所の **\\bin** フォルダーにコピーします。
-    3. CRT用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT 用拡張機能コンフィギュレーションファイルで CRT の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -1601,7 +1601,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     ```
 
 7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 ### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
 

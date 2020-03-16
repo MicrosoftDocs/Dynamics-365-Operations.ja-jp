@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb9a387c8b68d0da4dd485116089f1cf4c5ab72c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915973"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041702"
 ---
 # <a name="VALUEIN">VALUEIN ER 関数</a>
 
@@ -33,7 +33,7 @@ ms.locfileid: "2915973"
 
 ## <a name="syntax"></a>構文
 
-```
+```vb
 VALUEIN (input, list, list item expression)
 ```
 
@@ -61,7 +61,7 @@ VALUEIN (input, list, list item expression)
 
 一般に、`VALUEIN` 関数は一連の **OR** 条件に変換されます。
 
-```
+```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
 ```
 
@@ -94,7 +94,7 @@ VALUEIN (input, list, list item expression)
 
 `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` 式として構成されたデータ ソースが呼び出されると、次の SQL ステートメントが生成され、イントラスタット テーブルのフィルターされたレコードを返します。
 
-```
+```vb
 select … from Intrastat
 exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
@@ -111,7 +111,7 @@ where IntrastatPort.PortId = Intrastat.Port
 
 `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` 式として構成されたデータ ソースが呼び出されると、最終的な SQL ステートメントには次の条件が含まれています。
 
-```
+```vb
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 

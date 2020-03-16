@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22b795b0c60793963d40128eaa25e40c28ea6c43
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 8bd91d71d6888e92a3e78d78a4389ae0549d1404
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983712"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082016"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
@@ -55,41 +55,55 @@ ms.locfileid: "2983712"
 
 ソース管理の Azure DevOps または TFS を使用していない場合は、次のコマンドを使用します。
 
-    SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
+```Console
+SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
+```
 
 #### <a name="with-version-control-recommended"></a>バージョン管理の使用 (推奨)
 
 ソース管理に Azure DevOps または TFS を使用している場合は、次の手順を実行します。以下のコマンドを使用して、修正プログラム パッケージのインストールを**準備**します。 この手順は、プラットフォーム更新プログラム 2 (2016 年 8 月) よりも古いプラットフォームを使用している場合は利用できません)
 
-    SCDPBundleInstall.exe -prepare -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```Console
+SCDPBundleInstall.exe -prepare -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```
 
 これにより、環境内のすべての既存ファイルの変更セットが作成され、修正プログラム パッケージによって変更されます。この場合、prepare コマンドによって修正プログラムはインストールされません。 次に例を示します。
 
-    SCDPBundleInstall.exe -prepare -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```Console
+SCDPBundleInstall.exe -prepare -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```
 
 保留中の変更を**チェックイン**して、バージョン管理システムでこれらのファイルのバックアップを作成します。 これにより、必要に応じて修正プログラムをロールバックすることができます。 次のコマンドを使用して修正プログラムを**インストール**します。
 
-    SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```Console
+SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```
 
 プラットフォーム更新プログラム 2 (2016 年 8 月) よりも古いプラットフォームを使用している場合は、**-install** オプションを指定する必要はありません。 次に例を示します。
 
-    SCDPBundleInstall.exe -install -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```Console
+SCDPBundleInstall.exe -install -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```
 
 Azure DevOps/TFS パラメーターを使用して、パッケージによって修正されたファイルを、チーム エクスプ ローラー内の保留中の変更の一覧に追加できます。
 
 ### <a name="required-parameters"></a>必須パラメーター
 
-    /packagepath=[Path of the local scdp file containing the hotfixes downloaded from Lifecycle Service (LCS)]
+```Console
+/packagepath=[Path of the local scdp file containing the hotfixes downloaded from Lifecycle Service (LCS)]
 
-    /metadatastorepath=[Path of the local metadata store folder, such as c:\AOSService\PackagesLocalDirectory]
+/metadatastorepath=[Path of the local metadata store folder, such as c:\AOSService\PackagesLocalDirectory]
+```
 
 ### <a name="tfs-parameters"></a>TFS パラメーター
 
 ソース管理に Azure DevOps または TFS を使用している場合は、次の 2 つのパラメーターを指定する必要があります。
 
-    /tfsprojecturi=[URI of the TFS Project to connect to]
+```Console
+/tfsprojecturi=[URI of the TFS Project to connect to]
 
-    /tfsworkspacepath=[Path of the local workspace, usually equal to the metadatastorepath]
+/tfsworkspacepath=[Path of the local workspace, usually equal to the metadatastorepath]
+```
 
 インストール コマンドが呼び出されると、パッケージのインストール プロセスが開始されます。 インストール プロセスの一環として、メタデータ ストア フォルダ内の一部の XML ファイルはそれ自体の修正で加えられた変更を反映するように更新されます。 Azure DevOps または TFS を使用している場合、これらのファイルがチーム エクスプローラーの**保留中の変更**ウィンドウに含まれた変更のリストに追加されます。 
 

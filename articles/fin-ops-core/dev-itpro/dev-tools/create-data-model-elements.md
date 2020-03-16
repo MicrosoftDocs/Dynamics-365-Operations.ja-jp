@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58a07b4a35db236bbe1a90126bf1fc19a4c532e5
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: aa4736af314bed35acf2ed346c14a4982263aac0
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983665"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082020"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルの作成、およびデータモデル要素の作成についての概要
 
@@ -45,7 +45,7 @@ ms.locfileid: "2983665"
 2.  **Dynamics 365** ウィンドウから、**モデル管理 &gt; モデルの作成**を選択して、**モデルの作成**ウィザードを開きます。
 3.  モデル パラメーターの以下の値を入力します。
 
-    | **プロパティ**           | **値**                                                                                                                |
+    | プロパティ               | Value                                                                                                                    |
     |------------------------|--------------------------------------------------------------------------------------------------------------------------|
     | **モデル名**         | FleetMgmntTutorial                                                                                                       |
     | **モデル発行元**    | Microsoft Corp                                                                                                           |
@@ -78,7 +78,7 @@ ms.locfileid: "2983665"
 11. **Unified Operations** テンプレートを選択します。
 12. ダイアログ ボックスのフィールドに次の値を入力します。
 
-    | **プロパティ** | **値**       |
+    | プロパティ     | Value           |
     |--------------|-----------------|
     | **名前**     | FMTDataModel    |
     | **保管場所** | C:\\FMLab       |
@@ -103,7 +103,7 @@ ms.locfileid: "2983665"
 5.  デザイナーで **FMTAddress** ルート ノードを選択します。
 6.  **プロパティ** ウィンドウの**外観セクション**で、次のプロパティを設定します。
 
-    | **プロパティ**    | **値**          |
+    | プロパティ        | Value              |
     |-----------------|--------------------|
     | **ヘルプ テキスト**   | オンライン ヘルプをチェックしてください。 |
     | **ラベル**       | アドレス            |
@@ -139,7 +139,7 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
 
 1.  各フィールドを追加するには、**フィールド** を右クリックし、**新規** をクリックして、タイプを選択します。 各フィールドを追加すると、次の表に示すように、**プロパティ** ウィンドウでフィールド名とその他の特定の値を指定する必要があります。
 
-    | **タイプ**   | **フィールド名** | **プロパティ値**                                                         |
+    | 型       | フィールド名     | プロパティ値                                                             |
     |------------|----------------|-----------------------------------------------------------------------------|
     | **日付**   | CCExpiryDate   | 拡張データ型 = FMTCCExpiryDate                                        |
     | **文字列** | アドレス        | 拡張データ型 = FMTAddressHelp テキスト = アドレス フィールドのヘルプ テキスト。 |
@@ -185,12 +185,12 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
     > [!TIP]
     > 「this.」を入力するとき、IntelliSense リストからフィールドを選択します。
 
-```
-        public display FMTName fullName()
-        {
-            return this.FirstName + ' ' + this.LastName;
-        }
-```
+    ```xpp
+    public display FMTName fullName()
+    {
+        return this.FirstName + ' ' + this.LastName;
+    }
+    ```
 
 3.  コードを保存します。
 
@@ -198,7 +198,10 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
 1.  **ソリューション エクスプローラー**で **FMTDataModel** プロジェクトを展開します。
 2.  **FMTAddress** を右クリックしてから、**開く** をクリックします。 **EDT デザイナー**が開きます。
 3.  **EDT デザイナー**で、**FMTAddress** を選択します。
-4.  **プロパティ** ウィンドウの**参照テーブル** フィールドで、**FMTCustomer** を選択します。 **ヒント:** ドロップダウン リストをクリックし、検索ボックスに、接頭語「FMT」を入力します。 これにより、名前に「FMT」が含まれている表のみが表示されるように、ドロップダウン リストがフィルター処理されます。 フィルター処理されたエントリの一覧から **FMTCustomer** テーブルを選択します。 [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+4.  **プロパティ** ウィンドウの**参照テーブル** フィールドで、**FMTCustomer** を選択します。 **ヒント:** ドロップダウン リストをクリックし、検索ボックスに、接頭語「FMT」を入力します。 これにより、名前に「FMT」が含まれている表のみが表示されるように、ドロップダウン リストがフィルター処理されます。 フィルター処理されたエントリの一覧から **FMTCustomer** テーブルを選択します。 
+
+    [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+    
 5.  EDT を保存します。
 
 ## <a name="build-the-fmtdatamodel-project-and-the-fleet-management-tutorial-model"></a>FMTDataModel プロジェクトと フリート管理チュートリアル モデルの構築

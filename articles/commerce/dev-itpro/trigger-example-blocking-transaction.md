@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ffe3b02c56f09f80b1f46bc07cfcef9b1cd607f4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 02b2d0d29488d9cc274c3974d1bd03772c3a4b6b
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004625"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070775"
 ---
 # <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 
@@ -41,86 +41,97 @@ ms.locfileid: "3004625"
 
 4.  GetCustomersServiceRequestTrigger.cs ファイルに、次の明細書を**使用して**追加します。
 
-        using Microsoft.Dynamics.Commerce.Runtime.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime;
+    ```typescript
+    using Microsoft.Dynamics.Commerce.Runtime.Messages;
+    using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+    using Microsoft.Dynamics.Commerce.Runtime;
+    ```
 
 5.  コードの class1.cs の名前を GetCustomersServiceRequestTrigger に変更し、IRequestTrigger インターフェイス宣言を追加します。
 
-        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using Microsoft.Dynamics.Commerce.Runtime;
-        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+    ```typescript
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Microsoft.Dynamics.Commerce.Runtime;
+    using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+    using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
-        namespace CRTTriggerExtension
-        public class GetCustomersServiceRequestTrigger : IRequestTrigger
-        {
+    namespace CRTTriggerExtension
+    public class GetCustomersServiceRequestTrigger : IRequestTrigger
+    {
+    ```
 
 6.  IRequestTrigger インターフェイス トリガーを実装します。 IRequestTrigger クラスを右クリックして、**クイック アクション** をクリックし、**インターフェイスの実装** をクリックします。 Visual Studio はインターフェイスを実装します。 また、カーソルを IRequestTrigger の上に配置して、**Ctrl+** を押し、**インターフェイスの実装** を選択することができます。
 7.  空のインターフェイス メンバー SupportedRequestTypes、OnExecuted、および OnExecuting メソッドを次のコード例に示します。
 
-        public class GetCustomersServiceRequestTrigger : IRequestTrigger
-        {
-            public IEnumerable<Type> SupportedRequestTypes
-            {
-                get
-                {
-                    throw new NotImplementedException();
-                }
-            }
-
-            public void OnExecuted(Request request, Response response)
-            {
-                throw new NotImplementedException();
-            }
-
-            public void OnExecuting(Request request)
-            {
-                throw new NotImplementedException();
-            } 
-        }
-
-8.  Commerce Scale Unit は、GetCustomersServiceRequest オブジェクトを使用して Commerce Runtime (CRT) から顧客詳細を取得し、GetCustomersServiceRequest オブジェクトを使用して顧客をトランザクションに追加します。 トランザクションに顧客を追加する前に、顧客がブロックされているかどうかを確認する必要があります。 これを行うには、この要求の転記トリガーを実装し、顧客がブロックされているかどうかを確認します。 顧客がブロックされている場合、MPOS によって例外がスローされます。
-9.  SupportedRequestTypes メソッドで、GetCustomersServiceRequest のトリガーを追加することを CRT に通知します。 次のコード例は、GetCustomersServiceRequest をサポートされている型として追加する方法を示しています。
-
+    ```typescript
+    public class GetCustomersServiceRequestTrigger : IRequestTrigger
+    {
         public IEnumerable<Type> SupportedRequestTypes
         {
             get
             {
-                return new[] { typeof(GetCustomersServiceRequest) };       
+                throw new NotImplementedException();
             }
         }
-
-10. 顧客が次のコードで OnExecuted (転記トリガー) メソッドでブロックされているかどうかを確認します。
 
         public void OnExecuted(Request request, Response response)
         {
-            if (response == null)
-            {
-            throw new ArgumentNullException("request");
-            }
-
-            var getCustomersServiceResponse = (GetCustomersServiceResponse)response;
-            if(getCustomersServiceResponse.Customers.FirstOrDefault().Blocked == true)
-            {
-                string message = string.Format("Failed to add customer '{0}' to cart. Blocked customers are not allowed for transactions.",
-                    getCustomersServiceResponse.Customers.FirstOrDefault().AccountNumber);
-                throw new CartValidationException(DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_CustomerAccountIsBlocked, message);
-            }
+            throw new NotImplementedException();
         }
+
+        public void OnExecuting(Request request)
+        {
+            throw new NotImplementedException();
+        } 
+    }
+    ```
+
+8.  Commerce Scale Unit は、GetCustomersServiceRequest オブジェクトを使用して Commerce Runtime (CRT) から顧客詳細を取得し、GetCustomersServiceRequest オブジェクトを使用して顧客をトランザクションに追加します。 トランザクションに顧客を追加する前に、顧客がブロックされているかどうかを確認する必要があります。 これを行うには、この要求の転記トリガーを実装し、顧客がブロックされているかどうかを確認します。 顧客がブロックされている場合、MPOS によって例外がスローされます。
+9.  SupportedRequestTypes メソッドで、GetCustomersServiceRequest のトリガーを追加することを CRT に通知します。 次のコード例は、GetCustomersServiceRequest をサポートされている型として追加する方法を示しています。
+
+    ```typescript
+    public IEnumerable<Type> SupportedRequestTypes
+    {
+        get
+        {
+            return new[] { typeof(GetCustomersServiceRequest) };       
+        }
+    }
+    ```
+
+10. 顧客が次のコードで OnExecuted (転記トリガー) メソッドでブロックされているかどうかを確認します。
+
+     ```typescript
+     public void OnExecuted(Request request, Response response)
+     {
+        if (response == null)
+        {
+        throw new ArgumentNullException("request");
+        }
+
+        var getCustomersServiceResponse = (GetCustomersServiceResponse)response;
+        if(getCustomersServiceResponse.Customers.FirstOrDefault().Blocked == true)
+        {
+            string message = string.Format("Failed to add customer '{0}' to cart. Blocked customers are not allowed for transactions.",
+                getCustomersServiceResponse.Customers.FirstOrDefault().AccountNumber);
+            throw new CartValidationException(DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_CustomerAccountIsBlocked, message);
+        }
+     }
+     ```
 
 11. 最後に、次のコードで OnExecuting メソッドを更新します。
 
-        public void OnExecuting(Request request) 
+     ```typescript
+     public void OnExecuting(Request request) 
+     {
+        if (request == null)
         {
-            if (request == null)
-            {
-                throw new ArgumentNullException("request");
-            }
+            throw new ArgumentNullException("request");
         }
-
+     }
+     ```
 12. **保存** をクリックします。
 
 

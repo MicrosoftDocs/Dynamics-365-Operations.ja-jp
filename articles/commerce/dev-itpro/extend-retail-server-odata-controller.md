@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 094a8aa998009ac0a0d8a548656331c852881b84
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ad9b34a5225447226b63db72912e3f04e482aaca
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004575"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057894"
 ---
 # <a name="extend-a-cloud-scale-unit-odata-controller"></a>Cloud Scale Unit OData コントローラーの拡張
 
@@ -34,7 +34,7 @@ ms.locfileid: "3004575"
 
 既存のコント ローラーを拡張するには、既存のコントローラー クラスを拡張する新しいクラスを定義する必要があります。 既存のコント ローラーを拡張する新しいコント ローラーを作成するときは、新しいコントローラーは拡張されるコントローラーで新しいメソッドを作成するか既存のメソッドをオーバーライドできます。 オーバーライドされていない拡張コントローラー内のすべてのメソッドは、引き続き同じように機能します。 この例では、**ExtendedCustomersController** クラスは **CustomersController** クラスを拡張し、**CustomersController**クラスは **Customers** エンティティ タイプのコントローラーです。  
 
-Commerce Scale Unit Web.config ファイルの **extensionComposition** セクションを更新する必要があります。 詳細については、[Commerce Runtime (CRT) および Retail サーバー拡張機能](commerce-runtime-extensibility.md)の **MPOS/クラウド POS から新しい Retail サーバー API を呼び出す方法** セクションを参照してください。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。 
+Commerce Scale Unit Web.config ファイルの **extensionComposition** セクションを更新する必要があります。 詳細については、[Commerce Runtime CRT および Retail Server の拡張機能](commerce-runtime-extensibility.md) を参照してください。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。 
 
 ```csharp
 using System.Web.Http;

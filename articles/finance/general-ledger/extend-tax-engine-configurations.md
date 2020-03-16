@@ -16,12 +16,12 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: da3d8396186ae94bc7de376c12566d23d9f81c3e
-ms.sourcegitcommit: 56ed9fff3137363967975439ee9207491a1a1b51
+ms.openlocfilehash: 53dd729fe36e21ea60d65019afd3d33dfc5c8de1
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832434"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059389"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 
@@ -138,52 +138,54 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     1. **組織管理** > **グローバル アドレス帳** > **アドレス** > **アドレスの設定**の順に移動します。 
     2. **連邦直轄領**列を右クリックし、**フォーム情報** > **フォーム名: LogisticsAddressSetup** をクリックします。 たとえば、列のシステムの名前が **LogisticsAddressState.UnionTerritory_IN** であることを確認します。
 
-![連邦直轄領の GTE 拡張](media/gte-extension-union-territory-form-info.png)
+    ![連邦直轄領の GTE 拡張](media/gte-extension-union-territory-form-info.png)
 
 2. 連邦直轄領内のイントラスタット取引の税エンジン モデル フィールドを追加します。
 
-   1. モデル アプリケーション スイートの新しいプロジェクトを作成し、新しいクラスである TaxableDocRowDPExtLineSubscriberSample を追加します。 取引が連邦直轄領内のイントラスタット取引かどうかを判断し、フラグを GTE に渡すための以下のロジックを実装します。
+    モデル アプリケーション スイートの新しいプロジェクトを作成し、新しいクラスである TaxableDocRowDPExtLineSubscriberSample を追加します。 取引が連邦直轄領内のイントラスタット取引かどうかを判断し、フラグを GTE に渡すための以下のロジックを実装します。
    
-            public class TaxableDocRowDPExtLineSubscriberSample
-            {
-                public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
+    ```xpp   
+    public class TaxableDocRowDPExtLineSubscriberSample
+    {
+        public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 
-                [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine),               delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
-                public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
-                {
-                _validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
-                }
+        [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine),               delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
+        public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
+        {
+        _validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
+        }
 
-                [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
-                public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
-                {
-                _lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
-                }
+        [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
+        public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
+        {
+        _lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
+        }
 
-                private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
-                {
-                  boolean                     isIntraStateWithUnionTerritory = NoYes::No;
-                  LogisticsPostalAddress      partyAddress;
-                  LogisticsPostalAddress      taxAddress;
-                  LogisticsAddressState       partyState;
-                  SalesPurchJournalLine       documentLineMap;                  TaxModelTaxable_IN          taxModelTaxable;
-                  documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
-                  taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
-                  partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
-                  taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
-                  if (partyAddress && taxAddress
-                      && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-                      && partyAddress.State != ''
-                      && taxAddress.State != ''
-                      && partyAddress.State == taxAddress.State)
-                  {
-                      partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-                          isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
-                  }
-                  return isIntraStateWithUnionTerritory;
-                }
+        private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
+        {
+        boolean                     isIntraStateWithUnionTerritory = NoYes::No;
+        LogisticsPostalAddress      partyAddress;
+        LogisticsPostalAddress      taxAddress;
+        LogisticsAddressState       partyState;
+        SalesPurchJournalLine       documentLineMap;                TaxModelTaxable_IN          taxModelTaxable;
+        documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
+        taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
+        partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
+        taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
+        if (partyAddress && taxAddress
+            && partyAddress.CountryRegionId == taxAddress.CountryRegionId
+            && partyAddress.State != ''
+            && taxAddress.State != ''
+            && partyAddress.State == taxAddress.State)
+        {
+            partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+                isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+        }
+        return isIntraStateWithUnionTerritory;
+        }
 
-            }
+    }
+    ```
 
 3. デザイナーでのデータ連結を実行します。
    1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションに移動し、**デザイナー**をクリックします。
@@ -212,27 +214,43 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 #### <a name="method-2-data-mapping-using-the-er-model-mapping-designer"></a>方法 2 : ER モデル マッピング デザイナーを使用してデータ マッピングします。
 この方法を使用する前に、ER およびテーブルの関係、クラス、および発注書に関するメソッドに精通するようにしてください。 
 1. 発注書に対してモデル マッピング デザイナーを開き、**PurchLine** をルート データ ソースとしてテーブル レコードに追加します。
+
    ![Purchline 拡張機能](media/gte-extension-purchline.png)
+
 2. Data model\Enumeration **YesNo Global** および Dynamics 365 for Operations \Enumeration **NoYes** を追加します。
+
    ![列挙型の追加](media/gte-extension-add-enumerations.png)
+
 3. **データ ソース**ツリーで、**発注書** > **明細行**の下に計算済フィールドとして **$PurchLine** を追加し、既存の課税対象ドキュメントである**発注書**と **PurchLine** テーブル レコードの関係を構築します。 **式の編集**をクリックします。
+
    ![式の編集](media/gte-extension-edit-formula.png)
-4. **PurchLine** および**発注書**間の関係を記述する式を次のように入力します: ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
-   ![式の追加](media/gte-extension-add-formula.png)
+
+4. **PurchLine** および**発注書**間の関係を記述する式を入力します: 
+
+   ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
+
+   ![フォーミュラの追加](media/gte-extension-add-formula.png)
+
 5. **保存**をクリックし、ページを閉じます。
 6. **$PurchLine** で、計算済フィールド **\$IsIntraStateInUnionTerritory** を追加し、次の式を使用します。 
-   ```
+   
+   ```xpp
    AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
    ```
+
 7. **モデル マッピング デザイナー**でマッピングを完了します。
    1. **Data Sources** ツリーで、**$IntraStateInUnionTerritory** を選択します。
    2. **Data Model** ツリーで、**IntraStateInUnionTerritory** を選択します。
    3. **編集** をクリックします。
+
       ![データ マッピングの編集](media/gte-extension-data-binding2.png)
+
    4. ブール値を、拡張課税対象ドキュメントの **IntraStateInUnionTerritory** フィールドで使用される列挙値に変換するために次の式を入力します。
-      ```
+
+      ```xpp
       CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
       ```
+
    5. **保存**をクリックし、ページを閉じます。
 
 8. コンフィギュレーションを保存し、デザイナーを閉じます。
@@ -357,27 +375,28 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 1. **税** > **設定** > **税コンフィギュレーション** > **税の設定**と移動します。
 2. 新しいレコードを作成し、税の設定を定義します。
 
-![新しい税の設定](media/gte-extension-new-tax-setup.png)
+    ![新しい税の設定](media/gte-extension-new-tax-setup.png)
 
 3. **コンフィギュレーション**をクリックします。
 
 4. **税コンフィギュレーション**タブをクリックします。
 5. **利用可能な構成**セクションで、**新規**をクリックして税コンフィギュレーションを作成します。
+
     > [!NOTE]
     > 税に追加されるコンフィギュレーションは、**使用可能なコンフィギュレーション**タブに一覧表示されます。
     
-![新しいコンフィギュレーション](media/gte-extension-new-configuration2.png)
+    ![新しいコンフィギュレーション](media/gte-extension-new-configuration2.png)
 
 6. **税 (インド販売税)** のように、必要なコンフィギュレーションを選択します。 **保存** をクリックします。
 7. **同期化**をクリックします。
 
-![コンフィギュレーションの同期](media/gte-extension-synchronize-configuration.png)
+    ![コンフィギュレーションの同期](media/gte-extension-synchronize-configuration.png)
 
 8. **有効化** をクリックします。
 
-![コンフィギュレーションをアクティブにします。](media/gte-extension-activate-configuration.png)
+    ![コンフィギュレーションをアクティブにします。](media/gte-extension-activate-configuration.png)
 
-![コンフィギュレーションをアクティブにします。](media/gte-extension-active-configuration.png)
+    ![コンフィギュレーションをアクティブにします。](media/gte-extension-active-configuration.png)
 
 9. **閉じる**をクリックします。
 10. **会社**クイック タブをクリックします。
@@ -385,7 +404,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 12. **保存** をクリックします。
 13. **有効化**をクリックして、会社のコンフィギュレーションを有効にします。
 
-![会社のコンフィギュレーションの有効化します。](media/gte-extension-activate-configuration-to-company.png)
+    ![会社のコンフィギュレーションの有効化します。](media/gte-extension-activate-configuration-to-company.png)
 
 14. **設定**をクリックして、新しいバージョンのデータを設定します。
 
@@ -438,18 +457,27 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
     2. **ルートの追加**をクリックします。
     3. **名前**フィールドに、**LogisticsAddressCountryRegion** という名前を入力します。
     4. テーブルを選択します。
-    5. **OK** をクリックします。
+    5. **OK**をクリックします。
     
-![テーブルのレコードを追加](media/gte-extension-add-table-records.png) 7. テーブルをバインドします。
+    ![テーブル レコードの追加](media/gte-extension-add-table-records.png)
+
+7. テーブルをバインドします。
+
     1. **データ ソース**ツリーで、手順 5 で作成した **LogisticsAddressCountryRegion** テーブル レコードを選択します。
     2. **日付モデル**ツリーで、**原産国: レコードの一覧**を選択します。
     3. **バインド**をクリックします。
     
-![テーブルをバインドします](media/gte-extension-bind-table.png) 8. フィールドをバインドします。
+    ![テーブルのバインド](media/gte-extension-bind-table.png)
+
+8. フィールドをバインドします。
+
     1. **データ ソース**ツリーで、**国/地域 (CountryRegionID): 文字列**を選択します。
     2. **データ モデル**ツリーで、**原産国: 文字列**を選択します。
     3. **バインド**をクリックします。
-![フィールドをバインド](media/gte-extension-bind-field.png) 9. **保存**をクリックします。
+
+    ![フィールドのバインド](media/gte-extension-bind-field.png)
+
+9. **保存**をクリックします。
 
 ### <a name="link-the-reference-model-to-a-field-in-the-taxable-document"></a>課税対象ドキュメントで、参照モデルをフィールドにリンクします。
 

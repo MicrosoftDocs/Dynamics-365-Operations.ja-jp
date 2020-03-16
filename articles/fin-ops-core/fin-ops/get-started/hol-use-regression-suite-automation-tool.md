@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025807"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070823"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool チュートリアルの使用
 
@@ -217,15 +217,15 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 ## <a name="advanced-scripting"></a>高度なスクリプト
 
-### <a name="command-line"></a>コマンド ライン
+### <a name="cli"></a>CLI
 
-RSAT は、**コマンド プロンプト** ウィンドウから呼び出すことができます。
+RSAT は、**コマンド プロンプト**または **PowerShell** ウィンドウから呼び出すことができます。
 
 > [!NOTE]
 > **TestRoot** 環境変数が RSAT インストール パスに設定されていることを確認します。 (Microsoft Windows の**コントロール パネル**を開き、**システムとセキュリティ\>システム\>高度なシステム設定**を選択し、**環境変数**を選択します。)
 
-1. 管理者として**コマンド プロンプト** ウィンドウを開きます。
-2. このツールをインストール ディレクトリから実行します。
+1. **コマンド プロンプト**または **PowerShell** ウィンドウを管理者として開きます。
+2. RSAT インストール ディレクトリに移動します。
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT は、**コマンド プロンプト** ウィンドウから呼び出すこ
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+使用可能なすべてのコマンドとそのパラメーターに関するヘルプを表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>オプションのパラメーター
+
+**``command``**
+
+
+ここで、``[command]`` は以下で指定されたコマンドの 1 つです。
+
+
+#### <a name="about"></a>バージョン情報
+現在のバージョンを表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+画面をクリアします。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>ダウンロード
+指定したテスト ケースの添付ファイルを出力ディレクトリにダウンロードします。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``test_case_id``** テスト ケース ID を表します。  
+**``output_dir``** 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="examples"></a>例
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>編集
+Excel プログラムでパラメーター ファイルを開いて編集できるようにします。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``excel_file``** 既存の Excel ファイルへの完全なパスが含まれている必要があります。
+
+##### <a name="examples"></a>例
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>作成
+指定されたテスト ケースのテスト実行およびパラメーター ファイルを出力ディレクトリに生成します。
+``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``test_case_id``** テスト ケース ID を表します。  
+**``output_dir``** 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="examples"></a>例
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+指定されたテスト ケースから派生する新しいテスト ケースを生成します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``parent_test_case_id``** 親テスト ケース ID を表します。  
+**``test_plan_id``** テスト計画 ID を表します。  
+**``test_suite_id``** テスト スイート ID を表します。
+
+##### <a name="examples"></a>例
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+指定されたテスト ケースのテスト実行ファイルのみを出力ディレクトリに生成します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``test_case_id``** テスト ケース ID を表します。  
+**``output_dir``** 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="examples"></a>例
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+指定されたスイートのすべてのテスト ケースを出力ディレクトリに生成します。
+``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **test_suite_name** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``test_suite_name``** テスト スイートの名前を表します。  
+**``output_dir``** 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="examples"></a>例
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>ヘルプ
+[?](####?) と同一 command
+
+
+#### <a name="list"></a>リスト
+使用可能なすべてのテスト ケースを一覧表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+使用可能なすべてのテスト計画を一覧表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+指定されたテスト スイートのテスト ケースを一覧表示します。 ``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **suite_name** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``suite_name``** 目的のスイートの名前。
+
+##### <a name="examples"></a>例
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+使用可能なすべてのテスト スイートを一覧表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>playback
+Excel ファイルを使用してテスト ケースを再生します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``excel_file``** Excel ファイルへの完全なパス。 ファイルが存在する必要があります。 
+
+##### <a name="examples"></a>例
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+同時に複数のテスト ケースを再生します。
+``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``test_case_id1``** 既存のテスト ケースの ID。  
+**``test_case_id2``** 既存のテスト ケースの ID。  
+**``test_case_idN``** 既存のテスト ケースの ID。  
+
+##### <a name="examples"></a>例
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Excel ファイルを使用して、同時に多数のテスト ケースを再生します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``excel_file1``** Excel ファイルへの完全なパス。 ファイルが存在する必要があります。  
+**``excel_file2``** Excel ファイルへの完全なパス。 ファイルが存在する必要があります。  
+**``excel_fileN``** Excel ファイルへの完全なパス。 ファイルが存在する必要があります。  
+
+##### <a name="examples"></a>例
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+指定されたテスト スイートからすべてのテスト ケースを再生します。 ``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **suite_name** パラメーターとして使用します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``suite_name``** 目的のスイートの名前。
+
+##### <a name="examples"></a>例
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>quit
+アプリケーションを閉じます。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>アップロード
+指定されたテスト スイートまたはテスト ケースに属するすべてのファイルをアップロードします。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>必須パラメーター
+**``suite_name``** 指定されたテスト スイートに属するすべてのファイルがアップロードされます。
+**``testcase_id``** 指定されたテスト ケースに属するすべてのファイルがアップロードされます。
+
+##### <a name="examples"></a>例
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+指定されたテスト ケースに属する記録ファイルのみをアップロードします。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>必須パラメーター
+**``testcase_id``** 指定されたテスト ケースに属する記録ファイルがアップロードされます。
+
+##### <a name="examples"></a>例
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>使用
+このアプリケーションを呼び出す 2 つの方法を示します。1 つは既定の設定ファイルを使用する方法、もう 1 つは設定ファイルを提供する方法です。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell の例
 

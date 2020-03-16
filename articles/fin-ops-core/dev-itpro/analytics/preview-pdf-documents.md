@@ -3,7 +3,7 @@ title: 埋め込みビューアを使用してPDFドキュメントのプレビ�
 description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 02/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 75d1eeba976ffae690bc1fd6fcdcee4d816c609a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4ea9b930c210699f01c791e3c94c3f04c13dfe23
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191557"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070406"
 ---
 # <a name="preview-pdf-documents-with-an-embedded-viewer"></a>埋め込みビューアを使用してPDFドキュメントのプレビューをする
 
@@ -55,3 +55,10 @@ ms.locfileid: "2191557"
 - アプリケーション拡張機能を使用して、PDFドキュメント内の埋め込みドリルスルー リンクを有効にすることができます。
 - PDF以外の形式のドキュメントを作成するには、 **印刷先** オプションを使用します。
 
+## <a name="feature-limitations"></a>機能の制限
+埋め込み PDF ビューアー エクスペリエンスでは、ドキュメントの印刷出力と完全に一致する終了済ドキュメントが提供されます。  受信者はこれらのドキュメントを変更できないため、業務運営に適した形式になります。  ただし、終了済形式のため、HTML プレゼンテーションと比較すると画面上のドキュメントの対話性がはるかに低くなります。  埋め込み PDF ビューアーを使用してドキュメントをプレビューする場合、次のエンド ユーザー機能はサポートされません。
+
+- 埋め込みドリルスルー ナビゲーションは、PDF ドキュメントのプレビュー時には実行できません。 
+- PDF ドキュメントでは、展開および折りたたみ可能なセクションはサポートされません。 
+- レポートを PDF ドキュメントとして表示している場合、サブレポートはサポートされません。
+- レポートを、ドメインでホストされているプリンター デバイスに直接印刷します。

@@ -3,7 +3,7 @@ title: 計画ジョブのキャンセル
 description: このトピックでは、計画の最適化機能を使用する有効な計画ジョブを取り消す方法について説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774000"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076350"
 ---
+# <a name="cancel-a-planning-job"></a>計画ジョブのキャンセル
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>計画ジョブのキャンセル
+Microsoft Dynamics 365 Supply Chain Management では、計画の最適化機能を使用する有効な計画ジョブを取り消す方法について説明します。 計画最適化ジョブがユーザー インターフェイス (バックグラウンドではなく) から直接トリガーされた際、ダイアログ ボックスで**キャンセル**を選択すると、計画最適化ジョブはキャンセルされません。 「処理が取り消されました」などの警告が表示された場合でも、計画最適化で計画ジョブをキャンセルするには、次の手順を使用する必要があります。
 
-Microsoft Dynamics 365 Supply Chain Management では、計画の最適化機能を使用する有効な計画ジョブを取り消す方法について説明します。
 
-有効な計画ジョブをキャンセルするには、次の手順を実行します。
+有効な計画ジョブをキャンセルするには、次の手順を実行します。 
 
 > [!NOTE]
 > 有効なジョブのみキャンセルすることができます。
@@ -49,11 +50,11 @@ Microsoft Dynamics 365 Supply Chain Management では、計画の最適化機能
 > [!NOTE]
 > 状態の変更を確認するには、**更新**ボタンを選択してページを更新する必要があります。
 
-## <a name="related-resources"></a>関連するリソース
+## <a name="additional-resources"></a>追加リソース
 
-[計画の最適化の概要](planning-optimization-overview.md)
+[計画最適化の概要](planning-optimization-overview.md)
 
-[計画の最適化を開始する](get-started.md)
+[計画最適化の開始](get-started.md)
 
 [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
 

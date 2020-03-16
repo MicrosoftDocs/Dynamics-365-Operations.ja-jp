@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009715"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087303"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>休暇および欠勤計画の作成
 
@@ -61,8 +61,8 @@ Dynamics 365 Human Resources で、提供する休暇のタイプごとに休暇
 
       | 見越計上期間の基準 | 説明 |
       | --- | --- |
-      | 計画の開始日 | 見越計上期間の開始日は、計画が使用可能である日付です。 |
-      | 従業員の特定の日付 | 見越計上期間の開始日は、従業員のイベントによって異なります。</br><ul><li>カスタム (個々の登録に対する見越計上日の基準を指定する必要があります)</li><li>記念日</li><li>元の採用日付</li><li>勤続日数</li><li>作業者の調整済開始日</li><li>作業者の開始日</li></ul> |
+      | **計画の開始日** | 見越計上期間の開始日は、計画が使用可能である日付です。 |
+      | **従業員の特定の日付** | 見越計上期間の開始日は、従業員のイベントによって異なります。</br><ul><li>カスタム (個々の登録に対する見越計上日の基準を指定する必要があります)</li><li>記念日</li><li>元の採用日付</li><li>勤続日数</li><li>作業者の調整済開始日</li><li>作業者の開始日</li></ul> |
 
    3. **見越計上の報酬日**ドロップダウン ボックスから、オプションを選択します。
 

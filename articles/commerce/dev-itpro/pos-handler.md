@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: dfb445efdc7fda0a733f6d46e11f1a0248ed41e0
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 21fad2f8d60c48a53085745abc34cc6c900b3641
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029823"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070781"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -172,7 +172,7 @@ ms.locfileid: "3029823"
 
 7.  GetSerialNumberClientRequestHandlerExt.ts ファイルで、GetSerialNumberClientRequestHandlerExtend という新しいクラスを作成し、GetSerialNumberClientRequestHandler から拡張します。
 
-    ```
+    ```typescript
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
     ```
     

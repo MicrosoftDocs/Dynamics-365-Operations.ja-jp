@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773648"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080775"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>iOS および Android 用 Microsoft Dynamics 365 Project Timesheet モバイル アプリのカスタム フィールドの実装
 
@@ -183,7 +183,7 @@ ms.locfileid: "2773648"
 
 **TSTimesheetCustomField::newFromMetatdata()** メソッドを使用して、**fieldBaseType**、**tableName**、**fieldname**、**label**、**isEditable**、**isMandatory**、**stringLength**、および **numberOfDecimals** のカスタム フィールド プロパティの初期化を簡略化することに注意してください。 これらのパラメーターは、必要に応じて手動で設定することもできます。
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 **buildCustomFieldListForEntry** メソッドは、モバイル アプリの保存されたタイムシートの明細行に値を入力するために使用されます。 TSTimesheetTrans レコードをパラメーターとして使用します。 レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ final class TsTimesheetEntry_Extension
 > [!NOTE]
 > 次の例では、ユーザーが未加工の文字列値としてデータベースに選択した **firstOption** または **secondOption** の値を保存します。 データベース フィールドが**列挙**タイプのフィールドである場合、これらの値を手動で列挙値にマップし、データベース テーブルの列挙フィールドに保存することができます。
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ final class TSTimesheetEntryService_Extension
 
 次の例では、アプリのヘッダー セクションに計算された値を表示します。
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 **buildCustomFieldListForHeader** メソッドは、モバイル アプリのタイムシート ヘッダーの詳細を記入するために使用されます。 TSTimesheetTable レコードをパラメーターとして使用します。 レコードのフィールドを使用して、アプリのカスタム フィールドの値を入力することができます。 次の例では、データベースから値を読み取ることができません。 代わりに、X++ ロジックを使用して、アプリに表示される計算値を生成します。
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

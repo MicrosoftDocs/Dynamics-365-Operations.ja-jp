@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764ae76cc839e683e6ccd3bd86a9028d749b275b
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d80c9f341e5675040f912da21f1262e4fddadd9f
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025842"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042956"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -180,6 +180,7 @@ Excel で開くエクスペリエンスに明示的なボタンを追加でき�
 [Control("Button")]
 class OpenLinesInExcel
 {
+
     /// <summary>
     /// Opens the current journal in Excel for line entry and editing
     /// </summary>
@@ -240,6 +241,7 @@ class OpenLinesInExcel
 public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
 {    
 ...
+
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class);

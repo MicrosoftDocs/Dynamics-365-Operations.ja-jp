@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 71556dde632b06f51534b528000be037022fc693
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b7d14be1990a84306425150beb8442f17786ffc3
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004606"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070438"
 ---
 # <a name="add-customer-preference-data-to-channel-databases"></a>顧客の基本設定データをチャネル データベースに追加
 
@@ -57,17 +57,19 @@ ms.locfileid: "3004606"
    1.  Microsoft Visual Studio を起動してから、アプリケーション オブジェクト ツリー (AOT) で **RetailCDXSeedData\_AX7** クラスを見つけます。
    2.  次のメソッドを追加します。
 
-           private void C_RetailCustPreference()
-           {
-               jobIDContainer = ['1010'];
-               subjobID = 'RetailCustPreference';
-               axTableName = tableStr(RetailCustPreference);
-               axFieldNames = [
-               fieldStr(RetailCustPreference, AccountNum),
-               fieldStr(RetailCustPreference, EmailOptIn),
-               fieldStr(RetailCustPreference, RecId)
-               ];
-           }
+        ```xpp
+        private void C_RetailCustPreference()
+        {
+            jobIDContainer = ['1010'];
+            subjobID = 'RetailCustPreference';
+            axTableName = tableStr(RetailCustPreference);
+            axFieldNames = [
+            fieldStr(RetailCustPreference, AccountNum),
+            fieldStr(RetailCustPreference, EmailOptIn),
+            fieldStr(RetailCustPreference, RecId)
+            ];
+        }
+        ```
 
    3.  クラスをコンパイルします。
    4.  インターネット インフォメーション サービス (IIS) をリセットします。
@@ -85,11 +87,13 @@ ms.locfileid: "3004606"
     1.  次の行を検索します: **&lt;Table name=“RetailCustTable”&gt;**。 29 行目前後と 744 行目前後に 2 つのインスタンスがあります。
     2.  両方の **&lt;Table name=“RetailCustTable”&gt;** コード ブロックの最後の行の後に次のコードを追加します。 コードを **&lt;/Table&gt;** タグの後に追加します。
 
-            <Table name="RetailCustPreference">
-                <LinkGroup>
-                    <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
-                </LinkGroup>
-            </Table>
+        ```xml
+        <Table name="RetailCustPreference">
+            <LinkGroup>
+                <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
+            </LinkGroup>
+        </Table>
+        ```
 
 12. ファイルの編集が終了した後、クライアントおよび **Retail チャンネル スキーマ** ページ‎に戻ります。 左のナビゲーション ウィンドウで、**Dynamics 365 Retail** をクリックします。
 13. **小売データの配布**タブで、**インポート**をクリックします。

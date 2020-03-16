@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 83146401df20e459581b1af6e17d4beb3430b066
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 08e10653362d0ef9afd223dc0d24dd9b5d25ed42
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003546"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042793"
 ---
 # <a name="manage-content-security-policy-csp"></a>Content Security Policy (CSP) の管理
 
@@ -87,7 +87,7 @@ CSP の詳細については、[Content Security Policy Reference](https://conte
 
 開発環境でオンライン SDK を使用してモジュールをテストする場合、ページ モックを使用して CSP を追加することもできます。 ページ モックでは、トップ レベルの **"appContext"** プロパティを追加するか、または既存のトップレベルの **"appContext"** プロパティに移動して、**"contentSecurityPolicy"** という名前のプロパティを作成する必要があります。 ここでは、次の例に示すように、ディレクティブのキー / 値ペアをポリシーに追加できます。
 
-```
+```json
 "appContext": {
     "contentSecurityPolicy": {
         "script-src": ["https://www.w3schools.com/js/myScript.js"],
@@ -101,7 +101,7 @@ CSP の詳細については、[Content Security Policy Reference](https://conte
 
 ページ モックで CSP を無効にするには、次のコードを使用します。
 
-```
+```json
 "appContext": {
     "contentSecurityPolicy": {
         "disableContentSecurityPolicy": true

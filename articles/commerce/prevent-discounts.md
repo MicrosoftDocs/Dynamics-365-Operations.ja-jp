@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 822bd39bca3a95f073bacea90a8ee58eada50ae2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6a683ffce487dc4388711ad160c2e8dc55a690dd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023210"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057467"
 ---
 # <a name="options-for-preventing-discounts-for-retail-products"></a>小売製品の割引を禁止するためのオプション
 
@@ -32,7 +32,7 @@ ms.locfileid: "3023210"
 
 小売業者はさまざまな理由で、一部の製品の割引を、プロモーションからまたは POS での販売中に禁止します。
 
-リリース済製品の**コマース** タブ上で表示される次のオプションで、すべてのまたは手動の割引を禁止するよう製品をコンフィギュレーションできます。 その設定は、小売カテゴリ階層からカテゴリ レベルで指定することもできます。
+リリース済製品の**コマース** タブ上で表示される次のオプションで、すべてのまたは手動の割引を禁止するよう製品をコンフィギュレーションできます。 その設定は、カテゴリ階層からカテゴリ レベルで指定することもできます。
 
 - **すべての割引を禁止** – すべてのタイプの割引をこの製品に適用禁止にするには、このオプションを選択します。 これには、組み合わせ、数量およびしきい値割引などのプロモーション、また POS ユーザーによる販売中に適用される手動の明細行およびトランザクションの割引が含まれます。
 - **手動の割引を禁止** – POS ユーザーによる販売中に適用される手動の明細行またはトランザクションの割引のみを禁止するには、このオプションを選択します。 このオプションを選択した製品は、組み合わせ、数量およびしきい値割引などのプロモーションについてはまだ対象となっています。

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: b5e36bdd111ad81067637227c6091015832e1dcf
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1b660762b0e11dae0c1f0ece8614a9f4273c78c0
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004568"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057892"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 
@@ -34,8 +34,8 @@ ms.locfileid: "3004568"
 
 コマース機能を含む Finance and Operations アプリの実装に焦点をあてた情報です。
 
-[Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[コマース プロジェクトのコードと環境の更新](./updating-environments.md)
+[Commerce プロジェクトのコードと環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)

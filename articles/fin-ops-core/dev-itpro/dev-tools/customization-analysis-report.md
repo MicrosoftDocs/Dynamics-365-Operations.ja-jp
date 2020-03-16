@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461cab41901aed11eadf1a4abf72461ed69a5a8c
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: b1e994d284f4f407aff7d6047a85cc2c523144d8
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983663"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081985"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 
@@ -38,11 +38,15 @@ ms.locfileid: "2983663"
 ## <a name="how-to-generate-the-report"></a>レポートを生成する方法
 カスタマイズ分析レポートを生成するには、開発環境で次のコマンドを実行します。
 
-    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```Console
+xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```
 
 **例**
 
-    xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
+```Console
+xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
+```
 
 xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalDirectory\\bin にあります。
 
@@ -193,7 +197,7 @@ xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalD
 <tr class="even">
 <td>修正する方法</td>
 <td>次の例では、ルールが失敗するか、合格するかを示しています。 次の例を参考にして、コードをリファクタリングします。
-<pre><code>ttsbegin;
+<pre language="xpp"><code>ttsbegin;
 try {
 }
 // fail
@@ -258,7 +262,7 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 <ul>
 <li><strong>キャッシュ データ メソッド</strong> プロパティを <strong>はい</strong> に設定します。</li>
 <li><p><strong>キャッシュ データ メソッド</strong> プロパティを <strong>自動</strong> に設定し、<strong>SysClientCacheDataMethodAttribute</strong> 属性を使用してテーブルのデータ メソッドをマークします。 次に例を示します。</p>
-<pre><code>[SysClientCacheDataMethodAttribute(true)]
+<pre language="xpp"><code>[SysClientCacheDataMethodAttribute(true)]
 Display TransDate myDateMethod()
 {
     ...

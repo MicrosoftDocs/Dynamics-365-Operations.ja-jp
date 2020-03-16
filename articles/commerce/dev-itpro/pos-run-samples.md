@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 43a65b26d1cb252e4dc3ca120cbc89fcb0a98a0c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81f955b7dcefaef515abd112b37b9cff7c8d1bd5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004653"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057656"
 ---
 # <a name="run-the-point-of-sale-pos-samples"></a>販売時点管理 (POS) サンプルを実行
 
@@ -36,7 +36,7 @@ ms.locfileid: "3004653"
 4. **SampleExtensions2** フォルダーを右クリックし、**プロジェクトに追加** を選択します。
 5. **extensions.json** ファイルを開いて、**SampleExtensions** および **SampleExtensions2** の拡張フォルダーを追加します。 これは、実行時に POS にこの拡張が含まれることを意味します。 **baseUrl** 値は、相対パスおよび拡張子フォルダーの名前に完全に一致する必要があります。
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -52,7 +52,7 @@ ms.locfileid: "3004653"
     > extension.json ファイルには、2 つ以上の拡張機能フォルダーを含める必要があります。 拡張子フォルダーを 1 つだけ追加する場合は、POS は拡張子を読み込みません。
 5. **tsconfig.json** ファイルを開いて、拡張パッケージ フォルダーを除外リストからコメント アウトします。 POS は、拡張機能をコンパイルするかどうかを決定するために、このファイルを使用します。 既定では、リストにサンプル拡張リストが含まれています。 POS に拡張子をコンパイルする場合は、拡張子フォルダー名を追加し、以下のように拡張子から拡張子をコメント アウトする必要があります。 
 
-    ```Typescript
+    ```typescript
     {
         "extends": "../tsconfigs/tsmodulesconfig",
         "exclude": [
@@ -84,7 +84,7 @@ ms.locfileid: "3004653"
     ```
     他の拡張子を有効にする場合は、除外リストからそれらをコメント アウトします。 たとえば、**B2BSample** を含める場合、コードは次のようになります。 
     
-    ```Typescript
+    ```typescript
     "exclude": [
         "AuditEventExtensionSample"
         // ,"B2BSample"

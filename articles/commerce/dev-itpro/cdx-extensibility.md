@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 3b36bf06d1601557cff7744fdfe98a305b0bc845
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b465bce8482095104b22d9e88478c35ae9f3bc18
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004599"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070467"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -58,7 +58,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 1. カスタム プロジェクトを作成し、アプリケーション オブジェクト ツリー (AOT) を使用してカスタム テーブルを追加します。
 2. すべてのカスタム ジョブ情報を追加する新しいリソース ファイルを作成します。 リソース ファイルのテンプレートを次に示します。
 
-    ```
+    ```csharp
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
@@ -73,7 +73,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
     > [!NOTE]
     > 新規テーブルを既存のジョブの一部として追加するか、または新しいジョブを作成してからこのテーブルを追加するかのいずれかを実行できます。 この場合、ジョブ ID が **7000** で、カスタムのテーブルに **ContosoRetailSeatingArrangementData** と名前が付けられている場合、新しいジョブを作成しています。
     >
-    > ```
+    > ```xml
     > <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
     >    <Jobs>
     >        <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
@@ -107,7 +107,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 7. **registerCDXSeedDataExtension** イベントを処理するために使用する新しいクラスを追加します。 **RetailCDXSeedDataBase** クラスを検索し、デザイナーで開きます。 **registerCDXSeedDataExtension** デリゲートを右クリックし、**イベント ハンドラーをコピー** を選択します。
 8. 作成したイベント ハンドラー クラスに移動して、次のイベント ハンドラー コードを貼り付けます。
 
-    ```
+    ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7_Custom));
@@ -130,7 +130,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 + ここに示すように、新しいリソース ファイルを作成し、新しいリソースを 2 行目のイベント ハンドラーに追加します。
 
-    ```
+    ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7\_Custom));
@@ -140,7 +140,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 + 新しい行を追加しなくて済むように、新しい情報を含む既存のリソース ファイルを更新します。 アップロードするには、次の例に示すように、リソース ファイルの **IsUpload** 属性を **true** に設定し、カスタム プルジョブに関する情報を追加します。
 
-    ```
+    ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
     ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
         <ScheduledByJobs>
@@ -169,7 +169,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 次の例で示すように、マッピングされていない既存の列を、新しい拡張列またはチャンル データベース内の既存の列のいずれかにプッシュすることができます。 
 
-```
+```xml
 <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
     <AxFields>
         <Field Name="Payment"/>
@@ -184,7 +184,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 テーブルに **RecId** ではない主キーがある場合、次の例に示されるように、チャンネル側の拡張子テーブルに 非 **RecId** 主キーも含まれる必要があります。
 
-```
+```xml
     <Subjob Id="RetailCustTable" TargetTableSchema="ext">
         <AxFields>
             <Field Name="ReturnTaxGroup_W"/>
@@ -200,7 +200,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 新しい列を追加して既存のテーブルの一部を取得する場合は、次のコードを使用します。
 
-```
+```xml
 <Subjob Id="RetailTransactionTable" TargetTableName="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext"  OverrideTarget="false">
     <AxFields>
         <Field Name="ContosoRetailSeatNumber"/>
@@ -213,7 +213,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 既存のサブジョブを別のジョブに移動するには、リソース ファイルの **ScheduledByJob** 属性を変更することができます。この属性はイベント ハンドラの一部として実行されます。
 
-```
+```xml
 <Subjob Id="DirPartyTable">
     <ScheduledByJobs>
         <ScheduledByJob>1000</ScheduledByJob>
@@ -282,7 +282,7 @@ Retail SDK フォルダーから SQL Server **ContosoRetailExtensionTablesUpdate
 
 Retail SDK のサンプル CDX リソース ファイルには、追加のカスタマイズが含まれています。 ただし、RetailTransactionTable 拡張子の例の場合、次のコードのセクションはチャンネル側から HQ にデータをプルするために必要な唯一のセクションです。
 
-```
+```csharp
 <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
     <Subjobs>
         <!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ.For upload subjobs, set the OverrideTarget property to  "false", as ilustrated below. This will tell CDX to use the table defined by TargetTableName and TargetTableSchema as extension table on this subjob.-->
@@ -326,7 +326,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 6. 新しいクラスを作成し、**ContosoRetailCDXSeedDataAX7EventHandler** などの名前を付けます。 任意の名前を指定することができます。 ただし、ベスト プラクティスとしては、接頭語をクラス名の前に付けてください。
 7. 手順 5 でコピーしたコードを貼り付けます。
 
-    ```
+    ```csharp
     class ContosoRetailCDXSeedDataAX7EventHandler
     {
         /// <summary>
@@ -342,7 +342,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
 8. CDX 機能拡張フレームワークは、コマースの初期化を選択するとこのメソッドを呼び出します。 CDX 拡張モジュールが CDX カスタマイズを使用するようにするためには、上記のメソッドに次のコードを貼り付けます。
     
-    ```
+    ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7_ContosoRetailExtension));
@@ -373,7 +373,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
     1. Retail Modern POS (MPOS) でいくつかのトランザクションを作成します。
     2. 拡張テーブルは Commerce Runtime (CRT) および MPOS では使用されないため、拡張テーブルに手動でデータを挿入する必要があります。 必要な値を変更した後、次のスクリプトを実行します。
 
-        ```
+        ```sql
         INSERT INTO [ext].[CONTOSORETAILTRANSACTIONTABLE] (
         [CONTOSORETAILSEATNUMBER],
         [CONTOSORETAILSERVERSTAFFID],

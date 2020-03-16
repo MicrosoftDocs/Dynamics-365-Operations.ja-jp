@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 669ccfbd34090dc04ae666a220af015e71fe5a24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 38c73644ecf0f36e620d4a6d3c686a247cf82984
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183103"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082014"
 ---
 # <a name="make-fields-on-mobile-app-pages-clickable"></a>モバイル アプリ ページのフィールドをクリック可能にする
 
@@ -56,7 +56,7 @@ ms.locfileid: "2183103"
 
 1. **appInit** メソッドに次の明細行を追加します。 **configureControl** メソッドを呼び出して、ページ名とコントロール名を渡します。 次に、コントロールの **LinkType** 値を指定します。 次の値がサポートされています: **電話**、**電子メール**、および **URL**。
 
-    ```
+    ```xpp
     metadataService.configureControl('PageName', 'ControlName', { LinkType: 'Telephone' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Email' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Url' });

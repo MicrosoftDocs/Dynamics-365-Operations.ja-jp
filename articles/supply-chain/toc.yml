@@ -68,6 +68,8 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management バージョン 10.0.9 (2020 年 4 月)
+                      href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management バージョン 10.0.8 (2020 年 2 月)
                       href: get-started/whats-new-scm-10-0-8.md
                     - name: Supply Chain Management バージョン 10.0.7 (2020 年 1 月)
@@ -146,6 +148,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 保存されているビュー
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: グリッド機能
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: PowerApps アプリの埋め込み
@@ -527,6 +531,8 @@
                   href: cost-management/costing-sheets.md
                 - name: 予定原価に対する原価バージョンを使用した原価変更のシミュレーション
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+                - name: 品目価格の保管レポートの比較
+                  href: cost-management/compare-item-price.md
             - name: 在庫会計
               items:
                 - name: 原価オブジェクト
@@ -659,7 +665,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 採用
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 小売チャネルの実績
+                - name: Retail チャネルの実績
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 販売と収益性のパフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
@@ -673,6 +679,8 @@
               items:
                 - name: ドキュメント レポート サービスの概要
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サポートされるフォント
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: オンプレミスの配置の SSRS のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 印刷中
@@ -1061,6 +1069,8 @@
               items:
                 - name: 計画最適化の概要
                   href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: マイナスの手持在庫はゼロの手持在庫として処理されます
+                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: 計画最適化の開始
                   href: master-planning/planning-optimization/get-started.md
                 - name: 計画最適化適合分析
@@ -2441,6 +2451,4 @@
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

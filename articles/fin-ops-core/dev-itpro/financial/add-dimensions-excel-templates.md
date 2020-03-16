@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9b6978c0862f0a134434a551e7d4ffcf7ee81f21
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e44b337379aab222cc1f911d30471fd6ab36685f
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812110"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080760"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
@@ -30,7 +30,10 @@ ms.locfileid: "2812110"
 
 このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
 
-インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、 [Excel テンプレートへの分析コードの追加](dimensions-overview.md) トピックの手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合このトピックの手順を完了します。 **注記:** この情報は、リリースごとに変更される可能性がありますので、定期的に最新の情報を確認してください。
+インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、 [Excel テンプレートへの分析コードの追加](dimensions-overview.md) トピックの手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合このトピックの手順を完了します。 
+
+> [!NOTE]
+> この情報は、リリースごとに変更される可能性がありますので、定期的に最新の情報を確認してください。
 
 1.  Visual Studio で、**DimensionCombinationEntity** または **DimensionSetEntity** を変更したプロジェクトを開きます。
 2.  **DimensionCombinationEntity** または **DimensionSetEntity** を右クリックします。 **開く** を選択します。
@@ -41,7 +44,7 @@ ms.locfileid: "2812110"
     -   **名前** - 部門などの、財務分析コードの名前を入力します。
     -   **関連データ エンティティ** - **名前**フィールドで入力した財務分析コードのエンティティを選択します。 次のテーブルに、財務分析コードと関連するエンティティの一覧を示します。
 
-        | **財務分析コード '値の使用元'** | **関連するエンティティ**                        |
+        | 財務分析コード '値の使用元'     | 関連するエンティティ                            |
         |-------------------------------------------|-------------------------------------------|
         | &lt; カスタム分析コード &gt;                | DimAttributeFinancialTagEntity            |
         | 契約                                | DimAttributeAgreementHeaderExt\_RUEntity  |
@@ -88,8 +91,10 @@ ms.locfileid: "2812110"
 6.  **新規** を選択して **標準** をクリックします。
 7.  プロパティ ウィンドウで、**フィールド**で財務分析コードの名前を選択します。
 8.  関連フィールドに **Value** と入力します。 新しいリレーションは、次の例のようになります:
-
-        DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
+    
+    ```xpp
+    DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
+    ```
 
     ![lookupwiki](./media/lookupwiki.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: f248f2492145c534936ac8f611312368f9350653
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ae22c6d7753bf322f546f0388075aa86598b772e
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191577"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082018"
 ---
 # <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 
@@ -38,7 +38,7 @@ ms.locfileid: "2191577"
 ## <a name="examples"></a>例
 次の例は、**switch** ステートメントの形式の条件を持つデリゲート ハンドラーを示しています。 デリゲート ハンドラーには結果のフォームに応答を提供するロジックがあります。 応答するロジックは、条件が **true** に評価された場合にのみ実行されます。
 
-```
+```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
 {
@@ -57,7 +57,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(Inven
 
 次の例は、前の例に似ています。 ただし、デリゲート メソッドは、**EventHandlerAcceptResult** オブジェクトの使用によりおよび**受け入れ**メソッドを呼び出すことにより、応答を要求するようになります。
     
-```
+```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerAcceptResult _result)
 {
@@ -74,7 +74,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(Inven
 
 次の例では、**EventHandlerRejectResult** オブジェクトを使用して応答するデリゲート ハンドラー メソッドを示しています。 **EventHandlerRejectResult** オブジェクトを使用して応答するには、**reject** メソッドまたは **checkFailed** 拡張メソッドを呼び出します。 **checkFailed** メソッドを使用する場合は、情報ログに警告メッセージを追加できます。 内部的には、**checkFailed** メソッドは **reject** メソッドを呼び出します。
 
-```
+```xpp
 [SubscribesTo(classStr(ProdTableType), delegateStr(ProdTableType, validateWriteProdTableInventRefTypeDelegate))]
 public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable _prodTable, EventHandlerRejectResult _result)
 {
@@ -103,7 +103,7 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
     > [!WARNING]
     > この例は、書くべきでは**ない**コードの例です。
 
-    ```
+    ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
     public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
     {
@@ -128,7 +128,7 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
     > [!WARNING]
     > この例は、書くべきでは**ない**コードの例です。
     
-    ```
+    ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
     public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
     {

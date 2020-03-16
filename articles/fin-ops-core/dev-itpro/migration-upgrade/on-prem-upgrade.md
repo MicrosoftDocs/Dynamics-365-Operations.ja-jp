@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c2fe393508c7f1fc86ff99c327a91ac15cd6650f
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: e1f81fa4dd2d9c998fd9ae574ad8ba0e954641bb
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033049"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082019"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -264,11 +264,11 @@ ms.locfileid: "3033049"
 
     c.  実行
 
-        A. AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+       1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-        B. AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+       2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-        C. AxUpdateInstaller.exe execute -runbookid=upgrade
+       3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 9.  アプリケーションの拡張機能やカスタマイズを VHD にインストールしている場合は、アップグレード プロセスによって、カスタマイズに関連するデータが削除されます。 アップグレード前に、どんな方法でも環境を準備する必要がある場合は、ISV または VAR に確認します。
 

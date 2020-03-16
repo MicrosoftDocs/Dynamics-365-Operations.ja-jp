@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e2bfcc70c3b78f3e941ee6a698f68b45ec126e0a
-ms.sourcegitcommit: db4eae8c42cbc4df80cc0c902428a1f64525c762
+ms.openlocfilehash: bc2077708ad2f7ee73ba7dc675d0561abdedc7b0
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885553"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057129"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
@@ -40,7 +40,7 @@ ms.locfileid: "2885553"
 8. この環境に関連する**通知**を受け取る **2 つのユーザー電子メール アドレス**を指定します。 これらのユーザーは、既にプロジェクト チームに所属しているユーザー (ISV またはパートナーなど) に追加されます。
 9. 製品で**システム管理者**として設定される**ユーザー**の**電子メール アドレス**を選択します。
 10. 構成を検証した後、**送信** をクリックして配置をトリガーします。
-11. Retail チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
+11. チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
 
 環境配置はすぐに開始され、完了までに **1 ～ 2 時間**かかることがあります。 
 
@@ -58,4 +58,4 @@ ms.locfileid: "2885553"
 > 環境を再配置するには、環境を削除し、上記の手順を使用してもう一度を配置する必要があります。 
 
 > [!IMPORTANT]
-> クラウドで Retail チャネルの機能を利用している顧客に対しては、業務の継続的なサポートを徹底するにあたり、2020 年 1月 31日 までに [Retail Cloud Scale Unit を初期化する](initialize-retail-channels.md) ことをお願いしています。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
+> クラウドでチャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、2020 年 1 月 31 日までに [Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) を行う必要があります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。

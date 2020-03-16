@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03cba235e34fa2e241d878e90763519ac84c9d29
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 542c18c5fe6c6fa29d3cc9a8a20bd71a15894735
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812105"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080750"
 ---
 # <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
@@ -32,20 +32,24 @@ ms.locfileid: "2812105"
 
 セグメント化されたエントリ コントロールをダイアログに追加するプロセスが変更されました。 これは、Dynamics AX 2012 の例です。
 
-    DialogField dialogFeeLedgerDimension;
-    LedgerDimensionAccountController ledgerDimensionAccountController;
-    dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
-    ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+```xpp
+DialogField dialogFeeLedgerDimension;
+LedgerDimensionAccountController ledgerDimensionAccountController;
+dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
+ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+```
 
 現在のリリースでは、このコードは次のように変換されます。
 
-    DialogField dialogFeeLedgerDimension;
-    dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
-        dialog, 
-        classstr(LedgerDimensionAccountController), 
-        extendedTypeStr(LedgerDimensionAccount), 
-        "@SYS119703", 
-        feeLedgerDimension);
+```xpp
+DialogField dialogFeeLedgerDimension;
+dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
+    dialog, 
+    classstr(LedgerDimensionAccountController), 
+    extendedTypeStr(LedgerDimensionAccount), 
+    "@SYS119703", 
+    feeLedgerDimension);
+```
 
 2 番目のパラメーターでは、ダイアログの要件を満たすクラスを選択します。  オプションは次のとおりです。
 

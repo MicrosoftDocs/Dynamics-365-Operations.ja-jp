@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cfce182c6026aa73bcc14646332dd7f7848153b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 447d523cb509f03f5e0dac178cdb9df456055b14
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811719"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057126"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -38,7 +38,7 @@ ms.locfileid: "2811719"
 ## <a name="build-and-test-automation"></a>ビルドおよびテストの自動化
 - [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
-- [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [コマースおよび Finance のビルド システムのマージ](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
 - [承認テスト ライブラリのリソース](../perf-test/acceptance-test-library.md)
 

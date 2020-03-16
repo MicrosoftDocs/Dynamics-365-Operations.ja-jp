@@ -3,7 +3,7 @@ title: チャネル設定の前提条件
 description: このトピックでは、Microsoft Dynamics 365 Commerce のチャネル設定の前提条件における概要を示します。
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002292"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081318"
 ---
 # <a name="channel-setup-prerequisites"></a>チャネル設定の前提条件
 
@@ -40,16 +40,16 @@ Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提�
 
 ## <a name="initialization"></a>初期化
 
-- [シード データの初期化](../retail/enable-configure-retail-functionality.md)
+- [シード データの初期化](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>すべてのチャネル タイプに必要であるグローバルな前提条件
 
 - [法人構造の定義とコンフィギュレーション](channels-legal-entities.md) 
 - [組織階層のコンフィギュレーション](channels-org-hierarchies.md)
 - [倉庫の設定](channels-setup-warehouse.md)
-- [消費税のコンフィギュレーション](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [消費税のコンフィギュレーション](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [電子メール通知プロファイルの設定](email-notification-profiles.md)
-- [番号順序の設定](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [番号順序の設定](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [既定の顧客およびアドレス帳の設定](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,19 +57,17 @@ Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提�
 
 ## <a name="retail-channel-prerequisites"></a>小売チャネルの前提条件
 
-- [情報コードおよび情報コード グループ](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [情報コードおよび情報コード グループ](info-codes-retail.md)
 - [小売機能プロファイルの設定](retail-functionality-profile.md)
 - [従業員のアドレス帳の設定](new-address-book.md)
-- [画面レイアウトの設定](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [ハードウェア ステーションの設定](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [画面レイアウトの設定](pos-screen-layouts.md)
+- [ハードウェア ステーションの設定](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>コール センター チャネルの前提条件
 
 - コール センター パラメーター
-- コール センターの払戻方法
-- レンタル タイプ
-- 支払サービス
-- 注文保留コード
+- [通話センター注文と払戻支払の方法](work-with-payments.md)
+- [デリバリーのコール センター モードと諸費用](configure-call-center-delivery.md)
 
 ## <a name="online-channel-prerequisites"></a>オンライン チャネルの前提条件
 

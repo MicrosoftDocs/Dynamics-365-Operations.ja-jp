@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003237"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042783"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>デモ データを使用した製品推奨事項の取得
 このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
@@ -57,10 +57,10 @@ ms.locfileid: "3003237"
 拡張機能には、「RecoMockDataset.csv」と呼ばれるデータファイルが含まれています。これによりモックの推奨結果の出力に使用するデータセットを制御できます。 ファイル名は、**ext.Recommendations.DemoFilePath** 設定を使用して、拡張コンフィギュレーションによって制御できます。 これにより、コンフィギュレーション時に簡単に切り替えることができる複数のデータセットを利用できるようになります。
 
 
-```
-  <settings>
+```xml
+<settings>
     <add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
-  </settings>
+</settings>
 ```
 
 ## <a name="additional-resources"></a>追加リソース

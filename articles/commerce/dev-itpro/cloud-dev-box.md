@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6ed3862f6daae13a9e6749c0a5f6a79b19975f45
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 21a1b93bdc2f44fac59c2e215d2efa5390e8bf11
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004596"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070443"
 ---
 # <a name="development-in-cloud-hosted-development-environments-without-admin-access"></a>管理者アクセスのないクラウド ホスト開発環境での開発
 
@@ -43,7 +43,7 @@ Lifecycle Services (LCS) で Microsoft Azure サブスクリプションを使�
 4. CRT/RS 拡張をデバッグするには、CRT/RS プロジェクトを IIS Express プロセスに添付します。
 5. Retail SDK からクラウド POS プロジェクトを開くと、次のエラーで IIS Express が失敗することがあります。 
 
-    ```
+    ```Console
     Filename: redirection.config
     Error: Cannot read configuration file
     ``` 
@@ -56,7 +56,7 @@ Lifecycle Services (LCS) で Microsoft Azure サブスクリプションを使�
 4. **applicationhost.config** で、RetailCloudPos の physcialPath を変更し、SDK の場所をポイントするようにします。
    たとえば、physicalPath="K:\RetailSDK\POS\Web" です。 全体的なセクションは、次のようになります。
    
-    ```
+    ```xml
    <site name="RetailCloudPOs" id="4" serverAutoStart="true">
         <application path="/" applicationPool="Dynamics365">
             <virtualDirectory path="/" physicalPath="K:\RetailSDK\POS\Web" />

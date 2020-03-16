@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017731"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042945"
 ---
 # <a name="embed-microsoft-power-apps"></a>埋め込み Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Power Apps からクライアントにアプリを埋め込む前に、最初に
 
     - **名前**フィールドは、埋め込まれたアプリを含むボタンまたはタブのテキストを示します。 多くの場合、このフィールドでアプリの名前を繰り返すことができます。
     - **アプリ ID** は、埋め込むアプリの GUID です。 この値を取得するには、[web.powerapps.com](https://web.powerapps.com) でアプリを検索し、**詳細**の**アプリ ID** フィールドを探します。
-    - **アプリのコンテキストを入力する**では、必要に応じて、アプリに入力として渡すデータが含まれているフィールドを選択することができます。 アプリが Finance and Operations アプリから送信されるデータにアクセスする方法の詳細に関しては、このトピックの後の [Finance and Operations アプリからのデータを活用するアプリの構築](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) を参照してください。
+    - **アプリのコンテキストを入力する**では、必要に応じて、アプリに入力として渡すデータが含まれているフィールドを選択することができます。 アプリが Finance and Operations アプリから送信されるデータにアクセスする方法の詳細に関しては、このトピックの後の [Finance and Operations アプリから送信されるデータを活用するアプリの構築](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) セクションを参照してください。
     - 埋め込むアプリのタイプに一致する**アプリケーション サイズ**を選択します。 モバイル デバイス用に作成されたアプリに対しては**シン**を選択し、タブレット用に作成されたアプリに対しては**ワイド**を選択します。 これにより、埋め込みアプリに十分な容量を確保できます。
     - **法人**クイック タブには、アプリが利用できる法人を選択する機能があります。 既定では、アプリをすべての法人に対してアクセス可能にします。 このオプションは、[保存されたビュー](saved-views.md) が無効になっている場合にのみ使用可能です。 
 
@@ -76,7 +76,7 @@ Finance and Operations アプリに埋め込まれる Power Apps からアプリ
 
 たとえば、アプリの OnStart 機能では、Finance and Operations アプリから次のような変数に入力データを設定することができます。
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Finance and Operations アプリのページに埋め込まれたアプリを表
 
 アプリがページに埋め込まれた後、必要に応じて削除するには 2 つの方法があります。
 
-- このトピックの前半にある [埋め込みアプリの編集](#editing-an-embedded-power-app) セクションからの手順を使用して、**アプリの編集**ウィンドウに移動します。 ウィンドウに、削除する埋め込み型アプリの情報が表示されていることを確認してから、**削除**ボタンをクリックします。
+- このトピックの前半にある [埋め込みアプリの編集](#editing-an-embedded-app) セクションからの手順を使用して、**アプリの編集**ウィンドウに移動します。 ウィンドウに、削除する埋め込み型アプリの情報が表示されていることを確認してから、**削除**ボタンをクリックします。
 - 埋め込まれたアプリは、個人用設定データとして保存されるため、ページの個人用設定をクリアすると、そのページの埋め込まれたアプリも削除されます。 ページの個人用設定をクリアするのは、永久的なもので元に戻すことはできないことに注意してください。 ページの個人用設定を削除するには、**オプション**を選択して**このページのパーソナライズ**、最後に**クリア** ボタンをクリックします。 ブラウザを更新した後、このページの以前のすべての個人用設定は、削除されます。 個人用設定を使用してページを最適化する方法の詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md)を参照してください。
 
 ## <a name="appendix"></a>付録
@@ -115,7 +115,7 @@ Finance and Operations アプリのページに埋め込まれたアプリを表
 
 次の例は、アプリを埋め込むための構成をするために必要な 2 つのメソッドを持つ新しいクラスを示しています。
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

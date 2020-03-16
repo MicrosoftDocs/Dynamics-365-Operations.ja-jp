@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc3ba0660386bdf16c6ebb5abc032077a35c31e0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6a89b1928a2241ca939cb168aa0b00c8f18373b7
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004593"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070442"
 ---
 # <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
 
@@ -94,7 +94,7 @@ CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法
 <p>たとえば、POS の顧客エンティティーにいくつかの追加情報をキャプチャして表示したいとします。 この場合、顧客に対するすべてのカスタム プロパティをフェッチするポスト トリガーを追加し、拡張子プロパティとして顧客エンティティに追加し、それらの拡張機能プロパティを POS に送信できます。</p>
 <p>POS から CRT に拡張機能のプロパティを送信して、カスタム テーブルに保存できます。 または、これらのプロパティに基づくいくつかのカスタム ロジックの実行または本社への送信が可能です。</p>
 <p>製品、顧客、トランザクション、およびパラメーターなどのすべての CRT エンティティは、拡張機能プロパティをサポートします。</p>
-<blockquote><strong>メモ</strong><br>
+<blockquote><strong>注記:</strong><br>
 属性もまたサポートされます (コンフィギュレーション駆動型の開発)。 拡張プロパティの場合は、カスタム テーブルを作成し、データを格納する必要があります。 ただし、属性はコンフィギュレーション駆動型であり、テーブル フィールドを作成するために必須ではありません。 したがって、読み取りおよび更新操作にコードは必要ありません。</blockquote>
 <p>属性についての詳細は、次のトピックを参照してください。</p>
 <ul>
@@ -402,7 +402,7 @@ POS で拡張プロパティーを設定して、POS アプリケーション �
 
 次に例を示します。
 
-```Typescript
+```typescript
 let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
     Key: "sampleExtensionProperty",
     Value: <ProxyEntities.CommercePropertyValue>{
@@ -414,7 +414,7 @@ this.context.runtime.executeAsync(new SaveExtensionPropertiesOnCartClientRequest
 
 **POS のカートから拡張プロパティの読み取り**
 
-```Typescript
+```typescript
 let getCartRequest: GetCurrentCartClientRequest<GetCurrentCartClientResponse> = new GetCurrentCartClientRequest<GetCurrentCartClientResponse>();
 return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelableDataResult<GetCurrentCartClientResponse>) => {
     let cart: Commerce.Proxy.Entities.Cart = (<GetCurrentCartClientResponse>value.data).result;
@@ -447,34 +447,38 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 作業のシリアル化については、新しい要求タイプは **\[DataContract\]** および **\[DataMember\]** 属性を実装する必要があります。
 
-    using System.Runtime.Serialization;
-    using Microsoft.Dynamics.Commerce.Runtime.Messages;
+```typescript
+using System.Runtime.Serialization;
+using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
-    [DataContract]
-    public sealed class GetStoreHoursDataRequest : Request
+[DataContract]
+public sealed class GetStoreHoursDataRequest : Request
+{
+    public GetStoreHoursDataRequest(string storeNumber)
     {
-        public GetStoreHoursDataRequest(string storeNumber)
-        {
-            this.StoreNumber = storeNumber;
-        }
-
-        [DataMember]
-        public string StoreNumber { get; private set; }
+        this.StoreNumber = storeNumber;
     }
+
+    [DataMember]
+    public string StoreNumber { get; private set; }
+}
+```
 
 新しい応答タイプは要求タイプに似ています。
 
-    [DataContract]
-    public sealed class GetStoreHoursDataResponse : Response
+```typescript
+[DataContract]
+public sealed class GetStoreHoursDataResponse : Response
+{
+    public GetStoreHoursDataResponse(PagedResult dayHours)
     {
-        public GetStoreHoursDataResponse(PagedResult dayHours)
-        {
-            this.DayHours = dayHours;
-        }
-
-        [DataMember]
-        public PagedResult DayHours { get; private set; }
+        this.DayHours = dayHours;
     }
+
+    [DataMember]
+    public PagedResult DayHours { get; private set; }
+}
+```
 
 次に、要求および応答タイプを使用する新しい CRT サービスを作成する必要があります。
 
@@ -482,22 +486,26 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 1.  新しいサービスを実装します。
 
-        public class StoreHoursDataService : IRequestHandler
+    ```typescript
+    public class StoreHoursDataService : IRequestHandler
+    ```
 
 2.  インターフェイスのメンバー 2 つを実装します。 **SupportedRequestTypes** メンバーは、このサービスが処理できるすべての要求の一覧を返します。 実行メソッドは、このサービスの要求が実行された場合に CRT が呼び出すメソッドです。
 
-        public IEnumerable SupportedRequestTypes
+    ```typescript
+    public IEnumerable SupportedRequestTypes
+    {
+        get
         {
-            get
+            return new[]
             {
-                return new[]
-                {
-                typeof(GetStoreHoursDataRequest),
-                };
-            }
+            typeof(GetStoreHoursDataRequest),
+            };
         }
+    }
 
-        public Response Execute(Request request);
+    public Response Execute(Request request);
+    ```
 
 3.  CommerceRuntime.Config ファイルで、**合成**セクション (または同等のセクション) を更新してこのサービスを登録します。 アセンブリから 1 つの型またはすべての型を登録できることに注意してください。 CommerceRuntime エンジンは、すべての IRequestHandler 派生タイプを見つけます。
 4.  オプション: CommerceRuntime テスト ホストを使用してサービスのテストを行います。
@@ -506,7 +514,9 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 単一の要求サービスを作成すると少し便利になります。
 
-    public class CrossLoyaltyCardService : SingleRequestHandler
+```typescript
+public class CrossLoyaltyCardService : SingleRequestHandler
+```
 
 前の手順で説明したように登録が行われます。
 
@@ -518,71 +528,75 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 すべての新しいエンティティは、**CommerceEntity** タイプであることが必要です。 このタイプを使用するとき、多くの低レベルの機能は自動的に処理されます。 次の例は、StoreHours サンプルから取得したもので、データベース テーブルにバインドされたエンティティを作成する方法を示しています。 これは、通常のケースです。
 
-    public class StoreDayHours : CommerceEntity
+```typescript
+public class StoreDayHours : CommerceEntity
+{
+    private const string DayColumn = "DAY";
+    private const string OpenTimeColumn = "OPENTIME";
+    private const string CloseTimeColumn = "CLOSINGTIME";
+    private const string IdColumn = "RECID";
+
+    public StoreDayHours()
+        : base("StoreDayHours")
     {
-        private const string DayColumn = "DAY";
-        private const string OpenTimeColumn = "OPENTIME";
-        private const string CloseTimeColumn = "CLOSINGTIME";
-        private const string IdColumn = "RECID";
-
-        public StoreDayHours()
-            : base("StoreDayHours")
-        {
-        }
-
-        [DataMember]
-        [Column(DayColumn)]
-        public int DayOfWeek
-        {
-            get { return (int)this[DayColumn]; }
-            set { this[DayColumn] = value; }
-        }
-
-        [DataMember]
-        [Column(OpenTimeColumn)]
-        public int OpenTime
-        {
-            get { return (int)this[OpenTimeColumn]; }
-            set { this[OpenTimeColumn] = value; }
-        }
-
-        [DataMember]
-        [Column(CloseTimeColumn)]
-        public int CloseTime
-        {
-            get { return (int)this[CloseTimeColumn]; }
-            set { this[CloseTimeColumn] = value; }
-        }
-
-        [Key]
-        [DataMember]
-        [Column(IdColumn)]
-        public long Id
-        {
-            get { return (long)this[IdColumn]; }
-            set { this[IdColumn] = value; }
-        }
     }
+
+    [DataMember]
+    [Column(DayColumn)]
+    public int DayOfWeek
+    {
+        get { return (int)this[DayColumn]; }
+        set { this[DayColumn] = value; }
+    }
+
+    [DataMember]
+    [Column(OpenTimeColumn)]
+    public int OpenTime
+    {
+        get { return (int)this[OpenTimeColumn]; }
+        set { this[OpenTimeColumn] = value; }
+    }
+
+    [DataMember]
+    [Column(CloseTimeColumn)]
+    public int CloseTime
+    {
+        get { return (int)this[CloseTimeColumn]; }
+        set { this[CloseTimeColumn] = value; }
+    }
+
+    [Key]
+    [DataMember]
+    [Column(IdColumn)]
+    public long Id
+    {
+        get { return (long)this[IdColumn]; }
+        set { this[IdColumn] = value; }
+    }
+}
+```
 
 サービスで新しいエンティティを使用する場合、プロセスは簡単です。 前述のように、派生 IRequestHandler として新しいサービスを作成します。 次に、新しいエンティティを使用するか返すかのいずれかを実行します。 次の例は、データベースからエンティティを読み取り、それを応答の一部として返す方法を示しています。
 
-    private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
+```typescript
+private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
+{
+    ThrowIf.Null(request, "request");
+    using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
     {
-        ThrowIf.Null(request, "request");
-        using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+        var query = new SqlPagedQuery(request.QueryResultSettings)
         {
-            var query = new SqlPagedQuery(request.QueryResultSettings)
-            {
-                DatabaseSchema = "crt",
-                Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
-                From = "ISVRETAILSTOREHOURSVIEW",
-                Where = "STORENUMBER = @storeNumber",
-            };
+            DatabaseSchema = "crt",
+            Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+            From = "ISVRETAILSTOREHOURSVIEW",
+            Where = "STORENUMBER = @storeNumber",
+        };
 
-            query.Parameters["@storeNumber"] = request.StoreNumber;
-            return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
-        }
+        query.Parameters["@storeNumber"] = request.StoreNumber;
+        return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
     }
+}
+```
 
 前の例では、CRT ランタイム エンジンは、登録されているデータ アダプターを介してチャンネルに自動的にクエリを作成します。 名前 **crt.ISVRetailStoreHoursView** を持つ型を照会して、コードで指定された **where** 句および列を生成します。 カスタマイザーは、カスタマイズの一部として SQL オブジェクトを提供する役割を担います。
 
@@ -592,22 +606,28 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 1.  IRequestTrigger を実装する新しいトリガー クラスを作成します。
 
-        public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
+    ```typescript
+    public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
+    ```
 
 2.  **IRequest.SupportedRequestTypes** プロパティで、このトリガーを実行する必要がある要求の一覧を返します。
 
-        public IEnumerable SupportedRequestTypes
+    ```typescript
+    public IEnumerable SupportedRequestTypes
+    {
+        get
         {
-            get
-            {
-                return new[] { typeof(GetCrossLoyaltyCardRequest) };
-            }
+            return new[] { typeof(GetCrossLoyaltyCardRequest) };
         }
+    }
+    ```
 
 3.  要求の前後に呼び出される関数を実装します。
 
-        void OnExecuted(Request request, Response response);
-        void OnExecuting(Request request);
+    ```typescript
+    void OnExecuted(Request request, Response response);
+    void OnExecuting(Request request);
+    ```
 
 4.  commerceRuntime.Config ファイルでクラスを登録します。
 
@@ -621,42 +641,46 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 次の例は、Retail SDK から取得したもので、既存のコントローラーを拡張して POST アクションを持つようにする方法を示しています。
 
-    public class MyCustomersController : CustomersController
+```typescript
+public class MyCustomersController : CustomersController
+{
+    [HttpPost]
+    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
+    public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
     {
-        [HttpPost]
-        [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
-        public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
+        if (parameters == null)
         {
-            if (parameters == null)
-            {
-                throw new ArgumentNullException("parameters");
-            }
-
-            var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-            string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
-
-            GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
-
-            string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
-            RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
-            return resp.Discount;
+            throw new ArgumentNullException("parameters");
         }
+
+        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+        string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
+
+        GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
+
+        string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
+        RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
+        return resp.Discount;
     }
+}
+```
 
 次に、モデル ファクトリをオーバーライドします。
 
-    [Export(typeof(IEdmModelFactory))]
-    [ComVisible(false)]
-    public class CustomizedEdmModelFactory : CommerceModelFactory
+```typescript
+[Export(typeof(IEdmModelFactory))]
+[ComVisible(false)]
+public class CustomizedEdmModelFactory : CommerceModelFactory
+{
+    protected override void BuildActions()
     {
-        protected override void BuildActions()
-        {
-            base.BuildActions();
-            var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
-            var1.Parameter("LoyaltyCardNumber");
-            var1.Returns();
-        }
+        base.BuildActions();
+        var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
+        var1.Parameter("LoyaltyCardNumber");
+        var1.Returns();
     }
+}
+```
 
 クライアントがこの新しいカスタマイズを使用する前に、新しいモデル ファクトリ用の Commerce Scale Unit プロキシ コードを生成するためにビルド システムを調整する必要があります。 この構成ステップはビルド システムで実行されます。 最後に、web.config ファイルを調整する必要があります。 SDK の Commerce Scale Unit の梱包プロジェクトでは、このステップを完了する必要があります。 ローカルのテストが行われている場合、テストに使用されるローカル開発トポロジー コンピューターでこの手順を任意で実行できます。
 
@@ -664,54 +688,58 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 単純なエンティティがあり、データをフェッチするコント ローラーを必要としているとします。 例については、Retail SDK で StoreHours サンプルを参照してください。 新しい Commerce Scale Unit コントローラーには意味があり、低レベルのすべての作業が CRT (新しいエンティティ、要求、応答、およびサービス) で実行されます。 新しいコントローラを作成するには、CommerceController から派生します。 例としてここに表示します。 コントローラー名は重要であり、エンティティの名前と一致する必要があります。
 
-    [ComVisible(false)]
-    public class StoreHoursController : CommerceController
+```typescript
+[ComVisible(false)]
+public class StoreHoursController : CommerceController
+{
+    public override string ControllerName
     {
-        public override string ControllerName
-        {
-            get { return "StoreHours"; }
-        }
-
-        [HttpPost]
-        [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
-        public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
-        {
-            if (parameters == null)
-            {
-                throw new ArgumentNullException("parameters");
-            }
-
-            var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-
-            QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-            queryResultSettings.Paging = new PagingInfo(10);
-
-            var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
-            PagedResult hours = runtime.Execute(request, null).DayHours;
-            return this.ProcessPagedResults(hours);
-        }
+        get { return "StoreHours"; }
     }
+
+    [HttpPost]
+    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
+    public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
+    {
+        if (parameters == null)
+        {
+            throw new ArgumentNullException("parameters");
+        }
+
+        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+
+        QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
+        queryResultSettings.Paging = new PagingInfo(10);
+
+        var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
+        PagedResult hours = runtime.Execute(request, null).DayHours;
+        return this.ProcessPagedResults(hours);
+    }
+}
+```
 
 新しいエンティティについては、次の例に示すように、工場の **BuildEntitySets()** メソッドを上書きする必要があります。
 
-    [Export(typeof(IEdmModelFactory))]
-    [ComVisible(false)]
-    public class CustomizedEdmModelFactory : CommerceModelFactory
+```typescript
+[Export(typeof(IEdmModelFactory))]
+[ComVisible(false)]
+public class CustomizedEdmModelFactory : CommerceModelFactory
+{
+    protected override void BuildActions()
     {
-        protected override void BuildActions()
-        {
-            base.BuildActions();
-            var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
-            action.Parameter("StoreNumber");
-            action.ReturnsCollectionFromEntitySet("StoreHours");
-        }
-
-        protected override void BuildEntitySets()
-        {
-            base.BuildEntitySets();
-            CommerceModelFactory.BuildEntitySet("StoreHours");
-        }
+        base.BuildActions();
+        var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
+        action.Parameter("StoreNumber");
+        action.ReturnsCollectionFromEntitySet("StoreHours");
     }
+
+    protected override void BuildEntitySets()
+    {
+        base.BuildEntitySets();
+        CommerceModelFactory.BuildEntitySet("StoreHours");
+    }
+}
+```
 
 ### <a name="how-to-call-the-new-commerce-scale-unit-api-from-mposcloud-pos"></a>MPOS/クラウド POS から新しい Commerce Scale Unit API を呼び出す方法:
 
@@ -729,12 +757,16 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 #### <a name="cross-loyalty-sample"></a>クロス ロイヤルティ サンプル。
 
-    var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
-    return request.execute<number>();
+```typescript
+var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
+return request.execute<number>();
+```
 
 #### <a name="store-hours-sample"></a>店舗の時間のサンプル:
 
-    var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
-    return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
+```typescript
+var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
+return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
+```
 
 mpos で新しい Commerce Scale Unit API を呼び出す方法について詳しくは、Retail SDK POS.Extension.CrossloaylySample および POS.Extension.SToreHoursSample サンプル プロジェクトをご覧ください。

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0254287d04141a077c815dc6880889c15f51f581
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 56f3685527bd4fc5e8321c291571ae85f101fa51
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770010"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070518"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
@@ -62,14 +62,14 @@ ms.locfileid: "2770010"
 
 2. ローカルの開発環境にモデル ファイルをインポートします。 開発環境でモデル ファイルをインストールするには、ModelUtil.exe ツールと **-import** ディレクティブを使用します。 次に例を示します。
 
-    ```
+    ```Console
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
 3. **J:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
 4. 次のコマンドを実行します。
 
-    ```
+    ```Console
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff856486c965179edcf121abb07c7584451759ee
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: d7e5edbac5a9d2472ca274834c3bec947a8311ad
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033032"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082013"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページ上またはグリッド内の画像
 
@@ -124,9 +124,33 @@ public display container imageDataMethod()
 |---|---|
 | <ul><li>この方法は、web 上の任意の画像を参照する簡単な方法を説明します。</li><li>この方法は、フル カラー画像をサポートします。</li><li>Web ブラウザーは、画像をホストするサーバーの設定に基づいて、画像をキャッシュできます。</li></ul> | <ul><li>転送サイズはシンボルほど小さいわけではありませんが、妥当です。 URL は、画像を使用する各コントロールの文字列として送信されます。 ブラウザーは URL からイメージをダウンロードし、その時点から標準のブラウザー キャッシュ ルールが適用されます。</li><li>CSS を使用してもイメージのテーマを簡単に提示することはできません。</li><li>URL がスケーラブル ベクター グラフィックス (SVG) ファイルを指していない場合、イメージは高 DPI ディスプレイでは自動的にスケーリングされません。</li></ul> |
 
-| デザイン時間 | 実行時間 |
-|---|---|
-| | 次の例は、文字列に含まれる URL を使用するイメージを示しています。<br><pre><code>public display container imageDataMethod()<br>{<br>ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);<br>return imgClass.pack();<br>}</code></pre><br>このコードは、小さな JavaScript Object Notation (JSON) メッセージをクライアントのコントロールに送信します。 このメッセージは、コントロールに画像を URL として扱い、ブラウザーに画像のダウンロード作業をさせるように指示します。 サーバーで発生しているダウンロードはありません。 <strong>データベース テーブルに画像 URL を格納する</strong>テーブル上にイメージ列のためのコンテナ フィールドを持つこともできます。 以下の例を表すコードを使用して、<strong>ImageReference</strong> パックを保存することができます。<br><pre><code>ImageReference imgClass;<br>CLIControls_ImageTable imgTable;<br>ttsbegin;<br>imgClass = ImageReference::constructForUrl(<br>    &quot;<br>    http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg&quot;);<br>imgTable.ImageField = imgClass.pack();<br>imgTable.insert();<br>ttscommit;</code></pre>このコードにより、ユーザーのブラウザーは指定された URL からイメージをダウンロードします。 ImageReference の使用には間接費が発生しますが、このアプローチでは、バイナリデータ、URL、AOT リソース、シンボルから作成されたイメージを処理するために、単一のアプリケーション プログラミング インターフェイス (API) を使用できます。 データの行間でイメージの種類を組み合わせることもできます。|
+### <a name="run-time"></a>実行時間
+
+次の例は、文字列に含まれる URL を使用するイメージを示しています。
+
+```xpp
+public display container imageDataMethod()
+{
+ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
+return imgClass.pack();
+}
+```
+
+このコードは、小さな JavaScript Object Notation (JSON) メッセージをクライアントのコントロールに送信します。 このメッセージは、コントロールに画像を URL として扱い、ブラウザーに画像のダウンロード作業をさせるように指示します。 サーバーで発生しているダウンロードはありません。 <strong>データベース テーブルに画像 URL を格納する</strong>テーブル上にイメージ列のためのコンテナ フィールドを持つこともできます。 以下の例を表すコードを使用して、<strong>ImageReference</strong> パックを保存することができます。
+
+```xpp
+ImageReference imgClass;
+CLIControls_ImageTable imgTable;
+ttsbegin;
+imgClass = ImageReference::constructForUrl(
+    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");    
+imgTable.ImageField = imgClass.pack();
+imgTable.insert();
+ttscommit;
+```
+
+このコードにより、ユーザーのブラウザーは指定された URL からイメージをダウンロードします。 ImageReference の使用には間接費が発生しますが、このアプローチでは、バイナリデータ、URL、AOT リソース、シンボルから作成されたイメージを処理するために、単一のアプリケーション プログラミング インターフェイス (API) を使用できます。 データの行間でイメージの種類を組み合わせることもできます。
+
 
 ## <a name="image-type-binary-image"></a>イメージの種類: バイナリ イメージ
 

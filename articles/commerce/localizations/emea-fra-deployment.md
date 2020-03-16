@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 4efcbc1297236dedb7b76b346cddf2949092a017
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 95b6fa493dc211424f734b92833a32ba06e71cdd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004681"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057576"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -822,7 +822,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 5. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。 ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
 6. ビルド番号、カテゴリ、および必要に応じて、コンプライアンスの証明書の番号を上書きします。 詳細については、このトピックの前の方にある、[レシートに印刷されるアプリケーション属性を指定する](#specifying-application-attributes-that-will-be-printed-on-receipts) セクションにある指示を参照してください。
 7. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
-8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 ### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
 

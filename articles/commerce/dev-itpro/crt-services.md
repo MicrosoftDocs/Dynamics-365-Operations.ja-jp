@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: c8554c8a2f54738793607a8baf8c8d8f5c31bbf7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9fd0e7f51f9bcdf928d54cd9843e51c1f029ac62
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004588"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057899"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce Runtime (CRT) は、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含む、ポータブル .NET ライブラリの集合です。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 Retail Modern POS またはクラウド POS は CRT を呼び出して、ビジネス ロジックの実行を要求します。 CRT は要求を処理し、販売時点管理に応答を送り返します。 小売販売時点管理はシン クライアントのようで、すべてのビジネス ロジックを CRT で実行する必要があります。
+Commerce Runtime (CRT) は、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含む、ポータブル .NET ライブラリの集合です。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 Retail Modern POS またはクラウド POS は CRT を呼び出して、ビジネス ロジックの実行を要求します。 CRT は要求を処理し、販売時点管理に応答を送り返します。 POS はシン クライアントのようで、すべてのビジネス ロジックを CRT で実行する必要があります。
 
 CRT サービスは、要求/応答のグループです。 POS で作業する際はいつでも、POS は Commerce Scale Unit に要求を送り、Commerce Scale Unit は CRT を呼び出します。 CRT は要求を処理し、応答を送り返します。
 
@@ -410,7 +410,7 @@ public sealed class SaveCartRequestHandler : SingleRequestHandler<SaveCartReques
 
 ### <a name="default-workflows-and-handlers"></a>既定のワークフローとハンドラー
 
-次の表では、既定のワークフローの要求と応答の一覧を示します。 CRT サービスは、ワークフロー要求を呼び出し、小売販売時点管理で実行する操作に基づいて応答します。 ビジネス シナリオに従って、これらのワークフローの要求と応答のいずれかをカスタマイズできます。 
+次の表では、既定のワークフローの要求と応答の一覧を示します。 CRT サービスは、ワークフロー要求を呼び出し、POS で実行する操作に基づいて応答します。 ビジネス シナリオに従って、これらのワークフローの要求と応答のいずれかをカスタマイズできます。 
 
 | 要求                           | ハンドラー                                 | 目的                                                                                                                    |
 |-----------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

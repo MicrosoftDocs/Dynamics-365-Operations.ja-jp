@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b33979c98cf9f6e8436526850f17a33421698847
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a8f39aee829885e56b9fef0db25c7989a7622827
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004685"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057578"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -29,7 +29,7 @@ ms.locfileid: "3004685"
 
 このトピックは、Dynamics 365 Commerce のオーストラリアでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアのローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md) を参照してください。
 
-統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能の詳細については、 [小売チャンネルの財政統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。これらのサンプルは、市販ソフトウェア開発キット (SDK)の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能の詳細については、 [コマース チャネルの財政統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。これらのサンプルは、市販ソフトウェア開発キット (SDK)の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
 このローカライズは、Commerce runtime (CRT)、ハードウェア ステーション、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
@@ -174,7 +174,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 #### <a name="set-up-the-registration-process"></a>登録プロセスの設定
 
-登録プロセスを有効にするには、次の手順を使用してバックオフィスを設定します。 詳細については、[小売チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
+登録プロセスを有効にするには、次の手順を使用してバックオフィスを設定します。 詳細については、[コマース チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
 
 1. **コマース共有パラメーター**を開き、**全般**タブで**会計統合**を有効にします。
 2. **Retail とコマース \> チャネル設定 \> 会計統合 \> 会計コネクタ** メニューを開きます。 RetailSdk からコネクタ構成を読み込みます。 ファイルは、SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml の下に保存されています。
@@ -219,13 +219,13 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 3. **BuildTools\Customization.settings** パッケージ カスタマイズ コンフィギュレーション ファイルに以下の変更を加えます。
 
-        ```xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
-        ```
+    ```xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+    ```
 
 4. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
-5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 6. [バックオフィスで要求されるパラメーターの設定](#set-up-required-parameters-in-headquarters) を完了します

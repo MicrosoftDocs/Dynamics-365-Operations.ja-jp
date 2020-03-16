@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e2d4b15590ddc4cac63d01c0aefeb27dc88d27b1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ddf3538a67ea55f2cc9f5d6c4462b506bb8282c0
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772524"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057977"
 ---
 # <a name="pin-power-bi-reports-to-workspaces"></a>Power BI レポートをワークスペースにピン留めする
 
@@ -44,11 +44,11 @@ Microsoft Dynamics AX プラットフォーム更新プログラム 1 (2016 年 
 ## <a name="full-page-power-bi-reports-in-the-client"></a>クライアントでの全ページ Power BI レポート
 クライアントで Power BI レポートを開き、実行することができます。 この機能は、Microsoft SQL Server Reporting Services (SSRS) レポートを実行するための機能に似ています。 Power BI レポートを実行するには、**リンク** セクションで、Power BI レポートのいずれかのリンクをクリックします。 この例では、**Retail 分析サンプル**リンクをクリックします。 Power BI レポートは、次の図に示すように、ページ全体のビューを使用してクライアントで開かれます。 このレポートはインタラクティブです。 レポート領域をクリックすると、残りのビジュアルは選択内容に反応します。
 
-[![小売分析のサンプル レポート](./media/retail-analysis-report-full-page-no-filters-1024x573.jpg)](./media/retail-analysis-report-full-page-no-filters.jpg)
+[![分析のサンプル レポート](./media/retail-analysis-report-full-page-no-filters-1024x573.jpg)](./media/retail-analysis-report-full-page-no-filters.jpg)
 
 フィルター ウィンドウを使用して、レポートのデータをフィルター処理できます。 次の図は、フィルターが適用された後のレポートを示しています。
 
-[![フィルタリングされた小売分析のサンプル レポート](./media/retail-analysis-report-full-page-filtered-view-1-1024x571.jpg)](./media/retail-analysis-report-full-page-filtered-view-1.jpg)
+[![フィルタリングされた分析のサンプル レポート](./media/retail-analysis-report-full-page-filtered-view-1-1024x571.jpg)](./media/retail-analysis-report-full-page-filtered-view-1.jpg)
 
 PowerBI.com でこのレポートを開き、変更を加えることもできます。 異なる名前を持つ別のコピーとして修正済みのレポートを保存し、新しいレポートをワークスペースにピン留めすることもできます。
 

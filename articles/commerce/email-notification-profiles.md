@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003145"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057617"
 ---
 # <a name="set-up-an-email-notification-profile"></a>電子メール通知プロファイルの設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "3003145"
 
 電子メール通知プロファイルを作成するには、次の手順を実行します。
 
-1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 本社の設定 \> パラメーター > Retail 電子メール通知プロファイル**に移動します。
+1. ナビゲーション ウィンドウで、**モジュール \> 小売りとコマース \> 本社の設定 \> コマース電子メール通知プロファイル**に移動します。
 1. アクション ウィンドウで、**新規**をクリックします。
 1. **電子メール通知プロファイル** フィールドに、プロファイルを識別する名前を入力します。
 1. **説明**フィールドに関連する説明を入力します。
@@ -71,16 +71,16 @@ ms.locfileid: "3003145"
 
 電子メール イベントを作成するには、次の手順に従います。
 
-1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 本社の設定 \> パラメーター > Retail 電子メール通知プロファイル**に移動します。
+1. ナビゲーション ウィンドウで、**モジュール \> 小売りとコマース \> 本社の設定 \> コマース電子メール通知プロファイル**に移動します。
 1. 一覧で、目的のレコードを見つけ、選択します。 
 1. **電子メール ID** ドロップダウン リストから電子メール テンプレートを選択します。
 1. ドロップダウン リストから適切な**電子メール通知タイプ**を選択します。
 1. **有効**チェック ボックスをオンにします。
 1. アクション ウィンドウで、**保存**を選択します。
 
-次の画像は、小売イベント通知の設定例を示しています。
+次の画像は、イベント通知の設定例を示しています。
 
-![小売用のイベント通知設定](media/email-notification-profile.png)
+![イベント通知設定](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

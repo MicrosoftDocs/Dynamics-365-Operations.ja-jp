@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 95fbb52dc2396e40cd6b726a05548b2d74b6ef59
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e69a9534343ce0bbf14ed87fc5ab5300ead1690
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773997"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076204"
 ---
+# <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management で計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
 

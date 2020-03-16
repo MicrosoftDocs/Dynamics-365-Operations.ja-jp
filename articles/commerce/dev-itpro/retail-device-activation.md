@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0e993ebe02592c0514d6e19a88c57bb21a7a26ec
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 82cb05f8a785f4f53a0b0f84dcd4c48be9c3a507
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004644"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070779"
 ---
 # <a name="point-of-sale-pos-device-activation"></a>販売時点管理 (POS) デバイスのライセンス認証
 
@@ -43,8 +43,10 @@ ms.locfileid: "3004644"
 7.  チャネルが公開されていることを確認します (検証でチェックされます)。
 8.  チャネル データベースに本社から同期したデータが含まれており、ダウンロード ジョブが実行されていることを確認します。 これを確認するには、ストアのチャネル データベースで次のコマンドを実行します。
 
-        select * from crt.STORAGELOOKUPVIEW
-
+    ```sql
+    select * from crt.STORAGELOOKUPVIEW
+    ```
+    
     データが返され、結果が空ではないことを確認します。
 
 9.  **登録** (検証によって確認) でハードウェア プロファイルを設定します。

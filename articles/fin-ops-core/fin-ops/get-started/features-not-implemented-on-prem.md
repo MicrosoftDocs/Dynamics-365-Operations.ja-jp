@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8810a0279647ccabd45205c7847879ba1ad3b739
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 935c2112841c127692ff46c7105f3a2b3e13bc1b
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250294"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057979"
 ---
 # <a name="features-not-implemented-in-on-premises-deployments"></a>オンプレミス配置に実装されない機能
 
@@ -57,7 +57,7 @@ ms.locfileid: "2250294"
 
 | 機能 | 説明 |
 |---------|-------------|
-| Retail  | オンプレミス展開で現在利用可能な小売機能の一覧を表示するには、[オンプレミス展開で利用可能な小売機能](../../../retail/retail-onprem.md)を参照してください。 |
+| Commerce  | オンプレミス展開で現在利用可能な機能の一覧を表示するには、[オンプレミス展開で利用可能なコマース機能](../../../retail/retail-onprem.md) を参照してください。 |
 
 ## <a name="features-not-intended-for-use-in-on-premises-deployments"></a>オンプレミス配置での使用を目的としない機能
 

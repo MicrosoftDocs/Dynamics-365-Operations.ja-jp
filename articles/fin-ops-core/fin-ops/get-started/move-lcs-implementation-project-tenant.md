@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 78e90f55bca66d68602871b3820e9605801ec774
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: aa0cad0f1feccca388f1aa88e980a0c9cbfa6301
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026280"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042955"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -84,14 +84,16 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 
 6. 正しいセキュリティ識別子 (SID) および ID プロバイダーを持つ他のすべてのユーザーを再インポートします。
 7. 適切なテーブルでテナント ID を更新するには、次のコマンドを実行します。
+
+
     ```sql
-    - select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
-    - select TENANTID from POWERBICONFIG
-    - select TENANTID from PROVISIONINGMESSAGETABLE
-    - select TENANTID from B2BINVITATIONCONFIG
-    - select TENANTID from RETAILSHAREDPARAMETERS
+    select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
+    select TENANTID from POWERBICONFIG
+    select TENANTID from PROVISIONINGMESSAGETABLE
+    select TENANTID from B2BINVITATIONCONFIG
+    select TENANTID from RETAILSHAREDPARAMETERS
     ```
-    
+
 8. 環境を完全に構成します。 この手順の一部として、統合のエンドポイントをコンフィギュレーションします。
 9. 新しい LCS プロジェクトのユーザー受け入れテスト (UAT) 環境でスモーク テストを実行します。 これらのテストでは、ユーザーのサインイン、統合、ワークフロー、印刷、レポート、および構成やユーザー情報に依存する同様のプロセスに焦点を当てる必要があります。
 10. 実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が終了し、UAT を完了した後に、新しいテナントに移動するためのサポート要求を開く必要があります。 実稼働環境を新しいテナントに移動するプロセスには、48 ～ 72 時間のダウンタイムの延長が必要です。

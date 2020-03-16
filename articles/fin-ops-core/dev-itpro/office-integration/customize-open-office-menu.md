@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: a9f100c5232596ad3b723bad6520f86e17e365cb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 39ddbb1abde0aada7668cd2c681de4eac413c06a
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191820"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042957"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -37,8 +37,8 @@ ms.locfileid: "2191820"
 
 | メニュー項目       | 説明                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                               |
-| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                                           |
+| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには Finance and Operations への逆参照が含まれていないため、データを更新することはできません。                                                                                               |
+| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには Finance and Operations への逆参照が含まれていないため、データを更新することはできません。                                                                                                           |
 | Excel で開く   | Microsoft Dynamics Office アドインを含むブックが作成されます。 ワークブックには Finance and Operations の参照が含まれており、アドインでホストされているデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
 
 ## <a name="how-menu-items-are-added-to-the-open-in-office-menu"></a>Office で開くメニューに、どのようにメニュー項目が追加されますか。
@@ -84,26 +84,28 @@ ms.locfileid: "2191820"
 
 所有していないページを変更する必要がある場合、オーバーレイが必要となるため、インターフェイスの使用を避ける必要があります。 代わりに、拡張機能およびイベント サブスクリプションを通じてカスタマイズを行う必要があります。 この方法を使用するには、カスタマイズするページの **OnIntializing** イベントにサブスクライブする拡張クラスを実装します。 このイベント ハンドラーから、ページの **OfficeFormRunHelper** を取得し、その **OfficeMenuInitializing** イベントにサブスクライブします。 次の例は、この方法のサンプル コードを示しています。
 
-    public static class MyForm_Extension
+```xpp
+public static class MyForm_Extension
+{
+    [FormEventHandler(formStr(MyForm), FormEventType::Initializing)]
+    public static void ExportToExcel_DataEntityCustom_OnInitializing(xFormRun sender, FormEventArgs e)
     {
-        [FormEventHandler(formStr(MyForm), FormEventType::Initializing)]
-        public static void ExportToExcel_DataEntityCustom_OnInitializing(xFormRun sender, FormEventArgs e)
+        FormRun formRun = sender as FormRun;
+        if (formRun)
         {
-            FormRun formRun = sender as FormRun;
-            if (formRun)
+            OfficeFormRunHelper officeHelper = formRun.officeHelper();
+            if (officeHelper)
             {
-                OfficeFormRunHelper officeHelper = formRun.officeHelper();
-                if (officeHelper)
-                {
-                    officeHelper.OfficeMenuInitializing += eventhandler(MyForm_Extension::officeMenuInitializingHandler);
-                }
+                officeHelper.OfficeMenuInitializing += eventhandler(MyForm_Extension::officeMenuInitializingHandler);
             }
         }
-        private static void officeMenuInitializingHandler(FormRun _formRun, OfficeMenuEventArgs _eventArgs)
-        {
-            // Modify the OfficeMenuOptions available on the OfficeMenuEventArgs.menuOptions() as necessary.
-        }
     }
+    private static void officeMenuInitializingHandler(FormRun _formRun, OfficeMenuEventArgs _eventArgs)
+    {
+        // Modify the OfficeMenuOptions available on the OfficeMenuEventArgs.menuOptions() as necessary.
+    }
+}
+```
 
 ## <a name="typical-customization-scenarios"></a>一般的なカスタマイズ シナリオ
 次の例では、**\_menuOptions** 変数に、カスタマイズしている **OfficeMenuOptions** インスタンスが含まれていると想定しています。
@@ -112,75 +114,88 @@ ms.locfileid: "2191820"
 
 **Office で開く**メニューにあるメニュー項目の多くは、ページとみなされるデータ エンティティに基づいて自動的に追加されます。 ただし、場合によっては、データ エンティティのセットを特定するために使用されるアルゴリズムが、正しいセットを特定しない可能性があります。 ページと見なされるデータ エンティティのセットを変更するには、**OfficeIMenuCustomizer.customizeMenuOptions** メソッドまたは **OfficeFormRunHelper.OfficeMenuInitializing** デリゲートから利用可能な **OfficeMenuOptions** を使用します。
 
-    // Add an entity to the list
-    OfficeMenuDataEntityOptions entityOptions  = OfficeMenuDataEntityOptions::construct(tableStr(MyEntity));
-    _menuOptions.dataEntityOptions().addEnd(entityOptions);
-    // Remove an entity from the list
-    ListIterator dataEntityOptionsIterator = new ListIterator(_menuOptions.dataEntityOptions());
-    while (dataEntityOptionsIterator.more())
+```xpp
+// Add an entity to the list
+OfficeMenuDataEntityOptions entityOptions  = OfficeMenuDataEntityOptions::construct(tableStr(MyEntity));
+_menuOptions.dataEntityOptions().addEnd(entityOptions);
+// Remove an entity from the list
+ListIterator dataEntityOptionsIterator = new ListIterator(_menuOptions.dataEntityOptions());
+while (dataEntityOptionsIterator.more())
+{
+    OfficeMenuDataEntityOptions dataEntityOptions = dataEntityOptionsIterator.value();
+    if (dataEntityOptions.dataEntityName() == tableStr(MyOtherEntity))
     {
-        OfficeMenuDataEntityOptions dataEntityOptions = dataEntityOptionsIterator.value();
-        if (dataEntityOptions.dataEntityName() == tableStr(MyOtherEntity))
-        {
-            dataEntityOptionsIterator.delete();
-        }
-        else
-        {
-            dataEntityOptionsIterator.next();
-        }
+        dataEntityOptionsIterator.delete();
     }
+    else
+    {
+        dataEntityOptionsIterator.next();
+    }
+}
+```
 
 ### <a name="specifying-the-default-data-entityrelated-options-that-are-included"></a>含まれている既定のデータ エンティティ関連のオプションを指定します。
 
 **OfficeMenuDataEntityOptions** クラスを使用すると、既定のエクスポートのためのメニュー項目またはドキュメント テンプレートに関連するメニュー項目を含めるかどうかを指定できます。
 
-    // Find the entity options if they were included by default.
-    OfficeMenuDataEntityOptions entityOptions = _menuOptions.getOptionsForEntity(tableStr(MyEntity));
-    if (!entityOptions)
-    {
-        // The entity options were not included. Add them.
-        entityOptions = OfficeMenuDataEntityOptions::construct(tableStr(MyEntity);
-        _menuOptions.dataEntityOptions().addEnd(entityOptions);
-    }
-    entityOptions.includeDefault(false); // Don't include the default export menu item.
-    entityOptions.includeTemplates(false); // Don’t include Document Template related menu items.
+```xpp
+// Find the entity options if they were included by default.
+OfficeMenuDataEntityOptions entityOptions = _menuOptions.getOptionsForEntity(tableStr(MyEntity));
+if (!entityOptions)
+{
+    // The entity options were not included. Add them.
+    entityOptions = OfficeMenuDataEntityOptions::construct(tableStr(MyEntity);
+    _menuOptions.dataEntityOptions().addEnd(entityOptions);
+}
+entityOptions.includeDefault(false); // Don't include the default export menu item.
+entityOptions.includeTemplates(false); // Don’t include Document Template related menu items.
+```
 
 ### <a name="adding-a-custom-export-menu-item--generating-a-workbook"></a>カスタム エクスポート メニュー項目の追加 – ブックの生成
 
 明示的にメニュー項目を追加するには、それを **OfficeMenuOptions.customMenuItems()** リストに追加する必要があります。 実行時に生成されるブックに対応するメニュー項目を追加するには、**OfficeGeneratedExportMenuItem** を使用します。
 
-    OfficeGeneratedExportMenuItem menuItem = OfficeGeneratedExportMenuItem::construct(tableStr(MyEntity), "MyCustomGeneratedExportId");
-    menuItem.setDisplayNameWithDataEntity();
-    _menuOptions.customMenuItems().addEnd(menuItem);
+```xpp
+OfficeGeneratedExportMenuItem menuItem = OfficeGeneratedExportMenuItem::construct(tableStr(MyEntity), "MyCustomGeneratedExportId");
+menuItem.setDisplayNameWithDataEntity();
+_menuOptions.customMenuItems().addEnd(menuItem);
+```
 
 実際にエクスポートする内容を定義するには、**ExportToExcelDataEntityContext** を使用します。 **ExportToExcelDataEntityContext** を指定するメソッドは、インターフェイスまたは拡張機能とイベント サブスクリプションを使用して、**Office で開く** メニューをカスタマイズするかどうかによって異なります。
+
 
 #### <a name="using-interfaces"></a>インターフェイスの使用
 
 インターフェイスを使用している場合、**OfficeIGeneratedWorkbookCustomExporter.getDataEntityContext()** メソッドを実装する必要があります。
 
-    public ExportToExcelDataEntityContext getDataEntityContext(OfficeGeneratedExportMenuItem _menuItem)
+```xpp
+public ExportToExcelDataEntityContext getDataEntityContext(OfficeGeneratedExportMenuItem _menuItem)
+{
+    ExportToExcelDataEntityContext context = null;
+    if (_menuItem.id() == "MyCustomGeneratedExportId")
     {
-        ExportToExcelDataEntityContext context = null;
-        if (_menuItem.id() == "MyCustomGeneratedExportId")
-        {
-            context = ExportToExcelDataEntityContext::construct(tableStr(MyEntity), tableFieldGroupStr(MyEntity, MyFieldGroup);
-        }
-        return context;
+        context = ExportToExcelDataEntityContext::construct(tableStr(MyEntity), tableFieldGroupStr(MyEntity, MyFieldGroup);
     }
+    return context;
+}
+```
 
 #### <a name="using-extensions-and-event-subscriptions"></a>拡張機能とイベント サブスクリプションの使用
 
 拡張機能とイベント サブスクリプションを使用している場合、**OfficeGeneratedExportMenuItem.getDataEntityContext** デリゲートはメニュー項目を **OfficeMenuOptions.customMenuItems()** リストに追加する前にサブスクライブする必要があります。 イベント ハンドラーのコードは、インターフェイスの先行するコードと同様である必要があります。 次の例は、イベント サブスクリプションの実行方法を示しています。
 
-    menuItem.getDataEntityContext += eventhandler(MyForm_Extension::getDataEntityContextHandler);
+```xpp
+menuItem.getDataEntityContext += eventhandler(MyForm_Extension::getDataEntityContextHandler);
+```
 
 ### <a name="adding-a-custom-export-menu-item--specifying-a-document-template"></a>カスタム エクスポート メニュー項目の追加 – ドキュメント テンプレートの指定
 
 明示的にメニュー項目を追加するには、それを **OfficeMenuOptions.customMenuItems()** リストに追加する必要があります。 ドキュメント テンプレート レコードに対応するメニュー項目を追加するには、**OfficeTemplateExportMenuItem** を使用します。
 
-    OfficeTemplateExportMenuItem menuItem = OfficeTemplateExportMenuItem::construct(OfficeAppApplicationType::Excel, "MyTemplateId", "MyCustomTemplateExportId");
-    _menuOptions.customMenuItems().addEnd(menuItem);
+```xpp
+OfficeTemplateExportMenuItem menuItem = OfficeTemplateExportMenuItem::construct(OfficeAppApplicationType::Excel, "MyTemplateId", "MyCustomTemplateExportId");
+_menuOptions.customMenuItems().addEnd(menuItem);
+```
 
 実行時にテンプレートを変更するには、一連の初期フィルターを指定します。 これらのフィルターは、指定されたデータ エンティティのテンプレート内のフィルターを置き換えます。 また、**WorkbookSettingsManager** を使用してフィルターを変更し、多くの設定を指定できます。 次のセクションに例を示します。
 
@@ -188,42 +203,46 @@ ms.locfileid: "2191820"
 
 インターフェイスを使用している場合、**OfficeITemplateCustomExporter.getInitialTemplateFilters()** および **OfficeITemplateCustomExporter.updateTemplateSettings()** メソッドを実装する必要があります。
 
-    public Map getInitialTemplateFilters(OfficeTemplateExportMenuItem _menuItem)
+```xpp
+public Map getInitialTemplateFilters(OfficeTemplateExportMenuItem _menuItem)
+{
+    Map initialFilters = new Map(Types::String, Types::Class);
+    if (_menuItem.id() == "MyCustomTemplateExportId")
     {
-        Map initialFilters = new Map(Types::String, Types::Class);
-        if (_menuItem.id() == "MyCustomTemplateExportId")
-        {
-            // Add an initial filter.
-            ExportToExcelFilterTreeBuilder bldr = new ExportToExcelFilterTreeBuilder(_menuItem.dataEntityName());
-            FilterNode filter = // create the filter…
-            initialFilters.insert(_menuItem.dataEntityName(), filter);
-        }
-        return initialFilters;
+        // Add an initial filter.
+        ExportToExcelFilterTreeBuilder bldr = new ExportToExcelFilterTreeBuilder(_menuItem.dataEntityName());
+        FilterNode filter = // create the filter…
+        initialFilters.insert(_menuItem.dataEntityName(), filter);
     }
-    public void updateTemplateSettings(OfficeTemplateExportMenuItem _menuItem, Microsoft.Dynamics.Platform.Integration.Office.SettingsManager _settingsManager)
+    return initialFilters;
+}
+public void updateTemplateSettings(OfficeTemplateExportMenuItem _menuItem, Microsoft.Dynamics.Platform.Integration.Office.SettingsManager _settingsManager)
+{
+    if (_menuItem.id() == "MyCustomTemplateExportId")
     {
-        if (_menuItem.id() == "MyCustomTemplateExportId")
-        {
-            // Set a new filter.
-            ExportToExcelFilterTreeBuilder bldr = new ExportToExcelFilterTreeBuilder(_menuItem.dataEntityName());
-            FilterNode filter = // create the filter…
-            Excel.WorkbookSettingsManager workbookSettingsManager = _settingsManager as Excel.WorkbookSettingsManager;
-            workbookSettingsManager.SetEntityFilter(entityMetadata.PublicEntityName, filter);
-            // Adjust settings.
-            DataConnectorAppletSettings settings = settingsManager.DataConnectorSettings;
-            DataConnectorAppletUserOptions options = settings.DataOptions;
-            options.RefreshOnOpen = true;
-            options.EnableDesign = false;
-            workbookSettingsManager.DataConnectorSettings = settings;
-        }
+        // Set a new filter.
+        ExportToExcelFilterTreeBuilder bldr = new ExportToExcelFilterTreeBuilder(_menuItem.dataEntityName());
+        FilterNode filter = // create the filter…
+        Excel.WorkbookSettingsManager workbookSettingsManager = _settingsManager as Excel.WorkbookSettingsManager;
+        workbookSettingsManager.SetEntityFilter(entityMetadata.PublicEntityName, filter);
+        // Adjust settings.
+        DataConnectorAppletSettings settings = settingsManager.DataConnectorSettings;
+        DataConnectorAppletUserOptions options = settings.DataOptions;
+        options.RefreshOnOpen = true;
+        options.EnableDesign = false;
+        workbookSettingsManager.DataConnectorSettings = settings;
     }
+}
+```
 
 #### <a name="using-extensions-and-event-subscriptions"></a>拡張機能とイベント サブスクリプションの使用
 
 拡張機能とイベント サブスクリプションを使用している場合、**OfficeTemplateExportMenuItem.getInitialTemplateFilters** および **OfficeTemplateExportMenuItem.updateTemplateSettings** デリゲートはメニュー項目を **OfficeMenuOptions.customMenuItems()** リストに追加する前にサブスクライブする必要があります。 イベント ハンドラーのコードは、インターフェイスの先行するコードと同様である必要があります。 次の例は、イベント サブスクリプションの実行方法を示しています。
 
-    menuItem.getInitialTemplateFilters += eventhandler(MyForm_Extension::getInitialTemplateFiltersHander);
-    menuItem.updateTemplateSettings += eventhandler(MyForm_Extension::updateTemplateSettingsHandler);
+```xpp
+menuItem.getInitialTemplateFilters += eventhandler(MyForm_Extension::getInitialTemplateFiltersHander);
+menuItem.updateTemplateSettings += eventhandler(MyForm_Extension::updateTemplateSettingsHandler);
+```
 
 ## <a name="additional-customizations"></a>追加のカスタマイズ
 次のカスタマイズを使用すると、インターフェイス、拡張機能、およびイベント ハンドラーを使用せずに、**Office で開く** メニューの内容を変更できます。
@@ -240,11 +259,13 @@ ms.locfileid: "2191820"
 
 統合シナリオでは、一部のデータ エンティティを OData サービス経由で公開して使用できるようにする必要があります。 ただし、既定で **Office で開く**メニューでこれらのデータ エンティティが表示されるのは、常に適切とは言えません。 このシナリオでは、**OfficeMenuOmit** コード属性をエンティティ申告に追加できます。
 
-    [OfficeMenuOmit]
-    public class MyEntity extends common
-    {
-        // Entity code…
-    }
+```xpp
+[OfficeMenuOmit]
+public class MyEntity extends common
+{
+    // Entity code…
+}
+```
 
 この変更を行なった後、既定では、エンティティは一致するルート データ ソースのページを持つ **Office で開く**メニューには表示されません。 ただし、エンティティが特定のページに追加される必要がある場合、それを追加するのにその他のカスタマイズ メカニズムを使用できます。
 
