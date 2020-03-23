@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update における新機能および変更された機能
               items:
-                - name: Platform update ホーム ページの新機能および変更された機能
+                - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: Platform update 34 (2020 年 5 月)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (2020 年 4 月)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (2020 年 2 月)
@@ -146,45 +148,71 @@
                   items:
                     - name: Common Data Service を使用したデータ統合の概要
                       href: data-entities/data-integration-cds.md
-                    - name: 同期、双方向の統合
+                    - name: 二重書き込みの統合
                       items:
                         - name: 二重書き込みのホームページ
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: 二重書き込みの概要
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Common Data Service の組織階層
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: 会社統合
+                        - name: 二重書き込みの設定
                           items:
-                            - name: Common Data Services での会社の概念
-                              href: data-entities/dual-write/company-data.md
-                            - name: 会社データを使用したブートストラップ
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: 統合された顧客マスター
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: 統合された元帳
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: 統一された製品経験
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: 仕入先の統合
+                            - name: 二重書き込みのシステム要件
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: 二重書き込みの設定のサポートされているシナリオ
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Lifecycle Services からの二重書き込みの設定
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: アプリ間の概念のマッピング
                           items:
-                            - name: 統合された仕入先マスター
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: 仕入先デザインの切り替え
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: 統合されたサイトおよび倉庫
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: 統合された税マスター
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: 初期同期
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: データ統合のトラブルシューティング
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: 非同期、単一方向の統合
+                            - name: Common Data Service の組織階層
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: 会社統合
+                              items:
+                                - name: Common Data Services での会社の概念
+                                  href: data-entities/dual-write/company-data.md
+                                - name: 会社データを使用したブートストラップ
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: 統合された顧客マスター
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: 成果物統合
+                              items:
+                                - name: 統一された製品経験
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: 統合されたサイトおよび倉庫
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: 財務および税データ
+                              items:
+                                - name: 財務および税参照データへのアクセス
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: 統合された元帳
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: 統合された税マスター
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: 仕入先の統合
+                              items:
+                                - name: 統合された仕入先マスター
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: 仕入先デザインの切り替え
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: 二重書き込みでの見込顧客から入金
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: サービスのための社内資産
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 作業者、職務、および職位の統合
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: 二重書き込みのサポート
+                          items:
+                            - name: Field Service ソリューションと Project Service Automation ソリューションのサポート
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: 初期同期
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: データ統合のトラブルシューティング
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Power Platform データ インテグレーターとの統合
                       items:
                         - name: 見込顧客から入金のシナリオのコンフィギュレーション
                           items:
-                            - name: 見込顧客を現金化
+                            - name: 見込顧客から入金
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Finance and Operations の顧客への Sales の勘定の直接同期
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -332,6 +360,8 @@
                   href: database/import-database.md
                 - name: データベース ポイントインタイム復元
                   href: database/database-point-in-time-restore.md
+                - name: サンドボックス環境への生産データベースのポイントインタイム復元
+                  href: database/database-pitr-prod-sandbox.md
             - name: チュートリアル
               items:
                 - name: トレーニング用の更新
@@ -430,6 +460,8 @@
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
+                    - name: 複数の環境への同じ AD FS インスタンスの再利用
+                      href: deployment/onprem-reuseadfs.md
                 - name: カスタム モデルの開発とオンプレミス環境への配置
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: オンプレミス環境との PowerBI.com の統合
@@ -970,24 +1002,34 @@
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: 方法の作成または更新
               href: lifecycle-services/create-methodology.md
-            - name: ビジネス プロセス モデラー
-              href: lifecycle-services/bpm-overview.md
-            - name: ビジネス プロセス モデラーの業務プロセス ライブラリ
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: ビジネス プロセス モデラー ライブラリの作成、編集、参照
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: ビジネス プロセス モデラーでのタスクの完了
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: BPM ライブラリの活動ダイアグラムでの作業
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: BPM ライブラリと Azure DevOps の同期
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: ビジネス プロセス モデラーのフローチャート
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: カスタムの業務プロセスのビジネス プロセス モデラーへのアップロード
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: ビジネス プロセス モデラー (BPM)
+              items:
+                - name: ビジネス プロセス モデラー (BPM) の概要
+                  href: lifecycle-services/bpm-overview.md
+                - name: ビジネス プロセス モデラーの業務プロセス ライブラリ
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: ビジネス プロセス モデラー ライブラリの作成、編集、参照
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: ビジネス プロセス モデラーでのタスクの完了
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: BPM ライブラリの活動ダイアグラムでの作業
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: BPM ライブラリと Azure DevOps の同期
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: ビジネス プロセス モデラーのフローチャート
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: カスタムの業務プロセスのビジネス プロセス モデラーへのアップロード
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: サービス要求
+              items:
+                - name: クラウドの工程とサービス
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Dynamics サービス エンジニアリング チームへのサービス要求の送信
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: 予定された保守ウィンドウに関するよく寄せられる質問
+                  href: lifecycle-services/planned-maintenance-window-faq.md
             - name: モニタリングおよび診断
               href: lifecycle-services/monitoring-diagnostics.md
             - name: 環境サービスの再開
@@ -1282,14 +1324,8 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
-            - name: Dynamics サービス エンジニアリング チームへの要求の送信
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
             - name: Finance and Operations のテクニカル サポートの設定
               href: lifecycle-services/support-experience.md
-            - name: 予定された保守ウィンドウに関するよく寄せられる質問
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: クラウドの工程とサービス
-              href: lifecycle-services/cloud-operations-servicing.md
             - name: Finance and Operations サポート エクスペリエンスの管理
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: システム管理
