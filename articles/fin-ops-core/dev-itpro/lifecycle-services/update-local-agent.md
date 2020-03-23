@@ -1,7 +1,7 @@
 ---
 title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
-author: sarvanisathish
+author: faix
 manager: AnnBe
 ms.date: 12/19/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 161930d19f3408c2ebecd1b3796c94be69838ed3
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 1647652c0d4fee75dde97a82f66c1871588498bb
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100247"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 

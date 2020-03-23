@@ -18,11 +18,11 @@ ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7cb37732a71a44e5325cb3864a59ee6f477e9246
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983637"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124815"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能とオーバーレイによってカスタマイズする
 

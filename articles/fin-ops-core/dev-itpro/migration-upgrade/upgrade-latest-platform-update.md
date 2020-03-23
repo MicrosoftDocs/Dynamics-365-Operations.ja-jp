@@ -1,6 +1,6 @@
 ---
 title: 最新のプラットフォーム更新プログラムを環境へ適用
-description: このトピックでは、Finance and Operations 環境に最新のプラットフォーム更新プログラムを適用する方法について説明します。
+description: このトピックでは、最新のプラットフォーム更新プログラムを Finance and Operations 環境に適用する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 08/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e4de8fa037679eda8f3bddb2aac2224496380031
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 09860ae24a9f66d9516808a21e1548376d58e738
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812010"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124839"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations 環境に最新のプラットフォーム リリースを適用する方法について説明します。
+このトピックでは、最新のプラットフォーム リリースを Finance and Operations 環境に適用する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-Finance and Operations で、プラットフォームは次のコンポーネントで構成されます。
+Finance and Operations では、プラットフォームは次のコンポーネントで構成されています:
 
 -   Application Object Server (AOS)、データ管理フレームワーク、レポートおよびビジネス インテリジェンス (BI) フレームワーク、開発ツール、および分析サービスなどのバイナリ。
 -   次のアプリケーション オブジェクト ツリー (AOT) パッケージ。
@@ -111,7 +111,7 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 
 #### <a name="example"></a>例
 
-```
+```powershell
 AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
@@ -135,7 +135,8 @@ AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopo
 -   DirectoryFormAdaptor
 
 次の例は、フォーム アダプター モデルを生成する方法を示しています。
-```
+
+```powershell
 xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:\temp\log1.xml"
 
 xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationFoundationFormAdaptor" -xmllog="c:\temp\log2.xml"
@@ -150,15 +151,21 @@ xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFor
 
 配置可能なパッケージのインストール後、以下の手順に従って、新しい Data Management サービスをインストールします。 管理者として**コマンド プロンプト**ウィンドウを開き、.\\DIXFService\\Scripts フォルダーから次のコマンドを実行します。
 
-    msiExec.exe /uninstall {5C74B12A-8583-4B4F-B5F5-8E526507A3E0} /passive /qn /quiet
+```Console
+msiExec.exe /uninstall {5C74B12A-8583-4B4F-B5F5-8E526507A3E0} /passive /qn /quiet
+```
 
 Microsoft SQL Server の統合サービス 2016 (13.0) に接続している場合は、次のコマンドを実行します。
 
-    msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin\2012" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
+```Console
+msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin\2012" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
+```
 
 Microsoft SQL Server の統合サービスの早期リリースに接続している場合は、次のコマンドを実行します。
 
-    msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
+```Console
+msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
+```
 
 ## <a name="apply-the-platform-update-package-on-a-build-environment-platform-update-6-or-earlier"></a>ビルド環境 (プラットフォーム アップデート 6 またはそれ以前) にプラットフォーム更新プログラムのパッケージを適用
 
@@ -167,10 +174,13 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 
 1 つ以上のビルドに対してビルド マシンが使用されているときは、VM を新しいプラットフォーム更新プログラムにアップグレードする前に、メタデータ バックアップ フォルダーからメタデータ パッケージ フォルダーを復元する必要があります。 その後、メタデータのバックアップを削除してください。 これらの手順は、プラットフォームの更新がクリーンな環境に確実に適用されるようにします。 次のビルド プロセスはメタデータ バックアップが存在しないことを検出し、新しいメタデータ バックアップが自動的に作成されます。 この新しいメタデータ バックアップには、更新されたプラットフォームが含まれます。 完全なメタデータ バックアップが存在するかどうかを確認するには、I:\\DynamicsBackup\\Packages (またはダウンロード可能な仮想ハード ディスク \[VHD\] 上の C:\\DynamicsBackup\\Packages) で、BackupComplete.txt ファイルを探してください。 このファイルが存在する場合、メタデータ バックアップが存在し、ファイルにはその作成日時を示すタイムスタンプが含まれています。 展開のメタデータ パッケージ フォルダーをメタデータ バックアップから復元するには、上位の Windows PowerShell **コマンド プロンプト** ウィンドウを開き、以下のコマンドを実行します。 このコマンドは、ビルド プロセスの最初のステップで使用したのと同じスクリプトを実行します。
 
-    if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
+```powershell
+if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
+```
 
 完全なメタデータ バックアップが存在しない場合、コマンドは新しいバックアップを作成します。 このコマンドも ファイルをメタデータ バックアップから展開のメタデータ パッケージ フォルダーに復元する前に、Finance and Operations 配置サービスおよびインターネット インフォメーション サービス (IIS) を停止します。 次の例のような出力が表示されます。 
-```
+
+```powershell
 6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Finance and Operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
 ```
 
@@ -183,4 +193,4 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
+[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)

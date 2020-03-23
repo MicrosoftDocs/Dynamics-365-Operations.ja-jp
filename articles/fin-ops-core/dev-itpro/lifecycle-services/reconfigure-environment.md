@@ -1,7 +1,7 @@
 ---
 title: 新しいプラットフォームまたはトポロジを使用するために環境を再構成
 description: このトピックでは、新しいプラットフォームまたはトポロジを使用して環境を再構成する方法と、既存の環境の構成を更新する方法について説明します。
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5f6b153aeae945a1e2cb0e87d18f440a159ccf11
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e1801991077d65b2aa331ed83871bfda6df103f6
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100246"
 ---
 # <a name="reconfigure-environments-to-take-a-new-platform-or-topology"></a>新しいプラットフォームまたはトポロジを使用するために環境を再構成
 

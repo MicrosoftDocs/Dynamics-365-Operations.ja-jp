@@ -1,7 +1,7 @@
 ---
 title: 予定された保守ウィンドウのよく寄せられる質問
 description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6154
 ms.search.region: Global
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 581356bff68b25f49f215aac71bd79b2bda1df6c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 7e65b1cef84c8ea101993447dd68b99c3ede109b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626121"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117402"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: Finance and Operations アプリの顧客用の Lifecycle Services (LCS)
-description: この記事は、現在のバージョンの Finance and Operations アプリにサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。
-author: manalidongre
+title: Finance and Operations アプリの顧客用 Lifecycle Services (LCS)
+description: この記事は、Finance and Operations アプリの現在のバージョンにサインアップしたお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。
+author: angelmarshall
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.scope: Operations
 ms.custom: 84711
 ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
 ms.search.region: Global
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81be1517e3d866da57b731f9b6fb5d890efcdcc0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a55dcedbc099063e8824d2a2fd9081d56d7d0c6
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183202"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117410"
 ---
-# <a name="lifecycle-services-lcs-for-finance-and-operations-apps-customers"></a>Finance and Operations アプリの顧客用の Lifecycle Services (LCS)
+# <a name="lifecycle-services-lcs-for-finance-and-operations-apps-customers"></a>Finance and Operations アプリの顧客用 Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、現在のバージョンの Finance and Operations アプリにサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。 
+この記事は、Finance and Operations アプリの現在のバージョンにサインアップしたお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。 
 
 ## <a name="lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps"></a>Finance and Operations アプリの現在のバージョンの LCS ワークスペース
 
-Finance and Operations アプリの現在のバージョンにサインアップするとき、サブスクリプションには実装プロジェクト ワークスペースが含まれます。 サービスを有効にした後、テナント管理者はテナント アカウントを使用して <https://lcs.dynamics.com> にサインインする必要があります。 組織のプロジェクト ワークスペースが自動で作成されます。 ワークスペースには、次の要素が含まれます。
+Finance and Operations アプリの現在のバージョンにサインアップすると、サブスクリプションに実装プロジェクト ワークスペースが含まれます。 サービスを有効にした後、テナント管理者はテナント アカウントを使用して <https://lcs.dynamics.com> にサインインする必要があります。 組織のプロジェクト ワークスペースが自動で作成されます。 ワークスペースには、次の要素が含まれます。
 
 -   選択したオファーに基づいて、機能を有効化
 -   Microsoft が管理および配置する環境
@@ -63,7 +63,7 @@ Finance and Operations アプリの現在のバージョンにサインアップ
 説明は、特定の方法論のタスクまたはフェーズで期待されることを理解するのに役立ちます。 方法の説明を展開して各タスクに関する情報を入手し、終了したときに説明を折りたたむことができます。 タスクやフェーズの履歴は、タスクやフェーズが完了したときや再開されたときを示します。 ユーザーがプロジェクト マネージャーである場合は、この情報は実装に必要な高度なタスクの概要を把握する上で役に立ちます。 [![展開されたタスクの履歴および方法の説明](./media/2.jpg)](./media/2.jpg)
 
 ## <a name="subscription-estimator"></a>サブスクリプション見積もりツール
-サブスクリプション見積もりツールを使用して、現在のバージョンの Finance and Operations アプリに対するサブスクリプション要件を評価できます。 サブスクリプション見積もりツールを使用するには、Microsoft Excel ブックの使用状況プロファイルをダウンロードします。 次に、ワークブックで、次のワークシートを記入してください。
+サブスクリプション試算ツールを使用して、Finance and Operations の現在のバージョンに対するサブスクリプション要件を評価できます。 サブスクリプション見積もりツールを使用するには、Microsoft Excel ブックの使用状況プロファイルをダウンロードします。 次に、ワークブックで、次のワークシートを記入してください。
 
 -   配置の詳細
 -   インスタンス特性

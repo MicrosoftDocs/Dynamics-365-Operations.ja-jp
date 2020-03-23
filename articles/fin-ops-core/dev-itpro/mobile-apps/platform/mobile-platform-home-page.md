@@ -3,7 +3,7 @@ title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 061e66b8d7830c5779dfff5dd6d283e98074ce2b
-ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
+ms.openlocfilehash: 6e2601f863bc35e10b3e83d64efb6022c8524d43
+ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "2975210"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117159"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -97,7 +97,7 @@ ms.locfileid: "2975210"
 2. Android デバイスで、Finance and Operations アプリの Android デバッグ apk をインストールします。
     - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
     - Finance and Operations アプリのアンインストール - Finance and Operations アプリの以前のバージョンがアンインストールされていることを確認します。
-    - apk ファイルのダウンロード - デバイスのブラウザーから、最新の [Github 上の Finance and Operations Android デバッグ apk](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
+    - apk ファイルのダウンロード - デバイスのブラウザーから、最新の [GitHub 上の Finance and Operations Android デバッグ apk](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
     - Finance and Operations apk ファイルのインストール - apk ファイル経由で Finance and Operations アプリのインストールを確認します。
     - デバイスのデバッグ Finance and Operations アプリを実行し、サインインします。
 
@@ -166,6 +166,9 @@ Finance and Operations (モバイル クライアント) アプリでは、埋�
 - これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
 
 MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
+
+### <a name="intune-support-and-conditional-access"></a>Intune サポートと条件付きアクセス
+Finance and Operations (モバイル クライアント) アプリには Microsoft intune ポリシーが実装されていないため、Intune は最初はサポートされません。 ただし、このアプリは無料で [Intune ](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) に追加して、[Intune を持つ条件的なアクセス](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune) を使用するようなシナリオをサポートすることができます。
 
 ### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
 新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。

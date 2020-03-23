@@ -3,7 +3,7 @@ title: データベース移動 API - 認証
 description: このトピックでは、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: a447b29142b40bf7618fdbce2202f2ee8f732bed
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 89b26f1260fd0cc95b8d50cb797f54714c5e5ccc
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573568"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113723"
 ---
 # <a name="authentication"></a>認証
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 このトピックでは、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 

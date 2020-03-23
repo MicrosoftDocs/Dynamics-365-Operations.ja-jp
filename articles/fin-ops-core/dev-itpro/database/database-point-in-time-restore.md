@@ -3,7 +3,7 @@ title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fea4a8e570b7aa321a190278707d6c81023b533
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9a5bc906a8bccf92a0d16bacd276ae4219e223ef
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003614"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113601"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
@@ -51,8 +51,6 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 
 ### <a name="point-in-time-restore-breaks-the-chain-of-available-restore-points"></a>ポイントインタイム復元により利用可能な復元ポイントのチェーンが壊れる
 復元データベース処理は、常に前の時点のスナップショットに基づいて新しいデータベースを作成します。  このため、新しいデータベースには、復元の履歴はありませんが、今後使用される新しい復元ポイントを取得し始めます。 つまり、ポイントインタイム復元を実行した後、同じ復元日時を使って復元することはできなくなります。  
-
-今後、Lifecycle Services チームは、削除されたデータベースの復元履歴を活用することで時点でポイントインタイム復元を向上させるよう努めます。  これによって、破壊試験などのシナリオで同じ時点に継続的に復元できるようになります。  これは、LCS の今後のリリースで修正されます。
 
 ### <a name="restore-is-denied-for-environments-running-platform-update-3-or-earlier"></a>プラットフォーム アップデート 3 以前を実行する環境で復元が拒否される
 環境でプラットフォーム更新 3 以前を実行している場合は、データベース復元の処理を実行することはできません。 詳細は、[現在サポートされているプラットフォーム更新の一覧](..//migration-upgrade/versions-update-policy.md)を参照してください。

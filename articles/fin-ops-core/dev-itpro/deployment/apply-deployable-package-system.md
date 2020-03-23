@@ -1,7 +1,7 @@
 ---
 title: クラウド環境へ更新プログラムを適用
 description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations, Retail
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2400eb172d34a5949aab7fa2752bebfd91a7f3d5
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 79bc95d58f986e8242f44e0b88dbd6a76ddb4006
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057951"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096739"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 

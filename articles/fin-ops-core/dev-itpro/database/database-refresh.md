@@ -3,7 +3,7 @@ title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a4bc5c202cbf7588d6433bc3c78c9dd37642f4d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b3f0e19a218f950f9524e5431e9f5a74056ccf0f
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003613"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113675"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -51,15 +51,14 @@ ms.locfileid: "3003613"
 
 * LogisticsElectronicAddress テーブル内の電子メール アドレス。
 * BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。
-* SysEmailSMTPPassword テーブルの SMTP パスワード。
 * SysEmailParameters テーブルの SMTP 中継サーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
 * DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
-* PersonnellIntegrationConfiguration テーブルのの接続文字列。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
+* 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) はUAT環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチジョブも有効になっているため、無効な統合メッセージが送信されてしまう可能性もあるため、管理者がポストリフレッシュクリーンアップを行う前にユーザーが有効化されてしまう可能性があります。
 
@@ -73,7 +72,7 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 ### <a name="conditions-of-a-database-refresh"></a>データベース更新の条件
 データベース更新の操作の要件および条件の一覧を次に示します。
 
-- 更新では、元のターゲット データベースでの削除が実行されます。 ポイントインタイム復元が実行できるように、階層リンクが追加されます。 (この条件は、2019 年 10 月以降に実行されるすべての更新に適用されます。)
+- 更新処理では、実行対象のデータベースで削除が実行されます。
 - ターゲット環境は、データベースのコピーがターゲット サーバーに達するまで使用可能です。 その時点以降は、更新プロセスが完了するまで、ターゲット環境はオフラインになります。
 - リフレッシュは、アプリケーションおよび Financial Reporting データベースにのみ影響します。
 - Azure blob storage のドキュメントは、ある環境から別の環境にコピーされません。 つまり、添付されたドキュメント処理ドキュメントとチームプレートは変更されず、現在の状態にとどまります。
@@ -81,14 +80,16 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは完全に処理され復元が開始される前にターゲット システムで停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 これにより、いずれかのシステムから Azure ストレージにオーファン ファイルが存在しないことが保証されます。 これは、データベースがターゲット環境にリストアされた後にオーファン ファイルを処理できないため重要です。 復元後、統合ジョブを再開することができます。
 - LCS でプロジェクト所有者または環境マネージャーのロールを持つユーザーは、すべての非実稼働環境の SQL とマシンの資格情報にアクセスできます。
+- データベースは同じ Azure の地理的領域でホストされている必要があります。
+- 実行元の環境で割り当てられたデータベースの容量は、実行対象の環境のデータベースの最大容量よりも小さくする必要があります。
 
 ## <a name="steps-to-complete-after-a-database-refresh-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース更新後に実行する手順
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="refresh-is-denied-for-environments-running-platform-update-11-or-earlier"></a>プラットフォーム アップデート 11 以前を実行する環境で更新が拒否される
-現在、環境がプラットフォーム更新プログラム 11 またはそれ以前を実行している場合は、データベースの更新プロセスを完了することはできません。 2019 年 12 月以降では、プラットフォーム更新プログラム 20 またはそれ以前に対してプロセスは完了されません。 詳細については、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md) を参照してください。
+### <a name="refresh-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、更新処理は拒否されます
+現在、環境がプラットフォーム更新プログラム 20 またはそれ以前を実行している場合は、データベースの更新プロセスを完了することはできません。 詳細については、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md) を参照してください。
 
 ### <a name="incompatible-version-of-financial-reporting-between-source-and-target-environments"></a>ソース環境とターゲット環境間での財務報告の互換性のないバージョン
 実行対象とする環境の財務報告のバージョンが実行元の環境よりも古い場合は、データベースの更新プロセス (セルフサービスまたはサービス要求経由) を正常に完了できません。 この問題を解決するには、両方の環境で財務報告が最新バージョンとなるように更新を行ってください。

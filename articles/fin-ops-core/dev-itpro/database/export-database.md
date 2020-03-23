@@ -3,7 +3,7 @@ title: データベースのエクスポート
 description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 66d38999151cbc2954fc30c3f922d0eab2cea62d
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: b790f96ce193e23c0044904d94aebb8968e24205
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572678"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113600"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -44,14 +44,14 @@ ms.locfileid: "2572678"
 
 * LogisticsElectronicAddress テーブル内の電子メール アドレス。
 * BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。
-* SysEmailSMTPPassword テーブルの SMTP パスワード。
 * SysEmailParameters テーブルの SMTP 中継サーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
 * DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
-* PersonnellIntegrationConfiguration テーブルの接続文字列
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
+* すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
+* 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
 
 ### <a name="known-issues"></a>既知の問題
 

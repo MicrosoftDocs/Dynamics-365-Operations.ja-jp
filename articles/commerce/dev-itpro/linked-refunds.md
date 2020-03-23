@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: eb3d2d9cf6aaa6e8aacf6e0ffaff2d67eae9709d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: c01045f63752eee991f821a37591893cd158d477
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004567"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113748"
 ---
 # <a name="linked-refunds--refunds-of-previously-approved-and-confirmed-transactions"></a>リンクされた払戻 – 以前に承認および確認済みのトランザクションの払戻
 
@@ -37,13 +37,14 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 リンクされた払戻を使用することで、元のトランザクション中に承認されたカードのみに払戻が処理されるようにして、小売業者はリスクを大幅に軽減できます。 承認されていないカード残高の転送を防止するために、システムは確認され承認されたカード トークンを使用して払戻を処理するようレジ担当者に促すことができます。 払戻に元の支払い方法を使用することで小売企業はカード認証コストを削減できます。
 
 ## <a name="prerequisites"></a>必要条件
-[支払方法の設定](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods) 
 
-[オムニ チャネル支払の設定](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-channel-payments)
+[支払方法の設定](../payment-methods.md) 
+
+[オムニ チャネル支払の設定](../omni-channel-payments.md)
 
 ### <a name="additional-setup"></a>追加の設定
 
-標準の Adyen コネクタ実装を使用していない顧客は、クレジットカードのトークン化をサポートするコネクタを設定する必要があります。 このトピックで説明されるすべてのシナリオは、コマースで提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。
+標準の Adyen コネクタ実装を使用していない顧客は、クレジットカードのトークン化をサポートするコネクタを設定する必要があります。 このトピックで説明されるすべてのシナリオは、コマースで提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。
 
 ## <a name="turn-on-the-linked-refunds-functionality"></a>リンクされた払戻の機能を有効にする
 
@@ -96,5 +97,5 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 ## <a name="related-topics"></a>関連トピック
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [支払に関するよく寄せられる質問](payments-retail.md)
+- [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)

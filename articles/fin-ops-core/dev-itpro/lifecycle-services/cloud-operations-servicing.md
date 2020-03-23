@@ -1,7 +1,7 @@
 ---
 title: クラウドの工程とサービス
-description: Finance and Operations アプリは、管理サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
-author: manalidongre
+description: Finance and Operations アプリはマネージド サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
+author: laneswenka
 manager: AnnBe
 ms.date: 10/03/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d51f80b8bdaeb13a02436d04e659697e32f911a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 01bd06b1cad956ae50698a86095f4fbe2564d9f4
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811699"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096908"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -31,13 +31,13 @@ ms.locfileid: "2811699"
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
-クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
+クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理センターである Lifecycle Services (LCS) には、管理している環境を正確に表示することを保証する一連の監視ツールと診断ツールが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
 Go-Live の後、実稼働環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
 
 ### <a name="update-types"></a>更新タイプ
-**Dynamics 365 for Finance and Operationsバージョン 8.0 (2018) 以前**の顧客については、次の更新プログラムが提供されています。
+**Dynamics 365 for Finance and Operationsバージョン 8.0 (2018 年 4 月) あるいはそれ以前** に存在する顧客については、次の更新プログラムが提供されています。
 
 - **プラットフォームの更新プログラム** - すべてのプラットフォームの修正に関する 1 つの累積的なバイナリ更新。
 - **アプリケーション修正プログラム** – より細かい粒度の細かい X++ 更新プログラムとしてリリースされたアプリケーションの修正プログラム。
@@ -72,7 +72,7 @@ Microsoft は環境のインフラストラクチャの管理について責任�
     - アプリケーションの更新プログラムで、修正プログラムを含むモデルのバージョンを確認します。 たとえば、アプリケーション スイートで修正があった場合、アプリケーション スイートのバージョンが更新されます。
 
 ## <a name="upgrade-your-environment"></a>環境のアップグレード
-最新バージョンにアップグレードする方法の詳細については、 [Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) および [新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+最新バージョンにアップグレードする方法の詳細については、[Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) と [Finance and Operations ホームページの新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
 
 ## <a name="environment-data-management"></a>環境データ管理
 これらは、ある環境から別の環境にデータベースをコピーする機能や、データベースを以前の状態に復元する機能など、データベースを管理するためのオプションです。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。

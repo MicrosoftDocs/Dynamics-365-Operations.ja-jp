@@ -1,6 +1,6 @@
 ---
-title: POS のカスタム通知の表示
-description: このトピックでは、販売時点管理 (POS) でカスタム通知を追加する方法について説明します。
+title: POS でカスタム通知を表示する
+description: このトピックでは、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/17/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c775c8e39e180ee50fb60faf2ac590eaaa4fb3a4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: aa0f28d8ea73ee81693803816e2419caa645e908
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004582"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091809"
 ---
-# <a name="show-custom-notifications-in-pos"></a>POS のカスタム通知の表示
+# <a name="show-custom-notifications-in-pos"></a>POS でカスタム通知を表示する
 
 [!include [banner](../includes/banner.md)]
 

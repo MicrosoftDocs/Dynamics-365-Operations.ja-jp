@@ -1,5 +1,5 @@
 ---
-title: データ統合方法 (インポート/エクスポート) の選択
+title: データ統合戦略の選択
 description: このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 author: Sunil-Garg
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 061f506494a4cf9836f737808426f38c5fa4ce08
-ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
+ms.openlocfilehash: 178c0528c9139b607412e9d95366e539c4703cad
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "2947493"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112227"
 ---
-# <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
+# <a name="choose-a-data-integration-strategy"></a>データ統合戦略の選択
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,12 +31,14 @@ ms.locfileid: "2947493"
 このトピックでは、統合パターン、統合シナリオ、統合ソリューション、およびベストプラクティスについて説明します。 ただし、すべての統合パターンを使用または設定する方法に関する技術詳細は含まれません。 また、サンプル統合コードも含まれていません。
 
 > [!NOTE]
-> パターンを選択にあたってガイダンスを示し、シナリオについて説明する際には、データのボリューム番号について言及されます。 これらの番号は、パターンを測定するためだけに使用されるものであり、ハードシステムの機能限界を意味するものではありません。 絶対数は、実稼働環境ではさまざまな要因によって変わってきます。コンフィギュレーションはこのシナリオにおけるただ1つの側面に過ぎません。 
+> パターンを選択にあたってガイダンスを示し、シナリオについて説明する際には、データのボリューム番号について言及されます。 これらの番号は、パターンを測定するためだけに使用する必要があり、ハードシステムの限界を意味するものではありません。 絶対数は、実稼働環境ではさまざまな要因によって変わってきます。コンフィギュレーションはこのシナリオにおけるただ1つの側面に過ぎません。 
 
 次のテーブルに、使用可能な統合パターンを示します。
 
 | パターン                       | ドキュメント |
 |-------------------------------|---------------|
+| 二重書き込み                    | [二重書き込みの概要](dual-write/dual-write-home-page.md) |
+| クラシック データの統合      | [クラシック データ統合の概要](data-integration-cds.md) |
 | OData                         | [データ プロトコル (OData) を開く](odata.md) |
 | バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ管理パッケージ REST API](data-management-api.md) |
 | 顧客サービス                | [顧客サービスの開発](custom-services.md) |
@@ -45,6 +47,18 @@ ms.locfileid: "2947493"
 
 > [!NOTE]
 > オンプレミス配置の場合、唯一サポートされる API は [データ管理パッケージ REST API](data-management-api.md) です。 これは、7.2、platform update 12 ビルド 7.0.4709.41184 で現在利用可能です。
+
+## <a name="dual-write-vs-classic-data-integration-patterns"></a>二重書き込み と クラシック データ統合のパターン
+
+二重書き込みにより、Dynamics 365 と Finance and Operations アプリケーションのモデル駆動型アプリケーション間で、同期、双方向、ほぼリアルタイムのエクスペリエンスが可能です。 データ同期は、ほとんどまたはまったく介入を伴うことなく行われ、エンティティに対する作成、更新、および削除アクションによってトリガーされます。 二重書き込みは、Dynamics 365 アプリケーションにまたがる対話型業務シナリオに適しています。
+
+クラシック データ統合により、Dynamics 365 と Dynamics 365 Finance and Operations アプリケーションのモデル駆動型アプリケーションの間で非同期および単一方向のデータ同期エクスペリエンスが可能です。 IT管理者主導のエクスペリエンスであり、データ同期ジョブを特定の頻度で実行するようにスケジュールする必要があります。 クラシック データの統合は、Dynamics 365アプリケーション間で大量のデータの入出力を伴う業務シナリオに適しています。
+
+| パターン                       | タイミング                        | バッチ | テクノロジ | Finance and Operations アプリ | Dynamics 365 モデル駆動型アプリ |
+|-------------------------------|-------------------------------|-------|---|
+| 二重書き込み             | 同期<br>双方向   | 無    | OData | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 | 
+| クラシック データの統合 | 非同期、単一方向 | 有   | DIXF | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 |
+
 
 ## <a name="synchronous-vs-asynchronous-integration-patterns"></a>同期および非同期の統合パターン
 
@@ -91,6 +105,53 @@ ms.locfileid: "2947493"
 
 非同期パターンを使用するときは、呼び出し元には、スケジューリング呼び出しが成功したかどうかを示す応答がすぐ表示されます。 呼び出し元は、応答内のエラーを処理します。 スケジューリングが完了したら、データのインポートまたはエクスポートのステータスは、呼び出し元にプッシュされません。 呼び出し元は、対応するインポートまたはエクスポート処理の結果をポーリングし、それに応じてエラーを処理する必要があります。
 
+## <a name="typical-scenarios-and-patterns-that-use-dual-write"></a>二重書き込みを使用する一般的なシナリオとパターン 
+
+二重書き込みを使用する一般的なシナリオを次に示します。
+
+### <a name="enable-customer-service-representative-to-facilitate-change-of-address-for-finance-and-operations-customers"></a>顧客サービス担当者が Finance and Operations の顧客の住所変更を容易にできるようにする
+
+顧客が移転し、請求先住所と送付先住所の情報を変更したいとします。 この顧客は、顧客サポート担当者に連絡して、住所の変更を依頼します。 顧客サポート担当者が電話を受け、顧客の請求先住所と送付先住所を変更します。
+
+| 意思決定                    | 情報              |
+|-----------------------------|--------------------------|
+| リアルタイムな日付が必要ですか。 | 有                      |
+| ピーク データ量            |                          |
+| 頻度                   | アドホック                   |
+
+#### <a name="recommended-solution"></a>推奨される解決策
+このほぼリアルタイムのデータ同期のシナリオでは、二重書き込みで実装するのが最適です。
+
+- 顧客情報は、Finance and Operations アプリから取得されます。
+- 顧客が顧客サポートに電話し、請求先住所と送付先住所の情報を変更するよう依頼します。
+- 顧客サポート担当者は、Dynamics 365 Customer Service の顧客レコードを取得します。
+- 顧客サポート担当者は、請求先住所と送付先住所を更新してデータを保存します。
+- 新しい請求先住所と送付先住所は、リアルタイムで Finance and Operations アプリに同期されます。
+
+### <a name="sales-representatives-can-change-customer-credit-limits-without-logging-into-a-finance-and-operations-app"></a>販売担当者は、Finance and Operations アプリにログインすることなく、顧客の与信限度額を変更できます
+
+顧客には $2,000 の与信限度額があり、$5,000 に引き上げたいと考えています。 この顧客は、顧客サポートに電話し、増加を依頼します。 チケットが、販売部門に割り当てられます。 販売責任者は、依頼を検討し、顧客の支払履歴を確認し、顧客が与信限度額の増加の資格があると判断します。 販売責任者は依頼を承認し、チケットに応答します。 顧客は与信限度額 $5,000 の承認を通知する電子メールを受け取ります。
+
+| 意思決定                    | 情報              |
+|-----------------------------|--------------------------|
+| リアルタイムな日付が必要ですか。 | 有                      |
+| ピーク データ量            |                          |
+| 頻度                   | アドホック                   |
+
+
+#### <a name="recommended-solution"></a>推奨される解決策
+
+このシナリオでは、二重書き込みで実装するのが最適です。
+
+- 顧客は顧客サポートに電話し、与信限度額を $2,000 から $5,000 に引き上げたいと考えています。
+- 顧客サポート担当者が Dynamics 365 Customer Service でチケットを作成します。
+- このチケットが、販売部門に割り当てられます。
+- 販売部門の販売担当者が依頼を確認して、承認します。
+- この結果、Dynamics 365 Sales で顧客の与信限度額が $5,000 に引き上げられました。 
+- Finance and Operations アプリの与信限度額が $5,000 に更新されます。
+- 販売担当者は、チケットに応答して解決します。 
+- 顧客は、与信限度額の引き上げに関する電子メールを受け取ります。
+
 ## <a name="typical-scenarios-and-patterns-that-use-odata-integrations"></a>OData 統合を使用する一般的なシナリオとパターン
 
 OData 統合を使用する典型的なシナリオを次に示します。
@@ -100,7 +161,7 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 ### <a name="create-and-update-product-information"></a>製品情報の作成および更新
 
-あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 この製造元は、生産情報をオンプレミス アプリケーションから Finance and Operations に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
+あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 このメーカーは、生産情報をオンプレミス アプリケーションから Finance and Operations に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
 
 | 意思決定                    | 情報              |
 |-----------------------------|--------------------------|
@@ -114,14 +175,14 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 このシナリオは、OData サービス エンドポイントを使用して、Finance and Operations で製品情報を作成および更新することによって最適に実装されます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 統合に必要なすべてのエンティティを決定します。
 - OData サービス エンドポイントが同じエンティティのセットに対して使用可能であることを確認します。
 
 サード パーティ製アプリケーション:
 
-- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために Finance and Operations への OData 呼び出しが行われます。
+- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために Finance and Operations に対して OData 呼び出しが行われます。
 
 ### <a name="read-the-status-of-customer-orders"></a>客注文のステータスを読み取る
 
@@ -137,7 +198,7 @@ Finance and Operations:
 
 このシナリオは、OData サービス エンドポイントを使用して、注文ステータス情報を読み取ることによって最適に実装されます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 注文のステータス情報を読むために必要なエンティティを決定します。
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
@@ -160,7 +221,7 @@ Finance and Operations:
 
 このシナリオは、OData アクションを使用して実装できます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 統合に必要なエンティティを決定する
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
@@ -191,7 +252,7 @@ PLM ソリューション:
 
 このシナリオは、カスタム サービスを使用して実装できます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 特定のアイテムの現物手持在庫を計算するカスタム サービスを作成します。
 
@@ -222,7 +283,7 @@ Finance and Operations:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。
@@ -245,7 +306,7 @@ Finance and Operations:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations:
+Finance and Operations の場合:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。

@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.openlocfilehash: da8d8e25ab76bff3a2f55e1673f0efbd14ebc7b5
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029831"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124843"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 

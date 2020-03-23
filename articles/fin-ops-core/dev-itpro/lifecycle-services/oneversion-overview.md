@@ -1,7 +1,7 @@
 ---
 title: 1 つのバージョンのサービス更新の概要
 description: このトピックでは、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
-author: meeram
+author: angelmarshall
 manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 3fe81c82c06a911c0e245d4058e46e58d49b76d1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a00b7761c061a8ee31c05736c0d3f6ae6780de22
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812053"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117407"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 

@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.9 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 39c83340b190ff1ebfb55d256a07d99ec8aa0157
-ms.sourcegitcommit: c0edf2f59d40bda784ea2472c21293c4a450770e
+ms.openlocfilehash: 26fcb1c2fc1c8314e88d72753ec2039c6a833b5c
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029203"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123959"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1009-april-2020"></a>Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -35,21 +35,21 @@ ms.locfileid: "3029203"
 - **一般提供 (自己更新):** 2020 年 3 月
 - **自動更新:** 2020 年 4 月
 
-このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/) の追加情報にリンクしています。
+このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) の追加情報にリンクしています。
 
-- [会計年度の初めに受領番号をリセットできるようにする](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [チャネルに基づくサポート料金の自動請求の向上](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
-- [店舗における入庫/出庫の操作の改善](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
-- [返品の優先支払方法を設定する](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
-- [一括 URL リダイレクトのサポート](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
-- [第一線の作業者とマネージャー向けのHQとPOSのタスク管理](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
+- [会計年度の初めに受領番号をリセットできるようにする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
+- [チャネルに基づくサポート料金の自動請求の向上](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [店舗における入庫/出庫の操作の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
+- [返品の優先支払方法を設定する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
+- [一括 URL リダイレクトのサポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
+- [第一線の作業者とマネージャー向けのHQとPOSのタスク管理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
 
 
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="platform-update-33"></a>プラットフォーム update 33
 
-Microsoft Dynamics 365 Commerce 10.0.9 には、プラットフォーム更新プログラム 33 が含まれています。 詳細については、[プラットフォーム更新プログラム 33 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md)を参照してください。
+Microsoft Dynamics 365 Commerce 10.0.9 には、プラットフォーム更新プログラム 33 が含まれています。 詳細については、[プラットフォーム更新プログラム 33 の新機能と変更点](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md)を参照してください。
 
 
 ### <a name="bug-fixes"></a>バグ修正 
@@ -60,7 +60,7 @@ Microsoft Dynamics 365 Commerce 10.0.9 には、プラットフォーム更新�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 

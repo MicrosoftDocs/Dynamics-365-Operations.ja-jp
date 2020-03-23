@@ -3,7 +3,7 @@ title: Typescript および小売販売時点管理 (POS) の C# プロキシ
 description: このトピックでは、コマース プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 9293a218baffe128745cf7fe43fc16b952f9eea5
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 29c16b8bcf308551c662aa323c6fecc6ac31d531
+ms.sourcegitcommit: 57f6e5569fcc6bde097bd2528fa5eb429bd53338
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070774"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114722"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -47,23 +47,23 @@ Typescript プロキシを生成する手順と C# プロキシを生成する�
 ## <a name="generate-the-typescript-proxy"></a>Typescript プロキシを生成します
 
 > [!IMPORTANT]
-> 次の手順は Microsoft Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 Finance にのみ適用されます。
+> 次の手順は Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 Finance にのみ適用されます。
 
-Retail SDK\\Reference\\CommerceProxyGenerator.<version_number> フォルダーの CommerceProxyGenerator.exe ファイルを使用して、タイプスクリプト プロキシを生成します。
+Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools フォルダーから CommerceProxyGenerator.exe ファイルを使用して、POS の typescript プロキシを生成します。
 
 1. プロキシを生成する前に、カスタマイズした Commerce Scale Unit、CRT、およびその他の依存ライブラリを、**Retail SDK\\Reference** フォルダにコピーします。
-2. 管理者モードでコマンド プロンプトを開き、**...\\Retail SDK\\参照** フォルダーに移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
+2. 管理者としてコマンド プロンプト ウィンドウを開き、**...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools** フォルダへ移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
 
     ```Console
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
 
 > [!NOTE]
-> 次の場所から Microsoft.Dynamics.Retail.RetailServerLibrary.dll ファイルを使用します: \RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.<version_number>\build\
+> \RetailSDK\References\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.<version_number>\build から Microsoft.Dynamics.Retail.RetailServerLibrary.dll ファイルを使用します。
 
 ```Console
 Ex:
-CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
+CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.9.21.20042.5\\build\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
 ```
 
 実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Commerce Scale Unit 拡張ライブラリの名前に置き換えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。

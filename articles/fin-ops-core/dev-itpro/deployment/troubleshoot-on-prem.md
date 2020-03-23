@@ -1,9 +1,9 @@
 ---
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 01/31/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: a80553dbec81798b94f4d042564550c86560bc55
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 024c1f6a0194ec6ba47e444d816c08876aab5e6f
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033009"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124820"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -495,7 +495,7 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
-## <a name="restartapplications"></a>アプリケーション (AOS など) を再起動
+## <a name="restart-applications-such-as-aos"></a><a name="restartapplications"></a>アプリケーション (AOS など) を再起動
 
 Service Fabric で、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード**の順に展開します。 省略記号ボタン (**...**) を選択し、**再起動**を選択します。 求められたらコードを入力します。
 
@@ -662,7 +662,7 @@ Category does not exist.
 
 **理由:** ゲートウェイで必要となるパフォーマンス カウンターへのポインターが破損している可能性があります。
 
-**解決策:** ゲートウェイが正常でないすべての AOS ノードの、管理者として実行されているコマンド プロンプトで lodctr /R を実行します。 パフォーマンス カウンターを再構築できないというエラーが表示された場合は、コマンドを再実行してください。 
+**解決 :** ゲートウェイが正常でないすべての AOS ノードの、管理者として実行されているコマンド プロンプト ウインドウで **lodctr /R** を実行します。 パフォーマンス カウンターを再構築できないことを示すエラーメッセージが表示された場合は、コマンドを再度実行します。 
 
 ## <a name="management-reporter"></a>Management Reporter
 
@@ -693,7 +693,7 @@ Category does not exist.
 
 新しいフォルダーを表示するには、イベント ビューアーを終了して、再表示する必要があります。 追加の詳細を表示するには、もう一度環境を配置する必要があります。
 
-###  <a name="FREntityFramework"></a> ファイルまたはアセンブリ EntityFramework を読み込めませんでした
+###  <a name="could-not-load-file-or-assembly-entityframework"></a><a name="FREntityFramework"></a> ファイルまたはアセンブリ EntityFramework を読み込めませんでした
 
 **問題**: ローカル エージェント バージョン 2.3.1 以降を実行していて、プラットフォーム更新プログラム 29 またはそれ以前を含むパッケージを展開しているときに、イベント ログで次の stacktrace を受け取りました。
 
@@ -755,7 +755,7 @@ AddAXDatabaseChangeTracking イベントのみを受け取った場合は、`htt
 
 **理由:** この問題は、通常正しくないアドレスまたは SOAP アクションによって引き起こされます。
 
-**手順:** URL を手動で開き、アドレスにアクセスできることを確認します。 詳細については、イベント ビューアーで [InnerException] のテキストが存在するかどうか確認してください。
+**手順:** URL を手動で開き、アドレスにアクセスできることを確認します。 詳細については、イベント ビューアーで "InnerException" のテキストが存在するかどうか確認してください。
 
 ### <a name="error-on-importdefaultreports"></a>ImportDefaultReports のエラー
 
@@ -1176,14 +1176,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 ### <a name="configure-ad-fs-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>AD FS のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configureadfs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs) で記載されたものとして)
 
-- すでに完了しているので、スクリプト 1、スクリプト 2、スクリプト 3 はスキップできます。
-- 新しい **hosturl** 値を使用している場合でも、.\\Publish-ADFSApplicationGroup.ps1 スクリプトは失敗します。 したがって、この手順を手動で完了する必要があります。
-
-    1. AD FS マネージャーで、**AD FS** \> **アプリケーション グループ**に移動し、**Microsoft Dynamics 365 for Operations オンプレミス**を開きます。
-    2. **Microsoft Dynamics 365 for Operations  オンプレミス - ネイティブ アプリケーション** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
-    3. **Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 - ネイティブ アプリケーション** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
-    4. **Microsoft Dynamics 365 for Operations オンプレミス - Web AP I** を開きます。 新しい環境 (DNS) のリダイレクト URI の 2 つのエントリを追加します。
-    5. **Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 Web API** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
+- [複数環境の同じ AD FS インスタンスの再使用](./onprem-reuseadfs.md) ガイドに従って AD FS を構成します。
 
 ## <a name="redeploy-ssrs-reports"></a>SSRS レポートを再配置する
 
@@ -1341,6 +1334,8 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 
 AOS サーバーにインストールされているすべてのネットワーク プリンターが、AXService.EXE プロセスが実行されている Windows サービス アカウントとして実行されていることを確認してください。
 
+オンプレミス環境でのネットワーク プリンターの構成方法の詳細については、[オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md) を参照してください。
+
 ## <a name="ax-databasesynchronize-isnt-populated-with-events"></a>Ax-DatabaseSynchronize にイベントが設定されていません
 
 プラットフォームの更新 20 およびそれ以降では、データベース同期ログに問題があり、イベント ビューアーで同期ログが **Ax-DatabaseSynchronize** の下に作成されません。
@@ -1403,13 +1398,13 @@ LCSにてサービス操作を行うと次のエラーが表示されること�
 > [!NOTE]
 > サービス パック2のインストールが必要し、累積的な更新を追加または修正プログラムをインストールする必要がないです。
 
-## <a name="SysClassRunner"></a>SysClassRunner は正常に実行されません
+## <a name="sysclassrunner-doesnt-run-successfully"></a><a name="SysClassRunner"></a>SysClassRunner は正常に実行されません
 
 **問題:** プラットフォーム更新プログラム 29 の SysClassRunner をプラットフォーム更新プログラム 31 を使用して実行しようとすると、次の例外が発生します。
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
-System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
 System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
 The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 

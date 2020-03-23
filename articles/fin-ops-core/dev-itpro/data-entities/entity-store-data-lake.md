@@ -3,7 +3,7 @@ title: エンティティ格納を Data Lake として使用可能にする
 description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 423cb8304b539e5dabf38943446320c941ef07a4
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 2144b3389d21215e10aafcf470ce61fc30928a01
+ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071579"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117156"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
 > この機能は現在パブリック プレビューにあります。 この機能は、次のコンポーネントで構成されています。

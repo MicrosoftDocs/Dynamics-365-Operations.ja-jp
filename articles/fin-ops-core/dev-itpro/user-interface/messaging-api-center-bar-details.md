@@ -1,85 +1,135 @@
 ---
-title: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
+title: メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 description: このトピックでは、メッセージング システムについて説明します。
-author: sericks007
+author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 ms.search.region: Global
-ms.author: aorth
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68daf17e5f40782a828f03cc5f9bcf7222a77b55
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 69fddcf299bc76b39b009446e9f7e4aeb6bedc8e
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658835"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100296"
 ---
-# <a name="message-center-message-bar-and-message-details-api"></a>メッセージ センター、メッセージ バー、およびメッセージ詳細 API
+# <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、メッセージング システムについて説明します。
+このトピックでは、Finance and Operations アプリのメッセージング システムについて、特にメッセージを作成してエンド ユーザーにルーティングするために使用されるアプリケーション プログラミング インターフェイス (API) の観点から、説明します。  
 
-<a name="message-api"></a>メッセージ API
------------
+## <a name="introduction"></a>はじめに
 
-Microsoft Dynamics AX 2012 には、**info()**、**warning()**、および **error()** に対する最も多い呼び出しの一覧を表示する "1 つのサイズですべてをまかなう" 汎用的なウィンドウがあります。 このウィンドウは、適切かつ一般的には「情報ログ」または「Infolog」と略して呼ばれていました。 情報ログは場合によっては役に立つツールでしたが、「one size fits all」アプローチは重要度を区別し、ユーザーが中断すべきか否かを決定する必要性において効果がないとみなされました。 新しいメッセージング システムでは、エクスペリエンスが向上します。 このより豊かで強力なメッセージング システムには、次の機能が含まれています。
+このエクスペリエンスを改善するために、Finance and Operations アプリ用に新しいメッセージング システムが作成されました。 以前のバージョンと比較すると、Finance and Operations アプリのメッセージング システムには次の機能が含まれています。
 
--   コンテキストのあるメッセージの関連性が強化されました (フォームとグローバル)。
--   中断のレベル (なし、軽微、および中断) を強化しました。
--   メッセージの種類間での明確さと、その用途が強化されました。
--   メッセージを表示するために使用されるコントロールは、フォーム コンテキストに基づいて deterministic です。
++ コンテキストのあるメッセージの関連性が強化されました (フォームとグローバル)。
++ 中断のレベル (なし、軽微、および中断) を強化しました。
++ メッセージの種類間での明確さと、その用途が強化されました。
++ メッセージを表示するために使用されるコントロールは、フォーム コンテキストに基づいて deterministic です。
 
-## <a name="legacy-api-support-info-warningcheckfailed-and-error"></a>旧 API サポート: info()、warning()/checkfailed()、および error()
-従来の **info()**、**warning()**、および **error()** アプリケーション プログラミング インターフェイス (API) はまだサポートされています。 ただし、それらはフレームワークの新しいメッセージング システム上に配置されるようになり、宛先が確定的になります。 つまり、ユーザーにメッセージを表示するための最善の方法を決定するために、呼び出しのコンテキストを使用します。 一般に、API の使用がフォームから生成された場合、そのメッセージが同じフォーム上のメッセージ バーで表示されます。 (ドロップ ダイアログおよびスライダー ダイアログはどちらもフォームとみなされます) **注記:** このルールにいくつかの例外があります。 スライダーのダイアログ ボックスでは、メッセージ API が呼び出され、そのダイアログ ボックスが終了した場合は、スライダーの親フォームにメッセージが表示されます。 または、そのスライダーがクローズされたワークスペースでホストされている場合、メッセージはメッセージ センターにルーティングされます。 メッセージ API は決してメッセージを「食べる」ことはありません。 適切なホスト フォームが見つからない場合は、メッセージがメッセージ センターに送信されます。 次のスクリーン ショットは、情報、警告/ checkfailed、およびエラー バーを示しています。 
+## <a name="backwards-compatibility-of-info-warningcheckfailed-and-error"></a>Info()、warning()/checkfailed()、error() の下位互換性 
+以前のバージョンの Finance and Operations アプリからの **info()**、**warning()**、**error()** のアプリケーション プログラミング インターフェイス (API) は、引き続きサポートされますが、これらのAPIは現在、フレームワークの新しいメッセージング システム上にあります。 API呼び出しのコンテキストを使用して、ユーザーにメッセージを提示する最適な方法を決定することにより、メッセージは確定的にメッセージまたはアクション センター (中断しない方法で) にルーティングされます。 一般に、API の使用がフォームから生成された場合、そのメッセージが同じフォーム上のメッセージ バーで表示されます。 (ドロップ ダイアログとスライダ ダイアログは、どちらもフォームと見なされます。) 
 
-[![スクリーン ショットは、情報、警告/ checkfailed、およびエラー バーを表示](./media/1_api.jpg)](./media/1_api.jpg)
+次の図は、ページ アクションに対応する **情報**、**警告**/**checkfailed**、**エラー** メッセージ バー、または **info()**、**warning()**、**error()** からの同期作成メッセージを示しています。 
 
-## <a name="message-api-and-batch-or-asynchronous-operations"></a>メッセージ API とバッチまたは非同期操作
-**info()**、**warning()**/**checkfailed()**、または **error()** が非同期プロセス (たとえば、バッチ) から呼び出された場合、考慮するフォーム コンテキストはなく、メッセージはメッセージ センターに送信されます。 (メッセージ センターを開くには、ナビゲーション バーのフラグ アイコンをクリックします。) 
+[![情報、警告/checkfailed、エラー メッセージを示すスクリーン ショット](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
 
-[![メッセージ センターのメッセージ](./media/2_api.png)](./media/2_api.png)
+> [!NOTE]
+> スライダー ダイアログからこれらの API が呼び出されても、メッセージが表示される前にそのスライダー ダイアログが閉じられると、メッセージはスライダー ダイアログの親ページのメッセージ バーに表示されます。 メッセージが表示される前にそのスライダー ダイアログ ボックスが閉じられ、親ページが存在しない場合、メッセージは、アクション センターにルーティングされます。 メッセージング API は必ずメッセージを表示します。 適切なホスト ページが見つからない場合は、メッセージがアクション センターに送信されます。
 
-## <a name="legacy-api-support-setprefix"></a>旧 API サポート: SetPrefix()
-このバージョンは **SetPrefix()** API もサポートしています。 これは、まだ下位互換性を維持しています。 ただし、**SetPrefix()** の結果は積極的にユーザーを中断しません。 代わりに、結果は収集され、(以前のバージョンのように) 保存されて、メッセージ バーまたはメッセージ センターの通知がユーザーに表示されます。 この通知は、関連するタスクが完了し、ユーザーが確認する必要のあるメッセージがある可能性があることを示します。 「結果の通知」メッセージは、実際にはタスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 この動作は、最初の呼び出しが結果の「タイトル」であった以前のバージョンの動作に類似しています。 この例では、「転記の結果」が **SetPrefix()** への最初の呼び出しのアプリケーションから取得されます。
+**info()**、**warning()**/**checkfailed()**、または **error()** が非同期プロセス (たとえば、バッチ) から呼び出された場合、考慮するフォーム コンテキストはなく、メッセージはアクション センターに送信されます。 (アクション センターを開くには、ナビゲーションバーの **メッセージを表示** ボタンをクリックします。) 次の図は、アクション センターの各種メッセージの例を示しています。 
+
+[![アクション センターのメッセージ](./media/2_api.png)](./media/2_api.png)
+
+> [!NOTE]
+> **Box()** API を使用して、ユーザーに中断エラーを表します。                                                               
+
+## <a name="backwards-compatibility-of-setprefix"></a>SetPrefix() の下位互換性 
+Finance and Operations アプリは、下位互換性のために **SetPrefix()** API もサポートしています。 ただし、メッセージング システムでは、**SetPrefix()** の結果は、積極的にユーザーを中断しません; 代わりに、結果が (以前のバージョンと同様に) 収集および保存され、メッセージ バーまたはアクション センターの通知がユーザーに表示されます。 この通知は、関連するタスクが完了し、ユーザーが確認する必要のあるメッセージがある可能性があることを示します。 「結果の通知」メッセージは、実際にはタスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 この動作は、最初の呼び出しが結果の「タイトル」であった以前のバージョンの動作に類似しています。 この例では、「転記の結果」が **SetPrefix()** への最初の呼び出しのアプリケーションから取得されます。
 
 [![SetPrefix の例](./media/3_api.png)](./media/3_api.png) 
 
-ユーザーは、**メッセージの詳細**をクリックして、新しい**メッセージの詳細**ウィンドウを開きます。 
+ユーザーは、**メッセージの詳細** をクリックして、新しい **メッセージの詳細** ウィンドウを開くことができます。 
 
 [![メッセージの詳細ウィンドウ](./media/4_api.png)](./media/4_api.png)
 
-| メッセージ タイプ | 説明                                                                                                                                                                                                                                                                                                                                  |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 情報         | *通知*は、現在のユーザ活動と関連しないイベントについてユーザーに通知します。 この通知は、ユーザー アクションまたは重要なシステム イベントによって発生する可能性があります。また、製品から有用な情報を提供することもできます。 **info()** API を使用してユーザーに通知します。                                                 |
-| 警告      | *警告*は、今後問題が発生する可能性のある状態についてユーザーに警告します。 ステータスが正しくないデータはエラーではありません。 ただし、そのデータを使用しようと試みるとエラーが発生する可能性があり、したがって無効なデータが警告をトリガーします。 データ検証の問題を表現するには、**warning()** または **checkfailed()** API を使用します。 |
-| エラー        | *エラー*は既に発生した問題についてユーザーに警告します。 失敗したユーザー アクションは、エラーをトリガーします。 パッシブ エラー (非中断) を表現するには、**error()** API を使用します。 ユーザーへの中断エラーを表現するには、**box::** API を使用します。                                                                  |
+## <a name="message"></a>Message() 
+**メッセージ** API には、いくつかの便利なメッセージング機能があります。 **Message ()** API を使用すると、メッセージを明示的に追加および削除できるため、メッセージのライフサイクルをより詳細に制御できます。 この API は、保存境界を超えたとき以外に検証メッセージを削除する必要がある場合や、データ検証に必ずしも関連しないユーザー エクスペリエンスの側面に関する情報メッセージを表示する場合に役立ちます。 この例では、現在のレコードが表示されるときにメッセージは表示されます。
 
-メッセージング システムは、確定的 です。 結果は、メッセージがコードから呼び出されたかどうかによって、メッセージ バーまたはメッセージ センターのどちらかに表示されます。
+![メッセージの例::情報メッセージに使用される API を追加する](./media/cli-legacyInfo.png)
 
--   同期のフォーム アクション (ユーザーが結果を待つ必要があるアクション) の結果であるメッセージについては、結果は現在のフォームのメッセージ バーに表示されます。 例外は、アクションの開始直後に閉じられたスライダー ダイアログのメッセージです。 これらのメッセージは親フォームに表示されます。
--   非同期 (切断された) アクションについては、ユーザーは、アクションの処理中にその他のタスクを続行でき、その結果はメッセージ センターに表示されます。
+```xpp
+messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```
 
-同期または他のフォーム アクションまたは評価でエラーが発生した場合は、次の 2 つのタイプのエラーがあります。
+新しいレコードがページに表示されると、メッセージはクリアされます。
 
--   中断エラーは、直接アクションを完了することができないため、直ちに修正する必要があります。 このタイプのエラーはダイアログ ボックスに表示されます。
--   多くの場合にタスク/バッチ操作の失敗に終わる非中断エラー。 このタイプのエラーはメッセージ バーに表示されます。
+```xpp
+Message::Remove(messageId);
+```
 
+バージョン 10.0.10 プラットフォーム更新プログラム 34 以降、**Message::AddAction()** メソッドを使用して、メッセージ内にアクションを埋め込むことができます (ただし現在は、メッセージ バーにルーティングされるメッセージでのみサポートされています)。 このメソッドは、表示メニュー項目またはアクション メニュー項目に関連付けられた 1 つのアクションの追加をサポートし、リンク ボタンとして視覚化されます。 この例では、システム管理者に特定の必要なバッチ ジョブが実行されていないことを示すメッセージがトリガーされ、バッチ ジョブ ページに直接移動するアクションが表示されます。  
 
-<a name="additional-resources"></a>その他のリソース
---------
+![メッセージの例: アクションをメッセージに埋め込むために使用する AddAction API](./media/cli-messageAddAction.png)
 
-[ユーザー インターフェイス開発ホーム ページ](user-interface-development-home-page.md)
+```xpp
+MenuItemMessageAction actionData = new MenuItemMessageAction();
+actionData.MenuItemName("BatchJob");
+str jsonData = FormJsonSerializer::serializeClass(actionData);
 
+int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test batch job is not currently running", "Go to Batch jobs", MessageActionType::DisplayMenuItem, jsonData);
 
+```
 
+以下のメッセージタイプがサポートされています: **MessageSeverity::Info**、**MessageSeverity::Warning**、および **MessageSeverity::Error**。 また、**Message()** API を使用するメッセージは確定的となります。 メッセージ バーまたはアクション センターにルーティングできます。
+
+## <a name="systemnotificationsmanager"></a>SystemNotificationsManager() 
+**SystemNotificationsManager()** API は、アクション センターに送信されるように設計された通知を対象としています。 この API は、次の機能を提供します: 
+
++ 1 つ以上のアクションの通知への関連付け 
++ 通知を一連のユーザー、または 1 つ以上のセキュリティ ロールのすべてのユーザーにルーティングする
++ 通知の有効期限の定義
++ 通知の状態の追跡 (通知に "完了" としてマークできるなど)  
+
+この例では、ユーザーが Excel へのエクスポートを完了した後に通知が発生します。 このメッセージは、エクスポートされたファイルへのリンクが使用できなくなるまで、アクション センターで今後 48 時間使用できるようになります。   
+
+![SystemNotificationsManager APIを使用して送信されたメッセージの例](./media/cli-systemNotification.png)
+
+```xpp
+// Set up the notification 
+SystemNotificationDataContract notification = new SystemNotificationDataContract();
+notification.Users().values(1, curUserId());
+notification.Title("Export to Excel finished");
+notification.RuleId('ExcelStaticExport');
+notification.Message("We finished your export from the Customers page");
+notification.ExpirationDateTime(DateTimeUtil::addHours(DateTimeUtil::utcNow(), 48));
+
+// Set up the action associated with the notification
+SystemNotificationActionDataContract action = new SystemNotificationActionDataContract();
+action.Message("Click to download");
+action.Type(SystemNotificationActionType::AxActionMenuFunction);
+
+SystemNotificationMenuFunctionDataContract actionData = new SystemNotificationMenuFunctionDataContract();
+actionData.MenuItemName(menuItemActionStr(ExportToExcelStaticOpenFileAction));
+actionData.Data(fileName);
+action.Data(FormJsonSerializer::serializeClass(actionData));
+notification.Actions().value(1, action);
+
+SystemNotificationsManager::AddNotification(notification);
+```
+
+## <a name="additional-resources"></a>追加リソース
+
+[ユーザー インターフェイス開発のホーム ページ](user-interface-development-home-page.md)

@@ -1,7 +1,7 @@
 ---
 title: メンテナンス モード
 description: このトピックでは、メンテナンス モードに関する情報を提供しています。システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行できるシステム全体に適用される設定です。
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79f0b7a79e57e68a56b77e5662ab53cf13b4107d
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: ede4d8b0eb45693f15afe3e26ae9bc4e7c7c71a3
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081955"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096935"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 

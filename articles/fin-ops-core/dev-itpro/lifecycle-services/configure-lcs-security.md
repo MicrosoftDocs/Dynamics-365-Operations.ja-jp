@@ -18,11 +18,11 @@ ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e8bfc22215e8105cf5eaad1703ab909906c3ebe4
-ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027994"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124829"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 

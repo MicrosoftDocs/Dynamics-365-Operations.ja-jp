@@ -16,11 +16,11 @@ ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 240185e174b0e1f64ced9453fdd940d434cb8932
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983777"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124841"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 

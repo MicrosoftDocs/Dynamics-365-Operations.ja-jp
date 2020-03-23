@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 321660aa78b23b5a74f39a5af42f49ad300e6113
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 359989e97bf902cf8cb835597ab971d2c3c76b02
+ms.sourcegitcommit: 2464f371101ba616f472bab1631b0ecb863006ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004578"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095449"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
@@ -104,25 +104,30 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
             {
                 return new[]
                 {
-                    typeof(OpenPaymentTerminalDeviceRequest),
-                    typeof(BeginTransactionPaymentTerminalDeviceRequest),
-                    typeof(LockPaymentTerminalDeviceRequest),
-                    typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
-                    typeof(CancelOperationPaymentTerminalDeviceRequest),
-                    typeof(AuthorizePaymentTerminalDeviceRequest),
-                    typeof(CapturePaymentTerminalDeviceRequest),
-                    typeof(VoidPaymentTerminalDeviceRequest),
-                    typeof(RefundPaymentTerminalDeviceRequest),
-                    typeof(FetchTokenPaymentTerminalDeviceRequest),
-                    typeof(EndTransactionPaymentTerminalDeviceRequest),
-                    typeof(ClosePaymentTerminalDeviceRequest),
-                    typeof(ActivateGiftCardPaymentTerminalRequest),
-                    typeof(AddBalanceToGiftCardPaymentTerminalRequest),
-                    typeof(GetGiftCardBalancePaymentTerminalRequest),
-                    typeof(GetPrivateTenderPaymentTerminalDeviceRequest)
+                        typeof(LockPaymentTerminalDeviceRequest),
+                        typeof(OpenPaymentTerminalDeviceRequest),
+                        typeof(ClosePaymentTerminalDeviceRequest),
+                        typeof(BeginTransactionPaymentTerminalDeviceRequest),
+                        typeof(EndTransactionPaymentTerminalDeviceRequest),
+                        typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
+                        typeof(AuthorizePaymentTerminalDeviceRequest),
+                        typeof(CapturePaymentTerminalDeviceRequest),
+                        typeof(VoidPaymentTerminalDeviceRequest),
+                        typeof(RefundPaymentTerminalDeviceRequest),
+                        typeof(FetchTokenPaymentTerminalDeviceRequest),
+                        typeof(ExecuteTaskPaymentTerminalDeviceRequest),
+                        typeof(ActivateGiftCardPaymentTerminalRequest),
+                        typeof(AddBalanceToGiftCardPaymentTerminalRequest),
+                        typeof(GetGiftCardBalancePaymentTerminalRequest),
+                        typeof(GetPrivateTenderPaymentTerminalDeviceRequest),
+                        typeof(CancelOperationPaymentTerminalDeviceRequest),
+                        typeof(GetTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(GetTransactionByTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(CashoutGiftCardPaymentTerminalRequest)
                 };
             }
         }
+
 
         /// <summary>
         /// Executes the payment device simulator operation based on the incoming request type.
@@ -186,6 +191,11 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 | GetGiftCardBalancePaymentTerminalRequest | この要求は、ギフト カードの残高が取得されるときに呼び出されます。 |
 | GetPrivateTenderPaymentTerminalDeviceRequest | この要求は、ギフト カード番号がギフト カード フローの支払い端末から取得されたときに呼び出されます (ギフト カードの発行、ギフト カードによる支払い、ギフト カードへの追加など)。 |
 | ExecuteTaskPaymentTerminalDeviceRequest | この拡張要求は、カスタマイズを介して POS から呼び出すことができます。 支払に関連する追加のフローを有効にするために使用されます。 |
+| GetTransactionReferencePaymentTerminalDeviceRequest | この要求は、相関する ID をチェックするために呼び出されます。 重複した支払を回避するために使用されます。 |
+| GetTransactionByTransactionReferencePaymentTerminalDeviceRequest | この要求は、相関する ID を使用して前の取引を取得するために使用されます。 |
+| CashoutGiftCardPaymentTerminalRequest | この要求は、POS からキャッシュ アウト ギフト カード処理が実行されたときに呼び出されます。 |
+
+
 
 ##### <a name="openpaymentterminaldevicerequest"></a>OpenPaymentTerminalDeviceRequest
 ###### <a name="signature"></a>署名
@@ -530,6 +540,56 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 | token | 支払い端末が最初のトランザクションのためにロックされたときに生成される一意のトークン値。 |
 | タスク | 実行されているタスクの一意の識別子。 |
 | extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
+
+##### <a name="gettransactionreferencepaymentterminaldevicerequest"></a>GetTransactionReferencePaymentTerminalDeviceRequest
+###### <a name="signature"></a>署名
+``` csharp
+ public GetTransactionReferencePaymentTerminalDeviceRequest(string lockToken, string posTerminalId, string eftTerminalId)
+```
+
+###### <a name="variables"></a>変数
+
+| 変数 | 説明 |
+|---|---|
+| locktoken | 支払端末が取引で最初にロックされたときに生成された一意のロック トークンを取得します。 |
+| posTerminalId | ロック トークンに関連付けられた POS 端末の ID を取得します。 |
+| extensionTransactionProperties | 取引とロック トークンに関連付けられた EFT 端末の ID を取得します。 |
+
+##### <a name="gettransactionbytransactionreferencepaymentterminaldevicerequest"></a>GetTransactionByTransactionReferencePaymentTerminalDeviceRequest
+###### <a name="signature"></a>署名
+``` csharp
+ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string lockToken, Retail.PaymentSDK.Portable.PaymentTransactionReferenceData transactionReferenceData)
+```
+
+###### <a name="variables"></a>変数
+
+| 変数 | 説明 |
+|---|---|
+| locktoken | 支払端末が取引で最初にロックされたときに生成された一意のロック トークンを取得します。 |
+| Retail.PaymentSDK.Portable.PaymentTransactionReferenceData TransactionReferenceData | 相関する ID が同期していない場合に、支払取引の参照データを取得します。 |
+
+
+##### <a name="cashoutgiftcardpaymentterminalrequest"></a>CashoutGiftCardPaymentTerminalRequest
+###### <a name="signature"></a>署名
+``` csharp
+ public CashoutGiftCardPaymentTerminalRequest(
+            string paymentConnectorName,
+            decimal amount,
+            string currencyCode,
+            TenderInfo tenderInfo,
+            ExtensionTransaction extensionTransactionProperties)
+```
+
+###### <a name="variables"></a>変数
+
+| 変数 | 説明 |
+|---|---|
+| paymentConnectorName | 支払フローの一部として使用される支払コネクタの名前。 この変数は、IPaymentProcessor インターフェイスを使用する支払フローとの統合がある場合に使用されます。 |
+| 金額 | ギフト カードのキャッシュ アウト要求額。 |
+| currencyCode | ギフト カードのキャッシュ アウト要求に使用する通貨。 |
+| tenderinfo | 外部ソースから取得された POS から送信されるカード情報 (外部ソースがある場合)。 |
+| extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
+
 
 #### <a name="state-in-the-payment-connector"></a>支払コネクタの状態
 支払いコネクターは、POS 内のインプロセス ハードウェア ステーションを通じてホストされているとき、dllhost.exe プロセスの一部としてホストすることができます。 または、 Microsoft Internet Information Services (IIS) に基づくハードウェア ステーションでホストされている場合、w3wp.exe プロセスとして支払コネクタをホストすることができます。 状況によっては、支払フローの間または最中に両方のプロセスを終了したり、応答を停止したりできます。 したがって、支払コネクタには状態依存性がなく、以前に説明した支払フロー関連の要求のいずれかの時点で終了すると回復することができるようにすることをお勧めします。

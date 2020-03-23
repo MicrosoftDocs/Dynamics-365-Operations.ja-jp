@@ -1,9 +1,9 @@
 ---
 title: セルフサービス配置の概要
 description: このトピックでは、セルフサービス配置の概要を示します。
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 19f6fea7fc55a2eef6ad7124a1553d72a23bc9cd
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 0584208ae23f514fbb84e3592e5947dfc37a077a
+ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100482"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -44,7 +44,8 @@ ms.locfileid: "3087242"
 
 - レベル 2 以上のサンドボックス環境へのリモート デスクトップ アクセスがなくなります。 リモート デスクトップ アクセスが必要なすべての操作は、セルフ サービス アクションとして使用可能になりました。 次の図に、環境の**メンテナンス** \> **データベース メニューの移動**オプションにおける操作の一部を示します。 詳細については、[配置のメンテナンス操作](maintenanceoperationsguide-newinfrastructure.md)を参照してください。
 
-    > [重要] リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 
+    > [!IMPORTANT]
+    > リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 
 
    ![セルフ サービス アクション](media/Self-service-actions.png)
 

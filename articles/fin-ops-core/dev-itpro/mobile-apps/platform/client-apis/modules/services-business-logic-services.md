@@ -16,11 +16,11 @@ ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 9434987930e308dca861eecf24a9277557a88696
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183117"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124837"
 ---
 # <a name="services-module"></a>サービス モジュール
 

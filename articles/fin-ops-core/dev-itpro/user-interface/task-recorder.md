@@ -3,7 +3,7 @@ title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、クライアント機能を記録する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77ea8851ce4bcef8f9693cefd874a7ed922905d8
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 3601539520dc47aa3929b5c463aae97c69103b4e
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031008"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100297"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -33,9 +33,9 @@ ms.locfileid: "3031008"
 
 ## <a name="overview"></a>概要
 
-### <a name="the-new-task-recorder"></a>新しいタスク レコーダー
+### <a name="the-task-recorder"></a>タスク レコーダー
 
-タスク レコーダーは、一から再構築されました。 再構築で焦点を当てたのは、応答性の高さ、柔軟な機能拡張アプリケーション プログラミング インターフェイス (API) および業務プロセスを記録するコンシューマーとのシームレスな統合です。 タスクレコーダーと Microsoft Dynamics Lifecycle (LCS) の[ビジネス プロセス モデラ― (BPM)](https://bpm.lcs.dynamics.com) ツールとの統合が維持されているので、ユーザーは記録から豊富な業務プロセス ダイアグラムを作成し続けることができ、それらを使用してアプリケーションの解析および設計が行えます。
+Finance and Operations アプリのタスク レコーダーは、高い応答性、フレキシブルなアプリケーション プログラミング インターフェイス (API)、およびビジネス プロセス記録の消費者とのシームレスな統合を備えています。 タスクレコーダーと Microsoft Dynamics Lifecycle (LCS) の[ビジネス プロセス モデラ― (BPM)](https://bpm.lcs.dynamics.com) ツールとの統合が維持されているので、ユーザーは記録から豊富な業務プロセス ダイアグラムを作成し続けることができ、それらを使用してアプリケーションの解析および設計が行えます。
 
 タスク レコーダーでは、業務プロセスの記録からアプリケーションの回帰テストを自動的に生成し、既に記録されたプロセスを再生することができます。 これらの新機能には、ユーザーが強力な新しいタスク レコーダーを最大限に活用できるようにする新しいジェスチャーも含まれています。
 
@@ -70,10 +70,13 @@ ms.locfileid: "3031008"
         
 5.  **新しい記録の作成**をクリックします。
 6.  記録名を入力し、**開始**をクリックします。 記録は、**開始** がクリックされると開始されます。 このチュートリアルのフリート例については、名前「新しいレンタル予約の作成」を使用します。
+
+> [!NOTE]
+> **保存ビュー** 機能が有効になっている場合、記録は、公開済みのビューまたは標準ビューのいずれかを使用して作成し、記録がユーザーにとって信頼性を持って機能することを確実にします。 
         
-    記録中、右上隅の "**X**" をクリックすると、記録を停止することなく、ウィンドウが非表示になります。 画面の上部に表示される **タスク レコーダー** メニュー ボタンをクリックして、ウィンドウを再度開くことができます。 このアイコンは、記録中にのみ表示されます。 
+    During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
     
-    [![この画像は、記録中にタスク レコーダー ウィンドウを開けられるタスク レコーダー ツールバー ボタンを示しています。](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+    [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
 
 7.  **タスク レコーダー**が**記録モード**になります。 このウィンドウには、記録プロセスに関連付けられている情報とコントロールが表示されます。 表示されるボタンの使用方法の詳細については、[記録コントロールを使用するセクション](#recording-controls) を参照してください。
 
@@ -207,7 +210,7 @@ ms.locfileid: "3031008"
 ## <a name="download-options"></a>ダウンロード オプション
 **停止**をクリックした後、いくつかのオプションが、完了した記録に関連するファイルを保存するために表示されます。 **この PC に保存**をクリックし、タスク記録パッケージをデスクトップに保存します。 このファイルは後で使用します。
 
-[![記録の終了後に記録をダウンロードまたは保存するためのオプション](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
+[![記録が終了した後に、記録をダウンロードまたは保存するためのオプション](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### <a name="save-the-task-recording-package-save-to-this-pc"></a>タスク記録パッケージの保存 (この PC に保存)
 

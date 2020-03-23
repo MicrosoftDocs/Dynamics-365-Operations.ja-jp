@@ -16,11 +16,11 @@ ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2da574c29d3311085322814b5c0a9295793a1bf3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191834"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124836"
 ---
 # <a name="control-module"></a>管理モジュール
 
@@ -91,7 +91,7 @@ ControlMetadata <br>&nbsp;&nbsp;&nbsp;└─ [PageLinkMetadata](../interfaces/vi
 | [ラベル](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) |ラベル: 文字列 (省略可)  <br>|コントロールのラベル。 E.g. 個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。<br>  |
 | [名前](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) |Name: 文字列 (省略可)  <br>|コントロールの名前です。<br>  |
 | [注文](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  |
-| [[タイプ](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  |
+| [タイプ](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  |
 
 ## <a name="type-aliases"></a>型のエイリアス
 

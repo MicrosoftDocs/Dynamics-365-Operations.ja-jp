@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 524b0c9ce7a9e08195c3da941fac1cd9a18d0030
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: c6de19eba4863f7e4486a3528ba82698e641f747
+ms.sourcegitcommit: 2464f371101ba616f472bab1631b0ecb863006ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057902"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095450"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -166,10 +166,10 @@ Adyen 向け Dynamics 365 Payment Connector はデバイスに依存しない [A
 | Diners | 標準 | ✔ | ✔ | ✔ |
 | Dineromail | 標準 | ✔ | ✔ | ✔ |
 | JCB | 標準 | ✔ | ✔ | ✔ |
-| Union Pay* | 標準 | ✔ | 適用できません | 適用できません |
-| Interac Debit | 標準 | 将来のリリースでサポートが追加されます。 | 将来のリリースでサポートが追加されます。 | 将来のリリースでサポートが追加されます。 |
+| Union Pay \* | 標準 | ✔ |  |  |
+| Interac Debit\* | 標準 | ✔ |  |  |
 
-*Adyen は Union Pay の自動更新 token をサポートしないため、カードなし購買で使用することはできません。
+\* Interac と Union Pay の定型カード トークンは Adyen から提供されていないため、カードが存在しない取引では対応していません。
 
 #### <a name="supported-gift-cards"></a>サポートされるギフト カード
 | スキーム | カードあり | カードなし |
@@ -293,7 +293,7 @@ POS 端末、コール センター、または電子商取引で支払を処理
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
-    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
+    | オプション ドメイン | ライブ環境にはオプションのドメインが必要となります。これは、Adyen に連絡して取得する必要があります。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | このフィールドは、`Payment service account` 用 **クラウド** にセットする必要があります。 | 有 | 有 | クラウド |
     | ローカル パスワード フレーズ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
@@ -344,7 +344,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
-    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
+    | オプション ドメイン | ライブ環境にはオプションのドメインが必要となります。これは、Adyen に連絡して取得する必要があります。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | これは POS 端末では **ローカル** にセットする必要があります。 別のターミナル API アーキテクチャの詳細については、Adyen Web サイトの[ターミナル API の導入](https://www.adyen.com/blog/introducing-the-terminal-api)ページを参照してください。 | 有 | 有 | ローカル |
     | ローカル パスワード フレーズ | 支払端末の Adyen キー パスフレーズを入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | keypassphrase123 |
@@ -365,7 +365,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 1. **PIN パッド** クイックタブの、**PIN パッド** フィールドで、**ネットワーク** を選択します。
 2. **デバイス名** フィールドに、**MicrosoftAdyenDeviceV001** と入力します。
 
-#### <a id="set-up-a-dynamics-365-register"></a>Dynamics 365 レジスターの設定
+#### <a name="set-up-a-dynamics-365-register"></a><a id="set-up-a-dynamics-365-register"></a>Dynamics 365 レジスターの設定
 
 > [!NOTE]
 > 次の手順では、POS レジスターと Adyen 支払端末の間の専用マッピングがあることを前提としています。 Microsoft インターネット インフォメーション サービス (IIS) に基づくハードウェア ステーションの場合、**小売とコマース\>チャネル\>店舗\>すべての小売店舗**に移動して、設定対象の店舗を選択します。 次に、その店舗のページの、**ハードウェア ステーション** クイック タブで、同じ手順を実行します。
@@ -382,7 +382,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 6. アクション ウィンドウで、**レジスター** タブの、**ハードウェア** グループで、**IP アドレスのコンフィギュレーション** を選択します。
 7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここで、**\<IP アドレス\>** および **\<POIID\>** は、Adyen 支払端末をオンボードしたときに記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。 この URL の値は大文字と小文字を区別することに注意してください。
 
-#### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
+#### <a name="update-the-modern-pos-or-iis-hardware-station-configuration"></a><a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
 
 Retail SDK を使用して Modern POS バージョンをパッキングする場合、インストーラーがパッケージ化される前に、SDK コードで 1 回のみこれらの手順を実行する必要があります。 それ以外の場合、標準 Modern POS または IIS ハードウェア ステーションがインストールされた後にこれらの手順を実行する必要があります。
 

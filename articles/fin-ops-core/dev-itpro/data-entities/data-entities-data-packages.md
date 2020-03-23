@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a0f92becd5a91cca7a70e8ad4b5786eeb68f54e
-ms.sourcegitcommit: c0929ebda9dfb7affe2a187336abf980ce2009a6
+ms.openlocfilehash: 313344e086a0f43a9cc548d3e46a994d770b92c8
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "2994154"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124826"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -290,17 +290,17 @@ ms.locfileid: "2994154"
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 - 上記の変更を行った後、すべての AOS 上で IISReset を実行します。 
 
-```
-INSERT INTO SYSFLIGHTING
-([FLIGHTNAME]
-,[ENABLED]
-,[FLIGHTSERVICEID]
-,[PARTITION]
-,[RECID]
-,[RECVERSION]
-)
-VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
-```
+    ```sql
+    INSERT INTO SYSFLIGHTING
+    ([FLIGHTNAME]
+    ,[ENABLED]
+    ,[FLIGHTSERVICEID]
+    ,[PARTITION]
+    ,[RECID]
+    ,[RECVERSION]
+    )
+    VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+    ```
 
  - パーティション - 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
  - RecID - パーティションと同じ ID。 ただし、複数のフライトが有効な場合、これは一意の値を持つようにするためパーティション ID + "n" にすることができます。

@@ -1,7 +1,7 @@
 ---
 title: Lifecycle Services (LCS) のサブスクリプション試算
 description: このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを使用する方法について説明します。
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 536e209644aeac3ee03b47f0a809c465c2e7f185
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: dbdc83e8695040bd754110cbdc9b97edc8e7a5ad
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003666"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117399"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 

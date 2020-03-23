@@ -16,11 +16,11 @@ ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 08b455599e0f903e8744ca35d74fcc429111960e
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033022"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124816"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 

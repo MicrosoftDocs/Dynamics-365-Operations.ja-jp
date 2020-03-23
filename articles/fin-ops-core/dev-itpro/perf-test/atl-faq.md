@@ -18,11 +18,11 @@ ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 ms.openlocfilehash: 330ca2a1cfe1469a44259cce830c52ea979378c9
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033039"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124833"
 ---
 # <a name="acceptance-test-library-faq"></a>承認テスト ライブラリに関するよく寄せられる質問
 

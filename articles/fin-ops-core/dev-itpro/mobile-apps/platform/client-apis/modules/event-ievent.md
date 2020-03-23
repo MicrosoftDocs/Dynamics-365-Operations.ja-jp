@@ -16,11 +16,11 @@ ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: ac91434fce54c1b8342e1b5154fc81e48baa1910
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183118"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124838"
 ---
 # <a name="event-module"></a>イベント モジュール
 

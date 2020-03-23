@@ -3,7 +3,7 @@ title: 拡張機能を使用してテーブルにインデックスを追加
 description: このトピックでは、テーブルにインデックスを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 01d8f3c7ff1b8bcc666d1e85f16c2bb4ad535d48
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a93814746d9426417ef402cd1bd339234e668484
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191651"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112276"
 ---
 # <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 
@@ -36,16 +36,3 @@ ms.locfileid: "2191651"
 
 > [!WARNING]
 > 固有のインデックスを作成するのに、この手法は用いないでください。 この変更は、他の独立系ソフトウェア ベンダー (ISV) のソリューションが同じ環境に展開されている場合、そのソリューションを破壊する可能性のある侵入的な変更です。 この機能は、将来のプラットフォーム リリースでは削除されます。
-
-## <a name="extend-standard-indexes"></a>標準インデックスの拡張
-
-標準インデックスを拡張して追加の (含まれる) 列を追加できますが、これにはいくつか条件があります:
-
-+   インデックスが非クラスター化されています。
-+   インデックスが一意ではありません。
-
-標準インデックスの拡張には、次の制約が適用されます:
-
-+   既存の列を削除できません。
-+ 既存の列の順序を変更できません。
-+   標準インデックスを無効化できません。

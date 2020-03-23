@@ -3,7 +3,7 @@ title: Finance and Operations アプリのプラットフォーム更新プロ�
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされている機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: d98733d01ca7373ab2bd9bae48206f82a1d91f78
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: c8786ce8dd70bdd16008ebe265b014700dbd8d36
+ms.sourcegitcommit: 57f6e5569fcc6bde097bd2528fa5eb429bd53338
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070434"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114723"
 ---
 # <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 
@@ -37,7 +37,9 @@ ms.locfileid: "3070434"
 プラットフォーム更新プログラム 31 の詳細については [追加リソース](whats-new-platform-update-31.md#additional-resources) を参照してください。
 
 ## <a name="turn-on-the-new-preview-grid-control-through-feature-management"></a>機能管理を通じて、新しい (プレビュー) グリッド コントロールをオンにする
-以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム 更新プログラム 31 では、新しいグリッド コントロールは、機能管理ワークスペースを使用する的確な環境に対して有効にすることができるようになりました (フライトを有効にする方法に関する指示については、次のステップを参照してください)。 新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
+以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム更新 31 では、機能管理ワークスペースを使用して、認定された環境に対して新しいグリッド コントロールを有効にすることができます。 このフライトを非運用環境で有効にする方法については、次の手順を参照してください。 認定された環境には、第 1 層 (開発/テスト) 環境と第 2 層 (サンドボックス) 環境が含まれます。 この機能は、バージョン10.0.9、プラットフォーム更新 33 まで生産中に有効にすることはできません。
+
+新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
 
 この機能のプレビュー中に新しいグリッドを有効にするには、これらのステップに従います。
 

@@ -3,7 +3,7 @@ title: データベース移動操作 - 調整
 description: このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 8512f0cc8e1691d413f7855462bfe521fca5597a
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: dc74150c7126cc1dd3edeb70b631ad17173ea809
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573563"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113651"
 ---
 # <a name="throttling"></a>調整
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
 

@@ -1,7 +1,7 @@
 ---
 title: 新しい環境の配置
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
-author: manado
+author: rashmansur
 manager: AnnBe
 ms.date: 12/03/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
-ms.author: manado
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: bc2077708ad2f7ee73ba7dc675d0561abdedc7b0
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 1c4185d5ca1ae2d06e393e3743a0b20b5359fa3d
+ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057129"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100486"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 

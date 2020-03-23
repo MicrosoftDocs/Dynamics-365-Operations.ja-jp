@@ -1,7 +1,7 @@
 ---
 title: 環境の更新
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境を、更新する方法について説明します。
-author: manado
+author: laneswenka
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3f0a75afa75946285d8fdca8651833563b8a667c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c64d30375cee7e0367975aa8c53efad129b2cea6
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191623"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096847"
 ---
 # <a name="update-an-environment"></a>環境の更新
 

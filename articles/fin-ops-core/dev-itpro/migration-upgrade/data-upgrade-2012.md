@@ -1,9 +1,9 @@
 ---
 title: AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
-description: このトピックでは、Microsoft Dynamics AX 2012 から最新の Finance and Operations 開発環境にアップグレードする詳細なプロセスについて説明します。
+description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から最新の Finance and Operations にアップグレードする詳細なプロセスを説明します。
 author: tariqbell
 manager: AnnBe
-ms.date: 02/26/2018
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7e0b07d2efedb3ea5a26bbcbe6a2a761b1b50cc3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 258bb16c1410b629a68ac4569a78323649aa4165
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811690"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112770"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -30,7 +30,7 @@ ms.locfileid: "2811690"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力により、Microsoft Dynamics AX 2012 から最新の Finance and Operations 開発環境にアップグレードされた最初のデータセットが提供されます。
+これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力により、 Microsoft Dynamics AX 2012 から最新の Finance and Operations 開発環境にアップグレードされた最初のデータセットが提供されます。
 
 このプロセスを共有サンドボックス環境で実行する前に、開発環境で実行することをお勧めします。 このアプローチには 2 つの理由があります。
 
@@ -55,6 +55,9 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 開発環境がローカルまたは Azure で VM としてホストされている場合、2012 データベースのバックアップをそれに転送する必要があります。 ローカル VM では、ネットワーク全体でファイルを直接転送することができますが (それを許可するように仮想ネットワークを構成済みの場合)、Azure でホストされた VM の場合バックアップを Azure Storage にアップロードすることをお勧めします (自分のセキュアな転送サービスまたは SFTP の使用も有効なオプションです)。 これに対して、独自の Azure ストレージ アカウントを指定する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
 ### <a name="download-and-restore-the-backup-to-the-development-environment"></a>開発環境へのバックアップのダウンロードと復元
+
+> [!NOTE]
+> マイクロソフトがホストする開発環境環境では、ドライブの領域が制限されます。 多くの AX 2012 のユーザーが、 [クラウド ホスト環境](../dev-tools/access-instances.md)を使用して、独自の開発環境をホストすることを推奨します。 クラウドホスト環境を使用することで、独自の仕様に合うようにドライブの容量を増やすことができます。  
 
 新しい開発環境にバックアップを復元する場合、既存の AXDB データベースを上書きしないでください。 代わりに、元のデータベースの横にある AX 2012 データベースを復元します。 パフォーマンスを向上させるために、データおよびログ ファイルの D ドライブの使用も考慮する場合があります。 ただし、D ドライブを使用することには潜在的な問題点があります。基になる仮想マシン (VM) が Azure で割り当て解除され、次に再割り当てされると、D ドライブが消去されます。 実際、このシナリオが発生ことはほとんどありません。 したがって、そのリスクは容認できる可能性があります。 ドライブ D の使用方法の詳細については、[[Windows Azure 仮想マシンでのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)] を参照してください。
 

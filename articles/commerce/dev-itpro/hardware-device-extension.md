@@ -17,15 +17,16 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
-ms.openlocfilehash: ee2a7ec21f9bc75ec661febd45b39453a3cb5e73
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d9252e4771bd6292407e8f9c2491f4eb3bbe718a
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004570"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117255"
 ---
 # <a name="integrate-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、新しいハードウェア デバイスに POS を統合する方法について説明します。 
 

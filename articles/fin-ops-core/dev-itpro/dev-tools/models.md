@@ -18,11 +18,11 @@ ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 40431da9e1624693f44242a1bd5debf59429d647
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030884"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124814"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
