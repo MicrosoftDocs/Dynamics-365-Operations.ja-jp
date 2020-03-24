@@ -18,37 +18,36 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 39f72c534c7179f4535e6eb8a31ef7e9b72b7b88
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 41ec4737ccb270d2ba84dd473770f18e1aa6b044
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076042"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117387"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a><span data-ttu-id="3e0ab-103">Finance and Operations アプリ ホーム ページの新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="3e0ab-103">What's new or changed in Finance and Operations apps home page</span></span>
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a><span data-ttu-id="5a484-103">Finance and Operations アプリ ホーム ページの新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="5a484-103">What's new or changed in Finance and Operations apps home page</span></span>
+
 [!include [banner](../includes/banner.md)]
 
 
-[!include [release notes](../includes/release-notes.md)]
+## <a name="application-releases"></a><span data-ttu-id="5a484-104">アプリケーション リリース</span><span class="sxs-lookup"><span data-stu-id="5a484-104">Application releases</span></span>
 
-## <a name="application-releases"></a><span data-ttu-id="3e0ab-104">アプリケーション リリース</span><span class="sxs-lookup"><span data-stu-id="3e0ab-104">Application releases</span></span>
+<span data-ttu-id="5a484-105">Finance and Operations アプリの各リリースでの新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a484-105">To see what's new or changed in each release of a Finance and Operations app, see the following topics:</span></span>
 
-<span data-ttu-id="3e0ab-105">Finance and Operations アプリの各リリースでの新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e0ab-105">To see what's new or changed in each release of a Finance and Operations app, see the following topics:</span></span>
+- <span data-ttu-id="5a484-106">**Finance:** [Dynamics 365 Finance の新機能および変更された機能](../../../finance/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="5a484-106">**Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span></span> 
+- <span data-ttu-id="5a484-107">**Supply Chain Management:** [Dynamics 365 Supply Chain Management の新機能および変更された機能](../../../supply-chain/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="5a484-107">**Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span></span> 
+- <span data-ttu-id="5a484-108">**コマース:** [ Dynamics 365 Commerce の新機能および変更された機能](../../../retail/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="5a484-108">**Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span></span>
+- <span data-ttu-id="5a484-109">**Human Resources:** [Dynamics 365 Human Resources の新機能および変更された機能](../../../human-resources/hr-admin-whats-new.md)</span><span class="sxs-lookup"><span data-stu-id="5a484-109">**Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)</span></span>
 
-- <span data-ttu-id="3e0ab-106">**Finance:** [Dynamics 365 Finance の新機能および変更された機能](../../../finance/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="3e0ab-106">**Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span></span> 
-- <span data-ttu-id="3e0ab-107">**Supply Chain Management:** [Dynamics 365 Supply Chain Management の新機能および変更された機能](../../../supply-chain/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="3e0ab-107">**Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span></span> 
-- <span data-ttu-id="3e0ab-108">**コマース:** [ Dynamics 365 Commerce の新機能および変更された機能](../../../retail/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="3e0ab-108">**Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span></span>
-- <span data-ttu-id="3e0ab-109">**Human Resources:** [Dynamics 365 Human Resources の新機能および変更された機能](../../../human-resources/hr-admin-whats-new.md)</span><span class="sxs-lookup"><span data-stu-id="3e0ab-109">**Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)</span></span>
+## <a name="platform-updates"></a><span data-ttu-id="5a484-110">プラットフォーム更新プログラム</span><span class="sxs-lookup"><span data-stu-id="5a484-110">Platform updates</span></span>
 
-## <a name="platform-updates"></a><span data-ttu-id="3e0ab-110">プラットフォーム更新プログラム</span><span class="sxs-lookup"><span data-stu-id="3e0ab-110">Platform updates</span></span>
+<span data-ttu-id="5a484-111">Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a484-111">To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:</span></span>
 
-<span data-ttu-id="3e0ab-111">Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e0ab-111">To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:</span></span>
+- [<span data-ttu-id="5a484-112">Platform update における新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="5a484-112">What's new or changed in Platform updates</span></span>](../../dev-itpro/get-started/whats-new-home-page.md)
 
-- [<span data-ttu-id="3e0ab-112">Platform update における新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="3e0ab-112">What's new or changed in Platform updates</span></span>](../../dev-itpro/get-started/whats-new-home-page.md)
+## <a name="lifecycle-services-releases"></a><span data-ttu-id="5a484-113">Lifecycle Services のリリース</span><span class="sxs-lookup"><span data-stu-id="5a484-113">Lifecycle Services releases</span></span>
+<span data-ttu-id="5a484-114">Lifecycle Services の新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a484-114">To see what's new or changed in Lifecycle Services, see the following topic:</span></span>
 
-## <a name="lifecycle-services-releases"></a><span data-ttu-id="3e0ab-113">Lifecycle Services のリリース</span><span class="sxs-lookup"><span data-stu-id="3e0ab-113">Lifecycle Services releases</span></span>
-<span data-ttu-id="3e0ab-114">Lifecycle Services の新機能や変更事項を確認するには、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e0ab-114">To see what's new or changed in Lifecycle Services, see the following topic:</span></span>
-
-- [<span data-ttu-id="3e0ab-115">Lifecycle Services (LCS) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="3e0ab-115">What's new or changed in Lifecycle Services (LCS)</span></span>](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
+- [<span data-ttu-id="5a484-115">Lifecycle Services (LCS) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="5a484-115">What's new or changed in Lifecycle Services (LCS)</span></span>](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
