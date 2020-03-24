@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015290"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120881"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER 形式における XML 要素の実行の延期
 
@@ -47,7 +47,7 @@ ms.locfileid: "3015290"
 
 **ファイルの分割**オプションが**はい**に設定されている場合、**遅延実行**オプションは、**共通\\ファイル**形式要素に存在する XML 要素にはサポートされません。 XML ファイルを分割する方法の詳細については、[ファイル サイズおよびコンテンツ クオリティに基づいて生成された XML ファイルを分割する](er-split-files.md) を参照してください。
 
-## <a name="Example"></a>例: ER 形式の XML 要素の実行の延期
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>例: ER 形式の XML 要素の実行の延期
 
 次のステップは、システム管理者または電子申告機能コンサルタント [ロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) のユーザーが、実行順序が形式階層の順序とは異なる XML 要素を含む ER 形式をコンフィギュレーションする方法を説明します。
 

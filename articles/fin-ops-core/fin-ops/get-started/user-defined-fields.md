@@ -1,9 +1,9 @@
 ---
 title: カスタム フィールドの作成と操作
-description: このトピックでは、アプリケーションをビジネスに合わせて調整するためのカスタム フィールドの作成方法を示します。
+description: このトピックでは、ユーザー インターフェイスを通してカスタム フィールドを作成し、ビジネスに合わせてアプリケーションを調整する方法を示します。
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812508"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112339"
 ---
 # <a name="create-and-work-with-custom-fields"></a>カスタム フィールドの作成と操作
 
 [!include [banner](../includes/banner.md)]
 
-広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットがありますが、場合によっては会社がシステムで追加情報を追跡する必要があります。 このニーズに合わせて、機能へのアクセス許可を提供された自社に合うアプリケーションを調整するカスタム フィールドを作成できます。
+広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットがありますが、場合によっては会社がシステムで追加情報を追跡する必要があります。 プログラマーは、開発者ツールでこれらのフィールドを拡張機能として追加することができますが、カスタム フィールド機能を使用すると、ユーザー インターフェイスから直接フィールドを追加できるので、Web ブラウザーを使用してビジネスに合わせてアプリケーションをカスタマイズできます。
 
-カスタム フィールドを追加する機能は、プラットフォームのアップデート 13 以降で利用できます。
+カスタム フィールドを追加する機能は、プラットフォームのアップデート 13 以降で利用できます。 この機能にアクセスできるのは、特別なアクセス許可を持つユーザーだけです。
 
 このビデオでは、簡単にページにカスタム フィールドを追加する方法を示します: [カスタム フィールドを追加する](https://www.youtube.com/watch?v=gWSGZI9Vtnc)。
 
@@ -159,3 +159,7 @@ ms.locfileid: "2812508"
 - テーブルは、別のテーブルを拡張できません。
 - テーブルは、システム テーブルとしてマークできません。
 - テーブルは、一時的テーブルになることができますか。
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>開発者ツールからカスタム フィールドを参照することはできますか?  
+
+カスタム フィールドは、ユーザー インターフェイスを通してのみ管理でき、コードからは参照できません。 

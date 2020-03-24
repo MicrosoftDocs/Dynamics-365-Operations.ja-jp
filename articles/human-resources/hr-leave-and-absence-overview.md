@@ -1,6 +1,6 @@
 ---
 title: 概要
-description: ''
+description: Dynamics 365 Human Resources での、**休暇および欠勤**ワークスペースは、新しい休暇計画を作成するための柔軟なフレームワーク、休暇申請を管理するためのワークフロー、および従業者が休暇を申請するための直観的なセルフ サービス ページを提供します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a36f6b6ba696fa926ab3d6298568dddfce43a57
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009716"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091751"
 ---
 # <a name="overview"></a>概要
 
@@ -43,7 +43,7 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 
 - [休暇タイプのコンフィギュレーション](hr-leave-and-absence-types.md)
 - [休暇計画の作成](hr-leave-and-absence-plans.md)
-- [休暇計画に作業者を割り当てる](hr-leave-and-absence-enroll.md)
+- [休暇計画への作業者の割り当て](hr-leave-and-absence-enroll.md)
 - [休暇計画の累計](hr-leave-and-absence-accrue.md)
 - [休暇の分析の表示](hr-leave-and-absence-analytics.md)
 

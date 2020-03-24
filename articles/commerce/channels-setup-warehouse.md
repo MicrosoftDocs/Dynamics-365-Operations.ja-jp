@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057859"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113762"
 ---
 # <a name="warehouse-set-up"></a>倉庫の設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "3057859"
 
 ## <a name="overview"></a>概要
 
-各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。 次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。 倉庫の設定に関する詳細については、[倉庫管理の概要](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)を参照してください。
+各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。 次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。 倉庫の設定に関する詳細については、[倉庫管理の概要](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)を参照してください。
 
 ## <a name="configure-a-warehouse-site"></a>倉庫サイトのコンフィギュレーション
 
@@ -131,7 +131,7 @@ ms.locfileid: "3057859"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[倉庫管理の概要](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[倉庫管理の概要](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [チャネルの概要](channels-overview.md)
 

@@ -3,7 +3,7 @@ title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: a918d9fa1ad7ed5adcbb1d056bb8cc3306507aec
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081973"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100285"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -97,9 +97,9 @@ ms.locfileid: "3081973"
 | データの管理および統合      |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション駆動型の拡張機能                                                            | 有       | 無              |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | 有       | 有             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | いいえ              |
-|                                      | データ統合                                                                         | はい       | はい             |
-| ドキュメント管理                  |                                                                                           | はい       | はい             |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 有              |
+|                                      | データ統合                                                                         | 有       | 有             |
+| ドキュメント管理                  |                                                                                           | 有       | 有             |
 | ヘルプ                                 |                                                                                           | はい       | いいえ              |
 | インテリジェンス                         |                                                                                           | はい       | はい             |
 |                                      | 電子申告 (ER)                                                                 | はい       | はい             |

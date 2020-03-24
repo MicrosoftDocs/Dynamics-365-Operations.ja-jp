@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
+ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004022"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095620"
 ---
 # <a name="product-identifiers"></a>製品 ID 
 
@@ -43,9 +43,6 @@ Dynamics 365 Supply Chain Management では、製品の主要な識別子は製�
 Supply Chain Management を実装するときは、製品番号の戦略を特に考慮する必要があります。 適正な番号付けシステムは、物流フローが改善され、エラーを防ぐのに役立ちます。 適正な商品 ID は、最大 15 の文字です。 原則的には、10 文字未満で、5 つ以上の分類文字が含まれています。 高速検索を有効にするため、検索名を使用することもできます。 検索名は、製品の分類を表す追加の名前です。
 
 Common Data Service を使用すると、Supply Chain Management の製品番号も、Common Data Service の製品番号になります。 製品バリアントは、特徴的製品として Common Data Service に同期されます。
-
-> [!NOTE]
-> 製品番号を「%」で開始することはできません。
 
 ## <a name="item-number-and-product-dimensions"></a>品目番号および製品分析コード
 

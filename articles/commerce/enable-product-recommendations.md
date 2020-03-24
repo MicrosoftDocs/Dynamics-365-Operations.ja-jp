@@ -3,7 +3,7 @@ title: 製品推奨事項の有効化
 description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為的知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d3f1bc2526eeacb4bd6338a0679eadd95a75989
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 879fccb063ca0b74e0f022a9edf6a15f7d1311ae
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024959"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127885"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -38,7 +38,7 @@ ms.locfileid: "3024959"
 
 ADLS を有効にする手順については、[Dynamics 365 環境で ADLS を有効にする方法](enable-ADLS-environment.md) を参照してください。
 
-さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[こちら](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures) を参照してください。
+さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[こちら](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures) を参照してください。
 
 
 ## <a name="turn-on-recommendations"></a>推奨事項を有効にする
@@ -70,13 +70,23 @@ Commerce バック オフィスで推奨事項を有効にした後、レイア�
 
 [製品推奨事項の概要](product-recommendations.md)
 
-[パーソナライズされた推奨事項の有効化](personalized-recommendations.md)
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
 
-[ページへの製品推奨リストの追加](add-reco-list-to-page.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
-[POS デバイスへの推奨事項パネルの追加](add-recommendations-control-pos-screen.md)
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
 
-[製品収集モジュールの概要](product-collection-module-overview.md)
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
 
-[Dynamics 365 環境での ADLS の有効化](enable-ADLS-environment.md)
+[POS での製品推奨事項の追加](product.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
 

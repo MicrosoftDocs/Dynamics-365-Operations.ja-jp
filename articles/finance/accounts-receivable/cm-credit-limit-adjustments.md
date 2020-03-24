@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5e2fbe74d24c729711c6b96d5ff2b7f0c82922c
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 9b236f489fa2045bdff05f76fadbeacc2f9ed2f4
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015295"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124211"
 ---
 # <a name="credit-limit-adjustments"></a>与信限度額の調整 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 与信限度額調整では、単一の顧客、顧客グループ、またはすべての顧客について、転記プロセスを通じて与信限度額と有効期限を更新します。 与信限度額調整エントリを追加して顧客や顧客の与信グループを更新したり、それらを使用して自動与信限度額を計算したりできます。 その後、エントリを確認し、ワークフローを通じて承認を受けるために送信して、顧客アカウントに転記できます。
 

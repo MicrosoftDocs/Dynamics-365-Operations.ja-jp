@@ -3,7 +3,7 @@ title: レシート番号のリセット
 description: このトピックでは、目的の日付 (たとえば、会計年度や暦年) のさまざまなアクションに使用されるレシート番号をリセットする方法について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,17 +19,17 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e81ff86a8b8a4dca6b14a21d6e982b03a928d29e
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020081"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123949"
 ---
 # <a name="reset-receipt-numbers"></a>レシート番号のリセット 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 小売業者は、現金売りトランザクション、返品トランザクション、顧客注文、見積、支払など店舗のさまざまなアクションに対するレシート番号を生成します。 小売業者は独自のレシート形式を定義していますが、一部の国や地域ではこれらのレシート形式に制限を課す規制があります。 たとえば、これらの規制はレシートの文字数を制限する、連続するレシート番号を要求する、一部の特殊文字を制限する、年初にレシート番号をリセットするなどの制限を課す可能性があります。 Microsoft Dynamics 365 Commerce では、レシート番号管理のプロセスが非常に柔軟になり、小売業者が規制要件を満たすのに役立ちます。 このトピックでは、レシート番号をリセットする機能の使用方法について説明します。
 

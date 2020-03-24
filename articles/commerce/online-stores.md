@@ -3,7 +3,7 @@ title: オンライン ストア チャネルのセットアップ
 description: この記事は、オンライン ストア チャネルに関する情報、およびそれらを Dynamics 365 Commerce で設定する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023219"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096897"
 ---
 # <a name="set-up-an-online-store-channel"></a>オンライン ストア チャネルのセットアップ
 
@@ -71,3 +71,27 @@ Commerce クライアントでオンライン ストアを作成します。 こ
 組織階層を作成したら、目的をその階層に割り当てます。 目的は、ビジネス構造で階層を使用する方法を示します。 店舗の工程に 1 つの組織階層を作成し、品揃え、補充、およびレポートにその階層を使用できます。 
 
 また、目的ごとに組織階層を作成できます。 また、同じ目的を持つ複数の階層を作成し、それぞれにチャンネルを割り当てることもできます。 オンライン ストアに製品カタログを公開する場合は、少なくともオンライン ストアを品揃えの組織階層に追加する必要があります。 カタログの製品は、オンライン ストアに割り当てられている品揃えから選択します。 カタログが公開されると、公開プロセスは、オンライン ストアで使用できるようにする製品を決定するために、カタログに含まれる製品があるオンライン ストアに割り当てられている品揃えの有効日を比較します。
+
+## <a name="additional-resources"></a>追加リソース
+
+[ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
+
+[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+
+[E コマース サイトの作成](create-ecommerce-site.md)
+
+[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+
+[robots.txt ファイルの管理](manage-robots-txt-files.md)
+
+[URL リダイレクトの一括アップロード](upload-bulk-redirects.md)
+
+[B2C テナントを Commerce に 設定](set-up-B2C-tenant.md)
+
+[ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
+
+[Commerce 環境での複数の B2C テナントのコンフィギュレーション](configure-multi-B2C-tenants.md)
+
+[コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
+
+[場所に基づく店舗検出の有効化](enable-store-detection.md)

@@ -1,9 +1,9 @@
 ---
-title: Curated 製品推奨事項リストの作成
-description: このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の顧客のために、手動の製品リストを作成および管理する方法を説明します。
+title: 収集された推奨事項の手動作成
+description: このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の顧客のために、製品リストを手動で作成および管理する方法を説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024936"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127724"
 ---
-# <a name="create-curated-product-recommendation-lists"></a>Curated 製品推奨事項リストの作成
+# <a name="manually-create-curated-recommendations"></a>収集された推奨事項の手動作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の顧客のために、手動の製品リストを作成および管理する方法を説明します。
+このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の顧客のために、製品の推奨リストを手動で作成および管理する方法を説明します。
 
 キュレーション リストとは、ユーザーによって作成され、精選された、個々のコンテンツの集合のことです。  
 
@@ -56,8 +56,22 @@ ms.locfileid: "3024936"
 
 [製品推奨事項の概要](product-recommendations.md)
 
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[ページへの製品推奨リストの追加](add-reco-list-to-page.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
-[製品収集モジュールの概要](product-collection-module-overview.md)
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[POS での製品推奨事項の追加](product.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)

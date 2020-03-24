@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957370"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117340"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
+
+[!include [banner](../includes/banner.md)]
 
 ビジネス ユーザーは、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国 / 地域の法的要件に従って発信ドキュメントの形式を構成できます。 また、生成されるドキュメントに配置されるアプリケーション データを指定するため、データフローを定義することもできます。 ER フレームワークは、定義済みテンプレートを使用して、Microsoft Office 形式 (Excel Workbooks または Word ドキュメント) で発信ドキュメントを生成します。 必要なドキュメントが生成されるときに、構成されたデータフローに従って、テンプレートに必要なデータが設定されます。 特定の発信ドキュメントを生成するために、ER ソリューションの一部として、構成された各形式を公開できます。 これは、異なる発信ドキュメントを生成するために使用できるテンプレートを含める ER 形式コンフィギュレーションによって、表示されます。 ビジネス ユーザーは、このフレームワークを使用して、必要なビジネス ドキュメントを管理できます。
 
@@ -147,7 +149,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![ドキュメント管理のドキュメント タイプを設定](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">パラメータの設定</a>
+### <a name=""></a><a name="SetupBdmParameters">パラメータの設定</a>
 
 基本ビジネス ドキュメント管理パラメータは、**ビジネス ドキュメント パラメーター**ページで設定できます。 特定のユーザーのみがページにアクセスできます。 これには、次のものが含まれます。
 
@@ -158,7 +160,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 1. **ビジネス ドキュメント パラメーター** ページへのアクセス権を持つユーザーとして、ログインします。
 2. **組織管理** \> **電子レポート** \> **ビジネス ドキュメント管理** \> **ビジネス ドキュメント パラメーター**の順で移動します。
-3.  **ビジネス ドキュメント パラメーター**ページの**添付ファイル**タブから、**SharePoint ドキュメント タイプ**フィールドで、Office デスクトップ アプリケーションを使用して編集する間に、Office 形式のテンプレートを一時的に保存する際に使用するドキュメント タイプを定義します。 
+3.    **ビジネス ドキュメント パラメーター**ページの**添付ファイル**タブから、**SharePoint ドキュメント タイプ**フィールドで、Office デスクトップ アプリケーションを使用して編集する間に、Office 形式のテンプレートを一時的に保存する際に使用するドキュメント タイプを定義します。 
 
 > [!NOTE]
 > このパラメーターでは、SharePoint 場所を使用してコンフィギュレーションされているタイプのドキュメントのみを使用できます。
@@ -288,13 +290,13 @@ ER コンフィギュレーションのインポートの詳細については�
 
 ![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Office 365 でテンプレートを編集</a>
+### <a name=""></a><a name="EditInOffice365">Office 365 でテンプレートを編集</a>
 
-Office 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure blob storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
+Office 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure Blob Storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
 
 ![ビジネス ドキュメント管理のテンプレートのエディター ページ](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Office のデスクトップ アプリケーションでのテンプレートの編集</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Office のデスクトップ アプリケーションでのテンプレートの編集</a>
 
 > [!NOTE]
 > この機能は、**SharePoint ドキュメント タイプ** パラメーターが正しくコンフィギュレーションされている場合にのみ使用可能です。 詳細については、[パラメーターのコンフィギュレーション](#SetupBdmParameters) を参照してください。
@@ -398,7 +400,7 @@ Office 365 を使用してテンプレートを変更できます。 たとえ�
 3. 最初のアプリケーション セッションの **BDM テンプレート エディター**ページで、**保存されたコピーの同期**を選択します。
 4. 2 番目のアプリケーション セッションで、このテンプレートの ER 形式を実行します。
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>「値を Null にすることは出来ません」というエラーが発生。 パラメーター名: externalId’、**デスクトップ アプリケーションを開く**を選択した場合。 回避するにはどうすればよいですか。 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>「値を Null にすることは出来ません」というエラーが発生しました。 パラメーター名: externalId、**デスクトップ アプリケーションを開く**を選択した場合。 回避するにはどうすればよいですか。 
 ほとんどの場合、このインスタンスを配置するために使用された Azure AD ドメインと異なる Azure AD ドメイン アプリケーションの、現インスタンスにログインします。 Office デスクトップ アプリケーションを使用して編集可能にするためのテンプレートを保存するために使用される SharePoint サービスは、同じドメインに属しているので、SharePoint サービスにアクセスするためのアクセス許可はありません。 この問題を解決するには、適切な Azure AD ドメインを持つユーザーの資格情報を使用して、現インスタンスにログインします。
 
 ## <a name="additional-resources"></a>追加リソース

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7ad1b8ff9f00dba41c02e6426662a03c6c6211b
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 872d129494b815d6dbf88cc9f84b4e80723a8d6d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015294"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124326"
 ---
 # <a name="add-credit-management-information-for-customers"></a>顧客の与信管理情報の追加
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 与信管理を制御するパラメーターを設定した後、各顧客に対して詳細を追加できます。 これらの詳細は、与信管理プロセスを制御するので、回収チームのメンバーが顧客を管理するのに役立つ追加情報を提供します。
 

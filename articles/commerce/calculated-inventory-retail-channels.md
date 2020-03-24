@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083021"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113923"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>小売チャネルの引当可能在庫数量の計算
 
@@ -41,7 +41,7 @@ ms.locfileid: "3083021"
 顧客が E コマース サイトでショッピングをしている場合は、次の APIs 使用して製品の在庫状態を示すことができます。
 
 - **GetEstimatedAvailability** – E コマース チャネルのフルフィルメント グループのコンフィギュレーションにリンクされた E コマースの倉庫または全ての倉庫の品目の在庫状態を取得するには、この API を使用してください。 この API は、経度および緯度のデータに基づいて、特定の検索領域または半径における倉庫に使用することもできます。
-- **ProductWarehouseInventoryAvailabilities** – 特定の倉庫からの品目の在庫を要求するには、この API を使用してください。 たとえば、注文の集荷を伴うシナリオで、在庫状態を表示するために使用できます。
+- **GetEstimatedProductWarehouseAvailability** – 特定の倉庫からの品目の在庫を要求するには、この API を使用してください。 たとえば、注文の集荷を伴うシナリオで、在庫状態を表示するために使用できます。
 
 > [!NOTE]
 > こららの APIs は、Dynamics 365 Retail バージョン 10.0.7 およびそれ以前のバージョンの **GetProductAvailabilities** と **GetAvailableInventoryNearby** APIs を置き換えます。

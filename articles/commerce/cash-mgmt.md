@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 28b034c9b2a2c7ae63b055338dea3aab4a3b86f2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023133"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127701"
 ---
 # <a name="cash-management-improvements"></a>現金管理の改善
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 現金管理は、現物店舗の小売業者にとって重要な機能です。 小売業者は、店舗内のレジスターとレジ担当者間にて、現金の完全なトレーサビリティと責任、および動きが分かるシステムを店舗に必要としています。 すべての相違点を調整し、説明責任を決定を可能にする必要があります。
 

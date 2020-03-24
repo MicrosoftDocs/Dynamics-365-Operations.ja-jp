@@ -1,6 +1,6 @@
 ---
 title: 支払頻度の設定
-description: ''
+description: Microsoft Dynamics 365 Human Resources は、支払頻度を使用して年間給付金給与を計算し、従業員が各支払期間に支払う給付金割増金額を決定し、支払いがプロバイダーに行われる頻度を定義します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5fe0a16c4abbb9241fcdac88fd56e92bf04788c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b786485ab53dcdb3b7e5ff02562f674a7f8e6eae
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009733"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092594"
 ---
 # <a name="set-up-payment-frequencies"></a>支払頻度の設定
 

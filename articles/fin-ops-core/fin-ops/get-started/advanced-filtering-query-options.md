@@ -1,9 +1,9 @@
 ---
 title: 高度なフィルター処理とクエリ構文
-description: この記事では、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは matches (一致) 演算子を使う時に利用できます。
+description: このトピックでは、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは matches (一致) 演算子を使う時に利用できます。
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931291"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112194"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは **matches (一致)** 演算子を使う時に利用できます。
+このトピックでは、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは**一致**演算子を使う時に利用できます。
 
 ## <a name="advanced-query-syntax"></a>高度なクエリ構文
 
@@ -122,13 +122,14 @@ ms.locfileid: "2931291"
 <td>2 つの連続した二重引用符 (<strong>""</strong>) は、現在の列に対する値のない行を検索します。</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL ステートメント</span>) (SQL ステートメントをかっこで囲む)</td>
+<td>(<span class="code">Finance and Operationsクエリ</span>) (Finance and Operations かっこ間のクエリ)</td>
 <td>定義されたクエリと一致</td>
-<td>クエリをかっこに囲まれた SQL ステートメントとして入力します。</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Finance and Operations クエリ言語を使用して、かっこの間にクエリを SQL ステートメントとして入力します。</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       ルート データソースのフィールドと別のデータソースのフィールドのフィルター条件の構文の例として (すべての顧客ページ用)</td>
 </tr>
 <tr>
-<td>選択した</td>
+<td>T</td>
 <td>今日の日付</td>
 <td><strong>T</strong> を入力します</td>
 <td><strong>T</strong> 今日の日付に一致します。</td>

@@ -3,7 +3,7 @@ title: 製品推奨事項に関するよく寄せられる質問
 description: このトピックでは、製品推奨事項またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003030"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127793"
 ---
 # <a name="product-recommendations-faq"></a>製品推奨事項に関するよく寄せられる質問
 
@@ -75,12 +75,28 @@ ms.locfileid: "3003030"
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>POS で推奨事項を有効にするにはどうすればよいですか。
 
-製品の推奨事項を有効にした後、制御 POS 画面に推奨事項パネルを追加する必要があります。 POS デバイス レイアウトに推奨事項パネルを追加する方法の詳細については、[この機能のドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)を参照してください。
+製品の推奨事項を有効にした後、制御 POS 画面に推奨事項パネルを追加する必要があります。 詳細については、[POS デバイスのトランザクション画面に推奨事項コントロールを追加](add-recommendations-control-pos-screen.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [製品推奨事項の概要](product-recommendations.md)
 
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[AI-ML ベースの製品推奨事項結果の管理](modify-product-recommendation-results.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[POS での製品推奨事項の追加](product.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
