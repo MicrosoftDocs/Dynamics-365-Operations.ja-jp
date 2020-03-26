@@ -16,14 +16,16 @@ ms.search.region:
 ms.author: ryansand
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 59fc5f3daa58c6744fbfdb180dc4994867593b97
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: f704cc78ce764213a737c5dc592de727bf5843d7
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080751"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117398"
 ---
 # <a name="extend-the-budget-planning-layout"></a>予算計画レイアウトの拡張
+
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要
 

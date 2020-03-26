@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2020-01-10
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: d792daa56d468830b56eb395fadda582b3b5bad6
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 0871017ebe111464e79800ef83b90931afb50df0
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015286"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124119"
 ---
 # <a name="manage-expense-delegation"></a>経費の委任の管理
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 経費委任ユーザーは、組織内で別の従業員の代理として経費精算書を作成および管理できます。
 

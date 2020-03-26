@@ -3,7 +3,7 @@ title: Project Service Automation の統合パラメーター
 description: このトピックでは、Microsoft Dynamics 365 for Project Service Automation を Microsoft Dynamics 365 Finance に統合するときに既定のデータを入力しコンフィギュレーションする方法について説明します。
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174933"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096254"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Project Service Automation 統合パラメーター
 
 [!include[banner](../includes/banner.md)]
 
 **Project Service Automation 統合パラメーター** ページで、Dynamics 365 Project Service Automation を Dynamics 365 Finance に統合するときに既定のデータを入力する方法をコンフィギュレーションできます。 プロジェクトが Project Service Automation から Finance に正常に同期されるには、次のフィールドが設定されるている必要があります。
+
+**Project Service Automation 統合パラメーター** ページを開くには、**プロジェクト管理および会計** \> **設定** \> **Dynamics 365 for Project Service Automation 統合パラメーター**に移動します。 
 
 > [!NOTE]
 > - プロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、および機能ロックは、バージョン 8.0 で利用できます。

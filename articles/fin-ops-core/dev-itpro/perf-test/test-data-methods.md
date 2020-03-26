@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 7dadee3e44a2b152f78dffa0aa3dd60a29770f49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6125ac0e03ab991c72ed9ae8bcfac042a1a1ca7
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191806"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124832"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 
@@ -46,7 +46,7 @@ ms.locfileid: "2191806"
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 salesOrder = data.sales().salesOrders().initDefault();
 
 purchaseOrder = data.purch().purchaseOrders().createDefault();
@@ -58,7 +58,7 @@ purchaseOrder = data.purch().purchaseOrders().createDefault();
 
 #### <a name="example"></a>例
 
-```
+```xpp
 public AtlEntitySalesOrder createDefault()
 {
     AtlEntitySalesOrder salesOrder = this.initDefault();
@@ -75,7 +75,7 @@ public AtlEntitySalesOrder createDefault()
 
 #### <a name="example"></a>例
 
-```
+```xpp
 public AtlEntitySalesOrder initDefault()
 {
     AtlEntitySalesOrder salesOrder;
@@ -103,7 +103,7 @@ public AtlEntitySalesOrder initDefault()
 
 ### <a name="example"></a>例
 
-```
+```xpp
 catchWeightItem = data.invent().items().cwBuilder();
 ```
 
@@ -119,7 +119,7 @@ catchWeightItem = data.invent().items().cwBuilder();
 
 ### <a name="example"></a>例
 
-```
+```xpp
 fifo = data.invent().modelGroup().fifo();
 ```
 
@@ -127,7 +127,7 @@ fifo = data.invent().modelGroup().fifo();
 
 場合によっては、実際の名前が契約をより理解しやすくします。
 
-```
+```xpp
 pieces = data.common().units().pieces();
 ```
 
@@ -139,7 +139,7 @@ pieces = data.common().units().pieces();
 
 - 同じ一般的なデータ メソッドを 2 回呼び出すと、同じエンティティへの参照を呼び出し元に提供する必要があります。
 
-    ```
+    ```xpp
     fifo1 = data.invent().modelGroups().fifo();
     fifo2 = data.invent().modelGroups().fifo();
     fifo1.InventModelGroupId == fifo2.InventModelGroupId;
@@ -147,13 +147,13 @@ pieces = data.common().units().pieces();
 
 - テスト エンティティの作成はいつも努力に値するとは限りません。 テスト エンティティが作成されない場合は、対応するレコード バッファが一般的なデータ メソッドから返される必要があります。 たとえば、サイト エンティティの作成に時間と労力を費やさなければ、`site` の一般的なデータ メソッドは InventSite レコードを返します。
 
-    ```
+    ```xpp
     InventSite site = data.invent().sites().default();
     ```
 
 - このアプローチが理にかなっている場合、一般的なデータ メソッドは ID をオプション パラメータとして取ることができます。
 
-    ```
+    ```xpp
     item1 = data.products().items().default('Item1');
     item2 = data.products().items().default('item2');
     ```
@@ -164,7 +164,7 @@ pieces = data.common().units().pieces();
 
 #### <a name="example"></a>例
 
-```
+```xpp
 public InventTable whsBatchAbove(ItemId _itemId = this.whsBatchAboveItemId())
 {
     InventTable whsItem = InventTable::find(_itemId, true);
@@ -188,7 +188,7 @@ public InventTable whsBatchAbove(ItemId _itemId = this.whsBatchAboveItemId())
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 data.sales().salesOrders().ensureCanCreate();
 
 data.purch().purchaseOrders().ensureCanPostProductReceipt();
@@ -200,7 +200,7 @@ data.purch().purchaseOrders().ensureCanPostProductReceipt();
 
 #### <a name="example"></a>例
 
-```
+```xpp
 public void ensureCanCreate()
 {
     data.helpers().setNumberSequenceReference(extendedTypeNum(InventDimId));
@@ -221,7 +221,7 @@ public void ensureCanCreate()
 
 ### <a name="examples"></a>例
 
-```
+```xpp
 loadLinesQuery = data.whs().loadLines().query();
 
 purchaseLinesQuery = data.invent().transferOrderLines().query();
@@ -237,7 +237,7 @@ purchaseLinesQuery = data.invent().transferOrderLines().query();
 
 ### <a name="example"></a>例
 
-```
+```xpp
 loadLinesSpec = data.whs().loadLines().spec();
 ```
 
@@ -251,7 +251,7 @@ loadLinesSpec = data.whs().loadLines().spec();
 
 ### <a name="example"></a>例
 
-```
+```xpp
 salesOrder = data.sales().salesOrders().find(salesOrderId);
 ```
 

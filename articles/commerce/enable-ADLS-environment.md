@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce 環境での ADLS の有効化
 description: このトピックでは、Dynamics 365 Commerce 環境に対して、製品推奨事項を有効にする前提条件である Azure Data Lake Storage (ADLS) を有効化し、テストする方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 068eb522bd44e02dd31d3337a051691a956637fc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025260"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127770"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Dynamics 365 Commerce 環境での ADLS の有効化
 
@@ -95,8 +95,22 @@ ADLS の詳細については、[ADLS 公式ドキュメント](https://azure.mi
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[ページへの製品推奨リストの追加](add-reco-list-to-page.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
-[POS デバイスのトランザクション画面への推奨事項コントロールの追加](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[POS での製品推奨事項の追加](product.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
 
 

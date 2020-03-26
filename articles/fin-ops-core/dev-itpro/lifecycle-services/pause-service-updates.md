@@ -1,9 +1,9 @@
 ---
 title: Lifecycle Services (LCS) によるサービスの更新の一時停止
 description: このトピックは環境に応じてサービスの更新を一時停止する方法を説明します。
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,21 +12,21 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d2a21690fbee9b033ef25afb3f9f8a2dc7cae3fa
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 1e014d3ae55953f539b1cf1de413d398692d5815
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553010"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117405"
 ---
 # <a name="pause-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の一時停止
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは Microsoft Dynamics Lifecycle Services (LCS) を使用して、サンドボックスおよび運用環境の更新を一時停止する方法を説明します。
+このトピックでは Microsoft Dynamics Lifecycle Services (LCS) を使用して、サンドボックスおよび運用クラウド環境の更新を一時停止する方法を説明します。 このトピックは、オンプレミス環境には適用されません。
 
 > [!IMPORTANT]
 > この機能は **バージョン 8.1 以降** を使用しているお客様、または **バージョン 7.3** を使用していて、[初回リリース](../../../fin-ops-core/fin-ops/get-started/public-preview-releases.md) プログラムに参加して **いない** お客様だけが利用できます。 Microsoft はこの機能を初回リリースのお客様が利用できるようにすることを目指しています。 バージョン 7.1、7.2、または 8.0 のお客様は、通常のサービス フローを使用して手動で更新を行うことができます。

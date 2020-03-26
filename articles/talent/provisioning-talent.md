@@ -3,7 +3,7 @@ title: Talent のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 Talent の新しい環境のプロビジョニングについて説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025512"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124707"
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
 
@@ -34,17 +34,23 @@ ms.locfileid: "3025512"
 Talent 環境を管理するために LCS を使用するには、最初に LCS プロジェクトを作成する必要があります。
 
 1. Talent をサブスクライブするために使用したアカウントを使用して [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
+
 2. プラス記号 (**+**) を選択してプロジェクトを作成します。
+
 3. 製品名、製品バージョンとして **Microsoft Dynamics 365 Talent** を選択します。
+
 4. **Dynamics 365 Talent** 方法を選択します。
-5. **作成** を選択します。
+
+5. **作成** を選択します。 
 
 Talent を使い始める方法については、新しいプロジェクトで作成した **Talent** の方法を参照してくだい。 プロジェクトの作成が終了したら、Talent 環境を設定するために次の手順を完了してください。
 
 ## <a name="provision-a-talent-project"></a>Talent プロジェクトのプロビジョニング
+
 LCS プロジェクトを作成した後は、環境に Talent をプロビジョニングすることができます。
 
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
+
 2. これが人材のサンドボックスまたは実稼働インスタンスであるかどうかを示します。 初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。 
 
     > [!NOTE]
@@ -52,13 +58,13 @@ LCS プロジェクトを作成した後は、環境に Talent をプロビジ�
 
     > [!NOTE]
     > Talent のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。
+
 3. Talent テスト ドライブ エクスペリエンスで使用される同じデモ データのセットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 これは長期的なデモまたはトレーニング環境に便利であり、稼動環境で使用されることはありません。  初期展開時にこのオプションを選択する必要があることに注意してください。 後で、既存の配置を更新することはできません。
+
 4. Talent は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、このトピックの「Power Apps 環境の選択」を参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。
 
-    > [!NOTE]
-    > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は Power Apps P2 ライセンスに割り当てられる必要があります。 組織に Power Apps P2 ライセンスがない場合、CSP または [Power Apps 価格ページ](https://powerapps.microsoft.com/pricing/) から入手することができます。
-
 5. 人材を供給する環境を選択します。
+
 6. 使用条件に同意、および展開を開始するために **はい** を選択します。
 
     新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。 ただし、配置状態が**配置済み**に更新されるまでは、環境の使用を開始できません。 このプロセスには通常、数分間かかります。 プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。
@@ -77,9 +83,13 @@ Talent と Power Apps 環境との統合では、Power Apps ツールを使用�
 Talent を配置する Power Apps 環境を決定する際には、次のガイダンスを参考にしてください。 
 
 1. LCS で**環境の管理**を選択するか、または Power Apps 管理者センターに直接移動して、既存の環境を表示および新しい環境を作成できます。
+
 2. 1 つの Talent 環境は、1 つの Power Apps 環境にマップされます。
+
 3. Power Apps 環境には、対応する Power Apps、Power Automate、および Common Data Service アプリケーションと共に、Talent アプリケーションが含まれています。 Power Apps 環境を削除すると、その中のアプリも削除されます。 Talent 環境をプロビジョニングする場合、**試用版**または**製品版**環境のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
+
 4. サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。 Power Apps 環境にマッピングされている Talent 環境を後になって変更することは容易ではないため、配置へのさまざまな影響について考慮することをお勧めします。
+
 5. 次の Power Apps 環境は Talent に対しては使用できず、LCS 内の選択リストからもフィルター処理されます。
  
     - **既定の Power Apps 環境** - 各テナントは、既定の Power Apps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは Power Apps 環境にアクセスすることができ、Power Apps または Power Automate 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
@@ -91,4 +101,5 @@ Talent を配置する Power Apps 環境を決定する際には、次のガイ�
 6. 使用する正しい環境を決定した後、プロビジョニング プロセスを続行できます。 
  
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
+
 既定では、環境を作成したグローバル管理者がそこにアクセスできます。 ただし、追加のアプリケーション ユーザーは、明示的にアクセスを許可する必要があります。 アクセスを許可するには、人事管理環境でユーザーを追加し適切なロールを割り当てる必要があります。 Talent を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard の両方も起動する必要があります。  これが発生するまで、他のユーザーは Attract および Onboard にアクセスすることはできませんし、アクセス違反エラーが発生します。 詳細については、[新規ユーザーの作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。 

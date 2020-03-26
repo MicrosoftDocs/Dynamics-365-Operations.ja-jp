@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26c62aa72a7919c780bb709b185b48c97066c538
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e2fa54ff598bb6a09bbcc483995a6e1a3f4286b3
+ms.sourcegitcommit: 16612a632aad9d390f8d80d3fc1f766585b2911e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836315"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3098079"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>一時仕入先に対する発注書の作成
 
@@ -37,5 +37,5 @@ ms.locfileid: "1836315"
     * 仕入先は自動的に作成され、発注書に割り当てられます。 仕入先は、買掛金勘定パラメーター ページで一般タブで指定したテンプレートに基づいて作成されます。  
 4. [名前] フィールドには、仕入先の名前を入力します。
 5. [OK] をクリックします。
-    * これで他のすべての注文と同様に、発注書を完了し、処理できます。 この実行方法に関する特殊な属性はありません。 請求書では、注文に伴い作成し、その後支払いの処理を実行する仕入先のトランザクションの期日が計上されます。 これが完了すると、仕入先を削除できます。 これは通常、買掛金勘定部門により実行されます。  
+    * これで他のすべての注文と同様に、発注書を完了し、処理できます。 この実行方法に関する特殊な属性はありません。 請求書では、注文に伴い作成し、その後支払いの処理を実行する仕入先のトランザクションの期日が計上されます。
 

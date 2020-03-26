@@ -1,6 +1,6 @@
 ---
-title: 補償オプションを作成する
-description: ''
+title: 補充オプションの作成
+description: Microsoft Dynamics 365 Human Resources の補償オプションは、医療プランの場合は従業員のみ、生命保険プランの場合は 2 倍の給与など、計画またはプログラムでの参加者が選択する補償のレベルです。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27b43d858a92beac526ac0fc40b544649ef658b0
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009620"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092709"
 ---
-# <a name="create-coverage-options"></a>補償オプションを作成する
+# <a name="create-coverage-options"></a>補充オプションの作成
 
 [!include [banner](includes/preview-feature.md)]
 

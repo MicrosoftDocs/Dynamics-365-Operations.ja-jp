@@ -1,9 +1,9 @@
 ---
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 description: このトピックでは、オンプレミス環境の計画、設定、および展開方法について説明します。
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0ad100baf335464b45922707bc89333df89daebc
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: a25ed6e35892d3355855fd20d59bcf57aff85225
+ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029436"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100512"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
@@ -91,7 +91,7 @@ Finance and Operations は、Windows Server に基づく Hyper-V 仮想化環境
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
-- Windows Server 2016 仮想マシン (VM) に基づく Standalone Service Fabric Cluster
+- Windows Server 2016 仮想マシン (VM) に基づく スタンドアロン Service Fabric Cluster
 - Microsoft SQL Server (Clustered SQL と Always-On の両方がサポートされています)
 - 認証のための AD FS
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
@@ -181,7 +181,7 @@ Finance and Operations のインフラストラクチャを設定するには、
 20. [LCS からの Finance and Operations (オンプレミス) 環境の配置](#deploy)
 21. [Finance and Operations (オンプレミス) 環境への接続](#connect)
 
-### <a name="plandomain"></a> 1. ドメイン名と DNS ゾーンの計画
+### <a name="1-plan-your-domain-name-and-dns-zones"></a><a name="plandomain"></a> 1. ドメイン名と DNS ゾーンの計画
 
 AOS のプロダクション インストールには、公的に登録されたドメイン名を使用することをお勧めします。 このようにして、外部アクセスが必要な場合は、ネットワークの外部からインストールにアクセスできます。
 
@@ -190,7 +190,7 @@ AOS のプロダクション インストールには、公的に登録された
 - AOS の機械の場合 ax.d365ffo.onprem.contoso.com
 - Service Fabric クラスターの場合 sf.d365ffo.onprem.contoso.com
 
-### <a name="plancert"></a> 2. 証明書の計画と取得
+### <a name="2-plan-and-acquire-your-certificates"></a><a name="plancert"></a> 2. 証明書の計画と取得
 
 Service Fabric クラスターと展開されているすべてのアプリケーションを保護するには、Secure Sockets Layer (SSL) 証明書が必要です。 プロダクションとサンドボックスのワークロードについては、[DigiCert](https://www.digicert.com/ssl-certificate/)、[Comodo](https://ssl.comodo.com/)、[Symantec](https://www.websecurity.symantec.com/ssl-certificate)、[GoDaddy](https://www.godaddy.com/web-security/ssl-certificate)、または [GlobalSign](https://www.globalsign.com/en/ssl/) などの認証局から証明書を取得することをお勧めします。 ドメインが [Active Directory 証明書サービス](https://technet.microsoft.com/library/cc772393(v=ws.10).aspx) (AD CS) で設定されている場合は、AD CS を介して証明書を作成します。 証明書ごとに、プライベート キーが作成されたキーの交換を含める必要があり、個人情報交換 (.pfx) ファイルにエクスポート可能な必要があります。
 
@@ -226,7 +226,7 @@ DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
 
-### <a name="plansvcacct"></a> 3. ユーザーとサービス アカウントの計画
+### <a name="3-plan-your-users-and-service-accounts"></a><a name="plansvcacct"></a> 3. ユーザーとサービス アカウントの計画
 
 Finance and Operations (オンプレミス) を機能させるために、いくつかのユーザー アカウントまたはサービス アカウントを作成する必要があります。 サービス アカウントの管理グループ (gMSAs)、ドメイン アカウント、および SQL アカウントの組み合わせを作成する必要があります。 次の表は、このトピックで使用されるユーザー アカウント、その目的、および名前の例を示しています。
 
@@ -242,7 +242,7 @@ Finance and Operations (オンプレミス) を機能させるために、いく
 
 \* SQL 認証の SQL ユーザー名とパスワードは、暗号化されてファイル共有に格納されているため、保護されています。
 
-### <a name="createdns"></a> 4. DNS ゾーンの作成とレコードの追加
+### <a name="4-create-dns-zones-and-add-a-records"></a><a name="createdns"></a> 4. DNS ゾーンの作成とレコードの追加
 
 DNS は AD DS と統合されており、ネットワーク内のリソースを整理、管理、検索することができます。 AOS ホスト名と Service Fabric クラスタの DNS 正引き検索ゾーンと A レコードを作成します。 この設定例では、DNS ゾーン名は d365ffo.onprem.contoso.com で、A レコード/ホスト名は次のとおりです。
 
@@ -276,7 +276,7 @@ DNS ゾーンを追加するには、次の手順を実行します。
 1. 新しいゾーンを右クリックして、**新しいホスト** を選択します。
 2. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**10.179.108.15** を IP アドレスとして入力します。) **ホストの追加**を選択します。
 
-### <a name="joindomain"></a> 5. VM のドメインへの参加
+### <a name="5-join-vms-to-the-domain"></a><a name="joindomain"></a> 5. VM のドメインへの参加
 
 各 VM をドメインに参加させるには、[Windows Server 2016 を Active Directory ドメインに参加させる方法](https://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html) の各手順を完了します。 または、次の Windows PowerShell スクリプトを使用します。
 
@@ -290,7 +290,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 VM をドメインに参加させた後、ローカル管理者グループに AOS サービス アカウント **Contoso\svc-AXSF$** と **Contoso\AXServiceUser** を追加します。 詳細については、「[ローカル グループへのメンバーの追加](https://technet.microsoft.com/library/cc772524(v=ws.11).aspx)」を参照してください。
 
-### <a name="downloadscripts"></a> 6. LCS からのセットアップ スクリプトのダウンロード
+### <a name="6-download-setup-scripts-from-lcs"></a><a name="downloadscripts"></a> 6. LCS からのセットアップ スクリプトのダウンロード
 
 > [!IMPORTANT]
 > スクリプトは、オンプレミス インフラストラクチャと同じドメイン内のコンピューターから実行する必要があります。
@@ -306,7 +306,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 > [!IMPORTANT]
 > このフォルダーの ConfigTemplate.xml にすべての編集を加える必要があります。
 
-### <a name="describeconfig"></a> 7. コンフィギュレーションの記述
+### <a name="7-describe-your-configuration"></a><a name="describeconfig"></a> 7. コンフィギュレーションの記述
 
 インフラストラクチャの設定 スクリプトは、次のコンフィギュレーション ファイルを使用して設定を実行します。
 - infrastructure\ConfigTemplate.xml
@@ -349,7 +349,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="configurecert"></a> 8. 証明書のコンフィギュレーション
+### <a name="8-configure-certificates"></a><a name="configurecert"></a> 8. 証明書のコンフィギュレーション
 
 1. **インフラストラクチャ** フォルダーがあるマシンに移動します。
 2. 自己署名証明書を生成する必要がある場合は、次のコマンドを実行します。 スクリプトは証明書を作成し、それらをコンピューターの「CurrentUser\My certificate store」に格納し、XML ファイルのサムプリントを更新します。
@@ -380,7 +380,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupvms"></a> 9. VM の設定
+### <a name="9-setup-vms"></a><a name="setupvms"></a> 9. VM の設定
 1. 各 VM で実行する必要があるスクリプトをエクスポートします。
 
     ```powershell
@@ -423,7 +423,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
     .\Test-D365FOConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupsfcluster"></a> 10. スタンドアロン Service Fabric クラスターの設定
+### <a name="10-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a> 10. スタンドアロン Service Fabric クラスターの設定
 
 1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を使用中の Service Fabric ノードのいずれかにダウンロードします。 ZIP ファイルをダウンロードした後、 ZIP ファイルを右クリックし**プロパティ**を選択してブロックを解除します。 ダイアログ ボックスで、右下の **ブロック解除** チェック ボックスを選択します。
 
@@ -458,7 +458,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
     3. `https://sf.d365ffo.onprem.contoso.com:19080` に移動します。sf.d365ffo.onprem.contoso.com は、ゾーンで指定されている Service Fabric クラスターのホスト名です。 DNS 名前解決が設定されていない場合は、マシンの IP アドレスを使用します。
     4. クライアントの証明書を選択します。 **Service Fabric エクスプローラー** ページが表示されます。
 
-### <a name="configurelcs"></a> 11. テナント用 LCS 接続のコンフィギュレーション
+### <a name="11-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a> 11. テナント用 LCS 接続のコンフィギュレーション
 
 Finance and Operations の展開とサービスは、オンプレミスのローカル エージェントを使用して LCS を通じて調整されます。 LCS から Finance and Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、Contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書を構成する必要があります。
 
@@ -478,7 +478,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     .\AddCertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
-### <a name="setupfile"></a> 12.ファイル ストレージの設定
+### <a name="12-set-up-file-storage"></a><a name="setupfile"></a> 12.ファイル ストレージの設定
 
 以下の SMB 3.0 ファイル共有を設定する必要があります。
 
@@ -513,7 +513,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     2. **タスク**\>**新しい共有** を選択し、新しい共有を作成します。 共有に**エージェント**と名前を付けます。
     3. ローカル展開エージェント (contoso\\svc-LocalAgent$) の gMSA ユーザーに対して **フル コントロール** のアクセス許可を与えます。
 
-### <a name="setupsql"></a> 13. SQL Server の設定
+### <a name="13-set-up-sql-server"></a><a name="setupsql"></a> 13. SQL Server の設定
 
 1. 高可用性を備えた SQL Server 2016 SP1 をインストールします。 (SQL Server の 1 つのインスタンスで十分なサンドボックス環境に配置している場合を除きます。 高可用性シナリオをテストするため、サンドボックス環境に高可用性の SQL Server をインストールできます。)
 
@@ -555,7 +555,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 6. 証明書の公開鍵 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼できるルートにインストールします。
 
-### <a name="configuredb"></a> 14. データベースのコンフィギュレーション
+### <a name="14-configure-the-databases"></a><a name="configuredb"></a> 14. データベースのコンフィギュレーション
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 
@@ -658,7 +658,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
       | svc-FRPS$       | gMSA | db\_owner     |
       | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="encryptcred"></a> 15. 資格情報の暗号化
+### <a name="15-encrypt-credentials"></a><a name="encryptcred"></a> 15. 資格情報の暗号化
 
 1. 任意のクライアント マシンで、LocalMachine\\My certificate store に暗号化証明書をインストールします。
 2. 現在のユーザーにこの証明書の秘密キーへの読み取りアクセスを許可します。
@@ -687,7 +687,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
 
-### <a name="setupssis"></a> 16. SSIS の設定
+### <a name="16-set-up-ssis"></a><a name="setupssis"></a> 16. SSIS の設定
 
 データ管理と統合ワークロードを有効にするには、各 AOS 仮想マシンに SSIS をインストールする必要があります。 各 AOS 仮想マシン上で、次の手順を実行します。
 
@@ -697,12 +697,12 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 詳細については、[統合サービスのインストール](https://docs.microsoft.com/sql/integration-services/install-windows/install-integration-services) を参照してください。
 
-### <a name="setupssrs"></a> 17. SSRS の設定
+### <a name="17-set-up-ssrs"></a><a name="setupssrs"></a> 17. SSRS の設定
 
 1. 開始する前に、このトピックの冒頭に記載されている前提条件がインストールされていることを確認してください。
 2. [オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md) の手順に従います。
 
-### <a name="configureadfs"></a>18. AD FS のコンフィギュレーション
+### <a name="18-configure-ad-fs"></a><a name="configureadfs"></a>18. AD FS のコンフィギュレーション
 
 この手順を完了する前に、AD FS を Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
@@ -747,7 +747,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 これで、インフラストラクチャの設定を完了しました。 次のセクションでは、[LCS](https://lcs.dynamics.com) にアクセスしてコネクタを設定し、Finance and Operations 環境を配置する方法について説明します。
 
-### <a name="configureconnector"></a> 19. コネクタのコンフィギュレーションと、オンプレミスのローカル エージェントのインストール
+### <a name="19-configure-a-connector-and-install-an-on-premises-local-agent"></a><a name="configureconnector"></a> 19. コネクタのコンフィギュレーションと、オンプレミスのローカル エージェントのインストール
 
 1. [LCS](https://lcs.dynamics.com/) にサインインし、オンプレミスの実装プロジェクトを開きます。
 2. ハンバーガー メニューで、**プロジェクト設定**を選択します。
@@ -781,7 +781,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
     ![エージェントの検証](./media/ValidateAgent.PNG)
 
-### <a name="deploy"></a> 20. LCS から Finance and Operations (オンプレミス) 環境を配置する
+### <a name="20-deploy-your-finance-and-operations-on-premises-environment-from-lcs"></a><a name="deploy"></a> 20. LCS から Finance and Operations (オンプレミス) 環境を配置する
 
 1. LCS で、オンプレミス プロジェクトに移動し、**環境** > **サンドボックス**に移動してから**構成**を選択します。
 2. 新しい展開では、環境のトポロジを選択し、展開を開始するウィザードを完了します。
@@ -790,7 +790,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
 
-### <a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境への接続
+### <a name="21-connect-to-your-finance-and-operations-on-premises-environment"></a><a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境への接続
 
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 

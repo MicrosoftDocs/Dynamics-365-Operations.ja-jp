@@ -3,13 +3,13 @@ title: 簡易リストおよび簡易詳細のフォーム パターン
 description: このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 author: jasongre
 manager: AnnBe
-ms.date: 10/08/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 16242
 ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e524b81fc6c6b118e29267dc33ac4961bd3dd393
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 01541af8a12078509b3694ce08b0f93fa512c4f1
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578259"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112278"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
@@ -127,19 +127,19 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 フォーム: **PaymTerm** 
 
-[![簡易リストおよび簡易詳細 – リスト グリッドの例](./media/simplelistanddetails2-1024x558.png)](./media/simplelistanddetails2.png)
+[![簡易リストおよび簡易詳細 – リスト グリッドの例](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### <a name="simple-list-and-details--tabular-grid"></a>簡易リストと詳細 – 表形式のグリッド
 
 フォーム: **ExchangeRate** 
 
-[![簡易リストおよび簡易詳細 - 表形式のグリッドの例](./media/simplelistanddetails3-1024x557.png)](./media/simplelistanddetails3.png)
+[![簡易リストおよび簡易詳細 - 表形式のグリッドの例](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### <a name="simple-list-and-details--tree"></a>簡易リストと詳細 – ツリー
 
-フォーム: **FiscalCalendars** 
+フォーム : **CaseCategorySetup** 
 
-[![簡易リストおよび簡易詳細 – 表形式のグリッドの例](./media/simplelistanddetails4-1024x507.png)](./media/simplelistanddetails4.png)
+[![簡易リストおよび簡易詳細 – 表形式のグリッドの例](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Human Resources へようこそ
-description: ''
+title: ようこそ Dynamics 365 Human Resources
+description: Dynamics 365 Human Resources は、複数の領域にわたってデータ駆動型の従業員エクスペリエンスを構築するために必要となる、従業員に関するインサイトを提供します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fa043d98f7f4c7bf4421082d71b509cf2d7816c3
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 398bfd769946d4b6560e36e2713f06d7b8c4d8d3
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036502"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092086"
 ---
-# <a name="welcome-to-dynamics-365-human-resources"></a>Dynamics 365 Human Resources へようこそ
+# <a name="welcome-to-dynamics-365-human-resources"></a>ようこそ Dynamics 365 Human Resources
 
 Dynamics 365 Human Resources は、次のような、複数の領域にわたってデータ駆動型の従業員エクスペリエンスを構築するために必要となる、従業員に関するインサイトを提供します。
 

@@ -1,7 +1,7 @@
 ---
 title: コマンド ラインからの配置可能パッケージのインストール
 description: このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
-author: manalidongre
+author: jorisdg
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
 ms.search.region: Global
-ms.author: manado
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd5221f41adbb7e2d803c863b2884a825a7b328d
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: da19a07117d7cac72037f22f7726687b621ffa98
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033004"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124823"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 

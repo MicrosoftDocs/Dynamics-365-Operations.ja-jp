@@ -1,7 +1,7 @@
 ---
 title: 配置の保守操作
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
-author: manado
+author: laneswenka
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e4e97c99dd98d3ba313169cc7f5505cd4bf54540
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fc4696478af69226071b6d445258b781da786437
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191583"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096882"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 

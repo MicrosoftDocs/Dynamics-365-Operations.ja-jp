@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015289"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124546"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER 形式におけるシーケンス要素の実行の延期
 
@@ -45,7 +45,7 @@ ms.locfileid: "3015289"
 
 **遅延実行**オプションは、最大長が制限されているトリミング シーケンスとしてコンフィギュレーションされているシーケンスには適用されません。
 
-## <a name="Example"></a>例: ER 形式のシーケンス要素の実行の延期
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>例: ER 形式のシーケンス要素の実行の延期
 
 次のステップは、システム管理者または電子申告機能コンサルタント [ロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) のユーザーが、実行順序が形式階層の順序とは異なるシーケンス要素を含む ER 形式をコンフィギュレーションする方法を説明します。
 

@@ -3,7 +3,7 @@ title: 予算計画データの配賦
 description: このトピックは、Microsoft Dynamics 365 Finance で利用できる配賦方法と、その使用方法ついて説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772079"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106885"
 ---
 # <a name="budget-planning-data-allocation"></a>予算計画データの配賦
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 Finance で利用できる配賦方法と、その使用方法ついて説明します。  
+このトピックは、Microsoft Dynamics 365 Finance で利用できる配賦方法と、その使用方法ついて説明します。  
 
 予想金額を正確に描くさまざまな方法で予算計画のデータを配分できます。
 
 ## <a name="allocation-methods"></a>配賦方法
 3 つの配賦方法 (複数の期間に割り当て、分析コードへの配賦、および元帳配賦ルールの使用) で、同じ予算計画明細行に基づく予算計画明細行を作成できます。 3 つの他の方法 (集計、配分、および予算計画からのコピー) で、他の予算計画での予算計画明細行を作成できます。 すべての 6 つの配賦方法では、ターゲット シナリオを指定します。 ターゲット シナリオは、ソース シナリオと同じ場合も異なる場合もあります。 また、新しい明細行を予算計画に追加するか、予算計画の現在の明細行を置き換えるか指定できます。
+
+> [!NOTE] 
+> 集約には、親計画で以前に実行された配布またはその他の変更に使用されたシナリオとは異なる一意のシナリオを使用する必要があります。  
 
 [![配賦方法を複数の期間に割り当てる](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **複数の期間に割り当て** – 期間割り当てカテゴリを使用して、ソース予算計画シナリオの予算計画明細行を、ターゲット シナリオの期間全域に配賦します。 当初起票額は、期間割り当てカテゴリで定義された割合と日付に基づいて、ターゲット シナリオの複数の明細行に割り当てられます。         

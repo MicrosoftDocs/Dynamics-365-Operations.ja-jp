@@ -1,7 +1,7 @@
 ---
 title: セルフサービス配置で配置された環境のトラブルシューティング
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の問題をトラブルシューティングおよび診断する方法について説明します。
-author: manado
+author: laneswenka
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 2f086e97f95f08c14cc439256bd1458fc9dc8298
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0991493b566d12dcac309c9d91270742cf00c1b0
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191624"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096738"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 

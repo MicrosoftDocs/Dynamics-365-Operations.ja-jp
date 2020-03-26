@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365 プレビューの追加使用条件
 description: Microsoft Dynamics 365 プレビューの追加使用条件。
-author: manalidongre
+author: meeramahabala
 manager: AnnBe
 ms.date: 09/12/2019
 ms.topic: article
@@ -13,15 +13,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: manado
+ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 1a683a14e2129762b111973cea1c1c2ce0f869f1
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: d6c0046421ded9126647d84dacb8b79f31481b17
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983606"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117397"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件 
 

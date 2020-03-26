@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1f81fa4dd2d9c998fd9ae574ad8ba0e954641bb
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: f295dfcbdf36aa1a363c7db1aae5e3baf89c9e2c
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082019"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117404"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
+
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > 実稼働環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。

@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations アプリ プラットフォーム更新プログラム 33 (2020 年 4 月) の機能をプレビューする
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 でプレビューされている機能について説明します。
+title: Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
+description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 96f50cb9b343ba6ebb0c367023636c41d52bee6b
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 5dbdb7ed70305de355da436cd7d0fb7de0e8dc41
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029423"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124831"
 ---
-# <a name="preview-features-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリ プラットフォーム更新プログラム 33 (2020 年 4 月) の機能をプレビューする
+# <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能についてプレビューします。 このバージョンのビルド番号は 7.0.5559 で、次のスケジュールで使用できます。
+このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5559 で、次のスケジュールで使用できます。
 
 - **プレビューのリリース:** 2020 年 2 月
 - **一般提供 (自己更新):** 2020 年 3 月
@@ -70,7 +69,7 @@ ms.locfileid: "3029423"
 
 ### <a name="platform-update-33-bug-fixes"></a>プラットフォーム アップデート 33 のバグ修正プログラム
 
-プラットフォーム更新プログラム 32 の一部である各更新プログラムに含まれるバグ修正の詳細については、LCS にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb)を参照してください。
+各更新プログラムに含まれるバグ修正の詳細については、LCS にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb) を参照してください。
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン
 
@@ -78,13 +77,13 @@ ms.locfileid: "3029423"
 
 [Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
-### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
+### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
-- *非推奨*機能は、積極的に開発はされていませんが、将来のアップデートで削除される可能性があります。
+- *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

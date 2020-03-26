@@ -3,7 +3,7 @@ title: プラットフォーム更新の新機能と変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c742246204946d360154f5845db846caac8af23
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: a0a1c00582a6c564d177ec356f3c3f2f84bf90e3
+ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017838"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117157"
 ---
 # <a name="whats-new-and-changed-in-platform-updates"></a>プラットフォーム更新の新機能と変更された機能
 
@@ -30,10 +30,11 @@ ms.locfileid: "3017838"
 
 Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
 
-| **バージョン**        | **ビルド番号** | **在庫状態** | **詳細**                                                                                                                                                                                                                        |
+| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細情報**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| プラットフォーム update 34 | 7.0.5600         | 2020 年 5 月     | [Finance and Operations アプリのプラットフォーム更新 34 のプレビュー機能](whats-new-platform-update-34.md)  |
 | プラットフォーム update 33 | 7.0.5559         | 2020 年 4 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能および変更された機能](whats-new-platform-update-33.md)  |
-| プラットフォーム update 32 | 7.0.5493         | 2020 年 2月     | [Finance and Operations アプリのプラットフォーム更新プログラム 32 の新機能および変更された機能](whats-new-platform-update-32.md)  |
+| プラットフォーム update 32 | 7.0.5493         | 2020 年 2 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 32 の新機能および変更された機能](whats-new-platform-update-32.md)  |
 | プラットフォーム update 31 | 7.0.5457      | 2020 年 1 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能および変更された機能](whats-new-platform-update-31.md) |
 | プラットフォーム update 30 | 7.0.5407       | 2019 年 11 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-30.md) |
 | プラットフォーム update 29 | 7.0.5372         | 2019 年 10 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 29 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-29.md)                      |
@@ -55,7 +56,7 @@ Finance and Operations アプリのプラットフォーム更新での新機能
 | プラットフォーム update 7  | 7.0.4542.16189   | 2017 年 5 月         | [Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-7.md)                                        |
 | プラットフォーム update 6  | 7.0.4509.16180   | 2017 年 4 月       | [Dynamics 365 for Operations プラットフォーム更新プログラム 6 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-6.md)                                      |
 | プラットフォーム update 5  | 7.0.4475.16165   | 2017 年 3 月       | [Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-5.md)                                      |
-| プラットフォーム update 4  | 7.0.4425.16161   | 2017 年 2月    | [Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-4.md)                                   |
+| プラットフォーム update 4  | 7.0.4425.16161   | 2017 年 2 月    | [Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-4.md)                                   |
 | プラットフォーム update 3  | 7.0.4307.16141   | 2016 年 11 月    | [Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-3.md)                                   |
 | プラットフォーム update 2  | 7.0.4230.16130   | 2016 年 8 月      | [Dynamics AX プラットフォーム更新プログラム 2 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-2.md)                                                     |
 | プラットフォーム update 1  | 7.0.4127.16103   | 2016 年 5 月         | [Dynamics AX プラットフォーム更新プログラム 1 の新機能および変更された機能](../../fin-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md)                                    |

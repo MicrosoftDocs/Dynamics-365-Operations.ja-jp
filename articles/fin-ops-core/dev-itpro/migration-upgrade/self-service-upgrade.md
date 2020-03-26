@@ -3,7 +3,7 @@ title: 最新バージョンへのセルフサービス アップグレード
 description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 582c5d84fe1b3630584d452caa79df62a1a1a40a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6892c904e1b8192f6062ec985463350c0c19abc1
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812044"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112771"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
@@ -54,9 +54,9 @@ ms.locfileid: "2812044"
 ### <a name="targeted-release-schedule"></a>対象となるリリース スケジュール
 
 > [!NOTE]
-> この表の日付は変更される可能性があります。
+> この表の日付は変更される可能性があります。 アップグレードは、少なくとも 2 週間、および新規顧客に対する GA の日付 (GA) の 6 週間後に利用できます。 さらに、**アプリケーション 7.3 の対象バージョンを持つアップグレードのサポートは、2020 年 3 月に終了します**。
 
-| 選択可能なバージョン | 新規顧客向けの最新バージョンの一般提供 (GA) | アップグレードの最新バージョンの GA |
+| 選択可能なバージョン | 新規顧客の最新バージョンの GA | アップグレードの最新バージョンの GA |
 |---|---|---|
 | 7.3 の PU 23 – PU 25<br>8.1.3 の PU 23 – 10.0.1 の PU 25 | 2019年4月8日の週 | 2019 年 4 月 29 日の週 |
 | 7.3 の PU 24 – PU 26<br>10.0.0 の PU 24 – 10.0.2 の PU 26 | 2019年5月13日の週 | 2019 年 5 月 27 日の週 |
@@ -65,8 +65,10 @@ ms.locfileid: "2812044"
 | 7.3 の PU 27 – PU 29<br>10.0.3 の PU 27 – 10.0.5 の PU 29 | 2019 年 9 月 17 日の週 | 2019 年 9 月 30 日の週 |
 | 7.3 の PU 28 – PU 30<br>10.0.4 の PU 28 – 10.0.6 の PU 30 | 2019 年 10 月 11 日の週 | 2019 年 10 月 28 日の週 |
 | 7.3 の PU 29 – PU 31<br>10.0.5 の PU 29 – 10.0.7 の PU 31 | 2019 年 11 月 29 日の週 | 2019 年 12 月 30 日の週 |
-| 7.3 の PU 30 – PU 32<br>10.0.6 の PU 30 – 10.0.8 の PU 32 | 2020 年 1 月 17 日の週 | 2020 年 1 月 27 日の週 |
-| 7.3 の PU 31 – PU 33<br>10.0.7 の PU 31 – 10.0.9 の PU 33 | 2020 年 3 月 13 日の週 | 2020 年 3 月 30 日の週 |
+| 7.3 の PU 30 – PU 32<br>10.0.6 の PU 30 – 10.0.8 の PU 32 | 2020 年 1 月 17 日の週 | 2020 年 2 月 17 日の週 |
+| 7.3 の PU 31 – PU 33<br>10.0.7 の PU 31 – 10.0.9 の PU 33 | 2020 年 3 月 3 日の週 | 2020 年 3 月 30 日の週 |
+| 10.0.8 の PU 32 – 10.0.10 の PU 34 | 2020 年 4 月 8 日の週 | 2020 年 4 月 27 日の週 |
+
 
 ## <a name="refactor-your-customizations-as-extensions"></a>カスタマイズを拡張機能としてリファクターします
 

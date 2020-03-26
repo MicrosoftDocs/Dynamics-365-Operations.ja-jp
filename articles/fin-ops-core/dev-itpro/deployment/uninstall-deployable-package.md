@@ -1,27 +1,27 @@
 ---
 title: パッケージのアンインストール
 description: このトピックでは、配置可能パッケージを環境から削除する方法について説明します。
-author: manado
+author: laneswenka
 manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-audience: Developer
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
-ms.author: jorisde
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ef4e8ccc4a9b0e2949176aca9f94675e84fd7c3
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 2ad06ff3225e5c501a941d731228db7d5715145b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983671"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096714"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 

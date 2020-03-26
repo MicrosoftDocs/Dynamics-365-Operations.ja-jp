@@ -18,11 +18,11 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 932784068f12a21335b3a2d90c5125abf1d65b76
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812123"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124811"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 

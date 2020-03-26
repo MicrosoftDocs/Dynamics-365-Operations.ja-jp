@@ -1,6 +1,6 @@
 ---
 title: アプリケーション モジュール
-description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データクエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。 &lt;br&gt;
+description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データクエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
 author: shadykdc
 manager: AnnBe
 ms.date: 09/17/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12ee2b0bb3f3abb3504321776e95bc434f51ab0e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21691ce2506798ff747b03a7fa8af80978112e8e
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191835"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091861"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 
@@ -98,5 +98,5 @@ main(metadataService: [MetadataService](../interfaces/services-business-logic-se
 | cacheService|[CacheService](../interfaces/services-business-logic-services-icacheservice.md)||
 | asyncService|[AsyncService](../interfaces/services-business-logic-services-iasyncservice.md)||
 
-#### <a name="returns-applicationinterfacesservices-application-iapplicationmd"></a>[Application](../interfaces/services-application-iapplication.md) を返します
+#### <a name="returns-application"></a>[Application](../interfaces/services-application-iapplication.md) を返します
 

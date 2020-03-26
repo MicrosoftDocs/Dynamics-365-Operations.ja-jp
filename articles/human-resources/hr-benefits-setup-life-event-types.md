@@ -1,6 +1,6 @@
 ---
-title: ライフ イベント タイプの構成
-description: ''
+title: ライフ イベント タイプのコンフィギュレーション
+description: Microsoft Dynamics 365 Human Resources は、ライフ イベント タイプを使用して従業員の給付金の登録を更新するのに有効なイベントを定義します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 93c4285a1918cb625a01b4523195cacdee1170b4
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 8b1d911fcd86b91b96edb1bdf42316c9097ea8bc
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009734"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092640"
 ---
-# <a name="configure-life-event-types"></a>ライフ イベント タイプの構成
+# <a name="configure-life-event-types"></a>ライフ イベント タイプのコンフィギュレーション
 
 [!include [banner](includes/preview-feature.md)]
 

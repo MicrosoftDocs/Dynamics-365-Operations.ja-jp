@@ -18,11 +18,11 @@ ms.author: tfehr
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform 28
 ms.openlocfilehash: a920f772fcc8642f950c6f24bfbe164227628f6f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812457"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124842"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-28-july-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の新機能および変更された機能
 
@@ -43,7 +43,7 @@ PowerBI.com レポートは、Dynamics 365 Finance and Operations のアプリ�
 プラットフォーム更新プログラム 24では、Dynamics 365 製品における Officeのヘッダーのビジュアルを統合する取り組みの一環として、刷新されたナビゲーションバーが Finance and Operations に導入されました。これには階層リンクは含まれていません。 この時点で、従来のナビゲーションバーは品質に影響をもたらす懸念から、優先除外スケジュール (Platform Update28以降は利用不可) に設定されていました。 新しいナビゲーションバーから パンくずリスト がなくなっていること関し、お客様からの不満が寄せられていることから、従来のナビゲーションバーの使用可能時期を2020年4月まで延長することを決定しました。 ナビゲーション バーの詳細、および従来 のナビゲーションバーに一時的に戻す方法については、 [更新されたナビゲーションバー](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar) を参照してください。 
 
 ## <a name="alert-users-before-sessions-end-due-to-inactivity"></a>非操作時間の経過によりセッションが終了する前にユーザーに警告する
-Finance and Operations の既定のアイドルタイムアウトは、現在60分となっています。 ユーザーが非アクティブ状態の時間制限を超過した後は、セッションが終了したことをユーザーに警告します。 非アクティブによりセッションが中断されることをユーザーが認識し、保存されていない変更が失われないようにするために、非アクティブによるセッションのが了する3分前にユーザーに通知されるようになりました。 また、ユーザーはセッションが終了する前に再度セッションに接続することも可能です。  
+Finance and Operations の既定のアイドル タイムアウトは、現在 60 分となっています。 ユーザーが非アクティブ状態の時間制限を超過した後は、セッションが終了したことをユーザーに警告します。 非アクティブによりセッションが中断されることをユーザーが認識し、保存されていない変更が失われないようにするために、非アクティブによるセッションのが了する3分前にユーザーに通知されるようになりました。 また、ユーザーはセッションが終了する前に再度セッションに接続することも可能です。  
 
 ## <a name="export-all-byod-job-name-changes"></a>すべての BYOD ジョブ の名称変更をエクスポートする
 BYODの[すべての会社のエクスポート] ジョブの実行ジョブ構文に、命名規則にGUIDが追加されるようになりました。 これにより、名前が常に一意にになります。
@@ -67,11 +67,11 @@ BYODの[すべての会社のエクスポート] ジョブの実行ジョブ構�
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

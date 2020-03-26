@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: imbenbou
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: b3daa4b911f0f368e0a47d3dd05e3b30cec9e9a9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 022740fdb1dfe19497bc56c03a2c41d38d2ee3b2
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772451"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091737"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "2772451"
 
 ## <a name="register-a-new-application"></a>新しいアプリケーションの登録
 
-この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 すると Finance and Operations はこのアプリケーションを使用して Service Bus シークレットを取得します。
+この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 Finance and Operations はこのアプリケーションを使用して、Service Bus のシークレットを取得します。
 
 1. Azure ポータルで **すべてのサービス \> セキュリティ \> Azure Active Directory** を選択します。
 2. **アプリ登録 (プレビュー) \> 新しい登録** を選択し、アプリケーションの名前を入力します。
@@ -135,7 +135,7 @@ ms.locfileid: "2772451"
 5. **次へ** を選択します。
 6. 必要なパラメーター値を設定します。
 
-    <img alt="Service Bus dndpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
+    <img alt="Service Bus endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
 7. **OK** を選択します。
 

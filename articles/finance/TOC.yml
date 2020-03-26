@@ -10,8 +10,6 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: プレビュー サブスクリプションのサインアップ
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: 顧客支払に関するインサイト (プレビュー)
-              href: accounts-receivable/payment-insights-overview.md
             - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
@@ -26,11 +24,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: クラウド環境への更新プログラムの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: サービスの更新のコンフィギュレーション
+                - name: オンプレミス配置への更新プログラムの適用
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
+                - name: サービス更新の構成
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: サービスの更新の一時停止
+                - name: サービス更新の一時停止
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: サービスの更新に関する通知を受け取る
+                - name: サービス更新に関する通知を受け取る
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
@@ -70,20 +70,24 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance バージョン 10.0.10 (2020 年 5 月)
+                      href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance バージョン 10.0.9 (2020 年 4 月)
                       href: get-started/whats-new-changed-10-0-9.md
                     - name: Finance バージョン 10.0.8 (2020 年 2 月)
                       href: get-started/whats-new-changed-10-0-8.md
-                    - name: Finance バージョン 10.0.7 (2020 年 1 月)
-                      href: get-started/whats-new-changed-10-0-7.md
-                - name: 削除済みまたは非推奨の機能
+            - name: 削除済みまたは非推奨の機能
+              items:
+                - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: 以前のリリースの削除済みまたは非推奨の機能
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-                - name: 延期された AX 2012 の機能
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: オンプレミス配置に実装されない機能
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+            - name: 延期された AX 2012 の機能
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: オンプレミス配置に実装されない機能
+              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: 伝票リソース
               items:
                 - name: ヘルプ システム
@@ -312,6 +316,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: 顧客支払手数料の設定
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: 顧客支払に関するインサイト (プレビュー)
+              href: accounts-receivable/payment-insights-overview.md
             - name: 顧客転記プロファイル
               href: accounts-receivable/customer-posting-profiles.md
             - name: 共有番号順序を使用して、顧客をコピーする
@@ -1794,6 +1800,8 @@
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: HSN コードとサービス会計コードの定義
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                        - name: 税率の作成
+                          href: localizations/apac-ind-GST-create-tax-rate-type.md
                         - name: 販売税転記タイプの主勘定の作成
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: 税決済期間の作成
@@ -1922,17 +1930,18 @@
                   items:
                     - name: 税エンジンの概要
                       href: general-ledger/tax-engine.md
-                      items:
-                        - name: 税コンポーネントの作成
-                          href: localizations/tax-engine-create-tax-component.md
-                        - name: コンフィギュレーションのインポート
-                          href: general-ledger/tax-engine-import-configuration.md
-                        - name: 税エンジンの適用性
-                          href: general-ledger/tax-engine-applicability.md
-                        - name: 税エンジンの統合
-                          href: general-ledger/tax-engine-integration.md
-                        - name: 税エンジンの拡張
-                          href: general-ledger/extend-tax-engine-configurations.md
+                    - name: コンフィギュレーションのインポート
+                      href: general-ledger/tax-engine-import-configuration.md
+                    - name: 高度なフォーミュラ デザイナー
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                    - name: 税エンジンの適用性
+                      href: general-ledger/tax-engine-applicability.md
+                    - name: 税コンポーネントの作成
+                      href: localizations/tax-engine-create-tax-component.md
+                    - name: 税エンジンの統合
+                      href: general-ledger/tax-engine-integration.md
+                    - name: 税エンジンの拡張
+                      href: general-ledger/extend-tax-engine-configurations.md
                 - name: 税しきい値に関するよく寄せられる質問
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: 在庫移動
@@ -2357,50 +2366,56 @@
                       href: localizations/rus-incoming-VAT-restoring.md
                 - name: 固定資産
                   items:
-                    - name: 固定資産の管理
-                      href: localizations/rus-fixed-assets.md
                     - name: 固定資産の概要
-                      hfre: localizations/rus-fixed-assets-overview.md
+                      href: localizations/rus-fixed-assets-overview.md
                     - name: 固定資産の設定
-                      href: localizations/rus-set-up-fixed-assets.md
-                    - name: 固定資産の取得および使用
-                      href: localizations/rus-fixed-asset-acquisition.md
-                    - name: 固定資産取得の登録
-                      href: localizations/rus-register-acquisition.md
-                    - name: 固定資産取得に関する予算仕訳帳の作成および転記
-                      href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                    - name: 固定資産のリースおよびリース トランザクションから返品の作成
-                      href: localizations/rus-fixed-asset-leasing.md
-                    - name: 固定資産棚卸
-                      href: localizations/rus-fixed-assets-counting.md
-                    - name: 固定資産通貨再評価
-                      href: localizations/rus-fixed-asset-currency-revaluation.md
-                    - name: 固定資産の管理
-                      href: localizations/rus-maintain-fixed-assets.md
-                    - name: 固定資産の原価および減価償却の再評価
-                      href: localizations/rus-fixed-assets-revaluation.md
-                    - name: 固定資産の部分的分解 (清算)
-                      href: localizations/rus-fixed-assets-disassembly.md
-                    - name: 資産の売却、処分、および損金処理
-                      href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-                    - name: 固定資産の場所と番号付けの設定
-                      href: localizations/rus-fixed-assets-locations-numbering.md
-                    - name: 減価償却の設定
-                      href: localizations/rus-depreciation-setup.md
-                    - name: 減価償却方法
-                      href: localizations/rus-depreciation-methods.md
-                    - name: 減価償却特別償却
-                      href: localizations/rus-bonus-depreciation.md
-                    - name: 減価償却の計算
-                      href: localizations/rus-depreciation-calculation.md
-                    - name: 固定資産の移動
-                      href: localizations/rus-fixed-asset-transfer.md
-                    - name: 固定資産の統一された印刷フォーム
-                      href: localizations/printing-forms-fixed-assets.md
-                    - name: 作業着/特殊衣類の会計 (ロシア)
-                      href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: 価値のない固定資産 (NVFA) (ロシア)
-                      href: localizations/rus-not-valuable-assets.md
+                      items:
+                        - name: 固定資産の設定
+                          href: localizations/rus-set-up-fixed-assets.md
+                        - name: 減価償却の設定
+                          href: localizations/rus-depreciation-setup.md
+                        - name: 減価償却方法
+                          href: localizations/rus-depreciation-methods.md
+                        - name: 減価償却特別償却
+                          href: localizations/rus-bonus-depreciation.md
+                        - name: 固定資産の場所と番号付けの設定
+                          href: localizations/rus-fixed-assets-locations-numbering.md
+                    - name: 固定資産に関する作業
+                      items:
+                        - name: 固定資産の作成
+                          href: localizations/rus-fixed-assets.md
+                        - name: 固定資産取得の登録
+                          href: localizations/rus-register-acquisition.md
+                        - name: 固定資産の取得および使用
+                          href: localizations/rus-fixed-asset-acquisition.md
+                        - name: 減価償却の計算
+                          href: localizations/rus-depreciation-calculation.md
+                        - name: 固定資産の部分的分解 (清算)
+                          href: localizations/rus-fixed-assets-disassembly.md
+                        - name: 資産の売却、処分、および損金処理
+                          href: localizations/rus-sell-dispose-write-off-fixed-assets.md
+                        - name: 固定資産のリースおよびリース トランザクションから返品の作成
+                          href: localizations/rus-fixed-asset-leasing.md
+                        - name: 固定資産の管理
+                          href: localizations/rus-maintain-fixed-assets.md
+                        - name: 固定資産棚卸
+                          href: localizations/rus-fixed-assets-counting.md
+                        - name: 固定資産通貨再評価
+                          href: localizations/rus-fixed-asset-currency-revaluation.md
+                        - name: 固定資産の原価および減価償却の再評価
+                          href: localizations/rus-fixed-assets-revaluation.md
+                        - name: 固定資産取得に関する予算仕訳帳の作成および転記
+                          href: localizations/rus-post-budget-fixed-asset-acquisition.md
+                        - name: 固定資産の移動
+                          href: localizations/rus-fixed-asset-transfer.md
+                    - name: 価値のない固定資産と作業着
+                      items:
+                        - name: 価値のない固定資産 (NVFA) (ロシア)
+                          href: localizations/rus-not-valuable-assets.md
+                        - name: 作業着/特殊衣類の会計 (ロシア)
+                          href: localizations/rus-working-clothes-instruments-accounting.md
+                        - name: 固定資産の統一された印刷フォーム
+                          href: localizations/printing-forms-fixed-assets.md
                 - name: 買掛金勘定と売掛金勘定
                   items:
                     - name: 訂正票の修正 (ロシア)
@@ -2427,6 +2442,14 @@
                           href: localizations/rus-register-transactions-with-reference-to-agreements.md
                         - name: 契約を使用した照会とレポート
                           href: localizations/rus-inquiries-reports-agreements.md
+                    - name: 仲介者によるトランザクション
+                      items:
+                        - name: 仲介者によるトランザクションの概要
+                          href: localizations/rus-transactions-through-intermediary.md
+                        - name: 手数料購買
+                          href: localizations/rus-purchases-on-commission.md
+                        - name: 手数料販売
+                          href: localizations/rus-sales-on-commission.md
                 - name: 在庫
                   items:
                     - name: 仕入先からの輸送中の商品
@@ -2533,6 +2556,8 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: 支払インポート形式
                   href: localizations/emea-swe-payment-formats-import.md
+                - name: スウェーデンの消費税支払レポート
+                  href: localizations/emea-swe-sales-tax-payment-report-sweden.md
             - name: スイス
               items:
                 - name: スイスの概要
@@ -2561,20 +2586,24 @@
                   href: localizations/united-kingdom.md
                 - name: 建築業スキーム
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: 決済割引の貸方票の作成
-                  href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: 受取人払い VAT 対象品目を含む発注書の作成
-                  href: localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: 受取人払い VAT 対象品目を含む販売注文の作成
-                  href: localizations/tasks/gb-00002-sales-order.md
-                - name: 受取人払い VAT の品目消費税グループの設定
-                  href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定
-                  href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: 受取人払い VAT の消費税グループの設定
-                  href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: 受取人払い
+                  items:
+                    - name: 決済割引の貸方票の作成
+                      href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+                    - name: 受取人払い VAT 対象品目を含む発注書の作成
+                      href: localizations/tasks/purchase-order-reverse-charge-vat.md
+                    - name: 受取人払い VAT 対象品目を含む販売注文の作成
+                      href: localizations/tasks/gb-00002-sales-order.md
+                    - name: 受取人払い VAT の品目消費税グループの設定
+                      href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+                    - name: 受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定
+                      href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+                    - name: 受取人払い VAT の消費税グループの設定
+                      href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
                 - name: VAT に関する税のデジタル化
                   href: localizations/emea-gbr-mtd-vat-integration.md
+                - name: 支払プラクティス レポートの統計
+                  href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: 米国
               items:
                 - name: 米国の概要
@@ -3141,6 +3170,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: 形式を作成するときにデータ モデル定義を選択する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: グローバル リポジトリでコンフィギュレーションを検索するための拡張フィルタ オプション
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md
                 - name: コンテンツを XML のままで追加してレポートを生成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                 - name: (ER) 電子申告における会社間データ ソース

@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリのサポート エクスペリエンスの管理
+title: Finance and Operations アプリのサポート エクスペリエンスを管理する
 description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c8e908264901eda9be312caf98e97c043b64f4de
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812153"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124830"
 ---
-# <a name="manage-the-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスの管理 
+# <a name="manage-the-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する 
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,6 @@
 ---
 title: Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
+description: Microsoft Dynamics Lifecycle Services インフラストラクチャ見積もりツールは、環境に必要なハードウェアの最初の大まかな見積もりを自動的に行います。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 42c6d84a3ce1a51a78d52eb5fc897dfa7b5e33f1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a8f2a8bbaddd449260e6bdc93cc306abbc6d32a6
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812060"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091859"
 ---
 # <a name="infrastructure-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 

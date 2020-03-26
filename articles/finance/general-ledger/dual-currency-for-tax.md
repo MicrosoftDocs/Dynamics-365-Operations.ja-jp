@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9318f518135bf7aa545cdb5ddd2e68c54a6d211
-ms.sourcegitcommit: bcc8cba8905ed51797d36e1712d7360452cfc5c5
+ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090567"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124096"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>消費税の二重通貨サポート
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、消費税の二重通貨会計の拡張方法と、消費税の計算、転記および決済に対する影響について説明します。
 

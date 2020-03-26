@@ -16,11 +16,11 @@ ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.openlocfilehash: 8ce5b0d8207178f3091e3194647729042997c0dc
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033048"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124840"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 

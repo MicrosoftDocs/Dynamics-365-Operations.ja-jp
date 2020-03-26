@@ -1,7 +1,7 @@
 ---
 title: セルフサービス配置の FAQ
 description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3d476c921d77ad5044e5ea5fda61f205d558b2c2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a14b37eb3a60223c660c992bd2c8cbf9121b10b9
+ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191588"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100487"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 

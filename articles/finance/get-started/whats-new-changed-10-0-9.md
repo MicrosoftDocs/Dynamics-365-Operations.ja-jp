@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e27c2565b04c74a242c5e13c178e98fa9d63512e
-ms.sourcegitcommit: 33fb057cd3b7b19b97e9c8941655516f7225b0f5
+ms.openlocfilehash: 77372703433fbbfc1a3512e42a6ccad9372b5810
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3087921"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124082"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-preview-february-2020"></a>Dynamics 365 Finance バージョン 10.0.9 プレビュー (2020 年 2 月) の新機能または変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-march-2020"></a>Dynamics 365 Finance バージョン 10.0.9 プレビュー (2020 年 3 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance プレビュー バージョン 10.0.9 の新機能または変更された機能について説明します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.9 の新機能または変更された機能について説明します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビューのリリース:** 2020 年 2 月
 - **一般提供 (自己更新):** 2020 年 3 月
@@ -69,7 +68,7 @@ ms.locfileid: "3087921"
 
 ### <a name="platform-update-33"></a>プラットフォーム update 33
 
-Microsoft Dynamics 365 Finance 10.0.9 には、プラットフォーム更新プログラム 33 が含まれています。 詳細については、[プラットフォーム更新プログラム 33 のプレビュー機能](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md)を参照してください。
+Microsoft Dynamics 365 Finance 10.0.9 には、プラットフォーム更新プログラム 33 が含まれています。 詳細については、[プラットフォーム更新プログラム 33 の新機能と変更点](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md) を参照してください。
 
 
 ### <a name="bug-fixes"></a>バグ修正 
@@ -84,7 +83,7 @@ Microsoft Dynamics 365 Finance 10.0.9 には、プラットフォーム更新プ
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

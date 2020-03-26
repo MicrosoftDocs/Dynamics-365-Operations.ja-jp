@@ -1,27 +1,27 @@
 ---
 title: Microsoft FastTrack
 description: このトピックでは、Microsoft FastTrack の概要を説明します。 FastTrack は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。
-author: margoc
+author: Jeff-Luo-MSFT
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 267934
 ms.search.region: Global
-ms.author: margoc
+ms.author: jeluo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 0201d978d0f758fff45f8ca1a49e7df9a06e955b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 32cbd313f34e2fec225e7edd07ba956a33ee68ad
+ms.sourcegitcommit: 8bd87814d32dc4941a84b696d821960455265709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005739"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117057"
 ---
 # <a name="microsoft-fasttrack"></a>Microsoft FastTrack 
 
@@ -72,19 +72,19 @@ FastTrack コミュニティでは、顧客およびパートナーが質問を�
 
 ワークショップは、対話型の結果ベースのリモート セッションです。 顧客とパートナーは、ワークショップの前に入力を提供し、エンゲージメントのためにカスタマイズすることができます。
 
-### <a name="onboarding-workshop"></a>研修ワークショップ
+### <a name="kick-off-meetings"></a>キックオフ ミーティング
 
-オンボード ワーク ショップは、FastTrack サービスを紹介および最大の成功を保証するのに役立つ実装トピックのセットに関する入門ガイダンスの提供を行うように設計されています。 詳細については、 [実装プロジェクトの研修](../imp-lifecycle/onboard.md) を参照してください。 ワークショップで対応できると思われるトピックのいくつかは以下の通りです。
+キックオフ ミーティングは、指定された FastTrack ソリューション アーキテクトの対象となる顧客が利用できます。 キックオフ ミーティングは、お客様のプロジェクトにおける FastTrack サービスおよび FastTrack チームの役割と責任を紹介し、実装プロジェクト中に 3 つの当事者（ソリューション インテグレータ、顧客、Microsoft FastTrack）がどのように協力するかを定義し、実装にあたっての一連の重要な成功要因に関する導入のガイダンスを提供することを目的としています。 キックオフ ミーティングの使用が想定されているトピックは以下の通りです。
 
 - チームの紹介
-- FastTrack の概要 
-- プロジェクトの目標と目的
-- スコープ、スケジュールおよび採用ターゲットの契約
-- 顧客、パートナー、および FastTrack エンジニアリング チーム間での職責
+- プロジェクトの背景、目標、成功要因
+- サービスの提供、役割と責任、および Microsoft teams との差別化を含むFastTrackの概要
 - サービスの提供方法、FastTrack エンジニアリング チームのサポートをいつどこで求めるかの説明
-- 成功要因および FastTrack チームによって共有可能なキー学習
+- FastTrack チームが共有できる重要な成功要因と重要な知識
 
-標準的な形式は、1 時間の Skype 呼び出しです。 推奨される出席者には、顧客、パートナー、Microsoft Teams の重要な利害関係者およびプロジェクト チーム リーダーが含まれます。
+多くの場合、指名された FastTrack ソリューションアーキテクトは、パートナーとのキックオフ ミーティングと、対象となる顧客がオンボーディング プロセスを完了した後の顧客とのキックオフ ミーティングをスケジュールすることで、契約を初期化します。 顧客のオンボードの詳細については、[導入プロジェクトのオンボード](../imp-lifecycle/onboard.md)を参照してください。 
+
+一般的なパートナー キックオフ ミーティングの形式は、1時間の Microsoft Teams 通話です。 顧客の場合は、3時間の Microsoft Teams の通話をキックオフ ミーティングで行います。 推奨される参加者は、顧客のプロジェクト スポンサーなどの主要な利害関係者、プロジェクト マネージャー、ソリューション アーキテクト、テクニカル/機能の責任者、顧客の業務プロセスの責任は、パートナー、および Microsoft teams が含まれます。 また、キックオフ ミーティングは、導入パートナーが以前にこのプロセスを経験している場合は、顧客とパートナーを組み合わせたセッションの形式でも実施できます。
 
 ### <a name="solution-blueprint-workshops"></a>ソリューション計画ワーク ショップ
 

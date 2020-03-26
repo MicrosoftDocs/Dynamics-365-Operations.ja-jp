@@ -17,11 +17,11 @@ ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 ms.openlocfilehash: f0f81d1b20ada852dbcee2f91bee30adb59a5629
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004679"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120891"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 

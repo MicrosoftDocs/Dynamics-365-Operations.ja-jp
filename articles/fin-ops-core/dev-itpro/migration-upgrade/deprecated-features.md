@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations の削除済みまたは推奨されない機能
-description: このトピックでは、削除された、または削除される予定の機能について説明します。
+title: 以前のリリースの削除済みまたは非推奨の機能
+description: このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811996"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124569"
 ---
-# <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Finance and Operations の削除済みまたは推奨されない機能
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations で削除された機能や、将来の更新で削除される予定の機能について説明します。
+> [!IMPORTANT]
+> このトピックは現在更新されていません。 Finance and Operations アプリから削除済みまたは非推奨の機能の現在の一覧を表示するには、使用ているアプリに関連する **"削除済みまたは非推奨の機能"** コンテンツを検索します。
+
+このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または推奨されていない機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-> [!NOTE]
-> Finance and Operations 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
-
-Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 プラットフォーム更新プログラム 31
 
@@ -51,7 +51,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 2020 年 12 月 1 日までに、勘定グループを選択せずに中国の伝票タイプ設定をサポートしなくなります。 新しい機能デザインの詳細については、10.0.7 の新機能を参照してください。 |
 
-## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 プラットフォーム更新プログラム 30
+## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 プラット更新プログラム 30
 
 
 ### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
@@ -106,7 +106,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **ステータス**                         | 非推奨: 2020 年 10 月 1 日までに、**国内の税レポート – 機能リファレンス IT-00003** をサポートしなくなる予定です。 |
 
 
-## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 プラットフォーム更新プログラム 29
+## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 プラット更新プログラム 29
 
 ### <a name="us-payroll-tax-updates"></a>米国の給与税の更新
 
@@ -128,7 +128,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **配置オプション**              | すべて  |
 | **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2020 年 12 月です。 |
 
-## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 プラットフォーム更新プログラム 28
+## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 プラット更新プログラム 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>フランス用: XML の FEC 会計データ エクスポート
 
@@ -138,7 +138,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **別の機能で置き換えられているか?**   | はい |
 | **影響を受ける製品領域**         | 一般会計 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨。 機能を削除するターゲットのタイムフレームは 2020年 7 月です。 |
+| **ステータス**                         | 非推奨。 機能を削除するターゲットのタイムフレームは 2020 年 7 月です。 |
 
 
 ### <a name="legacy-navigation-bar"></a>レガシー ナビゲーション バー
@@ -152,7 +152,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **ステータス**                         | 非推奨: 2020 年 4 月から、ナビゲーション バーは使用できなくなります。 それまで、顧客は**クライアント パフォーマンス オプション**ページを使用して、従来のナビゲーション バーを使用することができます。 |
 
 
-## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 プラットフォーム更新プログラム 26
+## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 プラット更新プログラム 26
 
 
 ### <a name="legacy-default-action-behavior"></a>レガシの既定アクションの動作
@@ -196,7 +196,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2020 年 4 月です。 |
 
-## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 プラットフォーム更新プログラム 25
+## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 プラット更新プログラム 25
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>非推奨 API および重大な可能性のある変更
 
@@ -221,7 +221,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 警告はプラットフォーム更新プログラム 26 ではエラーになります。 |
 
-## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 プラットフォーム更新プログラム 24
+## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 プラット更新プログラム 24
 
 ### <a name="renaming-released-products"></a>リリース済製品の名前変更 
 |   |  |
@@ -230,17 +230,17 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **別の機能で置き換えられているか?**   | 一連番号 |
 | **影響を受ける製品領域**         | 製品情報管理 |
 | **配置オプション**              | すべて  |
-| **ステータス**                         | Finance and Operations 10.0.0 プラットフォーム更新プログラム 24 から削除されました。 リリース済製品の主キーの以前の名前変更から回復するなどの例外的なケースでは、リリース済製品に対する主キーの名前変更操作におけるこの制限を一時的に解除するよう Microsoft に要求することができます。 |
+| **ステータス**                         | Finance and Operations 10.0.0 および更新プログラム 24 から削除されました。 (リリースされた製品の主キーの以前の名前変更によって発生したデータの破損を修復する必要がある場合にのみ、この制限の一時的な削除を要求するには、Microsoft サポートに問い合わせてください。) |
 
 
-## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 プラットフォーム更新プログラム 23
+## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 プラット更新プログラム 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services ReportViewer コントロール
-顧客は、埋め込まれた SQL Server Reporting Services (SSRS) ReportViewer コントロールによって提供される**エクスポート**アクションを使用して、Finance and Operations アプリケーションが生成するドキュメントをダウンロードすることができます。 この HTML ベースのレポート プレゼンテーションによって、ページ設定されていないドキュメント プレビューがユーザーにもたらされます。
+顧客は、埋め込まれた SQL Server Reporting Services (SSRS) ReportViewer コントロールによって提供される**エクスポート** アクションを使用して、Finance and Operations アプリケーションが生成するドキュメントをダウンロードすることができます。 この HTML ベースのレポート プレゼンテーションによって、ページ設定されていないドキュメント プレビューがユーザーにもたらされます。
 
 |   |  |
 |------------|--------------------|
-| **廃止 / 削除の理由** | ページ設定されていない種類の HTML ベースのプレビュー エクスペリエンスは、Finance and Operations によって最終的に生成される物理的なドキュメントの再現性は提供**しません**。 PDF をビジネス ドキュメントの標準形式として完全に採用することにより、ユーザーはアプリケーション レポートを作成するとき、改善されたパフォーマンスで最新の閲覧方法を利用できます。 |
+| **廃止 / 削除の理由** | ページ設定されていない性質の HTML ベースのプレビュー エクスペリエンスは、Finance and Operations によって最終的に生成される物理的なドキュメントの再現性は提供**しません**。 PDF をビジネス ドキュメントの標準形式として完全に採用することにより、ユーザーはアプリケーション レポートを作成するとき、改善されたパフォーマンスで最新の閲覧方法を利用できます。 |
 | **別の機能で置き換えられているか?**   | 今後、PDF ドキュメントは、Finance and Operations がレンダリングするレポートの既定の形式になります。   |
 | **影響を受ける製品領域**         | この変更は、レポートが電子的に配信される、またはプリンターに直接送信される顧客のシナリオには影響**しません**。    |
 | **配置オプション**              | すべて  |
@@ -272,7 +272,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 #### <a name="complete-list"></a>完全なリスト
 推奨されない API の完全なリストにアクセスするには、[メソッドおよびメタ データ要素の廃止](deprecation-deletion-apis.md)を参照してください。
 
-## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 プラットフォーム更新プログラム 20
+## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 プラット更新プログラム 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>補助元帳仕訳勘定項目のバッチ転送ルール
 同期式の転送モードは、一般会計パラメーターで非推奨になっています。  このモードは、転送のオプションとして既に存在する非同期およびスケジュールされているバッチのみに置き換えられます。 詳細については、[一般会計パラメーター – バッチ転送ルール](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) ブログを参照してください。
@@ -292,9 +292,9 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 |------------|--------------------|
 | **廃止 / 削除の理由** | 電子申告に置き換えられます。 |
 | **別の機能での置き換え?**   | はい。 |
-| **影響を受ける製品領域**         | 一般会計 |
+| **影響を受ける製品領域**         | 総勘定元帳 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations 8.1 プラットフォーム更新プログラム 20 から削除されました。 |
+| **ステータス**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
 
 ### <a name="financial-reports-generator-for-russia"></a>ロシアの財務諸表ジェネレーター
 会計および税務報告書のためのデータ収集を設定し、XLS および DOC レポート テンプレートにデータをエクスポートするツールです。 機能部分: データの XLS および DOC レポート テンプレート、クエリ、固定必要条件へのエクスポートは削除されました。 
@@ -305,7 +305,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **別の機能での置き換え?**   | はい。 GL 勘定または税登録によるデータ収集ルールの設定には、財務報告書の設定ユーザー インターフェイスを使用する必要があります。 さまざまなファイル タイプ、固定必要条件、およびクエリのようなデータ収集ルールへのデータのエクスポートは、電子申告でコンフィギュレーションする必要があります。 |
 | **影響を受ける製品領域**         | 一般会計。 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations 8.1 プラットフォーム更新プログラム 20 から削除されました。 |
+| **ステータス**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>ロシアの通信チャネル経由で電子申告を送信するための外部プロバイダーとの統合
 生成された申告の電子ファイルをフォルダにエクスポートして、電子申告の公式のプロバイダーにさらに送信したり、状態をインポートしたりする機能です。
@@ -316,7 +316,7 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 | **別の機能での置き換え?**   | はい。  |
 | **影響を受ける製品領域**         | 一般会計、税 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations 8.1 プラットフォーム更新プログラム 20 から削除されました。 |
+| **ステータス**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
 
 
 ### <a name="profit-tax-register-wizard"></a>利益税登録ウィザード
@@ -325,16 +325,16 @@ Finance and Operations 内のオブジェクトに関する詳細情報につい
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 機能は、Finance and Operations の拡張性モデルとは互換性がありません。 |
-| **別の機能で置き換えられているか?**   | いいえ |
+| **別の機能での置き換え?**   | 無 |
 | **影響を受ける製品領域**         | 税申告 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations 8.1 プラットフォーム更新プログラム 20 から削除されました。 |
+| **ステータス**                         | Finance and Operations 8.1 およびプラットフォーム更新プログラム 20 から削除されました。 |
 
 
-## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 プラットフォーム更新プログラム 15
+## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 プラット更新プログラム 15
 今回のリリースで削除済みまたは推奨されない機能はありません。 プラットフォーム更新 15 は累積的であり、プラットフォーム更新 13、プラットフォーム更新 14、およびプラットフォーム更新 15 の新機能または変更された機能を含みます。
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations Enterprise Edition 7.3 プラットフォーム更新プログラム 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations、Enterprise edition 7.3 プラットフォーム更新プログラム 12
 
 ### <a name="personalized-product-recommendations"></a>カスタマイズされた製品推奨事項 
 2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[製品推奨事項の概要](../../../commerce/product-recommendations.md) を参照してください。  
@@ -356,11 +356,11 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 | **別の機能での置き換え?**   | なし。 新たな組み込み関数が求められた場合は、新しい拡張要求を ER フレームワーク チームに指定する必要があります。<br><br>要求された機能が ER チームによって開発中の間、一時的な回避方法として、必要なロジックをカスタム アプリケーション クラスのメソッドとしてプログラムすることができます。 このメソッドは、カスタム アプリケーション クラスを参照する **Application\Class** タイプの、追加された ER データ ソースのプロパティとして ER の式にアクセスします。  |
 | **影響を受ける製品領域**         | 電子申告のフレームワーク                                                      |
 | **配置オプション**              | すべて                                                                                      |
-| **ステータス**                         | Finance and Operations, Enterprise Edition 7.3 から削除されました。    |
+| **ステータス**                         | Finance and Operations、Enterprise edition 7.3 から削除されました。    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>品目グループ別の在庫、および在庫分析エイジング レポート別の在庫
 
-これら 2 つのレポートは、Finance and Operations ではサポートされていません。 代わりに、**在庫エイジング** レポートはユーザー エクスペリエンスを向上するために使用することができます。
+これら 2 つのレポートは、Finance and Operations ではサポートされなくなりました。 代わりに、**在庫エイジング** レポートはユーザー エクスペリエンスを向上するために使用することができます。
 
 |   |  |
 |--------------|-----------------------|
@@ -453,7 +453,7 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 | **ステータス**                         |2018 年 2 月 15 日から削除されました。 これは、Dynamics 365 for Retail 7.2 以降を使用しているユーザーに影響します。 |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations Enterprise Edition (2017 年 7 月) プラットフォーム更新プログラム 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations、Enterprise edition 2017 年 7 月プラットフォーム更新プログラム 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>会計の通貨換算およびレポート通貨
 
@@ -469,12 +469,12 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 
 ### <a name="warehouse-mobile-devices-portal"></a>倉庫モバイル デバイス ポータル
 
-倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。 このコンポーネントは、Finance and Operations ではサポートされていません。 WMDP の機能は、ユーザー エクスペリエンスを向上させるネイティブ アプリケーションで置き換えられました。
+倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。 このコンポーネントでは、Finance and Operationsはサポートされなくなりました。 WMDP の機能は、ユーザー エクスペリエンスを向上させるネイティブ アプリケーションで置き換えられました。
 
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 機能の重複。       |
-| **別の機能での置き換え?**   | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定、および前提条件の詳細については、[Warehousing アプリのインストールとコンフィギュレーションの概要](../../../supply-chain/warehousing/install-configure-warehousing-app.md)を参照してください。 |
+| **別の機能で置き換えられているか?**   | はい。 この機能は、Finance and Operations - 倉庫管理で置き換えられました。 設定、および前提条件の詳細については、[Warehousing アプリのインストールとコンフィギュレーションの概要](../../../supply-chain/warehousing/install-configure-warehousing-app.md)を参照してください。 |
 | **影響を受ける製品領域**         | 倉庫管理、輸送管理     |
 | **配置オプション**              | 倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。               |
 | **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2019 年 第 4 四半期です。   |
@@ -825,8 +825,8 @@ Telepay の支払形式には、仕入先支払のエクスポート (銀行口�
 
 |   |  |
 |------------|--------------------|
-| **廃止 / 削除の理由** | パフォーマンス管理は、Finance and Operations では完全に再設計されました。     |
-| **別の機能で置き換えられているか?**   | 再設計されたパフォーマンス管理機能では、目標の内容、進行状況の追跡、サポート ドキュメントの添付の追跡に使用される測定をさらに管理できるようになりました。 目標をテンプレートとして保存し、再利用できます。 この機能により、従業員がより迅速に追加目標を設定できるようになります。 |
+| **廃止 / 削除の理由** | パフォーマンス管理は Finance and Operations で完全に再設計されました。     |
+| **別の機能での置き換え?**   | 再設計されたパフォーマンス管理機能では、目標の内容、進行状況の追跡、サポート ドキュメントの添付の追跡に使用される測定をさらに管理できるようになりました。 目標をテンプレートとして保存し、再利用できます。 この機能により、従業員がより迅速に追加目標を設定できるようになります。 |
 | **影響を受ける製品領域**         | 人材管理                 |
 | **ステータス**                         | Dynamics 365 for Operations バージョン 1611 から削除されました。 |
 
@@ -1013,7 +1013,7 @@ ICMS の税金の連邦税明細書
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Dynamics AX 2012 R2 ではデータ パーティションが導入され、データの分離が可能になりました。 一般的なシナリオでは、会社は関連会社を持ち、1 つの関連会社のデータは別の関連会社に見えないようにする必要があります。それは両方の関連会社が同じ IT 部門によって管理されている場合もです。 しかし、新しいパーティションの作成、データの読み込み、およびパーティションのデータのバックアップを行う場合に、スクリプトの追加とプログラム全体での管理オーバーヘッドが必要でした。 クラウドを利用すると、サービスとしてのプラットフォーム (PaaS) のデータベース サービス (Microsoft Azure SQL データベース) にアクセスでき、プログラム内部で分離を行うことに比べて、分離のためのコンテナーとしてデータベースを使用するほうが効率的です。 関連会社にデータのパーティション分割の必要があるかにかかわらず、複数のテナントまたは単なるスケールの目的では、複数の Finance and Operations のインスタンスを使うとシナリオをよりよく処理することができると考えられます。 |
-| **別の機能での置き換え?**   | データベース レベルの分離が重大な問題である場合、データ パーティションを使用している顧客は Finance and Operations の複数のインスタンスを使用する必要があります。    |
+| **別の機能で置き換えられているか?**   | データベース レベルの分離が重大な問題である場合、データ パーティションを使用している顧客は Finance and Operations の複数のインスタンスを使用する必要があります。    |
 | **影響を受ける製品領域**         | すべてのモジュール  |
 | **ステータス**                         | Dynamics AX 7.0 から削除されました。  |
 

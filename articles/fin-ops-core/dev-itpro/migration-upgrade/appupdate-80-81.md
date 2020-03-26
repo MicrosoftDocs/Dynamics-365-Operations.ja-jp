@@ -3,7 +3,7 @@ title: バージョン 8.0 から 10.0.X への環境の更新
 description: このトピックでは、既存の Finance and Operations 8.0 環境を、10.0.X アプリケーション リリースに更新するために必要な手順について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c355535b3d0e7cf3ba71f1a995b36e827b842c2f
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 57923694aa4f54e685343ede24334bea4fe55f2c
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029394"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112769"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 
@@ -86,6 +86,9 @@ Lifecycle Services で、手順 1 で配置した**ビルド サーバー**に�
 
 ## <a name="merge-the-deployable-package-with-the-100x-binary-update-package"></a>展開可能パッケージを 10.0.X バイナリ アップデート パッケージとマージ
 プロジェクトの**アセット ライブラリ**で、新しい 10.0.X ソフトウェアの配置可能パッケージ (ISV を含むカスタマイズ パッケージ) と、トピックの先頭にある手順 1 で保存された 10.X PU2X バイナリ更新パッケージの両方を特定します。 両方のパッケージを強調表示し、**マージ** を選択します。 これにより、ファイルが、マージされた更新パッケージに結合されます。 このパッケージをさまざまなテスト環境に適用できます。
+
+> [!NOTE]
+> このマージしたパッケージを、異なる Lifecycle Services プロジェクトの間で移動することはできません。 マージの処理では、アセット ライブラリの他のパッケージを参照します。これらのパッケージは他のプロジェクトには存在しません。
 
 ## <a name="deploy-to-target-environments-for-validation"></a>検証用の対象環境を展開
 マージされた更新パッケージを使用して、これをさまざまなテスト環境に展開します。  この方法の詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md) を参照してください。  このマージ済の更新プログラム パッケージは、階層 1/OneBox 環境やと階層 2 サンドボックスに展開することができます。 少なくとも、サブスクリプションに付属しているサンドボックス第 2 層環境に展開する必要があります。  検証が完了したら、マージされた更新パッケージをリリース候補としてマークします。

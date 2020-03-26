@@ -1,6 +1,6 @@
 ---
 title: MyLeaveRequests の概要
-description: ''
+description: Microsoft Dynamics 365 Human Resourcesの MyLeaveRequests エンティティは、現在のユーザーがエンティティを照会するときにアクセスできる要求にスコープされた (制限された)、システム内の休暇要求のリストを提供します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66f161d6736b1bb544d02871d9d51b2949b1cfa0
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4bf3b298af9eb39e03514a4005afb43a42908e47
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009671"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092040"
 ---
 # <a name="myleaverequests-overview"></a>MyLeaveRequests の概要
 

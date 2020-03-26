@@ -16,11 +16,11 @@ ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
 ms.openlocfilehash: a53ceb54ca7119d7c13c574326a68cfcea6b4751
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124821"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "2774075"
 3. このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。 このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。 ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。 修正する必要があるその他の問題について、この手順を繰り返します。
 4. Predeployment.ps1 スクリプトで、前に追加したコードで、使用するスクリプトを呼び出す行のコメントを解除します。
 
-## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1
+## <a name="tsg_sysclassrunnerps1"></a><a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1
 
 次のスクリプトは、プラットフォームの一部のバージョンで SysClassRunner が実行される場合に発生する問題を修正するために使用されます。 この問題の詳細については、 [SysClassRunner が正常に実行されません](troubleshoot-on-prem.md#SysClassRunner) を参照してください。
 
@@ -126,7 +126,7 @@ $xml.save($axConfig)
 Write-Output "TSG SysClassRunner script succeeded"
 ```
 
-## <a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
+## <a name="tsg_updatefrdeployerconfigps1"></a><a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
 
 次のスクリプトは、プラットフォームの一部のバージョンで財務諸表が配置される場合に発生する問題を修正するために使用されます。 この問題の詳細については、 [ファイルまたはアセンブリ EntityFramework を読み込めませんでした](troubleshoot-on-prem.md#FREntityFramework) を参照してください。
 
@@ -183,7 +183,7 @@ else
 }
 ```
 
-## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
+## <a name="tsg_windowsazurestorageps1"></a><a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
 次のスクリプトは、一部のバージョンのプラットフォームでファイルをダウンロードまたはエクスポートできない問題を解決するために使用されます。
 

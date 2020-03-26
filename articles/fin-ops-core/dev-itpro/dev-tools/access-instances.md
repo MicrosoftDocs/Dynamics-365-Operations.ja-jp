@@ -3,7 +3,7 @@ title: 開発環境の配置とアクセス
 description: このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 author: jorisdg
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f4e7ddabcdd21f41a0ead41fe4c7c2c07a3ed58
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: a81b66608c36444a32b93bf2fd709bd90bafe35e
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029422"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124819"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -146,6 +146,8 @@ Hyper-V マネージャーから VM を実行するには、これらの手順�
 
    また、サービスを **サービス** ウィンドウから開始することができます。
 
+7. 必要に応じて [更新プログラムを適用](../migration-upgrade/upgrade-latest-platform-update.md#apply-a-platform-update-to-environments-that-are-not-connected-to-lcs) します。
+
 #### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
 POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要があります。
@@ -255,7 +257,7 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 
 ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
 -   [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [小売販売時点管理 (POS) デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
+-   [販売時点管理 (POS) デバイスのライセンス認証](../../../retail/dev-itpro/retail-device-activation.md)
 
 ## <a name="redeploying-or-restarting-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
 ローカルのランタイムを再起動して、すべてのパッケージを再配置するには、次の手順を実行します。

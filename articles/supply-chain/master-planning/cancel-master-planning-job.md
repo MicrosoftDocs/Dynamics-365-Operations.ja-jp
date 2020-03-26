@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 66d5b10e1471b98274d4049df18a2e53873f789a
-ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
+ms.openlocfilehash: c04e2b2c0e5d7f28ea688578b3e1d7a1e1d9f6d3
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "2947483"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117451"
 ---
 # <a name="cancel-a-master-planning-job"></a>マスター プラン ジョブのキャンセル
+
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management には、マスター プラン ジョブをキャンセルする複数のオプションがあります。 たとえば、マスター プラン ジョブが誤って開始された、または予想よりも長い時間実行していて終了したい場合、キャンセルすることができます。 計画ジョブをキャンセルする最善の方法は、**未完了の計画プロセス** ページからのキャンセルです。 **バッチ ジョブ**および**バッチ ジョブ拡張**ページからの代替オプションは、**未完了の計画プロセス** ページからマスタープラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。
 

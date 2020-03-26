@@ -1,6 +1,6 @@
 ---
-title: プロセスの更新
-description: ''
+title: 更新プロセス
+description: Microsoft Dynamics 365 Human Resources は、アプリケーションとプラットフォームの変更のための、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1817e072805bafbf0d5a9eb2698ef75abc75ad68
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031093"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092204"
 ---
-# <a name="update-process"></a>プロセスの更新
+# <a name="update-process"></a>更新プロセス
 
 Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。 これらの更新には、定期的な更新を含むサービスに対する重要な改良を提供する、アプリケーションとプラットフォーム両方の変更が含まれます。
 

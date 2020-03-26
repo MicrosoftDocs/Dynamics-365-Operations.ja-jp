@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: ''
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail, Commerce
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 79965de3a3bf6107f646ec1ea9f6873f12e5458b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: efa2862ad850c26eca9207a06d1065beb4026362
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004612"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091812"
 ---
 # <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 
@@ -75,7 +75,7 @@ Fraud Protection 購入保護が注文の中止をおこなった場合は、ユ
 
 #### <a name="bank-events"></a>銀行イベント
 
-オンライン注文が Fraud Protection 評価に基づいて許可された場合は、次のステップは、その注文が支払承認が該当する場合は、支払いの承認になります。 支払プロセッサがこの注文を承認したら、Fraud Protection は承認結果を通知されます。 この結果を Fraud Protection に送信することで、高度な AI は生来の承認結果を予測するためにさらに学習することができ、それによって将来の Fraud Protection 評価の質を著しく向上させます。
+オンライン注文が Fraud Protection 評価に基づいて許可された場合は、次のステップは、その注文が支払承認が該当する場合は、支払いの承認になります。 支払プロセッサがこの注文を承認したら、Fraud Protection に承認結果が通知されます。 この結果を Fraud Protection に送信することで、高度な AI は生来の承認結果を予測するためにさらに学習することができ、それによって将来の Fraud Protection 評価の質を著しく向上させます。
 
 #### <a name="purchase-status-events"></a>注文ステータスイベント
 

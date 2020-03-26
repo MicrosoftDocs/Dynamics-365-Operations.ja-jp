@@ -19,11 +19,11 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.openlocfilehash: 0af43faa977e08326b8f7aee390eda92632a649f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769986"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124827"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

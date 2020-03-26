@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081318"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113785"
 ---
 # <a name="channel-setup-prerequisites"></a>チャネル設定の前提条件
 
@@ -47,9 +47,9 @@ Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提�
 - [法人構造の定義とコンフィギュレーション](channels-legal-entities.md) 
 - [組織階層のコンフィギュレーション](channels-org-hierarchies.md)
 - [倉庫の設定](channels-setup-warehouse.md)
-- [消費税のコンフィギュレーション](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [消費税のコンフィギュレーション](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
 - [電子メール通知プロファイルの設定](email-notification-profiles.md)
-- [番号順序の設定](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [番号順序の設定](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [既定の顧客およびアドレス帳の設定](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)

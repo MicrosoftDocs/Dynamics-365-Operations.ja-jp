@@ -1,6 +1,6 @@
 ---
 title: 理由コードの設定
-description: ''
+description: Dynamics 365 Human Resources は、理由コードを使用して、従業員の給付金が変化する理由を説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ebc49f99eb7d64def6f4a8bd9e6f2810d42dc421
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: f52d19f3d5303d59c560aa4c8cd45fe2b873c771
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009681"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092479"
 ---
 # <a name="set-up-reason-codes"></a>理由コードの設定
 

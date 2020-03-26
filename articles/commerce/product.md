@@ -1,9 +1,9 @@
 ---
-title: POS の製品推奨事項
+title: POS で製品推奨事項を追加する
 description: このトピックでは、POS (販売時点管理) デバイスでの製品推奨事項の使用について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057444"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127816"
 ---
-# <a name="product-recommendations-on-pos"></a>POS の製品推奨事項
+# <a name="add-product-recommendations-on-pos"></a>POS で製品推奨事項を追加する
 
 [!include [banner](includes/banner.md)]
 
@@ -71,8 +71,24 @@ ms.locfileid: "3057444"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[POS デバイスのトランザクション画面への推奨事項コントロールの追加](add-recommendations-control-pos-screen.md)
+[製品推奨事項の概要](product-recommendations.md)
 
-[製品推奨事項の概要](../commerce/product-recommendations.md)
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
 
-[製品推奨事項の有効化](../commerce/enable-product-recommendations.md) 
+[製品推奨事項の有効化](enable-product-recommendations.md)
+
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)

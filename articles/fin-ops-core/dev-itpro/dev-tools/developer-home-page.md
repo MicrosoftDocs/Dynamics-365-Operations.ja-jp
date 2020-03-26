@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d2264d919325972639ac09149cd20aa7f729b119
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811720"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124818"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -32,7 +32,7 @@ ms.locfileid: "2811720"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations アプリケーションは、Microsoft から提供されている次世代エンタープライズ リソース プランニング (ERP) を表します。 これは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効にするために設計されています。 これは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 このリリースでは、開発環境が大幅に変更されています。 これらの変更の内容は以下の通りです。
+Finance and Operations アプリケーションは、Microsoft が提供する次世代エンタープライズ リソース プランニング (ERP) を表します。 これは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効にするために設計されています。 これは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 このリリースでは、開発環境が大幅に変更されています。 これらの変更の内容は以下の通りです。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
 - Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
@@ -73,7 +73,7 @@ Finance and Operations アプリケーションは、Microsoft から提供さ�
 -   [Visual Studioの開発ツール](development-tools-overview.md)
 <!-- [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)-->
 -   [アプリケーション エクスプローラー](application-explorer.md)
--   [Visual Studioの Finance and Operations の プロジェクト タイプ](projects.md)
+-   [Visual Studio における Finance and Operations のプロジェクト タイプ](projects.md)
 -   [要素デザイナー](element-designers.md)
 -   [要素の使用方法を決定するためのコマンド](element-usage.md)
 -   [モデルとパッケージ](models.md)

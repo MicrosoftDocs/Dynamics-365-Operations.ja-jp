@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f177fd8cb0b91d338e8c76398f3e838f7cc81d6b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 67edc7158b3b9bf765af81d4c11f6748d65e05ba
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077359"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112228"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -37,6 +37,12 @@ ms.locfileid: "3077359"
     - [二重書き込みを使用する主な理由](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [二重書き込みは、顧客関係管理製品のユーザーと設計者に取って何を意味しますか?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
     
+## <a name="dual-write-setup"></a>二重書き込みの設定
+
++ [二重書き込みのシステム要件](dual-write-system-req.md)
++ [二重書き込みの設定のサポートされているシナリオ](connection-setup.md)
++ [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
+
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
 このトピックでは、Finance and Operations アプリケーションの概念と Microsoft Dynamics 365 のモデル駆動型アプリの概念間のマッピングについて説明します。
@@ -47,16 +53,25 @@ ms.locfileid: "3077359"
     + [社内データを含むブートストラップに関するよく寄せられる質問](bootstrap-company-data.md)
 
 + [統合された顧客マスター](customer-mapping.md)
-+ [統合された元帳](ledger-mapping.md)
 + [統一された製品経験](product-mapping.md)
+
+    + [統合されたサイトおよび倉庫](sites-warehouses-mapping.md)
+
 + [統合された仕入先マスター](vendor-mapping.md)
 
     + [仕入先デザインの切り替え](vendor-switch.md)
 
-+ [統合されたサイトおよび倉庫](sites-warehouses-mapping.md)
-+ [統合された税マスター](tax-mapping.md)
++ [財務および税参照データへのアクセス](finance-tax-reference.md)
+
+    + [統合された元帳](ledger-mapping.md)
+    + [統合された税マスター](tax-mapping.md)
+
++ [二重書き込み処理における見込顧客の収益化](dual-write-prospect-to-cash.md)
++ [サービスのための社内資産](in-house-assets.md)
++ [作業者、職務、および職位の統合](integrated-hr.md)
 
 ## <a name="support"></a>サポート
 
++ [Field Service ソリューションと Project Service Automation ソリューションの対応](field-service-project-service-automation.md)
 + [初期同期の選択と管理ビュー](initial-sync.md)
 + [データ統合のトラブルシューティング](dual-write-troubleshooting.md)

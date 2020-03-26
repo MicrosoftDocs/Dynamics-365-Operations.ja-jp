@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: df3b0b239fe542eab80fa92057248328d3f5188f
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 4ca9bb7f77283ec30d4648d6763f4156494050ac
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015298"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124165"
 ---
-# <a name="periodic-credit-management-tasks"></a>定期的な与信管理タスク
+# <a name="periodic-credit-management-tasks"></a>定期与信管理タスク
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客の与信限度額を管理するために必要なプロセスの一部である定期処理タスクについて説明します。
 

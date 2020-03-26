@@ -3,7 +3,7 @@ title: パーソナライズされた推奨事項のオプト アウト
 description: このトピックでは、顧客がMicrosoft Dynamics 365 Commerceでパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8e7b800218f68167901d86d61ae483680a04cfab
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: a6d2388e863135c2b6d51af915b606a56f0603a8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025261"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127747"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプト アウト
 
@@ -85,12 +85,22 @@ Commerce バック オフィスのアカウント管理では、小売業者は�
 
 [製品推奨事項の概要](product-recommendations.md)
 
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[パーソナライズされた推奨事項の有効化](personalized-recommendations.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
-[ページへの製品推奨リストの追加](add-reco-list-to-page.md)
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
 
-[POS デバイスへの推奨事項パネルの追加](add-recommendations-control-pos-screen.md)
+[POS での製品推奨事項の追加](product.md)
 
-[製品収集モジュールの概要](product-collection-module-overview.md)
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)

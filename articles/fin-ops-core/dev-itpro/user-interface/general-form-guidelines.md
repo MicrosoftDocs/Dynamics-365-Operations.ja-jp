@@ -3,13 +3,13 @@ title: フォームの全般的なガイドライン
 description: このトピックには、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
 author: jasongre
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 14701
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1a4d8e2b91204762eacbaee074d941afc8afbf8
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: a34240b86e8238dd328d997326d6cd7e346b0291
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658842"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112350"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
@@ -233,9 +233,6 @@ ms.locfileid: "2658842"
     -   その後の一般的でないアクションは **TextOnly** にする必要があります。
 -   **MenuButtons 内**:
     -   イメージは、MenuButtons のボタンではサポートされていません。
-
-## <a name="text-guidelines"></a>テキスト ガイドライン
--   表現、句読点、および省略形は、iX ガイドラインに従う必要があります。
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

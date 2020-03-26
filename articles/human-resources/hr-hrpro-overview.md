@@ -1,6 +1,6 @@
 ---
 title: 概要
-description: ''
+description: Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定、従業員の報酬と福利厚生の設定、および従業員の管理について説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009666"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091727"
 ---
 # <a name="overview"></a>概要
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [人事管理パラメーターのコンフィギュレーション](hr-setup-parameters.md)</br>
 [人事管理共有パラメーターのコンフィギュレーション](hr-setup-shared-parameters.md)</br>
 [人事管理ワークフローの設定](hr-setup-workflows.md)</br>
-[日付と時刻のフィールドを理解する](hr-setup-date-time-fields.md)</br>
+[日付と時刻のフィールドの理解](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>組織の設定をコンフィギュレーションする
 
@@ -50,7 +50,7 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [電子メールのコンフィギュレーションと送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json)</br>
 [日時データとタイム ゾーン](../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json)</br>
 
-## <a name="manage-personnel"></a>人事管理
+## <a name="manage-personnel"></a>個人の管理
 
 [従業員の編成](hr-personnel-departments-jobs-positions.md)</br>
 [職務のコンポーネントの設定](hr-personnel-jobs.md)</br>
@@ -86,32 +86,32 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [給付金の適格性ルールおよびポリシーの定義](hr-benefits-define-eligibility-rules.md)</br>
 [従業員手当プログラムの提供](hr-benefits-deliver-employee-benefits-program.md)</br>
 [新しい給付金の作成](hr-benefits-create.md)</br>
-[福利厚生への作業者の登録](hr-benefits-enroll-workers.md)</br>
+[福利厚生に作業者を登録する](hr-benefits-enroll-workers.md)</br>
 [給付金の有効期限の管理](hr-benefits-expiration-dates.md)</br>
 [ACA レポートの生成](hr-benefits-aca-reports.md)</br>
 
 ## <a name="manage-leave-and-absence"></a>休暇および欠勤の管理
 
 [概要](hr-leave-and-absence-overview.md)</br>
-[休暇パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md)</br>
+[休暇と欠勤のパラメータのコンフィギュレーション](hr-leave-and-absence-parameters.md)</br>
 [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)</br>
 [休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md)</br>
-[休暇タイプのコンフィギュレーション](hr-leave-and-absence-types.md)</br>
-[休暇計画の作成](hr-leave-and-absence-plans.md)</br>
-[休暇計画に作業者を割り当てる](hr-leave-and-absence-enroll.md)</br>
-[休暇計画の累計](hr-leave-and-absence-accrue.md)</br>
-[休暇の分析の表示](hr-leave-and-absence-analytics.md)</br>
-[休暇申請の管理](hr-employee-self-service-manage-requests.md)</br>
-[休暇の申請](hr-employee-self-service-request-time-off.md)</br>
-[チームおよび会社のカレンダーを表示する](hr-employee-self-service-calendar.md)</br>
+[休暇および欠勤タイプのコンフィギュレーション](hr-leave-and-absence-types.md)</br>
+[休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)</br>
+[休暇計画への作業者の割り当て](hr-leave-and-absence-enroll.md)</br>
+[休暇および欠勤計画の見越計上](hr-leave-and-absence-accrue.md)</br>
+[休暇および欠勤の分析の表示](hr-leave-and-absence-analytics.md)</br>
+[休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)</br>
+[要求時間オフ](hr-employee-self-service-request-time-off.md)</br>
+[チームおよび会社のカレンダーの表示](hr-employee-self-service-calendar.md)</br>
 
-## <a name="develop-employees"></a>従業員の開発
+## <a name="develop-employees"></a>従業員の育成
 
 [業績管理の概要](hr-develop-performance-management-overview.md)</br>
 [要員のスキルの調整](hr-develop-skills.md)</br>
 [業績仕訳への追加](hr-develop-add-performance-journal.md)</br>
 [目標の作成](hr-develop-create-goal.md)</br>
-[パフォーマンスの確認の作成](hr-develop-create-performance-review.md)</br>
+[業績の確認の作成](hr-develop-create-performance-review.md)</br>
 
 ## <a name="create-courses"></a>コースの作成
 
@@ -124,7 +124,7 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 [アンケート結果の分析](hr-learning-analyze-questionnaire-results.md)</br>
 [自由回答式の質問の作成](hr-learning-create-open-ended-question.md)</br>
 [選択式の質問の作成](hr-learning-create-closed-ended-question.md)</br>
-[付随する質問の作成](hr-learning-depending-question.md)</br>
+[依存質問の作成](hr-learning-depending-question.md)</br>
 
 
 

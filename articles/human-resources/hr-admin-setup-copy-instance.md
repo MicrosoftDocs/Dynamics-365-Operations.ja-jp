@@ -1,6 +1,6 @@
 ---
 title: インスタンスのコピー
-description: ''
+description: Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bbe325edb65cad0c1912e0a6ade559e5675dc58
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bb363369994d99f358be0c23cdaf1dbc80b644e5
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009628"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092295"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
@@ -68,11 +68,11 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー**を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
 
-   ![[上書きするインスタンスを選択します](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[上書きするインスタンスを選択](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platformを選択します](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform を選択](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPowerApps 環境 を選択して、 **コピー**を選択します。
 

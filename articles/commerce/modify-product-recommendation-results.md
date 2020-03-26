@@ -1,9 +1,9 @@
 ---
-title: AI-ML ベースの製品推奨事項結果の管理
+title: AI-ML ベースの製品推奨事項結果の調整
 description: このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品勧告の結果を調整する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025005"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127931"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の管理
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の調整
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品勧告の結果を調整する方法について説明します。 
+このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品推奨事項の結果を調整する方法について説明します。 
 
 製品の推奨設定を有効にすると、既定の設定が有効になります。これらのパラメーターは、多くのニーズに対して機能する場合があります。 結果が製品の販売活動に適合しているかどうかを、評価するための計画を立てることをお勧めします。 再テストの前に、必要に応じてパラメーターを変更する前に、数日間結果を評価することをお勧めします。 
 
@@ -102,10 +102,22 @@ ms.locfileid: "3025005"
 
 [製品推奨事項の概要](product-recommendations.md)
 
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[パーソナライズされた推奨事項の有効化](personalized-recommendations.md)
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
-[ページへの製品推奨リストの追加](add-reco-list-to-page.md)
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
 
-[製品収集モジュールの概要](product-collection-module-overview.md)
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[POS での製品推奨事項の追加](product.md)
+
+[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)

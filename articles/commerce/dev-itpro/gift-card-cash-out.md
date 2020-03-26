@@ -19,14 +19,16 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: d399b6e24a52ad0ebd2c28d583bb7c2413e698bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a6a3b3d728a1355aed2d953dd57a3b6d83f1e8e7
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004581"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117279"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
+
+[!include [banner](../../includes/banner.md)]
 
 このトピックは、Dynamics 365 Retail Modern POS (MPOS) のギフト カード清算機能の概要を提供します。 
 

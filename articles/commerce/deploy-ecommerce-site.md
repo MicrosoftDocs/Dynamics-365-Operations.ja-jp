@@ -3,7 +3,7 @@ title: 新しい E コマース テナントの配置
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい E コマース テナントを配置する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001786"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096681"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい E コマース テナントの配置
 
@@ -97,11 +97,19 @@ E コマースが LCS から初期化されると、システムは E コマー�
 
 [E コマース サイトの作成](create-ecommerce-site.md)
 
+[オンライン ストア チャネルのセットアップ](online-stores.md)
+
 [チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 
+[URL リダイレクトの一括アップロード](upload-bulk-redirects.md)
+
+[B2C テナントを Commerce に 設定](set-up-B2C-tenant.md)
+
 [ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
+
+[Commerce 環境での複数の B2C テナントのコンフィギュレーション](configure-multi-B2C-tenants.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 173b57acb6fa8b040aa85e02dc44c5e3d87f423b
-ms.sourcegitcommit: 33fb057cd3b7b19b97e9c8941655516f7225b0f5
+ms.openlocfilehash: a86730a72da711c0386f84eb82f8ff237b4d2acc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3087920"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096858"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -62,10 +62,8 @@ ms.locfileid: "3087920"
 - [POS レイアウト デザイナーのインストール](../install-pos-layout-designer.md)
 - [オフライン モードで Commerce runtime (CRT) サービス を呼び出す](call-crt-service-offline.md)
 - [Modern POS (MPOS) およびクラウド POS のトリガー拡張機能](modern-pos-trigger-extensibility.md)
-- [MPOS 画面レイアウトに新しいカスタム コントロールを追加する](add-new-custom-control-mpos-screen-layout.md)
 - [トリガーを使用して返品ポリシーを実装してください](trigger-example-return-policy.md)
 - [トリガーを使用してトランザクションをブロックする](trigger-example-blocking-transaction.md)
-- [顧客エンティティへの拡張プロパティの追加](add-extension-properties.md)
 - [POS ビューへのカスタム コントロールの追加](pos-custom-control.md)
 - [販売時点管理 (POS) 支払拡張機能](pos-payment-extension.md)
 - [販売時点管理 (POS) サンプルを実行](pos-run-samples.md)
@@ -95,13 +93,14 @@ ms.locfileid: "3087920"
 -   [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md)
 
 ## <a name="commerce-runtime"></a>Commerce Runtime
--   [Commerce runtime (CRT) のアーキテクチャ と構成](commerce-runtime-overview.md)
--   [Commerce runtime (CRT) の拡張機能とトリガー](commerce-runtime-extensibility-trigger.md)
--   [顧客の基本設定データをチャネル データベースに追加](add-customer-preference-channel.md)
--   [プロパティを販売注文に追加](add-properties-sales-order.md)
--   [小売チャネルのシークレットを管理](manage-secrets.md)
--   [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
--   [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)
+- [Commerce runtime (CRT) のアーキテクチャ と構成](commerce-runtime-overview.md)
+- [Commerce runtime (CRT) の拡張機能とトリガー](commerce-runtime-extensibility-trigger.md)
+- [顧客の基本設定データをチャネル データベースに追加](add-customer-preference-channel.md)
+- [プロパティを販売注文に追加](add-properties-sales-order.md)
+- [小売チャネルのシークレットを管理](manage-secrets.md)
+- [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
+- [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)
+- [チャネル データベースの事前拡張された列](extended-columns.md)
 
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: パッケージ アプリケーションの問題のトラブルシューティング
 description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 661cc5de5e853a0c0453ffc8a465f028b03b7579
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b57fe3a70916f9fc6051caf3c7fb9e6fce66136d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772351"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096740"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 

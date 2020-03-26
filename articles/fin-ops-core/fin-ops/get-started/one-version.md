@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新に関するよく寄せら�
 description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4ce09fc234d8ba3aa195ab2a375db0ec5500b562
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: dd4d97162525b7007d3eac0629ad91a11737e0e3
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058002"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096936"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -86,9 +86,9 @@ ms.locfileid: "3058002"
 
 はい、バージョン 7.3 を使用している顧客は、Lifecycle Services で直接プラットフォーム更新プログラムをスケジュールできるようになります。 遅延/一時停止 エクスペリエンスも利用可能になります。
 
-### <a name="do-these-updates-apply-to-on-premises"></a>これらの更新プログラムはオンプレミスで適用されますか?
+### <a name="service-updates-for-on-premises-deployments"></a>オンプレミス配置のためのサービス更新
 
-使用しているバージョンの具体的な有効期限については、[ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json)を参照してください。 一般に 3 つのサービス更新の有効期限があります。 ただし、このトピックで説明されている更新のプロセスは、クラウド サービスにのみ適用されます。
+クラウドとオンプレミスの両方の配置に対して、ポリシーとサービス更新スケジュールが同じになりました。 これには、最大で 3 回までの更新を適用するまでの遅延を指定するオプションなどが含まれます。 これらの更新をそれぞれ適用する方法は、そのまま若干異なります。 詳細については、[オンプレミス配置への更新プログラムの適用](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment)を参照してください。
 
 ## <a name="process"></a>処理
 
@@ -118,12 +118,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 ### <a name="whats-the-process-for-deprecation"></a>廃止のプロセスを教えてください。
 
-[Finance and Operations 削除済または非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックで、削除済の機能と非推奨の機能の違いを次のように述べます。
-
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
-
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、削除の 12 ヶ月前に製品文書で廃止予定の発表がされます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

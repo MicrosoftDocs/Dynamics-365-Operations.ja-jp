@@ -3,7 +3,7 @@ title: Android および iOS での POS ハイブリッド アプリのセット
 description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/25/2019
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 91010c11d091b598028fb0dc8ff69dce077b3a06
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 25954d61ba58e6c4e7752f549b1965688c718891
+ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004569"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117155"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -45,7 +45,10 @@ Windows で Xamarin をセットアップしてインストールするには、
 
 ### <a name="update-xamarin"></a>Xamarin の更新
 
-Xamarin をインストールした後は、最新の安定バージョンに更新する必要があります。
+> [!NOTE]
+> Xamarin.Android SDK バージョン 10.0 未満の使用をお勧めします。 
+
+Xamarin をインストールした後、最新の安定バージョンに更新する必要があります (Xamarin.Android SDK version は 10.0 未満でなければなりません)。
 
 -   **Windows** - Microsoft Visual Studio で、**ツール** &gt; **オプション** &gt; **環境** &gt; **Xamarin** &gt; **その他**を順にクリックします。
 -   **Mac**: Xamarin Studio で、**更新の確認** &gt; **チャネルを更新** をクリックします。 このステップの詳細については、[更新チャンネルの変更](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/) を参照してください。

@@ -1,9 +1,9 @@
 ---
-title: POS デバイスのトランザクション画面への推奨事項コントロールの追加
+title: トランザクション画面への推奨設定の追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023122"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127678"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>POS デバイスのトランザクション画面への推奨事項コントロールの追加
+# <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨設定の追加
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[POS の製品推奨事項](product.md)
+[製品推奨事項の概要](product-recommendations.md)
 
-[製品推奨事項の概要](../commerce/product-recommendations.md)
+[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+
+[製品推奨事項の有効化](enable-product-recommendations.md)
+
+[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+
+[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+
+[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
+
+[POS での製品推奨事項の追加](product.md)
+
+[AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
+
+[収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
+
+[推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+[製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
