@@ -454,6 +454,8 @@
                   items:
                     - name: 高度な自動請求のコンフィギュレーションおよび使用
                       href: omni-auto-charges.md
+                    - name: チャンルごとの自動請求の有効化とコンフィギュレーション
+                      href: auto-charges-by-channel.md
                     - name: ヘッダー請求金額を一致する販売明細行に比例配分する
                       href: pro-rate-charges-matching-lines.md
                 - name: 連続プログラムの管理
@@ -525,7 +527,7 @@
                 - name: 新しい製品の作成
                   items:
                     - name: Commerce での新しい製品の作成
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: 製品カテゴリおよび製品の管理
                       href: category-management-product-creation.md
                 - name: 製品属性
@@ -596,15 +598,13 @@
                   items:
                     - name: カスタマイズされた推奨事項の有効化
                       href: personalized-recommendations.md
-                    - name: カスタマイズされた製品推奨事項のオプト アウト
+                    - name: カスタマイズされた推奨事項のオプト アウト
                       href: personalization-gdpr.md
-                - name: E コマース サイトへの推奨リストの追加
-                  href: add-reco-list-to-page.md
                 - name: POS エクスペリエンス
                   items:
                     - name: POS での製品推奨事項の追加
                       href: product.md
-                    - name: トランザクション画面への推奨設定の追加
+                    - name: トランザクション画面への推奨事項の追加
                       href: add-recommendations-control-pos-screen.md
                 - name: AI-ML ベースの製品推奨事項結果の調整
                   href: modify-product-recommendation-results.md
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: 注文確認モジュール
                       href: order-confirmation-module.md
+                    - name: 店舗セレクター モジュール
+                      href: store-selector.md
                 - name: アカウント管理モジュール
                   items:
                     - name: アカウント管理ページとモジュール
@@ -2115,7 +2117,7 @@
                 - name: 支払データの使用
                   href: payment-connector-data-fields.md
                 - name: 支払コネクタの重複支払保護の有効化
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Service Fabric 配置でのアプリケーション エクスプローラー用支払パッケージの作成
                   href: dev-itpro/payment-connector-package.md
             - name: サード パーティ E コマースの拡張機能
