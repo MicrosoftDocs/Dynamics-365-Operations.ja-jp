@@ -162,24 +162,52 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Lifecycle Services からの二重書き込みの設定
                               href: data-entities/dual-write/lcs-setup.md
+                            - name: 初期同期
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: 既存の Finance and Operations アプリの二重書き込みの有効化
+                              items:
+                                - name: 既存の Finance and Operations アプリの二重書き込みの有効化
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: システム要件と前提条件
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: 二重書き込みウィザードを使用して環境をリンクする方法
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: エンティティ マップの二重書き込みの有効化
+                                  href: data-entities/dual-write/enable-entity-map.md
+                        - name: 二重書き込みの管理
+                          items:
+                            - name: エンティティとフィールドのマッピングのカスタマイズ
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: エラー管理と警告通知
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: アプリケーション ライフサイクル管理
+                              href: data-entities/dual-write/app-lifecycle-management.md
                         - name: アプリ間の概念のマッピング
                           items:
-                            - name: Common Data Service の組織階層
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: 会社統合
-                              items:
-                                - name: Common Data Services での会社の概念
-                                  href: data-entities/dual-write/company-data.md
-                                - name: 会社データを使用したブートストラップ
-                                  href: data-entities/dual-write/bootstrap-company-data.md
                             - name: 統合された顧客マスター
                               href: data-entities/dual-write/customer-mapping.md
+                            - name: 仕入先の統合
+                              items:
+                                - name: 統合された仕入先マスター
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: 仕入先デザインの切り替え
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: 顧客ロイヤルティ カードと報酬ポイント
+                              href: data-entities/dual-write/loyalty-mapping.md
                             - name: 成果物統合
                               items:
                                 - name: 統一された製品経験
                                   href: data-entities/dual-write/product-mapping.md
                                 - name: 統合されたサイトおよび倉庫
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: 会社統合
+                              items:
+                                - name: Common Data Services での会社の概念
+                                  href: data-entities/dual-write/company-data.md
+                                - name: 会社データを使用したブートストラップ
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Common Data Service の組織階層
+                              href: data-entities/dual-write/organization-mapping.md
                             - name: 財務および税データ
                               items:
                                 - name: 財務および税参照データへのアクセス
@@ -188,13 +216,9 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: 統合された税マスター
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: 仕入先の統合
-                              items:
-                                - name: 統合された仕入先マスター
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: 仕入先デザインの切り替え
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: 二重書き込みでの見込顧客から入金
+                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: 二重書き込みでの見込顧客の現金化
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: サービスのための社内資産
                               href: data-entities/dual-write/in-house-assets.md
@@ -204,15 +228,29 @@
                           items:
                             - name: Field Service ソリューションと Project Service Automation ソリューションのサポート
                               href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: 初期同期
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: データ統合のトラブルシューティング
-                              href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Power Platform データ インテグレーターとの統合
+                            - name: トラブルシューティング
+                              items:
+                                - name: Finance and Operations アプリと Common Data Service で二重書き込みが構成されていることの確認
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: 初期セットアップ中の問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: 初期同期中の問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Finance and Operations アプリの二重書き込みモジュールでの問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: ライブ同期の問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: ソリューションの認識に関する問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: 一般的なトラブルシューティング
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Power Platform との統合
                       items:
-                        - name: 見込顧客から入金のシナリオのコンフィギュレーション
+                        - name: 見込顧客を現金化シナリオのコンフィギュレーション
                           items:
-                            - name: 見込顧客から入金
+                            - name: 見込顧客を現金化
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Finance and Operations の顧客への Sales の勘定の直接同期
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -392,7 +430,9 @@
                       href: database/api/v1/reference-list-backups.md
                     - name: データベース更新の作成
                       href: database/api/v1/reference-create-refresh.md
-                    - name: 操作活動状態の取得
+                    - name: データベースのエクスポートの作成
+                      href: database/api/v1/reference-create-export.md
+                    - name: 取得操作活動の状態
                       href: database/api/v1/reference-get-status.md
         - name: デモ データ
           items:
@@ -1032,6 +1072,8 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: モニタリングおよび診断
               href: lifecycle-services/monitoring-diagnostics.md
+            - name: 影響分析レポート
+              href: lifecycle-services/impact-analysis-report.md
             - name: 環境サービスの再開
               href: lifecycle-services/restart-environment-services.md
             - name: 稼働停止をレポート
@@ -1396,6 +1438,10 @@
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: 稼働停止をレポート
               href: lifecycle-services/report-production-outage.md
+            - name: データベース ログの構成と管理
+              href: sysadmin/configure-manage-database-log.md
+            - name: AOS の起動時に OData メタデータ キャッシュを作成する
+              href: sysadmin/odata-warmup.md
         - name: アップグレード、更新プログラム、および修正プログラム
           items:
             - name: アップグレード、更新プログラム、および修正プログラムのリソース
