@@ -17,61 +17,85 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67edc7158b3b9bf765af81d4c11f6748d65e05ba
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 84d3d3c79b901f5ede9d4254dafd34e0ea8674b9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112228"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172797"
 ---
-# <a name="dual-write-home-page"></a><span data-ttu-id="b7e9d-103">二重書き込みホーム ページ</span><span class="sxs-lookup"><span data-stu-id="b7e9d-103">Dual-write home page</span></span>
+# <a name="dual-write-home-page"></a><span data-ttu-id="32d7f-103">二重書き込みホーム ページ</span><span class="sxs-lookup"><span data-stu-id="32d7f-103">Dual-write home page</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
 
-<span data-ttu-id="b7e9d-104">次のトピックでは、二重書き込み統合について説明します。</span><span class="sxs-lookup"><span data-stu-id="b7e9d-104">These topics describe dual-write integration.</span></span>
 
-+ [<span data-ttu-id="b7e9d-105">二重書き込みとは何ですか?</span><span class="sxs-lookup"><span data-stu-id="b7e9d-105">What is dual-write?</span></span>](dual-write-overview.md)
+<span data-ttu-id="32d7f-104">次のトピックでは、二重書き込み統合について説明します。</span><span class="sxs-lookup"><span data-stu-id="32d7f-104">These topics describe dual-write integration.</span></span>
 
-    - [<span data-ttu-id="b7e9d-106">二重書き込みを使用する主な理由</span><span class="sxs-lookup"><span data-stu-id="b7e9d-106">Top reasons to use dual-write</span></span>](dual-write-overview.md#top-reasons-to-use-dual-write)
-    - [<span data-ttu-id="b7e9d-107">二重書き込みは、顧客関係管理製品のユーザーと設計者に取って何を意味しますか?</span><span class="sxs-lookup"><span data-stu-id="b7e9d-107">What does dual-write mean for users and architects of customer relationship management products?</span></span>](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
++ [<span data-ttu-id="32d7f-105">二重書き込みとは何ですか?</span><span class="sxs-lookup"><span data-stu-id="32d7f-105">What is dual-write?</span></span>](dual-write-overview.md)
+
+    - [<span data-ttu-id="32d7f-106">二重書き込みを使用する主な理由</span><span class="sxs-lookup"><span data-stu-id="32d7f-106">Top reasons to use dual-write</span></span>](dual-write-overview.md#top-reasons-to-use-dual-write)
+    - [<span data-ttu-id="32d7f-107">二重書き込みは、顧客関係管理製品のユーザーと設計者に取って何を意味しますか?</span><span class="sxs-lookup"><span data-stu-id="32d7f-107">What does dual-write mean for users and architects of customer relationship management products?</span></span>](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
     
-## <a name="dual-write-setup"></a><span data-ttu-id="b7e9d-108">二重書き込みの設定</span><span class="sxs-lookup"><span data-stu-id="b7e9d-108">Dual-write setup</span></span>
+## <a name="dual-write-setup"></a><span data-ttu-id="32d7f-108">二重書き込みの設定</span><span class="sxs-lookup"><span data-stu-id="32d7f-108">Dual-write setup</span></span>
 
-+ [<span data-ttu-id="b7e9d-109">二重書き込みのシステム要件</span><span class="sxs-lookup"><span data-stu-id="b7e9d-109">System requirements for dual-write</span></span>](dual-write-system-req.md)
-+ [<span data-ttu-id="b7e9d-110">二重書き込みの設定のサポートされているシナリオ</span><span class="sxs-lookup"><span data-stu-id="b7e9d-110">Supported scenarios for dual-write setup</span></span>](connection-setup.md)
-+ [<span data-ttu-id="b7e9d-111">Lifecycle Services からの二重書き込みの設定</span><span class="sxs-lookup"><span data-stu-id="b7e9d-111">Dual-write setup from Lifecycle Services</span></span>](lcs-setup.md)
++ [<span data-ttu-id="32d7f-109">二重書き込みのシステム要件</span><span class="sxs-lookup"><span data-stu-id="32d7f-109">System requirements for dual-write</span></span>](dual-write-system-req.md)
++ [<span data-ttu-id="32d7f-110">二重書き込みの設定のサポートされているシナリオ</span><span class="sxs-lookup"><span data-stu-id="32d7f-110">Supported scenarios for dual-write setup</span></span>](connection-setup.md)
++ [<span data-ttu-id="32d7f-111">Lifecycle Services からの二重書き込みの設定</span><span class="sxs-lookup"><span data-stu-id="32d7f-111">Dual-write setup from Lifecycle Services</span></span>](lcs-setup.md)
++ [<span data-ttu-id="32d7f-112">初期同期の選択と管理ビュー</span><span class="sxs-lookup"><span data-stu-id="32d7f-112">Initial synchronization choices and administration views</span></span>](initial-sync.md)
++ <span data-ttu-id="32d7f-113">既存 Finance and Operations アプリの二重書き込みを有効化</span><span class="sxs-lookup"><span data-stu-id="32d7f-113">Enable dual-write for existing Finance and Operations apps</span></span>
 
-## <a name="mapping-concepts-between-apps"></a><span data-ttu-id="b7e9d-112">アプリ間の概念のマッピング</span><span class="sxs-lookup"><span data-stu-id="b7e9d-112">Mapping concepts between apps</span></span>
+    + [<span data-ttu-id="32d7f-114">既存 Finance and Operations アプリの二重書き込みを有効化</span><span class="sxs-lookup"><span data-stu-id="32d7f-114">Enable dual-write for existing Finance and Operations apps</span></span>](enable-dual-write.md)
+    + [<span data-ttu-id="32d7f-115">システム要件と前提条件</span><span class="sxs-lookup"><span data-stu-id="32d7f-115">System requirements and prerequisites</span></span>](requirements-and-prerequisites.md)
+    + [<span data-ttu-id="32d7f-116">二重書き込みウィザードを使用して環境をリンクする方法</span><span class="sxs-lookup"><span data-stu-id="32d7f-116">How to use the dual-write wizard to link your environments</span></span>](link-your-environment.md)
+    + [<span data-ttu-id="32d7f-117">二重書き込みのエンティティ マップを有効化</span><span class="sxs-lookup"><span data-stu-id="32d7f-117">Enable entity map for dual-write</span></span>](enable-entity-map.md)
 
-<span data-ttu-id="b7e9d-113">このトピックでは、Finance and Operations アプリケーションの概念と Microsoft Dynamics 365 のモデル駆動型アプリの概念間のマッピングについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b7e9d-113">These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.</span></span>
+## <a name="managing-dual-write-after-setup"></a><span data-ttu-id="32d7f-118">設定後の二重書き込みを管理</span><span class="sxs-lookup"><span data-stu-id="32d7f-118">Managing dual-write after setup</span></span>
 
-+ [<span data-ttu-id="b7e9d-114">組織階層の認識</span><span class="sxs-lookup"><span data-stu-id="b7e9d-114">Organization hierarchy awareness</span></span>](organization-mapping.md)
-+ [<span data-ttu-id="b7e9d-115">Common Data Service 企業理念</span><span class="sxs-lookup"><span data-stu-id="b7e9d-115">Company concept in Common Data Service</span></span>](company-data.md)
++ [<span data-ttu-id="32d7f-119">エンティティとフィールド マッピングのカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="32d7f-119">Customize entity and field mappings</span></span>](customizing-mappings.md)
++ [<span data-ttu-id="32d7f-120">エラー管理と警告通知</span><span class="sxs-lookup"><span data-stu-id="32d7f-120">Error management and alert notifications</span></span>](errors-and-alerts.md)
++ [<span data-ttu-id="32d7f-121">アプリケーション ライフサイクル管理</span><span class="sxs-lookup"><span data-stu-id="32d7f-121">Application lifecycle management</span></span>](app-lifecycle-management.md)
 
-    + [<span data-ttu-id="b7e9d-116">社内データを含むブートストラップに関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="b7e9d-116">Bootstrap with company data FAQ</span></span>](bootstrap-company-data.md)
+## <a name="mapping-concepts-between-apps"></a><span data-ttu-id="32d7f-122">アプリ間の概念のマッピング</span><span class="sxs-lookup"><span data-stu-id="32d7f-122">Mapping concepts between apps</span></span>
 
-+ [<span data-ttu-id="b7e9d-117">統合された顧客マスター</span><span class="sxs-lookup"><span data-stu-id="b7e9d-117">Integrated customer master</span></span>](customer-mapping.md)
-+ [<span data-ttu-id="b7e9d-118">統一された製品経験</span><span class="sxs-lookup"><span data-stu-id="b7e9d-118">Unified product experience</span></span>](product-mapping.md)
+<span data-ttu-id="32d7f-123">このトピックでは、Finance and Operations アプリケーションの概念と Microsoft Dynamics 365 のモデル駆動型アプリの概念間のマッピングについて説明します。</span><span class="sxs-lookup"><span data-stu-id="32d7f-123">These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.</span></span>
 
-    + [<span data-ttu-id="b7e9d-119">統合されたサイトおよび倉庫</span><span class="sxs-lookup"><span data-stu-id="b7e9d-119">Integrated sites and warehouses</span></span>](sites-warehouses-mapping.md)
++ [<span data-ttu-id="32d7f-124">統合された顧客マスター</span><span class="sxs-lookup"><span data-stu-id="32d7f-124">Integrated customer master</span></span>](customer-mapping.md)
++ [<span data-ttu-id="32d7f-125">統合された仕入先マスター</span><span class="sxs-lookup"><span data-stu-id="32d7f-125">Integrated vendor master</span></span>](vendor-mapping.md)
 
-+ [<span data-ttu-id="b7e9d-120">統合された仕入先マスター</span><span class="sxs-lookup"><span data-stu-id="b7e9d-120">Integrated vendor master</span></span>](vendor-mapping.md)
+    + [<span data-ttu-id="32d7f-126">仕入先デザインの切り替え</span><span class="sxs-lookup"><span data-stu-id="32d7f-126">Switch between vendor designs</span></span>](vendor-switch.md)
 
-    + [<span data-ttu-id="b7e9d-121">仕入先デザインの切り替え</span><span class="sxs-lookup"><span data-stu-id="b7e9d-121">Switch between vendor designs</span></span>](vendor-switch.md)
++ [<span data-ttu-id="32d7f-127">顧客ロイヤルティ カードと報酬ポイント</span><span class="sxs-lookup"><span data-stu-id="32d7f-127">Customer loyalty cards and reward points</span></span>](loyalty-mapping.md)
++ [<span data-ttu-id="32d7f-128">統一された製品経験</span><span class="sxs-lookup"><span data-stu-id="32d7f-128">Unified product experience</span></span>](product-mapping.md)
 
-+ [<span data-ttu-id="b7e9d-122">財務および税参照データへのアクセス</span><span class="sxs-lookup"><span data-stu-id="b7e9d-122">Access to finance and tax reference data</span></span>](finance-tax-reference.md)
+    + [<span data-ttu-id="32d7f-129">統合されたサイトおよび倉庫</span><span class="sxs-lookup"><span data-stu-id="32d7f-129">Integrated sites and warehouses</span></span>](sites-warehouses-mapping.md)
 
-    + [<span data-ttu-id="b7e9d-123">統合された元帳</span><span class="sxs-lookup"><span data-stu-id="b7e9d-123">Integrated ledger</span></span>](ledger-mapping.md)
-    + [<span data-ttu-id="b7e9d-124">統合された税マスター</span><span class="sxs-lookup"><span data-stu-id="b7e9d-124">Integrated tax master</span></span>](tax-mapping.md)
++ [<span data-ttu-id="32d7f-130">Common Data Service 企業理念</span><span class="sxs-lookup"><span data-stu-id="32d7f-130">Company concept in Common Data Service</span></span>](company-data.md)
 
-+ [<span data-ttu-id="b7e9d-125">二重書き込み処理における見込顧客の収益化</span><span class="sxs-lookup"><span data-stu-id="b7e9d-125">Prospect to cash in dual-write</span></span>](dual-write-prospect-to-cash.md)
-+ [<span data-ttu-id="b7e9d-126">サービスのための社内資産</span><span class="sxs-lookup"><span data-stu-id="b7e9d-126">In-house assets for servicing</span></span>](in-house-assets.md)
-+ [<span data-ttu-id="b7e9d-127">作業者、職務、および職位の統合</span><span class="sxs-lookup"><span data-stu-id="b7e9d-127">Integrated worker, job, and position</span></span>](integrated-hr.md)
+    + [<span data-ttu-id="32d7f-131">社内データを含むブートストラップに関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="32d7f-131">Bootstrap with company data FAQ</span></span>](bootstrap-company-data.md)
 
-## <a name="support"></a><span data-ttu-id="b7e9d-128">サポート</span><span class="sxs-lookup"><span data-stu-id="b7e9d-128">Support</span></span>
++ [<span data-ttu-id="32d7f-132">組織階層の認識</span><span class="sxs-lookup"><span data-stu-id="32d7f-132">Organization hierarchy awareness</span></span>](organization-mapping.md)
++ [<span data-ttu-id="32d7f-133">財務および税参照データへのアクセス</span><span class="sxs-lookup"><span data-stu-id="32d7f-133">Access to finance and tax reference data</span></span>](finance-tax-reference.md)
 
-+ [<span data-ttu-id="b7e9d-129">Field Service ソリューションと Project Service Automation ソリューションの対応</span><span class="sxs-lookup"><span data-stu-id="b7e9d-129">Support for Field Service solutions and Project Service Automation solutions</span></span>](field-service-project-service-automation.md)
-+ [<span data-ttu-id="b7e9d-130">初期同期の選択と管理ビュー</span><span class="sxs-lookup"><span data-stu-id="b7e9d-130">Initial synchronization choices and administration views</span></span>](initial-sync.md)
-+ [<span data-ttu-id="b7e9d-131">データ統合のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="b7e9d-131">Troubleshooting data integration</span></span>](dual-write-troubleshooting.md)
+    + [<span data-ttu-id="32d7f-134">統合された元帳</span><span class="sxs-lookup"><span data-stu-id="32d7f-134">Integrated ledger</span></span>](ledger-mapping.md)
+    + [<span data-ttu-id="32d7f-135">統合された税マスター</span><span class="sxs-lookup"><span data-stu-id="32d7f-135">Integrated tax master</span></span>](tax-mapping.md)
+
++ [<span data-ttu-id="32d7f-136">Dynamics 365 Supply Chain Management 価格エンジンとオンデマンドの同期</span><span class="sxs-lookup"><span data-stu-id="32d7f-136">Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine</span></span>](pricing-engine.md)
++ [<span data-ttu-id="32d7f-137">二重書き込みでの見込顧客から入金</span><span class="sxs-lookup"><span data-stu-id="32d7f-137">Prospect to cash in dual-write</span></span>](dual-write-prospect-to-cash.md)
++ [<span data-ttu-id="32d7f-138">サービスのための社内資産</span><span class="sxs-lookup"><span data-stu-id="32d7f-138">In-house assets for servicing</span></span>](in-house-assets.md)
++ [<span data-ttu-id="32d7f-139">作業者、職務、および職位の統合</span><span class="sxs-lookup"><span data-stu-id="32d7f-139">Integrated worker, job, and position</span></span>](integrated-hr.md)
+
+## <a name="support"></a><span data-ttu-id="32d7f-140">サポート</span><span class="sxs-lookup"><span data-stu-id="32d7f-140">Support</span></span>
+
++ [<span data-ttu-id="32d7f-141">Field Service ソリューションと Project Service Automation ソリューションのサポート</span><span class="sxs-lookup"><span data-stu-id="32d7f-141">Support for Field Service solutions and Project Service Automation solutions</span></span>](field-service-project-service-automation.md)
+
+## <a name="troubleshooting"></a><span data-ttu-id="32d7f-142">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-142">Troubleshooting</span></span>
+
++ [<span data-ttu-id="32d7f-143">Finance and Operations アプリと Common Data Service で二重書き込みが設定されていることを確認する</span><span class="sxs-lookup"><span data-stu-id="32d7f-143">Verify that dual-write is configured in Finance and Operations apps and Common Data Service</span></span>](dual-write-troubleshooting-verify-config.md)
++ [<span data-ttu-id="32d7f-144">初期設定中の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-144">Troubleshoot issues during initial setup</span></span>](dual-write-troubleshooting-initial-setup.md)
++ [<span data-ttu-id="32d7f-145">初期同期中の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-145">Troubleshoot issues during initial synchronization</span></span>](dual-write-troubleshooting-initial-sync.md)
++ [<span data-ttu-id="32d7f-146">Finance and Operations アプリの二重書き込みモジュールに関する問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-146">Troubleshoot issues with the Dual-write module in Finance and Operations apps</span></span>](dual-write-troubleshooting-dual-write-module.md)
++ [<span data-ttu-id="32d7f-147">ライブ同期の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-147">Troubleshoot live synchronization issues</span></span>](dual-write-troubleshooting-live-sync.md)
++ [<span data-ttu-id="32d7f-148">ソリューションの認識に関する問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-148">Troubleshoot issues related to solution awareness</span></span>](dual-write-troubleshooting-solution-awareness.md)
++ [<span data-ttu-id="32d7f-149">Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-149">Troubleshoot issues related to upgrades of Finance and Operations apps</span></span>](dual-write-troubleshooting-finops-upgrades.md)
++ [<span data-ttu-id="32d7f-150">一般的なトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="32d7f-150">General troubleshooting</span></span>](dual-write-troubleshooting.md)
