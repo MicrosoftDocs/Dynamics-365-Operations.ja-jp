@@ -17,38 +17,38 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bba9e5cb7dfddd2a80a37e7a57fdf94a91341e8f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f779db14a866cc9a401d15e0666883ba3a828548
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146701"
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="927df-103">作業セルで材料が利用不可の場合にプロセスかんばん作業を準備</span><span class="sxs-lookup"><span data-stu-id="927df-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
+# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="52b87-103">作業セルで材料が利用不可の場合にプロセスかんばん作業を準備</span><span class="sxs-lookup"><span data-stu-id="52b87-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="927df-104">この手順では、作業セルで材料が利用不可能な場合にプロセスかんばん作業を準備することに焦点をあてるため、倉庫からの材料をピッキングすることが必要です。</span><span class="sxs-lookup"><span data-stu-id="927df-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="927df-105">「材料が利用可能な場合にプロセスかんばん作業を準備する」という手順は、この手順を作成するための前提条件です。</span><span class="sxs-lookup"><span data-stu-id="927df-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="927df-106">この手順は、機械オペレーターを対象としています。</span><span class="sxs-lookup"><span data-stu-id="927df-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="927df-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="927df-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="52b87-104">この手順では、作業セルで材料が利用不可能な場合にプロセスかんばん作業を準備することに焦点をあてるため、倉庫からの材料をピッキングすることが必要です。</span><span class="sxs-lookup"><span data-stu-id="52b87-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="52b87-105">「材料が利用可能な場合にプロセスかんばん作業を準備する」という手順は、この手順を作成するための前提条件です。</span><span class="sxs-lookup"><span data-stu-id="52b87-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="52b87-106">この手順は、機械オペレーターを対象としています。</span><span class="sxs-lookup"><span data-stu-id="52b87-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="52b87-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="52b87-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="927df-108">[生産管理] > [かんばん] > [プロセス ジョブのかんばんボード] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="927df-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="927df-109">[作業セル] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="927df-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="927df-110">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="927df-110">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="927df-111">作業セル 1250 を選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-111">Select work cell 1250.</span></span>  
-4. <span data-ttu-id="927df-112">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="927df-113">「かんばん 000356」を選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-113">Select Kanban 000356.</span></span>  
-5. <span data-ttu-id="927df-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="927df-115">一覧で、行 4 を選択解除します。</span><span class="sxs-lookup"><span data-stu-id="927df-115">In the list, deselect row 4.</span></span> <span data-ttu-id="927df-116">または、「材料が利用可能な場合にプロセスかんばん作業を準備する」というタスクが完了していない場合は、行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
-6. <span data-ttu-id="927df-117">[ピッキング リスト] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="927df-117">Toggle the expansion of the Picking list section.</span></span>
-    * <span data-ttu-id="927df-118">供給のステータスにエントリー アイコンがないということは、品目「P0002」の 48 ea が作業セルに存在しないことを示します。</span><span class="sxs-lookup"><span data-stu-id="927df-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
+1. <span data-ttu-id="52b87-108">[生産管理] > [かんばん] > [プロセス ジョブのかんばんボード] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="52b87-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="52b87-109">[作業セル] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="52b87-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="52b87-110">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="52b87-110">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="52b87-111">作業セル 1250 を選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-111">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="52b87-112">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="52b87-113">「かんばん 000356」を選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-113">Select Kanban 000356.</span></span>  
+5. <span data-ttu-id="52b87-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="52b87-115">一覧で、行 4 を選択解除します。</span><span class="sxs-lookup"><span data-stu-id="52b87-115">In the list, deselect row 4.</span></span> <span data-ttu-id="52b87-116">または、「材料が利用可能な場合にプロセスかんばん作業を準備する」というタスクが完了していない場合は、行 4 を選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
+6. <span data-ttu-id="52b87-117">[ピッキング リスト] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="52b87-117">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="52b87-118">供給のステータスにエントリー アイコンがないということは、品目「P0002」の 48 ea が作業セルに存在しないことを示します。</span><span class="sxs-lookup"><span data-stu-id="52b87-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
 
-## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="927df-119">材料を作業セルに移動する</span><span class="sxs-lookup"><span data-stu-id="927df-119">Transfer materials to work cell</span></span>
-1. <span data-ttu-id="927df-120">[転送ジョブ] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="927df-120">Toggle the expansion of the Transfer jobs section.</span></span>
-2. <span data-ttu-id="927df-121">クイック フィルターを使用して、'P0002' の値で品目番号フィールドにフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="927df-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
-3. <span data-ttu-id="927df-122">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="927df-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="927df-123">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="927df-123">Click Start.</span></span>
-    * <span data-ttu-id="927df-124">転送処理中です。</span><span class="sxs-lookup"><span data-stu-id="927df-124">Transfer is in progress.</span></span>  
-5. <span data-ttu-id="927df-125">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="927df-125">Click Complete.</span></span>
-    * <span data-ttu-id="927df-126">品目「P0002」は、かんばん作業のピッキング リストから使用可能です。</span><span class="sxs-lookup"><span data-stu-id="927df-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="927df-127">これは、必要なすべての材料でかんばんを準備することを意味します。</span><span class="sxs-lookup"><span data-stu-id="927df-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
-6. <span data-ttu-id="927df-128">[準備] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="927df-128">Click Prepare.</span></span>
-    * <span data-ttu-id="927df-129">[ジョブ ステータス] にアイコンがあるということは、ジョブが準備が整っていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="927df-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
+## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="52b87-119">材料を作業セルに移動する</span><span class="sxs-lookup"><span data-stu-id="52b87-119">Transfer materials to work cell</span></span>
+1. <span data-ttu-id="52b87-120">[転送ジョブ] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="52b87-120">Toggle the expansion of the Transfer jobs section.</span></span>
+2. <span data-ttu-id="52b87-121">クイック フィルターを使用して、'P0002' の値で品目番号フィールドにフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="52b87-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
+3. <span data-ttu-id="52b87-122">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="52b87-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="52b87-123">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52b87-123">Click Start.</span></span>
+    * <span data-ttu-id="52b87-124">転送処理中です。</span><span class="sxs-lookup"><span data-stu-id="52b87-124">Transfer is in progress.</span></span>  
+5. <span data-ttu-id="52b87-125">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52b87-125">Click Complete.</span></span>
+    * <span data-ttu-id="52b87-126">品目「P0002」は、かんばん作業のピッキング リストから使用可能です。</span><span class="sxs-lookup"><span data-stu-id="52b87-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="52b87-127">これは、必要なすべての材料でかんばんを準備することを意味します。</span><span class="sxs-lookup"><span data-stu-id="52b87-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
+6. <span data-ttu-id="52b87-128">[準備] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="52b87-128">Click Prepare.</span></span>
+    * <span data-ttu-id="52b87-129">[ジョブ ステータス] にアイコンがあるということは、ジョブが準備が整っていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="52b87-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
 

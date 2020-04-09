@@ -16,35 +16,35 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e04af04de3d18d375ce3609ab4cd53f652c2fbc
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7be50eba098b7b28594c8e18c721579f4bb2e879
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140994"
 ---
-# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a><span data-ttu-id="bde3c-103">POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="bde3c-103">Create financial dimensions for POS registers and configure dimension values on registers</span></span>
+# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a><span data-ttu-id="480c4-103">POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="480c4-103">Create financial dimensions for POS registers and configure dimension values on registers</span></span>
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bde3c-104">この手順では、販売時点管理 (POS) レジスターの財務分析コードの作成について説明し、レジスターの財務分析コード値をコンフィギュレーションする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-104">This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers.</span></span> <span data-ttu-id="bde3c-105">この手順には、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。</span><span class="sxs-lookup"><span data-stu-id="bde3c-105">This procedure doesn’t include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="bde3c-106">これらのタスクは他のトピックで示されます。</span><span class="sxs-lookup"><span data-stu-id="bde3c-106">Those tasks can be found in other topics.</span></span> <span data-ttu-id="bde3c-107">このレコードでは、MXMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-107">This recording uses USRT demo company.</span></span>
+<span data-ttu-id="480c4-104">この手順では、販売時点管理 (POS) レジスターの財務分析コードの作成について説明し、レジスターの財務分析コード値をコンフィギュレーションする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="480c4-104">This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers.</span></span> <span data-ttu-id="480c4-105">この手順には、分析コード セットおよび勘定構造の作成など、他の関連手順は含まれません。</span><span class="sxs-lookup"><span data-stu-id="480c4-105">This procedure doesn't include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="480c4-106">これらのタスクは他のトピックで示されます。</span><span class="sxs-lookup"><span data-stu-id="480c4-106">Those tasks can be found in other topics.</span></span> <span data-ttu-id="480c4-107">このレコードでは、MXMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="480c4-107">This recording uses USRT demo company.</span></span>
 
-1. <span data-ttu-id="bde3c-108">[総勘定元帳] > [勘定科目表] > [分析コード] > [財務分析コード] に移動します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-108">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
-2. <span data-ttu-id="bde3c-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-109">Click New.</span></span>
-3. <span data-ttu-id="bde3c-110">[値の使用元] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-110">In the Use values from field, select an option.</span></span>
-4. <span data-ttu-id="bde3c-111">[分析コード名] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-111">In the Dimension name field, type a value.</span></span>
-5. <span data-ttu-id="bde3c-112">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-112">Click Activate.</span></span>
-6. <span data-ttu-id="bde3c-113">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-113">Click Close.</span></span>
-7. <span data-ttu-id="bde3c-114">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-114">Click Activate.</span></span>
-8. <span data-ttu-id="bde3c-115">[分析コード値] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-115">Click Dimension values.</span></span>
-9. <span data-ttu-id="bde3c-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="bde3c-116">Close the page.</span></span>
-10. <span data-ttu-id="bde3c-117">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-117">Click Save.</span></span>
-11. <span data-ttu-id="bde3c-118">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="bde3c-118">Close the page.</span></span>
-12. <span data-ttu-id="bde3c-119">小売りとコマース > チャネル設定 > POS 設定 > レジスターの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-119">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
-13. <span data-ttu-id="bde3c-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-120">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="bde3c-121">[財務分析コード] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="bde3c-121">Toggle the expansion of the Financial dimensions section.</span></span>
-15. <span data-ttu-id="bde3c-122">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-122">Click Edit.</span></span>
-16. <span data-ttu-id="bde3c-123">[ターミナル] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="bde3c-123">In the Terminal field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="bde3c-124">リストで、更新されたレジスターの分析コード値を参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="bde3c-124">In the list, find and select the dimension value for the register being updated.</span></span>
-18. <span data-ttu-id="bde3c-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bde3c-125">Click Save.</span></span>
+1. <span data-ttu-id="480c4-108">[総勘定元帳] > [勘定科目表] > [分析コード] > [財務分析コード] に移動します。</span><span class="sxs-lookup"><span data-stu-id="480c4-108">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
+2. <span data-ttu-id="480c4-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-109">Click New.</span></span>
+3. <span data-ttu-id="480c4-110">[値の使用元] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="480c4-110">In the Use values from field, select an option.</span></span>
+4. <span data-ttu-id="480c4-111">[分析コード名] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="480c4-111">In the Dimension name field, type a value.</span></span>
+5. <span data-ttu-id="480c4-112">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-112">Click Activate.</span></span>
+6. <span data-ttu-id="480c4-113">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-113">Click Close.</span></span>
+7. <span data-ttu-id="480c4-114">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-114">Click Activate.</span></span>
+8. <span data-ttu-id="480c4-115">[分析コード値] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-115">Click Dimension values.</span></span>
+9. <span data-ttu-id="480c4-116">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="480c4-116">Close the page.</span></span>
+10. <span data-ttu-id="480c4-117">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-117">Click Save.</span></span>
+11. <span data-ttu-id="480c4-118">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="480c4-118">Close the page.</span></span>
+12. <span data-ttu-id="480c4-119">小売りとコマース > チャネル設定 > POS 設定 > レジスターの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="480c4-119">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
+13. <span data-ttu-id="480c4-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="480c4-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="480c4-121">[財務分析コード] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="480c4-121">Toggle the expansion of the Financial dimensions section.</span></span>
+15. <span data-ttu-id="480c4-122">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-122">Click Edit.</span></span>
+16. <span data-ttu-id="480c4-123">[ターミナル] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="480c4-123">In the Terminal field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="480c4-124">リストで、更新されたレジスターの分析コード値を参照して選択します。</span><span class="sxs-lookup"><span data-stu-id="480c4-124">In the list, find and select the dimension value for the register being updated.</span></span>
+18. <span data-ttu-id="480c4-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="480c4-125">Click Save.</span></span>
 

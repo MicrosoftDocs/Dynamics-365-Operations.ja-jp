@@ -16,38 +16,38 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f67d912b3349d4b5dd861b97533a7722a2b02fa4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5ac010b96892450c8d37bb08f967ecf4491b4b5
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845140"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148012"
 ---
-# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="102e4-103">製品コンフィギュレーション モデルへ式の制約の追加</span><span class="sxs-lookup"><span data-stu-id="102e4-103">Add an expression constraint to a product configuration model</span></span>
+# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="4c6a3-103">製品コンフィギュレーション モデルへ式の制約の追加</span><span class="sxs-lookup"><span data-stu-id="4c6a3-103">Add an expression constraint to a product configuration model</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="102e4-104">この手順は、製品コンフィギュレーション モデルに新しい式の制約を追加する方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="102e4-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="102e4-105">ユーザーが金属の前グリルを選択した場合は、コーナーの保護をスピーカーに適用する必要があることを義務付ける方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="102e4-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="102e4-106">その手順は、デモ会社 USMF で [ハイエンド スピーカー] コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="102e4-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="4c6a3-104">この手順は、製品コンフィギュレーション モデルに新しい式の制約を追加する方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="4c6a3-105">ユーザーが金属の前グリルを選択した場合は、コーナーの保護をスピーカーに適用する必要があることを義務付ける方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="4c6a3-106">その手順は、デモ会社 USMF で [ハイエンド スピーカー] コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="create-an-expression-constraint"></a><span data-ttu-id="102e4-107">式の制約の作成</span><span class="sxs-lookup"><span data-stu-id="102e4-107">Create an expression constraint</span></span>
-1. <span data-ttu-id="102e4-108">[製品バリアント モデルの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-108">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="102e4-109">[製品コンフィギュレーション モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-109">Click Product configuration models.</span></span>
-3. <span data-ttu-id="102e4-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="102e4-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="102e4-111">この例では、ハイエンド スピーカー モデルを使用します。</span><span class="sxs-lookup"><span data-stu-id="102e4-111">This example uses the high end speaker model.</span></span>  
-4. <span data-ttu-id="102e4-112">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-112">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="102e4-113">[制約] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="102e4-113">Expand the Constraints section.</span></span>
-6. <span data-ttu-id="102e4-114">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-114">Click Add.</span></span>
-7. <span data-ttu-id="102e4-115">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-115">Click Create.</span></span>
-8. <span data-ttu-id="102e4-116">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="102e4-116">In the Name field, type a value.</span></span>
+## <a name="create-an-expression-constraint"></a><span data-ttu-id="4c6a3-107">式の制約の作成</span><span class="sxs-lookup"><span data-stu-id="4c6a3-107">Create an expression constraint</span></span>
+1. <span data-ttu-id="4c6a3-108">[製品バリアント モデルの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-108">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="4c6a3-109">[製品コンフィギュレーション モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-109">Click Product configuration models.</span></span>
+3. <span data-ttu-id="4c6a3-110">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="4c6a3-111">この例では、ハイエンド スピーカー モデルを使用します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-111">This example uses the high end speaker model.</span></span>  
+4. <span data-ttu-id="4c6a3-112">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-112">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="4c6a3-113">[制約] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-113">Expand the Constraints section.</span></span>
+6. <span data-ttu-id="4c6a3-114">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-114">Click Add.</span></span>
+7. <span data-ttu-id="4c6a3-115">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-115">Click Create.</span></span>
+8. <span data-ttu-id="4c6a3-116">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-116">In the Name field, type a value.</span></span>
 
-## <a name="enter-expression"></a><span data-ttu-id="102e4-117">式の入力</span><span class="sxs-lookup"><span data-stu-id="102e4-117">Enter expression</span></span>
-1. <span data-ttu-id="102e4-118">[式の編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-118">Click Edit expression.</span></span>
-    * <span data-ttu-id="102e4-119">この段階で、タスク記録のユーザー インターフェイスのロックを解除する場合、制約式の構築のため、IntelliSense と記号のリストを使用できます。</span><span class="sxs-lookup"><span data-stu-id="102e4-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
-2. <span data-ttu-id="102e4-120">ConstraintBody フィールドで、「Implies[FrontGrill=="Metal", CornerProtection]」と入力します。</span><span class="sxs-lookup"><span data-stu-id="102e4-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
-    * <span data-ttu-id="102e4-121">この式ロジックの状態 : [前グリル] が金属の場合、角の保護オプションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="102e4-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
-3. <span data-ttu-id="102e4-122">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-122">Click Validate.</span></span>
-    * <span data-ttu-id="102e4-123">検証機能は、制約式に対して実行され、構文エラーを確認します。</span><span class="sxs-lookup"><span data-stu-id="102e4-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
-4. <span data-ttu-id="102e4-124">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-124">Click Close.</span></span>
-5. <span data-ttu-id="102e4-125">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="102e4-125">Click OK.</span></span>
+## <a name="enter-expression"></a><span data-ttu-id="4c6a3-117">式の入力</span><span class="sxs-lookup"><span data-stu-id="4c6a3-117">Enter expression</span></span>
+1. <span data-ttu-id="4c6a3-118">[式の編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-118">Click Edit expression.</span></span>
+    * <span data-ttu-id="4c6a3-119">この段階で、タスク記録のユーザー インターフェイスのロックを解除する場合、制約式の構築のため、IntelliSense と記号のリストを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
+2. <span data-ttu-id="4c6a3-120">ConstraintBody フィールドで、「Implies[FrontGrill=="Metal", CornerProtection]」と入力します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
+    * <span data-ttu-id="4c6a3-121">この式ロジックの状態 : [前グリル] が金属の場合、角の保護オプションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
+3. <span data-ttu-id="4c6a3-122">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-122">Click Validate.</span></span>
+    * <span data-ttu-id="4c6a3-123">検証機能は、制約式に対して実行され、構文エラーを確認します。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
+4. <span data-ttu-id="4c6a3-124">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-124">Click Close.</span></span>
+5. <span data-ttu-id="4c6a3-125">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c6a3-125">Click OK.</span></span>
 

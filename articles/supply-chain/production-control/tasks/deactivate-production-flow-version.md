@@ -17,32 +17,32 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c9646a01924255b8b1b40fc2a5684ba30967fe1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 860873a1fd61d52f642774e69d48c5ef6c7465a9
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146839"
 ---
-# <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="0a591-103">生産フロー バージョンの無効化</span><span class="sxs-lookup"><span data-stu-id="0a591-103">Deactivate a production flow version</span></span>
+# <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="fbd67-103">生産フロー バージョンの無効化</span><span class="sxs-lookup"><span data-stu-id="fbd67-103">Deactivate a production flow version</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0a591-104">有効な生産フロー バージョンが不要になった場合、無効化することができます。</span><span class="sxs-lookup"><span data-stu-id="0a591-104">When an active production flow version is no longer needed, it can be deactivated.</span></span> <span data-ttu-id="0a591-105">すべてのかんばんルールと活動が終了し、今後有効化しない場合にのみ、このオプションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a591-105">You should only use this option if all kanban rules and activities have ended and will not be activated again.</span></span> <span data-ttu-id="0a591-106">この生産フロー バージョンに関連付けられたすべてのかんばんルールの有効期限は現在の日時に更新されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="0a591-106">Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time.</span></span> 
+<span data-ttu-id="fbd67-104">有効な生産フロー バージョンが不要になった場合、無効化することができます。</span><span class="sxs-lookup"><span data-stu-id="fbd67-104">When an active production flow version is no longer needed, it can be deactivated.</span></span> <span data-ttu-id="fbd67-105">すべてのかんばんルールと活動が終了し、今後有効化しない場合にのみ、このオプションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbd67-105">You should only use this option if all kanban rules and activities have ended and will not be activated again.</span></span> <span data-ttu-id="fbd67-106">この生産フロー バージョンに関連付けられたすべてのかんばんルールの有効期限は現在の日時に更新されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="fbd67-106">Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time.</span></span> 
 
-<span data-ttu-id="0a591-107">有効な生産フロー バージョンを変更するには、有効なバージョンの有効期限を設定することを検討し、新しいバージョンを作成します。</span><span class="sxs-lookup"><span data-stu-id="0a591-107">To modify an active production flow version, consider setting an expiry date for the active version and create a new version.</span></span> <span data-ttu-id="0a591-108">これにより、新しいバージョンおよび関連するかんばんルールを作成している間、生産の工程を続けることができます。</span><span class="sxs-lookup"><span data-stu-id="0a591-108">This will allow you to continue your production operations while preparing the new version and related kanban rules.</span></span> 
+<span data-ttu-id="fbd67-107">有効な生産フロー バージョンを変更するには、有効なバージョンの有効期限を設定することを検討し、新しいバージョンを作成します。</span><span class="sxs-lookup"><span data-stu-id="fbd67-107">To modify an active production flow version, consider setting an expiry date for the active version and create a new version.</span></span> <span data-ttu-id="fbd67-108">これにより、新しいバージョンおよび関連するかんばんルールを作成している間、生産の工程を続けることができます。</span><span class="sxs-lookup"><span data-stu-id="fbd67-108">This will allow you to continue your production operations while preparing the new version and related kanban rules.</span></span> 
 
-<span data-ttu-id="0a591-109">有効な生産フロー バージョンを期限切れにするには、有効期限を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a591-109">To expire an active production flow version, you need to set an expiry date.</span></span> <span data-ttu-id="0a591-110">その意味で、無効化は、ルールというより、例外というようなものです。</span><span class="sxs-lookup"><span data-stu-id="0a591-110">In that sense, deactivation is more like an exception than a rule.</span></span> 
+<span data-ttu-id="fbd67-109">有効な生産フロー バージョンを期限切れにするには、有効期限を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbd67-109">To expire an active production flow version, you need to set an expiry date.</span></span> <span data-ttu-id="fbd67-110">その意味で、無効化は、ルールというより、例外というようなものです。</span><span class="sxs-lookup"><span data-stu-id="fbd67-110">In that sense, deactivation is more like an exception than a rule.</span></span> 
 
-<span data-ttu-id="0a591-111">この手順では、無効化することができるバージョンの生産フローが必要です。</span><span class="sxs-lookup"><span data-stu-id="0a591-111">For this procedure you need a production flow with a version that can be deactivated.</span></span> <span data-ttu-id="0a591-112">バージョンが完全に廃止されていることを 100% 確信しない限り、生産環境にはこれを試みません。</span><span class="sxs-lookup"><span data-stu-id="0a591-112">Do not try this in a production environment unless you are 100% positive that the version is fully obsolete.</span></span>
+<span data-ttu-id="fbd67-111">この手順では、無効化することができるバージョンの生産フローが必要です。</span><span class="sxs-lookup"><span data-stu-id="fbd67-111">For this procedure you need a production flow with a version that can be deactivated.</span></span> <span data-ttu-id="fbd67-112">バージョンが完全に廃止されていることを 100% 確信しない限り、生産環境にはこれを試みません。</span><span class="sxs-lookup"><span data-stu-id="fbd67-112">Do not try this in a production environment unless you are 100% positive that the version is fully obsolete.</span></span>
 
 
-## <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="0a591-113">生産フロー バージョンの無効化</span><span class="sxs-lookup"><span data-stu-id="0a591-113">Deactivate a production flow version</span></span>
-1. <span data-ttu-id="0a591-114">[生産管理] > [設定] > [リーン生産フロー] > [生産フロー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="0a591-114">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="0a591-115">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="0a591-115">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="0a591-116">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a591-116">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="0a591-117">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="0a591-117">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="0a591-118">[無効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a591-118">Click Deactivate.</span></span>
-    * <span data-ttu-id="0a591-119">この生産フロー バージョンが廃止であると 100% 確信していない限り次の手順に進まないでください。</span><span class="sxs-lookup"><span data-stu-id="0a591-119">Do not proceed if you are not 100% positive that this production flow version is obsolete.</span></span> <span data-ttu-id="0a591-120">[OK] をクリックすると、すべての有効なかんばんルールの期限が切れ、この生産フロー バージョンにおけるすべての生産と補充の活動に即時停止が設定されます。</span><span class="sxs-lookup"><span data-stu-id="0a591-120">Clicking Ok will expire all active kanban rules and put an immediate stop to all production and replenishment activities of this production flow version.</span></span>  
-6. <span data-ttu-id="0a591-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0a591-121">Click OK.</span></span>
+## <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="fbd67-113">生産フロー バージョンの無効化</span><span class="sxs-lookup"><span data-stu-id="fbd67-113">Deactivate a production flow version</span></span>
+1. <span data-ttu-id="fbd67-114">[生産管理] > [設定] > [リーン生産フロー] > [生産フロー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fbd67-114">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="fbd67-115">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="fbd67-115">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="fbd67-116">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="fbd67-116">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="fbd67-117">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="fbd67-117">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="fbd67-118">[無効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fbd67-118">Click Deactivate.</span></span>
+    * <span data-ttu-id="fbd67-119">この生産フロー バージョンが廃止であると 100% 確信していない限り次の手順に進まないでください。</span><span class="sxs-lookup"><span data-stu-id="fbd67-119">Do not proceed if you are not 100% positive that this production flow version is obsolete.</span></span> <span data-ttu-id="fbd67-120">[OK] をクリックすると、すべての有効なかんばんルールの期限が切れ、この生産フロー バージョンにおけるすべての生産と補充の活動に即時停止が設定されます。</span><span class="sxs-lookup"><span data-stu-id="fbd67-120">Clicking Ok will expire all active kanban rules and put an immediate stop to all production and replenishment activities of this production flow version.</span></span>  
+6. <span data-ttu-id="fbd67-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fbd67-121">Click OK.</span></span>
 
