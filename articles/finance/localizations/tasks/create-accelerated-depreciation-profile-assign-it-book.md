@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42b8608ef7663d33b864843d889689291dd2b729
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 82932fa0a7bb2aa416dc1e3399308186915c0e66
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175152"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138987"
 ---
 # <a name="create-accelerated-depreciation-profile-and-assign-it-to-book"></a>加速減価償却プロファイルを作成し、帳簿に割り当てる
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、ほかの減価償却方法と同様、加速償却に減価償却プロファイルが必要です。 
 

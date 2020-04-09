@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 38db4a5f93f4b755cfd6fee43eaef27672551077
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189893"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143838"
 ---
 # <a name="create-an-operating-unit"></a>作業単位の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 作業単位とは、事業における経済資源と運営プロセスの管理を振り分ける際に使用する組織です。 作業単位のメンバは、希少なリソースの有効活用、プロセスの改善、および業績に対する責任を担っています。 作業単位の種類には、コスト センター、事業単位、部門、およびバリュー ストリームが含まれます。 作業単位を作成するには、次の手順に従います。 この手順の作成に使用するデモ データの会社は USMF です。
 

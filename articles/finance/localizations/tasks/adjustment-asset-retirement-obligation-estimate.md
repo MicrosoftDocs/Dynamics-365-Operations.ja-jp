@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45f7dee107f2d54c0a91874eca8050b3105aa9cb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 64450b573e38cb18af34d710822c2df704235d6f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183752"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145254"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、資産除去責務 (ARO) の最初の見積を調整できます。 
 

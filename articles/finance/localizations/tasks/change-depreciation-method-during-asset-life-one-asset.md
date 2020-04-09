@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b0587bf66f5462feda87547bf97ac12c45a7a1ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 32afb60c71f717155cac0fbf766efd6ce75d44be
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183750"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137907"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset"></a>単一資産の資産耐用年数期間中の減価償却方法の変更
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。
 

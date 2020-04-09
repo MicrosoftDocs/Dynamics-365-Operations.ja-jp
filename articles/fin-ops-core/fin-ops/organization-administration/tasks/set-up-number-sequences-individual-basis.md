@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: db662eb407fbcf3587f3fcb03347a3f14e83b879
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189870"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140509"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、番号順序を個別に設定する方法について説明します。 番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。 ID が必要なマスタ データまたはトランザクション レコードは、参照先と呼ばれます。 参照先に新しいレコードを作成するには、事前に番号順序を設定して参照先に関連付ける必要があります。 必要な番号順序は、**番号順序の設定**ウィザードを使用してすべて同時に設定できるほか、**番号順序**ページを使用して個々の番号順序の作成または変更を行うことができます。
 

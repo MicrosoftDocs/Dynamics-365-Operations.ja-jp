@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4cc7bc610228a2f0255d5aa1d81fc8ef1d60fe00
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdae0339b9b8668f46b16a14b47226e2bfc4fc81
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183733"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138848"
 ---
 # <a name="propose-additional-depreciation"></a>割増償却の提案
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、特定の条件下で割増償却が許可されています。 
 

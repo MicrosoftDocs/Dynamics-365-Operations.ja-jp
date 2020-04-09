@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec3a1be1007f3b7edafc62b4d2ed9fd4e3631c33
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 307416bb80246637b14d056ccf55b74ca5296625
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183727"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143477"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した顧客月次締め請求書の決済
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、支払は月次締め請求書に対して行われ決済されます。
 

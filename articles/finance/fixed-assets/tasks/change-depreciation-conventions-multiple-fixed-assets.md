@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21baf3692cbcb87f6ed37459848376a1fa87a438
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 39930134782b40de05a92a6ad51c4f628f304a78
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178634"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142895"
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>複数の固定資産の減価償却方法の変更
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクは、指定した固定資産グループに適用する減価償却方法を更新します。 このタスク ガイドでは、デモ会社 USMF を使用します。
 

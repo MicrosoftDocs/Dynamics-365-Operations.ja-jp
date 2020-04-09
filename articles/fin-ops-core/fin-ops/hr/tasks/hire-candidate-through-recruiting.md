@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f56769abb4da0068d6e2916df8dc782e662a2d56
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0c4367838bc334f18608e17f966397302c20aa06
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190399"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143630"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>採用による候補者の雇用
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。 採用プロジェクトを通して申請者を雇用する場合、新しい作業者レコードが作成され、申請者レコードのステータスは採用済となります。 この手順の作成に使用するデモ データの会社は USMF です。 この手順を完了するには、[人事管理] > [採用] > [申請] > [申請] の順に移動します。 
+この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。 採用プロジェクトを使用して申請者を雇用すると、新しい作業者レコードが作成され、申請者レコードのステータスは採用済となります。 この手順の作成に使用するデモ データの会社は USMF です。 この手順を完了するには、[人事管理] > [採用] > [申請] > [申請] の順に移動します。 
 
 1. 外部申請者の申請の設定
 2. 一覧で、選択された行のリンクをクリックします。

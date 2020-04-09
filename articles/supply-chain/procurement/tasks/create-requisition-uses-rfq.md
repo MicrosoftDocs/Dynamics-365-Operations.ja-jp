@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914957"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149631"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>RFQ を使用する要求の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。 このガイドで表示される例は USMF のデモ データ会社で使用でき、すべての手順を完了するためには管理者としてログインする必要があります。 このガイドのタスクは、調達担当者によって通常実行されます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "1914957"
 2. **履歴の表示**を選択します。
 3. ページを更新します。
 4. **追跡の詳細**セクションを展開します。
-5. ツリーで、“行ワークフローが有効化された“ から始まる行を選択します。
+5. ツリーで、“行のワークフローが有効化された“ から始まる行を選択します。
 6. **ワークフローの詳細を表示**を選択します。
 7. **作業項目**セクションを展開します。
 8. **再割り当て**を選択します。
@@ -68,7 +68,7 @@ ms.locfileid: "1914957"
 
 1. ページを更新します。
 2. **見積依頼**を選択します。
-3. **購買組織**フィールドで、**USMF** を選択します。 要求明細行で同じ法人を選択する必要があります。  
+3. **購買組織**フィールドで、**USMF** を選択します。 要求明細行と同じ法人を選択する必要があります。  
 4. 一覧で、選択された行をマークします。 自分の購買要求に複数の明細行がある場合は、RFQ に追加するすべての明細行を選択します。  
 5. **OK** を選択します。
 6. ページを更新します。

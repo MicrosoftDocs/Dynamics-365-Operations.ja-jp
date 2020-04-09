@@ -19,20 +19,20 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
-ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
+ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3081154"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173203"
 ---
 # <a name="unified-product-experience"></a>統一された製品経験
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-ビジネス エコシステムが Finance、Supply Chain Management、Sales などの Dynamics 365 アプリケーションで構成されている場合、企業では通常、製品データを調達するためにこれらのアプリケーションが使用されます。 これは、アプリケーションによって、高度な価格決定の概念と正確な手持在庫のデータを補完する堅牢な製品インフラストラクチャを提供するためです。 製品データを調達するために外部の製品ライフサイクル管理 (PLM) システムを使用する企業では、Finance and Operations アプリから他の Dynamics 365 アプリに製品をチャネル化できます。 製品の統合エクスペリエンスによって Common Data Serviceに統合された製品データ モデルがもたらされるため、Power Platform ユーザーを含むすべてのアプリケーション ユーザーが、Finance and Operations アプリからの豊富な製品データを利用することができます。
+
+ビジネス エコシステムが Finance、Supply Chain Management、Sales などの Dynamics 365 アプリケーションで構成されている場合、企業では通常、製品データを調達するためにこれらのアプリケーションが使用されます。 これは、アプリケーションが、高度な価格決定の概念と正確な手持在庫のデータを補完する堅牢な製品インフラストラクチャを提供することが理由です。 製品データを調達するために外部の製品ライフサイクル管理 (PLM) システムを使用する企業では、Finance and Operations アプリから他の Dynamics 365 アプリに製品をチャネル化できます。 製品の統合エクスペリエンスによって Common Data Serviceに統合された製品データ モデルがもたらされるため、Power Platform ユーザーを含むすべてのアプリケーション ユーザーが、Finance and Operations アプリからの豊富な製品データを利用することができます。
 
 Sales の製品データ モデルを次に示します。
 
@@ -52,7 +52,7 @@ Finance and Operations アプリからの製品データ モデルを次に示�
 
 製品情報には、製品分析コードや追跡、保管分析コードなど、製品とその定義に関連するすべての情報が含まれます。 次の表が示すように、製品と関連する情報を同期するためにエンティティ マップのコレクションが作成されます。
 
-Finance and Operations | その他の Dynamics 365 アプリ | 説明
+Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
 -----------------------|--------------------------------|---
 リリース済製品 V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** エンティティには、製品を定義する Finance and Operations アプリのフィールドが含まれ、これには製品の財務情報と管理情報が含まれています。 
 Common Data Service リリース済特徴的製品 | 品目 | **製品**エンティティには、製品を定義するフィールドが含まれます。 これには、個々の製品 (製品サブタイプの製品) と製品バリアントが含まれます。 次の表に、このマッピングを示します。
@@ -75,8 +75,8 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 単位換算 | msdyn_ unitofmeasureconversions
 製品固有の測定単位換算 | msdyn_productspecificunitofmeasureconversion
 製品カテゴリ | msdyn_productcategories | 各製品カテゴリおよびその構造と特性に関する情報は、製品カテゴリ エンティティに含まれています。 
-製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して製品を分類またはグループ化します。カテゴリ階層は、製品カテゴリ階層エンティティを使用して、Common Data Service で使用できます。 
-製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。 
+製品カテゴリ階層 | msdyn_productcategoryhierarhies | 製品階層を使用して、製品を分類またはグループ化します。 カテゴリ階層は、製品カテゴリの階層エンティティを使用して Common Data Service で使用できます。 
+製品カテゴリ階層ロール | msdyn_productcategoryhierarchies | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 これらは製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。 
 製品カテゴリの割り当て | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てエンティティを使用できます。
 
 ## <a name="integration-of-products"></a>製品の統合
@@ -135,7 +135,7 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>既定の注文設定と製品固有の既定の注文設定
 
-既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Common Data Service で提供されます。 機能の詳細については、[既定の注文設定トピック](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings) を参照してください。
+既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Common Data Service で利用できます。 機能の詳細については、[既定の注文設定トピック](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings) を参照してください。
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
@@ -143,7 +143,7 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>測定単位と測定単位の換算
 
-次の図のデータ モデルで示すように、測定単位と対応する換算は Common Data Service で利用できます。
+次の図のデータ モデルで示すように、測定単位と対応する変換は Common Data Service で利用できます。
 
 ![製品のデータ モデル](media/dual-write-product-three.png)
 
@@ -153,17 +153,17 @@ Common Data Service リリース済特徴的製品 | 品目 | **製品**エン�
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Finance and Operations と Common Data Service の間で一致する単位データの初期同期
 
 ### <a name="initial-synchronization-of-units"></a>単位の初期同期
 
-デュアル書き込みが有効になっている場合、Finance and Operations アプリの単位は他の Dynamics 365 アプリに同期されます。 Common Data Service の Finance and Operations アプリから同期された単位グループには、"外部で管理されている" ことを示すフラグが設定されています。
+デュアル書き込みが有効になっている場合、Finance and Operations アプリの単位は他の Dynamics 365 アプリに同期されます。 Common Data Service の Finance and Operations アプリから同期された単位グループには、"外部管理" を示すフラグが設定されています。
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの単位と単位クラス/グループのデータの照合
 
-まず、単位の統合キーが msdyn_symbol であることに注意する必要があります。 したがって、この値は、Common Data Service または他の Dynamics 365 アプリで一意である必要があります。 他の Dynamics 365 アプリでは、単位の一意性を定義する "単位グループ ID" と "名前" のペアであるため、Finance and Operations アプリと Common Data Service の間で単位データを一致させるためのさまざまなシナリオを検討する必要があります。
+まず、単位の統合キーが msdyn_symbol であることに注意する必要があります。 したがって、この値は、Common Data Service または他の Dynamics 365 アプリで一意である必要があります。 その他の Dynamics 365 アプリでは、これは単位の一意性を定義する "単位グループ ID" と "名前" のペアであるため、Finance and Operations アプリと Common Data Service の間で単位データを一致させるためのさまざまなシナリオを検討する必要があります。
 
 Finance and Operations アプリやその他の Dynamics 365 アプリで一致/重複する単位の場合:
 
@@ -172,7 +172,7 @@ Finance and Operations アプリやその他の Dynamics 365 アプリで一致/
 
 Finance and Operations の単位および単位クラスで、他の Dynamics 365 アプリに存在しない場合:
 
-Finance and Operations アプリの単位グループをデュアル書き込みの一部とし、それに対応する単位を他の Dynamics 365 アプリと Common Data Service に作成して同期し、この単位グループを "外部管理" として設定します。 追加のブートストラップ作業は不要です。
+デュアル書き込みの一部として、Finance and Operations アプリからの単位グループとそれに対応する単位がその他の Dynamics 365 アプリと Common Data Service で作成および同期され、この単位グループを "外部管理" として設定します。 追加のブートストラップ作業は不要です。
 
 他の Dynamics 365 アプリの単位で、Finance and Operations アプリに存在しない場合:
 
@@ -203,7 +203,7 @@ Finance and Operations アプリの単位グループをデュアル書き込み
 
 Dynamics 365 for Finance and Operations と Common Data Service の製品との間で製品を一意に識別するために、統合キーが使用されます。 製品では、**(productnumber)** は Common Data Service の製品を識別する固有のキーです。 これは、次の連結によって構成されます **(会社、msdyn_productnumber)**。 **会社**は Finance and Operations の法人エンティティを示し、**msdyn_productnumber** は Finance and Operations の特定の製品の製品番号を示します。 
 
-他の Dynamics 365 アプリのユーザーについては、この製品は UI の **msdyn_productnumber** で識別されます (フィールドのラベルが**製品番号**であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) フィールドは表示されません。 
+その他の Dynamics 365 アプリのユーザーについては、この製品は **msdyn_productnumber** という UI で識別されます (フィールドのラベルが **製品番号** であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) フィールドは表示されません。 
 
 Common Data Service でアプリを作成した場合は、**製品番号** (固有の製品 ID) を統合キーとして使用することに注意する必要があります。 **msdyn_productnumber** は一意ではないので使用しないでください。 
 
@@ -223,4 +223,4 @@ Finance and Operations と Common Data Service、および他の Dynamics 365 �
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから Finance and Operations への製品データの移行
 
-他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。 
+その他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合は、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。 

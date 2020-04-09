@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントの生成
-description: この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4 - 形式の変更)」の手順を完了する必要があります。
+description: この手順のステップを完了するには、まず 「ER アプリケーション データ更新と共にドキュメントを生成する（パート 4 - 形式の変更）」 に記載の手順を完了する必要があります。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: dcc00bba4aa92ad089bcab83ee22f79c21ccc252
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141859"
 ---
-# <a name="generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントの生成
+# <a name="generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成する
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4: 形式の変更)」の手順を完了する必要があります。
+この手順のステップを完了するには、まず 「ER アプリケーション データ更新と共にドキュメントを生成する（パート 4：形式の変更）」 に記載の手順を完了する必要があります。
 
 
 
@@ -43,10 +43,10 @@ ms.locfileid: "3042853"
 
     イントラスタット レポート プロセスの詳細をアーカイブするのに、作成した各アーカイブのレコードを特定する必要があります。 そのためには特別な番号順序をコンフィギュレーションする必要があります。  
 
-3. 「イントラスタット アーカイブ ID」参照を選択します。
+3. 「イントラスタット アーカイブ ID」 の参照を選択します。
 4. [番号順序コード] フィールドに値を入力します。
 
-    [番号順序コード] フィールドで、「Fore_2」という値を入力または選択します。  
+    [番号シーケンス コード] フィールドに、 「Fore_2」 という値を入力または選択します。  
 
 5. ResolveChanges 番号順序コード。
 6. [保存] をクリックします。
@@ -60,7 +60,7 @@ ms.locfileid: "3042853"
 5. [ファイル名を入力] フィールドに、「intrastat2.xml」と入力します。
 6. [OK] をクリックします。
 
-## <a name="review-er-format-executions-results"></a>ER 形式の実行の結果を確認する
+## <a name="review-er-format-executions-results"></a>ER 形式の実行結果を確認する
 生成した XML ファイルを確認します。  
 1. ページを閉じます。
 2. [税] > [申告] > [対外貿易] > [イントラスタット] の順に移動します。

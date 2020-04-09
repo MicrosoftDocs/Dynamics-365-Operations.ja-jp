@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7777ba38e4bf41b17fae698200017b933fc9e876
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188168"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141675"
 ---
 # <a name="customer-payment-overview"></a>顧客支払の概要
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。 このタスクでは、USMF というデモ会社を使用します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "2188168"
 14. **アクション ウィンドウ**で、明細行をクリックします。 明細行を開くと、**顧客支払の入力**のページに記録した支払と、仕訳帳に保存した支払がすべて表示されます。 また、このページを使用すると、転記の前に新しい顧客支払を入力したり、既存の顧客支払を編集したりすることもできます。
 15. 別の支払を作成するには、**新規**をクリックします。 
 16. 支払を受け取った顧客を選択します。 顧客はわからないが、支払で支払った請求書がわかっている場合、[請求書] フィールドを使用して手動で請求書を入力または選択することができます。 請求書の選択後、顧客が既定値になります。  
-17. 支払われた請求書をマークするには、**トランザクションの決済**をクリックします。 どの請求書の支払も決済する必要はありません。 前払の場合または支払われた請求書がわからない場合は、その支払を入力および転記できます。 請求書に対する支払を後で決済することができます。  
+17. 支払われた請求書をマークするには、**トランザクションの決済** をクリックします。 どの請求書の支払も決済する必要はありません。 前払の場合または支払われた請求書がわからない場合は、その支払を入力および転記できます。 請求書に対する支払を後で決済することができます。  
 18. 支払によって支払われた請求書をマークします。 
 19. **金額**フィールドで、請求書で決済する支払金額を入力します。
 20. **OK**をクリックします。

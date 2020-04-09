@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55d548a97a2f93bffeb5aa4b0ce6b0c4ca5f8819
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea2bfd2514be666d05165410ca27041a86464715
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769835"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143226"
 ---
 # <a name="er-import-configurations-from-rcs"></a>RCS からの (ER) インポート構成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子申告開発者ロールのユーザーが、Microsoft Regulatory Configuration Services (RCS) から新しいバージョンの電子申告 (ER) 構成をインポートする方法を説明します。 この例では、RCS インスタンスで構成されている ER 構成のバージョンを選択して、Litware, Inc. というサンプル企業の現在のインスタンスにインポートします。ER 構成は会社間で共有されるため、これらの手順はすべての会社で実行できます。 これらの手順を完了するには、まず [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 これらの手順を完了するには、**完了**または**共有**のステータスを持つ 1 つ以上の ER 構成を含む RCS インスタンスへのアクセスも必要です。
 
 1. **組織管理** > **ワークスペース** > **電子申告**の順に移動します。 
-2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ**としてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) というトピックの手順を完了する必要があります。 
+2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ**としてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) というトピックの手順を完了する必要があります。 
 3. RCS 環境が会社にプロビジョニングされていない場合は、外部リンク **Regulatory services ー 構成**をクリックして、RCS 環境をプロビジョニングする指示に従います。 
 4. **電子申告のパラメーター** をクリックします。 
 5. **RCS** タブをクリックします。 

@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e05ebbec1ffb3e3cdd683d847ffc1d2cf817357
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e17778d0fb05a1a5f7562027dc4e7f037e95e555
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149162"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>販売イベントかんばんルールの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、販売注文の作成時に発生するかんばんルールを作成するのに必要な設定を対象としています。 かんばんルールのイベントは、販売注文明細行に基づいて必要量を補充します。 この手順の作成に使用するデモ データの会社は USMF です。 これは、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。
 

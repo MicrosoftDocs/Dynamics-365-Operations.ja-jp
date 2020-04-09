@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e81bb3fe95326636c28885d4decad69f841e3db
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 31690d58d32a93d4cba873e951c26856d3f9cc09
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147322"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>発注書に記載されている商品の受取の記録
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、商品の受取を発注書に直接記録する方法について説明します。 製品の受領を倉庫に登録しておき、後で発注書に記録することもできます。 このタスクは通常は購買担当者または買掛金勘定コーディネーターが行います。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この例には、タスク ガイドとして手順を行うことができるように簡単な発注書を作成するステップが含まれています。 独自のデータでこの手順を使用している場合は、**商品の受取の記録**サブタスクから開始します。
 

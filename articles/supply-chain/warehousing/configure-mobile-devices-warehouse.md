@@ -3,7 +3,7 @@ title: 倉庫作業用のモバイル デバイスの設定
 description: このトピックでは、倉庫作業者がモバイル デバイスで作業を実行するために使用するメニュー項目をコンフィギュレーションする方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813044"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161831"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスの設定
 
@@ -95,11 +95,11 @@ ms.locfileid: "2813044"
 </tr>
 <tr>
 <td>ライセンス プレート受取</td>
-<td>ライセンス プレート ID を使用して、入荷積荷を受け入れます。</td>
+<td>ライセンス プレート ID を使用して、受信事前出荷明細通知 (ASN) を受け入れます。</td>
 </tr>
 <tr>
 <td>ライセンス プレートの受け取りおよびプット アウェイ</td>
-<td>ライセンス プレート ID を使用して、入荷積荷の受け入れとプット アウェイを行います。</td>
+<td>ライセンス プレート ID を使用して、受信事前出荷明細通知 (ASN) の受け入れとプット アウェイを行います。</td>
 </tr>
 <tr>
 <td>積荷品目入庫</td>
@@ -119,7 +119,7 @@ ms.locfileid: "2813044"
 <td>RMA 番号を登録して品目の数量の受け入れを登録し、その品目をプット アウェイします。 同じ作業者が両方のアクションを実行します。</td>
 </tr>
 <tr>
-<td rowspan="4">移動オーダー</td>
+<td rowspan="6">移動オーダー</td>
 <td>移動オーダー品目入庫</td>
 <td>品目の数量の受け入れを登録し、プット アウェイ作業を別の作業者に対して作成します。
 
@@ -138,6 +138,14 @@ ms.locfileid: "2813044"
 <tr>
 <td>注文明細行の受取とプット アウェイの移動</td>
 <td>品目の数量の受け入れを登録し、その品目をプット アウェイします。 同じ作業者が両方のアクションを実行します。</td>
+</tr>
+<tr>
+<td>ライセンス プレート受取</td>
+<td>ライセンス プレート ID を使用して、受信事前出荷明細通知 (ASN) を受け入れます。</td>
+</tr>
+<tr>
+<td>ライセンス プレートの受け取りおよびプット アウェイ</td>
+<td>ライセンス プレート ID を使用して、受信事前出荷明細通知 (ASN) の受け入れとプット アウェイを行います。</td>
 </tr>
 <tr>
 <td rowspan="4">運用</td>

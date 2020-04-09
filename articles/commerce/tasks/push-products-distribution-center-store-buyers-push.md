@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62eeb29e348c558e8954f656b89d90792b0c347b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023150"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141229"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>集中的購買を使用した物流センターから店舗への製品の配送
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順は、一つの場所から、一つまたは複数の店舗に製品を配分する集中的購買を作成および処理する手順を説明します。 ユーザーは、複数のコンフィギュレーションを定義したり、製品の配分方法を提案するシステムを使用できます。あるいは製品をどこに、どの程度各店舗に配分するか手動で入力することもできます。 この手順には、補充ルール、組織階層と店舗の重量などの集中的購買に使用できるデータの設定は含まれません。 この手順では、USMF というデモ会社を使用します。
 

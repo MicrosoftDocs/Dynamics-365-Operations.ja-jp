@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5169e14a4e6e2f53a284a8287a109ab5edfe7f7f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c755987268c8b404fc857178363a56da157288b8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183726"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143445"
 ---
 # <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a>顧客の為替手形の裏書きによって日本の支払を設定します
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。
 

@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e20eef8aa748bb64c6c14dd7e1d92ccf6592e0
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 8a51031647e270662f37138848b0db9ed08d544e
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1739068"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145888"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>積荷計画ワークベンチを使用した積荷および出荷の計画
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。 前提条件として、まず販売注文を作成します。 この手順は、配送コーディネーターの日常の作業一部です。 この手順の作成に使用するデモ データの会社は USMF です。
 

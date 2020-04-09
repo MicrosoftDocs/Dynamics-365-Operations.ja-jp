@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 81b0e33d8f721cfcfd437e34b42a909798a6514b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147460"
 ---
 # <a name="create-a-purchase-agreement"></a>購買契約書の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、購買契約書の作成方法について説明します。 これは通常、購買マネージャが行います。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、購買契約書の分類を設定する必要があります。 契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "1866853"
 
 7. **ドキュメント タイトル** フィールドに、購買契約書の名前を入力します。
 
-    - **既定の確約**フィールドを、**製品数量確約**に設定したままにします (または、これに設定されていない場合は変更します)。  
+    - **既定の確約** フィールドを、**製品数量確約** に設定したままにします (または、これに設定されていない場合は変更します)。  
     - 確約の既定値により、契約項目のオプションが決まります。 契約項目を作成する際に新しい確約タイプが必要な場合は、ヘッダーの確約既定値を変更する必要があります。 確約には、次の 4 つのタイプがあります。**製品数量確約** - 製品の特定数量のためのものです。**製品価値確約** - 製品の特定の通貨金額のためのものです。**製品カテゴリ価値確約** - 金額がカタログ品目またはカタログ以外の品目である、特定の通貨金額調達カテゴリのためのものです。**価値確約** - すべての製品または調達カテゴリにより満たせる特定の通貨金額のためのものです。  
 
 8. **OK** を選択します。

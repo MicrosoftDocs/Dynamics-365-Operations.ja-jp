@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3fcb7b1b12dbf0e49e15aa594b0048a9b9216260
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e612e3cd0343d386da4755f13eca6bf1443816d5
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844871"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150159"
 ---
 # <a name="create-dimension-based-configurations"></a>分析コードベースのコンフィギュレーションの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、分析コード ベース製品のコンフィギュレーションを定義する方法を示します。 これは、分析コード ベースのコンフィギュレーションでの組み合わせの作成方法を説明するシリーズの最後の手順です。 この手順の実行は前の 7 つの記録で作成されているデータに依存します。 この手順の作成に使用するデモ データの会社は USMF です。
 

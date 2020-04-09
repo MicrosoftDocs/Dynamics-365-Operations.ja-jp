@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 788564bfd7c3df146266976d8eef6621ff37ca2a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 48ce4942f8407242013df45f533390784694d4e6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142550"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 
-これらの手順を実施するには、まず「データ ソース (パート1：デザインデータモデル）手順としてのER使用・財務分析コード」にある手順を実施する必要があります。
+これらの手順を実施するには、まず 「ER 財務分析コードをデータソースとして使用する （パート1：デザインデータ モデル）」に記載の手順を実施する必要があります。
 
 
 ## <a name="add-required-data-sources-to-model-mapping"></a>必要なデータ ソースをモデルマッピングに加える
@@ -57,7 +57,7 @@ ms.locfileid: "2550628"
 20. 「財務分析コードの選択」のフィールドで、「法人」を選択します。
     * ルックアップ フィールドの現インスタンスについて「分析コードを希望」を選択するには、「すべて」を選択します。  ルックアップ フィールドの会社について「分析コード」を選択するには、「法人」を選択します。  分析コードを選択して、ユーザーが単一の分析コードセットを使用して分析コードを選択できるようにします。  
 21. 「主勘定のフィールドを要求する」で、[はい] を選択します。
-    * ユーザーが分析コードリストの一部として主勘定を選択できるように、「主勘定を要求する」に「はい」と設定します。   「いいえ」に設定しますと、主勘定は分析コードのリストに含まれなくなり、オプションの「主勘定を必須にしますか」が有効になります。 「主勘定を必須にしますか」のオプションが「はい」に設定されますと、ユーザーの選択にかかわらず主勘定が分析コードのリストに含まれます。  
+    * 「主勘定を要求する」 を 「はい」 に設定することで、分析コードリストの一部として主勘定を選択できるようになります。   「いいえ」 に設定すると、主勘定は分析コードのリストに含まれなくなり、 「主勘定を必須にする」 オプションが有効になります。 「主勘定を必須にする」 オプションが 「はい」 に設定されると、ユーザーの選択にかかわらず主勘定が分析コードのリストに含まれます。  
 22. [OK] をクリックします。
 23. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 24. [ルートの追加] をクリックします。
@@ -78,7 +78,7 @@ ms.locfileid: "2550628"
 9. ツリーで、「Journal\Transaction\Voucher」を選択します。
 10. [バインド] をクリックします。
 11. ツリーで、「LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)」を選択します。
-    * たとえば、LedgerDimensionに設定されている財務分析コードについては、相当するデータソースの品目が使用できます（LedgerDimension.分析コード）。 このデータ ソースの品目は、記録のリストとして設定された分析コードの財務分析コードを示します。  
+    * たとえば、LedgerDimensionに設定されている財務分析コードについては、相当するデータソースの品目が使用できます（LedgerDimension.分析コード）。 このデータ ソースの品目は、レコードのリストとして設定された分析コードの財務分析コードを示します。  
 12. つりーで、「LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)」を展開します。
 13. ツリーで、「LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions」を展開します。
 14. ツリーで、「LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value」を展開します。
@@ -137,7 +137,7 @@ ms.locfileid: "2550628"
 66. [保存] をクリックします。
 67. ページを閉じます。
 
-## <a name="complete-this-draft-models-version"></a>この手形モデル バージョンを実行します。
+## <a name="complete-this-draft-models-version"></a>このドラフト モデルのバージョンを実行します。
 1. ページを閉じます。
 2. ページを閉じます。
 3. [状態の変更] をクリックします。

@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73f2c10d7462c4b52a2b36dd5f221593707d2f4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184672"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143005"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による形式の変更
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。
 
 この手順では、変更された Microsoft Excel テンプレートの更新を再適用して、電子申告 (ER) 形式コンフィギュレーションを変更する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した ER 形式コンフィギュレーションへ変更した Excel テンプレートをインポートし、電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールを持つユーザーを対象としています。 これらのステップは、GBSI データ セットを使用して完了することができます。 開始する前に、ヘルプトピック「Excel テンプレートを再適用して電子申告形式を変更」 (modify-electronic-reporting-format-reapply-excel-template/) 内で一覧表示されている SampleVendPaymWsReport2.xlsx ファイルをダウンロードして保存します。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。  
+    * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 この構成プロバイダーが表示されない場合は、「構成プロバイダーを作成し、有効としてマークする」 に記載の手順を完了しておく必要があります。  
 
 ## <a name="select-the-er-format"></a>ER 形式を選択する
 1. [コンフィギュレーションをレポートする] をクリックします。
@@ -49,10 +49,10 @@ ms.locfileid: "2184672"
     * 編集用に、選択した ER 形式のドラフト バージョンを開きます。  
 2. アクション ウィンドウで、[インポート] をクリックします。
 3. [Excel からの更新] をクリックします。
-    * [テンプレートの更新] をクリックし、SampleVendPaymWsReport2.xlsx というファイルを選択します。  
+    * [テンプレートの更新] をクリックし、ファイル 「SampleVendPaymWsReport2.xlsx」 を選択します。  
     * [テンプレートの更新] をクリックし、以前にダウンロードした SampleVendPaymWsReport2.xlsx ファイルを参照して取得します。  
 4. [OK] をクリックします。
-    * SampleVendPaymWsReport2.xlsx テンプレートが適用されます。 ER 形式の構造は、要素を ER 形式に追加してあるテンプレートのコンテンツと同期します。 テンプレートに含まれていない ER 形式の既存の要素は、形式定義から削除されます。  
+    * SampleVendPaymWsReport2.xlsx テンプレートが適用されます。 ER 形式の構造は、要素を ER 形式に追加してあるテンプレートのコンテンツと同期します。 テンプレートに含まれていないERフォーマットの既存の要素は、フォーマットの定義から削除されます。  
 5. ツリーで、「Excel」を選択します。
     * [テンプレート] フィールドに新しいテンプレートへの参照が含まれたことに注意してください。   
 6. [添付ファイル] クリックします。

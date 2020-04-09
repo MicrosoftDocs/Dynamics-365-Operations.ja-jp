@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d04507d851c5594bf9077de6581793d405c8d09
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4151bcce3fc431e7945a8776a735b6c3c3237380
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183749"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137904"
 ---
 # <a name="configure-main-accounts-for-asset-retirement-obligation-posting-and-market-discount-rates"></a>資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、法的な除去責務のある固定資産を取得した場合、除去する際には資産除去責務を評価し転記する必要があります。 
 

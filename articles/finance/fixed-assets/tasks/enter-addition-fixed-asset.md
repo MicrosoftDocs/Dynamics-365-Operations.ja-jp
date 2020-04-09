@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe1a1d4db696ac013afee05b697b301383232134
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dc1e13863ae13daaa641f52f7a55e01fc1353dc1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186949"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142757"
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>固定資産への追加物の入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、既存の固定資産への追加物を追加する方法を示します。 固定資産の付属品の目的は、品目の追加、メンテナンス、改善を追跡することであり、情報提供のみを目的としています。 固定資産価値または耐用年数の変更はすべて、個別に行う必要があります。   
 

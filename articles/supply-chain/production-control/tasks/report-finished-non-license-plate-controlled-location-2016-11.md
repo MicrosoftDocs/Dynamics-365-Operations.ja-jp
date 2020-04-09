@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e87e0400ca2e9c30c0c1a642931dd8b8dec4845b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e96267a80160a63258b97f2e6ac49fad753a93a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148920"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>ライセンス プレートにより制御されていない場所での完了レポート (申請、2016 年 5 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスク ガイドでは、ライセンス プレートにより制御されていない場所への完了報告時の例を示します。 適用できる作業ポリシーは、このタスクの前提条件です。 前のタスク ガイドでは、作業ポリシーの設定を示しました。 このタスク ガイドでは、Dynamics AX アプリケーション 7.0.1 以降が必要です。
 

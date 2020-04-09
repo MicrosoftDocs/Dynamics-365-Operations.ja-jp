@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfce85b43a4678bf94a5570f4df047249cf29d1e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 85cdd35e2e2f1e4e7a311b7eb61989d87f681466
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836291"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149093"
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>リーン生産作業セルの定義
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 作業セルは、リーン生産のプロセス活動で使用できるリソース グループの特定のフォームです。 作業セルには、入荷および出荷場所と生産フロー モデルに基づいた能力定義があります。 リーン生産の作業セルと能力計算の基本概念に関する詳細については、リーン生産についてのホワイト ペーパーを参照してください。 この手順の作成に使用するデモ データの会社は USMF
 

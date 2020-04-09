@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 899701413814ce38a4367618ed72d1039eca0bf8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148173"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>倉庫内の現物在庫の移動
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、倉庫内の場所間で行われる品目の移動を登録する在庫振替仕訳帳を作成して転記するプロセスを説明します。 これを開始する前に、在庫振替用の在庫仕訳帳名を設定してある必要があります。 この手順を確認するには、示されているサンプル値を使用してデモ データの会社 USMF を使用するか、製品と場所を設定済みの場合に独自のデータを使用することができます。 通常、これらのタスクを実施するのは、倉庫の従業員です。
 
@@ -35,7 +35,7 @@ ms.locfileid: "1916579"
 1. **ナビゲーション ウィンドウ**で、**在庫管理 > 仕訳入力 > 品目 > 転送**に移動します。
 2. **新規** をクリックします。
 3. **名前**フィールドで値を入力または選択します。
-4. **OK**をクリックします。 仕訳帳明細行ごとに、分析コードの [開始] および [終了] を指定するオプションがあります。 これらは、この仕訳帳タイプでは必須です。 各種ルールを使用して複数の場所に品目を移動できます。 この例では、同じ倉庫内のライセンス プレートにより制御される場所からライセンス プレートにより制御されない場所に品目を移動します。   
+4. **OK**をクリックします。 仕訳帳明細行ごとに、分析コードの [開始] および [終了] を指定するオプションがあります。 これらは、この仕訳帳タイプでは必須です。 各種ルールを使用して複数の場所に品目を移動できます。 この例では、同じ倉庫内のライセンス プレートにより制御される場所からライセンス プレートにより制御されない場所に項目を移動します。   
 
 ## <a name="create-journal-lines"></a>仕訳帳明細行を作成します
 1. **仕訳帳明細行クイック タブ**で、**新規**をクリックします。

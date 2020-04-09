@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78d38b00d8039612aa236b3aa9593693983407dc
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: dfd0bc7edb3236d016e64bd08b1858fd7b12417f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145735"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>不適合管理の前提条件を設定する
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックを使用して不適合管理プロセスを有効化します。 不適合とは、品質上の問題がある手順または品目を表し、その説明には問題の原因およびタイプが含まれます。 この手順では、デモ データの会社 USMF を使用します。 通常この手順は品質マネージャーが実施します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "1914725"
 
 ## <a name="enable-user-for-nonconformance-processing"></a>不適合処理に対しユーザーを有効化
 1. ナビゲーション ウィンドウで、**モジュール > システム管理 > ユーザー > ユーザー**の順に移動します。 
-2. クイック フィルターを使用して不適合のレコードを承認または否認するユーザーを検索します。 たとえば、値 `Ricardo` を含む**名前**フィールドをフィルター処理します。 不適合の承認を処理する場合、不適合を承認または否認するユーザーには、**ユーザー** ページで「名前」の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。  
+2. クイック フィルターを使用して不適合のレコードを承認または否認するユーザーを検索します。 たとえば、値 `Ricardo` を含む**名前**フィールドをフィルター処理します。 不適合の承認を処理する場合、不適合を承認または否認するユーザーは、**ユーザー** ページで "名前" の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。  
 3. 目的のレコードの行をマークします。
 4. **ユーザー オプション**を選択します。
 5. **基本設定**タブを選択します。

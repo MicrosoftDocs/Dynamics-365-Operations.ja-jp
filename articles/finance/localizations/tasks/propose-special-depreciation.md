@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 152e570a76b7a4363c11ede2ee7f10750a91b268
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 37e9e8513cf96bcebdd64adc5ff014aea01af292
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174655"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144100"
 ---
 # <a name="propose-special-depreciation"></a>特別償却の提案
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、特定の条件下で特別償却が許可されます。 引当メソッドの場合、このタスクには 2 つのステップがあります。準備金の転記と準備金配賦の転記です。 ディレクト オフ メソッドの場合、必要なステップは 1 つです。これは準備金の転記と同じ手順です。 
 

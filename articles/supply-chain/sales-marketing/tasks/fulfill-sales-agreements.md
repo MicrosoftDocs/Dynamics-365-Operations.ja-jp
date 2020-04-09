@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7549d0c2a3cfa0feb26a641bbc41702b4b21158
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7e32decdd13cb578c1ac026f25a56b37ff7231a9
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833957"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146471"
 ---
 # <a name="fulfill-sales-agreements"></a>販売契約書の履行
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、販売注文と関連付けることによって販売契約書を履行する方法について説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、「製品価値確約」タイプの有効な販売契約書を持っていることを確認します。 または、かわりに「販売契約書の作成」というタスク ガイドを実行することもできます。  
 

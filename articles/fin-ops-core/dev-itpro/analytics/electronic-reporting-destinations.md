@@ -3,7 +3,7 @@ title: 電子申告 (ER) の送信先
 description: このトピックでは、電子申告 (ER) の送信先の管理、サポートされている宛先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150818"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -114,7 +114,7 @@ ER 形式のドラフト バージョンを使用するには、適宜 ER 形式
 
 [![ドラフトの実行オプション](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>送信先失敗の処理
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>送信先失敗の処理
 
 通常、ER 形式は特定の業務プロセスのスコープ内で実行されます。 ただし、ER 形式の実行中に生成される送信ドキュメントの配信は、ときには業務プロセスの一部と見なす必要があります。 この場合、コンフィギュレーションされた送信先に生成された送信ドキュメントの配信が失敗するなら、業務プロセスの実行をキャンセルする必要があります。 適切な ER 送信先をコンフィギュレーションするには、**失敗時に処理を停止**オプションを選択します。
 
@@ -124,7 +124,7 @@ ER 形式のドラフト バージョンを使用するには、適宜 ER 形式
 
 送信先の **CoveringLetter** コンポーネントに対する**失敗時に処理を停止**チェック ボックスをオフにした場合、支払は送付状が電子メールによって正常に配信されていない場合でも正常に処理されたと見なされます。 たとえば、受取人または送信者の電子メール アドレスが見つからないか正しくないなどの理由で、送付状を送信できない場合でも、その支払の状態は**なし**から**送信済**に変更されます。
 
-## <a name="OutputConversionToPDF"></a> 出力の PDF への変換
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a> 出力の PDF への変換
 
 PDF への変換オプションを使用して、Microsoft Office 形式の出力 (Excel/Word) を PDF 形式に変換することができます。
 
@@ -148,7 +148,7 @@ PDF への変換オプションは、Microsoft Office Excel または Word 形�
 >
 > 生成される PDF は最大 300 ページに制限されます。
 >
-> この場合、Excel 出力から生成される PDF ドキュメントでは、横向き方向だけがサポートされます。
+> この場合、Excel 出力から生成される PDF ドキュメントでは、横方向のみがサポートされます。
 >
 > 埋め込みフォントがない出力の変換については、Windows オペレーティング システム共通のシステム フォントだけが使用されます。
 
@@ -157,6 +157,19 @@ PDF への変換オプションは、Microsoft Office Excel または Word 形�
 ファイル送信先に対して PDF 変換を有効にするには、**PDF に変換**チェック ボックスをオンにします。
 
 [![ファイル送信先への PDF 変換の有効化](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">PDF 変換で使用するページの向きを選択する</a>
+
+ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、PDF のページの向きを指定できます。 ファイルの保存先の指定時にExcel フォーマットを指定し、 **PDF に変換する** チェック ボックスを選択して PDF 変換を有効化すると、**ページの向き** フィールドが **PDF conversion settings** ファストタブで利用可能になります。 **ページの方向** フィールドで、ページの向きを選択します。
+
+[![PDF 変換の対象とするページの方向を選択する](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> PDF ページの方向を選択するオプションを使用するには、Microsoft Dynamics 365 Finance のバージョン 10.0.10（2020年5月）またはそれ以降のバージョンをインストールする必要があります。
+>
+> 選択したページの向きは、Excel 形式で生成され、PDF 形式に変換されたすべての ER の構成に適用されます。
+>
+> Word 形式の ER 構成を変換して PDF を作成した場合は、PDF のページの向きは Word 文書から取得されます。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 

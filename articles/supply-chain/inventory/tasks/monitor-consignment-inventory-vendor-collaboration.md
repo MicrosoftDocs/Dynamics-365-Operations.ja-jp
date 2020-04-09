@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfbe5e9de7b700d991e0826fb4387de416ce242a
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 589b478fa59f2fb2a5008d02e39f2808391d0994
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845395"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145579"
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>仕入先コラボレーションを使用した委託販売在庫の監視
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。 顧客が在庫品目の所有権を取得したときの在庫品目の移動状況をチェックすることができます。 デモ データの会社 USMF でこの手順を使用できます。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -41,5 +41,5 @@ ms.locfileid: "1845395"
 
 ## <a name="view-on-hand-inventory"></a>手持在庫の表示
 1. [仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。
-    * 手持委託製品在庫のページは、その在庫が顧客の倉庫で所有していることを示します。 [規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。   
+    * 手持委託製品在庫ページは、顧客の倉庫で所有している在庫を示します。 [規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。   
 
