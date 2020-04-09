@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cceec1d52e1b5b2a05525c8d96f46dece17363b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 14f3cbde07fab291a3a3bf05441a87e97a54a7b2
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187800"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161618"
 ---
 # <a name="create-cost-elements"></a>原価要素の作成 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 原価計算の原価要素を作成するにはいくつかの方法があります。 この手順では、データ コネクタ経由で主勘定をインポートしてコスト要素を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された原価計算の機能についての手順です。
 

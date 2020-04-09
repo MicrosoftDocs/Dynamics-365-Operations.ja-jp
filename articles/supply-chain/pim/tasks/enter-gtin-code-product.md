@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6abae364049ef61232f794d30c0d8d6acfb51044
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: cb5904b487bb14396925983bb8f3284457045ddd
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844300"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147667"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>製品の GTIN コードの入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 GTIN コードは、GS1 組織によって割り当てられます。 この例では、デモ データの会社 USMF で製品番号「M0001」のコードを入力します。
 

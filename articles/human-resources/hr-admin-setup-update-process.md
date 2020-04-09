@@ -3,7 +3,7 @@ title: 更新プロセス
 description: Microsoft Dynamics 365 Human Resources は、アプリケーションとプラットフォームの変更のための、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092204"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154508"
 ---
 # <a name="update-process"></a>更新プロセス
 
@@ -37,52 +37,39 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 人事管理の更新は、すべての環境に自動的に適用されます。 人事管理には次の 2 つの種類のリリースがあります:
 
-- **サービス更新**: バグ修正および新機能を含む週 1 回の更新。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases) を参照してください。 毎週の更新は通常水曜日にリリースされます。 毎週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](https://docs.microsoft.com/dynamics365/talent/whats-new) を参照してください。
+- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases) を参照してください。 隔週の更新では、地域全体に段階的に展開されます。 隔週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md) を参照してください。
 
-    特に断りのない限り、サポートされているすべてのデータセンターが毎週更新されます。 毎週の更新は、通常は水曜日に開始され、日曜日に完了します。 米国、オーストラリア、ヨーロッパ、英国、アジア、およびカナダ地域が毎週の更新プログラムに含まれています。 
+    特に断りのない限り、サポートされているすべてのデータ センターが隔週で更新されます。 米国、オーストラリア、ヨーロッパ、英国、アジア、カナダが隔週の更新プログラムに含まれています。 
 
-- **Common Data Service ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規エンティティと Common Data Service の既存のエンティティに対する変更が含まれています。 これらの更新は、週単位の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションび更新は、毎週のサービス更新と一致しない場合もあります。
-
-次の表は、スケジュールの例を示します。
-
-| 週 | 更新タイプ |
-| --- | --- |
-| 1 | サービス更新 (すべての地域) |
-| 2 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 1 地域) |
-| 3 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 2 地域) |
-| 4 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 3 地域) |
-| 5 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 4 地域) |
-| 6 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 5 地域) |
-| 7 | サービスの更新 (すべての地域) + ソリューションの更新 (Week 6 地域) |
-| 8 | サービス更新 (すべての地域) |
+- **Common Data Service ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規エンティティと Common Data Service の既存のエンティティに対する変更が含まれています。 これらの更新は、隔週の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションの更新は、隔週のサービス プログラムの更新と一致しない場合もあります。
 
 > [!NOTE]
 > リリースされたすべてのデータセンターで、ソリューションの更新が使用できます。 更新の複製が自動的に行われるのを待機したくない場合は、すべてのデータ センターの任意の環境にこれらの更新を手動で適用することができます。
 
 必要に応じて、人事管理では次のタイプの修正も用意されています:
 
-- **リビジョン (修正プログラム)**: 週単位のサービス更新プログラムのリリースとは別に、またはその他の方法で発生する可能性のあるバグ修正
+- **リビジョン（修正プログラム）**: 隔週のサービス更新プログラムのリリースとは別に、またはその他の方法で実行される可能性のあるバグ修正
 
-- **緊急の修正**: 本質的にスタンドアロンである予防的なおよび李アクティブな修正プログラムには、サイトの問題を解決するためのコンフィギュレーションのみまたはコードの変更が含まれる場合があり、毎週のサービス更新リリースとは別に発生することができます。
+- **緊急の修正**: 本質的にスタンド アロンである事前対応および事後対応の修正プログラムには、サイトの問題を解決するための構成のみ、またはコードの変更が含まれる場合があり、隔週のサービス更新のリリースとは別に発生することができます。
 
 リリースは、内部環境で確認、テスト、および検証されます。 ビルドがサインオフされた後、その後、生産に配置されます。
 
-## <a name="exceptions-in-2019"></a>2019 での例外
+## <a name="release-cadence-exceptions-in-2020"></a>2020 年のリリース 間隔の例外
 
 次の日付は、通常のリリース スケジュールに対する例外です:
 
 | 日 | 説明 |
 | --- | --- |
-| 11 月 25 日の週 | 更新なし |
-| 12 月 16 日の週 | マイナー更新のみ |
-| 12 月 23 日の週 | 更新なし |
-| 12 月 30 日の週 | 更新なし |
+| 11 月 23 日の週 | 更新なし |
+| 12 月 14 日の週 | マイナー更新のみ |
+| 12 月 21 日の週 | 更新なし |
+| 12 月 28 日の週 | 更新なし |
 
 ## <a name="communications"></a>通信
 
 人事管理の作業の内容と、次の場所でリリースされた機能について検索できます:
 
-- [Dynamics 365 Human Resources ロードマップ](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resources ロードマップ](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Dynamics 365 リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 ## <a name="see-also"></a>参照
 
-- [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans)
-- [Dynamics 365 人事管理の新機能および変更された機能](hr-admin-whats-new.md)
-- [ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365 人事管理の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

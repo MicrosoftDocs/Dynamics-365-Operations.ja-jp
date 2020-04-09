@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba5e66b8c4b9ee991b2889eecf4dcec174b31ef2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c45741dfef8be659dfe3ac632748cb5e19e977c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141557"
 ---
 # <a name="create-and-submit-vat-report"></a>VAT 報告書の作成と送信
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順を使用して、VAT レポートを作成してドイツ所轄官庁に提出します。 この手順は、デモ データ会社 DEMF を使用して作成されました。 この機能は、基本住所がドイツにある法人でのみ使用可能です。
 

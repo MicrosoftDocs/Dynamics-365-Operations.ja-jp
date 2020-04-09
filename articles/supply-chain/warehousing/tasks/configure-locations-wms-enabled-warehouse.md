@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fca4d8673ef7ccb00bc1b216fbe7d56acc2ff142
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 43fd5a293671d63c1c0db3019ba89fdf84f9fff8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994984"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146172"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>WMS に対応した倉庫の場所のコンフィギュレーション
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このガイドでは、新しい WMS が有効な倉庫 (詳細な倉庫管理プロセスを使用する倉庫) の場所の設定をコンフィギュレーションする方法を示します。 通常、このプロセスを実行するのは倉庫マネージャーです。 このガイドは、デモ データの会社 USMF で、または独自のデータで実行できます。 少なくとも 1 つのサイトがコンフィギュレーションされていることが前提条件です。
 
@@ -82,7 +82,7 @@ ms.locfileid: "1994984"
 9. 一覧で、目的のレコードを見つけ、選択します。
 10. 一覧で、選択された行のリンクをクリックします。
 11. **混合在庫状態を許可**チェック ボックスをオンまたはオフにします。 この場所プロファイルによりグループ化する場所で混合在庫状態の値を許可する場合は、このオプションを有効にします。 
-12. **バッチ日数ルールの上書き**チェック ボックスをオンまたはオフにします。 このルールに従わない在庫バッチの混合を許可するには、異なる場合の在庫バッチの有効期限日数のルールを上書きするために、このオプションを有効にします。  
+12. **バッチ日数ルールの上書き**チェック ボックスをオンまたはオフにします。 このルールに従わない在庫バッチを混在できるようにし、在庫バッチの有効期限が異なる日数のルールを上書きするには、このオプションを有効にします。  
 13. **循環棚卸を許可**チェック ボックスをオンまたはオフにします。 この場所プロファイルによりグループ化するすべての場所で循環棚卸プロセスを許可するには、このオプションを有効にします。 
 14. **分析コード** セクションを展開または折りたたみます。 [分析コード] タブでは、各場所内の積載能力の詳細な計算を有効にするために、パラメーターと方法を定義することができます。  
 15. ページを閉じます。

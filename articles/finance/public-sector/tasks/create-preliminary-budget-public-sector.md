@@ -17,16 +17,16 @@ ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 800b7009f023bd2a0d8437b81d82c0e9de770841
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05e8059f44000fd305ed2c2555511da29b130af9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144558"
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>公的機関の暫定予算の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 特定の予算モデルと分析コード値の、暫定予算登録エントリを作成できます。 実際の予算が承認された後、元の予算登録エントリを作成できます。 この手順は、公的機関部門の PSUS のデモ会社のデータを使用して作成されました。
 

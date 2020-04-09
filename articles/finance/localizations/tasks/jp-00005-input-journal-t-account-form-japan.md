@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc4e15f9fbb9c5d090d139a0784bf6cde99a228
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 90266ed94e2caff014c051d2cb1e534b6e25c030
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174661"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139121"
 ---
 # <a name="jp-00005-input-journal-in-t-account-form-japan"></a>JP-00005 T 勘定フォームでの仕訳帳入力 (日本)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、仕訳入力には一般的に T 字勘定形式が使用されます。 
 

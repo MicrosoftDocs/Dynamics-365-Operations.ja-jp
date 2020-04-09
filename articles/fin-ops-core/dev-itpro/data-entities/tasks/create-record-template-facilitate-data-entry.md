@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08ee7d0f0ce7e92eaa85137dcd2761bfd702eb8c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ec21415158ad611d0ad55778e76aa128f53561bd
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181936"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143387"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>データ入力を容易にするレコード テンプレートの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、レコード テンプレートの作成して、よく使用されるフィールド値を新しいレコードごとに明示的に入力する必要がないようにする方法を示します。 この手順では、固定資産に追加する必要がある新しいラップトップのレコードを新規作成します。 この手順では、USMF というサンプル会社を使用します。
 

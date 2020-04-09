@@ -1,6 +1,6 @@
 ---
-title: 資産減価償却簿の設定 (2016 年 5 月)
-description: このタスク ガイドでは、新しい減価償却簿が作成さし、固定資産グループに関連付けます。
+title: 減価償却簿の設定
+description: この手順では、新しい減価償却簿を作成し、それを固定資産グループに関連付けるプロセスを順を追って説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6840e211847494598a81cd3228dbd3796447e18c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186903"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154605"
 ---
-# <a name="set-up-depreciation-books-may-2016"></a>資産減価償却簿の設定 (2016 年 5 月)
+# <a name="set-up-depreciation-books"></a>減価償却簿の設定 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-このタスク ガイドでは、新しい減価償却簿が作成さし、固定資産グループに関連付けます。  これは USMF の法人に対して経理担当ロールとデモ データを使用します。
-
+この手順では、新しい減価償却簿を作成し、それを固定資産グループに関連付けるプロセスを順を追って説明します。 
 
 ## <a name="create-a-depreciation-book"></a>減価償却簿の作成
 1. [固定資産] > [設定] > [減価償却簿] の順に移動します。

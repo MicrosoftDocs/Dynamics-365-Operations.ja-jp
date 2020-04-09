@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f686b29151cfbbeeffbf1f8fb98ea6ce5bc51d1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4ccd7d79fbcdd600f78dbff98ce39c04865afe37
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836072"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146149"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>品目の配送制約の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。 通常、このタスクを実施するのは、配送コーディネーターです。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。
 

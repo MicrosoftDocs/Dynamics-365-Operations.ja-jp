@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbef5410d0e6f15fbb5025f3831486d55cd06216
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e0fabf5c9475b5acd7cbd77a51c2912c96681894
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142642"
 ---
 # <a name="er-configure-destinations"></a>ER コンフィギュレーション先
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。 ドイツが法人の一次的住所のある国/地域になっていますが、この手順ではあらゆる法人を使用できます。 
+この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。 ドイツが法人の第一の住所が所在する国/地域となっていますが、この手順ではあらゆる法人を使用できます。 
 
 この例で使用する形式は ISO20022 債権移動ですが、既にインポートした形式であればどんな形式でも使用できます。 この手順は 1 つのファイルと1つの出力先からなる設定の例であることに注意してください。 電子レポート送信先管理に関する詳細については、Dynamics 365 Finance ヘルプで確認できます。
 

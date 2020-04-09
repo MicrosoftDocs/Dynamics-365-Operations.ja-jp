@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b2485eaf31226b11106895074ae0ad95e561777b
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 2408addea3615ffe6dbc4db8baecfdef6a65e839
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916602"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145827"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>在庫ブロックの作成および管理
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。 表示されているサンプル値を使用して、デモ データの会社 USMF の手順を実行できます。 この手順を開始する前に、使用可能な現物手持在庫の品目を設定する必要があります。
 
@@ -35,11 +35,11 @@ ms.locfileid: "1916602"
 1. **ナビゲーション ウィンドウ**で、**モジュール > 在庫管理 > 定期処理 > 在庫ブロック**の順に移動します。
 2. **新規** をクリックします。
 3. **品目番号**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-4. 一覧で、目的の品目を選択します。 ブロックする現物手持在庫の品目番号を選択します。 USMF を使用している場合、品目「M9201」を選択できます。  
-5. **数量**フィールドに、数値を入力します。 品目「M9201」を使用する場合、200 より小さい品目を選択する必要があります。
+4. 一覧で、目的の品目を選択します。 ブロックする現物手持在庫の品目番号を選択します。 USMF を使用している場合、品目 M9201 を選択できます。  
+5. **数量**フィールドに、数値を入力します。 品目 M9201 を使用する場合、200 未満を選択する必要があります。
 6. **在庫分析コード** クイック タブを展開します。
 7. **倉庫**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-8. 一覧で、目的のレコードを見つけ、選択します。 品目「M9201」を使用すると、倉庫 51 を選択できます。  
+8. 一覧で、目的のレコードを見つけ、選択します。 品目 M9201 を使用すると、倉庫 51 を選択できます。  
 9. **保存**をクリックします。
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>在庫ブロックの条件の更新

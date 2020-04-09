@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ffbe74170b2570a578cae084fcd90e0b9bd392b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0152008830292403d2d3f709d9822e3b8c7243e
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183747"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138986"
 ---
 # <a name="create-and-assign-an-equipment-group"></a>設備グループの作成および割り当て
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、設備のグループの作成方法と設備グループの固定資産へのコンフィギュレーション方法について説明します。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2a2b56d387cfe90cbfac0bca3c11e699573c1d05
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: 502b2e08c6c1f4190031d171f037a05d591e5cd8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097386"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164771"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -41,30 +41,32 @@ ms.locfileid: "3097386"
 
 - [ウェーブ中の高度な積荷構築](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
 - [クロスドッキングの自動リリース出荷](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock) - 詳細については、[クロスドッキングの自動リリース出荷](../warehousing/auto-release-shipment-for-cross-docking.md) を参照してください。
+- [リード タイムと作業日数 (公的部門) に基づいて、PO の出荷日を計算する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
+- [倉庫管理を使用した CW 製品の処理](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management) - 詳細については、[倉庫管理を使った CW 製品の処理](../warehousing/catch-weight-processing.md) と [CW 製品の改善点](https://www.microsoft.com/videoplayer/embed/RE4jzx8) のビデオもも参照してください。
 - [品目価格の保管の比較](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage) - 詳細については、[品目価格の保管レポートの比較](../cost-management/compare-item-price.md) を参照してください。
 - [出荷強化の連結](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
-- [クロスドッキング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
+- [クロスドッキング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking) - 詳細については、[計画中のクロスドッキング](https://www.microsoft.com/videoplayer/embed/RE4f7LF) のビデオを参照してください。
 - 詳細 CW 統合 [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1)、[10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2)、[10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3)、[10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4)、[10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5)、[10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6)、[10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - 詳細については、[倉庫管理による CW 製品の処理](../warehousing/catch-weight-processing.md) および [CW 製品の改善](https://www.microsoft.com/videoplayer/embed/RE4jzx8) も参照してください。
 - [柔軟な倉庫レベル分析コードの引当](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - 詳細については、[柔軟な倉庫レベル分析コードの引当ポリシー](../warehousing/flexible-warehouse-level-dimension-reservation.md) を参照してください。
+- [強化されたジョブ カード](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) - 詳細については、[モバイル ジョブ デバイスでの進行状況の報告](../production-control/tasks/report-progress-mobile-job-device.md) と [完了としてからジョブ カード デバイスからの、ライセンス プレートで管理された場所へ報告](../production-control/report-finished-job-device.md) を参照してください
 - [入庫の品質チェック](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [在庫エイジング レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [在庫金額レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
 - [マスター プラン進行状況ガント チャート](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) - 詳細については、[マスター プランの実行の監視](../master-planning/tasks/monitor-master-planning-run.md) および [MRP パフォーマンスおよび有用性の向上](https://www.microsoft.com/videoplayer/embed/RE4myrJ) のビデオを参照してください。
+- [製造領域の新しいデータ エンティティ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [出庫の並べ替え](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
 - [梱包対保管分析コード](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 - [計画オーダーの確定並列化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders) - 詳細については、[確定並列化](../master-planning/maintain-planned-orders.md#parallelize-firming) および [MRP パフォーマンスおよび有用性の向上](https://www.microsoft.com/videoplayer/embed/RE4myrJ) のビデオを参照してください。
 - [配布に関する最適化の計画](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution) - 詳細については、[計画の最適化の概要](../master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。
 - [購買契約の拡張](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) - 詳細についは、[購買契約書](../procurement/purchase-agreements.md) を参照してください。
-- [プット アウェイ クラスター](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters)
+- [プット アウェイ クラスター](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) - 詳細については、[プット アウェイのクラスター](https://www.microsoft.com/videoplayer/embed/RE4f5aB) のビデオを参照してください。
 - [壁に配置/保管する](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)
 - [仕分けを受入](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
+- [小型小包の出荷 (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [仕入先の入札—仕入先からの質問および集計された応答](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 - [倉庫のスロッティング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [ウェーブ ラベル印刷拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [ウェーブ ステップ コード](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
-
-<!-- - [Self-billing invoice control for procurement](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-procurement)
-- [Self-billing invoice control for sales](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-sales) -->
 
 ## <a name="additional-resources"></a>追加リソース
 

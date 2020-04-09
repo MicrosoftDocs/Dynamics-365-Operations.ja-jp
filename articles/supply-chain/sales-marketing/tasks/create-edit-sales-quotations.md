@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e9db489383d9c6ef05bc25d190d380b3150d311
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: f313aafb79faaf1344b7e70759405b3bab2d7e45
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1995007"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148721"
 ---
 # <a name="create-and-edit-sales-quotations"></a>販売見積の作成および編集
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、販売見積を作成および更新する方法を示します。 この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "1995007"
 17. **アクション ウィンドウ**で、**見積書**をクリックします。
 18. **見積の送信**をクリックします。
 19. **見積書の印刷**フィールドで、「はい」を選択します。
-20. **OK**をクリックします。 レポートが生成するのに、数分かかることがあります。 終わるまでページを閉じないでください。
+20. **OK**をクリックします。 レポートが生成するのに、数分かかることがあります。 完了するまでページを閉じないでください。
 
 ## <a name="update-a-sales-quotation"></a>販売見積の更新
 1. **ナビゲーション ウィンドウ > モジュール > 販売とマーケティング > 販売見積 > すべての見積**の順に移動します。

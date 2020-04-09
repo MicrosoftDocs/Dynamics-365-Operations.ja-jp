@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd6de42dda650d42d703e905f8d48f73b9e4afd6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189364"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143814"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>請求管理グループを使用した AP システムへの請求書データの入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、仕入帳を使用して請求書を作成する方法について説明します。 その後、請求書を発注書と一致させるために、また仕入先請求書のページにある経費を確定するために、請求書管理グループを使用します。
 

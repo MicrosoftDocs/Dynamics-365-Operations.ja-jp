@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8269e5119e45522373eca6cb8fb06bfb94a37566
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5155ada23fe4f559c79964e6bd10d86712009d1d
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845573"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145779"
 ---
 # <a name="correct-inventory-tracking-information"></a>在庫追跡情報の修正
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順は、在庫追跡情報を修正するための在庫振替仕訳帳の作成および転記プロセスについて説明します。 この例では、間違って登録したバッチを別のバッチに変更することにより、バッチ管理されている品目の情報が更新されます。 デモ データ会社 USPI または独自のデータを使用してこの手順の説明を見ることができます。 独自のデータを使用する場合、バッチ対応の品目が必要であり、場所により制御されていない必要があります。 在庫振替用に在庫仕訳帳名を設定してある必要もあります。 通常、これらのタスクを実施するのは、倉庫の従業員です。
+この手順は、在庫追跡情報を修正するための在庫振替仕訳帳の作成および転記プロセスについて説明します。 この例では、間違って登録したバッチを別のバッチに変更することにより、バッチ管理されている品目の情報が更新されます。 デモ データ会社 USPI または独自のデータを使用してこの手順の説明を見ることができます。 独自のデータを使用する場合、バッチ対応の品目が必要であり、場所により制御されない必要があります。 在庫振替用に在庫仕訳帳名を設定してある必要もあります。 通常、これらのタスクを実施するのは、倉庫の従業員です。
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>在庫振替仕訳帳の作成

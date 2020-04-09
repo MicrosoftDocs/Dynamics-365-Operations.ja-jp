@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 543c1cd4bbb35e51e17d5e0c7c588d87fbe3c106
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4cf53e905cf32557f4671477b173b1c5072d186e
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187708"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137824"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>原価会計元帳のデータ ソースの管理
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 原価会計元帳の一般会計データ ソースを管理するには、この手順を使用します。 このタスクを完了する前に、タスク ガイドの「原価会計元帳の作成」と「原価管理単位を定義」を再生し確認します。 この記録では、USP2 デモ データ会社を使用します。
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249635"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144114"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
@@ -32,12 +32,13 @@ ms.locfileid: "2249635"
 
 [原価管理 (ビデオ)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理が使用できます。 これは定義、管理、および [在庫会計](cost-object.md) と [製造の会計](bom-calculations.md)のレポートのプロセスです。
 
-次の領域で、原価ポリシーを定義できます。 
--  [あらかじめ設定された原価](costing-versions.md)
--  [在庫会計](cost-object.md)
--  [製造の会計](bom-calculations.md)
--  [間接原価の会計](costing-sheets.md)
--  [元帳統合](production-order-cost-analysis.md)
+次の領域で、原価ポリシーを定義できます。
+
+- [あらかじめ設定された原価](costing-versions.md)
+- [在庫会計](cost-object.md)
+- [製造の会計](bom-calculations.md)
+- [間接原価の会計](costing-sheets.md)
+- [元帳統合](production-order-cost-analysis.md)
 
 たとえば、在庫会計の [品目モデル グループ](../inventory/reserve-inventory-quantities.md) で商品に適用する [FIFO](fifo-physical-value-marking.md)、[加重平均](weighted-average-physical-value-marking.md)、[標準原価](prerequisites-standard-costs.md)、または [移動平均](moving-average.md) など、在庫評価方法を定義できます。
 
@@ -51,23 +52,16 @@ ms.locfileid: "2249635"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 
+リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。
 
 #### <a name="white-paper"></a>ホワイト ペーパー
-[原価計算表を使用した BOM 計算](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) では、材料と製造を含む原価計算表を設定する方法と、その設定が BOM 計算の結果に及ぼす影響について説明しています。 トピックをより良く説明するため、さまざまな設定およびコンフィギュレーションの影響を示す、具体的なシナリオとデータを提供します。 このドキュメントはコンフィギュレーションするための十分な詳細を提供していないため、ユーザーがこれらすべてのシナリオに従うことはできないと思います。 しかし、基本的な知識がある場合は、下の一覧に表示される順に従ってタスク ガイドを再生してみてください。 BOM 計算の分析をするには、このドキュメントを読み取って得た知識を活用してください。 
 
--  [完成品の作成](tasks/create-finished-product-2016-02.md)
--  [半完成品の作成](tasks/create-semi-finished-product-2016-02.md)
--  [原材料の作成](tasks/create-raw-materials-2016-02.md)
--  [BOM の作成](tasks/create-boms-2016-02.md)
--  [工順の作成](tasks/create-routes-2016-02.md)
--  [単一レベル構造を使用した BOM の計算](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [複数レベル構造を使用した BOM の計算](tasks/calculate-bom-multilevel-structure-2016-02.md)
-
+[原価計算表を使用した BOM 計算](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) では、材料と製造を含む原価計算表を設定する方法と、その設定が BOM 計算の結果に及ぼす影響について説明しています。 トピックをより良く説明するため、さまざまな設定およびコンフィギュレーションの影響を示す、具体的なシナリオとデータを提供します。
 
 #### <a name="blogs"></a>ブログ
+
 [Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 #### <a name="task-guides"></a>タスク ガイド
-追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
 
+追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。

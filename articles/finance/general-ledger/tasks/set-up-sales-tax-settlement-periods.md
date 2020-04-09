@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 5972c44261a6ebd49df0fcbcef9a8c60aaa487e2
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658932"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144723"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>売上税精算期間の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、売上税決済期間を設定する方法について説明します。 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。 決済プロセスは、特定の日付範囲の決済期間に実行できます。 決済期間に関連付けられたすべての税コードが決済されます。 関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。
 

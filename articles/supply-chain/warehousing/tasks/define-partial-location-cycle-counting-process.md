@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3aafb42cea1664b0629f57fe4492736601902cc1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 67f719d5990a4331559cab34412bf82f15eca735
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568261"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148357"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>部分的な場所の循環棚卸プロセスの定義 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 循環棚卸作業を使用して棚卸作業を作成する場合は、その場所において手持在庫の代わりに、特定の製品および製品バリアントのみがカウントされるよう要求することによって、実際の棚卸操作を指示できます。 特定の製品をフィルター処理することで、倉庫マネージャーはレビュー間接費を削減し、統合ミスを回避し、時間を節約できます。 通常、倉庫マネージャが設定タスクを実行します。 USMF デモ データ会社または独自のデータを使用して、この手順を踏むことができます。
 

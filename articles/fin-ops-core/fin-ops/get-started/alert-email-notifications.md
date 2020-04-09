@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: ba92c3dc1debed7e98210168d1a135e2cf567aec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0cf8037ba151bb4e68da1cf4609fb2e4806303a
+ms.sourcegitcommit: b952b9f9066a5317259b8344db4c5d99eab4bf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191296"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165778"
 ---
 # <a name="client-alert-notifications-by-email"></a>電子メールによるクライアント警告通知
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 データのフィルター処理されたビューを監視し、定義済のイベントが発生した場合に、電子メール通知を自動的に送信するカスタム警告ルールを定義できます。 電子メール通知を送信するオプションは、サポートされているすべての警告タイプで使用可能であり、既存の警告ルールでも有効にできます。
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da161c9066c822f8c09e5eda90994e8b03af4681
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: da25486207319879a9acc8376f3f2c78f9b8d939
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916863"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149691"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>購買契約書からの購買リリース注文の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順では、発注書を作成するときに購買契約書を使用する方法を示します。 発注書ヘッダーには一般的な条件をコピーする必要があるので、発注書を作成するときに購買契約書を適用する必要があります。 通常、これらのタスクを実施するのは、購買担当者です。 このガイドの前提条件として、仕入先および品目の製品数量が確約された有効購買契約書が必要です。 同じ手順は、他のタイプの確約のある購買契約書が存在する場合に使用できます。 デモ データの会社 USMF でこのガイドを実行できます。 USMF を使用する場合、最初に「購買契約の作成」ガイドを実行して、このガイドに必要な前提条件を設定することができます。
+この手順では、発注書を作成するときに購買契約書を使用する方法を示します。 発注書ヘッダーには一般的な条件をコピーする必要があるので、発注書を作成するときに購買契約書を適用する必要があります。 通常、これらのタスクを実施するのは、購買担当者です。 このガイドの前提条件として、仕入先および品目の製品数量が確約された有効購買契約書が必要です。 同じ手順は、他のタイプの確約のある購買契約書が存在する場合に使用できます。 デモ データの会社 USMF でこのガイドを実行できます。 USMF を使用する場合、最初に 「購買契約書の作成」 ガイドを実行して、このガイドに必要な前提条件を設定することができます。
 
 
 ## <a name="create-a-purchase-order"></a>発注書の作成

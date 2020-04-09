@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40a0638662cbace147aeb24bd20d3ae34a0c1670
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 01b797aa97e73cbe112c37a1efcd1e759730bc24
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837670"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149116"
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>個別の製造リソース グループの定義
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 リソース グループは、通常、作業セルの物理的な構成に対応する、作業現場フロアで黄色のラインで示される一連の運営リソースです。 この手順では、個別生産で使用するリソース グループを定義する方法を示します。 デモ データ会社 USMF または独自のデータを使用して、この手順の説明を確認することができます。
 

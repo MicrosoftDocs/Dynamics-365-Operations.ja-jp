@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 65227bb05bcbe0ba0d62100fecfb6aa0a49330f6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8e57ca517ff90036408715fdc3f511b524cb709e
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836216"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146356"
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>ドライバーの予定のチェックインおよびチェックアウトの登録
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順では、ドライバー チェックインおよびドライバーのチェックアウトを登録する方法を示します。これは通常、輸送コーディネーターによって実行されます。 デモ データの会社 USMF でこの手順を使用できます。 開始する前に、積荷に予定を設定する必要があります。 予定を作成するには、前提条件として「積荷の予定の設定」の手順を実行できます。
+この手順では、ドライバー チェックインおよびドライバーのチェックアウトを登録する方法を示します。これは通常、輸送コーディネーターによって実行されます。 デモ データの会社 USMF でこの手順を使用できます。 開始する前に、積荷に予定を設定する必要があります。 予定を作成するには、前提条件として "積荷に対して予定を設定しり" 手順を実行できます。
 
 
 ## <a name="select-an-appointment"></a>予定を選択します。

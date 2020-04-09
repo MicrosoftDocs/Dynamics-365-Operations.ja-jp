@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 227a6865df826caf8ce154f9c44ebe082acd76a5
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 473bb133159bb6cdcbbd30ab2c8452eb69f8cfaf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148201"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>発注書の作業テンプレートの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、入庫済品目のプット アウェイで使用する簡単な作業テンプレートの設定について説明します。 品目を入庫エリアから移動するときにモバイル デバイスで倉庫作業者に提示される一連の手順が、作業テンプレートによって決まります。 この手順は、デモ データの会社 USMF で前述のデータを使用して実施できます。 このガイドを開始する前に、作業プール ID を作成します。 この例では、入庫で呼び出される作業プール ID を使用します。 この手順は、倉庫マネージャーを対象としています。
 
@@ -38,7 +38,7 @@ ms.locfileid: "1916742"
 2. **順序番号**フィールドに番号を入力します。 これは、作業のテンプレートが評価される順序です。 この順序は、必要に応じて修正できます。  
 3. **作業テンプレート** フィールドに値を入力します。 これは、このテンプレートの固有識別子です。  
 4. **作業テンプレートの説明**フィールドで、値を入力します。
-    - **有効**オプションは、テンプレートに必要とされるすべての情報を入力してから**保存**を選択するとオンになります。  
+    - **有効** オプションは、テンプレートに必要とされるすべての情報を入力され、**保存** が選択されるまでチェックマークがつきません。  
     - **発注書**タイプのワーク オーダーは、自動的に処理することはできません。従って**自動的に処理**オプションは**いいえ**に設定しておきます。  
 5. **作業プール ID** フィールドで、値を入力します。 作業プール ID を使用して、作業をグループに整理できます。 ここで設定する値は、このテンプレートを使用して作成されるすべての作業の既定値になります。  
 6. **作業の優先順位**フィールドに  `1` を入力します。 これは作業の重要性を示し、ここで設定する値はこのテンプレートを使用して作成されるすべての作業の既定値になります。  

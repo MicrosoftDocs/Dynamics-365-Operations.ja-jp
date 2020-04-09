@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ded10b0972f07f4f86ee32cee596c5e30b15ebd
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d507418965f0ebcd657ef6363ec206eb73a722f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843772"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146954"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>交換するかんばんルールの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、既存のかんばんルールを特定日付の新しいかんばんルールに置き換えることを対象としています。 これは、生産フローの変更または補充ルールを調整およびスケジューリングする必要がある場合に役立ちます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、変更された生産フローまたは新しい補充ルールに対する生産を準備しているプロセス エンジニアまたはバリュー ストリーム マネージャーを対象としています。 このタスクは、新しいルールでかんばんルール 000022 を交換し、新しいルールについて最大数量を 48 から 100 に増加させます。
 

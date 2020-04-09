@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: e77de79113e3f44da1d7f92f17a446df86f6852e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026243"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143033"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。 この書式は、支払を処理するための電子ドキュメントを生成するために後で使用します。 この例では、サンプル会社 'Litware、Inc.' のコンフィギュレーションの書式設定を作成します。 ER コンフィギュレーションはすべての会社用に共有されるため、これらのステップはどの会社でも実行できます。 これらの手順を完了するには、最初に「コンフィギュレーションの書式設定の作成」タスク ガイドのステップを完了する必要があります。
+次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。 この書式は、支払を処理するための電子ドキュメントを生成するために後で使用します。 この例では、サンプル会社 'Litware、Inc.' の構成のフォーマットを作成します。 ER コンフィギュレーションはすべての会社用に共有されるため、これらのステップはどの会社でも実行できます。 これらの手順を完了するには、まず 「構成のフォーマットを作成する」 タスク ガイドに記載の手順を完了する必要があります。
 
 
 ## <a name="select-a-format-configuration"></a>書式コンフィギュレーションの選択
@@ -98,7 +98,7 @@ ms.locfileid: "3026243"
 2. ページを閉じます。
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>コンフィギュレーションの書式設定の現在のバージョンのステータスの変更
-次の手順では、支払ドキュメント生成に使用するために、ドラフトから完了に書式コンフィギュレーションのステータスを変更します。  
+次の手順では、フォーマット構成のステータスを 「下書き」 から 「完了」 に変更して、支払書類の作成に利用できるように設定します。  
 1. [状態の変更] をクリックします。
 2. [完了] をクリックします。
 3. [説明] フィールドに値を入力します。

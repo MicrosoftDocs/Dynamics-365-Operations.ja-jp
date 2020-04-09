@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 35c85e6e3bbdc913e9cd7aefdf6b143f3f03496f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 21b1986aa36aab23f50a5af434435f9e93318e45
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023177"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141086"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a>売買契約を作成するためのカテゴリの価格決定ルール
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順は、カテゴリ価格決定ルールを使用して販売価格の売買契約を作成する方法を示します。 このタスクの作成に使用するデモ データの会社は USRT です。 このタスクは、Commerce 販売促進マネージャー ロールを対象としています。
 

@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14e1fd19c6a27739ce9f57a4ab33f61e6baaeb2e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2b0084c6b4acbf14e3afec552575d5be26114237
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023164"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141368"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>発注書の製品パッケージの作成
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順では、製品パッケージを作成し、発注書を使用する方法を説明します。 発注書は、事前に定義された一連の製品の発注の作成に使用されます。 この手順では、デモ データの会社 USRT を使用します。
 

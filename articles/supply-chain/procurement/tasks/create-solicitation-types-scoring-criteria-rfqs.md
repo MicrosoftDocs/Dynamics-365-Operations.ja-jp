@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a3e0d00d674af913953d7fd01183b0289c20d3d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 57abbab21a20278d77001a39e226af11994230be
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149640"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>RFQ の入札タイプとスコア基準の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このガイドでは、入札タイプの作成、および入札タイプにスコア方法を関連付ける方法を示します。 さらに見積依頼 (RFQ) で入札タイプを使用し、既定のスコア方法を設定する方法も示します。 通常、これらのタスクを実施するのは、購買マネージャーです。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、使用可能なスコア方法を設定する必要があります。
 

@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6a7c26c4756d2219a37e8feb94a26c7d1609568
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e5b44d08ca7ee3f1eed461039fd38ead5a13c80d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183738"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140005"
 ---
 # <a name="inquiry-on-deductible-expenses"></a>損金の照会
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、損金のクエリを実行する方法について説明します。
 

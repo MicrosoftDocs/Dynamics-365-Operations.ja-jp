@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 346dca110fde9ff7600f3e4606529c27289dfc97
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e64ad19c557c7b0fd8747bb9b748859e70eaa63a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838778"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149392"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>生産フロー活動への先行処理の追加
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 生産フロー バージョンでは、すべての活動は順番に配列する必要があります。 活動には、複数の先行または後続の処理を含めることができます。 
 

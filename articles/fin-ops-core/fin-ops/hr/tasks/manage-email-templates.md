@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a911fea9e7d1009160a021e53533c0ce49efbfe
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178755"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143699"
 ---
 # <a name="manage-email-templates"></a>電子メール テンプレートの管理
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。 これを行うには、標準テキストを含むテンプレートとシステム データの挿入先となるいくつかのブックマークを作成できます。 たとえば、申請者の住所と連絡先情報を、申請者とのやり取りに使用できる Microsoft Word 文書に挿入します。 この手順の作成に使用するデモ データの会社は USMF です。
+自分の組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。 これを行うには、標準テキストを含むテンプレートとシステム データの挿入先となるいくつかのブックマークを作成できます。 たとえば、申請者の住所と連絡先情報を、申請者とのやり取りに使用できる Microsoft Word 文書に挿入します。 この手順の作成に使用するデモ データの会社は USMF です。
 
 
 ## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>電子メール テンプレートで使用するブックマークの選択

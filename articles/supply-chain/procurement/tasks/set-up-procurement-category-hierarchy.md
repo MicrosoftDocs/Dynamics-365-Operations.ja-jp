@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7010a1c612b9b3884c675f578657d951da06c38
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: c7010fb702d16dc276bfee397066ccf95bf5d25a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995285"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147276"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>調達カテゴリ階層の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、調達カテゴリ階層に新しいノードを作成する方法、および調達プロセスに使用する調達カテゴリをコンフィギュレーションする方法を示します。 通常、これらのタスクを実施するのは、購買マネージャーです。 この手順を開始する前に、調達タイプのカテゴリ階層が必要です。 デモ データの会社を使用すると、USMF 会社でこの手順を実行できます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "1995285"
 7. **保存** を選択します。
 
 ## <a name="add-products-to-your-new-procurement-category"></a>新しい調達カテゴリへの製品の追加
-1. **調達 > 委託販売 > 調達カテゴリ**の順に移動します。 追加したノードを選択します。 タスク ガイドの手順を実行している場合は、ノードを選択するために、タスク ガイドのロック解除が必要な場合があります。  
+1. **調達 > 委託販売 > 調達カテゴリ**の順に移動します。 追加したノードを選択します。 タスク ガイドとしてこの手順を実行している場合は、ノードを選択するために、タスク ガイドのロック解除が必要な場合があります。  
 2. **製品**セクションの展開を切り替えます。
 3. 調達カテゴリに製品を関連付けるには、**追加**を選択します。
 4. 調達カテゴリに追加する製品を選択します。

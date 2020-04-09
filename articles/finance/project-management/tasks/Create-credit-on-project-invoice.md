@@ -16,16 +16,16 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19ec4499ba37628e037f862da28e271d5313c6ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3a0158c4ed17179b8b15d13fdc20e369da12de54
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174469"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139104"
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>プロジェクト請求書の貸方票の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 1. [プロジェクト管理および会計] > [プロジェクト] > [すべてのプロジェクト] の順に選択します。 
 2. 一覧で、目的のレコードを見つけ、選択します。 

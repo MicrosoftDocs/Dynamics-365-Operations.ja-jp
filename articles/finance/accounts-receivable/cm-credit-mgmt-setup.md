@@ -3,7 +3,7 @@ title: 与信管理パラメーターの設定
 description: このトピックでは、業務要件を満たすよう与信管理をコンフィギュレーションするために使用できるオプションについて説明します。
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124188"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154531"
 ---
 # <a name="credit-management-parameters-setup"></a>与信管理パラメーターの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、業務要件を満たすよう与信管理をコンフィギュレーションするために使用できるオプションについて説明します。 与信管理機能の使用を開始するには、**与信管理パラメーター** ページ (**与信管理\>設定\>与信管理パラメーター**) でパラメーターを設定します。
+このトピックでは、業務要件を満たすよう与信管理をコンフィギュレーションするために使用できるオプションについて説明します。 与信管理機能の使用を開始するには、**与信および取立パラメーター** ページ (**与信および回収 \> 設定 \> 与信および取立パラメーター**) でパラメーターを設定します。
 
 ## <a name="credit-parameters"></a>与信パラメーター
 
-与信管理を制御するパラメーターを変更するための 4 つのクイック タブがあります。**与信保留**、**与信管理チェックポイント**、**与信管理統計**、**与信限度額**です。 次のセクションでは、各クイック タブで使用できる設定について説明します。
+**クレジット** セクションには 4 つのクイック タブがあり、与信管理を制御するパラメーターを変更できます: **与信保留**、**与信管理チェックポイント**、**与信管理統計**、**与信限度額**。 次のセクションでは、各クイック タブで使用できる設定について説明します。
 
 ### <a name="credit-holds"></a>与信保留
 

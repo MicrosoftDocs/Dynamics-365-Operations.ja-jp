@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 001bdd61f9266798dadae2ac7c96a4f4c19dbb94
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057172"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141456"
 ---
 # <a name="create-and-associate-registers"></a>レジスターの作成と関連付け
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順では、販売時点管理 (POS) レジスターを作成する方法を示します。 この手順では、デモ データ会社 USRT を使用します。
 
@@ -41,6 +41,6 @@ ms.locfileid: "3057172"
 7. [ビジュアル プロファイル] フィールドで、値を入力または選択します。
     * 視覚プロファイルは POS のバックグラウンド、ログイン ページ、および POS のテーマで使用されている画像を指定するのに使用されます。  
 8. [EFT POS レジスター番号] フィールドに値を入力します。
-    * EFT POS レジスター番号はどの支払ターミナルが認証要求を送信しているかを支払処理担当者に通知するために使用されます。 この値は、「ターミナル ID」、または「TID」と呼ばれます。 TID は、支払デバイスのステッカーの明細行から見つけることができます。  
+    * EFT POS レジスター番号はどの支払ターミナルが認証要求を送信しているかを支払処理担当者に通知するために使用されます。 この値は、"ターミナル ID" または "TID" と呼ばれます。 TID は、支払デバイスのステッカーの明細行から見つけることができます。  
 9. [保存] をクリックします。
 

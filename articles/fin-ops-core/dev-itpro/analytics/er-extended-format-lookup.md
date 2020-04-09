@@ -3,7 +3,7 @@ title: 電子申告 (ER) 拡張形式の検索
 description: このトピックでは、必要な形式がグローバル リポジトリに格納されている場合に、ER 形式参照を ER 形式検索で設定する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: c72335d7d83934146f827ef0bb568b79a585a7a5
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015291"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138863"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>ユーザーがグローバル リポジトリから形式を照会する ER 形式の参照を設定できるようにする
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 [電子申告](general-electronic-reporting.md) (ER) フレームワークを使用して、さまざまな国/地域の法的要件に従って送信ドキュメントの [形式](general-electronic-reporting.md#FormatComponentOutbound) をコンフィギュレーションできます。 ER フレームワークを使用して、受信ドキュメントを解析するための [形式](general-electronic-reporting.md#FormatComponentInbound) をコンフィギュレーションすることができ、またそれらのドキュメントの情報を使用してアプリケーション データの追加または更新を行うこともできます。 これらの各形式は、特定のビジネス プロセスの一部として受信または送信ビジネス ドキュメントを処理するために、Dynamics 365 Finance インスタンス内で使用できます。 
 

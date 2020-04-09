@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0fbd58fb6b03f3c6eb5e54f811d98ad636e65a94
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560958"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146379"
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>付帯サービス請求金額としての燃料インデックスの配送業者への関連付け
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-このガイドでは、付帯サービスの割り当て、配送業者付帯サービス請求金額、燃料割増金の付帯サービス マスターの作成方法、および配送業者の燃料インデックスの配送業者への割り当て方法を示します。 このガイドを実行する前に、配送業者の燃料インデックスを設定する必要があります。 これを行うには、「配送業者の燃料インデックスの設定」ガイドを使用できます。 これらの設定タスクは、通常、物流マネージャーが実行します。 この手順の作成に使用されたデモ データの会社は、USMF です。
+このガイドでは、付帯サービスの割り当て、配送業者付帯サービス請求金額、燃料割増金の付帯サービス マスターの作成方法、および配送業者の燃料インデックスの配送業者への割り当て方法を示します。 このガイドを実行する前に、配送業者の燃料インデックスを設定する必要があります。 これを行うには、"配送業者の燃料インデックスの設定" ガイドを使用できます。 これらの設定タスクは、通常、物流マネージャーが実行します。 この手順の作成に使用されたデモ データの会社は、USMF です。
 
 
 ## <a name="create-an-accessorial-master"></a>付帯サービス マスターの作成

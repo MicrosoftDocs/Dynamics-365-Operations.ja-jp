@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55baa247cfaa8bfff2f1df4320f33077259a68d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6a46258fa8d0fe9200293279c68aba4b4bdc74b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174659"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144152"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
 

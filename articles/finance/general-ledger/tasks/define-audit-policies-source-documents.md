@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6b0fa28d778a4d9fa1f718b1d50bf1dce00be00
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ba720fd1bbbbf8b4f3b936d65d9d7840432f291a
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186121"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145032"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>元伝票の監査ポリシーの定義
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、監査ポリシー ルールを設定および実行する方法について説明します。 この例では、ホテル経費タイプの経費精算書を使用しています。 この手順では、USMF というデモ会社を使用します。 監査担当者ロールには、これらのタスクを実行する適切なアクセス許可があります。
 

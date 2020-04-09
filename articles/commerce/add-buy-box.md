@@ -3,7 +3,7 @@ title: 購入ボックス モジュール
 description: このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025462"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154066"
 ---
 # <a name="buy-box-module"></a>購入ボックス モジュール
 
@@ -58,7 +58,7 @@ ms.locfileid: "3025462"
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>購入用ボックス モジュールで使用できるモジュール
 
 - **メディア ギャラリー** – このモジュールは、製品の詳細ページに製品の画像を表示するために使用されます。 一対多の画像をサポートできます。 サムネイル画像もサポートします。 サムネイル画像は、水平方向 (画像の下の行) または垂直方向 (画像の横の列) のいずれかに配置できます。 メディア ギャラリー モジュールは、購入ボックス モジュールの**メディア** スロットに追加できます。 現在、画像のみをサポートしています。 
-- **ストア セレクタ―** – このモジュールでは、品目の受け取り可能な近隣店舗の一覧を表示します。 これにより、ユーザーは場所を入力して、近隣にある店舗を見つけることができます。 ストア セレクター モジュールは、Bing Maps 位置情報アプリケーション プログラミング インターフェイス (API) と統合され、場所を緯度と経度に変換します。 Bing Maps API キーが必要なので、Dynamics 365 Retail の小売共有パラメータ ページに追加する必要があります。 このモジュールでは、**検索半径**および**使用条件のリンク**の 2 つのプロパティをサポートしています。 **検索半径**プロパティでは、店舗の検索半径をマイル単位で定義します。 値が指定されていない場合は、既定の検索半径 (50マイル) が使用されます。 Bing Maps または外部サービスを使用する場合、**使用条件リンク** プロパティを使用して、使用条件へのリンクを提供できます。 Bing Maps サービスには使用条件のリンクが必要です。 
+- **ストア セレクタ―** – このモジュールでは、品目の受け取り可能な近隣店舗の一覧を表示します。 これにより、ユーザーは場所を入力して、近隣にある店舗を見つけることができます。 このモジュールの詳細については、[ストア セレクター モジュール](store-selector.md) を参照してください。
 
 ## <a name="buy-box-module-settings"></a>購入ボックス モジュール設定
 
@@ -93,9 +93,11 @@ ms.locfileid: "3025462"
 
 [スタート キットの概要](starter-kit-overview.md)
 
+[ストア セレクター モジュール](store-selector.md)
+
 [コンテナー モジュール](add-container-module.md)
 
-[カート モジュール](add-cart-module.md)
+[買い物カゴ モジュール](add-cart-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 

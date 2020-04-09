@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f72de7ad54a2b2dc1bf40fd8cb86d8b055e2d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 73336c6803f28239ff8ca78dcff5ea8db0835e32
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146260"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>配送業者の燃料インデックスの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このガイドでは、燃料インデックス領域、燃料インデックス、および輸送業者の燃料インデックスを作成する方法を説明します。 燃料インデックス領域は燃料インデックスを適用する地域を指定し、燃料インデックスは特定の期間の燃料価格を指定します。 時間経過に伴う燃料価格の変化を反映させる場合は、輸送業者に複数の燃料インデックスを関連付けることができます。  通常これらのタスクは配送コーディネーターが行います。 デモ データの会社 USMF でこの手順を使用するか、または独自のデータを使用できます。
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124408"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154183"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -158,7 +158,7 @@ POS レシートの印刷は、OPOS に最適化されています。 一般に�
 
 ### <a name="dedicated"></a>専用
 
-Windows 用 および Android 用 Modern POS クライアントには、**専用**または (組み込み) ハードウェア ステーションが含まれます。 それらのクライアントは、アプリケーションに組み込まれているビジネス ロジックを使用して、周辺機器と直接通信できます。 Android アプリケーションは、ネットワーク デバイスのみをサポートします。 Android 用の周辺機器サポートの詳細については、[Android および iOS の POS Hybrid アプリの設定](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)の記事を参照してください。
+Windows 用 および Android 用 Modern POS クライアントには、**専用**または (組み込み) ハードウェア ステーションが含まれます。 それらのクライアントは、アプリケーションに組み込まれているビジネス ロジックを使用して、周辺機器と直接通信できます。 Android アプリケーションは、ネットワーク デバイスのみをサポートします。 Android 用の周辺機器サポートの詳細については、[Android および iOS の POS Hybrid アプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)の記事を参照してください。
 
 ハードウェア ステーションを使用するには、Windows または Android アプリケーション用 Modern POS を使用するレジスターにハードウェア プロファイルを割り当てます。 次に、レジスタが使用される店舗用に**専用**タイプのハードウェア ステーションを作成します。 非ドロワー モードの Modern POS で起動し、**ハードウェア ステーションの管理**操作を使用してハードウェア ステーションの機能を有効にすると、専用ハードウェア ステーションが既定で有効になります。 次に、Modern POS からログアウトし、再度ログインしてシフトを開くと、ハードウェア プロファイルでコンフィギュレーシされた周辺機器が使用可能になります。 
 
@@ -199,7 +199,7 @@ Windows 用 および Android 用 Modern POS クライアントには、**専用
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Android および iOS 用 Modern POS の設定とコンフィギュレーション
 
-詳細については、[Android および iOS での POS Hybrid アプリの設定](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)を参照してください。
+詳細については、[Android および iOS での POS Hybrid アプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)を参照してください。
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS デバイスの設定とコンフィギュレーション
 
@@ -494,7 +494,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーションを含む Android 用 Modern POS
 
-**10.0.8 の新機能** - DK ポートを介してそれらのプリンターに接続された Epson ネットワーク プリンターとキャッシュ ドロワーが、Android アプリ用 Modern POS でサポートされるようになりました。 詳細については、[Android および iOS での POS Hybrid アプリを設定する](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)の記事を参照してください。
+**10.0.8 の新機能** - DK ポートを介してそれらのプリンターに接続された Epson ネットワーク プリンターとキャッシュ ドロワーが、Android アプリ用 Modern POS でサポートされるようになりました。 詳細については、[Android および iOS での POS Hybrid アプリを設定する](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)の記事を参照してください。
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>確定済み共有 IIS ハードウェア ステーションを持つすべての Modern POS クライアント
 

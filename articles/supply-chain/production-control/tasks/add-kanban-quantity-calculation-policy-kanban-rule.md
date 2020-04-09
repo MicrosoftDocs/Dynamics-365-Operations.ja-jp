@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 401b01a6128babd6ed345342a65705a0262540e8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 93f0c2024e7fbe7d9c6525d41207b788032e763a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837953"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147207"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>かんばん数量計算ポリシーのかんばんルールへの追加
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、かんばん数量の計算ポリシーを作成し、それをかんばんルールへ追加し、かんばんのサイズおよび数量を最適化することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、バリュー ストリーム マネージャーを対象としています。 この手順は、かんばん数量修正候補の計算という手順を作成するための前提条件です。 
 

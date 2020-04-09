@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28a82ea8747fcbbceb835291ad5cd3d87091a736
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a087fa63bfdf4c2340f0fe9a8bdbd9195a7b90b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144067"
 ---
 # <a name="approve-application-inbox-records"></a>申請受信トレイ レコードの承認
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、従業員セルフサービス ページを通して受け取った申請を確認する方法を示します。 申請の確認に加えて、選択した申請受信トレイ レコードを承認できます。 申請受信トレイ レコードは、採用審査のために会社に提出された雇用申請を表します。 レコードが承認されると、申請者レコードは、申請を提出したユーザー用に作成されます。 この手順の作成に使用するデモ データの会社は USMF です。
 

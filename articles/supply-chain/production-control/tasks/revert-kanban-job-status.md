@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44c9ce805826779ba682561779653d61905fcd8d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3f9026aff0f54dd2a61cb0f35705b002a125610f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838514"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148863"
 ---
 # <a name="revert-kanban-job-status"></a>かんばん作業状態を元に戻す
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、間違ったかんばん作業ステータスを元に戻すことに焦点をあてます。 これは機械オペレーターが間違ったジョブを更新してしまった場合に、または誤って間違ったステータスを設定してしまった場合に役立ちます。 この手順によって、かんばん作業が誤って作成時に登録された時に、ステータスが元に戻されます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、リーン生産会社で働いている現場監督または機械オペレーターを対象としています。
 
