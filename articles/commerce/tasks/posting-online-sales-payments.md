@@ -17,95 +17,95 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf7f72be22539271649aa7f5541735b3d24dab66
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e3bac0cab764436a618fa570901c84ab720dbc86
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023153"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140787"
 ---
-# <a name="posting-of-online-sales-and-payments"></a><span data-ttu-id="3a657-103">オンラインの販売と支払の転記</span><span class="sxs-lookup"><span data-stu-id="3a657-103">Posting of online sales and payments</span></span>
+# <a name="posting-of-online-sales-and-payments"></a><span data-ttu-id="08f19-103">オンラインの販売と支払の転記</span><span class="sxs-lookup"><span data-stu-id="08f19-103">Posting of online sales and payments</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3a657-104">この手順では、オンライン ストアのトランザクションの販売注文と支払を作成する反復バッチ ジョブを構成および実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="3a657-104">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span>
+<span data-ttu-id="08f19-104">この手順では、オンライン ストアのトランザクションの販売注文と支払を作成する反復バッチ ジョブを構成および実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="08f19-104">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span>
 
-<span data-ttu-id="3a657-105">オンライン販売と支払の転記は、2 段階のプロセスで行われます。</span><span class="sxs-lookup"><span data-stu-id="3a657-105">Posting online sales and payments is a two-stage process.</span></span>
+<span data-ttu-id="08f19-105">オンライン販売と支払の転記は、2 段階のプロセスで行われます。</span><span class="sxs-lookup"><span data-stu-id="08f19-105">Posting online sales and payments is a two-stage process.</span></span>
 
-- <span data-ttu-id="3a657-106">HQ でオンライン コマース トランザクション データを引き出します。</span><span class="sxs-lookup"><span data-stu-id="3a657-106">Pulling the online commerce transaction data in HQ.</span></span>
-- <span data-ttu-id="3a657-107">HQ でオーダーを同期させて、販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="3a657-107">Synchronizing orders to create sales orders in HQ.</span></span>
+- <span data-ttu-id="08f19-106">HQ でオンライン コマース トランザクション データを引き出します。</span><span class="sxs-lookup"><span data-stu-id="08f19-106">Pulling the online commerce transaction data in HQ.</span></span>
+- <span data-ttu-id="08f19-107">HQ でオーダーを同期させて、販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="08f19-107">Synchronizing orders to create sales orders in HQ.</span></span>
 
-<span data-ttu-id="3a657-108">オンライン トランザクション データの取得は、手動で P ジョブを実行することによって、または反復バッチ ジョブを作成することによって行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="3a657-108">Pulling the online transaction data can be done either by manually running the P-job or by creating a recurrent batch job.</span></span>
+<span data-ttu-id="08f19-108">オンライン トランザクション データの取得は、手動で P ジョブを実行することによって、または反復バッチ ジョブを作成することによって行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="08f19-108">Pulling the online transaction data can be done either by manually running the P-job or by creating a recurrent batch job.</span></span>
 
-### <a name="manually-running-the-p-job"></a><span data-ttu-id="3a657-109">手動による P ジョブの実行</span><span class="sxs-lookup"><span data-stu-id="3a657-109">Manually running the P-job</span></span>
+### <a name="manually-running-the-p-job"></a><span data-ttu-id="08f19-109">手動による P ジョブの実行</span><span class="sxs-lookup"><span data-stu-id="08f19-109">Manually running the P-job</span></span>
 
-1. <span data-ttu-id="3a657-110">すべてのワークスペース > Retail とコマース IT に移動します。</span><span class="sxs-lookup"><span data-stu-id="3a657-110">Go to All workspaces > Retail and Commerce IT.</span></span>
-2. <span data-ttu-id="3a657-111">配送スケジュールをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-111">Click Distribution schedule.</span></span>
-3. <span data-ttu-id="3a657-112">P-0001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-112">Select P-0001.</span></span>
-4. <span data-ttu-id="3a657-113">必要に応じて、チャネル データベース グループを調整します。</span><span class="sxs-lookup"><span data-stu-id="3a657-113">Adjust channel database groups, if required.</span></span>
-5. <span data-ttu-id="3a657-114">今すぐ実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-114">Click Run now.</span></span>
-6. <span data-ttu-id="3a657-115">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-115">Click Yes.</span></span>
+1. <span data-ttu-id="08f19-110">すべてのワークスペース > Retail とコマース IT に移動します。</span><span class="sxs-lookup"><span data-stu-id="08f19-110">Go to All workspaces > Retail and Commerce IT.</span></span>
+2. <span data-ttu-id="08f19-111">配送スケジュールをクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-111">Click Distribution schedule.</span></span>
+3. <span data-ttu-id="08f19-112">P-0001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-112">Select P-0001.</span></span>
+4. <span data-ttu-id="08f19-113">必要に応じて、チャネル データベース グループを調整します。</span><span class="sxs-lookup"><span data-stu-id="08f19-113">Adjust channel database groups, if required.</span></span>
+5. <span data-ttu-id="08f19-114">今すぐ実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-114">Click Run now.</span></span>
+6. <span data-ttu-id="08f19-115">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-115">Click Yes.</span></span>
 
-### <a name="scheduling-a-recurring-p-job"></a><span data-ttu-id="3a657-116">定期的な P ジョブのスケジューリング</span><span class="sxs-lookup"><span data-stu-id="3a657-116">Scheduling a recurring P-job</span></span>
+### <a name="scheduling-a-recurring-p-job"></a><span data-ttu-id="08f19-116">定期的な P ジョブのスケジューリング</span><span class="sxs-lookup"><span data-stu-id="08f19-116">Scheduling a recurring P-job</span></span>
 
-1. <span data-ttu-id="3a657-117">すべてのワークスペース > Retail とコマース IT に移動します。</span><span class="sxs-lookup"><span data-stu-id="3a657-117">Go to All workspaces > Retail and Commerce IT.</span></span>
-2. <span data-ttu-id="3a657-118">配送スケジュールをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-118">Click Distribution schedule.</span></span>
-3. <span data-ttu-id="3a657-119">P-0001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-119">Select P-0001.</span></span>
-4. <span data-ttu-id="3a657-120">バッチ ジョブの作成をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-120">Click Create batch job.</span></span>
-5. <span data-ttu-id="3a657-121">バックグラウンドで実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-121">Click Run in the background.</span></span>
-5. <span data-ttu-id="3a657-122">バッチ処理を有効にします。</span><span class="sxs-lookup"><span data-stu-id="3a657-122">Enable Batch processing.</span></span>
-6. <span data-ttu-id="3a657-123">再実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-123">Click Recurrence..</span></span>
-7. <span data-ttu-id="3a657-124">[終了日なし] のオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-124">Select the No end date option.</span></span>
-8. <span data-ttu-id="3a657-125">カウント フィールドで、実行の間隔を分単位で入力します。</span><span class="sxs-lookup"><span data-stu-id="3a657-125">In the Count field, enter interval between the runs in minutes.</span></span> <span data-ttu-id="3a657-126">通常、これは 5-10 になります。</span><span class="sxs-lookup"><span data-stu-id="3a657-126">Typically this would be 5-10.</span></span>
-9. <span data-ttu-id="3a657-127">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-127">Click OK.</span></span>
-10. <span data-ttu-id="3a657-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-128">Click OK.</span></span>
+1. <span data-ttu-id="08f19-117">すべてのワークスペース > Retail とコマース IT に移動します。</span><span class="sxs-lookup"><span data-stu-id="08f19-117">Go to All workspaces > Retail and Commerce IT.</span></span>
+2. <span data-ttu-id="08f19-118">配送スケジュールをクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-118">Click Distribution schedule.</span></span>
+3. <span data-ttu-id="08f19-119">P-0001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-119">Select P-0001.</span></span>
+4. <span data-ttu-id="08f19-120">バッチ ジョブの作成をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-120">Click Create batch job.</span></span>
+5. <span data-ttu-id="08f19-121">バックグラウンドで実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-121">Click Run in the background.</span></span>
+5. <span data-ttu-id="08f19-122">バッチ処理を有効にします。</span><span class="sxs-lookup"><span data-stu-id="08f19-122">Enable Batch processing.</span></span>
+6. <span data-ttu-id="08f19-123">再実行をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-123">Click Recurrence..</span></span>
+7. <span data-ttu-id="08f19-124">[終了日なし] のオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-124">Select the No end date option.</span></span>
+8. <span data-ttu-id="08f19-125">カウント フィールドで、実行の間隔を分単位で入力します。</span><span class="sxs-lookup"><span data-stu-id="08f19-125">In the Count field, enter interval between the runs in minutes.</span></span> <span data-ttu-id="08f19-126">通常、これは 5-10 になります。</span><span class="sxs-lookup"><span data-stu-id="08f19-126">Typically this would be 5-10.</span></span>
+9. <span data-ttu-id="08f19-127">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-127">Click OK.</span></span>
+10. <span data-ttu-id="08f19-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-128">Click OK.</span></span>
 
-<span data-ttu-id="3a657-129">注文を同期するには、「同期注文」ジョブを手動で実行するか、定期的なバッチジョブを作成します。</span><span class="sxs-lookup"><span data-stu-id="3a657-129">Orders can be synchronized either by manually running the "Synchronize orders"-job or by creating a recurring batch job.</span></span>
+<span data-ttu-id="08f19-129">注文を同期するには、「同期注文」ジョブを手動で実行するか、定期的なバッチジョブを作成します。</span><span class="sxs-lookup"><span data-stu-id="08f19-129">Orders can be synchronized either by manually running the "Synchronize orders"-job or by creating a recurring batch job.</span></span>
 
-### <a name="manually-running-order-synchronization"></a><span data-ttu-id="3a657-130">注文の同期を手動で実行</span><span class="sxs-lookup"><span data-stu-id="3a657-130">Manually running order synchronization</span></span> 
+### <a name="manually-running-order-synchronization"></a><span data-ttu-id="08f19-130">注文の同期を手動で実行</span><span class="sxs-lookup"><span data-stu-id="08f19-130">Manually running order synchronization</span></span> 
 
-<span data-ttu-id="3a657-131">「注文の同期」ジョブを一度手動で実行するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="3a657-131">Follow these steps to manually run "Synchronize orders" job once.</span></span>
+<span data-ttu-id="08f19-131">「注文の同期」ジョブを一度手動で実行するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="08f19-131">Follow these steps to manually run "Synchronize orders" job once.</span></span>
 
-1. <span data-ttu-id="3a657-132">すべてのワークスペース > 店舗の財務に移動します。</span><span class="sxs-lookup"><span data-stu-id="3a657-132">Go to All workspaces > Store financials.</span></span>
-2. <span data-ttu-id="3a657-133">[注文の同期] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-133">Click Synchronize orders.</span></span>
-3. <span data-ttu-id="3a657-134">組織階層のフィールドで、'地域ごとの店舗' を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-134">In the Organization hierarchy field, select 'Stores by Region'.</span></span>
-    * <span data-ttu-id="3a657-135">店舗グループのバッチ ジョブを作成する場合は、特定のオンライン ストアまたはノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-135">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
-    * <span data-ttu-id="3a657-136">選択した項目を追加するには、矢印をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-136">Click the arrow to add your selection.</span></span>  
-4. <span data-ttu-id="3a657-137">[バックグラウンドで実行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-137">Click the Run in the background tab.</span></span>
-5. <span data-ttu-id="3a657-138">バッチ処理を無効にする</span><span class="sxs-lookup"><span data-stu-id="3a657-138">Disable Batch processing</span></span>
-6. <span data-ttu-id="3a657-139">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-139">Click Recurrence.</span></span>
-7. <span data-ttu-id="3a657-140">後に終了オプションを選択</span><span class="sxs-lookup"><span data-stu-id="3a657-140">Select End After option</span></span>
-8. <span data-ttu-id="3a657-141">後に終了フィールドに、1 と入力します。</span><span class="sxs-lookup"><span data-stu-id="3a657-141">In the End After field, enter 1.</span></span>
-9. <span data-ttu-id="3a657-142">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-142">Click OK.</span></span>
-10. <span data-ttu-id="3a657-143">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-143">Click OK.</span></span>
+1. <span data-ttu-id="08f19-132">すべてのワークスペース > 店舗の財務に移動します。</span><span class="sxs-lookup"><span data-stu-id="08f19-132">Go to All workspaces > Store financials.</span></span>
+2. <span data-ttu-id="08f19-133">[注文の同期] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-133">Click Synchronize orders.</span></span>
+3. <span data-ttu-id="08f19-134">組織階層のフィールドで、'地域ごとの店舗' を選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-134">In the Organization hierarchy field, select 'Stores by Region'.</span></span>
+    * <span data-ttu-id="08f19-135">店舗グループのバッチ ジョブを作成する場合は、特定のオンライン ストアまたはノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-135">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="08f19-136">選択した項目を追加するには、矢印をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-136">Click the arrow to add your selection.</span></span>  
+4. <span data-ttu-id="08f19-137">[バックグラウンドで実行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-137">Click the Run in the background tab.</span></span>
+5. <span data-ttu-id="08f19-138">バッチ処理を無効にする</span><span class="sxs-lookup"><span data-stu-id="08f19-138">Disable Batch processing</span></span>
+6. <span data-ttu-id="08f19-139">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-139">Click Recurrence.</span></span>
+7. <span data-ttu-id="08f19-140">後に終了オプションを選択</span><span class="sxs-lookup"><span data-stu-id="08f19-140">Select End After option</span></span>
+8. <span data-ttu-id="08f19-141">後に終了フィールドに、1 と入力します。</span><span class="sxs-lookup"><span data-stu-id="08f19-141">In the End After field, enter 1.</span></span>
+9. <span data-ttu-id="08f19-142">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-142">Click OK.</span></span>
+10. <span data-ttu-id="08f19-143">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-143">Click OK.</span></span>
 
-### <a name="scheduling-recurring-order-synchronization"></a><span data-ttu-id="3a657-144">繰返し注文の同期をスケジューリングする</span><span class="sxs-lookup"><span data-stu-id="3a657-144">Scheduling recurring order synchronization</span></span>
+### <a name="scheduling-recurring-order-synchronization"></a><span data-ttu-id="08f19-144">繰返し注文の同期をスケジューリングする</span><span class="sxs-lookup"><span data-stu-id="08f19-144">Scheduling recurring order synchronization</span></span>
 
-<span data-ttu-id="3a657-145">この手順では、オンライン ストアのトランザクションの販売注文と支払を作成する反復バッチ ジョブを構成および実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="3a657-145">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span> <span data-ttu-id="3a657-146">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="3a657-146">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="08f19-145">この手順では、オンライン ストアのトランザクションの販売注文と支払を作成する反復バッチ ジョブを構成および実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="08f19-145">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span> <span data-ttu-id="08f19-146">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="08f19-146">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="3a657-147">すべてのワークスペース > 店舗の財務に移動します。</span><span class="sxs-lookup"><span data-stu-id="3a657-147">Go to All workspaces > Store financials.</span></span>
-2. <span data-ttu-id="3a657-148">[注文の同期] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-148">Click Synchronize orders.</span></span>
-3. <span data-ttu-id="3a657-149">組織階層のフィールドで、'地域ごとの店舗' を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-149">In the Organization hierarchy field, select 'Stores by Region'.</span></span>
-    * <span data-ttu-id="3a657-150">店舗グループのバッチ ジョブを作成する場合は、特定のオンライン ストアまたはノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-150">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
-    * <span data-ttu-id="3a657-151">選択した項目を追加するには、矢印をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-151">Click the arrow to add your selection.</span></span>  
-4. <span data-ttu-id="3a657-152">[バックグラウンドで実行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-152">Click the Run in the background tab.</span></span>
-5. <span data-ttu-id="3a657-153">バッチ処理を有効にする</span><span class="sxs-lookup"><span data-stu-id="3a657-153">Enable Batch processing</span></span>
-6. <span data-ttu-id="3a657-154">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-154">Click Recurrence.</span></span>
-7. <span data-ttu-id="3a657-155">[終了日なし] のオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="3a657-155">Select the No end date option.</span></span>
-8. <span data-ttu-id="3a657-156">カウント フィールドで、実行の間隔を分単位で入力します。</span><span class="sxs-lookup"><span data-stu-id="3a657-156">In the Count field, enter interval between the runs in minutes.</span></span> <span data-ttu-id="3a657-157">通常、これは 2-20 になります</span><span class="sxs-lookup"><span data-stu-id="3a657-157">Typically this would be 2-20</span></span>
-9. <span data-ttu-id="3a657-158">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-158">Click OK.</span></span>
-10. <span data-ttu-id="3a657-159">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a657-159">Click OK.</span></span>
+1. <span data-ttu-id="08f19-147">すべてのワークスペース > 店舗の財務に移動します。</span><span class="sxs-lookup"><span data-stu-id="08f19-147">Go to All workspaces > Store financials.</span></span>
+2. <span data-ttu-id="08f19-148">[注文の同期] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-148">Click Synchronize orders.</span></span>
+3. <span data-ttu-id="08f19-149">組織階層のフィールドで、'地域ごとの店舗' を選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-149">In the Organization hierarchy field, select 'Stores by Region'.</span></span>
+    * <span data-ttu-id="08f19-150">店舗グループのバッチ ジョブを作成する場合は、特定のオンライン ストアまたはノードを選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-150">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="08f19-151">選択した項目を追加するには、矢印をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-151">Click the arrow to add your selection.</span></span>  
+4. <span data-ttu-id="08f19-152">[バックグラウンドで実行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-152">Click the Run in the background tab.</span></span>
+5. <span data-ttu-id="08f19-153">バッチ処理を有効にする</span><span class="sxs-lookup"><span data-stu-id="08f19-153">Enable Batch processing</span></span>
+6. <span data-ttu-id="08f19-154">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-154">Click Recurrence.</span></span>
+7. <span data-ttu-id="08f19-155">[終了日なし] のオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="08f19-155">Select the No end date option.</span></span>
+8. <span data-ttu-id="08f19-156">カウント フィールドで、実行の間隔を分単位で入力します。</span><span class="sxs-lookup"><span data-stu-id="08f19-156">In the Count field, enter interval between the runs in minutes.</span></span> <span data-ttu-id="08f19-157">通常、これは 2-20 になります</span><span class="sxs-lookup"><span data-stu-id="08f19-157">Typically this would be 2-20</span></span>
+9. <span data-ttu-id="08f19-158">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-158">Click OK.</span></span>
+10. <span data-ttu-id="08f19-159">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="08f19-159">Click OK.</span></span>
 
-## <a name="data-entities-involved-in-the-process"></a><span data-ttu-id="3a657-160">プロセスに含まれるデータ エンティティ</span><span class="sxs-lookup"><span data-stu-id="3a657-160">Data entities involved in the process</span></span>
+## <a name="data-entities-involved-in-the-process"></a><span data-ttu-id="08f19-160">プロセスに含まれるデータ エンティティ</span><span class="sxs-lookup"><span data-stu-id="08f19-160">Data entities involved in the process</span></span>
 
-- <span data-ttu-id="3a657-161">RetailTransactionTable</span><span class="sxs-lookup"><span data-stu-id="3a657-161">RetailTransactionTable</span></span>
-- <span data-ttu-id="3a657-162">RetailTransactionAddressTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-162">RetailTransactionAddressTrans</span></span>
-- <span data-ttu-id="3a657-163">RetailTransactionInfocodeTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-163">RetailTransactionInfocodeTrans</span></span>
-- <span data-ttu-id="3a657-164">RetailTransactionTaxTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-164">RetailTransactionTaxTrans</span></span>
-- <span data-ttu-id="3a657-165">RetailTransactionSalesTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-165">RetailTransactionSalesTrans</span></span>
-- <span data-ttu-id="3a657-166">RetailTransactionTaxMeasure</span><span class="sxs-lookup"><span data-stu-id="3a657-166">RetailTransactionTaxMeasure</span></span>
-- <span data-ttu-id="3a657-167">RetailTransactionDiscountTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-167">RetailTransactionDiscountTrans</span></span>
-- <span data-ttu-id="3a657-168">RetailTransactionTaxTransGTE</span><span class="sxs-lookup"><span data-stu-id="3a657-168">RetailTransactionTaxTransGTE</span></span>
-- <span data-ttu-id="3a657-169">RetailTransactionMarkupTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-169">RetailTransactionMarkupTrans</span></span>
-- <span data-ttu-id="3a657-170">RetailTransactionPaymentTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-170">RetailTransactionPaymentTrans</span></span>
-- <span data-ttu-id="3a657-171">RetailTransactionAttributeTrans</span><span class="sxs-lookup"><span data-stu-id="3a657-171">RetailTransactionAttributeTrans</span></span>
+- <span data-ttu-id="08f19-161">RetailTransactionTable</span><span class="sxs-lookup"><span data-stu-id="08f19-161">RetailTransactionTable</span></span>
+- <span data-ttu-id="08f19-162">RetailTransactionAddressTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-162">RetailTransactionAddressTrans</span></span>
+- <span data-ttu-id="08f19-163">RetailTransactionInfocodeTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-163">RetailTransactionInfocodeTrans</span></span>
+- <span data-ttu-id="08f19-164">RetailTransactionTaxTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-164">RetailTransactionTaxTrans</span></span>
+- <span data-ttu-id="08f19-165">RetailTransactionSalesTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-165">RetailTransactionSalesTrans</span></span>
+- <span data-ttu-id="08f19-166">RetailTransactionTaxMeasure</span><span class="sxs-lookup"><span data-stu-id="08f19-166">RetailTransactionTaxMeasure</span></span>
+- <span data-ttu-id="08f19-167">RetailTransactionDiscountTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-167">RetailTransactionDiscountTrans</span></span>
+- <span data-ttu-id="08f19-168">RetailTransactionTaxTransGTE</span><span class="sxs-lookup"><span data-stu-id="08f19-168">RetailTransactionTaxTransGTE</span></span>
+- <span data-ttu-id="08f19-169">RetailTransactionMarkupTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-169">RetailTransactionMarkupTrans</span></span>
+- <span data-ttu-id="08f19-170">RetailTransactionPaymentTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-170">RetailTransactionPaymentTrans</span></span>
+- <span data-ttu-id="08f19-171">RetailTransactionAttributeTrans</span><span class="sxs-lookup"><span data-stu-id="08f19-171">RetailTransactionAttributeTrans</span></span>
