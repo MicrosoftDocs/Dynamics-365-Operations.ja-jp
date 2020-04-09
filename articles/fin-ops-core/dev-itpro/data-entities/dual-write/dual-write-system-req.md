@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: ''
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 689594723d4fd55ef13d67ce08d0453751cf04cb
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: b6cf815247b8499f302b5f7b7b5659222f6e5f62
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112353"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172773"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 デュアル書き込みの接続設定には、次の要件があります。
 

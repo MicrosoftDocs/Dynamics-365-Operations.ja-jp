@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 38c73644ecf0f36e620d4a6d3c686a247cf82984
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 80846789410953f0015b7993fe5f4e00a92e686a
+ms.sourcegitcommit: c03bd0fcf663e4e3e83db52fc9255ef1e3de34bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082014"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176170"
 ---
 # <a name="make-fields-on-mobile-app-pages-clickable"></a>モバイル アプリ ページのフィールドをクリック可能にする
 
@@ -43,7 +43,7 @@ ms.locfileid: "3082014"
 ビジネス ロジックを使用することにより、フィールドを URL フィールドとしてマークすることができます。 ユーザーがフィールドをクリックすると、規定のモバイル ブラウザーに URL が開き、アドレス バーにフィールド値が表示されます。
 
 > [!NOTE]
-> iOS では完全な URL (つまり、<strong>https</strong> などのプロトコルで始まる URL) を指定する必要があります。 それ以外の場合、URL はブラウザーで開かれません。 www.microsoft.com などの URL は機能しません。 代わりに、URL は `https://www.microsoft.com` で指定される必要があります。
+> iOS では完全な URL (つまり、<strong>https</strong> などのプロトコルで始まる URL) を指定する必要があります。 それ以外の場合、URL はブラウザーで開かれません。 `www.microsoft.com` などの URL は機能しません。 代わりに、URL は `https://www.microsoft.com` で指定される必要があります。
 
 ## <a name="example"></a>例
 この例では、顧客の電子メール アドレスと電話番号フィールドを、適切な iOS アプリケーションでクリックして開くことができるように設定する方法を示します。

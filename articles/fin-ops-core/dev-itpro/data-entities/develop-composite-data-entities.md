@@ -3,7 +3,7 @@ title: 複合データ エンティティの開発
 description: 複合エンティティは、相互に関連する複数のエンティティを利用して単一のエンティティを構築できる概念です。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45da5f3c72889f391b7a7fc15fdbcb0013135d65
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 31f7d1812b0e71a9b959b298657df2771367c128
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029429"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172013"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 
@@ -132,10 +132,10 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 DIXF 標準プロセスからの通常のエンティティとして、データをインポートおよびエクスポートすることをお勧めします。 エンティティのインポートとエクスポートの以下の手順をご覧ください。
 
 > [!NOTE]
-> ソース タイプの XML-属性または XML-要素は、複合エンティティでサポートされています。
+> ソース タイプの XML-属性または XML-要素は、複合エンティティでサポートされています。 エンティティ実行パラメータでは、並列処理設定を使用して複合エンティティを並行してインポートすることはできません。
 
 ## <a name="import-a-composite-entity"></a>複合エンティティのインポート
-1. **インポート** をクリックします。
+1. **インポート**をクリックします。
 2. **名前**、**ソース データ フォーマット**、および**エンティティ名**を入力します。
 3. **ソース データ形式** は、xml-attribute または xml-element です。
 4. **今すぐインポート**をクリックします。

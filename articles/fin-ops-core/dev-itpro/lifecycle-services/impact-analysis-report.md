@@ -3,12 +3,11 @@ title: Lifecycle Services (LCS) の影響分析レポート
 description: このトピックでは、 Microsoft Dynamics Lifecycle Services (LCS) の影響分析レポートについて説明します。
 author: dfroslieMSFT
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: fc665aed80d908b641857ab94af5103ecb7f0c5e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e72ccbdb0923bdba1e520b3f8f170bbcb1b5899e
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183207"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3172014"
 ---
 # <a name="impact-analysis-report-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の影響分析レポート
 

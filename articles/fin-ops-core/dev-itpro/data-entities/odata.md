@@ -3,7 +3,7 @@ title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 844dfc628345e1726476e365e184bade77caee5b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: cf9ad8339e3af84433ebefb771e844c1164b447f
+ms.sourcegitcommit: f481dfd6bf93bb3e03a7bd9a765e2cfd14305d02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033008"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169266"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -323,3 +323,6 @@ public static void CreateVendor(Resources context)
 
 ### <a name="array-fields"></a>配列フィールド
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。
+
+### <a name="after-restarting-aos-the-first-odata-call-may-take-a-long-time-to-process"></a>AOS を再起動した後、最初の OData 呼び出しの処理に時間がかかることがあります
+メタデータがキャッシュされていないために、再起動された AOS によって処理される最初の OData 呼び出しは処理に時間がかかる場合があります。 この待ち時間は、AOS 起動時に OData をウォーム アップすることで回避できます。 詳細については、[AOS 起動時に OData メタデータ キャッシュを作成する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup) を参照してください。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e664d48ac4fa256e707dd8cabf88f788b9d33528
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 70310c0f9ba547d8d0cbedba48eb641a26079dba
+ms.sourcegitcommit: 794cbfee6077e75747cfcc4a977b7ab01cbc1a2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112349"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3165042"
 ---
 # <a name="preview-features-in-dynamics-365-finance-version-10010-march-2020"></a>Dynamics 365 Finance バージョン 10.0.10 (2020 年 3 月) の機能をプレビューする
 
@@ -65,7 +65,7 @@ Microsoft Dynamics 365 Finance 10.0.10 プレビューには、プラットフ�
 
 
 ### <a name="bug-fixes-and-additional-enhancements"></a>バグ修正およびその他の機能強化
-10.0.10 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f) を参照してください。
+10.0.10 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb) を参照してください。
 
 #### <a name="add-vendor-id-and-vendor-name-to-the-posted-projects-list-page"></a>仕入先 ID と仕入先名を転記済プロジェクトのリスト ページに追加します
 この機能を有効にすると、プロジェクト関連の発注書の経費について **転記されたプロジェクト リストページ** に仕入先 ID と仕入先名が表示されます。

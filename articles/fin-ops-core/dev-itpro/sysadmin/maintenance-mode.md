@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ede4d8b0eb45693f15afe3e26ae9bc4e7c7c71a3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 7a92d50811cf7bc7a88d1aae4fcd5473023576af
+ms.sourcegitcommit: b942014958b7f60e15fc7a78c26aed5e175eadde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096935"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3166395"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/limited-availability.md)]
 
 このトピックでは、Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
 

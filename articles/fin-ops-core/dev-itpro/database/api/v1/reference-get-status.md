@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 65dcfc6436591f348c2d08db1e242b37028b3814
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 37c6898eb8d51132f3d1ae5fa453a3029e7e75b8
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573566"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150754"
 ---
 # <a name="get-status"></a>ステータスの取得
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 進行中の操作のステータスを取得することができます。
 

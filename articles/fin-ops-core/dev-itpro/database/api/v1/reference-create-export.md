@@ -1,9 +1,9 @@
 ---
-title: データベース移動の API - 参照 - v1 - データベース更新の作成
+title: データベース移動 API - 照会 - v1 - データベース エクスポートの作成
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,20 +13,21 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ac5ce59fc98abc4d3f10eb5d9c441c5d6e147c2c
+ms.openlocfilehash: 8429e4d8d4f5bfd9d0640b40d6a469a85f9288cd
 ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150781"
+ms.locfileid: "3150851"
 ---
-# <a name="create-a-database-refresh"></a>データベース更新の作成
+# <a name="create-a-database-export"></a>データベース エクスポートの作成
 
 [!include [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/preview-banner.md)]
 
-2 つの環境間でのデータベース更新を作成することができます。 Microsoft Dynamics Lifecycle Services (LCS) の詳細ページと同じ検証ルールは、 アプリケーション プログラミング インターフェイス (API) に適用されます。
+サンドボックス環境からプロジェクトの資産ライブラリへのデータベース エクスポートを作成できます。 Microsoft Dynamics Lifecycle Services (LCS) の詳細ページと同じ検証ルールは、 アプリケーション プログラミング インターフェイス (API) に適用されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -40,15 +41,14 @@ ms.locfileid: "3150781"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /databasemovement/v1/refresh/project/{projectId}/source/{sourceEnvironmentId}/target/{targetEnvironmentId}
+POST /databasemovement/v1/export/project/{projectId}/environment/{environmentId}/backupName/{backupName}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 表題         | 金額                     |
+| 表題         | 先頭値                     |
 |----------------|---------------------------|
-| 承認  | ベアラー {token} (必須) |
-| 「x-ms-version」 | 「2017-09-15」 (必須)   |
+| 認証  | ベアラー {token} (必須) |
 | Content-Type   | アプリケーション /json          |
 
 ## <a name="request-body"></a>要求の本文
@@ -62,7 +62,7 @@ POST /databasemovement/v1/refresh/project/{projectId}/source/{sourceEnvironmentI
 ## <a name="example"></a>例
 
 ```http
-POST /databasemovement/v1/refresh/project/12345/source/5362377c-bc37-4f92-b30e-fe0c1e664cc0/target/6a90b45f-1764-4077-b924-3f4671540237
+POST /databasemovement/v1/export/project/12345/environment/5362377c-bc37-4f92-b30e-fe0c1e664cc0/backupName/TestBackupViaAPI
 ```
 
 ```json

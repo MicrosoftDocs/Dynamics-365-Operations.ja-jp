@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08b455599e0f903e8744ca35d74fcc429111960e
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 633510807df5311492dba236846c7561b2deff33
+ms.sourcegitcommit: c03bd0fcf663e4e3e83db52fc9255ef1e3de34bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124816"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176168"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -220,10 +220,13 @@ class ProgramTest
 ```xpp
 class AnyClass1 
 {
-    [HookableAttribute(false)]
+    [Hookable(false)]
     public void anyMethod() {...}
 }
 ```
+
+> [!NOTE]
+> 互換性の理由から、**[Hookable(false)]** は、前後のハンドラーに加えて、コマンド チェーンの動作を上書きします。 ただし、**[Hookable(true)]** は前後のハンドラーにのみ適用され、コマンド ラッピングのチェーンには影響しません。
 
 ### <a name="final-methods-and-the-wrappable-attribute"></a>最終的な方法および Wrappable 属性
 **final** とマークされているパブリック メソッドと保護されたメソッドは、拡張クラスでラップできません。 **Wrappable** 属性を使用して属性パラメーターを **true** (**[Wrappable(true)]**) に設定することにより、この制限をオーバーライドすることができます。 同様に、(最終ではない) パブリックまたは保護されたメソッドの既定の機能を無効にするには、折り返し不可としてこれらのメソッドをマークすることができます (**[Wrappable(false)]**)。

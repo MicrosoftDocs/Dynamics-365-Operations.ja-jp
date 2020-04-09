@@ -3,7 +3,7 @@ title: 販売時点管理 (POS) API
 description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/19/2019
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: b043dbc93bc16571a0fcdaf4bf520d4c6de97ca6
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: c75a33a2b71b2ab9672b8dc503b44d4be9764a12
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164710"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]
@@ -210,9 +210,10 @@ currentCart = getCurrentCartClientResponse.data.result;
 | AddLoyaltyCardToCartOperationRequest |
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
+| AddExpenseAccountLineToCartOperationRequest |
 
 
-### <a name="payments"></a>支払
+### <a name="payments"></a>支払利息
 
 次に、支払に関連する機能を実行する公開されている API の一覧を示します。
 
@@ -432,5 +433,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | SearchCommissionSalesGroupsServiceRequest       |
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
+| BankDropOperationRequest                 |
+| DeclareStartAmountOperationRequest        |
 
 

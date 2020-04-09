@@ -3,7 +3,7 @@ title: ビジネス プロセス モデラー (BPM) のフローチャート
 description: この記事では、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
 author: jorisdg
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: a45eacef6941c68a45090727ea360e3002ade697
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 28500ed4deb1c2097f5812c4614685d63980fafa
+ms.sourcegitcommit: 89466c3d9976c57518fef85406f2680e3005fb8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3151024"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
 [!include [banner](../includes/banner.md)]
+
+> [!重要] ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
 
 Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 この記事では、既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。 また、未接続のフローチャートをアップロードおよび表示する方法についても説明します。
 

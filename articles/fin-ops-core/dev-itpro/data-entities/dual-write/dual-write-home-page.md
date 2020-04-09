@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67edc7158b3b9bf765af81d4c11f6748d65e05ba
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 84d3d3c79b901f5ede9d4254dafd34e0ea8674b9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112228"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172797"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 次のトピックでは、二重書き込み統合について説明します。
 
@@ -42,36 +42,60 @@ ms.locfileid: "3112228"
 + [二重書き込みのシステム要件](dual-write-system-req.md)
 + [二重書き込みの設定のサポートされているシナリオ](connection-setup.md)
 + [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
++ [初期同期の選択と管理ビュー](initial-sync.md)
++ 既存 Finance and Operations アプリの二重書き込みを有効化
+
+    + [既存 Finance and Operations アプリの二重書き込みを有効化](enable-dual-write.md)
+    + [システム要件と前提条件](requirements-and-prerequisites.md)
+    + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
+    + [二重書き込みのエンティティ マップを有効化](enable-entity-map.md)
+
+## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
+
++ [エンティティとフィールド マッピングのカスタマイズ](customizing-mappings.md)
++ [エラー管理と警告通知](errors-and-alerts.md)
++ [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
 このトピックでは、Finance and Operations アプリケーションの概念と Microsoft Dynamics 365 のモデル駆動型アプリの概念間のマッピングについて説明します。
 
-+ [組織階層の認識](organization-mapping.md)
-+ [Common Data Service 企業理念](company-data.md)
-
-    + [社内データを含むブートストラップに関するよく寄せられる質問](bootstrap-company-data.md)
-
 + [統合された顧客マスター](customer-mapping.md)
-+ [統一された製品経験](product-mapping.md)
-
-    + [統合されたサイトおよび倉庫](sites-warehouses-mapping.md)
-
 + [統合された仕入先マスター](vendor-mapping.md)
 
     + [仕入先デザインの切り替え](vendor-switch.md)
 
++ [顧客ロイヤルティ カードと報酬ポイント](loyalty-mapping.md)
++ [統一された製品経験](product-mapping.md)
+
+    + [統合されたサイトおよび倉庫](sites-warehouses-mapping.md)
+
++ [Common Data Service 企業理念](company-data.md)
+
+    + [社内データを含むブートストラップに関するよく寄せられる質問](bootstrap-company-data.md)
+
++ [組織階層の認識](organization-mapping.md)
 + [財務および税参照データへのアクセス](finance-tax-reference.md)
 
     + [統合された元帳](ledger-mapping.md)
     + [統合された税マスター](tax-mapping.md)
 
-+ [二重書き込み処理における見込顧客の収益化](dual-write-prospect-to-cash.md)
++ [Dynamics 365 Supply Chain Management 価格エンジンとオンデマンドの同期](pricing-engine.md)
++ [二重書き込みでの見込顧客から入金](dual-write-prospect-to-cash.md)
 + [サービスのための社内資産](in-house-assets.md)
 + [作業者、職務、および職位の統合](integrated-hr.md)
 
 ## <a name="support"></a>サポート
 
-+ [Field Service ソリューションと Project Service Automation ソリューションの対応](field-service-project-service-automation.md)
-+ [初期同期の選択と管理ビュー](initial-sync.md)
-+ [データ統合のトラブルシューティング](dual-write-troubleshooting.md)
++ [Field Service ソリューションと Project Service Automation ソリューションのサポート](field-service-project-service-automation.md)
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
++ [Finance and Operations アプリと Common Data Service で二重書き込みが設定されていることを確認する](dual-write-troubleshooting-verify-config.md)
++ [初期設定中の問題のトラブルシューティング](dual-write-troubleshooting-initial-setup.md)
++ [初期同期中の問題のトラブルシューティング](dual-write-troubleshooting-initial-sync.md)
++ [Finance and Operations アプリの二重書き込みモジュールに関する問題のトラブルシューティング](dual-write-troubleshooting-dual-write-module.md)
++ [ライブ同期の問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md)
++ [ソリューションの認識に関する問題のトラブルシューティング](dual-write-troubleshooting-solution-awareness.md)
++ [Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
++ [一般的なトラブルシューティング](dual-write-troubleshooting.md)
