@@ -660,7 +660,7 @@
               href: expense-management/expense-report-distributions.md
             - name: 会社間経費
               href: expense-management/intercompany-expense.md
-            - name: 経費ポリシー
+            - name: 経費ポリシーの定義
               href: expense-management/travel-expense-policies.md
             - name: 経費精算書の表示
               href: expense-management/view-expense-report.md
@@ -984,6 +984,8 @@
               href: project-management/project-contracts.md
             - name: プロジェクトの予測と予算
               href: project-management/project-forecasts-budgets.md
+            - name: 会計年度末のプロジェクト予算の転送
+              href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: プロジェクト販売注文
               href: project-management/project-sales-orders.md
             - name: プロジェクトの発注書
@@ -1646,9 +1648,15 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: 決済のトランザクションの表示
                   href: localizations/emea-transactions-settlement-form.md
+            - name: フィンランド
+              items:
+                - name: フィンランドの概要
+                  href: localizations/finland.md
+                - name: フィンランドの消費税支払レポート
+                  href: localizations/emea-fin-sales-tax-payment-report-finland.md
             - name: フランス
               items:
-                - name: 財務の概要
+                - name: フランスの概要
                   href: localizations/france.md
                 - name: 公的機関
                   items:
@@ -1696,6 +1704,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: 顧客の支払方法の更新
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: DAS-2 レポート
+                  href: localizations/emea-fra-das2-report.md
             - name: ドイツ
               items:
                 - name: ドイツの概要
@@ -1992,10 +2002,16 @@
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: 借方または貸方決済の照会の改善
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: 支払に対するコミッション決済
+                  href: localizations/emea-ita-exil-commission-settlement.md
                 - name: 一般会計のシミュレーション (イタリア)
                   href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: 銀行と送金タイプのコンフィギュレーション可能な転記プロファイル
+                  href: localizations/emea-ita-exil-bank-remittance.md
                 - name: 固有の証明書
                   href: localizations/emea-ita-exil-unique-certification.md
+                - name: 受取手形受取拒否のインポート
+                  href: localizations/emea-ita-exil-protest-boe.md
             - name: 日本
               items:
                 - name: 日本の概要
@@ -2460,6 +2476,8 @@
                       href: localizations/rus-inventory-cost-structure.md
                     - name: 在庫調整ウィザード
                       href: localizations/rus-inventory-adjustment-wizard.md
+                    - name: 在庫レポート
+                      href: localizations/rus-inventory-reports.md
                 - name: レポート
                   items:
                     - name: 財務諸表

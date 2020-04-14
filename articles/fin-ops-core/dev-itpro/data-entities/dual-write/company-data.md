@@ -19,18 +19,17 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20a3f89821af56cb4c3969c89301d4a8a32ab848
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019885"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172903"
 ---
 # <a name="company-concept-in-common-data-service"></a>Common Data Service の企業概念
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 Finance and Operations では、*企業*の概念は、法的コンストラクトとビジネス コンストラクトの両方です。 また、データのセキュリティと可視性の境界でもあります。 ユーザーは常に単一の会社のコンテキストで作業し、データのほとんどは会社によってストライプされます。
 

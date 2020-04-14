@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 523f6414ec212aef48eece487f4199ea2cf4b87e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5dfd5655ecdfa74d75490b0915c4cea609baebe3
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836156"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146509"
 ---
 # <a name="validate-a-production-flow-and-version"></a>生産フローおよびバージョンの検証
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。 必要条件: リーン生産の生産パラメーターおよびクラス時間の測定単位を定義する必要があります。 バリュー ストリームと生産グループを定義する必要があります。 生産フローおよび活動の概念をよく理解するため、リーン生産についてのホワイト ペーパーを参照してください。 この手順では、デモ データの法人 USMF を参照します。 ただし、法人がリーン生産としてコンフィギュレーションされていると仮定する場合、他の法人を使用できます。
 

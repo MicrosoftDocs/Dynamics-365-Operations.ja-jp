@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36a6ef2ab65a8d12930760e61dd8ba5a7bb84942
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 275b9dbb4fa184d6d545c53c4da0511cb20b3b91
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141540"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、固定資産のアイドル期間の定義について説明します。 
 

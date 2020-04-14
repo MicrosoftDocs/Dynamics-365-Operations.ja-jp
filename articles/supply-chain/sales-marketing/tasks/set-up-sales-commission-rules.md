@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: d9036b5cbad10af725aaaf5d1d9498687c3a1d58
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995216"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146425"
 ---
 # <a name="set-up-sales-commission-rules"></a>販売コミッション ルールの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、販売コミッションの計算および追跡を設定して有効にする方法を示します。 この手順は、顧客と品目両方のコミッション グループの作成方法、次に各グループに選択した顧客と製品をリンクする方法を示します。 これらのグループは次にコミッション計算の設定で使用されます。これらは、販売担当者にコミッションを与えるために、販売注文と合致する、顧客、品目、販売担当者の組み合わせである必要があります。 顧客および品目のコミッション グループの作成は、コミッションの計算が個々の顧客および/または品目に対してもできるため、オプションとなっています。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 

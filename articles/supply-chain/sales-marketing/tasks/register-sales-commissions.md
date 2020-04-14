@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db27255c74c55b10680594ad23424253e4c3f79e
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 8f9cb895f733442e95cd7008c63942463bbd2cba
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867056"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148523"
 ---
 # <a name="register-sales-commissions"></a>販売コミッションの登録
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、販売コミッションを計算および登録する方法を説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、必要なすべてのコミッション計算の設定ができていることを確認するために、「販売コミッション ルールの設定」と呼ばれるガイドを実行します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "1867056"
 17. **パラメーター** セクションを展開します。
 18. **数量**フィールドで、**すべて**を選択します。
 19. **転記**フィールドで、**はい**を選択します。
-20. **OK** を選択し、次のウィンドウで **OK** を選択します。 トランザクションの転記には、1 分程度必要な場合があります。 処理が完了するまで、ページを閉じないで下さい。  
+20. **OK** を選択し、次のウィンドウで **OK** を選択します。 トランザクションの転記には、1 分程度必要な場合があります。 処理が完了するまで、このページを閉じないで下さい。  
 
 ## <a name="review-the-registered-sales-commissions"></a>登録された販売コミッションの確認
 1. アクション ウィンドウで、**請求書**を選択し、再度**請求書**を選択します。

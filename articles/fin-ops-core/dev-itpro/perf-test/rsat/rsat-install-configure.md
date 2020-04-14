@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412f0ae2efa3825791a1ea4412e7a6b09511b9f0
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: eeaeca62f2d91a905eb3d21deab44daa7e766fba
+ms.sourcegitcommit: c03bd0fcf663e4e3e83db52fc9255ef1e3de34bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030909"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176171"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -50,9 +50,7 @@ RSAT は、任意の Windows 10 コンピュータにインストールされ、
 ## <a name="installation"></a>インストール
 
 ### <a name="installer"></a> インストーラー
-**Regression Suite Automation Tool.msi** をマシンにダウンロードし、ダブルクリックして、インストーラーを実行します。 
-
-![ インストーラー](media/download-msi.png)
+[Regression Suite Automation Tool ダウンロード](https://www.microsoft.com/download/details.aspx?id=57357) からマシンに .msi ファイルをダウンロードし、ダブルクリックしてインストーラーを実行します。 
  
 ### <a name="selenium-and-browser-drivers"></a>Selenium およびブラウザー ドライバー
 RSATには、Selenium および Web ブラウザー ドライバー ライブラリが必要です。 RSATでは、必要なライブラリが見つからない場合は、プロンプトが表示され、自動的にインストールされます。 次の (または類似の) メッセージが表示されたら、はい を選択します。

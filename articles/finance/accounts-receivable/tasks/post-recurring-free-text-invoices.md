@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 294e7ac5b1d548982ad402214934afe0cfce475d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f3b31dbf296a06ea6253a8ae71bfea6193a1e03e
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188789"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138026"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>定期的な自由書式の請求書の生成と転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。 このレコードでは、USMF デモ会社を使用します。 記録は A/R 請求書の管理および処理を行う担当者を対象としています。
 

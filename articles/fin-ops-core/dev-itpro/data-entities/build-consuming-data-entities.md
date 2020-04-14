@@ -3,7 +3,7 @@ title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d3b5e77611c9b08d2a6c19e4c09dc03a3e1467c
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 2642832d12801ab4e10ffc6d68f3817f4b184384
+ms.sourcegitcommit: 2ea5ff784500d5be9203e9a1560eabd4fea46f4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029825"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172294"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -304,7 +304,7 @@ FMLabCustomerEntity
 
 Internet Explorer  を使用して一部の OData URI を表示できるようになりました。
 
-1. Internet Explorer を起動し、アドレス バーに URL \[baseURL\]/data/$metadata を入力します。OData エンティティに関連付けられたすべてのメタデータが表示されます。
+1. Internet Explorer を起動し、アドレス バーに次の URL \[baseURL\]/data/$metadata を入力します。OData エンティティに関連付けられているすべてのメタデータが表示されます。
 
     > [!NOTE]
     > 最初にアクセスする場合、メタデータの表示に数分かかることがあります。 XML で、OData エンティティに関連付けられているすべてのプロパティおよびナビゲーション プロパティを表示できます。
@@ -425,11 +425,13 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 
 ### <a name="max-join-limits"></a>最大結合の制限
-エンティティの開発中に、エンティティの全体的な構造が最大統合制限である 26 を超えないように注意してください。 これが既定の制限です。 統合制限を増やすことは意図しない結果をもたらす可能性があるためお勧めできません。 この制限を超えると、エンティティはレコードの処理に失敗する可能性が高く、次の SQL エラーが発生します。 また、エラーを回避するエンティティで列の合計数を管理することもお勧めします。
+エンティティの開発中に、エンティティの全体的な構造が最大統合制限である 26 を超えないようにします。 これが既定の制限です。 統合制限を増やすことは、意図しない結果をもたらす可能性があるためお勧めしません。 この制限を超えると、エンティティはレコードの処理に失敗する可能性が高く、次の SQL エラーが発生します。 このエラーを回避するために、エンティティの列の合計数を管理することもお勧めします。
 
 ```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
+### <a name="exporting-container-fields"></a>コンテナー フィールドのエクスポート
+エンティティにコンテナー フィールドがあり、これらのフィールドをエクスポートする必要がある場合、エンティティは **getFieldsToBeConvertedToFile** を実装して、各コンテナー フィールドがデータ値を個別のファイルにエクスポートできるようにする必要があります。 これにより、コンテナー フィールドをエクスポート可能にすると同時に、エンティティ エクスポート ファイル (コンテナー フィールドのないコア エンティティ データ) が読み取り不能になるのを防ぎます。 **getFieldsToBeConvertedToFile** が実装されていない場合、これらのフィールドはエクスポートされませんが、残りのエンティティ データは通常どおりエクスポートされます。
 
 ## <a name="additional-resources"></a>追加リソース
 

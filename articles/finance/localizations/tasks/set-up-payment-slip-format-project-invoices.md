@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4671e1df3bc86361736b5882d67e6b160b4c5644
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c843f3b504d8390b26fdc94dd747a73de75df6a9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174938"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143461"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>プロジェクト請求書の支払伝票形式の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。 支払伝票は、売上請求書、自由書式の請求書に加え、プロジェクトまたはサービスの請求書、督促状、利子計算書、取引明細書に使用できます。 支払伝票を処理するには、最初に債権者 ID 番号と支払伝票関連ドキュメントの形式を設定します。
 

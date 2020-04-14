@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d9bcec1d4bb0207a2c3e0d46f7661b666fea3736
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 6f1a1c7329f0936147fb8f7a8e0e9fea14f7dd4b
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112217"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173018"
 ---
 # <a name="integrated-ledger"></a>統合された元帳
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ビジネス アプリケーションでは、元帳データによって、会社が業務を行うためのコア設定が定義されます。 たとえば、元帳データには、会社が従う会計年度、トランザクションによって処理される通貨、使用する勘定が記述されます。 このトピックでは、この中心的な財務データの統合について説明します。
 

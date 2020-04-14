@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087349"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166501"
 ---
 # <a name="common-data-service-entities"></a>Common Data Service エンティティ
 
@@ -86,15 +86,20 @@ Common Data Service の詳細については、[Common Data Service とは何か
 | 職務権限 | cdm_jobfunction |
 | 職位 | cdm_jobposition |
 | 職位タイプ | cdm_positiontype |
-| ワーカー割り当ての配置 | cdm_positionworkerassignmentmap |
+| 職位作業者割り当て | cdm_positionworkerassignmentmap |
+| 職位分析コード | cdm_jobpositiondimension|
 | 職務タイプ | cdm_jobtype |
 | 言語 | cdm_language |
+| タイトル | cdm_title |
+
+> [!NOTE]
+> **職位タイプ** に使用する財務分析コード 、**作業者の職位割り当て**、および **従業員** は、Common Data Service にて一方向の統合機能が用意されています。 財務分析コードの更新は、現在のところ、 Common Data Service から Human Resources へは同期されません。 
 
 ## <a name="leave-and-absence-entities"></a>休暇エンティティ
 
 | 氏名 | エンティティ |
 | --- | --- |
-| 空欄のトランザクションから移動 | cdm_leavebanktransaction |
+| 休暇バンク トランザクション | cdm_leavebanktransaction |
 | 加入契約から移動 | cdm_leaveenrollment |
 | 休暇計画 | cdm_leaveplan |
 | 休暇申請 | cdm_leaverequest |

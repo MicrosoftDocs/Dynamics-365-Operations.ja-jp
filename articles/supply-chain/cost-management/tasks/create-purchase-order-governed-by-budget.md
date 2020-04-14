@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e82e40d67547f5932a4805f2580e8c9f58def284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0054745394d6a21599d8f07605f78ffdd7f575ab
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569986"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150542"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>予算に基づく発注書の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順を使用して、利用可能な予算の確認をする発注書を作成します。 この記録では、USMF デモ データ会社を使用します。
 

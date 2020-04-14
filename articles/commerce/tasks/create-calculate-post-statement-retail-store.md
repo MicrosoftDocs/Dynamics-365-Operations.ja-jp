@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b26ea5c816339eef88bfdd9ac59701dcaa31fe4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 21f1b0a34205e192957405bc9d298c45c8bb4d25
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023170"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141017"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>小売店舗の明細書の作成、計算、および転記
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。 同じタスクにコンフィギュレーションできるバッチ ジョブもあります。 他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。 この手順を完了するには、POS で完了して Dynamics 365 Commerce で取り出されたトランザクションが必要です。 この記録では、デモ データの会社 USRT を使用します。
 

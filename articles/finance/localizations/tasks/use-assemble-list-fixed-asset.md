@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 844583ac9316baceb731ff9142c0ba4f5f55ade2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1744e8924e74d53b65ff1c66757d37f8e4fb67b0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183722"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143397"
 ---
 # <a name="use-assemble-list-of-a-fixed-asset"></a>固定資産の組み立て一覧の使用
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、在庫品目を固定資産に移転できます。 
 

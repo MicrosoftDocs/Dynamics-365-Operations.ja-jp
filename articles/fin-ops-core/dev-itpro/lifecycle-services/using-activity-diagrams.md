@@ -3,7 +3,7 @@ title: ビジネス プロセス モデラー ライブラリの活動ダイア�
 description: このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 46fa4009f0a7ada51535fefa49c7a132ddead8b2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 7f6f50cd92ae8c5174d4b88f6bf19b08ac7a5a65
+ms.sourcegitcommit: 89466c3d9976c57518fef85406f2680e3005fb8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029393"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3151023"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -57,6 +57,9 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 
 
 ## <a name="activity-diagrams-that-are-created-from-task-recordings"></a>タスク記録から作成された活動ダイアグラム
+
+> [!重要] ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
+
 環境でタスク記録を作成して、Microsoft Dynamics Lifecycle Services (LCS) に直接保存することができます。 この方法で、タスク記録を BPM ライブラリ内の業務プロセスと関連付けることができます。 詳細については、[ヘルプ システムの接続](../../fin-ops/get-started/help-connect.md) および [タスク レコーダーを使用したドキュメントやトレーニングの作成](../user-interface/task-recorder-training-docs.md) を参照してください。
 
 タスク レコーダー ツールを使用すると、配布可能な記録ファイルを作成できます。 記録ファイルは、.axtr ファイル名拡張子を持ちます。 手動で記録ファイルをアップロードすることにより、BPM 内の業務プロセスをタスク記録に関連付けることができます。 

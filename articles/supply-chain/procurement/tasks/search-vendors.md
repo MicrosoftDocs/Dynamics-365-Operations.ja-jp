@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfa5bfa2eba39b981c5dc1d029f4847651c8fc6f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1982c8dffbc7a65263babce7738045b744db2592
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844036"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149530"
 ---
 # <a name="search-for-vendors"></a>仕入先の検索
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 特定の基準に基づく仕入先の検索方法を習得します。 この例では、特定の調達カテゴリに対して承認されていて、特定の国に基本住所をもっている仕入先の検索方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 通常、このタスクを実行するのは、調達担当者です。
 

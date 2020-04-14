@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 491c6991112bd195ef4e36a08b671ba38c3a01d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4f0b8207dde38cdc542f9aa18d42c20843ac546
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145253"
 ---
 # <a name="create-and-confirm-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の作成および確認
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。 
 

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 240185e174b0e1f64ced9453fdd940d434cb8932
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 5ef9fefb81ed39d893b2bcaf5aab9ed26f061760
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124841"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166487"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
@@ -76,6 +75,16 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 - Office 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
 - テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
+
+SharePoint に保存されているドキュメントがプレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 
+
+1. 管理者アカウントに電子メール アカウントが関連付けられていることを確認します (**ユーザー** ページで確認または変更します)。 これが設定されていない場合は、OData Excel アドインを使用して電子メールとプロバイダーを追加する必要があります。 既定では、Excel デザインに電子メール アドレスは表示されません。 ユーザーは、Excel デザインを編集し、すべてのフィールドを追加し、適用して更新する必要があります。 完了すると、管理者アカウントを更新できます。
+
+2. 管理者アカウントに電子メール アカウントが関連付けられたら、Dynamics 365 Human Resources に管理者としてサインインします。
+
+3. SharePoint に保存されている添付ファイルを開いて、プレビューを開始します。
+
+4. 添付ファイルにアクセスできる他のユーザー アカウントでサインインし、プレビューが機能することを確認します。
 
 ## <a name="configure-file-types"></a>ファイルの種類のコンフィギュレーション
 

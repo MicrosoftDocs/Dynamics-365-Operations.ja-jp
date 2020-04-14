@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12bbeaa4e0e2f6ee4874cf72863624a871ba87ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5b539129e62b9b0b10df1f505cbfec5c1143138
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175507"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141629"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>売上税グループと品目売上税グループの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクの記録では、売上税および品目売上税のグループ設定について説明します。 売上税グループは、顧客と仕入先に関連付けられた売上税コードのグループです。 また、特定の仕入先や顧客には転記されないトランザクションの勘定科目にも関連付けられます。  品目売上税グループは、製品などのリソースに関連付けられた売上税コードのグループです。  特定のトランザクションに適用される売上税は、トランザクションの売上税グループと品目売上税グループの両方に含まれる売上税コードによって決定されます。  売上税の計算が可能なのは、売上税の計算または記録が必要な各トランザクションに対して、売上税グループと品目売上税グループが選択されている場合のみです。  
 

@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9557b25af0fba6429d34564e1a3e158b6258698a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4e40ebcbf3ab1befc641ae34571a8b974bd0425a
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140879"
 ---
 # <a name="define-loyalty-reward-points"></a>ロイヤルティ報酬ポイントの定義
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順では、ロイヤルティ報酬ポイントを定義する方法を説明します。 ロイヤルティ プログラムを設定する前に、ロイヤルティ報酬ポイントを設定する必要があります。 この手順では、デモ データの会社 USRT を使用します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "3023158"
 8. [引換ランキング] フィールドに数値を入力します。
     * 製品の支払に複数の償還可能な報酬ポイントが使用できる場合、引換ランキングが使用されます。 二つの報酬ポイントの引換ランキングが同じ場合、より小さなポイント数を必要とするものが使用されます。  
 9. [有効期限の時刻] フィールドに数値を入力します。
-    * 報酬ポイントは、指定された日数、月数、または年数、ポイントが発行された後、有効になります。 「0」という値は、ロイヤルティ報酬ポイントに有効期限がないことを意味します。  
+    * 報酬ポイントは、指定された日数、月数、または年数、ポイントが発行された後、有効になります。 「0」 という値は、ロイヤルティ報酬ポイントに有効期限がないことを意味します。  
 10. [有効期限の単位] フィールドで、オプションを選択します。
 11. [保存] をクリックします。
 

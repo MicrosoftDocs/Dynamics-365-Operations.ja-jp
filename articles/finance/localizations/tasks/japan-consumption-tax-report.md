@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34b9216411ced7e4cd7e2fa78932d094daf0646d
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e0bc184ee4707b98a4b653ff62fcb017acd0ada8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915260"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140055"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、日本の消費税申告の生成について説明します。 この手順は、デモ データ会社 JPMF を使用して作成されました。
 

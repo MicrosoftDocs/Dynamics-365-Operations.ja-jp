@@ -3,7 +3,7 @@ title: 電子申告の高度なフォーミュラ エディター
 description: このトピックでは、高度なフォーミュラ エディターを使用して、電子申告 (ER) モデル マッピングおよび形式コンポーネントで式をコンフィギュレーションする方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d183f77da1dda0c4f04e4e48ab3db0133f494a55
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: df402bc20753d2ba14295592f4b40e20f9fdc7bf
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015288"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138901"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>電子申告の高度なフォーミュラ エディター
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 [電子申告](general-electronic-reporting.md) [フォーミュラ エディター](general-electronic-reporting-formula-designer.md) に加えて、高度な電子申告フォーミュラ エディターを使用して、電子申告 (ER) の式のコンフィギュレーション エクスペリエンスを改善することができます。 高度なエディターは、ブラウザー ベースで、[モナコ エディター](https://microsoft.github.io/monaco-editor) によって強化されています。 このトピックでは、最も使用頻度の高い高度なエディター機能について説明します。
 
@@ -42,7 +40,7 @@ ms.locfileid: "3015288"
 - [データの貼り付け](#DataPasting)
 - [構文の色付け](#SyntaxColorization)
 
-## <a name="ActivateAdvEditor">高度なフォーミュラ エディターの有効化</a>
+## <a name=""></a><a name="ActivateAdvEditor">高度なフォーミュラ エディターの有効化</a>
 
 Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュラ エディターの使用を開始するには、次の手順を完了します。
 
@@ -55,7 +53,7 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 > [!NOTE]
 > このパラメーターはユーザー固有であり、また会社固有であることに注意してください。
 
-## <a name="Autoformatting">コードのオートフォーマット</a>
+## <a name=""></a><a name="Autoformatting">コードのオートフォーマット</a>
 
 複数のコード行で構成される複雑な式を記述する場合、新しく入力された行のインデントは前の行のインデントに基づいて自動的に設定されます。 行を選択し、**タブ**または**Shift+Tab**を押して、インデントを変更することができます。
 
@@ -63,13 +61,13 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 
 オートフォーマットにより、式全体を適切な形式にしてより簡単にメンテナンスできるようにし、構成されたロジックを理解しやすくできます。
 
-## <a name="IntelliSense">IntelliSense</a>
+## <a name=""></a><a name="IntelliSense">IntelliSense</a>
 
 エディターは単語補完を提供し、迅速な式の記述および入力ミスを回避するのに役立ちます。 新しいテキストの追加を開始すると、入力した文字を含む ER 関数でサポートされている機能のリストがエディターにより自動的に提供されます。 また、**Ctrl+Space** キー押すことにより、コンフィギュレーションされた式の任意の場所で IntelliSense をトリガーすることもできます。
 
 [![ER フォーミュラ エディター](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
-## <a name="CodeCompletion">コードの完了</a>
+## <a name=""></a><a name="CodeCompletion">コードの完了</a>
 
 エディターでは、次の方法で自動的にコード補完が行われます。
 
@@ -81,7 +79,7 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 
 入力したかっこをポイントすると、サポートするコンストラクトを示すために、このペアの 2 つ目のかっこが自動的に強調表示されます。
 
-## <a name="CodeNavigation">コードのナビゲーション</a>
+## <a name=""></a><a name="CodeNavigation">コードのナビゲーション</a>
 
 コマンド パレットまたはコンテキスト メニューを使用して**移動**コマンドを入力することにより、式に必要な記号または行を見つけることができます。
 
@@ -95,7 +93,7 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 
 [![ER フォーミュラ エディター](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
-## <a name="CodeStructuring">コードの構築</a>
+## <a name=""></a><a name="CodeStructuring">コードの構築</a>
 
 [IF](er-functions-logical-if.md) または [CASE](er-functions-logical-case.md) などの一部の関数のコードは自動的に構造化されます。 このコードで折りたたまれている部分の一部または全体を展開したり折りたたんだりすることによって、注意を必要とするコードの部分だけに集中できるように、式の編集可能な部分を減らすことができます。 折りたたみ/展開コマンドを使用できます。
 
@@ -117,7 +115,7 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 
 [![ER フォーミュラ エディター](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
-## <a name="FindAndReplace">検索および置換</a>
+## <a name=""></a><a name="FindAndReplace">検索および置換</a>
 
 特定のテキストの出現を検索するには、式のテキストを選択し、次の操作を行います。
 
@@ -145,13 +143,13 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 
 [![ER フォーミュラ エディター](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
-## <a name="DataPasting">データ ソースと関数の貼り付け</a>
+## <a name=""></a><a name="DataPasting">データ ソースと関数の貼り付け</a>
 
 **データ ソースの追加**を選択すると、現在、左の**データ ソース** パネルで選択されているデータ ソースが、現在の式に貼り付けられます。 同様に、**関数の追加**を選択すると、現在、右の**関数**パネルで選択されている関数が、現在の式に貼り付けられます。 ER フォーミュラ エディターを使用する場合、選択した関数また選択したデータ ソースは常にコンフィギュレーションされた式の末尾に貼り付けられます。 高度な ER フォーミュラ エディターを使用する場合、選択した関数また選択したデータ ソースはコンフィギュレーションされた式のどこにでもに貼り付けられます。 カーソルを使用して、データを貼り付ける場所を指定する必要があります。
 
 [![ER フォーミュラ エディター](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
-## <a name="SyntaxColorization">構文の色付け</a>
+## <a name=""></a><a name="SyntaxColorization">構文の色付け</a>
 
 現在、異なる色を使用して、次の式の部分を強調表示しています。
 

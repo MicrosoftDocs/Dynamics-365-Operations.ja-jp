@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ba64093dfe9ca28108456641ad17b5eda23d7f49
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916678"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148218"
 ---
 # <a name="trace-an-item-or-raw-material"></a>品目または原材料の追跡
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、品目の追跡を使用して、品目または原材料が使用された場所または使用されている場所を識別する方法を示します。 この手順を使用すると、品目を識別し、ソースまで過去方向に追跡してから、完成品の生産と販売まで将来方向に追跡できます。 このプロセスは、影響を受ける顧客、販売注文などの調査に使用できます。 この手順では、デモ データの会社 USP2 を使用します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "1916678"
     「P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7.00 gal  \P9100 ● Picked ● Sales order 000072 ● 12/22/2015  ● -1 keg ● -4.00 gal ● Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 ● Production B-000050 ● 12/9/2015● 7 keg ● 27.00 gal ● Site=1,Warehouse=10,Batch number=as-12-344-01 ● Co-products: P9101」 を展開し、次にそのノードを選択します。     
 2. ツリーで、[以下に説明されたノード、次にそのノードを選択する] を展開します。
     
-    先ほど選択したノードから開始します。「M9103 ● 生産ライン B-000050 ● 12/9/2015  ● -160.00 lb ● Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01」を展開し、次にそのノードを選択します。  
+    先ほど選択したノードから開始し、'M9103 ● 生産ライン B-000050 ● 12/9/2015  ● -160.00 lb ● Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01' を展開し、次にそのノードを選択します。  
 3. **ノードから追跡**をクリックします。
 4. **次**をクリックします。
 5. **アクション ウィンドウ**で、**追跡**をクリックします。

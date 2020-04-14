@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68694e08550083c38feb4389f82d83c535e978c3
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 995d68f6224b6dfbb1928c907ad991b86fc47668
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000229"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140355"
 ---
 # <a name="research-or-resolve-exceptions"></a>例外の調査または解決
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 [仕入先請求ポリシー] は、[仕入先請求書] ページを使用して仕入先請求書を転記するか、仕入先請求書の [ポリシー違反] ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
 

@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de075899547d194fb9eb0e68947efd005c101851
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1a52a7dd3b31c0189577422a79d47b318aae4a05
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550697"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142007"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER ドキュメント管理ファイルを形式出力で使用する (第 5 部 - 形式の変更および実行)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。 これらのステップは DEMF 会社で実行できます。
 
-これらの手順を完了するには、まず「ER 形式の出力 (パート 4: 形式の実行) におけるドキュメント管理ファイルの使用」の手順を実行する必要があります。
+これらの手順を完了するには、まず 「ER ドキュメント管理ファイルをフォーマット出力で使用する（パート 4：フォーマットを実行する）」に記載の手順を実行する必要があります。
 
 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -91,7 +91,7 @@ ms.locfileid: "2550697"
 2. () セクションを含む記録を展開します。
 3. [フィルター] をクリックします。
 4. 顧客請求書仕訳および販売注文のフィールドの行を選択します。
-5. [基準] フィールドの基準[販売注文」フィールドで、注文番号 000148 を入力します。
+5. 条件 [販売注文]フィールドでの条件フィールドにて、注文番号 000148 を入力します。
     * 000148  
 6. [OK] をクリックします。
 7. [OK] をクリックします。

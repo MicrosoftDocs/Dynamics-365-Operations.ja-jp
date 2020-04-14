@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769858"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142135"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子ドキュメントを OPENXML 形式で生成するためのテンプレートを含む新しい電子申告 (ER) のコンフィギュレーションを作成する方法を説明します。 このコンフィギュレーションは、仕入先支払を処理するために使用されます。
 
 この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。これらの手順は GBSI 会社で実行されます。
 
-これらの手順を完了するには、先に「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」の手順の各ステップを完了する必要があります。 テンプレートを作成するときにインポートされる Excel ファイルも必要です。 このファイルは[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266) からアクセスできます。
+この手順を完了するには、まず 「構成プロバイダーを作成し、有効としてマークする」 に記載の手順を完了する必要があります。 テンプレートを作成するときにインポートされる Excel ファイルも必要です。 このファイルは[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266) からアクセスできます。
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>支払データ モデルのコンフィギュレーションをアップロードします。
 1. ナビゲーション ウィンドウで、**モジュール > 組織の管理 > ワークスペース > 電子レポート**へ移動します。
-2. 一覧で、サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーをマークします。このコンフィギュレーション プロバイダーが表示されない場合は、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](er-configuration-provider-mark-it-active-2016-11.md) という手順を最初に実行する必要があります。
+2. リストにて、サンプル会社 Litware, Inc. の構成プロバイダーをマークします。この構成プロバイダーが表示されない場合は、まず [構成プロバイダーの作成および有効なプロバイダーとしてのマーク付け](er-configuration-provider-mark-it-active-2016-11.md)  に記載の手順を実行する必要があります。
 3. **有効に設定**を選択します。
 4. **リポジトリ** を選択します。 運営リソース タイプのリポジトリを、必要に応じて選択します。 利用可能であれば、新しいリポジトリの作成に関する次の手順を省略します。  
 5. **追加**を選択してドロップ ダイアログを開きます。
@@ -55,7 +55,7 @@ ms.locfileid: "2769858"
 3. **コンフィギュレーションの作成**を選択して、ドロップ ダイアログを開きます。
 4. **新規**フィールドで、`Format based on data model PaymentModel` と入力します。 PaymentModel のデータ モデルに基づく形式を作成します。
 5. **名前**フィールドに、`Sample worksheet report` と入力します。 サンプル ワークシート レポート  
-6. **説明**フィールドで、`Sample worksheet report for vendors’ payments` を入力します。 仕入先の支払用サンプル ワークシート レポート。  
+6. **説明**フィールドで、`Sample worksheet report for vendors' payments` を入力します。 仕入先の支払い ワークシート レポートのサンプル。  
 7. **データ モデル定義**フィールドで、値を入力または選択します。 **CustomerCreditTransferInitiation** の定義を選択します。  
 8. **コンフィギュレーションの作成**を選択します。
 

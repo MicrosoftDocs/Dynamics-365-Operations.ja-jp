@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10acb9aadfeb11ede1d66dd525ace7b70db3bd1c
-ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
+ms.openlocfilehash: 75fbfbb7b993b528e96d247dafa2bdfe20837987
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1855689"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145620"
 ---
 # <a name="inspect-the-quality-of-goods"></a>商品の品質の調査
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-このトピックでは、品質指示を処理する方法について説明します。 デモ データの会社 USMF でこのガイドを実行できます。 このサンプル手順を開始する前に、発注書「000016」を確認し、製品受領書を転記する必要があります。 これにより、品質指示が自動的に作成されます。 品質検査は、通常、品質検査の担当者により実行されます。
+このトピックでは、品質指示を処理する方法について説明します。 デモ データの会社 USMF でこのガイドを実行できます。 このサンプル手順を開始する前に、発注書 "000016" を確認し、製品受領書を転記する必要があります。 これにより、品質指示が自動的に作成されます。 品質検査は、通常、品質検査の担当者により実行されます。
 
 
 ## <a name="select-a-quality-order"></a>品質指示の選択

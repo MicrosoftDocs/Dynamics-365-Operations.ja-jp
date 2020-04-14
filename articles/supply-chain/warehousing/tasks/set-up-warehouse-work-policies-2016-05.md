@@ -1,6 +1,6 @@
 ---
 title: 倉庫の作業ポリシーの設定 (申請、2016 年 5 月)
-description: 倉庫のプロセスは倉庫作業を常に含みません。
+description: 倉庫のプロセスは必ずしも倉庫作業を含みません。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ad33a2f070a33e4e658870561406c4604f4dce
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ca54cceb83425c43b5d124cd6d11be0cdef4d63a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847066"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145919"
 ---
 # <a name="set-up-warehouse-work-policies-application-may-2016"></a>倉庫の作業ポリシーの設定 (申請、2016 年 5 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-倉庫のプロセスは倉庫作業を常に含みません。 作業ポリシーを定義して、原材料のピッキングの作業の作成、および特定の場所での一連の製品に対する完成品のプット アウェイを防ぐことができます。 デモ データの会社 USMF がこの記録の作成に使用されました。 このタスク ガイドでは、Dynamics AX アプリケーション 7.0.1 以降が必要です。
+倉庫のプロセスは必ずしも倉庫作業を含みません。 作業ポリシーを定義して、原材料のピッキングの作業の作成、および特定の場所での一連の製品に対する完成品のプット アウェイを防ぐことができます。 デモ データの会社 USMF がこの記録の作成に使用されました。 このタスク ガイドでは、Dynamics AX アプリケーション 7.0.1 以降が必要です。
 
 1. [倉庫管理] > [設定] > [作業] > [作業ポリシー] の順に移動します。
 2. [新規] をクリックします。

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188099"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141744"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>顧客の先日付小切手の登録および転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-顧客から受け取った先日付小切手の詳細を登録できます。 先日付小切手を転記して財務トランザクションを生成することもできます。   顧客から受け取った先日付小切手を登録し転記する前に、次のタスクを完了します。:   • [現金および銀行管理] ページで、先日付小切手を設定します。 • 先日小切手用の支払方法を設定します。   この手順のロールは会計登録者です。 この手順では、USMF というデモ会社を使用します。
+顧客から受け取った先日付小切手の詳細を登録できます。 先日付小切手を転記して財務トランザクションを生成することもできます。   顧客から受け取った先日付小切手を登録し転記する前に、次のタスクを完了します:   *現金および銀行管理ページで、先日付小切手を設定します*先日小切手用の支払方法を設定します   この手順のロールは会計登録者です。 この手順では、USMF というデモ会社を使用します。
 
 1. [売掛金勘定] > [支払] > [支払仕訳帳] の順に移動します。
 2. [新規] をクリックします。

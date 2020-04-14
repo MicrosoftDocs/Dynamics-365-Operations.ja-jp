@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b0b92c9b29e79915ce67b53f2ae4d480a77cd354
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 741095427cd77eaf000aa6bc3480b341ee298ba6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183737"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141096"
 ---
 # <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a>JP-00027 減価償却税申告のフォーム 26
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。
 

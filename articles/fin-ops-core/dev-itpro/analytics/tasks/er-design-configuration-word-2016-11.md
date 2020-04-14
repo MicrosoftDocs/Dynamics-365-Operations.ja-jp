@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182603"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142089"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告 (ER) 形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。 これらのステップは GBSI 会社で実行できます。
 
-これらのステップを完了するには、「OPENXML 形式でレポートを生成する ER コンフィギュレーションの作成」タスク ガイドの手順を最初に完了する必要があります。 また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
+これらのステップを完了するには、まずに 「OPENXML 形式でレポートを生成する ER 構成の作成」タスク ガイドに記載の手順を完了する必要があります。 また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
 
 - [支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 - [支払レポートのバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
@@ -39,7 +39,7 @@ ms.locfileid: "2182603"
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>既存の ER レポート コンフィギュレーションを選択します
-1. **ナビゲーション ウィンドウで、モジュール > 組織の管理 > ワークスペース > 電子レポート**へ移動します。 コンフィギュレーション プロバイダー「Litware、Inc.」を確認します。 有効として選択されます。  
+1. **ナビゲーション ウィンドウで、モジュール > 組織の管理 > ワークスペース > 電子レポート**へ移動します。 構成 プロバイダー「Litware、Inc.」 を確認します。 有効として選択されます。  
 2. **コンフィギュレーションをレポートする**をクリックします。 OPENXML 形式でレポート出力を生成するように最初に設計された既存の ER コンフィギュレーションを再使用します。  
 3. ツリーで、「Payment model」を展開します。
 4. ツリーで、「Payment model\Sample worksheet report」を選択します。
@@ -58,9 +58,9 @@ ms.locfileid: "2182603"
 7. **テンプレート**フィールドで、値を入力または選択します。
 
 ## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a>カスタム XML 部分を追加して、Word テンプレートを拡張します。
-1. **保存**をクリックします。 保存アクションは、構成の変更を保存するだけでなく、添付されている Word テンプレートも更新します。 設計された形式の構造は、'報告' という名前の新しいカスタム XML 部分として、関連付けられている Word 文書にポートされます。 関連付けられている Word テンプレートには、ER 出力として生成するドキュメントのレイアウトを含むだけでなく、実行時に ER がこのテンプレートに実装するデータの構造も含まれます。  
+1. **保存**をクリックします。 保存アクションは、構成の変更を保存するだけでなく、添付されている Word テンプレートも更新します。 設計されたフォーマットの構造は、「レポート」 という名前の新しいカスタム XML パーツとして、添付の Word 文書に移植されます。 関連付けられている Word テンプレートには、ER 出力として生成するドキュメントのレイアウトを含むだけでなく、実行時に ER がこのテンプレートに実装するデータの構造も含まれます。  
 2. **添付ファイル** クリックします。
-    + ここで、カスタム XML 部分 '報告' の要素を Word ドキュメント パーツにバインドする必要があります。  
+    + ここで、カスタム XML 内の 「レポート」 の要素を Word ドキュメント パーツにバインドする必要があります。  
     + カスタム XML パーツの要素でバインドされたコンテンツ コントロールを含む形式としてデザイン可能な Word 文書に慣れている場合は、次のサブタスクのすべてのステップを再生して、そのようなドキュメントを作成します。 詳細については、[ユーザーが入力または印刷するフォームを Word で作成](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US) を参照してください。 そうでない場合は、次のサブタスクのすべてのステップをスキップします。  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>データ バインドを行うカスタム XML 部分と共に Word を取得します。
@@ -68,7 +68,7 @@ ms.locfileid: "2182603"
 Word でこのドキュメントを開き、以下の操作を行います。  
 1. Word 開発者タブを開きます (有効になっていない場合は、リボンをカスタマイズします)。
 2. XML マッピング ウィンドウを選択します。
-3. ルックアップで、「報告」カスタム XML パーツを選択します。
+3. ルックアップで、「レポート」 のカスタム XML パーツを選択します。
 4. 選択したカスタム XML パーツの要素と Word ドキュメントのコンテンツ コントロールとのマッピングを行います。  5. ローカル ドライブに更新された Word ドキュメントを保存します。  
 
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>コンテンツ コントロールにバインドされたカスタム XML 部分と共に Word テンプレートをアップロードします。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9132d367e8c683c8472656bf53ef02855cdbec7
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: f6deb4b36fde9dc0f0dea4924bb3ac5c7e23ede2
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983655"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161791"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 
@@ -70,7 +70,7 @@ ms.locfileid: "2983655"
 
 検索ボックスで使用可能なドロップダウンリスト メニューを開いて、フィルターおよびフィルター構文の使用に関するヘルプを取得することができます。
 
-[metadatasearchfilter](./media/metadatasearchfilter.jpg)
+[![metadatasearchfilter](./media/metadatasearchfilter.jpg)]
 
 ## <a name="examples"></a>例
 

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3dd0f9589d80c26627d2f3b6eefd240ac83f675e
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: ac5ce59fc98abc4d3f10eb5d9c441c5d6e147c2c
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573565"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150781"
 ---
 # <a name="create-a-database-refresh"></a>データベース更新の作成
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 2 つの環境間でのデータベース更新を作成することができます。 Microsoft Dynamics Lifecycle Services (LCS) の詳細ページと同じ検証ルールは、 アプリケーション プログラミング インターフェイス (API) に適用されます。
 

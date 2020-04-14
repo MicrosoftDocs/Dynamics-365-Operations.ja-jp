@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124592"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172834"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-顧客レコードは、複数のアプリケーションで習得するのが一般的です。 たとえば、営業活動は Sales アプリケーションを通じて商用顧客レコードを取り込むことができ、電子商取引または小売販売は、Finance and Operations アプリケーションを通じて顧客レコードを取り込むことができます。 顧客レコードの発生元にかかわらず、アプリケーションの境界およびインフラストラクチャの違いを越えてバックグラウンドで統合されます。 統合された顧客マスタリングは、マルチ マスタリング シナリオの処理に役立ち、Dynamics 365 アプリケーション スイートに顧客の包括的な情報を提供します。
+顧客データは、複数の Dynamics 365 アプリケーションでマスターできます。 たとえば、顧客レコードは Dynamics 365 Sales (Dynamics 365のモデル駆動型アプリ) の営業活動から発生する場合があり、レコードは Dynamics 365 Commerce ( Finance and Operationsアプリの) 小売活動を通じて発生する場合があります。 顧客データの発生元の場所を問わず、バックグラウンドで統合されます。 統合された顧客マスターを使用すると、任意の Dynamics 365 アプリケーションに顧客データをマスタに分配することができ、Dynamics 365 application スイートを介して顧客の包括的なビューを表示できます。
 
 ## <a name="customer-data-flow"></a>顧客データ フロー
 
@@ -59,7 +58,6 @@ CDS 連絡先 V2             | 連絡先                        | このテン�
 顧客支払方法     | msdyn_customerpaymentmethods    | このテンプレートは、顧客支払方法に関する情報を同期します。
 顧客 V3                | 勘定                        | このテンプレートは、商業および組織顧客の顧客マスター情報を同期します。
 顧客 V3                | 連絡先                        | このテンプレートは、消費者およびエンド ユーザーの顧客マスター データを同期します。
-ロイヤルティ カード                | msdyn_loyaltycards              | このテンプレートは、顧客のロイヤリティ カード情報を同期します。
 名前の接辞                | msdyn_nameaffixes               | このテンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
 支払期日明細行 CDS V2    | msdyn_paymentdaylines           | このテンプレートは、顧客および仕入先の支払期日明細行に関する参照データを同期します。
 支払期日 CDS            | msdyn_paymentdays               | このテンプレートは、顧客および仕入先の支払期日に関する参照データを同期します。
@@ -78,8 +76,6 @@ CDS 連絡先 V2             | 連絡先                        | このテン�
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

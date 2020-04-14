@@ -3,7 +3,7 @@ title: 段階的なロールアウト (N-1) インストール、コンフィギ
 description: このトピックでは、Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的なロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 07/31/2018
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 78f4f416e75d37ade6dcc6c7df6ea0a9574a0344
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d4f976e7c756b4d67faad68088249644f05ad5b
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004667"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154356"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
@@ -287,7 +287,8 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 2. コマース アプリケーション (X++) KB をインストールします。 | N-1 に関連するすべての問題が解決されていることを確認するには、[N-1 に必要な KB](#required-kbs-for-n-1) セクションに記載されている KB をインストールします。 | 切替前の数週間または数か月 |
 | 3. Azure AD アカウントを設定します。 | [Azure AD アカウントの設定](#set-up-azure-ad-accounts) セクションの指示に従い、N-1 コンポーネントに必要なアカウントを作成し、バックオフィスに対して認証します。 | 切替前の数週間または数か月 |
 | 4. バックオフィスをコンフィギュレーションします。 | [N-1 コンポーネントを構成する](#configure-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールする前にすべての設定を構成します。 | 切替前の数週間または数か月 |
-| 5. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#install-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントはインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないようにするには、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
+| 5. バックオフィスをコンフィギュレーションします。 | **Retail と Commerce** &gt; **本社の設定** &gt; **パラメーター** &gt; **コマース共有パラメーター** に移動し、**セキュリティ** タブを選択して、**TS パスワードの暗号化名** の値を "SHA256" に変更します。 |
+| 6. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#install-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントをインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないように、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
 
 ### <a name="preparation"></a>準備
 切り替えがスケジュールされる数日前に、これらの手順に従って準備します。
@@ -372,7 +373,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | トラブルシューティングの手順 | 有効化しようとしているデバイスは、既に有効になっています。 デバイスを無効にして、有効化を試みてください。 |
 
 #### <a name="ax-2012-r3-mpos-activation-fails-with-an-error-on-step-2"></a>AX 2012 R3 MPOS のライセンス認証は、ステップ 2 でエラーで失敗します。
-| フィールド | 金額 |
+| フィールド | 先頭値 |
 |---|---|
 | サンプル イベント ログのエラー メッセージ | 例外が発生しました: [2018/04/19 19 時 26 分 51 秒] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: ログオン時にエラーが発生しました。 ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: データベースからの読み取りに失敗しました。 詳細については、内部例外を参照してください。 DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: 無効なオブジェクト名 'crt.EMPLOYEEPERMISSIONSVIEW' です。 ---\> System.Data.SqlClient.SqlException: 'crt.EMPLOYEEPERMISSIONSVIEW' は無効なオブジェクト名です。 at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
 | 有効化場面上での MPOS エラー | DZ1001 |
@@ -396,7 +397,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 4095192 | 顧客が AX6.3 から D365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TSPasswordEncryption フィールドを公開します。 |
 | 4095209 | Real-timeServiceAX63 N-1 コンポーネントの Webconfig では、無効な認証タイプ名が含まれています。 これは、コンポーネントがトランザクション サービスを D365 で認証しようとする時に問題の原因になります |
 | 4095189 | RetialTransactionServiceProfile テーブルのプロトコル列が、新しいバージョンの D365 AX データベースから古いバージョンのチャネル データベースに同期されていません。 |
-| 4095191 | セキュリティ保護された URL のみが許可されるため、ユーザーが Retail サーバー USRL を http ベースの URL に設定する事は許可されていません。 これは、ユーザーが backwardcompatiility モードで実行中に古いバージョン (6.3) の Retail サーバーに接続することを防ぎます。 |
+| 4095191 | 保護された URL のみが許可されているため、ユーザーは Retail サーバー URL を http ベースの URL に設定することはできません。 これは、ユーザーが backwardcompatiility モードで実行中に古いバージョン (6.3) の Retail サーバーに接続することを防ぎます。 |
 | 4132456 | \[アップグレード \& N-1\]\[デザイナー\] テンキーの高さを拡張する必要があります |
 | 4095926 | アップグレード \& N-1: N-1 非アップグレード環境でトランザクションが見つからないため、返品注文は 63MPOS から失敗します。 |
 | 4095664 | 新しい顧客を作成するために Microsoft Dynamics AX 2012 クライアントが AX7.2 HQ へ接続することを許可します。 |
@@ -408,5 +409,5 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | 4132453 | 6.3 バージョンのチャネル データベースの InventDim テーブルにデータを移動すると、製品ダウンロード ジョブの N-1 バージョン (1040\_AX63) の実行に失敗 |
 | 4206905 | POS レポートは、アップグレードされていない N-1 環境で実行するとエラーをスローします。 |
 | 4133289 | 製品の N-1 version の実行 - 仕訳帳または既存のトランザクションからの払戻に失敗 |
-| 4161086 | CDX テーブル配送は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、テーブルのフィルター処理にその情報を使用せず、提供された条件 (x++ 修正) を使用します。 |
-| 4161099 | CDX テーブル配送は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、テーブルのフィルター処理にその情報を使用せず、提供された条件 (バイナリ変更) を使用します。 |
+| 4161086 | CDX テーブル配布は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、提供された条件 (x++ fix) を使用してテーブルをフィルター処理するためにその情報を使用しません |
+| 4161099 | CDX テーブル配布は、ルート テーブル ノードに追加された 'FieldValue' リンク タイプを無視するため、提供された条件 (バイナリ変更) を使用してテーブルをフィルター処理するためにその情報を使用しません |

@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e6f9f8f970f336a0cce6bcac78e32a1b7fe0a252
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2ffc64fd39a390af3ca7110178ef0999527106dc
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023166"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141386"
 ---
 # <a name="create-pos-permission-groups"></a>POS アクセス許可グループの作成
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、POS アクセス許可グループの作成方法を説明します。 このタスクの作成に使用するデモ データの会社は USRT です。 このタスクは、Commerce 工程マネージャー ロールを対象としています。
 
@@ -45,6 +45,6 @@ ms.locfileid: "3023166"
 13. 次に、ジョブに対して POS アクセス許可グループを割り当てます。 一覧で、目的のレコードを見つけ、選択します。
 14. **編集**を選択します。
 15. **ジョブ分類**セクションを展開します。
-16. [POS アクセス許可グループ] フィールドで、値を入力または選択します。 作業者のPOS アクセス許可が職位のレベルで上書きされない場合、このジョブの職位のすべての作業者は、このPOS アクセス許可グループの設定を使用します。  
+16. [POS アクセス許可グループ] フィールドで、値を入力または選択します。 作業者の POS アクセス許可が職位のレベルで上書きされない場合、このジョブの職位のすべての作業者は、この POS アクセス許可グループの設定を使用します。  
 17. **保存** を選択します。 変更が保存された後、チャネルへ変更をプッシュするために、スタッフ配送スケジュールを実行する必要があります。  
 

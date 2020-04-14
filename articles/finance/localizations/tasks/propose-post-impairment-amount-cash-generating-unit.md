@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 65fb6cf078c60c97f3e11897417272b21a990f9e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e5b46d6b7f0e2ffb922afef76aba1fb7aacc0efd
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174656"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144148"
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。
 

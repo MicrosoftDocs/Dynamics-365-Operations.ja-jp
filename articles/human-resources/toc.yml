@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 3 月 19 日
+          href: hr-whats-new-2020-03-19.md
         - name: 2020 年 3 月 10 日
           href: hr-whats-new-2020-03-10.md
         - name: 2020 年 3 月 3 日
@@ -539,3 +541,9 @@
               href: hr-learning-create-closed-ended-question.md
             - name: 依存質問の作成
               href: hr-learning-depending-question.md
+        - name: 従業員およびマネージャー セルフ サービスの設定
+          items:
+            - name: 従業員およびマネージャー セルフ サービスの概要
+              href: hr-employee-manager-self-service-overview.md
+            - name: 個人情報の編集
+              href: hr-employee-manager-self-service-edit-personal-information.md

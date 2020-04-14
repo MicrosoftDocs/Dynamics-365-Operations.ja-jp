@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea8c089e2ec279f20839f589acb6aacea46affa2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0bf5daa7bbd39dda6ab9fb3f94a6e02d21d3478
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183728"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140131"
 ---
 # <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers"></a>複数の転記階層の損金算入額のマスター データの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、固定資産ルールと、複数の転記階層の損金算入額に必要なマスター データの作成について説明します。 この手順を完了する前に、 [固定資産コンフィギュレーション キー] を選択する必要があります。 この手順は、デモ データ会社 JPMF を使用して作成されました。
 

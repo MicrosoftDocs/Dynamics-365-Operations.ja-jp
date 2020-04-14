@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e83cab94b04fe14cd5f14a071261cdd7e56da720
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6a65308da4a97efd7a8d9e5d5a9e0e05b938c6b8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183739"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140006"
 ---
 # <a name="inquiries-of-the-asset-retirement-obligation-related-transactions"></a>資産除去責務に関連するトランザクションの照会
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。 
 

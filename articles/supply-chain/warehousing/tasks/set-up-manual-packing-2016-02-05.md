@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30bbb404e624c33e047c5505c5b21565ed8cce10
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec4d86673555f594bb2f81010235fd7eb6e83f27
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847186"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148288"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 梱包プロセスで、製品を検証してコンテナーに梱包できます。 このプロセスでは、倉庫作業者が製品を保管場所から集荷し、品目の数量および種類をチェックする梱包ステーションに移動して、適切なコンテナーに割り当てます。 コンテナーが完全に梱包され、閉じてから出荷ドックに移動されると、製品を出荷する準備が整います。 この手順では、USMF というデモ会社を使用します。 この手順は、Dynamics 365 for Operations の 2016 年 ２ 月 & 2016 年 5 月バージョンのみです。
 

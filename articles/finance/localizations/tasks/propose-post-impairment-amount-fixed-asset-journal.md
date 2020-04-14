@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8acacc83b398117b9fd5ee39fb1fae6b01820569
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e17093ac1334b023f6d7a3fde55d44d24b148590
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183731"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144147"
 ---
 # <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal"></a>固定資産仕訳帳を使用した減損損失の提案と転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順を用いて、固定資産仕訳帳を使用して減損金額を提示および転記する方法を把握します。
 

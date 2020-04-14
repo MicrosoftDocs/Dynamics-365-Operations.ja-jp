@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62075c01ad7e2a4c393e9658fa67f8b536654aec
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a2f99029195a8b783f0d12990d4e8bab0bb348d7
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057173"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140957"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>コール センター チャネルの作成およびチャネル属性の定義
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順では、新しい Commerce チャネルを作成し、チャネル属性を定義する方法を説明します。 このタスクの作成に使用するデモ データの会社は USRT です。 この手順は、Commerce IT ロールを対象としています。
 

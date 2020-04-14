@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550535"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142366"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 1 部 - デザイン形式)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 
 これらのステップを完了するには、まず次の 3 つのタスク ガイドを完了する必要があります。 
 
-「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」
+ER 構成プロバイダーを作成し、アクティブとしてマークする
 
-「ER データ ソースとしての財務分析コードの使用 (パート 1: データ モデルのデザイン)」
+ER 財務分析コードをデータ ソースとして使用する（第 1 部：データ モデルのデザイン）
 
-「ER データ ソースとしての財務分析コードの使用 (パート 2: モデル マッピング)」
+ER 財務分析コードをデータ ソースとして使用する（第 2 部：モデル マッピング）
 
 [財務分析コードのサンプル Web サービス レポート](https://go.microsoft.com/fwlink/?linkid=862266) にあるサンプル レポートで、テンプレートのローカル コピーをダウンロードし、保存する必要があります。
 
@@ -57,7 +57,7 @@ ms.locfileid: "2550535"
 
 ## <a name="design-the-report-format"></a>レポートフォーマットを デザインする
 1. [デザイナー] をクリックします。
-2. [詳細を表示] トグルボタンをオンします。
+2. [詳細を表示] トグル ボタンをオンにします。
 3. アクション ウィンドウで、[インポート] をクリックします。
 4. [Excel からインポート] をクリックします。
 5. [添付ファイル] クリックします。
@@ -68,7 +68,7 @@ ms.locfileid: "2550535"
 9. [テンプレート] フィールドで、値を入力または選択します。
     * ダウンロードしたテンプレートを選択します。  
 10. [OK] をクリックします。
-    * 財務分析コードで（ユーザーダイアログ形式）選択した可能な限りの列を有するExcel出力を動的に作成するには新しい範囲を加えます。 各列のセルは単一の財務分析コードの名称を表します。  
+    * 財務分析コードで（ユーザーダイアログ形式）選択した可能な限りの列を有するExcel出力を動的に作成するには新しい範囲を加えます。 それぞれの列のセルは単一の財務分析コードの名称を表します。  
 11. [追加] をクリックしてドロップ ダイアログを開きます。
 12. ツリーで、[Excel\Range] を選択します。
 13. [Excelの範囲] フィールドで、「DimNames 」を入力します。
@@ -85,7 +85,7 @@ ms.locfileid: "2550535"
 23. ツリーで、「Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical」を展開します。
 24. ツリーで、「Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical」を展開します。
 25. ツリーで、「Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical」を選択します。
-    * 財務分析コードで（ユーザーダイアログ形式）選択した可能な限りの列を有するExcel出力を動的に作成するには新しい範囲を加えます。 各列のセルは、各報告トランザクションの単一の財務分析コードの値を表します。  
+    * 財務分析コードで（ユーザーダイアログ形式）選択した可能な限りの列を有するExcel出力を動的に作成するには新しい範囲を加えます。 それぞれの列のセルは、各レポート トランザクションの単一の財務分析コードの値を表します。  
 26. [範囲を追加] をクリックします。
 27. [Excelの範囲] フィールドで、「DimValues」を入力します。
     * DimValues  

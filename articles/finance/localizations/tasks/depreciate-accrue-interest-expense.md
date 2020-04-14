@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6820063e2f82e68d2fd4a7c9999ef1ea78ff22ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fab04b515536afeb0f48f6f849b0e857bc403de8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141539"
 ---
 # <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations"></a>資産除去責務の支払利子の減価償却および見越計上
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。 また、ARO の総額を認識するためには、支払利子を見越計上する必要があります。
 

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0c00b2a79ab588ff47c249f73570544d884b79e
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: a6ced839f93103a62bcfa8ea14ca463f0f1e174e
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145850"
 ---
 # <a name="check-the-availability-of-stock"></a>有効在庫数の確認
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。 またこれらは品目に関連する供給情報を取得する方法を表示します。 現物手持在庫とは使用可能である、つまり、購入済、受領済、登録済である手持ち在庫です。 手持在庫には使用可能な手持在庫が含まれる一方で、注文し、予想されているがまだ入庫されていないまたは登録されていない在庫も含まれます。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 USMF を使用すると、表示される例の値を使用できます。 通常、これらのタスクを実施するのは、倉庫作業者です。
+この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。 またこれらは品目に関連する供給情報を取得する方法を表示します。 現物手持在庫とは使用可能である、つまり、購入済、受領済、登録済である手持在庫です。 手持在庫には使用可能な手持在庫が含まれる一方で、注文し、予定されているがまだ入庫されていない、または登録されていない在庫も含まれます。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 USMF を使用すると、表示される例の値を使用できます。 通常、これらのタスクを実施するのは、倉庫作業者です。
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>品目の手持在庫の確認

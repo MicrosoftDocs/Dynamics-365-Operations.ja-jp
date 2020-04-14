@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185109"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142173"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>ER モデル マッピングの定義およびそのデータ ソースの選択
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールのユーザーがどのように電子申告 (ER) データ モデルのデータ ソースを選択できるか説明します。 データ ソースは、設計時には選択したデータ モデルの個々のコンポーネントにバインドされ、実行時には業務データがそのデータ モデルに設定されます。 この例では、サンプル会社 Litware、Inc. に対して作成された既存のデータ モデルのデータ ソースを選択します。これらの手順を完了するには、最初に「新しいデータ モデルの作成」手順でステップを完了する必要があります。
+次の手順では、システム管理者または電子申告開発者ロールのユーザーがどのように電子申告 (ER) データ モデルのデータ ソースを選択できるか説明します。 データ ソースは、設計時には選択したデータ モデルの個々のコンポーネントにバインドされ、実行時には業務データがそのデータ モデルに設定されます。 この例では、サンプル会社 Litware、Inc. に対して作成された既存のデータ モデルのデータ ソースを選択します。この手順を完了するには、まず「新しいデータ モデルの作成」の手順を完了する必要があります。
 
 
 ## <a name="open-the-electronic-reporting-configurations-tree"></a>電子申告コンフィギュレーション ツリーを開きます
@@ -78,7 +78,7 @@ ms.locfileid: "2185109"
 17. ツリーで、[Transactions\Voucher] を選択します。
 18. [データ ソースの追加] をクリックします。
 19. [フォーミュラ] フィールドに、「CONCATENATE(Transactions.Voucher, "-",」を入力します。
-    * フォーミュラの最後に、「, “-“,」を入力します。  
+    * 数式の最後に、「, "-", 」 を入力します。  
 20. ツリーで、[String\TEXT] を選択します。
 21. [機能の追加] をクリックします。
 22. ツリーで、[Transactions\Record-ID(RecId)] を選択します。
@@ -126,7 +126,7 @@ ms.locfileid: "2185109"
 51. [OK] をクリックします。
     * 現在のデータ モデルのデータ ソースとして、BankAccountTable テーブルを選択します。  
 52. [ルートの追加] をクリックします。
-    * このデータ ソースを入力して、会社の必要条件にアクセスします。  
+    * このデータ ソースを入力して、会社の要件にアクセスします。  
 53. [名前] フィールドに、「Company」と入力します。
     * 法人  
 54. [ラベル] フィールドに値を入力します。

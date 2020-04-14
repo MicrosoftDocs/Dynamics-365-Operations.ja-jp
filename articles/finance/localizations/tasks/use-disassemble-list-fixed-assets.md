@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fa1a62e5916dc0cefb0d23422e738c6d8dec38d7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34f53903d89ce71a021eda50518504479346fed6
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174646"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161792"
 ---
 # <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、固定資産のコンポーネントを在庫に移転できます。 
 

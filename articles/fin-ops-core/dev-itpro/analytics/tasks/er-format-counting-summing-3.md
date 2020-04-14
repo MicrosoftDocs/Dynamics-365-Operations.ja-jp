@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbef7048488056f50ec8967a9af53d468666856
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e8a4965c07c5a084b21da40667747db36530284c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550766"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141955"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3---use-computations-to-make-the-output"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 3 部 - 出力を作成するための計算の使用)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。 これらの手順はどのタイプの企業でも実施できます。
 
-これらの手順を完了するには、まず「計算と集計を行うER設定フォーマット（パート2：計算の環境設定）」の手順を完了する必要があります。
+これらの手順を完了するには、まず 「計算と集計を行うER設定フォーマット（パート2：計算の環境設定）」に記載の手順を完了する必要があります。
 
 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -56,7 +56,7 @@ ms.locfileid: "2550766"
 16. [式] フィールドに、「COLLECTEDLIST('$BlockName', "*")」を入力します。
     * COLLECTEDLIST('$BlockName', "*")  
 17. [保存] をクリックします。
-    * パターン “*” は、すべてのブロックがこの記録のリストに含まれることを意味します。  
+    * パターン 「*」 は、すべてのブロックがこの記録のリストに含まれることを意味します。  
 18. ページを閉じます。
 19. [OK] をクリックします。
 20. [フォーマット] タブをクリックします。

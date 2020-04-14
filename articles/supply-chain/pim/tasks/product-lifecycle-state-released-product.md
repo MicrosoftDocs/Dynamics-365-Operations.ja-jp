@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94ef09c8906c793b0187d82cef259122c91a8e01
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 31dabc8994ce9e49da744db5eff3d4f45c66ec4d
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567610"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147588"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>製品ライフサイクルの状態をリリース済製品に割り当て
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。 前提条件: このガイドを再生する前に、タスク ガイド「新しい製品のライフサイクルの状態の作成」を実行し、少なくとも、1 つの製品のライフサイクルの状態が作成されていることを確認する必要があります。
 

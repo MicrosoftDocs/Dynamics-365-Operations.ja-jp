@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22680a3033c1518735eb9edb4c6f22f310509aba
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b9960c3fdf0d65be19e28dbb41913a310ae7530
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140217"
 ---
 # <a name="establish-customer-method-of-payment"></a>顧客の支払方法の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、顧客支払の方法の作成について説明します。 このタスクでは、USMF というデモ会社を使用します。
 
@@ -43,6 +43,6 @@ ms.locfileid: "2188812"
 12. つなぎ転記に使用される主勘定を入力します。 これは、連結を使用する場合に、一時的に支払を転記する主勘定先です。  
 13. 電子支払の設定を定義するには、**ファイル形式**タブを使用します。
 14. 必須であるフィールドを定義するには、**支払管理タブ**を使用します。 たとえば、この支払方法ですべての支払を預金する必要がある場合、このタブのオプションを選択できます。  
-15. この支払方法に使用する支払属性を定義するには、**支払属性**タブを使用します。
+15. この支払方法に使用する支払属性を定義するには、 **支払属性** タブを使用します。
 16. **保存** を選択します。
 

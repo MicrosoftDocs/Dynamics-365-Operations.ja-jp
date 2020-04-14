@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 618fabc96bdfeb0c2b577aa686702d9f1257ed70
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: a4324ed62c56abea6d90d83d950429b6ddf7a84b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550720"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142034"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER 形式の出力 (パート 3 - 形式の作成) におけるドキュメント管理ファイルの使用
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 
-これらの手順を完了するには、まず「フォーマット出力のドキュメント管理ファイルをER使用する (パート2：データモデルを拡張）」の作業ガイドの手順を完了する必要があります。
+これらの手順を完了するには、まず 「フォーマット出力のドキュメント管理ファイルを ER 使用する（パート2：データモデルを拡張）」作業ガイドに記載の手順を完了する必要があります。
 
 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 

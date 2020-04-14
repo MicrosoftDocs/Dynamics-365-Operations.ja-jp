@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e9e723ec54b6f34082c422ce4c8e48bf52d2e3e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 404bd1e22caa8098f114a2dcc67dd420509cce2b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189456"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140470"
 ---
 # <a name="define-vendor-payment-fees"></a>仕入先の支払手数料の定義
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 仕入先支払手数料を設定します。 このタスクでは、USMF というデモ会社を使用します。
 

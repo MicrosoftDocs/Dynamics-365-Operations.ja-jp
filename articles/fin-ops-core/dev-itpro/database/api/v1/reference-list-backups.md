@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: b8f217cc5e62adbe110cca6cd287db8ae6cab78a
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: de2528c6304c89387120a24aff6f89a138e5613f
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573564"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150753"
 ---
 # <a name="list-database-backups"></a>データベースのバックアップのリスト
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 データベースのバックアップのリストは、プロジェクトの資産ライブラリから取得することができます。
 

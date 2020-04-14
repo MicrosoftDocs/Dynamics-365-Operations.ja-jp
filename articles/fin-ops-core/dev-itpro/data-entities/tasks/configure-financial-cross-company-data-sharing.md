@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc368351641f3e2432dfdbbaf8eed8694595bd4e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 98eeae9f50238aae172e4a217d40be39ee46a0b8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184373"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142964"
 ---
 # <a name="configure-financial-cross-company-data-sharing"></a>会社間財務データ共有のコンフィギュレーション
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、会社間でデータを共有するときに、コンフィギュレーション、有効化、検証、および競合を解決する方法を示します。 これは、USMF 社と財務データ共有テンプレートを使用します。
 

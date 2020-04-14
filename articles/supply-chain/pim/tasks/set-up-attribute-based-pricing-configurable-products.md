@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 534e9c9332c107afebd814cf2090ecbdf0ec6459
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: d23030b79670e31cc237b9ca53b0b3881678786f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914702"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149829"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>コンフィギュレーション可能な製品の属性ベースの価格決定の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、属性ベースの価格決定の方法を説明します。 前提条件として、1 つ以上のコンポーネントと属性を持つ製品コンフィギュレーション モデルが必要です。 この例では、デモ データの会社 USMF のハイエンド スピーカーの製品モデルが使用されています。 通常、製品マネージャーがこの手順を使用します。
 
@@ -33,7 +33,7 @@ ms.locfileid: "1914702"
 ## <a name="create-a-new-price-model"></a>新しい価格モデルの作成
 1. ホームページで**製品バリアント モデルの定義**を選択します。
 2. **リンク** セクションで、**製品コンフィギュレーション モデル**を選択します。
-3. リストで、名前のリンクを選択せずに**ハイエンド スピーカー**の行を選択します。
+3. リストで、名前のリンクを選択せずに、**ハイ エンド スピーカー** 行を選択します。
 4. アクション ウィンドウで、**モデル**を選択します。
 5. **価格モデル**を選択します。
 6. **新規** を選択します。

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1fabdcd61c60e630e3f32bc4f0c13c44f50259a6
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 9e0a015283064af2287013bccc065b4467a308c5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091925"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144792"
 ---
 # <a name="set-up-main-account-categories"></a>主勘定カテゴリの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、主勘定カテゴリを設定する方法について説明します。 主勘定カテゴリは、財務報告と Power BI の既定のレポートに使用されます。 既定で作成される主勘定カテゴリの名前は変更できますが、削除はできません。 追加の勘定カテゴリを作成しレポートおよび分析に使用できます。 このトピックでは、USMF というデモ会社を使用します。
 

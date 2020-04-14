@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6fa3469a34c9797db6c42357f02e094a4ed22f7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7acbab190c02b6b4591e8563d8e157b603a39114
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175147"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145252"
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。 その 3 つのタイプとは、一括比例配分資産、繰延資産、および低価額資産です。 
 

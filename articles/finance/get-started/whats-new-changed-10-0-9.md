@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 77372703433fbbfc1a3512e42a6ccad9372b5810
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 265e96e427050d50538ee1ea435138abc5b4ef87
+ms.sourcegitcommit: 794cbfee6077e75747cfcc4a977b7ab01cbc1a2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124082"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3165041"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-march-2020"></a>Dynamics 365 Finance バージョン 10.0.9 プレビュー (2020 年 3 月) の新機能または変更された機能
 
@@ -72,7 +72,7 @@ Microsoft Dynamics 365 Finance 10.0.9 には、プラットフォーム更新プ
 
 
 ### <a name="bug-fixes"></a>バグ修正 
-10.0.7 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f) を参照してください。
+10.0.9 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=415034&dbType=3&qc=7bdf05cf1859a5a56f4b9c0dae88fa1653d489181b3a2c1f19429225daf5724b) を参照してください。
 
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン

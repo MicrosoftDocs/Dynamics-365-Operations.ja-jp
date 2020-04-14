@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e04af04de3d18d375ce3609ab4cd53f652c2fbc
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7be50eba098b7b28594c8e18c721579f4bb2e879
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140994"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a>POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-この手順では、販売時点管理 (POS) レジスターの財務分析コードの作成について説明し、レジスターの財務分析コード値をコンフィギュレーションする方法を示します。 この手順には、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。 これらのタスクは他のトピックで示されます。 このレコードでは、MXMF デモ会社を使用します。
+この手順では、販売時点管理 (POS) レジスターの財務分析コードの作成について説明し、レジスターの財務分析コード値をコンフィギュレーションする方法を示します。 この手順には、分析コード セットおよび勘定構造の作成など、他の関連手順は含まれません。 これらのタスクは他のトピックで示されます。 このレコードでは、MXMF デモ会社を使用します。
 
 1. [総勘定元帳] > [勘定科目表] > [分析コード] > [財務分析コード] に移動します。
 2. [新規] をクリックします。

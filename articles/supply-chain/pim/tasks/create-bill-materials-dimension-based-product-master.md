@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 677aacb72d1c3f33bed8bb6c9cd32e5dbca677cc
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: de62c246e022a315852f9b1b21f3378b3408a00f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844924"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150173"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>分析コード ベースの製品マスターの部品表の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順で、この一連の 8 つの記録において既に 4 つのガイドを完了している必要があります。 最初の 4 つの記録がこの手順を完了するのに必要なデータを設定します。 この手順の作成に使用するデモ データの会社は USMF です。 このタスクは通常、製品デザイナーによって処理されます。
 

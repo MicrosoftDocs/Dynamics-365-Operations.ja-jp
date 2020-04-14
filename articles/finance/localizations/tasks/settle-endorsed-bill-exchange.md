@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8f33545069084967f7ac69b89e682532739e22d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e515b70fbf51c05ee52154cd8fcde42068b3e9aa
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143447"
 ---
 # <a name="settle-an-endorsed-bill-of-exchange"></a>裏書済受取手形の決済
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクは、裏書きされた為替手形の決済について説明します。
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22aa4823fbf43b29a8fd9661645e8563c07e437d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a837721db5281b0626f37b7a793349b91afa6f85
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147759"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>コンフィギュレーション済みの製品バリアントの製品番号の分類の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、コンフィギュレーション済製品バリアントにおける製品番号の分類を設定する方法、およびそれをコンフィギュレーション可能な製品マスターに関連付ける方法を示します。 この手順では、製品コンフィギュレーション モデル コンポーネントのコンフィギュレーションに関する用語をどのように作成するかを示します。 この手順の作成に使用するデモ データの会社は USMF です。 新しい製品番号の分類は、「D0004」製品マスターに割り当てられます。 このタスクは、通常、製品デザイナーが行います。
 

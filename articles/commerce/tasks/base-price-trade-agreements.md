@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7576c4218118724562ff739ff9805a06b7ba22d5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023178"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141525"
 ---
 # <a name="base-price-and-trade-agreements"></a>基準価格と売買契約
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順では、チャンネル固有の販売価格の売買契約の作成方法を説明します。 この手順では、デモ データの会社 USRT を使用します。
 

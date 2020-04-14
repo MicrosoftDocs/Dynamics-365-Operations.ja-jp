@@ -3,7 +3,7 @@ title: クラウド展開の概要
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Finance and Operations アプリで管理する必要があるデータおよびカスタマイズについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 542729f1f35ecd45f96d5cd7b9bd4e0a86b363b7
-ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
+ms.openlocfilehash: a4b564a9c5c5ce1dcfc67ea4da15cbd01674b362
+ms.sourcegitcommit: 6d262354f317d5971cf3ef05cffb08f1a564af8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3133909"
+ms.lasthandoff: 03/16/2020
+ms.locfileid: "3135339"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -132,7 +132,8 @@ Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure デ�
 ### <a name="how-do-i-connect-to-the-sql-database-on-my-sandbox-environment"></a>サンドボックス環境で SQL データベースに接続するにはどうすればよいですか。
 次の手順に従って、Tier 2+ のサンドボックス環境内の SQL データベースに接続してください。
 
-> ![重要] 運用データベースに直接接続することはできません。
+> [!IMPORTANT]
+> 実稼働データベースに直接接続することはできません。
 
 1. 接続先のデータベースを含む Tier 2+ の環境に属するAOS VMのいずれかにリモートデスクトップを接続します。
 2. SQL Server Management Studio を起動します。
@@ -163,7 +164,7 @@ Azure Active Directory (AAD) が実行中で、AAD インスタンスの管理�
 ### <a name="can-i-add-guest-aad-accounts-as-users"></a>ゲスト AAD アカウントをユーザーとして追加できますか。
 Azure Active Directory 内で適切に AAD アカウントを構成して、AAD 内で Finance and Operations アプリを有効にした場合は、ゲストの AAD アカウントを追加することができます。 
 
-### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environmnents"></a>プライベート AOS 機器を階層 2 から階層 5 のサンドボックス環境で表示できなくなったのはなぜですか。
+### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environments"></a>プライベート AOS マシンを Tier 2 から Tier 5 のサンドボックス環境の 1 つ以上で表示できなくなったのはなぜですか?
 Private AOS VM は、かつて AOS と BI コンピューター間の通信を保護する必要があったため、環境構成の一部でした。 最新の更新プログラムでは、AOS と BI マシン間のすべての通信は直接セキュリティで保護され、中間プライベート AOS 機械は不要になりました。 したがって、プライベート AOS マシンを削除する段階にあります。 バッチでマシンを削除しているので、環境の一部だけがプライベート AOS 機械を削除したことが判明することがあります。 この変更は、機能性やセキュリティにいかなる影響も及ぼさず、お客様には透明になります。
 
 ### <a name="why-am-i-no-longer-able-to-remote-desktop-into-one-or-more-of-my-tier-1-through-tier-5-microsoft-managed-sandbox-environments"></a>リモート デスクトップを自分の階層 1 から階層 5 のいずれかの Microsoft 管理サンドボックス環境で表示することができなくなったのはなぜですか。

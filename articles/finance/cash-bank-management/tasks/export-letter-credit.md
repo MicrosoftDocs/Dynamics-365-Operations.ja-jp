@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d389c4a85bbf39a0974e8e456c781ae839461d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cd18320ca8505b1357ce505dfb4c94e81aaae91
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178675"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141652"
 ---
 # <a name="export-letter-of-credit"></a>輸出信用状
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、[輸出信用状] のプロセスを説明します。
 

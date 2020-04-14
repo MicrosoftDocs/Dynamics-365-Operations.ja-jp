@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c742679d1d707e48449d73b58381a23c2742c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ebb3ffa150012a078e470f825d8a254b01005597
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004672"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154355"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -79,6 +79,8 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 実稼働に移行する前に適切なパフォーマンステストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンステストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
 
+[!IMPORTANT] Microsoft Windows 7 オペレーティング システムは、セキュリティ関連の修正以外ではサポートされなくなりました。 そのため、Windows 7 で Dynamics 365 Commerce コンポーネントが機能する場合がありますが、このオペレーティング システムのサポートに関連するバグ修正はありません。 Windows 7 上でコンポーネントが正常に機能するには回避策が必要な場合があるため、サポートされているオペレーティング システムにアップグレードすることを強くお勧めします。
+
 ## <a name="modern-pos-for-windows-requirements"></a>Windows 用 Modern POS 要件
 
 > [!NOTE]
@@ -125,6 +127,10 @@ Web アプリケーションは、指定されたオペレーティング シス
 
         > [!NOTE]
         > Windows 7 は、Internet Explorer 11 が手動でシステムにインストールされている場合にのみサポートされます。
+        > Windows 7 は、サポート対象のオペレーティング システムではなくなりました (上記の **重要な** メモを参照してください)。 このオペレーティング システムへのハードウェア ステーションのインストールに関して、最近の問題が検出されました。 この問題は、次の回避策が利用できるため、修正されません。 **Common-Web.ps1** ファイルで、次の 2 組の **Log-ActionItem** を削除します:
+          1. **Log-ActionItem** 'Config アプリケーションプール [...] アイドル タイムアウトを 0 にします。
+          2. **Log-ActionItem** 'Config アプリケーションプール [...] アイドル タイムアウト アクションを中断にします。
+        > 上記で指定した **Log-ActionItem** と、**Set-ItemProperty** および **Log-ActionResult** に関連する次の 2 行を削除します。
 
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
     - Windows 10 Pro、Enterprise、Enterprise LTSB、および IOT Enterprise Edition。

@@ -3,7 +3,7 @@ title: Modern POS (MPOS) のインストール、構成、有効化
 description: このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 941607fabfb668be7610f2994ac580e7b217a6f1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 5ac813e7db2ab5c16bdbf8c83e308cc70001688e
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070749"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154169"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -282,8 +282,44 @@ Modern POS インストーラーは、まず関連付けられているファイ
         5. **ユーザー、コンピュータ、サービス アカウント、またはグループの選択**ダイアログ ボックスで、**場所**を選択します。
         6. **場所**ダイアログ ボックスで、リスト (ローカル コンピューター) の最初のエントリを選択し、**OK** を選択します。
         7. **ユーザー、コンピュータ、サービス アカウント、またはグループの選択**ダイアログ ボックスで、**IIS\_IUSRS** という名前を入力してから**名前の確認**を選択します。 オブジェクト名は、**IIS\_IUSRS** に変更する必要があります。 **OK**を選択します。
-        8. **SelfServiceDeployment のアクセス許可**ダイアログ ボックスで、新しい **IIS\_ISURS** ユーザーを選択します。 **IIS\_IUSRS のアクセス許可** の **フル コントロール** アクセス許可で **許可** を選択します。 **OK**を選択します。
+        8. **SelfServiceDeployment のアクセス許可**ダイアログ ボックスで、新しい **IIS\_ISURS** ユーザーを選択します。 **IIS\_IUSRS のアクセス許可** の **フル コントロール** アクセス許可で **許可** を選択します。 **OK** を選択します。
         9. **アクセス許可を開く**ダイアログ ボックスで、**OK** を選択します。
+
+- 最新の iOS バージョンでは、自己署名証明書をサポートしていません。
+
+    **ソリューション 1:** ドメインを使用して、適切なドメイン ベースの証明書を生成します。
+    
+    **ソリューション 2:** オープン ソース OpenSSL ライブラリをダウンロードし、インストールの完了後に次の手順を実行します:
+  
+  1. PowerShell を使用して、**$ openssl genrsa -des3 -out rootCA.key 2048** などのコマンドを使用して、ルート証明機関 (CA) の秘密キーを作成します。
+        2. パスワードの入力を求められますが、パスワードは後で使用するために覚えておく必要があります。
+        3. 次に、**$ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem** などのコマンドを使用してルート証明書を生成します。  以前に入力したパスワードと、いくつかの基本的な証明書情報を求めるプロンプトが表示されます。
+     
+     > [!NOTE]
+     > 証明書の有効期間は変更できます。 上記の例では、これは 1024 日です。   
+     
+        4. 新しい **info.ext** ファイルを作成し、次の情報を入力します:
+          - keyUsage = keyEncipherment, dataEncipherment
+          - extendedKeyUsage = 1.3.6.1.5.5.7.3.1
+          - subjectAltName = @alt_names
+          - [alt_names]
+          - DNS: 1 = &lt;ホスト コンピュータの完全修飾ドメイン名&gt;
+        5. **openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key** などのコマンドを使用して、署名要求と秘密キーを生成します。
+        6. **$ openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile info.ext** などのコマンドを使用して、以前に生成されたルート証明書を使用して証明書を発行します。ルート キーのパスワードを求めるプロンプトが表示され、証明書の有効日数 (この例では 500 日) を指定する必要があります。
+        7. **$ openssl pkcs12 -inkey server.key -in server.crt -export -out server.pfx** などのコマンドを使用して IIS 証明書を生成します。 このコマンドは、新しいパスワードを要求します。このパスワードは、あとで証明書をインポートする時に使用されます。
+        8. **Certmgr.msc** を開いて、**信頼されたルート証明機関** に移動します。 **インポート** アクションを使用して、以前に生成された **rootCA.pem** ルート CA ファイルをインポートします。
+        9. 同じウィンドウで、**パーソナル** に移動し、**インポート** アクションを使用して、以前に生成された **server.pfx** をインポートします。
+        10. 次に、**IIS マネージャー**を開き、**RetailHardwareStationWebSite** を選択し、一番右のメニューから **バインドの編集** を選択します。
+        11. 新しいウィンドウで、HTTPS サイトのバインドを選択し、**編集** を選択します。 最後の画面で、新しくインストールした証明書を選択し、**OK** を選択します。
+        12. 証明書が正しく使用されていることを確認します。 Web ブラウザーで、"https:\/\/&lt;hostname&gt;\/HardwareStation\/ping" に移動します。
+        13. iOS デバイスに証明書をインストールします:
+          - **rootCA.pem** ファイルをコピーして、コピーの名前を **rootCA.crt** に変更します。
+          - OneDrive またはその他のファイル ホスティング ロケーションを使用して、**rootCA.crt** と **server.crt** をアップロードし、iOS デバイスにダウンロードできるようにします。
+        14. iOS デバイスで、**設定 &gt; 全般 &gt; プロファイル** に移動し、**rootCA.crt** 用にダウンロードしたプロファイルを選択します。 **インストール**を選択します。
+        15. プロファイルの状態が **検証済** に更新されていることを確認します。  **server.crt** ファイルに対して同じプロセスを繰り返します。
+        16. **設定 &gt; 全般 &gt; 情報 &gt; 証明書の信頼設定** に移動し、インストールされているルート証明書を有効にします。
+        17. iOS デバイスで、以前に指定したハードウェア ステーションの ping URL を使用して、証明書が信頼できることを確認します。
+        18. POS アプリケーションを **非ドロワーモード** で開き、通常実行されるようにハードウェア ステーションとペアリングします。
 
 ### <a name="troubleshoot-device-activation-for-modern-pos"></a>Modern POS のデバイス有効化のトラブルシューティング
 

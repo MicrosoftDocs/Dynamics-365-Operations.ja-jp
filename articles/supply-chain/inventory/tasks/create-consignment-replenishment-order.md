@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f426dbf00eace23da2f26eb50dd9675fe22ed445
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: 766f29f7511c16eccd37e93f2de366ac23c35545
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914786"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145804"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。 このほか、委託製品が仕入先所有の手持在庫として登録されるように製品の受領を記録する方法についても記述されています。 この作業は通常、調達担当者が行います。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -53,7 +53,7 @@ ms.locfileid: "1914786"
 ## <a name="receive-items"></a>品目の受信 (複数)
 1. **製品受領書**を選択します。
 2. **外部製品受領**フィールドで、値を入力します。
-3. **数量**フィールドにおいて、ここに表示される数値より小さい数値を入力します。 
+3. **数量** フィールドにおいて、ここに表示される数値より小さい数値を入力します。 
 4. **OK** を選択します。
 
 ## <a name="check-the-on-hand-inventory"></a>手持在庫を確認します。

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4641d24cfa24722f5411da8943bfe4095a9546a4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dcd0f67bae1042cb1e81423898eacd20f921e0e2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567633"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147589"
 ---
 # <a name="find-obsolete-product-variants"></a>古い形式の製品バリアントを検索する 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、古い形式のリリース済製品または製品バリアントを検索する方法と、古い形式の製品に製品ライフサイクルの状態を関連付ける方法を説明します。 前提条件: このタスク ガイドを実行する前に計画に対して無効である、少なくとも 1 つの製品ライフサイクルの状態を定義する必要があります。
 

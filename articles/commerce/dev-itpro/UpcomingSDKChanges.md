@@ -3,7 +3,7 @@ title: Retail SDK の今後の変更
 description: このトピックでは、Retail ソフトウェア開発キット (SDK) の今後の変更の一覧を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/22/2019
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 555c392e4e004b36abd9b8fa64058a6f011ae182
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: bed0de76a55fd6c0f8f4878c773d5f6a2e4b277d
+ms.sourcegitcommit: 1eb0d42a1e9d9c0a4417daca7aaadffad30c0037
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004608"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3169976"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]
@@ -53,10 +53,14 @@ Windows Server オペレーティング システムまたは LCS 開発ボッ�
 ## <a name="development-tools"></a>開発ツール
 現時点では、Retail SDK サンプルと Retail SDK 内の他のテンプレートは、Microsoft Visual Studio 2015 でのみ動作します。 Retail SDK と新しい独立したパッケージ モデルでの今後の変更の一部をサポートするため、Microsoft は Visual Studio 2015 から Microsoft Visual Studio 2017 または最新バージョンのいずれかにアップグレードする計画です。
 
-新しいテンプレートおよび Retail SDK サンプルは、Visual Studio 2017 またはサポートされる最新バージョンでのみコンパイルすることができます。 **したがって、この新機能がリリースされるとき、開発仮想マシン (VM) で Visual Studio 2015 から Visual Studio 2017 へのアップグレードを計画する必要があります。**
+新しいテンプレートおよび Retail SDK サンプルは、Visual Studio 2017 またはサポートされる最新バージョンでのみコンパイルすることができます。 **したがって、この新機能がリリースされるとき、開発仮想マシン (VM) で Visual Studio 2015 から Visual Studio 2017 へのアップグレードを計画する必要があります。** **10.0.11 以降、Retail SDK のコンポーネントは VS 2017 でのみ開発およびコンパイルでき、VS 2015 では機能しません。**
+
 
 ## <a name="retail-sdk-reference-folder-to-nuget-gallery"></a>NuGet ギャラリーへの Retail SDK 参照フォルダー
-Commerce Runtime、Commerce Scale Unit、Commerce プロキシ、Commerce ツールなどのすべての参照バイナリ ファイルは、Retail SDK\\参照フォルダーで公開されます。 現時点では、拡張機能はそのフォルダーを参照できません。 ただし、Microsoft はこのモデルを終了し、代わりに NuGet ギャラリーで SDK 参照を公開する計画です。 **したがって、この新しいモデルの場合、Retail SDK\\reference フォルダーではなく NuGet ギャラリーを参照するように、拡張機能プロジェクトを変更する必要があります。この変更には、参照の更新と、拡張機能プロジェクトでの再コンパイルが必要です。**
+Commerce Runtime、Commerce Scale Unit、Commerce プロキシ、Commerce ツールなどのすべての参照バイナリ ファイルは、Retail SDK\\参照フォルダーで公開されます。 現時点では、拡張機能はそのフォルダーを参照できません。 ただし、Microsoft はこのモデルを終了し、代わりに NuGet ギャラリーで SDK 参照を公開する計画です。 
+
+> [!NOTE] 
+> この新しいモデルについては、Retail SDK\\参照フォルダーではなく、NuGet ギャラリーを参照するように拡張機能プロジェクトを変更する必要があります。 この変更には、拡張機能プロジェクトで参照の更新と再コンパイルが必要です。
 
 この新しいモデルでは、更新プロセスが簡略化されます。 たとえば、Retail SDK で更新済の参照が必要な場合、現在のところ、Microsoft Dynamics Lifecycle Services (LCS) に移動し、最新のバイナリ更新プログラムなどを適用する必要があります。 NuGet のアプローチでは、右クリックするだけ更新バージョンを取得できます。
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 126ee308b00ed9c9629e5bea0c4fd4a8927410c1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 124f3147c8ddcdb2d63b90cd554b2641f6d2d42a
+ms.sourcegitcommit: b952b9f9066a5317259b8344db4c5d99eab4bf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811959"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165788"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -32,7 +32,7 @@ ms.locfileid: "2811959"
 このトピックでは、Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。
 
 ## <a name="one-version"></a>1 つのバージョン
-2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
+2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態を維持するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
 
 - [1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md)
 - [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md)
@@ -105,7 +105,7 @@ Microsoft Office との統合により、Microsoft Office スイートを活用�
 - [Office 統合のトラブルシューティング](../office-integration/office-integration-troubleshooting.md)
 
 ## <a name="mobile"></a>携帯電話
-Finance and Operations モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
+Finance and Operations モバイル アプリにより、組織はビジネス プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
@@ -119,3 +119,5 @@ Finance and Operations モバイル アプリにより、組織は業務プロ�
 - [コンフィギュレーション済みのシステム アカウント](pre-configured-system-accounts.md)
 - [企業間 (B2B) ユーザーを Azure Active Directory にエクスポートする](implement-b2b.md)
 - [セッション アイドル タイムアウトの設定](session-idle-timeout.md)
+- [AOS 起動時に Odata メタデータ キャッシュを作成する](odata-warmup.md)
+- [データベース ログの構成と管理](configure-manage-database-log.md)

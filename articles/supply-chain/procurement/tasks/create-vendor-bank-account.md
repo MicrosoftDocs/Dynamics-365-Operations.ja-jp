@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8dd3664d86ffdb8bf731a6ff1e0ed60b50eed61
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: be06343aba974ff23a7f328d2175f00768a76465
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916832"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149576"
 ---
 # <a name="create-a-vendor-bank-account"></a>仕入先銀行口座の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、仕入先用の銀行口座の作成方法を説明します。 デモ データの会社 USMF でこの手順を使用できます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "1916832"
 6. **銀行口座**フィールドに、値を入力します。 この ID を使用して仕入先レコードの銀行口座を識別します。  
 7. **名前**フィールドに値を入力します。
 8. **銀行グループ** フィールドで、値を入力または選択します。
-9. **ルーティン番号タイプ** フィールドで、オプションを選択します。 これは国際支払に使用されるルーティング番号のタイプです。  
+9. **ルーティン番号タイプ** フィールドで、オプションを選択します。 これは国際送金に使用されるルーティング番号のタイプです。  
 10. **銀行口座番号**フィールドに、値を入力します。
 11. **SWIFT コード** フィールドに、値を入力します。
 12. **IBAN** フィールドに値を入力します。
@@ -55,6 +55,6 @@ ms.locfileid: "1916832"
 22. ページを閉じます。
 23. **編集** をクリックします。
 24. **支払**セクションを展開します。
-25. **銀行口座**フィールドで、作成した勘定を選択します。
+25. **銀行口座** フィールドにて、作成した口座を選択します。
 26. **保存**をクリックします。 指定するか、ここに追加する場合、住所は銀行グループから継承される場合があります。  
 

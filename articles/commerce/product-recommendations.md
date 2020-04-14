@@ -3,7 +3,7 @@ title: 製品推奨事項の概要
 description: このトピックは、製品推奨事項に関する一般情報を提供します。 製品推奨事項により、顧客は必要な製品や元々購入する予定ではなかった製品も簡単かつ迅速に見つけることができます。
 author: Moonma
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: abeeb3c35c21f6d7a6ec24a84522033f9a5367f3
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127862"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154229"
 ---
 # <a name="product-recommendations-overview"></a>製品推奨事項の概要
 
@@ -74,8 +74,6 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 [カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
 
 [カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
-
-[E コマース サイトへの推奨リストの追加](add-reco-list-to-page.md)
 
 [POS での製品推奨事項の追加](product.md)
 

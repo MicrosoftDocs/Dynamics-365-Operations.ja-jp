@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b346731ec80d08afabe648e1b47b30b53b29e744
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: 30ffb34e2aee984d29bedb47d6bfc9cb6173470a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924407"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148679"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>販売注文からの発注書の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、販売注文に基づいた発注書を作成する方法を表示します。 発注書の製品の数量は、元の販売注文の需要を満たすよう指定されます。 販売需要を満たすこの方法は、[配送要件計画] のより包括的で最適化された方法の代替です。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 

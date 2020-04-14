@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee9369738b6fc1b19e912e64b0cd5e258573eac8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a4274da8f39f12d09e8f1d478bd046a1a71209a
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175154"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137905"
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。
 

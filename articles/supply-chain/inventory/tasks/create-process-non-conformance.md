@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e9cf42f80ef7a4c9c5f68a308386db5835c8f2e
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 1d012af1924e9eedee41f46de6c253d009cb52d2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916648"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145712"
 ---
 # <a name="create-and-process-a-conformance"></a>不適合の作成および処理
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-このトピックでは、既存の品質指示に基づき不適合管理を実行する方法について説明します。 USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。 通常この手順は品質担当者が実施します。  前提条件として、[商品の品質の調査](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) の手順に従ってください。 不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで「名前」の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。
+このトピックでは、既存の品質指示に基づき不適合管理を実行する方法について説明します。 USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。 通常この手順は品質担当者が実施します。  前提条件として、[商品の品質の調査](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) の手順に従ってください。 不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで 「名前」 の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。
 
 
 ## <a name="select-a-quality-order"></a>品質指示の選択

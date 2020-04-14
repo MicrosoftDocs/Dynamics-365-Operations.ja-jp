@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea61e3c1d76ade6e0d694b4b521e4be76fc8799d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a897fc64ccd125263b30993c1e24a3c6c67bd63
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178760"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144021"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>申請者およびアプリケーション データの手動入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。   申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。 また、雇用申請者の申請状態を更新し、申請者とやり取りを行うための手紙または電子メールを作成できます。 申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。       この手順の作成に使用するデモ データの会社は USMF です。
+この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。   申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。 また、雇用申請者の申請状態を更新し、申請者とやり取りを行う書状または電子メールを作成できます。 申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。       この手順の作成に使用するデモ データの会社は USMF です。
 
 
 ## <a name="create-a-new-applicant-record"></a>新しいレコードの作成

@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 386c035fb84b1f88cf53837a1e875eb2aa8ba910
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026317"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146310"
 ---
 # <a name="reconcile-freight-manually"></a>運賃の手動調整
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 この手順では、運賃を手動で調整する方法を示します。 この設定は、通常、配送コーディネーターにより実行されます。 デモ データの会社 USMF でこの手順を使用できます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "3026317"
 3. リストで、積荷 ID 00006 を持つ積荷を選択します。
 
 ## <a name="create-a-carrier-invoice"></a>運送業者の請求書を作成する
-運賃を手動で調整して、配送業者の請求書を自動的に受け取らない場合、運賃請求書に基づいて請求書を作成できます。  
+運賃を手動で調整して、配送業者の請求書を自動的に受け取らない場合、運賃の請求に基づいて請求書を作成できます。  
 1. [関連情報] をクリックします。
 2. [運賃請求書の詳細] をクリックします。
 3. [運賃請求書の請求書の生成] をクリックします。

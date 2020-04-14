@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 303a529b3d70735beb720d46df1167659909a6ab
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ac352d7bf6001fd7782b55356d409e314f2210c9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183723"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140132"
 ---
 # <a name="setup-payment-fee-for-japan"></a>日本の支払手数料の設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、日本の支払手数料の設定について説明します。
 

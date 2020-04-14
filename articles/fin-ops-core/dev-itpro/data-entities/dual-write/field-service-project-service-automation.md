@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c53abc5deb226c67fde6cd62b1ad1fd55ee3021
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: c89b65d8de9f0b22d88c9bf254e4a64a2af0b22a
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112352"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172634"
 ---
 # <a name="support-for-field-service-solutions-and-project-service-automation-solutions"></a>Field Service ソリューションと Project Service Automation ソリューションへの対応
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 ## <a name="support-for-field-service-solutions"></a>Field Service ソリューションへの対応
 

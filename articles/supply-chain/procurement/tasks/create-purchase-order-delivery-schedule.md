@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e46d905145ba42fc2e74149736054125c36ff558
-ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
+ms.openlocfilehash: b43ec2aecd470c3993021f30cb4f2129ec34e567
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1855713"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149760"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>配送スケジュールと発注書の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、発注書の配送スケジュールを作成する方法を示します。 配送スケジュールは、注文または仕訳帳の数量を複数の出荷で配送する要求があるときに使用されます。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この手順は通常、購買担当者が行います。
 
@@ -44,7 +44,7 @@ ms.locfileid: "1855713"
 10. **新規** を選択します。
 11. **数量**フィールドで、残りの数量として `6` を入力します。
 - 出荷日フィールドで、最初の配送明細行の日付から 1 週間後となる日付を選択します。  
-- **合計**および**残余**フィールドを見ると、配送スケジュール行に割り当てられた合計数量を確認できます。 残余数量がゼロの場合、元の明細行の全数量がスケジュールに割り当てられています。  
+- **合計** および **残高** フィールドを見ると、配送スケジュール行に割り当てられた合計数量を確認できます。 残余数量がゼロの場合、元の明細行の全数量がスケジュールに割り当てられています。  
 12. **諸費用の変換**セクションを展開します。
 - ここのオプションでは、配送スケジュール行間での費用の配分の仕方を制御できます。 **総額をコピー**を選択すると、元の注文明細行の請求金額が各配送明細行にコピーされます。 **配送行への割り当て**オプションでは、各配送明細行の数量にしたがい、元の雑費明細行が分割されます。  
 13. **諸費用の変換**セクションを折りたたみます。

@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55bc7479ca9ba3ca86e23b5bee106ef169c40077
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94d5c3f6677ec10ea1b9ac3c488c3b8d7dc6856f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836394"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147483"
 ---
 # <a name="create-a-procurement-catalog"></a>調達カタログの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、調達カタログの作成方法を説明します。 通常、このタスクを実行するのは、調達担当者です。 さらに従業員が要求を作成する際にカタログを使用する方法も参照できます。 カタログを作成する前に、システム内に調達カテゴリ階層が必要です。 階層は、階層にあるすべての製品とともに、新しいカタログによって継承されます。 調達カテゴリ階層を使用する場合、さらに手順ステップで使用される例にも、このガイドをデモ データ会社 USMF で使用することができます。
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>調達カテゴリ階層が存在することを確認します。
-1. **ナビゲーション ウィンドウ > モジュール > 調達 > 調達カテゴリ**の順に移動します。 調達カテゴリ階層は USMF のデモ データ会社内で使用でき、製品は**オフィス機器/コンピュータ** カテゴリに追加されました。 この手順をタスク ガイドとして実行している場合は、カテゴリを参照するときガイドのロックを解除する必要があります。 階層を使用できない場合は、**新規**をクリックして階層を作成します。 これが実行可能な回数は一度だけです。  
+1. **ナビゲーション ウィンドウ > モジュール > 調達 > 調達カテゴリ**の順に移動します。 調達カテゴリ階層は USMF のデモ データ会社内で使用でき、製品は**オフィス機器/コンピュータ** カテゴリに追加されました。 この手順をタスク ガイドとして実行している場合は、カテゴリを参照するときガイドのロックを解除する必要があります。 階層を使用できない場合は、**新規** をクリックして階層を作成します。 これが実行可能な回数は一度だけです。  
 2. ページを閉じます。
 
 ## <a name="create-a-catalog"></a>カタログの作成

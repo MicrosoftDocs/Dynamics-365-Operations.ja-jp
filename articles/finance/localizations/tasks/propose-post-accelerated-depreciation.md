@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05f3a6175332125a8f9f60dafae41c945fe0b7e1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ece241505568f59868d232213596a343b068ab1f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174657"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144150"
 ---
 # <a name="propose-and-post-accelerated-depreciation"></a>増加償却の提案と転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本の場合、確認済加速償却ドキュメントのデータに基づいて加速償却を提案することができます。 注記: 加速償却の提案は通常の減価償却を提案しません。 この手順では、通常の減価償却の転記後に完了する必要があります。
 

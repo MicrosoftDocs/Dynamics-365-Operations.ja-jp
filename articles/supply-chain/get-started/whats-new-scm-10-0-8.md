@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097387"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164538"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 
@@ -32,13 +32,14 @@ ms.locfileid: "3097387"
 
 - **プレビュー リリース** 2019 年 12 月
 - **一般提供 (自己更新):** 2020 年 1 月
-- **自動更新:** 2020 年 2 月 
+- **自動更新:** 2020 年 2 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
 このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能の一部には、以前の差分リリースが含まれている場合もありますが、前回の*新機能*トピックでは発表されていないので、ここに追加します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 - [追加の場所ゾーン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [資産管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - 詳細については、[資産管理の概要](../asset-management/index.md) を参照してください。
 - [作業のキャンセル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) - 詳細については、[例外処理のための倉庫作業のキャンセル](../warehousing/cancel-warehouse-work.md)を参照してください。
 - [作業での作業プールの変更](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [クラスター位置フル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

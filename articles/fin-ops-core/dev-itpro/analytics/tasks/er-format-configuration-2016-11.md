@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1fd41b1724eb2e0405c0e7a7e0ff0aea4a945e0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: af2899da843967bfaaa8f3c66906fc8e3765b573
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184948"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142504"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER)の形式コンフィギュレーション作成方法について説明します。 このコンフィギュレーションの書式設定では、支払を処理するために使用される電子ドキュメントの書式を定義します。 この例では、サンプル会社 Litware、Inc. の形式コンフィギュレーションを作成します。これらの手順を完了するには、先に「選択したデータソースへのモデルのマッピング」の手順の各ステップを完了する必要があります。
+このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER)の形式コンフィギュレーション作成方法について説明します。 このコンフィギュレーションの書式設定では、支払を処理するために使用される電子ドキュメントの書式を定義します。 この例では、サンプル会社 Litware、Inc. のフォーマット構成を作成します。この手順を完了するには、まず「選択したデータソースへのモデルのマッピング」に記載の手順のを完了する必要があります。
 
 
 ## <a name="create-a-new-format-configuration"></a>新しいコンフィギュレーションの書式設定の作成

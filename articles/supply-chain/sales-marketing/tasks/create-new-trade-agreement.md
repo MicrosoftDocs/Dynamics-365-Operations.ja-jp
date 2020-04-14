@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58ad2a5571138f1a82b021af63cdae9d567b92d8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a964b357ac9abb65cd097b084630a53f1553ad04
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835593"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146548"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 独自のデータを使用する場合は、このガイドの開始する前に、「価格 (販売)」に既定の取引関係が設定されている売買契約仕訳帳名が存在することを確認する必要があります。
+この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 独自のデータを使用する場合は、このガイドの開始する前に、"価格 (販売)" に既定の取引関係が設定されている売買契約仕訳帳名が存在することを確認する必要があります。
 
 
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>新しい売買契約仕訳帳の作成と転記

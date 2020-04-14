@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5edef25f02fdd73087669bbec8bfa9c5f72cf039
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 28865da268ccad5cf3d1dea892aaf2865718af1d
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138988"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 日本では、加速償却は、原則ドキュメントごとに申告されます。 各ドキュメントには複数の固定資産を含めることができます。 加速償却額を取得するためには、加速償却ドキュメントで過剰使用率を計算し、通常の減価償却量によって乗算する必要があります。 
 

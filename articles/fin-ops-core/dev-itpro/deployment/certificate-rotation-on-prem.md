@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 4c943d976d4e1e1533f540092df463f864cc6e5b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 57d40f70e2968ddc8a96ed45abcf043f7469c8c8
+ms.sourcegitcommit: e543350faaa3ff1217d21c8fd50cf90110df3ef2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033002"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3137256"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -84,7 +84,7 @@ ms.locfileid: "3033002"
     ```
 
 
-## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric Cluster 内での新しい証明書のアクティブ化
+## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric cluster 内での新しい証明書のアクティブ化
 
 ### <a name="service-fabric-with-certificates-that-are-not-expired"></a>期限切れになっていない証明書を含む Service Fabric
 
@@ -123,21 +123,21 @@ ms.locfileid: "3033002"
         "CertificateInformation":  {
                                         "ClusterCertificate":  {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
                                                                },
                                         "ServerCertificate":   {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
                                                                },
                                         "ClientCertificateThumbprints":  [
                                                                                                                                                                                            {
-                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
+                                                                                "CertificateThumbprint":  "Old client thumbprint",
                                                                                 "IsAdmin":  false
                                                                             },
                                                                             {
-                                                                                "CertificateThumbprint":  "New Client Thumbprint",
+                                                                                "CertificateThumbprint":  "New client thumbprint",
                                                                                 "IsAdmin":  true
                                                                             }
                                                                           ]

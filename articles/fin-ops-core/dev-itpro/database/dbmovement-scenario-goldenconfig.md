@@ -3,7 +3,7 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c97e4d8d980688c61d1ef7a487a51e9cf500206b
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: c4e956681b3c15fc8e3443b00b34a47799dedcd5
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029426"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150756"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -119,6 +119,25 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+
+--Tidy up the batch server config from the previous environment
+DELETE FROM SYSSERVERCONFIG
+
+--Tidy up server sessions from the previous environment
+DELETE FROM SYSSERVERSESSIONS
+
+--Tidy up printers from the previous environment
+DELETE FROM SYSCORPNETPRINTERS
+
+--Tidy up client sessions from the previous environment
+DELETE FROM SYSCLIENTSESSIONS
+
+--Tidy up batch sessions from the previous environment
+DELETE FROM BATCHSERVERCONFIG
+
+--Tidy up batch server to batch group relation table
+DELETE FROM BATCHSERVERGROUP
+
 -- Clear encrypted hardware profile merchant properties
 update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```

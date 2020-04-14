@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04ce158a833d04122ee5a724165b06925cea1185
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2cfec44bc1c767dff1109c4ecd4e2862443fb1d0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023176"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141502"
 ---
 # <a name="configure-credit-card-processing"></a>クレジット カード処理のコンフィギュレーション
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この手順は、支払プロバイダの一覧を表示し、売掛金勘定の支払口座を構成する方法を説明しています。 この手順では、デモ データの会社 USRT を使用し、管理者および IT プロフェッショナルを対象としています。
 

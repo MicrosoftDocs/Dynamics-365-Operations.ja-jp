@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7dc5b37739bb790f67149e8de4fc49334b04e7af
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f45e601ccbbcd380bac8f6ce990ea3db28778f38
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174663"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140058"
 ---
 # <a name="inquiries-of-payment-fee-on-journal"></a>仕訳帳の支払手数料の照会
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。 
 

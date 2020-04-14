@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72f017294c976dcd1b7ddda01ac9e39252f036d6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250282"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143364"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーの設定
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、仕入先請求ポリシーを設定する方法について説明します。 [仕入先請求ポリシー] は、[仕入先請求書] ページを使用して仕入先請求書を転記するか、仕入先請求書の [ポリシー違反] ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
 
@@ -50,7 +50,7 @@ ms.locfileid: "2250282"
 1. **ナビゲーション ウィンドウ > モジュール > 買掛金勘定 > ポリシー設定 > 仕入先請求書ポリシー ルール タイプ**の順に移動します。
 2. **新規** を選択します。
 3. **ルール名**および**説明**フィールドに、値を入力します。
-4. **クエリ名**フィールドで、ドロップ ダウン ボタンを選択してルックアップを開き、目的のレコードを選択します。
+4. **クエリ名** フィールドで、ドロップ ダウン ボタンを選択してルックアップを開き、目的のレコードを選択します。
 5. **保存** を選択します。
 6. ページを閉じて、ホーム ページに戻ります。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55f640641bb6aad35fe48b1e9e4e193e5c3b0453
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 2e43b6e93f1b0b25b0657d1dfe0b7c54cc4f637c
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983638"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154145"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -73,8 +73,8 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 ### <a name="configure-visual-studio-to-connect-to-your-team-project"></a>Visual Studio をコンフィギュレーションしてチーム プロジェクトに接続する
 
-1.  管理者として Visual Studio 2013 を起動します。
-2.  **プロジェクト &gt; オプション &gt; ソース管理 &gt; プラグインの選択**の順にクリックします。
+1.  管理ユーザーとしてログインしている場合は、Visual Studio を管理者として起動します。
+2.  **ツール &gt; オプション &gt; ソース管理 &gt; プラグインの選択** の順にクリックします。
 3.  現在のソース管理プラグイン フィールドで **Visual studio Team Foundation Server** を選択します。
 4.  **チーム &gt; Team Foundation Server に接続** を選択します。
 5.  **チーム エクスプローラー**で、**チーム プロジェクトの選択**をクリックします。
@@ -94,7 +94,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 1. Visual studio の**チーム エクスプローラー**で、このドキュメントで前に説明したようにチーム プロジェクトに接続します。
 2. **ソース管理エクスプローラー**から**チーム エクスプローラー**を開きます。
-3. チーム プロジェクトの**メタデータ** フォルダーを、ローカル ドライブ上のモデル ストアのルート フォルダー (通常は c:\\packages) にマップします。例を以下の図に示します。
+3. チーム プロジェクトの **メタデータ** フォルダーを、ローカル ドライブのモデル ストアのルート フォルダー (通常は K:\\AOSService\\PackagesLocalDirectory) にマップします。例を以下の図に示します。
 
     > [!NOTE]
     > マシンの構成によっては、モデル ストアが I:\\AosService\\PackagesLocalDirectory または別のドライブの配下にある場合があります。
@@ -102,7 +102,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
 4. **マップ**をクリックし、次のダイアログ ボックスで、**No** をクリックします。
-5. 同様に、Visual Studio ソリューションとプロジェクト ファイルを保持する <strong>/Trunk/Main/Projects **サーバー フォルダーから**ローカル プロジェクト フォルダー</strong>にマッピングします。
+5. 同様に、**/Trunk/Main/Projects** サーバー フォルダーを、Visual Studio ソリューションとプロジェクト ファイルを保持する **ローカル プロジェクト フォルダー** にマッピングします。
 
 ## <a name="scenario-1-open-the-fleet-management-solution-and-add-it-to-azure-devops-source-control"></a>シナリオ 1: フリート管理ソリューションを開き、Azure DevOps ソース管理に追加する
 このセクションでは、Azure DevOps のソース管理にソリューションを追加するために必要なステップについて説明します。 このシナリオは、新しいモデルで開発を開始し、初めてソース管理に追加する場合に関係します。 コード移行シナリオまたは他の開発者により作成された新しいモデルを同期する場合は、以下のシナリオ 2 を参照してください。
@@ -147,7 +147,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 4.  **完了** をクリックします。
 
     > [!NOTE]
-    > ソリューションに 2 つのモデルの要素が含まれているため、ソース管理に追加のモデル記述子ファイルを追加する必要があります。C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+    > ソリューションに 2 つのモデルの要素が含まれていたため、ソース管理に追加のモデル記述子ファイルを追加する必要があります: K:\\AOSService\\PackagesLocalDirectory\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
 
 5.  保留中の品目をチェックインします。 これで、Azure DevOps の最新のクラウド ベースのソース コントロール システムとその他の多くのアプリケーション ライフ サイクルの機能を使用して、項目のフリート管理アプリケーションの開発の準備が整いました。
 

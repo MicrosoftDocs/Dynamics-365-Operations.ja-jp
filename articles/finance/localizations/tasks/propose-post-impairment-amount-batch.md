@@ -16,16 +16,16 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a2b6fb1f21d8011592f2c376437d81fe0f2e8e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5cfb1dce736478df2d1aed50cd22ec375ca0de1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183732"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144149"
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch"></a>バッチごとの減損損失の提案と転記
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクは、バッチによる減損損失額の提案と転記について説明します。 このタスクを完了するには、減損テストが確認され、保存されている必要があります。 この手順では、JPMF デモ会社のデータを使用します。
 

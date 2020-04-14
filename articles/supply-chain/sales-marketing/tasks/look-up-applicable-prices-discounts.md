@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 1ded87dcd553c0aa9c19ca273460f9adf0a4b542
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025831"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148633"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。 この手順では、特定の例について説明します。必要な値を選択するには、USMF のデモ会社を使用したこの例に従う必要があります。
 

@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0247e50f03e61d8a04020d020c13afb812937b9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fefb33d568153670dbcb92db478e33db806809fc
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837881"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147099"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>BOM 明細行イベントかんばんルールの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスクは、古典的な実稼働環境と混合リーン内の生産 BOM 明細行の供給を確認するイベントかんばんルールを作成するのに必要な設定を対象としています。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリーム マネージャーを対象としています。
 

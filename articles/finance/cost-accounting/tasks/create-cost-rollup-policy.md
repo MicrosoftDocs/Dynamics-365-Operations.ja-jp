@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: facffeaf8d880bad01877b420197e29b6791ebbf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ff37655150596a4be8088e20b43f626f97262aba
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137848"
 ---
 # <a name="create-a-cost-rollup-policy"></a>原価ロールアップ ポリシーの作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順では、原価ロールアップ ポリシーとポリシーのルールを作成する方法を示します。 この手順の作成に使用されたデモ データの会社は、USP2 です。
 

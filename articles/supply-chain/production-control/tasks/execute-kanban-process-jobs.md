@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08fddd6404bf835283adaca14ad7ceb851f5a489
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7ebae3fac556348aafa595e6e21caf9cd6b44ba4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837641"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149024"
 ---
 # <a name="execute-kanban-process-jobs"></a>かんばんプロセス ジョブの実行
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 この手順は、かんばんプロセス ジョブの実行を対象としています。 最初のジョブでは、予定数量が完了されずエラーはありません。 2 番目のジョブはエラーで完了されます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、機械オペレーターを対象としています。
 

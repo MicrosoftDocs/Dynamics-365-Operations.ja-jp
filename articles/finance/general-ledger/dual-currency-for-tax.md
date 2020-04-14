@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124096"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161595"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>消費税の二重通貨サポート
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Dynamics 365 Finance 用の二重通貨機能は、バージョン 8.1 (2018 年
 
 以前のバージョンでは、トランザクションは次の順序でレポート通貨に変換されました。 
 
-トランザクションの合計がトランザクション通貨で計算 > トランザクション金額が会計通貨に換算 > 会計通貨金額がレポート通貨に変換
+- トランザクションの合計がトランザクション通貨で計算 > トランザクション金額が会計通貨に換算 > 会計通貨金額がレポート通貨に変換
 
 二重通貨機能を有効にすると、トランザクションは次の順序でレポート通貨に変換されます。
 
@@ -48,8 +48,6 @@ Dynamics 365 Finance 用の二重通貨機能は、バージョン 8.1 (2018 年
 - レポート通貨での税決済の自動残高 (バージョン 10.0.11 のリリース)
 
 消費税の二重通貨サポートにより、税の通貨での税額が正確に計算され、会計通貨とレポートの通貨の両方で消費税精算残高が正確に計算されるようになります。 
-
-新しい機能は、プライベート プレビューの顧客で現在有効になっています。 機能を有効にするには、対応するチャネルを通じて Microsoft にサービス要求を生成します。
 
 ## <a name="sales-tax-conversion"></a>消費税の換算
 

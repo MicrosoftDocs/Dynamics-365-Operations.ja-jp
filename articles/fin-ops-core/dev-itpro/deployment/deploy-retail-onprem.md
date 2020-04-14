@@ -3,7 +3,7 @@ title: オンプレミス環境での小売チャネルのコンポーネント�
 description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3d27706f1f2d575fef10e86a3926683929ef2b84
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: af3d9c2f6cebefca67d86c46a8db03f5deab8bf9
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057128"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154354"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -48,13 +48,13 @@ ms.locfileid: "3057128"
 3. いづれかのAOSコンピュータ (どれでも構いません) 上で、次のPowerShellスクリプトを実行します。
 
     ```powershell
-    .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
+    .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/' -SendProductSupportTelemetryToMicrosoft
     ```
     > [!IMPORTANT]
     > 上記の手順は、バージョン10.0以降にて有効です。  Retail オンプレミス機能のオリジナル 8.1.3 版では、オリジナルバージョンのスクリプト区切り文字を使用する必要があります。
     >
     > ```powershell
-    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
+    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
     > ```
     > - パラメーター **- envName** は、環境が生成されるときに作成時に既知である必要があります。
     > - 従来のパラメータ **-DatabaseServer** および **-DatabaseName** が環境設定に基づいて認識される必要があります。

@@ -1,28 +1,28 @@
 ---
 title: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 description: このトピックでは、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
-author: jashanno
+author: rapraj
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: rapraj
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 041a9bfd794d4f712eda8a9e1e92ea7eff2ca6ed
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 37d1d360f37387b2d9fa4eb6f5454299714363ba
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004611"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150755"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -41,25 +41,23 @@ ms.locfileid: "3004611"
 | ----------------------|-------- | ----------- |
 | Microsoft Dynamics AX | 2012 R3  | 6.3 |
 | Microsoft Dynamics AX | 7        | 7.0  |
+| Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
 
 ## <a name="current-certification"></a>現在の証明
 
 | リリース  | バージョン | ビルド  |
 | ----------------------------|---------------------- | ----------- |
-| Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [2017 年 7 月 *](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
-| Microsoft Dynamics 365 Retail | [2017 年 7 月](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+| Microsoft Dynamics 365 for Retail | [2017 年 7 月](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+| Microsoft Dynamics 365 for Finance and Operations | [10.0](https://www.microsoft.com/download/details.aspx?id=101059) | 10.0 |
 
-\*このリンクの PDF ドキュメントは、Dynamics 365 Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
+\*このリンクの PDF ドキュメントは、Dynamics 365 for Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
 
 ## <a name="certification-in-progress"></a>進行中の証明書
 
 | リリース  | バージョン | ビルド |
 | ---------------------------|----------------------- | ----------- |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
-| Microsoft Dynamics 365 Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
-| Microsoft Dynamics 365 for Finance and Operations | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8) | 8.0 |
-| Microsoft Dynamics 365 Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.1 | 8.1 |
-| Microsoft Dynamics 365 Retail | 8.1  | 8.1 |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 10.0.6| 10.0.6 |
+| Microsoft Dynamics 365 for Retail | 10.0.8| 10.0.8 |
+
 

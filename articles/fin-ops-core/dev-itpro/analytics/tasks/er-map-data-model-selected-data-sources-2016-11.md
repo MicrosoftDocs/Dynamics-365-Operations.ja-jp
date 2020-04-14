@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44f6ac3263f115e76d054e68c99d58dc11e6f1a0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf19d69c498da32594e17e16fb83ed25e6747982
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182235"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142996"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER データ モデルを選択したデータ ソースにマップする
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) データ モデルを選択したデータ ソースにマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。
+次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) データ モデルを選択したデータ ソースにマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、まず 「モデル マッピングのためのデータ ソースを選択する」 に記載の手順を完了する必要があります。
 
 
 ## <a name="open-er-configurations-tree"></a>ER コンフィギュレーション ツリーを開く
@@ -36,7 +36,7 @@ ms.locfileid: "2182235"
 
 ## <a name="select-created-model-mapping"></a>作成したモデル マッピングの選択
 1. ツリーで、「支払 (単純化モデル)」を選択します。
-    * モデル コンフィギュレーション「支払 (単純化モデル)」が事前に作成されていることを確認します。 そうでない場合は、今すぐ停止し、タスク ガイド「選択したドメインのデータ モデルに対する新しいコンフィギュレーションの作成」の完了後に戻ります。  
+    * モデル 構成 「支払（単純化モデル）」 が事前に作成されていることを確認します。 これができていない場合は、設定を停止し、タスク ガイド 「選択したドメインのデータモデルで新しい設定を作成する」 記載の手順を完了した後で再度設定を行ってください。  
 2. [モデル デザイナー] をクリックします。
 3. [モデルからデータ ソースへのマップ] をクリックします。
 4. 「CT mapping」のレコードを選択します。
