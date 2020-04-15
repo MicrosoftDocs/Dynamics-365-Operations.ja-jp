@@ -17,16 +17,16 @@ ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7699f426c102b4ae2610db0851ddd127e514b652
-ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
+ms.openlocfilehash: 06d251992c7facca471ac893e5a0fee333e0cbed
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1871032"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148656"
 ---
 # <a name="enter-sales-agreements"></a>販売契約書の入力
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このトピックでは、一定期間に特別割引で、同意した金額の製品を購入するよう顧客の 1 人にコミットする販売契約書を作成する方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "1871032"
 
 ## <a name="set-up-product-value-commitment-lines"></a>製品価値確約明細行の設定
 1. **明細行の追加**を選択します。
-2. **品目番号**フィールドで、ドロップダウン メニューから目的のレコードを選択します。 契約のために選択した確約のタイプは、契約項目に入力できる情報の種類に影響します。 たとえば、値ベースの契約の場合は、顧客が商品を購入するためにコミットする合計正味金額 (合意された通貨で) を指定する必要があります。 この例では、顧客が製品の特定の値を購入する契約を作成しているため、明細行の**数量**および**単位**フィールドは使用できません。   
+2. **品目番号**フィールドで、ドロップダウン メニューから目的のレコードを選択します。 契約のために選択した確約のタイプは、契約項目に入力できる情報の種類に影響します。 たとえば、値ベースの契約の場合は、顧客が商品を購入するためにコミットする合計正味金額 (合意された通貨で) を指定する必要があります。 この例では、顧客が製品の特定の値を購入する契約を作成しているため、明細行の **数量** と **単位** のフィールドを使用できません。   
 3. **正味金額**フィールドに、顧客が購入することを確定した金額を入力します。
 4. **割引率**フィールドでは、この契約にリンクされている顧客の販売注文明細行に適用されるパーセンテージ値を入力します。
 5. **行の詳細**セクションを展開します。

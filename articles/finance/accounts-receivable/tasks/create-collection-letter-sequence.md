@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a317fba4f30ab9fefe6b12637d53fda141d354bf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f76f6539e8f318b75c8ec8f53020eb7052ec45
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188881"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137925"
 ---
 # <a name="create-a-collection-letter-sequence"></a>督促状順序の作成
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 このタスク ガイドを使用し、督促状順序を作成します。 このタスクでは、USMF というデモ会社を使用します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "2188881"
 11. この督促状の転記時に請求される手数料を入力します。
 12. **品目売上税グループ** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。 費用に基づいて売上税を計算する必要がある場合、品目売上税グループを選択します。  
 13. 一覧で、選択された行のリンクをクリックします。
-14. **最小期限切れ残高**フィールドで、督促状を送信する前に必要な最小期限切れ残高を入力します。
+14. **最小期限切れ残高** フィールドで、督促状を送信する前に必要な最小期限切れ残高を入力します。
 15. **日**フィールドに、支払猶予日数を入力します。 これは、督促状が生成される期日から数えた日数です。 計算に使用される期日は、督促状順序における督促状の位置によって異なります。
     - 督促状 1 の支払猶予期間は請求書の期日に関連しています。
     - 督促状 2 以降の支払猶予期間は、売掛金勘定パラメーターのページの、督促状コードの更新フィールドの選択によって、以前の督促状が転記又は印刷される日付と連動しています。  
