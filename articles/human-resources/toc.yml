@@ -5,6 +5,12 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 4 月 13 日
+          href: hr-whats-new-2020-04-13.md
+        - name: 2020 年 4 月 3 日
+          href: hr-whats-new-2020-04-03.md
+        - name: 2020 年 3 月 24 日
+          href: hr-whats-new-2020-03-24.md
         - name: 2020 年 3 月 19 日
           href: hr-whats-new-2020-03-19.md
         - name: 2020 年 3 月 10 日
@@ -401,7 +407,7 @@
               href: hr-compensation-process.md
         - name: 福利厚生の管理
           items:
-            - name: 'プレビュー機能: 福利厚生の管理'
+            - name: 給付金管理
               items:
                 - name: 福利厚生の管理の概要
                   href: hr-benefits-management-overview.md
@@ -445,12 +451,8 @@
                   items:
                     - name: 福利厚生計画の設定
                       href: hr-benefits-plans-setup.md
-                    - name: 作業者の福利厚生計画の作成
-                      href: hr-benefits-plans-worker.md
                     - name: フレックス クレジット プログラムの設定
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: 将来のライフ イベントのコンフィギュレーション
-                      href: hr-benefits-plans-future-life-events.md
                 - name: 福利厚生計画の処理
                   items:
                     - name: 登録適格性の処理
@@ -497,8 +499,10 @@
               href: hr-leave-and-absence-plans.md
             - name: 休暇計画への作業者の割り当て
               href: hr-leave-and-absence-enroll.md
-            - name: 休暇および欠勤計画の見越計上
+            - name: 休暇計画の累計
               href: hr-leave-and-absence-accrue.md
+            - name: 休暇の中断
+              href: hr-leave-and-absence-suspend-leave.md
             - name: 休暇および欠勤の分析の表示
               href: hr-leave-and-absence-analytics.md
             - name: 休暇および欠勤要求の管理
