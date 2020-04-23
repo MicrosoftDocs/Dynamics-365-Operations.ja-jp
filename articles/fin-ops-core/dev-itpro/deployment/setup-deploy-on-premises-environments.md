@@ -11,18 +11,18 @@ ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
+ms.custom: NotInToc
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d58f6c0a95f9f4b46ce8399e319a6e70cac8434b
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: 3b841058284cc7db18b1b4607b782ce2145a02bc
+ms.sourcegitcommit: d27803a29a1668cf1932e848ed40be87a663807c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100485"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176773"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3601539520dc47aa3929b5c463aae97c69103b4e
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: e2aeaabfaca1487a6a35db00594bbcb3dcc71d9e
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100297"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249076"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -71,12 +71,12 @@ Finance and Operations アプリのタスク レコーダーは、高い応答�
 5.  **新しい記録の作成**をクリックします。
 6.  記録名を入力し、**開始**をクリックします。 記録は、**開始** がクリックされると開始されます。 このチュートリアルのフリート例については、名前「新しいレンタル予約の作成」を使用します。
 
-> [!NOTE]
-> **保存ビュー** 機能が有効になっている場合、記録は、公開済みのビューまたは標準ビューのいずれかを使用して作成し、記録がユーザーにとって信頼性を持って機能することを確実にします。 
-        
-    During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
+    記録中、右上隅の "**X**" をクリックすると、記録を停止することなく、ウィンドウが非表示になります。 画面の上部に表示される **タスク レコーダー** メニュー ボタンをクリックして、ウィンドウを再度開くことができます。 このアイコンは、記録中にのみ表示されます。 
     
-    [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+    [![この画像は、記録中にタスク レコーダー ウィンドウを開けられるタスク レコーダー ツールバー ボタンを示しています。](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+
+    > [!NOTE]
+    > **保存ビュー** 機能が有効になっている場合、記録は、公開済みのビューまたは標準ビューのいずれかを使用して作成し、記録がユーザーにとって信頼性を持って機能することを確実にします。 
 
 7.  **タスク レコーダー**が**記録モード**になります。 このウィンドウには、記録プロセスに関連付けられている情報とコントロールが表示されます。 表示されるボタンの使用方法の詳細については、[記録コントロールを使用するセクション](#recording-controls) を参照してください。
 

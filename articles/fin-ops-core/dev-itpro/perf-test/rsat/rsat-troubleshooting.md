@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbc3dacedbe02f7fe4ae35760590b0b9f622de8c
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 467a9d9f5c3a935d9252dc1465d2e6588916f0db
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029388"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248700"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング 
 
@@ -31,7 +31,23 @@ ms.locfileid: "3029388"
 
 ## <a name="playback-logs"></a>再生ログ
 
-再生中にツールの問題のトラブルシューティングを行うには、**C:\Users\$YourUserName\AppData\Roaming\regressionTool\playback\[TestName]Log.txt** にある開発者エラー ログを開きます。 エラーメッセージを分析して、エラーが発生する可能性がある原因を特定します。
+テスト ケースの再生中に発生する問題のトラブル シューティングを行うには、**[RSAT の作業ディレクトリ]\\[テスト ケース ID]\\playback\\[TestName]Log.txt** にある開発者向けエラーログを開いてください。 RSAT の作業ディレクトリは、RSATの [設定] ダイアログで指定されているディレクトリです。
+エラーメッセージを分析して、エラーが発生する可能性がある原因を特定します。
+
+[!NOTE] RSAT のバージョンが 1.210 よりも古い場合、ログは **C:\\ユーザー\\[YourUserName]\\AppData\\Roaming\\regressionTool\\playback\\[TestName]ログ .txt**に格納されます。
+
+## <a name="generator-logs"></a>ジェネレーター ログ
+
+テストの実行およびパラメータ ファイル生成時のエラーのトラブル シューティングを行うには、ジェネレーター ログ を有効にします。
+
+RSAT のインストール フォルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) 配下にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
+
+    ```xml
+    <add key="LogGeneration" value="true" />
+    ```
+テストの実行ファイルが生成されると、ログファイルが **[RSATの作業ディレクトリ]\\[テストケースID]\\generatorLogs** 配下に生成されます。
+
+[!NOTE] RSAT のバージョンが 1.210 よりも古い場合、ログは **C:\\ユーザー\\[Username]\\AppData\\Roaming\\regressionTool\\generatorLogs** に生成されます。
 
 ## <a name="authentication-certificate-and-installation"></a>認証証明書およびインストール
 
@@ -45,7 +61,7 @@ ms.locfileid: "3029388"
 
 ## <a name="screen-resolution"></a>画面の解像度
 
-テストを正常に実行するには、デスクトップの解像度を 100% に設定する必要があります。 設定を変更するには、次の図に示すように、Windows の **ディスプレイ設定 > 拡大縮小とレイアウト** を使用します。
+ブラウザーに Internet Explorer を使用している場合、テストを正常に実行するには、デスクトップの解像度を100% に設定している必要があります。 設定を変更するには、次の図に示すように、Windows の **ディスプレイ設定 > 拡大縮小とレイアウト** を使用します。
 
 ![画面の解像度の設定](media/screen-resolution.png)
  

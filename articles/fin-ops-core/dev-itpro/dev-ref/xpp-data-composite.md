@@ -3,7 +3,7 @@ title: X++ 複合データ型
 description: このトピックでは、X++ の複合データ型について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b6beeb05448ed675729fd85c7dfadcd6a3019cc
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 084f39f389f8508b00ec8d72dc3336d8f7d411a5
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872654"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249073"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 
@@ -140,7 +140,7 @@ public void CallTheMacro()
 
 **リスト** オブジェクトを作成するときは、**リスト** オブジェクトが格納できるデータの 1 つのタイプを決定します。 この制限は、コンテナの場合よりも**リスト**の柔軟性が低くなります。 ただし、**リスト**のオブジェクトを格納できますが、コンテナーでは値の型しか格納できません。 コンテナーと配列の違いは、配列は宣言された型の項目だけを保持できるという点です。 配列にメモリ容量を割り当て、後からその容量に値を入力することができます。 たとえば、ループに値を入力することができます。 この動作は効率的であり、適正に動作します。 新しいデータを追加して新しいコンテナーを作成するときは、**+=** 演算子かまたは **conIns** 機能のいずれかを使用します。 **+=** 演算子は高速の代替です。 **conIns** 関数は、元のデータの最後のインデックスの前に新しいデータを追加する場合にのみ使用します。 
 
-Dynamics AX 2012 では、コンテナーのオブジェクト参照を格納するために X++ コンパイラを使用できましたが、結果は実行時に失敗していました。 ただし、Finance and Operations アプリケーションで、コンパイラがコンテナー内のオブジェクト参照を格納しようとする試みを確認すると、エラー メッセージを出します。 コンテナーに追加される要素のタイプが **anytype** である場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。 この場合、コンパイラでは、ユーザーが実行している操作をユーザーが認識していると想定するため、試行が許可されます。 コンパイラはコードを誤っていると診断しませんが、エラーは実行時間にスローされます。
+Dynamics AX 2012 では、コンテナーのオブジェクト参照を格納するために X++ コンパイラを使用できましたが、結果は実行時に失敗していました。 ただし、Finance and Operations アピリケーションでは、コンテナー内のオブジェクト参照を格納しようとすると、コンパイラがエラー メッセージを表示します。 コンテナーに追加される要素のタイプが **anytype** である場合、コンパイラーは値は参照タイプであるかどうかを決定することをできません。 この場合、コンパイラでは、ユーザーが実行している操作をユーザーが認識していると想定するため、試行が許可されます。 コンパイラはコードを誤っていると診断しませんが、エラーは実行時間にスローされます。
 
 ### <a name="container-examples"></a>コンテナーの例
 
@@ -194,7 +194,7 @@ public void ContainerExample()
     myContainer33 += [34, "banana"];
 }
 
-// List class example. In this example, variable2 and variable3 refer to the same List object.
+// Container example. In this example, variable2 and variable33 hold different containers.
 static void JobC(Args _args)
 {
     container variable2, variable33;
@@ -203,7 +203,7 @@ static void JobC(Args _args)
     variable2 += [97];
 }
 
-// Container example. The variable2 and variable3 hold different containers.
+// List class example. In this example, variable2 and variable33 refer to the same List object.
 static void JobL(Args _args)
 {
     List variable2,variable33;
@@ -250,7 +250,7 @@ static void UseQuery()
 
 クラスはソース コードに入れ子にできます。 入れ子になったクラスはフォーム内 (**FormRun** を拡張するクラスなど) でのみ使用でき、コントロール、データ ソースまたはデータ フィールドを表すために使用します。 属性の修飾で接尾語に**属性**がある場合、属性の修飾などのクラスまたはメソッドで、属性名の接尾語を省略できます。 したがって、X++ は **\[MyFavoriteAttribute\]** を必要とするのではなく、**\[MyFavorite\]** を許可します。 また、属性はデリゲートとメソッドのハンドラーに現在適用され、ハンドラーをこれらのターゲットにマップします。 
 
-AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、Finance and Operations アプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
+AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、Finance and Operations のアプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通の中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
 
 ### <a name="private-and-protected-member-variables"></a>プライベートおよび保護されたメンバー変数
 

@@ -1,9 +1,9 @@
 ---
-title: Finance and Operations アプリ (2020 年 5 月) のプラットフォーム更新 34 の機能プレビュー
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 34 でプレビューされている機能について説明します。
+title: Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム（2020 年 5 月）
+description: このトピックでは、Finance and Operationsアプリ バージョン10.0.10 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,25 +17,22 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 639e7eb5b15e9ad460f3c24d5155bd7091f768a2
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 5afa038fe9683c35b42bbb1408f25eba7f3666b8
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112277"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249048"
 ---
-# <a name="preview-features-in-platform-update-34-for-finance-and-operations-apps-may-2020"></a>Finance and Operations アプリ (2020 年 5 月) のプラットフォーム更新 34 の機能プレビュー
+# <a name="platform-updates-for-version-10010-of-finance-and-operations-apps-may-2020"></a>Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム（2020 年 5 月）
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 34 の新機能または変更された機能についてプレビューします。 このバージョンのビルド番号は 7.0.5600 で、次のスケジュールで使用できます。
+このトピックでは、Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラムの一覧を表示します。 この更新プログラムは、*プラットフォーム更新プログラム 34*と呼ばれていました。このバージョンには、ビルド番号 7.0.5600 が付与されており、次のスケジュールで利用できます：
 
 - **プレビュー リリース :** 2020 年 3 月
 - **一般提供 (自己更新) :**  2020 年 4 月
 - **自動更新 :** 2020 年 5 月
-
-プラットフォーム更新プログラム 34 の詳細については [追加リソース](whats-new-platform-update-33.md#additional-resources) を参照してください。
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -46,9 +43,9 @@ ms.locfileid: "3112277"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-update-34-bug-fixes"></a>プラットフォーム アップデート 34 のバグ修正プログラム
+### <a name="bug-fixes"></a>バグ修正
 
-各更新プログラムに含まれるバグ修正の詳細については、LCS にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb) を参照してください。
+この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb) を参照してください。
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン
 

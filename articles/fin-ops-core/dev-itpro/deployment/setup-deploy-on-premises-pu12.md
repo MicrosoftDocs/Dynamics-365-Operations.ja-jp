@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: e38dd81ef648931dfe57ac2c8a9f4914042e0638
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 3d9d1807faf6a34bc78a96030139e0933c5042a3
+ms.sourcegitcommit: 33737d8356450e3f52097d49e7d59d81cf97628c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127965"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3233667"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -416,7 +416,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 4. 各証明書の **ProtectTo** でユーザーまたはグループのセミコロンで区切られた一覧を指定します。 **ProtectTo** タグで指定された Active Directory ユーザーとグループのみに、スクリプトを使用してエクスポートされる証明書をインポートするアクセス許可があります。 エクスポートした証明書を保護するため、スクリプトによりパスワードがサポートされていません。
 
-5. 証明書を .pfx ファイルにエクスポートします。
+5. 証明書を .pfx ファイルにエクスポートします。 エクスポートの一環として、このスクリプトは、証明書に正しい暗号化プロバイダが設定されているかどうかをチェックします。 
 
     ```powershell
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
@@ -554,11 +554,14 @@ Finance + Operations の展開とサービスは、オンプレミスのロー�
 2. 次のスクリプトを **インフラストラクチャ** フォルダーから実行して、証明書が既に登録されているかどうかを確認します。
 
     ```powershell
-    Install-Module AzureRM
-    Import-Module AzureRM
+    Install-Module Az
+    Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
     ```
 
+    > [!IMPORTANT]
+    > 既に AzureRM をインストールしている場合は、PowerShell 5.1 の既存の AzureRM インストールと互換性がない可能性があるのため、削除してください。 詳細については、[Azure PowerShell を AzureRM から Az に移行する](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az) を参照してください。
+  
 3. 証明書が登録されていないことをスクリプトが示している場合は、次のコマンドを実行します。
 
     ```powershell

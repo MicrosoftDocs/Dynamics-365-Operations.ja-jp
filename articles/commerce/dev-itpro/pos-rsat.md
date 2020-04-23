@@ -3,7 +3,7 @@ title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: bbbcf5ed40eeb602a66e1156999f2e89a95908e3
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: acfd64af6ed4b4fc0a9afdb608056f6b77548d47
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161790"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249024"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -314,6 +314,20 @@ RSAT で、**読み込み**を選択して、テスト ケースとテスト ケ
 RSAT で、変更する 1 つ以上のテスト ケースを選択してから、**編集**を選択します。 選択したテスト ケースごとに Excel ウィンドウが開きます。 または、作業ディレクトリから直接 Excel ファイルを開くこともできます。
 
 Excel ファイルには、**概要**タブに加えて、生成されたすべての変数の詳細を示す**変数**タブが含まれています。 POS は、記録セッション中に入力されたすべての入力値に対して、変数を自動的に生成します。 変数を個別に生成する必要はありません。 各変数には、一意の変数 ID があります。この ID は、テスト実行の 1 つのインスタンスで別のテスト ケースに順番に渡すことができます。 **変数**タブのすべての変数は、記録セッション中に入力された順序で表示されます。
+
+POS のテストケース間で変数または値を渡すには、RSAT ツールでテスト ケースを選択し、ツールの [Excel] アイコンを選択して、Variables.xlsx ファイルを開きます。 変数 ID (列C) 値をコピーして、[変数値] フィールド (列D) に貼り付けます。 たとえば、**テストケース 1 - variable.Xlsx** から **テストケース 2 - variable.Xlsx** へのレシート ID を渡すには、列C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe から変数 ID 値をコピーします。 変数値列 D の値を、テストケース2 - variable.xlsx ファイルに、次のように中括弧を使用して貼り付けます：**{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+
+### <a name="test-case-1--variablexlsx"></a>テストケース 1 – Variable.xlsx
+
+| A （説明）            | B（表示名） | C（変数 ID）| D（変数の値） |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| レシート ID "HOU123R456" | ShowJournalView        | c8cc0571-9a27-b3c5-0749-c26c3cca6afe   | HOU123R456     |
+
+### <a name="test-case-2--variablexlsx"></a>テストケース 2 – Variable.xlsx
+
+| A （説明）            | B（表示名） | C（変数 ID）| D（変数の値） |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| レシート ID "HOU123R456" | ShowJournalView  | 80f23afa-5b76-5442-d16a-6cc9b8b245cb| **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** |
 
 ### <a name="validate-expected-values"></a>予測値の検証
 

@@ -3,7 +3,7 @@ title: 新しい Retail Server 拡張機能の作成
 description: このトピックでは、新しい Commerce Scale Unit 拡張機能の作成方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/25/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 7df5f001f4596dc2b57187e4e5aa14ac65c2f46b
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 1bb5d59bbd4e4d247b6747b9fe40579e89ba7327
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070776"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259598"
 ---
 # <a name="create-a-new-retail-server-extension"></a>新しい Retail Server 拡張機能の作成
 
@@ -146,6 +146,14 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
         }
     }
     ```
+
+> [!NOTE]
+> 同一のエンティティの EdmModelExtender クラスではエンティティ名の重複を避けてください。 これにより、プロキシ生成時に複数のマネージャ クラスとアダプタのクラスが作成されます。 例えば、**CustomEntity1** が拡張コードによって作成された新しいエンティティである場合、EdmModelExtender では、エンティティの名前が **CustomEntity1Sample** であれば、それが使用されている場所に同じ名前を使用します。 同一のエンティティに対して別の名前を使用しないでください。
+
+```C#
+    builder.BuildEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+    action.ReturnsCollectionFromEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+```
 
 6. 拡張機能プロジェクトをビルドし、バイナリを **\\RetailServer\\webroot\\bin\\Ext** フォルダーにドロップします。
 7. **extensionComposition** セクションで新しい Commerce Scale Unit 拡張ライブラリ名を追加して、**\\RetailServer\\Webroot** フォルダーの Commerce Scale Unit web.config ファイルを更新します。

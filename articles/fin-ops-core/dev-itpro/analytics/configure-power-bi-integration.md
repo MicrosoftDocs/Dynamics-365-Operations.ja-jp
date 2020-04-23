@@ -1,5 +1,5 @@
 ---
-title: ワークスペースの Power BI 統合のコンフィギュレーション
+title: PowerBI.com 統合の構成
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。
 author: MilindaV2
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edbd9276dd3d191eab949483bb8bf9403340ef14
-ms.sourcegitcommit: 496c81b866fad0737bc027e793a4be803924a061
+ms.openlocfilehash: 6a9a0b9009299f0019673fc2154bbb4f49a5c929
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652564"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258593"
 ---
-# <a name="configure-power-bi-integration-for-workspaces"></a>ワークスペースの Power BI 統合のコンフィギュレーション
+# <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
@@ -78,7 +78,7 @@ ms.locfileid: "2652564"
 
 **アプリケーション ID** および **アプリケーション キー** を書き留めます。 次の手順で、これらの値を使用します。
 
-## <a name="specify-power-bi-settings-in-finance-and-operations"></a>Finance and Operations での Power BI の設定の指定
+## <a name="specify-power-bi-settings-in-finance-and-operations"></a>Finance and Operations における Power BI の設定を指定する
 
 1. クライアントで **Power BI コンフィギュレーション** ページを開きます。<br>
     ![Power BIコンフィギュレーション ダイアログ](./media/D365-PBI-Configuration.png)

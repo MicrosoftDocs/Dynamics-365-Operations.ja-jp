@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6de19eba4863f7e4486a3528ba82698e641f747
-ms.sourcegitcommit: 2464f371101ba616f472bab1631b0ecb863006ce
+ms.openlocfilehash: b131ffd3810e93381db3cd71bcc5e46ebc974eff
+ms.sourcegitcommit: 84e5a6001d8598dfc81acacf8921de62c2dbc137
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095450"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3256838"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -196,6 +196,9 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | 支払ターミナルを通じて手動入力。 |  | 暗証番号入力をサポートしています。 | 
 
 #### <a name="supported-card-present-countries"></a>カード提示がサポートされている国
+
+次の国には、adyen のカードのサポートと共に、使用可能な Dynamics 365 Commerce コンポーネントがあります。 
+
 | 国 | サポート |
 | --- | :-: |
 | オーストラリア | ✔ |
@@ -233,9 +236,6 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | 米国 | ✔ |
 | ブラジル | 将来のリリース |
 
-#### <a name="supported-card-not-present-countries"></a>カード不提示がサポートされている国
-電子商取引またはコール センターなどのカード不提示シナリオでは、特別な国間、通貨間、市場間の考慮事項が適用されます。 詳細は、<MicrosoftDynamics@adyen.com> にお問い合わせください
-
 #### <a name="supported-dynamics-365-payment-features"></a>サポートされる Dynamics 365 支払フィーチャ
 次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連のフィーチャを示します。 これらのフィーチャは、2018 年 12 月に支払 SDK および一部のコンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
 
@@ -250,16 +250,6 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 
 Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使用する別の契約を保有している必要があります。 Adyen のサービスの詳細について、またはテスト商業アカウントを作成するには、[Adyen Web サイト](https://www.adyen.com/partners)を参照してください。
-
-直接 Adyen から連絡を受けるようにするには、<MicrosoftDynamics@adyen.com> に電子メールを送信します。 電子メールの件名行でに、「Microsoft Dynamics コネクタ」という語を含めます。 電子メールの本文には、照会を正しくルーティングすることができるように、十分な情報を含める必要があります。
-
-- 会社名
-- ビジネスの特性 (たとえば、「商社」または「Microsoft パートナー」)
-- ビジネス Web サイト
-- 会社住所
-- 連絡先名、タイトル、電子メール、および電話
-- 年間の処理量 (オプション)
-- 必要なサービスの説明 (たとえば「電子商取引のみ」または「電子商取引およびカードあり、支払端末の *X* 番号を使用」)
 
 ## <a name="setup-and-configuration"></a>設定およびコンフィギュレーション
 
@@ -351,7 +341,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     | ローカル キー識別子 | 支払端末の Adyen キー識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | mykey |
     | ローカル キー バージョン | 支払端末の Adyen キー バージョンを入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | 0 |
     | ローカル Cryptor バージョン | Adyen ゲートウェイとやり取りするときに使用する Adyen cryptor バージョンを入力します。 このフィールドは **1** にセットする必要があります。 | 有 | 有 | 1 |
-    | クラウド API キー | このフィールドは、カードあり支払統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
+    | クラウド API キー | Adyen クラウド API キーを入力します。 このキーは Adyen Web サイトの [API キーを取得する方法](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key)ページの指示に従い取得することができます。 | 有 | 無 | abcdefg |
     | サポートされている通貨 | コネクタが処理する必要がある通貨を入力します。 カードありのシナリオでは、トランザクション要求が支払端末に送信された後、Adyen は[動的通過換算](https://www.adyen.com/pos-payments/dynamic-currency-conversion)を使用した追加通過をすることができることに注意してください。 サポートされている通貨の一覧を取得するには、Adyen サポートに問い合わせてください。 | 有 | 有 | USD;EUR |
     | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 これらの値は、大文字と小文字を区別します。 | はい | はい | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 可能な値は **SVS** および **GIVEX** です。 | いいえ | いいえ | SVS |

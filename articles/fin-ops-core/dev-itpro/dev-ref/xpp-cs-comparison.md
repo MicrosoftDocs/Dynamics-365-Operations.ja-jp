@@ -3,7 +3,7 @@ title: X++ と C# の比較
 description: このトピックでは、X++ と C# の構文とプログラミングを比較します。
 author: RobinARH
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dde9d5e35fecc6c6b6004e86ad492c8acce00721
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: ebdd0a84014255bb63151edc93fc960d7c9d8bea
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080785"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258594"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -252,7 +252,7 @@ public class Pgm_CSharp
 
 C# プログラムのコンソール出力は次のとおりです。
 
-```csharp
+```Console
 1
 (Press any key to resume.)
 2
@@ -336,7 +336,7 @@ public class Pgm_CSharp
 
 C# プログラムのコンソール出力は次のとおりです。
 
-```csharp
+```Console
 1
 (Press any key to resume.)
 2
@@ -529,8 +529,7 @@ X++ と C# の配列の構文と処理は、全体的にかなり似ています
 | 期間| X++ では、静的サイズの配列の長さは宣言構文で決定されます。| C# では、配列のサイズは配列オブジェクトが構築されたときに決定されます。| X++ で [] 宣言構文を使用するときは、配列に値を割り当てるとき、その前にこれ以上の準備は必要ありません。 <br>C# では、配列を宣言して作成してから代入する必要があります。|
 | 期間| X++ 配列は、開始した後でも増加できる動的長さを持つことができます。 これは配列が [] 内に数字なしで宣言されている場合にのみ適用されます。 動的配列の長さが何回も増加した場合、パフォーマンスが低下する可能性があります。| C# では、長さの設定後に配列の長さを変更することはできません。| X++ コードの次のフラグメントでは、`myInts` 配列のみが動的にサイズを大きくできます。 <br>`int myInts[];` <br>`int myBools[5];` <br>`myInts[2] = 12;` <br>`myInts[3] = 13;` <br>`myBools[6] = 26; //Error`|
 | 期間| `dimOf` 機能を使用することにより、一部の配列の長さを取得することができます。| C# の配列は `Length` プロパティを持つオブジェクトです。| コメントはありません。|
-| インデックスの作成中| 配列インデックスは 1 ベースです。| 配列インデックスは 0 ベースです。
-| mtIntArray[0] は X++ ではエラーとなります。|
+| インデックスの作成中| 配列インデックスは 1 ベースです。| 配列インデックスは 0 ベースです。| mtIntArray[0] は X++ ではエラーとなります。|
 | 定数| X++ で、定数値は <strong>#define</strong> プリコンパイラ ディレクティブを使用することで最適に実現されます。| C# では、キーワード <strong>const</strong> を使用して変数の宣言を修飾して定数値を実現できます。| X++ には <strong>const</strong> キーワードがありません。 C# は、#define プリコンパイラ ディレクティブによって作成される変数に値を割り当てることができません。|
 
 ### <a name="x-and-c-samples"></a>X++ および C\# のサンプル
@@ -628,7 +627,7 @@ public class Pgm_CSharp
 
 C# プログラムからコマンド ライン コンソールへの出力は次のとおりです。
 
-```csharp
+```Console
 -------- SPORTS --------
 0 , []
 1 , []
@@ -949,8 +948,7 @@ X++ と C\# 間の例外関連の違いは、次のテーブルで説明しま�
 | <strong>最終的に</strong>| `finally` キーワードは、`try` および `catch` キーワードの後に使用することがサポートされます。| <strong>finally</strong> キーワードは、<strong>try</strong> および <strong>catch</strong> ブロックに従うコードのブロックをマークします。 例外がスローされたかキャッチされたかどうかに関係なく、確定が実行されます。| セマンティクスは C# のセマンティクスと同じです。|
 | 特定の固有| X++ では、例外は、**エラー**、**デッドロック**、または **CodeAccessSecurity** など `Exception` 列挙型の要素です。 別のものを含めることができる例外はありません。| C# では、例外は `System.Exception` 基本クラスまたは継承された任意のクラスのインスタンスです。 スローされた例外の `InnerException` プロパティに例外を含めることができます。| X++ では、スローされた各例外は Exception 列挙型の値です。 詳細については、「例外列挙」を参照してください。|
 | 例外メッセージ| X++ では、例外が発生したときに作成されるメッセージは情報ログでのみ使用でき、そのメッセージは例外に直接関連付けられません。| C# では、メッセージは `System.Exception` オブジェクトの `Message` のメンバーです。| X++ では、Global::error メソッドは情報ログで例外メッセージを表示するメカニズムです。 詳細については、「トライおよびキャッチ キーワードで例外処理」を参照してください。|
-| 例外条件| X++ では、まだ何も代入されていないオブジェクト変数でインスタンス メソッドを呼び出すとエラーが発生します。 ただし、このエラーと共に例外は発生しません。 したがって、割り当てられていない変数が `try` ブロックで誤用されても、`catch` ブロックは制御を獲得できません。 次のコード例では、コード `box4.toString();` で発生したエラーにより、コントロールは任意の `catch` ブロックに移行しません。`DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // これを検出する例外値はありません。 { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| C# では、初期化されていない変数がオブジェクト参照として扱われる場合、`System.NullReferenceException` が発生します。
-| 例外を発生させる条件にはいくつかの相違点があります。|
+| 例外条件| X++ では、まだ何も代入されていないオブジェクト変数でインスタンス メソッドを呼び出すとエラーが発生します。 ただし、このエラーと共に例外は発生しません。 したがって、割り当てられていない変数が `try` ブロックで誤用されても、`catch` ブロックは制御を獲得できません。 次のコード例では、コード `box4.toString();` で発生したエラーにより、コントロールは任意の `catch` ブロックに移行しません。`DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // これを検出する例外値はありません。 { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| C# では、初期化されていない変数がオブジェクト参照として扱われる場合、`System.NullReferenceException` が発生します。| 例外を発生させる条件にはいくつかの相違点があります。|
 | SQL トランザクション| X++ で、SQL 例外が <strong>ttsBegin</strong> - <strong>ttsCommit</strong> トランザクションで発生する場合、そのトランザクション ブロック内の <strong>catch</strong> ステートメントは例外を処理できます。| C# では、SQL トランザクション内部の catch ブロックは例外を検出できます。| |
 
 ### <a name="examples"></a>例
@@ -1073,7 +1071,7 @@ public class Pgm_CSharp
 
 C\# コンソールへの出力を次に示します。
 
-```csharp
+```Console
 (e2) In catch block for -- System.IndexOutOfRangeException
 'finally' is not an X++ keyword, although it is in C#.
 End of program.
@@ -1104,7 +1102,7 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     {
         print("In catch of -- Exception::Error (will retry)." + " Entering catch.");
         ++iIndex;
-        print("In catch of -- Exception::Error (will retry). + " Leaving catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Leaving catch.");
         // Here is the retry statement.
         retry;
     }
@@ -1191,7 +1189,7 @@ public class Pgm_CSharp
 
 コンソールへの出力を次に示します。
 
-```csharp
+```Console
 At top of try block: -1
 In catch of -- Exception. Entering catch.
 In catch of -- Exception. Leaving catch.
@@ -1364,7 +1362,7 @@ public class CsClass
 
 以前の C\# サンプルの出力は次のとおりです。
 
-```csharp
+```Console
 CsClass.exe C#, hello from instance event handler 
 2: The information from the C\# Main. C\#, hello from static event handler 
 3: The information from the C\# Main.
@@ -1484,8 +1482,7 @@ X++ では、`TreeNode` クラスがアプリケーション オブジェクト 
 
 |X++|C#|コメント|
 |---|---|---|
-| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter`
-| 抽象クラス `Io` から拡張された `BinaryIo` 等の X++ クラスはストリームとして機能し、そのストリームのリーダーおよびライターとしても機能します。 C# では、ストリームはより具体的な読み取りおよび書き込みメソッドがあるクラスからの別のクラスです。|
+| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter` | 抽象クラス `Io` から拡張された `BinaryIo` 等の X++ クラスはストリームとして機能し、そのストリームのリーダーおよびライターとしても機能します。 C# では、ストリームは、より具体的な読み書きメソッドを持つクラスとは別のクラスです。|
 | `TextBuffer`| `MemoryStream`| これらのクラスにはメモリ内バッファがあり、メソッドの中には、バッファをハードディスク上のファイルであるかのように扱うものがあります。|
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ はディレクトリを含む多くの基本オペレーティング システム関数の `WINAPI` クラス内で静的メソッドを使用することができます。|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| これらのクラスとメソッドは、ドライブ関連の情報を取得するために使用されます。|

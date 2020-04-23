@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: d3f0ccfc14798e51af30bd005130d10b4ee56fa9
-ms.sourcegitcommit: 6407f25c943f43e132abfb2d9b12bd1bd9db465d
+ms.openlocfilehash: 47434d71a18ec6192a6c0b732544085be308123d
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951794"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249074"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
@@ -66,19 +66,23 @@ X++ では、2 つの拡張フレームワークは同じ目的で機能しま�
 
 4. バリエーションに一致するために使用された属性でサブクラスを修飾します。
 
-**SysExtension 例**
+## <a name="sysextension-example"></a>SysExtension 例
 
-    [WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
-    class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
-    {
-        // Your code here.
-    }
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
+class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
+{
+    // Your code here.
+}
+```
 
-**SysPlugin 例**
+## <a name="sysplugin-example"></a>SysPlugin 例
 
-    [ExportMetadataAttribute('CaseIAssociation', 'Lead'),
-    ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
-    class smmLeadCaseAssociationProvider implements CaseIAssociation
-    {
-        // Your code here.
-    }
+```xpp
+[ExportMetadataAttribute('CaseIAssociation', 'Lead'),
+ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
+class smmLeadCaseAssociationProvider implements CaseIAssociation
+{
+    // Your code here.
+}
+```

@@ -3,7 +3,7 @@ title: 独立系ソフトウェア ベンダー (ISV) ライセンス
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: jorisdg
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e327cd062b7697028571f8df428973ec96346999
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 68dfdac5950055e95512ad0b4dd1e1bd186cf595
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033012"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258546"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -214,9 +214,9 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 > [!NOTE]
 > 自己署名証明書は、開発時にのみ使用できます。 これらは、実稼働環境でサポートされていません。
 
-プラットフォーム更新プログラム 32 またはそれ以前用:
+プラットフォーム更新プログラム 34 およびそれ以前のバージョン：（非推奨 - ライセンスの作成にSHA1ハッシュアルゴリズムを使用）
 
-1.  テストの目的で、 自己署名の CA 証明書を作成することができます。 Visual Studio のツール プロンプトを使用して、次のコマンドを実行します。
+1. テストの目的で、 自己署名の CA 証明書を作成することができます。 Visual Studio のツール プロンプトを使用して、次のコマンドを実行します。
 
     ```Console
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
@@ -224,19 +224,19 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
     詳細については、[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。
 
-2.  CA を使用して証明書を作成します。
+2. CA を使用して証明書を作成します。
 
     ```Console
     makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
     ```
 
-3.  ISV 証明書を PFX 形式に変換します。
+3. ISV 証明書を PFX 形式に変換します。
 
     ```Console
     pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
     ```
 
-4.  テスト シナリオでは、すべての AOS インスタンスに手動で自己署名 CA 証明書をインポートします。
+4. テスト シナリオでは、すべての AOS インスタンスに手動で自己署名 CA 証明書をインポートします。
 
     ```Console
     certutil -addstore root c:\temp\ca.cer
@@ -248,29 +248,42 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     certutil -addstore root c:\temp\isvcert.cer
     ```
 
-プラットフォーム更新プログラム 33 またはそれ以降用:
+プラットフォーム更新プログラム 35 およびそれ以降のバージョン：（ライセンスの作成に SHA256 ハッシュ アルゴリズムを使用）
 
 1. テストの目的で、PowerShell コマンド `New-SelfSignedCertificate` を使用する自己署名証明書を作成します。
-    1. 証明書を作成します。
+    1. 証明書を作成します。 （メモ: 日付に応じて開始日と終了日を調整する）
+
         ```PowerShell
-        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCertTest" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1)
+        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCert" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1) -NotAfter (Get-Date -Year 2022 -Month 12 -Day 31)
         ```
+
     2. 新しい証明書への参照を取得します。
+
         ```PowerShell
         [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
         ```
-    3. 証明書が使用するセキュリティで保護された文字列パスワードを作成します。
+
+    3. 証明書が使用するセキュリティで保護された文字列パスワードを作成します。 （"##############" を証明書のパスワードに置き換えます）
+
         ```PowerShell
-        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "########" -Force -AsPlainText
-        ```
-    4. パスワードを使用する **.pfx** ファイルとして証明書の秘密キーをエクスポートします。
-        ```PowerShell
-        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.pfx" -Password $rootcertPassword
-        ```
-    5. **.crt** ファイルとして証明書の公開キーをエクスポートします。
-        ```PowerShell
-        Export-Certificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.cer"
+        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "##############" -Force -AsPlainText
         ```
 
-2. エクスポートされた *cer* ファイルを、ローカル コンピューターの**信頼済ルート証明機関\証明書**フォルダーにインポートします。
+    4. パスワードを使用する **.pfx** ファイルとして証明書の秘密キーをエクスポートします。
+
+        ```PowerShell
+        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\IsvCert.pfx" -Password $certPassword
+        ```
+
+    5. **.crt** ファイル形式で証明書の公開キーをエクスポートします。
+
+        ```PowerShell
+        Export-Certificate -Cert $certPath -FilePath "C:\Temp\IsvCert.cer"
+        ```
+
+2. 証明書をルート ストアに追加します。
+
+    ```PowerShell
+    certutil -addstore root C:\Temp\IsvCert.cer
+    ```
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e43b6e93f1b0b25b0657d1dfe0b7c54cc4f637c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1259f696e4389415b47141f9a6003ed668b544d9
+ms.sourcegitcommit: dca6ac616b901f33ad278dfd9c7ef55b7c898840
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154145"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225489"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -73,7 +73,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 ### <a name="configure-visual-studio-to-connect-to-your-team-project"></a>Visual Studio をコンフィギュレーションしてチーム プロジェクトに接続する
 
-1.  管理ユーザーとしてログインしている場合は、Visual Studio を管理者として起動します。
+1.  Visual Studio を起動します。 マシンに管理者としてログインしている場合は、Visual Studio を管理者として起動する必要があります。
 2.  **ツール &gt; オプション &gt; ソース管理 &gt; プラグインの選択** の順にクリックします。
 3.  現在のソース管理プラグイン フィールドで **Visual studio Team Foundation Server** を選択します。
 4.  **チーム &gt; Team Foundation Server に接続** を選択します。

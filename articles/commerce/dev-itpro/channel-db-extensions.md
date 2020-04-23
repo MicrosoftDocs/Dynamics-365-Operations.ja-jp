@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 13c9037bd572c12b955dfed2d70418c72b3f9f46
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 11adcfaf886c6b2925a08eeafd0c7c2336530b40
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017743"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259691"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -35,8 +35,8 @@ ms.locfileid: "3017743"
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
-- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)。
-- Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)。
+- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
+- Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
 - Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
@@ -51,7 +51,7 @@ Finance and Operations と Commerce では、拡張機能をサポートする�
 ## <a name="best-practices-for-channel-db-extensions"></a>チャネル DB 拡張機能のためのベスト プラクティス
 
 - CRT、AX、または DBO スキーマのいずれも変更しないでください。 すべての拡張シナリオで **ext スキーマ**を使用します。
-- 使用可能な場合は、CRT、AX、または DBO オブジェクトからチャネル データベース コンポーネントに直接アクセスするのではなく、Commerce Runtime ランタイム データ サービスを介してデータを取得することをお勧めします。
+- 使用可能な場合は、CRT、AX、または DBO オブジェクトからチャネル データベース コンポーネントに直接アクセスするのではなく、Commerce Runtime データ サービスを介してデータを取得することをお勧めします。
 
 ### <a name="dont-do-this"></a>このようにしない
 以下はユーザーがしてはいけないことの例です。 代わりに、主キーの値を取得するために CRT データ サービスを使用してから、拡張テーブルに挿入するために主キーの値を使用する必要があります。
@@ -165,6 +165,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 - SQL Server Management Studio デザイナーを使用するか、SQL スクリプトを使用して、**ext スキーマ**のチャネル データベースに新しいテーブルを作成します。 以下は、SQL スクリプトの例です。
 
+> [!NOTE]
+> **DataAreaId** の列名は、新しいテーブルまたは拡張テーブルには明示的に含まれません。 これは、 Commerce Data Exchange (CDX) によって自動的に生成されます。 追加された場合、小売用スケジューラの初期化中にエラーが発生します。
+
     ```sql
     -- Create the extension table to store the custom fields.
     IF (SELECT OBJECT_ID('[ext].[CONTOSORETAILSTOREHOURSTABLE]')) IS NULL
@@ -186,9 +189,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
     GO
 
-## Extending an existing table
+## <a name="extending-an-existing-table"></a>既存のテーブルの拡張
 
-If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
+既存のテーブルを拡張する場合は、そのエンティティで対応している場合は属性を使用するか、親テーブルと同じ主キーを持つ拡張テーブル（新しいテーブル）を作成する必要があります。 次のスクリプトはテーブルを拡張します。
 
 ```sql
 CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
