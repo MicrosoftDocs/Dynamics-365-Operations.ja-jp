@@ -2,7 +2,7 @@
 title: 資産属性の概要
 description: このトピックでは、資産管理の資産属性の概要を説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
@@ -18,25 +18,25 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4564fb2670f75d64b0c5214fb430e5e3fa4405c
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bc7b6c5a415e233993b3cf14e499a2296b31e7fe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571464"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209193"
 ---
-# <a name="asset-attribute-overview"></a><span data-ttu-id="e0064-103">資産属性の概要</span><span class="sxs-lookup"><span data-stu-id="e0064-103">Asset attribute overview</span></span>
+# <a name="asset-attribute-overview"></a><span data-ttu-id="cf1e8-103">資産属性の概要</span><span class="sxs-lookup"><span data-stu-id="cf1e8-103">Asset attribute overview</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="e0064-104">このトピックでは、資産管理の資産属性の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="e0064-104">This topic provides an overview of asset attributes in Asset Management.</span></span> <span data-ttu-id="e0064-105">資産属性は、資産タイプまたは資産に関連するプロパティです。</span><span class="sxs-lookup"><span data-stu-id="e0064-105">Asset attributes are properties that are related to an asset type or an asset.</span></span> <span data-ttu-id="e0064-106">[属性タイプ](../setup-for-functional-locations/specification-types.md)を設定して資産で使用した場合、資産に設定された属性値の概要を取得できます。</span><span class="sxs-lookup"><span data-stu-id="e0064-106">If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets.</span></span> <span data-ttu-id="e0064-107">この概要は、資産管理の 2 つのページに表示されます: **資産属性の概要**と**資産属性**。</span><span class="sxs-lookup"><span data-stu-id="e0064-107">This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.</span></span>
+<span data-ttu-id="cf1e8-104">このトピックでは、資産管理の資産属性の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-104">This topic provides an overview of asset attributes in Asset Management.</span></span> <span data-ttu-id="cf1e8-105">資産属性は、資産タイプまたは資産に関連するプロパティです。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-105">Asset attributes are properties that are related to an asset type or an asset.</span></span> <span data-ttu-id="cf1e8-106">[属性タイプ](../setup-for-functional-locations/specification-types.md)を設定して資産で使用した場合、資産に設定された属性値の概要を取得できます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-106">If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets.</span></span> <span data-ttu-id="cf1e8-107">この概要は、資産管理の 2 つのページに表示されます: **資産属性の概要**と**資産属性**。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-107">This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.</span></span>
 
-<span data-ttu-id="e0064-108">**資産属性の概要**ページには、資産ごとに個別の明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e0064-108">The **Asset attribute overview** page shows a separate line for each asset.</span></span> <span data-ttu-id="e0064-109">明細行には、その資産に関連するすべての属性タイプが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e0064-109">The line shows all attribute types that are related to that asset.</span></span> <span data-ttu-id="e0064-110">**資産属性の概要**ページを開いて使用するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e0064-110">Follow these steps to open and use the **Asset attribute overview** page.</span></span>
+<span data-ttu-id="cf1e8-108">**資産属性の概要**ページには、資産ごとに個別の明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-108">The **Asset attribute overview** page shows a separate line for each asset.</span></span> <span data-ttu-id="cf1e8-109">明細行には、その資産に関連するすべての属性タイプが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-109">The line shows all attribute types that are related to that asset.</span></span> <span data-ttu-id="cf1e8-110">**資産属性の概要**ページを開いて使用するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-110">Follow these steps to open and use the **Asset attribute overview** page.</span></span>
 
-1. <span data-ttu-id="e0064-111">**資産管理** \> **照会** \> **資産** \> **資産属性の概要**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e0064-111">Select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute overview**.</span></span>
-2. <span data-ttu-id="e0064-112">**資産タイプ**フィールドで、資産タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="e0064-112">In the **Asset type** field, select an asset type.</span></span>
-3. <span data-ttu-id="e0064-113">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e0064-113">Select **OK**.</span></span> <span data-ttu-id="e0064-114">リストには、選択した資産タイプを使用するすべての資産が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e0064-114">A list shows all the assets that use the selected asset type.</span></span> <span data-ttu-id="e0064-115">各資産について、関連するすべての資産属性タイプが同じ明細行に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e0064-115">For each asset, all related asset attribute types are shown on the same line.</span></span>
+1. <span data-ttu-id="cf1e8-111">**資産管理** \> **照会** \> **資産** \> **資産属性の概要**を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-111">Select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute overview**.</span></span>
+2. <span data-ttu-id="cf1e8-112">**資産タイプ**フィールドで、資産タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-112">In the **Asset type** field, select an asset type.</span></span>
+3. <span data-ttu-id="cf1e8-113">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-113">Select **OK**.</span></span> <span data-ttu-id="cf1e8-114">リストには、選択した資産タイプを使用するすべての資産が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-114">A list shows all the assets that use the selected asset type.</span></span> <span data-ttu-id="cf1e8-115">各資産について、関連するすべての資産属性タイプが同じ明細行に表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-115">For each asset, all related asset attribute types are shown on the same line.</span></span>
 
-<span data-ttu-id="e0064-116">**資産属性**ページには、資産で使用される属性タイプごとに個別の明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e0064-116">The **Asset attribute** page shows a separate line for each attribute type that is used on an asset.</span></span> <span data-ttu-id="e0064-117">このページを開くには、**資産管理** \> **照会** \> **資産** \> **資産属性**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e0064-117">To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.</span></span>
+<span data-ttu-id="cf1e8-116">**資産属性**ページには、資産で使用される属性タイプごとに個別の明細行が表示されます。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-116">The **Asset attribute** page shows a separate line for each attribute type that is used on an asset.</span></span> <span data-ttu-id="cf1e8-117">このページを開くには、**資産管理** \> **照会** \> **資産** \> **資産属性**を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf1e8-117">To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.</span></span>

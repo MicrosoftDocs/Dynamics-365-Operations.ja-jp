@@ -2,7 +2,7 @@
 title: バーコード スキャナー用かんばん転送ボードのサポート
 description: かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
@@ -19,47 +19,47 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569220"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207189"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a><span data-ttu-id="6b812-103">バーコード スキャナー用かんばん転送ボードのサポート</span><span class="sxs-lookup"><span data-stu-id="6b812-103">Kanban transfer board support for barcode scanners</span></span>
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a><span data-ttu-id="36c40-103">バーコード スキャナー用かんばん転送ボードのサポート</span><span class="sxs-lookup"><span data-stu-id="36c40-103">Kanban transfer board support for barcode scanners</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6b812-104">かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6b812-104">The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.</span></span>
+<span data-ttu-id="36c40-104">かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。</span><span class="sxs-lookup"><span data-stu-id="36c40-104">The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.</span></span>
 
-<a name="registration-modes"></a><span data-ttu-id="6b812-105">登録モード</span><span class="sxs-lookup"><span data-stu-id="6b812-105">Registration modes</span></span>
+<a name="registration-modes"></a><span data-ttu-id="36c40-105">登録モード</span><span class="sxs-lookup"><span data-stu-id="36c40-105">Registration modes</span></span>
 ------------------
 
-<span data-ttu-id="6b812-106">**スキャナーの登録**クイック タブで登録モードを選択すると、登録モードを選択できます。これは、[かんばんカード番号] フィールドでかんばんカード番号をスキャンまたは手動入力するときのアクションを制御します。</span><span class="sxs-lookup"><span data-stu-id="6b812-106">On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.</span></span>
+<span data-ttu-id="36c40-106">**スキャナーの登録**クイック タブで登録モードを選択すると、登録モードを選択できます。これは、[かんばんカード番号] フィールドでかんばんカード番号をスキャンまたは手動入力するときのアクションを制御します。</span><span class="sxs-lookup"><span data-stu-id="36c40-106">On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.</span></span>
 
-| <span data-ttu-id="6b812-107">登録モードの設定</span><span class="sxs-lookup"><span data-stu-id="6b812-107">Set registration mode</span></span> | <span data-ttu-id="6b812-108">説明</span><span class="sxs-lookup"><span data-stu-id="6b812-108">Description</span></span>                                                                                     |
+| <span data-ttu-id="36c40-107">登録モードの設定</span><span class="sxs-lookup"><span data-stu-id="36c40-107">Set registration mode</span></span> | <span data-ttu-id="36c40-108">説明</span><span class="sxs-lookup"><span data-stu-id="36c40-108">Description</span></span>                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="6b812-109">開始日</span><span class="sxs-lookup"><span data-stu-id="6b812-109">Start</span></span>                 | <span data-ttu-id="6b812-110">かんばん転送ジョブを進行中として登録します。</span><span class="sxs-lookup"><span data-stu-id="6b812-110">Registers a Kanban transfer job as in progress.</span></span>                                                 |
-| <span data-ttu-id="6b812-111">完了</span><span class="sxs-lookup"><span data-stu-id="6b812-111">Complete</span></span>              | <span data-ttu-id="6b812-112">かんばん転送ジョブを完了として登録します。</span><span class="sxs-lookup"><span data-stu-id="6b812-112">Registers a Kanban transfer job as completed.</span></span>                                                   |
-| <span data-ttu-id="6b812-113">空</span><span class="sxs-lookup"><span data-stu-id="6b812-113">Empty</span></span>                 | <span data-ttu-id="6b812-114">かんばんカードで参照される材料取り扱い単位を空として登録します。</span><span class="sxs-lookup"><span data-stu-id="6b812-114">Registers the material handling unit that is referenced by a Kanban card as empty.</span></span>              |
-| <span data-ttu-id="6b812-115">選択</span><span class="sxs-lookup"><span data-stu-id="6b812-115">Select</span></span>                | <span data-ttu-id="6b812-116">かんばんカード番号を登録すると、自動的にかんばんリストに参照されるジョブが選択されます。</span><span class="sxs-lookup"><span data-stu-id="6b812-116">Registers a Kanban card number and automatically selects the referenced job in the Kanban list.</span></span> |
+| <span data-ttu-id="36c40-109">開始日</span><span class="sxs-lookup"><span data-stu-id="36c40-109">Start</span></span>                 | <span data-ttu-id="36c40-110">かんばん転送ジョブを進行中として登録します。</span><span class="sxs-lookup"><span data-stu-id="36c40-110">Registers a Kanban transfer job as in progress.</span></span>                                                 |
+| <span data-ttu-id="36c40-111">完了</span><span class="sxs-lookup"><span data-stu-id="36c40-111">Complete</span></span>              | <span data-ttu-id="36c40-112">かんばん転送ジョブを完了として登録します。</span><span class="sxs-lookup"><span data-stu-id="36c40-112">Registers a Kanban transfer job as completed.</span></span>                                                   |
+| <span data-ttu-id="36c40-113">空</span><span class="sxs-lookup"><span data-stu-id="36c40-113">Empty</span></span>                 | <span data-ttu-id="36c40-114">かんばんカードで参照される材料取り扱い単位を空として登録します。</span><span class="sxs-lookup"><span data-stu-id="36c40-114">Registers the material handling unit that is referenced by a Kanban card as empty.</span></span>              |
+| <span data-ttu-id="36c40-115">選択</span><span class="sxs-lookup"><span data-stu-id="36c40-115">Select</span></span>                | <span data-ttu-id="36c40-116">かんばんカード番号を登録すると、自動的にかんばんリストに参照されるジョブが選択されます。</span><span class="sxs-lookup"><span data-stu-id="36c40-116">Registers a Kanban card number and automatically selects the referenced job in the Kanban list.</span></span> |
 
  
-<span data-ttu-id="6b812-117">[選択] の登録モード</span><span class="sxs-lookup"><span data-stu-id="6b812-117">Registration mode Select</span></span>
+<span data-ttu-id="36c40-117">[選択] の登録モード</span><span class="sxs-lookup"><span data-stu-id="36c40-117">Registration mode Select</span></span>
 ------------------------
 
-<span data-ttu-id="6b812-118">ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。</span><span class="sxs-lookup"><span data-stu-id="6b812-118">When you use a bar code reader to select a job, the display mode of the kanban board changes.</span></span><span data-ttu-id="6b812-119">このモードでは、次の要件が適用されます:</span><span class="sxs-lookup"><span data-stu-id="6b812-119"> In this mode, the following conditions apply:</span></span>
+<span data-ttu-id="36c40-118">ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。</span><span class="sxs-lookup"><span data-stu-id="36c40-118">When you use a bar code reader to select a job, the display mode of the kanban board changes.</span></span><span data-ttu-id="36c40-119">このモードでは、次の要件が適用されます:</span><span class="sxs-lookup"><span data-stu-id="36c40-119"> In this mode, the following conditions apply:</span></span>
 
--   <span data-ttu-id="6b812-120">スキャンしたかんばん作業のみを表示します。</span><span class="sxs-lookup"><span data-stu-id="6b812-120">Only the scanned kanban job is displayed.</span></span>
--   <span data-ttu-id="6b812-121">選択したジョブの詳細は、**詳細**クイック タブに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b812-121">The details of the selected job are displayed in the **Details** FastTab.</span></span>
--   <span data-ttu-id="6b812-122">**メッセージ** クイック タブでは、選択したジョブに対してのみメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b812-122">The **Messages** FastTab displays messages only for the selected job.</span></span>
--   <span data-ttu-id="6b812-123">[アクション ウィンドウ] で使用できる機能を使用してジョブのステータスを変更できます。</span><span class="sxs-lookup"><span data-stu-id="6b812-123">You can change the status of the job by using the functions that are available on the Action Pane.</span></span> <span data-ttu-id="6b812-124">今回、かんばん転送ボードは 1 つのジョブのみを継続して表示します。</span><span class="sxs-lookup"><span data-stu-id="6b812-124">The Kanban transfer board continues to display only a single job during this time.</span></span>
--   <span data-ttu-id="6b812-125">ジョブのリストの情報を手動で更新するには、アクション ペインの **更新** (Shift+F5) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6b812-125">You can update the information in the list of jobs manually by clicking **Refresh** (Shift+F5) on the Action Pane.</span></span> <span data-ttu-id="6b812-126">情報を更新すると、ジョブのフィルターの完全な結果が再び表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b812-126">After you refresh the information, the full results for the job filter are displayed again.</span></span>
+-   <span data-ttu-id="36c40-120">スキャンしたかんばん作業のみを表示します。</span><span class="sxs-lookup"><span data-stu-id="36c40-120">Only the scanned kanban job is displayed.</span></span>
+-   <span data-ttu-id="36c40-121">選択したジョブの詳細は、**詳細**クイック タブに表示されます。</span><span class="sxs-lookup"><span data-stu-id="36c40-121">The details of the selected job are displayed in the **Details** FastTab.</span></span>
+-   <span data-ttu-id="36c40-122">**メッセージ** クイック タブでは、選択したジョブに対してのみメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="36c40-122">The **Messages** FastTab displays messages only for the selected job.</span></span>
+-   <span data-ttu-id="36c40-123">[アクション ウィンドウ] で使用できる機能を使用してジョブのステータスを変更できます。</span><span class="sxs-lookup"><span data-stu-id="36c40-123">You can change the status of the job by using the functions that are available on the Action Pane.</span></span> <span data-ttu-id="36c40-124">今回、かんばん転送ボードは 1 つのジョブのみを継続して表示します。</span><span class="sxs-lookup"><span data-stu-id="36c40-124">The Kanban transfer board continues to display only a single job during this time.</span></span>
+-   <span data-ttu-id="36c40-125">ジョブのリストの情報を手動で更新するには、アクション ペインの **更新** (Shift+F5) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="36c40-125">You can update the information in the list of jobs manually by clicking **Refresh** (Shift+F5) on the Action Pane.</span></span> <span data-ttu-id="36c40-126">情報を更新すると、ジョブのフィルターの完全な結果が再び表示されます。</span><span class="sxs-lookup"><span data-stu-id="36c40-126">After you refresh the information, the full results for the job filter are displayed again.</span></span>
 
-## <a name="job-status-and-possible-actions"></a><span data-ttu-id="6b812-127">ジョブ状態と実行可能なアクション</span><span class="sxs-lookup"><span data-stu-id="6b812-127">Job status and possible actions</span></span>
-<span data-ttu-id="6b812-128">選択したジョブのステータスおよびイベントのかんばんにペギングされたジョブのステータスによって、このジョブをさらに処理するかどうかが決まります。</span><span class="sxs-lookup"><span data-stu-id="6b812-128">The status of the selected job and the status of any pegged jobs for event kanbans, determine whether you can process the job further.</span></span> <span data-ttu-id="6b812-129">次の表に、これらのステータスやタスクに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="6b812-129">The following table displays information about these statuses and tasks:</span></span>
--   <span data-ttu-id="6b812-130">ジョブに使用できるステータス、またはジョブによって参照される材料取り扱い単位のステータス。</span><span class="sxs-lookup"><span data-stu-id="6b812-130">The statuses that are available for jobs, or for the handling units that are referenced by the jobs.</span></span>
--   <span data-ttu-id="6b812-131">ジョブに対して実行できる各タスク。</span><span class="sxs-lookup"><span data-stu-id="6b812-131">Each task that you can perform for the job.</span></span>
+## <a name="job-status-and-possible-actions"></a><span data-ttu-id="36c40-127">ジョブ状態と実行可能なアクション</span><span class="sxs-lookup"><span data-stu-id="36c40-127">Job status and possible actions</span></span>
+<span data-ttu-id="36c40-128">選択したジョブのステータスおよびイベントのかんばんにペギングされたジョブのステータスによって、このジョブをさらに処理するかどうかが決まります。</span><span class="sxs-lookup"><span data-stu-id="36c40-128">The status of the selected job and the status of any pegged jobs for event kanbans, determine whether you can process the job further.</span></span> <span data-ttu-id="36c40-129">次の表に、これらのステータスやタスクに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="36c40-129">The following table displays information about these statuses and tasks:</span></span>
+-   <span data-ttu-id="36c40-130">ジョブに使用できるステータス、またはジョブによって参照される材料取り扱い単位のステータス。</span><span class="sxs-lookup"><span data-stu-id="36c40-130">The statuses that are available for jobs, or for the handling units that are referenced by the jobs.</span></span>
+-   <span data-ttu-id="36c40-131">ジョブに対して実行できる各タスク。</span><span class="sxs-lookup"><span data-stu-id="36c40-131">Each task that you can perform for the job.</span></span>
 
 <table>
 <colgroup>
@@ -74,116 +74,116 @@ ms.locfileid: "1569220"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="6b812-132">ジョブ タイプ</span><span class="sxs-lookup"><span data-stu-id="6b812-132">Job type</span></span></th>
-<th><span data-ttu-id="6b812-133">ジョブ ステータスまたは材料取り扱い単位ステータス</span><span class="sxs-lookup"><span data-stu-id="6b812-133">Job status or handling unit status</span></span></th>
-<th><span data-ttu-id="6b812-134">ピッキング リストの更新</span><span class="sxs-lookup"><span data-stu-id="6b812-134">Update picking list</span></span></th>
-<th><span data-ttu-id="6b812-135">開始日</span><span class="sxs-lookup"><span data-stu-id="6b812-135">Start</span></span></th>
-<th><span data-ttu-id="6b812-136">登録の更新</span><span class="sxs-lookup"><span data-stu-id="6b812-136">Update registration</span></span></th>
-<th><span data-ttu-id="6b812-137">完了</span><span class="sxs-lookup"><span data-stu-id="6b812-137">Complete</span></span></th>
-<th><span data-ttu-id="6b812-138">空</span><span class="sxs-lookup"><span data-stu-id="6b812-138">Empty</span></span></th>
-<th><span data-ttu-id="6b812-139">イベントのかんばんを作成</span><span class="sxs-lookup"><span data-stu-id="6b812-139">Create event kanbans</span></span></th>
+<th><span data-ttu-id="36c40-132">ジョブ タイプ</span><span class="sxs-lookup"><span data-stu-id="36c40-132">Job type</span></span></th>
+<th><span data-ttu-id="36c40-133">ジョブ ステータスまたは材料取り扱い単位ステータス</span><span class="sxs-lookup"><span data-stu-id="36c40-133">Job status or handling unit status</span></span></th>
+<th><span data-ttu-id="36c40-134">ピッキング リストの更新</span><span class="sxs-lookup"><span data-stu-id="36c40-134">Update picking list</span></span></th>
+<th><span data-ttu-id="36c40-135">開始日</span><span class="sxs-lookup"><span data-stu-id="36c40-135">Start</span></span></th>
+<th><span data-ttu-id="36c40-136">登録の更新</span><span class="sxs-lookup"><span data-stu-id="36c40-136">Update registration</span></span></th>
+<th><span data-ttu-id="36c40-137">完了</span><span class="sxs-lookup"><span data-stu-id="36c40-137">Complete</span></span></th>
+<th><span data-ttu-id="36c40-138">空</span><span class="sxs-lookup"><span data-stu-id="36c40-138">Empty</span></span></th>
+<th><span data-ttu-id="36c40-139">イベントのかんばんを作成</span><span class="sxs-lookup"><span data-stu-id="36c40-139">Create event kanbans</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="6b812-140">移動</span><span class="sxs-lookup"><span data-stu-id="6b812-140">Transfer</span></span></td>
+<td><span data-ttu-id="36c40-140">移動</span><span class="sxs-lookup"><span data-stu-id="36c40-140">Transfer</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6b812-141">未定</span><span class="sxs-lookup"><span data-stu-id="6b812-141">Not planned</span></span></li>
-<li><span data-ttu-id="6b812-142">ペギングにしたジョブがない、またはペギングにしたジョブが [完了]</span><span class="sxs-lookup"><span data-stu-id="6b812-142">No pegged jobs, or pegged jobs are Completed</span></span></li>
+<li><span data-ttu-id="36c40-141">未定</span><span class="sxs-lookup"><span data-stu-id="36c40-141">Not planned</span></span></li>
+<li><span data-ttu-id="36c40-142">ペギングにしたジョブがない、またはペギングにしたジョブが [完了]</span><span class="sxs-lookup"><span data-stu-id="36c40-142">No pegged jobs, or pegged jobs are Completed</span></span></li>
 </ul></td>
-<td><span data-ttu-id="6b812-143">有</span><span class="sxs-lookup"><span data-stu-id="6b812-143">Yes</span></span></td>
-<td><span data-ttu-id="6b812-144">有</span><span class="sxs-lookup"><span data-stu-id="6b812-144">Yes</span></span></td>
-<td><span data-ttu-id="6b812-145">有</span><span class="sxs-lookup"><span data-stu-id="6b812-145">Yes</span></span></td>
-<td><span data-ttu-id="6b812-146">有</span><span class="sxs-lookup"><span data-stu-id="6b812-146">Yes</span></span></td>
-<td><span data-ttu-id="6b812-147">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-147">No</span></span></td>
-<td><span data-ttu-id="6b812-148">有</span><span class="sxs-lookup"><span data-stu-id="6b812-148">Yes</span></span></td>
+<td><span data-ttu-id="36c40-143">有</span><span class="sxs-lookup"><span data-stu-id="36c40-143">Yes</span></span></td>
+<td><span data-ttu-id="36c40-144">有</span><span class="sxs-lookup"><span data-stu-id="36c40-144">Yes</span></span></td>
+<td><span data-ttu-id="36c40-145">有</span><span class="sxs-lookup"><span data-stu-id="36c40-145">Yes</span></span></td>
+<td><span data-ttu-id="36c40-146">有</span><span class="sxs-lookup"><span data-stu-id="36c40-146">Yes</span></span></td>
+<td><span data-ttu-id="36c40-147">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-147">No</span></span></td>
+<td><span data-ttu-id="36c40-148">有</span><span class="sxs-lookup"><span data-stu-id="36c40-148">Yes</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6b812-149">移動</span><span class="sxs-lookup"><span data-stu-id="6b812-149">Transfer</span></span></td>
+<td><span data-ttu-id="36c40-149">移動</span><span class="sxs-lookup"><span data-stu-id="36c40-149">Transfer</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6b812-150">未定</span><span class="sxs-lookup"><span data-stu-id="6b812-150">Not planned</span></span></li>
-<li><span data-ttu-id="6b812-151">ペギングにされたジョブが [完了] ではない</span><span class="sxs-lookup"><span data-stu-id="6b812-151">The pegged job is not Completed</span></span></li>
+<li><span data-ttu-id="36c40-150">未定</span><span class="sxs-lookup"><span data-stu-id="36c40-150">Not planned</span></span></li>
+<li><span data-ttu-id="36c40-151">ペギングにされたジョブが [完了] ではない</span><span class="sxs-lookup"><span data-stu-id="36c40-151">The pegged job is not Completed</span></span></li>
 </ul></td>
-<td><span data-ttu-id="6b812-152">有</span><span class="sxs-lookup"><span data-stu-id="6b812-152">Yes</span></span></td>
-<td><span data-ttu-id="6b812-153">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-153">No</span></span></td>
-<td><span data-ttu-id="6b812-154">有</span><span class="sxs-lookup"><span data-stu-id="6b812-154">Yes</span></span></td>
-<td><span data-ttu-id="6b812-155">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-155">No</span></span></td>
-<td><span data-ttu-id="6b812-156">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-156">No</span></span></td>
-<td><span data-ttu-id="6b812-157">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-157">No</span></span></td>
+<td><span data-ttu-id="36c40-152">有</span><span class="sxs-lookup"><span data-stu-id="36c40-152">Yes</span></span></td>
+<td><span data-ttu-id="36c40-153">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-153">No</span></span></td>
+<td><span data-ttu-id="36c40-154">有</span><span class="sxs-lookup"><span data-stu-id="36c40-154">Yes</span></span></td>
+<td><span data-ttu-id="36c40-155">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-155">No</span></span></td>
+<td><span data-ttu-id="36c40-156">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-156">No</span></span></td>
+<td><span data-ttu-id="36c40-157">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-157">No</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="6b812-158">移動</span><span class="sxs-lookup"><span data-stu-id="6b812-158">Transfer</span></span></td>
-<td><span data-ttu-id="6b812-159">処理中</span><span class="sxs-lookup"><span data-stu-id="6b812-159">In progress</span></span></td>
-<td><span data-ttu-id="6b812-160">有</span><span class="sxs-lookup"><span data-stu-id="6b812-160">Yes</span></span></td>
-<td><span data-ttu-id="6b812-161">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-161">No</span></span></td>
-<td><span data-ttu-id="6b812-162">有</span><span class="sxs-lookup"><span data-stu-id="6b812-162">Yes</span></span></td>
-<td><span data-ttu-id="6b812-163">有</span><span class="sxs-lookup"><span data-stu-id="6b812-163">Yes</span></span></td>
-<td><span data-ttu-id="6b812-164">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-164">No</span></span></td>
-<td><span data-ttu-id="6b812-165">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-165">No</span></span></td>
+<td><span data-ttu-id="36c40-158">移動</span><span class="sxs-lookup"><span data-stu-id="36c40-158">Transfer</span></span></td>
+<td><span data-ttu-id="36c40-159">処理中</span><span class="sxs-lookup"><span data-stu-id="36c40-159">In progress</span></span></td>
+<td><span data-ttu-id="36c40-160">有</span><span class="sxs-lookup"><span data-stu-id="36c40-160">Yes</span></span></td>
+<td><span data-ttu-id="36c40-161">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-161">No</span></span></td>
+<td><span data-ttu-id="36c40-162">有</span><span class="sxs-lookup"><span data-stu-id="36c40-162">Yes</span></span></td>
+<td><span data-ttu-id="36c40-163">有</span><span class="sxs-lookup"><span data-stu-id="36c40-163">Yes</span></span></td>
+<td><span data-ttu-id="36c40-164">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-164">No</span></span></td>
+<td><span data-ttu-id="36c40-165">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-165">No</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6b812-166">移動</span><span class="sxs-lookup"><span data-stu-id="6b812-166">Transfer</span></span></td>
-<td><span data-ttu-id="6b812-167">完了</span><span class="sxs-lookup"><span data-stu-id="6b812-167">Completed</span></span></td>
-<td><span data-ttu-id="6b812-168">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-168">No</span></span></td>
-<td><span data-ttu-id="6b812-169">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-169">No</span></span></td>
-<td><span data-ttu-id="6b812-170">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-170">No</span></span></td>
-<td><span data-ttu-id="6b812-171">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-171">No</span></span></td>
-<td><span data-ttu-id="6b812-172">有</span><span class="sxs-lookup"><span data-stu-id="6b812-172">Yes</span></span></td>
-<td><span data-ttu-id="6b812-173">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-173">No</span></span></td>
+<td><span data-ttu-id="36c40-166">移動</span><span class="sxs-lookup"><span data-stu-id="36c40-166">Transfer</span></span></td>
+<td><span data-ttu-id="36c40-167">完了</span><span class="sxs-lookup"><span data-stu-id="36c40-167">Completed</span></span></td>
+<td><span data-ttu-id="36c40-168">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-168">No</span></span></td>
+<td><span data-ttu-id="36c40-169">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-169">No</span></span></td>
+<td><span data-ttu-id="36c40-170">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-170">No</span></span></td>
+<td><span data-ttu-id="36c40-171">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-171">No</span></span></td>
+<td><span data-ttu-id="36c40-172">有</span><span class="sxs-lookup"><span data-stu-id="36c40-172">Yes</span></span></td>
+<td><span data-ttu-id="36c40-173">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-173">No</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="6b812-174">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="6b812-174">Transfer or process</span></span></td>
-<td><span data-ttu-id="6b812-175">空</span><span class="sxs-lookup"><span data-stu-id="6b812-175">Empty</span></span></td>
-<td><span data-ttu-id="6b812-176">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-176">No</span></span></td>
-<td><span data-ttu-id="6b812-177">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-177">No</span></span></td>
-<td><span data-ttu-id="6b812-178">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-178">No</span></span></td>
-<td><span data-ttu-id="6b812-179">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-179">No</span></span></td>
-<td><span data-ttu-id="6b812-180">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-180">No</span></span></td>
-<td><span data-ttu-id="6b812-181">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-181">No</span></span></td>
+<td><span data-ttu-id="36c40-174">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="36c40-174">Transfer or process</span></span></td>
+<td><span data-ttu-id="36c40-175">空</span><span class="sxs-lookup"><span data-stu-id="36c40-175">Empty</span></span></td>
+<td><span data-ttu-id="36c40-176">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-176">No</span></span></td>
+<td><span data-ttu-id="36c40-177">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-177">No</span></span></td>
+<td><span data-ttu-id="36c40-178">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-178">No</span></span></td>
+<td><span data-ttu-id="36c40-179">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-179">No</span></span></td>
+<td><span data-ttu-id="36c40-180">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-180">No</span></span></td>
+<td><span data-ttu-id="36c40-181">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-181">No</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6b812-182">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="6b812-182">Transfer or process</span></span></td>
-<td><span data-ttu-id="6b812-183">かんばんカードがない</span><span class="sxs-lookup"><span data-stu-id="6b812-183">A kanban card is not found</span></span></td>
-<td><span data-ttu-id="6b812-184">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-184">No</span></span></td>
-<td><span data-ttu-id="6b812-185">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-185">No</span></span></td>
-<td><span data-ttu-id="6b812-186">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-186">No</span></span></td>
-<td><span data-ttu-id="6b812-187">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-187">No</span></span></td>
-<td><span data-ttu-id="6b812-188">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-188">No</span></span></td>
-<td><span data-ttu-id="6b812-189">いいえ</span><span class="sxs-lookup"><span data-stu-id="6b812-189">No</span></span></td>
+<td><span data-ttu-id="36c40-182">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="36c40-182">Transfer or process</span></span></td>
+<td><span data-ttu-id="36c40-183">かんばんカードがない</span><span class="sxs-lookup"><span data-stu-id="36c40-183">A kanban card is not found</span></span></td>
+<td><span data-ttu-id="36c40-184">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-184">No</span></span></td>
+<td><span data-ttu-id="36c40-185">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-185">No</span></span></td>
+<td><span data-ttu-id="36c40-186">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-186">No</span></span></td>
+<td><span data-ttu-id="36c40-187">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-187">No</span></span></td>
+<td><span data-ttu-id="36c40-188">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-188">No</span></span></td>
+<td><span data-ttu-id="36c40-189">いいえ</span><span class="sxs-lookup"><span data-stu-id="36c40-189">No</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="6b812-190">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="6b812-190">Transfer or process</span></span></td>
-<td><span data-ttu-id="6b812-191">かんばんカードはあるが、かんばんに割り当てられていない</span><span class="sxs-lookup"><span data-stu-id="6b812-191">A kanban card is found, but it is not assigned to a kanban</span></span></td>
-<td><span data-ttu-id="6b812-192">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-192">No</span></span></td>
-<td><span data-ttu-id="6b812-193">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-193">No</span></span></td>
-<td><span data-ttu-id="6b812-194">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-194">No</span></span></td>
-<td><span data-ttu-id="6b812-195">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-195">No</span></span></td>
-<td><span data-ttu-id="6b812-196">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-196">No</span></span></td>
-<td><span data-ttu-id="6b812-197">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-197">No</span></span></td>
+<td><span data-ttu-id="36c40-190">転送または処理中</span><span class="sxs-lookup"><span data-stu-id="36c40-190">Transfer or process</span></span></td>
+<td><span data-ttu-id="36c40-191">かんばんカードはあるが、かんばんに割り当てられていない</span><span class="sxs-lookup"><span data-stu-id="36c40-191">A kanban card is found, but it is not assigned to a kanban</span></span></td>
+<td><span data-ttu-id="36c40-192">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-192">No</span></span></td>
+<td><span data-ttu-id="36c40-193">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-193">No</span></span></td>
+<td><span data-ttu-id="36c40-194">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-194">No</span></span></td>
+<td><span data-ttu-id="36c40-195">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-195">No</span></span></td>
+<td><span data-ttu-id="36c40-196">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-196">No</span></span></td>
+<td><span data-ttu-id="36c40-197">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-197">No</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6b812-198">処理</span><span class="sxs-lookup"><span data-stu-id="6b812-198">Process</span></span></td>
+<td><span data-ttu-id="36c40-198">処理</span><span class="sxs-lookup"><span data-stu-id="36c40-198">Process</span></span></td>
 <td><ul>
-<li><span data-ttu-id="6b812-199">未定</span><span class="sxs-lookup"><span data-stu-id="6b812-199">Not planned</span></span></li>
-<li><span data-ttu-id="6b812-200">準備済</span><span class="sxs-lookup"><span data-stu-id="6b812-200">Prepared</span></span></li>
-<li><span data-ttu-id="6b812-201">処理中</span><span class="sxs-lookup"><span data-stu-id="6b812-201">In progress</span></span></li>
+<li><span data-ttu-id="36c40-199">未定</span><span class="sxs-lookup"><span data-stu-id="36c40-199">Not planned</span></span></li>
+<li><span data-ttu-id="36c40-200">準備済</span><span class="sxs-lookup"><span data-stu-id="36c40-200">Prepared</span></span></li>
+<li><span data-ttu-id="36c40-201">処理中</span><span class="sxs-lookup"><span data-stu-id="36c40-201">In progress</span></span></li>
 </ul></td>
-<td><span data-ttu-id="6b812-202">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-202">No</span></span></td>
-<td><span data-ttu-id="6b812-203">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-203">No</span></span></td>
-<td><span data-ttu-id="6b812-204">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-204">No</span></span></td>
-<td><span data-ttu-id="6b812-205">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-205">No</span></span></td>
-<td><span data-ttu-id="6b812-206">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-206">No</span></span></td>
-<td><span data-ttu-id="6b812-207">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-207">No</span></span></td>
+<td><span data-ttu-id="36c40-202">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-202">No</span></span></td>
+<td><span data-ttu-id="36c40-203">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-203">No</span></span></td>
+<td><span data-ttu-id="36c40-204">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-204">No</span></span></td>
+<td><span data-ttu-id="36c40-205">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-205">No</span></span></td>
+<td><span data-ttu-id="36c40-206">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-206">No</span></span></td>
+<td><span data-ttu-id="36c40-207">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-207">No</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="6b812-208">処理</span><span class="sxs-lookup"><span data-stu-id="6b812-208">Process</span></span></td>
-<td><span data-ttu-id="6b812-209">完了</span><span class="sxs-lookup"><span data-stu-id="6b812-209">Completed</span></span></td>
-<td><span data-ttu-id="6b812-210">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-210">No</span></span></td>
-<td><span data-ttu-id="6b812-211">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-211">No</span></span></td>
-<td><span data-ttu-id="6b812-212">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-212">No</span></span></td>
-<td><span data-ttu-id="6b812-213">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-213">No</span></span></td>
-<td><span data-ttu-id="6b812-214">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-214">No</span></span></td>
-<td><span data-ttu-id="6b812-215">第        条</span><span class="sxs-lookup"><span data-stu-id="6b812-215">No</span></span></td>
+<td><span data-ttu-id="36c40-208">処理</span><span class="sxs-lookup"><span data-stu-id="36c40-208">Process</span></span></td>
+<td><span data-ttu-id="36c40-209">完了</span><span class="sxs-lookup"><span data-stu-id="36c40-209">Completed</span></span></td>
+<td><span data-ttu-id="36c40-210">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-210">No</span></span></td>
+<td><span data-ttu-id="36c40-211">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-211">No</span></span></td>
+<td><span data-ttu-id="36c40-212">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-212">No</span></span></td>
+<td><span data-ttu-id="36c40-213">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-213">No</span></span></td>
+<td><span data-ttu-id="36c40-214">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-214">No</span></span></td>
+<td><span data-ttu-id="36c40-215">第        条</span><span class="sxs-lookup"><span data-stu-id="36c40-215">No</span></span></td>
 </tr>
 </tbody>
 </table>

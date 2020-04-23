@@ -2,7 +2,7 @@
 title: 最大能力負荷の計算
 description: このトピックでは、資産管理で最大能力負荷を計算する方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,46 +18,46 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: da737cedfcd678a835e85a2b82a05394d771f8cc
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 2ddce7d3076d44b969cfb4c52462f92ed7f6db1d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652267"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3216485"
 ---
-# <a name="calculate-capacity-load"></a><span data-ttu-id="bd263-103">最大能力負荷の計算</span><span class="sxs-lookup"><span data-stu-id="bd263-103">Calculate capacity load</span></span>
+# <a name="calculate-capacity-load"></a><span data-ttu-id="7ee11-103">最大能力負荷の計算</span><span class="sxs-lookup"><span data-stu-id="7ee11-103">Calculate capacity load</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
-<span data-ttu-id="bd263-104">資産管理で、次の最大能力負荷を計算します。</span><span class="sxs-lookup"><span data-stu-id="bd263-104">In Asset Management, you can calculate capacity load on:</span></span>
+<span data-ttu-id="7ee11-104">資産管理で、次の最大能力負荷を計算します。</span><span class="sxs-lookup"><span data-stu-id="7ee11-104">In Asset Management, you can calculate capacity load on:</span></span>
 
-- <span data-ttu-id="bd263-105">メンテナンス スケジュール明細行</span><span class="sxs-lookup"><span data-stu-id="bd263-105">maintenance schedule lines</span></span>  
-- <span data-ttu-id="bd263-106">まだスケジュールされていない作業指示書</span><span class="sxs-lookup"><span data-stu-id="bd263-106">work orders that have not yet been scheduled</span></span>  
-- <span data-ttu-id="bd263-107">スケジュール済作業指示書</span><span class="sxs-lookup"><span data-stu-id="bd263-107">scheduled work orders</span></span>
+- <span data-ttu-id="7ee11-105">メンテナンス スケジュール明細行</span><span class="sxs-lookup"><span data-stu-id="7ee11-105">maintenance schedule lines</span></span>  
+- <span data-ttu-id="7ee11-106">まだスケジュールされていない作業指示書</span><span class="sxs-lookup"><span data-stu-id="7ee11-106">work orders that have not yet been scheduled</span></span>  
+- <span data-ttu-id="7ee11-107">スケジュール済作業指示書</span><span class="sxs-lookup"><span data-stu-id="7ee11-107">scheduled work orders</span></span>
 
-<span data-ttu-id="bd263-108">これは、特定の期間における予想される最大能力負荷の概要を取得する場合に役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="bd263-108">This is useful if you want to get an overview of expected capacity load for a specific period.</span></span> <span data-ttu-id="bd263-109">最大能力負荷の計算は、すべての資産または選択した資産に対して行うことができます。</span><span class="sxs-lookup"><span data-stu-id="bd263-109">Calculation of capacity load can be done on all assets or selected assets.</span></span> <span data-ttu-id="bd263-110">また、メンテナンス ダウンタイム活動や作業指示書プールで計算を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="bd263-110">You can also make a calculation on maintenance downtime activities or work order pools.</span></span>
+<span data-ttu-id="7ee11-108">これは、特定の期間における予想される最大能力負荷の概要を取得する場合に役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-108">This is useful if you want to get an overview of expected capacity load for a specific period.</span></span> <span data-ttu-id="7ee11-109">最大能力負荷の計算は、すべての資産または選択した資産に対して行うことができます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-109">Calculation of capacity load can be done on all assets or selected assets.</span></span> <span data-ttu-id="7ee11-110">また、メンテナンス ダウンタイム活動や作業指示書プールで計算を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-110">You can also make a calculation on maintenance downtime activities or work order pools.</span></span>
 
-1. <span data-ttu-id="bd263-111">**資産管理** > **照会** > **最大能力負荷**の順に、または**資産管理** > **共通** > **作業指示書プール** > **すべての作業指示書プール** / **有効な作業指示書プール** > リスト内で作業指示書プールの選択 > **最大負荷能力**ボタンの順に、または**資産管理** > **共通** > **メンテナンス ダウンタイム活動** > **すべてのメンテナンス ダウンタイム活動** / **有効なメンテナンス ダウンタイム活動** > リスト内でメンテナンス活動を選択 > **最大能力負荷**ボタンの順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd263-111">Click **Asset management** > **Inquiries** > **Capacity load**, or **Asset management** > **Common** > **Work order pools** > **All work order pools** / **Active work order pools** > select work order pool in the list > **Capacity load** button, or **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** / **Active maintenance downtime activities** > select maintenance activity in the list > **Capacity load** button.</span></span>
+1. <span data-ttu-id="7ee11-111">**資産管理** > **照会** > **最大能力負荷**の順に、または**資産管理** > **共通** > **作業指示書プール** > **すべての作業指示書プール** / **有効な作業指示書プール** > リスト内で作業指示書プールの選択 > **最大負荷能力**ボタンの順に、または**資産管理** > **共通** > **メンテナンス ダウンタイム活動** > **すべてのメンテナンス ダウンタイム活動** / **有効なメンテナンス ダウンタイム活動** > リスト内でメンテナンス活動を選択 > **最大能力負荷**ボタンの順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="7ee11-111">Click **Asset management** > **Inquiries** > **Capacity load**, or **Asset management** > **Common** > **Work order pools** > **All work order pools** / **Active work order pools** > select work order pool in the list > **Capacity load** button, or **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** / **Active maintenance downtime activities** > select maintenance activity in the list > **Capacity load** button.</span></span>
 
-2. <span data-ttu-id="bd263-112">**最大能力負荷の計算**ダイアログで、**開始日/時刻**および**終了日/時刻**フィールドの計算に対する期間を選択します。</span><span class="sxs-lookup"><span data-stu-id="bd263-112">In the **Calculate capacity load** dialog, select a period for the calculation in the **Start date/time** and **End date/time** fields.</span></span>
+2. <span data-ttu-id="7ee11-112">**最大能力負荷の計算**ダイアログで、**開始日/時刻**および**終了日/時刻**フィールドの計算に対する期間を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ee11-112">In the **Calculate capacity load** dialog, select a period for the calculation in the **Start date/time** and **End date/time** fields.</span></span>
 
-3. <span data-ttu-id="bd263-113">計算にメンテナンス スケジュール行を含める場合は、**メンテナンス スケジュールを含める**トグル ボタンで "はい" を選択します。</span><span class="sxs-lookup"><span data-stu-id="bd263-113">Select "Yes" on the **Include maintenance schedule** toggle button if you want to include maintenance schedule lines in the calculation.</span></span>
+3. <span data-ttu-id="7ee11-113">計算にメンテナンス スケジュール行を含める場合は、**メンテナンス スケジュールを含める**トグル ボタンで "はい" を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ee11-113">Select "Yes" on the **Include maintenance schedule** toggle button if you want to include maintenance schedule lines in the calculation.</span></span>
 
-4. <span data-ttu-id="bd263-114">計算に作業指示書ジョブを含める場合は、**作業指示書を含める**トグル ボタンで "はい" を選択します。</span><span class="sxs-lookup"><span data-stu-id="bd263-114">Select "Yes" on the **Include work order** toggle button if you want to include work order jobs in the calculation.</span></span>
+4. <span data-ttu-id="7ee11-114">計算に作業指示書ジョブを含める場合は、**作業指示書を含める**トグル ボタンで "はい" を選択します。</span><span class="sxs-lookup"><span data-stu-id="7ee11-114">Select "Yes" on the **Include work order** toggle button if you want to include work order jobs in the calculation.</span></span>
 
-5. <span data-ttu-id="bd263-115">**レベル** フィールドを使用すると、機能的な場所に関する最大能力負荷行の詳細度を指定できます。</span><span class="sxs-lookup"><span data-stu-id="bd263-115">You can use the **Level** field to indicate how detailed you want the capacity load lines to be regarding functional locations.</span></span> 
+5. <span data-ttu-id="7ee11-115">**レベル** フィールドを使用すると、機能的な場所に関する最大能力負荷行の詳細度を指定できます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-115">You can use the **Level** field to indicate how detailed you want the capacity load lines to be regarding functional locations.</span></span> 
 
-    <span data-ttu-id="bd263-116">たとえば、フィールドに数値 "1" を挿入し、複数レベルの機能的な場所構造がある場合、機能的な場所に対するすべてのメンテナンス スケジュール明細行および作業指示書が最上位レベルに表示されます。したがって明細行の時間は、下位レベルにある機能的な場所から追加される場合があります。</span><span class="sxs-lookup"><span data-stu-id="bd263-116">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance schedule lines and work orders for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level.</span></span> 
+    <span data-ttu-id="7ee11-116">たとえば、フィールドに数値 "1" を挿入し、複数レベルの機能的な場所構造がある場合、機能的な場所に対するすべてのメンテナンス スケジュール明細行および作業指示書が最上位レベルに表示されます。したがって明細行の時間は、下位レベルにある機能的な場所から追加される場合があります。</span><span class="sxs-lookup"><span data-stu-id="7ee11-116">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance schedule lines and work orders for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level.</span></span> 
     
-    <span data-ttu-id="bd263-117">**レベル** フィールドに数値 "0" を挿入すると、関連するすべての機能的な場所レベルですべてメンテナンス スケジュール行および作業指示書を示す、詳細な結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd263-117">If you insert the number "0" in the **Level** field, you will see a detailed result showing all maintenance schedule lines and all work orders on all the functional location levels to which they are related.</span></span>
+    <span data-ttu-id="7ee11-117">**レベル** フィールドに数値 "0" を挿入すると、関連するすべての機能的な場所レベルですべてメンテナンス スケジュール行および作業指示書を示す、詳細な結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-117">If you insert the number "0" in the **Level** field, you will see a detailed result showing all maintenance schedule lines and all work orders on all the functional location levels to which they are related.</span></span>
 
-6. <span data-ttu-id="bd263-118">**OK** をクリックして、計算を開始します。</span><span class="sxs-lookup"><span data-stu-id="bd263-118">Click **OK** to start the calculation.</span></span>
+6. <span data-ttu-id="7ee11-118">**OK** をクリックして、計算を開始します。</span><span class="sxs-lookup"><span data-stu-id="7ee11-118">Click **OK** to start the calculation.</span></span>
 
-7. <span data-ttu-id="bd263-119">**グループ化**グループで、関連するボタンをクリックすると、計算の必要な詳細レベルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd263-119">In the **Group by...** groups, click the relevant buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="bd263-120">下のスクリーンショットでは、選択した**グループ化**ボタンが青色で強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="bd263-120">In the screenshot below, the selected **Group by** buttons are highlighted in blue color.</span></span> <span data-ttu-id="bd263-121">ボタンをクリックして、有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="bd263-121">Click on a button to activate or deactivate it.</span></span>
+7. <span data-ttu-id="7ee11-119">**グループ化**グループで、関連するボタンをクリックすると、計算の必要な詳細レベルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7ee11-119">In the **Group by...** groups, click the relevant buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="7ee11-120">下のスクリーンショットでは、選択した**グループ化**ボタンが青色で強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="7ee11-120">In the screenshot below, the selected **Group by** buttons are highlighted in blue color.</span></span> <span data-ttu-id="7ee11-121">ボタンをクリックして、有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="7ee11-121">Click on a button to activate or deactivate it.</span></span>
 
     ![図 1](media/01-capacity-planning.png)
 
 >[!NOTE]
-><span data-ttu-id="bd263-123">スケジュール済み作業指示書に関する能力計画にのみ焦点を合わせる場合は、[スケジュール済み作業指示書の最大能力負荷の計算](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd263-123">If you want to focus only on capacity planning regarding scheduled work orders, see [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).</span></span>
+><span data-ttu-id="7ee11-123">スケジュール済み作業指示書に関する能力計画にのみ焦点を合わせる場合は、[スケジュール済み作業指示書の最大能力負荷の計算](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7ee11-123">If you want to focus only on capacity planning regarding scheduled work orders, see [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).</span></span>
 

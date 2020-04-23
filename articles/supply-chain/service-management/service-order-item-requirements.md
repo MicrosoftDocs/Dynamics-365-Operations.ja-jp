@@ -2,7 +2,7 @@
 title: サービス注文品目の要件
 description: サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjSalesItemReq
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,55 +18,55 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ed17e968debf47d7d212a945975ae1cfaccdff4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 0e31f58cf8782c715b97bdae0e89f684b15a76d2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743244"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215082"
 ---
-# <a name="service-order-item-requirements"></a><span data-ttu-id="ba54c-103">サービス注文品目の要件</span><span class="sxs-lookup"><span data-stu-id="ba54c-103">Service order item requirements</span></span>   
+# <a name="service-order-item-requirements"></a><span data-ttu-id="8ebab-103">サービス注文品目の要件</span><span class="sxs-lookup"><span data-stu-id="8ebab-103">Service order item requirements</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="ba54c-104">顧客に提供するサービスを追跡および管理するサービス注文を作成できます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="ba54c-105">サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="ba54c-106">品目要求を在庫からすぐ消費したり、その品目の製造オーダーを開始できます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
+<span data-ttu-id="8ebab-104">顧客に提供するサービスを追跡および管理するサービス注文を作成できます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="8ebab-105">サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="8ebab-106">品目要求を在庫からすぐ消費したり、その品目の製造オーダーを開始できます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
 
-<span data-ttu-id="ba54c-107">品目トランザクションではなく在庫品目要求を使用することによって、品目が実際に使用される直前の配送を計画したり、発注書を作成したり、品目を売買契約の枠組みに含めたり、在庫品目要求を生産計画に含めたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
+<span data-ttu-id="8ebab-107">品目トランザクションではなく在庫品目要求を使用することによって、品目が実際に使用される直前の配送を計画したり、発注書を作成したり、品目を売買契約の枠組みに含めたり、在庫品目要求を生産計画に含めたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
 
-<span data-ttu-id="ba54c-108">サービス注文に関する要求はプロジェクトを通じて処理します。</span><span class="sxs-lookup"><span data-stu-id="ba54c-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="ba54c-109">サービス注文に対して在庫品目要求を作成するには、サービス注文をプロジェクトに関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba54c-109">To create an item requirement on a service order, the service order must be attached to a project.</span></span>
+<span data-ttu-id="8ebab-108">サービス注文に関する要求はプロジェクトを通じて処理します。</span><span class="sxs-lookup"><span data-stu-id="8ebab-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="8ebab-109">サービス注文に対して在庫品目要求を作成するには、サービス注文をプロジェクトに関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="8ebab-109">To create an item requirement on a service order, the service order must be attached to a project.</span></span>
 
-<span data-ttu-id="ba54c-110">サービス注文に対して作成された在庫品目要求は、個々のサービス注文の**プロジェクト**から、または**販売注文**フォームを使用して表示できます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-110">As soon as an item requirement is created for a service order, it can be viewed from **Project** in the individual service order or through the **Sales order** form.</span></span>
+<span data-ttu-id="8ebab-110">サービス注文に対して作成された在庫品目要求は、個々のサービス注文の**プロジェクト**から、または**販売注文**フォームを使用して表示できます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-110">As soon as an item requirement is created for a service order, it can be viewed from **Project** in the individual service order or through the **Sales order** form.</span></span>
 
-## <a name="view-an-item-requirement-from-a-service-order"></a><span data-ttu-id="ba54c-111">サービス注文からの在庫品目要求の表示</span><span class="sxs-lookup"><span data-stu-id="ba54c-111">View an item requirement from a service order</span></span>
+## <a name="view-an-item-requirement-from-a-service-order"></a><span data-ttu-id="8ebab-111">サービス注文からの在庫品目要求の表示</span><span class="sxs-lookup"><span data-stu-id="8ebab-111">View an item requirement from a service order</span></span>
 
-1.  <span data-ttu-id="ba54c-112">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="8ebab-112">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="ba54c-113">**派遣**をクリックし、**在庫品目要求**をクリックして**在庫品目要求**フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-113">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span>
+2.  <span data-ttu-id="8ebab-113">**派遣**をクリックし、**在庫品目要求**をクリックして**在庫品目要求**フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-113">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span>
 
-3.  <span data-ttu-id="ba54c-114">**プロジェクト**タブをクリックし、**サービス注文**フィールドで在庫品目要求のサービス注文を確認します。</span><span class="sxs-lookup"><span data-stu-id="ba54c-114">Click the **Project** tab, and check the **Service order** field to see the service orders of the item requirement.</span></span>
+3.  <span data-ttu-id="8ebab-114">**プロジェクト**タブをクリックし、**サービス注文**フィールドで在庫品目要求のサービス注文を確認します。</span><span class="sxs-lookup"><span data-stu-id="8ebab-114">Click the **Project** tab, and check the **Service order** field to see the service orders of the item requirement.</span></span>
 
-## <a name="delete-service-orders-with-item-requirements"></a><span data-ttu-id="ba54c-115">在庫品目要求を含むサービス注文の削除</span><span class="sxs-lookup"><span data-stu-id="ba54c-115">Delete service orders with item requirements</span></span>
+## <a name="delete-service-orders-with-item-requirements"></a><span data-ttu-id="8ebab-115">在庫品目要求を含むサービス注文の削除</span><span class="sxs-lookup"><span data-stu-id="8ebab-115">Delete service orders with item requirements</span></span>
 
-<span data-ttu-id="ba54c-116">サービス注文に対して在庫品目要求が作成されている場合は、サービス注文を削除できません。</span><span class="sxs-lookup"><span data-stu-id="ba54c-116">If an item requirement is created on a service order, you cannot delete the service order.</span></span> <span data-ttu-id="ba54c-117">サービス注文を削除する前に、在庫品目要求を削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba54c-117">You must delete the item requirement before you can delete the service order.</span></span>
+<span data-ttu-id="8ebab-116">サービス注文に対して在庫品目要求が作成されている場合は、サービス注文を削除できません。</span><span class="sxs-lookup"><span data-stu-id="8ebab-116">If an item requirement is created on a service order, you cannot delete the service order.</span></span> <span data-ttu-id="8ebab-117">サービス注文を削除する前に、在庫品目要求を削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8ebab-117">You must delete the item requirement before you can delete the service order.</span></span>
 
-1.  <span data-ttu-id="ba54c-118">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-118">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="8ebab-118">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-118">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="ba54c-119">**派遣**をクリックし、**在庫品目要求**をクリックして**在庫品目要求**フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-119">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span> <span data-ttu-id="ba54c-120">このフォームに、サービス注文に対して作成されている在庫品目要求が一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-120">This form lists the item requirements that are created on the service order.</span></span>
+2.  <span data-ttu-id="8ebab-119">**派遣**をクリックし、**在庫品目要求**をクリックして**在庫品目要求**フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-119">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span> <span data-ttu-id="8ebab-120">このフォームに、サービス注文に対して作成されている在庫品目要求が一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-120">This form lists the item requirements that are created on the service order.</span></span>
 
-3.  <span data-ttu-id="ba54c-121">削除する品目要求を選択し、**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-121">Select the item requirement to delete, and then click **Delete**.</span></span>
+3.  <span data-ttu-id="8ebab-121">削除する品目要求を選択し、**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-121">Select the item requirement to delete, and then click **Delete**.</span></span>
 
-<span data-ttu-id="ba54c-122">- または -</span><span class="sxs-lookup"><span data-stu-id="ba54c-122">–or–</span></span>
+<span data-ttu-id="8ebab-122">- または -</span><span class="sxs-lookup"><span data-stu-id="8ebab-122">–or–</span></span>
 
-1.  <span data-ttu-id="ba54c-123">**プロジェクト管理および会計** \> **共通** \> **プロジェクト** \> **すべてのプロジェクト**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-123">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
+1.  <span data-ttu-id="8ebab-123">**プロジェクト管理および会計** \> **共通** \> **プロジェクト** \> **すべてのプロジェクト**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-123">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
 
-2.  <span data-ttu-id="ba54c-124">在庫品目要求が作成されているサービス注文を含むプロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba54c-124">Open the project that has the service order in which an item requirement is created.</span></span>
+2.  <span data-ttu-id="8ebab-124">在庫品目要求が作成されているサービス注文を含むプロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="8ebab-124">Open the project that has the service order in which an item requirement is created.</span></span>
 
-3.  <span data-ttu-id="ba54c-125">**プロジェクト**フォームの右ウィンドウで、**在庫品目要求**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-125">In the **Projects** form, in the right pane, click **Item requirements**.</span></span> <span data-ttu-id="ba54c-126">**在庫品目要求**フォームは、選択したプロジェクトに関連付けられている在庫品目要求を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="ba54c-126">The **Item requirements** form lists the item requirements that are associated with the selected project.</span></span>
+3.  <span data-ttu-id="8ebab-125">**プロジェクト**フォームの右ウィンドウで、**在庫品目要求**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-125">In the **Projects** form, in the right pane, click **Item requirements**.</span></span> <span data-ttu-id="8ebab-126">**在庫品目要求**フォームは、選択したプロジェクトに関連付けられている在庫品目要求を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="8ebab-126">The **Item requirements** form lists the item requirements that are associated with the selected project.</span></span>
 
-4.  <span data-ttu-id="ba54c-127">削除する品目要求を選択し、**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba54c-127">Select the item requirement to delete, and then click **Delete**.</span></span>
+4.  <span data-ttu-id="8ebab-127">削除する品目要求を選択し、**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8ebab-127">Select the item requirement to delete, and then click **Delete**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ba54c-128">参照</span><span class="sxs-lookup"><span data-stu-id="ba54c-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8ebab-128">参照</span><span class="sxs-lookup"><span data-stu-id="8ebab-128">See also</span></span>
 
-<span data-ttu-id="ba54c-129">[在庫品目要求 (フォーム)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="ba54c-129">[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span></span>
+<span data-ttu-id="8ebab-129">[在庫品目要求 (フォーム)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="8ebab-129">[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span></span>
 

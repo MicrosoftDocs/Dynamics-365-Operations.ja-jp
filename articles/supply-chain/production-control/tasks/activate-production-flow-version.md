@@ -2,7 +2,7 @@
 title: 生産フロー バージョンの有効化
 description: かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4c2a88d42626082216d77fb39f2ac1dc79be719
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: c233c942ff028e40632afaeee2d8580ed7a630f7
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147230"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211034"
 ---
-# <a name="activate-a-production-flow-version"></a><span data-ttu-id="ae003-103">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="ae003-103">Activate a production flow version</span></span>
+# <a name="activate-a-production-flow-version"></a><span data-ttu-id="0bf5c-103">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="0bf5c-103">Activate a production flow version</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ae003-104">かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae003-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="ae003-105">ベスト プラクティスとして、有効開始日時の有効期限が切れる前にバージョンを有効にします。</span><span class="sxs-lookup"><span data-stu-id="ae003-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="ae003-106">このタスクを完了するには、バージョンを有効にするためのドラフト ステータスを持つ生産フロー バージョンが必要です。</span><span class="sxs-lookup"><span data-stu-id="ae003-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
+<span data-ttu-id="0bf5c-104">かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="0bf5c-105">ベスト プラクティスとして、有効開始日時の有効期限が切れる前にバージョンを有効にします。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="0bf5c-106">このタスクを完了するには、バージョンを有効にするためのドラフト ステータスを持つ生産フロー バージョンが必要です。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
 
 
-## <a name="find-and-activate-a-production-flow-version"></a><span data-ttu-id="ae003-107">生産フロー バージョンの検索および有効化</span><span class="sxs-lookup"><span data-stu-id="ae003-107">Find and activate a production flow version</span></span>
-1. <span data-ttu-id="ae003-108">[生産フロー] に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae003-108">Go to Production flows.</span></span>
-2. <span data-ttu-id="ae003-109">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="ae003-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ae003-110">[計画ステータス] フィールドでドラフトを持つ生産フロー バージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ae003-110">Select a production flow version that has Draft in the Plan status field.</span></span>  
-3. <span data-ttu-id="ae003-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae003-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="ae003-112">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="ae003-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ae003-113">[計画ステータス] フィールドでドラフトを持つ生産フロー バージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ae003-113">Select a production flow version that has Draft in the Plan status field.</span></span>  
-5. <span data-ttu-id="ae003-114">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae003-114">Click Activate.</span></span>
-6. <span data-ttu-id="ae003-115">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae003-115">Click OK.</span></span>
+## <a name="find-and-activate-a-production-flow-version"></a><span data-ttu-id="0bf5c-107">生産フロー バージョンの検索および有効化</span><span class="sxs-lookup"><span data-stu-id="0bf5c-107">Find and activate a production flow version</span></span>
+1. <span data-ttu-id="0bf5c-108">[生産フロー] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-108">Go to Production flows.</span></span>
+2. <span data-ttu-id="0bf5c-109">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0bf5c-110">[計画ステータス] フィールドでドラフトを持つ生産フロー バージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-110">Select a production flow version that has Draft in the Plan status field.</span></span>  
+3. <span data-ttu-id="0bf5c-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="0bf5c-112">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0bf5c-113">[計画ステータス] フィールドでドラフトを持つ生産フロー バージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-113">Select a production flow version that has Draft in the Plan status field.</span></span>  
+5. <span data-ttu-id="0bf5c-114">[有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-114">Click Activate.</span></span>
+6. <span data-ttu-id="0bf5c-115">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0bf5c-115">Click OK.</span></span>
 
