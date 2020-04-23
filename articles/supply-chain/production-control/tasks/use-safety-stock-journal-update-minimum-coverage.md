@@ -2,7 +2,7 @@
 title: 安全在庫仕訳帳を使用した最小補充の更新
 description: この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,59 +10,59 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1624f84db10ea7cc80bb94757f19484b8c403c5c
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148771"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210321"
 ---
-# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a><span data-ttu-id="f5da9-103">安全在庫仕訳帳を使用した最小補充の更新</span><span class="sxs-lookup"><span data-stu-id="f5da9-103">Use the safety stock journal to update minimum coverage</span></span>
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a><span data-ttu-id="34771-103">安全在庫仕訳帳を使用した最小補充の更新</span><span class="sxs-lookup"><span data-stu-id="34771-103">Use the safety stock journal to update minimum coverage</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f5da9-104">この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-104">This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.</span></span> <span data-ttu-id="f5da9-105">これは安全在庫仕訳帳を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-105">This is done using the safety stock journal.</span></span> <span data-ttu-id="f5da9-106">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="f5da9-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="f5da9-107">このタスクは、生産計画担当者による最小補充の維持を支援することを意図しています。</span><span class="sxs-lookup"><span data-stu-id="f5da9-107">This task is intended for the production planner, to help maintain minimum coverage.</span></span>
+<span data-ttu-id="34771-104">この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="34771-104">This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.</span></span> <span data-ttu-id="34771-105">これは安全在庫仕訳帳を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="34771-105">This is done using the safety stock journal.</span></span> <span data-ttu-id="34771-106">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="34771-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="34771-107">このタスクは、生産計画担当者による最小補充の維持を支援することを意図しています。</span><span class="sxs-lookup"><span data-stu-id="34771-107">This task is intended for the production planner, to help maintain minimum coverage.</span></span>
 
 
-## <a name="create-a-new-safety-stock-journal-name"></a><span data-ttu-id="f5da9-108">新しい安全在庫仕訳帳名を作成します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-108">Create a new safety stock journal name</span></span>
-1. <span data-ttu-id="f5da9-109">**ナビゲーション ウィンドウ**で、**マスター プラン > 設定 > 安全在庫仕訳帳名**に移動します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-109">In the **Navigation pane**, go to **Master planning > Setup > Safety stock journal names**.</span></span>
-2. <span data-ttu-id="f5da9-110">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-110">Click **New**.</span></span>
-3. <span data-ttu-id="f5da9-111">**名前**フィールドに、「材料」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-111">In the **Name** field, type 'Material'.</span></span>
-4. <span data-ttu-id="f5da9-112">**説明**フィールドに、「材料」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-112">In the **Description** field, type 'Material'.</span></span>
-5. <span data-ttu-id="f5da9-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-113">Close the page.</span></span>
+## <a name="create-a-new-safety-stock-journal-name"></a><span data-ttu-id="34771-108">新しい安全在庫仕訳帳名を作成します。</span><span class="sxs-lookup"><span data-stu-id="34771-108">Create a new safety stock journal name</span></span>
+1. <span data-ttu-id="34771-109">**ナビゲーション ウィンドウ**で、**マスター プラン > 設定 > 安全在庫仕訳帳名**に移動します。</span><span class="sxs-lookup"><span data-stu-id="34771-109">In the **Navigation pane**, go to **Master planning > Setup > Safety stock journal names**.</span></span>
+2. <span data-ttu-id="34771-110">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-110">Click **New**.</span></span>
+3. <span data-ttu-id="34771-111">**名前**フィールドに、「材料」と入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-111">In the **Name** field, type 'Material'.</span></span>
+4. <span data-ttu-id="34771-112">**説明**フィールドに、「材料」と入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-112">In the **Description** field, type 'Material'.</span></span>
+5. <span data-ttu-id="34771-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="34771-113">Close the page.</span></span>
 
-## <a name="create-a-safety-stock-journal"></a><span data-ttu-id="f5da9-114">安全在庫仕訳帳の作成</span><span class="sxs-lookup"><span data-stu-id="f5da9-114">Create a safety stock journal</span></span>
-1. <span data-ttu-id="f5da9-115">**ナビゲーション ウィンドウ**で、**マスター プラン > マスター プラン > 実行 > 安全在庫の計算**に移動します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-115">In the **Navigation pane**, go to **Master planning > Master planning > Run > Safety stock calculation**.</span></span>
-2. <span data-ttu-id="f5da9-116">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-116">Click **New**.</span></span>
-3. <span data-ttu-id="f5da9-117">**名前**フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-117">In the **Name** field, enter or select a value.</span></span> <span data-ttu-id="f5da9-118">作成した安全在庫仕訳帳名、たとえば「材料」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-118">Select the safety stock journal name that you created, for example, Material.</span></span>  
-4. <span data-ttu-id="f5da9-119">**明細行の作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-119">Click **Create lines**.</span></span>
-5. <span data-ttu-id="f5da9-120">**開始日**フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-120">In the **From date** field, enter a date.</span></span>  
-6. <span data-ttu-id="f5da9-121">**終了日**フィールドに、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-121">In the **To date** field, enter a date.</span></span>
-7. <span data-ttu-id="f5da9-122">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-122">Click **OK**.</span></span> <span data-ttu-id="f5da9-123">これにより、在庫トランザクションがある分析コードの行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-123">This will create lines for the dimensions that have inventory transactions.</span></span>  
+## <a name="create-a-safety-stock-journal"></a><span data-ttu-id="34771-114">安全在庫仕訳帳の作成</span><span class="sxs-lookup"><span data-stu-id="34771-114">Create a safety stock journal</span></span>
+1. <span data-ttu-id="34771-115">**ナビゲーション ウィンドウ**で、**マスター プラン > マスター プラン > 実行 > 安全在庫の計算**に移動します。</span><span class="sxs-lookup"><span data-stu-id="34771-115">In the **Navigation pane**, go to **Master planning > Master planning > Run > Safety stock calculation**.</span></span>
+2. <span data-ttu-id="34771-116">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-116">Click **New**.</span></span>
+3. <span data-ttu-id="34771-117">**名前**フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="34771-117">In the **Name** field, enter or select a value.</span></span> <span data-ttu-id="34771-118">作成した安全在庫仕訳帳名、たとえば「材料」を選択します。</span><span class="sxs-lookup"><span data-stu-id="34771-118">Select the safety stock journal name that you created, for example, Material.</span></span>  
+4. <span data-ttu-id="34771-119">**明細行の作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-119">Click **Create lines**.</span></span>
+5. <span data-ttu-id="34771-120">**開始日**フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-120">In the **From date** field, enter a date.</span></span>  
+6. <span data-ttu-id="34771-121">**終了日**フィールドに、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-121">In the **To date** field, enter a date.</span></span>
+7. <span data-ttu-id="34771-122">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-122">Click **OK**.</span></span> <span data-ttu-id="34771-123">これにより、在庫トランザクションがある分析コードの行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="34771-123">This will create lines for the dimensions that have inventory transactions.</span></span>  
 
-## <a name="calculate-proposal"></a><span data-ttu-id="f5da9-124">提案の計算</span><span class="sxs-lookup"><span data-stu-id="f5da9-124">Calculate proposal</span></span>
-1. <span data-ttu-id="f5da9-125">**提案の計算**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-125">Click **Calculate proposal**.</span></span>
-2. <span data-ttu-id="f5da9-126">**リード タイムで平均払出を使用**オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-126">Select the **Use average issue during lead time** option.</span></span>
-3. <span data-ttu-id="f5da9-127">**乗算の係数**を「10」に設定します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-127">Set **Multiplication factor** to '10'.</span></span> <span data-ttu-id="f5da9-128">提案を調整するために倍率が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-128">The Multiply factor is used to adjust the proposal.</span></span> <span data-ttu-id="f5da9-129">デモ データにはわずかなトランザクションしかないため、現実的な提案を得るためにはこの係数を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5da9-129">Because demo data only has a few transactions, you will need to set the factor to get a realistic proposal.</span></span>  
-4. <span data-ttu-id="f5da9-130">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-130">Click **OK**.</span></span> <span data-ttu-id="f5da9-131">下へスクロールして M0002 と M0003 を見つけます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-131">Scroll down to find M0002 and M0003.</span></span> <span data-ttu-id="f5da9-132">**算出された最小**数量列を表示します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-132">View the **Calculated minimum** quantity column.</span></span>   
+## <a name="calculate-proposal"></a><span data-ttu-id="34771-124">提案の計算</span><span class="sxs-lookup"><span data-stu-id="34771-124">Calculate proposal</span></span>
+1. <span data-ttu-id="34771-125">**提案の計算**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-125">Click **Calculate proposal**.</span></span>
+2. <span data-ttu-id="34771-126">**リード タイムで平均払出を使用**オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="34771-126">Select the **Use average issue during lead time** option.</span></span>
+3. <span data-ttu-id="34771-127">**乗算の係数**を「10」に設定します。</span><span class="sxs-lookup"><span data-stu-id="34771-127">Set **Multiplication factor** to '10'.</span></span> <span data-ttu-id="34771-128">提案を調整するために倍率が使用されます。</span><span class="sxs-lookup"><span data-stu-id="34771-128">The Multiply factor is used to adjust the proposal.</span></span> <span data-ttu-id="34771-129">デモ データにはわずかなトランザクションしかないため、現実的な提案を得るためにはこの係数を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="34771-129">Because demo data only has a few transactions, you will need to set the factor to get a realistic proposal.</span></span>  
+4. <span data-ttu-id="34771-130">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-130">Click **OK**.</span></span> <span data-ttu-id="34771-131">下へスクロールして M0002 と M0003 を見つけます。</span><span class="sxs-lookup"><span data-stu-id="34771-131">Scroll down to find M0002 and M0003.</span></span> <span data-ttu-id="34771-132">**算出された最小**数量列を表示します。</span><span class="sxs-lookup"><span data-stu-id="34771-132">View the **Calculated minimum** quantity column.</span></span>   
 
-## <a name="update-minimum-quantity"></a><span data-ttu-id="f5da9-133">最小数量の更新</span><span class="sxs-lookup"><span data-stu-id="f5da9-133">Update minimum quantity</span></span>
-1. <span data-ttu-id="f5da9-134">**新しい最小数量**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-134">In the **New minimum quantity** field, enter a number.</span></span> <span data-ttu-id="f5da9-135">[算出された最小数量] の値と一致するように新しい最小数量を更新します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-135">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="f5da9-136">算出された最小がゼロの場合は、必要な将来価値を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-136">If the Calculated minimum is zero,  you can enter the desired future value.</span></span> <span data-ttu-id="f5da9-137">たとえば、倉庫 12 がある M0002 のこのフィールドに、[算出された最小数量] を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-137">For example, you can enter the Calculated minimum quantity in this field for M0002 that has warehouse 12.</span></span>  
-2. <span data-ttu-id="f5da9-138">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-138">In the list, find and select the desired record.</span></span> <span data-ttu-id="f5da9-139">たとえば、倉庫 12 がある M0002 を選択できます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-139">For example, you can select M0002 that has warehouse 12.</span></span>  
-3. <span data-ttu-id="f5da9-140">**新しい最小数量**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-140">In the **New minimum quantity** field, enter a number.</span></span> <span data-ttu-id="f5da9-141">[算出された最小数量] の値と一致するように新しい最小数量を更新します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-141">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="f5da9-142">算出された最小がゼロの場合は、必要な将来価値を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f5da9-142">If the Calculated minimum is zero you can enter the desired future value.</span></span>  
+## <a name="update-minimum-quantity"></a><span data-ttu-id="34771-133">最小数量の更新</span><span class="sxs-lookup"><span data-stu-id="34771-133">Update minimum quantity</span></span>
+1. <span data-ttu-id="34771-134">**新しい最小数量**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-134">In the **New minimum quantity** field, enter a number.</span></span> <span data-ttu-id="34771-135">[算出された最小数量] の値と一致するように新しい最小数量を更新します。</span><span class="sxs-lookup"><span data-stu-id="34771-135">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="34771-136">算出された最小がゼロの場合は、必要な将来価値を入力できます。</span><span class="sxs-lookup"><span data-stu-id="34771-136">If the Calculated minimum is zero,  you can enter the desired future value.</span></span> <span data-ttu-id="34771-137">たとえば、倉庫 12 がある M0002 のこのフィールドに、[算出された最小数量] を入力できます。</span><span class="sxs-lookup"><span data-stu-id="34771-137">For example, you can enter the Calculated minimum quantity in this field for M0002 that has warehouse 12.</span></span>  
+2. <span data-ttu-id="34771-138">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="34771-138">In the list, find and select the desired record.</span></span> <span data-ttu-id="34771-139">たとえば、倉庫 12 がある M0002 を選択できます。</span><span class="sxs-lookup"><span data-stu-id="34771-139">For example, you can select M0002 that has warehouse 12.</span></span>  
+3. <span data-ttu-id="34771-140">**新しい最小数量**フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34771-140">In the **New minimum quantity** field, enter a number.</span></span> <span data-ttu-id="34771-141">[算出された最小数量] の値と一致するように新しい最小数量を更新します。</span><span class="sxs-lookup"><span data-stu-id="34771-141">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="34771-142">算出された最小がゼロの場合は、必要な将来価値を入力できます。</span><span class="sxs-lookup"><span data-stu-id="34771-142">If the Calculated minimum is zero you can enter the desired future value.</span></span>  
 
-## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a><span data-ttu-id="f5da9-143">新しい最小数量を転記して結果を検証</span><span class="sxs-lookup"><span data-stu-id="f5da9-143">Post the new minimum quantity and validate the result</span></span>
-1. <span data-ttu-id="f5da9-144">**転記** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-144">Click **Post**.</span></span>
-2. <span data-ttu-id="f5da9-145">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-145">Click **OK**.</span></span>
-3. <span data-ttu-id="f5da9-146">クリックして、**品目番号**フィールドのリンク先を表示します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-146">Click to follow the link in the **Item number** field.</span></span>
-4. <span data-ttu-id="f5da9-147">クリックして、**品目番号**フィールドのリンク先を表示します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-147">Click to follow the link in the **Item number** field.</span></span>
-5. <span data-ttu-id="f5da9-148">**アクション ウィンドウ**で計画をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-148">On the **Action Pane**, click Plan.</span></span>
-6. <span data-ttu-id="f5da9-149">**品目補充**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5da9-149">Click **Item coverage**.</span></span> <span data-ttu-id="f5da9-150">**最小数量**が、安全在庫仕訳帳からの新しい最小数量で更新されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="f5da9-150">Notice that the **Minimum quantity** has been updated with the new minimum quantity from the safety stock journal.</span></span>  
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a><span data-ttu-id="34771-143">新しい最小数量を転記して結果を検証</span><span class="sxs-lookup"><span data-stu-id="34771-143">Post the new minimum quantity and validate the result</span></span>
+1. <span data-ttu-id="34771-144">**転記** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-144">Click **Post**.</span></span>
+2. <span data-ttu-id="34771-145">**OK**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-145">Click **OK**.</span></span>
+3. <span data-ttu-id="34771-146">クリックして、**品目番号**フィールドのリンク先を表示します。</span><span class="sxs-lookup"><span data-stu-id="34771-146">Click to follow the link in the **Item number** field.</span></span>
+4. <span data-ttu-id="34771-147">クリックして、**品目番号**フィールドのリンク先を表示します。</span><span class="sxs-lookup"><span data-stu-id="34771-147">Click to follow the link in the **Item number** field.</span></span>
+5. <span data-ttu-id="34771-148">**アクション ウィンドウ**で計画をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-148">On the **Action Pane**, click Plan.</span></span>
+6. <span data-ttu-id="34771-149">**品目補充**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34771-149">Click **Item coverage**.</span></span> <span data-ttu-id="34771-150">**最小数量**が、安全在庫仕訳帳からの新しい最小数量で更新されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="34771-150">Notice that the **Minimum quantity** has been updated with the new minimum quantity from the safety stock journal.</span></span>  
 
