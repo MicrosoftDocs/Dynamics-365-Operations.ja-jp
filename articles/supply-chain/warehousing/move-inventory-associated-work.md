@@ -2,7 +2,7 @@
 title: 倉庫管理における作業が関連付けられている在庫の移動
 description: このトピックでは、モバイル デバイスからピース ピッキングの確認を設定して適用する方法について説明します。
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorker
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 618942ff22b6a81c75bd472955e4add14e6f4d84
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2aee3af8da6610c16fc2d98091bfa3f01f1bd0f5
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548863"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215726"
 ---
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>倉庫管理における作業が関連付けられている在庫の移動
 

@@ -2,7 +2,7 @@
 title: 作業指示書の作成
 description: このトピックでは、資産管理で作業指示書を作成する方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6e910b2400106baf9f9dc06f6bc0d3daee8e4a43
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: f94f8bc20753e38ce1cb6eccdfbc85c2e491ffad
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570079"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3206130"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 

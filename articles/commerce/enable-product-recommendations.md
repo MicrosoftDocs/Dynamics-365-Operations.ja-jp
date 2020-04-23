@@ -3,7 +3,7 @@ title: 製品推奨事項の有効化
 description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為的知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154416"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259797"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -36,10 +36,30 @@ ms.locfileid: "3154416"
 
 有効にする前に、製品の推奨事項は、Azure Data Lake Storage (ADLS) を使用するようにストレージを移行した Commerce の顧客に対してのみサポートされていることに注意してください。 
 
-ADLS を有効にする手順については、[Dynamics 365 環境で ADLS を有効にする方法](enable-ADLS-environment.md) を参照してください。
+推奨事項を有効にするには、次のコンフィギュレーションをバック オフィスで有効にする必要があります。
 
-さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[こちら](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures) を参照してください。
+1. ADLS が購入され、環境内で正常に検証されていることを確認します。 詳細については、[ADLS が購入され、環境内で正常に検証されていることを確認する](enable-ADLS-environment.md) を参照してください。
+2. エンティティ格納の更新が自動化されていることを確認します。 詳細については、[エンティティ格納の更新が自動化されていることを確認する](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md) を参照してください。
+3. Azure AD ID コンフィギュレーションに推奨事項のエントリが含まれていることを確認します。 このアクションを実行する方法の詳細については、以下を参照してください。
 
+さらに、RetailSale の測定が有効になっていることを確認します。 この設定プロセスの詳細については、[測定の使用](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures) を参照してください。
+
+## <a name="azure-ad-identity-configuration"></a>Azure AD ID コンフィギュレーション
+
+この手順は、サービス (IaaS) コンフィギュレーションとしてのインフラストラクチャを実行するすべての顧客に必要です。 Service Fabric (SF) で実行している顧客については、この手順が自動的に行われ、設定が予想どおりに構成されていることを確認することをお勧めします。
+
+### <a name="setup"></a>セットアップ
+
+1. バック オフィスから、**Azure Active Directory アプリケーション** ページを検索します。
+2. "RecommendationSystemApplication-1" のエントリが存在するかどうかを確認します。
+
+エントリが存在しない場合は、次の情報を含む新しいエントリを追加します:
+
+- **クライアント ID** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **名前** - RecommendationSystemApplication-1
+- **ユーザー ID** - RetailServiceAccount
+
+ページを保存して閉じる。 
 
 ## <a name="turn-on-recommendations"></a>推奨事項を有効にする
 
@@ -49,10 +69,10 @@ ADLS を有効にする手順については、[Dynamics 365 環境で ADLS を�
 1. 共有パラメーターのリストで、**推奨リスト**を選択します。
 1. **推奨事項を有効にする**のオプションを、**はい** に設定します。
 
-![製品推奨事項の有効化](./media/enableproductrecommendations.png)
+![推奨事項の有効化](./media/enablepersonalization.png)
 
 > [!NOTE]
-> この手順では、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、最大数時間かかる場合があります。
+> この手順では、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、数時間かかる場合があります。
 
 ## <a name="configure-recommendation-list-parameters"></a>推奨リスト パラメーターのコンフィギュレーション
 
@@ -62,9 +82,11 @@ ADLS を有効にする手順については、[Dynamics 365 環境で ADLS を�
 
 Commerce バック オフィスで推奨事項を有効にした後、レイアウト ツールを使用して、推奨事項パネルをコントロール POS 画面に追加する必要があります。 このプロセスの詳細については、[POS デバイスのトランザクション画面への推奨設定コントロールの追加](add-recommendations-control-pos-screen.md) を参照してください。 
 
-## <a name="enable-personalized-recommendations"></a>パーソナライズされた推奨事項の有効化
+## <a name="enable-personalized-recommendations"></a>カスタマイズされた推奨事項の有効化
 
-パーソナライズされた推奨事項を受信する方法の詳細については、[パーソナライズされた推奨事項の有効化](personalized-recommendations.md) を参照してください。
+Dynamics 365 Commerce では、小売業者がパーソナライズされた製品推奨事項 (個人用設定とも呼ばれます) を使用可能にすることができます。 この方法で、カスタマイズされた推奨事項をオンラインの顧客エクスペリエンスおよび販売時点管理に組み込むことができます。 個人用設定機能をオンにすると、システムはユーザーの購入情報と製品情報を関連付けて、個別の製品推奨事項を生成できます。
+
+カスタマイズされた推奨事項の詳細については、[カスタマイズされた推奨事項の有効化](personalized-recommendations.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

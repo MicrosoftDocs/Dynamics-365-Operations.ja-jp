@@ -2,7 +2,7 @@
 title: バッチ属性 (複数)
 description: このトピックは、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 325e647185e3eb4c0eacdfd00c320804e31ddb48
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e49785a6921879e387537b933b78baf7dca73c4c
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555888"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203322"
 ---
 # <a name="batch-attributes"></a>バッチ属性 (複数)
 

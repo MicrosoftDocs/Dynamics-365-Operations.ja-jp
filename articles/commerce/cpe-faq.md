@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce プレビュー環境に関するよく寄せられ
 description: このトピックでは、Microsoft Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問に対する回答を示します。
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024755"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254727"
 ---
 # <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問
 
@@ -77,8 +77,6 @@ Commerce プレビュー環境には、E コマースのプロビジョニング
 ## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Dynamics 365 Commerce プレビュー環境の連絡先情報
 
 Commerce プレビュー環境に関するご質問またはご要望がある場合、Microsoftに連絡するには、[Microsoft Dynamics 365 Commerce プレビュー Yammer グループ](https://aka.ms/Dynamics365CommercePreviewYammer) にアクセスしてください。
-
-Yammer グループにアクセスしようとして問題が発生した場合は、<Dynamics365Commerce@microsoft.com> から電子メールで Microsoft にお問い合わせください。 この電子メール アドレスはアクティブに監視されていません。 したがって、応答に遅延が予想されます。
 
 ## <a name="additional-resources"></a>追加リソース
 

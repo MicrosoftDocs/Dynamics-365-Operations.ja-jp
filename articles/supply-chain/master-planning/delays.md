@@ -2,15 +2,15 @@
 title: 遅延
 description: このトピックは、マスタ プランの遅延日に関する情報を提供します。 遅延日は、マスター プランで計算される最も早い履行日が、要求日より後になる場合にトランザクションに設定される現実的な期日です。
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522292"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203851"
 ---
 # <a name="delays"></a>遅延
 
@@ -44,6 +44,12 @@ ms.locfileid: "1522292"
 
 > [!NOTE]
 > 注記 : 以前のバージョンでは、計算済遅延は*計画メッセージ*、遅延日は*計画期日*、遅延トランザクションは*計画設定済のトランザクション*と呼ばれていました。
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>複数の BOM レベルを使用した生産設定の遅延の制限
+複数の BOM レベルがある生産設定で遅延を処理する場合、遅延を発生させた (BOM 構造内の) 品目のすぐ上の品目のみに、マスター プランの実行の一部として遅延付きで更新されることに注意してください。 BOM 構造の他の品目には、最上位レベルの計画オーダーが承認または確定された場合、最初のマスター プランの実行まで、遅延は適用されません。 
+
+この既知の制限を回避するために、遅延のある BOM 構造の上位にある製造オーダーを、次のマスター プランの実行前に承認 (または確定) できます。 これにより、遅延承認済み計画製造オーダーからの遅延が保持され、すべての基になるコンポーネントがそれに応じて更新されます。
+アクション メッセージ、BOM 構造の他の遅延が原因で、後の日付に移動できる計画オーダーを識別するためにも使用できます。
 
 ## <a name="desired-date"></a>納入希望日
 

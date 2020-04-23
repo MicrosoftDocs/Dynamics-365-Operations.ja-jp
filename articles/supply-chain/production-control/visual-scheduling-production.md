@@ -2,7 +2,7 @@
 title: ジョブ スケジュールのガント チャート
 description: 生産プランナーはガント チャートを使用して、生産計画のコントロールおよび最適化を行うことができます。
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301db69fce18c2ed32e201e7418e628ac57db543
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571843"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210160"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
