@@ -2,7 +2,7 @@
 title: 製造実行の生産パラメーター
 description: このトピックでは、製造実行における生産パラメータの設定に関する情報を提供します。
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bf1afd18132e92cf081b7bde5067e1be90314467
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e4d459fb516cca3825c0a1871797f83df4c1a7c6
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565560"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212529"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>製造実行の生産パラメーター
 

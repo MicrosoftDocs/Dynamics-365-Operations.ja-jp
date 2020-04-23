@@ -3,7 +3,7 @@ title: REPLACE ER 関数
 description: このトピックでは、REPLACE 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040989"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201069"
 ---
-# <a name="REPLACE">REPLACE ER 関数</a>
+# <a name=""></a><a name="REPLACE">REPLACE ER 関数</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ REPLACE (text, pattern, replacement, regular expression flag)
 
 `regular expression flag` 引数が **TRUE** の場合、この関数は `pattern` 引数で指定された正規表現を適用することで変更された後、指定された文字列を返します。 正規表現は、置換する必要のある文字を検索するために使用されます。
 
-`regular expression flag` 引数が **FALSE** の場合、この関数は [TRANSLATE](er-functions-text-translate.md) と同様に動作します。 `replacement` 引数で指定された文字は、見つかった文字を置換るために使用されます。 
+`regular expression flag` 引数が **FALSE** の場合、この関数は、`pattern` 引数で定義された文字セットが `replacement` 引数の文字に置換された後、指定された文字列を返します。 
 
 ## <a name="example-1"></a>例 1
 

@@ -2,7 +2,7 @@
 title: 特定の調達カテゴリに対する仕入先の承認
 description: このトピックでは、Dynamics 365 Supply Chain Management の特定の調達カテゴリの仕入先を承認する方法について説明します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, DirPartyEcoResCategory, EcoResCategorySingleLookup, ProcCategoryHierarchyManagement
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 135b3a6bea2c0a8940550299504139551c9c3559
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: e53102d732e9befcaca183adfd2a756c12e0162b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147506"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204933"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>特定の調達カテゴリに対する仕入先の承認
 

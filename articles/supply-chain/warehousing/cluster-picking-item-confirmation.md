@@ -2,7 +2,7 @@
 title: クラスター ピッキングの製品の確認
 description: このトピックでは、クラスタ ピッキングと共に品目検証を設定する方法について説明します。
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2ce787e6a7d677bc997bff363f34850ff9899b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568215"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205785"
 ---
 [!include [banner](../includes/banner.md)]
 

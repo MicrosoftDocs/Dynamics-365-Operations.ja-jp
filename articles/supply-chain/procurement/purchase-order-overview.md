@@ -1,8 +1,8 @@
 ---
 title: 発注書の概要
 description: この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
-author: FrankDahl
-manager: AnnBe
+author: mkirknel
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: d4792cf982b9d5be3b30755483a5185a6d5a5a21
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815368"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207928"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 

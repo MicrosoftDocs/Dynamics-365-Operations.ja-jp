@@ -3,7 +3,7 @@ title: チーム カレンダーの作成
 description: Dynamics 365 Human Resources でチームのカレンダーを表示および作成します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22350e0a9da593d52278090dde298923d490cb8c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 71637a659b26ea6912da993f1e899e33f7082512
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009667"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226210"
 ---
-# <a name="view-team-and-company-calendars"></a>チームおよび会社のカレンダーを表示する
+# <a name="view-team-and-company-calendars"></a>チームおよび会社のカレンダーの表示
 
 [!include [banner](includes/preview-feature.md)]
 
-Dynamics 365 Human Resources でチームおよび会社のカレンダーを表示することができます。
+Dynamics 365 Human Resources でチームおよび会社のカレンダーを表示することができます。 チームのカレンダーは、階層行で定義されている直属の部下のみを表示します。
 
-## <a name="view-your-team-calendar"></a>チームのカレンダーの表示
-
-マネージャーはチームのカレンダーを表示できます。 チームのカレンダーは、階層行で定義されている直属の部下のみを表示します。
+## <a name="view-your-team-calendar-as-an-employee"></a>チーム カレンダーを従業員として表示する
 
 1. **従業員セルフサービス** ワークスペースで、**自分のチーム**を選択します。
 
 2. **休暇**を選択してから、**チーム カレンダーの表示**を選択します。
+
+## <a name="view-your-team-calendar-as-a-manager"></a>チーム カレンダーをマネージャーとして表示する
+
+1. **従業員セルフサービス** ワークスペースで、**自分のチーム**を選択します。
+
+2. **休暇**を選択してから、**チーム カレンダーの表示**を選択します。
+
+マネージャーは、**自分のチームの保留中の休暇リクエスト**、**承認済休暇**、および **休暇申請** からチーム カレンダーにアクセスすることもできます。 
 
 ## <a name="view-a-company-calendar"></a>会社のカレンダーの表示
 
@@ -47,5 +53,7 @@ Dynamics 365 Human Resources でチームおよび会社のカレンダーを表
 
 2. **休暇カレンダー**を選択します。
 
-カレンダー設定の詳細については、[カレンダー パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
+人事管理ロールは、**休暇および欠勤申請**、**承認済休暇**、および **休暇申請** から会社のカレンダーにアクセスすることもできます。 
+
+カレンダー設定の詳細については、[カレンダー パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md?configure-calendar-parameters) を参照してください。
 

@@ -3,7 +3,7 @@ title: リスト カテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされるリスト関数について説明します。
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9461d0afd75f421cf03ddefed5dac379f1369ec7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917767"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201046"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>リスト カテゴリ内の ER 関数のリスト
 
@@ -46,6 +46,7 @@ ms.locfileid: "2917767"
 | [指数](er-functions-list-index.md)                       | この関数は、指定されたリストの指定された数値インデックスを使用して選択された*コンテナー (レコード)* 値を返します。 インデックスが指定されたリスト内のレコードの範囲外である場合は、この関数は例外をスローします。 |
 | [IsEmpty](er-functions-list-isempty.md)                   | この関数は、指定したリストにレコードが含まれていない場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
 | [リスト](er-functions-list-list.md)                         | この関数は、指定された引数から作成された新しいリストで構成される*レコード リスト*値を返します。|
+| [ListJoin](er-functions-list-listjoin.md)                 | この関数は、指定された引数から作成された新しい結合リストを表す *レコード リスト* 値を返します。|
 | [ListOfFields](er-functions-list-listoffields.md)         | この関数は、*列挙*または*コンテナー (レコード)* 型の指定された引数の構造に基づいて作成された*レコード リスト*値を返します。 |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | この関数は、指定されたリストの最初のレコードのみで構成される*レコード リスト*値を返します。|
 | [OrderBy](er-functions-list-orderby.md)                   | この関数は、指定されたリストを、指定された引数に基づいて並べ替えられた後に*レコード リスト*値として返します。 これらの引数は、式として定義することができます。 |

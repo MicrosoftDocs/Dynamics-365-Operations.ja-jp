@@ -2,7 +2,7 @@
 title: 現物更新と財務更新
 description: このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 75023
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4360f9132d31c9d0038f51c68c1f6c3fcaaa2025
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5ea79bd9c6561c4e4f6fad2c177f44fe62bdea5b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250872"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214645"
 ---
 # <a name="physical-and-financial-updates"></a>現物更新と財務更新
 

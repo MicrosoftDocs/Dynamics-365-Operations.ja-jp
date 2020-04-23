@@ -3,7 +3,7 @@ title: ワークフロー プロパティのコンフィギュレーション
 description: このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190123"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199439"
 ---
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 
@@ -75,9 +75,11 @@ ms.locfileid: "2190123"
     5. テキストをカスタマイズするには、プレースホルダーを挿入します。 プレースホルダーを入力する方法については、ステップ 3 を参照してください。
     6. **閉じる**をクリックします。
 
-## <a name="specify-when-this-workflow-is-used"></a>このワークフローが使用される条件の指定
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>有効化条件を使用してこのワークフローがをいつ使用するかを指定する
 
-同じタイプに基づく複数のワークフローを作成できます。 たとえば、事業を行っている国や地域ごとの購買要求ワークフロー ("購買要求 (デンマーク)" および "購買要求 (スペイン)" など) を作成できます。 同じタイプに基づくワークフローが複数ある場合は、各ワークフローが使用される条件を指定する必要があります。 前の例では、次のような条件を指定することになります。
+同じワークフロー タイプに基づく複数のワークフローを作成できます。 同じタイプに基づくワークフローが複数ある場合は、有効化条件を使用して各ワークフローをいつ使用するかを指定する必要があります。 有効化条件が満たされていない場合は、既定のワークフローが使用されます。 同様に、ワークフロー タイプに定義されているワークフロー コンフィギュレーションが 1 つだけの場合、有効化条件に関係なく、そのワークフロー コンフィギュレーションが使用されます。
+
+たとえば、以下の条件で、購買要求 (デンマーク) と 購買要求 (スペイン) など事業を行っている国/地域ごとに、購買要求ワークフローを作成できます。
 
 - 購買要求 (デンマーク) は、国/地域 = DK の場合に使用する
 - 購買要求 (スペイン) は、国/地域 = ES の場合に使用する

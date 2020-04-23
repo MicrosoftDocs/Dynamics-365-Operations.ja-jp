@@ -2,7 +2,7 @@
 title: サービス レベルと説明
 description: このトピックでは、資産管理のサービス レベルと説明について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7dd577c930c6cc17da6baee30d3558656de01a09
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0aa23e7fe10e684e110126bd58bd761348e44700
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569826"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215496"
 ---
 # <a name="service-level-and-description"></a>サービス レベルと説明
 

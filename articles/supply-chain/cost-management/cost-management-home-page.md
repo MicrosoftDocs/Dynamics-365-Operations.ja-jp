@@ -2,7 +2,7 @@
 title: 原価管理ホーム ページ
 description: 原価管理では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理ができます。
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5dbb9876b5df3309d280f242a9fce8f79f12afeb
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144114"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214755"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 

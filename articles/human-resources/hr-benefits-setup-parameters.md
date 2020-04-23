@@ -3,7 +3,7 @@ title: 給付金管理パラメーターの設定
 description: Microsoft Dynamics 365 Human Resources で給付金管理に対するパラメーターをコンフィギュレーションします。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009683"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229766"
 ---
-# <a name="set-benefits-management-parameters"></a>給付金管理パラメーターの設定
-
-[!include [banner](includes/preview-feature.md)]
+# <a name="set-benefits-management-parameters"></a>福利厚生管理パラメーターの設定
 
 Microsoft Dynamics 365 Human Resources で休暇計画を設定する前に、給付金管理パラメーターをコンフィギュレーションする必要があります。 これらのパラメーターは既定値、理由コード、およびその他のオプションを設定します。
 
@@ -47,7 +45,6 @@ Microsoft Dynamics 365 Human Resources で休暇計画を設定する前に、�
    | **レート変更理由コード** | レート変更の更新処理中に従業員の給付金計画がキャンセルまたは再開された場合に使用する理由コード。 これはレート変更の更新処理によって変更されたレコードを示します。 |
    | **適格な新規採用者** | 新規採用が適格かどうかを指定します。 |
    | **新規採用要録期間** | 新規採用登録が許可される期間。</br></br>**注記**: この設定は、計画適格ルールで設定されたすべての新規採用登録を上書きします。 | 
-   | **年次給与の拡張設定** | **従業員の給付金の詳細**で**年間給付金給与**金額を自動的に計算するかどうかを指定します。 これは従業員の**固定報酬支払レード**、**平均時間**、および**支払頻度**に基づいています。</br></br>**平均時間** x **固定報酬支払** x **支払頻度** (# 支払期間中での) = **年間給付金給与** </br></br>**平均時間**、**固定報酬支払レート**、または**支払頻度**フィールドのいずれかの値が変更された場合、システムは変更値に基づいて従業員の**年間給付金給与**金額を自動的に再計算します。 システムによって、変更が発生した正確な日時を識別するための**有効日**レコードが作成されます。 必要に応じて**年間給付金給与**金額を手動で編集することができます。 |
    | **ライフ イベントが有効になりました** | ライフ イベントを有効にします。 |
    | **レガシ給付金フォームの非表示** | レガシ給付金フォームの非表示を許可できます。 |
 

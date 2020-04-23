@@ -2,7 +2,7 @@
 title: フレックス グループ
 description: このトピックでは、時刻と出勤でのフレックス グループの使用方法について説明します。
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgFlexGroup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: aae00f3605a6598a34e58fad3e06e687476dd859
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 753874e4cf1d0403e9c422f44d159b11ef1d7247
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563508"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210229"
 ---
 # <a name="flex-groups"></a>フレックス グループ
 

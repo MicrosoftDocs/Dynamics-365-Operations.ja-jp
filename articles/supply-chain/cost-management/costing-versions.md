@@ -2,7 +2,7 @@
 title: 原価計算バージョンの概要
 description: この記事は、原価バージョン、その管理方法、そこに含めることができるデータのタイプについての情報を提供します。 原価バージョンの主な目的は、品目、原価カテゴリ、間接原価の計算式に関する原価レコードを保持することです。
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 54532
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d3abf177c1e420d1c97dc74891e1ac0d2c2546
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 16af19fb7f4f18c417522175643649681e5912da
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865523"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201852"
 ---
 # <a name="costing-versions-overview"></a>原価計算バージョンの概要
 

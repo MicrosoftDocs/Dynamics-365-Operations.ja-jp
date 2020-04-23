@@ -2,7 +2,7 @@
 title: コンフィギュレーション可能な製品の属性ベースの価格決定の設定
 description: このトピックでは、属性ベースの価格決定の方法を説明します。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d23030b79670e31cc237b9ca53b0b3881678786f
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 7382cdfa11e89896bba9518f36eb6caab56b98f6
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149829"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3213058"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>コンフィギュレーション可能な製品の属性ベースの価格決定の設定
 

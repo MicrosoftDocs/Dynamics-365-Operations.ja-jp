@@ -2,7 +2,7 @@
 title: 計画ジョブのキャンセル
 description: このトピックでは、計画の最適化機能を使用する有効な計画ジョブを取り消す方法について説明します。
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: b731aa4573b438e594ede702e6556c1be2daa549
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076350"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3213474"
 ---
 # <a name="cancel-a-planning-job"></a>計画ジョブのキャンセル
 

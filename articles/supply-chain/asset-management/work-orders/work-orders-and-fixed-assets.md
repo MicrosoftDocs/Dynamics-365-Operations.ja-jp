@@ -2,7 +2,7 @@
 title: 作業指示書と固定資産
 description: このトピックでは、資産管理における固定資産と作業指示書について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c87a2b94692e279a9c2f35dc38ac87bfd9bf7d27
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: ca7a5d88de4308d7be9c1bc749b9dbf1da027c2c
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626227"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208826"
 ---
 # <a name="work-orders-and-fixed-assets"></a>作業指示書と固定資産
 

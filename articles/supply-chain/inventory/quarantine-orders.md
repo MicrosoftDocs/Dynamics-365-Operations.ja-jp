@@ -2,7 +2,7 @@
 title: 検査指示
 description: このトピックは、在庫をブロックする検査指示の使用方法について説明します。
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14c6f3bae224540968d37de9effa4c430307975c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 25ba4aa92d968f4dfb0dc23b1ac459cda2d52b61
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250865"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207258"
 ---
 # <a name="quarantine-orders"></a>検査指示
 

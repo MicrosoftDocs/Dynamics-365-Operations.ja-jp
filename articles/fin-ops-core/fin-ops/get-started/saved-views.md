@@ -3,7 +3,7 @@ title: 保存されているビュー
 description: このトピックでは、保存されているビュー機能の使用方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100311"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260486"
 ---
 # <a name="saved-views"></a>保存されているビュー
 
@@ -156,7 +156,7 @@ ms.locfileid: "3100311"
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>自分の環境で保存されたビューをどのように有効にしますか。 
 注記: **保存されたビュー**機能では、Finance and Operations の個人用設定システムが有効になっている必要があります。 環境全体の個人用設定が無効になっている場合は、下記の手順を実行しても、ビューは無効になります。 
 
-**10.0.9/プラットフォーム更新プログラム 33 およびそれ以降** **保存されたビュー**機能は、任意の環境の機能管理で直接使用できます。 他の公開プレビュー機能と同様に、生産のこの機能を有効にするには、[補足利用規約](https://go.microsoft.com/fwlink/?linkid=2105274) に同意する必要があります。  
+**10.0.9/プラットフォーム更新プログラム 33 およびそれ以降** **保存されたビュー**機能は、任意の環境の機能管理で直接使用できます。 他の公開プレビュー機能と同様に、実稼働でこの機能を有効にするには、[補足利用規約](https://go.microsoft.com/fwlink/?linkid=2105274) が適用されます。  
 
 **10.0.8/プラットフォーム更新プログラム 32 およびそれ以前** **保存された機能**は、以下の手順に従って、追加のテストとデザイン変更を提供するために、レベル 1 (開発/テスト) およびレベル 2 (サンドボックス) 環境で有効にできます。
 

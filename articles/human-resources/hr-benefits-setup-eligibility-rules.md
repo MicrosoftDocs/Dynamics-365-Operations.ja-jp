@@ -3,7 +3,7 @@ title: 適格性ルールとオプションを構成する
 description: Microsoft Dynamics 365 Human Resources の給付金管理に適格性ルールとオプションを設定します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009737"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229904"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性ルールとオプションを構成する
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resources の給付金管理に必要なパラメーターを構成したら、給付金プランに関連付ける適格性ルール、バンドル、期間、およびプログラムを作成できます。
 
@@ -57,6 +55,7 @@ Microsoft Dynamics 365 Human Resources の給付金管理に必要なパラメ�
    | **雇用カテゴリ** | **雇用カテゴリを使用**トグルが**はい**に設定されている場合の従業員の雇用カテゴリ。 |
    | **新しい採用ルールの使用** | 給付金の適格性ルールの一部として、新しい採用者の新しい採用期間の値を使用するかどうかを指定します。 |
    | **登録期間** | 新しい採用登録が許可される期間。 これもパラメータに設定した場合は、このパラメータ設定が優先されます。 |
+   | **以前の雇用状態を使用する** | 従業員の以前の雇用状態を給付金の適格性ルールの一部として使用するかどうかを指定します。 たとえば、前の雇用から90日以内 **レイ オフ** 状態から **採用済** 状態に移行したすべての従業員に対して、補償待機期間を免除する適格性ルールを指定できます。 |
 
 4. **追加条件**で、次のオプションを選択し、必要に応じて情報を追加します。
 

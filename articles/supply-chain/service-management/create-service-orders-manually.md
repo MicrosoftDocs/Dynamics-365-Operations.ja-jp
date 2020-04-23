@@ -2,7 +2,7 @@
 title: サービス注文の手動作成
 description: サービス契約または**サービス注文**フォームを使用すると、サービス注文を手動で作成することができます。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbe1ccc90b215c35f44835b1307977c18927bd7e
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d80461694a28a0842155cbd8ca224c37bd85dde7
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743313"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202701"
 ---
 # <a name="create-service-orders-manually"></a>サービス注文の手動作成    
 

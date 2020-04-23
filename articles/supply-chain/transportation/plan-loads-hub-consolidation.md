@@ -2,7 +2,7 @@
 title: ハブ連結を使用した積荷計画の概要
 description: この記事では、同じ顧客に別の倉庫からの商品を配送する場合、または同じ倉庫に複数の仕入先から商品が配送された場合に、1 つのハブに出荷を統合する機能について説明します。
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 92273
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74f152a227bec3b402eba9384dfb5db53b46d83a
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c23e3d5a97fb35174baa804a7bfed4af1201366b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866068"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3206245"
 ---
 # <a name="plan-loads-using-hub-consolidation-overview"></a>ハブ連結を使用した積荷計画の概要
 

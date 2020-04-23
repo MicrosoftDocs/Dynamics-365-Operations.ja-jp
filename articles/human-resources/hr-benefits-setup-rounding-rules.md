@@ -3,7 +3,7 @@ title: 丸めルールの設定
 description: Dynamics 365 Human Resources で丸めルールを設定して、組織のニーズを合わせることができます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88ddbe0a97852a2716e18e07187d3475611459f7
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: f7ea90364817f98a31960f19acbf76979c293b1c
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092384"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229651"
 ---
 # <a name="set-up-rounding-rules"></a>丸めルールの設定
-
-[!include [banner](includes/preview-feature.md)]
 
 Dynamics 365 Human Resources で丸めルールを設定して、組織のニーズを合わせることができます。
 

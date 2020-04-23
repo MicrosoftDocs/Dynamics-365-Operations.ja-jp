@@ -2,7 +2,7 @@
 title: 作業指示の派遣
 description: このトピックでは、資産管理で作業指示を派遣する方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 026b34934d6527416a4632d8e1aee76a8836dcb0
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 3412b447876d5cd0b16bdbfc0a30ae1afa3e33c0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652014"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215312"
 ---
 # <a name="dispatch-work-order"></a>作業指示の派遣
 

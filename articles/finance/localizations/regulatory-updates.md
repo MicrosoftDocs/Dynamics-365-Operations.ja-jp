@@ -3,7 +3,7 @@ title: 規制の更新
 description: このトピックでは、Microsoft Dynamics 365 Finance の計画されたおよびリリース済みの規制の更新の一覧を提供します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161808"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262629"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -51,8 +51,11 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 |      ブラジル         |   2020 年 1 月       | 10.0.8      |   ICMS-ST の補足情報    |
 |      ブラジル         |   2020 年 ３ 月 - 2020 年 1 月       | 10.0.9、10.0.8HF      |   SPED 会計レイアウト 014 |
 |      ブラジル         |   2020 年 ３ 月 - 2020 年 1 月       | 10.0.9、10.0.8HF      |   DRCST SC – 条例 SEF Nº 343DR   |
+|      ブラジル         |   2020 年 5 月 - 2020 年 3 月      | 10.0.11、10.0.10HF、10.0.9HF      |   SPED ECD レイアウト 8   |
+|      ブラジル         |   2020 年 5 月 - 2020 年 4 月      | 10.0.11、10.0.10HF、10.0.9HF、10.0.8HF      |   テクニカル ノート NT2019.001 v1.40   |
 |      フランス         |   2020 年 4 月       | 10.0.10      |   自営業者向け税務当局への法定手数料申告 (DAS2)    |
 |      フランス         |   2020 年 3 月       | 10.0.9      |   フランスのローカリゼーション: 国際支払と財務振替のための ISO 20022 形式    |
+|      ハンガリー         |   2020 年 5 月 - 2020 年 3 月       | 10.0.11、10.0.9HF、10.0.8HF     |   Finance and Operations のオンライン請求システム v.2.0    |
 |      インド         |   2020 年 3 月      | 10.0.9      |   新しい GSTR (ANX-1 & ANX-2) 返品オフライン ツール    |
 |      イタリア         |   2020 年 1 月      | 10.0.8      |   D.L. による VAT 管理の変更 2018 年 10 月 23 日の 119: 年次税通信    |
 |      イタリア         |   2020 年 3 月      | 10.0.9、10.0.8HF      |   Retail - POS の顧客情報の管理 |
@@ -68,6 +71,9 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 |      ポーランド          |   2020 年 ３ 月 - 2020 年 1 月     | 10.0.9、10.0.8HF     |   Retail - 会計レシートへの顧客情報の印刷 |
 |      ポーランド          |   2020 年 ３ 月 - 2020 年 1 月     | 10.0.9、10.0.8     |   2019 年 12 月 2 日からの SAF 請求書 (JPK_FA) v.3 |
 |      ポーランド          |   2020 年 4 月 - 2020 年 1 月     | 10.0.10、10.0.9、10.0.8     |   JPK_VDEK が JPK_VAT (SAF VAT) を置き換える |
+|      ポーランド          |   2020 年 5 月     | 10.0.11     |   AP/ARの実為替差額を、請求書の正味金額と VAT 金額の為替差に分割する  |
+|      ポーランド          |   2020 年 5 月     | 10.0.11     |   SAF の会計帳簿 – 転記階層のフィルター処理の改善 |
+|      ポーランド          |   2020 年 5 月     | 10.0.11     |   JPK_VDEK 補足パック I |
 |      ロシア          |   2020 年 3 月     | 10.0.9     |   2019 年レポート用資産税申告の形式 |
 |      ロシア          |   2020 年 3 月     | 10.0.9     |   売上税申告形式の更新 |
 |      シンガポール           |   2020 年 1 月     | 10.0.8      |   販売税還付レポート |

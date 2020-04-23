@@ -1,9 +1,9 @@
 ---
 title: 推奨事項とデモ データの作成
-description: このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
+description: このトピックでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154252"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175552"
 ---
 # <a name="create-recommendations-with-demo-data"></a>推奨事項とデモ データの作成
 
 [!include [banner](includes/banner.md)]
 
-このドキュメントでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
+このトピックでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
 
 オムニ チャネルの製品推奨事項は、編集上精選された、またはプログラムで生成された製品一覧を提供します。 これらの一覧は、ビジネスのニーズに応じて、いくつかのシナリオで使用できます。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](product-recommendations.md) を参照してください。
 
@@ -42,7 +42,7 @@ ms.locfileid: "3154252"
 製品推奨事項デモ日付を有効にするには、それぞれの環境に Dynamics 365 Commerce プレビュー デモ拡張機能を配置する必要があります。 これを行うと、製品推奨事項デモ データが自動的に有効になります。
 
 ## <a name="default-demo-data"></a>既定のデモ データ
-各 Onebox タイプの環境には、コンマで区切られた「reco_demo_data.csv」ファイルに格納されたプリロード済の一連の製品推奨事項のデモ データが含まれ、Commerce Scale Unit 上にあります。
+各 OneBox タイプの環境には、コンマで区切られた 'reco_demo_data.csv' ファイルに格納されたプリロード済の一連の製品推奨事項のデモ データが含まれ、Commerce Scale Unit 上にあります。
 
 データは、次の列に沿って構成されています。
 
@@ -52,12 +52,13 @@ ms.locfileid: "3154252"
 | オペレーティングユニットナンバー | :ヘビー_チェック_マーク: | 製品推奨事項が提示される特定の作業単位番号。                                        |                                                                              |
 | カテゴリ            |                    |    特定のリストが返されるカテゴリ。 カテゴリが指定されていない場合、リストはナビゲーション階層の上部にのみ表示されます。    |                                                                              |
 | SeedItemId          |                    |    シードを必要とするリスト (RecoPeopleAlsoBuy および RecoCart) については、それらのリストの製品には追加の製品が表示されます。            |                                                                              |
+| CustomerId          |                    |    顧客識別子 (RecoPicks) を必要とするリスト。  既定値 ' 0 ' はすべての顧客に適用されます。          |                                                                              |
 | ItemIds             | :ヘビー_チェック_マーク: | 「;」で区切られ、結果として返される 1 つ以上の製品。                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>デモ データのカスタマイズ
 本社でコンフィギュレーションされた製品およびカテゴリ情報を使用して、既定のデモ データを編集できます。 .csv を更新すると、顧客に返される製品推奨事項は変更をすぐに反映します。
 
-拡張機能には、「RecoMockDataset.csv」と呼ばれるデータファイルが含まれています。これによりモックの推奨結果の出力に使用するデータセットを制御できます。 ファイル名は、**ext.Recommendations.DemoFilePath** 設定を使用して、拡張コンフィギュレーションによって制御できます。 これにより、コンフィギュレーション時に簡単に切り替えることができる複数のデータセットを利用できるようになります。
+拡張機能には、'RecoMockDataset.csv' と呼ばれるデータファイルが含まれています。これによりモックの推奨結果の出力に使用するデータセットを制御できます。 ファイル名は、**ext.Recommendations.DemoFilePath** 設定を使用して、拡張コンフィギュレーションによって制御できます。 これにより、コンフィギュレーション時に簡単に切り替えることができる複数のデータセットを利用できるようになります。
 
 
 ```xml

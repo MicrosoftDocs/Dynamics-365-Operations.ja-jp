@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 580f0c885373006cb9cd955a61c41704a2ac9a94
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186696"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249014"
 ---
 # <a name="dual-currency"></a>二重通貨
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) で導入された機能は、レポート通貨の別目的での使用および 2 番目の会計通貨としての使用を有効にします。 この機能は、*二重通貨*と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
 

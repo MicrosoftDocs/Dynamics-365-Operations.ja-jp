@@ -2,7 +2,7 @@
 title: コンフィギュレーション ルートの定義
 description: この手順では、コンフィギュレーション グループの表示順序を決定するコンフィギュレーション ルートの定義を対象としています。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ace88e590363f411e1d7120cbafc2637355c6d2
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 49535f241c6fcca79df64ee18616ba581b5ca941
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149967"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203667"
 ---
 # <a name="define-configuration-route"></a>コンフィギュレーション ルートの定義
 

@@ -2,25 +2,25 @@
 title: 予算に基づく発注書の作成
 description: この手順を使用して、利用可能な予算の確認をする発注書を作成します。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0054745394d6a21599d8f07605f78ffdd7f575ab
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: fa16955e0ea407555c7b52b0af37c5891be9bdbb
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150542"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214296"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>予算に基づく発注書の作成
 
