@@ -3,7 +3,7 @@ title: ドキュメント回覧エージェントのアップグレード
 description: このトピックでは、ドキュメント巡回エージェントをアップグレードする方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,43 +15,46 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a97172812db02e264b01c75e180d60dffe5c75e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9506a9a8d67afd9c787b001691c2e91cdfd356c8
+ms.sourcegitcommit: ef9026c876fa02abd7a2bcf68fea09c7b6d47de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769798"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254298"
 ---
-# <a name="upgrade-the-document-routing-agent"></a><span data-ttu-id="45ca1-103">ドキュメント回覧エージェントのアップグレード</span><span class="sxs-lookup"><span data-stu-id="45ca1-103">Upgrade the Document Routing Agent</span></span>
+# <a name="upgrade-the-document-routing-agent"></a><span data-ttu-id="cf542-103">ドキュメント回覧エージェントのアップグレード</span><span class="sxs-lookup"><span data-stu-id="cf542-103">Upgrade the Document Routing Agent</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="45ca1-104">プラットフォーム更新プログラム 12 には、ネットワーク印刷機能を提供するコンポーネントに対するいくつかの重要な拡張機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="45ca1-104">Platform update 12 includes several important enhancements to the components that provide network printing capabilities.</span></span> <span data-ttu-id="45ca1-105">たとえば、印刷ジョブ キューを管理するソリューションは、印刷ジョブの管理サービスが大量の印刷要件を満たすために調整されるよう再設計されました。</span><span class="sxs-lookup"><span data-stu-id="45ca1-105">For example, the solution for managing the print job queue has been redesigned so that the Print Job Management service can be scaled to satisfy high-volume printing requirements.</span></span> <span data-ttu-id="45ca1-106">印刷ジョブの管理サービスには、市場バージョンのドキュメント回覧エージェント (DRA) クライアントと下位互換性のあるバージョンがありますが、顧客がオンプレミスでホストされている既存の DRA クライアントを**すべて**アップグレードすることを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="45ca1-106">Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers upgrade **all** existing DRA clients that are hosted on-premises.</span></span>
+<span data-ttu-id="cf542-104">プラットフォーム更新プログラム 12 には、ネットワーク印刷機能を提供するコンポーネントに対するいくつかの重要な拡張機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cf542-104">Platform update 12 includes several important enhancements to the components that provide network printing capabilities.</span></span> <span data-ttu-id="cf542-105">たとえば、印刷ジョブ キューを管理するソリューションは、印刷ジョブの管理サービスが大量の印刷要件を満たすために調整されるよう再設計されました。</span><span class="sxs-lookup"><span data-stu-id="cf542-105">For example, the solution for managing the print job queue has been redesigned so that the Print Job Management service can be scaled to satisfy high-volume printing requirements.</span></span> <span data-ttu-id="cf542-106">印刷ジョブの管理サービスには、市場バージョンのドキュメント回覧エージェント (DRA) クライアントと下位互換性のあるバージョンがありますが、顧客がオンプレミスでホストされている既存の DRA クライアントを**すべて**アップグレードすることを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cf542-106">Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers upgrade **all** existing DRA clients that are hosted on-premises.</span></span>
 
-<span data-ttu-id="45ca1-107">DRA の既存のインストールをプラットフォーム更新プログラム 12 またはそれ以降のバージョンにアップグレードしない場合は、次の問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="45ca1-107">If you don't upgrade existing installations of the DRA to Platform update 12 or later, you might experience the following issues:</span></span>
+<span data-ttu-id="cf542-107">DRA の既存のインストールをプラットフォーム更新プログラム 12 またはそれ以降のバージョンにアップグレードしない場合は、次の問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cf542-107">If you don't upgrade existing installations of the DRA to Platform update 12 or later, you might experience the following issues:</span></span>
 
-- <span data-ttu-id="45ca1-108">アプリケーションで監視可能なパフォーマンスの低下</span><span class="sxs-lookup"><span data-stu-id="45ca1-108">Observable performance degradation in applications</span></span>
-- <span data-ttu-id="45ca1-109">孤立した印刷ジョブに関連する文書の消失</span><span class="sxs-lookup"><span data-stu-id="45ca1-109">Document loss that is associated with orphaned print jobs</span></span>
-- <span data-ttu-id="45ca1-110">カスタムの余白がある印刷ドキュメントの一貫性のない処理</span><span class="sxs-lookup"><span data-stu-id="45ca1-110">Inconsistent handling of printed documents that have custom margins</span></span>
+- <span data-ttu-id="cf542-108">アプリケーションで監視可能なパフォーマンスの低下</span><span class="sxs-lookup"><span data-stu-id="cf542-108">Observable performance degradation in applications</span></span>
+- <span data-ttu-id="cf542-109">孤立した印刷ジョブに関連する文書の消失</span><span class="sxs-lookup"><span data-stu-id="cf542-109">Document loss that is associated with orphaned print jobs</span></span>
+- <span data-ttu-id="cf542-110">カスタムの余白がある印刷ドキュメントの一貫性のない処理</span><span class="sxs-lookup"><span data-stu-id="cf542-110">Inconsistent handling of printed documents that have custom margins</span></span>
 
-<span data-ttu-id="45ca1-111">IT 管理者は、DRA をホストするために使用される各ドメイン リソースに対して、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="45ca1-111">IT administrators must perform the following procedures on each domain resource that is used to host a DRA.</span></span>
+<span data-ttu-id="cf542-111">IT 管理者は、DRA をホストするために使用される各ドメイン リソースに対して、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf542-111">IT administrators must perform the following procedures on each domain resource that is used to host a DRA.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="45ca1-112">はじめに</span><span class="sxs-lookup"><span data-stu-id="45ca1-112">Get started</span></span>
-<span data-ttu-id="45ca1-113">DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。</span><span class="sxs-lookup"><span data-stu-id="45ca1-113">To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service.</span></span> <span data-ttu-id="45ca1-114">この情報は、アップグレード完了後に使用可能になっている必要があります。</span><span class="sxs-lookup"><span data-stu-id="45ca1-114">This information must be available after the upgrade is completed.</span></span> <span data-ttu-id="45ca1-115">有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス**を選択します。</span><span class="sxs-lookup"><span data-stu-id="45ca1-115">To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.</span></span>
+> [!NOTE]
+> <span data-ttu-id="cf542-112">DRA のアップグレードを完了すると、IT 管理者は、ホストサーバー経由で接続しているすべてのプリンターを登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf542-112">When you complete the DRA upgrade, IT administrators should register any printers that are connected through the host server.</span></span> <span data-ttu-id="cf542-113">ネットワーク パスによって識別されるネットワーク プリンターでは、パスが変更されていない限りは更新の必要はありません。</span><span class="sxs-lookup"><span data-stu-id="cf542-113">For network printers that are identified by their network paths, if the paths have not changed, updates are not required.</span></span>
+
+## <a name="get-started"></a><span data-ttu-id="cf542-114">はじめに</span><span class="sxs-lookup"><span data-stu-id="cf542-114">Get started</span></span>
+<span data-ttu-id="cf542-115">DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。</span><span class="sxs-lookup"><span data-stu-id="cf542-115">To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service.</span></span> <span data-ttu-id="cf542-116">この情報は、アップグレード完了後に使用可能になっている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf542-116">This information must be available after the upgrade is completed.</span></span> <span data-ttu-id="cf542-117">有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス**を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf542-117">To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.</span></span>
 
 ![マネージャー スナップイン](media/Services_dialog.png)
 
-## <a name="uninstall-an-existing-document-routing-agent"></a><span data-ttu-id="45ca1-117">既存のドキュメント回覧エージェントのアンインストール</span><span class="sxs-lookup"><span data-stu-id="45ca1-117">Uninstall an existing Document Routing Agent</span></span>
-<span data-ttu-id="45ca1-118">**プログラムと機能**を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧**を検索し、削除します。</span><span class="sxs-lookup"><span data-stu-id="45ca1-118">Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.</span></span>
+## <a name="uninstall-an-existing-document-routing-agent"></a><span data-ttu-id="cf542-119">既存のドキュメント回覧エージェントのアンインストール</span><span class="sxs-lookup"><span data-stu-id="cf542-119">Uninstall an existing Document Routing Agent</span></span>
+<span data-ttu-id="cf542-120">**プログラムと機能**を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧**を検索し、削除します。</span><span class="sxs-lookup"><span data-stu-id="cf542-120">Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.</span></span>
 
 ![プログラム ウィンドウのアンインストールまたは変更](media/Programs_and_Features_dialog.png)
 
-<span data-ttu-id="45ca1-120">アンインストールのプロセス中に、Microsoft Dynamics 365 ドキュメント回覧サービス アプリケーションを終了するメッセージが表示された場合は、**セットアップが完了したら、アプリケーションを自動的に閉じて再起動します。** を選択します。</span><span class="sxs-lookup"><span data-stu-id="45ca1-120">During the uninstallation process, if you're prompted to close the Microsoft Dynamics 365 Document Routing Service application, select **Automatically close applications and attempt to restart them after setup is complete.**</span></span>
+<span data-ttu-id="cf542-122">アンインストールのプロセス中に、Microsoft Dynamics 365 ドキュメント回覧サービス アプリケーションを終了するメッセージが表示された場合は、**セットアップが完了したら、アプリケーションを自動的に閉じて再起動します。** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf542-122">During the uninstallation process, if you're prompted to close the Microsoft Dynamics 365 Document Routing Service application, select **Automatically close applications and attempt to restart them after setup is complete.**</span></span>
 
 ![アプリケーションの終了を促すダイアログ ボックス](media/Uninstall_DRA_services.png)
 
-## <a name="install-the-latest-document-routing-agent"></a><span data-ttu-id="45ca1-122">最新のドキュメント回覧エージェントのインストール</span><span class="sxs-lookup"><span data-stu-id="45ca1-122">Install the latest Document Routing Agent</span></span>
-<span data-ttu-id="45ca1-123">定期売買で使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45ca1-123">For information about how to install the latest DRA that is available with your subscription, see [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md).</span></span>
+## <a name="install-the-latest-document-routing-agent"></a><span data-ttu-id="cf542-124">最新のドキュメント回覧エージェントのインストール</span><span class="sxs-lookup"><span data-stu-id="cf542-124">Install the latest Document Routing Agent</span></span>
+<span data-ttu-id="cf542-125">定期売買で使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cf542-125">For information about how to install the latest DRA that is available with your subscription, see [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="45ca1-124">アップグレード後に DRA クライアントを開いて、ネットワーク ユーザーの資格情報を更新してください。</span><span class="sxs-lookup"><span data-stu-id="45ca1-124">Be sure to open the DRA client after upgrading to refresh network user credentials.</span></span>
+> <span data-ttu-id="cf542-126">アップグレード後に DRA クライアントを開いて、ネットワーク ユーザーの資格情報を更新してください。</span><span class="sxs-lookup"><span data-stu-id="cf542-126">Be sure to open the DRA client after upgrading to refresh network user credentials.</span></span>
