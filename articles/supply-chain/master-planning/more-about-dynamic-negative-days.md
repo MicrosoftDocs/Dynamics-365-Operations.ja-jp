@@ -2,7 +2,7 @@
 title: マイナス在庫日数および動的マイナス在庫日数
 description: このトピックでは、マイナス在庫日数および動的マイナス在庫日数に関する情報、およびこれらを使用してビジネスを支援する方法について説明します。
 author: t-benebo
-manager: AnnBe
+manager: tfehr
 ms.date: 06/06/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: ''
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff907a624d62b00d2aaf21c185175e8717b6c624
-ms.sourcegitcommit: b3d099eb1f9a8a582c02ea6c5ee30c830d53a411
+ms.openlocfilehash: 9e9df6fcdbc894741e56f117ee1a5e370db333d9
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1628791"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208780"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>マイナス在庫日数および動的マイナス在庫日数
 

@@ -3,7 +3,7 @@ title: 作業時間カレンダーの作成
 description: Dynamics 365 Human Resources で、作業時間カレンダー、休日、および非作業時間を定義します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 641f66c75875cfba51af3753223a070d7cb7dc50
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: dc209b62836011b18362f78b63cdd3fcda884dc3
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009713"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198030"
 ---
 # <a name="create-a-working-time-calendar"></a>作業時間カレンダーの作成
 
@@ -68,10 +68,6 @@ Dynamics 365 Human Resources で、作業時間カレンダーには、組織内
 1. **組織管理**ページで、**非作業時間**を選択します。
 
 2. **新規**を選択し、非作業時間に名前と時間範囲を入力します。
-
-## <a name="leave-and-absence-preview-feature"></a>休暇および欠勤のプレビュー機能
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 休暇および欠勤の休日の修正プレビュー機能を有効にした場合、Human Resources は休日と休業日を使用して、カレンダーに登録されている従業員に対して調整する日数を決定します。
 

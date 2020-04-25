@@ -3,7 +3,7 @@ title: ライフ イベントのプロセス
 description: Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009686"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229935"
 ---
 # <a name="process-life-events"></a>ライフ イベントのプロセス
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。 たとえば、結婚、雇用の変更、または被扶養/受益者の変更などです。 ライフ イベントを使用するには、給付金パラメータ フォームのライフ イベントを有効にし、ライフ イベント タイプを設定し、さらにプラン タイプのライフ イベント オプションを設定する必要があります。
 
@@ -43,10 +41,10 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
 
    | フィールド | 説明 |
    | --- | --- |
-   | 登録期間 | ライフ イベントを処理する登録期間。 |
-   | 法人エンティティ | ライフ イベントを処理する法人。 |
-   | ライフ イベント日付 | システムによって登録期間中に、この日付までのすべてのイベントが処理されます。 |
-   | ワーカー | ライフ イベントを処理する作業者。 このフィールドを空白のままにすると、ライフ イベントがすべての作業者に対して処理されます。 |
+   | **登録期間** | ライフ イベントを処理する登録期間。 |
+   | **法人エンティティ** | ライフ イベントを処理する法人。 |
+   | **ライフ イベント日付** | システムによって登録期間中に、この日付までのすべてのイベントが処理されます。 |
+   | **ワーカー** | ライフ イベントを処理する作業者。 このフィールドを空白のままにすると、ライフ イベントがすべての作業者に対して処理されます。 |
 
 3. バックグラウンドで処理を実行する場合は、**バックグラウンドで実行**を選択し、次のタスクを実行します。
 

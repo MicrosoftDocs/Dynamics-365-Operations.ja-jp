@@ -1,5 +1,5 @@
 ---
-title: ワークスペースの埋め込み Power BI
+title: 分析ワークスペース (Power BI Embedded を使用)
 description: Dynamics Finance and Operations アプリは、アプリケーション ワークスペースにシームレスに統合される、強力な対話型レポートを備えるようになります。 Power BI でサポートされているグラフィックおよびビジュアルを使用することにより、ワークスペースは、ユーザーにとって非常に視覚的でありながらインタラクティブな体験を提供することができます。
 author: TJVass
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 1bea7664f2a0ff3f4e15edc6bc808943ab704cc8
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: ac2486982dad934531ad73b531d1a57f1966ba11
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030786"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258543"
 ---
-# <a name="embedded-power-bi-in-workspaces"></a>ワークスペースの埋め込み Power BI
+# <a name="analytical-workspaces-using-power-bi-embedded"></a>分析ワークスペース (Power BI Embedded を使用)
 
 [!include [banner](../includes/banner.md)]
 

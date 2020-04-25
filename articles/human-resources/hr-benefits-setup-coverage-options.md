@@ -1,9 +1,9 @@
 ---
 title: 補充オプションの作成
-description: Microsoft Dynamics 365 Human Resources の補償オプションは、医療プランの場合は従業員のみ、生命保険プランの場合は 2 倍の給与など、計画またはプログラムでの参加者が選択する補償のレベルです。
+description: Microsoft Dynamics 365 Human Resources の補償オプションは、福利厚生計画またはプログラムでの参加者が選択する補償のレベルです。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092709"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230180"
 ---
 # <a name="create-coverage-options"></a>補充オプションの作成
 
-[!include [banner](includes/preview-feature.md)]
+Microsoft Dynamics 365 Human Resources の補償オプションは、福利厚生計画またはプログラムでの参加者が選択する補償のレベルです。 たとえば、補償オプションには、医療プランの場合は **従業員のみ**、生命保険プランの場合は **2 倍の給与**　を含めることができます。 定義したら、福利厚生の補償オプションを再利用できます。 オプションを 1 つ以上の計画に関連付けることができます。
 
-Microsoft Dynamics 365 Human Resources の補償オプションは、医療プランの場合は従業員のみ、生命保険プランの場合は 2 倍の給与など、計画またはプログラムでの参加者が選択する補償のレベルです。 これを定義すると、給付金オプションは再利用可能になり、オプションを 1 つ以上のプランに関連付けることができます。
-
-補償オプションを定義したら、補償オプションを給付金計画タイプに関連付けます。 そして計画タイプは、給付金計画またはプログラムに関連付けられます。 計画タイプに関連付けられた補償オプションは、その計画タイプで作成されたすべての計画で使用できます。 
+補償オプションを定義したら、補償オプションを福利厚生計画タイプに関連付けます。 そして計画タイプは、給付金計画またはプログラムに関連付けられます。 計画タイプに関連付けられた補償オプションは、その計画タイプで作成されたすべての計画で使用できます。 
 
 1. **給付金管理**ワーク スペースの**設定**で、**補償オプション**を選択します。
 

@@ -2,7 +2,7 @@
 title: Warehousing アプリのインストールとコンフィギュレーションの概要
 description: このトピックでは、Dynamics 365 for Finance and Operations – Warehousing アプリをインストールおよびコンフィギュレーションする方法について説明します。
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 52882ef7542bfedebdae4a08de8404cddd01ed55
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814953"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205601"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Warehousing アプリのインストールとコンフィギュレーションの概要
 

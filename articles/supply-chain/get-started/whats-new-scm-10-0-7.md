@@ -2,14 +2,14 @@
 title: Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能と変更点
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw1
+ms.reviewer: kamaybac1
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ec64c9bf876cefc5e8594aeb50db6969e99114
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: c5ff02ea2d9b54272b260e951ca3626673bc0a77
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097385"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205003"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能と変更点
 

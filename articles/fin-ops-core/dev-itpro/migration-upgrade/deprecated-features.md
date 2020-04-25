@@ -3,7 +3,7 @@ title: 以前のリリースの削除済みまたは非推奨の機能
 description: このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124569"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225131"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -263,11 +263,11 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 |   |  |
 |------------|--------------------|
-| **廃止 / 削除の理由** | テーブル メタデータの定義に、無効なフィールド参照を含むフィールド グループが含まれることがあります。 現在、この問題は*エラー*ではなく、*コンパイラの警告*に分類され、問題を修正せずに配置可能パッケージの作成と配置を続行することができます。 配置された場合、Financial Reporting および SQL Server Reporting Services (SSRS) のランタイム エラーが発生する可能性があります。 この問題を修正するには、次のようにします。<br><br>1. テーブルのフィールド グループの定義から無効なフィールド参照を削除します。<br><br>2. 再コンパイルします。<br><br>3. すべての警告またはエラーが解決されていることを確認します。 |
-| **別の機能で置き換えられているか?**   | 今後、この警告はコンパイル エラーに置き換えられます。  |
-| **影響を受ける製品領域**         | Visual Studio 開発ツール。 |
-| **配置オプション**              | すべてです。 |
-| **ステータス**                         | 非推奨: 今後、警告はコンパイル時のエラーになります。 現在、プラットフォーム更新プログラム 30 を対象にしています。 |
+| **廃止 / 削除の理由** | テーブル メタデータの定義に、無効なフィールド参照を含むフィールド グループが含まれることがあります。 配置された場合、Financial Reporting および SQL Server Reporting Services (SSRS) のランタイム エラーが発生する可能性があります。 現在、この問題は*エラー*ではなく、*コンパイラの警告*に分類され、問題を修正せずに配置可能パッケージの作成と配置を続行することができます。 この問題を修正するには、次のようにします。<br><br>1. テーブルのフィールド グループの定義から無効なフィールド参照を削除します。<br><br>2. 再コンパイルします。<br><br>3. すべての警告またはエラーが解決されていることを確認します。 |
+| **別の機能で置き換えられているか?**   | 今後、この警告はコンパイル エラーに置き換えられます。 |
+| **影響を受ける製品領域**         | Visual Studio 開発ツール |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 今後、警告はコンパイル時のエラーになります。 この変更は、Finance and Operations アプリのバージョン 10.0.11 のプラットフォーム更新プログラムを対象としています。 |
 
 #### <a name="complete-list"></a>完全なリスト
 推奨されない API の完全なリストにアクセスするには、[メソッドおよびメタ データ要素の廃止](deprecation-deletion-apis.md)を参照してください。

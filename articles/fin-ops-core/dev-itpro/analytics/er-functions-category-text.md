@@ -3,7 +3,7 @@ title: テキスト カテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされるテキスト関数について説明します。
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916617"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201092"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>テキスト カテゴリ内の ER 関数のリスト
 
@@ -52,7 +52,7 @@ ms.locfileid: "2916617"
 | [置換](er-functions-text-replace.md) | この関数は、すべてまたはその一部が別の文字列に置換した後、*文字列*値として指定されたテキストの文字列を返します。 |
 | [右](er-functions-text-right.md) | この関数は、指定された文字列の末尾から指定された数の文字を表す*文字列*値を返します。 |
 | [テキスト](er-functions-text-text.md) | この関数は、現在のアプリケーション インスタンス のサーバー ロケール設定に従って書式設定されるテキスト文字列に変換した後に、*文字列*値として指定された数を返します。 |
-| [翻訳](er-functions-text-translate.md) | この関数は、すべてまたはその一部が別の文字列に置換した後、*文字列*値として指定されたテキストの文字列を返します。 |
+| [翻訳](er-functions-text-translate.md) | この関数は、指定したテキストを別の提供された文字セットに置換した結果を含む *文字列* 値を返します。 |
 | [Trim](er-functions-text-trim.md) | この関数は、先頭と末尾のスペースを切り捨ててから*文字列*値として指定されたテキスト文字列を返し、その後単語間の複数のスペースが削除されます。 |
 | [Upper](er-functions-text-upper.md) | この関数は、大文字に変換した後の*文字列*値として指定されたテキスト返します。 |
 

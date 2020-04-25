@@ -1,7 +1,7 @@
 ---
 title: Regression Suite Automation Tool チュートリアルの使用
 description: このトピックでは、Regression Suite Automation Tool (RSAT) の使用方法について説明します。 さまざまな機能について説明し、高度なスクリプトを使用した例を示します。
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070823"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248739"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool チュートリアルの使用
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070823"
 > [!NOTE]
 > インターネット ブラウザーのツールを使用して、このページを PDF 形式でダウンロードして保存します。 
 
-このチュートリアルでは、デモの割り当て、戦略と重要な学習ポイントの説明を含む Regression Suite Automation Tool (RSAT) の高度な機能をいくつかを説明します。
+このチュートリアルでは、デモの割り当て、戦略と重要な学習ポイントの説明を含む Regression Suite Automation Tool (RSAT) の高度な機能をいくつかを説明します。 
 
-## <a name="features-of-rsattask-recorder"></a>RSAT/タスクレコーダーの機能
+## <a name="notable-features-of-rsat-and-task-recorder"></a>RSAT とタスク レコーダーの注目すべき機能
 
 ### <a name="validate-a-field-value"></a>フィールド値を検証する
 
-この機能の詳細については、[検証機能を持つ新しいタスク記録を作成する](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function) を参照してください。
-
-### <a name="saved-variable"></a>保存された変数
-
-この機能の詳細については、[既存のタスク記録を変更して保存された変数を作成する](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable) を参照してください。
-
-### <a name="derived-test-case"></a>派生テスト ケース
-
-1. Regression Suite Automation Tool (RSAT) を開き、[Regression Suite Automation Tool チュートリアルのセットアップおよびインストール](./hol-set-up-regression-suite-automation-tool.md) で作成した両方のテストケースを選択します。
-2. **新規 \> 派生テストケースの作成**を選択します。
-
-    ![新しいメニューで、派生テスト ケース コマンドを作成する](./media/use_rsa_tool_01.png)
-
-3. 現在のテスト スイートで選択した各テスト ケースに対して派生テスト ケースが作成され、各派生テスト ケースに Excel パラメーター ファイルの独自のコピーがあることを示すメッセージが表示されます。 **OK** を選択します。
-
-    > [!NOTE]
-    > 派生テスト ケースを実行すると、親テスト ケースと独自の Excel パラメーター ファイルのタスク記録が使用されます。 この方法で、複数のタスク記録を管理することなく、異なるパラメーターを使用して同じテストを実行できます。 派生テスト ケースは、親テスト ケースと同じテスト スイートの一部である必要はありません。
-
-    ![メッセージ ボックス](./media/use_rsa_tool_02.png)
-
-    さらに 2 つの派生テスト ケースが作成され、**派生?** チェック ボックスがオンになっています。
-
-    ![派生テスト ケースが作成されました](./media/use_rsa_tool_03.png)
-
-    派生テスト ケースは、自動的に Azure DevOps に作成されます。 これは、特別なキーワード **RSAT: DerivedTestSteps** でタグ付けされた**新しい製品の作成**テスト ケースの子品目です。 これらのテスト ケースは、Azure DevOps テスト計画にも自動的に追加されます。
-
-    ![RSAT: DerivedTestSteps キーワード](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > 何らかの理由で、派生したテスト ケースが正しい順序になっていない場合は Azure DevOps に移動し、RSAT が適切な順序で実行できるように、テスト スイート内のテスト ケース順序を変更します。
-
-4. 派生テスト ケースを選択し、**編集**を選択して対応する Excel パラメーター ファイルを開きます。
-5. これらの Excel パラメーター ファイルは、親ファイルを編集したときと同じ方法で編集します。 つまり、製品 ID が自動的に生成されるように設定されていることを確認します。 また、保存された変数が関連するフィールドにコピーされていることも確認します。
-6. 両方の Excel パラメーター ファイルの**一般**タブで、**会社**フィールドの値を **USSI** に更新して、派生テスト ケースが親テスト ケースとは別の法人に対して実行されるようにします。 特定のユーザー (または特定のユーザーに関連付けられているロール) に対してテスト ケースを実行するには、**テスト ユーザー** フィールドの値を更新します。
-7. **実行**を選択し、USMF 法人と USSI 法人の両方で製品が作成されていることを検証します。
-
-### <a name="validate-notifications"></a>通知の検証
-
-この機能は、アクションが実行されたかどうかを検証するために使用できます。 たとえば、製造オーダーが作成、見積り、開始された時に、アプリは製造オーダーが開始されたことを通知する "生産 – 開始" メッセージを表示します。
-
-![生産 – 開始通知](./media/use_rsa_tool_05.png)
-
-RSAT を使用してこのメッセージを検証するには、該当する記録の Excel パラメーター ファイルにある**メッセージ検証**タブにメッセージ テキストを入力します。
-
-![メッセージ検証タブ](./media/use_rsa_tool_06.png)
-
-テスト ケースを実行すると、Excel パラメーター ファイル内のメッセージが、表示されるメッセージと比較されます。 メッセージが一致しない場合、テストケースは失敗します。
-
-> [!NOTE]
-> Excel パラメーター ファイルの**メッセージ検証**タブには、複数のメッセージを入力できます。 メッセージは、情報メッセージではなく、エラーまたは警告メッセージである場合もあります。
-
-### <a name="validate-values-by-using-operators"></a>演算子を使用して値を検証する
-
-RSAT の以前のバージョンでは、予測値がコントロール値と等しい場合にのみ値を検証できました。 この新しい機能を使用すると、変数が指定された値と等しくない、指定された値より小さい、またはそれを超えていることを検証できます。
-
-- この機能を使用するには、RSAT のインストールホルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    Excel パラメーター ファイルで、新しい**演算子**フィールドが表示されます。
-
-    > [!NOTE]
-    > 古いバージョンの RSAT を使用している場合は、新しい Excel パラメーター ファイルを生成する必要があります。
-
-    ![演算子フィールド](./media/use_rsa_tool_07.png)
+RSAT を使用すると、予測値を検証するためにテスト ケース内に検証ステップを含めることができます。 この機能の詳細については、[予測値の検証](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md) を参照してください。
 
 次の例は、この機能を使用して、手持在庫が 0 (ゼロ) よりも大きいかどうかを検証する方法を示します。
 
@@ -115,7 +49,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
     5. 一覧で、選択された行をマークします。
     6. **引当可能合計数**フィールドの値が、**411.0000000000000000** であることを検証します。
 
-2. タスク記録を LCS の BPM ライブラリに保存し、Azure DevOps に同期させます。
+2. タスクの記録を保存し、Azure Devops のテスト ケースに関連付けます。
 3. テスト ケースをテスト計画に追加し、テスト ケースを RSAT に読み込みます。
 4. Excel パラメーター ファイルを開きます。 **手持ち在庫品目**タブに、**演算子**フィールドを含む**手持ち在庫品目検証**セクションが表示されます。
 
@@ -130,28 +64,32 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 これで、指定した在庫品目の**引当可能合計数**フィールド値が0 ( ゼロ ) よりも大きい場合、実際の手持在庫値に関係なくテストが合格となります。
 
-### <a name="generator-logs"></a>ジェネレーター ログ
+### <a name="saved-variables-and-chaining-of-test-cases"></a>保存された変数とテスト ケースの連鎖
 
-この機能は、実行されたテスト ケースのログを含むフォルダーを作成します。
+RSAT の主要な機能の 1 つとして、テスト ケースの連鎖、つまり、変数を他のテストに渡すテストの機能、があります。 詳細については、[テスト ケースの連鎖への変数のコピー](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md) を参照してください。
 
-- この機能を使用するには、RSAT のインストールホルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
+### <a name="derived-test-case"></a>派生テスト ケース
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+RSAT を使用すると、複数のテスト ケースで同じタスク レコードを使用して、タスクを異なるデータ構成で実行できます。 詳細については、[派生テスト ケース](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) を参照してください。
 
-テスト ケースが実行されると、**C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\generatorLogs**でログファイルを検索できます。
+### <a name="validate-notifications-and-messages"></a>通知とメッセージの検証
 
-![ジェネレーター ログ フォルダー](./media/use_rsa_tool_10.png)
+この機能は、アクションが実行されたかどうかを検証するために使用できます。 たとえば、製造オーダーが作成、見積り、開始された時に、アプリは製造オーダーが開始されたことを通知する "生産 – 開始" メッセージを表示します。
+
+![生産 – 開始通知](./media/use_rsa_tool_05.png)
+
+RSAT を使用してこのメッセージを検証するには、該当する記録の Excel パラメーター ファイルにある**メッセージ検証**タブにメッセージ テキストを入力します。
+
+![メッセージ検証タブ](./media/use_rsa_tool_06.png)
+
+テスト ケースを実行すると、Excel パラメーター ファイル内のメッセージが、表示されるメッセージと比較されます。 メッセージが一致しない場合、テストケースは失敗します。
 
 > [!NOTE]
-> 構成ファイルの値を変更する前に既存のテスト ケースがあった場合、新しいテスト実行ファイルを生成するまで、そのテスト ケースに対するログは生成されません。
-> 
-> ![新しいメニューにテキスト実行ファイルのみのコマンドを生成します。](./media/use_rsa_tool_11.png)
+> Excel パラメーター ファイルの**メッセージ検証**タブには、複数のメッセージを入力できます。 メッセージは、情報メッセージではなく、エラーまたは警告メッセージである場合もあります。
 
 ### <a name="snapshot"></a>スナップショット
 
-この機能は、タスク記録中に実行された手順のスクリーンショットを撮ります。
+この機能は、タスク記録中に実行された手順のスクリーンショットを撮ります。 これは、監査やデバッグの目的で役立ちます。
 
 - この機能を使用するには、RSAT のインストール フォルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
 
@@ -159,13 +97,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-**C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** では、実行される各テスト ケースに対して個別のフォルダーが作成されます。
-
-![テスト ケースのスナップショット フォルダー](./media/use_rsa_tool_12.png)
-
-これらの各フォルダー内で、テスト ケースの実行中に実行された手順のスナップショットを検索できます。
-
-![スナップショット ファイル](./media/use_rsa_tool_13.png)
+テスト ケースを実行すると、RSAT は、作業ディレクトリ内のテスト ケースの再生フォルダにあるステップのスナップショット (画像) を生成します。 古いバージョンの RSAT を使用している場合、画像は **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** に保存され、実行される各テスト ケースに対して個別のフォルダが作成されます。
 
 ## <a name="assignment"></a>割り当て
 
@@ -183,7 +115,7 @@ RSAT の以前のバージョンでは、予測値がコントロール値と等
 
 ![デモ シナリオのフロー](./media/use_rsa_tool_14.png)
 
-次の図は、RSAT のこのシナリオの業務プロセスを示しています。
+次の図は、LCS ビジネス プロセス モデラーでのこのシナリオの業務プロセスの階層を示しています。
 
 ![デモ シナリオの業務プロセス](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 
 #### <a name="help"></a>ヘルプ
-[?](####?) と同一 command
+[?](#section) と同一 command
 
 
 #### <a name="list"></a>リスト
@@ -512,6 +444,8 @@ Excel ファイルを使用して、同時に多数のテスト ケースを再�
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell の例
 
+[!IMPORTANT] 次のサンプル スクリプトは、説明のためのもので Microsoft ではサポートされていません。
+
 #### <a name="run-a-test-case-in-a-loop"></a>ループでのテスト ケースの実行
 
 新しい顧客を作成するテスト スクリプトがあります。 このテスト ケースは、スクリプトを使用し、各繰り返しを実行する前に次のデータをランダム化することによってループで実行できます。
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

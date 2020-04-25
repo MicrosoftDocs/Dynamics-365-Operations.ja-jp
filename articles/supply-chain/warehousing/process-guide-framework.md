@@ -2,26 +2,26 @@
 title: プロセス ガイド フレームワーク
 description: このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 7e9951a09c2ac9dd524bd1cbce4a8875b8772aba
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 86a974f949627c69f86f3f76281bb0fb90e893ce
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026327"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204966"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 

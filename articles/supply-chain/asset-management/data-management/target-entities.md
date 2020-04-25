@@ -2,7 +2,7 @@
 title: ターゲット エンティティ
 description: このトピックでは、資産管理におけるターゲット エンティティの概要の取得方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5bb94b6e4176a7dbed2d78149e7120ce832d0bc0
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 58027fcb29efbac847f3018ae1eb6677241ed87b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652313"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205440"
 ---
 # <a name="target-entities"></a>ターゲット エンティティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "2652313"
 
 **データ管理**ワークスペースでは、ターゲット エンティティ、関連するエンティティ タイプ、および**資産管理**モジュールに関連するステージング テーブルの概要を取得できます。 
 
-1. 画面の左上隅にある **Finance and Operations** ボタンをクリックし、**データ管理**をクリックします。
+1. 画面の左上隅にある **Finance and Operations** ボタンをクリックし、**データ管理** をクリックします。
 
 2. **インポート/エクスポート** セクションで、**データ エンティティ**をクリックします。 
 

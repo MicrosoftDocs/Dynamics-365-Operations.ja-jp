@@ -1,30 +1,30 @@
 ---
 title: 発注書の承認と確認
-description: このトピックは、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+description: このトピックでは、発注書が作成された後の一連の状態と、PO で変更管理を有効にした場合の影響について説明します。
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813434"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207997"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 
@@ -69,9 +69,10 @@ ms.locfileid: "2813434"
 
 発注書が変更管理プロセスを使用して作成された場合、または注文が **要求の変更** アクションを使用してすでに承認されているなら、その注文を再度呼び出して変更できます。 この場合、承認状態は **ドラフト** に戻り、その注文を修正できるようになります。 変更が終了した後、再承認のため発注書を再送信する必要があります。 **購買ポリシー** ページにある **発注書の再承認ルール** ポリシー ルールを使用して、再承認を必要とする変更の種類をコンフィギュレートできます。
 
-発注書明細行の注文数量の一部が配送された場合、注文数量は変更できません。 ただし明細行の **出荷更新待ち** の数量を変更できます。 明細行をキャンセルしそれ以降の処理を防ぐため、**確定** アクションを使用できます。 
+発注書明細行の注文数量の一部が配送された場合、発注書が **ドラフト** の時は注文数量を変更できません。 ただし、**ドラフト** 状態の発注書の明細行にある **出荷更新待ち** の数量は変更できます。
 
-注文が確認済になると削除はできません。 ただし注文した数量が受領されていない、または請求書が送られていないなら、全数量か発注残の数量をキャンセルできます。
+注文が確認済になると削除はできません。 ただし注文した数量が受領されていない、または請求書が送られていないなら、全数量か発注残の数量をキャンセルできます。 それ以降の処理を防ぐため、**確定** アクションを使用できます。 
+
 
 ## <a name="canceling-purchase-orders"></a>発注書のキャンセル
 

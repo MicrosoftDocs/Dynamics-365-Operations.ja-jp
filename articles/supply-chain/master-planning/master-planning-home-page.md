@@ -2,7 +2,7 @@
 title: マスター プランのホーム ページ
 description: マスター プランにより、会社が原材料および会社の目標を満たす能力に対する将来の必要性を特定し調整することができます。
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: dcdf83c3595691937a3c0f3863cf28753f12b957
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814264"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209838"
 ---
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 

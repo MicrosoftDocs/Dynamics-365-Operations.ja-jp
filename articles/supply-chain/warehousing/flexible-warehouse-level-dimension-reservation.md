@@ -2,7 +2,7 @@
 title: 変動倉庫レベルの分析引当ポリシー
 description: このトピックでは、製品に関連付けられている引当階層が特定のバッチの予約を許可していない場合でも、バッチ追跡製品を販売し、WMS 対応工程としてロジスティクスを実行する企業が顧客の販売注文に対して特定のバッチを予約できるようにする在庫引当のポリシーについて説明します。
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cd6ec1013de757214db99ada02170bb6e2af96c0
-ms.sourcegitcommit: f52ddcad105aac4ad2caef709751ff80caf363c0
+ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036932"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205670"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>変動倉庫レベルの分析引当ポリシー
 

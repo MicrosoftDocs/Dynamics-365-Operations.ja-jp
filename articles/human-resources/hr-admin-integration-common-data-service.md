@@ -1,9 +1,9 @@
 ---
 title: Common Data Service 統合のコンフィギュレーション
-description: Common Data Service と Microsoft Dynamics 365 Human Resources のインスタンス間の統合を、有効または無効にすることができます。 また、同期の詳細を表示したり、追跡データをクリアしたり、エンティティを再同期して、2 つの環境間のデータ問題をトラブルシューティングすることもできます。
+description: Common Data Service と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示し、追跡データをクリアし、エンティティを再同期して、2 つの環境間のデータ問題のトラブルシューティングに役立てることもできます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009648"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198425"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service 統合のコンフィギュレーション
 
-Common Data Service と Microsoft Dynamics 365 Human Resources のインスタンス間の統合を、有効または無効にすることができます。 また、同期の詳細を表示したり、追跡データをクリアしたり、エンティティを再同期して、2 つの環境間のデータ問題をトラブルシューティングすることもできます。
+Common Data Service と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示したり、追跡データをクリアしたり、エンティティを再同期して、2 つの環境間のデータ問題をトラブルシューティングすることもできます。
 
 統合をオフにすると、ユーザーは Human Resources または Common Data Service に変更を加えることができますが、これらの変更は 2 つの環境間で同期されません。
 
-既定では、環境のデモ データの有無に応じて、Human Resources と Common Data Service 間の統合は有効または無効になります。
-
-- デモ データを含まない新しい環境において、**無効**
-- デモ データを含む新しい環境において、**有効**
-
-デモ データが含まれる新しい環境では、データの準備時にデータの同期が開始されます。
+既定では、Human Resources とCommon Data Service 間の統合はオフになっています。
 
 次のような場合は、統合を無効にすることもできます:
 
 - Data Management Framework を介したデータに入力し正しい状態にするには、データを複数回インポートする必要があります。
 
-- Human Resources または Common Data Service のいずれかのデータに問題があります。 統合を無効にする場合、他では削除せず、もう一方の環境でレコードを削除することができます。 統合を有効に戻すと、削除されていない環境のレコードは、削除された環境に同期されます。 同期は次に、 **同期リクエストを失敗した Common Data Service 統合** バッチ ジョブが実行するときに開始されます。
+- Human Resources または Common Data Service のいずれかのデータに問題があります。 統合を無効にする場合、他では削除せず、もう一方の環境でレコードを削除することができます。 統合をオンに戻すと、削除されなかった環境のレコードは、削除された環境に同期します。 同期は次に、 **同期リクエストを失敗した Common Data Service 統合** バッチ ジョブが実行するときに開始されます。
 
 > [!WARNING]
 > データ統合を無効する場合、両方の環境で同じレコードを編集しないようにしてください。 統合を有効に戻すと、最後に編集したレコードが同期されます。 したがって、両方の環境でレコードに同じ変更を加えていない場合は、データが失われる可能性があります。
@@ -103,9 +98,17 @@ Human Resources と Common Data Service 間のデータ同期中に問題が発�
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Human Resources と Common Data Service 間のエンティティを同期
 
-Common Data Service からの変更が Human Resources に表示されるのに長くかかる場合、または追跡をクリアした後に追跡テーブルを更新する必要がある場合は、この手順を使用します。
+この手順は、次の場合に使用します:
 
-- Human Resources と Common Data Service 間のエンティティで完全同期を実行するには、**CDS エンティティ名**フィールドでエンティティを選び、**今すぐ同期**を選択します。
+- Common Data Service からの変更は、Human Resources に表示されるまでに時間がかかりすぎます。
+
+- 追跡をクリアした後、追跡テーブルを最新の情報に更新する必要があります。
+
+Human Resources と Common Data Service の間のエンティティで完全同期を実行するには:
+
+1. **CDS エンティティ名** フィールドで、エンティティを選択します。
+
+2. **今すぐ同期** を選択します。
 
 [![完全同期の実行](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

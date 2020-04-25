@@ -3,7 +3,7 @@ title: 仕入先支払ワークスペース
 description: このトピックでは、[仕入先支払] モバイル ワークスペースに関する情報を提供します。 [仕入先支払] ワークスペースは、仕入先支払の処理に関連する情報を表示します。
 author: abruer
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 89ba0d68bd52413328dd583e87b09b01fd523d6f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178735"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225016"
 ---
 # <a name="vendor-payments-workspace"></a>仕入先支払ワークスペース
 
@@ -36,7 +36,7 @@ ms.locfileid: "2178735"
 1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
 2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。 
 2. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-3. **システム管理 > 設定 > エンティティ格納**に移動して、**VendPaymentBIMeasure** 集計測定を更新します。 
+3. **システム管理 > 設定 > エンティティ格納** に移動して、**VendPaymentBIMeasureV2** 集計測定を更新します。 
 
 ## <a name="my-work-view"></a>自分の作業ビュー
 

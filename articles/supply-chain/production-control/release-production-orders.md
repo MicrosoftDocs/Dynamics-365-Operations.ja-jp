@@ -2,7 +2,7 @@
 title: 製造オーダーのリリース
 description: リリースされた製造オーダーは、生産が承認された注文です。 生産の作業現場と倉庫でのプロセス実行に使用でき製造オーダーには、製造オーダーのライフ サイクルの状態を説明するのに "リリース済" という語句が使用されます。
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdParmRelease
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 2414
 ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 400c2786d80681827829286e6e9667b4d51612c4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bc6d53fc87bac2e23c0d1e67954be02749042004
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558506"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211241"
 ---
 # <a name="release-production-orders"></a>製造オーダーのリリース
 

@@ -3,7 +3,7 @@ title: グリッド機能
 description: このトピックでは、グリッド コントロールのいくつかの強力な機能について説明します。 これらの機能にアクセスするには、新しいグリッド機能が有効になっている必要があります。
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260463"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -90,4 +90,23 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
 ## <a name="evaluating-math-expressions"></a>数式の評価
 生産性を高めるため、ユーザーはグリッドの数値セルに公式を入力できます。 システム外部のアプリで計算を行う必要はありません。 例えば、**=15\*4** と入力して、**タブ** キーを押してフィールドの外に移動すると、システムによって式が評価され、フィールドの値として **60** が保存されます。
 
-値が式としてシステムで認識されるようにするには、値を等号 (**=**) で開始します。 サポートされている演算子と構文の詳細については、[サポートされている数式記号](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols) を参照してください。  
+値が式としてシステムで認識されるようにするには、値を等号 (**=**) で開始します。 サポートされている演算子と構文の詳細については、[サポートされている数式記号](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols) を参照してください。
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>環境で新しいグリッド コントロールを有効有効にするにはどうすればよいですか? 
+
+**10.0.9 / Platform update 33 以降** **新しいグリッド コントロール** 機能は、任意の環境の機能管理で直接使用できます。 他の公開プレビュー機能と同様に、実稼働でこの機能を有効にするには、[補足利用規約](https://go.microsoft.com/fwlink/?linkid=2105274) が適用されます。  
+
+**10.0.8 / Platform update 32 および 10.0.7 / Platform update 31** **新しいグリッド コントロール** 機能は、レベル 1 (開発/テスト) およびレベル 2 (サンドボックス) 環境で有効にして、以下の手順に従って追加のテストとデザイン変更を行うことができます。
+
+1.  **フライトを有効にする** : 次の SQL 明細書を実行します。 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **IIS をリセット**して、静的なフライティング キャッシュをフラッシュします。 
+
+3.  **機能の検索** : **機能管理** ワークスペースに移動します。 すべての機能の一覧に **新しいグリッド コントロール** が表示されない場合は、**更新プログラムの確認** を選択します。   
+
+4.  **機能の有効化**: 機能の一覧で **新しいグリッド コントロール** 機能を検索し、詳細ウィンドウの **直ちに有効化** を選択します。 ブラウザーの更新が必要であることに注意してください。 
+
+以降のすべてのユーザー セッションは、新しいグリッド コントロールを有効にして開始されます。

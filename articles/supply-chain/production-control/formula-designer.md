@@ -2,7 +2,7 @@
 title: フォーミュラ デザイナー
 description: このトピックでは、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31a46230251be3a654092a4acc05a404533001b2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a45d305f7229a2411770a38da8fbd349944e42a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566492"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211517"
 ---
 # <a name="formula-designer"></a>フォーミュラ デザイナー
 

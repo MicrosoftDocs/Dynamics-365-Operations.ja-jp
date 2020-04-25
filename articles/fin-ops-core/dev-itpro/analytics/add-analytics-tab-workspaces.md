@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025857"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259635"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
@@ -84,7 +84,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 8. **新しいタブ ページ**を右クリックし、選択します。
 9. **分析**など、タブ ページをわかりやすい名前に変更します。
 10. フォーム デザイナーで、**分析 (タブ ページ)** を選択します。
-11. **キャプション**プロパティを**分析**に設定します。
+11. **キャプション** プロパティを **Analytics** に、**自動申告** プロパティを **はい** に設定します。
 12. コントロールを右クリックし、**新規** \> **グループ**の順に選択して、新しいフォーム グループ コントロールを追加します。
 13. **powerBIReportGroup** など、フォーム グループをわかりやすい名前に変更します。
 14. フォーム デザイナーで、**PanoramaBody (タブ)** を選択し、コントロールを**ワークスペース**タブの上にドラッグします。

@@ -2,7 +2,7 @@
 title: 安全在庫仕訳帳を使用した最小補充の更新
 description: この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1624f84db10ea7cc80bb94757f19484b8c403c5c
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148771"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210321"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>安全在庫仕訳帳を使用した最小補充の更新
 

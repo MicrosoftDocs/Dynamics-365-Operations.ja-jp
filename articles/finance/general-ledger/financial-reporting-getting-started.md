@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915180"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249063"
 ---
 # <a name="financial-reporting-overview"></a>財務諸表の概要
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 このトピックでは、財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明も含まれています。
 

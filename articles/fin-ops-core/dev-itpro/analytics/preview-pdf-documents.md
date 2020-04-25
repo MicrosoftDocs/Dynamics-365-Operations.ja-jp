@@ -1,5 +1,5 @@
 ---
-title: 埋め込みビューアを使用してPDFドキュメントのプレビューをする
+title: PDF ビューアを使用して PDF ドキュメントをプレビューする
 description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
 author: tjvass
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4ea9b930c210699f01c791e3c94c3f04c13dfe23
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 11f532a1e083230a4a867eed01acaa2b0381e06c
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070406"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258542"
 ---
-# <a name="preview-pdf-documents-with-an-embedded-viewer"></a>埋め込みビューアを使用してPDFドキュメントのプレビューをする
+# <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用して PDF ドキュメントをプレビューする
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "3070406"
 ## <a name="accessing-the-pdf-preview-experience"></a>PDFプレビュー機能にアクセスする
 利用可能となるPDFドキュメント ビューアー コントロールは、ほとんどの配置タイプで使用できるようになっています。 ただし、ワンボックス配置の場合は、 **レポートオプション**  ページにてPDFプレビュー機能を有効にする必要があります。 PDFのプレビューを有効にするには、以下の手順を実行します。 
 
-1) ブラウザウィンドウのURL末尾に "& Mi = sysreportadministration" を追加して **レポートオプション** に移動します。
+1) ブラウザウィンドウのURL末尾に "&mi=SysReportAdministration" を追加して **レポートオプション** に移動します。
 2) **埋め込みビューアを使用してドキュメントをプレビューする** フィールドを **はい** と設定します。
 3) **保存**をクリックします。
 

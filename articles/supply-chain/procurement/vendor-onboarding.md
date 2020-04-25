@@ -2,7 +2,7 @@
 title: Onboard 仕入先
 description: このトピックでは、新しい仕入先の研修のプロセスを説明します。 このプロセス中に、さまざまなロールにより必要なアクションを説明します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250156"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203414"
 ---
 # <a name="onboard-vendors"></a>Onboard 仕入先
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "2250156"
 | 管理者            | | | Supply Chain Management および Microsoft Azure でユーザーを作成します。 | | | |
 | 仕入先の連絡担当者    | | | 連絡担当者に電子メールを送信します。 | 仕入先情報を登録します。 | | |
 
-仕入先のオンボーディング プロセスの簡単なデモに関しては、この短い YouTube ビデオ [Finance and Operations で新しい仕入先の搭載方法](https://www.youtube.com/watch?v=0KUc3AGaTKk) をご覧ください。
+仕入先のオンボーディング プロセスの簡単なデモに関しては、[Finance and Operations で新しい仕入先の搭載方法](https://www.youtube.com/watch?v=0KUc3AGaTKk) に関するこの短い YouTube ビデオをご覧ください。
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>見込み仕入先の登録要求をインポートする
 

@@ -2,7 +2,7 @@
 title: 生産管理、およびプロジェクト管理会計で使用される原価カテゴリ
 description: 生産作業によっては、プロジェクト時間の見積と報告に適用できます。 この記事は、生産とプロジェクトのために、これらの種類の生産作業に定義する必要のある原価カテゴリに関する情報を提供します。
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 78253
 ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 26f4ce073528bf102a951d6fa002aeb0da9e380c
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557874"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201919"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>生産管理、およびプロジェクト管理会計で使用される原価カテゴリ
 

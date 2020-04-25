@@ -2,7 +2,7 @@
 title: 製造品目の固定費の償却
 description: 製造品目の固定費は、工程の段取り時間と、数量または仕損金額が一定のコンポーネントを反映します。
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 274503
 ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 7ccd5ce3e2ed58db8f13eebbcfa6fe5fb544d6c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 298b5cbbf955527edb399eae78a1c8e60a8b9ce3
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564227"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208849"
 ---
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>製造品目の固定費の償却
 

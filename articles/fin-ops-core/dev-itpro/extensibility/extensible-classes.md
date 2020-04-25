@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Smitha Nataraj, Lars-Bo
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 31cbc2c7a0ab447758346cfbe4a6a046e57a9bf3
-ms.sourcegitcommit: 6407f25c943f43e132abfb2d9b12bd1bd9db465d
+ms.openlocfilehash: 54f70efaa31c59be623d2bad143af0c0c18a4a31
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951795"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249049"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
@@ -39,7 +39,7 @@ ms.locfileid: "2951795"
 
 **拡張不可コード**
 
-```
+```xpp
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
     {
         // cannot add extra condition if needed
@@ -56,7 +56,7 @@ ms.locfileid: "2951795"
 
 **拡張可能コード**
 
-```
+```xpp
  protected boolean canUpdateSalesPrice(SalesLine _saleLine)
     {
         return (_saleLine.QtyOrdered > 0 &&

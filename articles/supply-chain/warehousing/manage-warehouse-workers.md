@@ -2,7 +2,7 @@
 title: 倉庫作業者の管理
 description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 Supply Chain Management  - Warehousing アプリを使用する方法について説明します。
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018624"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205578"
 ---
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127980"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175111"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -47,6 +47,18 @@ ms.locfileid: "3127980"
 | **影響を受ける製品領域**         | 応募 |
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 2021 年 7 月 1 日には、SSRS レポートのサポートはなくなります: **仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014**。 代わりに、VAT 申告を含む標準監査ファイルの Excel 形式 (JPK_VDEK) の例が導入されます。 |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Finance 10.0.11 リリースの削除済みまたは非推奨の機能
+
+### <a name="norwegian-standard-main-accounts"></a>ノルウェー標準主勘定
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 再設計  |
+| **別の機能で置き換えられているか?**   | はい (ER 形式のアプリケーション固有パラメータに置き換えられます) |
+| **影響を受ける製品領域**         | 応募 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2021 年 4 月 1 日までに、標準主勘定に関連する機能: 参照フィールド、関連テーブル、データ エンティティ はサポートされなくなる予定です。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Finance 10.0.7 リリースの削除済みまたは非推奨の機能
 

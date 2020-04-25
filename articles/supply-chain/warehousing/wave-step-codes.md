@@ -2,7 +2,7 @@
 title: ウェーブ ステップ コード
 description: このトピックでは、ウェーブ ステップ コードの概要とその使用方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
-ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
+ms.openlocfilehash: 7a5a62c184b229142673981777da026c3f4103dc
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946193"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204542"
 ---
 # <a name="wave-step-codes"></a>ウェーブ ステップ コード
 

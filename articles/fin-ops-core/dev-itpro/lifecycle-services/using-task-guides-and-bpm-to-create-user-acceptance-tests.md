@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e9fa5b3bb44365015f0527b03abe40f8d848ed9a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 07058f4837e646d531de7379c65f42b37001d799
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026253"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248702"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -168,16 +168,13 @@ Finance and Operations のプラットフォームは、タスク記録に基づ
 
 機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細について[ツールのダウンロード](https://www.microsoft.com/download/details.aspx?id=57357)と[Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)を参照してください。
 
-Regression Suite Automation Toolの詳細については、次の情報を参照してください。
+Regression Suite Automation Tool の詳細については、次の情報を参照してください。
 
 - [第 1 部: Regression Suite Automation Tool -- バックグラウンド & セットアップ](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [- 第 2 部: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)
  
-実習で使用する手順については、次のトピックを参照してください。
-
-- [Regression Suite Automation Tool の設定およびインストール チュートリアル](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Regression Suite Automation Tool チュートリアルの使用](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+ハンズ オン ラボについては、[Regression Suite Automation Tool のチュートリアルを使用する](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md) を参照してください。
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。

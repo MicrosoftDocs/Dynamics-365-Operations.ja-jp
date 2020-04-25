@@ -2,7 +2,7 @@
 title: 仕入れ先の設定
 description: このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
-ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
+ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012448"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3216086"
 ---
 # <a name="set-up-vendor-accounts"></a>仕入れ先の設定
 

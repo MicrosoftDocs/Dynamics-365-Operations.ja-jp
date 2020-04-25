@@ -2,7 +2,7 @@
 title: 品質管理の概要
 description: このトピックでは、Dynamics 365 Supply Chain Management で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814401"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224912"
 ---
 # <a name="quality-management-overview"></a>品質管理の概要
 
@@ -303,123 +303,7 @@ ms.locfileid: "2814401"
 - **更新済数量別**オプションが**はい**に設定されると、品目サンプリングの入庫済数量と設定に基づいて、発注書に対するすべての入荷の品質指示が生成されます。 発注書に対する数量が入荷されるたびに、新しく入荷した数量に基づいて新しい品質指示が生成されます。
 - **更新済数量別**オプションが**いいえ**に設定されると、入庫済数量に基づいて、発注書に対する最初の入荷の品質指示が生成されます。 さらに、追跡用分析コードに応じて、残余数量に基づく 1 つ以上の品質指示が作成されます。 発注書に対するそれ以降の入荷の品質指示は生成されません。
 
-<table>
-<tbody>
-<tr>
-<th>品質仕様</th>
-<th>更新済数量別</th>
-<th>追跡用分析コード別</th>
-<th>結果</th>
-</tr>
-<tr>
-<td>割合: 10%</td>
-<td>はい</td>
-<td>
-<p>バッチ番号: いいえ</p>
-<p>シリアル番号: いいえ</p>
-</td>
-<td>
-<p>注文数量: 100</p>
-<ol>
-<li>30 の完了レポート
-<ul>
-<li>3 (30 の 10%) に対する品質指示 #1</li>
-</ul>
-</li>
-<li>70 の完了レポート
-<ul>
-<li>7 (この場合は 70 に相当する残余注文数量の 10%) に対する品質指示 #2</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>固定数量: 1</td>
-<td>いいえ</td>
-<td>
-<p>バッチ番号: いいえ</p>
-<p>シリアル番号: いいえ</p>
-</td>
-<td>注文数量: 100
-<ol>
-<li>30 の完了レポート
-<ul>
-<li>1 (完了済として最初にレポートされる数量、つまり固定値 1) に対して品質指示 #1 が作成されます。</li>
-<li>残余数量に対しては、これ以上の品質指示は作成されません。</li>
-</ul>
-</li>
-<li>10 の完了レポート
-<ul>
-<li>品質指示は作成されません。</li>
-</ul>
-</li>
-<li>60 の完了レポート
-<ul>
-<li>品質指示は作成されません。</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>固定数量: 1</td>
-<td>はい</td>
-<td>
-<p>バッチ番号: はい</p>
-<p>シリアル番号: はい</p>
-</td>
-<td>
-<p>注文数量: 10</p>
-<ol>
-<li>3 の完了レポート
-<ul>
-<li>バッチ #b1、シリアル #s1 の 1 に対する品質指示 #1</li>
-<li>バッチ #b2、シリアル #s2 の 1 に対する品質指示 #2</li>
-<li>バッチ #b3、シリアル #s3 の 1 に対する品質指示 #3</li>
-</ul>
-</li>
-<li>2 の完了レポート
-<ul>
-<li>バッチ #b4、シリアル #s4 の 1 に対する品質指示 #4</li>
-<li>バッチ #b5、シリアル #s5 の 1 に対する品質指示 #5</li>
-</ul>
-</li>
-</ol>
-<p><strong>注記:</strong> バッチは再利用できます。</p>
-</td>
-</tr>
-<tr>
-<td>固定数量: 2</td>
-<td>いいえ</td>
-<td>
-<p>バッチ番号: はい</p>
-<p>シリアル番号: はい</p>
-</td>
-<td>
-<p>注文数量: 10</p>
-<ol>
-<li>4 の完了レポート
-<ul>
-<li>バッチ #b1、シリアル #s1 の 1 に対する品質指示 #1。</li>
-<li>バッチ #b2、シリアル #s2 の 1 に対する品質指示 #2。</li>
-<li>バッチ #b3、シリアル #s3 の 1 に対する品質指示 #3。</li>
-<li>バッチ #b4、シリアル #s4 の 1 に対する品質指示 #4。</li>
-<li>残余数量に対しては、これ以上の品質指示は作成されません。</li>
-</ul>
-</li>
-<li>6 の完了レポート
-<ul>
-<li>品質指示は作成されません。</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-
-### <a name="production"></a>生産
+### <a name="production"></a>運用
 
 生産で、**品質関連**ページで**イベント タイプ** フィールドを**完了レポート**に、**実行**フィールドを**変更後**に設定すると、次のような結果が得られます。
 

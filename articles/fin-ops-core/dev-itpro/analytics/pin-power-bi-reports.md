@@ -1,5 +1,5 @@
 ---
-title: Power BI レポートをワークスペースにピン留めする
+title: PowerBI.com コンテンツをピン留めする
 description: Microsoft Dynamics 365 Finance では、データ検索に Power BI が使用されます。 このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 author: MilindaV2
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: ddf3538a67ea55f2cc9f5d6c4462b506bb8282c0
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 7660441b5e204cd455a2099cfa5462614d88b85b
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057977"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258545"
 ---
-# <a name="pin-power-bi-reports-to-workspaces"></a>Power BI レポートをワークスペースにピン留めする
+# <a name="pin-powerbicom-content"></a>PowerBI.com コンテンツをピン留めする
 
 [!include [banner](../includes/banner.md)]
 

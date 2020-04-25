@@ -2,7 +2,7 @@
 title: 機能的な場所に資産を導入する
 description: このトピックでは、資産管理で機能的な場所に資産を導入する方法について説明します。
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6d46c3c43b2f9cbae4c3584244261e8ef1547ffe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811829"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205408"
 ---
 # <a name="install-assets-on-functional-locations"></a>機能的な場所に資産を導入する
 

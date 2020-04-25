@@ -3,7 +3,7 @@ title: ライフ イベントの適格性を処理
 description: この記事では、ライフ イベント適格性の処理を実行する方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 899c49fd2946fbadf4264e9178a57fb28598c0de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: de4c5b951f9d4b07f457ce392c310fb96ba34947
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229973"
 ---
 # <a name="process-life-event-eligibility"></a>ライフ イベントの適格性を処理
-
-[!include [banner](includes/preview-feature.md)]
 
 この記事では、ライフ イベント適格性の処理を実行する方法について説明します。
 
@@ -37,7 +35,7 @@ ms.locfileid: "3009634"
 
    | フィールド | 説明 |
    | --- | --- |
-   | 登録期間 | ライフ イベントの適格性を処理する登録期間。 |
+   | **登録期間** | ライフ イベントの適格性を処理する登録期間。 |
 
 3. バックグラウンドで処理を実行する場合は、**バックグラウンドで実行**を選択し、次のタスクを実行します。
 

@@ -2,7 +2,7 @@
 title: 購入ポリシーの作成
 description: このトピックでは、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8416f9a869b9144a63a6fb08c667cc32dec9854
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 4e13a9a594e8c4041a586734df53321d57b43586
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149714"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204799"
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 

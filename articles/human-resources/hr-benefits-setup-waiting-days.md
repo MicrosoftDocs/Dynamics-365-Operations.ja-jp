@@ -3,7 +3,7 @@ title: 待機日数のコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用する月次マイルストーンを確立します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a46f296722317f4815bf6b2cb8960455cecee110
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: d85dafefb3b71c368dc3114bbf2524aee6196634
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092446"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229618"
 ---
 # <a name="configure-waiting-days"></a>待機日数のコンフィギュレーション
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用する月次マイルストーンを確立します。 たとえば、待機日 15 は、各月の 15 日を表します。 
 
@@ -39,8 +37,8 @@ Microsoft Dynamics 365 Human Resources では、待機日は、給付金プラ�
 
    | フィールド | 説明 |
    | --- | --- |
-   | 待機日数 | 待機日の一意の識別子。 |
-   | 説明 | 待機日の説明。 |
-   | 曜日 | システムが待機期間の日付を設定する毎月の日。 |
+   | **待機日数** | 待機日の一意の識別子。 |
+   | **説明** | 待機日の説明。 |
+   | **日付** | システムが待機期間の日付を設定する毎月の日。 |
    
 4. **保存** を選択します。

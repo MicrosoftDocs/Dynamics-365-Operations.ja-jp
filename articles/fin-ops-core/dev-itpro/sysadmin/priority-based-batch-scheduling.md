@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: 77269941cd941928afbf2f451be3672b3c43d46d
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: 3907ea6006d510b64e736ae16362d2b3d28336fb
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945408"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248928"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 プラットフォーム アップデート 31 では、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) の **バッチ優先順位に基づくスケジューリング** 機能を有効にすることができます。 優先順位に基づくスケジューリングでは、バッチグループをバッチサーバーから切り離します。 代わりに、使用可能なバッチサーバー間でタスクが実行される順序を決定するために、相対的なスケジューリング優先順位が使用されます。
 
@@ -103,7 +102,7 @@ ms.locfileid: "2945408"
 14. バッチ タスクが入力パラメーターに対応している場合は、 **パラメーター** を選択し、続いてタスク固有のパラメーターを設定します。
 15. **OK** を選択してから、**保存**を選択します。
 
-## <a name="reserved">バッチに特化したキャパシティ レベルの設定</a>
+## <a name=""></a><a name="reserved">バッチに特化したキャパシティ レベルの設定</a>
 
 1. **システム管理** \> **設定** \> **システム パラメーター**に移動します。
 2. **バッチ グローバル 設定** タブの **バッチ専用のキャパシティ レベル** フィールドで、 **専用キャパシティ** の優先度を持つバッチジョブ 専用のキャパシティ レベルを選択します。
@@ -123,7 +122,7 @@ ms.locfileid: "2945408"
 
 **期限切れのバッチレコードを削除するシステムジョブ** は、新規の内部システム向けのバッチジョブで、新たな BatchHeartbeatTable テーブルを削除します。 このバッチジョブのクラス名は、 **SysCleanupBatchHeartbeatTable** です。 BatchHeartbeatTable は 内部を監視するテーブルで、使用中のノードのスレッドのキャパシティを決定、設定や分配します。
 
-## <a name="automatic">バッチジョブをバッチグループへ自動移行する</a>
+## <a name=""></a><a name="automatic">バッチジョブをバッチグループへ自動移行する</a>
 
 この機能が有効化されると、タスクのバッチ グループ情報は、使用されるジョブへと複製されます。 ジョブのバッチグループへの割り当ては、ジョブのタスクで最も使用されるバッチグループを基準に決定されます。
 

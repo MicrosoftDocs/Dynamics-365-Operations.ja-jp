@@ -2,7 +2,7 @@
 title: 梱包材および費用
 description: このトピックでは、特定の期間にリサイクル会社に支払われる梱包材費用についての情報を提供します。
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2351cce9dc6e1a554800817f75591c4a4e24d43
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076250"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215703"
 ---
 # <a name="packing-materials-and-fees"></a>梱包材および費用
 
@@ -39,7 +39,7 @@ ms.locfileid: "3076250"
 > [!NOTE]
 > 梱包材費用を支払っていない会社でも、この機能を使用して、梱包材の重量の統計を計算できます。
 
-## <a name="allocations"></a>梱包材の配賦の設定
+## <a name="set-up-packing-material-allocation"></a><a name="allocations"></a>梱包材の配賦の設定
 
 梱包材重量、梱包材費用、またはその両方を計算する前に、計算を有効にして、どの材料および費用ををどの品目に適用するかを定義する必要があります。
 

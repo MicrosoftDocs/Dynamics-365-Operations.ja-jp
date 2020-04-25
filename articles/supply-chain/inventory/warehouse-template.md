@@ -2,7 +2,7 @@
 title: 倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 description: このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3a6645bc55dfd4f03ce9872ff5017f1659b1f11c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017600"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204013"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
@@ -93,7 +93,7 @@ ms.locfileid: "2017600"
 
 **実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
-同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオ [Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) をご覧ください。
+同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、[Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) について YouTube でこの 3 分間のビデオを参照してください。
 
 ## <a name="related-topic"></a>関連するトピック
 

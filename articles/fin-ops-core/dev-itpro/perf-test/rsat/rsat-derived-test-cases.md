@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d485eb8088af8a962e32ab0eb42232e49b5e78d2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 1353c89955814a47f8bd1df09b31104d78e2d99e
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570537"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248701"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 
 [!include [banner](../../includes/banner.md)]
 
-Regression Suite Automation Tool を使用すると、複数のコンフィギュレーションで同じテスト ケースを実行できます。 これを行うには、Regression Suite Automation Tool でテストケースを選択し、 **新規 > 派生テストケースの作成** を選択します。 これにより、 Azure DevOps に子テスト ケースが作成されます。 結果として派生したテスト ケースは、 Azure DevOps の親テスト ケースにリンクされます。 Excel パラメーター ファイルが添付されていますが、記録ファイルはありません。 派生したテスト ケースは、選択した **派生** 列と同じテスト スイートの下の Regression Suite Automation Tool グリッドに表示されます。 派生したテスト ケースには、親テスト ケースに数字の接尾語が付いた名前が付けられます。
+Regression Suite Automation Tool (RSAT) を使用すると、複数のテスト ケースを使用して同じタスク記録を使用できるので、異なるデータの構成を使用してタスクを実行できます。 これを行うには、Regression Suite Automation Tool でテストケースを選択し、 **新規 > 派生テストケースの作成** を選択します。 これにより、 Azure DevOps に子テスト ケースが作成されます。 結果として派生したテスト ケースは、 Azure DevOps の親テスト ケースにリンクされます。 Excel パラメーター ファイルが添付されていますが、記録ファイルはありません。 派生したテスト ケースは、選択した **派生** 列と同じテスト スイートの下の Regression Suite Automation Tool グリッドに表示されます。 派生したテスト ケースには、親テスト ケースに数字の接尾語が付いた名前が付けられます。
 
 次の図では、 **仕入先の作成** というテスト ケースから派生テスト ケースが作成されています。
 
@@ -40,3 +40,5 @@ Regression Suite Automation Tool を使用すると、複数のコンフィギ�
 派生テスト ケースを実行 (再生) すると、親テスト ケースの記録と Excel パラメーター ファイルのコピーが使用されます。 これにより、複数の記録を維持することなく、異なるパラメーターで同じテストを実行できます。
 
 派生テスト ケースは、親テスト ケースと同じテスト スイートの一部である必要はありません。 他のスイートに移動できます。
+
+派生テストケースの Excel パラメータ ファイルを編集して、親テスト ケースとは異なるユーザー、異なる会社、および・または異なる入力と検証パラメータで実行することができます。

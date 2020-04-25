@@ -3,7 +3,7 @@ title: ドキュメント回覧エージェントのアップグレード
 description: このトピックでは、ドキュメント巡回エージェントをアップグレードする方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a97172812db02e264b01c75e180d60dffe5c75e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9506a9a8d67afd9c787b001691c2e91cdfd356c8
+ms.sourcegitcommit: ef9026c876fa02abd7a2bcf68fea09c7b6d47de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769798"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254298"
 ---
 # <a name="upgrade-the-document-routing-agent"></a>ドキュメント回覧エージェントのアップグレード
 
@@ -35,6 +35,9 @@ DRA の既存のインストールをプラットフォーム更新プログラ�
 - カスタムの余白がある印刷ドキュメントの一貫性のない処理
 
 IT 管理者は、DRA をホストするために使用される各ドメイン リソースに対して、次の手順を実行する必要があります。
+
+> [!NOTE]
+> DRA のアップグレードを完了すると、IT 管理者は、ホストサーバー経由で接続しているすべてのプリンターを登録する必要があります。 ネットワーク パスによって識別されるネットワーク プリンターでは、パスが変更されていない限りは更新の必要はありません。
 
 ## <a name="get-started"></a>はじめに
 DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、アップグレード完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス**を選択します。

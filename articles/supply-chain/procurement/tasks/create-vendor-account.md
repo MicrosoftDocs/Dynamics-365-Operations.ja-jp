@@ -2,7 +2,7 @@
 title: 仕入先勘定の作成
 description: この手順では、仕入先勘定の作成方法と住所および連絡先情報の追加方法を示します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: aca23db2a0cc86a2c12ea74d3b1e491643b7efec
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149599"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207695"
 ---
 # <a name="create-a-vendor-account"></a>仕入先勘定の作成
 

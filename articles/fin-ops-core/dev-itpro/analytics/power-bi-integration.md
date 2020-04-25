@@ -1,5 +1,5 @@
 ---
-title: Power BI 統合を通じて利用できる機能やサービス
+title: PowerBI.com の統合で使用可能となる機能
 description: このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。
 author: TJVass
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b75583795a08b9f14865a405d6f76c6754c68f2b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b1b96088d3be3aacde153a971c15d2c3fb3c34df
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769985"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258544"
 ---
-# <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合を通じて利用できる機能やサービス
+# <a name="features-available-through-powerbicom-integration"></a>PowerBI.com の統合で使用可能となる機能
 
 [!include [banner](../includes/banner.md)]
 

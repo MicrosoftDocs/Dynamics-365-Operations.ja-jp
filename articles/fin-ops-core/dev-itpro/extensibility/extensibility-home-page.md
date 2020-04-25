@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 431e9afbd07c2f78d81ee56845c7dcb25923b1bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 67ceb42ec734fb5dcd2c2c9369317e0fc249ffc2
+ms.sourcegitcommit: dca6ac616b901f33ad278dfd9c7ef55b7c898840
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003598"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225488"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -126,4 +126,8 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 + [メソッドを拡張可能にする属性](extensibility-attributes.md)
 
 ## <a name="breaking-changes"></a>変更の分割
-ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
+
+ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 
+
++ 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
++ [互換性チェック ツール](compatibility-checker-tool.md) を使用すると、指定されたベースライ ンリリースまたは更新に対して、メタデータの互換性に影響する変更を検出できます。

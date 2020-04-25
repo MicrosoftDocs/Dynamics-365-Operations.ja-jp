@@ -2,7 +2,7 @@
 title: Supply Chain Management から Field Service への在庫レベル情報の同期
 description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1228339c12d26f7b91875d15f0daa8da2869cba0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251204"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215910"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への在庫レベル情報の同期 
 

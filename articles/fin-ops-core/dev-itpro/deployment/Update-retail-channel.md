@@ -3,7 +3,7 @@ title: Retail Cloud Scale Unit への更新プログラムと拡張機能の適�
 description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 01/08/2020
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 5882a8e65021e46c275e0aa45c143e6283c10300
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7a48b5296318ee957fb7a9a398754cb803cda48b
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003608"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254737"
 ---
 # <a name="apply-updates-and-extensions-to-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit への更新プログラムと拡張機能の適用
 
@@ -39,7 +39,8 @@ Commerce Scale Unit を更新するには、それぞれについて次の手順
 1. **環境の詳細**ページで、**環境機能 > Retail およびコマース**に移動します。
 2. **コマース配置設定**ページで、**更新**を選択します。
 3. 選択パネルで、更新先のバージョンを選択します。
-4. 同時に、拡張機能を適用することもできます。 
+4. 最新のサービス更新プログラムを適用して最新の機能にアクセスすることも、最新の品質更新プログラムに更新して、現在展開されているサービス更新プログラムの品質改善を適用することもできます。 詳細については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
+5. また、同時に拡張機能を適用することもできます。 
 
 Commerce Scale Unit に拡張機能を適用するには、次の手順を実行します。
 
@@ -59,3 +60,7 @@ Commerce Scale Unit に拡張機能を適用するには、次の手順を実行
 
 > [!NOTE]
 > 拡張機能と更新プログラムを同時に適用するには、1 回のダウンタイムが必要なため、複数のダウンタイムを避ける効果的な方法です。
+
+## <a name="view-history"></a>履歴の表示
+最新の操作履歴をスケールユニットで表示するには、**アクション** タブの **履歴** を選択し、**スケール ユニットの履歴**ページを開きます。 このページでは、初期化、サービス更新、品質更新、バージョン、拡張機能の詳細、その他の関連情報など、最近の操作を表示できます。
+

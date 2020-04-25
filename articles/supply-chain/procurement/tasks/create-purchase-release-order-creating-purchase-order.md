@@ -2,25 +2,25 @@
 title: 発注書の作成時に購買リリース注文を作成
 description: この手順では、発注書を作成するときに購買契約書を使用する方法を示します。
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d857dbe7c5f7af8ef7a50ee60784a53e5c6823
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: e3e02bd4aaef8da7838c92199c28b1e298078c57
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147414"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204864"
 ---
 # <a name="create-a-purchase-release-order-when-creating-the-purchase-order"></a>発注書の作成時に購買リリース注文を作成
 

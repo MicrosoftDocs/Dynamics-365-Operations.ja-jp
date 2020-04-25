@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0a80e5b1a79c874ce0a8d24c85be71d0dc5c9c8
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b89d08d8f6a4223eb592ffa2b918504839e5287b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550559"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142412"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 4 部 - 形式の実行)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。 これらのステップは DEMF 会社で実行できます。
 
-これらの手順を完了するには、まず「計算と集計を行うER設定フォーマット（パート3：出荷のための計算）」の手順を完了する必要があります。
+これらの手順を完了するには、まず「計算と集計を行う ER コンフィギュレーション フォーマット (パート3: 出力を行う計算を使用する)」の手順を完了する必要があります。
 
 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -49,8 +49,8 @@ ms.locfileid: "2550559"
 12. [保存] をクリックします。
 13. [税] > [設定] > [対外貿易] > [対外貿易パラメーター] の順に移動します。
 14. [電子申告] セクションを展開します。
-15. [計算 & 集計を含むイントラスタット (DE)] の設定を選択します。
-16. [計算 & 集計を含むイントラスタット (DE)] の設定を選択します。
+15. [計算と集計のイントラスタット (DE)] コンフィギュレーションを選択します。
+16. [計算と集計のイントラスタット (DE)] コンフィギュレーションを選択します。
 17. [保存] をクリックします。
 18. ページを閉じます。
 19. [税] > [申告] > [対外貿易] > [イントラスタット] の順に移動します。

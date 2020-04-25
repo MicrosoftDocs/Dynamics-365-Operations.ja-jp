@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 19401e71e69ca73a55bdd13daed04a6557066d7c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b678023488eb95cecc9679804086cb4471011c55
+ms.sourcegitcommit: 50afd05388ff3101c68b7a9901eb3a086b6e7a0a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191576"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249183"
 ---
-# <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
+# <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations 8.0 およびこれ以降のすべてのリリースでは、Microsoft のコードをカスタマイズすることはできません。 動作の変更や追加には、拡張機能を使用する必要があります。 「オーバーレイを使用しない」という制限は、すべてのお客様が最新の機能と修正プログラムを利用できるように、シンプルで更新しやすく、常に最新のバージョンが実行されるクラウド ERP サービスをお客様に提供するための製品の展開において、重要な要素です。
+バージョン 8.0 以降の Finance and Operations アプリの開発ツールでは、オーバーレイヤリングを利用して Microsoft コードをカスタマイズすることができません。 動作の変更や追加には、拡張機能を使用する必要があります。 「オーバーレイを使用しない」という制限は、すべてのお客様が最新の機能と修正プログラムを利用できるように、アップデートが簡単で常に最新のバージョンで稼働するクラウドサービスをお客様に提供することに向けて、製品を進化させていく上で重要な部分です。
 
-コードを 8.0 以降にアップグレードした後、コンパイルを行うと、オーバーレイを使用するカスタマイズが残っている場合、エラーが発生します。 コードのリファクタリングを行うには、オーバーレイされているモデルのモデル記述子ファイルで一時的にオーバーレイの制限を緩和できます。 この一時的な緩和は、開発環境およびデモ環境でのみ利用できます。スタンダード承認テスト以上のサンドボックス環境や実稼働環境などのランタイム環境には適用できません。 記述子の制限を緩和することで、段階的にコードを拡張機能へとリファクタリングし、コンパイル、実行、テストを行うことができます。 
+Dynamics AX 2012や Dynamics 365 for Finance and Operations バージョン7からコードをアップグレードした後で、オーバーレイを使用するカスタマイズを行った場合、コンパイル時にエラーが発生します。 コードのリファクタリングを行うには、オーバーレイされているモデルのモデル記述子ファイルで一時的にオーバーレイの制限を緩和できます。 この一時的な緩和は、開発環境およびデモ環境でのみ利用できます。スタンダード承認テスト以上のサンドボックス環境や実稼働環境などのランタイム環境には適用できません。 記述子の制限を緩和することで、段階的にコードを拡張機能へとリファクタリングし、コンパイル、実行、テストを行うことができます。 
 
 ## <a name="detailed-process"></a>詳細なプロセス
 モデルの制限を緩和するには、以下の手順を実行します。 この手順は、クラウド環境で実行することも、ローカルの仮想マシン (VM) で実行することもできます。
 
-1. Dynamics 365 for Finance and Operations 8.0 開発環境を配置します。 
+1. Finance and Operations アプリの開発環境を展開します。 
 2. Lifecycle Services (LCS) のコード アップグレード サービスを実行して、ソリューションをアップグレードします。
 3. コンパイルできるように、必要に応じて Microsoft のモデルでのオーバーレイを一時的に許可します。
     

@@ -2,7 +2,7 @@
 title: 顧客リベートの生成および処理
 description: この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 87ddaddb00da50ef9e9e1e7ecf7c3620dabb5a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3148587"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209953"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 

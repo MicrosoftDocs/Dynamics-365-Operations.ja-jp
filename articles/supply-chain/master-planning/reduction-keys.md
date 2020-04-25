@@ -2,15 +2,15 @@
 title: 予測下方修正キー
 description: このトピックでは、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 07/09/2019
+manager: tfehr
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814286"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225108"
 ---
 # <a name="forecast-reduction-keys"></a>予測下方修正キー
 
@@ -34,7 +34,7 @@ ms.locfileid: "2814286"
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>予測要求の削減に使用する方法
 
-マスター プランに予測を含める場合、実際の需要が含まれるときに予測要求を削減する方法を選択できます。
+マスター プランに予測を含める場合、実際の需要が含まれるときに予測要求を削減する方法を選択できます。 マスター プランでは、過去から予測要求が除外されます。つまり、今日の日付より前のすべての予測要求が除外されます。
 
 マスター プランに予測を含め、予測要求を減らすために使用される方法を選択するには、**マスター プラン \> 設定 \> プラン \> マスター プラン**の順に移動します。 **予測モデル**フィールドで、予測モデルを選択します。 **予測要求の削減に使用する方法**フィールドで、方法を選択します。 次のオプションを使用できます。
 
