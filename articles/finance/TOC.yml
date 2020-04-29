@@ -70,12 +70,12 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.11 (2020 年 7 月)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (2020 年 5 月)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9 (2020 年 4 月)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8 (2020 年 2 月)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: 労務および経費の標準原価のコンフィギュレーション
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: ペイウェンペイド仕入先支払方法の設定と使用
+              href: project-management/setup-manage-vendor-payments.md
             - name: 購買入庫におけるプロジェクト費用見越し額
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: プロジェクト請求
               href: accounts-payable/project-invoicing.md
             - name: プロジェクト契約
               href: project-management/project-contracts.md
+            - name: 状況に基づいた請求書のアドバンス契約の作成
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: プロジェクトの予測と予算
               href: project-management/project-forecasts-budgets.md
             - name: 会計年度末のプロジェクト予算の転送
@@ -1012,8 +1016,10 @@
                   href: project-management/project-timesheet.md
                 - name: モバイル デバイスでのプロジェクト タイムシート
                   href: project-management/mobile-timesheets.md
-                - name: Project Timesheet モバイル アプリのカスタム フィールドの実装
+                - name: プロジェクト タイムシート モバイル アプリのカスタム フィールドの実装
                   href: project-management/custom-fields-mobile.md
+            - name: プロジェクト交付
+              href: project-management/project-grants.md
         - name: 公的機関
           items:
             - name: 公的機関ホーム ページ
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: 受取手形受取拒否のインポート
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: 税控除
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: 日本
               items:
                 - name: 日本の概要
