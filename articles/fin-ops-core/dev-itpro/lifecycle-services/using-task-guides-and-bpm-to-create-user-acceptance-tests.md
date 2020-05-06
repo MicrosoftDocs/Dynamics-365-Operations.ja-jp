@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 07058f4837e646d531de7379c65f42b37001d799
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 32030c50551ebf4cc6619f692c91f76071b2c799
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248702"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287837"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -30,10 +30,9 @@ ms.locfileid: "3248702"
 
 タスク レコーダーおよびビジネス プロセス モデラー (BPM) を使用して、ユーザー承認テスト ライブラリを作成することができます。 タスク レコーダーは、テスト ケースを記録し、BPM を使用して業務プロセス別に整理する強力なツールです。 Microsoft パートナーは、BPM を使用して LCS および LCS ソリューション経由で顧客にテスト ライブラリを配布することができます。 顧客の場合、BPM を使用し、さまざまなプロジェクトおよびチーム間でテスト ライブラリを作成して配布します。
 
-BPM は Azure DevOps (旧 Visual Studio Team Services) と同期することができるので、Azure DevOps プロジェクトでテスト ケース (テスト ステップを含む) を自動的に作成できます。 その後、Azure DevOps は、対象となるテスト計画およびテスト スイートを作成して、テストの実行を管理し、結果を調査できるテスト構成およびテスト管理ツールとして動作できます。  
+BPM は Azure DevOps (旧 Visual Studio Team Services) と同期することができるので、Azure DevOps プロジェクトでテスト ケース (テスト ステップを含む) を自動的に作成できます。 その後、Azure DevOps は、対象となるテスト計画およびテスト スイートを作成して、テストの実行を管理し、結果を調査できるテスト構成およびテスト管理ツールとして動作できます。 Azure DevOps を使用したテストの詳細については、[テスト計画、テスト スイート、テスト ケースとは?](https://docs.microsoft.com/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases) を参照してください
 
 このトピックでは、手動テストまたは自動テストに使用する承認テスト スイートを作成および実行するプロセスについて説明します。
-
 
 ## <a name="create-a-scenario-acceptance-testing-bpm-library"></a>シナリオ承認テスト BPM ライブラリの作成
 BPM は、業務プロセスおよびユーザー タスクの階層を記述する優れた LCS ツールです。 LCS では Microsoft パートナーおよび顧客がアセット ライブラリ経由で LCS プロジェクト間の BPM ライブラリを作成し配布することもできます。 このセクションでは、承認テスト ライブラリを定義する BPM を活用する方法を説明します。

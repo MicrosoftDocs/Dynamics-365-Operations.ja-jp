@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 8297daa0d802b0b821b43aebe7a841011c70fd55
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: fdf4464e5b6fc6f2f4b99dcac80eb199799bf13d
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261191"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268773"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a> Dynamics 365 Supply Chain Management 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
@@ -43,13 +43,13 @@ ms.locfileid: "3261191"
 - [倉庫管理のラベル印刷拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management) - 詳細については、[ライセンス プレート ラベルのドキュメント ルーティング レイアウト](../warehousing/document-routing-layout-for-license-plates.md) を参照してください。
 - [マスター プランには、事前処理フィルタが有効になっている場合に手持在庫がある品目が含まれます](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 - [製造領域の新しいデータ エンティティ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [倉庫プロセスに対する品質管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
+- [倉庫プロセスの品質管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes) - 詳細については、[倉庫プロセスの品質管理](../inventory/quality-management-for-warehouses-processes.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリの Platform updates
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Supply Chain Management 10.0.10 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 に対する Platform update](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。
+Dynamics 365 Supply Chain Management 10.0.10 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

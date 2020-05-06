@@ -3,7 +3,7 @@ title: カスタム フィルター グループのサブパターン
 description: このトピックでは、カスタム フィルター グループのサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd6d356f879d50407dc31cd2f7060d1c7df39761
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 71d873741b9df57a612831812406b07976f09416
+ms.sourcegitcommit: 6dd2a77cae05b5b634943e4f37b7cb33c7f1da15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658848"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281526"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 
@@ -46,7 +46,9 @@ ms.locfileid: "2658848"
 -   **カスタムおよびクイック フィルター**  – このサブパターンでは、QuickFilter コントロールは必須です。
 
 ## <a name="wireframes"></a>ワイヤーフレーム
-### <a name="custom-filterscustom-filtersmediacustomfiltergroup1pngmediacustomfiltergroup1png"></a>カスタム フィルター [カスタム フィルター](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+### <a name="custom-filters"></a>カスタム フィルター
+
+[![カスタム フィルター](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### <a name="custom-and-quick-filters"></a>カスタムおよびクイック フィルター
 

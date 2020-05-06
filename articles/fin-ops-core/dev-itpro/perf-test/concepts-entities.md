@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 26b264f4caa4b14851528dbabd98da10ddcaaa52
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a546c89c9d713493545b53084dcc6a930079b90d
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026254"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270301"
 ---
 # <a name="entities-in-the-acceptance-test-library"></a>承認テスト ライブラリのエンティティ
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 テスト エンティティ クラスは、単一の概念として認識されるデータと動作を表します。 テスト エンティティ クラスは **販売注文**、**移動オーダー**、そして **リリースされた製品** のようなページに基づいています。 テスト エンティティ クラスは、テスト シナリオで最も頻繁に使用されるプロパティと、テスト データの設定やシナリオ テストの観点から最も重要な動作を公開します。
 

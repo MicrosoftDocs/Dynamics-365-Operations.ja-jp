@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172880"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275467"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング
 
@@ -85,9 +85,8 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 > 次の手順に従い、エンティティを削除してから再度追加するプロセスを実行します。 問題を回避するには、手順を正確に守ってください。
 
 1. Finance and Operations アプリで、**ワークスペース  \> データ管理** に移動し **、データ エンティティ** タイルを選択します。
-2. フィールドが欠落しているエンティティを検索します。 対象のエンティティ、ステージング テーブル、ステージング エンティティ、およびその他の列の値をメモしておきます。
-3. 処理グループがこのエンティティに依存している場合は、エンティティを削除する前に、処理グループに対して適切な処理を行ってください。
-4. フィールドが欠落しているエンティティを削除します。
-5. **新規** を選択し、エンティティを再度追加します。 手順 2 でメモした値を指定します。
-6. Finance and Operations アプリにて **デュアル書き込み** ページの **エンティティ マッピング** ページを開きます。
-7. **エンティティ リストの更新** を選択すると、エンティティ マッピングのフィールドが自動的に入力されます。
+2. 属性が欠落しているエンティティを検索します。 ツールバーの **ターゲット マッピングの変更** をクリックします。
+3. **ステージングをターゲットにマッピング** ウィンドウで、**マッピングの生成** をクリックします。
+4. Finance and Operations アプリにて **デュアル書き込み** ページの **エンティティ マッピング** ページを開きます。
+5. マッピング上で属性が自動設定されていない場合は、**属性の追加** ボタンをクリックして手動で追加し、**保存** をクリックします。 
+6. マッピングを選択し、**実行** をクリックします。

@@ -3,7 +3,7 @@ title: 予測下方修正キー
 description: このトピックでは、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
 author: roxanadiaconu
 manager: tfehr
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 6191b4809c3785d92395bec1b7d51bfc978f9245
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225108"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262699"
 ---
 # <a name="forecast-reduction-keys"></a>予測下方修正キー
 
@@ -222,7 +222,7 @@ ms.locfileid: "3225108"
 
 ## <a name="reduce-a-forecast-by-transactions"></a>トランザクションによる予測の削減
 
-予測要求の削減のメソッドとして**トランザクション - 下方修正キー**または**トランザクション - 動的期間**を選択すると、予測を削減するトランザクションを指定できます。 **リリース済製品**ページの、**その他**クイック タブ、**予測の削減方法**フィールドで、すべてのトランザクションで予測を削減する必要がある場合は**すべてのトランザクション**を、または販売注文のみで予測を削減する必要がある場合は**注文**を選択します。
+予測要求の削減のメソッドとして**トランザクション - 下方修正キー**または**トランザクション - 動的期間**を選択すると、予測を削減するトランザクションを指定できます。 **補充グループ** ページの、**その他** クイック タブにある、**予測の削減方法** フィールドで、すべてのトランザクションで予測を削減する必要がある場合は **すべてのトランザクション** を、または販売注文のみで予測を削減する必要がある場合は **販売注文** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 

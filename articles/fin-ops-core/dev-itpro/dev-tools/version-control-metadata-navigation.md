@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1259f696e4389415b47141f9a6003ed668b544d9
-ms.sourcegitcommit: dca6ac616b901f33ad278dfd9c7ef55b7c898840
+ms.openlocfilehash: 00daee4483beb43ac247d8c9bd7a475fc0135503
+ms.sourcegitcommit: d551e5a3cbcb5dd8c2a673b4029755fa6a187689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225489"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3266619"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -45,12 +45,12 @@ ms.locfileid: "3225489"
 
 2.  Azure DevOps アカウントを作成し、アカウントの URL を選択します。 これは、Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL です。 次は、アカウント URLの例です。 
 
-    [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
+    ![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)
 
     アカウントが作成されると、アカウントのメイン ページに進むように指示され、そこで最初のプロジェクトの作成を求められます。
 3.  デモ**フリート管理**プロジェクトを作成します。 
 
-    [![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)](./media/firstproject_usingdevotools.png)
+    ![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)
 
 ### <a name="create-a-azure-devops-team-project"></a>Azure DevOps チーム プロジェクトの作成
 
@@ -59,7 +59,7 @@ Azure DevOps アカウントを既に持っている場合は、Internet Explore
 1. <https://www.visualstudio.com/> に移動します。
 2. **最近使用したプロジェクトとチーム** で **新規** をクリックして新しいプロジェクトを作成します。 
 
-   [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
+   ![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)
 
 3. **プロジェクト名**フィールドに、**フリート管理**と入力し、**説明**を入力してから**プロジェクトの作成**をクリックします。
 
@@ -67,7 +67,7 @@ Azure DevOps アカウントを既に持っている場合は、Internet Explore
 
 Lifecycle Services (LCS) 自動化コードのアップグレード ツールを使用して以前のバージョンからコードを移行した場合、以下のフォルダ構造は、Azure DevOps チーム プロジェクトで自動的に作成されます。 
 
-[![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
+![VSOfolders](./media/vsofolders1.png)
 
 **メタデータ**フォルダーには、パッケージとモデルによって整理されたソース XML ファイルがあり、**プロジェクト**フォルダーには Visual Studio プロジェクトが含まれています。 コードを移行せず、最初から開始している場合、開発を開始する前に、チーム プロジェクト内のサーバーに類似したフォルダ構造を作成します。
 
@@ -86,7 +86,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 7.  **チーム プロジェクト** で **フリート管理** チェック ボックスをオンにし、**接続** をクリックします。 
 
-    [![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)](./media/connecttfsserver_usingdevotools.png)
+    ![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)
 
 ### <a name="map-your-azure-devops-project-to-your-local-model-store-and-projects-folder"></a>Azure DevOps プロジェクトをローカルのモデル ストアとプロジェクト フォルダーにマップ
 
@@ -99,7 +99,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     > [!NOTE]
     > マシンの構成によっては、モデル ストアが I:\\AosService\\PackagesLocalDirectory または別のドライブの配下にある場合があります。
 
-    [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
+    ![VSOfolders2](./media/vsofolders21.png)
 
 4. **マップ**をクリックし、次のダイアログ ボックスで、**No** をクリックします。
 5. 同様に、**/Trunk/Main/Projects** サーバー フォルダーを、Visual Studio ソリューションとプロジェクト ファイルを保持する **ローカル プロジェクト フォルダー** にマッピングします。
@@ -126,7 +126,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     > [!NOTE]
     > サーバープロジェクト フォルダ を FleetManagement ソリューションを含むローカルフォルダに既にマッピングしている場合は、手順2 と 3 を省略します。
 
-    [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
+    ![VSOfolders3](./media/vsofolders31.png)
 
 4.  [OK] をクリックします。
 5.  **チーム エクスプ ローラー &gt; 保留中の変更**に移動し、**チェックイン**をクリックして、ソリューションおよびモデル要素が Azure DevOps ソース管理にチェックインするようにします。
@@ -226,7 +226,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 2. **メタデータ検索**ウィンドウの**検索**フィールドに、次のテキストを入力して会社間クエリを含むアプリケーション スイート モデルのすべてのテーブル挿入メソッドを検索します。 *type:table,method name:insert code:"crosscompany" model:"Application Suite"*
 3. 検索が完了するまで待ちます。 これにはしばらく時間がかかる場合があります。 
 
-   [![MetadataSearchResults\_UsingDevoTools](./media/metadatasearchresults_usingdevotools.png)]    (./media/metadatasearchresults_usingdevotools.png)
+   ![MetadataSearchResults\_UsingDevoTools](./media/metadatasearchresults_usingdevotools.png)
 
 4. リスト内の結果をダブルクリックします。 コード エディターが開き、検索条件に一致する行にカーソルを移動します。
 5. Ctrl キーを押しながら複数選択することで結果リストで複数の要素を選択し、右クリックして **新しいプロジェクトに追加** を選択します。 これにより、選択した要素を含む新しいソリューションとプロジェクトを作成できます。
@@ -269,23 +269,23 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 ![Addtoproject\_UsingDevoTools](./media/addtoproject_usingdevotools.png)
 
-<a name="use-application-explorer-to-create-a-project-from-a-model"></a>アプリケーション エクスプローラーを使用してモデルからプロジェクトを作成
----------------------------------------------------------
+## <a name="use-application-explorer-to-create-a-project-from-a-model"></a>アプリケーション エクスプローラーを使用してモデルからプロジェクトを作成
 
 アプリケーション エクスプ ローラーを使用して、モデルのすべてまたは一部の要素を検索し、検索結果からプロジェクトを作成することができます。
 
-1.  要素のタイプでプロジェクトを整理するためのオプションがオンになっていることを確認します。 **Dynamics 365** &gt; **オプション** &gt; **プロジェクト**の順に移動します。
-2.  アプリケーション エクスプローラーに移動し、目的のモデル内の要素を検索します。 たとえば、*モデル:「フリート管理」*を入力し、**入力**をクリックします。
+1.  要素のタイプでプロジェクトを整理するためのオプションがオンになっていることを確認します。 **Dynamics 365** \> **オプション** \> **プロジェクト**の順に移動します。
+2.  アプリケーション エクスプローラーに移動し、目的のモデル内の要素を検索します。 たとえば、*モデル: "フリート管理"* を入力し、**入力** をクリックします。
 
     [![AppExplorerModelSearch](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
-3.  検索が完了したら、AOT ルート ノードを右クリックし、*検索結果を新規プロジェクトに追加しますを選択します。
+3.  検索が完了したら、AOT ルート ノードを右クリックし、**新しいプロジェクトへの検索結果の追加** を選択します。
 
-    [![AddSearchResultsToNewProject](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)*
+    [![AddSearchResultsToNewProject](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
 
 4.  新しいプロジェクト ダイアログ ボックスでプロジェクトのプロパティを指定し、**OK** をクリックしてプロジェクトを作成します。
 
-**ヒント:** 検索結果からプロジェクトを作成するには、すべての結果が同じモデル内にある限り、任意のタイプ、名前、またはその他のフィルタを検索に追加できます。 例: *モデル:「フリート管理」 タイプ:テーブル名:^FM* は、文字 FM で始まる名前を持つフリート管理モデルで、すべてのテーブルを返します。
+    > [!TIP]
+    > 検索結果からプロジェクトを作成するには、すべての結果が同じモデル内にある限り、任意のタイプ、名前、またはその他のフィルタを検索に追加できます。 例: *モデル:「フリート管理」 タイプ:テーブル名:^FM* は、文字 FM で始まる名前を持つフリート管理モデルで、すべてのテーブルを返します。
 
 
 

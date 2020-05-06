@@ -3,7 +3,7 @@ title: Retail Cloud Scale Unit の初期化
 description: このトピックでは、Retail Cloud Scale Unit を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 82b5e93052e0f55295b72d1b4bdfba0290560e3b
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d442bbcd38d6ba193af1f98f0fd4f72bd45dead1
+ms.sourcegitcommit: dad55d78c46278c9b27c7a37667b0317dede5eb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057975"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3286728"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 
@@ -31,7 +31,7 @@ ms.locfileid: "3057975"
 このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
 
 > [!IMPORTANT]
-> クラウドで Retail チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、2020 年 1 月 31 日までに Cloud Scale Unit を使用する Retail チャネルの更新を行う必要があります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
+> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Cloud Scale Unit を使用する小売チャネルの更新を行う必要があります。 Cloud Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。  延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 

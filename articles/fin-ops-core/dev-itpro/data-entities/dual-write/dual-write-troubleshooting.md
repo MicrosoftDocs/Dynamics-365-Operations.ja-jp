@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172694"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275653"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -70,14 +70,12 @@ Package Deployer ツールをインストールした後、次の手順に従っ
 トレースログを確認にするには、次の手順に従います。
 
 1. Finance and Operations アプリにログインし、**設定** ページを開いて、**カスタマイズ** 配下の**プラグイン トレース ログ** を選択します。
-2. **タイプ名** フィールドが **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**に設定されているトレース ログを検索します。
+2. **タイプ名** フィールドが **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**に設定されているトレース ログを検索します。
 3. 完全なログを表示するには、項目をダブルクリックし、**実行**ファストタブで **メッセージ ブロック** のテキストを確認します。
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、アプリ Finance and Operations でのライブ同期に関する問題のトラブルシューティングを行います。
 
-**エラーを表示するために必要な役割：** システム管理者
-
-Common Data Serviceで発生するデュアル書き込みエラーは、Finance and Operationsアプリでも発生する場合があります。 エラーメッセージの完全なテキストが表示されない場合がありますが、これはメッセージが長すぎるか個人の識別情報 (PII) が含まれていることが原因です。 エラーの詳細ログを有効にするには、次の手順を実行してください。
+**エラーを表示するために必要な役割：** Common Data Service で発生したシステム管理のデュアル書き込みエラーは、Finance and Operations アプリに表示される場合があります。 エラーメッセージの完全なテキストが表示されない場合がありますが、これはメッセージが長すぎるか個人の識別情報 (PII) が含まれていることが原因です。 エラーの詳細ログを有効にするには、次の手順を実行してください。
 
 1. Finance and Operations アプリにおけるすべてのプロジェクトの構成は、**DualWriteProjectConfiguration** エンティティ内に **IsDebugMode** プロパティが存在します。 Excel アドインを使用して **DualWriteProjectConfiguration** エンティティを開きます。
 
@@ -104,7 +102,7 @@ Common Data Serviceで発生するデュアル書き込みエラーは、Finance
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Finance and Operations アプリの Common Data Service 環境のリンクを解除し、他の環境をリンクする
 
-**環境のリンクの解除に必要な資格情報：** Azure ADテナント管理者
+**環境のリンクの解除に必要な役割：** Finance and Operations アプリ、または Common Data Service のいずれかのシステム管理者。
 
 1. Finance and Operations アプリにサインインします。
 2. **ワークスペース \> データ管理**に移動して、**デュアル書き込み**のタイルを選択します。
@@ -113,3 +111,13 @@ Common Data Serviceで発生するデュアル書き込みエラーは、Finance
 5. **はい**を選択して操作を確認します。
 
 環境に新たなリンクを設定することができるようになります。
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>販売注文明細行の情報フォームを表示できない 
+
+Dynamics 365 Sales で販売注文を作成する際に、 **製品の追加** をクリックすると、Dynamics 365 プロジェクト オペレーションの注文明細行フォームにリダイレクトされる場合があります。 このフォームでは、販売注文明細行の **情報** フォームを表示することはできません。 **新規注文明細行** 配下のドロップダウン リストには、**情報** のオプションが表示されません。 これが発生するのは、プロジェクト オペレーションがご利用の環境にインストールされているためです。
+
+**情報** フォームのオプションを再度有効にするには、次の手順を実行してください：
+1. **注文明細行** エンティティに移動します。
+2. フォーム ノード配下の **情報** フォームを確認します。 
+3. **情報** フォームを選択し、**セキュリティロールの有効化** をクリックします。 
+4. **すべてのユーザーに表示** されるようにセキュリティ設定を変更します。

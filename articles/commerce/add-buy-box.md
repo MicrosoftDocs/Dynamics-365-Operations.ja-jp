@@ -3,7 +3,7 @@ title: 購入ボックス モジュール
 description: このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261401"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269754"
 ---
 # <a name="buy-box-module"></a>購入ボックス モジュール
 
@@ -80,15 +80,15 @@ ms.locfileid: "3261401"
 1. **購入ボックス フラグメント**という名前のフラグメントを作成し、それに購入ボックス モジュールを追加します。
 1. 購入ボックス モジュールの**メディア** スロットで、メディア ギャラリー モジュールを追加します。
 1. 購入ボックス モジュールの**ストア セレクタ―** スロットで、ストア セレクター モジュールを追加します。
-1. ページをチェックインしてから公開します。
+1. **保存** を選択し、 **編集の完了** を選択してフラグメントにチェックインし、**発行** を選択して公開します。
 1. 製品の詳細ページのテンプレートを作成し、**PDP テンプレート**という名前を付けます。
 1. 既定のページを追加します。
 1. 既定ページの**メイン** スロットで、購入ボックス フラグメントを追加します。
-1. テンプレートを保存し、編集を終了して、公開します。
+1. **保存** を選択し、 **編集の完了** を選択してテンプレートをチェックインし、**発行** を選択して公開します。
 1. 作成したテンプレートを使用して、**PDP ページ**という名前のページを作成します。
 1. 新しいページの**メイン** スロットで、購入ボックス フラグメントを追加します。
 1. ページを保存してプレビューします。 **?productid=&lt;product id&gt;** クエリ文字列パラメーターをプレビュー ページの URL に追加します。 このようにして、製品コンテキストを使用してプレビュー ページの読み込みと表示を行います。
-1. ページを保存し、編集を終了してから、公開します。 製品の詳細ページに、購入ボックスが表示される必要があります。
+1. **保存** を選択し、 **編集の完了** を選択してページにチェックインし、**発行** を選択して公開します。 製品の詳細ページに、購入ボックスが表示される必要があります。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -3,7 +3,7 @@ title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/21/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ce13ad0fd32f7dc95ca6f9092c30c2381c7ee3e
-ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
+ms.openlocfilehash: e5024ae075e967a7e7f9a71bdb00d8e4687b85e7
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2982350"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287838"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -58,7 +58,7 @@ ms.locfileid: "2982350"
 <td>送信メール サーバー</td>
 <td>目的の SMTP サーバーのホスト名。
 <ul>
-<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 製品</a> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
+<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 製品</a> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
 <li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
 </ul>
 </td>
@@ -69,7 +69,7 @@ ms.locfileid: "2982350"
 </tr>
 <tr>
 <td><strong>ユーザー名</strong>と<strong>パスワード</strong></td>
-<td>必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。 すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。 Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a>を参照してください。</td>
+<td>必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。 すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。 [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a> を参照してください。</td>
 </tr>
 <tr>
 <td>SSL が必須かどうかを指定します</td>
@@ -95,7 +95,7 @@ ms.locfileid: "2982350"
 | フィールド             | 説明 |
 |-------------------|-------------|
 | 電子メール プロバイダー ID | ユーザーは、電子メールを送信するときに使用する電子メール プロバイダーを選択できます。 ここでオプションを選択することは、**どのように電子メール送信しますか** ダイアログ ボックスで **今後確認しない** をオンにするのと同じです。 空白のオプション **使用する電子メール プロバイダーの入力を求める** を選択すると、メールが送信されるときに **電子メールを送信する方法** ダイアログ ボックスが表示されます。 |
-| 電子メール             | ユーザーが電子メールの**ソース**フィールドの電子メール アドレスの上書きを提供できるようにします。 既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの**ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。 SMTP で電子メールを送信するとき、ユーザーは適切な **Send As**および **Send On Behalf Of** アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。<blockquote>[!NOTE] **Send As** および **Send On Behalf Of** 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する**で構成することができます。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。</blockquote> |
+| 電子メール             | ユーザーが電子メールの**ソース**フィールドの電子メール アドレスの上書きを提供できるようにします。 既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの**ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。 SMTP で電子メールを送信するとき、ユーザーは適切な **Send As**および **Send On Behalf Of** アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。<blockquote>[!NOTE] **送信者** および **代理送信** 権限は、 Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。</blockquote> |
 
 ## <a name="user-optional-how-would-you-like-to-send-email-dialog-box"></a>ユーザー (省略可): 電子メール ダイアログ ボックスをどのように送信しますか
 
@@ -143,7 +143,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 2. **SMTP 設定**をクリックします。
 3. **送信メール サーバー** を要求された SMTP サーバーに設定します。
 
-    - [Office 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)
+    - [Microsoft 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)
     - Outlook/Hotmail で smtp-mail.outlook.com を使用します。
 
 4. ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
@@ -261,7 +261,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
     
 4. プラットフォーム更新 32 では、**メール履歴** ページが追加されており、送信を防ぐことができたかもしれないメールのエラーなど、管理者がすべての送信済みメールを確認することができます。 **メール履歴** ページは、対話と、非対話 / バッチメールを表示します。 **メール ステータス** が **エラー** となっているメールに対しては、**エラー詳細** タブでエラー メッセージをレビューして、必要な処置を取るべきかどうかを決定します。
 
-5. Office 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **Send As** と **Send On Behalf Of** アクセス許可があることを確認します。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。
+5. Microsoft 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する **送信者** と **代理送信** アクセス許可があることを確認します。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。
 6. すべてのユーザー メールボックスにサインインして、メールボックスが有効で、サインインを使用してアクセスできることを確認します。
 7. **システム管理** \> **設定** \> **電子メール** \> **電子メールのパラメータ** \> **テスト電子メール** を使用してテスト電子メールを送信します。
 8. SMTP 設定を別の環境から移行した場合は、パスワード フィールドをクリアしてパスワードを再入力し、フィールドの暗号化が保存された値に悪影響を与えていないことを確認します。

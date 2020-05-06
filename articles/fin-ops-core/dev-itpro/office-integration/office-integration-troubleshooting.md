@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94fec2a29d413b7ed9cbf7d65b984d3a36c0af34
-ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
+ms.openlocfilehash: fee8f9eb2842561e76433711a522d54219ae9757
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "3257074"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287835"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -52,11 +52,11 @@ No. Apple Mac および iOS のサポートは、現在開発中です。 Office
 
 ### <a name="how-can-i-force-an-update-of-office"></a>どのように Office の更新を強制できますか。
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft Office 365 ProPlus 更新チャネル オプション](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
 
 ### <a name="why-cant-you-tell-me-what-version-of-office-or-excel-a-particular-issue-is-fixed-in"></a>どのバージョンの Office または Excel で特定の問題が修正されたか知ることができないのはなぜですか。
 
-Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office バージョンの詳細については、「[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396)」ページを参照してください。
+Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office のバージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) を参照してください。
 
 ### <a name="why-am-i-having-trouble-signing-into-the-excel-add-in"></a>Excel アドインへのサインインに問題が生じるのはなぜですか。
 
@@ -121,7 +121,7 @@ Office ストアへの戻しが必要な場合、標準値は次のとおりで�
 
 一部のユーザーに一元化配置で問題が発生した場合は、次のいずれかの問題が考えられます:
 -   グループの 1 人以上のユーザーが、他よりも制限が厳しいメンバー
--   参照されたユーザーが別の Office 365 アカウント (個人アカウントなど) にある
+-   参照されたユーザーが別の Microsoft 365 アカウント (個人アカウントなど) にある
 
 ### <a name="what-is-the-cell-limit-for-the-excel-add-in"></a>Excel アドインのセル制限は何ですか。
 
@@ -169,16 +169,16 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **説明:** この問題は、通常、電子メール アカウントの送信者アクセス許可が正しく設定されていないために発生します。 
 
-**修正**: Office 365 管理者センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションすることができます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する**の順にクリックします。 詳細については、「[Office 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。 
+**修正:** Microsoft 365 管理センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションできます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する**の順にクリックします。 詳細については、[Microsoft 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。 
 
 次の図は、**電子メール パラメーター** ページでの SMTP の設定を示しています。 ここで、送信メール サーバー、ポート、ユーザー名、パスワード、および Secure Sockets Layer (SSL) の要件を指定する必要があります。 
 
 [![電子メール パラメータ ページ上の SMTP 設定タブ](./media/smtp.png)](./media/smtp.png)
 
 > [!IMPORTANT]
-> すべてのユーザーは、SMTP アカウントに Office 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Office 365 Admin ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
+> すべてのユーザーは、SMTP アカウントに Microsoft 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Microsoft 365 管理ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
 
-[![Office 365 で送信者アクセス許可を付与されている SMTP アカウント](./media/o365.png)](./media/o365.png)
+[![Microsoft 365 で送信者アクセス許可を付与されている SMTP アカウント](./media/o365.png)](./media/o365.png)
 
 ### <a name="fixed-issue-the-office-add-ins-dont-yet-support-ad-fs"></a>\[固定\] 問題: Office アドインでは、まだ AD FS をサポートしていない
 
@@ -190,9 +190,9 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
 
-**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2))。 更新プログラムの詳細については、「[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396)」ページを参照してください。 
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2))。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft Office 365 ProPlus 更新チャネル オプション](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](https://technet.microsoft.com/library/cc303401(v=office.16).aspx) を参照してください。 
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](https://technet.microsoft.com/library/cc303401(v=office.16).aspx) を参照してください。 
 
 Office の更新プログラムをインストールできない場合、次の回避策を実行するとユーザーのブロックを解除できます。
 

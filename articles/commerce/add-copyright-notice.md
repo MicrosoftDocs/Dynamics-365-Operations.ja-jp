@@ -3,7 +3,7 @@ title: 著作権に関する注意事項の追加
 description: このトピックでは、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025485"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269593"
 ---
 # <a name="add-a-copyright-notice"></a>著作権に関する注意事項の追加
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ ms.locfileid: "3025485"
 1. ダイアログ ボックスで、**テキスト ブロック**を選択し、**OK** を選択します。
 1. 左のナビゲーション ウィンドウで、**テキスト ブロック**を選択します。
 1. 右側のプロパティ ウィンドウの、**段落**フィールドで、著作権に関するメッセージを追加します。 たとえば、**(C) Fabrikam 2019** と入力します。
-1. **保存**を選択し、**チェックイン**を選択してから、**公開**を選択します。
-1. **テンプレート**に移動し、テンプレートを選択してから、**チェックアウト**を選択します。
+1. **保存** を選択し、**編集を終了する** を選択し、続いて **公開** を選択します。
+1. **テンプレート** に移動し、テンプレートを選択してから、**編集** を選択します。
 1. **ページ アウトライン**で、**本文**を展開してから、**既定のページ**を展開します。
 1. **フッター スロット**の横にある省略記号ボタンを選択し、**フラグメントの追加**を選択します。
 1. 前に作成したフラグメントを選択し、**選択**を選択します。
-1. テンプレートをチェックインし、公開します。
+1. **編集の完了**  を選択してテンプレートをチェックインし、 **発行** を選択して公開します。
 
 著作権に関する注意事項を含むフッターは、選択したテンプレートを使用するすべてのページの下部に自動的に表示されます。
 

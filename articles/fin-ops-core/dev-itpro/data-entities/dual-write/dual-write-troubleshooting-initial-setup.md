@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275444"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期設定中に発生した問題に関するトラブルシューティング
 
@@ -39,7 +39,7 @@ ms.locfileid: "3172671"
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Finance and Operations アプリを Common Data Service にリンクさせることはできません。
 
-**デュアル書き込みの設定に必要な資格情報：** Azure ADテナント管理者
+**デュアル書き込みの設定に必要なロール:** Finance and Operations アプリと Common Data Service 両方のシステム管理者権限。
 
 一般的には、 **Common Data Serviceへのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、**Common Data Serviceへのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
 

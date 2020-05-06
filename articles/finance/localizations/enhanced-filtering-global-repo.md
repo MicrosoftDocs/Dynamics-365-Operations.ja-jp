@@ -1,9 +1,9 @@
 ---
-title: RCS/グローバル レポジトリの拡張フィルター処理
+title: RCS/グローバル レポジトリの強化されたフィルター処理
 description: このトピックでは、追加フィルターを含むように改善された RCS グローバル レポジトリの拡張フィルター処理機能について説明します。
 author: JaneA07
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,35 +18,31 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1adbd690795139778dc77a574e9d5f91a4bdeb3c
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 1913b661c46af5e34da1a2939cb2a5d5b4e46411
+ms.sourcegitcommit: 7df49a85de484d013518217ba8ada6c61da4b6e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249168"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287942"
 ---
-# <a name="enhanced-filtering-options-for-finding-configurations-in-the-global-repository"></a>グローバル レポジトリのコンフィギュレーション検索のための拡張フィルター処理オプション
+# <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a>RCS では、RCS/グローバル リポジトリで構成を見つけるフィルタリング オプションを強化しました
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、次のフィルターを含むように改善された、Regulatory Configuration Services (RCS) グローバル レポジトリの拡張フィルター処理機能について説明します。 
-- **国/地域** - ISO 国コードに基づく  
-- **タグ** - 機能/機能領域 ; 業種 ; ビジネス ドキュメント タイプ用 
+このトピックでは、次のフィルターを含むように改善された、Regulatory Configuration Services (RCS) グローバル レポジトリの拡張フィルター処理機能について説明します： 
+- **国/地域** ― ISO 国コードに基づく  
+- **タグ** 次のタイプ：
+  - 職務分野
+  - 機能領域
+  - 業界 
+  - ビジネス ドキュメント 
 
-個別にまたはグループ別のいずれかでフィルターを適用して、特定または関連するコンフィギュレーションを検索できます。 たとえば、仕入先請求書に関連したすべてのコンフィギュレーション可能なビジネス ドキュメントを検索するには、**ビジネス ドキュメント タイプ** フィルターを適用できます。 
-
-国コードを選択して、**フィルターを適用する**をクリックすることによってさらに絞り込んだ検索ができます。  
+特定の構成や関連する構成を見つけやすくするために、個別に、またはグループとしてフィルタを適用することができます。 例えば、「仕入先請求書に関連する構成可能なビジネス文書」という単一のタイプの文書を検索するには、**ビジネス ドキュメント タイプ** のフィルタを適用することで、そのタイプの文書を検索することができます。 
 
 [![グローバル レポジトリのフィルター セクション](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG) 
 
-次の例では、**ビジネス ドキュメント タイプ**でフィルター処理した場合の結果を表示します。 
+[仕入先請求書] などのドキュメントタイプを選択し、**フィルターの適用** をクリックすることで、検索をさらに絞り込むことができます。 次の例では、**ビジネス ドキュメント タイプ** でフィルター処理した場合の結果を表示します。 
 
 [![フィルターを適用してビジネス ドキュメント タイプをインポートする](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
-フィルター処理された結果は、ユーザー RCS または Dynamics 365 Finance 環境に、個別にまたは (コンフィギュレーションのグループを選択することによって) セットとして**インポート**をクリックしてインポートできます。
-
-
-
-
-
-
+フィルタ処理された結果は、個別に、またはセットとして、ユーザーの RCS リポジトリまたは Dynamics 365 Finance 環境にインポートできます。 これを行うには、構成のグループを選択し、**インポート** をクリックします。

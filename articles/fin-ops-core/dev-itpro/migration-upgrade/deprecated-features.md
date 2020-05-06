@@ -3,7 +3,7 @@ title: 以前のリリースの削除済みまたは非推奨の機能
 description: このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225131"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284017"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -230,7 +230,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | 一連番号 |
 | **影響を受ける製品領域**         | 製品情報管理 |
 | **配置オプション**              | すべて  |
-| **ステータス**                         | Finance and Operations 10.0.0 および更新プログラム 24 から削除されました。 (リリースされた製品の主キーの以前の名前変更によって発生したデータの破損を修復する必要がある場合にのみ、この制限の一時的な削除を要求するには、Microsoft サポートに問い合わせてください。) |
+| **ステータス**                         | Finance and Operations 10.0.0 および更新プログラム 24 から削除されました。|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 プラット更新プログラム 23
@@ -267,7 +267,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | 今後、この警告はコンパイル エラーに置き換えられます。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨: 今後、警告はコンパイル時のエラーになります。 この変更は、Finance and Operations アプリのバージョン 10.0.11 のプラットフォーム更新プログラムを対象としています。 |
+| **ステータス**                         | 非推奨: この警告は、Finance and Operations アプリのバージョン 10.0.11 のプラットフォーム アップデートでコンパイル時に発生するエラーです。 |
 
 #### <a name="complete-list"></a>完全なリスト
 推奨されない API の完全なリストにアクセスするには、[メソッドおよびメタ データ要素の廃止](deprecation-deletion-apis.md)を参照してください。

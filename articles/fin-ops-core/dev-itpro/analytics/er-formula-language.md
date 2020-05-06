@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042714"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284359"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
 [!include [banner](../includes/banner.md)]
 
-電子申告 (ER) では、強力なデータ変換経験を提供します。 ER フォーミュラ デザイナーで必要なデータ操作を表すために使用される言語は、Microsoft Excel の数式言語に似ています。
+電子申告 (ER) では、強力なデータ変換経験を提供します。 [ER フォーミュラ デザイナー](general-electronic-reporting-formula-designer.md) で必要なデータ操作を表すために使用される言語は、Microsoft Excel の数式言語と共通しています。
 
 ## <a name="basic-syntax"></a>基本構文
 
@@ -41,13 +41,13 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 - [パス](#Paths)
 - [関数](#Functions)
 
-## <a name="Constants">定数</a>
+## <a name=""></a><a name="Constants">定数</a>
 
 式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、`VALUE ("100") + 20` の式では、数値定数 **20** および文字列定数 **"100"** を使用し、**120** という数値を返します。
 
 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、`"Leo Tolstoy ""War and Peace"" Volume 1"` の式は、**レフ トルストイ "戦争と平和" ボリューム 1** というテキスト文字列を返します。
 
-## <a name="Operators">演算子</a>
+## <a name=""></a><a name="Operators">演算子</a>
 
 次の表に、加算、減算、乗算、除算などの基本的な数学演算の実行に使用できる算術演算子を示します。
 
@@ -91,7 +91,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 式に同じ優先順位を持つ複数の連続した演算子が含まれている場合は、これらの操作は左から右に評価されます。 たとえば、`1 + 6 / 2 \* 3 > 5` の式は **true** を返します。 式の閲覧や管理を簡単にするよう、式で操作する希望の順序を明示的に示すために、かっこを使用することをお勧めします。
 
-## <a name="References">参照</a>
+## <a name=""></a><a name="References">参照</a>
 
 式の設計中に使用できる現在の ER コンポーネントのすべてのデータ ソースは名前付き参照を使用できます。 現在の ER コンポーネントは、モデル マッピングまたは形式のいずれかです。 たとえば、現在の ER モデル マッピングには **ReportingDate** データ ソースが含まれ、*DateTime* データ型の値を返します。 生成ドキュメントでその値を正しく書式設定するために、`DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")` の式のデータ ソースを参照できます。
 
@@ -112,7 +112,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 - このタイプのメソッドに、定数だけを渡すことができます。 定数の値は、デザイン時に定義されます。
 - このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 プリミティブ データ型には、*整数*、*実数*、*ブール値*、および*文字列*が含まれます。
 
-## <a name="Paths">パス</a>
+## <a name=""></a><a name="Paths">パス</a>
 
 式が構成されたデータ ソースを参照する場合、そのデータ ソースの特定のプリミティブ要素の選択にパス定義を使用できます。 ドット (.) は、構成されたデータ ソースの個別要素を区切るために使用します。 たとえば、現在の ER モデル マッピングには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求金額 `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit` を計算するための次の式をデザインできます。 この式の `InvoiceTransactions.AmountDebit` 構造は、*レコード リスト* タイプの **InvoiceTransactions** データ ソースの **AmountDebit** フィールドにアクセスするために使用されるパスです。
 
@@ -130,7 +130,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 ![ER フォーミュラ デザイナー ページの絶対パスの残りの部分](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">ファンクション</a>
+## <a name=""></a><a name="Functions">ファンクション</a>
 
 ER 組み込み関数は、ER 式で使用できます。 式のコンテキストのすべてのデータ ソース (つまり、現在の ER モデル マッピングまたは ER フォーマット) は、呼び出し元関数の引数に従って呼び出し元関数のパラメータとして使用できます。 定数は、呼び出し関数のパラメータとしても使用できます。 たとえば、現在の ER モデル マッピングには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには、ER 丸め関数を使用する次の式をデザインできます: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`。
 

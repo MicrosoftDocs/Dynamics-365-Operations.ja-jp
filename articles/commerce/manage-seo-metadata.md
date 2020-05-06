@@ -3,7 +3,7 @@ title: SEO メタデータの管理
 description: このトピックでは、Microsoft Dynamics 365 Commerce の検索エンジン最適化 (SEO) メタデータを管理する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003467"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270053"
 ---
 # <a name="manage-seo-metadata"></a>SEO メタデータの管理
 
@@ -72,13 +72,10 @@ Dynamics 365 Commerce では、個々のページの SEO メタデータを管�
 1. **サイト**で、**Fabrikam** (またはサイトの名前) を選択します。
 1. 左のナビゲーション ウィンドウで、**ページ**を選択します。
 1. ホーム ページを選択して、ページ エディターで開きます。
-1. アクション ウィンドウで、**チェック アウト**を選択します。
+1. コマンド バーで、**編集** を選択します。
 1. 右側のプロパティ ウィンドウで、**既定のメタタグ**を展開します。
-1. 新しいメタタグを追加するには、**追加**を選択して、フィールドにタグを入力します。
-
-    既存のメタタグを削除するには、その右側にあるごみ箱記号を選択します。
-
-1. **保存**を選択してから、**チェックイン**を選択します。
+1. 新しいメタタグを追加するには、**追加**を選択して、フィールドにタグを入力します。 既存のメタタグを削除するには、その右側にあるごみ箱記号を選択します。
+1. **保存** を選択し、**編集完了** を選択します。
 1. **コメント**フィールドで、**メタタグの更新**と入力し、**OK** を選択します。
 1. **プレビュー**を選択して、ページをプレビューします。 完了したら、プレビュー タブを閉じて、作成ツールに戻ります。
 1. **公開**を選択します。
