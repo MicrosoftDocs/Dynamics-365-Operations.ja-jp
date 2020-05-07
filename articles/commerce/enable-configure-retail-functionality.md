@@ -1,5 +1,5 @@
 ---
-title: 新しい Retail 環境でのシード データの初期化
+title: 新しい Commerce 環境におけるシード データの初期化
 description: この記事では、Dynamics 365 Commerce の初期化プロセスの一部として作成されるデータについて説明します。
 author: josaw1
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2833c32d557ec3d2dc80808222d1d47860ce6ea
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24d4d49c51738203bb89a9844d57f644b8afd4b7
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023203"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284382"
 ---
-# <a name="initialize-seed-data-in-new-retail-environments"></a>新しい Retail 環境でのシード データの初期化
+# <a name="initialize-seed-data-in-new-commerce-environments"></a>新しい Commerce 環境におけるシード データの初期化
 
 [!include [banner](includes/banner.md)]
 

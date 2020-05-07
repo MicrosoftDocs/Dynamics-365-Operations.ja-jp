@@ -3,7 +3,7 @@ title: 新しいサイト ページの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001349"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269961"
 ---
 # <a name="add-a-new-site-page"></a>新しいサイト ページの追加
 
@@ -67,7 +67,7 @@ ms.locfileid: "3001349"
 1. **コンテンツ リッチ ブロック**を選択してから省略ボタンを選択し、**モジュールの追加**を選択します。
 1. **コンテンツ リッチ ブロック項目**を選択し、**OK** を選択します。
 1. 右側のプロパティ ウィンドウで、**段落**を選択し、フィールドに**テスト テキスト**を入力します。
-1. **保存**を選択してから、**チェックイン**を選択します。
+1. **保存** を選択し、**編集完了** を選択します。
 1. **コメント** フィールドで、**追加済の新しいページ**と入力し、**OK** を選択します。
 1. **プレビュー**を選択して、ページをプレビューします。 完了したら、プレビュー タブを閉じて、作成ツールに戻ります。
 1. **公開**を選択します。

@@ -3,7 +3,7 @@ title: Regression Suite Automation Tool のインストールと構成
 description: このトピックでは、Regression Suite Automation Tool (RSAT) のインストールと構成方法について説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeaeca62f2d91a905eb3d21deab44daa7e766fba
-ms.sourcegitcommit: c03bd0fcf663e4e3e83db52fc9255ef1e3de34bc
+ms.openlocfilehash: 9682d139a3dfa8b7c7db25614a0369326af34ebf
+ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3176171"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3282755"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -38,7 +38,7 @@ ms.locfileid: "3176171"
 テスト パラメーターを生成および編集するには、 Microsoft Excel をインストールする必要があります。 
 
 ### <a name="azure-devops"></a>Azure DevOps
-テスト ケース、テスト計画、およびテストケースの結果を保存および管理するには、 Azure DevOps プロジェクトが必要です。 Azure DevOps テスト管理者またはテスト計画ライセンスが必要です。 たとえば、 Visual Studio エンタープライズ サブスクリプションを所有している場合は、既にテスト計画に対するライセンスを取得しています。 詳細については、 [Azure DevOps の価格設定](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) を参照してください。
+テスト ケース、テスト計画、およびテストケースの結果を保存および管理するには、 Azure DevOps プロジェクトが必要です。 Azure DevOps テスト管理者またはテスト計画ライセンスが必要です。 たとえば、 Visual Studio エンタープライズ サブスクリプションを所有している場合は、既にテスト計画に対するライセンスを取得しています。 詳細については、[Azure DevOps サービス](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) の価格設定、または [Azure DevOps サーバーの価格設定](https://azure.microsoft.com/pricing/details/devops/server/) を参照してください。
 
 ### <a name="authentication-certificate"></a>認証証明書
 RSAT は、任意の Windows 10 コンピュータにインストールされ、Web ブラウザーを介して環境にリモート接続するように設計されています。
@@ -51,6 +51,9 @@ RSAT は、任意の Windows 10 コンピュータにインストールされ、
 
 ### <a name="installer"></a> インストーラー
 [Regression Suite Automation Tool ダウンロード](https://www.microsoft.com/download/details.aspx?id=57357) からマシンに .msi ファイルをダウンロードし、ダブルクリックしてインストーラーを実行します。 
+
+> [!NOTE]
+> Azure DevOps サーバーを使用している場合は、バージョン 1.210.48249.4 以降をダウンロードしてインストールします。 
  
 ### <a name="selenium-and-browser-drivers"></a>Selenium およびブラウザー ドライバー
 RSATには、Selenium および Web ブラウザー ドライバー ライブラリが必要です。 RSATでは、必要なライブラリが見つからない場合は、プロンプトが表示され、自動的にインストールされます。 次の (または類似の) メッセージが表示されたら、はい を選択します。
@@ -78,6 +81,10 @@ RSATを構成するには、右上の **設定** ボタンを選択します。
 Azure DevOps プロジェクトおよびテスト計画への接続をコンフィギュレーションします。
 
 + **Azure DevOps URL** - これは、 Azure DevOps 組織のURLです。 たとえば、`https://yourAzureDevOpsUrlHere.visualStudio.com`。
+
+    > [!NOTE]
+    > Azure DevOps サーバーを使用している場合は、**/DefaultCollection** を Azure DevOps URL の末尾に追加します。
+
 + **アクセス トークン** - ツールが Azure DevOps に接続できるようにするアクセス トークン。 個人用アクセス トークンを作成するか、保存した既存のアクセス トークンを使用する必要があります。 詳細については、[個人用アクセス トークンを使用したアクセスの認証](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) を参照してください。 
 + **プロジェクト名** - Azure DevOps プロジェクトの名前。 RSATでは、指定された Azure DevOps URLに基づいて、使用可能なプロジェクト名とテスト プランを自動的に検出します。 その後、テスト プロジェクトおよびテスト計画を選択できます。
 + **テスト計画** - テスト ケースを含む Azure DevOps テスト計画 詳細については[テスト計画およびテスト スイートの作成](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan) を参照してください。 
@@ -124,6 +131,9 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 + **最初の検証エラーでテストに失敗** – 既定では、テスト ケースに複数の検証ステップがあり、検証に失敗した場合は、最初の失敗が発生するとテスト ケースの実行が停止します。 テスト ケースは失敗としてマークされます。 すべての検証が完了するまでテスト ケースを実行する場合は、このオプションをオフにします。 その後、テスト ケースですべての検証を評価できます。
 + **失敗時にテスト スイートの実行を中止する** – 既定では、いずれかのテスト ケースが失敗した場合でもテスト スイートの実行が続行されます。 このオプションを **True** に設定すると、テスト ケースが失敗した場合にテストの実行が中止されます。 残りのすべてのテスト ケースのステータスは**未実行**になります。
 + **クラウド プロバイダー** – テスト環境のクラウド テナントのプロバイダーを選択します。 サポートされているプロバイダーは、**グローバル** (パブリッククラウド) および**中国** (主権クラウド) です。
+
+    > [!IMPORTANT]
+    > Finance and Operations アプリが 21Vianet に配置されている場合、**クラウド プロバイダー** の設定が必要となり、選択された値が **中国** でなければなりません。
 
 ### <a name="configure-the-test-environment-to-trust-the-connection"></a>接続を信頼するようにテスト環境を構成する
 
@@ -185,7 +195,7 @@ Selenium ドライバーを手動でインストールするには、次の手�
     + ダウンロード ファイルを解凍します。 
     + ファイル **dist\Selenium.WebDriver.StrongNamed.3.13.1.nupkg** を展開します。 このファイルを展開するには、ファイルに .zip拡張子を追加して、解凍します。 
     + **Selenium.WebDriver.StrongNamed.3.13.1.nupkg\lib** という名前のフォルダーの内容を **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** にコピーします。
-3.  [Internet Explorer ドライバー バージョン 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip) をダウンロードします。 または、ブラウザーに戻り、 **3.4** フォルダを開いて、 **IEDriverServer_x64_3.4.0.zip** をダウンロードします。
+3.  [Internet Explorer ドライバー バージョン 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip) をダウンロードします。 または、ブラウザーに戻り、**3.4** フォルダを開いて、**IEDriverServer_x64_3.4.0.zip** をダウンロードします。
 4.  ダウンロードしたファイルを解凍し、その内容を **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium** に移動します。
 
 Google Chromeをブラウザーとして使用するには、次の手順を実行します:

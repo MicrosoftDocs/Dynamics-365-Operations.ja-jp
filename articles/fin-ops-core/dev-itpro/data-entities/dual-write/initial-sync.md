@@ -19,22 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 4adb2c8d57ad8f67346b8d34212b7a4b0bd052ab
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 9ae14703941b97308bca5845eeac3eb9b181ae75
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173134"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275490"
 ---
 # <a name="entity-dependency-chain-synchronization-order"></a>エンティティ依存関係チェーン (同期順序)
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-次の表は、エンティティを有効化する順序で一覧にしたものです。 初期同期のマップを有効化すると、二重書き込みが有効化する必要のある他のマップを自動的に検出します。 Finance and Operations アプリの **二重書き込み** ページを使用して、初期同期中に選択したエンティティを選択またはキャンセルできます。
-
-二重書き込みの最新バージョンは一部のエンティティのみを有効化でき、依存関係を処理します。
+このトピックでは、**初期同期** 機能で提供されるエンティティの依存関係を使用していない場合に、初期データを作成するために従う必要がある同期の順序を指定します。 **初期同期** を使用しない場合は、各エンティティ マップを個別に実行する必要があります。
 
 ## <a name="dynamics-365-supply-chain-management-entities"></a>Dynamics 365 Supply Chain Management エンティティ
 
