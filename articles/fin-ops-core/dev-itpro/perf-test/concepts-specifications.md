@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 95d8ce1f47e9916a28770b2ff875255659d3bf42
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 1f734dc0a96a2d147940c53ff495d20b628f65ba
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248927"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270325"
 ---
 # <a name="specification-classes"></a>詳細のクラス
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 詳細のクラスはエンティティが満たすべき一連の条件の定義に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。 詳細は検証シナリオでよく使用されます。 通常それらはクエリ クラスと一緒に使用されます。
 

@@ -3,7 +3,7 @@ title: LCS 実装プロジェクトを別の Azure AD テナントに移動す�
 description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: aa0cad0f1feccca388f1aa88e980a0c9cbfa6301
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 4f86107a193a19c728fd637098dd1c0622056371
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042955"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287833"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
 [!include [banner](../includes/banner.md)]
 
-サブスクリプションと Microsoft Dynamics Lifecyle Services (LCS) 導入プロジェクトを別の Microsoft Azure Active Directory (Azure AD) テナントに移すことができます。 この移動が必要になる場合のいくつかのシナリオを次に示します。
+サブスクリプションと Microsoft Dynamics Lifecycle Services (LCS) 導入プロジェクトを別の Microsoft Azure Active Directory (Azure AD) テナントに移すことができます。 この移動が必要になる場合のいくつかのシナリオを次に示します。
 
 - 誤ってサブスクリプションが正しくない Azure AD テナントに対して購入されました。
 
@@ -51,7 +51,7 @@ Microsoft クラウド ソリューション プロバイダー (CSP) 契約を�
 
 ### <a name="volume-licensing"></a>ボリューム ライセンス
 
-Microsoft ボリューム ライセンス契約を通じてライセンスを取得している場合は、[ボリューム ライセンス サポート センター](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx)に連絡し、サブスクリプションを古いテナントから新しいテナントに再マップするように依頼する必要があります。 Microsoft Office 365 管理センターからボリューム ライセンスのサポートに連絡することができます。 定期売買が両方のテナントで有効になると、支払猶予期間を要求します。 顧客プライバシーの問題が原因で、顧客がこの要求を実行する必要があります。 次の情報が必要です。
+Microsoft ボリューム ライセンス契約を通じてライセンスを取得している場合は、[ボリューム ライセンス サポート センター](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx)に連絡し、サブスクリプションを古いテナントから新しいテナントに再マップするように依頼する必要があります。 Microsoft 365 管理センターからボリューム ライセンスのサポートに連絡することができます。 定期売買が両方のテナントで有効になると、支払猶予期間を要求します。 顧客プライバシーの問題が原因で、顧客がこの要求を実行する必要があります。 次の情報が必要です。
 
 - 公的顧客番号
 - 登録番号

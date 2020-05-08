@@ -3,7 +3,7 @@ title: Office 統合のチュートリアル
 description: このチュートリアルでは、Excel、Word、ドキュメント管理および電子メールが関係する Office 統合エクスペリエンスを使用して構築します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7860e70d69ebc3b3cecea59092a605479d322bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 09baefd3a7b8db6adfc3cace9eeb8c2a4a114133
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042958"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287832"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -40,7 +40,7 @@ ms.locfileid: "3042958"
 
 ## <a name="key-concepts"></a>重要な概念
 -   **エンティティと OData** - Microsoft Dynamics Excel データ コネクタ アプリ (Excel App) を使用して、作成、読み取り、更新、および削除を行います。 コネクタは、デフォルト状態の「public」(**DataEntity.Public**=**Yes**) のまま残されているエンティティに対して作成された OData サービスを使用します。
--   **Office 用アプリ** - Excel アプリケーションは、Office 用アプリ フレームワーク (Office Web API とも呼ばれます) を使用して作成されます。 Excel アプリケーションは Web ベースのため、クライアントと技術を共有し、オンプレミス Excel インスタンスおよび Microsoft Excel Online (Microsoft Office 365) の両方の中で実行されます。 アプリは、作業ウィンドウの Excel の内部で実行されます。
+-   **Office 用アプリ** - Excel アプリケーションは、Office 用アプリ フレームワーク (Office Web API とも呼ばれます) を使用して作成されます。 Excel アプリは Web ベースのため、クライアントと技術を共有し、オンプレミス Excel インスタンスおよび Microsoft Excel Online (Microsoft 365) の両方の中で実行されます。 アプリは、作業ウィンドウの Excel の内部で実行されます。
 -   **Microsoft Office 2016** – Excel アプリと Word アプリは、Office 2016 で導入された Apps for Office フレームワークの進歩を利用します。 したがって、Excel および Word の各アプリケーションを実行するには Office 2016 が必要です。
 -   **認証** - Excel と Word アプリは、Excel と Word 内の Internet Explorer ウィンドウで実行されます。 ユーザーが Internet Explorer の InPrivate Browsing セッションまたはクロムなどの異なるブラウザーでクライアントを実行する場合でも、Internet Explorer は Excel または Word 内のアプリを実行するために引き続き使用されます。 認証は OAuth によって促進され、ユーザーはアプリ内でアカウントを選択してサインインすることができます。 Internet Explorer は最初にユーザーに自動的にサインインさせようと試みます。 そのため、正しいユーザーとしてログインしていない場合や、ログインに問題がある場合は、アプリの右下のユーザー メニューのログアウト リンクを使用して、強制的にアプリからログアウトする必要があります。 サインアウトの後に、アプリで右クリックし、再度ログインしてみます。
 -   **Excel アプリ** - Excel アプリは、更新を促進し、データ操作を公開することに加えて、ソースとフィールド情報、ルックアップ、フィルタリング、エラーメッセージ、エンティティデータソースからフィールド、テーブル列、またはラベルを追加または削除するためのデザイン エクスペリエンスも提供します。
@@ -141,7 +141,7 @@ Excel アプリケーションには、ユーザーがエンティティ デー�
 
 ### <a name="open-in-excel-online"></a>Excel Online で開く
 
-Excel アプリケーションは、Office フレームワークの新しいアプリケーションを使用して構築されます。 このフレームワークは、アプリケーションが Office アプリケーションと通信できる JavaScript ベースの Web アプリケーション プログラミング インターフェイス (API) を提供します。 この新しいフレームワークの最大の利点は、アプリケーションが社内の Excel インスタンス (Win32)、Excel Online (Office 365)、および Excel の Apple iPad で実行できることです。 将来的に他の Excel アプリでも実行できるようになります。
+Excel アプリケーションは、Office フレームワークの新しいアプリケーションを使用して構築されます。 このフレームワークは、アプリケーションが Office アプリケーションと通信できる JavaScript ベースの Web アプリケーション プログラミング インターフェイス (API) を提供します。 この新しいフレームワークの最大の利点は、アプリがオンプレミスの Excel インスタンス (Win32)、Excel Online (Microsoft 365)、および Apple iPad 上の Excel で実行できることです。 将来的に他の Excel アプリでも実行できるようになります。
 
 1.  **フリート管理** &gt; **顧客** &gt; **顧客**と移動します。
 2.  **Microsoft Office** で**開く** &gt; **Excel で開く** &gt; **フリート管理の顧客** の順にクリックします。
@@ -448,7 +448,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 1.  Internet Explorer で、**システム管理** &gt; **設定** &gt; **電子メール**  &gt; **電子メール パラメータ**の順に移動します。
 2.  **SMTP 設定**をクリックします。
 3.  **送信メール サーバー** を要求された SMTP サーバーに設定します。
-    -   「[Office 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)」 (\*.onmicrosoft.com アカウントを含む) の場合: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
+    -   [Microsoft 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) 用: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
     -   Outlook/Hotmail 用: smtp-mail.outlook.com
 
 4.  ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
@@ -463,8 +463,8 @@ SysEmail フレームワークを介して有効になっている電子メー�
 13. テスト メッセージを受信するには、宛先アドレスをメール アドレスに変更します。
 14. メッセージの件名および本文を入力します。
 15. **送信** をクリックします。 メッセージは 1 〜 5 分で配信する必要があります。 メッセージが**電子メール パラメーター** ページに設定されている電子メール アカウントから送信されることに注意してください。 そのメール アカウントに**メールの送信**ダイアログ ボックスで使用されている送信元アドレスの「送信者」(または「このメールボックスからメールを送信」) のアクセス許可が与えられている場合、そのアドレスからのメッセージが表示されます。
-    -   Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、「[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。
-    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、「[Office 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx)」を参照してください。
+    -   [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。
+    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、[Microsoft 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx) を参照してください。
 
 16. ユーザーの介入なしにサーバーから直接送信される電子メールは、バッチ処理を介して送信され、**電子メール ディストリビューター バッチ**プロセスを開始する必要があります。 プロセスを開始するには、これらの手順に従います。
     1.  **システム管理** &gt; **定期処理のタスク** &gt; **電子メールの処理** &gt; **バッチ**と移動します。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002269"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275351"
 ---
 # <a name="compliance-overview"></a>コンプライアンスの概要
 
@@ -44,3 +44,5 @@ Microsoft が使用する基本原則の詳細については、[Microsoft Trust
 [Cookie のコンプライアンス](cookie-compliance.md)
 
 [プライバシー ポリシー ページの追加](add-privacy-page.md)
+
+[追跡しているコンテンツの変更に関連付けられたユーザー ID の置換](replace-IDs-tracked-changes.md)

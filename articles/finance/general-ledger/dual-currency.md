@@ -3,7 +3,7 @@ title: 二重通貨
 description: このトピックでは、レポート通貨が Microsoft Dynamics 365 Finance の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249014"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270315"
 ---
 # <a name="dual-currency"></a>二重通貨
 
@@ -175,9 +175,9 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
         | 固定資産 | 予約      | トランザクション タイプ | 取引日付 | Currency | トランザクション通貨の金額 | 量  | 為替レート | レポート通貨金額 |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
         | BUIL-00001  | 200\_SLLT | 取得      | 2016 年 3 月 6 日         | DKK      | 1.000.000                      | 500,000 | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | 減価償却     | 2016 年 3 月 6 日         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - 多くの顧客がワークブックで資産トランザクションの詳細を追跡しました。 これらの詳細には、為替レートおよび金額が含まれます。 ワークブックにこのデータがある場合、カスタム 為替レート タイプを作成し、およびワークブックからの為替レートで更新できます。 この為替レート タイプは、取得日付で既定の為替レートを入力し、レポート通貨金額を計算するために使用されます。 為替レートのタイプが選択されていない場合、ウィザードは元帳で定義された為替レート タイプを使用します。
     - 為替レートおよびレポート通貨金額は変更可能です。 為替レートが変更された場合は、新しいレートを使用してレポート通貨金額が再計算されます。

@@ -1,5 +1,5 @@
 ---
-title: 在庫エイジング レポート
+title: 在庫エイジング レポート ストレージ
 description: このトピックでは、在庫エイジング レポートを実行し、その出力をフォームおよびグラフとして使用できるようにする機能について説明します。
 author: AndersGirke
 manager: tfehr
@@ -19,24 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 790c8fe3a52bce652227f1cef97eff6496476100
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9148a9032615222a1fdfe453488e716bacadbabc
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201624"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275582"
 ---
-# <a name="inventory-aging-report"></a>在庫エイジング レポート
+# <a name="inventory-aging-report-storage"></a>在庫エイジング レポート ストレージ
 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management では、**在庫のエイジング** レポートを実行して、フォームおよびグラフとして出力を使用できるようにすることができます。 フォームでは、コンフィギュレーションされているレイアウトに応じて、列と集計残高が動的に調整されます。 チャートは、フィルター処理をサポートする視覚概要を提供します。詳細にドリルダウンすることができます。 さらに、**在庫エイジング レポート**という名前のデータ エンティティを使用すると、実行された**在庫エイジング** レポートの結果を Microsoft Excel ファイルや PDF ファイルなどの形式でエクスポートできます。
+Microsoft Dynamics 365 Supply Chain Management では、**在庫のエイジング レポート ストレージ** を実行して、フォームとグラフとして出力できるようにします。 フォームでは、コンフィギュレーションされているレイアウトに応じて、列と集計残高が動的に調整されます。 チャートは、フィルター処理をサポートする視覚概要を提供します。詳細にドリルダウンすることができます。 さらに、**在庫エイジング レポート** という名前のデータ エンティティを使用すると、実行された**在庫エイジング レポート ストレージ** レポートの結果を Microsoft Excel ファイルや PDF ファイルなどの形式でエクスポートできます。
 
-**在庫エイジング** レポートを実行するこの方法は、出力に多数の行が含まれている場合に便利です。 たとえば、倉庫として作成された 50,000 個の品目と 300 軒の店舗がある場合、出力には多くの明細行が含まれ、在庫エイジングは、品目、サイト、および倉庫ごとに要求します。
+**在庫エイジング レポート ストレージ** レポートを実行するこの方法は、出力に多数の行が含まれている場合に便利です。 たとえば、倉庫として作成された 50,000 個の品目と 300 軒の店舗がある場合、出力には多くの明細行が含まれ、在庫エイジングは、品目、サイト、および倉庫ごとに要求します。
 
-## <a name="run-an-inventory-aging-report"></a>在庫エイジング レポートの実行
+## <a name="enable-the-inventory-value-storage-report-feature"></a>在庫評価額ストレージ レポート機能を有効にします
+
+この機能を使用するには、事前にシステム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して機能状態を確認し、必要に応じてそれを有効にすることができます。 この機能は次のように一覧表示されます。
+
+- **モジュール** - 原価管理
+- **機能名称** - 在庫エイジング レポート ストレージ
+
+## <a name="run-an-inventory-aging-report-storage"></a>在庫評価額レポート ストレージを実行する
 
 1. **原価管理 \> 照会およびレポート \> 在庫エイジング レポート ストレージ**の順に移動します。
 1. **新規** を選択します。
@@ -51,4 +58,4 @@ Microsoft Dynamics 365 Supply Chain Management では、**在庫のエイジン�
     > [!NOTE]
     > フォームには、レポート レイアウトで定義されている小計は含まれません。
 
-**在庫エイジング レポート** データ エンティティを使用すると、**プロセス ID – 名前**フィールドのフィルターを、データ管理がサポートする形式に適用することにより、**在庫エイジング** レポートの出力をエクスポートできます。
+**在庫エイジング レポート** データ エンティティを使用すると、**プロセス ID – 名前** フィールドのフィルターを、データ管理がサポートする形式に適用することにより、**在庫エイジング レポート ストレージ** レポートをエクスポートできます。

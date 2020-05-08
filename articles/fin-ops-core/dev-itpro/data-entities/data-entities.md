@@ -3,7 +3,7 @@ title: データ エンティティの概要
 description: このトピックは、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4914b0d828ae4c2e9406d6de66c21a216a75fe
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceebc66ebc685162d3b3e3b0caf4759d6c213058
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769742"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275430"
 ---
 # <a name="data-entities-overview"></a>データ エンティティの概要
 
@@ -131,7 +131,7 @@ ms.locfileid: "2769742"
 ### <a name="transaction"></a>トランザクション
 
 - ビジネスの運用トランザクション データ。
-- 転記済トランザクション。 これらは、請求された請求書や残高などの非冪等項目です。 通常、これらの項目は完全なデータセットのコピー中に除外されます。
+- 転記済トランザクション。 これらは、転記済請求書や残高など、非冪等項目です。 通常、これらの項目は、コピーまたは移行されるデータ量を削減するために、データセット全体のコピー時に除外されます。 完了したトランザクションを移行すると、新しいシステムで関連データの参照整合性を維持しようとするなかで、複雑性が増す可能性もあります。 一般に、完了した業務プロセスからのトランザクションは、詳細ではなく要約して移行されます。
 - 例には保留中の請求書を含まれます。
 
 ## <a name="building-an-entity"></a>エンティティの作成

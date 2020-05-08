@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: b1051cd79260ad9429cd9c4decf62208b31c47ee
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 67d5b0b5ea276808d06a73a22c41b012886af755
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033040"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270277"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 コマンド クラスは事業運営の実行を処理します。 Fluent アプリケーション プログラミング インターフェイス (API) を使用して、これらの操作のパラメーターを設定します。
 

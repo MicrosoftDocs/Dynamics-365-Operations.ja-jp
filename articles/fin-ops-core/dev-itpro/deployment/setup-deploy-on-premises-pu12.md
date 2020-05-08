@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 3d9d1807faf6a34bc78a96030139e0933c5042a3
-ms.sourcegitcommit: 33737d8356450e3f52097d49e7d59d81cf97628c
+ms.openlocfilehash: 446ce4f04000c2fe7c110e6e106dc67b2d6efb51
+ms.sourcegitcommit: 7efc297817f8e8ab7fccca280d9d85a988786aa9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3233667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3277984"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -554,6 +554,9 @@ Finance + Operations の展開とサービスは、オンプレミスのロー�
 2. 次のスクリプトを **インフラストラクチャ** フォルダーから実行して、証明書が既に登録されているかどうかを確認します。
 
     ```powershell
+    # If you have issues downloading the Azure PowerShell Az module, run the following:
+    # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    
     Install-Module Az
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test

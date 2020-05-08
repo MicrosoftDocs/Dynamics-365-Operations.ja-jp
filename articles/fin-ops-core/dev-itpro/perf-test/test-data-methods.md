@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: a6125ac0e03ab991c72ed9ae8bcfac042a1a1ca7
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: bc659ee91a061baffdf7f5b1d4abd2b2d0d512a7
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124832"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270275"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 エンティティやヘルパー ナビゲーション オブジェクトは、テスト データを設定するテスト メソッドを公開します。 このトピックでは、最も一般的な種類のテスト データ メソッドについて説明します。
 

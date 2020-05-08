@@ -3,7 +3,7 @@ title: 契約タイプ間でライセンスを移動する
 description: このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 10/10/2019
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 7dfc7495d4fe4414e4e14a01ea75faa2769456ac
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: c0e105678d210b491588ba39e1610367e0261c64
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003695"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287834"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
@@ -47,7 +47,7 @@ ms.locfileid: "3003695"
     > 元の契約で使用される同じ Azure AD テナントに対してサブスクリプションが購入されることを確認します。
 
 2. 顧客によって定期売買が有効化されます。
-3. Microsoft Office 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
+3. Microsoft 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
 4. 新しいサブスクリプションが有効になると、顧客は、ボリューム ライセンスの再販業者または CSP が既存のサブスクリプションを中断することを要求します。 通常、継続性を保証し、サービスの中断を回避するために重複があります。
 
 ## <a name="the-customer-has-add-on-environments"></a>顧客にはアドオン環境があります
@@ -78,7 +78,7 @@ ms.locfileid: "3003695"
     > 既存の Azure AD テナントに対してサブスクリプションが購入されることを確認します。
 
 2. 顧客によって定期売買が有効化されます。
-3. Office 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
+3. Microsoft 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
 
 ### <a name="deploy-new-environments"></a>新しい環境の配置
 

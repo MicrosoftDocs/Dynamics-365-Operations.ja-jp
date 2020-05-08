@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224912"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268819"
 ---
 # <a name="quality-management-overview"></a>品質管理の概要
 
@@ -43,7 +43,11 @@ ms.locfileid: "3224912"
 
 -   (特定の仕入先からの発注書の倉庫の登録の際に) 事前に定義された基準に基づいて品質テスト プロセスを自動的に開始します。
 -   未承認の在庫が使用されないように検査中の在庫をブロックします (発注書数量の完全なブロック)。
--   検査しなければならない現在の現物在庫の数量を定義するために、品質関連の一部として品目サンプリングを使用します。 サンプリングは、固定数量または割合に基づいて設定できます。
+-   検査しなければならない現在の現物在庫の数量を定義するために、品質関連の一部として品目サンプリングを使用します。 サンプリングは、固定数量、割合、または完全なライセンス プレートに基づいて行うことができます。
+
+> [!NOTE]
+> _倉庫プロセスの品質管理_ 機能は、品質管理機能の能力を増強します。 この機能を使用している場合、品質管理を有効にした場合の動作の例については、[倉庫プロセスの品質管理](quality-management-for-warehouses-processes.md) を参照してください。
+
 -   部分的な入庫の品質指示を作成します。 注文に対して現物入庫した数量の基準となる品質指示を作成するには、**品目サンプリング**フォームの**更新済数量別**チェック ボックスをオンにします
 -   最小、最大とターゲットのテスト値を含むテスト タイプを作成し、事前に定義された検証結果がある定性試験と定量試験を実行します。
 -   品質の測定許容を制御する許容可能な品質レベル (AQL) を指定します。
@@ -428,6 +432,9 @@ ms.locfileid: "3224912"
 </tbody>
 </table>
 
+> [!NOTE]
+> *倉庫プロセスの品質管理機能* では、**イベント タイプ** が *完了報告* に、 **実行** が *後*、に設定した生産用の品質オーダー処理と、**イベント タイプ** を *登録* に設定した購入用の品質オーダー処理の機能が追加されます。 詳細については、[倉庫プロセスの品質管理](quality-management-for-warehouses-processes.md) を参照してください。
+
 ## <a name="quality-management-pages"></a>品質管理ページ
 <table>
 <colgroup>
@@ -495,3 +502,5 @@ ms.locfileid: "3224912"
 [品質管理プロセス](quality-management-processes.md)
 
 [不適合管理](enable-nonconformance-management.md)
+
+[倉庫プロセスに対する品質管理](quality-management-for-warehouses-processes.md)

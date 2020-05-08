@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172811"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270291"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -66,6 +66,14 @@ Sales および Supply Chain Management で見積と注文が作成され同期�
 + 見積の製品に割引を追加できます。 この場合、割引は Supply Chain Management に同期されます。 **割引**、**請求**、および **税** フィールドは、ヘッダーで Supply Chain Management の設定によって制御されます。 この設定では、統合マッピングはサポートされていません。 代わりに、**価格**、**割引**、**請求金額**、および**税**の各フィールドは、Supply Chain Management で管理および処理されます。
 + 販売見積ヘッダーの読み取り専用フィールドの**割引 %**、**割引**、**貨物量**。
 + **運賃条件**、**配送条件**、**送付方法**、および**配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+
+また、Field Service ソリューションを使用している場合は、**見積明細行の簡易作成**パラメータを再度有効にする必要があります。 このパラメータを再度有効にすると、簡易作成機能を使用して、見積明細行の作成を続行することができます。
+1. Dynamics 365 Sales アプリケーションに移動します。
+2. ナビゲーション バー上部の設定アイコンを選択します。
+3. **詳細設定** を選択します。
+4. **システムのカスタマイズ** オプションを選択します。
+5. **見積明細行** のメニュー項目を選択します。
+6. **データ サービス** セクションに移動し、**簡易作成を許可する** チェックボックスをオンにします。
 
 ## <a name="sales-orders"></a>販売注文
 

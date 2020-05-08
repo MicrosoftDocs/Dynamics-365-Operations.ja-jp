@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 330ca2a1cfe1469a44259cce830c52ea979378c9
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 4661b36790907f51afd752a817235e09e0474727
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124833"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270274"
 ---
 # <a name="acceptance-test-library-faq"></a>承認テスト ライブラリに関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="which-fluent-prefix-should-i-use-set-for-or-with"></a>どの Fluent な接頭辞を使用しますか: set、for、with
 

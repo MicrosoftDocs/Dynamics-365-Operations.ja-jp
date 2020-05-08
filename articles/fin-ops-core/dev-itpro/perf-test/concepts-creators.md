@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: c8fda02ceeb0272feb5b894a0fba87e87d2da05f
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: f6e4606deb026394e9f0007ad51703024085f959
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033035"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270272"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 作成者クラスは、テスト データの作成に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。
 

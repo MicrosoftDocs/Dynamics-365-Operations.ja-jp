@@ -3,7 +3,7 @@ title: データ管理の概要
 description: このトピックでは、Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 313344e086a0f43a9cc548d3e46a994d770b92c8
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 0daca3cbcf5f5e6b11879f088acfd71b8b91640f
+ms.sourcegitcommit: e9980b4a873e7c9aaca99730711d3a45298bad1f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124826"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281572"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -174,7 +174,7 @@ ms.locfileid: "3124826"
 ### <a name="generate-data"></a>データの生成
 エンティティに、インポート時にデータを生成するフィールドがある場合は、ソース ファイルにデータを提供する代わりに、エンティティのマッピングの詳細で自動生成された機能を使用できます。 たとえば、顧客および顧客の住所情報をインポートしても、住所情報がグローバル アドレス帳エンティティで以前にインポートされなかった場合、インポート上の関係者番号を自動生成するエンティティを持つことができ、GAB 情報が作成されます。 この機能にアクセスするには、エンティティのマップを表示し、**マッピング詳細** タブをクリックします。自動生成するフィールドを選択します。 これにより、ソース フィールドが**自動**に変更されます。
 
-[![dataw の生成](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![データの生成](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### <a name="turn-off-automatically-generated-number-sequences"></a>自動的に生成される番号シーケンスをオフにする
 多くのエンティティは、番号順序の設定に基づく ID の自動生成をサポートしています。 たとえば、製品を作成するときに、製品番号は自動で生成され、フォームで値を手動で編集することはできません。
@@ -281,6 +281,8 @@ ms.locfileid: "3124826"
 | DMFDisableDoubleByteCharacterExport     | コード ページ 932 設定を使用するようにフォーマットがコンフィギュレーションされているときにデータをエクスポートできるように、修正が行われました。 2 バイト エクスポートに関連して問題が発生した場合、該当する場合は、このフライトを無効にしてブロック解除することによって、この修正を止めることができます。 |
 | DisablePendingRecordFromJobStatus     | インポート ジョブの最終ステータスの評価時に保留中のレコードを確実に考慮するように、修正が行われました。 実装がステータス評価ロジックに依存し、この変更が実装の重大な変更として見なされる場合、この新しいロジックをこのフライトを使用して無効にすることができます。  |
 | DMFDisableEnumFieldDefaultValueMapping     | データ パッケージの生成時に、列挙フィールドに対する高度なマッピングで設定されている既定値がデータ パッケージ マニフェスト ファイルに正常に保存されるように、修正を行いました。 このような高度なマッピングが使用されている場合、これによりデータ パッケージを統合のテンプレートとして使用できます。 この修正はこのフライトによって保護されており、以前の動作がまだ必要な場合 (データ パッケージ マニフェストで常に値を 0 に設定) は無効にできます。  |
+| DMFXsltEnableScript     | このフライトは、Platform update 34 および 非実稼働環境にのみ適用されます。 XSLT でのスクリプト作成を防止するために、Platform update 34 で修正が行われました。 ただし、これにより、スクリプトに依存する機能の一部が無効になりました。 その結果、このフライトでは、予防措置としてすべての実稼働環境で Microsoft によって有効にされています。 非実稼働環境では、スクリプトに関連する XSLT 障害が発生した場合に、お客様がこれを追加する必要があります。 Platform update 35 以降、Platform update 34 の変更を元に戻すコード変更が行われたため、このフライトは Platform update 35 以降適用されません。 このフライトを Platform update 34 で有効にした場合でも、Platform update 35 にアップグレードしても、Platform update 34 からこのフライトがオンになっていることで悪影響が生じることはありません。 |
+| DMFExecuteSSISInProc     | このフライトは、既定でオフです。 これは、SQL Server Integration Services (SSIS) をプロセス外で実行して、DIXF ジョブの実行時に SSIS のメモリ使用率を最適化するために行われたコード修正に関連しています。 ただし、この変更により、DIXF データ プロジェクト名にアポストロフィ (') が含まれている場合、ジョブがエラーで失敗するというシナリオで回帰が発生しました。 この問題が発生した場合は、データ プロジェクト名の (') を削除するとエラーを解決できます。 ただし、何らかの理由で名前を変更できない場合は、このフライトを有効にして、このエラーを解決できます。 このフライトを有効にすると、以前と同様に SSIS が進行中で実行され、DIXF ジョブの実行時にメモリ消費が増加する可能性があります。  |
 
 次の手順では、非運用環境でフライトを有効にします。 次の SQL コマンドを実行します。
 

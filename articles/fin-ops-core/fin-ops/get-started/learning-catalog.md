@@ -3,20 +3,20 @@ title: Finance and Operations のラーニング カタログ
 description: Finance and Operations のすべてのトレーニング オプションを見つけます。
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077996"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3279028"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Finance and Operations のラーニング カタログ
 
@@ -33,6 +33,10 @@ Finance and Operations アプリケーションのユーザーとして、ロー
     新しい技術に投資するかどうかを決定しますか。 
 
     [業務および技術的な意思決定者の学習グカタログ](learning-catalog-bdm.md#)
+
+    [はじめに](learning-catalog-bdm.md#get-started)
+
+    [試験](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Finance and Operations アプリケーションのユーザーとして、ロー
 
     [財務管理](learning-catalog-business-user.md#financial-management)
 
+    [試験](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>実装プロジェクト マネージャー
+    ### <a name="implementation-project-managers"></a>実装プロジェクト マネージャー
 
     会社の実装がスムースに進行するよう確認する担当者ですか。
 
@@ -73,6 +79,9 @@ Finance and Operations アプリケーションのユーザーとして、ロー
     [製造](learning-catalog-project-manager.md#manufacturing)
 
     [サプライ チェーン マネジメント](learning-catalog-project-manager.md#supply-chain-management)
+
+    [試験](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Finance and Operations アプリケーションのユーザーとして、ロー
 
     [コア プラットフォームの知識](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [コア開発](learning-catalog-administrator.md#core-development)
+
     [移行およびアップグレード](learning-catalog-administrator.md#migration-and-upgrade)
 
     [サービス](learning-catalog-administrator.md#servicing)
 
     [テスト](learning-catalog-administrator.md#testing)
+
+    [試験](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Finance and Operations アプリケーションのユーザーとして、ロー
 
     [サプライ チェーン マネジメント](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [試験](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Finance and Operations アプリケーションのユーザーとして、ロー
     顧客が適切なソリューションを購入できるよう支援する責任がありますか。 
 
     [Microsoft パートナーの販売およびマーケティング学習カタログ](learning-catalog-partner-sales.md)
+
+    [はじめに](learning-catalog-partner-sales.md#get-started)
+
+    [試験](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

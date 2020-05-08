@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a86730a72da711c0386f84eb82f8ff237b4d2acc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: ffa1e8cad9521ef436adf5de9817e7e852386838
+ms.sourcegitcommit: d92d1821efc23c9548c542de67d90a20fe6433cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096858"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261664"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -106,6 +106,7 @@ ms.locfileid: "3096858"
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
 - [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)
 - [Retail ソフトウェア開発キット (SDK) のサンプル](retail-sdk/retail-sdk-samples.md)
 - [チャネル データベース拡張機能](channel-db-extensions.md) 
 - [拡張機能を介したカスタム Commerce Data Exchange 同期の有効化](cdx-extensibility.md)

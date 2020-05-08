@@ -1,6 +1,6 @@
 ---
 title: X++ と X++ コンパイラの変更
-description: このトピックでは、Finance and Operations アプリケーションのコンパイラに対する変更点について説明します。
+description: このトピックでは、Finance and Operations アプリケーションのコンパイラーになされた変更についてレビューします。
 author: pvillads
 manager: AnnBe
 ms.date: 12/18/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c11b4d26d4368093f22220a6aac5862fad1188e4
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 44de41e9b64b7365874d7fa65947c5d70c0fb9ab
+ms.sourcegitcommit: d92d1821efc23c9548c542de67d90a20fe6433cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914923"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261665"
 ---
 # <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリケーションのコンパイラに対する変更点について説明します。 X++ コンパイラは書き換えられています。 製品への構造的な変更によって必須とされる場合を除き、X++ に導入された下位互換性のない変更はありません。 いくつかの言語拡張機能が追加されました。 また、新しい X++ ベスト プラクティス ツールが実装されているため、ユーザー定義のカスタム ルールを追加できます。
+このトピックでは、Finance and Operations アプリケーションのコンパイラーになされた変更についてレビューします。 X++ コンパイラは書き換えられています。 製品への構造的な変更によって必須とされる場合を除き、X++ に導入された下位互換性のない変更はありません。 いくつかの言語拡張機能が追加されました。 また、新しい X++ ベスト プラクティス ツールが実装されているため、ユーザー定義のカスタム ルールを追加できます。
 
 ## <a name="no-more-p-code-everything-is-in-net-framework-cil"></a>P コードはもう不要です。すべては .NET Framework CIL にあります
 Microsoft Dynamics AX 2012 によって X++ ソース コードは p コードにコンパイルされ、実行時にインタープリタによって解釈されました。 必要に応じて、Microsoft .NET CIL (共通中間言語) に p コードをコンパイルすることができます。 CIL は C\# および Visual Basic の .NETコンパイラ が生成するものです。 ただし、X++ CIL コードは、主にサービスとバッチ ジョブで実行されるコードに対して、限られた場合でのみ使用できました。 新しい X++ コンパイラは CIL のみを生成します。 他の p コードはありません。 p コードを扱う以下のツールは廃止され、Dynamics AX から削除され、.NET ツールに置き換えられました。
@@ -100,7 +100,7 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
     -   `pause`
     -   `window`
 -   旧式 X++ では、クライアントまたはサーバーのいずれかを実行するメソッドを指定できました。 これは不可能です。 すべてのコンパイルされた X++ コードは、サーバー上の .NET CIL で実行されます。 クライアント サイトまたはブラウザーで評価される X++ コードは存在しないため、*client* と *server* の 2 つのキーワードは無視されます。 コンパイル エラーは発生しませんが、新しい X++ コードのいずれでも使用しないでください。
--   Microsoft Dynamics AX 2012 には、P コード対 CIL にコンパイルしたときに X++ が異なる動作をするいくつかの領域がありました。 Finance and Operations アプリケーションでは、これらすべての領域が Microsoft Dynamics AX 2012 の CIL のときと同様に動作します。 X++ p-code と CIL としての X+ との間の有意な行動上の相違は次のとおりです。
+-   Microsoft Dynamics AX 2012 には、P コード対 CIL にコンパイルしたときに X++ が異なる動作をするいくつかの領域がありました。 Finance and Operations アプリケーションのこれらすべての領域では、Microsoft Dynamics AX 2012 の CIL で実行されたように動作します。 X++ p-code と CIL としての X++ との間の重要な動作の違いは次のとおりです:
     -   CIL では、`real `データ型が `System.Decimal` として表されます。 これは、各 `real` の範囲と精度が p コードの場合と異なることを意味します。 この変更は、.NET CIL が実行された時点で Microsoft Dynamics AX 2012 ですでに有効でした。
     -   1 つの全体配列を別の配列に割り当てることが P コード モードの値で実行されましたが、CIL モードでの参照が実行されます。
     -   `Global::runClassMethodIL` などの CIL ヘルパー メソッドは、関連性が無くなったため削除されました。

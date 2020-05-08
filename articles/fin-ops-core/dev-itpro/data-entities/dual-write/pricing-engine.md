@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: ef4465144155130087b078f9f96911df38b62c41
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173180"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270339"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
 
@@ -50,6 +50,12 @@ Microsoft Dynamics 365 Supply Chain Managementには、売買契約、価格リ�
     + 送料
     + 税合計
     + 合計金額
+    
+5. システムで取引と販売契約を考慮して価格を計算するには、次の操作を行います。
+    1. Supply Chain Management 環境に移動します。
+    2. **売掛金勘定 \> 設定 \> 売掛金勘定パラメーター** に移動します。
+    3. サイド ナビゲーション バーの **価格** タブを選択します。
+    4. **売買契約評価** クイック タブで、**マニュアル エントリ** オプションのチェックを外します。
 
 ## <a name="how-it-works"></a>この機能の動作
 

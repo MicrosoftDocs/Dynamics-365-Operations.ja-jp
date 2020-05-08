@@ -15,21 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 5dcfd0a667bfc0ded7855a6b1deb42d84d18a15e
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: a8925e8d1fe6ba20bfd791ab1deed986fac66c09
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033041"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270269"
 ---
 # <a name="best-practices-for-the-acceptance-test-library"></a>承認テスト ライブラリのベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
-
 
 ## <a name="use-var-and-declare-variables-inline"></a>var を使用して変数をインラインで宣言する
 

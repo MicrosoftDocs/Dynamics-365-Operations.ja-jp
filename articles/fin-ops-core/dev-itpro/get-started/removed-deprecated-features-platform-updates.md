@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0072ca507301fdb880f0595a06377ff01366ca20
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260532"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268750"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -46,7 +46,7 @@ ms.locfileid: "3260532"
 | **別の機能で置き換えられているか?**   | コンパイラ エラーは、コンパイラの警告を完全に置換します。  |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | **非推奨:** コンパイラ警告は、Finance and Operations アプリのバージョン 10.0.11 に対する Platform update でコンパイラ エラーになりました。 |
+| **ステータス**                         | **非推奨:** コンパイラの警告は、Finance and Operations アプリのバージョン 10.0.11 プラットフォーム更新でコンパイラのエラーになりました。 |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1 ハッシュ アルゴリズムを使用して作成された ISV ライセンス
 

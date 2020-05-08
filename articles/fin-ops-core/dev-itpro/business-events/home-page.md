@@ -3,7 +3,7 @@ title: ビジネス イベントの概要
 description: このトピックは、外部システムが Dynamics 365 Finance and Operations アプリケーションから通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 95e745704a4319d769a6b2b7e37c6065fcb1dc30
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 403143a0da1129db05725f45a01985cbf878cba7
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124828"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284393"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
@@ -192,11 +192,11 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 
 実装の統合の要件と統合ソリューションの設計はさまざまです。 統合の要件は、ビジネス イベントの消費モデルの識別に影響します。 簡単に言うと、ビジネス イベントを使用した統合を設計する際に、次の点を考慮する必要があります。
 
-- ビジネス イベントは Microsoft Flow、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用して消費できます。
-- Microsoft Flow、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自の購読を提供する必要があります。
+- ビジネス イベントは Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用して消費できます。
+- Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自の購読を提供する必要があります。
 - ビジネス イベントは、すべての法人または特定の法人で有効化できます。
 - ビジネス イベントは、一意のエンドポイントまたは同一のエンドポイントに送信できます。
-- Microsoft Flow はビジネス イベントを直接購読できます。
+- Power Automate はビジネス イベントを直接購読できます。
 
 ## <a name="idempotency"></a>べき等
 ビジネス イベントはペイロードに管理番号を含めることで消費側でべき等の動作を有効にします。 制御番号は増加する番号であり、重複や故障出荷を検出するために消費アプリケーションによって追跡できます。 制御番号は連番にできないため、順序番号と読み間違えられることはありません。 番号付けスペースに間隔がある可能性があります。
@@ -223,7 +223,7 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 | 限定されたユーザーのみがビジネス イベント カタログを表示するアクセス権を持つ必要があります。                                                                       | **BusinessEventsCatalogView**                 | なし                              |
 | 限定されたユーザーのみがビジネス イベントをアクティブにするアクセス権を持つ必要があります。                                                                               | **BusinessEventsCatalogMaintain**             | なし                              |
 | 限定されたユーザーのみがエンドポイントを作成して管理するアクセス権を持つ必要があります。                                                                            | **ビジネス イベントのセキュリティ権限**        | **ビジネス イベントのセキュリティ職務権限** |
-| ユーザーは Microsoft Flow など外部アプリケーションからアクセスが許可されているビジネス イベントのみを購読できる必要があります。 | **サービスからビジネス イベントを購読** | なし                              |
+| ユーザーは Power Automate など外部アプリケーションからアクセスが許可されているビジネス イベントのみを購読できる必要があります。 | **サービスからビジネス イベントを購読** | なし                              |
 | 限定されたユーザーのみがビジネス イベントのセキュリティ設定を表示できる必要があります。                                                                    | **BusinessEventsCatalogSecuritySetupView**    | なし                              |
 | 限定されたユーザーのみがビジネス イベントのセキュリティを管理できる必要があります。                                                                            | **ビジネス イベント カタログのセキュリティの管理** | なし                              |
 
@@ -249,7 +249,7 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 
 ### <a name="subscribe-to-business-events-from-service"></a>サービスからビジネス イベントの登録
 
-ロールを介して権限 **サービスからビジネスイベントを購読** にアクセスできるユーザーは、ロールに割り当てられたビジネス イベントのみを表示およびサブスクライブできます。これについては以下で説明します。 存在する場合にロール ベースのセキュリティの一部として行われる組織の割り当ては、ユーザーがロールを介してアクセスできる組織のビジネス イベントのみにサブスクライブ可能にすることでビジネス イベントのコンテキストで尊重されます。 この動作は、Microsoft Flow や ロジックアプリからサービス呼び出しを使用すると効果的です。
+ロールを介して権限 **サービスからビジネスイベントを購読** にアクセスできるユーザーは、ロールに割り当てられたビジネス イベントのみを表示およびサブスクライブできます。これについては以下で説明します。 存在する場合にロール ベースのセキュリティの一部として行われる組織の割り当ては、ユーザーがロールを介してアクセスできる組織のビジネス イベントのみにサブスクライブ可能にすることでビジネス イベントのコンテキストで尊重されます。 この動作は、Power Automate や ロジックアプリからサービス呼び出しを使用すると効果的です。
 
 ### <a name="backward-compatibility"></a>下位互換性
 

@@ -15,20 +15,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: a59e9f74667c25fe333957285ad768830990f43b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 6743e4b66f9433d9d550108794358a2c342bb921
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033034"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270273"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 テスト データの生成メソッドの発見可能性を単純化するために、一連のナビゲーション オブジェクトが導入されました。 生成メソッドの詳細は [テスト データのメソッド](test-data-methods.md) を参照してください。
 

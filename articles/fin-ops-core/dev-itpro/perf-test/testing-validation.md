@@ -1,9 +1,9 @@
 ---
 title: テストと検証
 description: このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
-author: RobinARH
+author: jorisdg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 24231
 ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
 ms.search.region: Global
-ms.author: shailesn
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e3e2790abfac2ef61553719d25328385c562fa
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: c8ae3e1cb2fcaae09c998b7f5e0bbbdafdafd42c
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029386"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284392"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -37,6 +37,7 @@ ms.locfileid: "3029386"
 
 ## <a name="key-concepts"></a>重要な概念
 -   SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成します。
+-   テストの分離
 -   テスト コードと FormAdaptors を管理するテスト モジュールの作成。
 -   テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。
 -   ビルド マシンとテスト モジュールを統合します。
@@ -124,6 +125,23 @@ ms.locfileid: "3029386"
 
     [![完了したテスト](./media/59-300x290.png)](./media/59.png)
 
+## <a name="test-isolation"></a>テストの分離
+テストが高い価値を持つためには、信頼できるものでなければなりません。 テストは、他のテストなどの他の要因に関係なく、常に成功または失敗します。 信頼性の低いテストの典型的な原因の 1 つとして、ダウンストリーム テストに影響を与えるデータベースに残されたデータなどのリーク状態があります。 このタイプの問題を回避するには、```SysTestTransaction``` 属性を使用できます。
+
+|  TestTransactionMode | 説明  |
+|---|---|
+| AutoRollback | **既定**。 これにより、最適な分離が提供されます。<br><br> すべてのトランザクションは、SQL セーブ ポイントを使用してロールバックされ、すべてのデータベース ステートメントは、ユーザー接続を含む、メインの接続にルーティングされます。 データは保存されません。 |
+| LegacyRollback | すべての挿入ステートメントは、クリーンアップ時に追跡および削除されます。<br><br> すべての挿入ステートメントは、行ごとにダウングレードされます。 典型的なユース ケースの 1 つは、ユーザー接続または同時実行シナリオをテストする場合です。 この分離レベルは、セットアップ データのクリーンアップをするため、推奨は各テスト メソッドを ttsBegin と ttsAbort でラップすることです。 |
+| LegacyRollbackWithUpdateTracking | すべての更新、削除、挿入ステートメントは、クリーンアップ中に追跡され、元に戻されます。<br><br> すべての挿入、更新、削除ステートメントが行ごとに追跡され、ダウングレードされます。 これは、最も遅い分離レベルです。 |
+| None | **デバッグにのみ使用します**。 これは分離を提供しません。<br><br> この設定は、テストで作成されたデータを通常のユーザー インターフェイスを使用してナビゲートできるため、一時的にテストをデバッグする場合に役立ちます。 |
+
+例:
+
+```xpp    
+    [SysTestTransaction(TestTransactionMode::LegacyRollback)]
+    class MyTestSample extends SysTestCase
+```    
+
 ## <a name="test-module-creation-to-manage-test-code-and-formadaptors"></a>テスト コードと FormAdaptors を管理するテスト モジュールの作成
 テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。
 
@@ -168,6 +186,3 @@ ms.locfileid: "3029386"
 テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に**テスト**という単語を含むすべてのテスト モジュールを検出します。 次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。 
 
 [![ビルドおよびテストの実行](./media/69.png)](./media/69.png)
-
-
-

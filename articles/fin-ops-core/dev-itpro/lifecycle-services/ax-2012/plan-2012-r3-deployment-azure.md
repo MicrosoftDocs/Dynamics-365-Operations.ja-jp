@@ -3,7 +3,7 @@ title: Azure 上での AX 2012 R3の 配置計画
 description: Microsoft Azure に Microsoft Dynamics AX 2012 R3 を展開する前に、いくつかの点を考慮し決定する必要があります。 この記事では、計画プロセスについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: dynamics-ax-2012
 ms.service: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6eec628256ce076e4ed13168b7480e4ae3c6a2db
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 4f5ea1ad7430c353e72c3232e472df6286b458b3
+ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029826"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3287839"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
@@ -229,7 +229,7 @@ AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライ
 <ul>
 <li><strong>Azure プログラムのソフトウェア保証によるライセンス モビリティ</strong>ソフトウェア保証によるライセンス モビリティにより、Microsoft ボリューム ライセンスの顧客は、Azure でアクティブなソフトウェア保証を使用して、適格なサーバー アプリケーションを配置する柔軟性を得ることができます。 このソフトウェア保証給付金では、新しいライセンスを購入する必要がなく、関連するモビリティ費用がかかりません。 これにより、既存のライセンスを Azure クラウド プラットフォームに簡単に展開できます。 詳細については、<a href="https://www.windowsazure.com/pricing/license-mobility/">このページ</a>を参照してください。 開発、テスト、および SharePoint の高可用性トポロジ トライアル版用に、Visual Studio、SQL Server および Office が提供されています。 評価の範囲は 30〜180 日間です。 それに応じてライセンスを適用してください。</li>
 <li><strong>Microsoft Dynamics AX ボリューム ライセンス バイヤー ガイド</strong> Microsoft Dynamics AX を使用したキー ライセンス オプションの概要については、<a href="https://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>を参照してください。</li>
-<li><strong>Office 365 ProPlus の共有コンピュータの有効化</strong> 共有コンピューターの有効化により、複数のユーザーがアクセスする組織内のコンピュータに Office 365 ProPlus を配置できます。 詳細については、<a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">このページ</a>を参照してください。</li>
+<li><strong>企業向け Microsoft 365 アプリの共有コンピュータの有効化</strong> 共有コンピューターの有効化により、複数のユーザーがアクセスする組織内のコンピュータに企業向け Microsoft 365 アプリを配置できます。 詳細については、<a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">このページ</a>を参照してください。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -593,7 +593,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>開発者ツール</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013 クライアント コンポーネント SDK</li>
-<li>Microsoft Office 365 ProPlus</li>
+<li>企業向け Microsoft 365 アプリ</li>
 <li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>Management Reporter コンポーネント:
@@ -976,7 +976,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>開発者ツール</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013 クライアント コンポーネント SDK</li>
-<li>Microsoft Office 365 ProPlus</li>
+<li>企業向け Microsoft 365 アプリ</li>
 <li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>Management Reporter コンポーネント:

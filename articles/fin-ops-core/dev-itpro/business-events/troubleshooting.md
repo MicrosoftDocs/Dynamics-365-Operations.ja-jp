@@ -3,7 +3,7 @@ title: ビジネス イベントのトラブルシューティング
 description: このトピックでは、ビジネス イベントのトラブルシューティングについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b1e62a00c922fe31e8c9e856489209ac6d0e33d5
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c48c142267c79cef78eddf55813366ccb9257b29
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154633"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270199"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 
@@ -43,3 +43,4 @@ ms.locfileid: "3154633"
 |アダプター クラスの addProperties メソッド コマンド チェーン (CoC) の介した強化による顧客のペイロード コンテキスト フィールド作成時の、プラットフォーム更新プログラム 30 コンパイラの警告 **クラス 'BusinessEventsServiceBusAdapter' はモデル 'ApplicationFoundation' の内部にあり、拡張することはできません**。  |これは、内部 API が拡張されないようにするコンパイラの変更です。 これはバグとして追跡中で、カスタム プロパティを追加するための代替方法が提供されます。 詳細については、この [Yammer ディスカッション](https://www.yammer.com/dynamicsaxfeedbackprograms/threads/376155850727424) を参照してください。
 |**エラー:** 要求された 1 つ以上のタイプを読み込めません。 詳細については、LoaderExceptions プロパティを取得してください。|通常、有効なビジネス イベントのエラー タブに表示されるこのエラー メッセージは、カタログを再構築することによって解決できます。
 |ビジネス イベントの警告がトリガーされない|イベントがトリガーされない理由の 1 つは、電子メール警告機能の潜在的な問題である可能性があります。 警告の電子メール送信オプションをオフにして、問題が解決するかどうかを確認してください。
+|テスト イベントをエンドポイントに送信できません。 例外メッセージ: 基礎的な接続が閉じられました: SSL/TLS セキュリティ チャネルの信頼関係を確立できませんでした。|ミドルウェアが TLS 1.2 を使用していることを確認してください

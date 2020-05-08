@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 60839bbd1b3ae642cdd419c7df2388292776a461
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172740"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275420"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
@@ -102,7 +102,7 @@ Finance and Operations アプリでデータを作成した際に、次のエラ
 
 Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表示されます：
 
-*ISV コードに起因する予期しないエラーが発生しました。（ErrorType = ClientError）プラグイン（実行）に起因する予期しない例外が発生しました。Microsoft.Dynamics.Integrator.CrmPlugins.Plugin: System.Exception: エンティティ アカウントの処理に失敗しました - （接続先が一定期間応答しなかったために接続に失敗したか、接続ホストが応答しなかったために確立された接続が失敗しました*
+*ISV コードに起因する予期しないエラーが発生しました。（ErrorType = ClientError）プラグイン（実行）に起因する予期しない例外が発生しました。Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: エンティティ アカウントの処理に失敗しました ―（接続先が一定期間応答しなかったために接続に失敗したか、接続ホストが応答しなかったために確立された接続が失敗しました*
 
 このエラーは、Finance and Operations アプリでのデータ作成時に、Common Data Service 環境が正しくリセットされていない場合に発生します。
 

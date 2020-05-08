@@ -3,7 +3,7 @@ title: 分析ワークスペースでの埋め込みレポートのカスタマ�
 description: このトピックでは、分析ワークスペースに埋め込まれているアプリケーション レポートをパワー ユーザーがカスタマイズできるようにする方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 7/08/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606a33c66da719be83f52cefe6f6a7662720b451
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a1d35087ab08bb311d02c883bdac28e526bcb3b7
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174575"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270198"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -52,7 +52,7 @@ ms.locfileid: "2174575"
 - このサービスでは、製品のアップグレード時にレポートのカスタマイズが自動的に維持されます。
 - サービスは、分析ワークスペースに対して行われたカスタマイズのエクスポートをサポートしません。
 
-### <a name="customize-an-analytical-workspace"></a>分析ワークスペースをカスタマイズします。
+## <a name="customize-an-analytical-workspace"></a>分析ワークスペースをカスタマイズします。
 
 埋め込みアプリケーション ソリューションをカスタマイズするには、ユーザーはシステム レポート エディター セキュリティ グループのメンバーである必要があります。 このセキュリティ グループのメンバーは、アプリケーション ワークスペースのアクション ウィンドウの**オプション** タブにあるボタンを使用してカスタマイズを行うことができます。 この例では、アプリケーション スイートにバンドルされている標準分析ワークスペースのいずれかをカスタマイズする方法を示します。
 
@@ -87,3 +87,15 @@ ms.locfileid: "2174575"
 1. 分析ワークスペースの、アクション ペインの、**オプション** タブの、**Power BI**グループで、**Restore Analytics** を選択してください。
 2. ワークスペースの更新を表示するには、ページを再度読み込みます。 ワークスペースから移動して戻ってくるか、ブラウザーを更新します。
 3. **報酬管理**ワークスペースで、**Analytics** タブを選択すると、アプリケーションと共にパッケージ化された元の分析ワークスペースにアクセスできます。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+次の手順に従って、分析ワークスペースを使用しようとしたときに発生する一般的な問題に対処します。
+
+**エラー メッセージ:** ***リソースにアクセスするには、Power BI にログインしてください***
+
+Power BI サービスでは、ホストされたコンテンツへのアクセスを許可するためにユーザーからの明示的なアクセス許可が必要です。 次の手順を使用して、現在のユーザーが PowerBI.com でホストされているレポートにアプリケーション スイートから接続できることを確認します。
+
+1. **リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
+2. **オプション** を選択し、左上にある **レポート カタログを開く** を選択します。
+3. ダイアログボックスの手順に従って、**Power BI に承認** して、現在のユーザーの Finance and Operations アプリにアクセスします。

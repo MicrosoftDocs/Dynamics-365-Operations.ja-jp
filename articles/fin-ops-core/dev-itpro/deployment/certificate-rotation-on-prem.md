@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 57d40f70e2968ddc8a96ed45abcf043f7469c8c8
-ms.sourcegitcommit: e543350faaa3ff1217d21c8fd50cf90110df3ef2
+ms.openlocfilehash: 1760d0c52b10be545d5fc82dc7b9ba22db11e734
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "3137256"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275639"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -62,8 +62,7 @@ ms.locfileid: "3137256"
     
         ```powershell
         # If remoting, only execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
@@ -72,6 +71,8 @@ ms.locfileid: "3137256"
     3. 次のスクリプトを実行して VM のセットアップを検証します。
     
         ```powershell
+        # If remoting, only execute
+        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         .\Test-D365FOConfiguration.ps1
         ```
 

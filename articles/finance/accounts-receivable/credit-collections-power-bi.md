@@ -3,7 +3,7 @@ title: 与信および回収管理 Power BI コンテンツ
 description: このトピックでは、与信および回収管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189111"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278877"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>与信および回収管理 Power BI コンテンツ
 
@@ -49,7 +49,7 @@ ms.locfileid: "2189111"
 1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
 2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
 3. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-4. **システム管理 > 設定 > エンティティ格納**に移動して、**CustCollectionsBIMeasurements** 集計測定を更新します。
+4. **システム管理 > 設定 > エンティティ格納** に移動して、**CustCollectionsBIMeasurementsV2** 集計測定を更新します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 

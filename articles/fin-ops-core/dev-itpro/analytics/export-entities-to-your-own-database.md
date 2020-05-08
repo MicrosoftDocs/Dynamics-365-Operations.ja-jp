@@ -3,7 +3,7 @@ title: 自分のデータベースの持ち込み (BYOD)
 description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 54cbd4ab8ab86db2c89fcaca533910f2adf2d55b
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 622307114304115aa7ba7cfd0d9932d8b5a41ced
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026147"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275615"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -74,6 +74,10 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
     この接続文字列では、論理サーバー名を **nnnn.database.windows.net** のようにする必要があります。 Azure ポータル内の論理サーバー名を検索できる必要があります。 次の図は、接続文字列の例を示します。
 
     ![新しいレコード ページの接続文字列](media/NewRecord.png)
+    
+    
+> [!NOTE]
+> 上記の画像に表示されている既定の拡張子フィールドは、BYOD には適用されません。
 
 4. **検証** を選択し、接続が正常に行われたことを確認します。
 
