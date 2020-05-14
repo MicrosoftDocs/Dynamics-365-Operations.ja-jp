@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: メンテナンスの状態
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: 資産管理と Dynamics 365 Guidesの統合
+              href: asset-management/asset-management-guides-integration.md
             - name: 資産管理モバイル ワークスペース
               href: asset-management/asset-management-mobile-workspace.md
         - name: データ管理
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 集計の測定への財務分析コードの追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerBI Desktop を使用した分析レポートの作成
+                - name: Power BI Desktop を使用した分析レポートの作成
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1315,11 +1317,11 @@
           items:
             - name: マスター プランのホーム ページ
               href: master-planning/master-planning-home-page.md
-            - name: 計画最適化
+            - name: 計画の最適化
               items:
                 - name: 計画最適化の概要
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: マイナスの手持在庫はゼロの手持在庫として処理されます
+                - name: マイナスの手持在庫数量を使用した計画
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: 計画最適化の開始
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: 最小/最大の補充プロセスの設定
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: 発注書の作業テンプレートの設定
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: 倉庫管理アプリのインストールとコンフィギュレーション
               items:
                 - name: インストールとコンフィギュレーションの概要
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: 倉庫作業用のモバイル デバイスの設定
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: 倉庫モバイル アプリで受信するライセンス プレート
+                - name: 倉庫アプリで受信するライセンス プレート
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
                   href: warehousing/tasks/set-up-mobile-device-menu.md
