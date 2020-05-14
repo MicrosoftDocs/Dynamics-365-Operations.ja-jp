@@ -990,6 +990,8 @@
               href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: プロジェクトの予測と予算
               href: project-management/project-forecasts-budgets.md
+            - name: プロジェクト予算の予測モデルを作成
+              href: project-management/create-forecast-models-project-budgets.md
             - name: 会計年度末のプロジェクト予算の転送
               href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: プロジェクト販売注文
@@ -1742,8 +1744,8 @@
               items:
                 - name: ハンガリーの概要
                   href: localizations/hungary.md
-                - name: 為替レート計算
-                  href: localizations/tasks/hu-00001-exchange-rate-calculation.md
+                - name: 平均為替レート計算
+                  href: localizations/emea-hun-average-daily-exchange-rate-calculation.md
                 - name: 固定資産の減価償却方法
                   href: localizations/emea-hun-fixed-assets-depreciation-methods.md
                 - name: 低原価固定資産
@@ -2284,6 +2286,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL 統合
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
+                - name: 監査ファイル (XML Auditfile Financieel、XAF)
+                  hred: localizations/emea-nl-audit-file.md
             - name: ノルウェー
               items:
                 - name: ノルウェーの概要
@@ -2930,7 +2934,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: 集計の測定への財務分析コードの追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: PowerBI Desktop を使用した分析レポートの作成
+                - name: Power BI Desktop を使用した分析レポートの作成
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -2978,7 +2982,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: 準備された ER ソリューションをターゲット アプリケーションでテストする
                       items:
-                        - name: (ER) コンフィギュレーションを RCS からインポートする
+                        - name: コンフィギュレーションを RCS からインポートする
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3026,6 +3030,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
                     - name: リスト
                       items:
                         - name: リスト関数
@@ -3240,12 +3246,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: 形式を作成するときにデータ モデル定義を選択する
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: グローバル リポジトリでコンフィギュレーションを検索するための拡張フィルタ オプション
-              href: ../finance/localizations/enhanced-filtering-global-repo.md
-            - name: コンテンツを XML のままで追加してレポートを生成する
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-            - name: (ER) 電子申告における会社間データ ソース
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
             - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
               items:
                 - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
@@ -3270,44 +3270,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
             - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: 財務分析コードを使用するための ER ソリューションを設計する
-              items:
-                - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
-                - name: データ ソースとして財務分析コードを使用するためのモデルをマップする
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                - name: データ ソースとして財務分析コードを使用するためのレポートを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-            - name: 生成された出力からの情報を使用して棚卸および集計を行うための ER 形式を設計する
-              items:
-                - name: 棚卸および集計を行うための形式を作成する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
-                - name: 棚卸および集計を行うための形式を構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
-                - name: 棚卸および集計の出力を生成するための計算を使用する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
-                - name: 棚卸および集計を行うための形式を実行する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
             - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
               items:
                 - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を設計する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                 - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を実行する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-            - name: 形式出力でドキュメント管理ファイルを使用する
-              items:
-                - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
-                - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
-                - name: ER 出力でドキュメント管理ファイルを使用するための形式を作成する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                - name: ER 出力でドキュメント管理ファイルを使用するための形式を実行する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                - name: ER 出力でドキュメント管理ファイルを使用するための形式を変更して実行する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: 電子申告を使用してアプリケーション データを更新する
               items:
                 - name: 電子ドキュメントを生成してアプリケーション データを更新する
@@ -3340,8 +3308,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: 計算フィールド型の ER データ ソースのパラメーター化された呼び出しをサポートする
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
             - name: コンフィギュレーション ライフサイクル
               items:
                 - name: コンフィギュレーション ライフサイクルの管理
@@ -3361,23 +3327,67 @@
                     - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: コンフィギュレーションを RCS からインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: チュートリアル
               items:
-                - name: JOIN データ ソースを使用して複数のアプリケーション テーブルからデータを取得する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                - name: データ ソースの使用方法について
+                  items:
+                    - name: 結合を使用して複数のテーブルからデータを取得する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: 生 XML を使用してコンテンツを追加する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                    - name: 計算フィールドのデータ ソースのパラメーター化された呼び出しをサポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: 会社間 ER データ ソース
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: 財務分析コードの詳細データ ソースを使用する
+                      items:
+                        - name: データ モデルのデザイン
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                        - name: モデルをマッピングして財務分析コードを使用する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                        - name: レポートをデザインする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                        - name: レポートを実行する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: 生成された出力をデータ ソースとして使用して、棚卸および集計を実行する
+                      items:
+                        - name: 形式の作成
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                        - name: 棚卸および集計を行うための形式を構成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                        - name: 棚卸および集計の出力を生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                        - name: 棚卸および集計を行うための形式を実行する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                    - name: ドキュメント関係を使用して、ドキュメント管理ファイルへアクセスする
+                      items:
+                        - name: データ モデルの準備
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                        - name: ドキュメント管理ファイルを使用するためのデータ モデルを拡張する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                        - name: 形式の作成
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                        - name: ドキュメント管理ファイルを使用するための形式を実行する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                        - name: ドキュメント管理ファイルを使用するための形式を変更して実行する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                        - name: データ ソースのデバッグ
+                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
                 - name: 国のコンテキスト依存 ER モデル マッピングを構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
                 - name: 法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                 - name: 法人ごとの ER 形式のパラメーターの設定
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
                 - name: ER 形式要素の実行を遅延する
                   items:
                     - name: シーケンス要素の実行を延期する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                     - name: XML 要素の実行を延期する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                - name: データ バインディングの相対パス
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Finance and Operations での電子申告ソリューションの使用
               items:
                 - name: フレームワークのコンフィギュレーション
@@ -3385,7 +3395,11 @@
                     - name: 電子申告フレームワークのコンフィギュレーション
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: 電子申告テンプレートのバックアップと復元
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: ER テンプレートのバックアップ ストレージ
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                        - name: ER 移行クリーンアップ
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
                     - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: 行先
