@@ -1,5 +1,5 @@
 ---
-title: '[欠落している勘定分析のキーボード ショートカット]'
+title: '財務諸表のキーボード ショートカット'
 description: このトピックでは、Management Reporter にて不明のアカウント分析を実行する際に使用可能なキーボードショートカットの一覧を扱います。
 author: ryansandness
 manager: AnnBe
@@ -23,7 +23,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/10/2019
 ms.locfileid: "2570253"
 ---
-# <a name="keyboard-shortcuts-for-missing-account-analysis"></a>[欠落している勘定分析のキーボード ショートカット]
+# <a name="keyboard-shortcuts-for-missing-account-analysis"></a>財務諸表のキーボード ショートカット
 [!include [banner](../includes/banner.md)]
 
 
@@ -77,7 +77,7 @@ ms.locfileid: "2570253"
 | --- | --- |
 | 会社ごとにフィルター処理 | Alt+C |
 | 分析コードごとのフィルター | Alt+D |
-| フィールドごとにグループをを選択する | Alt+G |
+| フィールドごとにグループを選択する | Alt+G |
 | 除外したレポート パーツおよび値の表示 | Alt+S |
 | 結果の更新 | Alt+R |
 | 選択したレポート パーツの除外 | Alt+X |
