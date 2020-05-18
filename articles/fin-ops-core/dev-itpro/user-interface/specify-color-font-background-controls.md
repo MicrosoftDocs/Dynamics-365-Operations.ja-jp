@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fbdb1037363226c40d80c4a28edf0266d12214
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: de7530429efcab3d5d9e7a8ec36bba82a9cec158
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081956"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329833"
 ---
-# <a name="font-and-background-colors-for-input-table-and-grid-controls"></a><span data-ttu-id="d0344-103">入力、テーブル、およびグリッド コントロール用のフォントと背景</span><span class="sxs-lookup"><span data-stu-id="d0344-103">Font and background colors for input, table, and grid controls</span></span>
+# <a name="font-and-background-colors-for-input-table-and-grid-controls"></a><span data-ttu-id="da36d-103">入力、テーブル、およびグリッド コントロール用のフォントと背景</span><span class="sxs-lookup"><span data-stu-id="da36d-103">Font and background colors for input, table, and grid controls</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d0344-104">このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d0344-104">This topic provides information about the new color picker control that lets users select a color.</span></span>
+<span data-ttu-id="da36d-104">このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="da36d-104">This topic provides information about the new color picker control that lets users select a color.</span></span>
 
-<span data-ttu-id="d0344-105">伝統的に、色はユーザーとコミュニケーションする理想的な方法と考えられてきました。</span><span class="sxs-lookup"><span data-stu-id="d0344-105">Traditionally, color has been considered an ideal way to communicate with a user.</span></span> <span data-ttu-id="d0344-106">たとえば、赤色は、重要な情報へのユーザーの注意を引くためによく使用されます。</span><span class="sxs-lookup"><span data-stu-id="d0344-106">For example, the color red is often used to draw the user's attention to information that is important.</span></span> <span data-ttu-id="d0344-107">ただし、一部のユーザーは特定の色または色調を区別できず、一部のユーザーは視覚障害があります。</span><span class="sxs-lookup"><span data-stu-id="d0344-107">However, some users can't distinguish certain colors or shades, and some users are blind.</span></span> <span data-ttu-id="d0344-108">したがって、ユーザーに情報を伝達するために、色のみを使用することはお勧めしません。</span><span class="sxs-lookup"><span data-stu-id="d0344-108">Therefore, we don't recommend that you use color alone to communicate information to the user.</span></span> <span data-ttu-id="d0344-109">代わりに、すべてのユーザーに情報を伝えるために、記号または追加のテキストとともに色を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0344-109">Instead, you should use color together with a symbol or additional text to convey information to all users.</span></span>
+<span data-ttu-id="da36d-105">伝統的に、色はユーザーとコミュニケーションする理想的な方法と考えられてきました。</span><span class="sxs-lookup"><span data-stu-id="da36d-105">Traditionally, color has been considered an ideal way to communicate with a user.</span></span> <span data-ttu-id="da36d-106">たとえば、赤色は、重要な情報へのユーザーの注意を引くためによく使用されます。</span><span class="sxs-lookup"><span data-stu-id="da36d-106">For example, the color red is often used to draw the user's attention to information that is important.</span></span> <span data-ttu-id="da36d-107">ただし、一部のユーザーは特定の色または色調を区別できず、一部のユーザーは視覚障害があります。</span><span class="sxs-lookup"><span data-stu-id="da36d-107">However, some users can't distinguish certain colors or shades, and some users are blind.</span></span> <span data-ttu-id="da36d-108">したがって、ユーザーに情報を伝達するために、色のみを使用することはお勧めしません。</span><span class="sxs-lookup"><span data-stu-id="da36d-108">Therefore, we don't recommend that you use color alone to communicate information to the user.</span></span> <span data-ttu-id="da36d-109">代わりに、すべてのユーザーに情報を伝えるために、記号または追加のテキストとともに色を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="da36d-109">Instead, you should use color together with a symbol or additional text to convey information to all users.</span></span>
 
-## <a name="color-selection-in-dynamics-ax-2012"></a><span data-ttu-id="d0344-110">Dynamics AX 2012 での色の選択</span><span class="sxs-lookup"><span data-stu-id="d0344-110">Color selection in Dynamics AX 2012</span></span>
-<span data-ttu-id="d0344-111">Microsoft Dynamics AX 2012 では、色の選択に次の特性がありました。</span><span class="sxs-lookup"><span data-stu-id="d0344-111">In Microsoft Dynamics AX 2012, color selection had these characteristics:</span></span>
+## <a name="color-selection-in-dynamics-ax-2012"></a><span data-ttu-id="da36d-110">Dynamics AX 2012 での色の選択</span><span class="sxs-lookup"><span data-stu-id="da36d-110">Color selection in Dynamics AX 2012</span></span>
+<span data-ttu-id="da36d-111">Microsoft Dynamics AX 2012 では、色の選択に次の特性がありました。</span><span class="sxs-lookup"><span data-stu-id="da36d-111">In Microsoft Dynamics AX 2012, color selection had these characteristics:</span></span>
 
--   <span data-ttu-id="d0344-112">Win32 カラー ピッカーが使用されていました。</span><span class="sxs-lookup"><span data-stu-id="d0344-112">It used the Win32 color picker.</span></span>
--   <span data-ttu-id="d0344-113">これには、RGB/10 進の変換に Win32 アプリケーション プログラミング インターフェイス (API) が必要でした。</span><span class="sxs-lookup"><span data-stu-id="d0344-113">It required Win32 application programming interfaces (APIs) for RGB/decimal conversion.</span></span> <span data-ttu-id="d0344-114">(入力コントロールは RGB の 10 進値を受け入れました。)</span><span class="sxs-lookup"><span data-stu-id="d0344-114">(The input control accepted a decimal value for RGB.)</span></span>
+-   <span data-ttu-id="da36d-112">Win32 カラー ピッカーが使用されていました。</span><span class="sxs-lookup"><span data-stu-id="da36d-112">It used the Win32 color picker.</span></span>
+-   <span data-ttu-id="da36d-113">これには、RGB/10 進の変換に Win32 アプリケーション プログラミング インターフェイス (API) が必要でした。</span><span class="sxs-lookup"><span data-stu-id="da36d-113">It required Win32 application programming interfaces (APIs) for RGB/decimal conversion.</span></span> <span data-ttu-id="da36d-114">(入力コントロールは RGB の 10 進値を受け入れました。)</span><span class="sxs-lookup"><span data-stu-id="da36d-114">(The input control accepted a decimal value for RGB.)</span></span>
 
 ```xpp
 Public void lookup()
@@ -65,11 +65,11 @@ Public void lookup()
 }
 ```
 
-## <a name="color-selection-for-input-controls"></a><span data-ttu-id="d0344-115">入力コントロールの色の選択</span><span class="sxs-lookup"><span data-stu-id="d0344-115">Color selection for input controls</span></span>
-<span data-ttu-id="d0344-116">現在のバージョンでは、カラー ピッカー コントロールは標準コントロールの種類です。</span><span class="sxs-lookup"><span data-stu-id="d0344-116">In the current version, the color picker control is a standard control type.</span></span> <span data-ttu-id="d0344-117">カラー ピッカー コントロールは、フォームに直接配置することも、整数または文字列コントロールのカスタム ルックアップの一部として使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="d0344-117">The color picker control can be put directly in a form, or it can be used as part of a custom lookup for an integer or string control.</span></span> <span data-ttu-id="d0344-118">次の例は、カスタム ルックアップでカラー ピッカー コントロールとやり取りする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="d0344-118">The following example shows how to interact with the color picker control in a custom lookup.</span></span> <span data-ttu-id="d0344-119">ただし、フォームでカラー ピッカーを配置し、色を選択するためのボタンをユーザーに提供する場合、コードは似たものになります。</span><span class="sxs-lookup"><span data-stu-id="d0344-119">However, the code is similar if you put the color picker in a form and provide the user with a button to select a color.</span></span>
+## <a name="color-selection-for-input-controls"></a><span data-ttu-id="da36d-115">入力コントロールの色の選択</span><span class="sxs-lookup"><span data-stu-id="da36d-115">Color selection for input controls</span></span>
+<span data-ttu-id="da36d-116">現在のバージョンでは、カラー ピッカー コントロールは標準コントロールの種類です。</span><span class="sxs-lookup"><span data-stu-id="da36d-116">In the current version, the color picker control is a standard control type.</span></span> <span data-ttu-id="da36d-117">カラー ピッカー コントロールは、フォームに直接配置することも、整数または文字列コントロールのカスタム ルックアップの一部として使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="da36d-117">The color picker control can be put directly in a form, or it can be used as part of a custom lookup for an integer or string control.</span></span> <span data-ttu-id="da36d-118">次の例は、カスタム ルックアップでカラー ピッカー コントロールとやり取りする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="da36d-118">The following example shows how to interact with the color picker control in a custom lookup.</span></span> <span data-ttu-id="da36d-119">ただし、フォームでカラー ピッカーを配置し、色を選択するためのボタンをユーザーに提供する場合、コードは似たものになります。</span><span class="sxs-lookup"><span data-stu-id="da36d-119">However, the code is similar if you put the color picker in a form and provide the user with a button to select a color.</span></span>
 
--   <span data-ttu-id="d0344-120">カラー ピッカー コントロールは、ユーザーが視覚的に色を選択したり RGB 値を指定できるように、フォームまたはカスタム ルックアップをホストすることができます。</span><span class="sxs-lookup"><span data-stu-id="d0344-120">A color picker control can be hosted in a form or a custom lookup to let the user visually pick a color or specify an RGB value.</span></span>
--   <span data-ttu-id="d0344-121">戻り値は、入力コントロール プロパティに直接割り当てることができる 10 進数値です。</span><span class="sxs-lookup"><span data-stu-id="d0344-121">The return value is a decimal value that can be assigned directly to an input control property.</span></span> <span data-ttu-id="d0344-122">(ランタイム RGB 変換は必要ありません。)</span><span class="sxs-lookup"><span data-stu-id="d0344-122">(No run-time RGB conversion is required.)</span></span>
+-   <span data-ttu-id="da36d-120">カラー ピッカー コントロールは、ユーザーが視覚的に色を選択したり RGB 値を指定できるように、フォームまたはカスタム ルックアップをホストすることができます。</span><span class="sxs-lookup"><span data-stu-id="da36d-120">A color picker control can be hosted in a form or a custom lookup to let the user visually pick a color or specify an RGB value.</span></span>
+-   <span data-ttu-id="da36d-121">戻り値は、入力コントロール プロパティに直接割り当てることができる 10 進数値です。</span><span class="sxs-lookup"><span data-stu-id="da36d-121">The return value is a decimal value that can be assigned directly to an input control property.</span></span> <span data-ttu-id="da36d-122">(ランタイム RGB 変換は必要ありません。)</span><span class="sxs-lookup"><span data-stu-id="da36d-122">(No run-time RGB conversion is required.)</span></span>
 
 ```xpp
 [Control("String")]
@@ -104,8 +104,8 @@ class integerControl
 }
 ```
 
-## <a name="using-color-in-a-table-control"></a><span data-ttu-id="d0344-123">テーブル コントロールでの色の使用</span><span class="sxs-lookup"><span data-stu-id="d0344-123">Using color in a table control</span></span>
-<span data-ttu-id="d0344-124">入力コントロールの色付けにはデザイン時の操作はありません。</span><span class="sxs-lookup"><span data-stu-id="d0344-124">There is no design-time experience for coloring input controls.</span></span> <span data-ttu-id="d0344-125">つまり、既定で「青」となるように入力コントロールをモデル化できません。</span><span class="sxs-lookup"><span data-stu-id="d0344-125">In other words, you can’t model an input control so that it's “blue” by default.</span></span> <span data-ttu-id="d0344-126">ただし、色の値を変更できるランタイム機能があります。</span><span class="sxs-lookup"><span data-stu-id="d0344-126">However, there are run-time capabilities that let you change color values.</span></span> <span data-ttu-id="d0344-127">次の例は、テーブル コントロールのセルの色を変更する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="d0344-127">The following example shows how you can change the way that the cells of a table control are colored.</span></span>
+## <a name="using-color-in-a-table-control"></a><span data-ttu-id="da36d-123">テーブル コントロールでの色の使用</span><span class="sxs-lookup"><span data-stu-id="da36d-123">Using color in a table control</span></span>
+<span data-ttu-id="da36d-124">入力コントロールの色付けにはデザイン時の操作はありません。</span><span class="sxs-lookup"><span data-stu-id="da36d-124">There is no design-time experience for coloring input controls.</span></span> <span data-ttu-id="da36d-125">つまり、既定で「青」となるように入力コントロールをモデル化できません。</span><span class="sxs-lookup"><span data-stu-id="da36d-125">In other words, you can’t model an input control so that it's “blue” by default.</span></span> <span data-ttu-id="da36d-126">ただし、色の値を変更できるランタイム機能があります。</span><span class="sxs-lookup"><span data-stu-id="da36d-126">However, there are run-time capabilities that let you change color values.</span></span> <span data-ttu-id="da36d-127">次の例は、テーブル コントロールのセルの色を変更する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="da36d-127">The following example shows how you can change the way that the cells of a table control are colored.</span></span>
 
 ```xpp
 public FormControl editControl(int column, int row)
@@ -116,9 +116,9 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-<span data-ttu-id="d0344-128">[![色分けされたセルのあるテーブル コントロールの例](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)</span><span class="sxs-lookup"><span data-stu-id="d0344-128">[![Example of a table control that has colored cells](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)</span></span>
+<span data-ttu-id="da36d-128">[![色分けされたセルのあるテーブル コントロールの例](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)</span><span class="sxs-lookup"><span data-stu-id="da36d-128">[![Example of a table control that has colored cells](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)</span></span>
 
-## <a name="using-color-in-a-grid-control"></a><span data-ttu-id="d0344-129">グリッド コントロールでの色の使用</span><span class="sxs-lookup"><span data-stu-id="d0344-129">Using color in a grid control</span></span>
+## <a name="using-color-in-a-grid-control"></a><span data-ttu-id="da36d-129">グリッド コントロールでの色の使用</span><span class="sxs-lookup"><span data-stu-id="da36d-129">Using color in a grid control</span></span>
 
 ```xpp
 public void displayOption(Common _record, FormRowDisplayOption _options)
@@ -155,8 +155,8 @@ public void displayOption(Common _record, FormRowDisplayOption _options)
 }
 ```
 
-## <a name="static-rgb-instead-of-run-time-conversion-from-integer-to-rgb-values"></a><span data-ttu-id="d0344-130">整数から RGB 値への実行時の変換ではなく静的 RGB</span><span class="sxs-lookup"><span data-stu-id="d0344-130">Static RGB instead of run-time conversion from integer to RGB values</span></span>
-<span data-ttu-id="d0344-131">以前は、Win32 カラー ピッカーが RGB 値を返す一方、背景色 API が整数を受け入れていたため、**WinAPI::RGB2Int** を使用したランタイム変換が必要でした。</span><span class="sxs-lookup"><span data-stu-id="d0344-131">Previously, run-time conversion that used **WinAPI::RGB2Int** was required, because the Win32 color picker returned an RGB value, whereas the background color APIs accepted an integer.</span></span> <span data-ttu-id="d0344-132">この新しいカラー ピッカーは、コントロールの整数の消費に合わせて整数を返すため、このランタイム変換は不要です。</span><span class="sxs-lookup"><span data-stu-id="d0344-132">This run-time conversion isn't required, because the new color picker returns an integer to match the control's consumption of an integer.</span></span> <span data-ttu-id="d0344-133">また、.NET コードは、色に RGB 値を頻繁に使用すると理解されます。</span><span class="sxs-lookup"><span data-stu-id="d0344-133">Additionally, it’s understood that .NET code often uses RGB values for colors.</span></span> <span data-ttu-id="d0344-134">したがって、そのような場合は、使用するたびにランタイム変換を行う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d0344-134">Therefore, in those cases, run-time conversion of colors isn't required for each use.</span></span> <span data-ttu-id="d0344-135">代わりに、静的色変数を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="d0344-135">Instead, you can define static color variables.</span></span> <span data-ttu-id="d0344-136">次に 3 つの例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="d0344-136">Here are three examples.</span></span>
+## <a name="static-rgb-instead-of-run-time-conversion-from-integer-to-rgb-values"></a><span data-ttu-id="da36d-130">整数から RGB 値への実行時の変換ではなく静的 RGB</span><span class="sxs-lookup"><span data-stu-id="da36d-130">Static RGB instead of run-time conversion from integer to RGB values</span></span>
+<span data-ttu-id="da36d-131">以前は、Win32 カラー ピッカーが RGB 値を返す一方、背景色 API が整数を受け入れていたため、**WinAPI::RGB2Int** を使用したランタイム変換が必要でした。</span><span class="sxs-lookup"><span data-stu-id="da36d-131">Previously, run-time conversion that used **WinAPI::RGB2Int** was required, because the Win32 color picker returned an RGB value, whereas the background color APIs accepted an integer.</span></span> <span data-ttu-id="da36d-132">この新しいカラー ピッカーは、コントロールの整数の消費に合わせて整数を返すため、このランタイム変換は不要です。</span><span class="sxs-lookup"><span data-stu-id="da36d-132">This run-time conversion isn't required, because the new color picker returns an integer to match the control's consumption of an integer.</span></span> <span data-ttu-id="da36d-133">また、.NET コードは、色に RGB 値を頻繁に使用すると理解されます。</span><span class="sxs-lookup"><span data-stu-id="da36d-133">Additionally, it’s understood that .NET code often uses RGB values for colors.</span></span> <span data-ttu-id="da36d-134">したがって、そのような場合は、使用するたびにランタイム変換を行う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="da36d-134">Therefore, in those cases, run-time conversion of colors isn't required for each use.</span></span> <span data-ttu-id="da36d-135">代わりに、静的色変数を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="da36d-135">Instead, you can define static color variables.</span></span> <span data-ttu-id="da36d-136">次に 3 つの例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="da36d-136">Here are three examples.</span></span>
 
 ```xpp
 Static int GrayColor = 220 + 220 <<#offset8 + 220<<offset16;
