@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f8379d65eb41a82b97ed7471620bae4d891f857
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c21c2793430141b77899f85150506668fbca3fd7
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811687"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329829"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 

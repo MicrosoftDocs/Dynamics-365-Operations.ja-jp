@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) の新機能および変更された機能
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のリリース計画、主要な発表などへのリンクを提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 03/24/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f9e6deac69851aee55a6ecd400cfaa3333974fc3
-ms.sourcegitcommit: 794cbfee6077e75747cfcc4a977b7ab01cbc1a2d
+ms.openlocfilehash: abb42341dc134c3ddf79efffa88b72a0858ba97e
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3165040"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332335"
 ---
 # <a name="whats-new-or-changed-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能および変更された機能
 
@@ -34,6 +34,17 @@ LCS の使用を開始するには、[Lifecycle Services (LCS) ユーザーガ�
 > LCS 機能およびサービスの変更は、ブログ投稿では発表されなくなります。 LCS 機能の説明については、[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) で提供されます。 
 
 次のセクション リストでは、LCS リリースに含まれる機能を一覧表示します。
+
+## <a name="april-2020---wave-2"></a>2020 年 4 月 - ウェーブ 2
+
+| 面 | 機能 |
+|------|---------|
+| 環境アクション | [Lifecycle Services におけるデュアル書き込み機能のサポート ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-support-dual-write-capabilities) - プレビュー|
+| 環境アクション | [レベル 2 ～ 5 の標準承認テスト (またはサンドボックス) 環境へのリモート デスクトップ アクセスの削除](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments) - プレビュー|
+
+## <a name="april-2020---wave-1"></a>2020 年 4 月 - ウェーブ 1
+
+このリリースには、一般的なパフォーマンスの向上および小さなバグの修正が含まれています。  
 
 ## <a name="march-2020---wave-2"></a>2020 年 3 月 - ウェーブ 2
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31081
 ms.assetid: 09358d27-6edc-420a-a7b6-83785b8ba0c6
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c23dceec0c445f468db0f45384b8d78cfff5690
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 89f1082670341b2e4b4c18944d0138f3d1a125ae
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029377"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329884"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad8d0e7e8fff7142cfb613947e387b3c2f9d5a52
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aead9a03f9ab628b303ef02065605123eb212799
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183378"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329951"
 ---
 # <a name="d-classes"></a>D クラス
 
@@ -8875,23 +8875,6 @@ ignoreContext
 #### <a name="return-value"></a>戻り値
 
 テーブルのセキュリティ キーの ID。テーブルのセキュリティ キーがない場合は 0 (ゼロ)。
-
-#### <a name="examples"></a>例
-
-次の例は、テーブルのセキュリティ キー ID の取得を示しています。
-
-    DictTable dt; 
-    DictSecurityKey dsk; 
-    dt = new DictTable(tablenum(CustTable)); 
-    if (dt) 
-    { 
-        if (0 != dt.securityKeyId()) 
-        dsk = new DictSecurityKey(dt.securityKeyId()); 
-        if (dsk) 
-        { 
-            print (strfmt("The table's security key is %1.", dsk.name())); 
-        } 
-    }
 
 ### <a name="method-singularlabel"></a>メソッド singularLabel
 

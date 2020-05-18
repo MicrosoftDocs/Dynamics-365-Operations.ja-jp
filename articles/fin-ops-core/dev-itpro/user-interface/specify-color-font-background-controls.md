@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fbdb1037363226c40d80c4a28edf0266d12214
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: de7530429efcab3d5d9e7a8ec36bba82a9cec158
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081956"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329833"
 ---
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 

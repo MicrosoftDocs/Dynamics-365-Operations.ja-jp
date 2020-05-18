@@ -3,13 +3,13 @@ title: 拡張可能なコントロール レイアウトのガイドライン
 description: この記事では、拡張可能なコントロールのレイアウトとサイズを指定するときに従うガイドラインについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4416bfb5198869c5fce75e67d4ce637362d6379a
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: ea915608ba4ded28df01d403b88cae63faed73fe
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029375"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329895"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 
@@ -57,7 +57,7 @@ ms.locfileid: "3029375"
 
 #### <a name="children"></a>子
 
--   このコンテナを介して子を追加するためにコンテンツ ハンドラー (追加、置換) を使用する場合は、**$ data.Children** を使用します。 このコントロールがコンテナーである場合にのみ使用する必要があります。
+-   このコンテナを介して子を追加するためにコンテンツ ハンドラー (追加、置換) を使用する場合は、**$data.Children** を使用します。 このコントロールがコンテナーである場合にのみ使用する必要があります。
 
 **使用例:**
 

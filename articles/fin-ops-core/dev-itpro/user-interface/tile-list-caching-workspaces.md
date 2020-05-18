@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 16341
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6789a83b303c792cf20f3b4bd203bc679e63610
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 9ac034aae7c9e8cbd272aed0129ce565f53a9aa9
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033051"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329828"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 

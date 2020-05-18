@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31181
 ms.assetid: 6a7bb5b0-7350-46f1-a641-3f7a3187b687
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42210aff4ab148ce18ca2d46c3d10ce01b1adabf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a54e95bdf881ef1caf6b118569759c6d19ab2a5c
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191759"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329835"
 ---
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 

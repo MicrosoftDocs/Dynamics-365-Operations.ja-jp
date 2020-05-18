@@ -3,7 +3,7 @@ title: クラウド展開の概要
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Finance and Operations アプリで管理する必要があるデータおよびカスタマイズについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: a4b564a9c5c5ce1dcfc67ea4da15cbd01674b362
-ms.sourcegitcommit: 6d262354f317d5971cf3ef05cffb08f1a564af8b
+ms.openlocfilehash: 6d773436cfad79c8ef8f5baf13f321e552cefb4b
+ms.sourcegitcommit: edc7d2e60248a27eeed9085fd95229eea4cf34cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "3135339"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329597"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -126,8 +126,14 @@ Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure デ�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="why-does-the-status-display-migrating-on-my-environment-in-lcs"></a>LCS の環境で状態が [移行中] と表示されるのはなぜですか。
-最高のエクスペリエンスとパフォーマンスを提供するために、Microsoft は環境の保守作業を行う必要があります。 これらの一部の保守作業中に、環境の状態が [移行中] と表示される場合があります。 ステータスが [配置済] に戻るまでは、パッケージ アプリケーションなどのライフサイクル操作を実行することができません。 Finance and Operations アプリに対する影響はありません。 ユーザーはサービスが中断されることなく、通常の操作を続行できます。 保守作業を開始する前に電子メール通知を送信します。
+### <a name="why-does-the-status-display-maintenance-on-my-environment-in-lcs"></a>LCS の環境で状態が [メンテナンス] と表示されるのはなぜですか。
+最高のエクスペリエンスとパフォーマンスを提供するために、Microsoft は環境の保守作業を行います。 これらの一部の保守作業中に、環境の状態として次のいずれかの状態が表示される場合があります。
+
+- メンテナンスの準備中
+- メンテナンスの準備完了
+- メンテナンス中
+
+環境がこの状態になり、状態が [配置済] に戻るまでは、パッケージ アプリケーションなどのライフサイクル操作を実行することができません。 Finance and Operations アプリに対する影響はありません。 ユーザーはサービスが中断されることなく、通常の操作を続行できます。 管理操作により環境がこの状態になる前に電子メール通知が送信されます。
 
 ### <a name="how-do-i-connect-to-the-sql-database-on-my-sandbox-environment"></a>サンドボックス環境で SQL データベースに接続するにはどうすればよいですか。
 次の手順に従って、Tier 2+ のサンドボックス環境内の SQL データベースに接続してください。

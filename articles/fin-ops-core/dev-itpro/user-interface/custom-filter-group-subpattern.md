@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 28231
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71d873741b9df57a612831812406b07976f09416
-ms.sourcegitcommit: 6dd2a77cae05b5b634943e4f37b7cb33c7f1da15
+ms.openlocfilehash: 1294d642316ab6c548f3473d6336b23921960489
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3281526"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329925"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 

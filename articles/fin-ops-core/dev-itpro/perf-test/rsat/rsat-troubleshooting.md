@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 467a9d9f5c3a935d9252dc1465d2e6588916f0db
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: a0f3e1a0e02fdc0090f2e8b8cd9c1f790fb80da1
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248700"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346636"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング 
 
@@ -77,7 +77,7 @@ There was no endpoint listening at https://<yourURL>soap.sandbox.operations.dyna
 An error occurred while making the HTTP request to <Hostname>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.
 ```
 
-設定ダイアログ ボックスで正しい SOAP ホスト名を指定したと仮定する場合、テスト ツールがインストールされているクライアント コンピューターで、次の PowerShell スクリプトを実行します。
+RSAT 設定ダイアログ ボックスで正しい SOAP ホスト名を指定したと仮定する場合、テスト ツールがインストールされているクライアント コンピューターで、次の PowerShell スクリプトを実行します。
 
 ```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
@@ -87,7 +87,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 
 レジストリ キーを手動で設定することもできます。
 
-### <a name="cannot-enumerate-error"></a>エラーを列挙できません
+### <a name="cannot-enumerate-ax-users-error"></a>AX ユーザーを列挙できないエラー
 
 テスト ケースを実行すると、次のエラーが表示される場合があります。エラーの詳細には、次のメッセージが含まれている場合があります。
 
@@ -98,11 +98,11 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 
 ![エラー メッセージ列挙ボックス](media/cannot-enumerate.png)
  
-このエラーを解決するには、RSAT の設定ダイアログ ボックスで指定されている **管理ユーザー名** を確認します。 **管理者ユーザー名**は、RSAT が接続している環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。
+このエラーを解決するには、RSAT の設定ダイアログ ボックスで指定されている **管理ユーザー名** を確認します。 **管理者ユーザー名**は、RSAT が接続している Finance and Operations テスト環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。 また、ユーザー アカウント (電子メール アドレス) は、テスト環境と同じテナントに属している必要があります。 たとえば、テスト環境のテナントが **contoso.com** 場合、管理ユーザーは **\@constoso.com** で終了する必要があります。
 
 ## <a name="browser"></a>ブラウザー
 
-Active Directory のセキュリティ設定が原因で、Chrome ブラウザーが Regression Suite Automation Tool で機能しない場合があります。 この場合は、Internet Explorer ブラウザーを使用するように設定を変更します。
+Active Directory のセキュリティ設定が原因で、Google Chrome ブラウザーが Regression Suite Automation Tool で機能しない場合があります。 この場合、新しい Microsoft Edge または Internet Explorer を使用するように RSAT 設定を変更し ます。
 
 ## <a name="excel-data-tabs"></a>Excel のデータ タブ
 

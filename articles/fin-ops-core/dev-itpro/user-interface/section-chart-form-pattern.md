@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 29271
 ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ad5dbf75a2d550e198ac8e1338505a12755f526
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e2c3d2cfe857580fcb9507755ba76d382a358650
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811688"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329865"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
@@ -38,7 +38,7 @@ ms.locfileid: "2811688"
 ## <a name="wireframe"></a>ワイヤーフレーム
 [![セクション グラフのフォーム パターンのワイヤーフレーム](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル

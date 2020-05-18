@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 12414
 ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79f2ed4a581fe8b435a028101e16e0e9b8ed31
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 91feabff07cc87bebd34ff6ee72c1f14b5f10b69
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191775"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329891"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 

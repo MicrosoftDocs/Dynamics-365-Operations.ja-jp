@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 125983
 ms.assetid: 52a14e01-8e80-4e12-8c92-ab8e28ffed62
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 4cad443dd31ed424cb6d6581f08ff4716ef362de
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e39677aac31570ce470d9b849886d0a1c739def4
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191763"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329950"
 ---
 # <a name="public-javascript-apis-for-extensible-controls"></a>拡張可能なコントロールのパブリック JavaScript API
 

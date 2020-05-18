@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 29151
 ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edae31400431b0d9d7d0cc2e12c6bd4df94a20b1
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: f42cfab9e509a364448a5af16a761c4c43584c58
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658749"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329840"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
@@ -50,7 +50,7 @@ ms.locfileid: "2658749"
 
 [![タブ付きワークスペースのワイヤーフレーム](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
 Microsoft Dynamics AX 2012 ロール センターは、アクティビティに特化した複数のワークスペースで置き換えられました。
 
 ## <a name="model"></a>モデル

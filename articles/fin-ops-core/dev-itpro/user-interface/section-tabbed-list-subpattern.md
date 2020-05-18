@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 29291
 ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3855a2d9f7cbcee8c11ef4eb5a720378d4bacb6
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: c08a0ac1043e80eb649764ea5dc84c53924aceb5
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658826"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329874"
 ---
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 

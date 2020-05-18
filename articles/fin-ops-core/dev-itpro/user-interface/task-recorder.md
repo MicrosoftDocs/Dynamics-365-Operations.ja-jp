@@ -3,14 +3,14 @@ title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1679d10c57bbfc8d4b9b59e3bb5bccb9b7315aa
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 00f0eb5243e7a5d5a4606df0854bf8c148dbbc82
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275663"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329841"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -385,16 +385,26 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
         ...
     ```
 
-3.  新しい (Chromium ベースの) Microsoft Edge ブラウザー、または Google Chrome を開きます。
-4.  Microsoft Edge で **設定とその他の &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
+3.  **21Vianet 配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 **.com** を **.cn** に置き換えます
+    ```xpp
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.cn/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  最新の Microsoft Edge ブラウザーまたは Google Chrome を開きます。
+5.  Microsoft Edge で **設定とその他 &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
 
     ![このイメージは、Google Chrome の拡張機能メニューの場所を示しています。](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-5.  **開発者モード** ボックスをオンにします。
-6.  **展開された拡張子の読み込み**をクリックします。
-7.  タスク レコーダー拡張子を含むフォルダーを参照し、フォルダーを選択して、**OK** をクリックします。
-8.  拡張機能が有効になるように、**有効** ボックスが選択されていることを確認します。
-9.  ブラウザーを再起動します。
+6.  **開発者モード** を選択します。
+7.  **展開された拡張子の読み込み**をクリックします。
+8.  タスク レコーダー拡張子を含むフォルダーを参照し、フォルダーを選択して、**OK** をクリックします。
+9.  拡張機能が有効になるように、**有効** が選択されていることを確認します。
+10.  ブラウザーを再起動します。
 
 タスク レコーダーは、クライアントが実行しているタブのスクリーンショットを撮影します。 これらのスクリーンショットは、記録が再生されてから 1 週間利用できます。 (Platform update 16 より前のプラットフォーム バージョンを実行している場合、スクリーンショットは 15 分間しか使用できません。) スクリーンショットが期限切れになっている場合は、再度タスク記録を再生して再生成できます。
 

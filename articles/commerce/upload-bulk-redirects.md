@@ -3,7 +3,7 @@ title: URL リダイレクトの一括アップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce でリダイレクトのコンマ区切り値 (csv) ファイルをアップロードすることによって、URL リダイレクトを一括して実装する方法について説明します。
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0f40aba0fdab9eb4cf17f0926f5b394f18933eb8
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: 08c209cb2295d24d117cfd3c450aed8bfc057732
+ms.sourcegitcommit: 71fec2553158c332ce4d4bfcedc2c1ab58c1a1a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096486"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340474"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 
@@ -55,7 +55,7 @@ URL リダイレクトを処理するために、Commerce では、単純です�
 
 次の例では、リダイレクトされた CSV ファイルのリダイレクト行セットを示します。
 
-```
+```plaintext
 https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301, true
 
 https://www.oldsite.com/news, https://www.newsite.com/updates, 301, false
@@ -132,7 +132,7 @@ https://www.oldsite.com/news, https://www.newsite.com/updates, 301
 
 [ユーザー ログイン用のカスタム ページの設定](custom-pages-user-logins.md)
 
-[Commerce 環境での複数の B2C テナントの構成](configure-multi-B2C-tenants.md)
+[Commerce 環境での複数の B2C テナントのコンフィギュレーション](configure-multi-B2C-tenants.md)
 
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: fec2ce7e5e02caaa96c8cd372193ef0894f82453
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 79f67abdd45d342ee8f09a375c676fee3ec41c9b
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070783"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329831"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
@@ -51,8 +51,8 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 > [!NOTE]
 > カスタム コントロールは、次の製品バージョンでのみサポートされます。
-> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリ更新プログラム 3 と Microsoft Dynamics 365 Retail アプリ更新プログラム 3
-> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリ更新プログラム 4 と Microsoft Dynamics 365 Retail アプリ更新プログラム 4
+> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 3
+> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 4
 
 ## <a name="create-a-custom-control"></a>カスタム コントロールの作成
 
@@ -99,14 +99,6 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 8. **ProductAvailabilityPanel.ts** ファイルを開いて、次のコードを貼り付けます。
 
     ```typescript
-    /**
-        SAMPLE CODE NOTICE
-        THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-        OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-        THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-        NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-    **/
-
     import {
         SimpleProductDetailsCustomControlBase,
         ISimpleProductDetailsCustomControlState,

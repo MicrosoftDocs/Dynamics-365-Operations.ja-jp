@@ -3,7 +3,7 @@ title: 二重書き込みウィザードを使用して環境をリンクする
 description: このトピックでは、二重書き込みウィザードを使用して、Finance and Operations アプリ環境を Common Data Service 環境にリンクする方法について説明します。
 author: sabinn-msft
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05ccc8458881e47e42ae29d941b25cf5afe04504
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 77057f846532c795a3852eabc9297908cff2e57a
+ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279124"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353677"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
@@ -59,6 +59,19 @@ Finance and Operations アプリを Common Data Service 環境にリンクしま
 
 > [!NOTE]
 > エンティティ マップが表示されない場合、または空白のページが表示される場合は、Finance and Operations アプリのエンティティ マップ ソリューションをインストールしてください。
+
+7. 二重書き込みエンティティ マップ ソリューションをインストールします。
+
+    1. Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューションの管理** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) を参照してください。
+
+    2. Finance and Operations アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのエンティティ マップを適用します。 ソリューションを適用すると、既定のエンティティ マップが公開されていることが確認できます。
+
+        ![エンティティ マップの適用](media/apply-entity-maps.png)
+
+Microsoft が発行した二重書き込みエンティティ マップ ソリューションを環境に正常にインポートして適用しました。
+
+![二重書き込みのインポートと適用](media/dual-write-imported-applied.png)
+
 
 ## <a name="next-steps"></a>次のステップ
 

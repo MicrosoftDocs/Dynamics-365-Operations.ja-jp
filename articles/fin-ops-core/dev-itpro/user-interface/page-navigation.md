@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 105091
 ms.assetid: 26f373fa-13b7-4f1b-ad16-95499d19874f
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 237a0e3664423658a55365f0aeadbe0d7b076487
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: fcb37db12063a9cc8f6dfae2e29e3bbf77cbe3aa
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578260"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329870"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 

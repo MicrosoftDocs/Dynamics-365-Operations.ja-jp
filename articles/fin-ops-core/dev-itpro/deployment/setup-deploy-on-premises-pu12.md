@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 446ce4f04000c2fe7c110e6e106dc67b2d6efb51
-ms.sourcegitcommit: 7efc297817f8e8ab7fccca280d9d85a988786aa9
+ms.openlocfilehash: fe5139ca8acb67d02a48884fc9a9d29fa1f4f6a0
+ms.sourcegitcommit: ed9b1a2800efaaec4c31439bbd1d63e9d1a7d52f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277984"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3349233"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -66,6 +66,8 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
   > ドメイン コントローラは、Microsoft Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。    ドメイン機能レベルの詳細については、次のトピックを参照してください。
   >   - [Active Directory 機能レベルとは](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
   >   - [Active Directory ドメイン サービス機能のレベルを理解する](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+  >   - [双方向の完全な信頼](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
+
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -653,18 +655,12 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > [!NOTE]
     > Always-On が [初期データ同期ページの選択 (可用性グループ ウィザードで常に使用する)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards) で説明されているとおりに設定され、[セカンダリ データベースを手動で準備する](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs) の指示に従っていることを確認します。
 
-2. ドメイン ユーザーとして SQL サービスを実行します。
-3. Finance + Operations を構成するために証明機関から SSL 証明書を取得します。 テストの目的で、自己署名証明書を作成して使用することができます。 次の例にあるコンピューター名とドメイン名を置き換える必要があります。
-
-    **クラスター化された SQL インスタンスの自己署名証明書**
-
-    ```powershell
-    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contoso.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contoso.com"
-    ```
+2. ドメイン ユーザーまたはグループ管理サービス アカウントとして SQL サービスを実行します。
+3. Finance + Operations 向けに SQL Server を構成するために証明機関から SSL 証明書を取得します。 テストの目的で、自己署名証明書を作成して使用することができます。 次の例にあるコンピューター名とドメイン名を置き換える必要があります。
 
     **Always-On SQL インスタンスの自己署名証明書**
 
-    Always-On のテスト証明書を設定する場合は、以下の**リモート**スクリプトを使用できます。これは、**マニュアル**スクリプトおよび手順 **4.**、**5.**、**6.** と同じ方法で実行します。
+    Always-On 用の証明書のテストを設定する場合は、次の**リモート処理**スクリプトを使用します。 これにより、次の**手動**スクリプトが実行され、手順 **a ～ e** が実行されます。
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -672,33 +668,36 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
         -SqlListenerName dax7sqlaosqla
     ```
 
-    テスト証明書の**手動**作成。
-    ```powershell
-    # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
+    **SQL Server を使用した Always-On SQL または Windows Serverフェールオーバー クラスタリングの手動自己署名ステップ** 
+        
+    SQL クラスターの各ノードに対して、次の手順を実行します。 
 
+    1. 次の PowerShell スクリプトを、SQL Server Always-On レプリカごとに実行します。
+
+    ```powershell
     # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
     # Run script on each node
     $computerName = $env:COMPUTERNAME.ToLower()
     $domain = $env:USERDNSDOMAIN.ToLower()
     $listenerName = 'dax7sqlaosqla'
-    $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
+    $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider' -CertStoreLocation "cert:\LocalMachine\My"
     ```
 
-4. SQL サーバーで SSL を構成するには、証明書を使用します。 [Microsoft 管理コンソールを使用して SQL Server のインスタンスに対する SSL 暗号化を有効にする方法](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console) の手順に従います。
-5. SQL クラスターの各ノードに対して、次の手順を実行します。 非アクティブなノードで変更を加えて、変更が行われた後フェール オーバーするようにしてください。
-
-    1. LocalMachine\\My に証明書をインポートします。Always-On を設定していない限り、証明書は既にノードに存在します。
-    2. SQL サービスを実行するために使用されるサービス アカウントに証明書のアクセス許可を付与します。 Microsoft 管理コンソール (MMC) で証明書 (**certlm.msc**) を右クリックし、**タスク** \> **秘密キーの管理**を選択します。
-    3. 証明書の拇印を HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate に追加します。 たとえば、with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
-        1. スタート メニューから、**regedit** をタイプし、**regedit** を選択してレジストリ エディターを開きます。
-        2. 証明書に移動し、**変更**を右クリックしてから、証明書の拇印に値を置き換えます。
-    4. Microsoft SQL Server 構成マネージャーで、**ForceEncryption** を**はい**に設定します。
+    2. SQL サービスを実行するために使用されるアカウントに証明書のアクセス許可を付与します。 
+        1. \[コンピューター証明書の管理\] (**certlm.msc**) を開きます。
+        2. 作成した証明書を右クリックし、**タスク** \> **プライベート キーの管理** をクリックします。
+        3. SQL Server サービス アカウントを追加し、読み取りアクセスを許可します。
+    3. Microsoft SQL Server Configuration Manager で **ForceEncryption** と新しい **証明書**を有効にします。
         1. **SQL Server 構成マネージャー**で、**SQL Server ネットワークの構成**を展開し、**サーバーのインスタンスのプロトコル**を右クリックしてから、**プロパティ**を選択します。
-        2. **インスタンス名プロパティのプロトコル**ダイアログ ボックスの**証明書**タブで、**証明書**ボックスのドロップダウン メニューから目的の証明書を選択して、**OK** をクリックします。
-        3. **フラグ**タブの **ForceEncryption** ボックスで、**はい**を選択してから、**OK** をクリックします。
-        4. SQL Server サービスを再起動します。
+        2. **プロトコル** ダイアログ ボックスの **証明書** タブで、**証明書** ボックスのドロップダウン メニューから目的の証明書を選択します。
+        3. **プロパティ** ダイアログ ボックスの **フラグ** タブにある **ForceEncryption** ボックスで、**はい** を選択します。
+        4. **OK** を選択して保存します。
+    4. 各 SQL クラスター ノードから証明書 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼できるルートにインストールします。 Always-On クラスターには少なくとも 2 つの証明書がありますが、追加のレプリカがある場合はそれ以上の証明書が必要になる場合があります。 
+    5. SQL Server サービスを再起動します。
+   > [!NOTE] 
+   > 詳細は、[Microsoft 管理コンソールを使用して SQL Server のインスタンスに対する SSL 暗号化を有効にする方法](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console)を参照してください。
 
-6. 証明書の公開鍵 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼できるルートにインストールします。
+
 
 > [!IMPORTANT]
 > リモート処理を使用していた場合は、設定が完了するとクリーンアップ手順を実行します。 詳細については、[20. CredSSP を終章処理する](#teardowncredssp) セクションを参照してください。

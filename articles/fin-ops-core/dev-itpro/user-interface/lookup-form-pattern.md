@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 12911
 ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a80213d34e6d12e2c802f631d8fbfb5321b4d39a
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 6e565ec685395241c3a8cc667afead4b9fa00840
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029376"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329878"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 

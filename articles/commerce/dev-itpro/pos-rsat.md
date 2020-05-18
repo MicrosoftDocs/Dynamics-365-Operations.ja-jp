@@ -3,7 +3,7 @@ title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: acfd64af6ed4b4fc0a9afdb608056f6b77548d47
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 75bbc8e52ffdf337e9cbb705290adebbe1b0b701
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249024"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290213"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -166,6 +166,9 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 ### <a name="create-a-recording"></a>記録の作成
 
+> [!IMPORTANT]
+> レコーディングを作成する前に、[アプリ ツアーの表示] をオフにして、[ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (デモ データが使用されている場合にのみ該当) に移動します。
+
 次の手順に従い、テスト レコーダーを使用して新しい記録を作成します。
 
 1. クラウド POS を起動します。
@@ -231,19 +234,12 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 
 次の手順では、POS のテスト ケースを実行するために必要なコンフィギュレーションについて説明します。
 
-POS RSAT のプレビュー バージョンを使用している場合、RSAT のインストール後に、Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config 構成ファイルに次の設定を追加します。 このファイルは、メインの RSAT インストール フォルダ (通常は C:\Program Files (x86)\Regression Suite Automation Tool) にあります。
-
-```xml
-<add key="RetailPos" value="true" />
-```
-
-この設定を使用しない場合、**RSAT の設定**タブに Retail POS タブは表示されません。
-
 ### <a name="configure-the-pos-settings"></a>POS 設定のコンフィギュレーション
 
 1. デスクトップから RSAT を開きます。
 2. 右上にある**設定**ボタンを選択して、RSAT をコンフィギュレーションします。
-3. **設定**ダイアログ ボックスの **Retail POS** タブの**再生環境**タブで、次のフィールドを設定します。
+3. **設定** ダイアログ ボックスで、**オプション** タブをクリックし、**Retail POS の構成** オプションを選択して Retail POS の自動化を有効にします。
+4. **設定**ダイアログ ボックスの **Retail POS** タブの**再生環境**タブで、次のフィールドを設定します。
 
     + **Cloud POS URL** – テストを実行する Cloud POS 環境の URL を入力します。
     + **Commerce Scale Unit URL** – デバイスがまだ有効化されていない場合にデバイスの有効化に使用する、Commerce Scale Unit URL を入力します。
@@ -259,7 +255,7 @@ POS RSAT のプレビュー バージョンを使用している場合、RSAT �
 
     [![再生環境](./media/Settings.PNG)](./media/Settings.PNG)
 
-4. **POS ログイン資格情報**タブを選択します。
+5. **POS ログイン資格情報**タブを選択します。
 
     記録セッション中、テスト レコーダーは POS からのユーザー名のみをキャプチャします。 パスワードは保存されません。 ただし、テストを実行するには、POS へのサインインに使用するユーザー名とパスワードの両方が必要です。 このタブは POS のユーザー名とパスワードを取得して、パスワード情報が記録ファイルの外部に安全に保管されるようにします。 テストの実行時に、ユーザー ID は、RSAT で入力されたものと同じユーザー ID にマップされ、パスワードが取得されます。
     
@@ -267,15 +263,15 @@ POS RSAT のプレビュー バージョンを使用している場合、RSAT �
 
     [![POS ログインの資格情報](./media/PosLogin.png)](./media/PosLogin.png)
 
-5. **新規** を選択します。
+6. **新規** を選択します。
 
     [![POS ユーザー](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-6. **ユーザー名**フィールドに、POS へのサインイン用のユーザー名を入力します。
-7. **パスワード**フィールドに、POS へのサインイン用のパスワードを入力します。
-8. 手順 6～8 を繰り返して、POS にサインインするための他のユーザー名とパスワードを入力します。
-9. 一連の POS サインイン資格情報を編集するには、**編集**を選択します。
-10. 一連の POS サインイン資格情報を削除するには、**削除**を選択します。
+7. **ユーザー名** フィールドに、POS へのサインイン用のユーザー名を入力します。
+8. **パスワード** フィールドに、POS へのサインイン用のパスワードを入力します。
+9. 手順 6～8 を繰り返して、他のユーザー名とパスワードを入力します。
+10. 一連の POS サインイン資格情報を編集するには、**編集**を選択します。
+11. 一連の POS サインイン資格情報を削除するには、**削除**を選択します。
 
 ## <a name="run-tests"></a>テストの実行
 
@@ -369,6 +365,7 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 
 ### <a name="creating-test-cases-by-using-the-test-recorder"></a>テスト レコーダーを使用したテスト ケースの作成
 
++ レコーディングを作成する前に、[アプリ ツアーの表示] をオフにして、[ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (デモ データが使用されている場合にのみ該当) に移動します。
 + すべての記録が、POS のログイン画面から開始されていることを確認します。
 + 個々の記録を簡潔にし、1 人のユーザーが実行するビジネス タスク (販売トランザクションの作成など) に注目します。 この方法を使用すると、テスト ケースの管理と再利用が容易になります。
 + 機密情報を含むシナリオは記録しないでください。
@@ -378,6 +375,7 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 + キー操作の記録のパフォーマンスは遅くなる可能性があります。すべてのイベントが正しくキャプチャされるように、記録中はゆっくり入力してください。
 + 現在、周辺機器のエミュレーションはサポートされていません。キーボード ウェッジ ベースのデバイスを使用してください。
 + 複数のキー プレス イベントが記録される可能性があるため、記録中にキーを押したままにしないでください。
++ 拡張コントロールは、適切な XPath のベスト プラクティスに従うもので、可能であれば、各 HTML 要素に固有の ID が割り当てられている必要があります。
 
 ## <a name="troubleshooting-guides"></a>トラブルシューティング ガイド
 

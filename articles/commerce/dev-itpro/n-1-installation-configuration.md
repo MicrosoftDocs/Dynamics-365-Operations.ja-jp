@@ -3,7 +3,7 @@ title: 段階的なロールアウト (N-1) インストール、コンフィギ
 description: このトピックでは、Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的なロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 0d4f976e7c756b4d67faad68088249644f05ad5b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 105b4cc3704c27a4d520c76aeab158fa46a0924b
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154356"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331361"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
@@ -167,7 +167,6 @@ ms.locfileid: "3154356"
 > [!IMPORTANT]
 > このセクションは、既存の AX 2012 R3 環境が、チャンネル データベースとやり取りするために Retail サーバーを使用する場合にのみ適用されます。 AX 2012 R3 MPOS からダイレクト チャネル データベースへのアクセスが有効な場合は、この手順を省略できます。
 
-> [!NOTE]
 > ここに記載されているフィールドの値は、AX 2012 R3 から環境をアップグレードする際に、自動的に設定される既定値です。 ただし、それが正しいことを確認する必要があります。 AX 2012 R3 からアップグレードしていない環境で、これらの値を手動で入力する必要があります。
 
 1. バックオフィスにサインインして、**Retail とコマース \> チャネル \> 店舗 \> すべての店舗**の順に移動します。
@@ -340,7 +339,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 |---|---|
 | イベント ログ | Microsoft Dynamics AX Retail : Async Client SynchClientService |
 | サンプル イベント ログのエラー メッセージ | サーバーと通信してダウンロードすることができません。 ユーザー名/パスワード、サーバーおよびデータベース接続を確認してください。 エラーの詳細: System.ServiceModel.CommunicationException: `https://localhost:44300/SynchService/DownloadService.svc` への HTTP 要求中にエラーが発生しました。 HTTPS の場合、サーバー証明書が HTTP.SYS で正しくコンフィギュレーションされていない可能性があります。 これは、クライアントとサーバー間のセキュリティ バインドの不一致によっても発生する可能性があります。 ---\> System.Net.WebException: 基礎的な接続が閉じられました: 送信時に予期しないエラーが発生しました。 ---\> System.IO.IOException: リモート側がトランスポート ストリームを閉じたため、認証に失敗しました。 |
-| トラブルシューティングの手順 | 次の理由で発生した可能性があります。<br>1) 非同期クライアントで提供するユーザー ID とパスワードが、AX で提供されているチャネル データベースのユーザー ID とパスワードと一致しません。<br>2) 非同期サービスのエンド ポイントに到達できません。 `https://localhost:44300/SynchService/DownloadService.svc`。 この問題を解決するには、1) 非同期クライアントのインストール場所から、非同期のクライアント構成ユーティリティ (AsyncClientConfigurationUtility.exe) を起動します。 `Async Server connection tab -> Authentication information (case sensitive)` の下で -> AX の N-1 チャンネル データベースで提供される値に従って、チャンネル データベース ID、 ユーザー ネームおよびパスワード フィールドをアップデートしてください (`Retail and Commerce -> Headquarters setup -> Channel database`)。 2) ユーティリティの `Test connection` をクリックします。 接続が成功した場合は、Async Client サービスを再起動します。 接続に失敗した場合は、AX の N-1 チャネル データベース (`Retail and Commerce -> Headquarters setup -> Channel database`) に移動し、ユーザ名およびパスワードを更新して、保存します。 AX で `Retail scheduler parameters` に移動し、`Reset metadata synchronization` をクリックします。 これにより、新しい値を使用して HQ メッセージ データベースが設定されます。 手順 1 をもう一度繰り返します。 3) 非同期サーバーのエンド ポイント (`https://localhost:44300/SynchService/DownloadService.svc`) に到達できない場合、サービスのバインディングをチェックし、関連する証明書があることを確認してください。 それでも問題が解決しない場合は、`AX2012R3` の 小売チャネル スキーマにリンクされたすべてのチャネル データベース グループに対して `Working folders` が指定されていることを確認してください。 |
+| トラブルシューティングの手順 | 次の理由で発生した可能性があります。<br><br>1) 非同期クライアントで提供するユーザー ID とパスワードが、AX で提供されているチャネル データベースのユーザー ID とパスワードと一致しません。<br><br>2) 非同期サービスのエンド ポイントに到達できません。 `https://localhost:44300/SynchService/DownloadService.svc`。 通常、ユーザーは **Contoso/Administrator** (ドメイン/ユーザー) の形式であることに注意してください。 次の手順では、ドメインが **AsyncClientConfigurationUtility** ユーティリティで使用されている場合に、エラー (通信または保存に失敗) が発生することがわかっています。 このユーティリティのユーザー ID には、サーバーのインストールと構成で使用されているドメイン接頭辞を含めることは推奨されません。<br><br>この問題を修正するには、次のようにします。<br><br>1) 非同期クライアントのインストール場所から、非同期のクライアント構成ユーティリティ (AsyncClientConfigurationUtility.exe) を起動します。 **Async Server 接続タブ > 認証情報 (大文字と小文字を区別)** で、AX の N-1 チャネル データベース (**Retail および Commerce > 本社の設定 > チャネル データベース**) の値に従って、チャネル データベース ID、ユーザー名、およびパスワードの各フィールドを更新します。<br><br>2) ユーティリティで **テスト接続** を選択します。 接続が成功した場合は、Async Client サービスを再起動します。 接続に失敗した場合は、AX で N-1 チャネル データベース (**Retail および Commerce > 本社のセットアップ > チャネル データベース**) に移動し、ユーザー名とパスワードを更新してから保存します。 AX で **小売用スケジューラ パラメーター** に移動し、**メタデータ同期のリセット** を選択します。 これにより、新しい値を使用して HQ メッセージ データベースが設定されます。 手順 1 をもう一度繰り返します。<br><br>3) 非同期サーバーのエンド ポイント (`https://localhost:44300/SynchService/DownloadService.svc`) に到達できない場合、サービスのバインディングをチェックし、関連する証明書があることを確認してください。 それでも問題が解決しない場合は、`AX2012R3` の 小売チャネル スキーマにリンクされたすべてのチャネル データベース グループに対して **作業フォルダー** が指定されていることを確認してください。 |
 
 #### <a name="cdx-jobs-are-successfully-downloaded-but-arent-applied"></a>CDX ジョブが正常にダウンロードされますが、適用されません。
 | フィールド | 金額 |
@@ -393,19 +392,18 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 ### <a name="dynamics-365-retail--microsoft-dynamics-365-72-headquarters"></a>Dynamics 365 Retail – Microsoft Dynamics 365 7.2 バック オフィス
 | KB 番号 | 肩書き |
 |---|---|
-| 4095190 | 顧客が 6.3 から D365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TransactionServiceProfileID を公開します。 |
-| 4095192 | 顧客が AX6.3 から D365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TSPasswordEncryption フィールドを公開します。 |
-| 4095209 | Real-timeServiceAX63 N-1 コンポーネントの Webconfig では、無効な認証タイプ名が含まれています。 これは、コンポーネントがトランザクション サービスを D365 で認証しようとする時に問題の原因になります |
-| 4095189 | RetialTransactionServiceProfile テーブルのプロトコル列が、新しいバージョンの D365 AX データベースから古いバージョンのチャネル データベースに同期されていません。 |
-| 4095191 | 保護された URL のみが許可されているため、ユーザーは Retail サーバー URL を http ベースの URL に設定することはできません。 これは、ユーザーが backwardcompatiility モードで実行中に古いバージョン (6.3) の Retail サーバーに接続することを防ぎます。 |
+| 4095190 | 顧客が 6.3 から Dynamics 365 にデータを移動するための公式アップグレード プロセスに従わなかった場合に N-1 機能を有効化するのに必要なため、RetailSharedParameters フォームの RetailSharedParameter の TransactionServiceProfileID を公開します。 |
+| 4095209 | Real-timeServiceAX63 N-1 コンポーネントの Webconfig では、無効な認証タイプ名が含まれています。 これは、コンポーネントがトランザクション サービスを Dynamics 365 で認証しようとする時に問題の原因になります |
+| 4095189 | RetialTransactionServiceProfile テーブルのプロトコル列が、新しいバージョンの Dynamics 365 AX データベースから古いバージョンのチャネル データベースに同期されていません。 |
+| 4095191 | 保護された URL のみが許可されているため、ユーザーは Retail サーバー URL を http ベースの URL に設定することはできません。 これは、ユーザーが下位互換性モードで実行中に古いバージョン (6.3) の Retail サーバーに接続することを防ぎます。 |
 | 4132456 | \[アップグレード \& N-1\]\[デザイナー\] テンキーの高さを拡張する必要があります |
 | 4095926 | アップグレード \& N-1: N-1 非アップグレード環境でトランザクションが見つからないため、返品注文は 63MPOS から失敗します。 |
 | 4095664 | 新しい顧客を作成するために Microsoft Dynamics AX 2012 クライアントが AX7.2 HQ へ接続することを許可します。 |
-| 4132454 | \_AX63 サブジョブによって重複したレコードの例外が原因で N-1 バージョンの 1070 が失敗する |
-| 4131243 | D365 を N-1 の下位互換性で実行している場合、ユーザーは AX クライアントを使用して HardwareStationURL を設定できないため、6.3 ハードウェア ステーションを正しく設定できないことがあります。 |
+| 4132454 | \_AX63 サブジョブによって重複したレコードの例外が原因で N-1 バージョンの 1070 が失敗します。 |
+| 4131243 | Dynamics 365 Retail を N-1 の下位互換性で実行している場合、ユーザーは AX クライアントを使用して HardwareStationURL を設定できないため、6.3 ハードウェア ステーションを正しく設定できないことがあります。 |
 | 4338120 | 非同期サービス コネクタ インストーラは、ユーザーが提供した HQ メッセージ データベース名に関係なく、常に既定の名前を使用する代わりに、提供された HQ メッセージ DB 名を使用する必要があります。 |
-| 4337834 | D365 を N-1 の下位互換性で実行している場合、RetailTransactionService でメソッドが見つからないために MPOS から顧客を追加または更新している間に N-1 (6.3) バージョン MPOS が失敗することがあります。 |
-| 4337864 | D365 を N-1 の下位互換性で実行している場合、ハードウェア プロファイル支払商社プロパティをロードまたは使用しようとすると、ログインまたは支払中に N-1 (6.3) バージョン MPOS が失敗することがあります。 |
+| 4337834 | Dynamics 365 を N-1 の下位互換性で実行している場合、RetailTransactionService でメソッドが見つからないために MPOS から顧客を追加または更新している間に N-1 (6.3) バージョン MPOS が失敗することがあります。 |
+| 4337864 | Dynamics 365 を N-1 の下位互換性で実行している場合、ハードウェア プロファイル支払商社プロパティをロードまたは使用しようとすると、ログインまたは支払中に N-1 (6.3) バージョン MPOS が失敗することがあります。 |
 | 4132453 | 6.3 バージョンのチャネル データベースの InventDim テーブルにデータを移動すると、製品ダウンロード ジョブの N-1 バージョン (1040\_AX63) の実行に失敗 |
 | 4206905 | POS レポートは、アップグレードされていない N-1 環境で実行するとエラーをスローします。 |
 | 4133289 | 製品の N-1 version の実行 - 仕訳帳または既存のトランザクションからの払戻に失敗 |

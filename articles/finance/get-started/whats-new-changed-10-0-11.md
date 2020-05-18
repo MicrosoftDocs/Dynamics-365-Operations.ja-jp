@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 969305c22fabe831d97b6e287adbe33ffbb51079
-ms.sourcegitcommit: 1a1a9e8875edaa411695dd28f044489016c100f0
+ms.openlocfilehash: 2f6832adab70f167b0a30edf02fe68d51b666f40
+ms.sourcegitcommit: edc7d2e60248a27eeed9085fd95229eea4cf34cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261743"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329600"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10011-july-2020"></a>Dynamics 365 Finance 10.0.11 (2020 年 7 月) の機能のプレビュー
 
@@ -50,6 +50,9 @@ Dynamics 365 Finance 10.0.11 には、プラットフォーム更新プログラ
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a) を参照してください。
+
+### <a name="regulatory-updates"></a>規制の更新
+Dynamics 365 Finance and Operations アプリの規制の更新については、[規制の更新](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン
 

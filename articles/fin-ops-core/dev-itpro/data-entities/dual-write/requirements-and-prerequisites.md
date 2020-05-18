@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06d0940def1490cdb24074ea8615e43a9de7f164
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: a022230c65b4c05ff6aeb4a6a50f28def17ae01c
+ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279118"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353676"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -171,17 +171,6 @@ ms.locfileid: "3279118"
 
     Finance and Operations アプリと Common Data Service が同じテナントにインストールされていることを確認します。 テナント間シナリオは現在サポートされていません。
 
-9. 二重書き込みエンティティ マップ ソリューションをインストールします。
-
-    1. Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューションの管理** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) を参照してください。
-
-    2. Finance and Operations アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのエンティティ マップを適用します。 ソリューションを適用すると、既定のエンティティ マップが公開されていることが確認できます。
-
-        ![エンティティ マップの適用](media/apply-entity-maps.png)
-
-Microsoft が発行した二重書き込みエンティティ マップ ソリューションを環境に正常にインポートして適用しました。
-
-![二重書き込みのインポートと適用](media/dual-write-imported-applied.png)
 
 ## <a name="next-steps"></a>次のステップ
 

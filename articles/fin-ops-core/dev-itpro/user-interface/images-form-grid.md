@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 55871
 ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7e5edbac5a9d2472ca274834c3bec947a8311ad
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 5da98becdfe793910d7ea15260cac44945854085
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082013"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329881"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページ上またはグリッド内の画像
 
