@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8803b0b90f22711b844442d16f717ab87dabf041
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 72367927a11879adffe68d7242d88f5cfab73e22
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209861"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323511"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>マイナスの手持在庫数量を使用した計画
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 システムによってマイナスの集計手持在庫数量が表示される場合、計画エンジンは過剰な供給を回避するため、数量を 0 (ゼロ) として扱います。 この機能の動作は次のとおりです。

@@ -3,7 +3,7 @@ title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213518"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339881"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画の最適化の使用を開始する
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 現時点では、計画の最適化機能では、Microsoft Dynamics 365 Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 既定では、Dynamics Lifecycle Services (LCS) で、計画の最適化機能は有効になっていません。 したがって、オンにする前に評価を行う機会があります。
@@ -36,6 +35,11 @@ ms.locfileid: "3213518"
 最終的に、既存の組み込み Supply Chain Management 計画エンジンは、計画の最適化によって置き換えられます。
 
 計画の最適化を有効にする前に、計画の最適化フィット分析の結果を評価することを強くお勧めします。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
+
+### <a name="availability"></a>使用可能性
+計画の最適化はは現在、次の Azure の地域で利用可能です：米国、カナダ、ヨーロッパ、英国、オーストラリア。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。
+
+計画の最適化では、 Dynamics 365 Supply Chain Management の社内設置型の配置に対応していないことに注意してください。
 
 ### <a name="licensing"></a>ライセンス
 
@@ -46,7 +50,7 @@ ms.locfileid: "3213518"
 計画の最適化を使用するには、Dynamics 365 Supply Chain Management 用の計画の最適化アドインをインストールします。 LCS プロジェクトからアドインにアクセスし、Supply Chain Management ユーザーインターフェイス (UI) から計画の最適化機能を有効にすることができます。
 
 > [!NOTE]
-> 計画最適化の要件は、LCSが有効になっている高可用性環境であり、(OneBox 環境ではなく) Dynamics 365 Supply Chain Management バージョン 10.0.7 以降です。
+> 計画最適化の要件は、LCS が有効になっている高可用性環境の tier 2 またはそれ以降で、(OneBox 環境ではなく) Dynamics 365 Supply Chain Management バージョン 10.0.7 、またはそれ以降です。 このアドインを OneBox 環境にインストールはできません。インストール処理をキャンセルする必要があります。
 
 1. LCS にサインインし、目的の環境を開きます。
 1. **完全な詳細**に移動します。
@@ -88,11 +92,11 @@ ms.locfileid: "3213518"
 
 計画の最適化のプレビューが有効になっている場合は、計画の最適化アドインを使用してマスター プランが実行されます。 この場合、マスター プランの結果と機能が影響を受けます。
 
-## <a name="related-resources"></a>関連するリソース
+## <a name="additional-resources"></a>追加リソース
 
 [プレビュー用の使用条件](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[計画の最適化の概要](planning-optimization-overview.md)
+[計画最適化の概要](planning-optimization-overview.md)
 
 [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
 

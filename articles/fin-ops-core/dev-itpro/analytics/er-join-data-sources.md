@@ -3,7 +3,7 @@ title: 複数のアプリケーション テーブルからデータを取得す
 description: このトピックでは、電子申告 (ER) で結合タイプのデータ ソースを使用する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667957"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332325"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>電子申告 (ER) モデル マッピングで複数のアプリケーション テーブルからデータを取得するには、結合データ ソースを使用します。
 
@@ -140,7 +140,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
 7.  ページを閉じます。
 
-### <a name="review"></a> ER モデル マッピング (2) を確認する
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> ER モデル マッピング (2) を確認する
 
 ER モデル マッピング コンポーネントの設定を確認します。 このコンポーネントは、ER 構成のバージョンに関する情報、コンフィギュレーションの詳細、および**結合**タイプのデータ ソースを使用するコンフィギュレーション プロバイダーの情報にアクセスできるように構成されています。
 
@@ -185,7 +185,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
 9.  ページを閉じます。
 10. **キャンセル**を選択します。
 
-### <a name="executeERformat"></a>ER 形式の実行
+### <a name="execute-er-format"></a><a name="executeERformat"></a>ER 形式の実行
 
 1.  最初のセッションと同じ資格情報と会社を使用して、Webブラウザーの 2 番目のセッションで Finance または RCS にアクセスします。
 2.  **組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。
@@ -240,7 +240,7 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
     ![ER ユーザー ダイアログ ページ](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> ER 形式実行追跡の分析
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> ER 形式実行追跡の分析
 
 1.  Finance または RCS の最初のセッションで、**デザイナー**を選択します。
 2.  **パフォーマンスの追跡**を選択します。
@@ -256,6 +256,33 @@ ER モデル マッピング コンポーネントの設定を確認します。
     - **詳細**データ ソースで構成された結合を使用して、コンフィギュレーション バージョン数を計算するのに、アプリケーション データベースが 1 回呼び出されます。
 
     ![ER モデル マッピング デザイナーのページ](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>制限
+
+このトピックの例で示しているように、**JOIN**データソースは、最終的に結合する必要があるレコードの個々のデータセットを表す複数のデータソースを使用して構築できます。 これらのデータソースは、組み込みの ER [フィルタ](er-functions-list-filter.md) 機能を使用して構成できます。 **JOIN** データソースの範囲を超えてデータソースを呼び出すように構成する場合は、データ選択の条件の一部として会社の範囲を使用することができます。 **JOIN**データソースの初期実装では、このタイプのデータソースには対応していません。 たとえば、**JOIN**データソースの実行範囲内で、[フィルタ](er-functions-list-filter.md) ベースのデータソースを呼び出した場合で、呼び出されたデータソースにデータ選択の条件の一部として企業範囲が含まれていると例外が発生します。
+
+Microsoft Dynamics 365 Finance バージョン 10.0.12（2020 年 8 月）では、**JOIN**データソースの実行範囲内で呼び出される[フィルタ](er-functions-list-filter.md)ベースのデータソースのデータ選択条件の一部として、会社の範囲を使用することができます。 アプリケーションの [クエリ](../dev-ref/xpp-library-objects.md#query-object-model) ビルダーには制限があるため、この 会社の範囲は **JOIN** データソースの最初のデータソースに対してのみサポートされてい ます。
+
+### <a name="example"></a>例
+
+例えば、複数の企業の外国貿易取引のリストと、それらの取引で参照される在庫項目の詳細を取得するには、アプリケーション データベースを 1 回呼び出しをする必要があります。
+
+この場合は、ER モデルマッピングに次のようなアーティファクトを構成します：
+
+- **イントラスタット** **イントラスタット** テーブルを表すルート データソースです。
+- **項目** **InventTable** テーブルを表すルート データソースです。
+- **会社** 取引にアクセスする必要のある会社（この例では **DEMF** と  **GBSI**）のリストを返すルート データソースです。 会社コードは、 **Companies.Code** で利用できます。
+- **X1**式 `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))` を持つルート データ ソースです。 データ選択の条件の一部として、この式には会社の範囲 `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)` の定義が含まれています。
+- **X2**データソースを **X1** データ ソースのネストされた項目として指定します。 これには、式 `FILTER (Items, Items.ItemId = X1.ItemId)` が含まれ ます。
+
+最後に、**X1** を第 1 のデータソース、**X2** を第 2 のデータソースとする **JOIN** データソースを構成することができます。 **クエリ** を **Execute** オプションとして指定することで、ER はこのデータソースをデータベース レベルで直接 SQL 呼び出しとして実行するように強制します。
+
+ER の実行を [トレース](trace-execution-er-troubleshoot-perf.md) しながら設定されたデータソースを実行すると、ER のパフォーマンス トレースの一部として、以下のステートメントがER モデル マッピング デザイナーに表示されます。
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> 実行された **JOIN** データソースの追加されたデータ ソースに対して、データの選択条件が会社の範囲をまれるように構成がされている **JOIN** データソースを実行するとエラーが発生します。
 
 ## <a name="additional-resources"></a>追加リソース
 

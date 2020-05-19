@@ -19,17 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7b6b4cb1c3035e8341928562c447b03affd40167
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e7775e797708668a339b6b02ed822261406c829
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213564"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323672"
 ---
 # <a name="set-up-master-planning"></a>マスター プランの設定
 
-
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。 これには、マスター プランで使用されるプランのタイプの概要と、業務要件に応じてどの計画戦略を使用するかについての説明が含まれます。 また、計画に影響を与える主要なパラメーターについて、およびそれらのパラメーターが提案された計画オーダーにどのように影響するかについても説明します。

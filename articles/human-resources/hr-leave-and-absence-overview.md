@@ -3,7 +3,7 @@ title: 概要
 description: Dynamics 365 Human Resources では、休暇および欠勤のワークスペースは、新しい休暇計画を作成するための柔軟なフレームワーク、休暇申請を管理するためのワークフロー、および従業者が休暇を申請するための直観的なセルフ サービス ページを提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226233"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325768"
 ---
 # <a name="overview"></a>概要
 
@@ -78,8 +78,16 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 
 ## <a name="leave-and-absence-preview-features"></a>休暇のプレビュー機能
 
-**サンドボックス**環境では、新しい休暇のプレビュー機能を試してみることができます。 プレビュー機能をオンにする方法については、[機能の管理](hr-admin-manage-features.md) を参照してください。 プレビュー機能は次のとおりです。
+**サンドボックス**環境では、新しい休暇のプレビュー機能を試してみることができます。 プレビュー機能をオンにする方法については、[機能の管理](hr-admin-manage-features.md) を参照してください。 
 
-- **休暇の停止** - 従業員に対し Human Resources で休暇および欠勤を中断できます。 休暇を中断すると、選択した休暇タイプの休暇の発生が停止します。 一時停止が見越計上プロセス後に発生した場合、休暇の一時停止により、従業員の休暇残日数が比例配分調整されます。 
+[!include [banner](includes/preview-feature.md)]
+
+プレビュー機能は次のとおりです。
+
+- **休暇の停止** - 従業員に対し Human Resources で休暇および欠勤を中断できます。 休暇を中断すると、選択した休暇タイプの休暇の発生が停止します。 一時停止が見越計上プロセス後に発生した場合、休暇の一時停止により、従業員の休暇残日数が比例配分調整されます。 従業員の休暇の中断時に理由コードを含めることも可能です。 ユーザーエクスペリエンスが更新され、一時停止が表示されるようになりました。 
 
 - **繰越ルール** - 繰越調整を転送する繰越残日数に対して、繰越休暇タイプを指定できます。 たとえば、従業員が 10 日間繰り越す場合、その 10 日間に別の休暇タイプを選択できます。 
+
+- **調整に理由コードとコメントを含める** ― 従業員の休暇残高に対する調整を行うときに、理由コードとコメントを含めることができます。 
+
+- **休暇と欠勤パラメータに移行する** : 人事管理パラメータを使用する代わりに休暇と欠勤パラメータのみを使用できるようになります。 

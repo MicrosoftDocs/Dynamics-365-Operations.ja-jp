@@ -3,7 +3,7 @@ title: SUMIF ER 関数
 description: このトピックでは、SUMIF 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042484"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290203"
 ---
-# <a name="SUMIF">SUMIF ER 関数</a>
+# <a name=""></a><a name="SUMIF">SUMIF ER 関数</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ SUMIF (key name for summing, condition range, condition value)
 ## <a name="example"></a>例
 
 この関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発**業務プロセスの一部である [ER 棚卸および集計のために出力された形式の使用](tasks/er-format-counting-summing-1.md) タスク ガイドを参照してください。
+
+この機能の使用方法の詳細と例については、[ER 形式のシーケンス要素の実行を遅延させる](er-defer-sequence-element.md#Example) および [ER形式のXML要素の実行を遅延させる](er-defer-xml-element.md#Example) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

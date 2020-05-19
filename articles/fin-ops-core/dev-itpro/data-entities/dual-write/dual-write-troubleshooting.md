@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
+ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275653"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340933"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -62,14 +62,14 @@ Package Deployer ツールをインストールした後、次の手順に従っ
 
 トレース ログを有効にするには、次の手順に従います。
 
-1. Finance and Operations アプリにログインし、**設定** ページを開いて、**システム** 配下の**管理** を選択します。
+1. Dynamics 365 のモデル駆動型アプリにサインインし、**システム** 配下の **設定** ページを開き、 **管理** を選択します。
 2. **管理者** ページで、**システム管理**を選択します。
 3. **カスタマイズ** タブの **プラグインおよびユーザー定義ワークフロー活動の追跡** フィールドで、**すべて** を選択してプラグインのトレース ログを有効にします。 例外が発生したときにのみトレースログを記録する場合は **例外** を選択します。
 
 
 トレースログを確認にするには、次の手順に従います。
 
-1. Finance and Operations アプリにログインし、**設定** ページを開いて、**カスタマイズ** 配下の**プラグイン トレース ログ** を選択します。
+1. Dynamics 365 のモデル駆動型アプリにサインインし、**カスタマイズ** 配下の **設定** ページを開き、 **プラグイン トレース ログ** を選択します。
 2. **タイプ名** フィールドが **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**に設定されているトレース ログを検索します。
 3. 完全なログを表示するには、項目をダブルクリックし、**実行**ファストタブで **メッセージ ブロック** のテキストを確認します。
 
