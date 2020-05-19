@@ -3,7 +3,7 @@ title: お気に入りの追加
 description: このトピックでは、サイトにお気に入りを追加する方法について説明します。
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,61 +17,85 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001543"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295083"
 ---
-# <a name="add-a-favicon"></a><span data-ttu-id="290ca-103">お気に入りの追加</span><span class="sxs-lookup"><span data-stu-id="290ca-103">Add a favicon</span></span>
-
+# <a name="add-a-favicon"></a><span data-ttu-id="5a2b5-103">お気に入りの追加</span><span class="sxs-lookup"><span data-stu-id="5a2b5-103">Add a favicon</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="290ca-104">このトピックでは、サイトにお気に入りを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="290ca-104">This topic explains how to add a favicon to your site.</span></span>
+<span data-ttu-id="5a2b5-104">このトピックでは、サイトにお気に入りを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-104">This topic explains how to add a favicon to your site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="290ca-105">概要</span><span class="sxs-lookup"><span data-stu-id="290ca-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="5a2b5-105">概要</span><span class="sxs-lookup"><span data-stu-id="5a2b5-105">Overview</span></span>
 
-<span data-ttu-id="290ca-106">お気に入りは小さなグラフィック ファイルで、Web ブラウザー タブ、アドレス バー、閲覧の履歴、およびブックマークやお気に入りなど、その他の場所内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="290ca-106">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="290ca-107">サイトにお気に入りを追加することをお勧めします。それによりブランドを代表して強化し、顧客が閲覧する他のサイトと区別するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="290ca-107">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
+<span data-ttu-id="5a2b5-106">お気に入りは小さなグラフィック ファイルで、Web ブラウザー タブ、アドレス バー、閲覧の履歴、およびブックマークやお気に入りなど、その他の場所内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-106">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="5a2b5-107">サイトにお気に入りを追加することをお勧めします。それによりブランドを代表して強化し、顧客が閲覧する他のサイトと区別するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-107">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
 
-<span data-ttu-id="290ca-108">サイトにはさまざまなサイズとファイル タイプのお気に入りを追加できますが、このトピックでは、単一のお気に入りを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="290ca-108">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="290ca-109">ただし、同じプロセスと場所を使用して、お気に入りをさらに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="290ca-109">However, the same process and location are used to add more favicons.</span></span>
+<span data-ttu-id="5a2b5-108">サイトにはさまざまなサイズとファイル タイプのお気に入りを追加できますが、このトピックでは、単一のお気に入りを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-108">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="5a2b5-109">ただし、同じプロセスと場所を使用して、お気に入りをさらに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-109">However, the same process and location are used to add more favicons.</span></span>
 
-## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="290ca-110">サイトのアセット コレクションにお気に入りをアップロードする</span><span class="sxs-lookup"><span data-stu-id="290ca-110">Upload a favicon to your site's asset collection</span></span>
+## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="5a2b5-110">サイトのアセット コレクションにお気に入りをアップロードする</span><span class="sxs-lookup"><span data-stu-id="5a2b5-110">Upload a favicon to your site's asset collection</span></span>
 
-<span data-ttu-id="290ca-111">お気に入りをサイトのアセット コレクションにアップロードするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="290ca-111">To upload a favicon to your site's asset collection, follow these steps.</span></span>
+<span data-ttu-id="5a2b5-111">お気に入りをサイトのアセット コレクションにアップロードするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-111">To upload a favicon to your site's asset collection, follow these steps.</span></span>
 
-1. <span data-ttu-id="290ca-112">**アセット \> アップロード \> アセットのアップロード**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="290ca-112">Go to **Assets \> Upload \> Upload assets**.</span></span>
-1. <span data-ttu-id="290ca-113">ローカル ファイル システムでお気に入りを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="290ca-113">Find and select the favicon on your local file system.</span></span>
-1. <span data-ttu-id="290ca-114">タイトルを入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="290ca-114">Enter a title, and then select **OK**.</span></span> 
-1. <span data-ttu-id="290ca-115">右側のプロパティ ウィンドウで、お気に入りのパブリック URL をコピーします。</span><span class="sxs-lookup"><span data-stu-id="290ca-115">In the property pane on the right, copy the public URL of the favicon.</span></span>
+1. <span data-ttu-id="5a2b5-112">左のナビゲーション ウィンドウで、**メディア ライブラリー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-112">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="5a2b5-113">コマンド バーで、**アップロード \> メディア項目のアップロード**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-113">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="5a2b5-114">[ファイル エクスプローラー] ウィンドウで、アップロードするお気に入り画像ファイルを選択し、**開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-114">In the File Explorer window, browse to the favicon image file that you want to upload, select it, and then select **Open**.</span></span>
+1. <span data-ttu-id="5a2b5-115">**メディア項目のアップロード** ダイアログ ボックスで、必要なタイトルと代替テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-115">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
+1. <span data-ttu-id="5a2b5-116">画像をアップロードしてすぐに公開する場合は、**アップロード後にメディア項目を公開する** チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-116">If you want to publish the image immediately after upload, select the **Publish media items after upload** check box.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="290ca-116">**アップロード後にアセットを公開**オプションを選択しない場合、**アセット** ページに戻り、後でお気に入りを手動で公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="290ca-116">If you don't select the **Publish assets after upload** option, you must return to **Assets** page and manually publish the favicon later.</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="5a2b5-117">**アップロード後にメディア項目を公開する** オプションを選択しない場合は、後で **メディア項目** ページからお気に入りを手動で公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-117">If you don't select the **Publish media items after upload** check box, you must return to **Media items** page and manually publish the favicon later.</span></span>
 
-## <a name="create-the-html-for-the-favicon"></a><span data-ttu-id="290ca-117">お気に入りの HTML を作成する</span><span class="sxs-lookup"><span data-stu-id="290ca-117">Create the HTML for the favicon</span></span>
+1. <span data-ttu-id="5a2b5-118">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-118">Select **OK**.</span></span>
+1. <span data-ttu-id="5a2b5-119">右側のプロパティ ウィンドウで、お気に入りのパブリック URL をコピーします。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-119">In the property pane on the right, copy the public URL of the favicon.</span></span> <span data-ttu-id="5a2b5-120">この URL は後続の手順で使用します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-120">You will use this URL later.</span></span>
 
-<span data-ttu-id="290ca-118">お気に入りの HTML を作成するには、次の HTML スニペットを使用します。</span><span class="sxs-lookup"><span data-stu-id="290ca-118">To create the HTML for the favicon, use the following HTML snippet.</span></span> <span data-ttu-id="290ca-119">**href** 属性に関しては、**"Public\_URL\_for\_your\_favicon"** を以前にコピーしたパブリック URL に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="290ca-119">For the **href** attribute, replace **"Public\_URL\_for\_your\_favicon"** with the public URL that you copied earlier.</span></span>
+## <a name="create-the-html-for-your-favicon"></a><span data-ttu-id="5a2b5-121">お気に入りの HTML を作成する</span><span class="sxs-lookup"><span data-stu-id="5a2b5-121">Create the HTML for your favicon</span></span>
+
+<span data-ttu-id="5a2b5-122">お気に入りの HTML を作成するには、次の HTML 文字列を使用します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-122">To create the HTML for the favicon, use the following HTML string.</span></span> <span data-ttu-id="5a2b5-123">**href** 属性に関しては、**Public\_URL\_for\_your\_favicon** を前述のコピーしたパブリック URL に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-123">For the **href** attribute, replace **Public\_URL\_for\_your\_favicon** with the public URL that you copied earlier.</span></span>
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a><span data-ttu-id="290ca-120">お気に入りの HTML をページの \<head\> 要素に追加する</span><span class="sxs-lookup"><span data-stu-id="290ca-120">Add the HTML for the favicon to the \<head\> element of your pages</span></span>
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a><span data-ttu-id="5a2b5-124">お気に入りのメタタグを含むページ フラグメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-124">Create a page fragment that contains a metatag for your favicon</span></span>
 
-<span data-ttu-id="290ca-121">サイトにお気に入りを追加するには、サイト ページの **\<head\>** 要素に任意のタイプの HTML またはスクリプトを追加するのと同じ手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="290ca-121">To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages.</span></span>
+<span data-ttu-id="5a2b5-125">お気に入りのメタタグを含むページ フラグメントを作成するには、次の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-125">To create a page fragment that contains a metatag for your favicon, follow these steps.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="290ca-122">追加リソース</span><span class="sxs-lookup"><span data-stu-id="290ca-122">Additional resources</span></span>
+1. <span data-ttu-id="5a2b5-126">**ページ フラグメント** に移動し、**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-126">Go to **Page fragments**, and select **New**.</span></span>
+1. <span data-ttu-id="5a2b5-127">**新規ページ フラグメント** ダイアログボ ックスで、ページ フラグメントの基になるモジュールとして **メタタグ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-127">In the **New Page Fragment** dialog box, select **Metatags** as the module that the page fragment is based on.</span></span>
+1. <span data-ttu-id="5a2b5-128">ページ フラグメントの名前を入力し、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-128">Enter a name for the page fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="5a2b5-129">フラグメント階層ツリーで、**既定のメタタグ** 子を選択し ます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-129">In the fragment hierarchy tree, select the **Default metatags** child.</span></span>
+1. <span data-ttu-id="5a2b5-130">右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-130">In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon.</span></span> 
+1. <span data-ttu-id="5a2b5-131">**編集の完了** を選択し、 **発行** を選択してページ フラグメントを公開します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-131">Select **Finish editing**, and then select **Publish** to publish the page fragment.</span></span>
 
-[<span data-ttu-id="290ca-123">ロゴの追加</span><span class="sxs-lookup"><span data-stu-id="290ca-123">Add a logo</span></span>](add-logo.md)
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a><span data-ttu-id="5a2b5-132">ページの HTML の head セクションにメタタグのページ フラグメントを追加する</span><span class="sxs-lookup"><span data-stu-id="5a2b5-132">Add the metatag page fragment to the HTML head section of your pages</span></span>
 
-[<span data-ttu-id="290ca-124">サイト テーマの選択</span><span class="sxs-lookup"><span data-stu-id="290ca-124">Select a site theme</span></span>](select-site-theme.md)
+<span data-ttu-id="5a2b5-133">ページの HTML の **head** セクションにメタタグのページ フラグメントを追加するには、次の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-133">To add the metatag page fragment to the HTML **head** section of your pages, follow these steps.</span></span>
 
-[<span data-ttu-id="290ca-125">CSS 上書きファイルの作業</span><span class="sxs-lookup"><span data-stu-id="290ca-125">Work with CSS override files</span></span>](css-override-files.md)
+1. <span data-ttu-id="5a2b5-134">**テンプレート** に移動して、お気に入りを追加するページのテンプレートを開き、続いて **編集** を開きます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-134">Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.</span></span>
+1. <span data-ttu-id="5a2b5-135">テンプレート階層ツリーで、**HTML head** コンテナーの右にある省略符号 (**...**) ボタンを選択し、 **ページ フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-135">In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add page fragment**.</span></span>
+1. <span data-ttu-id="5a2b5-136">**新しいページ フラグメント** ダイアログ ボックスで、前述の手順で作成したメタタグ ページ フラグメントを選択し、続いて **OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-136">In the **Select Page Fragment** dialog box, select the metatag page fragment that you created earlier, and then select **OK**.</span></span>
+1. <span data-ttu-id="5a2b5-137">**編集の完了** を選択し、 **発行** を選択してテンプレートを公開します。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-137">Select **Finish editing**, and then select **Publish** to publish the template.</span></span>
 
-[<span data-ttu-id="290ca-126">ようこそメッセージの追加</span><span class="sxs-lookup"><span data-stu-id="290ca-126">Add a welcome message</span></span>](add-welcome-message.md)
+> [!NOTE]
+> <span data-ttu-id="5a2b5-138">サイトで複数のテンプレートを使用している場合は、メタタグのページ フラグメントをすべてのテンプレートに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-138">If your site uses more than one template, you must add the metatags page fragment to all of them.</span></span>
 
-[<span data-ttu-id="290ca-127">著作権に関する注意事項の追加</span><span class="sxs-lookup"><span data-stu-id="290ca-127">Add a copyright notice</span></span>](add-copyright-notice.md)
+<span data-ttu-id="5a2b5-139">メタタグ ページ フラグメントを追加したテンプレートに基づくページをプレビューすると、[ブラウザー] タブにお気に入りが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5a2b5-139">When you preview pages that are based on the template that you added the metatags page fragment to, you should now see the favicon on the browser tab.</span></span>
 
-[<span data-ttu-id="290ca-128">サイトに言語を追加する</span><span class="sxs-lookup"><span data-stu-id="290ca-128">Add languages to your site</span></span>](add-languages-to-site.md)
+## <a name="additional-resources"></a><span data-ttu-id="5a2b5-140">追加リソース</span><span class="sxs-lookup"><span data-stu-id="5a2b5-140">Additional resources</span></span>
 
-[<span data-ttu-id="290ca-129">サイト ページにスクリプト コードを追加してテレメトリをサポートする</span><span class="sxs-lookup"><span data-stu-id="290ca-129">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
+[<span data-ttu-id="5a2b5-141">ロゴの追加</span><span class="sxs-lookup"><span data-stu-id="5a2b5-141">Add a logo</span></span>](add-logo.md)
+
+[<span data-ttu-id="5a2b5-142">サイト テーマの選択</span><span class="sxs-lookup"><span data-stu-id="5a2b5-142">Select a site theme</span></span>](select-site-theme.md)
+
+[<span data-ttu-id="5a2b5-143">CSS 上書きファイルの作業</span><span class="sxs-lookup"><span data-stu-id="5a2b5-143">Work with CSS override files</span></span>](css-override-files.md)
+
+[<span data-ttu-id="5a2b5-144">ようこそメッセージの追加</span><span class="sxs-lookup"><span data-stu-id="5a2b5-144">Add a welcome message</span></span>](add-welcome-message.md)
+
+[<span data-ttu-id="5a2b5-145">著作権に関する注意事項の追加</span><span class="sxs-lookup"><span data-stu-id="5a2b5-145">Add a copyright notice</span></span>](add-copyright-notice.md)
+
+[<span data-ttu-id="5a2b5-146">サイトに言語を追加する</span><span class="sxs-lookup"><span data-stu-id="5a2b5-146">Add languages to your site</span></span>](add-languages-to-site.md)
+
+[<span data-ttu-id="5a2b5-147">サイト ページにスクリプト コードを追加してテレメトリをサポートする</span><span class="sxs-lookup"><span data-stu-id="5a2b5-147">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
 
