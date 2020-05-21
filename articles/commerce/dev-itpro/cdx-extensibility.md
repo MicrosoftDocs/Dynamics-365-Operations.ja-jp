@@ -3,7 +3,7 @@ title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有�
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: b465bce8482095104b22d9e88478c35ae9f3bc18
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 091763600a465c17e8329467ea784fad323640ef
+ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070467"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324531"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -58,7 +58,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 1. カスタム プロジェクトを作成し、アプリケーション オブジェクト ツリー (AOT) を使用してカスタム テーブルを追加します。
 2. すべてのカスタム ジョブ情報を追加する新しいリソース ファイルを作成します。 リソース ファイルのテンプレートを次に示します。
 
-    ```csharp
+```csharp
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
@@ -66,7 +66,10 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
             <Subjob Id="" TargetTableSchema="" TargetTableName="">
         </Subjobs>
      </RetailCdxSeedData>
-    ```
+```
+
+> [!NOTE]
+> **DataAreaId** の列名は、フィールド マッピングには明示的に含まれません。 これは、 Commerce Data Exchange (CDX) によって自動的に生成されます。 追加された場合、小売用スケジューラの初期化中にエラーが発生します。
 
 3. AOT を使用して新しい XML リソースを作成します。 リソースの XML ファイルで、次の例に示すように新しいテーブルと新しいジョブの詳細を指定します。
 
@@ -222,7 +225,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 

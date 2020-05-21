@@ -1,9 +1,9 @@
 ---
 title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
-author: kfend
+author: PeterRFriis
 manager: AnnBe
-ms.date: 11/14/2019
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: acc41a419d5f530a781d3f803bfb1b6fc10440bb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a4052e0b4d9d821654d410618119507a8133cbbc
+ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003868"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324532"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -100,6 +100,18 @@ Finance + Operations をインストールする場合は、次のドメイン�
 - Finance + Operations コンポーネントをホストする VM は、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) は、ネイティブ モードで構成する必要があります。
 - Finance + Operations コンポーネントを実行する VM は、相互にアクセスする必要があります。 このアクセスは、AD DS で設定されています。
 - ドメイン コントローラは、Microsoft Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。
+
+### <a name="full-2-way-trust"></a>双方向の完全な信頼
+Windows Server 2008 R2 ドメイン機能レベル (DFL) 上の会社のドメイン コントローラーと互換性を保つために、Windows Server 2008 R2 DFL ユーザー ドメインと Windows Server 2012 R2 DFL Finance + Operations サービス ドメインの間の双方向の完全な信頼は、プラットフォーム更新 33 以降でサポートされています。
+
+つまり、Finance + Operations (オンプレミス) アプリケーションのユーザーは、Windows Server 2008 R2 DFL メインから取得され、Finance + Operations (オンプレミス) インフラストラクチャとサービスをホストするリソースとサービス アカウントは Windows Server 2012 R2 DFL ドメインから取得されます。
+
+双方向の完全な信頼の設定の例を次に示します。
+
+<img src="./media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
+
+#### <a name="known-limitations-with-using-the-full-2-way-trust-setup"></a>双方向の完全な信頼設定を使用した場合の既知の制限
+* Windows Server 2008 R2 ユーザー ドメインからのセキュリティ グループのインポートはサポートされていません。
 
 ## <a name="hardware-requirements"></a>ハードウェア要件
 
@@ -236,7 +248,7 @@ Finance + Operations には、非 Microsoft 仮想化プラットフォーム (�
 
 Finance + Operations コンポーネントをインストールする前に、次のソフトウェアがコンピュータに存在している必要があります:
 
-- Microsoft .NET Framework バージョン 4.5.1 またはそれ以降
+- Microsoft .NET Framework。 バージョン情報については、[配置の設定](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md#setup)を参照してください。
 - Service Fabric
 
 詳細については、[Service Fabric クラスターの計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
@@ -252,9 +264,8 @@ Finance + Operations コンポーネントをインストールする前に、�
 ## <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
 
 - 64 ビット バージョンの SQL Server 2016 のみがサポートされています。
-- サーバーおよびデータベースの照合順序では、**SQL\_Latin1\_General\_CP1\_CI\_AS** のみ有効です。
+- サーバーおよびデータベースの照合順序では、**SQL\_Latin1\_General\_CP1\_CI\_AS** のみ有効です。 SQL Server データベースの照合順序を選択する方法の詳細については、「[SQL Server に関するドキュメント](/sql/sql-server/sql-server-technical-documentation)」を参照してください。
 - 実稼動環境では、使用している SQL Server のバージョンの最新の累積的な更新プログラム (CU) をインストールすることをお勧めします。
-- Finance + Operations では、大文字小文字を区別しない、アクセントを区別する、カナを区別する、および幅を区別しない Unicode 照合順序をサポートします。 照合順序は、AOS インスタンスを実行しているコンピュータの Windows ロケールと一致する必要があります。 新しいインストールを設定する場合は、SQL Server 照合の代わりに Windows 照合を選択することをお勧めします。 SQL Server データベースの照合順序を選択する方法の詳細については、「[SQL Server に関するドキュメント](/sql/sql-server/sql-server-technical-documentation)」を参照してください。
 
 次の表では、データベースでサポートされている SQL Server バージョンを一覧表示します。 詳細については、「[SQL Server](https://www.microsoft.com/sql-server/sql-server-2016) の最小ハードウェア要件」を参照してください。
 
@@ -287,6 +298,7 @@ Windows Server 2016 の Active Directory Federation Services (AD FS) は必要�
 
 - [Active Directory 機能レベルとは](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
 - [Active Directory ドメイン サービス機能のレベルを理解する](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+- [双方向の完全な信頼](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 

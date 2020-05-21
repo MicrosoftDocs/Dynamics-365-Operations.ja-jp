@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ef9fefb81ed39d893b2bcaf5aab9ed26f061760
-ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
+ms.openlocfilehash: 909f1faa6209edb18f286e298b96b585d28eb460
+ms.sourcegitcommit: 153bb33722c02501bf7bcfd56ac887602d5dfbd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166487"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3318654"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -75,16 +75,17 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 - Office 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
 - テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
+- ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
 
-SharePoint に保存されているドキュメントがプレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 
+SharePoint に保存されているドキュメントが開かず、プレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 
 
 1. 管理者アカウントに電子メール アカウントが関連付けられていることを確認します (**ユーザー** ページで確認または変更します)。 これが設定されていない場合は、OData Excel アドインを使用して電子メールとプロバイダーを追加する必要があります。 既定では、Excel デザインに電子メール アドレスは表示されません。 ユーザーは、Excel デザインを編集し、すべてのフィールドを追加し、適用して更新する必要があります。 完了すると、管理者アカウントを更新できます。
 
-2. 管理者アカウントに電子メール アカウントが関連付けられたら、Dynamics 365 Human Resources に管理者としてサインインします。
+2. 管理者アカウントに電子メール アカウントが関連付けられたら、Dynamics に管理者としてサインインします。
 
-3. SharePoint に保存されている添付ファイルを開いて、プレビューを開始します。
+3. SharePoint に保存されている添付ファイルを開きます。
 
-4. 添付ファイルにアクセスできる他のユーザー アカウントでサインインし、プレビューが機能することを確認します。
+4. 添付ファイル ページおよび構成されている SharePoint フォルダーに対する読み取りアクセス権を持つ別のユーザー アカウントでログインします。 添付ファイルを開いてプレビューすることもできることを確認します。
 
 ## <a name="configure-file-types"></a>ファイルの種類のコンフィギュレーション
 
@@ -209,3 +210,6 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 
 添付ファイルを抽出するには、特定のビジネス ドキュメントやレコードに対する添付ファイル エンティティが作成される必要があります。 各レコード タイプの ID が異なるため、標準の添付ファイル エンティティがありません。 添付ファイル エンティティを作成する方法については、**AOT > データモデル > データ エンティティ** ノードの下にある "添付ファイル" を検索して、アプリケーション エクスプローラーの例を参照してください。
 
+### <a name="how-does-the-document-preview-work-for-attachments-stored-in-sharepoint"></a>SharePoint に保存された添付ファイルにおけるドキュメント プレビューのしくみ。
+
+ファイルは、WOPI サービスによって現在のユーザーのアクセス許可を使用して SharePoint から取得されます。 これらのファイルは、ドキュメント プレビューを表示するために HTML で表示されます。 つまり、現在のユーザーは、ファイルをプレビューしたり開いたりするためにファイルにアクセスできる必要があります。

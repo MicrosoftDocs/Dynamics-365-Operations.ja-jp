@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fee8f9eb2842561e76433711a522d54219ae9757
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: 62729dc2768d4e0b0130e734a71656088b36cc2f
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287835"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295093"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -190,7 +190,7 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
 
-**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2))。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました (16.0.6868.2060)。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
 
 Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](https://technet.microsoft.com/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](https://technet.microsoft.com/library/cc303401(v=office.16).aspx) を参照してください。 
 

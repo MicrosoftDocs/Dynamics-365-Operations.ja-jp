@@ -3,7 +3,7 @@ title: 電子申告の数式言語
 description: このトピックでは、電子申告 (ER) の数式言語の使用方法についての情報を提供します。
 author: NickSelin
 manager: kfend
-ms.date: 12/18/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: bb1f026b6a83aa8c1de0dc5088940d7377867a8b
+ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284359"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331350"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
@@ -130,7 +130,9 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 ![ER フォーミュラ デザイナー ページの絶対パスの残りの部分](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name=""></a><a name="Functions">ファンクション</a>
+詳細については、[ER モデルと ER 形式のデータ バインディングに相対パスを使用する](relative-path-data-bindings-er-models-format.md) を参照してください。
+
+## <a name=""></a><a name="Functions">関数</a>
 
 ER 組み込み関数は、ER 式で使用できます。 式のコンテキストのすべてのデータ ソース (つまり、現在の ER モデル マッピングまたは ER フォーマット) は、呼び出し元関数の引数に従って呼び出し元関数のパラメータとして使用できます。 定数は、呼び出し関数のパラメータとしても使用できます。 たとえば、現在の ER モデル マッピングには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには、ER 丸め関数を使用する次の式をデザインできます: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`。
 

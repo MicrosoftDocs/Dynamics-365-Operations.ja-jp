@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 14761
 ms.assetid: a2c38c58-b312-44b1-bf48-c40dc8518011
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80e338aaa16b459c581e810ccc1a45d17cff3677
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 8066426c6dc18dc88fa01bea6665bf0ae8652972
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658823"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329866"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 
@@ -39,7 +39,7 @@ ms.locfileid: "2658823"
 -   グループ コントロール
 
 ## <a name="wireframes"></a>ワイヤーフレーム
-### <a name="wireframe-for-tabular-fieldsmediatabularfields1pngmediatabularfields1png"></a>[![表形式フィールドのワイヤーフレーム](./media/tabularfields1.png)](./media/tabularfields1.png)
+### <a name="wireframe-for-tabular-fieldsmediatabularfields1png"></a>[![表形式フィールドのワイヤーフレーム](./media/tabularfields1.png)](./media/tabularfields1.png)
 
 構造のワイヤーフレーム
 

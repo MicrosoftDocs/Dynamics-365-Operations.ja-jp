@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 11adcfaf886c6b2925a08eeafd0c7c2336530b40
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: f3939c82b394f9ffe3e7894b07a1cca08d8d9b20
+ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259691"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324507"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -165,9 +165,6 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 - SQL Server Management Studio デザイナーを使用するか、SQL スクリプトを使用して、**ext スキーマ**のチャネル データベースに新しいテーブルを作成します。 以下は、SQL スクリプトの例です。
 
-> [!NOTE]
-> **DataAreaId** の列名は、新しいテーブルまたは拡張テーブルには明示的に含まれません。 これは、 Commerce Data Exchange (CDX) によって自動的に生成されます。 追加された場合、小売用スケジューラの初期化中にエラーが発生します。
-
     ```sql
     -- Create the extension table to store the custom fields.
     IF (SELECT OBJECT_ID('[ext].[CONTOSORETAILSTOREHOURSTABLE]')) IS NULL
@@ -189,9 +186,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
     GO
 
-## <a name="extending-an-existing-table"></a>既存のテーブルの拡張
+## Extending an existing table
 
-既存のテーブルを拡張する場合は、そのエンティティで対応している場合は属性を使用するか、親テーブルと同じ主キーを持つ拡張テーブル（新しいテーブル）を作成する必要があります。 次のスクリプトはテーブルを拡張します。
+If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
 
 ```sql
 CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](

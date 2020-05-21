@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: f0f81d1b20ada852dbcee2f91bee30adb59a5629
-ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
+ms.openlocfilehash: 0eec983c8e0c96bc40270548cc4e148bc3ce7b47
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3120891"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329830"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 
@@ -30,11 +30,6 @@ ms.locfileid: "3120891"
 > [!NOTE]
 > このサンプル会計統合機能は、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[スウェーデンのコントロール ユニット統合サンプル](./emea-swe-fi-sample.md#migrating-from-the-earlier-integration-sample)を使用してください。
 
-**サンプル コードの通知**
-
-**このサンプルコードは現状のまま利用可能です。明示的または黙示的を問わず、特定の目的への適合性、正確性、完全性、結果、または商品性の条件に関して、Microsoft は一切保証しません。このサンプル コードの使用またはその結果に対するリスクは、すべてお客様が負うものとします。**
-
-**技術サポートは提供されません。コード配布を許可する Microsoft の使用許諾契約がない限り、このコードを配布することはできません。**
 
 このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Dynamics 365 Commerce 拡張機能を作成する方法を示します。 特に、このサンプルには Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 コントロール ユニットは、POS がペアリングされているハードウェア ステーションに物理的に接続されていることを前提としています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
 

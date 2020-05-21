@@ -3,7 +3,7 @@ title: 環境計画
 description: このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 08/13/2018
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 14e3f86a1b0c3654c68740ced13f24997a52a039
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: e6db2eca39b216fc4a4e9cfec0447a04c643d49d
+ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075937"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353701"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -57,10 +57,11 @@ ms.locfileid: "3075937"
 | レベル 1 | レベル 2 以上 |
 |--------|-------------------|
 | シングルボックス環境 | マルチボックス環境 |
-
 | すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、アプリケーション オブジェクト サーバー (AOS)、データベース、Dynamics 365 Commerce、および Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
-
-| Microsoft SQL Server を使用します。 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/) を使用します。 | | この構造は本稼働環境の構造によって異なり、これは開発チームの効率性を最大限に高めることを意図しています。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 | | さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 | | この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
+| Microsoft SQL Server で使用 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
+| この構造は本稼働環境の構造によって異なり、これは開発チームの効率性を最大限に高めることを意図しています。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 |
+| さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 |
+| この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
 
 ## <a name="standard-cloud-offer"></a>標準クラウド サービス
 

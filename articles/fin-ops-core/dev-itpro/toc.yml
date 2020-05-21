@@ -16,15 +16,13 @@
                   href: get-started/whats-new-home-page.md
                 - name: 10.0.11 の Platform update (2020 年 7 月)
                   href: get-started/whats-new-platform-update-35.md
-                - name: 10.0.10 の Platform update (2020 年 5 月)
+                - name: 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)
                   href: get-started/whats-new-platform-update-34.md
                 - name: プラットフォーム更新プログラム 33 (2020 年 4 月)
                   href: get-started/whats-new-platform-update-33.md
-                - name: プラットフォーム更新プログラム 32 (2020 年 2 月)
-                  href: get-started/whats-new-platform-update-32.md
             - name: 削除済みまたは非推奨の機能
               items:
-                - name: 削除済みまたは非推奨の Platform の機能
+                - name: 削除済みまたは非推奨のプラットフォームの機能
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: 以前のリリースの削除済みまたは非推奨の機能
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Lifecycle Services からの二重書き込みの設定
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: 初期同期
-                              href: data-entities/dual-write/initial-sync.md
                             - name: 既存の Finance and Operations アプリの二重書き込みの有効化
                               items:
                                 - name: 既存の Finance and Operations アプリの二重書き込みの有効化
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: バージョン コントロール、メタデータ検索、およびナビゲーション
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Azure を使用したビルドの自動化
+              items:
+                - name: Microsoft にホストされるエージェント、および Azure Pipelines を使用したビルドの自動化
+                  href: dev-tools/hosted-build-automation.md
+                - name: Azure Pipelines にある配置可能なパッケージへのライセンス ファイルの追加
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Azure Pipelines に配置可能なパッケージの作成
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: Azure Pipelines で、X++ モデルのバージョン管理
+                  href: dev-tools/pipeline-model-version.md
             - name: フリート管理のサンプル アプリケーション
               items:
                 - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: ユーザーのセキュリティ ロールへの割り当て
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: タスク記録のセキュリティ診断
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: バッチ処理
               items:
                 - name: バッチ処理の概要

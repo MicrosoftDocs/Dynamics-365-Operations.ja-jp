@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 9fd0e7f51f9bcdf928d54cd9843e51c1f029ac62
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6168253ebf228c35c5e71a60ceb1d99f6ca5a385
+ms.sourcegitcommit: 8fef31b2c488681f19474168da4978a284cab7ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057899"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325335"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -156,6 +156,62 @@ public class MyService : IRequestHandler
     {
         return myresponse;
     }
+}
+```
+
+
+## <a name="how-to-execute-the-base-handler-in-extension"></a>拡張機能で基本ハンドラーを実行する方法
+
+### <a name="nothandledresponse"></a>NotHandledResponse()
+
+一部のシナリオでは、オーバーライドされたロジックで基本ハンドラーを実行する場合、**NotHandledResponse()** を返すことによってこれを実現できます。 NotHandledResponse が返された場合、CRT フレームワークは、基本または帯域外ロジックの実行を要求する拡張機能を使用するため、CRT フレームワークは帯域外ハンドラーを実行します。
+
+**NotHandledResponse** は、拡張機能によって基本ハンドラー ロジックが実行される場合に使用できます。 たとえば、オーバーライドされた要求が基本ハンドラー ロジックを実行する場合、実行する基本ハンドラーに NotHandledResponse を返すことができます。 または、拡張機能によってカスタム ロジックと基本ロジックが実行される場合は、カスタム ロジックを実行した後で NotHandledResponse を返すことができます。
+
+```C#
+  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
+        {
+            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
+
+            string receiptFieldName = request.CustomReceiptField;
+            string receiptFieldValue = string.Empty;
+
+            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
+            {
+                switch (receiptFieldName)
+                {
+                    case "Sample":
+                        receiptFieldValue = this.GetGstRegistrationNumber(request);
+                        break;
+                    default:
+                        return new NotHandledResponse();
+                }
+            }
+            else
+            {
+                return new NotHandledResponse();
+            }
+
+            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
+            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
+
+            return new GetCustomReceiptFieldServiceResponse(returnValue);
+        }
+
+```
+
+## <a name="how-to-execute-extension-request-for-a-channel-type"></a>チャネル タイプに対して拡張要求を実行する方法
+
+拡張要求を特定のチャネル タイプに対してのみ実行する必要がある場合 (たとえば、小売チャネル (物理店舗) 用ではなくオンライン チャネルの要求を実行するなど)、要求を実行する前に、チャネル タイプをチェックしてカスタム ロジックを実行するか、NotHandledResponse() を呼び出して基本ロジックを実行します。
+
+```C#
+if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
+{
+    // run your extension code here.
+}
+else
+{
+    return new NotHandledResponse();
 }
 ```
 

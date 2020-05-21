@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb0a2a18490f2209cfe98d609d2fda7fd7ff7018
-ms.sourcegitcommit: 5d31d3e5f8549b761360c338bc2a1d9506c15999
+ms.openlocfilehash: 81d83862e82c3e730e9ae159438f36be1274c8b9
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030040"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346640"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -43,6 +43,12 @@ RSAT の使用についての定義。
 + [Regression Suite Automation Tool ベスト プラクティス](rsat-best-practices.md)
 + [Regression Suite Automation Tool のトラブルシューティング](rsat-troubleshooting.md)
 
+
+## <a name="getting-started-videos"></a>使用開始のビデオ
+これらのビデオでは、RSAT が紹介されており、作業を開始することができます。
+
++ [タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する](https://youtu.be/bBr4BXAxTNI)
++ [Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する](https://youtu.be/3jIuBleAnQk)
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
 このツールは、次に定義するエンド ツー エンド フローのパーツに含まれています。 このアプリケーションは、Microsoft Dynamics Lifecycle Services (LCS) および Azure DevOps と共に、テスト ケースの作成 (タスク レコーダーを使用)、構成、実行、調査、および報告に対する一連のツールを提供します。

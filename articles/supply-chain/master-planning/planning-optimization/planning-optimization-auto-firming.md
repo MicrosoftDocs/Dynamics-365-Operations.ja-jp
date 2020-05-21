@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 5bfa8a1f025c2884f31b9fcb817e008a007ac010
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209746"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323534"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>計画の最適化による自動確定
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 自動確定を使用して、マスター プラン プロセスの一部として計画オーダーを確定 (つまり、リリース) できます。 計画オーダーが確定されると、実際の発注書、移動オーダー、または製造オーダーに変換されます。 計画の最適化を使用すると、注文日 (つまり、開始日) が確定のタイム フェンス内にある場合、マスター プランの実行時に計画オーダーが確定されます。

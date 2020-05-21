@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 28251
 ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35a3218e660f9de1d6f2f8d4f29dc2375f4c7ba6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a1b4607fb8c71b97f0eb00e76d91c88ce4c4ecf0
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183044"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329871"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 
@@ -45,7 +45,7 @@ ms.locfileid: "2183044"
 
 グリッドとは、柔軟なサイズ変更 (**SizeToAvailable**) などいくつかのコンテナ動作を持つ特殊なタイプのコントロールです。 ただし、グリッドには特別な視覚化があり、汎用のコンテナー コントロールではありません。
 
-## <a name="layout-dynamics-ax-2012-vs-finance-and-operations-apps"></a>レイアウト: Dynamics AX 2012 対 Finance and Operations アプリ
+## <a name="layout-dynamics-ax-2012-vs-finance-and-operations-apps"></a>レイアウト: Dynamics AX 2012 vs. Finance and Operations アプリ
 ### <a name="layout-in-dynamics-ax-2012"></a>Dynamics AX 2012 でのレイアウト
 
 Microsoft Dynamics AX 2012 では、コンテナーのコントロールの配置はほとんど必ず縦で、列を手動で設定して水平に拡大します。
@@ -54,7 +54,7 @@ Microsoft Dynamics AX 2012 では、コンテナーのコントロールの配�
 
 **列** = **1** 1 2 3 **列** = **2** 1 4 2 5 3 Dynamics AX 2012 では、**高さ**プロパティと**幅h**プロパティを使用してサイジングできます。 **高さ**および**幅**が**自動**と設定されている場合、サイズは子コントロールが必要とする大きさになります。 **高さ**および**幅**が**列**に設定されている場合、コンテナーは親コンテナー内に収まる大きさになります。 既定では、**高さ**と**幅**はすべてのコンテナーに対して**自動**に設定されています。
 
-### <a name="layout-in-finance-and-operations"></a>Finance and Operations でのレイアウト 
+### <a name="layout-in-finance-and-operations"></a>Finance and Operations のレイアウト 
 
 Finance and Operations では、レイアウトが Dynamics AX 2012 でのレイアウトを制御する同じ基本的なプロパティによって制御されます。 ただし、応答性の良いレイアウトをサポートするため、追加のオプションが追加されました。 特に、ページのレイアウトは次の要因に基づいています。
 
@@ -63,7 +63,7 @@ Finance and Operations では、レイアウトが Dynamics AX 2012 でのレイ
 -   **HeightMode**、**WidthMode**、**Height**、**Width** の各プロパティにより指定されているサイズ変更。
 
 ## <a name="arrangemethod-property"></a>ArrangeMethod プロパティ
-**ArrangeMethod** プロパティは、コンテナーの基準配置方法を指定します。 Finance and Operations では、古い値が維持されていました。 また、**HorizontalWrap** という名前の新しいプロパティが、主にパノラマ、特にタイル レイアウトに追加されました。 次のテーブルでは、**ArrangeMethod** プロパティのさまざまなオプションについて説明しています。
+**ArrangeMethod** プロパティは、コンテナーの基準配置方法を指定します。 Finance and Operations では、古い値が保持されていました。 また、**HorizontalWrap** という名前の新しいプロパティが、主にパノラマ、特にタイル レイアウトに追加されました。 次のテーブルでは、**ArrangeMethod** プロパティのさまざまなオプションについて説明しています。
 
 | オプション          | 説明                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Finance and Operations では、レイアウトが Dynamics AX 2012 でのレイ
 | HorizontalWrap  | コントロールは水平方向に折り返された固定幅の列の内側に配置されます。 このオプションは通常、パノラマ セクションのタイル レイアウトに使用されます。 このオプションは、TabPages (**Tab.Style**=**パノラマ**) の既定値です。     |
 
 ## <a name="columnsmode-property"></a>ColumnsMode プロパティ
-Finance and Operations では、応答レイアウトをサポートする新しい**入力**オプションが追加されました。 このプロパティ値を設定すると、列は必要に応じて自動的に並べられます。 次のテーブルでは、**ColumnsMode** プロパティのさまざまなオプションについて説明しています。
+Finance and Operations では、応答レイアウトをサポートする新しい **入力** オプションが追加されました。 このプロパティ値を設定すると、列は必要に応じて自動的に並べられます。 次のテーブルでは、**ColumnsMode** プロパティのさまざまなオプションについて説明しています。
 
 | オプション | 説明                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ Finance and Operations では、応答レイアウトをサポートする新し
 | 開始日固定  | **列** プロパティが生成する必要がある列の数を指定します。 コントロールは列の間で均等に分散され、順序が維持されます。 コントロールは、列の間で均等に分配できない場合、一番左の列は追加のコントロールが最初に表示されます。 このオプションは、すべてのコントロールの既定値です。                                                          |
 
 ## <a name="heightmodewidthmode-properties"></a>HeightMode/WidthMode プロパティ
-Finance and Operations でも、サイズ プロパティ **WidthMode** + **幅**および **HeightMode** + **高さ**からサイズ変更を行います。 次のテーブルは、これらのプロパティのさまざまなオプションについて説明しています。
+Finance and Operations でも、サイズ プロパティ **WidthMode**+**Width** および **HeightMode**+**Height** からサイズ変更を行います。 次のテーブルは、これらのプロパティのさまざまなオプションについて説明しています。
 
 | オプション          | 説明                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

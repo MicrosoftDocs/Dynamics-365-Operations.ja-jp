@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658623"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331375"
 ---
 # <a name="project-invoicing"></a>プロジェクト請求
 
@@ -112,6 +112,9 @@ ms.locfileid: "2658623"
 
 -   品目のためにプロジェクトの顧客に請求書を発行: 発注書の請求可能金額に品目の明細行プロパティを設定し、適切なプロジェクトの請求方法を使用して顧客に請求します。
 -   品目のためにプロジェクトの顧客に請求書を発行しない: 品目の発注書明細行の**課金対象**明細行プロパティを選択しません。 これにより、発注書に対する請求書を発行でき、その後のアクションは必要ありません。
+
+> [!NOTE] 
+> 既定では、リリースの保持明細行は非請求対象となっています。 これは、リリース済の保持されたの仮発行請求書を作成する機能が有効化されていないことを意味します。
 
 ## <a name="credit-notes"></a>訂正票
 顧客請求書の金額の値が負の場合、請求書は訂正票に分類します。 ドキュメントを印刷するとき、"訂正票" というタイトルになります。 

@@ -3,13 +3,13 @@ title: クライアント インターネット接続
 description: このトピックは、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 29151
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: bd23b4e496782709a42cd66ff20ec7568819c56b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7dc6d4ede3ca6081bd564189c8eeaa47b8de8cbf
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183064"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334721"
 ---
 # <a name="client-internet-connectivity"></a>クライアントのインターネット接続
 
@@ -50,3 +50,7 @@ Dynamics 365 Finance + Operations (オンプレミス) 展開用のローカル 
 
 - **インターネット接続が有効** - 管理者は、Web クライアントが外部から行う外部接続をすべてオフにすることができます。
 - **Skype プレゼンスが有効** - 管理者がスカイプへの外部接続をオフにし、そうでなければWeb クライアントが行います。
+
+## <a name="why-does-the-client-connect-to-the-skype-for-business-api-when-it-first-loads"></a>クライアントが最初に読み込まれたときに Skype for Business API に接続する理由。
+
+クライアントの読み込み時に、インターネット接続が使用可能かどうかを確認するために、Skype for Business API へのクイック コール (ping) が実行されます。 使用できない場合は、クライアントは切断された方法で機能します。 環境では、このチェックを実行するために Skype for Business を表示するかどうかを指定する必要はありません。

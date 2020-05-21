@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 104543
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2043b7ca69363008cf8b66c1475c99c6bcd7aae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f1e29b494c9f86d1da78cee38691d14f9592ebea
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183068"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329941"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 
@@ -39,9 +39,9 @@ Word を正しく理解し、適切なエクスペリンスを提供するには
 数十億のトランザクションと数十億の文字を記録する場合がある財務プログラムで文字の方向を追跡することにより、各文字のコンテキストの情報を格納する場合、重要な取引および空間のオーバーヘッドを作成します。 したがって、この動作は特別な条件の場合のみ考慮されます。
 
 ## <a name="bidirectional-text"></a>双方向のテキスト
-どちらも RTL 言語であるアラビア語とヘブライ語をサポートするために、RTL リーダーが自然な読み方でフォームとやりとりできるように、各フォームのコントロールには RTL の向きがあります。 ほとんどの場合、コントロールの RTL の向き(右から左)は予想通りに作動し、RTL ユーザーに期待するエクスペリエンスを提供します。 Finance and Operations アプリおよび最新のブラウザは RTL 方向をサポートし、Finance and Operations アプリはその機能に準拠しています。 ただし、場合によっては、拡張可能なコントロール (カスタム コントロール) には、要素の方向を正しく位置付ける特別なコードが必要です。 
+どちらも RTL 言語であるアラビア語とヘブライ語をサポートするために、RTL リーダーが自然な読み方でフォームとやりとりできるように、各フォームのコントロールには RTL の向きがあります。 ほとんどの場合、コントロールの RTL の向き(右から左)は予想通りに作動し、RTL ユーザーに期待するエクスペリエンスを提供します。 Finance and Operations アプリと最新のブラウザーは RTL の向きに対応しており、Finance and Operations アプリはその機能に準拠しています。 ただし、場合によっては、拡張可能なコントロール (カスタム コントロール) には、要素の方向を正しく位置付ける特別なコードが必要です。 
 
-この記事の参照ポイントは、標準のテキスト エントリ (Microsoft Dynamics AX 2012 の勘定科目名、説明、ユーザー名など) で主に使用される Win32 CEdit コントロールです。 HTML 入力コントロールの動作は、CEdit コントロールの機能に似ています。 したがって、Finance and Operations にも同じ動作が適用されます。 
+この記事の参照ポイントは、標準のテキスト エントリ (Microsoft Dynamics AX 2012 の勘定科目名、説明、ユーザー名など) で主に使用される Win32 CEdit コントロールです。 HTML 入力コントロールの動作は、CEdit コントロールの機能に似ています。 したがって、Finance and Operations には同じ動作が適用されます。 
 
 CEdit コントロールは、Unicode 標準によって定義されている双方向テキスト管理のためのルールによって制御される Win32 コントロールです。 コントロールが同じ文字列内の RTL テキスト (アラビア語やヘブライ語など) と LTR テキストの両方をホストする場合に双方向のテキストは発生します。 
 

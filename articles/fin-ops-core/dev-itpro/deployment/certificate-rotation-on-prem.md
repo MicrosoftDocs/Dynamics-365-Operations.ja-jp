@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/20/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 1760d0c52b10be545d5fc82dc7b9ba22db11e734
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6f1f6d8701eee44a7e8614fb804ccc0f14ced567
+ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275639"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3324533"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -28,7 +28,9 @@ ms.locfileid: "3275639"
 
 有効期限が近づくにつれて、Dynamics 365 Finance + Operations (オンプレミス) 環境で使用する証明書を回転することが必要となる場合があります。 このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 
-> [!NOTE]
+> [!WARNING]
+> 証明書の有効期限が切れる前に、証明書ローテーションのプロセスを正しく開始する必要があります。 これはデータ暗号化の証明書にとって非常に重要です。暗号化されたフィールドのデータが失われる可能性があるためです。 詳細については、[証明書ローテーション後](#aftercertrotation)を参照してください。 
+> 
 > 古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。
 
 ## <a name="preparation-steps"></a>準備段階 
@@ -251,4 +253,15 @@ ms.locfileid: "3275639"
 
 1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql)」を参照してください。
 
-2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。 
+2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。
+
+## <a name="after-certificate-rotation"></a><a name="aftercertrotation"></a>証明書ローテーション後
+
+### <a name="data-encryption-certificate"></a>データの暗号化証明書
+
+この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[ここ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields)でオンにすることができます。 ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。 
+
+プラットフォーム更新 33 からは、「データ暗号化証明書をローテーションする場合は営業時間外に実行する必要がある、暗号化されたデータ ローテーション システム ジョブ」というタイトルのバッチ ジョブが、新しくローテーションされた証明書を使用してデータを再暗号化します。 これは、2 時間から 3 日の間に実行されるクローラー バッチ ジョブで、暗号化されたすべてのデータを使用して新しい証明書を再暗号化します。 データの量によっては、クローラーをノートよりも短い期間で完了できる可能性があります。
+
+> [!WARNING]
+> 暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。 そうしないと、これによってデータが失われる可能性があります。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 31501
 ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a60904e460b92732c4bba5371a72ba41a31c28bf
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: d7354622cde6c066eee84328b46f723f457fd850
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081959"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329933"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 

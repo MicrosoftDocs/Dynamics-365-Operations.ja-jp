@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 32030c50551ebf4cc6619f692c91f76071b2c799
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: c51bda28545a7579cc9147de2f3881c76b9fa666
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287837"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346639"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -166,14 +166,6 @@ Finance and Operations のプラットフォームは、タスク記録に基づ
 開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
 機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細について[ツールのダウンロード](https://www.microsoft.com/download/details.aspx?id=57357)と[Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)を参照してください。
-
-Regression Suite Automation Tool の詳細については、次の情報を参照してください。
-
-- [第 1 部: Regression Suite Automation Tool -- バックグラウンド & セットアップ](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [- 第 2 部: Regression Suite Automation Tool -- ライフサイクル デモのテスト](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)
- 
-ハンズ オン ラボについては、[Regression Suite Automation Tool のチュートリアルを使用する](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md) を参照してください。
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 20401
 ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: accad690f04ca81b54df9236eb81936089fc3234
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 6b14bb9f2c0377463c1026ec57f2813ae47b6d90
+ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658850"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3329939"
 ---
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 
@@ -55,7 +55,7 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2.  デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
-3.  **Finance and Operations** メニューで、**プロジェクトのインポート**をクリックします。
+3.  **Finance and Operations** メニューで、**プロジェクトのインポート** をクリックします。
 4.  **プロジェクトのインポート** ウィンドウで、**ファイル名**テキスト ボックスの隣にある、省略記号ボタンをクリックします。
 5.  **インポートするファイルの選択**ウィンドウで、**C:\FMLab** を参照して FMTutorialDataModel.axpp をクリックしてから**開く**をクリックします。
 6.  **プロジェクト ファイルの場所**テキスト ボックスに、**C:\FMLab** と入力します。
@@ -286,7 +286,7 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 9.  Visual Studio に戻る
 
 ## <a name="determine-the-amount-of-remaining-patterns-work-in-a-model"></a>モデル内で残っているパターンの作業の量を決定する
-1.  **Finance and Operations** をクリックし、**アドイン**をポイントし、**フォーム パターン レポートを実行**を選択します。 
+1.  **Finance and Operations** をクリックし、**アドイン** をポイントし、**フォーム パターン レポートを実行**を選択します。 
 
     フォームのパターン レポートが生成されたときに表示される通知ダイアログです。 
 
