@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboard により、新規採用者の研修活�
 2. ドリルダウンするには、表示するガイドを選択します。
 3. **活動**タブを選択して、新規採用により完了した活動を表示します。
 
-    ![[新規採用により完了した活動の表示](メディア/オンボードステータスアクティビティ.png)](./media/onboard-status-activities.png)
+    ![[新規採用により完了した活動の表示](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>自分に割り当てられている研修タスクの表示
 
