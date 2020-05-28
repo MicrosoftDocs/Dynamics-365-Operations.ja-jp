@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 5 月 14 日
+          href: hr-whats-new-2020-05-14.md
         - name: 2020 年 5 月 1 日
           href: hr-whats-new-2020-05-01.md
         - name: 2020 年 4 月 13 日
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Lifecycle Services の理解
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Teams の Human Resources アプリ
+          href: hr-admin-teams-leave-app.md
         - name: 伝票リソース
           items:
             - name: ヘルプ システム
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: ヘルプ システムに接続する
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: カスタム ヘルプ サイトに接続する
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: カスタム ヘルプの概要
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: フィールドの説明の表示およびエクスポート
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: タスク レコーダー
@@ -511,10 +515,12 @@
               href: hr-leave-and-absence-analytics.md
             - name: 休暇および欠勤要求の管理
               href: hr-employee-self-service-manage-requests.md
-            - name: 要求時間オフ
+            - name: 休暇申請
               href: hr-employee-self-service-request-time-off.md
             - name: チームおよび会社のカレンダーの表示
               href: hr-employee-self-service-calendar.md
+        - name: Teams での休暇要求の管理
+          href: hr-teams-leave-app.md
         - name: 従業員の育成
           items:
             - name: 業績管理の概要

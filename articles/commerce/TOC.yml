@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
         - name: 使用開始
           items:
@@ -79,7 +79,7 @@
                 - name: Phased Rollout (N-1) のインストール、構成、切替
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: 小売チャネル拡張機能を最新の Retail SDK にアップグレード
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: 新機能および変更された機能
               items:
                 - name: Finance and Operations アプリの新機能または変更された機能
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: ヘルプ システムに接続する
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: カスタム ヘルプ サイトに接続する
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: カスタム ヘルプの概要
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: フィールドの説明の表示およびエクスポート
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: タスク レコーダー
@@ -499,17 +499,21 @@
                     - name: Adyen 支払コネクタ
                       href: dev-itpro/adyen-connector.md
                     - name: オンライン支払手段を Adyen コネクタで保存
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Adyen コネクタを使用した強力な顧客認証 (SCA)
+                      href: adyen_redirect.md
                     - name: ギフト カードとクレジット メモの操作へのシームレスなオフライン切り替え
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: 請求書の支払シナリオを設定する
                       href: payinvoice.md
                     - name: 重複支払の防止
                       href: duplicate-payment-protection.md
-                    - name: オムニ チャネル支払の概要
+                    - name: オムニチャネル支払の概要
                       href: omni-channel-payments.md
                     - name: 支払に関してよく寄せられる質問
                       href: dev-itpro/payments-retail.md
+                - name: 組織の Bing 地図の管理
+                  href: dev-itpro/manage-bing-maps.md
         - name: 製品とサービスの販売
           items:
             - name: カテゴリ、製品、品揃え
@@ -820,10 +824,12 @@
                   href: authoring-home-overview.md
                 - name: ユーザーとロールの管理
                   href: manage-ecommerce-users-roles.md
-                - name: サイトにおける検索エンジン最適化 (SEO) の考慮事項
+                - name: サイトにおける検索エンジンの最適化 (SEO) の考慮事項
                   href: search-engine-optimization-considerations.md
                 - name: コンテンツ セキュリティ ポリシー (CSP) の管理
                   href: manage-csp.md
+                - name: Web アクティビティ イベント コレクションのオプトアウト
+                  href: web-activity-opt-out.md
             - name: サイト コンテンツの管理
               items:
                 - name: コンテンツを追加する方法
@@ -1714,6 +1720,8 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: 電子メールのコンフィギュレーションと送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: トランザクション イベント用の電子メール テンプレートの作成
+              href: email-templates-transactions.md
             - name: 電子メール体験を向上させる
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Office 統合のトラブルシューティング
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: チャネル データベースの事前拡張された列
                   href: dev-itpro/extended-columns.md
+                - name: Commerce Data Exchange の拡張 - リアルタイム サービス
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: 支払コネクタの拡張機能
               items:
                 - name: 支払ターミナルの支払統合の作成
