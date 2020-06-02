@@ -1,6 +1,6 @@
 ---
 title: 定期的なデータ エクスポートのアプリの作成
-description: この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。
+description: この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure Logic Apps を作成する方法を説明します。
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -27,7 +27,7 @@ ms.locfileid: "3009632"
 ---
 # <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポートのアプリの作成
 
-この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure ロジック アプリを作成する方法を説明します。 このチュートリアルでは Human Resources の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、ロジック アプリはエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
+この記事では Microsoft Dynamics 365 Human Resources から定期的なスケジュールでデータをエクスポートする Microsoft Azure Logic Apps を作成する方法を説明します。 このチュートリアルでは Human Resources の DMF パッケージ REST アプリケーション プログラミング インターフェイス (API) を利用して、データをエクスポートします。 データがエクスポートされた後、Logic Apps はエクスポートされたデータ パッケージを Microsoft OneDrive for Business のフォルダーに保存します。
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 
@@ -41,9 +41,9 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 このチュートリアルでは下記のテクノロジを使用します:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
-- **[Azure ロジック アプリ](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
-    - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
+    - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – Logic Apps を必要なエンドポイントに接続するために使用されるテクノロジ。
 
         - [Azure AD の HTTP](https://docs.microsoft.com/connectors/webcontents/) コネクタ
         - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) コネクタ
@@ -56,15 +56,15 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 このチュートリアルで手順を開始する前に、次の項目が必要です:
 
 - その環境で管理者レベルの権限を持つ Human Resources 環境
-- ロジック アプリをホストする [Azure サブスクリプション](https://azure.microsoft.com/free/)
+- Logic Apps をホストする [Azure サブスクリプション](https://azure.microsoft.com/free/)
 
 ## <a name="the-exercise"></a>演習
 
-この演習の最後には、Human Resources 環境と OneDrive for Business アカウントに接続されているロジック アプリを取得できます。 ロジック アプリは Human Resources からデータ パッケージをエクスポートし、そのエクスポートが完了するのを待ち、エクスポートされたデータ パッケージをダウンロードして、指定した OneDrive for Business フォルダーにデータ パッケージを保存します。
+この演習の最後には、Human Resources 環境と OneDrive for Business アカウントに接続されている Logic Apps を取得できます。 Logic Apps は Human Resources からデータ パッケージをエクスポートし、そのエクスポートが完了するのを待ち、エクスポートされたデータ パッケージをダウンロードして、指定した OneDrive for Business フォルダーにデータ パッケージを保存します。
 
-完成したロジック アプリは、次の図のようになります。
+完成した Logic Apps は、次の図のようになります。
 
-![ロジック アプリの概要](media/integration-logic-app-overview.png)
+![Logic Apps の概要](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>ステップ 1: Human Resources でデータ エクスポート プロジェクトを作成する
 
@@ -73,18 +73,18 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 ![作業者データ プロジェクトをエクスポート](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
-> データ エクスポート プロジェクトの名前を記憶します。 次のステップでロジック アプリを作成するときに必要です。
+> データ エクスポート プロジェクトの名前を記憶します。 次のステップで Logic Apps を作成するときに必要です。
 
-### <a name="step-2-create-the-logic-app"></a>ステップ 2: ロジック アプリの作成
+### <a name="step-2-create-the-logic-app"></a>ステップ 2: Logic Apps の作成
 
-演習の大部分はロジック アプリの作成に関するものです。
+演習の大部分は Logic Apps の作成に関するものです。
 
-1. Azure ポータルで、ロジック アプリを作成します。
+1. Azure ポータルで、Logic Apps を作成します。
 
-    ![ロジック アプリ作成ページ](media/integration-logic-app-creation-1.png)
+    ![Logic Apps 作成ページ](media/integration-logic-app-creation-1.png)
 
-2. ロジック アプリ デザイナーで、空白のロジック アプリから始めます。
-3. 24 時間ごとに (または選択したスケジュールに従って) ロジック アプリを実行するために [定期スケジュール トリガー](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) を追加します。
+2. Logic Apps  デザイナーで、空白の Logic Apps から始めます。
+3. 24 時間ごとに (または選択したスケジュールに従って) Logic Apps を実行するために [定期スケジュール トリガー](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) を追加します。
 
     ![定期ダイアログ ボックス](media/integration-logic-app-recurrence-step.png)
 
@@ -190,18 +190,18 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
         ![ファイルのアクションの作成](media/integration-logic-app-create-file-step.png)
 
-### <a name="step-3-test-the-logic-app"></a>ステップ 3: ロジック アプリのテスト
+### <a name="step-3-test-the-logic-app"></a>ステップ 3: Logic Apps リのテスト
 
-ロジック アプリをテストするには、デザイナーで **実行** ボタンを選択します。 ロジック アプリのステップが実行を開始することを確認します。 30 から 40 秒後、ロジック アプリの実行が終了し、OneDrive for Business フォルダにエクスポートされた作業者を含む新しいパッケージ ファイルが含まれるはずです。
+Logic Apps をテストするには、デザイナーで **実行** ボタンを選択します。 Logic Apps のステップが実行を開始することを確認します。 30 から 40 秒後、Logic Apps の実行が終了し、OneDrive for Business フォルダにエクスポートされた作業者を含む新しいパッケージ ファイルが含まれるはずです。
 
 どこかのステップで失敗が報告された場合、デザイナーから失敗したステップを選択し、その **入力** フィールドと **出力** フィールドを確認します。 エラーを修正するため必要に応じてステップをデバッグおよび調整します。
 
-次の図はロジック アプリのすべてのステップが正常に実行された場合のロジック アプリ デザイナーの外観を示しています。
+次の図は Logic Apps のすべてのステップが正常に実行された場合の Logic Apps デザイナーの外観を示しています。
 
-![成功したロジック アプリの実行](media/integration-logic-app-successful-run.png)
+![成功した Logic Apps の実行](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>集計
 
-このチュートリアルではロジック アプリを使用して Human Resources からデータをエクスポートして、そのエクスポートしたデータを OneDrive for Business フォルダーに保存する方法を学びました。 ビジネスのニーズに合わせて、このチュートリアルの手順を必要に応じて変更できます。
+このチュートリアルでは Logic Apps を使用して Human Resources からデータをエクスポートして、そのエクスポートしたデータを OneDrive for Business フォルダーに保存する方法を学びました。 ビジネスのニーズに合わせて、このチュートリアルの手順を必要に応じて変更できます。
 
 
