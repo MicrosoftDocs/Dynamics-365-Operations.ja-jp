@@ -3,7 +3,7 @@ title: コード署名証明書を使用して MPOS に署名する
 description: このトピックでは、コード署名証明書を使用して MPOS に署名する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 2627accc5278bad096e8ed05a6166f75a5a32e54
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f5297c82f58fb39b0baf9ae06b253f33920e6c62
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004659"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367118"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
@@ -44,7 +44,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 ![MPOS アプリ署名フロー](media/POSSigningFlow.png)
 
 > [!NOTE] 
-> 現在 OOB パッケージでは、appx ファイルの署名のみがサポートされており、MPOIS、RSSU、HWSなどのセルフ サービスの他のインストーラーは、このプロセスによって署名されません。 SignTool またはその他の署名ツールを使用して、手動で署名する必要があります。
+> 現在 OOB パッケージでは、appx ファイルの署名のみがサポートされており、MPOIS、RSSU、HWSなどのセルフ サービスの他のインストーラーは、このプロセスによって署名されません。 SignTool またはその他の署名ツールを使用して、手動で署名する必要があります。 appx ファイルの署名に使用する証明書は、Modern POS がインストールされているマシンにインストールする必要があります。
 
 ## <a name="steps-to-configure-the-certificate-for-signing"></a>署名のために証明書を構成する手順
 

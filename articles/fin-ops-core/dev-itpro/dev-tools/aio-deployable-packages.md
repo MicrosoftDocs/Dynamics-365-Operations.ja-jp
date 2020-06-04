@@ -3,7 +3,7 @@ title: オールインワン配置可能パッケージ
 description: このトピックでは、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9eb350f804b15cc7d5346b04c07602402311da6c
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 969b76d03a123259c3a1ff95fd44b975d17769e4
+ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266406"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3374785"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
@@ -29,7 +29,9 @@ ms.locfileid: "3266406"
 このトピックでは、オールインワン配備可能パッケージを作成および管理するためのベスト プラクティスについて説明します。
 
 > [!IMPORTANT]
-> v1 クラウド サービスのお客様向けオールインワンではない配置可能パッケージのサポートは、2020 年 10 月 31 日に終了します。
+> - オールインワン配置可能パッケージでは **ない** 配置可能パッケージのサポートは、2020 年 10 月 31 日に終了します。
+> - 現在、支払コネクタが環境に配置されている場合、[支払コネクタ パッケージを作成](../../../commerce/dev-itpro/payment-connector-package.md) して、オールインワン配置可能パッケージに含める必要があります。
+> - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。
 
 ## <a name="what-is-an-all-in-one-deployable-package"></a>オールインワン配置可能パッケージとは何ですか?
 

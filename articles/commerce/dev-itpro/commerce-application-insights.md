@@ -3,7 +3,7 @@ title: 拡張イベントを Application Insights に記録する
 description: このトピックでは、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 43eecae82b7c8c3021d407e85955cf148b8bd990
-ms.sourcegitcommit: cc5dc0bd90277f1ba684dd310da3274886ce573c
+ms.openlocfilehash: 18f605ba290575e5ed06e82ef334c673300048b6
+ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3320838"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378955"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -110,7 +110,7 @@ ms.locfileid: "3320838"
                     {
                         if (client == null)
                         {
-                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey");
+                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey") ?? string.Empty;
                             client = new TelemetryClient(new TelemetryConfiguration(key));
                         }
                     }

@@ -1,7 +1,7 @@
 ---
 title: クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 description: このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。
-author: ChrisGarty
+author: jorisdg
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 633510807df5311492dba236846c7561b2deff33
-ms.sourcegitcommit: c03bd0fcf663e4e3e83db52fc9255ef1e3de34bc
+ms.openlocfilehash: 574cdcb608cba8b2061db027831d1fe8dc572f75
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3176168"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396091"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -432,6 +432,9 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
 
 ### <a name="extensions-of-extensions-are-not-yet-supported"></a>拡張機能の拡張機能はまだサポートされていません
 現在のところ、通常のクラスで定義されているメソッドのみラップできます。 拡張クラスで定義されているメソッドは、拡張クラスを強化してラップできません。 この機能は、将来のリリースで計画されています。
+
+### <a name="extensions-of-constructors"></a>コンストラクターの拡張機能
+コンストラクターは拡張できません。 拡張クラスで定義される **新しい** メソッドは、拡張クラス自体のコンストラクターを定義します。 また、**新しい** メソッドはパブリックである必要があり、引数を持つことはできません。 詳細については、[コンストラクター](class-extensions.md#constructors) を参照してください。
 
 ### <a name="tooling"></a>ツール
 このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。

@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (プラットフォーム更�
 description: このトピックでは、オンプレミス環境の計画、設定、および展開方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.custom: NotInToc
 ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8bf0f85407728f02a0b2136cf9ad3dadf30e82a5
-ms.sourcegitcommit: d27803a29a1668cf1932e848ed40be87a663807c
+ms.openlocfilehash: 7e9c49b8fbb7787cf8e7435fbdc220ade021d7ea
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3176774"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368782"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
@@ -31,7 +31,7 @@ ms.locfileid: "3176774"
 このトピックでは、展開を計画し、インフラストラクチャを設定し、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス)、プラットフォーム更新プログラム 8 および 11 を展開する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックは、プラットフォーム更新プログラム 8 および 11 にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新 12 への展開に関する詳細については、[オンプレミス環境の設定と配置 (プラットフォーム更新 12 以降)](setup-deploy-on-premises-pu12.md) を参照してください。
+> このドキュメントは現在更新されていません。 プラットフォーム更新 12 以降でのオンプレミス環境の展開については、[オンプレミス環境の設定と配置 (プラットフォーム更新 12 以降)](setup-deploy-on-premises-pu12.md) を参照してください。
 
 ## <a name="finance-and-operations-components"></a>Finance and Operations コンポーネント
 

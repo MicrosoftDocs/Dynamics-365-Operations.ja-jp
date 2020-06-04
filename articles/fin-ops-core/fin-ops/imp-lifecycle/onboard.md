@@ -3,7 +3,7 @@ title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 02/11/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 744add22d3e9e9f196313f477c1c89470ec37a76
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: 0fa6078a99d93ea027be64e03feea40fe2846602
+ms.sourcegitcommit: 07e425707eb20730f10246a27799f4deeef93f97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131744"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3390873"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -32,7 +32,7 @@ ms.locfileid: "3131744"
 
 組織が Finance and Operations のサブスクリプションを購入したら、テナント管理者は、組織の Azure Active Directory (Azure AD) テナントを有効にし、次の手順を完了する必要があります。
 
-1. Inprivate/Incognito ブラウズセッションを開いて、[Microsoft 365 管理センター](https://admin.microsoft.com/)に移動します。
+1. InPrivate/Incognito ブラウズ セッションを開いて、[Microsoft 365 管理センター](https://admin.microsoft.com/) に移動します。
 2. テナント管理者の資格情報を使用してログインします。
 3. **請求 > 製品 & サービス**に移動して、配置するアプリケーションに対して有効なサブスクリプションがあることを確認します。 
    > [!NOTE]
@@ -56,9 +56,8 @@ LCS を開始するには、[Finance and Operations アプリ顧客用の Lifecy
 
 ## <a name="fasttrack-onboarding-services"></a>FastTrack オンボード サービス
 
-LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 LCS **実装プロジェクト** を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
 
-すべてのLCS **実装プロジェクト** は、プロジェクトのオンボードを正常に完了した後に、そのサービスを歓迎する FastTrack チームからの電子メールを受け取ります。 LCS **実装プロジェクト**を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。
 
 > [!NOTE]
 > FastTrack チームからのオンボードに関連するすべての電子メールは Dynamics 365 Onboarding (<ond365@microsoft.com>) から発信されるので、スパムのブロック/フィルターがこの住所からの電子メールを許可していることを確認してください。
@@ -71,5 +70,3 @@ LCS 実装プロジェクトに顧客やパートナー チームから主要な
 LCSプロジェクトのマイルストーン日付は、必ず最新の状態に保つようにしてください。 このように、さまざまなプロジェクトステージでお客様と連絡をとれます。 お客様が Go-live 日 により近づいたとき、マイクロソフトは、実稼働環境を配置する前に、プロジェクトの Go-live 評価のためにお客様と連絡を取ります。
 
 マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」トピックの [方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) セクションを参照してください。
-
-

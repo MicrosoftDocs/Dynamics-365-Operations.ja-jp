@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 909f1faa6209edb18f286e298b96b585d28eb460
-ms.sourcegitcommit: 153bb33722c02501bf7bcfd56ac887602d5dfbd3
+ms.openlocfilehash: 598fe695739f221b12af2dbd465e3ea709c0f9db
+ms.sourcegitcommit: 6caadaf948bae63c97f042428e77cd829b581b5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3318654"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "3387599"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -192,7 +192,7 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 
 ### <a name="how-much-storage-do-we-get-for-azure-blob-storage"></a>Azure Blob Storage にどのくらいストレージを確保できますか。
 
-詳細については [ライセンス ガイド](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf) を参照してください。 現在、40 ギガバイト (GB) のストレージを使用できます。
+詳細については [ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) を参照してください。 現在、40 ギガバイト (GB) のストレージを使用できます。
 
 ### <a name="what-is-the-cost-for-additional-storage"></a>追加ストレージの費用はいくらですか。
 

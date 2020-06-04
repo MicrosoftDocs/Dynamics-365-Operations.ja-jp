@@ -3,7 +3,7 @@ title: IaaS 環境における既定のレポート エクスペリエンス
 description: このトピックでは、Finance and Operations アプリの改ページ調整に関する情報を提供します。
 author: TJVass
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94910a9db55e7315095ff67f52d03584502df14a
-ms.sourcegitcommit: 33737d8356450e3f52097d49e7d59d81cf97628c
+ms.openlocfilehash: b8dbf8568ddf3219896a74ac1ef7e86ce82b76d7
+ms.sourcegitcommit: fc93df8ca6a25af797a53578a83324506545a63d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3233668"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3373069"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 
@@ -51,7 +51,7 @@ Document Reporting Service は、ビジネス文書を一括生成するにあ�
 |--------------------------|---------|------------------|
 | **表示の形式**       | PDF と Office ドキュメント | HTML |
 | **データ量**          | 1 から 数百規模の行 | 数万以上の行 |
-| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、サブレポート、ネストされた領域](https://docs.microsoft.com/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **インタラクティブな機能** | 印刷、テキスト検索、共有 | [ドリルスルー、ドリルダウン、ネストされた領域](https://docs.microsoft.com/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
 | **データ ソース**          | トランザクションのデータベース | データ ウェアハウス |
 | **レポート作成者**        | 開発者 | パワー ユーザー |
 | **レイアウト**               | 構造化された定義済みのレイアウト | 適応性のある柔軟なレイアウト |

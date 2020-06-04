@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ffa1e8cad9521ef436adf5de9817e7e852386838
-ms.sourcegitcommit: d92d1821efc23c9548c542de67d90a20fe6433cd
+ms.openlocfilehash: 63b3ff191af282b05c2ec2aa3e6c782648731155
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261664"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378197"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -101,6 +101,7 @@ ms.locfileid: "3261664"
 - [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
 - [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)
 - [チャネル データベースの事前拡張された列](extended-columns.md)
+- [Commerce Data Exchange の拡張 - リアルタイム サービス](extend-commerce-data-exchange.md)
 
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)

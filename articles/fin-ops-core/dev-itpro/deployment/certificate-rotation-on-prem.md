@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6f1f6d8701eee44a7e8614fb804ccc0f14ced567
-ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
+ms.openlocfilehash: 80e5295dcf7e95654c76233ae4b6e2fe0d0d439f
+ms.sourcegitcommit: 07e425707eb20730f10246a27799f4deeef93f97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324533"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3390897"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -46,7 +46,12 @@ ms.locfileid: "3324533"
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    
+    ```
+
+    > [!IMPORTANT]
+    > 自己署名証明書は、実稼働環境では使用しないでください。 信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
+
+    ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -89,12 +94,14 @@ ms.locfileid: "3324533"
 
 ## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric cluster 内での新しい証明書のアクティブ化
 
-### <a name="service-fabric-with-certificates-that-are-not-expired"></a>期限切れになっていない証明書を含む Service Fabric
+### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a>期限切れになっていない証明書を含む Service Fabric
 
-1. Clusterconfig.json ファイルを編集します。 ファイル内の次のセクションを検索します。  
+1. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、先に進む前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
+
     ```json
     "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
@@ -120,32 +127,33 @@ ms.locfileid: "3324533"
 
     ```json
     "security":  {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
-                                        "ClusterCertificate":  {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ServerCertificate":   {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ClientCertificateThumbprints":  [
-                                                                                                                                                                                           {
-                                                                                "CertificateThumbprint":  "Old client thumbprint",
-                                                                                "IsAdmin":  false
-                                                                            },
-                                                                            {
-                                                                                "CertificateThumbprint":  "New client thumbprint",
-                                                                                "IsAdmin":  true
-                                                                            }
-                                                                          ]
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*Old client thumbprint*",
+                                            "IsAdmin":  false
+                                       },
+                                       {
+                                            "CertificateThumbprint": "*New client thumbprint*",
+                                            "IsAdmin":  true
                                        }
-                    },
+                                             ]
+                                   }
+                },
     ```
 
 3. 新しいサムプリントと古いサムプリント値を編集します。 
@@ -187,7 +195,13 @@ ms.locfileid: "3324533"
 
 このプロセスを続行するには、 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy) を行ってください。
 
-## <a name="localagent-certificate-update-if-needed"></a>LocalAgent 証明書の更新 (必要な場合)
+## <a name="update-the-localagent-certificate"></a>LocalAgent 証明書を更新する
+
+次の場合は、LocalAgent を再インストールする必要があります:
+
+- Service Fabric Cluster/サーバー証明書を変更しました。
+- Service Fabric クライアント証明書を変更しました。
+- LocalAgent 証明書を更新しました。
 
 1. いずれかの Orchestrator ノードに対して次の PowerShell コマンドを実行します。
 
@@ -212,6 +226,49 @@ ms.locfileid: "3324533"
     - サーバー証明書の拇印
     - テナント サービス プリンシパル証明書の拇印
 
+## <a name="update-your-current-deployment-configuration"></a>現在の配置コンフィギュレーションを更新する
+
+証明書を更新すると、環境に存在するコンフィギュレーション ファイルが古くなり、手動で更新する必要があります。 そうしないと、クリーンアップ ジョブが失敗する可能性があります。 (この手動更新は、今回だけ行う必要があります。)
+
+1. コンフィギュレーション ファイルを開きます。 次のコマンドを実行して、このファイルの場所を検索できます。
+
+    ```sql
+    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
+    ```
+
+    > [!NOTE]
+    > **LCSENVIRONMENTID** を環境の ID で置き換えます。 このIDは、LCS の環境のページから取得できます。 
+
+    ファイルの先頭は、次の例のようになります。
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+        "clientCertThumbprint": "Old client thumbprint"
+        }
+    },
+    ```
+
+2. **serverCertThumprint** と **clientCertThumbprint** 値を新しいサムプリントで置き換えます。
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "New server thumbprint(Star/SF)",
+        "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
+
+3. ファイルを保存して閉じます。 このネットワークの場所にアクセスするすべてのプログラムを閉じてください。 そうしないと、クリーンアップ プロセスが失敗する可能性があります。
+
 ## <a name="update-deployment-settings-in-lcs"></a>LCS の展開設定の更新
 
 > [!NOTE]
@@ -225,7 +282,7 @@ ms.locfileid: "3324533"
 
     ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. 拇印を、以前にコンフィギュレーションした新しい拇印に変更します (これらの属性は、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルを確認してください)。
+3. 以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。 (これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。)
 
     ![配置設定の拇印](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
@@ -241,7 +298,7 @@ ms.locfileid: "3324533"
 
 7. 更新中、環境は使用できません。
 
-8. 新しい証明書を使用して環境を正常に更新した後、エクスプローラー Service Fabric Clusterで新しい拇印を確認できます。 サービス Fabric Explorer からの拇印名の名前は、Lifecycle Services 内の拇印の名前とは異なる場合があります。 違いがあっても、値は同じである必要があります。
+8. 新しい証明書を使用して環境を正常に更新した後、Service Fabric Cluster エクスプローラーで新しいサムプリントを表示できます。 Service Fabric エクスプローラーのサムプリントの名前は、LCS の名前と異なる場合があります。 ただし、値は同じである必要があります。
 
     次の例では、同じ拇印の名前がいくらか異なっている例の一部です。
 
@@ -255,13 +312,46 @@ ms.locfileid: "3324533"
 
 2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。
 
+## <a name="clean-up-old-service-fabric-certificates"></a><a name="cleanupoldsfcerts"></a>古い Service Fabric 証明書をクリーンアップ
+
+この手順は、証明書のローテーションが成功した後、または次の証明書のローテーションの前に完了する必要があります。
+
+1. クラスター構成から古い/セカンダリのサムプリントを削除します。 これらを削除した後、適切なセクションは次の例のようになります。
+
+    ```json
+    "security": {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates.
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "server thumbprint(Star/SF)"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+                                        "Thumbprint": "server thumbprint(Star/SF)"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "client thumbprint",
+                                            "IsAdmin":  true
+                                       }
+                                             ]
+                                   }
+                },
+    ```
+
+1. このトピックの前半の [期限切れになっていない証明書を含む Service Fabric](#sfcertrotationnotexpired) セクションの手順 4 から 6 を実行します。 
+
 ## <a name="after-certificate-rotation"></a><a name="aftercertrotation"></a>証明書ローテーション後
 
 ### <a name="data-encryption-certificate"></a>データの暗号化証明書
 
 この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[ここ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields)でオンにすることができます。 ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。 
 
-プラットフォーム更新 33 からは、「データ暗号化証明書をローテーションする場合は営業時間外に実行する必要がある、暗号化されたデータ ローテーション システム ジョブ」というタイトルのバッチ ジョブが、新しくローテーションされた証明書を使用してデータを再暗号化します。 これは、2 時間から 3 日の間に実行されるクローラー バッチ ジョブで、暗号化されたすべてのデータを使用して新しい証明書を再暗号化します。 データの量によっては、クローラーをノートよりも短い期間で完了できる可能性があります。
+プラットフォーム更新プログラム 33 以降では、「データ暗号化証明書をローテーションする場合は営業時間外に実行する必要がある、暗号化されたデータ ローテーション システム ジョブ」 というバッチ ジョブは、新しくローテーションされた証明書を使用してデータを再暗号化します。 このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。 3 日間連続して 1 日あたり 2 時間実行されます。 データの量によっては、バッチ ジョブの実行が短時間で完了する場合があります。
 
 > [!WARNING]
 > 暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。 そうしないと、これによってデータが失われる可能性があります。

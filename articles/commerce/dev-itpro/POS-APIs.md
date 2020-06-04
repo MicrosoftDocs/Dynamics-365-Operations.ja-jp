@@ -3,7 +3,7 @@ title: 販売時点管理 (POS) API
 description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/24/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: c75a33a2b71b2ab9672b8dc503b44d4be9764a12
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 740d4a6df47f976296555d5b560d5c5951e1a2cf
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164710"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368781"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]
@@ -211,6 +211,8 @@ currentCart = getCurrentCartClientResponse.data.result;
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
 | AddExpenseAccountLineToCartOperationRequest |
+| ShipAllCartLinesOperationRequest |
+| ShipSelectedCartLinesOperationRequest |
 
 
 ### <a name="payments"></a>支払利息
@@ -236,6 +238,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | CardPaymentExecuteTaskRequest                          |
 | CardPaymentRefundPaymentRequest                        |
 | CardPaymentVoidPaymentRequest                          |
+| CardPaymentAuthorizeCardTokenPeripheralRequest                          |
 | CashDrawerIsOpenRequest                                |
 | HardwareStationDeviceActionRequest                     |
 | HardwareStationStatusRequest                           |
@@ -252,6 +255,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | PaymentTerminalRefundPaymentRequest                    |
 | PaymentTerminalUpdateLinesRequest                      |
 | PaymentTerminalVoidPaymentRequest                      |
+| PaymentTerminalFetchTokenPeripheralRequest             |
 | PrinterPrintRequest                                    |
 | ScaleReadRequest                                       |
 
@@ -282,6 +286,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | POS API                |
 |------------------------|
 | LogOffOperationRequest |
+| LockRegisterOperationRequest |
 
 ### <a name="dataservice"></a>DataService
 
@@ -369,6 +374,17 @@ currentCart = getCurrentCartClientResponse.data.result;
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
 | SelectProductClientRequest |
+| SelectProductVariantClientRequest |
+| GetActivePricesServiceRequest |
+
+### <a name="categories"></a>カテゴリ
+
+以下は、カテゴリに関連する機能を実行する公開されている API の一覧です。
+
+| POS API                                    |
+|--------------------------------------------|
+| GetCategoriesServiceRequest              |
+
 
 ### <a name="salesorders"></a>SalesOrders
 
@@ -434,6 +450,6 @@ currentCart = getCurrentCartClientResponse.data.result;
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
 | BankDropOperationRequest                 |
-| DeclareStartAmountOperationRequest        |
+| DeclareStartAmountOperationRequest        | 
 
 

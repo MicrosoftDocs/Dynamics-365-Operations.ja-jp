@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5378f5dcfaf03d13b7268d3c34186e5b449a79c
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 72bec5a120a4b05d5f1fff5c3e736e44c0652fe6
+ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082024"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386120"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 
@@ -30,7 +30,7 @@ ms.locfileid: "3082024"
 
 このトピックでは、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。
 
-# <a name="overview"></a>概要
+## <a name="overview"></a>概要
 
 コンパイル時関数は、X++ コードのコンパイル時に早期実行されます。 アプリケーション エクスプローラーに保存されているメタデータの変更に対してコードを復元するためには、可能な限り X++ で使用する必要があります。 コンパイル時関数は、コンパイラによって入力値が検証されます。 入力された値が見つからず、アプリケーション エクスプローラーの既存のオブジェクトが一致しない場合は、コンパイラーはエラーを発行します。 コンパイラは実行時に変数に含まれる値を判別できないため、これらの関数への入力はリテラルでなければなりません。 コンパイル時関数は、メタデータ アサーション関数です。 アプリケーション エクスプローラーでエンティティを表す引数を取得し、コンパイル時にその引数を検証します。 実行時に影響を与えません。 属性は **SysAttribute** クラスから継承するクラスです。 フォーム、レポート、クエリ、メニュー のメタデータの検証をサポートするには、コントロールの **AutoDeclaration** プロパティを使用します。 これらの機能のほとんどは、アプリケーション エクスプローラーにある項目に関するメタデータを取得します。 いくつかの一般的なコンパイル時機能は、次のとおりです。
 
