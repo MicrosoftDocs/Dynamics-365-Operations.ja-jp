@@ -3,7 +3,7 @@ title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5a158088173ce265329bdc52684425589a3298fe
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: a891eecf4f68ba0e05ec2741fd66424837463b74
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284440"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3395998"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -234,6 +234,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | オムニ チャネルのトークン化 | ✔ | ✔ |
 | リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |
 | [オンライン支払の保存](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(10.0.2 以降) | 
+| [SCA 支払リダイレクト](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(10.0.12 以降) |
 
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 
@@ -269,7 +270,7 @@ POS 端末、コール センター、または電子商取引で支払を処理
     |---|---|:-:|:-:|---|
     | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
-    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
+    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 <br>*電子商取引のみ* - [SCA サポート](https://go.microsoft.com/fwlink/?linkid=2131175) が必要な場合は、"V002" を使用します。  | 有 | 有 | "V001"/"V002" |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
     | オプション ドメイン | ライブ環境にはオプションのドメインが必要となります。これは、Adyen に連絡して取得する必要があります。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
@@ -283,7 +284,10 @@ POS 端末、コール センター、または電子商取引で支払を処理
     | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 | 有 | 有 | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 | いいえ | いいえ | SVS |
     | ターミナル ギフト カード エントリ | *POS のみ* 顧客は**手動**または**機械に通す**のどちらかを選択できます。 | はい | はい | True/False |
-    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | はい | はい | True/False |
+    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
+    | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | 有 | 有 | "7" |
+    | 発生元キー | *電子商取引のみ* バージョンに "V002" が指定されている場合にのみ必要です。 このキーは Adyen Web サイトの [発生元キーを取得する方法](https://docs.adyen.com/user-management/how-to-get-an-origin-key) ページの指示に従い取得することができます。 |
+
 
 
 ### <a name="pos-payment-terminal"></a>POS 支払端末
@@ -320,7 +324,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     |---|---|:-:|:-:|---|
     | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
-    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
+    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 <br>*電子商取引のみ* - [SCA サポート](https://go.microsoft.com/fwlink/?linkid=2131175) が必要な場合は、"V002" を使用します。  | 有 | 有 | "V001"/"V002" |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
     | オプション ドメイン | ライブ環境にはオプションのドメインが必要となります。これは、Adyen に連絡して取得する必要があります。 | ライブのみ | 無 | Adyen に連絡する |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
@@ -334,7 +338,9 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 これらの値は、大文字と小文字を区別します。 | はい | はい | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 可能な値は **SVS** および **GIVEX** です。 | いいえ | いいえ | SVS |
     | ターミナル ギフト カード エントリ | *POS のみ* 顧客は**手動**または**機械に通す**のどちらかを選択できます。 | はい | はい | True/False |
-    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | はい | はい | True/False |
+    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
+    | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | 有 | 有 | "7" |
+    | 発生元キー | *電子商取引のみ* バージョンに "V002" が指定されている場合にのみ必要です。 このキーは Adyen Web サイトの [発生元キーを取得する方法](https://docs.adyen.com/user-management/how-to-get-an-origin-key) ページの指示に従い取得することができます。 |
 
 4. アクション ウィンドウで、**保存**を選択します。
 
@@ -395,7 +401,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
     |---|---|:-:|:-:|---|
     | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
     | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
-    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
+    | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 <br>*電子商取引のみ* - [SCA サポート](https://go.microsoft.com/fwlink/?linkid=2131175) が必要な場合は、"V002" を使用します。  | 有 | 有 | "V001"/"V002" |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 | 有 | 有 | ライブ |
     | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
@@ -409,8 +415,9 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
     | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 | 有 | 有 | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 可能な値は **SVS** および **GIVEX** です。 | いいえ | いいえ | SVS |
     | ターミナル ギフト カード エントリ | *POS のみ* 顧客は**手動**または**機械に通す**のどちらかを選択できます。 | はい | はい | True/False |
-    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | はい | はい | True/False |
-
+    | E コマースでの支払情報の保存を許可します | *電子商取引のみ* サインインしたユーザーに、将来のオンライン購入の支払詳細を保存するためのオプションを提供します。  | 有 | 有 | True/False |
+    | 承認失効期間 (日数) | *POS のみ* 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | 有 | 有 | "7" |
+    | 発生元キー | *電子商取引のみ* バージョンに "V002" が指定されている場合にのみ必要です。 このキーは Adyen Web サイトの [発生元キーを取得する方法](https://docs.adyen.com/user-management/how-to-get-an-origin-key) ページの指示に従い取得することができます。 |
 
 6. アクション ウィンドウで、**保存**を選択します。
 
@@ -495,6 +502,6 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 </tbody>
 </table>
 
-## <a name="related-articles"></a>関連記事
+## <a name="additional-resources"></a>追加リソース
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204835"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383208"
 ---
 # <a name="create-a-purchase-return-order"></a>購買返品注文の作成
 
@@ -34,7 +34,7 @@ ms.locfileid: "3204835"
 2. **新規** をクリックします。
 3. **仕入先**フィールドに、「US-102」を入力します。
 4. **OK**をクリックします。
-5. **アクション ウィンドウ**で、**購買**をクリックします。
+5. **アクション ウィンドウ**で、**購買** をクリックします。
 6. **訂正票**をクリックします。 これは、既存の仕入先請求書から返品注文にコピーすることのできるページです。 これは、他のコピー アクションに使用されるのと同じページです。 ただし、訂正票 アクションから開いた場合は、仕入先請求書を相殺する返品注文の作成をサポートするために、ページはコンフィギュレーションされます。  
 7. **パラメーター** セクションを展開します。
     - **符号の切り替え**オプションが自動的に選択され、変更することはできません。 これによって符号が数量に変更され、追加された注文明細行が仕入先請求書を相殺するようにします。  

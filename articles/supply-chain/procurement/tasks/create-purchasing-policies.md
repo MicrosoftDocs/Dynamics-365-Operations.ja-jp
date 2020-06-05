@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e13a9a594e8c4041a586734df53321d57b43586
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204799"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383175"
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "3204799"
 
 ## <a name="set-up-policy-parameters"></a>ポリシー パラメータの設定
 1. ナビゲーション ウィンドウで、**モジュール > 調達 > 設定 > ポリシー > 購買ポリシー**の順に移動します。
-2. アクション ペインで、**パラメーター**を選択します。
+2. アクション ウィンドウで、**パラメーター**を選択します。
 - ポリシーの優先順位ルールは、組織内のさまざまなレベルに適用されます。 表示される組織単位は、組織の階層に対応しており、その階層におけるレベルに応じて調達の内部統制についての目的が割り当てられています。 たとえば組織内に法人、コスト センター、地域、部門があるかもしれませんが、これらの一部のみが調達の内部統制の階層についての目的を有しています。 既定として、「会社」タイプの組織が使用できます。  
 3. **ポリシー ルール タイプ パラメーター** タブを選択します。
 4. ツリーで、**購買ポリシー > 購買請求コントロール ルール**の順に移動します。

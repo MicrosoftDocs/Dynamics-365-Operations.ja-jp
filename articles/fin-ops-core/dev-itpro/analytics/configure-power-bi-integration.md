@@ -3,7 +3,7 @@ title: PowerBI.com 統合の構成
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。
 author: MilindaV2
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9a0b9009299f0019673fc2154bbb4f49a5c929
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: b93798b5430a117f804b2939ebd4ffda217081c9
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258593"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3369788"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 
@@ -63,7 +63,7 @@ ms.locfileid: "3258593"
 - **サインオン URL** - クライアントのベース URL。 たとえば、`https://contosoax7.cloud.dynamics.com`。
 
 > [!NOTE]
-> バージョンにより、URL の接尾語として /oauth を追加するか、`https://contosoax7.cloud.dynamics.com/oauth/` や `http://contosoax7.cloud.dynamics.com/oauth/` のように、プロトコルとして https の代わりに http を使用する必要があります。
+> バージョンにより、URL の接尾語として /oauth を追加するか、`https://contosoax7.cloud.dynamics.com/oauth` や `http://contosoax7.cloud.dynamics.com/oauth` のように、プロトコルとして https の代わりに http を使用する必要があります。
              
 4. **作成** をクリックします。
 5. **アプリケーション ID** をコピーします。 これは、PowerBI.com サービスに接続するために使用されます。

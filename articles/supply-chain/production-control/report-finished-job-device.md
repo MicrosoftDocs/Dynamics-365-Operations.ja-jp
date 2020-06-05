@@ -19,22 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: f5863202facc83afb91b380ba5666334783ccbcf
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 74e1e30f5afe51cd0ecec2530ffcb9a59eec5fee
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211172"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367248"
 ---
-[!include [banner](../includes/banner.md)]
+# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>ジョブ カード デバイスからライセンス プレートにより制御されている場所への完了レポート
 
-# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>ジョブ カード デバイスからライセンス プレートにより制御されている場所への完了レポート 
+[!include [banner](../includes/banner.md)]
 
 完了レポートを呼び出したプロセスが在庫への製造オーダーの完成品を完了させます。 完成品が高度な倉庫管理プロセスに対して有効化されている場合、生産出荷の場所と呼ばれる場所に製品が完了したことが報告されます。 生産出荷の場所の設定の詳細については、[生産出荷の場所](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location) を参照してください。
 
-生産出荷の場所がライセンス プレートで管理されている場合は、完了報告時にライセンス プレートを指定する必要があります。 **ライセンス プレート** フィールドは、**ジョブ カード デバイス** ページの**進捗状況のレポート**の確認に表示されます。 このフィールドは、製造オーダーの最後の工程を報告し、製造オーダーの品目が倉庫管理プロセスに対して有効になっている場合に、**進捗状況レポート**確認にのみ表示されます。 
+生産出荷の場所がライセンス プレートで管理されている場合は、完了報告時にライセンス プレートを指定する必要があります。 **ライセンス プレート** フィールドは、**ジョブ カード デバイス** ページの**進捗状況のレポート**の確認に表示されます。 このフィールドは、製造オーダーの最後の工程を報告し、製造オーダーの品目が倉庫管理プロセスに対して有効になっている場合に、**進捗状況レポート**確認にのみ表示されます。
 
-ライセンス プレートを指定するには 2 つのオプションがあります
+ライセンス プレートを指定するには 2 つのオプションがあります:
+
 - ユーザーは、ライセンス プレート フィールドで既存のライセンス プレートを選択しています。
 - ライセンス プレートは、番号順序から自動生成され、ライセンス プレート フィールドに既定値が設定されます。
 

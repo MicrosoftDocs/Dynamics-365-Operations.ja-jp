@@ -1,9 +1,9 @@
 ---
 title: ビデオ
-description: このページでは、YouTube および他のサイトで使用可能な Finance and Operations アプリに関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
+description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781853"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367132"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -38,7 +38,7 @@ ms.locfileid: "2781853"
 ### <a name="data-integration"></a>データ統合
 
 - [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg)
-- [Dynamics 365 for Field Service と Finance and Operations アプリ間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Dynamics 365 for Field Service と Finance and Operations アプリ間で作業指示を同期させる](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>データ管理
 
@@ -55,8 +55,8 @@ ms.locfileid: "2781853"
 ### <a name="intelligence"></a>インテリジェンス
 
 - [分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ)
-- [Finance and Operations アプリで PowerBI.com レポートを組み込む方法](https://youtu.be/gGWuNJDoi-M)
-- [Finance and Operations アプリに自分のデータベース (BYOD) の持ち込み](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Finance and Operations アプリで PowerBI.com レポートを埋め込む方法](https://youtu.be/gGWuNJDoi-M)
+- [ご利用のデータベース (BYOD) を Finance and Operations アプリで活用する](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Dynamics 365 で原価管理 Power BI コンテンツを使用する方法](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -76,6 +76,12 @@ ms.locfileid: "2781853"
 - [実稼動環境でデータの更新](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [プラットフォーム更新プログラム 3 以降の新しいプラットフォーム リリースを取得する](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [テレメトリーを使用して Dynamics Lifecycle Services のキー パフォーマンス カウンターを監視する](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
+
+- [タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する方法](https://youtu.be/bBr4BXAxTNI)
+- [Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する方法](https://youtu.be/3jIuBleAnQk) 
+- [Regression Suite Automation Tool のチュートリアルを使用する方法](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance に関するビデオ

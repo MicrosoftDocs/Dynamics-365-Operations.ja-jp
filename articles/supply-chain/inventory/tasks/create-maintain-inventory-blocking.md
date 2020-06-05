@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c3d1f46e31dcd2171682a629dabe5bf5db418
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 12c6e047e15aaab157e6de70f4a09f500af2965f
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204151"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383461"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>在庫ブロックの作成および管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "3204151"
 3. **保存**をクリックします。
 
 ## <a name="remove-the-inventory-blocking"></a>在庫ブロックの削除
-1. **アクション ウィンドウ**で、**削除**をクリックします。
+1. **アクション ウィンドウ** で **削除** をクリックします。
 2. **はい** をクリックします。
 3. ページを閉じます。
 

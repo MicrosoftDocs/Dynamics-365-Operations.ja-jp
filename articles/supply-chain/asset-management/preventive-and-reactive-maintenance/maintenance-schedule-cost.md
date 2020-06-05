@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8feea75bb223bdbd013b11cdf3a63d504afb04f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 91c5b2e70ee083bf2741e245f1ca840ab939ad3f
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208205"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382978"
 ---
 # <a name="maintenance-schedule-cost"></a>メンテナンス スケジュール コスト
 
@@ -46,7 +46,7 @@ ms.locfileid: "3208205"
 
 5. **OK** をクリックして、原価計算を開始します。
 
-6. **グループ化**アクション ウィンドウ グループの**メンテナンス スケジュール コスト** タブ > で該当するボタンをクリックし、原価計算に必要な詳細レベルを表示します。 選択したアクション ウィンドウ グループが強調表示されます。 ボタンをクリックして、有効または無効にします。
+6. **グループ化**アクション ウィンドウ グループの**メンテナンス スケジュール コスト** タブで該当するボタンをクリックし、原価計算に必要な詳細レベルを表示します。 選択したアクション ウィンドウ グループが強調表示されます。 ボタンをクリックして、有効または無効にします。
 
 7. 新しい原価計算を実行する場合、**原価計算**ボタンをクリックします。
 

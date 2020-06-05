@@ -3,7 +3,7 @@ title: オンプレミス配置のホーム ページ
 description: このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
-ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
+ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3099733"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367061"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
@@ -41,7 +41,6 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 ## <a name="onboard"></a>研修
 - [Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)
-- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md)
 - [オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md)
 - [カスタム モデルの開発とオンプレミス環境への配置](develop-deploy-custom-models-on-premises.md)

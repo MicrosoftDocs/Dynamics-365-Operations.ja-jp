@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 67ceb42ec734fb5dcd2c2c9369317e0fc249ffc2
-ms.sourcegitcommit: dca6ac616b901f33ad278dfd9c7ef55b7c898840
+ms.openlocfilehash: 3cdf650c6ab7b8004c01c5c8b839af7a26f57ee4
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225488"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367015"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -108,7 +108,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 + [拡張可能な基本列挙型](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [静的イベント サブスクリプション](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
 + [onValidatingWrite へのサブスクライブ](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
-+ [Dynamics 365 for Finance and Operations での拡張機能のご要望を採用します。](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [Dynamics 365 for Finance and Operations での拡張機能のご要望を採用します。](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
 + [拡張可能な X++ - メソッドの署名](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
 ## <a name="how-do-i-create-an-extensible-solution"></a>拡張可能なソリューションを作成するには

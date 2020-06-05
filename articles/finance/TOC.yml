@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: ヘルプ システムに接続する
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: カスタム ヘルプ サイトに接続する
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: カスタム ヘルプの概要
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: フィールドの説明の表示およびエクスポート
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: タスク レコーダー
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: VAT 申告電子送信 (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: ドイツの VAT 申告
+                  href: localizations/emea-de-vat-declaration.md
                 - name: 仕訳リスト レポート
                   href: localizations/emea-deu-journal-list-report.md
                 - name: 電子税申告の設定
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL 統合
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 監査ファイル (XML Auditfile Financieel、XAF)
+                - name: 監査ファイル - XML Auditfile Financieel、XAF
                   hred: localizations/emea-nl-audit-file.md
             - name: ノルウェー
               items:
@@ -2398,6 +2400,8 @@
                       href: localizations/rus-prepayments-management.md
                     - name: 入金 VAT の還付
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: 輸出取引の請求書 Facture の処理
+                      href: localizations/rus-export-trade.md
                 - name: 固定資産
                   items:
                     - name: 固定資産の概要
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: 在庫レポート
                       href: localizations/rus-inventory-reports.md
+                    - name: 在庫プロファイルの概要
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: 在庫プロファイルの設定
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: ドキュメントおよびクエリでの在庫プロファイルの使用
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: レポート
                   items:
                     - name: 財務諸表
@@ -3248,34 +3258,40 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
               items:
-                - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Word 形式のレポートを生成するためのコンフィギュレーションを設計する
+                - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
+                  items:
+                    - name: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: OPENXML 形式でレポートを生成する例
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Excel テンプレートを再適用して ER 形式を変更する
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
+                      items:
+                        - name: Excel レポートに列を動的に追加するための形式を設計する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Excel レポートに列を動的に追加するための形式を実行する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Word 形式のレポートを生成するためのコンフィギュレーションを設計する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: 画像や図形を埋め込む
-              items:
-                - name: (ER) 生成するドキュメントに画像や図形を埋め込む
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: 画像や図形の埋め込み例
+                - name: 画像や図形を埋め込む
                   items:
-                    - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: 画像が埋め込まれた Office 形式でレポートを生成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Excel テンプレートを再適用して電子申告形式を変更する
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (ER) 生成するドキュメントに画像や図形を埋め込む
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: 画像や図形の埋め込み例
+                      items:
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: 画像が埋め込まれた Office 形式でレポートを生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
-              items:
-                - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を実行する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: 電子申告を使用してアプリケーション データを更新する
               items:
                 - name: 電子ドキュメントを生成してアプリケーション データを更新する
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: コンフィギュレーション ライフサイクル
               items:
                 - name: コンフィギュレーション ライフサイクルの管理
@@ -3327,7 +3341,11 @@
                     - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: コンフィギュレーションを RCS からインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: RCS で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                  href: localizations/rcs-global-repo-upload.md
+                - name: RCS で ER コンフィギュレーションを外部組織に共有する
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: チュートリアル
               items:
                 - name: データ ソースの使用方法について

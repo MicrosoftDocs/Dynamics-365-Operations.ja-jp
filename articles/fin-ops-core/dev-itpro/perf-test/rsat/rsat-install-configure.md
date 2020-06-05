@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9682d139a3dfa8b7c7db25614a0369326af34ebf
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: dbea025e16e5028019663dc1e3f597eed14624f1
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282755"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367019"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -98,7 +98,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 + **SOAP ホスト名** – テスト環境の SOAP ホスト名。 通常は、ホスト名に **soap** の接尾語を追加する必要があります。 たとえば、ホスト名が myhost.cloudax.dynamics.com の場合は、myhost**soap**.cloudax.dynamics.com を SOAP ホスト名として使用します。
 
     + テスト環境の SOAP ホスト名がわからない場合は、Infrastructure.SoapServicesUrl の AOS サーバーの web.config ファイルで検索できます。
-    + テスト環境が、リモート デスクトップ アクセスを持たないセルフサービス ユーザー受け入れテスト (UAT) または高レベル サンドボックス環境 (つまり、Azure Service Fabricインフラストラクチャ上で実行されている環境) である場合、その SOAP ホスト名はホスト名と一致します。
+    + テスト環境が、リモート デスクトップ アクセスがないユーザー受け入れテスト (user acceptance testing: UAT) または上位層サンドボックス環境である場合、この SOAP ホスト名はホスト名に一致します。
 
 + **管理者ユーザー名** ー テスト環境の管理者ユーザーの電子メール アドレス。
 + **拇印** – 使用している認証証明書の拇印。
@@ -167,7 +167,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 
 #### <a name="if-you-have-no-remote-desktop-access-to-the-server"></a>サーバーへのリモート デスクトップ アクセス権がない場合
 
-テスト環境でリモート デスクトップ アクセスが許可されていない場合は、次の手順に従って、RSAT 接続を信頼するように環境を構成します。 たとえば、セルフ サービス UAT またはそれ以上のサンドボックス環境 (つまり、 Service Fabric インフラストラクチャ上で実行されている環境) では、リモート デスクトップ アクセスが許可されない場合があります。
+テスト環境でリモート デスクトップ アクセスが許可されていない場合は、次の手順に従って、RSAT 接続を信頼するように環境を構成します。
 
 1. このトピックで前述されているように、RSAT の設定ダイアログ ボックスの**新規**ボタンを使用して、RSAT 認証証明書を作成します。
 2. サポート要求を開き、サポート エンジニアに次の情報を提供します。

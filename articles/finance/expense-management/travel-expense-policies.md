@@ -1,9 +1,9 @@
 ---
 title: 経費ポリシーを定義します
 description: Microsoft Dynamics 365 Finance では、作業者が経費精算書と出張費要求を入力して提出する際に従う必要がある経費ポリシーを定義できます。
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187455"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389718"
 ---
 # <a name="define-expense-policies"></a>経費ポリシーを定義します
 
@@ -45,9 +45,10 @@ ms.locfileid: "2187455"
  - 妥当性: 経費精算書や出張費要求を提出する前に、ポリシー金額を超えることに関する妥当性を入力するように作業者または管理者に要求します。        
 
 ## <a name="policy-tips"></a>ポリシーのヒント
-経費管理に関する新しいポリシーを作成するのに役立つ提案を示します。 
+経費管理に関する新しいポリシーを作成する際に役立つ提案を示します。 
 * ポリシーは日付に対して有効であり、経費が発生した日付より後の日付でポリシーが作成されている場合は有効になりません。 たとえば、今日、50 ドルの最大食費を適用する新しいポリシーを作成していて、既存の経費が機能の昨日の日付で入力されている場合、このポリシーはチェックされません。
 * 明細化できる経費カテゴリに対するポリシーを作成する場合、経費明細行のタイプの条件を追加することを考慮してください。 レシートを必要とするポリシーは明細行に対しては意味を持たない場合があり、ヘッダー行または非明細行にのみ適用する必要があります。 
+* 経費管理ポリシーは、既定ではソース エンティティに対して評価されます。 会社間のシナリオでは、代わりにターゲット エンティティ (借用エンティティ) に対して評価するポリシーを設定できます。 ターゲット エンティティに対してポリシーを実行するには、**機能の管理** ワークスペースの [借入法人との経費ポリシーの評価] 機能を有効にします。
 
 ## <a name="when-to-evaluate-policies"></a>ポリシーを評価する場合
 

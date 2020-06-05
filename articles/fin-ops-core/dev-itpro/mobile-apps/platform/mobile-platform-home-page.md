@@ -3,7 +3,7 @@ title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 03/10/2020
+ms.date: 05/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 6e2601f863bc35e10b3e83d64efb6022c8524d43
-ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
+ms.openlocfilehash: 2f3173127f56f136aae3658830750acdb87b63bc
+ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117159"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "3388104"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -168,7 +168,7 @@ Finance and Operations (モバイル クライアント) アプリでは、埋�
 MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
 
 ### <a name="intune-support-and-conditional-access"></a>Intune サポートと条件付きアクセス
-Finance and Operations (モバイル クライアント) アプリには Microsoft intune ポリシーが実装されていないため、Intune は最初はサポートされません。 ただし、このアプリは無料で [Intune ](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) に追加して、[Intune を持つ条件的なアクセス](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune) を使用するようなシナリオをサポートすることができます。
+Finance and Operations (モバイル クライアント) アプリには Microsoft Intune ポリシーが実装されていないため、Intune はサポートされません。 デバイス識別子を渡すことができないため、アプリの手動での追加 ([iOS ストア アプリを Microsoft Intune に追加](https://docs.microsoft.com/mem/intune/apps/store-apps-ios)) もサポートされていません。
 
 ### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
 新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。

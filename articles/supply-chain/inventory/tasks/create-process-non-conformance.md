@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c0c4415f490219485b3d96fa678a317c1f12f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8bf20ed737707b7cf99023e3c78489caf4a68eab
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204128"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383622"
 ---
 # <a name="create-and-process-a-conformance"></a>不適合の作成および処理
 
@@ -35,7 +35,7 @@ ms.locfileid: "3204128"
 2. 一覧で、[商品の品質の調査](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) で作成された品質指示を選択します。  
 
 ## <a name="create-a-nonconformance"></a>不適合の作成
-1. アクション ウィンドウで、**照会**を選択します。
+1. アクション ウィンドウで、**照会** を選択します。
 2. **不適合**を選択します。
 3. **新規** を選択します。
 4. **問題タイプ** フィールドのドロップダウン メニューで、検査プロセス中に検出された問題を選択します。  

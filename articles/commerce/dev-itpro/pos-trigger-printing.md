@@ -3,7 +3,7 @@ title: Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、任意の Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 4069fceefcf40541b4a8b741228861f02774ca2e
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 5c7157274e9169b217eefa6344a7bac30333f301
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329827"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368807"
 ---
 # <a name="modern-pos-mpos-triggers-and-printing"></a>Modern POS (MPOS) のトリガーと印刷
 
@@ -198,9 +198,10 @@ ms.locfileid: "3329827"
 | PreRecallTransactionTrigger        | 解約可能     | 顧客の注文がリコールされる前に実行されます。       |
 | PostRecallTransactionTrigger       | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。        |
 | PreSelectTransactionPaymentMethodTrigger       | 解約可能 |  ユーザーが**カート ビュー - 合計**パネルで**合計**を選択すると、使用可能な支払方法が表示され、このトリガーはこのダイアログが表示される前に実行されます。 このトリガーから利用可能な支払方法を変更するための拡張コードを使用できます。      |
+| PreShipSelectedCartLinesTrigger       | 解約可能 |  製品が出荷対象として選択されたときに実行されます。      |
 
 ## <a name="reason-code-triggers"></a>理由コード トリガー
-| トリガー              | 型           | 説明                                             |
+| トリガー              | 種類           | 説明                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostGetReasonCodeLine | 解約可能 | このトリガーは、理由コードが入力された後 (理由コードがカートに追加される前) に実行されます。 |
 

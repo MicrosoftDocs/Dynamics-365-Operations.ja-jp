@@ -526,9 +526,35 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: パッケージ アプリケーションに関する問題のトラブルシューティング
                   href: deployment/deployable-package-troubleshooting.md
+            - name: カスタム ヘルプの配置
+              items:
+                - name: カスタム ヘルプの概要
+                  href: help/custom-help-overview.md
+                - name: ヘルプ ウィンドウで使用するコンテンツの準備
+                  href: help/preparing-content.md
+                - name: カスタム ヘルプを Azure へ配置
+                  href: help/walkthrough-help-azure.md
+                - name: カスタム ヘルプをヘルプ ウィンドウに接続
+                  href: help/connect-help-pane.md
+                - name: カスタム ヘルプ ツールキット
+                  items:
+                    - name: 概要
+                      href: help/custom-help-toolkit.md
+                    - name: HTML From Repo Generator ツール
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Convert HTML To JSON ツール
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: HTML Locale Changer ツール
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Dynamics 365 で使用するために、Dynamics AX のカスタム ヘルプを変換する
+                      href: help/migrate-dynamicsax2012.md
+                - name: 製品およびヘルプ間の言語とロケールの記述子
+                  href: help/language-locale.md
+                - name: ヘルプでの拡張、カスタマイズ、および共同作業
+                  href: help/contributor-guide.md
         - name: 開発およびカスタマイズ
           items:
-            - name: 開発およびカスタマイズのホーム ページ
+            - name: ホーム ページの開発およびカスタマイズ
               href: dev-tools/developer-home-page.md
             - name: アプリケーション スタックおよびサーバーのアーキテクチャ
               href: dev-tools/application-stack-server-architecture.md
@@ -835,7 +861,7 @@
                     - name: 拡張機能の変更 (バージョン 8.0.1)
                       href: extensibility/extensibility-changes-801.md
                     - name: バージョン 8.0 の拡張機能の変更
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: バージョン 7.3 の拡張機能の変更
                       href: extensibility/extensibility-changes-73.md
                     - name: 拡張機能の変更 (2017 年 7 月)

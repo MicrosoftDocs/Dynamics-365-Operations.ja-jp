@@ -3,7 +3,7 @@ title: 仕入先請求書の自動化
 description: このトピックでは、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能な機能について説明します。
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178717"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396012"
 ---
 # <a name="vendor-invoice-automation"></a>仕入先請求書の自動化
 
@@ -61,7 +61,7 @@ ms.locfileid: "2178717"
 
 仕入先請求書ドキュメントの添付ファイルは、この機能の一部として導入される新しいデータ エンティティです。 添付ファイルをサポートできるように、仕入先請求書ヘッダーのエンティティが変更されました。 この機能に関して、仕入先請求書の明細行のエンティティは変更されていません。
 
-このトピックでは、データ パッケージの詳細な定義は説明されません。 データ パッケージを作成する方法も説明しません。 この情報に関しては「[データ エンティティとパッケージのフレームワーク](../../dev-itpro/data-entities/data-entities-data-packages.md)」を参照してください。
+データパッケージの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。 データ管理ワークスペースを使用したデータ パッケージの作成方法については、[Dynamics 365 Finance and Operations アプリ ソリューションにおけるデータパッケージの処理と消費](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md)を参照してください 。
 
 請求書および添付ファイルを含むテスト データを簡単に生成するには、以下の手順を実行します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "2178717"
 
 ## <a name="exception-processing"></a>例外処理
 
-統合により仕入先請求書が Finance and Operations に渡されるシナリオの場合、買掛金勘定のチーム メンバーが例外処理や障害が発生した請求書を扱い、障害が発生した請求書から保留中の請求書を作成する簡単な方法が存在する必要があります。 この仕入先請求書の例外処理は、Finance and Operations の一部として提供されています。
+仕入先の請求書が統合されて Finance and Operations に渡される場合、買掛金勘定チームのメンバーが例外処理や障害が発生した請求書を簡単に処理したり、障害が発生した請求書から保留中の請求書を作成する方法が必要になります。 この仕入先請求書の例外処理は、現在 Finance and Operations の一部として提供されています。
 
 ### <a name="exceptions-list-page"></a>[例外リスト] ページ
 

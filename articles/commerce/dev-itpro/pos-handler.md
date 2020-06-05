@@ -3,7 +3,7 @@ title: POS 要求ハンドラーのオーバーライド
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 3e075d3661e294d45038ffb51a8f81695f7b7176
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: ce81aaa57923b6f5f844629d186eea47f15f986a
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329826"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368779"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -53,6 +53,7 @@ ms.locfileid: "3329826"
 | GetReceiptEmailAddressClientRequestHandler | 受信者のメール アドレスを取得するときに実行されます。                                                 |
 | DepositOverrideOperationRequestHandler     | 預金をオーバーライドするときに実行されます。                                                          |
 | GetShippingChargeClientRequestHandler      | 顧客注文フロー中に開始された出荷費用ワークフローを取得するときに実行されます。                                                             |
+| GetKeyedInPriceClientRequestHandler      | [製品価格] ダイアログ ボックスのキーが表示されたときに実行されます。                                                           |
 
 **支払拡張機能ハンドラー**
 
@@ -81,7 +82,7 @@ ms.locfileid: "3329826"
 | PaymentTerminalUpdateLinesRequestHandler                      | POS が表示目的で明細行品目の詳細を支払デバイスに送信するときに実行されます。                                                                                 |
 | PaymentTerminalVoidPaymentRequestHandler                      | 支払ターミナル/デバイスを使用してカード支払が無効化されたときに実行されます。                                                                                             |
 | PaymentTerminalBeginTransactionRequestHandler                 | 支払ターミナル/デバイスを使用してカード支払が開始されたときに実行されます。                                                                                          |
-| PaymentTerminalCancelOperationRequestHandler                  | 支払ターミナル/デバイスを使用してカード支払がキャンセルされたときに実行されます。                                                                                          |
+| PaymentTerminalCancelOperationRequestHandler                  | 支払端末/デバイスを使用してカード支払がキャンセルされたときに実行されます。                                                                                          |
 | PaymentTerminalEndTransactionRequestHandler                   | 支払ターミナル/デバイスを使用してカード支払が終了したときに実行されます。                                                                                              |
 | CashDrawerOpenRequestHandler                                  | キャッシュ ドロワー オープン要求が POS によって開始されるときに実行されます。                                                                                                     |
 | PaymentTerminalActivateGiftCardPeripheralRequestHandler       | POS により開始されたギフト カード要求をアクティブにしたときに実行されます。                                                                                                     |

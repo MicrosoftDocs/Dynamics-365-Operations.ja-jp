@@ -3,7 +3,7 @@ title: Regression Suite Automation Tool
 description: Regression Suite Automation Tool では、機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81d83862e82c3e730e9ae159438f36be1274c8b9
-ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
+ms.openlocfilehash: 33dd3f781dc4559a14d68e3901094cfd370d83bc
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346640"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367283"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -47,8 +47,24 @@ RSAT の使用についての定義。
 ## <a name="getting-started-videos"></a>使用開始のビデオ
 これらのビデオでは、RSAT が紹介されており、作業を開始することができます。
 
-+ [タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する](https://youtu.be/bBr4BXAxTNI)
-+ [Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する](https://youtu.be/3jIuBleAnQk)
+### <a name="use-task-recorder-to-create-a-test-case-for-rsat"></a>タスク レコーダーを使用して RSAT のテスト ケースを作成する
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
+
+[タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する方法](https://youtu.be/bBr4BXAxTNI) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
+### <a name="create-a-test-plan-in-azure-devops-to-use-with-rsat"></a>Azure DevOps でテスト プランを作成し、RSAT で使用する
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
+
+[Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する方法](https://youtu.be/3jIuBleAnQk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
+### <a name="how-to-use-rsat"></a>RSAT の使用方法
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
+
+[Regression Suite Automation Tool (RSAT) の使用方法](https://youtu.be/uhN9JItzGAk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
 このツールは、次に定義するエンド ツー エンド フローのパーツに含まれています。 このアプリケーションは、Microsoft Dynamics Lifecycle Services (LCS) および Azure DevOps と共に、テスト ケースの作成 (タスク レコーダーを使用)、構成、実行、調査、および報告に対する一連のツールを提供します。

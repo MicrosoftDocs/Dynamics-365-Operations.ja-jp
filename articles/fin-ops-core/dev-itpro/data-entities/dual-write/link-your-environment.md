@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77057f846532c795a3852eabc9297908cff2e57a
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: 96d1564c5a16602b4895985e76e91c40eb09222f
+ms.sourcegitcommit: 8a4e2adb999112e1b6576bcb3e93e29834ba36aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353677"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3376038"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
@@ -53,24 +53,20 @@ ms.locfileid: "3353677"
 
 6. 概要、プライバシー通知、同意を確認し、**作成** を選択します。
 
-Finance and Operations アプリを Common Data Service 環境にリンクしました。 次の手順では、エンティティ マップの二重書き込みを有効にします。
-
-![エンティティ マップは正常にリンクされました](media/entity-maps-linked.png)
+Finance and Operations アプリを Common Data Service 環境にリンクしました。 
 
 > [!NOTE]
-> エンティティ マップが表示されない場合、または空白のページが表示される場合は、Finance and Operations アプリのエンティティ マップ ソリューションをインストールしてください。
+> エンティティ マップが表示されない場合、または空白のページが表示される場合は、システム要件と前提条件の一部としてインストールした二重書き込みアプリケーション オーケストレーション ソリューションを **適用** してください。
 
-7. 二重書き込みエンティティ マップ ソリューションをインストールします。
+7. 二重書き込みアプリケーション オーケストレーション ソリューションを適用します。
 
-    1. Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューションの管理** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) を参照してください。
+    Finance and Operations アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのエンティティ マップを適用します。 ソリューションを適用すると、既定のエンティティ マップが公開されていることが確認できます。
 
-    2. Finance and Operations アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのエンティティ マップを適用します。 ソリューションを適用すると、既定のエンティティ マップが公開されていることが確認できます。
-
-        ![エンティティ マップの適用](media/apply-entity-maps.png)
+     ![エンティティ マップの適用](media/apply-entity-maps.png)
 
 Microsoft が発行した二重書き込みエンティティ マップ ソリューションを環境に正常にインポートして適用しました。
 
-![二重書き込みのインポートと適用](media/dual-write-imported-applied.png)
+![エンティティ マップは正常にリンクされました](media/entity-maps-linked.png)
 
 
 ## <a name="next-steps"></a>次のステップ

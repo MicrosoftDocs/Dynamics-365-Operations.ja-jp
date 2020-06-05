@@ -1,5 +1,5 @@
 ---
-title: 原価会計の使用を開始する
+title: 原価会計の使用を開始する (プライベート プレビュー)
 description: このトピックでは、原価計算サービスのライセンスの詳細とインストール手順を説明します。
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276936"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372739"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>原価会計の使用を開始する
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>原価会計の使用を開始する (プライベート プレビュー)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ ms.locfileid: "3276936"
 
 現在原価会計サービスは、Dynamics 365 Supply Chain Management に組み込まれているすべての原価管理機能に対応していません。 したがって、現在使用可能な一連の機能が要件を満たすかどうかを評価することが重要となります。
 
-## <a name="licensing"></a>ライセンス
-
-原価会計サービスは、Supply Chain Management に使用できる棚卸し会計の標準機能と共にライセンス供与されます。 原価会計サービスの使用にあたっては、追加のライセンスを購入する必要はありません。
-
-## <a name="install-the-add-in"></a>アドインのインストール
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>原価会計サービスの取得方法 (プライベート プレビュー)
 
 > [!IMPORTANT]
 > 原価会計サービスを使用するには、(ワンボックス環境ではなく) LCSを有効にした高可用性環境を用意する必要があります。また、Dynamics 365 Supply Chain Management バージョン 10.0.11 またはそれ以降を実行する必要があります。
 
+原価計算サービスのプライベート プレビューに登録するには、LCS 環境の ID を[原価計算サービス (プライベートプレビュー) ](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29)に電子メールで送信してください。 プログラムの承認時に、原価計算サービスのベータキーを含む電子メールの追跡を送信します。 ベータ キーを受け取ったら、[アドインをインストール](#install)して続行可能です。
+
+## <a name="licensing"></a>ライセンス
+
+原価会計サービスは、Supply Chain Management に使用できる棚卸し会計の標準機能と共にライセンス供与されます。 原価会計サービスの使用にあたっては、追加のライセンスを購入する必要はありません。
+
+## <a name="install-the-add-in"></a><a name="install"></a>アドインのインストール
+
 原価計算サービスを使用するには、次の手順に従って、Supply Chain Management 用の原価計算サービス アドインをインストールします。
+
+1. 原価会計サービス (プライベート プレビュー) に[登録](#sign-up)します。
 
 1. LCS にサインインします。
 

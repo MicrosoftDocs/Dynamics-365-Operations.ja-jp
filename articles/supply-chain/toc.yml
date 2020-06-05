@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Dynamics 365 Supply Chain Management ホーム ページ
           href: index.md
         - name: 使用開始
           items:
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ヘルプ システムに接続する
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: カスタム ヘルプ サイトに接続する
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: カスタム ヘルプの概要
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: フィールドの説明の表示およびエクスポート
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: タスク レコーダー
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: 在庫分析コード当たりの移動平均原価の追跡
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT インテリジェンス
+          items:
+            - name: IoT インテリジェンスのホーム ページ
+              href: iot/iot-intelligence-home-page.md
+            - name: Azure リソースの設定
+              href: iot/iot-azure-setup.md
+            - name: IoT ハブのメッセージ スキーマの形式
+              href: iot/iot-schema-format.md
+            - name: LCS でアドインのインストール
+              href: iot/iot-lcs-setup.md
+            - name: メトリックスの設定
+              href: iot/iot-metrics-setup.md
+            - name: シナリオの設定
+              href: iot/iot-scenario-setup.md
+            - name: 監視および管理
+              href: iot/iot-management.md
         - name: マスター プラン
           items:
             - name: マスター プランのホーム ページ
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: 計画ジョブのキャンセル
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: 計画最適化のトラブルシューティング
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: マスター プラン
               items:
                 - name: マスター プランの概要
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: 倉庫管理アプリのインストールとコンフィギュレーション
               items:
-                - name: インストールとコンフィギュレーションの概要
+                - name: 倉庫管理アプリのインストールと接続
                   href: warehousing/install-configure-warehousing-app.md
                 - name: 倉庫管理アプリのフィールド名のコンフィギュレーション
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,7 +2715,23 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: 発注書の作業テンプレートの設定
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
-        - name: Supply Chain Management のホーム ページ
+            - name: 出荷連結ポリシー
+              items:
+                - name: 出荷連結ポリシー
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: コンフィギュレーション出荷連結ポリシー
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: シナリオ 1 - 販売注文の自動リリースを使用して、出荷が倉庫にリリースされた場合に出荷を連結する
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: シナリオ 2 - 出荷連結ポリシーが、倉庫からリリース ページで上書きされている場合の出荷を連結する
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: シナリオ 3 - 積荷計画ワークベンチから倉庫へのリリースを使用して出荷を連結する
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: シナリオ 4 - 出荷連結ワークベンチを使用して出荷を連結する
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: シナリオ 5 - 出荷連結ページを使用して出荷を手動で連結する
+                  href: warehousing/consolidate-shipments-manual-form.md
+        - name: Supply Chain Management の開発
           items:
             - name: ガント コントロール作成ガイド
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json

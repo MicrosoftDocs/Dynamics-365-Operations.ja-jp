@@ -1,9 +1,9 @@
 ---
 title: 為替レート プロバイダーの作成
-description: この記事では、為替レート プロバイダーの設定方法について説明します。
+description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,20 +17,18 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53b12228396e8a4e9e1ad461f95b968b57eefd56
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 4612562a82c137c2967857b44882c32be5f734bd
+ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080761"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378958"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、為替レート プロバイダーの設定方法について説明します。 
-
-この記事では、為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。 この記事で説明している手順に従って、機能為替レート プロバイダーを作成します。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、この記事からこのクラスを参照することができます。 OANDA テスト アカウントを要求し、OANDA 為替レートに関する情報を受け取るには、<https://developer.oanda.com/exchange-rates-api/> にアクセスしてください。
+このトピックでは、為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。 この記事で説明している手順に従って、機能為替レート プロバイダーを作成します。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、このトピックからこのクラスを参照することができます。 OANDA テスト アカウントを要求し、OANDA 為替レート サービスに関する情報を受け取るには、[OANDA 為替レート API](https://developer.oanda.com/exchange-rates-api/) を参照してください。
 
 ## <a name="terminology"></a>用語
 -   **現在の通貨為替レートをインポート** – 為替レート プロバイダーから為替レートを取得してインポートするプロセス。 このプロセスは、バッチ処理をサポートするシステム操作です。
@@ -39,6 +37,7 @@ ms.locfileid: "3080761"
 -   **為替レート プロバイダーのコンフィギュレーション**: 使用方法を決定する為替レート プロバイダーのコンフィギュレーション設定。
 -   **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料の定期売買サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
 -   **フレームワーク** – プロバイダーからの為替レートの取得および、その為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
+-   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[ファクトリ メソッドのサブクラスを登録] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods) を参照してください。 
 
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 
@@ -68,9 +67,13 @@ ms.locfileid: "3080761"
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
     using Microsoft.Dynamics.Currency.Instrumentation;
     using System.Collections;
+    
+    using System.ComponentModel.Composition;
+    
     /// <summary>
     /// The <c>ExchangeRateProviderOanda</c> class is an exchange rate provider for OANDA.
     /// </summary>
+    [ExportMetadataAttribute(enumStr(ExchangeRateProvider), ExchangeRateProvider::OANDA), ExportAttribute('Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework.IExchangeRateProvider')]
     class ExchangeRateProviderOanda implements IExchangeRateProvider
     {
     }
@@ -139,11 +142,15 @@ ms.locfileid: "3080761"
     public IExchangeRateProviderSupportedOptions GetSupportedOptions()
     {
         IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
+
         options.set_doesSupportSpecificCurrencyPairs(true);
         options.set_doesSupportSpecificDates(false);
         options.set_fixedBaseIsoCurrency('');
-        options.set_singleRateForDateRange(true);
-    return options;
+        options.set_singleRateForDateRange(true);                        
+        options.set_doesSupportPreventImportOnNationalHoliday(false);
+        options.set_DoesSupportExchangeRateFromPreviousDay(false);
+
+        return options;
     ```
 
 7.  **GetConfigurationDefaults** メソッドを実装します。 既定のコンフィギュレーションは、為替レート プロバイダの既定コンフィギュレーションの設定を表す名前と値の組です。 これらの設定はプロバイダーが登録されたときに自動的に読み込まれますが、ユーザーは変更できます。 これらの文字列を使用可能な値に変換する場合は、必要な対策を講じてください。 値フィールドは、SQL で暗号化フィールドとして格納されます。 したがって、アプリケーション プログラミング インターフェイス (API) などの機密データはより安全になります。
@@ -219,6 +226,8 @@ ms.locfileid: "3080761"
         public IExchangeRateResponse GetExchangeRates(IExchangeRateRequest _request, IExchangeRateProviderConfig _config)
         {
             System.Exception exception;
+
+            // cache configuration and request properties locally for performance
             ExchangeRateProviderPropertyValue oandaKey = _config.GetPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_OandaAPIKey");
             if (oandaKey == '')
             {
@@ -226,39 +235,56 @@ ms.locfileid: "3080761"
                 eventSource.ImportRatesException("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired", "");
                 throw error("@CurrencyExchange:Currency_ConfigMessage_OANDAKeyRequired");
             }
+
             int decimalPlaces = str2Int(_config.GetPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_DecimalPlaces"));
+
             int serviceTimeout = str2int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_ServiceTimeout"));
+
             boolean singleRateForDateRange = _request.get_SingleRateForDateRange();
+
+            ExchangeRateProviderOANDAQuoteType quoteType = str2Int(_config.getPropertyValue(this.get_Id(), "@CurrencyExchange:Currency_ConfigField_QuoteTypeLocked"));
+
+            str quoteTypeParameterForOANDA = this.getQuoteTypeParameterForURL(quoteType);
+
             List rates = new List(Types::Real);
             List dates = new List(Types::Date);
+
             System.TimeZone localTimeZone = System.TimeZone::get_CurrentTimeZone();
+
+            System.DateTime toUTCDate = localTimeZone.ToUniversalTime(_request.get_ToDate());
+            str toDateForRequest = toUTCDate.ToString(OANDADateFormat);
+
             IExchangeRateResponse response = factory.CreateExchangeRateResponse();
+
             // Iterate over the requested currency pairs. This is only required for providers
             // that support specific currency pairs.
             IEnumerator currencyPairsEnumerator = _request.GetEnumerator();
             while(currencyPairsEnumerator.MoveNext())
             {
                 URL OandaUrl = ServiceURL;
+
                 // This loop will either execute once if singleRateForDateRange is true; otherwise, it will
-                // execute once for each day. If we make a single request for multiple dates
-                // then OANDA will return an average the rate for the date range.
+                // execute once for each day.  If we make a single request for multiple dates
+                // then OANDA will return an average rate for the date range.
                 System.DateTime fromDate = _request.get_FromDate();
                 int compareResult = fromDate.CompareTo(_request.get_ToDate());
                 while (compareResult <= 0)
                 {
                     IExchangeRateRequestCurrencyPair currencyPairRequest = currencyPairsEnumerator.Current;
+
                     IExchangeRateResponseCurrencyPair currencyPairResponse = factory.CreateExchangeRateResponseCurrencyPair();
                     currencyPairResponse.set_FromCurrency(currencyPairRequest.get_FromCurrency());
                     currencyPairResponse.set_ToCurrency(currencyPairRequest.get_ToCurrency());
+
                     // All rates are requested with a display factor of 1 for this provider. If the rates
                     // internally are represented using a different exchange rate display factor, the
                     // framework will make the necessary adjustments when saving the exchange rates.
                     currencyPairResponse.set_ExchangeRateDisplayFactor(ExchangeRateDisplayFactor::One);
+
                     // convert to UTC which is required by OANDA
                     System.DateTime fromUTCDate = localTimeZone.ToUniversalTime(fromDate);
                     str fromDateForRequest = fromUTCDate.ToString(OANDADateFormat);
-                    System.DateTime toUTCDate = localTimeZone.ToUniversalTime(_request.get_ToDate());
-                    str toDateForRequest = toUTCDate.ToString(OANDADateFormat);
+
                     // Build the request URL.
                     str oandaRequestString;
                     if (singleRateForDateRange)
@@ -266,50 +292,58 @@ ms.locfileid: "3080761"
                         // getting an average rate for the date range so we invoke the service
                         // only once per currency pair using the from and to date
                         oandaRequestString = strFmt(OandaUrl,
-                            currencyPairRequest.get_FromCurrency(),
-                            currencyPairRequest.get_ToCurrency(),
-                            fromDateForRequest,
-                            toDateForRequest,
-                            this.getQuoteTypeParameterForURL(_config),
-                            decimalPlaces);
+                                        currencyPairRequest.get_FromCurrency(),
+                                        currencyPairRequest.get_ToCurrency(),
+                                        fromDateForRequest,
+                                        toDateForRequest,
+                                        quoteTypeParameterForOANDA,
+                                        decimalPlaces);
                     }
                     else
                     {
-                        // invoke the service once for each day.
+                        // invoke the service once for each day. 
                         oandaRequestString = strFmt(OandaUrl,
-                            currencyPairRequest.get_FromCurrency(),
-                            currencyPairRequest.get_ToCurrency(),
-                            fromDateForRequest,
-                            fromDateForRequest,
-                            this.getQuoteTypeParameterForURL(_config),
-                            decimalPlaces);
+                                        currencyPairRequest.get_FromCurrency(),
+                                        currencyPairRequest.get_ToCurrency(),
+                                        fromDateForRequest,
+                                        fromDateForRequest,
+                                        quoteTypeParameterForOANDA,
+                                        decimalPlaces);
                     }
+
                     // Configure the request for OANDA.
                     System.Net.HttpWebRequest httpWebRequest = System.Net.WebRequest::CreateHttp(oandaRequestString);
                     httpWebRequest.set_Method(HttpWebRequestMethod);
                     httpWebRequest.set_ContentType(HttpWebRequestContentType);
                     httpWebRequest.set_Timeout(serviceTimeout);
+
                     // Authentication
                     System.Net.WebHeaderCollection webCollection = httpWebRequest.get_Headers();
                     webCollection.Add(HttpHeaderAuthorization, KeyTokenPrefix + oandaKey);
+
                     try
                     {
                         // Invoke the service
                         System.Net.WebResponse webResponse;
                         webResponse = httpWebRequest.GetResponse();
+
                         // Retrieve the XML response.
                         System.IO.Stream stream = webResponse.GetResponseStream();
                         System.IO.StreamReader streamReader = new System.IO.StreamReader(stream);
                         str XMLOut = streamReader.ReadToEnd();
+
                         // Parse the XML to retrieve the rate and date.
-                        this.processResult(_config, singleRateForDateRange, _request.get_FromDate(), XMLOut, rates, dates);
+                        this.processResult(quoteType, singleRateForDateRange, _request.get_FromDate(), XMLOut, rates, dates);
+
                         ListEnumerator rateEnumerator = rates.getEnumerator();
                         ListEnumerator dateEnumerator = dates.getEnumerator();
+
                         // Create the Exchange Rate Provider Response.
                         rateEnumerator.moveNext();
                         dateEnumerator.moveNext();
                         CurrencyExchangeRate exchangeRate = rateEnumerator.current();
                         date currentDate = dateEnumerator.current();
+
                         if (currentDate != dateNull() && exchangeRate)
                         {
                             IExchangeRateResponseExchangeRate exchangeRateResponse = factory.CreateExchangeRateResponseExchangeRate();
@@ -323,13 +357,17 @@ ms.locfileid: "3080761"
                         CurrencyEventSource eventSource = CurrencyEventSource::Log;
                         eventSource.ImportRatesException(exception.Message, Exception.StackTrace);
                     }
+
                     response.addOrUpdateCurrencyPair(currencyPairResponse);
+
                     rates = new List(Types::Real);
                     dates = new List(Types::Date);
+
                     fromDate = fromDate.AddDays(1);
+
                     if (singleRateForDateRange)
                     {
-                        // getting an average rate across the date range so we invoke the service
+                        // getting an average rate across the date range so we invoke the service  
                         // only once per currency pair
                         compareResult = 1;
                     }

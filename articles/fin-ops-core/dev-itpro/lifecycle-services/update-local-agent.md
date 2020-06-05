@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 12/19/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1647652c0d4fee75dde97a82f66c1871588498bb
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: d9c9599698bfc65e99f088ea75dc340692b240db
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100247"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368809"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -47,7 +47,7 @@ ms.locfileid: "3100247"
 ## <a name="whats-new-in-local-agent-240"></a>ローカル エージェント 2.4.0 の新機能
 
 - ローカル エージェント 2.4.0 では、Lifecycle Services (LCS) から最新の変更を取り込むために .Net Framework 4.8 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
-- このリリースでは、AXSFType の展開時に展開が終了した AOSSetupHybridCloud.exe の 255/-1 終了エラーも修正されます。
+- このリリースでは、ハードコーディングされたタイムアウトのために AXService の展開が遅い環境で失敗する問題も修正されています。
 
 ## <a name="whats-new-in-local-agent-230"></a>ローカル エージェント 2.3.0 の新機能
 

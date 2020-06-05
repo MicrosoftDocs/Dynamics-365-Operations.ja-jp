@@ -3,7 +3,7 @@ title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 75bbc8e52ffdf337e9cbb705290adebbe1b0b701
-ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
+ms.openlocfilehash: b2f72aa05a1daeebe4462289e5cca30bd88d4268
+ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290213"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3368808"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -34,7 +34,7 @@ ms.locfileid: "3290213"
 このトピックは、Dynamics 365 Retail および Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) 以降に適用されます。
 
 > [!NOTE]
-> テスト レコーダーは、Google Chrome Web ブラウザーを使用している場合にのみ、Cloud POS でサポートされます。 その他の Web ブラウザーおよびデバイス タイプのサポートは、今後追加されます。 現在、POS RSAT がプレビュー中です。 これは、パブリック ダウンロード バージョンでは使用できないことを意味します。 プレビュー バージョンを試したい場合は、サポート チケットを作成してください。
+> テスト レコーダーは、Google Chrome Web ブラウザーを使用している場合にのみ、Cloud POS でサポートされます。 その他の Web ブラウザーおよびデバイス タイプのサポートは、今後追加されます。
 
 ## <a name="test-recorder"></a>テスト レコーダー
 
@@ -167,7 +167,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 ### <a name="create-a-recording"></a>記録の作成
 
 > [!IMPORTANT]
-> レコーディングを作成する前に、[アプリ ツアーの表示] をオフにして、[ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (デモ データが使用されている場合にのみ該当) に移動します。
+> レコーディングまたはテストの実行/再生を作成する前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 次の手順に従い、テスト レコーダーを使用して新しい記録を作成します。
 
@@ -278,7 +278,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 このセクションでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、テストの実行、結果の調査、Azure DevOps への作業の保存方法について説明します。
 
 > [!NOTE]
-> Azure DevOps およびテスト ケースの設定の詳細については、「[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)」を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。
+> Azure DevOps およびテスト ケースの設定の詳細については、「[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)」を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 ### <a name="load-test-cases-and-create-parameter-files"></a>テスト ケースの読み込みとパラメーター ファイルの作成
 
@@ -365,7 +365,7 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 
 ### <a name="creating-test-cases-by-using-the-test-recorder"></a>テスト レコーダーを使用したテスト ケースの作成
 
-+ レコーディングを作成する前に、[アプリ ツアーの表示] をオフにして、[ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (デモ データが使用されている場合にのみ該当) に移動します。
++ レコーディングまたはテストの実行/再生を作成する前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 + すべての記録が、POS のログイン画面から開始されていることを確認します。
 + 個々の記録を簡潔にし、1 人のユーザーが実行するビジネス タスク (販売トランザクションの作成など) に注目します。 この方法を使用すると、テスト ケースの管理と再利用が容易になります。
 + 機密情報を含むシナリオは記録しないでください。

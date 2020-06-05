@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2c13ed20ec86108bcb9edc0d20d53ff98732b9d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 68624a0288f9eaaf8f74b361bb308b8ca3c03b29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204749"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383176"
 ---
 # <a name="create-a-request-for-quotation"></a>見積依頼の作成
 
@@ -67,7 +67,7 @@ ms.locfileid: "3204749"
 7. **仕入先**フィールドで、値を入力または選択します。 仕入先を選択すると、ステータスが作成されます。 これは、仕入先情報を RFQ に保存していても、仕入先に RFQ を未送信であることを意味します。 仕入先の状態に関係なく RFQ に仕入先を追加できます。  
 
 ## <a name="send-the-rfq-to-vendors"></a>RFQ を 仕入先に送信
-1. **アクション ウィンドウ**で、**送信**をクリックします。 [見積依頼の送信] ページで、リスト内の仕入先が RFQ を受け取る仕入先であることを確認します。  
+1. **アクション ウィンドウ**で、**送信** をクリックします。 [見積依頼の送信] ページで、リスト内の仕入先が RFQ を受け取る仕入先であることを確認します。  
 2. **印刷** をクリックします。 このダイアログによって RFQ を印刷することができます。 返信シートの印刷を選択する場合、この内容は、[調達パラメーター] で定義されます。 返信シートの印刷方法を選択するときは、[印刷] ダイアログ を開き、[詳細印刷] オプション をクリックします。 [作成済] または [送信済] のステータスの明細行を含む一つの RFQ が、各仕入先ごとに印刷されます。 キャンセルした明細行、および登録した返信の明細行は印刷されません。   
 3. **キャンセル**をクリックします。
 4. **OK**をクリックします。

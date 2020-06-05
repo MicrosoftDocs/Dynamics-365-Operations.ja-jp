@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Smitha Nataraj, Lars-Bo
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 54f70efaa31c59be623d2bad143af0c0c18a4a31
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 778eb4e07273262ab99d9c3c3147dfe0f03d774a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249049"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367014"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
@@ -91,7 +91,7 @@ ms.locfileid: "3249049"
 クラス階層構造の詳細については、次のブログ記事を参照してください。
 
 + [SysExtension フレームワーク – 問題発生時](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
-+ [Dynamics 365 for Finance and Operations への拡張機能のご要望の採用 #2 - SysExtension フレームワーク](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
++ [Dynamics 365 for Finance and Operations への拡張機能のご要望の採用 #2 - SysExtension フレームワーク](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
 
 ## <a name="deprecation"></a>廃止
 クラスまたはパブリックまたは保護メソッドが不要になった場合、必ずまず警告を使用し、メソッドが廃止されたことをユーザーに通知します。 次に、すべてのユーザーは、変更または新しい API を取り込むことができ、メソッドを廃止できます。 クラスおよびメソッドの廃止 (または、それ以外の場合はクラス メンバーの削除) は、大きな変更点です。 詳細については、[重大な変更](breaking-changes.md)を参照してください。

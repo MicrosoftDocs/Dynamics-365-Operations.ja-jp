@@ -1,9 +1,9 @@
 ---
-title: Service Fabric 配置でアプリケーション エクスプローラーの支払パッケージの作成
-description: このトピックでは、アプリケーション エクスプローラーの支払パッケージを作成して、Dynamics 365 Commerce の Microsoft Azure Service Fabric 環境に配置する方法について説明します。
+title: セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
+description: このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a518d3ec50876164adfcbc18dd4dfdf1a18ab282
-ms.sourcegitcommit: 1e181db51abbf70bbf1f9af8ad6d8c67bafe5adb
+ms.openlocfilehash: c3c75bb4ab1be13edf465f3ab45bdd692b207f73
+ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "3082099"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3374809"
 ---
-# <a name="create-payment-packaging-for-application-explorer-in-service-fabric-deployments"></a>Service Fabric 配置でアプリケーション エクスプローラーの支払パッケージの作成
+# <a name="create-payment-packaging-for-application-explorer-for-self-service-deployment"></a>セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、アプリケーション エクスプローラーの支払パッケージを作成して、Dynamics 365 Commerce の Microsoft Azure Service Fabric 環境に配置する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
 
-10.0.10 以前のリリースでは、コマース ソフトウェア開発キット (SDK) を使用して支払パッケージを作成します。 (以前は Commerce SDK は Retail SDK と呼ばれていました。) 10.0.10 リリース以降では、Visual Studio のみを使用して Application Object Server (AOS) 支払パッケージを作成できます。 この方法を使用して作成するパッケージは、Service Fabric 環境およびサービスとしてのインフラストラクチャ (IaaS) 環境の両方に配置できます。
+10.0.10 より前のリリースでは、コマース ソフトウェア開発キット (SDK) を使用して支払コネクタ パッケージを作成します。 (以前は Commerce SDK は Retail SDK と呼ばれていました。) 10.0.10 リリース以降では、Visual Studio のみを使用して Application Object Server (AOS) 支払コネクタ パッケージを作成できます。 この方法を使用して作成したパッケージは、[オールイン ワンパッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md) を使用して、以前の展開とセルフサービス配置の両方に展開できます。
 
 > [!NOTE]
 > 10.0.10 以前のリリースでは、単一の支払パッケージを作成し、それをアプリケーション エクスプローラーとコマース チャネルおよびクラウド コンポーネント (Commerce Scale Unit) の両方に使用できます。 10.0.10 リリースでは、2 つのパッケージを作成する必要があります。 1 つのパッケージはアプリケーション エクスプローラー用で、Dynamics 365 パッケージング モデルを使用して作成します。 もう 1 つのパッケージは、コマース チャネルとクラウド コンポーネント用で、コマース SDK を使用して作成します。 コマース SDK を使用してアプリケーション エクスプローラー支払パッケージを作成した以前の方法は、10.0.10 リリースの時点で廃止 (非推奨) となります。
 
-Commerce Service Fabric 配置で配置できる支払パッケージを作成するには、次のセクションの手順を実行します。
+セルフ サービスで配置できる支払パッケージを作成するには、次のセクションの手順に従います。
 
 > [!NOTE]
 > コマース チャネルとクラウド コンポーネント用パッケージを作成するため、コマース SDK を使用する手順は変更されていません。 詳細については、「[コネクタの作成と配置](deploy-payment-connector.md)」を参照してください。

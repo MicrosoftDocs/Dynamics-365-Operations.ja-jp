@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 67ccbb742bb4e2283c30b4dec055d137b4a51e40
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 32cd8fb55cd9245a9a7c426a7c956bb40c3fdb0e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216416"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383553"
 ---
 # <a name="asset-fault-analysis"></a>資産エラー分析
 
@@ -78,7 +78,7 @@ ms.locfileid: "3216416"
 
 資産と資産タイプの組み合わせは、下の 3 つのスクリーンショットに表示される計算の基準として使用され、詳細レベルが上がります。  
 
-一般に、**日付別にグループ化**、**資産別にグループ化**、**機能的な場所別にグループ化**アクション ウィンドウ グループのボタン、および**エラー** ボタン (エラー ID) には、期間または資産関係が含まれます。 **現象**、**領域**、**タイプ**、**原因**、**救済**ボタンは、資産エラー登録の分析および問題領域を特定するためエラー管理で使用される分類です。  
+一般的には、**日付別にグループ化**、**資産別にグループ化**、**機能の場所別にグループ化**アクション ウィンドウ グループのボタン、および**エラー** ボタン (エラー ID) には、期間または資産の関係性が含まれます。 **現象**、**領域**、**タイプ**、**原因**、**救済**ボタンは、資産エラー登録の分析および問題領域を特定するためエラー管理で使用される分類です。  
 
 **現象、資産、および資産タイプ別にグループ化**
 

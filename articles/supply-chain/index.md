@@ -1,5 +1,5 @@
 ---
-title: Supply Chain Management のヘルプ リソース
+title: Supply Chain Management ホーム ページ
 description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: josaw1
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201528"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386390"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management のヘルプ リソース
+# <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
 [!include [banner](includes/banner.md)]
 
@@ -42,6 +42,7 @@ ms.locfileid: "3201528"
 - [原価会計](../finance/cost-accounting/cost-accounting-home-page.md)
 - [原価管理](cost-management/cost-management-home-page.md)  
 - [在庫管理](inventory/inventory-home-page.md)
+- [IoT インテリジェンス](iot/iot-intelligence-home-page.md)
 - [マスター プラン](master-planning/master-planning-home-page.md)
 - [調達](procurement/procurement-sourcing-overview.md)
 - [製品情報管理](pim/product-information.md)

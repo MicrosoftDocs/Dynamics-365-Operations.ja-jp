@@ -3,7 +3,7 @@ title: メッセージング API - アクション センター、メッセー�
 description: このトピックでは、メッセージング システムについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69fddcf299bc76b39b009446e9f7e4aeb6bedc8e
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: 4e1d202bab5bee6d77c2763e8f6b4075ed5f13dd
+ms.sourcegitcommit: a303539b230167e5bc9ea88afc0b9dd96bdf4c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100296"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372798"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
@@ -110,7 +110,7 @@ int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test b
 ```xpp
 // Set up the notification 
 SystemNotificationDataContract notification = new SystemNotificationDataContract();
-notification.Users().values(1, curUserId());
+notification.Users().value(1, curUserId());
 notification.Title("Export to Excel finished");
 notification.RuleId('ExcelStaticExport');
 notification.Message("We finished your export from the Customers page");
