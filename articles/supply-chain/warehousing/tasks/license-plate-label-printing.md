@@ -17,87 +17,87 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 484a1465dd41429fe201de18aac55f118a483cab
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 43dc913e84fa53179855d7ab8dbbf4d179e2cc63
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217014"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383047"
 ---
-# <a name="enable-license-plate-label-printing"></a><span data-ttu-id="814de-103">ライセンス プレート ラベル印刷の有効化</span><span class="sxs-lookup"><span data-stu-id="814de-103">Enable license plate label printing</span></span>
+# <a name="enable-license-plate-label-printing"></a><span data-ttu-id="b5cd4-103">ライセンス プレート ラベル印刷の有効化</span><span class="sxs-lookup"><span data-stu-id="b5cd4-103">Enable license plate label printing</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="814de-104">このトピックでは、販売ピッキングの作業プロセスで最後の品目が在庫からピッキングされたあとに、出荷コンテナ シリアル コード (SSCC) ラベルを自動で印刷する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="814de-104">This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process.</span></span> <span data-ttu-id="814de-105">デモ データの会社 USMF でこの手順を確認できます。</span><span class="sxs-lookup"><span data-stu-id="814de-105">You can run this procedure in demo data company USMF.</span></span> <span data-ttu-id="814de-106">自分のデータを使用して実行している場合、ライセンス プレートに番号シーケンスが設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="814de-106">If you're run it using your own data, you need to have a number sequence set up for license plates.</span></span> <span data-ttu-id="814de-107">このタスクを開始する前にラベル プリンターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="814de-107">You need to set up a label printer before you begin this task.</span></span> <span data-ttu-id="814de-108">[組織管理] > [設定] > [ネットワーク プリンター] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-108">Go to Organization administration > Setup > Network printers.</span></span> <span data-ttu-id="814de-109">アクション ペインで [オプション] をクリックし、[ドキュメント回覧エージェント インストーラーのダウンロード] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="814de-109">On the Action pane, click Options, and then click the Download document routing agent installer button.</span></span> <span data-ttu-id="814de-110">インストーラを実行し、[有効] に設定された使用可能なネットワーク プリンタがあることを確認してから、手順を進めます。</span><span class="sxs-lookup"><span data-stu-id="814de-110">Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.</span></span>
+<span data-ttu-id="b5cd4-104">このトピックでは、販売ピッキングの作業プロセスで最後の品目が在庫からピッキングされたあとに、出荷コンテナ シリアル コード (SSCC) ラベルを自動で印刷する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-104">This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process.</span></span> <span data-ttu-id="b5cd4-105">デモ データの会社 USMF でこの手順を確認できます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-105">You can run this procedure in demo data company USMF.</span></span> <span data-ttu-id="b5cd4-106">自分のデータを使用して実行している場合、ライセンス プレートに番号シーケンスが設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-106">If you're run it using your own data, you need to have a number sequence set up for license plates.</span></span> <span data-ttu-id="b5cd4-107">このタスクを開始する前にラベル プリンターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-107">You need to set up a label printer before you begin this task.</span></span> <span data-ttu-id="b5cd4-108">[組織管理] > [設定] > [ネットワーク プリンター] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-108">Go to Organization administration > Setup > Network printers.</span></span> <span data-ttu-id="b5cd4-109">アクション ウィンドウで [オプション] をクリックし、[ドキュメント回覧エージェント インストーラーのダウンロード] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-109">On the Action Pane, click Options, and then click the Download document routing agent installer button.</span></span> <span data-ttu-id="b5cd4-110">インストーラを実行し、[有効] に設定された使用可能なネットワーク プリンタがあることを確認してから、手順を進めます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-110">Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.</span></span>
 
 
-## <a name="set-up-the-gs1-company-prefix"></a><span data-ttu-id="814de-111">GS1 会社の接頭語の設定</span><span class="sxs-lookup"><span data-stu-id="814de-111">Set up the GS1 company prefix</span></span>
-1. <span data-ttu-id="814de-112">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > 倉庫管理パラメーター**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-112">Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.</span></span>
-2. <span data-ttu-id="814de-113">**GS1 会社の接頭語**フィールドに、GS1 会社の番号 7 つを入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-113">In the **GS1 company prefix** field, enter the 7 numbers for your GS1 company number.</span></span>
-3. <span data-ttu-id="814de-114">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-114">Select **Save**.</span></span>
-4. <span data-ttu-id="814de-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-115">Close the page.</span></span>
+## <a name="set-up-the-gs1-company-prefix"></a><span data-ttu-id="b5cd4-111">GS1 会社の接頭語の設定</span><span class="sxs-lookup"><span data-stu-id="b5cd4-111">Set up the GS1 company prefix</span></span>
+1. <span data-ttu-id="b5cd4-112">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > 倉庫管理パラメーター**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-112">Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.</span></span>
+2. <span data-ttu-id="b5cd4-113">**GS1 会社の接頭語**フィールドに、GS1 会社の番号 7 つを入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-113">In the **GS1 company prefix** field, enter the 7 numbers for your GS1 company number.</span></span>
+3. <span data-ttu-id="b5cd4-114">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-114">Select **Save**.</span></span>
+4. <span data-ttu-id="b5cd4-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-115">Close the page.</span></span>
 
-## <a name="setup-the-sscc-license-plate-number-sequence"></a><span data-ttu-id="814de-116">SSCC ライセンス プレート番号の番号順序の設定</span><span class="sxs-lookup"><span data-stu-id="814de-116">Setup the SSCC license plate number sequence</span></span>
-1. <span data-ttu-id="814de-117">**ナビゲーション ウィンドウ > モジュール > 組織管理 > 番号順序 > 番号順序**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-117">Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.</span></span>
-2. <span data-ttu-id="814de-118">**エリア** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-118">In the **Area** field, select an option.</span></span>
-3. <span data-ttu-id="814de-119">**参照**フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-119">In the **Reference** field, select an option.</span></span>
-4. <span data-ttu-id="814de-120">**会社**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-120">In the **Company** field, type a value.</span></span>
-5. <span data-ttu-id="814de-121">**区分**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="814de-121">Expand the **Segments** section.</span></span>
-6. <span data-ttu-id="814de-122">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-122">Select **Edit**.</span></span>
-7. <span data-ttu-id="814de-123">**区分**テーブルで、先頭行を選択する</span><span class="sxs-lookup"><span data-stu-id="814de-123">In the **Segments** table, select the first row</span></span>
-8. <span data-ttu-id="814de-124">**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-124">Select **Remove**.</span></span>
-9. <span data-ttu-id="814de-125">**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-125">Select **Remove**.</span></span>
-10. <span data-ttu-id="814de-126">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-126">Select **Save**.</span></span>
-11. <span data-ttu-id="814de-127">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-127">Close the page.</span></span>
+## <a name="setup-the-sscc-license-plate-number-sequence"></a><span data-ttu-id="b5cd4-116">SSCC ライセンス プレート番号の番号順序の設定</span><span class="sxs-lookup"><span data-stu-id="b5cd4-116">Setup the SSCC license plate number sequence</span></span>
+1. <span data-ttu-id="b5cd4-117">**ナビゲーション ウィンドウ > モジュール > 組織管理 > 番号順序 > 番号順序**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-117">Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.</span></span>
+2. <span data-ttu-id="b5cd4-118">**エリア** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-118">In the **Area** field, select an option.</span></span>
+3. <span data-ttu-id="b5cd4-119">**参照**フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-119">In the **Reference** field, select an option.</span></span>
+4. <span data-ttu-id="b5cd4-120">**会社**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-120">In the **Company** field, type a value.</span></span>
+5. <span data-ttu-id="b5cd4-121">**区分**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-121">Expand the **Segments** section.</span></span>
+6. <span data-ttu-id="b5cd4-122">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-122">Select **Edit**.</span></span>
+7. <span data-ttu-id="b5cd4-123">**区分**テーブルで、先頭行を選択する</span><span class="sxs-lookup"><span data-stu-id="b5cd4-123">In the **Segments** table, select the first row</span></span>
+8. <span data-ttu-id="b5cd4-124">**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-124">Select **Remove**.</span></span>
+9. <span data-ttu-id="b5cd4-125">**削除**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-125">Select **Remove**.</span></span>
+10. <span data-ttu-id="b5cd4-126">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-126">Select **Save**.</span></span>
+11. <span data-ttu-id="b5cd4-127">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-127">Close the page.</span></span>
 
-## <a name="create-the-document-route-layout"></a><span data-ttu-id="814de-128">ドキュメント回覧レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="814de-128">Create the document route layout</span></span>
-1. <span data-ttu-id="814de-129">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > ドキュメント回覧 > ドキュメント回覧レイアウト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-129">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**.</span></span> <span data-ttu-id="814de-130">SSCC レイアウトを有効にします。</span><span class="sxs-lookup"><span data-stu-id="814de-130">Enable the SSCC layout.</span></span>  
-2. <span data-ttu-id="814de-131">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-131">Select **New**.</span></span>
-3. <span data-ttu-id="814de-132">**レイアウト ID** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-132">In the **Layout ID** field, type a value.</span></span>
-4. <span data-ttu-id="814de-133">**説明**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-133">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="814de-134">**テキストの末尾に挿入**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-134">Select **Insert at end of text**.</span></span>
-6. <span data-ttu-id="814de-135">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-135">Select **Save**.</span></span>
-7. <span data-ttu-id="814de-136">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-136">Close the page.</span></span>
+## <a name="create-the-document-route-layout"></a><span data-ttu-id="b5cd4-128">ドキュメント回覧レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="b5cd4-128">Create the document route layout</span></span>
+1. <span data-ttu-id="b5cd4-129">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > ドキュメント回覧 > ドキュメント回覧レイアウト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-129">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**.</span></span> <span data-ttu-id="b5cd4-130">SSCC レイアウトを有効にします。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-130">Enable the SSCC layout.</span></span>  
+2. <span data-ttu-id="b5cd4-131">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-131">Select **New**.</span></span>
+3. <span data-ttu-id="b5cd4-132">**レイアウト ID** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-132">In the **Layout ID** field, type a value.</span></span>
+4. <span data-ttu-id="b5cd4-133">**説明**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-133">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="b5cd4-134">**テキストの末尾に挿入**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-134">Select **Insert at end of text**.</span></span>
+6. <span data-ttu-id="b5cd4-135">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-135">Select **Save**.</span></span>
+7. <span data-ttu-id="b5cd4-136">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-136">Close the page.</span></span>
 
-## <a name="set-up-the-document-routing"></a><span data-ttu-id="814de-137">ドキュメント回覧の設定</span><span class="sxs-lookup"><span data-stu-id="814de-137">Set up the document routing</span></span>
-1. <span data-ttu-id="814de-138">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > ドキュメント回覧 > ドキュメント回覧**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-138">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.</span></span>
-2. <span data-ttu-id="814de-139">**作業指示書タイプ** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-139">In the **Work order type** field, select an option.</span></span>
-3. <span data-ttu-id="814de-140">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-140">Select **New**.</span></span>
-4. <span data-ttu-id="814de-141">**倉庫**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-141">In the **Warehouse** field, type a value.</span></span>
-5. <span data-ttu-id="814de-142">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-142">In the **Name** field, type a value.</span></span>
-6. <span data-ttu-id="814de-143">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-143">Select **New**.</span></span>
-7. <span data-ttu-id="814de-144">**レイアウト ID** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-144">In the **Layout ID** field, enter or select a value.</span></span>
-8. <span data-ttu-id="814de-145">**名前**フィールドで、使用するプリンター名を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-145">In the **Name** field, enter the printer name that you want to use.</span></span>
-9. <span data-ttu-id="814de-146">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-146">Select **Save**.</span></span>
-10. <span data-ttu-id="814de-147">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-147">Close the page.</span></span>
+## <a name="set-up-the-document-routing"></a><span data-ttu-id="b5cd4-137">ドキュメント回覧の設定</span><span class="sxs-lookup"><span data-stu-id="b5cd4-137">Set up the document routing</span></span>
+1. <span data-ttu-id="b5cd4-138">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > ドキュメント回覧 > ドキュメント回覧**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-138">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.</span></span>
+2. <span data-ttu-id="b5cd4-139">**作業指示書タイプ** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-139">In the **Work order type** field, select an option.</span></span>
+3. <span data-ttu-id="b5cd4-140">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-140">Select **New**.</span></span>
+4. <span data-ttu-id="b5cd4-141">**倉庫**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-141">In the **Warehouse** field, type a value.</span></span>
+5. <span data-ttu-id="b5cd4-142">**名前**フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-142">In the **Name** field, type a value.</span></span>
+6. <span data-ttu-id="b5cd4-143">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-143">Select **New**.</span></span>
+7. <span data-ttu-id="b5cd4-144">**レイアウト ID** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-144">In the **Layout ID** field, enter or select a value.</span></span>
+8. <span data-ttu-id="b5cd4-145">**名前**フィールドで、使用するプリンター名を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-145">In the **Name** field, enter the printer name that you want to use.</span></span>
+9. <span data-ttu-id="b5cd4-146">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-146">Select **Save**.</span></span>
+10. <span data-ttu-id="b5cd4-147">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-147">Close the page.</span></span>
 
-## <a name="create-mobile-device-menu"></a><span data-ttu-id="814de-148">モバイル デバイスのメニューの作成</span><span class="sxs-lookup"><span data-stu-id="814de-148">Create mobile device menu</span></span>
-1. <span data-ttu-id="814de-149">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > モバイル デバイス > モバイル デバイスのメニュー項目**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-149">Go to **Navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.</span></span>
-2. <span data-ttu-id="814de-150">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-150">Select **New**.</span></span>
-3. <span data-ttu-id="814de-151">**メニュー項目名**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-151">In the **Menu item name** field, type a value.</span></span>
-4. <span data-ttu-id="814de-152">**タイトル** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-152">In the **Title** field, type a value.</span></span>
-5. <span data-ttu-id="814de-153">**モード** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-153">In the **Mode** field, select an option.</span></span>
-6. <span data-ttu-id="814de-154">**既存の作業を使用**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-154">Select **Yes** in the **Use existing work** field.</span></span>
-7. <span data-ttu-id="814de-155">**ライセンス プレートの生成**フィールドで、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-155">Select **Yes** in the **Generate license plate** field.</span></span>
-8. <span data-ttu-id="814de-156">**作業クラス**のセクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="814de-156">Expand the **Work classes** section.</span></span>
-9. <span data-ttu-id="814de-157">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-157">Select **New**.</span></span>
-10. <span data-ttu-id="814de-158">**作業クラス ID** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="814de-158">In the **Work class ID** field, type a value.</span></span>
-11. <span data-ttu-id="814de-159">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-159">Select **Save**.</span></span>
-12. <span data-ttu-id="814de-160">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-160">Close the page.</span></span>
-13. <span data-ttu-id="814de-161">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > モバイル デバイス > モバイル デバイスのメニュー**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-161">Go to **navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.</span></span>
-14. <span data-ttu-id="814de-162">ツリーで、以前に作成したメニュー項目を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-162">In the tree, select the menu item that you created before.</span></span>
-15. <span data-ttu-id="814de-163">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-163">Select **Edit**.</span></span>
-16. <span data-ttu-id="814de-164">矢印を選択してメニュー項目をメニューに追加します。</span><span class="sxs-lookup"><span data-stu-id="814de-164">Select the arrow to add the menu item to the menu.</span></span>
-17. <span data-ttu-id="814de-165">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-165">Select **Save**.</span></span>
-18. <span data-ttu-id="814de-166">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-166">Close the page.</span></span>
+## <a name="create-mobile-device-menu"></a><span data-ttu-id="b5cd4-148">モバイル デバイスのメニューの作成</span><span class="sxs-lookup"><span data-stu-id="b5cd4-148">Create mobile device menu</span></span>
+1. <span data-ttu-id="b5cd4-149">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > モバイル デバイス > モバイル デバイスのメニュー項目**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-149">Go to **Navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.</span></span>
+2. <span data-ttu-id="b5cd4-150">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-150">Select **New**.</span></span>
+3. <span data-ttu-id="b5cd4-151">**メニュー項目名**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-151">In the **Menu item name** field, type a value.</span></span>
+4. <span data-ttu-id="b5cd4-152">**タイトル** フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-152">In the **Title** field, type a value.</span></span>
+5. <span data-ttu-id="b5cd4-153">**モード** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-153">In the **Mode** field, select an option.</span></span>
+6. <span data-ttu-id="b5cd4-154">**既存の作業を使用**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-154">Select **Yes** in the **Use existing work** field.</span></span>
+7. <span data-ttu-id="b5cd4-155">**ライセンス プレートの生成**フィールドで、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-155">Select **Yes** in the **Generate license plate** field.</span></span>
+8. <span data-ttu-id="b5cd4-156">**作業クラス**のセクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-156">Expand the **Work classes** section.</span></span>
+9. <span data-ttu-id="b5cd4-157">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-157">Select **New**.</span></span>
+10. <span data-ttu-id="b5cd4-158">**作業クラス ID** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-158">In the **Work class ID** field, type a value.</span></span>
+11. <span data-ttu-id="b5cd4-159">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-159">Select **Save**.</span></span>
+12. <span data-ttu-id="b5cd4-160">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-160">Close the page.</span></span>
+13. <span data-ttu-id="b5cd4-161">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > モバイル デバイス > モバイル デバイスのメニュー**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-161">Go to **navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.</span></span>
+14. <span data-ttu-id="b5cd4-162">ツリーで、以前に作成したメニュー項目を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-162">In the tree, select the menu item that you created before.</span></span>
+15. <span data-ttu-id="b5cd4-163">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-163">Select **Edit**.</span></span>
+16. <span data-ttu-id="b5cd4-164">矢印を選択してメニュー項目をメニューに追加します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-164">Select the arrow to add the menu item to the menu.</span></span>
+17. <span data-ttu-id="b5cd4-165">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-165">Select **Save**.</span></span>
+18. <span data-ttu-id="b5cd4-166">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-166">Close the page.</span></span>
 
-## <a name="update-a-work-template"></a><span data-ttu-id="814de-167">作業テンプレートの更新</span><span class="sxs-lookup"><span data-stu-id="814de-167">Update a work template</span></span>
-1. <span data-ttu-id="814de-168">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > 作業 > 作業テンプレート**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="814de-168">Go to **Navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.</span></span>
-2. <span data-ttu-id="814de-169">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-169">Select **Edit**.</span></span>
-3. <span data-ttu-id="814de-170">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-170">Select **New**.</span></span>
-4. <span data-ttu-id="814de-171">**作業タイプ** フィールドで**印刷**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-171">In the **Work type** field, select **Print**.</span></span>
-5. <span data-ttu-id="814de-172">**作業クラス ID** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-172">In the **Work class ID** field, enter or select a value.</span></span>
-6. <span data-ttu-id="814de-173">**上へ移動**を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-173">Select **Move up**.</span></span>
-7. <span data-ttu-id="814de-174">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="814de-174">Select **Save**.</span></span>
-8. <span data-ttu-id="814de-175">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="814de-175">Close the page.</span></span>
+## <a name="update-a-work-template"></a><span data-ttu-id="b5cd4-167">作業テンプレートの更新</span><span class="sxs-lookup"><span data-stu-id="b5cd4-167">Update a work template</span></span>
+1. <span data-ttu-id="b5cd4-168">**ナビゲーション ウィンドウ > モジュール > 倉庫管理 > 設定 > 作業 > 作業テンプレート**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-168">Go to **Navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.</span></span>
+2. <span data-ttu-id="b5cd4-169">**編集**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-169">Select **Edit**.</span></span>
+3. <span data-ttu-id="b5cd4-170">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-170">Select **New**.</span></span>
+4. <span data-ttu-id="b5cd4-171">**作業タイプ** フィールドで**印刷**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-171">In the **Work type** field, select **Print**.</span></span>
+5. <span data-ttu-id="b5cd4-172">**作業クラス ID** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-172">In the **Work class ID** field, enter or select a value.</span></span>
+6. <span data-ttu-id="b5cd4-173">**上へ移動**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-173">Select **Move up**.</span></span>
+7. <span data-ttu-id="b5cd4-174">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-174">Select **Save**.</span></span>
+8. <span data-ttu-id="b5cd4-175">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5cd4-175">Close the page.</span></span>
 
