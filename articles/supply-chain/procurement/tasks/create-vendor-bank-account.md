@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab0a108b5c8b7f2f90a4d33d8a9ff088335c18d4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207665"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383139"
 ---
 # <a name="create-a-vendor-bank-account"></a>仕入先銀行口座の作成
 
@@ -31,9 +31,9 @@ ms.locfileid: "3207665"
 
 1. **ナビゲーション ウィンドウ > モジュール > 調達 > 仕入先 > すべての仕入先**の順に移動します。
 2. 銀行口座を作成する対象の仕入先を選択し、**仕入先 ID** フィールドのリンクをクリックします。
-3. **アクション ウィンドウ**で、**仕入先**をクリックします。
+3. **アクション ウィンドウ**で、 **仕入先** をクリックします。
 4. **銀行口座**をクリックします。
-5. **アクション ウィンドウ**で、**新規**をクリックします。
+5. **アクション ペイン** で **新規作成** をクリックします。
 6. **銀行口座**フィールドに、値を入力します。 この ID を使用して仕入先レコードの銀行口座を識別します。  
 7. **名前**フィールドに値を入力します。
 8. **銀行グループ** フィールドで、値を入力または選択します。

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c2e994d11bbd45907a48c1f3955fa751a676a327
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
+ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353691"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3385551"
 ---
 # <a name="create-a-leave-request-workflow"></a>休暇申請ワークフローの作成
 
@@ -49,6 +49,7 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇およ
 
 次のデータ要素を使用して、休暇と欠勤の要求に対してワークフロー内で条件付の承認、または自動承認を作成することができます。
 
+- **金額**
 - **コメント**
 - **法人**
 - **作成者**

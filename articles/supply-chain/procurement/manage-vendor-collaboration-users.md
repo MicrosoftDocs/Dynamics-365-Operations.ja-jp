@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8491fd7c5af015989d409391e3ac143d88b6ad92
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 29930fdb65f96e281e0f0f01db41ec1475ad81c2
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207166"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383070"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
@@ -49,7 +49,7 @@ Dynamics 365 Supply Chain Management の仕入先コラボレーション イン
 仕入先コラボレーションのユーザーの要求は、調達担当者、または外部仕入先によって上げることができます。
 
 -   外部仕入先の場合は、**仕入先コラボレーション** モジュール内の **すべての連絡先** ページから要求を送信します。
--   調達担当者である場合、**連絡先の表示** ページから要求を送信します。 これを行うには、仕入先レコードの、アクション ペインの **設定** セクションで、**連絡先** &gt; **連絡先の表示** を選択します。
+-   調達担当者である場合、**連絡先の表示** ページから要求を送信します。 これを行うには、仕入先レコードの、アクション ウィンドウの **設定** セクションで、**連絡先** &gt; **連絡先の表示** を選択します。
 
 ユーザーのプロビジョニング、ユーザーの無効化、またはセキュリティ ロールの変更を要求をできます。 外部仕入先の管理者の場合は、ユーザーが要求する仕入先アカウントの連絡担当者として登録する必要があり、仕入先アカウントの仕入先コラボレーション インターフェイスにアクセスする必要があります。  
 

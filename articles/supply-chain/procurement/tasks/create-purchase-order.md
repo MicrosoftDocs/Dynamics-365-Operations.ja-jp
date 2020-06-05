@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26112a9d25c0097bdbf30003247ce6dd4b4fb634
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204887"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383231"
 ---
 # <a name="create-a-purchase-order"></a>発注書の作成
 
@@ -68,7 +68,7 @@ ms.locfileid: "3204887"
 ## <a name="review-order-totals"></a>注文合計の確認
 1. **合計**を選択します。
 
-    - **合計** アクションが表示されない場合は、アクション バーの **発注書** タブをクリックします。  
+    - **合計** アクションが表示されない場合は、アクション ウィンドウの **発注書** タブを選択します。  
     - このダイアログ ボックスは、注文全体の合計を表示します。  
     - **選択**フィールドを使用して合計の計算方法の基準を変更できます。 たとえば、**製品受領書の数量**を選択して受領した製品の金額に関連する合計を表示したり、**注文済数量**を選択して注文した製品の金額を表示できます。  
 

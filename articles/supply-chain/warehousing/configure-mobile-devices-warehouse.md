@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 438e13d6887decc9867d474467efc06d7a2f3274
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205716"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383093"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスの設定
 
@@ -224,7 +224,7 @@ ms.locfileid: "3205716"
 </tr>
 <tr class="even">
 <td>システム主導</td>
-<td>Supply Chain Management では、作業者に割り当てられた作業のタイプ、および作業者が作業を実行する注文を管理します。 このオプションを選択すると、[アクション] ペインで <strong>システム主導の作業</strong> をクリックして、<strong>システム主導の並べ替え順</strong> ページで作業の並べ替え基準を設定できるようになります。 並べ替え基準は、作業者が作業を実行する順序を制御します。 必要な数だけ基準を追加できます。</td>
+<td>Supply Chain Management では、作業者に割り当てられた作業のタイプ、および作業者が作業を実行する注文を管理します。 このオプションを選択すると、アクション ウィンドウ <strong>システム主導の作業</strong> をクリックし、<strong>システム主導の並べ替え順</strong> ページで作業の並べ替えの基準を設定できるようになります。 並べ替え基準は、作業者が作業を実行する順序を制御します。 必要な数だけ基準を追加できます。</td>
 </tr>
 <tr class="odd">
 <td>ユーザー主導</td>
@@ -257,7 +257,7 @@ ms.locfileid: "3205716"
 </tr>
 <tr class="even">
 <td>循環棚卸のグループ化</td>
-<td>作業者がゾーン、作業プール、または場所を選択すると、その選択に基づいて Supply Chain Management が作業を割り当てます。 このオプションを選択すると、[アクション] ペインの<strong>循環棚卸</strong>をクリックすることで、表示する追加情報を指定でき、また、計数に相違が見つかった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
+<td>作業者がゾーン、作業プール、または場所を選択すると、その選択に基づいて Supply Chain Management が作業を割り当てます。 このオプションを選択すると、アクション ウィンドウの <strong>循環棚卸</strong> をクリックすることで、表示する追加情報を指定でき、また、計数に不一致があった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
 </tr>
  <tr class="odd">
 <td>輸送積荷</td>

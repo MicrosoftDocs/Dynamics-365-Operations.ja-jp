@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205785"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367295"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品の確認
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品の確認
 クラスタ ピッキングでは、複数の注文に対する品目のピッキングを同時にすることができます。 クラスタ ピッキングが適用される場合、クラスタに追加される品目を確認するための品目確認書は重要です。 クラスタ ピッキング プロセス中にクラスタ ピッキングの品目を確認することができます。
 
 ## <a name="where-it-applies"></a>該当する場合
+
 クラスタ ピッキングの品目の検証は、非クラスタ ピッキング プロセスで品目を確認する場合と同様に働きます。 設定は、製品バー コード設定に基づいています。
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>クラスタ ピッキングの品目の検証の設定
-1.  モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: **倉庫管理** > **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目**に進みます。
-2.  モバイル デバイス メニュー品目から、**作業確認の設定**を開きます。
+
+1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: **倉庫管理** > **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目**に進みます。
+1. モバイル デバイス メニュー品目から、**作業確認の設定**を開きます。
 
 |        オプション        |                                    説明                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | 製品の確認 | スキャンしたときに、モバイル デバイスから各在庫を確認できます。 |
-

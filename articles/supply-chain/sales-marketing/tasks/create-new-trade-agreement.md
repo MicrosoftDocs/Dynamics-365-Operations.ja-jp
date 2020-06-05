@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aa46f959c35c209791457aa697ab829264b3275
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1642da7b06363d1f704e51276b5cb36823707231
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211954"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383427"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 
@@ -34,7 +34,7 @@ ms.locfileid: "3211954"
 2. **新規** をクリックします。
 3. **名前**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 4. 一覧で、目的のレコードを見つけ、選択します。
-5. **アクション ウィンドウ**で、**明細行**をクリックします。
+5. **アクション ウィンドウ**で、**明細行** をクリックします。
 6. **アカウント コード** フィールドで、「テーブル」を選択します。
     
     この例では、特定の顧客の価格を更新しており、これはテーブルの選択が必要であることを意味しています。 製品の表示価格を更新する場合は、新しい価格がすべての顧客に対して有効になるように、「すべて」を選択します。 異なる顧客の区分間の価格を区別する場合は、[グループ] を選択します。 [グループ] を選択するには、[顧客の価格グループ] を設定しておく必要があります。  
