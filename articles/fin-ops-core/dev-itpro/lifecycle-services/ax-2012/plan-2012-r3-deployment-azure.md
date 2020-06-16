@@ -180,7 +180,7 @@ Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格�
 > 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができます。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure 上の AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) という記事の中です。
 
 ## <a name="consider-legal-and-regulatory-requirements"></a>法的および規制要件を考慮する
-Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure セキュリティ センター](https://azure.microsoft.com/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
+Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure Security Center](https://azure.microsoft.com/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
 
 -   **セキュリティ:** [Azure セキュリティ ページ](https://www.windowsazure.com/support/trust-center/security/) は地理的に分散されているデータ センター内に安全な環境を提供するために Microsoft が取っている条項の概要を示します。 セキュリティ関連リソースの広範なリストの中で、[情報の要求についての標準応答: セキュリティおよびプライバシー](https://www.microsoft.com/download/details.aspx?id=26647) ホワイト ペーパーがどのように Azure の提案されたプリンシパルを満たし、国際標準化機構 (ISO) 27001:2005 および ISO 27002 にマップされているかを概説します。
 -   **プライバシー:** [Azure プライバシー ページ](https://www.windowsazure.com/support/trust-center/privacy/) は、Azure 環境のプライバシーに関する取り組みを説明する複数のリソースへのリンクが含まれています。 [Azure のプライバシーに関する声明](https://www.windowsazure.com/support/legal/privacy-statement/)へのリンクが含まれています。
