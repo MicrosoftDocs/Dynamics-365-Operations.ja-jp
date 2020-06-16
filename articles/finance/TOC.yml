@@ -70,12 +70,12 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.12 (2020 年 8 月)
+                      href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (2020 年 7 月)
                       href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (2020 年 5 月)
                       href: get-started/whats-new-changed-10-0-10.md
-                    - name: Finance 10.0.9 (2020 年 4 月)
-                      href: get-started/whats-new-changed-10-0-9.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
@@ -230,8 +230,10 @@
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
-            - name: 仕入先請求ポリシーの設定
+            - name: 仕入先請求書ポリシーの設定
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: 仕入先支払提案の自動化
+              href: accounts-payable/automate-vendor-payment-proposal.md
             - name: 仕入先請求書の受領記録および入庫済数量との照合
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: 確認後支払の概要
@@ -320,18 +322,10 @@
               href: accounts-receivable/payment-insights-overview.md
             - name: 顧客転記プロファイル
               href: accounts-receivable/customer-posting-profiles.md
-            - name: 共有番号順序を使用して、顧客をコピーする
+            - name: 共有番号順序を使用して顧客をコピーする
               href: accounts-receivable/copy-customer.md
             - name: 顧客ワークフロー
               href: accounts-receivable/customer-workflow.md
-            - name: 売掛金勘定の貸方転記および取立
-              href: accounts-receivable/collections-credit-accounts-receivable.md
-            - name: 売掛金勘定、貸方転記および取立のコンフィギュレーション
-              href: accounts-receivable/accounts-receivables-set-up-overview.md
-            - name: 与信および回収の設定
-              href: accounts-receivable/set-up-collections.md
-            - name: 取立情報の確認
-              href: accounts-receivable/tasks/review-collections-information.md
             - name: 収益認識の概要
               href: accounts-receivable/revenue-recognition-overview.md
             - name: 収益認識の設定
@@ -410,6 +404,14 @@
               items:
                 - name: 与信および回収の概要
                   href: accounts-receivable/cm-credit-and-collections-overview.md
+                - name: 売掛金勘定の回収
+                  href: accounts-receivable/collections-credit-accounts-receivable.md
+                - name: 売掛金勘定、貸方転記および取立のコンフィギュレーション
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: 与信および回収の設定
+                  href: accounts-receivable/set-up-collections.md
+                - name: 取立情報の確認
+                  href: accounts-receivable/tasks/review-collections-information.md
                 - name: 与信管理設定
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: 与信管理設定情報
@@ -448,6 +450,8 @@
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: 顧客の損金処理仕訳帳の作成
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: 詳細なメモの管理
+              href: localizations/emea-ita-exil-structured-notes.md
         - name: 予算作成
           items:
             - name: 予算作成ホーム ページ
@@ -978,6 +982,8 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: 労務および経費の標準原価のコンフィギュレーション
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: 仕入先支払留保条件の作成と適用
+              href: project-management/create-and-apply-vendor-payment-retention-terms.md
             - name: ペイウェンペイド仕入先支払方法の設定と使用
               href: project-management/setup-manage-vendor-payments.md
             - name: 購買入庫におけるプロジェクト費用見越し額
@@ -1000,6 +1006,10 @@
               href: project-management/project-purchase-orders.md
             - name: プロジェクト見積
               href: project-management/project-quotations.md
+            - name: プロジェクト見積の確認、更新、送信
+              href: project-management/confirm-update-send-project-quotation.md
+            - name: プロジェクトに見積書を転送する
+              href: project-management/transfer-quote-new-existing-project.md
             - name: プロジェクト リソース
               href: project-management/project-resourcing.md
             - name: 在庫品目要求からの発注品目の入庫
@@ -1018,10 +1028,12 @@
                   href: project-management/project-timesheet.md
                 - name: モバイル デバイスでのプロジェクト タイムシート
                   href: project-management/mobile-timesheets.md
-                - name: プロジェクト タイムシート モバイル アプリのカスタム フィールドの実装
+                - name: Project Timesheet モバイル アプリのカスタム フィールドの実装
                   href: project-management/custom-fields-mobile.md
             - name: プロジェクト交付
               href: project-management/project-grants.md
+            - name: プロジェクト見積書の削除
+              href: project-management/eliminate-project-estimate.md
         - name: 公的機関
           items:
             - name: 公的機関ホーム ページ
@@ -1758,6 +1770,8 @@
                   href: localizations/emea-hun-tax-reimbursement-docs.md
                 - name: 年度末決算
                   href: localizations/emea-cze-hun-year-end.md
+                - name: オンライン請求システム
+                  href: localizations/emea-hun-online-invoicing.md
             - name: アイスランド
               items:
                 - name: アイスランドの概要
@@ -2008,8 +2022,6 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: イントラスタット申告でのキログラムあたりの雑費
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
-                - name: 詳細なメモの管理
-                  href: localizations/emea-ita-exil-structured-notes.md
                 - name: 同意書 - 通常の輸出業者への請求
                   href: localizations/emea-ita-exil-intent-letter.md
                 - name: 無料で配送される商品の税金請求書
@@ -2288,8 +2300,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL 統合
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 監査ファイル - XML Auditfile Financieel、XAF
-                  hred: localizations/emea-nl-audit-file.md
+                - name: 監査ファイル (XML Auditfile Financieel XAF)
+                  href: localizations/emea-nl-audit-file.md
             - name: ノルウェー
               items:
                 - name: ノルウェーの概要
@@ -2970,6 +2982,8 @@
               items:
                 - name: コンフィギュレーションの作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+                - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
                     - name: ドメイン固有のデータ モデルを設計する
@@ -3252,11 +3266,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'テキスト: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: 形式を作成するときにデータ モデル定義を選択する
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
+            - name: さまざまな形式で送信電子ドキュメントを生成するための電子申告形式を設計する
               items:
                 - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                   items:
@@ -3290,8 +3300,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: 電子申告を使用してアプリケーション データを更新する
               items:
                 - name: 電子ドキュメントを生成してアプリケーション データを更新する
@@ -3321,34 +3329,44 @@
                     - name: オプションの属性を使用して XML 形式でファイルをインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: コンフィギュレーション ライフサイクル
               items:
                 - name: コンフィギュレーション ライフサイクルの管理
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: コンフィギュレーションを Lifecycle Services にアップロードする
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: コンフィギュレーションを Lifecycle Services からインポートする
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: コンフィギュレーションを Lifecycle Services からダウンロードする
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                - name: コンフィギュレーションをインポートする
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: グローバル リポジトリでコンフィギュレーションを検索するための拡張フィルタ オプション
-                  href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                - name: ER コンフィギュレーションを RCS リポジトリからダウンロードする
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: コンフィギュレーションを RCS からインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-                - name: RCS で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
-                  href: localizations/rcs-global-repo-upload.md
-                - name: RCS で ER コンフィギュレーションを外部組織に共有する
-                  href: localizations/rcs-global-repo-share-configuration.md
+                    - name: LC へコンフィギュレーションをアップロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: LCS からコンフィギュレーションをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: LCS からコンフィギュレーションをダウンロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                    - name: コンフィギュレーション (LBD) のインポート
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Regulatory Configuration Service (RCS) - グローバリゼーション機能
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Finance に電子申告コンフィギュレーションをダウンロードする
+                      items:
+                        - name: RCS からコンフィギュレーションをダウンロードする
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: チュートリアル
               items:
-                - name: データ ソースの使用方法について
+                - name: データ ソースの使用方法を確認する
                   items:
                     - name: 結合を使用して複数のテーブルからデータを取得する
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
@@ -3392,18 +3410,26 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                         - name: データ ソースのデバッグ
                           href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-                - name: 国のコンテキスト依存 ER モデル マッピングを構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                - name: 法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-                - name: 法人ごとの ER 形式のパラメーターの設定
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                - name: ER 形式要素の実行を遅延する
+                - name: モデル マッピングのコンフィギュレーション
                   items:
-                    - name: シーケンス要素の実行を延期する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
-                    - name: XML 要素の実行を延期する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: 国のコンテキスト依存電子申告モデル マッピングを構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                    - name: 個別の電子申告コンフィギュレーションで電子申告モデル マッピングを管理する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: 形式のコンフィギュレーション
+                  items:
+                    - name: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                    - name: 法人ごとの電子申告形式のパラメーターの設定
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                    - name: 形式を作成するときにモデル定義を選択する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: 電子申告形式要素の実行を遅延する
+                      items:
+                        - name: シーケンス要素の実行を延期する
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                        - name: XML 要素の実行を延期する
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                 - name: データ バインディングの相対パス
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Finance and Operations での電子申告ソリューションの使用

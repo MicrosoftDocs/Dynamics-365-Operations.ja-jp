@@ -14,7 +14,9 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
-                - name: 10.0.11 の Platform update (2020 年 7 月)
+                - name: 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)
+                  href: get-started/whats-new-platform-update-10-0-12.md
+                - name: 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)
                   href: get-started/whats-new-platform-update-35.md
                 - name: 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)
                   href: get-started/whats-new-platform-update-34.md
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 作業者、職務、および職位の統合
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: 引当可能在庫数
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: 二重書き込みのサポート
                           items:
                             - name: Field Service ソリューションと Project Service Automation ソリューションのサポート
@@ -452,11 +456,11 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: クラウド環境への更新プログラムの適用
                   href: deployment/apply-deployable-package-system.md
-                - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+                - name: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
                   href: deployment/Update-retail-channel.md
-                - name: Retail Cloud Scale Unit の初期化
+                - name: Commerce Scale Unit (クラウド) の初期化
                   href: deployment/Initialize-Retail-Channels.md
-                - name: Retail データ所在地
+                - name: 小売データ所在地
                   href: deployment/retail-data-residency.md
             - name: オンプレミス配置
               items:
@@ -488,7 +492,9 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: クライアント インターネット接続
                       href: user-interface/client-disconnected.md
-                    - name: オンプレミス環境用プロキシの構成
+                    - name: オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
+                      href: deployment/onprem-batchonly.md
+                    - name: オンプレミス環境用プロキシのコンフィギュレーション
                       href: deployment/onprem-reverseproxy.md
                     - name: オンプレミス診断
                       href: deployment/on-premises-diagnostics.md
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services ユーザー ガイド
               href: lifecycle-services/lcs-user-guide.md
+            - name: プロジェクト オンボード
+              href: lifecycle-services/project-onboarding.md
             - name: サブスクリプション見積もりツール
               href: lifecycle-services/subscription-estimator.md
             - name: セキュリティのコンフィギュレーション
@@ -1118,13 +1126,27 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: 翻訳メモリ ファイル
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform 統合
+          items:
+            - name: Finance and Operations と Microsoft Power Platform の統合
+              href: power-platform/overview.md
+            - name: エンティティ モデリング
+              href: power-platform/entity-modeling.md
+            - name: アプリケーション ライフサイクル管理
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations および Common Data Service 管理リファレンス
+              href: power-platform/admin-reference.md
+            - name: Power Apps ポータルと Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Finance and Operations 仮想エンティティに関するよく寄せられる質問
+              href: power-platform/faq.md
         - name: モバイル プラットフォーム
           items:
             - name: モバイル プラットフォームのリソース
               href: mobile-apps/platform/mobile-platform-home-page.md
             - name: 使用開始
               items:
-                - name: モバイル プラットフォームを使い始める
+                - name: モバイル プラットフォームの使用を開始する
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: アーキテクチャと設計の考慮事項
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1330,20 +1352,20 @@
               href: perf-test/rsat/rsat-overview.md
             - name: インストールとコンフィギュレーション
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: テスト ケースの実行
+            - name: Regression Suite Automation Tool の使用
               href: perf-test/rsat/rsat-run.md
             - name: 予測値の検証
               href: perf-test/rsat/rsat-validate-expected.md
-            - name: テスト ケースのチェーン
+            - name: チェーン テスト ケース
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: 派生テスト ケース
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Regression Suite Automation Tool チュートリアルの使用
+            - name: Regression Suite Automation Tool チュートリアルおよびその他の機能
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: ベスト プラクティス
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: トラブルシューティング
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Lifecycle Services を使用したリリースのソリューション
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: 有効なバッチ期間
                   href: sysadmin/activeperiod.md
+                - name: 有効なバッチ期間における夏時間のサポート
+                  href: sysadmin/batch-active-period-dst.md
                 - name: バッチ マネージャーのセキュリティ ロール
                   href: sysadmin/runby.md
                 - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
