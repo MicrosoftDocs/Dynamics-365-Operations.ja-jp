@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 5 月 28 日
+          href: hr-whats-new-2020-05-28.md
         - name: 2020 年 5 月 14 日
           href: hr-whats-new-2020-05-14.md
         - name: 2020 年 5 月 1 日
@@ -505,10 +507,12 @@
               href: hr-leave-and-absence-plans.md
             - name: 休暇計画への作業者の割り当て
               href: hr-leave-and-absence-enroll.md
-            - name: 休暇計画の累計
+            - name: 休暇および欠勤計画の累計
               href: hr-leave-and-absence-accrue.md
             - name: 休暇の中断
               href: hr-leave-and-absence-suspend-leave.md
+            - name: 休暇申請
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: 従業員の休暇の管理
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: 休暇および欠勤の分析の表示
@@ -519,6 +523,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: チームおよび会社のカレンダーの表示
               href: hr-employee-self-service-calendar.md
+            - name: 休暇の売買ポリシーの管理
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: 休暇の売買
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Teams での休暇要求の管理
           href: hr-teams-leave-app.md
         - name: 従業員の育成
