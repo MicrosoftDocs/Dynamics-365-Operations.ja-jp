@@ -2371,7 +2371,7 @@
                     - name: ロシアの前貸し保有者の概要
                       href: localizations/rus-advance-holders.md
                     - name: 前貸し保有者の作成
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: 前貸し保有者に関する日常業務
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: 予算管理のある前貸しレポート
@@ -3346,7 +3346,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Service (RCS) - グローバリゼーション機能
+                    - name: Regulatory Configuration Services (RCS) - グローバリゼーション機能
                       href: localizations/rcs-globalization-feature.md
                     - name: Finance に電子申告コンフィギュレーションをダウンロードする
                       items:
