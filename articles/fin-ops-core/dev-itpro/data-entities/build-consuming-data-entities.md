@@ -3,7 +3,7 @@ title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/27/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2642832d12801ab4e10ffc6d68f3817f4b184384
-ms.sourcegitcommit: 2ea5ff784500d5be9203e9a1560eabd4fea46f4e
+ms.openlocfilehash: 06a60eb03a8b74040d38503bd9fe434a1a61710e
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172294"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403275"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -40,7 +40,7 @@ ms.locfileid: "3172294"
 このチュートリアルでは、baseUrl はインスタンスのベース URL を指します。
 
 - クラウド環境では、ベース URL は Microsoft Dynamics Lifecycle Services (LCS) から取得されます。
-- [ローカル仮想マシン (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
+- [ローカル仮想マシン (VM)](../dev-tools/access-instances.md#vm-that-is-running-locally) の、基準 URL は `https://usnconeboxax1aos.cloud.onebox.dynamics.com` です。
 - FMLab サンプル コードを C: にダウンロードします。 詳細については、[FMLab サンプル コード](https://github.com/Microsoft/FMLab) を参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
@@ -89,7 +89,7 @@ FMLabCustomerEntity
 1. **FMLabCustomerEntity** という名前の新しいエンティティを作成します。 プロジェクトを右クリックし、**追加** &gt; **新しい項目** をクリックします。 **新しい項目の追加** ダイアログ ボックスが開きます。
 2. **データ エンティティ** を選択し、**名前** プロパティを **FMLabCustomerEntity** に設定します。
 3. **追加** をクリックします。
-4. **データ エンティティ** ウィザードで、作成しているデータ エンティティのプロパティを指定します。 次のスクリーン ショットに表示される値を使用します。
+4. **データ エンティティ** ウィザードで、作成しているデータ エンティティのプロパティを指定します。 次の図に表示される値を使用します。
 
     > [!NOTE]
     > エンティティの名前に '\_' や数字 (0...9) を使用することはできません。 これらの文字を使用すると、後でマッピング エラーが発生することがあります。
@@ -97,7 +97,7 @@ FMLabCustomerEntity
     [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
 5. **次へ** をクリックします。 各プロパティ機能の詳細については、 [データ エンティティ の概要](data-entities.md) 内の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
-6. 次のスクリーン ショットに示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため**画像**および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
+6. 次の図に示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため**画像**および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
 7. データ エンティティのフィールドの名前を、パブリック データ コントラクト標準を反映するように変更するか、**ラベルをフィールド名に変換** をクリックして既存のラベルから名前を生成します。
 8. **DriverLicense** フィールドの行で、**必須**チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。
 
@@ -138,7 +138,7 @@ FMLabCustomerEntity
 ### <a name="visually-validate-and-customize-an-entity"></a>目視による検証とエンティティのカスタマイズ
 
 1. ソリューション エクスプローラーで、**FMLabCustomerEntity** ノードを右クリックしてから**開く**をクリックします。 エンティティのデザイナーが中央のウィンドウに開きます。
-2. **FMLabCustomerEntity** エンティティのプロパティを検証します。 ソリューション エクスプ ローラーでエンティティを選択し、**プロパティ** ウィンドウの値と次のスクリーンショットを比較します。
+2. **FMLabCustomerEntity** エンティティのプロパティを検証します。 ソリューション エクスプ ローラーでエンティティを選択し、**プロパティ** ウィンドウの値と次の図を比較します。
 3. **ラベル** プロパティを **フリート ラボ顧客** に設定します。
 
     [![FMLabCustomerEntity - プロパティ](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
@@ -148,7 +148,7 @@ FMLabCustomerEntity
 
     [![FMLabCustomerEntity - プロパティ 2](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
 
-6. **FMLabCustomerEntity** デザイナーで、**キー** &gt; **EntityKey** とクリックしてから**フィールド** ノードを展開します。 フィールドの一覧が次のスクリーン ショットと一致していることを確認します。
+6. **FMLabCustomerEntity** デザイナーで、**キー** &gt; **EntityKey** とクリックしてから**フィールド** ノードを展開します。 フィールドの一覧が次の図と一致していることを確認します。
 
     [![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
 
@@ -156,7 +156,7 @@ FMLabCustomerEntity
 
     [![fMLabCustomerStaging - プロパティ](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
 
-8. **FMLabCustomerStaging** &gt; **フィールド**とクリックします。 次のスクリーン ショットでは、ステージング テーブルの標準フィールドが選択されています。 すべてのエンティティ ステージング テーブルにはこれらの標準的なフィールドがあります。 スクリーンショットには、このデー タエンティティに属するデータ フィールドも表示されます。
+8. **FMLabCustomerStaging** &gt; **フィールド**とクリックします。 次の図では、ステージング テーブルの標準フィールドが選択されています。 すべてのエンティティ ステージング テーブルにはこれらの標準的なフィールドがあります。 図には、このデー タエンティティに属するデータ フィールドも表示されます。
 
     [![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
 
@@ -221,7 +221,7 @@ FMLabCustomerEntity
 
 2. **ユーザー ダッシュ ボード** &gt; **データ管理**をクリックします。
 3. **データ管理**ワークスペースで、**インポート** タイルをクリックします。
-4. **インポート** ページで、次のスクリーン ショットに表示されるインポートの詳細を入力します。
+4. **インポート** ページで、次の図に表示されるインポートの詳細を入力します。
 
     ![新しいレコードのインポート](./media/import-new-record.png)
 
@@ -284,7 +284,7 @@ FMLabCustomerEntity
     | フィールド         | **CustomerDriverLicense** これは、**FMRentalEntity** の外部キーフィールドです。 |
     | 関連フィールド | **DriverLicense** これは、**FMCustomerEntity** の固有のキーです。              |
 
-    次のスクリーンショットは、Visual Studio での関係を示しています。
+    Visual Studio でのリレーションを次の図に示します。
 
     [![FMRentalEntity - ソリューション エクスプローラー](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
 
@@ -309,7 +309,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
     > [!NOTE]
     > 最初にアクセスする場合、メタデータの表示に数分かかることがあります。 XML で、OData エンティティに関連付けられているすべてのプロパティおよびナビゲーション プロパティを表示できます。
 
-2. ブラウザーで **FleetRental** を検索します。 次のスクリーン ショットは、**FleetRental** エンティティのメタデータと、新しいリレーションシップ **NavigationProperty** を示しています。
+2. ブラウザーで **FleetRental** を検索します。 次の図は、**FleetRental** エンティティのメタデータと、新しいリレーションシップ **NavigationProperty** を示しています。
 
     [![FleetRental メタデータ](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 

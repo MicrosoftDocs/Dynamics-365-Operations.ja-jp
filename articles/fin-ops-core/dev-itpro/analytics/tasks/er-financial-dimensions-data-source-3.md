@@ -3,7 +3,7 @@ title: ER 財務分析コードをデータ ソースとして使用する (第 
 description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142527"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406500"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -95,6 +95,7 @@ ms.locfileid: "3142527"
 59. [属性を加える] をクリックします。
 60. [名称] フィールドに説明を入力します。
 61. [OK] をクリックします。
+![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>レポートエレメントをデータソースにマッピングする
 1. [マッピング] タブをクリックします。
@@ -143,4 +144,5 @@ ms.locfileid: "3142527"
 44. [バインド] をクリックします。
 45. [保存] をクリックします。
 46. ページを閉じます。
+![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9965d72474e5fa39fbc0a43753f7645df6881a5
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 22ffe71ccb890d35f2b0d5ef2bc3767b1e700be9
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275700"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413010"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -48,7 +48,7 @@ ms.locfileid: "3275700"
 - 詳細 CW 統合 [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1)、[10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2)、[10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3)、[10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4)、[10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5)、[10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6)、[10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - 詳細については、[倉庫管理による CW 製品の処理](../warehousing/catch-weight-processing.md) および [CW 製品の改善](https://www.microsoft.com/videoplayer/embed/RE4jzx8) も参照してください。
 - [資産管理ライフサイクルとの固定資産統合](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle) - 詳細については、[固定資産との資産管理の統合](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md) を参照してください
 - [柔軟な倉庫レベル分析コードの引当](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - 詳細については、[柔軟な倉庫レベル分析コードの引当ポリシー](../warehousing/flexible-warehouse-level-dimension-reservation.md) を参照してください。
-- [強化されたジョブ カード](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) - 詳細については、[モバイル ジョブ デバイスでの進行状況の報告](../production-control/tasks/report-progress-mobile-job-device.md) と [完了としてからジョブ カード デバイスからの、ライセンス プレートで管理された場所へ報告](../production-control/report-finished-job-device.md) を参照してください
+- [ジョブ カード デバイスの改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) - 詳細については、[モバイル ジョブ デバイスでの進行状況の報告](../production-control/tasks/report-progress-mobile-job-device.md) と [ジョブ カード デバイスから完了として報告](../production-control/report-finished-job-device.md) を参照してください
 - [入庫の品質チェック](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [在庫エイジング レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [在庫金額レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
@@ -67,7 +67,7 @@ ms.locfileid: "3275700"
 - [資産管理におけるワークオーダーのビジュアルスケジューリング](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management) - 詳細については、[ガントチャートを使用した計画済作業オーダーの処理](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt) を参照してください
 - [倉庫のスロッティング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [ウェーブ ラベル印刷拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
-- [ウェーブ ステップ コード](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
+- [ウェーブ ステップのコード ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code) - 詳細については、[ウェーブ ステップ コード](../warehousing/wave-step-codes.md) を参照してください
 
 ## <a name="additional-resources"></a>追加リソース
 

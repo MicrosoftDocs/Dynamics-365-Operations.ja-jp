@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: f3939c82b394f9ffe3e7894b07a1cca08d8d9b20
-ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
+ms.openlocfilehash: eacc53d8dc70ae7491406c14074e36a69e5d2ece
+ms.sourcegitcommit: 80465a66511d31c180e8a0c15fe44a7642e9ec9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324507"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3423459"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -35,8 +35,8 @@ ms.locfileid: "3324507"
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
-- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
-- Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
+- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)。
+- Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)。
 - Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
@@ -175,6 +175,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     [OPENTIME] [int] NOT NULL DEFAULT ((0)),
     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
+    [REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,
     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
     (
         [RECID] ASC
@@ -185,6 +186,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
     GO
+
+> [!NOTE]
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 

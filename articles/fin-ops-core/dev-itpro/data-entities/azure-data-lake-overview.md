@@ -3,7 +3,7 @@ title: Azure Data Lake の概要
 description: このトピックでは、Microsoft Azure Data Lake の概要を説明します。 Data Lake は、Azure cloud で大きなデータの分析および人工知能 (AI) を利用できるように設計された技術です。
 author: MilindaV2
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 7c0e0839b3d52490ac8941c48105441cd9f07d4b
-ms.sourcegitcommit: 88347d0f0ac862a77f269a05f1801d30dc93586e
+ms.openlocfilehash: cb128ed79e3188a86b303d38f5733209e34a8967
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3260243"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407513"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="what-is-azure-data-lake"></a>Azure Data Lake の概要
 

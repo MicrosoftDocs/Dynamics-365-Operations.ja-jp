@@ -3,7 +3,7 @@ title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5024ae075e967a7e7f9a71bdb00d8e4687b85e7
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: 10e34810acc77250712348b60d86ac7e644b28bd
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287838"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416567"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -279,6 +279,12 @@ SysEmail フレームワークを介して有効になっている電子メー�
 ## <a name="other-notes"></a>その他のメモ
 
 システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。 たとえば、標準の [Exchange Online 送受信制限](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)が適用されます。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+### <a name="where-do-workflow-email-templates-come-from"></a>ワークフロー電子メール テンプレートはどこから取得されますか。
+
+ワークフローがシステムレベル (会社固有ではない) または組織レベル (会社固有) のワークフローのいずれであるかによって、電子メール テンプレートは、システム電子メール テンプレートまたは組織の電子メール テンプレートから取得されます。
 
 ## <a name="additional-resources"></a>追加リソース
 

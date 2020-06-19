@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Management の新機能および変更された
 description: このトピックでは、Dynamics 365 Supply Chain Management の各リリースにおける新しい機能と変更された機能について説明するトピックを示します。
 author: kamaybac
 manager: tfehr
-ms.date: 03/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 276924e67e0507847cfb4ca9cf0b077c36c084b5
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: ad8f01a27fde8525c09807a28ed980c335eb8d25
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261237"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417418"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の新機能および変更された機能 
 
@@ -36,7 +36,6 @@ Dynamics 365 Supply Chain Management の各リリースでの新機能や変更�
 |---|---|---|---|
 | 10.0.11 | 10.0.464 | 2020 年 6 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.11 の新機能と変更点](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | 2020 年 5 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.10 の新機能と変更点](whats-new-scm-10-0-10.md) |
-| 10.0.9 | 10.0.383 | 2020 年 4 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.9 の新機能と変更点](whats-new-scm-10-0-9.md) |
 
 ## <a name="releases-before-march-2020"></a>2020 年 3 月より前のリリース
 
@@ -44,6 +43,7 @@ Dynamics 365 Supply Chain Management の各リリースでの新機能や変更�
 
 | リリース | バージョン | ビルド番号 | 使用可能性 | 詳細情報 |
 |---|---|---|---|---|
+| Dynamics 365 Supply Chain Management | 10.0.9  | 10.0.383   | 2020 年 4 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.9 の新機能と変更点](whats-new-scm-10-0-9.md) |
 | Dynamics 365 Supply Chain Management | 10.0.8  | 10.0.319   | 2020 年 2 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.8 の新機能と変更点](whats-new-scm-10-0-8.md) |
 | Dynamics 365 Supply Chain Management | 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.7 の新機能と変更点](whats-new-scm-10-0-7.md) |
 | Dynamics 365 Supply Chain Management | 10.0.6 |   10.0.234   | 2019 年 11 月  | [Dynamics 365 Supply Chain Management バージョン 10.0.6 の新機能と変更点](whats-new-scm-10-0-6.md) |

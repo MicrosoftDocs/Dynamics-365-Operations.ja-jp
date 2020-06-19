@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248739"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410153"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool チュートリアルの使用
+# <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool のチュートリアル
 
 [!include [banner](../includes/banner.md)]
 
@@ -454,7 +454,7 @@ Excel ファイルを使用して、同時に多数のテスト ケースを再�
 - 顧客名
 - 顧客の住所
 
-顧客 ID は、*ATCUS\<番号\>* の形式で、\<番号\>は **000000001** と **999999999** の間の値にします。
+顧客 ID は、*ATCUS\<number\>* の形式で、\<number\>は **000000001** と **999999999** の間の値にします。
 
 次の例は、1 つのパラメーター、**開始**を使用して、使用される最初の番号を定義します。 2 番目のパラメーター **nr** を使用して、作成する必要がある顧客数を定義します。 繰り返しごとに、Excel パラメーター ファイル内のパラメーターが UpdateCustomer 関数を使用して変更されます。 次に、RSAT コマンドラインは RunTestCase 関数内で呼び出されます。
 

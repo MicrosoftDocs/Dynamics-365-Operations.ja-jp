@@ -3,7 +3,7 @@ title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00f0eb5243e7a5d5a4606df0854bf8c148dbbc82
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: af963b3ab48e0b96db1589e773ed21054bc77c53
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329841"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412271"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -166,6 +166,13 @@ Finance and Operations アプリのタスク レコーダーは、高い応答�
 タイトルとメモは、ユーザー指定のテキストをタスク ガイドのステップに関連付けるための場所を提供します。
 - **タイトル** – このタイトルにより、タスク ガイドのこのステップのステップの指示の上に表示されるテキストを指定できます。 タイトルは、ステップの指示で示されるアクションを完了する前にユーザーに読んでほしいテキストを配置するのに適しています。
 - **注記** – 注記を使用して、タスク ガイドでこのステップの展開可能なポップ アップ セクションに表示されるテキストを指定できます。 注記は、オプションの参考資料またはユーザーにとって有益なその他の情報を配置するのに適していますが、ステップの指示で示されるアクションを完了するために読む必要はありません。
+
+### <a name="change-recorded-values"></a>記録された値の変更
+
+バージョン 10.0.12 では、基本的な入力コントロール (たとえば、単純なテキスト、数値、日付、および 候補リストの各フィールド) に記録される値を調整して、手順を再記録することはできません。 検索コントロールと参照グループは現在サポートされていないことに注意してください。  
+
+> [!IMPORTANT]
+> バージョン 10.0.12 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
 
 ### <a name="hide-from-task-guide"></a>タスク ガイドから非表示にします。
 
@@ -373,7 +380,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 新しい (Chromium ベースの) Microsoft Edge ブラウザーと Google Chrome の両方で機能する **プレリリース** の Chromium ブラウザー拡張機能を使用することにより、タスク レコーダーは、ユーザーが業務プロセスを記録するときにブラウザーのスクリーンショットを撮影することができます。 ユーザーが記録を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成できます。 この機能を有効にするには、次の手順に従って、プレリリースの Chromium 拡張機能をインストールして、記録中にタスク レコーダーがスクリーンショットを撮影できるようにします。
 
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
-2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<ホスト名\> を環境のベース URL に置き換えます。
+2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。  \<hostname\> を環境のベース URL に置き換えます。
 
     ```xpp
     ...

@@ -3,7 +3,7 @@ title: POS でシリアル品目を処理する
 description: このトピックでは、販売時点管理（POS）アプリケーションでシリアル品目を管理する方法について説明します。
 author: boycezhu
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1e0d6aa7cd5576578378e70c6ee808833314aff3
-ms.sourcegitcommit: 919620b4aca425e6a1248ee12f50a622d2531e58
+ms.openlocfilehash: eedb64ae04345cb94bdd8cc68de833cfcfd40119
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290773"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407501"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>POS でシリアル品目を処理する
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 多くの小売業者は、シリアル管理を必要とする製品を販売しています。 このような品目は、*シリアル品目* と呼ばれます。 一部の小売業者は、品目の追跡をする目的でシリアル番号を管理してます。 その他の小売業者は、販売の過程におけるサービスと保証の目的でにシリアル番号を読み取る運用をしています。 このトピックでは、Microsoft Dynamics 365 Commerce の販売時点管理（POS）アプリケーションでシリアル品目を管理する方法について説明します。
 

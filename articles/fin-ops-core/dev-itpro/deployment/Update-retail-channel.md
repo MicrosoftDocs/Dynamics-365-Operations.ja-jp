@@ -1,9 +1,9 @@
 ---
-title: Retail Cloud Scale Unit への更新プログラムと拡張機能の適用
+title: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 7a48b5296318ee957fb7a9a398754cb803cda48b
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 712efb33ea2a96271cc1c0956480cda553e13807
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254737"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426384"
 ---
-# <a name="apply-updates-and-extensions-to-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit への更新プログラムと拡張機能の適用
+# <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 
 [!include[banner](../includes/banner.md)]
 

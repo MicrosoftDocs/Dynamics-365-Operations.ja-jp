@@ -3,7 +3,7 @@ title: ストア内トポロジを選択します。
 description: このトピックでは、様々な Dynamics 365 Commerce の実店舗構成図を提供します。
 author: rassadi
 manager: AnnBe
-ms.date: 05/13/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics-365-retail
@@ -16,12 +16,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 886f48a7c03154d886940eb849ef0d522a3799c6
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 0200e9daa4e4922d84c5aaf8e41faf7fafce7224
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057652"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426330"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "3057652"
 <a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![右側の店舗の構成図を選択する](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## <a name="supported-capabilities-when-connectivity-is-lost"></a>接続が失われたときにサポートしている機能
-| 操作 | Commerce Scale Unit への接続がされていないとき<br>MPOS オフライン モード | 本部への接続がされていないとき<br>(RSSUを使用) |
+| 操作 | Commerce Scale Unit への接続がされていないとき<br>MPOS オフライン モード | 本部への接続がされていないとき<br>(Commerce Scale Unit (自己ホスト)) |
 | --- | :-: | :-: |
 | クロス ターミナル シフト (ビュー、中断、再開、切断など) | | ✔ | 
 | クロス ターミナル トランザクション (ビュー、中断、再開など)  | | ✔ |
@@ -53,10 +53,10 @@ POSが本部との接続を失った場合にサポートしている宗さん�
 | 最新のPOS クライアント ブローカー | 最新のPOSのネイティブ バイナリをホストしているCOM Surrogate | オフラインモードでの操作の実行をサポートする Commerce Runtime を提供します。また、最新のPOSと本部とデータを同期するにはAsync Clientライブラリも同様に必要となります。 | 
 | チャンネル データベース | SQL データベース | レジのデータを提供している特定のチャンネル データベース インスタンスを登録します。
 
-### <a name="commerce-scale-unit"></a>コマース スケール ユニット
+### <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 | インストールされたコンポーネント | コンポーネント タイプ | 摘要 |
 | --- | --- | --- |
-| コマース スケール ユニット | IIS Web サービス | 1 つ以上の店舗で使用する Commerce Scale Unit のインスタンスの単位を計測します。 |
+| Commerce Scale Unit (自己ホスト) | IIS Web サービス | 1 つ以上の店舗で使用する Commerce Scale Unit (自己ホスト) のインスタンスの単位を計測します。 |
 | チャンネル データベース | SQL データベース | 1つ以上の店舗で使用するデータを提供する、特定のチャンネルデータベースインスタンスの店舗単位を計測します。 |
 | Async Client サービス | Windows サービス | マスター レコード データを本部から店舗へ、取引データを店舗から本部へと同期するためのコンポーネント |
 | クラウド POS | IIS Web サービス | Web ブラウザーを使用して POS 機能をホストするクラウド POS アプリケーション。 |
@@ -68,9 +68,9 @@ MPOS オフラインモードの詳細については、以下を参照してく
 - [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)
 - [セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
 
-### <a name="commerce-scale-unit"></a>コマース スケール ユニット
-Commerce Scale Unit は、実店舗などお客様の環境に配置することが可能な、バックオフィスや本部 (HQ) への通信が切断された場合でも継続して業務を行うことをサポートするコンポーネントです。 
+### <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
+Commerce Scale Unit (自己ホスト) は、実店舗などお客様の環境に配置することが可能な、バックオフィスや本部 (HQ) への通信が切断された場合でも継続して業務を行うことをサポートするコンポーネントです。 
 
 詳細については、以下を参照してください。
-- [コマース スケール ユニットのコンフィギュレーションとインストール](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
-- [コマース スケール ユニット](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [Commerce Scale Unit (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)

@@ -3,7 +3,7 @@ title: 製品推奨事項の概要
 description: このトピックは、製品推奨事項に関する一般情報を提供します。 製品推奨事項により、顧客は必要な製品や元々購入する予定ではなかった製品も簡単かつ迅速に見つけることができます。
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154229"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404351"
 ---
 # <a name="product-recommendations-overview"></a>製品推奨事項の概要
 
@@ -40,7 +40,7 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 
 製品推奨事項サービスは、次の方法で人為的知能と機械学習 (AI-ML) テクノロジを利用します。
 
-- 推奨サービスが必要とする形式のデータは、コマース運用データベースから抽出され、Azure Data Lake Storage (ADLS) またはエンティティ ストアに送信されます。
+- 推奨サービスが必要とする形式のデータは、コマース運用データベースから抽出され、Azure Data Lake Storage かエンティティ ストアに送信されます。
 - 推奨サービスは保存済データを使用して、**人気製品**、**よく一緒に購入される製品**、**新規**、**ベストセラー**、および**トレンド** リストに対する推奨モデルをトレーニングします。
 
 ## <a name="scenarios"></a>シナリオ
@@ -67,11 +67,11 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+[Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+[カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
 [カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
 

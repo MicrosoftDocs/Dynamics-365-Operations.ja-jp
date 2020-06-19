@@ -3,7 +3,7 @@ title: 電子申告のフレームワーク API の変更点
 description: このトピックでは、電子申告（ER）フレームワークのアプリケーション プログラミング インターフェース（API）が、Microsoft Dynamics 365 Finance  バージョン10.0.11でどのように変更されたかについて説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 50156e3a23f5159023795d45776682fb706f7ffc
-ms.sourcegitcommit: 88347d0f0ac862a77f269a05f1801d30dc93586e
+ms.openlocfilehash: b958b6f5544b4e88e3487d97fe395ae17abf6a62
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3260241"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411450"
 ---
 # <a name="electronic-reporting-framework-api-changes"></a>電子申告のフレームワーク API の変更点
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、電子申告（ER）フレームワークのアプリケーション プログラミング インターフェース（API）が、Microsoft Dynamics 365 Finance  バージョン10.0.11でどのように変更されたかについて説明します。
 
@@ -48,7 +46,7 @@ ER フレームワークの [初期](er-apis-app73.md#code-to-run-a-format-mappi
 
 ER フレームワークの新しい API を使用して ER 形式のマッピングを呼び出し、特定の統合ポイントを含むように設定されたモデル マッピングを強制的に使用することができます。 次の例では、この新しい API の使用方法を解説します。
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 
@@ -86,7 +84,7 @@ ER フレームワークの新しい API により、構成された統合ポイ
 
 次の例では、この新しい API の使用方法を解説します。
 
-```
+```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 using Microsoft.Dynamics365.LocalizationFramework.XppSupportLayer;
 

@@ -3,7 +3,7 @@ title: ファイルのアップロード コントロール
 description: このトピックでは、ファイル アップロード コントロールについて説明します。 このコントロールを使用して、ファイルをアップロードできます。
 author: aneesmsft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 450ad58cf9ea6bd6c1f7f1b1fad0cb1bf108782d
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 08417f0c31457ad1a3cf8de6819f278677f66969
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329890"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412325"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
 [!include [banner](../includes/banner.md)]
+
 
 このトピックでは、ファイル アップロード コントロールについて説明します。 このコントロールを使用して、ファイルをアップロードできます。
 
@@ -55,10 +56,10 @@ ms.locfileid: "3329890"
 **OnBrowseButtonClicked**、**OnUploadAttemptStarted**、および**OnUploadCompleted** オーバーライドを使用すると、ファイル アップロード プロセスの様々なステージにフックすることができます。 また、カスタム ファイル アップロード戦略を作成して、**FileUpload Strategy Class** プロパティを使用してファイル アップロード コントロールと関連付けることができます。
 
 ## <a name="design-classes"></a>デザイン クラス
-開発者がファイル アップロード コントロールのために使用できるクラスには、主に 2 種類あります。
+開発者がファイル アップロード コントロールのために使用できる基底クラスは 2 つあります。
 
--   **戦略クラスをアップロード** – このクラスにより、開発者はユーザーがアップロードできるファイルの種類およびファイルの最大サイズなどのアップロードされたファイルに適用される必要があるさまざまなパラメータを制御できます。 また、これにより開発者はアップロード済みのファイルが保存される場所および方法を決定します。 すべてのアップロードは抽象 **FileUploadStrategyBase** クラスから戦略クラスへ継承する必要があります。
--   **結果クラスをアップロード** – このクラスにより、開発者は、名前、コンテンツ タイプ、アップロード状態など、ユーザーがアップロードしたファイルの詳細にアクセスできます。 また、これにより開発者は対応するファイルを開いたり削除したりします。 すべてのアップロードは抽象 **FileUploadResultBase** クラスから結果クラスへ継承する必要があります。
+-   **戦略クラスをアップロード** – この基底クラスにより、開発者はユーザーがアップロードできるファイルの種類およびファイルの最大サイズなどのアップロードされたファイルに適用される必要があるさまざまなパラメータを制御できます。 また、これにより開発者はアップロード済みのファイルが保存される場所および方法を決定します。 アップロード戦略に使用されるすべての派生クラスは、抽象 **FileUploadStrategyBase** クラスから継承する必要があります。
+-   **結果クラスをアップロード** – この基底クラスにより、開発者は、名前、コンテンツ タイプ、アップロード状態など、ユーザーがアップロードしたファイルの詳細にアクセスできます。 また、これにより開発者は対応するファイルを開いたり削除したりします。 アップロード結果の特殊化に使用されるすべての派生クラスは、抽象 **FileUploadResultBase** クラスから継承する必要があります。
 
 このフレームワークは、**FileUploadTemporaryStorageStrategy** という名前のデフォルトのアップロード戦略クラスと **FileUploadTemporaryStorageResult** というデフォルトのアップロード結果クラスを提供します。 このアップロード結果クラスは、アップロードされたファイルを一時的な BLOB ストレージに格納し、ダウンロード URL を提供します。 開発者は、独自のカスタム アップロード戦略を実装し、必要に応じて結果クラスをアップロードすることもできます。 アップロード方法については、**FileUploadStrategyBase** クラスからの 2 つの抽象メソッドは、実装される必要があります: **uploadFile** および **getResultClassName**。 **uploadFile** メソッドは、ファイルが保管される場所および方法を処理します。 **getResultClassName** メソッドは、この方法で使用されるアップロード結果クラスを取得します。 **FileUploadResultBase** クラスには、ファイル名、アップロード ステータス、ファイルのコンテンツタイプ、およびログ メッセージのフィールドがあります。 このクラスは、必要に応じて拡張できます。 すべての新しいプロパティはシリアル化および逆シリアル化することができます。 **openResult** メソッドはストリームとしてファイルを開き、**deleteResult** メソッドは対応するデータ ストレージからファイルを削除します。
 
@@ -67,6 +68,35 @@ ms.locfileid: "3329890"
 
 [![ファイル アップロード シーケンス ダイアグラム](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
+## <a name="scanning-uploaded-files-for-viruses-and-malicious-code"></a>アップロードされたファイルでのウイルスおよび悪意のあるコードのスキャン
+ファイルをシステムにアップロードする前に、ウイルスや悪質なコードをスキャンすることをお勧めします。 Finance and Operations アプリにはこの機能が用意されていませんが、バージョン 10.0.12 で拡張ポイントが追加されたため、選択したファイル スキャン ソフトウェアをファイル アップロード プロセスに統合できるようになりました。 添付ファイルをスキャンできるように、類似した拡張ポイントが追加されています。 詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。 
 
+> [!IMPORTANT]
+> バージョン 10.0.12 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
 
+特に、**FileUploadResultBase** クラスは **delegateScanStream()** デリゲートを公開します。 このデリゲートは、**アップロード戦略クラス**が特殊化されているファイル アップロード シナリオに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、アップロード プロセスは失敗します。    
 
+### <a name="implementation-details"></a>実装詳細
+次の **ScanDocuments** クラスの例は、ハンドラーの定型コードを示しています。 デリゲートのハンドラーを実装する方法の一般情報については、[要求または応答シナリオの EventHandlerResult クラス](../dev-tools/event-handler-result-class.md)を参照してください。
+
+    public final class ScanDocuments
+    {
+
+        [SubscribesTo(classStr(FileUploadResultBase), staticDelegateStr(FileUploadResultBase, delegateScanStream))]
+        public static void FileUploadResultBase_delegateScanStream(System.IO.Stream _stream, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanStream(_stream))
+            {
+                _validationResult.reject();           
+            }
+        }
+
+        private static boolean scanStream(System.IO.Stream _stream)
+        {
+            /* 
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+    }

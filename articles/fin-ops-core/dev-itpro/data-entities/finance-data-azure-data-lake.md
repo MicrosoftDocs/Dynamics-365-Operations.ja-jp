@@ -3,7 +3,7 @@ title: Azure Data Lake の Finance and Operations アプリ データ
 description: このトピックでは、Data Lakeを実装した Finance and Operations アプリ環境の設定方法を説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/30/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: ee5ad6d1ed6820f9fa30ef7cf3f451ce3490eed6
-ms.sourcegitcommit: 88347d0f0ac862a77f269a05f1801d30dc93586e
+ms.openlocfilehash: 6c4a63e7ca73dcc771f8ed0f2d9e76b840dc7260
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3260242"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407464"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 **Azure Data Lake にエクスポート** 機能を使用すると、Finance and Operations アプリ環境で Data Lake を使用するように構成することができます。 構成が完了すると、Data Lake には Finance and Operations アプリのテーブルとエンティティが反映されます。
 

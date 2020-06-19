@@ -3,7 +3,7 @@ title: Dynamics Service Engineering チームへのサービス要求の送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 1d219b2badaaadcd6f56068dc6b98abce1318ca6
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 24029720de50b26a30a2f9c778dc6e5555dfff94
+ms.sourcegitcommit: 3fa1e8583003a90ba486f757c3826b139e1b3f73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117401"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421569"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -94,6 +94,10 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 
       - 実稼動環境でのメンテナンス モードをオンにします。 詳細については、[メンテナンス モード](../sysadmin/maintenance-mode.md) を参照してください。
       - 実稼動環境で明示的なインターネット プロトコル (IP) ホワイト リスト ルールを定義します。
+        
+        > [!NOTE]
+        > セルフサービス環境では、明示的な空白記号のサポートは推奨されません。 詳細については、[削除済みまたは非推奨のプラットフォーム機能](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments)を参照してください。
+        
       - "Power BI が有効になっていません" メッセージを受け取った場合に、サンドボックス環境、標準受け入れテスト環境、または実稼働環境で Microsoft Power BI Embedded をアクティブ化することを要求します。 システム管理者に問い合わせてください。
 
 

@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce プレビュー環境のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 Commerce のプレビュー環境をプロビジョニングする方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254751"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426468"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce プレビュー環境のプロビジョニング
 
@@ -39,7 +39,7 @@ ms.locfileid: "3254751"
 
 ## <a name="overview"></a>概要
 
-Commerce プレビュー環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。 Commerce scale unit (CSU) には、後で E コマースをプロビジョニングするために使用する必要がある特定のパラメーターもあります。 このトピックの手順では、プロビジョニングを完了する必要があるすべての手順と、使用する必要があるパラメーターについて説明します。
+Commerce プレビュー環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。 この環境と Commerce Scale Unit (CSU) には、後で E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。 このトピックの手順では、プロビジョニングを完了する必要があるすべての手順と、使用する必要があるパラメーターについて説明します。
 
 Commerce プレビュー環境のプロビジョニングが正常に完了した後、いくつかのプロビジョニング後の手順を完了して準備する必要があります。 一部の手順は、システムのどの側面を評価するかに応じて使用するオプションです。 オプションの手順は、後からいつでも完了できます。
 
@@ -193,7 +193,7 @@ LCS プロジェクトに Azure コネクタを追加するには、次の手順
 
 1. 続行する前に、環境の状態が**配置済み**になっていることを確認してください。
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Commerce Scale Unit (CSU) を初期化する
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Commerce Scale Unit (CSU) を初期化する (クラウド)
 
 CSU を初期化するためには、次の手順に従います。
 
@@ -215,7 +215,7 @@ E コマースを初期化するためには、次の手順に従います。
 
 1. **E コマース** タブで、プレビューの同意を確認し、**設定**を選択します。
 1. **E コマース テナント名**フィールドに名前を入力します。 ただし、この名前は E コマース インスタンスを指す URL の一部に表示されることに注意してください。
-1. **Commerce scale unit の名前**フィールドで、リストから CSU を選択します。 (リストには 1 つのオプションのみが必要です。)
+1. **Commerce Scale Unit の名前** フィールドで、リストから CSU を選択します。 (リストには 1 つのオプションのみが必要です。)
 
     **E コマースの地域**フィールドは自動的に設定され、値を変更することはできません。
 
@@ -251,7 +251,7 @@ Commerce プレビュー環境のプロビジョニングと構成のプロセ�
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (クラウド)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 

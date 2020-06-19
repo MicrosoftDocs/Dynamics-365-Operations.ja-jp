@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158b641a1e3aaf41288d273fab2f0e391fb2b154
-ms.sourcegitcommit: c5ef9a1d1853095ab537389b9a8e2d2adb39ed8c
+ms.openlocfilehash: bd4a7b81f03641e190cd49e99e846d5a9b818e41
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "3033080"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418555"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 
@@ -39,15 +39,7 @@ RSAT がテスト ケースの Excel パラメーター ファイルを生成す
 
 ## <a name="validate-expected-values-using-operators"></a>演算子を使用して予測値を検証する
 
-検証ステップでは、演算子を使用することもできます。 この機能を使用するには、Regression Suite Automation Tool のインストール フォルダーの **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** という名前の構成ファイルを編集する必要があります。 ファイルを編集し、**AddOperatorFieldsToExcelValidation** の値を **true** に変更します。
-
-```Xml
-<add key=" AddOperatorFieldsToExcelValidation" value="true" />
-```
-
-Regression Suite Automation Tool の以前のバージョンでは、コントロール値が予測値に等しいかどうかのみが検証可能でした。 この新しい機能を使用すると、変数が指定された値と等しくない、指定された値より小さい、または指定された値より大きいことを検証できます。
-
-このツールの古いバージョンを使用してきた場合、この機能を活用するためには、新しい Excel パラメーター ファイルを再生成する必要があります。 Excel ファイルに、次の図に示すような新しい **オペレーター** フィールドが表示されます。
+検証ステップで演算子を使用して、指定された値より変数が等しい、より小さい、または大きいことを検証することもできます。 この機能を使用するには、**設定** タブを開いて、**オプション** タブを選択します。**検証に演算子を使用する** という設定をオンにします。 このオプションは、RSAT バージョン 1.210 で使用できます。 以前のバージョンのツールを使用していた場合は、この機能を利用するために新しい Excel パラメーター ファイルを再生成する必要があります。 Excel ファイルに、次の図に示すような新しい **オペレーター** フィールドが表示されます。
 
 ![以前のバージョンの Excel での検証](media/validate-test-case-example.png)
 

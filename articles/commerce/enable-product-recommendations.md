@@ -3,7 +3,7 @@ title: 製品推奨事項の有効化
 description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為的知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259797"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404212"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -34,11 +34,11 @@ ms.locfileid: "3259797"
 
 ## <a name="recommendations-pre-check"></a>推奨事項のプレチェック
 
-有効にする前に、製品の推奨事項は、Azure Data Lake Storage (ADLS) を使用するようにストレージを移行した Commerce の顧客に対してのみサポートされていることに注意してください。 
+有効にする前に、製品の推奨事項は、Azure Data Lake Storage を使用するようにストレージを移行した Commerce の顧客に対してのみサポートされていることに注意してください。 
 
 推奨事項を有効にするには、次のコンフィギュレーションをバック オフィスで有効にする必要があります。
 
-1. ADLS が購入され、環境内で正常に検証されていることを確認します。 詳細については、[ADLS が購入され、環境内で正常に検証されていることを確認する](enable-ADLS-environment.md) を参照してください。
+1. Azure Data Lake Storage が購入され、環境内で正常に検証されていることを確認します。 詳細については、[Azure Data Lake Storage が購入され、環境内で正常に検証されていることを確認する](enable-ADLS-environment.md) を参照してください。
 2. エンティティ格納の更新が自動化されていることを確認します。 詳細については、[エンティティ格納の更新が自動化されていることを確認する](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md) を参照してください。
 3. Azure AD ID コンフィギュレーションに推奨事項のエントリが含まれていることを確認します。 このアクションを実行する方法の詳細については、以下を参照してください。
 
@@ -92,11 +92,11 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 
 [製品推奨事項の概要](product-recommendations.md)
 
-[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+[Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
 
 [POS での製品推奨事項の追加](product.md)
 

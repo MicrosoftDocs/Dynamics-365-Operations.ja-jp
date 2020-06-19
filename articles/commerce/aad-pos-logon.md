@@ -3,24 +3,24 @@ title: POS サインインの Azure Active Directory 認証を有効にする
 description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) のサインイン エクスペリエンスを構成して、Azure Active Directory 認証を使用できるようにする方法について説明します。
 author: boycezhu
 manager: annbe
-ms.date: 03/08/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: dfc49585434383385b6b993893d93b95ef888384
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248943"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410038"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>POS サインインの Azure Active Directory 認証を有効にする
 [!include [banner](includes/banner.md)]
@@ -47,6 +47,8 @@ POS クライアントにこの設定を適用するには、次の手順に従�
 
 > [!NOTE]
 > Azure AD 認証にはインターネット接続が必要です。 POS がオフライン モードの場合は機能しません。
+> 
+> 現時点では、**マネージャー優先**機能は、 Azure AD の認証方法としてサポートされていません。 Azure AD が POS サインインの認証方法として構成されている場合でも、オペレーター ID とパスワードを入力する必要があります。
 
 ## <a name="associate-an-azure-ad-account-with-a-worker"></a>Azure AD アカウントと作業者の関連付け
 

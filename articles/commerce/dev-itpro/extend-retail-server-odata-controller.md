@@ -1,9 +1,9 @@
 ---
-title: Cloud Scale Unit OData コントローラーの拡張
+title: Commerce Scale Unit OData コントローラーの拡張
 description: このトピックでは、CustomController クラスを拡張するコードを説明します。
 author: kfend
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ad9b34a5225447226b63db72912e3f04e482aaca
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 56a3e7f659b6c38249d7c580a1958a6ff0afbe7b
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057894"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426325"
 ---
-# <a name="extend-a-cloud-scale-unit-odata-controller"></a>Cloud Scale Unit OData コントローラーの拡張
+# <a name="extend-a-commerce-scale-unit-odata-controller"></a>Commerce Scale Unit OData コントローラーの拡張
 
 [!include [banner](../includes/banner.md)]
 

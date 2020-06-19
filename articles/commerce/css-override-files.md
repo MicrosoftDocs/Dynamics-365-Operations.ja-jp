@@ -3,7 +3,7 @@ title: CSS 上書きファイルの作業
 description: このトピックでは、Microsoft Dynamics 365 Commerce のカスケード スタイル シート (CSS) 上書きファイルを使用する理由、タイミング、および方法について説明します。
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3c40145ea76296c1b8df9284af820534e3c869d4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001855"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411250"
 ---
 # <a name="work-with-css-override-files"></a>CSS 上書きファイルの作業
 
@@ -102,6 +102,8 @@ CSS 上書きファイルを有効化するには、次の手順に従います�
 [ロゴの追加](add-logo.md)
 
 [サイト テーマの選択](select-site-theme.md)
+
+[スタイル プリセットを使用して作業する](style-presets.md)
 
 [ファビコンの追加](add-favicon.md)
 
