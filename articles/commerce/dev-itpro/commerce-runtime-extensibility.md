@@ -1,9 +1,9 @@
 ---
 title: Commerce Runtime (CRT) およびサーバーの拡張機能
-description: このトピックでは、Commerce Runtime (CRT) と Commerce Scale Unit を拡張するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。 また、アクションを Commerce Scale Unit コントローラーに追加して、エンティティのコントローラーを追加する方法も示します。
+description: このトピックでは、Commerce Runtime (CRT) と Commerce Scale Unit を拡張するさまざまな方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14cb47d0077436dd2fb35047526cb032c350710e
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 23b7328d2fe30293fcb30e0ce6ea12d1f7df27db
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329819"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428817"
 ---
 # <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
 
@@ -114,6 +114,9 @@ CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法
 </tbody>
 </table>
 
+> [!NOTE]
+> CRT 拡張コードでは、CRT ビジネス ロジック クラス、メソッド、またはハンドラー (Runtime.Workflow、Runtime.Services、Runtime.DataServices のクラスなど) を参照したり使用したりすることはできません。 これらのクラスには、下位互換性がありません。アップグレード中に拡張機能が無効になる可能性があります。 拡張では、Runtime.*.Messages、Runtime.Framework、Runtime.Data、Runtime.Entities の要求クラス、応答クラス、エンティティ クラスのみ使用する必要があります。
+
 **5 月の更新プログラム以降で、7.1 の CRT 拡張を手動で展開**
 
 CRT を拡張すると、オンラインの **…\\RetailServer\\webroot\\bin\\Ext** フォルダーにカスタム ライブラリを配置します (POS が Commerce Scale Unit に接続された場合)。 **CommerceRuntime.Ext.config** ファイル内で、ここに示すカスタム ライブラリ情報を使用して**構成**セクションを更新する必要があります。
@@ -138,7 +141,7 @@ CRT を拡張すると、オンラインの **…\\RetailServer\\webroot\\bin\\E
 
 **デバッグ CRT**
 
-POS から CRT をデバッグするには、CRT 拡張機能プロジェクトを、オンラインの **w3wp.exe (Commerce Scale Unit の IIS プロセス)** プロセス (POS が CRT に接続されている場合) に関連付ける必要があります。 オフラインの場合は、**dllhost.exe** プロセスに CRT 拡張プロジェクトを関連付けます。
+POS から CRT をデバッグするには、CRT 拡張機能プロジェクトを、オンラインの **w3wp.exe (Commerce Scale Unit (自己ホスト) の IIS プロセス)** プロセス (POS が CRT に接続されている場合) に関連付ける必要があります。 オフラインの場合は、**dllhost.exe** プロセスに CRT 拡張プロジェクトを関連付けます。
 
 **CRT エンティティ、依頼および応答での拡張機能プロパティの使用**
 
@@ -723,7 +726,7 @@ public class CustomizedEdmModelFactory : CommerceModelFactory
 }
 ```
 
-### <a name="how-to-call-the-new-commerce-scale-unit-api-from-mposcloud-pos"></a>MPOS/クラウド POS から新しい Commerce Scale Unit API を呼び出す方法:
+### <a name="call-the-new-commerce-scale-unit-api-from-mposcloud-pos"></a>MPOS/クラウド POS から新しい Commerce Scale Unit API を呼び出す
 
 新しい Commerce Scale Unit API を呼び出す前に、以下の手順を実行してください。
 
@@ -732,23 +735,23 @@ public class CustomizedEdmModelFactory : CommerceModelFactory
 3.  CRT と Commerce Scale Unit 拡張子 dlls の両方を **…\\RetailServer\\webroot\\bin\\Ext** フォルダーに移動します。 新しい Commerce Scale Unit API に関連する CRT 拡張機能をご使用の場合、**…\\RetailServer\\webroot\\bin\\Ext** フォルダー内の CommerceRuntime.Ext.config ファイルの情報を更新してください。
 4.  &lt;ソースの追加 = 「アセンブリ」値 = "**アセンブリ名**" /&gt;
 5.  inetmgr を使用してCommerce Scale Unit のメタデータを参照し、エンティティが xml で公開されているかどうかを確認します。
-6.  mpos/クラウド POSをコンパイルしてビルドし、プロキシを再生成します。 コンパイル中に、mpos は Commerce Scale Unit のメタデータで定義されたすべてのエンティティを再生成します。これにより、以下のようなコマース コンテキストを使用して新しいエンティティを呼び出すことができます。
+6.  mpos/クラウド POSをコンパイルしてビルドし、プロキシを再生成します。 コンパイル中に、MPOS は Commerce Scale Unit のメタデータで定義されたすべてのエンティティを再生成します。これにより、コマース コンテキストを使用して新しいエンティティを呼び出すことができます。
 
 > [!NOTE]
 > Commerce Scale Unit web.config ファイルまたは Commerce Scale Unit フォルダ内で何も変更または追加しないでください。拡張合成セクションは除外され、おそらく bin\ext フォルダにカスタム アセンブリがコピーされます。 配置時に web.config ファイル内の extensionComposition セクションのみマージされ、他のセクションはすべて上書きされ、**...\\RetailServer\\webroot\\bin\\Ext** フォルダのアセンブリのみが他のアセンブリとマージされます。 このファイルは、最新バイナリ パッケージに基づいて上書きされます。 カスタム アプリケーションの設定を追加、または変更するのに Commerce Scale Unit web.config ファイルは使用しないでください。
 
-#### <a name="cross-loyalty-sample"></a>クロス ロイヤルティ サンプル。
+#### <a name="cross-loyalty-sample"></a>クロス ロイヤルティ サンプル
 
 ```typescript
 var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
 return request.execute<number>();
 ```
 
-#### <a name="store-hours-sample"></a>店舗の時間のサンプル:
+#### <a name="store-hours-sample"></a>店舗の時間のサンプル
 
 ```typescript
 var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
 return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 ```
 
-mpos で新しい Commerce Scale Unit API を呼び出す方法について詳しくは、Retail SDK POS.Extension.CrossloaylySample および POS.Extension.SToreHoursSample サンプル プロジェクトをご覧ください。
+新しい Commerce Scale Unit API を MPOS で呼び出す方法について詳しくは、Retail SDK POS.Extension.CrossloaylySample および POS.Extension.SToreHoursSample サンプル プロジェクトをご覧ください。

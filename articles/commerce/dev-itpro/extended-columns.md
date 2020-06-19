@@ -3,7 +3,7 @@ title: チャネル データベースの事前拡張された列
 description: このトピックでは、チャネル データベース内の事前拡張された列がどのように拡張に使用されるかについて説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 2961c6a0bf0c928b1804f06a6ab0b875b63b1757
-ms.sourcegitcommit: 2464f371101ba616f472bab1631b0ecb863006ce
+ms.openlocfilehash: 501fee3c200bdb214c4b43622aabcab3dfc6a84e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095600"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428722"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
@@ -33,7 +33,7 @@ ms.locfileid: "3095600"
 チャネル データベースのフィールドは拡張されることは多いですが、フィールドの列の長さは拡張に対応していません。 したがって、拡張が必要となった場合にも対応できるよう、標準で列の長さが増設されています。
 
 > [!NOTE]
-> 事前拡張されていないフィールドを拡張する必要がある場合は、拡張リクエストまたはサポート チケットを提出する必要があります。
+> 事前拡張されていないフィールドを拡張する必要がある場合は、Lifecycle Services (LCS) で拡張リクエストを提出する必要があります。 詳細については、[拡張性要求](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-requests) を参照してください。
 
 このフィールドは、チャネル データベースで拡張されますが、拡張データ型 (EDT) の拡張モデルを使用して、Commerce 本体のデータベースのフィールドも拡張する必要があります。 さらに、これに対応する販売時点管理 (POS) 、または Commerce Runtime (CRT) ユーザー インターフェイス (UI) を拡張する必要があります。
 

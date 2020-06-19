@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212506"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428403"
 ---
 # <a name="production-setup-requirements"></a>生産の設定の要件
 
@@ -71,7 +71,7 @@ ms.locfileid: "3212506"
 2.  **原価グループ** – 原価グループを設定して、さまざまな種類の原価設定を作成および管理します。
 3.  **工順グループ** – 工順グループを設定して、工順のグループに関連するパラメータを定義します。 工順グループの設定は、生産工順を作成する前に行う必要があります。
 4.  **工順** – 生産工順を設定して、工順工程のスケジューリング、原価設定、および価格決定と、処理状況レポートを制御する既定の設定を定義します。
-5.  **工順** – 工順バージョンを設定して、生産時の品目の変動を可能にします。
+5.  **工順バージョン** – 工順バージョンを設定して、生産時の品目の変動を可能にします。
 
 ## <a name="optional-advanced-settings"></a>オプションの詳細設定の定義
 1.  **生産グループ** – 生産グループを設定して、製造オーダーと勘定科目を関連付けます。 勘定科目を使用すると、注文がレポート用に転記またはグループ化されます。

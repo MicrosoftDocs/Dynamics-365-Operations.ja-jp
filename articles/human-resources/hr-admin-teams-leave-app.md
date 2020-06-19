@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388119"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431133"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -45,6 +45,7 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 
 | 問題 | ステータス |
 | --- | --- |
+| エラー: 接続する環境の検索に問題があります。 | このエラーは、ユーザーが 1 つ以上の Human Resources 環境にアクセスできることを確認した場合でも、表示されることがあります。 また、予期するすべての環境が表示されない場合があります。 この問題を修正するまでは、ユーザーを削除してから再度インポートして問題を解決してください。 |
 | 未来日付の休暇を送信する場合に、残日数に誤りがあることを示します。 | 予測機能は未実装です。 現在日付の残日数が表示されます。 |
 | 既存の申請で要した時間数を減らすと、**残日数**が加算されずに減算される。 | この既知の問題については、将来的に対応予定です。 表示内容は正しくありませんが、送信時に正しい日数が調整されます。 |
 | 同じ日付に対して、**今後の休暇**カードが2つ表示される。 | これらのカードはそれぞれ個別の提出を意味しています。 今後も継続的にフィードバックを受け、調整を行っていきます。 |
