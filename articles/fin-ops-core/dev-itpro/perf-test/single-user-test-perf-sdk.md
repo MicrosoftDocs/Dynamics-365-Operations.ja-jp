@@ -3,7 +3,7 @@ title: タスクレコーダーおよびパフォーマンスSDKを使用した�
 description: このトピックでは、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してシングルユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0118bd43b0aee14d8e2a635a4250d7450f068761
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 910bde858ceb888cb5f6676c9031a30758cc3c80
+ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811949"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409577"
 ---
 # <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
 
@@ -37,6 +37,8 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 ## <a name="prerequisites"></a>必要条件
 
 このトピックで扱う手順を完了するには、プラットフォーム更新プログラム 21、またはそれ以降が設定された開発環境を用意する必要があります。
+> [!IMPORTANT]
+> Finance and Operations アプリが 21Vianet に配置されている場合は、10.0.11 またはそれ以降のプラットフォーム更新で開発する必要があります。
 
 ## <a name="use-task-recorder-to-define-and-record-an-end-to-end-business-scenario"></a>タスクレコーダーを使用してエンドツーエンドの業務シナリオを定義し、記録します。
 
@@ -69,7 +71,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
     [![新規PerfSDKフォルダ](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
-5. 次のファイルをコピーして、上記の手順で作成したフォルダに保存します。
+5. 次のファイルをコピーして、上記の手順で作成したフォルダー **Common\\External\\Selenium** に保存します。
 
     - IEDriverServer\_Win32\_3.13.0.zip ファイルを解凍後に取得できる、IEDriverServer.exe
     - Selenium.WebDriver.StrongNamed.3.13.1.zip ファイルを解凍後に生成される、lib\\net45 フォルダ内の、WebDriver.dll と WebDriver.xml
@@ -80,7 +82,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 エンドツーエンドのシナリオの記録が完了後、タスクレコーディングをもとに C\# パフォーマンス テスト スクリプトを生成する必要があります。 
 
 1. 開発環境では、Microsoft Visual Studio を管理者権限で開きます。
-2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に K:\\PerfSDK\\PerfSDKLocalDirectory にあります。
+2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1 サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory にあります。
 
     [![PerfSDKディレクトリ](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 
@@ -92,8 +94,8 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 5. **タスクの記録をインポートする** ダイアログ ボックスで、以下の必要な詳細を入力します:
 
     - **レコーディングパス** エンドツーエンドシナリオにおける開発者記録ファイルの場所。
-    - **プロジェクト** のパス: PerfSDKSampleプロジェクトの場所。 通常は次のパスに指定されています \<ご利用の\_PerfSDK\_フォルダ\>\\SampleProject\\PerfSDKSample\\PerfSDKSample.csproj.
-    - **PerfSDKのパス** – PerfSDK の場所。 通常は次のパスに指定されています \<ServiceVolumeDrive\>\\perfsdk\\PerfSDKLocalDirectory
+    - **プロジェクト** のパス: PerfSDKSampleプロジェクトの場所。 通常、パスは \<Your\_PerfSDK\_Folder\>\\SampleProject\\PerfSDKSample\\PerfSDKSample.csproj です。
+    - **PerfSDKのパス** – PerfSDK の場所。 通常、パスは \<ServiceVolumeDrive\>\\PerfSDK\\PerfSDKLocalDirectory です。
     
 6. 完了後、 **インポート**を選択します。 PerfSDKSample プロジェクトの **生成された** フォルダ配下に新しいC\# クラスが作成されます。
 
@@ -105,6 +107,8 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 1. 以下に示す方法で PerfSDKSample プロジェクトの **CloudEnvironment.config** ファイルを更新します。これにより、ご利用の環境の設定が反映されます。
 
+    - **HostName** と **SOAPHostName** が開発環境と一致することを確認します。
+    - **SelfMintingAdminUser** の **UserName** が開発環境の管理者アカウントと一致していることを確認してください。
     - **AuthenticatorConfigurationCollection** 要素の配下にある **AuthenticatorConfiguration** の各要素を **AadAuthenticator** を **selfmintedtokenauthenticator** に置き換えます。
     - **AzureActiveDirectoryConfiguration** 要素と **KeyVaultConfigurations** 要素をコメント行にします。
 

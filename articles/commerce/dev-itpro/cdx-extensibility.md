@@ -3,7 +3,7 @@ title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有�
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 091763600a465c17e8329467ea784fad323640ef
-ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
+ms.openlocfilehash: a0dffc9b45adfa8305bfc10aafbe94bbfb0247fb
+ms.sourcegitcommit: 80465a66511d31c180e8a0c15fe44a7642e9ec9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324531"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3423461"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -143,6 +143,9 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 + 新しい行を追加しなくて済むように、新しい情報を含む既存のリソース ファイルを更新します。 アップロードするには、次の例に示すように、リソース ファイルの **IsUpload** 属性を **true** に設定し、カスタム プルジョブに関する情報を追加します。
 
+> [!NOTE]
+> Commerce Data Exchange (CDX) を使用して Retail Headquarters に新しい拡張テーブル データをプルする必要がある場合は、拡張テーブルに REPLICATIONCOUNTERFROMORIGIN ID 列 ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) が含まれている必要があります。 CDX プル ジョブを実行するために必要です。 データを Retail Headquarters からチャネル データベースにプッシュする場合は、REPLICATIONCOUNTERFROMORIGIN は必須ではありません。データがチャネル データベースから Retail Headquarters にプルされる場合にのみ必要です。
+
     ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
     ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
@@ -163,7 +166,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
     </Subjob>
     ```
   > [!NOTE]
-  > この新規テーブルを既存のプル ジョブ (P-1000) の一部として追加するか、または新しいプル ジョブを作成するかのいずれかを実行できます。
+  > この新規テーブルを既存のプル ジョブ (P-1000) の一部として追加するか、または新しいプル ジョブを作成するかのいずれかを実行できます。 
 
 ## <a name="other-scenarios"></a>その他のシナリオ
 残りのプッシュとプル シナリオでは、サンプル リソース ファイルの情報のみが記載されます。それは前のセクションの説明にあるように、初期化が同じであるためです。
@@ -225,7 +228,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 

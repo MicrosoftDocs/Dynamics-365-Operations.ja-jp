@@ -3,7 +3,7 @@ title: パフォーマンス SDK とローカル テスト コントローラー
 description: このトピックでは、タスク レコーダーから生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してマルチユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3819ffbc8fabeeb76bfac5011df2a0bc9b84b3
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 8cf46dc723efef26e1094de08ae4f65df9b0e1ca
+ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029390"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409575"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 
@@ -37,7 +37,9 @@ ms.locfileid: "3029390"
 
 このトピックの手順を完了する前に、次の前提条件が満たされていることを確認してください:
 
-- 自身の Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
+- Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
+> [!IMPORTANT]
+> Finance and Operations アプリが 21Vianet に配置された場合、環境のプラットフォーム更新は 10.0.11 またはそれ以上のプラットフォーム更新である必要があります。
 - 開発環境に Microsoft Visual Studio 2015 Enterprise edition がある
 - 開発環境と同じリリース (アプリケーション バージョンとプラットフォーム更新プログラム) の階層 2 以上のサンドボックス環境があります。
 - [タスク レコーダーとパフォーマンス SDK を使用したシングルユーザー テスト](single-user-test-perf-sdk.md) の手順に従って開発環境を構成しました。
@@ -122,11 +124,17 @@ ms.locfileid: "3029390"
 3. **CloudEnvironment.config** ファイルを更新してコンフィギュレーションを反映します。 この更新プログラムの一部として、次の手順を実行します。
 
     - **HostName** と **SOAPHostName** が階層 2 以上のサンドボックス環境と一致することを確認します。
+    
+    > [!NOTE]
+    > テスト環境の **HostName** または **SOAPHostName** がわからない場合は、**Infrastructure.HostUrl** または **Infrastructure.SoapServicesUrl** の AOS サーバーの web.config ファイルで検索できます。
+    
     - **authcert.pfx** 証明書の拇印を **SelfSigningCertificateThumbprint** の値として追加します。
     - **UserCount** を更新して、このケースでテスト ユーザーの数を反映します。
     - **UserFormat** を更新して、テスト ユーザーの命名規則を反映します。
 
     [![更新された CloudEnvironment.config ファイル](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
+
+    - Finance and Operations アプリが 21Vianet に配置されている場合、必ず **NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定してください。
 
 4. **vsonline.testsettings** を構成します。 **テストの設定** ダイアログ ボックスの **一般** タブの **テストの実行場所** フィールド グループで **ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行** オプションを選択します。
 

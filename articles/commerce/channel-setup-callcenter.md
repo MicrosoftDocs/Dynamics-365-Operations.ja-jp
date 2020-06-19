@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131734"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410416"
 ---
 # <a name="set-up-a-call-center-channel"></a>コール センターのチャネルの設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "3131734"
 ## <a name="overview"></a>概要
 
 
-Dynamics 365 Commerce では、コール センターはアプリケーションで定義できる小売チャネルのタイプです。 コール センター エンティティのチャネルを定義すると、システムによって特定のデータと注文処理の既定値を販売注文に関連付けることができます。 会社は Commerce で複数のコールセンター チャネルを定義できますが、個々のユーザーは 1 つのコール センター チャネルにしかリンクできないことに注意する必要があります。 
+Dynamics 365 Commerce では、コール センターはアプリケーションで定義できる Commerce チャネルのタイプです。 コール センター エンティティのチャネルを定義すると、システムによって特定のデータと注文処理の既定値を販売注文に関連付けることができます。 会社は Commerce で複数のコールセンター チャネルを定義できますが、個々のユーザーは 1 つのコール センター チャネルにしかリンクできないことに注意する必要があります。 
 
 新しいコール センター チャネルを作成する前に、[チャネル設定の前提条件](channels-prerequisites.md) を完了していることを確認してください。
 
@@ -84,7 +84,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-retail-5.png)
+![支払方法の例](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 

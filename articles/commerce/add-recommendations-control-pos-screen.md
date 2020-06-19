@@ -3,7 +3,7 @@ title: トランザクション画面への推奨設定の追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a39389da0908953cbbc161f07d067ce3fc569a1b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 77870cd19ebf15a72f323f116579f7769a766995
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154135"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404236"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨設定の追加
 
@@ -100,11 +100,11 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 
 [製品推奨事項の概要](product-recommendations.md)
 
-[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+[Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+[カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
 [カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
 

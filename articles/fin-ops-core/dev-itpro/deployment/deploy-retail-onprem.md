@@ -3,7 +3,7 @@ title: オンプレミス環境での小売チャネルのコンポーネント�
 description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: af3d9c2f6cebefca67d86c46a8db03f5deab8bf9
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 3e17193189a86aeb952edd90442a096b8a47e3a3
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154354"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426383"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -30,9 +30,9 @@ ms.locfileid: "3154354"
 
 ## <a name="overview"></a>概要
 
-オンプレミス環境では、チャネル機能は Commerce Scale Unit の使用により排他的に有効になります。 概要については、[Commerce Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
+オンプレミス環境では、チャネル機能は Commerce Scale Unit (自己ホスト) の使用により排他的に有効になります。 概要については、[Commerce Scale Unit (自己ホスト)](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
 
-クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit をインストールすることによってのみ、チャネル コンポーネントを使用できます。
+クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit (自己ホスト) をインストールすることによってのみ、チャネル コンポーネントを使用できます。
 
 ## <a name="prerequisites"></a>必要条件 
 
@@ -118,4 +118,4 @@ ms.locfileid: "3154354"
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit (自己ホスト) のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 

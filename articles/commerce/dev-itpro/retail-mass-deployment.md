@@ -3,7 +3,7 @@ title: セルフサービス コンポーネントの一括配置
 description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 33442ffb9724352d5ad33a37bd436e39df49b95e
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 79dd9fc9c92b8e7d5ad4761373143e3d68654322
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078031"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426332"
 ---
 # <a name="mass-deployment-of-self-service-components"></a>セルフサービス コンポーネントの一括配置
 
@@ -52,7 +52,7 @@ ms.locfileid: "3078031"
 
 ### <a name="examples-of-commands-for-silent-servicing"></a>サイレント サービスのコマンド例
 
-このセクションでは、セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Commerce Scale Unit など、すべての標準セルフサービス インストーラーで動作します。
+このセクションでは、セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Commerce Scale Unit (自己ホスト) など、すべての標準セルフサービス インストーラーで動作します。
 
 #### <a name="silently-update-the-current-installation-of-modern-pos"></a>Modern POS の現在のインストールをサイレントに更新
 
@@ -65,9 +65,9 @@ ModernPOSSetup_V72.exe -S
 > [!NOTE]
 > Retail Store Scale Unit ではコンフィギュレーション ファイルがまだ必要とされます。 ただし、インストーラーは可能な場合はいつでも、現在インストールされているすべての値を保持します。
 
-#### <a name="silently-update-the-current-installation-of-commerce-scale-unit"></a>Commerce Scale Unit の現在のインストールを自動的に更新
+#### <a name="silently-update-the-current-installation-of-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト) の現在のインストールを自動的に更新
 
-次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Commerce Scale Unit の現在のインストールをサイレント更新します。 (このコンフィギュレーション ファイルは、インストーラーの実行可能ファイルと同じ場所にない可能性があります。) このコマンドは、前提条件のチェックをスキップし、インストール手順に進みます。 テストおよび開発の目的にのみ、このコマンドを使用することをお勧めします。
+次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Commerce Scale Unit (自己ホスト) の現在のインストールをサイレント更新します。 (このコンフィギュレーション ファイルは、インストーラーの実行可能ファイルと同じ場所にない可能性があります。) このコマンドは、前提条件のチェックをスキップし、インストール手順に進みます。 テストおよび開発の目的にのみ、このコマンドを使用することをお勧めします。
 
 ```Console
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck

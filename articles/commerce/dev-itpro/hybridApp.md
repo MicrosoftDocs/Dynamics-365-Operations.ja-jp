@@ -3,7 +3,7 @@ title: Android および iOS での POS ハイブリッド アプリのセット
 description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 25954d61ba58e6c4e7752f549b1965688c718891
-ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
+ms.openlocfilehash: 36f4dfcc1f45ea788ba6bc139d433f8b4836fa92
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117155"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416541"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -84,13 +84,13 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   1.  Retail SDK フォルダーで、SampleExtensions\HybridApp\iOS\solution を開きます。
       Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
       
-         ![展開用 POS iOS アプリ VS 設定](./media/iOSSetting.png)
+       ![展開用 POS iOS アプリ VS 設定](./media/iOSSetting.png)
       
   2.  エミュレーターを使用して、**設定 > RetailMPOS** に移動します。 Commerce Scale Unit URL を入力します。
       
-         ![POS iOS アプリ設定](./media/iOSApp.png)
+       ![POS iOS アプリ設定](./media/iOSApp.png)
       
-         ![RS URL の POS iOS アプリ設定](./media/iOSRSURL.png)
+       ![RS URL の POS iOS アプリ設定](./media/iOSRSURL.png)
       
   3.  MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
   
@@ -104,7 +104,8 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 | デバイス | 説明 |
 | --- | --- |
 | 支払端末 | Dynamics 365 Payment Connector for Adyen を介して [ADYEN支払ターミナルAPI](https://www.adyen.com/blog/introducing-the-terminal-api) が対応しているもの。 |
-| レシート プリンター | Epson SOAP HTTPインターフェイスに対応しているネットワーク対応のEpsonプリンター。 |
+| レシート プリンター | Epson SOAP HTTPインターフェイスに対応しているネットワーク対応のEpsonプリンター。<p>ネットワーク対応 Star Micronics プリンター。</p> |
+| キャッシュ ドロワー | Dynamics 365 Commerce バージョン 10.0.8 での導入: ドロワー キック (d/k) ポートを介してネットワーク対応プリンターに接続されたキャッシュ ドロワー。 |
 
 その他の支払プロセッサや周辺機器への対応は、Payments および Hardware SDKs を通して ISVs から実装することができます。 
 
@@ -121,18 +122,7 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 
 支払コネクタを設定するには、 [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration) に記載されている標準の設定手順に従ってください。 モダンPOSまたはIISハードウェアステーションコンフィギュレーションの更新という名称のセクションは省略します。
 
-初期状態では、 Android アプリは Epson ePOS-Print プロトコルに対応している Epson ネットワークプリンターと通信します。 このインターフェイスを有効にするには、Epsonプリンターをネットワークに接続します。 ePOS-Print は、ユーザーがブラウザーから Epson ネットワーク プリンターにアクセスできる Web インターフェイスを通して有効になります。 通常、この Web インターフェイスには、 Web ブラウザーを開いて http://<printer IP address> と入力することでアクセスできます。 プリンターの IP アドレスは、ネットワークに接続し、電源をオフまたはオンにすることによって取得できます。 ネットワーク IP アドレス が取得されると、そのプリンターの IP アドレスを表示する受信確認が印刷されます。 ePOS-Printの設定詳細については、Epsonが提供しているれている資料を参照してください。 
-      
-EpsonプリンターにてePOS-印刷を有効にした後で、プリンターの電源を切り、再度電源を入れます。 デバイスがオンラインに接続した際に、デバイスのIPアドレスが表示されたレポートが印刷されている必要があります。 デバイスのIPアドレスを控え、Dynamics 365の POSレジスター フォーム へと移動します。 設定中の登録内容を選択し、開いて編集します。 リボン上の **レジスタ** タブにて、 **ハードウェア** という名称の小見出しから **IPアドレスの構成**  というアクションを参照してください。 このアクションにて、特定のレジスターで使用されるプリンターのIPアドレスと指定します。 プリンターの **IPアドレス** フィールドが使用できない場合は、レジスターに割り当てられているハードウェアプロファイルをチェックして、プリンタタイプが **ネットワーク** に設定されていることを確認します。 標準設定上ではEpsonプリンターにポートは必要ありません。
-
-**10.0.8 の新機能** - ドロワー キック (dk) ポート経由で Epson ネットワーク プリンターに接続されたキャッシュ ドロワーがサポートされるようになりました。 ネットワーク対応の Epson プリンターに接続されているキャッシュ ドロワーを使用するには、上記の手順に従ってプリンターを構成します。 ハードウェア プロファイルで キャッシュ ドロワーを 'ネットワーク' タイプに設定します。 ハードウェア プロファイルが割り当てられているレジスターまたはハードウェア ステーションに移動し、 **IP アドレスのコンフィギュレーション** 機能を使用して、プリンターに対してコンフィギュレーションされているアドレスと同じであるキャッシュドロワーの IP アドレスを設定します。
-
-
-### <a name="sharing-peripherals-using-built-in-peripheral-support"></a>内蔵周辺機器サポートを使用した周辺機器の共有
-
-支払ターミナルおよびレシートプリンターは、POSクライアント Android とその他のMPOSデバイス間で共有することができます。 周辺機器はIISハードウェアステーションを介して共有することができますが、 その他の方法としては Android POSの組み込み周辺機器サポートを追加することによって、webサービスを介したハードウェアステーションを配置することなくこれらのデバイスを共有できるようになります。
-
-Android POSクライアント間でデバイスを共有するには、IPおよびハードウェアプロファイルをレジスターに割り当てるのではなく、ハードウェアプロファイルを専用ハードウェアステーションに設定する必要があります。 これを行うには、**Retail とコマース > チャネル > 店舗 > すべての店舗**の順に移動します。 店舗を選択し、開いて編集します。 次に、店舗のハードウェアステーションの一覧を下方向にスクロールし、ハードウェアプロファイル、ネットワーク支払ターミナル、EFT設定、ネットワークプリンターをハードウェアステーションに割り当てます。 このシナリオでは、EFTターミナルIDを店舗レベルのハードウェアステーションにも割り当てる必要があります。
+ネットワーク接続周辺機器の設定に関する詳細については、ドキュメント[ネットワーク周辺機器のサポート](https://go.microsoft.com/fwlink/?linkid=2129965)をご覧ください。
 
 ## <a name="additional-resources"></a>追加リソース
 - [支払に関するよく寄せられる質問](payments-retail.md)

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383808"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403338"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>出荷連結ポリシーを構成する
 
@@ -270,7 +270,7 @@ ms.locfileid: "3383808"
 
 - このポリシーでは、特定のオーダープールにクエリを実行して、連結出荷を承認する顧客を識別します。
 - 未出荷に対する連結をオフにします。
-- 連結は、既定のクロス オーダーポリシーを使用して (以前の**倉庫**を再現する目的で) 、複数の注文間で行われます。
+- 連結は、既定の連結注文ポリシーで選択されたフィールドを使用して、 (**倉庫へのリリースで出荷を連結する**チェック ボックスを複製する目的で) 複数の注文間で行われます。
 
 - 別のオーダー プールを選択することで、販売注文のルールを上書きできます。
 
@@ -306,7 +306,7 @@ ms.locfileid: "3383808"
 
 - このポリシーでは、特定のオーダープールにクエリを実行して、連結出荷が可能な倉庫を識別します。
 - 未出荷に対する連結をオフにします。
-- 連結は、既定のクロス オーダーポリシーを使用して (以前の**倉庫**を再現する目的で) 、複数の注文間で行われます。
+- 連結は、既定の連結注文ポリシーで選択されたフィールドを使用して、 (**倉庫へのリリースで出荷を連結する**チェック ボックスを複製する目的で) 複数の注文間で行われます。
 
 通常、このビジネスケースでは、 [シナリオ 1](#scenario-1)で作成した既定のポリシーを使用して対処することができます。 ただし、以下の手順で同様のポリシーを手動で作成することも可能です。
 

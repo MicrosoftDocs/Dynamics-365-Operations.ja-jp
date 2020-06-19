@@ -3,7 +3,7 @@ title: Lifecycle Services のリソース
 description: Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and Operations アプリの実装アプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。
 author: kfend
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b04c3aceb08d48eb04e5b914cb08213d7482481d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a0f9bd456fa7e53c31acefaf60005cccac52c4d5
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811696"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421620"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 
@@ -33,10 +33,11 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 -   [Lifecycle Services (LCS) の新機能](whats-new-lcs.md)
 -   [Lifecycle Services (LCS) ユーザー ガイド](lcs-user-guide.md)
 -   [Lifecycle Services (LCS) のプロジェクト](./ax-2012/projects-lcs.md)
+-   [プロジェクトの研修](project-onboarding.md)
 -   [Lifecycle Services (LCS) での方法](./ax-2012/methodologies-lcs.md)
 -   [Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](bpm-overview.md)
 -   [Lifecycle Services (LCS) のクラウド ホスト環境](./ax-2012/cloud-hosted-environments-lcs.md)
--   [Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)
+-   [Finance and Operations アプリのサポート エクスペリエンスを管理する](cloud-powered-support-lcs.md)
 -   [Lifecycle Services の設定の概要](configuration-manager-lcs.md)
 -   [Lifecycle Services (LCS) 内のカスタマイズ分析](./ax-2012/customization-analysis-lcs.md)
 -   [Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール](./ax-2012/infrastructure-estimator-lcs.md)
@@ -50,8 +51,8 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 
 ### <a name="additional-resources"></a>追加リソース
 
--   Dynamics 365 Finance and Operations アプリに関する技術的な質問がある場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするための助けが必要な場合、Microsoft に連絡する方法の詳細については、 [Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの入手](lcs-support.md) を参照してください。
--   Microsoft Dynamics AX 2012 に関する技術的な質問がある場合またはサポートが必要な場合に、Microsoft に連絡する方法の詳細については、 [Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md) を参照してください。
+-   Dynamics 365 Finance and Operations アプリに関する技術的な質問がある場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするための助けが必要な場合、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートの検索](lcs-support.md)を参照してください。
+-   Microsoft Dynamics AX 2012 に関する技術的な質問がある場合またはサポートが必要な場合に、Microsoft に連絡する方法の詳細については、[Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)を参照してください。
 
 
 

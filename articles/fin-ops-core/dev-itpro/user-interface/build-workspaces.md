@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8d2159bf6620d4df626e1e746097e43c5bed16c
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 0848fc487c8fa29fac473413de9c6c383ab4890f
+ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329935"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3433911"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
@@ -170,7 +170,7 @@ ms.locfileid: "3329935"
 
 #### <a name="chart-parts-only-contain-olap-charts"></a>OLAP チャートのみが含まれているグラフ部品
 
-ワークスペースにチャットが含まれているときは、そのチャットは分離したフォームとしてモデル化され、そのフォームはフォーム パーツ コントロールを使用してワークスペース上で参照されます。 このチェックの目的は、ワークスペースから最終的に参照されるチャートが OLAP データのみを使用するようにすることです。
+ワークスペースにグラフが含まれているときは、そのチャットは分離したフォームとしてモデル化され、そのフォームはフォーム パーツ コントロールを使用してワークスペース上で参照されます。 このチェックの目的は、ワークスペースから最終的に参照されるチャートが OLAP データのみを使用するようにすることです。
 
 #### <a name="count-tiles-have-queries-defined"></a>カウント タイルにはクエリが定義されています
 

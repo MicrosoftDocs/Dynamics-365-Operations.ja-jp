@@ -3,12 +3,12 @@ title: 概要
 description: Dynamics 365 Human Resources では、休暇および欠勤のワークスペースは、新しい休暇計画を作成するための柔軟なフレームワーク、休暇申請を管理するためのワークフロー、および従業者が休暇を申請するための直観的なセルフ サービス ページを提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325768"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428970"
 ---
 # <a name="overview"></a>概要
 
@@ -84,10 +84,9 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 
 プレビュー機能は次のとおりです。
 
-- **休暇の停止** - 従業員に対し Human Resources で休暇および欠勤を中断できます。 休暇を中断すると、選択した休暇タイプの休暇の発生が停止します。 一時停止が見越計上プロセス後に発生した場合、休暇の一時停止により、従業員の休暇残日数が比例配分調整されます。 従業員の休暇の中断時に理由コードを含めることも可能です。 ユーザーエクスペリエンスが更新され、一時停止が表示されるようになりました。 
+- **会社またはプラン別の有給休暇付与** - すべての会社または単一の会社のいずれかで有給休暇付与プロセスを実行することができます。 特定の会社の特定の休暇および不就業プランについて、有給休暇付与プロセスを実行することもできます。 
 
-- **繰越ルール** - 繰越調整を転送する繰越残日数に対して、繰越休暇タイプを指定できます。 たとえば、従業員が 10 日間繰り越す場合、その 10 日間に別の休暇タイプを選択できます。 
+- **休暇の購入**: 従業員が購入申請を提出するために休暇ポリシーの購入を有効にして作成できます。 従業員は、購入申請を提出し、申請を反映するように残高を自動的に更新できます。  
 
-- **調整に理由コードとコメントを含める** ― 従業員の休暇残高に対する調整を行うときに、理由コードとコメントを含めることができます。 
+- **承認済の休暇申請に添付ファイルを追加する** - 既に承認されている休暇申請に対して添付ファイルを追加することができます。 
 
-- **休暇と欠勤パラメータに移行する** : 人事管理パラメータを使用する代わりに休暇と欠勤パラメータのみを使用できるようになります。 

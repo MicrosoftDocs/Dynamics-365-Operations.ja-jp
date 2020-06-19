@@ -3,7 +3,7 @@ title: セルフサービス配置の概要
 description: このトピックでは、セルフサービス配置の概要を示します。
 author: rashmansur
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0584208ae23f514fbb84e3592e5947dfc37a077a
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: 2abe38d1f6a87600bbd02b8ba9939db199115b3a
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100482"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411426"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -64,3 +64,6 @@ ms.locfileid: "3100482"
 - サービスでは、SQL Server Reporting Services (SSRS) レポートに埋め込まれた Visual Basic スクリプトを使用して定義されるビジネス ロジックはサポートされなくなりました。 実行時にデータを書式設定および評価するために使用される Tablix コントロールで定義された Visual Basic 式は、引き続き完全にサポートされます。 ただし、サービスは Visual Basic スクリプト関数で定義された指示を無視します。 この変更は、サービスのセキュリティと信頼性の向上に必要でした。
 
 - サブレポートは、SSRS 開発ツールを使用して定義されたドキュメント レポートではサポートされなくなりました。 サブレポートを含むアプリケーション ソリューションは、再作成するか、サービスでサポートされる他のレポート オプションを活用するソリューションに置き換える必要があります。
+
+    > [!IMPORTANT]
+    > サブレポート項目のサポートは、プラットフォーム更新プログラム 36 リリースと共に再導入されました。 適切に書式設定されたサブレポート項目を含むソリューションに依存する顧客は、プラットフォーム更新 36 またはそれ以降で実行されるセルフサービス配置に移行できます。

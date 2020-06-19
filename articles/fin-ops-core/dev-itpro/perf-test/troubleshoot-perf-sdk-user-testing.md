@@ -3,7 +3,7 @@ title: パフォーマンスSDKを使用した、シングルユーザーまた�
 description: このトピックでは、パフォーマンスSDKを使用したシングルユーザーまたはマルチユーザーのテスト中に発生する可能性のある一般的な問題のトラブルシューティングについて説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b17ba320a4aaacb6a880d8d9f92ea356a213de8d
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 5dfdcb43efc6bdc684d190a904dc2c7af559fbf7
+ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029798"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409578"
 ---
 # <a name="troubleshooting-guide-for-single-user-or-multi-user-testing-with-the-performance-sdk"></a>パフォーマンスSDKを使用した、シングルユーザーまたはマルチユーザーテストのためのトラブルシューティングガイド
 
@@ -34,7 +34,7 @@ ms.locfileid: "3029798"
 
 ### <a name="error-example"></a>エラーの例
 
-> 初期化メソッド \<テストクラス名\> TestSetupが例外をスローしました。 TimeoutException: TimeoutException: タイムアウト時間内にクライアントが開かれませんでした。
+> 初期化メソッド \<Test class name\>.TestSetup が例外をスローしました。 TimeoutException: TimeoutException: タイムアウト時間内にクライアントが開かれませんでした。
 
 ### <a name="solution"></a>ソリューション
 
@@ -46,7 +46,7 @@ ms.locfileid: "3029798"
 
 ### <a name="error-example"></a>エラーの例
 
-> 初期化メソッド \<テストクラス名\> TestSetupが例外をスローしました。 System.InvalidOperationException: System.InvalidOperationException: Internet Explorerで予期しないエラーが発生しました。 ブラウザーのズームレベルが200% に設定されていました。 ズームレベルは100%に設定してください。
+> 初期化メソッド \<Test class name\>.TestSetup が例外をスローしました。 System.InvalidOperationException: System.InvalidOperationException: Internet Explorerで予期しないエラーが発生しました。 ブラウザーのズームレベルが200% に設定されていました。 ズームレベルは100%に設定してください。
 
 ### <a name="solution"></a>ソリューション
 
@@ -95,7 +95,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 テスト、またはユーザー作成処理が失敗し、次のエラー メッセージが表示されます。
 
-> System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\>System.ServiceModel.EndpointNotFoundException: \\\<web address\> にてメッセージを受領することができるエンドポイント リスニングがありません。 この事象は、正しくないアドレスまたは SOAP アクションによって引き起こされることがあります。
+> System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\> System.ServiceModel.EndpointNotFoundException: \\\<web address\> にてメッセージを受領することができるエンドポイント リスニングがありません。 この事象は、正しくないアドレスまたは SOAP アクションによって引き起こされることがあります。
 
 ### <a name="solution"></a>ソリューション
 
@@ -103,8 +103,8 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 CloudEnvironment.Config ファイルで、次のキーによって指定されている値を確認します。
 
-- \\\<ExecutionConfigurations Key="ホスト名" Value="\<ホストのWebアドレス\>" /\>
-- \\\<ExecutionConfigurations Key="SoapHostName" Value="\<SOAPのWebアドレス\>" /\>
+- \\\<ExecutionConfigurations Key="HostName" Value="\<web address of host\>" /\>
+- \\\<ExecutionConfigurations Key="SoapHostName" Value="\<web address of SOAP\>" /\>
 
 これらのキーに指定する Web アドレスは、現在テストを実施している環境である必要があります。 開発者マシンの Web ブラウザで、**HostName** キーによって指定された Web アドレスを開けれることを確認します。
 
@@ -120,7 +120,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 ### <a name="solution"></a>ソリューション
 
-2 つのシナリオで、このエラーが発生することがあります。
+3 つのシナリオで、このエラーが発生することがあります。
 
 - CloudEnvironment.config ファイルにて **SelfMintingAdminUser** として指定されているユーザーに、システム管理者ロールが割り当てられていません。 適切なユーザーが指定されていることを検証するには、エンドポイントにサインインし、ユーザーのロールを確認します。
 
@@ -128,17 +128,19 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 - CloudEnvironment.config ファイルにて **SelfMintingAdminUser** として指定されているユーザーは、 `https://sts.windows-ppe.net/` または `https://sts.windows.net/` 以外のプロバイダーを持っています。 場合によっては、管理者ユーザーの**プロバイダ**フィールドに会社固有のドメインを含めます。 
 
+- Finance and Operations アプリが 21Vianet に配置されている場合、**NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定したことを確認してください。
+
 この問題を回避するには、任意の名前と電子メール アドレスを持つユーザーを作成します。 **システム管理者** ロールを新しいユーザーに割り当てます。 ユーザーを実在の Microsoft Azure Active Directory (Azure AD) ユーザーにリンクする必要はありません。 CloudEnvironment.config ファイルで、この新しい管理者ユーザーを **SelfMintingAdminUser** として指定します。
 
 ## <a name="the-http-request-was-forbidden-with-client-authentication-scheme-anonymous"></a>クライアント認証方式「Anonymous」によって HTTP 要求が禁止されました
 
 ### <a name="error-example"></a>エラーの例
 
-> 初期化メソッド \<テストクラス名\> TestSetupが例外をスローしました。 System.ServiceModel.Security.MessageSecurityException: System.ServiceModel.Security.MessageSecurityException: クライアント認証スキーム'Anonymous'でHTTP要求が禁止されました。 ---\> System.Net.WebException: リモートサーバーからエラーが返されました: (403) 許可されていません。
+> 初期化メソッド \<Test class name\>.TestSetup が例外をスローしました。 System.ServiceModel.Security.MessageSecurityException: System.ServiceModel.Security.MessageSecurityException: クライアント認証スキーム'Anonymous'でHTTP要求が禁止されました。 ---\> System.Net.WebException: リモートサーバーからエラーが返されました: (403) 許可されていません。
 
 ### <a name="solution"></a>ソリューション
 
-既知の 2 つのシナリオでは、このエラーが発生することがあります。
+3 つの既知のシナリオで、このエラーが発生することがあります。
 
 - テスト ユーザーは、引数なしで MS.Dynamics.Performance.CreateUsers.exe を実行して作成されます。 例えば、CreateUsers スクリプトを引数なしで実行すると、作成されたテスト ユーザーの電子メール アドレスが正しくフォーマットされません。 これらのユーザーを使用してテストを実行すると、テストは禁止された要求のエラーを生成します。 このシナリオでユーザーを表示することによってエラーが発生することを確認できます。 テスト ユーザーの正しくない電子メール アドレスは、次の図の電子メール アドレスに類似します。
 
@@ -149,6 +151,8 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 - CloudEnvironment.Config ファイルの **UserCount** フィールドで指定しているユーザー数が、MS.Dynamics.Performance.CreateUsers.exe を実行して作成したテスト ユーザーの数を超えています。 少なくとも CloudEnvironment.Config ファイルで要求するテスト ユーザーをできる限り多く作成したことを確認します。
 
     [![CloudEnvironment.config ファイル](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
+
+- Finance and Operations アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新にあることを確認してください。 
 
 ## <a name="at-least-one-security-token-in-the-message-could-not-be-validated"></a>メッセージ内の少なくとも 1 つのセキュリティ トークンを検証できませんでした
 
@@ -171,7 +175,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 ### <a name="error-example"></a>エラーの例
 
-> \<テストクラス名\> TestSetupが例外をスローしました。 InvalidOperationException: InvalidOperationException: ServiceModelクライアント構成セクションに名前'ClientCommunicationManager'および契約'Microsoft.Dynamics.Client.InteractionService.Communication.Reliable.IReliableCommunicationManager'を持つエンドポイント要素が見つかりませんでした。 これは、アプリケーションに対応する構成ファイルが見つからなかったか、またはこの名前と一致するエンドポイント要素がクライアント要素にて見つからないことが原因です。 SSystem.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors にて (ServiceEndpoint serviceEndpoint, String configurationName)
+> \<Test class name\>.TestSetup が例外をスローしました。 InvalidOperationException: InvalidOperationException: ServiceModelクライアント構成セクションに名前'ClientCommunicationManager'および契約'Microsoft.Dynamics.Client.InteractionService.Communication.Reliable.IReliableCommunicationManager'を持つエンドポイント要素が見つかりませんでした。 これは、アプリケーションに対応する構成ファイルが見つからなかったか、またはこの名前と一致するエンドポイント要素がクライアント要素にて見つからないことが原因です。 SSystem.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors にて (ServiceEndpoint serviceEndpoint, String configurationName)
 
 ### <a name="solution"></a>ソリューション
 
@@ -189,7 +193,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 ### <a name="error-example"></a>エラーの例
 
-> 初期化メソッド \\\<Test class name\>. TestSetupが例外をスローしました。 System.TypeInitializationException: System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\> MS.Dynamics.TestTools.TestLogging.EvaluateException: アサートに失敗しました。 DateTime="10/13/2017 14:42:55" "'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' のタイプイニシャライザが例外をスローしました。
+> 初期化メソッド \\\<Test class name\>.TestSetup が例外をスローしました。 System.TypeInitializationException: System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\> MS.Dynamics.TestTools.TestLogging.EvaluateException: アサートに失敗しました。 DateTime="10/13/2017 14:42:55" "'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' のタイプイニシャライザが例外をスローしました。
 
 ### <a name="solution"></a>ソリューション
 
@@ -219,7 +223,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 ### <a name="error-example"></a>エラーの例
 
-> System.TypeInitializationException: System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\> System.ServiceModel.CommunicationException: \\\<Host name\>/Services/AxUserManagement/Service.svc/ws2007FedHttp.にHTTP要求をした際にエラーが発生しました HTTPS の場合、サーバー証明書が HTTP.SYS で正しくコンフィギュレーションされていない可能性があります。 これは、クライアントとサーバー間のセキュリティ バインドの不一致によっても発生する可能性があります。 ---\> System.Net.WebException: 基礎的な接続が閉じられました: 送信時に予期しないエラーが発生しました。 ---\> System.IO.IOException: 転送接続からデータを読み取ることができません: 既存の接続がリモート ホストによって強制的に切断されました。 ---\> System.Net.Sockets.SocketException: 既存の接続がリモートホストによって強制的に切断されました。
+> System.TypeInitializationException: System.TypeInitializationException: 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' のタイプイニシャライザが例外をスローしました。 ---\> System.ServiceModel.CommunicationException: \\\<Host name\>/Services/AxUserManagement/Service.svc/ws2007FedHttp に HTTP 要求をした際にエラーが発生しました。 HTTPS の場合、サーバー証明書が HTTP.SYS で正しくコンフィギュレーションされていない可能性があります。 これは、クライアントとサーバー間のセキュリティ バインドの不一致によっても発生する可能性があります。 ---\> System.Net.WebException: 基礎的な接続が閉じられました: 送信時に予期しないエラーが発生しました。 ---\> System.IO.IOException: 転送接続からデータを読み取ることができません: 既存の接続がリモート ホストによって強制的に切断されました。 ---\> System.Net.Sockets.SocketException: 既存の接続がリモートホストによって強制的に切断されました。
 
 ### <a name="solution"></a>ソリューション
 
@@ -255,9 +259,9 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="solution"></a>ソリューション
 
-**\<ご利用の\_PerfSDK\_フォルダ\>** 配下の **Common\\External\\Selenium** フォルダを **\<ご利用の\_PerfSDK\_Folder>\\SampleProject\\ PerfSDKSample\\bin\\Debug** フォルダにコピーします。
+**\<Your\_PerfSDK\_Folder\>** にある **Common\\External\\Selenium** フォルダーを **\<Your\_PerfSDK\_Folder>\\SampleProject\\ PerfSDKSample\\bin\\Debug** フォルダーにコピーします。
 
-## <a name="failed-finding-the-certificate-for-minting-tokens-by-thumbprint-your-certificate-thumbprint"></a>拇印によるトークン作成用の証明書の検索に失敗しました \<ご利用の証明書の拇印\>
+## <a name="failed-finding-the-certificate-for-minting-tokens-by-thumbprint-your-certificate-thumbprint"></a>拇印によるトークン作成用の証明書の検索に失敗しました: \<your certificate thumbprint\>
 
 ### <a name="error-example"></a>エラーの例
 
@@ -277,7 +281,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="solution"></a>ソリューション
 
-Azure DevOps に接続するときは、 **dev.azure.com/\<Azure\_DevOps\_Account\>** ではなく、古いURI形式 (**\<Azure\_DevOps\_Account\>.visualstudio.com**) を使用します。 古いURIを使用して Azure DevOps を開き、 **Visual Studioで開く** を選択します。
+Azure DevOps に接続するときは、**dev.azure.com/\<Azure\_DevOps\_Account\>** ではなく、古い URI 形式 (**\<Azure\_DevOps\_Account\>.visualstudio.com**) を使用します。 古いURIを使用して Azure DevOps を開き、 **Visual Studioで開く** を選択します。
 
 ## <a name="could-not-load-file-or-assembly-aoskerneldll-or-one-of-its-dependencies"></a>ファイルまたはアセンブリ 'aoskernel.dll' 、あるいは依存関係を読み込みできませんでした
 
@@ -312,3 +316,21 @@ Azure DevOps に接続するときは、 **dev.azure.com/\<Azure\_DevOps\_Accoun
 ### <a name="solution"></a>ソリューション
 
 影響はありません。メッセージを無視しても問題ありません。
+
+## <a name="the-type-or-namespace-name-xxxx-could-not-be-found-are-you-missing-a-using-directive-or-an-assembly-reference"></a>タイプまたは名前空間名 'xxxx' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が不足していないかどうか確認してください)。
+
+## <a name="error-example"></a>エラーの例
+
+タイプまたは名前空間名 'InventTransferOrders' が見つかりませんでした (using ディレクティブまたはアセンブリ参照が不足していないかどうか確認してください)。 
+
+### <a name="solution"></a>ソリューション
+
+perfSDK を使用して出荷されたサンプル ソリューションは既に準備されており、パッケージの分割後に更新されていません。 この問題を解決するには、アセンブリ **MS.Dynamics.TestTools.DirectoryProxyLibrary.dll** を \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory に参照として追加します。
+
+## <a name="assembly-was-built-against-the-netframeworkversionv46-framework"></a>アセンブリは、".NETFramework,Version=v4.6" フレームワークに対してビルドされました
+
+## <a name="error-example"></a>エラーの例
+アセンブリ "MS.Dynamics.TestTools.DirectoryProxyLibrary, Version=7.0.0.0, Culture=neutral, PublicKeyToken=a7cf325ee2c8a9ff" which was built against the ".NETFramework,Version=v4.6" フレームワークに間接的な依存関係があるため、プライマリ参照 "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" を解決できませんでした。 このバージョンは、現在対象のフレームワーク ".NETFramework,Version=v4.5" よりも新しいバージョンです。
+
+### <a name="solution"></a>ソリューション
+プロパティ ウィンドウの **ターゲット フレームワーク** プロパティを .Net Framework 4.6 に変更します。

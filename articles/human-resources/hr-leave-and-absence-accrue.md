@@ -3,12 +3,12 @@ title: 休暇計画の見越計上
 description: Dynamics 365 Human Resources において、複数の従業員または個々の従業員の休暇を累計することができます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197316"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429062"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>休暇計画の見越計上
 
@@ -103,7 +103,19 @@ Dynamics 365 Human Resources において、複数の従業員または個々の
 
 2. **休暇の管理**で、**休暇発生の監査の削除** を選択します。
 
+## <a name="configure-preview-features"></a>プレビューの機能の構成
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+休暇および欠勤のプレビュー機能を有効にしている場合は、それらの設定も構成する必要があります。
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>会社別または休暇プラン別の有給休暇
+
+休暇および不就業プランの発生時には、すべての会社で発生することを選択できます。 すべての会社を選択すると、個々の休暇プランを選択できません。 すべての会社で発生しないことを選択した場合は、特定の休暇プランで発生できます。 
+
+これらのオプションは、すべての従業員または個々の従業員に対して発生する場合に使用できます。 
+
 ## <a name="see-also"></a>参照
 
-- [休暇の概要](hr-leave-and-absence-overview.md)
-- [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
+[休暇の概要](hr-leave-and-absence-overview.md)</br>
+[休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
