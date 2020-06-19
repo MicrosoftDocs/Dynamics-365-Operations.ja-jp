@@ -88,6 +88,8 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (2020 年 8 月)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (2020 年 7 月)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (2020 年 5 月)
@@ -212,9 +214,9 @@
               items:
                 - name: Dynamics 365 Commerce のセルフサービス インストーラーの同期
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (自己ホスト)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Commerce Scale Unit のコンフィギュレーションとインストール
+                - name: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Modern POS のコンフィギュレーションとインストール
                   href: retail-modern-pos-device-activation.md
@@ -600,11 +602,11 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: カテゴリの価格決定ルールを使用した売買契約の作成
                   href: tasks/category-pricing-rules-trade-agreements.md
-            - name: おすすめ候補
+            - name: 推奨事項
               items:
                 - name: 製品推奨事項の概要
                   href: product-recommendations.md
-                - name: Dynamics 365 Commerce 環境での ADLS の有効化
+                - name: Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効にする
                   href: enable-ADLS-environment.md
                 - name: 製品推奨事項の有効化
                   href: enable-product-recommendations.md
@@ -646,8 +648,8 @@
                   items:
                     - name: 店舗在庫管理
                       href: work-with-store-inventory.md
-                    - name: シリアル化された品目に関する作業
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: 在庫バッファーと在庫レベルのコンフィギュレーション
+                      href: inventory-buffers-levels.md
                     - name: POS でシリアル化された品目に関する作業
                       href: pos-serialized-items.md
                     - name: 集中的購買を使用した物流センターから店舗への製品の配送
@@ -820,10 +822,12 @@
                   href: quick-tour-account-management.md
             - name: サイト設定の管理
               items:
-                - name: ページ概要の作成
+                - name: 作成ページの概要
                   href: authoring-home-overview.md
                 - name: ユーザーとロールの管理
                   href: manage-ecommerce-users-roles.md
+                - name: 在庫設定の適用
+                  href: inventory-settings.md
                 - name: サイトにおける検索エンジンの最適化 (SEO) の考慮事項
                   href: search-engine-optimization-considerations.md
                 - name: コンテンツ セキュリティ ポリシー (CSP) の管理
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: CSS 上書きファイルの作業
                       href: css-override-files.md
+                    - name: スタイル プリセットの作業
+                      href: style-presets.md
                     - name: ファビコンの追加
                       href: add-favicon.md
                     - name: ようこそメッセージの追加
@@ -932,6 +938,10 @@
                   items:
                     - name: コンテナー モジュール
                       href: add-container-module.md
+                    - name: アコーディオン モジュール
+                      href: add-accordion.md
+                    - name: タブ モジュール
+                      href: add-tab.md
                 - name: マーケティング モジュール
                   items:
                     - name: プロモーション バナー モジュール
@@ -978,6 +988,10 @@
                   items:
                     - name: 製品収集モジュール
                       href: product-collection-module-overview.md
+                - name: ナビゲーション モジュール
+                  items:
+                    - name: 階層リンク モジュール
+                      href: add-breadcrumb.md
             - name: 検索
               items:
                 - name: 既定のカテゴリ ランディング ページと検索結果ページ
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: localizations/emea-fra-deployment.md
+            - name: ドイツ
+              items:
+                - name: ドイツ向け会計登録サービス統合サンプル
+                  href: localizations/emea-deu-fi-sample.md
             - name: インド
               items:
                 - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
@@ -1474,7 +1492,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
             - name: (ER) 電子申告における会社間データ ソース
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-            - name: さまざまな形式で送信電子ドキュメントを生成するための ER 形式を設計する
+            - name: さまざまな形式で送信電子ドキュメントを生成するための電子申告形式を設計する
               items:
                 - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1496,7 +1514,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
             - name: Excel テンプレートを再適用して電子申告形式を変更する
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-            - name: 他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する
+            - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
             - name: 財務分析コードを使用するための ER ソリューションを設計する
               items:
@@ -1592,13 +1610,13 @@
               items:
                 - name: JOIN データ ソースを使用して複数のアプリケーション テーブルからデータを取得する
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: 国のコンテキスト依存 ER モデル マッピングを構成する
+                - name: 国のコンテキスト依存電子申告モデル マッピングを構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                - name: 法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
+                - name: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
-                - name: 法人ごとの ER 形式のパラメーターの設定
+                - name: 法人ごとの電子申告形式のパラメーターの設定
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: ER 形式要素の実行を遅延する
+                - name: 電子申告形式要素の実行を遅延する
                   items:
                     - name: シーケンス要素の実行を延期する
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: テーマ設定のコンフィギュレーション
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: テーマの拡張
+                    - name: テーマを拡張してモジュール拡張機能を追加する
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: 基準テーマからテーマを拡張する
                       href: e-commerce-extensibility/extend-theme.md
                 - name: スクリプトの挿入
                   items:
@@ -2072,11 +2092,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server の拡張機能
               items:
-                - name: Retail Server OData コントローラーの拡張
+                - name: Commerce Scale Unit OData コントローラーの拡張
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Retail Server の顧客およびコンシューマー API
+                - name: Commerce Scale Unit の顧客およびコンシューマー API
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: 既定の Retail Server メタデータ コントローラーの拡張
+                - name: 既定の Commerce Scale Unit メタデータ コントローラーの拡張
                   href: dev-itpro/extend-metadata.md
                 - name: オフライン モードでの CRT サービスの呼び出し
                   href: dev-itpro/call-crt-service-offline.md
@@ -2094,10 +2114,8 @@
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: 顧客の基本設定データをチャネル データベースに追加
                   href: dev-itpro/add-customer-preference-channel.md
-                - name: Retail チャンネルのシークレットの管理
+                - name: 小売チャネルのシークレットの管理
                   href: dev-itpro/manage-secrets.md
-                - name: プロパティを販売注文に追加
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: CRT の拡張機能およびトリガー
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: トリガーを使用したトランザクションのブロック
