@@ -589,6 +589,8 @@
                   href: cost-management/inventory-value-report-storage.md
                 - name: 在庫エイジング レポート ストレージ
                   href: cost-management/inventory-aging-report-storage.md
+                - name: 在庫エイジング レポートの例とロジック
+                  href: cost-management/inventory-aging-report.md
             - name: 製造の会計
               items:
                 - name: BOM 計算
@@ -707,7 +709,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 集計の測定への財務分析コードの追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Power BI Desktop を使用した分析レポートの作成
+                - name: PowerBI Desktop を使用した分析レポートの作成
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json

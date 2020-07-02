@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)
                   href: get-started/whats-new-platform-update-34.md
-                - name: プラットフォーム更新プログラム 33 (2020 年 4 月)
-                  href: get-started/whats-new-platform-update-33.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: エンティティ マップの二重書き込みの有効化
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: 二重書き込みの通貨データ型の移行
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: 二重書き込みの管理
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
@@ -364,6 +364,8 @@
           items:
             - name: Azure Data Lake の概要
               href: data-entities/azure-data-lake-overview.md
+            - name: Azure Data Lake へのエクスポートのコンフィギュレーション
+              href: data-entities/configure-export-data-lake.md
             - name: Azure Data Lake の Finance and Operations アプリ
               href: data-entities/finance-data-azure-data-lake.md
             - name: エンティティ格納を Data Lake として使用可能にする
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: オンプレミス診断
                       href: deployment/on-premises-diagnostics.md
+                    - name: オンプレミス障害復旧コンフィギュレーション
+                      href: deployment/onprem-dr.md
                     - name: オンプレミス環境との PowerBI.com の統合
                       href: analytics/entity-store-on-prem.md
                     - name: 環境の再コンフィギュレーション
@@ -652,11 +656,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: 要求または応答シナリオの EventHandlerResult クラス
                   href: dev-tools/event-handler-result-class.md
-                - name: 'C# および X++ ソース コードを使用したビジネス ロジックの記述'
+                - name: C# および X++ ソース コードを使用したビジネス ロジックの記述
                   href: dev-tools/write-business-logic.md
                 - name: X++ と X++ コンパイラの変更
                   href: dev-tools/programming-language-support.md
-                - name: 'C# の LINQ プロバイダー'
+                - name: C# の LINQ プロバイダー
                   href: dev-tools/linq-provider-c.md
                 - name: ベスト プラクティス ルールの記述
                   href: dev-tools/author-best-practice-rules.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++ 属性クラス
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'X++ と C# の比較'
+                    - name: X++ と C# の比較
                       href: dev-ref/xpp-cs-comparison.md
                     - name: X++ 構文
                       href: dev-ref/xpp-syntax.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: セキュリティ アーキテクチャ
                   href: sysadmin/security-architecture.md
+                - name: Finance and Operations アプリの暗号化
+                  href: sysadmin/encryption.md
                 - name: セッション アイドル タイムアウトの設定
                   href: sysadmin/session-idle-timeout.md
                 - name: 最初から用意されているセキュリティ レポート

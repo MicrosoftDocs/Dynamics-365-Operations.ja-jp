@@ -19,49 +19,49 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4da37d45698290b40f6c72148f1500bef72127a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 69521ec8c664a7025050c94105eca58f7f2c5c00
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173088"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435563"
 ---
-# <a name="integrated-tax"></a><span data-ttu-id="77ed6-103">統合された税</span><span class="sxs-lookup"><span data-stu-id="77ed6-103">Integrated tax</span></span>
+# <a name="integrated-tax"></a><span data-ttu-id="4d2a1-103">統合された税</span><span class="sxs-lookup"><span data-stu-id="4d2a1-103">Integrated tax</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-<span data-ttu-id="77ed6-104">税設定データでは、間接税 (VAT、GST、売上税) および源泉徴収税の両方の設定が定義されます。</span><span class="sxs-lookup"><span data-stu-id="77ed6-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="77ed6-105">税金計算ルール、税率、税務会計、決済、およびその他の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="77ed6-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
+<span data-ttu-id="4d2a1-104">税設定データでは、間接税 (VAT、GST、売上税) および源泉徴収税の両方の設定が定義されます。</span><span class="sxs-lookup"><span data-stu-id="4d2a1-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="4d2a1-105">税金計算ルール、税率、税務会計、決済、およびその他の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="4d2a1-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="77ed6-106">テンプレート</span><span class="sxs-lookup"><span data-stu-id="77ed6-106">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="4d2a1-106">テンプレート</span><span class="sxs-lookup"><span data-stu-id="4d2a1-106">Templates</span></span>
 
-<span data-ttu-id="77ed6-107">次の表に示すように、税データには、データ操作中に連携して動作するエンティティ マップのコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="77ed6-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="4d2a1-107">次の表に示すように、税データには、データ操作中に連携して動作するエンティティ マップのコレクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4d2a1-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
 
-| <span data-ttu-id="77ed6-108">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="77ed6-108">Finance and Operations apps</span></span> | <span data-ttu-id="77ed6-109">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="77ed6-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="77ed6-110">説明</span><span class="sxs-lookup"><span data-stu-id="77ed6-110">Description</span></span> |
--------------------------|---------------------------------
-<span data-ttu-id="77ed6-111">税コード</span><span class="sxs-lookup"><span data-stu-id="77ed6-111">Tax codes</span></span>                   | <span data-ttu-id="77ed6-112">msdyn\_taxcodes.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-112">msdyn\_taxcodes.md</span></span> | 
-<span data-ttu-id="77ed6-113">税グループ</span><span class="sxs-lookup"><span data-stu-id="77ed6-113">Tax groups</span></span>                 | <span data-ttu-id="77ed6-114">msdyn\_taxgroups.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-114">msdyn\_taxgroups.md</span></span> | 
-<span data-ttu-id="77ed6-115">税品目グループ</span><span class="sxs-lookup"><span data-stu-id="77ed6-115">Tax item groups</span></span>             | <span data-ttu-id="77ed6-116">msdyn\_taxitemgroups.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-116">msdyn\_taxitemgroups.md</span></span> | 
-<span data-ttu-id="77ed6-117">免税</span><span class="sxs-lookup"><span data-stu-id="77ed6-117">Tax Exemptions</span></span>             | <span data-ttu-id="77ed6-118">msdyn\_taxexemptcodes.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-118">msdyn\_taxexemptcodes.md</span></span> | 
-<span data-ttu-id="77ed6-119">税務当局</span><span class="sxs-lookup"><span data-stu-id="77ed6-119">Tax Authorities</span></span>             | <span data-ttu-id="77ed6-120">msdyn\_taxauthorities.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-120">msdyn\_taxauthorities.md</span></span> | 
-<span data-ttu-id="77ed6-121">源泉徴収税コード</span><span class="sxs-lookup"><span data-stu-id="77ed6-121">Withholding tax codes</span></span>       | <span data-ttu-id="77ed6-122">msdyn\_withholdingtaxcodes.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-122">msdyn\_withholdingtaxcodes.md</span></span> | 
-<span data-ttu-id="77ed6-123">源泉徴収税グループ</span><span class="sxs-lookup"><span data-stu-id="77ed6-123">Withholding tax groups</span></span>     | <span data-ttu-id="77ed6-124">msdyn\_withholdingtaxgroups.md</span><span class="sxs-lookup"><span data-stu-id="77ed6-124">msdyn\_withholdingtaxgroups.md</span></span> | 
-<span data-ttu-id="77ed6-125">税勘定科目グループ</span><span class="sxs-lookup"><span data-stu-id="77ed6-125">Tax Ledger Account Group</span></span> | <span data-ttu-id="77ed6-126">msdyn\_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="77ed6-126">msdyn\_taxpostinggroups</span></span>     | 
+<span data-ttu-id="4d2a1-108">Finance and Operations アプリ</span><span class="sxs-lookup"><span data-stu-id="4d2a1-108">Finance and Operations apps</span></span> | <span data-ttu-id="4d2a1-109">Dynamics 365 のモデル駆動型アプリ</span><span class="sxs-lookup"><span data-stu-id="4d2a1-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="4d2a1-110">説明</span><span class="sxs-lookup"><span data-stu-id="4d2a1-110">Description</span></span> |
+-------------------------|---------------------------------|----|
+<span data-ttu-id="4d2a1-111">品目売上税グループ</span><span class="sxs-lookup"><span data-stu-id="4d2a1-111">Item sales tax group</span></span> | <span data-ttu-id="4d2a1-112">msdyn_taxitemgroups</span><span class="sxs-lookup"><span data-stu-id="4d2a1-112">msdyn_taxitemgroups</span></span> |
+<span data-ttu-id="4d2a1-113">消費税所轄官庁</span><span class="sxs-lookup"><span data-stu-id="4d2a1-113">Sales tax authorities</span></span> | <span data-ttu-id="4d2a1-114">msdyn_taxauthorities</span><span class="sxs-lookup"><span data-stu-id="4d2a1-114">msdyn_taxauthorities</span></span> |
+<span data-ttu-id="4d2a1-115">消費税非課税コード エンティティ CDS</span><span class="sxs-lookup"><span data-stu-id="4d2a1-115">Sales tax exempt code entity CDS</span></span> | <span data-ttu-id="4d2a1-116">msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="4d2a1-116">msdyn_taxexemptcodes</span></span> |
+<span data-ttu-id="4d2a1-117">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="4d2a1-117">Sales tax groups</span></span> | <span data-ttu-id="4d2a1-118">msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="4d2a1-118">msdyn_taxgroups</span></span> |
+<span data-ttu-id="4d2a1-119">消費税元帳転記グループ V2</span><span class="sxs-lookup"><span data-stu-id="4d2a1-119">Sales tax ledger posting groups V2</span></span> | <span data-ttu-id="4d2a1-120">msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="4d2a1-120">msdyn_taxpostinggroups</span></span> |
+<span data-ttu-id="4d2a1-121">源泉徴収税コード</span><span class="sxs-lookup"><span data-stu-id="4d2a1-121">Withholding tax codes</span></span> | <span data-ttu-id="4d2a1-122">msdyn_withholdingtaxcodes</span><span class="sxs-lookup"><span data-stu-id="4d2a1-122">msdyn_withholdingtaxcodes</span></span> |
+<span data-ttu-id="4d2a1-123">源泉徴収税グループ</span><span class="sxs-lookup"><span data-stu-id="4d2a1-123">Withholding tax groups</span></span> | <span data-ttu-id="4d2a1-124">msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="4d2a1-124">msdyn_withholdingtaxgroups</span></span> | 
+
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
 [!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
+
+[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
 
 [!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
 
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
+[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
+
+[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 
 [!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
 
 [!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 
