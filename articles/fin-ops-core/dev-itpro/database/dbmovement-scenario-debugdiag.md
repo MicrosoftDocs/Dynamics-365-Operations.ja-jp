@@ -3,7 +3,7 @@ title: 生産データベースのコピーのデバッグ
 description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 4e5238ede5477e29df2ce92d106de9945c90ea2d
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 8d3636f464b9f2c58f1f597b9e01446fa110dad0
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029434"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456547"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 
@@ -32,7 +32,7 @@ ms.locfileid: "3029434"
 
 > [!div class="checklist"]
 > * ユーザー受け入れテスト (UAT) 環境を更新します。
-> * 承認済リスト (「ホワイトリスト」) には、開発者の環境の IP アドレスを追加します。
+> * 承認済リスト (セーフ リスト) に開発者環境の IP アドレスを追加します。
 > * UAT データベースに接続できるように、開発者環境を更新します。
 > * ブレークポイントを設定し、データのデバッグを開始します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "3029434"
 
 この更新操作は、生産データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
 
-## <a name="add-your-ip-address-to-a-whitelist"></a>IP アドレスをホワイトリストに追加します。
+## <a name="add-your-ip-address-to-a-safe-list"></a>IP アドレスをセーフ リストに追加します
 
 既定では、すべてのサンドボックス標準受け入れテスト環境で Microsoft Azure データベース プラットフォームとして SQL データベースを使用します。 このような環境のデータベースは、最初に配置された Application Object Server (AOS) へのアクセスを制限するファイアウォールで保護されています。
 
@@ -69,7 +69,7 @@ EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment',
 開発環境に戻って SSMS を開き、UAT データベースに対して同じ **axdbadmin** 資格情報を使用して接続を試みます。 次の手順に進む前に接続できることを確認します。
 
 > [!NOTE]
-> 更新を実行するたびにファイアウォール ホワイトリストはリセットされます。 将来の必要なときに、このデータベースに DevTest 環境を追加する必要があります。
+> 更新を実行するたびにファイアウォールのセーフ リストはリセットされます。 将来の必要なときに、このデータベースに DevTest 環境を追加する必要があります。
 
 ## <a name="update-a-onebox-devtest-environment-to-connect-to-the-uat-database"></a>UAT データベースに接続する OneBox DevTest 環境を更新する
 

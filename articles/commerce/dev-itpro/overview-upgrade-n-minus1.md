@@ -1,6 +1,6 @@
 ---
-title: アップグレードおよび 小売用 N-1 サポート
-description: Dynamics 365 Retail のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 Retail headquarters で作業できます。
+title: Commerce のアップグレードおよび N-1 のサポート
+description: Dynamics 365 Commerce のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 Commerce headquarters で作業できます。
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: deb003703f8be7674d8815b81f1c973bccd3fac1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8d2855d7d8e21e8a5efcd012f1d7cd8eb5704495
+ms.sourcegitcommit: d64a07748bdd7c85877cfe0343bee952f235f38e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004663"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457182"
 ---
-# <a name="upgrade-and-n-1-support-for-retail"></a>Retail のアップグレードおよび N-1 のサポート
+# <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Retail の 7 月のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、Microsoft Dynamics AX 2012 R3 累積更新プログラム 10 (CU10) を実行する店舗を持つ顧客は、アップグレード後にバックオフィスで作業できます。 アップグレードと N-1 サポートの主な目的は、AX 2012 R3 の顧客がクラウドの利点を活用できるようにすることです。
+Microsoft Dynamics 365 Retail の 2017年7月のリリースでは、アップグレードと N-1 の対応が有効となりました。 N-1 のサポートによって、Microsoft Dynamics AX 2012 R3 累積更新プログラム 10 (CU10) を実行する店舗を持つ顧客は、アップグレード後にバックオフィスで作業できます。 アップグレードと N-1 サポートの主な目的は、AX 2012 R3 の顧客がクラウドの利点を活用できるようにすることです。
 
 次の機能を使用すると、顧客はシームレスにアップグレードできます。
 
@@ -45,8 +45,8 @@ Microsoft Dynamics 365 Retail の 7 月のリリースで、アップグレー�
  
 チャネルのアップグレード後構成のほとんどにおいて、手動での手順をほぼ必要としません。 顧客はアップグレード前およびアップグレード後のチェックリストを使用して、完了する必要があるタスクについて知ることができます。 アップグレード後のタスクには、アップグレードされたデータベースから店舗への完全な同期の開始、アップグレードされたデータベースに対するチャンネル、レジスター、およびデバイスの検証、トランザクションの同期の検証、N-1サポートが実施されていることの検証が含まれます。
  
-N-1 サポートで、顧客は、バックオフィスで N-1 パッケージをインストールする必要があります。 店舗では設定は必要ありません。 このインストールは、N-1 関連の構成の完了後、アップグレード ウィンドウで実行する必要があります。
+N-1 のサポートでは、顧客は Commerce 本部で N-1 パッケージをインストールする必要があります。 店舗では設定は必要ありません。 このインストールは、N-1 関連の構成の完了後、アップグレード ウィンドウで実行する必要があります。
 
-バックオフィスをアップグレードし、N-1 セットアップを完了した後、N-1 店舗のコンポーネントは、バックオフィスと通信できます。 N-1 のサポートのためにインストールが必要なチャネル側コンポーネントはありません。 ただし、バックオフィスと通信する N-1 店舗を有効にし、レジ担当者は初めてサインインするそのパスワードを変更する必要があります。
+Commerce 本部のアップグレードと、N-1 の設定の完了後、N-1 店舗のコンポーネントが Commerce 本部と通信できるようになります。 N-1 のサポートのためにインストールが必要なチャネル側コンポーネントはありません。 ただし、N-1 店舗が Commerce 本部と通信できるようにするためには、レジ担当者が最初にサイン インした際にパスワードを変更する必要があります。
  
 N-1インストールの手順については、 [段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド](n-1-installation-configuration.md) を参照してください。

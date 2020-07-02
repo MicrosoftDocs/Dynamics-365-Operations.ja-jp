@@ -3,7 +3,7 @@ title: オンプレミス環境での小売チャネルのコンポーネント�
 description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3e17193189a86aeb952edd90442a096b8a47e3a3
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: a388518838d09512fed21ce8ecf90a9a3ad28d40
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426383"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456562"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -39,7 +39,7 @@ ms.locfileid: "3426383"
 チャネル コンポーネントのインストールを開始する前に、まずオンプレミス環境のすべての事前インストール手順を完了してください。 この手順は、[オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)で説明されています。 さらに、コマースの全機能を使用するは、バージョン 8.1.1 をインストールする必要があります。 バージョン 8.1.2 に更新することをお勧めします。
 
 > [!NOTE]
-> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Commerce Scale Unit をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の Commerce Scale Unit デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
+> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Commerce Scale Unit をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の Commerce Scale Unit デバイスのみに許可されるように制限してください。 この場合、ファイアウォールが必要となるため、セーフ リストへの追加を強くお勧めします。
 
 ## <a name="installation-steps"></a>インストール手順
 
@@ -78,6 +78,11 @@ ms.locfileid: "3426383"
     - ModernPosSetup.exe
     - ModernPosSetupOffline.exe
     - StoreSystemSetup.exe
+
+     > [!NOTE]
+     > クラウド環境では、LCS から本部を通じてセルフサービス インストーラーを同期することができます([Dynamics 365 Commerceでセルフサービス インストーラーを同期します](../../../commerce/dev-itpro/synchronize-installers.md)) 。 オンプレミス環境ではこの機能を使用できませんが、これらの環境を LCS からダウンロードすることは可能です。 この SDK は、展開可能な zip 形式のパッケージ ファイルに含まれています。 セルフサービス インストーラーは、LCS **資産ライブラリ**から入手できます。 LCS でのアップロードやダウンロードの仕組みを使用することはできますが、本社の同期機能を使用することはできません。
+
+
 7.  ADFS コンピューターに移動し、InfrastructureScripts フォルダに移動してください。 これは、以前に実行した PowerShell スクリプトがあったのと同じファイル ディレクトリです (**RetailUpdateDatabase.ps1**)。 PowerShell スクリプト **Create-ADFSServerApplicationForRetail.ps1** を見つけます。
 8.  ご利用の ADFS コンピューターで、新規 PowerShell ウィンドウから **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'** コマンドを使用してこのスクリプトを実行します。 **HostUrl** の値は Service Fabric にて確認することができます。  **HostUrl** 値を見つけるには、 **Service Fabric** &gt; **アプリケーション ファブリック:/AXSF** &gt; **詳細** &gt; **Aad_AADValidAudience** に移動します。
 9.  AD FS 管理の **アプリケーション グループ** から新しく生成されたサーバー アプリケーションにアクセスします。

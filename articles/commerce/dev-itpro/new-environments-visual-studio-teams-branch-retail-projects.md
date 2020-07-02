@@ -1,7 +1,7 @@
 ---
 title: コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトの新しい環境、Microsoft Azure DevOps、およびのブランチ設定の推奨事項について説明します。
-author: Andreash1
+author: AndreasHassing
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 2df647ac782b95a16207a28bac66748cd9ee11db
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 7a3902cb724c1071e55301fec9b545a72b829f7f
+ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070784"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454944"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-commerce-projects"></a>コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -236,7 +236,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 コマース開発タスクに開発環境を準備することができます。 開発環境では、Dev ブランチの X++ と Retail SDK の両コード の場所をローカル フォルダーにマップします。 メタデータ フォルダー (X++) は、常に PackagesLocalDirectory フォルダーへ割り当てる必要があります。 RetailSdk フォルダーの場所は、次のガイドラインに従う必要があります。
 
 - 場所は、ローカル ユーザーのフォルダーのどこかにあるはずです。
-- ファイルパスは、256文字以内に制限されます。 そのため、Retail SDK のルートへの短いパスを使用します。 たとえば、**c:\\ユーザー\\\<ユーザー名\>\\ソース\\RetailSdk** を使用できます。
+- ファイルパスは、256文字以内に制限されます。 そのため、Retail SDK のルートへの短いパスを使用します。 たとえば **c:\\ユーザー\\\<user name\>\\ソース\\RetailSdk** を利用できます。
 
 X++ および Retail SDK をマッピングするには、現在のワークスペースを編集する必要があります。 **保留中の変更** \> **操作** \> **ワークスペース**を選択し、現在のワークスペースを次の図のように更新します。 前述のように、分岐のメタデータ フォルダを PackagesLocalDirectory フォルダに、RetailSdk を選択した短縮フォルダにマッピングする必要があります。
 

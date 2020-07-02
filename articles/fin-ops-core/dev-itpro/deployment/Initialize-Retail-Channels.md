@@ -3,7 +3,7 @@ title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 16130fec52ca3065049fec73fa6b8da87801feb1
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: f1e534498988e207277cfde9ae8a67696d662bad
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426334"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454995"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -68,7 +68,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 制限能力地域での配置の許容範囲にはかなり制約があります。 配置要求は、状況に応じて評価されます。 制限されたキャパシティ地域での配置に関して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。
 
-![![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
 
 ## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit を新しい環境の展開の一部として初期化します
 
@@ -132,15 +132,21 @@ Commerce Scale Unit は、次の地域に配置することができます。
 3. 本社で **既定** のチャネル データベースにマップされたすべてのチャネルは、新しい Commerce Scale Unit にマップするように更新されます。
 4. Commerce Data Exchange (CDX) 完全データ同期は、チャンネル データを新しいスケール ユニットに取り込むために実行されます。
 
-小売サーバーやクラウド販売時点管理を使用する店舗およびオンライン チャネルのすべての工程で、5 時間のダウンタイム ウィンドウを計画する必要があります。
+原則として、**Commerce Scale Unit の初期化の計画とテストを行う**には、店舗業務や、小売りサーバーやクラウドの販売時点管理を使用する E コマース チャネル業務のダウンタイムを 5 時間程度想定した計画を立てる必要があります。
 
-このプロセスは、本番データを使用してデータベースを更新した後に、サンドボックス環境で初めて実行する必要があります。 これにより業務検証が可能になり、移行プロセスにかかる時間についてのガイダンスが提供されます。
+1. 運用環境からサンドボックス UAT 環境へのデータベースの更新を実行します。 
+2. サンドボックス UAT 環境で Commerce Scale Unit を初期化します。 
+3. Commerce Scale Unit の初期化時間を記録します。 これは、運用環境でこの操作にかかる時間に相当するもので、その間は店舗の操作や電子商取引が利用できなくなります。
 
-Commerce Scale Unit は他のコンポーネントから専用の隔離された計算とストレージ リソースを提供するため、独自のチャネル データベースを持ちます。 したがって、移行の前に次の対策を実行する必要があります:
+Commerce Scale Unit を初期化する前に、次の追加手順を実行する必要があります。
 
-1. **POS のすべてのシフトがクローズしていることを確認してください。** 移行後、移行プロセス中に有効だったシフトを閉じることができなくなります。
-2. **すべての P ジョブが正常に完了していることを確認します。** 前のチャンネル データベースが維持され、トランザクション データが本社との間で同期されている間、開始する前に P ジョブを実行することをお勧めします。
-3. **すべての POS デバイスからサインアウトします。** POS 操作は移行中にサポートされません。
+- **すべての POS シフトを閉じる** - 移行の完了後、POS ユーザーは移行プロセス中に有効だったシフトを閉じることができなくなります。
+- **すべての P ジョブが正常に完了していることを検証する** - CSUを初期化する前に、保留中のトランザクションを同期させる P-ジョブが完了していることが推奨されています。
+- **すべての POS デバイスからサインアウトする** - 移行中の POS 操作には対応していません。
+- **POS で中断されたすべてのトランザクションを取り消して無効化する** - 中断されたトランザクションは、初期化の一部として保持されません。
+
+> [!IMPORTANT]
+> Commerce Scale Unit の初期化の一環として、以前に中断されたトランザクションは失われ、取り消すことはできません。 
 
 初期化期間中に実行される内容を以下に示します。
 

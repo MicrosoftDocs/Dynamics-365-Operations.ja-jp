@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
-ms.date: 02/07/2019
+ms.date: 06/18/2020
 manager: AnnBe
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: b0a07e3a5723789196f86cd88f5387efc03343bc
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 86b8ceb54de24db64d01b3280706169685e656b8
+ms.sourcegitcommit: 6f0560632092449ca5fc5a36513c68b8e7791528
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033010"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3465266"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -52,7 +52,7 @@ ms.locfileid: "3033010"
 > [!NOTE]
 > クライアント資格情報の付与フローを使用すると、アプリケーションはアクセス制御リストを保持します。 アクセス制御リストは、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** を順にクリックして見つけることができます。 **Azure Active Directory アプリケーション** ページには、承認済クライアント ID と、クライアント資格情報付与フローを使用して API が呼び出されたときに適用する必要があるユーザー セキュリティ マッピングが表示されます。
 >
-> オンプレミス配置については、このリストには AD FS からの有効なクライアント ID が必要です。 また、オンプレミスでの使用の場合、接続の確立時に、次の例における **\<baseurl\>** に **/namespaces/AXSF** を付加する必要があります。
+> オンプレミス配置については、このリストには AD FS からの有効なクライアント ID が必要です。 また、オンプレミスで使用する場合は、接続の確立時に、次の例にて示されている **\<baseurl\>** に **/namespaces/AXSF** を付加する必要があります。
 
 ## <a name="import-apis"></a>API のインポート
 
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 
 | パラメーター     | 説明 |
 |---------------------|--------------------------------------|
-| string executionId          | インポート処理の実行ID。 |
+| string executionId          | インポート処理の実行ID。 これは、UI ではジョブ ID と呼ばれます。 |
 | string entityName        | エラー ファイルの取得対象となるエンティティの名前。 |
 
 
@@ -188,7 +188,7 @@ HTTP/1.1 200 OK
 
 | パラメーター         | 説明 |
 |-------------------|-------------|
-| string executionId | インポートの実行 ID。 |
+| string executionId | インポートの実行 ID。 これは、UI ではジョブ ID と呼ばれます。|
 | string entityName | エラー ファイルを取得する対象のエンティティの名前。 |
 
 **出力パラメータ**
@@ -219,9 +219,7 @@ BODY
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "BlobId":"{<GUID>}",
-        "BlobUrl":"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>"
+    "value": "{\"BlobId\":\"{<GUID>}\",\"BlobUrl\":\"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>\"}"
     }
 }
 ```
@@ -230,7 +228,7 @@ HTTP/1.1 200 OK
 
 | パラメーター         | 説明 |
 |-------------------|-------------|
-| string packageUrl | BLOB ID を追跡するために使用される一意のファイル名。 一意のファイル名であることを保証するため、グローバル一意識別子 (GUID) を含めることができます。 |
+| 文字列 uniqueFileName | BLOB ID を追跡するために使用される一意のファイル名。 一意のファイル名であることを保証するため、グローバル一意識別子 (GUID) を含めることができます。 |
 
 **出力パラメータ**
 
@@ -265,9 +263,7 @@ BODY
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "value":"<executionId>"
-    }
+    "value":"<executionId>"
 }
 ```
 
@@ -277,7 +273,7 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string packageUrl        | Finance and Operations アプリに関連付けられている Blob Storage 内のデータ パッケージの URL。 |
 | string definitionGroupId | インポート用のデータ プロジェクトの名前。 |
-| string executionId       | ジョブに使用する ID。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
+| string executionId       | ジョブに使用する ID。 これは、UI ではジョブ ID と呼ばれます。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
 | bool execute             | このパラメーターを **True** に設定して対象の手順を実行します。 それ以外の場合、**False** に設定します。 |
 | bool overwrite           | パッケージ内で複合エンティティを使用する場合は、このパラメーターを常に **False** に設定する必要があります。 それ以外の場合、**True** に設定します。 |
 | string legalEntityId     | データ インポートの法人。 |
@@ -286,7 +282,7 @@ HTTP/1.1 200 OK
 
 | パラメーター          | 説明 |
 |--------------------|-------------|
-| string executionId | データ インポートの実行 ID。 |
+| string executionId | データ インポートの実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
 
 > [!NOTE]
 > **ImportFromPackage()** はバッチを使用してインポートを実行します。 したがって、並行インポートを実行するために、データ管理で並列処理ルールを使用する必要があります。 **ImportFromPackage()** を並列スレッドで呼び出すことはできません。 それ以外の場合、これは失敗します。
@@ -332,7 +328,7 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string definitionGroupId | エクスポート用のデータ プロジェクトの名前。 |
 | string packageName       | エクスポートされたデータ パッケージの名前。 |
-| string executionId       | ジョブに使用する ID。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
+| string executionId       | ジョブに使用する ID。 これは、UI ではジョブ ID と呼ばれます。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
 | bool reExecute           | このパラメーターを **True** に設定して対象の手順を実行します。 それ以外の場合、**False** に設定します。 |
 | string legalEntityId     | データ インポートの法人。 |
     
@@ -340,7 +336,7 @@ HTTP/1.1 200 OK
 
 | パラメーター          | 説明 |
 |--------------------|-------------|
-| string executionId | データ エクスポートの実行 ID。 |
+| string executionId | データ エクスポートの実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
 
 ### <a name="getexportedpackageurl"></a>GetExportedPackageUrl
 
@@ -368,9 +364,9 @@ HTTP/1.1 200 OK
 
 | パラメーター          | 説明 |
 |--------------------|-------------|
-| string executionId | データ プロジェクト実行の実行 ID。 |
+| string executionId | データ プロジェクト実行の実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
 
-**出力パラメータ**
+**出力パラメーター**
 
 | パラメーター      | 説明 |
 |----------------|-------------|
@@ -396,9 +392,7 @@ BODY
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "value":"<executionStatus>"
-    }
+    "value":"<executionStatus>"
 }
 ```
 
@@ -406,9 +400,9 @@ HTTP/1.1 200 OK
 
 | パラメーター          | 説明 |
 |--------------------|-------------|
-| string executionId | データ プロジェクト実行の実行 ID。 |
+| string executionId | データ プロジェクト実行の実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
 
-**出力パラメータ**
+**出力パラメーター**
 
 <table>
 <thead>

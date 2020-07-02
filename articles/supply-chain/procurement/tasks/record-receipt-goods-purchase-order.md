@@ -3,7 +3,7 @@ title: 発注書に記載されている商品の受取の記録
 description: このトピックでは、商品の受取を発注書に直接記録する方法について説明します。
 author: mkirknel
 manager: tfehr
-ms.date: 07/09/19
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6365ccf4414e49bc1f22bcedb42f192c5c9a5ee8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1aa4043aca2e53eae32256a98d556c25b4ec1957
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207626"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454790"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>発注書に記載されている商品の受取の記録
 

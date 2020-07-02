@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 024c1f6a0194ec6ba47e444d816c08876aab5e6f
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: be97631dc70bd5c38d74d31dc40edd08bea3e55a
+ms.sourcegitcommit: bdea45af52cab804e5d325ff3cee7f65aacfd8fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124820"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442729"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -45,7 +45,7 @@ Service Fabric Explorer には、Web ブラウザーと既定のアドレス `ht
 
 ### <a name="identify-the-primary-orchestrator"></a>プライマリ オーケストレータを識別します。
 
-Service Fabric Explorer でローカル エージェントなどのステートフル サービスのプライマリ インスタンスであるマシンを判別するには、**クラスター** \> **アプリケーション** \> **\<*対象のアプリケーションの例*\> LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** を展開します。
+Service Fabric Explorer でローカル エージェントなどのステートフル サービスのプライマリ インスタンスとなっているマシンを判別するには、**クラスター** \> **アプリケーション** \> **\<*intended application example*\> LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** を展開します。
 
 プライマリ ノードが表示されます。 ステートレス サービスまたは残りのアプリケーションについては、すべてのノードを確認する必要があります。
 
@@ -126,7 +126,7 @@ AXSFType (AOS) に **InBuild** のステータスが表示される場合、DB S
 
 #### <a name="service-fabric-logs"></a>Service Fabric ログ
 
-Service Fabric アプリケーションのさらなる詳細については、C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log のログ ファイルを参照してください。
+Service Fabric アプリケーションのさらなる詳細については、 C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log のログファイルを参照してください。
 
 ### <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -591,7 +591,7 @@ DataEncryption 証明書を作成するのにには、次のプロパティを�
 
 ## <a name="the-certificate-and-private-key-that-should-be-used-for-decryption-cant-be-found-0x8009200c"></a>暗号の解読に使用すべき証明書と秘密キーを見つけることができません (0x8009200C)
 
-証明書と ACL がない、または間違った拇印の入力がある場合は、特殊文字をチェックし、C:\\ProgramData\\SF\\\<AOSMachineName\>\\Fabric\\work\\Applications\\AXBootstrapperAppType\_App\<N\>\\log\\ConfigureCertificates-\<timestamp\>.txt で拇印を探します。
+証明書 や ACL が見つからない、拇印の入力が間違っている場合は、特殊文字を確認し、C:\\ProgramData\\SF\\\<AOSMachineName\>\\Fabric\\work\\Applications\\AXBootstrapperAppType\_App\<N\>\\log\\ConfigureCertificates-\<timestamp\>.txt で拇印を検索してください。
 
 次のコマンドを使用して暗号化されたテキストを検証することもできます。
 
@@ -1196,19 +1196,19 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 \-----
 ```
 
-## <a name="error-updates-to-existing-credential-with-keyid-key-is-not-allowed"></a>エラー、「KeyId『\<key\>』による既存の資格情報の更新は許可されていません」
+## <a name="error-updates-to-existing-credential-with-keyid-key-is-not-allowed"></a>エラー : 「KeyId '\<key\>' を使用した既存の資格情報の更新は許可されていません」
 
 次のエラーが表示される場合があります。
 
-> KeyId「\<key\>」を保持している既存の資格情報を更新することはできません。
+> KeyId '\<key\>' を使用した既存の資格情報の更新は許可されていません
 
 この問題を解決するための手順は、オンプレミス プロジェクトのみをご利用しているか、オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用しているかによって異なります。
 
 ### <a name="if-have-only-an-on-premises-project"></a>場合設置プロジェクトのみ
 
-オンプレミス プロジェクトのみの場合は、KeyId '\<key\>' を保持している既存の資格情報を更新することはできません。
+オンプレミス プロジェクトのみの場合は、KeyId '\<key\>' を使用して既存の資格情報を更新することはできません。
 
-> New-AzureRmADSpCredential : KeyId '\<key\>' による既存の資格情報の更新は許可されていません。  
+> New-AzureRmADSpCredential : KeyId '\<key\>' を使用した既存の資格情報の更新は許可されていません。  
 > At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1  
 > New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...  
 > CategoryInfo : InvalidOperation: (:) \[New-AzureRmADSpCredential\], Exception  
@@ -1340,7 +1340,7 @@ AOS サーバーにインストールされているすべてのネットワー�
 
 プラットフォームの更新 20 およびそれ以降では、データベース同期ログに問題があり、イベント ビューアーで同期ログが **Ax-DatabaseSynchronize** の下に作成されません。
 
-この問題を解決するには、 \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log に移動してください。 例えば次の場所に移動します。 C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log ここでは、DatabaseSynchronize からの出力された内容を確認できます。 Code\_AXSF\_M\_\<X\>.out files. このコンポーネントに関する問題をトラブルシューティングします。
+この問題を解決するには、  \<SF-dir\>\\AOS\_\<x\>\\ファブリック\\ワーク\\アプリケーション\\AXSFType\_アプリ\<X\>\\log にアクセスしてください。 例えば次の場所に移動します。 C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log ここに、Code\_AXSF\_M\_\<X\>.out ファイル内の DatabaseSynchronize からの出力を示します。 このコンポーネントに関する問題をトラブルシューティングします。
 
 ## <a name="you-cant-access-finance--operations-aadsts50058-a-silent-sign-in-request-was-sent-but-no-user-is-signed-in"></a>Finance + Operations にアクセスできません: 「AADSTS50058: サイレント サインインの要求が送信されましたが、ログインしているユーザーがいません」
 
@@ -1372,7 +1372,7 @@ Chrome ブラウザーでは、最初からリダイレクトがブロックさ�
 
 この問題を解決するには、次の手順に従います。
 
-1. [エージェント共有パス](setup-deploy-on-premises-pu12.md#setupfile) にて、 **netstandard.dll** ファイルを見つけます。 このファイルは、例えば \\wp\\\<名\>\\StandaloneSetup -\<バージョン\>\\アプリケーション\\AOS\\AXServiceApp\\AXSF\\コード\\在庫置場\\netstandard.dll に多くの場合存在します。
+1. [エージェント共有パス](setup-deploy-on-premises-pu12.md#setupfile) にて、 **netstandard.dll** ファイルを見つけます。 このファイルは、例えば \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll に存在する可能性があります。
 2. それぞれの AOS サーバーにて、管理者権限で コマンド プロンプトを開き、次のコマンドを実行します。
 
     ```Console
@@ -1451,3 +1451,26 @@ select * into databaselog_bak from databaselog
 truncate table databaselog
 ```
 
+## <a name="dbsync-fails-to-start"></a>DBSync が起動に失敗する
+**問題 :** AXSF アプリケーションが Service Fabric explorer で "InBuild" の状態のままとなり、配置が失敗する。 AXSF ノードの作業ディレクトリのログを確認すると、次の DBSync エラーが見つかります。
+
+```stacktrace
+Microsoft.Dynamics.AX.InitializationException: Database login failed. Please check SQL credentials and try again.
+   at Microsoft.Dynamics.AX.AOS.StartupInternal(String[] Arguments)
+   at Microsoft.Dynamics.AX.AOS.Startup()
+   at Microsoft.Dynamics.AX.AosConfig.?A0xb5100bbf.GetAosConfig()
+   at Microsoft.Dynamics.AX.AosConfig.Config.InitInternal()
+   at Microsoft.Dynamics.AX.AosConfig.Config.InitOnce(Boolean isOfflineMode)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.StartAosCode(SyncOptions syncOptions, String sqlConnectionString)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.ExecuteWithinAOS(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Func`1 func, Action`1 errorHandler)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.NOTE_LeavingSynchronizer_CallStackAboveThisLineIsCustomCode(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Action`1 a)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.LegacyCodepath.RunCustomAction(SyncOptions syncOptions, String sqlConnectionString, IMetadataProvider metadataProvider, Action`1 a)
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.PreTableSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.FullSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.RunSync()
+   at Microsoft.Dynamics.AX.Framework.Database.Tools.SyncEngine.Run(String metadataDirectory, String sqlConnectionString, SyncOptions options)
+```
+
+**理由 :** この問題は、SQL パスワードに特殊文字が含まれていることが原因で発生する場合があります。
+
+**解決策 :** SQL ユーザーのパスワードを更新し、特殊文字を削除します。 続いて、新しいパスワードを使用して Credentials.json ファイルを更新し、LCS から配置作業を再試行します。

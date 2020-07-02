@@ -1,5 +1,5 @@
 ---
-title: アプリケーション ライフサイクル管理
+title: 仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 description: このトピックでは、Finance and Operations の仮想エンティティを使用するソリューションのアプリケーション ライフサイクルについて説明します。
 author: Sunil-Garg
 manager: AnnBe
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 9a2c4c5e892ac79aa61f27b3aecd9048781239e2
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 40a71c2b265e515eef03d6cad271bdeae9db8f51
+ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416593"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456780"
 ---
-# <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
+# <a name="application-lifecycle-management-for-solutions-that-use-virtual-entities"></a>仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]

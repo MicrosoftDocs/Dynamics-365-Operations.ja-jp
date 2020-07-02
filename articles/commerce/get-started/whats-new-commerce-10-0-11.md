@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9141eaf4bcad41c04303fdfad266c8a10c9cf2a3
-ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
+ms.openlocfilehash: da92a2f793ae0a17ff717b5f4e409fe51902ac33
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3407511"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435605"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
@@ -44,7 +44,7 @@ ms.locfileid: "3407511"
 - [通知とミニカート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [テーマ拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
 - [トランザクション電子メールの新しいイベントとプレースホルダー](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
-- Commerce SDK が Visual Studio 2017 に更新
+- [Commerce SDK が Visual Studio  2017 に更新](../dev-itpro/retail-sdk/migrate-sdk)
 
 ## <a name="additional-resources"></a>追加リソース
 

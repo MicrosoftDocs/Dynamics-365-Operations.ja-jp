@@ -3,7 +3,7 @@ title: Dynamics Service Engineering チームへのサービス要求の送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 24029720de50b26a30a2f9c778dc6e5555dfff94
-ms.sourcegitcommit: 3fa1e8583003a90ba486f757c3826b139e1b3f73
+ms.openlocfilehash: 8d3695a58902c9e1c556d0a384441242d0479434
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421569"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456549"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -93,10 +93,10 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
    - **その他の要求** – **その他の要求** タイプをここで説明されているとおりに使用する必要があります。 DSE チームに明確ではない方法でリクエストを言葉で言うと、チームは説明を求めるコメントを入力し、リクエストが遅れます。 下記に記載されていないリクエストに対して**その他の要求**タイプを使用すると、リクエストは拒否されます。 DSE チームが次のアクションのいずれかを実行することを要求するには、この要求タイプを選択します。
 
       - 実稼動環境でのメンテナンス モードをオンにします。 詳細については、[メンテナンス モード](../sysadmin/maintenance-mode.md) を参照してください。
-      - 実稼動環境で明示的なインターネット プロトコル (IP) ホワイト リスト ルールを定義します。
+      - 運用環境で明示的なインターネット プロトコル (IP) セーフ リストのルールを定義します。
         
         > [!NOTE]
-        > セルフサービス環境では、明示的な空白記号のサポートは推奨されません。 詳細については、[削除済みまたは非推奨のプラットフォーム機能](../get-started/removed-deprecated-features-platform-updates.md#explicit-whitelisting-for-self-service-environments)を参照してください。
+        > セルフサービス環境では、明示的なセーフ リストのルールへのサポートは推奨されません。 詳細については、[削除済みまたは非推奨のプラットフォーム機能](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments)を参照してください。
         
       - "Power BI が有効になっていません" メッセージを受け取った場合に、サンドボックス環境、標準受け入れテスト環境、または実稼働環境で Microsoft Power BI Embedded をアクティブ化することを要求します。 システム管理者に問い合わせてください。
 
@@ -120,11 +120,11 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 | サービス要求のタイプ           | 適用可能な環境 | 要求されたサービス | リード タイム | ダウンタイム |
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | 環境配置         | 任意 | 環境配置 | サービス レベル契約 (SLA): 2 営業日以内 | |
-| パッケージ アプリケーション            | 生産 | 配置可能パッケージ アプリケーション | 5 時間 | 5 時間 |
+| パッケージ アプリケーション            | 運用 | 配置可能パッケージ アプリケーション | 5 時間 | データの量に基づく |
 | サンドボックスのポイントインタイム復元 | レベル 2 またはそれ以上のサンドボックス | データベース ポイントインタイム復元 | 5 時間 | 4 時間 |
-| 実稼働環境のポイントインタイム復元 | 生産 | データベース ポイントインタイム復元 | 5 時間 | 4 時間 |
+| 実稼働環境のポイントインタイム復元 | 運用 | データベース ポイントインタイム復元 | 5 時間 | データの量に基づく |
 | サンドボックス環境から実稼働環境          | 第 2 層以上のサンドボックスから実稼働環境 | サンドボックス環境から実稼働環境 | 5 時間 | 4 時間 |
 | 外                          | 生産 | メンテナンス モード | 5 時間 | 顧客はサービス要求においていつ環境のメンテナンス モードを再度終了する必要があるかを示しているため、適用不可 |
-|                                | 生産 | IP ホワイトリスト ルール | 5 時間 | 2 時間 |
-|                                | 生産 | Power BI Embedded | 5 時間 | 2 時間 |
+|                                | 運用 | IP セーフ リストの規則 | 5 時間 | 2 時間 |
+|                                | 運用 | Power BI Embedded | 5 時間 | 2 時間 |
 

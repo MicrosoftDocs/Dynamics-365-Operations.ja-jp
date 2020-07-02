@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c386025843edef83d229a42d3f2314678fadae20
-ms.sourcegitcommit: beddfba095c23b3265f0004f5124c4e9dc6404cc
+ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411933"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443467"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 5 月 28 日)
 
@@ -75,11 +75,14 @@ ms.locfileid: "3411933"
 
 ## <a name="database-logging-in-preview-in-june"></a>データベース ログ (6 月のプレビュー)
 
-データベース ログ機能を使用すると、監視するテーブルとフィールドを決定できます。 また、変更追跡を起動するイベントを決定することもできます。 時間の経過に伴う変更を確認するために、照会機能を使用できます。
+データベース ログ機能を使用すると、監視するテーブルとフィールドを決定できます。 また、Change Tracking を起動するイベントを決定することもできます。 時間の経過に伴う変更を確認するために、照会機能を使用できます。
 
 ## <a name="buy-and-sell-leave-in-preview-june-1"></a>休暇の売買 (6 月 1 日のプレビュー)
 
-一部の組織では、従業員が休暇を購入または売却できるという利点があります。 このプロセスは、多くの場合、手動で管理します。 この機能により、人事部門のポリシーと申請をより自動化された方法で管理できるようになり、休暇管理プロセスを合理化しながらミスを排除するのに役立ちます。
+一部の組織では、従業員が休暇を購入または売却できるという利点があります。 このプロセスは、多くの場合、手動で管理します。 この機能により、人事部門のポリシーと申請をより自動化された方法で管理できるようになり、休暇管理プロセスを合理化しながらミスを排除するのに役立ちます。 詳細については、以下を参照してください。
+
+- [休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [休暇の売買](hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>福利厚生管理のためのデータ管理フレームワーク (DMF) エンティティ
  

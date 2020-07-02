@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68507b825621fffc5e66ad2f9f52ec48bd9b6056
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: b30f19f8a5bdc400d6dc09163dbdfce0fb4d128f
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426327"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443936"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -122,6 +122,7 @@ ms.locfileid: "3426327"
 - [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
 - [コード署名証明書を使用して MPOS に署名する](pos-app-signing-certificate.md)
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
+- [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム ソフトウェア開発キット (SDK)](ecommerce-platform-sdk.md)

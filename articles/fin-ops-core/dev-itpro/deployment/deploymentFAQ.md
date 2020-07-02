@@ -3,7 +3,7 @@ title: セルフサービス配置の FAQ
 description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: rashmansur
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: a14b37eb3a60223c660c992bd2c8cbf9121b10b9
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: c6b297b17973c93ad72159e3e4226b97152c91e3
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100487"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456521"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -61,7 +61,7 @@ Microsoft リモート デスクトップ アクセスはなくなりますが�
 ### <a name="access-the-azure-sql-database"></a>Azure SQL データベースにアクセスする
 次の手順に従って、Microsoft Azure SQL データベースにアクセスすることができます。
 
-1. LCS から、SQL Management Studio を使用して Azure SQL データベースに接続するために使用するコンピューターの IP アドレスをホワイトリストに追加します。
+1. LCS から、SQL Management Studio を使用して Azure SQL データベースに接続に使用するコンピューターの IP アドレスをセーフ リストに追加します。
 2. LCS を使用して、データベース資格情報を参照するアクセスを要求します。 アクセスを要求する理由を提示する必要があります。 
 
 要求を送信するとすぐに自動的に承認されます。 1 分または 2 分以内に、LCS 環境の詳細ページでデータベース アクセスの資格情報を確認できるようになります。 SQL データベースに接続するために資格情報を使用することができます。

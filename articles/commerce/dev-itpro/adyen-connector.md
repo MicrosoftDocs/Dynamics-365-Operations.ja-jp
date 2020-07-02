@@ -3,7 +3,7 @@ title: Adyen 向け Dynamics 365 Payment Connector
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a891eecf4f68ba0e05ec2741fd66424837463b74
-ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
+ms.openlocfilehash: ab21b5bde6292d5c9f65494af968297068123bdb
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "3395998"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463173"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -95,7 +95,7 @@ ms.locfileid: "3395998"
 ### <a name="dynamics-365-retail-pos-version-1008"></a>Dynamics 365 Retail POS バージョン 10.0.8
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
-| adyen_v1_38p5 | adyen_v1_45p8 |
+| adyen_v1_38p5 | adyen_v1_48p6 |
 
 # <a name="1009"></a>[10.0.9](#tab/10-0-9)
 ### <a name="dynamics-365-retail-pos-version-1009"></a>Dynamics 365 Retail POS バージョン 10.0.9
@@ -107,7 +107,13 @@ ms.locfileid: "3395998"
 ### <a name="dynamics-365-retail-pos-version-10010"></a>Dynamics 365 Retail POS バージョン 10.0.10
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
-| adyen_v1_45p9 | adyen_v1_48p6 |
+| adyen_v1_45p9 | adyen_v1_51p7 |
+
+# <a name="10011"></a>[10.0.11](#tab/10-0-11)
+### <a name="dynamics-365-retail-pos-version-10011"></a>Dynamics 365 Retail POS バージョン 10.0.11
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_45p9 | adyen_v1_51p7 |
 
 ---
 
@@ -364,7 +370,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 4. **プロファイル** セクションの **ハードウェア プロファイル** フィールドでは、以前構成したハードウェア プロファイルを選択します。
 5. 変更を保存します。
 6. アクション ウィンドウで、**レジスター** タブの、**ハードウェア** グループで、**IP アドレスのコンフィギュレーション** を選択します。
-7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここで、**\<IP アドレス\>** および **\<POIID\>** は、Adyen 支払端末をオンボードしたときに記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。 この URL の値は大文字と小文字を区別することに注意してください。
+7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここでは、**\<IP address\>**  および **\<POIID\>** は、Adyen 支払端末をオンボードした際に記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。 この URL の値は大文字と小文字を区別することに注意してください。
 
 #### <a name="update-the-modern-pos-or-iis-hardware-station-configuration"></a><a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
 

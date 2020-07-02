@@ -3,7 +3,7 @@ title: 顧客ポータルのインストール、設定、更新
 description: このトピックでは、顧客ポータルのライセンスの詳細と設定手順を説明します。
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413982"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435611"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>顧客ポータルのインストール、設定、更新
 
@@ -35,7 +35,7 @@ ms.locfileid: "3413982"
 
 顧客ポータルは、次の図に示すように、Power Apps ポータルとデュアル書き込みと依存関係があります。
 
-![![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")](media/customer-portal-elements.png "Customer portal dependencies")
+![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
 Supply Chain Management の他の機能とは異なり、顧客ポータルのテンプレートは Power Apps ポータルに存在します。 したがって、顧客ポータルは、Power Apps ポータルやデュアル書き込みのエンティティが提供する機能や能力によって制限されます。
 
@@ -59,7 +59,7 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 
 1. [make.powerapps.com](https://make.powerapps.com/) に移動します。
 2. デュアル書き込みを有効化した環境を使用していることを確認します。
-3. **作成** タブにて、画面下にスクロールして **テンプレートから開始する** セクションを選択し、**Supply Chain Management の顧客**という名前のテンプレートを選択します。
+3. **作成** タブで、**テンプレートから開始する** セクションにスクロールダウンして、**顧客ポータル** という名前のテンプレートを選択します。
 4. 画面に表示される指示に従ってください。
 
 プロビジョニングが完了したら、**ホーム** ページの **自分のアプリ** セクションで顧客ポータルにアクセスできます。
@@ -71,7 +71,7 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 
 後から顧客ポータルにその他機能を追加する場合があります。 基となるソリューション コンポーネントに行われた変更は、自動的に環境に反映されます。 ただし、環境内で準備された Webサイトに対しては、構成データに加えられた変更は自動的に反映されません。 新しいテンプレートからコードを取得し、それをプロビジョニングされた Web サイトにマージすることで、これらの変更を手動で適用する必要があります。
 
-## <a name="resources"></a>リソース
+## <a name="additional-resources"></a>追加リソース
 
 顧客ポータルを設定してカスタマイズする方法の詳細については、次のドキュメントを参照して基礎となるテクノロジーについて確認してください :
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 3d6511f4ca6353599fc0cbe20417f0a2c171f426
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: d84685853e89be879a26cc1ed89dc248fb8c1f9a
+ms.sourcegitcommit: 86a0b37f6a82de0c65848f76bc41fdeaec05d381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412423"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "3439998"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10012-august-2020"></a>Dynamics 365 Finance 10.0.12 (2020 年 8 月) の機能のプレビュー
 
@@ -43,7 +43,7 @@ ms.locfileid: "3412423"
  - [会計登録者ワークスペース](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
  - [予測銀行残高](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
  - [キャッシュ フロー予測の外部データ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [詳細な元帳決済: 個別に処理された決済および逆決済](https://docs.microsoft.coms/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
+ - [詳細な元帳決済: 個別に処理された決済および逆決済](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
  - [仕入先支払提案の自動化](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
  
  ### <a name="public-sector"></a>公的機関

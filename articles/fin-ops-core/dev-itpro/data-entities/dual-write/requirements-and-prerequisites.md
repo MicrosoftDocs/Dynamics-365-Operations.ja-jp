@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d706a812c6bd4e5c8562596c9adf03435d8f51a7
-ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
+ms.openlocfilehash: 82ca7e4fd47783a6ac447cb726e65be94525c2df
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378957"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443931"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -34,6 +34,10 @@ ms.locfileid: "3378957"
 ## <a name="verify-requirements-and-grant-access"></a>要件を確認し、アクセスを許可する
 
 二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Common Data Service 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
+
+二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Common Data Service 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。 次の図に示すように、環境の設定時に**Dynamics 365 アプリ**を **はい**に設定する必要があります。 または、Common Data Service に付属している Dynamics 365 環境で、すでに**Dynamics 365 アプリを有効化する** が **はい** に設定されているモデル駆動型アプリを選択することもできます。
+
+:::image type="content" source="media/add_database.png" alt-text="アプリ切り替えの有効化" lightbox="media/add_database_expanded.png":::
 
 1. プラットフォーム更新プログラムとアプリのバージョンを検証します。
 
@@ -64,7 +68,7 @@ ms.locfileid: "3378957"
 
 3. Finance and Operations アプリに接続できるように Common Data Service アクセスを許可します。
 
-    1. 次の URL を使用して Finance and Operations アプリのインスタンスを開きます。 **\<BaseFinanceandOperationsappsURL\>** をインスタンスに置き換えます。
+    1. 次の URL を使用して Finance and Operations アプリのインスタンスを開きます。 **\<BaseFinanceandOperationsappsURL\>** をご利用のインスタンスと置き換えます。
 
         `https://<BaseFinanceandOperationsappsURL>/?cmp=DAT&mi=SysAADClientTable`
 

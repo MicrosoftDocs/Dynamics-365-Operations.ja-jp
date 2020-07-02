@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433925"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457569"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -36,6 +36,22 @@ ms.locfileid: "3433925"
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
+
+> [!NOTE]
+> バージョン 10.0.13 はまだリリースされていません。 この情報は計画目的のために提供されています。 バージョン 10.0.13 のコンテンツと機能は、変更されることがあります。 このリリースの詳細については、[ご利用いただけるサービス更新プログラム](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>3 つの jQuery コンポーネント ライブラリのアップグレード 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | セキュリティ修正プログラムと通貨を維持するために、3 つの jQuery コンポーネントライブラリが更新されています。   
+| **別の機能で置き換えられているか?**   | この問題は、jQuery (バージョン 2.1.4 からのバージョン 3.5.0)、jquery UI (バージョン 1.11.4 1.12.1 のバージョン 3.0.3)、jQuery qTip (バージョンから 2.2.1) に影響されます。 JQuery は移行ガイダンスをオンラインで提供しています。  |
+| **影響を受ける製品領域**         | 拡張可能なコントロール、特に廃止または削除された Api を使用したカスタム JavaScript コード |
+| **配置オプション**              | すべて |
+| **ステータス**                         | バージョン 10.0.13/プラットフォーム アップデート 37を使用すると、必要に応じて "3 つの jQuery コンポーネント ライブラリをアップグレードする" 機能を有効にして、最新のライブラリに移動することができます。 影響を受ける API の移行時間を確保するために、2021 年 4 月のリリースでは、新しいライブラリへの移動が必須となります。   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.12 に対する Platform update
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>無効なフィールド参照を含むグリッドまたはグループ コントロール フォームの拡張機能
@@ -50,11 +66,11 @@ ms.locfileid: "3433925"
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.11 に対する Platform update
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>セルフ サービス環境のための明示的なホワイトリスト
+### <a name="explicit-safe-lists-for-self-service-environments"></a>セルフ サービス環境のための明示的なセーフ リスト
 
 |   |  |
 |------------|--------------------|
-| **廃止 / 削除の理由** | IP ホワイトリストのプロセスが変更されました。 セルフサービスでは IP ホワイトリストはもうサポートしていません。 |
+| **廃止 / 削除の理由** | IP をセーフ リストに移動するプロセスが変更されました。 セルフサービスでは IP セーフ リストはもうサポートしていません。 |
 | **別の機能で置き換えられているか?**   | 詳細については、[Azure Active Directory の条件付きアクセスの構成](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) をご覧ください。|
 | **影響を受ける製品領域**         | セキュリティ |
 | **配置オプション**              | クラウド |

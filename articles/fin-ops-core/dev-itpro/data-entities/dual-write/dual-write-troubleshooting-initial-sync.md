@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 10065039fce441d7f96f700ff826d959e96f2479
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410084"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443852"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -39,7 +39,7 @@ ms.locfileid: "3410084"
 
 マッピングのテンプレートを有効にすると、マッピングの状態が **実行中** になります。 状態が **非実行中** のとなっている場合、初回の同期中にエラーが発生しています。 エラーを表示するには、**デュアル書き込み** ページの **初回同期の詳細** タブを選択し ます。
 
-![初回同期の詳細タブ](media/initial_sync_status.png)
+![[初期同期の詳細] タブでのエラー](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>初回同期を完了できません：400 要求が不正です
 
@@ -47,7 +47,7 @@ ms.locfileid: "3410084"
 
 マッピングと初回の同期実行時に、次のメッセージが表示される場合があります。
 
-*リモート サーバーからエラーが返されました：（400）要求が不正です。 AX のエクスポート中にエラーが発生しました*
+*(\[要求が不正です\]、リモート サーバーからエラーが返されました: (400) 要求が不正です)、AX のエクスポート中にエラーが発生しました*
 
 次に、完全なエラー メッセージの例を示します。
 
@@ -86,130 +86,127 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 1. Finance and Operations アプリにサインインします。
 2. **Azure Active Directory アプリケーション** のページで、**DtAppID** クライアントを削除し、再度追加します。
 
-![Azure AD アプリケーションのリスト](media/aad_applications.png)
+![Azure AD アプリケーションの一覧の DtAppID クライアント](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>初回の同期中の自己参照または循環参照エラー
 
 いずれかのマッピングに自己参照または循環参照がある場合、次のようなエラーメッセージが表示されることがあります。 エラーは次のカテゴリに分類されます:
 
-- [仕入先 V2 から msdyn_vendors エンティティ マッピングへ](#error-vendor-map)
-- [顧客 V3 から アカウント エンティティー マッピングへ](#error-customer-map)
+- [仕入先 V2–to–msdyn_vendors  エンティティ マッピングでのエラー](#error-vendor-map)
+- [顧客 V3–to–Accounts エンティティ マッピングでのエラー](#error-customer-map)
 
-## <a name="resolve-an-error-in-vendors-v2-to-msdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>仕入先 V2 のエラーを msdyn_vendors エンティティ マッピングに対して解決する
+## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>仕入先 V2–to–msdyn_vendors エンティティ マッピングでのエラーを解決する
 
-エンティティに **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドの値を持つ既存レコードがある場合、**msdyn_vendors** マッピングに対して **仕入先 V2** で次のような初期同期エラーが発生する場合があります。 これは、**InvoiceVendorAccountNumber** が自己参照フィールドであり、**PrimaryContactPersonId** が仕入先マッピングで循環参照であるためです。
+エンティティに **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドの値を持つ既存レコードがある場合、**msdyn\_vendors** に対して **仕入先 V2** のマッピングで次のような初期同期エラーが発生する場合があります。 これらのエラーの発生は、**InvoiceVendorAccountNumber** が自己参照フィールドであり、**PrimaryContactPersonId** が仕入先マッピングで循環参照であるためです。
 
-*フィールドの guid を解決できませんでした: <field>。検索が見つかりませんでした: <value>。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>*
+表示されるエラーメッセージの形式は次のとおりです。
 
-次にいくつか例を挙げます:
+*フィールド \<field\> のガイドを解決できませんでした。検索で \<value\> は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
 
-- *フィールドの guid を解決できませんでした: msdyn_vendorprimarycontactperson.msdyn_contactpersonid。検索が見つかりませんでした: 000056。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'*
-- *フィールドの guid を解決できませんでした: msdyn_invoicevendoraccountnumber.msdyn_vendoraccountnumber。検索が見つかりませんでした: V24-1。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'*
+次にいくつか例を挙げます。
 
-仕入先エンティティのこれらのフィールドに値を持つレコードがある場合は、以下のセクションの手順に従って、初期同期を正常に完了してください。
+- *フィールド msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid のガイドを解決できませんでした。検索で 000056 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *フィールド msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber のガイドを解決できませんでした。検索で V24-1 は見つかりませんでした。参照データが存在するかどうかは次の URL を試してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-1. Finance and Operations アプリで、マッピングから **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドを削除し、変更を保存します。
+仕入先エンティティの任意のレコードに **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドがある場合、以下のステップの手順に従って、初期同期を正常に完了してください。
 
-    1. **仕入先 V2 (msdyn_vendors)** の二重書き込みマッピング ページに移動し、**エンティティ マッピング** タブを選択します。左のフィルタで、**Finance and Operations apps.Vendors V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
+1. Finance and Operations アプリで、マッピングから **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドを削除し、マッピングを保存します。
 
-    2. **primarycontactperson** を検索して、ソース フィールド **PrimaryContactPersonId** を見つけます。
-    
-    3. **アクション** ボタンをクリックし、**削除** を選択します。
-    
-        ![自己参照または循環参照 3](media/vend_selfref3.png)
-    
-    4. 繰り返して、**InvoiceVendorAccountNumber** フィールドを削除します。
-    
-        ![自己参照または循環参照 4](media/vend-selfref4.png)
-    
-    5. マッピングの変更を保存します。
+    1. **仕入先 V2 (msdyn\_vendors)** の二重書き込みマッピング ページで、左のフィールドで **エンティティ マッピング** タブで、**Finance and Operations アプリ 仕入先 V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
+    2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース フィールドを見つけます。
+    3. **アクション** を選択し、**削除** を選択します。
 
-2. **仕入先 V2** エンティティの変更追跡を無効にします。
+        ![PrimaryContactPersonId フィールドの削除](media/vend_selfref3.png)
 
-    1. **データ管理 \> データ エンティティ** に移動します。
-    
+    4. これらの手順を繰り返して、**InvoiceVendorAccountNumber** フィールドを削除します。
+
+        ![InvoiceVendorAccountNumber フィールドの削除](media/vend-selfref4.png)
+
+    5. マッピングへの変更を保存します。
+
+2. **仕入先 V2** エンティティの Change Tracking をオフにします。
+
+    1. **データ管理**ワークスペースで、**フレームワーク パラメーター** タイルを選択します。
     2. **仕入先 V2** エンティティを選択します。
-    
-    3. メニュー バーの **オプション** をクリックし、**変更の追跡** をクリックします。
-    
-        ![自己参照または循環参照 5](media/selfref_options.png)
-    
-    4. **変更の追跡を無効にする** をクリックします。
-    
-        ![自己参照または循環参照 6](media/selfref_tracking.png)
+    3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-3. **仕入先 V2 (msdyn_vendors)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
+        ![Change Tracking オプションの選択](media/selfref_options.png)
 
-4. **CDS 連絡先 V2 (contacts)** マッピングの初期同期を実行します。 連絡先レコードも初期同期する必要があるため、仕入先エンティティの "基本連絡先" フィールドを同期する場合は、このマッピングを同期する必要があります。
+    4. **Change Tracking を無効にする** を選択します。
 
-5. フィールド **PrimaryContactPersonId** と **InvoiceVendorAccountNumber** を **仕入先 V2 (msdyn_vendors)** マッピングに追加し直し、マッピングを保存します。
+        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
 
-6. **仕入先 V2 (msdyn_vendors)** マッピングの初期同期を再度実行します。 変更の追跡が無効になっているため、すべてのレコードが同期されます。
+3. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
+4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。 連絡先レコードに対しても初期同期する必要があるため、仕入先エンティティの [基本連絡先] フィールドを同期する場合は、このマッピングを同期する必要があります。
+5. **PrimaryContactPersonId** フィールドと **InvoiceVendorAccountNumber** フィールドを **仕入先 V2 (msdyn\_vendors)** マッピングに追加し直し、マッピングを保存します。
+6. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を再度実行します。 Change Tracking がオフになっているため、すべてのレコードが同期されます。
+7. **仕入先 V2** エンティティの Change Tracking をオフにし直します。
 
-7. **仕入先 V2** エンティティの変更追跡を有効にします。
+## <a name="resolve-errors-in-the-customers-v3toaccounts-entity-mapping"></a><a id="error-customer-map"></a>Customers V3–to–Accounts エンティティー マッピングでエラーを解決する
 
-## <a name="resolve-an-error-in-customers-v3-to-accounts-entity-mapping"></a><a id="error-customer-map"></a>顧客 V3 のエラーをアカウント エンティティー マッピングに対して解決する
+エンティティに **ContactPersonID** フィールドと **InvoiceAccount** フィールドの値を持つ既存レコードがある場合、**アカウント** に対して **顧客 V3** のマッピングで次のような初期同期エラーが発生する場合があります。 これらのエラーは、**InvoiceAccount** が自己参照フィールドであり、**ContactPersonID** が仕入先マッピングで循環参照であるためです。
 
-エンティティに **ContactPersonID** フィールドと **InvoiceAccount** フィールドの値を持つ既存レコードがある場合、**アカウント** マッピングに対して **顧客 V3** で次のような初期同期エラーが発生する場合があります。 これは、**InvoiceAccount** が自己参照フィールドであり、**ContactPersonID** が仕入先マッピングで循環参照であるためです。
+表示されるエラーメッセージの形式は次のとおりです。
 
-*フィールドの guid を解決できませんでした: <field>。検索が見つかりませんでした: <value>。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>*
+*フィールド \<field\> のガイドを解決できませんでした。検索で \<value\> は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>`*
 
-- *フィールドの guid を解決できませんでした: primarycontactid.msdyn_contactpersonid。検索が見つかりませんでした: 000056。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'*
-- *フィールドの guid を解決できませんでした: msdyn_billingaccount.accountnumber。検索が見つかりませんでした: 1206-1。次の URL で、参照データが存在するかどうかを確認してください: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'*
+次にいくつか例を挙げます。
 
-顧客エンティティのこれらのフィールドに値を持つレコードがある場合は、以下のセクションの手順に従って、初期同期を正常に完了してください。 この方法は、アカウントや連絡先などのすぐに利用できるエンティティに使用できます。
+- *フィールド primarycontactid.msdyn\_contactpersonid のガイドを解決できませんでした。検索で 000056 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *フィールド msdyn\_billingaccount.accountnumber のガイドを解決できませんでした。検索で 1206-1 は見つかりませんでした。次の URL で、参照データが存在するかどうかを確認してください: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-1. Finance and Operations アプリで、**顧客 V3 (accounts)** マッピングからフィールド **ContactPersonID** と **InvoiceAccount** を削除し、マッピングを保存します。
+仕入先エンティティの任意のレコードに **ContactPersonID** フィールドと **InvoiceAccount** フィールドがある場合、以下のステップの手順に従って、初期同期を正常に完了してください。 この方法は、**アカウント** と **連絡先** などのすぐに利用できるエンティティに使用できます。
 
-    1. **顧客 V3 (accounts)** の二重書き込みマッピング ページに移動し、**エンティティ マッピング** タブを選択します。左のフィルタで、**Finance and Operations apps.Customers V3** を選択します。 右側のフィルターで、**Common Data Service.Account** を選択します。
+1. Finance and Operations アプリで、**顧客 V3 (アカウント)** マッピングからフィールド **ContactPersonID** フィールドと **InvoiceAccount** フィールドを削除し、マッピングを保存します。
 
-    2. **contactperson** を検索して、ソース フィールド **ContactPersonID** を見つけます。
-    
-    3. **アクション** ボタンをクリックし、**削除** を選択します。
-    
-        ![自己参照または循環参照 3](media/cust_selfref3.png)
-    
-    4. 繰り返して、**InvoiceAccount** フィールドを削除します。
-    
-        ![自己参照または循環参照](media/cust_selfref4.png)
-    
-    5. マッピングの変更を保存します。
+    1. **顧客 V3 (アカウント)** の二重書き込みマッピング ページの、**エンティティ マッピング** タブ、左のフィルタで、**Finance and Operations アプリ 顧客 V3** を選択します。 右側のフィルターで、**Common Data Service.Account** を選択します。
+    2. **contactperson** を検索して、**ContactPersonID** ソース フィールドを見つけます。
+    3. **アクション** を選択し、**削除** を選択します。
 
-2. **顧客 V3** エンティティの変更追跡を無効にします。
+        ![ContactPersonID フィールドの削除](media/cust_selfref3.png)
 
-    1. **データ管理 \> データ エンティティ** に移動します。
-    
+    4. これらの手順を繰り返して、**InvoiceAccount** フィールドを削除します。
+
+        ![InvoiceAccount フィールドの削除](media/cust_selfref4.png)
+
+    5. マッピングへの変更を保存します。
+
+2. **仕入先 V3** エンティティの Change Tracking をオフにします。
+
+    1. **データ管理**ワークスペースで、**フレームワーク パラメーター** タイルを選択します。
     2. **顧客 V3** エンティティを選択します。
-    
-    3. メニュー バーの **オプション** をクリックし、**変更の追跡** をクリックします。
-    
-        ![自己参照または循環参照 5](media/selfref_options.png)
-    
-    4. **変更の追跡を無効にする** をクリックします。
-    
-        ![自己参照または循環参照 6](media/selfref_tracking.png)
+    3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-3. **顧客 V3 (Accounts)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
+        ![Change Tracking オプションの選択](media/selfref_options.png)
 
-4. **CDS 連絡先 V2 (contacts)** マッピングの初期同期を実行します。 同じ名前のマップが 2 つあります。 **FO.CDS Vendor Contacts V2 から CDS.Contacts への同期のための二重書き込みテンプレート。新しいパッケージ \[Dynamics365SupplyChainExtended\] が必要です。** という説明のあるものを選択します マップの **詳細** タブで。
+    4. **Change Tracking を無効にする** を選択します。
 
-5. **顧客 V3 (accounts)** マッピングからフィールド **InvoiceAccount** と **ContactPersonId** を追加し、マッピングを保存します。 これで、**InvoiceAccount** フィールドと **ContactPersonId** フィールドの両方がライブ同期モードの一部になりました。 次の手順では、これらのフィールドの初期同期を完了します。
+        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
 
-6. **顧客 V3 (Accounts)** マッピングの初期同期を再度実行します。 変更の追跡が無効になっているため、同期を実行すると、**InvoiceAccount** と **ContactPersonId** のデータが Finance and Operations アプリから Common Data Service に同期されます。
+3. **顧客 V3 (アカウント)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
+4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。
 
-7. **InvoiceAccount** と **ContactPersonId** のデータをに Common Data Service から Finance and Operations に同期するには 、データ統合プロジェクトを使用します。
+    > [!NOTE]
+    > 同じ名前のマップが 2 つあります。 **詳細** タブで次の説明を持つマップを必ず選択してください: **FO.CDS 仕入先の連絡先 V2 から CDS.Contacts との間の同期のための二重書き込みテンプレート。新しいパッケージ \[Dynamics365SupplyChainExtended\] が必要です。**
 
-    1. Power Apps で、**Sales.Account** と **Finance and Operations apps.Customers V3** エンティティの間にデータ統合プロジェクトを作成します。 データの方向は、Common Data Service から Finance and Operations アプリである必要があります。  **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Common Data Service へデータを統合](https://docs.microsoft.com/power-platform/admin/data-integrator) を参照してください。
+5. **顧客 V3 (アカウント)** マッピングから **InvoiceAccount** フィールドと **ContactPersonId** フィールドを追加し、マッピングを保存します。 **InvoiceAccount** フィールドと **ContactPersonId** フィールドの両方が再度ライブ同期モードの一部になりました。 次の手順では、これらのフィールドの初期同期をおこないます。
+6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが Finance and Operations アプリから Common Data Service に同期されます。
+7. **InvoiceAccount** と **ContactPersonId** のデータを Common Data Service から Finance and Operations アプリに同期するには 、データ統合プロジェクトを使用します。
+
+    1. Power Apps で、**Sales.Account** と **Finance and Operations apps.Customers V3** エンティティの間にデータ統合プロジェクトを作成します。 データの方向は、Common Data Service から Finance and Operations アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Common Data Service へデータを統合](https://docs.microsoft.com/power-platform/admin/data-integrator) を参照してください。
 
         次の図は、**CustomerAccount** と **ContactPersonId** を更新するプロジェクトを示しています。
 
-        ![自己参照または循環参照](media/cust_selfref6.png)
+        ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト](media/cust_selfref6.png)
 
-    2. Finance and Operations アプリではフィルター基準と一致するレコードのみが更新されるため、Common Data Service 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] アイコンをクリックします。 **クエリの編集** ダイアログで、**_msdyn_company_value eq '\<guid\>'** のようなフィルター クエリを追加できます。 [フィルタ] アイコンが表示されない場合は、サポート チケットを作成して、データ統合チームにテナントのフィルター機能を有効にするよう依頼します。 **_Msdyn_company_value** のフィルター クエリを入力しない場合、すべてのレコードが同期されます。
+    2. Finance and Operations アプリではフィルター基準と一致するレコードのみが更新されるため、Common Data Service 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。 
 
-        ![自己参照または循環参照](media/cust_selfref7.png)
+        > [注記] フィルタ― ボタンが表示されない場合は、サポート チケットを作成して、データ統合チームにテナントのフィルター機能を有効にするよう依頼します。
 
-        これで、レコードの初期同期が完了します。
+        **\_msdyn\_company\_value** のフィルター クエリを入力しない場合、すべてのレコードが同期されます。
 
-8. Finance and Operations アプリで **顧客 V3** エンティティの変更追跡を有効にします。
+        ![フィルタ クエリの追加](media/cust_selfref7.png)
 
+    レコードの初期同期が完了しました。
+
+8. Finance and Operations アプリで、**顧客 V3** エンティティの Change Tracking をオンにし直します。

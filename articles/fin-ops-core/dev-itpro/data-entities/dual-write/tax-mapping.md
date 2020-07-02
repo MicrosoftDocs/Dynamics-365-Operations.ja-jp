@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4da37d45698290b40f6c72148f1500bef72127a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 69521ec8c664a7025050c94105eca58f7f2c5c00
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173088"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435563"
 ---
 # <a name="integrated-tax"></a>統合された税
 
@@ -38,30 +38,30 @@ ms.locfileid: "3173088"
 
 次の表に示すように、税データには、データ操作中に連携して動作するエンティティ マップのコレクションが含まれています。
 
-| Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
--------------------------|---------------------------------
-税コード                   | msdyn\_taxcodes.md | 
-税グループ                 | msdyn\_taxgroups.md | 
-税品目グループ             | msdyn\_taxitemgroups.md | 
-免税             | msdyn\_taxexemptcodes.md | 
-税務当局             | msdyn\_taxauthorities.md | 
-源泉徴収税コード       | msdyn\_withholdingtaxcodes.md | 
-源泉徴収税グループ     | msdyn\_withholdingtaxgroups.md | 
-税勘定科目グループ | msdyn\_taxpostinggroups     | 
+Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
+-------------------------|---------------------------------|----|
+品目売上税グループ | msdyn_taxitemgroups |
+消費税所轄官庁 | msdyn_taxauthorities |
+消費税非課税コード エンティティ CDS | msdyn_taxexemptcodes |
+消費税グループ | msdyn_taxgroups |
+消費税元帳転記グループ V2 | msdyn_taxpostinggroups |
+源泉徴収税コード | msdyn_withholdingtaxcodes |
+源泉徴収税グループ | msdyn_withholdingtaxgroups | 
+
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
 [!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
+
+[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
 
 [!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
 
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
+[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
+
+[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 
 [!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
 
 [!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3143d4771cb4a3941d81adbe83f8ea27bd48c38c
-ms.sourcegitcommit: ff716c5c4a2f24d16b8bfc002c2f388a450e72dd
+ms.openlocfilehash: 070004d06b22e8ad49a7857435059e1a973199af
+ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3341036"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456779"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -47,11 +47,13 @@ ms.locfileid: "3341036"
     + [既存 Finance and Operations アプリの二重書き込みを有効化](enable-dual-write.md)
     + [システム要件と前提条件](requirements-and-prerequisites.md)
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
-    + [二重書き込みのエンティティ マップを有効化](enable-entity-map.md)
+    + [エンティティ マップの二重書き込みの有効化](enable-entity-map.md)
+
++ [デュアル書き込みの通貨データ タイプの移行](currrency-decimal-places.md)
 
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 
-+ [エンティティとフィールド マッピングのカスタマイズ](customizing-mappings.md)
++ [エンティティとフィールドのマッピングのカスタマイズ](customizing-mappings.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
 

@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 456e3debe9b23bc2d882e5bcf9248ee5bfa3f405
-ms.sourcegitcommit: d55be11901c09409c5109df7f0a89c9989a1acc5
+ms.openlocfilehash: 5c0bf6195ca48f5033ec1f6b02f540e3bf2cf9e9
+ms.sourcegitcommit: bdea45af52cab804e5d325ff3cee7f65aacfd8fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3382919"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442728"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -259,10 +259,12 @@ Finance + Operations を機能させるために、いくつかのユーザー �
 | 財務レポート クリック ワンス デザイナー サービス アカウント | gMSA           |         | Contoso\\svc-FRCO$ |
 | AOS サービス アカウント                                     | gMSA           | このユーザーは、将来校正するために作成する必要があります。 今後のリリースでは、AOS を gMSA と連携させる予定です。 このユーザーを設定時に作成することで、gMSA へのシームレスな移行を確実にすることができます。 | Contoso\\svc-AXSF$ |
 | AOS サービス アカウント                                     | ドメイン アカウント | AOS は、一般提供 (GA) リリースでこのユーザーを使用します。 | Contoso\\AXServiceUser |
-| AOS SQL DB 管理者ユーザー                                   | SQL ユーザー       | Finance + Operations は、このユーザーを使用して SQL\* を認証します。 このユーザーも、今後のリリースで gMSA ユーザーに置き換えられます。 | AXDBAdmin |
+| AOS SQL DB 管理者ユーザー                                   | SQL ユーザー       | Finance + Operations は、このユーザーを使用して SQL\* を認証します。 このユーザーも、今後のリリース\*\*で gMSA ユーザーに置き換えられます。 | AXDBAdmin |
 | ローカル配置エージェント サービス アカウント                  | gMSA           | このアカウントは、ローカル エージェントによって、さまざまなノードでの展開を調整するために使用されます。 | Contoso\\Svc-LocalAgent$ |
 
-\* SQL 認証の SQL ユーザー名とパスワードは、暗号化されてファイル共有に格納されているため、保護されています。
+\* SQL ユーザーのパスワードに特殊文字が含まれている場合、配置中に問題が発生する可能性があります。
+
+\*\* SQL 認証で使用する SQL ユーザ名とパスワードは暗号化されてファイル共有に保存されているため、安全性が確保されています。
 
 ### <a name="4-create-dns-zones-and-add-a-records"></a><a name="createdns"></a> 4. DNS ゾーンの作成とレコードの追加
 
@@ -453,7 +455,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > [!NOTE]
 > 次のセクションでは、複数の VM での実行が必要です。 このプロセスは、指定されたリモート処理スクリプトを使用して、1 台のマシン (`.\Export-Scripts.ps1` を実行するのと同じマシンなど) から必要なスクリプトを実行するオプションを提供することで、簡単に行うことができます。 利用可能な場合、リモート処理スクリプトは、PowerShell セクションの「`# If Remoting`」コメントの後に宣言されます。 リモート処理スクリプトを使用するときは、セクションの残りのスクリプトを実行する必要はありません。そのような例については、セクションの本文を参照してください。 リモート処理では、[WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx) が使用され、特定のケースでは [CredSSP](https://msdn.microsoft.com/library/windows/desktop/bb931352(v=vs.85).aspx) が有効になっている必要があります。 CredSSP の有効化と無効化は、実行ごとにリモート処理モジュールによって処理されます。 資格情報の盗難の形でのセキュリティ リスクをもたらすため、CredSSP が使用されていない場合に有効のままにすることはお勧めしません。 設定が完了した場合、[CredSSP を終了処理する](#teardowncredssp) セクションを参照してください。
 
-1. 各 infrastructure\VMs\<VMName> フォルダーのコンテンツを対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーします)、次のスクリプトを管理者として実行します。
+1. 各 infrastructure\VMs\<VMName>  フォルダーのコンテンツを対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、自動的にターゲット VM にコンテンツをコピーします)、次のスクリプトを管理者として実行します。
 
     ```powershell
     # Install pre-req software on the VMs.
@@ -508,7 +510,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 5. 生成された ClusterConfig.json ファイルを \<ServiceFabricStandaloneInstallerPath\> にコピーします。
 
-6. 上位の権限を使用して Windows PowerShell で \<ServiceFabricStandaloneInstallerPath\> に移動します。 次のコマンドを実行して ClusterConfig をテストします。
+6. 上位の権限を使用して Windows PowerShell で  \<ServiceFabricStandaloneInstallerPath\>  にアクセスします。 次のコマンドを実行して ClusterConfig をテストします。
 
     ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json

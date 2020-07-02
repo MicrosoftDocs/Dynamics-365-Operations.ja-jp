@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8285b40f815f34cf0a2c6bc2a42225ed774c3495
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: cd0702c4675ccc5834d22e502bcd0bc3f917db2a
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412272"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456586"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -106,9 +106,9 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 プレビューが必要な場合は、**Office Web アプリケーション サーバー** フィールドを `https://localhost` に設定します。 プレビューは、その後は、エラー メッセージではなく、「プレビューを利用できません」というメッセージを表示します。
 
-### <a name="document-preview-wopi-will-not-work-in-environments-with-ip-whitelisting-enabled"></a>ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
+### <a name="document-preview-wopi-will-not-work-in-environments-with-an-ip-safe-list-enabled"></a>ドキュメント プレビュー (WOPI) は、IP セーフ リストが有効になっている環境では機能しません
 
-プレビューを提供する WOPI サービスは、ファイルのレンダリングを取得するためのファイル サービスへと接続し返すことができないため、ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
+プレビューを提供する WOPI サービスは、ファイル サービスに接続してファイルを取得してレンダリングすることができないため、ドキュメント プレビュー (WOPI) は、IP セーフ リストが有効になっている環境では動作しません。
 
 ## <a name="other-configuration"></a>他のコンフィギュレーション
 

@@ -3,7 +3,7 @@ title: プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクト オンボード ウィザードについて説明します。
 author: vetrivicky
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46cc5d8598bf4b868f9120e81ec1ece1dff1c192
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: 959116ed789857b2fd1e9a422472da085d506293
+ms.sourcegitcommit: 86a0b37f6a82de0c65848f76bc41fdeaec05d381
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421691"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "3439999"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -32,7 +32,6 @@ ms.locfileid: "3421691"
 Microsoft では、お客様から提供された情報を必要としています。 プロジェクトのオンボードを完了するときに、最新かつ正確なデータを提供する必要があります。 プロジェクトのオンボードを完了したら、環境を配置してプロジェクトの実装を続行できます。
 
 プロジェクトのオンボードにアクセスするには、LCS にログインし、メイン メニューで **プロジェクト オンボード** を選択します。
-
 
 > [!NOTE]
 > プロジェクトのオンボードは、実装プロジェクトで使用できます。また、Microsoft が管理する環境を配置する前に完了する必要があります。 実装プロジェクトに関する詳細情報については、[Finance and Operations アプリの顧客に向けた Lifecycle Services (LCS)](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps) を参照してください。
@@ -55,7 +54,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 - 実装プロジェクトの概要情報を提供します。
 - プロジェクトのビジョンと目標をいくつかの文で説明します。 この情報は、達成する目標とプロジェクトの成功を定義する方法を Microsoft が理解するのに役立ちます。
-- フル ロールアウト後のユーザー ライセンスの推定数を指定します。この番号は、現在のライセンス購入とは異なる場合があります。 変更が予定されていない場合は、現在のユーザー ライセンス数を入力します。 ライセンス タイプが該当しない場合は、**0** (ゼロ) を入力します。
+- 現在のライセンスを含めた完全ロールアウト後のユーザー ライセンスの予測される数量を指定します。 この番号は、現在のライセンス購入時とは異なる場合があります。 変更が予定されていない場合は、現在のユーザー ライセンス数を入力します。 ライセンス タイプが該当しない場合は、**0** (ゼロ) を入力します。
 - インプリメンテーション プロジェクトがデモ プロジェクトの場合、または別のテナントから移動する場合は、詳細を入力します。
 
 ## <a name="project-scope"></a>プロジェクト スコープ

@@ -3,7 +3,7 @@ title: エンティティ モデリング
 description: このトピックでは、Finance and Operations エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f4ebbeb2fa9485de0a12de8cb5504deb2cb9ee7
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 1caa6b569b46d1756e0809f64308db6e97176e48
+ms.sourcegitcommit: 7f3cec9d4a402db8a594b46ea36d6297e288cd79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416592"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3462518"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
@@ -97,6 +97,9 @@ Common Data Service の基本フィールドの使用に基づき、Finance and 
 Common Data Service の基本フィールドには文字列型のフィールドが 1 つしかないことが想定されているのに対し、Finance and Operations ではさまざまなデータ型の複数のフィールドを持つことができます。 文字列は、連結され、パイプ (\|) によって区切られており、最大 255 文字です。 255 文字を超える値はすべて切り捨てられます。 基本フィールドを表すこの仮想エンティティ フィールドの名前は、**mserp\_primaryfield** になります。
 
 ## <a name="relations"></a>リレーション
+
+> [!IMPORTANT]
+> 仮想エンティティとネイティブ エンティティを横断する書き込みトランザクションには対応していません。 整合性の確保を保証する方法がないため、この形式のトランザクションは使用しないことを推奨します。
 
 Finance and Operations エンティティのリレーションは、1 対多 (1: n) または多対 1 (n:1) のリレーションとしてモデル化されます。 これらのリレーションは、Common Data Service の仮想エンティティのリレーションシップとしてモデル化されています。 多対多 (n:n) のリレーションは、Finance and Operations ではサポートされていないことに注意してください。
 
@@ -180,36 +183,6 @@ Finance and Operations エンティティの添付ファイルは、エンティ
 このタイプのエンティティは、Finance and Operations の対応する添付ファイル エンティティとのリレーションを持ちます。 したがって、これらは前に説明した他の関係と同じパターンに従います。 つまり、添付ファイル機能が実装されている Finance and Operations エンティティは、仮想エンティティを使用して添付ファイルを使用できるようにします。 添付ファイルをサポートしていない Finance and Operations エンティティは、Common Data Service で仮想化された添付ファイルもサポートしません。
 
 Finance and Operations 仮想エンティティでサポートされるのは、添付ファイルの読み取りだけであることに注意してください。 現在、仮想エンティティを使用した添付ファイルの作成、更新、または削除はサポートされていません。
-
-## <a name="default-views"></a>既定のビュー
-
-エンティティ (ネイティブまたは仮想) が Common Data Service で作成されると、それに対して次の 5 つの既定のビューも作成されます。
-
-- 既定の公開ビュー
-- 簡易検索ビュー
-- 高度な検索ビュー
-- 関連ビュー
-- ルックアップ ビュー
-
-Common Data Service はエンティティの基本フィールドをこれらのすべてのビューに追加します。 作成者は、必要に応じて、これらのビューにフィールドを追加することができます。
-
-既定では、Finance and Operations エンティティには次の 5 つのフィールド グループがあります。
-
-- AutoReport
-- AutoLookup
-- AutoIdentification
-- AutoSummary
-- AutoBrowse
-
-フィールド グループを使用して、Common Data Service の既定のビューにある Finance and Operations 仮想エンティティの追加フィールドを入力します。 次の表に、フィールド グループを既定のビューにマップする方法を示します。
-
-| フィールド グループ        | 既定のビュー        |
-|--------------------|---------------------|
-| AutoReport         | 既定の公開ビュー |
-| AutoLookup         | ルックアップ ビュー         |
-| AutoIdentification | 簡易検索ビュー     |
-| AutoSummary        | 関連ビュー     |
-| AutoBrowse         | 高度な検索ビュー  |
 
 ## <a name="odata-actions"></a>OData アクション
 

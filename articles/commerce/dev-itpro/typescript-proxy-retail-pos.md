@@ -3,7 +3,7 @@ title: Typescript および小売販売時点管理 (POS) の C# プロキシ
 description: このトピックでは、コマース プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 29c16b8bcf308551c662aa323c6fecc6ac31d531
-ms.sourcegitcommit: 57f6e5569fcc6bde097bd2528fa5eb429bd53338
+ms.openlocfilehash: 862fbd14fb7c57156c8c04b325f340d8384e5171
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114722"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443477"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -47,7 +47,7 @@ Typescript プロキシを生成する手順と C# プロキシを生成する�
 ## <a name="generate-the-typescript-proxy"></a>Typescript プロキシを生成します
 
 > [!IMPORTANT]
-> 次の手順は Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 Finance にのみ適用されます。
+> 次の手順は Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 Finance にのみ適用されます。 Retail SDK のルート フォルダから MSBuild を使用する必要があります。 Visual studio の開発者コマンド プロンプト、または MSBuild コマンドプロンプトを使用して、参照フォルダー内のすべてのパッケージを復元してから、プロキシを生成します。 この手順を実行しない場合、RetailSDK\Reference フォルダーに CoreProxyGenerator.exe パッケージを利用できません。
 
 Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools フォルダーから CommerceProxyGenerator.exe ファイルを使用して、POS の typescript プロキシを生成します。
 

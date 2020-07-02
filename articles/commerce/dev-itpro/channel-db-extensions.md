@@ -3,7 +3,7 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: eacc53d8dc70ae7491406c14074e36a69e5d2ece
-ms.sourcegitcommit: 80465a66511d31c180e8a0c15fe44a7642e9ec9c
+ms.openlocfilehash: bb59a4f540b2c4a29e505867af8fef7f02c539da
+ms.sourcegitcommit: 6bf8602333191e5161ba3a9ceecf160c85ff7e79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3423459"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3484331"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -29,21 +29,19 @@ ms.locfileid: "3423459"
 
 チャネル データベース (チャネル DB) は、オンライン ストアまたは従来型の店舗などの 1 つまたは複数のコマース チャネルからのトランザクションおよびマスター データを保持します。 マスター データは Commerce Data Exchange (CDX) を使用して、バックオフィス (HQ) からチャネル データベースにプッシュ ダウンされます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して本社に引き戻されます。
 
-このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 以下の手順は、Finance and Operations、および Dynamics 365 Commerce にのみ適用します。
+このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 この手順は、Dynamics 365 Finance および Commerce にのみ適用されるものです。
 
 拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
-- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)。
-- Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)。
+- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
+- Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
 - Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
 
-Finance and Operations と Commerce では、拡張機能をサポートするため、**ext スキーマ**と呼ばれる新しいスキーマを導入しました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Finance and Operations と Commerce の両方では、CRT、AX または DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありませんというエラーが報告されます。
-
-拡張機能をサポートするため、**ext スキーマ**と呼ばれる新しいスキーマを導入しました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Commerce と Finance and Operations の両方では、CRT、AX または DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありませんというエラーが報告されます。
+Finance と Commerce では、拡張機能をサポートするため、**ext スキーマ** と呼ばれる新たなスキーマを導入しました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Finance と Commerce のいずれでも、CRT、AX や DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありません、というエラーが表示されます。 拡張機能には、展開の過程で CRT、AX、や DBO のスキーマ定義を読み取るアクセス許可がありません。 CRT、AX、や DBO のスキーマ定義を読み取る拡張スクリプトにクエリを含めないでください 。 
 
 > [!NOTE]
 > いずれかのチャネル DB フィールドの長さを伸ばす場合は、LCS で拡張機能の要求を作成し、EDT の伸長または小数点以下の精度を高める必要があります。 変更はチャネル DB に自動的にプッシュされません。また、拡張子には、チャネル DB - CRT、AX、または DBO スキーマでなにかを変更または修正するための許可は付与されません。 CRT または AX スキーマの何かを変更すると、LCS での展開が失敗します。
@@ -97,6 +95,7 @@ END;
 - ext スキーマでは、CRT、AX、またはDBO スキーマのデータ型を使用しないでください。 ext スキーマのカスタム タイプを作成して使用してください。
 - ビュー、手順、関数、またはデータベース コンポーネントを修正しないでください。
 - 可能な場合は、拡張機能からのデータベース コンポーネントへのアクセスや呼び出しは回避してください。 代わりに、CRT データ サービスを使用してデータを取得します。 データ サービスを使用する利点は、今後データベース スキーマに重大な変更が行われた場合でも、SLA まで継続的にサポートされることです。 ただし、必要なデータを公開しない CRT データ サービスのインスタンスもあります。 このような場合、チャネル データベース コンポーネントに結合するビューを作成することによって、このデータにアクセスすることができます。 ビューの作成は、CRT 拡張機能を使用してメモリ内で行うのではなく、データベース レベルで必要な形式のデータを構築する強力なツールになります。
+- DBO スキーマ オブジェクトは Commerce scale unit の展開では使用できないため、拡張スクリプトから dbo.objects にはアクセスしないでください。
 
 
 ```sql

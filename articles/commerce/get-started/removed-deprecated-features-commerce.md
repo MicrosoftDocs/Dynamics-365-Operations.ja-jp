@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335279"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443921"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -35,6 +35,16 @@ ms.locfileid: "3335279"
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commerce 10.0.11 リリースの削除済みまたは非推奨の機能
+### <a name="data-action-hooks"></a>データ アクションのフック
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | パフォーマンスの問題のために、データ アクション フック機能は廃止されました。 |
+| **別の機能で置き換えられているか?**   | データアクション層のビジネスロジックを変更するために、[データ アクションの上書き](../e-commerce-extensibility/data-action-overrides.md) を使用することが推奨されます。|
+| **影響を受ける製品領域**         | eコマースの拡張データ アクション |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Commerce 10.0.10 リリースの削除済みまたは非推奨の機能
 ### <a name="pos-operation-803---picking-and-receiving"></a>POS operation 803 - ピッキングと入荷

@@ -3,7 +3,7 @@ title: Azure Data Lake の Finance and Operations アプリ データ
 description: このトピックでは、Data Lakeを実装した Finance and Operations アプリ環境の設定方法を説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,78 +17,32 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: 6c4a63e7ca73dcc771f8ed0f2d9e76b840dc7260
-ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
+ms.openlocfilehash: 6184a50d14c1bc81b86249e6b95f6fdbe1ed3517
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3407464"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454998"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 
 [!include [banner](../includes/banner.md)]
 
-**Azure Data Lake にエクスポート** 機能を使用すると、Finance and Operations アプリ環境で Data Lake を使用するように構成することができます。 構成が完了すると、Data Lake には Finance and Operations アプリのテーブルとエンティティが反映されます。
-
 > [!NOTE]
-> - **この機能は、すべての地域またはすべての環境で使用できるわけではありません。** この機能がご利用の環境で表示されない場合、当機能は未対応です。
-> - Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能とする](entity-store-data-lake.md)で説明されている方法でこの機能を引き続き使用します。
+> **Azure Data Lake へのエクスポート**機能は、Microsoft Dynamics 365 Finance and Operations アプリで対応しているすべての地域および環境では使用できない場合があります。 Life cycle services (LCS)、または Finance and Operations アプリで **Azure Data Lake へのエクスポート**の機能が見つからない場合は、ご利用の環境でこの機能を使用できません。 この機能へのアクセスを許可する場合は、機能担当チームにメールでお問い合わせください (**FnODataLakePreview@service.microsoft.com**)。 この機能をご利用頂けるよう、迅速に対応します。 現時点では、 **Azure Data Lake へのエクスポート**機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウドベースの Tier 2 またはそれ以上の環境が必要です。
+> Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能にする](entity-store-data-lake.md) に記載されている方法に従ってこの機能を引き続き使用してください。
+ 
+ 
+**Azure Data lake にエクスポート**機能を使用すると、アプリケーションのデータをご利用の Azure Data lake (Gen 2) の Finance and Operations アプリにコピーできます。 このシステムでは、含めるテーブルやエンティティを選択できます。 必要なデータを選択した後、システムが初期コピーを行います。 システムは、変更、削除、追加を適用することで、選択したデータを最新の状態に保ちます。 Finance and Operations アプリのインスタンスのデータを変更後、data lake でデータが使用可能になるまでには数分を要する場合があります。 
 
-## <a name="overview"></a>概要
+この機能を使用するには、**Data Lake へのエクスポート**を構成する必要があります。 詳細については、[Azure Data Lake へのエクスポートの構成](configure-export-data-lake.md)を参照してください。
 
-このサービスを利用可能とするプロセスには、いくつかの手順があります。
-
-1. サブスクリプションに Microsoft Azure Data Lake Storage Gen2 アカウント (ストレージアカウント) を作成します。
-2. Azure Data Lake 統合を有効にするには、利用規約に同意してください。
-3. **Azure Data Lake へのエクスポート** 機能を有効にします。
-4. データ（Data Lake にステージングする必要のあるテーブルとエンティティ）を選択します 。
-5. Data Lake のテーブルを監視します。
-
-## <a name="create-a-data-lake-storage-gen2-account-in-your-subscription"></a>サブスクリプションに Data Lake ストレージ（Gen2）を作成します
-
-ストレージ アカウントはデータの格納に使用されます。 ストレージ アカウントを手動で作成するには、Azure サブスクリプションに対して管理者権限を持つユーザーである必要があります。 （最終的には、システムがユーザーに代わって自身の Azure サブスクリプションにストレージ アカウントを作成することができます）
-
-### <a name="manually-create-a-storage-account"></a>ストレージ アカウントの手動作成
-
-ご利用の Azure サブスクリプションにストレージ アカウントを作成し、Key Vault を使用してそのアカウントをシステムに提供することができます。 続いて、ストレージ アカウントのルートへのアクセスを許可するAzure Active Directory (Azure AD) のアプリケーション ID を作成する必要があります。 システムでは、Azure AD アプリケーションを使用して、フォルダ構造の作成とデータの書き込みを行います。 最後に、サブスクリプションに Key Vault を作成し、ストレージ アカウントに関する情報と、Microsoft Dynamics Lifecycle Services (LCS) の Data Lake 条件に同意してください。
-
-1. ストレージ アカウントを作成する。 手順については、[ストレージ アカウントの作成](entity-store-data-lake.md#create-storage-accounts) を参照してください。
-2. ご利用の Azure AD 環境のテナント ID を入力します。 Azure AD テナント ID は Azure ポータルで確認できます。 Azure portal にログインし、**Azure Active Directory** サービスを開きます。 **プロパティ** ページを開き、**ディレクトリ ID** フィールドの値をコピーします。
-3. Key Vault とシークレットを作成します。 手順については、 [Key Vault とシークレットを作成する](entity-store-data-lake.md#create-a-key-vault-and-a-secret)。 Key Vault のドメイン名システム (DNS) 名と秘密名を入力する必要があります。
-
-<!--### Let the system create a storage account -->
-
-<!--Instead of manually creating a storage account, you can have the system create a storage account in your own subscription on your behalf. This option will be made available in a future release. -->
-
-## <a name="accept-the-offer-and-terms-to-turn-on-the-data-lake-integration"></a>Data Lake 統合を有効にするには、利用規約に同意してください
-
-Data Lake 統合を構成するには、LCS の Data Lake の規約に同意する必要があります。 このタスクを完了するには、Finance and Operations アプリの環境管理者である必要があります。また、LCS ポータルにアクセスできる必要があります。
-
-1. [LCS](https://lcs.dynamics.com) にサインインします。
-2. **環境** ページで、**環境のアドイン** クイック タブを選択します。 **Azure Data Lake** が一覧に表示されている場合は、Data Lake アドインが既にインストールされているため、この手順の残りの部分は省略できます。 それ以外の場合は、残りの手順に従って Data Lake アドインをインストールしてください。
-
-    ![Data Lake アドインがインストールされていることを確認する](./media/LCS-EnvironmentPage-with-Addins.png)
-
-3. **新しいアドインのインストール**を選択します。
-4. **インストールするアドインの選択**ダイアログ ボックスで、一覧から **Azure Data lake** を選択します。 表示されない場合は、環境に対して当機能が未対応となっている可能性があります。
-
-    ![Azure Data Lake のオプションを選択する](./media/LCS-EnvironmentPage-with-DataLake-Flyover.png)
-
-5. **設定のアドイン** ダイアログ ボックスで、必要な情報を入力します。 質問に答えるには、既にストレージ アカウントが作成されている必要があります。 ストレージ アカウントをまだ持っていない場合は、作成するか、管理者にアカウントの作成代行を依頼してください。
-
-    ![Data Lake アドインの詳細を入力する](./media/azure-data-lake-addin.png)
-
-6. チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
-
-システムが、ご利用の環境に Data Lake をインストールし構成します。 インストールと構成が完了すると、 **環境** のページに **Azure Data Lake** の一覧が表示されます。
 
 ## <a name="turn-on-the-export-data-to-azure-data-lake-feature"></a>Azure Data Lake へのデータのエクスポート機能を有効にします
 
-Finance and Operations アプリのすべての新機能については、管理者は事前に **Azure Data Lake へのエクスポート** 機能を有効化しておく必要があります。
+管理者は事前に、**Azure Data Lake へのエクスポート**  機能を有効化しておく必要があります。 これを行うには、**機能の管理** ワークスペースにアクセスし、**Azure Data Lake にデータをエクスポート** 機能を選択し、**有効化** を選択してください。
 
-- **機能の管理** ワークスペースにて、**Azure Data Lake にデータをエクスポート** 機能を選択し、**有効化** を選択します。
-
-この機能を有効にすると、**システムの管理** の配下に **Azure Data Lake にエクスポートする** オプションが表示されます。
+この機能を有効化すると、**システムの管理** の配下に **Azure Data Lake にエクスポートする** オプションが表示されます。
 
 ## <a name="select-data"></a>データの選択
 
@@ -96,20 +50,45 @@ Data Lake にステージングする必要のあるテーブルとエンティ�
 
 1. ご利用の環境で、**システム管理** \> **Azure Data Lake にエクスポートする** へと移動します。
 2. **Data Lake にエクスポートするデータフィードの構成** を選択します。
-3. **Data Lakeへのデータフィードの構成** ページの **テーブルの選択** ページで、Data Lake にステージングするデータ テーブルを選択します。 テーブルは、表示名またはシステム名で検索できます。 テーブルが既に同期されているかどうかを確認することもできます。 完了後に、**テーブルの追加** を選択し、選択したテーブルを Data Lake に追加します。
+3. **テーブルの選択** タブの、**Data Lake に対するデータフィードの構成** ページで、 Data Lake にステージングするデータ テーブルを選択します。 テーブルは、表示名またはシステム名で検索できます。 テーブルが既に同期されているかどうかを確認することもできます。 
+4. 完了後に、**テーブルの追加** を選択し、選択したテーブルを Data Lake に追加します。
 
-    ![テーブルの選択](./media/Export-Tables-toData-lake-unselected.png)
+    ![テーブルの選択](./media/Export-Tables-toData-lake-unselectedv2.png)
 
-    また、必要な特定のテーブルについて詳しくない場合は、エンティティを使用してテーブルを選択できます。 エンティティはデータの抽象度が高く、複数のテーブルを含む場合があります。 エンティティを選択することで、それを構成するテーブルも選択することになります。
+5. **データフィードの有効化** を選択し 、**OK** を選択します。 テーブルを追加する際に、このテーブルの状態が **初期化中** と表示される場合があります。 これは、データの初期コピーを作成していることを意味します。 初期コピーが完了すると、状態が **実行中** に変更されます
+
+エラーが発生した場合は、状態が **無効** と表示されます。 **実行中**の状態を確認する際に、データ レイクのデータを使用でき ます。 **初期化**または**無効化**状態の間にデータ レイクデータを使用している場合は、一部のデータが表示されないことがあります。 
+
+必要な特定のテーブルについて詳しくない場合は、エンティティを使用してテーブルを選択することができます。 エンティティはデータの抽象度が高く、複数のテーブルを含む場合があります。 エンティティを選択することで、それを構成するテーブルも選択することになります。
     
-    - **使用するエンティティの選択** タブでエンティティを選択し、**エンティティを使用してテーブルを追加する** を選択します。
+7. **使用するエンティティの選択** タブでエンティティを選択し、**エンティティを使用してテーブルを追加する** を選択します。
 
-    ![エンティティを使用したテーブルの選択](./media/Export-Entities-toData-lake-unselected.png)
-
+    ![エンティティを使用したテーブルの選択](./media/Export-Entities-toData-lake-unselectedv2.png)
+    
     テーブルを選択する方法を問わず、Data Lake ではテーブルがステージングされます。
 
 ## <a name="monitor-the-tables-in-data-lake"></a>Data Lake のテーブルを監視する
 
-システムが Data Lake でデータの更新を維持しているため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 ただし、**Data Lake へのデータフィードの設定** ページの **アクティブ** タブで、進行中のデータ エクスポートの状態を確認することができます。
+システムが Data Lake でデータの更新を維持するため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 **Data Lake に対するデータフィードの構成** ページの **アクティブ** タブで、進行中のデータ エクスポートの状態を確認することができます。
 
-![テーブルの監視の進行状況](./media/Export-Tables-toData-lake-monitor.png)
+![テーブルの監視の進行状況](./media/Export-Tables-toData-lake-monitorv2.png)
+
+## <a name="troubleshooting-common-issues-and-errors"></a>一般的な問題とエラーに対するトラブルシューティング
+
+### <a name="export-to-data-lake-feature-is-not-available-in-your-region-andor-your-environment-at-this-time"></a>Data Lake へのエクスポート機能が表示されない場合は、この機能がご利用の環境や地域で対応していないことを意味します
+この機能は、Tier 1 (開発者) 環境では使用できません。 バージョン 10.0.12、またはそれ以上のプラットフォーム更新プログラムを含むサンドボックス環境 (Tier 2 またはそれ以降) が必要です。
+
+この機能は、 Finance and Operations アプリが利用可能となっている Azure の地域で利用できない場合や、ご利用の環境によっては利用できない場合があります。 この機能へのアクセスを許可する場合は、機能担当チームにメールでお問い合わせください (**FnODataLakePreview@service.microsoft.com**)。 この機能をご利用頂けるよう対応いたします。
+
+### <a name="export-to-data-lake-feature-is-currently-being-installed-for-your-environment-please-check-back-later"></a>Data Lake へのエクスポート機能は、ご利用の環境にインストールされています。 後でもう一度ご確認ください。
+この機能を使用するには、Data Lake へのエクスポートを構成する必要があります。 詳細については、[Azure Data Lake へのエクスポートの構成](configure-export-data-lake.md)を参照してください。
+
+### <a name="export-to-data-lake-add-in-is-not-installed"></a>Data Lake アドインへのエクスポート機能がインストールされていません。 
+Dynamics Lifecycle Services (LCS) を使用してこのアドインをインストールする場合は、管理者に問い合わせてください。 この機能を使用するには、Data Lake へのエクスポートを構成する必要があります。 詳細については、[Azure Data Lake へのエクスポートの構成](configure-export-data-lake.md)を参照してください。
+
+### <a name="export-to-data-lake-feature-failed-to-install-in-dynamics-life-cycle-services-lcs"></a>Data Lake へのエクスポート機能は、Dynamics Life Cycle Services (LCS) へのインストールに失敗しました。 
+Data Lake アドインへのエクスポート機能を再インストールするには、管理者に問い合わせてください。 問題が解消しない場合は、サポートにお問い合わせください。 Data Lake へのエクスポート機能を構成した際に、エラーが表示される場合があります。 または、ご利用の環境の変更がされている場合は、構成後に Data Lake にアクセスした際にエラーが発生する場合があります。 詳細については、[Azure Data Lake へのエクスポートの構成](configure-export-data-lake.md)を参照してください。
+
+### <a name="export-to-data-lake-feature-is-temporarily-unavailable-please-check-back-later"></a>Data Lake へのエクスポート機能は、一時的に使用できなくなります。 後でもう一度ご確認ください。
+このエラーが長時間継続するする場合は、サポートに連絡してください。  
+

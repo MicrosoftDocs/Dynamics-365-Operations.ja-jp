@@ -3,7 +3,7 @@ title: カスタマイズされた Modern POS のデバイスの有効化
 description: このトピックでは、カスタマイズした Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 Commerce Headquarters を構成する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: ca034abea3b8ef126d6fac58efa3d29c64c6fe1b
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 773f8022654b74d51ee9455929394783003f44af
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078057"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456548"
 ---
 # <a name="device-activation-of-a-customized-modern-pos"></a>カスタマイズされた Modern POS のデバイスの有効化
 
@@ -103,7 +103,7 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 14. **ファイル** \> **保存** を選択します。
 
 ### <a name="configure-dynamics-365-headquarters"></a>Dynamics 365 Headquarters の構成
-前の手順は、Modern POS アプリケーションを認証できるようにするために必要でした。 ここでは、要求を承認できるように、次の手順を実行し、新しい Azure AD アプリケーションを Headquarters の安全なプログラムの一覧に追加する必要があります。 (安全なプログラムの一覧はホワイトリストと呼ばれることもあります)。
+前の手順は、Modern POS アプリケーションを認証できるようにするために必要でした。 ここでは、要求を承認できるように、次の手順を実行し、新しい Azure AD アプリケーションを Headquarters の安全なプログラムの一覧に追加する必要があります。 (安全なプログラムの一覧はセーフ リストと呼ばれることもあります)
 
 1. Web ブラウザーで、Headquarters URL に移動し、Azure AD 資格情報を使用してログインします。
 2. **Retail と Commerce** &gt; **Headquarters の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター**の順に移動します。

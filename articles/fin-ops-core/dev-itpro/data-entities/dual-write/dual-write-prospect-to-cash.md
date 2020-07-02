@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270291"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443898"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -67,7 +67,7 @@ Sales および Supply Chain Management で見積と注文が作成され同期�
 + 販売見積ヘッダーの読み取り専用フィールドの**割引 %**、**割引**、**貨物量**。
 + **運賃条件**、**配送条件**、**送付方法**、および**配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
-また、Field Service ソリューションを使用している場合は、**見積明細行の簡易作成**パラメータを再度有効にする必要があります。 このパラメータを再度有効にすると、簡易作成機能を使用して、見積明細行の作成を続行することができます。
+また、Field Service ソリューションも使用している場合は、**見積明細行の簡易作成** パラメータを再度有効にする必要があります。 このパラメータを再度有効にすると、簡易作成機能を使用して、見積明細行の作成を続行することができます。
 1. Dynamics 365 Sales アプリケーションに移動します。
 2. ナビゲーション バー上部の設定アイコンを選択します。
 3. **詳細設定** を選択します。

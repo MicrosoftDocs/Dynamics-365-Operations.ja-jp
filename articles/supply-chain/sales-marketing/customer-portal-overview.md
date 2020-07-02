@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Management の顧客ポータルの概要
 description: このトピックでは、顧客ポータルの概要とその使用方法および機能について説明します。
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413981"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456929"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
 
@@ -37,6 +37,12 @@ ms.locfileid: "3413981"
 
 > [!NOTE]
 > 顧客ポータルのドキュメントは、Supply Chain Management の顧客ポータルをインストールや設定を行う管理者、カスタマイザー、システム インテグレーターに向けられています。 Supply Chain Management を運用している組織の顧客や、最終的なポータルの利用者は、_顧客_と_ユーザー_という用語で表わされます。
+
+## <a name="video"></a>ビデオ
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+[Dynamics 365 Supply Chain Management の顧客ポータル テンプレート](https://youtu.be/nPrqoLuHfV8) ビデオ (上記参照) は、YouTube で利用可能な [Finance and Operations 再生リスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="who-should-use-it"></a>対象となるユーザー
 
@@ -58,6 +64,6 @@ ms.locfileid: "3413981"
 
 [デュアル書き込み](https://docs.microsoft.com/powerapps/maker/portals/overview)は、Dynamics 365 のモデル駆動型のアプリと Finance and Operations アプリ間の、ほぼリアルタイムのやり取りを実現する既成のインフラストラクチャ製品です。 デュアル書き込みは、Finance and Operations アプリと Common Data Service の間で密に結合された双方向の統合を可能とします。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているエンティティに依存関係があります。 Supply Chain Management のデータを顧客ポータルに提示する前に、デュアル書き込みを適切なすべてのエンティティに対して有効化する必要があります。
 
-![![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")](media/customer-portal-elements.png "Customer portal dependencies")
+![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
 顧客ポータルは、 Power Apps ポータルを使用して Supply Chain Management のインストール データを使用した外部向けの Web サイトを構築したいと考えている組織にとっての出発点としての役割を果たします。 これにより、組織は、デュアル書き込み、Supply Chain Management、Power Apps ポータルを接続することができます。

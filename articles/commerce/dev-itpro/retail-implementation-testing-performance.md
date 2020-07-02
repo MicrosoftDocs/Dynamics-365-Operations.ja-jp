@@ -1,7 +1,7 @@
 ---
 title: テストおよびパフォーマンスの問題
 description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトのテスティングおよびパフォーマンスの推奨事項について説明します。
-author: Andreash1
+author: AndreasHassing
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 9260b6105305ec6227c9b5188c119fc3daa38420
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 217a602eaf585554cc659e5bf52bf95c48e41d88
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057654"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454994"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 

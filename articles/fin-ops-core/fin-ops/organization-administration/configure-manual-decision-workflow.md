@@ -3,7 +3,7 @@ title: ワークフローでの手動決定のコンフィギュレーション
 description: このトピックでは、手動決定のプロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178750"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455036"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>ワークフローでの手動決定のコンフィギュレーション
 
@@ -239,26 +239,6 @@ ms.locfileid: "2178750"
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
     <li><strong>利用可能なユーザー</strong>の一覧には、すべてのユーザーが含まれます。 決定を割り当てるユーザーを選択し、そのユーザーを <strong>選択されたユーザー</strong> リストに移動します。</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>キュー</td>
-    <td>作業項目キュー</td>
-    <td>
-    <ol>
-    <li><strong>キュー</strong> を選択した後、<strong>キュー ベース</strong> タブをクリックします。</li>
-    <li>決定を特定のキューに割り当てるには、次の手順に従います。: <ol>
-    <li><strong>キュー タイプ</strong> 一覧で、<strong>作業項目キュー</strong> を選択します。</li>
-    <li><strong>キュー名</strong> の一覧でキューを選択します。</li>
-    </ol>
-    </li>
-    <li>決定を割り当てるキューを特定の条件で決める場合は、次の手順に従います。 <ol>
-    <li><strong>キュー タイプ</strong> 一覧で、<strong>条件付き作業項目キュー</strong> を選択します。</li>
-    <li><strong>キュー名</strong> の一覧で、<strong>条件付きキュー</strong> を選択します。</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] このオプションは、ケース管理などのいくつかのワークフローのみで使用されます。</blockquote>
     </td>
     </tr>
     </tbody>

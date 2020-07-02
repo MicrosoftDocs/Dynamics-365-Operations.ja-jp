@@ -3,7 +3,7 @@ title: 配置の保守操作
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fc4696478af69226071b6d445258b781da786437
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: b208a076c64879e4ea2762cbf1d387eabd73ef84
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096882"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456546"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
@@ -73,7 +73,7 @@ Finance and Operations アプリには、[メンテナンス モード](../sysad
 
     自分に付与されるアクセス許可は、**アクセスの理由を**フィールドで選択した理由によって異なります。 たとえば、理由として**AX トラブルシューティング**を選択した場合、AX データベースへの読み取り専用アクセスが許可されます。 **パフォーマンスのチューニング**を理由として選択した場合、AX データベースへの書き込みアクセスが許可されます。
 
-4. LCS を通じて Microsoft Azure SQL データベースにアクセスするには、Microsoft SQL Server Management Studio を使用して SQL データベースに接続するコンピューターの IP アドレスが承認済みリスト (「ホワイトリスト」とも呼ばれます) に追加されている必要があります。
+4. LCS を通じて Microsoft Azure SQL データベースにアクセスするには、Microsoft SQL Server Management Studio を使用して SQL データベースに接続するコンピューターの IP アドレスが承認済みリスト (「セーフ リスト」とも呼ばれます) に追加されている必要があります。
 
     この手順を完了するには、新しい SQL データベース ファイアウォール ルールを追加することができます。
 
