@@ -3,12 +3,12 @@ title: 休暇タイプのコンフィギュレーション
 description: Dynamics 365 Human Resources で、従業員が使用できる休暇のタイプを設定します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198053"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428596"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
 
@@ -56,7 +56,9 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 
 8. **選択したロールにアクセスを制限**で、アクセスを制限するかどうかを選択します。 次に、**この休暇タイプに対するセキュリティ ロール**でセキュリティ ロールを選択します。 セキュリティ ロールは、この手順のはじめで説明した**ワークフロー ID** で選択したワークフローで定義されています。
 
-9. **保存** を選択します。
+9. **保留関係** で、この休暇タイプで別の休暇タイプを保留にするか、別の休暇タイプで保留にするかを選択します。 保留中の休暇タイプで休暇申請を行うと、保留済み休暇タイプに対して休暇の停止が自動的に作成されます。 
+
+10. **保存** を選択します。
 
 ## <a name="configure-leave-type-rules"></a>休暇タイプ ルールの構成
 
@@ -66,16 +68,15 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 
    休日は作業時間カレンダーで設定します。 詳細については、[作業時間カレンダーを作成する](hr-leave-and-absence-working-time-calendar.md)を参照してください
    
-## <a name="configure-preview-features"></a>プレビューの機能の構成
-
-休暇および欠勤のプレビュー機能を有効にしている場合は、それらの設定も構成する必要があります。
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. 振り替えるために繰越残日数に対して休暇タイプを選択します。 繰越に新しい休暇タイプを作成することもできます。 
-
+ 3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
+ 
+ 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
+ 
+ 
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
+- [休暇の中断](hr-leave-and-absence-suspend-leave.md)
+

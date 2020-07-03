@@ -3,7 +3,7 @@ title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 06/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fd83d693a25ac1c2b2014afe7df34d6b12fd52
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: df093f54bfb1c1fe2742212d781512315a468f39
+ms.sourcegitcommit: f79776e56a316fdba25cb40b3aad1963ae0ea623
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278887"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3489473"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -85,7 +85,7 @@ OData サービスを使用するためのコード例は、「[Microsoft Dynami
     - $expand (第 1 レベルの展開のみがサポートされます)
     - $select
 
-- OData サービスでは、最大ページ サイズが 1,000 のサービス ドリブン ページングをサポートします。
+- OData サービスでは、最大ページ サイズが 10,000 のサービス ドリブン ページングをサポートします。
 
 詳細については、以下を参照してください: [エンティティにバインドされている OData アクション](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355)
 

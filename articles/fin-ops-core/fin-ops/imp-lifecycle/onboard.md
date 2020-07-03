@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa6078a99d93ea027be64e03feea40fe2846602
-ms.sourcegitcommit: 07e425707eb20730f10246a27799f4deeef93f97
+ms.openlocfilehash: d0bfcafb054be513007a812b96c15d961841b1fb
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "3390873"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435617"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -56,7 +56,11 @@ LCS を開始するには、[Finance and Operations アプリ顧客用の Lifecy
 
 ## <a name="fasttrack-onboarding-services"></a>FastTrack オンボード サービス
 
-LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 LCS **実装プロジェクト** を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+LCS  **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 LCS **実装プロジェクト** を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 
+
+FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+
+LCS プロジェクト オンボードの詳細については、[LCS プロジェクト オンボードの](../../dev-itpro/lifecycle-services/project-onboarding.md)を参照してください。
 
 
 > [!NOTE]

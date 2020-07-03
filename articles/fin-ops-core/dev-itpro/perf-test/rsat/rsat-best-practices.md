@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a279cb2a8d8efd2ce56de243eec6fb01183e5ff
-ms.sourcegitcommit: 5d31d3e5f8549b761360c338bc2a1d9506c15999
+ms.openlocfilehash: 877d2a03ebe2cf77c10e0e37a8a7b2cbaef0dac8
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030036"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418528"
 ---
 # <a name="regression-suite-automation-tool-best-practices"></a>Regression Suite Automation Tool ベスト プラクティス
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Regression Suite Automation Tool (RSAT)/タスクレコーダーを使用して、クライアントの機能を記録する方法について説明します。
+このトピックでは、Regression Suite Automation Tool (RSAT) およびタスク レコーダーのベスト プラクティスと一般的な使用例について説明します。
 
-## <a name="authoring-test-cases-using-the-task-recorder"></a>タスクレコーダーを使用したテストケースの作成
+## <a name="author-test-cases-using-the-task-recorder"></a>タスク レコーダーを使用したテスト ケースの作成
 
 RSAT のタスク記録を作成する場合は、次の方法を使用します。
 
@@ -40,7 +40,7 @@ RSAT のタスク記録を作成する場合は、次の方法を使用します
 5. RSATでは、タスク レコーダーで認識されないテスト ステップを再生することはできません。 たとえば、テストケースの再生中にローカル ディスクからファイルをアップロードすることはできません。
 6. RSATでは、 **ページ更新** ステップを再生できません。 テストの記録中にページを更新しないでください。
 
-## <a name="using-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool を使用する 
+## <a name="best-practices-when-using-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool の使用時のベスト プラクティス 
 
 1. ツールを初めて開いたときに、 **設定** を選択し、必要なすべての設定が揃っていることを確認します。 
 2. ツールの新しいバージョンをインストールする前に、旧バージョンを終了して、アンインストールすることをお勧めします。 
@@ -56,7 +56,7 @@ RSAT のタスク記録を作成する場合は、次の方法を使用します
 
     ![ロケール、日付、時刻、数字の形式を設定する](media/locale.png)
 
-## <a name="management-of-local-recording-files"></a>ローカル記録ファイルの管理
+## <a name="manage-local-recording-files"></a>ローカル記録ファイルの管理
 
 RSATは、Azure DevOpsを使用して、テスト記録ファイル (タスク記録とも呼ばれます) を保存および管理します。 RSAT が Azure DevOps からテスト計画を読み込むと、関連付けられたファイルがローカル コンピューターの現在の**作業ディレクトリ**にダウンロードされます。 (この作業ディレクトリは、RSAT の設定で定義されています。)
 
@@ -84,7 +84,7 @@ GeneratorLogs ディレクトリには、ログ ファイルが含まれてい�
 > - 1.200.37255.0 よりも前のバージョンの RSAT を使用していて、最新バージョンにアップグレードする場合は、Azure DevOps からテスト ケースを再読み込みして、適切なディレクトリにダウンロードする必要があります。 それ以外の場合は、RSAT が失敗し、「ファイルが見つかりません」というエラーが表示されます。
 > - 複数の DevOps プロジェクトで作業している場合は、プロジェクトごとに別の作業ディレクトリを使用することをお勧めします。 そうしないと、複数のプロジェクトの添付ファイルが同じディレクトリ構造に混在してしまう可能性があります。
 
-## <a name="how-to-modify-a-task-recording"></a>タスクの記録を変更する方法
+## <a name="modify-edit-a-task-recording"></a>タスクの記録の変更 (編集)
 
 既存のタスク記録を変更する場合は、これらのベストプラクティスに注意してください。 
 
@@ -97,4 +97,16 @@ Web クライアントで、タスク レコーダー ウィンドウを開き�
 ![記録の再生オプション](media/playback-recording.png)
  
 編集した記録を再生し終わったら、保存します。 これで、RSAT で使用できるようになります。
+
+## <a name="copy-test-cases-in-azure-devops"></a>Azure DevOps でのテスト ケースのコピー 
+
+Azure DevOps でテスト スイートを作成するとき、テスト ケースとその添付ファイルが重複することがよくあります。 コピーしたテスト ケースに既存の Excel パラメーター ファイルが添付されている場合、RSAT では、Excel ファイルを手動で編集することなく、それを実行することはできません。 Excel パラメーター ファイルの **テスト ケース ID** は、Azure DevOps テスト ケース ID と一致している必要があります。
+コピーされたすべての Excel パラメーター ファイルを編集する必要があります。 次の図では、Excel ファイルが Azure DevOps のテスト ケース番号 53 に関連付けられています。
+
+![copy-test-cases](media/copy-test-cases.png)
+
+RSAT バージョン 1.210 では、このプロセスが簡単になりました。 不一致のすべての事例を自動的に修正するには、グリッドで目的のテスト ケースを選択し、**新規** メニューで **テスト ケース ID の不一致を解決** を選択します。
+
+![resolve-test-case-id-mismatch](media/resolve-test-case-id-mismatch.png)
+
 

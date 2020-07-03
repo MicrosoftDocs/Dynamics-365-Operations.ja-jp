@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce アーキテクチャの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
 author: samjarawan
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 6c3874983a1779e86607632b2c3ff91a217ea547
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: ef08ce8310d3960c93b55dacd3d2d38157534ee9
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254784"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426328"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -100,19 +100,19 @@ Commerce Scale Unit を介して公開されるヘッドレス コマース エ�
 
 [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)では、企業が従業員のリソースを総合的に把握し、統一された方法で管理することができます。 採用プロセスから人材の計画や社員の時間管理まで、統合された経験を提供します。 詳細については、[Dynamics 365 Human Resources のヘルプ リソース](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome) を参照してください。
 
-### <a name="commerce-scale-unit"></a>Commerce Scale Unit
+### <a name="commerce-scale-unit"></a>コマース スケール ユニット
 
-小売業は分散型組織であり、業務の概略をハブ＆スポークモデルで表現することができます。 Dynamics 365 Commerce はこのモデルに対応しています。本部の機能（ハブ）と、多数の分散型チャネル コンポーネント（スポーク）を持ち、店舗内や近くのMicrosoftが管理している Azure データセンターに展開して自己管理することができます。 スポークは、物理的な分離（スケールの関数）と1つの更新の原子単位を表すため、スケール単位と呼ばれています。
+小売業は分散型組織であり、業務の概略をハブ＆スポークモデルで表現することができます。 Dynamics 365 Commerce はこのモデルに対応しています。本部の機能（ハブ）と、多数の分散型チャネル コンポーネント（スポーク）を持ち、店舗内や近くのMicrosoftが管理している Azure データセンターに展開して自己管理することができます。 スポークは、物理的な分離 (スケールの関数) と 1 つの更新の原子単位を表すため、スケール単位と呼ばれています。
 
-クラウドやエッジ コンピューティングのシナリオを容易にするために、Commerce Scale Unit は、Microsoft が管理する SaaS（Software as a Service）コンポーネント（クラウド スケール ユニット）と、ローカルで配置できる自己管理型コンポーネント（ストア スケール ユニット）のどちらでも利用できます。 単一の環境には、クラウド規模の単位と店舗規模の単位を混在させることができます。 そのため、ネットワークの冗長性を導入して接続性を向上させることで、店舗ごとに運用上の間接費への投資を調整することができます。 詳細については、[店舗内トポロジーの選択](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology) を参照してください。
+クラウドやエッジ コンピューティングのシナリオを容易にするために、Commerce Scale Unit は、Microsoft が管理する SaaS (Software as a Service) コンポーネント (クラウドの Commerce Scale Unit) と、ローカルで配置できる自己管理型コンポーネント (自己ホスト) のどちらでも利用できます。 単一の環境には、Commerce Scale Unit (クラウドと自己ホスト) を混在させることができます。 そのため、ネットワークの冗長性を導入して接続性を向上させることで、店舗ごとに運用上の間接費への投資を調整することができます。 詳細については、[店舗内トポロジーの選択](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology) を参照してください。
 
-#### <a name="cloud-scale-units-microsoft-managed"></a>クラウドのスケール単位 (Microsoft管理)
+#### <a name="commerce-scale-units-cloud"></a>Commerce Scale Unit (クラウド)
 
-それぞれの環境には、複数のスケールユニットを関連付けることができます。 それぞれのスケールユニットは、独立してサービスを提供、更新することができ、各スケールユニットは、1 つまたは複数の法人にまたがる 1 つまたは複数のチャネルにサービスを提供することができます。 各スケールユニットは、対応するすべての Azure の地域に配置できます。また、複数のスケール ユニットを同じ地域に配置することもできます。 各スケールユニットは独立しているため、チャンネルの集合に対して更新を段階的にロールアウトできます。
+それぞれの環境には、複数の Commerce Scale Unit を関連付けることができます。 それぞれの Commerce Scale Unit は、独立してサービスを提供、更新することができ、各スケールユニットは、1 つまたは複数の法人にまたがる 1 つまたは複数のチャネルにサービスを提供することができます。 各 Commerce Scale Unit は、対応するすべての Azure の地域に配置できます。また、複数の Commerce Scale Unit を同じ地域に配置することもできます。 各 Commerce Scale Unit は独立しているため、チャンネルの集合に対して更新を段階的にロールアウトできます。
 
-#### <a name="store-scale-units-self-managed"></a>店舗のスケール単位 (自己管理)
+#### <a name="commerce-scale-units-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 
-クラウドのスケーリング単位をエッジコンピューティングにすることにより、インターネットの接続性が悪い場合た不安定になる場合にも対応できます。 このアプローチは多くの小売業者にとって、店舗に物理的な足跡を残すことを意味します。 店舗のスケール単位を使用することで、小売業者は、Azure クラウド上で実行されるのと同じ業務ロジックと機能を店舗に取り込むことができます。 このような場合、店舗内接続の方が信頼性は高くなりますが、これらコンポーネントの自己管理には、監視と更新の点で追加の間接費が必要になります。 詳細については、[店舗内トポロジーの選択](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology) を参照してください。
+Commerce Scale Unit をエッジ コンピューティングにすることにより、インターネットの接続性が悪い場合た不安定になる場合にも対応できます。 このアプローチは多くの小売業者にとって、店舗に物理的な足跡を残すことを意味します。 Commerce Scale Unit (自己ホスト) を使用することで、小売業者は、Azure クラウド上で実行されるのと同じ業務ロジックと機能を店舗に取り込むことができます。 このような場合、店舗内接続の方が信頼性は高くなりますが、これらコンポーネントの自己管理には、監視と更新の点で追加の間接費が必要になります。 詳細については、[店舗内トポロジーの選択](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology) を参照してください。
 
 ### <a name="e-commerce-platform"></a>E コマースのプラットフォーム
 

@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d9c9599698bfc65e99f088ea75dc340692b240db
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: 8893f77f1be462b32a5ece1af286f87539481825
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368809"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406463"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -43,10 +43,16 @@ ms.locfileid: "3368809"
 | 2.3.0               | このバージョンに、配置前スクリプトと配置後スクリプトのサポートが追加されます。  |
 | 2.3.1               | このバージョンでは、一部の環境でのクリーンアップ中に発生する可能性があるオーケストレーション サービスのクラッシュを修正します。<br><br>プラットフォーム更新プログラム 29 以前のバージョン 10.0.5 を展開するには、FinancialReportingDeployer.exe.config. の自動更新に事前配置スクリプトを使用する必要があります。詳細については、[オンプレミス展開のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework)を参照してください。 |
 | 2.4.0               | このバージョンでは、展開の問題が修正され、ローカル エージェントのランタイムがアップグレードされます。 |
+| 2.5.0               | このバージョンは依存関係を更新し、クリーンアップ バグを修正します。 |
+
+## <a name="whats-new-in-local-agent-250"></a>ローカル エージェント 2.5.0 の新機能
+
+- ローカル エージェント 2.5.0 は、さまざまな依存関係の新しいバージョンを取得します。 主な変更点は、Service Fabric と Entity Framework です。
+- また、このリリースでは、サービスをクリーンアップせずにクリーンアップが失敗した場合、その後の再実行が常にクリーンアップ中に失敗するバグを修正します。
 
 ## <a name="whats-new-in-local-agent-240"></a>ローカル エージェント 2.4.0 の新機能
 
-- ローカル エージェント 2.4.0 では、Lifecycle Services (LCS) から最新の変更を取り込むために .Net Framework 4.8 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
+- ローカル エージェント 2.4.0 では、Lifecycle Services (LCS) から最新の変更を取り込むために .NET Framework 4.8 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
 - このリリースでは、ハードコーディングされたタイムアウトのために AXService の展開が遅い環境で失敗する問題も修正されています。
 
 ## <a name="whats-new-in-local-agent-230"></a>ローカル エージェント 2.3.0 の新機能

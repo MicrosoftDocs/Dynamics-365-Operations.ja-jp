@@ -3,7 +3,7 @@ title: Microsoft FastTrack
 description: このトピックでは、Microsoft FastTrack の概要を説明します。 FastTrack は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。
 author: Jeff-Luo-MSFT
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jeluo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 32cbd313f34e2fec225e7edd07ba956a33ee68ad
-ms.sourcegitcommit: 8bd87814d32dc4941a84b696d821960455265709
+ms.openlocfilehash: 9e6fcdcfe32498a9509e7beaf8305abb2a3564c3
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117057"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435622"
 ---
 # <a name="microsoft-fasttrack"></a>Microsoft FastTrack 
 
@@ -37,7 +37,7 @@ Microsoft FastTrack は、Microsoft Dynamics 365 に円滑、かつ確実に移�
 
 FastTrack を開始するには、プロジェクトがライセンスの最少要件を満たしている必要があります。 詳細については、[Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。 現時点では、Dynamics 365 Finance and Operations の計画または同等のもののために最低 20 のシートがあります。
 
-Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワークスペースがプロビジョニングされた後、FastTrack チームは現在のプロジェクト チームに連絡してプロジェクトに参加し、プログラムに関する情報を提供します。 必要なアクションはありません。 LCS のユーザー情報が最新の状態であり、設定の電子メール アドレスが監視されていることを確認する必要があります。
+Microsoft Dynamics Lifecycle Services (LCS) で、**実装プロジェクト** のワークスペースがプロビジョニングされた後は、Microsoft FastTrack チームがオンボーディング の進捗を監視します。 LCS 実装プロジェクト を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 LCS のプロジェクト オンボードが最も正確な日付で完了していることと、設定に記載されている電子メールアドレスを監視することが重要です。 詳細については、[LCS プロジェクトのオンボード](../../dev-itpro/lifecycle-services/project-onboarding.md) を参照してください。
 
 | FastTrack プログラム | 収益 | 技術解説 | ワーク ショップ | ワークショップ の フォローアップ | 専用の FastTrack エンジニアリング リソース |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +82,7 @@ FastTrack コミュニティでは、顧客およびパートナーが質問を�
 - サービスの提供方法、FastTrack エンジニアリング チームのサポートをいつどこで求めるかの説明
 - FastTrack チームが共有できる重要な成功要因と重要な知識
 
-多くの場合、指名された FastTrack ソリューションアーキテクトは、パートナーとのキックオフ ミーティングと、対象となる顧客がオンボーディング プロセスを完了した後の顧客とのキックオフ ミーティングをスケジュールすることで、契約を初期化します。 顧客のオンボードの詳細については、[導入プロジェクトのオンボード](../imp-lifecycle/onboard.md)を参照してください。 
+多くの場合、指名された FastTrack ソリューションアーキテクトは、パートナーとのキックオフ ミーティングと、対象となる顧客がオンボーディング プロセスを完了した後の顧客とのキックオフ ミーティングをスケジュールすることで、契約を初期化します。 詳細については、[LCS プロジェクトのオンボード](../../dev-itpro/lifecycle-services/project-onboarding.md) を参照してください。
 
 一般的なパートナー キックオフ ミーティングの形式は、1時間の Microsoft Teams 通話です。 顧客の場合は、3時間の Microsoft Teams の通話をキックオフ ミーティングで行います。 推奨される参加者は、顧客のプロジェクト スポンサーなどの主要な利害関係者、プロジェクト マネージャー、ソリューション アーキテクト、テクニカル/機能の責任者、顧客の業務プロセスの責任は、パートナー、および Microsoft teams が含まれます。 また、キックオフ ミーティングは、導入パートナーが以前にこのプロセスを経験している場合は、顧客とパートナーを組み合わせたセッションの形式でも実施できます。
 

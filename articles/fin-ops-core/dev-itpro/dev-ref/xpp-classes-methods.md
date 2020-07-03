@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfe636204d6234e4d7bac90ec0d44edccf13f53d
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 3bd7e2afe4207a06bec4a0772d5cc689ec6bfb60
+ms.sourcegitcommit: c0f24752436b03e475291acedc4e79ddd478e8c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872658"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "3436095"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 
@@ -400,12 +400,12 @@ display int value()
 既定のパラメータを持つクラスのコード例を次に示します。
 ```xpp
 // This is an example of a function being used as the default.
-public class Person 
+class Person
 {
     date birthDate;
 
-    // The constructor that takes a date type as
-    // a parameter. That value is assigned to the field member birthDate. 
+    // The constructor that takes a date type as a parameter. 
+    // That value is assigned to the field member birthDate.
     void new(date _date)
     {
         birthDate = _date;
@@ -414,44 +414,49 @@ public class Person
     // The CalculateAgeAsOfDate method references the birthDate field and has an
     // optional parameter. In this example, the default value is the
     // return value of a function.
-    public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )  
+    public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )
     {
         return (_calcToDate - birthDate) / 365;
     }
 
+    public static void callPerson()
+    {
 
-// This code instantiates a Person and calls CalculateAgeAsOfDate.
-Person person = new Person(13\5\2010);   // birthDate is initialized.
-// Optional parameter's default is used.
-info("Age in years: " + num2str(person.CalculateAgeAsOfDate(),2,0,0,0));
-// Output is "9" in July 2019.
+        Person person = new Person(13\5\2010);
 
-// January 2, 2044  is the parameter value for _date.
-info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
-// Output is "34".
+        // Optional parameter's default is used.
+        Info(strFmt('Age in years today is %1 years', 
+                real2int(person.CalculateAgeAsOfDate())));
+
+        // January 2, 2044  is the parameter value for _date.
+        Info(strFmt('Age in years on %1 is %2 years',
+                2\1\2044,
+                real2int(person.CalculateAgeAsOfDate(2\1\2044))));
+    }
+
 }
 ```
 
-次の例では、2 番目の省略可能なパラメーターにスキップできないことを示します。 最初の方法には 2 つの省略可能なパラメーターがあります。 2 つ目の方法は、最初のメソッドの呼び出し元です。 呼び出し元は\_i3 の既定値のみをオーバーライドすることを希望していますが、コンパイラでは、すべての前のオプション パラメーターが呼び出しでオーバーライドされている必要があります。 
+次の例では、2 番目の省略可能なパラメーターにスキップできないことを示します。 **AddThreeInts**メソッドには 2 つの任意のパラメータがあります。 **callAdditions** メソッドは、**AddThreeInts** メソッドを呼び出します。 コメント化されたコードは、**\_i3** の既定値のみのオーバーライドを試行しますが、コンパイラでは、呼び出し時に先行するすべての任意のパラメータのオーバーライドを要求します。 
 
 ```xpp
-public class Additions 
+class Additions
 {
-    static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
+    public static int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
     {
         return _i1 + _i2 + _i3;
     }
+
+    public static void callAdditions()
+    {
+        // The next statement does not compile, because it skips the _i2 parameter.
+        // info(int2Str(Additions::AddThreeInts(1, , 99)));
+
+        // You must specify both optional parameters.
+        info(int2Str(Additions::AddThreeInts(1, 2, 99)));
+    }
+
 }
-
-// This code calls the AddThreeInts method.
-// No way to skip the first optional parameter (so it can default)
-// while also specifying the value of the second optional parameter.
-// The next statement does not compile.
-// info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-
-// Settle for overriding both optional parameters.
-info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-// Output is "102".
 ```
 
 ## <a name="accessor-methods"></a>アクセサー メソッド

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33dd3f781dc4559a14d68e3901094cfd370d83bc
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: c1d570c77a9d743b892c5a889c212f8fc64132d7
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367283"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418529"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -91,6 +91,9 @@ BPM を使用していない場合は、Azure DevOps で手動でテスト ケ�
 Regression Suite Automation Tool は、ビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネントのテスト) を使用目的としており、通常は開発ライフ サイクルの終了時に発生します。 これは、*ユーザー受け入れテスト*とも呼ばれます。 ビジネス サイクルのテストは、コンポーネントまたは単体テストよりも少ない数のテスト ケースで構成されます。 これを下の図に示します。
 
 ![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクルテスト](media/business-cycle.png)
+
+### <a name="warehouse-mobile-app"></a>Warehouse Mobile App
+RSAT をウェアハウス アプリ タスク検証フレームワークと組み合わせて使用することにより、ウェアハウス プロセスのテストを自動化することができます。 この[技術解説](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019)は、開始するための優れた参考資料です。
 
 ### <a name="unit-and-component-testing"></a>ユニットおよびコンポーネント テスト
 単体テストの場合は、RSAT を使用しないことを推奨します。 代わりに、SysTest フレームワークとビルド / テスト自動化ツールを使用します。 コンポーネント テストでは、[受け入れテスト ライブラリ リソース](../acceptance-test-library.md) (ATL) を活用します。 ATL は、 X++ テスト ヘルパーのライブラリです。 SysTest フレームワークを使用すると、次の利点があります。

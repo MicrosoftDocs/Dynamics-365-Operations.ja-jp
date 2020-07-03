@@ -1,9 +1,9 @@
 ---
 title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778708"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456600"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -144,3 +144,34 @@ ms.locfileid: "2778708"
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>機能管理を使用して ISV 機能またはカスタム機能をオンにする
 
 現時点において機能管理は、独立系ソフトウェア ベンダー (ISVs) やカスタム機能からの機能には使用できません。 ただし、機能管理を強化するため、Microsoft はより多くの機能を追加しています。 これらの強化が完了した後、Microsoft により、すべての機能に機能管理が使用できるようになり、使用する機能の更新手順が提供されます。
+
+## <a name="frequently-asked-questions-faq"></a>よく寄せられる質問 (FAQ)
+
+### <a name="when-are-features-added-removed-or-changed"></a>機能はいつ追加、削除、または変更されますか? 
+機能は、コードの変更によって追加、削除、および変更されます。 これらの変更を受け取るには、環境を更新する必要があります。
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>機能は自動的に必須になりますか? 
+いいえ、必須となる機能は自動アクションではありません。 製品チームは、コードの変更を行う必要があります。
+
+### <a name="when-do-features-become-mandatory"></a>機能が必須になるのはいつですか? 
+ポリシーでは、すべての新機能は 12 か月間オプトインされ、機能を有効にするまで変更管理は必要ありません。 製品チームは、その期間が終了した後に機能を必須にするかどうかを選択できます。 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>特定の "必須の有効日" がないのはなぜですか? 
+更新リリースのタイミングは変動し、環境更新のタイミングは変動し、顧客は一部の更新をスキップすることもできます。 その結果、特定の日付を決定することは困難です。 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>必須になる機能のドキュメントはどこにありますか? 
+このドキュメントは、アプリケーション チームから提供されます。 多くの場合、これらは [削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) に記載されています。 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>機能が必須で有効になるという製品内の通知またはシグナルはありますか? 
+機能の必須化に関連する通知メカニズムは、現在存在しません。
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>顧客が知らないうちに機能が有効になることはありますか? 
+はい、機能的に影響がない場合は、既定で機能を有効にすることができます。
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>機能のフライティングとはどういったもので、機能管理とどのように関係しますか? 
+機能フライトは、Microsoft が制御するリアルタイムのオン/オフ スイッチです。 これらは、機能管理によって提供される顧客コントロールとは別のものです。 
+- プライベート プレビュー機能は、フライト オンになるまで機能管理に一覧表示されません。 実稼動環境では、顧客は、特別なプログラムに参加することに同意する必要があります。
+- パブリック プレビューとリリース済み (一般に入手可能な) 機能は、フライト オフにならない限り、機能管理に一覧表示されます。 機能をフライト オフにすることは、重大な問題が発見された場合の製品チームの最終手段であり、通常は顧客ごとの操作になります。
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>顧客が知らないうちに機能がフライト オフになることはありますか? 
+はい、機能が機能的に影響がない環境の機能に影響を与える場合は、既定で有効にすることができます。

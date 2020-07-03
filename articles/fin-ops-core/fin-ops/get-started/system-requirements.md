@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: da8d8e25ab76bff3a2f55e1673f0efbd14ebc7b5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 4fe019601cc323ba41e4cf030e02208206c6342d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124843"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403324"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -69,7 +69,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
 
-ローカル仮想マシン (VM) の開発要件については、[オンプレミスで実行されている VM](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises) を参照してください。
+ローカル仮想マシン (VM) の開発要件については、[ローカルで実行されている VM](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally) を参照してください。
 
 ## <a name="database-collation"></a>データベース照合順序
 

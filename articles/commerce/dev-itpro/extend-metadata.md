@@ -1,9 +1,9 @@
 ---
-title: 既定の Cloud Scale Unit メタデータ コントローラーの拡張
+title: 既定の Commerce Scale Unit メタデータ コントローラーの拡張
 description: この記事では、CommerceModelFactory クラスを拡張するコードを説明します。
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f80b588fc802209591aad10be77fbd17b8d981db
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: d8bc5fe497056f844b2f8c25a6cbad5570486ab5
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070435"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426326"
 ---
-# <a name="extend-the-default-cloud-scale-unit-metadata-controller"></a>既定の Cloud Scale Unit メタデータ コントローラーの拡張
+# <a name="extend-the-default-commerce-scale-unit-metadata-controller"></a>既定の Commerce Scale Unit メタデータ コントローラーの拡張
 
 [!include [banner](../includes/banner.md)]
 

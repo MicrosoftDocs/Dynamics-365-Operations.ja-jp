@@ -3,7 +3,7 @@ title: オンプレミス環境での小売チャネルのコンポーネント�
 description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: af3d9c2f6cebefca67d86c46a8db03f5deab8bf9
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: a388518838d09512fed21ce8ecf90a9a3ad28d40
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154354"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456562"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -30,16 +30,16 @@ ms.locfileid: "3154354"
 
 ## <a name="overview"></a>概要
 
-オンプレミス環境では、チャネル機能は Commerce Scale Unit の使用により排他的に有効になります。 概要については、[Commerce Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
+オンプレミス環境では、チャネル機能は Commerce Scale Unit (自己ホスト) の使用により排他的に有効になります。 概要については、[Commerce Scale Unit (自己ホスト)](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
 
-クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit をインストールすることによってのみ、チャネル コンポーネントを使用できます。
+クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit (自己ホスト) をインストールすることによってのみ、チャネル コンポーネントを使用できます。
 
 ## <a name="prerequisites"></a>必要条件 
 
 チャネル コンポーネントのインストールを開始する前に、まずオンプレミス環境のすべての事前インストール手順を完了してください。 この手順は、[オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)で説明されています。 さらに、コマースの全機能を使用するは、バージョン 8.1.1 をインストールする必要があります。 バージョン 8.1.2 に更新することをお勧めします。
 
 > [!NOTE]
-> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Commerce Scale Unit をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の Commerce Scale Unit デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
+> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Commerce Scale Unit をバック オフィスに接続することが絶対に必要です。 さらに、バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の Commerce Scale Unit デバイスのみに許可されるように制限してください。 この場合、ファイアウォールが必要となるため、セーフ リストへの追加を強くお勧めします。
 
 ## <a name="installation-steps"></a>インストール手順
 
@@ -78,6 +78,11 @@ ms.locfileid: "3154354"
     - ModernPosSetup.exe
     - ModernPosSetupOffline.exe
     - StoreSystemSetup.exe
+
+     > [!NOTE]
+     > クラウド環境では、LCS から本部を通じてセルフサービス インストーラーを同期することができます([Dynamics 365 Commerceでセルフサービス インストーラーを同期します](../../../commerce/dev-itpro/synchronize-installers.md)) 。 オンプレミス環境ではこの機能を使用できませんが、これらの環境を LCS からダウンロードすることは可能です。 この SDK は、展開可能な zip 形式のパッケージ ファイルに含まれています。 セルフサービス インストーラーは、LCS **資産ライブラリ**から入手できます。 LCS でのアップロードやダウンロードの仕組みを使用することはできますが、本社の同期機能を使用することはできません。
+
+
 7.  ADFS コンピューターに移動し、InfrastructureScripts フォルダに移動してください。 これは、以前に実行した PowerShell スクリプトがあったのと同じファイル ディレクトリです (**RetailUpdateDatabase.ps1**)。 PowerShell スクリプト **Create-ADFSServerApplicationForRetail.ps1** を見つけます。
 8.  ご利用の ADFS コンピューターで、新規 PowerShell ウィンドウから **.\Create-ADFSServerApplicationForRetail -HostUrl 'https://ax.d365ffo.onprem.contoso.com'** コマンドを使用してこのスクリプトを実行します。 **HostUrl** の値は Service Fabric にて確認することができます。  **HostUrl** 値を見つけるには、 **Service Fabric** &gt; **アプリケーション ファブリック:/AXSF** &gt; **詳細** &gt; **Aad_AADValidAudience** に移動します。
 9.  AD FS 管理の **アプリケーション グループ** から新しく生成されたサーバー アプリケーションにアクセスします。
@@ -118,4 +123,4 @@ ms.locfileid: "3154354"
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit (自己ホスト) のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 

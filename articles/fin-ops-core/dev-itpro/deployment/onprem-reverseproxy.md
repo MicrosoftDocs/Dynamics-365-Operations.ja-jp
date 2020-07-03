@@ -3,7 +3,7 @@ title: オンプレミス環境でのプロキシのコンフィギュレーシ�
 description: このトピックでは、プロキシ環境下にあるオンプレミス環境を保護する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d9586385c821a507bb94fe69a7ca5be57114e7a8
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: cf87d5f0ebf418475f38178701f14fae2c7fdeb0
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100514"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456520"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 
@@ -54,9 +54,9 @@ Microsoft Azure Service Fabric cluster の **OrchestratorType** の **各** ノ�
 
 上記の手順は、すべてのオーケストレータ ノード VM に対して実行する必要があります。
 
-## <a name="whitelist-urls"></a>ホワイトリスト URLs
+## <a name="safe-list-urls"></a>セーフ リストの URL
 
-LocalAgent は Azure リソースと通信する必要があります。 結果として、次の URL は プロキシやファイアウォールでホワイトリスト化される必要があり、そうすることで全ての **OrchestratorType** ノードがアクセスすることができます:
+LocalAgent は Azure リソースと通信する必要があります。 結果として、次の URL は プロキシやファイアウォールでセーフ リスト化される必要があます。そうすることで全ての **OrchestratorType** ノードがアクセスすることができます。
 
 ```Text
 - lcsapi.lcs.dynamics.com

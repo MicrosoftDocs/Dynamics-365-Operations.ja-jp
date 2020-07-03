@@ -3,7 +3,7 @@ title: AX 2012 から Finance and Operations へのアップグレード
 description: このトピックでは、現在 Microsoft Dynamics AX 2012 を実行している顧客が、データとコードを Finance and Operations に移動するために使用できるプロセスについて説明します。
 author: tariqbell
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c467fa9cbbabef42592c2bd9d47fbe54d1bec794
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 85839898abc1f7d442a5b44d2183df76955d032c
+ms.sourcegitcommit: 13cd491e205b77605da409c11d29374f1654b39f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150757"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3433206"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -35,6 +35,9 @@ Finance and Operations は、Platform update 8 および 2017 年 7 月のアプ
 
 > [!IMPORTANT]
 > 一部の [推奨されない機能](deprecated-features.md) を実行している Dynamics AX 2012 の実装は、現在アップグレードできません。 たとえば、仮想会社またはデータ パーティションのいずれかを使用しているシステムからのアップグレードはできません。 システムがアップグレードできるかどうか分からない場合は、アップグレード アナライザー ツールを実行します。 
+
+> [!NOTE]
+> クラウドへの移行を開始するときは、[Dynamics 365移行プログラム](https://dynamics.microsoft.com/migration-program/)を使用した場合でも、無料で義務なしの移行評価を使用します。
 
 ## <a name="overview"></a>概要
 
@@ -177,7 +180,7 @@ LCS 実装プロジェクトに初めてサインインすると、**プロジ�
 詳細については、[AX 2012 からのアップグレード - 機能テスト パス](upgrade-functional-validation.md)を参照してください。
 
 ### <a name="pre-go-live-checklist"></a>稼働前のチェックリスト
-稼働前のチェックリストは、稼働への最終的な切替中のエラーの可能性を減らすのに役立つ推奨手順です。 稼働期限の 1 週間前に、AX 2012 で (つまり \<モジュール\> \設定で) コンフィギュレーション変更を中止します。 コンフィギュレーション変更に対するこの制限は、単なる手順にすぎません。 Microsoft Dynamics AX のシステム管理者は、この時点ではこのタイプの変更を保留にすることに同意します。
+稼働前のチェックリストは、稼働への最終的な切替中のエラーの可能性を減らすのに役立つ推奨手順です。 稼働期限の 1 週間前に、AX 2012 で (つまり \<module\>\Setup で) コンフィギュレーション変更を中止します。 コンフィギュレーション変更に対するこの制限は、単なる手順にすぎません。 Microsoft Dynamics AX のシステム管理者は、この時点ではこのタイプの変更を保留にすることに同意します。
 
 Finance and Operations コード基準でコード変更を凍結することもお勧めします。 評価されて、稼働をブロックしないことが示されている場合を除いて、さらなる変更は許可されるべきではありません。  
 

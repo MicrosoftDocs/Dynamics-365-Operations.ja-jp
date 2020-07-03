@@ -3,7 +3,7 @@ title: Dynamics 365 Finance の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance の各リリースにおける新しい機能と変更された機能について説明するトピックを示します
 author: roschlom
 manager: AnnBe
-ms.date: 04/16/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 5d0c4369be1639328feef54bfc7e997a803c0903
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: f82fddb622dd0e9ea3cdde1d0bc9e27e93c5bfe9
+ms.sourcegitcommit: 1705bef82de56e559b4f84680497728201f50007
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266289"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412923"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance"></a>Dynamics 365 Finance の新機能および変更された機能 
 
@@ -32,8 +32,8 @@ Dynamics 365 Finance の各リリースでの新機能や変更事項を確認�
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細情報 |
 |---------|--------------|--------------|-------------|
-| 10.0.11  |   10.0.464   | 2020 年 7 月   | [Dynamics 365 Finance バージョン 10.0.11 の機能をプレビューする](whats-new-changed-10-0-11.md) |
-| 10.0.10  |   10.0.420   | 2020 年 5 月   | [Dynamics 365 Finance バージョン 10.0.10 の機能をプレビューする](whats-new-changed-10-0-10.md) |
+| 10.0.11  |   10.0.464   | 2020 年 7 月   | [Dynamics 365 Finance バージョン 10.0.11 の新機能と変更点](whats-new-changed-10-0-11.md) |
+| 10.0.10  |   10.0.420   | 2020 年 5 月   | [Dynamics 365 Finance バージョン 10.0.10 の新機能と変更点](whats-new-changed-10-0-10.md) |
 | 10.0.9  |   10.0.383   | 2020 年 4 月   | [Dynamics 365 Finance バージョン 10.0.9 の新機能と変更点](whats-new-changed-10-0-9.md) |
 | 10.0.8  |   10.0.319          | 2020 年 2 月 | [Dynamics 365 Finance バージョン 10.0.8 の新機能と変更点](whats-new-changed-10-0-8.md) |
 | 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Finance バージョン 10.0.7 の新機能と変更点](whats-new-changed-10-0-7.md) |

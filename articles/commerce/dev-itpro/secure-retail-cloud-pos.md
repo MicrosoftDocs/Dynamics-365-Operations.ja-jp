@@ -3,7 +3,7 @@ title: 共有環境におけるクラウド POS のセキュリティ ベスト 
 description: Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
 author: pdp1207
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7cf276166e39f04cb0d8cabbe08e4ff28e013bd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7b51bc3b16a56af89a3cbe12dd4661fcac5bc7cc
+ms.sourcegitcommit: c978cdccc62210d548746c120ad0a998124e5dfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004626"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3460283"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 
@@ -42,7 +42,7 @@ Retail Cloud POS のアクティブ化されたインスタンスを持つオペ
 -   **必須** - ブラウザーの開発者コンソールを無効にします。
 -   **必須** - 権限の低いユーザーが Retail Cloud POS にアクセスする必要があります。
 -   **必須** - キオスク セッションを有効にするグループ ポリシーを設定します。
--   **推奨** - ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定します。
+-   **推奨** - セーフ リストに登録された Web サイトのみにアクセスするプロキシを設定します。
 
 ## <a name="disable-script-execution-in-the-address-bar-of-the-browser-that-runs-retail-cloud-pos"></a>Retail Cloud POS を実行するブラウザのアドレスバーでスクリプトの実行を無効にする
 ### <a name="internet-explorer"></a>Internet Explorer
@@ -332,7 +332,7 @@ Retail Cloud POS ユーザーに次の制限を適用することをお勧めし
 | 店舗アプリケーションをオフにする                                                                                                                                           | 有効  | 無      | \\Windows コンポーネント\\ストア                                                 |
 | 新しいタスクの作成を禁止                                                                                                                                               | 有効  | 無      | \\Windows コンポーネント\\タスク スケジューラ                                        |
 
-## <a name="set-up-a-proxy-to-access-only-whitelisted-websites"></a>ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定
+## <a name="set-up-a-proxy-to-access-only-websites-included-in-a-safe-list"></a>セーフ リストに登録された Web サイトのみにアクセスするプロキシを設定します
 日常業務で店員 (レジ担当者) が必要とする Web サイトの一覧を定義し、これらの Web サイトにのみアクセス権を持つ管理者制御のプロキシを設定することができます。 Retail Cloud POS には、次の Web サイトへのアクセスが必要です。
 
 -   Retail Cloud POS Web サイト

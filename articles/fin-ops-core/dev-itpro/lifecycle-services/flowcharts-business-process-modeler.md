@@ -1,9 +1,9 @@
 ---
 title: ビジネス プロセス モデラー (BPM) のフローチャート
-description: この記事では、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
-author: jorisdg
+description: このトピックでは、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
+author: AngelMarshall
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 28500ed4deb1c2097f5812c4614685d63980fafa
-ms.sourcegitcommit: 89466c3d9976c57518fef85406f2680e3005fb8c
+ms.openlocfilehash: 733800915dd66d9747c485aa4b17f964036837a5
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3151024"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454800"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -30,35 +30,35 @@ ms.locfileid: "3151024"
 
 > [!重要] ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
 
-Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 この記事では、既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。 また、未接続のフローチャートをアップロードおよび表示する方法についても説明します。
+Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 このトピックでは、既定の接続フローチャートを表示する方法、接続したフローチャートを Visio ファイルの形式でエクスポートする方法、および未接続のフローチャートをアップロードして表示する方法について説明します。
 
-Dynamics 365 Finance and Operations アプリからの既定の接続フローチャートで始め、それらを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロード、または別のライブラリからビジネス プロセス モデルのフローチャートをインポートすることができます。 接続されたフローチャートを使用して、Microsoft Team Foundation Server にエクスポートするためのギャップを作成することもできます。 また、Microsoft Visio から高レベルのフローチャートを作成してアップロードすることもできます。
-
--   接続されたフローチャートは、 タスク レコーダーに記録され、ビジネス プロセス モデラーにアップロードされたデータに基づいています。 プロパティ、セキュリティ ロール、関連情報が含まれます。 各フローチャートには、詳細な手順も含まれます。
+-   接続フローチャートは、タスクレコーダーに記録され、ビジネス プロセス シミュレーターにアップロードされたデータに基づいて自動的に生成されるフローチャートです。これには、タスク記録のプロセス ステップも含まれます。 
 -   接続されていないフローチャートは、Visio から直接アップロードされます。
 
-## <a name="connected-flowcharts"></a>接続されたフローチャート
-このセクションでは、接続されたフローチャートの表示方法、その変更方法、フローチャートを Visio にエクスポートする方法、ギャップ分析を生成する方法、ギャップ分析をコンマ区切りファイルにエクスポートして、手動で Microsoft Visual Studio Team Foundation Server に作業項目としてインポートする方法について説明します。  独自の業務プロセスの記録をアップロードする方法の詳細については、 [ビジネス プロセス モデラー (BPM) を独自の業務プロセスにアップロード](upload-business-processes-bpm-task-recorder.md) を参照してください。 
+<!---
+## Connected flowcharts
+This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler (BPM)](upload-business-processes-bpm-task-recorder.md). 
 
-フローチャートに表示可能な活動について、次の表で説明します。
+Activities that can appear in flowcharts are described in the following table.
 
-| 活動                  | 説明                                                                                                                                                      |
+| Activity                  | Description                                                                                                                                                      |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| スクリプト                    | スクリプトによって実行されるアクション。                                                                                                                                    |
-| ループ                      | 反復的に実行されるアクション。                                                                                                                                   |
-| サービス                   | サービスによって実行されるアクション。                                                                                                                                   |
-| マニュアル                    | Finance and Operations アプリの外部で実行される手順。                                                                                                                               |
-| 入庫                   | サービスまたはスクリプトを使用せずに Finance and Operations アプリの外部から受信した情報。                                                                                  |
-| 送信                      | サービスまたはスクリプトを使用せずに Finance and Operations アプリの外部に送信された情報。                                                                                           |
-| ユーザー                      | ユーザーによって実行されるアクション。                                                                                                                                      |
-| 折りたたみ済                 | ダイアグラムに表示されていないサブプロセス。 折りたたまれたプロセスは展開できません。                                                                          |
-| 方向キー                     | プロセス ステップ間のフローの方向を示します。                                                                                                               |
-| 検証                | プロセスが進行またはループする決定ポイント。                                                                                                      |
-| プロセス開始 (円)    | プロセスの初期。                                                                                                                                    |
-| プロセス終了 (太字の円) | プロセスの終了。                                                                                                                                          |
-| ロール                     | ロール スイムレーン プロセスが完了するために複数のロールによるアクションを必要とするときに、ロールを追加します。 スイムレーンは、アクションを実行できる既定のロールを一覧表示します。 |
+| Script                    | Action performed by a script.                                                                                                                                    |
+| Loop                      | Action performed repetitively.                                                                                                                                   |
+| Service                   | Action performed by a service.                                                                                                                                   |
+| Manual                    | Step performed outside of a Finance and Operations app.                                                                                                                               |
+| Receive                   | Information received from outside of a Finance and Operations app without using a service or script.                                                                                  |
+| Send                      | Information sent outside of a Finance and Operations app without using a service or script.                                                                                           |
+| User                      | Action performed by a user.                                                                                                                                      |
+| Collapsed                 | A sub-process that is not shown in the diagram. Collapsed processes cannot be expanded.                                                                          |
+| Arrow                     | Indicates direction of flow between process steps.                                                                                                               |
+| Validation                | Decision point at which a process either proceeds or loops.                                                                                                      |
+| Process start (circle)    | The beginning of the process.                                                                                                                                    |
+| Process end (bold circle) | The end of the process.                                                                                                                                          |
+| Roles                     | Role swimlane. Add roles when a process requires actions by multiple roles to complete. Swimlanes list the default roles that can perform the action. |
 
 ### 
+--->
 
 ### <a name="view-a-connected-flowchart"></a>接続中のフローチャートの表示
 
@@ -66,86 +66,87 @@ Dynamics 365 Finance and Operations アプリからの既定の接続フロー�
 
 接続されたフローチャートを表示するには、次の手順を実行します。
 
-1.  Microsoft Dynamics Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
-2.  **自分のライブラリ** セクションで、表示するライブラリを選択します。 標準的な業務プロセス ライブラリをプロジェクトにコピーする方法についての詳細は、 [Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](./ax-2012/business-process-modeler-lcs.md) を参照してください。
+1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
+2.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。 
 3.  業務プロセス ライブラリを展開し、関連付けられたフローチャート アイコンを持つライブラリ ノードをクリックします: [![フローチャート BPM トピック 1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
-    フローチャートが表示されます。 プロセスの各活動は、図の形によって表されます。 関連情報は、図での選択内容に応じて、右ウィンドウに表示されます。
-    -   フローチャートで何も選択されていない場合は、右ウィンドウでは、プロセス、使用状況の特性 (設定、マスター、またはトランザクション) およびビデオにおける手順の詳細一覧が表示されます。 ビデオをダブルクリックして全画面モードで表示することができます。 プロセスに必要な負荷を判断するために使用状況の特性が使用状況プロファイラーで使用されます。 プロセスが構成タスクのときは Setup として、マスター データ プロセスのときは Master data プロセスとして、トランザクション プロセスのときは Transaction として識別します。 設定およびマスター プロセスは、トランザクション プロセスよりも少ない処理を要求すると見なされます。
-    -   スイム レーンのタイトルが選択されている場合、右ウィンドウにはスイム レーンに含まれている活動へのアクセスを持っているセキュリティ ロールの一覧と対応する業務が表示されます。
-    -   フローチャート アクティビティ シェイプが選択されている場合、右ペインには選択したアクティビティに関する情報が表示されます。 この情報は、アプリケーションの標準メタデータからのものです。 たとえば、図形がフォームを表す場合、メタデータにはアプリケーション オブジェクト ツリー (AOT) 名、フォーム タイトルのラベル、フォームのデータ ソースなどのプロパティが含まれます。
+    フローチャートが表示されます。 プロセスの各活動は、図の形によって表されます。 プロセス ステップが右のウィンドウに表示されます。 
 
-4.  フローチャートでオブジェクトが選択されている場合は、アプリ バーを有効にすることができます。 一般的なアクションには、**編集**、**削除**、**保存**、**エクスポート**、**ギャップではありません**、および**ギャップ リスト**が含まれます。 アプリケーション バーの一部のオプションは、選択したオブジェクトによって異なります。
+<!---
+### Modify a connected flowchart
 
-### <a name="modify-a-connected-flowchart"></a>接続中のフローチャートの変更
-
-会社の業務プロセスに合わせて既存の接続済みフローチャートを変更することができます。
+You can modify an existing connected flowchart to match your company's business process.
 
 > [!NOTE]
-> フローチャートを変更するたびに、ギャップが自動的に作成されます。
+> Any time you modify a flowchart, a gap is automatically created.
 
-接続されたフローチャートを変更するには、次の手順を実行します。
-1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
-2.  **自分のライブラリ** セクションで、表示するライブラリを選択します。
-3.  フローチャート アイコンからライブラリ ノードを開きます。
-4.  フローチャートに変更を加えます。
-    -   既存のフローチャート アクティビティを変更するには、アクティビティを右クリックして [アプリ] バーを表示し、**編集** をクリックします。 変更を行ってから、**保存**をクリックします。
-    -   フローチャート アクティビティを追加するには、アクティビティを **アクティビティ** 一覧からフローチャートにドラッグします。 新しいアクティビティを右クリックし、**編集** をクリックしてアクティビティの名前およびアクティビティの他の情報を変更します。 変更を行ってから**保存**をクリックします。
-    -   フローチャートのアクティビティを削除するには、そのアクティビティを右クリックし、**削除** をクリックします。
+To modify a connected flowchart, follow these steps:
+1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
+2.  In the **My libraries** section, select a library to display it.
+3.  Open a library node with a flowchart icon.
+4.  Make changes to the flowchart.
+    -   To change an existing flowchart activity, right-click the activity to display the app bar, and then click **Edit**. Make changes, and then click **Save**.
+    -   To add a flowchart activity, drag an activity from the **Activities** list to the flowchart. Right-click the new activity and then click **Edit** to change the name and other information for the activity. Make changes and then click **Save**.
+    -   To delete a flowchart activity, right-click the activity, and then click **Delete**.
 
-### <a name="import-a-business-process-model-flowchart-from-another-library"></a>別のライブラリからビジネス プロセス モデルのフローチャートをインポートする
+### Import a business process model flowchart from another library
 
-既存のビジネス プロセス ライブラリからボトム レベルのタスクに、ビジネス プロセス モデル フローチャートをインポートすることができます。
-1.  関連付けられたフローチャートのない既存のタスクを選択し、右クリックしてアプリケーション バーを表示した後、**インポート** をクリックします。
-2.  **インポート ビジネス プロセス モデル**ページで、インポート元のライブラリを選択し、適切なビジネス プロセスを選択します。 既存のモデル フローチャートを伴うビジネス プロセスのみ一覧に表示されます。
-3.  **コピーをしますか** というメッセージが表示されたら、**はい** をクリックします。 インポートが完了したら、フローチャートは元のタスクに関連付けられます。 ギャップ情報およびバージョン履歴もコピーされます。
+You can import a business process model flowchart from an existing business process library into a bottom level task.
+1.  Select an existing task that does not have an associated flowchart, right-click it to display the app bar, and then click **Import**.
+2.  On the **Import business process model** page, select a library to import from, and then select the appropriate business process. Only business processes with existing model flowcharts appear in the list.
+3.  When the **Do you want to copy** message appears, click **Yes**. When the import is complete, the flowchart will be associated with the original task. Gap information and the version history are also copied.
+--->
 
 ### <a name="export-a-flowchart-as-a-visio-file"></a>Visio ファイルとしてフローチャートをエクスポート
 
 業務プロセス モデルのフローチャートは Visio ファイルにエクスポートすることができます。
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
-2.  **自分のライブラリ** セクションで、表示するライブラリを選択します。
-3.  ライブラリを展開し、関連付けられたフローチャート・アイコンを持つ全てのライブラリ・ノードをクリックします。 フローチャートが表示されます。
-4.  アプリケーション バーを表示するためにフローチャートを右クリックして **エクスポート** をクリックします。
-5.  ファイルは、開くか保存することができるダウンロードとして扱われます。
+2.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。
+3.  ライブラリを展開し、関連付けられたフローチャートのアイコンを持つ全てのライブラリ ノードを選択します。
+4.  **概要** ウィンドウで、**ダイアグラム** を選択してフローチャートを表示します。   
+5.  フローチャート タブで、**エクスポート** をクリックし てVisio 形式のファイルで保存します。 
 
-### <a name="mark-a-change-to-not-be-a-gap"></a>ギャップにならないように変更をマークする
-LCS でギャップ機能が廃止されていることに注意してください。 Azure DevOps 同期を使用する方法の詳細については、 [BPM ライブラリと Azure DevOps の同期](synchronize-bpm-vsts.md) を参照してください。
+<!--
+### Mark a change to not be a gap
+Please note that gap functionality has been deprecated in LCS. To learn more about how to use Azure DevOps Synchronization, see [Synchronize BPM libraries with Azure DevOps](synchronize-bpm-vsts.md).
 
-フローチャートを変更するたびに、ギャップが自動的に作成されます。 ギャップとみなされないようにするため、任意の変更を修正することができます。 
+Any time you modify a flowchart, a gap is automatically created. You can modify any change to no longer be considered a gap. 
 
-変更するには、次の手順を実行します。
+To modify a change, follow these steps:
 
-1.  追加したオブジェクトを選択し、右クリックします。
-2.  アプリ バーで、**ギャップではない**をクリックします。
+1.  Select the object that you added, and then right-click it.
+2.  On the app bar, click **Not a gap**.
 
-### <a name="generate-a-gap-analysis-and-export-it-to-use-with-azure-devops"></a>Azure DevOps で使用するギャップ分析を生成およびエクスポートします
+### Generate a gap analysis and export it to use with Azure DevOps
 
-作業中のプロジェクトのためにギャップ解析リストを生成することができます。 ギャップ解析リストはコンマで区切られたファイルにエクスポートすることができます。 そのファイルを Visual Studio Team Foundation Server にインポートして作業項目を作成することができます。 
+You can generate a gap analysis list for the project that you are working with. You can export the gap analysis list to a comma-separated file. You can then import that file to Visual Studio Team Foundation Server to create work items. 
 
-ギャップ分析を生成してエクスポートするには、次の手順を実行します。
+To generate a gap analysis and export it, follow these steps:
 
-1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
-2.  **自分のライブラリ** セクションで、表示するライブラリを選択します。
-3.  ライブラリを展開し、関連付けられたフローチャート・アイコンを持つ全てのライブラリ・ノードをクリックします。 フローチャートが表示されます。
-4.  アプリケーション バーを表示するためにフローチャートを右クリックして **ギャップ リスト** をクリックします。 **ギャップ分析** ページが表示されます。 このページには、取り組んでいるプロジェクトのすべての変更が含まれています。 これには、標準ライブラリおよびプロジェクトのすべての既定のフローチャートに対する変更が含まれます。
-5.  オプション: ギャップ分析をコンマ区切りファイルにエクスポートするには、右クリックしてアプリケーション バーを表示し、**エクスポート** をクリックします。 .csv ファイルが作成されます。 ファイルを Visual Studio Team Foundation Server にインポートして、ギャップを埋めるために必要な作業を表す作業項目を作成することができます。
+1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
+2.  In the **My libraries** section, select a library to display it.
+3.  Expand the library and then click any library node that has a flowchart icon associated with it. The flowchart is displayed.
+4.  Right-click the flowchart to display the app bar, and then click **Gap list**. The **Gap analysis** page is displayed. The page includes all modifications for the project that you are working with. It includes changes to the standard library and to all default flowcharts for the project.
+5.  Optional: To export the gap analysis to a comma-separated file, right-click to display the app bar, and then click **Export**. A .csv file is created. You can import the file into Visual Studio Team Foundation Server to create work items that represent the work that is required to fill in the gaps.
+-->
 
 ## <a name="unconnected-flowcharts"></a>未接続のフローチャート
-未接続のフローチャートは、Finance and Operations アプリの外部で実行される高度な業務プロセスを記述するのに非常に役立ちます。
+Visio のダイアグラムなどの未接続のフローチャートは、Finance and Operations アプリの外部で実行される高度な業務プロセスの記述に非常に役立ちます。
+
 ### <a name="upload-an-unconnected-flowchart"></a>未接続のフローチャートをアップロード
 
-1.  **自分のライブラリ** セクションで、ライブラリを開きます。
-2.  ライブラリを展開し、未接続のフローチャートをアップロードするライブラリ ノードの名前をクリックします。 **Visio** タブが開きます。
-3.  **今すぐアップロード**をクリックし、適切なファイルを選択し、**開く**をクリックします。
-4.  間違ったファイルをアップロードした場合は、既存のファイルを削除し、置き換えます。
+1.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。
+2.  ライブラリを展開し、関連付けられたフローチャート・アイコンを持つ全てのライブラリ・ノードをクリックします。
+3.  **概要** ウィンドウで、**ダイアグラム** を選択し ます。   
+5.  **Visio**タブで、 **アップロード** をクリックしてvisioファイルをアップロードします。
 
-### <a name="view-an-unconnected-flowchart"></a>未接続のフローチャートの表示
+> [!Note] 
+> 間違ったファイルをアップロードした場合は、既存のファイルを削除し、新たなファイルをアップロードして置き換えてください。
 
-未接続の Visio フローチャート と関係づけられているビジネス プロセスでは、タイトル バーにドキュメント アイコンが表示されます: [![フローチャート BPM トピック 2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
--   ドキュメント アイコンをクリックして、フローチャート フォームを表示します。
--   Visio ページの**ダウンロード**をクリックし、フローチャートをダウンロードします。
+<!--
+### View an unconnected flowchart
 
-
-
-
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+-   Click the document icon to view the flowchart.
+-   Click **Download** on the Visio page to download the flowchart.
+--->

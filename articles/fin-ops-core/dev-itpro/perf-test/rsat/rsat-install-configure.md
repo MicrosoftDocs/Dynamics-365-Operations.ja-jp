@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbea025e16e5028019663dc1e3f597eed14624f1
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: f4109d43845fe8df00b176c9a1d0ab9700d06685
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367019"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418554"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -117,14 +117,14 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 ローカル設定をコンフィギュレーションします。
 
 + **作業ディレクトリ** - Excel テスト データ ファイルを含むテスト自動化ファイルを格納するフォルダの場所。 たとえば、 **C:\Temp\RegressionTool** のようになります。
-+ **既定のブラウザー** - テストの実行に使用するブラウザーを選択します。
++ **既定のブラウザー** - テストの実行に使用するブラウザーを選択します。 RSAT は (新しい) Microsoft Edge、Microsoft Internet Explorer および Google Chrome をサポートします。 [新しい Microsoft Edge の概要](https://www.microsoft.com/edge)から Microsoft Edge ダウンロードすることをお勧めします。 
 
 **OK** を選択して設定を適用し、ダイアログ ボックスを閉じます。 **キャンセル** を選択して変更をキャンセルし、ダイアログ ボックスを閉じます。 **名前を付けて保存** と **開く** ボタンを使用すると、後で再利用するために設定を保存できます。 **名前を付けて保存** を選択して、コンピューターの構成ファイルに現在の設定を保存します。 **開く** を選択して、構成ファイルから設定を復元します。
 
 ### <a name="optional-settings"></a>オプション設定
 **オプション** タブを選択して、オプションの設定をコンフィギュレーションします。
 
-+ **テストの実行の接頭語** – RSATはテストの実行結果を Azure DevOps に報告します。 テストの実行には、次の規則に従って名前が付けられます。**\<実行 ID\> \<接頭語\> \<テスト スイート\>**。 この設定を使用して、**\<接頭語\>** を設定します。
++ **テストの実行の接頭語** – RSATはテストの実行結果を Azure DevOps に報告します。 テストの実行には、次の規則: **\<Run ID\> \<Prefix\> \<Test Suite\>** に従って名前が付けられます。 この設定を使用して **\<Prefix\>** を設定します。
 + **テストの実行タイムアウト** – テストの実行のタイムアウト (分単位)。 このタイムアウトに達すると、すべてのアクティブなウィンドウが閉じられ、保留中のテスト ケースは失敗します。
 + **テスト アクションのタイムアウト** – 個々のテスト ステップのタイムアウト (分単位)。 テストステップがタイムアウトになると、テスト ケースは失敗します。
 + **ステップ間の一時停止** – テストケースの自動実行中にテスト ステップ間で一時停止する秒数。 既定値は **0** (ゼロ) です。 監査または調査のために、テストの実行中に強制的に一時停止するには、この値を設定します。 テスト ケースの Excel パラメーター ファイルの**全般**タブにある、**ステップ間の一時停止 (秒)** パラメーターを変更することで、個々のテスト ケースに対して一時停止を指定することもできます。
@@ -134,6 +134,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 
     > [!IMPORTANT]
     > Finance and Operations アプリが 21Vianet に配置されている場合、**クラウド プロバイダー** の設定が必要となり、選択された値が **中国** でなければなりません。
++ **Retail POS のコンフィギュレーション**: Microsoft Dynamics 365 Commerce の一部であるクラウド POS の自動テストのために RSAT をコンフィギュレーションするには、このチェックボックスをオンにします。 有効にすると、**設定** ダイアログに **Retail POS** という名前のタブが表示されます。 RSAT とクラウド POS の詳細については、[クラウド POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat) を参照してください。
 
 ### <a name="configure-the-test-environment-to-trust-the-connection"></a>接続を信頼するようにテスト環境を構成する
 

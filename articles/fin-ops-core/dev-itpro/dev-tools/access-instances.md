@@ -1,9 +1,9 @@
 ---
 title: 開発環境の配置とアクセス
-description: このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
+description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 979e1f29ae139555dc7b787d50c90f905e4a758a
-ms.sourcegitcommit: cc5dc0bd90277f1ba684dd310da3274886ce573c
+ms.openlocfilehash: 6146c8c2997ba58e70c113de0076ff73d7ff43ee
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3320862"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403228"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発インスタンスへのアクセス、オンプレミス開発仮想マシン (VM) の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
+このトピックでは、開発インスタンスへのアクセス、ローカル開発仮想マシン (VM) の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 
 ## <a name="definitions"></a>定義
 
@@ -107,7 +107,7 @@ ms.locfileid: "3320862"
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 
-## <a name="vm-that-is-running-on-premises"></a>オンプレミスで実行されている VM
+## <a name="vm-that-is-running-locally"></a>ローカルで実行されている VM
 仮想ハード ディスク (VHD) は LCS からダウンロードができるようになり、ローカル コンピューター上に設定可能です。 このシステムは、開発者によるアクセスを目的としており、Finance and Operations アプリの事前構成済みワンボックス開発環境です。 VHD は、資産タイプの**ダウンロード可能な VHD** の下で、LCS の共有アセットライブラリで使用可能です。
 
 1. LCS のメイン ページに移動して**共有アセット ライブラリ**を選択するか、または [共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動します。 

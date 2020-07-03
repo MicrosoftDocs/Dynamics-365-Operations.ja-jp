@@ -3,7 +3,7 @@ title: 新規ユーザーの作成
 description: ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。
 author: maertenm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9db4b6d355d6499bce6c550b2fbe76b82cf69fd4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143584"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435587"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 
@@ -50,8 +50,9 @@ ms.locfileid: "3143584"
 10. **保存** を選択します。
 
 ## <a name="import-users"></a>ユーザーのインポート
-1. アクション ウィンドウで、**ユーザーのインポート**を選択します。
-2. 一覧で、選択された行をマークします。
-3. **ユーザーのインポート**を選択します。
-4. **閉じる**を選択します。
+1. **システム管理 \> ユーザー \> ユーザー**の順に移動します。
+2. アクション ウィンドウで、**ユーザーのインポート**を選択します。
+3. 一覧で、選択された行をマークします。
+4. **ユーザーのインポート**を選択します。
+5. **閉じる**を選択します。
 

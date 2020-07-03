@@ -3,7 +3,7 @@ title: 小売販売のクーポンの設定
 description: このトピックでは、クーポンの概要と設定方法について説明します。
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057374"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431981"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>小売販売のクーポンの設定
 
@@ -48,8 +48,10 @@ ms.locfileid: "3057374"
 
 制限は、クーポンのクーポン コードごとに適用されます。 たとえば、2 つのクーポン コードを持つ 1 回のみ使用のクーポンは、各クーポン コード 1 回で 2 回使用できます。 クーポンの各コードは、個別に有効に設定できます。
 
+クーポンはすべての販売チャンネルで使用することができますが、コールセンターで注文を行う場合は、通話センターの **注文完了** 設定が有効になっている通話センターの注文に対してのみ、限定使用のクーポンを使用できます。 これが有効になっていない場合、限定されない使用タイプのクーポンのみをコール センター オーダーで使用できます。
+
 > [!NOTE]
-> クーポン コードが使用制限に達すると、システムが自動的にクーポン コードの状態を「使用済み」に変更することは *無い* です。 ただしシステムでは、使用制限に達したクーポン コードをさらに使用することはできません。 クーポン コードの状態が手動で「有効」以外のもに設定されている場合、すべてのチャネルでこのクーポン コードを使用できません。
+> クーポン コードが使用制限に達した後、システムが自動的にクーポン コードの状態を „使用済み„ に変更することは *ない* です。 ただし、このクーポン コードは使用制限に達しているため使用できません。 クーポン コードの状態が手動で **有効** 以外のもに設定されている場合、すべてのチャネルでこのクーポン コードを使用できません。  
 
 ## <a name="managing-coupons"></a>クーポンの管理
 

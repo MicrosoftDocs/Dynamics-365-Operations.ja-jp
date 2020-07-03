@@ -3,7 +3,7 @@ title: トランザクション イベント用の電子メール テンプレ�
 description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベントにおける電子メールテンプレートの作成、アップロード、構成する方法について説明します。
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5cd928e90654cca639ed1e163be9192c0dffd9ad
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367178"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416582"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce では、トランザクション イベントについて
 
 電子メール テンプレートを作成するには、次の手順に従います。
 
-1. Commerce 本部で、**小売りとコマース \> 本部の設定 \> 組織の電子メールのテンプレート**に移動します。
+1. Commerce 本部で **Retail と Commerce \> 本社の設定 \> 組織の電子メール テンプレート** または、**組織管理 \> 設定 \> 組織の電子メール テンプレート** にある **組織の電子メールテンプレート** に移動します。
 1. **新規** を選択します。
 1. **全般**配下で、次のフィールドを設定します:
 

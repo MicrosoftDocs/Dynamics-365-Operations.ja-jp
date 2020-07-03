@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 441fc125b602fb023f8b167ef0ce5566803345de
-ms.sourcegitcommit: 5d31d3e5f8549b761360c338bc2a1d9506c15999
+ms.openlocfilehash: 6326facbe5f124acf9b677642e87d00f6d7905b0
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030039"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418504"
 ---
-# <a name="run-test-cases-by-using-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) を使用したテスト ケースの実行
+# <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テストパラメータの変更、テストの実行、結果の調査、および Azure DevOps への作業内容の保存方法について説明します。
+このトピックでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テストパラメータの変更、結果の実行と調査、および Azure DevOps への作業内容の保存方法について説明します。
 
 ## <a name="load-test-cases-and-create-automation-files"></a>テスト ケースの読み込みと自動化ファイルの作成
 Azure DevOpsで、**ロード** を選択して、テスト ケースおよびテスト ケースの自動化ファイルをダウンロードします。 **設定**ダイアログ ボックスで指定されたテスト計画に属するすべてのテスト ケースがダウンロードされます。
@@ -101,7 +101,27 @@ Excel パラメーター ファイルの**一般**タブでは、法人 (会社)
 上下矢印ボタンを使用して、テスト ケースを実行する順序を変更できます。
 
 ### <a name="pause-prior-to-a-test-case-run"></a>テスト ケース実行前の一時停止 
-テスト ケース実行開始前に、一時停止を追加できます。 一時停止する場合は、Excel パラメーター ファイルの**一般**タブの**一時停止 (秒)** セルを更新します。
+テスト ケース実行開始前に、一時停止を追加できます。 一時停止する場合は、目的のテスト ケースの Excel パラメーター ファイルの **一般** タブで、セル **一時停止 (秒)** を更新します。
+
+### <a name="stop-a-run"></a>実行の停止
+テストの実行が進行中の場合は、**停止** ボタンをクリックして実行をキャンセルできます。 現在実行中のテスト ケースが完了した後で実行が停止します。 残りのテスト ケースは、Azure DevOps で**未実行** とマークされます。
+
+### <a name="validate-readiness-of-test-automation-files"></a>テスト自動化ファイルの準備状況の検証
+必要に応じて、テスト ケースの実行準備が整っているかどうかを検証する設定を有効にすることができます。 この設定により、レコーディングおよびテスト自動化ファイルの有効性に関連する不明なエラーが防止されます。 このオプションは、RSAT バージョン 1.210 で使用できます。 この機能は、**設定** ダイアログの **オプション** タブで有効にすることができます。
+
+![enable-local-file-validation-rules](media/enable-local-file-validation-rules.png)
+
+有効にすると、バックグラウンド プロセスによって、各テスト ケースの次の項目が継続的に検証されます。
+
++ ローカルの作業ディレクトリが存在します。
++ Excel パラメーター ファイルが存在します。
++ 実行に必要なテスト自動化ファイル (バイナリ ファイルまたは Xml ファイル) が存在します。
++ テスト自動化ファイルは、RSAT の現在のバージョンと互換性があります。 新しいバージョンの RSAT をインストールするときに、テスト自動化ファイルを再生成する必要があります。
++ Excel パラメーター ファイルに指定されたテスト ケース ID は、Azure DevOps のテスト ケース ID と一致します。
+
+グリッドの有効な列は、検証プロセスの結果を示します。 検証が失敗した場合は、**有効** 列の **X** をクリックすると、エラーと推奨されるアクションが表示されます。
+
+![enable-local-file-validation-rules-2](media/enable-local-file-validation-rules-2.png)
 
 ## <a name="investigate-results"></a>結果の調査
 すべてのテスト ケースの実行が完了すると、**合格** または **不合格** が **結果** 列に設定されます。 結果をクリックすると、エラー メッセージが表示されます。
@@ -133,9 +153,12 @@ Azure DevOps で入手できる追加の調査詳細。 この情報を表示す
 
 応答時間を機能させるには、バージョン 1.200 またはそれ以降のバージョンが必要です。
 
-## <a name="save-your-work"></a>作業を保存
-作業内容を保存するには、**アップロード**を選択します。 これにより、選択したテスト ケースに関するテストの自動化ファイル (Excel テストパラメータ ファイルを含む) を、 Azure DevOps にアップロードできます。
-テスト自動化ファイルを Azure DevOps にアップロードした後は、次に Regression Suite Automation Tool を使用するときに、テストの実行ファイルを生成したり Excel パラメーター ファイルを編集したりすることなく、別のコンピューターからでも簡単に **読み込み**、**実行**できます。
+## <a name="upload-to-azure-devops-to-commit-your-work"></a>Azure DevOps にアップロードして作業をコミットします。
+Azure DevOps に作業をコミットするには、**アップロード** を選択します。 これにより、選択したテスト ケースに関するテストの自動化ファイル (Excel テストパラメータ ファイルを含む) を、 Azure DevOps にアップロードできます。 テスト自動化ファイルを Azure DevOps にアップロードした後は、次に Regression Suite Automation Tool を使用するときに、テストの実行ファイルを生成したり Excel パラメーター ファイルを編集したりすることなく、別のコンピューターからでも簡単に **読み込み**、**実行**できます。
+
+アップロード メニューには、レコーディング ファイル (タスクの記録) のみをアップロードするためのオプションも用意されています。 
+
+選択するテスト ケースがわからない場合に、(前回の読み込み以降の) すべての変更を Azure DevOps にコミットするには、アップロード メニューで **すべての変更されたオートメーション ファイルをアップロード** を選択します。
 
 ## <a name="process-compliance"></a>コンプライアンスのプロセス
 RSAT には、テスト ケースの準備状況を管理する機能が用意されています。 また、テストの実行のためのサインオフ プロセスも用意されています。

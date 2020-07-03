@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 598fe695739f221b12af2dbd465e3ea709c0f9db
-ms.sourcegitcommit: 6caadaf948bae63c97f042428e77cd829b581b5a
+ms.openlocfilehash: cd0702c4675ccc5834d22e502bcd0bc3f917db2a
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3387599"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456586"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
 
@@ -107,9 +106,9 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 プレビューが必要な場合は、**Office Web アプリケーション サーバー** フィールドを `https://localhost` に設定します。 プレビューは、その後は、エラー メッセージではなく、「プレビューを利用できません」というメッセージを表示します。
 
-### <a name="document-preview-wopi-will-not-work-in-environments-with-ip-whitelisting-enabled"></a>ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
+### <a name="document-preview-wopi-will-not-work-in-environments-with-an-ip-safe-list-enabled"></a>ドキュメント プレビュー (WOPI) は、IP セーフ リストが有効になっている環境では機能しません
 
-プレビューを提供する WOPI サービスは、ファイルのレンダリングを取得するためのファイル サービスへと接続し返すことができないため、ドキュメント プレビュー (WOPI) は、IP ホワイトリストが有効になっている環境では機能しません。
+プレビューを提供する WOPI サービスは、ファイル サービスに接続してファイルを取得してレンダリングすることができないため、ドキュメント プレビュー (WOPI) は、IP セーフ リストが有効になっている環境では動作しません。
 
 ## <a name="other-configuration"></a>他のコンフィギュレーション
 
@@ -121,9 +120,15 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 ## <a name="accessing-document-management-attachments"></a>ドキュメント管理添付ファイルへのアクセス 
 
-ドキュメント管理は、データ ソースを含む殆どのフォームのトップにある**添付**ボタン (キーボード ショートカット: **Ctrl**+**Shift**+**A**) として、ユーザーに表示されます。 **添付**ボタンをクリックすると、フォーム上で現在選択されているコントロールのデータ ソースのコンテキストで**添付ファイル** フォームが開きます。
+ドキュメント管理は、データを含むほとんどのページのトップにある **添付** ボタンとして、ユーザーに表示されます。 **添付** ボタンを選択した場合 (または対応するキーボード ショートカット **Ctrl**+**Shift**+**A** を使用した場合)、ページで現在選択されているコントロールのデータ ソースのコンテキストで **添付ファイル** ページが開きます。 このページには、対応するデータ ソースに関連するすべての添付ファイルが表示されます。 
 
-**添付** ボタンには、現在選択されているレコードの添付ファイルの数も表示されるため、ユーザーはそのフォームを開かなくても、現在のレコードに添付ファイルがあるかどうかを確認することができます。 カウントには 0 ～ 9、次に 9+ が表示され、パフォーマンスの影響と大きなカウントの決定と表示の視覚的ノイズが制限されます。
+**添付** ボタンには、現在選択されているレコードの添付ファイルの数も表示されます。 したがって、現在のレコードの添付ファイルが存在するかどうかを確認するには、**添付ファイル** ページを開いておく必要はありません。 このボタンでは、0 ～ 9 件の添付ファイルの正確なカウントが表示されます。 9 つ以上の添付ファイルがある場合、このボタンには、**9+** がカウントとして表示されます。 このようにして、カウントが大きくなると生じる可能性があるパフォーマンスへの影響と視覚的なノイズが減少します。
+
+バージョン 10.0.12 では、**関連するドキュメントの添付ファイルを表示**機能により、ドキュメント添付ファイルのエクスペリエンスが次の 2 つの方法で変更されます。 まず、この機能を有効にすると、1 つのデータ ソースに関連する添付ファイルだけが **添付ファイル** ページに表示されなくなります。 代わりに、有効なレコードに関連付けられている、ページ上のすべてのデータ ソースの添付ファイルを表示します。 **添付** ボタンの添付ファイルの数についても、この変更が反映されます。 次に、ユーザーは **添付ファイル** ページの関連するデータ ソース間で、添付ファイルを移動したりコピーしたりできます。  
+
+> [!IMPORTANT]
+> バージョン 10.0.12 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
+
 
 ## <a name="attachment-recovery"></a>添付ファイルの回復
 
@@ -147,6 +152,59 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 1. 削除した後すぐに、ユーザーは **添付ファイルを削除しました** 通知の [元に戻す] リンクを使用できます。
 2. **添付ファイル** ページで **削除済み添付ファイル** ボタンを使用して、特定のレコードで回復できる削除された添付ファイルのリストにアクセスできます。 削除された添付ファイルは、確認のために開いたり、完全に削除したり、復元できます。
 3. **システム管理** > **照会** で **削除済み添付ファイル** ページから削除された添付ファイルのリストへのアクセスが提供され、任意のレコードに回復できます。 削除された添付ファイルは、確認のために開いたり、完全に削除したり、復元できます。
+
+## <a name="scanning-attachments-for-viruses-and-malicious-code"></a>添付ファイルでのウイルスおよび悪意のあるコードのスキャン
+添付ファイルを操作するときに、ファイルをスキャンしてウイルスや悪意のあるコードを探すことができるようにすることが必要な場合があります。 Finance and Operations アプリにはこの機能が用意されていませんが、拡張ポイントが追加されているため、添付ファイルを操作するときに、選択したファイル スキャン ソフトウェアを統合することができます。 ファイルのアップロードに同様の拡張点が追加されました。 詳細については、[ファイルのアップロード コントロール](../../dev-itpro/user-interface/file-upload-control.md)を参照してください。
+
+**Docu** クラスでは、次の 2 つのデリゲートが公開されます。 これらのデリゲートに対して、ドキュメントのスキャンを目的としてハンドラーを実装できます。
+
+- **Docu.delegateScanDocument()**: このデリゲートによって、ユーザーが添付ファイルをプレビューまたはダウンロードしようとしたときに、既存のドキュメント添付ファイルにファイル スキャン ロジックが適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、対応するアクションは失敗します。
+-  **Docu.delegateScanDeletedDocument()**: このデリゲートによって、ユーザーがファイルをプレビューまたはダウンロードしようとしたときに、ファイルのスキャン ロジックが添付ファイルのごみ箱ドキュメントに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、対応するアクションは失敗します。
+
+### <a name="implementation-details"></a>実装詳細
+次の **ScanDocuments** クラスの例は、2 つのハンドラーの定型コードを示しています。 デリゲートのハンドラーを実装する方法の一般情報については、[要求または応答シナリオの EventHandlerResult クラス](../../dev-itpro/dev-tools/event-handler-result-class.md)を参照してください。
+
+
+    public final class ScanDocuments
+    {
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
+        public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDocument(_docuRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
+        public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        private static boolean scanDocument(DocuRef _docuRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+        private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+    }
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

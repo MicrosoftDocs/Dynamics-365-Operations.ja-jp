@@ -3,7 +3,7 @@ title: Retail Experience アプリにブランディングを作成し適用す�
 description: このトピックでは、ブランディングを Retail Experience アプリに適用して Google Play と Apple App Store にリリースする方法について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fb5de3d54616ae3551c458ce8b6a710265cb8e1d
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 5c218b1d34e84b8da907f6cf8513d435cdede69a
+ms.sourcegitcommit: 09df26ec232f06e62f600ff52baf3b770c7e7125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070439"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "3437752"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -51,32 +51,8 @@ Xamarin をインストールした後は、最新の安定バージョンに更
 
 Windows で開発し、iOS アプリケーションを構築するためだけに Mac を使用している場合は、Windows と Mac を実行するコンピューターを接続する必要があります。 手順については、[Mac に接続](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) を参照してください。
 
-## <a name="loading-the-solution-in-visual-studio"></a>Visual Studio へのソリューションの読み込み
-Visual Studio に Retail Experience アプリを正しく読み込むことができるようにするには、その前に、そのアプリを修正する必要があります。 以下の手順を実行します。
-
-1.  Retail SDKフォルダー**全体**を Xamarin が有効なコンピューターにコピーします。 たとえば、C:\RetailSdk にコピーします。
-2.  C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln を開き、次の行を削除します。
-
-    ```xml
-    Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
-    ```
-
-3.  C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj を開き、次の行を削除します。
-
-    ```xml
-    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-    <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-    <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
-    ```
-
-4.  Visual Studio で、Sample.ShoppingApp.sln を開き、Droid および iOS フォルダーから既存のプロジェクトを追加します。 (ソリューションを右クリックし、**追加** &gt; **Visual Studio の既存のプロジェクト**を選択します)。
-5.  Xamarin.Forms はアプリに必要なバージョン 2.3.2.127 の問題を修正しました。 以下の説明に従って Xamarin.Forms バージョンをアップグレードしてください:
-    1.  Android と iOS の両方のプロジェクトの .csproj ファイルを開いて、明細行「&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;」を &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt; と置き換えます
-    2.  Android と iOS の両方のプロジェクトのファイル package.config ファイルを開いて、明細行「&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;」を「&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;」と置き換えます
-
 ## <a name="connect-to-an-online-channel"></a>オンライン チャネルへ接続する
-小売エクスペリエンス アプリでは、オンライン チャネルを使用して製品を表示します。 任意のオンライン チャネルを使用することができます。 要件に応じて、アプリごとに異なるオンライン チャネルを使用することも、両方のアプリに対して同じオンライン チャネルを使用することもできます。 オンライン チャネルに類別されているリリースされた製品は、アプリに表示されます。 
+次のステップについては、Visual Studio の Retail Experience アプリのソリューションを開きます。 小売エクスペリエンス アプリでは、オンライン チャネルを使用して製品を表示します。 任意のオンライン チャネルを使用することができます。 要件に応じて、アプリごとに異なるオンライン チャネルを使用する、または両方のアプリに対して同じオンライン チャネルを使用することも可能です。 オンライン チャネルに類別されているリリースされた製品は、アプリに表示されます。 
 
 > [!NOTE]
 > アプリはギフト カードの発行に使用できません。 したがって、ギフト カードは、アプリケーションが使用するオンライン チャネルの品揃えから除外する必要があります。 Commerce Scale Unit のエンドポイントおよびオンライン チャネルに関する情報は、各アプリ プロジェクトに存在する config.xml ファイルに追加されます。 config.xml ファイルを次のように変更する必要があります。

@@ -3,7 +3,7 @@ title: AI-ML ベースの製品推奨事項結果の調整
 description: このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品勧告の結果を調整する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154344"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404374"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の調整
 
@@ -102,11 +102,11 @@ ms.locfileid: "3154344"
 
 [製品推奨事項の概要](product-recommendations.md)
 
-[Dynamics 365 Commerce 環境での ADLS の有効化](enable-adls-environment.md)
+[Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
 
-[カスタマイズされた推奨事項を有効にする](personalized-recommendations.md)
+[カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
 [カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
 

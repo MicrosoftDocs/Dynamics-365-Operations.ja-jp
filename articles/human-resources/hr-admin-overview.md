@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009629"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443421"
 ---
 # <a name="overview"></a>概要
 
@@ -35,14 +35,14 @@ ms.locfileid: "3009629"
   - [Human Resources のプロビジョニング](hr-admin-setup-provision.md)
   - [インスタンスのコピー](hr-admin-setup-copy-instance.md)
   - [インスタンスの削除](hr-admin-setup-remove-instance.md)
-  - [プロセスの更新](hr-admin-setup-update-process.md)
+  - [更新プロセス](hr-admin-setup-update-process.md)
 
 - データ統合の設定
   - [データ統合テクノロジの選択](hr-admin-integration-choose-technology.md)
-  - [Common Data Service 統合の構成](hr-admin-integration-common-data-service.md)
-  - [Finance との統合の構成](hr-admin-integration-finance.md)
-  - [Dayforce との統合の構成](hr-admin-integration-dayforce.md)
-  - [定期的なデータ エクスポートのアプリの作成](hr-admin-integration-recurring-data-export.md)
+  - [Common Data Service 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
+  - [Finance との統合のコンフィギュレーション](hr-admin-integration-finance.md)
+  - [Dayforce との統合のコンフィギュレーション](hr-admin-integration-dayforce.md)
+  - [定期的なデータ エクスポート アプリの作成](hr-admin-integration-recurring-data-export.md)
   - Office との統合
     - [Office 統合のチュートリアル](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Excel でのエンティティ データの更新](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -50,6 +50,8 @@ ms.locfileid: "3009629"
     - [Office 統合のトラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [機能の管理](hr-admin-manage-features.md)
+
+- [データベース ログの構成と管理](hr-admin-database-logging.md)
 
 - ユーザー インターフェイスの操作
   - [ユーザー インターフェイスの要素](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
@@ -75,7 +77,6 @@ ms.locfileid: "3009629"
 - 伝票リソース
   - [ヘルプ システム](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [ヘルプ システムに接続する](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [カスタム ヘルプ サイトに接続する](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [フィールドの説明の表示およびエクスポート](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [タスク レコーダー](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [タスク レコーダーを使用したドキュメントやトレーニングの作成](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
@@ -86,9 +87,9 @@ ms.locfileid: "3009629"
   - [分析レポートが更新されない](hr-admin-troubleshooting-analytic-reports.md)
   - [Power Apps 管理センターで環境を作成できない](hr-admin-troubleshooting-power-apps.md)
   - [クライアントの接続が切断される](hr-admin-troubleshooting-disconnect.md)
-  - [職位階層で切り捨てられたテキストを回避する](hr-admin-troubleshooting-truncate.md)
+  - [職位階層でのテキストの切り捨ての回避](hr-admin-troubleshooting-truncate.md)
   - [報酬プロセスを実行する](hr-admin-troubleshooting-compensation.md)
-  - [LCS にタスク ガイドを保存](hr-admin-troubleshooting-task-guide.md)
+  - [LCS へのタスク ガイドの保存](hr-admin-troubleshooting-task-guide.md)
   - [セキュリティ ロールで個人住所にアクセスする](hr-admin-troubleshooting-private-addresses.md)
   - [Dynamics 365 アプリで Human Resources が表示されない](hr-admin-troubleshooting-not-in-apps.md)
   - [レポート オプション](hr-admin-troubleshooting-reporting.md)

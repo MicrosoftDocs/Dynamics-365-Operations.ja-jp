@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: 0d44c26bd5e095a790c0e2feffd33782b4b15893
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b24187b6f377bd3554de92087ac3a82c29765784
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811422"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404222"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 
@@ -38,7 +38,7 @@ ms.locfileid: "2811422"
 アプリケーションに組み込まれている標準の分析レポートを PowerBI.com でホストされているカスタム ソリューションに置き換える組み込みツールを使用することにより、パワー ユーザー向け Web クライアントで利用可能なカスタマイズ オプションの柔軟性の向上を利用できます。 最新のプラットフォーム更新プログラムにより、パワー ユーザーはアプリケーション ワークスペースの標準レポートを PowerBI.com でホストされたレポートに置き換えることができます。 これらの更新プログラムはすぐにワークスペースの他のユーザーが利用できるようになり、標準ソリューションを置き換えます。 追加オプションには、元々アプリケーションとともにリリースされた分析レポートに戻す機能が含まれています。
 
 ## <a name="entity-store-in-azure-data-lake-public-preview"></a>Azure Data Lake のエンティティ格納 (パブリック プレビュー)
-エンティティストアは、Power BI でレポートするための簡略化したトランザクション データを含む運用データ ウェアハウスです。 これで Azure Data Lake Storage (ADLS Gen2) にあるエンティティ格納をステージできます。 データを操作するのに、他の Azure やサードパーティ製ツールに加え PowerBI.com を使用できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ  Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。
+エンティティストアは、Power BI でレポートするための簡略化したトランザクション データを含む運用データ ウェアハウスです。 これで Azure Data Lake Storage Gen2 にあるエンティティ格納をステージできます。 データを操作するのに、他の Azure やサードパーティ製ツールに加え PowerBI.com を使用できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ  Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。
 
 この機能を有効にするには [Business Data Lake のエンティティ格納](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake) を参照してください。
 
@@ -86,11 +86,11 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

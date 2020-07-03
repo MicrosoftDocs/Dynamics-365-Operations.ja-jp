@@ -3,7 +3,7 @@ title: コンテナー詰めの設定
 description: このトピックでは、倉庫管理での積荷のコンテナー詰めを自動化する方法について説明します。
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/22/19
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383300"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454721"
 ---
 # <a name="set-up-containerization"></a>コンテナー詰めの設定
 
@@ -75,7 +75,7 @@ ms.locfileid: "3383300"
 5. **ウェーブ ステップ コード** フィールドに値を入力します。
 6. **分割ピッキングを許可する**チェック ボックスを選択します。
 7. **保存** を選択します。
-8. **コンテナー混合制約**を選択します。 混合ロジック ブレークで、コンテナーに配賦ラインを梱包するルールを設定できます。 たとえば、品目をコンテナーに割り当てる際に **品目番号フィールド**を追加する場合、新しい品目番号があると新しいコンテナーが作成されます。 これにより、作業者が同じコンテナーの 2 人の異なる顧客に配賦ラインを梱包することを防ぎます。  
+8. **コンテナー混合の制約** を選択します。 混合ロジック ブレークで、コンテナーに配賦ラインを梱包するルールを設定できます。 たとえば、品目をコンテナーに割り当てる際に **品目番号フィールド**を追加する場合、新しい品目番号があると新しいコンテナーが作成されます。 これにより、作業者が同じコンテナーの 2 人の異なる顧客に配賦ラインを梱包することを防ぎます。  
 9. **新規** を選択します。
 10. **テーブル** フィールドで、オプションを選択します。
 11. **フィールドの選択**フィールドで、値を入力または選択します。

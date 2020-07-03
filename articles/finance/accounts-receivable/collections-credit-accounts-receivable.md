@@ -1,6 +1,6 @@
 ---
-title: 売掛金勘定の貸方転記と取立
-description: 売掛金勘定回収情報は、一元化されたビューである Microsoft Dynamics 365 Finance コレクション ページで集中管理します。 貸方および取立マネージャが回収を管理するには、この一元化されたビューを使用します。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。
+title: 売掛金勘定の回収
+description: 売掛金勘定回収情報は、一元化されたビューである Microsoft Dynamics 365 Finance コレクション ページで集中管理します。 貸方および取立マネージャが回収を管理するには、この一元化されたビューを使用します。 回収代行業者は、定義済の回収基準を使用して生成された顧客リスト、または [顧客] ページから回収プロセスを開始できます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189180"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426399"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>売掛金勘定の貸方転記と取立
+# <a name="collections-in-accounts-receivable"></a>売掛金勘定の回収
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ ms.locfileid: "2189180"
 
 > [!NOTE]
 > 経過期間スナップショットは、これらのリスト ページの情報を表示する前に、作成する必要があります。 情報は、経過期間スナップショットを作成した顧客に対してのみ表示されます。 リスト ページに表示されるレコードは、次のようにしてさらにフィルタできます。
-> <li>既定では、Finance and Operations のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
+> <li>既定では、Finance and Operations  のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
 > <li>顧客プールが存在する場合、ユーザーは回収代行業者として設定され、プールを使用して回収リスト ページの情報をフィルタ処理する必要があります。 情報は、選択した顧客プールに含まれる顧客に限定されます。</li>
 > <li>ユーザーが回収代行業者として設定されている場合、その回収代行業者に選択したプールのみがリスト ページで使用できます。 回収代行業者について、[回収代行業者] ページで [エージェントがすべての顧客プールを表示できるようにする] の切り替えを選択した場合、すべてのプールがその業者で使用できます。</li>
 

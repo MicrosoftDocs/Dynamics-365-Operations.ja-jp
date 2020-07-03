@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62276463120f4bdc6d7d4b229a6bd8d34fc0e2e2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 217fa4c2859166510c6633a5614f23832a0cdd5b
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812034"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410402"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -34,7 +34,7 @@ ms.locfileid: "2812034"
 > Trace parser には Microsoft Dynamics AX 2012 と類似する機能が多数あります。 詳細については、 [Dynamics Ax Performance チーム ブログ](https://blogs.msdn.com/axperf) を参照してください。
 
 ## <a name="finding-the-trace-parser"></a>Trace Parser の検索
-トレース パーサーには、開発者展開または VHD があらかじめインストールされている必要があります。 インストール場所は次のとおりです。C:\\Program Files (x86)\\Microsoft Dynamics AX\\Microsoft.Dynamics.AX.Tracing.TraceParser.exe インストールされていない場合は、C:\\PerfSDK に「traceparser.msi」が見つかります。 何らかの理由で PerfSDK がインストールされていない場合は、ここで .msi を検索できます: c:\\Services\\PerfSDK\\Scripts
+トレース パーサーには、開発者展開または VHD があらかじめインストールされている必要があります。 インストール場所は **C:\\Program Files (x86)\\Microsoft Dynamics Trace Parser** です。 インストールされていない場合は、インストーラーを **C:\\PerfSDK\\PerfTools\\traceparser.msi** から実行することができます。
 
 ## <a name="capturing-events"></a>イベントのキャプチャ
 トレース パーサーで分析するデータを取得するには、2 つの方法があります。 次のものが含まれます。

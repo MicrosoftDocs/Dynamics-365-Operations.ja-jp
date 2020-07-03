@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) の削除済み、または非推奨の機能
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) から削除された、または削除される予定の機能について説明します。
 author: AngelMarshall
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c5c525b403715ba8dfd3c1bc2dfac4dd69f4a3d
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: e571cc26f55e0bd7a1eef301e193921e0b3f8e31
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367271"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454698"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の削除済み、または非推奨の機能
 
@@ -56,6 +56,7 @@ ms.locfileid: "3367271"
 <td>非推奨: BPM のフローチャート図コンポーネントは、2020 年に削除されることが予想されます。 次の機能は削除されます:
 <ul>
 <li>すべてのフローチャートは読み取り専用で、編集できません。 フローチャート活動に関連付けられているシェイプ プロパティも使用できません。 これらのフローチャートには、自動生成される既定のフローチャートと、既定のフローチャートに基づいて変更されるカスタマイズ フローチャートの両方が含まれます。</li>
+<li>このプロセス ステップは読み取り専用で、編集できません。</li>     
 <li>レガシ フィット/ギャップ分析機能は使用できません。 したがって、ギャップ リストは自動的に作成されず、エクスポートすることもできません。
 <p><strong>注記:</strong>この機能は以前に廃止され、Microsoft Azure DevOps 統合によって置き換えられました。</p>
 </li>

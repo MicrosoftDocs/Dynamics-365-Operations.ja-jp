@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebb3ffa150012a078e470f825d8a254b01005597
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: bff7461f84bb90ba1c22579386e5289409b4c5c0
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154355"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426385"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -144,7 +144,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 - Microsoft Internet Information Services (IIS)
 - サード パーティのハードウェア
 
-## <a name="commerce-scale-unit-requirements"></a>Commerce Scale Unit 要件
+## <a name="commerce-scale-unit-self-hosted-requirements"></a>Commerce Scale Unit (自己ホスト) 要件
 
 > [!NOTE]
 > 2019 年 8 月 1 日以降、Commerce Scale Unit や 他のクライアント側コンポーネントを使用するには、.NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。

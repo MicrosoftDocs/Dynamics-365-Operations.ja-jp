@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.11 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 04/18/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0bf671adc09103c9d562b7a7f37f1bb5678f57f3
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: da92a2f793ae0a17ff717b5f4e409fe51902ac33
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261549"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435605"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.11 の新機能または変更された機能について列挙します。 このバージョンには 10.0.464 のビルド番号が含まれており、次のように使用できます。
 
@@ -46,7 +44,7 @@ ms.locfileid: "3261549"
 - [通知とミニカート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [テーマ拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
 - [トランザクション電子メールの新しいイベントとプレースホルダー](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
-- Commerce SDK が Visual Studio 2017 に更新
+- [Commerce SDK が Visual Studio  2017 に更新](../dev-itpro/retail-sdk/migrate-sdk)
 
 ## <a name="additional-resources"></a>追加リソース
 

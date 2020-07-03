@@ -3,7 +3,7 @@ title: 現物価格とマーキングを使用した FIFO
 description: 先入れ先出し (FIFO) は、最初に入庫したものを最初に出庫する在庫モデルです。 卸売資産から財務更新された払出は、在庫トランザクションの財務日付に基づいて最初に財務更新された受入に対して決済されます。
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201758"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454629"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した FIFO
 
@@ -49,8 +49,8 @@ FIFO を使用する場合、LIFO ルールを使用する必要はありませ�
 -   4a. 原価がそれぞれ USD 30.00 の数量 1 に対する在庫現物入庫
 -   4b. 原価がそれぞれ USD 30.00 の数量 1 に対する在庫財務入庫
 -   5a。 原価価格がそれぞれ USD 20.00 の数量 1 に対する在庫現物払出 (財務更新済トランザクションの移動平均)
--   5b。 原価価格がそれぞれ USD 20.00 の数量 1 に対する在庫財務払出 (財務更新済トランザクションの移動平均)
--   6. 在庫決算が行われました。 FIFO 法に基づいて、財務更新された最初の払出が、財務更新された最初の受入に対して決済されます。 USD –10.00 の調整が払出トランザクションに対して実行されます。
+-   5b。 原価価格がそれぞれ USD 15.00 の数量 1 に対する在庫財務払出 (財務更新済トランザクションの移動平均)
+-   6. 在庫決算が行われました。 FIFO 法に基づいて、財務更新された最初の払出が、財務更新された最初の受入に対して決済されます。 USD –5.00 の調整が払出トランザクションに対して実行されます。
 
 新しい移動平均原価価格は、財務更新されたトランザクションを反映します。 次の図は、**現物価格を含める**オプションを使用しない場合の、この一連のトランザクションでの FIFO 在庫モデルの影響について説明しています。 
 

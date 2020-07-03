@@ -3,7 +3,7 @@ title: IT プロおよび開発者向けコマース
 description: このページには、IT プロとコマースをサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63b3ff191af282b05c2ec2aa3e6c782648731155
-ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
+ms.openlocfilehash: b30f19f8a5bdc400d6dc09163dbdfce0fb4d128f
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378197"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443936"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -46,7 +46,7 @@ ms.locfileid: "3378197"
 -   [販売時点管理 (POS) デバイスのライセンス認証](retail-device-activation.md)
 -   [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
 -   [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
--   [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
+-   [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 -   [診断とトラブルシューティングの Retail コンポーネント イベント](retail-component-events-diagnostics-troubleshooting.md)
 -   [アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)
 
@@ -85,9 +85,9 @@ ms.locfileid: "3378197"
 -   [既定の Commerce Scale Unit メタデータ コントローラーの拡張](extend-metadata.md)
 -   [Commerce Scale Unit の顧客およびコンシューマー API](retail-server-customer-consumer-api.md)
 -   [コマース スケール ユニット](retail-store-system-begin.md)
--   [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
+-   [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 
-## <a name="hardware-station"></a>Hardware Station
+## <a name="hardware-station"></a>Hardware station
 -   [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station の拡張機能](hardware-station-extensibility.md)
 -   [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md)
@@ -96,7 +96,6 @@ ms.locfileid: "3378197"
 - [Commerce runtime (CRT) のアーキテクチャ と構成](commerce-runtime-overview.md)
 - [Commerce runtime (CRT) の拡張機能とトリガー](commerce-runtime-extensibility-trigger.md)
 - [顧客の基本設定データをチャネル データベースに追加](add-customer-preference-channel.md)
-- [プロパティを販売注文に追加](add-properties-sales-order.md)
 - [小売チャネルのシークレットを管理](manage-secrets.md)
 - [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
 - [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)
@@ -123,6 +122,7 @@ ms.locfileid: "3378197"
 - [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
 - [コード署名証明書を使用して MPOS に署名する](pos-app-signing-certificate.md)
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
+- [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム ソフトウェア開発キット (SDK)](ecommerce-platform-sdk.md)

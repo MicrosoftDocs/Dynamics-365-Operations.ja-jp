@@ -1,6 +1,6 @@
 ---
 title: アプリケーション コネクタ
-description: このトピックでは、Microsoft Power Automate およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
+description: このトピックでは、Microsoft Power Automate および Logic Apps のアプリケーション コネクタに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/09/2020
@@ -26,7 +26,7 @@ ms.locfileid: "2946203"
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション コネクタを使用して Microsoft Power Automate、 Power Apps、データ インテグレーター、およびロジック アプリを Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
+アプリケーション コネクタを使用して Microsoft Power Automate、 Power Apps、データ インテグレーター、および Logic Apps を Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
 
 > [!IMPORTANT]
 > アプリケーション の コネクタ は Dynamics 365 Finance + Operations (オンプレミス) インスタンス との統合には使用できません。

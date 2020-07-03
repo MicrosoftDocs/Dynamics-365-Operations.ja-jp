@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 839feeb0999dabfef3df627cef8d64ac501ac091
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 79b7a1c81d1c9e8db17fb3046447381281fbf7f5
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080756"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411401"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -224,10 +224,12 @@ public void modified()
 
 **LedgerJournalTable データ ソース**
 
+```xpp
     public void active()
     {
         .parmJournalName(ledgerJournalTable.JournalName);
     }
+```
 
 > [!NOTE]
 > **loadSegments()** メソッドからすべてのコードを削除したら、そのメソッドを削除できます。

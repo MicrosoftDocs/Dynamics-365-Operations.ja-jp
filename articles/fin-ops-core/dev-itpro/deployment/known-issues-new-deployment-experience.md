@@ -3,7 +3,7 @@ title: セルフサービス配置に関する既知の問題
 description: このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
 author: rashmansur
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 37626ca1f8a041ac7c2133735dffc1c4ea2bd6d3
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: ebeb9584904cc749f5b5a2f3891f851a72d76591
+ms.sourcegitcommit: 3fa1e8583003a90ba486f757c3826b139e1b3f73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100484"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421567"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
@@ -42,31 +42,17 @@ ms.locfileid: "3100484"
 ### <a name="known-issues-in-this-release"></a>このリリースの既知の問題
 既知の問題は、将来のリリースで解決されるバグです。 2 週間おきに LCS の新しいリリースがあります。
 
--   配置エラーを一覧表示するログ ファイルは、まだ LCS を通じて使用できません。 現時点では、ログ ファイルが必要な場合は、サポート チケットを開くことができます。
-
--   アプリケーション環境からの LCS の統合が機能しません。 この結果使用できない機能は次のとおりです。
-
-    -   はじめに
-
-    -   BPM ライブラリを通じて有効なオンライン ヘルプ。 docs.microsoft.com のオンライン ヘルプは使用できます。
-
-    -   アプリケーション内からのサポート チケットを引き上げます。 LCS からのクラウドを利用したサポートが有効です。
-
 ## <a name="finance-and-operations-apps"></a>Finance and Operations アプリ 
 
-### <a name="features-not-yet-implemented"></a>まだ実装されていない機能
-
-インフラストラクチャの依存関係がある次の機能は、最新の配置エクスペリエンスにはまだ実装されていません。 これらの機能は推奨されていませんでした。
-
-| **機能**                 | **説明**                                           |
-|-----------------------------|-----------------------------------------------------------|
-| Commerce                      | コマースのサポートがまだ有効ではありません。                        |
-| Trace Parser                | 実績ツールはまだサポートされていません。                         |
+> [!NOTE]
+> Dynamics 365 Commerce は、10.0.10 リリースを使用した最新の配置エクスペリエンスに実装されています。 詳細については、[セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成](../../../commerce/dev-itpro/payment-connector-package.md)を参照してください。
 
 ### <a name="features-not-intended-to-be-implemented"></a>実装が意図されていない機能
 次の機能は廃止されており、最新の配置エクスペリエンスでは実装されません。
 
 | **機能**  | **説明**                     |
 |--------------|-------------------------------------|
-| カスタム フォント | カスタム フォントはサポートされません。 |
+| カスタム フォント | カスタム フォントはサポートされません。 詳細については、[Dynamics 365 アプリケーションのドキュメント レポート サービス](../analytics/reporting-experience-iias-environments.md)を参照してください。
 
+> [!NOTE]
+> 非推奨の機能の詳細については、[削除済みまたは非推奨のプラットフォーム機能](../get-started/removed-deprecated-features-platform-updates.md)、[以前のリリースからの削除済みおよび非推奨の機能](../migration-upgrade/deprecated-features.md)、[以前のリリースの削除済みおよび非推奨の機能](../get-started/removed-deprecated-features-platform-updates.md)を参照してください。

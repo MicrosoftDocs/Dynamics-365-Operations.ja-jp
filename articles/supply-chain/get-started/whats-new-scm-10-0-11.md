@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346356"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413033"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Dynamics 365 Supply Chain Management 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.11 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.464 のビルド番号が含まれており、次のように使用できます。
 
@@ -41,14 +40,14 @@ ms.locfileid: "3346356"
 
 - [手持在庫レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 - [倉庫アプリのライセンス プレート寿腸機能の拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) ― 詳細については、[倉庫アプリを介したライセンス プレートの受領](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
-- [バッチ番号引当フォームの明細行の引当機能拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)  - 詳細については、[販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md) を参照してください
+- [バッチ番号引当フォームの明細行の引当機能拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - 詳細については、[販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md) を参照してください
 - [製造領域の新しいデータ エンティティ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [積荷数量の受入超過](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - 詳細については、[発注書に対する入庫積荷の倉庫処理](../warehousing/inbound-load-handling.md) を参照してください。
-- [ジョブ カード デバイスからのバッチ番号に関する完了レポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
+- [ジョブ カード デバイスからのバッチ番号における完了報告 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) -詳細については、[ジョブ カード デバイスからの完了報告](../production-control/report-finished-job-device.md) を参照してください
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリの Platform updates
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.11 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリ バージョン 10.0.11 (2020 年 7 月) に対する Platform update](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md) を参照してください。
 

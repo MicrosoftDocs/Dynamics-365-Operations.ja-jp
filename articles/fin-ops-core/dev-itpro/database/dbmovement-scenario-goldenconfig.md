@@ -3,7 +3,7 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 06/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c4e956681b3c15fc8e3443b00b34a47799dedcd5
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 8de49bf17ef4505a54147720996c5725553088b5
+ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150756"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3488750"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -209,7 +209,7 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 必要に応じて、システムを構成する場合は、選択したユーザーが環境にアクセスできるようにできます。 デフォルトでは、管理者と Microsoft サービス アカウントを除くすべてのユーザーが無効になります。
 
-**システム管理**\>**ユーザー**\>**ユーザー** に移動し、UAT 環境へのアクセスが必要なユーザーを有効にします。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations)を使用してこのタスクをすばやく完了できます。
+**システム管理** \> **ユーザー** \> **ユーザー** にアクセスし、運用環境へのアクセスが必要なユーザーを有効化します。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations)を使用してこのタスクをすばやく完了できます。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 

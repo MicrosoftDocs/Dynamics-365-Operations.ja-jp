@@ -3,7 +3,7 @@ title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: e4756e4d1697fdba40ad8a71a5d33594583a219a
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367132"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456952"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -122,6 +122,9 @@ ms.locfileid: "3367132"
 - [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting (原価会計の使用を開始する)](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
+
+### <a name="customer-portal"></a>顧客ポータル
+- [Dynamics 365 Supply Chain Management での顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8)
 
 ### <a name="help-system"></a>ヘルプ システム
 

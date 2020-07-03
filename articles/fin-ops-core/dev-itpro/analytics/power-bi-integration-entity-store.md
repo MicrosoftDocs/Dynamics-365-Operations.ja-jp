@@ -3,7 +3,7 @@ title: エンティティ格納と Power BI の統合
 description: エンティティ格納は、Microsoft Dynamics 365 Finance に含まれている運用データ ストアです。 このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0af43faa977e08326b8f7aee390eda92632a649f
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 60b7f20924f9072eed33de4aaabf209cc7aecaf1
+ms.sourcegitcommit: c978cdccc62210d548746c120ad0a998124e5dfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124827"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3460282"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -73,7 +73,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 ### <a name="connecting-to-the-entity-store-database"></a>エンティティ格納データベースに接続する
 トラブルシューティングや診断の場合、関連するサンドボックス環境から直接エンティティ格納データベースに接続することができます。  接続するには
 
-1. サンドボックスにアクセスするには、リモート デスクトップを使用します。  RDP ファイルは、IP アドレスをホワイトリストに登録した後、**環境の詳細** ページからダウンロードできます。
+1. サンドボックスにアクセスするには、リモート デスクトップを使用します。  RDP ファイルは、IP アドレスをセーフ リストに登録後、**環境の詳細** ページからダウンロードできます。
 2. SQL Server Management Studio を開き、**環境の詳細** ページで指定したサーバーに接続します。  
     * **データベース アカウント** というセクションを見つけます。  名前 **axdwadmin** を持つユーザーのエントリを探します。  
     * サーバー名は、**SQL サーバー\データベース名** フィールドの最初の部分です。  これは、**SQLServerName.database.windows.net** の形式で使用する必要があります。ここで、SQLServerName は LCS からの値です。

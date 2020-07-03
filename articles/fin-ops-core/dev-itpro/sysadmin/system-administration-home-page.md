@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 124f3147c8ddcdb2d63b90cd554b2641f6d2d42a
-ms.sourcegitcommit: b952b9f9066a5317259b8344db4c5d99eab4bf3c
+ms.openlocfilehash: bc6102dae0fd2c88bc8f7b3228a51ccfabd66bbb
+ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3165788"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454920"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -80,6 +80,7 @@ Finance and Operations アプリは、ロール ベースのセキュリティ�
 
 - [ロールベース セキュリティ](role-based-security.md)
 - [セキュリティ アーキテクチャ](security-architecture.md)
+- [Finance and Operations アプリにおける暗号化処理](encryption.md)
 
 ## <a name="batch-processing"></a>バッチ処理
 多くのタスクをバッチ ジョブの一部として実行できます。 たとえば、バッチ ジョブには、レポートの印刷、管理の実行、電子ドキュメントの送信などのタスクを含めることができます。 バッチ ジョブを使用すると、通常の就業時間内におけるコンピュータまたはサーバーの処理速度の低下を回避できます。

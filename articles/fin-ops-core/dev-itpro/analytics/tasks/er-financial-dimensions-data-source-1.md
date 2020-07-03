@@ -3,7 +3,7 @@ title: ER 財務分析コードをデータ ソースとして使用する (第 
 description: 次の手順では、システム管理者または電子レポート開発者が、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b02496ebb06e0c2eb644fc7ef3280ca4eca05923
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b951c9074c68a9f7592c17e0688498880397b223
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142033"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406546"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>ER 財務分析コードをデータ ソースとして使用する (第 1 部 - データ モデルのデザイン)
 
@@ -106,4 +106,6 @@ ms.locfileid: "3142033"
 68. [追加] をクリックします。
 69. [保存] をクリックします。
 70. ページを閉じます。
+
+![ER データ モデル デザイナーのページ](../media/er-financial-dimensions-guides-data-model.png)
 

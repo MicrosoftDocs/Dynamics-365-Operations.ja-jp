@@ -3,7 +3,7 @@ title: 倉庫アプリを使用して受信するライセンス プレート
 description: このトピックでは、現物在庫の受け取りにライセンス プレート入庫プロセスを使用できるように 倉庫アプリを設定する方法について説明します。
 author: perlynne
 manager: tfehr
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
+ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346379"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410888"
 ---
 # <a name="license-plate-receiving-via-the-warehousing-app"></a>倉庫アプリを使用して受信するライセンス プレート
 
@@ -33,58 +33,59 @@ ASN データは、*梱包構造* を使用して、積荷と出荷にリンク�
 > [!NOTE]
 > 入れ子になったライセンス プレートを持つ梱包構造を使用する場合、在庫トランザクションの数を減らすには、システムによって親ライセンス プレート上の現物手持在庫が記録されます。 梱包構造データに基づいて、親ライセンス プレートから入れ子になったライセンス プレートに現物手持在庫を移動するには、モバイル デバイスはで、*入れ子になったライセンス プレートに梱包* 作業作成プロセスに基づくメニュー項目を用意する必要があります。
 
-<!-- To be used later (will require further editing):
-## Warehousing mobile device app processing
+## <a name="warehousing-mobile-device-app-processing"></a>倉庫管理モバイル デバイス アプリの処理
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+作業者が着信したライセンス プレート ID をスキャンすると、ライセンス プレートの入荷プロセスが初期化されます。 この情報に基づいて、ライセンス プレート (ASNから送られるデータ) の内容が入庫ドック場所に物理的に登録されます。 この次となるフローは、業務プロセスのニーズによって異なります。
 
-## Work policies
+## <a name="work-policies"></a>作業ポリシー
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+(たとえば) *完了レポート* モバイル デバイス メニュー項目プロセスがおこなわれると、そのライセンス プレートの入荷プロセスは、定義された設定に基づいて複数のワークフローをサポートします。
 
-### Work policies with work creation
+### <a name="work-policies-with-work-creation"></a>作業作成での作業ポリシー
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (License plate receiving and put away) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+作業を作成する作業ポリシーを使用して入庫品目を登録する場合、システムは登録ごとに、プット アウェイ作業 レコードを生成し、保存します。 *ライセンス プレートの入荷とプットアウェイ* 作業プロセスを使用する場合、登録とプット アウェイは 1 つのモバイル デバイス メニュー項目を使用して 1 つの操作として処理されます。 *ライセンス プレート入荷* プロセスを使用する場合は、入荷プロセスとプット アウェイ プロセスが 2 つの異なる倉庫操作として処理され、それぞれに独自のモバイル デバイス メニュー項目を持ちます。
 
-## Work policies without work creation
+### <a name="work-policies-without-work-creation"></a>作業作成なしの作業ポリシー
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+ライセンス プレート入荷プロセスを、作業を作成せずに使用することもできます。 *移動入庫* や *発注書* の作業指示書タイプを持つ作業ポリシーを定義し、*ライセンス プレートの入荷 (およびプットアウェイ)* のプロセスを使用する場合、次の 2 つの倉庫管理モバイル アプリ プロセスは作業を作成しません。 代わりに、入庫の入荷ドックでライセンス プレートに入庫の現物在庫の登録だけをおこないます。
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+- *ライセンス プレート受取*
+- *ライセンス プレートの受け取りおよびプット アウェイ*
 
-- License plate receiving
-- License plate receiving and put away
+> [!NOTE]
+> - **在庫場所** セクションで、作業ポリシーに対して少なくとも 1 つの場所を定義する必要があります。 複数の作業ポリシーに同じ場所を指定することはできません。
+> - 倉庫管理モバイル デバイス メニュー項目の **印刷ラベル** オプションは、作業の作成なしではライセンス プレートのラベルを印刷しません。
 
-will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で  *ライセンス プレート入荷の拡張設定* 機能を有効にする必要があります。
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>ライセンス プレートを追跡しない場所での在庫の入荷
 
--->
+**ライセンス プレートの追跡を使用する** が有効になっていない場合でも、その場所プロファイルに割り当てられている倉庫の場所を使用することは可能です。 したがって、在庫を入荷する際に、作業を作成せずに手持在庫を直接登録することができます。
+
+## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>倉庫内の入荷場所ごとにモバイル デバイス メニュー項目を追加する
+
+*ライセンス プレートの入荷拡張設定* 機能を使うことで、場所特有のライセンス プレート入荷 (およびプットアウェイ) メニュー項目を倉庫管理モバイル アプリに追加して、倉庫の任意の場所での入荷ができるようになります。 以前は、システムは各倉庫に対して定義されている既定の場所のみでの入荷しかサポートされていませんでした。 ただし、この機能を有効にすると、ライセンス プレートの入荷 (およびプットアウェイ) のモバイル デバイス メニュー項目では、各メニュー項目に対してカスタムの "移動先" 位置を選択できる、**既定のデータを使用** オプションが提供されるようになりました。 (このオプションは、その他のタイプのメニュー項目では使用可能です。)
+
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で  *ライセンス プレート入荷の拡張設定* 機能を有効にする必要があります。
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>入荷の概要ページを表示またはスキップする
 
-*モバイル デバイスに入荷の概要ページを表示するかどうかを制御する* 機能を使用して、ライセンス プレートの受信プロセスの一環として、追加された詳細な倉庫管理アプリのフロー利用することができます。
-
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています:
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *モバイル デバイスに入荷の概要ページを表示するかどうかを制御する*
+*モバイル デバイスに入荷の概要ページを表示するかどうかを制御する* 機能を使用して、追加の詳細な倉庫アプリ フローを、ライセンス プレートの入庫プロセスの一部として利用できます。
 
 この機能を有効にすると、ライセンス プレートの受け取り、またはライセンスプレートの受け取りとプット アウェイのモバイル デバイス メニュー項目で、**入荷の概要ページを表示** 設定が提供されます。 この設定には、次のオプションがあります:
 
 - **詳細な概要の表示** – ライセンス プレートの受け取り中に、作業者は、完全な ASN 情報を示す追加のページが表示されます。
 - **概要のスキップ** – 作業者は完全な ASN 情報を参照することはできません。 倉庫作業者は、入庫プロセス中に廃棄コードを設定したり、例外を追加したりすることもできなくなります。
 
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *モバイル デバイス上で入荷概要ページを表示するかどうかを制御する* をオンにする必要があります。
+
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>移動オーダー出荷済ライセンス プレートを出荷先倉庫以外の倉庫で使用されないようにする
 
-既に存在するライセンス プレート ID が ASN に含まれ、ライセンス プレート登録が行われている倉庫の場所以外の倉庫の場所に現物手持在庫データがある場合、ライセンス プレートの入庫プロセスは使用できません。
+既に存在するライセンス プレート ID が ASN に含まれ、ライセンス プレート登録が行われる倉庫の場所以外に現物手持在庫データがある場合、ライセンス プレートの入荷プロセスは使用できません。
 
 流通倉庫がライセンス プレートを追跡しない (したがって、ライセンス プレートごとの現物手持在庫も追跡しない) 移動オーダーのシナリオの場合、*移動オーダー出荷済ライセンス プレートが出荷先倉庫以外の別の倉庫で使用されないようにする* 機能を使用して、輸送中のライセンス プレートを物理的に手動で更新することを防止できます。
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています:
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *移動オーダー出荷済ライセンス プレートを出荷先倉庫以外の倉庫で使用されないようにする*
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) にある *移動オーダーで出荷されたライセンス プレートが、出荷先倉庫以外の倉庫で使用されないようにする* 機能をオンにする必要があります。
 
 この機能が使用可能になったときに機能を管理するには、次の手順を実行します。
 
@@ -96,6 +97,8 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="more-information"></a>詳細
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
-
 モバイル デバイス メニュー項目の詳細については、[倉庫作業用のモバイル デバイスの設定](configure-mobile-devices-warehouse.md) を参照してください。
+
+*完了レポート* の製造シナリオに関する詳細情報は、[倉庫作業ポリシーの概要](warehouse-work-policies.md) を参照してください。
+
+入庫積荷管理に関する詳細情報については、[発注書に対する入庫積荷の倉庫処理](inbound-load-handling.md) を参照してください。

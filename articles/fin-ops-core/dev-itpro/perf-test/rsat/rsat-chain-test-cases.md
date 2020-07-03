@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c625bc4f9ce57489c20a9f4f0e490d4df8d5f6f2
-ms.sourcegitcommit: c5ef9a1d1853095ab537389b9a8e2d2adb39ed8c
+ms.openlocfilehash: 66205a72ede717c1786888b66e49e5313918a218
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "3033079"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418530"
 ---
 # <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 
@@ -50,6 +50,27 @@ RSAT が Excel パラメーター ファイルを生成すると、これらの�
 次の図では、2つの異なる変数が式で使用されています。
  
 ![Excelでの式の作成](media/formulas.png)
+
+RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** などの Excel 関数を使用して、RAST 変数を使用した式を作成することもできます。 これは、Excel 式評価機能を使用して実装されるため、Excel でサポートされている機能は RSAT でサポートされています。 
+
+次にその例を示します。
++ 数値を最も近い整数に丸めるには、次のように使用します。
+
+    ``` =ROUND({{Item_Price_3274_Copy}}, 0)```
+
++ 文字列を連結するには、以下を使用します。
+
+    ```=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})```
+ 
++ 日付を計算して文字列に変換するには、以下を使用します。
+
+    ```=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")```
+
+    (信頼性の高いテスト ケースを実行するため、必ず RSAT の日付値をテキストに変換してください)。
+
+RSAT では、テストの実行中にこれらの式が評価されるため、式の前に単一引用符 **\'** を付ける必要があります。これにより、Excel で式が不完全に計算されるのを防ぐことができます。 この図には、例が示されています。
+
+![Excel 2 での式の作成](media/formulas-2.png)
 
 ## <a name="use-variables-in-message-validation"></a>メッセージ検証での変数の使用
 

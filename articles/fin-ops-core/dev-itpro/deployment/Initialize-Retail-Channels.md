@@ -1,9 +1,9 @@
 ---
-title: Retail Cloud Scale Unit の初期化
-description: このトピックでは、Retail Cloud Scale Unit を初期化する方法について説明します。
+title: Commerce Scale Unit (クラウド) の初期化
+description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,45 +15,77 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: d442bbcd38d6ba193af1f98f0fd4f72bd45dead1
-ms.sourcegitcommit: dad55d78c46278c9b27c7a37667b0317dede5eb2
+ms.openlocfilehash: f1e534498988e207277cfde9ae8a67696d662bad
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3286728"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454995"
 ---
-# <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
+# <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Retail Cloud Scale Unit (RCSU) を初期化する必要があります。 初期化は Retail Cloud Scale Unit を展開します。
+アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Commerce Scale Unit (クラウド) を初期化する必要があります。 初期化では、Commerce Scale Unit (クラウド) が配置されます。
 
-このトピックでは、Retail Cloud Scale Unit を初期化するための手順について説明します。
+このトピックでは、Commerce Scale Unit (クラウド) を初期化する手順について説明します。
 
 > [!IMPORTANT]
-> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Cloud Scale Unit を使用する小売チャネルの更新を行う必要があります。 Cloud Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。  延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
+> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Commerce Scale Unit を使用する小売チャネルの更新を行う必要があります。 Commerce Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Commerce Scale Unit (自己ホスト) を独占して使用している顧客に対しては、アクションは必要ありません。  延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 
 1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
-2. Microsoft Dynamics Lifecycle Services (LCS) で環境ごとに 1 つを超える RCSU が必要な場合は、サポート要求を作成して、**複数の Retail Cloud Scale Unit に対するアクセス要求**を入力し、環境 ID、RCSU の数、および対応するデータ センター地域を指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の RCSU を必要としない場合は、サポート要求を作成する必要はありません。 
+2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求**を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
 
-## <a name="initialize-retail-cloud-scale-unit-as-part-of-a-new-environment-deployment"></a>Retail Cloud Scale Unit を新しい環境の展開の一部として初期化します
+## <a name="region-availability"></a>地域の可用性
+Commerce Scale Unit は、次の地域に配置することができます。
+
+| グローバルの場所 | 領域              | 使用可能性        |
+|-----------------|---------------------|---------------------|
+| 南北アメリカ        | 米国東部             | 一般に入手可能 |
+| 南北アメリカ        | 米国東部 2           | 一般に入手可能 |
+| 南北アメリカ        | 米国中北部    | 一般に入手可能 |
+| 南北アメリカ        | 米国中南部    | 一般に入手可能 |
+| 南北アメリカ        | 米国中部          | 一般に入手可能 |
+| 南北アメリカ        | 米国西部             | 一般に入手可能 |
+| 南北アメリカ        | 米国西部 2           | 一般に入手可能 |
+| 南北アメリカ        | カナダ中部      | 能力上限    |
+| 南北アメリカ        | カナダ東部         | 能力上限    |
+| 南北アメリカ        | 西中央アメリカ     | 能力上限    |
+| APAC            | オーストラリア東部      | 一般に入手可能 |
+| APAC            | 東南アジア      | 一般に入手可能 |
+| APAC            | 東日本          | 一般に入手可能 |
+| APAC            | 西日本          | 一般に入手可能 |
+| APAC            | オーストラリア南東部 | 能力上限    |
+| APAC            | 東アジア           | 能力上限    |
+| APAC            | インド南部         | 能力上限    |
+| APAC            | インド中部       | 能力上限    |
+| EMEA            | 西ヨーロッパ         | 一般に入手可能 |
+| EMEA            | 北ヨーロッパ        | 一般に入手可能 |
+| EMEA            | イギリス南部            | 能力上限    |
+| EMEA            | イギリス西部             | 能力上限    |
+
+制限能力地域での配置の許容範囲にはかなり制約があります。 配置要求は、状況に応じて評価されます。 制限されたキャパシティ地域での配置に関して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。
+
+![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
+
+## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit を新しい環境の展開の一部として初期化します
 
 本社が使用可能か確認してください。 これは、初期化プロセス中にスケール ユニットを本社に登録するために必要です。 サービス プロセスで利用できなくなる可能性があるため、本社がサービス中の場合はスケール ユニットの初期化をお勧めしません。
 
 1. 本社環境が使用可能で [メンテナンス モード](../sysadmin/maintenance-mode.md) でないことを確認してください。
 2. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
 3. Retail 設定配置ページで、**初期化** を選択します。
-4. 初期化する Retail Cloud Scale Unit のバージョンを選択します。
-5. Retail Cloud Scale Unit を初期化するリージョンを選択します。
+4. 初期化する Commerce Scale Unit のバージョンを選択します。
+5. 地域を選択して Commerce Scale Unit を初期化します。
 
-## <a name="configure-retail-channels-to-use-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit を使用する小売チャネルの構成
+## <a name="configure-retail-channels-to-use-commerce-scale-unit"></a>Commerce Scale Unit を使用するための小売チャンネルのコンフィギュレーション
 
-1. Retail Cloud Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース**の順に移動して、この Retail Cloud Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
-2. 各小売りチャンネルに移動して、対応する Retail Cloud Scale Unit のチャンネル プロファイルを選択します。
+1. Commerce Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース**の順に移動して、この Commerce Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
+2. 各小売りチャンネルに移動して、対応する Commerce Scale Unit のチャンネル プロファイルを選択します。
 
-### <a name="database-refresh-and-cloud-scale-units"></a>データベースの更新とクラウド スケール ユニット
+### <a name="database-refresh-and-commerce-scale-units"></a>データベースの更新と Commerce Scale Unit
 
 始める前に [コマース機能を使用する環境でデータベースを更新した後に完了する手順](../database/database-refresh.md) に精通していることを確認して下さい。
 
@@ -66,7 +98,7 @@ ms.locfileid: "3286728"
 1. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
 2. 設定の配置ページで再配置するスケール ユニットを選択します。
 3. スケール ユニットの操作メニューで **更新** を選択します。
-4. スライダーの **バージョンの選択** のドロップダウンで **バージョンの指定** オプションを選択します
+4. スライダーの **バージョンの選択** のドロップダウンで **バージョンの指定** オプションを選択します。
 5. **バージョンの指定** の下のテキスト ボックスに、スケール ユニットの **現在のバージョン** ラベルの横に表示されたバージョンを入力します。
 6. **更新** ボタンをクリックします。
 
@@ -74,9 +106,9 @@ ms.locfileid: "3286728"
 
 複数のスケール ユニットがある場合は、各スケール ユニットに対して上記の操作を実行する必要があります。 必要に応じて、これらの操作を並行して実行できます。
 
-## <a name="deploy-additional-retail-cloud-scale-units-optional"></a>追加の Retail Cloud Scale Unit を展開する (オプション)
+## <a name="deploy-additional-commerce-scale-units-optional"></a>追加の Commerce Scale Unit の配置 (オプション)
 
-最初の Retail Cloud Scale Unit (RCSU) を初期化した後、追加のクラウド スケール ユニットが必要な場合はサポート要求を入力します。 サポート要求で、必要な RCSU の数、環境名、希望するリージョンを明記します。
+最初の Commerce Scale Unit (CSU) を初期化した後、追加のクラウド スケール ユニットが必要な場合はサポート要求を入力します。 サポート要求で、必要な RCSU の数、環境名、希望するリージョンを明記します。
 
 展開する追加の RCSU ごとに、チャネル データ ベースグループを 個別に作成することもお勧めします。 これを行うには、次の手順に従います。
 
@@ -89,33 +121,39 @@ ms.locfileid: "3286728"
 
 ## <a name="additional-considerations-if-you-initialize-cloud-hosted-commerce-channel-components-in-an-existing-environment"></a>既存の環境でクラウドにホストされたコマース チャネル コンポーネントを初期化する場合の追加の考慮事項
 
-環境でクラウドでホストされているコマース チャネル コンポーネントを既に使用している場合、Retail Cloud Scale Unit の初期化はそれらのコンポーネントの更新時にダウンタイムを減らすのに役立ちます。 Retail Cloud Scale Unit の初期化を行う前に、追加の計画が必要です。
+環境でクラウドでホストされているコマース チャネル コンポーネントを既に使用している場合、Commerce Scale Unit の初期化はそれらのコンポーネントの更新時にダウンタイムを減らすのに役立ちます。 Commerce Scale Unit の初期化を行う前に、追加の計画が必要です。
 
-クラウドでホストされたコマース チャネル コンポーネントを使用する環境で最初のクラウド スケール ユニットを初期化するときに、初期化プロセスではクラウドでホストされたチャネル コンポーネントに関連付けられているチャネルを最初のスケール ユニットに移行します。 店舗スケール ユニットに関連付けられたチャンネルは影響を受けません。
+クラウドでホストされたコマース チャネル コンポーネントを使用する環境で最初の Commerce Scale Unit を初期化するときに、初期化プロセスではクラウドでホストされたチャネル コンポーネントに関連付けられているチャネルを最初のスケール ユニットに移行します。 店舗スケール ユニットに関連付けられたチャンネルは影響を受けません。
 
 移行プロセスはチャネルに対して透過的です。 スケール ユニットの初期化が始まった後、次の操作が自動的に実行されます。
 
-1. 新しいクラウド スケール ユニットが作成され、環境に関連付けられます。
-2. クラウド スケール ユニットは、本社で利用可能なチャンネル データベースとして登録されます。
-3. 本社で **既定** のチャネル データベースにマップされたすべてのチャネルは、新しいクラウド スケール ユニットにマップするように更新されます。
+1. 新しい Commerce Scale Unit が作成され、環境に関連付けられます。
+2. Commerce Scale Unit は、本社で利用可能なチャンネル データベースとして登録されます。
+3. 本社で **既定** のチャネル データベースにマップされたすべてのチャネルは、新しい Commerce Scale Unit にマップするように更新されます。
 4. Commerce Data Exchange (CDX) 完全データ同期は、チャンネル データを新しいスケール ユニットに取り込むために実行されます。
 
-小売サーバーやクラウド販売時点管理を使用する店舗およびオンライン チャネルのすべての工程で、5 時間のダウンタイム ウィンドウを計画する必要があります。
+原則として、**Commerce Scale Unit の初期化の計画とテストを行う**には、店舗業務や、小売りサーバーやクラウドの販売時点管理を使用する E コマース チャネル業務のダウンタイムを 5 時間程度想定した計画を立てる必要があります。
 
-このプロセスは、本番データを使用してデータベースを更新した後に、サンドボックス環境で初めて実行する必要があります。 これにより業務検証が可能になり、移行プロセスにかかる時間についてのガイダンスが提供されます。
+1. 運用環境からサンドボックス UAT 環境へのデータベースの更新を実行します。 
+2. サンドボックス UAT 環境で Commerce Scale Unit を初期化します。 
+3. Commerce Scale Unit の初期化時間を記録します。 これは、運用環境でこの操作にかかる時間に相当するもので、その間は店舗の操作や電子商取引が利用できなくなります。
 
-クラウド スケール ユニットは他のコンポーネントから専用の隔離された計算とストレージ リソースを提供するため、独自のチャネル データベースを持ちます。 したがって、移行の前に次の対策を実行する必要があります:
+Commerce Scale Unit を初期化する前に、次の追加手順を実行する必要があります。
 
-1. **POS のすべてのシフトがクローズしていることを確認してください。** 移行後、移行プロセス中に有効だったシフトを閉じることができなくなります。
-2. **すべての P ジョブが正常に完了していることを確認します。** 前のチャンネル データベースが維持され、トランザクション データが本社との間で同期されている間、開始する前に P ジョブを実行することをお勧めします。
-3. **すべての POS デバイスからサインアウトします。** POS 操作は移行中にサポートされません。
+- **すべての POS シフトを閉じる** - 移行の完了後、POS ユーザーは移行プロセス中に有効だったシフトを閉じることができなくなります。
+- **すべての P ジョブが正常に完了していることを検証する** - CSUを初期化する前に、保留中のトランザクションを同期させる P-ジョブが完了していることが推奨されています。
+- **すべての POS デバイスからサインアウトする** - 移行中の POS 操作には対応していません。
+- **POS で中断されたすべてのトランザクションを取り消して無効化する** - 中断されたトランザクションは、初期化の一部として保持されません。
+
+> [!IMPORTANT]
+> Commerce Scale Unit の初期化の一環として、以前に中断されたトランザクションは失われ、取り消すことはできません。 
 
 初期化期間中に実行される内容を以下に示します。
 
 - POS オフライン機能を有効にしない限り、クラウドでホストされたコマース チャネルは機能しません。
 - オフライン機能がオンになっている POS デバイスは機能が制限されます。
 - Retail サーバーに依存しているすべての電子商取引クライアントが中断されます。
-- Retail Store Scale Unit でホストされているチャネルは影響されません。
+- Commerce Scale Unit (自己ホスト) にホストされているチャンネルは影響を受けません。
 - 本店機能は影響を受けません。
 
 初期化が完了した後に起きる事柄を示します。

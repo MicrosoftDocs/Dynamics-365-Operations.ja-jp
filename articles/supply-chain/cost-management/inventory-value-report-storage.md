@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276934"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413102"
 ---
 # <a name="inventory-value-storage-report"></a>在庫評価額ストレージ レポート
 
@@ -50,7 +50,7 @@ ms.locfileid: "3276934"
 1. **新規** を選択します。
 1. **在庫評価額** ダイアログ ボックスで、次の値を設定してレポートに含めるレコードを定義します：
 
-    - **パラメータ** クイックタブで、レポートの一意の名前を入力し、**日付間隔** セクションのフィールドを使用して、レポートに含めるレコードを定義します。 日付の間隔を定義するには、**日付間隔コード** フィールドで事前に設定された (レポートの生成日を基準とした) 範囲を選択するか、 **開始日** フィールドと **終了日** フィールドで特定の日付を選択します。 <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - **パラメータ** クイックタブで、レポートの一意の名前を入力し、**日付間隔** セクションのフィールドを使用して、レポートに含めるレコードを定義します。 日付の間隔を定義するには、**日付間隔コード** フィールドで事前に設定された (レポートの生成日を基準とした) 範囲を選択するか、 **開始日** フィールドと **終了日** フィールドで特定の日付を選択します。
     - **対象に含めるレコード**クイックタブで、フィルタと制約を設定して、レポートに含めるデータを定義します。
     - **バックグラウンドで実行** クイックタブで、レポートの生成方法、タイミング、および頻度を指定します。
 

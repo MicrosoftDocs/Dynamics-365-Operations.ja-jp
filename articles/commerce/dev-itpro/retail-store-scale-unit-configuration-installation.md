@@ -1,9 +1,9 @@
 ---
-title: Commerce Scale Unit の構成とインストール
-description: このトピックでは、セルフ サービスを使用して、Commerce Headquarters で Commerce Scale Unit を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。
+title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
+description: このトピックでは、セルフ サービスを使用して、Commerce Headquarters で Commerce Scale Unit (自己ホスト) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 61d0dbdabcaa08b075b968c6c0eae7fc5823d3f7
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: aa1439ff3fc43dc17d646e6499742b4b45d0ca5a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071603"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426331"
 ---
-# <a name="configure-and-install-commerce-scale-unit"></a>Commerce Scale Unit の構成とインストール
+# <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (以前は Retail Store Scale Unit と呼ばれる) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit は、コマース チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれる) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit は、コマース チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
 
 > [!IMPORTANT]
 > このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧シークレット) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
