@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (2020 年 7 月)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (2020 年 5 月)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
@@ -1184,6 +1182,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: 列定義
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: 財務諸表のレポート ツリー定義
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: 行定義セルの変更
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: 財務報告のデータ マートのリセット
@@ -3386,12 +3386,18 @@
                       items:
                         - name: コンフィギュレーションを GR からインポートする
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: GR へコンフィギュレーションをアップロードする
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: GR でコンフィギュレーションを共有する
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: クイック スタート ガイド
+              items:
+                - name: ER 形式の調整によるカスタム電子ドキュメントの生成
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: チュートリアル
               items:
                 - name: データ ソースの使用方法を確認する
