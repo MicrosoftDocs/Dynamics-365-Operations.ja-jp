@@ -3,7 +3,7 @@ title: システム管理ホーム ページ
 description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/03/2019
+ms.date: 06/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc6102dae0fd2c88bc8f7b3228a51ccfabd66bbb
-ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
+ms.openlocfilehash: 186dcd9391b8ebbb619ed792e7c632ebc002a3cd
+ms.sourcegitcommit: 1833c1e07a32c8ad41e4a1516e78100ae04a2156
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454920"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3508151"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -110,6 +110,11 @@ Finance and Operations モバイル アプリにより、組織はビジネス �
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
+
+## <a name="process-automation"></a>プロセスの自動化
+プロセス自動化フレームワークを使用すると、管理者は、バッチ サーバーでスケジュールされる自動化プロセスを表示および作成できます。  スケジュールされた作業の可視性の追加レイヤーは、アプリケーション領域で使用するために拡張できるカレンダー ビューで表示されます。これにより、システム管理者以外のユーザーが自分の領域に影響を与える作業を表示できるようにします。 
+
+- [プロセス自動化ホーム ページ](process-automation.md)
 
 ## <a name="general-administration"></a>一般管理
 - [デモ データの概要](../../fin-ops/get-started/demo-data.md)

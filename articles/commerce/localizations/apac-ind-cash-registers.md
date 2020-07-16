@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 2d48fa829f7347589ea60f56cc905e9fc45e57ea
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e068a2309284569ba6061881a863f53e9da16588
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004686"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505647"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -146,7 +146,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 1. POS へのサインイン
 2. 品目を入力してから、**入力** を選択します。
 
-    ![POS 顧客注文](media/apac-ind-gst-pos-customer-order.png)
+    ![POS の顧客注文画面の「アクション」が選択されている](media/apac-ind-gst-pos-customer-order.png)
 
 3. GST 計算を検証します。 税の設定で定義されているレートを検討します。
 
@@ -164,7 +164,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 7. 店舗および集荷日を選択します。
 8. **OK** を選択します。
 
-    ![POS 顧客注文](./media/apac-ind-gst-pos-customer-order2.png)
+    ![POS の顧客注文画面の「注文」が選択されている](./media/apac-ind-gst-pos-customer-order2.png)
 
     > [!NOTE]
     > この例では、店舗場所の州が Delhi で、顧客住所の州も Delhi です。 州が同じであるため、イントラスタット GST が計算されます。
@@ -176,7 +176,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 取引を選択します。
     3. **レシート** を選択します。
 
-    ![レシート例](media/apac-ind-gst-s1-receipt1.png)
+    ![シナリオ 1 一番目の検証レシートの例](media/apac-ind-gst-s1-receipt1.png)
 
 11. バックオフィスで販売注文および税ドキュメントを検証します:
 
@@ -184,7 +184,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 販売注文を選択します。
     3. アクション ペインの、**販売** タブの、**税** グループで、**税務書類** を選択します。
 
-    ![税務書類](media/apac-ind-gst-tax-document.png)
+    ![税務書類ページ](media/apac-ind-gst-tax-document.png)
 
 12. 顧客の注文を取り消して処理します:
 
@@ -199,7 +199,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 13. **正確** を選択して支払を処理します。
 14. 領収書を検証します。
 
-    ![レシート例](media/apac-ind-gst-s1-receipt2.png)
+    ![シナリオ 1 二番目の検証レシートの例](media/apac-ind-gst-s1-receipt2.png)
 
 15. 伝票取引を検証します:
 
@@ -218,7 +218,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     5. **税務書類** を選択します。
     6. 領収書番号が取引 ID として更新されたことを確認します。
 
-        ![税務書類](media/apac-ind-gst-tax-document2.png)
+        ![「トランザクション ID」フィールドが選択された税務書類ページ](media/apac-ind-gst-tax-document2.png)
 
 ### <a name="scenario-2-sell-taxable-goods-to-a-consumer"></a>シナリオ 2: 顧客に対する課税対象商品の販売
 
@@ -304,7 +304,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 4. **正確** を選択して支払を処理します。
 5. 領収書を検証します。
 
-    ![レシート例](media/apac-ind-gst-s3-receipt4.png)
+    ![シナリオ 3 領収書の例](media/apac-ind-gst-s3-receipt4.png)
 
 6. バックオフィスでの小売販売請求書を確認します:
 
@@ -389,7 +389,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 6. **正確** を選択します。
 7. 領収書を検証します。
 
-    ![レシート例](media/apac-ind-gst-receipt-5.png)
+    ![シナリオ 4 領収書の例](media/apac-ind-gst-receipt-5.png)
 
 8. バックオフィスでの小売販売請求書を確認します:
 

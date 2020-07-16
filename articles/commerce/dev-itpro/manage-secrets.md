@@ -1,6 +1,6 @@
 ---
 title: 小売チャンネルのシークレットを管理
-description: このトピックでは、チャネル データベースを拡張する方法について説明します。
+description: このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
 author: AamirAllaq
 manager: AnnBe
 ms.date: 09/17/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 133d415a8cc1ac1230c8bbe362b858e42ea2ea82
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fe82d98f2b7ba01d676728fb2375762f10f32f91
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004565"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505648"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 

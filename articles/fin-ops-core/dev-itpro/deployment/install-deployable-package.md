@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da19a07117d7cac72037f22f7726687b621ffa98
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 449f21f32c3a7702f6f25aa83a44a7271f9824e5
+ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124823"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497344"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 
@@ -39,6 +39,9 @@ ms.locfileid: "3124823"
 - **Runbook** – 展開ランブックは展開可能なパッケージを対象となる環境に適用させるために生成され、使われる一連の手順です。 ステップの一部が自動化され、一部は手動です。 AXUpdateInstaller は、これらの手順を一度に 1 つずつ正しい順序で実行できます。
 
 ## <a name="install-an-application-aot-deployable-package-on-a-development-environment"></a>開発環境でのアプリケーション (AOT) 配置可能パッケージのインストール
+> [!NOTE]
+> 次の手順は、カスタマイズ パッケージに対してのみ使用できます。 Microsoft Dynamics AX 2012 から Finance and Operations アプリへのアップグレードの一環として、データ アップグレード展開可能なパッケージを実行する場合は、**devinstall** パラメーターを使用しないでください。
+
 AOT 配置可能パッケージはアプリケーションのカスタマイズおよび拡張機能を含むパッケージです。 開発またはデモ環境で AOT 配置可能パッケージをインストールするためだけにコマンド ラインを使用する場合、このセクションの指示に従います。 このトピックの残りをスキップすることができます。
 
 1. 仮想マシン (VM) で、配置可能パッケージの zip ファイルをダウンロードします。 非ユーザー フォルダーに zip ファイルが保存されていることを確認します。

@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) によるサービスの更新の構成
 description: このトピックでは、環境の最新のサービスを受け取る方法とタイミングを指定する方法について説明します。
 author: angelmarshall
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 5d62f0442e5d408415ac9131b85708116eedaefb
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 0f52ab7133afd609f6a9559b576713e003ebebfb
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117461"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527408"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 
@@ -74,3 +74,14 @@ LCS で **プロジェクト所有者** ロールが割り当てられている�
 構成されたサンドボックス環境および実稼働環境への更新を一時停止する方法の詳細は、[Lifecycle Services (LCS) によるサービスの更新の一時停止](pause-service-updates.md) を参照してください。
 
 1 つのバージョンおよび Microsoft が管理するサービスの更新の詳細は、[1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md) を参照してください。
+
+## <a name="canceled-updates"></a>キャンセルされた更新
+スケジュールされた更新は、さまざまな理由でキャンセルされる場合があります。 スケジュールされた更新が Microsoft によってキャンセルされる原因となる可能性のある一般的な理由を次に示します。 
+- 更新の準備中にエラーが検出されました。 更新の準備が更新の約4時間前に開始され、環境が正常な状態にあることが確認されます。 環境が失敗状態またはメンテナンス モードであった場合、スケジュールされた更新は開始前にキャンセルされます。    
+- 環境の更新中にエラーが検出されました。 更新中に問題が発生した場合、スケジュールされた更新はキャンセルされ、環境は前の状態にロールバックされます。  
+- この環境は、最新バージョンで既に実行されています。  更新を再度適用する必要はありません。スケジュールされた更新は、開始前にキャンセルされます。 
+- ターゲット環境が見つかりません。 指定したサンドボックスが削除されたか、または実稼動環境が配置されていない場合、スケジュールされた更新は開始される前にキャンセルされます。
+- [ファースト リリース プログラム](https://experience.dynamics.com) に登録されています。  ファースト リリース プログラムは、異なるリリース リズムを備えており、以前にスケジュールされた更新がキャンセルされます。 
+
+キャンセルされた更新は、更新の設定で**最近キャンセルされた更新を表示**を介して確認できます。 最後の2つのスケジュールされた更新で、キャンセルされた更新がある場合はすべて表示されます。
+

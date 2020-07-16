@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30525a5e2d44a57c31e57796565e8e4401d68ffe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d15d3220f4bdd123d5b2d1e71207dc7450cf7ab3
+ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183367"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502451"
 ---
 # <a name="g-classes"></a>G クラス
 
@@ -30,39 +30,5 @@ ms.locfileid: "2183367"
 
 文字 G で始まるシステム API クラス。
 
-<a name="class-gac"></a>クラス Gac
----------
-
-    class Gac extends Object
-
-Gac クラスを使用すると、グローバル アセンブリ キャッシュ (GAC) のアセンブリを列挙できます。
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                 | 説明                                                   |
-|----------------------------------------|---------------------------------------------------------------|
-| public container enumerateAssemblies() | グローバル アセンブリ キャッシュ (GAC) のアセンブリを列挙します。 |
-| public void new()                      | Gac クラスの新しいインスタンスを初期化します。                  |
-
-### <a name="method-enumerateassemblies"></a>メソッド enumerateAssemblies
-
-グローバル アセンブリ キャッシュ (GAC) のアセンブリを列挙します。
-
-    public container enumerateAssemblies()
-
-#### <a name="return-value"></a>戻り値
-
-GAC のアセンブリを表すコンテナーです。
-
-### <a name="method-new"></a>メソッド new
-
-Gac クラスの新しいインスタンスを初期化します。
-
-    public void new()
-
-
+[Gac クラス](system-classes/Gac-class.md)
 

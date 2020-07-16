@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f364e930bcf7e006a66ff02afcb6794dee3bd5b7
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 5df54a2c40646c32b0261328fd83145bac8d731e
+ms.sourcegitcommit: eda612d7dc6fc5be2d5d2f27a7472c8d59e42d76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279122"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500003"
 ---
 # <a name="customize-entity-and-field-mappings"></a>エンティティとフィールドのマッピングのカスタマイズ
 
@@ -96,7 +96,9 @@ ms.locfileid: "3279122"
     | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
-
+    
+    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 エンティティのフィールドに対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
+    
 ## <a name="add-new-entity-maps"></a>新しいエンティティ マップの追加
 
 Microsoft は引き続き新しいエンティティを追加していますが、標準またはカスタムのエンティティ マップを追加することもできます。

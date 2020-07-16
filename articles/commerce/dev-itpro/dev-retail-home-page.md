@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b30f19f8a5bdc400d6dc09163dbdfce0fb4d128f
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 8c24a670c33c114cd5c0e9e49536551a85f3fdb5
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443936"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515777"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -61,7 +61,7 @@ ms.locfileid: "3443936"
 - [販売時点管理 (POS) の画面レイアウト](../pos-screen-layouts.md)
 - [POS レイアウト デザイナーのインストール](../install-pos-layout-designer.md)
 - [オフライン モードで Commerce runtime (CRT) サービス を呼び出す](call-crt-service-offline.md)
-- [Modern POS (MPOS) およびクラウド POS のトリガー拡張機能](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) のトリガーと印刷](modern-pos-trigger-extensibility.md)
 - [トリガーを使用して返品ポリシーを実装してください](trigger-example-return-policy.md)
 - [トリガーを使用してトランザクションをブロックする](trigger-example-blocking-transaction.md)
 - [POS ビューへのカスタム コントロールの追加](pos-custom-control.md)
@@ -123,6 +123,7 @@ ms.locfileid: "3443936"
 - [コード署名証明書を使用して MPOS に署名する](pos-app-signing-certificate.md)
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
 - [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
+- [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム ソフトウェア開発キット (SDK)](ecommerce-platform-sdk.md)

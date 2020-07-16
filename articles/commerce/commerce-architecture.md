@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce アーキテクチャの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
 author: samjarawan
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef08ce8310d3960c93b55dacd3d2d38157534ee9
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: fb0a1b0d1f220d78ada2a587f18889399dc96f8f
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426328"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527456"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -169,6 +169,8 @@ Dynamics 365 Commerce のパッケージ化された企業管理型コマース�
 Common Data Service は、すべての業務アプリケーションのデータを統合する統合データ ストアです。 Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Commerce などの Dynamics 365 アプリケーションは Common Data Service を使って業務データを保存しています。 そのため、Common Data Service は業務横断的なアプリケーション シナリオを可能にし、Power Apps や Power Automate を介して新たなシナリオを強化することができます。 詳細については、 [Common Data Service の概要](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
+
+[Dynamics 365 Commerce 認証フロー](arch-auth-flow.md)
 
 [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 

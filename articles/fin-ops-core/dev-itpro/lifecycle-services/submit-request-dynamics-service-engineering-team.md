@@ -3,7 +3,7 @@ title: Dynamics Service Engineering チームへのサービス要求の送信
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 8d3695a58902c9e1c556d0a384441242d0479434
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: a7befa0c3eb002e4eddd36b53a027b1602babe4c
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456549"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497133"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -120,9 +120,9 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 | サービス要求のタイプ           | 適用可能な環境 | 要求されたサービス | リード タイム | ダウンタイム |
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | 環境配置         | 任意 | 環境配置 | サービス レベル契約 (SLA): 2 営業日以内 | |
-| パッケージ アプリケーション            | 運用 | 配置可能パッケージ アプリケーション | 5 時間 | データの量に基づく |
+| パッケージ アプリケーション            | 生産 | 配置可能パッケージ アプリケーション | 5 時間 | 5 時間 |
 | サンドボックスのポイントインタイム復元 | レベル 2 またはそれ以上のサンドボックス | データベース ポイントインタイム復元 | 5 時間 | 4 時間 |
-| 実稼働環境のポイントインタイム復元 | 運用 | データベース ポイントインタイム復元 | 5 時間 | データの量に基づく |
+| 実稼働環境のポイントインタイム復元 | 運用 | データベース ポイントインタイム復元 | データの量に基づく | データの量に基づく |
 | サンドボックス環境から実稼働環境          | 第 2 層以上のサンドボックスから実稼働環境 | サンドボックス環境から実稼働環境 | 5 時間 | 4 時間 |
 | 外                          | 生産 | メンテナンス モード | 5 時間 | 顧客はサービス要求においていつ環境のメンテナンス モードを再度終了する必要があるかを示しているため、適用不可 |
 |                                | 運用 | IP セーフ リストの規則 | 5 時間 | 2 時間 |

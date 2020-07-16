@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 6 月 25 日
+          href: hr-whats-new-2020-06-23.md
         - name: 2020 年 6 月 11 日
           href: hr-whats-new-2020-06-11.md
         - name: 2020 年 5 月 28 日
@@ -141,6 +143,8 @@
           items:
             - name: サポートの利用
               href: hr-admin-troubleshooting-support.md
+            - name: 時間後にバッチ ジョブのスケジュールを設定してパフォーマンスを最適化する
+              href: hr-admin-troubleshooting-batch-jobs.md
             - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
               href: hr-admin-troubleshooting-batch-history.md
             - name: 分析レポートが更新されない
