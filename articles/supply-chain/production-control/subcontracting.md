@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 07/03/2020
 ms.locfileid: "3346425"
 ---
 # <a name="subcontracting"></a>外注
@@ -211,7 +211,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     ![作業ページの原材料ピッキングに対する 2 つの作業セット](./media/subcontract22_work-page.png)
 
-26. 倉庫アプリを開始して、工程 10 の倉庫作業を処理します。
+26. 工程 10 の倉庫作業を処理する倉庫アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -229,7 +229,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     製造オーダーのステータスが**開始済**であることに注意してください。 工程 10 の材料は、ピッキング リスト仕訳帳の自動転記で消費されます。 工程 10 の時間消費量は、工順カード仕訳帳の自動転記で扱われます。
 
-32. 倉庫アプリを開始して、工程 20 の倉庫作業を処理します。
+32. 工程 20 の倉庫作業を処理する倉庫アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 

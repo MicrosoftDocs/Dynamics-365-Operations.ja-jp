@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201482"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530239"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>クロスドッキングの自動リリース出荷
 
@@ -164,7 +164,7 @@ ms.locfileid: "3201482"
 8. **製造オーダー** ページのアクション ウィンドウの**製造オーダー** タブの、**プロセス** グループで**見積**を選択してから、**OK** を選択します。 オーダーが見積され、原材料の数量が生産に対して引当されます。
 9. アクション ウィンドウの**製造オーダー** タブの**プロセス** グループで、**リリース**を選択してから、**OK** を選択します。 原材料に対して倉庫ピッキング作業が作成されます。
 10. 作業を開いて確認します。 アクション ウィンドウの**倉庫**タブの、**一般**グループで、**作業詳細**を選択します。 作業 ID をメモします。
-11. 倉庫 51 で作業を実行するには、Dynamics 365 for Finance and Operations – Warehousing アプリを開いてサインインします。
+11. 倉庫 51 で作業を実行するには、倉庫アプリを開いてサインインします。
 12. **生産** \> **生産ピッキング**の順に移動します。
 13. 作業 ID を入力して、原材料ピッキングを開始および完了します。 
 

@@ -1,6 +1,6 @@
 ---
 title: 倉庫アプリのアプリ フィールド名のコンフィギュレーション
-description: このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義および構成をする方法について説明します。
+description: このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346402"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530492"
 ---
-# <a name="configure-app-field-names-in-warehousing-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義および構成をする方法について説明します。 
+このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 
 > [!NOTE]
-> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義と構成をする方法、および Warehousing における使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [Warehousing アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。
+> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。
 
-## <a name="configure-warehousing-app-field-names"></a>倉庫管理アプリのフィールド名の構成
+## <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 
 Warehousing をモバイル デバイスで使用するときに、**倉庫アプリ フィールド名**ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。 新しい会社で、**既定の設定の作成**をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。 すべてのフィールド名を生成すると、次の入力オプションを選択できます。
 
@@ -68,7 +68,7 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 </tbody>
 </table>
 
-## <a name="configure-warehousing-app-field-priority"></a>倉庫管理アプリのフィールド名の構成
+## <a name="configure-warehouse-app-field-priority"></a>倉庫アプリ フィールドの優先順位のコンフィギュレーション
 
 **倉庫アプリ フィールドの優先順位**ページで、フィールド名を異なる優先順位グループに配置できます。 これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。 **既定の設定の作成**をクリックすると、優先順位グループの既定の設定が生成されます。 必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。 システムはアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。 オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。 次の表に、5 つの優先順位グループの例を示します。
 
@@ -132,7 +132,7 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 -   品目の説明
 -   サイズと場所
 
-上の表で設定されている倉庫アプリ フィールドの優先順位に基づいて、次の 3 行の情報は、タスク ページに表示されます :
+上の表で設定されている倉庫アプリ フィールドの優先順位に基づいて、情報の次の 3 行は、タスク ページに表示されます :
 
 -   行 1: 品目、数量、測定単位
 -   行 2: 品目の説明
@@ -143,4 +143,4 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 <a name="additional-resources"></a>追加リソース
 --------
 
-[Warehousing アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
+[倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)

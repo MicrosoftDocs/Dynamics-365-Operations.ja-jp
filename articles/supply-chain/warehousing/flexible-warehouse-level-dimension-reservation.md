@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346471"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530308"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>変動倉庫レベルの分析引当ポリシー
 
@@ -186,7 +186,7 @@ ms.locfileid: "3346471"
 
     バッチ番号 **B11** の数量 **10** が販売注文明細行に対してピッキングされ、**ベイドア**の場所に配置されます。 この時点で、トラックに積載して、顧客の住所に出荷する準備が整いました。
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>注文が確定したバッチ番号を持つ倉庫作業の例外処理
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>注文が確定したバッチ番号を持つ倉庫作業の例外処理
 
 注文が確定したバッチ番号をピッキングする倉庫作業には、通常の作業と同じ標準の倉庫例外処理とアクションが適用されます。 一般に、オープン作業または作業明細行はキャンセルされたり、ユーザーの場所がいっぱいになったために中断されたり、ショート ピッキングされたり、移動のために更新される可能性があります。 同様に、既に完了した作業のピッキング済数量を減らすことも、または作業を取り消すこともできます。
 
@@ -233,7 +233,7 @@ ms.locfileid: "3346471"
 <td>有</td>
 <td>
 <ol>
-<li>ピッキング作業開始時に、倉庫アプリの <strong>場所の上書き</strong> メニュー項目を選択します。</li>
+<li>ピッキング作業開始時に、倉庫アプリの<strong>場所の上書き</strong>メニュー項目を選択します。</li>
 <li><strong>提案</strong>を選択します。</li>
 <li>バッチ数量の使用可能性に基づいて提案される新しい場所を確認します。</li>
 </ol>
@@ -250,7 +250,7 @@ ms.locfileid: "3346471"
 <td>無</td>
 <td>
 <ol>
-<li>ピッキング作業開始時に、倉庫アプリの <strong>場所の上書き</strong> メニュー項目を選択します。</li>
+<li>ピッキング作業開始時に、倉庫アプリの<strong>場所の上書き</strong>メニュー項目を選択します。</li>
 <li>場所を手動で入力します。</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ ms.locfileid: "3346471"
 <td>該当なし</td>
 <td>
 <ol>
-<li>ピッキング作業プロセス時に、倉庫アプリのメニュー項目 <strong>フル</strong> を選択します。</li>
+<li>ピッキング作業プロセス時に、倉庫アプリのメニュー項目<strong>フル</strong>を選択します。</li>
 <li><strong>ピッキング数量</strong>フィールドに、必要なピッキングの一部の数量を入力して、全能力を示します。</li>
 </ol>
 </td>
@@ -469,7 +469,7 @@ ms.locfileid: "3346471"
 <td>有</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドに、<strong>非再配賦</strong>と入力します。</li>
 </ol>
@@ -498,7 +498,7 @@ ms.locfileid: "3346471"
 <td>有</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドに、<strong>非再配賦</strong>と入力します。</li>
 </ol>
@@ -522,7 +522,7 @@ ms.locfileid: "3346471"
 <td>有</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ショートピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドで、<strong>手動での再配分を使用したショートピッキング</strong>を選択します。</li>
 <li>一覧から場所 / ライセンス プレートを選択します。</li>
@@ -548,7 +548,7 @@ ms.locfileid: "3346471"
 <td>無</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ショートピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドで、<strong>手動での再配分を使用したショートピッキング</strong>を選択します。</li>
 </ol>
@@ -561,7 +561,7 @@ ms.locfileid: "3346471"
 <td>無</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ショートピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドで、<strong>手動での再配分を使用したショートピッキング</strong>を選択します。</li>
 <li>一覧から場所 / ライセンス プレートを選択します。</li>
@@ -585,7 +585,7 @@ ms.locfileid: "3346471"
 <td>該当なし</td>
 <td>
 <ol>
-<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目 <strong>ショート ピック</strong> を選択します。</li>
+<li>ピッキング作業のプロセス時に、倉庫アプリのメニュー項目<strong>ショート ピック</strong>を選択します。</li>
 <li><strong>ショートピック数量</strong>フィールドに <strong>0</strong> (ゼロ) と入力します。</li>
 <li><strong>理由</strong>フィールドで、<strong>自動での再配分を使用したショートピッキング</strong>を選択します。</li>
 </ol>

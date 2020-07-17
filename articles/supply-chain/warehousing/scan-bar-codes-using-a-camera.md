@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations – Warehousing アプリでのカメラを使用したバーコードのスキャン
-description: このトピックでは、モバイル デバイスでカメラを使用してバーコードをスキャンするため Dynamics 365 for Finance and Operations – Warehousing アプリを設定する方法について説明します。
+title: 倉庫アプリでのカメラを使用したバーコードのスキャン
+description: このトピックでは、倉庫アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 9d3b807b18a0a9c7d24763a2a2a7ea9eccf9c2bb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205866"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530009"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Dynamics 365 Supply Chain Management – Warehousing アプリでのカメラを使用したバーコードのスキャン
+# <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>倉庫アプリでのカメラを使用したバーコードのスキャン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、モバイル デバイスでカメラを使用してバーコードをスキャンするため Dynamics 365 for Finance and Operations – Warehousing アプリを設定する方法について説明します。 
+このトピックでは、倉庫アプリを設定して、モバイル デバイスでカメラを使用してバーコードをスキャンする方法について説明します。 
 
 ## <a name="prerequisites"></a>必要条件
-この機能を使用するには、インストールされている Warehousing アプリのバージョン 1.2.0.0 が必要であり、デバイスにはカメラが必要です。 更新した後にアプリを開く際に、カメラを使用するアプリを許可するように求められます。 デバイスにカメラがない場合、プロンプトは表示されず、カメラをスキャナーとして使用することはできません。 
+この機能を使用するには、インストールされている倉庫アプリのバージョン 1.2.0.0 が必要であり、デバイスにはカメラが必要です。 更新した後にアプリを開く際に、カメラを使用するアプリを許可するように求められます。 デバイスにカメラがない場合、プロンプトは表示されず、カメラをスキャナーとして使用することはできません。 
 
-## <a name="setup"></a>段取り
-Warehousing アプリケーションの表示設定では、バーコードのスキャンにカメラを使用すべきかを選択できます。 **スキャナーとしてカメラを使用** を有効にした場合、優先入力モードを **スキャン** に設定した各入力フィールドでカメラを使用できます。 
+## <a name="setup"></a>セットアップ
+倉庫アプリケーションの表示設定では、バーコードのスキャンにカメラを使用すべきかを選択できます。 **スキャナーとしてカメラを使用** を有効にした場合、優先入力モードを **スキャン** に設定した各入力フィールドでカメラを使用できます。 
 
-入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、**倉庫保管アプリ フィールド名**ページで、**優先入力モード**を**スキャン**に設定します。 このオプションが選択されている場合、倉庫保管アプリでスキャンするのにカメラを使用できます。 Warehousing でアプリ フィールド名を構成する方法については、[倉庫保管アプリでアプリ フィールド名をコンフィギュレーションする](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse) を参照してください。
+入力フィールドをスキャン可能にする必要があるかどうかをコントロールするには、**倉庫保管アプリ フィールド名**ページで、**優先入力モード**を**スキャン**に設定します。 このオプションが選択されている場合、倉庫アプリでのスキャンにカメラを使用できます。 倉庫管理でアプリ フィールド名を構成する方法については、[倉庫アプリでアプリ フィールド名を構成する](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse) を参照してください。
 
 ## <a name="supported-bar-code-formats"></a>サポートされているバーコード形式
 サポートされている最も一般的なバーコード形式には、コード 128、コード 39、コード 93、EAN-8、EAN-13、UPC-E、UPC-A、および QR コードが含まれます。 

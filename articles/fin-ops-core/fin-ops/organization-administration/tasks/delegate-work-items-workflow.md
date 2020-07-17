@@ -1,9 +1,9 @@
 ---
 title: ワークフローの作業項目をデリゲート
 description: 事務所を不在にする予定がある場合や、作業項目を処理できない場合は、自分の作業項目を他のユーザーに委任 (再割り当て) することができます。
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140585"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515767"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>ワークフローの作業項目をデリゲート
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140585"
 ## <a name="manually-delegate-a-work-item"></a>作業項目の手動委任
 
 個別の作業項目を委任するには、**ワークフロー**メニューの**委任**オプションを選択し、コメントとともに委任されるユーザーを入力します。 これにより、作業項目がユーザーに再度割り当てられ、完了させることができます。
+
+## <a name="manually-delegate-multiple-work-items"></a>複数の作業項目の手動委任
+
+複数の作業項目を**自分に割り当てられた作業項目**ページから委任できます。 一括委任の対象となるワークフロー タイプは、購買契約の承認ワークフロー、発注書ワークフロー、購買要求のレビュー、および仕入先請求書のワークフローです。 **複数の作業項目の委任**機能は既定で無効になっており、**ワークスペース > 機能管理**で有効にできます。 この機能を有効にする方法については、システム管理者に問い合わせてください。
+1.  **共通 > 共通 > 作業項目 > 自分自身に割り当てられた作業項目**に移動します。
+2.  委任する作業項目を選択します。
+3.  **作業項目の委任**メニューをクリックします。
+4.  **ユーザー** フィールドで、作業項目を委任するユーザーを選択します。
+5.  **コメント** フィールドに、作業項目を委任する理由を説明するコメントを入力します。
+6.  **作業項目の委任**ボタンをクリックして、作業項目の委任を完了します。
 
 ## <a name="automatically-delegate-work-items"></a>作業項目を自動的に委任
 

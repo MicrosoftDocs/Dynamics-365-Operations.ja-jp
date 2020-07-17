@@ -3,7 +3,7 @@ title: ホーム ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を提供します。
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025974"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527587"
 ---
-# <a name="overview-of-the-home-page"></a>ホーム ページの概要
-
+# <a name="home-page-overview"></a>ホーム ページの概要
 
 [!include [banner](includes/banner.md)]
 
@@ -69,10 +68,8 @@ ms.locfileid: "3025974"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[既定のカテゴリ ランディング ページと検索結果ページの概要](category-search-page-overview.md)
-
 [製品詳細ページの概要](quick-tour-pdp.md)
 
-[買い物カゴとチェック アウト ページの概要](quick-tour-cart-checkout.md)
+[買い物カゴとチェックアウト ページの概要](quick-tour-cart-checkout.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)

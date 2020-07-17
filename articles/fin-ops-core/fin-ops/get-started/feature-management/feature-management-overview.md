@@ -3,7 +3,7 @@ title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456600"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499622"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -140,6 +140,10 @@ ms.locfileid: "3456600"
 ## <a name="feature-management-and-flighting"></a>機能管理とフライティング
 
 機能管理を使用すると、各リリースで出荷される機能を制御できます。 フライティングを使用すると、Microsoft チームが限られた数の顧客に機能をリリースして、すべての顧客に影響を与えることなく機能をテストおよび検証できるようにすることができます。 機能管理は、すべての機能のフライティングを制御するものではありません。
+
+## <a name="new-features-are-optional-for-12-months"></a>新機能は 12 ヶ月間のオプションです
+
+新しい非クリティカル機能がインストールされている場合は、12 ヶ月の期間に対してのオプションになります。 これにより、ユーザーと組織は、いつ機能を採用するかを事前に計画し、日常業務に対するテストを行うことができます。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features)を参照してください。
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>機能管理を使用して ISV 機能またはカスタム機能をオンにする
 

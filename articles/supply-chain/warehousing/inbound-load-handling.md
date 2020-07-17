@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 709a75a259b1f8daa5b72e76b56942573c403f43
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 9a030f2e219c7c389d6255254545f3f895eff75b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261348"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530584"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -66,7 +66,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 - **積荷入庫をサポートするようにコンフィギュレーションされたモバイル デバイス メニュー**
 
-    モバイルデバイス用の [Dynamics 365 for Finance and Operations – 倉庫アプリ](install-configure-warehousing-app.md) は、次の作業作成プロセスをサポートします。
+    モバイル デバイス用の[倉庫アプリ](install-configure-warehousing-app.md) は、次の作業作成プロセスをサポートします。
 
     - 積荷品目入庫
     - 積荷品目入庫とプット アウェイ
@@ -285,7 +285,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 倉庫の入庫係がモバイル デバイスを使用して、積荷にリンクされている入庫在庫を登録する前に、その目的でモバイル デバイス メニュー項目を作成する必要があります。
 
-このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫アプリで選択できます。
+このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫アプリで選択できるようになります。
 
 1. **倉庫管理 \> 設定 \> モバイル デバイス \> モバイル デバイスのメニュー項目** に移動し、モバイル デバイス メニューに次の設定のメニュー項目が含まれていることを確認します:
 
