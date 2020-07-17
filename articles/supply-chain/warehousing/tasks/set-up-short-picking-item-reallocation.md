@@ -1,9 +1,9 @@
 ---
 title: 品目再配賦の未処理ピッキングの設定
-description: この手順では、指定された場所に在庫が不十分な場合、倉庫作業者が他の倉庫を素早く見つけることができる方法について説明します。
+description: このトピックでは、指定された場所に在庫が不十分な場合に、倉庫作業者が他の倉庫を素早く見つけることができるようにする方法について説明します。
 author: ShylaThompson
 manager: tfehr
-ms.date: 08/29/2018
+ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,35 +17,50 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e860a54c2306f8140947b77cdcb538160a84e06f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e14a4fc72d256bea31296bff80d5b5818b95ea9d
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216810"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527422"
 ---
-# <a name="set-up-short-picking-item-reallocation"></a><span data-ttu-id="5448d-103">品目再配賦の未処理ピッキングの設定</span><span class="sxs-lookup"><span data-stu-id="5448d-103">Set up short picking item reallocation</span></span>
+# <a name="set-up-short-picking-item-reallocation"></a><span data-ttu-id="7b2ae-103">品目再配賦の未処理ピッキングの設定</span><span class="sxs-lookup"><span data-stu-id="7b2ae-103">Set up short picking item reallocation</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5448d-104">この手順では、指定された場所に在庫が不十分な場合、倉庫作業者が他の倉庫を素早く見つけることができる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5448d-104">This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to.</span></span> <span data-ttu-id="5448d-105">他の場所に製品がある場合、その製品を取得するために場所のディレクティブを使用する、自動再配分プロセスを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="5448d-105">It's possible to use an automatic re-allocation process, which uses location directives to retrieve the goods if they're available at another location.</span></span> <span data-ttu-id="5448d-106">また手動再配分を行う場合、有効数量の対応が可能な場所の一覧がモバイル端末に表示され、これにより倉庫従事者は在庫にはどの場所がよいか選択することができます。</span><span class="sxs-lookup"><span data-stu-id="5448d-106">Alternatively, when manual re-allocation is used, a list of the locations with the available quantity is shown on the mobile device, allowing the warehouse worker to choose which location to use inventory from.</span></span> <span data-ttu-id="5448d-107">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="5448d-107">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="5448d-108">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="5448d-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="7b2ae-104">この手順では、指定された場所に在庫が不十分な場合に、倉庫作業者が他の倉庫を素早く見つけることができるようにする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-104">This procedure shows how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to.</span></span> 
 
+<span data-ttu-id="7b2ae-105">再配賦プロセスは、**例外作業**によって制御され、倉庫の**作業者**によって使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-105">The reallocation process is controlled by a **Work exception** and used by the warehouse **worker.**</span></span>
 
-## <a name="set-up-work-exceptions"></a><span data-ttu-id="5448d-109">作業例外を設定します</span><span class="sxs-lookup"><span data-stu-id="5448d-109">Set up work exceptions</span></span>
-1. <span data-ttu-id="5448d-110">**ナビゲーション ウィンドウ**で、**倉庫管理 > 設定 > 作業 > 例外作業**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5448d-110">In the **Navigation pane**, go to **Warehouse management > Setup > Work > Work exceptions**.</span></span>
-2. <span data-ttu-id="5448d-111">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5448d-111">Click **New**.</span></span> <span data-ttu-id="5448d-112">倉庫作業者が処理している出荷のニーズに基づいて選択を行えるように、異なる品目の再配置ポリシーでいくつかの作業の例外を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="5448d-112">It's possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.</span></span>  
-3. <span data-ttu-id="5448d-113">**例外作業コード** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5448d-113">In the **Work exception code** field, type a value.</span></span> <span data-ttu-id="5448d-114">例外作業の使途がわかるようにタイトルを付けます。</span><span class="sxs-lookup"><span data-stu-id="5448d-114">Give the work exception a title to indicate what it's used for.</span></span> <span data-ttu-id="5448d-115">たとえば、ショートピッキングに関するマニュアルなど。</span><span class="sxs-lookup"><span data-stu-id="5448d-115">For example, Short picking manual.</span></span>  
-4. <span data-ttu-id="5448d-116">**説明**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5448d-116">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="5448d-117">**例外**タイプのフィールドで、「ショートピック」を選択します。 </span><span class="sxs-lookup"><span data-stu-id="5448d-117">In the **Exception** type field, select 'Short pick'.</span></span>
-6. <span data-ttu-id="5448d-118">**在庫調整**チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="5448d-118">Select the **Adjust inventory** check box.</span></span> <span data-ttu-id="5448d-119">このオプションでは、在庫が簡単なピッキング場所の0に自動的に調整されます。</span><span class="sxs-lookup"><span data-stu-id="5448d-119">This option means that inventory will automatically be adjusted to 0 at the short picked location.</span></span>  
-7. <span data-ttu-id="5448d-120">**既定の調整タイプ コード** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="5448d-120">In the **Default adjustment type code** field, enter or select a value.</span></span> <span data-ttu-id="5448d-121">たとえば、USMFでは「 Res Adj Outを削除」を選択できます。</span><span class="sxs-lookup"><span data-stu-id="5448d-121">For example, in USMF you can select 'Remove Res Adj Out'.</span></span>  
-8. <span data-ttu-id="5448d-122">**品目再配置**フィールドで、「手作業」を選択します。</span><span class="sxs-lookup"><span data-stu-id="5448d-122">In the **Item reallocation** field, select 'Manual'.</span></span> <span data-ttu-id="5448d-123">手動または自動および手動を選択した場合、倉庫従事者は手動での再配分を実行できなければなりません。</span><span class="sxs-lookup"><span data-stu-id="5448d-123">If you select Manual, or Automatic and Manual, the warehouse worker needs to be enabled to use manual reallocation.</span></span>  
+<span data-ttu-id="7b2ae-106">自動、手動、またはその両方の再配賦プロセスを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-106">It is possible to use Automatic, Manual, or both reallocation processes:</span></span>
 
-## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a><span data-ttu-id="5448d-124">手作業による品目再配分を使用する作業者を設定します。</span><span class="sxs-lookup"><span data-stu-id="5448d-124">Set up a worker to use manual item reallocation</span></span>
-1. <span data-ttu-id="5448d-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5448d-125">Close the page.</span></span>
-2. <span data-ttu-id="5448d-126">**ナビゲーション ウィンドウ**で、**倉庫管理 > 設定 > 作業者**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5448d-126">In the **Navigation pane**, go to **Warehouse management > Setup > Worker**.</span></span>
-3. <span data-ttu-id="5448d-127">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5448d-127">Click **Edit**.</span></span>
-4. <span data-ttu-id="5448d-128">リストで、[作業者 24] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5448d-128">In the list, select worker 24.</span></span>
-5. <span data-ttu-id="5448d-129">**作業**クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="5448d-129">Expand the **Work** fastTab.</span></span>
-6. <span data-ttu-id="5448d-130">**手動による再配置を許可**のフィールドで 「はい」を選択します。</span><span class="sxs-lookup"><span data-stu-id="5448d-130">Select 'Yes' in the **Allow manual item reallocation** field.</span></span>
+- <span data-ttu-id="7b2ae-107">自動再配賦 - 場所ディレクティブを使用して、商品が別の場所にあるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-107">Automatic reallocation - Location directives are used to determine if the goods are available at another location.</span></span> <span data-ttu-id="7b2ae-108">可能な場合は、作業が更新され、倉庫のユーザーは別の場所に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-108">If possible, the work will be updated and the warehouse user will be directed to the alternative location.</span></span>
+- <span data-ttu-id="7b2ae-109">手動再配賦 - 倉庫のユーザーは、商品の未引当数量を持つ 1 つ以上の場所から選択することができます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-109">Manual reallocation - Allows the warehouse user to select from one or more locations with unreserved quantities of goods.</span></span> 
+- <span data-ttu-id="7b2ae-110">自動と手動 - システムが自動再配賦を実行できず、未引当数量で場所を使用できる場合は、場所を選択するようにユーザーにメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-110">Automatic and manual - If the system is unable to perform an automatic reallocation, and locations are available with unreserved quantities, the user will be prompted to select a location.</span></span>
 
+## <a name="set-up-work-exceptions"></a><span data-ttu-id="7b2ae-111">作業例外を設定します</span><span class="sxs-lookup"><span data-stu-id="7b2ae-111">Set up work exceptions</span></span>
+<span data-ttu-id="7b2ae-112">倉庫作業者が処理している出荷のニーズに基づいて選択を行えるように、異なる品目の再配置ポリシーでいくつかの作業の例外を定義することができます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-112">It's possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.</span></span>
+
+<span data-ttu-id="7b2ae-113">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-113">The USMF demo data company was used to create this procedure.</span></span>
+
+1. <span data-ttu-id="7b2ae-114">**ナビゲーション ウィンドウ**で、**倉庫管理 > 設定 > 作業 > 例外作業**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-114">In the **Navigation pane**, go to **Warehouse management > Setup > Work > Work exceptions**.</span></span>
+2. <span data-ttu-id="7b2ae-115">**新規**をクリックする</span><span class="sxs-lookup"><span data-stu-id="7b2ae-115">Click **New**</span></span> 
+3. <span data-ttu-id="7b2ae-116">**例外作業コード** フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-116">In the **Work exception code** field, type a value.</span></span> <span data-ttu-id="7b2ae-117">これがこの例外のタイトルになります。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-117">This will be the title of this exception .</span></span> <span data-ttu-id="7b2ae-118">たとえば、ショートピッキングに関するマニュアルなど。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-118">For example, Short picking manual.</span></span>
+4. <span data-ttu-id="7b2ae-119">**説明**フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-119">In the **Description** field, type a value.</span></span> <span data-ttu-id="7b2ae-120">これが、この例外の使用方法についての簡単な説明になります。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-120">This will be a short description of the usage of this exception.</span></span> <span data-ttu-id="7b2ae-121">たとえば、ショートピッキング - 品目は使用できません。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-121">For example, Short picking - item not available.</span></span>
+5. <span data-ttu-id="7b2ae-122">**例外**タイプ フィールドで、**ショートピック**を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-122">In the **Exception** type field, select **Short pick**.</span></span>
+6. <span data-ttu-id="7b2ae-123">**在庫調整**チェック ボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-123">Select the **Adjust inventory** check box.</span></span> <span data-ttu-id="7b2ae-124">選択した場合、在庫が簡単なピッキング場所の 0 に自動的に調整されます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-124">If selected, inventory will automatically be adjusted to 0 at the short picked location.</span></span>
+7. <span data-ttu-id="7b2ae-125">**既定の調整タイプ コード** フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-125">In the **Default adjustment type code** field, enter or select a value.</span></span> <span data-ttu-id="7b2ae-126">たとえば、USMF では、**Res Adj Out を削除する**を選択できます。 各調整タイプコードには、名前、説明、在庫仕訳帳名、および**引当の削除**の 4 つの特性が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-126">For example, in USMF you can select **Remove Res Adj Out**. Each Adjustment type code contains four characteristics: name, description, inventory journal name, and **Remove reservations**.</span></span> <span data-ttu-id="7b2ae-127">**引当の削除**が有効になっている場合は、ショートピッキングされた注文明細行の引当が削除されます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-127">If **Remove reservations** is enabled, the short-picked order line's reservations will be removed.</span></span>  
+8. <span data-ttu-id="7b2ae-128">**品目の再配賦**フィールドで、手動などの値を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-128">In the **Item reallocation** field, select a value, such as Manual.</span></span> <span data-ttu-id="7b2ae-129">手動または自動および手動を選択した場合、倉庫従事者は手動での再配分を実行できなければなりません。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-129">If you select Manual, or Automatic and Manual, the warehouse worker needs to be enabled to use manual reallocation.</span></span>
+
+## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a><span data-ttu-id="7b2ae-130">手作業による品目再配分を使用する作業者を設定します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-130">Set up a worker to use manual item reallocation</span></span>
+
+<span data-ttu-id="7b2ae-131">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-131">The USMF demo data company was used to create this procedure.</span></span>
+
+1. <span data-ttu-id="7b2ae-132">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-132">Close the page.</span></span>
+2. <span data-ttu-id="7b2ae-133">**ナビゲーション ウィンドウ**で、**倉庫管理 > 設定 > 作業者**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-133">In the **Navigation pane**, go to **Warehouse management > Setup > Worker**.</span></span>
+3. <span data-ttu-id="7b2ae-134">**編集** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-134">Click **Edit**.</span></span>
+4. <span data-ttu-id="7b2ae-135">一覧で、作業者を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-135">In the list, select worker.</span></span> <span data-ttu-id="7b2ae-136">たとえば、Julia Funderburk を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-136">For example, Julia Funderburk.</span></span>
+5. <span data-ttu-id="7b2ae-137">**ユーザー** クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-137">Expand the **Users** FastTab.</span></span>
+6. <span data-ttu-id="7b2ae-138">一覧から**ユーザー ID** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-138">In the list, select a **User ID**.</span></span> <span data-ttu-id="7b2ae-139">例えば 24 です。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-139">For example, 24.</span></span>
+7. <span data-ttu-id="7b2ae-140">**作業**クイック タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-140">Expand the **Work** FastTab.</span></span>
+8. <span data-ttu-id="7b2ae-141">**手動による再配賦を許可**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b2ae-141">Select **Yes** in the **Allow manual item reallocation** field.</span></span>

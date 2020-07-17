@@ -1,9 +1,9 @@
 ---
 title: 既定のカテゴリ ランディング ページと検索結果ページの概要
 description: このトピックでは、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,92 +17,97 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002499"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527471"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a><span data-ttu-id="055b6-103">既定のカテゴリ ランディング ページと検索結果ページの概要</span><span class="sxs-lookup"><span data-stu-id="055b6-103">Overview of default category landing page and search results page</span></span>
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a><span data-ttu-id="03868-103">既定のカテゴリ ランディング ページと検索結果ページの概要</span><span class="sxs-lookup"><span data-stu-id="03868-103">Default category landing page and search results page overview</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="055b6-104">このトピックでは、Microsoft Dynamics 365 Commerce E コマースでの既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="055b6-104">This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.</span></span>
+<span data-ttu-id="03868-104">このトピックでは、Microsoft Dynamics 365 Commerce E コマースでの既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="03868-104">This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.</span></span>
 
-## <a name="default-category-landing-page"></a><span data-ttu-id="055b6-105">既定のカテゴリ ランディング ページ</span><span class="sxs-lookup"><span data-stu-id="055b6-105">Default category landing page</span></span>
+## <a name="default-category-landing-page"></a><span data-ttu-id="03868-105">既定のカテゴリ ランディング ページ</span><span class="sxs-lookup"><span data-stu-id="03868-105">Default category landing page</span></span>
 
-<span data-ttu-id="055b6-106">既定のカテゴリ ランディング ページは、Web サイトのユーザーがナビゲーション階層でカテゴリを選択したときに、通常表示されるページです。</span><span class="sxs-lookup"><span data-stu-id="055b6-106">The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy.</span></span> <span data-ttu-id="055b6-107">カテゴリ ページを使用すると、参照したり、分類された製品を並べ替えたり、絞り込んだりすることができます。</span><span class="sxs-lookup"><span data-stu-id="055b6-107">The category page lets you browse, and you can also sort and refine the categorized products.</span></span>
+<span data-ttu-id="03868-106">既定のカテゴリ ランディング ページは、Web サイトのユーザーがナビゲーション階層でカテゴリを選択したときに、通常表示されるページです。</span><span class="sxs-lookup"><span data-stu-id="03868-106">The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy.</span></span> <span data-ttu-id="03868-107">カテゴリ ページを使用すると、参照したり、分類された製品を並べ替えたり、絞り込んだりすることができます。</span><span class="sxs-lookup"><span data-stu-id="03868-107">The category page lets you browse, and you can also sort and refine the categorized products.</span></span>
 
 ![既定のカテゴリ ランディング ページ](./media/SimpleCategoryLandingDressCategory.png)
 
-<span data-ttu-id="055b6-109">ページの上部には、販売促進マネージャーがカテゴリ化したすべての製品カテゴリおよび他のページを表示するヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="055b6-109">At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized.</span></span> <span data-ttu-id="055b6-110">コンフィギュレーションはチャネル ナビゲーション階層のコンフィギュレーションの一部として実行されます。</span><span class="sxs-lookup"><span data-stu-id="055b6-110">Configuration is done as part of the configuration of the channel navigation hierarchy.</span></span> <span data-ttu-id="055b6-111">ページの下部には、買い物客が興味を持つ可能性のあるさまざまなトピックへのクイック リンクを含むフッターがあります。</span><span class="sxs-lookup"><span data-stu-id="055b6-111">At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.</span></span>
+<span data-ttu-id="03868-109">ページの上部には、販売促進マネージャーがカテゴリ化したすべての製品カテゴリおよび他のページを表示するヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="03868-109">At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized.</span></span> <span data-ttu-id="03868-110">コンフィギュレーションはチャネル ナビゲーション階層のコンフィギュレーションの一部として実行されます。</span><span class="sxs-lookup"><span data-stu-id="03868-110">Configuration is done as part of the configuration of the channel navigation hierarchy.</span></span> <span data-ttu-id="03868-111">ページの下部には、買い物客が興味を持つ可能性のあるさまざまなトピックへのクイック リンクを含むフッターがあります。</span><span class="sxs-lookup"><span data-stu-id="03868-111">At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.</span></span>
 
-<span data-ttu-id="055b6-112">カテゴリには、次のコンポーネントが不可欠です。</span><span class="sxs-lookup"><span data-stu-id="055b6-112">The following components are essential for a category:</span></span>
+<span data-ttu-id="03868-112">カテゴリには、次のコンポーネントが不可欠です。</span><span class="sxs-lookup"><span data-stu-id="03868-112">The following components are essential for a category:</span></span>
 
-- <span data-ttu-id="055b6-113">**製品配置タイル**は、ナビゲーション階層のコンフィギュレーションの一部として、販売促進マネージャーによってカテゴリで定義された製品を示します。</span><span class="sxs-lookup"><span data-stu-id="055b6-113">**Product placement tiles** show the products that the merchandising manager has defined in a category as part of the configuration of the navigation hierarchy.</span></span>
-- <span data-ttu-id="055b6-114">**絞り込み条件と選択肢の概要**は、カウントを提供し、品目の絞り込みに使用できるフィルターです。</span><span class="sxs-lookup"><span data-stu-id="055b6-114">**Refiners and choice summary** are filters that provide counts and that can be used to refine items.</span></span> <span data-ttu-id="055b6-115">販売促進マネージャーは、チャネル カテゴリおよび製品属性に関連するメタデータのコンフィギュレーションの一部として、これらをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="055b6-115">The merchandising manager configures them as part of the configuration of the metadata related to channel categories and product attributes.</span></span>
-- <span data-ttu-id="055b6-116">**並べ替えのオプション**は、Web サイトの訪問者が製品を並べ替えるために使用します。</span><span class="sxs-lookup"><span data-stu-id="055b6-116">**Sorting options** are used by website visitors to sort the products.</span></span> <span data-ttu-id="055b6-117">既定では、次の並べ替えのオプションを利用できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-117">By default, the following sorting options are available:</span></span>
+- <span data-ttu-id="03868-113">**製品配置タイル**は、ナビゲーション階層のコンフィギュレーションの一部として、販売促進マネージャーによってカテゴリで定義された製品を示します。</span><span class="sxs-lookup"><span data-stu-id="03868-113">**Product placement tiles** show the products that the merchandising manager has defined in a category as part of the configuration of the navigation hierarchy.</span></span>
+- <span data-ttu-id="03868-114">**絞り込み条件と選択肢の概要**は、カウントを提供し、品目の絞り込みに使用できるフィルターです。</span><span class="sxs-lookup"><span data-stu-id="03868-114">**Refiners and choice summary** are filters that provide counts and that can be used to refine items.</span></span> <span data-ttu-id="03868-115">販売促進マネージャーは、チャネル カテゴリおよび製品属性に関連するメタデータのコンフィギュレーションの一部として、これらをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="03868-115">The merchandising manager configures them as part of the configuration of the metadata related to channel categories and product attributes.</span></span>
+- <span data-ttu-id="03868-116">**並べ替えのオプション**は、Web サイトの訪問者が製品を並べ替えるために使用します。</span><span class="sxs-lookup"><span data-stu-id="03868-116">**Sorting options** are used by website visitors to sort the products.</span></span> <span data-ttu-id="03868-117">既定では、次の並べ替えのオプションを利用できます。</span><span class="sxs-lookup"><span data-stu-id="03868-117">By default, the following sorting options are available:</span></span>
 
-    - <span data-ttu-id="055b6-118">価格 – 低から高</span><span class="sxs-lookup"><span data-stu-id="055b6-118">Price – low to high</span></span>
-    - <span data-ttu-id="055b6-119">価格 – 高から低</span><span class="sxs-lookup"><span data-stu-id="055b6-119">Price – high to low</span></span>
-    - <span data-ttu-id="055b6-120">製品名 – \[A-Z\]</span><span class="sxs-lookup"><span data-stu-id="055b6-120">Product name – \[A-Z\]</span></span>
-    - <span data-ttu-id="055b6-121">製品名 – \[Z-A\]</span><span class="sxs-lookup"><span data-stu-id="055b6-121">Product name – \[Z-A\]</span></span>
-    - <span data-ttu-id="055b6-122">評価 – 低から高</span><span class="sxs-lookup"><span data-stu-id="055b6-122">Ratings – low to high</span></span>
-    - <span data-ttu-id="055b6-123">評価 – 高から低</span><span class="sxs-lookup"><span data-stu-id="055b6-123">Ratings – high to low</span></span>
+    - <span data-ttu-id="03868-118">価格 – 低から高</span><span class="sxs-lookup"><span data-stu-id="03868-118">Price – low to high</span></span>
+    - <span data-ttu-id="03868-119">価格 – 高から低</span><span class="sxs-lookup"><span data-stu-id="03868-119">Price – high to low</span></span>
+    - <span data-ttu-id="03868-120">製品名 – \[A-Z\]</span><span class="sxs-lookup"><span data-stu-id="03868-120">Product name – \[A-Z\]</span></span>
+    - <span data-ttu-id="03868-121">製品名 – \[Z-A\]</span><span class="sxs-lookup"><span data-stu-id="03868-121">Product name – \[Z-A\]</span></span>
+    - <span data-ttu-id="03868-122">評価 – 低から高</span><span class="sxs-lookup"><span data-stu-id="03868-122">Ratings – low to high</span></span>
+    - <span data-ttu-id="03868-123">評価 – 高から低</span><span class="sxs-lookup"><span data-stu-id="03868-123">Ratings – high to low</span></span>
 
-- <span data-ttu-id="055b6-124">**ページネーション**を使用すると、Web サイトの訪問者は、カテゴリ化された製品結果のあるページから別のページに移動できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-124">**Pagination** lets website visitors move from one page of categorized product results to another page.</span></span>
-- <span data-ttu-id="055b6-125">**合計数**には、カテゴリで定義されている製品の合計数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="055b6-125">**Total count** provides the total number of products that are defined in a category.</span></span>
+- <span data-ttu-id="03868-124">**ページネーション**を使用すると、Web サイトの訪問者は、カテゴリ化された製品結果のあるページから別のページに移動できます。</span><span class="sxs-lookup"><span data-stu-id="03868-124">**Pagination** lets website visitors move from one page of categorized product results to another page.</span></span>
+- <span data-ttu-id="03868-125">**合計数**には、カテゴリで定義されている製品の合計数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="03868-125">**Total count** provides the total number of products that are defined in a category.</span></span>
 
-## <a name="enrich-a-category-landing-page"></a><span data-ttu-id="055b6-126">カテゴリ ランディング ページの拡充</span><span class="sxs-lookup"><span data-stu-id="055b6-126">Enrich a category landing page</span></span>
+## <a name="enrich-a-category-landing-page"></a><span data-ttu-id="03868-126">カテゴリ ランディング ページの拡充</span><span class="sxs-lookup"><span data-stu-id="03868-126">Enrich a category landing page</span></span>
 
-<span data-ttu-id="055b6-127">カテゴリ ランディング ページに、特定のカテゴリに合わせたよりカスタマイズされた経験が必要な場合は、そのカテゴリのカテゴリ ランディング ページを「拡充」できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-127">If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category.</span></span> <span data-ttu-id="055b6-128">たとえば、マーケティング ビデオおよびいくつかのカテゴリのストーリーテリングを追加して、買い物客の注意を引くことができます。</span><span class="sxs-lookup"><span data-stu-id="055b6-128">For example, you can add a marketing video and some category storytelling to get the shopper's attention.</span></span> <span data-ttu-id="055b6-129">詳細については、[カテゴリ ランディング ページの拡充](enrich-category-page.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="055b6-129">For more information, see [Enrich a category landing page](enrich-category-page.md).</span></span>
+<span data-ttu-id="03868-127">カテゴリ ランディング ページに、特定のカテゴリに合わせたよりカスタマイズされた経験が必要な場合は、そのカテゴリのカテゴリ ランディング ページを「拡充」できます。</span><span class="sxs-lookup"><span data-stu-id="03868-127">If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category.</span></span> <span data-ttu-id="03868-128">たとえば、マーケティング ビデオおよびいくつかのカテゴリのストーリーテリングを追加して、買い物客の注意を引くことができます。</span><span class="sxs-lookup"><span data-stu-id="03868-128">For example, you can add a marketing video and some category storytelling to get the shopper's attention.</span></span> <span data-ttu-id="03868-129">詳細については、[カテゴリ ランディング ページの拡充](enrich-category-page.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="03868-129">For more information, see [Enrich a category landing page](enrich-category-page.md).</span></span>
 
 ![拡充されたカテゴリ ランディング ページ](./media/CategoryLandingPages.png)
 
-## <a name="auto-suggest-and-search-results-pages"></a><span data-ttu-id="055b6-131">自動提案および検索結果ページ</span><span class="sxs-lookup"><span data-stu-id="055b6-131">Auto-suggest and search results pages</span></span>
+## <a name="auto-suggest-and-search-results-pages"></a><span data-ttu-id="03868-131">自動提案および検索結果ページ</span><span class="sxs-lookup"><span data-stu-id="03868-131">Auto-suggest and search results pages</span></span>
 
-<span data-ttu-id="055b6-132">Web サイトのユーザーは、ナビゲーション階層からカテゴリに移動するか、検索フィールドに検索用語を入力することによってサイトを探索できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-132">Website users can explore a site either by going to a category from the navigation hierarchy or by entering a search term in the search field.</span></span>
+<span data-ttu-id="03868-132">Web サイトのユーザーは、ナビゲーション階層からカテゴリに移動するか、検索フィールドに検索用語を入力することによってサイトを探索できます。</span><span class="sxs-lookup"><span data-stu-id="03868-132">Website users can explore a site either by going to a category from the navigation hierarchy or by entering a search term in the search field.</span></span>
 
-<span data-ttu-id="055b6-133">ユーザーが検索フィールドに入力し始めるとすぐに、検索語を提案する没入型の自動提案機能が使用できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-133">As soon as users start to type in the search field, they experience the immersive auto-suggest functionality that suggests search terms.</span></span>
+<span data-ttu-id="03868-133">ユーザーが検索フィールドに入力し始めるとすぐに、検索語を提案する没入型の自動提案機能が使用できます。</span><span class="sxs-lookup"><span data-stu-id="03868-133">As soon as users start to type in the search field, they experience the immersive auto-suggest functionality that suggests search terms.</span></span>
 
-<span data-ttu-id="055b6-134">次に、表示される可能性のある提案のタイプをいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="055b6-134">Here are some of the types of suggestions that might be shown:</span></span>
+<span data-ttu-id="03868-134">次に、表示される可能性のある提案のタイプをいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="03868-134">Here are some of the types of suggestions that might be shown:</span></span>
 
-- <span data-ttu-id="055b6-135">**キーワード**は、チャンネルに類別されたすべての製品の中から品目を検索するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="055b6-135">**Keywords** are used to find items across all products that are assorted to the channel.</span></span>
-- <span data-ttu-id="055b6-136">**製品**は、製品の詳細ページへの直接リンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="055b6-136">**Products** provide direct links to the product details page.</span></span>
-- <span data-ttu-id="055b6-137">**スコープ カテゴリ検索候補**は、さまざまなカテゴリを一覧表示し、ユーザーが特定のカテゴリのキーワードを検索できるようにします。</span><span class="sxs-lookup"><span data-stu-id="055b6-137">**Scoped category search suggestions** list various categories and let users search for the keyword in a specific category.</span></span>
+- <span data-ttu-id="03868-135">**キーワード**は、チャンネルに類別されたすべての製品の中から品目を検索するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="03868-135">**Keywords** are used to find items across all products that are assorted to the channel.</span></span>
+- <span data-ttu-id="03868-136">**製品**は、製品の詳細ページへの直接リンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="03868-136">**Products** provide direct links to the product details page.</span></span>
+- <span data-ttu-id="03868-137">**スコープ カテゴリ検索候補**は、さまざまなカテゴリを一覧表示し、ユーザーが特定のカテゴリのキーワードを検索できるようにします。</span><span class="sxs-lookup"><span data-stu-id="03868-137">**Scoped category search suggestions** list various categories and let users search for the keyword in a specific category.</span></span>
 
 ![没入型の自動提案](./media/ImmersiveAutoSuggestUX.png)
 
-<span data-ttu-id="055b6-139">ユーザーがキーワードまたはスコープ カテゴリ検索候補のいずれかを選択した場合、または、入力した検索語句に対する提案がない場合は、検索結果ページにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="055b6-139">When users select one of the keyword or scoped category search suggestions, or when there are no suggestions for the search term that they enter, they are redirected to a search results page.</span></span> <span data-ttu-id="055b6-140">ユーザーは、検索結果の一覧を参照、並べ替え、および絞り込んで、目的の品目を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="055b6-140">The users can then browse, sort, and refine the list of search results to find the desired item.</span></span>
+<span data-ttu-id="03868-139">ユーザーがキーワードまたはスコープ カテゴリ検索候補のいずれかを選択した場合、または、入力した検索語句に対する提案がない場合は、検索結果ページにリダイレクトされます。</span><span class="sxs-lookup"><span data-stu-id="03868-139">When users select one of the keyword or scoped category search suggestions, or when there are no suggestions for the search term that they enter, they are redirected to a search results page.</span></span> <span data-ttu-id="03868-140">ユーザーは、検索結果の一覧を参照、並べ替え、および絞り込んで、目的の品目を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="03868-140">The users can then browse, sort, and refine the list of search results to find the desired item.</span></span>
 
 ![検索のランディング](./media/SearchLanding.png)
 
-<span data-ttu-id="055b6-142">検索結果ページには、次のコンポーネントが不可欠です。</span><span class="sxs-lookup"><span data-stu-id="055b6-142">The following components are essential for a search results page:</span></span>
+<span data-ttu-id="03868-142">検索結果ページには、次のコンポーネントが不可欠です。</span><span class="sxs-lookup"><span data-stu-id="03868-142">The following components are essential for a search results page:</span></span>
 
-- <span data-ttu-id="055b6-143">**製品配置タイル**は、ユーザーの検索用の製品を示します。</span><span class="sxs-lookup"><span data-stu-id="055b6-143">**Product placement tiles** show the products for the user's search.</span></span> <span data-ttu-id="055b6-144">既定では、これらのタイルは、ユーザー検索のクラウドベースの検索関連性スコアで並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="055b6-144">By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.</span></span>
-- <span data-ttu-id="055b6-145">**絞り込み条件と選択肢の概要**は、カウントを提供し、品目の絞り込みに使用できるフィルターです。</span><span class="sxs-lookup"><span data-stu-id="055b6-145">**Refiners and choice summary** are filters that provide counts and that can be used to refine items.</span></span> <span data-ttu-id="055b6-146">販売促進マネージャーは、「チャネル カテゴリおよび製品属性」メタデータのコンフィギュレーションの一部として、これらをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="055b6-146">The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.</span></span>
-- <span data-ttu-id="055b6-147">**並べ替えのオプション**は、Web サイトの訪問者が製品を並べ替えるために使用します。</span><span class="sxs-lookup"><span data-stu-id="055b6-147">**Sorting options** are used by website visitors to sort the products.</span></span> <span data-ttu-id="055b6-148">既定では、次の並べ替えのオプションを利用できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-148">By default, the following sorting options are available:</span></span>
+- <span data-ttu-id="03868-143">**製品配置タイル**は、ユーザーの検索用の製品を示します。</span><span class="sxs-lookup"><span data-stu-id="03868-143">**Product placement tiles** show the products for the user's search.</span></span> <span data-ttu-id="03868-144">既定では、これらのタイルは、ユーザー検索のクラウドベースの検索関連性スコアで並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="03868-144">By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.</span></span>
+- <span data-ttu-id="03868-145">**絞り込み条件と選択肢の概要**は、カウントを提供し、品目の絞り込みに使用できるフィルターです。</span><span class="sxs-lookup"><span data-stu-id="03868-145">**Refiners and choice summary** are filters that provide counts and that can be used to refine items.</span></span> <span data-ttu-id="03868-146">販売促進マネージャーは、「チャネル カテゴリおよび製品属性」メタデータのコンフィギュレーションの一部として、これらをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="03868-146">The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.</span></span>
+- <span data-ttu-id="03868-147">**並べ替えのオプション**は、Web サイトの訪問者が製品を並べ替えるために使用します。</span><span class="sxs-lookup"><span data-stu-id="03868-147">**Sorting options** are used by website visitors to sort the products.</span></span> <span data-ttu-id="03868-148">既定では、次の並べ替えのオプションを利用できます。</span><span class="sxs-lookup"><span data-stu-id="03868-148">By default, the following sorting options are available:</span></span>
 
-    - <span data-ttu-id="055b6-149">価格 – 低から高</span><span class="sxs-lookup"><span data-stu-id="055b6-149">Price – low to high</span></span>
-    - <span data-ttu-id="055b6-150">価格 – 高から低</span><span class="sxs-lookup"><span data-stu-id="055b6-150">Price – high to low</span></span>
-    - <span data-ttu-id="055b6-151">製品名 – \[A-Z\]</span><span class="sxs-lookup"><span data-stu-id="055b6-151">Product name – \[A-Z\]</span></span>
-    - <span data-ttu-id="055b6-152">製品名 – \[Z-A\]</span><span class="sxs-lookup"><span data-stu-id="055b6-152">Product name – \[Z-A\]</span></span>
-    - <span data-ttu-id="055b6-153">評価 – 低から高</span><span class="sxs-lookup"><span data-stu-id="055b6-153">Ratings – low to high</span></span>
-    - <span data-ttu-id="055b6-154">評価 – 高から低</span><span class="sxs-lookup"><span data-stu-id="055b6-154">Ratings – high to low</span></span>
-    - <span data-ttu-id="055b6-155">既定</span><span class="sxs-lookup"><span data-stu-id="055b6-155">Default</span></span>
+    - <span data-ttu-id="03868-149">価格 – 低から高</span><span class="sxs-lookup"><span data-stu-id="03868-149">Price – low to high</span></span>
+    - <span data-ttu-id="03868-150">価格 – 高から低</span><span class="sxs-lookup"><span data-stu-id="03868-150">Price – high to low</span></span>
+    - <span data-ttu-id="03868-151">製品名 – \[A-Z\]</span><span class="sxs-lookup"><span data-stu-id="03868-151">Product name – \[A-Z\]</span></span>
+    - <span data-ttu-id="03868-152">製品名 – \[Z-A\]</span><span class="sxs-lookup"><span data-stu-id="03868-152">Product name – \[Z-A\]</span></span>
+    - <span data-ttu-id="03868-153">評価 – 低から高</span><span class="sxs-lookup"><span data-stu-id="03868-153">Ratings – low to high</span></span>
+    - <span data-ttu-id="03868-154">評価 – 高から低</span><span class="sxs-lookup"><span data-stu-id="03868-154">Ratings – high to low</span></span>
+    - <span data-ttu-id="03868-155">既定</span><span class="sxs-lookup"><span data-stu-id="03868-155">Default</span></span>
 
-- <span data-ttu-id="055b6-156">**ページネーション**を使用すると、Web サイトの訪問者は、カテゴリ化された製品結果のあるページから別のページに移動できます。</span><span class="sxs-lookup"><span data-stu-id="055b6-156">**Pagination** lets website visitors move from one page of categorized product results to another page.</span></span>
-- <span data-ttu-id="055b6-157">**合計数**には、カテゴリで定義され、検索基準に合致する製品の合計数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="055b6-157">**Total count** provides the total number of products that are defined in a category and that match the search criteria.</span></span>
+- <span data-ttu-id="03868-156">**ページネーション**を使用すると、Web サイトの訪問者は、カテゴリ化された製品結果のあるページから別のページに移動できます。</span><span class="sxs-lookup"><span data-stu-id="03868-156">**Pagination** lets website visitors move from one page of categorized product results to another page.</span></span>
+- <span data-ttu-id="03868-157">**合計数**には、カテゴリで定義され、検索基準に合致する製品の合計数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="03868-157">**Total count** provides the total number of products that are defined in a category and that match the search criteria.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="055b6-158">追加リソース</span><span class="sxs-lookup"><span data-stu-id="055b6-158">Additional resources</span></span>
+>[!NOTE]
+><span data-ttu-id="03868-158">これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。</span><span class="sxs-lookup"><span data-stu-id="03868-158">These cloud-powered search capabilities are available starting in version 10.0.8.</span></span> <span data-ttu-id="03868-159">**コマース パラメーター > コンフィギュレーション パラメーター**で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="03868-159">Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'".</span></span> 
+<span data-ttu-id="03868-160">![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)</span><span class="sxs-lookup"><span data-stu-id="03868-160">![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)</span></span>
 
-[<span data-ttu-id="055b6-159">ホーム ページの概要</span><span class="sxs-lookup"><span data-stu-id="055b6-159">Overview of the home page</span></span>](quick-tour-home-page.md)
+## <a name="additional-resources"></a><span data-ttu-id="03868-161">追加リソース</span><span class="sxs-lookup"><span data-stu-id="03868-161">Additional resources</span></span>
 
-[<span data-ttu-id="055b6-160">製品詳細ページの概要</span><span class="sxs-lookup"><span data-stu-id="055b6-160">Overview of product details pages</span></span>](quick-tour-pdp.md)
+[<span data-ttu-id="03868-162">クラウドを利用した検索の概要</span><span class="sxs-lookup"><span data-stu-id="03868-162">Cloud-powered search overview</span></span>](cloud-powered-search-overview.md)
 
-[<span data-ttu-id="055b6-161">買い物カゴとチェック アウト ページの概要</span><span class="sxs-lookup"><span data-stu-id="055b6-161">Overview of cart and checkout pages</span></span>](quick-tour-cart-checkout.md)
+[<span data-ttu-id="03868-163">ホーム ページの概要</span><span class="sxs-lookup"><span data-stu-id="03868-163">Home page overview</span></span>](quick-tour-home-page.md)
 
-[<span data-ttu-id="055b6-162">アカウント管理ページの概要</span><span class="sxs-lookup"><span data-stu-id="055b6-162">Overview of account management pages</span></span>](quick-tour-account-management.md)
+[<span data-ttu-id="03868-164">製品詳細ページの概要</span><span class="sxs-lookup"><span data-stu-id="03868-164">Product details pages overview</span></span>](quick-tour-pdp.md)
+
+[<span data-ttu-id="03868-165">買い物カゴとチェックアウト ページの概要</span><span class="sxs-lookup"><span data-stu-id="03868-165">Cart and checkout pages overview</span></span>](quick-tour-cart-checkout.md)
+
+[<span data-ttu-id="03868-166">アカウント管理ページの概要</span><span class="sxs-lookup"><span data-stu-id="03868-166">Account management pages overview</span></span>](quick-tour-account-management.md)
 
