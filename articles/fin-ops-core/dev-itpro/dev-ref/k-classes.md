@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f322b8cc10c417663b1a001bf7b9b94cc773c87e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fc6787b8dcfdb2053749c5e98b5d8483a2f5f750
+ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183365"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502477"
 ---
 # <a name="k-classes"></a>K クラス
 
@@ -30,81 +30,5 @@ ms.locfileid: "2183365"
 
 文字 K で始まるシステム API クラス。
 
-<a name="class-keywords"></a>クラス キーワード
---------------
-
-    class Keywords extends Object
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                                  | 説明                                       |
-|---------------------------------------------------------|---------------------------------------------------|
-| public str firstFunction()                              |                                                   |
-| public str firstSymbol()                                |                                                   |
-| public str nextFunction()                               |                                                   |
-| public str nextSymbol()                                 |                                                   |
-| public str profile(str name)                            |                                                   |
-| ::public static boolean isValidIdentifier(str spelling) |                                                   |
-| public void new()                                       | Keywords クラスの新しいインスタンスを初期化します。 |
-| public void finalize()                                  |                                                   |
-
-### <a name="method-firstfunction"></a>メソッド firstFunction
-
-    public str firstFunction()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-firstsymbol"></a>メソッド firstSymbol
-
-    public str firstSymbol()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-nextfunction"></a>メソッド nextFunction
-
-    public str nextFunction()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-nextsymbol"></a>メソッド nextSymbol
-
-    public str nextSymbol()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-profile"></a>メソッド profile
-
-    public str profile(str name)
-
-#### <a name="parameters"></a>パラメーター
-
-名前  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-isvalididentifier"></a>メソッド isValidIdentifier
-
-    public static boolean isValidIdentifier(str spelling)
-
-#### <a name="parameters"></a>パラメーター
-
-スペル チェック  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-new"></a>メソッド new
-
-Keywords クラスの新しいインスタンスを初期化します。
-
-    public void new()
-
-### <a name="method-finalize"></a>メソッド finalize
-
-    public void finalize()
-
-
+[Keywords クラス](system-classes/Keywords-class.md)
 

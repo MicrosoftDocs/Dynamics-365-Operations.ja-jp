@@ -3,7 +3,7 @@ title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90a208599e85646e8a6756bf6d3d0d6d4ec603bc
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 2817aa408108142a87e7dee1b9f9f372e531ce9a
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030883"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497132"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -70,7 +70,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 以下の図では、クライアントの資格情報 (共有秘密または証明書) を使用したサービス間の呼び出し承認の仕組みを説明します。
 
-![クライアント資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
+![クライアントの資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
 
 ### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 
@@ -93,7 +93,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. アプリケーションで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション**の順に移動します。
+1. Finance and Operations アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション**の順に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 

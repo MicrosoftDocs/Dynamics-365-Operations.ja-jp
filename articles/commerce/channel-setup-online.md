@@ -3,7 +3,7 @@ title: オンライン チャネルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいオンライン チャネルを作成する方法について説明します。
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002430"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533324"
 ---
 # <a name="set-up-an-online-channel"></a>オンライン チャネルの設定
 
@@ -35,9 +35,9 @@ ms.locfileid: "3002430"
 
 Dynamics 365 Commerce は複数の小売チャンネルをサポートします。 これらの小売チャンネルには、オンライン ストア、コール センター、および小売用店舗 (従来型の店舗とも呼ばれる) が含まれます。 オンライン ストアは、小売店舗に加えて小売業者のオンライン ストアから製品を購入するオプションを顧客に提供します。
 
-Commerce でオンライン ストアを作成するには、最初にオンライン チャネルを作成する必要があります。 
+Commerce でオンライン ストアを作成するには、最初にオンライン チャネルを作成する必要があります。 新しいオンライン チャネルを作成する前に、[チャネル設定の前提条件](channels-prerequisites.md) を完了していることを確認してください。
 
-新しいオンライン チャネルを作成する前に、[チャネル設定の前提条件](channels-prerequisites.md) を完了していることを確認してください。
+新しいサイトを作成する前に、少なくとも 1 つのオンライン ストアをコマースで作成する必要があります。 詳細については、[E コマース サイトの作成](create-ecommerce-site.md)を参照してください。
 
 ## <a name="create-and-configure-a-new-online-channel"></a>新しいオンライン チャネルを作成およびコンフィギュレーションする
 

@@ -1,9 +1,9 @@
 ---
 title: 既定のカテゴリ ランディング ページと検索結果ページの概要
 description: このトピックでは、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002499"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527471"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>既定のカテゴリ ランディング ページと検索結果ページの概要
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>既定のカテゴリ ランディング ページと検索結果ページの概要
 
 [!include [banner](includes/banner.md)]
 
@@ -96,13 +95,19 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 - **ページネーション**を使用すると、Web サイトの訪問者は、カテゴリ化された製品結果のあるページから別のページに移動できます。
 - **合計数**には、カテゴリで定義され、検索基準に合致する製品の合計数が表示されます。
 
+>[!NOTE]
+>これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。 **コマース パラメーター > コンフィギュレーション パラメーター**で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。 
+![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>追加リソース
+
+[クラウドを利用した検索の概要](cloud-powered-search-overview.md)
 
 [ホーム ページの概要](quick-tour-home-page.md)
 
 [製品詳細ページの概要](quick-tour-pdp.md)
 
-[買い物カゴとチェック アウト ページの概要](quick-tour-cart-checkout.md)
+[買い物カゴとチェックアウト ページの概要](quick-tour-cart-checkout.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
 

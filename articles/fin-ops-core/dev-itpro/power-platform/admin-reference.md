@@ -3,7 +3,7 @@ title: Finance and Operations および Common Data Service 管理リファレ�
 description: このトピックでは、Finance and Operations の仮想エンティティの設定およびコンフィギュレーションについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ddfa10d019ca83323baeac2a152f5f1fd7db4c2a
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: f5486adaf89eb11da9a4b6532a1bb731abefb7fd
+ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416594"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3502479"
 ---
 # <a name="finance-and-operations-and-common-data-service-admin-reference"></a>Finance and Operations および Common Data Service 管理リファレンス
 [!include[banner](../includes/banner.md)]
@@ -49,6 +49,9 @@ Finance and Operations 仮想エンティティ Common Data Service ソリュー
 ## <a name="authentication-and-authorization"></a>認証と承認
 
 ソリューションを Common Data Service 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Common Data Service は、Azure Active Directory (AAD) アプリケーションに基づいて、サービス ツー サービス (S2S) 認証を使用して Finance and Operations を呼び出します。 この新しい AAD アプリケーションは、Common Data Service 環境の単一のインスタンスを表します。 Common Data Service と Finance and Operations の環境の組み合わせが複数存在する場合は、ペアごとに独立した AAD アプリケーションを作成して、Finance and Operations 環境と Common Data Service 環境の正しいペア間で確実に接続が確立されるようにする必要があります。 次の手順は、AAD アプリケーションの作成方法を示しています。
+
+> [!IMPORTANT]
+> AAD アプリケーションは、Finance and Operations と同じテナントに作成する必要があります。
 
 1.  <https://portal.azure.com> **\> Azure Active Directory \> アプリの登録** に移動します。
 

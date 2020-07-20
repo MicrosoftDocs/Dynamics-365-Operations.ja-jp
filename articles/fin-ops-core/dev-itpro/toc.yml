@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)
                   href: get-started/whats-new-platform-update-35.md
-                - name: 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)
-                  href: get-started/whats-new-platform-update-34.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -713,9 +711,29 @@
                         - name: イベント
                           href: dev-ref/xpp-events.md
                     - name: X++ データの選択と操作
-                      href: dev-ref/xpp-data-query.md
-                    - name: SysDa API を使用したデータアクセス
-                      href: dev-ref/sysda.md
+                      items:
+                        - name: X++ データの選択と操作の概要
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: 明細書を選択
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: データの選択
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: データの挿入
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: データの更新
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: データの削除
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: 明細書の選択中
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: 選択したステートメントを式として記述
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: トランザクションの整合性
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: セットベースからレコード単位への操作の変換
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: SysDa API を使用したデータアクセス
+                          href: dev-ref/sysda.md
                     - name: X++ マクロ
                       href: dev-ref/xpp-macros.md
                     - name: X++ 属性クラス
@@ -754,76 +772,58 @@
                   href: dev-ref/system-tables.md
                 - name: システム クラス
                   items:
-                    - name: A クラス
-                      href: dev-ref/a-classes.md
-                    - name: B クラス
-                      href: dev-ref/b-classes.md
-                    - name: C クラス
-                      href: dev-ref/c-classes.md
-                    - name: D クラス
-                      href: dev-ref/d-classes.md
-                    - name: E クラス
-                      href: dev-ref/e-classes.md
-                    - name: F クラス (FormBuildAnimateControl への FieldBinding)
-                      href: dev-ref/fieldbinding-classes.md
-                    - name: F クラス (FormBuildFastTabSummarySeparator への FormBuildButtonControl)
-                      href: dev-ref/formbuildbuttoncontrol-classes.md
-                    - name: F クラス (FormBuildRealControl への FormBuildFilterPaneControl)
-                      href: dev-ref/formbuildfilterpanecontrol-classes.md
-                    - name: F クラス (FormButtonSeparatorControl への FormBuildReferenceControl)
-                      href: dev-ref/formbuildreferencecontrol-classes.md
-                    - name: F クラス (FormControlEventArgs への FormChangeTracker)
-                      href: dev-ref/formchangetracker-classes.md
-                    - name: F クラス (FormFastTabHeaderControl への FormDataObject)
-                      href: dev-ref/formdataobject-classes.md
-                    - name: F クラス (FormGridControl への FormFastTabSummarySeparator)
-                      href: dev-ref/formfasttabsummaryseparator-classes.md
-                    - name: F クラス (FormIntControl への FormGroupControl)
-                      href: dev-ref/formgroupcontrol-classes.md
-                    - name: F クラス (FormNotifyEventArgs への FormListBoxControl)
-                      href: dev-ref/formlistboxcontrol-classes.md
-                    - name: F クラス (FormRealControl への FormObject)
-                      href: dev-ref/formobject-classes.md
-                    - name: F クラス (FormStringControl への FormReferenceControl)
-                      href: dev-ref/formreferencecontrol-classes.md
-                    - name: F クラス (FormWindowControl への FormTabControl)
-                      href: dev-ref/formtabcontrol-classes.md
-                    - name: G クラス
-                      href: dev-ref/g-classes.md
-                    - name: H クラス
-                      href: dev-ref/h-classes.md
-                    - name: I クラス
-                      href: dev-ref/i-classes.md
-                    - name: J クラス
-                      href: dev-ref/j-classes.md
-                    - name: K クラス
-                      href: dev-ref/k-classes.md
-                    - name: L クラス
-                      href: dev-ref/l-classes.md
-                    - name: M クラス
-                      href: dev-ref/m-classes.md
-                    - name: N クラス
-                      href: dev-ref/n-classes.md
-                    - name: O クラス
-                      href: dev-ref/o-classes.md
-                    - name: P クラス
-                      href: dev-ref/p-classes.md
-                    - name: Q クラス
-                      href: dev-ref/q-classes.md
-                    - name: R クラス
-                      href: dev-ref/r-classes.md
-                    - name: S クラス
-                      href: dev-ref/s-classes.md
-                    - name: T クラス
-                      href: dev-ref/t-classes.md
-                    - name: U クラス
-                      href: dev-ref/u-classes.md
-                    - name: V クラス
-                      href: dev-ref/v-classes.md
-                    - name: W クラス
-                      href: dev-ref/w-classes.md
-                    - name: X クラス
-                      href: dev-ref/x-classes.md
+                    - name: システム クラス リスト
+                      href: dev-ref/system-classes/toc.yml
+                    - name: システム クラスをアルファベット順にグループ化
+                      items:
+                        - name: A クラス
+                          href: dev-ref/a-classes.md
+                        - name: B クラス
+                          href: dev-ref/b-classes.md
+                        - name: C クラス
+                          href: dev-ref/c-classes.md
+                        - name: D クラス
+                          href: dev-ref/d-classes.md
+                        - name: E クラス
+                          href: dev-ref/e-classes.md
+                        - name: F クラス
+                          href: dev-ref/f-classes.md
+                        - name: G クラス
+                          href: dev-ref/g-classes.md
+                        - name: H クラス
+                          href: dev-ref/h-classes.md
+                        - name: I クラス
+                          href: dev-ref/i-classes.md
+                        - name: J クラス
+                          href: dev-ref/j-classes.md
+                        - name: K クラス
+                          href: dev-ref/k-classes.md
+                        - name: L クラス
+                          href: dev-ref/l-classes.md
+                        - name: M クラス
+                          href: dev-ref/m-classes.md
+                        - name: N クラス
+                          href: dev-ref/n-classes.md
+                        - name: O クラス
+                          href: dev-ref/o-classes.md
+                        - name: P クラス
+                          href: dev-ref/p-classes.md
+                        - name: Q クラス
+                          href: dev-ref/q-classes.md
+                        - name: R クラス
+                          href: dev-ref/r-classes.md
+                        - name: S クラス
+                          href: dev-ref/s-classes.md
+                        - name: T クラス
+                          href: dev-ref/t-classes.md
+                        - name: U クラス
+                          href: dev-ref/u-classes.md
+                        - name: V クラス
+                          href: dev-ref/v-classes.md
+                        - name: W クラス
+                          href: dev-ref/w-classes.md
+                        - name: X クラス
+                          href: dev-ref/x-classes.md
             - name: 拡張性
               items:
                 - name: 拡張機能のホーム ページ
@@ -964,15 +964,15 @@
               items:
                 - name: Trace Parser を使用したトレースの実行
                   href: perf-test/trace-trace-tutorial.md
-                - name: タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト
+                - name: タスク レコーダーおよびPerformance SDK を使用したシングル ユーザー テスト
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+                - name: Performance SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-local-test-controller.md
-                - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
+                - name: Performance SDK および Azure DevOps を使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+                - name: Performance SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
-                - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+                - name: オンプレミス環境でのPerformance SDK およびマルチ ユーザー テスト
                   href: perf-test/perfsdk-tutorial-lbd.md
                 - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
                   href: perf-test/trace-parser.md
@@ -1434,6 +1434,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B ユーザーの Azure AD へのエクスポート
               href: sysadmin/implement-b2b.md
+            - name: プロセスの自動化
+              href: sysadmin/process-automation.md
             - name: セキュリティ
               items:
                 - name: ロールベース セキュリティ
@@ -1458,6 +1460,8 @@
                   href: sysadmin/tasks/assign-users-security-roles.md
                 - name: タスク記録のセキュリティ診断
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+            - name: プロセスの自動化
+              href: /sysadmin/process-automation.md
             - name: バッチ処理
               items:
                 - name: バッチ処理の概要
@@ -1518,6 +1522,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
                   href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 アップグレード - オンプレミス環境
+                  href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012 アップグレード - 切替テスト
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 アップグレード - アップグレード後のタスク

@@ -19,12 +19,12 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: a6a3b3d728a1355aed2d953dd57a3b6d83f1e8e7
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: fff20f1bdb84490c6bb76da3647762a2c419d33f
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117279"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505600"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 
@@ -71,7 +71,7 @@ ms.locfileid: "3117279"
 
     完了したら、ボタンのレイアウトは次の図のようになります。
 
-    ![完了したボタン レイアウト](./media/GiftCardCashout02.png)
+    ![「構成ボタン」セクションが強調表示された完了したボタン レイアウト](./media/GiftCardCashout02.png)
 
 12. **OK** をクリックし、デザイナーを閉じます。
 13. **配送スケジュール**を検索します。
@@ -98,7 +98,7 @@ ms.locfileid: "3117279"
 13. **現在のトランザクション**に、清算用の**ギフト カードの清算**行が追加されます。
 14. **現金**支払メソッドを選択すると、トランザクションの完了時にドロワーが開きます。 
 
-       ![完了したボタン レイアウト](./media/GiftCardCashout03.png)
+       ![「ギフトカードの清算」が表示されたPOS 画面](./media/GiftCardCashout03.png)
 
 ## <a name="troubleshooting"></a>トラブルシューティング 
 

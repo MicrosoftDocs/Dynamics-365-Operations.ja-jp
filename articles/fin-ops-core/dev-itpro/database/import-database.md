@@ -3,7 +3,7 @@ title: データベースのインポート
 description: このトピックでは、Finance and Operations アプリのデータベースをインポートする方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d06b67945ca5e4160ad2c9dcae7eccfd0daedaef
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 15bdb25be77c455bf5bd90d338c705ef3254abff
+ms.sourcegitcommit: c35a4b2854db4bd82d7afa9c66a65d96e570be3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003611"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3531250"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 
@@ -57,3 +57,7 @@ web.config ファイルを変更するために環境に管理者ユーザー �
 ## <a name="steps-to-complete-after-a-database-import-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース インポート後に実行する手順
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### <a name="re-activate-pos-devices"></a>POS デバイスの再アクティブ化
+
+販売時点管理 (POS) デバイスを使用する場合は、データベースをインポートした後に、POS デバイスを再度アクティブ化する必要があります。 移行先環境で以前にアクティブ化されたデバイスは、機能しなくなります。 詳細については、[販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md) を参照してください。

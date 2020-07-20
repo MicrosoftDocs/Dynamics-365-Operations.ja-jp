@@ -1,6 +1,6 @@
 ---
 title: 倉庫作業者の管理
-description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 Supply Chain Management  - Warehousing アプリを使用する方法について説明します。
+description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205578"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530032"
 ---
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 Supply Chain Management  - Warehousing アプリを使用する方法について説明します。
+この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
 
 倉庫管理で機能を使用すると、すべての倉庫作業員の工程は*作業*呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、作業者は人事管理の作業者と関連付けられる必要があります。 各**作業者**のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
 

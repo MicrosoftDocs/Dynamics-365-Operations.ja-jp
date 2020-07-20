@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279031"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502116"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>実装プロジェクト マネージャー学習カタログ
 
@@ -29,7 +29,7 @@ ms.locfileid: "3279031"
 | コンテンツ | 説明  | 書式設定  | 期間    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス   | 7 時間   |
-| Dynamics 365 と Power Platform  の基礎 （https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/） | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス   | 5.5 時間 |
+| [Dynamics 365 および Power Platform の基本](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス   | 5.5 時間 |
 | [Finance and Operations アプリの使用を開始する](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Finance and Operations アプリが業務をサポートし、グローバルな財務システム、運用ビジネス プロセス、合理化されたサプライ チェーンを管理して、人々が情報に基づいた迅速な意思決定を行えるようにする方法を学びます。 Finance and Operations アプリを使って仕事をする第一歩として、目的のロールを問わず、その特徴や機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス   | 2 時間   |
 | [購入する前に](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Finance and Operations の購入を検討中のお客様も、購入の準備が整っているお客様も、便利なステップ バイ ステップ ガイダンスをご確認ください。| ドキュメント  |           |
 | [リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)  | Dynamics 365 の最新機能および機能拡張について調べる  | ドキュメント  |           |

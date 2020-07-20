@@ -3,7 +3,7 @@ title: Regression Suite Automation Tool のインストールと構成
 description: このトピックでは、Regression Suite Automation Tool (RSAT) のインストールと構成方法について説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 04/22/2020
+ms.date: 06/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4109d43845fe8df00b176c9a1d0ab9700d06685
-ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
+ms.openlocfilehash: d2437a1f42875359fad005d6b4418fa1d4367ea0
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3418554"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527432"
 ---
 # <a name="regression-suite-automation-tool-installation-and-configuration"></a>Regression Suite Automation Tool のインストールと構成
 
@@ -80,7 +80,7 @@ RSATを構成するには、右上の **設定** ボタンを選択します。
 #### <a name="azure-devops"></a>Azure DevOps
 Azure DevOps プロジェクトおよびテスト計画への接続をコンフィギュレーションします。
 
-+ **Azure DevOps URL** - これは、 Azure DevOps 組織のURLです。 たとえば、`https://yourAzureDevOpsUrlHere.visualStudio.com`。
++ **Azure DevOps URL** - これは、 Azure DevOps 組織の URL です。 たとえば、`https://yourAzureDevOpsUrlHere.visualStudio.com`。
 
     > [!NOTE]
     > Azure DevOps サーバーを使用している場合は、**/DefaultCollection** を Azure DevOps URL の末尾に追加します。
@@ -100,7 +100,8 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
     + テスト環境の SOAP ホスト名がわからない場合は、Infrastructure.SoapServicesUrl の AOS サーバーの web.config ファイルで検索できます。
     + テスト環境が、リモート デスクトップ アクセスがないユーザー受け入れテスト (user acceptance testing: UAT) または上位層サンドボックス環境である場合、この SOAP ホスト名はホスト名に一致します。
 
-+ **管理者ユーザー名** ー テスト環境の管理者ユーザーの電子メール アドレス。
++ **管理者ユーザー名** ー テスト環境の管理者ユーザーの電子メール アドレス。 管理者ユーザー名は、RSAT が接続している Finance and Operations テスト環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。 また、ユーザー アカウント (電子メール アドレス) は、テスト環境と同じテナントに属している必要があります。 たとえば、テスト環境の既定のテナントが contoso.com である場合、管理ユーザーは @constoso.com で終了する必要があります。
+
 + **拇印** – 使用している認証証明書の拇印。
 
     1. 新しい証明書を作成してインストールするには、 **新規** を選択します。 プロンプトが表示されたら .cer ファイルをどこかに配置して、記録用に保存します。
@@ -134,7 +135,7 @@ Azure DevOps プロジェクトおよびテスト計画への接続をコンフ�
 
     > [!IMPORTANT]
     > Finance and Operations アプリが 21Vianet に配置されている場合、**クラウド プロバイダー** の設定が必要となり、選択された値が **中国** でなければなりません。
-+ **Retail POS のコンフィギュレーション**: Microsoft Dynamics 365 Commerce の一部であるクラウド POS の自動テストのために RSAT をコンフィギュレーションするには、このチェックボックスをオンにします。 有効にすると、**設定** ダイアログに **Retail POS** という名前のタブが表示されます。 RSAT とクラウド POS の詳細については、[クラウド POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat) を参照してください。
++ **Retail POS のコンフィギュレーション** - Microsoft Dynamics 365 Commerce の一部であるクラウド POS の自動テストのために RSAT をコンフィギュレーションするには、このボックスを選択します。 有効にすると、**設定**ダイアログ メニューに **Retail POS** という名前のタブが表示されます。 RSAT とクラウド POS の詳細については、[クラウド POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat.md) を参照してください。
 
 ### <a name="configure-the-test-environment-to-trust-the-connection"></a>接続を信頼するようにテスト環境を構成する
 

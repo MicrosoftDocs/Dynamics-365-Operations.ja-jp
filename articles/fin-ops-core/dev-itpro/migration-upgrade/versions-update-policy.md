@@ -1,7 +1,7 @@
 ---
 title: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 description: このトピックでは、Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
-author: RyanCCarlson2
+author: ShellyBakke
 manager: AnnBe
 ms.date: 02/26/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 69914
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: smiller
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 08ce1dad5968bd45dffd41e9c659fca03e36f97d
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 9758ecfa8608a5de987d82923d88317a5ac2f69c
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3085855"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527621"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 

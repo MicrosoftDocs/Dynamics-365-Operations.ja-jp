@@ -3,7 +3,7 @@ title: B2C テナントを Commerce に 設定
 description: このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 author: BrianShook
 manager: annbe
-ms.date: 04/28/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488765"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497171"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -91,7 +91,7 @@ B2C アプリケーションを作成するには、次の手順に従います�
 
 **Azure AD B2C - アプリケーション \> 新しいアプリケーション**の画面の**返信 URL** ボックスには、サイト ドメインと (環境がプロビジョニングされたら) コマースが生成した URL の両方に個別の明細行を作成する必要があります。 これらの URL は、常に有効な URL 形式を使用する必要があり、ベース URL のみにする必要があります (末尾のスラッシュやパスは使用しないでください)。 次に、続く例のように文字列 ``/_msdyn365/authresp`` をベース URL に追加する必要があります。
 
-- ``https://www.fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (ドメインは電子商取引ドメインと完全に一致する必要があります。 複数のドメインがある場合は、ドメインごとにこの URL を追加する必要があります。)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>ユーザー フロー ポリシーの作成

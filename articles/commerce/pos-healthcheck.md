@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2c7e481b37a304188ab672308d915c714547d6f3
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: b818553b7763ad03e2e23b869b364bb21c8afd57
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265552"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515814"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 
@@ -82,4 +82,4 @@ OPOS キーロックなどの一部のデバイスには、最初から用意さ
 
 ## <a name="related-articles"></a>関連記事
 
-[Modern POS (MPOS) およびクラウド POS のトリガー拡張機能](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/modern-pos-trigger-extensibility)
+[Modern POS (MPOS) のトリガーと印刷](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-trigger-printing)

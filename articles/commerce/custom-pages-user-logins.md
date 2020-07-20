@@ -3,7 +3,7 @@ title: ユーザーのサインインに対するカスタム ページの設定
 description: このトピックでは Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
 author: brianshook
 manager: annbe
-ms.date: 06/16/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71c0f0b6969985b04262b522dd2165eb1475878d
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456975"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533462"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>ユーザーのサインインに対するカスタム ページの設定
 
@@ -198,8 +198,6 @@ global.json ファイルを更新して変更内容を公開すると、コマ�
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [新しい E コマース サイトの配置](deploy-ecommerce-site.md)
-
-[オンライン ストア チャネルのセットアップ](online-stores.md)
 
 [E コマース サイトの作成](create-ecommerce-site.md)
 
