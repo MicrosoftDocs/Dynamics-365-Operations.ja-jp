@@ -30,9 +30,9 @@ ms.locfileid: "3367046"
 
 **HtmlFromRepoGenerator** ツールには、Microsoft のソース ファイルに基づくカスタム ヘルプの作成をサポートする機能が用意されています。 ツールを使用して次のタスクを実行できます:
 
-- Microsoft ドキュメント リポジトリを複製します。
-- Microsoft リポジトリの複製から開発者および管理者のコンテンツを削除します。
-- 複製に既に存在しないファイルへのリンクを更新します。
+- Microsoft ドキュメント リポジトリをクローンします。
+- Microsoft リポジトリのクローンから開発者および管理者のコンテンツを削除します。
+- クローンに既に存在しないファイルへのリンクを更新します。
 - Finance and Operations クライアントでサポートされている言語オプションと一致するように **ms.locale** プロパティの値を更新します。
 
     クライアントが使用する言語記述子は、対応する GitHub リポジトリで使用されている言語記述子と異なります。 ローカライズされたカスタム ヘルプを呼び出す前に、ソース コンテンツの言語記述子を変更して、クライアントの言語と一致させる必要があります。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。
@@ -58,10 +58,10 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 | パラメーター | 説明 |
 |-----------|-------------|
 | Json | **docfx.json** ファイルの場所の相対パスを指定します。 Microsoft ドキュメント リポジトリでは、この場所は通常、**articles/** です。 |
-| 出庫 | 既存の複製されたリポジトリが存在するフォルダ、またはリポジトリの複製先のフォルダを指定します。 **HtmlFromRepoGenerator** ツールを実行してリポジトリを複製する場合、このフォルダが存在していない必要があります。 [製品およびヘルプの言語およびロケール記述子](language-locale.md) で説明されているように、フォルダ名に言語名を使用します。 |
+| 出庫 | 既存のクローンされたリポジトリが存在するフォルダ、またはリポジトリのクローン先のフォルダを指定します。 **HtmlFromRepoGenerator** ツールを実行してリポジトリをクローンする場合、このフォルダが存在していない必要があります。 [製品およびヘルプの言語およびロケール記述子](language-locale.md) で説明されているように、フォルダ名に言語名を使用します。 |
 | ExternalText | **HtmlFromRepoGenerator** ツールが元のリンクを置き換える必要がある場合に、更新されたリンクに追加するテキストを指定します。 |
-| DoNotClone | 以前に複製されたリポジトリに対してツールを実行する場合、このパラメータを設定します。 |
-| リポジトリ | リポジトリ URL を指定します。 以前に複製されたリポジトリに対してツールを実行する場合、このパラメータはオプションです。 Microsoft ドキュメント リポジトリの URL の例には、英語 (米国) の `https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public` と ドイツ語 (ドイツ) の `https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de` が含まれます。|
+| DoNotClone | 以前にクローンされたリポジトリに対してツールを実行する場合、このパラメータを設定します。 |
+| リポジトリ | リポジトリ URL を指定します。 以前にクローンされたリポジトリに対してツールを実行する場合、このパラメータはオプションです。 Microsoft ドキュメント リポジトリの URL の例には、英語 (米国) の `https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public` と ドイツ語 (ドイツ) の `https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de` が含まれます。|
 | RemoveGitFolder| **.git** フォルダを削除するかどうかを指定します。 |
 | ReplaceUrl | ターゲット ファイルが存在しない場合、ファイル間のリンクを置き換える URL を指定します。 このパラメータは、相対リンクを絶対リンクに変換するために使用します。 |
 | LogsDir | ログ ファイルを保存するフォルダを指定します。 |
@@ -70,8 +70,8 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 
 | パラメーター | 説明 |
 |-----------|-------------|
-| EnRepo | en-US リポジトリの URL を指定します。 以前に複製されたリポジトリに対してツールを実行する場合、このパラメータはオプションです。 英語 (米国) 用の Microsoft ドキュメント リポジトリの URL は、`https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public` です。 |
-| EnOut | en-US リポジトリが存在するフォルダ、または複製するフォルダを指定します。 以前に複製されたリポジトリに対してツールを実行する場合、このフォルダが存在していない必要があります。 |
+| EnRepo | en-US リポジトリの URL を指定します。 以前にクローンされたリポジトリに対してツールを実行する場合、このパラメータはオプションです。 英語 (米国) 用の Microsoft ドキュメント リポジトリの URL は、`https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public` です。 |
+| EnOut | en-US リポジトリが存在するフォルダ、またはクローンするフォルダを指定します。 以前にクローンされたリポジトリに対してツールを実行する場合、このフォルダが存在していない必要があります。 |
 | Lng | 生成された HTML ファイルの **ms.locale** メタデータに使用する言語の値を指定します。 この値は、Finance and Operations クライアントの言語設定で指定されている値と一致する必要があります。 このパラメーターが設定されていない場合、ツールは **en-US** を使用します。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。 |
 | Rtl | 言語が右から左 (RTL) の書式設定を使用する場合、このパラメータを含めます。 RTL 言語の例としては、アラビア語とヘブライ語があります。 |
 
@@ -80,19 +80,19 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 > [!NOTE]
 > Microsoft リポジトリには多数のファイルが含まれているため、プロセスに数分かかります。 複数のローカライズされたリポジトリに対してツールを実行すると、プロセスに時間がかかります。
 
-次の例では、en-US リポジトリを複製し、en-US の HTML ファイルを生成します。
+次の例では、en-US リポジトリをクローンし、en-US の HTML ファイルを生成します。
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
-次の例では、以前に複製された en-US リポジトリを使用し、en-US の HTML ファイルを生成します。
+次の例では、以前にクローンされた en-US リポジトリを使用し、en-US の HTML ファイルを生成します。
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
-次の例では、de-DE と en-US リポジトリを複製し、de の HTML ファイルを生成します。
+次の例では、de-DE と en-US リポジトリをクローンし、de の HTML ファイルを生成します。
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
@@ -105,7 +105,7 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNot
 ```
 
 > [!IMPORTANT]
-> **HtmlFromRepoGenerator** ツールは処理中にリンクを変更するため、以前に複製されたリポジトリに対してHtmlFromRepoGenerator.exe を複数回実行しないでください。 同じコンテンツに対して複数回実行すると、リンクが正しくなりません。 HtmlFromRepoGenerator.exe を再実行する場合、**HtmlFromRepoGenerator** ツールを使用してリポジトリの新しい複製を作成するか、既存の複製に対して行われたローカルの変更をすべて元に戻します。
+> **HtmlFromRepoGenerator** ツールは処理中にリンクを変更するため、以前にクローンされたリポジトリに対してHtmlFromRepoGenerator.exe を複数回実行しないでください。 同じコンテンツに対して複数回実行すると、リンクが正しくなりません。 HtmlFromRepoGenerator.exe を再実行する場合、**HtmlFromRepoGenerator** ツールを使用してリポジトリの新しいクローンを作成するか、既存のクローンに対して行われたローカルの変更をすべて元に戻します。
 
 ## <a name="modifying-the-styling-of-the-generated-html-files"></a>生成された HTML ファイルのスタイルの変更
 
