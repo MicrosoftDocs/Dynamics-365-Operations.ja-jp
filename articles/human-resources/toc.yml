@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 7 月 8 日
+          href: hr-whats-new-2020-07-08.md
         - name: 2020 年 6 月 25 日
           href: hr-whats-new-2020-06-23.md
         - name: 2020 年 6 月 11 日
@@ -217,11 +219,11 @@
           href: hr-hrpro-overview.md
         - name: Human Resources の設定
           items:
-            - name: 人事管理パラメーターのコンフィギュレーション
+            - name: Human Resources パラメーターのコンフィギュレーション
               href: hr-setup-parameters.md
-            - name: 人事管理共有パラメーターのコンフィギュレーション
+            - name: Human Resources 共有パラメーターのコンフィギュレーション
               href: hr-setup-shared-parameters.md
-            - name: 人事管理ワークフローの設定
+            - name: Human Resources ワークフローの設定
               href: hr-setup-workflows.md
             - name: 日付と時刻のフィールドの理解
               href: hr-setup-date-time-fields.md
@@ -577,5 +579,7 @@
           items:
             - name: 従業員およびマネージャー セルフ サービスの概要
               href: hr-employee-manager-self-service-overview.md
+            - name: 従業員セルフサービスのワークスペース名を変更する
+              href: hr-employee-self-service-workspace-name.md
             - name: 個人情報の編集
               href: hr-employee-manager-self-service-edit-personal-information.md
