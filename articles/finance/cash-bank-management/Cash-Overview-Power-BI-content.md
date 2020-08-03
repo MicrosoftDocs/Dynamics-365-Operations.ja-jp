@@ -3,7 +3,7 @@ title: 現金の概要 Power BI コンテンツ
 description: このトピックでは、現金の概要 Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: saraschi2
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553143"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598136"
 ---
 # <a name="cash-overview-power-bi-content"></a>現金の概要 Power BI コンテンツ
 
@@ -38,10 +38,11 @@ ms.locfileid: "2553143"
 **現金の概要**および**銀行管理** Power BI のビジュアルにデータを表示するには、次の設定を完了する必要があります。
 
 1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
-2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
-2. トランザクション通貨と会計通貨、会計通貨とシステム通貨、および会計通貨と銀行通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-3. キャッシュ フロー予測をコンフィギュレーションおよび実行します。 キャッシュ フロー予測の設定方法の詳細については、[キャッシュ フロー予測](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting)を参照してください。 
-4. **システム管理 > 設定 > エンティティ格納**に移動して、**LedgerCovLiquidityMeasurement** 集計測定を更新します。
+2. **一般会計 > カレンダー > 会計カレンダー**に移動し、有効な期間に割り当てられている会計カレンダーを検証します。
+3. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
+4. トランザクション通貨と会計通貨、会計通貨とシステム通貨、会計通貨と銀行通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
+5. キャッシュ フロー予測をコンフィギュレーションおよび実行します。 キャッシュ フロー予測の設定方法の詳細については、[キャッシュ フロー予測](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting)を参照してください。 
+6. **システム管理 > 設定 > エンティティ格納**に移動して、**LedgerCovLiquidityMeasurement** 集計測定を更新します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 

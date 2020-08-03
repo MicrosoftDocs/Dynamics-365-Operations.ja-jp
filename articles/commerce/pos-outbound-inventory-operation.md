@@ -3,7 +3,7 @@ title: POS の出庫在庫操作
 description: このトピックでは、販売時点管理 (POS) の出庫在庫操作の機能について説明します。
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384132"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551628"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>POS の出庫在庫操作
 
@@ -58,6 +58,9 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 7. **全般**クイック タブの**設定**セクションで、パフォーマンスの問題が発生しないように、**継続**オプションを**いいえ**に設定します。
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>ドキュメント処理と監視作業用の 2 つのバッチ ジョブを作成およびスケジュールする
+
+> [!NOTE]
+> Commerce version 10.0.13 以降では、バッチ ジョブ フレームワークを通じてバッチ ジョブをコンフィギュレーションする必要はありません。 バッチ処理は、**Retail と Commerce > Retail および Commerce IT** メニューからコンフィギュレーションできます。 このバッチ ジョブをコンフィギュレーションするには、**小売ドキュメントの操作モニター** および **小売ドキュメントの操作処理** メニュー オプションを使用します
 
 作成したバッチ ジョブは、失敗またはタイムアウトしたドキュメントを処理するために使用されます。また、POS から処理される有効な在庫ドキュメントの数がシステム コンフィギュレーションの値を超える場合にも使用されます。
 

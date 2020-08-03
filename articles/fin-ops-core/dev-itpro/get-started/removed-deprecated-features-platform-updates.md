@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
-ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
+ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
+ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457569"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3606825"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -33,8 +33,7 @@ ms.locfileid: "3457569"
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-> [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
 

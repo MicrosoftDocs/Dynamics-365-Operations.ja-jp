@@ -3,7 +3,7 @@ title: 給付金管理パラメーターの設定
 description: Microsoft Dynamics 365 Human Resources で給付金管理に対するパラメーターをコンフィギュレーションします。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3e001c08751ea9c8bcab0e11a04b6cf639e51d1d
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429991"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599359"
 ---
 # <a name="set-benefits-management-parameters"></a>福利厚生管理パラメーターの設定
 
@@ -31,7 +31,7 @@ Microsoft Dynamics 365 Human Resources で休暇計画を設定する前に、�
 
 ## <a name="configure-general-parameters"></a>一般パラメーターのコンフィギュレーション
 
-1. **設定**の**給付金管理**ワーク スペースで、**パラメーター**を選択します。
+1. **福利厚生管理** ワークスペースの **設定** で、**人事管理共有パラメーター** を選択します。
 
 2. **一般**タブで、次のフィールドの値を指定します。
 
@@ -43,8 +43,10 @@ Microsoft Dynamics 365 Human Resources で休暇計画を設定する前に、�
    | **再オープン理由コード** | 従業員の給付金計画が再開された場合に使用する理由コード。 キャンセル プロセス中、ダイアログに表示されます。 ユーザーは必要に応じて**再開の理由コード**を変更できます。 | 
    | **ライフ イベント理由コード** | ライフイベントが発生した場合に使用する理由コード。 |
    | **レート変更理由コード** | レート変更の更新処理中に従業員の給付金計画がキャンセルまたは再開された場合に使用する理由コード。 これはレート変更の更新処理によって変更されたレコードを示します。 |
+   | **年間給付金** | 従業員の **福利厚生の年間給与** 額を設定できます。 Human Resources では、補償範囲額を決定する際に、固定報酬の年間金額ではなく、**福利厚生の年間給与** 額を使用します。 |
    | **適格な新規採用者** | 新規採用が適格かどうかを指定します。 |
-   | **新規採用要録期間** | 新規採用登録が許可される期間。</br></br>**注記**: この設定は、計画適格ルールで設定されたすべての新規採用登録を上書きします。 | 
+   | **新規採用要録期間** | 新規採用登録が許可される期間。</br></br>**注記**: この設定は、計画適格ルールで設定されたすべての新規採用登録を上書きします。 |
+   | **既定の支払頻度** | 新しい従業員が追加されたときに使用する既定の支払頻度。 |
    | **ライフ イベントが有効になりました** | ライフ イベントを有効にします。 |
    | **レガシ給付金フォームの非表示** | レガシ給付金フォームの非表示を許可できます。 |
 
@@ -52,7 +54,7 @@ Microsoft Dynamics 365 Human Resources で休暇計画を設定する前に、�
 
 ## <a name="configure-employee-self-service-parameters"></a>従業員のセルフ サービス パラメーターをコンフィグレーションする
 
-1. **設定**の**給付金管理**ワーク スペースで、**パラメーター**を選択します。
+1. **福利厚生管理** ワークスペースの **設定** で、**人事管理パラメーター** を選択します。
 
 2. **従業員のセルフ サービス**タブで、次のフィールドの値を指定します。
 

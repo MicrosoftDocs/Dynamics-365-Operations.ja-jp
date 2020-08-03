@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fdd409b33989e371d0bd2a6e21b27721336cea0
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: d85ce8ccfcd7f1b975244cc2f65535101013ac89
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114430"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555294"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-3-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 3 月 3 日)
 
@@ -87,3 +87,10 @@ ms.locfileid: "3114430"
 - **休暇および欠勤のプレビュー機能** - 詳細については、[休暇および欠勤のプレビュー機能](hr-leave-and-absence-overview.md?leave-and-absence-preview-features) を参照してください。
 
 - **福利厚生管理プレビュー機能** - 既知の問題など、詳細については[福利厚生管理の概要](hr-benefits-management-overview.md)を参照してください。
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

@@ -3,7 +3,7 @@ title: 需要予測の概要
 description: 需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。 拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213886"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550043"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -48,7 +48,7 @@ ms.locfileid: "3213886"
 3 つの主要なテーマの需要予測が実装できます。
 
 -   **モジュール性** – 需要予測はモジュールおよびコンフィギュレーションが簡単にできます。 **販売** &gt; **在庫予測** &gt; **需要予測** で構成キーの機能をオン/オフに変更できます。
--   **Microsoft Stack の再利用** – Microsoft は 2015 年 2 月に Machine Learning プラットフォームを開始しました。 Microsoft Cortana Analytics Suite の一部である Machine Learning を使用すると、需要見積もりの試算、アルゴリズム R または Python プログラミング言語、およびシンプルなドラッグ アンド ドロップ インターフェースなど、予測分析実験をすばやく簡単に作成できます。
+-   **Microsoft Stack の再利用** – Microsoft Cortana Analytics Suite の一部である Machine Learning を使用すると、アルゴリズム R または Python プログラミング言語、およびシンプルなドラッグ アンド ドロップ インターフェースを使用して、需要見積もりの試算などの予測分析実験をすばやく簡単に作成できます。
     -   需要予測実験をダウンロードし、業務要件に合わせて変更し、Azure の Web サービスとして公開し、需要予測の生成にそれらを使用することができます。 エンタープライズ レベルのユーザーとして、生産計画担当者向けに Supply Chain Management サブスクリプションを購入した場合は、この実験をダウンロードできます。
     -   [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 需要予測実験は Supply Chain Management と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした実験の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) の実験が Finance and Operations の需要予測実験として使用できるわけではありません。 Finance and Operations アプリケーション プログラミング インターフェイス (API) を使用するための実験コードを変更する必要があります。
     -   Microsoft Azure Machine Learning Studio (クラシック) で独自の実験を作成し、Azure のサービスとして発行、そして需要予測の生成に使用することができます。
@@ -70,6 +70,16 @@ Supply Chain Management を使用してベースラインの予測を視覚化�
 
 ## <a name="limitations"></a>制限
 需要予測は、予測プロセスを作成する製造業界の顧客を支援するツールです。 需要予測ソリューションの核となる機能を提供し、簡単に拡張できるように設計されています。 需要予測は、商業、卸売業、倉庫保管、輸送業、または他の専門的なサービス産業の顧客には最適ではない場合があります。
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>需要予測バリアント変換の制限
+
+バリアント変換ごとの測定単位 (UOM) は、在庫単位が需要予測単位と異なる場合、需要予測の生成時に完全にはサポートされません。
+
+予測の生成 ( **在庫単位 > 需要予測単位**) では、製品単位の変換を使用します。 需要予測生成の履歴データを読み込む場合、バリアント レベルで変換が定義されていても、在庫単位から需要予測単位に変換するときは製品レベルの単位変換が常に使用されます。
+
+予測の承認の最初の部分 (**需要予測単位 > 在庫単位**) では、製品単位の変換を使用します。 予測の承認の 2 番目の部分 (**在庫単位 > 販売単位**) では、バリアント単位の変換を使用します。 生成された需要予測が承認されると、需要予測単位から在庫単位への変換は、製品レベルの単位の変換を使用して行われます。 同時に、在庫単位と販売単位の間の変換では、バリアント レベルで定義された変換が考慮されます。
+
+需要予測単位は特定の意味を持つ必要はないことに注意してください。 "需要予測単位" と定義できます。 各製品について、在庫単位を使用して変換を 1:1 に定義できます。
 
 <a name="additional-resources"></a>追加リソース
 --------

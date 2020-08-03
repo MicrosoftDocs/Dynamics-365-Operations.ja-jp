@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1efa4e403f5cf2cdc5fb797f05781f6d42245ed5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d96d1cd91bad4f950868074d9558cb403821d73f
+ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210022"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "3546365"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Supply Chain Management の製品と Field Service の製品との同期
 
@@ -48,13 +48,13 @@ ms.locfileid: "3210022"
 
 **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、**製品 (Supply Chain Management から Sales) – 直接**テンプレートに含まれていないマッピングに基づきます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
 
-```Text
+```plaintext
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 ```
 
 次の値マッピングが使用されます。
 
-```Text
+```plaintext
 inventory     :  690970000
 nonInventory  :  690970001 
 service       :  690970002 

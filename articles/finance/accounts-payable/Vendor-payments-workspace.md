@@ -3,7 +3,7 @@ title: 仕入先支払ワークスペース
 description: このトピックでは、[仕入先支払] モバイル ワークスペースに関する情報を提供します。 [仕入先支払] ワークスペースは、仕入先支払の処理に関連する情報を表示します。
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225016"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598112"
 ---
 # <a name="vendor-payments-workspace"></a>仕入先支払ワークスペース
 
@@ -34,9 +34,10 @@ ms.locfileid: "3225016"
 
 データを**仕入先支払** Power BI ビジュアルに表示するには、次の設定を完了する必要があります。
 1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
-2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。 
-2. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-3. **システム管理 > 設定 > エンティティ格納** に移動して、**VendPaymentBIMeasureV2** 集計測定を更新します。 
+2. **一般会計 > カレンダー > 会計カレンダー**に移動し、有効な期間に割り当てられている会計カレンダーを検証します。
+3. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。 
+4. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
+5. **システム管理 > 設定 > エンティティ格納** に移動して、**VendPaymentBIMeasureV2** 集計測定を更新します。
 
 ## <a name="my-work-view"></a>自分の作業ビュー
 

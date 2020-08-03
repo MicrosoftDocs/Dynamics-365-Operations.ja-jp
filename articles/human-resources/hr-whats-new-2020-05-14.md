@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d46671f73a75a9ed3a652d76153c923a3542b5f6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386110"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555174"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
 
@@ -110,3 +110,10 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="carry-forward-rules"></a>繰越ルール
 
 繰越調整を転送する繰越残日数に対して、繰越休暇タイプを指定できます。 たとえば、従業員が 10 日間繰り越す場合、その 10 日間に別の休暇タイプを選択できます。 詳細については、[休暇および欠勤タイプのコンフィギュレーション](hr-leave-and-absence-types.md) を参照してください。
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

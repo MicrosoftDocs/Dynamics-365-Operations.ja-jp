@@ -2,7 +2,7 @@
 title: 倉庫へのリリースのルール
 description: このトピックでは、倉庫にリリースする際に柔軟性を提供する、倉庫へのリリースのルール機能に関する情報を提供します。 部分的に引当済の注文明細行のリリースをシステムが許可するかどうかを制御する構成オプションを追加します。
 author: mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 06039c57b7fc0bb850b3fb31c810fe21bfdf747f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 27030e8dd58b290d80f6b00cbd250e09c1e50819
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530423"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597339"
 ---
 # <a name="release-to-warehouse-rule"></a>倉庫へのリリースのルール
 
