@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce プレビュー環境のプロビジョニング
-description: このトピックでは、Microsoft Dynamics 365 Commerce のプレビュー環境をプロビジョニングする方法について説明します。
+title: Dynamics 365 Commerce 評価環境のプロビジョニング
+description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 06/02/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,242 +18,160 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426468"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599853"
 ---
-# <a name="provision-a-dynamics-365-commerce-preview-environment"></a><span data-ttu-id="23ca4-103">Dynamics 365 Commerce プレビュー環境のプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="23ca4-103">Provision a Dynamics 365 Commerce preview environment</span></span>
-
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a><span data-ttu-id="d9b9a-103">Dynamics 365 Commerce 評価環境のプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="d9b9a-103">Provision a Dynamics 365 Commerce evaluation environment</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="23ca4-104">このトピックでは、Dynamics 365 Commerce のプレビュー環境をプロビジョニングする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-104">This topic explains how to provision a Dynamics 365 Commerce preview environment.</span></span>
+<span data-ttu-id="d9b9a-104">このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-104">This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.</span></span>
 
-<span data-ttu-id="23ca4-105">開始する前に、このトピックにざっと目を通して、プロセスに必要な内容を把握することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-105">Before you begin, we recommend that you take a quick scan through this topic to get an idea of what the process requires.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="23ca4-106">Dynamics 365 Commerce プレビューへのアクセス許可がまだ与えられていない場合、[Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite) からプレビューのアクセス許可を要求できます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-106">If you haven't yet been granted access to the Dynamics 365 Commerce preview, you can request preview access from the [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite).</span></span>
-
-## <a name="overview"></a><span data-ttu-id="23ca4-107">概要</span><span class="sxs-lookup"><span data-stu-id="23ca4-107">Overview</span></span>
-
-<span data-ttu-id="23ca4-108">Commerce プレビュー環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-108">To successfully provision your Commerce preview environment, you must create a project that has a specific product name and type.</span></span> <span data-ttu-id="23ca4-109">この環境と Commerce Scale Unit (CSU) には、後で E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-109">The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you provision e-Commerce later.</span></span> <span data-ttu-id="23ca4-110">このトピックの手順では、プロビジョニングを完了する必要があるすべての手順と、使用する必要があるパラメーターについて説明します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-110">The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.</span></span>
-
-<span data-ttu-id="23ca4-111">Commerce プレビュー環境のプロビジョニングが正常に完了した後、いくつかのプロビジョニング後の手順を完了して準備する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-111">After you successfully provision your Commerce preview environment, you must complete a few post-provisioning steps to prepare it.</span></span> <span data-ttu-id="23ca4-112">一部の手順は、システムのどの側面を評価するかに応じて使用するオプションです。</span><span class="sxs-lookup"><span data-stu-id="23ca4-112">Some steps are optional, depending on the aspects of the system that you want to evaluate.</span></span> <span data-ttu-id="23ca4-113">オプションの手順は、後からいつでも完了できます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-113">You can always complete the optional steps later.</span></span>
-
-<span data-ttu-id="23ca4-114">プロビジョニング後に Commerce プレビュー環境を構成する方法については、[Commerce プレビュー環境のコンフィギュレーション](cpe-post-provisioning.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-114">For information about how to configure your Commerce preview environment after you provision it, see [Configure a Commerce preview environment](cpe-post-provisioning.md).</span></span> <span data-ttu-id="23ca4-115">Commerce プレビュー環境のオプション機能を構成する方法については、[Commerce プレビュー環境のオプション機能のコンフィギュレーション](cpe-optional-features.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-115">For information about how to configure optional features for your Commerce preview environment, see [Configure optional features for a Commerce preview environment](cpe-optional-features.md).</span></span>
-
-<span data-ttu-id="23ca4-116">プロビジョニングの手順について質問がある場合、または問題が発生した場合は、[Microsoft Dynamics 365 Commerce プレビュー Yammer グループ](https://aka.ms/Dynamics365CommercePreviewYammer)から Microsoft にご連絡ください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-116">If you have any questions about the provisioning steps, or if you encounter any issues, let Microsoft know in the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer).</span></span>
-
-## <a name="prerequisites"></a><span data-ttu-id="23ca4-117">必要条件</span><span class="sxs-lookup"><span data-stu-id="23ca4-117">Prerequisites</span></span>
-
-<span data-ttu-id="23ca4-118">Commerce プレビュー環境をプロビジョニングする前に、次の前提条件が整っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-118">The following prerequisites must be in place before you can provision your Commerce preview environment:</span></span>
-
-- <span data-ttu-id="23ca4-119">Microsoft Dynamics Lifecycle Services (LCS) ポータルへのアクセス許可があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-119">You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.</span></span>
-- <span data-ttu-id="23ca4-120">既存の Microsoft Dynamics 365 のパートナーまたは顧客は、Dynamics 365 Commerce プロジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-120">You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.</span></span>
-- <span data-ttu-id="23ca4-121">Dynamics 365 Commerce プレビュー プログラムを承諾しました。</span><span class="sxs-lookup"><span data-stu-id="23ca4-121">You've been accepted into the Dynamics 365 Commerce Preview program.</span></span>
-- <span data-ttu-id="23ca4-122">**移行、ソリューションの作成、および学習**のためにプロジェクトを作成するのに必要なアクセス許可があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-122">You have the required permissions to create a project for **Migrate, create solutions, and learn**.</span></span>
-- <span data-ttu-id="23ca4-123">環境のプロビジョニングを行うプロジェクトで、**環境管理者**または**プロジェクト所有者**ロールのメンバーになっています。</span><span class="sxs-lookup"><span data-stu-id="23ca4-123">You're a member of the **Environment manager** or **Project owner** role in the project where you will provision the environment.</span></span>
-- <span data-ttu-id="23ca4-124">Microsoft Azure サブスクリプションへの管理者アクセス許可があるか、または代理として管理者アクセス許可が必要な 2 つの手順を完了することができるサブスクリプション管理者の連絡先があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-124">You have admin access to your Microsoft Azure subscription, or you're in contact with a subscription admin who can complete the two steps that require admin permissions on your behalf.</span></span>
-- <span data-ttu-id="23ca4-125">Azure Active Directory (Azure AD) テナント ID が使用可能です。</span><span class="sxs-lookup"><span data-stu-id="23ca4-125">You have your Azure Active Directory (Azure AD) tenant ID available.</span></span>
-- <span data-ttu-id="23ca4-126">E コマース システムの管理者グループとして使用される  Azure AD セキュリティ グループが作成され、その ID が使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="23ca4-126">You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.</span></span>
-- <span data-ttu-id="23ca4-127">評価とレビューのモデレーター グループとして使用される  Azure AD セキュリティ グループが作成され、その ID が使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="23ca4-127">You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available.</span></span> <span data-ttu-id="23ca4-128">(このセキュリティ グループは、E コマースのシステム管理グループと同じにすることができます。)</span><span class="sxs-lookup"><span data-stu-id="23ca4-128">(This security group can be the same as the e-Commerce system admin group.)</span></span>
-
-## <a name="provision-your-commerce-preview-environment"></a><span data-ttu-id="23ca4-129">Commerce プレビュー環境のプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="23ca4-129">Provision your Commerce preview environment</span></span>
-
-<span data-ttu-id="23ca4-130">これらの手順は、Commerce プレビュー環境をプロビジョニングする方法を説明しています。</span><span class="sxs-lookup"><span data-stu-id="23ca4-130">These procedures explain how to provision a Commerce preview environment.</span></span> <span data-ttu-id="23ca4-131">それらを正常に完了すると、Commerce プレビュー環境を構成する準備が整います。</span><span class="sxs-lookup"><span data-stu-id="23ca4-131">After you successfully complete them, the Commerce preview environment will be ready for configuration.</span></span> <span data-ttu-id="23ca4-132">ここで説明するすべての活動は、LCS ポータルで発生します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-132">All the activities that are described here occur in the LCS portal.</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="23ca4-133">プレビューのアクセス許可は、コマース プレビュー アプリケーションで指定した LCS アカウントと組織に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="23ca4-133">Preview access is tied to the LCS account and organization that you specified in your Commerce preview application.</span></span> <span data-ttu-id="23ca4-134">Commerce プレビュー環境をプロビジョニングするには、同じアカウントを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-134">You must use the same account to provision the Commerce preview environment.</span></span> <span data-ttu-id="23ca4-135">コマース プレビュー環境で別の LCS アカウントまたはテナントを使用する必要がある場合は、それらの詳細を Microsoft に提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-135">If you need to use a different LCS account or tenant for the Commerce preview environment, you must provide those details to Microsoft.</span></span> <span data-ttu-id="23ca4-136">連絡先情報については、このトピック後半の [Commerce プレビュー環境のサポート](#commerce-preview-environment-support)セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-136">For contact information, see the [Commerce preview environment support](#commerce-preview-environment-support) section later in this topic.</span></span>
-
-### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a><span data-ttu-id="23ca4-137">LCS でプレビュー機能が使用可能で有効になっていることを確認する</span><span class="sxs-lookup"><span data-stu-id="23ca4-137">Confirm that preview features are available and turned on in LCS</span></span>
-
-<span data-ttu-id="23ca4-138">LCS でプレビュー機能が使用可能で有効になっていることを確認するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-138">To confirm that preview features are available and turned on in LCS, follow these steps.</span></span>
-
-1. <span data-ttu-id="23ca4-139">プレビューへのアクセス権を要求するために使用したのと同じ LCS アカウントを使用して、[LCS ポータル](https://lcs.dynamics.com)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-139">Sign in to the [LCS portal](https://lcs.dynamics.com) by using the same LCS account that you used to request access to the preview.</span></span>
-1. <span data-ttu-id="23ca4-140">LCS ホーム ページで右にスクロールし、**プレビュー機能の管理**タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-140">On the LCS home page, scroll all the way to the right, and select the **Preview feature management** tile.</span></span>
-
-    ![プレビュー管理タイル](./media/preview1.png)
-
-1. <span data-ttu-id="23ca4-142">**プライベート プレビュー機能**までスクロールし、次の機能が使用可能で有効になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-142">Scroll down to **Private preview features**, and confirm that the following features are available and turned on:</span></span>
-
-    - <span data-ttu-id="23ca4-143">E コマースの評価</span><span class="sxs-lookup"><span data-stu-id="23ca4-143">e-Commerce Evaluation</span></span>
-    - <span data-ttu-id="23ca4-144">Commerce Preview プログラムの環境</span><span class="sxs-lookup"><span data-stu-id="23ca4-144">Commerce Preview Program Environments</span></span>
-
-    ![プライベート プレビューの機能](./media/preview2.png)
-
-1. <span data-ttu-id="23ca4-146">これらの機能がリストに表示されない場合は、Microsoft に連絡して、職場の電子メール アドレス、LCS アカウント、およびテナントの詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-146">If those features don't appear in the list, contact Microsoft, and provide your work email address, LCS account, and tenant details.</span></span> <span data-ttu-id="23ca4-147">連絡先情報については、[Commerce プレビュー環境のサポート](#commerce-preview-environment-support) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-147">For contact information, see the [Commerce preview environment support](#commerce-preview-environment-support) section.</span></span>
-
-### <a name="create-a-new-project"></a><span data-ttu-id="23ca4-148">新しいプロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="23ca4-148">Create a new project</span></span>
-
-<span data-ttu-id="23ca4-149">LCS に新しいプロジェクトを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-149">To create a new project in LCS, follow these steps.</span></span>
-
-1. <span data-ttu-id="23ca4-150">LCS のホーム ページで、プラス記号 (**+**) を選択してプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-150">On the LCS home page, select the plus sign (**+**) to create a project.</span></span>
-1. <span data-ttu-id="23ca4-151">右側のウィンドウで、次のいずれかのステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-151">In the right pane, follow one of these steps:</span></span>
-
-    - <span data-ttu-id="23ca4-152">パートナーである場合、**移行、ソリューションの作成、および学習**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-152">If you're a partner, select **Migrate, create solutions, and learn**.</span></span>
-    - <span data-ttu-id="23ca4-153">顧客の場合、**見込みプリセールス**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-153">If you're a customer, select **Prospective presales**.</span></span>
-
-1. <span data-ttu-id="23ca4-154">名前と説明、および業種を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-154">Enter a name, description, and industry.</span></span>
-1. <span data-ttu-id="23ca4-155">**製品名**フィールドで、**Dynamics 365 Retail** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-155">In the **Product name** field, select **Dynamics 365 Retail**.</span></span>
-1. <span data-ttu-id="23ca4-156">**製品バージョン** フィールドで、**Dynamics 365 Retail** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-156">In the **Product version** field, select **Dynamics 365 Retail**.</span></span>
-1. <span data-ttu-id="23ca4-157">**方法**フィールドで、**Dynamics Retail の実装方法**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-157">In the **Methodology** field, select **Dynamics Retail implementation methodology**.</span></span>
-1. <span data-ttu-id="23ca4-158">オプション: ロールとユーザーを既存のプロジェクトからインポートできます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-158">Optional: You can import roles and users from an existing project.</span></span>
-1. <span data-ttu-id="23ca4-159">**作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-159">Select **Create**.</span></span> <span data-ttu-id="23ca4-160">プロジェクト ビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-160">The project view appears.</span></span>
-
-### <a name="add-the-azure-connector"></a><span data-ttu-id="23ca4-161">Azure コネクタの追加</span><span class="sxs-lookup"><span data-stu-id="23ca4-161">Add the Azure Connector</span></span>
-
-<span data-ttu-id="23ca4-162">LCS プロジェクトに Azure コネクタを追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-162">To add the Azure Connector to your LCS project, follow these steps.</span></span>
-
-1. <span data-ttu-id="23ca4-163">次の手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-163">Follow one of these steps:</span></span>
-
-    - <span data-ttu-id="23ca4-164">パートナーである場合は、右端で**プロジェクト設定**タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-164">If you're a partner, select the **Project settings** tile on the far right.</span></span>
-    - <span data-ttu-id="23ca4-165">顧客の場合は、トップ メニューで**プロジェクト設定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-165">If you're a customer, select **Project settings** on the top menu.</span></span>
-
-1. <span data-ttu-id="23ca4-166">**Azure コネクタ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-166">Select **Azure connectors**.</span></span>
-1. <span data-ttu-id="23ca4-167">Azure コネクタを追加するには、**追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-167">Select **Add** to add the Azure Connector.</span></span>
-1. <span data-ttu-id="23ca4-168">名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-168">Enter a name.</span></span>
-1. <span data-ttu-id="23ca4-169">Azure サブスクリプション ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-169">Enter your Azure subscription ID.</span></span>
-1. <span data-ttu-id="23ca4-170">**Azure Resource Manager (ARM) を使用するようにコンフィギュレーションする**のオプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-170">Turn on the **Configure to use Azure Resource Manager (ARM)** option.</span></span>
-1. <span data-ttu-id="23ca4-171">**Azure サブスクリプション AAD テナント ドメイン (または ID)** の値が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-171">Verify that the **Azure subscription AAD Tenant Domain (or ID)** value is correct.</span></span> <span data-ttu-id="23ca4-172">必要に応じて、Azure サブスクリプション管理者に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-172">Consult your Azure subscription admin as required.</span></span>
-1. <span data-ttu-id="23ca4-173">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-173">Select **Next**.</span></span>
-1. <span data-ttu-id="23ca4-174">ページの指示に従って、サブスクリプションに必要なアプリケーションのアクセス許可を与えます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-174">Follow the instructions on the page to grant the required applications access to your subscription.</span></span> <span data-ttu-id="23ca4-175">必要に応じて、Azure サブスクリプション管理者に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-175">Consult your Azure subscription admin as required.</span></span>
-
-    1. <span data-ttu-id="23ca4-176">[Azure ポータル](https://portal.azure.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-176">Sign in to the [Azure portal](https://portal.azure.com/).</span></span>
-    1. <span data-ttu-id="23ca4-177">適切なディレクトリが選択されていることを確認し、左側のメニューで**サブスクリプション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-177">Make sure that the correct directory is selected, and then, on the menu on the left, select **Subscriptions**.</span></span>
-    1. <span data-ttu-id="23ca4-178">リストから正しいサブスクリプションを検索し、選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-178">Find the correct subscription in the list, and select it.</span></span> <span data-ttu-id="23ca4-179">必要に応じて検索機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-179">Use the search functionality as required.</span></span>
-    1. <span data-ttu-id="23ca4-180">メニューから、**アクセス制御 (IAM)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-180">On the menu, select **Access control (IAM)**.</span></span>
-    1. <span data-ttu-id="23ca4-181">右側の**ロール割り当ての追加**で、**追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-181">On the right, under **Add a role assignment**, select **Add**.</span></span> <span data-ttu-id="23ca4-182">**ロール割り当ての追加**ウィンドウが開きます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-182">The **Add role assignment** pane appears.</span></span>
-    1. <span data-ttu-id="23ca4-183">**ロール** フィールドで、**貢献者**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-183">In the **Role** field, select **Contributor**.</span></span>
-    1. <span data-ttu-id="23ca4-184">**アクセス権の割り当て先**について、既定値を **Azure AD ユーザー、グループ、またはサービス プリンシパル**のままにします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-184">In the **Assign access to** field, leave the default value, **Azure AD user, group, or service principal**.</span></span>
-    1. <span data-ttu-id="23ca4-185">**選択**の下で、**b96b7e94-b82e-4e71-99a0-cf7fb188acea** を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-185">Under **Select**, enter **b96b7e94-b82e-4e71-99a0-cf7fb188acea**.</span></span>
-    1. <span data-ttu-id="23ca4-186">リストから**Dynamics 配置サービス \[wsfed 有効\]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-186">Select **Dynamics Deployment Services \[wsfed-enabled\]** in the list.</span></span>
-    1. <span data-ttu-id="23ca4-187">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-187">Select **Save**.</span></span>
-
-1. <span data-ttu-id="23ca4-188">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-188">Select **Next**.</span></span>
-1. <span data-ttu-id="23ca4-189">ページの指示に従って、サブスクリプションに必要なアプリケーションのアクセス許可を与えます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-189">Follow the instructions on the page to grant the required applications access to your subscription.</span></span> <span data-ttu-id="23ca4-190">必要に応じて、Azure サブスクリプション管理者に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-190">Consult your Azure subscription admin as required.</span></span>
-1. <span data-ttu-id="23ca4-191">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-191">Select **Next**.</span></span>
-1. <span data-ttu-id="23ca4-192">**Azure リージョン** フィールドで、**米国東部**、**米国東部 2**、**米国西部**、または**米国西部 2** のいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-192">In the **Azure region** field, select **East US**, **East US 2**, **West US**, or **West US 2**.</span></span>
-1. <span data-ttu-id="23ca4-193">**接続** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-193">Select **Connect**.</span></span> <span data-ttu-id="23ca4-194">Azure コネクタがリストに表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-194">Your Azure Connector should appear in the list.</span></span>
-
-### <a name="import-the-commerce-preview-demo-base-extension"></a><span data-ttu-id="23ca4-195">コマース プレビュー デモ ベース拡張機能のインポート</span><span class="sxs-lookup"><span data-stu-id="23ca4-195">Import the Commerce Preview Demo Base Extension</span></span>
-
-<span data-ttu-id="23ca4-196">コマース プレビュー デモ ベース拡張機能をプロジェクトにインポートするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-196">To import the Commerce Preview Demo Base Extension into your project, follow these steps.</span></span>
-
-1. <span data-ttu-id="23ca4-197">上部にあるプロジェクト名を選択して、プロジェクトのホーム ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-197">Open the home page for your project by selecting the project name at the top.</span></span>
-1. <span data-ttu-id="23ca4-198">次の手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-198">Follow one of these steps:</span></span>
-
-    - <span data-ttu-id="23ca4-199">パートナーである場合は、右端の**資産ライブラリ** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-199">If you're a partner, select the **Asset library** tile on the far right.</span></span>
-    - <span data-ttu-id="23ca4-200">顧客の場合は、トップ メニューで**資産ライブラリ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-200">If you're a customer, select **Asset library** on the top menu.</span></span>
-
-1. <span data-ttu-id="23ca4-201">左のリストから、**ソフトウェア配置可能パッケージ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-201">In the list on the left, select **Software deployable package**.</span></span>
-1. <span data-ttu-id="23ca4-202">**インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-202">Select **Import**.</span></span>
-1. <span data-ttu-id="23ca4-203">**共有アセット ライブラリ**で、資産のリストから**コマース プレビュー デモ ベース拡張機能**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-203">Under **Shared asset library**, select **Commerce Preview Demo Base Extension** in the list of assets.</span></span>
-1. <span data-ttu-id="23ca4-204">**ピック**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-204">Select **Pick**.</span></span> <span data-ttu-id="23ca4-205">資産ライブラリに戻ると、リストに拡張機能が表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-205">You're returned to the Asset library, and you should see the extension in the list.</span></span>
-
-<span data-ttu-id="23ca4-206">次の図は、LCS **資産ライブラリ** ページで実行する必要があるアクションを示しています。</span><span class="sxs-lookup"><span data-stu-id="23ca4-206">The following illustration shows the actions that must be taken on the LCS **Asset library** page.</span></span>
-
-![コマース プレビュー デモ ベース拡張機能のインポート](./media/import.png)
-
-### <a name="deploy-the-environment"></a><span data-ttu-id="23ca4-208">環境の配置</span><span class="sxs-lookup"><span data-stu-id="23ca4-208">Deploy the environment</span></span>
-
-<span data-ttu-id="23ca4-209">環境を配置するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="23ca4-209">To deploy the environment, follow these steps.</span></span>
+<span data-ttu-id="d9b9a-105">開始する前に、このトピックにざっと目を通して、プロセスに必要な内容を把握することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-105">Before you begin, we recommend that you take a quick scan through this topic to get an idea of what the process requires.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="23ca4-210">オプションが 1 つしかないページはスキップされるため、手順 6、7、または 8 を完了する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="23ca4-210">You might not have to complete steps 6, 7, and/or 8, because pages that have a single option are skipped.</span></span> <span data-ttu-id="23ca4-211">**環境パラメーター** ビューで、**Dynamics 365 Commerce - デモ (10.0.* x* プラットフォーム更新プログラム *xx*)\*\* が**環境名**フィールドのすぐ上に表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-211">When you're in the **Environment parameters** view, confirm that the text **Dynamics 365 Commerce - Demo (10.0.* x* with Platform update *xx*)\*\* appears directly above the **Environment name** field.</span></span> <span data-ttu-id="23ca4-212">詳細については、手順 8 の後に表示されているイラストを参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-212">For details, see the illustration that appears after step 8.</span></span>
+> <span data-ttu-id="d9b9a-106">コマースの評価環境は一般的には提供されておらず、パートナーや顧客からのリクエストに応じて付与されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-106">Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis.</span></span> <span data-ttu-id="d9b9a-107">ライセンスの詳細については、Microsoft パートナーにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-107">For more information, reach out to your Microsoft partner contact.</span></span>
 
-1. <span data-ttu-id="23ca4-213">トップ メニューで、**クラウド ホスト環境**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-213">On the top menu, select **Cloud-hosted environments**.</span></span>
-1. <span data-ttu-id="23ca4-214">環境を追加するために**追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-214">Select **Add** to add an environment.</span></span>
-1. <span data-ttu-id="23ca4-215">**アプリケーション バージョン** フィールドで、最新のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-215">In the **Application version** field, select the most current version.</span></span> <span data-ttu-id="23ca4-216">最新バージョン以外のアプリケーション バージョンを特定する必要がある場合は、**10.0.8** より前のバージョンを選択しないでください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-216">If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.8**.</span></span>
-1. <span data-ttu-id="23ca4-217">**プラットフォーム バージョン** フィールドで、選択したアプリケーション バージョンに対して自動的に選択されたプラットフォーム バージョンを使用します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-217">In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected.</span></span> 
+## <a name="overview"></a><span data-ttu-id="d9b9a-108">概要</span><span class="sxs-lookup"><span data-stu-id="d9b9a-108">Overview</span></span>
+
+<span data-ttu-id="d9b9a-109">Commerce 評価環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-109">To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type.</span></span> <span data-ttu-id="d9b9a-110">この環境と Commerce Scale Unit (CSU) には、後から E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-110">The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later.</span></span> <span data-ttu-id="d9b9a-111">このトピックの手順では、プロビジョニングを完了するために必要なすべての手順と、使用する必要があるパラメーターについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-111">The instructions in this topic describe all the steps that are required to complete provisioning and the parameters that you must use.</span></span>
+
+<span data-ttu-id="d9b9a-112">Commerce 評価環境のプロビジョニングが正常に完了した後、いくつかのプロビジョニング後の手順を完了して、使用のために準備する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-112">After you successfully provision your Commerce evaluation environment, you must complete a few post-provisioning steps to prepare it for use.</span></span> <span data-ttu-id="d9b9a-113">一部の手順は、システムのどの側面を評価するかに応じて使用するオプションです。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-113">Some steps are optional, depending on the aspects of the system that you want to evaluate.</span></span> <span data-ttu-id="d9b9a-114">オプションの手順は、後からいつでも完了できます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-114">You can always complete the optional steps later.</span></span>
+
+<span data-ttu-id="d9b9a-115">プロビジョニング後に Commerce 評価環境を構成する方法については、[Commerce 評価環境のコンフィギュレーション](cpe-post-provisioning.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-115">For information about how to configure your Commerce evaluation environment after you provision it, see [Configure a Commerce evaluation environment](cpe-post-provisioning.md).</span></span> <span data-ttu-id="d9b9a-116">Commerce 評価環境のオプション機能を構成する方法については、[Commerce 評価環境のオプション機能のコンフィギュレーション](cpe-optional-features.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-116">For information about how to configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="d9b9a-117">必要条件</span><span class="sxs-lookup"><span data-stu-id="d9b9a-117">Prerequisites</span></span>
+
+<span data-ttu-id="d9b9a-118">Commerce 評価環境をプロビジョニングする前に、次の前提条件が整っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-118">The following prerequisites must be in place before you can provision your Commerce evaluation environment:</span></span>
+
+- <span data-ttu-id="d9b9a-119">Microsoft Dynamics Lifecycle Services (LCS) ポータルへのアクセス許可があります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-119">You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.</span></span>
+- <span data-ttu-id="d9b9a-120">既存の Microsoft Dynamics 365 のパートナーまたは顧客は、Dynamics 365 Commerce プロジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-120">You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.</span></span>
+- <span data-ttu-id="d9b9a-121">Microsoft Azure サブスクリプションへの管理者アクセスがあるか、必要に応じてサポートできるサブスクリプション管理者に連絡しています。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-121">You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.</span></span>
+- <span data-ttu-id="d9b9a-122">Azure Active Directory (Azure AD) テナント ID が使用可能です。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-122">You have your Azure Active Directory (Azure AD) tenant ID available.</span></span>
+- <span data-ttu-id="d9b9a-123">E コマース システムの管理者グループとして使用される  Azure AD セキュリティ グループが作成され、その ID が使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-123">You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.</span></span>
+- <span data-ttu-id="d9b9a-124">評価とレビューのモデレーター グループとして使用される  Azure AD セキュリティ グループが作成され、その ID が使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-124">You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available.</span></span> <span data-ttu-id="d9b9a-125">(このセキュリティ グループは、E コマースのシステム管理グループと同じにすることができます。)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-125">(This security group can be the same as the e-Commerce system admin group.)</span></span>
+
+<span data-ttu-id="d9b9a-126">このリストは包括的なものではないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-126">Note that this list isn't exhaustive.</span></span> <span data-ttu-id="d9b9a-127">問題が発生した場合は、Microsoft パートナーの連絡先に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-127">If you experience any issues, reach out to your Microsoft partner contact for assistance.</span></span>
+
+## <a name="provision-your-commerce-evaluation-environment"></a><span data-ttu-id="d9b9a-128">Commerce 評価環境のプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="d9b9a-128">Provision your Commerce evaluation environment</span></span>
+
+<span data-ttu-id="d9b9a-129">これらの手順は、Commerce 評価環境をプロビジョニングする方法を説明しています。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-129">These procedures explain how to provision a Commerce evaluation environment.</span></span> <span data-ttu-id="d9b9a-130">それらを正常に完了すると、Commerce 評価環境を構成する準備が整います。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-130">After you successfully complete them, the Commerce evaluation environment will be ready for configuration.</span></span> <span data-ttu-id="d9b9a-131">ここで説明するすべての活動は、LCS ポータルで発生します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-131">All the activities that are described here occur in the LCS portal.</span></span>
+
+### <a name="create-a-new-project"></a><span data-ttu-id="d9b9a-132">新しいプロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="d9b9a-132">Create a new project</span></span>
+
+<span data-ttu-id="d9b9a-133">LCS に新しいプロジェクトを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-133">To create a new project in LCS, follow these steps.</span></span>
+
+1. <span data-ttu-id="d9b9a-134">LCS のホーム ページで、プラス記号 (**+**) を選択してプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-134">On the LCS home page, select the plus sign (**+**) to create a project.</span></span>
+1. <span data-ttu-id="d9b9a-135">右側のウィンドウで、次のいずれかのステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-135">In the right pane, follow one of these steps:</span></span>
+
+    - <span data-ttu-id="d9b9a-136">パートナーである場合、**移行、ソリューションの作成、および学習**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-136">If you're a partner, select **Migrate, create solutions, and learn**.</span></span>
+    - <span data-ttu-id="d9b9a-137">顧客の場合、**見込みプリセールス**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-137">If you're a customer, select **Prospective presales**.</span></span>
+
+1. <span data-ttu-id="d9b9a-138">名前と説明、および業種を入力します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-138">Enter a name, description, and industry.</span></span>
+1. <span data-ttu-id="d9b9a-139">**製品名**フィールドで、**Dynamics 365 Commerce** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-139">In the **Product name** field, select **Dynamics 365 Commerce**.</span></span>
+1. <span data-ttu-id="d9b9a-140">**製品バージョン** フィールドで、**Dynamics 365 Commerce** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-140">In the **Product version** field, select **Dynamics 365 Commerce**.</span></span>
+1. <span data-ttu-id="d9b9a-141">**方法**フィールドで、**Dynamics Retail の実装方法**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-141">In the **Methodology** field, select **Dynamics Retail implementation methodology**.</span></span>
+1. <span data-ttu-id="d9b9a-142">オプション: ロールとユーザーを既存のプロジェクトからインポートできます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-142">Optional: You can import roles and users from an existing project.</span></span>
+1. <span data-ttu-id="d9b9a-143">**作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-143">Select **Create**.</span></span> <span data-ttu-id="d9b9a-144">プロジェクト ビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-144">The project view appears.</span></span>
+
+### <a name="add-the-azure-connector"></a><span data-ttu-id="d9b9a-145">Azure コネクタの追加</span><span class="sxs-lookup"><span data-stu-id="d9b9a-145">Add the Azure Connector</span></span>
+
+<span data-ttu-id="d9b9a-146">Azure コネクタ を LCS プロジェクトに追加するには、[Azure Resource Manager (ARM) 研修プロセス](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-146">To add the Azure Connector to your LCS project, follow the steps in [Complete the Azure Resource Manager (ARM) onboarding process](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).</span></span>
+
+### <a name="deploy-the-environment"></a><span data-ttu-id="d9b9a-147">環境の配置</span><span class="sxs-lookup"><span data-stu-id="d9b9a-147">Deploy the environment</span></span>
+
+<span data-ttu-id="d9b9a-148">環境を配置するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-148">To deploy the environment, follow these steps.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d9b9a-149">オプションが 1 つしかないページはスキップされるため、手順 6、7、または 8 を完了する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-149">You might not have to complete steps 6, 7, and/or 8, because pages that have a single option are skipped.</span></span> <span data-ttu-id="d9b9a-150">**環境パラメーター** ビューで、**Dynamics 365 Commerce - デモ (10.0.* x* プラットフォーム更新プログラム *xx*)\*\* が**環境名**フィールドのすぐ上に表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-150">When you're in the **Environment parameters** view, confirm that the text **Dynamics 365 Commerce - Demo (10.0.* x* with Platform update *xx*)\*\* appears directly above the **Environment name** field.</span></span> <span data-ttu-id="d9b9a-151">詳細については、手順 8 の後に表示されているイラストを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-151">For details, see the illustration that appears after step 8.</span></span>
+
+1. <span data-ttu-id="d9b9a-152">トップ メニューで、**クラウド ホスト環境**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-152">On the top menu, select **Cloud-hosted environments**.</span></span>
+1. <span data-ttu-id="d9b9a-153">環境を追加するために**追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-153">Select **Add** to add an environment.</span></span>
+1. <span data-ttu-id="d9b9a-154">**アプリケーション バージョン** フィールドで、最新のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-154">In the **Application version** field, select the most current version.</span></span> <span data-ttu-id="d9b9a-155">最新バージョン以外のアプリケーション バージョンを特定する必要がある場合は、**10.0.8** より前のバージョンを選択しないでください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-155">If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.8**.</span></span>
+1. <span data-ttu-id="d9b9a-156">**プラットフォーム バージョン** フィールドで、選択したアプリケーション バージョンに対して自動的に選択されたプラットフォーム バージョンを使用します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-156">In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected.</span></span> 
 
     ![アプリケーションとプラットフォーム バージョンを選択する](./media/project1.png)
 
-1. <span data-ttu-id="23ca4-219">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-219">Select **Next**.</span></span>
-1. <span data-ttu-id="23ca4-220">環境のトポロジとして**デモ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-220">Select **Demo** as the environment topology.</span></span>
+1. <span data-ttu-id="d9b9a-158">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-158">Select **Next**.</span></span>
+1. <span data-ttu-id="d9b9a-159">環境のトポロジとして**デモ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-159">Select **Demo** as the environment topology.</span></span>
 
     ![環境トポロジ 1 を選択する](./media/project2.png)
 
-1. <span data-ttu-id="23ca4-222">環境のトポロジとして **Dynamics 365 Commerce - デモ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-222">Select **Dynamics 365 Commerce - Demo** as the environment topology.</span></span> <span data-ttu-id="23ca4-223">以前に 1 つの Azure コネクタをコンフィギュレーションしている場合、この環境に対して使用されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-223">If you configured a single Azure Connector earlier, it will be used for this environment.</span></span> <span data-ttu-id="23ca4-224">複数の Azure コネクタをコンフィギュレーションした場合は、**米国東部**、**米国東部 2**、**米国西部**、または**米国西部 2** から、使用するコネクタを選択できます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-224">If you configured multiple Azure Connectors, you can select which connector to use: **East US**, **East US 2**, **West US**, or **West US 2**.</span></span> <span data-ttu-id="23ca4-225">(最適なエンド ツー エンドのパフォーマンスのために、**米国西部 2** を選択することをお勧めします)。</span><span class="sxs-lookup"><span data-stu-id="23ca4-225">(For the best end-to-end performance, we recommend that you select **West US 2**.)</span></span>
-
-    ![環境トポロジ 2 を選択する](./media/project3.png)
-
-1. <span data-ttu-id="23ca4-227">**環境の配置**のページで、環境名を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-227">On the **Deploy environment** page, enter an environment name.</span></span> <span data-ttu-id="23ca4-228">詳細設定はそのままにしておきます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-228">Leave the advanced settings as they are.</span></span>
+1. <span data-ttu-id="d9b9a-161">**環境の配置**のページで、環境名を入力します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-161">On the **Deploy environment** page, enter an environment name.</span></span> <span data-ttu-id="d9b9a-162">詳細設定はそのままにしておきます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-162">Leave the advanced settings as they are.</span></span>
 
     ![環境の配置のページ](./media/project4.png)
 
-1. <span data-ttu-id="23ca4-230">VM サイズを必要に応じて調整します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-230">Adjust the VM size as required.</span></span> <span data-ttu-id="23ca4-231">(VM 最小在庫管理単位をお勧めします \[SKU\] **D13 v2**。)</span><span class="sxs-lookup"><span data-stu-id="23ca4-231">(We recommend VM stock keeping unit \[SKU\] **D13 v2**.)</span></span>
-1. <span data-ttu-id="23ca4-232">価格決定およびライセンス条件を確認、チェック ボックスをオンにして同意したことを示します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-232">Review the pricing and licensing terms, and then select the check box to indicate that you agree to them.</span></span>
-1. <span data-ttu-id="23ca4-233">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-233">Select **Next**.</span></span>
-1. <span data-ttu-id="23ca4-234">配置の確認ページで、詳細が正しいことを確認した後、**配置**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-234">On the deployment confirmation page, verify that the details are correct, and then select **Deploy**.</span></span> <span data-ttu-id="23ca4-235">**クラウド ホスト環境**ビューに戻り、環境がリストに表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-235">You're returned to the **Cloud-hosted environments** view, and your environment should appear in the list.</span></span>
+1. <span data-ttu-id="d9b9a-164">VM サイズを必要に応じて調整します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-164">Adjust the VM size as required.</span></span> <span data-ttu-id="d9b9a-165">(VM 最小在庫管理単位をお勧めします \[SKU\] **D13 v2**。)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-165">(We recommend VM stock keeping unit \[SKU\] **D13 v2**.)</span></span>
+1. <span data-ttu-id="d9b9a-166">価格決定およびライセンス条件を確認、チェック ボックスをオンにして同意したことを示します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-166">Review the pricing and licensing terms, and then select the check box to indicate that you agree to them.</span></span>
+1. <span data-ttu-id="d9b9a-167">**次へ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-167">Select **Next**.</span></span>
+1. <span data-ttu-id="d9b9a-168">配置の確認ページで、詳細が正しいことを確認した後、**配置**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-168">On the deployment confirmation page, verify that the details are correct, and then select **Deploy**.</span></span> <span data-ttu-id="d9b9a-169">**クラウド ホスト環境**ビューに戻り、環境がリストに表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-169">You're returned to the **Cloud-hosted environments** view, and your environment should appear in the list.</span></span>
 
-    <span data-ttu-id="23ca4-236">要求した環境はキューに格納され、その後配置されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-236">Your requested environment will appear as queued and then deploying.</span></span> <span data-ttu-id="23ca4-237">環境ワークフローは完了までに少し時間がかかることがあります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-237">The environment workflows will take some time to be completed.</span></span> <span data-ttu-id="23ca4-238">そのため、約 6 ~ 9 時間後に再度確認してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-238">Therefore, check back after approximately six to nine hours.</span></span>
+    <span data-ttu-id="d9b9a-170">要求した環境はキューに格納され、その後配置されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-170">Your requested environment will appear as queued and then deploying.</span></span> <span data-ttu-id="d9b9a-171">環境ワークフローは完了までに少し時間がかかることがあります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-171">The environment workflows will take some time to be completed.</span></span> <span data-ttu-id="d9b9a-172">そのため、約 6 ~ 9 時間後に再度確認してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-172">Therefore, check back after approximately six to nine hours.</span></span>
 
-1. <span data-ttu-id="23ca4-239">続行する前に、環境の状態が**配置済み**になっていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-239">Before you continue, make sure that the status of your environment is **Deployed**.</span></span>
+1. <span data-ttu-id="d9b9a-173">続行する前に、環境の状態が**配置済み**になっていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-173">Before you continue, make sure that the status of your environment is **Deployed**.</span></span>
 
-### <a name="initialize-the-commerce-scale-unit-cloud"></a><span data-ttu-id="23ca4-240">Commerce Scale Unit (CSU) を初期化する (クラウド)</span><span class="sxs-lookup"><span data-stu-id="23ca4-240">Initialize the Commerce Scale Unit (cloud)</span></span>
+### <a name="initialize-the-commerce-scale-unit-cloud"></a><span data-ttu-id="d9b9a-174">Commerce Scale Unit (CSU) を初期化する (クラウド)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-174">Initialize the Commerce Scale Unit (cloud)</span></span>
 
-<span data-ttu-id="23ca4-241">CSU を初期化するためには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="23ca4-241">To initialize CSU, follow these steps.</span></span>
+<span data-ttu-id="d9b9a-175">CSU を初期化するためには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-175">To initialize CSU, follow these steps.</span></span>
 
-1. <span data-ttu-id="23ca4-242">**クラウド ホスト環境**ビュー内で、リストから環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-242">In the **Cloud-hosted environments** view, select your environment in the list.</span></span>
-1. <span data-ttu-id="23ca4-243">右側の環境ビューで、**完全な詳細**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-243">In the environment view on the right, select **Full details**.</span></span> <span data-ttu-id="23ca4-244">環境の詳細のビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-244">The environment details view appears.</span></span>
-1. <span data-ttu-id="23ca4-245">**環境機能**の下で、**管理**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-245">Under **Environment features**, select **Manage**.</span></span>
-1. <span data-ttu-id="23ca4-246">**コマース** タブで、**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-246">On the **Commerce** tab, select **Initialize**.</span></span> <span data-ttu-id="23ca4-247">CSU 初期化パラメーター ビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-247">The CSU initialization parameters view appears.</span></span>
-1. <span data-ttu-id="23ca4-248">**地域**フィールドで、**米国東部**、**米国東部 2**、**米国西部**、または**米国西部 2** のいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-248">In the **Region** field, select **East US**, **East US 2**, **West US**, or **West US 2**.</span></span>
-1. <span data-ttu-id="23ca4-249">**バージョン** フィールドで、リストから**バージョンを指定する**を選択し、表示されるフィールドに **9.18.20014.4** を指定します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-249">In the **Version** field, select **Specify a version** in the list, and then specify **9.18.20014.4** in the field that appears.</span></span> <span data-ttu-id="23ca4-250">ここで示されている正確なバージョンを指定してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-250">Be sure to specify the exact version that is indicated here.</span></span> <span data-ttu-id="23ca4-251">それ以外の場合は、RCSU を後で正しいバージョンに更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-251">Otherwise, you will have to update RCSU to the correct version later.</span></span>
-1. <span data-ttu-id="23ca4-252">**拡張機能の適用**オプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-252">Turn on the **Apply extension** option.</span></span>
-1. <span data-ttu-id="23ca4-253">拡張機能のリストから、**コマース プレビュー デモ ベース拡張機能**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-253">In the list of extensions, select **Commerce Preview Demo Base Extension**.</span></span>
-1. <span data-ttu-id="23ca4-254">**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-254">Select **Initialize**.</span></span>
-1. <span data-ttu-id="23ca4-255">配置の確認ページで、詳細が正しいことを確認した後、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-255">On the deployment confirmation page, verify that the details are correct, and then select **Yes**.</span></span> <span data-ttu-id="23ca4-256">**コマース** タブが選択されているところでは、**コマースの管理**ビューが再度表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-256">The **Commerce management** view displays again, where the **Commerce** tab is selected.</span></span> <span data-ttu-id="23ca4-257">CSU がプロビジョニング用にキューに格納されました。</span><span class="sxs-lookup"><span data-stu-id="23ca4-257">Your CSU has been queued for provisioning.</span></span>
-1. <span data-ttu-id="23ca4-258">続行する前に、CSU の状態が**成功**となっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-258">Before you continue, make sure that the status of your CSU is **Success**.</span></span> <span data-ttu-id="23ca4-259">初期化には約 2 ~ 5 時間かかります。</span><span class="sxs-lookup"><span data-stu-id="23ca4-259">Initialization takes approximately two to five hours.</span></span>
+1. <span data-ttu-id="d9b9a-176">**クラウド ホスト環境**ビュー内で、リストから環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-176">In the **Cloud-hosted environments** view, select your environment in the list.</span></span>
+1. <span data-ttu-id="d9b9a-177">右側の環境ビューで、**完全な詳細**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-177">In the environment view on the right, select **Full details**.</span></span> <span data-ttu-id="d9b9a-178">環境の詳細のビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-178">The environment details view appears.</span></span>
+1. <span data-ttu-id="d9b9a-179">**環境機能**の下で、**管理**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-179">Under **Environment features**, select **Manage**.</span></span>
+1. <span data-ttu-id="d9b9a-180">**コマース** タブで、**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-180">On the **Commerce** tab, select **Initialize**.</span></span> <span data-ttu-id="d9b9a-181">CSU 初期化パラメーター ビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-181">The CSU initialization parameters view appears.</span></span>
+1. <span data-ttu-id="d9b9a-182">**地域** フィールドで、環境を配置したのと同じか、またはそれに近い地域を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-182">In the **Region** field, select the region that is the same or close to the region that you deployed the environment to.</span></span>
+1. <span data-ttu-id="d9b9a-183">**バージョン** フィールドはそのままにしておきます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-183">Leave the **Version** field as it is.</span></span>
+1. <span data-ttu-id="d9b9a-184">**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-184">Select **Initialize**.</span></span>
+1. <span data-ttu-id="d9b9a-185">配置の確認ページで、詳細が正しいことを確認した後、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-185">On the deployment confirmation page, verify that the details are correct, and then select **Yes**.</span></span> <span data-ttu-id="d9b9a-186">**コマース** タブが選択されているところでは、**コマースの管理**ビューが再度表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-186">The **Commerce management** view displays again, where the **Commerce** tab is selected.</span></span> <span data-ttu-id="d9b9a-187">CSU がプロビジョニング用にキューに格納されました。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-187">Your CSU has been queued for provisioning.</span></span>
+1. <span data-ttu-id="d9b9a-188">続行する前に、CSU の状態が**成功**となっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-188">Before you continue, make sure that the status of your CSU is **Success**.</span></span> <span data-ttu-id="d9b9a-189">初期化には約 2 ~ 5 時間かかります。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-189">Initialization takes approximately two to five hours.</span></span>
 
-### <a name="initialize-e-commerce"></a><span data-ttu-id="23ca4-260">E コマースの初期化</span><span class="sxs-lookup"><span data-stu-id="23ca4-260">Initialize e-Commerce</span></span>
+<span data-ttu-id="d9b9a-190">環境の詳細ビューに **管理** リンクが見つからない場合は 、Microsoft の連絡先に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-190">If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.</span></span>
 
-<span data-ttu-id="23ca4-261">E コマースを初期化するためには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="23ca4-261">To initialize e-Commerce, follow these steps.</span></span>
+### <a name="initialize-e-commerce"></a><span data-ttu-id="d9b9a-191">E コマースの初期化</span><span class="sxs-lookup"><span data-stu-id="d9b9a-191">Initialize e-Commerce</span></span>
 
-1. <span data-ttu-id="23ca4-262">**E コマース** タブで、プレビューの同意を確認し、**設定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-262">On the **e-Commerce** tab, review the preview consent, and then select **Setup**.</span></span>
-1. <span data-ttu-id="23ca4-263">**E コマース テナント名**フィールドに名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-263">In the **e-Commerce tenant name** field, enter a name.</span></span> <span data-ttu-id="23ca4-264">ただし、この名前は E コマース インスタンスを指す URL の一部に表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-264">However, be aware that this name will appear in some of the URLs that point to your e-Commerce instance.</span></span>
-1. <span data-ttu-id="23ca4-265">**Commerce Scale Unit の名前** フィールドで、リストから CSU を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-265">In the **Commerce Scale Unit name** field, select your CSU in the list.</span></span> <span data-ttu-id="23ca4-266">(リストには 1 つのオプションのみが必要です。)</span><span class="sxs-lookup"><span data-stu-id="23ca4-266">(The list should have only one option.)</span></span>
+<span data-ttu-id="d9b9a-192">E コマースを初期化するためには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-192">To initialize e-Commerce, follow these steps.</span></span>
 
-    <span data-ttu-id="23ca4-267">**E コマースの地域**フィールドは自動的に設定され、値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="23ca4-267">The **e-Commerce geography** field is set automatically, and the value can't be changed.</span></span>
+1. <span data-ttu-id="d9b9a-193">**E コマース** タブで、評価の同意を確認し、**設定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-193">On the **e-Commerce** tab, review the evaluation consent, and then select **Setup**.</span></span>
+1. <span data-ttu-id="d9b9a-194">**E コマース環境名** フィールドに名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-194">In the **e-Commerce environment name** field, enter a name.</span></span> <span data-ttu-id="d9b9a-195">この名前は E コマース インスタンスを指す URL の一部に表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-195">Be aware that this name will appear in some of the URLs that point to your e-Commerce instance.</span></span>
+1. <span data-ttu-id="d9b9a-196">**Commerce Scale Unit の名前** フィールドで、リストから CSU を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-196">In the **Commerce Scale Unit name** field, select your CSU in the list.</span></span> <span data-ttu-id="d9b9a-197">(リストには 1 つのオプションのみが必要です。)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-197">(The list should have only one option.)</span></span>
 
-1. <span data-ttu-id="23ca4-268">**次へ** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-268">Select **Next** to continue.</span></span>
-1. <span data-ttu-id="23ca4-269">**サポートされているホスト名**フィールドに、`www.fabrikam.com` などの有効なドメインを入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-269">In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.</span></span>
-1.  <span data-ttu-id="23ca4-270">**システム管理者の ADD セキュリティ グループ** フィールドに、使用するセキュリティ グループの名前の最初の数文字を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-270">In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use.</span></span> <span data-ttu-id="23ca4-271">検索結果を表示するには、拡大クラス アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-271">Select the magnifying class icon to display the search results.</span></span> <span data-ttu-id="23ca4-272">リストから正しいセキュリティ グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-272">Select the correct security group from the list.</span></span>
-2.  <span data-ttu-id="23ca4-273">**評価とレビュー モデレーター用 ADD セキュリティ グループ** フィールドに、使用するセキュリティ グループの名前の最初の数文字を入力します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-273">In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use.</span></span> <span data-ttu-id="23ca4-274">検索結果を表示するには、拡大クラス アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-274">Select the magnifying class icon to display the search results.</span></span> <span data-ttu-id="23ca4-275">リストから正しいセキュリティ グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-275">Select the correct security group from the list.</span></span>
-1. <span data-ttu-id="23ca4-276">**評価とレビュー サービスを有効にする**オプションを、有効のままにします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-276">Leave the **Enable ratings and review service** option turned on.</span></span>
-1. <span data-ttu-id="23ca4-277">**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="23ca4-277">Select **Initialize**.</span></span> <span data-ttu-id="23ca4-278">**E コマース** タブが選択されているところでは、**コマースの管理**ビューが再度表示されます。</span><span class="sxs-lookup"><span data-stu-id="23ca4-278">The **Commerce management** view displays again, where the **e-Commerce** tab is selected.</span></span> <span data-ttu-id="23ca4-279">E コマースの初期化を開始しました。</span><span class="sxs-lookup"><span data-stu-id="23ca4-279">E-Commerce initialization has started.</span></span>
-1. <span data-ttu-id="23ca4-280">続行する前に、E コマースの初期化状態が**初期化成功**になるまでお待ちください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-280">Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.</span></span>
-1. <span data-ttu-id="23ca4-281">右下の**リンク**で、次のリンクの URL をメモします。</span><span class="sxs-lookup"><span data-stu-id="23ca4-281">Under **Links** in the lower right, make a note of the URLs for the following links:</span></span>
+    <span data-ttu-id="d9b9a-198">**E コマースの地域** フィールドは自動的に設定されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-198">The **e-Commerce geography** field is set automatically.</span></span>
 
-    * <span data-ttu-id="23ca4-282">**E コマース サイト** – E コマース サイトのルートへのリンク。</span><span class="sxs-lookup"><span data-stu-id="23ca4-282">**e-Commerce site** – The link to the root of your e-Commerce site.</span></span>
-    * <span data-ttu-id="23ca4-283">**E コマース サイト管理ツール** – サイト管理ツールへのリンク。</span><span class="sxs-lookup"><span data-stu-id="23ca4-283">**e-Commerce site management tool** – The link to the site management tool.</span></span>
+1. <span data-ttu-id="d9b9a-199">**次へ** を選択して続行します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-199">Select **Next** to continue.</span></span>
+1. <span data-ttu-id="d9b9a-200">**サポートされているホスト名**フィールドに、`www.fabrikam.com` などの有効なドメインを入力します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-200">In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.</span></span>
+1. <span data-ttu-id="d9b9a-201">**システム管理者の AAD セキュリティ グループ** フィールドに、使用するセキュリティ グループの名前の最初の数文字を入力し、虫眼鏡記号を選択して検索結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-201">In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results.</span></span> <span data-ttu-id="d9b9a-202">リストで正しいセキュリティ グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-202">Select the correct security group in the list.</span></span>
+1.  <span data-ttu-id="d9b9a-203">**評価とレビュー モデレーター用 AAD セキュリティ グループ** フィールドに、使用するセキュリティ グループの名前の最初の数文字を入力し、虫眼鏡記号を選択して検索結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-203">In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use, and then select the magnifying glass symbol to view the search results.</span></span> <span data-ttu-id="d9b9a-204">リストで正しいセキュリティ グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-204">Select the correct security group in the list.</span></span>
+1. <span data-ttu-id="d9b9a-205">**評価とレビュー サービスを有効にする** オプションを、**はい** のままにします。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-205">Leave the **Enable ratings and review service** option set to **Yes**.</span></span>
+1. <span data-ttu-id="d9b9a-206">**初期化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-206">Select **Initialize**.</span></span> <span data-ttu-id="d9b9a-207">**E コマース** タブが選択されているところでは、**コマースの管理**ビューが再度表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-207">The **Commerce management** view displays again, where the **e-Commerce** tab is selected.</span></span> <span data-ttu-id="d9b9a-208">E コマースの初期化を開始しました。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-208">E-Commerce initialization has started.</span></span>
+1. <span data-ttu-id="d9b9a-209">続行する前に、E コマースの初期化状態が**初期化成功**になるまでお待ちください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-209">Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.</span></span>
+1. <span data-ttu-id="d9b9a-210">右下の**リンク**で、次のリンクの URL をメモします。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-210">Under **Links** in the lower right, make a note of the URLs for the following links:</span></span>
 
-## <a name="commerce-preview-environment-support"></a><span data-ttu-id="23ca4-284">Commerce プレビュー環境のサポート</span><span class="sxs-lookup"><span data-stu-id="23ca4-284">Commerce preview environment support</span></span>
+    * <span data-ttu-id="d9b9a-211">**E コマース サイト** – E コマース サイトのルートへのリンク。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-211">**e-Commerce site** – The link to the root of your e-Commerce site.</span></span>
+    * <span data-ttu-id="d9b9a-212">**Commerce サイト ビルダー** – サイト管理ツールへのリンク。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-212">**Commerce site builder** – The link to the site management tool.</span></span>
 
-<span data-ttu-id="23ca4-285">プロビジョニング手順の完了中に問題が発生した場合は、[Microsoft Dynamics 365 Commerce プレビュー Yammer グループ](https://aka.ms/Dynamics365CommercePreviewYammer)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-285">If you experience issues while you're completing the provisioning steps, visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for help.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d9b9a-213">次のステップ</span><span class="sxs-lookup"><span data-stu-id="d9b9a-213">Next steps</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="23ca4-286">次のステップ</span><span class="sxs-lookup"><span data-stu-id="23ca4-286">Next steps</span></span>
+<span data-ttu-id="d9b9a-214">Commerce 評価環境のプロビジョニングと構成のプロセスを続行するには、[Commerce 評価環境のコンフィギュレーション](cpe-post-provisioning.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9b9a-214">To continue the process of provisioning and configuring your Commerce evaluation environment, see [Configure a Commerce evaluation environment](cpe-post-provisioning.md).</span></span>
 
-<span data-ttu-id="23ca4-287">Commerce プレビュー環境のプロビジョニングと構成のプロセスを続行するには、[Commerce プレビュー環境のコンフィギュレーション](cpe-post-provisioning.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="23ca4-287">To continue the process of provisioning and configuring your Commerce preview environment, see [Configure a Commerce preview environment](cpe-post-provisioning.md).</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d9b9a-215">追加リソース</span><span class="sxs-lookup"><span data-stu-id="d9b9a-215">Additional resources</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="23ca4-288">追加リソース</span><span class="sxs-lookup"><span data-stu-id="23ca4-288">Additional resources</span></span>
+[<span data-ttu-id="d9b9a-216">Dynamics 365 Commerce 評価環境の概要</span><span class="sxs-lookup"><span data-stu-id="d9b9a-216">Dynamics 365 Commerce evaluation environment overview</span></span>](cpe-overview.md)
 
-[<span data-ttu-id="23ca4-289">Dynamics 365 Commerce プレビュー環境の概要</span><span class="sxs-lookup"><span data-stu-id="23ca4-289">Dynamics 365 Commerce preview environment overview</span></span>](cpe-overview.md)
+[<span data-ttu-id="d9b9a-217">Dynamics 365 Commerce の評価環境を構成する</span><span class="sxs-lookup"><span data-stu-id="d9b9a-217">Configure a Dynamics 365 Commerce evaluation environment</span></span>](cpe-post-provisioning.md)
 
-[<span data-ttu-id="23ca4-290">Dynamics 365 Commerce レビュー環境のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="23ca4-290">Configure a Dynamics 365 Commerce preview environment</span></span>](cpe-post-provisioning.md)
+[<span data-ttu-id="d9b9a-218">Dynamics 365 Commerce 評価環境で BOPIS を構成する</span><span class="sxs-lookup"><span data-stu-id="d9b9a-218">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
 
-[<span data-ttu-id="23ca4-291">Dynamics 365 Commerce プレビュー環境のオプション機能のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="23ca4-291">Configure optional features for a Dynamics 365 Commerce preview environment</span></span>](cpe-optional-features.md)
+[<span data-ttu-id="d9b9a-219">Dynamics 365 Commerce 評価環境のオプション機能を構成する</span><span class="sxs-lookup"><span data-stu-id="d9b9a-219">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
 
-[<span data-ttu-id="23ca4-292">Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="23ca4-292">Dynamics 365 Commerce preview environment FAQ</span></span>](cpe-faq.md)
+[<span data-ttu-id="d9b9a-220">Dynamics 365 Commerce 評価環境に関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="d9b9a-220">Dynamics 365 Commerce evaluation environment FAQ</span></span>](cpe-faq.md)
 
-[<span data-ttu-id="23ca4-293">Microsoft Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="23ca4-293">Microsoft Lifecycle Services (LCS)</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[<span data-ttu-id="d9b9a-221">Microsoft Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-221">Microsoft Lifecycle Services (LCS)</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[<span data-ttu-id="23ca4-294">Commerce Scale Unit (クラウド)</span><span class="sxs-lookup"><span data-stu-id="23ca4-294">Commerce Scale Unit (cloud)</span></span>](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[<span data-ttu-id="d9b9a-222">Commerce Scale Unit (クラウド)</span><span class="sxs-lookup"><span data-stu-id="d9b9a-222">Commerce Scale Unit (cloud)</span></span>](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
-[<span data-ttu-id="23ca4-295">Microsoft Azure ポータル</span><span class="sxs-lookup"><span data-stu-id="23ca4-295">Microsoft Azure portal</span></span>](https://azure.microsoft.com/features/azure-portal)
+[<span data-ttu-id="d9b9a-223">Microsoft Azure ポータル</span><span class="sxs-lookup"><span data-stu-id="d9b9a-223">Microsoft Azure portal</span></span>](https://azure.microsoft.com/features/azure-portal)
 
-[<span data-ttu-id="23ca4-296">Dynamics 365 Commerce Web サイト</span><span class="sxs-lookup"><span data-stu-id="23ca4-296">Dynamics 365 Commerce website</span></span>](https://aka.ms/Dynamics365CommerceWebsite)
-
+[<span data-ttu-id="d9b9a-224">Dynamics 365 Commerce Web サイト</span><span class="sxs-lookup"><span data-stu-id="d9b9a-224">Dynamics 365 Commerce website</span></span>](https://aka.ms/Dynamics365CommerceWebsite)
