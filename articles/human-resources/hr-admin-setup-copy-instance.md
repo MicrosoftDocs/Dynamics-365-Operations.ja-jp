@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431248"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554328"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
@@ -68,11 +68,11 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー**を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
 
-   ![[上書きするインスタンスを選択](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[上書きするインスタンスを選択します](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platform を選択](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platformを選択します](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPowerApps 環境 を選択して、 **コピー**を選択します。
 
@@ -108,6 +108,6 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 ## <a name="environment-admin"></a>環境管理者
 
-対象となるサンドボックス環境の、管理者を含む全ユーザーが、コピー元のユーザーに置き換えられます。 インスタンスのコピーの実行者は、自分にコピー先の環境で管理者の権限があることを確認してください。 管理者の権限がない場合は、コピーの完了後に対象のサンドボックス環境にサインインすることができません。
+対象となるサンドボックス環境の、管理者を含む全ユーザーが、コピー元のユーザーに置き換えられます。 インスタンスのコピーの実行者は、自分にソース環境で管理者の権限があることを確認してください。 管理者の権限がない場合は、コピーの完了後に対象のサンドボックス環境にサインインすることができません。
 
 コピー先のサンドボックス環境内の全ての非管理者ユーザーは無効化され、サンドボックス環境へと不必要なログインができません。 システム管理者は、必要に応じてユーザーを有効化することができます。

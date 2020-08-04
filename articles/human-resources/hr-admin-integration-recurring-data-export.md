@@ -41,7 +41,7 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 このチュートリアルでは下記のテクノロジを使用します:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
-- **[Azure ロジック アプリ](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
     - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
 
@@ -83,7 +83,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
     ![ロジック アプリ作成ページ](media/integration-logic-app-creation-1.png)
 
-2. ロジック アプリ デザイナーで、空白のロジック アプリから始めます。
+2. Logic Apps Designer で、空白のロジック アプリから始めます。
 3. 24 時間ごとに (または選択したスケジュールに従って) ロジック アプリを実行するために [定期スケジュール トリガー](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) を追加します。
 
     ![定期ダイアログ ボックス](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
 どこかのステップで失敗が報告された場合、デザイナーから失敗したステップを選択し、その **入力** フィールドと **出力** フィールドを確認します。 エラーを修正するため必要に応じてステップをデバッグおよび調整します。
 
-次の図はロジック アプリのすべてのステップが正常に実行された場合のロジック アプリ デザイナーの外観を示しています。
+次の図はロジック アプリのすべてのステップが正常に実行された場合の Logic Apps Designer の外観を示しています。
 
 ![成功したロジック アプリの実行](media/integration-logic-app-successful-run.png)
 

@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce 環境における BOPIS の構成
-description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce における オンライン購入、店舗での受け取り（BOPIS）の構成方法について説明します。
+title: Dynamics 365 Commerce の評価環境で BOPIS を構成する
+description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce の評価環境における オンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282799"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599799"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>Dynamics 365 Commerce 環境における BOPIS の構成
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce の評価環境で BOPIS を構成する
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、プロビジョニング後の、 Microsoft Dynamics 365 Commerce 環境におけるオンライン購入、店頭受取（BOPIS）を構成する方法について説明します。
+このトピックでは、プロビジョニング後の、 Microsoft Dynamics 365 Commerce の評価環境におけるオンライン購入、店頭受取 (BOPIS) を構成する方法について説明します。
 
 ## <a name="prerequisite"></a>前提条件
 
-このトピックに記載の手順は、Commerce プレビュー環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce のプレビュー環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce プレビュー環境を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) 参照してください。
+このトピックに記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) を参照してください。
 
 Commerce 環境のプロビジョニングとエンドツーエンドの構成完了後に、このトピックを使用して BOPIS のシナリオを有効化することができます。
 
@@ -71,7 +70,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 5. 認証ダイアログ ボックスが表示されます。 既に作業者 **000713-Andrew Collette** に関連付けられている電子メール アドレスを使用するアカウントを選択します。
 
     > [!NOTE]
-    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、トピック [Dynamics 365 Commerceプレビュー環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) 配下の「作業者とあなたの ID を関連付ける」 に記載の手順に従ってください。
+    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、トピック [Dynamics 365 Commerce 評価環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) 配下の「作業者とあなたの ID を関連付ける」 に記載の手順に従ってください。
     
 6. 組織によるデバイス管理を許可するかどうかを確認するメッセージが表示された場合は、**このアプリのみ** を選択します。
 7. 有効化が完了したら、**開始する** を選択します。
@@ -144,13 +143,13 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics 365 Commerce プレビュー環境の概要](cpe-overview.md)
+[Dynamics 365 Commerce 評価環境の概要](cpe-overview.md)
 
-[Dynamics 365 Commerce プレビュー環境のプロビジョニング](provisioning-guide.md)
+[Dynamics 365 Commerce 評価環境をプロビジョニングする](provisioning-guide.md)
 
-[Dynamics 365 Commerce プレビュー環境のオプション機能のコンフィギュレーション](cpe-optional-features.md)
+[Dynamics 365 Commerce 評価環境のオプション機能を構成する](cpe-optional-features.md)
 
-[Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問](cpe-faq.md)
+[Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

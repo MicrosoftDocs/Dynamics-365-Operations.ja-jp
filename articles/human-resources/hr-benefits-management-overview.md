@@ -3,7 +3,7 @@ title: 福利厚生の管理の概要
 description: Dynamics 365 Human Resources の福利厚生の管理機能の概要。 使いやすいオンライン エクスペリエンスで、従業員に拡張された給付金オプションを提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4157cb1f83d686d435f3d04e47c578df455376c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429269"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599383"
 ---
 # <a name="benefits-management-overview"></a>給付金管理の概要
 
@@ -59,6 +59,8 @@ ms.locfileid: "3429269"
 ## <a name="configure-employee-information"></a>従業員情報のコンフィギュレーション
 
 従業員を福利厚生に登録する前に、必要な情報を提供する必要があります。 従業員を開始日に **固定報酬プラン** に登録し、**従業員** フォームの **従業員の詳細** で **給付金支払頻度** を選択する必要があります。
+
+コミッションなどの補足報酬を受け取る従業員がいる場合は、従業員レコードから **福利厚生の年間給与** 額を追加できます。 Human Resources では、補償範囲額を決定する際に、固定報酬の年間金額ではなく、**福利厚生の年間給与** 額を使用します。 **福利厚生の年間給与** は、従業員の開始日または受給期間の開始日のいずれか遅い方の日付で有効である必要があります。 従業員に対して固定報酬と福利厚生の年間給与額の両方が記録されている場合、福利厚生の年間給与が補償範囲額の決定に使用されます。
 
 性別または年齢に基づくレートを使用する給付金プランを作成する場合、従業員が福利厚生コストを計算するには、生年月日と性別を入力する必要があります。
 

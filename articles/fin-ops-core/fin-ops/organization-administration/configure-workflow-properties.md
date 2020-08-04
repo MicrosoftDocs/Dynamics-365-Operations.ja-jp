@@ -3,7 +3,7 @@ title: ワークフロー プロパティのコンフィギュレーション
 description: このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199439"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541112"
 ---
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 
@@ -91,12 +91,7 @@ ms.locfileid: "3199439"
 3. **条件の追加**をクリックします。
 4. 条件を入力します。
 5. 必要に応じて、追加条件を入力します。
-6. 入力した条件が正しく設定されていることを確認するには、次の手順を実行します。
-
-    1. **テスト**をクリックします。
-    2. **ワークフロー条件のテスト**ページで、**条件の検証**領域で、レコードを選択します。
-    3. **テスト**をクリックします。 システムによってレコードが評価され、指定した条件を満たすかどうかが判定されます。 たとえば、スペイン向けの購買要求ワークフローを作成している場合、ページの**条件の検証**領域に、購買要求の一覧が表示されます。 **テスト**をクリックすると、選択した購買要求が評価され、国/地域 = ES (スペイン) であるかどうかが確認されます。
-    4. **OK**、または**キャンセル**をクリックして、**プロパティ**ページに戻ります。
+6. 一部のターゲット レコードでワークフローを実行して、レコードが条件に正しく含まれていること、およびレコードが除外されていることを確認します。
 
 ## <a name="specify-when-notifications-are-sent"></a>いつ通知を送信するかを指定する
 

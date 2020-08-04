@@ -1412,7 +1412,7 @@
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
+            - name: 中国で 21Vianet が運用する Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations のテクニカル サポートの設定
               href: lifecycle-services/support-experience.md
@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B ユーザーの Azure AD へのエクスポート
               href: sysadmin/implement-b2b.md
-            - name: プロセスの自動化
-              href: sysadmin/process-automation.md
             - name: セキュリティ
               items:
                 - name: ロールベース セキュリティ
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: ユーザーのセキュリティ ロールへの割り当て
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする
+                  href: sysadmin/import-export-customized-security.md
                 - name: タスク記録のセキュリティ診断
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: 拡張可能なデータ セキュリティ ポリシー
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: セキュリティ ポリシーを作成する
+                  href: sysadmin/create-simple-security-policy.md
             - name: プロセスの自動化
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: バッチ処理
               items:
                 - name: バッチ処理の概要
@@ -1582,7 +1586,7 @@
               items:
                 - name: 最新の更新プログラムに移行するためのプロセス
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: 1 つのバージョンへのパス
+                - name: One Version へのパス
                   items:
                     - name: 最新バージョンへのセルフサービス アップグレード
                       href: migration-upgrade/self-service-upgrade.md
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: フィルター処理のオプション
                   href: user-interface/filtering.md
-                - name: PowerApps ホスト コントロール
+                - name: Power Apps ホスト コントロール
                   href: user-interface/powerapps-host-control.md
             - name: ウィンドウの管理
               items:

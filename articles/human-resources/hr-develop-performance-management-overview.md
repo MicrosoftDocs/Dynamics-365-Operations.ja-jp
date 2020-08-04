@@ -3,7 +3,7 @@ title: パフォーマンス管理
 description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430443"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609775"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 
@@ -145,7 +145,7 @@ Worker Review ワークフローには 2 つの要素があります:
 
 ### <a name="performance-journal-source-types"></a>業績仕訳ソース タイプ
 
-業績仕訳帳ソース タイプは、業績仕訳帳がどこから来たかかを説明します。 仕訳帳品目が既定で管理者のみ、従業員のみ、または管理者と従業員の両方で表示されるかどうかを確認できます。 また称賛のソース タイプを変更することによって、Send Praise 機能を有効にするか、または無効にすることができます。 この時点でほかのソース タイプを無効にすることはできません。
+業績仕訳帳ソース タイプは、業績仕訳帳がどこから来たかかを説明します。 仕訳帳品目が既定で管理者のみ、従業員のみ、または管理者と従業員の両方で表示されるかどうかを確認できます。 この時点でソース タイプを無効にすることはできません。
 
 ### <a name="review-types"></a>確認タイプ
 

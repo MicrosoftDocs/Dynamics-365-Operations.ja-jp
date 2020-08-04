@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Management の新機能および変更された
 description: このトピックでは、Dynamics 365 Supply Chain Management の各リリースにおける新しい機能と変更された機能について説明するトピックを示します。
 author: kamaybac
 manager: tfehr
-ms.date: 06/01/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-02-13
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f6824e4c8e0e6d3071973dc92d2ff90d78f4dde5
-ms.sourcegitcommit: d64a07748bdd7c85877cfe0343bee952f235f38e
+ms.search.validFrom: 2020-07-08
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: a3e55d891bb029fa363a52191ae5c425de18899c
+ms.sourcegitcommit: 9c28aca7fc99e38139b7935bcdb6132cba2c81b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457196"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "3545691"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の新機能および変更された機能 
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,17 +36,17 @@ Dynamics 365 Supply Chain Management の各リリースでの新機能や変更�
 |---|---|---|---|
 | 10.0.11 | 10.0.464 | 2020 年 7 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.11 の新機能と変更点](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | 2020 年 5 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.10 の新機能と変更点](whats-new-scm-10-0-10.md) |
+| 10.0.9  | 10.0.383   | 2020 年 4 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.9 の新機能と変更点](whats-new-scm-10-0-9.md) |
+| 10.0.8  | 10.0.319   | 2020 年 2 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.8 の新機能と変更点](whats-new-scm-10-0-8.md) |
+| 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.7 の新機能と変更点](whats-new-scm-10-0-7.md) |
+| 10.0.6 |   10.0.234   | 2019 年 11 月  | [Dynamics 365 Supply Chain Management バージョン 10.0.6 の新機能と変更点](whats-new-scm-10-0-6.md) |
 
-## <a name="releases-before-march-2020"></a>2020 年 3 月より前のリリース
+## <a name="releases-before-november-2019"></a>2019 年 11 月以前のリリース
 
 2019 年 11 月より前のリリースの新機能または変更点を確認するには、次のトピックを参照してください。
 
 | リリース | バージョン | ビルド番号 | 使用可能性 | 詳細情報 |
 |---|---|---|---|---|
-| Dynamics 365 Supply Chain Management | 10.0.9  | 10.0.383   | 2020 年 4 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.9 の新機能と変更点](whats-new-scm-10-0-9.md) |
-| Dynamics 365 Supply Chain Management | 10.0.8  | 10.0.319   | 2020 年 2 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.8 の新機能と変更点](whats-new-scm-10-0-8.md) |
-| Dynamics 365 Supply Chain Management | 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.7 の新機能と変更点](whats-new-scm-10-0-7.md) |
-| Dynamics 365 Supply Chain Management | 10.0.6 |   10.0.234   | 2019 年 11 月  | [Dynamics 365 Supply Chain Management バージョン 10.0.6 の新機能と変更点](whats-new-scm-10-0-6.md) |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | 2019 年 10 月     | [Dynamics 365 for Finance and Operations バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | 2019 年 7 月        | [Dynamics 365 for Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019 年 6 月        | [Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |

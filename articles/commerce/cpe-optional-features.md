@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce プレビュー環境のオプション機能のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Commerce のプレビュー環境のオプション機能をコンフィギュレーションする方法について説明します。
+title: Dynamics 365 Commerce の評価環境のオプション機能を構成する
+description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境のオプション機能を構成する方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057743"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599823"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce プレビュー環境のオプション機能のコンフィギュレーション
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce の評価環境のオプション機能を構成する
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のプレビュー環境のオプション機能をコンフィギュレーションする方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce の評価環境のオプション機能を構成する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
 トランザクション電子メール機能を評価する場合、次の前提条件を満たす必要があります。
 
-- プレビュー環境をプロビジョニングする Microsoft Azure サブスクリプションから使用できる電子メール サーバー (Simple Mail Transfer Protocol \[SMTP\] サーバー) が使用可能です。
+- 評価環境をプロビジョニングする Microsoft Azure のサブスクリプションから使用できるメールサーバー (シンプル メール トランスファー プロトコル \[SMTP\] サーバー) が使用可能です。
 - サーバーの完全修飾ドメイン名 (FQDN)/IP アドレス、SMTP ポート番号、および認証の詳細が利用可能です。
-
-新しいオムニ チャネル画像を取り込んでデジタル資産管理機能を評価するに場合は、コンテンツ管理システム (CMS) テナントの名前を使用できるようにしておく必要があります。 この名前を検索する手順については、このトピックの後半で説明します。 >>>(Q: 手順はどこにありますか ?)
 
 ## <a name="configure-the-image-back-end"></a>画像バックエンドのコンフィギュレーション
 
@@ -47,9 +44,9 @@ ms.locfileid: "3057743"
 > [!NOTE]
 > この手順を完了する前に、[コマースでサイトを設定する](cpe-post-provisioning.md#set-up-your-site-in-commerce) の手順を完了する必要があります。
 
-1. プロビジョニング中に E コマースを初期化したときに作成した URL を使用して、コマース サイト管理ツールにサインインします ([E コマースの初期化](provisioning-guide.md#initialize-e-commerce) を参照してください)。
+1. プロビジョニングの実行時に eコマースを初期化した際に作成した URL を使用して、コマース サイトの管理ツールにサイン インします ([eコマースの初期化](provisioning-guide.md#initialize-e-commerce) を参照してください)。
 1. **Fabrikam** サイトを開きます。
-1. 左側のメニューで、**資産**を選択します。
+1. 左側のメニューで、**メディア ライブラリ**を選択します。
 1. 1 つの画像資産を選択します。
 1. 右側のプロパティ インスペクターで、**公開 URL** プロパティを検索します。 値は URL です。 次に例を示します。
 
@@ -63,22 +60,22 @@ ms.locfileid: "3057743"
 
 ### <a name="update-the-media-base-url"></a>メディア ベース URL の更新
 
-1. Dynamics 365 Commerce へサインインします。
+1. コマースの本部にサイン インします。
 1. 左側のメニューを使用して、**モジュール \> 小売りとコマース \> チャネルの設定 \> チャネル プロファイル**の順に移動します。
 1. **編集**を選択します。
 1. **プロファイルのプロパティ**で、**メディア サーバー ベース URL** プロパティ値を、以前に作成したメディア ベース URL と置き換えます。
-1. 左側のリストの、**既定**のチャネルで、他のチャネルを選択します。
+1. 使用可能な他のチャネル **scXXXXXXXXX** を選択します。
 1. **プロファイル プロパティ**で、**追加**を選択します。
 1. 追加されたプロパティに対して、**メディア サーバー ベース URL** をプロパティ キーとして選択します。 プロパティ値として、以前に作成したメディア ベース URL を入力します。
 1. **保存** を選択します。
 
-## <a name="configure-the-email-server"></a>電子メール サーバーのコンフィギュレーション
+## <a name="configure-and-test-the-email-server"></a>電子メール サーバーの構成とテストを行います
 
 > [!NOTE]
 > ここで入力する SMTP サーバーまたは電子メール サービスは、環境に使用している Azure サブスクリプションからアクセスできる必要があります。
 
-1. コマースにサインインします。
-1. 左側にあるメニューを使用して、**モジュール \> 組織管理者 \> 設定 \> 電子メール \> 電子メール パラメーター**の順に移動します。
+1. コマースの本部にサイン インします。
+1. 左側のメニューを使用して、**モジュール  \>  小売とコマース \> 本部の設定 \> パラメーター \> 電子メールパラメーター**に移動します。
 1. **SMTP 設定**タブの、**送信メール サーバー** フィールドで、SMTP サーバーまたは電子メールサービスの FQDN または IP アドレスを入力します。
 1. **SMTP ポート番号**フィールドで、ポート番号を入力します。 (Secure Sockets Layer \[SSL\] を使用しない場合、既定のポート番号は **25** になります。)
 1. 認証が必要な場合は、**ユーザー名**および**パスワード** フィールドに値を入力します。
@@ -92,8 +89,8 @@ ms.locfileid: "3057743"
 
 電子メールを送信する各トランザクション イベントに関しては、有効な送信者の電子メール アドレスで電子メール テンプレートを更新する必要があります。
 
-1. コマースにサインインします。
-1. 左側にあるメニューを使用して、**モジュール \> 組織管理者 \> 設定 \> 組織の電子メール テンプレート**の順に移動します。
+1. コマースの本部にサイン インします。
+1. 左側のメニューを使用して、**モジュール  \>  小売とコマース \> 本部の設定 \> パラメーター \> 組織のメール テンプレート**に移動します。
 1. **リストを表示**を選択します。
 1. リストの各テンプレートに関しては、次のステップを実行します。
 
@@ -104,9 +101,9 @@ ms.locfileid: "3057743"
 
 ## <a name="customize-email-templates"></a>電子メール テンプレートのカスタマイズ
 
-電子メール テンプレートをカスタマイズして、異なる画像を使用するようにできます。 またはテンプレートのリンクを更新して、プレビュー環境に移動することもできます。 この手順では、既定のテンプレートをダウンロードし、システムのテンプレートを更新する方法について説明します。
+電子メール テンプレートをカスタマイズして、異なる画像を使用するようにできます。 またはテンプレートのリンクを更新して、評価環境に移動することも可能です。 この手順では、既定のテンプレートをダウンロードし、システムのテンプレートを更新する方法について説明します。
 
-1. Web ブラウザーで、[Microsoft Dynamics 365 Commerce プレビューの既定の電子メール アドレス テンプレート ZIP ファイル](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) をローカル コンピューターにダウンロードします。 このファイルには、次の HTML ドキュメントが含まれます。
+1. Web ブラウザーで、[Microsoft Dynamics 365 Commerce 評価版既定の電子メール アドレス テンプレート ZIP ファイル](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) をローカル コンピューターにダウンロードします。 このファイルには、次の HTML ドキュメントが含まれます。
 
     - 注文確認モジュール テンプレート
     - ギフト カード テンプレートの発行
@@ -173,13 +170,15 @@ ms.locfileid: "3057743"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics 365 Commerce プレビュー環境の概要](cpe-overview.md)
+[Dynamics 365 Commerce 評価環境の概要](cpe-overview.md)
 
-[Dynamics 365 Commerce プレビュー環境のプロビジョニング](provisioning-guide.md)
+[Dynamics 365 Commerce 評価環境をプロビジョニングする](provisioning-guide.md)
 
-[Dynamics 365 Commerce レビュー環境のコンフィギュレーション](cpe-post-provisioning.md)
+[Dynamics 365 Commerce の評価環境を構成する](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce プレビュー環境に関するよく寄せられる質問](cpe-faq.md)
+[Dynamics 365 Commerce 評価環境で BOPIS を構成する](cpe-bopis.md)
+
+[Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
