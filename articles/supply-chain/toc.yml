@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.13 (2020 年 10 月)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (2020 年 8 月)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (2020 年 7 月)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (2020 年 5 月)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
@@ -109,23 +109,23 @@
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 業務意志決定者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ビジネス ユーザー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: 実装プロジェクト マネージャー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: 管理者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: 開発者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: パートナー販売とマーケティング
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: 機能コンサルタント
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: ソリューション アーキテクト
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: ユーザー インターフェイスの操作
               items:
                 - name: ユーザー インターフェイスの要素
@@ -1257,6 +1257,8 @@
               items:
                 - name: 在庫仕訳帳
                   href: inventory/inventory-journals.md
+                - name: 在庫仕訳帳の承認ワークフロー
+                  href: inventory/inventory-journal-workflow.md
                 - name: 在庫場所
                   href: inventory/inventory-locations.md
                 - name: 在庫状態
@@ -1267,6 +1269,8 @@
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: 有効在庫数の確認
                   href: inventory/tasks/check-availability-stock.md
+                - name: 手持在庫一覧
+                  href: inventory/inventory-on-hand-list.md
                 - name: 倉庫の在庫レベルの初期化
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: 倉庫内の現物在庫の移動
@@ -1951,7 +1955,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: 工順と工程
                       href: production-control/routes-operations.md
-                    - name: 倉庫作業ポリシー
+                    - name: 作業ポリシー
                       href: warehousing/warehouse-work-policies.md
                     - name: 作業時間スケジューリング プロパティの作成
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: 場所の製品分析コードの混在
                   href: warehousing/location-product-dimension-mixing.md
+                - name: 品質チェック
+                  href: warehousing/quality-check.md
             - name: 出庫倉庫操作
               items:
                 - name: 倉庫管理での引当
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: ゾーンしきい値の補充
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: 場所の能力を超える補充
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: 建物と出荷の読み込み
                   items:
                     - name: 確認および転送
                       href: warehousing/confirm-and-transfer.md
+                    - name: バッチ ジョブからの出荷の確認
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: ウェーブ中の高度な積荷構築
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: 倉庫ルールにリリース
@@ -2679,10 +2689,8 @@
               items:
                 - name: 倉庫作業ポリシー
                   items:
-                    - name: 倉庫作業ポリシーの概要
+                    - name: 作業ポリシー
                       href: warehousing/warehouse-work-policies.md
-                    - name: 倉庫作業ポリシーの設定
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: 倉庫管理における作業が関連付けられている在庫の移動
                       href: warehousing/move-inventory-associated-work.md
                     - name: 作業クラスの作成

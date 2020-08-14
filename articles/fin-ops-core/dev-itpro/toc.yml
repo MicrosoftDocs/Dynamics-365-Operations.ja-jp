@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)
@@ -82,6 +84,8 @@
           items:
             - name: データ統合方法 (インポート/エクスポート) の選択
               href: data-entities/integration-overview.md
+            - name: 優先順位に基づく調整
+              hreF: data-entities/priority-based-throttling.md
             - name: データ統合 API
               items:
                 - name: データ管理パッケージ REST API
@@ -152,6 +156,8 @@
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: 二重書き込み設定後に法人を編集する
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: エラー管理と警告通知
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: アプリケーション ライフサイクル管理
