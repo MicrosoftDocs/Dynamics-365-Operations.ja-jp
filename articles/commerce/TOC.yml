@@ -90,6 +90,8 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (2020 年 10 月)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020 年 8 月)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (2020 年 7 月)
@@ -127,23 +129,23 @@
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: 業務意志決定者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: ビジネス ユーザー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: 実装プロジェクト マネージャー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: 管理者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: 開発者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: パートナー販売とマーケティング
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: 機能コンサルタント
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: ソリューション アーキテクト
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: ユーザー インターフェイスの操作
               items:
                 - name: ユーザー インターフェイスの要素
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: 消費税コードの合計額と間隔計算オプション
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: 非課税の計算
+                          href: tax-exempt-price-inclusive.md
                     - name: 電子メール通知プロファイルの設定
                       href: email-notification-profiles.md
                     - name: 番号順序
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: POS 周辺機器およびサービスの正常性チェック
                           href: pos-healthcheck.md
+                        - name: ネットワーク周辺機器のサポート
+                          href: dev-itpro/network-peripherals.md
                     - name: 画面レイアウト
                       items:
                         - name: MPOS/CPOS のデモ データ画面レイアウト
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: タブ モジュール
                       href: add-tab.md
+                    - name: iframe モジュール
+                      href: iframe-module.md
                 - name: マーケティング モジュール
                   items:
                     - name: プロモーション バナー モジュール
@@ -968,6 +976,8 @@
                   items:
                     - name: 購入ボックス モジュール
                       href: add-buy-box.md
+                    - name: メディア ギャラリー モジュール
+                      href: media-gallery-module.md
                     - name: 評価およびレビュー モジュール
                       href: ratings-reviews-modules.md
                 - name: 購買モジュール
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: 注文詳細のモジュール
                       href: order-confirmation-module.md
-                    - name: 店舗セレクター モジュール
-                      href: store-selector.md
                     - name: ギフト カード モジュール
                       href: add-giftcard.md
+                - name: 店舗ファインダー モジュール
+                  items:
+                    - name: 地図モジュール
+                      href: map-module.md
+                    - name: 店舗セレクター モジュール
+                      href: store-selector.md
                 - name: アカウント管理モジュール
                   items:
                     - name: アカウント管理ページとモジュール
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: プレビュー モジュールとデバッグ モジュール
                       href: e-commerce-extensibility/test-module.md
-                    - name: モックを使用したテスト モジュール
+                    - name: モジュール モックを使用したテスト モジュール
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: ページ モックを使用したテスト モジュール
                       href: e-commerce-extensibility/test-page-mock.md
