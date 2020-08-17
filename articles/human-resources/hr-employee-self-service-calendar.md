@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429661"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628432"
 ---
 # <a name="view-team-and-company-calendars"></a>チームおよび会社のカレンダーの表示
 
@@ -33,15 +33,13 @@ Dynamics 365 Human Resources でチームおよび会社のカレンダーを表
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>チーム カレンダーを従業員として表示する
 
-1. **従業員セルフサービス** ワークスペースで、**自分のチーム**を選択します。
-
-2. **休暇**を選択してから、**チーム カレンダーの表示**を選択します。
+1. **従業員セルフサービス**ワークスペースで、**概要**配下の**チーム休暇カレンダー**を選択します。
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>チーム カレンダーをマネージャーとして表示する
 
 1. **従業員セルフサービス** ワークスペースで、**自分のチーム**を選択します。
 
-2. **休暇**を選択してから、**チーム カレンダーの表示**を選択します。
+2. **休暇**を選択し、**休暇管理カレンダーの表示**を選択します。
 
 マネージャーは、**自分のチームの保留中の休暇リクエスト**、**承認済休暇**、および **休暇申請** からチーム カレンダーにアクセスすることもできます。 
 

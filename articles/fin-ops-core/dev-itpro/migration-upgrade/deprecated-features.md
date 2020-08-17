@@ -3,7 +3,7 @@ title: 以前のリリースの削除済みまたは非推奨の機能
 description: このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500415"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645392"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -62,7 +62,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい |
 | **影響を受ける製品領域**         | 申請 |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨: 2020 年 4 月 1 日までに、開発者は新しい API を使用する必要があります。 |
+| **ステータス**                         | 非推奨 : 開発者は 2020年4月1日までに、クラス **HasFunction** にあるプラットフォーム API を使用する必要があります。 |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
 
@@ -72,7 +72,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **別の機能で置き換えられているか?**   | はい |
 | **影響を受ける製品領域**         | プラットフォーム |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨: 2020 年 4 月 1 日までに、開発者は新しい API を使用する必要があります。 |
+| **ステータス**                         | 非推奨 : 開発者は 2020年4月1日までに、クラス **HasFunction** にあるプラットフォーム API を使用する必要があります。 |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()

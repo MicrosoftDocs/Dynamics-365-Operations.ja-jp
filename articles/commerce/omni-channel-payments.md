@@ -3,7 +3,7 @@ title: オムニ チャネル支払の概要
 description: このトピックでは、Dynamics 365 Commerce でのオムニ チャネルの支払概要を示します。
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023220"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613180"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 
@@ -68,11 +68,13 @@ ms.locfileid: "3023220"
 
 - **E コマースの統合:** Commerce との統合は、注文がオンライン店舗で発生するシナリオをサポートするために必要です。 小売の電子商取引 SDK の詳細は[電子商取引プラットフォーム ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。 デモ環境では、参照ストアがオムニ チャネル支払のシナリオをサポートします。 
 - **オンライン支払構成:** オンライン チャネルの設定には、オムニ チャネル支払をサポートするように、更新された支払コネクタを含める必要があります。 代わりに、直ぐに使える支払コネクタを使用することができます。 オンライン ストアの Adyen 支払コネクタを構成する方法については [Adyen 支払コネクタ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 そのトピックで説明されている電子商取引の設定に加えて、**電子商取引で支払情報の保存を許可する**パラメーターでは、Adyen コネクタの設定で **True** と設定する必要があります。 
-- **オムニ チャネルの支払コンフィギュレーション:** バック オフィスで **Retail および Commerce\>Headquarters の設定 \>パラメーター \>Commerce 共有パラメーター**の順に移動します。 次に **オムニ チャネルの支払** タブで **オムニ チャネルの支払を使用する** オプションを **はい** に設定します。
+- **オムニ チャネルの支払コンフィギュレーション:** バック オフィスで **Retail および Commerce\>Headquarters の設定 \>パラメーター \>Commerce 共有パラメーター**の順に移動します。 次に **オムニ チャネルの支払** タブで **オムニ チャネルの支払を使用する** オプションを **はい** に設定します。 Commerce のバージョン 10.0.12 では、この設定は **機能管理** ワークスペースにあります。 **オムニ チャネル支払** 機能を選択して、**今すぐ有効にする** をクリックします。 
 - **支払サービス:** コールセンターでは、**支払サービス**ページの既定の支払コネクタを使用して支払を処理します。 「コールセンターで購入」や「店舗で受取り」などのシナリオをサポートするには、この既定の支払コネクタは、オムニ チャネル支払に向けた実装要望を満たす Adyen 支払コネクタまたはオムニ チャネル支払である必要があります。
 - **EFT サービス:** 支払ターミナルを通じた支払は、ハードウェア プロファイルの **EFT サービス** FastTab で設定する必要があります。 Adyen コネクタでは、そのままオムニ チャネル支払のシナリオがサポートされています。 **INamedRequestHandler** インターフェイスをサポートする他の支払コネクタは、オムニ チャネル支払をサポートする場合にも使用できます。
 - **支払コネクタの使用可能性:** 注文が取り消されると、支払い入札明細では、その注文に関連付けられている承認の作成に使用された支払コネクタの名前が注文と共に取り消されます。 注文が満たされると、支払 SDK は、元の承認の作成に使用されたものと同じコネクタを使おうとします。 したがって、同じ商社プロパティを持つ支払コネクタはキャプチャ可能でなければなりません。 
 - **カード タイプ:** オムニ チャネルのシナリオが正常に機能するには、各チャネルで、オムニ チャネルに使用できる支払/入金タイプについて同じ設定を行う必要があります。 この設定には、支払方法 ID とカードタイプ ID が含まれます。 たとえば、オンライン店舗設定で**カード**支払/入金タイプが **2** の ID である場合、小売用店舗設定で同じ ID を使用する必要があります。 同じ要件が、カードタイプ ID にも適用されます。 カード番号 **12** がオンライン店舗で **VISA** に設定されている場合、小売店舗に対して同じ ID が設定されている必要があります。 
+- 組み込みハードウェア ステーションを含む Windows または Android 用  Retail Modern POS   または-
+- 共有ハードウェア ステーションが接続されている iOS またはクラウド POS のモダン POS。 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>オムニ チャネル支払をサポートする基本原則
 
@@ -100,8 +102,10 @@ ms.locfileid: "3023220"
 始める前に、次の条件が満たされていることを確認します。
 
 - Adyen コネクタがコンフィギュレーションされている参照ストアがあります。
-- **Commerce 共有パラメーター**ページの**オムニ チャネル支払**オプションを、**True** に設定します。
+- **Commerce 共有パラメーター**ページの**オムニ チャネル支払**オプションを、**True** に設定します。 それ以降のバージョンでは、この設定が **フィーチャー管理** ワークスペースに移動され、**オムニ チャネル支払** 機能を選択して、**今すぐ有効にする** をクリックできるようになっています。 
 - ヒューストンの POS レジスターに対して、Adyen 支払コネクタがコンフィギュレーションされています。
+- 組み込みハードウェア ステーションを含む Windows または Android 用  Retail Modern POS   または-
+- 共有ハードウェア ステーションが接続されている iOS またはクラウド POS のモダン POS。 
 
 次の手順に従い、シナリオを実行します。
 
@@ -229,3 +233,5 @@ ms.locfileid: "3023220"
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Dynamics 365 Commerce 評価環境で BOPIS を構成する](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

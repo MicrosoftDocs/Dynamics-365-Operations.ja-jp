@@ -3,7 +3,7 @@ title: Common Data Service 統合のコンフィギュレーション
 description: Common Data Service と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示し、追跡データをクリアし、エンティティを再同期して、2 つの環境間のデータ問題のトラブルシューティングに役立てることもできます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431317"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621307"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service 統合のコンフィギュレーション
 
@@ -66,6 +66,9 @@ Common Data Service と Dynamics 365 Human Resources の統合を有効化また
 - 統合を無効にするには、オプションを **いいえ** に設定します。
 
 [![Common Data Service 統合を有効化または無効化](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> データ移行タスクの実行中は、 Common Data Service 統合をオフにすることを強くお勧めします。 大規模なデータのアップロードはパフォーマンスに大きな影響を与える可能性があります。 たとえば、2000 件の作業者をアップロードすると、統合が有効になっている場合には数時間かかりますが、無効になっている場合は1時間もかかりません。 この例で示している数値は、デモンストレーションの目的でのみ使用されます。 レコードのインポートにかかる正確な時間は、さまざまな要因によって多くの影響を受けます。
 
 ## <a name="view-data-integration-details"></a>データ統合の詳細を表示
 

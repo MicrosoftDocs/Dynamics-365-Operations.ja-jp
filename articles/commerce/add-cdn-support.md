@@ -3,7 +3,7 @@ title: コンテンツ配信ネットワーク (CDN) のサポートの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce 環境にコンテンツ配信ネットワーク (CDN) を追加する方法について説明します。
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533347"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646042"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -35,7 +35,7 @@ ms.locfileid: "3533347"
 
 Dynamics 365 Commerce の E コマース環境を設定すると、CDN サービスと連携するようにコンフィギュレーションできます。 
 
-カスタム ドメインは、E コマース環境のプロビジョニング プロセス中に有効にできます。 また、プロビジョニング プロセスが完了した後に、サービス要求を使用して設定することもできます。 E コマース環境のプロビジョニング プロセスでは、環境に関連付けられたホスト名が生成されます。 このホスト名の形式は次のとおりです。*e-commerce-tenant-name* は、環境の名前です。
+カスタム ドメインは、E コマース環境のプロビジョニング プロセス中に有効にできます。 また、プロビジョニング プロセスが完了した後に、サービス要求を使用して設定することもできます。 E コマース環境のプロビジョニング プロセスでは、環境に関連付けられたホスト名が生成されます。 \<*e-commerce-tenant-name*\> が環境の名称となっている場合、このホスト名の形式は次のとおりです :
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
@@ -65,7 +65,7 @@ SSL が設定され、その静的が確実にキャッシュされるように�
 CDN の設定プロセスは、次の一般的な手順で構成されています。
 
 1. フロント エンド ホストを追加します。
-1. バック エンド プールをコンフィギュレーションします。
+1. バック エンド プールを構成します。
 1. ルート指定とキャッシュのルールを設定します。
 
 ### <a name="add-a-front-end-host"></a>フロント エンド ホストを追加する
@@ -74,18 +74,20 @@ CDN の設定プロセスは、次の一般的な手順で構成されていま�
 
 Azure Front Door Service の設定方法の詳細については、[クイックスタート: 高可用性グローバル Web アプリケーションに対する Front Door を作成する](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door) を参照してください。
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Azure Front Door Service のバック エンド プールをコンフィギュレーションする
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Azure Front Door Service のバック エンド プールを構成する
 
-Azure Front Door Service のバック エンド プールをコンフィギュレーションするには、次の手順を実行します。
+Azure Front Door Service のバック エンド プールを構成するには、次の手順を実行してください。
 
-1. **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** を、バック エンド ホスト ヘッダーが空であるカスタム ホストとして、バック エンド プールに追加します。
-1. **正常性プローブ**の下の、**パス** フィールドに、**/keepalive** と入力します。
-1. **間隔 (秒)** フィールドに、**255** と入力します。
+1. **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** を、空のバック エンド ホスト ヘッダーを持つカスタム ホストとして、バック エンド プールに追加します。
 1. **負荷分散**では、既定値のままにします。
 
-次の図は、Azure Front Door Service の**バックエンド プールの追加**ダイアログ ボックスを示します。
+次の図は、バック エンド ホスト名が入力された Azure Front Door Service の**バックエンドの追加**ダイアログ ボックスを示します。
 
 ![バックエンド プール ダイアログ ボックスを追加する](./media/CDN_BackendPool.png)
+
+次の図は、既定の負荷分散値が入力された Azure Front Door Service の**バックエンド プール の追加**ダイアログ ボックスを示します。
+
+![バックエンド プールのダイアログ ボックスを継続して追加する](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Azure Front Door Service でルールを設定する
 
@@ -121,20 +123,22 @@ Azure Front Door Service でキャッシュ ルールを設定するには、次
 
 ![ルールの追加ダイアログ ボックス](./media/CDN_CachingRule.png)
 
-この初期コンフィギュレーションを展開した後、Azure Front Door Service のコンフィギュレーションにカスタム ドメインを追加する必要があります。 カスタム ドメイン (たとえば、`www.fabrikam.com`) を追加するには、ドメインの正規名 (CNAME) をコンフィギュレーションする必要があります。
+> [!WARNING]
+> 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート**タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
+
+ご利用のドメインが新しく、かつ既存のドメインではない場合は、Azure Front Door Service の構成にカスタム ドメインを追加することができます。 これにより、web トラフィックが Azure Front Door インスタンスを介してサイトに誘導されるようになります。 カスタム ドメイン (たとえば、`www.fabrikam.com`) を追加するには、ドメインの正規名 (CNAME) をコンフィギュレーションする必要があります。
 
 次の図は、Azure Front Door Service の**CNAME コンフィギュレーション** ダイアログ ボックスを示します。
 
 ![CNAME コンフィギュレーション ダイアログ ボックス](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> 使用するドメインが既にアクティブで稼働している場合、Azure Front Door Service でこのドメインを有効にしてテストを設定するよう、サポートにお問い合わせください。
 
 Azure Front Door Service を使用して証明書を管理したり、カスタム ドメインに対して独自の証明書を使用したりできます。
 
 次の図は、Azure Front Door Service の**カスタム ドメイン HTTPS** ダイアログ ボックスを示します。
 
 ![カスタム ドメイン HTTPS ダイアログ ボックス](./media/Custom_Domain_HTTPS.png)
+
+Azure Front Door にカスタムドメインを追加する方法の詳細については、[フロント ドアにカスタム ドメインを追加する](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain)を参照してください。
 
 これにより、CDN を正しくコンフィギュレーションして、コマース サイトで使用できるようになります。
 

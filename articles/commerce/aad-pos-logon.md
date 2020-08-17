@@ -3,7 +3,7 @@ title: POS サインインの Azure Active Directory 認証を有効にする
 description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) のサインイン エクスペリエンスを構成して、Azure Active Directory 認証を使用できるようにする方法について説明します。
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410038"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641036"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>POS サインインの Azure Active Directory 認証を有効にする
 [!include [banner](includes/banner.md)]
@@ -63,6 +63,9 @@ Azure AD アカウントを作業者に関連付けるには、次の手順に�
 1. 返された Azure AD アカウントをを選択し、**OK** を選択します。
 
 **Commerce** タブの**エイリアス**、**UPN**、および**外部サブ ID** フィールドが入力されます。
+
+> [!NOTE]
+> 従業員レコードが更新された後は、たとえば、新しい Azure AD のアカウントが関連付けられている場合、パスワードが変更された場合、または従業員のアドレス帳が更新された場合は、**1060** **(スタッフ)** 配送スケジュールを実行して、最新のスタッフ情報をチャンネルに同期することをお勧めします。 このようにして、POS アプリケーションはユーザーの認証および承認のチェックに使用する正しいデータを取得できます。
 
 ## <a name="additional-resources"></a>追加リソース
 

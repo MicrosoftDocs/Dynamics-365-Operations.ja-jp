@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606825"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651669"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -38,8 +38,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
 
 > [!NOTE]
-> バージョン 10.0.13 はまだリリースされていません。 この情報は計画目的のために提供されています。 バージョン 10.0.13 のコンテンツと機能は、変更されることがあります。 このリリースの詳細については、[ご利用いただけるサービス更新プログラム](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
-
+> バージョン 10.0.13 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>3 つの jQuery コンポーネント ライブラリのアップグレード 
 
@@ -50,6 +49,27 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **影響を受ける製品領域**         | 拡張可能なコントロール、特に廃止または削除された Api を使用したカスタム JavaScript コード |
 | **配置オプション**              | すべて |
 | **ステータス**                         | バージョン 10.0.13/プラットフォーム アップデート 37を使用すると、必要に応じて "3 つの jQuery コンポーネント ライブラリをアップグレードする" 機能を有効にして、最新のライブラリに移動することができます。 影響を受ける API の移行時間を確保するために、2021 年 4 月のリリースでは、新しいライブラリへの移動が必須となります。   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>既存のグリッドコントロール/forceLegacyGrid () API
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 既存のグリッドコントロールは、新しいグリッドコントロールに置き換えられます。 |
+| **別の機能で置き換えられているか?**   | [新しいグリッド コントロール](../..//fin-ops/get-started/grid-capabilities.md) |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **ステータス**                         | バージョン 10.0.13 では、新しいグリッド コントロールが一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 新しいグリッド コントロールは、2021 年 10 月リリースで必須になります。 この新しいグリッド コントロールが必須化される場合、**forceLegacyGrid()** API は尊重されません。 |
+
+### <a name="personalization-without-saved-views"></a>保存されていないビューのないパーソナル化 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | パーソナル化サブシステムは、ビューの保存機能にオーバーホールされているので、パフォーマンスが向上し、追加機能を提供します。 |
+| **別の機能で置き換えられているか?**   | 保存されているビュー |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **ステータス**                         | バージョン 10.0.13/プラットフォーム更新プログラム 37では、ビューの保存機能は一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 この保存されたビュー機能は、2021 年 10 月リリースで必須になります。 |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.12 に対する Platform update
 

@@ -3,7 +3,7 @@ title: 与信管理パラメーターの設定
 description: このトピックでは、業務要件を満たすよう与信管理をコンフィギュレーションするために使用できるオプションについて説明します。
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154531"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651908"
 ---
 # <a name="credit-management-parameters-setup"></a>与信管理パラメーターの設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "3154531"
 
 ### <a name="credit-holds"></a>与信保留
 
-- 販売注文が保留中の一覧からリリースされた後に販売注文の値 (拡張価格) が変更された場合に転記ルールを再度チェックするように要求するには、**注文保留の後、販売注文の値を編集できるようにする**のオプションを**はい**に設定します。 .
+- 販売注文が保留中の一覧からリリースされた後に販売注文の値 (拡張価格) が増額された場合に転記ルールを再度チェックするように要求するには、**注文保留の後、販売注文の値を編集できるようにする**のオプションを**いいえ**に設定します。 .
 - **キャンセルされた注文の理由**フィールドで、与信管理の保留時に販売注文がキャンセルされたときに既定で使用されるリリースの理由を選択します。
 - **顧客与信グループの与信限度額を確認**のオプションを**はい**に設定して、販売注文の顧客が顧客与信グループに属している場合に、顧客与信グループの与信限度額を確認します。 グループの与信限度額がチェックされ、その値が十分であれば、顧客の与信限度額が確認されます。
 - **支払条件が増加した場合に与信限度額を確認**のオプションを**はい**に設定して、顧客向け既定値の支払条件が販売注文の支払条件と異なるかどうかを判断するために、支払条件のランキングを確認します。 新しい支払条件のランクが元の支払条件よりも高い場合は、注文は与信管理保留になります。
