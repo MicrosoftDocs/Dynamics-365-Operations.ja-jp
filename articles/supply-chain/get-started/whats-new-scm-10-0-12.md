@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fd64a4ea53976293a6ff484a370d7804bf6c724f
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 22ebe1640f17163351b63710534052ce3d810986
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3542127"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652062"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Management 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.12 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.507 のビルド番号が含まれており、次のように使用できます。
 
@@ -39,15 +38,15 @@ ms.locfileid: "3542127"
 
 このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [ジョブ カードのタッチスクリーンをサニタイズ用にロックすることを許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) -詳細については、[デバイスのジョブ カードの構成](../production-control/config-job-card-device.md) を参照してください。
-- [積荷品目入庫中に倉庫アプリで製品バリアントと追跡分析コードをキャプチャする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) - 詳細については、[倉庫作業用のモバイル デバイスの設定](../warehousing/configure-mobile-devices-warehouse.md) を参照してください。
-- 原価計算レベル (新しいBOMレベル) - 詳細については、[原価計算レベル](../cost-management/cost-calculation-level.md) を参照してください。
-- [Dynamics 365 Supply Chain Management の顧客ポータル ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) - 詳細については、[Dynamics 365 Supply Chain Management の概要](../sales-marketing/customer-portal-overview.md) を参照してください。
-- [IoT インテリジェンス コア インサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) - 詳細については、[IoT インテリジェンスのホーム ページ](../iot/iot-intelligence-home-page.md) を参照してください。
-- [倉庫アプリのライセンス プレート受取の機能拡張 (継続)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - 詳細については、[倉庫アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
-- [Warehouse Mobile App の一括配置](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) - 詳細については、[倉庫アプリのインストールと構成の概要](../warehousing/install-configure-warehousing-app.md) を参照してください。
-- [倉庫管理の手持在庫エントリのクリーン アップ ジョブの最大実行時間 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) - 詳細については、[倉庫管理の手持在庫エントリのクリーン アップ ジョブ](../warehousing/onhand-cleanup.md) を参照してください。
-- [購買の売買契約の最適化サポート計画 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) - 詳細については、[購買の売買契約を使ったマスター プラン](../master-planning/planning-optimization/purchase-trade-agreement.md) を参照してください。
+- [ジョブ カードのタッチスクリーンをサニタイズ用にロックすることを許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - 詳細については、[デバイスのジョブ カードの構成](../production-control/config-job-card-device.md)を参照してください。
+- [積荷品目入庫中に倉庫アプリで製品バリアントと追跡分析コードをキャプチャする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - 詳細については、[倉庫作業用のモバイル デバイスの設定](../warehousing/configure-mobile-devices-warehouse.md)を参照してください。
+- 原価計算レベル (新しいBOMレベル)<br> - 詳細については、[原価計算レベル](../cost-management/cost-calculation-level.md)を参照してください。
+- [Dynamics 365 Supply Chain Management の顧客ポータル](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - 詳細については、[Dynamics 365 Supply Chain Management の顧客ポータルのの概要](../sales-marketing/customer-portal-overview.md)を参照してください。
+- [IoT インテリジェンス コア インサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - 詳細については、[IoT インテリジェンスのホーム ページ](../iot/iot-intelligence-home-page.md)を参照してください。
+- [倉庫アプリのライセンス プレート受取の機能拡張 (継続)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - 詳細については、[倉庫アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
+- [Warehouse Mobile App の一括配置](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - 詳細については、[倉庫アプリのインストールと構成の概要](../warehousing/install-configure-warehousing-app.md)を参照してください。
+- [倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - 詳細については、[倉庫管理の手持在庫エントリのクリーンアップ ジョブ](../warehousing/onhand-cleanup.md)を参照してください。
+- [購買の売買契約の最適化サポート計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - 詳細については、[購買の売買契約を使ったマスター プラン](../master-planning/planning-optimization/purchase-trade-agreement.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546443"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640402"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>倉庫フローのシーケンス番号を構成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "3546443"
 - 船荷証券 (BOL) ID は事前に生成できます。
 - シリアル出荷コンテナ コード (SSCC) 番号に対して固有のシーケンス番号を生成できます。
 - GS1準拠のシーケンス番号は、BOL と SSCC 番号に対して作成できます。 この機能では、ライセンス プレート ID、コンテナ ID、ウェーブ ラベル ID、BOL ID に対して、既成の対応が追加されています。
-- ライセンス プレートの ID 番号の構成は柔軟に行うことができます。 たとえば、先行するゼロ (00) などの人工知能 (AI) を含めたり、除外することができます。
+- ライセンス プレートの ID 番号の構成は柔軟に行うことができます。 たとえば、先行するゼロ (00) などのアプリケーションの識別子 (AI) を含めたり、除外することができます。
 
 この機能により、カートンのラベル付けに対応し、システムが生成する新しい番号の調整がより効率的になります。
 

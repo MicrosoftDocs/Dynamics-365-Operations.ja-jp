@@ -1,7 +1,7 @@
 ---
 title: 支払方法
 description: 小売業者が受け入れる各支払タイプは、システムの設定時にコンフィギュレーションする必要があります。 この記事では、設定可能な支払タイプおよびその設定方法について説明します。
-author: sericks007
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/17/2020
 ms.topic: article
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
-ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
+ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3463163"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641012"
 ---
 # <a name="payment-methods"></a>支払方法
 

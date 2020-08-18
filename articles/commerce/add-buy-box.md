@@ -3,7 +3,7 @@ title: 購入ボックス モジュール
 description: このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411345"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645342"
 ---
 # <a name="buy-box-module"></a>購入ボックス モジュール
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "3411345"
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>購入用ボックス モジュールで使用できるモジュール
 
-- **メディア ギャラリー** – このモジュールは、製品の詳細ページに製品の画像を表示するために使用されます。 一対多の画像をサポートできます。 サムネイル画像もサポートします。 サムネイル画像は、水平方向 (画像の下の行) または垂直方向 (画像の横の列) のいずれかに配置できます。 メディア ギャラリー モジュールは、購入ボックス モジュールの**メディア** スロットに追加できます。 現在、画像のみをサポートしています。 
+- **メディア ギャラリー** – このモジュールは、製品の詳細ページに製品の画像を表示するために使用されます。 このモジュールの詳細については、[メディア ギャラリー モジュール](mediagallery-module.md) を参照してください 。
 - **ストア セレクタ―** – このモジュールでは、品目の受け取り可能な近隣店舗の一覧を表示します。 これにより、ユーザーは場所を入力して、近隣にある店舗を見つけることができます。 このモジュールの詳細については、[店舗セレクタ モジュール](store-selector.md) を参照してください 。
 
 ## <a name="buy-box-module-settings"></a>購入ボックス モジュール設定
@@ -111,6 +111,8 @@ ms.locfileid: "3411345"
 [スタート キットの概要](starter-kit-overview.md)
 
 [店舗セレクター モジュール](store-selector.md)
+
+[メディア ギャラリー モジュール](media-gallery-module.md)
 
 [コンテナー モジュール](add-container-module.md)
 

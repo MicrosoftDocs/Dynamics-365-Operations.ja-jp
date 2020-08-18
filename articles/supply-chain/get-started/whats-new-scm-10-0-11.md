@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0d5265079dd96b272d13b30436b83b94bdb7297f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: fa67cdc7ad07c1384c4a0bad453447a464adf144
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530285"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652086"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Dynamics 365 Supply Chain Management 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
@@ -39,11 +39,11 @@ ms.locfileid: "3530285"
 このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 - [手持在庫レポート ストレージ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [倉庫アプリのライセンス プレート受取の拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - 詳細については、[倉庫アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
-- [バッチ番号引当フォームの明細行の引当機能拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - 詳細については、[販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md) を参照してください
+- [倉庫アプリのライセンス プレート受取の機能拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - 詳細については、[倉庫アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
+- [バッチ番号引当フォームの明細行の引当機能拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - 詳細については、[販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md)を参照してください。
 - [製造領域の新しいデータ エンティティ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [積荷数量の受入超過](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - 詳細については、[発注書に対する入庫積荷の倉庫処理](../warehousing/inbound-load-handling.md) を参照してください。
-- [ジョブ カード デバイスからのバッチ番号における完了報告 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) -詳細については、[ジョブ カード デバイスからの完了報告](../production-control/report-finished-job-device.md) を参照してください
+- [積荷数量の入荷](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - 詳細については、[発注書に対する入庫積荷の倉庫処理](../warehousing/inbound-load-handling.md)を参照してください。
+- [ジョブ カード デバイスからのバッチ番号に関する完了レポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - 詳細については、[ジョブ カード デバイスからの完了レポート](../production-control/report-finished-job-device.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

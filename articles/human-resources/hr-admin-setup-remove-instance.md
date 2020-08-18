@@ -3,7 +3,7 @@ title: インスタンスの削除
 description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431202"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621383"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
 
@@ -67,8 +67,21 @@ ms.locfileid: "3431202"
 1. サポートに連絡し、削除要求を開始してください。
 2. サポート チームは、人事管理チームの削除リクエストを開始します。 
 3. 環境が削除されたという知らせを受けた後に続行してください。
-4.  人事管理をサブスクライブするために使用したアカウントを使用して LCS にサイン インします。 
+4. 人事管理をサブスクライブするために使用したアカウントを使用して LCS にサイン インします。 
 5. 環境を含む人事管理プロジェクトを選択します。 
 6. LCS プロジェクトでは、**人事管理アプリの管理**タイルを選択します。 
 7. 削除するインスタンスを選択します。そのさい、配置ステータスが **失敗** とマークされている必要があります。
 8. **インスタンスの削除**を選択して決定内容を確認します。 
+
+## <a name="recover-a-soft-deleted-environment"></a>論理削除された環境を復旧する
+
+人事環境に接続されている Power Apps 環境を削除すると、Lifecycle Services の人事管理環境の状態が **論理削除** になります。 この場合、ユーザーは人事に接続することはできません。
+
+環境を復元するには、次の操作を行います :
+
+1. [Power Apps 環境の復旧](/power-platform/admin/recover-environment.md)の指示に従います。
+
+2. 管理者に連絡して、人事環境を復元してください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
+
+> [!Warning]
+> Power Apps 環境は、削除後の 7 日間のみ保存されています。 この 7 日の期間内に環境を復旧する必要があります。
