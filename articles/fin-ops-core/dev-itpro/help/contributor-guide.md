@@ -95,7 +95,7 @@ Microsoft リポジトリは公開されているため、コンテンツを入�
 
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)  
 [ドキュメント寄稿者ガイド](/contribute/)  
-[Visual Studio コード用のドキュメント作成パック](/contribute/how-to-write-docs-auth-pack)  
+[Visual Studio Code 用 Docs Authoring Pack](/contribute/how-to-write-docs-auth-pack)  
 [GitHub での記述とフォーマットの概要](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
