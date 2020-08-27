@@ -3,7 +3,7 @@ title: Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、任意の Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 3f36b0283bdb9606f769dbc031bc7875658e0392
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: c18efb796111ab6109eba3d848fae5007945e32b
+ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527457"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "3577430"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 
@@ -161,10 +161,12 @@ ms.locfileid: "3527457"
 | PreCreatePackingSlipTrigger   | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされる前に実行されます。|
 | PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
 | PostReturnInvoicedSalesLinesTrigger   | キャンセル不可     | 返品対象として 1 つ以上の請求書が選択された後に実行されます。|
+| PreResendEmailReceiptTrigger (10.0.13)    | 解約可能     | 仕訳帳ビューを表示から電子メールを送信する前に実行されます。|
+
 
 
 ## <a name="shift-triggers"></a>シフト トリガー
-| トリガー              | 型           | 説明                                             |
+| トリガー              | 種類           | 説明                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |
 | PreCloseShiftTrigger | 解約可能 | このトリガーは、シフトが開かれる前に実行されます。 |
@@ -681,7 +683,7 @@ ms.locfileid: "3527457"
 10. **電子メール受信** プロファイルまたは保存するプロファイルを選択します。 **一般**タブの**追加**ボタンをクリックします。
 11. **受領書タイプ**で、**CustomReceiptType7** を選択し、**受領書フォーマット**で**中断**を選択します。
 12. **Retail とコマース > Retail とコマース IT > 配送スケジュール**の順に移動します。
-13. **レジスター (1090)** を選択し、アクション バーで **今すぐ実行** をクリックします。 要求するメッセージが表示されたら、**はい** をクリックしてジョブを実行します。 
+13. **レジスター (1090)** を選択し、アクション バーで **今すぐ実行** をクリックします。 要求するメッセージが表示されたら、**はい**をクリックしてジョブを実行します。 
 
 ## <a name="configure-the-xps-printer-for-quick-testing"></a>クイック テスト用の XPS プリンタのコンフィギュレーション
 

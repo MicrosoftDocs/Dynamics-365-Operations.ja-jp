@@ -3,7 +3,7 @@ title: Finance and Operations および Common Data Service 管理リファレ�
 description: このトピックでは、Finance and Operations の仮想エンティティの設定およびコンフィギュレーションについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,23 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: f5486adaf89eb11da9a4b6532a1bb731abefb7fd
-ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
+ms.openlocfilehash: bedfe89e8ef9bdb7989abf2c81f76aa9640bcc68
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502479"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621209"
 ---
 # <a name="finance-and-operations-and-common-data-service-admin-reference"></a>Finance and Operations および Common Data Service 管理リファレンス
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Common Data Service のサービス更新プログラム 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能には、[Finance and Operations](../get-started/whats-new-platform-update-10-0-12.md) および Common Data Service の更新プログラム 189 のサービスが必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 このトピックでは、Common Data Service で Finance and Operations アプリの仮想エンティティを設定およびコンフィギュレーションする方法について手順を追って説明します。
 
 ## <a name="getting-the-solution"></a>ソリューションの入手
-Finance and Operations 仮想エンティティ Common Data Service ソリューションは、[仮想エンティティ ソリューション](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856)からダウンロードする必要があります。
+Finance and Operations 仮想エンティティの Common Data Service ソリューションは、Microsoft AppSource 仮想エンティティ ソリューションからダウンロードする必要があります。 詳細については、[Finance and Operations 仮想エンティティ](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity) を参照してください。
 
 次のソリューションが Common Data Service にインストールされていることを確認します。 これらのソリューションは、ダウンロードしたパッケージから抽出する必要があります。
 
@@ -43,8 +42,6 @@ Finance and Operations 仮想エンティティ Common Data Service ソリュー
 - **MicrosoftOperationsERPCatalog**: これは、mserp_financeandoperationsentity 仮想エンティティを通じて使用できる Finance and Operations エンティティの一覧を提供します。
 
 - **MicrosoftOperationsERPVE**: これは、表示されるときに生成された仮想エンティティを含む、API マネージド ソリューションです。
-
-また、[PackageDeployer ツール](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool)を使用して、Common Data Service でソリューション パッケージを単一の単位として直接インポートすることもできます。
 
 ## <a name="authentication-and-authorization"></a>認証と承認
 

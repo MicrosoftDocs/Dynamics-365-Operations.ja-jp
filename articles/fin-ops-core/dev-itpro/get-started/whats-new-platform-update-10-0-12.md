@@ -3,7 +3,7 @@ title: Finance and Operations アプリ バージョン 10.0.12 のプラット�
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7378e89d2becf725ed50961a751afbe0281d3fab
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: 11d15bfda2aad41a3b49c22851860a9600eb2e4e
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421621"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621292"
 ---
 # <a name="platform-updates-for-version-10012-of-finance-and-operations-apps-august-2020"></a>Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラム（2020 年 8 月）
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 (この更新プログラムは、*プラットフォーム更新プログラム 36* と呼ばれていました)。このバージョンには、ビルド番号 7.0.5688 が付与されており、次のスケジュールで利用できます:
 

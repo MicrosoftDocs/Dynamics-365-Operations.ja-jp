@@ -3,7 +3,7 @@ title: エンティティ モデリング
 description: このトピックでは、Finance and Operations エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/17/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,20 +15,21 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1caa6b569b46d1756e0809f64308db6e97176e48
-ms.sourcegitcommit: 7f3cec9d4a402db8a594b46ea36d6297e288cd79
+ms.openlocfilehash: 3326b9c4d99bc3f2d4f1bedc6220b1c2c61a950f
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3462518"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621422"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Common Data Service のサービス更新プログラム 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+
+> Finance and Operations 仮想エンティティの Common Data Service メタデータで公開されるパブリック エンティティ名は、Finance and Operations エンティティの物理名を使用します。 これは、Finance and Operations アプリの OData メタデータによって公開されるエンティティのパブリック名とは異なる場合があります。
 
 アプリを作成するには、アプリで使用されているエンティティの間でリレーショナル モデリングを実行する機能が必要です。 仮想エンティティのコンテキストでは、Common Data Service の仮想エンティティとネイティブ エンティティが連携して、目的のユーザー エクスペリエンスを実現する必要があります。 このトピックでは、Finance and Operations の仮想エンティティを使用して実装できるリレーショナル モデリングの概念について説明します。
 
@@ -147,7 +148,7 @@ Finance and Operations 仮想エンティティの一部が Common Data Service 
 フィールド マッピングは、仮想エンティティのフィールドが、ネイティブ エンティティのフィールドにマップされていることを示します。 フィールド マッピングでは、キーが仮想エンティティ フィールドである、値がネイティブ エンティティ フィールドです。
 
 ```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
     public static Map syntheticAccountRelationship()
     {
         Map fieldMapping = new Map(Types::String, Types::String);

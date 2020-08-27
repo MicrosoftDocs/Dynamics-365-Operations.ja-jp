@@ -3,7 +3,7 @@ title: 有効なバッチ期間における夏時間のサポート
 description: このトピックでは、有効なバッチ期間における夏時間のサポートに関する情報を提供します。
 author: karimelazzouni
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics365Operations
@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: kaelazzo
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: b3036774f9500c2b87ebae990eb847c08cbd2482
-ms.sourcegitcommit: beddfba095c23b3265f0004f5124c4e9dc6404cc
+ms.openlocfilehash: acc28fc4bd838d985519e5d533b7a363efc92789
+ms.sourcegitcommit: f0a45daf60ff0e41ac24de93351d43ec46117757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411943"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "3618652"
 ---
 # <a name="daylight-saving-time-support-for-active-batch-periods"></a>有効なバッチ期間における夏時間のサポート
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Finance バージョン 10.0.12 には、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)で有効にできる、**バッチ ジョブの有効期間における夏時間のサポート**機能が含まれています。 この機能を使用すると、[バッチ ジョブの有効な期間](activeperiod.md)における夏時間 (DST) のサポートが導入され、ユーザーはそれぞれの有効期間を異なるタイムゾーンに関連付けることができます。
 

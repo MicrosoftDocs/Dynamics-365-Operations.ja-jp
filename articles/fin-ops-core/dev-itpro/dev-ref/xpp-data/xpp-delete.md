@@ -1,6 +1,6 @@
 ---
 title: データの削除
-description: このトピックでは、X++ 言語での delete メソッドおよび doDelete メソッドについて説明します。
+description: このトピックでは、X++ 言語での delete および doDelete メソッドについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/16/2020
@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d6dd77ee266acf7872e22b90308fc0a746426288
-ms.sourcegitcommit: 4ba6817b7aa7735a291a021022b4c12c2de5f2eb
+ms.openlocfilehash: 47efbc4cedf28dfd5330899c8ecabcb2ca609fef
+ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3505949"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637830"
 ---
 # <a name="delete-data"></a>データの削除
 
 [!include [banner](../../includes/banner.md)]
 
-データベースに格納されているテーブルから一つまたは複数の行を削除するため、SQL ステートメントを対話的またはソース コード内で使用することができます。
+データベースに格納されているテーブルから 1 つまたは複数の行を削除するため、SQL ステートメントを対話的またはソース コード内で使用することができます。
 
 + **[delete メソッド](#delete-method)**: 一度に 1 行を削除します。
 + **[doDelete メソッド](#do-delete-method)**: 一度に 1 行を削除します。
-+ **[delete\_from ステートメント](#delete-from-statement)**: 複数の行を同時に削除します。 **delete\_from** ステートメントを使用することにより、アプリケーションとデータベース間の通信が減少するためパフォーマンスが向上します。 場合によっては、このセット ベース操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
++ **[delete\_from ステートメント](#delete-from-statement)**  – 複数の行を同時に削除します。 **delete\_from** ステートメントを使用することにより、アプリケーションとデータベース間の通信が減少します。 したがって、パフォーマンスの向上に役立ちます。 場合によっては、このセット ベース操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
 
 ## <a name="delete-method"></a><a id="delete-method"></a>delete メソッド
 
@@ -39,7 +39,7 @@ ms.locfileid: "3505949"
 
 **delete** メソッドは上書きすることができます。 たとえば、レコードが削除される前に、追加の検証を追加する場合があります。 **削除**方法をオーバーライドする場合、**doDelete** を呼び出すことで、**削除**メソッドの元の (ベース) バージョンを実行できます。 したがって、**doDelete** メソッドへの呼び出しは**delete** メソッドの **super()** への呼び出しに相当します。
 
-次の例では、**where** 句を満たす NameValuePair テーブル内のすべてのレコード (つまり、**名前**フィールドの値が **Name1** に等しいすべてのレコード) がデータベースから削除されます。 一度に 1 つのレコードが削除されます。
+次の例では、**where** 句を満たす NameValuePair テーブル内のすべてのレコード (つまり、**名前**フィールドの値が **Name1** と等しいすべてのレコード) がデータベースから削除されます。 一度に 1 つのレコードが削除されます。
 
 ```xpp
 ttsBegin;
@@ -53,7 +53,7 @@ ttsBegin;
 ttsCommit;
 ```
 
-次の例では、**LedgerJournalTrans** テーブルからレコードを削除し、関連付けられている番号順序を更新します。
+次の例では、LedgerJournalTrans テーブルからレコードを削除し、関連付けられている番号順序を更新します。
 
 ```xpp
 int counter = 0;
@@ -81,23 +81,23 @@ ttsCommit;
 
 ## <a name="dodelete-method"></a><a id="do-delete-method"></a>doDelete メソッド
 
-**delete** テーブル メソッドと同様に、**doDelete** テーブル メソッドは、データベースから現在のレコードを削除します。 **delete** テーブル メソッドがオーバーライドされていて、オーバーライドされているバージョンではなく **delete** メソッドの元の (基本) バージョンを実行する場合は **doDelete** メソッドを使用します。 したがって、**doDelete** メソッドへの呼び出しは**delete** メソッドの **super()** への呼び出しに相当します。
+**delete** テーブル メソッドと同様に、**doDelete** テーブル メソッドは、データベースから現在のレコードを削除します。 **delete** テーブル メソッドがオーバーライドされていて、オーバーライドされているバージョンではなく、そのメソッドの元の (ベース) バージョンを実行する場合は **doDelete** メソッドを使用します。 したがって、**doDelete** メソッドへの呼び出しは**delete** メソッドの **super()** への呼び出しに相当します。
 
 > [!WARNING]
-> **doDelete** の呼び出しは 、データベース イベント ハンドラー (たとえば **onDeleting** および **onDeleted**)、コマンド チェーン **onDelete()**、および **delete()** の呼び出し自体を含むすべてのロジックをスキップします。 一般に、**doDelete** を使用することは不適切なプラクティスと見なされ、お勧めできません。
+> **doDelete** を呼び出すと、データベース イベント ハンドラー (たとえば **onDeleting** および **onDeleted**)、コマンド チェーン  **onDelete()**、および **delete()** の呼び出し自体を含むすべてのロジックをスキップします。 一般に、**doDelete** を使用することは不適切なプラクティスと見なされており、使用することはお勧めしません。
 
 ## <a name="delete_from-statement"></a><a id="delete-from-statement"></a>delete\_from ステートメント
 
 **delete\_from** 演算子は、同時に複数のレコードを削除するレコード セット ベースの演算子です。 この方法は、一度に 1 つのレコードを削除するループで **delete** メソッドを使用する方法よりも効率的かつ高速になります。 **delete** メソッドをオーバーライドした場合、システムは削除される各行につき 1 回 **delete\_from** ステートメントを **delete** メソッドを呼び出すコードに解釈します。
 
-次の例では、**名前**列が **Name1** である **NameValuePair** テーブルのレコードをすべて削除します。
+次の例では、**名前**列の値が **Name1** である NameValuePair テーブルのすべてのレコードを削除します。
 
 ```xpp
 NameValuePair nameValuePair;
 delete_from nameValuePair where nameValuePair.Name == 'Name1';
 ```
 
-前の例とは対照的に、次の例では、すべてのレコードに対してデータベース サーバーへの個別の SQL **削除**呼び出しを発行するため、非効率的です。 **delete** メソッドが、呼び出しごとに複数のレコードを削除することはありません。
+前の例とは対照的に、次の例では、各レコードに対してデータベース サーバーへの個別の SQL **削除**呼び出しを発行するため、非効率的です。 **delete** メソッドが、呼び出しごとに複数のレコードを削除することはありません。
 
 ```xpp
 // Example of inefficient code.
@@ -115,7 +115,7 @@ ttsCommit;
 
 内部結合は **delete\_from** ステートメントではサポートされません。 したがって、修正していない **join** キーワードを **delete\_from** ステートメント上で使用することができません。 ただし、他の方法を使用して内部結合を論理的に実行できます。
 
-次の例では、delete_from メソッドと内部結合を使用するための推奨される方法を示します。 コード例は、比較的に効率的です。 ループが繰り返されるたびに個別の **delete\_from** ステートメントが発行されます。 ただし、各 **delete\_from** ステートメントでは、複数のレコード (ジョブによって削除されるすべてのレコードのサブセット) を削除できます。
+次の例では、**delete\_from** メソッドと内部結合を使用するための推奨方法を示します。 この例は比較的効率的です。 ループが繰り返されるたびに個別の **delete\_from** ステートメントが発行されます。 ただし、各 **delete\_from** ステートメントでは、複数のレコード (ジョブによって削除されるすべてのレコードのサブセット) を削除できます。
 
 ```xpp
 MyWidgetTable tabWidget; // extends xRecord.

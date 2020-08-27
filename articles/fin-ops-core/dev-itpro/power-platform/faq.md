@@ -3,7 +3,7 @@ title: Finance and Operations 仮想エンティティに関するよく寄せ�
 description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,20 +15,19 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 6d62625f3d5972f1933a25c552e0008da016906e
-ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
+ms.openlocfilehash: b9f668eb2c416c3724d07455423b8f75f43f33c8
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435573"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621127"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Common Data Service のサービス更新プログラム 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問のコレクションを示します。 
 

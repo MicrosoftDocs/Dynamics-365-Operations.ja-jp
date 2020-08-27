@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 64c0dd40847a4e99f45aedff9d0a4b559ce93569
-ms.sourcegitcommit: 4ba6817b7aa7735a291a021022b4c12c2de5f2eb
+ms.openlocfilehash: 1b420c00768d25d6826b14cf84531f81b94bf434
+ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3505948"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637824"
 ---
 # <a name="select-data"></a>データの選択
 
@@ -31,12 +31,14 @@ ms.locfileid: "3505948"
 
 + すべての**選択**ステートメントではレコードをフェッチするためテーブル変数を使用します。 この変数は、**select** 文を実行する前に宣言する必要があります。
 + **select** ステートメントは、レコードを 1 つだけ、またはフィールドをフェッチします。 複数のレコードをフェッチまたは移動したりするには、**next** ステートメントまたは **[while select](xpp-while-select.md)** ステートメントを使用できます。
+
     + **next** ステートメントは、テーブルの次のレコードをフェッチします。 **選択**ステートメントの前に、**次**ステートメントがある場合、エラーが発生します。 **次**ステートメントを使用する場合、**firstOnly** 検索オプションを使用しません。
     + **while select** ステートメントを使用して複数のレコードを移動する方がより適切です。
+
 + **select** ステートメントの結果はテーブル バッファ変数に返されます。
 + **選択**ステートメントのフィールド リストを使用すると、これらのフィールドでは、テーブル変数が使用されます。
 
-次の例では、**CustTable** テーブルの最初の行のすべての列をフェッチし、行の **AccountNum** 列を出力します。
+次の例では、CustTable テーブルの最初の行のすべての列をフェッチし、その行の **AccountNum** 列に値を出力します。
 
 ```xpp
 CustTable custTable;
@@ -44,7 +46,7 @@ select * from custTable;
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-次の例では、**CustTable** テーブルで各行の **AccountNum** を出力します。
+次の例では、CustTable テーブルで各行の **AccountNum** 列の値を出力します。
 
 ```xpp
 CustTable custTable;
@@ -54,7 +56,7 @@ while select * from custTable
 }
 ```
 
-次の例では、**select** ステートメントによって返された最初の 2 つの行の **AccountNum** を出力します。
+次の例では、**select** ステートメントによって返された最初の 2 つの行の **AccountNum** 列の値を出力します。
 
 ```xpp
 CustTable custTable;

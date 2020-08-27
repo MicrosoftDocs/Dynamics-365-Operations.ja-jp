@@ -2,7 +2,7 @@
 title: IoT インテリジェンス ホーム ページ
 description: このトピックでは、IoT インテリジェンスに関する情報へのリンクについて説明します。
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd27b820e4863f443ee03d839aa4d4f480148d18
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: 0fe45c1145b084acd0fcf9a79b9dd376f1cdcd1e
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386423"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597446"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンス ホーム ページ
 

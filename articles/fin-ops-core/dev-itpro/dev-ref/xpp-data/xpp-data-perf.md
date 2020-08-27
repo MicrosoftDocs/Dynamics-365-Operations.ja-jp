@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 6740f235f087a88a0379b2c92745f5d396a7a55f
-ms.sourcegitcommit: 4ba6817b7aa7735a291a021022b4c12c2de5f2eb
+ms.openlocfilehash: a00a419ec942c06d1e9af9a4a67f168a06a020af
+ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3505946"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637832"
 ---
-# <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セット ベースからレコード単位への操作の変換
+# <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セットベースからレコード単位への操作の変換
 
-次のステートメントおよびメソッドを使用して、アプリケーションとデータベース間の通信を減らすことにより、パフォーマンスを向上させることができます。
+次のステートメントとメソッドを使用して、アプリケーションとデータベース間の通信を減らすことにより、パフォーマンスを向上させることができます。
 
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
@@ -34,18 +34,18 @@ ms.locfileid: "3505946"
 - [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)
 - [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)
 
-これらのレコード セット ベースの操作をより低速のレコードごとの操作に変換できる状況があります。 次のテーブルは、これらの状況を識別します。
+状況によっては、これらのレコード セット ベースの操作をより低速のレコードごとの操作に変換できます。 次のテーブルは、これらの状況を識別します。
 
-|    | delete\_from | update\_recordset | insert\_recordset | RecordSortedList<br>RecordInsertList | 上書きに使用 |
-|----|--------------|-------------------|-------------------|--------------------------------------|------------------|
-非 SQL テーブル | 有 | 有 | 有 | 有 | 該当なし
-アクションの削除 | 有 | 無 | 無 | 無 | **skipDeleteActions**
-データベース ログの有効化 | 有 | 有 | 有 | 無 | **skipDatabaseLog**
-オーバーライドされたメソッド | 有 | 有 | 有 | 有 | **skipDataMethods**
-テーブルに警告が設定されている | 有 | 有 | 有 | 無 | **skipEvents**
-テーブルの **ValidTimeStateFieldType** プロパティが、なしに等しくない | 有 | 有 | 有 | 有 | 該当なし
+| 状況 | delete\_from | update\_recordset | insert\_recordset | RecordSortedList, RecordInsertList | 上書きに使用 |
+|---|--------------|-------------------|-------------------|--------------------------------------|------------------|
+| 非 SQL テーブル | 有 | 有 | 有 | 有 | 該当なし |
+| アクションの削除 | 有 | 無 | 無 | 無 | **skipDeleteActions** |
+| データベース ログが有効になっています。 | 有 | 有 | 有 | 無 | **skipDatabaseLog** |
+| オーバーライドされたメソッド | 有 | 有 | 有 | 有 | **skipDataMethods** |
+| 警告はテーブルの設定をします。 | 有 | 有 | 有 | 無 | **skipEvents** |
+| テーブルの **ValidTimeStateFieldType** プロパティが**なし**以外の値に設定されています。 | 有 | 有 | 有 | 有 | 該当なし |
 
-**上書きに使用**列で表示される設定を使用して、パフォーマンスに悪影響を与える 1 つまたは複数の要因を明示的にスキップまたは無視します。 何らかの理由で前述の SQL 操作のいずれかがレコードごとの操作にダウングレードされた場合、すべての**スキップ\*** 設定も無視されます。 たとえば、次のコードでは、コンテナーまたはメモ フィールドが myTable で定義されている場合はこの方法をスキップする必要があると明確に示されていても、myTable テーブルで**挿入**メソッドが実行されます。
+「上書きに使用」列で表示される**スキップ\*** 設定を使用して、パフォーマンスに悪影響を与える 1 つまたは複数の要因を明示的にスキップまたは無視できます。 何らかの理由で、前述の SQL 操作のいずれかがレコードごとの操作にダウングレードされた場合、すべての**スキップ\*** 設定は無視されます。 たとえば、次のコードでは、コンテナーまたはメモ フィールドが myTable で定義されている場合はこの方法をスキップする必要があると明確に示されていても、myTable テーブルで**挿入**メソッドが実行されます。
 
 ```xpp
 public void tutorialRecordInsertList()

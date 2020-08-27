@@ -16,33 +16,33 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 2da19977e00a414cb3d15efaf4874ea910101e89
-ms.sourcegitcommit: 4ba6817b7aa7735a291a021022b4c12c2de5f2eb
+ms.openlocfilehash: d2e2110c07d8c601233a05878550c01310ab65bd
+ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3505950"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637828"
 ---
 # <a name="insert-data"></a>データの挿入
 
 [!include [banner](../../includes/banner.md)]
 
-データベースに格納されているテーブルに一つまたは複数の行を挿入するため、SQL ステートメントを対話的またはソース コード内で使用することができます。
+データベースに格納されているテーブルに 1 つまたは複数の行を挿入するため、SQL ステートメントを対話的またはソース コード内で使用することができます。
 
-+ **[insert メソッド](#insert-method)**: 一度に 1 行を挿入します。
-+ **[doInsert メソッド](#do-insert-method)**: 一度に 1 行を挿入します。
-+ **[insert\_recordset ステートメント](#insert-recordset-statement)**: 複数のレコードを 1 つまたは複数のテーブルから別のテーブルに 1 回のデータベース トリップで直接コピーします。
-+ **[RecordInsertList: insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)**: 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
-+ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)**: 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
++ **[insert メソッド](#insert-method)** – 一度に 1 行を挿入します。
++ **[doInsert メソッド](#do-insert-method)** – 一度に 1 行を挿入します。
++ **[insert\_recordset ステートメント](#insert-recordset-statement)** – 複数のレコードを 1 つまたは複数のテーブルから別のテーブルに 1 回のデータベース トリップで直接コピーします。
++ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
++ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
 
-**RecordSortedList**、**RecordInsertList**、および **insert\_recordset** を使用すると、複数のレコードを挿入できます。 これらのメソッドを使用することにより、アプリケーションとデータベース間の通信が減少するためパフォーマンスが向上します。 場合によっては、レコードのセットに基づく操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
+**RecordSortedList**、**RecordInsertList**、および **insert\_recordset** を使用すると、複数のレコードを挿入できます。 これらのメソッドを使用することにより、アプリケーションとデータベース間の通信が減少します。 したがって、パフォーマンスの向上に役立ちます。 場合によっては、レコードのセットに基づく操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
 
 ## <a name="insert-method"></a><a id="insert-method"></a>insert メソッド
 
-**insert** メソッドは、一度に 1 つのレコードを挿入します。 メソッドは、**RecId** フィールドおよびシステム フィールドの値を生成した後、データベースにバッファーの内容 (列の値) を挿入します。
+**insert** メソッドは、一度に 1 つのレコードを挿入します。 **RecId** フィールドおよびシステム フィールドの値を生成し、バッファーの内容 (つまり、列の値) をデータベースに挿入します。
 
 + **insert** メソッドを呼び出す前に、テーブル変数で **select** ステートメントを使用しないでください。
-+ **insert** メソッドでは、主要なフィールド要件とテーブルの依存関係がすべて処理されることはありません。 この処理を行うには、コードを記述する必要があります。
++ **insert** メソッドでは、すべての主要なフィールド要件とテーブルの依存関係を処理するわけではありません。 それらの処理を行うには、コードを記述する必要があります。
 
 **挿入**メソッドが作用する方法を次に示します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "3505950"
 + コピー元のテーブルの列とコピー先のテーブルの列は、互換性のある型であることが必要です。
 + 両方のテーブルの列がタイプおよび順序において一致する場合、列リストは**挿入**句から省略されます。
 
-次の例では、新しいレコードを **CustGroup** テーブルに挿入します。 新しいレコードの **CustGroup** 列は **41** に設定されています。 レコードの他のフィールドは空白になります。
+次の例では、新しいレコードを CustGroup テーブルに挿入します。 新しいレコードの **CustGroup** 列は **41** に設定されています。 レコードの他のフィールドは空白になります。
 
 ```xpp
 CustGroup custGroup;
@@ -60,20 +60,20 @@ ttsBegin;
 ttsCommit;
 ```
 
-**insert** メソッドの動作を上書きするには、[**doInsert**](#do-insert-method) メソッドを使用します。
+**insert** メソッドの動作を上書きするには、**[doInsert](#do-insert-method)** メソッドを使用します。
 
 ## <a name="doinsert-method"></a><a id="do-insert-method"></a>doInsert メソッド
 
-**doInsert** メソッドは、**RecId** フィールドおよびその他のシステム フィールドの値を生成した後、データベースにバッファーの内容を挿入します。 テーブルの **insert** メソッドをバイパスする必要がある場合は、このメソッドを使用します。 
+**doInsert** メソッドは、**RecId** フィールドおよびその他のシステム フィールドの値を生成した後、データベースにバッファーの内容を挿入します。 テーブルの **insert** メソッドをバイパスする必要がある場合は、このメソッドを使用します。
 
 > [!WARNING]
-> **doInsert** の呼び出しは 、データベース イベント ハンドラー (たとえば **oninserting** および **oninserted**)、コマンド チェーン **onInsert()**、および **insert()** の呼び出し自体を含むすべてのロジックをスキップします。 一般に、**doInsert** を使用することは不適切なプラクティスと見なされ、お勧めできません。
+> **doInsert** の呼び出しは、データベース イベント ハンドラー (たとえば **oninserting** および **oninserted**)、コマンド チェーン **onInsert()**、および **insert()** の呼び出し自体を含むすべてのロジックをスキップします。 一般に、**doInsert** を使用することは不適切なプラクティスと見なされており、使用することはお勧めしません。
 
 ## <a name="insert_recordset-statement"></a><a id="insert-recordset-statement"></a>insert\_recordset ステートメント
 
 **insert\_recordset** ステートメントは、1 回のサーバー トリップで、1 つ以上のソース テーブルからデータを直接 1 つのターゲット テーブルにコピーします。 配列挿入 (**RecordInsertList.insertDatabase** または **RecordSortedList.insertDatabase**) より **insert\_recordset** を使用する方が高速です。 ただし、配列挿入は、データを挿入する前に処理する場合より柔軟になります。 **insert\_recordset** は、一度に複数のレコードに対して操作を実行するレコード セット ベースの演算子ですが、多くの場合、レコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
 
-**insert\_recordset** ステートメントの次の構文では、**\[\]** はステートメントのオプション要素を示します。
+次の **insert\_recordset** ステートメントの構文では、かっこ (\[\]) はステートメントのオプションの要素を示します。
 
 **insert\_recordset** *DestinationTable* **(** *ListOfFields* **)**
 
@@ -82,11 +82,11 @@ ttsCommit;
 **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
 + *ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。
-+ *WhereClause* および *JoinedWhereClause* は、[**select** ステートメント](xpp-select-statement.md#where-keyword)の *WhereClause* で記述されます。
++ *WhereClause* および *JoinedWhereClause* は、**[select](xpp-select-statement.md#where-keyword)** ステートメントの*WhereClause* 句で説明されています。
 
-## <a name="insert_recordset-insert-data-from-another-table"></a>insert\_recordset: 別のテーブルからデータを挿入
+### <a name="insert_recordset-inserting-data-from-another-table"></a>insert\_recordset: 別のテーブルからのデータの挿入
 
-この例では、**NameValuePair** テーブルの**値**列は、**名前**値ごとに合計されます。 集計の結果は、**ValueSumByName** テーブルに格納されます。
+この例では、NameValuePair テーブルの**値**列は**名前**値ごとに合計されます。 集計の結果は、ValueSumByName テーブルに格納されます。
 
 ```xpp
 ValueSumByName valueSumName;
@@ -98,15 +98,15 @@ insert_recordset valueSumName (Name, ValueSum)
     group by Name;
 ```
 
-## <a name="insert_recordset-insert-data-from-variables"></a>insert\_recordset: 変数からデータを挿入
+### <a name="insert_recordset-inserting-data-from-variables"></a>insert\_recordset: 変数からのデータの挿入
 
 次の例は、**insert\_recordset** ステートメントが変数データを挿入できることを示しています。
 
-- 1 つの新しいレコードだけを挿入する場合は、**firstonly** キーワードを含めます。 **firstonly** を省略すると、**CustTable** の各レコードに対してレコードが挿入されます。  
+- 1 つの新しいレコードだけを挿入する場合は、**firstonly** キーワードを含めます。 **firstonly** を省略すると CustTable テーブルの各レコードに対してレコードが挿入されます。
 - **128** または **"このリテラル文字列"** などのリテラルは、挿入されたデータのソースとしてクエリで使用できません。
 - ソース テーブルの列は、ターゲット テーブルに対応している必要はありません。
 
-次の例では、**NameValuePair** テーブルに 1 つの新しいレコードが挿入され、**Id** が **1**、**名前**が **Name1**、**値**が **1** となります。
+この例では、NameValuePair テーブルに 1 つの新しいレコードが挿入されます。 このレコードの **ID** 値は **1**、**名前**の値は **Name1**、**値**の値は **1** です。
 
 ```X++
 NameValuePair nameValuePair;
@@ -120,9 +120,11 @@ insert_recordset nameValuePair (Id, Name, Value)
 select firstonly id_var, name_var, value_var from custTable;
 ```
 
-## <a name="insert_recordset-insert-data-by-using-a-join"></a>insert\_recordset: 結合を使用してデータを挿入
+### <a name="insert_recordset-inserting-data-by-using-a-join"></a>insert\_recordset: 結合を使用してデータを挿入する
 
-次の例は、サブセレクトを持つ **insert\_recordset** ステートメント上の 3 つのテーブルの結合を示しています。 また、同じ結合がある **while select** ステートメントも示しています。 変数は、1 つの列に挿入された値を供給するために使用されます。 **str** 変数は、宣言する必要があり、長さを対応するデータベース フィールドの最大長さ以下にする必要があります。 この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに**説明**という名前が付けられ、フィールドのデータはローカル変数 **sDescriptionVariable** から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは*コンフィギュレーション キーの自動化*の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
+次の例は、サブセレクトを持つ **insert\_recordset** ステートメント上の 3 つのテーブルの結合を示しています。 また、同じ結合がある **while select** ステートメントも示しています。 変数は、1 つの列に挿入された値を供給するために使用されます。 **str** 変数は、宣言する必要があり、対応するデータベース フィールドの最大長さ以下の長さである必要があります。
+
+この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに**説明**という名前が付けられ、そのデータはローカル **sDescriptionVariable** 変数から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは*コンフィギュレーション キーの自動化*の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
 
 ```X++
 static void InsertJoin42Job(Args _args)
@@ -179,9 +181,11 @@ Beth  --works on--  Project YY (From variable.).
 }
 ```
 
-## <a name="handle-a-duplicatekeyexception"></a>DuplicateKeyException の処理
+## <a name="handling-duplicatekeyexception-exceptions"></a>DuplicateKeyException 例外の処理
 
-次の例は、明示的なトランザクションのコンテキストで **DuplicateKeyException** 例外をキャッチする方法を示しています。 キー値が既に存在しているため、**xRecord.insert** の呼び出しが失敗した場合に例外がスローされます。 **catch** ブロックでは、コードで修正アクションを実行するか、後で分析するためにエラーを記録したりできます。 これにより、トランザクションの保留中のすべての作業が失うことなく、コードの実行を続けることできます。 **挿入\_レコードセット** などのセットに基づく操作によって発生する重複キー例外を把握することはできません。 この例は、**SourceTable** および **DestinationTable** という 2 つのテーブルによって異なります。 両方のテーブルには 1 つの必須の整数フィールドがあります。 これらのフィールドはそれぞれ、**SourceKeyField** および **DestinationKeyField** という名前が付けられます。 固有インデックスは、各キー フィールドで定義されます。 **SourceTable** テーブルには、少なくとも 1 つのレコードが必要です。
+次の例は、明示的なトランザクションのコンテキストで **DuplicateKeyException** 例外をキャッチする方法を示しています。 キー値が既に存在しているため、**xRecord.insert** の呼び出しが失敗した場合に例外がスローされます。 **catch** ブロックでは、コードで修正アクションを実行するか、後で分析するためにエラーを記録したりできます。 これにより、トランザクションの保留中のすべての作業が失うことなく、コードの実行を続けることできます。 **insert\_recordset** などのセット ベース操作によって発生する **DuplicateKeyException** 例外を把握することはできません。
+
+この例は、SourceTable および DestinationTable という 2 つのテーブルによって異なります。 各テーブルには 1 つの必須の整数フィールドがあります。 フィールドの名前はそれぞれ、**SourceKeyField** および **DestinationKeyField** です。 固有インデックスは、各キー フィールドで定義されます。 SourceTable テーブルには、少なくとも 1 つのレコードが必要です。
 
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)

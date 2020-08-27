@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 8 月 6 日
+          href: hr-whats-new-2020-08-06.md
         - name: 2020 年 7 月 23 日
           href: hr-whats-new-2020-07-23.md
         - name: 2020 年 7 月 8 日
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 2020 年 4 月 3 日
           href: hr-whats-new-2020-04-03.md
-        - name: 2020 年 3 月 24 日
-          href: hr-whats-new-2020-03-24.md
-        - name: 2020 年 3 月 19 日
-          href: hr-whats-new-2020-03-19.md
-        - name: 2020 年 3 月 10 日
-          href: hr-whats-new-2020-03-10.md
-        - name: 2020 年 3 月 3 日
-          href: hr-whats-new-2020-03-03.md
         - name: 新機能アーカイブ 2020
           items:
+            - name: 2020 年 3 月 24 日
+              href: hr-whats-new-2020-03-24.md
+            - name: 2020 年 3 月 19 日
+              href: hr-whats-new-2020-03-19.md
+            - name: 2020 年 3 月 10 日
+              href: hr-whats-new-2020-03-10.md
+            - name: 2020 年 3 月 3 日
+              href: hr-whats-new-2020-03-03.md
             - name: 2020 年 2 月 25 日
               href: hr-whats-new-2020-02-25.md
             - name: 2020 年 2 月 18 日
@@ -225,8 +227,6 @@
               href: hr-setup-parameters.md
             - name: Human Resources 共有パラメーターのコンフィギュレーション
               href: hr-setup-shared-parameters.md
-            - name: Human Resources ワークフローの設定
-              href: hr-setup-workflows.md
             - name: 日付と時刻のフィールドの理解
               href: hr-setup-date-time-fields.md
         - name: 組織設定のコンフィギュレーション
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: ワークフローを使用した従業員情報の管理
               href: hr-workflow-manage-employee-information.md
+            - name: 住所変更の表示と管理
+              href: hr-personnel-view-address-changes.md
             - name: 職位の報告関係の変更
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: 作業者情報の入力
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: 継続的計画の作成
               href: hr-personnel-develop-succession-plan.md
-            - name: プロジェクト タイムシートの入力
-              href: hr-personnel-enter-project-timesheets.md
             - name: 大量雇用プロジェクト
               href: hr-personnel-mass-hire-projects.md
             - name: 大量雇用プロジェクトの作成

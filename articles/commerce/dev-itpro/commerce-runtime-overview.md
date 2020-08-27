@@ -1,7 +1,7 @@
 ---
 title: Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 description: この記事では、Commerce Runtime (CRT) のアーキテクチャと構成に関する情報を提供します。 CRT は、ビジネス ロジックをカプセル化するポータブル .NET ライブラリの集合です。 コマース チャネルのエンジンとして機能します。
-author: sericks007
+author: AamirAllaq
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ebb1381536d32a2e94caf619f1133ce40c429f83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: aef037d577e75138b53d85a2444e3213597fb82b
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004592"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640997"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 08c209cb2295d24d117cfd3c450aed8bfc057732
-ms.sourcegitcommit: 71fec2553158c332ce4d4bfcedc2c1ab58c1a1a5
+ms.openlocfilehash: 1f117fd5e7f409cfd57b6db37ac30631609744c1
+ms.sourcegitcommit: 01c057aa0e33ed01362161420a9c3465fe8e7a9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340474"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3603132"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 
@@ -56,11 +56,11 @@ URL リダイレクトを処理するために、Commerce では、単純です�
 次の例では、リダイレクトされた CSV ファイルのリダイレクト行セットを示します。
 
 ```plaintext
-https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301, true
+https://www.contoso.com/shop, https://www.fabrikam.com/allstores, 301, true
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301, false
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301, false
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 ```
 
 > [!IMPORTANT]

@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) のサブスクリプション試算
 description: このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを使用する方法について説明します。
 author: angelmarshall
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: dbdc83e8695040bd754110cbdc9b97edc8e7a5ad
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 7f290b543baa783d4bbc9d1371fefb2a7ce14d16
+ms.sourcegitcommit: 47d77535aca36b9f98801cb00e5ad2ae1386b3b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117399"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686579"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
@@ -62,3 +62,5 @@ ms.locfileid: "3117399"
 
 その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積もりを添付します。
  
+ ## <a name="additional-resources"></a>追加リソース
+ [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)

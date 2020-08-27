@@ -3,7 +3,7 @@ title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: f1e534498988e207277cfde9ae8a67696d662bad
-ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
+ms.openlocfilehash: c10c97db9e7a00a3edbe6fc7a15f372f3adc2933
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454995"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678236"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -91,7 +91,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 データベース更新の一部として (チャネル データベース フォームで) スケール ユニット チャネル データベース レコードを環境を越えて移動できません。 これはレコードが環境固有のコンフィギュレーションを表すためです。
 
-データベースの更新後と Retail の再プロビジョニング ツールの実行後、LCS でスケール ユニットの再展開を発行して、スケール ユニットのチャネル データベース レコードを再生成できます。 スケール ユニットで配置やサービス操作を行うと、登録が行われていないことが検出された場合に、本社でスケール ユニットが登録されます。
+データベース更新後、LCS でスケール ユニットの再展開を発行して、スケール ユニットのチャネル データベース レコードを再生成できます。 スケール ユニットで配置やサービス操作を行うと、登録が行われていないことが検出された場合に、本社でスケール ユニットが登録されます。
 
 スケール ユニットがすでに存在するのと同じバージョンの展開を選択することで、コンポーネントを変更することなくスケール ユニットの再配置を発行できます。 これは次の手順により LCS で行うことができます:
 

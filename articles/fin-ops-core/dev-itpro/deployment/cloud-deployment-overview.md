@@ -1,9 +1,9 @@
 ---
 title: クラウド展開の概要
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Finance and Operations アプリで管理する必要があるデータおよびカスタマイズについて説明します。
-author: kfend
+author: AngelMarshall
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: bb49dcf0c9a20cd63f8b32814272d6111d3d3679
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: 71e974c2a777f02fa6f45836cb1aebdc1da8449c
+ms.sourcegitcommit: e2a47d31175bbd60acfd7a23ffea70c669358572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456522"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3690060"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -72,8 +72,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - これらの環境の管理者パスワードは、変更しないでください。 変更済管理者パスワードをもつ環境では、Microsoft がフラグを設定します。 Microsoft は、管理者パスワードをリセットする権利を保有し、実際にリセットします。  
 > - Microsoft 管理対象 VM に新しいユーザー アカウントを追加することは、許可されていません。 Microsoft は、通知することなく新しく追加されたユーザー アカウントを削除する権利を保有し、実際に削除します。
 
-> [!IMPORTANT]
-> Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、 [トラスト センター](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations)で説明されているように、残りのすべての顧客データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Office 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。  
+> Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[トラスト センター](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations) で説明されているように、残りすべての顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Office 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。 
 
 ## <a name="remote-desktop"></a>リモート デスクトップ
 
@@ -90,7 +89,6 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - コーヒー店の場所などで、パブリック IP アドレスを追加しないでください。     
 > - 使用されていない IP セーフ リストのルールは削除する必要があります。 環境 IP におけるセーフ リストのルールを定期的に確認することを推奨します。
 
-> [!WARNING]
 > Microsoft は Microsoft 管理環境で定期的なテストを実行して、環境が十分に制限されていることを検証します。
 > Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを、通知することなく直ちに削除する権利を保有しています。
  
@@ -118,12 +116,14 @@ Finance and Operations アプリの保証稼働時間は 99.9% です。 計画�
 
 プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部のアプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を 5 秒に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/) を参照してください。
 
-## <a name="service-availability"></a>サービスの可用性 
-Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure データ センターに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。
+## <a name="service-availability-in-azure-regions"></a>Azure リージョンにおけるサービスの可用性
+Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。
 
 > [!IMPORTANT]
 > 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
 詳細については、 [Finance and Operations データの格納場所](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location) を参照してください。
+
+> この時点で、Finance and Operations アプリの利用可能な地域は、すべての新しいプロジェクトに対して、米国東部、米国西部、および米国中部に制限されます。 米国東部 2、米国西部 2、米国中西部、米国中北部、米国中南部へのサポートは、現在これらの地域で格納データを保存しているプロジェクトと環境で引き続き利用できます。 最新のサポート対象地域の一覧については、[Finance and Operations データが保存されている場所](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -159,7 +159,7 @@ Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure デ�
 ### <a name="how-do-i-access-a-development-instance"></a>開発インスタンスにどのようにアクセスしますか。
 開発インスタンスへのアクセス、オンプレミス開発 VM の構成、開発者と管理者の構成設定を確認する方法については、 [開発環境の展開とアクセス](../dev-tools/access-instances.md) を参照してください。
 
-### <a name="how-do-i-deploy-a-demo-environment"></a>デモ環境をどのように展開しますか
+### <a name="how-do-i-deploy-a-demo-environment"></a>デモ環境をどのように展開しますか?
 デモ環境には、Microsoft のデモ データのみが含まれています。 デモ環境を使用して既定のフィーチャーと機能を参照することができます。 詳細については、「[デモ環境の配置](deploy-demo-environment.md)」を参照してください。
 
 ### <a name="how-do-i-move-my-customizations-between-environments"></a>環境間でカスタマイズを移動するにはどうすればよいですか。
@@ -176,8 +176,32 @@ Private AOS VM は、かつて AOS と BI コンピューター間の通信を�
 
 ### <a name="why-am-i-no-longer-able-to-remote-desktop-into-one-or-more-of-my-tier-1-through-tier-5-microsoft-managed-sandbox-environments"></a>リモート デスクトップを自分の階層 1 から階層 5 のいずれかの Microsoft 管理サンドボックス環境で表示することができなくなったのはなぜですか。
 Microsoft が管理するレベル 1 から レベル 5 のサンドボックス環境では、 リモート デスクトップ管理のエンド ポイントを特定の IP アドレス セット (セーフ リスト) に制限する必要があります。 Microsoft は、定期的に環境が十分に制限されていることを検証します。 Microsoft は、上記のガイドラインに違反した IP アドレスのセーフ リストのルールを予告なしに直ちに削除する権利を保有しています。 これらの理由の 1 つのためにデスクトップを環境にリモートすることができない場合があります。 
+
 - ご自身が現在使用している IP アドレスはセーフ リストに含まれません。
 - ご利用の IP は、セーフ リストに記載されている IP アドレスから変更されています。 
 - Microsoft は、ガイドラインに違反していたため、ご利用の IP アドレスを含むルールをセーフリストから削除しました。
 
-環境へのアクセスを回復するには、接続先のコンピュータの IP アドレスを追加する必要があります。 これを行うには、このドキュメントの [[リモート デスクトップ](#remote-desktop)] セクションの手順を実行します。
+環境へのアクセスを回復するには、接続先のコンピュータの IP アドレスを追加する必要があります。 これを行うには、このトピック前半の[リモート デスクトップ](#remote-desktop) セクションの手順を実行します。
+
+### <a name="when-will-the-availability-of-reduced-regions-go-into-effect-for-new-onboarding"></a>削減された領域の可用性は、いつ新しいオンボードに有効になりますか?
+2020 年 8 月 1 日から、Finance and Operations の新しいプロジェクトは次の地域にオンボードされます。
+
+- 米国東部
+- 米国西部
+- 米国中部
+
+### <a name="my-environments-are-currently-in-the-regions-that-will-be-deprecated-how-will-this-change-affect-me"></a>使用している環境は、現在の地域では非推奨です。 この変更にどのような影響がありますか?
+2020 年 8 月 1 日以降に、オンボードされる新しいプロジェクトに対してのみ、次の地域のサポートを廃止します。
+
+-   米国東部 2
+-   米国西部 2
+-   西中央アメリカ
+-   米国中北部
+-   米国中南部
+
+このことは、格納データが 2020 年 8 月以前に非推奨領域に保有されている環境には影響しません。 近い将来、非推奨の地域の顧客を削減した領域に移動するための移行計画があります。
+
+### <a name="im-unable-to-redeploy-an-environment-after-deleting-it-the-environment-slot-is-missing"></a>環境を削除すると再配置ができません、環境スロットが欠落しています。 
+これは、ライセンスが期限切れになったためです。つまり、環境スロットを取得するために必要な最低限のライセンスが不要になったことを意味します。  [サブスクリプションのステータス](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) を確認し、有効期限が切れたライセンスを再開してから、再配置を有効にしてください。
+
+

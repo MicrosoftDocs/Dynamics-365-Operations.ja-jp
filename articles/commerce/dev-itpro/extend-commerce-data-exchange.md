@@ -3,7 +3,7 @@ title: Commerce Data Exchange の拡張 - リアルタイム サービス
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: be211ee09afc0e1cd532f762bf5f293e6253206f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 019d65aae4e6fffc746f271df6ad87d2c8c064c1
+ms.sourcegitcommit: 5ffe077a3053f1f0e3e18a2a76837d81fbb29387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004577"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598825"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -122,29 +122,36 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 新しい拡張メソッドを作成した後は、プロジェクトが展開されます。
 
 ## <a name="call-the-new-method-from-the-crt"></a>CRT から新しいメソッドを呼び出す
-1.  Commerce Runtime (CRT) で、Microsoft.Dynamics.Commerce.Runtime.TransactionService.dll への参照が追加されていない場合は追加します。
+1.  Commerce runtime (CRT) 拡張機能に、Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages の nuget パッケージがまだ追加されていない場合は、それを含めます。
 2.  新しいメソッドを呼び出すには、次のサンプル コードを使用します。
 
     ```C#
-        try
-        {
-            TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
-            ReadOnlyCollection<object> results = transactionService.InvokeExtensionMethod("SerialCheck", "123");
-        }
-        catch (HeadquarterTransactionServiceException exception)
-        {
-             string errorCode = (string)exception.HeadquartersErrorData.FirstOrDefault();
-             RetailLogger.Log.ExtendedErrorEvent(errorCode, "Custom information", "method name");
-             throw new CommerceException("Error resource id", "message");
-        }
-    ```
+        
+            InvokeExtensionMethodRealtimeRequest extensionRequest = new InvokeExtensionMethodRealtimeRequest("SerialCheck", "123");
+            InvokeExtensionMethodRealtimeResponse response = await request.RequestContext.ExecuteAsync<InvokeExtensionMethodRealtimeResponse>   (extensionRequest).ConfigureAwait(false);
+                ReadOnlyCollection<object> results = response.Result;
+                
+                bool success = Convert.ToBoolean(results[0]);
 
-    > [!NOTE]
-    > 本社で例外が発生した場合、HeadquarterTransactionServiceException が発生します。これは、例外をキャプチャし、シナリオに基づいて POS にわかりやすいメッセージを表示します。 例外をログに記録する場合は、RetailLogger.Log クラス オブジェクトを使用してイベントを記録します。
+                if (!success)
+                {
+                    string error = Convert.ToString(results[1]);
+                    Console.WriteLine(error);
+                    throw new CommerceException(error, "Failed to validate serial number.");
+                }
+       
+    ```
 
 3.  results オブジェクトからは、リアルタイム サービスからの応答値を読み取ることができます。
 
     > [!NOTE]
-    > **InvokeExtensionMethod** メソッドは 2 つのパラメーターを取ります。 1 つのパラメ ーターはリアルタイム サービス メソッド名であり、その他はパラメータの一覧を使用する必要があります。 渡されるメソッド名は、**ContosoRetailTransactionServiceSample** クラスで作成したメソッド名と同じにする必要があります。
+    > **InvokeExtensionMethodRealtimeRequest** メソッドは 2 つのパラメーターを取ります。 1 つのパラメ ーターはリアルタイム サービス メソッド名であり、その他はパラメータの一覧を使用する必要があります。 渡されるメソッド名は、**ContosoRetailTransactionServiceSample** クラスで作成したメソッド名と同じにする必要があります。
+    
+ ```
+  public InvokeExtensionMethodRealtimeRequest(string methodName, params object[] parameters)
+            : base(methodName, parameters)
+        {
+        }
+ ```
 
 

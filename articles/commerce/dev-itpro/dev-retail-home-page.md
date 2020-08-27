@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c24a670c33c114cd5c0e9e49536551a85f3fdb5
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: cc7a6705e37eb849c06a24adf98c748f075e1a5a
+ms.sourcegitcommit: 45ba754db7a813be88e2eb4a8be3a0e766b63a87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515777"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678508"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -104,6 +104,8 @@ ms.locfileid: "3515777"
 
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
+- [Retail SDK の今後の変更](UpcomingSDKChanges.md)
+- [バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更](dev-changes-10-13.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
 - [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)
@@ -124,6 +126,8 @@ ms.locfileid: "3515777"
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
 - [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
+- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
+- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)](retail-server-extension.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム ソフトウェア開発キット (SDK)](ecommerce-platform-sdk.md)

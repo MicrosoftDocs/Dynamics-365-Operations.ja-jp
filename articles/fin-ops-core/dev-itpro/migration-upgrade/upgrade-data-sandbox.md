@@ -1,9 +1,9 @@
 ---
 title: AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 description: このトピックでは、サンドボックス環境で Microsoft Dynamics AX 2012 から Finance and Operations にデータ アップグレードを実行する方法を説明します。
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 07/10/2019
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: e7c5780674ab465ddec27f4c0a5cd48036990492
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 3639087e648d63289ee8b7157506651861b68d1f
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033043"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539920"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
@@ -200,7 +200,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 パラメータの説明を以下に示します。
 
-- **ssn** (ソース サーバー名) – エクスポートする SQL Server の名前。 このプロセスでは、このパラメータは常に **localhost** に設定する必要があります。
+- **ssn** (ソース サーバー名) – エクスポートする SQL Server の名前。 このプロセスでは、パラメータは常に **localhost** に設定する必要があります。
 - **sdn** (ソース データベース名) – エクスポートするデータベースの名前。
 - **tf** (ターゲット ファイル) – エクスポートするファイルのパスと名前。 フォルダーが既に存在するはずですが、ファイルはプロセスによって作成されます。
 - **/p:CommandTimeout** – クエリあたりのタイムアウト値。 このパラメータによって、タイムアウトを起こさずに大きなテーブルをエクスポートできます。
@@ -213,8 +213,8 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
-もう 1 つの (無料) オプションは、LCS 資産ライブラリを使用することですが、アップロードやダウンロードは Azure ストレージよりも時間がかかる場合があります。 このオプションを使用するには、次のようにします。
-1. LCS でプロジェクトにログインし、アセット ライブラリに移動します。
+別のオプションは LCS 資産ライブラリを使用する方法ですが、アップロードやダウンロードは Azure ストレージよりも時間がかかる場合があります。 このオプションを使用するには、次のようにします。
+1. LCS でプロジェクトにサインインし、アセット ライブラリに移動します。
 2. データベース バックアップ タブを選択します。
 3. bacpac ファイルをアップロードします。
 その VM から LCS にログインして LCS アセット ライブラリからダウンロードすることにより、後から bacpac をサンドボックス AOS VM にダウンロードすることができます。
@@ -235,22 +235,27 @@ SQL データベース インスタンスへのアクセスを制限するファ
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tdn:<New database name> /tu:sqladmin /tp:<password from LCS> /mp:64 /p:CommandTimeout=1200 /p:DatabaseEdition=<Edition> /p:DatabaseServiceObjective=<Service objective> /p:DatabaseMaximumSize=<Maximum size>
 ```
 
 パラメータの説明を以下に示します。
 
+- **sf** (ソース ファイル) – インポートするファイルのパスと名前。
 - **tsn** (ターゲット サーバー名) – インポートする SQL Azure サーバーの名前。 名前は LCS で確認できます。 末尾に **.database.windows.net** を付け加えます。
 - **tdn** (ターゲット データベース名) – インポートするデータベースの名前。 データベースが既に存在していない必要があります。 インポート処理が作成されます。
-- **sf** (ソース ファイル) – インポートするファイルのパスと名前。
-- **tp** (ターゲット パスワード) – ターゲット SQL データベース インスタンスの SQL パスワード。
 - **tu** (ターゲット ユーザー) – ターゲット SQL データベース インスタンスの SQL ユーザー名。 **sqladmin** を使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
+- **tp** (ターゲット パスワード) – ターゲット SQL データベース インスタンスの SQL パスワード。
+- **mp** (最大並列処理) - データベースに対して実行される同時操作の並列度を指定します。 既定値は 8 です。 値を 64 にすると、ほとんどの場合に最高のパフォーマンスが得られます。
 - **/p:CommandTimeout** – クエリあたりのタイムアウト値。 このパラメータによって、タイムアウトを起こさずに大きなテーブルをエクスポートできます。
-- **/p:DatabaseServiceObjective** - S1、P2、P4 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseEdition** – Basic、Standard、Premium、GeneralPurpose、BusinessCritical、Hyperscale などのデータベースのエディションを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseServiceObjective** - S1、P2、P4 または GP_Gen5_8 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseMaximumSize** – Azure SQL データベースの最大サイズを GB 単位で定義します。 大きなデータベースをインポートできるようにするには、このパラメータを使用する必要があります。
 
-コマンドを実行すると、次の警告が表示される場合があります。 これは無視してかまいません。
+コマンドを実行すると、次の警告を受け取る場合があります。 これは無視してかまいません。
 
 ![サンドボックス エラー](./media/sandbox-2.png)
+
+無効な値に関するエラー メッセージを受け取る場合は、パラメータを再確認してください。 問題がない場合は、新しいバージョンの SqlPackage を使用する必要があります。 [Windows .NET Core](/sql/tools/sqlpackage-download) バージョンをインストールすることなく使用できます。 これは、たとえば、C:\Temp\Sqlpackage-dotnetcore に抽出できる .zip ファイルです。 これで、データベースをインポートするときに、C:\Program Files (x86) の下で Sqlpackage.exe を使用する代わりに、C:\Temp\Sqlpackage-dotnetcore で Sqlpackage.exe を使用できます。
 
 
 ## <a name="run-a-t-sql-script-to-update-the-database"></a>データベースの更新のため T-SQL スクリプトを実行

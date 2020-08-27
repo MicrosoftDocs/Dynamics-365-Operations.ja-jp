@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce のセルフサービス インストーラーの�
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共用資産ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 04/15/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 5e60f6cad72e277d95d89dc53fbc2c6ad9d93e9d
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 3311ff17d688af486986f2b90a464c2c677d574c
+ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266405"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "3577403"
 ---
 # <a name="synchronize-self-service-installers-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のセルフサービス インストーラーの同期
 
@@ -62,8 +62,11 @@ ms.locfileid: "3266405"
 4. 同じページで、関連する場所 (**デバイス**、**すべての店舗**、および **チャネル データベース**) の Headquarters 全体で使用される既定のパッケージを選択できます。
 5. 次のテーブルのリンクを使用して、Modern POS、ハードウェア ステーション、または Commerce Scale Unit の標準コンフィギュレーション フローとインストール フローを実行します。
 
-    | コンポーネント | リンク |
-    |---|---|
-    | Modern POS | [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) |
-    | Hardware station | [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md) |
-    | Commerce Scale Unit (旧 Retail Store Scale Unit) | [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md) |
+> [!NOTE]
+> いくつかのインストーラーがあります。  Modern POS (オフラインでの Modern POS)、Commerce Scale Unit (自己ホスト、以前は *Retail Store Scale Unit* と呼ばれる)、ハードウェア ステーション、および頻繁には使用されないインストーラー (AX 2012 R3 サポート インストーラーと周辺機器シミュレーター)。
+
+| コンポーネント | リンク |
+|---|---|
+| Modern POS | [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) |
+| Hardware station | [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md) |
+| Commerce Scale Unit (旧 Retail Store Scale Unit) | [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md) |

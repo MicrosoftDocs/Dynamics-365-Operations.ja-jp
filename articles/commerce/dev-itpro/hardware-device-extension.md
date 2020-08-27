@@ -3,7 +3,7 @@ title: POS と新しいハードウェア デバイスの統合
 description: このトピックでは、新しいハードウェア デバイスに POS を統合する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/03/2019
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,13 +16,13 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
-ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
-ms.openlocfilehash: d9252e4771bd6292407e8f9c2491f4eb3bbe718a
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
+ms.openlocfilehash: b0de86e48ee22b9051e0016397e89aa1171d6e16
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117255"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665042"
 ---
 # <a name="integrate-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
@@ -30,11 +30,15 @@ ms.locfileid: "3117255"
 
 このトピックでは、新しいハードウェア デバイスに POS を統合する方法について説明します。 
 
-
 POS からハードウェア ステーションを呼び出すには、要求と応答を使用する必要があります。
 
 + **HardwareStationDeviceActionRequest** - POS からハードウェア ステーションに送信された要求。
 + **HardwareStationDeviceActionResponse** - ハードウェア ステーションから POS に受信した要求。
+
+拡張するクラスは、使用している Retail SDK のバージョンによって異なります。
+
++ Retail SDK バージョン 10.0.11 以降では、**IController** インターフェイスを拡張します。
++ バージョン 10.0.11 以前の Retail SDKでは、**HardwareStationController** および **IHardwareStationController** のクラスを拡張します。
 
 ## <a name="hardwarestationdeviceactionrequest"></a>HardwareStationDeviceActionRequest
 
@@ -80,6 +84,7 @@ class HardwareStationDeviceActionResponse extends Response {
   constructor(response: any);
 }
 ```
+
 次の表で、このパラメーターについて説明します。
 
 | パラメーター | データ型 | 説明                                       |
@@ -96,7 +101,32 @@ class HardwareStationDeviceActionResponse extends Response {
 
 新しいハードウェア デバイスを呼び出すには、ハードウェア ステーション コードを実装する必要があります。 ハードウェア ステーション コードから、ハードウェア デバイスを呼び出します。
 
-ハードウェア ステーション拡張機能を実装するには、次の手順を実行します。
+Retail SDK バージョン10.0.11 以降の Hardware station 拡張機能を実装するには、次の手順を実行します。
+
+1. .NET Framework バージョン 4.6.1 を使用して新しい C# クラス ライブラリ プロジェクトを作成するか、または Retail SDK のサンプルのいずれかをテンプレート (**...\RetailSDK\SampleExtensions\HardwareStation\\**) として使用します。 このサンプルをテンプレートとして使用することをお勧めします。
+
+2. 拡張機能プロジェクトで、NuGet パッケージ マネージャーを使用して、**Microsoft.Dynamics.Commerce.Hosting.Contracts** を追加します。 NuGet パッケージは、**RetailSDK\pkgs** フォルダにあります。
+
+3. **IController** インターフェイスを拡張する新しいコントローラ クラスを追加します。
+
+4. コントローラ クラスをクライアントに公開するには、コントローラ クラスに **RoutePrefix** 属性を追加します。
+
+    ```csharp
+    [RoutePrefix("ISVEXTENSIONDEVICE")]  
+    ```
+
+5. ハードウェア デバイスを呼び出すためのカスタム ロジックを実装するために、**HttpPost** 属性を持つメソッドをコントローラ クラスに追加します。 このメソッドは、POS **HardwareStationDeviceActionRequest** に対して 2 番目のパラメーター (アクション パラメーター) として渡されます。 拡張メソッドから、この拡張機能では、Retail SDK から関連する NuGet パッケージを含めることによって、印刷やキャッシュ ドロワーなどの他の要求を呼び出すことができます。
+
+    ```C#
+    [HttpPost]
+    public async Task<bool> IsReady(IEndpointContext context)
+    {
+    }
+    ```
+
+6.  プロジェクトを構築します。
+
+Retail SDK バージョン 10.0.11 以前の Hardware station 拡張機能を実装するには、次の手順を実行します。
 
 1.  新しい C# クラス ライブラリ プロジェクトの作成
 2.  **HardwareStationController** と **IHardwareStationController** を拡張する新しいコントローラー クラスを追加します。
@@ -110,9 +140,9 @@ MPOS にハードウェア ステーション拡張機能を展開し、ロー�
 2. **HardwareStation.Extension.config** を開きます。
 3. 合成セクションに拡張ライブラリの詳細を追加します。
 
-  ```Xml
-  <add source="assembly" value="your extension library name" />
-  ```
+    ```Xml
+    <add source="assembly" value="your extension library name" />
+    ```
  
 4. ファイル保存します。
 5. モダン POS を閉じます (実行中の場合)。
@@ -128,9 +158,67 @@ MPOS にハードウェア ステーション拡張機能を展開し、ロー�
 + **POS**: \RetailSDK\POS\Extensions\FiscalRegisterSample
 + **ハードウェア ステーション**: \RetailSDK\SampleExtensions\HardwareStation\Extension.FiscalRegisterSample
 
-## <a name="sample-hardware-station-code"></a>ハードウェア ステーション コードのサンプル
+## <a name="sample-code-for-retail-sdk-version-10011-or-later"></a>Retail SDK バージョン 10.0.11 以降のサンプル コード
 
-```C#
+```csharp
+namespace Contoso
+{
+    namespace Commerce.HardwareStation.ISVExtensionDevice
+    {
+
+        using Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts;
+        using System;
+        using System.Threading.Tasks;
+
+        /// <summary>;
+        /// Sample hardware station extension
+        /// </summary>
+
+        [RoutePrefix("ISVEXTENSIONDEVICE")]
+        public class ISVExtensionDeviceController : IController
+        {
+            /// <summary>
+            /// Sample.
+            /// </summary>
+
+            /// <param name="request">Custom request.<param>
+            /// <returns>Result of Custom response.</returns>
+
+            [HttpPost]
+            public async Task<CustomResponse> Sample(CustomRequest request, IEndpointContext context)
+            {
+                CustomResponse response;
+
+                try
+                {
+                    response = new CustomResponse();
+                }
+
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                return await Task.FromResult(response);
+            }
+        }
+
+        public class CustomResponse
+        {
+            public string sampleProp { get; set; }
+
+            public CustomResponse()
+            {
+                this.sampleProp = "sampleValue";
+            }
+        }
+    }
+}
+```
+
+
+## <a name="sample-code-for-retail-sdk-prior-to-version-10011"></a>Retail SDK バージョン 10.0.11 以前のサンプル コード
+
+```csharp
 namespace Contoso
 {
   namespace Commerce.HardwareStation.ISVExtensionDevice

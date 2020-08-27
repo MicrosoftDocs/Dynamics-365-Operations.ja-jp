@@ -156,6 +156,8 @@
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: 複数のエンティティ マップを処理する
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: 二重書き込み設定後に法人を編集する
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: エラー管理と警告通知

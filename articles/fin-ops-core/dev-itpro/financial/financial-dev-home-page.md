@@ -3,7 +3,7 @@ title: 財務開発ホーム ページ
 description: このトピックでは、財務開発に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,16 +16,18 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d0dab64c203019b20a14bc3215a7939db76e41c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 424953375fac6534224c8e14b4975493de30d73a
+ms.sourcegitcommit: 5ffe077a3053f1f0e3e18a2a76837d81fbb29387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812015"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598827"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 
 [!include [banner](../includes/banner.md)]
+
+このトピックでは、財務開発に関するトピックへのリンクを提供します。
 
 - [ダイアログの分析コード エントリ コントロールのサポート](../financial/dimension-entry-control-dialog-support.md)
 - [既定の分析コード コントロールの分析コード エントリ コントロールへの移行](../financial/dimension-entry-control-migration.md)

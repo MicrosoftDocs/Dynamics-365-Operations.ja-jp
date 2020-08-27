@@ -1,7 +1,7 @@
 ---
 title: コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトの新しい環境、Microsoft Azure DevOps、およびのブランチ設定の推奨事項について説明します。
-author: AndreasHassing
+author: andreashofmann1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 7a3902cb724c1071e55301fec9b545a72b829f7f
-ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
+ms.openlocfilehash: 52a220978cf7535117fe7eb72620e9b89f2b4a54
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454944"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554289"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-commerce-projects"></a>コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 

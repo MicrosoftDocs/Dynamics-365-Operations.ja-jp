@@ -3,7 +3,7 @@ title: POS 要求ハンドラーのオーバーライド
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: ce81aaa57923b6f5f844629d186eea47f15f986a
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: 07ed9d5233d74bc81b7ba173f40ee1acc9f2ee6a
+ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368779"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "3577426"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -115,6 +115,8 @@ ms.locfileid: "3368779"
 | LoyaltyCardPointsBalanceOperationRequestHandler     | POS でロイヤルティ カード残高操作を行うときに実行されます。 |
 | GetReportParametersClientRequestHandler             | レポート パラメーターを使用するときに実行されます。 POS レポートに入力パラメーターが必要な場合は、このダイアログが実行されてパラメーターを取得します。 |
 | GetPickingAndReceivingOrdersClientRequestHandler            | 注文がピッキングおよび入荷処理に対してフェッチされると実行されます。 |
+| GetStartingAmountClientRequestHandler               | POS で開始金額申告を行うとき (ビューに移動する前) に実行されます。 |
+
 
 
 **支払/入金計算要求ハンドラー**

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 45dae6303dbb67af9f45926e3f78269c4d2e6ab4
-ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
+ms.openlocfilehash: 97db4dd1d6a626b1c73b66336e7f92f9fc8b7f6e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2982322"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645327"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1008-february-2020"></a>Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "2982322"
 
 - [財務諸表の保有ポリシー](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-- [為替換算を使用する場合の財務レポートの利益剰余金計算の強化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [為替換算を使用する場合の財務レポートの利益剰余金計算の強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
 - [購買契約の拡張](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 

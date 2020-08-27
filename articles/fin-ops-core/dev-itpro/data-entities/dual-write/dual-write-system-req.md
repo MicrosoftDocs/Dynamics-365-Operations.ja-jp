@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63bb9e2ed43300f274102eac43326288df3152a2
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: d2f54bcf2a6a5d85a197daccf940c0d5214124fe
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275712"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614326"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 
@@ -39,7 +39,7 @@ ms.locfileid: "3275712"
 
 + データ インテグレータに対して、二重書き込みと [見込み顧客の収益化ソリューション](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) を並行して実行することはできません。 データ インテグレータで見込み顧客の収益化ソリューションを実行している場合は、アンインストールする必要があります。
 + 二重書き込み設定は、Finance and Operations アプリの試用版インスタンスではサポートされていません。 
-+ 二重書き込みは、会社間データをサポートしていません。
++ 二重書き込みは、会社間のデータ共有をサポートしていません。
 
 ## <a name="one-version"></a>1 つのバージョン
 

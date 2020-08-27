@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4d4fa5520cfc35f0671a89fd107629d4b57fca1
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 67b5f0c3c1f54cb30128d0878d9217cebf7ac54d
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080786"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613217"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "3080786"
 
 ### <a name="empty-values"></a>空の値
 
-分析コードのフレームワークは、値が入力された分析コードについてのみ行を保存します。 空の行に対してはデータが保存されません。 したがって、データが保存された後、フレームワークは値を持たない分析コードについて、それがユーザーが削除したものなのか、そもそも値が入っていないものなのかを区別することができません。 空の値を保存するには、空白であることを意味する値を作成する必要があります。 命名の例としては **empty** , **n/a** , **\<cleared\>**, **\*blank\*** などです。 ユーザーは、空白の値に対しては入力時にこの値を選択して、これは空白値入力の既定の動作とすることができます。
+分析コードのフレームワークは、値が入力された分析コードについてのみ行を保存します。 空の行に対してはデータが保存されません。 したがって、データが保存された後、フレームワークは値を持たない分析コードについて、それがユーザーが削除したものなのか、そもそも値が入っていないものなのかを区別することができません。 空の値を保存するには、空白であることを意味する値を作成する必要があります。 例えば、**empty**、**n/a**、**\<cleared\>**、または **\*blank\*** などの名前を付けます。 ユーザーは、空白の値に対しては入力時にこの値を選択して、これは空白値入力の既定の動作とすることができます。
 
 ### <a name="immutable-data"></a>不変データ
 
@@ -316,7 +316,7 @@ public static DimensionDefault serviceReplaceAttributeValue(
 
 **ServiceMergeValidDefaultDimensions ()** APIは、現在の元帳に対して有効な値のみをマージしていく場合に便利です。 **ServiceMergeDefaultDimensions** と同じように動作しますが、有効な値の検証がされます。
 
-**例: DimensionDefaultFacade::serviceReplaceAttributeValue ()** 
+**例: DimensionDefaultFacade::serviceMergeValidDefaultDimensions()** 
 
 ```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(
