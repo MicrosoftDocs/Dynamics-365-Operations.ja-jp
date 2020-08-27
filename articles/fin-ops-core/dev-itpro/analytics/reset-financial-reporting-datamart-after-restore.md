@@ -3,7 +3,7 @@ title: 財務報告のデータ マートのリセット
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 02/07/2018
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,115 +17,109 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ffd76a9e1e1f015da7ed1955dd9b2d3a5320d10
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: af74b584ea651b7e18c437376dfbb12a40576706
+ms.sourcegitcommit: 3c7e144277f8d1c0c36ecd961d87239d0b9015a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080752"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3673517"
 ---
-# <a name="reset-the-financial-reporting-data-mart"></a><span data-ttu-id="68195-103">財務報告のデータ マートのリセット</span><span class="sxs-lookup"><span data-stu-id="68195-103">Reset the Financial reporting data mart</span></span>
+# <a name="reset-the-financial-reporting-data-mart"></a><span data-ttu-id="5180f-103">財務報告のデータ マートのリセット</span><span class="sxs-lookup"><span data-stu-id="5180f-103">Reset the Financial reporting data mart</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="68195-104">このトピックでは、 Microsoft Dynamics 365 Finance での Financial Reporting のリセット方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="68195-104">This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.</span></span> <span data-ttu-id="68195-105">データマートは、ユーザーの役割 と クライアント や インフラストラクチャー へのアクセス権に応じて、複数の方法でリセットすることができます。</span><span class="sxs-lookup"><span data-stu-id="68195-105">The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.</span></span>
+<span data-ttu-id="5180f-104">このトピックでは、 Microsoft Dynamics 365 Finance での Financial Reporting のリセット方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="5180f-104">This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.</span></span> <span data-ttu-id="5180f-105">データマートは、ユーザーの役割 と クライアント や インフラストラクチャー へのアクセス権に応じて、複数の方法でリセットすることができます。</span><span class="sxs-lookup"><span data-stu-id="5180f-105">The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.</span></span>
 
-<span data-ttu-id="68195-106">特定のシナリオでは、場合によっては財務諸表のデータ マートをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="68195-106">In specific scenarios, you might have to reset the data mart for Financial reporting.</span></span> <span data-ttu-id="68195-107">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="68195-107">Here are some examples:</span></span>
+<span data-ttu-id="5180f-106">特定のシナリオでは、場合によっては財務諸表のデータ マートをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-106">In specific scenarios, you might have to reset the data mart for Financial reporting.</span></span> <span data-ttu-id="5180f-107">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="5180f-107">Here are some examples:</span></span>
 
-- <span data-ttu-id="68195-108">アプリケーション データベースが復元されましたが、データ マート データベースは復元されませんでした。</span><span class="sxs-lookup"><span data-stu-id="68195-108">The application database was restored, but the data mart database wasn't restored.</span></span>
-- <span data-ttu-id="68195-109">ある期間で誤ったデータが表示され、その問題がレポートの設定による問題ではないと判断した場合。</span><span class="sxs-lookup"><span data-stu-id="68195-109">You see incorrect data for a period, and you've determined that the issue isn't a report design issue.</span></span>
-- <span data-ttu-id="68195-110">ある期間で誤ったデータが表示され、レポート デザイナーの統合ステータス ページの統合実施の下にレコードが表示されます。 (レポート デザイナーを起動し、 **ツール** > **統合ステータス**)。</span><span class="sxs-lookup"><span data-stu-id="68195-110">You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).</span></span>
-- <span data-ttu-id="68195-111">トラブルシューティング手順の一部として、サポートはデータ マートをリセットするように指示します。</span><span class="sxs-lookup"><span data-stu-id="68195-111">Support instructs you to reset the data mart as part of a troubleshooting step.</span></span>
+- <span data-ttu-id="5180f-108">アプリケーション データベースが復元されましたが、データ マート データベースは復元されませんでした。</span><span class="sxs-lookup"><span data-stu-id="5180f-108">The application database was restored, but the data mart database wasn't restored.</span></span>
+- <span data-ttu-id="5180f-109">ある期間で誤ったデータが表示され、その問題がレポートの設定による問題ではないと判断した場合。</span><span class="sxs-lookup"><span data-stu-id="5180f-109">You see incorrect data for a period, and you've determined that the issue isn't a report design issue.</span></span>
+- <span data-ttu-id="5180f-110">ある期間で誤ったデータが表示され、レポート デザイナーの統合ステータス ページの統合実施の下にレコードが表示されます。 (レポート デザイナーを起動し、 **ツール** > **統合ステータス**)。</span><span class="sxs-lookup"><span data-stu-id="5180f-110">You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).</span></span>
+- <span data-ttu-id="5180f-111">トラブルシューティング手順の一部として、サポートはデータ マートをリセットするように指示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-111">Support instructs you to reset the data mart as part of a troubleshooting step.</span></span>
 
-<span data-ttu-id="68195-112">データマートのリセットは、データベース で あまり処理が行われていないときだけに留めるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="68195-112">You should reset the data mart only when a small amount of processing is occurring on the database.</span></span> <span data-ttu-id="68195-113">財務諸表は、リセット プロセス中は使用できません。</span><span class="sxs-lookup"><span data-stu-id="68195-113">Financial reporting will be unavailable during the reset process.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="68195-114">データマートのリセットは、レポートの構造を定義しているレポートの定義には影響しません。</span><span class="sxs-lookup"><span data-stu-id="68195-114">A reset of the data mart doesn't affect any report definitions that define the structure of reports.</span></span> <span data-ttu-id="68195-115">しかしながら、レポートのバックアップを取っておくことを推奨します。</span><span class="sxs-lookup"><span data-stu-id="68195-115">Nevertheless, it's always a good idea to have a backup of your reports.</span></span> <span data-ttu-id="68195-116">レポート定義のバックアップ方法については、このトピックの最後にある注釈を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68195-116">For information about how to back up report definitions, see the note at the end of this topic.</span></span>
-
-### <a name="reset-the-financial-reporting-data-mart-from-report-designer"></a><span data-ttu-id="68195-117">レポート デザイナーからの財務報告のデータ マートのリセット</span><span class="sxs-lookup"><span data-stu-id="68195-117">Reset the Financial reporting data mart from Report designer</span></span>
+<span data-ttu-id="5180f-112">データマートのリセットは、データベース で あまり処理が行われていないときだけに留めるようにしてください。</span><span class="sxs-lookup"><span data-stu-id="5180f-112">You should reset the data mart only when a small amount of processing is occurring on the database.</span></span> <span data-ttu-id="5180f-113">財務諸表は、リセット プロセス中は使用できません。</span><span class="sxs-lookup"><span data-stu-id="5180f-113">Financial reporting will be unavailable during the reset process.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="68195-118">このプロセスのステップは、財務報告 7.2.6.0 以降のリリースでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="68195-118">The steps in this process are supported for Financial reporting release 7.2.6.0 and later.</span></span>
+> <span data-ttu-id="5180f-114">データマートのリセットは、レポートの構造を定義しているレポートの定義には影響しません。</span><span class="sxs-lookup"><span data-stu-id="5180f-114">A reset of the data mart doesn't affect any report definitions that define the structure of reports.</span></span> <span data-ttu-id="5180f-115">しかし、レポートのエクスポートを実行してバックアップを取っておくことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="5180f-115">Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them.</span></span> <span data-ttu-id="5180f-116">レポート定義をエクスポートする手順は、このトピックの後半にあるレポート定義のエクスポートとインポートという名前のセクションの最後に記載されています。</span><span class="sxs-lookup"><span data-stu-id="5180f-116">The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.</span></span>
 
-<span data-ttu-id="68195-119">レポート デザイナーのバージョンを検索するには、次のビデオをご覧ください。:[レポート デザイナーのバージョンを検索する方法](https://www.youtube.com/watch?v=icfA5Q3kp4w)</span><span class="sxs-lookup"><span data-stu-id="68195-119">To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)</span></span>
+### <a name="reset-the-financial-reporting-data-mart-from-report-designer"></a><span data-ttu-id="5180f-117">レポート デザイナーからの財務報告のデータ マートのリセット</span><span class="sxs-lookup"><span data-stu-id="5180f-117">Reset the Financial reporting data mart from Report designer</span></span>
 
-<span data-ttu-id="68195-120">レポート デザイナーでデータマートをリセットするには、 以下の図に示されているように、 **ツール** メニューで **データマートのリセット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-120">To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration.</span></span> <span data-ttu-id="68195-121">表示されるダイアログ ボックスには2つのセクションがあります: **統計** および **リセット**。</span><span class="sxs-lookup"><span data-stu-id="68195-121">The dialog box that appears has two sections: **Statistics** and **Reset**.</span></span>
+<span data-ttu-id="5180f-118">レポート デザイナーのバージョンを検索するには、次のビデオをご覧ください: [レポート デザイナーのバージョンを検索する方法](https://www.youtube.com/watch?v=icfA5Q3kp4w)</span><span class="sxs-lookup"><span data-stu-id="5180f-118">To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)</span></span>
 
-<span data-ttu-id="68195-122">[![データ マートのダイアログ ボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)</span><span class="sxs-lookup"><span data-stu-id="68195-122">[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)</span></span>
+<span data-ttu-id="5180f-119">レポート デザイナーでデータマートをリセットするには、 以下の図に示されているように、 **ツール** メニューで **データマートのリセット** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-119">To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration.</span></span> <span data-ttu-id="5180f-120">表示されるダイアログ ボックスには2つのセクションがあります: **統計** および **リセット**。</span><span class="sxs-lookup"><span data-stu-id="5180f-120">The dialog box that appears has two sections: **Statistics** and **Reset**.</span></span>
 
-##### <a name="integration-attempts"></a><span data-ttu-id="68195-123">統合試行回数</span><span class="sxs-lookup"><span data-stu-id="68195-123">Integration attempts</span></span>
+<span data-ttu-id="5180f-121">[![データ マートのダイアログ ボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)</span><span class="sxs-lookup"><span data-stu-id="5180f-121">[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)</span></span>
 
-<span data-ttu-id="68195-124">**統合試行回数** グリッドは、システムがトランザクションの統合を試みた回数を表示します。</span><span class="sxs-lookup"><span data-stu-id="68195-124">The **Integration attempts** grid shows how many times the system has tried to integrate transactions.</span></span> <span data-ttu-id="68195-125">システムは、最初のいくつかの試行ができなかった場合は、日の期間にわたってデータを統合するまで続行されます。</span><span class="sxs-lookup"><span data-stu-id="68195-125">The system continues to try to integrate data over a period of days if the first few attempts aren't successful.</span></span> <span data-ttu-id="68195-126">試行回数が8回以上の場合、および分析コードの組み合わせやトランザクション レコードが多い場合、データ マートをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="68195-126">You will know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records.</span></span> <span data-ttu-id="68195-127">このような状況では、データはレポートされません。</span><span class="sxs-lookup"><span data-stu-id="68195-127">In this situation, the data won't be reported on.</span></span>
+##### <a name="integration-attempts"></a><span data-ttu-id="5180f-122">統合試行回数</span><span class="sxs-lookup"><span data-stu-id="5180f-122">Integration attempts</span></span>
 
-##### <a name="data-status"></a><span data-ttu-id="68195-128">データのステータス</span><span class="sxs-lookup"><span data-stu-id="68195-128">Data status</span></span>
+<span data-ttu-id="5180f-123">**統合試行回数** グリッドは、システムがトランザクションの統合を試みた回数を表示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-123">The **Integration attempts** grid shows how many times the system has tried to integrate transactions.</span></span> <span data-ttu-id="5180f-124">システムは、最初のいくつかの試行ができなかった場合は、日の期間にわたってデータを統合するまで続行されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-124">The system continues to try to integrate data over a period of days if the first few attempts aren't successful.</span></span> <span data-ttu-id="5180f-125">試行回数が8回以上の場合、および分析コードの組み合わせやトランザクション レコードが多い場合、データ マートをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-125">You will know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records.</span></span> <span data-ttu-id="5180f-126">このような状況では、データはレポートされません。</span><span class="sxs-lookup"><span data-stu-id="5180f-126">In this situation, the data won't be reported on.</span></span>
 
-<span data-ttu-id="68195-129">**データのステータス** グリッドは、データ マート内のトランザクション、為替レート、および分析コード値のスナップショットを表示します。</span><span class="sxs-lookup"><span data-stu-id="68195-129">The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart.</span></span> <span data-ttu-id="68195-130">古いレコードが多数ある場合、レコードに対して更新が数多く存在することになります。</span><span class="sxs-lookup"><span data-stu-id="68195-130">A large number of stale records indicates that numerous updates to the records have occurred.</span></span> <span data-ttu-id="68195-131">この場合は、レポートの生成に要する時間が長くなることがあります。</span><span class="sxs-lookup"><span data-stu-id="68195-131">This situation might increase the time that is required to generate reports.</span></span>
+##### <a name="data-status"></a><span data-ttu-id="5180f-127">データのステータス</span><span class="sxs-lookup"><span data-stu-id="5180f-127">Data status</span></span>
 
-##### <a name="misaligned-main-account-categories"></a><span data-ttu-id="68195-132">正しく整合されていない主勘定カテゴリ</span><span class="sxs-lookup"><span data-stu-id="68195-132">Misaligned main account categories</span></span>
+<span data-ttu-id="5180f-128">**データのステータス** グリッドは、データ マート内のトランザクション、為替レート、および分析コード値のスナップショットを表示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-128">The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart.</span></span> <span data-ttu-id="5180f-129">古いレコードが多数ある場合、レコードに対して更新が数多く存在することになります。</span><span class="sxs-lookup"><span data-stu-id="5180f-129">A large number of stale records indicates that numerous updates to the records have occurred.</span></span> <span data-ttu-id="5180f-130">この場合は、レポートの生成に要する時間が長くなることがあります。</span><span class="sxs-lookup"><span data-stu-id="5180f-130">This situation might increase the time that is required to generate reports.</span></span>
 
-<span data-ttu-id="68195-133">財務報告 7.2.1 以前のリリースを使用している場合で、勘定の名前を変更して勘定カテゴリの間で勘定を移動する場合、データ マートをリセットする必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="68195-133">If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories.</span></span> <span data-ttu-id="68195-134">これらのアクションにより、主勘定カテゴリが正しく整合されなくなることがあります。</span><span class="sxs-lookup"><span data-stu-id="68195-134">These actions can cause main account categories to become misaligned.</span></span> <span data-ttu-id="68195-135">**正しく整合されていない主勘定カテゴリ** フィールドには問題が発生しているかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="68195-135">The **Misaligned main account categories** field shows whether you're experiencing that issue.</span></span>
+##### <a name="misaligned-main-account-categories"></a><span data-ttu-id="5180f-131">正しく整合されていない主勘定カテゴリ</span><span class="sxs-lookup"><span data-stu-id="5180f-131">Misaligned main account categories</span></span>
 
-### <a name="reset-the-data-mart-and-select-a-reason"></a><span data-ttu-id="68195-136">データマートをリセットし、理由をひとつ選択してください</span><span class="sxs-lookup"><span data-stu-id="68195-136">Reset the data mart and select a reason</span></span>
+<span data-ttu-id="5180f-132">財務報告 7.2.1 以前のリリースを使用している場合で、勘定の名前を変更して勘定カテゴリの間で勘定を移動する場合、データ マートをリセットする必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-132">If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories.</span></span> <span data-ttu-id="5180f-133">これらのアクションにより、主勘定カテゴリが正しく整合されなくなることがあります。</span><span class="sxs-lookup"><span data-stu-id="5180f-133">These actions can cause main account categories to become misaligned.</span></span> <span data-ttu-id="5180f-134">**正しく整合されていない主勘定カテゴリ** フィールドには問題が発生しているかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-134">The **Misaligned main account categories** field shows whether you're experiencing that issue.</span></span>
 
-<span data-ttu-id="68195-137">データ マートのリセットが必要であると判断した場合は、**データ マートのリセット** チェック ボックスを選択し、**理由** フィールドで理由を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-137">If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field.</span></span> <span data-ttu-id="68195-138"> 次のオプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="68195-138">The following options are available:</span></span>
+### <a name="reset-the-data-mart-and-select-a-reason"></a><span data-ttu-id="5180f-135">データマートをリセットし、理由をひとつ選択してください</span><span class="sxs-lookup"><span data-stu-id="5180f-135">Reset the data mart and select a reason</span></span>
 
-- <span data-ttu-id="68195-139">**データが不足しているか、正しくありません** – 統計に基づき、決定したデータが存在しない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="68195-139">**Missing or incorrect data** – Based on the statistics, you've determined that data might be missing.</span></span> <span data-ttu-id="68195-140">続行する前に、根本原因を判断するためにサポートを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="68195-140">Before you continue, we recommend that you work with Support to determine the root cause.</span></span>
-- <span data-ttu-id="68195-141">**データベースの復元** – データベースが復元されましたが、財務報告のデータ マートのデータベースは復元されませんでした。</span><span class="sxs-lookup"><span data-stu-id="68195-141">**Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.</span></span>
-- <span data-ttu-id="68195-142">**その他** – 別の理由によりデータ マートをリセットしています。</span><span class="sxs-lookup"><span data-stu-id="68195-142">**Other** – You're resetting the data mart for another reason.</span></span> <span data-ttu-id="68195-143">問題があることを懸念する場合は、識別のためにサポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="68195-143">If you're concerned that there is an issue, contact Support to identify it.</span></span>
+<span data-ttu-id="5180f-136">データ マートのリセットが必要であると判断した場合は、**データ マートのリセット** チェック ボックスを選択し、**理由**フィールドで理由を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-136">If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field.</span></span> <span data-ttu-id="5180f-137"> 次のオプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="5180f-137">The following options are available:</span></span>
 
-<span data-ttu-id="68195-144">[![データ マートのリセット](./media/Integration.png)](./media/Integration.png)</span><span class="sxs-lookup"><span data-stu-id="68195-144">[![Reset data mart](./media/Integration.png)](./media/Integration.png)</span></span>
+- <span data-ttu-id="5180f-138">**データが不足しているか、正しくありません** – 統計に基づき、決定したデータが存在しない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-138">**Missing or incorrect data** – Based on the statistics, you've determined that data might be missing.</span></span> <span data-ttu-id="5180f-139">続行する前に、根本原因を判断するためにサポートを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="5180f-139">Before you continue, we recommend that you work with Support to determine the root cause.</span></span>
+- <span data-ttu-id="5180f-140">**データベースの復元** – データベースが復元されましたが、財務報告のデータ マートのデータベースは復元されませんでした。</span><span class="sxs-lookup"><span data-stu-id="5180f-140">**Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.</span></span>
+- <span data-ttu-id="5180f-141">**その他** – 別の理由によりデータ マートをリセットしています。</span><span class="sxs-lookup"><span data-stu-id="5180f-141">**Other** – You're resetting the data mart for another reason.</span></span> <span data-ttu-id="5180f-142">問題があることを懸念する場合は、識別のためにサポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="5180f-142">If you're concerned that there is an issue, contact Support to identify it.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="68195-145">リセットを開始する前に、すべてのデータ マート リセット タスクが初回の読み込みを完了したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="68195-145">Verify that all data mart reset tasks have completed an initial load before you begin a reset.</span></span> <span data-ttu-id="68195-146">**ツール** &gt; **統合の状態** を選択して、前回のランタイム列で値を探すことにより、これを確定できます。</span><span class="sxs-lookup"><span data-stu-id="68195-146">You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.</span></span>
-
-#### <a name="clear-users-and-companies"></a><span data-ttu-id="68195-147">ユーザーと会社をクリア</span><span class="sxs-lookup"><span data-stu-id="68195-147">Clear users and companies</span></span>
-
-<span data-ttu-id="68195-148">データベースの復元後にユーザーまたは会社を変更した場合は、 **ユーザーと企業の削除** チェックボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-148">Select the **Clear users and companies** check box if you restored your database, but then changed users or companies.</span></span> <span data-ttu-id="68195-149">このチェックボックスをオンにすることはほとんどありません。</span><span class="sxs-lookup"><span data-stu-id="68195-149">You should rarely have to select this check box.</span></span>
-
-<span data-ttu-id="68195-150">リセット プロセスを開始する準備ができたら、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-150">When you're ready to start the reset process, select **OK**.</span></span> <span data-ttu-id="68195-151">プロセスを開始する準備ができていることを確認するように求められます。</span><span class="sxs-lookup"><span data-stu-id="68195-151">You're prompted to confirm that you're ready to start the process.</span></span> <span data-ttu-id="68195-152">財務諸表は、リセット中およびその後に発生する最初のデータ統合中には使用できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="68195-152">Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.</span></span>
-
-<span data-ttu-id="68195-153">統合の状態を確認する場合は、**ツール** &gt; **統合の状態** を選択し、統合が最後に実行された時刻と状態を表示します。</span><span class="sxs-lookup"><span data-stu-id="68195-153">If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.</span></span>
-
-<span data-ttu-id="68195-154">[![統合のステータスを表示](./media/New-integration.PNG)](./media/New-integration.PNG)</span><span class="sxs-lookup"><span data-stu-id="68195-154">[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)</span></span>
+<span data-ttu-id="5180f-143">[![データ マートのリセット](./media/Integration.png)](./media/Integration.png)</span><span class="sxs-lookup"><span data-stu-id="5180f-143">[![Reset data mart](./media/Integration.png)](./media/Integration.png)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="68195-155">すべてのマッピングの状態が **RanToCompletion** と表示され、 **統合の状態** ダイアログボックスの左下隅に「統合が完了しました」というメッセージが表示されたら、リセットは完了です。</span><span class="sxs-lookup"><span data-stu-id="68195-155">The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.</span></span>
+> <span data-ttu-id="5180f-144">リセットを開始する前に、すべてのデータ マート リセット タスクが初回の読み込みを完了したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="5180f-144">Verify that all data mart reset tasks have completed an initial load before you begin a reset.</span></span> <span data-ttu-id="5180f-145">**ツール** &gt; **統合の状態** を選択して、前回のランタイム列で値を探すことにより、これを確定できます。</span><span class="sxs-lookup"><span data-stu-id="5180f-145">You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.</span></span>
 
-## <a name="reset-the-financial-reporting-data-mart-through-windows-powershell"></a><span data-ttu-id="68195-156">Windows PowerShell を介して Financial Reporting の データマートをリセットする</span><span class="sxs-lookup"><span data-stu-id="68195-156">Reset the Financial reporting data mart through Windows PowerShell</span></span>
+#### <a name="clear-users-and-companies"></a><span data-ttu-id="5180f-146">ユーザーと会社をクリア</span><span class="sxs-lookup"><span data-stu-id="5180f-146">Clear users and companies</span></span>
 
-<span data-ttu-id="68195-157">データベースをバックアップから復元したか別の環境からデータベースをコピーした場合、このセクションのステップに従って、財務報告のデータ マートが復元したデータベースを正しく使用していることを保証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="68195-157">If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.</span></span>
+<span data-ttu-id="5180f-147">データベースの復元後にユーザーまたは会社を変更した場合は、 **ユーザーと企業の削除** チェックボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-147">Select the **Clear users and companies** check box if you restored your database, but then changed users or companies.</span></span> <span data-ttu-id="5180f-148">このチェックボックスをオンにすることはほとんどありません。</span><span class="sxs-lookup"><span data-stu-id="5180f-148">You should rarely have to select this check box.</span></span>
+
+<span data-ttu-id="5180f-149">リセット プロセスを開始する準備ができたら、**OK**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-149">When you're ready to start the reset process, select **OK**.</span></span> <span data-ttu-id="5180f-150">プロセスを開始する準備ができていることを確認するように求められます。</span><span class="sxs-lookup"><span data-stu-id="5180f-150">You're prompted to confirm that you're ready to start the process.</span></span> <span data-ttu-id="5180f-151">財務諸表は、リセット中およびその後に発生する最初のデータ統合中には使用できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-151">Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.</span></span>
+
+<span data-ttu-id="5180f-152">統合の状態を確認する場合は、**ツール** &gt; **統合の状態**を選択し、統合が最後に実行された時刻と状態を表示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-152">If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.</span></span>
+
+<span data-ttu-id="5180f-153">[![統合のステータスを表示](./media/New-integration.PNG)](./media/New-integration.PNG)</span><span class="sxs-lookup"><span data-stu-id="5180f-153">[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="68195-158">このプロセスにおける手順は、Microsoft Dynamics 365 Finance アプリケーション の バージョン 7.0.1 (2016年5月) (アプリケーション ビルド 7.0.1265.23014 と Financial Reporting ビルド 7.0.10000.4) 以降に対応しています。</span><span class="sxs-lookup"><span data-stu-id="68195-158">The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later.</span></span> <span data-ttu-id="68195-159">以前のバージョンを持っている場合は、サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="68195-159">If you have an earlier version, contact Support for assistance.</span></span>
+> <span data-ttu-id="5180f-154">すべてのマッピングの状態が **RanToCompletion** と表示され、 **統合の状態** ダイアログボックスの左下隅に「統合が完了しました」というメッセージが表示されたら、リセットは完了です。</span><span class="sxs-lookup"><span data-stu-id="5180f-154">The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.</span></span>
 
-### <a name="stop-services"></a><span data-ttu-id="68195-160">サービスの停止</span><span class="sxs-lookup"><span data-stu-id="68195-160">Stop services</span></span>
+## <a name="reset-the-financial-reporting-data-mart-through-windows-powershell"></a><span data-ttu-id="5180f-155">Windows PowerShell を介して Financial Reporting の データマートをリセットする</span><span class="sxs-lookup"><span data-stu-id="5180f-155">Reset the Financial reporting data mart through Windows PowerShell</span></span>
 
-<span data-ttu-id="68195-161">次の Microsoft Windows サービスでは、Finance and Operations データベースへの接続が提供されます。</span><span class="sxs-lookup"><span data-stu-id="68195-161">The following Microsoft Windows services will have open connections to the Finance and Operations database.</span></span> <span data-ttu-id="68195-162">したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。</span><span class="sxs-lookup"><span data-stu-id="68195-162">Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.</span></span>
+<span data-ttu-id="5180f-156">データベースをバックアップから復元したか別の環境からデータベースをコピーした場合、このセクションのステップに従って、財務報告のデータ マートが復元したデータベースを正しく使用していることを保証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-156">If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.</span></span>
 
-- <span data-ttu-id="68195-163">ワールド ワイド Web パブリッシング サービス (すべての アプリケーション オブジェクト サーバー (AOS) \[AOS\] の コンピューター)</span><span class="sxs-lookup"><span data-stu-id="68195-163">World wide web publishing service (on all Application Object Servers \[AOS\] computers)</span></span>
-- <span data-ttu-id="68195-164"> バッチ管理サービス (非プライベート AOS コンピューター上のみ)</span><span class="sxs-lookup"><span data-stu-id="68195-164">Batch Management Service (on non-private AOS computers only)</span></span>
-- <span data-ttu-id="68195-165">Management Reporter 2012 プロセス サービス (ビジネス インテリジェンス \[BI\] の コンピューター のみ)</span><span class="sxs-lookup"><span data-stu-id="68195-165">Management Reporter 2012 Process Service (on Business intelligence \[BI\] computers only)</span></span>
+### <a name="stop-services"></a><span data-ttu-id="5180f-157">サービスの停止</span><span class="sxs-lookup"><span data-stu-id="5180f-157">Stop services</span></span>
 
-### <a name="reset"></a><span data-ttu-id="68195-166">リセット</span><span class="sxs-lookup"><span data-stu-id="68195-166">Reset</span></span>
+<span data-ttu-id="5180f-158">次の Microsoft Windows サービスでは、Finance and Operations データベースへの接続が提供されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-158">The following Microsoft Windows services will have open connections to the Finance and Operations database.</span></span> <span data-ttu-id="5180f-159">したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-159">Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.</span></span>
 
-#### <a name="download-the-latest-minorversiondataupgradezip-package"></a><span data-ttu-id="68195-167">最新の MinorVersionDataUpgrade.zip パッケージをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="68195-167">Download the latest MinorVersionDataUpgrade.zip package</span></span>
+- <span data-ttu-id="5180f-160">ワールド ワイド Web パブリッシング サービス (すべての アプリケーション オブジェクト サーバー (AOS) \[AOS\] の コンピューター)</span><span class="sxs-lookup"><span data-stu-id="5180f-160">World wide web publishing service (on all Application Object Servers \[AOS\] computers)</span></span>
+- <span data-ttu-id="5180f-161">バッチ管理サービス (非プライベート AOS コンピューター上のみ)</span><span class="sxs-lookup"><span data-stu-id="5180f-161">Batch Management Service (on non-private AOS computers only)</span></span>
+- <span data-ttu-id="5180f-162">Management Reporter 2012 プロセス サービス (ビジネス インテリジェンス \[BI\] の コンピューター のみ)</span><span class="sxs-lookup"><span data-stu-id="5180f-162">Management Reporter 2012 Process Service (on Business intelligence \[BI\] computers only)</span></span>
 
-<span data-ttu-id="68195-168">最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="68195-168">Download the latest MinorVersionDataUpgrade.zip package.</span></span> <span data-ttu-id="68195-169">データ更新パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータを更新するトピックの [開発環境またはデモ環境でデータを更新する](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68195-169">For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.</span></span>
+### <a name="reset"></a><span data-ttu-id="5180f-163">リセット</span><span class="sxs-lookup"><span data-stu-id="5180f-163">Reset</span></span>
 
-<span data-ttu-id="68195-170">MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="68195-170">An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package.</span></span> <span data-ttu-id="68195-171">そのため、当該トピックの 「最新のデータ アップグレード 展開可が能なパッケージをダウンロードする」 セクションの手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="68195-171">Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that topic.</span></span> <span data-ttu-id="68195-172">トピックのその他のすべての手順をスキップできます。</span><span class="sxs-lookup"><span data-stu-id="68195-172">You can skip all the other steps in the topic.</span></span>
+#### <a name="download-the-latest-minorversiondataupgradezip-package"></a><span data-ttu-id="5180f-164">最新の MinorVersionDataUpgrade.zip パッケージをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="5180f-164">Download the latest MinorVersionDataUpgrade.zip package</span></span>
 
-#### <a name="run-prerequisite-sql-scripts-against-the-database"></a><span data-ttu-id="68195-173">データベースに対して 前提となる SQL スクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="68195-173">Run prerequisite SQL scripts against the database</span></span>
+<span data-ttu-id="5180f-165">最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="5180f-165">Download the latest MinorVersionDataUpgrade.zip package.</span></span> <span data-ttu-id="5180f-166">データ更新パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータを更新するトピックの [開発環境またはデモ環境でデータを更新する](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-166">For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.</span></span>
 
-<span data-ttu-id="68195-174">財務報告データベースに対してではなく、データベースに対して、次のスクリプトを実行します:</span><span class="sxs-lookup"><span data-stu-id="68195-174">Run the following scripts against the database (not against the Financial reporting database):</span></span>
+<span data-ttu-id="5180f-167">MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="5180f-167">An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package.</span></span> <span data-ttu-id="5180f-168">そのため、当該トピックの 「最新のデータ アップグレード 展開可が能なパッケージをダウンロードする」 セクションの手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-168">Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that topic.</span></span> <span data-ttu-id="5180f-169">トピックのその他のすべての手順をスキップできます。</span><span class="sxs-lookup"><span data-stu-id="5180f-169">You can skip all the other steps in the topic.</span></span>
 
-- <span data-ttu-id="68195-175">DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql</span><span class="sxs-lookup"><span data-stu-id="68195-175">DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql</span></span>
-- <span data-ttu-id="68195-176">DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql</span><span class="sxs-lookup"><span data-stu-id="68195-176">DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql</span></span>
+#### <a name="run-prerequisite-sql-scripts-against-the-database"></a><span data-ttu-id="5180f-170">データベースに対して 前提となる SQL スクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="5180f-170">Run prerequisite SQL scripts against the database</span></span>
 
-<span data-ttu-id="68195-177">これらのスクリプトは、ユーザー、ロール、変更の追跡の設定が正しいことを保証する助けになります。</span><span class="sxs-lookup"><span data-stu-id="68195-177">These scripts help guarantee that the users, roles, and change tracking settings are correct.</span></span>
+<span data-ttu-id="5180f-171">財務報告データベースに対してではなく、データベースに対して、次のスクリプトを実行します:</span><span class="sxs-lookup"><span data-stu-id="5180f-171">Run the following scripts against the database (not against the Financial reporting database):</span></span>
 
-#### <a name="run-a-windows-powershell-script-to-reset-the-database"></a><span data-ttu-id="68195-178">Windows PowerShell スクリプトを実行してデータベースのリセットをする</span><span class="sxs-lookup"><span data-stu-id="68195-178">Run a Windows PowerShell script to reset the database</span></span>
+- <span data-ttu-id="5180f-172">DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql</span><span class="sxs-lookup"><span data-stu-id="5180f-172">DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql</span></span>
+- <span data-ttu-id="5180f-173">DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql</span><span class="sxs-lookup"><span data-stu-id="5180f-173">DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql</span></span>
 
-<span data-ttu-id="68195-179">AOS コンピュータで、管理者として Microsoft Windows PowerShell を開始し、アプリケーションと財務報告との統合をリセットするために次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68195-179">On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.</span></span>
+<span data-ttu-id="5180f-174">これらのスクリプトは、ユーザー、ロール、変更の追跡の設定が正しいことを保証する助けになります。</span><span class="sxs-lookup"><span data-stu-id="5180f-174">These scripts help guarantee that the users, roles, and change tracking settings are correct.</span></span>
+
+#### <a name="run-a-windows-powershell-script-to-reset-the-database"></a><span data-ttu-id="5180f-175">Windows PowerShell スクリプトを実行してデータベースのリセットをする</span><span class="sxs-lookup"><span data-stu-id="5180f-175">Run a Windows PowerShell script to reset the database</span></span>
+
+<span data-ttu-id="5180f-176">AOS コンピュータで、管理者として Microsoft Windows PowerShell を開始し、アプリケーションと財務報告との統合をリセットするために次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5180f-176">On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.</span></span>
 
 ```powershell
 F:
@@ -135,37 +129,37 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
 ```
 
 > [!NOTE]
-> - <span data-ttu-id="68195-180">SkipMRTableReset を使用している場合は、ツリーユニットのセキュリティが維持されます。</span><span class="sxs-lookup"><span data-stu-id="68195-180">SkipMRTableReset preserves tree unit security if you're using it.</span></span>
-> - <span data-ttu-id="68195-181">SkipMRTableReset に一致するパラメーターが見つからないエラーが発生する場合は、パラメーターを削除して、もう一度行うことができます (以降のバージョンは、このスイッチを含めるための既定の動作更新が完了)。</span><span class="sxs-lookup"><span data-stu-id="68195-181">If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).</span></span>
+> - <span data-ttu-id="5180f-177">SkipMRTableReset を使用している場合は、ツリーユニットのセキュリティが維持されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-177">SkipMRTableReset preserves tree unit security if you're using it.</span></span>
+> - <span data-ttu-id="5180f-178">SkipMRTableReset に一致するパラメーターが見つからないエラーが発生する場合は、パラメーターを削除して、もう一度行うことができます (以降のバージョンは、このスイッチを含めるための既定の動作更新が完了)。</span><span class="sxs-lookup"><span data-stu-id="5180f-178">If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).</span></span>
 
-<span data-ttu-id="68195-182">ここでは **Reset-DatamartIntegration** コマンドのパラメータについて説明します:</span><span class="sxs-lookup"><span data-stu-id="68195-182">Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:</span></span>
+<span data-ttu-id="5180f-179">ここでは **Reset-DatamartIntegration** コマンドのパラメータについて説明します:</span><span class="sxs-lookup"><span data-stu-id="5180f-179">Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:</span></span>
 
-- <span data-ttu-id="68195-183">**-Reason** の有効な値は、**SERVICING**、**BADDATA**、および **OTHER** です。</span><span class="sxs-lookup"><span data-stu-id="68195-183">The valid values for **-Reason** are **SERVICING**, **BADDATA**, and **OTHER**.</span></span>
-- <span data-ttu-id="68195-184">**-ReasonDetail** パラメーターは自由書式です。</span><span class="sxs-lookup"><span data-stu-id="68195-184">The **-ReasonDetail** parameter is free text.</span></span>
-- <span data-ttu-id="68195-185">理由と理由の詳細はテレメトリーまたは環境モニタリングに記録されます。</span><span class="sxs-lookup"><span data-stu-id="68195-185">The reason and reason detail will be recorded in telemetry/environment monitoring.</span></span>
+- <span data-ttu-id="5180f-180">**-Reason** の有効な値は、**SERVICING**、**BADDATA**、および **OTHER** です。</span><span class="sxs-lookup"><span data-stu-id="5180f-180">The valid values for **-Reason** are **SERVICING**, **BADDATA**, and **OTHER**.</span></span>
+- <span data-ttu-id="5180f-181">**-ReasonDetail** パラメーターは自由書式です。</span><span class="sxs-lookup"><span data-stu-id="5180f-181">The **-ReasonDetail** parameter is free text.</span></span>
+- <span data-ttu-id="5180f-182">理由と理由の詳細はテレメトリーまたは環境モニタリングに記録されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-182">The reason and reason detail will be recorded in telemetry/environment monitoring.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="68195-186">コマンドを実行した後、データベースをリセットすることを確認するために **Y** を入力するように求められます。</span><span class="sxs-lookup"><span data-stu-id="68195-186">After you run the commands, you will be asked to enter **Y** to confirm that you want to reset the database.</span></span>
+> <span data-ttu-id="5180f-183">コマンドを実行した後、データベースをリセットすることを確認するために **Y** を入力するように求められます。</span><span class="sxs-lookup"><span data-stu-id="5180f-183">After you run the commands, you will be asked to enter **Y** to confirm that you want to reset the database.</span></span>
 
-#### <a name="restart-services"></a><span data-ttu-id="68195-187">サービスをリセット</span><span class="sxs-lookup"><span data-stu-id="68195-187">Restart services</span></span>
+#### <a name="restart-services"></a><span data-ttu-id="5180f-184">サービスをリセット</span><span class="sxs-lookup"><span data-stu-id="5180f-184">Restart services</span></span>
 
-<span data-ttu-id="68195-188">services.msc を使用して、以前に停止したサービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="68195-188">Use services.msc to restart the services that you stopped earlier:</span></span>
+<span data-ttu-id="5180f-185">services.msc を使用して、以前に停止したサービスを再起動します。</span><span class="sxs-lookup"><span data-stu-id="5180f-185">Use services.msc to restart the services that you stopped earlier:</span></span>
 
-- <span data-ttu-id="68195-189">ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)</span><span class="sxs-lookup"><span data-stu-id="68195-189">World wide web publishing service (on all AOS computers)</span></span>
-- <span data-ttu-id="68195-190"> バッチ管理サービス (非プライベート AOS コンピューター上のみ)</span><span class="sxs-lookup"><span data-stu-id="68195-190">Batch Management Service (on non-private AOS computers only)</span></span>
-- <span data-ttu-id="68195-191">Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)</span><span class="sxs-lookup"><span data-stu-id="68195-191">Management Reporter 2012 Process Service (on BI computers only)</span></span>
+- <span data-ttu-id="5180f-186">ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)</span><span class="sxs-lookup"><span data-stu-id="5180f-186">World wide web publishing service (on all AOS computers)</span></span>
+- <span data-ttu-id="5180f-187">バッチ管理サービス (非プライベート AOS コンピューター上のみ)</span><span class="sxs-lookup"><span data-stu-id="5180f-187">Batch Management Service (on non-private AOS computers only)</span></span>
+- <span data-ttu-id="5180f-188">Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)</span><span class="sxs-lookup"><span data-stu-id="5180f-188">Management Reporter 2012 Process Service (on BI computers only)</span></span>
 
-## <a name="reset-the-financial-reporting-data-mart-for-dynamics-365-finance--operations-on-premises-through-sql-server-management-studio"></a><span data-ttu-id="68195-192">SQL Server Management Studio を介して、 Dynamics 365 Finance と Operations (on-premises) の Financial Reporting データマート をリセットする</span><span class="sxs-lookup"><span data-stu-id="68195-192">Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio</span></span>
+## <a name="reset-the-financial-reporting-data-mart-for-dynamics-365-finance--operations-on-premises-through-sql-server-management-studio"></a><span data-ttu-id="5180f-189">SQL Server Management Studio を介して、 Dynamics 365 Finance と Operations (on-premises) の Financial Reporting データマート をリセットする</span><span class="sxs-lookup"><span data-stu-id="5180f-189">Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio</span></span>
 
-1. <span data-ttu-id="68195-193">すべてのユーザーに、レポート デザイナーを閉じて Financial Reporting に関する作業を終了するように指示します。</span><span class="sxs-lookup"><span data-stu-id="68195-193">Instruct all users to close Report designer and exit the Financial reporting area.</span></span>
-2. <span data-ttu-id="68195-194">財務諸表データベース (MRDB) に対して、次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="68195-194">Run the following script against the Financial reporting database (MRDB).</span></span>
+<span data-ttu-id="5180f-190">作業を開始する前に、すべてのユーザーがレポート デザイナーを閉じて、財務報告エリアを終了していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-190">Before getting started, be sure that all users close Report designer and exit the Financial reporting area.</span></span>
+
+1. <span data-ttu-id="5180f-191">MRDB とも呼ばれる SQL Server 内の ManagementReporter という名前の財務報告に使用されるデータベースで、次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="5180f-191">On the database used for Financial reporting, which is named ManagementReporter within SQL Server, which is also referred to as MRDB, execute the following script.</span></span> <span data-ttu-id="5180f-192">2020 年 4 月 9 日更新: Reset Datamart Begin.txt</span><span class="sxs-lookup"><span data-stu-id="5180f-192">which was last updated April 9, 2020: Reset Datamart Begin.txt</span></span>
 
     ```sql
     ------------------------------------------------------------------------------------------
-    ---- Set service into disabled mode
     ------------------------------------------------------------------------------------------
-
     --setup for servicing mode
+
     BEGIN TRANSACTION
     IF NOT EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
     BEGIN 
@@ -180,7 +174,7 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
 
     IF NOT EXISTS(SELECT NAME FROM SYS.TABLES WHERE Name = 'ServicingLock')
     BEGIN 
-        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime      null)
+        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime null)
     END
 
     IF NOT EXISTS(SELECT 1 FROM [Servicing].[ServicingLock])
@@ -189,12 +183,19 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
     END
     COMMIT TRANSACTION
 
-    --Enable servicing mode
+
+    PRINT 'Entering servicing mode'
+    DECLARE @result int;
+    EXEC @result = sp_getapplock @DbPrincipal='public', @Resource='ServicingLock', @LockMode='Exclusive', @LockOwner='Session', @LockTimeout=300000;
+    IF @result < 0 RAISERROR ('Unable to acquire SQL applock. Result: %d', 16, 1, @result);
+
+    BEGIN TRY
     IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
     BEGIN       
-       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0        
-       UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
+           UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0        
+           UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
     END
+    PRINT 'Acquired servicing locks'
 
     --Disable maps
     DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
@@ -207,13 +208,12 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
     WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
     PRINT 'Disable integration tasks'
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-    ```
 
-3. <span data-ttu-id="68195-195">データベース (AXDB) にある FINANCIALREPORTS テーブルのすべてのレコードを切り捨て、または削除します。</span><span class="sxs-lookup"><span data-stu-id="68195-195">Truncate or delete all records from the FINANCIALREPORTS table in the database (AXDB).</span></span>
-4. <span data-ttu-id="68195-196">FINANCIALREPORTVERSION テーブルがデータベースに存在する場合、このテーブルのすべてのレコードを切り捨て、または削除します。</span><span class="sxs-lookup"><span data-stu-id="68195-196">Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the database.</span></span> <span data-ttu-id="68195-197">テーブルがデータベースに存在しない場合、このステップを省略します。</span><span class="sxs-lookup"><span data-stu-id="68195-197">If the table doesn't exist in the database, skip this step.</span></span>
-5. <span data-ttu-id="68195-198">財務諸表データベースに対して、**ResetDatamart.sql** を実行します。</span><span class="sxs-lookup"><span data-stu-id="68195-198">Run the **ResetDatamart.sql** script against the Financial reporting database.</span></span> <span data-ttu-id="68195-199">このスクリプトはデータ マートの統合を無効にし、すべてのデータ マートを削除し、その後データ マートの統合を再び有効にします。</span><span class="sxs-lookup"><span data-stu-id="68195-199">This script disables the data mart integration, deletes all the data mart data, and then reenables the data mart integration.</span></span>
+    ------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------
 
-    ```sql
+
     ------------------------------
     PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
     ------------------------------
@@ -222,8 +222,8 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
     BEGIN
         IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
         BEGIN
-            --create table to store indexes
-            -- Indexes of different table can have same index_id, but we need unique index id
+            --create table to store indexses
+            -- Indexes of different table can have same index_id,but we need unique index id
             Create table [Datamart].[AttributeValueIndexesBackUp]
             (
                 IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
@@ -239,15 +239,21 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
             )
         END
 
-        --truncate table to increase index drop performance
-        PRINT('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
-        EXEC('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
-        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'FACTID','[Datamart].[FactAttributeValue]'
+        IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'FactAttributeValue')) 
+        BEGIN
+            --truncate table to increase index drop performance
+            PRINT('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+            EXEC('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+            EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'FACTID','[Datamart].[FactAttributeValue]'
+        END
 
-        --truncate table to increase index drop performance
-        PRINT('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
-        EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
-        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
+        IF (EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'DimensionValueAttributeValue')) 
+        BEGIN
+            --truncate table to increase index drop performance
+            PRINT('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+            EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+            EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
+        END
     End
 
     ------------------------------
@@ -368,270 +374,340 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
                     [OrganizationKey] [nvarchar](100) NULL,
                     [FreshnessDate][datetime2] NULL default sysutcdatetime())
 
-            CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
-        END
-
-        IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationResolving' AND TABLE_SCHEMA = 'Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[DimensionCombinationResolving]
-            (
-                [Id] [BIGINT] NOT NULL,
-                [Description] [NVARCHAR](51) NULL,
-                [SourceKey] [NVARCHAR](100) NULL,
-                [OrganizationId] [INT] NULL
-            )
-        END
-
-        IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionCombination' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[DimensionCombination](
-                [Id] [bigint] NOT NULL,
-                [Description] [nvarchar](51) NULL,
-                [SourceKey] [nvarchar](100) NULL,
-                [OrganizationId] [int] NULL
-            )
-        END
-
-        IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='FactAttributeValue' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[FactAttributeValue](
-                [FactId] [bigint] NOT NULL
-            )
-        END
-
-        IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionValueAttributeValue' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[DimensionValueAttributeValue](
-                [DimensionValueId] [bigint] NOT NULL
-            )
-        END
-
-        IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='PeriodExchangeRate' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[PeriodExchangeRate]
-            (
-                [PeriodId] INT NOT NULL,
-                [FromUnitOfMeasureId] INT NOT NULL,
-                [CurrencyMethod] TINYINT NOT NULL,
-                [ExchangeRateTypeId] INT NOT NULL,
-                CONSTRAINT [PK_PeriodExchangeRates] PRIMARY KEY ([FromUnitOfMeasureId], [PeriodId], [CurrencyMethod], [ExchangeRateTypeId])
-            )
-        END
-
-        IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalance' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[TranslatedPeriodBalance](
-                [PeriodId] [INT] NOT NULL,
-                [DimensionsId] [BIGINT] NOT NULL,
-                [ScenarioId] [INT] NOT NULL,
-                [FactType] [SMALLINT] NOT NULL,
-                [PostingLayerId] [INT] NULL
-            )
-        END
-
-        IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalanceChanges' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].TranslatedPeriodBalanceChanges(PeriodId bigint, DimensionsId bigint, ScenarioId int, PostingLayerId int null, FactType smallint,
-                    constraint [IDX_BC1] unique Clustered (PeriodId, DimensionsId, ScenarioId, PostingLayerId, FactType DESC))
-        END
-
-        IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimensionCombinationArchive' AND TABLE_SCHEMA='Datamart')
-        BEGIN
-            IF EXISTS (SELECT TOP 1 * FROM [Datamart].[DimensionCombinationArchive])
-            BEGIN
-                -- move archived combinations from the obsolete DimensionCombinationArchive table to a new table in the archive
-                -- and set its generation to 5, so it will run in 4 hours (which is how long the archived combinations were attempted originally before moving to the archive table).
-                DECLARE @archiveId INT = 0
-                INSERT INTO [Datamart].[Archive] (Generation, NextAttempt) VALUES (5, DATEADD(MINUTE, POWER(3, 5), SYSUTCDATETIME()))
-                SET @archiveId = SCOPE_IDENTITY()
-
-                DECLARE @comboArchiveTableName nvarchar(100) = 'DimensionCombinationStaging' + CAST(@archiveId as nvarchar(10))
-                EXEC sp_rename 'Datamart.DimensionCombinationArchive', @comboArchiveTableName
-
-                DECLARE @factArchiveTableName nvarchar(100) = 'FactStaging' + CAST(@archiveId as nvarchar(10))
-                EXEC ('select top 0 * into Datamart.' + @factArchiveTableName + ' from Datamart.FactStaging')
+                CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
             END
-            ELSE
+
+            IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationResolving' AND TABLE_SCHEMA = 'Datamart')
             BEGIN
-                DROP TABLE [Datamart].[DimensionCombinationArchive]
+                CREATE TABLE [Datamart].[DimensionCombinationResolving]
+                (
+                    [Id] [BIGINT] NOT NULL,
+                    [Description] [NVARCHAR](51) NULL,
+                    [SourceKey] [NVARCHAR](100) NULL,
+                    [OrganizationId] [INT] NULL
+                )
             END
-        END
 
-        IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationUnreferenced' and TABLE_SCHEMA ='Datamart')
-        BEGIN
-            CREATE TABLE [Datamart].[DimensionCombinationUnreferenced]
-            (
-                [Id] [bigint] NOT NULL,
-                [Description] [nvarchar](51) NULL,
-                [SourceKey] [nvarchar](100) NULL,
-                [OrganizationId] [int] NULL
-            )
-
-            DECLARE @columnIndex int
-            DECLARE @idColumn nvarchar(128)
-            DECLARE columnCursor CURSOR LOCAL FAST_FORWARD FOR SELECT DISTINCT ColumnIndex FROM [Datamart].DimensionDefinition ORDER BY ColumnIndex
-            OPEN columnCursor
-            FETCH NEXT FROM columnCursor INTO @columnIndex
-            WHILE (@@FETCH_STATUS <> -1)
+            IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionCombination' AND TABLE_SCHEMA='Datamart')
             BEGIN
-                SET @idColumn = 'Dimension' + CAST(@columnIndex as nvarchar(3)) + 'Id'
-                EXEC [Datamart].AddColumn @schemaName = 'Datamart', @tableName = 'DimensionCombinationUnreferenced', @columnName = @idColumn, @columnType = 'bigint NULL'
-                FETCH NEXT FROM columnCursor INTO @columnIndex
+                CREATE TABLE [Datamart].[DimensionCombination](
+                    [Id] [bigint] NOT NULL,
+                    [Description] [nvarchar](51) NULL,
+                    [SourceKey] [nvarchar](100) NULL,
+                    [OrganizationId] [int] NULL
+                )
             END
-            CLOSE columnCursor
-            DEALLOCATE columnCursor
 
-            DECLARE @dcColumnList nvarchar(max) = ''
-            DECLARE @rowsCopied bigint
-            DECLARE @columnName nvarchar(100)
-            DECLARE columnNameCursor cursor local fast_forward for select distinct Name from sys.columns c where c.object_id = OBJECT_ID('DimensionCombination')
-            OPEN columnNameCursor
-            FETCH NEXT FROM columnNameCursor INTO @columnName
-            WHILE (@@FETCH_STATUS <> -1)
+            IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='FactAttributeValue' AND TABLE_SCHEMA='Datamart')
             BEGIN
-                IF @dcColumnList <> ''
-                    SET @dcColumnList = @dcColumnList + ', '
-
-                SET @dcColumnList = @dcColumnList + @columnName
-                FETCH NEXT FROM columnNameCursor INTO @columnName
+                CREATE TABLE [Datamart].[FactAttributeValue](
+                    [FactId] [bigint] NOT NULL
+                )
             END
-            CLOSE columnNameCursor
-            DEALLOCATE columnNameCursor
 
-            if @dcColumnList <> ''
+            IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionValueAttributeValue' AND TABLE_SCHEMA='Datamart')
             BEGIN
-                exec ('
-                    insert into [Datamart].DimensionCombinationUnreferenced (' + @dcColumnList + ')
-                    select ' + @dcColumnList + ' from [Datamart].DimensionCombination dc
-                    where dc.Id not in (Select distinct DimensionsId from [Datamart].Fact)')
+                CREATE TABLE [Datamart].[DimensionValueAttributeValue](
+                    [DimensionValueId] [bigint] NOT NULL
+                )
+            END
 
-                SET @rowsCopied = @@ROWCOUNT
-                IF @rowsCopied > 0
+            IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='PeriodExchangeRate' AND TABLE_SCHEMA='Datamart')
+            BEGIN
+                CREATE TABLE [Datamart].[PeriodExchangeRate]
+                (
+                    [PeriodId] INT NOT NULL,
+                    [FromUnitOfMeasureId] INT NOT NULL,
+                    [CurrencyMethod] TINYINT NOT NULL,
+                    [ExchangeRateTypeId] INT NOT NULL,
+                    CONSTRAINT [PK_PeriodExchangeRates] PRIMARY KEY ([FromUnitOfMeasureId], [PeriodId], [CurrencyMethod], [ExchangeRateTypeId])
+                )
+            END
+
+            IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalance' AND TABLE_SCHEMA='Datamart')
+            BEGIN
+                CREATE TABLE [Datamart].[TranslatedPeriodBalance](
+                    [PeriodId] [INT] NOT NULL,
+                    [DimensionsId] [BIGINT] NOT NULL,
+                    [ScenarioId] [INT] NOT NULL,
+                    [FactType] [SMALLINT] NOT NULL,
+                    [PostingLayerId] [INT] NULL
+                )
+            END
+
+            IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalanceChanges' AND TABLE_SCHEMA='Datamart')
+            BEGIN
+                CREATE TABLE [Datamart].TranslatedPeriodBalanceChanges(PeriodId bigint, DimensionsId bigint, ScenarioId int, PostingLayerId int null, FactType smallint,
+                        constraint [IDX_BC1] unique Clustered (PeriodId, DimensionsId, ScenarioId, PostingLayerId, FactType DESC))
+            END
+
+            IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimensionCombinationArchive' AND TABLE_SCHEMA='Datamart')
+            BEGIN
+                IF EXISTS (SELECT TOP 1 * FROM [Datamart].[DimensionCombinationArchive])
                 BEGIN
-                    DECLARE @comboCount bigint
-                    EXEC [Datamart].GetRowCount 'DimensionCombination', @comboCount
+                    -- move archived combinations from the obsolete DimensionCombinationArchive table to a new table in the archive
+                    -- and set its generation to 5, so it will run in 4 hours (which is how long the archived combinations were attempted originally before moving to the archive table).
+                    DECLARE @archiveId INT = 0
+                    INSERT INTO [Datamart].[Archive] (Generation, NextAttempt) VALUES (5, DATEADD(MINUTE, POWER(3, 5), SYSUTCDATETIME()))
+                    SET @archiveId = SCOPE_IDENTITY()
 
-                    IF (@rowsCopied * 2) > @comboCount
+                    DECLARE @comboArchiveTableName nvarchar(100) = 'DimensionCombinationStaging' + CAST(@archiveId as nvarchar(10))
+                    EXEC sp_rename 'Datamart.DimensionCombinationArchive', @comboArchiveTableName
+
+                    DECLARE @factArchiveTableName nvarchar(100) = 'FactStaging' + CAST(@archiveId as nvarchar(10))
+                    EXEC ('select top 0 * into Datamart.' + @factArchiveTableName + ' from Datamart.FactStaging')
+                END
+                ELSE
+                BEGIN
+                    DROP TABLE [Datamart].[DimensionCombinationArchive]
+                END
+            END
+
+            IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationUnreferenced' and TABLE_SCHEMA ='Datamart')
+            BEGIN
+                CREATE TABLE [Datamart].[DimensionCombinationUnreferenced]
+                (
+                    [Id] [bigint] NOT NULL,
+                    [Description] [nvarchar](51) NULL,
+                    [SourceKey] [nvarchar](100) NULL,
+                    [OrganizationId] [int] NULL
+                )
+
+                DECLARE @columnIndex int
+                DECLARE @idColumn nvarchar(128)
+                DECLARE columnCursor CURSOR LOCAL FAST_FORWARD FOR SELECT DISTINCT ColumnIndex FROM [Datamart].DimensionDefinition ORDER BY ColumnIndex
+                OPEN columnCursor
+                FETCH NEXT FROM columnCursor INTO @columnIndex
+                WHILE (@@FETCH_STATUS <> -1)
+                BEGIN
+                    SET @idColumn = 'Dimension' + CAST(@columnIndex as nvarchar(3)) + 'Id'
+                    EXEC [Datamart].AddColumn @schemaName = 'Datamart', @tableName = 'DimensionCombinationUnreferenced', @columnName = @idColumn, @columnType = 'bigint NULL'
+                    FETCH NEXT FROM columnCursor INTO @columnIndex
+                END
+                CLOSE columnCursor
+                DEALLOCATE columnCursor
+
+
+                DECLARE @dcColumnList nvarchar(max) = ''
+                DECLARE @rowsCopied bigint
+                DECLARE @columnName nvarchar(100)
+                DECLARE columnNameCursor cursor local fast_forward for select distinct Name from sys.columns c where c.object_id = OBJECT_ID('DimensionCombination')
+                OPEN columnNameCursor
+                FETCH NEXT FROM columnNameCursor INTO @columnName
+                WHILE (@@FETCH_STATUS <> -1)
+                BEGIN
+                    IF @dcColumnList <> ''
+                        SET @dcColumnList = @dcColumnList + ', '
+
+                    SET @dcColumnList = @dcColumnList + @columnName
+                    FETCH NEXT FROM columnNameCursor INTO @columnName
+                END
+                CLOSE columnNameCursor
+                DEALLOCATE columnNameCursor
+
+                if @dcColumnList <> ''
+                BEGIN
+                    exec ('
+                        insert into [Datamart].DimensionCombinationUnreferenced (' + @dcColumnList + ')
+                        select ' + @dcColumnList + ' from [Datamart].DimensionCombination dc
+                        where dc.Id not in (Select distinct DimensionsId from [Datamart].Fact)')
+
+                    SET @rowsCopied = @@ROWCOUNT
+                    IF @rowsCopied > 0
                     BEGIN
-                        -- most of the combinations in the combination table were unreferenced, so it would be faster to move the referenced out, truncate the table, then move back
-                        SELECT * INTO #referencedCombos from [Datamart].DimensionCombination dc
-                        WHERE dc.Id NOT IN (SELECT Id from [Datamart].DimensionCombinationUnreferenced)
+                        DECLARE @comboCount bigint
+                        EXEC [Datamart].GetRowCount 'DimensionCombination', @comboCount
 
-                        TRUNCATE TABLE [Datamart].[DimensionCombination]
+                        IF (@rowsCopied * 2) > @comboCount
+                        BEGIN
+                            -- most of the combinations in the combination table were unreferenced, so it would be faster to move the referenced out, truncate the table, then move back
+                            SELECT * INTO #referencedCombos from [Datamart].DimensionCombination dc
+                            WHERE dc.Id NOT IN (SELECT Id from [Datamart].DimensionCombinationUnreferenced)
 
-                        INSERT INTO [Datamart].[DimensionCombination]
-                        SELECT * FROM #referencedCombos
+                            TRUNCATE TABLE [Datamart].[DimensionCombination]
 
-                        DROP TABLE #referencedCombos
-                    END
-                    ELSE
-                    BEGIN
-                        -- we didn't find many unreferenced combinations, so delete them
-                        DELETE FROM [Datamart].[DimensionCombination] WHERE Id in (SELECT Id FROM [Datamart].[DimensionCombinationUnreferenced])
+                            INSERT INTO [Datamart].[DimensionCombination]
+                            SELECT * FROM #referencedCombos
+
+                            DROP TABLE #referencedCombos
+                        END
+                        ELSE
+                        BEGIN
+                            -- we didn't find many unreferenced combinations, so delete them
+                            DELETE FROM [Datamart].[DimensionCombination] WHERE Id in (SELECT Id FROM [Datamart].[DimensionCombinationUnreferenced])
+                        END
                     END
                 END
             END
         END
-    END
+
+
 
     -- Rebuild dropped indexes that are dynamic
     EXEC [Datamart].ConfigureIndexesAndConstraints
+    
+    EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+    END TRY
+    BEGIN CATCH
+    EXEC sys.sp_releaseapplock @Resource='ServicingLock', @LockOwner='Session'
+    ;THROW;
+    END CATCH
+    
 
-    --------------------------------------------------------------------------
-    ----- Re-Enable the service after resetting the tokens
-    --------------------------------------------------------------------------
+2. (Optional) On the MRDB, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
+> [!NOTE]
+> Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
 
-    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
-    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-
-    PRINT 'Reset the map tokens'
-    UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
-
-    PRINT 'Reset the tasks'
-    UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
-
-    PRINT 'Enable integration tasks, RunImmediately'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
-    WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
-    PRINT 'Enable the Maintenance Task'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
-    (SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
-
-    IF EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
+```sql
+-- Attempt to delete integrated users
+    DECLARE @userId nvarchar(max)
+    DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
+    select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+    OPEN removeUserCursor
+    FETCH NEXT FROM removeUserCursor INTO @userId
+    WHILE @@FETCH_STATUS = 0
     BEGIN
-        UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
+        BEGIN TRY
+           exec Reporting.SecurityUserDeleteRelatedEntities @userId
+           delete from Reporting.SecurityGroupUser where UserID = @userId
+           delete from Reporting.SecurityUser where UserID = @userId
+        END TRY
+        BEGIN CATCH
+        -- Just skip if we cannot delete a user, integration should take care of it
+        END CATCH
+        FETCH NEXT FROM removeUserCursor INTO @userId
     END
+    CLOSE removeUserCursor
+    DEALLOCATE removeUserCursor
 
-    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+-- Attempt to delete integrated companies
+    DECLARE @companyId nvarchar(max)
+    DECLARE removeCompanyCursor CURSOR LOCAL FAST_FORWARD FOR
+    select cc.ID from Reporting.ControlCompany cc join Reporting.ControlCompanyIntegration cci on cc.ID = cci.ID
+    OPEN removeCompanyCursor
+    FETCH NEXT FROM removeCompanyCursor INTO @companyId
+    WHILE @@FETCH_STATUS = 0
     BEGIN
-           UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
+        BEGIN TRY
+           delete from Reporting.ControlCompany where ID = @companyId
+        END TRY
+        BEGIN CATCH
+        -- Just skip if we cannot delete a company
+        END CATCH
+        FETCH NEXT FROM removeCompanyCursor INTO @companyId
     END
-    ```
+    CLOSE removeCompanyCursor
+    DEALLOCATE removeCompanyCursor
+```
 
-6. <span data-ttu-id="68195-200">リセット後は、手動で財務諸表データベースに対して次のクエリを実行し、データの再読み込みを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="68195-200">After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.</span></span>
+3. <span data-ttu-id="5180f-193">AXDB と呼ばれる Dynamics 365 Finance のためのデータベースでは、2019 年 2 月 25 日に更新された次のスクリプトを使用して財務報告の関連テーブルをクリアします: Reset Datamart AXDB.txt</span><span class="sxs-lookup"><span data-stu-id="5180f-193">On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt</span></span>
+
+```sql
+IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
+BEGIN 
+    TRUNCATE TABLE [dbo].[FINANCIALREPORTS] 
+END 
+IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTVERSION') 
+BEGIN 
+    TRUNCATE TABLE [dbo].[FINANCIALREPORTVERSION] 
+END  
+```
+
+
+4. <span data-ttu-id="5180f-194">MRDB では、次の最後に更新されたスクリプトを使用して統合とエンド サービス モードを再び有効にし、2019 年 2 月 25 日に更新された次のスクリプトを使用して財務報告の関連テーブルをクリアします: Reset Datamart END.txt</span><span class="sxs-lookup"><span data-stu-id="5180f-194">On the MRDB, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt</span></span>
+
+
+
+```sql
+DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+------------------------------------------
+------------------------------------------
+PRINT 'Reset the map tokens'
+UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Reset the tasks'
+UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
+FROM [Scheduling].[Task] t with(nolock)
+JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
+PRINT 'Enable integration tasks, RunImmediately'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
+WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+PRINT 'Enable the Maintenance Task'
+UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
+(SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
+------------------------------------------
+------------------------------------------
+
+UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
+IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+BEGIN
+       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
+END
+```
+
+
+5. <span data-ttu-id="5180f-195">リセット後は、手動で財務諸表データベースに対して次のクエリを実行し、データの再読み込みを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="5180f-195">After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.</span></span>
 
     ```sql
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 
-    <span data-ttu-id="68195-201">すべての行の **LastRunTime** 値、およびその **StateType** が **5** に設定されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="68195-201">Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**.</span></span> <span data-ttu-id="68195-202">**5** の **StateType** 値はデータが正常に再読み込みされたことを示します。</span><span class="sxs-lookup"><span data-stu-id="68195-202">A **StateType** value of **5** indicates that the data was successfully reloaded.</span></span> <span data-ttu-id="68195-203">**7** の値はエラー状態を示します。</span><span class="sxs-lookup"><span data-stu-id="68195-203">A value of **7** indicates a faulted state.</span></span> <span data-ttu-id="68195-204">組織階層マップは、初めて実行される時にこの状態になることがあります。</span><span class="sxs-lookup"><span data-stu-id="68195-204">Sometimes, the Organization Hierarchy map has this state the first time that it runs.</span></span> <span data-ttu-id="68195-205">ただし、エラー状態は自動的に解決されます。</span><span class="sxs-lookup"><span data-stu-id="68195-205">However, the faulted state but should be automatically resolved.</span></span>
+<span data-ttu-id="5180f-196">すべての行の **LastRunTime** 値、およびその **StateType** が **5** に設定されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-196">Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**.</span></span> <span data-ttu-id="5180f-197">**5** の **StateType** 値はデータが正常に再読み込みされたことを示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-197">A **StateType** value of **5** indicates that the data was successfully reloaded.</span></span> <span data-ttu-id="5180f-198">**7** の値はエラー状態を示します。</span><span class="sxs-lookup"><span data-stu-id="5180f-198">A value of **7** indicates a faulted state.</span></span> <span data-ttu-id="5180f-199">組織階層マップは、初めて実行される時にこの状態になることがあります。</span><span class="sxs-lookup"><span data-stu-id="5180f-199">Sometimes, the Organization Hierarchy map has this state the first time that it runs.</span></span> <span data-ttu-id="5180f-200">ただし、エラー状態は自動的に解決されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-200">However, the default state but should be automatically resolved.</span></span>
 
-## <a name="export-and-import-report-definitions"></a><span data-ttu-id="68195-206">レポートの定義を エクスポート/インポートする</span><span class="sxs-lookup"><span data-stu-id="68195-206">Export and import report definitions</span></span>
+## <a name="export-and-import-report-definitions"></a><span data-ttu-id="5180f-201">レポートの定義を エクスポート/インポートする</span><span class="sxs-lookup"><span data-stu-id="5180f-201">Export and import report definitions</span></span>
 
-<span data-ttu-id="68195-207">データ マートのリセットは、どのレポート定義にも影響しませんが、データ移動のアクティビティによってはレポート定義が失われる場合があります。</span><span class="sxs-lookup"><span data-stu-id="68195-207">Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost.</span></span> <span data-ttu-id="68195-208">ユーザー受け入れテスト(UAT)テスト環境で新しいレポートを作成する場合は、UAT環境を本番環境のコピーで上書きするなどして、データ移動アクティビティを実行の際には十分に注意してください。</span><span class="sxs-lookup"><span data-stu-id="68195-208">Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.</span></span>
+<span data-ttu-id="5180f-202">データ マートのリセットは、どのレポート定義にも影響しませんが、データ移動のアクティビティによってはレポート定義が失われる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5180f-202">Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost.</span></span> <span data-ttu-id="5180f-203">ユーザー受け入れテスト(UAT)テスト環境で新しいレポートを作成する場合は、UAT環境を本番環境のコピーで上書きするなどして、データ移動アクティビティを実行の際には十分に注意してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-203">Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.</span></span> <span data-ttu-id="5180f-204">レポート定義をエクスポートすると、定義を復元する必要が生じた場合に、バックアップを作成できます。</span><span class="sxs-lookup"><span data-stu-id="5180f-204">Exporting report definitions can provide a backup in the event that it becomes necessary to restore your definitions.</span></span> 
 
-### <a name="export-report-definitions"></a><span data-ttu-id="68195-209">レポート定義のエクスポート</span><span class="sxs-lookup"><span data-stu-id="68195-209">Export report definitions</span></span>
+### <a name="export-report-definitions"></a><span data-ttu-id="5180f-205">レポート定義のエクスポート</span><span class="sxs-lookup"><span data-stu-id="5180f-205">Export report definitions</span></span>
 
-<span data-ttu-id="68195-210">最初に、以下の手順を実行しレポート デザイナーからレポート デザインをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="68195-210">First, follow these steps to export the report designs from Report designer.</span></span>
+<span data-ttu-id="5180f-206">最初に、以下の手順を実行しレポート デザイナーからレポート デザインをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="5180f-206">First, follow these steps to export the report designs from Report designer.</span></span>
 
-1. <span data-ttu-id="68195-211">レポート デザイナーで、**会社** &gt; **レポート パーツ グループ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-211">In Report designer, select **Company** &gt; **Building Block Groups**.</span></span>
-2. <span data-ttu-id="68195-212">エクスポートする構成要素グループを選択し、**エクスポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-212">Select the building block group to export, and then select **Export**.</span></span>
+1. <span data-ttu-id="5180f-207">レポート デザイナーで、**会社** &gt; **レポート パーツ グループ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-207">In Report designer, select **Company** &gt; **Building Block Groups**.</span></span>
+2. <span data-ttu-id="5180f-208">エクスポートする構成要素グループを選択し、**エクスポート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-208">Select the building block group to export, and then select **Export**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="68195-213">Finance and Operations に関しては、1 つの構成要素グループのみがサポートされています: **既定**。</span><span class="sxs-lookup"><span data-stu-id="68195-213">For Finance and Operations, only one building block group is supported: **Default**.</span></span>
+    > <span data-ttu-id="5180f-209">Finance and Operations に関しては、1 つの構成要素グループのみがサポートされています: **既定**。</span><span class="sxs-lookup"><span data-stu-id="5180f-209">For Finance and Operations, only one building block group is supported: **Default**.</span></span>
 
-3. <span data-ttu-id="68195-214">エクスポートするレポート定義を選択します:</span><span class="sxs-lookup"><span data-stu-id="68195-214">Select the report definitions to export:</span></span>
+3. <span data-ttu-id="5180f-210">エクスポートするレポート定義を選択します:</span><span class="sxs-lookup"><span data-stu-id="5180f-210">Select the report definitions to export:</span></span>
 
-    - <span data-ttu-id="68195-215">レポート定義および関連するレポート パーツのすべてをエクスポートするには、**すべて選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-215">To export all your report definitions and the associated building blocks, select **Select All**.</span></span>
-    - <span data-ttu-id="68195-216">特定のレポート、行、列、ツリー、または分析コード セットをエクスポートするには、適切なタブを選択してエクスポートする項目を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-216">To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export.</span></span> <span data-ttu-id="68195-217">タブにて複数のレコードを選択するには、キーボードの **Ctrl キー** を押しながら選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-217">To select multiple items on a tab, press and hold the **Ctrl** key while you make your selections.</span></span> <span data-ttu-id="68195-218">エクスポートをするレポートを選択すると、関連する行、列、ツリー、各要素のセットが選択されます。</span><span class="sxs-lookup"><span data-stu-id="68195-218">When you select reports to export, the associated rows, columns, trees, and dimension sets are also selected.</span></span>
+    - <span data-ttu-id="5180f-211">レポート定義および関連するレポート パーツのすべてをエクスポートするには、**すべて選択**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-211">To export all your report definitions and the associated building blocks, select **Select All**.</span></span>
+    - <span data-ttu-id="5180f-212">特定のレポート、行、列、ツリー、または分析コード セットをエクスポートするには、適切なタブを選択してエクスポートする項目を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-212">To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export.</span></span> <span data-ttu-id="5180f-213">タブにて複数のレコードを選択するには、キーボードの **Ctrl キー** を押しながら選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-213">To select multiple items on a tab, press and hold the **Ctrl** key while you make your selections.</span></span> <span data-ttu-id="5180f-214">エクスポートをするレポートを選択すると、関連する行、列、ツリー、各要素のセットが選択されます。</span><span class="sxs-lookup"><span data-stu-id="5180f-214">When you select reports to export, the associated rows, columns, trees, and dimension sets are also selected.</span></span>
 
-4. <span data-ttu-id="68195-219">**エクスポート** の選択</span><span class="sxs-lookup"><span data-stu-id="68195-219">Select **Export**.</span></span>
-5. <span data-ttu-id="68195-220">ファイル名を入力し、エクスポートしたレポート定義を保存する保護された安全な場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-220">Enter a file name, and select a secure location to save the exported report definitions in.</span></span>
-6. <span data-ttu-id="68195-221">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-221">Select **Save**.</span></span>
+4. <span data-ttu-id="5180f-215">**エクスポート** の選択</span><span class="sxs-lookup"><span data-stu-id="5180f-215">Select **Export**.</span></span>
+5. <span data-ttu-id="5180f-216">ファイル名を入力し、エクスポートしたレポート定義を保存する保護された安全な場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-216">Enter a file name, and select a secure location to save the exported report definitions in.</span></span>
+6. <span data-ttu-id="5180f-217">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-217">Select **Save**.</span></span>
 
-<span data-ttu-id="68195-222">ファイルを安全な場所にコピーまたはアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="68195-222">You can copy or upload the file to a secure location.</span></span>
+<span data-ttu-id="5180f-218">ファイルを安全な場所にコピーまたはアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="5180f-218">You can copy or upload the file to a secure location.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="68195-223">Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。</span><span class="sxs-lookup"><span data-stu-id="68195-223">Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs).</span></span> <span data-ttu-id="68195-224">Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="68195-224">Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).</span></span>
+> <span data-ttu-id="5180f-219">Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。</span><span class="sxs-lookup"><span data-stu-id="5180f-219">Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs).</span></span> <span data-ttu-id="5180f-220">Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="5180f-220">Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).</span></span>
 
-### <a name="import-report-definitions"></a><span data-ttu-id="68195-225">レポート定義のインポート</span><span class="sxs-lookup"><span data-stu-id="68195-225">Import report definitions</span></span>
+### <a name="import-report-definitions"></a><span data-ttu-id="5180f-221">レポート定義のインポート</span><span class="sxs-lookup"><span data-stu-id="5180f-221">Import report definitions</span></span>
 
-<span data-ttu-id="68195-226">次に、エクスポートの課程で作成されたファイルを使用して、レポート デザイナー から レポートのデザイン を インポートします。</span><span class="sxs-lookup"><span data-stu-id="68195-226">Next, import your report designs from Report designer by using the file that was created during export.</span></span>
+<span data-ttu-id="5180f-222">次に、エクスポートの課程で作成されたファイルを使用して、レポート デザイナー から レポートのデザイン を インポートします。</span><span class="sxs-lookup"><span data-stu-id="5180f-222">Next, import your report designs from Report designer by using the file that was created during export.</span></span>
 
-1. <span data-ttu-id="68195-227">レポート デザイナーで、**会社** &gt; **レポート パーツ グループ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-227">In Report designer, select **Company** &gt; **Building Block Groups**.</span></span>
-2. <span data-ttu-id="68195-228">**既定** の構成要素を選択し、**インポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="68195-228">Select the **Default** building block, and then select **Import**.</span></span>
-3. <span data-ttu-id="68195-229">エクスポート済みのレポート定義を含むファイルを選択し、**開く** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="68195-229">Select the file that contains the exported report definitions, and then select **Open**.</span></span>
-4. <span data-ttu-id="68195-230">**インポート** ダイアログ ボックスで、インポートするレポート定義を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-230">In the **Import** dialog box, select the report definitions to import:</span></span>
+1. <span data-ttu-id="5180f-223">レポート デザイナーで、**会社** &gt; **レポート パーツ グループ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-223">In Report designer, select **Company** &gt; **Building Block Groups**.</span></span>
+2. <span data-ttu-id="5180f-224">**既定**の構成要素を選択し、**インポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5180f-224">Select the **Default** building block, and then select **Import**.</span></span>
+3. <span data-ttu-id="5180f-225">エクスポート済みのレポート定義を含むファイルを選択し、**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5180f-225">Select the file that contains the exported report definitions, and then select **Open**.</span></span>
+4. <span data-ttu-id="5180f-226">**インポート** ダイアログ ボックスで、インポートするレポート定義を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-226">In the **Import** dialog box, select the report definitions to import:</span></span>
 
-    - <span data-ttu-id="68195-231">レポート定義および関連するレポート パーツのすべてをインポートするには、**すべて選択** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-231">To import all the report definitions and the associated building blocks, select **Select All**.</span></span>
-    - <span data-ttu-id="68195-232">特定のレポートをインポートするには、行、列、ツリー、あるいは必要な要素を選択してください。</span><span class="sxs-lookup"><span data-stu-id="68195-232">To import specific reports, rows, columns, trees, or dimension sets, select them.</span></span>
+    - <span data-ttu-id="5180f-227">レポート定義および関連するレポート パーツのすべてをインポートするには、**すべて選択**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-227">To import all the report definitions and the associated building blocks, select **Select All**.</span></span>
+    - <span data-ttu-id="5180f-228">特定のレポートをインポートするには、行、列、ツリー、あるいは必要な要素を選択してください。</span><span class="sxs-lookup"><span data-stu-id="5180f-228">To import specific reports, rows, columns, trees, or dimension sets, select them.</span></span>
 
-5. <span data-ttu-id="68195-233">**インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68195-233">Select **Import**.</span></span>
+5. <span data-ttu-id="5180f-229">**インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="5180f-229">Select **Import**.</span></span>

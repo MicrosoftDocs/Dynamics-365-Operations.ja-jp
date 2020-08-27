@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: 作業テンプレートと場所ディレクティブを使用した管理作業
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: 場所ディレクティブを作成する
+                      href: warehousing/create-location-directive.md
                     - name: ウェーブ ステップ コード
                       href: warehousing/wave-step-codes.md
                     - name: ウェーブ処理のコンフィギュレーション
@@ -2821,6 +2823,8 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: 新しい輸送管理エンジンの作成
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 手持在庫データ エンティティの拡張
+              href: inventory/extend-on-hand-entities.md
     - name: Finance and Operations アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

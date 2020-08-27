@@ -18,95 +18,93 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530262"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696133"
 ---
-# <a name="supply-chain-management-home-page"></a><span data-ttu-id="c7c9a-103">Supply Chain Management ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="c7c9a-103">Supply Chain Management home page</span></span>
+# <a name="supply-chain-management-home-page"></a><span data-ttu-id="f32de-103">Supply Chain Management ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="f32de-103">Supply Chain Management home page</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="c7c9a-104">このトピックでは、Dynamics 365 Supply Chain Management に関するヘルプ トピックとその他のリソースの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-104">This topic provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="f32de-104">このトピックでは、Dynamics 365 Supply Chain Management に関するヘルプ トピックとその他のリソースの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="f32de-104">This topic provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management.</span></span>
 
-## <a name="whats-new-and-in-development"></a><span data-ttu-id="c7c9a-105">新機能および開発中の機能</span><span class="sxs-lookup"><span data-stu-id="c7c9a-105">What's new and in development</span></span>
+## <a name="whats-new-and-in-development"></a><span data-ttu-id="f32de-105">新機能および開発中の機能</span><span class="sxs-lookup"><span data-stu-id="f32de-105">What's new and in development</span></span>
 
-<span data-ttu-id="c7c9a-106">リリースされた新機能と開発中の新機能については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-106">Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features are released and what new features are in development.</span></span>
+<span data-ttu-id="f32de-106">リリースされた新機能と開発中の新機能については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f32de-106">Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features are released and what new features are in development.</span></span>
 
-## <a name="core-concepts-and-tasks"></a><span data-ttu-id="c7c9a-107">主要な概念とタスク</span><span class="sxs-lookup"><span data-stu-id="c7c9a-107">Core concepts and tasks</span></span>
+## <a name="core-concepts-and-tasks"></a><span data-ttu-id="f32de-107">主要な概念とタスク</span><span class="sxs-lookup"><span data-stu-id="f32de-107">Core concepts and tasks</span></span>
 
-<span data-ttu-id="c7c9a-108">機能領域を選択すると詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-108">Select a feature area to learn more about it.</span></span>
+<span data-ttu-id="f32de-108">機能領域を選択すると詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="f32de-108">Select a feature area to learn more about it.</span></span>
 
-- [<span data-ttu-id="c7c9a-109">資産管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-109">Asset management</span></span>](asset-management/index.md)
-- [<span data-ttu-id="c7c9a-110">原価会計</span><span class="sxs-lookup"><span data-stu-id="c7c9a-110">Cost accounting</span></span>](../finance/cost-accounting/cost-accounting-home-page.md)
-- [<span data-ttu-id="c7c9a-111">原価管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-111">Cost management</span></span>](cost-management/cost-management-home-page.md)  
-- [<span data-ttu-id="c7c9a-112">在庫管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-112">Inventory management</span></span>](inventory/inventory-home-page.md)
-- [<span data-ttu-id="c7c9a-113">IoT インテリジェンス</span><span class="sxs-lookup"><span data-stu-id="c7c9a-113">IoT Intelligence</span></span>](iot/iot-intelligence-home-page.md)
-- [<span data-ttu-id="c7c9a-114">マスター プラン</span><span class="sxs-lookup"><span data-stu-id="c7c9a-114">Master planning</span></span>](master-planning/master-planning-home-page.md)
-- [<span data-ttu-id="c7c9a-115">調達</span><span class="sxs-lookup"><span data-stu-id="c7c9a-115">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
-- [<span data-ttu-id="c7c9a-116">製品情報管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-116">Product information management</span></span>](pim/product-information.md)
-- [<span data-ttu-id="c7c9a-117">生産管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-117">Production control</span></span>](production-control/production-process-overview.md)
-- [<span data-ttu-id="c7c9a-118">販売とマーケティング</span><span class="sxs-lookup"><span data-stu-id="c7c9a-118">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
-- [<span data-ttu-id="c7c9a-119">サービス管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-119">Service management</span></span>](service-management/service-management-home-page.md)
-- [<span data-ttu-id="c7c9a-120">輸送管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-120">Transportation management</span></span>](transportation/transportation-management-overview.md)
-- [<span data-ttu-id="c7c9a-121">倉庫管理</span><span class="sxs-lookup"><span data-stu-id="c7c9a-121">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
+- [<span data-ttu-id="f32de-109">資産管理</span><span class="sxs-lookup"><span data-stu-id="f32de-109">Asset management</span></span>](asset-management/index.md)
+- [<span data-ttu-id="f32de-110">原価会計</span><span class="sxs-lookup"><span data-stu-id="f32de-110">Cost accounting</span></span>](../finance/cost-accounting/cost-accounting-home-page.md)
+- [<span data-ttu-id="f32de-111">原価管理</span><span class="sxs-lookup"><span data-stu-id="f32de-111">Cost management</span></span>](cost-management/cost-management-home-page.md)  
+- [<span data-ttu-id="f32de-112">在庫管理</span><span class="sxs-lookup"><span data-stu-id="f32de-112">Inventory management</span></span>](inventory/inventory-home-page.md)
+- [<span data-ttu-id="f32de-113">IoT インテリジェンス</span><span class="sxs-lookup"><span data-stu-id="f32de-113">IoT Intelligence</span></span>](iot/iot-intelligence-home-page.md)
+- [<span data-ttu-id="f32de-114">マスター プラン</span><span class="sxs-lookup"><span data-stu-id="f32de-114">Master planning</span></span>](master-planning/master-planning-home-page.md)
+- [<span data-ttu-id="f32de-115">調達</span><span class="sxs-lookup"><span data-stu-id="f32de-115">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
+- [<span data-ttu-id="f32de-116">製品情報管理</span><span class="sxs-lookup"><span data-stu-id="f32de-116">Product information management</span></span>](pim/product-information.md)
+- [<span data-ttu-id="f32de-117">生産管理</span><span class="sxs-lookup"><span data-stu-id="f32de-117">Production control</span></span>](production-control/production-process-overview.md)
+- [<span data-ttu-id="f32de-118">販売とマーケティング</span><span class="sxs-lookup"><span data-stu-id="f32de-118">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
+- [<span data-ttu-id="f32de-119">サービス管理</span><span class="sxs-lookup"><span data-stu-id="f32de-119">Service management</span></span>](service-management/service-management-home-page.md)
+- [<span data-ttu-id="f32de-120">輸送管理</span><span class="sxs-lookup"><span data-stu-id="f32de-120">Transportation management</span></span>](transportation/transportation-management-overview.md)
+- [<span data-ttu-id="f32de-121">倉庫管理</span><span class="sxs-lookup"><span data-stu-id="f32de-121">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
 
-## <a name="dynamics-365-finance"></a><span data-ttu-id="c7c9a-122">Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="c7c9a-122">Dynamics 365 Finance</span></span>
+## <a name="dynamics-365-finance"></a><span data-ttu-id="f32de-122">Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="f32de-122">Dynamics 365 Finance</span></span>
 
-<span data-ttu-id="c7c9a-123">Dynamics 365 Finance の詳細については、[Finance ホーム ページ](../finance/index.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-123">For information on Dynamics 365 Finance, go to the [Finance home page](../finance/index.md).</span></span>
+<span data-ttu-id="f32de-123">Dynamics 365 Finance の詳細については、[Finance ホーム ページ](../finance/index.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f32de-123">For information on Dynamics 365 Finance, go to the [Finance home page](../finance/index.md).</span></span>
 
-## <a name="videos"></a><span data-ttu-id="c7c9a-124">ビデオ</span><span class="sxs-lookup"><span data-stu-id="c7c9a-124">Videos</span></span>
+## <a name="videos"></a><span data-ttu-id="f32de-124">ビデオ</span><span class="sxs-lookup"><span data-stu-id="f32de-124">Videos</span></span>
 
-<span data-ttu-id="c7c9a-125">この短いビデオでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-125">This short video summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
+<span data-ttu-id="f32de-125">この短いビデオでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="f32de-125">This short video summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
 
-- [<span data-ttu-id="c7c9a-126">Field Service と Finance and Operations の間の作業指示書の同期</span><span class="sxs-lookup"><span data-stu-id="c7c9a-126">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
+- [<span data-ttu-id="f32de-126">Field Service と Finance and Operations の間の作業指示書の同期</span><span class="sxs-lookup"><span data-stu-id="f32de-126">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
 
-<span data-ttu-id="c7c9a-127">これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-127">These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
+<span data-ttu-id="f32de-127">これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="f32de-127">These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
 
-- [<span data-ttu-id="c7c9a-128">Prospect to cash integration (見込顧客リストの現金化への統合)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-128">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
-- [<span data-ttu-id="c7c9a-129">最適化アドバイザー</span><span class="sxs-lookup"><span data-stu-id="c7c9a-129">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [<span data-ttu-id="c7c9a-130">Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-130">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [<span data-ttu-id="f32de-128">Prospect to cash integration (見込顧客リストの現金化への統合)</span><span class="sxs-lookup"><span data-stu-id="f32de-128">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
+- [<span data-ttu-id="f32de-129">最適化アドバイザー</span><span class="sxs-lookup"><span data-stu-id="f32de-129">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [<span data-ttu-id="f32de-130">Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)</span><span class="sxs-lookup"><span data-stu-id="f32de-130">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-<span data-ttu-id="c7c9a-131">これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-131">These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
+<span data-ttu-id="f32de-131">これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) に追加された新しい Supply Chain Management 機能を要約しています。</span><span class="sxs-lookup"><span data-stu-id="f32de-131">These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
 
-- [<span data-ttu-id="c7c9a-132">Get started with Cost accounting (原価会計の使用を開始する)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-132">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
-- [<span data-ttu-id="c7c9a-133">Cost control mobile workspace (原価管理モバイル ワークスペース)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-133">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
-- [<span data-ttu-id="c7c9a-134">Use Excel for cost analysis (コスト分析に Excel を使用する)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-134">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
-- [<span data-ttu-id="c7c9a-135">Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-135">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
-- [<span data-ttu-id="c7c9a-136">生産オーダーとバッチ オーダーのガント チャートを利用した視覚的なスケジューリング</span><span class="sxs-lookup"><span data-stu-id="c7c9a-136">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
+- [<span data-ttu-id="f32de-132">Get started with Cost accounting (原価会計の使用を開始する)</span><span class="sxs-lookup"><span data-stu-id="f32de-132">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
+- [<span data-ttu-id="f32de-133">Cost control mobile workspace (原価管理モバイル ワークスペース)</span><span class="sxs-lookup"><span data-stu-id="f32de-133">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
+- [<span data-ttu-id="f32de-134">Use Excel for cost analysis (コスト分析に Excel を使用する)</span><span class="sxs-lookup"><span data-stu-id="f32de-134">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
+- [<span data-ttu-id="f32de-135">Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)</span><span class="sxs-lookup"><span data-stu-id="f32de-135">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
+- [<span data-ttu-id="f32de-136">生産オーダーとバッチ オーダーのガント チャートを利用した視覚的なスケジューリング</span><span class="sxs-lookup"><span data-stu-id="f32de-136">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
 
-<span data-ttu-id="c7c9a-137">次の技術会議の記録は、以前のバージョンの Finance and Operations の Supply Chain Management 機能について説明しています。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-137">The following tech conference recordings discuss supply chain management functionality from previous versions of Finance and Operations.</span></span> <span data-ttu-id="c7c9a-138">この機能は、Dynamics 365 Supply Chain Management の一部になりました。同じ概念が引き続き適用されており、手順は現在のバージョンでも同様です。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-138">This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.</span></span>
+<span data-ttu-id="f32de-137">次の技術会議の記録は、以前のバージョンの Finance and Operations の Supply Chain Management 機能について説明しています。</span><span class="sxs-lookup"><span data-stu-id="f32de-137">The following tech conference recordings discuss supply chain management functionality from previous versions of Finance and Operations.</span></span> <span data-ttu-id="f32de-138">この機能は、Dynamics 365 Supply Chain Management の一部になりました。同じ概念が引き続き適用されており、手順は現在のバージョンでも同様です。</span><span class="sxs-lookup"><span data-stu-id="f32de-138">This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.</span></span>
 
-- <span data-ttu-id="c7c9a-139">**原価管理:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-139">**Cost management:**</span></span>
-  - [<span data-ttu-id="c7c9a-140">Overview of Cost management (原価管理の概要)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-140">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
-- <span data-ttu-id="c7c9a-141">**マスター プラン:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-141">**Master planning:**</span></span>
-  - [<span data-ttu-id="c7c9a-142">Extend the demand forecasting functionality (需要予測機能の拡張)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-142">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-  - [<span data-ttu-id="c7c9a-143">Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-143">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
-  - [<span data-ttu-id="c7c9a-144">Help! MRP is slow! (MRP の処理に時間がかかる!)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-144">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
-- <span data-ttu-id="c7c9a-145">**製品情報管理:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-145">**Product information management:**</span></span>
-  - [<span data-ttu-id="c7c9a-146">Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-146">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
-- <span data-ttu-id="c7c9a-147">**倉庫管理:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-147">**Warehouse management:**</span></span>
-  - [<span data-ttu-id="c7c9a-148">Get the best out of your warehouse management system (倉庫管理システムを最大限に活用する)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-148">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [<span data-ttu-id="c7c9a-149">Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment (高度な R3 倉庫管理 - 入庫処理と最小/最大の補充)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-149">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [<span data-ttu-id="c7c9a-150">Advanced R3 Warehouse Management - A day in the life, outbound processing and Demand Replenishment (高度な R3 倉庫管理 - 出庫処理と要求補充)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-150">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
-  - [<span data-ttu-id="c7c9a-151">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-151">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
-  - [<span data-ttu-id="c7c9a-152">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing (高度な倉庫管理 - プロセス製造)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-152">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
-- <span data-ttu-id="c7c9a-153">**生産管理ビデオ:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-153">**Production control videos:**</span></span>
-  - [<span data-ttu-id="c7c9a-154">Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-154">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
-- <span data-ttu-id="c7c9a-155">**輸送管理ビデオ:**</span><span class="sxs-lookup"><span data-stu-id="c7c9a-155">**Transportation management videos:**</span></span>
-  - [<span data-ttu-id="c7c9a-156">新しいMicrosoft Dynamics AX の輸送管理 (TMS)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-156">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
+- <span data-ttu-id="f32de-139">**原価管理:**</span><span class="sxs-lookup"><span data-stu-id="f32de-139">**Cost management:**</span></span>
+  - [<span data-ttu-id="f32de-140">Overview of Cost management (原価管理の概要)</span><span class="sxs-lookup"><span data-stu-id="f32de-140">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+- <span data-ttu-id="f32de-141">**マスター プラン:**</span><span class="sxs-lookup"><span data-stu-id="f32de-141">**Master planning:**</span></span>
+  - [<span data-ttu-id="f32de-142">Extend the demand forecasting functionality (需要予測機能の拡張)</span><span class="sxs-lookup"><span data-stu-id="f32de-142">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+  - [<span data-ttu-id="f32de-143">Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)</span><span class="sxs-lookup"><span data-stu-id="f32de-143">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
+  - [<span data-ttu-id="f32de-144">Help! MRP is slow! (MRP の処理に時間がかかる!)</span><span class="sxs-lookup"><span data-stu-id="f32de-144">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
+- <span data-ttu-id="f32de-145">**製品情報管理:**</span><span class="sxs-lookup"><span data-stu-id="f32de-145">**Product information management:**</span></span>
+  - [<span data-ttu-id="f32de-146">Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)</span><span class="sxs-lookup"><span data-stu-id="f32de-146">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
+- <span data-ttu-id="f32de-147">**倉庫管理:**</span><span class="sxs-lookup"><span data-stu-id="f32de-147">**Warehouse management:**</span></span>
+  - [<span data-ttu-id="f32de-148">倉庫管理システムを最大限に活用する</span><span class="sxs-lookup"><span data-stu-id="f32de-148">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [<span data-ttu-id="f32de-149">新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル</span><span class="sxs-lookup"><span data-stu-id="f32de-149">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
+  - [<span data-ttu-id="f32de-150">Dynamics AX 2012 R3: 高度な倉庫管理 - プロセス製造の日常</span><span class="sxs-lookup"><span data-stu-id="f32de-150">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
+- <span data-ttu-id="f32de-151">**生産管理ビデオ:**</span><span class="sxs-lookup"><span data-stu-id="f32de-151">**Production control videos:**</span></span>
+  - [<span data-ttu-id="f32de-152">Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)</span><span class="sxs-lookup"><span data-stu-id="f32de-152">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
+- <span data-ttu-id="f32de-153">**輸送管理ビデオ:**</span><span class="sxs-lookup"><span data-stu-id="f32de-153">**Transportation management videos:**</span></span>
+  - [<span data-ttu-id="f32de-154">新しいMicrosoft Dynamics AX の輸送管理 (TMS)</span><span class="sxs-lookup"><span data-stu-id="f32de-154">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
 
-## <a name="blogs"></a><span data-ttu-id="c7c9a-157">ブログ</span><span class="sxs-lookup"><span data-stu-id="c7c9a-157">Blogs</span></span>
+## <a name="blogs"></a><span data-ttu-id="f32de-155">ブログ</span><span class="sxs-lookup"><span data-stu-id="f32de-155">Blogs</span></span>
 
-<span data-ttu-id="c7c9a-158">[Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-158">There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/).</span></span> <span data-ttu-id="c7c9a-159">これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-159">Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.</span></span>
+<span data-ttu-id="f32de-156">[Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。</span><span class="sxs-lookup"><span data-stu-id="f32de-156">There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/).</span></span> <span data-ttu-id="f32de-157">これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。</span><span class="sxs-lookup"><span data-stu-id="f32de-157">Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.</span></span>
 
-## <a name="white-papers"></a><span data-ttu-id="c7c9a-160">ホワイト ペーパー</span><span class="sxs-lookup"><span data-stu-id="c7c9a-160">White papers</span></span>
+## <a name="white-papers"></a><span data-ttu-id="f32de-158">ホワイト ペーパー</span><span class="sxs-lookup"><span data-stu-id="f32de-158">White papers</span></span>
 
-- [<span data-ttu-id="c7c9a-161">Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-161">Lean manufacturing: Capable to promise and kanban job scheduling</span></span>](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
-- [<span data-ttu-id="c7c9a-162">BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)</span><span class="sxs-lookup"><span data-stu-id="c7c9a-162">BOM calculation by using a costing sheet</span></span>](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
+- [<span data-ttu-id="f32de-159">Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)</span><span class="sxs-lookup"><span data-stu-id="f32de-159">Lean manufacturing: Capable to promise and kanban job scheduling</span></span>](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [<span data-ttu-id="f32de-160">BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)</span><span class="sxs-lookup"><span data-stu-id="f32de-160">BOM calculation by using a costing sheet</span></span>](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
 
-## <a name="elearning-courses"></a><span data-ttu-id="c7c9a-163">eLearning コース</span><span class="sxs-lookup"><span data-stu-id="c7c9a-163">eLearning courses</span></span>
+## <a name="elearning-courses"></a><span data-ttu-id="f32de-161">eLearning コース</span><span class="sxs-lookup"><span data-stu-id="f32de-161">eLearning courses</span></span>
 
-<span data-ttu-id="c7c9a-164">オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365](https://docs.microsoft.com/learn/dynamics365/) をチェックアウトしてください。</span><span class="sxs-lookup"><span data-stu-id="c7c9a-164">For online courses and training, check out [Dynamics 365 on Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).</span></span>
+<span data-ttu-id="f32de-162">オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365](https://docs.microsoft.com/learn/dynamics365/) をチェックアウトしてください。</span><span class="sxs-lookup"><span data-stu-id="f32de-162">For online courses and training, check out [Dynamics 365 on Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).</span></span>
