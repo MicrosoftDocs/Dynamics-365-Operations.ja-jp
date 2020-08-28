@@ -3,7 +3,7 @@ title: 一般会計と財務諸表の概要
 description: 法人の財務レコードを定義および管理するには、一般会計を使用します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771802"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696667"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>一般会計と財務諸表の概要
+# <a name="general-ledger-home-page"></a>一般会計のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,6 +56,9 @@ ms.locfileid: "2771802"
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
 予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+
+#### <a name="financial-reporting"></a>財務報告
+財務諸表については、[Financial Reporting の概要](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) を参照してください。
 
 #### <a name="blogs"></a>ブログ
 

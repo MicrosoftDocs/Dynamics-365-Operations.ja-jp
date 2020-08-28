@@ -3,7 +3,7 @@ title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431133"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666363"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -43,12 +43,12 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 
 ## <a name="known-issues"></a>既知の問題
 
-| 問題 | ステータス |
+| 出庫 | ステータス |
 | --- | --- |
+| Android フォンで水平スクロールが機能しない | 水平スクロールは iOS または デスクトップ デバイスでは問題ではありません。 Android の修正プログラムに取り組んでいます。 |
 | エラー: 接続する環境の検索に問題があります。 | このエラーは、ユーザーが 1 つ以上の Human Resources 環境にアクセスできることを確認した場合でも、表示されることがあります。 また、予期するすべての環境が表示されない場合があります。 この問題を修正するまでは、ユーザーを削除してから再度インポートして問題を解決してください。 |
 | 未来日付の休暇を送信する場合に、残日数に誤りがあることを示します。 | 予測機能は未実装です。 現在日付の残日数が表示されます。 |
 | 既存の申請で要した時間数を減らすと、**残日数**が加算されずに減算される。 | この既知の問題については、将来的に対応予定です。 表示内容は正しくありませんが、送信時に正しい日数が調整されます。 |
-| 同じ日付に対して、**今後の休暇**カードが2つ表示される。 | これらのカードはそれぞれ個別の提出を意味しています。 今後も継続的にフィードバックを受け、調整を行っていきます。 |
 | **レビュー中**の申請をキャンセルできない 。 | この機能には現在対応していないため、今後のリリースで対応予定です。 |
 | 残日数情報が、現日付の時点に基づいて算出される。 | 現在のシステムでは、休暇と欠勤のパラメータで構成されている場合であっても、見越計上期間の残日数は表示されません。 |
 

@@ -3,7 +3,7 @@ title: Modern POS (MPOS) の顧客注文
 description: このトピックでは、Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023128"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699372"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Modern POS (MPOS) の顧客注文
 
@@ -53,6 +53,8 @@ ms.locfileid: "3023128"
 
     - 費用は、販売注文ヘッダーのレベルで適用され、製品ラインの数個が返品される場合、すべての顧客を対象とする方法で、製品と数量に許可されている出荷費用の最大払戻額を決定することはできません。
     - 出荷費用は、出荷のすべてのインスタンスに発生します。 顧客が製品の返品を複数回行い、小売業者のポリシーで小売業者が返品出荷費用を負担しないことを指定している場合、返品出荷費用は実際の出荷費用を超えます。
+    
+- **税額計算の動作** - **再計算** が、注文がバックオフィスにインポートされるときの税額の再計算方法の既定の設定であり、従来の設定です。 **再計算を行わない** は、再計算がトリガーされると、バックオフィスで注文が編集されるまで、税の再計算が無効になります。 
 
 ## <a name="transaction-flow-for-customer-orders"></a>顧客注文のトランザクション フロー
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411092"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661150"
 ---
 # <a name="cart-icon-module"></a>買い物カゴ アイコン モジュール
 
@@ -42,22 +42,22 @@ ms.locfileid: "3411092"
 
 - **ミニ カートの表示** – True の場合、このプロパティにより、買い物カゴ アイコンにカーソルを合わせると買い物カゴの概要 (ミニ カート) が表示されます。 この機能は、デスクトップ 表示ポートに対してのみサポートされています。
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>買い物カゴ アイコン モジュールをページに追加する
 
 買い物カゴ アイコン モジュールを追加するには、[ヘッダー モジュール](author-header-module.md) を参照してください。
 
-
 ## <a name="additional-resources"></a>追加リソース
-
-[購入ボックス モジュール](add-buy-box.md)
 
 [買い物カゴ モジュール](add-cart-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 
-[注文確認モジュール](order-confirmation-module.md)
+[支払モジュール](payment-module.md)
 
-[ヘッダー モジュール](author-header-module.md)
+[出荷先住所モジュール](ship-address-module.md)
 
-[フッター モジュール](author-footer-module.md)
+[配送オプション モジュール](delivery-options-module.md)
+
+[注文詳細のモジュール](order-confirmation-module.md)
+
+[ギフト カード モジュール](add-giftcard.md)

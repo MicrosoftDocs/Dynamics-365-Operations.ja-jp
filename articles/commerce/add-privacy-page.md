@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274214"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686698"
 ---
 # <a name="add-a-privacy-policy-page"></a>プライバシー ポリシー ページの追加
 
@@ -88,7 +88,7 @@ Dynamics 365 Commerce には、サイトのユーザーにプライバシー ポ
 
 フッター フラグメントにリンクを追加するには、次の手順に従います。
 
-1. **ページ フラグメント** に移動し、続いて **新規** を選択してページ フラグメントを作成します。
+1. **フラグメント** に移動し、続いて **新規** を選択してページ フラグメントを作成します。
 1. **新規ページ フラグメント** ダイアログ ボックスで、**フッター** モジュールを選択します。
 1. **ページ フラグメント名** で、フラグメントの名前を入力し、**OK** を選択します。
 1. **フッター カテゴリ** スロットで、**フッター項目**モジュールを追加します。

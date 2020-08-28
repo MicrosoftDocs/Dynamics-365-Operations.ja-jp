@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411217"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686625"
 ---
 # <a name="header-module"></a>ヘッダー モジュール
 
@@ -62,7 +62,7 @@ Dynamics 365 Commerce では、ページヘッダーは、ヘッダー、ナビ�
 
 ヘッダー モジュールを作成するには、次の手順に従います。
 
-1. **ページ フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
+1. **フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
 1. **新規ページ フラグメント** ダイアログ ボックスで、**コンテナー** モジュールを選択し、ページ フラグメントの名前を入力して、**OK** を選択します。
 1. 既定の **既定のコンテナー**スロットを選択し、右側のプロパティ ウィンドウで **幅**プロパティを**全画面表示**に設定し ます。
 1. **既定のコンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。

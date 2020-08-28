@@ -3,12 +3,12 @@ title: 製品関連の翻訳のよく寄せられる質問
 description: このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。
 author: cvocph
 manager: tfehr
-ms.date: 11/03/2017
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails
+ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Product information
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c60ed8ede095306f5a950711bdf094d5abe05433
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f92f1991db57629f9c6c0f55221019d4d375e4c0
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213035"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665821"
 ---
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
@@ -115,7 +115,7 @@ ms.locfileid: "3213035"
 1.  **製品情報管理** &gt; **設定** &gt; **バリアント グループ** の順にクリックします。
 2.  **サイズ** **グループ**、**色グループ** または **スタイル グループ** を選択します。
 3.  **新規** をクリックし、**サイズ** **グループ**、**色グループ**、または **スタイル グループ** フィールドにグループの名前を入力します。 **サイズ**、**色** または **スタイル** をクリックして、グループの明細行を作成します。
-4.  **サイズ** **グループ** 明細行]、**色** **グループ** **明細行**、または **スタイル グループ明細行** ページで、**新規** をクリックし、グループのためにサイズ、色、およびスタイルを作成します。
+4.  **サイズ** **グループ** 明細行、**色** **グループ** **明細行**、または **スタイル グループ明細行** ページで、**新規** をクリックし、グループのためにサイズ、色、およびスタイルを作成します。
 
 分析コード値グループの値の翻訳を管理するには、次の手順を実行します。
 1.  分析コード値グループを作成するための以前の手順に従い、**サイズ グループ明細行**、**色グループ明細行** または **スタイル グループ明細行** ページを開くます。

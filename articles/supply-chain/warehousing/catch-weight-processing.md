@@ -3,7 +3,7 @@ title: 倉庫管理による CW 製品の処理
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
+ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530538"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3693282"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
@@ -168,7 +168,7 @@ CW 品目の処理ポリシーでは、複数の重量キャプチャ メソッ�
 
 - クラスター ピッキングの機能では、CW 製品はサポートされていません。
 - ピッキングと梱包の倉庫の処理では、CW 製品はサポートされていません。
-- CW 製品では、作業テンプレートで定義されている作業を自動的に実行できます。
+- CW 製品では、作業テンプレートで定義されている作業を自動的に実行できません。
 - CW 製品では、コンテナーが終了した後に、梱包済コンテナーのピッキング作業が作成される手作業の梱包ステーションの処理はサポートされていません。
 - 個ごとのスキャン機能では、CW 製品はサポートされていません。
 

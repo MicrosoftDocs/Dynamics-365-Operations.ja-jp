@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411115"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661245"
 ---
 # <a name="gift-card-module"></a>ギフト カード モジュール
 
@@ -63,8 +63,18 @@ SVS や Givex などの外部ギフト カードのサポートの詳細につ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[買い物カゴ モジュール](add-cart-module.md)
+
+[買い物カゴ アイコン モジュール](cart-icon-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
+
+[支払モジュール](payment-module.md)
+
+[出荷先住所モジュール](ship-address-module.md)
+
+[配送オプション モジュール](delivery-options-module.md)
+
+[注文詳細のモジュール](order-confirmation-module.md)
 
 [外部ギフト カードのサポート](./dev-itpro/gift-card.md)

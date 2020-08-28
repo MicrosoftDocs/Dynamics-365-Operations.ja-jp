@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651669"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678225"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -39,6 +39,16 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 > [!NOTE]
 > バージョン 10.0.13 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
+
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS レポート プロパティで定義されたカスタム コード 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 一般に、カスタム コードは限られたメリットしかなく、同時に重要なリソースと、サポートのためのコンピューティングが必要になります。 カスタム コードは、レポート作成者が主にカスタム コード アセンブリからパブリック メソッドを呼び出すために使用します。 ただし、クラウドにホストされるサービスは、SSRS レポートのカスタム アセンブリへの参照はサポートしていません。 |
+| **別の機能で置き換えられているか?**   | レポート作成者は、すべてのテキスト ボックス式での計算、変換、書式設定の処理に対して、パブリック .NET API を引き続き参照することを選択できます。 詳細については、[コードをレポート (SSRS) に追加する](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15) をご覧ください。  |
+| **影響を受ける製品領域**         | カスタム コードを含む RDL で定義されているアプリケーション レポート デザインのサブセット。 |
+| **配置オプション**              | All |
+| **ステータス**                         | バージョン 10.0.13 を使用した場合、コンパイラは、SSRS レポート定義でカスタム コードが検出された場合に警告を発行します。 この問題を修正するには、レポート デザイン定義を開き、すべてのカスタム コードの成果物を削除します。 この警告は、将来の更新でコンパイラ エラーに置換されます。   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>3 つの jQuery コンポーネント ライブラリのアップグレード 
 
