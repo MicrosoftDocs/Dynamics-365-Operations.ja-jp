@@ -28,7 +28,7 @@ ms.locfileid: "3109840"
 
 [!include [banner](../includes/banner.md)]
 
-残念ながら、`microsoft.com` ドメインから axerd web のウェブ ページを破棄する必要がありました。 しかし、AxErd はサード パーティがホストしているその他の場所で利用可能な場合があります。
+残念ながら、`microsoft.com` ドメインから AxErd Web ページを破棄する必要がありました。 しかし、AxErd はサード パーティがホストしているその他の場所で利用可能な場合があります。
 
 Axerd は、多くの Microsoft Dynamics AX 2012 のテーブルに対して、エンティティ関係図 (erds) を提供しています。
 
