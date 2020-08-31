@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1bb5d59bbd4e4d247b6747b9fe40579e89ba7327
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: c9833fd45242071c9d5ea5ea4351522a54024e56
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259598"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665040"
 ---
-# <a name="create-a-new-retail-server-extension"></a>新しい Retail Server 拡張機能の作成
+# <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 
 [!include [banner](../includes/banner.md)]
 
 このドキュメントでは、新しい Commerce Scale Unit アプリケーション プログラミング インターフェイス (API) の作成方法、および POS または他のクライアントがそれを使用できるようにするための公開方法について説明します。 既存の Commerce Scale Unit API の変更はサポートされていません。
+
+このトピックは、Retail SDK バージョン 10.0.10 以前に適用されます。
 
 Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) を含む、エンドツーエンドの Commerce Scale Unit 拡張機能のサンプルがいくつか用意されているのみです。 これらのサンプルをテンプレートとして使用して、拡張機能を起動できます。 サンプル拡張機能は、RetailSDK\\SampleExtensions\\RetailServer フォルダーで見つけることができます。
 
@@ -60,7 +62,7 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 ### <a name="steps"></a>ステップ
 
 1. Commerce Scale Unit 拡張機能を作成する前に、CRT 拡張機能を作成します。 Commerce Scale Unit API には、パラメーターで CRT を呼び出すロジック以外のロジックはありません。
-2. Microsoft .NET フレームワーク バージョン 4.6.1 以降をターゲット フレームワークとして使用する、新しい C\#クラス ライブラリ プロジェクトを作成します。
+2. Microsoft .NET フレームワーク バージョン 4.6.1 以降をターゲット フレームワークとして使用する、新しい C\# クラス ライブラリ プロジェクトを作成します。
 3. Commerce Scale Unit 拡張機能プロジェクトで、CRT 拡張機能ライブラリまたはプロジェクトへの参照を追加します。 この参照を使用して、CRT 要求と応答を呼び出すことができます。 また、Commerce Scale Unit 拡張機能プロジェクトからのエンティティを使用することもできます。
 4. Commerce Scale Unit 拡張機能プロジェクトで、**NonBindableOperationController** または **CommerceController** を拡張する新しいコントローラー クラスを作成します。 基本クラスは、シナリオによって異なります。 このコントローラー クラスには、Commerce Scale Unit API によって公開される必要のあるメソッドが含まれています。 コントローラー クラス内で、CRT 要求を呼び出すメソッドを追加します。
 
@@ -175,4 +177,4 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 
 10. クライアントで Commerce Scale Unit 拡張機能を呼び出すには、Commerce プロキシを生成する必要があります。 その後、プロキシを使用して、クライアントから新しい Commerce Scale Unit API を呼び出すことができます。
 
-    プロキシの生成方法の詳細については、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md) を参照してください。
+    プロキシの生成方法の詳細については、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md)を参照してください。

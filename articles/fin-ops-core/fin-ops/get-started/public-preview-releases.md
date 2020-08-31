@@ -3,7 +3,7 @@ title: サービス更新の可用性
 description: このトピックでは、異なるリリース オプションに関する情報を提供します。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 06/22/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 483a5c75c6e3d6cccc7fa34b3d694085aef50b16
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: c14bf666539dbc03cc0aa6ac9804d359d64f0587
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497134"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551589"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 
@@ -50,7 +50,7 @@ Microsoftは、予測可能なサービス更新を提供することを約束�
 > [!NOTE] 
 > サービス更新は、3月、6月、9月、12月の間には提供されません。 
 
-顧客は、年間で最大8つのサービス更新プログラムを適用することができ、年間で最低2つのサービス更新プログラムを適用する必要があります。 顧客は、一度に最大3つまでの更新を続けて一時停止することができます。 サービス更新の保留は、サンド ボックスUAT、運用環境、または両環境に適用できます。 サービスの更新の保留期間が終了した後、顧客がしかるべきサービスの更新を行っていない場合、MicrosoftはLCSの設定に基づき最新のサービスの更新を自動で適用します。 サービスの更新を保留する方法の詳細については、次を参照してください。 [Lifecycle Servicesを通じてサービスの更新を一時停止する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates) 。
+顧客は、年間で最大 8 つのサービス更新プログラムを適用することができ、年間で最低 2 つのサービス更新プログラムを適用する必要があります。 顧客は、一度に最大3つまでの更新を続けて一時停止することができます。 サービス更新の保留は、サンド ボックスUAT、運用環境、または両環境に適用できます。 サービスの更新の保留期間が終了した後、顧客がしかるべきサービスの更新を行っていない場合、MicrosoftはLCSの設定に基づき最新のサービスの更新を自動で適用します。 サービスの更新を保留する方法の詳細については、次を参照してください。 [Lifecycle Servicesを通じてサービスの更新を一時停止する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates) 。
 
 ### <a name="targeted-release-schedule-dates-subject-to-change"></a>対象となるリリース スケジュール (日程は変更される可能性があります)
 
@@ -70,7 +70,7 @@ Microsoftは、予測可能なサービス更新を提供することを約束�
 | 10.0.9/プラット更新プログラム 33 | 2020 年 2 月 1 日            | 2020 年 3 月 13 日                    | 2020 年 4 月 1 日             | 2020 年 6 月 5 日       |
 | 10.0.10                   | 2020 年 3 月 6 日               | 2020 年 4 月 10 日                    | 2020 年 5 月 1 日               | 2020 年 7 月 3 日       |
 | 10.0.11                   | 2020 年 4 月 17 日              | 2020 年 5 月 29 日                      | 2020 年 7 月 1 日              | 2020 年 9 月 11 日 |
-| 10.0.12                   | 2020 年 5 月 29 日                | 2020 年 7 月 10 日                     | 2020 年 8 月 1 日            | 2020 年 10 月 23 日   |
+| 10.0.12                   | 2020 年 5 月 29 日                | 2020 年 7 月 22 日                     | 2020 年 8 月 1 日            | 2020 年 10 月 23 日   |
 | 10.0.13                   | 2020 年 8 月 3 日              | 2020 年 9 月 18 日                | 2020 年 10 月 1 日           | 2020 年 12 月 4 日   |
 | 10.0.14                   | 2020 年 9 月 4 日           | 2020 年 10 月 23 日                  | 2020 年 11 月 1 日         | 2021 年 1 月 22 日   |
 | 10.0.15                   | 2020 年 10 月 9 日             | 2020 年 12 月 4 日                  | 2021 年 1 月 1 日          | 2021 年 3 月 19 日     |

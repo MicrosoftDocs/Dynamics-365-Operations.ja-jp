@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0f9bd456fa7e53c31acefaf60005cccac52c4d5
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: 52c22acb112738e4af97f8ce9b904e5c47f35c88
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421620"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677819"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 

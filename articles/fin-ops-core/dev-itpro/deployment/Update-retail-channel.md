@@ -3,7 +3,7 @@ title: Commerce Scale Unit (クラウド) への更新プログラムと拡張�
 description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 712efb33ea2a96271cc1c0956480cda553e13807
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: 410ea77958207be6b9646f5d928e3aa137613d17
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426384"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628873"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 
@@ -50,7 +50,7 @@ Commerce Scale Unit に拡張機能を適用するには、次の手順を実行
 > [!NOTE]
 > まず、Lifecycle Services (LCS) で Commerce の配置可能なパッケージをプロジェクト資産ライブラリにアップロードしてください。すると、LCS の **Commerce の配置設定ページ**でパッケージの配置を選択できるようになります。
 
-**更新の適用**と**拡張機能の適用**の両方の操作には、最大 1 時間のダウンタイムが必要です。 この時間中、次のことが発生します。
+**更新プログラムの適用**および**拡張機能の適用**操作の両方はダウンタイム (最大 1 時間) を伴い、場合によっては最大 2 時間以上になる場合があります。 たとえば、Commerce Scale Unit の米国以外の場所を更新する場合、大量のデータ、または複雑なスキーマの更新が行われます。 ダウンタイム期間の現実的な予測については、運用環境で使用する予定のものと同等の更新およびデータセットに対するサンドボックス UAT のダウンタイム期間を記録します。 この時間中、次のことが発生します。
 
 - クラウドでホストされている Commerce チャネルは機能しません (POS オフライン機能が有効な場合を除く)。
 - オフライン機能が有効になっている POS デバイスの機能が制限されます。

@@ -3,7 +3,7 @@ title: インスタンスの削除
 description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621383"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668328"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
 
@@ -70,7 +70,7 @@ ms.locfileid: "3621383"
 4. 人事管理をサブスクライブするために使用したアカウントを使用して LCS にサイン インします。 
 5. 環境を含む人事管理プロジェクトを選択します。 
 6. LCS プロジェクトでは、**人事管理アプリの管理**タイルを選択します。 
-7. 削除するインスタンスを選択します。そのさい、配置ステータスが **失敗** とマークされている必要があります。
+7. 削除するインスタンスを選択します。その際、**削除済** の配置ステータスでマークされている必要があります。
 8. **インスタンスの削除**を選択して決定内容を確認します。 
 
 ## <a name="recover-a-soft-deleted-environment"></a>論理削除された環境を復旧する

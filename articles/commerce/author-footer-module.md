@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411211"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686721"
 ---
 # <a name="footer-module"></a>フッター モジュール  
 
@@ -50,7 +50,7 @@ ms.locfileid: "3411211"
 
 ## <a name="create-a-footer-module"></a>フッター モジュールの作成
 
-1. **ページ フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
+1. **フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
 1. **新規ページ フラグメント** ダイアログ ボックスで、**コンテナー** モジュールを選択し、ページ フラグメントの名前を入力して、**OK** を選択します。
 1. **既定のコンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
 1. **モジュールの追加** ダイアログ ボックスで、**フッター カテゴリ モジュール** を選択し、続いて**OK**を選択します。

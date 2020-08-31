@@ -3,7 +3,7 @@ title: 予算計画レイアウトの拡張
 description: このトピックでは、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応する方法を説明します。
 author: ryansandness
 manager: AnnBe
-ms.date: 07/20/2019
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,16 @@ ms.search.region:
 ms.author: ryansand
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: f704cc78ce764213a737c5dc592de727bf5843d7
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 0a0d1999da7de75d3b8bfa15379f90d169d6b5a6
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117398"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621125"
 ---
 # <a name="extend-the-budget-planning-layout"></a>予算計画レイアウトの拡張
 
 [!include [banner](../includes/banner.md)]
-
-## <a name="overview"></a>概要
 
 このトピックでは、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応するプロセスを説明します。 複数年にわたって情報を比較する場合、多くのシナリオを評価する場合、毎週または毎日の期間を評価する場合、このプロセスが必要になる場合があります。 このトピックは開発者が対象です。
 
@@ -121,10 +119,12 @@ BudgetPlanLineActiveView と BudgetPlanLine テーブル間のマッピングを
     }
     ```
 
-## <a name="sync-the-database-and-build-the-project"></a>データベースを同期し、プロジェクトをビルドします
+## <a name="build-the-project"></a>プロジェクトの構築
 
-データベースを同期し、プロジェクトをビルドします。
+プロジェクトをビルドし、データベースを同期します。
 
 ## <a name="validate-your-changes"></a>変更の検証
 
 変更を検証するには、36 の通貨列や数量列を超える予算計画のレイアウトを作成する必要があります。 すべてのステップを正しく完了した場合、各列に値を入力し値を保存して Excel で編集できます。
+
+変更を検証した後は、拡張機能をローカルの開発環境を越えて発行および宣伝できます。 

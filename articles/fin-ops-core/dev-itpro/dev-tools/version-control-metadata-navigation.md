@@ -1,9 +1,9 @@
 ---
 title: バージョン コントロール、メタデータ検索、およびナビゲーション
-description: このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
+description: このチュートリアルでは、Azure DevOps をコンフィギュレーションして、モデルのソース管理を有効にします。 また、開発ツールでのその他の生産性機能について把握するのにも役立ちます。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00daee4483beb43ac247d8c9bd7a475fc0135503
-ms.sourcegitcommit: d551e5a3cbcb5dd8c2a673b4029755fa6a187689
+ms.openlocfilehash: 941276a68b9971b3c6dbd0cd3d16c9c0cd885d55
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266619"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621286"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
+このチュートリアルでは、Microsoft Azure DevOps をコンフィギュレーションして、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
 
 ## <a name="configure-your-azure-devops-account-and-project"></a>Azure DevOps アカウントおよびプロジェクトをコンフィギュレーションする
 
@@ -286,6 +286,4 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
     > [!TIP]
     > 検索結果からプロジェクトを作成するには、すべての結果が同じモデル内にある限り、任意のタイプ、名前、またはその他のフィルタを検索に追加できます。 例: *モデル:「フリート管理」 タイプ:テーブル名:^FM* は、文字 FM で始まる名前を持つフリート管理モデルで、すべてのテーブルを返します。
-
-
 

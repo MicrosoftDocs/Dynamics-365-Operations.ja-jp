@@ -3,7 +3,7 @@ title: オンプレミス配置でのバッチのみおよび対話型のみの 
 description: このトピックでは、環境をコンフィギュレーションして、バッチのみおよび対話型のみの AOS ノードを配置できるようにする方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: e1a9e3c5079f0d8b276bdb52e2caf66d7a5b4779
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: 072815b5a63e1fb60d6c0bbdad5266790b0b93d1
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412421"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621368"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > この機能は、アプリケーション更新 10.0.12 (プラットフォーム更新 36) 以降でサポートされます。

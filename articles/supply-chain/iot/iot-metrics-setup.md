@@ -2,7 +2,7 @@
 title: IoT インテリジェンスの指標の設定
 description: このトピックでは、IoT インテリジェンスの指標を設定する方法について説明します。
 author: robinarh
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c173f43800a8fb80c1bb573b773caf3991b785e4
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: d854923876e013cc53542d809f61901e997dc09f
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386425"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597156"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>IoT インテリジェンスの指標の設定
 

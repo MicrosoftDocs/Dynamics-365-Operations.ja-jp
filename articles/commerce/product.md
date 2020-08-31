@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fabf08e8dde1b9b6d27af3e42d3aaff904b467b0
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 7afe9225b8fc966ca154a5eb7421e8d4cc7c3023
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454536"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664837"
 ---
 # <a name="add-product-recommendations-on-pos"></a>POS で製品推奨事項を追加する
 
@@ -79,9 +79,11 @@ ms.locfileid: "3454536"
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
 
-[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
+
+[トランザクション画面への推奨事項の追加](add-recommendations-control-pos-screen.md)
 
 [AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
 

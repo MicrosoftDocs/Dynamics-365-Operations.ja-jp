@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 6bf959ed2f504aa68c72f1f59bcd907210cd476b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 0a96de1ef1975b21aff29204e8baba9d76bbd061
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033025"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657304"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
@@ -43,10 +43,10 @@ Microsoft は、使用されていない分析コード フィールドの限定
  
 これにより、標準アプリケーションのインベントリ ディメンションの合計数が 25 になります。
 
-- 4 製品分析コード: 色、サイズ、スタイル、およびコンフィギュレーション
+- 5 製品分析コード: 色、サイズ、スタイル、コンフィギュレーションおよびバージョン
 - 5 つの追跡用分析コード: シリアル、バッチ、所有者、プロファイル (ロシアのみ)、および GTD (ロシアのみ)
 - 6. 保管分析コード: サイト、倉庫、場所、ステータス、ライセンス プレートおよびパレット (アップグレードと移行のみ)
-- 10 個の未割り当ての一般的な分析コード: InventDimension10 から InventDimension1
+- 12 個の未割り当ての一般的な分析コード: InventDimension1 から InventDimension12
 
 Microsoft は、物理スキーマを提供しています。
 

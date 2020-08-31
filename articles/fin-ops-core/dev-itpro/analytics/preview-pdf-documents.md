@@ -3,7 +3,7 @@ title: PDF ビューアを使用して PDF ドキュメントをプレビュー�
 description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 11f532a1e083230a4a867eed01acaa2b0381e06c
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 1cf944dc3432daecae851b65f8695e9abb6ba9bf
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258542"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614300"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用して PDF ドキュメントをプレビューする
 
@@ -40,19 +40,21 @@ ms.locfileid: "3258542"
 - サーバーサイド レンダリングにより、ドキュメントを作成する際の効率が向上します。
 - 組み込みツールによって、ビジネスドキュメントの内容をすばやく閲覧することができます。
 
-## <a name="accessing-the-pdf-preview-experience"></a>PDFプレビュー機能にアクセスする
-利用可能となるPDFドキュメント ビューアー コントロールは、ほとんどの配置タイプで使用できるようになっています。 ただし、ワンボックス配置の場合は、 **レポートオプション**  ページにてPDFプレビュー機能を有効にする必要があります。 PDFのプレビューを有効にするには、以下の手順を実行します。 
+## <a name="accessing-the-pdf-preview-experience-platform-update-35-or-earlier"></a>PDF プレビュー機能へのアクセス (プラットフォーム更新プログラム 35 またはそれ以前)
+利用可能となる PDF ドキュメント ビューアー コントロールは、既定ではほとんどの配置タイプで表示されます。 ただし、**レポート管理**ページを使用して OneBox 環境で PDF プレビュー機能を有効にする必要があります。
 
-1) ブラウザウィンドウのURL末尾に "&mi=SysReportAdministration" を追加して **レポートオプション** に移動します。
-2) **埋め込みビューアを使用してドキュメントをプレビューする** フィールドを **はい** と設定します。
-3) **保存**をクリックします。
+1. URL に "**&mi=SysReportAdministration**" を追加して**レポート オプション**に移動します。
+2. **埋め込みビューアを使用してドキュメントをプレビューする**オプションを**はい**と設定します。
+3. **保存** を選択します。
+
+## <a name="accessing-the-pdf-preview-experience-platform-update-36-or-later"></a>PDF プレビュー機能へのアクセス (プラットフォーム更新プログラム 36 以降)
+プラットフォーム更新プログラム 36 以降では、機能管理を使用して**レポート PDF ビューアー機能**を有効にします。
 
 ## <a name="additional-feature-information"></a>追加の機能
 
 - 既定では、展開/折りたたみが可能なセクションが用意されています。 これらのインタラクティブな操作は、PDFドキュメントが作成された後には機能しなくなります。
 - プリンターのドロップダウンメニューから、ローカル接続されている機器を選択することができます。 ここで表示されるリストには、サービスを通じて接続されるネットワークプリンターは含まれません。
 - ドキュメントは組み込みツールバーのアクションを使用してローカルデバイスにダウンロードされます。
-- アプリケーション拡張機能を使用して、PDFドキュメント内の埋め込みドリルスルー リンクを有効にすることができます。
 - PDF以外の形式のドキュメントを作成するには、 **印刷先** オプションを使用します。
 
 ## <a name="feature-limitations"></a>機能の制限
@@ -60,5 +62,3 @@ ms.locfileid: "3258542"
 
 - 埋め込みドリルスルー ナビゲーションは、PDF ドキュメントのプレビュー時には実行できません。 
 - PDF ドキュメントでは、展開および折りたたみ可能なセクションはサポートされません。 
-- レポートを PDF ドキュメントとして表示している場合、サブレポートはサポートされません。
-- レポートを、ドメインでホストされているプリンター デバイスに直接印刷します。

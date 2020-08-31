@@ -3,7 +3,7 @@ title: 計算済みフィールド タイプの ER データ ソースの、パ�
 description: このトピックでは、ER データ ソースに対して計算済みフィールド タイプを使用する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771332"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665613"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
@@ -39,20 +39,20 @@ ms.locfileid: "2771332"
     - 電子申告機能コンサルタント
     - システム管理者
 
-- 次のいずれかのロールで、Finance and Operations と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします。
+- 次のいずれかのロールで、Finance and Operations と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします:
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
     - システム管理者
 
-[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) から、ZIP (圧縮された) ファイル**をダウンロードし、計算済みフィールド タイプ**の ER データ ソースの、パラメーター化された呼び出しをサポートします。 これには、ローカルに抽出および保存する必要がある次の ER コンフィギュレーションが含まれています。
+次のファイルをローカルにダウンロードして保存する必要もあります。
 
 | **コンテンツ**                           | **ファイル名**                                        |
 |---------------------------------------|------------------------------------------------------|
-| ER データ モデル構成のサンプル    | パラメーター化された呼び出し version.1.xml を知るためのモデル     |
-| ER メタデータ構成のサンプル      | パラメーター化された呼び出し version.1.xml を知るためのメタデータ  |
-| ER モデル マッピング構成のサンプル | パラメーター化された呼び出し version.1.1.xml を知るためのマッピング |
-| ER フォーマット構成のサンプル        | パラメーター化された呼び出し version.1.1.xml を知るための形式  |
+| ER データ モデル構成のサンプル    | [パラメーター化された呼び出し version.1.xml を知るためのモデル](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| ER メタデータ構成のサンプル      | [パラメーター化された呼び出し version.1.xml を知るためのメタデータ](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| ER モデル マッピング構成のサンプル | [パラメーター化された呼び出し version.1.1.xml を知るためのマッピング](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER フォーマット構成のサンプル        | [パラメーター化された呼び出し version.1.1.xml を知るための形式](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>RCS インスタンスにサインインする
 この例では、サンプル会社 Litware, Inc. 用に、コンフィギュレーションを作成します。まず、RCS で、手順 [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) にあるステップを完了する必要があります。

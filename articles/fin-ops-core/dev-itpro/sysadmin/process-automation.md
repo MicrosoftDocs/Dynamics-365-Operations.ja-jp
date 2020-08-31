@@ -3,7 +3,7 @@ title: プロセスの自動化
 description: このトピックでは、プロセスの自動化を使用して、バッチ サーバーによって実行されるプロセスを簡単にスケジューリングする方法について詳しく説明します。
 author: RyanCCarlson2
 manager: tonyafehr
-ms.date: 06/24/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 2ab4e7510ff98b9fbf0223096b905e9de47f52e1
-ms.sourcegitcommit: 1833c1e07a32c8ad41e4a1516e78100ae04a2156
+ms.openlocfilehash: 320e18f7fc61300ed2966afef530907fc9fc5ca5
+ms.sourcegitcommit: e2a47d31175bbd60acfd7a23ffea70c669358572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3508188"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3690049"
 ---
 # <a name="process-automation"></a>プロセスの自動化
 
@@ -32,6 +32,8 @@ ms.locfileid: "3508188"
 ## <a name="administration"></a>管理
 
 すべてのプロセス自動化の全体管理ページは、システム管理モジュールの**設定**メニューにあります。 このページには、システムで設定されているすべての自動化されたプロセス (シリーズ) が一覧表示されます。 また、このページから新しいプロセスの自動化を直接追加することもできます。 シリーズを設定した後は、この一覧から各シリーズを管理できます。 シリーズ全体を編集したり、削除したり、リスト ビューにすべての発生を表示したり、一定の期間にスケジュール済の作業を一時停止する場合にこのシリーズを無効にしたりできます。 
+
+機能を無効にしても、機能管理で無効になっているプロセスは表示されません。 さらに、プロセス自動化のスケジューリング エンジンでは、無効な機能に対して発生またはバックグラウンド プロセスがスケジュールされることはありません。 機能を再度有効にすると、過去のすべてのスケジュールされた出来事またはバックグラウンド プロセスが直ちに実行されます。
 
 ## <a name="calendar-view"></a>カレンダー表示 
 プロセス自動化の主な利点の 1 つとして、スケジュール済の作業を単純なカレンダー表示で確認できる機能があります。  この表示では、一度に 1 週間の作業を表示できます。 このビューは、**プロセスの自動化**ページの右側に表示されます。 選択したシリーズのスケジュール済の作業が設定されます。 

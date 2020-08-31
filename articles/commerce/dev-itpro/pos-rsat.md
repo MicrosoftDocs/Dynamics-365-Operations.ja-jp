@@ -3,7 +3,7 @@ title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2f72aa05a1daeebe4462289e5cca30bd88d4268
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: e08ef8f92c447e6bc2eba9844503a60945f90fc5
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368808"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677942"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -65,10 +65,10 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 1. **Retail とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター**の順に移動します。
 2. テスト記録機能を有効にする必要があるレジスターを選択します。
-3. **登録** タブの **全般** クイック タブで、**タスクとテスト レコーダーの有効化** オプションを **はい** に設定します。
+3. **登録**タブの**全般**クイック タブで、**タスクとテスト レコーダーの有効化**オプションを **はい**に設定します。
 4. **保存** を選択します。
 5. **Retail と Commerce** &gt; **Retail と Commerce IT** &gt; **配送スケジュール**の順に移動します。
-6. **1090 レジスター** ジョブを選択し、**今すぐ実行** を選択します。
+6. **1090 レジスター** ジョブを選択し、**今すぐ実行**を選択します。
 
 ## <a name="controlling-the-test-recorder"></a>テスト レコーダーの制御
 
@@ -92,7 +92,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 ### <a name="continue-a-recording-session"></a>記録セッションの続行
 
-一時停止後に記録セッションを再開するには、**記録** を選択します。
+一時停止後に記録セッションを再開するには、**記録**を選択します。
 
 [![レコード](./media/Recording.png)](./media/Recording.png)
 
@@ -173,7 +173,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 
 1. クラウド POS を起動します。
 
-2. 左ウィンドウで ハンバーガー アイコンを選択し、**設定** を選択します。 クラウド POS にはサインインしないでください。 サインインの手順は、テスト記録フローの一部として記録する必要があるので、サインインの前にレコーダーを起動する必要があります。)
+2. 左ウィンドウで ハンバーガー アイコンを選択し、**設定**を選択します。 クラウド POS にはサインインしないでください。 サインインの手順は、テスト記録フローの一部として記録する必要があるので、サインインの前にレコーダーを起動する必要があります。)
 
 3. **設定**ページの**タスクとテスト レコーダー**セクションで、**テスト レコーダーを開く**を選択します。
 
@@ -230,7 +230,7 @@ Azure DevOps に直接アップロードするには:
 RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイルを [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) からダウンロードします。 MSI ファイルをダブルクリックして、実行します。 RSAT をインストールした後、Selenium と Web ブラウザーのドライバーをインストールする必要があります。 
 
 > [!NOTE]
-> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、「[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)」を参照してください。
+> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。
 
 次の手順では、POS のテスト ケースを実行するために必要なコンフィギュレーションについて説明します。
 
@@ -238,7 +238,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 
 1. デスクトップから RSAT を開きます。
 2. 右上にある**設定**ボタンを選択して、RSAT をコンフィギュレーションします。
-3. **設定** ダイアログ ボックスで、**オプション** タブをクリックし、**Retail POS の構成** オプションを選択して Retail POS の自動化を有効にします。
+3. **設定**ダイアログ ボックスで、**オプション** タブをクリックし、**Retail POS の構成**オプションを選択して Retail POS の自動化を有効にします。
 4. **設定**ダイアログ ボックスの **Retail POS** タブの**再生環境**タブで、次のフィールドを設定します。
 
     + **Cloud POS URL** – テストを実行する Cloud POS 環境の URL を入力します。
@@ -278,7 +278,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 このセクションでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、テストの実行、結果の調査、Azure DevOps への作業の保存方法について説明します。
 
 > [!NOTE]
-> Azure DevOps およびテスト ケースの設定の詳細については、「[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)」を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
+> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 ### <a name="load-test-cases-and-create-parameter-files"></a>テスト ケースの読み込みとパラメーター ファイルの作成
 
@@ -343,7 +343,7 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 
 テスト ケースの実行が完了すると、RSAT の**結果**列に合格または不合格のステータスが表示されます。 **結果**列を選択して、エラー メッセージを表示できます。 詳細は Azure DevOps にあります。この詳細を使用して結果を調査できます。 Azure DevOps プロジェクト ページで、**テスト \> 実行**に移動します。
 
-すべてのエラー メッセージは、C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg\<TestCaseId\>.txt でローカルでも利用可能です。
+すべてのエラー メッセージは、C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg\<TestCaseId\>.txt でローカルでも利用可能です。 
 
 ## <a name="system-and-metadata-files"></a>システムおよびメタデータ ファイル
 
@@ -366,7 +366,7 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 ### <a name="creating-test-cases-by-using-the-test-recorder"></a>テスト レコーダーを使用したテスト ケースの作成
 
 + レコーディングまたはテストの実行/再生を作成する前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
-+ すべての記録が、POS のログイン画面から開始されていることを確認します。
++ Chrome 拡張機能を無効にする - 可能な場合は、記録して再生するのに使用した Chrome ブラウザーで Chrome 拡張機能を無効にします。 Chrome 拡張機能は DOM 要素の xpath を変更する場合があります。手順実行中に要素が見つからないため、テスト ケースが失敗になる可能性があるからです (xpath は記録とは異なります)。
 + 個々の記録を簡潔にし、1 人のユーザーが実行するビジネス タスク (販売トランザクションの作成など) に注目します。 この方法を使用すると、テスト ケースの管理と再利用が容易になります。
 + 機密情報を含むシナリオは記録しないでください。
 + 記録と再生は同じ画面レイアウトで実行し、同じ解像度で実行する必要があります。 記録と再生が異なるレイアウトで行われ、解像度が異なる場合、再生は失敗します。
@@ -382,6 +382,10 @@ RSAT で、**実行**を選択して、選択したテスト ケースを実行�
 ### <a name="chrome-driver"></a>Chrome ドライバー
 
 点滅して再生に失敗する (再生を開始せずにブラウザが複数回開いたり閉じたりする) 場合、これは Chrome ドライバーのバージョンに関連している可能性があります。 RSAT ツールのエラー ログを確認してください。 Chrome ドライバーのバージョンがサポートされていないというエラーが発生した場合は、エラー メッセージに記載されているサポートされている chromedriver.exe バージョンをダウンロードし、…\Regression Suite Automation Tool\Common\External\Selenium フォルダーに貼り付けます。  Chrome ドライバーは、[ChromeDriver](https://chromedriver.chromium.org/downloads) からダウンロードできます。
+
+### <a name="disable-chrome-extension"></a>Chrome 拡張機能を無効にする
+
+可能な場合は、記録して再生するのに使用した Chrome ブラウザーで Chrome 拡張機能を無効にします。 Chrome 拡張機能は DOM 要素の xpath を変更する場合があります。手順実行中に要素が見つからないため、テスト ケースが失敗になる可能性があるからです (xpath は記録とは異なります)。
 
 ### <a name="net-standard-error"></a>.NET 標準エラー
 

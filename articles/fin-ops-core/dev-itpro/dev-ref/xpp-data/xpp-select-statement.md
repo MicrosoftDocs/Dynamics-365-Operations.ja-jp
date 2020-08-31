@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 3775acf7a025bc96c737d442136c6fb51c8b75ba
-ms.sourcegitcommit: 4ba6817b7aa7735a291a021022b4c12c2de5f2eb
+ms.openlocfilehash: 8322fc8e85279f07480aad57c5faa92f64f4399c
+ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3505951"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637834"
 ---
 # <a name="select-statement"></a>明細書を選択
 
@@ -31,14 +31,16 @@ ms.locfileid: "3505951"
 
 + すべての**選択**ステートメントではレコードをフェッチするためテーブル変数を使用します。 この変数は、**select** 文を実行する前に宣言する必要があります。
 + **select** ステートメントは、レコードを 1 つだけ、またはフィールドをフェッチします。 複数のレコードをフェッチまたは移動したりするには、**next** ステートメントまたは **[while select](xpp-while-select.md)** ステートメントを使用できます。
+
     + **next** ステートメントは、テーブルの次のレコードをフェッチします。 **選択**ステートメントの前に、**次**ステートメントがある場合、エラーが発生します。 **次**ステートメントを使用する場合、**firstOnly** 検索オプションを使用しません。
     + **while select** ステートメントを使用して複数のレコードを移動する方がより適切です。
+
 + **select** ステートメントの結果はテーブル バッファ変数に返されます。
 + **選択**ステートメントのフィールド リストを使用すると、これらのフィールドでは、テーブル変数が使用されます。
 
 ## <a name="select-example"></a>例の選択
 
-次の例では、**CustomerTable** テーブルの最初の行のすべての列をフェッチし、行の **AccountNum** 列を出力します。
+次の例では、CustTable テーブルの最初の行のすべての列をフェッチし、その行の **AccountNum** 列に値を出力します。
 
 ```xpp
 CustTable custTable;
@@ -50,7 +52,7 @@ info("AccountNum: " + custTable.AccountNum);
 
 ## <a name="insert-example"></a>例の挿入
 
-次の例では、新しいレコードを **CustTable** テーブルに挿入します。 新しいレコードの **AccountNum** 列は **2000** に設定され、**CustGroup** 列は **1** に設定されます。 レコードの他のフィールドは空白になります。
+次の例では、新しいレコードを CustTable テーブルに挿入します。 新しいレコードの **AccountNum** 列は **2000** に設定され、**CustGroup** 列は **1** に設定されます。 レコードの他のフィールドは空白になります。
 
 ```xpp
 ttsBegin;
@@ -62,11 +64,11 @@ ttsBegin;
 ttsCommit;
 ```
 
-データの挿入に関するその他の例については、[データの挿入](xpp-insert.md)を参照してください。
+データの挿入に関するその他の例については、[データの挿入](xpp-insert.md) を参照してください。
 
 ## <a name="update-example"></a>例の更新
 
-次の例では、更新する **CustTable** テーブルを選択します。 **AccountNum** フィールドの値が **2000** に等しいレコードのみが更新されます。 **next** への呼び出しはなく、**select while** ステートメントではないため、1 つのレコードのみが更新されます。 **CreditMax** フィールドの値が **5000** に変更されます。
+次の例では、更新する CustTable テーブルを選択します。 **AccountNum** フィールドの値が **2000** に等しいレコードのみが更新されます。 **next** への呼び出しはなく、この例では **select while** ステートメントを使用していないため、1 つのレコードのみが更新されます。 **CreditMax** フィールドの値が **5000** に変更されます。
 
 ```xpp
 ttsBegin;
@@ -78,11 +80,11 @@ ttsBegin;
 ttsCommit;
 ```
 
-データの更新に関するその他の例については、[データの更新](xpp-update.md)を参照してください。
+データの更新に関するその他の例については、[データの更新](xpp-update.md) を参照してください。
 
 ## <a name="delete-example"></a>例の削除
 
-次の例では、**AccountNum** フィールドが **2000** に等しい **CustTable**テーブルのすべてのレコードがデータベースから削除されます。 一度に 1 つのレコードが削除されます。
+次の例では、**AccountNum** フィールドが **2000** である CustTable テーブルのすべてのレコードがデータベースから削除されます。 一度に 1 つのレコードが削除されます。
 
 ```xpp
 ttsBegin;
@@ -95,42 +97,43 @@ ttsBegin;
 ttsCommit;
 ```
 
-データの削除に関するその他の例については、[データの削除](xpp-select.md)を参照してください。
+データの削除に関するその他の例については、[データの削除](xpp-select.md) を参照してください。
 
 ## <a name="syntax-of-the-select-statement"></a>Select ステートメントの構文
 
-これらの記号は、次の構文で使用されます:
+構文では次の記号が使用されています。
 
-+ **\[\]**: オプション
-+ **{}**: 0 回以上
-+ **\+**: 1 回以上
++ **\[\]** – かっこはオプションの要素を囲みます。
++ **{}** – 中かっこは、0 回以上含めることができる要素を囲みます。
++ **\+** – プラス記号は、1回以上含めることができる要素を示します。
++ **|** – バーはオプションを示します。 
 
-|記号                |   | 式                                                                |
-|----------------------|---|---------------------------------------------------------------------------|
-|*SelectStatement*     | = | *パラメーター*を**選択する**                                                   |
-|*パラメーター*          | = | { *FindOption* } [ *FieldList* **from** ] *TableBufferVariable* [ *IndexClause* ] [ *Options* ] [ *WhereClause* ] [ *JoinClause* ] |
-|*FindOption*          | = | **crossCompany** [**:** *ContainerVariable*] \| **reverse** \| **firstFast** \|  *FirstOption* \| **forUpdate** \| **noFetch** \| *ForceOption* \| **forceSelectOrder** \| **forceNestedLoop** \| *LockOption* \| **repeatableRead** \| **validTimeState** |
-|*FirstOption*         | = | **firstOnly** \| **firstOnly10** \| **firstOnly100** \| **firstOnly1000** |
-|*LockOption*          | = | **optimisticLock** \| **pessimisticLock**                                 |
-|*ForceOption*         | = | **forcePlaceholders** \| **forceLiterals**                                |
-|*FieldList*           | = | { *フィールド* } \| **\***                                                     |
-|*フィールド*               | = | *集計* **(** *FieldIdentifier* **)** \| *FieldIdentifier*            |
-|*集計*           | = | **合計** \| **平均** \| **minof** \| **maxof** \| **集計**                 |
-|*オプション*             | = | *OrderClause* \| *IndexClause*                                            |
-|*OrderClause*         | = | [*OrderBy* [*GroupBy*]] \| [*GroupBy* [*OrderBy*]]                        |
-|*OrderBy*             | = | **order** [**by**] *FieldOrder* {**、** *FieldOrder* }                     |
-|*GroupBy*             | = | **group** [**by**] *FieldOrder* {**、** *FieldOrder* }                     |
-|*FieldOrder*          | = | *FieldIdentifier* [ **asc** \| **desc** ]                                 |
-|*IndexClause*         | = | **インデックス** *IndexName* \| **インデックス ヒント** *IndexName*                       |
-|*WhereClause*         | = | **where** *式* *InClause*                                         |
-|*InClause*            | = | **in** *リスト*                                                             |
-|*JoinClause*          | = | [**exists** \| **notexists** \| **outer** ] **結合**  *パラメーター*        |
-|*ContainerVariable*   | = | コンテナー。                                                              |
-|*式*          | = | 式。                                                               |
-|*TableBufferVariable* | = | 結果の変数名。                                        |
-|*FieldIdentifier*     | = | テーブルでのフィールドの名前。                                         |
-|*IndexName*           | = | テーブルのインデックスの名前。                                         |
-|*リスト*                | = | 値の配列。                                                       |
+| 記号                |   | 式 |
+|-----------------------|---|------------|
+| *SelectStatement*     | = | *パラメーター*を**選択する** |
+| *パラメーター*          | = | { *FindOption* } \[ *FieldList* **from** \] *TableBufferVariable* \[ *IndexClause* \] \[ *Options* \] \[ *WhereClause* \] \[ *JoinClause* \] |
+| *FindOption*          | = | **crossCompany** \[**:** *ContainerVariable*\] \| **reverse** \| **firstFast** \| *FirstOption* \| **forUpdate** \| **noFetch** \| *ForceOption* \| **forceSelectOrder** \| **forceNestedLoop** \| *LockOption* \| **repeatableRead** \| **validTimeState** |
+| *FirstOption*         | = | **firstOnly** \| **firstOnly10** \| **firstOnly100** \| **firstOnly1000** |
+| *LockOption*          | = | **optimisticLock** \| **pessimisticLock** |
+| *ForceOption*         | = | **forcePlaceholders** \| **forceLiterals** |
+| *FieldList*           | = | { *フィールド* } \| **\*** |
+| *フィールド*               | = | *集計* **(** *FieldIdentifier* **)** \| *FieldIdentifier* |
+| *集計*           | = | **合計** \| **平均** \| **minof** \| **maxof** \| **集計** |
+| *オプション*             | = | *OrderClause* \| *IndexClause* |
+| *OrderClause*         | = | \[*OrderBy* \[*GroupBy*\]\] \| \[*GroupBy* \[*OrderBy*\]\] |
+| *OrderBy*             | = | **order** \[**by**\] *FieldOrder* {**、** *FieldOrder* } |
+| *GroupBy*             | = | **group** \[**by**\] *FieldOrder* {**、** *FieldOrder* } |
+| *FieldOrder*          | = | *FieldIdentifier* \[ **asc** \| **desc** \] |
+| *IndexClause*         | = | **インデックス** *IndexName* \| **インデックス ヒント** *IndexName* |
+| *WhereClause*         | = | **where** *式* *InClause* |
+| *InClause*            | = | **in** *リスト* |
+| *JoinClause*          | = | \[**exists** \| **notexists** \| **outer** \] **join** *Parameters* |
+| *ContainerVariable*   | = | コンテナー。 |
+| *式*          | = | 式。 |
+| *TableBufferVariable* | = | 結果の変数名。 |
+| *FieldIdentifier*     | = | テーブルでのフィールドの名前。 |
+| *IndexName*           | = | テーブルのインデックスの名前。 |
+| *リスト*                | = | 値の配列。 |
 
 ## <a name="aggregate-functions"></a>集計関数
 
@@ -145,9 +148,9 @@ ttsCommit;
 
 業界標準の SQL では、データベース クエリに集計関数を含めることができます。 例では、**count(RecID)** および **sum(columnA)** があります。 集計関数が使用されるが、どの行も **WHERE** 句と一致しないときは、行は、集計の結果を保持するために行を返す必要があります。 返された行では、**count** 関数には **0** (ゼロ)、**sum** 関数には **null** が表示されます。 X++ はデータベースの **null** 値の概念をサポートしません。 したがって、**sum** 関数が **null** を返す場合、行はユーザーに返されません。 また、すべてのデータ型は、状況によっては **null** 値として処理される特定の値を持ちます。
 
-## <a name="group-and-order-the-query-results"></a>クエリ結果のグループ化および順序付け
+## <a name="grouping-and-ordering-the-query-results"></a>クエリ結果のグループ化および順序付け
 
-クエリは複数の **group by** 句を持つことができますが、フィールドは 1 つの**group by** 句のテーブル名で修飾できます。 テーブル名の修飾子を使用することをお勧めします。 **order by** 句は、**group by** と同じ構文パターンに従います。 両方の句が提供されている場合は、**join** (または **from**) 句の後に表示する必要があり、両方とも同じ **join** 句に存在する **where** 句よりも前にある必要があります。 すべての **group by**、**order by**、および**where** の各句を、最後の **join** 句のすぐ後に表示することをお勧めします。 次の例は、**group by** 句のフィールドがテーブル名で修飾されることを示しています。
+クエリは複数の **group by** 句を持つことができますが、フィールドは 1 つの**group by** 句のテーブル名で修飾できます。 テーブル名の修飾子を使用することをお勧めします。 **order by** 句は、**group by** と同じ構文パターンに従います。 両方の句が提供されている場合は、**join** (または **from**) 句の後に表示する必要があり、両方とも同じ **join** 句に存在する **where** 句よりも前にある必要があります。 すべての **group by**、**order by**、および**where** の各句を、最後の **join** 句のすぐ後に表示することをお勧めします。 次の例は、フィールドがテーブル名で修飾されている **group by** 句を示しています。
 
 ```xpp
 CustTable custTable;
@@ -197,16 +200,16 @@ while select AccountNum from custTable
 
 ## <a name="using-where-order-by-and-index-hint-together-in-a-query"></a>クエリで where、order by、および index hint を一緒に使用する
 
-返されるデータを並べ替えるには、**select** ステートメントで **order by** キーワードを使用します。 **index hint** キーワードを使用して、クエリで使用するインデックスを指定し、インデックスで定義された方法で選択したレコードをソートします。 インデックスは、レコードの選択を最適化します。 特定の順序でレコードを選択するには、**インデックス ヒント**キーワードを**並べ替え**の式と組み合わせます。 出力を逆順に並べ替えるには、**逆**キーワードを使用します。 テーブルのインデックスが無効になっている場合 (インデックスの**有効**プロパティが**いいえ**に設定されている場合)、索引を参照する**選択**ステートメントは引き続き有効です。 ただし、インデックスがデータベースに存在しないため、データベースはデータを並べ替えるヒントとしてインデックスを使用できません。 次のテーブルは、**select** ステートメントで **index hint** および **order by** キーワードを使用する方法を示しています。
+返されるデータを並べ替えるには、**select** ステートメントで **order by** キーワードを使用します。 **index hint** キーワードを使用して、クエリで使用するインデックスを指定し、インデックスで定義された方法で選択したレコードを並び替えます。 インデックスは、レコードの選択を最適化します。 特定の順序でレコードを選択するには、**インデックス ヒント**キーワードを**並べ替え**の式と組み合わせます。 出力を逆順に並べ替えるには、**逆**キーワードを使用します。 テーブルのインデックスが無効になっている場合 (インデックスの**有効**プロパティが**いいえ**に設定されている場合)、索引を参照する**選択**ステートメントは引き続き有効です。 ただし、インデックスがデータベースに存在しないため、データベースはデータを並べ替えるヒントとしてインデックスを使用できません。 次のテーブルは、**select** ステートメントで **index hint** および **order by** キーワードを使用する方法を示しています。
 
-| タスク                                                   | 使用                                   |
-|--------------------------------------------------------|---------------------------------------|
-| 注文が重要でない場合は、レコードを選択します。       | `select .. where ...`                 |
-| 注文が重要な場合は、レコードを選択します。          | `select .. order by ... where ...`    |
-| レコードを選択し、特定のインデックスを強制的に使用します。 | `select .. index hint ... where ...`  |
-| 注文が重要な場合は、レコードを選択し、特定のインデックスを強制的に使用します。 | `select .. index hint ... order by ... where ...` |
+| タスク | 明細書を選択 |
+|------|-----|
+| 注文が重要でない場合は、レコードを選択します。 | select .. where ... |
+| 注文が重要な場合は、レコードを選択します。 | select .. order by ... where ... |
+| レコードを選択し、特定のインデックスを強制的に使用します。 | select .. index hint ... where ... |
+| 注文が重要な場合は、レコードを選択し、特定のインデックスを強制的に使用します。 | select .. index hint ... order by ... where ... |
 
-次の例は、顧客の範囲と期日に基づいて、**SalesTable** テーブルからトランザクションを選択する方法を示しています。
+次の例は、顧客の範囲と期日に基づいて、SalesTable テーブルからトランザクションを選択する方法を示しています。
 
 ```xpp
 SalesTable salesTable;
@@ -222,7 +225,7 @@ select salesTable
 
 ## <a name="asc-keyword"></a>asc キーワード
 
-**asc** キーワードは、**order by** または **group by** 句のオプションです。 昇順の並べ替えを指定します。 **昇順**または**降順**のどちらも指定されない場合、並べ替えは降順になります。
+**asc** キーワードは、**order by** または **group by** 句のオプションです。 昇順の並べ替え順序を指定します。 **昇順**または**降順**のどちらも指定されない場合、並べ替えは降順になります。
 
 ```xpp
 CustTable custTable;
@@ -254,7 +257,7 @@ info('Rows: ' + int642Str(iCountRows));
 
 ## <a name="crosscompany-keyword"></a>crossCompany キーワード
 
-**crossCompany** キーワードは、ユーザーが読み取りを承認されているすべての会社のデータを返します。 コンテナを追加して関連する会社の数を削減することができます。 次のコード例は、ユーザーが読み取りを承認されている会社のデータを返します。 結果は会社の '**dat**' および '**dmo**' に限定されます。
+**crossCompany** キーワードは、ユーザーが読み取りを承認されているすべての会社のデータを返します。 コンテナを追加して関連する会社の数を削減することができます。 次の例では、ユーザーが読み取りを承認されている会社のデータを返します。 結果は **dat** および **dmo** 会社に限定されます。
 
 ```xpp
 CustTable custTable;
@@ -265,7 +268,7 @@ select crossCompany :conCompanies
 
 ## <a name="desc-keyword"></a>降順キーワード
 
-**desc** キーワードは、**order by** または **group by** 句のオプションです。 降順の並べ替えを指定します。 `asc` または `desc` のどちらも指定されない場合、並べ替えは降順になります。
+**desc** キーワードは、**order by** または **group by** 句のオプションです。 降順の並べ替え順序を指定します。 **昇順**または**降順**のどちらも指定されない場合、並べ替えは降順になります。
 
 ```xpp
 CustTable custTable;
@@ -292,7 +295,7 @@ while select AccountNum, Value from custTable
 
 **Firstfast** キーワードは優先順位のヒントです。 最初の行はより迅速に表示されますが、このオプションの合計戻り時間は遅くなる場合があります。 **firstFast** ヒントは、すべてのページから自動的に発行されます。
 
-次のコード例では、最初の行がすばやく返されます。
+次のコード例では、最初の行をすばやく返します。
 
 ```xpp
 CustTable custTable;
@@ -300,16 +303,16 @@ select firstFast custTable
     order by AccountNum;
 ```
 
-## <a name="firstonly-firstonly10-firstonly100-firstonly1000-keywords"></a>firstOnly、firstOnly10、firstOnly100、firstOnly1000 キーワード
+## <a name="firstonly-firstonly10-firstonly100-and-firstonly1000-keywords"></a>firstOnly、firstOnly10、firstOnly100、および firstOnly1000 キーワード
 
 **firstOnly** キーワードは、限られた数の行を返すことによって、フェッチを高速化します。 クエリに **firstOnly** を含めると、ランタイムはテーブル バッファーを返します。 **firstOnly** を省略すると、レコードを反復処理できるオブジェクトがランタイムによって割り当てられます。 パフォーマンスの観点から、最初のレコードをフェッチすることを目的とする場合のみ **firstOnly** を使用する必要があります。
 
-| キーワード           | 説明                 |
-|-------------------|-----------------------------|
-| firstOnly         | 最初の行のみを返します。 |
-| firstOnly10       | 10 行を返します。            |
-| firstOnly100      | 100 行を返します。           |
-| firstOnly1000     | 1,000 行を返します。         |
+| キーワード       | 説明                |
+|---------------|----------------------------|
+| firstOnly     | 最初の行のみを返します。 |
+| firstOnly10   | 10 行を返します。            |
+| firstOnly100  | 100 行を返します。           |
+| firstOnly1000 | 1,000 行を返します。         |
 
 次のコード例では、結果の最初の行のみが返されます。
 
@@ -322,10 +325,10 @@ select firstOnly custTable
 
 ## <a name="forceliterals-keyword"></a>forceLiterals キーワード
 
-**forceLiterals** キーワードは、最適化時に Microsoft SQL Server データベースに対して **where** 句で使用される実際値を明らかにするように、カーネルに指示します。 **forceLiterals** および **forcePlaceholders** キーワードは相互に排他的です。 詳細については、[forcePlaceholders キーワード](#forceplaceholders-keyword)を参照してください。
+**forceLiterals** キーワードは、最適化時に Microsoft SQL Server データベースに対して **where** 句で使用される実際値を明らかにするように、カーネルに指示します。 **forceLiterals** および **forcePlaceholders** キーワードは相互に排他的です。 詳細については、[forcePlaceholders キーワード](#forceplaceholders-keyword) セクションを参照してください。
 
 > [!WARNING]
-> **選択** 明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。
+> **選択**明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。
 
 ## <a name="forcenestedloop-keyword"></a>forceNestedLoop キーワード
 
@@ -345,9 +348,9 @@ while select forceNestedLoop custGroup
 
 ## <a name="forceplaceholders-keyword"></a>forcePlaceholders キーワード
 
-**forcePlaceholders** キーワードは、最適化時に SQL Server データベースに対して **where** 句で使用される実際値を明らかに*しない*ように、カーネルに指示します。 既定では、この動作は**結合**ステートメントではないすべてのステートメントで使用されます。 このキーワードを使用する利点は、他の検索値がある同様の明細書のアクセス計画をカーネルが再利用できることです。 欠点は、アクセス計画が計算されることですが、データの配布が不均一である可能性があることは考慮されません。 アクセス計画は、平均的なアクセス計画です。 **forcePlaceholders** および **forceLiterals** キーワードは相互に排他的です。
+**forcePlaceholders** キーワードは、最適化時に SQL Server データベースに対して **where** 句で使用される実際値を明らかに**しない**ように、カーネルに指示します。 既定では、この動作は**結合**ステートメントではないすべてのステートメントで使用されます。 このキーワードを使用する利点は、他の検索値がある同様の明細書のアクセス計画をカーネルが再利用できることです。 欠点は、アクセス計画が計算されても、データの配布が不均一になる可能性があるという事実が考慮されないことです。 アクセス計画は、平均的なアクセス計画です。 **forcePlaceholders** および **forceLiterals** キーワードは相互に排他的です。
 
-次の例では、SalesLine に結合されている SalesTable を通じて反復処理します。
+次の例では、**CustTable** テーブルと結合されている **CustGroup** テーブルを反復処理します。
 
 ```xpp
 CustGroup custGroup;
@@ -361,11 +364,11 @@ while select forcePlaceholders custGroup
 }
 ```
 
-### <a name="forceselectorder"></a>forceSelectOrder
+## <a name="forceselectorder-keyword"></a>forceSelectOrder キーワード
 
 **forceSelectOrder** キーワードを指定すると、SQL Server データベースは指定した順序で結合内のテーブルにアクセスします。 2 つのテーブルが結合している場合、明細書の最初のテーブルに最初にアクセスします。 このキーワードは、**forceNestedLoop** キーワードと組み合わされることがよくあります。
 
-次の例では、**CustGroup** フィールドの **CustGroup** および **CustTable** テーブルを結合します。
+次の例では、**CustGroup** フィールドの CustGroup および CustTable テーブルを結合します。
 
 ```xpp
 CustGroup custGroup;
@@ -381,7 +384,7 @@ while select forceSelectOrder custGroup
 
 ## <a name="forupdate-keyword"></a>forUpdate キーワード
 
-**forUpdate** キーワードは、更新用にのみレコードを選択します。 基になるデータベースによっては、レコードが他のユーザーのためにロックされるかもしれません。 次の例では、**AccountNum** が **2000** あるレコードの更新のために、**CustTable** テーブルの **CreditMax** 列を更新します。
+**forUpdate** キーワードは、更新用にのみレコードを選択します。 基になるデータベースによっては、レコードが他のユーザーのためにロックされるかもしれません。 次の例では、**AccountNum** の値が **2000** であるレコードの更新のために、CustTable テーブルの **CreditMax** 列を選択します。
 
 ```xpp
 ttsBegin;
@@ -410,10 +413,10 @@ while select sum(CreditMax) from custTable
 
 **in** キーワードは、値がリストに含まれている行をフィルター処理します。
 
-**in** キーワードを使用しない場合は、次のようなコードを記述します:
+**in** キーワードを使用しない場合、記述するコードは次の例のようになります。
 
 ```X++
-// This code does't use the in keyword.
+// This code doesn't use the in keyword.
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
     InventSettlement inventSettlement;
@@ -430,7 +433,7 @@ private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 }
 ```
 
-**in** キーワードを使用する場合は、次のようなコードを記述します:
+**in** キーワードを使用する場合、記述するコードは次の例のようになります。
 
 ```X++
 // This code uses the in keyword.
@@ -458,7 +461,7 @@ return [
 }
 ```
 
-## <a name="index"></a>指数
+## <a name="index-keyword"></a>index キーワード
 
 **index** キーワードは、選択されたレコードをインデックスで指定されたとおりに並べ替えるようデータベースに指示します。
 
@@ -475,12 +478,12 @@ while select AccountNum, Value from custTable
 
 **index hint** キーワードは、特定のインデックスを使用して、選択されたレコードをインデックスで指定されたとおりに並べ替えるためのヒントをデータベースに提供します。 データベースはヒントを無視できます。 インデックス ヒントが正しくない場合はパフォーマンスに大きな影響を与えます。 インデックス ヒントは、動的な **where** 句または **order by** 句がない SQL ステートメント、およびヒントの効果を確認できる SQL ステートメントにのみ適用する必要があります。
 
-クエリで [**index hint**](#index-hint-keyword) を使用する前に、テーブルで **allowIndexHint(true)** を呼び出す必要があります。 **index hint** の既定の動作 **false** であり、ヒントは無視されます。
+クエリで **index hint** を使用する前に、テーブルで **allowIndexHint(true)** を呼び出す必要があります。 **index hint** の既定の動作 **false** であり、ヒントは無視されます。
 
 > [!WARNING]
-> **index hints** は慎重に注意して使用し、パフォーマンスを向上できる場合にのみ使用してください。 **index hint** キーワードと API を使用すると、必要に応じて適切なヒントを渡すことができます。 疑わしい場合は、**index hint** を使用しないでください。
+> **index hint** は慎重に注意して使用し、パフォーマンスが向上することが確実な場合にのみ使用してください。 **index hint** キーワードと API を使用すると、必要に応じて正しいヒントを渡すことができます。 疑問がある場合は、**index hint** の使用を避けてください。
 
-次のコード例では、**AccountIdx** インデックスを使用して、クエリ内のレコードを **CustTable** テーブルで並べ替えます。
+次の例では、**AccountIdx** インデックスを使用して、クエリ内のレコードを CustTable テーブルで並べ替えます。
 
 ```xpp
 str _accountNum = '111';
@@ -496,7 +499,7 @@ while select forUpdate custTable
 
 ## <a name="join-keyword"></a>join キーワード
 
-**join** キーワードは、両方のテーブルで共有される列のテーブルを結合するために使用されます。 (SQL にあるように) **on** キーワードがないため、結合基準は、**where** 句で指定されます。 このキーワードは、テーブルをループして関連テーブルのトランザクションを更新する場合に必要な SQL ステートメントの数を減らします。 たとえば、テーブル内の 500 のレコードを処理し、別のテーブルで関連するレコードを更新します。 入れ子になった **while select** を使用する場合、データベースへの 501 トリップがあります。 ただし、**結合**を使用する場合、データベースへのトリップは 1 回だけになります。
+**join** キーワードは、両方のテーブルで共有される列のテーブルを結合するために使用されます。 SQL に見られるような **on** キーワードがないため、結合基準は **where** 句で指定されます。 このキーワードは、テーブルをループして関連テーブルのトランザクションを更新する場合に必要な SQL ステートメントの数を減らします。 たとえば、テーブル内の 500 のレコードを処理し、別のテーブルで関連するレコードを更新します。 入れ子になった **while select** を使用する場合、データベースへの 501 トリップがあります。 ただし、**結合**を使用する場合、データベースへのトリップは 1 回だけになります。
 
 ```xpp
 CustTable custTable;
@@ -536,7 +539,7 @@ info(int642Str(custTable.Value));
 
 **noFetch** キーワードは、今すぐレコードを取得する必要がないことを示します。 このキーワードは通常、**select** 文の結果を、実際のフェッチを実行するクエリなどの別のアプリケーション オブジェクトに渡すときに使用します。
 
-次の例では、クエリ変数を作成しますが、レコードはフェッチしません。
+次の例では、クエリ変数を作成しますがレコードはフェッチしません。
 
 ```xpp
 CustTable custTable;
@@ -582,7 +585,7 @@ select * from custTable
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-次の例では、**CustTable** テーブルの最上位 **AccountNum** を出力します。
+次の例では、CustTable テーブルの最も高い **AccountNum** 値を出力します。
 
 ```xpp
 CustTable custTable;
@@ -591,9 +594,9 @@ select reverse custTable
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-## <a name="outer"></a>outer
+## <a name="outer-keyword"></a>outer キーワード
 
-**outer** キーワードは、2 番目に名前が付けられたテーブルに行が一致しない場合でも、最初に名前が付けられたテーブルからすべての行を返します。 この結合は左外部結合です。 既定値は、他の結合テーブルの一致する行から取得できなかったデータに置き換えられます。
+**outer** キーワードは、最初に名前が付けられたテーブルからすべての行を返します。2 番目に名前が付けられたテーブルで一致するものがない行も返します。 この結合は左外部結合です。 既定値は、他の結合テーブルの一致する行から取得できなかったデータに置き換えられます。
 
 **left** キーワードはなく、右外部結合もありません。
 
@@ -684,7 +687,7 @@ select reverse custTable
 
 ## <a name="sum-keyword"></a>sum キーワード
 
-**sum** キーワードはフィールドの合計を返します。 すべてのアカウント、注文明細行などの合計を計算するために使用できます。 |
+**sum** キーワードはフィールドの合計を返します。 すべてのアカウント、注文明細行などの合計を計算するために使用できます。
 
 ```xpp
 CustTable custTable;
@@ -710,9 +713,9 @@ info('RecId:' + int642Str(recid));
 
 ## <a name="where-keyword"></a>where キーワード
 
-**where** キーワードは、*式*が **true** であるテーブルからの行をフィルタ処理します。
+**where** キーワードは、式が **true** であるテーブルのからの行をフィルタ処理します。
 
-次の例では、100 より大きい **AccountNum** 持つ顧客を検索します。
+次の例では、**AccountNum** の値が 100 を超える顧客を検索します。
 
 ```xpp
 CustTable custTable;
@@ -721,7 +724,7 @@ select * from custTable
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-次の例では、100 よりも大きい、最小の **AccountNum** の **AccountNum** を出力します。
+次の例では、100 よりも大きい、最小の **AccountNum** 値を出力します。
 
 ```xpp
 CustTable custTable;
@@ -731,7 +734,7 @@ select * from custTable
 info("AccountNum: " + custTable.AccountNum);
 ```
 
-次の例では、100 よりも大きい、最大の **AccountNum** の **AccountNum** を出力します。
+次の例では、100 よりも大きい、最大の **AccountNum** 値を出力します。
 
 ```xpp
 CustTable custTable;

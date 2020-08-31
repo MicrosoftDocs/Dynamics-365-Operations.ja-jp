@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.12 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: cf2529d6ceba3bc5251b007c69dddd8feb678ba4
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: e7a92b4ca6d88ca6015e3c0acd27bc6232a12a97
+ms.sourcegitcommit: d1116da9cff6d5ff05ae32562cb4a74d02f867cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412422"
+ms.lasthandoff: 08/02/2020
+ms.locfileid: "3648840"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10012-august-2020"></a>Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の機能のプレビュー
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10012-august-2020"></a>Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.12 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.507 で、次のスケジュールで使用できます。
 

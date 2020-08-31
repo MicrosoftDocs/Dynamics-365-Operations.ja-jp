@@ -3,7 +3,7 @@ title: パッケージ アプリケーションの問題のトラブルシュー
 description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b57fe3a70916f9fc6051caf3c7fb9e6fce66136d
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: c744a356ad520b7bc2544a105aa25548a06cad7e
+ms.sourcegitcommit: 5ffe077a3053f1f0e3e18a2a76837d81fbb29387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096740"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598829"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
@@ -158,6 +158,20 @@ ms.locfileid: "3096740"
 
 1. イベント ビューアーを起動します。
 2. **アプリケーションとサービス ログ** > **Microsoft** > **Dynamics** > **Ax-SystemRuntime** > **エラーで操作フィルター**と移動し、エラーがあるかどうかを確認して、必要に応じてエラーを調査します。
+
+### <a name="issue-a-package-application-failed-with-error-code--dsu"></a>問題: パッケージ アプリケーションが失敗しました、エラーコード: DSU#####
+
+**説明**
+
+次のエラーが表示される場合があります。**重要なコンポーネントで要求の処理中にエラーが発生したことを示すエラーが表示される場合があります。エラーコード: DSU#####**、または類似。 エラーコード **DSU#####** は、基になる Microsoft API で一時的な停止が発生していることを示します。  このタイプの停止は、データベース移動機能に影響する場合もあります。 
+
+**アクション**
+
+Microsoft では、サービスのステータスを事前に監視しており、このタイプのシステム停止はすぐに軽減されると予想されます。
+
+環境のステータスおよび正常性に影響が及ぶことはありません。 
+
+サービス要求のスケジューリングまたはデータベース移動タスクの実行時に、このエラーが発生した場合は、後でもう一度やり直してください。 
 
 ## <a name="typical-database-synchronization-issues"></a>一般的なデータベース同期の問題
 次の手順の失敗が表示された場合は、データベース同期の問題が発生している可能性があります: "サービス モデルの GlobalUpdate スクリプト: AOSService"

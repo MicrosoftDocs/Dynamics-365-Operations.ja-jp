@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 070004d06b22e8ad49a7857435059e1a973199af
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: ae6e72dff01e3d63130f35297f2d80bd0342dc32
+ms.sourcegitcommit: d62e52484dfd9913a75a4561766d5e22fe2f3e8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456779"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3689474"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -54,6 +54,8 @@ ms.locfileid: "3456779"
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 
 + [エンティティとフィールドのマッピングのカスタマイズ](customizing-mappings.md)
++ [複数のエンティティ マップの処理](multiple-entity-maps.md)
++ [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
 

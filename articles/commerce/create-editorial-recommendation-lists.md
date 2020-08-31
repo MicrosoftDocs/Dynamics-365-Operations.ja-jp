@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b866704b419fb07dcf1ddd386af2f7d6cfa02e2
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 9826785700dcc1a35e6199b7aeff4e06b6d9da39
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404119"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665060"
 ---
 # <a name="manually-create-curated-recommendations"></a>収集された推奨事項の手動作成
 
@@ -62,11 +62,13 @@ ms.locfileid: "3404119"
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [POS での製品推奨事項の追加](product.md)
 
-[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+[トランザクション画面への推奨事項の追加](add-recommendations-control-pos-screen.md)
 
 [AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
 

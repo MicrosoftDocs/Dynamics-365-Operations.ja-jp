@@ -3,7 +3,7 @@ title: オンプレミスにおけるディザスター リカバリーの構成
 description: このコンテンツでは、ディザスター リカバリーに向けて Dynamics 365 Finance + 操作 (オンプレミス) を構成する方法と、プライマリ データセンターとセカンダリ データセンターの切り替えプロセスを構成する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,15 +15,15 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4914abe1ed56c157b7a27cc0a28016ed412f02cf
-ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
+ms.openlocfilehash: 581e55757765778ae7ce17cf0a14d3a74303c78f
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454919"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652021"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミスにおけるディザスター リカバリーの構成
-ディザスターリカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance  + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
+ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
 
 ディザスター リカバリーの中心となる概念は、データ復元環境を含む2番目のデータセンターを使用することです。 ディザスター リカバリーの計画、文書化、テストは、運用環境の設定と同様に慎重に行うことを推奨します。
 
@@ -55,9 +55,9 @@ Microsoft が指定した新しい前提条件を適用していることを確�
 
 ## <a name="environment-configuration"></a>環境のコンフィギュレーション
 
-Lifecycle Services (LCS) では、運用環境は、**運用** と名付けた環境のスロットを使用して配置する必要があり ます。 ディザスター リカバリー環境では、LCS の追加の環境スロットが使用されません。 その代わりに、運用環境でスロットを再利用します。 
+Lifecycle Services (LCS) では、運用環境は、**運用**と名付けた環境のスロットを使用して配置する必要があります。 ディザスター リカバリー環境では、LCS の追加の環境スロットが使用されません。 その代わりに、運用環境でスロットを再利用します。 
 
-Finance and Operations AOS ノードと SQL Server は、同じデータセンター内に共存している必要があります。 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) を参照してください。
+Finance and Operations AOS ノードと SQL Server は、同じデータセンター内に共存している必要があります。 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements)を参照してください。
 
 ## <a name="deploying-code-packages-to-production"></a>運用環境にコード パッケージを配置する
 
@@ -97,15 +97,15 @@ Finance and Operations AOS ノードと SQL Server は、同じデータセン�
 | SSL 証明書の拇印       | 運用環境と同等 |
 | Management reporter 証明書の拇印 | 運用環境と同等 |
 
-<sup>1</sup>SSRS は IP が参照します。 ディザスター リカバリー環境で正確なマシンの IP を構成できない場合は、IP を別のものにすることができます。
+<sup>1</sup> SSRS は IP が参照します。 ディザスター リカバリー環境で正確なマシンの IP を構成できない場合は、IP を別のものにすることができます。
 
-<sup>2</sup>これはネットワークの構成によって異なります。 他の環境へのトラフィックの流用に対応できる負荷分散装置を使用している場合は、ホスト名を同じにすることができます。 この対応ができない場合は、別のホスト名を使用します。 
+<sup>2</sup> これはネットワークの構成によって異なります。 他の環境へのトラフィックの流用に対応できる負荷分散装置を使用している場合は、ホスト名を同じにすることができます。 この対応ができない場合は、別のホスト名を使用します。 
 
 ## <a name="sql-server-always-on-availability-configuration"></a>SQL Server の常時可用性を構成する
 
 ビジネス データ データベース (AXDB) は、通常は SQL Server の常時可用性グループ機能を使用して、セカンダリ データセンターに複製する必要があります。 詳細については、[常時可用性グループ](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)を参照してください。
 
-|  データベース | レプリケート済 |
+| データベース | レプリケート済 |
 |----------|------------|
 | 業務データ (AXDB) | 有 |
 | Financial Reporting  | 有 |
@@ -214,7 +214,7 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 ```
 
 > [!Note]
-> バージョン 10.0.13 はまだリリースされていません。 この情報は、計画に使用する目的で提供されています。 バージョン 10.0.13 のコンテンツと機能は、変更されることがあります。 リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
+> バージョン 10.0.13 は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases)を参照してください。
 
 #### <a name="version-10012-or-earlier"></a>バージョン 10.0.12、または以前
 
@@ -233,13 +233,13 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 1. LCS で、ご利用の運用環境の環境ページに移動します。
 
-1. **管理** を選択し、**更新の設定** を選択します。
+1. **管理**を選択し、**更新の設定**を選択します。
 
     ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. 値を変更しないでください。 **準備**を選択します。
 
-1. ダウンロードと準備が完了後は、**環境の更新** ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
+1. ダウンロードと準備が完了後は、**環境の更新**ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
 
     ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
 

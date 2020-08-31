@@ -3,7 +3,7 @@ title: Financial Reporting の通貨の機能
 description: Financial Reporting には、複雑な通貨のレポート要件をサポートする機能が含まれます。
 author: ryansandness
 manager: AnnBe
-ms.date: 01/09/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ryansandness
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 46d5d577ed19899a305a67c99cb6683486fc7430
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: ef1a4bed3d4bddea66409bd3f08aa0007ba4ad30
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071719"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613191"
 ---
 # <a name="currency-capabilities-in-financial-reporting"></a>Financial Reporting の通貨の機能
 
@@ -81,8 +81,10 @@ Financial Reporting 内で金額を換算する場合は、次のタイプの換
 
 ### <a name="setup-for-retained-earnings"></a>利益剰余金の設定
 利益剰余金勘定の為替換算には、いくつかの特定の要件が適用されます。
-- 適切な計算を使用して勘定残高を換算する必要がある場合、利益剰余金勘定は、**主勘定**ページで利益剰余金の主勘定カテゴリに割り当てられる必要があります。
-- 既定のカテゴリが名前変更された場合でも、Financial Reporting では、バッキング ID 番号が元の 29 のままになっていることが予想されます。 
+- 適切な計算を使用して勘定残高を換算する必要がある場合、利益剰余金勘定は、**主勘定**ページでの 29 の **参照 ID** で利益剰余金の主勘定カテゴリに割り当てられる必要があります。
+- 既定のカテゴリが名前変更された場合でも、財務報告では、**参照 ID** が元の 29 のままになっていると予想します。 
+   > [!NOTE]
+   > この場合、フォームをカスタマイズし、**参照 ID** を列として追加して、このページに表示されるようにする必要があります。
 - 利益剰余金勘定は、会計年度末決算処理を通じて開始されるシステム生成されたトランザクションのみを換算します。 トランザクションが直接転記される場合、換算により正確には反映されません。 
 - 利益剰余金残高は、最後に決済された年度の終わりに存在するレートで換算されます。 つまり、今日までに入力された開始残高から計算された金額とレートの累積ではなく、特定の時点での計算です。 
 

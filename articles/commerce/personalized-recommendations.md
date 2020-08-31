@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404143"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664861"
 ---
 # <a name="enable-personalized-recommendations"></a>パーソナライズされた推奨事項の有効化
 
@@ -113,6 +113,8 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 [Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
 

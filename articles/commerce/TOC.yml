@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: POS のクライアント イメージ
                           href: pos-image.md
-                    - name: 顧客注文
-                      items:
-                        - name: MPOS の顧客注文
-                          href: customer-orders-overview.md
-                        - name: ハイブリッド顧客注文
-                          href: hybrid-customer-orders.md
                     - name: 店員
                       items:
                         - name: 売上グループを使用した POS でのコミッションの追跡
@@ -626,10 +620,12 @@
                   href: enable-product-recommendations.md
                 - name: カスタマイズされた推奨事項
                   items:
-                    - name: カスタマイズされた推奨事項の有効化
+                    - name: パーソナライズされた推奨事項の有効化
                       href: personalized-recommendations.md
-                    - name: カスタマイズされた推奨事項のオプト アウト
+                    - name: パーソナライズされた推奨事項のオプトアウト
                       href: personalization-gdpr.md
+                - name: '"同じような商品を探す" 推奨事項の有効化'
+                  href: shop-similar-looks.md
                 - name: POS エクスペリエンス
                   items:
                     - name: POS での製品推奨事項の追加
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: 注文の管理
           items:
+            - name: 顧客注文
+              items:
+                - name: MPOS の顧客注文
+                  href: customer-orders-overview.md
+                - name: ハイブリッド顧客注文
+                  href: hybrid-customer-orders.md
             - name: 販売注文
               items:
                 - name: コール センター注文の作成
@@ -982,12 +984,18 @@
                       href: ratings-reviews-modules.md
                 - name: 購買モジュール
                   items:
-                    - name: 買い物カゴ モジュール
+                    - name: カート モジュール
                       href: add-cart-module.md
-                    - name: 買い物カゴ アイコン モジュール
+                    - name: カート アイコン モジュール
                       href: cart-icon-module.md
                     - name: チェックアウト モジュール
                       href: add-checkout-module.md
+                    - name: 支払モジュール
+                      href: payment-module.md
+                    - name: 出荷先住所モジュール
+                      href: ship-address-module.md
+                    - name: 配送オプション モジュール
+                      href: delivery-options-module.md
                     - name: 注文詳細のモジュール
                       href: order-confirmation-module.md
                     - name: ギフト カード モジュール
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Cookie API の概要
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: 対話型コンポーネントの概要
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: CultureInfoFormatter クラスを使用したグローバライズ モジュール
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: データ アクションの開発
@@ -2026,6 +2036,10 @@
                   items:
                     - name: スクリプトの挿入
                       href: e-commerce-extensibility/script-injector.md
+                - name: コネクタ
+                  items:
+                    - name: コネクタのコンフィギュレーションと有効化
+                      href: e-commerce-extensibility/connectors.md
                 - name: テレメトリと分析
                   items:
                     - name: テレメトリ ロガー
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Retail SDK の今後の変更
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: バージョン 10.0.10 から 10.0.13 における重要な開発と ALM の変更
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Commerce および Finance and Operations のビルド システムのマージ
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server の拡張機能
               items:
-                - name: Commerce Scale Unit OData コントローラーの拡張
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Commerce Scale Unit の顧客およびコンシューマー API
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: 既定の Commerce Scale Unit メタデータ コントローラーの拡張
-                  href: dev-itpro/extend-metadata.md
-                - name: オフライン モードでの CRT サービスの呼び出し
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: 新しい Retail Server 拡張機能の作成
+                - name: 新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: 新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript と C# プロキシ
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: CRT および Retail Server の拡張機能
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: 顧客の基本設定データをチャネル データベースに追加
-                  href: dev-itpro/add-customer-preference-channel.md
-                - name: 小売チャネルのシークレットの管理
+                - name: Retail チャンネルのシークレットの管理
                   href: dev-itpro/manage-secrets.md
                 - name: CRT の拡張機能およびトリガー
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: トリガーを使用したトランザクションのブロック
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: トリガーを使用する返品ポリシーの実装
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: ロイヤルティの拡張機能
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: 梱包明細の拡張ポイント

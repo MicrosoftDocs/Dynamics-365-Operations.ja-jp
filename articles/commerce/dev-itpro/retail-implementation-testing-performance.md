@@ -1,7 +1,7 @@
 ---
 title: テストおよびパフォーマンスの問題
 description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトのテスティングおよびパフォーマンスの推奨事項について説明します。
-author: AndreasHassing
+author: andreashofmann1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 217a602eaf585554cc659e5bf52bf95c48e41d88
-ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
+ms.openlocfilehash: 6adc72769329283e6c426532eb2be0182d23e1e6
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454994"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554284"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -53,7 +53,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、[IT プロおよび開発者向けコマース](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) トピックを参照してください。
+詳細については、[IT プロおよび開発者向けコマース](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)トピックを参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 
@@ -76,7 +76,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 
 一般的に、既定および非リアルタイム POS 操作は、専用のリソース (POS がインストールまたは実行されているコンピューター) を持っているため、ボトルネックとはみなされません。 パフォーマンスの問題は、通常、ビジネス ロジックまたは Commerce Scale Unit への "Chatty" 呼び出しによって発生します。
 
-パフォーマンス テストはこのトピックで前述した情報を使用して、既にいくつかの初期最適化を完了した後に行う方が理想的です。 単一のユーザーまたはプロセスでシステムが正常に動作しない場合、同時ユーザーまたはプロセスでは正常に動作しません。 詳細については、[Retail Channel Performance](https://dynamicsnotes.com/retail-channel-performance-investigations/) を参照してください。 さらに、Finance ドキュメントで、「PerfSdk」または「Trace parser」を検索します。
+パフォーマンス テストはこのトピックで前述した情報を使用して、既にいくつかの初期最適化を完了した後に行う方が理想的です。 単一のユーザーまたはプロセスでシステムが正常に動作しない場合、同時ユーザーまたはプロセスでは正常に動作しません。 詳細については、[Retail Channel Performance](https://dynamicsnotes.com/retail-channel-performance-investigations/)を参照してください。 さらに、Finance ドキュメントで、「PerfSdk」または「Trace parser」を検索します。
 
 すべてのプロジェクトは異なっているため、実行する必要のある正確なパフォーマンス テストについての一般的な回答は困難です。 たとえば、トランザクションの販売明細行が少ない (すべての店舗で 1 日あたり 10 万未満) 場合、および明細書転記にカスタム拡張コードが追加されていない場合は、転記にパフォーマンス テストを行う必要はありません。 ただし、販売明細行が大幅に高い場合、または主要なカスタム変更が加えられた場合は、パフォーマンス テストを転記することをお勧めします。
 

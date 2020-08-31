@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497171"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677907"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
@@ -77,7 +77,7 @@ B2C テナントが作成されたら、そのテナント内に B2C アプリ�
 
 B2C アプリケーションを作成するには、次の手順に従います。
 
-1. Azure ポータルで、**アプリケーション**を選択し、**追加**を選択します。
+1. Azure ポータルで、**アプリケーション (レガシ)** を選択し、**追加** を選択します。
 1. **名前**に、目的の AAD B2C アプリケーションの名前を入力します。
 1. **Web アプリ/Web API** で、**Web アプリ/Web API を含める**を**はい**と選択します。
 1. **暗黙的なフローを許可する**では、**はい** (既定値) を選択します。

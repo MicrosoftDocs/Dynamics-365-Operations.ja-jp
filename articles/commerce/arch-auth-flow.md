@@ -19,17 +19,16 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 37329d3a32cc29963a8e5e6507728f5c51629b62
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: f0971f9835fa64b5625f877ad8b47d34f706e3d4
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527730"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621000"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。 Dynamics 365 Commerce ソリューションは現在、複数の認証シナリオとフローをサポートしていますが、Commerce Scale Unit (ヘッドレス コマース エンジンとも呼ばれる) のコア認証インフラストラクチャは、完全に [OpenID connect](https://openid.net/connect/) に基づいています。
 

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530262"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696133"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -88,11 +88,9 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 - **製品情報管理:**
   - [Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)](https://youtu.be/zotrj3SbCl4)
 - **倉庫管理:**
-  - [Get the best out of your warehouse management system (倉庫管理システムを最大限に活用する)](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment (高度な R3 倉庫管理 - 入庫処理と最小/最大の補充)](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Advanced R3 Warehouse Management - A day in the life, outbound processing and Demand Replenishment (高度な R3 倉庫管理 - 出庫処理と要求補充)](https://youtu.be/Og0gLlVp7jA)
-  - [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)](https://youtu.be/5w1MngVchBA)
-  - [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing (高度な倉庫管理 - プロセス製造)](https://www.youtube.com/embed/QUxXUrN-7n4)
+  - [倉庫管理システムを最大限に活用する](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル](https://youtu.be/5w1MngVchBA)
+  - [Dynamics AX 2012 R3: 高度な倉庫管理 - プロセス製造の日常](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **生産管理ビデオ:**
   - [Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)](https://youtu.be/y1jrd3A_k70)
 - **輸送管理ビデオ:**

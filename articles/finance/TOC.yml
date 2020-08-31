@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: 財務諸表
           items:
-            - name: 財務諸表の概要
+            - name: 財務諸表の使用を開始する
               href: general-ledger/financial-reporting-getting-started.md
             - name: 財務諸表の概要
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: 繰延のレポート
                       href: localizations/rus-reporting-deferrals.md
+                - name: 税会計
+                  items:
+                    - name: 経費および所得コード
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: 資産の税登録
+                      href: localizations/rus-assets-tax-registers.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3412,8 +3420,10 @@
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: クイック スタート ガイド
               items:
-                - name: ER 形式の調整によるカスタム電子ドキュメントの生成
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                - name: 電子申告形式の調整によるカスタム電子ドキュメントの生成
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: カスタム レポートを印刷する新しい電子申告ソリューションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: チュートリアル
               items:
                 - name: データ ソースの使用方法を確認する

@@ -3,7 +3,7 @@ title: パフォーマンス SDK とローカル テスト コントローラー
 description: このトピックでは、タスク レコーダーから生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してマルチユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cf46dc723efef26e1094de08ae4f65df9b0e1ca
-ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
+ms.openlocfilehash: 65d48fc255ed5805b0945df6e6eceed9a7ee7188
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3409575"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539918"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 
@@ -215,25 +215,33 @@ ms.locfileid: "3409575"
     
 ## <a name="configure-a-tier-2-or-above-sandbox-environment-for-multi-user-testing"></a>マルチユーザー テスト用に階層 2 以上のサンドボックス環境を構成する
 
-1. 各 Application Object Server (AOS) コンピューターの **ローカル コンピュータ\\パーソナル** の下に **authcert.pfx** と **authcert.cer** 証明書をインストールします。
+### <a name="if-your-aos-allows-remote-desktop-connections"></a>AOS がリモート デスクトップ接続を許可している場合
 
-    [![インストールした証明書](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
+1. **管理ツール** から Microsoft インターネット インフォメーション サービス (IIS) マネージャを開き、**サイト** から **AOSService** を選択します。
+2. 右側で **アクションの確認** を選択し、次にウィンドウの一番下から **wif.config** ファイルを見つけます。
+3. **authcert.pfx** 証明書の拇印を `https://fakeacs.accesscontrol.windows.net/` オーソリティの下部に追加し、変更を保存します。
 
-2. **authcert.pfx** 証明書の拇印を階層 2 以上のサンドボックス環境の **wif.config** ファイルに追加します。
-3. **管理ツール** から Microsoft インターネット インフォメーション サービス (IIS) マネージャを開き、**サイト** から **AOSService** を選択します。
-4. 右側で **アクションの確認** を選択し、次にウィンドウの一番下から **wif.config** ファイルを見つけます。
-5. 生成された証明書の拇印を `https://fakeacs.accesscontrol.windows.net/` 認証局の末尾に追加します。
+    [![生成された証明書から追加された拇印](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-22.png)
 
-    [![生成された証明書から追加された拇印](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
+4. 各 AOS コンピューターで手順 1 ～ 3 を繰り返します。
+5. すべての AOS インスタンスを再起動します。
 
-6. 変更を保存して IIRESET を実行します。
-7. 各 AOS コンピューターで手順 3 ～ 6 を繰り返します。
-8. **SampleLoadTest.load** テストを開き、テスト ユーザーを作成してターゲット環境にインポートします。 次に各ユーザーに **システム管理者** セキュリティ ロールを割り当てます。
+### <a name="if-you-do-not-have-remote-desktop-access-to-the-server"></a>サーバーへのリモート デスクトップ アクセス権がない場合
 
-    [![ターゲット環境のユーザー ページ](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
+テスト環境でリモート デスクトップ アクセスが許可されていない場合は、負荷テスト接続を信頼するように環境を構成します。 サポート要求を開き、サポート エンジニアに次の情報を提供します。
 
-    > [!NOTE]
-    > **MS.Dynamics.Performance.CreateUsers.exe** を実行してテスト ユーザーを作成することもできます。 この場合、IISRESET を実行する必要はありません。
+   - ご利用の環境ID。 Lifecycle Services LCS の環境ページでこの ID を確認できます。
+   - **authcert.pfx** 証明書の拇印。
+   - サンドボックス環境の許容可能なダウンタイム ウィンドウ。 ダウンタイムは分単位で表されます。
+
+## <a name="create-test-users"></a>新規ユーザーのテスト
+
+**SampleLoadTest.load** テストを開き、テスト ユーザーを作成してターゲット環境にインポートします。 次に各ユーザーに **システム管理者** セキュリティ ロールを割り当てます。
+
+   [![ターゲット環境のユーザー ページ](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
+
+   > [!NOTE]
+    > **MS.Dynamics.Performance.CreateUsers.exe** を実行してテスト ユーザーを作成することもできます。 この場合、IISRESET を使用する必要はありません。
 
 ## <a name="run-multi-user-testing-by-using-a-local-test-controller"></a>ローカル テスト コントローラーを使用したマルチユーザー テストの実行
 

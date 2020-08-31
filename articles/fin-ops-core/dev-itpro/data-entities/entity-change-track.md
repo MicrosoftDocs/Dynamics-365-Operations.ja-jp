@@ -3,7 +3,7 @@ title: エンティティへの変更追跡の有効化
 description: Finance and Operations からのデータの差分エクスポートを有効にする追跡の変更を使用します。
 author: Milindav2
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95fa54c109daa5aa100e2fc77018c6f6783a8818
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 30eb0a6ad9b9706e80a8470bee0e4c43c12100df
+ms.sourcegitcommit: ac5c13f2c880aa5b3db3720ec93ae8dcccc1c214
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029428"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "3543070"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
@@ -47,7 +47,7 @@ ms.locfileid: "3029428"
     |----------------------|-------------------------|
     | プライマリ テーブルの有効化 | プライマリ テーブルの任意のフィールドに加えられた変更は、エンティティの変更をトリガーします。 セカンダリ テーブルのフィールドに加えられた変更は、エンティティの変更をトリガーしません。 |
     | エンティティ全体の有効化 | エンティティの任意のテーブルの、任意のフィールドに加えられた変更は、エンティティの変更をトリガーします。 |
-    | カスタム クエリの有効化  | エンティティでの変更をトリガーする必要がある一連のカスタム フィールドを任意のテーブルから選択します。 |
+    | カスタム クエリの有効化  | 変更を追跡する必要があるテーブルを識別するカスタム クエリを使用します。 カスタム クエリはエンティティで定義されます。 |
 
     > [!NOTE]
     > 変更がトリガーされた場合、変更はフィールド レベルではなくレコード全体で追跡されます。 エンティティ レコード全体がエクスポート先にエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。

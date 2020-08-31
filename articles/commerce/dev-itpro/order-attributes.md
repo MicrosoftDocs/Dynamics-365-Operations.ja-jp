@@ -3,7 +3,7 @@ title: 注文属性の定義と設定をする
 description: このトピックでは、コマース バックオフィス、POS、および CRT でオーダーの属性値を直接編集および設定する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/20/2018
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: dae44f25429bfec12cdb06cd04a12af47e075851
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4cfa896ae8d0f60267f62668bf301ff6e88be8cd
+ms.sourcegitcommit: 3227127dd20c43cedaa8912e74aaf6120a1dcbb9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004662"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628391"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義および設定
 
@@ -49,8 +49,8 @@ ms.locfileid: "3004662"
 3. 階層タイプ名を入力します。
 4. **一般**クイック タブの、**タイプ**フィールドで、このデータ型に割り当てられている属性に入力できるデータのタイプを選択します。
 5. 属性タイプが**少数点**または**整数**の場合、測定単位を選択します。
-6. 属性の型が**テキスト**である場合は、それを固定値の一覧を定義できます。 **固定リスト** チェック ボックスをオンにし、**値** クイック タブで、値の一覧を入力します。
-7. 属性タイプに有効な値の範囲を定義するには、**値の範囲** チェック ボックスをオンにします。 次に、**範囲** クイックタブで、値の有効範囲を入力します。
+6. 属性の型が**テキスト**である場合は、それを固定値の一覧を定義できます。 **固定リスト** チェック ボックスをオンにし、**値**クイック タブで、値の一覧を入力します。
+7. 属性タイプに有効な値の範囲を定義するには、**値の範囲**チェック ボックスをオンにします。 次に、**範囲**クイックタブで、値の有効範囲を入力します。
 
 ## <a name="define-the-attributes"></a>属性の定義 
 
@@ -60,16 +60,16 @@ ms.locfileid: "3004662"
 2. **属性**ページで、**新規**を選択し、新しい属性を追加します。
 3. 属性の名前、フレンドリ名、および説明を入力します。 また、属性にユーザーを表示する必要があるヘルプ テキストを入力します。
 4. **属性タイプ** フィールドで、属性に割り当てる属性タイプを選択します。
-5. 属性タイプに応じて、**既定値** フィールドに、属性がチャネルに割り当てられたときに既定で表示される値または値の範囲を入力します。
-6. **翻訳** を選択します。 その後、**テキストの翻訳** ページで、追加の言語で属性の名前、説明、フレンドリ名、およびヘルプ テキストを入力できます。
+5. 属性タイプに応じて、**既定値**フィールドに、属性がチャネルに割り当てられたときに既定で表示される値または値の範囲を入力します。
+6. **翻訳** を選択します。 その後、**テキストの翻訳**ページで、追加の言語で属性の名前、説明、フレンドリ名、およびヘルプ テキストを入力できます。
 
 ## <a name="define-attribute-groups"></a>属性グループの定義
 
 1. **製品情報管理** > **設定** > **カテゴリと属性** > **属性グループ**の順に移動します。
 2. **属性グループ**ページで、**新規**を選択し、新しい属性グループを追加します。
-3. 属性グループ名を入力します。 その後、**全般** クイックタブで、属性グループのフレンドリ名、説明、およびヘルプ テキストを入力します。
+3. 属性グループ名を入力します。 その後、**全般**クイックタブで、属性グループのフレンドリ名、説明、およびヘルプ テキストを入力します。
 4. **属性**クイック タブで、**追加**を選択して、属性グループに属性を追加します。 **既定値**フィールドでは、選択した属性の既定値を入力できます。
-5. **翻訳** を選択します。 その後、**テキストの翻訳** ページで、追加の言語で属性グループの説明、フレンドリ名、およびヘルプ テキストを入力できます。
+5. **翻訳** を選択します。 その後、**テキストの翻訳**ページで、追加の言語で属性グループの説明、フレンドリ名、およびヘルプ テキストを入力できます。
 
 ## <a name="link-the-attribute-group-to-the-channel"></a>属性グループのチャネルへのリンク
 
@@ -89,24 +89,24 @@ ms.locfileid: "3004662"
 ## <a name="run-the-distribution-jobs"></a>配送ジョブを実行
 
 1. **Retail とコマース** > **Retail とコマース IT** > **配送スケジュール**の順に移動します。
-2. **製品 (1040)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。 このステップは、新しい属性、属性タイプ、または属性グループを追加した場合にのみ必要です。
-3. **チャネル コンフィギュレーション ジョブ (1070)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。
+2. **製品 (1040)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい**を選択します。 このステップは、新しい属性、属性タイプ、または属性グループを追加した場合にのみ必要です。
+3. **チャネル コンフィギュレーション ジョブ (1070)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい**を選択します。
 
 ## <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a>属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。
 
 ### <a name="headquarters"></a>バックオフィス
 
 1. **Retail とコマース > チャネル設定 > POS 設定 > POS > 画面レイアウト**の順に選択します。
-2. 画面レイアウトページで、**新規** をクリックして新しい画面レイアウトを作成するか、既存の画面レイアウトを選択します。
+2. 画面レイアウトページで、**新規**をクリックして新しい画面レイアウトを作成するか、既存の画面レイアウトを選択します。
 3. スクリーン レイアウトの名前と ID を入力します。
-4. **レイアウト サイズ**クイック タブで、**追加**ボタン選択して、POS の新しいレイアウト サイズを追加します。
+4. **レイアウト サイズ** クイック タブで、**追加**ボタン選択して、POS の新しいレイアウト サイズを追加します。
 5. **名前**フィールドで POS 画面の解像度を選択します。
-6. **レイアウト サイズ**クイック タブで、**レイアウト デザイナー**ボタンをクリックします。
+6. **レイアウト サイズ** クイック タブで、**レイアウト デザイナー** ボタンをクリックします。
 7. プロンプトが表示されたら、**はい**を選択して、**インストール/実行**ボタンを使用してデザイナー ホストをダウンロードおよびインストールします。
 8. 入力を求めるメッセージが表示されたら、Microsoft Dynamics 365 のユーザー名とパスワードを入力して、デザイナーを起動します。
 9. デザイナーが開始されたら、属性パネルを画面レイアウト デザイナー内の任意の場所にドラッグし、画面の幅に従ってサイズを調整します。
-10. 完了したら、**OK** を選択して、変更を保存します。
-11. 右上隅の **閉じる** ボタン (X) をクリックし、画面レイアウト デザイナーを閉じます。 メッセージが表示されたら、**はい** を選択して、変更を保存します。
+10. 完了したら、**OK**を選択して、変更を保存します。
+11. 右上隅の **閉じる** ボタン (X) をクリックし、画面レイアウト デザイナーを閉じます。 メッセージが表示されたら、**はい**を選択して、変更を保存します。
 12. **Retail とコマース > Retail とコマース IT > 配送スケジュール**の順に移動します。
 13. レジスター ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、はい を選択します。
 
@@ -123,7 +123,7 @@ ms.locfileid: "3004662"
 
 1. 顧客注文の作成後または作成中に、トランザクション ヘッダーの属性値を設定する場合は、アクション ウィンドウで、**コマース** タブに移動し、**小売属性**を選択します。
 2. **販売注文属性値**ページで、属性値を設定することができます。 このページの属性のリストは、チャネル用にコンフィギュレーションした属性グループに基づいています。
-3. 行レベルで属性値を設定するには、**販売注文** ページで **行** ビューを選択し、属性値を設定する行を選択します。 **販売注文明細行グループ**で、**Retail とコマース** > **属性**を選択します。
+3. 行レベルで属性値を設定するには、**販売注文**ページで **行**ビューを選択し、属性値を設定する行を選択します。 **販売注文明細行グループ**で、**Retail とコマース** > **属性**を選択します。
 4. 値を設定するすべての販売明細行に対して手順 3 を繰り返します。
 
 ## <a name="view-the-attributes-values-for-cash-and-carry-transactions-in-headquarters"></a>バックオフィスでの現金売りトランザクションの属性値の表示
@@ -133,7 +133,7 @@ ms.locfileid: "3004662"
 1. **Retail とコマース** > **照会およびレポート** > **店舗のトランザクション**の順に移動します。
 2. トランザクション ヘッダー属性を表示するには、アクション ウィンドウで**属性**を選択します。
 3. トランザクション ヘッダー行の属性を表示するには、アクション ウィンドウで **トランザクション** > **販売トランザクション** を選択します。
-4. **販売トランザクション** ページで、すべての明細行を選択し、アクション ウィンドウで、**属性**を選択して、明細行の属性を表示します。
+4. **販売トランザクション**ページで、すべての明細行を選択し、アクション ウィンドウで、**属性**を選択して、明細行の属性を表示します。
 
 > [!NOTE]
 > あなたの属性グループの一部として構成され、チャンネルにリンクされている属性のみ、バックオフィス UI に表示されます。
@@ -142,13 +142,17 @@ ms.locfileid: "3004662"
 
 Retail SDK に追加された新しいサンプルでは、CRT の注文属性のビジネス ロジックを追加します。 この例には、ビジネス ロジックのコードのみが含まれています。 属性に対する読み取りおよび書き込み処理は自動化されているため、属性を保存したり読み取ったりする方法は示しません。
 
-このサンプルでは、次のシナリオを実装しています。カートを中断するときはいつでも、属性値を設定します。 カートを再開するとき、その値を消去します。 事前トリガーが **SuspendCartRequest** に追加され、ビジネス ロジックが記述されました。 CRT で任意のトリガーを拡張または任意の要求をオーバーライドして、シナリオに基づきロジックをセットすることができます。
+このサンプルでは、次のシナリオを実装しています。カートを中断するには、属性値を設定します。 カートを再開するとき、その値を消去します。 事前トリガーが **SuspendCartRequest** に追加され、ビジネス ロジックが記述されました。 CRT で任意のトリガーを拡張または任意の要求をオーバーライドして、シナリオに基づきロジックをセットすることができます。
+
+> [!NOTE]
+> カートに属性を追加する前に、カートまたはカート行にその属性が既に存在するかどうかを確認します。 属性が既に存在する場合は、その属性を再度追加するのではなく、更新します。 カートまたはカート行に重複属性を追加すると、CRT にランタイム エラーが表示されます。 このシナリオのサンプル コードは、次のサンプル コード セクションで参照できます。
+
 
 完全なサンプル コードは Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample の Retail SDK で見つけることができます。
 
 - 新しい C# ポータブル クラス ライブラリ プロジェクトを作成し、次のコードを貼り付けます。
 
-    ```C#
+ ```C#
     public class CustomSuspendCartTrigger : IRequestTrigger
     {
         // summary
@@ -199,7 +203,41 @@ Retail SDK に追加された新しいサンプルでは、CRT の注文属性�
         public void OnExecuted(Request request, Response response)
         {
         }
-    ```
+        // Sample code to check for the duplicate attribute, before adding attributes to the cart check whether the attribute already exists if so then don’t add the attribute again, instead update it.
+        
+        public static class CustomCartHelper
+        {
+            /// <summary>
+            /// Updates the transaction header attribute.
+            /// </summary>
+            /// <param name="cart">The cart.</param>
+            /// <param name="reserveNow">The value of the transaction header attribute.</param>
+            /// <param name="updateAttribute">A flag indicating whether or not to override an existing attribute value.</param>
+            /// <returns>A flag indication whether or not the cart was updated.</returns>
+            public static bool CreateUpdateTransactionHeaderAttribute(Cart cart, bool reserveNow, bool updateAttribute)
+            {
+                ThrowIf.Null(cart, "cart");
+                bool cartUpdated = false;
+                IList<AttributeValueBase> transactionAttributes = cart.AttributeValues;
+                string reserveNowAttributeName = "Reserve now";
+                string reserveNowAttributeValue = reserveNow ? "Yes" : "No";
+                AttributeValueBase reserveNowAttribute = transactionAttributes.SingleOrDefault(attribute => attribute.Name.Equals(reserveNowAttributeName));
+
+                if (reserveNowAttribute == null)
+                {
+                    transactionAttributes.Add(new AttributeTextValue() { Name = reserveNowAttributeName, TextValue = reserveNowAttributeValue });
+                    cartUpdated = true;
+                }
+                else if (updateAttribute && !((AttributeTextValue)reserveNowAttribute).TextValue.Equals(reserveNowAttributeValue))
+                {
+                    ((AttributeTextValue)reserveNowAttribute).TextValue = reserveNowAttributeValue;
+                    cartUpdated = true;
+                }
+
+                return cartUpdated;
+            }
+        }
+```
 
 ## <a name="extend-attributes-to-do-some-business-logic-in-the-pos"></a>POS でビジネス ロジックを行うには、属性を拡張します。
 

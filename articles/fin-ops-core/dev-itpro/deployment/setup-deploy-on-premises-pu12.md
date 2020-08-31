@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: f640a77b6afb47c0054a7cf80afc5b84853e9f51
-ms.sourcegitcommit: d7c212a9dd54c479aeff51cad8f5941900a20d4a
+ms.openlocfilehash: 5f173e9cf77848a0e845e84d42e7ade47e00be43
+ms.sourcegitcommit: 1f072d8bd7975671ccc73d02dd828ebf52c6608d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "3502052"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661089"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -148,8 +148,8 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 
 | ノード タイプ | コンポーネント | 詳細情報 |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC ドライバー 13 | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| AOS       | SNAC – ODBC ドライバー 17 | このドライバーは、PU15 以上へのアップグレードに必要です。<https://www.microsoft.com/download/details.aspx?id=56567> |
+| AOS       | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC ドライバー 17 | このドライバーは、PU15 以上へのアップグレードに必要です。<https://aka.ms/downloadmsodbcsql> |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -439,8 +439,8 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
     | コンポーネント | リンクのダウンロード | 必要なファイル名 |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC ドライバー 13 | <https://www.microsoft.com/download/details.aspx?id=53339> | Msodbcsql .msi |
-    | SNAC – ODBC ドライバー 17 | <https://www.microsoft.com/download/details.aspx?id=56567> | msodbcsql\_17.msi |
+    | SNAC – ODBC ドライバー 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | Msodbcsql .msi |
+    | SNAC – ODBC ドライバー 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
     | Microsoft SQL ServerManagement Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual Studio 2017 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 | vc\_redist.x64\_14\_16\_27024.exe |

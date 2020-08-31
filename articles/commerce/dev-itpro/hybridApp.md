@@ -16,14 +16,14 @@ ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-29-10
+ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 36f4dfcc1f45ea788ba6bc139d433f8b4836fa92
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 35195b1946e042618da4919ebb66d23c94da5b34
+ms.sourcegitcommit: 9a053d020e672a87b660f27009a492544e6c81a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416541"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641458"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
