@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 8 月 20 日
+          href: hr-whats-new-2020-08-20.md
         - name: 2020 年 8 月 6 日
           href: hr-whats-new-2020-08-06.md
         - name: 2020 年 7 月 23 日
@@ -78,13 +80,91 @@
             - name: Office との統合
               items:
                 - name: Office 統合のチュートリアル
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Excel でのエンティティ データの更新
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: '[Excel で開く] エクスペリエンスの作成'
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Office 統合のトラブルシューティング
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: データ管理のコンフィギュレーション
+          items:
+            - name: データ管理フレームワークの概要
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ エンティティ
+              items:
+                - name: データ エンティティの概要
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ プロジェクト
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: 会社間または法人間のコンフィギュレーション データのコピー
+                  items:
+                    - name: コンフィギュレーション データのコピーの概要
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: コンフィギュレーション データ パッケージ
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ テンプレート
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: エンティティの変更の追跡
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: 標準データ エンティティに関する情報の検索
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: 複数のワークシート付きデータ テンプレート
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: エンティティの変更追跡の有効化
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション キーおよびデータ エンティティ
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ パッケージ
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ インポート/エクスポート ジョブ
+              items:
+                - name: データ インポート/エクスポート ジョブの概要
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ エンティティの開発
+              items:
+                - name: データ エンティティに関する設計原則とベスト プラクティス
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: 新しいデータ エンティティの作成
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: データ エンティティのプロパティ
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 計算列と仮想フィールドの作成
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: 会社間動作
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: 国/地域コードの処理
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: 継承パターン
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: データ エンティティ ウィザード ルール
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: メタデータのプロパティ
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 検証、既定値、およびマップされていないフィールド
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: セキュリティとデータ エンティティ
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: サード パーティ サービス テスト ユーティリティの使用
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 財務分析コードを公開する読み取り専用エンティティの作成
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: 自分のデータベースの持ち込み
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD バッチ ジョブの最適化
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: 自動化エンティティ格納更新
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ タスクの自動化
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ検証チェックリスト ワークスペース
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ管理エラーの説明
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: 機能の管理
           href: hr-admin-manage-features.md
         - name: データベース ログの構成と管理
@@ -539,6 +619,8 @@
               href: hr-employee-self-service-calendar.md
             - name: 休暇の売買ポリシーの管理
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: 休暇の売買ワークフローの作成
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: 休暇の売買
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Teams での休暇要求の管理
