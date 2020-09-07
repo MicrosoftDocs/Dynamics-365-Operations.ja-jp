@@ -130,6 +130,8 @@
                       items:
                         - name: 二重書き込みのホームページ
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: 二重書き込みの新機能および変更された機能
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: 二重書き込みの概要
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: 二重書き込みの設定
@@ -488,7 +490,7 @@
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
                     - name: オンプレミス環境の設定と配置
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
+                    - name: オンプレミス環境での Retail チャネル コンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
                     - name: カスタム モデルの開発とオンプレミス環境への配置
                       href: deployment/develop-deploy-custom-models-on-premises.md
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: セキュリティ ポリシーを作成する
                   href: sysadmin/create-simple-security-policy.md
+            - name: ユーザー ライセンス要件への準拠の維持
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: プロセスの自動化
               href: sysadmin/process-automation.md
             - name: バッチ処理

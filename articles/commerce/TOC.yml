@@ -64,10 +64,12 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: オンプレミス配置のシステム要件
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
-                - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
+                - name: オンプレミス環境での Retail チャネル コンポーネントのインストール手順
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance + Operations (on-premises) の購入
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchange 実装ガイダンス
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: 中国で 21Vianet が運用する Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: フランスの Finance and Operations アプリ
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerApps アプリの埋め込み
+                - name: Microsoft Power Apps の埋め込み
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: ストア内トポロジの選択
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange とコマース チャネルのコミュニケーション
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Commerce Data Exchange のベスト プラクティス
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchange とコマース チャネルのコミュニケーション
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Commerce Data Exchange のトラブルシューティング
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS アーキテクチャ
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: オンライン ストア発行アーキテクチャ
@@ -516,6 +524,8 @@
                       href: duplicate-payment-protection.md
                     - name: オムニチャネル支払の概要
                       href: omni-channel-payments.md
+                    - name: オムニチャネル Commerce 注文支払
+                      href: dev-itpro/commerce-payments.md
                     - name: 支払に関してよく寄せられる質問
                       href: dev-itpro/payments-retail.md
                 - name: 組織の Bing 地図の管理
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: 小売店舗トランザクションの編集と監査
               href: edit-audit-retail-transactions.md
-            - name: 小売店舗の明細書の作成、計算、および転記
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: 小売店舗トランザクション用トリクル フィードベースの注文作成
               href: trickle-feed.md
             - name: 小売店舗の明細書の作成、計算、および転記
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: 情報へのアクセスとレポート
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: PowerBI.com でのパーソナル化オプション
+            - name: Power BI でのパーソナル化オプション
               items:
-                - name: PowerBI.com の統合によって使用できる機能
+                - name: Power BI の統合によって使用できる機能
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerBI.com コンテンツのピン留め
+                - name: Power BI コンテンツのピン留め
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerBI.com から分析ワークスペースを選択する
+                - name: Power BI から分析ワークスペースを選択する
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI コンテンツ
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: エンティティ格納のメンテナンス後に問題を解決する
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com 統合のコンフィギュレーション
+                - name: Power BI 統合のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: 自分のデータベースの持ち込み
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1202,7 +1210,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: 集計の測定への財務分析コードの追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerBI Desktop を使用した分析レポートの作成
+                - name: Power BI Desktop を使用した分析レポートの作成
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: パッケージ コンフィギュレーションとオンライン環境への配置
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK およびコア ライブラリの更新
+                    - name: SDK およびストア スタート キットの更新
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2070,7 +2078,7 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Commerce SDK ビルド パイプラインの設定
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: 小売 SDK FAQ
+                - name: Retail SDK FAQ
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: 販売時点管理の拡張機能
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: 支払コネクタの配置
                   href: dev-itpro/deploy-payment-connector.md
+                - name: バックオフィスの請求の増分取得
+                  href: dev-itpro/incremental-capture.md
                 - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: 支払コネクタ用の Windows インストーラーの作成
