@@ -3,7 +3,7 @@ title: デュアル書き込み設定用にサポートされたシナリオ
 description: このトピックでは、デュアル書き込みの設定でサポートされているシナリオについて説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d7ff514768ee8e4797b591da89e190a855385885
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172857"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706255"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>デュアル書き込み設定用にサポートされたシナリオ
 
@@ -34,8 +34,11 @@ ms.locfileid: "3172857"
 
 Finance and Operations 環境と Common Data Service 環境との間には、デュアル書き込み接続を設定できます。
 
-+ **Finance and Operations 環境**では、**Finance and Operations アプリケーション**の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Retail、および Dynamics 365 Human Resources)。
++ **Finance and Operations 環境** では、**Finance and Operations アプリ** の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Retail)。
 + **Common Data Service 環境**では、**Dynamics 365 のモデル駆動型アプリ**の基盤となるプラットフォームを提供します (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation)。
+
+>[!IMPORTANT]
+>Finance and Operations の Human Resources では 、デュアル書き込み接続をサポートしていますが、Dynamics 365 Human Resources アプリではサポートされていません。
 
 この設定のメカニズムは、サブスクリプションおよび環境によって異なります。
 

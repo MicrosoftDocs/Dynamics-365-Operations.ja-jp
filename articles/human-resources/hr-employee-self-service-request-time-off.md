@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f4c2d082ebe7f97d5c649c38d2462a3c011aa0e7
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429592"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712355"
 ---
 # <a name="request-time-off"></a>休暇の申請
 
@@ -44,8 +44,6 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 6. 申請を送信する準備ができたら、**送信**を選択します。 それ以外の場合は、**下書きの保存**を選択します。
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>既存の申請に添付ファイルを追加
-
-[!include [banner](includes/preview-feature.md)]
 
 既存の休暇申請を更新する場合は、添付ファイルを追加できます。 特定の日付に関連付けられているすべての申請を表示することもできます。 
 

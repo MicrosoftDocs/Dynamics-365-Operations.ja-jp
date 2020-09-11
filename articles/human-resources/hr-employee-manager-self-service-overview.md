@@ -3,7 +3,7 @@ title: 従業員およびマネージャー セルフサービスの概要
 description: この記事では、従業員およびマネージャ セルフサービス ワークスペースの概要を説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429799"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712235"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>従業員およびマネージャー セルフサービスの概要
 
@@ -32,6 +32,25 @@ ms.locfileid: "3429799"
 ## <a name="edit-personal-details"></a>個人的な詳細情報の編集
 
 個人情報を追加または変更する必要がある場合は、[個人情報の編集](hr-employee-manager-self-service-edit-personal-information.md) を参照してください。
+
+## <a name="user-not-assigned-to-a-worker-record"></a>従業員レコードに割り当てられていないユーザー
+
+ユーザーを **ユーザー** ページの**作業者**レコードにリンクしていない場合は、次のメッセージが表示されます :
+
+**ユーザー ID がシステム内の従業員レコードに関連付けられていません。この関連付けがされるまでは、情報の表示や更新をすることはできません。マネージャーまたはサポート チームにお問い合わせください。**
+
+ユーザーを **作業者**レコードに関連付けるには、**ユーザー**に移動し、ユーザーを選択します。 **編集**を選択し、フォームの**個人**フィールドに適切な作業者を追加し、**保存**を選択します。 これで、従業員セルフ サービスにアクセスできるようになります。
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>従業員およびマネージャー セルフサービスのセキュリティ要件
+
+従業員およびマネージャー セルフサービスには二つのセキュリティ ロールが必要となります :
+
+- 従業員には従業員ロールを必要となります。
+- 管理職には、従業員とマネージャーの両方のロールが必要となります。
+
+>[!NOTE]
+>従業員およびマネージャーのワークスペースへのアクセスが許可されている場合は、カスタムロールを使用して従業員およびマネージャー セルフサービスにアクセスすることもできます。<br>
+>従業員情報へのマネージャーのアクセスは、Human Resources で定義されている現在の職位ラインの階層に基づいて行われます。
 
 ## <a name="employee-self-service"></a>従業員セルフ サービス
 

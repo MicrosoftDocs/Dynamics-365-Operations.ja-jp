@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 8 月 6 日)
-description: このトピックでは、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: このトピックでは、2020 年 8 月 6 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: darinkramer
 manager: AnnBe
 ms.date: 8/06/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c0903be5ead66e09a3e571b523ad4bc20bf92eeb
-ms.sourcegitcommit: 6cb0fb3f6fcffa872b855cffa11105f8e3ce074b
+ms.openlocfilehash: 94d8291190b6c08c6e0e5241513989354df7939d
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698581"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711845"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 8 月 6 日)
 
@@ -100,7 +100,7 @@ ms.locfileid: "3698581"
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>1 社または 1 プランの有給休暇
 
-顧客は、1 社または 1 休暇および不就業プランの有給休暇を処理できます。 この機能を使用することで、異なる休暇年数や有給休暇ポリシーを持つ顧客に向けた有給休暇のプロセスを明確化します。 詳細については、[会社別または休暇プラン別の有給休暇](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan) を参照してください。
+顧客は、1 社または 1 休暇および不就業プランの有給休暇を処理できます。 この機能を使用することで、異なる休暇年数や有給休暇ポリシーを持つ顧客に向けた有給休暇のプロセスを明確化します。 詳細については、[会社別または休暇プラン別の有給休暇](hr-leave-and-absence-accrue.md) を参照してください。
 
 ## <a name="add-attachments-to-time-off-requests"></a>添付ファイルを休暇申請に追加
 

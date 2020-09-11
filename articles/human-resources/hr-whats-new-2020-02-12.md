@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 12 日)
-description: この記事では、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 2 月 12 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/07/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1d352cae4b49efa8c893dceed448b30460e0eda5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 7bcb77b74f6e484d68fd57fd1680e8c2d8c82bc4
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076296"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712065"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 12 日)
 

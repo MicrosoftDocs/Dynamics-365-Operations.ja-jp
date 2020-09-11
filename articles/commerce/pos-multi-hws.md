@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658361"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719217"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト
 
@@ -78,8 +78,8 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
 
     | デバイス | 種類 | デバイス名 | 追加の詳細 |
     |---|---|---|---|
-    | プリンター | 予備 | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、ハードウェアステーションにチャンネルレベルで割り当てられている **ハードウェア プロファイル ID** で設定されているネットワーク プリンターにマップされているレシートプロファイル ID と同じである必要があります。 |
-    | キャッシュ ドロワー | 予備 | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
+    | プリンター | 予備 | *任意* | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、ハードウェアステーションにチャンネルレベルで割り当てられている **ハードウェア プロファイル ID** で設定されているネットワーク プリンターにマップされているレシートプロファイル ID と同じである必要があります。 |
+    | キャッシュ ドロワー | 予備 | *任意* | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
     | EFT サービス | Adyen | 該当なし | 最初から用意されている Adyen コネクタを設定する方法については、[Adyen 用の Dynamics 365 Payment Connector ](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 その他の支払コネクタは、支払のために [支払用コマース ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) を介してサポートされる可能性があります。 |
     | PIN パッド | ネットワーク | **MicrosoftAdyenDeviceV001** | なし。 |
 
@@ -103,7 +103,7 @@ Epson のレシート プリンターを設定するには、Epson ePOS-Print �
     | デバイス | 種類 | 説明 | 追加の詳細 |
     |---|---|---|---|
     | プリンター | ネットワーク | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **レシート プロファイル ID** は、レジスターに割り当てあてられているハードウェア プロファイルで設定されているプリンターにマップされている **ハードウェア プロファイル ID** と同じである必要があります。 |
-    | キャッシュ ドロワー | 予備 | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
+    | キャッシュ ドロワー | ネットワーク | **Epson** または **Star** | デバイス名は大文字と小文字が区別されます。 **共有シフトを使用** オプションを **はい** に設定します。 |
 
 5. **保存** を選択します。
 
