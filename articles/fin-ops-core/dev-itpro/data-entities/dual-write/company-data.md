@@ -3,7 +3,7 @@ title: Common Data Service の企業概念
 description: このトピックでは、Finance and Operations と Common Data Service 間の企業データの統合について説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172903"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728416"
 ---
 # <a name="company-concept-in-common-data-service"></a>Common Data Service の企業概念
 
@@ -72,3 +72,32 @@ Common Data Service 統合は、企業の識別子を使用してデータをス
 + レコードの場合、企業が追加および保存された後、値は読み取り専用になります。 したがって、ユーザーは正しい企業を選択する必要があります。
 + 企業データを持つレコードのみが、アプリケーションと Common Data Service 間の二重書き込みの対象となります。
 + 既存の Common Data Service データによって、管理者主導のブートストラップ エクスペリエンスがまもなく利用可能になります。
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Customer Engagement アプリに会社名を自動入力する
+
+Customer Engagement アプリで会社名を自動入力するには、いくつかの方法があります。
+
++ システム管理者は、**詳細設定 > システム > セキュリティ > ユーザー** に移動することによって、既定の会社を設定できます。 **ユーザー** フォームを開き、**組織情報** セクションで **会社をフォーム上の既定** 値に設定します。
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="組織情報セクションで既定の会社を設定します。":::
+
++ **事業単位** レベルの **SystemUser** エンティティに対する **書き込み** アクセス権がある場合は、**会社** ドロップダウン メニューから会社を選択することにより、任意のフォームで既定の会社を変更できます。
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="新しいアカウントで会社名を変更します。":::
+
++ 複数の会社のデータへの **書き込み** アクセス権がある場合は、別の会社に属するレコードを選択して既定の会社を変更することができます。
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="レコードを選択すると、既定の会社が変更されます。":::
+
++ システム コンフィギュレーターまたは管理者で、会社データをカスタム フォームに自動入力する場合、[フォーム イベント](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) を使用できます。 JavaScript リファレンスを **msdyn_/DefaultCompany.js** に追加し、次のイベントを使用します。 **アカウント** フォームなど、すぐに利用できるフォームを使用することができます。
+
+    + フォームの **OnLoad** イベント: **defaultCompany** フィールドを設定します。
+    + **会社** フィールドの **OnChange** イベント: **updateDefaultCompany** フィールドを設定します。
+
+## <a name="apply-filtering-based-on-the-company-context"></a>会社コンテキストに基づくフィルター処理の適用
+
+カスタム フォーム、または標準フォームに追加されたカスタム ルックアップ フィールドに基づいてフィルター処理を適用するには、フォームを開き、**関連レコードのフィルター処理** セクションを使用して、会社フィルターを適用します。 この値は、特定のレコードの基になる会社に基づいてフィルター処理する必要がある各ルックアップ フィールドごとに設定する必要があります。 次の図に **アカウント** の設定を示します。
+
+:::image type="content" source="media/apply-company-context.png" alt-text="会社コンテキストの適用":::
+

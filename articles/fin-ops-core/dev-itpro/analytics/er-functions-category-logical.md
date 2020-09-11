@@ -3,7 +3,7 @@ title: 論理カテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされる論理関数について説明します。
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916640"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705098"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>論理カテゴリ内の ER 関数のリスト
 
@@ -41,6 +41,8 @@ ms.locfileid: "2916640"
 | [ない](er-functions-logical-not.md)                       | この関数は、指定された条件の取消論理値を*ブール*値として返します。 |
 | [Or](er-functions-logical-or.md)                         | この関数は、指定したすべての条件が false である場合、**FALSE** の*ブール*値を返します。 指定した任意の条件が true である場合、関数は **TRUE** の*ブール*値を返します。 |
 | [ValueIn](er-functions-logical-valuein.md)               | この関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | この関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
+
 
 ## <a name="additional-resources"></a>追加リソース
 

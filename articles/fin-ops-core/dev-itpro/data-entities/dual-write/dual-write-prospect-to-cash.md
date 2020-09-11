@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443898"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719267"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -79,7 +79,7 @@ Sales および Supply Chain Management で見積と注文が作成され同期�
 
 販売注文が Sales または Supply Chain Management のいずれかで作成されます。 Sales で販売注文を作成すると、その見積がリアル タイムで Supply Chain Management に同期されます。 同様に、Supply Chain Management で販売注文を作成すると、その見積もりがリアル タイムで Sales に同期されます。 次のポイントに注意します。
 
-+ 注文のすべての製品が Finance and Operations アプリから出荷されている場合にのみ、Sales から注文を有効にして同期できます。 したがって、リスト外製品は存在しません。
++ Dynamics 365 Sales でリスト外製品は、Dynamics 365 Supply Chain Management では製品カテゴリとして表示されます。
 + 割引計算と丸め:
 
     - Sales での割引計算モデルは、Supply Chain Management の割引計算モデルとは異なります。 Supply Chain Management では、販売注文明細行の最終的な割引金額は、割引額と割引率の組み合わせの結果です。 この最終割引額をライン上の数量で割ると、丸め処理が発生する可能性があります。 ただし、この丸め処理単位の割引額が Sales に同期されている場合は、この丸め処理は考慮されません。 Supply Chain Management の販売明細行からの全額割引が Sales に正しく同期されるようにするには、全額を明細行の数量で除算せずに同期させる必要があります。 したがって、Sales で割引の計算方法を**明細行品目**として定義する必要があります。

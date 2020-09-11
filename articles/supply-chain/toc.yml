@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerApps アプリの埋め込み
+                - name: Microsoft Power Apps の埋め込み
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: 情報へのアクセスとレポート
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: PowerBI.com でのパーソナル化オプション
+            - name: Power BI でのパーソナル化オプション
               items:
-                - name: PowerBI.com の統合によって使用できる機能
+                - name: Power BI の統合によって使用できる機能
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerBI.com コンテンツのピン留め
+                - name: Power BI コンテンツのピン留め
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerBI.com から分析ワークスペースを選択する
+                - name: Power BI から分析ワークスペースを選択する
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI コンテンツ
               items:
@@ -1827,10 +1827,6 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: マスター プランからの製品の除外
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: 二重使用商品
-                  href: pim/dual-use.md
-                - name: 原産国
-                  href: pim/country-of-origin.md
                 - name: 製品のバーコードの作成
                   href: pim/tasks/create-bar-code-product.md
                 - name: 製品の GTIN コードの入力
@@ -1839,6 +1835,20 @@
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: 製品への画像の追加
                   href: pim/tasks/add-image-product.md
+                - name: 原産国
+                  href: pim/country-of-origin.md
+                - name: 二重使用商品
+                  href: pim/dual-use.md
+                - name: 危険物
+                  items:
+                    - name: 危険物の概要
+                      href: pim/hazmat-overview.md
+                    - name: 危険物の設定
+                      href: pim/hazmat-setup.md
+                    - name: 製品、注文、出荷、および積荷の危険物
+                      href: pim/hazmat-items.md
+                    - name: 危険物の照会およびレポート
+                      href: pim/hazmat-reports.md
                 - name: 製品情報の翻訳についてよく寄せられる質問
                   href: pim/translations-product-related-information.md
                 - name: 注文入力時の製品検索

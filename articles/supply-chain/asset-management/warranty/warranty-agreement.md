@@ -3,7 +3,7 @@ title: 保証契約
 description: このトピックでは、資産管理の保証契約について説明します。
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215381"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719241"
 ---
 # <a name="warranty-agreements"></a>保証契約
 
@@ -42,12 +42,12 @@ ms.locfileid: "3215381"
 
 1. **資産管理** \> **設定** \> **資産** \> **保証**を選択します。
 2. **新規**を選択して製品を作成します。
-3. **保証**フィールドに、保証 ID を入力します。
+3. **保証**フィールドに、保証 ID を入力します。 
 4. **名前**フィールドに、説明を入力します。
 
     **詳細**クイック タブの**資産**フィールドには、保証契約を使用する有効な資産の数が表示されます。
 
-5. 次の手順に従って、**時間保証**と**品目保証**のクイック タブで、時間または品目に関連する保証契約に含める必要がある明細行を追加します。
+5. **保証明細** クイック タブで、次の手順に従って保証契約に含める明細行を追加します。
 
     1. **明細行の追加**を選択して、新しい条件を保証に追加します。 **明細行**フィールドに、連続する明細行番号が自動的に入力されます。
     2. **期間**フィールドで、保証期間のタイプを選択します。
