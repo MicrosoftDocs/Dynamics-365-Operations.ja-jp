@@ -1,9 +1,9 @@
 ---
 title: Commerce Rumtime (CRT) の拡張機能とトリガー
-description: この記事では、Microsoft Dynamics 365 commerce runtime (CRT) のトリガー サポートについて説明します。 CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。
+description: このトピックでは、Microsoft Dynamics 365 Commerce Runtime (CRT) のトリガー サポートについて説明します。 CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,61 +18,46 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c3078494d9f5feaed956f5d4f85018c09753f1f4
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: ef086eb954da6cf1b08948b843008c26ec32c65d
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070440"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711856"
 ---
-# <a name="commerce-runtime-crt-extensibility-and-triggers"></a><span data-ttu-id="704bc-104">Commerce Rumtime (CRT) の拡張機能とトリガー</span><span class="sxs-lookup"><span data-stu-id="704bc-104">Commerce runtime (CRT) extensibility and triggers</span></span>
+# <a name="commerce-runtime-crt-extensibility-and-triggers"></a><span data-ttu-id="4cfe5-104">Commerce Rumtime (CRT) の拡張機能とトリガー</span><span class="sxs-lookup"><span data-stu-id="4cfe5-104">Commerce runtime (CRT) extensibility and triggers</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="704bc-105">この記事では、Dynamics 365 commerce runtime (CRT) のトリガー サポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="704bc-105">This article explains trigger support for the Dynamics 365 commerce runtime (CRT).</span></span> <span data-ttu-id="704bc-106">CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="704bc-106">CRT supports pre-triggers and post-triggers for every request.</span></span>
+<span data-ttu-id="4cfe5-105">このトピックでは、Dynamics 365 Commerce Runtime (CRT) のトリガー サポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-105">This topic explains trigger support for the Dynamics 365 commerce runtime (CRT).</span></span> <span data-ttu-id="4cfe5-106">CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-106">CRT supports pre-triggers and post-triggers for every request.</span></span>
 
-## <a name="crt-trigger-overview"></a><span data-ttu-id="704bc-107">CRT トリガーの概要</span><span class="sxs-lookup"><span data-stu-id="704bc-107">CRT trigger overview</span></span>
+## <a name="crt-trigger-overview"></a><span data-ttu-id="4cfe5-107">CRT トリガーの概要</span><span class="sxs-lookup"><span data-stu-id="4cfe5-107">CRT trigger overview</span></span>
 
-<span data-ttu-id="704bc-108">Commerce Runtime (CRT) トリガーによって CRT のワークフローを拡張でき、全ての CRT リクエストが実行される前後に、ビジネス ロジックに追加できるようにします。</span><span class="sxs-lookup"><span data-stu-id="704bc-108">Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and let you add business logic before and after every CRT request is executed.</span></span> <span data-ttu-id="704bc-109">次の 2 つの方法が使用されます。</span><span class="sxs-lookup"><span data-stu-id="704bc-109">The following two methods are used:</span></span>
+<span data-ttu-id="4cfe5-108">Commerce Runtime (CRT) トリガーによって CRT のワークフローを拡張でき、全ての CRT リクエストが実行される前後に、ビジネス ロジックに追加できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-108">Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and let you add business logic before and after every CRT request is executed.</span></span> <span data-ttu-id="4cfe5-109">次の 2 つの方法が使用されます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-109">The following two methods are used:</span></span>
 
--   <span data-ttu-id="704bc-110">**OnExecuting** – このメソッドは、要求が対応する **IRequestHandler** 実装によって処理される前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="704bc-110">**OnExecuting** – This method is invoked before a request has been processed by a corresponding **IRequestHandler** implementation.</span></span>
--   <span data-ttu-id="704bc-111">**OnExecuted** – このメソッドは、要求が対応する **IRequestHandler** 実装によって処理された後に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="704bc-111">**OnExecuted** – This method is invoked after the request has been processed by a corresponding **IRequestHandler** implementation.</span></span>
+-   <span data-ttu-id="4cfe5-110">**OnExecuting** – このメソッドは、要求が対応する **IRequestHandler** 実装によって処理される前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-110">**OnExecuting** – This method is invoked before a request has been processed by a corresponding **IRequestHandler** implementation.</span></span>
+-   <span data-ttu-id="4cfe5-111">**OnExecuted** – このメソッドは、要求が対応する **IRequestHandler** 実装によって処理された後に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-111">**OnExecuted** – This method is invoked after the request has been processed by a corresponding **IRequestHandler** implementation.</span></span>
 
-## <a name="crt-trigger-interface"></a><span data-ttu-id="704bc-112">CRT トリガー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="704bc-112">CRT trigger interface</span></span>
-<span data-ttu-id="704bc-113">トリガーを実装するには、次のコード例に示すように、これらのタスクを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="704bc-113">To implement a trigger, you must complete these tasks, as shown in the code example that follows:</span></span>
+## <a name="crt-trigger-extension"></a><span data-ttu-id="4cfe5-112">CRT トリガーの拡張</span><span class="sxs-lookup"><span data-stu-id="4cfe5-112">CRT trigger extension</span></span>
+<span data-ttu-id="4cfe5-113">トリガーを実装するには、次のコード例に示すように、これらのタスクを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-113">To implement a trigger, you must complete these tasks, as shown in the code example that follows:</span></span>
 
-1.  <span data-ttu-id="704bc-114">**IRequestTrigger** を実装します。</span><span class="sxs-lookup"><span data-stu-id="704bc-114">Implement **IRequestTrigger**.</span></span>
-2.  <span data-ttu-id="704bc-115">**SupportedRequestTypes** を指定して、トリガーを実行する必要のある要求のタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="704bc-115">Specify **SupportedRequestTypes** to define the request types that the trigger must be executed for.</span></span>
-3.  <span data-ttu-id="704bc-116">要求の解決前にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuting** メソッドに記述します。</span><span class="sxs-lookup"><span data-stu-id="704bc-116">Write a trigger implementation in the **OnExecuting** method if business logic must be run before the request is addressed.</span></span>
-4.  <span data-ttu-id="704bc-117">要求の解決後にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuted** メソッドに記述します。</span><span class="sxs-lookup"><span data-stu-id="704bc-117">Write a trigger implementation in the **OnExecuted** method if business logic must be run after the request is addressed.</span></span>
+1.  <span data-ttu-id="4cfe5-114">**IRequestTriggerAsync** を実装します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-114">Implement **IRequestTriggerAsync**.</span></span>
+2.  <span data-ttu-id="4cfe5-115">**SupportedRequestTypes** を指定して、トリガーを実行する必要のある要求のタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-115">Specify **SupportedRequestTypes** to define the request types that the trigger must be executed for.</span></span>
+3.  <span data-ttu-id="4cfe5-116">要求の解決前にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuting** メソッドに記述します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-116">Write a trigger implementation in the **OnExecuting** method if business logic must be run before the request is addressed.</span></span>
+4.  <span data-ttu-id="4cfe5-117">要求の解決後にビジネス ロジックを実行する必要がある場合、トリガーの実装を **OnExecuted** メソッドに記述します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-117">Write a trigger implementation in the **OnExecuted** method if business logic must be run after the request is addressed.</span></span>
 
-    ```xml
-    /// <summary>
-    /// The interface for request trigger.
-    /// </summary>
-    public interface IRequestTrigger
-    {
-        /// <summary>
-        /// Gets the collection of request types supported by this trigger.
-        /// </summary>
-        /// <remarks>If null or empty collection returned trigger will be called for all request.</remarks>
-        IEnumerable<Type> SupportedRequestTypes { get; }
-        /// <summary>
-        /// Invoked before request has been processed by <see cref="IRequestHandler"/>.
-        /// </summary>
-        /// <param name="request">The incoming request message.</param>
-        void OnExecuting(Request request);
-        /// <summary>
-        /// Invoked after request has been processed by <see cref="IRequestHandler"/>.
-        /// </summary>
-        /// <param name="request">The request message processed by handler.</param>
-        /// <param name="response">The response message generated by handler.</param>
-        void OnExecuted(Request request, Response response);
-    }
+### <a name="sample-trigger-implementation-for-get-customer-data-request"></a><span data-ttu-id="4cfe5-118">顧客データ要求の取得のトリガー実装例。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-118">Sample trigger implementation for Get customer data request:</span></span>
 
-    Sample trigger implemntation for Get customer data request:
-
-            public class GetCustomerTriggers : IRequestTrigger
+```C#
+    
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using System;
+        using System.Collections.Generic;
+        using System.Threading.Tasks;
+        
+        public class GetCustomerTriggers : IRequestTriggerAsync
         {
             /// <summary>
             /// Gets the supported requests for this trigger.
@@ -86,38 +71,37 @@ ms.locfileid: "3070440"
             }
 
             /// <summary>
-            /// Post trigger code to retrieve extension properties.
+            /// Post trigger code.
             /// </summary>
             /// <param name="request">The request.</param>
             /// <param name="response">The response.</param>
-            public void OnExecuted(Request request, Response response)
+            public async Task OnExecuted(Request request, Response response)
             {
-                ThrowIf.Null(request, "request");
-                ThrowIf.Null(response, "response");
-
                 //Custom logic
+                
+            // The only stub to handle async signature 
+                await Task.CompletedTask;
             }
 
             /// <summary>
-            /// Pre trigger code.
+            /// Pre trigger code
             /// </summary>
             /// <param name="request">The request.</param>
-            public void OnExecuting(Request request)
+            public async Task OnExecuting(Request request)
             {
-                //Custom logic
+                // custom logic 
+                await Task.CompletedTask;
             }
         }
-    ```
+  ```
 
-## <a name="trigger-commerceruntimeconfig-updates-for-70"></a><span data-ttu-id="704bc-118">7.0 の CommerceRunTime.config 更新プログラムをトリガーする</span><span class="sxs-lookup"><span data-stu-id="704bc-118">Trigger CommerceRunTime.config updates for 7.0</span></span>
-<span data-ttu-id="704bc-119">CRT を拡張するときは、ユーザー独自のアセンブリ内で拡張機能を記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="704bc-119">When you extend the CRT, you must write your extension in your own assembly.</span></span> <span data-ttu-id="704bc-120">トリガー拡張子をアセンブリに書き込んだ後、Commerce Scale Unit bin フォルダーに拡張子ライブラリをコピーし、実行時にトリガーがロードされるように、CRT の commerceRuntime.config ファイルの**合成**セクションに入力を追加します。</span><span class="sxs-lookup"><span data-stu-id="704bc-120">After you write the trigger extension in your assembly, you must copy the extension library to the Commerce Scale Unit bin folder and add an entry in the **composition** section of the commerceRuntime.config file for the CRT, so that the trigger is loaded at run time.</span></span> <span data-ttu-id="704bc-121">次の例は、**CRTExtensionTrigger** アセンブリ内のトリガー実装のエントリを含む .config ファイルを示しています。</span><span class="sxs-lookup"><span data-stu-id="704bc-121">The following example shows a .config file that includes an entry for a trigger implementation in the **CRTExtensionTrigger** assembly.</span></span> 
+### <a name="register-the-extension"></a><span data-ttu-id="4cfe5-119">拡張機能の登録</span><span class="sxs-lookup"><span data-stu-id="4cfe5-119">Register the extension</span></span>
 
-<span data-ttu-id="704bc-122">[![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)</span><span class="sxs-lookup"><span data-stu-id="704bc-122">[![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)</span></span>
-
-<span data-ttu-id="704bc-123">オフライン モードで作業する CRT 拡張機能については、合成セクションの拡張ライブラリ情報で **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config** を更新し、その拡張ライブラリをコピーして **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker** に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="704bc-123">For the CRT extension to work in offline mode update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config** with the extension library information under the composition section and copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker**.</span></span>
-
-## <a name="trigger-commerceruntimeconfig-updates-for-71-with-may-2017-monthly-update-72-and-73"></a><span data-ttu-id="704bc-124">7.1 (2017 年 5 月の月次更新)、7.2 および 7.3 の CommerceRunTime.config 更新プログラムのトリガー</span><span class="sxs-lookup"><span data-stu-id="704bc-124">Trigger CommerceRunTime.config updates for 7.1 (with May 2017 monthly update), 7.2 and 7.3</span></span>
-<span data-ttu-id="704bc-125">拡張ライブラリを **...\RetailServer\webroot\bin\ext フォルダー**にコピーして貼り付け、構成セクションのカスタム拡張ライブラリ情報を含む **commerceRuntime.ext.config** ファイルを更新します。</span><span class="sxs-lookup"><span data-stu-id="704bc-125">Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section.</span></span> <span data-ttu-id="704bc-126">この例では、**Contoso.Commerce.Runtime.Services** はカスタムの拡張機能名です。</span><span class="sxs-lookup"><span data-stu-id="704bc-126">In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.</span></span>
+<span data-ttu-id="4cfe5-120">拡張ライブラリを **...\RetailServer\webroot\bin\ext フォルダー**にコピーして貼り付け、構成セクションのカスタム拡張ライブラリ情報を含む **commerceRuntime.ext.config** ファイルを更新します。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-120">Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section.</span></span> <span data-ttu-id="4cfe5-121">この例では、**Contoso.Commerce.Runtime.Services** はカスタムの拡張機能名です。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-121">In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.</span></span>
     <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
 
-<span data-ttu-id="704bc-127">オフライン モードで作業する CRT 拡張機能については、合成セクションの拡張ライブラリ情報で **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config** を更新し、その拡張ライブラリをコピーして **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="704bc-127">For the CRT extension to work in offline mode update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section and copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.</span></span>
+<span data-ttu-id="4cfe5-122">CRT 拡張機能がオフライン モードで動作するためには、構成セクションの下にある拡張ライブラリ情報で、**...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** を更新してください。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-122">For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section.</span></span> <span data-ttu-id="4cfe5-123">次に、拡張ライブラリを **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** にコピーし貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-123">Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.</span></span>
+
+### <a name="debugging-crt"></a><span data-ttu-id="4cfe5-124">CRT のデバッグ</span><span class="sxs-lookup"><span data-stu-id="4cfe5-124">Debugging CRT</span></span>
+
+<span data-ttu-id="4cfe5-125">POS から CRT をデバッグするには、POS が Retail Server に接続されているときに、CRT 拡張プロジェクトを、w3wp.exe (Retail Server の IIS プロセス) に関連付けます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-125">To debug CRT from POS, attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server.</span></span> <span data-ttu-id="4cfe5-126">オフライン モードの場合は、dllhost.exe プロセスに CRT 拡張プロジェクトを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="4cfe5-126">For offline mode, attach the CRT extension project to the dllhost.exe process.</span></span>
