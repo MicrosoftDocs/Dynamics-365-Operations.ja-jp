@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f6d3dc25b10b975206335df4a9b7bfebd53f23c5
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 22783d09f0b3490e10de72e3fc7f037bd1e07565
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658372"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699550"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -235,7 +235,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
     import * as SearchView from "PosApi/Extend/Views/SearchView";
-    import MessageDialog from "../DialogSample/MessageDialog";
+    import MessageDialog from "../../Controls/DialogSample/MessageDialog";
     ```
 
 21. **ViewCustomerSummaryCommand** という名前のクラスを作成し、**CustomerSearchExtensionCommandBase** からクラスを拡張します。

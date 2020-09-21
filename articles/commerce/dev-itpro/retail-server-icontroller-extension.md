@@ -3,7 +3,7 @@ title: 新しい Retail Server API の作成
 description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/22/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 11d04399e9e2eb46c985fd8b8d1020b31931bb2b
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 802c81b5d486c0cbd26da643cbedfdc09f58bbd0
+ms.sourcegitcommit: 9723b5ff40c84677316d71e185cf862556b32cf9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665363"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "3741473"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -54,25 +54,36 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 1. CRT 拡張機能を作成します。 Retail Server 拡張機能を作成する前に、CRT 拡張機能を作成します。 Retail Server API には、パラメーターで CRT を呼び出すロジック以外のロジックはありません。
 2. Microsoft .NET Framework バージョン 4.6.1 を使用する新しい C# クラス ライブラリ プロジェクトを作成するか、または Retail SDK 内の Retail Server のサンプルのいずれかをテンプレートとして使用します。
 3. Retail Server 拡張機能プロジェクトで、CRT 拡張機能ライブラリまたはプロジェクトへの参照を追加します。 この参照を使用して、CRT 要求、応答およびエンティティを呼び出すことができます。
-4. Retail Server 拡張機能プロジェクトで、NuGet パッケージ マネージャーを使用して、**Microsoft.Dynamics.Commerce.Hosting.Contracts** を追加します。 NuGet パッケージは、**RetailSDK\\pkgs** フォルダにあります。
+4. Retail Server 拡張機能プロジェクトで、NuGet パッケージ マネージャーを使用して、**Microsoft.Dynamics.Commerce.Hosting.Contracts** パッケージを追加します。 NuGet パッケージは、**RetailSDK\\pkgs** フォルダにあります。
 5. 新しいコントローラー クラスを作成し、**IController** からクラスを拡張します。 このコントローラー クラスには、Retail Server API によって公開される必要のあるメソッドが含まれています。 コントローラー クラス内で、CRT 要求を呼び出すメソッドを追加します。 新しいコントローラー クラスを、**CustomerController** や **ProductController** などの既存のコントローラー クラスから拡張しないでください。 拡張クラスでは、**IController** クラスのみを拡張する必要があります。
-6. コントローラー クラスを公開するには、コントローラー クラスに **RoutePrefix** 属性を追加します。
+6. コントローラー クラス (コントローラー クラス名) 上で **RoutePrefix** 属性を追加します。
 
     ```csharp
     [RoutePrefix("SimpleExtension")]  
     ```
 
-7. **BindEntity** 属性は、新しいコントローラーを作成してエンティティを公開する場合に、コントローラー クラスで必要です。
+7. **BindEntity** 属性を追加します。 これは、新しいコントローラーを作成してエンティティを公開する場合に、コントローラー クラスで必要です。
 
-    次のサンプル コードでは、エンティティ、文字列、およびブール値を返す単純な Retail Server API を作成します。 サンプルで使用されている CRT 要求および応答は、このサンプルには含まれていません。 CRT 要求および応答の例については、[Commerce Runtime (CRT) の拡張機能およびトリガー](commerce-runtime-extensibility-trigger.md)を参照してください。
+```csharp
+    [BindEntity(typeof(SimpleEntity))]
+```
 
-    ```csharp
+> [!NOTE]
+> 拡張クラスがエンティティにバインドされている場合は、手順 6 と 7 が必要です。 これらの手順は、エンティティではなく、単純型を返す非制限コントローラ クラスには必要ありません。
+
+次のサンプル コードでは、エンティティ、文字列、およびブール値を返す単純な Retail Server API を作成します。 サンプルで使用されている CRT 要求および応答は、このサンプルには含まれていません。 CRT 要求および応答の例については、[Commerce Runtime (CRT) の拡張機能およびトリガー](commerce-runtime-extensibility-trigger.md)を参照してください。
+
+### <a name="sample-code-for-a-controller-class-bounded-to-a-custom-entity"></a>カスタム エンティティにバインドされるコントローラ クラスのサンプルコード
+
+> [!NOTE]
+> 拡張コードは、顧客や製品などの既存の OOB エンティティにバインドしてはいけません。
+
+```csharp
     /// <summary>
         /// New extended controller.
         /// </summary>
         [RoutePrefix("SimpleExtension")]  
         [BindEntity(typeof(SimpleEntity))]
-
         public class SimpleExtensionController : IController
         {
             /// <summary>
@@ -120,11 +131,51 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
                 return resp.SimpleEntityObj;
             }
         }
-    ```
+```
 
-    Retail Server API では、さまざまな承認ロールがサポートされています。 コントローラー メソッドへのアクセスは、コントローラー メソッドの**承認**属性で指定された承認ロールに基づいて許可されます。 次のコード例には、サポートされている承認ロールが示されています。
+### <a name="sample-code-for-a-controller-class-not-bounded-to-a-custom-entity"></a>カスタム エンティティにバインドされていないコントローラ クラスのサンプルコード
 
-    ```csharp
+```csharp
+namespace Contoso.UnboundController.Sample
+{
+    using System.Threading.Tasks;
+    using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+    using Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts;
+
+    /// <summary>
+    /// An extension unbounded controller sample.
+    /// </summary>
+    public class UnboundController : IController
+    {
+        /// <summary>
+        /// A simple GET endpoint to demonstrate GET endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpGet]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Application, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee, CommerceRoles.Storefront)]
+        public Task<bool> SampleGet()
+        {
+            return Task.FromResult(true);
+        }
+
+        /// <summary>
+        /// A simple POST endpoint to demonstrate POST endpoints on an unbound controller.
+        /// </summary>
+        /// <returns>A simple true value to indicate the endpoint was reached.</returns>
+        [HttpPost]
+        [Authorization(CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public Task<bool> SamplePost()
+        {
+            return Task.FromResult(true);
+        }
+    }
+}
+
+```
+
+Retail Server API では、さまざまな承認ロールがサポートされています。 コントローラー メソッドへのアクセスは、コントローラー メソッドの**承認**属性で指定された承認ロールに基づいて許可されます。 次のコード例には、サポートされている承認ロールが示されています。
+
+```csharp
     // Summary:
     // Represents the type of logon type.
     [DataContract]
@@ -166,18 +217,18 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
         //     values.
         public static readonly string[] All;
     }
-    ```
+ ```
 
 8. 拡張機能プロジェクトをビルドし、バイナリを **\\RetailServer\\webroot\\bin\\Ext** フォルダーにコピーします。
 9. **extensionComposition** セクションで新しい拡張ライブラリ名を追加して、**\\RetailServer\\webroot** フォルダーの Commerce Scale Unit **web.config** ファイルを更新します。
 
-    ```xml
+```xml
     <extensionComposition>
     <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
     If you host in an application with a bin folder, this is not required. -->
     <add source="assembly" value="SimpleExtensionSample" >
     </extensionComposition>
-    ```
+```
 
 10. Microsoft インターネット インフォメーション サービス (IIS) で、Commerce Scale Unit を再起動して、新しい拡張機能を読み込みます。
 11. 拡張機能が正常に読み込まれたことを確認するには、Retail Server のメタデータを参照します。 エンティティおよびメソッドが一覧に表示されることを確認します。 メタデータを参照するには、Web ブラウザーの次の形式で URL を開きます。
@@ -186,22 +237,13 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 
 12. クライアントで Retail Server 拡張機能を呼び出すには、クライアント Typescript プロキシを生成する必要があります。 その後、プロキシを使用して、クライアントから新しい Retail Server API を呼び出すことができます。
 
-    Retail Server 拡張 API を使用して、**EdmModelExtender** ファイルを拡張機能に追加する必要はありません。 これらのファイルは、Retail SDK バージョン 10.0.10 またはそれ以前を使用している場合にのみ必要です。
+Retail Server 拡張 API を使用して、**EdmModelExtender** ファイルを拡張機能に追加する必要はありません。 これらのファイルは、Retail SDK バージョン 10.0.10 またはそれ以前を使用している場合にのみ必要です。
 
-    この新しい **Microsoft.Dynamics.Commerce.Hosting.Contracts** API を使用してビルトされた Retail Server 拡張機能は、オフライン実装でも使用できます。 個別の C# プロキシライブラリを生成する必要はありません。 **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** フォルダーのRetail サーバー拡張ライブラリをコピーして、**RetailProxy.MPOSOffline.ext** config ファイルを更新してこの新しいライブラリーに追加します。 拡張機能では、Typescript プロキシのみを生成する必要があります。 SDK サンプルは、**\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** フォルダーにあります。
-
-    次の例は、**RetailProxy.MPOSOffline.ext** 構成ファイル内の **add** 要素を更新する方法を示しています。
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?> 
-    <retai1ProxyExtensions> 
-        <composition> 
-            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
-        </composition> 
-    </retai1ProxyExtensions> 
-    ```
 
 ## <a name="generate-the-typescript-proxy-for-pos"></a>POS Typescript プロキシの生成
+POS は Typescript プロキシ を使って、Retail サーバー API や CRT エンティティにアクセスします。 プロキシ クラスは、サービスを実行するためのクラスまたは Wrapper として機能し、プロキシ拡張機能を使用せずに Retail Server API やエンティティ メタデータを検索することによって、Retail Server API にアクセスします。
+
+**プロキシ ファイルを生成する手順**
 
 1. Visual Studio 2017 の **\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\Proxies.TypeScriptProxy.Extensions.StoreHoursSample.csproj** からサンプル プロキシ テンプレート プロジェクトを開きます。 必要に応じて名前を変更します。
 2. このプロキシ テンプレート プロジェクトに、Retail Server 拡張プロジェクトをプロジェクト参照プロジェクトとして追加します。 既存の **StoreHoursSample** プロジェクト参照を削除します。
@@ -221,3 +263,19 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
     ```
 
 6. 変更が完了したら、プロキシ プロジェクトをビルドして typescript プロキシ ファイルを生成します。 ビルドが完了すると、**\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService** フォルダーでプロキシ ファイルが使用可能となり、そのフォルダーは**コピー** コマンドによって指定されます。 パスとフォルダー パスは、フォルダ構造によって異なる場合があります。
+
+## <a name="retail-server-extension-in-offline"></a>オフラインの Retail Server 拡張機能
+
+**Microsoft.Dynamics.Commerce.Hosting.Contracts** API を使用してビルトされた Retail Server 拡張機能は、オフライン実装でも使用できます。 個別の C# プロキシ ライブラリを生成する必要はありません。 **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** フォルダーにある Retail Server 拡張機能ライブラリをコピーして、 **RetailProxy.MPOSOffline.ext** 構成ファイルにこのライブラリを含めるように構成します。 この拡張機能では、Typescript プロキシのみを生成する必要があります。 SDK サンプルは、**\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** フォルダーにあります。
+
+次の例は、**RetailProxy.MPOSOffline.ext** 構成ファイル内の **add** 要素を更新する方法を示しています。
+
+```xml
+    <?xml version="1.0" encoding="utf-8"?> 
+    <retailProxyExtensions> 
+        <composition> 
+            <add source="assembly" value="Contoso.RetailServer.StoreHoursSamp1e" /> 
+        </composition> 
+    </retailProxyExtensions> 
+```
+

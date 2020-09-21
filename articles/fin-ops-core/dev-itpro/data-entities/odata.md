@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df093f54bfb1c1fe2742212d781512315a468f39
-ms.sourcegitcommit: f79776e56a316fdba25cb40b3aad1963ae0ea623
+ms.openlocfilehash: 06f090972e789f2a5d51fa638ea5670ae6727a34
+ms.sourcegitcommit: 1daa297b0c09090a9c30c5f84bd7000e5b948a26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3489473"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "3720708"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -47,6 +47,9 @@ OData の詳細については、次の Web ページを参照してください
 | OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
 
 パブリック OData サービス エンドポイントにより、幅広いクライアントにわたって、一貫した方法でデータにアクセスできるようになります。 公開されているすべてのエンティティの一覧を表示するには、OData サービスのルート URLを開きます。 システムのサービス ルートの URL の形式は **\[お客様の組織のルート URL\]/data** です。
+
+> [!NOTE]
+> 拡張機能を介して追加された OData アクションは、現在サポートされていません。
 
 ## <a name="addressing"></a>アドレス指定
 次のテーブルでは、フリート管理サンプルのリソースと対応する URL を示しています。
@@ -322,7 +325,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
-列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で OData ロジック のより詳細な処理をするために使用することができます。
+列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、削除しなければならない重複する名前のインスタンスを識別するために [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を使用できます。 生成されたメタデータ ドキュメントは、クライアント側で OData ロジック のより詳細な処理をするために使用することができます。
 
 ### <a name="array-fields"></a>配列フィールド
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。

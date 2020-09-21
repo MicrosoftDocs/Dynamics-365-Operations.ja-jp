@@ -3,7 +3,7 @@ title: Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 description: このトピックでは、Microsoft Dynamics 365 Fraud Protection と Dynamics 365 Commerce との間で使用可能な標準統合について説明します。
 author: rubendel
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fed4358396c0dd2659a34627df1d3c2a5110d41d
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: b827bfa2246d9f76e9f89906ecb2a0d4b9313785
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404129"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710297"
 ---
 # <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 
@@ -100,9 +100,9 @@ Key Vault に保管されている Fraud Protection 証明書は、Commerce の�
 
 次に、Fraud Protection シークレットを補完するために使用される Key Vault URL を選択して、**追加** を選択します。 その後、購入保護評価のために注文を送る際、Commerce を承認するために使用される、Key Vault シークレットの名前、説明、パスを指定します。
 
-##### <a name="retail-parameters-setup"></a>Retail のパラメーター設定
+##### <a name="commerce-parameters-setup"></a>コマース パラメーターの設定
 
-1. **Retail と Commerce** \> **本社の設定** \> **パラメーター** \> **Retail パラメーター** の順に移動します。
+1. **Retail とコマース** \> **バックオフィスの設定** \> **パラメーター** \> **コマース パラメーター**の順に移動します。
 2. **Dynamics Fraud Protection** タブで、**Dynamics Fraud Protection 統合を有効にする** オプションを **はい** に設定します。
 3. **構成** ファストタブで、Azure Active Directory (Azure AD) クライアント ID を追加し、その後、前に構成した Key Vault シークレットの名前を選択します。
 
@@ -112,30 +112,30 @@ Key Vault に保管されている Fraud Protection 証明書は、Commerce の�
 
 4. **Dynamics Fraud Protection エンドポイント URL** フィールドは設定する必要があります。 この URL は Fraud Protection から提供され、ユーザー受け入れテスト (UAT) と運用環境に渡り異なります。
 
-![Retail パラメーターでの Fraud Protection 設定](../media/Payments/DFPSetupParams.png)
+![Retail パラメーターでの Fraud Protection 設定](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
 > Key Vault 設定と Fraud Protection 設定は会社固有です。 Fraud Protection を運用環境に対して有効にするには、ユーザーインターフェイス (UI) を通して Azure AD クライアント ID は入力しません。 その代わり、[サービス要求](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team) を作成および提出する必要があります。 要求のタイトルには、この要求が運用版 Commerce または Retail のための Fraud Protection 購入保護を構成するためであることを明確に示します。
 
 ## <a name="loss-prevention-in-commerce"></a>Commerce における損失防止
 
-Fraud Protection における**損失防止**モジュールは、通常は 2020 年第 3 四半期に提供されます。 損失防止のための標準の統合が、Commerce バージョン 10.0.12 で提供されます。
+Fraud Protection の **損失防止** 機能は、2020 年第 3 四半期 (Q3) に一般的に利用可能になります。 損失防止のための標準の統合が、Commerce バージョン 10.0.12 で提供されます。
 
 ### <a name="loss-prevention-overview"></a>損失防止の概要
 
 返品と割引のポリシーを乱用した詐欺によって生じた詐欺は、小売業者のシュリンゲージの最上位の原因です。 既存の物理的抑止力は簡単に回避できます。 したがって、最も洗練された形式の不正をキャッチするには、小売業者が損失を識別するための人工知能 (AI) を使用することが重要です。
 
-Fraud Prevention の**損失防止**モジュールでは、店舗内の返品と割引を分析して、返品と割引のポリシーを乱用することによって生じる異常を特定します。 AI を使用することにより、**損失防止**モジュールでは、見落としがちだが不適切な行動の兆候を示すパターンを特定することができます。また、シュリンケージの見つけにくい原因を明らかにできます。
+Fraud Prevention の**損失防止**モジュールでは、店舗内の返品と割引を分析して、返品と割引のポリシーを乱用することによって生じる異常を特定します。 AI を使用することにより、**損失防止** モジュールは、潜在的な不正行為を示すパターンと異常を特定し、検出が困難なシュリンケージの原因を明らかにできます。
 
 **損失防止**モジュールは、Data Lake Storage Gen2 を通じて利用可能な Commerce データを分析します。 この統合はオプトイン統合であり、既定で有効になっていません。
 
-**損失防止**モジュールによるデータの分析が完了すると、その結果が [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) ダッシュボードに提示されます。 その後、ユーザーは結果を評価し、不適切な行動を示している傾向を確認することができます。
+**損失防止** によるデータの分析が完了すると、その結果が [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) ダッシュボードに表示されます。 そこから、ユーザーは結果を評価し、潜在的な不正行為を示す傾向を確認することができます。
 
 ### <a name="turning-on-the-loss-prevention-integration-with-commerce"></a>Commerce で損失防止統合を有効にする
 
 #### <a name="set-up-fraud-protection"></a>Fraud Protection を設定する
 
-Fraud Protection を設定するには、 Dynamics 365 の営業担当者からの [コールバックを要求してください](https://dynamics.microsoft.com/get-started/?appname=fraudprotection)。 マーチャントの Fraud Protection 環境が利用可能であり、損失防止設定が構成されている場合は、Commerce 環境の Data Lake Storage Gen2 をオンにすることによって、設定を続行することができます。
+Fraud Protection を設定するには、 Dynamics 365 の営業担当者からの [コールバックを要求してください](https://dynamics.microsoft.com/get-started/?appname=fraudprotection)。 マーチャントの Fraud Protection 環境が利用可能で、損失防止設定が構成されている場合は、Commerce 環境の Data Lake Storage Gen2 をオンにすることで、設定を続行できます。  
 
 #### <a name="turn-on-data-lake-storage-gen2-for-your-commerce-environment"></a>Commerce 環境の Data Lake Storage Gen2 を有効にする
 
@@ -144,6 +144,10 @@ Fraud Protection を設定するには、 Dynamics 365 の営業担当者から�
 #### <a name="turn-on-loss-prevention"></a>損失防止の有効化
 
 損失防止の統合は、Commerce の **機能管理** ワークスペースを使用して有効にできます。 この機能には、"Dynamics 365 Fraud Protection (DFP) 損失防止" という名前が付けられています。 統合をオンにするために、Commerce の他の設定は必要ありません。
+
+#### <a name="configure-loss-prevention-to-connect-to-data-lake-storage-gen2"></a>Data Lake Storage Gen2 に接続するための損失防止のコンフィギュレーション
+
+最後に、Fraud Protection 環境に戻り、Commerce アカウントに関連付けられている Data Lake Storage Gen2 プールに損失防止を接続します。 
 
 ## <a name="privacy-notice"></a>プライバシー通知
 

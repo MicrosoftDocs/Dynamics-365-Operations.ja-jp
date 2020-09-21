@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce 10.0.13 (2020 年 10 月) の新機能または変更された機能
+title: Dynamics 365 Commerce 10.0.13 の機能のプレビュー (2020 年 10 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.13 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b3400f32314145d420aef687169d80007af73918
-ms.sourcegitcommit: d1116da9cff6d5ff05ae32562cb4a74d02f867cd
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 11f85deec6dad28b3fb821b25222083740712a2b
+ms.sourcegitcommit: 8965f81d6c68be8f9f8dca61349ac1854c34abfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2020
-ms.locfileid: "3648867"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3731861"
 ---
 # <a name="preview-features-in-dynamics-365-commerce-10013-october-2020"></a>Dynamics 365 Commerce 10.0.13 の機能のプレビュー (2020 年 10 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 10.0.12 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.569 で、次のスケジュールで使用できます。
+このトピックでは、Microsoft Dynamics 365 Commerce 10.0.13 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.569 で、次のスケジュールで使用できます。
 
 - **プレビュー リリース:** 2020 年 7 月
 - **一般提供 (自己更新):** 2020 年 9 月
@@ -44,6 +44,7 @@ ms.locfileid: "3648867"
 - [サイトビルダー WYSIWYG の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/site-builder-wysiwyg-improvements)
 - [メディア ギャラリー](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[メディア ギャラリー モジュール](../media-gallery-module.md) を参照してください。
 - [地図モジュール](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/new-out-of-box-commerce-modules-e-commerce)<br> - 詳細については、[マップ モジュール](../map-module.md) を参照してください。
+- [POS 在庫操作での機能の確認](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/review-function-pos-inventory-operations)
 
 
 
@@ -51,7 +52,7 @@ ms.locfileid: "3648867"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Commerce 10.0.13 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.13 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md) を参照してください。
+Dynamics 365 Commerce 10.0.13 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.13 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd) を参照してください

@@ -3,7 +3,7 @@ title: 非課税の計算
 description: このトピックでは、販売時点管理 (POS) およびコール センターでの非課税計算の機能について説明します。
 author: rubendel
 manager: annbe
-ms.date: 07/13/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 936609fbc19a9bbd52bf100d2737bf37e53e5233
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 75314397df0e7041caf9c9fcd9bd1bf0b2ce39a6
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621426"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744949"
 ---
 # <a name="calculation-of-tax-exemption"></a>非課税の計算
 
@@ -40,7 +40,7 @@ ms.locfileid: "3621426"
 
 ## <a name="adjust-prices-for-tax-exemptions-when-the-price-includes-tax"></a>税込み価格の場合に非課税の価格を調整する
 
-Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**非課税を含む価格の計算**オプションが含まれます。 このオプションを**はい**に設定すると、トランザクション内のトランザクションまたは特定の税を控除する必要がある場合に、内税シナリオの価格が調整されます。 店舗ベースの税を使用する場合は、税の上書きを使用してこれらの控除を適用できます。 店舗で顧客ベースの税が使用されている場合、顧客の税設定に基づいて自動的に控除が適用されます。
+Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**消費税が課税された価格のシナリオに対する免税機能を有効にする** という機能があります。 この機能が有効な場合、店舗とコールセンター設定用に **消費税非課税で価格を計算** というオプションが、**一般**  クイックタブ上に表示されます。 このオプションを**はい**に設定すると、トランザクション内のトランザクションまたは特定の税を控除する必要がある場合に、内税シナリオの価格が調整されます。 店舗ベースの税を使用する場合は、税の上書きを使用してこれらの控除を適用できます。 店舗で顧客ベースの税が使用されている場合、顧客の税設定に基づいて自動的に控除が適用されます。
 
 この設定は、コール センターまたは店舗で作成された注文でもサポートされます。
 

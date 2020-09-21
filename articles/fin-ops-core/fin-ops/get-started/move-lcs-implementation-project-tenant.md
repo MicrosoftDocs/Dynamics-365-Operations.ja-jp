@@ -3,7 +3,7 @@ title: LCS 実装プロジェクトを別の Azure AD テナントに移動す�
 description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 4f86107a193a19c728fd637098dd1c0622056371
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: dedf05cdd73ed18c8863793108d82611391fc9f2
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287833"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719252"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -69,7 +69,7 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 
 1. LCS を完全に構成します。 コンフィギュレーションの一部として、ユーザー、Microsoft Azure DevOps アソシエーション、サブスクリプション見積り、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などを追加する必要があります。
 2. 新しい LCS プロジェクトのすべての非運用環境を配置します。
-3. 必要なコード パッケージを環境に適用します。
+3. 必要なコード パッケージを環境に適用します。 そのターゲットで、ソースと同じバージョンのアプリケーションが実行されていることを確認します。 該当する場合は、[オールインワン配置可能パッケージ](../../dev-itpro/dev-tools/aio-deployable-packages.md) を使用し、ISV ライセンスを含めることをお勧めします。
 4. 環境にデータをアップロードします。 データ パッケージを使用してデータを移動することも、データベースを復元することもできます。 データベースを復元する場合は、いくつかのプロパティを新しいテナントに再マップするために追加の手順が必要です。
 5. ユーザー情報を更新します。
 

@@ -18,11 +18,11 @@ ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.openlocfilehash: 6edbe7ebde28e4a9c6e4240d8414ab5f124e3ac1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124817"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "3734897"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 

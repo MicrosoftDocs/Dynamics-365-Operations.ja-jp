@@ -16,11 +16,11 @@ ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: a52ad1b13a3a92c082e61b27cea0a7322b5d9833
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124835"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "3734933"
 ---
 # <a name="image-module"></a>画像モジュール
 
