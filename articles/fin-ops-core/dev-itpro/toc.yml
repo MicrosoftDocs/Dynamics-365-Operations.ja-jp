@@ -14,12 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)
-                  href: get-started/whats-new-platform-update-35.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: Azure Pipelines で、X++ モデルのバージョン管理
                   href: dev-tools/pipeline-model-version.md
+                - name: Azure Pipelines を使用した資産のダウンロード
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Azure Pipelines を使用した資産のアップロード
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Azure Pipelines を使用した資産のデプロイ
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Azure Pipelines での Lifecycle Services (LCS) 接続の作成
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: フリート管理のサンプル アプリケーション
               items:
                 - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ

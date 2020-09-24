@@ -92,6 +92,8 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (2020 年 11 月)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (2020 年 10 月)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020 年 8 月)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: セルフサービス コンポーネントの一括配置
                   href: dev-itpro/retail-mass-deployment.md
-                - name: 診断とトラブルシューティングの Retail コンポーネント イベント
+                - name: 診断とトラブルシューティングの Commerce コンポーネント イベント
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: 配置可能パッケージの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: オムニチャネル Commerce 注文支払
                       href: dev-itpro/commerce-payments.md
+                    - name: ハードウェア ステーションを使用しないクレジット カードの処理
+                      href: dev-itpro/cnp-pos.md
                     - name: 支払に関してよく寄せられる質問
                       href: dev-itpro/payments-retail.md
                 - name: 組織の Bing 地図の管理
@@ -700,7 +704,7 @@
           items:
             - name: 顧客注文
               items:
-                - name: MPOS の顧客注文
+                - name: 販売時点管理 (POS) の顧客注文
                   href: customer-orders-overview.md
                 - name: ハイブリッド顧客注文
                   href: hybrid-customer-orders.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Commerce 環境での複数の B2C テナントのコンフィギュレーション
                   href: configure-multi-B2C-tenants.md
+                - name: Dynamics 365 Commerce のドメイン
+                  href: domains-commerce.md
                 - name: コンテンツ配信ネットワーク (CDN) のサポートの追加
                   href: add-cdn-support.md
                 - name: 場所に基づく店舗検出の有効化
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: 評価およびレビュー モジュール
                       href: ratings-reviews-modules.md
+                    - name: ソーシャル共有モジュール
+                      href: social-share-module.md
                 - name: 購買モジュール
                   items:
                     - name: カート モジュール
@@ -1026,6 +1034,12 @@
                   items:
                     - name: 階層リンク モジュール
                       href: add-breadcrumb.md
+                    - name: ナビゲーション メニュー モジュール
+                      href: nav-menu-module.md
+                - name: コンプライアンス モジュール
+                  items:
+                    - name: Cookie の同意モジュール
+                      href: cookie-consent-module.md
             - name: 検索
               items:
                 - name: 既定のカテゴリ ランディング ページと検索結果ページの概要
@@ -1560,7 +1574,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
                 - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
-            - name: 生成された出力からの情報を使用して棚卸および集計を行うための ER 形式を設計する
+            - name: 生成された出力からの情報を使用して棚卸および集計を行うための電子申告形式を設計する
               items:
                 - name: 棚卸および集計を行うための形式を作成する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
@@ -1616,7 +1630,7 @@
                   items:
                     - name: オプションの属性を使用して XML 形式でファイルをインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
+                    - name: オプションの属性を含む XML 形式のファイルをインポートするための電子申告形式を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
             - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告形式要素の実行を遅延する
                   items:
-                    - name: シーケンス要素の実行を延期する
+                    - name: 電子申告形式におけるシーケンス要素の実行の延期
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: XML 要素の実行を延期する
+                    - name: 電子申告形式における XML 要素の実行の延期
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Finance and Operations での電子申告ソリューションの使用
               items:
@@ -1686,7 +1700,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
                     - name: 行先のコンフィギュレーション
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
-                - name: ER 形式への参照の設定
+                - name: 電子申告形式への参照の設定
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されたレポートの自動検証
                   items:
@@ -1702,7 +1716,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                 - name: ビジネス ドキュメントの管理
                   items:
