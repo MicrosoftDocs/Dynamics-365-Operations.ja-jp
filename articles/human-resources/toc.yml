@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 9 月 3 日
+          href: hr-whats-new-2020-09-03.md
         - name: 2020 年 8 月 20 日
           href: hr-whats-new-2020-08-20.md
         - name: 2020 年 8 月 6 日
@@ -23,12 +25,12 @@
           href: hr-whats-new-2020-05-14.md
         - name: 2020 年 5 月 1 日
           href: hr-whats-new-2020-05-01.md
-        - name: 2020 年 4 月 13 日
-          href: hr-whats-new-2020-04-13.md
-        - name: 2020 年 4 月 3 日
-          href: hr-whats-new-2020-04-03.md
         - name: 新機能アーカイブ 2020
           items:
+            - name: 2020 年 4 月 13 日
+              href: hr-whats-new-2020-04-13.md
+            - name: 2020 年 4 月 3 日
+              href: hr-whats-new-2020-04-03.md
             - name: 2020 年 3 月 24 日
               href: hr-whats-new-2020-03-24.md
             - name: 2020 年 3 月 19 日
