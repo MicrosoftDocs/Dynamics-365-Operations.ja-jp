@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6134ae7eb1a8044cf906f2a8d02eb153522a6cf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: ab953136b7500665bdb13e6ff585e3b76896c9ee
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041932"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744988"
 ---
-# <span data-ttu-id="cf080-103"><a name="REVERSE">REVERSE ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="cf080-103"><a name="REVERSE">REVERSE ER function</a></span></span>
+# <a name="reverse-er-function"></a><span data-ttu-id="fcb27-103">REVERSE ER 関数</span><span class="sxs-lookup"><span data-stu-id="fcb27-103">REVERSE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cf080-104">`REVERSE` 関数は、指定されたリストを、逆の並べ替え順で*レコード リスト*値として返します。</span><span class="sxs-lookup"><span data-stu-id="cf080-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
+<span data-ttu-id="fcb27-104">`REVERSE` 関数は、指定されたリストを、逆の並べ替え順で*レコード リスト*値として返します。</span><span class="sxs-lookup"><span data-stu-id="fcb27-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cf080-105">構文</span><span class="sxs-lookup"><span data-stu-id="cf080-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fcb27-105">構文</span><span class="sxs-lookup"><span data-stu-id="fcb27-105">Syntax</span></span>
 
 ```vb
 REVERSE (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="cf080-106">引数</span><span class="sxs-lookup"><span data-stu-id="cf080-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="fcb27-106">引数</span><span class="sxs-lookup"><span data-stu-id="fcb27-106">Arguments</span></span>
 
-<span data-ttu-id="cf080-107">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="cf080-107">`list`: *Record list*</span></span>
+<span data-ttu-id="fcb27-107">`list`: *レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="fcb27-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="cf080-108">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="cf080-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="fcb27-108">*レコード リスト* データ型のデータ ソースの項目の有効なパス。</span><span class="sxs-lookup"><span data-stu-id="fcb27-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="cf080-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="cf080-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="fcb27-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="fcb27-109">Return values</span></span>
 
-<span data-ttu-id="cf080-110">*レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="cf080-110">*Record list*</span></span>
+<span data-ttu-id="fcb27-110">*レコード リスト*</span><span class="sxs-lookup"><span data-stu-id="fcb27-110">*Record list*</span></span>
 
-<span data-ttu-id="cf080-111">レコードの結果リスト。</span><span class="sxs-lookup"><span data-stu-id="cf080-111">The resulting list of records.</span></span>
+<span data-ttu-id="fcb27-111">レコードの結果リスト。</span><span class="sxs-lookup"><span data-stu-id="fcb27-111">The resulting list of records.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="cf080-112">例 1</span><span class="sxs-lookup"><span data-stu-id="cf080-112">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="fcb27-112">例 1</span><span class="sxs-lookup"><span data-stu-id="fcb27-112">Example 1</span></span>
 
-<span data-ttu-id="cf080-113">*計算済フィールド* タイプのデータ ソース **DS** を入力し、式 `SPLIT ("C|B|A", "|")` が含まれている場合、式 `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` はテキスト値 **"C"** を返します。</span><span class="sxs-lookup"><span data-stu-id="cf080-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
+<span data-ttu-id="fcb27-113">*計算済フィールド* タイプのデータ ソース **DS** を入力し、式 `SPLIT ("C|B|A", "|")` が含まれている場合、式 `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` はテキスト値 **"C"** を返します。</span><span class="sxs-lookup"><span data-stu-id="fcb27-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="cf080-114">例 2</span><span class="sxs-lookup"><span data-stu-id="cf080-114">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="fcb27-114">例 2</span><span class="sxs-lookup"><span data-stu-id="fcb27-114">Example 2</span></span>
 
-<span data-ttu-id="cf080-115">**仕入先**を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` は降順の名前で並べ替えられた仕入先のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="cf080-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
+<span data-ttu-id="fcb27-115">**仕入先**を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` は降順の名前で並べ替えられた仕入先のリストを返します。</span><span class="sxs-lookup"><span data-stu-id="fcb27-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="cf080-116">追加リソース</span><span class="sxs-lookup"><span data-stu-id="cf080-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="fcb27-116">追加リソース</span><span class="sxs-lookup"><span data-stu-id="fcb27-116">Additional resources</span></span>
 
-[<span data-ttu-id="cf080-117">リスト機能</span><span class="sxs-lookup"><span data-stu-id="cf080-117">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="fcb27-117">リスト機能</span><span class="sxs-lookup"><span data-stu-id="fcb27-117">List functions</span></span>](er-functions-category-list.md)

@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 214fb2808f024487795f27de45de1d4de8cead2d
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: b53535d1a000b72577be5c6284cc4676c43d591b
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041656"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744602"
 ---
-# <span data-ttu-id="b5c44-103"><a name="ABS">ABS ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="b5c44-103"><a name="ABS">ABS ER function</a></span></span>
+# <a name="abs-er-function"></a><span data-ttu-id="25dce-103">ABS ER 関数</span><span class="sxs-lookup"><span data-stu-id="25dce-103">ABS ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b5c44-104">`ABS` 関数は、指定された数の絶対値 (係数) を*実数*値として返します。</span><span class="sxs-lookup"><span data-stu-id="b5c44-104">The `ABS` function returns the absolute value (modulus) of the specified number as a *Real* value.</span></span> <span data-ttu-id="b5c44-105">つまり、符号のない数値を返します。</span><span class="sxs-lookup"><span data-stu-id="b5c44-105">In other words, it returns the number without its sign.</span></span>
+<span data-ttu-id="25dce-104">`ABS` 関数は、指定された数の絶対値 (係数) を*実数*値として返します。</span><span class="sxs-lookup"><span data-stu-id="25dce-104">The `ABS` function returns the absolute value (modulus) of the specified number as a *Real* value.</span></span> <span data-ttu-id="25dce-105">つまり、符号のない数値を返します。</span><span class="sxs-lookup"><span data-stu-id="25dce-105">In other words, it returns the number without its sign.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b5c44-106">構文</span><span class="sxs-lookup"><span data-stu-id="b5c44-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="25dce-106">構文</span><span class="sxs-lookup"><span data-stu-id="25dce-106">Syntax</span></span>
 
 ```vb
 ABS (number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="b5c44-107">引数</span><span class="sxs-lookup"><span data-stu-id="b5c44-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="25dce-107">引数</span><span class="sxs-lookup"><span data-stu-id="25dce-107">Arguments</span></span>
 
-<span data-ttu-id="b5c44-108">`number`: *実数*</span><span class="sxs-lookup"><span data-stu-id="b5c44-108">`number`: *Real*</span></span>
+<span data-ttu-id="25dce-108">`number`: *実数*</span><span class="sxs-lookup"><span data-stu-id="25dce-108">`number`: *Real*</span></span>
 
-<span data-ttu-id="b5c44-109">係数を求める数値。</span><span class="sxs-lookup"><span data-stu-id="b5c44-109">A numeric value that you want the modulus of.</span></span>
+<span data-ttu-id="25dce-109">係数を求める数値。</span><span class="sxs-lookup"><span data-stu-id="25dce-109">A numeric value that you want the modulus of.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="b5c44-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="b5c44-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="25dce-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="25dce-110">Return values</span></span>
 
-<span data-ttu-id="b5c44-111">*実績*</span><span class="sxs-lookup"><span data-stu-id="b5c44-111">*Real*</span></span>
+<span data-ttu-id="25dce-111">*実績*</span><span class="sxs-lookup"><span data-stu-id="25dce-111">*Real*</span></span>
 
-<span data-ttu-id="b5c44-112">結果数値。</span><span class="sxs-lookup"><span data-stu-id="b5c44-112">The resulting numeric value.</span></span>
+<span data-ttu-id="25dce-112">結果数値。</span><span class="sxs-lookup"><span data-stu-id="25dce-112">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5c44-113">例</span><span class="sxs-lookup"><span data-stu-id="b5c44-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25dce-113">例</span><span class="sxs-lookup"><span data-stu-id="25dce-113">Example</span></span>
 
-<span data-ttu-id="b5c44-114">`ABS (-1)` は、**1** を返します。</span><span class="sxs-lookup"><span data-stu-id="b5c44-114">`ABS (-1)` returns **1**.</span></span>
+<span data-ttu-id="25dce-114">`ABS (-1)` は、**1** を返します。</span><span class="sxs-lookup"><span data-stu-id="25dce-114">`ABS (-1)` returns **1**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="b5c44-115">追加リソース</span><span class="sxs-lookup"><span data-stu-id="b5c44-115">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="25dce-115">追加リソース</span><span class="sxs-lookup"><span data-stu-id="25dce-115">Additional resources</span></span>
 
-[<span data-ttu-id="b5c44-116">算術関数</span><span class="sxs-lookup"><span data-stu-id="b5c44-116">Mathematical functions</span></span>](er-functions-category-mathematical.md)
+[<span data-ttu-id="25dce-116">算術関数</span><span class="sxs-lookup"><span data-stu-id="25dce-116">Mathematical functions</span></span>](er-functions-category-mathematical.md)
