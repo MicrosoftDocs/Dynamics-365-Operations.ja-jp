@@ -3,7 +3,7 @@ title: ユーザー エクスペリエンスのパーソナライズ
 description: このトピックでは、アプリを個人用設定する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8afbea3b3a6a06d005efae7305b2e394907c67c
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: f01580117b22191976400b2e2ba1a5dde8ad559d
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652134"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802994"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、アプリをパーソナライズして次の情報について説明します。 
 

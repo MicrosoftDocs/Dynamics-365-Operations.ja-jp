@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550651"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760034"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 
@@ -101,7 +101,7 @@ ms.locfileid: "2550651"
 
 ER ソリューションの最初のバージョンのデザインが完了したとします。 これにより、インスタンスでテストを行い、実行パフォーマンスを分析できます。
 
-### <a id='import-configuration'></a>ER コンフィギュレーションを RCS から Finance and Operations にインポートする
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>RCS から ER コンフィギュレーションの Finance and Operations へのインポート
 
 1. アプリケーション インスタンスにサインインします。
 2. このチュートリアルでは、RCS インスタンス (ER コンポーネントを設計する場所) から、インスタンス (テストして最後に使用する場所) にコンフィギュレーションをインポートします。 したがって、必要なコンポーネントがすべて準備されたことを確認する必要があります。 手順については、[規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) を参照してください。
@@ -146,7 +146,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 
     ![ユーザー パラメーター ダイアログ ボックス](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>ER 形式を実行する
+### <a name="run-the-er-format"></a><a id='run-format'></a>ER 形式を実行する
 
 1. **DEMF** 会社を選択します。
 2. **組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。
@@ -157,7 +157,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 
 ## <a name="review-the-execution-trace"></a>実行追跡の確認
 
-### <a id='export-trace'></a> アプリケーションから生成された追跡のエクスポート
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a> アプリケーションから生成された追跡のエクスポート
 
 パフォーマンス追跡は、ソースの ER 形式から切り離され、外部の zip ファイルにシリアル化されます。
 
@@ -176,7 +176,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 
 実行される ER 形式と ER モデル マッピングに対して生成されたパフォーマンス追跡間の関連付けは、使用されたルート記述子と共通データ モデルに基づいていることに注意してください。 形式のバージョン番号付けおよびモデル マッピングは考慮されません。 モデル マッピングに対する**モデル マッピングの既定値**フラグの設定も考慮されません。
 
-### <a id='import-trace'></a> 生成された追跡を RCS にインポートします
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a> 生成された追跡を RCS にインポートします
 
 1. RCS の、**電子レポート** ワークスペースで、**レポート コンフィギュレーション** タイルを選択します。
 2. **構成**ページのコンフィギュレーション ツリーで、**パフォーマンス追跡モデル**項目を展開し、**パフォーマンス追跡形式**項目を選択します。
@@ -201,7 +201,7 @@ ER ソリューションの最初のバージョンのデザインが完了し�
 
 2. **形式デザイナー** ページを閉じます。
 
-### <a id='use-trace'></a>RCS での分析に対するパフォーマンス追跡の使用 – モデル マッピング
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>RCS での分析に対するパフォーマンス追跡の使用 – モデル マッピング
 
 1. RCS、**コンフィギュレーション** ページのコンフィギュレーション ツリーで、**パフォーマンス追跡マッピング**項目を選択します。
 2. アクション ウィンドウで、**デザイナー**を選択します。
@@ -293,7 +293,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>変更された ER モデル マッピング コンフィギュレーションを RCS からアプリケーションにインポートする
 
-このトピックの先のセクション [ER コンフィギュレーションを RCS から Finance and Operations にインポートする](#import-configuration) の手順を繰り返して、**パフォーマンス追跡マッピング** コンフィギュレーションのバージョン 1.2 をインポートします。
+このトピックの前にある [RCS から ER コンフィギュレーションを Finance and Operations にインポートする](#import-configuration) セクションでこの手順を繰り返し、**パフォーマンス トレース マッピング** コンフィギュレーションのバージョン 1.2 をインポートします。
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>変更された ER ソリューションを実行して追跡実行する
 
@@ -301,7 +301,7 @@ VendTable/\<Relations/VendTrans.VendTable\_AccountNum データ ソースの実�
 
 このトピックの先のセクション [ER 形式を実行する](#run-format) の手順を繰り返して、新しいパフォーマンス追跡を生成します。
 
-## <a name="review-the-execution-trace"></a>実行追跡の確認
+## <a name="work-with-the-execution-trace"></a>実行トレースを使って作業する
 
 ### <a name="export-the-generated-trace-from-the-application"></a>アプリケーションから生成された追跡のエクスポート
 
@@ -347,7 +347,7 @@ RCS に加えて、一部のバージョンでは ER フレームワーク デ�
 
 Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。
 
-![PerfView で実行された ER 形式のトレース情報](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![PerfView 形式のパフォーマンス トレース情報](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>外部ツールを使用してデータベース クエリを含む実行トレースを確認する
 
@@ -363,7 +363,7 @@ ER フレームワークに行われた改善のため、PerfView 形式で生�
     - **クエリ統計情報の収集** オプションを**はい**に設定します。
     - **クエリの追跡**オプションを**はい**に設定します。
 
-    ![ユーザー パラメーター ダイアログ ボックス](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![トレースの実行セクション、ユーザー パラメータ ダイアログボックス](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>ER 形式を実行する
 
@@ -372,3 +372,8 @@ ER フレームワークに行われた改善のため、PerfView 形式で生�
 Web ブラウザーによって、ダウンロード用の zip ファイルが提供されていることに注意してください。 このファイルには、PerfView 形式のパフォーマンス追跡が含まれています。 次に、PerfView パフォーマンス分析ツールを使用して ER 形式実行の詳細を分析できます。 この追跡に、ER 形式の実行中における SQL データベース アクセスに関する詳細が含まれるようになりました。
 
 ![PerfView で実行された ER 形式のトレース情報](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>追加リソース
+
+- [電子申告の概要](general-electronic-reporting.md)
+- [パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる](er-calculated-field-ds-performance.md)

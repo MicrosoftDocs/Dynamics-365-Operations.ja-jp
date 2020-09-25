@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597509"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775177"
 ---
 # <a name="warehouse-location-status"></a>倉庫の場所の状態
 
@@ -76,6 +76,9 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
     これらのオプションは、場所の参照フィールドを有効にするかどうかを制御します。
 
 1. **ピック-06** プロファイルについて、手順 3 から 4 を繰り返します。
+
+> [!NOTE]
+> 場所のプロファイルのパラメータ (**場所の有効化**、**場所の状態の有効化**、**場所のステータスの有効化**) が *はい* に設定されている場合、*倉庫の場所のステータスの整合性チェック* ジョブを実行すると、関連する場所がすぐに更新されます。
 
 ### <a name="scenario"></a>シナリオ
 

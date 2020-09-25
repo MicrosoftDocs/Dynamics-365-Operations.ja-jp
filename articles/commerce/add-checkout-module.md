@@ -3,7 +3,7 @@ title: チェックアウト モジュール
 description: このトピックでは、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686745"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761108"
 ---
 # <a name="checkout-module"></a>チェックアウト モジュール
 
@@ -97,8 +97,8 @@ ms.locfileid: "3686745"
 新しいページにチェックアウト モジュールを追加して必要なプロパティを設定するには、次の手順を実行します。
 
 1. **フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
-1. **新規ページ フラグメント** ダイアログ ボックスで、**チェックアウト** モジュールを選択します。
-1. **ページ フラグメント名** で、**チェックアウト フラグメント** と名前を入力し、**OK** を選択します。
+1. **新規フラグメント** ダイアログ ボックスで、**チェックアウト** モジュールを選択します。
+1. **フラグメント名** で、**チェックアウト フラグメント** と名前を入力し、**OK** を選択します。
 1. **精算モジュール** スロットを選択します。
 1. 右側の [プロパティ] ウィンドウで、鉛筆の記号を選択し、フィールドに見出しテキストを入力し、続いてチェックマーク記号を選択します。
 1. **精算情報**スロットで、省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。

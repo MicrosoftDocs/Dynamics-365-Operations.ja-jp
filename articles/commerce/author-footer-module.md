@@ -3,7 +3,7 @@ title: フッター モジュール
 description: このトピックでは、フッター モジュール、および Dynamics 365 Commerce での作成方法について説明します。
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686721"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761204"
 ---
 # <a name="footer-module"></a>フッター モジュール  
 
@@ -51,7 +51,7 @@ ms.locfileid: "3686721"
 ## <a name="create-a-footer-module"></a>フッター モジュールの作成
 
 1. **フラグメント** に移動し、続いて **新規** を選択して新規フラグメントを作成します。
-1. **新規ページ フラグメント** ダイアログ ボックスで、**コンテナー** モジュールを選択し、ページ フラグメントの名前を入力して、**OK** を選択します。
+1. **新規フラグメント** ダイアログ ボックスで、**コンテナー** モジュールを選択し、フラグメントの名前を入力して、**OK** を選択します。
 1. **既定のコンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
 1. **モジュールの追加** ダイアログ ボックスで、**フッター カテゴリ モジュール** を選択し、続いて**OK**を選択します。
 1. **フッター カテゴリ**スロットで、省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
@@ -68,7 +68,7 @@ ms.locfileid: "3686721"
 1. **既定ページ** モジュールの **フッター** スロットに、作成したフッター フラグメントを追加します。
 1. **編集の完了**  を選択してテンプレートをチェックインし、 **発行** を選択して公開します。
 
-ページ テンプレートにページ フラグメントを追加することにより、フッターがすべてのページにレンダリングされることを保証できます。
+ページ テンプレートにフラグメントを追加することにより、フッターがすべてのページにレンダリングされるようになります。
 
 ## <a name="additional-resources"></a>追加リソース
 

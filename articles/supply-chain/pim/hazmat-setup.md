@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: aaf66b98717c72b4260e0a482400bdb29bbd9ecb
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699635"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803216"
 ---
 # <a name="set-up-hazardous-materials"></a>危険物の設定
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 危険物の機能を使用するには、まず、品目を危険物として分類するために必要となるデータを設定する必要があります。 そうすることで、危険物として分類されている品目を含む販売注文を作成すると、出荷時にこの販売注文に対して危険物のドキュメントが生成されます。
 

@@ -3,7 +3,7 @@ title: 部分的な場所の循環棚卸
 description: 循環棚卸計画は、実際のカウント操作をガイドします。 ある特定の場所にあるすべての手持在庫の代わりに、特定の製品と製品の種類のみをカウントするように要求することができます。
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215680"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760010"
 ---
 # <a name="partial-location-cycle-counting"></a>部分的な場所の循環棚卸
 
@@ -45,7 +45,7 @@ ms.locfileid: "3215680"
 
 部分的な循環棚卸作業を処理する前に、循環棚卸の設定の一部として、モバイル デバイスのメニュー項目の、**品目番号を表示する** を少なくとも選択します。 倉庫マネージャーは、棚卸ライン (品目番号および製品分析コード) に関連する棚卸情報のみを記録するよう求められます。 他の手持在庫はこのカウント プロセスでは無視されます。 
 
-部分的な循環棚卸プロセスでは、**最後循環棚卸** 日付/時刻は場所に対しては更新されません。
+部分的なサイクル数のプロセスでは、特定の場所における手持在庫のすべての品目がカウントされますが、その場所については、**最終サイクルカウント** 日時は更新されません。 部分的なサイクル カウントでは、**サイクル数計画** ページの **サイクルカウントの間 のパラメータの日数** は考慮されません。 循環棚卸では、同じ場所にある複数の品目の同時カウントはサポートしていません。 期間を部分的に計算する機能により、**循環棚卸の処理計画** が実行されたときに、同じ場所が複数回カウントされる場合があります。 このような状況を回避するには、**場所の選択** フィールドでフィルタを指定します。
 
 ## <a name="example"></a>例
 この例では、倉庫 61 では品目番号 A0001 のみをカウントする必要があります。

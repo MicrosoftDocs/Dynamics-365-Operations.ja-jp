@@ -1,6 +1,6 @@
 ---
 title: キーボード ショートカット
-description: 次のキーボード ショートカットは、データを短時間および効率的にに入力するのに役立ちます。
+description: このトピックでは、Finance and Operations アプリを操作するときに使用できるショートカットキーの概要を示し ます。
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811558"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761624"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
 
-次のキーボード ショートカットは、データを短時間および効率的にに入力するのに役立ちます。
+次のキーボード ショートカットは、Finance and Operations アプリでデータを短時間および効率的にに入力するのに役立ちます。
 
 > [!NOTE]
 > ここで説明するショートカット キーは、米国のキーボード レイアウトのものです。 他のキーボード レイアウト キーは、米国のキーボード キーとまったく同じではない場合があります。
@@ -236,7 +236,8 @@ ms.locfileid: "2811558"
 | ルックアップの行を上下に移動                                                                                        | 上方向キーまたは下方向キー            |
 | ルックアップのページを上下に移動                                                                                       | Page up キーまたは Page down キー              |
 | ルックアップの一番上または下に移動                                                                                    | Home または End                       |
+
 ## <a name="additional-resources"></a>追加リソース
 
-- [[欠落している勘定分析のキーボード ショートカット](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)]
+- [欠落している勘定分析のキーボード ショートカット](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
