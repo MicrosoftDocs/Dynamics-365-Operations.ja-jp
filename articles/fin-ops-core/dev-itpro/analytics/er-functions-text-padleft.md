@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d11e2d8b46614085156228ab1001d1f9340a05b0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 3f8a8e2006fe279b25bbf154c6e1802babf51117
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040966"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744362"
 ---
-# <span data-ttu-id="cea1b-103"><a name="PADLEFT">PADLEFT ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="cea1b-103"><a name="PADLEFT">PADLEFT ER function</a></span></span>
+# <a name="padleft-er-function"></a><span data-ttu-id="aef5b-103">PADLEFT ER 関数</span><span class="sxs-lookup"><span data-stu-id="aef5b-103">PADLEFT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cea1b-104">`PADLEFT` 関数は、指定の文字列から始まる指定の文字でパディングされた指定の長さの*文字列*値を返します。</span><span class="sxs-lookup"><span data-stu-id="cea1b-104">The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.</span></span>
+<span data-ttu-id="aef5b-104">`PADLEFT` 関数は、指定の文字列から始まる指定の文字でパディングされた指定の長さの*文字列*値を返します。</span><span class="sxs-lookup"><span data-stu-id="aef5b-104">The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cea1b-105">構文</span><span class="sxs-lookup"><span data-stu-id="cea1b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aef5b-105">構文</span><span class="sxs-lookup"><span data-stu-id="aef5b-105">Syntax</span></span>
 
 ```vb
 PADLEFT (text, length, padding chars)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="cea1b-106">引数</span><span class="sxs-lookup"><span data-stu-id="cea1b-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="aef5b-106">引数</span><span class="sxs-lookup"><span data-stu-id="aef5b-106">Arguments</span></span>
 
-<span data-ttu-id="cea1b-107">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="cea1b-107">`text`: *String*</span></span>
+<span data-ttu-id="aef5b-107">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="aef5b-107">`text`: *String*</span></span>
 
-<span data-ttu-id="cea1b-108">オリジナルのテキストを表す*文字列*値。</span><span class="sxs-lookup"><span data-stu-id="cea1b-108">A *String* value that represents the original text.</span></span>
+<span data-ttu-id="aef5b-108">オリジナルのテキストを表す*文字列*値。</span><span class="sxs-lookup"><span data-stu-id="aef5b-108">A *String* value that represents the original text.</span></span>
 
-<span data-ttu-id="cea1b-109">`length`: *整数*</span><span class="sxs-lookup"><span data-stu-id="cea1b-109">`length`: *Integer*</span></span>
+<span data-ttu-id="aef5b-109">`length`: *整数*</span><span class="sxs-lookup"><span data-stu-id="aef5b-109">`length`: *Integer*</span></span>
 
-<span data-ttu-id="cea1b-110">パディングされた文字列の最終文字数を表す*整数*値。</span><span class="sxs-lookup"><span data-stu-id="cea1b-110">An *Integer* value that represents the final number of characters in the padded string.</span></span>
+<span data-ttu-id="aef5b-110">パディングされた文字列の最終文字数を表す*整数*値。</span><span class="sxs-lookup"><span data-stu-id="aef5b-110">An *Integer* value that represents the final number of characters in the padded string.</span></span>
 
-<span data-ttu-id="cea1b-111">`padding chars`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="cea1b-111">`padding chars`: *String*</span></span>
+<span data-ttu-id="aef5b-111">`padding chars`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="aef5b-111">`padding chars`: *String*</span></span>
 
-<span data-ttu-id="cea1b-112">パディングに使用する文字。</span><span class="sxs-lookup"><span data-stu-id="cea1b-112">The characters to use for padding.</span></span>
+<span data-ttu-id="aef5b-112">パディングに使用する文字。</span><span class="sxs-lookup"><span data-stu-id="aef5b-112">The characters to use for padding.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="cea1b-113">戻り値</span><span class="sxs-lookup"><span data-stu-id="cea1b-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="aef5b-113">戻り値</span><span class="sxs-lookup"><span data-stu-id="aef5b-113">Return values</span></span>
 
-<span data-ttu-id="cea1b-114">*文字列*</span><span class="sxs-lookup"><span data-stu-id="cea1b-114">*String*</span></span>
+<span data-ttu-id="aef5b-114">*文字列*</span><span class="sxs-lookup"><span data-stu-id="aef5b-114">*String*</span></span>
 
-<span data-ttu-id="cea1b-115">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="cea1b-115">The resulting text value.</span></span>
+<span data-ttu-id="aef5b-115">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="aef5b-115">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cea1b-116">例</span><span class="sxs-lookup"><span data-stu-id="cea1b-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aef5b-116">例</span><span class="sxs-lookup"><span data-stu-id="aef5b-116">Example</span></span>
 
-<span data-ttu-id="cea1b-117">`PADLEFT ("1234", 10, "`&nbsp;`")` は、テキスト文字列の **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"** を返します。</span><span class="sxs-lookup"><span data-stu-id="cea1b-117">`PADLEFT ("1234", 10, "`&nbsp;`")` returns the text string **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span></span>
+<span data-ttu-id="aef5b-117">`PADLEFT ("1234", 10, "`&nbsp;`")` は、テキスト文字列の **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"** を返します。</span><span class="sxs-lookup"><span data-stu-id="aef5b-117">`PADLEFT ("1234", 10, "`&nbsp;`")` returns the text string **"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="cea1b-118">追加リソース</span><span class="sxs-lookup"><span data-stu-id="cea1b-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="aef5b-118">追加リソース</span><span class="sxs-lookup"><span data-stu-id="aef5b-118">Additional resources</span></span>
 
-[<span data-ttu-id="cea1b-119">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="cea1b-119">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="aef5b-119">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="aef5b-119">Text functions</span></span>](er-functions-category-text.md)

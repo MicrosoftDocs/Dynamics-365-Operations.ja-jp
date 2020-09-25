@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77854d645ba5b65a2819437af510fcd67be6d99d
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 672abf4938df7d96c0190bfd5325689b381e2764
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040943"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744338"
 ---
-# <span data-ttu-id="51387-103"><a name="UPPER">UPPER ER 関数</a></span><span class="sxs-lookup"><span data-stu-id="51387-103"><a name="UPPER">UPPER ER function</a></span></span>
+# <a name="upper-er-function"></a><span data-ttu-id="0438d-103">UPPER ER 関数</span><span class="sxs-lookup"><span data-stu-id="0438d-103">UPPER ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="51387-104">`UPPER` 関数は、大文字に変換した後の*文字列*値として指定されたテキスト返します。</span><span class="sxs-lookup"><span data-stu-id="51387-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
+<span data-ttu-id="0438d-104">`UPPER` 関数は、大文字に変換した後の*文字列*値として指定されたテキスト返します。</span><span class="sxs-lookup"><span data-stu-id="0438d-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="51387-105">構文</span><span class="sxs-lookup"><span data-stu-id="51387-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0438d-105">構文</span><span class="sxs-lookup"><span data-stu-id="0438d-105">Syntax</span></span>
 
 ```vb
 UPPER (text )
 ```
 
-## <a name="arguments"></a><span data-ttu-id="51387-106">引数</span><span class="sxs-lookup"><span data-stu-id="51387-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="0438d-106">引数</span><span class="sxs-lookup"><span data-stu-id="0438d-106">Arguments</span></span>
 
-<span data-ttu-id="51387-107">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="51387-107">`text`: *String*</span></span>
+<span data-ttu-id="0438d-107">`text`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="0438d-107">`text`: *String*</span></span>
 
-<span data-ttu-id="51387-108">*文字列*型のデータ ソースの有効なパス。</span><span class="sxs-lookup"><span data-stu-id="51387-108">The valid path of a data source of the *String* type.</span></span>
+<span data-ttu-id="0438d-108">*文字列*型のデータ ソースの有効なパス。</span><span class="sxs-lookup"><span data-stu-id="0438d-108">The valid path of a data source of the *String* type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="51387-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="51387-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0438d-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="0438d-109">Return values</span></span>
 
-<span data-ttu-id="51387-110">*文字列*</span><span class="sxs-lookup"><span data-stu-id="51387-110">*String*</span></span>
+<span data-ttu-id="0438d-110">*文字列*</span><span class="sxs-lookup"><span data-stu-id="0438d-110">*String*</span></span>
 
-<span data-ttu-id="51387-111">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="51387-111">The resulting text value.</span></span>
+<span data-ttu-id="0438d-111">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="0438d-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="51387-112">例</span><span class="sxs-lookup"><span data-stu-id="51387-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0438d-112">例</span><span class="sxs-lookup"><span data-stu-id="0438d-112">Example</span></span>
 
-<span data-ttu-id="51387-113">`UPPER ("Sample")` は、**"SAMPLE"** を返します。</span><span class="sxs-lookup"><span data-stu-id="51387-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
+<span data-ttu-id="0438d-113">`UPPER ("Sample")` は、**"SAMPLE"** を返します。</span><span class="sxs-lookup"><span data-stu-id="0438d-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="51387-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="51387-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0438d-114">追加リソース</span><span class="sxs-lookup"><span data-stu-id="0438d-114">Additional resources</span></span>
 
-[<span data-ttu-id="51387-115">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="51387-115">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="0438d-115">テキスト関数</span><span class="sxs-lookup"><span data-stu-id="0438d-115">Text functions</span></span>](er-functions-category-text.md)

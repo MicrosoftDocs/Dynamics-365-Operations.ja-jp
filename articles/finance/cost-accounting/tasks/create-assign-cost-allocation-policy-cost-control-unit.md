@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CAMCostAccountingLedgerPolicyAssignment
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
@@ -15,54 +16,54 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a4ba39b5dbba20a58066054da2e24613381cfaa
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 80ec8fed2094025ef31114a229c35bee1cd1033b
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144441"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759331"
 ---
-# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="4416b-103">原価配賦ポリシーの作成と原価管理単位への割り当て</span><span class="sxs-lookup"><span data-stu-id="4416b-103">Create and assign a cost allocation policy to a cost control unit</span></span>
+# <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="82ece-103">原価配賦ポリシーの作成と原価管理単位への割り当て</span><span class="sxs-lookup"><span data-stu-id="82ece-103">Create and assign a cost allocation policy to a cost control unit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4416b-104">原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="4416b-104">Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit.</span></span> <span data-ttu-id="4416b-105">この記録では、USP2 デモ データ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="4416b-105">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="82ece-104">原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="82ece-104">Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit.</span></span> <span data-ttu-id="82ece-105">この記録では、USP2 デモ データ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="82ece-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="create-a-policy"></a><span data-ttu-id="4416b-106">ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="4416b-106">Create a policy</span></span>
-1. <span data-ttu-id="4416b-107">[原価会計] > [ポリシー] > [原価配賦ポリシー] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="4416b-107">Go to Cost accounting > Policies > Cost allocation policies.</span></span>
-2. <span data-ttu-id="4416b-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-108">Click New.</span></span>
-3. <span data-ttu-id="4416b-109">[ポリシー名] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4416b-109">In the Policy name field, type a value.</span></span>
-4. <span data-ttu-id="4416b-110">[原価オブジェクト分析コード階層] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-110">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="4416b-111">[組織] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-111">Select Organization.</span></span>  
-5. <span data-ttu-id="4416b-112">[統計分析コード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-112">In the Statistical dimension field, enter or select a value.</span></span>
-6. <span data-ttu-id="4416b-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-113">Click Save.</span></span>
+## <a name="create-a-policy"></a><span data-ttu-id="82ece-106">ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="82ece-106">Create a policy</span></span>
+1. <span data-ttu-id="82ece-107">[原価会計] > [ポリシー] > [原価配賦ポリシー] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="82ece-107">Go to Cost accounting > Policies > Cost allocation policies.</span></span>
+2. <span data-ttu-id="82ece-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-108">Click New.</span></span>
+3. <span data-ttu-id="82ece-109">[ポリシー名] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="82ece-109">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="82ece-110">[原価オブジェクト分析コード階層] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-110">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="82ece-111">[組織] を選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-111">Select Organization.</span></span>  
+5. <span data-ttu-id="82ece-112">[統計分析コード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-112">In the Statistical dimension field, enter or select a value.</span></span>
+6. <span data-ttu-id="82ece-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-113">Click Save.</span></span>
 
-## <a name="create-allocation-rules"></a><span data-ttu-id="4416b-114">配賦ルールの作成</span><span class="sxs-lookup"><span data-stu-id="4416b-114">Create allocation rules</span></span>
-1. <span data-ttu-id="4416b-115">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-115">Click New.</span></span>
-2. <span data-ttu-id="4416b-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="4416b-116">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="4416b-117">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-117">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-4. <span data-ttu-id="4416b-118">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-118">In the Cost behavior field, select 'Total'.</span></span>
-5. <span data-ttu-id="4416b-119">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-119">In the Allocation base field, enter or select a value.</span></span>
-6. <span data-ttu-id="4416b-120">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-120">Click New.</span></span>
-7. <span data-ttu-id="4416b-121">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="4416b-121">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="4416b-122">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-122">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-9. <span data-ttu-id="4416b-123">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-123">In the Cost behavior field, select 'Total'.</span></span>
-10. <span data-ttu-id="4416b-124">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-124">In the Allocation base field, enter or select a value.</span></span>
-11. <span data-ttu-id="4416b-125">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-125">Click New.</span></span>
-12. <span data-ttu-id="4416b-126">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="4416b-126">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="4416b-127">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-127">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-14. <span data-ttu-id="4416b-128">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-128">In the Cost behavior field, select 'Total'.</span></span>
-15. <span data-ttu-id="4416b-129">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-129">In the Allocation base field, enter or select a value.</span></span>
-    * <span data-ttu-id="4416b-130">すべてのルールを作成するまで、続行します。</span><span class="sxs-lookup"><span data-stu-id="4416b-130">Continue until you've created all the rules.</span></span>  
-16. <span data-ttu-id="4416b-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-131">Click Save.</span></span>
+## <a name="create-allocation-rules"></a><span data-ttu-id="82ece-114">配賦ルールの作成</span><span class="sxs-lookup"><span data-stu-id="82ece-114">Create allocation rules</span></span>
+1. <span data-ttu-id="82ece-115">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-115">Click New.</span></span>
+2. <span data-ttu-id="82ece-116">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="82ece-116">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="82ece-117">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-117">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+4. <span data-ttu-id="82ece-118">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-118">In the Cost behavior field, select 'Total'.</span></span>
+5. <span data-ttu-id="82ece-119">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-119">In the Allocation base field, enter or select a value.</span></span>
+6. <span data-ttu-id="82ece-120">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-120">Click New.</span></span>
+7. <span data-ttu-id="82ece-121">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="82ece-121">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="82ece-122">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-122">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+9. <span data-ttu-id="82ece-123">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-123">In the Cost behavior field, select 'Total'.</span></span>
+10. <span data-ttu-id="82ece-124">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-124">In the Allocation base field, enter or select a value.</span></span>
+11. <span data-ttu-id="82ece-125">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-125">Click New.</span></span>
+12. <span data-ttu-id="82ece-126">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="82ece-126">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="82ece-127">[原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-127">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+14. <span data-ttu-id="82ece-128">[原価動作] フィールドで、[合計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-128">In the Cost behavior field, select 'Total'.</span></span>
+15. <span data-ttu-id="82ece-129">[配賦基準] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-129">In the Allocation base field, enter or select a value.</span></span>
+    * <span data-ttu-id="82ece-130">すべてのルールを作成するまで、続行します。</span><span class="sxs-lookup"><span data-stu-id="82ece-130">Continue until you've created all the rules.</span></span>  
+16. <span data-ttu-id="82ece-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-131">Click Save.</span></span>
 
-## <a name="assign-the-policy-to-a-cost-control-unit"></a><span data-ttu-id="4416b-132">原価管理単位へポリシーを割り当て</span><span class="sxs-lookup"><span data-stu-id="4416b-132">Assign the policy to a cost control unit</span></span>
-1. <span data-ttu-id="4416b-133">原価管理単位の [ポリシーの割り当て] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-133">Click Policy assignments for cost control unit.</span></span>
-2. <span data-ttu-id="4416b-134">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-134">Click New.</span></span>
-3. <span data-ttu-id="4416b-135">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="4416b-135">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="4416b-136">[会計日から有効] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="4416b-136">In the Valid from accounting date field, enter a date.</span></span>
-    * <span data-ttu-id="4416b-137">ルールの日付は有効です。</span><span class="sxs-lookup"><span data-stu-id="4416b-137">The rules are date-effective.</span></span> <span data-ttu-id="4416b-138">新しいバージョンが作成された場合、ユーザーまたはシステムは、そのルールの期限を切ることが可能です。</span><span class="sxs-lookup"><span data-stu-id="4416b-138">A user or the system can expire the rules if a newer version is created.</span></span>  
-5. <span data-ttu-id="4416b-139">[原価管理単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="4416b-139">In the Cost control unit field, enter or select a value.</span></span>
-6. <span data-ttu-id="4416b-140">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4416b-140">Click Save.</span></span>
+## <a name="assign-the-policy-to-a-cost-control-unit"></a><span data-ttu-id="82ece-132">原価管理単位へポリシーを割り当て</span><span class="sxs-lookup"><span data-stu-id="82ece-132">Assign the policy to a cost control unit</span></span>
+1. <span data-ttu-id="82ece-133">原価管理単位の [ポリシーの割り当て] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-133">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="82ece-134">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-134">Click New.</span></span>
+3. <span data-ttu-id="82ece-135">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="82ece-135">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="82ece-136">[会計日から有効] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="82ece-136">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="82ece-137">ルールの日付は有効です。</span><span class="sxs-lookup"><span data-stu-id="82ece-137">The rules are date-effective.</span></span> <span data-ttu-id="82ece-138">新しいバージョンが作成された場合、ユーザーまたはシステムは、そのルールの期限を切ることが可能です。</span><span class="sxs-lookup"><span data-stu-id="82ece-138">A user or the system can expire the rules if a newer version is created.</span></span>  
+5. <span data-ttu-id="82ece-139">[原価管理単位] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="82ece-139">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="82ece-140">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="82ece-140">Click Save.</span></span>
 

@@ -1,9 +1,9 @@
 ---
-title: Lifecycle Services へのコンフィギュレーションの ER アップロード
-description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Lifecycle Services (LCS) にアップロードする方法を説明します。
+title: Lifecycle Services へのコンフィギュレーションのアップロード
+description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143292"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810694"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="a32c8-103">Lifecycle Services へのコンフィギュレーションの ER アップロード</span><span class="sxs-lookup"><span data-stu-id="a32c8-103">ER Upload a configuration into Lifecycle Services</span></span>
+# <a name="upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="ca66b-103">Lifecycle Services へのコンフィギュレーションのアップロード</span><span class="sxs-lookup"><span data-stu-id="ca66b-103">Upload a configuration into Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a32c8-104">次の手順では、システム管理者または電子申告開発者の役割のユーザーが、新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Lifecycle Services (LCS) にアップロードする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="ca66b-104">このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、新しい [電子申告 (ER) コンフィギュレーション](../general-electronic-reporting.md#Configuration) を作成し、Microsoft Dynamics Lifecycle Services (LCS) の [プロジェクト レベルのアセット ライブラリ](../../lifecycle-services/asset-library.md) にアップロードする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-104">This topic explains how a user in the System administrator or Electronic reporting developer role can create a new [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="a32c8-105">この例では、コンフィギュレーションを作成し、それをサンプル会社 Litware, Inc. の LCS にアップロードします。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はすべての会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-105">In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="a32c8-106">この手順を完了するには、まず 「構成プロバイダーを作成し、有効としてマークする」 に記載の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a32c8-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span> <span data-ttu-id="a32c8-107">LCS へのアクセスは、次の手順の完了にも必要です。</span><span class="sxs-lookup"><span data-stu-id="a32c8-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="ca66b-105">この例では、コンフィギュレーションを作成し、それを Litware, Inc. という名前のサンプル会社の LCS にアップロードします。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はどの企業でも完了できます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-105">In this example, you will create a configuration and upload it into LCS for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="ca66b-106">これらの手順を完了するには、まず [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca66b-106">To complete these steps, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).</span></span> <span data-ttu-id="ca66b-107">LCS へのアクセスも必要です。</span><span class="sxs-lookup"><span data-stu-id="ca66b-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="a32c8-108">[組織管理] > [ワークスペース] > [電子申告] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="a32c8-109">「Litware, Inc.」 を選択します</span><span class="sxs-lookup"><span data-stu-id="a32c8-109">Select 'Litware, Inc.'</span></span> <span data-ttu-id="a32c8-110">有効と設定します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-110">and set it as active.</span></span>
-3. <span data-ttu-id="a32c8-111">[コンフィギュレーション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-111">Click Configurations.</span></span>
+1. <span data-ttu-id="ca66b-108">次のロールの 1 つを使用してアプリケーションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="ca66b-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="a32c8-112">新しいデータ モデル コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="a32c8-112">Create a new data model configuration</span></span>
-1. <span data-ttu-id="a32c8-113">[コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-113">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="a32c8-114">電子ドキュメントのサンプル データ モデルを含むコンフィギュレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-114">You will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="a32c8-115">このデータ モデルのコンフィギュレーションは、LCS に後でアップロードされます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-115">This data model configuration will be uploaded into LCS later.</span></span>  
-2. <span data-ttu-id="a32c8-116">[名前] フィールドに、「サンプル モデル コンフィギュレーション」と入力します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-116">In the Name field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="a32c8-117">サンプル モデルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a32c8-117">Sample model configuration</span></span>  
-3. <span data-ttu-id="a32c8-118">[説明] フィールドに、「サンプル モデル コンフィギュレーション」と入力します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-118">In the Description field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="a32c8-119">サンプル モデルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a32c8-119">Sample model configuration</span></span>  
-4. <span data-ttu-id="a32c8-120">[コンフィギュレーションの作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-120">Click Create configuration.</span></span>
-5. <span data-ttu-id="a32c8-121">[モデル デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-121">Click Model designer.</span></span>
-6. <span data-ttu-id="a32c8-122">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-122">Click New.</span></span>
-7. <span data-ttu-id="a32c8-123">[名前] フィールドに、「エントリ ポイント」と入力します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-123">In the Name field, type 'Entry point'.</span></span>
-    * <span data-ttu-id="a32c8-124">エントリ ポイント</span><span class="sxs-lookup"><span data-stu-id="a32c8-124">Entry point</span></span>  
-8. <span data-ttu-id="a32c8-125">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-125">Click Add.</span></span>
-9. <span data-ttu-id="a32c8-126">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-126">Click Save.</span></span>
-10. <span data-ttu-id="a32c8-127">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-127">Close the page.</span></span>
-11. <span data-ttu-id="a32c8-128">[状態の変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-128">Click Change status.</span></span>
-12. <span data-ttu-id="a32c8-129">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-129">Click Complete.</span></span>
-13. <span data-ttu-id="a32c8-130">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-130">Click OK.</span></span>
+    - <span data-ttu-id="ca66b-109">電子申告開発者</span><span class="sxs-lookup"><span data-stu-id="ca66b-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="ca66b-110">システム管理者</span><span class="sxs-lookup"><span data-stu-id="ca66b-110">System administrator</span></span>
 
-## <a name="register-a-new--repository"></a><span data-ttu-id="a32c8-131">新しいリポジトリの登録</span><span class="sxs-lookup"><span data-stu-id="a32c8-131">Register a new  repository</span></span>
-1. <span data-ttu-id="a32c8-132">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-132">Close the page.</span></span>
-2. <span data-ttu-id="a32c8-133">[リポジトリ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-133">Click Repositories.</span></span>
-    * <span data-ttu-id="a32c8-134">これにより、Litware, Inc. のコンフィギュレーション プロバイダーのリポジトリの一覧を開くことができます 。</span><span class="sxs-lookup"><span data-stu-id="a32c8-134">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-3. <span data-ttu-id="a32c8-135">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-135">Click Add to open the drop dialog.</span></span>
-    * <span data-ttu-id="a32c8-136">これにより、新しいリポジトリを追加できるようになります。</span><span class="sxs-lookup"><span data-stu-id="a32c8-136">This allows you to add a new repository.</span></span>  
-4. <span data-ttu-id="a32c8-137">[コンフィギュレーション リポジトリ タイプ] フィールドで [LCS] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-137">In the Configuration repository type field, select LCS.</span></span>
-5. <span data-ttu-id="a32c8-138">[リポジトリの作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-138">Click Create repository.</span></span>
-6. <span data-ttu-id="a32c8-139">[プロジェクト] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-139">In the Project field, enter or select a value.</span></span>
-    * <span data-ttu-id="a32c8-140">必要な LCS プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-140">Select the desired LCS project.</span></span> <span data-ttu-id="a32c8-141">プロジェクトにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a32c8-141">You must have access to the project.</span></span>  
-7. <span data-ttu-id="a32c8-142">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-142">Click OK.</span></span>
-    * <span data-ttu-id="a32c8-143">新しいリポジトリ エントリを完了します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-143">Complete a new repository entry.</span></span>  
-8. <span data-ttu-id="a32c8-144">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-144">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="a32c8-145">[LCS リポジトリ] レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-145">Select the LCS repository record.</span></span>  
-    * <span data-ttu-id="a32c8-146">登録済リポジトリが現行プロバイダーによってマークされていることは、プロバイダーによって所有されているコンフィギュレーションだけがこのリポジトリに配置されること、したがって、選択された LCS プロジェクトにアップロードされることを意味することに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a32c8-146">Note that a registered repository is marked by the current provider meaning that the only configurations owned by that provider can be placed to this repository and, consequently, uploaded into the selected LCS project.</span></span>  
-9. <span data-ttu-id="a32c8-147">[開く] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-147">Click Open.</span></span>
-    * <span data-ttu-id="a32c8-148">ER コンフィギュレーションの一覧を表示するためにリポジトリを開きます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-148">Open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="a32c8-149">ER コンフィギュレーションの共有に、このプロジェクトが使用されていない場合は空になります。</span><span class="sxs-lookup"><span data-stu-id="a32c8-149">It will be empty if this project has not yet been used for ER configurations sharing.</span></span>  
-10. <span data-ttu-id="a32c8-150">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-150">Close the page.</span></span>
-11. <span data-ttu-id="a32c8-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-151">Close the page.</span></span>
+2. <span data-ttu-id="ca66b-111">**組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="ca66b-112">**Litware, Inc.** を選択し、**アクティブ** としてマークします。</span><span class="sxs-lookup"><span data-stu-id="ca66b-112">Select **Litware, Inc.**, and mark it as **Active**.</span></span>
+4. <span data-ttu-id="ca66b-113">**コンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-113">Select **Configurations**.</span></span>
 
-## <a name="upload-configuration-into-lcs"></a><span data-ttu-id="a32c8-152">コンフィギュレーションの LCS へのアップロード</span><span class="sxs-lookup"><span data-stu-id="a32c8-152">Upload configuration into LCS</span></span>
-1. <span data-ttu-id="a32c8-153">[コンフィギュレーション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-153">Click Configurations.</span></span>
-2. <span data-ttu-id="a32c8-154">ツリーで、「サンプル モデル コンフィギュレーション」を選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-154">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="a32c8-155">完了している作成されたコンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-155">Select a created configuration that has been already completed.</span></span>  
-3. <span data-ttu-id="a32c8-156">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-156">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a32c8-157">状態が 「完了済」 となっている選択された構成のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-157">Select the version of the selected configuration with the status of 'Completed'.</span></span>  
-4. <span data-ttu-id="a32c8-158">[状態の変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-158">Click Change status.</span></span>
-5. <span data-ttu-id="a32c8-159">[共有] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-159">Click Share.</span></span>
-    * <span data-ttu-id="a32c8-160">LCS で公開されると、構成の状態は 「完了」 から 「共有」 に変更されます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-160">The configuration status will change from 'Completed' to 'Shared' when it is published in LCS.</span></span>  
-6. <span data-ttu-id="a32c8-161">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-161">Click OK.</span></span>
-7. <span data-ttu-id="a32c8-162">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-162">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a32c8-163">「共有」という状態のコンフィギュレーションのバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="a32c8-163">Select the configuration version with the status of 'Shared'.</span></span>  
-    * <span data-ttu-id="a32c8-164">選択されたバージョンの状態が 「完了」 から 「共有」 に変更されたことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a32c8-164">Note that the status of the selected version has changed from 'Completed' to 'Shared'.</span></span>  
-8. <span data-ttu-id="a32c8-165">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-165">Close the page.</span></span>
-9. <span data-ttu-id="a32c8-166">[リポジトリ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-166">Click Repositories.</span></span>
-    * <span data-ttu-id="a32c8-167">これにより、Litware, Inc. のコンフィギュレーション プロバイダーのリポジトリの一覧を開くことができます 。</span><span class="sxs-lookup"><span data-stu-id="a32c8-167">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-10. <span data-ttu-id="a32c8-168">[開く] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a32c8-168">Click Open.</span></span>
-    * <span data-ttu-id="a32c8-169">LCS リポジトリを選択し、開きます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-169">Select the LCS repository and open it.</span></span>  
-    * <span data-ttu-id="a32c8-170">選択されたコンフィギュレーションが、選択された LCS プロジェクトの資産として表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a32c8-170">Note that the selected configuration is shown as an asset of the selected LCS project.</span></span>  
-    * <span data-ttu-id="a32c8-171">https://lcs.dynamics.com から LCS を開きます。</span><span class="sxs-lookup"><span data-stu-id="a32c8-171">Open LCS using https://lcs.dynamics.com.</span></span> <span data-ttu-id="a32c8-172">リポジトリの登録に以前使用したプロジェクトを開きます。このプロジェクトの 「アセット ライブラリ」 を開き、アセット タイプ「GER 構成」の中身を展開すると、 アップロードされた ER 構成が使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="a32c8-172">Open a project that was used earlier for repository registration, open the 'Asset library' of this project, and expand the content of the 'GER configuration' asset type – the uploaded ER configuration will be available.</span></span> <span data-ttu-id="a32c8-173">プロバイダーがこの LCS プロジェクトにアクセスできる場合に、アップロードされた LCS コンフィギュレーションは、別のインスタンスにインポートできることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a32c8-173">Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.</span></span>  
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="ca66b-114">現在の Dynamics 365 Finance ユーザーが、ER コンフィギュレーションをインポートするために使用される [アセット ライブラリ](../../lifecycle-services/asset-library.md#asset-library-support) を含む LCS プロジェクトのメンバーであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-114">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [Asset library](../../lifecycle-services/asset-library.md#asset-library-support) that is used to import ER configurations.</span></span>
+>
+> <span data-ttu-id="ca66b-115">Finance で使用されているドメインとは異なるドメインを表す ER リポジトリから LCS プロジェクトにアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="ca66b-115">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="ca66b-116">試行すると、LCS プロジェクトの空の一覧が表示され、LCS のプロジェクト レベルのアセット ライブラリから ER コンフィギュレーションをインポートすることはできません。</span><span class="sxs-lookup"><span data-stu-id="ca66b-116">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="ca66b-117">ER コンフィギュレーションのインポートに使用される ER リポジトリからプロジェクト レベルのアセット ライブラリにアクセスするには、現在の Finance インスタンスがプロビジョニングされているテナント (ドメイン) に属するユーザーの資格情報を使用して Finance にサインインします。</span><span class="sxs-lookup"><span data-stu-id="ca66b-117">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
 
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="ca66b-118">新しいデータ モデル コンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="ca66b-118">Create a new data model configuration</span></span>
+
+1. <span data-ttu-id="ca66b-119">**組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-119">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="ca66b-120">**コンフィギュレーション** ページで、**コンフィギュレーションの作成** を選択して、ドロップ ダウンのダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-120">On the **Configurations** page, select **Create configuration** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="ca66b-121">この例では、電子ドキュメントのサンプル データ モデルを含むコンフィギュレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-121">In this example, you will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="ca66b-122">このデータ モデルのコンフィギュレーションは、LCS に後でアップロードされます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-122">This data model configuration will be uploaded into LCS later.</span></span>
+
+3. <span data-ttu-id="ca66b-123">**名前** フィールドに、**サンプル モデル コンフィギュレーション** と入力します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-123">In the **Name** field, enter **Sample model configuration**.</span></span>
+4. <span data-ttu-id="ca66b-124">**説明** フィールドに、**サンプル モデル コンフィギュレーション** と入力します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-124">In the **Description** field, enter **Sample model configuration**.</span></span>
+5. <span data-ttu-id="ca66b-125">**構成の作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-125">Select **Create configuration**.</span></span>
+6. <span data-ttu-id="ca66b-126">**モデル デザイナー** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-126">Select **Model designer**.</span></span>
+7. <span data-ttu-id="ca66b-127">**新規** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-127">Select **New**.</span></span>
+8. <span data-ttu-id="ca66b-128">**名前** フィールドに、**エントリ ポイント** を入力します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-128">In the **Name** field, enter **Entry point**.</span></span>
+9. <span data-ttu-id="ca66b-129">**追加**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-129">Select **Add**.</span></span>
+10. <span data-ttu-id="ca66b-130">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-130">Select **Save**.</span></span>
+11. <span data-ttu-id="ca66b-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-131">Close the page.</span></span>
+12. <span data-ttu-id="ca66b-132">**ステータスの変更**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-132">Select **Change status**.</span></span>
+13. <span data-ttu-id="ca66b-133">**完了**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-133">Select **Complete**.</span></span>
+14. <span data-ttu-id="ca66b-134">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-134">Select **OK**.</span></span>
+15. <span data-ttu-id="ca66b-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-135">Close the page.</span></span>
+
+## <a name="register-a-new-repository"></a><span data-ttu-id="ca66b-136">新しいリポジトリの登録</span><span class="sxs-lookup"><span data-stu-id="ca66b-136">Register a new repository</span></span>
+
+1. <span data-ttu-id="ca66b-137">**組織管理  \> ワークスペース \> 電子申告** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-137">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="ca66b-138">**コンフィギュレーション プロバイダー** セクションで、**Litware, Inc.** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-138">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="ca66b-139">**Litware, Inc.** タイルで **リポジトリ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-139">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="ca66b-140">これで、Litware, Inc. のコンフィギュレーション プロバイダーのリポジトリの一覧を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-140">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="ca66b-141">**追加** をクリックして、ドロップダウン ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-141">Select **Add** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="ca66b-142">新しいリポジトリを追加できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="ca66b-142">You can now add a new repository.</span></span>
+
+5. <span data-ttu-id="ca66b-143">**コンフィギュレーション リポジトリ入力** フィールドに、**LCS** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-143">In the **Configuration repository enter** field, select **LCS**.</span></span>
+6. <span data-ttu-id="ca66b-144">**レポジトリを作成**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-144">Select **Create repository**.</span></span>
+7. <span data-ttu-id="ca66b-145">**プロジェクト** フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-145">In the **Project** field, enter or select a value.</span></span>
+
+    <span data-ttu-id="ca66b-146">この例の場合、目的の LCS プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-146">For this example, select the desired LCS project.</span></span> <span data-ttu-id="ca66b-147">プロジェクトに [アクセス](#accessconditions) できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca66b-147">You must have [access](#accessconditions) to the project.</span></span>
+
+8. <span data-ttu-id="ca66b-148">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-148">Select **OK**.</span></span>
+
+    <span data-ttu-id="ca66b-149">新しいリポジトリ エントリを完了します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-149">Complete a new repository entry.</span></span>
+
+9. <span data-ttu-id="ca66b-150">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="ca66b-150">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="ca66b-151">この例の場合、**LCS** リポジトリ レコードを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-151">For this example, select the **LCS** repository record.</span></span>
+
+    <span data-ttu-id="ca66b-152">登録されているリポジトリが現在のプロバイダーによってマークされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-152">Note that a registered repository is marked by the current provider.</span></span> <span data-ttu-id="ca66b-153">つまり、そのプロバイダーが所有するコンフィギュレーションのみをこのリポジトリに配置し、選択した LCS プロジェクトにアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-153">In other words, only configurations that are owned by that provider can be put in this repository and therefore uploaded into the selected LCS project.</span></span>
+
+10. <span data-ttu-id="ca66b-154">**開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-154">Select **Open**.</span></span>
+
+    <span data-ttu-id="ca66b-155">ER コンフィギュレーションの一覧を表示するためにリポジトリを開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-155">You open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="ca66b-156">選択したプロジェクトが ER コンフィギュレーションの共有に使用されていない場合、一覧は空になります。</span><span class="sxs-lookup"><span data-stu-id="ca66b-156">If the selected project hasn't yet been used for ER configurations sharing, the list will be empty.</span></span>
+
+11. <span data-ttu-id="ca66b-157">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-157">Close the page.</span></span>
+12. <span data-ttu-id="ca66b-158">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-158">Close the page.</span></span>
+
+## <a name="upload-a-configuration-into-lcs"></a><span data-ttu-id="ca66b-159">LC へコンフィギュレーションをアップロードする</span><span class="sxs-lookup"><span data-stu-id="ca66b-159">Upload a configuration into LCS</span></span>
+
+1. <span data-ttu-id="ca66b-160">**組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-160">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="ca66b-161">**コンフィギュレーション** ページのコンフィギュレーション ツリーで、**サンプル モデルのコンフィギュレーション** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-161">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="ca66b-162">すでに完了している作成済みのコンフィギュレーションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca66b-162">You must select a created configuration that has been already completed.</span></span>
+
+3. <span data-ttu-id="ca66b-163">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-163">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="ca66b-164">この例の場合、状態が **完了** となっている選択したコンフィギュレーションのバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-164">For this example, select the version of the selected configuration that has a status of **Completed**.</span></span>
+
+4. <span data-ttu-id="ca66b-165">**ステータスの変更**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-165">Select **Change status**.</span></span>
+5. <span data-ttu-id="ca66b-166">**共有** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-166">Select **Share**.</span></span>
+
+    <span data-ttu-id="ca66b-167">コンフィギュレーションが LCS で公開されると、コンフィギュレーションの状態が **完了** から **共有** に変更されます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-167">The status of the configuration is changed from **Completed** to **Shared** when the configuration is published in LCS.</span></span>
+
+6. <span data-ttu-id="ca66b-168">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-168">Select **OK**.</span></span>
+7. <span data-ttu-id="ca66b-169">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-169">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="ca66b-170">この例の場合、状態が **共有** となっているコンフィギュレーションのバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-170">For this example, select the configuration version that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="ca66b-171">選択したバージョンの状態が **完了** から **共有** に変更されたことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ca66b-171">Note that the status of the selected version was changed from **Completed** to **Shared**.</span></span>
+
+8. <span data-ttu-id="ca66b-172">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-172">Close the page.</span></span>
+9. <span data-ttu-id="ca66b-173">**リポジトリ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-173">Select **Repositories**.</span></span>
+
+    <span data-ttu-id="ca66b-174">これで、Litware, Inc. のコンフィギュレーション プロバイダーのリポジトリの一覧を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-174">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+10. <span data-ttu-id="ca66b-175">**開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-175">Select **Open**.</span></span>
+
+    <span data-ttu-id="ca66b-176">この例では、**LCS** リポジトリを選択して開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-176">For this example, select the **LCS** repository, and open it.</span></span>
+
+    <span data-ttu-id="ca66b-177">選択したコンフィギュレーションが、選択した LCS プロジェクトのアセットとして表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-177">Notice that the selected configuration is shown as an asset of the selected LCS project.</span></span>
+
+11. <span data-ttu-id="ca66b-178"><https://lcs.dynamics.com> に移動して LCS を開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-178">Open LCS by going to <https://lcs.dynamics.com>.</span></span>
+12. <span data-ttu-id="ca66b-179">以前にリポジトリの登録に使用したプロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-179">Open a project that was used earlier for repository registration.</span></span>
+13. <span data-ttu-id="ca66b-180">プロジェクトのアセット ライブラリを開きます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-180">Open the Asset library of the project.</span></span>
+14. <span data-ttu-id="ca66b-181">**GER コンフィギュレーション** アセット タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="ca66b-181">Select the **GER configuration** asset type.</span></span>
+
+    <span data-ttu-id="ca66b-182">アップロードした ER コンフィギュレーションがリストされます。</span><span class="sxs-lookup"><span data-stu-id="ca66b-182">The ER configuration that you uploaded should be listed.</span></span>
+
+    <span data-ttu-id="ca66b-183">プロバイダーがこの LCS プロジェクトにアクセスできる場合に、アップロードされた LCS コンフィギュレーションは、別のインスタンスにインポートできることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ca66b-183">Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.</span></span>
