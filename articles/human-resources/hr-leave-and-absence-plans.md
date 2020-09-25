@@ -3,7 +3,7 @@ title: 休暇および欠勤計画の作成
 description: Dynamics 365 Human Resources で、さまざまなタイプの休暇に対して休暇計画を作成します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428712"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796500"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>休暇および欠勤計画の作成
 
@@ -43,7 +43,15 @@ Dynamics 365 Human Resources で、提供する休暇のタイプごとに休暇
 
 2. **詳細**で、計画に対する**名前**、**開始日**、**説明**、および**休暇タイプ**を入力します。
 
-機能 **単一の休暇および欠勤計画に複数の休暇タイプを構成する** が有効になっている場合、休暇タイプは **詳細** ではなく、**見越計上スケジュール** で構成されます。 見越計上スケジュール テーブルの各レコードに対して、休暇タイプを定義できます。
+機能 **単一の休暇および欠勤計画に複数の休暇タイプを構成する** が有効になっている場合、休暇タイプは **詳細** ではなく、**見越計上スケジュール** で構成されます。 見越計上スケジュール テーブルの各レコードに対して、休暇タイプを定義できます。 また、この機能を有効にすると、エンティティを使用する必要がある統合やその他のシナリオで、新しいデータ エンティティを使用する必要があります。 
+
+新しいエンティティは次のとおりです:
+
+- 休暇の銀行トランザクション V2
+- 休暇の登録 V2
+- 休暇計画層 V2
+- 休暇計画 V2
+- 休暇申請 V2
 
  > [!IMPORTANT]
    > この機能を有効にしたら、オフにすることはできません。

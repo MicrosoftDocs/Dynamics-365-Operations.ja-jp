@@ -1,6 +1,6 @@
 ---
-title: メンテナンス ダウンタイム
-description: このトピックでは、資産管理におけるメンテナンス ダウンタイムについて説明します。
+title: メンテナンス ダウンタイム活動
+description: このトピックは、メンテナンス ダウンタイムが、特定の期間、特定の資産に対してメンテナンス ジョブを実行するために必要な能力の概要を取得するために使用される方法について説明します。
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383530"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802824"
 ---
-# <a name="maintenance-downtime"></a>メンテナンス ダウンタイム
+# <a name="maintenance-downtime-activities"></a>メンテナンス ダウンタイム活動
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 メンテナンス ダウンタイムは、特定の期間、特定の資産に対してメンテナンス ジョブを実行するために必要な能力の概要を取得するために使用されます。 たとえば、生産サイト 02 の生産 Hall 29-A の生産ライン 10 に対して、メンテナンス ダウンタイム登録を作成することができます。 メンテナンス ダウンタイムの登録には、メンテナンスによる停止に関係する資産が生産を行えなくなる期間を示す開始時刻と終了時刻が含まれます。
 
@@ -79,7 +77,7 @@ ms.locfileid: "3383530"
 
 ![図 3](media/21-preventive-maintenance.png)
 
-11. 最大能力負荷の概要を取得した後、作業指示書のメンテナンス作業またはメンテナンス スケジュール明細行に対して調整を行う場合、**メンテナンス ダウンタイム アクティビティ**の詳細表示に戻り、**結果としての作業指示書のメンテナンス作業**および**メンテナンス スケジュール明細行**クイック タブを選択します。
+11. 最大キャパシティ負荷の概要を取得した後、作業指示書のメンテナンス作業またはメンテナンス スケジュール明細行に対して調整を行う場合、**メンテナンス ダウンタイム アクティビティ** の詳細表示に戻り、**結果としての作業指示書のメンテナンス作業** および **メンテナンス スケジュール明細行** クイック タブで調節する明細行を選択します。
 
 12. **調整**ボタンをクリックして、選択した作業指示書メンテナンス作業またはメンテナンス スケジュール明細行の開始予定日、終了予定日、サービス レベル、またはメンテナンス担当作業者を更新します。
 

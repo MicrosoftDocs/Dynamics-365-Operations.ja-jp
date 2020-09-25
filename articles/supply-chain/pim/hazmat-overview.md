@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 227111f4703d9dc381270382dcb796874d7de937
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699633"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802752"
 ---
 # <a name="hazardous-materials-overview"></a>危険物の概要
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 送料と配送の規制を維持するには、危険商品として分類された材料を出荷する組織には、その出荷を伴う追加の書類を含める必要があります。 危険物機能により、顧客はリリースされた品目に関する情報を保存することができます。 この情報は、船積書類を準備するために使用できます。 危険な商品を出荷する組織には、出荷プロセスを管理するための独自のプロセスと手順が必要です。 Microsoft Dynamics 365 Supply Chain Managementは、必要なドキュメントの生成を支援するためのツールでしかありません。
 

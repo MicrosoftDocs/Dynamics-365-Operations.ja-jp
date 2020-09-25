@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d34904571ee6de8b36a0840a9470f16858489163
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e1871ee41267c2c0e8b35007a47c9601079f05d7
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042147"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745252"
 ---
-# <a name="ENUMERATE">ENUMERATE ER 関数</a>
+# <a name="enumerate-er-function"></a>ENUMERATE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ ENUMERATE (list)
 返される列挙されたレコードのリストによって、次の追加の要素が公開されます。
 
 - フィールドのレコード (**値**コンポーネント)
-- 現在のレコード インデックス (**番号 **コンポーネント)
+- 現在のレコード インデックス (**番号** コンポーネント)
 
 ## <a name="example"></a>例
 

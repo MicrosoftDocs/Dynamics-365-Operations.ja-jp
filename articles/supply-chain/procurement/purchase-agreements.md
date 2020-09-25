@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208020"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803166"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。 
 
@@ -42,8 +41,13 @@ ms.locfileid: "3208020"
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>購買契約の担当作業者
 
-購買契約書の分類における主要な担当者および二次担当者を識別できます。 これらの値は、結果としての購買契約によって継承されます。 担当作業者を購買契約書に追加する必要はなく、購買契約書自体に基づいて、ケースごとに直接変更することができます。 二次担当作業者は必要ではありませんが、主要な担当作業者なしに二次担当作業者を指定することは出来ません。 同じ作業者を、主要な、また二次担当作業者の両方に指定することはできません。 
+購買契約書の分類における主要な担当者および二次担当者を識別できます。 これらの値は、結果としての購買契約によって継承されます。 担当作業者を購買契約書に追加する必要はなく、購買契約書自体に基づいて、ケースごとに直接変更することができます。 二次担当作業者は必要ではありませんが、主要な担当作業者なしに二次担当作業者を指定することは出来ません。 同じ作業者を、主要な、また二次担当作業者の両方に指定することはできません。
 
+> [!IMPORTANT]
+> 責任者の機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+> 
+> - **モジュール:** *調達*
+> - **機能名:** *購買契約の責任者*
 
 ## <a name="commitment-types"></a>確約のタイプ
 購買契約書の各行は、購入確約を示します。 複数の発注書 (PO) の行を使用して確約を履行することができます。 確約には次の 4 つのタイプがあります。
