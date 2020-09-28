@@ -3,7 +3,7 @@ title: チーム カレンダーの作成
 description: Dynamics 365 Human Resources でチームのカレンダーを表示および作成します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712211"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796472"
 ---
 # <a name="view-team-and-company-calendars"></a>チームおよび会社のカレンダーの表示
 
@@ -50,6 +50,22 @@ Dynamics 365 Human Resources でチームおよび会社のカレンダーを表
 2. **休暇カレンダー**を選択します。
 
 人事管理ロールは、**休暇および欠勤申請**、**承認済休暇**、および **休暇申請** から会社のカレンダーにアクセスすることもできます。 
+
+[!include [banner](includes/preview-feature.md)]
+
+カレンダーには、追加のフィルターとオプションが含まれています。 すべてのカレンダーには、次の表示オプションがあります:
+
+- 承認済の申請
+- 保留中の要求数
+- 休暇申請のある従業員
+- 休暇申請のない従業員
+- 従業員の誕生日
+- 休暇申請 
+- 休暇申請
+
+休暇および欠勤パラメータのカレンダー コンフィギュレーションは、使用可能な表示オプションを決定します。
+
+また、 マネージャーまたは部門でカレンダーをフィルター処理することもできます。 基本職位の割り当てによって、これらのフィルターが設定されたときに表示される従業員が決定します。 
 
 カレンダー設定の詳細については、[カレンダー パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md?configure-calendar-parameters) を参照してください。
 

@@ -3,7 +3,7 @@ title: Dynamics 365 Finance 10.0.13 (2020 年 10 月) の新機能または変�
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.13 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f41eac2dfc15cf006f3f200ca66ce83ba7f1057e
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: c120882615eaf17ae95f934cab110fa7af421cf7
+ms.sourcegitcommit: 30e4dc0a45f7de5f0a7178b1e88f7c3d61a7395e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652201"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763689"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10013-october-2020"></a>Dynamics 365 Finance 10.0.13 の機能のプレビュー (2020 年 10 月)
 
@@ -51,7 +51,7 @@ ms.locfileid: "3652201"
  ### <a name="public-sector"></a>公的機関
  - [交付金に関する A-133 サーキュラー レポート (SEFA)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/a-133-circular-report-grants-sefa)
  - [Schedule of Expenditures of Federal Awards の照会](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/schedule-expenditures-federal-awards-inquiry)
- - [1099 の既定値を主勘定に関連付ける](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account)
+
  
 ### <a name="globalization-features"></a>グローバリゼーション機能
 

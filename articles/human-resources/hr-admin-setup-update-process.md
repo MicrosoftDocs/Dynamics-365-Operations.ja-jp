@@ -3,7 +3,7 @@ title: 更新プロセス
 description: Microsoft Dynamics 365 Human Resources は、アプリケーションとプラットフォームの変更のための、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431179"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759962"
 ---
 # <a name="update-process"></a>更新プロセス
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 更新はすべての環境に対して一定の調子でリリースされます。 人事管理は、[Microsoft Lifecycle ポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)に従ってサポートされていて、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。
 
-## <a name="release-cadence"></a>リリースの頻度
+## <a name="release-cadence"></a>リリースの頻度 
 
 人事管理の更新は、すべての環境に自動的に適用されます。 人事管理には次の 2 つの種類のリリースがあります:
 
@@ -56,14 +56,12 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 ## <a name="release-cadence-exceptions-in-2020"></a>2020 年のリリース 間隔の例外
 
-次の日付は、通常のリリース スケジュールに対する例外です:
+休日を考慮した、2020 年 11 月と 12 月のリリース スケジュールは次のとおりです:
 
-| 日 | 説明 |
-| --- | --- |
-| 11 月 23 日の週 | 更新なし |
-| 12 月 14 日の週 | マイナー更新のみ |
-| 12 月 21 日の週 | 更新なし |
-| 12 月 28 日の週 | 更新なし |
+- 11 月リリース: 11 月 2 日 - 11 月 13 日
+- 12 月リリース: 11 月 30 日 - 12 月 11 日
+ 
+2 週間のリリース頻度は、2021 年 1 月 11 日に通常どおり再開します。
 
 ## <a name="communications"></a>通信
 

@@ -15,18 +15,26 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: fd234c57bf9893e9b8bcfa5ada7439a642f7a288
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: d0d93a02817bab8e188818862c1bb7f84b498fc1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596250"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802800"
 ---
 # <a name="country-of-origin"></a>原産国
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 原産国機能を使用すると、製品を原産国にリンクさせ、製品の認証を追跡することができます。
+
+## <a name="turn-on-the-country-of-origin-feature"></a>原産国機能を有効にする
+
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+
+- **モジュール :** *製品情報管理*
+- **機能名 :** *原産国管理機能*
 
 ## <a name="configure-source-and-destination-countries"></a>送信元と送信先の国を構成する
 

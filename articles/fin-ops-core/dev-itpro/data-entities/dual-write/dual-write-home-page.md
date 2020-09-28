@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae6e72dff01e3d63130f35297f2d80bd0342dc32
-ms.sourcegitcommit: d62e52484dfd9913a75a4561766d5e22fe2f3e8b
+ms.openlocfilehash: e44c7f5455e55484482f5494234db67adc0779af
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3689474"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775161"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -35,7 +35,9 @@ ms.locfileid: "3689474"
 + [二重書き込みとは何ですか?](dual-write-overview.md)
 
     - [二重書き込みを使用する主な理由](dual-write-overview.md#top-reasons-to-use-dual-write)
-    - [二重書き込みは、顧客関係管理製品のユーザーと設計者に取って何を意味しますか?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
+    - [二重書き込みは、Customer Engagement アプリの開発者と設計者に取って何を意味しますか?](dual-write-overview.md#developer-architect)
+    
++ [二重書き込みの新機能および変更された機能](whats-new-dual-write.md)
     
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 

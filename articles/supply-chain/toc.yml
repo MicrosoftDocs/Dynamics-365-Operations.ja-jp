@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (2020 年 11 月)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (2020 年 10 月)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (2020 年 8 月)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (2020 年 7 月)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: メンテナンス チェックリスト
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: メンテナンス ダウンタイム
+                - name: 作業指示書のメンテナンス ダウンタイム
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: 作業指示書へのエラーの追加
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -341,7 +341,7 @@
                   href: asset-management/work-orders/work-order-report.md
                 - name: 作業指示書プール
                   href: asset-management/work-orders/work-order-pools.md
-                - name: 有効な作業指示書のメンテナンス作業
+                - name: 有効な作業指示書メンテナンス作業
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: 作業指示書と固定資産
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: 作業指示書の作成
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: メンテナンス ダウンタイム
+                - name: メンテナンス ダウンタイム活動
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: 能力計画
               items:
@@ -1059,7 +1059,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 生成された出力からの情報を使用して棚卸および集計を行うための ER 形式を設計する
+            - name: 生成された出力からの情報を使用して棚卸および集計を行うための電子申告形式を設計する
               items:
                 - name: 棚卸および集計を行うための形式を作成する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
@@ -1115,7 +1115,7 @@
                   items:
                     - name: オプションの属性を使用して XML 形式でファイルをインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
+                    - name: オプションの属性を含む XML 形式のファイルをインポートするための電子申告形式を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
             - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
@@ -1185,7 +1185,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 行先のコンフィギュレーション
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER 形式への参照の設定
+                - name: 電子申告形式への参照の設定
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 生成されたレポートの自動検証
                   items:
@@ -1201,7 +1201,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ビジネス ドキュメントの管理
                   items:
@@ -1345,8 +1345,6 @@
               items:
                 - name: 計画最適化の概要
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: マイナスの手持在庫数量を使用した計画
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: 計画最適化の開始
                   href: master-planning/planning-optimization/get-started.md
                 - name: 計画最適化適合分析
@@ -1355,16 +1353,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: 購買の売買契約を使用したマスター プラン
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: 計画履歴と計画ログの表示
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: 安全マージン
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: 計画オーダーの承認
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: 計画最適化の自動確定
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: マイナスの手持在庫数量を使用した計画
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: 計画履歴と計画ログの表示
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: 計画ジョブのキャンセル
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: 計画最適化の拡張機能
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: 計画最適化のトラブルシューティング
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: 計画最適化の拡張機能
+                  href: master-planning/planning-optimization/extensibility.md
             - name: マスター プラン
               items:
                 - name: マスター プランの概要
@@ -2621,6 +2625,8 @@
                   items:
                     - name: クラスター ピッキングの設定
                       href: warehousing/set-up-cluster-picking.md
+                    - name: クラスター位置フル
+                      href: warehousing/cluster-position-full.md
                     - name: システム主導のクラスター ピッキング
                       href: warehousing/system-directed-cluster-pick.md
                     - name: コンテナー詰めの設定

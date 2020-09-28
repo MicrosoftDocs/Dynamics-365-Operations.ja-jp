@@ -3,7 +3,7 @@ title: お気に入りの追加
 description: このトピックでは、サイトにお気に入りを追加する方法について説明します。
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761156"
 ---
 # <a name="add-a-favicon"></a>お気に入りの追加
 
@@ -58,30 +58,30 @@ ms.locfileid: "3686793"
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>お気に入りのメタタグを含むページ フラグメントを作成します。
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>お気に入りのメタタグを含むフラグメントを作成する
 
-お気に入りのメタタグを含むページ フラグメントを作成するには、次の手順に従ってください。
+お気に入りのメタタグを含むフラグメントを作成するには、次の手順に従ってください。
 
 1. **フラグメント** に移動し、**新規** を選択します。
-1. **新規ページ フラグメント** ダイアログボ ックスで、ページ フラグメントの基になるモジュールとして **メタタグ** を選択します。
-1. ページ フラグメントの名前を入力し、**OK** を選択します。
+1. **新規ページ フラグメント** ダイアログボ ックスで、ページ フラグメントの基になるモジュールに **メタタグ** を選択します。
+1. フラグメントの名前を入力し、**OK** を選択します。
 1. フラグメント階層ツリーで、**既定のメタタグ** 子を選択し ます。
 1. 右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。 
-1. **編集の完了** を選択し、 **発行** を選択してページ フラグメントを公開します。
+1. **編集の完了** を選択し、 **発行** を選択してフラグメントを公開します。
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>ページの HTML の head セクションにメタタグのページ フラグメントを追加する
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>ページの HTML 内の head セクションにメタタグのページ フラグメントを追加する
 
-ページの HTML の **head** セクションにメタタグのページ フラグメントを追加するには、次の手順に従ってください。
+ページの HTML 内の **head** セクションにメタタグのページ フラグメントを追加するには、次の手順に従ってください。
 
 1. **テンプレート** に移動して、お気に入りを追加するページのテンプレートを開き、続いて **編集** を開きます。
-1. テンプレート階層ツリーで、**HTML head** コンテナーの右にある省略符号 (**...**) ボタンを選択し、 **ページ フラグメントの追加** を選択します。
-1. **新規ページ フラグメント** ダイアログ ボックスで、以前に作成した メタタグ ページ フラグメントを選択し、**OK** を選択します。
+1. テンプレート階層ツリーで、**HTML head** コンテナーの右にある省略符号 (**...**) ボタンを選択し、 **フラグメントの追加** を選択します。
+1. **フラグメントの選択** ダイアログ ボックスで、以前に作成した メタタグ フラグメントを選択し、**OK** を選択します。
 1. **編集の完了** を選択し、 **発行** を選択してテンプレートを公開します。
 
 > [!NOTE]
-> サイトで複数のテンプレートを使用している場合は、メタタグのページ フラグメントをすべてのテンプレートに追加する必要があります。
+> サイトで複数のテンプレートを使用している場合は、メタタグのラグメントをすべてのテンプレートに追加する必要があります。
 
-メタタグ ページ フラグメントを追加したテンプレートに基づくページをプレビューすると、[ブラウザー] タブにお気に入りが表示されます。
+メタタグ フラグメントを追加したテンプレートに基づくページをプレビューすると、[ブラウザー] タブにお気に入りが表示されます。
 
 ## <a name="additional-resources"></a>追加リソース
 

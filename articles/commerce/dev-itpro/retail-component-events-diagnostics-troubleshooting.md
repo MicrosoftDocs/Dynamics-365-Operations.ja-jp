@@ -1,9 +1,9 @@
 ---
-title: 診断とトラブルシューティングの Retail コンポーネント イベント
-description: 診断とトラブルシューティングを有効にするため、Retail Modern POS などのクライアントを含むすべてのコマース コンポーネントと Commerce Scale Unit などのサーバー コンポーネントは、イベントをイベント ビューアー (または Retail Cloud POS の場合はブラウザー開発ツール コンソール) にローカルで記録します。 この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。
+title: 診断とトラブルシューティングの Commerce コンポーネント イベント
+description: このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,30 +18,31 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9424cba2170f1af619fe0197f710ef40a001059d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4d190b3982f82a5a457c79a25d223ecf0b6266bf
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004645"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775135"
 ---
-# <a name="retail-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Retail コンポーネント イベント
+# <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
 [!include [banner](../includes/banner.md)]
 
-診断とトラブルシューティングを有効にするため、Retail Modern POS などのクライアントを含むすべてのコマース コンポーネントと Commerce Scale Unit などのサーバー コンポーネントは、イベントをイベント ビューアー (または Retail Cloud POS の場合はブラウザー開発ツール コンソール) にローカルで記録します。 この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。
+このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。 診断とトラブルシューティングを有効にするには、Retail Modern POS などのセルフホスト型のコンポーネントを含むすべての Commerce コンポーネントと Commerce Scale Unit や e コマース モジュールなどのクラウド ホスト型コンポーネントは、それらのイベントにイベント ビューアー (または Retail Cloud F12 などのブラウザー開発ツール コンソール) にローカルでログします。 イベントは、Microsoft Dynamics Lifecycle Services (LCS) ログ検索エクスペリエンスにも記録されます。
+
 
 <a name="viewing-events-in-event-viewer"></a>イベント ビューアーでのイベントの表示
 ------------------------------
 
 イベントがログされるコンピューターに対して物理的にアクセスできる場合、イベント ビューアーを使用して、Microsoft Windows を実行するコンピューター上にインストールされたコンポーネント用イベントを表示することができます。 イベント ビューアーの詳細については、TechNet の [イベント ビューアー](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) を参照してください。 また、イベント ビューアーを使用して、ユーザーがアクセス権を持つコンピューターからリモートでイベントを表示することができます。 イベント ビューアーを使用して、リモートでイベントを表示する方法の詳細については、TechNet の [リモート コンピューターでイベント ログを使用](https://technet.microsoft.com/library/cc766438.aspx) を参照してください。 イベント ビューアは通常、次の使用例でのトラブルシューティングに使用されます。
 
--   開発者トポロジまたはイベント ビューアーへのアクセスを提供するダウンロード可能な仮想ハードディスク (VHD) での開発
--   会議室パイロットを実行していて、そのコンピューティングのイベント ビューアにアクセスできるときのクライアント コンポーネント
+-   開発者トポロジまたはイベント ビューアーへのアクセスを提供するダウンロード可能な仮想ハードディスク (VHD) での開発。
+-   会議室パイロットを実行していて、そのコンピューターのイベント ビューアにアクセスできるときのクライアント コンポーネント。
 
-ただし、ほとんどの場合、特にコンピューターのイベント ビューアーへのアクセスがない場合、Microsoft Dynamics Lifecycle Services (LCS) でログ検索を使用できます。 ログ検索については、この記事の後半で説明します。 このセクションは、次のコンポーネントに適用されます。
+ただし、ほとんどの場合、特にコンピューターのイベント ビューアーへのアクセスがない場合、LCS でログ検索を使用できます。 E コマース モジュールに対しては、イベントは現在のところ、ブラウザ開発者ツール (F12キーなど) でのみ使用できます。 ログ検索については、このトピックの後半で説明します。 このセクションは、次のコンポーネントに適用されます。
 
--   コマース スケール ユニット
+-   Commerce Scale Unit
 -   Retail Modern POS
 -   Retail ハードウェア ステーション
 
@@ -66,13 +67,13 @@ ms.locfileid: "3004645"
 [![デバッグ ログのショートカットメニューでログ コマンドを有効化](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
 
 ## <a name="viewing-events-by-using-the-f12-browser-developer-tools-console"></a>(F12) ブラウザー開発者ツール コンソールを使用してイベントを表示
-Retail Cloud POS はブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、MSDN の [コンソールを使用してエラーとデバッグを表示する](https://msdn.microsoft.com/library/dn255006(v=vs.85).aspx) を参照してください。 Retail Cloud POS のブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
+Retail Cloud POS と e コマース モジュールはブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、[コンソールを使用してエラーとデバッグを表示する](https://docs.microsoft.com/microsoft-edge/devtools-guide/console) を参照してください。 Retail Cloud POS または e コマース モジュールのブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
 
 ### <a name="view-events-in-the-browser-developer-tools-console"></a>ブラウザー開発者ツール コンソールでのイベントの表示
 
-1.  Internet Explorer または Microsoft Edge を開始し、Retail クラウド POS に移動します。
+1.  ブラウザーを起動し、Retail Cloud POS または e コマースの Web サイトに移動します。
 2.  F12 キーを押し、**コンソール** タブをクリックします。
-3.  Retail Cloud POS の操作を実行する際に、イベントはコンソールに記録されます。 イベント重要度でフィルター処理して、異なる重要度レベルのイベントを表示することができます。
+3.  Retail Cloud POS または e コマース Web サイトの操作を実行する際に、イベントはコンソールに記録されます。 イベント重要度でフィルター処理して、異なる重要度レベルのイベントを表示することができます。
 
 [![ブラウザー開発者ツールのコンソール タブ](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
@@ -165,5 +166,24 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 
 [![環境監視ページの検索結果](./media/log-search-results.png)](./media/log-search-results.png)
 
+### <a name="e-commerce-events"></a>E コマース イベント
+次のイベントは、e コマース Web サイトによって記録され、トラブルシューティングに直接ブラウザーで、または分析、実験、またはその他の目的でパートナー拡張機能を使用してプログラムで処理できます。
 
+### <a name="button-and-link-clicks"></a>ボタンとリンクのクリック
+ボタンとリンクのクリックにより、E コマース Web サイト上の次のタイプの要素がテレメトリイベントとして記録されます。
 
+- 表題
+  - ナビゲーション階層
+  - カート アイコン
+  - サインイン
+  - 検索アイコン
+  - Wishlist アイコン
+- コンテンツ ブロック アクション リンク (これは、マーケティング コンテンツ用のヒーロー、タイル、およびフィーチャー の内容を表します)
+- ビデオ プレーヤー
+- 製品カード
+- フッター リンク
+- 階層リンク
+- 広告バナー
+- カートに追加ボタン
+- チェックアウト ボタン
+- 注文する ボタン

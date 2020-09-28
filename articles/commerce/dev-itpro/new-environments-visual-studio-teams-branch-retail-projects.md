@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 52a220978cf7535117fe7eb72620e9b89f2b4a54
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 37b5a1897beeacfe0bd891bfbb33788d5c119e6d
+ms.sourcegitcommit: 164de749f394a133f223c526aa0c46bf922d1ea8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554289"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3770026"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-commerce-projects"></a>コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -95,9 +95,7 @@ Microsoft Dynamics 365 Commerce プロジェクトでは、ほとんどの環境
 >
 > ブランチを使用すると、チームや個人が並行して作業できるため、個々のソフトウェア資産の分離とコントロールが向上し、生産性が増します。 ただし、分岐を使用すると、後で分岐全体を再構成する必要があるため、マージ アクティビティの増加も必要になり、そのためリスクも増加します。
 
-実装プロジェクトのデリバリーの詳細については、 [Dynamics 365 for Operations を使用した継続的な配信 (video)](https://mbspartner.microsoft.com/D365/Videos/101393) をご覧ください。
-
-分岐を作成するうえで、唯一の最良な戦略はありません。 ストラテジーは、プロジェクト、および実装のサイズによって異なります。 Joris De Gruyter が上記のビデオで述べているアプローチは成功したメソッドです。
+分岐を作成するうえで、唯一の最良な戦略はありません。 ストラテジーは、プロジェクト、および実装のサイズによって異なります。 
 
 次の図は、3 つのコード ブランチを示しています: Dev、Main、および ProdRel1。 数字は、セットアップの順序を示します。
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651960"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801461"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 
@@ -41,10 +41,10 @@ ms.locfileid: "3651960"
 - [追加の場所ゾーン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [資産管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - 詳細については [資産管理の概要](../asset-management/index.md)を参照してください。
 - [作業のキャンセル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - 詳細については、[例外処理のための倉庫作業のキャンセル](../warehousing/cancel-warehouse-work.md)を参照してください。
-- [作業での作業プールの変更](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [クラスター位置フル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [確認および転送](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [場所のディレクティブ在庫ピッキング エイジング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [作業での作業プールの変更](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - 詳細については、[作業のワークプールの変更](../warehousing/change-work-pool-on-work.md) を参照してください。
+- [クラスターの位置フル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - 詳細については、[クラスターの位置フル](../warehousing/cluster-position-full.md) を参照してください。
+- [確認および転送](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - 詳細については、[確認して転送](../warehousing/confirm-and-transfer.md) を参照してください。
+- [場所のディレクティブ在庫ピッキング エイジング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - 詳細については、[場所ディレクティブ在庫ピッキング エージング](../warehousing/location-directive-inventory-picking-aging.md) を参照してください。
 - [場所の状況](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [ピッキング行のグループ化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - 詳細については、[ピッキング行のグループ化](../warehousing/pick-line-grouping.md)を参照してください。
 - [出荷の自動更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - 詳細については[出荷の自動更新](../warehousing/auto-update-shipment.md)を参照してください。
@@ -54,9 +54,9 @@ ms.locfileid: "3651960"
 - [RSAT を使用したウェアハウス アプリ タスク検証](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [倉庫リリース ルール](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [ウェーブ ステータスの視覚化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [ウェーブ テンプレートのグループ化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [作業ラインの詳細](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - 詳細については、[作業ラインの詳細](https://www.microsoft.com/videoplayer/embed/RE4fcYN)のビデオを参照してください。
-- [ゾーンしきい値の補充](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [ウェーブ テンプレートのグループ化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - 詳細については、[ウェーブ テンプレートのグループ化](../warehousing/wave-template-grouping.md).を参照してください。
+- [作業ラインの詳細](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - 詳細については、[作業ラインの詳細](../warehousing/work-line-details.md) と [作業ラインの詳細](https://www.microsoft.com/videoplayer/embed/RE4fcYN) のビデオを参照してください。
+- [ゾーンしきい値の補充](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - 詳細については、[ゾーンのしきい値の補充](../warehousing/zone-threshold-replenishment.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

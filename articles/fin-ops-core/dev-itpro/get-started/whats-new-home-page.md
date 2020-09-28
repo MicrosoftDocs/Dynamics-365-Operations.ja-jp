@@ -3,7 +3,7 @@ title: プラットフォーム更新の新機能と変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 28b73c457f53870203ea4c1e0c609295df5f2da4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 7fa79a9ffc51701c3483614f89639f038e49fa61
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651630"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760264"
 ---
 # <a name="whats-new-and-changed-in-platform-updates"></a>プラットフォーム更新の新機能と変更された機能
 
@@ -30,8 +30,9 @@ ms.locfileid: "3651630"
 
 Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
 
-| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細情報**                                                                                                                                                                                                                        |
+| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| プラットフォーム更新プログラム 10.0.14 | 7.0.5778      | 2020 年 11 月     | [Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-14.md)  |
 | プラットフォーム更新プログラム 10.0.13 | 7.0.5746      | 2020 年 10 月     | [Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-13.md)  |
 | プラットフォーム更新プログラム 10.0.12 | 7.0.5688     | 2020 年 8 月     | [Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラム](whats-new-platform-update-10-0-12.md)  |
 | プラットフォーム更新プログラム 10.0.11 | 7.0.5644     | 2020 年 7 月     | [Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラム](whats-new-platform-update-35.md)  |

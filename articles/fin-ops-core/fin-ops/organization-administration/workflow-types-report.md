@@ -1,7 +1,7 @@
 ---
 title: ワークフロー タイプのレポート
 description: このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 20fac55d77ca008806d03bed4d9e8bc8c9c297c8
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b7a5e1be68f7df2c15aee9da55deac742d11bef
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812352"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698183"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 

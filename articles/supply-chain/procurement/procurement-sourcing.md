@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209217"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813837"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
@@ -55,7 +55,7 @@ ms.locfileid: "3209217"
 -   [ 顧客と仕入先の共同作業](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
 -   [仕入先コラボレーションの設定と管理](set-up-maintain-vendor-collaboration.md)
--   [委託販売在庫デモ スクリプトの (受信) Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(ホワイト ペーパー)
+-   [委託販売在庫デモ スクリプトの (受信) Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(ホワイト ペーパー)
 -   [仕入先コラボレーションを使用した委託販売在庫の監視](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [仕入先ポータルを使用して、仕入先と連携する](collaborate-vendors-vendor-portal.md)  (Dynamics AX の 2016 年 2 月と 2016 年 ５ 月バージョンのみ)
 -   [仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
@@ -98,7 +98,7 @@ ms.locfileid: "3209217"
 -   [調達ワークフロー](procurement-sourcing-workflows.md)
 -   [発注書に記載されている商品の受取の記録](tasks/record-receipt-goods-purchase-order.md)
 -   [購買要求ワークフロー](purchase-requisitions-workflow.md)
--   [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (ホワイト ペーパー)
+-   [購買要求のビジネス プロセスのワークフローの定義](https://www.microsoft.com/download/details.aspx?id=101821) (ホワイト ペーパー)
 -   [購入ポリシーの概要](purchase-policies.md)
 -   [購入ポリシーの作成](tasks/create-purchasing-policies.md)
 

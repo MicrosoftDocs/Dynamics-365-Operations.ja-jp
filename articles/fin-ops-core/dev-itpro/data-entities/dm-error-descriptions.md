@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 49b30725f292c9d7d1b34368fbcbd7b4fc9bd61f
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 4093f553ae070415a60f54bbb31b293fff8ecd8f
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030885"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698032"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これはエラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。 このトピックが最新の状態になるように、フィードバック依頼を優先するよう努めます。
@@ -44,5 +44,5 @@ ms.locfileid: "3030885"
 これは、ファイルにおける XML 形式のすべての問題をカバーする汎用メッセージです。 たとえば、データ プロジェクトには、操作に使用されているファイルに存在しない列のマッピングがあります。 これは、ファイルから特定の列が削除され、このファイルがすぐに使用される場合に発生する可能性があります。 データ プロジェクトでマッピングを修正するか、すべての列が正常に存在するようにファイルを修正します。
 
 ## <a name="error-while-uploading-a-file-during-export"></a>エクスポート時のファイルのアップロード中にエラーが発生する
-開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure のストレージ エミュレータが使用できないか、旧バージョンの エミュレータ が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポートのジョブを再実行してください。 ストレージのエミュレータは [Azure ストレージ エミュレータ](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) からインストールすることができます。
+開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure Storage エミュレーターが使用できないか、旧バージョンの エミュレーター が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポートのジョブを再実行してください。 ストレージのエミュレーターは [Azure Storage エミュレーター](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) からインストールすることができます。
 

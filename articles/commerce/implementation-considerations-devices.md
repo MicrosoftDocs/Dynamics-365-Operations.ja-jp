@@ -3,7 +3,7 @@ title: デバイス管理実装ガイダンス
 description: このトピックは、コマース環境においてデバイス管理に関連する機能を実装するユーザーを対象としています。 実装を計画する際に考慮する必要がある実装上のヒントとガイダンスを示します。
 author: jashanno
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 0a53bbda648f470212a3d2c29c34ec2b1b6690ce
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3e72fa1ab9c4a7d14541e35e5d98bc431e6813f4
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004691"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712026"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 
@@ -50,7 +50,7 @@ ms.locfileid: "3004691"
 
 ## <a name="implementation-considerations"></a>実装の考慮事項
 
-このセクションでは、コマース環境でデバイス管理に関連する機能の実装を計画する際に考慮する必要があるいくつかの事項を説明します。
+このセクションでは、小売店や配送場所でのデバイス管理に関連する機能を実装する際に考慮すべき事項について説明します。
 
 ### <a name="generate-the-physical-topology"></a>物理的トポロジを生成します
 

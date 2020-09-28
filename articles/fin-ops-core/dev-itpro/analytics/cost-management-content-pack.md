@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771520"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759259"
 ---
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
@@ -178,7 +178,7 @@ Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に�
 
 | オブジェクト                          | キー集計の測定 | Finance and Operations のデータ ソース | フィールド               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
-| CostObjectStatementCacheMonthly | 量                     | CostObjectStatementCache               | 量              |
+| CostObjectStatementCacheMonthly | 日数                     | CostObjectStatementCache               | 量              |
 | CostObjectStatementCacheMonthly | 件数                   | CostObjectStatementCache               | 数量                 |
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
@@ -193,10 +193,10 @@ Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に�
 | 期末残高数量                | 期末残高数量 = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | 差分変更                         | 差分変更 = SUM(\[AMOUNT\]) |
 | 差分変更数量                    | 差分変更数量 = SUM(\[QTY\]) |
-| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR(\[在庫平均残高\] \<= 0, \[販売在庫または消費の払出\] \>= 0), 0, ABS(\[販売在庫または消費の払出\])/\[在庫平均残高\]) |
+| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR(\[在庫平均残数\] \<= 0, \[Inventory sold or consumed issues\] \> = 0), 0, ABS(\[販売在庫または消費の払出\])/\[在庫平均残数\]) |
 | 在庫平均残高          | 在庫平均残高 = ((\[期末残高\] + \[期首残高\]) / 2) |
 | 手持在庫日数             | 手持在庫日数 = 365 / CostObjectStatementEntries\[金額別の在庫回転率\] |
-| 在庫の正確性                 | 金額ごとの在庫の正確性 = IF(\[期末残高\] \<= 0, IF(OR(\[在庫棚卸金額\] \<\> 0, \[期末残高\] \< 0), 0, 1), MAX(0, (\[期末残高\] - ABS(\[在庫棚卸金額\]))/\[期末残高\])) |
+| 在庫の正確性                 | 金額による在庫の正確度 = IF ( \[終了残数\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0、\[終了残数 \] \< 0)、0、1)、MAX (0, (\[終了残数\] - ABS (\[在庫棚卸\]))/\[終了残数\])) |
 
 以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。
 

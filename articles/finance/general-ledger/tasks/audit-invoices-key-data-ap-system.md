@@ -1,6 +1,6 @@
 ---
-title: 請求書および AP システムの重要データの監査
-description: 発注書の商品またはサービスに対する請求書を仕入先から受け取ったときに、請求書の支払を承認する前に商品またはサービスをすでに受け取っていることが、業務プロセスで要求されている場合があります。
+title: 請求書および買掛金勘定の重要データの監査
+description: このトピックでは、請求書と買掛金の主要データを監査する方法について説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139947"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761552"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>請求書および AP システムの重要データの監査
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>請求書および買掛金勘定の重要データの監査
 
 [!include [banner](../../includes/banner.md)]
 
 発注書の商品またはサービスに対する請求書を仕入先から受け取ったときに、請求書の支払を承認する前に商品またはサービスをすでに受け取っていることが、業務プロセスで要求されている場合があります。 始める前に、[請求書照合] コンフィギュレーション キーが選択されていることを確認します。 
 
-[買掛金勘定パラメータ] ページで、[請求書照合の検証を有効にする] オプションがオンで、[明細行照合ポリシー] のフィールドが [承認の要求] に設定され、[明細行照合ポリシー] が [スリーウェイ マッチング] に設定されていることを確認します。
+**買掛金勘定パラメーター**のページで、[請求書照合の検証を有効にする] オプションがオンで、**相違のある請求書の転記** フィールドが **承認の要求** に設定され、 **明細行照合ポリシー** が **スリーウェイ マッチング** に設定されていることを確認してください。
 
 この手順では、USMF というデモ会社を使用します。 買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。
 

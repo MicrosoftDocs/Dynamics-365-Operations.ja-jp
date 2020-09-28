@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
-ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
+ms.openlocfilehash: c68f0a0e2481c69add8c50a1581466ad0b1483c0
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665613"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759914"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
@@ -339,4 +339,7 @@ ms.locfileid: "3665613"
 8. 生成された出力の内容を比較します。
 
 ## <a name="additional-resources"></a>追加リソース
-[電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+
+- [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+- [パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる](er-calculated-field-ds-performance.md)
+

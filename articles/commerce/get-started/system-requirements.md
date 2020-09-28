@@ -1,9 +1,9 @@
 ---
-title: クラウド配置のシステム要件
+title: Dynamics 365 Commerece のクラウド配置に対するシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bff7461f84bb90ba1c22579386e5289409b4c5c0
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: 7bcb89ea94f6e95d917d5706f56c0175f7042971
+ms.sourcegitcommit: 3a6c94af734c330e66b317ba1e8d1113600d1002
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426385"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3764742"
 ---
-# <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
+# <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerece"></a>Dynamics 365 Commerece のクラウド配置に対するシステム要件
 
 [!include [banner](../includes/banner.md)]
 

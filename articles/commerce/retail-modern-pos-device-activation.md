@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ff8bd48e45d8b256dc8b1aae0ab23778a05793
-ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
+ms.openlocfilehash: 26cf20b7b77efc26ed4eade0238a928bc62d47c3
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577428"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698035"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -275,7 +275,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 
 - クラウド ホスト環境ではなくダウンロードした仮想ハード ディスク (VHD) を使用している場合、ダウンローダーが失敗する場合があります。
 
-    - **ソリューション 1:** ダウンロードした VHD では、Azure ストレージ エミュレーターがインストールされており、正しく動作している必要があります。 そうしないと、セルフサービス パッケージを正しくダウンロードすることはできません。
+    - **ソリューション 1:** ダウンロードした VHD では、Azure Storage エミュレーターがインストールされており、正しく動作している必要があります。 そうしないと、セルフサービス パッケージを正しくダウンロードすることはできません。
     - **ソリューション 2:** VHD を Microsoft Hyper-V に統合するプロセス中にエラーが発生した可能性があります。 パッケージを正しくダウンロードする前に、手動でアクセス許可を編集する必要があります。 以下の手順を実行します。
 
         1. ファイル エクスプローラーで、**C:\\Microsoft Dynamics 365\\70\\Retail Server** を参照します。

@@ -23,3 +23,7 @@ HQ 内の Commerce セルフサービス インストーラーにアクセスで
 5. パッケージの配置の進捗を監視します。
 
 配置可能なパッケージの適用方法についての詳細は、 [配置可能なパッケージを作成する](../deployment/create-apply-deployable-package.md)を参照してください。 配置可能パッケージを手動で適用する方法の詳細については、 [配置可能 な パッケージ を コマンド ライン から インストール する](../deployment/install-deployable-package.md)を参照してください。
+
+### <a name="re-activate-pos-devices"></a>POS デバイスの再アクティブ化
+
+販売時点管理 (POS) デバイスを使用する場合は、データベースをインポートした後に、POS デバイスを再度アクティブ化する必要があります。 移行先環境で以前にアクティブ化されたデバイスは、機能しなくなります。 詳細については、[販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md) を参照してください。

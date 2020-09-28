@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0e23e7aedb069fb0cd7c862e41f6104f03f69b7
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: f532053760585554b2641d2f18f6c45d2f67f65c
+ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325801"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3765087"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -91,6 +91,10 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 - [Azure Pipelines にある配置可能なパッケージへのライセンス ファイルの追加](pipeline-add-license-package.md)
 - [Azure Pipelines に配置可能なパッケージの作成](pipeline-create-deployable-package.md)
 - [Azure Pipelines で、X++ モデルのバージョン管理](pipeline-model-version.md)
+- [Azure Pipelines を使用してアセットをダウンロード](pipeline-asset-download.md)
+- [Azure Pipelines を使用してアセットをアップロード](pipeline-asset-upload.md)
+- [Azure Pipelines を使用してアセットをデプロイ](pipeline-deploy-asset.md)
+- [Azure Pipelines で Lifecycle Services (LCS) 接続を作成](pipeline-lcs-connection.md)      
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 

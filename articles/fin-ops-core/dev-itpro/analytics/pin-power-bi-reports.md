@@ -1,9 +1,9 @@
 ---
-title: PowerBI.com コンテンツをピン留めする
+title: Power BI コンテンツのピン留め
 description: Microsoft Dynamics 365 Finance では、データ検索に Power BI が使用されます。 このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7660441b5e204cd455a2099cfa5462614d88b85b
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: e4908cc9bc8f4296b147311e8c55a69dc48f451b
+ms.sourcegitcommit: 045be8c2cb065497f3b58c50dff16d7a71aaa876
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258545"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "3722232"
 ---
-# <a name="pin-powerbicom-content"></a>PowerBI.com コンテンツをピン留めする
+# <a name="pin-power-bi-content"></a>Power BI コンテンツのピン留め
 
 [!include [banner](../includes/banner.md)]
 

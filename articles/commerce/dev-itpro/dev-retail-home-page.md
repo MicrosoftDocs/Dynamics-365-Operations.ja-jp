@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cc7a6705e37eb849c06a24adf98c748f075e1a5a
-ms.sourcegitcommit: 45ba754db7a813be88e2eb4a8be3a0e766b63a87
+ms.openlocfilehash: b622068f896ab250453c098a6ca3b4f9bab7acd7
+ms.sourcegitcommit: 9ab68a85d0e842bf641e8c30eaddb201652084de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678508"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3695761"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -59,10 +59,8 @@ ms.locfileid: "3678508"
 
 ## <a name="customize-pos"></a>カスタマイズ POS
 - [販売時点管理 (POS) の画面レイアウト](../pos-screen-layouts.md)
-- [POS レイアウト デザイナーのインストール](../install-pos-layout-designer.md)
-- [オフライン モードで Commerce runtime (CRT) サービス を呼び出す](call-crt-service-offline.md)
+- [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
 - [Modern POS (MPOS) のトリガーと印刷](modern-pos-trigger-extensibility.md)
-- [トリガーを使用して返品ポリシーを実装してください](trigger-example-return-policy.md)
 - [トリガーを使用してトランザクションをブロックする](trigger-example-blocking-transaction.md)
 - [POS ビューへのカスタム コントロールの追加](pos-custom-control.md)
 - [販売時点管理 (POS) 支払拡張機能](pos-payment-extension.md)
@@ -80,11 +78,9 @@ ms.locfileid: "3678508"
 ## <a name="integrating-commerce"></a>コマースの統合
 -   [ブランドの作成と Retail Experience アプリへの適用](create-retail-experience-app.md)
 
-## <a name="commerce-scale-unit"></a>コマース スケール ユニット
--   [Commerce Scale Unit OData コントローラーの拡張](extend-retail-server-odata-controller.md)
--   [既定の Commerce Scale Unit メタデータ コントローラーの拡張](extend-metadata.md)
+## <a name="commerce-scale-unit"></a>Commerce Scale Unit
 -   [Commerce Scale Unit の顧客およびコンシューマー API](retail-server-customer-consumer-api.md)
--   [コマース スケール ユニット](retail-store-system-begin.md)
+-   [Commerce Scale Unit](retail-store-system-begin.md)
 -   [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="hardware-station"></a>Hardware station
@@ -95,7 +91,6 @@ ms.locfileid: "3678508"
 ## <a name="commerce-runtime"></a>Commerce Runtime
 - [Commerce runtime (CRT) のアーキテクチャ と構成](commerce-runtime-overview.md)
 - [Commerce runtime (CRT) の拡張機能とトリガー](commerce-runtime-extensibility-trigger.md)
-- [顧客の基本設定データをチャネル データベースに追加](add-customer-preference-channel.md)
 - [小売チャネルのシークレットを管理](manage-secrets.md)
 - [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
 - [ビジネス ロジックで非同期コマース (CRT) API を作成する](async-commerce-extension.md)

@@ -3,7 +3,7 @@ title: Finance and Operations アプリ バージョン 10.0.13 のプラット�
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e898e1e5a042cdcb21b1d5767dfd8a811b3bdd0
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 59f3b2ee8ce247e94db08d4bbc20403b9ce161d4
+ms.sourcegitcommit: 1daa297b0c09090a9c30c5f84bd7000e5b948a26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652202"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "3720681"
 ---
 # <a name="platform-updates-for-version-10013-of-finance-and-operations-apps-october-2020"></a>Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
 
@@ -47,7 +47,7 @@ ms.locfileid: "3652202"
 
 -  [3 つの jQuery コンポーネント ライブラリのアップグレード](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
 
--  [タスク記録でコントロール状態の検証を許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- 詳細については、[タスク レコーダー リソース](../user-interface/task-recorder.md#validate) の「検証」セクションを参照してください。 
+-  [タスク記録でコントロール状態の検証を許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- 詳細については、[タスク レコーダー リソース](../user-interface/task-recorder.md#validate) の「検証」セクションを参照してください。 この機能を Regression Suite Automation Tool (RSAT) と組み合わせて使用するには、2020 年 10 月で利用できる RSAT 2.0 に更新する必要があります。  
 
 
 ## <a name="additional-resources"></a>追加リソース
