@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft Power Apps の埋め込み
+                - name: Power Apps からキャンバス アプリを埋め込む
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: 調達ワークフロー
               href: procurement/procurement-sourcing-workflows.md
+            - name: 調達ワークフローのトラブルシューティング
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: 調達カタログ
               items:
                 - name: 調達カタログの概要
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: 発注書に記載されている商品の受取の記録
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: 発注書のトラブルシューティング
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: 発注書の作成
               items:
                 - name: 発注書の手動作成
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: 仕入先リベート
                   href: procurement/vendor-rebates.md
+                - name: 価格、割引、契約、リベートのトラブルシューティング
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: 購入ポリシー
               items:
                 - name: 購入ポリシーの概要
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: 仕入先請求書の概要
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 製品受領書と請求書のトラブルシューティング
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: 仕入先管理とコラボレーション
               items:
                 - name: 仕入先コラボレーションの設定と管理
@@ -1765,6 +1773,8 @@
                   href: procurement/vendor-catalogs-import.md
                 - name: パンチアウト eProcurement の外部カタログの設定
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: cXML の拡張機能の購入
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: パンチアウト eProcurement の外部カタログの使用
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: 仕入先コラボレーションのモバイル ワークスペース
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: 販売注文の確認
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: 販売注文のトラブルシューティング
+                  href: sales-marketing/troubleshooting-sales.md
             - name: 販売契約書
               items:
                 - name: 販売契約書の概要
@@ -2283,6 +2295,8 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: 販売見積の作成および編集
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: 販売見積のトラブルシューティング
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: 返品
               items:
                 - name: 販売返品
@@ -2807,18 +2821,20 @@
                   items:
                     - name: 倉庫アプリのインストールと接続
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: 倉庫アプリでカメラを使用するバーコード スキャン
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: 倉庫アプリのフィールド名のコンフィギュレーション
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: 倉庫作業用のモバイル デバイスの設定
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: 倉庫アプリでカメラを使用するバーコード スキャン
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: 倉庫アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: 入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: 集荷明細行の概要を提供するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/pick-line-overview.md
                     - name: ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: モバイル デバイスでの混合ライセンス プレートの受取

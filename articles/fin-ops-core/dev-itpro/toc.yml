@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: 優先順位に基づく調整
               hreF: data-entities/priority-based-throttling.md
+            - name: 優先順位に基づく調整に関する FAQ
+              href: data-entities/throttling-faq.md
             - name: データ統合 API
               items:
                 - name: データ管理パッケージ REST API
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: 二重書き込みの通貨データ型の移行
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: 販売注文の状態フィールドのマッピングを設定
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: 二重書き込みの管理
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: ローカル エージェント
                   items:
-                    - name: AD FS Office 365 の互換性
+                    - name: AD FS Microsoft 365 の互換性
                       href: deployment/onprem-adfscompatibility.md
                     - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: 開発ツールのチュートリアル
                   href: dev-tools/introduction-visual-studio.md
                 - name: アプリケーション チェッカー
-                  items:
-                    - name: アプリケーション チェッカーに対する BaseX のインストール
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: アプリケーション エクスプローラー
                   href: dev-tools/application-explorer.md
                 - name: プロジェクトのビルドおよびデバッグ
@@ -1360,14 +1362,32 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
                     - name: PartMetadata タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
-                    - name: Row タイプ
+                    - name: 行タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
-                    - name: 値のタイプ
+                    - name: 値の型
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
                     - name: ValueDesign タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: プロセスの自動化のフレームワーク
+          items:
+            - name: プロセスの自動化のフレームワークの開発
+              href: process-automation/process-automation-framework.md
+            - name: タイプ登録
+              href: process-automation/type-registration.md
+            - name: シリーズ登録
+              href: process-automation/series-registration.md
+            - name: プロセス パラメーター
+              href: process-automation/process-parameters.md
+            - name: 構成可能なユーザーのクエリ
+              href: process-automation/user-queries.md
+            - name: プロセスを実行する
+              href: process-automation/run-process.md
+            - name: 結果とメッセージを記録する
+              href: process-automation/log-results.md
+            - name: ユーザー インターフェイスのカスタマイズ
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Regression Suite Automation Tool の概要
@@ -1395,7 +1415,7 @@
             - name: 開発とリリース
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: ステージおよび公開
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: 方法の追加
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: ビジネス プロセス モデラー ライブラリの設定

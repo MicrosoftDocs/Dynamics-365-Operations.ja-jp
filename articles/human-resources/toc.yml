@@ -5,6 +5,8 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 9 月 16 日
+          href: hr-whats-new-2020-09-16.md
         - name: 2020 年 9 月 3 日
           href: hr-whats-new-2020-09-03.md
         - name: 2020 年 8 月 20 日
@@ -201,7 +203,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: カスタム フィールドの作成と操作
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: PowerApps アプリの埋め込み
+            - name: Power Apps からキャンバス アプリを埋め込む
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: ルックアップを使用した情報の検索
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
