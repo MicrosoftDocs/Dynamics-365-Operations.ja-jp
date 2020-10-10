@@ -1,7 +1,7 @@
 ---
 title: フラグメントで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
-author: v-chgri
+author: phinneyridge
 manager: annbe
 ms.date: 07/31/2020
 ms.topic: article
@@ -14,132 +14,131 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645994"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818353"
 ---
-# <a name="work-with-fragments"></a><span data-ttu-id="2a080-103">フラグメントで動作</span><span class="sxs-lookup"><span data-stu-id="2a080-103">Work with fragments</span></span> 
+# <a name="work-with-fragments"></a><span data-ttu-id="6e802-103">フラグメントで動作</span><span class="sxs-lookup"><span data-stu-id="6e802-103">Work with fragments</span></span> 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-<span data-ttu-id="2a080-104">このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2a080-104">This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="6e802-104">このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6e802-104">This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="2a080-105">概要</span><span class="sxs-lookup"><span data-stu-id="2a080-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="6e802-105">概要</span><span class="sxs-lookup"><span data-stu-id="6e802-105">Overview</span></span>
 
-<span data-ttu-id="2a080-106">フラグメントを使用すると、サイト全体で再利用する必要があるモジュール コンフィギュレーションに対して、一元的な作成エクスペリエンスを実行できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-106">Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site.</span></span> <span data-ttu-id="2a080-107">たとえば、ヘッダー、フッター、およびバナーは多くのページに渡って共有されるため、フラグメントとしてコンフィギュレーションされることがよくあります。</span><span class="sxs-lookup"><span data-stu-id="2a080-107">For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages.</span></span> <span data-ttu-id="2a080-108">サイトの別のページに挿入することができる小さな Web ページとして、フラグメントを考えることができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-108">You can think of fragments as miniature webpages that can be inserted into other pages on your site.</span></span> <span data-ttu-id="2a080-109">フラグメントには独自のライフサイクルがあります。</span><span class="sxs-lookup"><span data-stu-id="2a080-109">Fragments have their own lifecycle.</span></span> <span data-ttu-id="2a080-110">つまり、作成ツールでは、独立したエンティティとして作成、参照、更新、削除されるということです。</span><span class="sxs-lookup"><span data-stu-id="2a080-110">In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.</span></span>
+<span data-ttu-id="6e802-106">フラグメントを使用すると、サイト全体で再利用する必要があるモジュール コンフィギュレーションに対して、一元的な作成エクスペリエンスを実行できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-106">Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site.</span></span> <span data-ttu-id="6e802-107">たとえば、ヘッダー、フッター、およびバナーは多くのページに渡って共有されるため、フラグメントとしてコンフィギュレーションされることがよくあります。</span><span class="sxs-lookup"><span data-stu-id="6e802-107">For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages.</span></span> <span data-ttu-id="6e802-108">サイトの別のページに挿入することができる小さな Web ページとして、フラグメントを考えることができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-108">You can think of fragments as miniature webpages that can be inserted into other pages on your site.</span></span> <span data-ttu-id="6e802-109">フラグメントには独自のライフサイクルがあります。</span><span class="sxs-lookup"><span data-stu-id="6e802-109">Fragments have their own lifecycle.</span></span> <span data-ttu-id="6e802-110">つまり、作成ツールでは、独立したエンティティとして作成、参照、更新、削除されるということです。</span><span class="sxs-lookup"><span data-stu-id="6e802-110">In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.</span></span>
 
-<span data-ttu-id="2a080-111">フラグメントをコンフィギュレーションした後は、サイト構造でモジュールを使用できる場所ではどこでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-111">After fragments are configured, they can be used wherever modules can be used in your site structure.</span></span> <span data-ttu-id="2a080-112">フラグメントは、ページ、レイアウト、テンプレート、およびその他のフラグメントで参照できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-112">Fragments can be referenced on pages, in layouts, in templates, and in other fragments.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="2a080-113">フラグメントは、他のフラグメント内の 7 つの階層にまで入れ子にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-113">Fragments can be nested up to seven levels deep inside other fragments.</span></span>
-
-<span data-ttu-id="2a080-114">たとえば、季節のイベントをサイト内の多数のページで推進したい場合に、フラグメントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-114">For example, if you want to promote a seasonal event cross many pages on our site, you can use a fragment.</span></span> <span data-ttu-id="2a080-115">新しいフラグメントを作成するプロセスの最初のステップとして、開始するモジュールのタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-115">The first step in the process of creating a new fragment is to select the type of module that you want to start from.</span></span> <span data-ttu-id="2a080-116">この例では、ヒーロー モジュールからフラグメントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-116">For this example, you can build the fragment from a hero module.</span></span>
+<span data-ttu-id="6e802-111">フラグメントをコンフィギュレーションした後は、サイト構造でモジュールを使用できる場所ではどこでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-111">After fragments are configured, they can be used wherever modules can be used in your site structure.</span></span> <span data-ttu-id="6e802-112">フラグメントは、ページ、レイアウト、テンプレート、およびその他のフラグメントで参照できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-112">Fragments can be referenced on pages, in layouts, in templates, and in other fragments.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2a080-117">フラグメントは、どのモジュール タイプからでも作成できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-117">Fragments can be built from any module type.</span></span>
+> <span data-ttu-id="6e802-113">フラグメントは、他のフラグメント内の 7 つの階層にまで入れ子にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-113">Fragments can be nested up to seven levels deep inside other fragments.</span></span>
 
-<span data-ttu-id="2a080-118">その後、特定の販促コンテンツで、ヒーロー フラグメントをコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-118">You can then configure the hero fragment with your specific promotional content.</span></span> <span data-ttu-id="2a080-119">必要に応じてローカライズすることもできます。</span><span class="sxs-lookup"><span data-stu-id="2a080-119">You can also localize it as you require.</span></span> <span data-ttu-id="2a080-120">新しいスタンドアロンのヒーローのフラグメントを、サイト全体で事前にコンフィギュレーションされたモジュールとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-120">The new stand-alone hero fragment can then be consumed as a preconfigured module throughout your site.</span></span> <span data-ttu-id="2a080-121">これは、テンプレート、特定のページ、またはヒーロー モジュールを含むことができるその他のフラグメントに、簡単に追加できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-121">You can easily add it to templates, to specific pages, or to other fragments that can contain hero modules.</span></span>
+<span data-ttu-id="6e802-114">たとえば、季節のイベントをサイト内の多数のページで推進したい場合に、フラグメントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-114">For example, if you want to promote a seasonal event cross many pages on our site, you can use a fragment.</span></span> <span data-ttu-id="6e802-115">新しいフラグメントを作成するプロセスの最初のステップとして、開始するモジュールのタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-115">The first step in the process of creating a new fragment is to select the type of module that you want to start from.</span></span> <span data-ttu-id="6e802-116">この例では、ヒーロー モジュールからフラグメントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-116">For this example, you can build the fragment from a hero module.</span></span>
 
-<span data-ttu-id="2a080-122">フラグメントが追加された場所はすべて、作成したセントラル ヒーロー フラグメントへの参照です。</span><span class="sxs-lookup"><span data-stu-id="2a080-122">All the places where the fragment is added are references to the central hero fragment that you created.</span></span> <span data-ttu-id="2a080-123">フラグメントに変更を発行した場合、その変更は、サイト全体でそのフラグメントが参照されているすべての場所にすぐに反映されます。</span><span class="sxs-lookup"><span data-stu-id="2a080-123">If you publish changes to the fragment, those changes are immediately reflected in all the places where the fragment is referenced across the site.</span></span> <span data-ttu-id="2a080-124">したがって、フラグメントは、サイトのモジュール コンフィギュレーションを再利用して一元管理するための、強力かつ効率的な方法です。</span><span class="sxs-lookup"><span data-stu-id="2a080-124">Therefore, fragments provide a powerful and efficient way to reuse and centrally manage module configurations on a site.</span></span> <span data-ttu-id="2a080-125">これらを効果的に使用することにより、機敏性を大幅に向上させ、サイトのコンテンツ管理に関連するコストを削減することができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-125">By effectively using them, you can significantly increase agility and help reduce the cost that is associated with managing site content.</span></span>
+> [!NOTE]
+> <span data-ttu-id="6e802-117">フラグメントは、どのモジュール タイプからでも作成できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-117">Fragments can be built from any module type.</span></span>
 
-<span data-ttu-id="2a080-126">次の図は、フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2a080-126">The following illustration shows how fragments can be used to centralize authoring of shared module configurations across an e-Commerce site.</span></span>
+<span data-ttu-id="6e802-118">その後、特定の販促コンテンツで、ヒーロー フラグメントをコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-118">You can then configure the hero fragment with your specific promotional content.</span></span> <span data-ttu-id="6e802-119">必要に応じてローカライズすることもできます。</span><span class="sxs-lookup"><span data-stu-id="6e802-119">You can also localize it as you require.</span></span> <span data-ttu-id="6e802-120">新しいスタンドアロンのヒーローのフラグメントを、サイト全体で事前にコンフィギュレーションされたモジュールとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-120">The new stand-alone hero fragment can then be consumed as a preconfigured module throughout your site.</span></span> <span data-ttu-id="6e802-121">これは、テンプレート、特定のページ、またはヒーロー モジュールを含むことができるその他のフラグメントに、簡単に追加できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-121">You can easily add it to templates, to specific pages, or to other fragments that can contain hero modules.</span></span>
+
+<span data-ttu-id="6e802-122">フラグメントが追加された場所はすべて、作成したセントラル ヒーロー フラグメントへの参照です。</span><span class="sxs-lookup"><span data-stu-id="6e802-122">All the places where the fragment is added are references to the central hero fragment that you created.</span></span> <span data-ttu-id="6e802-123">フラグメントに変更を発行した場合、その変更は、サイト全体でそのフラグメントが参照されているすべての場所にすぐに反映されます。</span><span class="sxs-lookup"><span data-stu-id="6e802-123">If you publish changes to the fragment, those changes are immediately reflected in all the places where the fragment is referenced across the site.</span></span> <span data-ttu-id="6e802-124">したがって、フラグメントは、サイトのモジュール コンフィギュレーションを再利用して一元管理するための、強力かつ効率的な方法です。</span><span class="sxs-lookup"><span data-stu-id="6e802-124">Therefore, fragments provide a powerful and efficient way to reuse and centrally manage module configurations on a site.</span></span> <span data-ttu-id="6e802-125">これらを効果的に使用することにより、機敏性を大幅に向上させ、サイトのコンテンツ管理に関連するコストを削減することができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-125">By effectively using them, you can significantly increase agility and help reduce the cost that is associated with managing site content.</span></span>
+
+<span data-ttu-id="6e802-126">次の図は、フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6e802-126">The following illustration shows how fragments can be used to centralize authoring of shared module configurations across an e-Commerce site.</span></span>
 
 ![フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示した図](./media/fragment-figure1.png)
 
-## <a name="create-a-fragment"></a><span data-ttu-id="2a080-128">フラグメントの作成</span><span class="sxs-lookup"><span data-stu-id="2a080-128">Create a fragment</span></span>
+## <a name="create-a-fragment"></a><span data-ttu-id="6e802-128">フラグメントの作成</span><span class="sxs-lookup"><span data-stu-id="6e802-128">Create a fragment</span></span>
 
-<span data-ttu-id="2a080-129">新しいフラグメントを作成するか、既存のモジュール コンフィギュレーションをフラグメントとして保存することができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-129">You can either create a new fragment or save an existing module configuration as a fragment.</span></span>
+<span data-ttu-id="6e802-129">新しいフラグメントを作成するか、既存のモジュール コンフィギュレーションをフラグメントとして保存することができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-129">You can either create a new fragment or save an existing module configuration as a fragment.</span></span>
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a><span data-ttu-id="2a080-130">フラグメントとして既存のモジュール コンフィギュレーションを保存</span><span class="sxs-lookup"><span data-stu-id="2a080-130">Save an existing module configuration as a fragment</span></span>
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a><span data-ttu-id="6e802-130">フラグメントとして既存のモジュール コンフィギュレーションを保存</span><span class="sxs-lookup"><span data-stu-id="6e802-130">Save an existing module configuration as a fragment</span></span>
 
-<span data-ttu-id="2a080-131">以前にコンフィギュレーションしたモジュールを再利用可能なフラグメントに変換するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2a080-131">To convert a previously configured module to a reusable fragment, follow these steps.</span></span>
+<span data-ttu-id="6e802-131">以前にコンフィギュレーションしたモジュールを再利用可能なフラグメントに変換するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6e802-131">To convert a previously configured module to a reusable fragment, follow these steps.</span></span>
 
-1. <span data-ttu-id="2a080-132">フラグメントに変換するモジュールを含むページまたはテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="2a080-132">Open a page or template that contains the module that you want to convert to a fragment.</span></span>
-1. <span data-ttu-id="2a080-133">左のアウトライン ウィンドウで、またはメイン キャンバスで直接、以前にコンフィギュレーションしたモジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-133">In the outline pane on the left or directly in the main canvas, select the previously configured module.</span></span>
-1. <span data-ttu-id="2a080-134">アウトライン ペイン、またはキャンバスの選択したモジュールのツールバーで、モジュールの名前の横にある省略記号 (**...**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-134">Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in the canvas.</span></span> 
-1. <span data-ttu-id="2a080-135">**ページ フラグメントとして共有** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-135">Select **Share as Page Fragment**.</span></span> 
-1. <span data-ttu-id="2a080-136">**ページ フラグメントとして保存** ダイアログ ボックスで、フラグメントの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="2a080-136">In the **Save as Page Fragment** dialog box, enter a name for the fragment.</span></span>
-1. <span data-ttu-id="2a080-137">**OK** を選択すると、他のページに追加できるフラグメントとしてモジュール コンフィギュレーションが保存されます。</span><span class="sxs-lookup"><span data-stu-id="2a080-137">Select **OK** to save the module configuration as a fragment that can be added to other pages.</span></span>
+1. <span data-ttu-id="6e802-132">フラグメントに変換するモジュールを含むページまたはテンプレートを開きます。</span><span class="sxs-lookup"><span data-stu-id="6e802-132">Open a page or template that contains the module that you want to convert to a fragment.</span></span>
+1. <span data-ttu-id="6e802-133">左のアウトライン ウィンドウで、またはメイン キャンバスで直接、以前にコンフィギュレーションしたモジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-133">In the outline pane on the left or directly in the main canvas, select the previously configured module.</span></span>
+1. <span data-ttu-id="6e802-134">アウトライン ペイン、またはキャンバスの選択したモジュールのツールバーで、モジュールの名前の横にある省略記号 (**...**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-134">Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in the canvas.</span></span> 
+1. <span data-ttu-id="6e802-135">**ページ フラグメントとして共有** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-135">Select **Share as Page Fragment**.</span></span> 
+1. <span data-ttu-id="6e802-136">**ページ フラグメントとして保存** ダイアログ ボックスで、フラグメントの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="6e802-136">In the **Save as Page Fragment** dialog box, enter a name for the fragment.</span></span>
+1. <span data-ttu-id="6e802-137">**OK** を選択すると、他のページに追加できるフラグメントとしてモジュール コンフィギュレーションが保存されます。</span><span class="sxs-lookup"><span data-stu-id="6e802-137">Select **OK** to save the module configuration as a fragment that can be added to other pages.</span></span>
 
-<span data-ttu-id="2a080-138">次の図は、モジュール コンフィギュレーションをフラグメントとして保存する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2a080-138">The following image shows how to save a module configuration as a fragment.</span></span>
+<span data-ttu-id="6e802-138">次の図は、モジュール コンフィギュレーションをフラグメントとして保存する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6e802-138">The following image shows how to save a module configuration as a fragment.</span></span>
 
 ![モジュール コンフィギュレーションをフラグメントとして保存する方法を示す画面キャプチャ](./media/save-as-fragment.png)
 
-### <a name="create-a-new-fragment"></a><span data-ttu-id="2a080-140">新しいフラグメントの作成</span><span class="sxs-lookup"><span data-stu-id="2a080-140">Create a new fragment</span></span>
+### <a name="create-a-new-fragment"></a><span data-ttu-id="6e802-140">新しいフラグメントの作成</span><span class="sxs-lookup"><span data-stu-id="6e802-140">Create a new fragment</span></span>
 
-<span data-ttu-id="2a080-141">新しいフラグメントを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2a080-141">To create a new fragment, follow these steps.</span></span>
+<span data-ttu-id="6e802-141">新しいフラグメントを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6e802-141">To create a new fragment, follow these steps.</span></span>
 
-1. <span data-ttu-id="2a080-142">左のナビゲーション ウィンドウで、**フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-142">In the navigation pane on the left, select **Fragments**.</span></span>
-1. <span data-ttu-id="2a080-143">**新しいページ フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-143">Select **New Page Fragment**.</span></span> <span data-ttu-id="2a080-144">使用可能なすべてのモジュール タイプを示すダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="2a080-144">A dialog box appears that shows all the available module types.</span></span> <span data-ttu-id="2a080-145">先に説明したように、どのモジュール タイプからでもフラグメントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="2a080-145">As was mentioned earlier, fragments can be created from any module type.</span></span>
-1. <span data-ttu-id="2a080-146">フラグメントのモジュール タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-146">Select a module type for your fragment.</span></span>
+1. <span data-ttu-id="6e802-142">左のナビゲーション ウィンドウで、**フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-142">In the navigation pane on the left, select **Fragments**.</span></span>
+1. <span data-ttu-id="6e802-143">**新しいページ フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-143">Select **New Page Fragment**.</span></span> <span data-ttu-id="6e802-144">使用可能なすべてのモジュール タイプを示すダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6e802-144">A dialog box appears that shows all the available module types.</span></span> <span data-ttu-id="6e802-145">先に説明したように、どのモジュール タイプからでもフラグメントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6e802-145">As was mentioned earlier, fragments can be created from any module type.</span></span>
+1. <span data-ttu-id="6e802-146">フラグメントのモジュール タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-146">Select a module type for your fragment.</span></span>
 
-<span data-ttu-id="2a080-147">次の図は、新しいフラグメントを作成する場所を示します。</span><span class="sxs-lookup"><span data-stu-id="2a080-147">The following image shows where to create a new fragment.</span></span>
+<span data-ttu-id="6e802-147">次の図は、新しいフラグメントを作成する場所を示します。</span><span class="sxs-lookup"><span data-stu-id="6e802-147">The following image shows where to create a new fragment.</span></span>
 
 ![新しいフラグメントを作成する場所の画面キャプチャ](./media/fragment-nav-menu.png)
 
 > [!TIP]
-> <span data-ttu-id="2a080-149">汎用コンテナー モジュール タイプを選択することで、後でフラグメントを更新およびコンフィギュレーションする必要がある場合に、最大の柔軟性を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-149">By selecting a generic container module type, you get the most flexibility when you need to update and configure your fragment later.</span></span>
+> <span data-ttu-id="6e802-149">汎用コンテナー モジュール タイプを選択することで、後でフラグメントを更新およびコンフィギュレーションする必要がある場合に、最大の柔軟性を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-149">By selecting a generic container module type, you get the most flexibility when you need to update and configure your fragment later.</span></span>
 
-## <a name="add-remove-or-edit-fragments-on-a-page"></a><span data-ttu-id="2a080-150">ページでのフラグメントの追加、削除、または編集</span><span class="sxs-lookup"><span data-stu-id="2a080-150">Add, remove, or edit fragments on a page</span></span>
+## <a name="add-remove-or-edit-fragments-on-a-page"></a><span data-ttu-id="6e802-150">ページでのフラグメントの追加、削除、または編集</span><span class="sxs-lookup"><span data-stu-id="6e802-150">Add, remove, or edit fragments on a page</span></span>
 
-<span data-ttu-id="2a080-151">次の手順では、フラグメントを追加、削除、および編集する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2a080-151">The following procedures describe how to add, remove, and edit fragments.</span></span>
+<span data-ttu-id="6e802-151">次の手順では、フラグメントを追加、削除、および編集する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6e802-151">The following procedures describe how to add, remove, and edit fragments.</span></span>
 
-### <a name="add-a-fragment"></a><span data-ttu-id="2a080-152">フラグメントの追加</span><span class="sxs-lookup"><span data-stu-id="2a080-152">Add a fragment</span></span>
+### <a name="add-a-fragment"></a><span data-ttu-id="6e802-152">フラグメントの追加</span><span class="sxs-lookup"><span data-stu-id="6e802-152">Add a fragment</span></span>
 
-<span data-ttu-id="2a080-153">ページにフラグメントを追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2a080-153">To add a fragment to a page, follow these steps.</span></span>
+<span data-ttu-id="6e802-153">ページにフラグメントを追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6e802-153">To add a fragment to a page, follow these steps.</span></span>
 
-1. <span data-ttu-id="2a080-154">左側のアウトライン ウィンドウで、またはメイン キャンバスで直接、子モジュールを追加できるコンテナーまたはスロットを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-154">In the outline pane on the left or directly in the main canvas, select a container or slot to which child modules can be added.</span></span>
-1. <span data-ttu-id="2a080-155">オンライン ウィンドウで、コンテナまたはスロットの名前の横にある省略符号 (**...**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-155">In the online pane, select the ellipsis (**...**) next to the name of the container or slot.</span></span>  <span data-ttu-id="2a080-156">または、メイン キャンバスを使用している場合は、プラス記号 (**+**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-156">Alternately, if using the main canvas, select the plus symbol (**+**).</span></span>  
-1. <span data-ttu-id="2a080-157">**フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-157">Select **Add Fragment**.</span></span>
+1. <span data-ttu-id="6e802-154">左側のアウトライン ウィンドウで、またはメイン キャンバスで直接、子モジュールを追加できるコンテナーまたはスロットを選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-154">In the outline pane on the left or directly in the main canvas, select a container or slot to which child modules can be added.</span></span>
+1. <span data-ttu-id="6e802-155">オンライン ウィンドウで、コンテナまたはスロットの名前の横にある省略符号 (**...**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-155">In the online pane, select the ellipsis (**...**) next to the name of the container or slot.</span></span>  <span data-ttu-id="6e802-156">または、メイン キャンバスを使用している場合は、プラス記号 (**+**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-156">Alternately, if using the main canvas, select the plus symbol (**+**).</span></span>  
+1. <span data-ttu-id="6e802-157">**フラグメントの追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-157">Select **Add Fragment**.</span></span>
 
     ![既存のフラグメントをスロットまたはコンテナーに追加する方法を示す画面キャプチャ](./media/add-fragment.png)
  
     > [!NOTE]
-    > <span data-ttu-id="2a080-159">コンテナーまたはスロットが新しい子モジュールをサポートしていない場合、**フラグメントの追加**オプションは使用できません。</span><span class="sxs-lookup"><span data-stu-id="2a080-159">If the container or slot doesn't support new child modules, the **Add Fragment** option is unavailable.</span></span>
+    > <span data-ttu-id="6e802-159">コンテナーまたはスロットが新しい子モジュールをサポートしていない場合、**フラグメントの追加**オプションは使用できません。</span><span class="sxs-lookup"><span data-stu-id="6e802-159">If the container or slot doesn't support new child modules, the **Add Fragment** option is unavailable.</span></span>
     
-1. <span data-ttu-id="2a080-160">**フラグメントの追加** ダイアログ ボックスで、追加するフラグメントを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-160">In the **Add Fragment** dialog box, search for and select a fragment to add.</span></span> <span data-ttu-id="2a080-161">利用可能なフラグメントが一覧にない場合は、まず最初に、選択したコンテナーまたはスロットがサポートするモジュール タイプからフラグメントを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a080-161">If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.</span></span>
-1. <span data-ttu-id="2a080-162">目的のフラグメントを選択して、ページのコンテナーまたはスロットに追加します。</span><span class="sxs-lookup"><span data-stu-id="2a080-162">Select your desired fragment to add it to the container or slot on your page.</span></span>
+1. <span data-ttu-id="6e802-160">**フラグメントの追加** ダイアログ ボックスで、追加するフラグメントを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-160">In the **Add Fragment** dialog box, search for and select a fragment to add.</span></span> <span data-ttu-id="6e802-161">利用可能なフラグメントが一覧にない場合は、まず最初に、選択したコンテナーまたはスロットがサポートするモジュール タイプからフラグメントを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e802-161">If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.</span></span>
+1. <span data-ttu-id="6e802-162">目的のフラグメントを選択して、ページのコンテナーまたはスロットに追加します。</span><span class="sxs-lookup"><span data-stu-id="6e802-162">Select your desired fragment to add it to the container or slot on your page.</span></span>
 
     ![フラグメント ピッカー モーダル ウィンドウの画面キャプチャ](./media/fragment-picker.png)
 
 > [!NOTE]
-> <span data-ttu-id="2a080-164">コンテナーまたはスロットで許可されるモジュールは、ページのテンプレートまたはモジュール自体の定義によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="2a080-164">The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.</span></span>
+> <span data-ttu-id="6e802-164">コンテナーまたはスロットで許可されるモジュールは、ページのテンプレートまたはモジュール自体の定義によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="6e802-164">The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.</span></span>
 
-### <a name="remove-a-fragment"></a><span data-ttu-id="2a080-165">フラグメントの削除</span><span class="sxs-lookup"><span data-stu-id="2a080-165">Remove a fragment</span></span>
+### <a name="remove-a-fragment"></a><span data-ttu-id="6e802-165">フラグメントの削除</span><span class="sxs-lookup"><span data-stu-id="6e802-165">Remove a fragment</span></span>
 
-<span data-ttu-id="2a080-166">ページ上のスロットまたはコンテナーからフラグメントを削除するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2a080-166">To remove a fragment from a slot or container on a page, follow these steps.</span></span>
+<span data-ttu-id="6e802-166">ページ上のスロットまたはコンテナーからフラグメントを削除するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6e802-166">To remove a fragment from a slot or container on a page, follow these steps.</span></span>
 
-1. <span data-ttu-id="2a080-167">左のアウトライン ウィンドウで、削除するフラグメントの名前の横にある省略記号 (**...**)を選択し、ごみ箱記号を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-167">In the outline pane on the left, select the ellipsis (**...**) next to the name of the fragment to be removed, and then select the trash can symbol.</span></span>  <span data-ttu-id="2a080-168">または、キャンバスでフラグメントを選択し、フラグメントのツールバーにあるごみ箱の記号を選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="2a080-168">Alternately, you can select the fragment in the canvas and select the trash can symbol in the fragment's toolbar.</span></span>
-1. <span data-ttu-id="2a080-169">フラグメントを削除するかどうかを確認するメッセージが表示されたら、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-169">When you're prompted to confirm that you want to remove the fragment, select **OK**.</span></span>
+1. <span data-ttu-id="6e802-167">左のアウトライン ウィンドウで、削除するフラグメントの名前の横にある省略記号 (**...**)を選択し、ごみ箱記号を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-167">In the outline pane on the left, select the ellipsis (**...**) next to the name of the fragment to be removed, and then select the trash can symbol.</span></span>  <span data-ttu-id="6e802-168">または、キャンバスでフラグメントを選択し、フラグメントのツールバーにあるごみ箱の記号を選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="6e802-168">Alternately, you can select the fragment in the canvas and select the trash can symbol in the fragment's toolbar.</span></span>
+1. <span data-ttu-id="6e802-169">フラグメントを削除するかどうかを確認するメッセージが表示されたら、**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-169">When you're prompted to confirm that you want to remove the fragment, select **OK**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2a080-170">ページからフラグメントを削除する場合は、そのページからそのフラグメントへの参照を削除するだけです。</span><span class="sxs-lookup"><span data-stu-id="2a080-170">When you remove a fragment from a page, you just remove the reference to it from that page.</span></span> <span data-ttu-id="2a080-171">サイトからフラグメントを削除することは**ありません**。</span><span class="sxs-lookup"><span data-stu-id="2a080-171">You do **not** delete the fragment from your site.</span></span> <span data-ttu-id="2a080-172">サイトからフラグメントを削除するには、フラグメント インスペクター ユーザーインターフェイス (UI) を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a080-172">To delete fragments from your site, you must use the fragment inspector user interface (UI).</span></span> <span data-ttu-id="2a080-173">すべてのページ、テンプレート、またはその他のフラグメントで、フラグメントが参照されていない場合にのみ、フラグメントをサイトから削除することができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-173">You can delete fragments from a site only if they aren't currently referenced by any pages, templates, or other fragments.</span></span>
+> <span data-ttu-id="6e802-170">ページからフラグメントを削除する場合は、そのページからそのフラグメントへの参照を削除するだけです。</span><span class="sxs-lookup"><span data-stu-id="6e802-170">When you remove a fragment from a page, you just remove the reference to it from that page.</span></span> <span data-ttu-id="6e802-171">サイトからフラグメントを削除することは**ありません**。</span><span class="sxs-lookup"><span data-stu-id="6e802-171">You do **not** delete the fragment from your site.</span></span> <span data-ttu-id="6e802-172">サイトからフラグメントを削除するには、フラグメント インスペクター ユーザーインターフェイス (UI) を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e802-172">To delete fragments from your site, you must use the fragment inspector user interface (UI).</span></span> <span data-ttu-id="6e802-173">すべてのページ、テンプレート、またはその他のフラグメントで、フラグメントが参照されていない場合にのみ、フラグメントをサイトから削除することができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-173">You can delete fragments from a site only if they aren't currently referenced by any pages, templates, or other fragments.</span></span>
 
-### <a name="edit-a-fragment"></a><span data-ttu-id="2a080-174">フラグメントの編集</span><span class="sxs-lookup"><span data-stu-id="2a080-174">Edit a fragment</span></span>
+### <a name="edit-a-fragment"></a><span data-ttu-id="6e802-174">フラグメントの編集</span><span class="sxs-lookup"><span data-stu-id="6e802-174">Edit a fragment</span></span>
 
-<span data-ttu-id="2a080-175">フラグメントを編集するには、フラグメント エディター UI を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a080-175">To edit fragments, you must use the fragment editor UI.</span></span> <span data-ttu-id="2a080-176">この制限は仕様です。</span><span class="sxs-lookup"><span data-stu-id="2a080-176">This restriction is by design.</span></span> <span data-ttu-id="2a080-177">作成者が、特定のページでモジュールを編集するプロセスを、多くのページで共有される可能性のあるフラグメントを編集するプロセスと混同しないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="2a080-177">It helps guarantee that authors don't confuse the process of editing the modules for a specific page with the process of editing fragments that might be shared across many pages.</span></span>
+<span data-ttu-id="6e802-175">フラグメントを編集するには、フラグメント エディター UI を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6e802-175">To edit fragments, you must use the fragment editor UI.</span></span> <span data-ttu-id="6e802-176">この制限は仕様です。</span><span class="sxs-lookup"><span data-stu-id="6e802-176">This restriction is by design.</span></span> <span data-ttu-id="6e802-177">作成者が、特定のページでモジュールを編集するプロセスを、多くのページで共有される可能性のあるフラグメントを編集するプロセスと混同しないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="6e802-177">It helps guarantee that authors don't confuse the process of editing the modules for a specific page with the process of editing fragments that might be shared across many pages.</span></span>
 
-<span data-ttu-id="2a080-178">フラグメントを編集するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="2a080-178">To edit a fragment, follow these steps.</span></span>
+<span data-ttu-id="6e802-178">フラグメントを編集するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6e802-178">To edit a fragment, follow these steps.</span></span>
 
-1. <span data-ttu-id="2a080-179">左のナビゲーション ウィンドウで、**フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-179">In the navigation pane on the left, select **Fragments**.</span></span>
-1. <span data-ttu-id="2a080-180">**フラグメント**下で、編集するフラグメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="2a080-180">Under **Fragments**, select the fragment to edit.</span></span>
-1. <span data-ttu-id="2a080-181">必要に応じて、フラグメントのモジュール プロパティと構造を編集します。</span><span class="sxs-lookup"><span data-stu-id="2a080-181">Edit the fragment's module properties and structure as you require.</span></span> <span data-ttu-id="2a080-182">このプロセスは、ページ エディター ビューで編集するモジュールの編集プロセスに似ています。</span><span class="sxs-lookup"><span data-stu-id="2a080-182">The process resembles the process for editing modules are edited in the page editor view.</span></span>
+1. <span data-ttu-id="6e802-179">左のナビゲーション ウィンドウで、**フラグメント**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-179">In the navigation pane on the left, select **Fragments**.</span></span>
+1. <span data-ttu-id="6e802-180">**フラグメント**下で、編集するフラグメントを選択します。</span><span class="sxs-lookup"><span data-stu-id="6e802-180">Under **Fragments**, select the fragment to edit.</span></span>
+1. <span data-ttu-id="6e802-181">必要に応じて、フラグメントのモジュール プロパティと構造を編集します。</span><span class="sxs-lookup"><span data-stu-id="6e802-181">Edit the fragment's module properties and structure as you require.</span></span> <span data-ttu-id="6e802-182">このプロセスは、ページ エディター ビューで編集するモジュールの編集プロセスに似ています。</span><span class="sxs-lookup"><span data-stu-id="6e802-182">The process resembles the process for editing modules are edited in the page editor view.</span></span>
 
-<span data-ttu-id="2a080-183">ページ、テンプレート、または親フラグメントでフラグメントを選択し、右側のプロパティ ウィンドウで**フラグメントの編集**を選択することによって、フラグメントを編集することもできます。</span><span class="sxs-lookup"><span data-stu-id="2a080-183">You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.</span></span>
+<span data-ttu-id="6e802-183">ページ、テンプレート、または親フラグメントでフラグメントを選択し、右側のプロパティ ウィンドウで**フラグメントの編集**を選択することによって、フラグメントを編集することもできます。</span><span class="sxs-lookup"><span data-stu-id="6e802-183">You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="2a080-184">追加リソース</span><span class="sxs-lookup"><span data-stu-id="2a080-184">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="6e802-184">追加リソース</span><span class="sxs-lookup"><span data-stu-id="6e802-184">Additional resources</span></span>
 
-[<span data-ttu-id="2a080-185">テンプレートとレイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="2a080-185">Templates and layouts overview</span></span>](templates-layouts-overview.md)
+[<span data-ttu-id="6e802-185">テンプレートとレイアウトの概要</span><span class="sxs-lookup"><span data-stu-id="6e802-185">Templates and layouts overview</span></span>](templates-layouts-overview.md)
 
-[<span data-ttu-id="2a080-186">テンプレートの使用</span><span class="sxs-lookup"><span data-stu-id="2a080-186">Work with templates</span></span>](work-with-templates.md)
+[<span data-ttu-id="6e802-186">テンプレートの使用</span><span class="sxs-lookup"><span data-stu-id="6e802-186">Work with templates</span></span>](work-with-templates.md)
 
-[<span data-ttu-id="2a080-187">プリセット レイアウトの使用</span><span class="sxs-lookup"><span data-stu-id="2a080-187">Work with preset layouts</span></span>](work-with-layouts.md)
+[<span data-ttu-id="6e802-187">プリセット レイアウトの使用</span><span class="sxs-lookup"><span data-stu-id="6e802-187">Work with preset layouts</span></span>](work-with-layouts.md)
 
-[<span data-ttu-id="2a080-188">公開グループで動作</span><span class="sxs-lookup"><span data-stu-id="2a080-188">Work with publish groups</span></span>](publish-groups.md)
+[<span data-ttu-id="6e802-188">公開グループで動作</span><span class="sxs-lookup"><span data-stu-id="6e802-188">Work with publish groups</span></span>](publish-groups.md)
