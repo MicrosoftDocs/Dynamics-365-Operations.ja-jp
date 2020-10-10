@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771286"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893366"
 ---
 # <a name="generate-printable-fti-forms"></a>印刷可能な FTI フォームを生成する
 
@@ -111,7 +111,7 @@ FTI フォームを生成するために、範囲または選択のいずれか�
 ER フレームワークは現在、生成されたドキュメントのために次の出力先をサポートしています。
 
 - **ダウンロードしたファイル** – 生成されたフォームは、ブラウザーを使用して保存することができるダウンロードとして提供されます。
-- **画面** – 生成された FTI フォームを Excel 形式でプレビューするために、Microsoft Office 365 Excel が使用されます。
+- **画面** – 生成された FTI フォームを Excel 形式でプレビューするために、Microsoft 365 Excel が使用されます。
 - **SharePoint フォルダー** – 生成されたフォームはドキュメント管理フレームワークの設定に基づいて保管されます。
 - **アプリケーション アーカイブ** – 生成されたフォームは、Microsoft Azure ストレージ内の実行ログ レコードの添付ファイルとして保管されます。
 - **電子メール** – 生成されたフォームは電子メールの添付ファイルとして送信されます。

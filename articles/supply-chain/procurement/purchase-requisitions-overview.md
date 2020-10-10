@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b365bf99fcb5c97a1afe1675ddcf34a0db8f07
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e09c4ebd3ee978076ac4f1d0b71041e7c1e954be
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207859"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826903"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -157,7 +157,7 @@ ms.locfileid: "3207859"
 **購買要求の詳細** ページの **保留** チェック ボックスを選択すると、購買要求を保留にすることができます。 購買要求の処理は、チェック ボックスをオフにして、保留を解除した後にのみ実行できます。  
 
 > [!NOTE]
-> eProcurement では、仕入先は購買要求の RFQ によって代替明細行を追加できる場合があります。 この場合、購買要求は、承認された代替明細行に反映します。
+> e-procurement では、仕入先は購買要求の RFQ によって代替明細行を追加できる場合があります。 この場合、購買要求は、承認された代替明細行に反映します。
 
 ## <a name="demand-consolidation"></a>需要連結
 複数の購買要求からの購買要求明細行を連結すると、仕入先との交渉力が高まり、有利な商品価格決定、配送費用および手数料の低減、間接費の削減を実現できます。  

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766763"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828947"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
 [!include [banner](includes/preview-feature.md)]
 
-Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用することで、簡単に休暇を申請することができ、Microsoft Teams で休暇の残日数情報を表示することができます。 ユーザーはボットと対話して情報を要求できます。 **休暇** タブには、より詳細な情報が表示されます。
+Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用することで、簡単に休暇を申請することができ、Microsoft Teams で休暇の残日数情報を表示することができます。 ボットと対話して情報を要求し、休暇申請を開始することができます。 **休暇** タブには、より詳細な情報が表示されます。 さらに、Human Resources アプリの外で、チームやチャットで今後の休暇についての情報を送信することもできます。
 
 ## <a name="install-the-app"></a>アプリのインストール
 
@@ -56,8 +56,8 @@ Human Resources アプリは、Teams ストアにあります。
 
 複数の Human Resources インスタンスへのアクセス許可がある場合は、 **設定** タブで接続先の環境を選択でき ます。
 
-> [!WARNING]
-> 現在、このアプリはシステム管理者のセキュリティ ロールに対応していません。システム管理者アカウントでログインすると、エラーメッセージが表示されます。 別のアカウントでログインするには、**設定** タブで **アカウントの切り替え** ボタンを選択し、システム管理者権限のないユーザー アカウントでログインします。
+> [!NOTE]
+> アプリはシステム管理者セキュリティ ロールをサポートするようになりました。
  
 ## <a name="use-the-bot"></a>ボットの使用
 
@@ -130,13 +130,33 @@ Human Resources アプリは、Teams ストアにあります。
 
    ![Teams Human Resources 休暇アプリが下書きを編集します](./media/hr-teams-leave-app-drafts-edit.png)
    
-### <a name="teams-notifications"></a>Teams の通知
+### <a name="respond-to-teams-notifications"></a>Teams 通知への対応
 
 自分または自分が承認者である作業者が休暇申請を送信すると、Teams の Human Resources アプリで通知を受け取ります。 通知を選択して表示することができます。 通知は、**チャット** 領域にも表示されます。
 
 承認者の場合は、通知で **承認** または **拒否** を選択できます。 オプション メッセージを指定することもできます。
 
 ![Teams の Human Resources アプリの休暇申請通知](./media/hr-teams-leave-app-notification.png)
+
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>同僚に次の休暇情報を送信する
+
+Teams 向けの Human Resources アプリをインストールすると、チームやチャットで今後の休暇の情報を同僚に簡単に送信できます。
+
+1. チームまたは Teams のチャットで、チャット ウィンドウの下にある人事管理ボタンを選択します。
+
+   ![チャット ウィンドウの下の人事管理ボタン](./media/hr-teams-leave-app-chat-button.png)
+
+2. 共有する休暇申請を選択します。 休暇申請の下書きを共有する場合は、まず **下書き** を選択します。
+
+   ![共有する今後の休暇申請の選択](./media/hr-teams-leave-app-chat-search.png)
+
+休暇申請がチャットに表示されます。
+
+![Human Resources の休暇申請カード](./media/hr-teams-leave-app-chat-card.png)
+
+申請の下書きを共有すると、下書きとして表示されます。
+
+![Human Resources の休暇申請カードの下書き](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>チームの休暇カレンダーの表示
 
@@ -164,9 +184,15 @@ Microsoft Teams で Dynamics 365 Human Resources Botを使用している場合�
 
 Microsoft Teams でアプリの管理設定を制御するには、 [Microsoft Teams 管理センター](https://admin.teams.microsoft.com/)に移動してください。
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid と Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams、Azure Event Grid、Azure Cosmos DB
 
-Teams 内で Dynamics 365 Human Resources アプリの通知機能を使用する場合、特定の顧客データは、テナントの Human Resources サービスが展開される地域外に流出します。 Dynamics 365 Human Resources は、従業員の休暇申請とワークフロー タスクの詳細を Microsoft Azure Event Grid と Microsoft Teams に送信します。 このデータは、最大 24 時間保存され、米国で処理され、転送中および保存中に暗号化され、トレーニングやサービスの改善のために Microsoft またはそのサブプロセッサによって使用されることはありません。
+Microsoft Teams 内で Dynamics 365 Human Resources アプリを使用する場合、特定の顧客データが、テナントの Human Resources サービスが展開されている地域外に流出する可能性があります。
+
+Dynamics 365 Human Resources は、従業員の休暇申請とワークフロー タスクの詳細を Microsoft Azure Event Grid と Microsoft Teams に送信します。 このデータは、Microsoft Azure Event Grid に最大 24 時間保存でき、米国内で処理され、転送中および保存中に暗号化され、トレーニングやサービスの改善のために Microsoft またはそのサブプロセッサによって使用されることはありません。 データが Teams 内のどこに格納されているかを把握するには、[Microsoft Teams 内のデータの場所](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true) を参照してください。
+
+Human Resources アプリでチャット ボットと会話しながら、会話の内容を Azure Cosmos DB に保存し、Microsoft Teams に送信することができます。 このデータは Azure Cosmos DB に最大24時間格納され、テナントの Human Resources サービスが展開されている地域外で処理される可能性があり、転送中および保存中に暗号化され、トレーニングやサービス改善のために Microsoft またはそのサブプロセッサが使用することはありません。 データが Teams 内のどこに格納されているかを把握するには、[Microsoft Teams 内のデータの場所](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true) を参照してください。
+ 
+組織または組織内のユーザーの Microsoft Teams の Human Resources アプリへのアクセスを制限するには、[Microsoft Teams におけるアプリのアクセス許可ポリシーの管理](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies) を参照してください。
 
 ## <a name="see-also"></a>参照
 

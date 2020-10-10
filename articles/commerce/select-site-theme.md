@@ -3,7 +3,7 @@ title: サイト テーマの選択
 description: このトピックでは、Microsoft Dynamics 365 Commerce のサイトのテーマを設定または変更する方法について説明します。
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002754"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817709"
 ---
 # <a name="select-a-site-theme"></a>サイト テーマの選択
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ ms.locfileid: "3002754"
 
 サイトのレイアウトおよびスタイル (たとえば、フォント、サイズ、および色) は、選択し、サイトに適用するテーマによって定義されます。 テーマは会社の開発者が作成し、配置します。 テーマの概要については、[テーマの概要](http://) を参照してください。 テーマを作成し、配置する方法の詳細については、[新しいテーマの作成](http://) を参照してください。
 
-既定では、サイトを最初に作成した時に、**Fabrikam** という名前のテーマが使用されます。 この既定のテーマは、スタート キットの一部として提供されます。 サイトに追加のテーマを配置した後、サイトをコンフィギュレーションして、それらの 1 つを使用することができます。
+既定では、サイトを最初に作成した時に、**Fabrikam** という名前のテーマが使用されます。 この既定のテーマは、Commerce モジュール ライブラリの一部として提供されます。 サイトに追加のテーマを配置した後、サイトをコンフィギュレーションして、それらの 1 つを使用することができます。
 
 ## <a name="select-the-site-theme"></a>サイトのテーマの選択
 

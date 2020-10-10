@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383093"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837266"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスの設定
 
@@ -399,6 +399,9 @@ ms.locfileid: "3383093"
 <tr class="odd">
 <td>作業テンプレートのコード</td>
 <td>プロセスの作業を作成する作業テンプレートを選択します。 たとえば、発注書の品目を受け取る場合、プット アウェイ作業は、作業テンプレートに基づいて生成されます。 作業テンプレートを選択しない場合、Supply Chain Management はクエリ基準に基づいてテンプレートを割り当てます。 作業のテンプレートの詳細については、<a href="control-warehouse-location-directives.md">作業テンプレートと場所ディレクティブでの倉庫作業の制御</a> を参照してください。</td>
+<tr class="even">
+<td>作業明細行リストの表示</td>
+<td>作業者が現在選択しているピッキング作業の明細行を表示、操作する方法についてのオプションを選択します。 このオプションの詳細については、<a href="pick-line-overview.md">モバイル デバイスのメニュー項目の設定</a>を参照して、ピック行の概要を指定してください。</td>
 </tr>
 </tbody>
 </table>

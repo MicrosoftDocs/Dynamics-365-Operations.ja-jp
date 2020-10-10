@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce の管理者ラーニング カタログ
-description: Dynamics 365 Commerce のすべてのトレーニング オプションを見つけます。
+description: Dynamics 365 Commerce で管理者ロールのすべてのトレーニング オプションを検索します。
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821207"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Dynamics 365 Commerce 管理者向けラーニング カタログ
 
@@ -39,7 +39,7 @@ ms.locfileid: "3793396"
 
 | コンテンツ  | 説明  | 書式設定  | 期間    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Dynamics 365 Commerce の配置](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | このラーニング パスでは、各小売業者のビジネス ニーズに合った正しいトポロジを使用して、Commerce 実装を成功させるために、Dynamics 365 Commerce 環境の配置およびプロビジョニング後の手順の実行方法について説明します。                               | 無料の自習型オンライン学習パス | 5 時間   |
+| [Dynamics 365 Commerce の展開と拡張](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | このラーニング パスでは、各小売業者のビジネス ニーズに合った正しいトポロジを使用して、Commerce 実装を成功させるために、Dynamics 365 Commerce 環境の配置およびプロビジョニング後の手順の実行方法について説明します。 | 無料の自習型オンライン学習パス | 5 時間   |
 | [Dynamics 365 Commerce での販売時点管理 (POS) のコンフィギュレーションと使用](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | トランザクション データは販売時点管理 (POS) で作成され、処理のため Dynamics 365 Commerce Headquarters にアップロードされます。 このラーニング パスでは、POS をインストールして有効にする方法と、POS で毎日のトランザクションを作成する方法について説明します。 | 無料の自習型オンライン学習パス | 4.5 時間 |
 | [Dynamics 365 Commerce でのコール センターのコンフィギュレーションと作業](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce は、コール センター チャネルに特定の注文処理設定をデフォルト設定する機能と、コール センター ユーザーによって作成された販売注文にデータの既定値を提供するオムニチャネル ソリューションです。                                  | 無料の自習型オンライン学習パス | 2 時間   |
 

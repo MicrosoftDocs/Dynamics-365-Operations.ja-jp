@@ -3,7 +3,7 @@ title: パーソナライズされた推奨事項のオプト アウト
 description: このトピックでは、顧客がMicrosoft Dynamics 365 Commerceでパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51c8c0e2743b67df9d66a8c45ab7a69597f4002
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664933"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817526"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプト アウト
 
@@ -74,7 +74,7 @@ Commerce バック オフィスのアカウント管理では、小売業者は�
 1. 小売業者は、ユーザーに代わって個人的な推奨事項データを取得するカスタム拡張機能を作成します。 モジュールの作成、既存のモジュールの複製、Retail Server API の呼び出し、データ アクションの呼び出しの詳細については、[オンライン チャネルの拡張性](e-commerce-extensibility/overview.md)を参照してください。
 2. カスタム拡張機能は、**推奨を取得**のコア データ アクションに対する呼び出しを行い、リストの要件に基づいて必要な情報を渡します。 **おすすめ**リストの場合は、拡張機能によって、正しいリスト名と顧客 ID がデータ アクションに渡される必要があります。
 
-    カスタム拡張機能を作成する 1 つの方法として、推奨結果を返すために使用される既存の製品収集モジュールを複製する方法があります。 この既存のモジュールを複製することによって、小売業者は既存のコードを変更し、推奨結果を CSV ファイルにエクスポートする新しいボタンを追加することができます。 詳細については、[スタート キット モジュールの複製](e-commerce-extensibility/clone-starter-module.md)および[製品収集モジュール](product-collection-module-overview.md)を参照してください。
+    カスタム拡張機能を作成する 1 つの方法として、推奨結果を返すために使用される既存の製品収集モジュールを複製する方法があります。 この既存のモジュールを複製することによって、小売業者は既存のコードを変更し、推奨結果を CSV ファイルにエクスポートする新しいボタンを追加することができます。 詳細については、[モジュール ライブラリ モジュールの複製](e-commerce-extensibility/clone-starter-module.md) および [製品収集モジュール](product-collection-module-overview.md) を参照してください。
 
     Retail Server API ライブラリの完全表示については、[Retail Server の顧客およびコンシューマー API](dev-itpro/retail-server-customer-consumer-api.md)を参照してください。
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d6e0f2c914b8d348ef6eac42557fb46c53df04a9
-ms.sourcegitcommit: d16d370dab734e09312cb06711beca9cca52d4c9
+ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2809523"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893250"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Microsoft Excel のビジネス ドキュメント テンプレートへの新しいフィールドの追加
 
@@ -67,7 +67,7 @@ ER コンフィギュレーションをインポートする方法の詳細に�
 5.  **タイトル**フィールドに、新しいテンプレートのタイトルとして**自由書式の請求書 (Excel) Contoso** を入力します。
 6.  **OK** を選択して、編集プロセスの開始を確認します。
 
-BDM テンプレートのエディターページが表示されます。 Microsoft Office 365 を使用して、選択したテンプレートを埋め込みコントロールでオンラインで編集できます。
+BDM テンプレートのエディターページが表示されます。 Microsoft 365 を使用して、選択したテンプレートを埋め込みコントロールでオンラインで編集できます。
 
 ![BDM テンプレートのエディター ページ](./media/BDM-AddFldExcel-EditableTemplate.png)
 
