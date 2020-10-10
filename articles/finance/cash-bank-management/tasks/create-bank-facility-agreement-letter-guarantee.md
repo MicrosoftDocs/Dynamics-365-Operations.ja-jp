@@ -1,7 +1,7 @@
 ---
 title: 信用保証状の銀行融資契約の作成
 description: このタスクは、信用保証状を処理する銀行融資契約を作成します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -12,48 +12,48 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 106ce3e9e6263802f9b28e0b0c95ac554e38f67d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 165552cade2a38d9605240ab6a8ff423585786ca
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141699"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899496"
 ---
-# <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a><span data-ttu-id="99a75-103">信用保証状の銀行融資契約の作成</span><span class="sxs-lookup"><span data-stu-id="99a75-103">Create a bank facility agreement for the letter of guarantee</span></span>
+# <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a><span data-ttu-id="fe13a-103">信用保証状の銀行融資契約の作成</span><span class="sxs-lookup"><span data-stu-id="fe13a-103">Create a bank facility agreement for the letter of guarantee</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="99a75-104">このタスクは、信用保証状を処理する銀行融資契約を作成します。</span><span class="sxs-lookup"><span data-stu-id="99a75-104">This task creates a bank facility agreement to process a letter of guarantee.</span></span> <span data-ttu-id="99a75-105">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="99a75-105">This task uses the USMF demo company.</span></span> 
+<span data-ttu-id="fe13a-104">このタスクは、信用保証状を処理する銀行融資契約を作成します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-104">This task creates a bank facility agreement to process a letter of guarantee.</span></span> <span data-ttu-id="fe13a-105">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-105">This task uses the USMF demo company.</span></span> 
 
 
-## <a name="create-bank-facility-agreement"></a><span data-ttu-id="99a75-106">銀行融資契約の作成</span><span class="sxs-lookup"><span data-stu-id="99a75-106">Create Bank facility agreement</span></span>
-1. <span data-ttu-id="99a75-107">[現金および銀行管理] > [信用保証状] > [銀行融資契約] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-107">Go to Cash and bank management > Letters of guarantee > Bank facility agreements.</span></span>
-2. <span data-ttu-id="99a75-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-108">Click New.</span></span>
-3. <span data-ttu-id="99a75-109">[契約番号] フィールドで、トランザクションの銀行の契約番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-109">In the Agreement number field, enter the bank agreement number for the transaction.</span></span>
-4. <span data-ttu-id="99a75-110">[銀行口座] フィールドで、信用保証状が開いている銀行口座番号を選択します。</span><span class="sxs-lookup"><span data-stu-id="99a75-110">In the Bank account field, select the bank account number for which the letter of guarantee is open.</span></span> 
-5. <span data-ttu-id="99a75-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-111">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="99a75-112">[開始日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-112">In the Start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="99a75-113">[終了日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-113">In the End date field, enter a date and time.</span></span>
-8. <span data-ttu-id="99a75-114">[一般] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="99a75-114">Toggle the expansion of the General section.</span></span>
-9. <span data-ttu-id="99a75-115">[行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-115">Click Add line.</span></span>
-10. <span data-ttu-id="99a75-116">[融資タイプ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="99a75-116">In the Facility type field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="99a75-117">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="99a75-117">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="99a75-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-118">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="99a75-119">[限度] フィールドに、銀行との交渉に基づく金額を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-119">In the Limit field, enter the amount negotiated with the bank.</span></span>
-14. <span data-ttu-id="99a75-120">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-120">Click Save.</span></span>
-15. <span data-ttu-id="99a75-121">[信用保証状] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="99a75-121">Toggle the expansion of the Letter of guarantee section.</span></span>
-16. <span data-ttu-id="99a75-122">[計算方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="99a75-122">In the Calculation method field, select an option.</span></span>
-    * <span data-ttu-id="99a75-123">必要に応じて、現金保証、払出コミッション、拡張コミッション、値コミッションの増加、または値コミッションの減少の計算方法および割合の詳細を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-123">Enter the calculation method and percentage details for the Cash margin, Issuance commission, Extension commission, Increase value commission, or Decrease value commission, as appropriate.</span></span>   
-17. <span data-ttu-id="99a75-124">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-124">Click Save.</span></span>
+## <a name="create-bank-facility-agreement"></a><span data-ttu-id="fe13a-106">銀行融資契約の作成</span><span class="sxs-lookup"><span data-stu-id="fe13a-106">Create Bank facility agreement</span></span>
+1. <span data-ttu-id="fe13a-107">[現金および銀行管理] > [信用保証状] > [銀行融資契約] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-107">Go to Cash and bank management > Letters of guarantee > Bank facility agreements.</span></span>
+2. <span data-ttu-id="fe13a-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-108">Click New.</span></span>
+3. <span data-ttu-id="fe13a-109">[契約番号] フィールドで、トランザクションの銀行の契約番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-109">In the Agreement number field, enter the bank agreement number for the transaction.</span></span>
+4. <span data-ttu-id="fe13a-110">[銀行口座] フィールドで、信用保証状が開いている銀行口座番号を選択します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-110">In the Bank account field, select the bank account number for which the letter of guarantee is open.</span></span> 
+5. <span data-ttu-id="fe13a-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-111">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="fe13a-112">[開始日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-112">In the Start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="fe13a-113">[終了日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-113">In the End date field, enter a date and time.</span></span>
+8. <span data-ttu-id="fe13a-114">[一般] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="fe13a-114">Toggle the expansion of the General section.</span></span>
+9. <span data-ttu-id="fe13a-115">[行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-115">Click Add line.</span></span>
+10. <span data-ttu-id="fe13a-116">[融資タイプ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="fe13a-116">In the Facility type field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="fe13a-117">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-117">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="fe13a-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-118">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="fe13a-119">[限度] フィールドに、銀行との交渉に基づく金額を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-119">In the Limit field, enter the amount negotiated with the bank.</span></span>
+14. <span data-ttu-id="fe13a-120">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-120">Click Save.</span></span>
+15. <span data-ttu-id="fe13a-121">[信用保証状] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="fe13a-121">Toggle the expansion of the Letter of guarantee section.</span></span>
+16. <span data-ttu-id="fe13a-122">[計算方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-122">In the Calculation method field, select an option.</span></span>
+    * <span data-ttu-id="fe13a-123">必要に応じて、現金保証、払出コミッション、拡張コミッション、値コミッションの増加、または値コミッションの減少の計算方法および割合の詳細を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-123">Enter the calculation method and percentage details for the Cash margin, Issuance commission, Extension commission, Increase value commission, or Decrease value commission, as appropriate.</span></span>   
+17. <span data-ttu-id="fe13a-124">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-124">Click Save.</span></span>
 
-## <a name="extend-bank-facility-agreement"></a><span data-ttu-id="99a75-125">銀行融資契約の拡張</span><span class="sxs-lookup"><span data-stu-id="99a75-125">Extend bank facility agreement</span></span>
-1. <span data-ttu-id="99a75-126">[拡張] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="99a75-126">Click Extend to open the drop dialog.</span></span>
-2. <span data-ttu-id="99a75-127">[新しい契約番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-127">In the New agreement number field, type a value.</span></span>
-3. <span data-ttu-id="99a75-128">[終了日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="99a75-128">In the End date field, enter a date and time.</span></span>
-4. <span data-ttu-id="99a75-129">[拡張] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-129">Click Extend.</span></span>
-5. <span data-ttu-id="99a75-130">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="99a75-130">Click Save.</span></span>
-6. <span data-ttu-id="99a75-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="99a75-131">Close the page.</span></span>
+## <a name="extend-bank-facility-agreement"></a><span data-ttu-id="fe13a-125">銀行融資契約の拡張</span><span class="sxs-lookup"><span data-stu-id="fe13a-125">Extend bank facility agreement</span></span>
+1. <span data-ttu-id="fe13a-126">[拡張] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="fe13a-126">Click Extend to open the drop dialog.</span></span>
+2. <span data-ttu-id="fe13a-127">[新しい契約番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-127">In the New agreement number field, type a value.</span></span>
+3. <span data-ttu-id="fe13a-128">[終了日] フィールドで、日付と時刻を入力します。</span><span class="sxs-lookup"><span data-stu-id="fe13a-128">In the End date field, enter a date and time.</span></span>
+4. <span data-ttu-id="fe13a-129">[拡張] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-129">Click Extend.</span></span>
+5. <span data-ttu-id="fe13a-130">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fe13a-130">Click Save.</span></span>
+6. <span data-ttu-id="fe13a-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fe13a-131">Close the page.</span></span>
 
