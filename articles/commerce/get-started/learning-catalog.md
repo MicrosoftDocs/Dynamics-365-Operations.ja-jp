@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a6a1fc294bb212481dd2a2d24c108cf7a665a546
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ed7ac72d47d5efd60b8a705e7ab0fa7e4edd96a4
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821136"
 ---
 # <a name="dynamics-365-commerce-learning-catalog"></a>Dynamics 365 Commerce ラーニング カタログ 
 
@@ -123,11 +123,7 @@ Dynamics 365 Commerce アプリケーションのユーザーとして、ロー�
 
     [Microsoft パートナーの販売およびマーケティング学習カタログ](learning-catalog-partner-sales.md)
 
-    [はじめに](learning-catalog-partner-sales.md#get-started)
-
-    [Commerce](learning-catalog-partner-sales.md#commerce)
-
-    [E コマース](learning-catalog-partner-sales.md#e-commerce)
+    [使用開始](learning-catalog-partner-sales.md#get-started)
 
     :::column-end:::
 

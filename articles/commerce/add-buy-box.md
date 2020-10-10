@@ -3,7 +3,7 @@ title: 購入ボックス モジュール
 description: このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761300"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817088"
 ---
 # <a name="buy-box-module"></a>購入ボックス モジュール
 
@@ -75,9 +75,12 @@ ms.locfileid: "3761300"
 - **在庫** - 在庫設定の適用方法については、[在庫設定を適用する](inventory-settings.md)を参照してください。
 - **カートに追加する** - このプロパティは、品目がカートに追加された後の動作を指定する目的で使用されます。 使用可能な値は、**カートに移動する**、**カートに移動しない**、**通知を表示する** です。 この値が **カートに移動する**に設定されている場合は 、ユーザーが品目を追加した後はカートのページに移動します。 この値が **カートに移動しない**に設定されている場合は 、ユーザーが品目を追加した後もカートのページに移動しません。 この値が**通知を表示する**に設定されている場合、ユーザーに確認の通知が表示され、引き続き製品の詳細ページを参照することができます。 
 
-    次の画像では、Fabrikam サイトにおいて "カートに追加された" 際の確認通知の例を示しています。
+> [!IMPORTANT]
+> **カートに追加** サイト設定は、Dynamics 365 Commerce のリリース バージョン 10.0.11 で使用でき ます。 古いバージョンの Dynamics 365 Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 appsettings.json ファイルを更新する手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)を参照してください 。 
 
-    ![通知モジュールの例](./media/ecommerce-addtocart-notifications.PNG)
+次の画像では、Fabrikam サイトにおいて "カートに追加された" 際の確認通知の例を示しています。
+
+![通知モジュールの例](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit インタラクション
 
@@ -111,7 +114,7 @@ ms.locfileid: "3761300"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [店舗セレクター モジュール](store-selector.md)
 
@@ -132,3 +135,5 @@ ms.locfileid: "3761300"
 [ソーシャル共有モジュール](social-share-module.md)
 
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
+
+[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)

@@ -1,9 +1,9 @@
 ---
-title: スタート キットの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce スタート キットの概要を表示します。
+title: モジュール ライブラリの概要
+description: このトピックでは、Microsoft Dynamics 365 Commerce モジュール ライブラリの概要を表示します。
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,29 +18,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025905"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817829"
 ---
-# <a name="starter-kit-overview"></a>スタート キットの概要
-
+# <a name="module-library-overview"></a>モジュール ライブラリの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce スタート キットの概要を表示します。
+このトピックでは、Microsoft Dynamics 365 Commerce モジュール ライブラリの概要を表示します。
 
 ## <a name="overview"></a>概要
 
-Dynamics 365 Commerce スタート キットは、E コマースを構築するために使用できるモジュールの集合です。 モジュールには、ユーザー インターフェイス (UI) の側面と機能的動作の側面の両方があります。
+Dynamics 365 Commerce モジュール ライブラリは、E コマース Web サイトを構築するために使用できるモジュールの集合です。 モジュールには、ユーザー インターフェイス (UI) の側面と機能的動作の側面の両方があります。
 
-スタート キットのモジュールにテーマを適用して、概観を変更することができます。 テーマはカスケード スタイル シート (CSS) を使用します。 「Fabrikam」という名前の E コマース サイト用のテーマは、スタート キットの一部として提供され、参照として使用することができます。
+モジュール ライブラリのモジュールにテーマを適用して、概観を変更することができます。 テーマはカスケード スタイル シート (CSS) を使用します。 「Fabrikam」という名前の架空の E コマース サイト用のテーマは、モジュール ライブラリの一部として提供され、参照として使用できます。
 
-## <a name="starter-kit-modules"></a>スタート キットのモジュール
+## <a name="module-library-modules"></a>モジュール ライブラリ モジュール
 
-スタートキットでは、次のタイプのモジュールが提供されます。
+モジュール ライブラリでは、次のタイプのモジュールが提供されます:
 
 - **コンテナー モジュール** – コンテナー モジュールは他のモジュールのホストとして動作する単純なモジュールです。 その中のモジュールのレイアウトを制御します。
 - **マーケティング モジュール** – マーケティング モジュールには、ヒーロー、機能、コンテンツ ブロック、テキスト ブロック、ビデオ プレーヤー、およびカルーセル モジュールが含まれます。 これらのモジュールはすべて、コンテンツを表示するために使用できます。 任意のページに配置することができ、コンテンツ管理システム (CMS) からのデータによって発生します。

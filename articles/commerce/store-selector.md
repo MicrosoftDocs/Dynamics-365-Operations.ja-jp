@@ -3,7 +3,7 @@ title: 店舗セレクター モジュール
 description: このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646138"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818253"
 ---
 # <a name="store-selector-module"></a>店舗セレクター モジュール
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
@@ -65,7 +64,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 次の図は、PDP で使用される店舗セレクター モジュールの例を示しています。
 
-![店舗セレクター モジュールの例](./media/BOPIS.PNG)
+![PDP で使用される店舗セレクター モジュールの例](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>店舗検索モード
 
@@ -73,7 +72,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 次の図は、店舗の場所ページのマップ モジュールと共に使用される店舗セレクター モジュールの例を示しています。
 
-![店舗セレクター モジュールの例](./media/ecommerce-Storelocator.PNG)
+![保管場所ページの店舗セレクター モジュールとマップ モジュールの例](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>マップのレンダリング
 
@@ -127,11 +126,11 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
  
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [購入ボックス モジュール](add-buy-box.md)
 
-[買い物カゴ モジュール](add-cart-module.md)
+[カート モジュール](add-cart-module.md)
 
 [PDP のクイック ツアー](quick-tour-pdp.md)
 
