@@ -3,7 +3,7 @@ title: アカウント管理ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページの概要を示します。
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527611"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817805"
 ---
 # <a name="account-management-pages-overview"></a>アカウント管理ページの概要
 
@@ -46,7 +46,7 @@ ms.locfileid: "3527611"
 
 **マイ プロファイル** ページには、名前および電話番号など、顧客のアカウント情報が表示されます。 顧客は、このページでプロファイル情報を更新できます。 このページをカスタマイズして、マーケティング メールにオプトインするオプションなど、顧客アカウントに関する追加設定を含めることができます。
 
-以下の図は、スタート キットを使用してビルドされた**マイ プロファイル** ページの例を示します。
+以下の図は、モジュール ライブラリを使用してビルドされた**プロファイル** ページの例を示します。
 
 ![マイ プロファイル ページの例](./media/Account-Management-MyProfile.PNG)
 

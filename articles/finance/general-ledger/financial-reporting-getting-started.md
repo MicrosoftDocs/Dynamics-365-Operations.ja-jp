@@ -3,7 +3,7 @@ title: 財務諸表の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 08/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696691"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835113"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -148,9 +148,7 @@ ms.locfileid: "3696691"
 * Internet Explorer で、**設定**を選択し、**インターネット オプション** を選択します。 **セキュリティ**タブを選択し、[ 信頼済みサイト] を選択し、続いて**サイト**を選択します。 **この Web サイトをゾーンに追加する**で、 \*\.dynamics.com" (引用符は不要) を入力し、**追加**を選択します。 
 * Internet Explorer で、**設定**を選択し、**インターネット オプション** を選択します。 **セキュリティ**タブを選択し、信頼済みサイトを選択します。 [このゾーンのセキュリティ レベル] というラベルの付いた領域で、オプションを **中低**に変更します。
 * ブラウザーでポップアップ ブロッカーを無効にします。
-* ワークステーションは、Visual Studio .NET 4.6.2 またはそれ以上をインストールする必要があります。
-
-このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53345) からダウンロードしてインストールできます。
+* ワークステーションには、Microsoft .NET Framework 4.6.2 以降をインストールする必要があります。 このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53345) からダウンロードしてインストールできます。
 * Chrome ブラウザを使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 シークレットモードで起動している場合、ClickOnce の拡張機能がシークレットモードで有効化されていることを確認してください。 Chrome でサイン インできない場合は、「 Internet Explorer または Edge 使用時の問題 1 」で説明されている設定手順に従ってください 。 
 
 問題 2: ユーザーに Financial Reporting の使用に必要なアクセス許可が割り当てられていません。 

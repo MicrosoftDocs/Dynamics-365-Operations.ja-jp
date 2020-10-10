@@ -3,7 +3,7 @@ title: ギフト カード モジュール
 description: このトピックでは、ギフト カード モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4cc947b9d6f3cfa51bce2155170c49e9529d0f7d
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: fc47d590789c79c08af7555222aa7cc9409da23c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761084"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817429"
 ---
 # <a name="gift-card-module"></a>ギフト カード モジュール
 
@@ -35,10 +35,16 @@ ms.locfileid: "3761084"
 
 ギフト カード モジュールは、精算モジュールで使用することができ、電子商取引で使用される一般的な支払い方法であるギフトカードを受け付けることができます。 ギフト カード モジュールは Dynamics 365、SVS、Givex ギフト カードをサポートしています。 SVS と Givex のギフト カードは、Adyen の支払プロバイダーで経由で引き換えることができます。 SVS や Givex などの外部ギフト カードのサポートの詳細については、[外部ギフト カードのサポート](./dev-itpro/gift-card.md) を参照してください。
 
+> [!NOTE]
+> 精算フロー中の SVS および Givex ギフトカードの引き換えは、Dynamics 365 Commerce のリリース バージョン 10.0.11 で使用可能です。 
+
 ギフト カード モジュールは2つ使用できます。
 
 - **ギフト カード** - このモジュールは、精算ページで使用でき、支払/入金としてギフトカードを使用できます。 
 - **ギフト カードの残高** - このモジュールは、ギフトカードの残高を確認するために任意のページで使用できます。 このモジュールは、コマースのリリース 10.0.14 およびこれ以降でのみ利用できます。
+
+> [!NOTE]
+> ギフトカード残高チェック モジュールのサポートは、Dynamics 365 Commerce の営々ース バージョン 10.0.14 で使用可能です。
 
 以下の図は、精算ページにおけるギフト カード モジュールの例を示しています。
 
@@ -61,6 +67,9 @@ ms.locfileid: "3761084"
 - **SVS と Givex のギフト カード** - この設定が適用されている場合、ギフト カード モジュールは Givex や SVS ギフト カードの償還しかできなくなります。 この設定は、E コマース サイトのサインイン ユーザーと匿名ユーザーに対してサポートされます。
 - **Dynamics 365、SVS、Givex のギフト カード** - この設定が適用されている場合、ギフト カード モジュールは Dynamics 365、Givex、SVS ギフト カードを償還できます。 この設定は、E コマース サイトのサインイン ユーザーに対してのみサポートされます。
 
+> [!IMPORTANT]
+> これらの設定は、Dynamics 365 Commerce のリリース バージョン 10.0.11 で使用可能であり 、SVS や Givex のギフトカードに対応する必要がある場合にのみ必要となります。 古いバージョンの Dynamics 365 Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 appsettings.json ファイルを更新する手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)を参照してください 。 
+
 ## <a name="add-a-gift-card-module-to-a-page"></a>ギフト カード モジュールをページに追加する
 
 ギフト カード モジュールをチェックアウト ページに追加し、必要なプロパティを設定する方法については、[チェックアウト モジュール](add-checkout-module.md) を参照してください。
@@ -82,3 +91,5 @@ ms.locfileid: "3761084"
 [注文詳細のモジュール](order-confirmation-module.md)
 
 [外部ギフト カードのサポート](./dev-itpro/gift-card.md)
+
+[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)

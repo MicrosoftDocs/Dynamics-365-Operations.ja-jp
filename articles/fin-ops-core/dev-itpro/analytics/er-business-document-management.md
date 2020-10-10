@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258560"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893138"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258560"
 
 ビジネス ユーザーは、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国 / 地域の法的要件に従って発信ドキュメントの形式を構成できます。 また、生成されるドキュメントに配置されるアプリケーション データを指定するため、データフローを定義することもできます。 ER フレームワークは、定義済みテンプレートを使用して、Microsoft Office 形式 (Excel Workbooks または Word ドキュメント) で発信ドキュメントを生成します。 必要なドキュメントが生成されるときに、構成されたデータフローに従って、テンプレートに必要なデータが設定されます。 特定の発信ドキュメントを生成するために、ER ソリューションの一部として、構成された各形式を公開できます。 これは、異なる発信ドキュメントを生成するために使用できるテンプレートを含める ER 形式コンフィギュレーションによって、表示されます。 ビジネス ユーザーは、このフレームワークを使用して、必要なビジネス ドキュメントを管理できます。
 
-**ビジネス ドキュメント管理**は、ER フレームワークを基盤に構築されており、ビジネス ユーザーが Microsoft Office 365 サービスまたは適切な Microsoft Office デスクトップ アプリケーションを使用して、ビジネス ドキュメント テンプレートを編集することができます。 ドキュメントを編集する際には、ビジネス ドキュメントのデザインを変更したり、ソース コードの変更および新しい配置無しで、追加データ用のプレス ホルダーを追加したりします。 ER フレームワークには、ビジネス ドキュメントのテンプレートを更新するために必要な知識がありません。
+**ビジネス ドキュメント管理** は、ER フレームワークを基盤に構築されており、ビジネス ユーザーが Microsoft 365 サービスまたは適切な Microsoft Office デスクトップ アプリケーションを使用して、ビジネス ドキュメント テンプレートを編集することができます。 ドキュメントを編集する際には、ビジネス ドキュメントのデザインを変更したり、ソース コードの変更および新しい配置無しで、追加データ用のプレス ホルダーを追加したりします。 ER フレームワークには、ビジネス ドキュメントのテンプレートを更新するために必要な知識がありません。
 
 > [!NOTE]
 > ビジネス ドキュメント管理を使用すると、注文書や請求書などのビジネス ドキュメントの作成に使用されるテンプレートを変更できます。テンプレートが変更され新しいバージョンが発行されている間に、このバージョンは必要なビジネス ドキュメントの生成に使用されます。 ビジネス ドキュメント管理を使用して、既に生成されたビジネス ドキュメントを変更することはできません。
@@ -170,7 +170,7 @@ ER コンフィギュレーションのインポートの詳細については�
 選択したドキュメント タイプは会社固有であり、選択したドキュメント タイプがコンフィギュレーションされている会社のビジネス ドキュメント管理をユーザーが使用する場合に使用されます。 ユーザーがもう一つの会社のビジネス ドキュメント管理を使用している際、この会社にコンフィギュレーションされていない場合は、選択された同じドキュメント タイプが使われます。 ドキュメント タイプが構成されている際、**SharePoint ドキュメント**タイプ フィールドで選択されたものの代わりに使用されます。
 
 > [!NOTE]
-> **SharePoint ドキュメント タイプ**のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Office 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Office 365 のテンプレートの作成](#EditInOffice365) を参照してください。
+> **SharePoint ドキュメント タイプ**のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Microsoft 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Microsoft 365 でテンプレートを編集](#EditInOffice365) を参照してください。
 
 ## <a name="configure-access-permissions"></a>アクセス許可のコンフィギュレーション
 
@@ -295,13 +295,13 @@ ER コンフィギュレーションのインポートの詳細については�
 
 5. **OK** を選択して、編集プロセスの開始を確認します。
 
-**BDM テンプレート エディター** ページが開きます。 選択したテンプレートは、Office 365 を使用してオンライン編集できるようになります。
+**BDM テンプレート エディター** ページが開きます。 選択したテンプレートは、Microsoft 365 を使用してオンライン編集できるようになります。
 
 ![ビジネス ドキュメント管理のワークスペース ページ](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Office 365 でテンプレートを編集</a>
+### <a name=""></a><a name="EditInOffice365">Microsoft 365 でテンプレートを編集</a>
 
-Office 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure Blob Storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
+Microsoft 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの**レギュラー**から**太字**にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure Blob Storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
 
 ![ビジネス ドキュメント管理のテンプレートのエディター ページ](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Office 365 を使用してテンプレートを変更できます。 たとえ�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>**ドキュメントの編集**を選択したが、Finance and Operations の **BDM テンプレート エディター** ページが開く代わりに、Office 365 の Web ページに送信されました。
-これは、Office 365 リダイレクトに関する既知の問題です。 これは、最初に Office 365 に署名したときに発生します。 この問題を回避するには、ブラウザーの**戻る**ボタンを選択して戻ることができます。
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>**ドキュメントの編集** を選択しましたが、Finance and Operations の **BDM テンプレート エディター** ページが開く代わりに、Microsoft 365 の Web ページに移動しました。
+これは、Microsoft 365 リダイレクトに関する既知の問題です。 これは、初めて Microsoft 365 にサインインしたときに発生します。 この問題を回避するには、ブラウザーの**戻る**ボタンを選択して戻ることができます。
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>最初のアプリケーション セッションで Office 365 を使用してテンプレートを編集する方法と、テンプレートを調整して 2 番目のアプリケーション セッションでテンプレートを使う方法を理解し、変更が生成されたビジネス ドキュメントにどのように影響するかを確認します。 Office デスクトップ アプリケーションを使用してこれを行うことができますか。
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>最初のアプリケーション セッションで Microsoft 365 を使用してテンプレートを編集する方法と、2 番目のアプリケーション セッションでテンプレートを使用してテンプレートを調整し、変更が生成されたビジネス ドキュメントに与える影響を確認する方法について理解しています。 Office デスクトップ アプリケーションを使用してこれを行うことができますか。
 はい、できます。 最初のアプリケーション セッションで、**デスクトップ アプリケーションを開く**を選択します。 テンプレートは一時ファイル保管場所に保存され、Office デスクトップ アプリケーションで開かれます。 次に、生成されたビジネス ドキュメントのテンプレートの変更をプレビューするために、次の手順を実行します。
 
 1. Office デスクトップ アプリケーションを使用して、テンプレートに変更を加えます。

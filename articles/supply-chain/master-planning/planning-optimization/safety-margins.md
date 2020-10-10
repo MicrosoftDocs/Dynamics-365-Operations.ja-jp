@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05ac817081689f27cdf55cb86a3235d7707a737b
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 646a0e7c8b8a7f2d00a50eddfa65500d0f8afbaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803424"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "3814903"
 ---
 # <a name="safety-margins"></a>安全マージン
 
@@ -162,13 +162,13 @@ ms.locfileid: "3803424"
 
 #### <a name="calendar-setup-overview-matrix"></a>カレンダー設定の概要マトリックス
 
-次の図は、安全マージンが計算されるときに適用されるカレンダーをまとめたマトリックスを示しています。 各タイプのカレンダーが指定される場所を示すには、次の省略形と色が使用されます。
+次の図は、安全マージンが計算されるときに適用されるカレンダーをまとめたマトリックスを示しています。 (画像を選択して、高解像度バージョンの画像を開きます。) 各タイプのカレンダーを指定する場所を示すには、次の省略形と色が使用されます:
 
 - **補充グループ (CG):** グリーン
 - **倉庫 (WH):** イエロー
 - **仕入先 (V):** ブルー
 
-![カレンダー設定の概要マトリックス](media/safety-margins-calendar-matrix.png)
+[![カレンダー設定の概要マトリックス](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>計算遅延
 

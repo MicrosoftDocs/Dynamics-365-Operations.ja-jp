@@ -3,12 +3,12 @@ title: 分析コードおよび製品バリアントの既定の注文設定
 description: 既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657343"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895599"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -51,8 +51,11 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 - 購買契約明細行
 - 見積依頼明細行
 - 購買要求明細行
-- 委託販売補充明細行
+- 委託補充明細行 (部分的に対応しています、「注」を参照ください)
 - 計画発注書
+
+> [!NOTE]
+> 委託補充注文ラインの場合、**既定の注文設定**ページの**発注書**クイックタブから適用される設定は、既定の **サイト** フィールド、**既定の倉庫** フィールド、および**停止**チェック ボックスのみです。
 
 販売の既定の注文設定は作成時に使用されます:
 
