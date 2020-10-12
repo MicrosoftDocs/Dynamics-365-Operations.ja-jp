@@ -3,7 +3,7 @@ title: ユーザーのサインインに対するカスタム ページの設定
 description: このトピックでは Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533462"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817309"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>ユーザーのサインインに対するカスタム ページの設定
 
@@ -181,17 +181,17 @@ Azure ポータルで、**Azure AD B2C** ページに戻り、メニューの**�
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>ラベルと説明の既定のテキスト文字列のカスタマイズ
 
-スターター キットでは、サインイン モジュールにはラベルと説明の既定のテキスト文字列が事前に入力されています。 サインイン モジュールの global.json ファイルの値を更新することにより、ソフトウェア開発キット (SDK) でこれらの文字列をカスタマイズできます。
+モジュール ライブラリでは、サインイン モジュールにはラベルと説明の既定のテキスト文字列が事前に入力されています。 サインイン モジュールの global.json ファイルの値を更新することにより、ソフトウェア開発キット (SDK) でこれらの文字列をカスタマイズできます。
 
 たとえば、パスワード リンクを忘れた場合の既定のテキストは**パスワードをお忘れですか**です。 以下は、サインイン ページに表示される既定のテキストを示しています。
 
 ![サインイン ページでパスワード リンクを忘れた場合の既定のテキスト](./media/B2C_SignUp_ModuleFace.png)
 
-ただし、スタート キット サインイン モジュールの global.json ファイルでは、次の図に示すように、**パスワードをお忘れですか**にテキストを編集することができます。
+ただし、モジュール ライブラリ サインイン モジュールの global.json ファイルでは、次の図に示すように、**パスワードをお忘れですか？** のテキストを編集することができます。
 
 ![サインイン モジュール global.json ファイルの更新されたリンク テキスト](./media/B2C_CustomizingStringsForModule.png)
 
-global.json ファイルを更新して変更内容を公開すると、コマースとライブ サインイン ページの両方のサインイン モジュールに新しいリンク テキストが表示されます。
+global.json ファイルを更新して変更内容を公開すると、コマースとライブ サインイン ページの両方のサイン イン モジュールに新しいリンク テキストが表示されます。
 
 ## <a name="additional-resources"></a>追加リソース
 

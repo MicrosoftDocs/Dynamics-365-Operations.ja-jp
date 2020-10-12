@@ -3,7 +3,7 @@ title: テキスト ブロック モジュール
 description: このトピックでは、テキスト ブロック モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411138"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817381"
 ---
 # <a name="text-block-module"></a>テキスト ブロック モジュール
-
 
 [!include [banner](includes/banner.md)]
 
@@ -80,7 +79,7 @@ ms.locfileid: "3411138"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [プロモーション バナー モジュール](add-alert.md)
 

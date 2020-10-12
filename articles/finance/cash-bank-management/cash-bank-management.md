@@ -1,7 +1,7 @@
 ---
 title: 現金および銀行管理ホーム ページ
 description: 現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: shylaw
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c27811fc900cb497f62780a5185b20d4efbbbdba
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026294"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899621"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
@@ -92,7 +92,7 @@ ms.locfileid: "3026294"
 
 Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
 #### <a name="task-guides"></a>タスク ガイド
 Finance には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。

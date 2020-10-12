@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706255"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818599"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>デュアル書き込み設定用にサポートされたシナリオ
 
@@ -42,7 +42,7 @@ Finance and Operations 環境と Common Data Service 環境との間には、デ
 
 この設定のメカニズムは、サブスクリプションおよび環境によって異なります。
 
-+ Finance and Operations アプリの新しいインスタンスの場合、デュアル書き込み接続の設定は Microsoft Dynamics Lifecycle Services (LCS) で開始されます。 Microsoft Power Platform のライセンスを所有している際は、テナントに無い場合、新しい Common Data Service 環境が得られます。
++ Finance and Operations アプリの新しいインスタンスの場合、デュアル書き込み接続の設定は Microsoft Dynamics Lifecycle Services (LCS) で開始されます。 Power Platform のライセンスを所有している際は、テナントに無い場合、新しい Common Data Service 環境が得られます。
 + 既存のインスタンス Finance and Operations アプリの場合、デュアル書き込み接続の設定は Finance and Operations環境で開始されます。
 
 サポートされている設定シナリオは次のとおりです。

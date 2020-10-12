@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f814395405003464e9f101fb0f46b64e64971b68
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: d8f70e7aa7316241adbbde6c4188c2ae0e640633
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760304"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823530"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resources の新機能および変更された機能
 
@@ -49,6 +49,7 @@ ms.locfileid: "3760304"
 
 Human Resources の隔週リリースの新機能や変更事項をについては、次の記事を参照してください:
 
+[2020 年 9 月 16 日](hr-whats-new-2020-09-16.md)</br>
 [2020 年 9 月 3 日](hr-whats-new-2020-09-03.md)</br>
 [2020 年 8 月 20 日](hr-whats-new-2020-08-20.md)</br>
 [2020 年 8 月 6 日](hr-whats-new-2020-08-06.md)</br>

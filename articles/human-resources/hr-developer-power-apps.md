@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5bc0776174960af6cb8a62f00e3fd7d56b1676
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793614"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893080"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した拡張
 
@@ -37,13 +37,13 @@ ms.locfileid: "3793614"
 - パッケージをインポートするには、ユーザーは**環境メーカー**のアクセス許可が必要です。
 - アプリをエクスポートまたはインポートするには、Power Apps プラン 2 ライセンスもしくは Power Apps プラン 2 試用版ライセンスが必要です。
 
-## <a name="integration-with-office-365-power-automate"></a>Office 365 および Power Automate との統合
+## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365, Power Automate との統合
 
-**Office 365 との統合**アプリケーションを使用して、Microsoft Office 365 からサインイン ユーザーのチーム情報を抽出することができます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
+**Microsoft 365 との統合** アプリを使用すると、Microsoft 365 からサインイン ユーザーのチーム情報を抽出できます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
 
 このアプリは他のシナリオのために拡張することができます。 たとえば、チームの休暇情報、カレンダーのイベント、およびそのチーム固有のイベントを表示するために使用することができます。
 
-**Office 365, Power Automate との統合**アプリケーションをダウンロードするには、Microsoft ダウンロード センターの [Office 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
+**Microsoft 365, Power Automate との統合** アプリをダウンロードするには、Microsoft ダウンロード センターの [Microsoft 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – SQL 接続と実行
 

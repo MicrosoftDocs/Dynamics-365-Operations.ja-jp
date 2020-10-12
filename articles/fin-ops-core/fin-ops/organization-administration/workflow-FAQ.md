@@ -3,7 +3,7 @@ title: ワークフローに関するよく寄せられる質問
 description: このトピックでは、ワークフロー システムについてよく寄せられる質問に回答します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076089"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826193"
 ---
 # <a name="workflow-faq"></a>ワークフローに関するよく寄せられる質問
 
@@ -58,3 +58,5 @@ ms.locfileid: "3076089"
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>ワークフロー処理で SQL デッドロックが発生するのはなぜですか。 
 **ワークフロー パラメーター** ページの**バッチごとのワークフロー項目数**のフィールドの既定値は 0 です。 値が 0 の場合、既定がバッチあたり 20 項目に変更されます。 バッチごとの項目数が大きいと (> 40) SQL デッドロックが発生することがあるため、この値を調整する場合は注意が必要です。
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>ワークフロー拡張エラー機能とは ?
+Version 10.0.13 のワークフロー拡張エラー機能によって、さまざまなクラスのワークフロー エラーを区別するためのエラー コードが追加されます。 報告されたエラーメッセージは、多くの場合、若干の違いがあるため、わかりやすくすることができます。

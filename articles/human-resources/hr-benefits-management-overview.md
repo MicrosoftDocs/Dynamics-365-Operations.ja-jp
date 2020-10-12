@@ -3,7 +3,7 @@ title: 福利厚生の管理の概要
 description: Dynamics 365 Human Resources の福利厚生の管理機能の概要。 使いやすいオンライン エクスペリエンスで、従業員に拡張された給付金オプションを提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599383"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819768"
 ---
 # <a name="benefits-management-overview"></a>給付金管理の概要
 
@@ -41,15 +41,9 @@ ms.locfileid: "3599383"
 
 デモ データにアクセスする場合は、サンドボックス環境を再配置する必要があります。
 
-## <a name="benefits-management-known-issues"></a>給付金管理に関する既知の問題
-
-### <a name="flex-credit-programs"></a>フレックス クレジット プログラム
-
-フレックス クレジット プログラムに定義された合計クレジット値は、**作業者の福利厚生計画** フォームには表示されません。 また、フレックス クレジット プログラムに **なし** の比例配分ルールを設定すると、計画を選択して確認するときに、**作業者の福利厚生計画** フォームでエラーが発生します。
-
 ## <a name="enable-benefits-management"></a>給付金管理を有効にする
 
-この記事では、Human Resources の機能を有効にする方法について説明します。 また、福利厚生の管理を有効にすると、福利厚生の管理が置換されるか無効になる Human Resources の既存機能も示されます。
+このトピックでは、Human Resources の機能を有効にする方法について説明します。 また、福利厚生の管理を有効にすると、福利厚生の管理が置換されるか無効になる Human Resources の既存機能も示されます。
 
 > [!IMPORTANT]
 > **実稼働** 環境で福利厚生の管理を有効にした後、無効にすることはできません。 **実稼働** 環境で有効にする前に、**サンドボックス** 環境で福利厚生の管理を有効にしてテストすることをお勧めします。 従来の福利厚生機能と新しい福利厚生の管理機能には大きな違いがあり、追加の設定が必要であり、実稼働前にテストする必要があります。

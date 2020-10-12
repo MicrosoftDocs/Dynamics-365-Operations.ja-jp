@@ -1,9 +1,9 @@
 ---
 title: モジュールで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
-author: v-chgri
+author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,20 +14,19 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646018"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818425"
 ---
 # <a name="work-with-modules"></a>モジュールで動作
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
 
@@ -35,7 +34,7 @@ ms.locfileid: "3646018"
 
 モジュールは、ページ構造を構成する論理構成要素であり、さまざまな目的と範囲があります。 一部のモジュールは上位レベルのコンテナーであり、その唯一の目的は、他のモジュール (子モジュール) を保持して整理することです。 単純なイメージ配置モジュールなど、その他のモジュールには、特定の目的があります。 カルーセル モジュールなど、その他のモジュールは、これら 2 つのカテゴリの間に含まれます。
 
-既定では、Dynamics 365 Commerce のサイトには、もっとも基本的な E コマースのシナリオを実現できるスターター キット モジュール ライブラリが含まれています。 これらのモジュールを使用するだけで、エンド ツー エンドの E コマースサイトを構築できます。 ただし、特定のニーズに合わせて、これらのモジュールをカスタマイズしたり、新しいカスタム モジュールを作成したりすることが必要な場合もあります。 カスタム モジュールを作成する場合は、モジュール デザイン ソフトウェア開発キット (SDK) を使用して、カスタム モジュール ライブラリを作成できます。
+既定では、Dynamics 365 Commerce のサイトには、もっとも基本的な eコマースのシナリオを実現できるモジュール ライブラリが含まれています。 これらのモジュールを使用するだけで、エンド ツー エンドの E コマースサイトを構築できます。 ただし、特定のニーズに合わせて、これらのモジュールをカスタマイズしたり、新しいカスタム モジュールを作成したりすることが必要な場合もあります。 カスタム モジュールを作成する場合は、モジュール デザイン ソフトウェア開発キット (SDK) を使用して、カスタム モジュール ライブラリを作成できます。
 
 ## <a name="container-modules-and-slots"></a>コンテナー モジュールとスロット
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141525"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899352"
 ---
 # <a name="base-price-and-trade-agreements"></a>基準価格と売買契約
 
@@ -58,7 +58,7 @@ ms.locfileid: "3141525"
 26. **名前**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 27. 一覧で、**Commerce** を選択します。 デモ データで、**Commerce** 仕訳帳名の既定のリレーションは**価格 (販売)** です。 これは、作成されたすべての新しい明細行が、販売価格の売買契約の既定値であることを意味します。  
 28. **アクション ウィンドウ**で、**明細行**をクリックします。
-29. **アカウント コード** フィールドで 'グループ' を選択します。
+29. **関係者コード タイプ** フィールドで、'グループ' を選択します。
 30. **勘定の選択**フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 31. 一覧で、目的のレコードを見つけ、選択します。 これによって、チャンネルから価格グループ、売買契約へのリンクが完了します。  
 32. **商品関係**フィールドに値を入力します。

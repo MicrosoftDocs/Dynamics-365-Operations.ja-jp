@@ -3,7 +3,7 @@ title: ホーム ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を提供します。
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527587"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817757"
 ---
 # <a name="home-page-overview"></a>ホーム ページの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "3527587"
 
 ホーム ページは、買い物客が E コマース サイトにアクセスした場合に移動する既定のページです。 通常、このページは、マーケティング モジュールの組み合わせを使用して、製品およびプロモーションを示します。 ホーム ページは、買い物客を関連付けるために、豊かな画像とテキストが必要です。
 
-以下の図は、オンライン スタート キットおよび「Fabrikam」のテーマを使用してビルドされたホーム ページの例を示します。
+以下の図は、モジュール ライブラリおよび 「Fabrikam」 のテーマを使用してビルドされたホーム ページの例を示します。
 
 ![ホーム ページの例](./media/Homepage2.PNG)
 

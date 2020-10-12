@@ -3,7 +3,7 @@ title: POS ユーザー インターフェイスのビジュアル コンフィ�
 description: このトピックでは、Dynamics 365 Commerce POS (販売時点管理) の画面レイアウトに関する情報を提供します。
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505637"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834212"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>POS ユーザー インターフェイスのビジュアル コンフィギュレーション
 
@@ -62,6 +62,8 @@ Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー イ�
 > [!NOTE]
 > **右揃え** レイアウトおよび日付と時刻の表示は、コンパクト表示のサインイン画面には適用されません。
 
+最新の視覚プロファイル コンフィギュレーションをチャンネル データベースに同期するには、**1090** (**レジスター**) 配布スケジュール ジョブを実行する必要があります。
+
 ## <a name="screen-layouts"></a>画面レイアウト
 
 画面レイアウト構成によって、POS **ようこそ** 画面および **トランザクション** 画面での UI コントロールのアクション、コンテンツ、および配置が決定されます。
@@ -81,6 +83,8 @@ Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー イ�
 ### <a name="assignment"></a>割り当て
 
 画面レイアウトは、店舗、レジスター、またはユーザー レベルで割り当てることができます。 ユーザーの割り当てはレジスターと店舗の割り当てを上書きし、レジスターの割り当ては店舗の割り当てを上書きします。 すべてのユーザーがレジスターまたはロールに関係なく同じレイアウトを使用する単純なシナリオでは、画面レイアウトは店舗レベルでのみ設定できます。 特定のレジスターまたはユーザーが特殊なレイアウトを必要とするシナリオでは、それらのレイアウトを割り当てることができます。
+
+画面レイアウトが割り当てられているレベルに応じて、**1070** (**チャンネル コンフィギュレーション**)、**1090** (**レジスター**)、または **1060** (**スタッフ**) の配布スケジュール ジョブを実行して、最新の画面レイアウト コンフィギュレーションをチャンネル データベースに同期する必要があります。
 
 ### <a name="layout-sizes"></a>レイアウト サイズ
 

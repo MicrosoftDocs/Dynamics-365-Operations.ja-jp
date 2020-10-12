@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823458"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -103,6 +103,7 @@ ms.locfileid: "2771848"
     ![連結ページでの連結トランザクション](./media/managing-consolidation-transactions.png "連結ページでの連結トランザクション")
 
 もう一度連結を実行するために、連結を処理することができます。 または、最初に**トランザクションの削除**を**連結**ページで選択することもできます。
+連結勘定の残高が正確でない場合は、これらの残高を **決算期間調整** ページを使用して修正できます。
 
 ## <a name="consolidate-with-import"></a>インポートして連結
 インポートして連結の機能は、オンライン連結の機能と同様です。 法人を選択すると、そのデータを含むソース ファイルを参照します。
@@ -156,6 +157,7 @@ ms.locfileid: "2771848"
 - 現在のレイヤーにのみ、削除仕訳帳を転記できます。
 - 営業の残高のみが連結されます。 したがって、開始残高を表示するには、連結会社で年度末決算を実行する必要があります。
 - 削除会社には日次仕訳帳を転記することができますが、連結会社には転記できません。
+- 連結会社の残高の調整は、**決算期間調整** ページを使用してのみ行うことができます。 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>財務連結と為替換算のために、またはオンライン連結を連結されたレポートに補完するために、財務諸表を使用する利点
 顧客が財務連結と為替換算のために、またはオンライン連結を連結されたレポートに補完するために、財務諸表を使用する場合は、さまざまな利点が得られます。

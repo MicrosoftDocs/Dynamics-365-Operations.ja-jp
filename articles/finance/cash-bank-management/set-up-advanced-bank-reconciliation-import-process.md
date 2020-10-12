@@ -1,7 +1,7 @@
 ---
 title: 詳細な口座調整のインポート プロセスの設定
 description: 詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45f997a91701e3fc63278cdba3479dec9dc7a467
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578198"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899669"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>詳細な口座調整のインポート プロセスの設定
 
@@ -36,7 +36,7 @@ ms.locfileid: "2578198"
 ## <a name="set-time-zone-preference"></a>タイム ゾーンの基本設定
 口座取引明細書のインポート設定をコンフィギュレーションする場合、インポートされる口座取引明細書ファイル内の日時データのタイム ゾーンを考慮することが重要です。 既定では、任意の日付と時刻の値は協定世界時 (UTC) に既に含まれていると仮定されるため、データのインポート時にタイム ゾーン変換は適用されません。 
 
-データのインポートに使用するタイム ゾーンを指定するためのオプションがあります。 このオプションは、各**ソース データ形式の詳細**ページの**タイム ゾーンの基本設定**フィールド (**データ管理ワークスペース > データソースの構成 > データ形式の選択 > 地域の設定**クイック タブ) で使用可能です。 入力したこのタイム ゾーンの基本設定は、そのソース データ形式を使用するすべてのインポートに適用されます。 複数のタイム ゾーンからデータをインポートするために必要な数のデータ ソース形式を作成できます。  
+データのインポートに使用するタイム ゾーンを指定するためのオプションがあります。 このオプションは、各 **ソース データ形式の詳細** ページの **タイム ゾーンの基本設定** フィールド (**データ管理ワークスペース > データ ソースの構成 > データ形式の選択 > 地域の設定** クイック タブ) で使用可能です。 入力したこのタイム ゾーンの基本設定は、そのソース データ形式を使用するすべてのインポートに適用されます。 複数のタイム ゾーンからデータをインポートするために必要な数のデータ ソース形式を作成できます。  
 
 このタイム ゾーンは、ユーザーまたは会社のタイム ゾーンとは異なる場合があるため、日時データが使用しているタイム ゾーンを明確にしておく必要があります。 タイム ゾーンの基本設定を設定する際には、次の点を考慮することをお勧めします。 
 

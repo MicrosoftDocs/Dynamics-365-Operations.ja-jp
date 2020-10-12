@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772561"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893282"
 ---
 # <a name="document-printing-overview"></a>ドキュメントの印刷の概要
 
@@ -52,10 +52,10 @@ ms.locfileid: "2772561"
 シナリオによってソリューションが異なるため、アプリケーションは組み込みサービスおよびユーザーがその目標を達成するのためのツールを提供します。
 
 - **シナリオ 1** は HTML5 クライアントのブラウザーの表示によってサポートされています。
-- **シナリオ 2** はクライアント アプリケーションおよび Microsoft Office 365 サービスを使用します。
+- **シナリオ 2** は、クライアント アプリケーションおよび Microsoft 365 サービスを使用します。
 - **シナリオ 3** には、クライアント アプリケーションからおよび Microsoft Azure でホストされているサービスからのサポートが必要です。
 
-Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくする当事者 Azure アプリケーションを提供します。
+Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくするファースト パーティ Azure アプリケーションを提供します。
 
 ## <a name="service-overview"></a>サービスの概要
 ホストされるアプリケーションによって生成されるドキュメントが、ネットワークに接続されたデバイスで印刷されるのを待機している間に、Azure BLOB ストレージに保存されます。 [ネットワーク印刷を有効にするため、ドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) は Azure 認証を使用して、Azure サービスへのセキュリティで保護されたチャネルを確立します。

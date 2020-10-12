@@ -1,7 +1,7 @@
 ---
 title: 過剰支払の場合の現金割引
 description: この記事では、顧客が現金割引を受け、かつ過剰支払をしている場合の支払の処理方法を示すシナリオについて説明します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
-ms.author: kweekley
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2fafe2fba9dd71fc09c60bfa20d72fa59510b7f
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154159"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899520"
 ---
 # <a name="cash-discounts-for-overpayments"></a>過剰支払の場合の現金割引
 

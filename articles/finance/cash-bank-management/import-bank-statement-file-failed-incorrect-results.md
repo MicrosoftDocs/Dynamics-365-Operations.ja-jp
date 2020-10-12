@@ -1,7 +1,7 @@
 ---
 title: 口座取引明細書ファイルのインポートのトラブルシューティング
 description: 銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 Finance がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5e7e6897f19dc0303ffbd3111f93669a91daa1b
-ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
+ms.openlocfilehash: 09b24b88ee5f8104aabd11397d5bd2745e846cb0
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3059379"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899573"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 

@@ -3,7 +3,7 @@ title: オムニ チャネル支払の概要
 description: このトピックでは、Dynamics 365 Commerce でのオムニ チャネルの支払概要を示します。
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613180"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819816"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 
@@ -92,6 +92,9 @@ ms.locfileid: "3613180"
 - コール センターで購入し、店舗で受取る
 - 店舗 A で購入し、店舗 B で受取る
 - 店舗 A で購入し、顧客へ出荷
+
+    > [!NOTE]
+    > コール センターで "通常" の支払機能にマップされている支払は、POS で注文を取り消すときに支払額に反映されるように、**前払** = **はい** とマークされる必要があります。 POSで注文が取り消されるときに、タイプ "通常" の前払以外の支払は認識されません。 
 
 これらのシナリオのバリエーションもサポートされています。 たとえば、オンライン注文には、顧客に出荷される明細行と、店舗で受取れる両方の明細行が含まれている場合があります。 すべての注文フルフィルメント オプションは、オムニ チャネル支払を通じてサポートされます。 
 
@@ -190,8 +193,8 @@ ms.locfileid: "3613180"
 2. **トランザクション**ページで、数値パッドを使用して **2001** を入力することにより、Karen Berg をトランザクションに追加します。
 3. トランザクションに 1 つ以上の明細行を追加します。
 4. **注文**を選択して、注文オプションを表示します。
-5. **すべて受取**を選択し、メッセージが表示されたら、**顧客注文**を選択します。
-6. 検索バーで**シアトル**と入力し、受取のため**シアトル**の店舗を選択します。 
+5. **すべて出荷** を選択し、メッセージが表示されたら、**顧客注文** を選択します。
+6. 配送方法ページで、**標準翌日配達** を選択し、**OK** を選択して、今日の日付を配送日として受け入れます。 
 7. **OK** を選択し、現在の日付が受取の集配の日付として使用されます。
 8. **支払カード**を選択し、支払を開始します。
 9. 預金の期日を迎える金額のカード支払/入金を行います。 
@@ -233,5 +236,5 @@ ms.locfileid: "3613180"
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Dynamics 365 Commerce 評価環境で BOPIS を構成する](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Dynamics 365 Commerce 評価環境で BOPIS を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

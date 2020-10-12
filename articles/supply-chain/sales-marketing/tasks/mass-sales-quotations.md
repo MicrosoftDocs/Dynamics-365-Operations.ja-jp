@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm
+ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm, SalesQuickQuote
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1a9c7235f37ccdedc87ce70d3846443f645c0fe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1bbe96e8e8fc2b7139c5d3064825f6ab527fc67e
+ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211885"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830310"
 ---
 # <a name="mass-create-sales-quotations"></a>販売見積の一括作成
 
@@ -53,7 +53,7 @@ ms.locfileid: "3211885"
     * 新しい販売見積にテンプレートを適用する場合、有効なテンプレートのみ使用できます。  
 19. [アクション] ウィンドウで、[オプション] をクリックします。
 20. [ビューの変更] をクリックします。
-21. [明細行の表示] ] をクリックします。
+21. [明細行の表示] をクリックします。
 22. [品目] フィールドで、値を入力または選択します。
 23. [品目] フィールドに値を入力します。
 24. ページを閉じます。

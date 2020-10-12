@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020 年 8 月)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Commerce 10.0.11 (2020 年 7 月)
-                      href: get-started/whats-new-commerce-10-0-11.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Finance and Operations の削除済みまたは非推奨の機能
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft Power Apps の埋め込み
+                - name: Power Apps からキャンバス アプリを埋め込む
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: 追跡しているコンテンツの変更に関連付いたユーザー ID の置換
                   href: replace-IDs-tracked-changes.md
-            - name: スタート キット
+            - name: モジュール ライブラリ
               items:
-                - name: スタート キットの概要
+                - name: モジュール ライブラリの概要
                   href: starter-kit-overview.md
                 - name: コンテナー モジュール
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: 新しいモジュールの作成
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: スタート キット モジュールの複製
+                    - name: モジュール ライブラリ モジュールのクローン
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: モジュール構成フィールドの追加
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,7 +2068,7 @@
                   items:
                     - name: パッケージ コンフィギュレーションとオンライン環境への配置
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK およびストア スタート キットの更新
+                    - name: SDK およびモジュール ライブラリの更新
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2148,9 +2146,11 @@
                   href: implementation-considerations-devices.md
                 - name: POS カート ビューのイベントおよびハンドラー
                   href: dev-itpro/cart-view-handlers.md
+                - name: カスタム ボタンを POS ヘッダー バーに追加
+                  href: dev-itpro/pos-header-bar.md
             - name: Hardware Station の拡張機能
               items:
-                - name: Hardware Station の拡張機能
+                - name: Hardware Station および拡張機能
                   href: dev-itpro/hardware-station-extensibility.md
                 - name: POS と新しいハードウェア デバイスの統合
                   href: dev-itpro/hardware-device-extension.md

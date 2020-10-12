@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775150"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818575"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -86,7 +86,7 @@ ms.locfileid: "3775150"
 二重書き込みにより、Microsoft Dynamics 365 アプリケーション間でデータの統合が提供されます。 この信頼性の高いフレームワークでは、環境をリンクして、さまざまなビジネス アプリケーションを連携させることができます。 二重書き込みを使用する必要がある主な理由は次のとおりです。
 
 + 二重書き込みは、Finance and Operations アプリと Dynamics 365 の モデル駆動型アプリの間で密結合、ほぼリアルタイム、および双方向の統合を提供します。 この統合により、すべてのビジネスソリューションに対して、1 つの停止ショップとして Microsoft Dynamics 365 が作成されます。 Dynamics 365 Finance と Dynamics 365 Supply Chain Management を使用しているが、顧客関係管理 (CRM) に対して Microsoft 以外のソリューションを使用している顧客は、二重書き込みをサポートするために Dynamics 365 に移行しています。
-+ 顧客、製品、工程、プロジェクト、およびインターネット オブ シングス (IoT) のデータは、自動的に二重書き込みによって Common Data Service にフローします。 この接続は、Microsoft Power Platform の展開に関心のある企業にとって便利です。
++ 顧客、製品、工程、プロジェクト、およびインターネット オブ シングス (IoT) のデータは、自動的に二重書き込みによって Common Data Service にフローします。 この接続は、Power Platform の展開に関心のある企業にとって便利です。
 + 二重書き込みインフラストラクチャは、コードなし/ロー コード原則に従います。 標準のテーブルからテーブルへのマップを拡張したり、カスタム マップを含めたりするには、最小限のエンジニアリング実績が要求されます。
 + 二重書き込みでは、オンライン モードとオフライン モードの両方がサポートされます。 Microsoft は、オンラインとオフライン モードのサポートを提供している唯一の会社です。
 

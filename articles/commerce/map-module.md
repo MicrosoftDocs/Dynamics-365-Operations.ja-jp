@@ -3,7 +3,7 @@ title: マップ モジュール
 description: このトピックでは、マップ モジュールを取り上げ、 Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811187"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817209"
 ---
 # <a name="map-module"></a>マップ モジュール
 
@@ -38,7 +38,8 @@ ms.locfileid: "3811187"
 
 マップ モジュールは、マップにレンダリングする必要がある店舗の地理的な場所を決定するために、店舗セレクター モジュールと連携して機能します。 店舗セレクターとマップ モジュールは、ユーザーがサイト ページのいずれかのモジュールで店舗を選択したときに相互作用します。 マップ モジュールは、店舗セレクター モジュールとの相互作用を超えて、他のシナリオにも拡張できます。 ただし、モジュールのカスタマイズは必須です。
 
-マップ モジュールは、Commerce バージョン 10.0.13 に導入されました。
+> [!NOTE]
+> マップ モジュールは、Dynamics 365 Commerce 10.0.13 リリースで利用可能です。
 
 以下の図は、店舗ロケーション ページで使用されるマップ モジュールの例を示しています。
 
@@ -70,11 +71,11 @@ ms.locfileid: "3811187"
  
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [購入ボックス モジュール](add-buy-box.md)
 
-[買い物カゴ モジュール](add-cart-module.md)
+[カート モジュール](add-cart-module.md)
 
 [店舗セレクター モジュール](store-selector.md)
 

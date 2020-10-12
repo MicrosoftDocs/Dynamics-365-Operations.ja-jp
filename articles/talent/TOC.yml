@@ -150,7 +150,7 @@
           href: modular-app-tech-faq.md
         - name: Attract および Onboard からのデータのエクスポート
           href: attract-onboard-export-data.md
-        - name: Microsoft Power Apps の埋め込み
+        - name: Power Apps からキャンバス アプリを埋め込む
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Talent に関するサポートの利用
           href: talent-support.md
@@ -250,5 +250,7 @@
           href: attract-troubleshoot-linkedin.md
         - name: ユーザーが Human Resources にアクセスできるが、Onboard または Attract アプリにアクセスできない
           href: user-access-core-hr.md
-        - name: Azure Active Directory ユーザーが人員ピッカーで見つからない
+        - name: Azure Active Directory ユーザーがユーザー ピッカーで見つからない
           href: people-picker-user-not-found.md
+        - name: Attract ユーザーがキャリア ポータルから仕事に応募できない
+          href: attract-troubleshoot-career-portal.md
