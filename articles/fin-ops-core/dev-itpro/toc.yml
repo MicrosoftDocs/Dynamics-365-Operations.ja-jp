@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: 一般的なトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: 二重書き込みに関してよく寄せられる質問
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Power Platform との統合
                       items:
                         - name: 見込顧客を現金化シナリオのコンフィギュレーション
@@ -386,6 +390,8 @@
           items:
             - name: 概要
               href: database/dbmovement-operations.md
+            - name: データベース移動ツールキット
+              href: database/database-movement-toolkit.md
             - name: クイック スタート ガイド
               items:
                 - name: データベースの更新
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 アップグレード - DACPAC プロセスを使用したサンドボックス環境でのデータ アップグレード
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 アップグレード - オンプレミス環境

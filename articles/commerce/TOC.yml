@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: フランスの Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Dynamics 365 Commerce に関するサポートの利用
-              href: retail-support.md
+            - name: サポートの利用
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: アップグレードおよび N-1 のサポート
               items:
                 - name: Commerce のアップグレードおよび N-1 のサポート
@@ -92,6 +92,8 @@
                   items:
                     - name: Commerce ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (2021 年 1 月)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (2020 年 11 月)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (2020 年 10 月)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations Commerce プロジェクトを実装する
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: ハイブリッド顧客注文
                   href: hybrid-customer-orders.md
+                - name: POS での注文の取り消し操作
+                  href: enhancedorderrecall.md
             - name: 販売注文
               items:
                 - name: コール センター注文の作成
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: バッチ追跡品目の処理の改善
               href: batch.md
-            - name: 明細書に影響を及ぼす Commerce パラメーターのコンフィギュレーション
-              href: tasks/parameter-configurations-retail-statements.md
             - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
               href: tasks/payment-configurations-retail-statements.md
             - name: 明細書を計算するジョブのコンフィギュレーションおよび実行
@@ -868,6 +872,8 @@
                   href: document-states-overview.md
                 - name: 公開グループの作業
                   href: publish-groups.md
+                - name: クロスチャネル共有の有効化と使用
+                  href: cross-channel-sharing.md
                 - name: サイトをブランド化し、店舗の詳細を追加する
                   items:
                     - name: ロゴの追加
@@ -1048,6 +1054,24 @@
               items:
                 - name: オンライン チャネル レポートの生成
                   href: generate-reports.md
+            - name: 実験
+              items:
+                - name: Dynamics 365 Commerce での実験
+                  href: experimentation-overview.md
+                - name: 仮説を特定して実験の指標を決定する
+                  href: experimentation-identify.md
+                - name: 実験の設定
+                  href: experimentation-setup.md
+                - name: 接続して実験を編集する
+                  href: experimentation-connect-edit.md
+                - name: 実験のプレビューと発行
+                  href: experimentation-preview-publish.md
+                - name: 実験の実行と監視
+                  href: experimentation-run-monitor.md
+                - name: バリエーションのレベルを上げて実験を完了する
+                  href: experimentation-review-complete.md
+                - name: 実験のステータスの確認
+                  href: experimentation-status.md
             - name: エラー処理
               items:
                 - name: 4xx/5xx ステータス コード エラーに対するカスタム応答ページの作成
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Commerce チャネルの会計統合の設定
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: 小売店舗のユーザー定義の証明書プロファイル
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: オーストリア
               items:
                 - name: オーストリア向け会計登録サービス統合サンプル
                   href: localizations/emea-aut-fi-sample.md
+            - name: ブラジル
+              items:
+                - name: ブラジル向け Commerce ローカライズ
+                  href: localizations/latam-bra-commerce-localization.md
             - name: 東ヨーロッパ
               items:
                 - name: 共通
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: 基準テーマからテーマを拡張する
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: カスタマイズ コードへのカスタム リソースの追加
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: スクリプトの挿入
                   items:
                     - name: スクリプトの挿入
@@ -2164,6 +2196,8 @@
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript と C# プロキシ
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: 外部アプリケーションでの Retail Server API の使用
+                  href: dev-itpro/consume-retail-server-api
             - name: Commerce Runtime (CRT) の拡張機能
               items:
                 - name: CRT のアーキテクチャとコンフィギュレーション
