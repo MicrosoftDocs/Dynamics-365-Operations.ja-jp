@@ -70,6 +70,8 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (2021 年 1 月)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (2020 年 11 月)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (2020 年 10 月)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: 買掛金勘定
@@ -226,6 +230,16 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: 買掛金勘定の請求書照合検証の設定
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: 仕入先請求書の自動化
+              items:
+                - name: 自動化された仕入先請求プロセスの概要
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: 仕入先請求書の自動化の設定オプション
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: ワークフロー システムに請求書を送信し、製品受領書行を照合
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: 仕入先請求書の自動化の結果を表示
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: 仕入先請求書の勘定配布と補助元帳仕訳
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: 仕入先コラボレーションの請求ワークスペース
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: 仕入先請求書の自動化
+            - name: スキャン済みドキュメントの請求書の自動化
               href: accounts-payable/vendor-invoice-automation.md
             - name: ブローカー契約管理
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: 売掛金勘定のエイジング情報の設定および生成
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: 顧客エイジング レポート
+              href: accounts-receivable/customer-aging.md
             - name: 顧客の損金処理仕訳帳の作成
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: 詳細なメモの管理
@@ -792,11 +808,15 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: 耐用年数定額減価償却
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: 資産リース
+          items:
+            - name: 資産リースを開始する
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: 一般会計
           items:
             - name: 一般会計の概要
               href: general-ledger/general-ledger.md
-            - name: アカウント
+            - name: 勘定
               items:
                 - name: 見越計上の概要
                   href: general-ledger/accruals-overview.md
@@ -812,7 +832,7 @@
                   href: general-ledger/example-posting-definitions.md
                 - name: 自動転記の既定の説明を設定する
                   href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-                - name: 総勘定元帳残高
+                - name: 一般会計残高
                   href: general-ledger/general-ledger-account-balances.md
                 - name: 財務分析コードの定義
                   href: general-ledger/tasks/define-financial-dimensions.md
@@ -1308,7 +1328,7 @@
                       href: localizations/latam-bra-icms-tax-fiscal-documents.md
                     - name: 会計ドキュメントのインポート
                       href: localizations/latam-bra-import-fiscal-documents.md
-                    - name: 総勘定元帳の連結からの法人トランザクションのエクスポートとインポート
+                    - name: 一般会計の連結からの法人トランザクションのエクスポートとインポート
                       href: localizations/latam-bra-general-ledger-consolidation-transactions.md
                     - name: NF E XML ドキュメントと DANFE ファイルのインポートと確認
                       href: localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
@@ -1880,11 +1900,11 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: 資本品目の固定資産への移動
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: インド商品及びサービス税
+                - name: インドの商品及びサービス税
                   items:
                     - name: インド商品及びサービス税の概要
                       href: localizations/apac-ind-gst.md
-                    - name: APAC インド商品及びサービス税のローカライズの新機能および変更された機能
+                    - name: インド商品及びサービス税のローカライズに関する新機能および変更された機能
                       items:
                         - name: 10.0.0 の新機能または変更された機能
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: 10.0.12 の新機能または変更された機能
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: 10.0.13 の新機能または変更された機能
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: インド商品及びサービス税参照グループ
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: キャッシュ レジスターの商品及びサービス税統合
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: 在庫トランザクション
                       items:
+                        - name: 在庫移動オーダー
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: 移転価格が課税される在庫移動オーダー
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: 顧客支払トランザクション
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: 税しきい値に関するよく寄せられる質問
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: 在庫移動
-                  href: localizations/apac-ind-stock-transfer.md
             - name: イタリア
               items:
                 - name: イタリアの概要
