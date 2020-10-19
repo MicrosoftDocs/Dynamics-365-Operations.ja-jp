@@ -2045,7 +2045,7 @@
                       href: production-control/config-job-card-device.md
                     - name: ジョブ カード デバイスからの完了レポート
                       href: production-control/report-finished-job-device.md
-                    - name: 生産での作業者への Mixed reality Guides の提供
+                    - name: 生産での作業者への Mixed reality ガイドの提供
                       href: production-control/instruction-guides-in-production-overview.md
                     - name: 製造オーダー ステータスを逆行させる
                       href: production-control/reverse-production-order-status.md
