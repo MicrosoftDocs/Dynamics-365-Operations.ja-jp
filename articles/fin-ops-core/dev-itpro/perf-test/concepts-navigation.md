@@ -14,29 +14,29 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 6743e4b66f9433d9d550108794358a2c342bb921
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: d26d8f3db703407f8d8523db0f16e64c4b56aa3f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270273"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975356"
 ---
-# <a name="navigation-concepts"></a><span data-ttu-id="473f3-103">ナビゲーション概念</span><span class="sxs-lookup"><span data-stu-id="473f3-103">Navigation concepts</span></span>
+# <a name="navigation-concepts"></a><span data-ttu-id="80fbd-103">ナビゲーション概念</span><span class="sxs-lookup"><span data-stu-id="80fbd-103">Navigation concepts</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="473f3-104">テスト データの生成メソッドの発見可能性を単純化するために、一連のナビゲーション オブジェクトが導入されました。</span><span class="sxs-lookup"><span data-stu-id="473f3-104">To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced.</span></span> <span data-ttu-id="473f3-105">生成メソッドの詳細は [テスト データのメソッド](test-data-methods.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="473f3-105">For more information about the generation methods, see [Test data methods](test-data-methods.md).</span></span>
+<span data-ttu-id="80fbd-104">テスト データの生成メソッドの発見可能性を単純化するために、一連のナビゲーション オブジェクトが導入されました。</span><span class="sxs-lookup"><span data-stu-id="80fbd-104">To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced.</span></span> <span data-ttu-id="80fbd-105">生成メソッドの詳細は [テスト データのメソッド](test-data-methods.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="80fbd-105">For more information about the generation methods, see [Test data methods](test-data-methods.md).</span></span>
 
-<span data-ttu-id="473f3-106">ナビゲーションはルート オブジェクトから開始し、モジュールを指定して、そしてエンティティはテスト データ メソッドと一緒に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="473f3-106">Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.</span></span>
+<span data-ttu-id="80fbd-106">ナビゲーションはルート オブジェクトから開始し、モジュールを指定して、そしてエンティティはテスト データ メソッドと一緒に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="80fbd-106">Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.</span></span>
 
 ```xpp
 data.module().entity().testDataMethod();
 ```
 
-### <a name="examples"></a><span data-ttu-id="473f3-107">例</span><span class="sxs-lookup"><span data-stu-id="473f3-107">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="80fbd-107">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-107">Examples</span></span>
 
 ```xpp
 modelGroup = data.invent().modelGroups().fifo();
@@ -48,57 +48,57 @@ data.sales().salesOrders().ensureCanCreate();
 data.invent().parameters().enableQualityManagement();
 ```
 
-### <a name="advantages"></a><span data-ttu-id="473f3-108">メリット</span><span class="sxs-lookup"><span data-stu-id="473f3-108">Advantages</span></span>
+### <a name="advantages"></a><span data-ttu-id="80fbd-108">メリット</span><span class="sxs-lookup"><span data-stu-id="80fbd-108">Advantages</span></span>
 
-- <span data-ttu-id="473f3-109">データ生成アプリケーション プログラミング インターフェイス (API) の発見可能性。</span><span class="sxs-lookup"><span data-stu-id="473f3-109">Discoverability of data creation application programming interfaces (APIs).</span></span> <span data-ttu-id="473f3-110">IntelliSense はエンティティに関連するヘルパー メソッドを取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="473f3-110">IntelliSense helps you get to the helper methods that are relevant for the entity.</span></span>
-- <span data-ttu-id="473f3-111">頻繁に使用されるノード (たとえば、`items.whsBuilder()`) へのローカル参照</span><span class="sxs-lookup"><span data-stu-id="473f3-111">Local references to frequently used nodes (for example, `items.whsBuilder()`).</span></span> <span data-ttu-id="473f3-112">したがって、長い名前は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="473f3-112">Therefore, long names aren't required.</span></span>
+- <span data-ttu-id="80fbd-109">データ生成アプリケーション プログラミング インターフェイス (API) の発見可能性。</span><span class="sxs-lookup"><span data-stu-id="80fbd-109">Discoverability of data creation application programming interfaces (APIs).</span></span> <span data-ttu-id="80fbd-110">IntelliSense はエンティティに関連するヘルパー メソッドを取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-110">IntelliSense helps you get to the helper methods that are relevant for the entity.</span></span>
+- <span data-ttu-id="80fbd-111">頻繁に使用されるノード (たとえば、`items.whsBuilder()`) へのローカル参照</span><span class="sxs-lookup"><span data-stu-id="80fbd-111">Local references to frequently used nodes (for example, `items.whsBuilder()`).</span></span> <span data-ttu-id="80fbd-112">したがって、長い名前は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="80fbd-112">Therefore, long names aren't required.</span></span>
 
-## <a name="root-navigation-object"></a><span data-ttu-id="473f3-113">ルート ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="473f3-113">Root navigation object</span></span>
+## <a name="root-navigation-object"></a><span data-ttu-id="80fbd-113">ルート ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="80fbd-113">Root navigation object</span></span>
 
-<span data-ttu-id="473f3-114">ルート ナビゲーション オブジェクトは、必要なテスト データ メソッドを検索するための開始点です。</span><span class="sxs-lookup"><span data-stu-id="473f3-114">The root navigation object is the starting point for finding the test data methods that are required.</span></span> <span data-ttu-id="473f3-115">ルート ナビゲーション オブジェクトは、テスト データ メソッドが定義されているモジュールを公開します。</span><span class="sxs-lookup"><span data-stu-id="473f3-115">The root navigation object exposes modules where test data methods are defined.</span></span>
+<span data-ttu-id="80fbd-114">ルート ナビゲーション オブジェクトは、必要なテスト データ メソッドを検索するための開始点です。</span><span class="sxs-lookup"><span data-stu-id="80fbd-114">The root navigation object is the starting point for finding the test data methods that are required.</span></span> <span data-ttu-id="80fbd-115">ルート ナビゲーション オブジェクトは、テスト データ メソッドが定義されているモジュールを公開します。</span><span class="sxs-lookup"><span data-stu-id="80fbd-115">The root navigation object exposes modules where test data methods are defined.</span></span>
 
-### <a name="variable-naming"></a><span data-ttu-id="473f3-116">変数の命名</span><span class="sxs-lookup"><span data-stu-id="473f3-116">Variable naming</span></span>
+### <a name="variable-naming"></a><span data-ttu-id="80fbd-116">変数の命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-116">Variable naming</span></span>
 
-<span data-ttu-id="473f3-117">ナビゲーション ルートを参照する変数の推奨される名前は `data` です。</span><span class="sxs-lookup"><span data-stu-id="473f3-117">The suggested name for variables that reference the navigation root is `data`.</span></span>
+<span data-ttu-id="80fbd-117">ナビゲーション ルートを参照する変数の推奨される名前は `data` です。</span><span class="sxs-lookup"><span data-stu-id="80fbd-117">The suggested name for variables that reference the navigation root is `data`.</span></span>
 
-### <a name="class-naming"></a><span data-ttu-id="473f3-118">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-118">Class naming</span></span>
+### <a name="class-naming"></a><span data-ttu-id="80fbd-118">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-118">Class naming</span></span>
 
-<span data-ttu-id="473f3-119">`AtlDataRootNode` という名前のルート クラス。</span><span class="sxs-lookup"><span data-stu-id="473f3-119">The root class is named `AtlDataRootNode`.</span></span>
+<span data-ttu-id="80fbd-119">`AtlDataRootNode` という名前のルート クラス。</span><span class="sxs-lookup"><span data-stu-id="80fbd-119">The root class is named `AtlDataRootNode`.</span></span>
 
-## <a name="module-navigation-object"></a><span data-ttu-id="473f3-120">モジュール ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="473f3-120">Module navigation object</span></span>
+## <a name="module-navigation-object"></a><span data-ttu-id="80fbd-120">モジュール ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="80fbd-120">Module navigation object</span></span>
 
-<span data-ttu-id="473f3-121">モジュール ナビゲーション オブジェクトを使用すると、テスト データ メソッドを関連するモジュールごとにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="473f3-121">The module navigation objects let you group test data methods by relevant modules.</span></span> <span data-ttu-id="473f3-122">モジュール ナビゲーション オブジェクトは、エンティティ ナビゲーション オブジェクトを公開できます。</span><span class="sxs-lookup"><span data-stu-id="473f3-122">Module navigation objects can expose entity navigation objects.</span></span>
+<span data-ttu-id="80fbd-121">モジュール ナビゲーション オブジェクトを使用すると、テスト データ メソッドを関連するモジュールごとにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-121">The module navigation objects let you group test data methods by relevant modules.</span></span> <span data-ttu-id="80fbd-122">モジュール ナビゲーション オブジェクトは、エンティティ ナビゲーション オブジェクトを公開できます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-122">Module navigation objects can expose entity navigation objects.</span></span>
 
-### <a name="navigation-node-naming"></a><span data-ttu-id="473f3-123">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-123">Navigation node naming</span></span>
+### <a name="navigation-node-naming"></a><span data-ttu-id="80fbd-123">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-123">Navigation node naming</span></span>
 
-<span data-ttu-id="473f3-124">モジュール名はメイン メニューのモジュール名に基づく必要があります。</span><span class="sxs-lookup"><span data-stu-id="473f3-124">Module names should be based on the names of the modules on the main menu.</span></span> <span data-ttu-id="473f3-125">ただし、短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="473f3-125">However, a short version or an abbreviation should be used to support brevity of test code.</span></span>
+<span data-ttu-id="80fbd-124">モジュール名はメイン メニューのモジュール名に基づく必要があります。</span><span class="sxs-lookup"><span data-stu-id="80fbd-124">Module names should be based on the names of the modules on the main menu.</span></span> <span data-ttu-id="80fbd-125">ただし、短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="80fbd-125">However, a short version or an abbreviation should be used to support brevity of test code.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="473f3-126">例</span><span class="sxs-lookup"><span data-stu-id="473f3-126">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-126">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-126">Examples</span></span>
 
-- <span data-ttu-id="473f3-127">**販売とマーケティング** モジュール: `data.sales()`</span><span class="sxs-lookup"><span data-stu-id="473f3-127">**Sales and marketing** module: `data.sales()`</span></span>
-- <span data-ttu-id="473f3-128">**在庫管理** モジュール: `data.invent()`</span><span class="sxs-lookup"><span data-stu-id="473f3-128">**Inventory management** module: `data.invent()`</span></span>
+- <span data-ttu-id="80fbd-127">**販売とマーケティング** モジュール: `data.sales()`</span><span class="sxs-lookup"><span data-stu-id="80fbd-127">**Sales and marketing** module: `data.sales()`</span></span>
+- <span data-ttu-id="80fbd-128">**在庫管理** モジュール: `data.invent()`</span><span class="sxs-lookup"><span data-stu-id="80fbd-128">**Inventory management** module: `data.invent()`</span></span>
 
-### <a name="class-naming"></a><span data-ttu-id="473f3-129">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-129">Class naming</span></span>
+### <a name="class-naming"></a><span data-ttu-id="80fbd-129">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-129">Class naming</span></span>
 
 `AtlData<ModuleName>`
 
-#### <a name="examples"></a><span data-ttu-id="473f3-130">例</span><span class="sxs-lookup"><span data-stu-id="473f3-130">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-130">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-130">Examples</span></span>
 
-- <span data-ttu-id="473f3-131">**販売とマーケティング** モジュール: `AtlDataSales`</span><span class="sxs-lookup"><span data-stu-id="473f3-131">**Sales and marketing** module: `AtlDataSales`</span></span>
-- <span data-ttu-id="473f3-132">**調達** モジュール: `AtlDataPurch`</span><span class="sxs-lookup"><span data-stu-id="473f3-132">**Procurement and sourcing** module: `AtlDataPurch`</span></span>
-- <span data-ttu-id="473f3-133">**在庫管理** モジュール: `AtlDataInvent`</span><span class="sxs-lookup"><span data-stu-id="473f3-133">**Inventory management** module: `AtlDataInvent`</span></span>
-- <span data-ttu-id="473f3-134">**売掛金勘定** モジュール: `AtlDataCust`</span><span class="sxs-lookup"><span data-stu-id="473f3-134">**Accounts receivable** module: `AtlDataCust`</span></span>
-- <span data-ttu-id="473f3-135">**買掛金勘定** モジュール: `AtlDataVend`</span><span class="sxs-lookup"><span data-stu-id="473f3-135">**Accounts payable** module: `AtlDataVend`</span></span>
+- <span data-ttu-id="80fbd-131">**販売とマーケティング** モジュール: `AtlDataSales`</span><span class="sxs-lookup"><span data-stu-id="80fbd-131">**Sales and marketing** module: `AtlDataSales`</span></span>
+- <span data-ttu-id="80fbd-132">**調達** モジュール: `AtlDataPurch`</span><span class="sxs-lookup"><span data-stu-id="80fbd-132">**Procurement and sourcing** module: `AtlDataPurch`</span></span>
+- <span data-ttu-id="80fbd-133">**在庫管理** モジュール: `AtlDataInvent`</span><span class="sxs-lookup"><span data-stu-id="80fbd-133">**Inventory management** module: `AtlDataInvent`</span></span>
+- <span data-ttu-id="80fbd-134">**売掛金勘定** モジュール: `AtlDataCust`</span><span class="sxs-lookup"><span data-stu-id="80fbd-134">**Accounts receivable** module: `AtlDataCust`</span></span>
+- <span data-ttu-id="80fbd-135">**買掛金勘定** モジュール: `AtlDataVend`</span><span class="sxs-lookup"><span data-stu-id="80fbd-135">**Accounts payable** module: `AtlDataVend`</span></span>
 
-## <a name="entity-navigation-objects"></a><span data-ttu-id="473f3-136">エンティティ ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="473f3-136">Entity navigation objects</span></span>
+## <a name="entity-navigation-objects"></a><span data-ttu-id="80fbd-136">エンティティ ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="80fbd-136">Entity navigation objects</span></span>
 
-<span data-ttu-id="473f3-137">エンティティ ナビゲーション オブジェクトを使用すると、[テスト データ メソッド](test-data-methods.md) を関連するエンティティごとにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="473f3-137">Entity navigation objects let you group [test data methods](test-data-methods.md) by relevant entities.</span></span>
+<span data-ttu-id="80fbd-137">エンティティ ナビゲーション オブジェクトを使用すると、[テスト データ メソッド](test-data-methods.md) を関連するエンティティごとにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-137">Entity navigation objects let you group [test data methods](test-data-methods.md) by relevant entities.</span></span>
 
-### <a name="navigation-node-naming"></a><span data-ttu-id="473f3-138">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-138">Navigation node naming</span></span>
+### <a name="navigation-node-naming"></a><span data-ttu-id="80fbd-138">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-138">Navigation node naming</span></span>
 
-<span data-ttu-id="473f3-139">エンティティ名の複数形はエンティティ ナビゲーション ノードの名前として使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="473f3-139">The plural of the entity name should be used as the name of the entity navigation node.</span></span>
+<span data-ttu-id="80fbd-139">エンティティ名の複数形はエンティティ ナビゲーション ノードの名前として使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="80fbd-139">The plural of the entity name should be used as the name of the entity navigation node.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="473f3-140">例</span><span class="sxs-lookup"><span data-stu-id="473f3-140">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-140">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-140">Examples</span></span>
 
 ```xpp
 data.products().items();
@@ -106,11 +106,11 @@ data.products().items();
 data.whs().warehouses();
 ```
 
-### <a name="class-naming"></a><span data-ttu-id="473f3-141">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-141">Class naming</span></span> 
+### <a name="class-naming"></a><span data-ttu-id="80fbd-141">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-141">Class naming</span></span> 
 
 `AtlData<ModuleName><EntityNamePlural>`
 
-#### <a name="examples"></a><span data-ttu-id="473f3-142">例</span><span class="sxs-lookup"><span data-stu-id="473f3-142">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-142">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-142">Examples</span></span>
 
 ```xpp
 AtlDataProductsItems
@@ -118,19 +118,19 @@ AtlDataProductsItems
 AtlDataInventChargeGroups
 ```
 
-### <a name="notes"></a><span data-ttu-id="473f3-143">摘要</span><span class="sxs-lookup"><span data-stu-id="473f3-143">Notes</span></span>
+### <a name="notes"></a><span data-ttu-id="80fbd-143">摘要</span><span class="sxs-lookup"><span data-stu-id="80fbd-143">Notes</span></span>
 
-<span data-ttu-id="473f3-144">このアプローチが役立つ場合、同じエンティティ ナビゲーション オブジェクトを複数のモジュールから公開できます。</span><span class="sxs-lookup"><span data-stu-id="473f3-144">The same entity navigation object can be exposed from multiple modules when this approach makes sense.</span></span> <span data-ttu-id="473f3-145">たとえば、`AtlDataProductsItems` は `data.product()` と `data.invent()` の両方から公開されます。</span><span class="sxs-lookup"><span data-stu-id="473f3-145">For example, `AtlDataProductsItems` is exposed from both `data.product()` and `data.invent()`.</span></span>
+<span data-ttu-id="80fbd-144">このアプローチが役立つ場合、同じエンティティ ナビゲーション オブジェクトを複数のモジュールから公開できます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-144">The same entity navigation object can be exposed from multiple modules when this approach makes sense.</span></span> <span data-ttu-id="80fbd-145">たとえば、`AtlDataProductsItems` は `data.product()` と `data.invent()` の両方から公開されます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-145">For example, `AtlDataProductsItems` is exposed from both `data.product()` and `data.invent()`.</span></span>
 
-## <a name="helper-navigation-objects"></a><span data-ttu-id="473f3-146">ヘルパー ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="473f3-146">Helper navigation objects</span></span>
+## <a name="helper-navigation-objects"></a><span data-ttu-id="80fbd-146">ヘルパー ナビゲーション オブジェクト</span><span class="sxs-lookup"><span data-stu-id="80fbd-146">Helper navigation objects</span></span>
 
-<span data-ttu-id="473f3-147">場合によって、[テスト データ メソッド](test-data-methods.md) はどのエンティティにも固有ではありません。</span><span class="sxs-lookup"><span data-stu-id="473f3-147">Sometimes, a [test data method](test-data-methods.md) isn't specific to any entity.</span></span> <span data-ttu-id="473f3-148">この場合は、モジュール レベルでヘルパー ノードを公開できます。</span><span class="sxs-lookup"><span data-stu-id="473f3-148">In this case, a helpers node can be exposed at the module level.</span></span> 
+<span data-ttu-id="80fbd-147">場合によって、[テスト データ メソッド](test-data-methods.md) はどのエンティティにも固有ではありません。</span><span class="sxs-lookup"><span data-stu-id="80fbd-147">Sometimes, a [test data method](test-data-methods.md) isn't specific to any entity.</span></span> <span data-ttu-id="80fbd-148">この場合は、モジュール レベルでヘルパー ノードを公開できます。</span><span class="sxs-lookup"><span data-stu-id="80fbd-148">In this case, a helpers node can be exposed at the module level.</span></span> 
 
-### <a name="navigation-node-naming"></a><span data-ttu-id="473f3-149">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-149">Navigation node naming</span></span>
+### <a name="navigation-node-naming"></a><span data-ttu-id="80fbd-149">ナビゲーション ノードの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-149">Navigation node naming</span></span>
 
-<span data-ttu-id="473f3-150">ヘルパー ナビゲーション ノードは `helpers` という名前にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="473f3-150">The helpers navigation node should be named `helpers`.</span></span>
+<span data-ttu-id="80fbd-150">ヘルパー ナビゲーション ノードは `helpers` という名前にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="80fbd-150">The helpers navigation node should be named `helpers`.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="473f3-151">例</span><span class="sxs-lookup"><span data-stu-id="473f3-151">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-151">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-151">Examples</span></span>
 
 ```xpp
 data.helpers();
@@ -138,11 +138,11 @@ data.helpers();
 data.whs().helpers();
 ```
 
-### <a name="class-naming"></a><span data-ttu-id="473f3-152">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="473f3-152">Class naming</span></span>
+### <a name="class-naming"></a><span data-ttu-id="80fbd-152">クラスの命名</span><span class="sxs-lookup"><span data-stu-id="80fbd-152">Class naming</span></span>
 
 `AtlData<ModuleName>Helpers`
 
-#### <a name="examples"></a><span data-ttu-id="473f3-153">例</span><span class="sxs-lookup"><span data-stu-id="473f3-153">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="80fbd-153">例</span><span class="sxs-lookup"><span data-stu-id="80fbd-153">Examples</span></span>
 
 ```xpp
 AtlDataHelpers
