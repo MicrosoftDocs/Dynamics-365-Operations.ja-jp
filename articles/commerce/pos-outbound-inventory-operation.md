@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646162"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971548"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>POS の出庫在庫操作
 
@@ -164,7 +164,7 @@ Commerce 本社 (HQ) に対する最終コミットメントの前に、**レビ
 - **場所が未設定** - 場所を空白にすることが許可されていない場所管理対象の品目に対して、場所が指定されていません。
 - **削除済明細行** - 注文には、POS アプリケーションに対しては基地でない Commerce 本社 (HQ) ユーザーによって削除された明細行があります。
 
-**Commerce パラメータ** > **在庫** > **店舗在庫** で **自動検証を有効にする** パラメータを **はい** に設定する場合、**フルフィルメントを終了** 機能を選択すると自動的に検証が実行され ます。
+**Commerce パラメーター** > **在庫** > **店舗在庫操作**で、**自動検証を有効にする**パラメーターを**はい**に設定する場合、**フルフィルメントの完了**機能を選択すると自動的に検証が実行されます。
 
 ### <a name="finish-fulfillment"></a>フルフィルメントの完了
 

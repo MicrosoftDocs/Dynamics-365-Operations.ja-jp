@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270007"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961637"
 ---
 # <a name="modify-an-existing-site-page"></a>既存のサイト ページの変更
 
@@ -47,7 +47,7 @@ ms.locfileid: "3270007"
 ただし、モデルまたはフラグメントを追加したり、削除したりすることが必要になる場合があります。 フラグメントまたはモジュールを追加するには、ページ アウトライン ツリーを使用して、モジュールまたはフラグメントを追加するスロットを見つけ、省略記号ボタン (**...**) をそのスロットに対して行います。 モジュールまたはフラグメントを追加するコマンドを含むメニューが表示されます。 モジュールまたはフラグメントを削除するには、ページ アウトライン ツリーで目的のモジュールまたはフラグメントを見つけて選択し、省略記号ボタンを選択してから、モジュールまたはフラグメントを削除するコマンドを選択します。
 
 > [!TIP]
-> また、直接選択することで、「What You See Is What You Get」 (WYSIWYG) に表示されているモジュールのプロパティを表示および編集することもできます。
+> また、直接選択することで、ビジュアル ページ ビルダー プレビューに表示されているモジュールのプロパティを表示および編集することもできます。
 
 変更が完了し、その効果に対するプレビューの完了後、コマンド バーの **編集の終了** を選択して、ページをチェック インする必要があります。 
 

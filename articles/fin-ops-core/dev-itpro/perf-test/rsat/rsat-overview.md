@@ -3,7 +3,7 @@ title: Regression Suite Automation Tool
 description: Regression Suite Automation Tool では、機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。
 author: robadawy
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1d570c77a9d743b892c5a889c212f8fc64132d7
-ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
+ms.openlocfilehash: e3830abc9c71a2df9b52fa17f04cd9675b5a0fa0
+ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3418529"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3991439"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -64,6 +64,12 @@ RSAT の使用についての定義。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
 
 [Regression Suite Automation Tool (RSAT) の使用方法](https://youtu.be/uhN9JItzGAk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
+### <a name="the-improved-excel-experience-in-rsat-20"></a>RSAT 2.0 での Excel エクスペリエンスの向上
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+
+上記の [RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)ビデオは、YouTube で視聴できる [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。 
 
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
