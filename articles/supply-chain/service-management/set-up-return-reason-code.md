@@ -15,50 +15,50 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5924d6f006266ccbf5c6229ec8f4116f4427eff
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c55e7dc087870ac414c5cf6ce3a3d10215ac4e8e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206821"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984946"
 ---
-# <a name="set-up-return-reason-codes"></a><span data-ttu-id="3d070-103">返品理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="3d070-103">Set up return reason codes</span></span>   
+# <a name="set-up-return-reason-codes"></a><span data-ttu-id="de6e8-103">返品理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="de6e8-103">Set up return reason codes</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="set-up-return-reason-code-groups"></a><span data-ttu-id="3d070-104">返品理由コード グループの設定</span><span class="sxs-lookup"><span data-stu-id="3d070-104">Set up return reason code groups</span></span> 
+## <a name="set-up-return-reason-code-groups"></a><span data-ttu-id="de6e8-104">返品理由コード グループの設定</span><span class="sxs-lookup"><span data-stu-id="de6e8-104">Set up return reason code groups</span></span> 
 
-1.  <span data-ttu-id="3d070-105">**販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="3d070-105">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.</span></span>
+1.  <span data-ttu-id="de6e8-105">**販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6e8-105">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.</span></span>
 
-2.  <span data-ttu-id="3d070-106">Ctrl + N キーを押して、新しい返品理由コード グループの行を作成します。</span><span class="sxs-lookup"><span data-stu-id="3d070-106">Press CTRL+N to create a line for a new return reason code group.</span></span>
+2.  <span data-ttu-id="de6e8-106">Ctrl + N キーを押して、新しい返品理由コード グループの行を作成します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-106">Press CTRL+N to create a line for a new return reason code group.</span></span>
 
-3.  <span data-ttu-id="3d070-107">**返品理由コード グループ**フィールドに、このグループの ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="3d070-107">In the **Return reason code group** field, type an identifier for this group.</span></span>
+3.  <span data-ttu-id="de6e8-107">**返品理由コード グループ**フィールドに、このグループの ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-107">In the **Return reason code group** field, type an identifier for this group.</span></span>
 
-4.  <span data-ttu-id="3d070-108">**説明**フィールドに、このグループの使用方法を説明する簡単な語句を入力します。</span><span class="sxs-lookup"><span data-stu-id="3d070-108">In the **Description** field, type a brief phrase to explain how this group will be used.</span></span>
+4.  <span data-ttu-id="de6e8-108">**説明**フィールドに、このグループの使用方法を説明する簡単な語句を入力します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-108">In the **Description** field, type a brief phrase to explain how this group will be used.</span></span>
 
-## <a name="set-up-return-reason-codes"></a><span data-ttu-id="3d070-109">返品理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="3d070-109">Set up return reason codes</span></span> 
+## <a name="set-up-return-reason-codes"></a><span data-ttu-id="de6e8-109">返品理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="de6e8-109">Set up return reason codes</span></span> 
 
-<span data-ttu-id="3d070-110">この手順では、顧客が製品を返品した理由を示すために使用できる、返品理由コードを設定できます。</span><span class="sxs-lookup"><span data-stu-id="3d070-110">This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.</span></span>
+<span data-ttu-id="de6e8-110">この手順では、顧客が製品を返品した理由を示すために使用できる、返品理由コードを設定できます。</span><span class="sxs-lookup"><span data-stu-id="de6e8-110">This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.</span></span>
 
-1.  <span data-ttu-id="3d070-111">**販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="3d070-111">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.</span></span>
+1.  <span data-ttu-id="de6e8-111">**販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="de6e8-111">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.</span></span>
 
-2.  <span data-ttu-id="3d070-112">Ctrl + N キーを押して、新しい返品理由コード行を作成します。</span><span class="sxs-lookup"><span data-stu-id="3d070-112">Press CTRL + N to create a new return reason code line.</span></span>
+2.  <span data-ttu-id="de6e8-112">Ctrl + N キーを押して、新しい返品理由コード行を作成します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-112">Press CTRL + N to create a new return reason code line.</span></span>
 
-3.  <span data-ttu-id="3d070-113">**返品理由コード**フィールドに、このコードを識別するテキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="3d070-113">In the **Return reason code** field, enter text to identify this code.</span></span>
+3.  <span data-ttu-id="de6e8-113">**返品理由コード**フィールドに、このコードを識別するテキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-113">In the **Return reason code** field, enter text to identify this code.</span></span>
 
-4.  <span data-ttu-id="3d070-114">**説明**フィールドに、返品理由コードを説明するテキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="3d070-114">In the **Description** field, enter text to describe the return reason code.</span></span>
+4.  <span data-ttu-id="de6e8-114">**説明**フィールドに、返品理由コードを説明するテキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-114">In the **Description** field, enter text to describe the return reason code.</span></span>
 
-5.  <span data-ttu-id="3d070-115">**返品理由コード グループ**ドロップダウン リストを使用して、コードを返品理由コード グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="3d070-115">Use the **Return reason code group** drop-down list to add the code to a return reason code group.</span></span>
+5.  <span data-ttu-id="de6e8-115">**返品理由コード グループ**ドロップダウン リストを使用して、コードを返品理由コード グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="de6e8-115">Use the **Return reason code group** drop-down list to add the code to a return reason code group.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3d070-116">参照</span><span class="sxs-lookup"><span data-stu-id="3d070-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de6e8-116">参照</span><span class="sxs-lookup"><span data-stu-id="de6e8-116">See also</span></span>
 
-<span data-ttu-id="3d070-117">[返品理由コード グループ (フォーム)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3d070-117">[Return reason code groups (form)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))</span></span>
+<span data-ttu-id="de6e8-117">[返品理由コード グループ (フォーム)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="de6e8-117">[Return reason code groups (form)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))</span></span>
 
-<span data-ttu-id="3d070-118">[返品理由コード (フォーム)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3d070-118">[Return reason codes (form)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))</span></span>
+<span data-ttu-id="de6e8-118">[返品理由コード (フォーム)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="de6e8-118">[Return reason codes (form)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))</span></span>
 
  
 

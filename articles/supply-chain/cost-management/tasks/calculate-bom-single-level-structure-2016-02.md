@@ -14,33 +14,33 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e7c2c34474cada787b7a7ba720ba177aa8dc125f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 83a62966e343a9b1c073c2d6ec1c1b69b1daddbb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214355"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985916"
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="fabbf-103">単一レベル構造を使用した BOM の計算 (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="fabbf-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="59299-103">単一レベル構造を使用した BOM の計算 (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="59299-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="fabbf-104">この手順は、原価表に基づく単一レベル展開を使用して、完成品のコストを計算する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="fabbf-105">これは、BOM 計算シリーズの 6 番目のタスクです。</span><span class="sxs-lookup"><span data-stu-id="fabbf-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="fabbf-106">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="fabbf-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="59299-104">この手順は、原価表に基づく単一レベル展開を使用して、完成品のコストを計算する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="59299-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="59299-105">これは、BOM 計算シリーズの 6 番目のタスクです。</span><span class="sxs-lookup"><span data-stu-id="59299-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="59299-106">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="59299-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="fabbf-107">[リリースされた製品] に進みます。</span><span class="sxs-lookup"><span data-stu-id="fabbf-107">Go to Released products.</span></span>
-2. <span data-ttu-id="fabbf-108">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="fabbf-109">製品 BOM_1 を選択します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-109">Select product BOM_1.</span></span>  
-3. <span data-ttu-id="fabbf-110">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fabbf-110">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="fabbf-111">品目価格をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fabbf-111">Click Item price.</span></span>
-5. <span data-ttu-id="fabbf-112">[品目原価の計算] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fabbf-112">Click Calculate item cost.</span></span>
-    * <span data-ttu-id="fabbf-113">省略記号 (...) をクリックして、トップ メニューにこのオプションを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabbf-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
-6. <span data-ttu-id="fabbf-114">[原価計算バージョン] フィールドで、ドロップ ダウン ボタンをクリックして、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="fabbf-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="fabbf-115">このデモでは、「10」を選択します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-115">For this demo, select 10.</span></span> <span data-ttu-id="fabbf-116">これは、原価価格をコンポーネントに追加する際に使用される、同じ原価バージョンです。</span><span class="sxs-lookup"><span data-stu-id="fabbf-116">This is the same costing version used for adding the cost price to the components.</span></span>  
-7. <span data-ttu-id="fabbf-117">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fabbf-117">Click OK.</span></span>
-8. <span data-ttu-id="fabbf-118">[計算の詳細の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fabbf-118">Click View calculation details.</span></span>
-    * <span data-ttu-id="fabbf-119">省略記号 (...) をクリックして、トップ メニューにこのオプションを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabbf-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="fabbf-120">コストの構成は次のとおりです:  \*    10 は ITEM_A から、 10 は ITEM_B から、 10 は BOM_2 から派生します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-120">Here's the composition of the cost:  \*    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="fabbf-121">この場合、BOM_2 は計算によってではなく、標準原価 10 として入力されたので、その詳細はありません。</span><span class="sxs-lookup"><span data-stu-id="fabbf-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="fabbf-122">\*    7 は一定のコストである段取り時間から派生し、追加の 7 は実行時操作 (プロセス) から派生します。</span><span class="sxs-lookup"><span data-stu-id="fabbf-122">\*    7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="fabbf-123">\*    間接原価に対応する他の金額もあります。</span><span class="sxs-lookup"><span data-stu-id="fabbf-123">\*    There are also other amounts that correspond to indirect costs.</span></span>  
-9. <span data-ttu-id="fabbf-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="fabbf-124">@SysTaskRecorder:_RequestClose</span></span>
+1. <span data-ttu-id="59299-107">[リリースされた製品] に進みます。</span><span class="sxs-lookup"><span data-stu-id="59299-107">Go to Released products.</span></span>
+2. <span data-ttu-id="59299-108">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="59299-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="59299-109">製品 BOM_1 を選択します。</span><span class="sxs-lookup"><span data-stu-id="59299-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="59299-110">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="59299-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="59299-111">品目価格をクリックします。</span><span class="sxs-lookup"><span data-stu-id="59299-111">Click Item price.</span></span>
+5. <span data-ttu-id="59299-112">[品目原価の計算] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="59299-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="59299-113">省略記号 (...) をクリックして、トップ メニューにこのオプションを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="59299-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="59299-114">[原価計算バージョン] フィールドで、ドロップ ダウン ボタンをクリックして、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="59299-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="59299-115">このデモでは、「10」を選択します。</span><span class="sxs-lookup"><span data-stu-id="59299-115">For this demo, select 10.</span></span> <span data-ttu-id="59299-116">これは、原価価格をコンポーネントに追加する際に使用される、同じ原価バージョンです。</span><span class="sxs-lookup"><span data-stu-id="59299-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="59299-117">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="59299-117">Click OK.</span></span>
+8. <span data-ttu-id="59299-118">[計算の詳細の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="59299-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="59299-119">省略記号 (...) をクリックして、トップ メニューにこのオプションを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="59299-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="59299-120">コストの構成は次のとおりです:  \*    10 は ITEM_A から、 10 は ITEM_B から、 10 は BOM_2 から派生します。</span><span class="sxs-lookup"><span data-stu-id="59299-120">Here's the composition of the cost:  \*    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="59299-121">この場合、BOM_2 は計算によってではなく、標準原価 10 として入力されたので、その詳細はありません。</span><span class="sxs-lookup"><span data-stu-id="59299-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="59299-122">\*    7 は一定のコストである段取り時間から派生し、追加の 7 は実行時操作 (プロセス) から派生します。</span><span class="sxs-lookup"><span data-stu-id="59299-122">\*    7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="59299-123">\*    間接原価に対応する他の金額もあります。</span><span class="sxs-lookup"><span data-stu-id="59299-123">\*    There are also other amounts that correspond to indirect costs.</span></span>  
+9. <span data-ttu-id="59299-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="59299-124">@SysTaskRecorder:_RequestClose</span></span>
 

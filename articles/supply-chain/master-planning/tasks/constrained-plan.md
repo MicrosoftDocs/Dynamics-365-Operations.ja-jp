@@ -13,43 +13,43 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8cc44876938074e72526e75f0df5c119cbcfd845
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8b9d5712dd1b4f9958de775e1a2224b64485d05
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213426"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987217"
 ---
-# <a name="generate-a-constrained-plan"></a><span data-ttu-id="b5b9f-103">制約付き計画の生成</span><span class="sxs-lookup"><span data-stu-id="b5b9f-103">Generate a constrained plan</span></span>
+# <a name="generate-a-constrained-plan"></a><span data-ttu-id="f659b-103">制約付き計画の生成</span><span class="sxs-lookup"><span data-stu-id="f659b-103">Generate a constrained plan</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="b5b9f-104">このトピックでは、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-104">This topic explains how to create a plan that takes into account both material and capacity constraints.</span></span> <span data-ttu-id="b5b9f-105">計画により、材料が利用可能でないうちに生産が開始しないように、またリソースが予約超過にならないようにします。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-105">The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked.</span></span> 
+<span data-ttu-id="f659b-104">このトピックでは、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="f659b-104">This topic explains how to create a plan that takes into account both material and capacity constraints.</span></span> <span data-ttu-id="f659b-105">計画により、材料が利用可能でないうちに生産が開始しないように、またリソースが予約超過にならないようにします。</span><span class="sxs-lookup"><span data-stu-id="f659b-105">The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked.</span></span> 
 
-<span data-ttu-id="b5b9f-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b5b9f-107">この手順は、生産の計画者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-107">This procedure is intended for the production planner.</span></span>
+<span data-ttu-id="f659b-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="f659b-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f659b-107">この手順は、生産の計画者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="f659b-107">This procedure is intended for the production planner.</span></span>
 
 
-## <a name="set-up-a-constrained-plan"></a><span data-ttu-id="b5b9f-108">制約付き計画の設定</span><span class="sxs-lookup"><span data-stu-id="b5b9f-108">Set up a constrained plan</span></span>
-1. <span data-ttu-id="b5b9f-109">ホーム ページで、**マスター プラン** ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-109">In the home page, select the **Master planning** workspace.</span></span>
-2. <span data-ttu-id="b5b9f-110">ワークスペースの右側にあるリンクの一覧から、**マスター プラン**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-110">Select **Master plans** in the list of links on the far right side of the workspace.</span></span>
-3. <span data-ttu-id="b5b9f-111">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-111">In the list, find and select the desired record.</span></span> <span data-ttu-id="b5b9f-112">例: **StaticPlan**</span><span class="sxs-lookup"><span data-stu-id="b5b9f-112">Example: **StaticPlan**</span></span>  
-4. <span data-ttu-id="b5b9f-113">**有限能力**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-113">Select **Yes** in the **Finite capacity** field.</span></span>
-5. <span data-ttu-id="b5b9f-114">**有限能力タイム フェンス** フィールドに `30` と入力します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-114">In the **Finite capacity time fence** field, enter `30`.</span></span>
-6. <span data-ttu-id="b5b9f-115">**タイム フェンス (日)** セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-115">Expand the **Time fences in days** section.</span></span>
-7. <span data-ttu-id="b5b9f-116">**能力**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-116">Select **Yes** in the **Capacity** field.</span></span>
-8. <span data-ttu-id="b5b9f-117">**能力スケジューリング タイム フェンス (日)** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-117">In the **Capacity scheduling time fence (days)** field, enter a number.</span></span> <span data-ttu-id="b5b9f-118">例: `60`</span><span class="sxs-lookup"><span data-stu-id="b5b9f-118">Example: `60`</span></span>  
-9. <span data-ttu-id="b5b9f-119">**計算済遅延**フィールドで、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-119">Select **Yes** in the **Calculated delays** field.</span></span>
-10. <span data-ttu-id="b5b9f-120">**遅延の計算タイム フェンス (日)** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-120">In the **Calculate delays time fence (days)** field, enter a number.</span></span> <span data-ttu-id="b5b9f-121">例: `60`</span><span class="sxs-lookup"><span data-stu-id="b5b9f-121">Example: `60`</span></span> 
-11. <span data-ttu-id="b5b9f-122">**計算済遅延**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-122">Expand the **Calculated delays** section.</span></span>
-12. <span data-ttu-id="b5b9f-123">**計算済遅延を要求日に追加**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-123">Select **Yes** in all **Add the calculated delay to the requirement date** fields.</span></span>
-13. <span data-ttu-id="b5b9f-124">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-124">Close the page.</span></span>
+## <a name="set-up-a-constrained-plan"></a><span data-ttu-id="f659b-108">制約付き計画の設定</span><span class="sxs-lookup"><span data-stu-id="f659b-108">Set up a constrained plan</span></span>
+1. <span data-ttu-id="f659b-109">ホーム ページで、**マスター プラン** ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-109">In the home page, select the **Master planning** workspace.</span></span>
+2. <span data-ttu-id="f659b-110">ワークスペースの右側にあるリンクの一覧から、**マスター プラン**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-110">Select **Master plans** in the list of links on the far right side of the workspace.</span></span>
+3. <span data-ttu-id="f659b-111">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-111">In the list, find and select the desired record.</span></span> <span data-ttu-id="f659b-112">例: **StaticPlan**</span><span class="sxs-lookup"><span data-stu-id="f659b-112">Example: **StaticPlan**</span></span>  
+4. <span data-ttu-id="f659b-113">**有限能力**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-113">Select **Yes** in the **Finite capacity** field.</span></span>
+5. <span data-ttu-id="f659b-114">**有限能力タイム フェンス** フィールドに `30` と入力します。</span><span class="sxs-lookup"><span data-stu-id="f659b-114">In the **Finite capacity time fence** field, enter `30`.</span></span>
+6. <span data-ttu-id="f659b-115">**タイム フェンス (日)** セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="f659b-115">Expand the **Time fences in days** section.</span></span>
+7. <span data-ttu-id="f659b-116">**能力**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-116">Select **Yes** in the **Capacity** field.</span></span>
+8. <span data-ttu-id="f659b-117">**能力スケジューリング タイム フェンス (日)** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f659b-117">In the **Capacity scheduling time fence (days)** field, enter a number.</span></span> <span data-ttu-id="f659b-118">例: `60`</span><span class="sxs-lookup"><span data-stu-id="f659b-118">Example: `60`</span></span>  
+9. <span data-ttu-id="f659b-119">**計算済遅延**フィールドで、**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-119">Select **Yes** in the **Calculated delays** field.</span></span>
+10. <span data-ttu-id="f659b-120">**遅延の計算タイム フェンス (日)** フィールドに、数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f659b-120">In the **Calculate delays time fence (days)** field, enter a number.</span></span> <span data-ttu-id="f659b-121">例: `60`</span><span class="sxs-lookup"><span data-stu-id="f659b-121">Example: `60`</span></span> 
+11. <span data-ttu-id="f659b-122">**計算済遅延**セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="f659b-122">Expand the **Calculated delays** section.</span></span>
+12. <span data-ttu-id="f659b-123">**計算済遅延を要求日に追加**フィールドで**はい**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-123">Select **Yes** in all **Add the calculated delay to the requirement date** fields.</span></span>
+13. <span data-ttu-id="f659b-124">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f659b-124">Close the page.</span></span>
 
-## <a name="create-a-constrained-plan"></a><span data-ttu-id="b5b9f-125">制約付き計画の作成</span><span class="sxs-lookup"><span data-stu-id="b5b9f-125">Create a constrained plan</span></span>
-1. <span data-ttu-id="b5b9f-126">**実行**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-126">Select **Run**.</span></span>
-2. <span data-ttu-id="b5b9f-127">**マスター プラン** フィールドで、制約を設定した計画を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-127">In the **Master plan** field, enter or select the plan for which you have set up constraints.</span></span>  
-3. <span data-ttu-id="b5b9f-128">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-128">Select **OK**.</span></span>
-4. <span data-ttu-id="b5b9f-129">**計画オーダー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5b9f-129">Select **Planned orders**.</span></span>
+## <a name="create-a-constrained-plan"></a><span data-ttu-id="f659b-125">制約付き計画の作成</span><span class="sxs-lookup"><span data-stu-id="f659b-125">Create a constrained plan</span></span>
+1. <span data-ttu-id="f659b-126">**実行**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-126">Select **Run**.</span></span>
+2. <span data-ttu-id="f659b-127">**マスター プラン** フィールドで、制約を設定した計画を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-127">In the **Master plan** field, enter or select the plan for which you have set up constraints.</span></span>  
+3. <span data-ttu-id="f659b-128">**OK** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-128">Select **OK**.</span></span>
+4. <span data-ttu-id="f659b-129">**計画オーダー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f659b-129">Select **Planned orders**.</span></span>
 
