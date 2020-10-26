@@ -1,0 +1,70 @@
+---
+title: プロセスの自動化のフレームワークの開発
+description: このトピックでは、プロセス自動化フレームワークを使用する開発の概要について説明します。
+author: RyanCCarlson2
+manager: AnnBe
+ms.date: 09/10/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: rhaertle
+ms.search.scope: Operations
+ms.custom: ''
+ms.search.region: Global
+ms.author: rcarlson
+ms.search.validFrom: 2020-09-10
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1e66744ec041a6a5abd9f11e0a70d7eae74e7d69
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885343"
+---
+# <a name="process-automation-framework-development"></a><span data-ttu-id="b0baa-103">プロセスの自動化のフレームワークの開発</span><span class="sxs-lookup"><span data-stu-id="b0baa-103">Process automation framework development</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="b0baa-104">プロセスの自動化を使用すると、バッチ サーバーによって実行されるプロセスを簡単にスケジューリングすることができます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-104">Process automation enables simple scheduling of processes that will be run by the batch server.</span></span> <span data-ttu-id="b0baa-105">プロセス自動化フレームワークは、プロセスの自動化を実装できる API のセットです。</span><span class="sxs-lookup"><span data-stu-id="b0baa-105">The process automation framework is a set of APIs that lets you implement process automation.</span></span>
+
+<span data-ttu-id="b0baa-106">プロセスの自動化を実装するには、パブリック API のみを使用し、次のガイドラインに従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="b0baa-106">You should use only the public APIs to implement process automation, and you should follow these guidelines:</span></span>
+
+- <span data-ttu-id="b0baa-107">プロセス自動化テーブルから選択、挿入、または直接参照を行わないでください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-107">Don't select from, insert into, or directly reference the process automation tables.</span></span>
+- <span data-ttu-id="b0baa-108">フレームワークを拡張したり、コードをクラスに統合したりしないでください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-108">Don't extend the framework or integrate your code with the classes.</span></span>
+- <span data-ttu-id="b0baa-109">挿入、更新、削除などのテーブル イベントにはサブスクライブしないでください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-109">Don't subscribe to table events such as insert, update, and delete.</span></span> <span data-ttu-id="b0baa-110">Finance and Operations アプリは、これらのイベントのほとんどをスキップします。</span><span class="sxs-lookup"><span data-stu-id="b0baa-110">Finance and Operations apps skip most of those events.</span></span>
+- <span data-ttu-id="b0baa-111">必要な機能が不足している場合は、機能要求を送信します。</span><span class="sxs-lookup"><span data-stu-id="b0baa-111">If functionality that you require is missing, submit feature requests.</span></span>
+
+<span data-ttu-id="b0baa-112">Microsoft は今後の機能追加を計画します。</span><span class="sxs-lookup"><span data-stu-id="b0baa-112">Microsoft plans to add features in the future.</span></span> <span data-ttu-id="b0baa-113">プロセス自動化フレームワークに深く統合しすぎると、これらの機能が追加された場合に統合が機能しなくなる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b0baa-113">If you integrate too deeply with the process automation framework, your integration might break when those features are added.</span></span>
+
+<span data-ttu-id="b0baa-114">プロセス自動化フレームワークの一部の例は、リリース品質コードを代表するものではありません。</span><span class="sxs-lookup"><span data-stu-id="b0baa-114">Some of the examples for the process automation framework aren't representative of release-quality code.</span></span> <span data-ttu-id="b0baa-115">フレームワークを使用して構築されたプロセスは、常にすべてのベスト プラクティスと品質基準に準拠していることが期待されます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-115">As always, the expectation is that processes that are built by using the framework will follow all best practices and quality standards.</span></span>
+
+<span data-ttu-id="b0baa-116">プロセス自動化の詳細については、[プロセスの自動化](../sysadmin/process-automation.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-116">For more information about process automation, see [Process automation](../sysadmin/process-automation.md).</span></span>
+
+## <a name="definitions"></a><span data-ttu-id="b0baa-117">定義</span><span class="sxs-lookup"><span data-stu-id="b0baa-117">Definitions</span></span>
+
+| <span data-ttu-id="b0baa-118">相談</span><span class="sxs-lookup"><span data-stu-id="b0baa-118">Term</span></span>               | <span data-ttu-id="b0baa-119">定義</span><span class="sxs-lookup"><span data-stu-id="b0baa-119">Definition</span></span> |
+|--------------------|------------|
+| <span data-ttu-id="b0baa-120">呼び出し</span><span class="sxs-lookup"><span data-stu-id="b0baa-120">Poller</span></span>             | <span data-ttu-id="b0baa-121">呼び出しは、毎分実施される重要なシステムのバッチ プロセスで、プロセス自動化フレームワークのさまざまなサブシステムを起動します。</span><span class="sxs-lookup"><span data-stu-id="b0baa-121">The poller is a system-critical batch process that runs every minute and invokes various subsystems of the process automation framework.</span></span> <span data-ttu-id="b0baa-122">スケジュールを参照して、実行する準備ができているプロセスを判別し、フレームワークのランタイム側を起動して、プロセスが確実に実行されるようにします。</span><span class="sxs-lookup"><span data-stu-id="b0baa-122">It consults the schedule to determine which processes are ready to run, and then it invokes the runtime side of the framework to ensure that processes are run.</span></span> |
+| <span data-ttu-id="b0baa-123">スケジュール済プロセス</span><span class="sxs-lookup"><span data-stu-id="b0baa-123">Scheduled process</span></span>  | <span data-ttu-id="b0baa-124">スケジュール済プロセスとは、ユーザーによってユーザー インターフェイス (UI) でスケジュールされたプロセスのことです。</span><span class="sxs-lookup"><span data-stu-id="b0baa-124">A scheduled process is a process that is scheduled in the user interface (UI) by a user.</span></span> <span data-ttu-id="b0baa-125">これらのプロセスの発生は、カレンダー表示できます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-125">Occurrences for these processes can be seen in a calendar view.</span></span> |
+| <span data-ttu-id="b0baa-126">バックグラウンド プロセス</span><span class="sxs-lookup"><span data-stu-id="b0baa-126">Background process</span></span> | <span data-ttu-id="b0baa-127">バックグラウンド プロセスは、*ポーリング プロセス*とも呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-127">A background process is also known as a *polled process*.</span></span> <span data-ttu-id="b0baa-128">これはユーザーの入力を必要とせずに頻繁に実行されるプロセスで、バックグラウンド プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="b0baa-128">It's a process that runs frequently, without requiring user input, and performs some background processing.</span></span> <span data-ttu-id="b0baa-129">一般会計への補助元帳の転送はひとつの例です。</span><span class="sxs-lookup"><span data-stu-id="b0baa-129">Subledger transfer to the general ledger is an example.</span></span> |
+| <span data-ttu-id="b0baa-130">種類</span><span class="sxs-lookup"><span data-stu-id="b0baa-130">Type</span></span>               | <span data-ttu-id="b0baa-131">このトピックおよび関連トピックでは、[タイプ登録](type-registration.md)で説明したように、*タイプ*という用語は **ProcessScheduleType** を指します。</span><span class="sxs-lookup"><span data-stu-id="b0baa-131">In this topic and related topics, the term *type* refers to **ProcessScheduleType**, as discussed in [Type registration](type-registration.md).</span></span> |
+| <span data-ttu-id="b0baa-132">シリーズ</span><span class="sxs-lookup"><span data-stu-id="b0baa-132">Series</span></span>             | <span data-ttu-id="b0baa-133">登録済タイプのすべてのプロセスには、シリーズが必要です。</span><span class="sxs-lookup"><span data-stu-id="b0baa-133">Every process that has a registered type must have a series.</span></span> <span data-ttu-id="b0baa-134">スケジュール済プロセスのシリーズは、ユーザーによって UI の中に作成されます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-134">Series for scheduled processes are created in the UI by users.</span></span> <span data-ttu-id="b0baa-135">バックグラウンド プロセスのためのシリーズは、シリーズの登録を通じて作成されます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-135">Series for background processes are created through series registration.</span></span> <span data-ttu-id="b0baa-136">詳細については、[シリーズ登録](series-registration.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-136">For more information, see [Series registration](series-registration.md).</span></span> |
+| <span data-ttu-id="b0baa-137">日時</span><span class="sxs-lookup"><span data-stu-id="b0baa-137">Date and time</span></span>      | <span data-ttu-id="b0baa-138">すべてのフレームワークの日付は協定世界時 (UTC) で保存されますが、ユーザーの優先タイムゾーンに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b0baa-138">All framework dates are stored in Coordinated Universal Time (UTC) but shown in the user's preferred time zone.</span></span> |
+
+## <a name="tasks"></a><span data-ttu-id="b0baa-139">仕事</span><span class="sxs-lookup"><span data-stu-id="b0baa-139">Tasks</span></span>
+
+<span data-ttu-id="b0baa-140">プロセス自動化ソリューションの実装は、一連のタスクで構成され、必須タスクとオプション タスクがあります。</span><span class="sxs-lookup"><span data-stu-id="b0baa-140">Implementation of a process automation solution consists of a set of tasks, some of which are required and some of which are optional.</span></span>
+
+<span data-ttu-id="b0baa-141">UI のカスタマイズのほとんどは、バックグラウンド プロセスでサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b0baa-141">Most of the UI customizations aren't supported for background processes.</span></span> <span data-ttu-id="b0baa-142">**シリーズ** リスト ページ、および結果とメッセージのログがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="b0baa-142">The **Series** list page and logging of results and messages are supported.</span></span>
+
+| <span data-ttu-id="b0baa-143">タスク</span><span class="sxs-lookup"><span data-stu-id="b0baa-143">Task</span></span>                                                | <span data-ttu-id="b0baa-144">スケジュール済プロセスに必須</span><span class="sxs-lookup"><span data-stu-id="b0baa-144">Required for a scheduled process</span></span> | <span data-ttu-id="b0baa-145">バックグラウンド プロセスに必須</span><span class="sxs-lookup"><span data-stu-id="b0baa-145">Required for a background process</span></span> |
+|-----------------------------------------------------|----------------------------------|-----------------------------------|
+| [<span data-ttu-id="b0baa-146">タイプ登録</span><span class="sxs-lookup"><span data-stu-id="b0baa-146">Type registration</span></span>](type-registration.md)           | <span data-ttu-id="b0baa-147">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-147">Yes</span></span> | <span data-ttu-id="b0baa-148">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-148">Yes</span></span> |
+| [<span data-ttu-id="b0baa-149">シリーズ登録</span><span class="sxs-lookup"><span data-stu-id="b0baa-149">Series registration</span></span>](series-registration.md)       | <span data-ttu-id="b0baa-150">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="b0baa-150">Not supported</span></span> | <span data-ttu-id="b0baa-151">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-151">Yes</span></span> |
+| [<span data-ttu-id="b0baa-152">プロセス パラメーター</span><span class="sxs-lookup"><span data-stu-id="b0baa-152">Process parameters</span></span>](process-parameters.md)         | <span data-ttu-id="b0baa-153">なし</span><span class="sxs-lookup"><span data-stu-id="b0baa-153">No</span></span> | <span data-ttu-id="b0baa-154">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="b0baa-154">Not supported</span></span> |
+| [<span data-ttu-id="b0baa-155">構成可能なユーザーのクエリ</span><span class="sxs-lookup"><span data-stu-id="b0baa-155">User-configurable queries</span></span>](user-queries.md)        | <span data-ttu-id="b0baa-156">なし</span><span class="sxs-lookup"><span data-stu-id="b0baa-156">No</span></span> | <span data-ttu-id="b0baa-157">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="b0baa-157">Not supported</span></span> |
+| [<span data-ttu-id="b0baa-158">プロセスの実行</span><span class="sxs-lookup"><span data-stu-id="b0baa-158">Run processes</span></span>](run-process.md)                     | <span data-ttu-id="b0baa-159">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-159">Yes</span></span> | <span data-ttu-id="b0baa-160">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-160">Yes</span></span> |
+| [<span data-ttu-id="b0baa-161">結果とメッセージを記録する</span><span class="sxs-lookup"><span data-stu-id="b0baa-161">Log results and messages</span></span>](log-results.md)          | <span data-ttu-id="b0baa-162">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-162">Yes</span></span> | <span data-ttu-id="b0baa-163">あり</span><span class="sxs-lookup"><span data-stu-id="b0baa-163">Yes</span></span> |
+| [<span data-ttu-id="b0baa-164">ユーザー インターフェイスのカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="b0baa-164">Customize the user interface</span></span>](ui-customization.md) | <span data-ttu-id="b0baa-165">なし</span><span class="sxs-lookup"><span data-stu-id="b0baa-165">No</span></span> | <span data-ttu-id="b0baa-166">[ユーザー インターフェイスのカスタマイズ](ui-customization.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0baa-166">See [Customize the user interface](ui-customization.md).</span></span> |

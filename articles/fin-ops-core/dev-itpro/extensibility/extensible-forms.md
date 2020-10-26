@@ -14,30 +14,30 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 35a96953c561277a30adc82fa72a8dee95176f31
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5ae07c55c86e005e49f6f43c76dbda401fc231ee
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191634"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984713"
 ---
-# <a name="write-extensible-forms"></a><span data-ttu-id="52fb6-103">拡張可能フォームの書き込み</span><span class="sxs-lookup"><span data-stu-id="52fb6-103">Write extensible forms</span></span>
+# <a name="write-extensible-forms"></a><span data-ttu-id="cfe73-103">拡張可能フォームの書き込み</span><span class="sxs-lookup"><span data-stu-id="cfe73-103">Write extensible forms</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="methods-on-forms"></a><span data-ttu-id="52fb6-104">フォーム上のメソッド</span><span class="sxs-lookup"><span data-stu-id="52fb6-104">Methods on forms</span></span>
-+ <span data-ttu-id="52fb6-105">一般に、拡張可能なメソッドを記述するためのガイドラインは、フォーム メソッドにも適用されます。</span><span class="sxs-lookup"><span data-stu-id="52fb6-105">In general, the guidelines for writing extensible methods also apply to form methods.</span></span>
-+ <span data-ttu-id="52fb6-106">コマンド チェーン (CoC) は、フォームの非プライベート メンバー (クラスの非プライベート メンバーと同じ) にアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="52fb6-106">Chain of Command (CoC) gives access to the form's non-private members, which are the same as the non-private members for classes.</span></span>
-+ <span data-ttu-id="52fb6-107">CoC は入れ子になったクラスで有効になります。</span><span class="sxs-lookup"><span data-stu-id="52fb6-107">CoC is enabled for nested classes.</span></span> <span data-ttu-id="52fb6-108">そのため、フォーム上のさまざまなレベルで定義されているメソッドは拡張可能です。</span><span class="sxs-lookup"><span data-stu-id="52fb6-108">Therefore, methods that are defined in various levels on the form are extensible.</span></span>
+## <a name="methods-on-forms"></a><span data-ttu-id="cfe73-104">フォーム上のメソッド</span><span class="sxs-lookup"><span data-stu-id="cfe73-104">Methods on forms</span></span>
++ <span data-ttu-id="cfe73-105">一般に、拡張可能なメソッドを記述するためのガイドラインは、フォーム メソッドにも適用されます。</span><span class="sxs-lookup"><span data-stu-id="cfe73-105">In general, the guidelines for writing extensible methods also apply to form methods.</span></span>
++ <span data-ttu-id="cfe73-106">コマンド チェーン (CoC) は、フォームの非プライベート メンバー (クラスの非プライベート メンバーと同じ) にアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="cfe73-106">Chain of Command (CoC) gives access to the form's non-private members, which are the same as the non-private members for classes.</span></span>
++ <span data-ttu-id="cfe73-107">CoC は入れ子になったクラスで有効になります。</span><span class="sxs-lookup"><span data-stu-id="cfe73-107">CoC is enabled for nested classes.</span></span> <span data-ttu-id="cfe73-108">そのため、フォーム上のさまざまなレベルで定義されているメソッドは拡張可能です。</span><span class="sxs-lookup"><span data-stu-id="cfe73-108">Therefore, methods that are defined in various levels on the form are extensible.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="52fb6-109">フォームのメソッドの 1 つの制限として、データ ソース メソッドの場合、カーネルで定義されているメソッドのみで拡張が有効になります。つまり、フォーム データ ソースで定義されたメソッドは拡張可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="52fb6-109">One limitation of methods on forms, that for form data source methods only methods that are defined in the kernel are enabled for extensions, i.e. methods defined on the form data source are not extensible.</span></span> <span data-ttu-id="52fb6-110">これは今後のプラットフォーム更新で使用できます。</span><span class="sxs-lookup"><span data-stu-id="52fb6-110">This will be available in an upcoming Platform Update.</span></span>
+> <span data-ttu-id="cfe73-109">フォームのメソッドの 1 つの制限として、データ ソース メソッドの場合、カーネルで定義されているメソッドのみで拡張が有効になります。つまり、フォーム データ ソースで定義されたメソッドは拡張可能ではありません。</span><span class="sxs-lookup"><span data-stu-id="cfe73-109">One limitation of methods on forms, that for form data source methods only methods that are defined in the kernel are enabled for extensions, i.e. methods defined on the form data source are not extensible.</span></span> <span data-ttu-id="cfe73-110">これは今後のプラットフォーム更新で使用できます。</span><span class="sxs-lookup"><span data-stu-id="cfe73-110">This will be available in an upcoming Platform Update.</span></span>
 
-## <a name="field-groups"></a><span data-ttu-id="52fb6-111">フィールド グループ</span><span class="sxs-lookup"><span data-stu-id="52fb6-111">Field groups</span></span>
-<span data-ttu-id="52fb6-112">可能であれば必ずフィールド グループの使用を検討してください。</span><span class="sxs-lookup"><span data-stu-id="52fb6-112">Consider using field groups whenever possible.</span></span> <span data-ttu-id="52fb6-113">これにより、独立系ソフトウェア ベンダー (ISV) はフィールド グループを拡張するときにそのフィールドを無料で追加できます。</span><span class="sxs-lookup"><span data-stu-id="52fb6-113">In this way, independent software vendors (ISVs) can add their fields for free when they extend a field group.</span></span>
+## <a name="field-groups"></a><span data-ttu-id="cfe73-111">フィールド グループ</span><span class="sxs-lookup"><span data-stu-id="cfe73-111">Field groups</span></span>
+<span data-ttu-id="cfe73-112">可能であれば必ずフィールド グループの使用を検討してください。</span><span class="sxs-lookup"><span data-stu-id="cfe73-112">Consider using field groups whenever possible.</span></span> <span data-ttu-id="cfe73-113">これにより、独立系ソフトウェア ベンダー (ISV) はフィールド グループを拡張するときにそのフィールドを無料で追加できます。</span><span class="sxs-lookup"><span data-stu-id="cfe73-113">In this way, independent software vendors (ISVs) can add their fields for free when they extend a field group.</span></span>
 
-## <a name="form-controls"></a><span data-ttu-id="52fb6-114">フォーム コントロール</span><span class="sxs-lookup"><span data-stu-id="52fb6-114">Form controls</span></span>
-<span data-ttu-id="52fb6-115">コントロールが移動により拡張不可になった場合、フォーム コントロールでの移動により中断が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="52fb6-115">Moving around form controls could potentially cause a break if the controls are made non-extensible by moving.</span></span>
+## <a name="form-controls"></a><span data-ttu-id="cfe73-114">フォーム コントロール</span><span class="sxs-lookup"><span data-stu-id="cfe73-114">Form controls</span></span>
+<span data-ttu-id="cfe73-115">コントロールが移動により拡張不可になった場合、フォーム コントロールでの移動により中断が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cfe73-115">Moving around form controls could potentially cause a break if the controls are made non-extensible by moving.</span></span>
