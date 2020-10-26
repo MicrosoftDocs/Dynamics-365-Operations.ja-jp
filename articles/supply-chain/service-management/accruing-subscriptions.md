@@ -15,66 +15,66 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9fba99eeea605f35abfe00068fe9a4cda4db0b6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5ebd65655db56ee1169f24dbc79fbfb5130f06a5
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203115"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978824"
 ---
-# <a name="accruing-subscriptions"></a><span data-ttu-id="209ce-103">定期売買の発生</span><span class="sxs-lookup"><span data-stu-id="209ce-103">Accruing subscriptions</span></span> 
+# <a name="accruing-subscriptions"></a><span data-ttu-id="834f4-103">定期売買の発生</span><span class="sxs-lookup"><span data-stu-id="834f4-103">Accruing subscriptions</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="209ce-104">サービスの定期売買では、手数料トランザクションを請求した日付に続く期間に、収益を手動で見越計上します。</span><span class="sxs-lookup"><span data-stu-id="209ce-104">With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.</span></span>
+<span data-ttu-id="834f4-104">サービスの定期売買では、手数料トランザクションを請求した日付に続く期間に、収益を手動で見越計上します。</span><span class="sxs-lookup"><span data-stu-id="834f4-104">With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.</span></span>
 
-<span data-ttu-id="209ce-105">発生期間は、定期売買手数料に対して設定した請求期間に対して作成されるもので、定期売買の期間コードに基づいています。</span><span class="sxs-lookup"><span data-stu-id="209ce-105">Accrual periods are created for the invoice period that you set up for the subscription fee, and the accrual periods are based on the period code of the subscription.</span></span>
+<span data-ttu-id="834f4-105">発生期間は、定期売買手数料に対して設定した請求期間に対して作成されるもので、定期売買の期間コードに基づいています。</span><span class="sxs-lookup"><span data-stu-id="834f4-105">Accrual periods are created for the invoice period that you set up for the subscription fee, and the accrual periods are based on the period code of the subscription.</span></span>
 
-<span data-ttu-id="209ce-106">未収収益は、見越計上およびリバースが可能です。</span><span class="sxs-lookup"><span data-stu-id="209ce-106">You can accrue and reverse accrued revenue.</span></span>
+<span data-ttu-id="834f4-106">未収収益は、見越計上およびリバースが可能です。</span><span class="sxs-lookup"><span data-stu-id="834f4-106">You can accrue and reverse accrued revenue.</span></span>
 
-## <a name="reverse-accruals-of-credit-amounts"></a><span data-ttu-id="209ce-107">貸方金額の見越計上</span><span class="sxs-lookup"><span data-stu-id="209ce-107">Reverse accruals of credit amounts</span></span>
+## <a name="reverse-accruals-of-credit-amounts"></a><span data-ttu-id="834f4-107">貸方金額の見越計上</span><span class="sxs-lookup"><span data-stu-id="834f4-107">Reverse accruals of credit amounts</span></span>
 
-<span data-ttu-id="209ce-108">請求した定期売買金額を貸方転記する場合は、見越計上金額を 2 つの方法で取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="209ce-108">If you credit invoiced subscription amounts, you can use two methods to reverse the accrual amounts:</span></span>
+<span data-ttu-id="834f4-108">請求した定期売買金額を貸方転記する場合は、見越計上金額を 2 つの方法で取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="834f4-108">If you credit invoiced subscription amounts, you can use two methods to reverse the accrual amounts:</span></span>
 
-  - <span data-ttu-id="209ce-109">トランザクションの訂正票提案を作成する前に、各未収収益トランザクションを個別に取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="209ce-109">You can reverse each accrued revenue transaction individually before you create the credit note proposal for the transaction.</span></span> <span data-ttu-id="209ce-110">これが手動の方法です。</span><span class="sxs-lookup"><span data-stu-id="209ce-110">This is the manual method.</span></span> <span data-ttu-id="209ce-111">(手動)</span><span class="sxs-lookup"><span data-stu-id="209ce-111">(manual)</span></span>
+  - <span data-ttu-id="834f4-109">トランザクションの訂正票提案を作成する前に、各未収収益トランザクションを個別に取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="834f4-109">You can reverse each accrued revenue transaction individually before you create the credit note proposal for the transaction.</span></span> <span data-ttu-id="834f4-110">これが手動の方法です。</span><span class="sxs-lookup"><span data-stu-id="834f4-110">This is the manual method.</span></span> <span data-ttu-id="834f4-111">(手動)</span><span class="sxs-lookup"><span data-stu-id="834f4-111">(manual)</span></span>
 
-  - <span data-ttu-id="209ce-112">訂正票が転記された日または見越計上の元の転記日に未収金額を取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="209ce-112">You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.</span></span>
+  - <span data-ttu-id="834f4-112">訂正票が転記された日または見越計上の元の転記日に未収金額を取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="834f4-112">You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.</span></span>
 
-<span data-ttu-id="209ce-113">詳細については、[定期売買パラメータ (フォーム)](https://technet.microsoft.com/library/aa619615.aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="209ce-113">For more information, see [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).</span></span>
+<span data-ttu-id="834f4-113">詳細については、[定期売買パラメータ (フォーム)](https://technet.microsoft.com/library/aa619615.aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="834f4-113">For more information, see [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).</span></span>
 
-## <a name="setup-requirements"></a><span data-ttu-id="209ce-114">要件の設定</span><span class="sxs-lookup"><span data-stu-id="209ce-114">Setup requirements</span></span>
+## <a name="setup-requirements"></a><span data-ttu-id="834f4-114">要件の設定</span><span class="sxs-lookup"><span data-stu-id="834f4-114">Setup requirements</span></span>
 
-<span data-ttu-id="209ce-115">収益を見越計上するには、次のようにデータ要件が満たされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="209ce-115">To accrue revenue, make sure that the following data requirements are met:</span></span>
+<span data-ttu-id="834f4-115">収益を見越計上するには、次のようにデータ要件が満たされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="834f4-115">To accrue revenue, make sure that the following data requirements are met:</span></span>
 
-## <a name="account-setup"></a><span data-ttu-id="209ce-116">勘定の設定</span><span class="sxs-lookup"><span data-stu-id="209ce-116">Account setup</span></span>
+## <a name="account-setup"></a><span data-ttu-id="834f4-116">勘定の設定</span><span class="sxs-lookup"><span data-stu-id="834f4-116">Account setup</span></span>
 
-<span data-ttu-id="209ce-117">**プロジェクト**モジュールで**仕掛品 - 定期売買**および**未収収益 - 定期売買**勘定を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="209ce-117">The **WIP - subscription** and the **Accrued revenue - subscription** accounts must be set up in the **Project** module.</span></span>
+<span data-ttu-id="834f4-117">**プロジェクト**モジュールで**仕掛品 - 定期売買**および**未収収益 - 定期売買**勘定を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="834f4-117">The **WIP - subscription** and the **Accrued revenue - subscription** accounts must be set up in the **Project** module.</span></span>
 
-<span data-ttu-id="209ce-118">未収収益を転記すると、**仕掛品 - 定期売買**勘定が見越計上金額で借方転記され、**未収収益 - 定期売買**勘定が見越計上金額で貸方転記されます。</span><span class="sxs-lookup"><span data-stu-id="209ce-118">When you post accrued revenue, the **WIP - subscription** account is debited with the accrual amount, and the **Accrued revenue - subscription** account is credited with the accrual amount.</span></span>
+<span data-ttu-id="834f4-118">未収収益を転記すると、**仕掛品 - 定期売買**勘定が見越計上金額で借方転記され、**未収収益 - 定期売買**勘定が見越計上金額で貸方転記されます。</span><span class="sxs-lookup"><span data-stu-id="834f4-118">When you post accrued revenue, the **WIP - subscription** account is debited with the accrual amount, and the **Accrued revenue - subscription** account is credited with the accrual amount.</span></span>
 
-## <a name="set-up-accounts-for-accrual-of-subscription-revenue"></a><span data-ttu-id="209ce-119">定期売買収益の見越計上に使用する勘定の設定</span><span class="sxs-lookup"><span data-stu-id="209ce-119">Set up accounts for accrual of subscription revenue</span></span>
+## <a name="set-up-accounts-for-accrual-of-subscription-revenue"></a><span data-ttu-id="834f4-119">定期売買収益の見越計上に使用する勘定の設定</span><span class="sxs-lookup"><span data-stu-id="834f4-119">Set up accounts for accrual of subscription revenue</span></span>
 
-1.  <span data-ttu-id="209ce-120">**プロジェクト管理および会計** \> **設定** \> **転記** \> **元帳転記の設定**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="209ce-120">Click **Project management and accounting** \> **Setup** \> **Posting** \> **Ledger posting setup**.</span></span>
+1.  <span data-ttu-id="834f4-120">**プロジェクト管理および会計** \> **設定** \> **転記** \> **元帳転記の設定**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="834f4-120">Click **Project management and accounting** \> **Setup** \> **Posting** \> **Ledger posting setup**.</span></span>
 
-2.  <span data-ttu-id="209ce-121">**収益勘定**タブをクリックし、アカウントを設定するため**仕掛品 - 定期売買**または**未収収益 - 定期売買**を選択します。</span><span class="sxs-lookup"><span data-stu-id="209ce-121">Click the **Revenue accounts** tab, and select **WIP - subscription** or **Accrued revenue - subscription** to set up the accounts.</span></span>
+2.  <span data-ttu-id="834f4-121">**収益勘定**タブをクリックし、アカウントを設定するため**仕掛品 - 定期売買**または**未収収益 - 定期売買**を選択します。</span><span class="sxs-lookup"><span data-stu-id="834f4-121">Click the **Revenue accounts** tab, and select **WIP - subscription** or **Accrued revenue - subscription** to set up the accounts.</span></span>
 
-## <a name="subscription-group-setup"></a><span data-ttu-id="209ce-122">定期売買グループの設定</span><span class="sxs-lookup"><span data-stu-id="209ce-122">Subscription group setup</span></span>
+## <a name="subscription-group-setup"></a><span data-ttu-id="834f4-122">定期売買グループの設定</span><span class="sxs-lookup"><span data-stu-id="834f4-122">Subscription group setup</span></span>
 
-<span data-ttu-id="209ce-123">定期売買の見越計上を可能にするには、**未収収益**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="209ce-123">To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected.</span></span> <span data-ttu-id="209ce-124">これは、定期売買に関連付けられたグループの**定期売買グループ**フォームにあります。</span><span class="sxs-lookup"><span data-stu-id="209ce-124">This is found on the **Subscription groups** form for the group that is attached to the subscription.</span></span> <span data-ttu-id="209ce-125">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="209ce-125">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
+<span data-ttu-id="834f4-123">定期売買の見越計上を可能にするには、**未収収益**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="834f4-123">To be able to accrue revenue for subscriptions, the **Accrue revenue** check box must be selected.</span></span> <span data-ttu-id="834f4-124">これは、定期売買に関連付けられたグループの**定期売買グループ**フォームにあります。</span><span class="sxs-lookup"><span data-stu-id="834f4-124">This is found on the **Subscription groups** form for the group that is attached to the subscription.</span></span> <span data-ttu-id="834f4-125">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="834f4-125">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
 
-## <a name="enable-revenue-accrual-on-a-subscription-group"></a><span data-ttu-id="209ce-126">定期売買グループに対する収益の見越計上の有効化</span><span class="sxs-lookup"><span data-stu-id="209ce-126">Enable revenue accrual on a subscription group</span></span>
+## <a name="enable-revenue-accrual-on-a-subscription-group"></a><span data-ttu-id="834f4-126">定期売買グループに対する収益の見越計上の有効化</span><span class="sxs-lookup"><span data-stu-id="834f4-126">Enable revenue accrual on a subscription group</span></span>
 
-1.  <span data-ttu-id="209ce-127">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="209ce-127">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
+1.  <span data-ttu-id="834f4-127">**サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="834f4-127">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
 
-## <a name="periods"></a><span data-ttu-id="209ce-128">期間</span><span class="sxs-lookup"><span data-stu-id="209ce-128">Periods</span></span>
+## <a name="periods"></a><span data-ttu-id="834f4-128">期間</span><span class="sxs-lookup"><span data-stu-id="834f4-128">Periods</span></span>
 
-<span data-ttu-id="209ce-129">請求期間コードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="209ce-129">You must set up an invoicing period code.</span></span> <span data-ttu-id="209ce-130">請求と同じ期間内に収益を見越計上しない場合は、発生期間も設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="209ce-130">Unless you want to accrue revenue in the same time intervals as you use for invoicing, you must also set up an accrual period.</span></span>
+<span data-ttu-id="834f4-129">請求期間コードを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="834f4-129">You must set up an invoicing period code.</span></span> <span data-ttu-id="834f4-130">請求と同じ期間内に収益を見越計上しない場合は、発生期間も設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="834f4-130">Unless you want to accrue revenue in the same time intervals as you use for invoicing, you must also set up an accrual period.</span></span>
 
-<span data-ttu-id="209ce-131">次の表に、各請求期間に対して設定できる発生期間の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="209ce-131">The following table provides an overview of which accrual periods can be set up for each invoicing period:</span></span>
+<span data-ttu-id="834f4-131">次の表に、各請求期間に対して設定できる発生期間の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="834f4-131">The following table provides an overview of which accrual periods can be set up for each invoicing period:</span></span>
 
 <table>
 <colgroup>
@@ -83,71 +83,71 @@ ms.locfileid: "3203115"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="209ce-132">請求期間</span><span class="sxs-lookup"><span data-stu-id="209ce-132">Invoicing period</span></span></p></th>
-<th><p><span data-ttu-id="209ce-133">発生期間</span><span class="sxs-lookup"><span data-stu-id="209ce-133">Accrual period</span></span></p></th>
+<th><p><span data-ttu-id="834f4-132">請求期間</span><span class="sxs-lookup"><span data-stu-id="834f4-132">Invoicing period</span></span></p></th>
+<th><p><span data-ttu-id="834f4-133">発生期間</span><span class="sxs-lookup"><span data-stu-id="834f4-133">Accrual period</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="209ce-134"><strong>年</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-134"><strong>Years</strong></span></span></p></td>
+<td><p><span data-ttu-id="834f4-134"><strong>年</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-134"><strong>Years</strong></span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="209ce-135"><strong>年</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-135"><strong>Years</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-136"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-136"><strong>Quarter</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-137"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-137"><strong>Month</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-138"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-138"><strong>Day</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-135"><strong>年</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-135"><strong>Years</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-136"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-136"><strong>Quarter</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-137"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-137"><strong>Month</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-138"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-138"><strong>Day</strong></span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="209ce-139"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-139"><strong>Quarter</strong></span></span></p></td>
+<td><p><span data-ttu-id="834f4-139"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-139"><strong>Quarter</strong></span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="209ce-140"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-140"><strong>Quarter</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-141"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-141"><strong>Month</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-142"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-142"><strong>Day</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-140"><strong>四半期</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-140"><strong>Quarter</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-141"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-141"><strong>Month</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-142"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-142"><strong>Day</strong></span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="209ce-143"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-143"><strong>Month</strong></span></span></p></td>
+<td><p><span data-ttu-id="834f4-143"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-143"><strong>Month</strong></span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="209ce-144"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-144"><strong>Month</strong></span></span></p></li>
-<li><p><span data-ttu-id="209ce-145"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-145"><strong>Day</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-144"><strong>月</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-144"><strong>Month</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-145"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-145"><strong>Day</strong></span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="209ce-146"><strong>週</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-146"><strong>Week</strong></span></span></p></td>
+<td><p><span data-ttu-id="834f4-146"><strong>週</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-146"><strong>Week</strong></span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="209ce-147"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-147"><strong>Day</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-147"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-147"><strong>Day</strong></span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="209ce-148"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-148"><strong>Day</strong></span></span></p></td>
+<td><p><span data-ttu-id="834f4-148"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-148"><strong>Day</strong></span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="209ce-149"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="209ce-149"><strong>Day</strong></span></span></p></li>
+<li><p><span data-ttu-id="834f4-149"><strong>日</strong></span><span class="sxs-lookup"><span data-stu-id="834f4-149"><strong>Day</strong></span></span></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="209ce-150">請求期間の設定は、定期売買グループ全体の設定の必須部分です。</span><span class="sxs-lookup"><span data-stu-id="209ce-150">Setting up the invoicing period is a mandatory part of the overall subscription group setup.</span></span> <span data-ttu-id="209ce-151">定期売買グループに発生期間も設定するかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="209ce-151">You can decide whether to also set up an accrual period for the subscription group.</span></span> <span data-ttu-id="209ce-152">定期売買グループの発生期間を設定すると、この期間が**期間コード**フィールドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="209ce-152">If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field.</span></span> <span data-ttu-id="209ce-153">このフィールドは、定期売買の収益を見越計上する際に**未収の定期売買収益**フォームにあります。</span><span class="sxs-lookup"><span data-stu-id="209ce-153">This field is found in the **Accrue subscription revenue** form, when you accrue subscription revenue.</span></span> <span data-ttu-id="209ce-154">ただし、発生期間は定期売買グループに関する必須の情報ではありません。</span><span class="sxs-lookup"><span data-stu-id="209ce-154">However, the accrual period is optional information about the subscription group.</span></span>
+<span data-ttu-id="834f4-150">請求期間の設定は、定期売買グループ全体の設定の必須部分です。</span><span class="sxs-lookup"><span data-stu-id="834f4-150">Setting up the invoicing period is a mandatory part of the overall subscription group setup.</span></span> <span data-ttu-id="834f4-151">定期売買グループに発生期間も設定するかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="834f4-151">You can decide whether to also set up an accrual period for the subscription group.</span></span> <span data-ttu-id="834f4-152">定期売買グループの発生期間を設定すると、この期間が**期間コード**フィールドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="834f4-152">If you set up an accrual period for the subscription group, this period is suggested in the **Period code** field.</span></span> <span data-ttu-id="834f4-153">このフィールドは、定期売買の収益を見越計上する際に**未収の定期売買収益**フォームにあります。</span><span class="sxs-lookup"><span data-stu-id="834f4-153">This field is found in the **Accrue subscription revenue** form, when you accrue subscription revenue.</span></span> <span data-ttu-id="834f4-154">ただし、発生期間は定期売買グループに関する必須の情報ではありません。</span><span class="sxs-lookup"><span data-stu-id="834f4-154">However, the accrual period is optional information about the subscription group.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="209ce-155">次のパスを使用して<STRONG>未収の定期売買収益</STRONG>フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="209ce-155">Use the following path to open the <STRONG>Accrue subscription revenue</STRONG> form.</span></span> <span data-ttu-id="209ce-156"><STRONG>サービス管理</STRONG>&gt;<STRONG>定期処理</STRONG>&gt;<STRONG>サービスの定期売買</STRONG>&gt;<STRONG>未収の定期売買収益</STRONG>の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="209ce-156">Click <STRONG>Service management</STRONG> &gt; <STRONG>Periodic</STRONG> &gt; <STRONG>Service subscriptions</STRONG> &gt; <STRONG>Accrue subscription revenue</STRONG>.</span></span></P>
+> <P><span data-ttu-id="834f4-155">次のパスを使用して<STRONG>未収の定期売買収益</STRONG>フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="834f4-155">Use the following path to open the <STRONG>Accrue subscription revenue</STRONG> form.</span></span> <span data-ttu-id="834f4-156"><STRONG>サービス管理</STRONG>&gt;<STRONG>定期処理</STRONG>&gt;<STRONG>サービスの定期売買</STRONG>&gt;<STRONG>未収の定期売買収益</STRONG>の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="834f4-156">Click <STRONG>Service management</STRONG> &gt; <STRONG>Periodic</STRONG> &gt; <STRONG>Service subscriptions</STRONG> &gt; <STRONG>Accrue subscription revenue</STRONG>.</span></span></P>
 
 
-## <a name="transactions"></a><span data-ttu-id="209ce-157">トランザクション</span><span class="sxs-lookup"><span data-stu-id="209ce-157">Transactions</span></span>
+## <a name="transactions"></a><span data-ttu-id="834f4-157">トランザクション</span><span class="sxs-lookup"><span data-stu-id="834f4-157">Transactions</span></span>
 
-<span data-ttu-id="209ce-158">未収収益を転記するときに作成される元帳トランザクションの数を制御できます。</span><span class="sxs-lookup"><span data-stu-id="209ce-158">You can control the number of ledger transactions that are created when you post accrued revenue.</span></span> <span data-ttu-id="209ce-159">定期売買で、元帳トランザクションを合計または行ごとのどちらとして作成するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="209ce-159">On subscriptions, define if the ledger transactions should be created as a total or per line.</span></span>
+<span data-ttu-id="834f4-158">未収収益を転記するときに作成される元帳トランザクションの数を制御できます。</span><span class="sxs-lookup"><span data-stu-id="834f4-158">You can control the number of ledger transactions that are created when you post accrued revenue.</span></span> <span data-ttu-id="834f4-159">定期売買で、元帳トランザクションを合計または行ごとのどちらとして作成するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="834f4-159">On subscriptions, define if the ledger transactions should be created as a total or per line.</span></span>
 
-## <a name="specify-the-level-of-posting-details-to-display-for-accrued-transactions"></a><span data-ttu-id="209ce-160">未収トランザクションに表示する転記詳細のレベルの指定</span><span class="sxs-lookup"><span data-stu-id="209ce-160">Specify the level of posting details to display for accrued transactions</span></span>
+## <a name="specify-the-level-of-posting-details-to-display-for-accrued-transactions"></a><span data-ttu-id="834f4-160">未収トランザクションに表示する転記詳細のレベルの指定</span><span class="sxs-lookup"><span data-stu-id="834f4-160">Specify the level of posting details to display for accrued transactions</span></span>
 
-1.  <span data-ttu-id="209ce-161">**プロジェクト管理と会計** \> **設定** \> **プロジェクト管理および会計パラメーター**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="209ce-161">Click **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.</span></span>
+1.  <span data-ttu-id="834f4-161">**プロジェクト管理と会計** \> **設定** \> **プロジェクト管理および会計パラメーター**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="834f4-161">Click **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.</span></span>
 
-2.  <span data-ttu-id="209ce-162">**請求書**フィールドの**財務**タブで、**合計**または**明細行**を選択します。</span><span class="sxs-lookup"><span data-stu-id="209ce-162">On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.</span></span>
+2.  <span data-ttu-id="834f4-162">**請求書**フィールドの**財務**タブで、**合計**または**明細行**を選択します。</span><span class="sxs-lookup"><span data-stu-id="834f4-162">On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="209ce-163">参照</span><span class="sxs-lookup"><span data-stu-id="209ce-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="834f4-163">参照</span><span class="sxs-lookup"><span data-stu-id="834f4-163">See also</span></span>
 
-[<span data-ttu-id="209ce-164">未収の定期売買収益</span><span class="sxs-lookup"><span data-stu-id="209ce-164">Accrue subscription revenue</span></span>](accrue-subscription-revenue.md)
+[<span data-ttu-id="834f4-164">未収の定期売買収益</span><span class="sxs-lookup"><span data-stu-id="834f4-164">Accrue subscription revenue</span></span>](accrue-subscription-revenue.md)
 
   
 

@@ -14,39 +14,39 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 69ae3cb4a7d43e09cec6dffe58166266bbb2b2c0
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: b94d18e5ddb51f33bef64cd6a7c2e34c71699cce
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270270"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981473"
 ---
-# <a name="acceptance-test-library-code-generation-wizard"></a><span data-ttu-id="4f8bc-103">受け入れテスト ライブラリ コード生成ウィザード</span><span class="sxs-lookup"><span data-stu-id="4f8bc-103">Acceptance test library Code generation wizard</span></span>
+# <a name="acceptance-test-library-code-generation-wizard"></a><span data-ttu-id="e3957-103">受け入れテスト ライブラリ コード生成ウィザード</span><span class="sxs-lookup"><span data-stu-id="e3957-103">Acceptance test library Code generation wizard</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4f8bc-104">引受テスト ライブラリ (ATL) コード ジェネレーターはすばやくを生成し、新しいATLエンティティ、クエリ、およびテーブルとデータ エンティティに基づく仕様を更新します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-104">The Acceptance test library (ATL) code generator quickly generates and updates new ATL entities, queries, and specifications, based on tables and data entities.</span></span>
+<span data-ttu-id="e3957-104">引受テスト ライブラリ (ATL) コード ジェネレーターはすばやくを生成し、新しいATLエンティティ、クエリ、およびテーブルとデータ エンティティに基づく仕様を更新します。</span><span class="sxs-lookup"><span data-stu-id="e3957-104">The Acceptance test library (ATL) code generator quickly generates and updates new ATL entities, queries, and specifications, based on tables and data entities.</span></span>
 
-## <a name="create-the-atlentity-class-by-using-the-wizard"></a><span data-ttu-id="4f8bc-105">ウィザードを使用して、AtlEntityクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-105">Create the AtlEntity class by using the wizard</span></span>
+## <a name="create-the-atlentity-class-by-using-the-wizard"></a><span data-ttu-id="e3957-105">ウィザードを使用して、AtlEntityクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-105">Create the AtlEntity class by using the wizard</span></span>
 
-<span data-ttu-id="4f8bc-106">`AtlEntity` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-106">Follow these steps to create the `AtlEntity` class by using the **Code generation** wizard.</span></span>
+<span data-ttu-id="e3957-106">`AtlEntity` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3957-106">Follow these steps to create the `AtlEntity` class by using the **Code generation** wizard.</span></span>
 
-1. <span data-ttu-id="4f8bc-107">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-107">In Microsoft Visual Studio, open the table in the designer window.</span></span>
-2. <span data-ttu-id="4f8bc-108">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATLエンティティの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-108">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Entity**.</span></span>
-3. <span data-ttu-id="4f8bc-109">`AtlEntity` クラスに含めるフィールドを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-109">Select the fields that should be included in the `AtlEntity` class, and then select **Add**.</span></span>
-4. <span data-ttu-id="4f8bc-110">必要に応じてエンティティとフィールド名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-110">Rename the entity and the fields as you require.</span></span>
-5. <span data-ttu-id="4f8bc-111">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-111">Select **Generate** to create the class.</span></span>
+1. <span data-ttu-id="e3957-107">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="e3957-107">In Microsoft Visual Studio, open the table in the designer window.</span></span>
+2. <span data-ttu-id="e3957-108">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATLエンティティの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-108">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Entity**.</span></span>
+3. <span data-ttu-id="e3957-109">`AtlEntity` クラスに含めるフィールドを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-109">Select the fields that should be included in the `AtlEntity` class, and then select **Add**.</span></span>
+4. <span data-ttu-id="e3957-110">必要に応じてエンティティとフィールド名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="e3957-110">Rename the entity and the fields as you require.</span></span>
+5. <span data-ttu-id="e3957-111">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-111">Select **Generate** to create the class.</span></span>
 
-### <a name="additional-optional-steps"></a><span data-ttu-id="4f8bc-112">追加オプション</span><span class="sxs-lookup"><span data-stu-id="4f8bc-112">Additional optional steps</span></span>
+### <a name="additional-optional-steps"></a><span data-ttu-id="e3957-112">追加オプション</span><span class="sxs-lookup"><span data-stu-id="e3957-112">Additional optional steps</span></span>
 
-<span data-ttu-id="4f8bc-113">`AtlEntity` クラスを作成する際に、以下の作業を同時に実行するができます。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-113">When you create the `AtlEntity` class, you can also complete these tasks:</span></span>
+<span data-ttu-id="e3957-113">`AtlEntity` クラスを作成する際に、以下の作業を同時に実行するができます。</span><span class="sxs-lookup"><span data-stu-id="e3957-113">When you create the `AtlEntity` class, you can also complete these tasks:</span></span>
 
-- <span data-ttu-id="4f8bc-114">シナリオに必要なアクションを追加します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-114">Add required actions for the scenario.</span></span>
-- <span data-ttu-id="4f8bc-115">`default` メソッドを `AtlData` クラスに追加する。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-115">Add a `default` method to `AtlData` classes.</span></span>
-- <span data-ttu-id="4f8bc-116">`setMainRecordField` メソッドを上書きし、テーブル上の `modifiedField(_fieldId)` メソッドを呼び出す。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-116">Override the `setMainRecordField` method to call the `modifiedField(_fieldId)` method on the table.</span></span>
+- <span data-ttu-id="e3957-114">シナリオに必要なアクションを追加します。</span><span class="sxs-lookup"><span data-stu-id="e3957-114">Add required actions for the scenario.</span></span>
+- <span data-ttu-id="e3957-115">`default` メソッドを `AtlData` クラスに追加する。</span><span class="sxs-lookup"><span data-stu-id="e3957-115">Add a `default` method to `AtlData` classes.</span></span>
+- <span data-ttu-id="e3957-116">`setMainRecordField` メソッドを上書きし、テーブル上の `modifiedField(_fieldId)` メソッドを呼び出す。</span><span class="sxs-lookup"><span data-stu-id="e3957-116">Override the `setMainRecordField` method to call the `modifiedField(_fieldId)` method on the table.</span></span>
 
     ```xpp
     protected void setMainRecordField(FieldId _fieldId, anytype _value)
@@ -56,30 +56,30 @@ ms.locfileid: "3270270"
     }
     ```
 
-## <a name="create-the-atlquery-class-by-using-the-wizard"></a><span data-ttu-id="4f8bc-117">ウィザードを使用して、AtlQueryクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-117">Create the AtlQuery class by using the wizard</span></span>
+## <a name="create-the-atlquery-class-by-using-the-wizard"></a><span data-ttu-id="e3957-117">ウィザードを使用して、AtlQueryクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-117">Create the AtlQuery class by using the wizard</span></span>
 
-<span data-ttu-id="4f8bc-118">`AtlQuery` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-118">Follow these steps to create the `AtlQuery` class by using the **Code generation** wizard.</span></span>
+<span data-ttu-id="e3957-118">`AtlQuery` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3957-118">Follow these steps to create the `AtlQuery` class by using the **Code generation** wizard.</span></span>
 
-1. <span data-ttu-id="4f8bc-119">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-119">In Visual Studio, open the table in the designer window.</span></span>
-2. <span data-ttu-id="4f8bc-120">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATLエンティティの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-120">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Query**.</span></span>
-3. <span data-ttu-id="4f8bc-121">`AtlQuery` クラスに含めるフィールドと関連付けを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-121">Select the fields and relations that should be included in the `AtlQuery` class, and then select **Add**.</span></span>
-4. <span data-ttu-id="4f8bc-122">必要に応じてクエリ、フィールド名称、関連付けの名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-122">Rename the query, the fields, and the relations as you require.</span></span>
-5. <span data-ttu-id="4f8bc-123">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-123">Select **Generate** to create the class.</span></span>
+1. <span data-ttu-id="e3957-119">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="e3957-119">In Visual Studio, open the table in the designer window.</span></span>
+2. <span data-ttu-id="e3957-120">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATLエンティティの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-120">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Query**.</span></span>
+3. <span data-ttu-id="e3957-121">`AtlQuery` クラスに含めるフィールドと関連付けを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-121">Select the fields and relations that should be included in the `AtlQuery` class, and then select **Add**.</span></span>
+4. <span data-ttu-id="e3957-122">必要に応じてクエリ、フィールド名称、関連付けの名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="e3957-122">Rename the query, the fields, and the relations as you require.</span></span>
+5. <span data-ttu-id="e3957-123">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-123">Select **Generate** to create the class.</span></span>
 
-### <a name="additional-optional-steps"></a><span data-ttu-id="4f8bc-124">追加オプション</span><span class="sxs-lookup"><span data-stu-id="4f8bc-124">Additional optional steps</span></span>
+### <a name="additional-optional-steps"></a><span data-ttu-id="e3957-124">追加オプション</span><span class="sxs-lookup"><span data-stu-id="e3957-124">Additional optional steps</span></span>
 
-<span data-ttu-id="4f8bc-125">`AtlQuery` クラスを作成する際に、 `query` のメソッドを `AtlData` のクラスに追加することが可能です。 これによりこのトピックの最初に作成した `AtlQuery` クラスのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-125">When you create the `AtlQuery` class, you can also add a `query` method to the `AtlData` class that returns an instance of the `AtlQuery` class that you created earlier in this topic.</span></span>
+<span data-ttu-id="e3957-125">`AtlQuery` クラスを作成する際に、 `query` のメソッドを `AtlData` のクラスに追加することが可能です。 これによりこのトピックの最初に作成した `AtlQuery` クラスのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="e3957-125">When you create the `AtlQuery` class, you can also add a `query` method to the `AtlData` class that returns an instance of the `AtlQuery` class that you created earlier in this topic.</span></span>
 
-## <a name="create-the-atlspec-class-by-using-the-wizard"></a><span data-ttu-id="4f8bc-126">ウィザードを使用して、AtlSpecクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-126">Create the AtlSpec class by using the wizard</span></span>
+## <a name="create-the-atlspec-class-by-using-the-wizard"></a><span data-ttu-id="e3957-126">ウィザードを使用して、AtlSpecクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-126">Create the AtlSpec class by using the wizard</span></span>
 
-<span data-ttu-id="4f8bc-127">`AtlSpec` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-127">Follow these steps to create the `AtlSpec` class by using the **Code generation** wizard.</span></span>
+<span data-ttu-id="e3957-127">`AtlSpec` クラスを作成するには、以下の手順に従って **コード生成** ウィザードを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3957-127">Follow these steps to create the `AtlSpec` class by using the **Code generation** wizard.</span></span>
 
-1. <span data-ttu-id="4f8bc-128">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-128">In Visual Studio, open the table in the designer window.</span></span>
-2. <span data-ttu-id="4f8bc-129">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATL Specificationの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-129">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Specification**.</span></span>
-3. <span data-ttu-id="4f8bc-130">`AtlSpec` クラスに含めるフィールドを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-130">Select the fields that should be included in the `AtlSpec` class, and then select **Add**.</span></span>
-4. <span data-ttu-id="4f8bc-131">必要に応じてSpecificationとフィールド名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-131">Rename the specification and the fields as you require.</span></span>
-5. <span data-ttu-id="4f8bc-132">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-132">Select **Generate** to create the class.</span></span>
+1. <span data-ttu-id="e3957-128">Microsoft Visual Studioを起動し、デザイナー ウィンドウで、テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="e3957-128">In Visual Studio, open the table in the designer window.</span></span>
+2. <span data-ttu-id="e3957-129">テーブルの名前を右クリックし、 **アドイン** メニューで、 **ATL Specificationの生成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-129">Right-click the name of the table, and then, on the **Add-ins** menu, select **Generate ATL Specification**.</span></span>
+3. <span data-ttu-id="e3957-130">`AtlSpec` クラスに含めるフィールドを選択し、 **追加** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e3957-130">Select the fields that should be included in the `AtlSpec` class, and then select **Add**.</span></span>
+4. <span data-ttu-id="e3957-131">必要に応じてSpecificationとフィールド名称を変更します。</span><span class="sxs-lookup"><span data-stu-id="e3957-131">Rename the specification and the fields as you require.</span></span>
+5. <span data-ttu-id="e3957-132">**生成** を選択してクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3957-132">Select **Generate** to create the class.</span></span>
 
-### <a name="additional-optional-steps"></a><span data-ttu-id="4f8bc-133">追加オプション</span><span class="sxs-lookup"><span data-stu-id="4f8bc-133">Additional optional steps</span></span>
+### <a name="additional-optional-steps"></a><span data-ttu-id="e3957-133">追加オプション</span><span class="sxs-lookup"><span data-stu-id="e3957-133">Additional optional steps</span></span>
 
-<span data-ttu-id="4f8bc-134">`spec` のメソッドをデータクラスに追加することにより、このトピックの最初に作成した `AtlSpec` クラスのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="4f8bc-134">Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.</span></span>
+<span data-ttu-id="e3957-134">`spec` のメソッドをデータクラスに追加することにより、このトピックの最初に作成した `AtlSpec` クラスのインスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="e3957-134">Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.</span></span>

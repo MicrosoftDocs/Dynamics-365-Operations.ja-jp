@@ -16,29 +16,29 @@ ms.custom: 2534
 ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc980e3a3dfff6d163812396613a1493f4428a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 766c857cca603f84bb7fcef2c7eea3bc76620c19
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213794"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976895"
 ---
-# <a name="determine-the-bom-version"></a><span data-ttu-id="b55d6-103">BOM バージョンの決定</span><span class="sxs-lookup"><span data-stu-id="b55d6-103">Determine the BOM version</span></span>
+# <a name="determine-the-bom-version"></a><span data-ttu-id="ccbaa-103">BOM バージョンの決定</span><span class="sxs-lookup"><span data-stu-id="ccbaa-103">Determine the BOM version</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b55d6-104">需要の展開中に、品目の既定のオーダー タイプが生産になっている場合、計画エンジンはサイトに基づいて有効な BOM バージョンを探します。</span><span class="sxs-lookup"><span data-stu-id="b55d6-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
+<span data-ttu-id="ccbaa-104">需要の展開中に、品目の既定のオーダー タイプが生産になっている場合、計画エンジンはサイトに基づいて有効な BOM バージョンを探します。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
 
-<span data-ttu-id="b55d6-105">サイト分析コードは常に既知で、需要トランザクションに記述されています。</span><span class="sxs-lookup"><span data-stu-id="b55d6-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="b55d6-106">使用する BOM バージョンを決定するには、次のプロセスを使用します。</span><span class="sxs-lookup"><span data-stu-id="b55d6-106">The following process is used to determine the BOM version to use:</span></span>
+<span data-ttu-id="ccbaa-105">サイト分析コードは常に既知で、需要トランザクションに記述されています。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="ccbaa-106">使用する BOM バージョンを決定するには、次のプロセスを使用します。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-106">The following process is used to determine the BOM version to use:</span></span>
 
--   <span data-ttu-id="b55d6-107">品目の BOM バージョンが需要サイトで定義されている場合は、このサイト固有の BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b55d6-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
--   <span data-ttu-id="b55d6-108">品目のサイト固有の BOM バージョンが需要サイトで定義されていない場合は、汎用 BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b55d6-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="b55d6-109">汎用 BOM はサイト固有ではなく、複数のサイトに対して有効です。</span><span class="sxs-lookup"><span data-stu-id="b55d6-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="b55d6-110">汎用 BOM がある場合は、その BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b55d6-110">If there is a general BOM, it is used.</span></span>
--   <span data-ttu-id="b55d6-111">使用できる汎用 BOM のバージョンがない場合、需要の展開はここで停止します。</span><span class="sxs-lookup"><span data-stu-id="b55d6-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
+-   <span data-ttu-id="ccbaa-107">品目の BOM バージョンが需要サイトで定義されている場合は、このサイト固有の BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
+-   <span data-ttu-id="ccbaa-108">品目のサイト固有の BOM バージョンが需要サイトで定義されていない場合は、汎用 BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="ccbaa-109">汎用 BOM はサイト固有ではなく、複数のサイトに対して有効です。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="ccbaa-110">汎用 BOM がある場合は、その BOM が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-110">If there is a general BOM, it is used.</span></span>
+-   <span data-ttu-id="ccbaa-111">使用できる汎用 BOM のバージョンがない場合、需要の展開はここで停止します。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
 
-<span data-ttu-id="b55d6-112">サイト固有の BOM であるか、または汎用 BOM であるかにかかわらず、有効な BOM バージョンは、必要な日付と数量の基準を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="b55d6-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
+<span data-ttu-id="ccbaa-112">サイト固有の BOM であるか、または汎用 BOM であるかにかかわらず、有効な BOM バージョンは、必要な日付と数量の基準を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="ccbaa-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
 
 
 

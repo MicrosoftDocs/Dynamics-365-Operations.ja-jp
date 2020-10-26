@@ -15,64 +15,64 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b60d5cf5ebae2386e7d9dc3d25833524044672d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202977"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980414"
 ---
-# <a name="cancel-service-orders"></a><span data-ttu-id="b2384-103">サービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="b2384-103">Cancel service orders</span></span>   
+# <a name="cancel-service-orders"></a><span data-ttu-id="64049-103">サービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="64049-103">Cancel service orders</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="b2384-104">サービス注文自体からサービス注文またはサービス注文明細行をキャンセルしたり、定期処理ジョブを実行して複数のサービス注文をキャンセルしたりできます。</span><span class="sxs-lookup"><span data-stu-id="b2384-104">You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.</span></span>
+<span data-ttu-id="64049-104">サービス注文自体からサービス注文またはサービス注文明細行をキャンセルしたり、定期処理ジョブを実行して複数のサービス注文をキャンセルしたりできます。</span><span class="sxs-lookup"><span data-stu-id="64049-104">You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="b2384-105">サービス注文のステージでキャンセルが許可されない場合、サービス注文に在庫品目要求がある場合、またはサービス注文が既に転記されている場合は、サービス注文をキャンセルできません。</span><span class="sxs-lookup"><span data-stu-id="b2384-105">Service orders cannot be canceled if the stage of the service order does not allow cancelation, if the service order has item requirements, or if the service order has already been posted.</span></span></P>
+> <P><span data-ttu-id="64049-105">サービス注文のステージでキャンセルが許可されない場合、サービス注文に在庫品目要求がある場合、またはサービス注文が既に転記されている場合は、サービス注文をキャンセルできません。</span><span class="sxs-lookup"><span data-stu-id="64049-105">Service orders cannot be canceled if the stage of the service order does not allow cancelation, if the service order has item requirements, or if the service order has already been posted.</span></span></P>
 
 
-## <a name="cancel-a-service-order-in-the-service-orders-form"></a><span data-ttu-id="b2384-106">"サービス注文" フォームでのサービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="b2384-106">Cancel a service order in the Service orders form</span></span>
+## <a name="cancel-a-service-order-in-the-service-orders-form"></a><span data-ttu-id="64049-106">"サービス注文" フォームでのサービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="64049-106">Cancel a service order in the Service orders form</span></span>
 
-1.  <span data-ttu-id="b2384-107">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="b2384-108">サービス注文を選択し、アクション ウィンドウで、**注文のキャンセル**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-108">Select the service order, and on the Action Pane, click **Cancel order**.</span></span>
+1.  <span data-ttu-id="64049-107">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="64049-108">サービス注文を選択し、アクション ウィンドウで、**注文のキャンセル**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-108">Select the service order, and on the Action Pane, click **Cancel order**.</span></span>
 
-## <a name="cancel-a-service-order-line"></a><span data-ttu-id="b2384-109">サービス注文明細行のキャンセル</span><span class="sxs-lookup"><span data-stu-id="b2384-109">Cancel a service order line</span></span>
+## <a name="cancel-a-service-order-line"></a><span data-ttu-id="64049-109">サービス注文明細行のキャンセル</span><span class="sxs-lookup"><span data-stu-id="64049-109">Cancel a service order line</span></span>
 
-1.  <span data-ttu-id="b2384-110">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="b2384-111">キャンセルする明細行が含まれているサービス注文をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-111">Double-click the service order that contains the line you want to cancel.</span></span>
+1.  <span data-ttu-id="64049-110">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="64049-111">キャンセルする明細行が含まれているサービス注文をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-111">Double-click the service order that contains the line you want to cancel.</span></span>
 
-2.  <span data-ttu-id="b2384-112">キャンセルするサービス注文明細行を選択し、**注文明細行のキャンセル**をクリックして明細行のステータスを**キャンセル済**に変更します。</span><span class="sxs-lookup"><span data-stu-id="b2384-112">Select the service order line that you want to cancel, and then click **Cancel order line** to change the status of the line to **Canceled**.</span></span>
+2.  <span data-ttu-id="64049-112">キャンセルするサービス注文明細行を選択し、**注文明細行のキャンセル**をクリックして明細行のステータスを**キャンセル済**に変更します。</span><span class="sxs-lookup"><span data-stu-id="64049-112">Select the service order line that you want to cancel, and then click **Cancel order line** to change the status of the line to **Canceled**.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="b2384-113">サービス注文明細行のキャンセルを取り消し、ステータスを<STRONG>作成済</STRONG>に戻すには、<STRONG>キャンセルの無効化</STRONG>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-113">To reverse the cancellation of a service order line and change the status back to <STRONG>Created</STRONG>, click <STRONG>Revoke cancel</STRONG>.</span></span></P>
+> <P><span data-ttu-id="64049-113">サービス注文明細行のキャンセルを取り消し、ステータスを<STRONG>作成済</STRONG>に戻すには、<STRONG>キャンセルの無効化</STRONG>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-113">To reverse the cancellation of a service order line and change the status back to <STRONG>Created</STRONG>, click <STRONG>Revoke cancel</STRONG>.</span></span></P>
 
 
-## <a name="cancel-multiple-service-orders"></a><span data-ttu-id="b2384-114">複数のサービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="b2384-114">Cancel multiple service orders</span></span>
+## <a name="cancel-multiple-service-orders"></a><span data-ttu-id="64049-114">複数のサービス注文のキャンセル</span><span class="sxs-lookup"><span data-stu-id="64049-114">Cancel multiple service orders</span></span>
 
-1.  <span data-ttu-id="b2384-115">**サービス管理** \> **定期処理** \> **サービス注文** \> **サービス注文のキャンセル**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-115">Click **Service management** \> **Periodic** \> **Service orders** \> **Cancel service orders**.</span></span>
+1.  <span data-ttu-id="64049-115">**サービス管理** \> **定期処理** \> **サービス注文** \> **サービス注文のキャンセル**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-115">Click **Service management** \> **Periodic** \> **Service orders** \> **Cancel service orders**.</span></span>
 
-2.  <span data-ttu-id="b2384-116">**選択** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-116">Click the **Select** button.</span></span>
+2.  <span data-ttu-id="64049-116">**選択** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-116">Click the **Select** button.</span></span>
 
-3.  <span data-ttu-id="b2384-117">**照会** フォームの、**基準**列で、キャンセルするサービス注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="b2384-117">In the **Inquiry** form, in the **Criteria** column, select the service orders that you want to cancel.</span></span>
+3.  <span data-ttu-id="64049-117">**照会** フォームの、**基準**列で、キャンセルするサービス注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="64049-117">In the **Inquiry** form, in the **Criteria** column, select the service orders that you want to cancel.</span></span>
 
-4.  <span data-ttu-id="b2384-118">**OK**をクリックして**照会**フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="b2384-118">Click **OK** to close the **Inquiry** form.</span></span>
+4.  <span data-ttu-id="64049-118">**OK**をクリックして**照会**フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="64049-118">Click **OK** to close the **Inquiry** form.</span></span>
 
-5.  <span data-ttu-id="b2384-119">キャンセルされたサービス注文を一覧表示する情報ログを生成するには、**情報ログの表示**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="b2384-119">Select the **Show Infolog** check box to generate an Infolog that lists the canceled service orders.</span></span>
+5.  <span data-ttu-id="64049-119">キャンセルされたサービス注文を一覧表示する情報ログを生成するには、**情報ログの表示**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="64049-119">Select the **Show Infolog** check box to generate an Infolog that lists the canceled service orders.</span></span>
 
-6.  <span data-ttu-id="b2384-120">サービス注文の**キャンセル済**ステータスを元に戻すには、**キャンセルの無効化**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="b2384-120">Select the **Revoke cancel** check box if you want to reverse the **Canceled** status of a service order.</span></span>
+6.  <span data-ttu-id="64049-120">サービス注文の**キャンセル済**ステータスを元に戻すには、**キャンセルの無効化**チェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="64049-120">Select the **Revoke cancel** check box if you want to reverse the **Canceled** status of a service order.</span></span>
 
-7.  <span data-ttu-id="b2384-121">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b2384-121">Click **OK**.</span></span>
+7.  <span data-ttu-id="64049-121">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64049-121">Click **OK**.</span></span>
 
-<span data-ttu-id="b2384-122">選択したサービス注文がキャンセルされるか、その**キャンセル済**進捗状況ステータスが**処理中**に戻ります。</span><span class="sxs-lookup"><span data-stu-id="b2384-122">The selected service orders are either canceled or their progress status of **Canceled** has been reversed to **In process**.</span></span>
+<span data-ttu-id="64049-122">選択したサービス注文がキャンセルされるか、その**キャンセル済**進捗状況ステータスが**処理中**に戻ります。</span><span class="sxs-lookup"><span data-stu-id="64049-122">The selected service orders are either canceled or their progress status of **Canceled** has been reversed to **In process**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="b2384-123"><STRONG>キャンセルの無効化</STRONG>チェック ボックスをオンにすると、進捗状況ステータスが<STRONG>キャンセル済</STRONG> のサービス注文が取り消されて、進捗状況ステータスが<STRONG>処理中</STRONG>のサービス注文のキャンセルは実行されません。</span><span class="sxs-lookup"><span data-stu-id="b2384-123">If you select the <STRONG>Revoke cancel</STRONG> check box, service orders with a progress status of <STRONG>Canceled</STRONG> are reversed and service orders with a progress status of <STRONG>In process</STRONG> are not canceled.</span></span></P>
+> <P><span data-ttu-id="64049-123"><STRONG>キャンセルの無効化</STRONG>チェック ボックスをオンにすると、進捗状況ステータスが<STRONG>キャンセル済</STRONG> のサービス注文が取り消されて、進捗状況ステータスが<STRONG>処理中</STRONG>のサービス注文のキャンセルは実行されません。</span><span class="sxs-lookup"><span data-stu-id="64049-123">If you select the <STRONG>Revoke cancel</STRONG> check box, service orders with a progress status of <STRONG>Canceled</STRONG> are reversed and service orders with a progress status of <STRONG>In process</STRONG> are not canceled.</span></span></P>
 
 
   

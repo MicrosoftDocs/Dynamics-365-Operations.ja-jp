@@ -1,0 +1,68 @@
+---
+title: 自動化された仕入先請求プロセスの概要
+description: このトピックでは、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。
+author: abruer
+manager: AnnBe
+ms.date: 08/30/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.assetid: ''
+ms.search.region: Global
+ms.author: shpandey
+ms.search.validFrom: 2017-08-30
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 187b3c4f1a8b2c9ec6df95c19b261756ec4562dc
+ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905021"
+---
+# <a name="automated-vendor-invoicing-processes-overview"></a><span data-ttu-id="56674-103">自動化された仕入先請求プロセスの概要</span><span class="sxs-lookup"><span data-stu-id="56674-103">Automated vendor invoicing processes overview</span></span>
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+<span data-ttu-id="56674-104">このトピックでは、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。</span><span class="sxs-lookup"><span data-stu-id="56674-104">This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process.</span></span> <span data-ttu-id="56674-105">この機能は、機能管理でオンにされている機能で構成されています。</span><span class="sxs-lookup"><span data-stu-id="56674-105">This capability consists of features that are turned on in Feature management.</span></span> <span data-ttu-id="56674-106">これらの機能は、仕入先請求書にのみ適用され、**請求仕訳帳**または**仕入帳仕訳帳**ページで処理される請求書には適用されません。</span><span class="sxs-lookup"><span data-stu-id="56674-106">These features apply only to vendor invoices, not to invoices that are processed through the **Invoice journal** or **Invoice register journal** page.</span></span>
+
+<span data-ttu-id="56674-107">組織は多くの場合、サード パーティの光学式文字認識 (OCR) サービス プロバイダを使用して紙の請求書を処理します。</span><span class="sxs-lookup"><span data-stu-id="56674-107">Organizations often work with third parties to process paper invoices by using an optical character recognition (OCR) service provider.</span></span> <span data-ttu-id="56674-108">サービス プロバイダーは、機械可読請求書メタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="56674-108">The service provider returns machine-readable invoice metadata.</span></span> <span data-ttu-id="56674-109">自動化を支援するため、買掛金勘定自動化機能によって、買掛金勘定からこれらのコンポーネントを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-109">To help with automation, the Accounts payable automation features let you consume these artifacts from Accounts payable.</span></span>
+
+<span data-ttu-id="56674-110">一部の買掛金勘定の仕入先請求プロセスを自動化することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-110">You can automate some Accounts payable vendor invoicing processes.</span></span> <span data-ttu-id="56674-111">これらのプロセスには、インポートした仕入先請求書をワークフローに送信すること、および転記された製品受領書の明細行を保留中の仕入先請求書の明細行に照合することが含まれます。</span><span class="sxs-lookup"><span data-stu-id="56674-111">These processes include submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.</span></span> <span data-ttu-id="56674-112">自動化プロセスは、各プロセスを実行するときに、仕入先請求書の進捗状況に関する情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="56674-112">The automated process shows information about the progress of a vendor invoice as it moves through each of the processes.</span></span> <span data-ttu-id="56674-113">この機能により、買掛金勘定の担当者およびマネージャーは仕入先請求書をより効率的に処理することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-113">This capability can help Accounts payable clerks and managers process vendor invoices more efficiently.</span></span> <span data-ttu-id="56674-114">また、情報を手動で入力および処理する際に発生する可能性のあるエラーおよび非能率性を減らすこともできます。</span><span class="sxs-lookup"><span data-stu-id="56674-114">It also helps reduce the errors and inefficiencies that can occur when information is manually entered and processed.</span></span>
+
+<span data-ttu-id="56674-115">自動化プロセスを使用して、次のタスクを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-115">The automation processes can be used to perform these tasks:</span></span>
+
+- <span data-ttu-id="56674-116">インポートした請求書をワークフロー システムに自動的に送信する。</span><span class="sxs-lookup"><span data-stu-id="56674-116">Automatically submit imported invoices to the workflow system.</span></span>
+- <span data-ttu-id="56674-117">製品受領書を保留中の仕入先請求書の明細行と照合する。</span><span class="sxs-lookup"><span data-stu-id="56674-117">Match product receipts to pending vendor invoice lines.</span></span>
+- <span data-ttu-id="56674-118">仕入先請求書が転記される前に転記をシミュレートする。</span><span class="sxs-lookup"><span data-stu-id="56674-118">Simulate posting before a vendor invoice is posted.</span></span>
+- <span data-ttu-id="56674-119">ワークフロー履歴をすばやく、効率的に表示する。</span><span class="sxs-lookup"><span data-stu-id="56674-119">Quickly and efficiently view workflow history.</span></span>
+- <span data-ttu-id="56674-120">仕入先請求書処理の自動化の結果を表示および分析する。</span><span class="sxs-lookup"><span data-stu-id="56674-120">View and analyze the results of automating vendor invoice processing.</span></span>
+
+## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a><span data-ttu-id="56674-121">仕入先請求書の自動化 – インポートした仕入先請求書をワークフロー システムに送信する</span><span class="sxs-lookup"><span data-stu-id="56674-121">Vendor invoice automation – Submit imported vendor invoices to the workflow system</span></span>
+
+<span data-ttu-id="56674-122">継続的な買掛金勘定請求プロセスの一部として、インポートした請求書をシステムが自動的にワークフロー システムに送信するようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="56674-122">As part of a touchless Accounts payable invoicing process, you can have the system automatically submit an imported invoice to the workflow system.</span></span> <span data-ttu-id="56674-123">プロセスは指定した頻度で (毎時間または毎日のいずれか)、バックグラウンドで実行されます。</span><span class="sxs-lookup"><span data-stu-id="56674-123">The process will run in the background, at a frequency that you specify (either hourly or daily).</span></span> <span data-ttu-id="56674-124">インポートした請求書をワークフロー システムに自動的に送信する機能では、プロセスをインポートした請求書で開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="56674-124">The capability to automatically submit imported invoices to the workflow system requires that your process begin with an imported invoice.</span></span> <span data-ttu-id="56674-125">手動操作なしで請求書を開始から終了まで処理できるようにするには、自動化された転記タスクをワークフロー コンフィギュレーションに含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="56674-125">To ensure that the invoice can be processed from start to finish without manual intervention, an automated posting task must be included in the workflow configuration.</span></span>
+
+<span data-ttu-id="56674-126">発注書 (PO) に関連付けられている請求書、および発注書以外の調達カテゴリと非在庫明細行が含まれている請求書については、ワークフロー システムに自動的に送信できます。</span><span class="sxs-lookup"><span data-stu-id="56674-126">'Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system.</span></span> <span data-ttu-id="56674-127">手動で入力された請求書および**仕入先コラボレーションの請求ワークスペース**を介して作成された請求書は、手動でワークフロー システムに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="56674-127">Invoices that are manually entered and invoices that are created via the **Vendor collaboration invoicing** workspace must be manually submitted to the workflow system.</span></span>
+
+<span data-ttu-id="56674-128">自動化機能は、インポートした仕入先請求書をワークフロー システムに送信するための会社固有のルールを定義したり、保留中の仕入先請求書明細行に転記された製品受領書明細行を照合したりするための、柔軟なフレームワークを提供します。</span><span class="sxs-lookup"><span data-stu-id="56674-128">The automation feature provides a flexible framework that lets you define company-specific rules for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.</span></span>
+
+## <a name="vendor-invoice-automation--match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a><span data-ttu-id="56674-129">仕入先請求書の自動化 - スリーウェイ マッチングポリシーが設定されている請求明細行と製品受領書を照合します</span><span class="sxs-lookup"><span data-stu-id="56674-129">Vendor invoice automation – Match product receipts to invoice lines that have a three-way matching policy</span></span>
+
+<span data-ttu-id="56674-130">システムは、転記された製品受領書を、スリーウェイ マッチングポリシーが定義されている請求明細行に自動的に照合することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-130">The system can automatically match posted product receipts to invoice lines that a three-way matching policy is defined for.</span></span> <span data-ttu-id="56674-131">プロセスは、照合した製品受領書の数量と請求書の数量が等しくなるまで実行されます。</span><span class="sxs-lookup"><span data-stu-id="56674-131">The process will run until the matched product receipt quantity equals the invoice quantity.</span></span> <span data-ttu-id="56674-132">このプロセスの一部として、プロセスが失敗して終了するまでに、システムが製品受領書を請求明細行と照合する最大回数を指定できます。</span><span class="sxs-lookup"><span data-stu-id="56674-132">As part of this process, you can specify the maximum number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed.</span></span> <span data-ttu-id="56674-133">プロセスは、毎時間または毎日、バックグラウンドで実行されます。</span><span class="sxs-lookup"><span data-stu-id="56674-133">The process will run in the background, either hourly or daily.</span></span> <span data-ttu-id="56674-134">自動照合プロセスは、ワークフロー システムに請求書を送信するプロセスの一部として実行できます。</span><span class="sxs-lookup"><span data-stu-id="56674-134">You can run the automated matching process as part of the process for submitting invoices to the workflow system.</span></span> <span data-ttu-id="56674-135">または、スタンドアロン プロセスとして実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="56674-135">Alternatively, you can run it as a standalone process.</span></span>
+
+## <a name="vendor-invoice-automation--pre-validate-vendor-invoice-posting"></a><span data-ttu-id="56674-136">仕入先請求書の自動化 – 仕入先請求書の転記の事前検証</span><span class="sxs-lookup"><span data-stu-id="56674-136">Vendor invoice automation – Pre-validate vendor invoice posting</span></span>
+
+<span data-ttu-id="56674-137">転記のシミュレーションでは、仕入先請求書の転記プロセス中に実行される検証ステップは完了しますが、勘定は更新されません。</span><span class="sxs-lookup"><span data-stu-id="56674-137">Posting simulation completes the validation steps that are done during the posting process for vendor invoices, but no accounts are updated.</span></span> <span data-ttu-id="56674-138">プロセスを実行するために、**保留中の仕入先請求書**ページで 1 つの請求書または複数の請求書を選択することができ ます。</span><span class="sxs-lookup"><span data-stu-id="56674-138">To run the process, you can select either a single invoice or multiple invoices on the **Pending vendor invoices** page.</span></span>
+
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a><span data-ttu-id="56674-139">仕入先請求書の自動化 – 仕入先請求書のワークフロー履歴情報を表示するための拡張エクスペリエンス</span><span class="sxs-lookup"><span data-stu-id="56674-139">Vendor invoice automation – Enhanced experience for viewing workflow historical information for vendor invoices</span></span>
+
+<span data-ttu-id="56674-140">仕入先請求書ワークフロー履歴の分かりやすいビューが提供されます。</span><span class="sxs-lookup"><span data-stu-id="56674-140">An easy-to-read view of vendor invoice workflow history is provided.</span></span> <span data-ttu-id="56674-141">仕入先請求書ワークフローの履歴は、仕入先請求書から直接アクセスできます。</span><span class="sxs-lookup"><span data-stu-id="56674-141">Vendor invoice workflow history can be accessed directly from the vendor invoice.</span></span> <span data-ttu-id="56674-142">したがって、情報を見つけるために必要なクリックの回数を減らすことができます。</span><span class="sxs-lookup"><span data-stu-id="56674-142">Therefore, fewer clicks are required to find that information.</span></span>
+
+## <a name="vendor-invoice-automation--analytics-and-metrics"></a><span data-ttu-id="56674-143">仕入先請求書の自動化 - 分析とメトリックス</span><span class="sxs-lookup"><span data-stu-id="56674-143">Vendor invoice automation – Analytics and metrics</span></span>
+
+<span data-ttu-id="56674-144">**仕入先請求書入力**ワークスペースにより、自動化プロセスによって作成されなかった仕入先請求書に集中することができます。</span><span class="sxs-lookup"><span data-stu-id="56674-144">The **Vendor invoice entry** workspace lets you focus on vendor invoices that didn't make it through the automated process.</span></span> <span data-ttu-id="56674-145">ワークスペースのタイルは、ワークフロー システムに正常に送信またはインポートされなかったか、または製品受領書と照合されなかった仕入先請求書に関する情報を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="56674-145">Tiles on the workspace list information about vendor invoices that weren't successfully submitted to the workflow system, imported, or matched to product receipts.</span></span> <span data-ttu-id="56674-146">Microsoft Power BI メトリックスも提供され、買掛金勘定マネージャーは仕入先請求書の自動化の効率について洞察を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="56674-146">Microsoft Power BI metrics are also provided to give Accounts payable managers insight into the efficiencies of vendor invoice automation.</span></span>

@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb991b5e9abbe517dcbd73de4f34744955383e82
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206660"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981669"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a><span data-ttu-id="92537-103">返品品目の廃棄方法の指定</span><span class="sxs-lookup"><span data-stu-id="92537-103">Specify how to dispose of returned items</span></span> 
+# <a name="specify-how-to-dispose-of-returned-items"></a><span data-ttu-id="f97a7-103">返品品目の廃棄方法の指定</span><span class="sxs-lookup"><span data-stu-id="f97a7-103">Specify how to dispose of returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="92537-104">返品注文を処理する場合、製品が返品されている理由を識別する返品理由コードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="92537-104">When you handle a return order, you must specify a reason return code to identify why the product is being returned.</span></span> <span data-ttu-id="92537-105">返品製品自体に何が実行されたかを特定する廃棄コード、および処分アクションも指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="92537-105">You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.</span></span>
+<span data-ttu-id="f97a7-104">返品注文を処理する場合、製品が返品されている理由を識別する返品理由コードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f97a7-104">When you handle a return order, you must specify a reason return code to identify why the product is being returned.</span></span> <span data-ttu-id="f97a7-105">返品製品自体に何が実行されたかを特定する廃棄コード、および処分アクションも指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f97a7-105">You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.</span></span>
 
-<span data-ttu-id="92537-106">廃棄コードは、返品注文の作成、品目到着の登録または品目到着の梱包明細の更新、および検査指示の終了時に適用できます。</span><span class="sxs-lookup"><span data-stu-id="92537-106">A disposition code can be applied when you create the return order, register item arrival or packing-slip update an item arrival, and end a quarantine order.</span></span>
+<span data-ttu-id="f97a7-106">廃棄コードは、返品注文の作成、品目到着の登録または品目到着の梱包明細の更新、および検査指示の終了時に適用できます。</span><span class="sxs-lookup"><span data-stu-id="f97a7-106">A disposition code can be applied when you create the return order, register item arrival or packing-slip update an item arrival, and end a quarantine order.</span></span>
 
-<span data-ttu-id="92537-107">業務プロセスをサポートするため、任意の必要な廃棄コードを定義できます。</span><span class="sxs-lookup"><span data-stu-id="92537-107">You can define any disposition codes that you need in order to support the business processes.</span></span> <span data-ttu-id="92537-108">次の表に、返品品目の廃棄を割り当てるために一般的に使用されるコードを示します。</span><span class="sxs-lookup"><span data-stu-id="92537-108">The following table provides a set of typically used codes to assign return-item disposition.</span></span>
+<span data-ttu-id="f97a7-107">業務プロセスをサポートするため、任意の必要な廃棄コードを定義できます。</span><span class="sxs-lookup"><span data-stu-id="f97a7-107">You can define any disposition codes that you need in order to support the business processes.</span></span> <span data-ttu-id="f97a7-108">次の表に、返品品目の廃棄を割り当てるために一般的に使用されるコードを示します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-108">The following table provides a set of typically used codes to assign return-item disposition.</span></span>
 
 <table>
 <colgroup>
@@ -44,87 +44,87 @@ ms.locfileid: "3206660"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="92537-109">廃棄タイプ</span><span class="sxs-lookup"><span data-stu-id="92537-109">Disposition type</span></span></p></th>
-<th><p><span data-ttu-id="92537-110">一般的なコード</span><span class="sxs-lookup"><span data-stu-id="92537-110">Common code</span></span></p></th>
-<th><p><span data-ttu-id="92537-111">説明</span><span class="sxs-lookup"><span data-stu-id="92537-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="f97a7-109">廃棄タイプ</span><span class="sxs-lookup"><span data-stu-id="f97a7-109">Disposition type</span></span></p></th>
+<th><p><span data-ttu-id="f97a7-110">一般的なコード</span><span class="sxs-lookup"><span data-stu-id="f97a7-110">Common code</span></span></p></th>
+<th><p><span data-ttu-id="f97a7-111">説明</span><span class="sxs-lookup"><span data-stu-id="f97a7-111">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-112">処分</span><span class="sxs-lookup"><span data-stu-id="92537-112">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="92537-113">SC</span><span class="sxs-lookup"><span data-stu-id="92537-113">SC</span></span></p></td>
-<td><p><span data-ttu-id="92537-114">解体/廃棄</span><span class="sxs-lookup"><span data-stu-id="92537-114">Scrap/Destroy</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-112">処分</span><span class="sxs-lookup"><span data-stu-id="f97a7-112">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-113">SC</span><span class="sxs-lookup"><span data-stu-id="f97a7-113">SC</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-114">解体/廃棄</span><span class="sxs-lookup"><span data-stu-id="f97a7-114">Scrap/Destroy</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-115">処分</span><span class="sxs-lookup"><span data-stu-id="92537-115">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="92537-116">DC</span><span class="sxs-lookup"><span data-stu-id="92537-116">DC</span></span></p></td>
-<td><p><span data-ttu-id="92537-117">慈善活動に寄贈</span><span class="sxs-lookup"><span data-stu-id="92537-117">Donate to Charity</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-115">処分</span><span class="sxs-lookup"><span data-stu-id="f97a7-115">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-116">DC</span><span class="sxs-lookup"><span data-stu-id="f97a7-116">DC</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-117">慈善活動に寄贈</span><span class="sxs-lookup"><span data-stu-id="f97a7-117">Donate to Charity</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-118">処分</span><span class="sxs-lookup"><span data-stu-id="92537-118">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="92537-119">TD</span><span class="sxs-lookup"><span data-stu-id="92537-119">TD</span></span></p></td>
-<td><p><span data-ttu-id="92537-120">サード パーティによる廃棄</span><span class="sxs-lookup"><span data-stu-id="92537-120">Third-Party Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-118">処分</span><span class="sxs-lookup"><span data-stu-id="f97a7-118">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-119">TD</span><span class="sxs-lookup"><span data-stu-id="f97a7-119">TD</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-120">サード パーティによる廃棄</span><span class="sxs-lookup"><span data-stu-id="f97a7-120">Third-Party Disposal</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-121">処分</span><span class="sxs-lookup"><span data-stu-id="92537-121">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="92537-122">SL</span><span class="sxs-lookup"><span data-stu-id="92537-122">SL</span></span></p></td>
-<td><p><span data-ttu-id="92537-123">回収</span><span class="sxs-lookup"><span data-stu-id="92537-123">Salvage</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-121">処分</span><span class="sxs-lookup"><span data-stu-id="f97a7-121">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-122">SL</span><span class="sxs-lookup"><span data-stu-id="f97a7-122">SL</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-123">回収</span><span class="sxs-lookup"><span data-stu-id="f97a7-123">Salvage</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-124">処分</span><span class="sxs-lookup"><span data-stu-id="92537-124">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="92537-125">TS</span><span class="sxs-lookup"><span data-stu-id="92537-125">TS</span></span></p></td>
-<td><p><span data-ttu-id="92537-126">サード パーティへの売却 (二次市場)</span><span class="sxs-lookup"><span data-stu-id="92537-126">Third-Party Sale (Secondary Markets)</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-124">処分</span><span class="sxs-lookup"><span data-stu-id="f97a7-124">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-125">TS</span><span class="sxs-lookup"><span data-stu-id="f97a7-125">TS</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-126">サード パーティへの売却 (二次市場)</span><span class="sxs-lookup"><span data-stu-id="f97a7-126">Third-Party Sale (Secondary Markets)</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-127">修復/変更</span><span class="sxs-lookup"><span data-stu-id="92537-127">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="92537-128">RW</span><span class="sxs-lookup"><span data-stu-id="92537-128">RW</span></span></p></td>
-<td><p><span data-ttu-id="92537-129">再加工</span><span class="sxs-lookup"><span data-stu-id="92537-129">Rework</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-127">修復/変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-127">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-128">RW</span><span class="sxs-lookup"><span data-stu-id="f97a7-128">RW</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-129">再加工</span><span class="sxs-lookup"><span data-stu-id="f97a7-129">Rework</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-130">修復/変更</span><span class="sxs-lookup"><span data-stu-id="92537-130">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="92537-131">RF</span><span class="sxs-lookup"><span data-stu-id="92537-131">RF</span></span></p></td>
-<td><p><span data-ttu-id="92537-132">再製品化/修繕</span><span class="sxs-lookup"><span data-stu-id="92537-132">Remanufacture/Refurbish</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-130">修復/変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-130">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-131">RF</span><span class="sxs-lookup"><span data-stu-id="f97a7-131">RF</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-132">再製品化/修繕</span><span class="sxs-lookup"><span data-stu-id="f97a7-132">Remanufacture/Refurbish</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-133">修復/変更</span><span class="sxs-lookup"><span data-stu-id="92537-133">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="92537-134">MD</span><span class="sxs-lookup"><span data-stu-id="92537-134">MD</span></span></p></td>
-<td><p><span data-ttu-id="92537-135">変更</span><span class="sxs-lookup"><span data-stu-id="92537-135">Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-133">修復/変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-133">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-134">MD</span><span class="sxs-lookup"><span data-stu-id="f97a7-134">MD</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-135">変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-135">Modify</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-136">修復/変更</span><span class="sxs-lookup"><span data-stu-id="92537-136">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="92537-137">RP</span><span class="sxs-lookup"><span data-stu-id="92537-137">RP</span></span></p></td>
-<td><p><span data-ttu-id="92537-138">修復</span><span class="sxs-lookup"><span data-stu-id="92537-138">Repair</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-136">修復/変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-136">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-137">RP</span><span class="sxs-lookup"><span data-stu-id="f97a7-137">RP</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-138">修復</span><span class="sxs-lookup"><span data-stu-id="f97a7-138">Repair</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-139">修復/変更</span><span class="sxs-lookup"><span data-stu-id="92537-139">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="92537-140">RV</span><span class="sxs-lookup"><span data-stu-id="92537-140">RV</span></span></p></td>
-<td><p><span data-ttu-id="92537-141">仕入先に返品</span><span class="sxs-lookup"><span data-stu-id="92537-141">Return to Vendor</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-139">修復/変更</span><span class="sxs-lookup"><span data-stu-id="f97a7-139">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-140">RV</span><span class="sxs-lookup"><span data-stu-id="f97a7-140">RV</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-141">仕入先に返品</span><span class="sxs-lookup"><span data-stu-id="f97a7-141">Return to Vendor</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-142">その他</span><span class="sxs-lookup"><span data-stu-id="92537-142">Other</span></span></p></td>
-<td><p><span data-ttu-id="92537-143">AI</span><span class="sxs-lookup"><span data-stu-id="92537-143">AI</span></span></p></td>
-<td><p><span data-ttu-id="92537-144">現状のまま使用</span><span class="sxs-lookup"><span data-stu-id="92537-144">Use as is</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-142">その他</span><span class="sxs-lookup"><span data-stu-id="f97a7-142">Other</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-143">AI</span><span class="sxs-lookup"><span data-stu-id="f97a7-143">AI</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-144">現状のまま使用</span><span class="sxs-lookup"><span data-stu-id="f97a7-144">Use as is</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-145">その他</span><span class="sxs-lookup"><span data-stu-id="92537-145">Other</span></span></p></td>
-<td><p><span data-ttu-id="92537-146">RS</span><span class="sxs-lookup"><span data-stu-id="92537-146">RS</span></span></p></td>
-<td><p><span data-ttu-id="92537-147">再販売</span><span class="sxs-lookup"><span data-stu-id="92537-147">Resale</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-145">その他</span><span class="sxs-lookup"><span data-stu-id="f97a7-145">Other</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-146">RS</span><span class="sxs-lookup"><span data-stu-id="f97a7-146">RS</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-147">再販売</span><span class="sxs-lookup"><span data-stu-id="f97a7-147">Resale</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-148">その他</span><span class="sxs-lookup"><span data-stu-id="92537-148">Other</span></span></p></td>
-<td><p><span data-ttu-id="92537-149">前</span><span class="sxs-lookup"><span data-stu-id="92537-149">EX</span></span></p></td>
-<td><p><span data-ttu-id="92537-150">交換</span><span class="sxs-lookup"><span data-stu-id="92537-150">Exchange</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-148">その他</span><span class="sxs-lookup"><span data-stu-id="f97a7-148">Other</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-149">前</span><span class="sxs-lookup"><span data-stu-id="f97a7-149">EX</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-150">交換</span><span class="sxs-lookup"><span data-stu-id="f97a7-150">Exchange</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-151">その他</span><span class="sxs-lookup"><span data-stu-id="92537-151">Other</span></span></p></td>
-<td><p><span data-ttu-id="92537-152">Ms.</span><span class="sxs-lookup"><span data-stu-id="92537-152">MS</span></span></p></td>
-<td><p><span data-ttu-id="92537-153">雑費</span><span class="sxs-lookup"><span data-stu-id="92537-153">Miscellaneous</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-151">その他</span><span class="sxs-lookup"><span data-stu-id="f97a7-151">Other</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-152">Ms.</span><span class="sxs-lookup"><span data-stu-id="f97a7-152">MS</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-153">雑費</span><span class="sxs-lookup"><span data-stu-id="f97a7-153">Miscellaneous</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="92537-154">定義した各廃棄コードごとに、処分アクションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="92537-154">For each disposition code that you define, you must select a disposition action.</span></span> <span data-ttu-id="92537-155">処分アクションにより、廃棄コードの物理的および財務的意味が決まります。</span><span class="sxs-lookup"><span data-stu-id="92537-155">The disposition action determines the physical and financial implications of the disposition codes.</span></span> <span data-ttu-id="92537-156">たとえば、交換品目を顧客に送る必要がある場合、処分アクションにより、返品品目の物理的な処理や返品品目の財務上の影響などが決まります。</span><span class="sxs-lookup"><span data-stu-id="92537-156">For example, the disposition action determines the physical handling of the returned item, the financial effect of the returned item, and if a replacement item must be sent to the customer.</span></span> <span data-ttu-id="92537-157">業務のニーズに応じて廃棄コードの数を任意に定義できますが、6 種類の定義済の処分アクションのみ選択できます。</span><span class="sxs-lookup"><span data-stu-id="92537-157">You can define an unlimited number of disposition codes according to your business needs, but there are only six predefined disposition actions that you can select from.</span></span> <span data-ttu-id="92537-158">次の表に、処分アクションとその定義を示します。</span><span class="sxs-lookup"><span data-stu-id="92537-158">The following table provides the disposition actions and their definitions.</span></span>
+<span data-ttu-id="f97a7-154">定義した各廃棄コードごとに、処分アクションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f97a7-154">For each disposition code that you define, you must select a disposition action.</span></span> <span data-ttu-id="f97a7-155">処分アクションにより、廃棄コードの物理的および財務的意味が決まります。</span><span class="sxs-lookup"><span data-stu-id="f97a7-155">The disposition action determines the physical and financial implications of the disposition codes.</span></span> <span data-ttu-id="f97a7-156">たとえば、交換品目を顧客に送る必要がある場合、処分アクションにより、返品品目の物理的な処理や返品品目の財務上の影響などが決まります。</span><span class="sxs-lookup"><span data-stu-id="f97a7-156">For example, the disposition action determines the physical handling of the returned item, the financial effect of the returned item, and if a replacement item must be sent to the customer.</span></span> <span data-ttu-id="f97a7-157">業務のニーズに応じて廃棄コードの数を任意に定義できますが、6 種類の定義済の処分アクションのみ選択できます。</span><span class="sxs-lookup"><span data-stu-id="f97a7-157">You can define an unlimited number of disposition codes according to your business needs, but there are only six predefined disposition actions that you can select from.</span></span> <span data-ttu-id="f97a7-158">次の表に、処分アクションとその定義を示します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-158">The following table provides the disposition actions and their definitions.</span></span>
 
 <table>
 <colgroup>
@@ -133,52 +133,52 @@ ms.locfileid: "3206660"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="92537-159">処分アクション</span><span class="sxs-lookup"><span data-stu-id="92537-159">Disposition action</span></span></p></th>
-<th><p><span data-ttu-id="92537-160">説明</span><span class="sxs-lookup"><span data-stu-id="92537-160">Description</span></span></p></th>
+<th><p><span data-ttu-id="f97a7-159">処分アクション</span><span class="sxs-lookup"><span data-stu-id="f97a7-159">Disposition action</span></span></p></th>
+<th><p><span data-ttu-id="f97a7-160">説明</span><span class="sxs-lookup"><span data-stu-id="f97a7-160">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-161"><strong>クレジット</strong></span><span class="sxs-lookup"><span data-stu-id="92537-161"><strong>Credit</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-162">品目を在庫に返品し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="92537-162">Return the item to inventory and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-161"><strong>クレジット</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-161"><strong>Credit</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-162">品目を在庫に返品し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-162">Return the item to inventory and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-163"><strong>貸方のみ</strong></span><span class="sxs-lookup"><span data-stu-id="92537-163"><strong>Credit only</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-164">品目の返品を要求または期待せずに、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="92537-164">Credit the customer without requiring or expecting the item to be returned.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-163"><strong>貸方のみ</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-163"><strong>Credit only</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-164">品目の返品を要求または期待せずに、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-164">Credit the customer without requiring or expecting the item to be returned.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-165"><strong>仕損</strong></span><span class="sxs-lookup"><span data-stu-id="92537-165"><strong>Scrap</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-166">品目を処分して、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="92537-166">Scrap the item and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-165"><strong>仕損</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-165"><strong>Scrap</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-166">品目を処分して、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-166">Scrap the item and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-167"><strong>置換と貸方転記</strong></span><span class="sxs-lookup"><span data-stu-id="92537-167"><strong>Replace and credit</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-168">品目を在庫に戻して、交換注文を作成し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="92537-168">Return the item to inventory, create a replacement order, and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-167"><strong>置換と貸方転記</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-167"><strong>Replace and credit</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-168">品目を在庫に戻して、交換注文を作成し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-168">Return the item to inventory, create a replacement order, and credit the customer.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="92537-169"><strong>置換と仕損</strong></span><span class="sxs-lookup"><span data-stu-id="92537-169"><strong>Replace and scrap</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-170">品目の処分し、交換注文を作成し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="92537-170">Scrap the item, create a replacement order, and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-169"><strong>置換と仕損</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-169"><strong>Replace and scrap</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-170">品目の処分し、交換注文を作成し、顧客に対して貸方転記します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-170">Scrap the item, create a replacement order, and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="92537-171"><strong>顧客に戻る</strong></span><span class="sxs-lookup"><span data-stu-id="92537-171"><strong>Return to customer</strong></span></span></p></td>
-<td><p><span data-ttu-id="92537-172">品目の返品を拒否して、顧客に返送します。</span><span class="sxs-lookup"><span data-stu-id="92537-172">Reject the returned item and return it to the customer.</span></span></p></td>
+<td><p><span data-ttu-id="f97a7-171"><strong>顧客に戻る</strong></span><span class="sxs-lookup"><span data-stu-id="f97a7-171"><strong>Return to customer</strong></span></span></p></td>
+<td><p><span data-ttu-id="f97a7-172">品目の返品を拒否して、顧客に返送します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-172">Reject the returned item and return it to the customer.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="select-a-disposition-code-for-a-quarantine-order"></a><span data-ttu-id="92537-173">検査指示の廃棄コードの選択</span><span class="sxs-lookup"><span data-stu-id="92537-173">Select a disposition code for a quarantine order</span></span>
+## <a name="select-a-disposition-code-for-a-quarantine-order"></a><span data-ttu-id="f97a7-173">検査指示の廃棄コードの選択</span><span class="sxs-lookup"><span data-stu-id="f97a7-173">Select a disposition code for a quarantine order</span></span>
 
-1.  <span data-ttu-id="92537-174">**在庫管理** \> **定期処理** \> **品質管理** \> **検査指示**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="92537-174">Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.</span></span>
+1.  <span data-ttu-id="f97a7-174">**在庫管理** \> **定期処理** \> **品質管理** \> **検査指示**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="f97a7-174">Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.</span></span>
 
-2.  <span data-ttu-id="92537-175">既存の検査指示に対して、**概要**タブの**廃棄コード**フィールドからアクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="92537-175">For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.</span></span>
+2.  <span data-ttu-id="f97a7-175">既存の検査指示に対して、**概要**タブの**廃棄コード**フィールドからアクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f97a7-175">For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="92537-176">参照</span><span class="sxs-lookup"><span data-stu-id="92537-176">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f97a7-176">参照</span><span class="sxs-lookup"><span data-stu-id="f97a7-176">See also</span></span>
 
-<span data-ttu-id="92537-177">[検査指示 (フォーム)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span><span class="sxs-lookup"><span data-stu-id="92537-177">[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span></span>
+<span data-ttu-id="f97a7-177">[検査指示 (フォーム)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span><span class="sxs-lookup"><span data-stu-id="f97a7-177">[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span></span>
 
-<span data-ttu-id="92537-178">[廃棄コード (フォーム)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="92537-178">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
+<span data-ttu-id="f97a7-178">[廃棄コード (フォーム)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="f97a7-178">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
 
   
 

@@ -15,30 +15,30 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b6b2607d8400ea80d25473ad4183362d4a3bcad
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f7f8c466df0b877c3f664acff2b431b3098fe2e6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202379"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981645"
 ---
-# <a name="indexed-sales-prices"></a><span data-ttu-id="f5a7f-103">指数化された販売価格</span><span class="sxs-lookup"><span data-stu-id="f5a7f-103">Indexed sales prices</span></span>  
+# <a name="indexed-sales-prices"></a><span data-ttu-id="bb6f2-103">指数化された販売価格</span><span class="sxs-lookup"><span data-stu-id="bb6f2-103">Indexed sales prices</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f5a7f-104">定期売買手数料を作成する場合は、定期売買の販売価格の指数を設定します。</span><span class="sxs-lookup"><span data-stu-id="f5a7f-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
+<span data-ttu-id="bb6f2-104">定期売買手数料を作成する場合は、定期売買の販売価格の指数を設定します。</span><span class="sxs-lookup"><span data-stu-id="bb6f2-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
 
-<span data-ttu-id="f5a7f-105">**定期売買手数料の作成**フォームで、**価格の取得元**フィールドを**指標化された基準価格**に設定し、基準価格に**価格変更率**フィールドの割合を乗算して、定期売買トランザクションの販売価格を取得します。</span><span class="sxs-lookup"><span data-stu-id="f5a7f-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
+<span data-ttu-id="bb6f2-105">**定期売買手数料の作成**フォームで、**価格の取得元**フィールドを**指標化された基準価格**に設定し、基準価格に**価格変更率**フィールドの割合を乗算して、定期売買トランザクションの販売価格を取得します。</span><span class="sxs-lookup"><span data-stu-id="bb6f2-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
 
-<span data-ttu-id="f5a7f-106">たとえば、基準価格が 1,000 EUR で、指数が 110 の場合、販売価格は 1,100 EUR になります。</span><span class="sxs-lookup"><span data-stu-id="f5a7f-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
+<span data-ttu-id="bb6f2-106">たとえば、基準価格が 1,000 EUR で、指数が 110 の場合、販売価格は 1,100 EUR になります。</span><span class="sxs-lookup"><span data-stu-id="bb6f2-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f5a7f-107">参照</span><span class="sxs-lookup"><span data-stu-id="f5a7f-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bb6f2-107">参照</span><span class="sxs-lookup"><span data-stu-id="bb6f2-107">See also</span></span>
 
-[<span data-ttu-id="f5a7f-108">定期売買手数料トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="f5a7f-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
+[<span data-ttu-id="bb6f2-108">定期売買手数料トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="bb6f2-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
 
   
 

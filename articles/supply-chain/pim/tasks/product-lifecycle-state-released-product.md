@@ -12,28 +12,28 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58b87d0ed0f4d23db0ed29e5120df7d7f4450812
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5e7df272a946506dfa4e8d7a04181dd0cb40972c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213127"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981211"
 ---
-# <a name="assign-a-product-lifecycle-state-to-a-released-product"></a><span data-ttu-id="a220f-103">製品ライフサイクルの状態をリリース済製品に割り当て</span><span class="sxs-lookup"><span data-stu-id="a220f-103">Assign a product lifecycle state to a released product</span></span>
+# <a name="assign-a-product-lifecycle-state-to-a-released-product"></a><span data-ttu-id="33f9a-103">製品ライフサイクルの状態をリリース済製品に割り当て</span><span class="sxs-lookup"><span data-stu-id="33f9a-103">Assign a product lifecycle state to a released product</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a220f-104">ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="a220f-104">This procedure shows how to assign a product lifecycle state to a released product.</span></span> <span data-ttu-id="a220f-105">前提条件: このガイドを再生する前に、タスク ガイド「新しい製品のライフサイクルの状態の作成」を実行し、少なくとも、1 つの製品のライフサイクルの状態が作成されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a220f-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that at least one product lifecycle state is created before you can play this guide.</span></span>
+<span data-ttu-id="33f9a-104">ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="33f9a-104">This procedure shows how to assign a product lifecycle state to a released product.</span></span> <span data-ttu-id="33f9a-105">前提条件: このガイドを再生する前に、タスク ガイド「新しい製品のライフサイクルの状態の作成」を実行し、少なくとも、1 つの製品のライフサイクルの状態が作成されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="33f9a-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that at least one product lifecycle state is created before you can play this guide.</span></span>
 
 
-## <a name="find-a-released-product-that-you-want-to-assign-a-product-lifcycle-state"></a><span data-ttu-id="a220f-106">製品ライフサイクルの状態を割り当てる、リリースされた製品を探す</span><span class="sxs-lookup"><span data-stu-id="a220f-106">Find a released product that you want to assign a product lifcycle state</span></span>
-1. <span data-ttu-id="a220f-107">[製品情報管理] > [製品] > [リリースされた製品] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a220f-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="a220f-108">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="a220f-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="a220f-109">たとえば、「d」という値で [品目番号] フィールドをフィルターします。</span><span class="sxs-lookup"><span data-stu-id="a220f-109">For example, filter on the Item number field with a value of 'd'.</span></span>
-3. <span data-ttu-id="a220f-110">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a220f-110">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="a220f-111">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a220f-111">Click Edit.</span></span>
-5. <span data-ttu-id="a220f-112">[製品ライフサイクルの状態] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a220f-112">In the Product lifecycle state field, enter or select a value.</span></span>
-6. <span data-ttu-id="a220f-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a220f-113">Click Save.</span></span>
+## <a name="find-a-released-product-that-you-want-to-assign-a-product-lifcycle-state"></a><span data-ttu-id="33f9a-106">製品ライフサイクルの状態を割り当てる、リリースされた製品を探す</span><span class="sxs-lookup"><span data-stu-id="33f9a-106">Find a released product that you want to assign a product lifcycle state</span></span>
+1. <span data-ttu-id="33f9a-107">[製品情報管理] > [製品] > [リリースされた製品] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="33f9a-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="33f9a-108">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="33f9a-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="33f9a-109">たとえば、「d」という値で [品目番号] フィールドをフィルターします。</span><span class="sxs-lookup"><span data-stu-id="33f9a-109">For example, filter on the Item number field with a value of 'd'.</span></span>
+3. <span data-ttu-id="33f9a-110">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="33f9a-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="33f9a-111">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33f9a-111">Click Edit.</span></span>
+5. <span data-ttu-id="33f9a-112">[製品ライフサイクルの状態] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="33f9a-112">In the Product lifecycle state field, enter or select a value.</span></span>
+6. <span data-ttu-id="33f9a-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="33f9a-113">Click Save.</span></span>
 

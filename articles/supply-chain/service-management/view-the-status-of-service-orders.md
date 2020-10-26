@@ -15,42 +15,42 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f9132479bac8a6bfd632a91e0acb94b9bde4e5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5d81b33a9f30143891da6c7f21dc728e6e4fe7b8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206361"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983774"
 ---
-# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="7c3b7-103">サービス注文のステータスを表示</span><span class="sxs-lookup"><span data-stu-id="7c3b7-103">View the status of service orders</span></span> 
+# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="d37d4-103">サービス注文のステータスを表示</span><span class="sxs-lookup"><span data-stu-id="d37d4-103">View the status of service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="7c3b7-104">サービス注文のサービス活動の状態を表示するためには**派遣表**フォームを使用できます。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
+<span data-ttu-id="d37d4-104">サービス注文のサービス活動の状態を表示するためには**派遣表**フォームを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d37d4-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
 
-## <a name="more-information-about-service-orders"></a><span data-ttu-id="7c3b7-105">サービス注文に関する詳細</span><span class="sxs-lookup"><span data-stu-id="7c3b7-105">More information about service orders</span></span>
+## <a name="more-information-about-service-orders"></a><span data-ttu-id="d37d4-105">サービス注文に関する詳細</span><span class="sxs-lookup"><span data-stu-id="d37d4-105">More information about service orders</span></span>
 
-<span data-ttu-id="7c3b7-106">フォームでは、サービス注文のフローを追跡するためのツールが提供され、関連付けられたサービス契約およびサービス レベル契約などの、サービス注文の緊急性を評価に役立つ追記情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
+<span data-ttu-id="d37d4-106">フォームでは、サービス注文のフローを追跡するためのツールが提供され、関連付けられたサービス契約およびサービス レベル契約などの、サービス注文の緊急性を評価に役立つ追記情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d37d4-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
 
-<span data-ttu-id="7c3b7-107">サービス注文の緊急性をすばやく判断できるように、ガント チャートでは色の使用をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="7c3b7-108">サービス コールの優先順位を識別するため、色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="7c3b7-109">既定では、この配色は、優先順位が高い場合は赤、一般的な場合は黄色、低い場合は緑です。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
+<span data-ttu-id="d37d4-107">サービス注文の緊急性をすばやく判断できるように、ガント チャートでは色の使用をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="d37d4-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="d37d4-108">サービス コールの優先順位を識別するため、色が使用されます。</span><span class="sxs-lookup"><span data-stu-id="d37d4-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="d37d4-109">既定では、この配色は、優先順位が高い場合は赤、一般的な場合は黄色、低い場合は緑です。</span><span class="sxs-lookup"><span data-stu-id="d37d4-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="7c3b7-110">これらの色は、<STRONG>サービス管理パラメーター</STRONG>フォームの<STRONG>出荷</STRONG>タブで変更できます。</span><span class="sxs-lookup"><span data-stu-id="7c3b7-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
+> <P><span data-ttu-id="d37d4-110">これらの色は、<STRONG>サービス管理パラメーター</STRONG>フォームの<STRONG>出荷</STRONG>タブで変更できます。</span><span class="sxs-lookup"><span data-stu-id="d37d4-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="7c3b7-111">参照</span><span class="sxs-lookup"><span data-stu-id="7c3b7-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d37d4-111">参照</span><span class="sxs-lookup"><span data-stu-id="d37d4-111">See also</span></span>
 
-[<span data-ttu-id="7c3b7-112">サービス注文の優先順位付け</span><span class="sxs-lookup"><span data-stu-id="7c3b7-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
+[<span data-ttu-id="d37d4-112">サービス注文の優先順位付け</span><span class="sxs-lookup"><span data-stu-id="d37d4-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
 
-[<span data-ttu-id="7c3b7-113">サービス活動の監視</span><span class="sxs-lookup"><span data-stu-id="7c3b7-113">Monitor service activities</span></span>](monitor-service-activities.md)
+[<span data-ttu-id="d37d4-113">サービス活動の監視</span><span class="sxs-lookup"><span data-stu-id="d37d4-113">Monitor service activities</span></span>](monitor-service-activities.md)
 
-<span data-ttu-id="7c3b7-114">[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="7c3b7-114">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="d37d4-114">[派遣表 (フォーム)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="d37d4-114">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
 
   
 

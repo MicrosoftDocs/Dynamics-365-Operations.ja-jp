@@ -14,38 +14,38 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 212c0a93e2e47abc800bf96225365e0a3ebb2a3a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f894ef19f868403d3150c346f3fed54416367204
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210781"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983306"
 ---
-# <a name="create-a-value-stream"></a><span data-ttu-id="fd7e7-103">バリュー ストリームの作成</span><span class="sxs-lookup"><span data-stu-id="fd7e7-103">Create a value stream</span></span>
+# <a name="create-a-value-stream"></a><span data-ttu-id="8a2f9-103">バリュー ストリームの作成</span><span class="sxs-lookup"><span data-stu-id="8a2f9-103">Create a value stream</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="fd7e7-104">バリュー ストリームは、作業単位であり、そのグループが 1 つまたは複数の生産フローです。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="fd7e7-105">生産フローを定義するには、まずバリュー ストリームを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-105">To define a production flow, you first must define a value stream.</span></span>
+<span data-ttu-id="8a2f9-104">バリュー ストリームは、作業単位であり、そのグループが 1 つまたは複数の生産フローです。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="8a2f9-105">生産フローを定義するには、まずバリュー ストリームを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-105">To define a production flow, you first must define a value stream.</span></span>
 
 
-## <a name="open-the-form"></a><span data-ttu-id="fd7e7-106">フォームの表示</span><span class="sxs-lookup"><span data-stu-id="fd7e7-106">Open the form</span></span>
-1. <span data-ttu-id="fd7e7-107">[生産管理] > [設定] > [リーン生産フロー] > [バリュー ストリーム] に移動します。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
+## <a name="open-the-form"></a><span data-ttu-id="8a2f9-106">フォームの表示</span><span class="sxs-lookup"><span data-stu-id="8a2f9-106">Open the form</span></span>
+1. <span data-ttu-id="8a2f9-107">[生産管理] > [設定] > [リーン生産フロー] > [バリュー ストリーム] に移動します。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
 
-## <a name="create-a-new-value-stream"></a><span data-ttu-id="fd7e7-108">新しいバリュー ストリームの作成</span><span class="sxs-lookup"><span data-stu-id="fd7e7-108">Create a new value stream</span></span>
-1. <span data-ttu-id="fd7e7-109">[新規] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-109">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="fd7e7-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-110">In the Name field, type a value.</span></span>
+## <a name="create-a-new-value-stream"></a><span data-ttu-id="8a2f9-108">新しいバリュー ストリームの作成</span><span class="sxs-lookup"><span data-stu-id="8a2f9-108">Create a new value stream</span></span>
+1. <span data-ttu-id="8a2f9-109">[新規] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-109">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="8a2f9-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-110">In the Name field, type a value.</span></span>
 
-## <a name="select-a-value-stream-manager"></a><span data-ttu-id="fd7e7-111">バリュー ストリーム マネージャーの選択</span><span class="sxs-lookup"><span data-stu-id="fd7e7-111">Select a value stream manager</span></span>
-1. <span data-ttu-id="fd7e7-112">[マネージャー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="fd7e7-113">バリュー ストリームのマネージャーは組織をドキュメント化するために定義されます。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-113">The value stream manager is defined to document the organization.</span></span>  
-2. <span data-ttu-id="fd7e7-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-114">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="fd7e7-115">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-115">In the list, click the link in the selected row.</span></span>
+## <a name="select-a-value-stream-manager"></a><span data-ttu-id="8a2f9-111">バリュー ストリーム マネージャーの選択</span><span class="sxs-lookup"><span data-stu-id="8a2f9-111">Select a value stream manager</span></span>
+1. <span data-ttu-id="8a2f9-112">[マネージャー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="8a2f9-113">バリュー ストリームのマネージャーは組織をドキュメント化するために定義されます。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-113">The value stream manager is defined to document the organization.</span></span>  
+2. <span data-ttu-id="8a2f9-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-114">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="8a2f9-115">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-115">In the list, click the link in the selected row.</span></span>
 
-## <a name="save-and-close"></a><span data-ttu-id="fd7e7-116">保存して閉じる</span><span class="sxs-lookup"><span data-stu-id="fd7e7-116">Save and close</span></span>
-1. <span data-ttu-id="fd7e7-117">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-117">Click Save.</span></span>
-2. <span data-ttu-id="fd7e7-118">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-118">Close the page.</span></span>
-3. <span data-ttu-id="fd7e7-119">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="fd7e7-119">Refresh the page.</span></span>
+## <a name="save-and-close"></a><span data-ttu-id="8a2f9-116">保存して閉じる</span><span class="sxs-lookup"><span data-stu-id="8a2f9-116">Save and close</span></span>
+1. <span data-ttu-id="8a2f9-117">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-117">Click Save.</span></span>
+2. <span data-ttu-id="8a2f9-118">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-118">Close the page.</span></span>
+3. <span data-ttu-id="8a2f9-119">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="8a2f9-119">Refresh the page.</span></span>
 
