@@ -3,7 +3,7 @@ title: データベース移動 API - 参照 - v1 - 概要
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,17 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: a18ba737ea5ca1eb2abe87847f8cde027b525a39
-ms.sourcegitcommit: b942014958b7f60e15fc7a78c26aed5e175eadde
+ms.openlocfilehash: ea703248cb8ea8af851a1103217359cfc9663443
+ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3166393"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "3949158"
 ---
-# <a name="api-v1-reference-overview"></a><span data-ttu-id="b6f78-103">API v1 参照の概要</span><span class="sxs-lookup"><span data-stu-id="b6f78-103">API v1 reference overview</span></span>
+# <a name="api-v1-reference-overview"></a><span data-ttu-id="23d3c-103">API v1 参照の概要</span><span class="sxs-lookup"><span data-stu-id="23d3c-103">API v1 reference overview</span></span>
 
 [!include [banner](../../../includes/banner.md)]
 
-<span data-ttu-id="b6f78-104">バージョン1 (v1) エンドポイントのデータベース移動 API アプリケーション プログラミング インターフェイス (API) 参照へようこそ。</span><span class="sxs-lookup"><span data-stu-id="b6f78-104">Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint.</span></span> <span data-ttu-id="b6f78-105">v1 エンドポイント (<https://lcsapi.lcs.dynamics.com/databasemovement/v1>) で使用できるリソースは、現在プライベート プレビューの状態にあり、追加のフィードバックを受け取っています。</span><span class="sxs-lookup"><span data-stu-id="b6f78-105">Resources that are available on the v1 endpoint (<https://lcsapi.lcs.dynamics.com/databasemovement/v1>) are currently in private preview status and are receiving additional feedback.</span></span> <span data-ttu-id="b6f78-106">API への更新は、本質的に妨げられる場合があります。</span><span class="sxs-lookup"><span data-stu-id="b6f78-106">Updates to the API might be breaking in nature.</span></span>
+<span data-ttu-id="23d3c-104">バージョン1 (v1) エンドポイントのデータベース移動 API アプリケーション プログラミング インターフェイス (API) 参照へようこそ。</span><span class="sxs-lookup"><span data-stu-id="23d3c-104">Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint.</span></span> <span data-ttu-id="23d3c-105">使用可能な各エンドポイントの詳細を表示するには、左側の目次を使用します。</span><span class="sxs-lookup"><span data-stu-id="23d3c-105">Use the table of contents to the left to view details of each endpoint that is available.</span></span>
 
-## <a name="connect-with-us"></a><span data-ttu-id="b6f78-107">ご連絡いただけます</span><span class="sxs-lookup"><span data-stu-id="b6f78-107">Connect with us</span></span>
 
-<span data-ttu-id="b6f78-108">すべてのフィードバックはプライベート プレビュー プログラムから取得されています。</span><span class="sxs-lookup"><span data-stu-id="b6f78-108">All feedback is being retrieved from the private preview program.</span></span> <span data-ttu-id="b6f78-109">サインアップするには、[プライベート プレビュー アンケートを完了](https://aka.ms/SelfServiceDatabaseMovementPreview) に記入してください。</span><span class="sxs-lookup"><span data-stu-id="b6f78-109">To sign up, [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).</span></span>

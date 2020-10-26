@@ -14,32 +14,32 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: f6e4606deb026394e9f0007ad51703024085f959
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: 58132c65edfa4b17be645deafeab584bafee5402
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270272"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981471"
 ---
-# <a name="creators-in-the-acceptance-test-library"></a><span data-ttu-id="fc758-103">承認テスト ライブラリの作成者</span><span class="sxs-lookup"><span data-stu-id="fc758-103">Creators in the Acceptance test library</span></span>
+# <a name="creators-in-the-acceptance-test-library"></a><span data-ttu-id="75b49-103">承認テスト ライブラリの作成者</span><span class="sxs-lookup"><span data-stu-id="75b49-103">Creators in the Acceptance test library</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fc758-104">作成者クラスは、テスト データの作成に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。</span><span class="sxs-lookup"><span data-stu-id="fc758-104">Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.</span></span>
+<span data-ttu-id="75b49-104">作成者クラスは、テスト データの作成に使用される Fluent アプリケーション プログラミング インターフェイス (API) を提供します。</span><span class="sxs-lookup"><span data-stu-id="75b49-104">Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.</span></span>
 
-## <a name="naming-convention"></a><span data-ttu-id="fc758-105">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="fc758-105">Naming convention</span></span>
+## <a name="naming-convention"></a><span data-ttu-id="75b49-105">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="75b49-105">Naming convention</span></span>
 
 `AtlCreator<ModuleName><EntityName>`
 
-<span data-ttu-id="fc758-106">この命名規則で:</span><span class="sxs-lookup"><span data-stu-id="fc758-106">In this naming convention:</span></span>
+<span data-ttu-id="75b49-106">この命名規則で:</span><span class="sxs-lookup"><span data-stu-id="75b49-106">In this naming convention:</span></span>
 
-+ <span data-ttu-id="fc758-107">`<ModuleName>` はオプションで、メイン メニューのモジュール名に基づいています。</span><span class="sxs-lookup"><span data-stu-id="fc758-107">`<ModuleName>` is optional and is based on the names of the modules on the main menu.</span></span> <span data-ttu-id="fc758-108">短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fc758-108">You should use a short version or an abbreviation to support brevity of test code.</span></span>
-+ <span data-ttu-id="fc758-109">`<EntityName>` はオプションであり、コマンドが異なる種類のエンティティに適用される場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="fc758-109">`<EntityName>` is optional and is used when the command applies to different types of entities.</span></span>
++ <span data-ttu-id="75b49-107">`<ModuleName>` はオプションで、メイン メニューのモジュール名に基づいています。</span><span class="sxs-lookup"><span data-stu-id="75b49-107">`<ModuleName>` is optional and is based on the names of the modules on the main menu.</span></span> <span data-ttu-id="75b49-108">短いテスト コードをサポートするために、短いバージョンまたは省略形を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="75b49-108">You should use a short version or an abbreviation to support brevity of test code.</span></span>
++ <span data-ttu-id="75b49-109">`<EntityName>` はオプションであり、コマンドが異なる種類のエンティティに適用される場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="75b49-109">`<EntityName>` is optional and is used when the command applies to different types of entities.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fc758-110">例</span><span class="sxs-lookup"><span data-stu-id="fc758-110">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="75b49-110">例</span><span class="sxs-lookup"><span data-stu-id="75b49-110">Examples</span></span>
 
 ```xpp
 AtlCreatorCostGroup
@@ -47,17 +47,17 @@ AtlCreatorCostGroup
 AtlCreatorCustomer
 ```
 
-## <a name="fluent-setter-methods"></a><span data-ttu-id="fc758-111">Fluent セッター メソッド</span><span class="sxs-lookup"><span data-stu-id="fc758-111">Fluent setter methods</span></span>
+## <a name="fluent-setter-methods"></a><span data-ttu-id="75b49-111">Fluent セッター メソッド</span><span class="sxs-lookup"><span data-stu-id="75b49-111">Fluent setter methods</span></span>
 
-<span data-ttu-id="fc758-112">作成者クラスは、構築中のエンティティのプロパティの設定に使用する Fluent セッター メソッドを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fc758-112">Creator classes should provide fluent setter methods that are used to set the properties of the entity that is being constructed.</span></span>
+<span data-ttu-id="75b49-112">作成者クラスは、構築中のエンティティのプロパティの設定に使用する Fluent セッター メソッドを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="75b49-112">Creator classes should provide fluent setter methods that are used to set the properties of the entity that is being constructed.</span></span>
 
-### <a name="naming-convention"></a><span data-ttu-id="fc758-113">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="fc758-113">Naming convention</span></span>
+### <a name="naming-convention"></a><span data-ttu-id="75b49-113">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="75b49-113">Naming convention</span></span>
 
 `set<EntityPropertyName>`
 
-<span data-ttu-id="fc758-114">この命名規則では、`<EntityPropertyName>` は Fluent メソッドを使用してエンティティに設定されるプロパティ名です。</span><span class="sxs-lookup"><span data-stu-id="fc758-114">In this naming convention, `<EntityPropertyName>` is the name of the property that is being set for the entity by using the fluent method.</span></span>
+<span data-ttu-id="75b49-114">この命名規則では、`<EntityPropertyName>` は Fluent メソッドを使用してエンティティに設定されるプロパティ名です。</span><span class="sxs-lookup"><span data-stu-id="75b49-114">In this naming convention, `<EntityPropertyName>` is the name of the property that is being set for the entity by using the fluent method.</span></span>
 
-### <a name="example"></a><span data-ttu-id="fc758-115">例</span><span class="sxs-lookup"><span data-stu-id="fc758-115">Example</span></span>
+### <a name="example"></a><span data-ttu-id="75b49-115">例</span><span class="sxs-lookup"><span data-stu-id="75b49-115">Example</span></span>
 
 ```xpp
 item = new AtlCreatorProductsReleasedVariant()
@@ -69,6 +69,6 @@ item = new AtlCreatorProductsReleasedVariant()
     .create();
 ```
 
-## <a name="when-should-creators-be-used-instead-of-entities"></a><span data-ttu-id="fc758-116">エンティティの代わりに作成者を使用するのはいつですか。</span><span class="sxs-lookup"><span data-stu-id="fc758-116">When should creators be used instead of entities?</span></span>
+## <a name="when-should-creators-be-used-instead-of-entities"></a><span data-ttu-id="75b49-116">エンティティの代わりに作成者を使用するのはいつですか。</span><span class="sxs-lookup"><span data-stu-id="75b49-116">When should creators be used instead of entities?</span></span>
 
-<span data-ttu-id="fc758-117">エンティティと作成者を選択するのに役立つ情報は、[エンティティまたは作成者クラスを実装する必要があるか](atl-faq.md#should-i-implement-an-entity-or-a-creator-class) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc758-117">For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).</span></span>
+<span data-ttu-id="75b49-117">エンティティと作成者を選択するのに役立つ情報は、[エンティティまたは作成者クラスを実装する必要があるか](atl-faq.md#should-i-implement-an-entity-or-a-creator-class) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="75b49-117">For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).</span></span>
