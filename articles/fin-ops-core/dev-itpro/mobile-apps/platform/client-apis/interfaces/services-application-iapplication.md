@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 66406c2cafa468f34eb5b92650effd9613a7cc2c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b6f75076a6e263542542d05df72eb367c245f8a7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191867"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983965"
 ---
 # <a name="application-type"></a>アプリケーション タイプ
 

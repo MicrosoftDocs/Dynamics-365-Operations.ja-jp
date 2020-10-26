@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6814cb4dbece96a86fd9ded06ffff5c320e0763f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23c064921c00bd381b39301c623925a42d38de5b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183144"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980570"
 ---
 # <a name="metadataservice-type"></a>MetadataService タイプ
 
@@ -257,7 +257,7 @@ var newCustomerTaskMetadata = metadataService.findTask("New-customer");
 | ---- | ---- | ----------- |
 | actionName|string|アクション名|
 
-#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
+#### <a name="returns-pagemetadata"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
 
 
 
@@ -283,7 +283,7 @@ var firstNameControl = metadataService.findControl(newCustomerTaskMetadata, 'FMC
 | componentMetadata|any|ページまたはアクションのメタデータ インスタンス|
 | controlName|string|コントロール名|
 
-#### <a name="returns-controlmetadataview-model-control-basecontrol-icontrol-icontrolmetadatamd"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
+#### <a name="returns-controlmetadata"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
 
 
 
@@ -308,7 +308,7 @@ var reservationDetailsMetadata = metadataService.findPage("Reservation-details")
 | ---- | ---- | ----------- |
 | pageName|string|ページ名|
 
-#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
+#### <a name="returns-pagemetadata"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
 
 
 
@@ -356,7 +356,7 @@ getFormReference(componentName: string, filterContext: DataFilter, excludeContex
 | excludeContext|ブール値||
 | filterLocalOnly?|ブール値||
 
-#### <a name="returns-navigationargsview-model-ipage-inavigationargsmd"></a>[NavigationArgs](view-model-ipage-inavigationargs.md) を返します
+#### <a name="returns-navigationargs"></a>[NavigationArgs](view-model-ipage-inavigationargs.md) を返します
 
 
 

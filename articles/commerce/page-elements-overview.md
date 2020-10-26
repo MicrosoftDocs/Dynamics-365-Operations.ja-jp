@@ -3,7 +3,7 @@ title: ページ モデルの用語集
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトのページで使用されるさまざまな要素について説明します。
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da41440581ad952540c7dcf3caa5e23582198a36
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 5c772a19958ebf0687d09af4c3055c733d99d750
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025997"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973912"
 ---
 # <a name="page-model-glossary"></a>ページ モデルの用語集
 
@@ -53,7 +53,9 @@ ms.locfileid: "3025997"
 
 [ドキュメントの状態とライフサイクル](document-states-overview.md)
 
-[公開グループで動作](publish-groups.md)
+[公開グループの作業](publish-groups.md)
+
+[クロスチャネル共有の有効化と使用](cross-channel-sharing.md)
 
 [モジュールで動作](work-with-modules.md)
 

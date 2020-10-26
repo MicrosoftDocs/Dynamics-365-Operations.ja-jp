@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5b3534f3040fcf2bf63efc782922edb09303eeee
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b602b242f4ce95be88286e6f2b1d4d7dfea77df8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144920"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980400"
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange"></a>裏書済受取手形の取消
 

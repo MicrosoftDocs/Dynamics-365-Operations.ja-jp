@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428596"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3969025"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
 
@@ -56,7 +56,9 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 
 8. **選択したロールにアクセスを制限**で、アクセスを制限するかどうかを選択します。 次に、**この休暇タイプに対するセキュリティ ロール**でセキュリティ ロールを選択します。 セキュリティ ロールは、この手順のはじめで説明した**ワークフロー ID** で選択したワークフローで定義されています。
 
-9. **保留関係** で、この休暇タイプで別の休暇タイプを保留にするか、別の休暇タイプで保留にするかを選択します。 保留中の休暇タイプで休暇申請を行うと、保留済み休暇タイプに対して休暇の停止が自動的に作成されます。 
+9. **カレンダーの色**で、この休暇タイプの休暇と欠勤カレンダーに表示する色を選択します。 
+
+10. **保留関係** で、この休暇タイプで別の休暇タイプを保留にするか、別の休暇タイプで保留にするかを選択します。 保留中の休暇タイプで休暇申請を行うと、保留済み休暇タイプに対して休暇の停止が自動的に作成されます。 
 
 10. **保存** を選択します。
 

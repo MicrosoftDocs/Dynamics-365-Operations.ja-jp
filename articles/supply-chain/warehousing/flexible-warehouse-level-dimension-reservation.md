@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652182"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970706"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>変動倉庫レベルの分析引当ポリシー
 
@@ -233,6 +233,9 @@ ms.locfileid: "3652182"
 ![[ライセンス プレートで処理する]オプションが「はい」に設定されているモバイル デバイスのメニュー項目](media/Handle-by-LP-menu-item.png)
 
 **ライセンス プレートで処理する**機能では複数のパレットを対象とする作業に対応していないため、ライセンス プレートごとに別の作業項目を用意することをお勧めします。 この方法を使用するには、**作業テンプレート**ページの作業ヘッダーの区切りに、**注文がコミットされたライセンス プレートの ID** のフィールドを追加します。
+
+> [!NOTE]
+> 注文がコミットされた作業作成プロセスでは、"注文がコミットされた在庫分析コード" 値はピッキング作業明細行に割り当てられ、ライセンス プレート値を直接表示することはできません。 モバイル デバイスのメニュー項目を設定する場合は、*ユーザー主導*プロセスのみがサポートされます。
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>シナリオ例 : 注文をコミットしてライセンス プレートの引当を設定して処理する
 

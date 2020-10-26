@@ -3,7 +3,7 @@ title: コンテンツを追加する方法
 description: このトピックでは、Microsoft Dynamics 365 Commerceサイト ビルダーの Web 作成ツール セットを使用してコンテンツを管理するための場所と方法の概要と選択リンクを示します。
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 916e28c2628613332246d19af0fae81f258404b0
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025736"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973983"
 ---
 # <a name="ways-to-add-content"></a>コンテンツを追加する方法
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,6 +50,10 @@ ms.locfileid: "3025736"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[ページ概要の作成](authoring-home-overview.md)
+[作成ページの概要](authoring-home-overview.md)
+
+[ページ モデルの用語集](page-elements-overview.md)
 
 [ドキュメントの状態とライフサイクル](document-states-overview.md)
+
+[クロスチャネル共有の有効化と使用](cross-channel-sharing.md)

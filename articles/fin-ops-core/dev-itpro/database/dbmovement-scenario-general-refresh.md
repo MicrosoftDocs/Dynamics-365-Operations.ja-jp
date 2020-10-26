@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6bc41d6d17fce5ec212cb65a09afbc4a4180b4c2
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e5f778cd713c968028d8496f6ad7c238d2cf6a9
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772349"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982781"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 

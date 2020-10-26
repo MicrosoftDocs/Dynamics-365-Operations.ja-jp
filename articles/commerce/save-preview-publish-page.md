@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269984"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961613"
 ---
 # <a name="save-preview-and-publish-a-page"></a>ページの保存、プレビュー、および公開
 
@@ -38,9 +38,9 @@ ms.locfileid: "3269984"
 
 ## <a name="preview-a-page"></a>ページのプレビュー
 
-作成ツールは 2 種類のプレビュー機能を提供します。ページ エディターの「What You See Is What You Get」 (WYSIWYG) プレビュー ウィンドウおよび別のプレビュー ウィンドウです。
+作成ツールは、2 種類のプレビュー機能を提供します。ページ エディターの「What You See Is What You Get」 (WYSIWYG) プレビュー ウィンドウであるビジュアル ページ ビルダーと個別のプレビュー ウィンドウです。
 
-ページ エディターの使用中は、中央のウィンドウに「What You See Is What You Get」 (WYSIWYG) プレビューが表示されます。 このプレビューは、ページを保存するたびに自動的に更新されます。 コマンド バーの**更新**を選択して、手動で更新することもできます。 WYSIWYG プレビューは、サイト ユーザーに表示されるようにページを表示しますが、作成ヘルパーはその上部に表示されます。
+ページ エディターの使用中は、中央のウィンドウに「What You See Is What You Get」 (WYSIWYG) プレビューが表示されます。 このプレビューは、ページを保存するたびに自動的に更新されます。 コマンド バーの**更新**を選択して、手動で更新することもできます。 プレビューでは、サイト ユーザーに表示されるようにページを表示しますが、作成ヘルパーはその上部に表示されます。
 
 ページの修正が完了したら、プレビューにより顧客に表示される内容を確認することをお勧めします。 ページをプレビューするには、コマンド バーの**プレビュー**を選択します。 プレビューは別のブラウザー ウィンドウに表示されます。 プレビュー ウィンドウのページは、サイト ユーザーに表示されるように表示します。 ウィンドウ サイズを変更して、応答可能なモジュールがすべてのビュー ポートに正しく表示されるようにできます。
 

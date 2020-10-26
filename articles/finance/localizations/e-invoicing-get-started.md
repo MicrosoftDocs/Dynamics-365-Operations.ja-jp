@@ -3,7 +3,7 @@ title: 電子請求書のアドオンの使用を開始する
 description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求のアドオンを使い始める際に役立つ情報を提供します。
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835990"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971475"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>電子請求書のアドオンの使用を開始する
 
@@ -62,7 +62,7 @@ ms.locfileid: "3835990"
 このトピックに記載のタスクを完了する前に、以下の前提条件を完了する必要があります :
 
 - LCS アカウントへのアクセス権。
-- 財務または Supply Chain Management のバージョン 10.0.12 またはそれ以降が含まれている LCS のデプロイ プロジェクト。
+- 財務または Supply Chain Management のバージョン 10.0.13 またはそれ以降が含まれている LCS のデプロイ プロジェクト。
 - RCS アカウントへのアクセス権。
 - **機能管理**モジュールを使用して、RCS アカウントのグローバル化機能を有効にする。 詳細 : [Regulatory Configuration Services (RCS) - グローバリゼーション機能](rcs-globalization-feature.md)
 - Azure ストレージ アカウントとキー コンテナー リソースの作成。 詳細については、[ストレージ アカウントとキー コンテナー リソースの作成](e-invoicing-create-azure-storage-account-key-vault.md) を参照してください。
@@ -85,16 +85,18 @@ ms.locfileid: "3835990"
 ## <a name="lcs-setup"></a>LCS の設定
 
 1. LCS アカウントにサインインします。
-2. LCS のデプロイ プロジェクトを選択します。 プロジェクトを選択するには、プロジェクトが実行中である必要があります。
-3. **環境アドイン** クイックタブで、**新しいアドインのインストール**を選択します。
-4. **ビジネス ドキュメントの提出** を選択します。
-5. **設定アドイン** ダイアログ ボックスの  **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。
-6. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントの ID を入力します。
+2. **プレビュー機能管理**タイルを選択し、**パブリック プレビュー機能**フィールド グループで、**BusinessDocumentSubmission** を選択します。
+3. **プレビュー機能の有効**フィールドをマークします。
+4. LCS のデプロイ プロジェクトを選択します。 プロジェクトを選択するには、プロジェクトが実行中である必要があります。
+5. **環境アドイン** クイックタブで、**新しいアドインのインストール**を選択します。
+6. **ビジネス ドキュメントの提出** を選択します。
+7. **設定アドイン** ダイアログ ボックスの  **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。
+8. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントの ID を入力します。
 
     ![LCS の設定アドイン ダイアログボックス](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. 条件に同意するには、このチェック ボックスをオンにします。
-8. **インストール**を選択します。
+9. 条件に同意するには、このチェック ボックスをオンにします。
+10. **インストール**を選択します。
 
 ## <a name="rcs-setup"></a>RCS の設定
 
@@ -124,7 +126,7 @@ RCS の設定を行う際には、次の作業を実行します :
 
     ![キー コンテナー URI のフィールド](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. **証明書** クイックタブで、**追加**を選択し、デジタル証明書名とキー コンテナーの資格情報のシークレットを入力します。 この両方の値は Azure のキー コンテナー リソースに構成されています。
+7. **認定資格証**クイックタブで**追加**を選び、信頼できる接続を確立するために必要なすべてのデジタル証明書名とキー コンテナー シークレットを入力します。 **タイプ**列で、証明書またはシークレットのいずれであるかを指定できます。 この両方の値は Azure のキー コンテナー リソースに構成されています。
 
     ![証明書の追加](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ RCS の設定を行う際には、次の作業を実行します :
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>電子請求書のアドオン サーバーと RCS 連携を設定する
 
-1. **グローバル機能**ワークスペースの**関連するリンク**セクションで、**電子申告パラメーター**のリンクを選択します。
+1. **関連する設定**セクションの**グローバリゼーション**ワークスペースで、**電子申告パラメーター**リンクを選択します。
 2. **ここをクリックして Lifecycle Service に接続する** を選択してください。 LCS に接続しない場合は、**キャンセル** を選択します。
-3. **電子請求のアドオン** タブの **サービス エンドポイント URI** フィールドに、`https://businessdocumentsubmission.us.operations365.dynamics.com/` を入力します。
+3. **サービス エンドポイント URI** フィールドの**電子請求サービス**タブで、使用可能な地域に応じた値を入力します: `https://businessdocumentsubmission.us.operations365.dynamics.com/` または `https://businessdocumentsubmission.eu.operations365.dynamics.com/`。
 4. **アプリケーション ID** フィールドに ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2** が表示されていることを確認します。 この値は固定値です。
 5. **LCS 環境 ID** フィールドに、LCS のサブスクリプション アカウントの ID を入力します。
 

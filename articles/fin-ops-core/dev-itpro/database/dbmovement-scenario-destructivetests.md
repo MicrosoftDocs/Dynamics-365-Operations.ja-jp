@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1dd714c2fcdab0d1f90d63f71068fcfdeb6f7fe0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1b8f3252e97a961165094d277a62d42c9d38140e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183461"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981624"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 

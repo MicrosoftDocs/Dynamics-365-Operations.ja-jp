@@ -3,25 +3,25 @@ title: ノルウェーのキャッシュ レジスタの配置ガイドライン
 description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
 author: AlexChern0v
 manager: olegkl
-ms.date: 07/08/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Norway
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: abbe8d81308bff8f3e0d2563e834af7b3c1723c8
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 34bd4c3626e6d1b6f5c52889256bf12e44cd4760
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057575"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983881"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -38,6 +38,30 @@ ms.locfileid: "3057575"
 
 > [!NOTE]
 > 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+
+### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
+
+Commerce バージョン 10.0.15 では、Key Vault または本社が使用できない場合に、オフラインにするためのフェールオーバーをサポートする[小売店舗のユーザー定義の証明書プロファイル](./certificate-profiles-for-retail-stores.md) を使用できます。 この機能は、[小売チャンネルのシークレットを管理 ](../dev-itpro/manage-secrets.md) を拡張ます。
+
+CRT でこの機能を適用するには、次の手順を実行します。
+
+1. 新しい CRT 拡張機能プロジェクトを作成します (C# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (RetailSDK\SampleExtensions\CommerceRuntime)。
+
+2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
+
+3. シークレット呼び出しを読み取るには、プロファイスされたパラメータのあるコンストラクターを使用し、GetUserDefinedSecretCertificateServiceRequest を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+    
+    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);  GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+    
+    X509Certificate2 証明書 = getUserDefinedSecretCertificateServiceResponse.Certificate;
+    
+4. 証明書が取得されたら、データ署名に進みます。
+
+5. CRT 拡張機能プロジェクトを作成します。
+
+6. 出力クラス ライブラリをコピーし、手動テスト用の ...\RetailServer\webroot\bin\Ext に貼り付けます。
+
+7. CommerceRuntime.Ext.config ファイルで、カスタム ライブラリ情報で拡張機能の合成セクションを更新します。
 
 ## <a name="development-environment"></a>開発環境
 

@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: aefa6cb362a5eae9f52e3b83cab806261ae655ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9d907def91decc992e07f24f90e79fd0c2c71367
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183130"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980566"
 ---
 # <a name="listmetadata-type"></a>ListMetadata タイプ
 
@@ -279,7 +279,7 @@ navigationHandler(row: [Row](view-model-control-list-ilist-irow.md)): Promise &l
 | ---- | ---- | ----------- |
 |  行 |[Row](view-model-control-list-ilist-irow.md)|ナビゲーション ハンドラーを取得する行。|
 
-#### <a name="returns-promise-ltanygt-124-navigationargsview-model-ipage-inavigationargsmd"></a>Promise &lt;any&gt; &#124; [NavigationArgs](view-model-ipage-inavigationargs.md) を返します
+#### <a name="returns-promise-ltanygt-124-navigationargs"></a>Promise &lt;any&gt; &#124; [NavigationArgs](view-model-ipage-inavigationargs.md) を返します
 
 
 

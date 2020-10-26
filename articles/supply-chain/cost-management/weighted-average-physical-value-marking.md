@@ -16,15 +16,15 @@ ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f10f75b9ce6038e5e7e1216fa04b0ff8662cc119
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205095"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983053"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>現物価格とマーキングを使用した加重平均
 
@@ -183,7 +183,7 @@ ms.locfileid: "3205095"
 ## <a name="weighted-average-with-marking"></a>マーキングを使用した加重平均
 マーキングの処理を使用することで、払出トランザクションを入庫トランザクションにリンクまたはマークできます。 マーキングは、トランザクションが転記される前でも後でも可能です。 トランザクションを転記するとき、または在庫原価計算を実行するときに、在庫の原価を正確にする必要がある場合は、マーキングを使用できます。 
 
-たとえば、顧客サービス部門が重要な顧客から急ぎの注文を受けたとします。 急ぎの注文なので、顧客の要求を満たすには、その品目に対する支払を高くする必要があります。 この販売注文請求書の利ざやつまり売却済商品の原価 (COGS) に在庫品目の原価が確実に反映されるようにする必要があります。 
+たとえば、顧客サービス部門が重要な顧客から急ぎの注文を受けたとします。 急ぎの注文なので、顧客の要求を満たすには、その品目に対する支払を高くする必要があります。 在庫品目の原価が、この販売注文請求書のマージン、または売却済商品の原価 (COGS) に確実に反映されるようにする必要があります。 
 
 発注書を転記するとき、在庫は USD 120.00 の原価で入庫されます。 たとえば、この販売注文ドキュメントは、梱包明細または請求書を転記する前に発注書に対してマークされます。 その場合、COGS は品目の現在の移動平均原価ではなく USD 120.00 になります。 マーキングが発生する前に販売注文梱包明細または請求書が転記されると、COGS は移動平均原価価格で転記されます。 
 

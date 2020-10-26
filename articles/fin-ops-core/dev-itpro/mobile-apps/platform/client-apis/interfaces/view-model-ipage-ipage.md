@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 125f50db9d266bf7a0e6958a4fe4db544a50dc99
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c1c3e1efd4970831a4f7d36d7a7d79c86b1ecc1d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191841"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982379"
 ---
 # <a name="page-type"></a>ページのタイプ
 
@@ -213,7 +213,7 @@ getAction(actionName: string): [PageLink](view-model-control-pagelink-ipagelink-
 | ---- | ---- | ----------- |
 | actionName|string||
 
-#### <a name="returns-pagelinkview-model-control-pagelink-ipagelink-ipagelinkmd"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) を返します
+#### <a name="returns-pagelink"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) を返します
 
 
 
@@ -225,7 +225,7 @@ getActions(): [PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ]
 すべてのページ アクションを取得します。
 これらには、アクション シート/メニュー内のアクションが含まれます。
 
-#### <a name="returns-pagelinkview-model-control-pagelink-ipagelink-ipagelinkmd--"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ] を返します
+#### <a name="returns-pagelink--"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ] を返します
 
 
 
@@ -244,7 +244,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -255,7 +255,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 ページに関連付けられているデザイン オブジェクトを取得します。
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -310,7 +310,7 @@ submit(): Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md
 
 アクションを送信します。
 
-#### <a name="returns-promise-ltcompleteeventargsview-model-ipage-icompleteeventargsmdgt"></a>Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md)&gt; を返します
+#### <a name="returns-promise-ltcompleteeventargsgt"></a>Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md)&gt; を返します
 
 
 

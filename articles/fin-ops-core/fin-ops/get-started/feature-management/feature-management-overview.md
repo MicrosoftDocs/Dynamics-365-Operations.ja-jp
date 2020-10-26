@@ -3,7 +3,7 @@ title: 機能管理の概要
 description: このトピックでは、機能管理の機能および使用方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499622"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967337"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -179,3 +179,24 @@ ms.locfileid: "3499622"
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>顧客が知らないうちに機能がフライト オフになることはありますか? 
 はい、機能が機能的に影響がない環境の機能に影響を与える場合は、既定で有効にすることができます。
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>コードで機能の有効化をどのように確認することができますか?
+**FeatureStateProvider** クラスの **isFeatureEnabled** メソッドを使用して、機能クラスのインスタンスを渡します。 例: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>メタデータで機能の有効化をどのように確認することができますか?
+**FeatureClass** プロパティを使用して、一部のメタデータが機能に関連付けられていることを示すことができます。 **BatchContentionPreventionFeature** など、機能に使用されるクラス名を使用する必要があります。 このメタデータは、その機能でのみ表示されます。 **FeatureClass** プロパティは、メニュー、メニュー項目、列挙値、およびテーブル/ビュー フィールドで使用できます。
+
+### <a name="what-is-a-feature-class"></a>機能クラスとは?
+機能管理の機能は、*機能クラス*として定義されます。 機能クラスは、**IFeatureMetadata** を実装し、機能クラス属性を使用して機能管理ワークスペースに対して識別します。 **FeatureStateProvider** API を使用したコード、および **FeatureClass** プロパティを使用したメタデータで有効化を確認できる、使用可能な機能クラスの例は数多くあります。 例: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>いくつかの機能クラスによって実装されている IFeatureLifecycle とは何ですか?
+IFeatureLifecycle は、機能ライフサイクル ステージを示すための Microsoft 社内のメカニズムです。 機能は次のとおりです。
+- PrivatePreview - フライトが表示される必要があります。
+- PublicPreview - 既定で表示されますが、機能がプレビュー中であるという警告が表示されます。
+- リリース済 - 完全にリリースされました。
+

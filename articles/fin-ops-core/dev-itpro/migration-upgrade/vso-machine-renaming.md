@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ddc2b3a5429b49c47857f0c1e9fd16ed7637811e
-ms.sourcegitcommit: 440b0a446f2c65135fde1be122ac714ba30ed71b
+ms.openlocfilehash: e059b8d5684bca4805e53ea8bb6ea1e3d2beea4d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686227"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979712"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 

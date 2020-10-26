@@ -3,7 +3,7 @@ title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/06/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,20 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04b39469ccf4f088bb33bdfc73ce40eece6f5f2e
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887267"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973479"
 ---
-# <a name="get-started-with-planning-optimization"></a>計画の最適化の使用を開始する
+# <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
 [!include [banner](../../includes/banner.md)]
 
-現時点では、計画の最適化機能では、Microsoft Dynamics 365 Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 既定では、Dynamics Lifecycle Services (LCS) で、計画の最適化機能は有効になっていません。 したがって、オンにする前に評価を行う機会があります。
+[すでに発表した](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) ように、計画の最適化は、既存の組み込みマスター プラン エンジンと置き換えるようにスケジュールされています。
 
-最終的に、既存の組み込み Supply Chain Management 計画エンジンは、計画の最適化によって置き換えられます。
+現在、組み込みのマスター プラン エンジンを使用している場合は、すぐに計画の最適化への移行の計画を開始する必要があります。 廃止が適用されると操作が影響を受ける可能性があるため、移行プロセスをすぐに開始することが重要です。 廃止が実施された場合に、最新の問題を回避するために、2020 年 12 月 1 日までに移行を完了することを強くお勧めします。 
+
+現時点では、計画の最適化機能では、Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 現在、計画の最適化機能は Dynamics Lifecycle Services (LCS) で既定では有効になっていないため、機能を有効にする前に評価を行う機会があります。
+
+> [!NOTE]
+> マスター プラン プロセスに製造が含まれていない (マスター プランで生成された計画製造オーダー) 場合や、バージョン 10.0.15 以降の組み込みマスター プラン エンジンが必要な場合は、移行から計画の最適化に例外を要求する必要があります。 バージョン 10.0.16 以降、計画製造オーダーを生成せずに組み込みマスター プランを実行すると、環境にエラーが表示されます。 計画製造オーダーは、マスター プラン中に計画製造オーダーを生成しないすべての新しい配置に対して使用する必要があります。 計画製造オーダーを生成せずに組み込みマスター プラン エンジンを実行している既存の環境の所有者は、例外プロセスに関する詳細を含むメールを受信します。 パートナーと協力して、計画の最適化への移行を評価および計画することをお勧めします。
 
 計画の最適化を有効にする前に、計画の最適化フィット分析の結果を評価することを強くお勧めします。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
 
