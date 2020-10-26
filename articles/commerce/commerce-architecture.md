@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce アーキテクチャの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
 author: samjarawan
 manager: AnnBe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: fb0a1b0d1f220d78ada2a587f18889399dc96f8f
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: ad659159793ee9664fd89ccf7678c554a68f09a8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527456"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961672"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -76,7 +76,7 @@ e コマース ウェブストアは、顧客向けの web サイト レンダ�
 
 #### <a name="site-builder"></a>サイト ビルダー
 
-サイト ビルダーは、コンテンツ管理および店舗内の Web サイト レンダリング システムに web ベースのオーサリング インタフェースとして使用されます。 これによって、e コマースのエクスペリエンスに関するマーケティング コンテンツの管理と提出に関する日常的なワークフロー タスクを実行する、サイト管理者とコンテンツ制作者のための、[目的に適したコンテンツ (WYSIWYG)] エディターを提供します。 サイト ビルダーでは、特定の製品に対してより多くのマーケティング詳細を提供し、顧客に対する買い物の利便性を高めることができます。 さらに、サイト ビルダーには、アクセシビリティ レポート、URL管理、サイトマップ生成、画像の焦点管理などの機能が統合されています。 詳細については、[オンライン ストアの概要](https://docs.microsoft.com/dynamics365/commerce/online-store-overview) を参照してください。
+サイト ビルダーは、コンテンツ管理および店舗内の Web サイト レンダリング システムに web ベースのオーサリング インタフェースとして使用されます。 e コマースのエクスペリエンスに関するマーケティング コンテンツの管理と作成を、日常的なワークフロー タスクとして実行するサイト管理者とコンテンツ制作者のために、サイト ビルダーのビジュアル ページ ビルダーは、目的に適したコンテンツ (WYSIWYG) エディターを提供します。 サイト ビルダーでは、特定の製品に対してより多くのマーケティング詳細を提供し、顧客に対する買い物の利便性を高めることができます。 さらに、サイト ビルダーには、アクセシビリティ レポート、URL管理、サイトマップ生成、画像の焦点管理などの機能が統合されています。 詳細については、[オンライン ストアの概要](https://docs.microsoft.com/dynamics365/commerce/online-store-overview) を参照してください。
 
 #### <a name="external-services-and-apps"></a>外部サービスとアプリ
 
@@ -126,7 +126,7 @@ Commerce Scale Unit をエッジ コンピューティングにすることに�
 
 #### <a name="web-storefront"></a>ウェブストア
 
-CMS では、自身のページを一連のモジュールとして格納しています。 ウェブストアの Web サーバーは、これらモジュールをレンダリングされた HTML ページにまとめます。 ウェブストアは、レンダリング プラットフォーム、コマース データ プロキシ、機能拡張層で構成されています。 これらのコンポーネントは、Web ベースのコマース体験を実現するモジュールのセット、Dynamics 365 Commerceスターターキットによって補完されるベースを形成しています。 初期スターターキットは、各業務固有の要件に合わせて変更することができます。 または、パートナーが開発した拡張機能やモジュールで補完することも可能です。
+CMS では、自身のページを一連のモジュールとして格納しています。 ウェブストアの Web サーバーは、これらモジュールをレンダリングされた HTML ページにまとめます。 ウェブストアは、レンダリング プラットフォーム、コマース データ プロキシ、機能拡張層で構成されています。 これらのコンポーネントは、Web ベースのコマース体験を実現するモジュールのセットである、Dynamics 365 Commerce モジュール ライブラリによって補完されるベースを形成しています。 初期モジュール ライブラリは、各業務固有の要件に合わせて変更することができます。 または、パートナーが開発した拡張機能やモジュールで補完することも可能です。
 
 ### <a name="commerce-surround-services"></a>コマースに関連するサービス
 

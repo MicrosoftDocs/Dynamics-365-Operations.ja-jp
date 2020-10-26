@@ -3,7 +3,7 @@ title: サービス更新の可用性
 description: このトピックでは、異なるリリース オプションに関する情報を提供します。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 08/25/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 3645821314504cc6cd1e7680611f4e3d95ff2853
-ms.sourcegitcommit: 045be8c2cb065497f3b58c50dff16d7a71aaa876
+ms.openlocfilehash: 33d2e9a1e7b4ffe2e5f8cb18269c645c03dbab80
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "3722261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830731"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 
@@ -77,8 +77,8 @@ https://experience.dynamics.com で Insider プログラムに参加して、PEA
 
 それぞれの新しいリリースは、Dynamics 365 チームによって設計および開発されます。 新しいリリースはまずフィーチャー チームによって検証され、次に Finance and Operations チームによって検証されます。 このとき、広範なテストがさまざまなトポロジで行われます。 互換性チェックでは、下位互換性を確保するためのテストも実行されます。 さらに、 [リリース検証プログラム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) はお客様がご利用いただけます。 このプログラムを使用することにより、データベースおよびベンチマークのために使用され、品質保証の追加レイヤーを提供するオートメーションでテストされるコードなどのコンポーネントを共有できます。
 
-プレビュー アーリー アクセス プログラム (PEAP) は、 [インサイダープログラム](https://experience.dynamics.com/) を通じて参加しているパートナー、顧客、および ISV が利用できます。  PEAPプログラムに参加することで、これからリリースされるサービス更新の試作版をいち早く見て取ることができます。  プレビュー サービス アップデートを通してできることは、機能のカスタマイズの検証、新機能の経験、Microsoftへのフィードバック提供です。  この段階では、サービス更新を開発環境、またはテスト環境に展開する必要があります。  このリリースを運用環境で使用することはできません。 PEAP プログラムに参加するには [インサイダープログラム](https://experience.dynamics.com/) から登録をしてください。 
+プレビュー アーリー アクセス プログラム (PEAP) は、[PEAP 調査](https://aka.ms/PEAP)を通じて参加しているパートナー、顧客、および ISV が利用できます。  PEAPプログラムに参加することで、これからリリースされるサービス更新の試作版をいち早く見て取ることができます。  プレビュー サービス アップデートを通してできることは、機能のカスタマイズの検証、新機能の経験、Microsoftへのフィードバック提供です。  この段階では、サービス更新を開発環境、またはテスト環境に展開する必要があります。  このリリースを運用環境で使用することはできません。 PEAP プログラムに参加するには、[PEAP 調査](https://aka.ms/PEAP)から登録をしてください。 
 
-ファースト リリース プログラムははすべてのお客様に公開されます。 ファースト リリース プログラムに参加したお客様は、本稼働に至るまでのサービスアップデートに携わることのできる最初の選抜グループとなることができます。  Microsoftは、このサービス更新をUATサンド ボックスへと展開し、7日後に更新プログラムを運用環境へと展開します。 このプログラムに参加しているお客様にはさらなる特典として、更新が適用された後の環境の問題発生を監視するマイクロソフトの専任技術者が付きます。 ファースト リリースに参加するには [インサイダー プログラム](https://experience.dynamics.com/) から登録してください。  
+ファースト リリース プログラムははすべてのお客様に公開されます。 ファースト リリース プログラムに参加したお客様は、本稼働に至るまでのサービスアップデートに携わることのできる最初の選抜グループとなることができます。  Microsoftは、このサービス更新をUATサンド ボックスへと展開し、7日後に更新プログラムを運用環境へと展開します。 このプログラムに参加しているお客様にはさらなる特典として、更新が適用された後の環境の問題発生を監視するマイクロソフトの専任技術者が付きます。 ファースト リリースに参加するには、[ファースト リリース調査](https://aka.ms/FirstRelease)から登録してください。  
 
 サービスの更新は多くの場合、LCS のアクション センターを使用して行われます。  サービスの更新が利用可能な場合は、運用環境を含むすべての環境に手動で適用できます。  サービスの更新が指定されたサンド ボックスまたは運用環境に適用されていない場合、Microsoft は LCS プロジェクトの更新の設定に基づいて自動的に更新を適用します。 より詳しい情報は、 [Lifecycle Servicesによるサービスの更新の構成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates) をご確認ください。

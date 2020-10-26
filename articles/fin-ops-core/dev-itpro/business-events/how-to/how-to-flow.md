@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベントと Microsoft Power Automate
 description: このトピックでは、コネクタを使い Microsoft Power Automate で使用可能なビジネス イベントに関する情報を提供します。
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: e9cac025feb9e43a5ded4f398326bd3fdbe3b844
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 572feac8dca997ada6934a53db9a4241f9efd229
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081983"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893347"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントと Microsoft Power Automate
 
@@ -73,7 +73,7 @@ ms.locfileid: "3081983"
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信** アクションを検索し、自分の Office 365 アカウントにログインします。
+13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信**アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 
 14.  メッセージの本文および、必須項目を入力します。
 

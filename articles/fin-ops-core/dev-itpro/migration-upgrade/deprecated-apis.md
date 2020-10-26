@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98b5ad077c479f31486d4c34cca5d5dea232fa69
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf0a1ca28e7ffea717ef61e1bedc832e0c850ae3
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191882"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893181"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 
@@ -65,7 +65,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | フォーム |方法 |isPreloadedInstance |**概要**<br/>Dynamics AX 2012 のプリロードで使用されます。<br/>**減価償却の理由**<br/>プリロードは、クライアントでは適用されません。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
 | フォーム |方法 |lastField nextField nextGroup prevField prevGroup | |
 | フォーム |方法 |ロック <br>lockWindowUpdate <br>unLock |**概要**<br/>これらのメソッドは、一連の UI 更新を実行する際にウィンドウの再描画を防止するために使用されていました。 これらがない場合、それぞれの変更に応答してウィンドウが再描画され、エンド ユーザー エクスペリエンスが悪化してパフォーマンスが低下します。<br/>**減価償却の理由**<br/>これらのメソッドは Windows クライアントに固有のもので、クライアントにとって必要ではなくなりました。<br/>**移行のメモ**<br/>これらの API の発生を削除するためのコード アップグレード ルールが提供されています。 コードからこれらの API への任意の呼び出しを安全に削除することができます。 |
-| フォーム |方法 |print printPreview send |**概要**<br/>Dynamics AX 2012 でフォームの自動レポート生成をオーバーライドするのに使用<br/>**減価償却の理由**<br/>Microsoft Office 365 統合では、クライアントでの強化されたユーザー エクスペリエンスが用意されています。  Dynamics AX クライアント フォームのユーザーは、「エクスポート」機能を使用できます。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
+| フォーム |方法 |print printPreview send |**概要**<br/>Dynamics AX 2012 でフォームの自動レポート生成をオーバーライドするのに使用<br/>**減価償却の理由**<br/>Microsoft 365 統合では、クライアントでの強化されたユーザー エクスペリエンスが用意されています。  Dynamics AX クライアント フォームのユーザーは、「エクスポート」機能を使用できます。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
 | フォーム |方法 |redraw <br>resetStatusBar- <br>BackgroundColor <br>setStatusBar- <br>BackgroundColor <br>sysColorChanged |**概要**<br/>スタイルや色を制御するのに使用します。<br/>**減価償却の理由**<br/>一貫したビジュアルを実現するために API を通じて色を指定する開発者向けの機能を削除します。<br/>**移行のメモ**<br/>API の再振出の発生を削除するためのコード アップグレード ルールが提供されています。 コードからこれらの API の使用を削除します。 |
 | フォーム |方法 |reload | |
 | フォーム |方法 |resetSize |**概要**<br/>このメソッドは、コントロールがフォームの追加/削除によってサイズが変更された場合に使用されました。 それがないと、追加/削除コントロールを含めるように、ウィンドウが適切な大きさにならない場合があります。<br/>**減価償却の理由**<br/>これらのメソッドは Windows クライアントに固有のもので、クライアントにとって必要ではなくなりました。<br/>**移行のメモ**<br/>コードからこれらの API への任意の呼び出しを安全に削除することができます。 |

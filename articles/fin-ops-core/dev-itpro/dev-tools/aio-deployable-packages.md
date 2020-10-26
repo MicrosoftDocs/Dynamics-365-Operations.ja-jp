@@ -3,7 +3,7 @@ title: オールインワン配置可能パッケージ
 description: このトピックでは、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 87838ec8c0183e22687c1169b27887d251026ebd
-ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
+ms.openlocfilehash: c4d5879cbc78f707f3cd527ccb10cf6ac81f2268
+ms.sourcegitcommit: f2c3f9a9d965c7f93cd7a992943244daa72bf1fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "3539922"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3840505"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
@@ -55,6 +55,10 @@ ms.locfileid: "3539922"
 ## <a name="what-if-my-isv-packages-dont-contain-source-code"></a>ISV パッケージにソース コードが含まれていない場合どうなりますか?
 
 ISV はソース コードを共有するかどうかを選択できます。 共有しない場合は、バイナリのみのパッケージを提供します。 このパッケージは、オールインワン配置可能パッケージで簡単に管理できます。 手順については、[ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](manage-runtime-packages.md) を参照してください。
+
+## <a name="how-can-i-deploy-isv-licenses"></a>ISV ライセンスはどのように配置できますか?
+
+ISV はライセンスの配置可能パッケージを送信し、ライセンスを提供または更新することができます。 ただし、セルフサービス環境では、ライセンスはすべてオールインワン配置可能パッケージに含める必要があります。 ビルド パイプラインまたはリリース パイプラインにタスクを追加して、配置可能なパッケージに対して所有するライセンスを追加できます。 詳細については [Azure Pipelines にある配置可能パッケージへのライセンス ファイルの追加](pipeline-add-license-package.md) を参照してください。
 
 ## <a name="why-are-these-packages-important"></a>これらのパッケージはなぜ重要なのですか?
 

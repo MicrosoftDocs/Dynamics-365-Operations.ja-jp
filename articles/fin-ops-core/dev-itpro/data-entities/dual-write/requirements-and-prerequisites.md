@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65de96e026d52e075a95c5ceb0ee9213b99f3cf4
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 474dc7a51d8d48997484f1b11fd91d0d0bc90fb5
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653764"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818636"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -177,7 +177,7 @@ ms.locfileid: "3653764"
     二重の書き込みは今後も拡大し続け、関係者、プロジェクト、手持在庫など、より多くのシナリオをサポートします。 フレームワークは拡張可能で、数回の追加クリックで顧客中心のビジネス データ交換にも対応します。
     
     > [!NOTE]
-    > 二重書き込みウィザードを使用して環境をリンクする場合は、次の手順の一部として **ソリューションの適用** を選択する必要があります。 PowerApps ソリューション セクションでソリューション パッケージが作成されるまでに数分かかる場合があります。 表示されるまで待ってから、次のステップに進みます。
+    > 二重書き込みウィザードを使用して環境をリンクする場合は、次の手順の一部として **ソリューションの適用** を選択する必要があります。 Power Apps ソリューション セクションでソリューション パッケージが作成されるまでに数分かかる場合があります。 表示されるまで待ってから、次のステップに進みます。
 
 8. 見込顧客を現金化 (P2C) するソリューションをインストールします。
 

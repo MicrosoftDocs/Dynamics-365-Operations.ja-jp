@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 6228954d59520b13d0b800a4cfb74e306e2aa183
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 727288bf3062bcfc53bf23693af78efd2ae8d9d3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249146"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982295"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 

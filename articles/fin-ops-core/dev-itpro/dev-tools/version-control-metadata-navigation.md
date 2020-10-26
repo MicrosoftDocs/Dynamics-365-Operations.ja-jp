@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 941276a68b9971b3c6dbd0cd3d16c9c0cd885d55
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: a78121bfa0e975dd8fe8c8b328b2bb5319153873
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621286"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893389"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -41,7 +41,7 @@ ms.locfileid: "3621286"
 1.  Microsoft アカウントでサインインします。
 
     > [!NOTE]
-    > 組織のアカウント (Microsoft Office 365 ドメイン) を使用することも可能です。
+    > 組織のアカウント (Microsoft 365 ドメイン) を使用することもできます。
 
 2.  Azure DevOps アカウントを作成し、アカウントの URL を選択します。 これは、Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL です。 次は、アカウント URLの例です。 
 

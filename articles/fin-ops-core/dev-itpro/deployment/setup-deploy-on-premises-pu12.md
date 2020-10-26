@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 08/05/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 5f173e9cf77848a0e845e84d42e7ade47e00be43
-ms.sourcegitcommit: 1f072d8bd7975671ccc73d02dd828ebf52c6608d
+ms.openlocfilehash: 0844316f5a97faa79e32e91259f77779b51625d5
+ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661089"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "3949234"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -549,7 +549,7 @@ Finance + Operations の展開とサービスは、オンプレミスのロー�
 
 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
 
-グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft Office 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
+グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者がディレクトリのグローバル管理者です。
 
 > [!IMPORTANT]
 > - テナントごとに証明書を正確に **1** 回構成する必要があります。 同じ環境のすべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。
@@ -565,17 +565,24 @@ Finance + Operations の展開とサービスは、オンプレミスのロー�
     
     Install-Module Az
     Import-Module Az
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
     > [!IMPORTANT]
     > 既に AzureRM をインストールしている場合は、PowerShell 5.1 の既存の AzureRM インストールと互換性がない可能性があるのため、削除してください。 詳細については、[Azure PowerShell を AzureRM から Az に移行する](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az) を参照してください。
-  
+
 3. 証明書が登録されていないことをスクリプトが示している場合は、次のコマンドを実行します。
 
     ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
     ```
+
+> [!NOTE]
+> ログイン アカウントに関連付けられた複数のテナントがある場合、コンテキストが正しいテナントに設定されていることを確認するために、テナント ID をパラメーターとして渡すことができます。
+
+> ```powershell
+> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
+> ```
 
 ### <a name="12-set-up-file-storage"></a><a name="setupfile"></a> 12.ファイル ストレージの設定
 
@@ -784,7 +791,9 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     2. ALLOW_SNAPSHOT_ISOLATION ON を設定
     3. 指定したデータベース ファイルとログの設定を設定
     4. サーバー状態の表示を axdbadmin に付与
-    5. サーバー状態の表示を [contoso\svc AXSF$] に付与
+    5. イベント セッション変更の権限を axdbadmin に付与
+    6. サーバー状態の表示を [contoso\svc AXSF$] に付与
+    7. イベント セッションの変更権限を [contoso\svc-AXSF$] に付与
 
 2. データベース ユーザーをリセットするには、次のコマンドを実行します。
 
@@ -981,7 +990,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 2. 新しい展開では、環境のトポロジを選択し、展開を開始するウィザードを完了します。
 
-    ![配置](./media/Deploy.png)
+    ![環境の配置](./media/Deploy.png)
 
 3. 既存のプラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 を展開する場合: 
     - ローカル エージェントを更新します。 詳細については、[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md) を参照してください。
@@ -989,25 +998,25 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
     - [環境を再構成して新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) の手順を実行している間に、プラットフォーム更新 12 を配置します。
 4. LCS は準備フェーズ中に環境の Service Fabric アプリケーション パッケージを組み立てます。 配置を開始するローカル エージェントにメッセージを送信します。 下記のように、**準備中** ステータスが表示されます。
 
-    ![準備中](./media/Preparing.png)
+    ![準備フェーズ](./media/Preparing.png)
 
     以下に示すような環境の詳細ページに移動するには、**完全な詳細**をクリックします。
 
-    ![Details_Preparing](./media/Details_Preparing.png)
+    ![環境の詳細ページ](./media/Details_Preparing.png)
 
 5. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。 表示されているとおりに、配置の開始がしたときに、ステータスは**配置**に変更します。
 
-    ![配置しています](./media/Deploying.png)
+    ![ステータスを展開に変更する](./media/Deploying.png)
 
-    ![Details_Deploying](./media/Details_Deploying.png)
+    ![環境を展開する](./media/Details_Deploying.png)
 
     展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
 
-    ![失敗](./media/Failed.png)
+    ![再構成ボタンが使用可能になる](./media/Failed.png)
 
     再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
 
-    ![配置済み](./media/Deployed.png)
+    ![環境が正常に配置された](./media/Deployed.png)
 
 ### <a name="22-connect-to-your-finance--operations-environment"></a><a name="connect"></a> 22. Finance + Operations 環境への接続
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。

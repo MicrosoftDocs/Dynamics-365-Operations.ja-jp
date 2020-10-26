@@ -1,7 +1,7 @@
 ---
 title: システム診断のインストールと実行
 description: Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。
-author: manalidongre
+author: PeterRFriis
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: AX 2012
 ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
-ms.author: manado
+ms.author: perahlff
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 92a6a47c3d39c23dead7e28f905d871d7a3574c4
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: d72485acf197f79037afec9cc5766846ed2e1c64
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983605"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985233"
 ---
 # <a name="install-and-run-system-diagnostics"></a>システム診断のインストールと実行 
 

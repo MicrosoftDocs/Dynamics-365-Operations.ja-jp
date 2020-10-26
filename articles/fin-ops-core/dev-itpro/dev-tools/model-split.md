@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 26941
 ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 ms.search.region: Global
-ms.author: maertenm
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f14d998b1aab31e12baa71ce706334e20b1d1cb
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 62957ce3d0dc486917256d4527630d5e54964443
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812025"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978196"
 ---
 # <a name="model-split"></a>分割されたモデル
 

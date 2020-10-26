@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: b15cfa38edd1a03472ef14ad67b03aee926e4ad6
-ms.sourcegitcommit: 169b0adc198aec90a30cb862ed36dbb634da2f08
+ms.openlocfilehash: ddfb240a9022490caa833773aa796d35b0948eae
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "3724665"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818312"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -46,7 +46,7 @@ Typescript プロキシを生成する手順と C# プロキシを生成する�
 
 ## <a name="generate-the-typescript-proxy-10011-or-lower-retail-server"></a>Typescript プロキシ (10.0.11 以前) Retail サーバーの生成
 
-Microsoft Dynamics Commerce バージョン 10.0.12 以降を使用している場合は、[新しい Ratail サーバー拡張機能 API を作成する](../retail-server-icontroller-extension.md) で説明している手順に従ってください。
+Microsoft Dynamics Commerce バージョン 10.0.12 以降を使用している場合は、[新しい Ratail サーバー拡張機能 API を作成する](retail-server-icontroller-extension.md) で説明している手順に従ってください。
 
 > [!IMPORTANT]
 > Retail SDK ルート フォルダーから MSBuild を実行して、CommerceProxyGenerator.exe パッケージを復元します。 Visual Studio の開発者コマンド プロンプト、または MSBuild コマンド プロンプトを使用して、参照フォルダー内のすべてのパッケージを復元してから、プロキシを生成します。 この手順を実行しないと、RetailSDK\Reference フォルダーで CommerceProxyGenerator.exe パッケージを利用できません。

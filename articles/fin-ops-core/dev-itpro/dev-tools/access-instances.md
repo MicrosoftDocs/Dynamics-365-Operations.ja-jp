@@ -3,7 +3,7 @@ title: 開発環境の配置とアクセス
 description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6146c8c2997ba58e70c113de0076ff73d7ff43ee
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.openlocfilehash: f5b8f37bf652b331c0e74045fa1b06328e5bccac
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403228"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830767"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -50,9 +50,7 @@ ms.locfileid: "3403228"
     ![LCS Onboard の方法](media/access-instances-5.jpeg)
     
 3. アプリケーションとプラットフォーム バージョンを選択します。
-4. 環境のトポロジを選択します。 クラウドにホストされている環境の使用、または VHD のダウンロードのいずれかを選択することができます。 詳細については、[プレビュー サブスクリプションのサインアップ](sign-up-preview-subscription.md) を参照してください。
-
-    ![環境のトポロジの選択](media/access-instances-2.jpeg)
+4. 環境のトポロジを選択します。 詳細については、[プレビュー サブスクリプションのサインアップ](sign-up-preview-subscription.md) を参照してください。
     
 5. クラウドでホストされている環境を選択した場合は、使用する Azure コネクタを選択します。 **配置** を選択します。
 

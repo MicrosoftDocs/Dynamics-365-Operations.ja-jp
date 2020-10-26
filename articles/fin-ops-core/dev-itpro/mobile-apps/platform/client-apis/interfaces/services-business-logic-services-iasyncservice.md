@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ebb53674cfceec9f9fbc9634a38217153562ed61
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 343d5a721dac476bb47ae7c550774cf7c876e3af
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191865"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983958"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 
@@ -64,5 +64,5 @@ defer &lt;T&gt;(): [Deferred](defer-ideferred.md) &lt;T&gt;
 
 イベント ハンドラー (該当する場合) から回答を返し、非同期でそれらを解決/拒否するために使用できる遅延オブジェクトを作成します。
 
-#### <a name="returns-deferreddefer-ideferredmd-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します
+#### <a name="returns-deferred-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します
 

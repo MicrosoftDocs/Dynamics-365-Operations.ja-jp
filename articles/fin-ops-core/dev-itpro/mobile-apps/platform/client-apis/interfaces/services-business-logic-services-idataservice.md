@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6cc7cffdad7f10d1be49ae408490b0189bbcf799
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e9210c5c35bf3a3d7d99b08af782c47ffa49c632
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191866"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980572"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 
@@ -95,5 +95,5 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 | フィルタ|any||
 | allowedStaleness|数値||
 
-#### <a name="returns-promise-ltpagedataservices-business-logic-services-ipagedatamdgt"></a>Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt; を返します
+#### <a name="returns-promise-ltpagedatagt"></a>Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt; を返します
 

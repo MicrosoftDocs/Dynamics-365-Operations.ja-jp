@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 26
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: dc775358de3dddb9b3c27522d47843b1c2e3d8df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3584ccec8827c36cba8a02ca8c419c8f4b49b404
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772450"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893261"
 ---
 # <a name="business-events-in-financial-period-close"></a>財務期間終了のビジネス イベント
 [!include [banner](../../includes/banner.md)]
@@ -116,7 +116,7 @@ ms.locfileid: "2772450"
 
 ## <a name="conclusion"></a>まとめ
 
-このトピックで説明する組織の業務要件については、このソリューションの開発は最小限であり、主に**財務期間終了**ワークスペース、ビジネス イベント、SharePoint Online、および Power Automate に依存して機能を推進しています。 開発は、ページへのフィールドの追加、カスタム データ エンティティの作成、およびページ ラベルの変更に制限されています。 Power Automate は、承認プロセスの柔軟性も高めています。 このソリューションは Microsoft Office 365 スイート内のさまざまなアプリケーションを利用するため、内部ユーザーは既に使い慣れているアプリケーションを使用できます。 したがって、必要な変更管理の量は限られています。
+このトピックで説明する組織の業務要件については、このソリューションの開発は最小限であり、主に**財務期間終了**ワークスペース、ビジネス イベント、SharePoint Online、および Power Automate に依存して機能を推進しています。 開発は、ページへのフィールドの追加、カスタム データ エンティティの作成、およびページ ラベルの変更に制限されています。 Power Automate は、承認プロセスの柔軟性も高めています。 このソリューションは Microsoft 365 スイート内のさまざまなアプリケーションを利用するため、内部ユーザーは既に使い慣れているアプリケーションを使用できます。 したがって、必要な変更管理の量は限られています。
 
 結論として、ビジネス イベントは機能を拡張する固有の機会を提供しますが、アプリ内での広範なカスタマイズを回避させることもできます。 ビジネス イベントの使用を開始する前に、以下の点について考慮する必要があります。
 

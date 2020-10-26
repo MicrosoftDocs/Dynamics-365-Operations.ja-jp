@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ejchoGIT
 ms.search.region: Global
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 162aad9c875eea1d564c8ac89d5d0efdf2675be4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f2bf8ea3e4f8f9a2045d53383345065ddc0dc3a9
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003570"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979076"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service 概要
 

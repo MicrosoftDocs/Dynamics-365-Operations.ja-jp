@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 932784068f12a21335b3a2d90c5125abf1d65b76
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 297b5c7d294253ee9e9f39b99a68ce3d35d1cb53
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124811"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981630"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 

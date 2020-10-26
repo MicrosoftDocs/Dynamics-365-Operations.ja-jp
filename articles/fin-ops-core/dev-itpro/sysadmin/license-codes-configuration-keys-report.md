@@ -1,6 +1,6 @@
 ---
 title: ライセンス コードとコンフィギュレーション キーのレポート
-description: このトピックでは、Finance and Operations で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。
+description: このトピックでは、Finance and Operations で使用できるライセンス コードとコンフィギュレーション キーを一覧表示するレポートを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,25 +18,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e1218292cdc1e2794a30e8d447e072b13285f083
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 200b2acd801e4569b7eec504fa964bb6ac9a896f
+ms.sourcegitcommit: 49bee13f0df00e50b5a6c1a3d227246cb5cc50d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191797"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3827256"
 ---
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。
+このトピックでは、Finance and Operations で使用できるライセンス コードとコンフィギュレーション キーを一覧表示するレポートを示します。
 
-Finance and Operations を購入したときは、すべての機能が含まれています。 既定では、使用しない一部の機能が有効になっている場合があります。 管理者は、ライセンス コードやコンフィギュレーション キーを無効にすることで、必要としない機能を無効にする必要があります。
+Finance and Operations を購入したときには、すべての機能が含まれています。 既定では、使用しない一部の機能が有効になっている場合があります。 管理者は、ライセンス コードやコンフィギュレーション キーを無効にすることで、必要としない機能を無効にする必要があります。
 
 ライセンス コードまたはコンフィギュレーション キーを無効にすると、関連するモジュールまたは機能がユーザー インターフェイスから削除されます。 モジュールなどの大規模な機能のセットは、ライセンス コードによって制御されます。 次に、多くのライセンス コードは、より詳細なレベルで機能を有効または無効にできるコンフィギュレーション キーを有効にします。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[ライセンス コードとコンフィギュレーション キー レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、使用できる各コンフィギュレーション キーが一覧表示されています。 レポートには、各構成キーに関連付けられているライセンス コードとメニュー項目も表示されます。
+[ライセンス コードとコンフィギュレーション キー レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、使用できる各コンフィギュレーション キーが一覧表示されています。 レポートには、各構成キーに関連付けられているライセンス コードとメニュー項目も表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
 
 
 
