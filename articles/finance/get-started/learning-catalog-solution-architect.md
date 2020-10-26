@@ -5,18 +5,21 @@ author: margoc
 ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
+ms.prod: ''
+ms.service: Dynamics365Operations
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 36067a88eb50972f2a31849e322c6c8f490c1527
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 3f72fc3a989c350a12df833b633cdb39290f01f0
+ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3647256"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "3793817"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-solution-architects"></a>Dynamics 365 Finance ソリューション アーキテクトのラーニング カタログ
 

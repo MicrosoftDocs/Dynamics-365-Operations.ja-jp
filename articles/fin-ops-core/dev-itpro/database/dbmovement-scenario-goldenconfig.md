@@ -3,7 +3,7 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/19/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8de49bf17ef4505a54147720996c5725553088b5
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: c715dba93512dc02ab081f3703d4cd6108819d61
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488750"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830765"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -163,6 +163,9 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 ## <a name="import-the-database"></a>データベースのインポート
 
 前の手順で作成された .bacpac ファイルを、LCS プロジェクトの資産ライブラリ内の **データベースのバックアップ** セクションにアップロードします。 次に、インポートを開始します。 対象となる UAT 環境のデータベースは、ゴールデン構成データベースによって上書きされます。
+
+> [!NOTE]
+> 一部の要素は、データベースのインポート ステップの一部としてコピーされません。  ゴールデン コンフィギュレーションのシナリオでは、これはメール アドレスや印刷管理の設定などに影響を与えます。  これらの設定は、次の手順に従ってマスター データ移行の一部として実施し、ゴールデン コンフィギュレーション データベースには含めないことをお勧めします。
 
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 

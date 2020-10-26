@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4e8304ed0427db1862cfc04163b132f6e7f0b322
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 86d58e79110df88c5a96c8f62f739dd06c19a8c7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191868"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983967"
 ---
 # <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 

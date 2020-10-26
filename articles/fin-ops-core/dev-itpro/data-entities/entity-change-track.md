@@ -3,7 +3,7 @@ title: エンティティへの変更追跡の有効化
 description: Finance and Operations からのデータの差分エクスポートを有効にする追跡の変更を使用します。
 author: Milindav2
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30eb0a6ad9b9706e80a8470bee0e4c43c12100df
-ms.sourcegitcommit: ac5c13f2c880aa5b3db3720ec93ae8dcccc1c214
+ms.openlocfilehash: be8ed4d69af116792b8ec9c229562463931d1fac
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "3543070"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819701"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
@@ -63,19 +63,21 @@ ms.locfileid: "3543070"
 
 ```xpp
 public static Query defaultCTQuery()
-    {
-        Query q;
-        q = new Query();
-        QueryBuildDataSource qbd = q.addDataSource(tablename2id('CustTable'));
-        qbd = qbd.addDataSource(tablename2id('DirPartyTable'));
-        qbd.relations(true);
-        qbd = qbd.addDataSource(tablename2id('DirPartyLocation'));
-        qbd.addRange(fieldname2id(tablename2id('DirPartyLocation'),'IsPrimary')).value("1");
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyTable'),'RecId'),fieldName2Id(tableName2Id('DirPartyLocation'),'Party'));
-        qbd = qbd.addDataSource(tableName2Id('LogisticsPostalAddress'));
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyLocation'),'Location'),fieldName2Id(tableName2Id('LogisticsPostalAddress'),'Location'));
-        return q;
-    }
+{
+    Query q = new Query();    
+    
+    QueryBuildDataSource custDs = q.addDataSource(tableNum(CustTable));
+
+    QueryBuildDataSource partyDs = custDs.addDataSource(tableNum(DirPartyTable));
+    partyDs.relations(true);
+
+    QueryBuildDataSource locationDs = partyDs.addDataSource(tableNum(DirPartyLocation));
+    locationDs.addRange(fieldNum(DirPartyLocation, IsPrimary)).value(queryValue(NoYes::Yes));        
+    locationDs.addLink(fieldNum(DirPartyTable, RecId), fieldNum(DirPartyLocation, Party));
+
+    QueryBuildDataSource addressDs = locationDs.addDataSource(tableStr(LogisticsPostalAddress));        
+    addressDs.addLink(fieldNum(DirPartyLocation, Location), fieldNum(LogisticsPostalAddress, Location));
+
+    return q;
+}
 ```

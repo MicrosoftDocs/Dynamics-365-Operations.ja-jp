@@ -3,7 +3,7 @@ title: Dynamics 365 Commerceコンポーネント バージョンの管理要件
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
 author: rezaassadi
 manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02cb1bf662983edb74ad5173e2c494a0edfe8d3f
-ms.sourcegitcommit: 267498fbc4c54adf83b15854ecea6a93e200164b
+ms.openlocfilehash: b231eef9dad88757b696f61eb89df81c025c4d88
+ms.sourcegitcommit: 675328d8ace7a12132de642bf32d1c4657188dbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3549337"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "3950114"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerceコンポーネント バージョンの管理要件
 
@@ -62,16 +62,16 @@ ms.locfileid: "3549337"
 
 ## <a name="current-supported-versions"></a>現在サポートされているバージョン
 
-次の表では、**2020 年 7 月 1 日**時点での各種コマース コンポーネントの現在のサポートされているバージョンを示します。
+次の表では、**2020 年 10 月 2 日**時点で、現在サポートされている各種 Commerce コンポーネントのバージョンを示します。
 
-| コンポーネント | 最新の利用可能なリリース | 最新の使用可能なコンポーネントのバージョン番号 | サポートされている最も古いリリース | サポートされている最も古いコンポーネントのバージョン番号 |
+| コンポーネント | 利用可能な最新リリース (サンドボックス内の最初のリリース) | 利用可能な最新のコンポーネント バージョン番号 (サンドボックス内の最初のリリース) | サポートされている最も古いリリース | サポートされている最も古いコンポーネントのバージョン番号 |
 |---|---|---|---|---|
-| Finance and Operations アプリ | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
-| Commerce Scale Unit (クラウド自己ホスト) | 10.0.12 | 9.22 | 10.0.9 | 9.19 |
-| Commerce ストア スターター キット (SSK) | 10.0.12 | 9.22 | 10.0.9 | 9.22 |
-| Commerce Scale Unit (自己ホスト) | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| Modern POS | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| ハードウェア ステーション | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
+| Finance and Operations アプリ | 10.0.14 | 10.0.14 | 10.0.9 | 10.0.9 |
+| Commerce Scale Unit (クラウド自己ホスト) | 10.0.14 | 9.24 | 10.0.9 | 9.19 |
+| Commerce モジュール ライブラリ | 10.0.14 | 9.24 | 10.0.9 | 9.19 |
+| Commerce Scale Unit (自己ホスト) | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
+| Modern POS | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
+| Hardware Station | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
 
 ## <a name="one-version-requirements"></a>1 つのバージョン要求
 

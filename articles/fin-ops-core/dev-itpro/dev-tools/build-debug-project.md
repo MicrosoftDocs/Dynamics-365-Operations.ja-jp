@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4131481a31283b16425e76648e4468078d0014a2
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 27e8bd1f4928a16b00127590de0169fbd9936ce0
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033018"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796485"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 
@@ -86,7 +86,7 @@ ms.locfileid: "3033018"
 18. Internet Explorer を閉じ、**Fleet Management** アプリケーションを閉じます。 Visual Studio はデバッグ モードを終了します。 代替は**デバッグの停止**を**デバッグ**メニューから選択します。 これにより、Internet Explorer は開いたままになり、次のデバッグ セッションをより早く開始することができます。
 
 ## <a name="add-the-validation-code"></a>検証コードの追加
-**FinalizeRentalCheckout** メソッドでは、開発者がコードを追加してレンタルの有効性を決定するために使用されるデリゲートを呼び出したことを確認します。 期限切れのクレジット カードの問題を解決するには、クレジット カードが期限切れではないことを確認するために使用するイベント ハンドラを追加します。 ラボを簡素化するために、ハンドラはデリゲートを含む同じファイルに追加されます。 インスピレーションとして、次のコードを使用します。 コードをコピーして貼り付けるのではなく、手動で入力して IntelliSense 機能の動作を参照してください。 これらの機能により、Visual Studio ユーザーは高い生産性を期待することができます。
+**FinalizeRentalCheckout** メソッドでは、開発者がコードを追加してレンタルの有効性を決定するために使用されるデリゲートを呼び出したことを確認します。 期限切れのクレジット カードの問題を解決するには、クレジット カードが期限切れではないことを確認するために使用するイベント ハンドラーを追加します。 ラボを簡素化するために、ハンドラはデリゲートを含む同じファイルに追加されます。 インスピレーションとして、次のコードを使用します。 コードをコピーして貼り付けるのではなく、手動で入力して IntelliSense 機能の動作を参照してください。 これらの機能により、Visual Studio ユーザーは高い生産性を期待することができます。
 
 ```xpp
 [SubscribesTo(classstr(FMRentalCheckoutProcessor), 

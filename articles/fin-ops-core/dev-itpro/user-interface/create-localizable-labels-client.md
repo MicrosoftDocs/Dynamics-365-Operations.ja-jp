@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 18531
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05ba812cc76a7c5c1e90f41f85863626ade28247
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 8bb05f6b7e0b32ec814c478ceda877e125d25351
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329927"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982371"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 

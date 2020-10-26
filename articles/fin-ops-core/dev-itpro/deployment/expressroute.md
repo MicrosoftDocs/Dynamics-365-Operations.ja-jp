@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ba95df12b21d5be5a124247e99d91c507d32ca
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: e694aca206d26a1789a43cff4edee6267eb60633
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100483"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893391"
 ---
 # <a name="azure-expressroute-and-finance-and-operations-apps"></a>Azure ExpressRoute と Finance and Operations アプリ
 
@@ -33,7 +33,7 @@ ms.locfileid: "3100483"
 <a name="overview"></a>概要
 --------
 
-Microsoft Azure ExpressRoute で、Azure データ センターとオンプレミスの場所の間に、専用で、すぐに使用できる、信頼性の高い、低待機時間の接続を作成できます。 ExpressRoute 回線は顧客のオンプレミス ネットワークと接続プロバイダーを通じた Microsoft クラウド サービスでの論理接続です。 ExpressRoute は、 Finance and Operations とは別に構成されています。 実装に ExpressRoute 回路を使用するには、ネットワーク サービス プロバイダーに直接問い合わせる必要があります。 ExpressRoute が構成された後、 Finance and Operations アプリに接続することに加えて、顧客は Office 365 などの様々なアプリケーションや、仮想マシンへの接続や仮想ネットワークに配置されたクラウド サービスなどの対応している Azure サービスに接続できます。 サポートされているその他のサービスの詳細については、[[ExpressRoute FAQ](/azure/expressroute/expressroute-faqs)] を参照してください。 ExpressRoute 回線を購入する前に、次のことを理解する必要があります。
+Microsoft Azure ExpressRoute で、Azure データ センターとオンプレミスの場所の間に、専用で、すぐに使用できる、信頼性の高い、低待機時間の接続を作成できます。 ExpressRoute 回線は顧客のオンプレミス ネットワークと接続プロバイダーを通じた Microsoft クラウド サービスでの論理接続です。 ExpressRoute は、 Finance and Operations とは別に構成されています。 実装に ExpressRoute 回路を使用するには、ネットワーク サービス プロバイダーに直接問い合わせる必要があります。 ExpressRoute が構成された後、Finance and Operations アプリに接続することに加えて、顧客は Microsoft 365 などの様々なアプリケーションや、仮想マシンへの接続や仮想ネットワークに配置されたクラウド サービスなどの対応している Azure サービスに接続できます。 サポートされているその他のサービスの詳細については、[[ExpressRoute FAQ](/azure/expressroute/expressroute-faqs)] を参照してください。 ExpressRoute 回線を購入する前に、次のことを理解する必要があります。
 
 -   Finance and Operations アプリが配置されているデータ センター。
 -   接続元となるリージョン。

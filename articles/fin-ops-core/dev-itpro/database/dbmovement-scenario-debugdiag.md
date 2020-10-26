@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8d3636f464b9f2c58f1f597b9e01446fa110dad0
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: 015713347577458c7f0d9069e7bb27a4fe9f64db
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456547"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981628"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 

@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: be97631dc70bd5c38d74d31dc40edd08bea3e55a
-ms.sourcegitcommit: bdea45af52cab804e5d325ff3cee7f65aacfd8fc
+ms.openlocfilehash: 9f0f22d135eec4bcdb87e917a9c8145912f0e26f
+ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442729"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "3949236"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -1452,6 +1452,7 @@ truncate table databaselog
 ```
 
 ## <a name="dbsync-fails-to-start"></a>DBSync が起動に失敗する
+
 **問題 :** AXSF アプリケーションが Service Fabric explorer で "InBuild" の状態のままとなり、配置が失敗する。 AXSF ノードの作業ディレクトリのログを確認すると、次の DBSync エラーが見つかります。
 
 ```stacktrace
@@ -1474,3 +1475,27 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 **理由 :** この問題は、SQL パスワードに特殊文字が含まれていることが原因で発生する場合があります。
 
 **解決策 :** SQL ユーザーのパスワードを更新し、特殊文字を削除します。 続いて、新しいパスワードを使用して Credentials.json ファイルを更新し、LCS から配置作業を再試行します。
+
+## <a name="dbsync-fails-with-peap-and-first-release-app-version-10014-platform-update-38"></a>DBSync は PEAP と 初回リリースの APP のバージョン 10.0.14、更新プログラム 38 でエラーが発生する
+
+**問題 :** AXSF アプリケーションが Service Fabric explorer で "InBuild" の状態のままとなり、配置が失敗する。 AXSF ノードの作業ディレクトリでログを確認する場合、以下の DBSync エラーが複数回発生します。
+
+```stacktrace
+10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
+```
+
+**理由:** この問題は、Finance+Operations で使用している SQL Server アカウントに操作を実行するための十分な権限がないことによって発生します。
+
+**解決:** SQL Server で下記のコマンドを実行してください。
+
+```sql
+use master
+GRANT ALTER ANY EVENT SESSION to axdbadmin;
+```

@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: fd9318418dee481153eb2fec9cac425e41ceedae
-ms.sourcegitcommit: 0223e2d2276b9482f6ffdad643fc6a746f3b8469
+ms.openlocfilehash: c07a9323483e5202d759d770ed6d1faeda819ec9
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "3714647"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983463"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 

@@ -1,9 +1,9 @@
 ---
 title: Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) がサンドボックスと生産環境でのパフォーマンスの問題を診断して緩和できるようにするために提供するさまざまなツールについて説明します。
-author: meeramahabala
+author: laneswenka
 manager: AnnBe
-ms.date: 03/04/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
-ms.author: meeram
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9a6a6130271cb4dfd9c1035741c8003b0fe00d41
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: d60dc76b1052fe39925b28868317c211df0aafa4
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117403"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830725"
 ---
 # <a name="performance-troubleshooting-using-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 
@@ -40,26 +40,16 @@ LCS のすべての SQL パフォーマンス ツールは、特定の環境の 
 
 - **ライブ ビュー** – 現在の DTU、実行中のステートメント、ブロックしているステートメントを示しています。 パフォーマンスの問題を示す現在の **SQL Now** ページは、**ライブ ビュー**に置き換えられます。
 
-    [![ライブ ビュー](./media/LiveView.jpg)](./media/LiveView.jpg)
-
 - **クエリ** – 必要に応じてメトリックを取得するために使用される定義済みのクエリの一覧を表示します。 クエリの例には、現在のブロック ツリー、有効な計画ガイドのリスト、および最も高価なクエリの一覧が含まれています。
-
-    [![クエリ](./media/Queries.jpg)](./media/Queries.jpg)
  
     > [!IMPORTANT]
     > クエリ結果が即座に返されることを保証するために、ほとんどのクエリは同期的に実行されます。 ただし、パフォーマンスに問題が発生している場合は、同期クエリの実行によってタイム アウト エラーが発生する可能性があります。 この問題に対処するために、新しい **高速クエリの使用** オプションが追加されました。 既定で、ほとんどのクエリでこのオプションが有効になっています。 クエリの実行後にタイム アウト エラーが発生する場合は、**高速クエリの使用** オプションをオフにして再度クエリの実行を試みます。 クエリは非同期に実行されます。
 
 - **アクション** – サンド ボックスと製造環境での問題を緩和するために実行する必要がある定義済みアクションの一覧を表示します。 アクションの例としては、インデックスの追加または削除、テーブルでの統計の更新、インデックスの再構築、ブロック ステートメントの終了があります。 アクションを実行するといつでも、環境の環境履歴に実行されるアクションの記録が表示されます。 履歴レコードは、クエリの実行時ではなく、アクションにのみ作成されます。 
 
-    [![アクション](./media/Actions.jpg)](./media/Actions.jpg)
-
 - **パフォーマンス メトリックス** - 論理入出力、実行カウント、期間、CPU 時間、および待機数に基づいて、選択した期間にシステムで実行された最もコストのかかったクエリが表示されます。 このデータは SQL クエリ ストアからクエリされます。 データは 30 日間保持され、ツールは毎日、協定世界時 (UTC) の午後 10 時にデータ収集を実行します。 ツールを使用するには、過去 30 日間の期間を選択します。 クエリ結果が表示されたら、期間グラフ内のバーを選択して、クエリが他の基準に該当する場所を強調表示します。 **ステートメント**タブで、クエリを表示、またはクエリの実行計画をダウンロードします。
 
-    [![パフォーマンス メトリックス](./media/perfmetrics.jpg)](./media/perfmetrics.jpg)
-
 - **インデックス分析** – ユーザーのスキャン、ユーザーのシーク、ユーザーの更新プログラム、および行の数に基づいて、集計インデックスとテーブル情報が表示されます。 パフォーマンス測定基準と同様に、このツールは追加のテーブル メトリックスと共に選択したインデックスのトレンドを表示します。
-
-    [![インデックス分析](./media/IndexAnalysis.jpg)](./media/IndexAnalysis.jpg)
 
 - **クエリ** タブと **アクション** タブ – **クエリ** および **アクション** タブに表示されるクエリの詳細については、[クックブックの照会](querycookbook.md) を参照してください。
 

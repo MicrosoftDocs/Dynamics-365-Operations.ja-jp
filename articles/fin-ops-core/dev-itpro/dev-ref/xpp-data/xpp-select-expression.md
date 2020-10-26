@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 86c86a61f6026c1de1785632a44b6cb85ee9031c
-ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
+ms.openlocfilehash: d925221d2ac11305a65716dff317594cd9720b8a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637820"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987268"
 ---
 # <a name="write-select-statements-as-expressions"></a>select ステートメントを式として記述
 

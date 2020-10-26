@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 400236a97f39e74cc5eeeb64424ce1bec38ec1c5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 82fd96271468d68b37db244393f682e0edd17b55
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004614"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980978"
 ---
 # <a name="shipping-discount-overview"></a>出荷割引の概要
 

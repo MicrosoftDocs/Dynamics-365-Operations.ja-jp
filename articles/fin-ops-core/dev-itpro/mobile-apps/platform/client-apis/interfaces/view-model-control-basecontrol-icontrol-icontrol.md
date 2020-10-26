@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 48fb471d830cf7dcf8e70348cb4974ba42d34dd0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 599c2ee3b51b05f9f8a3eebefbc79dcc103b61b3
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183143"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980568"
 ---
 # <a name="control-type"></a>コントロール タイプ
 
@@ -117,7 +117,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 このコントロールのデザイン オブジェクトを返します。
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -143,7 +143,7 @@ metadata(): [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolme
 
 このコントロールのメタデータ オブジェクトを返します。
 
-#### <a name="returns-controlmetadataview-model-control-basecontrol-icontrol-icontrolmetadatamd"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
+#### <a name="returns-controlmetadata"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
 
 
 
@@ -154,7 +154,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 このコントロールの親 (コントロールまたはページ) を返します。
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -165,7 +165,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 このコントロールのルート フォーム インスタンス (ページ) を返します。
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

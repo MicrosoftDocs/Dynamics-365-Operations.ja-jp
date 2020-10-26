@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9802ffd78ac9642ed16603b14312da6afc0db33c
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 10cdee4680e38de62dda0a89176c8931d3ccb052
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621290"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796457"
 ---
 # <a name="power-apps-portals-with-finance-and-operations"></a>Power Apps ポータルと Finance and Operations
 
@@ -46,3 +46,6 @@ Power Apps ポータルから Finance and Operations へのユーザーアクセ
 Power Apps ポータル認証は Common Data Service の連絡先エンティティにリンクされているため、Common Data Service の連絡先と Finance and Operations の対応するユーザーの間にマッピングを確立する必要があります。 このマッピングは、エントリを **msdyn\_externalportalusermapping** エンティティに追加することによって実行できます。 セキュリティの観点から、認証されたユーザーが使用できる仮想エンティティの範囲は、Power Apps ポータルで**グローバル**としてコンフィギュレーションする必要があります。
 
 別のテナントから認証されたユーザーをユーザーとして Finance and Operations に追加する必要がある場合、Finance and Operations で[新しいユーザーの作成](../sysadmin/tasks/create-new-users.md)プロセスを使用する必要があります。 このプロセスにより、Microsoft Azure Active Directory (Azure AD) 企業間 (B2B) ゲスト ユーザーとして、テナント間のユーザーが追加されます。
+
+> [!NOTE]
+> ユーザー (認証済または匿名) にいずれかの Finance and Operations アプリで、システム管理者ロールが割り当てられている場合、Power Apps ポータルからのアクセスは失敗します。

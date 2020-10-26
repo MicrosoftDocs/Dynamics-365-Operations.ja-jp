@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 2bbc269975b42637760c6224d2433d1a04b4afc2
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: cfa5a6d0a978b487be601c8566142003ce19dc6a
+ms.sourcegitcommit: 9baadeeb922666f79b28805da51d41cef18601b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728536"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888551"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -33,6 +33,32 @@ ms.locfileid: "3728536"
 + [Common Data Service のデータ - フェーズ 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
 + [Common Data Service のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Common Data Service の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="september-2020-release"></a>2020 年 9 月リリース
+
+2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 10.0.21 ](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+2020 年 9 月のリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |ステータス |
+|------|---------|-------|
+| Sales での潜在顧客認定プロセスは、会社によってストライプされる | Dynamics 365 Sales のユーザーは、潜在顧客を作成し、営業案件に対する潜在顧客を見込みありとし、営業案件を見積もりに変換し、見積もりを有効にして、注文を作成することができます。 このプロセスは、**潜在顧客**エンティティに対する会社のストライピングが欠如しているために、二重書き込みで分割されました。 基になる**取引先企業**と**営業案件**のエンティティに会社をカスケードするように、**潜在顧客**エンティティに会社のストライピングを実装しています。 したがって、アプリケーション動作が復元され、プロセスがサポートされます。 **潜在顧客**特定プロセスの間、**取引先担当者**エンティティは会社でストライプされません。 この設計では、2020 年 10 月で期限となる**関係者**エンティティ モデルがサポートされます。 二重書き込みの**関係者**および **GlobalAddressBook** モデルについては、[二重書き込み Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all) に参加してください。 | 一般提供 |
+| [**注文**から**販売注文**へのマップ状態遷移](sales-status-map.md) | Dynamics 365 Sales の**注文**フォームは、常に**有効**に設定されています。 Dynamics 365 Salesの**注文**から Dynamics 365 Supply Chain Management の**販売注文**に状態遷移を作成するために、**ProcessingStatus** フィールドを導入しました 。 |   一般提供   |  
+| [金額から 10 進データ型への変換](currrency-decimal-places.md) |  Common Data Service 環境では、通貨は小数点以下 4 桁、為替レートは小数点以下 10 桁に制限されています。 Finance and Operations アプリでは、Common Data Service より多くの小数点以下の桁数をサポートします。 Common Data Service の 10 進数サポートを拡張にオプトインして、二重書き込みを使用するときに小数点以下のデータが失われないようにすることができます。 | 一般提供 |
+| 会社および通貨為替のセキュリティ ロール | 会社と通貨為替エンティティは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのエンティティへの読み取りアクセスが必要です。 経験を簡略化するために、**二重書き込みアプリ ユーザー**という名前の新しいセキュリティ ロールを追加しました 。 各二重書き込みユーザーが、このセキュリティ ロールに追加される必要があります。   | 一般提供 |
+| せていのセキュリティ ロール | **二重書き込みランタイム ユーザー** セキュリティ ロールを追加します。 このロールを使用すると、管理者以外のユーザーは、二重書き込み用に設定されたレコードを作成できます。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+| 追跡 | トレースに使用するために追加された内部フィールド。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+| バグ修正 | プラグインと移行先の環境の間に不一致があるために二重書き込みに失敗する問題を修正します。 この修正は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+| バグ修正 | 未使用のプラグインを確実に削除することをサポートします。 この修正は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+
+## <a name="august-2020-release"></a>2020 年 8 月リリース
+
+2020 年 8 月リリースのデュアル書き込みオーケストレーション パッケージには、次のテーブルに示す機能とバグ修正が含まれています。
+
+| 機能 | 説明 |ステータス |
+|------|---------|-------|
+| 複数のエンティティ マップの管理 | 日常業務の一部として、エンティティ マップを一括処理する必要がある場合があります。 たとえば、一連のエンティティ マップを同時に有効化または一時停止することができます。 これを 1 つ行う代わりに、煩雑で時間がかかりますが、二重書き込みリスト ページで複数のエンティティ マップを同時に有効化、一時停止、再開、または停止することができます。 | 一般提供 |
+| バグ修正 | プロジェクトの実行時に特定の状況でレコードがスキップされる問題を修正します。 この修正は、二重書き込みコア ソリューション バージョン 10.0.19 の一部です。  | 一般提供 |
 
 ## <a name="june-2020-release"></a>2020 年 6 月リリース
 

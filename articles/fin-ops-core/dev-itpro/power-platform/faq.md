@@ -3,7 +3,7 @@ title: Finance and Operations 仮想エンティティに関するよく寄せ�
 description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/13/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b9f668eb2c416c3724d07455423b8f75f43f33c8
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: f12037aa7e1b1f28ef27c3a2812b9c00fcac8b48
+ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621127"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819114"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -103,3 +103,7 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 ### <a name="if-i-develop-a-new-finance-and-operations-entity-and-want-to-see-it-in-common-data-service-do-i-have-to-select-refresh-entity-list-in-finance-and-operations-do-i-have-to-do-anything-in-common-data-service"></a>新しい Finance and Operations エンティティを作成し、それを Common Data Service に表示する場合 、Finance and Operationsで [エンティティの更新] リストを選択する必要はありますか。 Common Data Service で何かを行う必要はありますか。
 
 理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Common Data Service から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする*必要があります*が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
+
+### <a name="do-you-have-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
+
+二重書き込みは、データが Common Data Service にネイティブに存在する必要があるいくつかの主要なデータエンティティに対してのみ提供されます。 これらのデータ エンティティは、仮想エンティティとしては使用できません。
