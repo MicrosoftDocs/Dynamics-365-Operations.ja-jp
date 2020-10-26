@@ -3,7 +3,7 @@ title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,21 +12,21 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2354612405fe8de84ac396d0d33ff11e31e24fb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6d344d56c98a7b91864431d79b99e876bb95b487
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431373"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830736"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 14 日間維持します。
 
 ## <a name="self-service-point-in-time-restore"></a>セルフサービスポイントインタイム復元
 [!include [pitr](../includes/dbmovement-pitr.md)]
@@ -55,4 +55,4 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 新しいデータベースには、復元ポイント履歴はありませんが、その時点から新しい復元ポイントを取得し始めます。 前述のアクションのいずれかを実行した後、同じ復元日時を使用して再度実行することはできません。
 
 ### <a name="restore-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、復元は拒否されます
-環境でプラットフォーム更新 3 以前を実行している場合は、データベース復元の処理を実行することはできません。 詳細は、[現在サポートされているプラットフォーム更新の一覧](..//migration-upgrade/versions-update-policy.md)を参照してください。
+環境でプラットフォーム更新 20 以前を実行している場合は、データベース復元の処理を実行することはできません。 詳細については、[ソフトウェアのライフサイクル ポリシーとクラウド リリース](..//migration-upgrade/versions-update-policy.md)で現在サポートされているプラットフォーム更新の一覧を参照してください。

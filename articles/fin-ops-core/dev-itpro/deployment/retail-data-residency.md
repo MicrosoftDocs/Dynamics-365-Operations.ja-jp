@@ -1,9 +1,9 @@
 ---
-title: Retail データの所在地
-description: このトピックでは Retail Cloud Scale Unit を配置するときのデータ所在地に関する考慮事項を説明します。
+title: Commerce データ所在地
+description: このトピックでは Commerce Scale Unit (クラウド) を配置するときのデータ所在地に関する考慮事項を説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/17/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: dd3de7a74c2315c52329cce5c6477100653ecf96
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: f37cbda01d294a805e43b67a71959aa6a46ea6e8
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057127"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968786"
 ---
-# <a name="retail-data-residency"></a>Retail データ所在地
+# <a name="commerce-data-residency"></a>Commerce データ所在地
 
 [!include[banner](../includes/banner.md)]
 
 
 ## <a name="choose-a-region"></a>地域を選択
 
-Retail Cloud Scale Unit (RCSU) を初期化するときは、ホストするデータ センターの場所を選択する必要があります。 ネットワークの待機時間を最小限に抑えてパフォーマンスを向上するには、RCSU を使用してサービスを提供する予定のチャネルに最も近いデータ センターの場所を選択する必要があります。 各データ センターのおおよその場所を参照するには [Azure のリージョン](https://azure.microsoft.com/global-infrastructure/regions/) を参照してください。 [Azure 速度の参照](https://azurespeedtest.azurewebsites.net/) などの Web ベースのユーティリティを参照して、各店舗の場所から Azure データ センターへの待機時間を測定することもできます。 これは RCSU を初期化するときデータ センターを正しく選択することに役立ちます。
+Commerce Scale Unit (クラウド) を初期化するときは、ホストするデータ センターの場所を選択する必要があります。 ネットワークの待機時間を最小限に抑えてパフォーマンスを向上するには、RCSU を使用してサービスを提供する予定のチャネルに最も近いデータ センターの場所を選択する必要があります。 各データ センターのおおよその場所を参照するには [Azure のリージョン](https://azure.microsoft.com/global-infrastructure/regions/) を参照してください。 [Azure 速度の参照](https://azurespeedtest.azurewebsites.net/) などの Web ベースのユーティリティを参照して、各店舗の場所から Azure データ センターへの待機時間を測定することもできます。 これは RCSU を初期化するときデータ センターを正しく選択することに役立ちます。
 
 ## <a name="data-between-regions"></a>地域間のデータ
 
@@ -43,15 +43,17 @@ Commerce Data Exchange (CDX) を構成して、レコードの特定の区分の
 
 ### <a name="prerequisites"></a>必要条件
 
-同期するレコード区分を構成する前に、チャネル データベース グループを構成する必要があります。 これらのデータベース グループは、セグメント化されたデータを同期する各 RCSU に対して構成する必要があります。 同じチャネル データベース グループ内のすべての RCSU は、その RCSU 内のすべてのチャネルにサービスを提供するのに必要なデータを受け取ります。 セグメント化されたデータを同期させる予定の各 RCSU チャネル データベースに対して、別々のデータベース グループを作成する必要があります。 それには、次の手順を実行します:
+同期するレコード区分を構成する前に、チャネル データベース グループを構成する必要があります。 これらのデータベース グループは、セグメント化されたデータを同期する各 CSU に対して構成する必要があります。 同じチャネル データベース グループ内のすべての CSU は、その CSU 内のすべてのチャネルにサービスを提供するのに必要なデータを受け取ります。 セグメント化されたデータを同期させる予定の各 CSU チャネル データベースに対して、別々のデータベース グループを作成する必要があります。 それには、次の手順を実行します:
 
 1. **Retail と Commerce** \> **Headquarters の設定** \> **Commerce スケジューラ** \> **チャネル データベース グループ**の順に移動します。
-2. セグメント化されたデータを同期させる各 RCSU に対して新しいデータベース グループを作成します。
-3. **Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **チャネル データベース**の順に移動します。
-4. 対応する Retail Cloud Scale Unit のチャネル データベースを選択します。
-5. **編集** を選択し、ステップ 2 で作成したチャネル データベース グループを選択します。
-6. **保存** を選択します。 
-7. 選択したチャンネル データベースに対して **すべてのジョブの完全データ同期** を選択します。
+2. セグメント化されたデータを同期させる各 CSU に対して新しいデータベース グループを作成します。
+3. **Retail と Commerce** \> **Retail と Commerce IT** \> **配送スケジュール**の順に移動します。
+4. 新しく作成されたチャンネル データベース グループを各スケジューラ ジョブに追加します。
+5. **Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **チャネル データベース**の順に移動します。
+6. 対応する Commerce Scale Unit (クラウド) のチャネル データベースを選択します。
+7. **編集** を選択し、ステップ 2 で作成したチャネル データベース グループを選択します。
+8. **保存** を選択します。 
+9. 選択したチャンネル データベースに対して **すべてのジョブの完全データ同期** を選択します。
 
 ### <a name="available-controls-for-synchronizing-segments-of-data-to-different-rcsus"></a>データの区分を異なる RCSU に同期させるための利用可能なコントロール
 

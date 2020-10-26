@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cb37732a71a44e5325cb3864a59ee6f477e9246
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: d5e11990c1e6298ea304aaa9e1499af508b2343b
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124815"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893387"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能とオーバーレイによってカスタマイズする
 
@@ -33,8 +33,6 @@ ms.locfileid: "3124815"
 ## <a name="overlayering"></a>オーバーレイヤー
 
 Microsoft またはサードパーティの Microsoft パートナーによって出荷されている、モデル要素のソース コードとメタデータをカスタマイズできます。 モデルのメタデータとソース コードをカスタマイズするために、開発者はカスタマイズするモデルにオーバーレイする新しいモデルを作成する必要があります。 たとえば、ソリューション開発者は SLN レイヤーでコードを提供でき、独立系ソフトウェア ベンダーは ISV レイヤーを使用でき、さらにますおよび付加価値再販業者は VAR レイヤーを使用することができます。 上部レイヤ (この例では VAR レイヤ) で定義された機能は、下部レイヤの機能を上書きできます。 オーバーレイ モデルはソース モデルと同じ **パッケージ**に属し、ソース モデルよりも高いレイヤーに属している必要があります。 オーバーレイヤーは、メタデータとソース コードの高度なカスタマイズを実行する強力なツールですが、ソリューションを新しいバージョンにアップグレードする費用が高くなる場合があります。 
-
-<!--Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.-->
 
 ## <a name="extensions"></a>拡張子
 *拡張機能* を使用することにより、アプリケーションをカスタマイズすることができます。 拡張子により既存のモデル要素およびソース コードに機能を追加できます。 拡張子は、次の機能を提供します。
@@ -317,7 +315,7 @@ Visual Studio は、現在のプロジェクトまたは新しいプロジェク
 
 [![6\_顧客](./media/6_cust.png)](./media/6_cust.png)
 
--   ***イベント ハンドラー メソッドのコピー**: このオプションは、メソッドシグネチャをクリップボードにコピーします。 任意の X++ コード エディターに貼り付けて、選択したイベントをサブスクライブするメソッドを定義することができます。
+-   **イベント ハンドラー メソッドのコピー**: このオプションは、メソッドシグネチャをクリップボードにコピーします。 任意の X++ コード エディターに貼り付けて、選択したイベントをサブスクライブするメソッドを定義することができます。
 -   **イベント ハンドラーの検索** – 選択したイベントに登録されているすべてのメソッドを検索して一覧表示します。
 
 

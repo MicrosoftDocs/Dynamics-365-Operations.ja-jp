@@ -17,12 +17,12 @@ ms.search.scope: Operations
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9f1863a66bcd76a23579229acde4cb9c37d27bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2c3f0c1cd24f9aeb5251199f1609fc584c2f4a94
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003615"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887102"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 
@@ -70,3 +70,6 @@ Finance and Operations からのデータは、Common Data Service、Power Apps�
 
 ## <a name="office-integration"></a>Office 統合
 Microsoft Office の統合機能は、生産的環境を提供し、Office 製品を使用して作業を遂行するユーザーを支援します。 詳細については、 [Office 統合の概要](office-integration/office-integration.md) を参照してください。
+
+## <a name="elearning-courses"></a>eLearning コース
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance and Operations ](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2Cdeveloper) をご確認ください。

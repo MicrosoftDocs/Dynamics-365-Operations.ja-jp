@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: f8a45ab2edcd30ce737ce74f09eeca97067a6b60
-ms.sourcegitcommit: 45ba754db7a813be88e2eb4a8be3a0e766b63a87
+ms.openlocfilehash: de29c72ee538d3df83ba4622ae4db502e2f84efe
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678534"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818214"
 ---
 # <a name="important-development-and-alm-changes-from-version-10010-to-10013"></a>バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更
 
@@ -46,7 +46,7 @@ Microsoft は、互換性に影響する変更を含まない更新を提供す�
     - バージョン 10.0.10 以降では、カードが存在しないカスタム支払コネクタを配置可能パッケージに含めることができます。
     - バージョン 10.0.13 では、オールインワン パッケージが**必須**になります。
 
-- [Retail ソフトウェア開発キット (SDK)](retail-sdk/retail-sdk-overview.md) を使用して作成されたコマース配置可能パッケージは、アプリケーション オブジェクト サーバー (AOS) に配置される期間が長くなりました。 代わりに、セルフサービス インストーラーを Microsoft Dynamics Lifecycle Services (LCS) にアップロードし、同期を使用します。 詳細については、「[Dynamics 365 Commerce のセルフサービス インストーラーの同期](synchronize-installers.md)」を参照してください。
+- [Retail ソフトウェア開発キット (SDK)](retail-sdk/retail-sdk-overview.md) を使用して作成されたコマース配置可能パッケージは、アプリケーション オブジェクト サーバー (AOS) から除かれました。 代わりに、セルフサービス インストーラーを Microsoft Dynamics Lifecycle Services (LCS) にアップロードし、同期を使用します。 詳細については、「[Dynamics 365 Commerce のセルフサービス インストーラーの同期](synchronize-installers.md)」を参照してください。
 - 次の目的では、専用ビルド マシンの代わりに、Microsoft によってホストされるビルド エージェントを使用します。
 
     - [アプリケーション配置可能パッケージ](../../fin-ops-core/dev-itpro/dev-tools/hosted-build-automation.md) をビルドする

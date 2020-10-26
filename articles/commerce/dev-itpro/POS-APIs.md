@@ -3,7 +3,7 @@ title: 販売時点管理 (POS) API
 description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 740d4a6df47f976296555d5b560d5c5951e1a2cf
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: 6fec60a736bec592707e8816c0f9fef86b83864b
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368781"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835840"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]
@@ -219,10 +219,11 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 次に、支払に関連する機能を実行する公開されている API の一覧を示します。
 
-| POS API                                   |
-|-------------------------------------------|
-| GetGiftCardByIdServiceRequest             |
-| GetPaymentCardTypeByBinRangeClientRequest |
+| POS API                                   | 説明                            | リリース                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| GetGiftCardByIdServiceRequest             |                                        |                          |
+| GetPaymentCardTypeByBinRangeClientRequest |                                        |                          |
+| GetSignatureClientRequest                 | 署名のキャプチャ ダイアログを POS で表示するか、コンフィギュレーションに基づいてメッセージを署名キャプチャ デバイスに送信します。 | 10.0.15 |
 
 ### <a name="peripherals"></a>周辺機器
 

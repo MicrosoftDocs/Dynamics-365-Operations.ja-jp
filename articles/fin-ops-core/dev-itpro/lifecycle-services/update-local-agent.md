@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8893f77f1be462b32a5ece1af286f87539481825
-ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
+ms.openlocfilehash: 5f7fa2c86cd1c318cde83f4df9cb4211ea8fbc22
+ms.sourcegitcommit: c288af03c3d9db87e381abbeb46631cab77a793b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406463"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3905578"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2019 年 12 月にリリースされたバージョン 2.4.0 です。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2020 年 5 月にリリースされたバージョン 2.5.0 です。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
@@ -39,7 +39,7 @@ ms.locfileid: "3406463"
 | 2.1.0               | このバージョンでは、**準備**および**更新**が 2 つの個別のステップである 2 段階サービスが可能になります。 |
 | 2.1.1               | このバージョンはダウンロードが失敗したときに発生する LCS 管理ボタンが利用できない問題を修正します。 その他の変更には、Azure Storage との通信を改善し TLS 1.2 を有効にする Azure Storage ライブラリの更新を含みます。  |
 | 2.1.2               | このバージョンには、更新されたAzure依存関係が含まれており、ダウンロードの安定性を向上し、ファイルがダウンロードされた場合に正しく評価するロジックを使用 これにより、ファイルが完全にダウンロードされるという問題が修正されますが、論理上数バイトが不足していると見なされ、ダウンロードに失敗します。  |
-| 2.2.0               | このバージョンでは、クリーンアップ中にロックされた dll を修正し、Office 365 でも使用される Active Directory フェデレーション サービス (ADFS) をサポートするための前提条件を有効にします。 |
+| 2.2.0               | このバージョンは、クリーンアップ中にロックされた dll を修正し、Microsoft 365 用でも使用される Active Directory Federation Services (ADFS) をサポートするための前提条件を有効にします。 |
 | 2.3.0               | このバージョンに、配置前スクリプトと配置後スクリプトのサポートが追加されます。  |
 | 2.3.1               | このバージョンでは、一部の環境でのクリーンアップ中に発生する可能性があるオーケストレーション サービスのクラッシュを修正します。<br><br>プラットフォーム更新プログラム 29 以前のバージョン 10.0.5 を展開するには、FinancialReportingDeployer.exe.config. の自動更新に事前配置スクリプトを使用する必要があります。詳細については、[オンプレミス展開のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework)を参照してください。 |
 | 2.4.0               | このバージョンでは、展開の問題が修正され、ローカル エージェントのランタイムがアップグレードされます。 |

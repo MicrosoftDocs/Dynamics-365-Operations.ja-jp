@@ -3,7 +3,7 @@ title: サンドボックス環境への本番データベースをポイント 
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、サンドボックスのユーザー受け入れテスト(UAT)環境に本番データベースのポイント インタイム復元 (PITR) を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f2a32d8fdd84224786bdfd5a963ec134b703d75f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 06c73db8b9290a5fb232d556f23a692afbe77ea5
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431374"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967274"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への本番データベースをポイント イン タイム復元を実行する
 
@@ -82,8 +82,9 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 - 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 そのため、管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは、復元を開始する前に、対象のシステムを完全に処理して停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 このようにして、Azure ストレージ内のいずれのシステムからも孤立ファイルがないことを確認してください。 対象の環境でデータベースを復元した後は、孤立したファイルを処理できないため、この手順は重要となります。 復元後、統合ジョブを再開することができます。
+- ビジネス イベントは、同じ終了点が使用されないように、データベースが復元される環境で終了ポイントを削除して再構成する必要があります。 また、ビジネスイベントを非アクティブにし、環境で構成されていた新しいエンドポイントに対して、再度有効化する必要があります。
 - LCSにてプロジェクトの所有者、または環境マネージャの役割を持つすべてのユーザーは、本稼働以外のすべての環境の SQL およびマシンの資格情報にアクセスできます。
-- データベースは同じ Azure の地理的領域でホストされている必要があります。
+- データベースが Spartan で管理されていない場合は、データベースを同じ地理上の Azure リージョンでホストする必要があります。  SQL server の完全修飾アドレスの一部に ' spartan ' が含まれていれば、データベースは Spartan に管理されています。
 - 実行元の環境で割り当てられたデータベースの容量は、実行対象の環境のデータベースの最大容量よりも小さくする必要があります。
 
 ## <a name="steps-to-complete-after-a-restore-is-done-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境で復元後に実行する手順

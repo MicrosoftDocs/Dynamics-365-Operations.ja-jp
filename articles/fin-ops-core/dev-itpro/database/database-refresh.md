@@ -3,7 +3,7 @@ title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 02/02/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3f0e19a218f950f9524e5431e9f5a74056ccf0f
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 1c31d92410a3aca95dcbd626e913a684c285e57e
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113675"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830733"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -80,7 +80,7 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは完全に処理され復元が開始される前にターゲット システムで停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 これにより、いずれかのシステムから Azure ストレージにオーファン ファイルが存在しないことが保証されます。 これは、データベースがターゲット環境にリストアされた後にオーファン ファイルを処理できないため重要です。 復元後、統合ジョブを再開することができます。
 - LCS でプロジェクト所有者または環境マネージャーのロールを持つユーザーは、すべての非実稼働環境の SQL とマシンの資格情報にアクセスできます。
-- データベースは同じ Azure の地理的領域でホストされている必要があります。
+- データベースが Spartan で管理されていない場合は、データベースを同じ地理上の Azure リージョンでホストする必要があります。  SQL server の完全修飾アドレスの一部に ' spartan ' が含まれていれば、データベースは Spartan に管理されています。
 - 実行元の環境で割り当てられたデータベースの容量は、実行対象の環境のデータベースの最大容量よりも小さくする必要があります。
 
 ## <a name="steps-to-complete-after-a-database-refresh-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース更新後に実行する手順

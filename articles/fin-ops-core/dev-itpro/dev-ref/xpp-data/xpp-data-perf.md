@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 150273
 ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: a00a419ec942c06d1e9af9a4a67f168a06a020af
-ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
+ms.openlocfilehash: ed433f69183b4eb323f4de6b9115cdb921125807
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637832"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978198"
 ---
 # <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セットベースからレコード単位への操作の変換
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: e6db2eca39b216fc4a4e9cfec0447a04c643d49d
-ms.sourcegitcommit: e69cfc74e9dbce64ae0e1ab7cd441e5ae6efd4c9
+ms.openlocfilehash: df6c57728441755c8ed38a72ab788bb930030c3f
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353701"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887152"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -71,8 +71,8 @@ ms.locfileid: "3353701"
 - **レベル 2 環境: 標準承認テスト**: サブスクリプションの期間用に標準承認テスト (UAT) インスタンスが 1 つ用意されています。 このインスタンスは、ユーザーが UAT、統合テスト、トレーニングに使用できる非運用環境マルチボックス インスタンスです。 追加のサンドボックス/ステージング インスタンスは、オプションのアドオンとして別途購入することができます。
 - **実稼働環境**: テナントあたり 1 つの生産インスタンスが用意されています。 生産マルチ ボックス インスタンスには、障害復旧と高可用性が含まれています。 実装が運用段階に近づき、Microsoft Dynamics Lifecycle Services (LCS) 手法の必要なアクティビティと正常な運用評価が完了するとプロビジョニングされます。 また、いくらかのファイル ストレージとデータベース ストレージはサービスに含まれます。
 
-    - **ファイル ストレージ:** すべての顧客は、ファイルまたはバイナリ データ用のファイル/Azure blob クラウド ストレージを 100 GB 受け取ります。 その他のファイル/blob ストレージは購入することができます。
-    - **データベース ストレージ:** すべてのサブスクリプションには、追加料金なしで顧客ごとに 10 GB の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージの詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
+    - **ファイル ストレージ:** すべての顧客は、ファイルおよびバイナリ データ用のファイル/Azure blob クラウド ストレージの一定の量を受け取ります。 その他のファイル/blob ストレージは購入することができます。
+    - **データベース ストレージ:** すべてのサブスクリプションには、追加料金なしで顧客ごとに一定の量の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージ、および現在含まれている無料のファイルとストレージ容量の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
     
 > [!IMPORTANT]
 > Microsoft は、サービスとデータの高い可用性をお約束するとともに、Dynamics 365 ソフトウェアライセンス契約 (SLA) の一環として、サービスのダウンタイムを最小限に抑えることを約束しています。 SLA の対象は、非本番環境には適用されません。
@@ -88,7 +88,7 @@ ms.locfileid: "3353701"
 | 生産                      | 生産システムの準備完了時 | 生産配置要求を LCS に提出する必要があります。 展開は、Dynamics サービス エンジニア リング (DSE) チームによって 2 営業日以内に行われます。 |
 
 > [!IMPORTANT]
-> 常に、`dynadmin@customer.com` などの**名前のない**アカウントを使用して環境を配置します。 このトポロジは、ビルド管理を簡略化し、Azure DevOps ソース リポジトリを自動的に初期化するため、作成およびテスト環境を展開して使用するには、ビルド トポロジを使用します。
+> 常に、`dynadmin@customer.com` などの**名前のない**アカウントを使用して環境を配置します。 すべての環境で、同じ専用の環境の管理者アカウントを使用することを強くお勧めします。 このトポロジは、ビルド管理を簡略化し、Azure DevOps ソース リポジトリを自動的に初期化するため、作成およびテスト環境を展開して使用するには、ビルド トポロジを使用します。
 
 ### <a name="production-system-readiness"></a>生産システムの準備
 
@@ -117,7 +117,7 @@ ms.locfileid: "3353701"
 ![環境の目的と複雑度](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
-> 常に、`dynadmin@customer.com` などの**名前のない**アカウントを使用して環境を配置します。 環境に、ステータスと保守を担当する所有者を割り当てます。 Go-Live 後、新しいリリースで作業する場合、生産をサポートするために追加のレベル 2 以上の環境を取得します。
+> 常に、`dynadmin@customer.com` などの**名前のない**アカウントを使用して環境を配置します。 環境に、ステータスと保守を担当する所有者を割り当てます。 すべての環境で、同じ専用の環境の管理者アカウントを使用することを強くお勧めします。 Go-Live 後、新しいリリースで作業する場合、生産をサポートするために追加のレベル 2 以上の環境を取得します。
 
 ### <a name="deployment-considerations-for-development-environments"></a>開発環境での配置に関する考慮事項
 

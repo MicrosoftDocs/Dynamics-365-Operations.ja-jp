@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e44c7f5455e55484482f5494234db67adc0779af
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 2fee73f2f392eaa2332ee35d07b739343aa3ebb8
+ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775161"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3901484"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -36,8 +36,9 @@ ms.locfileid: "3775161"
 
     - [二重書き込みを使用する主な理由](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [二重書き込みは、Customer Engagement アプリの開発者と設計者に取って何を意味しますか?](dual-write-overview.md#developer-architect)
-    
+
 + [二重書き込みの新機能および変更された機能](whats-new-dual-write.md)
++ [よく寄せられる質問](dual-write-faq.md)    
     
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
@@ -51,7 +52,8 @@ ms.locfileid: "3775161"
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
     + [エンティティ マップの二重書き込みの有効化](enable-entity-map.md)
 
-+ [デュアル書き込みの通貨データ タイプの移行](currrency-decimal-places.md)
++ [二重書き込みの通貨データ型の移行](currrency-decimal-places.md)
++ [販売注文の状態フィールドのマッピングを設定](sales-status-map.md)
 
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 

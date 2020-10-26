@@ -1,9 +1,9 @@
 ---
 title: AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から最新の Finance and Operations にアップグレードする詳細なプロセスを説明します。
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 106163
 ms.assetid: ''
 ms.search.region: Global
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 258bb16c1410b629a68ac4569a78323649aa4165
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 5f4a083871a8c5af3bba8ed47707f67bce69e144
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3112770"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830763"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -68,6 +68,8 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 - World Wide Web 公開サービス
 - Dynamics 365 for Finance and Operations バッチ管理サービス
 - Management Reporter 2012 処理サービス
+- Microsoft Dynamics Lifecycle Services 診断サービス
+- データ インポート/エクスポート サービス
 
 次に、元の AXDB データベースを **AXDB_orig** に名前を変更します。 このデータベースは、後でコードを開発する際に参照する場合があります。
 

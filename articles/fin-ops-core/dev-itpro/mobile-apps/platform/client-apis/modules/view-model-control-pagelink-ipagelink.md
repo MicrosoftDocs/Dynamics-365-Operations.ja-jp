@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1a61d5da4e509804869649a376a9d56c0c1d36b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5fcbfd9746178f238769d4675a422c4596681adf
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183111"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975041"
 ---
 # <a name="pagelink-module"></a>ページリンク モジュール
 

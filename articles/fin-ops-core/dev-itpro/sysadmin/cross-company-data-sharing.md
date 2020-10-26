@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8d8a217e4ff8cd70246b511e8b8458f69403d21d
-ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
+ms.openlocfilehash: 816c9613206a88f37ac722083e6315d09398e673
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3423002"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887180"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
@@ -106,7 +106,7 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 ## <a name="customer-and-vendor-master-data-sharing"></a>顧客および仕入先のマスター データの共有
 顧客および仕入先のマスタ データ共有により、複数の会社間で顧客および仕入先のデータを共有することができます。 この機能に関してご検討されている場合は、[データ共有申請](https://aka.ms/MSDYN365FODataSharing)に記入して、サポートに問い合わせてください。
 
-バージョン 10.0.12 のプラットフォーム更新プログラムがリリースされたため、**機能管理**モジュールの**マスター会社共有**機能を使用して、顧客および仕入先のマスター データ共有を有効にすることができます。 最初にアンケートを記入する必要はありません。 上で述べたレコードおよび会社の数の制限を考慮することが重要です。
+バージョン 10.0.12 のプラットフォーム更新プログラムがリリースされたため、**機能管理**モジュールの**顧客および仕入先のマスター データ共有**機能を使用して、顧客および仕入先のマスター データ共有を有効にすることができます。 最初にアンケートを記入する必要はありません。 上で述べたレコードおよび会社の数の制限を考慮することが重要です。
 
 > [!NOTE]
 > 顧客または仕入先に対する既定の分析コードの設定は、会社間で共有することはできません。 会社間のデータ共有用に顧客または仕入先レコードの構成すると、**DefaultDimension**フィールドが無効になり、データ共有ポリシーに含まれることができません。

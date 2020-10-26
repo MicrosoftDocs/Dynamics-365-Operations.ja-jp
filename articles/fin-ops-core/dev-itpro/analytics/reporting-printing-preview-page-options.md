@@ -3,7 +3,7 @@ title: ドキュメント レポートのプレビュー オプション
 description: このトピックでは、埋め込みドキュメント レポート プレビューアーで使用できるオプションについて説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 9215ee21768df7e1501724afb14e4d652a8e64a8
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 87e294ba26358d7336bf5b95ba1f8cef184775b4
+ms.sourcegitcommit: b6d255a53754ed97e17a5cf5eb23383e46584060
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652204"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "3796944"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 
 Finance and Operations アプリは、埋め込み PDF ビューアーでのドキュメントのプレビュー時に使用するオプションをさらに拡張して提供します。 このトピックでは、**エクスポート**と**ネットワーク プリンター** オプションについて説明します。

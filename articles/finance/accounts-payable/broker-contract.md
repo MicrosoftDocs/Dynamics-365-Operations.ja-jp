@@ -8,19 +8,20 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
 audience: IT Pro
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f6354784191ee071cca9cf3e9a16f1ea5c851f33
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 307d1e3b5d7e9e24b0ba8fd4e923189bb08dca42
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180473"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976707"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 
@@ -119,7 +120,7 @@ ms.locfileid: "2180473"
 
 顧客が販売注文の一部の単位を返品した場合、ブローカーは返品された数量に関連する手数料を得る資格を失った可能性があります。 この場合、一部の金額の 2 つ目の請求を承認する必要があります。 **買掛金管理** \> **ブローカーおよびロイヤリティ** \> **ブローカー請求**を選択し、請求を選択します。 **承認** フィールドに、合計数量から返品単位を引いた数を入力します。 アクション ウィンドウで、**承認**を選択します。
 
-![部分的に請求を処理](./media/broker-contract-management-process-claim.png "部分的に請求を処理")
+![請求の部分処理](./media/broker-contract-management-process-claim.png "請求の部分処理")
 
 **承認済** フィールドの値と **修飾** フィールドの値の間に違いがある場合、**差額** フィールドに記録されます。 これらの値は、請求がまだ未決済であることと、請求が終了と見なされる前に差額を処理する必要があることを示しています。
 

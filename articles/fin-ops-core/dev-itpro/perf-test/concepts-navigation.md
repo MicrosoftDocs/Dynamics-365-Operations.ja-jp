@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 6743e4b66f9433d9d550108794358a2c342bb921
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: d26d8f3db703407f8d8523db0f16e64c4b56aa3f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270273"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975356"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3708fa711a424444a7a9ac1a385986e9ec17089
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c160269f2173d8112bfd3e620518e268b30bb30e
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191671"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893377"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -62,7 +62,7 @@ Finance and Operations アプリケーションは、エントリ ポイント�
 
 -   **Lifecycle Services (LCS)** – LCS は、広範なライフサイクル関連の機能を可能にするマルチ テナントの共有サービスです。 このリリースに固有の機能には、ソフトウェア開発、顧客プロビジョニング、サービス レベル アグリーメント (SLA) の監視、およびレポート機能が含まれます。
 -   **Finance and Operations** – VM インスタンスは、LCS によって Azure サブスクリプションに配置されます。 デモ、開発/テスト、高可用性の運用トポロジなど、さまざまなトポロジが利用できます。
--   **Microsoft サービスを共有** – Finance and Operations アプリケーションは様々な Microsoft のサービスを使用して、顧客がシングル サインインや、Finance and Operations アプリケーション、Microsoft Office 365 および他のオンライン サービス間での定期管理および Microsoft との請求関係を管理できる「One Microsoft」ソリューションを有効にします。
+-   **Microsoft サービスの共有** – Finance and Operations アプリケーションは様々な Microsoft のサービスを使用して、「One Microsoft」ソリューションを有効にします。このソリューションでは、顧客は、Finance and Operations アプリケーション、Microsoft 365、および他のオンライン サービス間でのシングル サインイン、サブスクリプション管理および Microsoft との請求関係を管理することができます。
 
 Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など、Azure プラットフォームの多くの機能はいくつかの名前に使用されます。  共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。
 

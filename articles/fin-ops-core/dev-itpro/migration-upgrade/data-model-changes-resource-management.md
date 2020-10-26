@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 202281
 ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4c231e1c436e78386efcb3915b38a43e32effce0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 351797992f2229a6b027bde44f73ffc9bab30e40
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183167"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976938"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 

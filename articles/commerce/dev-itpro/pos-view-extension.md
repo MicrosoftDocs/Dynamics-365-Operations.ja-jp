@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 22783d09f0b3490e10de72e3fc7f037bd1e07565
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: 7b8fd06e732d1528fce5ed459e63822c53da4889
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699550"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835842"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -77,8 +77,8 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | PickingAndReceivingDetailsView (高度な倉庫)  | 無                            | 有                          | 有           |
 | SalesInvoiceDetailsView (10.0.11) | 無                            | 無                          | 有           |
 | SalesInvoicesView (10.0.11) | 無                            | 有                          | 無           |
-| InventoryDocumentShippingAndReceivingView (10.0.13) | 無                            | 無                          | 有           |
-| InventoryDocumentListView (10.0.13) | 無                            | 無                          | 有           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | なし                          | あり           |
+| InventoryDocumentListView  | なし                            | はい (10.0.15)                          | はい (10.0.13)          |
 
 
 

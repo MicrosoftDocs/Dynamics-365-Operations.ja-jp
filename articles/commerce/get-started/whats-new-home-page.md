@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce の各リリースにおける新しい機能と変更された機能について説明するトピックを示します。
 author: josaw1
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 05edf0d2d4bcdafb301eb09ced6e4aa845b2d3ba
-ms.sourcegitcommit: 6df6bff8d5af14a50cc879a2100a34ca8fc87be9
+ms.openlocfilehash: 75fe393b27fd5fe20fc4cade4a00f5070a5cbe5e
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "3619548"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958807"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の新機能および変更された機能 
 
@@ -31,8 +31,9 @@ ms.locfileid: "3619548"
 ## <a name="releases-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のリリース
 Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューにリリースされました。 コマースの各リリースでの新機能や変更事項を確認するには、次のトピックを参照してください。
 
-| バージョン | ビルド番号 | 自動更新の可用性 | 詳細情報 |
+| バージョン | ビルド番号 | 自動更新の可用性 | 詳細 |
 |---------|--------------|--------------|-------------|
+| 10.0.13  |   10.0.569        | 2020 年 10 月 | [Dynamics 365 Commerce バージョン 10.0.13 の新機能および変更された機能](whats-new-commerce-10-0-13.md) |
 | 10.0.12  |   10.0.507        | 2020 年 8 月 | [Dynamics 365 Commerce バージョン 10.0.12 の新機能および変更された機能](whats-new-commerce-10-0-12.md) |
 | 10.0.11  |   10.0.464        | 2020 年 7 月 | [Dynamics 365 Commerce バージョン 10.0.11 の新機能および変更された機能](whats-new-commerce-10-0-11.md) |
 | 10.0.10  |   10.0.420        | 2020 年 5 月 | [Dynamics 365 Commerce バージョン 10.0.10 の新機能および変更された機能](whats-new-commerce-10-0-10.md) |
@@ -41,7 +42,7 @@ Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューに�
 
 
 ## <a name="releases-before-february-2020"></a>2020 年 2 月より前のリリース
-2020 年 2 月より前のリリースの新機能または変更点を確認するには、次のトピックを参照してください。
+2020 年 2 月より前のリリースの新機能または変更事項を確認するには、次のトピックを参照してください。
 
 
  **リリース**                                                           | **バージョン** | **ビルド番号** | **使用可能性** | **詳細情報**                                                                                                                                                                                                           |

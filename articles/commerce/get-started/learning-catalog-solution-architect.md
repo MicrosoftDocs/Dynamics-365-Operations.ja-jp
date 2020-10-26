@@ -5,18 +5,21 @@ author: margoc
 ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
+ms.prod: ''
+ms.service: Dynamics365Operations
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 02c0dbc3c5d2c9f28fcf7ada01a227ed8e1b99ca
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 02158c328bc4014b873bcad925f91a003f15d14c
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3647254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821096"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-solution-architects"></a>Dynamics 365 Commerce ソリューション アーキテクトのラーニング カタログ
 
@@ -38,4 +41,4 @@ ms.locfileid: "3647254"
 
 | コンテンツ  | 説明  | 書式設定  | 期間    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Dynamics 365 Commerce の配置](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | このラーニング パスでは、各小売業者のビジネス ニーズに合った正しいトポロジを使用して、Commerce 実装を成功させるために、Dynamics 365 Commerce 環境の配置およびプロビジョニング後の手順の実行方法について説明します。 | 無料の自習型オンライン学習パス | 5 時間   |
+| [Dynamics 365 Commerce の展開と拡張](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | このラーニング パスでは、各小売業者のビジネス ニーズに合った正しいトポロジを使用して、Commerce 実装を成功させるために、Dynamics 365 Commerce 環境の配置およびプロビジョニング後の手順の実行方法について説明します。 | 無料の自習型オンライン学習パス | 5 時間   |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 3326b9c4d99bc3f2d4f1bedc6220b1c2c61a950f
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 1f4ad175053a340b88615231660591798e1f7b7d
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621422"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967348"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
@@ -104,7 +104,7 @@ Common Data Service の基本フィールドには文字列型のフィールド
 
 Finance and Operations エンティティのリレーションは、1 対多 (1: n) または多対 1 (n:1) のリレーションとしてモデル化されます。 これらのリレーションは、Common Data Service の仮想エンティティのリレーションシップとしてモデル化されています。 多対多 (n:n) のリレーションは、Finance and Operations ではサポートされていないことに注意してください。
 
-たとえば、Finance and Operations では、エンティティ A がエンティティ B への外部キーを持っている場合、このリレーションは、Common Data Service の仮想エンティティ A で n:1 のリレーションシップとしてモデル化されます。 Common Data Service でのこのリレーションシップのスキーマ名は、名前付け規則 **mserp\_FK\_\<source entity name\>\_\<relation name\>** を使用します。 この名前付け規則では、最大文字列長が 120 文字になっています。 スキーマ名が 120 文字を超える名前を生成するリレーションは、Common Data Service の仮想エンティティで生成されません。
+たとえば、Finance and Operations では、エンティティ A がエンティティ B への外部キーを持っている場合、このリレーションは、Common Data Service の仮想エンティティ A で n:1 のリレーションシップとしてモデル化されます。 Common Data Service でのこのリレーションシップのスキーマ名は、名前付け規則 **mserp\_FK\_\<source entity name\>\_\<relation name\>** を使用します。 この名前付け規則では、最大文字列長が 92 文字になっています。 スキーマ名が 92 文字を超える名前を生成するリレーションは、Common Data Service の仮想エンティティで生成されません。
 
 このリレーションシップの外部名は、名前付け規則 **FK\_\<relation name\>** を使用します。 外部名は、Finance and Operations に送信されるクエリが作成されるときの Finance and Operations におけるリレーションを決定するために使用されます。
 
@@ -115,7 +115,7 @@ Common Data Service の仮想エンティティ内のリレーションシップ
 要約すると、次のいずれかの理由により、別の Finance and Operations 仮想エンティティとのリレーションシップが仮想エンティティに存在しない場合があります。
 
 - リレーションシップに参加している Finance and Operations エンティティは、仮想エンティティとして存在しません。
-- リレーションシップの名前の長さは、120 文字を超えています。
+- リレーションシップの名前の長さは、92 文字を超えています。
 
 Finance and Operations 仮想エンティティの一部が Common Data Service で生成されたときにエラーが発生した場合 、仮想エンティティはまったく作成されません。 上記のいずれかの理由でリレーションシップが存在しない場合は、エラーとは見なされません。
 

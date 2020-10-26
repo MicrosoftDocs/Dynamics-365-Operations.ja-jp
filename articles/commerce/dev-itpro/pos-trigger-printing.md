@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: c18efb796111ab6109eba3d848fae5007945e32b
-ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
+ms.openlocfilehash: 8c5da02464c9b94ea6ba70434a0cc098cc12e1df
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577430"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835868"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 
@@ -213,6 +213,11 @@ ms.locfileid: "3577430"
 | PreCreateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが作成される前に実行 (注文入力後に実行) されます。 |
 | PreUpdateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが更新される前に実行されます。 |
 
+## <a name="inventory-triggers"></a>在庫トリガー
+| トリガー              | 種類           | 説明                                             | リリース     |
+|----------------------|----------------|---------------------------------------------------------|--------------------------|
+| PreCreateInventoryDocumentTrigger | 解約可能 | このトリガーは、入庫/出庫ドキュメントが作成される前に実行 (注文入力後に実行) されます。 | 10.0.15 |
+| PreUpdateInventoryDocumentTrigger | 解約可能 | このトリガーは、入庫/出庫ドキュメントが更新される前に実行されます。 | 10.0.15 |
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 この例では、ユーザーがトランザクションを中断したときに、カスタム レシートが印刷されます。 この例では、**PostSuspendTransactionTrigger** トリガーを実装し、既存の周辺機器 API を使用してカスタム レシートを印刷します。

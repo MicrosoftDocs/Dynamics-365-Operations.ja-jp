@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2da574c29d3311085322814b5c0a9295793a1bf3
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 1580c3ac5caf6b167ab7f4a78c0e200f5d64f163
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124836"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975055"
 ---
 # <a name="control-module"></a>管理モジュール
 
