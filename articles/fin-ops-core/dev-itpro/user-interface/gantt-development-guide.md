@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ms.search.region: Global
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 580e72c841e5463047791d3641ab8696c30f4923
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 896ad761630c1af1ac0a2b21f1efcd7773bf3c01
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329885"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982373"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

@@ -3,7 +3,7 @@ title: 警告ルールの作成
 description: このトピックでは、警告に関する情報を提供し、警告ルールを作成して到着日や発生する特定の変更などのイベントについて通知する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075927"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970682"
 ---
 # <a name="create-alert-rules"></a>警告ルールの作成
 
@@ -92,3 +92,14 @@ ms.locfileid: "3075927"
 7. **件名**フィールドの**警告の対象**クイック タブで、電子メール メッセージの既定の件名ヘッダー情報を受け入れるか、新しい件名を入力します。 テキストは、警告が発生したときに受信する電子メール メッセージの件名のヘッダーとして使用されます。 警告をビジネスイベントとして送信する場合は、**外部に送信**を**はい**に設定します。
 8. **メッセージ**フィールドにオプションのメッセージを入力します。 テキストは、警告の発生時に受信するメッセージとして使用されます。
 9. **OK** を選択して、設定を保存し、警告ルールを作成します。
+
+## <a name="limitations-and-workarounds"></a>制限事項と回避策
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>フォームのセカンダリ データ ソースに対して警告を作成するための回避策
+フォームの一部のセカンダリ データ ソースに対して警告を作成することはできません。 たとえば、顧客または仕入先の転記プロファイル フォームで警告を作成するときは、ヘッダー (CustLedger または VendLedger) のフィールドのみが利用可能で、分析コード勘定は利用できません。 この制限の回避策は、**SysTableBrowser** を使用してそのテーブルを基本データ ソースとして開きます。 
+1. **SysTableBrowser** フォームでテーブルを開きます。
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. SysTableBrowser フォームから警告を作成します。
+

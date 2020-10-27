@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 54b7705d7d04cae3fa9e4fac00541d12cc564752
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 3f4039151349fe2fd2695648825885f1dc4a4773
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812051"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979074"
 ---
 # <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 
@@ -108,7 +108,7 @@ DTS は .docx 形式の翻訳レビュー ファイルを提供します。 要�
 + 追加または行を削除しないでください。
 + 行または列の順序を変更しないでください。
 + 追加または赤色のタグを削除しないでください。 ほとんどの赤いタグは、書式設定およびスタイルを表します。
-+ 赤いタグを移動する必要がある場合は、開始タグ (たとえば、**\<116\>**) とその終了タグ (**\<116/\>**) を切り替えないように注意します。
++ 赤いタグを移動する必要がある場合は、開始タグ (たとえば、**\<116\>**) とその終了タグ (**\</116\>**) を切り替えないように注意します。
 
 ### <a name="regenerate-output-files"></a>出力ファイルの再生成
 .docx レビュー ファイルのレビューと編集が完了したら、出力ファイルをソース ドキュメント形式で再生成する必要があります。 最新の翻訳 (つまり、ユーザーが編集したバージョンの翻訳) をターゲット言語でドキュメント ファイルに適用することができます。

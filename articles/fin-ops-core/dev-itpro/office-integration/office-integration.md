@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba56cd8d1ae2f798c3fb2a67a4eb5e6b4d388e95
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e8443f8d200e31e09eafe67d3d4ebf6ff445979c
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812037"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893395"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -41,7 +41,7 @@ Microsoft Excel は、データを変更してすばやく分析することが�
 
 [![Excel データ コネクタ アプリのスクリーン ショット](./media/1_office.png)](./media/1_office.png)
 
-### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャ 対 Finance and Operations アーキテクチャ
+### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャと Finance and Operations のアーキテクチャ
 
 バージョン間にはいくつかの違いがあります。 両方で、Excel で実行する軽量のアドインを構築し、アプリケーションに接続するサービスを使用します。
 
@@ -85,7 +85,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 レコードを追加するには、テーブルのすぐ下の行に入力するか、Tab キーを使用してテーブルの最後の行の最後のセルから移動します。 レコードを削除するには、行ラベル (1、2、3、など) をクリックして行を選択し、その行のすべてのセルを削除します。 変更を発行するには、**発行** をクリックします。 **メッセージ**ダイアログ ボックスには、追加、編集、および削除されたレコード数が表示されます。
 
 ## <a name="workbook-designer"></a>ブック デザイナー
-**ブック デザイナー** ページを使用すると、エンティティおよび一連のフィールドを含む、編集可能なカスタム エクスポート ブックを設計することができます。 **ブックブック デザイナー** (**ExportToExcelWorkbookDesigner**)] ページを開くには、**Common&gt;Common&gt;Office統合&gt;Excel ワークブック デザイナー** をクリックします。 データ編集を公開する前に、エンティティのすべてのキー フィールドは Excel テーブルに存在する必要があります。 キー フィールドには、それらの横に鍵の記号があります。 レコードを正常に作成または更新するには、Excel テーブルにすべての必須フィールドがなければなりません。 必須フィールドには、その横にアスタリスク (\*) があります。 
+**ブック デザイナー** ページを使用すると、エンティティおよび一連のフィールドを含む、編集可能なカスタム エクスポート ブックを設計することができます。 **ブックブック デザイナー** (**ExportToExcelWorkbookDesigner**) ページを開くには、**Common&gt;Common&gt;Office統合&gt;Excel ワークブック デザイナー** をクリックします。 データ編集を公開する前に、エンティティのすべてのキー フィールドは Excel テーブルに存在する必要があります。 キー フィールドには、それらの横に鍵の記号があります。 レコードを正常に作成または更新するには、Excel テーブルにすべての必須フィールドがなければなりません。 必須フィールドには、その横にアスタリスク (\*) があります。 
 
 [![必須項目の一覧を示すスクリーン ショット](./media/3_office.png)](./media/3_office.png) 
 
@@ -112,11 +112,11 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ### <a name="office-licensing"></a>Office ライセンス
 
-#### <a name="what-office-365-licenses-are-available"></a>どのような Office 365 ライセンスがありますか ?
+#### <a name="what-microsoft-365-licenses-are-available"></a>どのような Microsoft 365 ライセンスが使用可能ですか?
 
-「[Office 365 ライセンス オプション](https://products.office.com/business/compare-office-365-for-business-plans)」が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
+[Microsoft 365 ライセンス オプション](https://products.office.com/business/compare-office-365-for-business-plans) が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
 
-#### <a name="after-purchasing-an-office-365-license-what-needs-to-be-done-to-set-up-sharepoint-storage-for-attachments"></a>Office 365 のライセンスを購入した後、添付ファイル用に SharePoint ストレージを設定するために何を行う必要がありますか?
+#### <a name="after-purchasing-a-microsoft-365-license-what-needs-to-be-done-to-set-up-sharepoint-storage-for-attachments"></a>Microsoft 365 ライセンスを購入した後、添付ファイル用に SharePoint ストレージを設定するために何を行う必要がありますか?
 
 ドキュメント パラメーター フォームを開いて、SharePoint サーバーが自動的に検出および設定されていることを確認してください。 ここで、ドキュメント タイプを開くか作成し、"SharePoint" へのドキュメント タイプの場所を設定し、ファイルを保存する必要があるフォルダーを選択します。
 

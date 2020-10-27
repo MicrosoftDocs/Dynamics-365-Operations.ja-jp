@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2848831eea362bc418abb36786b00b1404b77706
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 703b77a8d40945ced8873f5ef514e1ec2c291e8c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191859"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985726"
 ---
 # <a name="numbersequenceconfig-type"></a>NumberSequenceConfig タイプ
 

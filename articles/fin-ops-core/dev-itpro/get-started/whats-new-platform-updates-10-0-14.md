@@ -3,7 +3,7 @@ title: Finance and Operations アプリ (2020 年 11 月) のバージョン 10.
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 55909bc0038702fa322fe575ed74d7777e41f173
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: d34ff3d97524f34e7f1c0d1bcd344571766f3339
+ms.sourcegitcommit: 62d7a01564c4253d1268f5fdea5dd8c9f437df5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760690"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3795971"
 ---
 # <a name="platform-updates-for-version-10014-of-finance-and-operations-apps-november-2020"></a>Finance and Operations アプリ (2020 年 11 月) のバージョン 10.0.14 のプラットフォーム更新プログラム
 
@@ -37,9 +37,9 @@ ms.locfileid: "3760690"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
--  **複数行コントロールのドロップダウン リストを有効にする**<br>- この機能は、複数行文字列のコントロールのドロップダウンリスト/ルックアップ機能を追加します。 以前は、1 行入力の入力コントロールは、ドロップダウン リストに許可されています。<br>- コントロールでのルックアップ動作の有効化の詳細については、[ルックアップ コントロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/lookups-controls) を参照してください。
+-  [**複数行コントロールのドロップダウン リストを有効にする**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- この機能は、複数行文字列のコントロールのドロップダウンリスト/ルックアップ機能を追加します。 以前は、1 行入力の入力コントロールは、ドロップダウン リストに許可されています。<br>- コントロールでのルックアップ動作の有効化の詳細については、[ルックアップ コントロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/lookups-controls) を参照してください。
 
--  **グリッド機能での (プレビュー) グループ化の更新**<br>- この更新プログラムを使用すると、グループの展開/折りたたみを行ったり、グループ内のすべての行を選択または選択解除したりすることができるようになります。<br>- 詳細については、[グリッド機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities) を参照してください。
+-  [**グリッド機能での (プレビュー) グループ化の更新**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- この更新プログラムを使用すると、グループの展開/折りたたみを行ったり、グループ内のすべての行を選択または選択解除したりすることができるようになります。<br>- 詳細については、[グリッド機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

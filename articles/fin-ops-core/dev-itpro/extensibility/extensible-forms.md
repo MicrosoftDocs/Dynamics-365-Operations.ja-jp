@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 35a96953c561277a30adc82fa72a8dee95176f31
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5ae07c55c86e005e49f6f43c76dbda401fc231ee
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191634"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984713"
 ---
 # <a name="write-extensible-forms"></a>拡張可能フォームの書き込み
 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 253274
 ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 09860ae24a9f66d9516808a21e1548376d58e738
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 58abd057942575d78fc6ce2c27e08a1629910a73
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124839"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979716"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 

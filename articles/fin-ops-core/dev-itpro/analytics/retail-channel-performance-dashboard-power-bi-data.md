@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5270495c6e3d4da0a1da0adc7a7e8d031e47448
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 94811ae12bba1ac72c0bd6d4603ef33ff9e292e1
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772476"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893295"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 
@@ -42,13 +42,13 @@ Retail チャンネル パフォーマンス PowerBI.com ソリューション�
 
 ## <a name="connect-the-retail-channel-performance-powerbicom-solution-to-a-dynamicsax-data-source"></a>Retail チャネルの実績 PowerBI.com ソリューションを Dynamics AX データ ソースに接続します。
 1. https://www.powerbi.com に移動し、**サインイン**をクリックします。 アカウントがない場合は、サインアップし、新しい Power B を無料でプレビューできます。
-2. サインインするには、Power BI アカウントを持つ Microsoft Office 365 アカウントを入力します。
+2. サインインするには、Power BI アカウントを持つ Microsoft 365 アカウントを入力します。
 3. ワークスペースが表示されたら、左のナビゲーション ウィンドウの下部にある**データの取得**をクリックします。
 4. **サービス** セクションで、**取得**をクリックします。
 5. スクロールするか検索して **Microsoft Dynamics AX Retail channel performance** を見つけ、**今すぐ入手**をクリックします。
 6. 次の形式に Dynamics AX の URL を入力します。`https://<tenant>.cloudax.dynamics.com` (例えば、`https://YourAOSTenant.cloudax.dynamics.com`) です。 次に、**Next** をクリックして Dynamics AX データ ストレージからこの Power BI ダッシュボードにデータをプルします。
 7. 認証方法として **oAuth2** を選択し、**署名する** をクリックします。
-8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Office 365 のアカウントを入力します。
+8. サインインするには、Dynamics AX 環境にアクセスするアクセス許可を持つ Microsoft 365 のアカウントを入力します。
 9. データが Dynamics AX から Power BI に正常に引き込まれた後、左のナビゲーション ウィンドウで**小売チャネルの実績** ダッシュボードをクリックして、Power BI の個人の**小売チャンネル パフォーマンス ダッシュボード**を表示することができます。
 
     [![小売チャンネル パフォーマンス ダッシュボード](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)

@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 98d7d70b0c6fa39b1611df47b1f45e4feeadb144
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 62fd0b5bef6ca10ea35c6ee6036e941de8d10c02
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183155"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979718"
 ---
 # <a name="upgrade-from-ax-2012---prepare-for-go-live"></a>AX 2012 からのアップグレード - 稼働の準備
 

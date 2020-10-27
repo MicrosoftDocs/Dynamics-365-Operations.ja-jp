@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cbf45b7c847cc562e9d51899910b0d1cfcf140b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 15d882fef578876e1af4a443d32556ceae4b4749
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033047"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893121"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
 
@@ -100,8 +100,6 @@ LCS コード アップグレード サービス構成のコードをアップ�
 3.  すべてのフォームにフォーム パターンとサブ パターンを適用します。
 4.  すべてのシナリオが、カスタム パターンに対して異なるサイズで、複数のブラウザーで動作することを検証します。
 5.  記述してテストを実行します。
-
-<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
 
 ## <a name="best-practice-setup"></a>ベスト プラクティスの設定
 ベスト プラクティス フレームワークには、移行を完了するために解決する必要があるベスト プラクティス警告のサブセットがあります。 これは、Dynamics AX 2012 R3 またはそれ以前から移行する場合に適用されます。

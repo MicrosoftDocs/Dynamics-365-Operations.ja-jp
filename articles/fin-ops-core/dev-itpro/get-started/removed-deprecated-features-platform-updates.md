@@ -3,7 +3,7 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819892"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971448"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -34,6 +34,22 @@ ms.locfileid: "3819892"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
+
+> [!NOTE]
+> バージョン 10.0.15 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | メタデータ修正プログラムは、バージョン 8.1 で 2018 年 7 月に導入された [One Version](../../fin-ops/get-started/one-version.md) サービス更新プログラムではサポートされなくなりました。 |
+| **別の機能で置き換えられているか?**   | サポートされているバージョンでは、個別のメタデータ修正プログラムは使用できません。 代わりに、累積的な品質更新が適用されます。 |
+| **影響を受ける製品領域**         | Visual Studio アドイン |
+| **配置オプション**              | 開発仮想マシン |
+| **ステータス**                         | バージョン 10.0.15 では、アドインが Visual Studio ツールに含まれなくなりました。 |
+
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.14 に対する Platform update
 
@@ -50,6 +66,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **影響を受ける製品領域**         | システム管理 |
 | **配置オプション**              | All |
 | **ステータス**                         | 2021 年 10 月までに、このフォームは削除されます。   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
 

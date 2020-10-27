@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 92013
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bab9b237a2b393d5bbac5191692defc452c802be
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: f645715521100e726413acdfb1b4a4dc4c3af3c9
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329926"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987322"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 

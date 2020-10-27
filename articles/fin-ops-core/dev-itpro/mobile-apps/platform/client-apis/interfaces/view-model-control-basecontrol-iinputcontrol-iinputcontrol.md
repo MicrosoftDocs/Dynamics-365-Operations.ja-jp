@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: de26396f67c86fb54ba12bd81cd7314f02f424e1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96a6457612b35731ee3d0a309beda37e486bcbbd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183142"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983963"
 ---
 # <a name="inputcontrol-type"></a>InputControl タイプ
 
@@ -135,7 +135,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -165,7 +165,7 @@ metadata(): [InputControlMetadata](view-model-control-basecontrol-iinputcontrol-
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[metadata](view-model-control-basecontrol-icontrol-icontrol.md#metadata) をオーバーライドします。
 
-#### <a name="returns-inputcontrolmetadataview-model-control-basecontrol-iinputcontrol-iinputcontrolmetadatamd"></a>[InputControlMetadata](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md) を返します
+#### <a name="returns-inputcontrolmetadata"></a>[InputControlMetadata](view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md) を返します
 
 
 
@@ -178,7 +178,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -191,7 +191,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

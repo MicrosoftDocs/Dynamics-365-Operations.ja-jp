@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 85839898abc1f7d442a5b44d2183df76955d032c
-ms.sourcegitcommit: 13cd491e205b77605da409c11d29374f1654b39f
+ms.openlocfilehash: 3657ba02b0b50f35b67569a5df21afc135ec0777
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433206"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979714"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 

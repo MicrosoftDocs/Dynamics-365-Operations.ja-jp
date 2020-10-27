@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 7b7c1771635b9998b17c1642d71caedc96d42ca8
-ms.sourcegitcommit: b621d223b6ac5606c122e0676a1e3cf5a4ed9602
+ms.openlocfilehash: 3ac6e6c7b66f18e54e4f1aaf1d193ec82fa5cbdd
+ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3700482"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3811200"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
@@ -97,7 +97,7 @@ ms.locfileid: "3700482"
 特定のユーザー フル ライセンス数あたりの合計は、*ベース* ライセンスと *Attach* のライセンスに分割されていません。
 
 > [!NOTE]
-> バージョン 10.1.13 のプラットフォーム更新プログラムのリリース以降に、特定のユーザー フル ライセンスとカスタム特権の評価の合計数が含まれます。 このレポートでは、*ベース* ライセンス要件と *Attach* ライセンス要件を区別することはできません。 したがって、ユーザーのフル ライセンス要件の合計のみが一覧表示されます。
+> バージョン 10.0.13 のプラットフォーム更新プログラムのリリース以降に、特定のユーザー フル ライセンスとカスタム特権の評価の合計数が含まれます。 このレポートでは、*ベース* ライセンス要件と *Attach* ライセンス要件を区別することはできません。 したがって、ユーザーのフル ライセンス要件の合計のみが一覧表示されます。
 
 ## <a name="additional-resources"></a>追加リソース
 

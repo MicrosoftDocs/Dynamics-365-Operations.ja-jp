@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベントおよび Azure Service Bus
 description: このトピックでは、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/04/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 022740fdb1dfe19497bc56c03a2c41d38d2ee3b2
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 1bae669f6da048887ecdf8fcdf9d761e6f105e5f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091737"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893349"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -208,7 +208,7 @@ ms.locfileid: "3091737"
 
     次に、顧客の支払いの詳細を含む通知電子メールの送信など、最終的なアクションを選択します。
 
-18. **電子メールの送信** アクションを検索し、自分の Microsoft Office 365 アカウントにサインインします。
+18. **電子メールの送信**アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 19. メッセージの本文および、必須項目を入力します。
 
     <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">

@@ -3,7 +3,7 @@ title: データベース移動の API - 参照 - v1 - ステータスの取得
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 37c6898eb8d51132f3d1ae5fa453a3029e7e75b8
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 15521d0f685cb69623c708cd066c45b8ad30278f
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150754"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830773"
 ---
 # <a name="get-status"></a>ステータスの取得
 
@@ -71,7 +71,7 @@ GET /databasemovement/v1/fetchstatus/project/12345/environment/5362377c-bc37-4f9
     "OperationActivityId": "6a90b45f-1764-4077-b924-3f4671540237",
     "ErrorMessage": null,
     "VersionEOL": "9999-12-31T23:59:59.9999999",
-    "ProjectId": "12345",
+    "ProjectId": 12345,
     "EnvironmentId": "5362377c-bc37-4f92-b30e-fe0c1e664cc0",
     "ActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
     "CompletionDate": null,

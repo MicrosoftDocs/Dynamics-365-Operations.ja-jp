@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベントおよび Azure Event Grid
 description: このトピックでは、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 6ab7c0081fec1688cdd57cdbfea10040813b5f51
-ms.sourcegitcommit: b6ecc60e33deef76b7248466c5747ac6f20d30ee
+ms.openlocfilehash: 1141646626280aed2d5aaf26b4f6066ac449340c
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "2691549"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893351"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]
@@ -164,7 +164,7 @@ ms.locfileid: "2691549"
 
     次に、顧客の支払いの詳細を含む通知電子メールの送信など、最終的なアクションを選択します。
 
-15. **電子メールの送信** アクションを検索し、自分の Microsoft Office 365 アカウントにサインインします。
+15. **電子メールの送信**アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 16. メッセージの本文および、必須項目を入力します。
 17. ロジック アプリを保存します。
 18. 顧客の支払いを転記して、ビジネス イベントをトリガーします。 そして、ロジック アプリが実行されていること、顧客の支払いの詳細が記載された電子メールを受信することを確認します。

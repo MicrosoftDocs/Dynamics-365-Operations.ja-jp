@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (2020 年 12 月)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (2020 年 11 月)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (2020 年 10 月)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (2020 年 8 月)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: グローバリゼーション
@@ -202,6 +204,10 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: 規制の更新
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: インド
+              items:
+                - name: 在庫移動オーダー
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: ロシア
               items:
                 - name: ロシアの概要
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: マスター プランのパフォーマンスの改善
                   href: master-planning/master-planning-performance.md
+                - name: スケジューリング エンジンのパフォーマンスの改善
+                  href: master-planning/scheduling-engine-performance.md
                 - name: マスター プランとマルチサイト機能
                   items:
                     - name: マスター プランとマルチサイト機能の概要
@@ -1939,6 +1947,8 @@
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: 製品モデルのルートの管理
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: 制約ベースの製品コンフィギュレーションの属性ベースの販売価格
+                      href: pim/attribute-based-product-configurator.md
                     - name: 製品コンフィギュレーション モデルの承認
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: 製品モデルのためのデータの転送
@@ -2035,7 +2045,9 @@
                       href: production-control/config-job-card-device.md
                     - name: ジョブ カード デバイスからの完了レポート
                       href: production-control/report-finished-job-device.md
-                    - name: 製造オーダー状態を逆行させる
+                    - name: 生産での作業者への Mixed reality ガイドの提供
+                      href: production-control/instruction-guides-in-production-overview.md
+                    - name: 製造オーダー ステータスを逆行させる
                       href: production-control/reverse-production-order-status.md
                     - name: 材料の例外の視覚化
                       href: production-control/improved-visibility-into-material-exceptions.md
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: ライセンス プレート ラベル印刷の有効化
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: 倉庫アプリからの移動オーダーの作成
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: 倉庫アプリのイベント処理
+                      href: warehousing/warehouse-app-events.md
                     - name: ピース ピッキング確認
                       href: warehousing/piece-picking-confirmation.md
                     - name: 梱包材および費用
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: プロセス ガイドのフレームワーク
                       href: warehousing/process-guide-framework.md
+                    - name: 在庫アプリの接続の問題のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: アップグレードおよび移行
                   items:
                     - name: 倉庫管理プロセスを Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードします

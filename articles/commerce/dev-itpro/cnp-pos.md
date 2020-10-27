@@ -18,17 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b62655b45756f70b43c7f9ef6bf0ef946d8a6e09
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: 3ebb4743d0e4a7cf2a604db97fe7330fa6113d4d
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765089"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818212"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。 この機能では特に、カーブサイド ピックアップなどの新しいシナリオを対象としています。
 

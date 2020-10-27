@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c84660ac4784146b71b73aa4826bc61a2a166ef8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 302affac9b97d960a7e6993e6a029a82d2c76d57
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191850"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982393"
 ---
 # <a name="row-type"></a>行タイプ
 
@@ -125,7 +125,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getcontrolbyid"></a>getControlById
 
@@ -141,7 +141,7 @@ getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-ic
 | ---- | ---- | ----------- |
 | id|string|id は valueKey か、またはリスト コントロール メタデータの displayKey になります|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getcontrolvaluebyid"></a>getControlValueById
 
@@ -166,7 +166,7 @@ getRowHeader(): [Control](view-model-control-basecontrol-icontrol-icontrol.md)
 
 
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getrowid"></a>getRowId
 

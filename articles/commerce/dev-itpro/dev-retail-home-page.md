@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b622068f896ab250453c098a6ca3b4f9bab7acd7
-ms.sourcegitcommit: 9ab68a85d0e842bf641e8c30eaddb201652084de
+ms.openlocfilehash: 45cb8dd53f535716a8b47942bb97b4d1ae2fe54f
+ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3695761"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3991437"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -73,7 +73,8 @@ ms.locfileid: "3695761"
 - [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
 - [管理者アクセスのないクラウド ホスト開発環境での開発](cloud-dev-box.md)
 - [Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
-- [POS カート ビュー イベントとハンドラー](cart-view-handlers.md)
+- [POS カート ビューのイベントおよびハンドラー](cart-view-handlers.md)
+- [カスタム ボタンを POS ヘッダー バーに追加](pos-header-bar.md)
 
 ## <a name="integrating-commerce"></a>コマースの統合
 -   [ブランドの作成と Retail Experience アプリへの適用](create-retail-experience-app.md)
@@ -123,6 +124,7 @@ ms.locfileid: "3695761"
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 - [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
 - [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)](retail-server-extension.md)
+- [外部アプリケーションでの Retail Server API の使用](consume-retail-server-api.md)
 
 ## <a name="ecommerce"></a>eCommerce
 -   [E コマース プラットフォーム ソフトウェア開発キット (SDK)](ecommerce-platform-sdk.md)

@@ -3,7 +3,7 @@ title: オンプレミスにおけるディザスター リカバリーの構成
 description: このコンテンツでは、ディザスター リカバリーに向けて Dynamics 365 Finance + 操作 (オンプレミス) を構成する方法と、プライマリ データセンターとセカンダリ データセンターの切り替えプロセスを構成する方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 581e55757765778ae7ce17cf0a14d3a74303c78f
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 1bc3f0f487a61cac7b9d3355d376aa391f97dc7a
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652021"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803177"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミスにおけるディザスター リカバリーの構成
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -213,8 +213,6 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
     UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
 ```
 
-> [!Note]
-> バージョン 10.0.13 は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases)を参照してください。
 
 #### <a name="version-10012-or-earlier"></a>バージョン 10.0.12、または以前
 

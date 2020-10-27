@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5efe76a3ad002248535238dec82f0370c4a02f6e
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d0d19753bd9bf8a86fe72bc88aa98ace54ee5347
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658891"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976906"
 ---
 # <a name="groupdesign-type"></a>GroupDesign タイプ
 

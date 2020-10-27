@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: rschloma
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50d882caa29d71c741ef09f85a16953478b146ad
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 3ec9b0dbb45d8d0e5914579fbd6bf848a53fd529
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033023"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980682"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 

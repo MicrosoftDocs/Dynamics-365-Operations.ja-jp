@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06f090972e789f2a5d51fa638ea5670ae6727a34
-ms.sourcegitcommit: 1daa297b0c09090a9c30c5f84bd7000e5b948a26
+ms.openlocfilehash: ebd567b65f9319c83ea39324948be648a0702ca8
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "3720708"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893383"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -68,8 +68,6 @@ OData REST エンドポイントを提供します。 このエンドポイン�
 
 > [!NOTE]
 > OData を使用してデータ エンティティを操作する場合、OData 呼び出しを正常に実行するには、エンティティ キーのすべてのフィールドを指定する必要があります。
-
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
 OData サービスを使用するためのコード例は、「[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication)」です。
 

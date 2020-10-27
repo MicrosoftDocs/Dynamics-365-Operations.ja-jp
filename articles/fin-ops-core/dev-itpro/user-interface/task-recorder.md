@@ -3,7 +3,7 @@ title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 08/27/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 113905fef2aed599ee4644d7bbdc8da6d5269a6d
-ms.sourcegitcommit: de44fa28a083eec1fd1e3100939e7a4f58dc5c3a
+ms.openlocfilehash: a5415719f60f47e6bee8d134cd2a0c3b99eb059a
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3731356"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803029"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 

@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 613d60b945cbce9eedd94c128d663f70c8e24dfb
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: db3b91d86c4f4900d9e75afcc9510e08c5670178
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811694"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979072"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 

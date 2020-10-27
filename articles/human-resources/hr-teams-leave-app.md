@@ -3,7 +3,7 @@ title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828947"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3929996"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -171,6 +171,22 @@ Teams 向けの Human Resources アプリをインストールすると、チー
 カレンダーには、直属の部下の承認済と保留中の休暇が表示されます。
 
 ![Teams の Human Resources アプリの休暇カレンダー](./media/hr-teams-leave-app-calendar.png)
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+Teams Human Resources アプリへのサインインまたは使用で問題が発生した場合は、次のトラブルシューティングの手順を実行してください。 トラブルシューティング後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリにサインインできない
+
+アプリにサインインできない場合は、Microsoft Teams へのサインインに使用しているアカウントが Dynamics 365 Human Resources の従業員レコードに関連付けられていない可能性があります。 システム管理者に連絡して、従業員レコードが正しく関連付けられていることを確認してください。
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリで休暇申請を承認する際のエラー
+
+Teams アプリで休暇申請を承認しようとしたときにエラーが発生した場合は、次のトラブルシューティングの手順を実行します。
+
+1. Microsoft Teams へのサインインに使用しているアカウントが、Dynamics 365 Human Resources にアクセスに使用しているアカウントと同じであることを確認します。
+
+2. 休暇承認のワークフロー設定を確認して、要求の有効な承認者であることを確認します。 休暇申請ワークフローの詳細については、[休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md) を参照してください。
 
 ## <a name="privacy-notice"></a>プライバシー通知
 

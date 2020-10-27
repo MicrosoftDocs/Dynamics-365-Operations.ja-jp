@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 0209f4e3035350b586cc7a4161a4d3251fadf60b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 935e08ea42d44db3c29a23006cb14dadbb8551f7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033031"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984711"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 

@@ -16,15 +16,15 @@ ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b2e4f16ef6f96261c819289e6ade76e15005ce0e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178657"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977530"
 ---
 # <a name="cost-accounting-terminology"></a>原価会計用語
 

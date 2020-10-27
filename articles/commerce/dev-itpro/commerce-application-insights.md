@@ -3,7 +3,7 @@ title: 拡張イベントを Application Insights に記録する
 description: このトピックでは、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/15/2020
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 18f605ba290575e5ed06e82ef334c673300048b6
-ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
+ms.openlocfilehash: 3bfac7da1ad0b585e7a86e5e595b6080f3052611
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823443"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce runtime (CRT) 拡張機能から [顧客の Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
+このトピックでは、Commerce Runtime (CRT) POS 拡張機能から[顧客の Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
 
 ## <a name="log-an-event-to-application-insights"></a>イベントを Application Insights に記録します
 
@@ -122,7 +122,7 @@ ms.locfileid: "3378955"
     ```
 
 4. プロジェクトを構築し、出力ライブラリと **Microsoft.ApplicationInsights.dll** ファイルを **..\\RetailServer\\webroot\\bin\\Ext** にコピーし、これを使用して配置とテストを手動で行います。
-5. **..\\RetailServer\\webroot\\bin\\Ext** フォルダで、 **CommerceRuntime.Ext.config** ファイルを開き、 **\<設定\>** セクションを事前に生成したアプリケーション 分析情報の インストルメンテーション キーで更新します。 次に例を示します。
+5. **..\\RetailServer\\webroot\\bin\\Ext** フォルダで、**CommerceRuntime.Ext.config** ファイルを開き、事前に生成した Applications Insights のインストルメンテーション キーで **\<settings\>** セクションを更新します。 次に例を示します。
 
     ```xml
     <add name="ext.AppInsightsKey" value="xxxxxxx"/>
@@ -170,7 +170,7 @@ ms.locfileid: "3378955"
 配置可能パッケージの作成方法の詳細については、 [配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\参照** フォルダーにコピーします。
-2. **BuildTools\\Customization.settings** ファイルを更新し、 **\<ItemGroup\>** セクションに次のエントリを追加します。
+2. **BuildTools\\Customization.settings** ファイルを更新し、**\<ItemGroup\>** セクションに次のエントリを追加します。
 
     ```xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\\Contoso.Diagnostic.dll" />
@@ -191,3 +191,122 @@ ms.locfileid: "3378955"
 9. 拡張機能が正常に展開された後、Commerce Scale Unit に対して有効化された Modern POS (MPOS) または POS (CPOS) のインスタンスを開きます。
 10. ユーザー定義の Application Insights 記録処理 を使用する拡張シナリオを実行します。
 11. Application Insights のクエリを更新し、拡張機能からのトレースが正しく記録されていることを確認します。
+
+## <a name="log-events-to-application-insights-in-the-pos-extension-projects"></a>POS 拡張プロジェクトで、イベントを Application Insights に記録する
+
+1. **RetailSDK\POS\Extensions** フォルダーに、**ライブラリ**という名前の新しいフォルダを作成します。
+2. コマンド プロンプトを開き、**ライブラリ** フォルダーに移動します。
+3. **Npm** をインストールします。 **Npm** パッケージは、[OpenJS](https://nodejs.org) からダウンロードしてインストールすることができます。
+4. このコマンドを実行して、JavaScript Application Insights パッケージの **Npm** パッケージをインストールします。
+
+    ```console run the
+    npm i --save @microsoft/applicationinsights-web
+    ```
+
+    パッケージをインストールした後に、**POS/Extensions/ライブラリ** フォルダに **node_modules** フォルダが含まれている必要があります。 **node_modules** フォルダには Application Insights ライブラリ ファイルが含まれています。
+
+5. **POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js** ファイルがライブラリに存在することを確認してください。
+
+    ファイル名は、Application Insights ライブラリの将来のバージョンで変更される可能性があります。 パスが変更された場合は、手順 8 と 10 のライブラリ パスをメインの Application Insights ライブラリをポイントするパスに更新します。
+
+6. **RetailSDK\POS** から **ModernPOS.sln**、または **CloudPos.sln** を開きます。
+7. **POS.Extensions** プロジェクトにある **tsconfig.json** ファイルを開きます。 **除外**セクションで、エントリを**ライブラリ** フォルダに追加します。
+
+    ```typescript
+    "exclude": [
+        "Libraries"
+      ],
+    ```
+
+8. **POS.Extensions** プロジェクトにある **tsconfig.json** ファイルを開きます。 **compilerOptions** セクションで、次のプロパティを追加します。
+
+    ```typescript
+    "baseUrl": "./",
+    "paths": {
+        "applicationinsights-web": [ "Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web" ]
+    }
+    ```
+
+9. **CopyPosExtensionsFiles** セクションで、**Pos.Extensions.csproj** を編集します。 次のターゲットを追加して、Application Insights ライブラリを POS アプリケーションにコピーすることにより、ターゲットを拡張コードで使用できるようにします。
+
+    ```typescript
+    <JavaScriptFileList Include="Libraries\\**\\*.js">
+        <InProject>false</InProject>
+        <Visible>false</Visible>
+    </JavaScriptFileList>
+    ```
+
+10. Application Insights ライブラリを消費している POS 拡張機能フォルダ (パッケージ) の **manifest.json** ファイルに次のノードを含めます。
+
+    ```typescript
+    {
+      "dependencies": [
+        {
+          "alias": "applicationinsights-web",
+          "format": "amd",
+          "modulePath": "../Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web"
+        }
+      ]
+    }
+    ```
+
+これで、Application Insights ライブラリを POS で使用する準備が整いました。
+
+## <a name="consume-the-library-and-log-events"></a>ライブラリ イベントとログ イベントの使用
+
+1. **RetailSDK\POS** から **ModernPOS.sln**、または **CloudPos.sln** を開きます。
+2. POS 拡張機能フォルダ (パッケージ) 内に新しい TypeScript ファイルを作成し、そのファイルに **AppInsights.ts** という名前を付けます。
+3. 次のコードをファイルに貼り付けます。 コードは、Application Insights を使用してイベントを追跡するために拡張機能によって使用されます。 Azure App Insights で作成したインストルメンテーション キーを使用します。
+
+    ```typescript
+    import { ApplicationInsights } from "applicationinsights-web";
+
+    /**
+     * Example implementation of an Application Insights singleton that can be used to log events and metrics on Application Insights.
+     */
+    export class AppInsights {
+        private static _instance: AppInsights = null;
+        private _applicationInsights: ApplicationInsights = null;
+
+        /**
+         * Gets a global reference to an Application Insights reference that can be used by other extension code.
+         * @returns {ApplicationInsights} The ApplicationInsights instance that can be used to log events.
+         */
+        public static get instance(): ApplicationInsights {
+            if (AppInsights._instance === null) {
+                AppInsights._instance = new AppInsights();
+            }
+
+            return AppInsights._instance._applicationInsights;
+        }
+
+        /**
+         * Initializes a new instance of AppInsights.
+         */
+        constructor() {
+            this._applicationInsights = new ApplicationInsights({
+                config: {
+                    instrumentationKey: 'YOUR_INSTRUMENTATION_KEY_GOES_HERE'
+                    /* ...Other Configuration Options... */
+                }
+            });
+            this._applicationInsights.loadAppInsights();
+        }
+    }
+    ```
+
+4. 拡張機能コードで、次のコード例に示すように、AppInsights クラスを呼び出してイベントをログに記録します。
+
+    ```typescript
+    AppInsights.instance.trackEvent({
+        name: "extensionTest",
+        properties: {
+            "property1": "value1",
+            "property2": "value2",
+        },
+        measurements: {
+            "measurement1": 1,
+            "measurement2": 2,
+        },
+    });
+    ```

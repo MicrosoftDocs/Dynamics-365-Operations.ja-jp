@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: RobinARH
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 816fae931392bc2c508077a8066b9b3999116f51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8a8b75e409392bb7f24a10dbd60f927e53275788
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180475"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975354"
 ---
 # <a name="create-a-submittoworkflow-class"></a>SubmitToWorkflow クラスの作成 
 

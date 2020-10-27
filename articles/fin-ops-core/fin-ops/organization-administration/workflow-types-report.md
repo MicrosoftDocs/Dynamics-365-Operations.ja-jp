@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9b7a5e1be68f7df2c15aee9da55deac742d11bef
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: 115a4b1ef50fa0abf66820cba14d6513b7d535df
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698183"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828902"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
@@ -34,4 +34,4 @@ ms.locfileid: "3698183"
 
 ## <a name="view-the-report"></a>レポートの表示
 
-[ワークフロー タイプ レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。
+[ワークフロー タイプ レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 詳細については、[標準データ エンティティに関する情報の検索](../../dev-itpro/data-entities/data-entities-report.md) を参照してください。

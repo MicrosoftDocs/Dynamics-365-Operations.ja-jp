@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: a546c89c9d713493545b53084dcc6a930079b90d
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: 546d8905af8efa87584dede218b289efc1cc1edb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270301"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982375"
 ---
 # <a name="entities-in-the-acceptance-test-library"></a>承認テスト ライブラリのエンティティ
 

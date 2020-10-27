@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
-ms.author: ToddLefor
+ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ac3b085b7fb8d552977206ea8d298bad04b6475
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 692abb02781cf254d333d2b6034d2aeb24bc40cc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005529"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982369"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 

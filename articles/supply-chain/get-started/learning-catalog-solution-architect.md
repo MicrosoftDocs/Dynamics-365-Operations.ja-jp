@@ -5,18 +5,21 @@ author: margoc
 ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
+ms.prod: ''
+ms.service: Dynamics365Operations
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 450b62edbe99d8b164082b4267dda40daf44a272
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0d93e17ffbd73527d8498a25618944251bb5b946
+ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3647257"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "3793117"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-solution-architects"></a>Dynamics 365 Supply Chain Management ソリューション アーキテクトのラーニング カタログ
 

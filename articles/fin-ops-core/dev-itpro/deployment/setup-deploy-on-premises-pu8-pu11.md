@@ -17,12 +17,12 @@ ms.custom: NotInToc
 ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7e9c49b8fbb7787cf8e7435fbdc220ade021d7ea
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: 53e38f6f7a6ee9fa188d6a137ca850547c0ede97
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368782"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893209"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
@@ -399,7 +399,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 #### <a name="follow-these-steps-for-each-vm"></a>各 VM について、これらのステップに従います。
 
-1. 各 infrastructure\VMs\<VMName> フォルダーのコンテンツを対応する VM にコピーし、次のスクリプトを実行します。
+1. 各インフラストラクチャ \VMs\<VMName> フォルダのコンテンツを対応する VM にコピーして、次に下記のスクリプトを実行します。
 
     ```powershell
     # Install pre-req software on the VMs.
@@ -439,7 +439,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 4. 生成された ClusterConfig.json ファイルを \<ServiceFabricStandaloneInstallerPath\> にコピーします。
 
-5. 上位の権限を使用して Windows PowerShell で \<ServiceFabricStandaloneInstallerPath\> に移動します。 次のコマンドを実行して ClusterConfig をテストします。
+5. 上位の権限を使用して Windows PowerShell で  \<ServiceFabricStandaloneInstallerPath\>  にアクセスします。 次のコマンドを実行して ClusterConfig をテストします。
 
     ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
@@ -466,7 +466,7 @@ CA から取得したオンプレミス エージェントの証明書または�
 
 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
 
-グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft Office 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
+グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者がディレクトリのグローバル管理者です。
 
 > [!IMPORTANT]
 > テナントごとに証明書を正確に 1 回構成する必要があります。 すべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。

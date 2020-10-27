@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: bedfe89e8ef9bdb7989abf2c81f76aa9640bcc68
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 3af7d6a15a479fe11aede6511f6ea61da2d87daf
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621209"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834248"
 ---
 # <a name="finance-and-operations-and-common-data-service-admin-reference"></a>Finance and Operations および Common Data Service 管理リファレンス
 [!include[banner](../includes/banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "3621209"
 ## <a name="getting-the-solution"></a>ソリューションの入手
 Finance and Operations 仮想エンティティの Common Data Service ソリューションは、Microsoft AppSource 仮想エンティティ ソリューションからダウンロードする必要があります。 詳細については、[Finance and Operations 仮想エンティティ](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity) を参照してください。
 
-次のソリューションが Common Data Service にインストールされていることを確認します。 これらのソリューションは、ダウンロードしたパッケージから抽出する必要があります。
+次のソリューションが Common Data Service にインストールされていることを確認します。
 
 - **Dynamics365Company**: すべての Finance and Operations エンティティによって参照される**会社**エンティティを、PrimaryCompanyContext メタデータ値と共に追加します。
 

@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) のアセット ライブラリ
 description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943fc9af7aa436d7eda9edc96571754989c831b0
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 0d8a0057f4e1bb120bd5126f4a8a44cc5d6a19a8
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830738"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -48,6 +48,7 @@ ms.locfileid: "3096911"
 - **データ パッケージ** - このアセット タイプは、コンフィギュレーションおよびデータ管理に使用されるアセットを格納します。
 - **GER コンフィギュレーション** – この資産タイプは、クライアントに適用されるすべてのローカライズおよび翻訳資産を格納します。
 - **Retail SDK** – この資産タイプには Retail ソフトウェアの開発キット (SDK) の最新のスクリプトがすべて格納されます。
+- **データベース バックアップ** - このアセット タイプは、サンドボックス階層 2 - 5 環境からデータベースをインポートおよびエクスポートするために使用されます。
 
 ### <a name="asset-scopes"></a>アセット スコープ
 アセット ライブラリがサポートするすべての資産には複数のスコープがあります。 サポートされる資産スコープのいくつかを次に示します。
@@ -72,17 +73,18 @@ ms.locfileid: "3096911"
 3. 資産の名前と説明を入力します。
 4. アセットのファイルをアップロードし、**確定** をクリックします。
 
-### <a name="upload-a-new-version-for-a-specific-asset"></a>特定のアセットの新しいバージョンをアップロード
+### <a name="upload-a-new-version-for-a-specific-asset-shared-asset-library-only"></a>特定のアセットの新しいバージョンをアップロードする (共有アセット ライブラリのみ)
 1. アセット ライブラリで資産を選択します。
-2. ツール バーで、**アップロード**ボタンをクリックします。
+2. ツール バーで、**新しいバージョンのアップロード** ボタンをクリックします。
 3. 前の手順の手順を繰り返し、「資産を資産ライブラリにアップロード」します。
 4. ツール バーで、**バージョン**をクリックして、単一の資産の複数のバージョンを表示します。
+5. これにより、個々のバージョンを特定のプロジェクト アセット ライブラリに必要に応じてインポートすることができます。
 
-### <a name="move-assets-from-the-global-asset-library-to-the-project-level-asset-library"></a>グローバル アセット ライブラリからプロジェクト レベルのアセット ライブラリへのアセット移動
-グローバル アセット ライブラリからプロジェクト レベル アセット ライブラリにアセットを移動するには、アセットをインポートするかコピーするかの 2 つの方法があります。
+### <a name="move-assets-from-the-shared-asset-library-to-the-project-level-asset-library"></a>共有アセット ライブラリからプロジェクト レベルのアセット ライブラリへ資産を移動する
+共有アセット ライブラリからプロジェクト レベルのアセット ライブラリに資産を移動するには、資産をインポートするかコピーするかの 2 つの方法があります。
 
-#### <a name="import-from-the-global-asset-library"></a>グローバル アセット ライブラリからのインポート
-グローバル アセット ライブラリからの資産をプロジェクト レベルのアセット ライブラリへインポートして、環境間で適用できるようにするには、これらの手順に従います。
+#### <a name="import-from-the-shared-asset-library"></a>共有アセット ライブラリからのインポート
+共有アセット ライブラリからの資産をプロジェクト レベルのアセット ライブラリへインポートして、環境間で適用できるようにするには、これらの手順に従います。
 
 1. プロジェクト レベルのアセット ライブラリで、インポートするアセット タイプのタブを選択します。
 2. **インポート** をクリックします。
@@ -90,7 +92,7 @@ ms.locfileid: "3096911"
 
 選択したアセットをインポートし、プロジェクト レベルのアセット ライブラリに配置します。 プロジェクト レベルのアセット ライブラリのアセットの状態は **公開済** に設定されています。 このメソッドは、編集する予定のないパッケージを対象としています。 インポートされたパッケージを編集する場合は、次の手順を使用して、コピーを作成します。 パッケージの状態は **ドラフト** になります。
 
-#### <a name="copy-from-the-global-asset-library"></a>グローバル アセット ライブラリからのコピー
+#### <a name="copy-from-the-shared-asset-library"></a>共有アセット ライブラリからのコピー
 資産のコピーを編集できるよう作成するには、これらの手順に従います。
 
 1. プロジェクト レベルのアセット ライブラリで、コピーするアセット タイプのタブを選択します。

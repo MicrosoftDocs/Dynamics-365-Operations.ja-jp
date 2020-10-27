@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d33120db1d2c64853b5df976c118142aeab65f89
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 84d03197cc91b564b54ae1cf974a007080c400fb
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652019"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893177"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -62,7 +62,7 @@ SharePoint 記憶域を構成するには、次の手順を実行します。
 1. **ドキュメント管理パラメータ**ページに移動します。
 2. **SharePoint** タブの**既定の SharePoint サーバー**フィールドで、contosoax7.sharepoint.com など、SharePoint サイトに対して自動的に検出されたホスト名を確認します。 通常、SharePoint ホスト名は tenantname.sharepoint.com の形式で、そのテナントのアカウントは `user1@tenantname.onmicrosoft.com` の形式で示されます。
 
-    既定の SharePoint サーバーが指定されていない場合は、通常、テナントの SharePoint サイトが存在しないか、有効な Microsoft Office 365 ライセンスが現在のユーザー (管理者) に関連付けられていません。
+    既定の SharePoint サーバーが指定されていない場合は、通常、テナントの SharePoint サイトが存在しないか、有効な Microsoft 365 ライセンスが現在のユーザー (管理者) に関連付けられていないかのどちらかです。
 
 4. オプション: **SharePoint 接続**のテスト をクリックし、指定された SharePoint ホスト名をテストします。 これでセキュリティとライセンスが正しく機能していることを確認します。 
 5. オプション: **SharePoint を開く**をクリックし、指定された SharePoint ホスト名をブラウザーで開きます。 これはセキュリティを検証せず、ブラウザのタブで SharePoint パスを開くだけの簡単に検索であることに注意してください。
@@ -71,7 +71,7 @@ SharePoint 記憶域を構成するには、次の手順を実行します。
 
 SharePoint 通信は、次の条件が満たされた場合にのみ、現在のユーザーに対して機能します。
 
-- Office 365 ライセンスが、ユーザーのアカウントに関連付けられています。
+- Microsoft 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
 - テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
 - ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
@@ -157,7 +157,7 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 **Docu** クラスでは、次の 2 つのデリゲートが公開されます。 これらのデリゲートに対して、ドキュメントのスキャンを目的としてハンドラーを実装できます。
 
-- **Docu.delegateScanDocument()**: このデリゲートによって、ユーザーが添付ファイルをプレビューまたはダウンロードしようとしたときに、既存のドキュメント添付ファイルにファイル スキャン ロジックが適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、対応するアクションは失敗します。
+- **Docu.delegateScanDocument()** – このデリゲートによって、新しいドキュメント添付ファイルがアップロードされたときに、またはユーザーが既存の添付ファイルをプレビューまたはダウンロードしようとしたときに、ファイル スキャン ロジックが適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、対応するアクションは失敗します。
 -  **Docu.delegateScanDeletedDocument()**: このデリゲートによって、ユーザーがファイルをプレビューまたはダウンロードしようとしたときに、ファイルのスキャン ロジックが添付ファイルのごみ箱ドキュメントに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、対応するアクションは失敗します。
 
 ### <a name="implementation-details"></a>実装詳細
@@ -224,7 +224,7 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 ファイル タイプには、Microsoft Word ドキュメントおよび画像が含まれます。 ファイル タイプは、.txt、.png、.doc、.xlsx、または .pdf などのファイルの拡張子で表されます。
 
-### <a name="does-document-management-integrate-with-office-365"></a>ドキュメント管理は Office 365 と統合されますか。
+### <a name="does-document-management-integrate-with-microsoft-365"></a>ドキュメント管理は Microsoft 365 と統合されますか?
 
 はい。 SharePoint 記憶域はネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
 

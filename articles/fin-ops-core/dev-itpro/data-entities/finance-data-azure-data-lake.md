@@ -17,20 +17,27 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: 6184a50d14c1bc81b86249e6b95f6fdbe1ed3517
-ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
+ms.openlocfilehash: 7473569a9a2933e95a43cc613c6fc25fbb576a16
+ms.sourcegitcommit: 599ce9d0d84ac2195856d1e6cb703036fb09b253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454998"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887723"
 ---
 # <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> **Azure Data Lake へのエクスポート**機能は、Microsoft Dynamics 365 Finance and Operations アプリで対応しているすべての地域および環境では使用できない場合があります。 Life cycle services (LCS)、または Finance and Operations アプリで **Azure Data Lake へのエクスポート**の機能が見つからない場合は、ご利用の環境でこの機能を使用できません。 この機能へのアクセスを許可する場合は、機能担当チームにメールでお問い合わせください (**FnODataLakePreview@service.microsoft.com**)。 この機能をご利用頂けるよう、迅速に対応します。 現時点では、 **Azure Data Lake へのエクスポート**機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウドベースの Tier 2 またはそれ以上の環境が必要です。
-> Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能にする](entity-store-data-lake.md) に記載されている方法に従ってこの機能を引き続き使用してください。
+> 制限されたプレビューでの **Azure Data Lake へのエクスポート**機能は、Finance and Operations アプリで対応しているすべての地域および環境では使用できない場合があります。 Lifecycle Services (LCS)、または Finance and Operations アプリで **Azure Data Lake へのエクスポート**の機能が見つからない場合は、ご利用の環境でこの機能を使用できません。 
+>
+> 現在、プレビューは終了しています。 数か月後に、いくつかの地域で追加の環境を有効にします。 プレビューに参加したい顧客からの要求を承諾しています。 今後のプレビューに参加する場合は、[アンケートを完了します](https://aka.ms/FnODataLakePreviewSurvey)。 参加の準備ができ次第、ご連絡いたします。 [アンケートを完了](https://aka.ms/FnODataLakePreviewSurvey) すると、Yammer に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。  
+>
+> 環境でこの機能が有効になるまで、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装をプロトタイプ/計画するためのオプションがあります。 このツールを使用すると、機能によってエクスポートされたのと同じ形式で、サンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。 
+>
+> 現時点では、**Azure Data Lake へのエクスポート**機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。
+>
+> Data Lakeで集計測定を使用できるようにするには、[エンティティ ストアを Data Lake として使用可能とする](entity-store-data-lake.md)で説明されている方法でこの機能を引き続き使用します。
  
  
 **Azure Data lake にエクスポート**機能を使用すると、アプリケーションのデータをご利用の Azure Data lake (Gen 2) の Finance and Operations アプリにコピーできます。 このシステムでは、含めるテーブルやエンティティを選択できます。 必要なデータを選択した後、システムが初期コピーを行います。 システムは、変更、削除、追加を適用することで、選択したデータを最新の状態に保ちます。 Finance and Operations アプリのインスタンスのデータを変更後、data lake でデータが使用可能になるまでには数分を要する場合があります。 

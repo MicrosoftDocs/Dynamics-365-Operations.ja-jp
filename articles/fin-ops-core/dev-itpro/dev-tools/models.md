@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40431da9e1624693f44242a1bd5debf59429d647
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: afab00c81b964e752e6559af3de37304fae9f460
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124814"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893149"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
@@ -34,8 +34,6 @@ ms.locfileid: "3124814"
 
 ## <a name="conceptual-overview"></a>概念に関する概要
 モデルは、通常、配布可能なソフトウェア ソリューションを構成するメタデータとソース ファイルなどの要素のグループであり、既存のソリューションのカスタマイズを含みます。 モデルは、倉庫管理モデルやプロジェクト会計モデルなどのデザイン時概念です。 モデルは、常に 1 つのパッケージに属しています。 パッケージは、1 つまたは複数のモデルの配置およびコンパイル単位です。 これには、モデル メタデータ、バイナリ、およびその他の関連するリソースが含まれます。 1 つ以上のパッケージは、ランタイム環境の配置に使用する車両の配置可能パッケージにパッケージすることができます。
-
-<!--The [Packages, models, and projects](https://mix.office.com/watch/ies6lyit6773) Office Mix describes models and packages and how they relate to each other.-->
 
 ## <a name="creating-a-new-model"></a>新しいモデルを作成しています
 **モデルの作成** ウィザードを使用して、新しいモデルを作成します。 このウィザードには **Dynamics 365** メニューの **モデル管理** からアクセスすることができます。 モデルは 2 種類作成することができます。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 7ab6c0236fc3508fcdcb5b6cb11e5b328bf06821
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 416cd1c73db0a949a285e43315b8c3cc5f4c53a1
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029391"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893123"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -50,8 +50,6 @@ ms.locfileid: "3029391"
     - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM]が、またはオンプレミス環境には、パブリックに登録済みのドメイン名がある場合があります。)
 
 ## <a name="create-a-single-user-c-test-from-an-xml-recording"></a>XML 記録からシングル ユーザー C# テストを作成する
-
-<!--To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).-->
 
 1. タスク レコーダーを使用して、テストするシナリオの記録を作成します。
 

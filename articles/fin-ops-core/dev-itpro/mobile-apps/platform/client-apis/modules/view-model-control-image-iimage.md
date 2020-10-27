@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a52ad1b13a3a92c082e61b27cea0a7322b5d9833
-ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
+ms.openlocfilehash: 40a0c3ff00208e3309b3de0f814730af64a01bdc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "3734933"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975043"
 ---
 # <a name="image-module"></a>画像モジュール
 

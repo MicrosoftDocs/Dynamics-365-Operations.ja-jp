@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 971fedb5f059bce5eefb9abc9ae5419ab227750a
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: bebd4fed61631ee42b33f5dd7d6378d68ffa4b85
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279120"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818610"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 
@@ -109,7 +109,7 @@ Microsoft が発行した二重書き込みエンティティ マップ ソリ�
 
 2. 変更および追加したエンティティ マップを確認します。 それらを有効にしてテストし、期待どおりに機能することを確認してください。
 
-    ![新しいアドレス帳エンティティ マップの追加](media/confirm-new-entity-maps.png)
+    ![新しいエンティティ マップの確認](media/confirm-new-entity-maps.png)
 
 ### <a name="create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps"></a>新しい二重書き込みソリューションを作成し、コンポーネントを追加する (カスタマイズ済みエンティティ マップ)
 
@@ -185,7 +185,7 @@ AppSource にパッケージを公開する方法の詳細については、[App
 1. 二重書き込みコア ソリューションをインポートします。
 
     1. このトピック前半の [二重書き込みコア ソリューションのインストール](#install-the-dual-write-core-solution) セクションの手順に従って、二重書き込みコア ソリューションを AppSource から Power Apps にインポートします。
-    2. 二重書き込みコア ソリューションが PowerApps の **ソリューション** の下に一覧表示されていることを確認します。
+    2. 二重書き込みコア ソリューションが Power Apps の **ソリューション** の下に一覧表示されていることを確認します。
 
 2. エンティティ マップをアップグレードします。
 

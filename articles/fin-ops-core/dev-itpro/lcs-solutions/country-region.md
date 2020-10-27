@@ -14,22 +14,22 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 0d81471036d88e4faaf2cae4f3cc25d1eeaaa821
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598184"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979307"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
 ## <a name="local-and-regional-deployments"></a>ローカルおよび地域での展開
 政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、展開する際に考慮する必要がある国/地域固有の要件が存在する可能性があります。 関連する可能性のある次のリソースを検討してください。
 
-[Finance and Operationsアプリ - 中国で 21Vianet が運用](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[中国で 21Vianet が運用する Finance and Operations アプリ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>ローカライズと規制の機能
 

@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1761172fac9f51e9039d4eac58c02ca856051324
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 99285e940229b3ab8a966de25340fde6275fcf99
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183147"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978351"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 

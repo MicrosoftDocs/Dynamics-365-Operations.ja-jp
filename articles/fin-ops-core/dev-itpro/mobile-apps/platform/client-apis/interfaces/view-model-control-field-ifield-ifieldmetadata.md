@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 329ea4b37ec769cec689f21c94ac6680574bea97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dc8c868c3cce26624e4ed0ffe7416cfe8a6c8597
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191858"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987536"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 

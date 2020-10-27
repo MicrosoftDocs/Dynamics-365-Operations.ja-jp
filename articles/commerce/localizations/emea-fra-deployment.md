@@ -3,25 +3,25 @@ title: フランスのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、フランスのローカライズ用配置ガイドです。
 author: AlexChern0v
 manager: ezubov
-ms.date: 10/10/2018
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.region: France
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 95b6fa493dc211424f734b92833a32ba06e71cdd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d5aa569762671ea649066fde37c4642ed4002926
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057576"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973994"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -90,6 +90,30 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
 
 > [!NOTE]
 > デジタル署名に使用される証明書の拇印は、証明書が Azure Key Vault ストレージに保存されている場合でも、SequentialSignatureRegister アセンブリのコンフィギュレーション ファイルで指定されている必要があります。 詳細については、このトピックの後半の [SequentialSignatureRegister コンポーネント](#sequentialsignatureregister-component) セクションを参照してください。
+
+### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
+
+Commerce バージョン 10.0.15では、Key Vaultまたは本社が使用できない場合に、オフラインにするためのフェールオーバーをサポートする[小売店舗のユーザー定義の証明書プロファイル](./certificate-profiles-for-retail-stores.md) を使用できます。 この機能は、[小売チャンネルのシークレットを管理 ](../dev-itpro/manage-secrets.md) を拡張ます。
+
+CRT の新しい機能を適用するには、次の手順を実行します。
+
+1. 新しい CRT 拡張機能プロジェクトを作成します (C# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (RetailSDK\SampleExtensions\CommerceRuntime)。
+
+2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
+
+3. シークレット呼び出しを読み取るには、プロファイスされたパラメータのあるコンストラクターを使用し、GetUserDefinedSecretCertificateServiceRequest を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+    
+    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);  GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+    
+    X509Certificate2 証明書 = getUserDefinedSecretCertificateServiceResponse.Certificate;
+    
+4. 証明書が取得されたら、データ署名に進みます。
+
+5. CRT 拡張機能プロジェクトを作成します。
+
+6. 出力クラス ライブラリをコピーし、手動テスト用の ...\RetailServer\webroot\bin\Ext に貼り付けます。
+
+7. CommerceRuntime.Ext.config ファイルで、カスタム ライブラリ情報で拡張機能の合成セクションを更新します。
 
 ## <a name="specifying-application-attributes-that-will-be-printed-on-receipts"></a>レシートに印刷されるアプリケーション属性を指定します。
 

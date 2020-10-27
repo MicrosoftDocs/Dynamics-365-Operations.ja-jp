@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: a40d306acc13b47dd5cd4ce8fbcc556cf8361efd
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: bbb186cefc530821d406e63ce3c2ad05beb3ac69
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812520"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983121"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 

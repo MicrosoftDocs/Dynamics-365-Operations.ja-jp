@@ -3,7 +3,7 @@ title: 標準ユーザー承認テスト (UAT) データベースのコピーの
 description: このトピックでは、Finance and Operations のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -12,15 +12,15 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ca32e156179f0d133e0c9dd863bbe37da6a6edac
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 31567c4f2a26053ad3a22e99c56a947ec82d1802
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029432"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982783"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -167,6 +167,12 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 これらのサービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。
 
 元のデータベースに戻すには、このプロセスを逆にします。 つまり、サービスを停止し、データベースの名前を変更してから、サービスを再起動します。
+
+### <a name="post-steps-for-commerce-environments"></a>Commerce 環境でその後に行う手順
+Commerce チャネルを使用している場合は、最初はセルフサービス サンドボックスからエクスポートされた開発環境にデータベースをインポートするときに、インポート先の開発者環境で次の手順を実行する必要があります。 これらの手順を実行しないと、Commerce チャネルは機能しません。
+
+1.  Commerce チャネル機能を復元するには、最新の Microsoft サービス更新または品質更新プログラムを適用します。これにより、チャネル データベースが作成されます。
+2.  以前に展開したチャネル データベース拡張機能を復元するには、対応する Retail セルフサービス配置可能パッケージを再度適用します。
 
 ### <a name="reprovision-the-target-environment"></a>対象の環境を再プロビジョニング
 

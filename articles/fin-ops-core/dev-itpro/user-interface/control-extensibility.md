@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 27461
 ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34fa18a3a76e0b614a9f8d0bb0fe68f1316c9165
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 43f7ddcfd5bcd28d6bfaf30eef0cd006015aad7f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329930"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978299"
 ---
 # <a name="control-extensibility"></a>コントロールの拡張機能
 

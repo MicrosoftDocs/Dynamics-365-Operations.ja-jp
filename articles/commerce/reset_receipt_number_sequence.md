@@ -3,7 +3,7 @@ title: レシート番号のリセット
 description: このトピックでは、目的の日付 (たとえば、会計年度や暦年) のさまざまなアクションに使用されるレシート番号をリセットする方法について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456576"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967289"
 ---
 # <a name="reset-receipt-numbers"></a>レシート番号のリセット 
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> この機能を使用する前に、機能プロファイル内のすべての入庫タイプに対して **独立したシーケンス** プロパティを選択する必要があります。 また、POSが使用されているデバイスのシステム タイムゾーンは、対応する店舗タイムゾーンと一致している必要があります。 今後のリリースでは、これらの制限を取り除くための試みをおこなっています。 この機能を生産環境で使用する前に、Microsoft サポートに連絡してください。
+> この機能を使用する前に、機能プロファイル内のすべての入庫タイプに対して **独立したシーケンス** プロパティを選択する必要があります。 また、POSが使用されているデバイスのシステム タイムゾーンは、対応する店舗タイムゾーンと一致している必要があります。 このような制限により、今後のリリースでは、これらの問題を修正するための作業を行う間は、実稼働でこの機能を使用しないことをお勧めします。 
 
 小売業者は、現金売りトランザクション、返品トランザクション、顧客注文、見積、支払など店舗のさまざまなアクションに対するレシート番号を生成します。 小売業者は独自のレシート形式を定義していますが、一部の国や地域ではこれらのレシート形式に制限を課す規制があります。 たとえば、これらの規制はレシートの文字数を制限する、連続するレシート番号を要求する、一部の特殊文字を制限する、年初にレシート番号をリセットするなどの制限を課す可能性があります。 Microsoft Dynamics 365 Commerce では、レシート番号管理のプロセスが非常に柔軟になり、小売業者が規制要件を満たすのに役立ちます。 このトピックでは、レシート番号をリセットする機能の使用方法について説明します。
 

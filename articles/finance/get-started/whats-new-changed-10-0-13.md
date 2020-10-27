@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c120882615eaf17ae95f934cab110fa7af421cf7
-ms.sourcegitcommit: 30e4dc0a45f7de5f0a7178b1e88f7c3d61a7395e
+ms.openlocfilehash: d796fb8c2e1ce0c8df294396c52f57f3b13c7b3a
+ms.sourcegitcommit: d6b17b9bafa84b574a597a560a80e6b7b1852b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763689"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "3799915"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10013-october-2020"></a>Dynamics 365 Finance 10.0.13 の機能のプレビュー (2020 年 10 月)
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10013-october-2020"></a>Dynamics 365 Finance 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.13 の新機能または変更された機能について説明します。 このバージョンには 10.0.569 のビルド番号が含まれており、次のように使用できます。
 

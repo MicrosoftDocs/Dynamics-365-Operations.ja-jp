@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 134215af15183cd4f9a36f839de6fd1d7a3bcd11
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 654cd578ab56a0cbad0c4625cfdbd602f7f564c0
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329929"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980550"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 

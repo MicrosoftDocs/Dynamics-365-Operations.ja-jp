@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e72ccbdb0923bdba1e520b3f8f170bbcb1b5899e
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: c8889112ae46fe64e637c42684ca1257801259db
+ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3172014"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3815640"
 ---
 # <a name="impact-analysis-report-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の影響分析レポート
 
@@ -28,6 +28,8 @@ ms.locfileid: "3172014"
 [!include [private preview banner](../includes/private-preview-banner.md)]
 
 **影響分析** レポートは、新しいリリースのテスト作業を重点的に行う際に役立ちます。 リリースにて変更されたMicrosoftコードの詳細と、Lifecycle Services (LCS) 内 Microsoft Dynamics のプロジェクトに関連付けられている運用環境の使用状況に関する情報を提供します。 このコンテンツでは、機能の概要と、いくつかの重要な注意事項について説明します。 ただし、このレポートには包括的な情報は含まれていません。 したがって、リリースのテストを予定している場合は、他のツールと組み合わせて使用する必要があります。
+
+プロジェクトにアクセスすると、Lifecycle Services (LCS) のハンバーガーを介してレポートにアクセスできるようになります。
 
 ## <a name="code-churn"></a>コード チャーン
 

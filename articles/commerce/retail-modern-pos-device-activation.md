@@ -3,7 +3,7 @@ title: Modern POS (MPOS) のインストール、構成、有効化
 description: このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26cf20b7b77efc26ed4eade0238a928bc62d47c3
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: cfd4feefffd4235a9fe5bccb3f7b04221a83d700
+ms.sourcegitcommit: 27cc388177a21a917290c60309cccff6ce6fdec9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698035"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3901075"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -92,7 +92,7 @@ ms.locfileid: "3698035"
 
     > [!NOTE]
     > - ブラウザーは、生成されたダウンロード ポップアップをブロックする可能性があります。 **1 回許可** または **このサイトのオプション** &gt; **常に許可** を選択します。 次に、デバイスが選択されているときに **ダウンロード** を再度選択します。
-    > - 構成ファイルは、Modern POS インストーラーと同じ場所に保存する必要があります。 セキュリティ上の理由から、インストールの完了後に、このファイルを削除します。
+    > - 構成ファイルは、Modern POS インストーラーと同じ場所に保存する必要があります。 セキュリティ上の理由から、インストールの完了後に、このファイルを削除します。 構成ファイルが、実行可能なインストーラーと同じファイル名でない場合は、コマンド ラインを使用して実行可能ファイルを実行して構成ファイルを指定するか、XML 構成ファイルの名前を実行可能ファイル名と同じベース名に変更する必要があります。
 
 5. Internet Explorer ウィンドウの下部に表示される通知バーで、**保存**を選択します。 (通知バーは、他のブラウザでは別の場所に表示される場合があります。)
 6. **ダウンロード**を選択し、**Retail Modern POS** を選択します。

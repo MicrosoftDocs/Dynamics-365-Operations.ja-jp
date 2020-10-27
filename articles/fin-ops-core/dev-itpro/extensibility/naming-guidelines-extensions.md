@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 20c0519c0978c6880f1bc9bcc6ac950d0b67f044
-ms.sourcegitcommit: 2bc33f8777d3260afa7cc5b5385ac33cd981ec43
+ms.openlocfilehash: 3f205ef0175e9d21db2e62f52849f05ed1bc8a30
+ms.sourcegitcommit: c4d1d0cf9fb1aee58c5dc5e1bb48df6498ab1441
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3659927"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3906566"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 
@@ -42,8 +42,7 @@ ms.locfileid: "3659927"
 
 拡張要素は、テーブル拡張子、ビュー拡張子、またはフォーム拡張子など、他のモデルの拡張子と競合のリスクを最小限にする一意の名前を付ける必要があります。 競合のリスクを最小限に抑えるために、名前には、拡張機能を他のモデル内の同じ要素の他の拡張機能と区別するための用語、省略形、または接中辞が含まれている必要があります。
 
-+ 拡張子要素があるモデルの名前、または拡張子が関連付けられている接頭語のいずれかを含めます。 たとえば、ウェアハウジング モジュールは HCMWorker テーブルを拡張し、他のすべての要素の名前で **WHS** 接頭語を使用します。 この場合、拡張機能に **HCMWorker.WHSExtension** という名前が付けられます。 モジュール内の他の要素に名前を付けるために使用される接頭語が、接中辞として挿入されることを確認します。 別の例として、拡張子がアプリケーション スイート モデルからの ContactPerson テーブルへのすべての拡張機能を含むことを意図している場合、アプリケーション スイート モデルの ContactPerson テーブルの拡張子は、**ContactPerson.ApplicationSuiteExtension** という名前が付けられます。
-+ 末尾に **Extension** という用語を付けます。 たとえば、InventLocation テーブルの拡張子は、**InventLocation.&lt;モデル&gt;拡張子**のパターンに従う必要があります。
++ 拡張子要素があるモデルの名前、または拡張子が関連付けられている接頭語のいずれかを含めます。 たとえば、ウェアハウジング モジュールは HCMWorker テーブルを拡張し、他のすべての要素の名前で **WHS** 接頭語を使用します。 この場合、拡張機能に **HCMWorker.WHSExtension** という名前が付けられます。 モジュール内の他の要素に名前を付けるために使用される接頭語が、接中辞として挿入されることを確認します。 別の例として、拡張子が **ContosoCustomizations** モデルからの ContactPerson テーブルへのすべての拡張機能を含むことを意図している場合、**ContosoCustomizations** モデルの ContactPerson テーブルの拡張子は、**ContactPerson.ContosoCustomizations** という名前が付けられます。 開発者ツールでは、モデル名が既に一意である必要があるので、既定でモデルの名前が拡張名として使用されます。
 + 拡張子名を **&lt;Element that is being extended&gt;.Extension** としないでください。 たとえば、競合のリスクが大きすぎるため、InventLocation テーブルの拡張クラスには、**InventLocation.Extension** という名前を付ける必要はありません。
 
 ## <a name="naming-extension-classes"></a>拡張クラスの名前を付ける

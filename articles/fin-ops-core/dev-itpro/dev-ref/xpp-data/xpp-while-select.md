@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 3200bfaea509b1ff09a44e7f494abef20ab340e2
-ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
+ms.openlocfilehash: 343ad57ef8c10fbe110fc578ec1d2951b3c7a297
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637826"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987256"
 ---
 # <a name="while-select-statement"></a>明細書の選択中
 

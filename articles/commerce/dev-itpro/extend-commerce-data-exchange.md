@@ -3,7 +3,7 @@ title: Commerce Data Exchange の拡張 - リアルタイム サービス
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 019d65aae4e6fffc746f271df6ad87d2c8c064c1
-ms.sourcegitcommit: 5ffe077a3053f1f0e3e18a2a76837d81fbb29387
+ms.openlocfilehash: 4e7ef72545249246263816612cf0054ccf36ecc0
+ms.sourcegitcommit: 4846ce7248734cc5166a920910d87e4a3282e990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598825"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "3815043"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -131,18 +131,11 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
             InvokeExtensionMethodRealtimeResponse response = await request.RequestContext.ExecuteAsync<InvokeExtensionMethodRealtimeResponse>   (extensionRequest).ConfigureAwait(false);
                 ReadOnlyCollection<object> results = response.Result;
                 
-                bool success = Convert.ToBoolean(results[0]);
-
-                if (!success)
-                {
-                    string error = Convert.ToString(results[1]);
-                    Console.WriteLine(error);
-                    throw new CommerceException(error, "Failed to validate serial number.");
-                }
-       
+                string resValue = (string)results[0];       
     ```
 
 3.  results オブジェクトからは、リアルタイム サービスからの応答値を読み取ることができます。
+4.  CRT フレームワーク コードは、成功/失敗の状態を確認し、CDX メソッドから返された値に基づいてエラー メッセージを提供します。 必要に応じて、拡張機能コードでこれをキャッチし、追加のロジックを提供することができます。  
 
     > [!NOTE]
     > **InvokeExtensionMethodRealtimeRequest** メソッドは 2 つのパラメーターを取ります。 1 つのパラメ ーターはリアルタイム サービス メソッド名であり、その他はパラメータの一覧を使用する必要があります。 渡されるメソッド名は、**ContosoRetailTransactionServiceSample** クラスで作成したメソッド名と同じにする必要があります。

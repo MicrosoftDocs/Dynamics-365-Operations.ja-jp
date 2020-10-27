@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
-ms.author: rschloma
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a472a54a37c15fa1716182ade05884a714ad05d
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 53cc1c827d19f4da779eaef8c5f294d3b291bd8d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071721"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979654"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 

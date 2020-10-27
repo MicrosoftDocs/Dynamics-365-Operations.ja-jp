@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f18d162d72740e3a72c779347dd19487a872e9c
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: d4d881c1a607a9157be992e1e85c423cba4c4f94
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329931"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978301"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 
@@ -173,7 +173,7 @@ ms.locfileid: "3329931"
     -   .NET ライブラリもセキュリティで保護されていることを確認するには、任意の .NET ライブラリの使用を確認する必要があります。
 -   コントロール (HTML、JavaScript、CSS、サードパーティ製ライブラリ) のクライアント側の部分に関連する脆弱性は、一般的なセキュリティで保護された Web 開発原則に従う必要があります。 特定の例には、XSS の脆弱性が含まれます。
     -   ユーザー データを HTML/JavaScript/CSS にレンダリングするコントロールは、軽減策が特定されている必要がある XSS 脆弱性を公開します。
-    -   iFrame 内の外部のコンテンツをレンダリングするコントロールは、軽減策を特定する必要のある XSS 脆弱性を公開します。
+    -   iFrame 内の外部のコンテンツをレンダリングするコントロールは、軽減策が特定されている必要のある XSS 脆弱性を公開します。
     -   サード パーティ サービスへの呼び出しを行なうコントロールは、軽減策が特定されている必要があり、クライアント チームによって直接の確認が必要です。
     -   認証を処理するコントロールには、軽減策が特定されている必要があります。
 

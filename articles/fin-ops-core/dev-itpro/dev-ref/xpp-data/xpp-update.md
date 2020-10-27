@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 33040a314c7e790e097a13df322b0d2bd9b47f2f
-ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
+ms.openlocfilehash: f7fddcbced6aef60a82bc2aec6bfed1677252cc6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637836"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987258"
 ---
 # <a name="update-data"></a>データの更新
 

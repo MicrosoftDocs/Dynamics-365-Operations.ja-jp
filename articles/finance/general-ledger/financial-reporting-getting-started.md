@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835113"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967261"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -149,7 +149,12 @@ ms.locfileid: "3835113"
 * Internet Explorer で、**設定**を選択し、**インターネット オプション** を選択します。 **セキュリティ**タブを選択し、信頼済みサイトを選択します。 [このゾーンのセキュリティ レベル] というラベルの付いた領域で、オプションを **中低**に変更します。
 * ブラウザーでポップアップ ブロッカーを無効にします。
 * ワークステーションには、Microsoft .NET Framework 4.6.2 以降をインストールする必要があります。 このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53345) からダウンロードしてインストールできます。
-* Chrome ブラウザを使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 シークレットモードで起動している場合、ClickOnce の拡張機能がシークレットモードで有効化されていることを確認してください。 Chrome でサイン インできない場合は、「 Internet Explorer または Edge 使用時の問題 1 」で説明されている設定手順に従ってください 。 
+* Chrome ブラウザで Microsoft Edge を使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 シークレットモードで起動している場合、ClickOnce の拡張機能がシークレットモードで有効化されていることを確認してください。 
+     1. Microsoft Edge で新しいブラウザーを開きます。
+     2. **edge://flags** と入力し、**入力**を選択します。
+     3. **ClickOnce サポート** オプションを検索するか、次の直接リンクを使用してください。**edge://flags/#edge-click-once**。
+     4. ドロップダウン メニューのオプションを**有効**に設定します。
+     5. **ブラウザーの再起動**を選択します。
 
 問題 2: ユーザーに Financial Reporting の使用に必要なアクセス許可が割り当てられていません。 
 

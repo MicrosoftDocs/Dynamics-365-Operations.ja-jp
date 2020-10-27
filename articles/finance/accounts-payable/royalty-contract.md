@@ -8,19 +8,20 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 audience: IT Pro
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3646eb2051574830ae27b10dabc3253597c29d05
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6d32d1b4c3011353ff60b6adcca1ddb9099b353
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191708"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976657"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 
@@ -75,7 +76,7 @@ ms.locfileid: "2191708"
 
 販売注文明細行がロイヤリティ手数料の対象となるかどうかを確認するには、**販売注文明細行 \> 表示 \> 価格の詳細** を選択します。 **価格の詳細**ページで、**ロイヤルティ**クイックタブを選択します。
 
-![価格の詳細ページのロイヤリティ クイック タブ](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤリティ クイック タブ")
+![価格の詳細ページのロイヤルティ クイック タブ](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤルティ クイック タブ")
 
 **ロイヤリティ** クイック タブは、明細行に適用される有効な契約コードからのロイヤリティ手数料を示しています。 また、**詳細** クイック タブの **利益見積** にある **ロイヤリティ金額** フィールドは、製品単位あたりのロイヤリティ手数料を指定します。
 

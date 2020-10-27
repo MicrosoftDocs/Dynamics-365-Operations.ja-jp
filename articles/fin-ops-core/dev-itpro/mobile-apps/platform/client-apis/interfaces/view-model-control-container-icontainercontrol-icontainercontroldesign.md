@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5955b299913fee941823bace7e77be8957ed2117
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: eeabfd12b8f2099dfa5eed1b439b561836669c5f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658894"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983005"
 ---
 # <a name="containercontroldesign-type"></a>ContainerControlDesign タイプ
 

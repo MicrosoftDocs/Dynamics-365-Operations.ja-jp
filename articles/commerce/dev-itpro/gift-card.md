@@ -3,7 +3,7 @@ title: 外部ギフト カードのサポート
 description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カードのサポートについて説明します。
 author: rubencdelgado
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: bda6adda980e9ff785de4a5c074ba61ffc8a4e67
-ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
+ms.openlocfilehash: 93c8fc0555d02127188c1e0e87bb79e18f9b8d9d
+ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3641047"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3811250"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "3641047"
 このトピックでは、コール センターや店舗での、Retail Modern point of sale (MPOS) における外部ギフトカードの設定方法について説明します。
 
 > [!NOTE]
-> コール センターでの外部ギフト カードのサポートは、バージョン 10.0.10 の新機能です。 ストアフロントでの外部ギフト カードのサポートは、将来のバージョンで追加される予定です。 
+> ストアフロントでの外部ギフト カードのサポートは、将来のバージョンで追加される予定です。 
 
 Microsoft Dynamics 365 Commerce では、*内部*および*外部*ギフト カードをサポートしています。 内部ギフト カードは Dynamics 365 Commerce で完全に管理されますが、外部ギフトカードはサード パーティによって管理されます。 小売業者の工程が Microsoft Dynamics で完全に実行されている場合、内部ギフト カードが最適なソリューションである場合があります。 複数の国や地域にわたる複雑な企業、および複数の販売時点管理 (POS) システムでは、多くの場合サード パーティを使用してギフト カードの残高を管理し、それらのシステムでギフト カードを使用できるようにすることが最善です。
 
@@ -177,9 +177,7 @@ Microsoft Dynamics 365 Commerce では、*内部*および*外部*ギフト カ�
 ## <a name="external-gift-cards-for-the-call-center-and-storefront"></a>コール センターおよびストアフロントの外部ギフト カード
 
 > [!NOTE]
-> この機能はバージョン 10.0.9 の新機能です。 この機能を使用するには、**コマース共有パラメーター** ページの**オムニ チャネル支払**タブで、**詳細な外部ギフト カードを有効にする**オプションを**はい**に設定する必要があります。 標準のストアフロントでのギフト カードのサポートは、将来のリリースで追加される予定です。 **オムニ チャネルの支払を使用する**オプションも**はい**に設定する必要があります。
-
-![詳細な外部ギフト カード オプションを有効にする](media/Configure-external-gift.png)
+> コール センターおよびストアフロントの外部ギフト カード サポートは、**機能管理**ワークスペースで有効にすることができます。 **オムニ チャネル支払**を有効にし、**詳細な外部ギフト カードの有効**を有効をにします。 
 
 ### <a name="tokenization"></a>トークン化
 

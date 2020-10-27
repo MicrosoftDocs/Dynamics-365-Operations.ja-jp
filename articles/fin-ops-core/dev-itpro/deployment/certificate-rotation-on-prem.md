@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 80e5295dcf7e95654c76233ae4b6e2fe0d0d439f
-ms.sourcegitcommit: 07e425707eb20730f10246a27799f4deeef93f97
+ms.openlocfilehash: 290f7026e5276665a9a60810fc8d4d3b960d0e19
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "3390897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830727"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -218,7 +218,7 @@ ms.locfileid: "3390897"
 3. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。
 
     > [!NOTE] 
-    > **KeyId 『\<key\>』による既存の資格情報の更新は許可されていません**というエラーメッセージを受信した場合は、[エラーメッセージ 「KeyId 『<key>』を含む既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed)に従ってください。
+    > **KeyId \<key\> による既存の資格情報の更新は許可されていません**というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。
 
 4. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。
 
@@ -282,11 +282,11 @@ ms.locfileid: "3390897"
 
     ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. 以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。 (これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。)
+3. 以前にコンフィギュレーションした新しいサムプリントにサムプリントを変更します。 これらは、InfrastructureScripts フォルダの ConfigTemplate.xml ファイルで検索できます。
 
-    ![配置設定の拇印](media/07da4d7e02f11878ee91c61b4f561a50.png)
+    ![配置設定のサムプリント画像 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-    ![配置設定の拇印](media/785caaf4ee652d66c0d88cf615a57e26.png)
+    ![配置設定のサムプリント画像 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. **準備**を選択します。
 
@@ -302,9 +302,9 @@ ms.locfileid: "3390897"
 
     次の例では、同じ拇印の名前がいくらか異なっている例の一部です。
 
-    ![配置設定の拇印の例](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+    ![配置設定におけるサムプリントの例 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-    ![配置設定の拇印の例](media/642f6434da9cdeac3651b765acca08fa.png)
+    ![配置設定におけるサムプリントの例 2](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## <a name="update-other-certificates-as-needed"></a>必要に応じて他の証明書を更新する
 
@@ -349,9 +349,23 @@ ms.locfileid: "3390897"
 
 ### <a name="data-encryption-certificate"></a>データの暗号化証明書
 
-この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[ここ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields)でオンにすることができます。 ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。 
+この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[暗号化されたフィールドの値を文書化](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields) で確認できます。 ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。 
 
-プラットフォーム更新プログラム 33 以降では、「データ暗号化証明書をローテーションする場合は営業時間外に実行する必要がある、暗号化されたデータ ローテーション システム ジョブ」 というバッチ ジョブは、新しくローテーションされた証明書を使用してデータを再暗号化します。 このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。 3 日間連続して 1 日あたり 2 時間実行されます。 データの量によっては、バッチ ジョブの実行が短時間で完了する場合があります。
+プラットフォーム更新 33 以降では、「暗号化されたデータ ローテーション システム ジョブ」という名前のバッチ ジョブが、新しくローテーションした証明書を使用してデータを再暗号化します。 このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。 これは、すべてのデータが再度暗号化されるまで、1 日に 2 時間実行されます。 バッチ ジョブを有効にするには、フライトとコンフィギュレーション キーを有効にする必要があります。 業務データベース (AXDB など) に対して次のコマンドを実行します。
+
+```sql
+IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
+  UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
+ELSE
+  INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
+ 
+IF (EXISTS(SELECT * FROM SECURITYCONFIG WHERE [KEY_] = 'EnableEncryptedDataRotation'))
+  UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
+ELSE
+  INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
+```
+
+上記のコマンドを実行した後、Service Fabric Explorer から AOS ノードを再起動します。 AOS によって新しいコンフィギュレーションが検出され、業務時間外にバッチ ジョブが実行されるようにスケジュールされます。 バッチ ジョブを作成した後、ユーザー インターフェイスからスケジュールを変更することができます。
 
 > [!WARNING]
 > 暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。 そうしないと、これによってデータが失われる可能性があります。

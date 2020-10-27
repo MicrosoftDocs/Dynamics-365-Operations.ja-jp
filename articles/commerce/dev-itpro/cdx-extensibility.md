@@ -3,7 +3,7 @@ title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有�
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a0dffc9b45adfa8305bfc10aafbe94bbfb0247fb
-ms.sourcegitcommit: 80465a66511d31c180e8a0c15fe44a7642e9ec9c
+ms.openlocfilehash: bce3a113845da908eb5d0aaa87c9742847a175fc
+ms.sourcegitcommit: 9ea9f6ef5a788549b19abfb1db7a0e4bab73fe26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3423461"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "3894552"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -171,6 +171,10 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 ## <a name="other-scenarios"></a>その他のシナリオ
 残りのプッシュとプル シナリオでは、サンプル リソース ファイルの情報のみが記載されます。それは前のセクションの説明にあるように、初期化が同じであるためです。
 
+### <a name="push-existing-headquarters-tables-to-channel-database-that-are-not-part-of-cdx-configurations"></a>CDX コンフィギュレーションに含まれていないチャネル データベースに既存の Headquarters テーブルをプッシュする
+
+この場合、拡張機能では、コア テーブルと同じ名前を持つ新しいサブ ジョブを作成し、それと同じテーブルをチャネル データベースの ext スキーマに作成して、マップする必要があります。 CDX は同じテーブルに対する複数のサブ ジョブをサポートしていないので、サブ ジョブ名はコア テーブル名と一致させておき、将来の競合を回避する必要があります。 将来的には、Headquarters テーブルが、コア テーブルと同じサブ ジョブ名で、アウト・オブ・バンド (OOB) 製品による CDX プッシュ/プル配信に追加される可能性があります。 CDX フレームワークは、重複するサブ ジョブ名がある場合は、自動的にマージされます。
+
 ### <a name="push-existing-columns-that-arent-mapped-as-part-of-any-subjobs"></a>任意のサブジョブの一部としてマップされていない既存の列をプッシュ
 
 次の例で示すように、マッピングされていない既存の列を、新しい拡張列またはチャンル データベース内の既存の列のいずれかにプッシュすることができます。 
@@ -228,7 +232,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 
@@ -255,7 +259,7 @@ Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、RetailSD
    1. Retail SDK フォルダーから **ContosoRetailExtensionTablesUpdate.sql** ファイルをコピーします。 同様の仕方で他のサンプル ファイルを実行することができます。
    2. Microsoft SQL Server ブラウザーでスクリプトを開いて、チャネル データベースに対してスクリプトを実行します。
 
-      このステップでは、トランザクション テーブルをカスタマイズするために必要な拡張テーブルとビューを作成します。 スクリプトはその他のサンプル シナリオに使用されるその他のテーブルも作成することに注意してください。
+      このステップでは、トランザクション テーブルをカスタマイズするために必要な拡張テーブルを作成します。 スクリプトはその他のサンプル シナリオに使用されるその他のテーブルも作成することに注意してください。
 
 ### <a name="extend-the-data-in-the-sample"></a>サンプルでデータを拡張する
 
@@ -365,16 +369,15 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
       初期化が完了したとき、CDX スケジューラ ジョブ、サブジョブの定義、および配布スケジュールは、元の RetailCDXSeedDataAX7 リソースとカスタマイズされた RetailCDXSeedDataAX7_ContosoRetailExtension リソースを使用して更新されます。
 
-#### <a name="test-the-customization"></a>カスタマイズのテスト
+#### <a name="validate-the-customization"></a>カスタマイズの検証
 
 1. カスタマイズが正しく動作することを確認します。
 
     1. 初期化が完了した後、**Retail と Commerce** > **バックオフィスの設定** > **コマース スケジューラ**に移動し、**スケジューラ サブジョブ** リンクを選択します。
     2. サブジョブ テーブルで、**RetailTransactionTable** サブジョブ ID を検索します。
-    3. **設定**クイック タブで、**チャネル テーブル名**フィールドが **[ext].RetailTransactionTableView** に設定されていることを確認します。
-    4. 詳細セクションの**チャネル フィールド マッピング** セクションで、新しいカスタム (拡張) 列がマッピングに表示されていることを確認します。
+    3. 詳細領域の**チャネル フィールド マッピング** セクションで、新しいカスタム (拡張) 列がマッピングに表示されていることを確認します。
 
-2. CDX ジョブがアップロードし、統合されたビューを使用してチャンネル側にある元のテーブルと拡張テーブルから取得するテスト:
+2. CDX ジョブのアップロード、およびチャネル側の元のテーブルと拡張テーブルからのプルをテストします (元のテーブルと拡張可能なテーブルを組み合わせたビューが、CDX フレームワークによって生成されます)。
 
     1. Retail Modern POS (MPOS) でいくつかのトランザクションを作成します。
     2. 拡張テーブルは Commerce Runtime (CRT) および MPOS では使用されないため、拡張テーブルに手動でデータを挿入する必要があります。 必要な値を変更した後、次のスクリプトを実行します。
@@ -410,3 +413,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 3. アップロード セッションが正常に適用されたら、**Retail と Commerce** > **照会やレポート** > **店舗のトランザクション**に移動し、アップロードした新しいトランザクションを検索します。 トランザクション、シート番号、およびサーバー スタッフ ID の各カスタム列に期待された値が入っていることを確認します。
 
     また、チャネル側の [ext].ContosoRetailTransactionTable 拡張テーブルに対応するレコードを持たないトランザクションもアップロードされていることを確認します。 これらのトランザクションにシート番号とサーバー スタッフ ID の既定値が含まれていることを確認します。 シート番号は **0** (ゼロ) に設定し、サーバー スタッフ ID は **000160** に設定する必要があります。
+    
+#### <a name="mpos-offline-transaction-sync"></a>MPOS オフライン トランザクションの同期
+ MPOS をオフライン モードに切り替えて、トランザクションを実行します。 オンラインに切り替えて、データがオフライン データベースからチャネル データベースに、次いでバックオフィスに正しく同期されていることを確認します。
+

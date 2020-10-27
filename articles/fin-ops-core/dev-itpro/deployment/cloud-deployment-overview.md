@@ -3,7 +3,7 @@ title: クラウド展開の概要
 description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Finance and Operations アプリで管理する必要があるデータおよびカスタマイズについて説明します。
 author: AngelMarshall
 manager: AnnBe
-ms.date: 08/19/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 3318b33e0ccff466a0d52e2a50a9d4eb70d734cc
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 9a8d1c5843a72ae9cd885febbdfbf21b4e89e7d0
+ms.sourcegitcommit: f676aa1d0f11bfea7ed23dcbb97c877537b7329e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712196"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3960825"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -91,7 +91,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - これらの環境の管理者パスワードは、変更しないでください。 変更済管理者パスワードをもつ環境では、Microsoft がフラグを設定します。 Microsoft は、管理者パスワードをリセットする権利を保有し、実際にリセットします。  
 > - Microsoft 管理対象 VM に新しいユーザー アカウントを追加することは、許可されていません。 Microsoft は、通知することなく新しく追加されたユーザー アカウントを削除する権利を保有し、実際に削除します。
 
-> Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations) で説明されているように、顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Office 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。 
+> Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations) で説明されているように、顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Microsoft 365 GCC コンプライアンス属性 (米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。 
 
 ## <a name="remote-desktop"></a>リモート デスクトップ
 
@@ -146,7 +146,17 @@ Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ �
 > 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
 詳細については、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location) を参照してください。
 
-> この時点で、Finance and Operations アプリの利用可能な地域は、すべての新しいプロジェクトに対して、米国東部、米国西部、および米国中部に制限されます。 米国東部 2、米国西部 2、米国中西部、米国中北部、米国中南部へのサポートは、現在これらの地域で格納データを保存しているプロジェクトと環境で引き続き利用できます。 サポートされている国と地域についての最新の一覧は、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location)を参照してください。
+### <a name="upcoming-changes-to-region-availability"></a>利用可能なリージョンに関する将来の変更
+Dynamics 365 ソリューションは、複数のサービスで構成されています。 Dynamics 365 アプリケーション、Power Platform および Azure サービスがそれぞれ依存している状況からしても、サービスに関して必要となるマトリックスは非常に大きくなり、拡大しています。 当社は必要なサービスのポートフォリオ全体を確実に利用していただけるようにするため、世界中のデータセンター リージョンのサブセットを選択する戦略を固めてきました。 当社の計画は、ソリューションにおけるコンポーネント サービス間の遅延を最小限に抑えることを目的としており、このため、指定された各データセンターにおいて、利用可能なサービスのポートフォリオ全体を用意することに重点をおいています。
+
+加えて、Finance and Operations アーキテクチャでは、柔軟性と信頼性を高め、よりシームレスな保守が行えるように、セルフサービスで構築するための機能拡張が行われています。 より少数のデータセンターで、セルフサービスでの展開をより十分に活用していただくことにより、お客様は材料効率を高めることができます。 この移行には、Azure リージョンのサブセットを選択することによる利点もあります。 その趣旨で、Finance and Operations アプリの利用可能な地域は、すべての新しいプロジェクトに対して、<strong>北米の米国東部、米国西部、および米国中部に制限されることになります</strong>。 サポートされている国と地域についての最新の一覧は、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location)を参照してください。
+
+米国東部 2、米国西部 2、米国中西部、米国中北部、米国中南部へのサポートは、現在これらの地域で Microsoft マネージド環境のデータを保存しているプロジェクトと環境で引き続き利用できます。 
+
+> [!Note]
+> 2020 年 10 月 19 日より、Microsoft はお客様と協力して、適切なデータ センターにデータを移動します。 これは、段階的なアプローチで実施されます。 対象のお客様は、サポートされるリージョンにデータが移行される前に、事前の通知を受信します。
+
+Dynamics 365 または Power Platform ファミリーの一部ではないが、Dynamics 365 および Power Platform サービスに近いものを必要とするお客様のワークロードが他にもある場合 、Microsoft は、お客様と協力して移行全体の計画を調整します。 詳細については、[クラウド配置の概要: よく寄せられる質問](cloud-deployment-overview.md#frequently-asked-questions) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

@@ -3,7 +3,7 @@ title: エンティティ格納を Data Lake として使用可能にする
 description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 2144b3389d21215e10aafcf470ce61fc30928a01
-ms.sourcegitcommit: 74d05a3a3de2e421eeab7117f2fd1fdaeb23f083
+ms.openlocfilehash: e95cb5dbc9c487f66fb2a45c90ce251f09bb002c
+ms.sourcegitcommit: ad4aef01e3b262833ae16518cf9a309778cbf8bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117156"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3850832"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -111,20 +111,18 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 ### <a name="register-the-app"></a>アプリを登録する
 
 1. Azure ポータルで、**Azure Active Directory** を選択し、**アプリケーション登録**を選択します。
-2. **新しいアプリケーションの登録** を選択し、以下の情報を入力します。
+2. メニュー上部の**新しいアプリケーション** を選択し、以下の情報を入力します。
 
-    - **名前:** アプリの名前を入力します。
-    - **アプリケーション タイプ:** **Web API** を選択します。
-    - **サインオン URL:** ルート URL をコピーしてここに貼り付けます。
+    - **名前** - アプリのフレンドリ名を入力します。
+    - ストレージ アカウントと Dynamics 環境が異なる Azure Active Directory ドメインにある場合を除き、**この組織ディレクトリのアカウントのみ**を選択してください。
 
-3. アプリケーションが作成されたら選択し、**設定** を選択します。
-4. **必要なアクセス許可** オプションを選択します。
-5. 表示されたダイアログ ボックスで、**オプションの追加** を選択し、**API の追加** を選択します。
-6. API のリストで **Azure Key Vault** を選択します。
-7. **委任アクセス許可** チェック ボックスをオンにしてアクセス許可を付与し、**完了** を選択して変更を保存します。
-8. 新しいアプリケーションの **アプリケーション** メニューで、**キー** を選択します。
-9. **キーの説明** フィールドに、名前を入力します。
-10. 期間を選択し、**保存** を選択します。 シークレットが **値** フィールドに生成されます。
+3. アプリケーションが作成されたら、**API のアクセス許可**を選択します。
+4. 表示されるダイアログ ボックスで、**アクセス許可の追加**を選択します。
+5. API のリストを含むダイアログ ボックスが表示されます。 リストで **Azure Key Vault** を選択します。
+6. **委任されたアクセス許可**ボックスを選択し、**user_impersonation** を選択してから、**アクセス許可の追加**を選択して変更を保存します。
+7. 左側のナビゲーション ウィンドウで**証明書とシークレット** メニューを選択し、**新しいクライアント シークレット**を選択します。
+8. **説明**フィールドに、名前を入力し、有効機嫌を選択します。 **追加**を選択します。
+10. シークレットが生成され、**値**フィールドに表示されます。
 11. 1、2 分以内に削除されるので、すぐにシークレットをクリップボードにコピーします。 後でアプリケーションにこのキーを指定する必要があります。
 
 ### <a name="add-a-service-principal-to-key-vault"></a>サービス プリンシパルを Key Vault に追加する

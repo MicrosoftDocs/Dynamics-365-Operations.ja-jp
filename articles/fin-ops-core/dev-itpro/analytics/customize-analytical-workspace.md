@@ -3,7 +3,7 @@ title: 分析ワークスペースでの埋め込みレポートのカスタマ�
 description: このトピックでは、分析ワークスペースに埋め込まれているアプリケーション レポートをパワー ユーザーがカスタマイズできるようにする方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 06/29/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1500dc65886f1ae621d227b16449a3f801ee0538
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 2a03f11785844f7399de49076f018fbbb38d7f53
+ms.sourcegitcommit: a8a5e266880dfa3ff6327512e0d47f2084d7b29f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527528"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796412"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -40,6 +40,12 @@ ms.locfileid: "3527528"
 
 > [!IMPORTANT]
 > 埋め込み分析レポートに対して行われたカスタマイズは、サービスによって自動的に配置され、システムの他のユーザーが使用できるようになります。
+
+### <a name="edit-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースで埋め込みレポートを編集する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+
+[分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ) のビデオ (上記) は YouTube で利用可能な[プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ### <a name="important-points-about-embedded-analytical-reports"></a>埋め込み分析レポートに関する重要なポイント
 

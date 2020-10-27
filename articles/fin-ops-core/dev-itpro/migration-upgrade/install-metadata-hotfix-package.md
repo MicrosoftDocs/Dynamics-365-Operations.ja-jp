@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd91d71d6888e92a3e78d78a4389ae0549d1404
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: ee83c65540e5c550c87dd9021d5fc90b1a0d3759
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082016"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893326"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
@@ -116,8 +116,6 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 2.  ダイアログ ボックスで、モデルを選択して競合を確認します。
 3.  **プロジェクトの作成** をクリックします。 修正プログラムが適用された後に競合していることが見つかった選択しているモデルの要素のみを含むプロジェクトが生成されます。
 4.  競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。
-
-<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
 
 ## <a name="build-and-test-on-a-local-vm"></a>ローカル VM のビルドおよびテスト
 修正プログラムの影響を受けるすべてのモデルをビルドし、アプリケーションをテストします。

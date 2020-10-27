@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afeb7756ae8c81b6cb5b7f3eff0642cdc47c3d19
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 3582b3c38d79d5b6fb9cdd74d9edc0c4afb952d7
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033024"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893091"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
@@ -74,9 +74,3 @@ ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname
     [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 
-
-<!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
-
-
-
-

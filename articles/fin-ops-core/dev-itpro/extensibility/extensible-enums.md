@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 39bcee8e17d7b744a8f9ee49323b702183d12c0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d61d41b67cbc4e429d0e1a1020136beb04dbcc9
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191632"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984715"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 
@@ -41,7 +41,7 @@ ms.locfileid: "2191632"
 ## <a name="using-extensible-enums-in-code"></a>コードでの拡張可能列挙の使用
 列挙値は開発者により制御されなくなったため、列挙値に関する確実性はありません。 コードで拡張可能列挙を使用する場合は、比較で拡張可能列挙を使用することはできない点に注意してください。 たとえば、**MyEnum::Value1 \> MyEnum::Value2** などです。
 
-さらに、整数と列挙の間のすべての変換を探します。 たとえば、ビューとクエリのモデル化された範囲、比較を使用するか比較でハードコード化された整数値を使用してコードから作成したクエリ (**\<** や **\>** など) などです。
+さらに、整数と列挙の間のすべての変換を探します。 たとえば、ビューとクエリのモデル化された範囲、および **\<** and **\>** などの比較を使用するか比較でハードコード化された整数値を使用してコードから作成したクエリです。
 
 モデルと依存しているすべてのモデルをコンパイルすると、比較および整数への変換がコンパイラによってエラーとして検出されます。
     

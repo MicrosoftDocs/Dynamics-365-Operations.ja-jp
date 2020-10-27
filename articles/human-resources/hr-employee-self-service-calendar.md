@@ -3,7 +3,7 @@ title: チーム カレンダーの作成
 description: Dynamics 365 Human Resources でチームのカレンダーを表示および作成します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 10/7/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
-ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
+ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3796472"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3969001"
 ---
 # <a name="view-team-and-company-calendars"></a>チームおよび会社のカレンダーの表示
 
@@ -50,8 +50,6 @@ Dynamics 365 Human Resources でチームおよび会社のカレンダーを表
 2. **休暇カレンダー**を選択します。
 
 人事管理ロールは、**休暇および欠勤申請**、**承認済休暇**、および **休暇申請** から会社のカレンダーにアクセスすることもできます。 
-
-[!include [banner](includes/preview-feature.md)]
 
 カレンダーには、追加のフィルターとオプションが含まれています。 すべてのカレンダーには、次の表示オプションがあります:
 

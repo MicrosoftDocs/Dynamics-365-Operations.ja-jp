@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cf056f9c8f1f24bb6eb0f619c476b1095a854bb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428642"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958846"
 ---
 # <a name="develop-succession-plan"></a>継続的計画の作成
 
@@ -38,7 +38,7 @@ ms.locfileid: "3428642"
 7. [個人] をクリックします。
 8. [個人] フィールドに名前を入力するか、またはドロップ ダウンから選択します。  例: Cassie Hicks。
 9. [OK] をクリックします。
-10. 証明書のクイック タブを展開し、スキル マッピングに含まれる証明書を表示または編集します。
+10. 証明書のクイック タブを展開して、スキル マッピングに含まれる証明書を表示または編集します。
 11. [スキル] クイック タブを展開し、含めるスキルを表示または編集します。
 12. 一覧で、最初の行をマークします。  例: 会計
 13. [オプション] チェック ボックスをオンにします。

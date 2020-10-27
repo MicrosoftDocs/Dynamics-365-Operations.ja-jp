@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 8cbe0118bcaba37a63964dcbd48e43219526c13e
-ms.sourcegitcommit: a2c75429f4944de88bf10223e4346043a44ace27
+ms.openlocfilehash: 38ff09111c55d10b7ca8812fb2e26e286e21fe83
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854459"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893211"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -40,7 +40,7 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
 - [オンプレミス配置に実装されない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
+- [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
 Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 顧客とパートナーは LCS を使用して、クラウドとオンプレミスの両方の導入を管理します。 以下のタスクに対して LCS を使用することができます。
@@ -207,7 +207,7 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 - **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)」を参照してください。
 - **Active Directory ドメイン サービス (AD DS)** - Finance + Operations コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
-- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Office 365、クラウド ベースの SaaS アプリケーション、会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御とシングル サインオンを提供します。
+- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Microsoft 365、クラウド ベースの SaaS アプリケーション、および会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御およびシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
   - ユーザーについては、同じ、使い慣れたアカウントの資格情報を使用してシームレスなサインを提供します。
   - 開発者については、組織のディレクトリに ID があるユーザーを認証するための簡単な方法を提供します。 つまり、認証や識別ではなく、アプリケーションに力を注ぐことができます。

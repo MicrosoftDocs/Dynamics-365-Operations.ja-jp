@@ -3,7 +3,7 @@ title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2f3173127f56f136aae3658830750acdb87b63bc
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: b643a03180a5a47de0686e1516dfec32fc57789b
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388104"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887154"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -148,6 +148,10 @@ ms.locfileid: "3388104"
 9. 詳細の変更や検証が必要な場合は、プロセスを繰り返します。
 
 ## <a name="troubleshooting-the-app"></a>アプリ の トラブルシューティング
+
+### <a name="no-support-for-ios14-due-to-issues-with-date-and-time-controls"></a>日付と時刻のコントロールに問題があるため、iOS14 はサポートされません
+IOS14 で導入された変更により、ユーザーがデバイスを iOS14 に更新した後 Finance and Operations モバイル アプリの日付と時刻のコントロールが機能しなくなります。 IOS14 に移動した後、日付の選択と時間の選択はタッチまたはキーボードを使用して開かないので、ユーザーは新しい日付または時刻を入力したり、既存の値をクリアしたりすることはできません。 この問題は現在調査中です。
+
 ### <a name="the-mobile-client-app-is-not-working-on-particular-devices"></a>モバイル クライアント アプリ が 特定のデバイスで動作しない
 アプリと関連付けられているキャッシュが動作不良の原因となる場合があるため、これらを削除してください。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
 アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Finance and Operations (Dynamics 365)** の順に移動し、**アプリの削除**をクリックしてアプリを完全にアンインストールします。 10 ～ 15秒後、アプリケーションを再インストールすることができます。

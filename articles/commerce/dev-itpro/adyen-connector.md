@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7269b026bd70dc326f25c97a3799bb536ec2396b
-ms.sourcegitcommit: 3227127dd20c43cedaa8912e74aaf6120a1dcbb9
+ms.openlocfilehash: faedf67eb5d5c3cc471e1d40252ef3b558d5cae3
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628394"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819827"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -205,17 +205,13 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | オーストリア | ✔ |
 | ベルギー | ✔ |
 | カナダ | ✔ |
-| クロアチア | ✔ |
-| キプロス | ✔ |
 | チェコ共和国 | ✔ |
 | デンマーク | ✔ |
 | エストニア | ✔ |
 | フィンランド | ✔ |
 | フランス | ✔ |
 | ドイツ | ✔ |
-| ギリシャ | ✔ |
 | ハンガリー | ✔ |
-| 香港 | ✔ |
 | アイスランド | ✔ |
 | アイルランド | ✔ |
 | イタリア | ✔ |
@@ -224,10 +220,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | オランダ | ✔ |
 | ノルウェー | ✔ |
 | ポーランド | ✔ |
-| ポルトガル | ✔ |
 | シンガポール | ✔ |
-| スロバキア | ✔ |
-| スロベニア | ✔ |
 | スイス | ✔ |
 | スペイン | ✔ |
 | スウェーデン | ✔ |

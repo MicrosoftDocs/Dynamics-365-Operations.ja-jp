@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベントおよびワークフローの承認
 description: このトピックでは Microsoft Power Automate を使用して購買要求の承認のワークフロー ビジネス イベントを構成して使用する方法を説明します。
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
@@ -12,15 +12,15 @@ audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 4d9df04e714c1a22e5773d8dbef143a7cd3081a0
-ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
+ms.openlocfilehash: c04e6790eb8f4cb73e6d2f296f734eaaadf937c6
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2830223"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958681"
 ---
 # <a name="business-events-and-workflow-approvals"></a>ビジネス イベントおよびワークフローの承認
 [!include [banner](../../includes/banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "2830223"
 
     <img alt="expression value" src="../../media/BEF-Howto-workflow-10.png" width="70%">
 
-14. 条件コントロールは **はい**/**いいえ** 結果の 2 つの分岐を自動的に作成します。 検証ステップの結果が **いいえ** の場合、ユーザーに電子メールを送信する必要があります。 このメールは、新しいタスクに注意が必要であり、クライアントにサイン インする必要があることをユーザーに通知します。 このステップを完了するには、**いいえ** コンテナに新しい電子メール送信アクションを作成し、前のステップ **workflowuseremail** からの承認者の電子メール、選択した件名と本文を、パラメーターに入力します。
+14. 条件コントロールは **はい**/**いいえ** 結果の 2 つの分岐を自動的に作成します。 検証ステップの結果が **いいえ** の場合、ユーザーに電子メールを送信する必要があります。 このメールは、新しいタスクに注意が必要であり、クライアントにサイン インする必要があることをユーザーに通知します。 このステップを完了するには、**いいえ**コンテナに新しい電子メール送信アクションを作成し、前のステップ **workflowuseremail** からの承認者の電子メール、選択した件名と本文を、パラメーターに入力します。
 
     > [!NOTE]
     > ワークフロー ビジネス イベントが返す電子メール アドレスは、ワークフロー承認者の電子メール アドレスです。 デモ環境でワークフロー承認者ユーザーが構成されていない場合、デモに自分の電子メール アドレスを使用できます。
@@ -87,7 +87,7 @@ ms.locfileid: "2830223"
 
     <img alt="Microsoft Power Automate approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
-16. 次に、承認ステップの結果を使用してワークフローの承認を完了する必要があります。 さらに **はい** コンテナに新しい **Finance and Operations 実行アクション** ステップを追加し、**WorkflowWorkitem-complete** アクションと **WorkflowWorkitemInstanceID** パラメーターを選択します。 次に、承認出力から残りのパラメーターを入力します。 最低限の承認結果がある結果セクションと、承認者の応答があるコメント セクション。 承認ステップは複数の承認者をサポートできるため、応答出力は配列です。 したがって、コメント セクションの入力として出力 **応答** を選択すると、すぐに以下に示すように Power Automate はアクションを **それぞれに適用** コンテナに自動的に埋め込みます。
+16. 次に、承認ステップの結果を使用してワークフローの承認を完了する必要があります。 さらに**はい**コンテナに新しい **Finance and Operations 実行アクション**を追加し、**WorkflowWorkitem-complete** アクションと **WorkflowWorkitemInstanceID** パラメーターを選択します。 次に、承認出力から残りのパラメーターを入力します。 最低限の承認結果がある結果セクションと、承認者の応答があるコメント セクション。 承認ステップは複数の承認者をサポートできるため、応答出力は配列です。 したがって、コメント セクションの入力として出力 **応答** を選択すると、すぐに以下に示すように Power Automate はアクションを **それぞれに適用** コンテナに自動的に埋め込みます。
 
     <img alt="workitem complete action" src="../../media/BEF-Howto-workflow-13.png" width="70%">
 

@@ -3,7 +3,7 @@ title: 保存されたビューを十分に活用するフォームの作成
 description: このトピックでは、保存されたビューの技術的な側面について説明します。また、保存されたビューを使用したフォームがうまく機能するよう、フォーム開発に関する考察を記載します。
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: f97fcc045b3bbbf05fb05a6d218faaf5ff837767
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 44a0d51733bee5aa628141ec5e2939a62490edfc
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652047"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802835"
 ---
 # <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 保存されたビューは、Finance and Operations アプリにおけるパーソナライズ機能の中でも重要な拡張機能です。 [保存されたビュー](../../fin-ops/get-started/saved-views.md) のトピックでは、この機能の総合的な詳細情報を提供します。ここでは、保存されているビューの技術的な要素のみでなく、ビューの影響を受ける可能性のあるフォーム開発の側面も対象とします。 
 

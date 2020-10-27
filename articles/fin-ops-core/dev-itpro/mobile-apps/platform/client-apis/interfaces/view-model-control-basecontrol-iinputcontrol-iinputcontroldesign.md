@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e0e1fd99d7eeebb15e02b6d0be6d9ce6e5bb8297
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b41e28778dfa0b9592a6963b295b0bf5231b45f
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191862"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983611"
 ---
 # <a name="inputcontroldesign-type"></a>InputControlDesign タイプ
 

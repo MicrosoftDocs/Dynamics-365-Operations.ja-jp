@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 505b0f6452bc70aafef3bd7cdac506faa1288fc4
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 488eed745c3ee42ad495f3e88cef36d5b298231d
+ms.sourcegitcommit: c4d1d0cf9fb1aee58c5dc5e1bb48df6498ab1441
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029439"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3906568"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
@@ -234,3 +234,8 @@ ms.locfileid: "3029439"
         ttsabort;
     }
     ```
+    
+### <a name="note-on-computed-column-generation-failures"></a>計算列の生成に失敗した場合の注意事項
+計算列の SQL を生成する X++ メソッドが例外をスローした場合、DbSync は例外をキャッチし、**その列の値を `NULL` に設定**して、*警告*を記録します。
+
+開発者は、計算列のメソッドでコンフィギュレーション キーを手動でチェックして、生成に失敗した場合に `NULL` 値がヒットされないようにすることをお勧めします。

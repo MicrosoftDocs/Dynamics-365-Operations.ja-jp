@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 50e56ce6ca876b7935ef565a96243ec6f2a3a552
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: 9065ac7bcc0e96e2f93df7cfc90d63a0bb201313
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138301"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985695"
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 

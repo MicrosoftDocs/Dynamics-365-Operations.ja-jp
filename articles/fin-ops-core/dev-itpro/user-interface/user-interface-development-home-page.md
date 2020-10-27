@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c21c2793430141b77899f85150506668fbca3fd7
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: f5a7577baa411a45c937fe4702eab30206784934
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329829"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893175"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
@@ -45,7 +45,6 @@ Finance and Operation アプリケーションのユーザー インターフェ
 
 ## <a name="forms"></a>フォーム
 -   [ナビゲーション概念](page-navigation.md)
-<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
 -   [Web クライアントのページ レイアウト](page-layout.md)
 -   [Dynamics Symbol フォント](symbol-font.md)
 -   [カスタム パターンを使用するテスト フォーム](testing-forms-custom-patterns.md)

@@ -1,6 +1,6 @@
 ---
-title: Azure パイプラインを使用した資産のダウンロード
-description: このトピックでは、Azure パイプラインを使用して、LCS アセット ライブラリから資産をダウンロードする方法について説明します。
+title: Azure Pipelines を使用した資産のダウンロード
+description: このトピックでは、Azure Pipelines を使用して、Microsoft Dynamics Lifecycle Services (LCS) で資産をアセット ライブラリからダウンロードする方法について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 03/05/2020
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d974d546188ef26e736ed28b711884b7135cbc2
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: 455306c8ffff387386c67a8c03fc02344635550d
+ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765090"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3815648"
 ---
-# <a name="download-assets-by-using-azure-pipelines"></a>Azure パイプラインを使用した資産のダウンロード
+# <a name="download-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のダウンロード
 
-Azure DevOps の **Lifecycle Services (LCS) 資産のダウンロード** タスクを使用して、**Lifecycle Services アセット ライブラリ** から資産をダウンロードできます。
+Azure DevOps の **Lifecycle Services (LCS) 資産のダウンロード** タスクを使用して、Microsoft Dynamics Lifecycle Services (LCS) で資産をアセット ライブラリから自動的にダウンロードできます。
 
 このトピックは、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser)を参照してください。
+> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](https://docs.microsoft.com/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="add-the-task-to-a-pipeline"></a>パイプラインへのタスクの追加
 
@@ -39,15 +39,10 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 次のテーブルに、このタスクで使用可能なオプションを示します。
 
 | 入力名 | 必須 | 説明 |
-| --- | --- | --- |
-| LCS 接続 | 有 | Dynamics Lifecycle Services (LCS) へのサービス接続を選択または作成します。 詳細については、[Azure Pipelines での LCS 接続の作成](pipeline-lcs-connection.md) を参照してください。 |
-| LCS プロジェクト ID | 有 | 配置する両方の試算と、ターゲット環境を含む、LCS のプロジェクトを識別するプロジェクト ID を入力します。 プロジェクト ID は、プロジェクトのダッシュボードの URL の末尾に記載できます。 |
-| ダウンロード先のパス | 有 | 資産のダウンロード先のパスを入力します。 |
-| 検索パターン | 有 | **アセット ライブラリ** で資産を検索する方法を選択します。 |
+|---|---|---|
+| LCS 接続 | あり | LCS へのサービス接続を選択または作成します。 詳細については、[Azure Pipelines での LCS 接続の作成](pipeline-lcs-connection.md) を参照してください。 |
+| LCS プロジェクト ID | あり | 配置する資産およびターゲット環境の両方を含むプロジェクトの ID を LCS に入力します。 プロジェクト ID は、プロジェクトのダッシュボードの URL の末尾に記載できます。 |
+| ダウンロード先のパス | あり | 資産のダウンロード先のパスを入力します。 |
+| 検索パターン | あり | LCS の資産ライブラリで資産を検索するために使用する検索パターンのタイプを選択します。 選択した値に応じて、次のオプションを使用できます。<ul><li>**資産 ID (guid)** – この値を選択する場合は、**LCS ファイル資産 ID** フィールドに、資産 ID を入力するか、またはセミコロンで区切られた資産 ID の一覧を入力します。 資産 ID は、グローバル一意識別子 (GUID) です。</li><li>**名前** – この値を選択した場合は、**LCS ファイル資産タイプ** フィールドで資産タイプを選択します。 次に、**LCS ファイル資産名**フィールドで、検索する名前を指定します。 アスタリスク (\*) を名前でワイルドカード文字として使用できます。 たとえば、**MyPackage\*** と入力します。</li></ul> |
 
-選択した **検索パターン** のタイプに応じて、次のオプションを使用できます。
-
-* **資産 ID (GUID)** を選択する場合は、**LCS ファイル資産 ID**  フィールドに GUID を入力するか、資産 ID の GUID またはセミコロンで区切られた一覧を指定します。
-* **名前** を選択する場合は、**LCS ファイル資産タイプ** ドロップダウン リストから資産タイプを選択し、**LCS ファイル資産名** フィールドで検索する名前を選択します。 **MyPackage\*** など、アスタリスク (\*) 記号を使用して名前にワイルドカードを使用することができます。
-
-ダウンロードが正常に行われた後、ファイルパスの一覧を出力変数と共に取得できます。 複数のファイルが存在する場合は、セミコロンで区切られたファイルパスの一覧が出力変数に割り当てられます。 **Azure DevOps** の出力変数の詳細については、[タスクからの出力変数を使用する](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#use-output-variables-from-tasks) を参照してください
+ダウンロードが正常に行われた後、ファイル パスの一覧を出力変数と共に取得できます。 複数のファイルが存在する場合は、セミコロンで区切られたファイル パスの一覧が出力変数に割り当てられます。 Azure DevOps の出力変数の詳細については、[タスクからの出力変数を使用する を参照してください](https://docs.microsoft.com/azure/devops/pipelines/process/variables#use-output-variables-from-tasks) を参照してください。

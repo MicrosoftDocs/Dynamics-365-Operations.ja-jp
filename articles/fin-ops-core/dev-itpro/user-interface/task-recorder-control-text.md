@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 17711
 ms.assetid: 9b75a1e3-cc76-4a2f-ae30-7e5a485b30b1
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 003708c81ad874ecc0c0fa8372e5874177bfdec5
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 2047c836a1db2f15b6ac7ef4ac53b6af7415d07a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329838"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980546"
 ---
 # <a name="control-the-text-that-task-recorder-generates-for-a-control"></a>コントロールに対してタスク レコーダーが生成するテキストの制御
 

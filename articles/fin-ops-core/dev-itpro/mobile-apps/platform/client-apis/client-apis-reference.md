@@ -12,15 +12,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3d5f1d2d3c9b48b73d46b2144c64019c1c375d62
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 427d26f812156c9ec445832d506e8ef4d9d2e246
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183149"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982940"
 ---
 # <a name="client-apis-home-page"></a>クライアント API のホームページ
 

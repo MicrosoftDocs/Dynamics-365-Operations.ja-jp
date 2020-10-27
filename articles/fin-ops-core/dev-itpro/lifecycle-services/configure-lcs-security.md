@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8bfc22215e8105cf5eaad1703ab909906c3ebe4
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6f65622b20ff3ce9a7d6897a043ad8c27c0c324e
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124829"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893393"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -30,7 +30,7 @@ ms.locfileid: "3124829"
 
 Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。 <br>
 
-現在、サインアップ時に [Microsoft Office 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287) で作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 <br> 
+現在、サインアップ時に [Microsoft 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287)で作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 <br> 
 
 Microsoft Dynamics AX 2012 では、LCS への組織レベルのアクセスは、個人の Microsoft ID と CustomerSource または PartnerSource の組織との関連付けによって制御されます。 したがって、CustomerSource または PartnerSource のユーザーは、LCS の組織のワークスペースに自動的にアクセスし、参加するように招待されたすべてのプロジェクトを表示できます。 CustomerSource および PartnerSource の組織の管理者になっているユーザーは LCS の管理者になります。 <br>
 

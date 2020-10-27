@@ -3,7 +3,7 @@ title: AX 2012 からのアップグレード - サンドボックス環境で�
 description: このトピックでは、サンドボックス環境で Microsoft Dynamics AX 2012 から Finance and Operations にデータ アップグレードを実行する方法を説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3639087e648d63289ee8b7157506651861b68d1f
-ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
+ms.openlocfilehash: 965bdfda35c5e43f69ede2aa351a11bc2789f6a3
+ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "3539920"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "3949160"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
+
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
 
 このタスクの出力は、サンドボックス環境で使用できるデータベースのアップグレードです。 このトピックでは、*サンドボックス*という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。 この環境では、ビジネス ユーザーと機能チームのメンバーがアプリケーション機能を検証できます。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 から継承されたデータが含まれます。
 
@@ -65,18 +68,8 @@ AX 2012 環境と統合されている他のシステムをお持ちかもしれ
 
 データベースのコピーを作成するには、元のデータベースのバックアップを作成し、新しい名前で復元します。 両方のデータベースに十分なスペースがあることを確認します。 別のサーバーでコピーを作成できます。 データベースを実行する SQL Server インスタンスのバージョンは重要ではありません。
 
-データベースのコピーを作成するコードの例を以下に示します。 特定のデータベース名を反映するよう、この例を変更する必要があります。
+このアクションを実行するには、ソースデータベースを右クリックし、**タスク** \> **バックアップ**を選択します。 フル コピー バックアップを作成します。 既存のデータベースのバックアップが上書きされないようにするために、ファイルを別の名前でバックアップ ディレクトリに保存することをお勧めします。
 
-```sql
-BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-GO
-
-RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-NOUNLOAD,  STATS = 5
-```
 ## <a name="run-the-t-sql-script-to-prepare-the-database"></a>データベースの準備のため T-SQL スクリプトを実行
 
 このスクリプトは、ユーザーを削除、AX 2012 RTM モデル ストアに関連するステップを削除、スキーマをクリーンアップ、ビューを削除、および tempDB への参照を削除によってデータベースを準備します。 
@@ -179,6 +172,9 @@ end
 
 ## <a name="export-the-copied-database-to-a-bacpac-file"></a>コピーしたデータベースを bacpac ファイルにエクスポートする
 
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
+
 SQLPackage.exe ツールを使用して、コピーしたデータベースを bacpac ファイルにエクスポートします。 この手順は、DBA または同等の知識を持っているチーム メンバーが行う必要があります。
 
 > [!IMPORTANT]
@@ -213,7 +209,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
-別のオプションは LCS 資産ライブラリを使用する方法ですが、アップロードやダウンロードは Azure ストレージよりも時間がかかる場合があります。 このオプションを使用するには、次のようにします。
+Microsoft Dynamics Lifecycle Services (LCS) でアセット ライブラリを使用することもできます。 ただし、アップロードとダウンロードには、Azure ストレージよりも長い時間がかかります。 このオプションを使用するには、次のようにします。
 1. LCS でプロジェクトにサインインし、アセット ライブラリに移動します。
 2. データベース バックアップ タブを選択します。
 3. bacpac ファイルをアップロードします。
@@ -221,8 +217,10 @@ bacpac ファイルを AOS マシンに移動する方法を選択すること�
 
 ## <a name="import-the-bacpac-file-into-sql-database"></a>bacpac ファイルを SQL Database にインポートする
 
-この手順では、エクスポートした bacpac ファイルを、サンドボックス環境で使用する SQL データベース インスタンスにインポートします。 まず、サンドボックス AOS コンピューターに Management Studio の最新バージョンをインストールする必要があります。 その後 SQLPackage.exe ツールを使用してファイルをインポートします。
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
 
+この手順では、エクスポートした bacpac ファイルを、サンドボックス環境で使用する SQL データベース インスタンスにインポートします。 まず、サンドボックス AOS コンピューターに Management Studio の最新バージョンをインストールする必要があります。 その後 SQLPackage.exe ツールを使用してファイルをインポートします。
 
 SQL データベース インスタンスへのアクセスを制限するファイアウォール規則があるため、サンドボックス環境の AOS コンピューターでこれらのタスクを直接実行します。 ただし、AOS コンピューターを使用すると、アクセス許可を取得できます。
 
@@ -298,14 +296,9 @@ ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 
 ## <a name="run-the-data-upgrade-deployable-package"></a>データ アップグレード展開可能なパッケージを実行
 
-レベル 2 サンドボックス環境では、DataUpgrade パッケージを LCS 経由で実行することはできません。 最新の Finance and Operations の更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
+レベル 2 のサンドボックス環境では、レベル 1 の DevTest 環境と同様に、データ アップグレード パッケージを LCS から直接実行できるようになりました。 パッケージを適用するには、LCS の環境に移動し、**メンテナンス** \> **更新プログラムの適用**を選択します。 一覧の一番下までスクロールし、共用資産ライブラリからデータ アップグレード パッケージが読み込まれるまで待ちます。 パッケージが読み込まれるまでにしばらく時間がかかる場合があります。 リストにデータ アップグレード パッケージが表示されない場合は、LCS のプロジェクト設定に移動し、レガシ システムが **AX2012 アップグレード**に設定されていることを確認してください。 その後、パッケージを適用できます。
 
-1. [LCS](https://lcs.dynamics.com/)にサインインします。
-2. **共有資産ライブラリ** タイルを選択します。
-3. **共有アセット** ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
-4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。 たとえば、AX 2012 からアップグレードする場合、パッケージ名は AX2012DataUpgrade から始まります。 アップグレードするリリースに対応するパッケージを選択します。 例: AX2012DataUpgrade-July2017。
-
-次に、AOS VM のリモートデスクトップを開始て手動でパッケージを実行します。 
+選択するパッケージの名前は、使用しているバージョンと一致している必要があります。 たとえば、バージョン 10.0.14 にアップグレードするには、**AX2012DataUpgrade-10-0-14** を選択します。
 
 詳細については、 [開発、デモ、サンドボックス環境でのデータの更新](upgrade-data-to-latest-update.md) を参照してください。 
 

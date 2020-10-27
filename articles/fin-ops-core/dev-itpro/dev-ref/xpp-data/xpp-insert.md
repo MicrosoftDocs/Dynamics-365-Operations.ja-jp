@@ -13,15 +13,15 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d2e2110c07d8c601233a05878550c01310ab65bd
-ms.sourcegitcommit: 94863c587e8acacc7c2e7811e84de66c312cc017
+ms.openlocfilehash: d5d829711c1fdf166e1fb264810cf9713fdd10cb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637828"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985056"
 ---
 # <a name="insert-data"></a>データの挿入
 
