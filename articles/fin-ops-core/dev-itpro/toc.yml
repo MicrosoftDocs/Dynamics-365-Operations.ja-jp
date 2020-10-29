@@ -142,8 +142,10 @@
                           items:
                             - name: 二重書き込みのシステム要件
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: 二重書き込みの設定のサポートされているシナリオ
+                            - name: 二重書き込みの設定方法に関するガイダンス
                               href: data-entities/dual-write/connection-setup.md
+                            - name: 初期同期に関する考慮事項
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Lifecycle Services からの二重書き込みの設定
                               href: data-entities/dual-write/lcs-setup.md
                             - name: 既存の Finance and Operations アプリの二重書き込みの有効化
@@ -404,11 +406,13 @@
                   href: database/database-point-in-time-restore.md
                 - name: サンドボックス環境への生産データベースのポイントインタイム復元
                   href: database/database-pitr-prod-sandbox.md
+                - name: ジャストインタイム データベース アクセスの有効化
+                  href: database/database-just-in-time-jit-access.md
             - name: チュートリアル
               items:
                 - name: トレーニング用の更新
                   href: database/dbmovement-scenario-general-refresh.md
-                - name: 生産データベースのコピーのデバッグ
+                - name: 運用データベースのコピーのデバッグ
                   href: database/dbmovement-scenario-debugdiag.md
                 - name: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
                   href: database/dbmovement-scenario-exportuat.md
@@ -480,7 +484,9 @@
                   href: deployment/Update-retail-channel.md
                 - name: Commerce Scale Unit (クラウド) の初期化
                   href: deployment/Initialize-Retail-Channels.md
-                - name: 小売データ所在地
+                - name: チャネルを別の Commerce Scale Unit に移行する
+                  href: deployment/Reassign-CSU.md
+                - name: 小売データの所在地
                   href: deployment/retail-data-residency.md
             - name: オンプレミス配置
               items:
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: 中国で 21Vianet が運用する Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
-            - name: Finance and Operations のテクニカル サポートの設定
+            - name: Finance and Operations アプリのテクニカル サポートを設定する
               href: lifecycle-services/support-experience.md
-            - name: Finance and Operations サポート エクスペリエンスの管理
+            - name: Finance and Operations アプリのサポート エクスペリエンスを管理する
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: システム管理
           items:
@@ -1582,9 +1588,9 @@
                   href: migration-upgrade/app-validation-process.md
                 - name: AX 2012 アップグレード - 機能テスト合格
                   href: migration-upgrade/upgrade-functional-validation.md
-                - name: AX 2012 アップグレード - Go-Live の準備
+                - name: AX 2012 アップグレード - Go Live の準備
                   href: migration-upgrade/upgrade-go-live-prep.md
-                - name: AX 2012 アップグレード - Go-Live
+                - name: AX 2012 アップグレード - Go Live
                   href: migration-upgrade/2012-upgrade-cutover.md
                 - name: AX 2012 からのアップグレードに影響する変更
                   items:
