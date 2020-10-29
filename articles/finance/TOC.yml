@@ -90,7 +90,7 @@
               href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
-            - name: 伝票リソース
+            - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
@@ -182,9 +182,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live の準備
+                - name: Go Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live に関するよく寄せられる質問
+                - name: Go Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -240,7 +240,9 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: 仕入先請求書の自動化の結果を表示
                   href: accounts-payable/view-automated-vendor-invoice.md
-            - name: 仕入先請求書の勘定配布と補助元帳仕訳
+                - name: 仕入先請求書入力ワークスペース
+                  href: accounts-payable/vendor-invoices-workspace.md
+            - name: 仕入先請求書の勘定配布と補助元帳仕訳入力
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: 仕訳入力とトランザクションの表示
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: トランザクションの詳細レポートを使用した試算表
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: 転記された仕訳帳の仕訳入力
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: 連結会社の通貨再評価
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: 公的機関の詳細な元帳エントリの作成
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: トランザクションの詳細レポートを使用した試算表
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: 現金管理制限の使用
                   href: public-sector/cash-control.md
                 - name: 公的機関での期末処理
@@ -1398,9 +1400,11 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e 証明書
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: NF-e カスタム証明書の検証
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: NF E XML ドキュメントと DANFE の設定、インポートおよび確認
                       href: localizations/latam-bra-set-up-import-nfe.md
-                    - name: NF-e 連邦税パラメーターの設定
+                    - name: NF-e 連邦パラメーターの設定
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: 会計施設の NF-e パラメーターの設定
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
@@ -2076,10 +2080,12 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: 税還付用 GSTR レポート データの生成
                       href: localizations/apac-ind-GST-tax-returns.md
-                    - name: GSTR レポートに対してマルチ バッチ処理を有効にします
+                    - name: GSTR レポートに対してマルチ バッチ処理を有効化する
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: 税の照会
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: TaxDocumentJSON テーブルのクリーンアップ
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: 税エンジン
                   items:
                     - name: 税エンジンの概要
@@ -2651,7 +2657,7 @@
                         - name: 在庫プロファイルの概要
                           href: localizations/rus-inventory-profile-overview.md
                         - name: 在庫プロファイルの設定
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: ドキュメントおよびクエリでの在庫プロファイルの使用
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: レポート

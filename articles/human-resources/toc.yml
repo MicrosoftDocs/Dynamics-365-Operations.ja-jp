@@ -5,6 +5,12 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2002 年 10 月 22 日
+          href: hr-whats-new-2020-10-22.md
+        - name: 2020 年 10 月 6 日
+          href: hr-whats-new-2020-10-06.md
+        - name: 2020 年 9 月 26 日
+          href: hr-whats-new-2020-09-26.md
         - name: 2020 年 9 月 16 日
           href: hr-whats-new-2020-09-16.md
         - name: 2020 年 9 月 3 日
@@ -83,6 +89,8 @@
               href: hr-admin-integration-dayforce.md
             - name: 定期的なデータ エクスポート アプリの作成
               href: hr-admin-integration-recurring-data-export.md
+            - name: LinkedIn Talent Hub との統合
+              href: hr-admin-integration-linkedin.md
             - name: Office との統合
               items:
                 - name: Office 統合のチュートリアル
@@ -217,7 +225,11 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Teams の Human Resources アプリ
           href: hr-admin-teams-leave-app.md
-        - name: 伝票リソース
+        - name: Go Live の準備
+          href: hr-admin-go-live-prepare.md
+        - name: Go Live に関するよく寄せられる質問
+          href: hr-admin-go-live-faq.md
+        - name: ドキュメント リソース
           items:
             - name: ヘルプ システム
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
@@ -669,6 +681,8 @@
           items:
             - name: 従業員およびマネージャー セルフ サービスの概要
               href: hr-employee-manager-self-service-overview.md
+            - name: マネージャー セルフ サービスでカスタム リンクを作成する
+              href: hr-employee-manager-self-service-custom-links.md
             - name: 従業員セルフサービスのワークスペース名を変更する
               href: hr-employee-self-service-workspace-name.md
             - name: 個人情報の編集
