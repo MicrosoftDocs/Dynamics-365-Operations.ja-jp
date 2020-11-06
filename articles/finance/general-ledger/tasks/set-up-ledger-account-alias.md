@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2098ffed81ab3c18855363f0c3ef43dc1d11a77d
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: e1764f31c98039e9ea6f665dcb04a1cfd23c31dc
+ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138093"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998851"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>勘定科目のエイリアスの設定
 
 [!include [banner](../../includes/banner.md)]
 
-この手順では、勘定番号を入力するショートカットを提供する勘定科目エイリアスを作成する方法について説明します。 この手順では、デモ データ会社 USMF を使用します。
+この手順では、勘定番号を入力するショートカットを提供する勘定科目エイリアスを作成する方法について説明します。 この手順では、デモ データの会社 USMF を使用します。
 
 1. [総勘定元帳] > [勘定科目表] > [勘定] > [勘定科目エイリアス] の順に移動します。
 2. [新規] をクリックします。

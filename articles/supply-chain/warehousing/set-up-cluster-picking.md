@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367410"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017578"
 ---
 # <a name="set-up-cluster-picking"></a>クラスター ピッキングの設定
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、作業者がモバイル デバイスを使用してピッキング作業をクラスターにグループ化して、複数のワーク オーダーに対して 1 つの場所から品目を同時にピッキングできるようにする方法について説明します。 これは *クラスター ピッキング*と呼ばれます。
+このトピックでは、作業者がモバイル デバイスを使用してピッキング作業をクラスターにグループ化して、複数のワーク オーダーに対して 1 つの場所から品目を同時にピッキングできるようにする方法について説明します。 これは *クラスター ピッキング* と呼ばれます。
 
 ## <a name="about-cluster-picking"></a>クラスター ピッキングについて
 
@@ -58,11 +58,11 @@ ms.locfileid: "3367410"
 
 1. **新規** をクリックして、新しいプロファイルを作成します。
 
-1. **クラスターを作成** をクリックし、**クラスターの並べ替え** の下で、**新規** をクリックして、クラスターの並べ替え基準を設定します。 並べ替え基準は、作業者がピッキング作業を実行する順序を制御します。 必要な数だけ基準を追加できます。
+1. **クラスターを作成** をクリックし、 **クラスターの並べ替え** の下で、 **新規** をクリックして、クラスターの並べ替え基準を設定します。 並べ替え基準は、作業者がピッキング作業を実行する順序を制御します。 必要な数だけ基準を追加できます。
 
 1. **シーケンス番号** フィールドで、番号を入力してソート基準が処理される順序を定義します。
 
-1. **フィールド名** フィールドで、並べ替えを決定するフィールドを選択します。 たとえば、**WMSLocationId** フィールドを選択した場合、作業は場所別に並べ替えられます。
+1. **フィールド名** フィールドで、並べ替えを決定するフィールドを選択します。 たとえば、 **WMSLocationId** フィールドを選択した場合、作業は場所別に並べ替えられます。
 
 1. **並べ替え** フィールドで、次のいずれかのオプションを選択します。
 
@@ -77,6 +77,6 @@ ms.locfileid: "3367410"
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>クラスタ ピッキングの品目の検証の設定
 
-1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます、**倉庫管理** \> **倉庫管理** \> **設定** \>  **モバイル デバイス** \> **モバイル デバイスのメニュー項目** に移動します。
+1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます、 **倉庫管理** \> **倉庫管理** \> **設定** \>  **モバイル デバイス** \> **モバイル デバイスのメニュー項目** に移動します。
 
-1. モバイル デバイス メニュー品目から、**作業確認の設定**を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。
+1. モバイル デバイス メニュー品目から、 **作業確認の設定** を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。

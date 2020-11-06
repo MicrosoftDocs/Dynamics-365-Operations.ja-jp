@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275536"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997377"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Finance and Operations アプリのデュアル書き込みモジュールに関する問題のトラブルシューティング
 
@@ -37,7 +36,7 @@ ms.locfileid: "3275536"
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Finance and Operations アプリでデュアル書き込みのモジュールを読み込むことができない
 
-**データ管理** ワークスペースで **デュアル書き込み** タイルを選択しても**デュアル書き込み** のページを開くことができない場合は、データ統合サービスがダウンしている可能性があります。 サポートチケットを作成して、データ統合サービスの再起動を要求してください。
+**データ管理** ワークスペースで **デュアル書き込み** タイルを選択しても **デュアル書き込み** のページを開くことができない場合は、データ統合サービスがダウンしている可能性があります。 サポートチケットを作成して、データ統合サービスの再起動を要求してください。
 
 ## <a name="error-when-you-try-to-create-a-new-entity-map"></a>新規エンティティのマッピングを作成しようとするとエラーが発生する
 
@@ -50,7 +49,7 @@ ms.locfileid: "3275536"
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>デュアル書き込みのユーザー インターフェイスを開くとエラーが発生する
 
-**データ管理**ワークスペースからデュアル書き込みにアクセスすると、次のエラーメッセージが表示される場合があります。
+**データ管理** ワークスペースからデュアル書き込みにアクセスすると、次のエラーメッセージが表示される場合があります。
 
 *login.microsoftonline.com が接続を拒否しました。*
 
@@ -62,7 +61,7 @@ ms.locfileid: "3275536"
 
 マッピングをリンクまたは作成する際に、次のエラーが表示される場合があります。
 
-*応答状態コードが成功とならない: 403 (tokenexchange) 。<br>セッション ID: \<セッション ID\><br>ルート アクティビティ ID: \<ご利用のルート アクティビティ ID\>*
+*応答状態コードが成功とならない: 403 (tokenexchange)。<br> セッション ID: \<your session id\><br> ルート アクティビティ ID: \<your root activity id\>*
 
 このエラーは、デュアル書き込みへのリンクと、マッピングを作成する十分なアクセス権限がない場合に発生する可能性があります。 このエラーは、リンク解除によるデュアル書き込みを行わずに Common Data Service 環境をリセットした場合にも発生する可能性があります。 Finance and Operations アプリと Common Data Service の両方でシステム管理者ロールを持つすべてのユーザーが、環境をリンクできます。 デュアル書き込み接続を設定したユーザーだけが、新しいエンティティのマッピングを追加できます。 設定後、システム管理者のロールを持つユーザーはステータスを監視し、マッピングを編集できます。
 

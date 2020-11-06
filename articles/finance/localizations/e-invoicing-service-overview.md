@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b3445157efce6349b3febafb6c860260052f7d6c
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835986"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039749"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>電子請求書アドオン機能の概要
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Finance および、Dynamics 365 Supply Chain Management の電子請求書アドオンは、電子請求書ドキュメントの構成可能な処理と構成可能な訴求メント交換を可能にする高スケーラブルなマルチ テナントサービスです。 処理と統合のルールは完全に構成をすることが可能で、このロジックは財務と Supply Chain Management の外部で実行されます。 本サービスは、主に企業間の電子請求書の処理を対象としていますが、それ以外の用途にも独自の構成をすることが可能です。
 

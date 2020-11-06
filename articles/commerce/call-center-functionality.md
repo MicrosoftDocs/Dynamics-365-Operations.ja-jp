@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 816bfc8b93f52fe91192874bcc1c8e605e41b582
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7091e8ba7940e358d77c69c63e26c8f3d9337713
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023136"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107259"
 ---
 # <a name="call-center-sales-functionality"></a>コール センターの販売機能
 

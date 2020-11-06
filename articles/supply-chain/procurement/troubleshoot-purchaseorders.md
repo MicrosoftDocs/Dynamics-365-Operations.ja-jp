@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e55974f65577170880e60095f1ba74ea7366e592
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834386"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018563"
 ---
 # <a name="troubleshoot-purchase-orders"></a>発注書のトラブルシューティング
 
@@ -34,13 +34,13 @@ ms.locfileid: "3834386"
 
 この問題は、発注書の配分に不整合があるために発生することがあります。
 
-この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、**調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
+この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、 **調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
 
 ## <a name="when-purchase-orders-are-imported-through-data-management-purchase-order-line-numbers-dont-follow-the-increment-that-defined-in-system-parameters"></a>データ管理を通して発注書をインポートした場合、発注書明細行番号は、システム パラメータで定義されている増分に従いません。
 
 ### <a name="issue-description"></a>問題の説明
 
-既定では、*発注書明細行 V2*  データ エンティティを通じてインポートされた発注書明細行の自動生成された行番号は、システム パラメータで指定されたシステム行番号の増分を使用しません。 ユーザー インターフェイス (UI) を通じて発注書を手動で作成し、明細行を追加すると、行番号が正しく増加します。 ただし、データ管理フレームワーク (DMF) を使用すると、正しく増加しません。
+既定では、 *発注書明細行 V2*  データ エンティティを通じてインポートされた発注書明細行の自動生成された行番号は、システム パラメータで指定されたシステム行番号の増分を使用しません。 ユーザー インターフェイス (UI) を通じて発注書を手動で作成し、明細行を追加すると、行番号が正しく増加します。 ただし、データ管理フレームワーク (DMF) を使用すると、正しく増加しません。
 
 この問題が発生するのは、DMF で明細行をインポートしたときに、インポートされたエンティティで行番号が割り当てられていない場合に、DMF メソッドを使用してそれを割り当てるためです。 このメソッドでは、常に行番号が 1 ずつ増加します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "3834386"
 
 この問題は、発注書の配分に不整合があるために発生することがあります。
 
-この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、**調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
+この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、 **調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
 
 ## <a name="one-or-more-accounting-distributions-are-either-over-distributed-or-under-distributed"></a>1 つ以上の勘定配布が、過剰配布されているか、配布中であるかのいずれかです。
 
@@ -70,7 +70,7 @@ ms.locfileid: "3834386"
 
 この問題は、発注書の配分に不整合があるために発生することがあります。
 
-この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、**調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
+この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、 **調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>自分が作成した発注書のみを表示できますか?
 
@@ -105,7 +105,7 @@ ms.locfileid: "3834386"
 この問題を再現する一つの方法は次のプロシージャです。
 
 1. システム言語を *EN-US* (米国英語) に設定します。
-1. 製品名の翻訳に、*EN-US* と *DE* (ドイツ語) 言語が維持される製品があることを確認してください。
+1. 製品名の翻訳に、 *EN-US* と *DE* (ドイツ語) 言語が維持される製品があることを確認してください。
 1. 法人の言語を *"DE"* に変更します。
 1. 言語として *DE* が設定されている法人では、製品を含む発注書を作成します。
 1. 製品名が米国英語 (システム言語) で表示されたままになっていることに注意してください。
@@ -118,7 +118,7 @@ ms.locfileid: "3834386"
 
 ### <a name="issue-description"></a>問題の説明
 
-たとえば、ある製品には承認済仕入先があり、有効日は 2018 年 1 月 11 日 (*01/11/2018*)、有効期限は *なし* となっています。 有効日を 2018 年 1 月 10 日 (*01/10/2018*) または 2018 年 1 月 12 日 (*01/12/2018*) に変更しようとすると、次のエラーが表示されます。
+たとえば、ある製品には承認済仕入先があり、有効日は 2018 年 1 月 11 日 ( *01/11/2018* )、有効期限は *なし* となっています。 有効日を 2018 年 1 月 10 日 ( *01/10/2018* ) または 2018 年 1 月 12 日 ( *01/12/2018* ) に変更しようとすると、次のエラーが表示されます。
 
 > 承認済サプライヤー リスト (PdsApproveVendorList) にレコードを作成することはできません。 '有効期限' の値は、'有効' 値以上である必要があります。
 
@@ -130,7 +130,7 @@ ms.locfileid: "3834386"
 - 既存の期間より後の日付に有効期限を変更するには、既存のレコードの有効日が最新の有効期限の後にする必要があります。
 - 仕入先が承認する合計期間を減らすには、既存のレコードを削除または変更する必要があります。 または、インポート中に **切り捨て** スイッチを使用することもできます。 このスイッチは、品目ごとに承認済仕入先のテーブル内の既存のレコードをすべて削除します。
 
-レコードに有効日が *01/11/2018*、有効期限が *なし* となっている問題の説明で説明されているシナリオでは、有効期限が常にあるという、問題の説明で説明されているシナリオについては、有効日が *01/10/2018* で有効期限が *なし* となっている新規レコードをインポートできます。 ただし、データ管理を通じて有効日が *01/12/2018* に更新されるように期間を短縮することはできません。 この変更は UI を通じて行なわなければなりません。
+レコードに有効日が *01/11/2018* 、有効期限が *なし* となっている問題の説明で説明されているシナリオでは、有効期限が常にあるという、問題の説明で説明されているシナリオについては、有効日が *01/10/2018* で有効期限が *なし* となっている新規レコードをインポートできます。 ただし、データ管理を通じて有効日が *01/12/2018* に更新されるように期間を短縮することはできません。 この変更は UI を通じて行なわなければなりません。
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>発注書ヘッダーの配送先住所を変更した後、配送先名は同期されません。
 

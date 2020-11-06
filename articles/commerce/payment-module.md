@@ -3,7 +3,7 @@ title: 支払いモジュール
 description: このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818329"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055384"
 ---
 # <a name="payment-module"></a>支払いモジュール
 
@@ -42,6 +42,9 @@ ms.locfileid: "3818329"
 
 Adyen 支払いコネクタは強力な顧客認証 (SCA) もサポートします。 欧州連合 (EU) 決済サービス指令 2.0 (PSD 2.0) の一部では、オンラインで買い物をする人は電子決済方法で決済する場合、自分たちのオンライン ショッピング体験以外で認証を受けることを義務付けています。 チェックアウト フローでは、顧客は銀行のサイトにリダイレクトされます。 その後、認証後に Commerce のチェックアウト フローにリダイレクトされます。 このリダイレクトでは、顧客がチェックアウト フローに入力した情報 (たとえば、出荷先住所、配送オプション、ギフトカード情報、ロイヤルティ情報など) が維持されます。 この機能を有効にするには、Commerce 本社の SCA 用に支払コネクタをコンフィギュレーションする必要があります。 詳細については、[Adyen を使用した強力な顧客認証](adyen_redirect.md) を参照してください。
 
+> [!NOTE]
+> Adyen 支払コネクタの場合、サイトの許可リストに Adyen URL を追加した場合にのみ、支払モジュールの iframe モジュールはレンダリングできます。 この手順を完了するには、 **\*.adyen.com** をサイトのコンテンツ セキュリティ ポリシーの **child-src** 、 **connect-src** 、 **img-src** 、 **script-src** 、 **style-src** の各ディレクティブに追加します。 詳細については、[コンテンツ セキュリティ ポリシーの管理](manage-csp.md) を参照してください。 
+
 次の図は、チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例を示しています。
 
 ![チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例](./media/ecommerce-payments.PNG)
@@ -57,7 +60,7 @@ Adyen 支払いコネクタは強力な顧客認証 (SCA) もサポートしま�
 
 ## <a name="billing-address"></a>請求先住所
 
-支払モジュールを使用すると、顧客は支払情報の請求先住所を指定できます。 また、請求先住所として配送先住所を使用することもできます。この場合、チェックアウト フローをより簡単かつ迅速にすることができます。 **請求先住所の表示** プロパティが、**False** に設定されている場合は、支払モジュールをチェックアウト ページでコンフィギュレーションする必要があります。
+支払モジュールを使用すると、顧客は支払情報の請求先住所を指定できます。 また、請求先住所として配送先住所を使用することもできます。この場合、チェックアウト フローをより簡単かつ迅速にすることができます。 **請求先住所の表示** プロパティが、 **False** に設定されている場合は、支払モジュールをチェックアウト ページでコンフィギュレーションする必要があります。
 
 ## <a name="add-a-payment-module-to-a-checkout-page-and-set-the-required-properties"></a>チェックアウト ページに支払い モジュールを追加して、必要なプロパティを設定する
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 940a6c39ac83e7388d4e1a08b656b75df81ed801
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834384"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018540"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>調達ワークフローに関するトラブルシューティング
 
@@ -48,7 +48,7 @@ SysWorkflowQueue-resume
 
 この問題は、発注書の配分に不整合があるために発生することがあります。
 
-この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、**調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
+この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、 **調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
 
 この問題は、[この Microsoft サポート技術情報 (KB) の記事 ](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138) を通じて修正されます。
 
@@ -56,7 +56,7 @@ SysWorkflowQueue-resume
 
 この問題は、発注書の配分に不整合があるために発生することがあります。
 
-この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、**調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
+この問題のブロックを解除して発注書を *ドラフト* 状態にリセットするには、 **調達 \> 定期タスク \> クリーンアップ \> 発注書配送のリセット** の順に移動します。 詳細については、ブログ投稿 [Dynamics 365 Supply Chain Management での PO 配分エラーを解決する](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/) を参照してください。
 
 ## <a name="if-a-delivery-remainder-is-canceled-on-a-purchase-order-where-change-management-is-turned-on-the-purchase-order-goes-to-a-confirmed-state"></a>変更管理が有効になっている発注書で出荷更新待ちがキャンセルされた場合、発注書は確認済状態になります。
 
@@ -74,9 +74,9 @@ SysWorkflowQueue-resume
 
 ### <a name="issue-description"></a>問題の説明
 
-*確認済* 状態の発注書をキャンセルした後で、そのキャンセルされた発注書は、**発注書** 準備ワークスペースのドラフト発注書の一覧に表示されます。
+*確認済* 状態の発注書をキャンセルした後で、そのキャンセルされた発注書は、 **発注書** 準備ワークスペースのドラフト発注書の一覧に表示されます。
 
 ### <a name="issue-resolution"></a>問題の解決
 
-この問題は、変更管理の対象になる発注書に対してのみ発生します。 これは、このキャンセルに必要のある変更が懸念されることから発生します。 この承認は、システムによって自動的に行うことができます。 したがって、このプロセスでは、キャンセルされた発注書を承認ワークフローに送信して、*承認済* 状態にすることができます。 この時点で、**発注書の準備** ワークスペースのドラフト発注書の一覧にその発注書が表示されなくなります。
+この問題は、変更管理の対象になる発注書に対してのみ発生します。 これは、このキャンセルに必要のある変更が懸念されることから発生します。 この承認は、システムによって自動的に行うことができます。 したがって、このプロセスでは、キャンセルされた発注書を承認ワークフローに送信して、 *承認済* 状態にすることができます。 この時点で、 **発注書の準備** ワークスペースのドラフト発注書の一覧にその発注書が表示されなくなります。
 

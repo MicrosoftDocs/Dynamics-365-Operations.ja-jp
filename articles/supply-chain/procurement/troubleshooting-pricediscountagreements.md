@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchRFQTable
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b83490acdc58c9ee0ffae9480f69a99477913843
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834387"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018216"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>価格、割引、契約、リベートのトラブルシューティング
 
@@ -48,7 +48,7 @@ ms.locfileid: "3834387"
 
 この問題を再現する一つの方法は次のプロシージャです。
 
-1. **調達パラメーター** ページの **配送** タブで、**製品受領時に費用を生成** オプションが *はい* に設定されていることを確認します。
+1. **調達パラメーター** ページの **配送** タブで、 **製品受領時に費用を生成** オプションが *はい* に設定されていることを確認します。
 1. 費用を含む発注書を作成します。
 1. 発注書を確認します。
 1. 発注書を受け取ります。
@@ -67,7 +67,7 @@ ms.locfileid: "3834387"
 
 ### <a name="reason-for-the-issue"></a>問題の理由
 
-データ管理を介してインポートされた発注書の明細行に価格情報が既に含まれている場合、それらの明細行に対する売買契約は再評価されません。 たとえば、**行割引の割合** または価格と割引のいずれかの値が、明細行に設定されている場合、その明細行に対して売買契約は検索されません。
+データ管理を介してインポートされた発注書の明細行に価格情報が既に含まれている場合、それらの明細行に対する売買契約は再評価されません。 たとえば、 **行割引の割合** または価格と割引のいずれかの値が、明細行に設定されている場合、その明細行に対して売買契約は検索されません。
 
 ### <a name="issue-workaround"></a>問題の回避策
 
@@ -109,7 +109,7 @@ ms.locfileid: "3834387"
 
 ## <a name="when-i-open-the-purchase-agreement-page-in-a-line-view-mode-i-cant-personalize-the-page-by-adding-the-price-unit-field-in-the-overview-of-the-line"></a>行ビュー モードで購買契約ページを開くと、明細行の概要に価格単位フィールドを追加してページをカスタマイズできません。
 
-契約フレームワーク内の一部の共有フィールドは、個人用設定に含めることはできません。 この制限は、実装されるデータ モデルが原因で発生します。 したがって、**価格単位** フィールドをカスタマイズすることはできません。
+契約フレームワーク内の一部の共有フィールドは、個人用設定に含めることはできません。 この制限は、実装されるデータ モデルが原因で発生します。 したがって、 **価格単位** フィールドをカスタマイズすることはできません。
 
 ## <a name="the-maximum-limit-from-a-purchase-agreement-isnt-effective-on-a-purchase-requisition"></a>購買契約書の上限は、購買要求に対して有効ではありません。
 

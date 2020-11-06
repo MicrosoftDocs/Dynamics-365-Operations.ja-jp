@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc47d590789c79c08af7555222aa7cc9409da23c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b7d28e041b8adc828a2447ab09a0c1d28cc2aec0
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022008"
 ---
 # <a name="gift-card-module"></a>ギフト カード モジュール
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、ギフト カード モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
@@ -62,7 +61,7 @@ ms.locfileid: "3817429"
 
 ## <a name="site-settings-for-gift-card-modules"></a>ギフト カード モジュールのサイト設定
 
-コマース サイト ビルダーの **サイト設定 \> 拡張子** には、**サポートされているギフト カード タイプ** と呼ばれるギフト カード モジュール設定があります。 この設定は 3 つの値をサポートします:
+コマース サイト ビルダーの **サイト設定 \> 拡張子** には、 **サポートされているギフト カード タイプ** と呼ばれるギフト カード モジュール設定があります。 この設定は 3 つの値をサポートします:
 - **Dynamics 365 ギフト カード** - この設定が適用されている場合、ギフト カード モジュールは Dynamics 365 ギフト カードの償還しかできなくなります。 この設定は、E コマース サイトのサインイン ユーザーに対してのみサポートされます。
 - **SVS と Givex のギフト カード** - この設定が適用されている場合、ギフト カード モジュールは Givex や SVS ギフト カードの償還しかできなくなります。 この設定は、E コマース サイトのサインイン ユーザーと匿名ユーザーに対してサポートされます。
 - **Dynamics 365、SVS、Givex のギフト カード** - この設定が適用されている場合、ギフト カード モジュールは Dynamics 365、Givex、SVS ギフト カードを償還できます。 この設定は、E コマース サイトのサインイン ユーザーに対してのみサポートされます。

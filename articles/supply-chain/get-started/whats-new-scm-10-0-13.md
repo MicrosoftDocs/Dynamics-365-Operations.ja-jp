@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 49b90037c182e10d0cc9d449649e8501537fdc4f
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802946"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012393"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Dynamics 365 Supply Chain Management 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.13 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.569 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.13 の新機能または変更された機能について列挙します。 このバージョンには 10.0.569 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース:** 2020 年 8 月
 - **一般提供 (自己更新):** 2020 年 9 月
@@ -49,8 +49,6 @@ ms.locfileid: "3802946"
 - [製品バージョン追跡と拡張機能の新しい在庫分析コード](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - 詳細については、[製品分析コード](../pim/product-dimensions.md)を参照してください。
 
 - [ライセンス プレートに基づく注文が確定した引当](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - 詳細については、[柔軟なライセンス プレートの引当](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation)を参照してください。
-
-- [出庫ワークロードの視覚化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
 - [作業集荷明細行の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
@@ -76,8 +74,8 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.13 には、Platform updates
 
 [Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 

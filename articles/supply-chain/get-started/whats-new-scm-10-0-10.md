@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 647c62c489e65596be87a658a3d53e74e53455d7
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652110"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012370"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a> Dynamics 365 Supply Chain Management 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
@@ -39,10 +39,15 @@ ms.locfileid: "3652110"
 このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 - [既存の CW タグと倉庫管理を使用するための機能強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+
 - [倉庫管理のための入庫積荷管理の拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - 詳細については、[発注書に対する入庫積荷の倉庫処理](../warehousing/inbound-load-handling.md)を参照してください。
+
 - [倉庫管理のラベル印刷拡張機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - 詳細については、[ライセンス プレート ラベルのドキュメント ルーティング レイアウト](../warehousing/document-routing-layout-for-license-plates.md)を参照してください。
+
 - [マスター プランには、事前処理フィルタが有効になっている場合に手持在庫がある品目が含まれます](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [製造領域の新しいデータ エンティティ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [倉庫プロセスに対する品質管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - 詳細については、[倉庫プロセスの品質管理](../inventory/quality-management-for-warehouses-processes.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
@@ -65,8 +70,8 @@ Dynamics 365 Supply Chain Management 10.0.10 には、Platform updates が含ま
 
 [Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 
