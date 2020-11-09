@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456817"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997481"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>デュアル書き込みの通貨データ タイプの移行
 
@@ -51,7 +50,7 @@ Common Data Service での既存の通貨フィールドの保管では、4 桁�
 
 ### <a name="request-a-migration"></a>移行の要求
 
-この機能を使用できるようにするには、**CDSExpandDecimal@microsoft.com** にメールをして、次の情報を含める必要があります。
+この機能を使用できるようにするには、 **CDSExpandDecimal@microsoft.com** にメールをして、次の情報を含める必要があります。
 
 + **件名:** \<organizationID\> の 10 進数サポートを有効にする要求
 + **本文:** 自分の組織 \<organizationID\> に対して拡張 10 進数サポートを有効にしたいと考えています。
@@ -71,7 +70,7 @@ Common Data Service での既存の通貨フィールドの保管では、4 桁�
 
 この変更を行うには、Power Apps の次の設定を更新する必要があります。
 
-+ **システム設定: 価格決定の通貨の精度** - **システムフィールド全体の価格決定に使用される通貨の有効桁数を設定**すると、**価格決定の精度** を選択した場合に、通貨が組織に対してどのように動作するかを定義します。
++ **システム設定: 価格決定の通貨の精度** - **システムフィールド全体の価格決定に使用される通貨の有効桁数を設定** すると、 **価格決定の精度** を選択した場合に、通貨が組織に対してどのように動作するかを定義します。
 + **業務管理: 通貨** - **通貨の精度** フィールドでは、特定の通貨での小数点以下の桁数を独自に指定できます。 組織全体の設定にはフォールバックがあります。
 
 次に、いくつか制限を示します。
@@ -81,13 +80,13 @@ Common Data Service での既存の通貨フィールドの保管では、4 桁�
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>システム設定: 価格決定の通貨の精度
 
-移行が完了した後、管理者は通貨の有効桁数を設定できます。 **設定 \>管理** に移動して、**システム設定** を選択します。 その後、**全般** タブで、次の図に示すように、**システム全体の価格決定に使用される通貨桁数を設定** フィールドの値を変更します。
+移行が完了した後、管理者は通貨の有効桁数を設定できます。 **設定 \>管理** に移動して、 **システム設定** を選択します。 その後、 **全般** タブで、次の図に示すように、 **システム全体の価格決定に使用される通貨桁数を設定** フィールドの値を変更します。
 
 ![通貨のシステム設定](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>業務管理: 通貨
 
-特定の通貨の通貨の有効桁数と、価格決定に使用される通貨の桁数が異なる場合は、この通貨を変更することができます。 **設定\>業務管理** に移動して、**通貨** を選択して、通貨を選択して変更します。 次の図に示すように、**通貨桁数** フィールドを目的の小数点以下の桁数に設定します。
+特定の通貨の通貨の有効桁数と、価格決定に使用される通貨の桁数が異なる場合は、この通貨を変更することができます。 **設定\>業務管理** に移動して、 **通貨** を選択して、通貨を選択して変更します。 次の図に示すように、 **通貨桁数** フィールドを目的の小数点以下の桁数に設定します。
 
 ![特定のロケールの通貨設定](media/specific-currency.png)
 

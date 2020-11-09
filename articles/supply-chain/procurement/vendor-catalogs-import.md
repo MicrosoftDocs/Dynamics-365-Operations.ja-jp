@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: 7ed2c50b28fdbd1baf4caa0a8a7f2f05d6a53fd6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338311"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018586"
 ---
 # <a name="import-vendor-catalogs"></a>仕入先カタログのインポート
 
@@ -41,11 +41,11 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 
 仕入先データ カタログをインポートするには、次のタスクを実行する必要があります。
 
-1. データ マッピング ルールが定義されているデータ管理ワークスペースで、プロジェクトを設定します。 **データ管理** を選択し、**データ プロジェクトのロールの設定** を選択します。
+1. データ マッピング ルールが定義されているデータ管理ワークスペースで、プロジェクトを設定します。 **データ管理** を選択し、 **データ プロジェクトのロールの設定** を選択します。
 
 2. 調達カテゴリ階層を設定し、仕入先を調達カテゴリに割り当てます。 商品コードを使用している場合は、調達カテゴリに商品コードを追加します。 調達カテゴリ階層の設定の詳細については、次を参照してください。[調達カテゴリ階層の設定](../procurement/tasks/set-up-procurement-category-hierarchy.md)
 
-3. 仕入先をカタログ インポート用にコンフィギュレーションします。 仕入先を選択し、**調達** > **設定** > **仕入先カタログ インポートの構成** を選択します。
+3. 仕入先をカタログ インポート用にコンフィギュレーションします。 仕入先を選択し、 **調達** > **設定** > **仕入先カタログ インポートの構成** を選択します。
 
 4. ワークフローをカタログ インポート用にコンフィギュレーションします。 CMR ファイル テンプレートを作成し、これを仕入先と共有します。
 
@@ -63,7 +63,7 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 
 1. **調達とソーシング** \> **カタログ** \>**仕入先カタログ** を選択し、使用するカタログをダブル クリックします。
 
-2. 現在のカタログ インポート テンプレート (XSD ファイル) をダウンロードします。 **関連情報** グループで、**カタログ** タブ、**アクション ウィンドウ** の、**更新カタログ** ページで、**カタログ テンプレートの生成** をクリックし、**調達カテゴリ** を選択します。
+2. 現在のカタログ インポート テンプレート (XSD ファイル) をダウンロードします。 **関連情報** グループで、 **カタログ** タブ、 **アクション ウィンドウ** の、 **更新カタログ** ページで、 **カタログ テンプレートの生成** をクリックし、 **調達カテゴリ** を選択します。
 
     - **調達カテゴリ** オプションを使用すると、仕入先が製品の提供を許可されている調達カテゴリを含むカタログ テンプレートを生成できます。
 

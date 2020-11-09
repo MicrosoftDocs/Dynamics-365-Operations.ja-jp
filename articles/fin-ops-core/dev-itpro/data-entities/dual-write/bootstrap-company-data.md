@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172926"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997579"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>社内データを含むブートストラップに関するよく寄せられる質問
  
@@ -37,11 +36,11 @@ ms.locfileid: "3172926"
 ## <a name="when-should-i-use-bootstrapping"></a>ブートストラップはどのように使用する必要がありますか? 
 ブートストラップは、デュアル書き込みエンティティ マップを有効にする前に使用する必要があります (ステップ #5 の間)。  
 1. Finance and Operations アプリと Common Data Service または他の Dynamics 365 アプリのインスタンス間にデュアル書き込み接続を設定するには、Finance and Operations アプリに管理者としてログインします。 
-2. **データ管理**モジュールに移動し、**デュアル書き込み**ボタンをクリックします。 これにより、**データ インテグレーター**が起動します。 
+2. **データ管理** モジュールに移動し、 **デュアル書き込み** ボタンをクリックします。 これにより、 **データ インテグレーター** が起動します。 
 3. 1 つ以上の会社に対して、デュアル書き込み接続を作成します。  
     > [!div class="mx-imgBorder"]
     > ![デュアル書き込み接続の作成](media/dual-write-boot-1.png)
-4. **Cdm_companies**エンティティ マップを有効にします。 これにより、Finance and Operations アプリから Common Data Service に会社が同期されます。  
+4. **Cdm_companies** エンティティ マップを有効にします。 これにより、Finance and Operations アプリから Common Data Service に会社が同期されます。  
     > [!div class="mx-imgBorder"]
     > ![エンティティ マップの有効化](media/dual-write-boot-2.png)
 5. Common Data Service または他の Dynamics 365 アプリのインスタンスでサンプルのブートストラップ コードを実行します。  
@@ -52,16 +51,16 @@ ms.locfileid: "3172926"
 ## <a name="how-to-i-use-the-code-sample"></a>コード サンプルを使用するにはどうすればよいですか?
 サンプル コードは Visual Studio で読み込むことができる C# アプリケーションです。 このコードでは、Common Data Service SDK での NuGet パッケージの依存関係が使用されます。これは、標準の Visual Studio ツールで更新できます。 
 
-Visual Studio でソリューションを解凍して開き、NuGet パッケージを復元したら、コードで **TODO** を検索します。 会社情報をブートストラップする方法について決定する必要があるたびに、その決定は正規の実装のサンプル コードとともに、**TODO** によって示されます。 
+Visual Studio でソリューションを解凍して開き、NuGet パッケージを復元したら、コードで **TODO** を検索します。 会社情報をブートストラップする方法について決定する必要があるたびに、その決定は正規の実装のサンプル コードとともに、 **TODO** によって示されます。 
 
 このサンプル コードでは、会社によってエンティティ レコードを分類する多数の方法のうち 1 つが示されています。 **TODO** セクションのロジックを変更することにより、カスタム分類を作成できます。 
  
 ## <a name="what-should-i-expect"></a>何を予期する必要がありますか?
 既定では、サンプル アプリケーションを使用すると、事業単位から会社へのコード マッピングの辞書を提供できます。 **OwningBusinessUnit** フィールドを使用してブートストラップしたエンティティは、指定した会社を使用するように自動的に設定されます。 製品などの **OwningBusinessUnit** フィールドを持たないエンティティでは、空の事業単位の値によるマッピングに基づいて会社が設定されます。
 
-コンソールアプリケーションには **–simulate** または **–apply** のいずれか 1 つのパラメーターが必要です。 **–simulate** コマンド ライン パラメーターを使用すると、データは更新されません。 更新されるエンティティごとに 1 つ、**simulation_<entityname>.csv** ファイルのみがツールと同じディレクトリに生成されます。 これらのファイルを繰り返しレビューして、コードが期待どおりに会社の値を更新するように作業できます。 
+コンソールアプリケーションには **–simulate** または **–apply** のいずれか 1 つのパラメーターが必要です。 **–simulate** コマンド ライン パラメーターを使用すると、データは更新されません。 更新されるエンティティごとに 1 つ、 **simulation_<entityname>.csv** ファイルのみがツールと同じディレクトリに生成されます。 これらのファイルを繰り返しレビューして、コードが期待どおりに会社の値を更新するように作業できます。 
 
-更新のシミュレーションが終了したら、**-apply** パラメーターを使用します。 これにより、現在、間違った会社の値があるすべてのレコードが一度に 1000 レコードずつ更新されます (既定)。 このコードは提供されているとおりべき等であるため、再実行が可能で、誤って割り当てられた会社のみが更新されます。  **–apply** を実行すると、このコードでは変更が加えられた CSV ファイルを **applied_<entityname>.csv** という名前で出力します。 
+更新のシミュレーションが終了したら、 **-apply** パラメーターを使用します。 これにより、現在、間違った会社の値があるすべてのレコードが一度に 1000 レコードずつ更新されます (既定)。 このコードは提供されているとおりべき等であるため、再実行が可能で、誤って割り当てられた会社のみが更新されます。  **–apply** を実行すると、このコードでは変更が加えられた CSV ファイルを **applied_<entityname>.csv** という名前で出力します。 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

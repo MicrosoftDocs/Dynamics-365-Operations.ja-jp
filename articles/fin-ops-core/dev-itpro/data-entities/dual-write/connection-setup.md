@@ -1,9 +1,9 @@
 ---
-title: デュアル書き込み設定用にサポートされたシナリオ
+title: デュアル書き込みの設定方法に関するガイダンス
 description: このトピックでは、デュアル書き込みの設定でサポートされているシナリオについて説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 08/17/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
-ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
+ms.openlocfilehash: 2d77a1458f3f4c79b231e6a6d7cc320b8ee1fad9
+ms.sourcegitcommit: ee643d651d57560bccae2f99238faa39881f5c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3818599"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4088509"
 ---
-# <a name="supported-scenarios-for-dual-write-setup"></a>デュアル書き込み設定用にサポートされたシナリオ
+# <a name="guidance-for-how-to-set-up-dual-write"></a>デュアル書き込みの設定方法に関するガイダンス
 
 [!include [banner](../../includes/banner.md)]
 
@@ -34,8 +33,8 @@ ms.locfileid: "3818599"
 
 Finance and Operations 環境と Common Data Service 環境との間には、デュアル書き込み接続を設定できます。
 
-+ **Finance and Operations 環境** では、**Finance and Operations アプリ** の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Retail)。
-+ **Common Data Service 環境**では、**Dynamics 365 のモデル駆動型アプリ**の基盤となるプラットフォームを提供します (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation)。
++ **Finance and Operations 環境** では、 **Finance and Operations アプリ** の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Retail)。
++ **Common Data Service 環境** では、 **Customer Engagement アプリ** の基盤となるプラットフォームを提供します (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation)。
 
 >[!IMPORTANT]
 >Finance and Operations の Human Resources では 、デュアル書き込み接続をサポートしていますが、Dynamics 365 Human Resources アプリではサポートされていません。
@@ -45,28 +44,33 @@ Finance and Operations 環境と Common Data Service 環境との間には、デ
 + Finance and Operations アプリの新しいインスタンスの場合、デュアル書き込み接続の設定は Microsoft Dynamics Lifecycle Services (LCS) で開始されます。 Power Platform のライセンスを所有している際は、テナントに無い場合、新しい Common Data Service 環境が得られます。
 + 既存のインスタンス Finance and Operations アプリの場合、デュアル書き込み接続の設定は Finance and Operations環境で開始されます。
 
+エンティティでデュアル書き込みを開始する前に、最初の同期を実行して、Finance and Operations アプリと Customer Engagement アプリの両面で既存のデータを処理することができます。 2 つの環境間でデータを同期する必要がない場合は、初期同期を省略できます。
+
+初期同期では、既存のデータを 1 つのアプリから双方向の別のアプリにコピーできます。 セットアップ シナリオには、使用中の環境や環境に含まれるデータのタイプによって、さまざまなシナリオがあります。
+
 サポートされている設定シナリオは次のとおりです。
 
-+ [新しい Finance and Operations アプリ インスタンスと新しいモデル駆動型アプリ インスタンス](#new-new)
-+ [新しい Finance and Operations アプリ インスタンスと既存のモデル駆動型アプリ インスタンス](#new-existing)
-+ [デモ データ付き新しい Finance and Operations アプリ インスタンスと新しいモデル駆動型アプリ インスタンス](#new-demo-new)
-+ [デモ データ付き新しい Finance and Operations アプリ インスタンスと既存のモデル駆動型アプリ インスタンス](#new-demo-existing)
-+ [既存の Finance and Operations アプリ インスタンスと新規または既存のモデル駆動型アプリ インスタンス](#existing-existing)
++ [新しい Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#new-new)
++ [新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#new-existing)
++ [データ付き新しい Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#new-data-new)
++ [データ付き新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#new-data-existing)
++ [既存の Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#existing-new)
++ [既存の Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-model-driven-app-instance"></a><a id="new-new"></a>新しい Finance and Operations アプリ インスタンスと新しいモデル駆動型アプリ インスタンス
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>新しい Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス
 
-データ無しの Finance and Operations アプリの新しいインスタンスと Dynamics 365 のモデル駆動アプリの新しいインスタンス間のデュアル書き込み接続を設定するには、[Lifecycle Services からのデュアル書き込み設定](lcs-setup.md) の手順に従います。 接続の設定が完了すると、次のアクションが自動的に実行されます。
+データ無しの Finance and Operations アプリの新しいインスタンスと Customer Engagement アプリの新しいインスタンス間のデュアル書き込み接続を設定するには、[Lifecycle Services からのデュアル書き込み設定](lcs-setup.md) の手順に従います。 接続の設定が完了すると、次のアクションが自動的に実行されます。
 
 - 新しい空の Finance and Operations 環境が準備されます。
-- モデル駆動型のアプリの新しい空のインスタンスがプロビジョニングされ、CRM の主要ソリューションがインストールされます。
+- Customer Engagement アプリの新しい空のインスタンスがプロビジョニングされ、CRM の主要ソリューションがインストールされます。
 - DAT 会社のデータに対して、デュアル書き込み接続が確立されます。
 - エンティティ マップでは、ライブ同期が有効になっています。
 
 次に、両方の環境について、ライブ データ同期の準備が整います。
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-model-driven-app-instance"></a><a id="new-existing"></a> 新しい Finance and Operations アプリ インスタンスと既存のモデル駆動型アプリ インスタンス
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス
 
-データ無しの Finance and Operations アプリの新しいインスタンスと Dynamics 365 のモデル駆動アプリの既存インスタンス間のデュアル書き込み接続を設定するには、[Lifecycle Services からのデュアル書き込み設定](lcs-setup.md) の手順に従います。 接続の設定が完了すると、次のアクションが自動的に実行されます。
+データ無しの Finance and Operations アプリの新しいインスタンスと Customer Engagement アプリの既存のインスタンス間のデュアル書き込み接続を設定するには、[Lifecycle Services からのデュアル書き込み設定](lcs-setup.md) の手順に従います。 接続の設定が完了すると、次のアクションが自動的に実行されます。
 
 - 新しい空の Finance and Operations 環境が準備されます。
 - DAT 会社のデータに対して、デュアル書き込み接続が確立されます。
@@ -79,36 +83,56 @@ Finance and Operations 環境と Common Data Service 環境との間には、デ
 1. Finance and Operations アプリに新しい会社を作成します。
 2. デュアル書き込み接続の設定に会社を追加します。
 3. 3 文字の国際標準化機構 (ISO) 会社コードを使用し、Common Data Service データを [Bootstrap](bootstrap-company-data.md) にて実行します。
+4. データを同期するエンティティの **初期同期** 機能を実行します。
 
-デュアル書き込みはライブ同期モードになっているため、Common Data Service からのデータは、自動的に Finance and Operations アプリに送られます。
+例と代わりのアプローチについては、[例](#example)を参照してください。
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-demo-data-and-a-new-model-driven-app-instance"></a><a id="new-demo-new"></a> デモ データ付きの新しい Finance and Operations アプリ インスタンスと新しいモデル駆動型アプリ インスタンス
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>データ付き新しい Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス
 
-デモ データ付き Finance and Operations アプリの新しいインスタンスと Dynamics 365 モデル駆動型アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい Finance and Operations アプリ インスタンスと新しいモデル駆動型アプリ インスタンス](#new-new) セクションにある手順に従います。 接続の設定が完了したら、デモ データをモデル駆動型のアプリに同期する場合には、次の手順に従います。
+データ付き Finance and Operations アプリの新しいインスタンスと Customer Engagement アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#new-new) セクションにある手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
 
-1. LCS ページから Finance and Operations アプリを開き、ログインして、**データ管理 \> デュアル書き込み**の順に移動します。
-2. データを同期するエンティティの**初期同期**機能を実行します。
+1. LCS ページから Finance and Operations アプリを開き、ログインして、 **データ管理 \> デュアル書き込み** の順に移動します。
+2. データを同期するエンティティの **初期同期** 機能を実行します。
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-demo-data-and-an-existing-model-driven-app-instance"></a><a id="new-demo-existing"></a> デモ データ付きの新しい Finance and Operations アプリ インスタンスと既存のモデル駆動型アプリ インスタンス
+例と代わりのアプローチについては、[例](#example)を参照してください。
 
-デモ データ付き Finance and Operations アプリの新しいインスタンスと Dynamics 365 モデル駆動型アプリの既存インスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい Finance and Operations アプリ インスタンスと既存モデル駆動型アプリ インスタンス](#new-existing) セクションにある手順に従います。 接続の設定が完了したら、デモ データをモデル駆動型のアプリに同期する場合には、次の手順に従います。
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>データ付き新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス
 
-1. LCS ページから Finance and Operations アプリを開き、ログインして、**データ管理 \> デュアル書き込み**の順に移動します。
-2. データを同期するエンティティの**初期同期**機能を実行します。
+データ付き Finance and Operations アプリの新しいインスタンスと Customer Engagement アプリの既存のインスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#new-existing) セクションにある手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
+
+1. LCS ページから Finance and Operations アプリを開き、ログインして、 **データ管理 \> デュアル書き込み** の順に移動します。
+2. データを同期するエンティティの **初期同期** 機能を実行します。
 
 既存の Common Data Service データを Finance and Operations アプリに同期するには、次の手順に従います。
 
 1. Finance and Operations アプリに新しい会社を作成します。
 2. デュアル書き込み接続の設定に会社を追加します。
 3. 3 文字の ISO 会社コードを使用し、Common Data Service データを [Bootstrap](bootstrap-company-data.md) にて実行します。
+4. データを同期するエンティティの **初期同期** 機能を実行します。
 
-デュアル書き込みはライブ同期モードになっているため、Common Data Service からのデータは、自動的に Finance and Operations アプリに送られます。
+例と代わりのアプローチについては、[例](#example)を参照してください。
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-or-existing-model-driven-app-instance"></a><a id="existing-existing"></a> 既存の Finance and Operations アプリ インスタンスと新規または既存のモデル駆動型アプリ インスタンス
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>既存の Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス
 
-Finance and Operations アプリの既存インスタンスと Dynamics 365 のモデル駆動型アプリの新規または既存インスタンス間のデュアル書き込み接続の設定は、Finance and Operation 環境で発生します。
+Finance and Operations アプリの既存インスタンスと Customer Engagement アプリの新規のインスタンス間のデュアル書き込み接続の設定は、Finance and Operation 環境で発生します。
+
+1. [Finance and Operations アプリから接続を設定します](enable-dual-write.md)。
+2. データを同期するエンティティの **初期同期** 機能を実行します。
+
+例と代わりのアプローチについては、[例](#example)を参照してください。
+
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>既存の Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス
+
+Finance and Operations アプリの既存インスタンスと Customer Engagement アプリの既存のインスタンス間のデュアル書き込み接続の設定は、Finance and Operation 環境で発生します。
 
 1. Finance and Operations アプリから接続を設定します。
 2. 既存の Common Data Service データを Finance and Operations アプリに同期するには、3 文字の ISO 会社コードを使用して、Common Data Service データを [ブートストラップ](bootstrap-company-data.md) にて実行します。
+3. データを同期するエンティティの **初期同期** 機能を実行します。
 
-デュアル書き込みはライブ同期モードになっているため、Common Data Service からのデータは、自動的に Finance and Operations アプリに送られます。
+例と代わりのアプローチについては、[例](#example)を参照してください。
+
+## <a name="example"></a>例
+
+例は、[顧客 V3 の有効化—連絡先エンティティ マップ](enable-entity-map.md#example-enabling-the-customers-v3contacts-entity-map)を参照してください
+
+初期同期を実行する必要がある各エンティティのデータ ボリュームに基づく代わりのアプローチについては、[初期同期の考慮事項](initial-sync-guidance.md)を参照してください。

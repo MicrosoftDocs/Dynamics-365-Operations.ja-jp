@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974864"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013056"
 ---
 # <a name="customer-aging-report"></a>顧客エイジング レポート 
 
-**顧客エイジング**レポートには、日付間隔またはエイジング期間でソートされた顧客からの支払い残高が表示されます。
+**顧客エイジング** レポートには、日付間隔またはエイジング期間でソートされた顧客からの支払い残高が表示されます。
 
 このレポートを生成するとき、次の既定のパラメーターが表示されます。 これらのパラメーターを使用して、レポートに表示されるデータをフィルタリングできます。 詳細については、[コレクションの設定](set-up-collections.md) 参照してください。
 
@@ -115,8 +115,9 @@ ms.locfileid: "3974864"
 <tr class="even">
 <td><p><strong>印刷方向</strong></p></td>
 <td><p>残高を計算するかどうかを選択し、過去または将来の期間のエイジング レポートを印刷します。 日付は、フィールド<strong>での残高</strong>にて選択した日付を基準にして評価されます。 過去の期間の情報を表示する場合は、<strong>後方</strong>を選択します。 将来の期間の情報を表示する場合は、<strong>前方</strong>を選択します。</p>
-
-**注記:** このフィールドに入力する情報は、エイジング期間の定義を選択しなかった場合にのみ使用されます。</P>
+<div class="alert">
+  
+<STRONG>注記:</STRONG> このフィールドに入力する情報は、エイジング期間の定義を選択しなかった場合にのみ使用されます。</P>
 
 
 </div></td>

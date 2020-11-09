@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275444"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997353"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期設定中に発生した問題に関するトラブルシューティング
 
@@ -41,7 +40,7 @@ ms.locfileid: "3275444"
 
 **デュアル書き込みの設定に必要なロール:** Finance and Operations アプリと Common Data Service 両方のシステム管理者権限。
 
-一般的には、 **Common Data Serviceへのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、**Common Data Serviceへのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
+一般的には、 **Common Data Serviceへのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、 **Common Data Serviceへのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
 
 ![正常性チェックの成功](media/health_check.png)
 
@@ -55,7 +54,7 @@ Finance and Operations アプリで **Common Data Serviceへのリンク** を�
 
 *応答状態コードが成功とならない: 404 (Not Found)。*
 
-このエラーは、同意の手順が完了していない場合に発生します。 同意の手順が完了しているかどうかを検証するには、Azure AD テナント管理者のアカウントを使用して portal.Azure.com にログインし、ID **33976c19-1db5-4c02-810e-c243db79efde** を持つサードパーティ製のアプリが Azure AD**エンタープライズ アプリケーション** のリストに表示されるかどうかを確認します。 これが存在しない場合は、アプリの同意をする必要があります。
+このエラーは、同意の手順が完了していない場合に発生します。 同意の手順が完了しているかどうかを検証するには、Azure AD テナント管理者のアカウントを使用して portal.Azure.com にログインし、ID **33976c19-1db5-4c02-810e-c243db79efde** を持つサードパーティ製のアプリが Azure AD **エンタープライズ アプリケーション** のリストに表示されるかどうかを確認します。 これが存在しない場合は、アプリの同意をする必要があります。
 
 アプリへの同意をするには、次の手順を実行します。
 
@@ -63,20 +62,20 @@ Finance and Operations アプリで **Common Data Serviceへのリンク** を�
 
     <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
 
-2. ご利用のテナントで ID **33976c19-1db5-4c02-810e-c243db79efde** が含まれているアプリのインストールに同意していることを示す場合は、**同意する** を選択します。
+2. ご利用のテナントで ID **33976c19-1db5-4c02-810e-c243db79efde** が含まれているアプリのインストールに同意していることを示す場合は、 **同意する** を選択します。
 
     > [!TIP]
     > このアプリは、Common Data Service および Finance and Operations アプリをリンクするために必要となります。 この手順に問題がある場合は、ブラウザーを incognito モード（Google Chrome の場合）または InPrivate モード（Microsoft Edge の場合）で開きます。
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>会社のデータとデュアル書き込みのチームがリンク設定中に正しく設定されていることを確認する
 
-デュアル書き込みが正常に機能するように、設定時に選択した会社は Common Data Service 環境で作成されます。 既定では、これらの会社は読み取り専用となっており、**IsDualWriteEnable** プロパティは **True** に設定されています。 さらに、既定の所有権を持つ業務部門の所有者とチームが作成され、会社名が含まれます。 マッピングを有効にする前に、既定のチームの所有者が指定されていることを確認してください。 **会社 (CDM \_Company)** エンティティを検索するには、次の手順に従います。
+デュアル書き込みが正常に機能するように、設定時に選択した会社は Common Data Service 環境で作成されます。 既定では、これらの会社は読み取り専用となっており、 **IsDualWriteEnable** プロパティは **True** に設定されています。 さらに、既定の所有権を持つ業務部門の所有者とチームが作成され、会社名が含まれます。 マッピングを有効にする前に、既定のチームの所有者が指定されていることを確認してください。 **会社 (CDM \_Company)** エンティティを検索するには、次の手順に従います。
 
 1. Dynamics 365 のモデル駆動型のアプリで、右上隅のフィルターを選択します。
-2. ドロップダウン リストにて、**会社** を選択します。
-3. 結果を表示するには、**実行** を選択します。
+2. ドロップダウン リストにて、 **会社** を選択します。
+3. 結果を表示するには、 **実行** を選択します。
 4. デュアル書き込みの構成時にリンクしていた会社を選択します。
-5. **既定の所有チーム** フィールドに値が設定されていることを確認します。 次の図では、**既定の所有チーム** フィールドが **USMF デュアル書き込み**に設定されています。
+5. **既定の所有チーム** フィールドに値が設定されていることを確認します。 次の図では、 **既定の所有チーム** フィールドが **USMF デュアル書き込み** に設定されています。
 
     ![既定の所有チームを確認する](media/default_owning_team.png)
 

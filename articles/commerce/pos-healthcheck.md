@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b818553b7763ad03e2e23b869b364bb21c8afd57
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515814"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013207"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 
@@ -56,7 +56,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このよ
 |---|---|---|
 | プリンター | OPOS | このチェックは、POS (OPOS) 機能にリンクおよび埋め込まれている基本的なオブジェクトをテストします。 次にいくつか例を挙げます。<ul><li>開く: **開く** &gt; **ClaimDevice** &gt; **DeviceEnabled=True**</li><li>閉じる: **DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**</li></ul> |
 | ライン ディスプレイ | OPOS | このチェックは、基本的な OPOS 機能をテストします。 次にいくつか例を挙げます。<ul><li>開く: **開く** &gt; **ClaimDevice** &gt; **DeviceEnabled=True**</li><li>閉じる: **DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**</li></ul> |
-| デュアル ディスプレイ | ウィンドウ(&W) | このチェックにより、オペレーティング システムが 2 番目の Windows ディスプレイを検出できるようになります。 | 
+| デュアル ディスプレイ | Windows | このチェックにより、オペレーティング システムが 2 番目の Windows ディスプレイを検出できるようになります。 | 
 | MSR | OPOS | このチェックは、基本的な OPOS 機能をテストします。 次にいくつか例を挙げます。<ul><li>開く: **開く** &gt; **ClaimDevice** &gt; **DeviceEnabled=True**</li><li>閉じる: **DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**</li></ul> |
 | 手形振出人 | OPOS | このチェックは、基本的な OPOS 機能をテストします。 次にいくつか例を挙げます。<ul><li>開く: **開く** &gt; **ClaimDevice** &gt; **DeviceEnabled=True**</li><li>閉じる: **DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**</li></ul> | 
 | スキャナー | OPOS | このチェックは、基本的な OPOS 機能をテストします。 次にいくつか例を挙げます。<ul><li>開く: **開く** &gt; **ClaimDevice** &gt; **DeviceEnabled=True**</li><li>閉じる: **DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**</li></ul> | 
@@ -66,13 +66,13 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このよ
 
 ### <a name="using-the-health-check-operation-in-the-pos"></a>POS での正常性チェック操作の使用
 
-POS で正常性チェック操作が開始されると、コンフィギュレーションされたデバイスの一覧と各デバイスの状態が右側のウィンドウに表示されます。 単一のデバイスに対して正常性チェックを行うには、デバイスを選択して、**選択先をテスト**を選択します。 すべてのデバイスに対して正常性チェックを行うには、**すべてテスト**を選択します。 **すべてテスト**機能は、すべてのデバイスを一度に 1 つずつテストし、**状態**列の各デバイスの状態を更新します。
+POS で正常性チェック操作が開始されると、コンフィギュレーションされたデバイスの一覧と各デバイスの状態が右側のウィンドウに表示されます。 単一のデバイスに対して正常性チェックを行うには、デバイスを選択して、 **選択先をテスト** を選択します。 すべてのデバイスに対して正常性チェックを行うには、 **すべてテスト** を選択します。 **すべてテスト** 機能は、すべてのデバイスを一度に 1 つずつテストし、 **状態** 列の各デバイスの状態を更新します。
 
-**最後のチェック**列には、各デバイスに対して正常性チェックがいつ最後に行われたかが表示されます。
+**最後のチェック** 列には、各デバイスに対して正常性チェックがいつ最後に行われたかが表示されます。
 
 デバイスの正常性チェックに合格した場合 (つまり、エラーが発生しなかった場合)、デバイスの状態は **OK** になります。 正常性チェックが失敗した場合、状態はエラーが発生したことを示します。 この場合、右のウィンドウにエラーに関係する詳細が表示されるか、またはシステム管理者に連絡するようユーザーに指示されます。
 
-OPOS キーロックなどの一部のデバイスには、最初から用意されている正常性チェック テストはありません。 使用されているすべてのデバイスについて正常性チェック テストが検出されなかった場合、状態は**サポートされていません**になります。
+OPOS キーロックなどの一部のデバイスには、最初から用意されている正常性チェック テストはありません。 使用されているすべてのデバイスについて正常性チェック テストが検出されなかった場合、状態は **サポートされていません** になります。
 
 ### <a name="extending-health-checks"></a>正常性チェックの拡張
 
@@ -82,4 +82,4 @@ OPOS キーロックなどの一部のデバイスには、最初から用意さ
 
 ## <a name="related-articles"></a>関連記事
 
-[Modern POS (MPOS) のトリガーと印刷](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-trigger-printing)
+[Modern POS (MPOS) のトリガーと印刷](dev-itpro/pos-trigger-printing.md)

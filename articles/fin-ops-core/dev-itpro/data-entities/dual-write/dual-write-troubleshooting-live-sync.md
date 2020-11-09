@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997305"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
@@ -58,7 +57,7 @@ Finance and Operations アプリでレコードを作成した際に、次のエ
 データが両面に存在し、問題がデータに起因するものではないことが分かった場合は、次の手順を実行してください。
 
 1. 関連するエンティティを停止します。
-2. Finance and Operations アプリにログインし、失敗したエンティティのレコードが DualWriteProjectConfiguration テーブルと DualWriteProjectFieldConfiguration テーブルに存在することを確認します。 たとえば、**顧客**エンティティに障害が発生した場合、クエリは次のようになります。
+2. Finance and Operations アプリにログインし、失敗したエンティティのレコードが DualWriteProjectConfiguration テーブルと DualWriteProjectFieldConfiguration テーブルに存在することを確認します。 たとえば、 **顧客** エンティティに障害が発生した場合、クエリは次のようになります。
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -82,11 +81,11 @@ Finance and Operationsアプリでデータを作成する際に、次のよう�
 
     ![組織のマッピング](media/mapped_business_unit.png)
 
-2. Dynamics 365 のモデル駆動型アプリケーションの環境にログインし、**設定 \> セキュリティ** に移動し、マッピングされた事業単位のチームを検索します。
+2. Dynamics 365 のモデル駆動型アプリケーションの環境にログインし、 **設定 \> セキュリティ** に移動し、マッピングされた事業単位のチームを検索します。
 
     ![マッピングされた事業単位のチーム](media/setting_security_page.png)
 
-3. 編集をするチームのページを開き、 **ロールの管理** を選択して、**チームロールの管理** ダイアログ ボックスを開きます。
+3. 編集をするチームのページを開き、 **ロールの管理** を選択して、 **チームロールの管理** ダイアログ ボックスを開きます。
 
     ![ロールの管理ボタン](media/manage_team_roles.png)
 
@@ -98,7 +97,7 @@ Finance and Operationsアプリでデータを作成する際に、次のよう�
 
 Finance and Operations アプリでデータを作成した際に、次のエラー メッセージが表示される場合があります。
 
-*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**エンティティ CustCustomerV3Entity のペイロードを生成できません。**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":" ペイロードの作成に失敗しました。エラー 無効な URI です：URI が入力されていません。}\],"isErrorCountUpdated":true}*
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":" **エンティティ CustCustomerV3Entity のペイロードを生成できません。** ","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":" ペイロードの作成に失敗しました。エラー 無効な URI です：URI が入力されていません。}\],"isErrorCountUpdated":true}*
 
 Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表示されます：
 
@@ -108,7 +107,7 @@ Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表�
 
 問題を解決するには、次の手順に従います。
 
-1. Finance and Operations 仮想マシン（VM）にログインし、SQL Server Management Studio（SSMS）を起動し、DUALWRITEPROJECTCONFIGURATIONENTITY テーブルにて、**internalentityname** が **Customers V3** 、かつ **externalentityname** が **アカウント** となっているレコードを探してください。 以下にクエリの例を示します。
+1. Finance and Operations 仮想マシン（VM）にログインし、SQL Server Management Studio（SSMS）を起動し、DUALWRITEPROJECTCONFIGURATIONENTITY テーブルにて、 **internalentityname** が **Customers V3** 、かつ **externalentityname** が **アカウント** となっているレコードを探してください。 以下にクエリの例を示します。
 
     ```sql
     select projectname, externalenvironmentURL ,\* 

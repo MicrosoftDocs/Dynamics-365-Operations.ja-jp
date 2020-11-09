@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSParameters
+ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df7fa277bd2447fa6e2631806461e1e7c13cf17
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad0659a86e75dc4a5a204ebc05405f62abf2ca1e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987097"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017463"
 ---
 # <a name="warehouse-management-overview"></a>倉庫管理の概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "3987097"
 ## <a name="get-started"></a>使用開始
 倉庫管理の操作を開始するには、会社の業務プロセスをサポートするための通常倉庫のパラメーターの設定を完了する必要があります。
 
-- **倉庫管理** > **設定**ページ下の**倉庫管理パラメーター**に移動し、通常倉庫のパラメーターの設定をします。
+- **倉庫管理** > **設定** ページ下の **倉庫管理パラメーター** に移動し、通常倉庫のパラメーターの設定をします。
 
 業務要件に従って入庫/出庫の倉庫プロセスワークフローをコンフィギュレーションする必要があります。 コンフィギュレーションする必要がある最も重要なコンポーネントは、ウェーブ テンプレート、作業テンプレート、作業プールと場所のディレクティブです。
 

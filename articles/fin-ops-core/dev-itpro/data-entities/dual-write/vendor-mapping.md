@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173111"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997651"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 
@@ -32,7 +31,7 @@ ms.locfileid: "3173111"
 
 
 
-*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先*は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Dynamics 365 のモデル駆動型アプリには仕入先の概念は存在しません。 ただし、**取引先企業 / 連絡先** エンティティをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Dynamics 365のモデル駆動アプリケーションで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業 / 連絡先** エンティティに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
+*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先* は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Dynamics 365 のモデル駆動型アプリには仕入先の概念は存在しません。 ただし、 **取引先企業 / 連絡先** エンティティをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Dynamics 365のモデル駆動アプリケーションで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業 / 連絡先** エンティティに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
 
 どちらの手法でも、仕入先データは Dynamics 365 Supply Chain Management、Dynamics 365 Sales、Dynamics 365 Field Service、および Power Apps の各ポータル間で統合されます。 Supply Chain Management では、購買要求や発注書などのワークフローでデータを使用できます。
 

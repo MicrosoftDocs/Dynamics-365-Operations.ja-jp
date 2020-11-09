@@ -88,7 +88,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 伝票リソース
+            - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -180,9 +180,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Go-Live の準備
+                - name: Go Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Go-Live に関するよく寄せられる質問
+                - name: Go Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -1729,12 +1729,14 @@
                   href: procurement/tasks/create-repeat-purchase-order.md
                 - name: 消費要求の作成
                   href: procurement/tasks/create-requisition-consumption.md
-            - name: 価格、割引、およびリベート
+            - name: 価格、割引、リベート
               items:
                 - name: 購買契約書
                   href: procurement/purchase-agreements.md
                 - name: 購買契約書の作成
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: 雑費の自動配賦
+                  href: procurement/automatic-charges-allocation.md
                 - name: 仕入先リベート
                   href: procurement/vendor-rebates.md
                 - name: 価格、割引、契約、リベートのトラブルシューティング
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: 製造オーダーを完了として報告する
                       href: production-control/report-production-orders-as-finished.md
+                    - name: 生産現場の実行インターフェースを設定して使用する
+                      items:
+                        - name: 生産現場の実行インターフェースを構成する
+                          href: production-control/production-floor-execution-configure.md
+                        - name: 生産現場の実行インターフェースを実行するデバイスを設定する
+                          href: production-control/production-floor-execution-setup.md
+                        - name: 生産現場の実行インターフェースを作業者が使用する方法
+                          href: production-control/production-floor-execution-use.md
                     - name: デバイスのジョブ カードのコンフィギュレーション
                       href: production-control/config-job-card-device.md
                     - name: ジョブ カード デバイスからの完了レポート
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: 倉庫なしの販売注文の出荷
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: 雑費の自動配賦
+                  href: procurement/automatic-charges-allocation.md
                 - name: 販売注文からの発注書の作成
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: 販売注文の作成
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: 倉庫アプリからの移動オーダーの作成
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: 倉庫アプリのイベント処理
-                      href: warehousing/warehouse-app-events.md
                     - name: ピース ピッキング確認
                       href: warehousing/piece-picking-confirmation.md
                     - name: 梱包材および費用
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: 倉庫作業用のモバイル デバイスの設定
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: 倉庫アプリのイベント処理
+                      href: warehousing/warehouse-app-events.md
                     - name: 倉庫アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定

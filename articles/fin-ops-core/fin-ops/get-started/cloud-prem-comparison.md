@@ -3,7 +3,7 @@ title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100285"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040102"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -58,10 +58,10 @@ ms.locfileid: "3100285"
 |                                      | ER: LCS との統合                                                                  | はい       | いいえ              |
 |                                      | ER: SharePoint との統合                                                           | はい       | いいえ              |
 |                                      | ER: 規制コンフィギュレーション サービス (RCS) との統合                              | はい       | いいえ              |
-|                                      | ER: ER リポジトリからアクセス可能な ER コンフィギュレーションの記憶域としてローカル ファイル システムを使用。 | いいえ        | はい             |
-|                                      | PowerBI.com との統合                                                              | はい       | いいえ              |
-|                                      | PowerBI Desktop との統合                                                          | いいえ        | はい             |
-|                                      | 分析ワークスペース                                                                     | はい       | いいえ              |
+|                                      | ER: ER リポジトリからアクセス可能な ER コンフィギュレーションの記憶域としてローカル ファイル システムを使用。 | なし        | あり             |
+|                                      | PowerBI.com との統合                                                              | あり       | なし              |
+|                                      | PowerBI Desktop との統合                                                          | なし        | あり             |
+|                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
 |                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | はい       | いいえ              |
@@ -87,7 +87,8 @@ ms.locfileid: "3100285"
 
 | **エリア**                | **機能**             | **クラウド** | **オンプレミス** |
 |-------------------------|-------------------|-----------|-----------------|
-| コンプライアンスおよび証明書        |                                                                                           | 有       | 有             |
+| 資産管理                     |                                                                                           | あり       | なし |
+| コンプライアンスおよび証明書        |                                                                                           | あり       | あり             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | 有       | 無              |
 | 原価計算                      |                                                                                           | 有       | 有             |
 |                                      | Power BI 用の原価会計コンテンツ パック                                                 | 有       | 無              |
@@ -106,10 +107,10 @@ ms.locfileid: "3100285"
 |                                      | ER: LCS との統合                                                                  | はい       | いいえ              |
 |                                      | ER: SharePoint との統合                                                           | はい       | いいえ              |
 |                                      | ER: 規制コンフィギュレーション サービス (RCS) との統合                              | はい       | いいえ              |
-|                                      | ER: ER リポジトリからアクセス可能な ER コンフィギュレーションの記憶域としてローカル ファイル システムを使用。 | いいえ        | はい             |
-|                                      | PowerBI.com との統合                                                              | はい       | いいえ              |
-|                                      | PowerBI Desktop との統合                                                          | いいえ        | はい             |
-|                                      | 分析ワークスペース                                                                     | はい       | いいえ              |
+|                                      | ER: ER リポジトリからアクセス可能な ER コンフィギュレーションの記憶域としてローカル ファイル システムを使用。 | なし        | あり             |
+|                                      | PowerBI.com との統合                                                              | あり       | なし              |
+|                                      | PowerBI Desktop との統合                                                          | なし        | あり             |
+|                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
 |                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | 有       | 無              |
