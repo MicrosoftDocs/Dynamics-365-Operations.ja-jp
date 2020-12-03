@@ -40,7 +40,7 @@ ms.locfileid: "3465266"
 | Format              | ファイルおよびデータ パッケージ | データ パッケージのみ |
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
-| サービス タイプ        | 顧客サービス | データ プロトコル (OData) アクションを開きます |
+| サービス タイプ        | カスタム サービス | データ プロトコル (OData) アクションを開きます |
 | 在庫状態        | Microsoft Dynamics Finance and Operations (2016 年 2 月) およびそれ以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
 
 定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。

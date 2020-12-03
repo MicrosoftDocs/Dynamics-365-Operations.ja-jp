@@ -41,7 +41,7 @@ ms.locfileid: "3112227"
 | クラシック データの統合      | [クラシック データ統合の概要](data-integration-cds.md) |
 | OData                         | [データ プロトコル (OData) を開く](odata.md) |
 | バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ管理パッケージ REST API](data-management-api.md) |
-| 顧客サービス                | [顧客サービスの開発](custom-services.md) |
+| カスタム サービス                | [カスタム サービスの開発](custom-services.md) |
 | 外部 Web サービスの消費 | [外部 Web サービスの消費](consume-external-web-service.md) |
 | Excel 統合             | [Office 統合の概要](../office-integration/office-integration.md) |
 
@@ -64,7 +64,7 @@ ms.locfileid: "3112227"
 
 処理は、同期または非同期にすることができます。 多くの場合、使用すべき処理タイプは、選択した統合パターンによって決まります。
 
-*同期*パターンは、ブロック要求と応答パターンであり、呼び出し先が実行を終了して応答を返すまで呼び出し元がブロックされます。 *非同期*パターンは非ブロック パターンで、呼び出し元が要求を送信して応答を待たずに続行します。
+*同期* パターンは、ブロック要求と応答パターンであり、呼び出し先が実行を終了して応答を返すまで呼び出し元がブロックされます。 *非同期* パターンは非ブロック パターンで、呼び出し元が要求を送信して応答を待たずに続行します。
 
 次のテーブルに、使用可能な受信統合パターンを示します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "3112227"
 | パターン        | 同期式のプログラミング パラダイム    | 非同期式のプログラミング パラダイム |
 |----------------|-------------------------------------|-----------------------------------|
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
-| 顧客サービス | httpRequestGetResponse               | httpRequestBeginGetResponse |
+| カスタム サービス | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
 | バッチ データ API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
