@@ -24,7 +24,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/25/2020
 ms.locfileid: "3893345"
 ---
-# <a name="custom-service-development"></a>顧客サービスの開発
+# <a name="custom-service-development"></a>カスタム サービスの開発
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Finance and Operations に対してカスタム サービスを開発できま�
 - SOAP エンドポイント
 - JSON エンドポイント
 
-### <a name="soap-based-custom-service"></a>SOAP ベース顧客サービス
+### <a name="soap-based-custom-service"></a>SOAP ベース カスタム サービス
 
 SOAP ベースのサービスは Dynamics AX 2012 のものと同じままです。
 
@@ -41,7 +41,7 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 #### <a name="key-changes"></a>キーの変更
 
-- **AOTService グループ**ノードの下にあるすべてのサービス グループが自動的に配置されます。
+- **AOTService グループ** ノードの下にあるすべてのサービス グループが自動的に配置されます。
 - 配置する必要があるすべてのサービスはサービス グループの一部である必要があります。
 
 **開発環境でのエンドポイントの例**
@@ -57,7 +57,7 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 - [カスタム サービスを使用する \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
 - [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
 
-### <a name="json-based-custom-service"></a>JSON ベース顧客サービス
+### <a name="json-based-custom-service"></a>JSON ベース カスタム サービス
 
 この機能により、X++ クラスを JSON サービスとして使用できます。 つまり、返り値のデータ セットは、JSON 形式でです。 JavaScript Object Notation の略である JSON は、クライアントとサーバー間のデータ通信によく使用されるコンパクトで軽量なフォーマットです。
 
