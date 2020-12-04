@@ -102,7 +102,7 @@
                       href: data-entities/troubleshoot-service-authentication.md
                 - name: OData
                   href: data-entities/odata.md
-                - name: 顧客サービスの開発
+                - name: カスタム サービスの開発
                   href: data-entities/custom-services.md
                 - name: 定期統合
                   href: data-entities/recurring-integrations.md
