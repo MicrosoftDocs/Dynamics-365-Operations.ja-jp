@@ -12,10 +12,12 @@
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: One Version のサービス更新
               items:
-                - name: One Version のサービス更新の概要
+                - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: One Version のサービス更新に関するよく寄せられる質問
+                - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dynamics 365 Commerce を含む更新およびカスタム コードのライフサイクルの管理
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ソフトウェアのライフサイクル ポリシー - クラウド
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
@@ -58,7 +60,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: オンプレミス配置の倉庫管理のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 中国で 21Vianet が運用する Finance and Operations アプリ
+                - name: 中国で 21Vianet が運用している Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
                 - name: フランスの Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
@@ -70,12 +72,12 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.15 (2020 年 12 月)
+                    - name: Supply Chain Management 10.0.16 (2021 年 2 月)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (2021 年 1 月)
                       href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (2020 年 11 月)
                       href: get-started/whats-new-scm-10-0-14.md
-                    - name: Supply Chain Management 10.0.13 (2020 年 10 月)
-                      href: get-started/whats-new-scm-10-0-13.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
@@ -84,8 +86,6 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 延期された AX 2012 の機能
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: オンプレミス配置に実装されない機能
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: ドキュメント リソース
@@ -216,6 +216,14 @@
                   items:
                     - name: 仕入先からの輸送中の商品
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: クラウドとエッジ
+          items:
+            - name: 製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
+              href: cloud-edge/cloud-edge-workload-warehousing.md
         - name: 資産管理
           items:
             - name: 資産管理の概要
@@ -230,9 +238,9 @@
                 - name: 機能の場所のライフサイクルの状態
                   href: asset-management/setup-for-functional-locations/functional-location-stages.md
                 - name: メンテナンス属性タイプ
-                  href: asset-management/setup-for-functional-locations/functional-location-types.md
-                - name: 機能の場所タイプ
                   href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: 機能の場所タイプ
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
             - name: 機能の場所
               items:
                 - name: 機能の場所の概要
@@ -633,6 +641,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: 原価管理 Power BI コンテンツ パック
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: コスト管理のトラブルシューティング
+              href: cost-management/troubleshoot-costmanagement.md
         - name: レポートと Power BI の統合
           items:
             - name: Power BI でのレポートと分析
@@ -1327,6 +1337,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: 在庫分析コード当たりの移動平均原価の追跡
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: 在庫の視覚化アドイン
+              href: inventory/inventory-visibility.md
         - name: IoT インテリジェンス
           items:
             - name: IoT インテリジェンスのホーム ページ
@@ -1347,7 +1359,9 @@
           items:
             - name: マスター プランのホーム ページ
               href: master-planning/master-planning-home-page.md
-            - name: 計画の最適化
+            - name: マスター プランの計画最適化への移行
+              href: master-planning/new-master-planning-engine.md
+            - name: 計画最適化
               items:
                 - name: 計画最適化の概要
                   href: master-planning/planning-optimization/planning-optimization-overview.md
@@ -1357,10 +1371,18 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: 計画にフィルターを適用
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: 需要予測を使用したマスター プラン
+                  href: master-planning/planning-optimization/demand-forecast.md
                 - name: 購買の売買契約を使用したマスター プラン
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: 安全マージン
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: 計画最適化を使用した在庫マーキング
+                  href: master-planning/planning-optimization/marking.md
+                - name: 会社間計画
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: 特定の製品ライフサイクル状態の製品を除外する
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
                 - name: 計画オーダーの承認
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: 計画最適化の自動確定
@@ -1463,6 +1485,8 @@
                   href: master-planning/tasks/create-baseline-forecast.md
                 - name: 需要予測の手動変更
                   href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: マスター プランのトラブルシューティング
+              href: master-planning/troubleshoot-masterplanning.md
         - name: モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
@@ -1895,6 +1919,8 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: BOM 計算
                   href: cost-management/bom-calculations.md
+                - name: 製品情報のトラブルシューティング
+                  href: pim/troubleshooting-productinformation.md
             - name: 製品コンフィギュレーション
               items:
                 - name: 製品コンフィギュレーションの概要
@@ -1955,6 +1981,34 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: 製品モデルのためのデータの転送
                       href: pim/tasks/transfer-data-product-models.md
+                - name: 製品コンフィギュレーターのトラブルシューティング
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: エンジニアリング変更管理
+          items:
+            - name: エンジニアリング変更管理の概要
+              href: engineering-change-management/product-engineering-overview.md
+            - name: エンジニアリングの変更管理機能のチュートリアル
+              href: engineering-change-management/engineering-scenarios.md
+            - name: エンジニアリング変更管理のパラメーター
+              href: engineering-change-management/engineering-parameters.md
+            - name: エンジニアリング変更管理の共通の値の設定
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: エンジニアリング組織およびデータ所有権のルール
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: 製品所有者
+              href: engineering-change-management/product-owner.md
+            - name: エンジニアリング属性とエンジニアリング属性検索
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: エンジニアリング バージョンとエンジニアリング製品カテゴリ
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: 製品ライフサイクルの状態とトランザクション
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: エンジニアリング製品に対する変更の管理
+              href: engineering-change-management/engineering-change-management.md
+            - name: 製品準備完了
+              href: engineering-change-management/product-readiness.md
+            - name: リリース製品構造
+              href: engineering-change-management/release-product-structure.md
         - name: 生産管理
           items:
             - name: 生産プロセスの概要
@@ -2047,6 +2101,8 @@
                       items:
                         - name: 生産現場の実行インターフェースを構成する
                           href: production-control/production-floor-execution-configure.md
+                        - name: 生産現場の実行インターフェースをデザインする
+                          href: production-control/production-floor-execution-tabs.md
                         - name: 生産現場の実行インターフェースを実行するデバイスを設定する
                           href: production-control/production-floor-execution-setup.md
                         - name: 生産現場の実行インターフェースを作業者が使用する方法
@@ -2105,6 +2161,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: フレックス グループ
                       href: production-control/time-attendance-flex-groups.md
+                - name: 個別製造のトラブルシューティング
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: リーン生産
               items:
                 - name: リーン生産の概要
@@ -2257,6 +2315,8 @@
                       href: production-control/consumption.md
                     - name: 生産の転記
                       href: cost-management/production-posting.md
+                - name: プロセス製造のトラブルシューティング
+                  href: production-control/troubleshoot-processmanufacturing.md
         - name: 販売とマーケティング
           items:
             - name: 販売とマーケティングの概要
@@ -2589,6 +2649,8 @@
               href: transportation/create-new-transportation-management-engine.md
             - name: 付帯サービス請求金額としての燃料インデックスの配送業者への関連付け
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: 元の USMCA 証明書
+              href: transportation/usmca-certification-of-origin.md
             - name: 船荷証券の作成
               href: transportation/create-bill-of-lading.md
             - name: 貨物輸送ルートの計画
@@ -2607,6 +2669,26 @@
               href: transportation/reconcile-freight-transportation-management.md
             - name: ドライバーの予定のチェックインおよびチェックアウトの登録
               href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: 割引
+              href: transportation/transportation-management-discount.md
+            - name: 雑費
+              href: transportation/transportation-management-misc-charge.md
+            - name: モードおよびメソッド
+              href: transportation/transportation-management-modes-methods.md
+            - name: 番号順序
+              href: transportation/transportation-management-number-sequence.md
+            - name: 状態
+              href: transportation/transportation-management-status.md
+            - name: ゾーン マスター
+              href: transportation/transportation-management-zone-master.md
+            - name: 配送業者グループ
+              href: transportation/tasks/carrier-groups.md
+            - name: 積荷構築ワークベンチ
+              href: transportation/tasks/load-building-workbench.md
+            - name: 積荷テンプレート
+              href: transportation/tasks/load-template.md
+            - name: 評価プロファイル
+              href: transportation/tasks/setup-a-rating-profile.md
             - name: 配送業者の燃料インデックスの設定
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: 輸送業者の設定
@@ -2645,20 +2727,28 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: 場所の製品分析コードの混在
                   href: warehousing/location-product-dimension-mixing.md
+                - name: プットアウェイ クラスター
+                  href: warehousing/putaway-clusters.md
                 - name: 品質チェック
                   href: warehousing/quality-check.md
+                - name: 入庫倉庫操作のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: 出庫倉庫操作
               items:
                 - name: 倉庫管理での引当
                   items:
                     - name: 柔軟な倉庫レベル分析コードの引当ポリシー
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: 倉庫管理での引当のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: 部分的リリースおよび部分的出荷
                   items:
                     - name: 輸送積荷の部分的出荷
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: 部分的に引当済の移動オーダーのバッチ リリース
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: 部分的なリリースと部分的な出荷に関するトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: ピッキングと梱包
                   items:
                     - name: クラスター ピッキングの設定
@@ -2697,6 +2787,10 @@
                       href: warehousing/outbound-sorting.md
                     - name: 壁にプット - 店舗にプット
                       href: warehousing/put-to-wall-put-to-store.md
+                    - name: 出庫ワークロードの視覚化
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: ピッキングと梱包のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: 補充
                   items:
                     - name: 補充の概要
@@ -2709,9 +2803,13 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: ゾーンしきい値の補充
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: 補充戦略
+                      href: warehousing/replenishment-strategies.md
                     - name: 場所の能力を超える補充
                       href: warehousing/replenishment-over-location-capacity.md
-                - name: 建物と出荷の読み込み
+                    - name: 倉庫の補充のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
+                - name: 積荷構築と出荷
                   items:
                     - name: 確認および転送
                       href: warehousing/confirm-and-transfer.md
@@ -2725,6 +2823,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: ウェーブ ラベルの再印刷と無効化
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: 積荷構築と出荷のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: 出荷連結ポリシー
                   items:
                     - name: 出荷連結ポリシー
@@ -2741,6 +2841,8 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: シナリオ 5 - 出荷連結ページを使用して出荷を手動で連結する
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: 出庫倉庫操作のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: 倉庫操作全体
               items:
                 - name: 倉庫作業ポリシー
@@ -2797,6 +2899,10 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: 品目の連結 - 場所の使用率
                       href: warehousing/item-consolidation-location-utilization.md
+                    - name: 倉庫作業のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: 作業の分割
+                      href: warehousing/work-split.md
             - name: 倉庫の設定
               items:
                 - name: 倉庫のコンフィギュレーション
@@ -2807,8 +2913,10 @@
                       href: inventory/warehouse-template.md
                     - name: 作業テンプレートと場所ディレクティブを使用した管理作業
                       href: warehousing/control-warehouse-location-directives.md
-                    - name: 場所ディレクティブを作成する
+                    - name: 場所ディレクティブの作業
                       href: warehousing/create-location-directive.md
+                    - name: 場所別在庫限度
+                      href: warehousing/location-stocking-limits.md
                     - name: ウェーブ ステップ コード
                       href: warehousing/wave-step-codes.md
                     - name: ウェーブ処理のコンフィギュレーション
@@ -2843,6 +2951,8 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: 移動オーダー用の倉庫の設定
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: 倉庫コンフィギュレーションのトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: 倉庫アプリのインストールとコンフィギュレーション
                   items:
                     - name: 倉庫アプリのインストールと接続
@@ -2879,6 +2989,10 @@
                   items:
                     - name: 倉庫管理プロセスを Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードします
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: 高度な倉庫管理へのアップグレードおよび移行のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: 倉庫の設定のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Supply Chain Management の開発
           items:
             - name: ガント コントロール開発ガイド

@@ -14,14 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 延期された AX 2012 の機能
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: オンプレミス配置に実装されない機能
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: ビジネス イベント
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: 販売注文の状態フィールドのマッピングを設定
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: 会社間注文をフィルター処理して注文および注文明細行の同期を回避する
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: 二重書き込みの管理
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: 統合された税マスター
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: 二重書き込みでの見込顧客の現金化
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Dynamics 365 Sales での Dynamics 365 Commerce 価格決定エンジンの使用
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: サービスのための社内資産
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 作業者、職務、および職位の統合
@@ -500,6 +500,8 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: ハードウェアのサイズ要件
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Dynamics 365 Finance + Operations (on-premises) での認証
+                      href: deployment/authentication-onprem.md
                 - name: オンプレミス環境の設定と配置
                   items:
                     - name: LCS での設置プロジェクトの設定
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Azure Pipelines での Lifecycle Services (LCS) 接続の作成
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Azure Pipelines でのレガシ パイプラインの更新
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: フリート管理のサンプル アプリケーション
               items:
                 - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: SysDa API を使用したデータアクセス
                           href: dev-ref/sysda.md
+                        - name: SQL インジェクション攻撃の緩和
+                          href: dev-ref/query-with-parameters.md
                     - name: X++ マクロ
                       href: dev-ref/xpp-macros.md
                     - name: X++ 属性クラス
@@ -998,13 +1004,13 @@
                   href: perf-test/trace-trace-tutorial.md
                 - name: タスク レコーダーおよびPerformance SDK を使用したシングル ユーザー テスト
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Performance SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+                - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Performance SDK および Azure DevOps を使用したマルチ ユーザー テスト
+                - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Performance SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+                - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
-                - name: オンプレミス環境でのPerformance SDK およびマルチ ユーザー テスト
+                - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
                   href: perf-test/perfsdk-tutorial-lbd.md
                 - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
                   href: perf-test/trace-parser.md
@@ -1458,11 +1464,11 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: サポート
           items:
-            - name: Finance and Operations および Lifecycle Services のサポートの取得
+            - name: Finance and Operations および Lifecycle Services のサポートの利用
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: 中国で 21Vianet が運用する Finance and Operations のサポートを受ける
+            - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations アプリのテクニカル サポートを設定する
               href: lifecycle-services/support-experience.md
@@ -1492,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Finance and Operations アプリの暗号化
                   href: sysadmin/encryption.md
-                - name: セッション アイドル タイムアウトの設定
+                - name: セッション非活動タイムアウトの設定
                   href: sysadmin/session-idle-timeout.md
                 - name: 最初から用意されているセキュリティ レポート
                   href: sysadmin/security-reports.md
                 - name: 新規ユーザーの作成
                   href: sysadmin/tasks/create-new-users.md
+                - name: ユーザー セッション管理
+                  href: sysadmin/user-session-management.md
                 - name: ユーザーの一括インポート
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: 職務分掌の設定
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Azure Key Vault クライアントの設定
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: クリーンアップ ルーチン
+              href: sysadmin/cleanuproutines.md
         - name: アップグレード、更新プログラム、および修正プログラム
           items:
             - name: アップグレード、更新プログラム、および修正プログラムのリソース
@@ -1588,9 +1598,9 @@
                   href: migration-upgrade/app-validation-process.md
                 - name: AX 2012 アップグレード - 機能テスト合格
                   href: migration-upgrade/upgrade-functional-validation.md
-                - name: AX 2012 アップグレード - Go Live の準備
+                - name: AX 2012 アップグレード - Go-Live の準備
                   href: migration-upgrade/upgrade-go-live-prep.md
-                - name: AX 2012 アップグレード - Go Live
+                - name: AX 2012 アップグレード - Go-Live
                   href: migration-upgrade/2012-upgrade-cutover.md
                 - name: AX 2012 からのアップグレードに影響する変更
                   items:
@@ -1640,7 +1650,7 @@
               items:
                 - name: 最新の更新プログラムに移行するためのプロセス
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: One Version へのパス
+                - name: 1 つのバージョンへのパス
                   items:
                     - name: 最新バージョンへのセルフサービス アップグレード
                       href: migration-upgrade/self-service-upgrade.md
@@ -1696,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: ナビゲーションの構築
                   href: user-interface/build-navigation.md
-                - name: ワークスペースの構築
+                - name: ワークスペースの変更
                   href: user-interface/build-workspace.md
             - name: フォーム
               items:

@@ -5,7 +5,9 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
-        - name: 2002 年 10 月 22 日
+        - name: 2020 年 12 月 2 日
+          href: hr-whats-new-2020-12-02.md
+        - name: 2020 年 10 月 22 日
           href: hr-whats-new-2020-10-22.md
         - name: 2020 年 10 月 6 日
           href: hr-whats-new-2020-10-06.md
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: 作業時間カレンダーの作成
               href: hr-personnel-create-working-time-calendar.md
+            - name: 職務候補者の採用
+              href: hr-personnel-recruit.md
             - name: 個人のアクションに関するよく寄せられる質問
               href: hr-personnel-actions-faq.md
             - name: ワークフローを使用した従業員情報の管理
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: 福利厚生の管理のコンフィギュレーション
                   items:
-                    - name: 福利厚生管理パラメーターの設定
+                    - name: 会社ごとの福利厚生管理パラメータのコンフィギュレーション
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: すべての会社の福利厚生管理と従業員セルフサービスのパラメータの設定
                       href: hr-benefits-setup-parameters.md
                     - name: 適格性のルールとオプションのコンフィギュレーション
                       href: hr-benefits-setup-eligibility-rules.md

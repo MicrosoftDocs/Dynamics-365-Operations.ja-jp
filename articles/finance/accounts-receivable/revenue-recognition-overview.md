@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c5a3a90b0065f8cd076117818df810cf10202d29
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030971"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459431"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 
