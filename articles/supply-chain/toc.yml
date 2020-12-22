@@ -1,0 +1,3009 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+    - name: Dynamics 365 Supply Chain Management
+      items:
+        - name: Dynamics 365 Supply Chain Management ホーム ページ
+          href: index.md
+        - name: 使用開始
+          items:
+            - name: 購入する前に
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: プレビュー サブスクリプションのサインアップ
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
+            - name: One Version のサービス更新
+              items:
+                - name: 1 つのバージョンのサービス更新の概要
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dynamics 365 Commerce を含む更新およびカスタム コードのライフサイクルの管理
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ソフトウェアのライフサイクル ポリシー - クラウド
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サービス更新の可用性
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クラウド環境への更新プログラムの適用
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: オンプレミス配置への更新プログラムの適用
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サービス更新の構成
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サービス更新の一時停止
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サービス更新に関する通知を受け取る
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: データ タスクの自動化
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
+                - name: One Version を使用した ISV ソリューションの提供
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ユーザー受け入れテストの作成と自動化
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
+            - name: デモ環境の配置
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 配置に関する考慮事項
+              items:
+                - name: 配置オプション
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クラウドとオンプレミスの機能比較
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クラウド配置
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クラウド配置のシステム要件
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: オンプレミス配置
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: オンプレミス配置のシステム要件
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance + Operations (on-premises) の購入
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: オンプレミス配置の倉庫管理のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 中国で 21Vianet が運用している Finance and Operations アプリ
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: フランスの Finance and Operations アプリ
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 新機能および変更された機能
+              items:
+                - name: Finance and Operations アプリの新機能または変更された機能
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Supply Chain Management の新機能または変更された機能
+                  items:
+                    - name: Supply Chain Management ホーム ページの新機能または変更された機能
+                      href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.16 (2021 年 2 月)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (2021 年 1 月)
+                      href: get-started/whats-new-scm-10-0-15.md
+                    - name: Supply Chain Management 10.0.14 (2020 年 11 月)
+                      href: get-started/whats-new-scm-10-0-14.md
+                - name: 削除済みまたは非推奨の機能
+                  items:
+                    - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: 以前のリリースの削除済みまたは非推奨の機能
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 延期された AX 2012 の機能
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ドキュメント リソース
+              items:
+                - name: ヘルプ システム
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ヘルプ システムに接続する
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
+                - name: カスタム ヘルプの概要
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: フィールドの説明の表示およびエクスポート
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: タスク レコーダー
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
+                - name: タスク レコーダーを使用したドキュメントやトレーニングの作成
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ビデオ
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 用語集
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ラーニング カタログ
+              items:
+                - name: ラーニング カタログのホームページ
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 業務意志決定者
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ビジネス ユーザー
+                  href: ./get-started/learning-catalog-business-user.md
+                - name: 実装プロジェクト マネージャー
+                  href: ./get-started/learning-catalog-project-manager.md
+                - name: 管理者
+                  href: ./get-started/learning-catalog-administrator.md
+                - name: 開発者
+                  href: ./get-started/learning-catalog-developer.md
+                - name: パートナー販売とマーケティング
+                  href: ./get-started/learning-catalog-partner-sales.md
+                - name: 機能コンサルタント
+                  href: ./get-started/learning-catalog-functional-consultant.md
+                - name: ソリューション アーキテクト
+                  href: ./get-started/learning-catalog-solution-architect.md
+            - name: ユーザー インターフェイスの操作
+              items:
+                - name: ユーザー インターフェイスの要素
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ユーザー補助機能
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 機能管理の概要
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: クライアント FAQ
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アクション検索
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 高度なフィルター処理とクエリ構文
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークスペースのコンフィギュレーションとフィルター処理
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
+                - name: キーボード ショートカット
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 法人のバナーまたはロゴ画像の変更
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ナビゲーション検索
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ユーザー エクスペリエンスのパーソナライズ
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 保存されているビュー
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: グリッド機能
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
+                - name: カスタム フィールドの作成と操作
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power Apps からキャンバス アプリを埋め込む
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ルックアップを使用した情報の検索
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
+                - name: セッションの日付変更
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ユーザーの優先タイム ゾーンの設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lifecycle Services の理解
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
+            - name: 実装ライフサイクル管理
+              items:
+                - name: 実装ライフサイクル管理ホーム ページ
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations アプリのアーキテクチャ
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 実装プロジェクトの研修
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 環境計画
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Go Live の準備
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Go Live に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サービス要求の送信
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サブスクリプション、LCS プロジェクト、Azure AD テナントに関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: データ センター間で環境を移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 契約タイプ間でライセンスを移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
+                - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
+        - name: グローバリゼーション
+          items:
+            - name: グローバリゼーション リソース
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 規制の更新
+              href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: インド
+              items:
+                - name: 在庫移動オーダー
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
+            - name: ロシア
+              items:
+                - name: ロシアの概要
+                  href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 在庫
+                  items:
+                    - name: 仕入先からの輸送中の商品
+                      href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: クラウドとエッジ
+          items:
+            - name: 製造および倉庫管理ワークロードのためのクラウドおよびエッジのスケール ユニット
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
+              href: cloud-edge/cloud-edge-workload-warehousing.md
+        - name: 資産管理
+          items:
+            - name: 資産管理の概要
+              href: asset-management/index.md
+              items:
+                - name: 機能の場所と資産
+                  href: asset-management/overview/functional-locations-and-objects.md
+                - name: 資産と作業指示書
+                  href: asset-management/overview/objects-and-work-orders.md
+            - name: 機能の場所の設定
+              items:
+                - name: 機能の場所のライフサイクルの状態
+                  href: asset-management/setup-for-functional-locations/functional-location-stages.md
+                - name: メンテナンス属性タイプ
+                  href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: 機能の場所タイプ
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
+            - name: 機能の場所
+              items:
+                - name: 機能の場所の概要
+                  href: asset-management/functional-locations/introduction-to-functional-locations.md
+                - name: 機能の場所の作成
+                  href: asset-management/functional-locations/create-functional-locations.md
+                - name: 機能の場所への資産のインストール
+                  href: asset-management/functional-locations/install-objects-on-functional-locations.md
+            - name: 資産の設定
+              items:
+                - name: 資産タイプ
+                  href: asset-management/setup-for-objects/object-types.md
+                - name: 条件のアセスメント
+                  href: asset-management/setup-for-objects/condition-assessment.md
+                - name: 資産のメーカーとモデル
+                  href: asset-management/setup-for-objects/product-and-model.md
+                - name: カウンター
+                  href: asset-management/setup-for-objects/counters.md
+                - name: 資産管理パラメーター
+                  href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+                - name: 資産のライフサイクルの状態
+                  href: asset-management/setup-for-objects/object-stages.md
+                - name: 資産のサービス レベル
+                  href: asset-management/setup-for-objects/object-priorities.md
+                - name: 資産の重要性
+                  href: asset-management/setup-for-objects/object-criticalities.md
+                - name: 資産ドキュメント
+                  href: asset-management/setup-for-objects/object-documents.md
+                - name: メンテナンス作業者と作業者グループ
+                  href: asset-management/setup-for-objects/workers-and-worker-groups.md
+            - name: 資産
+              items:
+                - name: 資産の概要
+                  href: asset-management/objects/introduction-to-objects.md
+                - name: 資産の作成
+                  href: asset-management/objects/create-an-object.md
+                - name: 複数レベルの資産
+                  href: asset-management/objects/multi-level-objects.md
+                - name: 資産の移動、置換、およびインストール
+                  href: asset-management/objects/move-replace-and-install-objects.md
+                - name: 発注書に基づいた資産の作成
+                  href: asset-management/objects/create-objects-based-on-purchase-orders.md
+                - name: 資産 BOM
+                  href: asset-management/objects/object-bom.md
+                - name: 資産イベント履歴
+                  href: asset-management/objects/object-timeline.md
+                - name: 資産ビュー
+                  href: asset-management/objects/object-view.md
+                - name: 資産属性の概要
+                  href: asset-management/objects/object-specification-overview.md
+            - name: メンテナンス要求の設定
+              items:
+                - name: メンテナンス要求
+                  href: asset-management/setup-for-maintenance-requests/requests.md
+                - name: メンテナンス要求のライフサイクルの状態
+                  href: asset-management/setup-for-maintenance-requests/request-stages.md
+                - name: メンテナンス要求タイプ
+                  href: asset-management/setup-for-maintenance-requests/request-types.md
+                - name: 担当メンテナンス作業者
+                  href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+            - name: メンテナンス要求の管理
+              items:
+                - name: メンテナンス要求
+                  href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+                - name: メンテナンス要求の作成
+                  href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+                - name: メンテナンス要求からの作業指示書の作成
+                  href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+                - name: 資産ローン
+                  href: asset-management/manage-maintenance-requests/asset-loan.md
+                - name: 入庫および出庫資産
+                  href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+                - name: メンテナンス要求レポート
+                  href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+            - name: 作業指示書の設定
+              items:
+                - name: メンテナンス作業タイプのカテゴリとメンテナンス作業タイプ、メンテナンス作業タイプのバリアント、メンテナンス作業の取引、およびメンテナンス チェックリスト
+                  href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+                - name: 作業指示書ライフサイクルの状態
+                  href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+                - name: 作業指示書タイプ
+                  href: asset-management/setup-for-work-orders/work-order-types.md
+                - name: 作業指示書プロジェクトの設定
+                  href: asset-management/setup-for-work-orders/work-order-project-setup.md
+                - name: サービス レベルと説明
+                  href: asset-management/setup-for-work-orders/service-level-and-description.md
+                - name: 実行予定
+                  href: asset-management/setup-for-work-orders/scheduled-execution.md
+                - name: エラー管理
+                  href: asset-management/setup-for-work-orders/fault-management.md
+            - name: 作業指示書
+              items:
+                - name: 作業指示書の概要
+                  href: asset-management/work-orders/introduction-to-work-orders.md
+                - name: 手動で作成された作業指示書
+                  href: asset-management/work-orders/manually-created-workorders.md
+                - name: メンテナンス予測
+                  href: asset-management/work-orders/maintenance-forecasts.md
+                - name: 調達
+                  href: asset-management/work-orders/procurement.md
+                - name: 資産カウンターの手動更新
+                  href: asset-management/work-orders/manual-update-of-asset-counters.md
+                - name: 資産カウンターの自動更新
+                  href: asset-management/work-orders/automatic-update-of-asset-counters.md
+                - name: メンテナンス チェックリスト
+                  href: asset-management/work-orders/maintenance-checklists.md
+                - name: 作業指示書のメンテナンス ダウンタイム
+                  href: asset-management/work-orders/maintenance-downtime.md
+                - name: 作業指示書へのエラーの追加
+                  href: asset-management/work-orders/add-fault-to-work-order.md
+                - name: 作業指示書レポート
+                  href: asset-management/work-orders/work-order-report.md
+                - name: 作業指示書プール
+                  href: asset-management/work-orders/work-order-pools.md
+                - name: 有効な作業指示書メンテナンス作業
+                  href: asset-management/work-orders/active-work-order-jobs-overview.md
+                - name: 作業指示書と固定資産
+                  href: asset-management/work-orders/work-orders-and-fixed-assets.md
+            - name: プロジェクト管理および会計への統合
+              items:
+                - name: 予測、作業指示書、およびプロジェクト
+                  href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: 資産管理と固定資産の統合
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
+            - name: 予防的/リアクティブ メンテナンス
+              items:
+                - name: 予防的メンテナンスの概要
+                  href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+                - name: メンテナンス計画
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+                - name: メンテナンス計画のスケジュール
+                  href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+                - name: メンテナンス ラウンド
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+                - name: メンテナンス スケジュール
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+                - name: メンテナンス スケジュール コスト
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+                - name: 作業指示書の作成
+                  href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+                - name: メンテナンス ダウンタイム活動
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+            - name: 能力計画
+              items:
+                - name: 最大能力負荷の計算
+                  href: asset-management/capacity-planning/calculate-capacity-load.md
+                - name: 品目予測の計算
+                  href: asset-management/capacity-planning/calculate-item-forecast.md
+            - name: 作業指示書のスケジューリング
+              items:
+                - name: メンテナンス作業者のカレンダーとスケジューリング
+                  href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+                - name: 優先メンテナンス作業者
+                  href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+                - name: 作業指示書のスケジュール
+                  href: asset-management/work-order-scheduling/schedule-work-orders.md
+                - name: 派遣の作業指示書
+                  href: asset-management/work-order-scheduling/dispatch-work-order.md
+                - name: 特定の日時の作業指示書のスケジュール設定
+                  href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+                - name: スケジュール済み作業指示書のメンテナンス作業
+                  href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+                - name: スケジュール済み作業指示書の最大能力負荷の計算
+                  href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+            - name: 消費
+              items:
+                - name: 消費の登録
+                  href: asset-management/consumption/register-consumption.md
+                - name: 消費レポートの作成
+                  href: asset-management/consumption/create-consumption-reports.md
+            - name: 保証
+              items:
+                - name: 保証契約
+                  href: asset-management/warranty/warranty-agreement.md
+                - name: 資産および資産タイプに対する保証
+                  href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+            - name: メンテナンス予算
+              items:
+                - name: メンテナンス予算
+                  href: asset-management/maintenance-budgets/create-maintenance-budget.md
+                - name: メンテナンス予算の更新
+                  href: asset-management/maintenance-budgets/update-maintenance-budget.md
+            - name: 管理とレポート
+              items:
+                - name: 原価および日付の管理
+                  href: asset-management/controlling-and-reporting/cost-and-date-control.md
+                - name: 作業時間の管理
+                  href: asset-management/controlling-and-reporting/work-hour-control.md
+                - name: 資産エラー原価管理
+                  href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+                - name: 資産エラー分析
+                  href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+                - name: 資産 KPI
+                  href: asset-management/controlling-and-reporting/asset-kpis.md
+                - name: 使用品目
+                  href: asset-management/controlling-and-reporting/item-where-used.md
+                - name: メンテナンスの状態
+                  href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: 資産管理と Dynamics 365 Guidesの統合
+              href: asset-management/asset-management-guides-integration.md
+            - name: 資産管理モバイル ワークスペース
+              href: asset-management/asset-management-mobile-workspace.md
+        - name: データ管理
+          items:
+            - name: ターゲット エンティティ
+              href: asset-management/data-management/target-entities.md
+        - name: 原価会計
+          items:
+            - name: 原価会計ホーム ページ
+              href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価会計用語
+              href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 会計カレンダー、会計年度、および会計年度期間
+              href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 財務分析コード
+              href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 財務分析コードおよび転記
+              href: ../finance/general-ledger/Default-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: CFO ワークスペースへの財務分析コードの追加
+              href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 勘定構造の作成
+              href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 予算作成の概要
+              href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 分析コードの作成と分析コード メンバーのインポート
+              href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価要素分析コード
+              href: ../finance/cost-accounting/cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価要素の作成
+              href: ../finance/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価オブジェクト分析コード
+              href: ../finance/cost-accounting/cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価オブジェクトの作成
+              href: ../finance/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
+              href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価要素分析コードのマップ
+              href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 分析コード階層
+              href: ../finance/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 組織レポート階層の作成
+              href: ../finance/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価オブジェクト コントローラーのアクセス権
+              href: ../finance/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価オブジェクト コントローラーのアクセス権のコンフィギュレーション
+              href: ../finance/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価管理単位の定義
+              href: ../finance/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価会計元帳の作成
+              href: ../finance/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 統計分析コード メンバーと統計測定プロバイダー テンプレート
+              href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 配賦基準
+              href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価配賦ポリシーの作成と原価管理単位への割り当て
+              href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価動作ポリシーの作成と原価管理単位への割り当て
+              href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価配分ポリシーの作成と原価管理単位への割り当て
+              href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価ロールアップ ポリシーの作成
+              href: ../finance/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価会計元帳のデータ ソースの管理
+              href: ../finance/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ソース データの処理および追跡
+              href: ../finance/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 間接費の計算
+              href: ../finance/cost-accounting/overhead-calculation.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価ロールアップ ポリシーおよび間接費の計算
+              href: ../finance/cost-accounting/cost-rollup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価管理ワークスペースのコンフィギュレーション
+              href: ../finance/cost-accounting/cost-control-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 原価管理ワークスペース パラメーターのコンフィギュレーション
+              href: ../finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Microsoft Power BI におけるアクセス リストのセキュリティと RLS について
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Microsoft Power BI レポートへのコンテンツ パックの使用
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finance and Operations モバイル アプリケーションでの原価管理ワークスペースの使用
+              href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 原価管理
+          items:
+            - name: 原価管理ホーム ページ
+              href: cost-management/cost-management-home-page.md
+            - name: 標準原価の前提条件
+              items:
+                - name: 標準原価の前提条件の概要
+                  href: cost-management/prerequisites-standard-costs.md
+                - name: 標準原価換算の概要
+                  href: cost-management/standard-cost-conversion-overview.md
+                - name: 標準原価換算の前提条件
+                  href: cost-management/prerequisites-standard-cost-conversion.md
+                - name: 標準原価の更新の管理
+                  href: cost-management/manage-standard-cost-updates.md
+                - name: 標準原価の原価計算バージョンの制限
+                  href: cost-management/restrictions-costing-versions-standard-costs.md
+                - name: 標準原価を使用する BOM 計算で使用される情報
+                  href: cost-management/information-used-bom-calculations-standard-costs.md
+                - name: 製造環境での標準原価の更新
+                  href: cost-management/update-standard-costs-manufacturing-environment.md
+                - name: 新規製造品目の標準原価の更新
+                  href: cost-management/update-standard-costs-new-manufactured-item.md
+                - name: 非製造環境での標準原価の更新
+                  href: cost-management/update-standard-costs-non-manufacturing-environment.md
+                - name: 製造品目の標準原価を管理するための準備
+                  href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+            - name: 原価バージョン
+              items:
+                - name: 原価計算バージョンの概要
+                  href: cost-management/costing-versions.md
+                - name: 原価計算表
+                  href: cost-management/costing-sheets.md
+                - name: 予定原価に対する原価バージョンを使用した原価変更のシミュレーション
+                  href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+                - name: 品目価格の保管レポートの比較
+                  href: cost-management/compare-item-price.md
+            - name: 在庫会計
+              items:
+                - name: 原価オブジェクト
+                  href: cost-management/cost-object.md
+                - name: 原価オブジェクト残高の表示
+                  href: cost-management/tasks/view-cost-object-balance.md
+                - name: 原価オブジェクトごとの在庫明細書および KPI の表示
+                  href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+                - name: 原価エントリ
+                  href: cost-management/cost-entries.md
+                - name: 原価オブジェクトの原価エントリの表示
+                  href: cost-management/tasks/view-cost-entries-cost-object.md
+                - name: 原価グループ
+                  href: cost-management/cost-groups.md
+                - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: 現物価格を含める
+                  href: cost-management/include-physical-value.md
+                - name: 在庫オブジェクト価値
+                  href: cost-management/physical-quantity.md
+                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: 移動平均
+                  href: cost-management/moving-average.md
+                - name: 移動平均、代替原価の順序
+                  href: cost-management/moving-average-fallback.md
+                - name: 現物更新と財務更新
+                  href: cost-management/physical-financial-updates.md
+                - name: 移動平均原価価格
+                  href: cost-management/running-average-cost-price.md
+                - name: 在庫分析コード当たりの移動平均原価の追跡
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: 加重平均日付
+                  href: cost-management/weighted-average-date.md
+                - name: 現物価格とマーキングを使用した加重平均
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: 在庫決算
+                  href: cost-management/inventory-close.md
+                - name: 手持在庫原価価値の調整
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: 在庫金額ストレージ レポート
+                  href: cost-management/inventory-value-report-storage.md
+                - name: 在庫エイジング レポート ストレージ
+                  href: cost-management/inventory-aging-report-storage.md
+                - name: 在庫エイジング レポートの例とロジック
+                  href: cost-management/inventory-aging-report.md
+            - name: 製造の会計
+              items:
+                - name: BOM 計算
+                  href: cost-management/bom-calculations.md
+                - name: BOM 計算グループ
+                  href: cost-management/bom-calculation-groups.md
+                - name: 原価計算レベル
+                  href: cost-management/cost-calculation-level.md
+                - name: 一括引き落とし原価計算
+                  href: cost-management/backflush-costing.md
+                - name: 製造差異の一般的な発生源
+                  href: cost-management/common-sources-of-production-variances.md
+                - name: 生産工順で使用される原価カテゴリ
+                  href: cost-management/cost-categories-used-production-routings.md
+                - name: 生産管理およびプロジェクト管理会計で使用される原価カテゴリ
+                  href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+                - name: 製造品目の雑費を表示
+                  href: cost-management/charges-manufactured-item.md
+                - name: 製造オーダーの原価分析
+                  href: cost-management/production-order-cost-analysis.md
+                - name: 製造オーダーの原価見積
+                  href: cost-management/production-order-cost-estimation.md
+                - name: 製造オーダーの現在の仕掛品ステータスの表示
+                  href: cost-management/tasks/view-current-wip-status-production-order.md
+                - name: 製造オーダーの有効原価、見積原価、実現原価を比較
+                  href: cost-management/tasks/compare-active-estimated-realized-costs.md
+                - name: 生産の転記
+                  href: cost-management/production-posting.md
+                - name: 生産または調達できる製品の設定
+                  href: cost-management/manufactured-items-treated-as-purchased-items.md
+                - name: 合計原価配賦方法
+                  href: cost-management/methodology-total-cost-allocation.md
+                - name: 製造品目の固定費の償却
+                  href: cost-management/amortize-constant-costs-manufactured-item.md
+            - name: 原価管理 Power BI コンテンツ パック
+              href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: コスト管理のトラブルシューティング
+              href: cost-management/troubleshoot-costmanagement.md
+        - name: レポートと Power BI の統合
+          items:
+            - name: Power BI でのレポートと分析
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 情報へのアクセスとレポート
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power BI でのパーソナル化オプション
+              items:
+                - name: Power BI の統合によって使用できる機能
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI コンテンツのピン留め
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI から分析ワークスペースを選択する
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power BI コンテンツ
+              items:
+                - name: Power BI コンテンツのホーム ページ
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 原価管理
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 学習
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 組織トレーニング
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 生産パフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 倉庫のパフォーマンス
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 分析ワークスペース
+              items:
+                - name: 分析ワークスペース (Power BI Embedded を使用)
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded 統合
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 分析ワークスペースで埋め込みレポートをカスタマイズする
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ドキュメントのレポートおよび印刷
+              items:
+                - name: ドキュメント レポート サービスの概要
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: サポートされるフォント
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: オンプレミスの配置の SSRS のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 印刷中
+                  items:
+                    - name: ドキュメントの印刷の概要
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ドキュメント回覧エージェントのアップグレード
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: オンプレミス配置でのドキュメントの生成、発行、印刷
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ドキュメント回覧エージェントを Windows サービスとして実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 利用可能な SQL Server レポート サービスのレポート
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: レポートのデザイン テンプレートをインストールする
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: パワー ユーザー管理ツール
+              items:
+                - name: エンティティ格納と Power BI の統合
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
+                - name: エンティティ格納のメンテナンス後に問題を解決する
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md?toc=/dynamics365/supply-chain/toc.json
+                - name: PowerBI.com 統合のコンフィギュレーション
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 自分のデータベースの持ち込み
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
+                - name: PDF ビューアを使用した PDF ドキュメントのプレビュー
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ソリューションの作成および拡張のための開発者ツール
+              items:
+                - name: 分析、集計の測定、および KPI モデリング
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 集計データのモデリング
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 集計の測定への財務分析コードの追加
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: PowerBI Desktop を使用した分析レポートの作成
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded を使用したワークスペースへの分析の追加
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: レポート ソリューションの作成
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 拡張機能を使用してアプリケーション スイート レポートをカスタマイズする
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション スイート レポート データ セットを展開する
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/supply-chain/toc.json
+                - name: レポートのメニュー項目を拡張してユーザー ナビゲーションをリダイレクトする
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ビジネス ドキュメントのカスタム デザインを作成する
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 実行時間の長いレポートのタイムアウトを回避する
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 電子申告
+          items:
+            - name: 電子申告の概要
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: コンフィギュレーション
+              items:
+                - name: コンフィギュレーションの作成
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子申告ソリューションのコンポーネントを準備する
+                  items:
+                    - name: ドメイン固有のデータ モデルを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: アプリケーション固有のメタデータを準備する
+                      items:
+                        - name: (ER) RCS で使用するアプリケーション メタデータを準備する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: (RCS) ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: (RCS) 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: モデル マッピングを定義し、データ ソースを選択する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 選択したデータ ソースにデータ モデルをマップする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 形式コンフィギュレーションを作成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 作成された形式のコンポーネントをデータ モデル要素にマッピングする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 準備された ER ソリューションをターゲット アプリケーションでテストする
+                      items:
+                        - name: (ER) コンフィギュレーションを RCS からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 形式の新しい基準バージョンを採用してその形式をアップグレードする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子申告のフォーミュラ デザイナー
+              items:
+                - name: フォーミュラ デザイナー
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 高度なフォーミュラ デザイナー
+                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/supply-chain/toc.json
+            - name: フォーミュラの言語と機能
+              items:
+                - name: フォーミュラ言語
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 関数
+                  items:
+                    - name: 日時
+                      items:
+                        - name: 日時の関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: AddDays
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DateFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DateTimeFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DateTimeValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DateToDateTime
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DateValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: DayOfYear
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Days
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Now
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NullDate
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NullDateTime
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SessionNow
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SessionToday
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: リスト
+                      items:
+                        - name: リスト関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: AllItems
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: AllItemsQuery
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Count
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EmptyList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Enumerate
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Filter
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: First
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: FirstOrNull
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Index
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: IsEmpty
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: List
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListJoin
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListOfFields
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListOfFirstItem
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: OrderBy
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Reverse
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Split
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SplitList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SplitListByLimit
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: StringJoin
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Where
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 論理
+                      items:
+                        - name: 論理関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: And
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Case
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: If
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Not
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Or
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ValueIn
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 算術
+                      items:
+                        - name: 算術関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Abs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Power
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Round
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: RoundDown
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: RoundUp
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: レコード
+                      items:
+                        - name: レコード関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EmptyRecord
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NullContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: テキスト
+                      items:
+                        - name: テキスト関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Char
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 連結
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 形式
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: GetEnumValueByName
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: GuidValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: JsonValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Left
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Len
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Lower
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mid
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NumberFormat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NumeralsToText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: PadLeft
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: QrCode
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Replace
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Right
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Text
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Translate
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Trim
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Upper
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: データ収集
+                      items:
+                        - name: データ収集関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CollectedList
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CountIF
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CountIFs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: FormatElementName
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SumIF
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: SumIFs
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: その他
+                      items:
+                        - name: その他 (ビジネス ドメインの特定の) 関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CH_Bank_Mod_10
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CN_GBT_AdditionalDimensionID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ConvertCurrency
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: CurCredRef
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: FA_Balance
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: FA_Sum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: GetCurrentCompany
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ISOCredRef
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: IsValidCharacterISO7064
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mod_97
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: NumSeqValue
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: RoundAmount
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: TableName2ID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 型変換
+                      items:
+                        - name: 型変換関数
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '型: Int64Value'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '型: IntValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '型: NumberValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '型: Value'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '日時: DateTimeValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '日時: DateToDateTime'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: '日時: DateValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'リスト: List'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'リスト: ListOfFields'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'リスト: Split'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'リスト: StringJoin'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'テキスト: Char'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'テキスト: GuidValue'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'テキスト: NumberFormat'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'テキスト: QrCode'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'テキスト: Text'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 形式を作成するときにデータ モデル定義を選択する
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+            - name: グローバル リポジトリでコンフィギュレーションを検索するための拡張フィルタ オプション
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: コンテンツを XML のままで追加してレポートを生成する
+              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+            - name: (ER) 電子申告における会社間データ ソース
+              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+            - name: さまざまな形式で送信電子ドキュメントを生成するための電子申告形式を設計する
+              items:
+                - name: (ER) OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: (ER) Word 形式のレポートを生成するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 画像や図形を埋め込む
+              items:
+                - name: (ER) 生成するドキュメントに画像や図形を埋め込む
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 画像や図形の埋め込み例
+                  items:
+                    - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 画像が埋め込まれた Office 形式でレポートを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Excel テンプレートを再適用して電子申告形式を変更する
+              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 財務分析コードを使用するための ER ソリューションを設計する
+              items:
+                - name: データ ソースとして財務分析コードを使用するためのデータ モデルを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                - name: データ ソースとして財務分析コードを使用するためのモデルをマップする
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: データ ソースとして財務分析コードを使用するためのレポートを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 財務分析コードをデータ ソースとして使用するレポートを実行する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 生成された出力からの情報を使用して棚卸および集計を行うための電子申告形式を設計する
+              items:
+                - name: 棚卸および集計を行うための形式を作成する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 棚卸および集計を行うための形式を構成する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 棚卸および集計の出力を生成するための計算を使用する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 棚卸および集計を行うための形式を実行する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
+              items:
+                - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 水平に拡張された範囲として列を Excel レポートに動的に追加するための形式を実行する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 形式出力でドキュメント管理ファイルを使用する
+              items:
+                - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER 出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER 出力でドキュメント管理ファイルを使用するための形式を作成する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER 出力でドキュメント管理ファイルを使用するための形式を実行する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER 出力でドキュメント管理ファイルを使用するための形式を変更して実行する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子申告を使用してアプリケーション データを更新する
+              items:
+                - name: 電子ドキュメントを生成してアプリケーション データを更新する
+                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション データを含むドキュメントを生成するためのモデルとマッピングを変更する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション データを含むドキュメントを生成するための形式を変更する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アプリケーション データを含むドキュメントを生成する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ER ソリューションを使用して受信ファイルからデータをインポートする
+              items:
+                - name: 異なる形式で着信ドキュメントを解析する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 手動で選択したファイルからのデータのインポートを構成する
+                  items:
+                    - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
+                - name: XML 形式のファイルをインポートする
+                  items:
+                    - name: オプションの属性を使用して XML 形式でファイルをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: オプションの属性を含む XML 形式のファイルをインポートするための電子申告形式を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
+              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 計算フィールド型の ER データ ソースのパラメーター化された呼び出しをサポートする
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+            - name: コンフィギュレーション ライフサイクル
+              items:
+                - name: コンフィギュレーション ライフサイクルの管理
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: コンフィギュレーションを Lifecycle Services にアップロードする
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: コンフィギュレーションを Lifecycle Services からインポートする
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: コンフィギュレーションを Lifecycle Services からダウンロードする
+                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: コンフィギュレーションをインポートする
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER コンフィギュレーションを RCS リポジトリからダウンロードする
+                  items:
+                    - name: RCS タイプの ER リポジトリからコンフィギュレーションをダウンロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: コンフィギュレーションを RCS からインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+            - name: チュートリアル
+              items:
+                - name: 結合データ ソースを使用して複数のアプリケーション テーブルからデータを取得する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 国のコンテキスト依存電子申告モデル マッピングを構成する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 法人ごとの電子申告形式のパラメーターの設定
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子申告形式要素の実行を遅延する
+                  items:
+                    - name: シーケンス要素の実行を延期する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: XML 要素の実行を延期する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finance and Operations での電子申告ソリューションの使用
+              items:
+                - name: フレームワークのコンフィギュレーション
+                  items:
+                    - name: 電子申告フレームワークのコンフィギュレーション
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 電子申告テンプレートのバックアップと復元
+                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 行先
+                  items:
+                    - name: 行先の概要
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 行先タイプ
+                      items:
+                        - name: アーカイブ先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 電子メール送信先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ファイル出力先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Power BI 出力先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: プリンター出力先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 画面出力先
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 行先のコンフィギュレーション
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子申告形式への参照の設定
+                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 生成されたレポートの自動検証
+                  items:
+                    - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 電子申告を使用したテストの自動化
+                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
+                  items:
+                    - name: Power BI にデータをプルするよう電子申告を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ビジネス ドキュメントの管理
+                  items:
+                    - name: ビジネス ドキュメント管理の概要
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Microsoft Excel のビジネス ドキュメント テンプレートに新しいフィールドを追加する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子申告フレームワーク API
+              items:
+                - name: 電子申告機能の一覧の拡張
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Application update 7.3 での電子申告フレームワーク API の変更
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 在庫管理
+          items:
+            - name: 在庫管理の概要
+              href: inventory/inventory-home-page.md
+            - name: 着荷
+              items:
+                - name: 着荷の概要
+                  href: inventory/arrival-overview.md
+                - name: 着荷の概要プロファイルの設定
+                  href: inventory/tasks/set-up-item-arrival-overview-profile.md
+            - name: 品質管理
+              items:
+                - name: 品質管理の概要
+                  href: inventory/enable-quality-management.md
+                - name: 品質管理プロセス
+                  href: inventory/quality-management-processes.md
+                - name: 倉庫プロセスに対する品質管理
+                  href: inventory/quality-management-for-warehouses-processes.md
+                - name: 不適合管理
+                  href: inventory/enable-nonconformance-management.md
+                - name: 管理の前提条件の設定
+                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
+                - name: 不適合の作成および処理
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: 検査指示
+                  href: inventory/quarantine-orders.md
+                - name: 品質指示の設定
+                  href: inventory/tasks/set-up-quality-orders.md
+                - name: 商品の品質の調査
+                  href: inventory/tasks/inspect-quality-goods.md
+                - name: 在庫ブロック
+                  href: inventory/inventory-blocking.md
+                - name: 在庫ブロックの作成および管理
+                  href: inventory/tasks/create-maintain-inventory-blocking.md
+            - name: 在庫操作
+              items:
+                - name: 在庫仕訳帳
+                  href: inventory/inventory-journals.md
+                - name: 在庫仕訳帳の承認ワークフロー
+                  href: inventory/inventory-journal-workflow.md
+                - name: 在庫場所
+                  href: inventory/inventory-locations.md
+                - name: 在庫状態
+                  href: inventory/inventory-statuses.md
+                - name: 新しい倉庫レイアウトの作成
+                  href: inventory/tasks/create-new-warehouse-layout.md
+                - name: バーコード タイプの管理
+                  href: inventory/tasks/maintain-barcode-types.md
+                - name: 有効在庫数の確認
+                  href: inventory/tasks/check-availability-stock.md
+                - name: 手持在庫一覧
+                  href: inventory/inventory-on-hand-list.md
+                - name: 倉庫の在庫レベルの初期化
+                  href: inventory/tasks/initialize-stock-levels-warehouse.md
+                - name: 倉庫内の現物在庫の移動
+                  href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
+                - name: 倉庫の在庫レベルの調整 (基本倉庫)
+                  href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+                - name: 在庫タグ棚卸
+                  href: inventory/inventory-tag-counting.md
+                - name: 倉庫の在庫棚卸
+                  href: inventory/tasks/count-inventory-warehouse.md
+                - name: 在庫棚卸プロセスの定義
+                  href: inventory/tasks/define-inventory-counting-processes.md
+                - name: 委託販売の設定
+                  href: inventory/consignment.md
+                - name: 生産需要に基づく委託販売在庫の所有権の変更
+                  href: inventory/tasks/change-ownership-consignment.md
+                - name: 委託販売補充注文の作成
+                  href: inventory/tasks/create-consignment-replenishment-order.md
+                - name: 仕入先コラボレーションを使用した委託販売在庫の監視
+                  href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+                - name: 在庫、生産、および販売における品目と原材料の追跡
+                  href: inventory/trace-items-raw-materials-inventory-production-sales.md
+                - name: 品目または原材料の追跡
+                  href: inventory/tasks/trace-item-or-raw-material.md
+                - name: 在庫バッチのマージ
+                  href: inventory/merge-inventory-batches.md
+                - name: 在庫追跡情報の修正
+                  href: inventory/tasks/correct-inventory-tracking-information.md
+                - name: 販売プロセスでのシリアル番号の登録
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: 手持在庫モバイル ワークスペース
+                  href: inventory/inventory-on-hand-mobile-workspace.md
+            - name: 出荷プロセス
+              items:
+                - name: 出荷プロセスの概要
+                  href: inventory/outbound-process.md
+                - name: 在庫数量の引当
+                  href: inventory/reserve-inventory-quantities.md
+                - name: 販売注文に対する同じバッチの引当
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+            - name: 在庫管理
+              items:
+                - name: 在庫決算
+                  href: cost-management/inventory-close.md
+                - name: 移動平均原価価格
+                  href: cost-management/running-average-cost-price.md
+                - name: 手持在庫原価価値の調整
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: 在庫分析コード当たりの移動平均原価の追跡
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: 在庫の視覚化アドイン
+              href: inventory/inventory-visibility.md
+        - name: IoT インテリジェンス
+          items:
+            - name: IoT インテリジェンスのホーム ページ
+              href: iot/iot-intelligence-home-page.md
+            - name: Azure リソースの設定
+              href: iot/iot-azure-setup.md
+            - name: IoT ハブのメッセージ スキーマの形式
+              href: iot/iot-schema-format.md
+            - name: LCS でアドインのインストール
+              href: iot/iot-lcs-setup.md
+            - name: メトリックスの設定
+              href: iot/iot-metrics-setup.md
+            - name: シナリオの設定
+              href: iot/iot-scenario-setup.md
+            - name: 監視および管理
+              href: iot/iot-management.md
+        - name: マスター プラン
+          items:
+            - name: マスター プランのホーム ページ
+              href: master-planning/master-planning-home-page.md
+            - name: マスター プランの計画最適化への移行
+              href: master-planning/new-master-planning-engine.md
+            - name: 計画最適化
+              items:
+                - name: 計画最適化の概要
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: 計画最適化の開始
+                  href: master-planning/planning-optimization/get-started.md
+                - name: 計画最適化適合分析
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: 計画にフィルターを適用
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: 需要予測を使用したマスター プラン
+                  href: master-planning/planning-optimization/demand-forecast.md
+                - name: 購買の売買契約を使用したマスター プラン
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: 安全マージン
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: 計画最適化を使用した在庫マーキング
+                  href: master-planning/planning-optimization/marking.md
+                - name: 会社間計画
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: 特定の製品ライフサイクル状態の製品を除外する
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: 計画オーダーの承認
+                  href: master-planning/planning-optimization/approved-planned-order.md
+                - name: 計画最適化の自動確定
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: マイナスの手持在庫数量を使用した計画
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: 計画履歴と計画ログの表示
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: 計画ジョブのキャンセル
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: 計画最適化のトラブルシューティング
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: 計画最適化の拡張機能
+                  href: master-planning/planning-optimization/extensibility.md
+            - name: マスター プラン
+              items:
+                - name: マスター プランの概要
+                  href: master-planning/master-plans.md
+                - name: マスター プランの設定
+                  href: master-planning/master-planning-setup.md
+                - name: マスター プランの設定ウィザード
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: 補充設定
+                  href: master-planning/coverage-settings.md
+                - name: 品目の補充ルールの定義
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: 制約付き計画の生成
+                  href: master-planning/tasks/constrained-plan.md
+                - name: 連産品の材料計画の作成
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: 計画オーダーの管理
+                  href: master-planning/maintain-planned-orders.md
+                - name: 品目に対する安全在庫フルフィルメント
+                  href: master-planning/safety-stock-replenishment.md
+                - name: 遅延
+                  href: master-planning/delays.md
+                - name: マスター プラン ジョブのキャンセル
+                  href: master-planning/cancel-master-planning-job.md
+                - name: 展開のトレースを使用する
+                  href: master-planning/trace-explosion.md
+                - name: アクション メッセージ
+                  href: master-planning/action-messages.md
+                - name: マスター プランの実行の監視
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: サイトのスケジュールの作成
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: サイトの計画の作成
+                  href: master-planning/tasks/create-plan-site.md
+                - name: カレンダーおよびマスター プラン
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: マスター プランのパフォーマンスの改善
+                  href: master-planning/master-planning-performance.md
+                - name: スケジューリング エンジンのパフォーマンスの改善
+                  href: master-planning/scheduling-engine-performance.md
+                - name: マスター プランとマルチサイト機能
+                  items:
+                    - name: マスター プランとマルチサイト機能の概要
+                      href: master-planning/master-plan-multisite-functionality.md
+                    - name: マスター プラン - サイトの補充、倉庫は必須
+                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                    - name: マスター プラン - サイトの補充、倉庫は必須ではない
+                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                    - name: マスター プラン - サイトと倉庫の補充、倉庫は必須
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                    - name: マスター プラン - サイトと倉庫の補充、倉庫は必須ではない
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                    - name: BOM バージョンの決定
+                      href: master-planning/master-plan-bom-version-determined.md
+                    - name: BOM バージョンの展開
+                      href: master-planning/master-plan-explosion-bom-version.md
+                - name: マイナス在庫日数と動的マイナス在庫日数
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: 会社間計画の作成
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: 計画企業内需要 (アウトバウンド) の表示
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: 社内サプライ チェーンの顧客との共同作業
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+            - name: 需要予測
+              items:
+                - name: 需要予測の概要
+                  href: master-planning/introduction-demand-forecasting.md
+                - name: 需要予測の設定
+                  href: master-planning/demand-forecasting-setup.md
+                - name: 需要予測の履歴データのインポート
+                  href: master-planning/import-historical-data.md
+                - name: 統計ベースライン予測の生成
+                  href: master-planning/generate-statistical-baseline-forecast.md
+                - name: ベースライン予測の手動調整
+                  href: master-planning/manual-adjustments-baseline-forecast.md
+                - name: 調整された需要予測の承認
+                  href: master-planning/authorize-adjusted-forecast.md
+                - name: 予測精度の監視
+                  href: master-planning/monitor-forecast-accuracy.md
+                - name: 需要予測を計算するときに、トランザクション履歴データから異常値を削除
+                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                - name: 下方修正キー
+                  href: master-planning/reduction-keys.md
+                - name: ベースライン予測の作成
+                  href: master-planning/tasks/create-baseline-forecast.md
+                - name: 需要予測の手動変更
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: マスター プランのトラブルシューティング
+              href: master-planning/troubleshoot-masterplanning.md
+        - name: モバイル アプリ
+          items:
+            - name: モバイル アプリのホーム ページ
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: モバイル ワークスペース
+              items:
+                - name: 利用可能なモバイル ワークスペース
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 資産管理
+                  href: asset-management/asset-management-mobile-workspace.md
+                - name: 会社のディレクトリ
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 原価管理
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 経費管理
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 手持在庫
+                  href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 請求書の承認
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 自分のチーム
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project モバイル アプリケーションの概要
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: プロジェクト時間の入力
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 発注書の承認
+                  href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 販売注文
+                  href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 仕入先コラボレーション
+                  href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: モバイル ワークスペースの公開
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Office 統合
+          items:
+            - name: Office 統合の概要
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Office 統合のチュートリアル
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: '[Excel で開く] エクスペリエンスの作成'
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: '[Microsoft Office で開く] メニューのカスタマイズ'
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子メールのコンフィギュレーションと送信
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子メール体験を向上させる
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Office 統合のトラブルシューティング
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 組織管理
+          items:
+            - name: 組織管理ホーム ページ
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 番号順序
+              items:
+                - name: 番号順序の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 番号順序を個別に設定する
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ウィザードを使用した番号順序の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 倉庫フローの番号順序のコンフィギュレーション
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 組織と組織階層
+              items:
+                - name: 組織と組織階層の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 組織階層の計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 組織階層の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 法人の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 作業単位の作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: グローバル アドレス帳
+              items:
+                - name: グローバル アドレス帳の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: グローバル アドレス帳およびその他のアドレス帳の計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: グローバル アドレス帳の構成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アドレス帳に関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: アドレス帳の構成
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ワークフロー システム
+              items:
+                - name: ワークフロー システムの概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー システムのアーキテクチャ
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー要素
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー アクション
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフローの作成
+                  items:
+                    - name: ワークフローの作成の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフロー プロパティのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 手動タスクのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 自動化タスクのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 承認プロセスのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 承認ステップのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 手動決定のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 条件付き意思決定のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 並列活動のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 並列分岐のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 品目ワークフローのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフローの作業項目をデリゲート
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー履歴の表示
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー タイプ
+                  items:
+                    - name: ワークフロー タイプの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフロー タイプのチェックリスト
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフローカテゴリの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフロー タイプのクエリの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 新しいワークフロー タイプの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフロー ドキュメント クラスの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: SubmitToWorkflow クラスの作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフロー タイプのレポート
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ワークフローに関するよく寄せられる質問
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 警告
+              items:
+                - name: 警告の概要
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 警告ルールの作成
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 警告のバッチ処理
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子メールによるクライアント警告通知
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子署名
+              items:
+                - name: 電子署名の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 電子署名の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ケース管理
+              items:
+                - name: ケース管理の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ケース セキュリティ、プロセス、およびカテゴリの計画
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: レコード テンプレート
+              items:
+                - name: レコード テンプレートの概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: レコード テンプレートの作成
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
+                - name: レコード テンプレートを使用した新しいレコードの作成
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ドキュメント管理のコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 電子メールのコンフィギュレーションと送信
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 日時データとタイム ゾーン
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 調達
+          items:
+            - name: 調達の概要
+              href: procurement/procurement-sourcing-overview.md
+            - name: 調達ワークフロー
+              href: procurement/procurement-sourcing-workflows.md
+            - name: 調達ワークフローのトラブルシューティング
+              href: procurement/troubleshoot-procurementworkflows.md
+            - name: 調達カタログ
+              items:
+                - name: 調達カタログの概要
+                  href: procurement/procurement-catalogs.md
+                - name: 調達カタログの作成
+                  href: procurement/tasks/create-procurement-catalog.md
+                - name: 調達カテゴリ階層の設定
+                  href: procurement/tasks/set-up-procurement-category-hierarchy.md
+            - name: 購買要求
+              items:
+                - name: 購買要求の概要
+                  href: procurement/purchase-requisitions-overview.md
+                - name: 購買要求ワークフロー
+                  href: procurement/purchase-requisitions-workflow.md
+            - name: 見積依頼 (RFQ)
+              items:
+                - name: 見積依頼 (RFQ) の概要
+                  href: procurement/request-quotations.md
+                - name: 見積依頼の作成
+                  href: procurement/tasks/create-request-quotation.md
+                - name: RFQ を使用する要求の作成
+                  href: procurement/tasks/create-requisition-uses-rfq.md
+                - name: RFQ のスコア方法の作成
+                  href: procurement/tasks/create-scoring-method-rfqs.md
+                - name: RFQ の入札タイプとスコア基準の作成
+                  href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: 見積依頼に関する仕入先の質問への応答
+                  href: procurement/rfq-question.md
+                - name: RFQ 入札価格の入力と比較および契約の授与
+                  href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+            - name: 発注書
+              items:
+                - name: 発注書の概要
+                  href: procurement/purchase-order-overview.md
+                - name: 発注書の承認と確認
+                  href: procurement/purchase-order-approval-confirmation.md
+                - name: 発注書承認モバイル ワークスペース
+                  href: procurement/purchase-order-mobile-workspace.md
+                - name: 発注書に記載されている商品の受取の記録
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: 発注書のトラブルシューティング
+                  href: procurement/troubleshoot-purchaseorders.md
+            - name: 発注書の作成
+              items:
+                - name: 発注書の手動作成
+                  href: procurement/purchase-order-creation.md
+                - name: 発注書の作成
+                  href: procurement/tasks/create-purchase-order.md
+                - name: 配送スケジュールと発注書の作成
+                  href: procurement/tasks/create-purchase-order-delivery-schedule.md
+                - name: 一時仕入先に対する発注書の作成
+                  href: procurement/tasks/create-purchase-order-one-time-supplier.md
+                - name: 発注書の作成時に購買リリース注文を作成
+                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+                - name: 購買契約書からの購買リリース注文の作成
+                  href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+                - name: 購買返品注文の作成
+                  href: procurement/tasks/create-purchase-return-order.md
+                - name: プロジェクト発注書の作成
+                  href: procurement/tasks/create-project-purchase-order.md
+                - name: リピート発注書の作成
+                  href: procurement/tasks/create-repeat-purchase-order.md
+                - name: 消費要求の作成
+                  href: procurement/tasks/create-requisition-consumption.md
+            - name: 価格、割引、リベート
+              items:
+                - name: 購買契約書
+                  href: procurement/purchase-agreements.md
+                - name: 購買契約書の作成
+                  href: procurement/tasks/create-purchase-agreement.md
+                - name: 雑費の自動配賦
+                  href: procurement/automatic-charges-allocation.md
+                - name: 仕入先リベート
+                  href: procurement/vendor-rebates.md
+                - name: 価格、割引、契約、リベートのトラブルシューティング
+                  href: procurement/troubleshooting-pricediscountagreements.md
+            - name: 購入ポリシー
+              items:
+                - name: 購入ポリシーの概要
+                  href: procurement/purchase-policies.md
+                - name: 購入ポリシーの作成
+                  href: procurement/tasks/create-purchasing-policies.md
+                - name: 調達カテゴリ階層に対するポリシーの設定
+                  href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: 製品受領書と請求書作成
+              items:
+                - name: 発注書に対する製品受領書
+                  href: procurement/product-receipt-against-purchase-orders.md
+                - name: 仕入先請求書の概要
+                  href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 製品受領書と請求書のトラブルシューティング
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
+            - name: 仕入先管理とコラボレーション
+              items:
+                - name: 仕入先コラボレーションの設定と管理
+                  href: procurement/set-up-maintain-vendor-collaboration.md
+                - name: 仕入先コラボレーション ユーザーの管理
+                  href: procurement/manage-vendor-collaboration-users.md
+                - name: 仕入先の設定
+                  href: procurement/set-up-vendor-accounts.md
+                - name: 仕入先勘定の作成
+                  href: procurement/tasks/create-vendor-account.md
+                - name: 仕入先銀行口座の作成
+                  href: procurement/tasks/create-vendor-bank-account.md
+                - name: 仕入先転記プロファイル
+                  href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 仕入先要求コンフィギュレーション
+                  href: procurement/vendor-request-configurations.md
+                - name: 仕入先のオンボーディング
+                  href: procurement/vendor-onboarding.md
+                - name: 外部仕入先との仕入先コラボレーション
+                  href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: 顧客との仕入先コラボレーション
+                  href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: 仕入先カタログのインポート
+                  href: procurement/vendor-catalogs-import.md
+                - name: パンチアウト eProcurement の外部カタログの設定
+                  href: procurement/set-up-external-catalog-for-punchout.md
+                - name: cXML の拡張機能の購入
+                  href: procurement/purchasing-cxml-enhancements.md
+                - name: パンチアウト eProcurement の外部カタログの使用
+                  href: procurement/use-external-catalogs-for-punchout.md
+                - name: 仕入先コラボレーションのモバイル ワークスペース
+                  href: procurement/vendor-collaboration-mobile-workspace.md
+                - name: 特定の調達カテゴリに対する仕入先の承認
+                  href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+                - name: 特定の製品の仕入先の承認
+                  href: procurement/tasks/approve-vendors-specific-products.md
+                - name: 仕入先の検索
+                  href: procurement/tasks/search-vendors.md
+                - name: 誰かの代わりに製品を注文するためのアクセス許可の設定
+                  href: procurement/tasks/set-up-permissions-ordering-products.md
+            - name: 調達のタスク
+              items:
+                - name: プロジェクト リソース情報の設定
+                  href: procurement/tasks/set-up-project-resource-information.md
+                - name: プロジェクト予算の送信および承認
+                  href: procurement/tasks/submit-approve-project-budget.md
+                - name: プロジェクト予算の修正の送信および承認
+                  href: procurement/tasks/submit-approve-project-budget-revision.md
+        - name: 製品情報管理
+          items:
+            - name: 製品情報の概要
+              href: pim/product-information.md
+            - name: 製品情報
+              items:
+                - name: 製品 ID
+                  href: pim/product-identifiers.md
+                - name: 製品分類の階層の作成
+                  href: pim/tasks/create-hierarchy-product-classification.md
+                - name: カテゴリ階層を使用した製品の分類
+                  href: pim/tasks/classify-product-category-hierarchies.md
+                - name: 製品番号の分類
+                  href: pim/product-variant-identification-nomenclature.md
+                - name: 事前定義された製品バリアントの製品番号の分類の作成
+                  href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+                - name: コンフィギュレーション済みの製品バリアントの製品番号の分類の作成
+                  href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+                - name: 新しい製品の作成
+                  href: pim/tasks/create-new-product.md
+                - name: 製品マスターの作成
+                  href: pim/tasks/create-product-master.md
+                - name: 事前定義された製品バリアントの作成
+                  href: pim/tasks/create-predefined-product-variants.md
+                - name: 製品バリアントごとの測定単位の変換
+                  href: pim/uom-conversion-per-product-variant.md
+                - name: 1 つの会社に対するリリース済製品の作成
+                  href: pim/tasks/create-released-product-single-company.md
+                - name: データ エンティティの使用
+                  href: pim/data-entities.md
+                - name: 製品ライフサイクルの状態
+                  items:
+                    - name: 製品ライフサイクル状態の概要
+                      href: pim/product-lifecycle.md
+                    - name: 新しい製品ライフサイクル状態の作成
+                      href: pim/tasks/new-product-lifecycle-state.md
+                    - name: 既定の製品ライフサイクル状態の作成
+                      href: pim/tasks/default-product-lifecycle-state.md
+                    - name: リリース済製品マスターに製品ライフサイクル状態を割り当てる
+                      href: pim/tasks/product-lifecycle-state-released-product-master.md
+                    - name: リリース済製品に製品ライフサイクル状態を割り当てる
+                      href: pim/tasks/product-lifecycle-state-released-product.md
+                    - name: 古い形式の製品バリアントを検索する
+                      href: pim/tasks/obsolete-product-variants.md
+                    - name: マスター プランからの製品の除外
+                      href: pim/tasks/exclude-products-master-planning.md
+                - name: 製品のバーコードの作成
+                  href: pim/tasks/create-bar-code-product.md
+                - name: 製品の GTIN コードの入力
+                  href: pim/tasks/enter-gtin-code-product.md
+                - name: 製品のバッチ属性の作成
+                  href: pim/tasks/create-batch-attributes-product.md
+                - name: 製品への画像の追加
+                  href: pim/tasks/add-image-product.md
+                - name: 原産国
+                  href: pim/country-of-origin.md
+                - name: 二重使用商品
+                  href: pim/dual-use.md
+                - name: 危険物
+                  items:
+                    - name: 危険物の概要
+                      href: pim/hazmat-overview.md
+                    - name: 危険物の設定
+                      href: pim/hazmat-setup.md
+                    - name: 製品、注文、出荷、および積荷の危険物
+                      href: pim/hazmat-items.md
+                    - name: 危険物の照会およびレポート
+                      href: pim/hazmat-reports.md
+                - name: 製品情報の翻訳についてよく寄せられる質問
+                  href: pim/translations-product-related-information.md
+                - name: 注文入力時の製品検索
+                  href: pim/search-products-product-variants.md
+                - name: 分析コードおよび製品バリアントの既定の注文設定
+                  href: production-control/default-order-settings.md
+                - name: 部品表およびフォーミュラ
+                  href: production-control/bill-of-material-bom.md
+                - name: BOM デザイナーの使用
+                  href: production-control/bom-designer-functionality.md
+                - name: フォーミュラ デザイナーの使用
+                  href: production-control/formula-designer.md
+                - name: バリアント重量を使用した発注書へのバリアント製品の追加
+                  href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+                - name: コンフィギュレーション可能な製品の販売注文の作成
+                  href: pim/tasks/create-sales-order-configurable-product.md
+                - name: 販売価格の選択基準の作成
+                  href: pim/tasks/create-sales-price-selection-criteria.md
+                - name: コンフィギュレーション可能な製品の属性ベースの価格決定の設定
+                  href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+                - name: BOM 計算
+                  href: cost-management/bom-calculations.md
+                - name: 製品情報のトラブルシューティング
+                  href: pim/troubleshooting-productinformation.md
+            - name: 製品コンフィギュレーション
+              items:
+                - name: 製品コンフィギュレーションの概要
+                  href: pim/build-product-configuration-model.md
+                - name: 分析コードベースのコンフィギュレーションの作成
+                  items:
+                    - name: 分析コード ベース製品のコンフィギュレーションの概要
+                      href: pim/dimension-based-product-configuration.md
+                    - name: 製品分析コード
+                      href: pim/product-dimensions.md
+                    - name: 分析コードベースの製品マスターの作成
+                      href: pim/tasks/create-dimension-based-product-master.md
+                    - name: 分析コードベースの製品マスターのリリース
+                      href: pim/tasks/release-dimension-based-product-master.md
+                    - name: リリース済み製品マスターの基本設定の完了
+                      href: pim/tasks/complete-basic-setup-released-product-master.md
+                    - name: コンフィギュレーション グループの定義
+                      href: pim/tasks/define-configuration-groups.md
+                    - name: 分析コードベースの製品マスターの部品表の作成
+                      href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+                    - name: コンフィギュレーション ルートの定義
+                      href: pim/tasks/define-configuration-route.md
+                    - name: コンフィギュレーション ルールの作成
+                      href: pim/tasks/create-configuration-rules.md
+                    - name: 分析コードベースのコンフィギュレーションの作成
+                      href: pim/tasks/create-dimension-based-configurations.md
+                - name: 制約ベースのコンフィギュレーションの作成
+                  items:
+                    - name: 製品コンフィギュレーション モデルの設定
+                      href: pim/set-up-maintain-product-configuration-model.md
+                    - name: 製品コンフィギュレーション モデルの計算に関するよく寄せられる質問
+                      href: pim/calculate-product-configuration-models.md
+                    - name: コンフィギュレーション ルール
+                      href: pim/configuration-rules.md
+                    - name: 式の制約とテーブル制約
+                      href: pim/expression-constraints-table-constraints-product-configuration-models.md
+                    - name: 製品コンフィギュレーションのソルバー戦略
+                      href: pim/solver-strategy-product-configuration.md
+                    - name: 製品コンフィギュレーションの再利用
+                      href: pim/reuse-product-configurations.md
+                    - name: システム定義テーブルとユーザー定義テーブルの制約
+                      href: pim/system-defined-user-defined-table-constraints.md
+                    - name: 製品モデル コンポーネントの作成
+                      href: pim/tasks/create-product-model-components.md
+                    - name: 製品コンフィギュレーション モデルの作成
+                      href: pim/tasks/create-product-configuration-model.md
+                    - name: 製品コンフィギュレーション モデルへ式の制約の追加
+                      href: pim/tasks/add-expression-constraint-product-configuration-model.md
+                    - name: 製品コンフィギュレーション モデルへの計算の追加
+                      href: pim/tasks/add-calculation-product-configuration-model.md
+                    - name: 製品コンフィギュレーション モデルの BOM の管理
+                      href: pim/tasks/maintain-bom-product-configuration-model.md
+                    - name: 製品モデルのルートの管理
+                      href: pim/tasks/maintain-route-product-model.md
+                    - name: 制約ベースの製品コンフィギュレーションの属性ベースの販売価格
+                      href: pim/attribute-based-product-configurator.md
+                    - name: 製品コンフィギュレーション モデルの承認
+                      href: pim/tasks/approve-product-configuration-model.md
+                    - name: 製品モデルのためのデータの転送
+                      href: pim/tasks/transfer-data-product-models.md
+                - name: 製品コンフィギュレーターのトラブルシューティング
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: エンジニアリング変更管理
+          items:
+            - name: エンジニアリング変更管理の概要
+              href: engineering-change-management/product-engineering-overview.md
+            - name: エンジニアリングの変更管理機能のチュートリアル
+              href: engineering-change-management/engineering-scenarios.md
+            - name: エンジニアリング変更管理のパラメーター
+              href: engineering-change-management/engineering-parameters.md
+            - name: エンジニアリング変更管理の共通の値の設定
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: エンジニアリング組織およびデータ所有権のルール
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: 製品所有者
+              href: engineering-change-management/product-owner.md
+            - name: エンジニアリング属性とエンジニアリング属性検索
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: エンジニアリング バージョンとエンジニアリング製品カテゴリ
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: 製品ライフサイクルの状態とトランザクション
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: エンジニアリング製品に対する変更の管理
+              href: engineering-change-management/engineering-change-management.md
+            - name: 製品準備完了
+              href: engineering-change-management/product-readiness.md
+            - name: リリース製品構造
+              href: engineering-change-management/release-product-structure.md
+        - name: 生産管理
+          items:
+            - name: 生産プロセスの概要
+              href: production-control/production-process-overview.md
+            - name: 'ミックス モードの計画: 個別、プロセス、およびリーン調達の連結'
+              href: production-control/mixed-mode-plan.md
+            - name: 生産での外注作業の管理
+              href: production-control/manage-subcontract-work-production.md
+            - name: 個別製造
+              items:
+                - name: 生産マスター データの管理
+                  items:
+                    - name: 生産の設定の要件
+                      href: production-control/production-set-up-requirements.md
+                    - name: 部品表およびフォーミュラ
+                      href: production-control/bill-of-material-bom.md
+                    - name: BOM デザイナーの機能
+                      href: production-control/bom-designer-functionality.md
+                    - name: ファントム品目
+                      href: production-control/phantom-items.md
+                    - name: BOM 計算
+                      href: cost-management/bom-calculations.md
+                    - name: 測定単位の管理
+                      href: pim/tasks/manage-unit-measure.md
+                    - name: 製造実行の生産パラメーター
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: 運営リソース
+                      href: production-control/operations-resources.md
+                    - name: 運営リソースの作成
+                      href: production-control/tasks/create-operations-resource.md
+                    - name: リソースの能力
+                      href: production-control/resource-capabilities.md
+                    - name: リソース能力の定義
+                      href: production-control/tasks/define-resource-capabilities.md
+                    - name: 工順と工程
+                      href: production-control/routes-operations.md
+                    - name: 作業ポリシー
+                      href: warehousing/warehouse-work-policies.md
+                    - name: 作業時間スケジューリング プロパティの作成
+                      href: production-control/tasks/create-working-time-scheduling-properties.md
+                    - name: 作業時間テンプレートの作成
+                      href: production-control/tasks/create-working-time-templates.md
+                    - name: 個別の製造リソース グループの定義
+                      href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+                    - name: 生産フロー バージョンへの既存の活動の追加
+                      href: production-control/tasks/add-existing-activity-production-flow-version.md
+                    - name: 生産フロー バージョンの無効化
+                      href: production-control/tasks/deactivate-production-flow-version.md
+                    - name: 生産フロー バージョンの有効期限の定義
+                      href: production-control/tasks/define-expiry-date-production-flow-version.md
+                    - name: 生産フロー モデルの定義
+                      href: production-control/tasks/define-production-flow-models.md
+                - name: 生産工程のスケジューリング
+                  items:
+                    - name: 工程のスケジューリング
+                      href: production-control/operations-scheduling.md
+                    - name: ジョブのスケジューリング
+                      href: production-control/job-scheduling.md
+                    - name: ジョブ スケジュールのガント チャート
+                      href: production-control/visual-scheduling-production.md
+                    - name: 工程スケジューリング オプション
+                      href: production-control/operation-scheduling-options.md
+                    - name: 工程とジョブのスケジューリングによる製造オーダーのスケジュール
+                      href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+                - name: 生産ジョブの運営
+                  items:
+                    - name: 製造オーダーのライフサイクルの管理
+                      items:
+                        - name: 製造オーダーのライフサイクルの概要
+                          href: production-control/create-production-orders.md
+                        - name: 製造オーダーの作成
+                          href: production-control/tasks/create-production-order.md
+                        - name: 製造オーダーの見積
+                          href: production-control/tasks/estimate-production-order.md
+                        - name: 製造オーダーのスケジュール
+                          href: production-control/tasks/schedule-production-order.md
+                        - name: 製造オーダーのリリース
+                          href: production-control/tasks/release-production-order.md
+                        - name: 製造オーダーの開始
+                          href: production-control/tasks/start-production-order.md
+                        - name: 製造オーダーの完了レポート
+                          href: production-control/tasks/report-production-order-finished.md
+                        - name: 製造オーダーの終了
+                          href: production-control/tasks/end-production-order.md
+                    - name: 製造オーダーのリリース
+                      href: production-control/release-production-orders.md
+                    - name: 製造オーダーを完了として報告する
+                      href: production-control/report-production-orders-as-finished.md
+                    - name: 生産現場の実行インターフェースを設定して使用する
+                      items:
+                        - name: 生産現場の実行インターフェースを構成する
+                          href: production-control/production-floor-execution-configure.md
+                        - name: 生産現場の実行インターフェースをデザインする
+                          href: production-control/production-floor-execution-tabs.md
+                        - name: 生産現場の実行インターフェースを実行するデバイスを設定する
+                          href: production-control/production-floor-execution-setup.md
+                        - name: 生産現場の実行インターフェースを作業者が使用する方法
+                          href: production-control/production-floor-execution-use.md
+                    - name: デバイスのジョブ カードのコンフィギュレーション
+                      href: production-control/config-job-card-device.md
+                    - name: ジョブ カード デバイスからの完了レポート
+                      href: production-control/report-finished-job-device.md
+                    - name: 生産での作業者への Mixed reality ガイドの提供
+                      href: production-control/instruction-guides-in-production-overview.md
+                    - name: 製造オーダー ステータスを逆行させる
+                      href: production-control/reverse-production-order-status.md
+                    - name: 材料の例外の視覚化
+                      href: production-control/improved-visibility-into-material-exceptions.md
+                    - name: BOM およびフォーミュラ明細行を倉庫にリリース
+                      href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+                    - name: モバイル デバイスを使用して材料消費を登録する
+                      href: production-control/register-material-consumption-hand-held-device.md
+                    - name: 部品消費ルールを使用して原材料消費を管理する
+                      href: production-control/flushing-principles.md
+                    - name: 完成品の生産出荷の場所を設定する
+                      href: production-control/production-output-location.md
+                    - name: BOM を完了として報告する
+                      href: production-control/report-boms-as-finished.md
+                    - name: プレートにより制御されている場所への完了レポート
+                      href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+                    - name: モバイル ジョブ デバイスでの進捗のレポート
+                      href: production-control/tasks/report-progress-mobile-job-device.md
+                    - name: 安全在庫仕訳帳を使用した最小補充の更新
+                      href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+                    - name: 製造における材料の置き換え
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: 製造実行での登録
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: 生産フィードバック
+                      href: production-control/production-feedback.md
+                    - name: 時刻と出勤の給与プロセスの有効化
+                      href: production-control/tasks/payroll-process-time-attendance.md
+                    - name: モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション
+                      href: production-control/tasks/worker-mobile-job-device.md
+                - name: 製造における財務の管理
+                  items:
+                    - name: ジョブ バンドル内のジョブへの時間割り当て
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: 材料消費の計算
+                      href: production-control/consumption.md
+                    - name: 生産の転記
+                      href: cost-management/production-posting.md
+                - name: 時刻と出勤の登録
+                  items:
+                    - name: 時刻と出勤の登録作業者の概要
+                      href: production-control/time-attendance-registrations.md
+                    - name: 登録に基づく支払い
+                      href: production-control/pay-based-on-registrations.md
+                    - name: 時刻と出勤の休暇登録
+                      href: production-control/absence-registration-in-time-and-attendance.md
+                    - name: フレックス グループ
+                      href: production-control/time-attendance-flex-groups.md
+                - name: 個別製造のトラブルシューティング
+                  href: production-control/troubleshoot-discretemanufacturing.md
+            - name: リーン生産
+              items:
+                - name: リーン生産の概要
+                  href: production-control/lean-manufacturing-overview.md
+                - name: 活動ベースの外注
+                  href: production-control/activity-based-subcontracting.md
+                - name: 生産マスター データの管理
+                  items:
+                    - name: リーン組織のモデル化
+                      href: production-control/lean-manufacturing-modeling-lean-organization.md
+                    - name: 運営リソース
+                      href: production-control/operations-resources.md
+                    - name: リーン生産作業セルの定義
+                      href: production-control/tasks/define-lean-manufacturing-work-cells.md
+                    - name: リーン スケジュール グループの定義
+                      href: production-control/tasks/define-lean-schedule-groups.md
+                - name: かんばん作業のスケジューリング
+                  items:
+                    - name: リーン生産の視覚的スケジューリング
+                      href: production-control/visual-scheduling-lean-manufacturing.md
+                    - name: リーン生産のかんばん作業のスケジューリング
+                      href: production-control/lean-manufacturing-kanban-job-scheduling.md
+                    - name: ジョブのスケジューリング
+                      href: production-control/job-scheduling.md
+                - name: かんばん作業の運営
+                  items:
+                    - name: バーコード スキャナーのかんばん転送ボードのサポート
+                      href: production-control/kanban-transfer-board-support-barcode-scanner.md
+                    - name: 生産フィードバック
+                      href: production-control/production-feedback.md
+                    - name: 生産フロー バージョンの作成
+                      href: production-control/tasks/create-production-flow-version.md
+                    - name: リーン生産のプロセス活動の作成
+                      href: production-control/tasks/create-process-activities-lean-manufacturing.md
+                    - name: リーン生産の転送活動の作成
+                      href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+                    - name: 生産フローおよびバージョンの検証
+                      href: production-control/tasks/validate-production-flow-version.md
+                    - name: 生産フロー バージョンの有効化
+                      href: production-control/tasks/activate-production-flow-version.md
+                    - name: '活動リレーションの作成: 後続処理'
+                      href: production-control/tasks/create-activity-relation-successor.md
+                    - name: 生産フロー活動への先行処理の追加
+                      href: production-control/tasks/add-predecessor-production-flow-activity.md
+                    - name: バリュー ストリームの作成
+                      href: production-control/tasks/create-value-stream.md
+                    - name: 販売注文のリーン ペギング
+                      href: production-control/tasks/lean-pegging-sales-orders.md
+                    - name: リーン生産の外注作業セルの作成
+                      href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+                    - name: かんばん数量計算ポリシーのかんばんルールへの追加
+                      href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+                    - name: かんばん数量修正候補の計算
+                      href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+                    - name: プロセス ジョブのかんばんルールの変更
+                      href: production-control/tasks/change-kanban-rules-process-job.md
+                    - name: BOM 明細行イベントかんばんルールの作成
+                      href: production-control/tasks/create-bom-line-event-kanban-rule.md
+                    - name: 製造のための固定数量かんばんルールの作成
+                      href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+                    - name: かんばん明細行イベントを使用したかんばんルールの作成
+                      href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+                    - name: 最小の在庫イベントを使用したかんばんルールの作成
+                      href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+                    - name: 複数の活動のかんばんルールの作成
+                      href: production-control/tasks/create-kanban-rule-multiple-activities.md
+                    - name: 既存のかんばんルールを複製して新しいかんばんルールを作成
+                      href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+                    - name: 交換するかんばんルールの作成
+                      href: production-control/tasks/create-replacement-kanban-rule.md
+                    - name: 販売イベントかんばんルールの作成
+                      href: production-control/tasks/create-sales-event-kanban-rule.md
+                    - name: 引き取りかんばんルールの作成
+                      href: production-control/tasks/create-withdrawal-kanban-rule.md
+                    - name: かんばんプロセス ジョブの実行
+                      href: production-control/tasks/execute-kanban-process-jobs.md
+                    - name: スケジュール済みかんばん作業の移動
+                      href: production-control/tasks/move-scheduled-kanban-jobs.md
+                    - name: 作業セルで材料が利用可能な場合にプロセスかんばん作業を準備
+                      href: production-control/tasks/prepare-kanban-job-materials.md
+                    - name: 作業セルで材料が利用不可の場合にプロセスかんばん作業を準備
+                      href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+                    - name: かんばん作業をスケジュールから削除する
+                      href: production-control/tasks/remove-kanban-job-schedule.md
+                    - name: かんばん作業の状態を元に戻す
+                      href: production-control/tasks/revert-kanban-job-status.md
+                    - name: かんばん作業のスケジューリング
+                      href: production-control/tasks/schedule-kanban-jobs.md
+                    - name: かんばん作業と材料の転送
+                      href: production-control/tasks/transfer-materials-kanban-jobs.md
+                    - name: かんばん状態の更新
+                      href: production-control/tasks/update-kanban-status.md
+            - name: プロセス製造
+              items:
+                - name: 生産マスター データの管理
+                  items:
+                    - name: 部品表およびフォーミュラ
+                      href: production-control/bill-of-material-bom.md
+                    - name: フォーミュラとフォーミュラ バージョン
+                      href: production-control/formulas-versions.md
+                    - name: 運営リソース
+                      href: production-control/operations-resources.md
+                    - name: リソースの能力
+                      href: production-control/resource-capabilities.md
+                    - name: バッチ属性 (複数)
+                      href: production-control/batch-attributes.md
+                    - name: バッチ バランシング
+                      href: production-control/batch-balancing.md
+                    - name: CW 製品の処理
+                      href: warehousing/catch-weight-processing.md
+                    - name: フォーミュラのコピー
+                      href: production-control/tasks/copy-formula.md
+                    - name: 既存のフォーミュラ バージョンから連産品をコピー
+                      href: production-control/tasks/copy-co-products-existing-formula-version.md
+                    - name: 既存のフォーミュラをコピーしてフォーミュラを作成
+                      href: production-control/tasks/create-formula-copying-existing-formula.md
+                    - name: 製造実行の生産パラメーター
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: 生産の設定の要件
+                      href: production-control/production-set-up-requirements.md
+                - name: 生産工程のスケジューリング
+                  items:
+                    - name: 工程のスケジューリング
+                      href: production-control/operations-scheduling.md
+                    - name: 工程スケジューリング オプション
+                      href: production-control/operation-scheduling-options.md
+                    - name: ジョブのスケジューリング
+                      href: production-control/job-scheduling.md
+                - name: 生産ジョブの運営
+                  items:
+                    - name: 連結バッチ オーダー
+                      href: production-control/consolidated-batch-orders.md
+                    - name: 作成から開始までのバッチ オーダーのライフサイクル
+                      href: production-control/tasks/batch-order-lifecycle-start.md
+                    - name: プロセス製造向けの生産ジョブの順序付け
+                      href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+                    - name: 製造における材料の置き換え
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: 製造実行での登録
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: 生産フィードバック
+                      href: production-control/production-feedback.md
+                    - name: 時刻と出勤の登録
+                      href: production-control/time-attendance-registrations.md
+                - name: 製造における財務の管理
+                  items:
+                    - name: ジョブ バンドル内のジョブへの時間割り当て
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: 材料消費の計算
+                      href: production-control/consumption.md
+                    - name: 生産の転記
+                      href: cost-management/production-posting.md
+                - name: プロセス製造のトラブルシューティング
+                  href: production-control/troubleshoot-processmanufacturing.md
+        - name: 販売とマーケティング
+          items:
+            - name: 販売とマーケティングの概要
+              href: sales-marketing/overview-sales-marketing.md
+            - name: 販売注文
+              items:
+                - name: 注文納期日
+                  href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: 注文入力期限
+                  href: sales-marketing/order-entry-deadlines.md
+                - name: 代替配送先
+                  href: sales-marketing/delivery-alternatives.md
+                - name: 直納
+                  href: sales-marketing/direct-deliveries.md
+                - name: 配送スケジュール
+                  href: sales-marketing/delivery-schedules.md
+                - name: 配送スケジュールの作成
+                  href: sales-marketing/tasks/create-delivery-schedule.md
+                - name: 販売プロセスのシリアル番号
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: 同一バッチからの引当
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+                - name: 販売注文モバイル ワークスペース
+                  href: sales-marketing/sales-orders-mobile-workspace.md
+                - name: 直納として注文を出荷
+                  href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+                - name: 倉庫なしの販売注文の出荷
+                  href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: 雑費の自動配賦
+                  href: procurement/automatic-charges-allocation.md
+                - name: 販売注文からの発注書の作成
+                  href: sales-marketing/tasks/create-purchase-order-sales-order.md
+                - name: 販売注文の作成
+                  href: sales-marketing/tasks/create-sales-orders.md
+                - name: 注文保留の管理
+                  href: sales-marketing/tasks/manage-order-holds.md
+                - name: 販売注文の確認
+                  href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: 販売注文のトラブルシューティング
+                  href: sales-marketing/troubleshooting-sales.md
+            - name: 販売契約書
+              items:
+                - name: 販売契約書の概要
+                  href: sales-marketing/sales-agreements.md
+                - name: 販売契約書の入力
+                  href: sales-marketing/tasks/enter-sales-agreements.md
+                - name: 販売契約書の履行
+                  href: sales-marketing/tasks/fulfill-sales-agreements.md
+                - name: 顧客リベートの生成および処理
+                  href: sales-marketing/tasks/process-customer-rebates.md
+                - name: 支払のリベートの処理
+                  href: sales-marketing/tasks/process-rebates-payment.md
+                - name: 適用できる価格および割引の検索
+                  href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+            - name: 販売見積
+              items:
+                - name: 価格のシミュレーション
+                  href: sales-marketing/price-simulation.md
+                - name: 販売見積の一括作成
+                  href: sales-marketing/tasks/mass-sales-quotations.md
+                - name: 販売見積の作成および編集
+                  href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: 販売見積のトラブルシューティング
+                  href: sales-marketing/troubleshooting-salesquotation.md
+            - name: 返品
+              items:
+                - name: 販売返品
+                  href: warehousing/sales-returns.md
+            - name: コミッション
+              items:
+                - name: 販売コミッションの登録
+                  href: sales-marketing/tasks/register-sales-commissions.md
+                - name: 販売コミッション ルールの設定
+                  href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Dynamics 365 Supply Chain Management の顧客ポータル
+              items:
+                - name: 顧客ポータルの概要
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 顧客ポータルのインストール、設定、更新
+                  href: sales-marketing/customer-portal-setup.md
+                - name: 顧客ポータル ユーザーの作成と管理
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: 顧客ポータルのカスタマイズと使用
+                  href: sales-marketing/customer-portal-customize.md
+            - name: 取引割引
+              href: sales-marketing/trade-allowance.md
+            - name: 新しい売買契約の作成
+              href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: サービス管理
+          items:
+            - name: サービス管理の概要
+              href: service-management/service-management-home-page.md
+            - name: 顧客サービスの設定
+              items:
+                - name: サービス契約の設定
+                  items:
+                    - name: サービス契約の概要
+                      href: service-management/service-agreement-groups.md
+                    - name: サービス契約の作成
+                      href: service-management/create-service-agreements.md
+                    - name: サービス期間
+                      href: service-management/service-intervals.md
+                    - name: サービス期間の設定
+                      href: service-management/set-up-service-intervals.md
+                    - name: 時間枠
+                      href: service-management/time-windows.md
+                    - name: 時間枠の作成
+                      href: service-management/create-time-windows.md
+                    - name: サービス テンプレート グループの作成
+                      href: service-management/create-service-template-group.md
+                - name: サービス作業の設定
+                  items:
+                    - name: サービス作業の概要
+                      href: service-management/service-tasks.md
+                    - name: サービス作業関係の作成
+                      href: service-management/create-service-task-relations.md
+                - name: サービス対象の設定
+                  items:
+                    - name: サービス対象の概要
+                      href: service-management/service-objects.md
+                    - name: サービス対象の作成
+                      href: service-management/create-service-task-relations.md
+                    - name: サービス対象への在庫品目の添付
+                      href: service-management/attach-inventory-items-service-objects.md
+                    - name: サービス対象グループ
+                      href: service-management/service-object-groups.md
+                    - name: 顧客のサイトのオブジェクトを表すためのテンプレートの設定
+                      href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+                    - name: サービス対象の関係
+                      href: service-management/service-object-relations.md
+                    - name: サービス対象関係の作成
+                      href: service-management/create-service-object-relations.md
+                    - name: テンプレート BOM
+                      href: service-management/template-boms.md
+                    - name: テンプレート BOM の作成
+                      href: service-management/create-template-bom.md
+                    - name: サービス対象にテンプレートを関連付ける方法
+                      href: service-management/attach-templates-service-objects.md
+                - name: サービス注文の理由コードの定義
+                  items:
+                    - name: サービス注文の理由コード
+                      href: service-management/reason-codes-service-orders.md
+                    - name: サービス注文ステージ
+                      href: service-management/service-order-stages.md
+                    - name: サービス注文ステージの設定
+                      href: service-management/set-up-service-order-stages.md
+                    - name: 理由コードの作成
+                      href: service-management/create-reason-codes.md
+                - name: サービス契約およびサービス定期売買の設定
+                  items:
+                    - name: サービス レベル契約の概要
+                      href: service-management/service-level-agreements.md
+                    - name: 定期売買販売価格
+                      href: service-management/subscription-sales-prices.md
+                    - name: 定期売買グループ
+                      href: service-management/subscription-groups.md
+                    - name: 定期売買グループの設定
+                      href: service-management/set-up-subscription-groups.md
+                    - name: ステージ理由コードの使用
+                      href: service-management/use-stage-reason-codes.md
+                    - name: サービス契約とプロジェクトの統合
+                      href: service-management/integration-service-agreements-projects.md
+                - name: 修復管理の設定
+                  href: service-management/repair-management.md
+                - name: 顧客からの返品の設定
+                  items:
+                    - name: 顧客からの返品の概要
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: 廃棄コードの設定
+                      href: service-management/set-up-disposition-codes.md
+                    - name: 返品理由コードの設定
+                      href: service-management/set-up-return-reason-code.md
+                    - name: 返品品目の廃棄方法の指定
+                      href: service-management/specify-how-to-dispose-of-returned-items.md
+            - name: 顧客サービスの処理
+              items:
+                - name: 顧客サービスの処理の概要
+                  href: service-management/working-with-customer-service.md
+                - name: サービス契約の履行
+                  items:
+                    - name: サービス契約の履行の概要
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: 契約の作成および締結
+                      items:
+                        - name: サービス契約の作成および締結の概要
+                          href: service-management/service-agreements.md
+                        - name: サービス契約の作成
+                          href: service-management/create-service-agreements.md
+                        - name: サービスの定期売買
+                          href: service-management/service-subscriptions.md
+                        - name: サービス テンプレート
+                          href: service-management/service-template.md
+                        - name: サービス テンプレート行のコピー
+                          href: service-management/copy-service-template-lines.md
+                    - name: サービス注文ステージの変更
+                      href: service-management/change-service-order-stage.md
+                    - name: 契約の更新および評価
+                      items:
+                        - name: 対象関係でのテンプレート BOM の管理
+                          href: service-management/manage-template-boms-on-object-relations.md
+                        - name: サービス BOM の削除
+                          href: service-management/delete-service-bom.md
+                        - name: 指標化された販売価格
+                          href: service-management/indexed-sales-prices.md
+                        - name: 定期売買手数料の日数の引き下げ
+                          href: service-management/reduce-the-days-on-subscription-fees.md
+                        - name: 下方修正日数の例
+                          href: service-management/reduction-days-example.md
+                        - name: 定期売買販売価格の更新および指数化
+                          href: service-management/update-and-index-subscription-sales-prices.md
+                - name: 顧客の照会の処理
+                  items:
+                    - name: サービス契約の履行の概要
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: サービス注文の時刻記録の開始および停止
+                      href: service-management/start-and-stop-time-recording-on-a-service-order.md
+                    - name: サービス注文の開始時刻と期間の表示
+                      href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+                    - name: ステージ理由コードの表示
+                      href: service-management/view-stage-reason-codes.md
+                    - name: サービス レベル契約に準拠しているかどうかの表示
+                      href: service-management/view-compliance-with-service-level-agreements.md
+                - name: 顧客返品の承認
+                  items:
+                    - name: 廃棄コードおよび返品理由コード
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: 返品原価価格と返品のロット ID
+                      href: service-management/return-cost-price-and-return-lot-id.md
+                    - name: 返品注文のキャンセル
+                      href: service-management/cancel-return-order.md
+                    - name: 品目の交換注文の作成
+                      href: service-management/create-item-replacement-order.md
+                    - name: 返品注文の削除
+                      href: service-management/delete-return-order.md
+                    - name: 返品品目を検査に渡す
+                      href: service-management/pass-returned-items-on-to-inspection.md
+                    - name: 返品された製品の着荷仕訳を転記
+                      href: service-management/post-arrival-journal-for-returned-products.md
+                    - name: 返品品目の分納の受取
+                      href: service-management/receive-partial-deliveries-returned-items.md
+                    - name: 返品品目の受取
+                      href: service-management/receiving-returned-items.md
+                    - name: 返品品目の受取の登録
+                      href: service-management/register-the-receipt-of-returned-items.md
+                    - name: 検査による返却品目の受入
+                      href: service-management/take-returned-items-through-inspection.md
+                    - name: 返品による梱包明細票の更新
+                      href: service-management/packing-slip-updates-returns.md
+                    - name: 返品による請求書更新の実行
+                      href: service-management/perform-invoice-updates-for-returns.md
+                - name: サービスの提供
+                  items:
+                    - name: サービス注文の計画および割り当て
+                      items:
+                        - name: サービス注文
+                          href: service-management/service-orders.md
+                        - name: サービス注文の自動作成
+                          href: service-management/auto-create-service-orders.md
+                        - name: サービスのステータスと進捗状況フィールドの相互作用
+                          href: service-management/service-status-and-progress-field-interaction.md
+                        - name: サービス注文の自動作成
+                          href: service-management/create-service-orders-automatically.md
+                        - name: サービス注文の在庫品目要求の作成
+                          href: service-management/create-item-requirements-service-orders.md
+                        - name: サービス注文の在庫品目要求
+                          href: service-management/service-order-item-requirements.md
+                        - name: 定期売買ワークフローの概要
+                          href: service-management/subscription-workflow-overview.md
+                        - name: サービス注文の組み合わせ
+                          href: service-management/combine-service-orders.md
+                        - name: 定期売買グループからのサービスの定期売買の作成
+                          href: service-management/create-service-subscriptions-from-subscription-group.md
+                        - name: サービス合意に関連付けられたプロジェクト
+                          href: service-management/project-attached-to-service-agreement.md
+                        - name: プロジェクトからサービスの定期売買を作成する方法
+                          href: service-management/create-service-subscriptions-from-project.md
+                    - name: サービス注文の活動の出荷
+                      items:
+                        - name: サービス活動
+                          href: service-management/service-activities.md
+                        - name: 派遣表
+                          href: service-management/dispatch-board.md
+                        - name: サービス活動の種類の設定
+                          href: service-management/set-up-service-activity-types.md
+                        - name: 優先技術者の設定
+                          href: service-management/set-up-preferred-technician.md
+                        - name: 出荷チームを設定します
+                          href: service-management/set-up-dispatch-teams.md
+                        - name: サービス注文の優先順位付け
+                          href: service-management/prioritize-service-orders.md
+                        - name: サービス注文のステータスを表示
+                          href: service-management/view-the-status-of-service-orders.md
+                        - name: サービス活動の監視
+                          href: service-management/monitor-service-activities.md
+                        - name: 活動の再割り当て
+                          href: service-management/reassign-activities.md
+                        - name: 派遣表の変更の取消
+                          href: service-management/reverse-changes-in-a-dispatch-board.md
+                        - name: 実出荷のサービス注文の表示
+                          href: service-management/view-undispatched-service-orders.md
+                        - name: サービス BOM の変更
+                          href: service-management/modify-service-bom.md
+                    - name: サービスの提供
+                      items:
+                        - name: 定期売買トランザクションの貸方記入
+                          href: service-management/credit-subscription-transactions.md
+                        - name: 定期売買手数料トランザクションの作成
+                          href: service-management/create-subscription-fee-transactions.md
+                        - name: 定期売買の発生
+                          href: service-management/accruing-subscriptions.md
+                        - name: サービス注文明細行の移動
+                          href: service-management/move-service-order-lines.md
+                        - name: サービス注文のキャンセル
+                          href: service-management/cancel-service-orders.md
+                        - name: サービス注文の手動作成
+                          href: service-management/create-service-orders-manually.md
+                        - name: 未収の定期売買収益
+                          href: service-management/accrue-subscription-revenue.md
+                        - name: サービス注文の削除
+                          href: service-management/delete-service-orders.md
+                        - name: 定期売買トランザクションの請求
+                          href: service-management/invoice-subscription-transactions.md
+        - name: 輸送管理
+          items:
+            - name: 輸送管理の概要
+              href: transportation/transportation-management-overview.md
+            - name: 輸送管理エンジン
+              href: transportation/transportation-management-engines.md
+            - name: 新しい輸送管理エンジンの作成
+              href: transportation/create-new-transportation-management-engine.md
+            - name: 付帯サービス請求金額としての燃料インデックスの配送業者への関連付け
+              href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: 元の USMCA 証明書
+              href: transportation/usmca-certification-of-origin.md
+            - name: 船荷証券の作成
+              href: transportation/create-bill-of-lading.md
+            - name: 貨物輸送ルートの計画
+              href: transportation/plan-freight-transportation-routes-multiple-stops.md
+            - name: ハブ連結を使用した積荷計画
+              items:
+                - name: ハブ連結を使用した積荷計画の概要
+                  href: transportation/plan-loads-hub-consolidation.md
+                - name: 積荷計画ワークベンチを使用した積荷および出荷の計画
+                  href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            - name: 積荷のコンテナーの重量と容積を含める
+              href: transportation/include-container-weight-volume-on-load.md
+            - name: 運賃の手動調整
+              href: transportation/tasks/reconcile-freight-manually.md
+            - name: 運賃の調整
+              href: transportation/reconcile-freight-transportation-management.md
+            - name: ドライバーの予定のチェックインおよびチェックアウトの登録
+              href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: 割引
+              href: transportation/transportation-management-discount.md
+            - name: 雑費
+              href: transportation/transportation-management-misc-charge.md
+            - name: モードおよびメソッド
+              href: transportation/transportation-management-modes-methods.md
+            - name: 番号順序
+              href: transportation/transportation-management-number-sequence.md
+            - name: 状態
+              href: transportation/transportation-management-status.md
+            - name: ゾーン マスター
+              href: transportation/transportation-management-zone-master.md
+            - name: 配送業者グループ
+              href: transportation/tasks/carrier-groups.md
+            - name: 積荷構築ワークベンチ
+              href: transportation/tasks/load-building-workbench.md
+            - name: 積荷テンプレート
+              href: transportation/tasks/load-template.md
+            - name: 評価プロファイル
+              href: transportation/tasks/setup-a-rating-profile.md
+            - name: 配送業者の燃料インデックスの設定
+              href: transportation/tasks/set-up-carrier-fuel-index.md
+            - name: 輸送業者の設定
+              href: transportation/tasks/set-up-transportation-tender.md
+            - name: 付帯サービス割り当ての設定
+              href: transportation/tasks/set-up-accessorial-assignments.md
+            - name: 積荷の予定の設定
+              href: transportation/tasks/set-up-appointment-load.md
+            - name: 自動運賃調整の設定
+              href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+            - name: ハブ付帯サービス請求金額および付帯サービス マスターの設定
+              href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+            - name: レート マスターの設定
+              href: transportation/tasks/set-up-rate-masters.md
+            - name: 出荷配送業者の設定
+              href: transportation/tasks/set-up-shipping-carriers.md
+            - name: 品目の配送制約の設定
+              href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: 倉庫管理
+          items:
+            - name: 倉庫管理の概要
+              href: warehousing/warehouse-management-overview.md
+            - name: 入庫倉庫操作
+              items:
+                - name: 発注書に対する入庫積荷の倉庫処理
+                  href: warehousing/inbound-load-handling.md
+                - name: 品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: 品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: 受入倉庫から店舗までのクロスドッキング製品
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: 発注書のプット アウェイ場所のディレクティブの設定
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: 発注書の作業テンプレートの設定
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: 場所の製品分析コードの混在
+                  href: warehousing/location-product-dimension-mixing.md
+                - name: プットアウェイ クラスター
+                  href: warehousing/putaway-clusters.md
+                - name: 品質チェック
+                  href: warehousing/quality-check.md
+                - name: 入庫倉庫操作のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-inbound.md
+            - name: 出庫倉庫操作
+              items:
+                - name: 倉庫管理での引当
+                  items:
+                    - name: 柔軟な倉庫レベル分析コードの引当ポリシー
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: 倉庫管理での引当のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-reservations.md
+                - name: 部分的リリースおよび部分的出荷
+                  items:
+                    - name: 輸送積荷の部分的出荷
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: 部分的に引当済の移動オーダーのバッチ リリース
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: 部分的なリリースと部分的な出荷に関するトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
+                - name: ピッキングと梱包
+                  items:
+                    - name: クラスター ピッキングの設定
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: クラスター位置フル
+                      href: warehousing/cluster-position-full.md
+                    - name: システム主導のクラスター ピッキング
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: コンテナー詰めの設定
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: バッチおよびライセンス プレートの確認
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: ライセンス プレート ラベル印刷の有効化
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: 倉庫アプリからの移動オーダーの作成
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: ピース ピッキング確認
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: 梱包材および費用
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: 手動の梱包の設定 (2016 年 2 月および 5 月のみ)
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: 品目再配賦の未処理ピッキングの設定
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: 例外処理のために倉庫作業をキャンセル
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: システム主導の作業の優先順位
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: ピッキング行のグループ化
+                      href: warehousing/pick-line-grouping.md
+                    - name: 倉庫のスロッティング
+                      href: warehousing/warehouse-slotting.md
+                    - name: 場所のディレクティブ在庫ピッキング エイジング
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: 出庫の並べ替え
+                      href: warehousing/outbound-sorting.md
+                    - name: 壁にプット - 店舗にプット
+                      href: warehousing/put-to-wall-put-to-store.md
+                    - name: 出庫ワークロードの視覚化
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: ピッキングと梱包のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
+                - name: 補充
+                  items:
+                    - name: 補充の概要
+                      href: warehousing/replenishment.md
+                    - name: 即時補充
+                      href: warehousing/immediate-replenishment.md
+                    - name: 引き取りかんばんを使用した補充
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: 最小/最大の補充プロセスの設定
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: ゾーンしきい値の補充
+                      href: warehousing/zone-threshold-replenishment.md
+                    - name: 補充戦略
+                      href: warehousing/replenishment-strategies.md
+                    - name: 場所の能力を超える補充
+                      href: warehousing/replenishment-over-location-capacity.md
+                    - name: 倉庫の補充のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
+                - name: 積荷構築と出荷
+                  items:
+                    - name: 確認および転送
+                      href: warehousing/confirm-and-transfer.md
+                    - name: バッチ ジョブからの出荷の確認
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
+                    - name: ウェーブ中の高度な積荷構築
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: 倉庫ルールにリリース
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: ウェーブ テンプレートのグループ化
+                      href: warehousing/wave-template-grouping.md
+                    - name: ウェーブ ラベルの再印刷と無効化
+                      href: warehousing/reprint-and-void-wave-labels.md
+                    - name: 積荷構築と出荷のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
+                - name: 出荷連結ポリシー
+                  items:
+                    - name: 出荷連結ポリシー
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: コンフィギュレーション出荷連結ポリシー
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: シナリオ 1 - 販売注文の自動リリースを使用して、出荷が倉庫にリリースされた場合に出荷を連結する
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: シナリオ 2 - 出荷連結ポリシーが、倉庫からリリース ページで上書きされている場合の出荷を連結する
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: シナリオ 3 - 積荷計画ワークベンチから倉庫へのリリースを使用して出荷を連結する
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: シナリオ 4 - 出荷連結ワークベンチを使用して出荷を連結する
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: シナリオ 5 - 出荷連結ページを使用して出荷を手動で連結する
+                      href: warehousing/consolidate-shipments-manual-form.md
+                - name: 出庫倉庫操作のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-outbound.md
+            - name: 倉庫操作全体
+              items:
+                - name: 倉庫作業ポリシー
+                  items:
+                    - name: 作業ポリシー
+                      href: warehousing/warehouse-work-policies.md
+                    - name: 倉庫管理における作業が関連付けられている在庫の移動
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: 作業クラスの作成
+                      href: warehousing/tasks/create-work-class.md
+                    - name: 倉庫作業者の管理
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: 倉庫作業の繰延処理
+                      href: warehousing/deferred-put.md
+                - name: クロスドッキング
+                  items:
+                    - name: 製造オーダーから出荷ドックへのクロスドッキング
+                      href: production-control/cross-docking-opportunities.md
+                    - name: クロスドッキングのための自動リリース出荷
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: 計画済クロスドッキング
+                      href: warehousing/planned-cross-docking.md
+                - name: 在庫棚卸
+                  items:
+                    - name: 在庫棚卸の理由コード
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: 在庫のブロック
+                      href: inventory/inventory-blocking.md
+                    - name: 循環棚卸
+                      href: warehousing/cycle-counting.md
+                    - name: 循環棚卸の定義
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: 部分的な場所の循環棚卸
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: 部分的な場所の循環棚卸プロセスの定義
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: 倉庫管理の手持在庫エントリのクリーンアップ ジョブ
+                      href: warehousing/onhand-cleanup.md
+                    - name: 在庫仕訳帳
+                      href: inventory/inventory-journals.md
+                    - name: 在庫場所
+                      href: inventory/inventory-locations.md
+                    - name: 在庫状態
+                      href: inventory/inventory-statuses.md
+                    - name: 在庫タグ棚卸
+                      href: inventory/inventory-tag-counting.md
+                - name: 倉庫作業
+                  items:
+                    - name: 作業ラインの詳細
+                      href: warehousing/work-line-details.md
+                    - name: 場所ライセンス プレートの配置
+                      href: warehousing/location-license-plate-positioning.md
+                    - name: 作業での作業プールの変更
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: 品目の連結 - 場所の使用率
+                      href: warehousing/item-consolidation-location-utilization.md
+                    - name: 倉庫作業のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: 作業の分割
+                      href: warehousing/work-split.md
+            - name: 倉庫の設定
+              items:
+                - name: 倉庫のコンフィギュレーション
+                  items:
+                    - name: 倉庫のコンフィギュレーションの概要
+                      href: warehousing/warehouse-configuration.md
+                    - name: 倉庫コンフィギュレーション テンプレートを使用した倉庫の設定
+                      href: inventory/warehouse-template.md
+                    - name: 作業テンプレートと場所ディレクティブを使用した管理作業
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: 場所ディレクティブの作業
+                      href: warehousing/create-location-directive.md
+                    - name: 場所別在庫限度
+                      href: warehousing/location-stocking-limits.md
+                    - name: ウェーブ ステップ コード
+                      href: warehousing/wave-step-codes.md
+                    - name: ウェーブ処理のコンフィギュレーション
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: ウェーブ ラベル印刷の設定と使用
+                      href: warehousing/configure-wave-label-printing.md
+                    - name: 出荷の自動更新
+                      href: warehousing/auto-update-shipment.md
+                    - name: 場所プロファイルの作成
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: 倉庫管理システムに対応した倉庫の場所のコンフィギュレーション
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: 倉庫の場所の状態
+                      href: warehousing/warehouse-location-status.md
+                    - name: 追加の場所ゾーン
+                      href: warehousing/additional-location-zones.md
+                    - name: 貨物使用率のスケジュール設定
+                      href: warehousing/schedule-load-utilization.md
+                    - name: ワークロード能力のスケジューリング
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: 廃棄コードの設定
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: 測定単位と在庫ポリシー
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: 倉庫 Power BI コンテンツ
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: オープン作業一覧のシステム グループ化
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: モバイル バーコードのサポート
+                      href: warehousing/mobile-barcode-support.md
+                    - name: 移動オーダー用の倉庫の設定
+                      href: warehousing/transfer-orders-warehouse.md
+                    - name: 倉庫コンフィギュレーションのトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-configuration.md
+                - name: 倉庫アプリのインストールとコンフィギュレーション
+                  items:
+                    - name: 倉庫アプリのインストールと接続
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: 倉庫アプリでカメラを使用するバーコード スキャン
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: 倉庫アプリのフィールド名のコンフィギュレーション
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: 倉庫作業用のモバイル デバイスの設定
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: 倉庫アプリのイベント処理
+                      href: warehousing/warehouse-app-events.md
+                    - name: 倉庫アプリで受信するライセンス プレート
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: 入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: 集荷明細行の概要を提供するためのモバイル デバイスのメニュー項目の設定
+                      href: warehousing/pick-line-overview.md
+                    - name: ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: モバイル デバイスでの混合ライセンス プレートの受取
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: モバイル デバイスで倉庫内の古いバッチの表示を構成
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: モバイル デバイスで最も古いバッチをピッキング
+                      href: warehousing/pick-oldest-batch.md
+                    - name: プロセス ガイドのフレームワーク
+                      href: warehousing/process-guide-framework.md
+                    - name: 在庫アプリの接続の問題のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: アップグレードおよび移行
+                  items:
+                    - name: 倉庫管理プロセスを Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードします
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: 高度な倉庫管理へのアップグレードおよび移行のトラブルシューティング
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: 倉庫の設定のトラブルシューティング
+                  href: warehousing/troubleshoot-warehouse-setup.md
+        - name: Supply Chain Management の開発
+          items:
+            - name: ガント コントロール開発ガイド
+              href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 新しい輸送管理エンジンの作成
+              href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 手持在庫データ エンティティの拡張
+              href: inventory/extend-on-hand-entities.md
+    - name: Finance and Operations アプリの開発と管理
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
