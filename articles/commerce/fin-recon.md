@@ -1,0 +1,64 @@
+---
+title: 小売店舗での財務調整
+description: このトピックでは、Microsoft Dynamics 365 Commerce の POS 用小売店舗での財務調整について説明します。
+author: anpurush
+manager: AnnBe
+ms.date: 06/09/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2019-05-21
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 5d0520f35391f76b52fd8a333033b0d7ba4f7fe1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413642"
+---
+# <a name="financial-reconciliation-in-retail-stores"></a><span data-ttu-id="d1151-103">小売店舗での財務調整</span><span class="sxs-lookup"><span data-stu-id="d1151-103">Financial reconciliation in retail stores</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="d1151-104">Microsoft Dynamics 365 Commerce バージョン 10.0.10 以前では、販売時点管理 (POS) クライアントが販売店の月末プロセスに対して提供する機能により、店員と店舗の管理者は日常業務を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-104">In Microsoft Dynamics 365 Commerce version 10.0.10 and earlier, the functionality that the point of sale (POS) client provides for end-of-day processes in retail stores lets store clerks and store managers perform end-of-day operations.</span></span> <span data-ttu-id="d1151-105">たとえば、支払/入金申告、ブラインド クローズのシフト、シフト トランザクションの調整、およびシフトの決算を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-105">For example, they can do tender declarations, blind-close shifts, reconcile shift transactions, and close shifts.</span></span> <span data-ttu-id="d1151-106">ただし、POS にはシフトの財務情報を最終的に転記するために使用できる機能はないので、Commerce 本社で財務を転記するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-106">However, there is no capability in POS to finalize the financial information for shifts, so that it can be used to post the financials in Commerce headquarters.</span></span> <span data-ttu-id="d1151-107">通常、店舗管理者はこのタスクを完了する責任があります。</span><span class="sxs-lookup"><span data-stu-id="d1151-107">Typically, store managers are responsible for completing this task.</span></span> <span data-ttu-id="d1151-108">シフトでサイン オフするには、情報を確認して必要に応じて修正を行い、そのシフトの合計を確定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1151-108">Before they can sign off on a shift, they must review the information, make any corrections that are required, and finalize the totals for that shift.</span></span> <span data-ttu-id="d1151-109">最終的な合計は、Commerce 本社の財務モジュールに転記する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1151-109">The finalized totals should then be posted in financial modules in Commerce headquarters.</span></span>
+
+<span data-ttu-id="d1151-110">さらに、Commerce バージョン 10.0.10 では、店舗管理者が Commerce 本社の明細行を確認し、調整できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-110">Additionally, in Commerce version 10.0.10 and earlier, store managers can review and make some adjustments to statement lines in Commerce headquarters.</span></span> <span data-ttu-id="d1151-111">ただし、機能は制限されており、店舗の管理者が Commerce 本社のクライアントにアクセスすることはほとんどありません。</span><span class="sxs-lookup"><span data-stu-id="d1151-111">However, the capability is limited, and store managers rarely have access to the Commerce headquarters client.</span></span> <span data-ttu-id="d1151-112">さらに、財務上の明細書レビューおよび調整は、明細書が Commerce 本社で作成されている場合にのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-112">Moreover, financial retail statement review and adjustment can be done only when the statements are created in Commerce headquarters.</span></span> <span data-ttu-id="d1151-113">ただし、プロセスは通常、毎晩実行されます。</span><span class="sxs-lookup"><span data-stu-id="d1151-113">However, that process is typically a nightly process.</span></span> <span data-ttu-id="d1151-114">したがって、店舗管理者は、財務小売明細書が Commerce 本社で作成されるとき、シフトのサイン オフが終了するまで待機する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1151-114">Therefore, store managers must wait for the shift sign-off when financial retail statements are created in Commerce headquarters.</span></span>
+
+<span data-ttu-id="d1151-115">Commerce バージョン 10.0.11 以降において、店舗管理者は POS クライアント自体でのシフト確認、調整、および完了を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-115">In Commerce version 10.0.11 and later, store managers can review, adjust, and finalize their shifts in the POS client itself.</span></span> <span data-ttu-id="d1151-116">その後、そのデータを使用して、Commerce 本社で財務小売明細書を作成および転記することができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-116">That data is then used to create and post financial retail statements in Commerce headquarters.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d1151-117">小売店舗での財務調整に関連する機能は、トリクル フィードベース注文の作成が有効になっている場合にのみ機能します。</span><span class="sxs-lookup"><span data-stu-id="d1151-117">The functionality that is related to financial reconciliation in retail stores works only if trickle feed–based order creation is turned on.</span></span> <span data-ttu-id="d1151-118">詳細については、[小売店舗トランザクション用トリクル フィードベース注文の作成](trickle-feed.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d1151-118">For more information, see [Trickle feed-based order creation for retail store transactions](trickle-feed.md).</span></span>
+
+## <a name="set-up-financial-reconciliation"></a><span data-ttu-id="d1151-119">財務調整の設定</span><span class="sxs-lookup"><span data-stu-id="d1151-119">Set up financial reconciliation</span></span>
+
+<span data-ttu-id="d1151-120">財務調整機能を使用するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="d1151-120">Follow these steps to use the financial reconciliation functionality.</span></span>
+
+1. <span data-ttu-id="d1151-121">**機能管理** ワークスペースで、**小売明細書 - トリクル フィード** 機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="d1151-121">In the **Feature management** workspace, turn on the **Retail statements - Trickle feed** feature.</span></span>
+1. <span data-ttu-id="d1151-122">適切な店舗の POS 機能プロファイルで、**店舗の財務調整を有効にする** オプションを **はい** に設定します。</span><span class="sxs-lookup"><span data-stu-id="d1151-122">In the POS functionality profile for the appropriate store, set the **Enable financial reconciliation in store** option to **Yes**.</span></span>
+
+## <a name="more-information-about-financial-reconciliation"></a><span data-ttu-id="d1151-123">財務調整についての詳細情報</span><span class="sxs-lookup"><span data-stu-id="d1151-123">More information about financial reconciliation</span></span>
+
+<span data-ttu-id="d1151-124">財務調整機能を有効にすると、Commerce 本社の **小売店舗** ページの **明細書/決算** クイックタブで定義されているパラメータの一部がチャンネル データベースに同期されます。</span><span class="sxs-lookup"><span data-stu-id="d1151-124">When the financial reconciliation functionality is turned on, some of the parameters that are defined on the **Statement/closing** FastTab of the **Retail stores** page in Commerce headquarters are synced to the channel database.</span></span> <span data-ttu-id="d1151-125">小売明細書で使用される計算基準と金額しきい値の同じセットが適用されます。</span><span class="sxs-lookup"><span data-stu-id="d1151-125">The same set of calculation criteria and amount thresholds that is used for retail statements is enforced.</span></span>
+
+<span data-ttu-id="d1151-126">**シフトのクローズ** 操作が呼び出されると、システムはそのシステム計算額と申告額が一致することを検証します。</span><span class="sxs-lookup"><span data-stu-id="d1151-126">When the **Close shift** operation is invoked, the system validates that the system-computed amounts and the declared amounts match.</span></span> <span data-ttu-id="d1151-127">違いが発見され、その違いが定義されたしきい値を超えた場合、ユーザーは必要な調整を行うよう促され、可能となります。</span><span class="sxs-lookup"><span data-stu-id="d1151-127">If they differ, and the difference exceeds defined thresholds, the user is prompted and can make the required adjustments.</span></span>
+
+<span data-ttu-id="d1151-128">各支払/入金に対して調整を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-128">Adjustments can be made for each tender.</span></span> <span data-ttu-id="d1151-129">支払/入金を選択すると、ユーザーは異なるトランザクション タイプの合計を表示したり、特定のトランザクション タイプの合計を編集したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-129">When a tender is selected, the user can view the totals for different transaction types and edit the totals for a specific transaction type.</span></span> <span data-ttu-id="d1151-130">編集中、システムは元の計算金額と、そのトランザクション タイプの無効金額を表示します。</span><span class="sxs-lookup"><span data-stu-id="d1151-130">During editing, the system shows the original computed amount and the overridden amount for that transaction type.</span></span> <span data-ttu-id="d1151-131">ユーザーは、編集プロセスの一部としてメモをキャプチャすることもできます。</span><span class="sxs-lookup"><span data-stu-id="d1151-131">The user can also capture notes as a part of the editing process.</span></span> <span data-ttu-id="d1151-132">メモは監査目的で使用できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-132">Notes can be used for auditing purposes.</span></span>
+
+<span data-ttu-id="d1151-133">ユーザーは、検証プロンプトとメッセージを無視して、シフトを閉じることができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-133">Users can ignore the validation prompts and messages, and can proceed to close the shift.</span></span> <span data-ttu-id="d1151-134">ただし、ユーザーが検証プロンプトを無視した場合は、同じ問題が発生し、シフトが Commerce 本社の財務諸表を転記する際に修正する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1151-134">However, if a user ignores the validation prompts, the same issues will arise and will have to be fixed when the shift posts financial statements in Commerce headquarters.</span></span>
+
+<span data-ttu-id="d1151-135">また、POS の **シフトのクローズ** 操作は、オフライン データベース内のすべてのトランザクションがチャンネル データベースに同期されていることを検証します。</span><span class="sxs-lookup"><span data-stu-id="d1151-135">The **Close shift** operation in POS also validates that all transactions in the offline database are synced to the channel database.</span></span> <span data-ttu-id="d1151-136">トランザクションが同期されていない場合、この状況が発生するとシステム金額が誤って計算される可能性があるため、ユーザーは警告メッセージを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="d1151-136">If any transactions aren't synced, the user receives a warning message, because this situation can cause the system amounts to be incorrectly computed.</span></span> <span data-ttu-id="d1151-137">この場合、ユーザーは **シフトのクローズ** 操作を終了して、オフライン トランザクションをチャンネル データベースに同期することができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-137">In this situation, the user can end the **Close shift** operation and try to sync the offline transactions to the channel database.</span></span> <span data-ttu-id="d1151-138">別の方法として、ユーザーは同期されていないトランザクションを考慮してシステム計算額を手動で調整し、正しい財務番号のセットを確定して転記されるように行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-138">Alternatively, the user can manually adjust the system-computed amounts to account for the transactions that aren't synced, so that the correct set of financial numbers is finalized and posted.</span></span> 
+
+<span data-ttu-id="d1151-139">トリクル フィードのステートメント転記を使用する場合、トランザクションの転記は財務の転記から切り離されるので、不足しているオフライン トランザクションのシステム計算額を調整することができます。</span><span class="sxs-lookup"><span data-stu-id="d1151-139">When trickle feed statement posting is used, so that the posting of transactions is separated from the posting of financials, you can choose to adjust the system-computed amounts for missing offline transactions.</span></span> <span data-ttu-id="d1151-140">このようにして、欠落しているトランザクションに関係なく、財務が常に正確に計算され転記されていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-140">In this way, you ensure that financials are always accounted and posted correctly, regardless of missing transactions.</span></span> <span data-ttu-id="d1151-141">オフライン トランザクションは、チャンネル データベースと Commerce 本社に同期した後、財務ポスティングとは別に転記できます。</span><span class="sxs-lookup"><span data-stu-id="d1151-141">Offline transactions can be synced to the channel database and Commerce headquarters, and then posted later, separately from the financial postings.</span></span>
+
+<span data-ttu-id="d1151-142">シフトの財務調整の詳細は、P- ジョブを使用して Commerce 本社に同期されます。</span><span class="sxs-lookup"><span data-stu-id="d1151-142">Details of the financial reconciliation for a shift are synced to Commerce headquarters by using the P-job.</span></span>
+
+<span data-ttu-id="d1151-143">Commerce 本社の財務小売明細書では、合計を計算して明細行の詳細を表示することはできません。</span><span class="sxs-lookup"><span data-stu-id="d1151-143">Financial retail statements in Commerce headquarters don't compute totals to show the details on the statement lines.</span></span> <span data-ttu-id="d1151-144">代わりに、POS クライアントの確定額を使用して、財務小売明細書を作成および転記します。</span><span class="sxs-lookup"><span data-stu-id="d1151-144">Instead, the finalized amounts in the POS client are used to create and post financial retail statements.</span></span>
