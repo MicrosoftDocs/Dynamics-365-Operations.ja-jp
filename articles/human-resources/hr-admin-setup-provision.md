@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e37777b8000fb3afbc72ff9c61347085816e36c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431225"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527798"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングのプロセスについて説明します。 この記事では、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。
 
@@ -43,7 +45,7 @@ Human Resources 環境を管理するために LCS を使用するには、最�
 
 4. **Dynamics 365 Human Resources** 方法を選択します。
 
-5. **作成**を選択します。
+5. **作成** を選択します。
 
 Human Resources を使い始める方法については、新しいプロジェクトで作成した **Human Resources** の方法を参照してくだい。 プロジェクトの作成が終了したら、Human Resources 環境をプロビジョニングするために次の手順を完了してください。
 
@@ -51,7 +53,7 @@ Human Resources を使い始める方法については、新しいプロジェ�
 
 LCS プロジェクトを作成した後は、環境に Human Resources をプロビジョニングすることができます。
 
-1. LCS プロジェクトでは、**人事管理アプリの管理**タイルを選択します。
+1. LCS プロジェクトでは、**人事管理アプリの管理** タイルを選択します。
 
 2. これ環境が Human Resources のサンドボックス、または実稼働インスタンスであるかどうかを示します。 初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。
    
@@ -59,7 +61,7 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
     > Human Resources インスタンス タイプは、一度設定した後で変更することはできません。 続行する前に、正しいインスタンス タイプが選択されていることを確認します。</br></br>
     > Human Resources のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。
     
-3. Human Resources テスト ドライブ エクスペリエンスで使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む**オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
+3. Human Resources テスト ドライブ エクスペリエンスで使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
 
 4. Human Resources は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、この記事の「Power Apps 環境の選択」セクションを参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。
 
@@ -67,7 +69,7 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
 
 6. 使用条件に同意、および展開を開始するために **はい** を選択します。
 
-   新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。 ただし、配置状態が**配置済み**に更新されるまでは、環境の使用を開始できません。 このプロセスには通常、数分間かかります。 プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。
+   新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。 ただし、配置状態が **配置済み** に更新されるまでは、環境の使用を開始できません。 このプロセスには通常、数分間かかります。 プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。
 
 7. 新しい環境を使用するために **Human Resources にログオンする** を選択します。
 
@@ -86,7 +88,7 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
 
 2. 1 つの Human Resources 環境は、1 つの Power Apps 環境にマップされます。
 
-3. Power Apps 環境には、対応する Power Apps、Power Automate、および Common Data Service アプリケーションと共に、Human Resources が含まれています。 Power Apps 環境を削除すると、その中のアプリも削除されます。 Human Resources 環境をプロビジョニングする場合、**試用**または**実稼働**環境のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
+3. Power Apps 環境には、対応する Power Apps、Power Automate、および Common Data Service アプリケーションと共に、Human Resources が含まれています。 Power Apps 環境を削除すると、その中のアプリも削除されます。 Human Resources 環境をプロビジョニングする場合、**試用** または **実稼働** 環境のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
 
 4. サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。 Power Apps 環境にマッピングされている Human Resources 環境を後から変更することは容易ではないため、実装へのさまざまな影響について考慮することを推奨します。
 

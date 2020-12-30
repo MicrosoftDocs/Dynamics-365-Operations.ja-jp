@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646042"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517211"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -79,13 +79,13 @@ Azure Front Door Service の設定方法の詳細については、[クイック
 Azure Front Door Service のバック エンド プールを構成するには、次の手順を実行してください。
 
 1. **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** を、空のバック エンド ホスト ヘッダーを持つカスタム ホストとして、バック エンド プールに追加します。
-1. **負荷分散**では、既定値のままにします。
+1. **負荷分散** では、既定値のままにします。
 
-次の図は、バック エンド ホスト名が入力された Azure Front Door Service の**バックエンドの追加**ダイアログ ボックスを示します。
+次の図は、バック エンド ホスト名が入力された Azure Front Door Service の **バックエンドの追加** ダイアログ ボックスを示します。
 
 ![バックエンド プール ダイアログ ボックスを追加する](./media/CDN_BackendPool.png)
 
-次の図は、既定の負荷分散値が入力された Azure Front Door Service の**バックエンド プール の追加**ダイアログ ボックスを示します。
+次の図は、既定の負荷分散値が入力された Azure Front Door Service の **バックエンド プール の追加** ダイアログ ボックスを示します。
 
 ![バックエンド プールのダイアログ ボックスを継続して追加する](./media/CDN_BackendPool_2.png)
 
@@ -94,47 +94,47 @@ Azure Front Door Service のバック エンド プールを構成するには�
 Azure Front Door Service でルート指定ルールを設定するには、次の手順を実行します。
 
 1. ルート指定ルールを追加します。
-1. **名前**フィールドに、**既定**と入力します。
+1. **名前** フィールドに、**既定** と入力します。
 1. **承認済プロトコル** フィールドで、**HTTP と HTTPS** を選択します。
 1. **フロントエンド ホスト** フィールドで、**dynamics-ecom-tenant-name.azurefd.net** を入力します。
-1. **照合するパターン**の、上のフィールドで、**/\*** と入力します。
-1. **工順の詳細**で、**工順タイプ** オプションを**転送**に設定します。
+1. **照合するパターン** の、上のフィールドで、**/\** _ と入力します。
+1. **工順の詳細** で、**工順タイプ** オプションを **次** に設定します。
 1. **バックエンド プール** フィールドで、**ecom-backend** を選択します。
-1. **転送プロトコル** フィールド グループで、**照合要求**オプションを選択します。 
-1. **URL Rewrite** オプションを**無効**に設定します。
-1. **キャッシュ** オプションを**無効**に設定します。
+1. **転送プロトコル** フィールド グループで、**照合要求** オプションを選択します。 
+1. **URL Rewrite** オプションを **無効** に設定します。
+1. **キャッシュ** オプションを **無効** に設定します。
 
 Azure Front Door Service でキャッシュ ルールを設定するには、次の手順を実行します。
 
 1. キャッシュ ルールを追加します。
-1. **名前**フィールドに、**静的**と入力します。
+1. **名前** フィールドに、**静的** と入力します。
 1. **承認済プロトコル** フィールドで、**HTTP と HTTPS** を選択します。
 1. **フロントエンド ホスト** フィールドで、**dynamics-ecom-tenant-name.azurefd.net** を入力します。
-1. **照合するパターン**の、上のフィールドで、**/\_msdyn365/\_scnr/\*** と入力します。
-1. **工順の詳細**で、**工順タイプ** オプションを**転送**に設定します。
+1. **照合するパターン** の、上のフィールドで、**/\_msdyn365/\_scnr/\** _ と入力します。
+1. **工順の詳細** で、**工順タイプ** オプションを **次** に設定します。
 1. **バックエンド プール** フィールドで、**ecom-backend** を選択します。
-1. **転送プロトコル** フィールド グループで、**照合要求**オプションを選択します。
-1. **URL Rewrite** オプションを**無効**に設定します。
-1. **キャッシュ** オプションを**無効**に設定します。
-1. **クエリ文字列のキャッシュ動作**フィールドで、**一意の URL ごとキャッシュする**を選択します。
-1. **動的な圧縮**フィールド グループで、**有効化**オプションを選択します。
+1. **転送プロトコル** フィールド グループで、**照合要求** オプションを選択します。
+1. **URL Rewrite** オプションを **無効** に設定します。
+1. **キャッシュ** オプションを **無効** に設定します。
+1. **クエリ文字列のキャッシュ動作** フィールドで、**一意の URL ごとキャッシュする** を選択します。
+1. **動的な圧縮** フィールド グループで、**有効化** オプションを選択します。
 
-次の図は、Azure Front Door Service の**ルールの追加**ダイアログ ボックスを示します。
+次の図は、Azure Front Door Service の **ルールの追加** ダイアログ ボックスを示します。
 
 ![ルールの追加ダイアログ ボックス](./media/CDN_CachingRule.png)
 
 > [!WARNING]
-> 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート**タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
+> 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート** タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
 
 ご利用のドメインが新しく、かつ既存のドメインではない場合は、Azure Front Door Service の構成にカスタム ドメインを追加することができます。 これにより、web トラフィックが Azure Front Door インスタンスを介してサイトに誘導されるようになります。 カスタム ドメイン (たとえば、`www.fabrikam.com`) を追加するには、ドメインの正規名 (CNAME) をコンフィギュレーションする必要があります。
 
-次の図は、Azure Front Door Service の**CNAME コンフィギュレーション** ダイアログ ボックスを示します。
+次の図は、Azure Front Door Service の **CNAME コンフィギュレーション** ダイアログ ボックスを示します。
 
 ![CNAME コンフィギュレーション ダイアログ ボックス](./media/CNAME_Configuration.png)
 
 Azure Front Door Service を使用して証明書を管理したり、カスタム ドメインに対して独自の証明書を使用したりできます。
 
-次の図は、Azure Front Door Service の**カスタム ドメイン HTTPS** ダイアログ ボックスを示します。
+次の図は、Azure Front Door Service の **カスタム ドメイン HTTPS** ダイアログ ボックスを示します。
 
 ![カスタム ドメイン HTTPS ダイアログ ボックス](./media/Custom_Domain_HTTPS.png)
 
@@ -146,11 +146,11 @@ Azure Front Door にカスタムドメインを追加する方法の詳細につ
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[E コマース サイトの作成](create-ecommerce-site.md)
+[eコマース サイトの作成](create-ecommerce-site.md)
 
-[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

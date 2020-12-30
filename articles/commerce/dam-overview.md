@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fd2ec16ec441174485a9cc70f41a83337264f53b
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097044"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594359"
 ---
 # <a name="digital-asset-management-overview"></a>デジタル資産管理の概要
 
@@ -45,7 +45,7 @@ Dynamics 365 Commerce サイト ビルダーのメディア ライブラリー�
 
 デジタル資産はチャネル固有であり、既定ではオムニ チャネル資産を除いて、環境全体で使用されます。 
 
-サイト内の左側のナビゲーション ウィンドウの**メディア ライブラリー**下にあるサイト ビルダー内に、デジタル資産と管理機能が配置されています。
+サイト内の左側のナビゲーション ウィンドウの **メディア ライブラリー** 下にあるサイト ビルダー内に、デジタル資産と管理機能が配置されています。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -57,4 +57,6 @@ Dynamics 365 Commerce サイト ビルダーのメディア ライブラリー�
 
 [画像のトリミング](dam-crop-images.md)
 
-[画像の焦点のカスタマイズ](dam-custom-focal-point.md)
+[画像の中心のカスタマイズ](dam-custom-focal-point.md)
+
+[静的ファイルのアップロードと提供](upload-serve-static-files.md)

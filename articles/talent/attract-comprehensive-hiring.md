@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 380f72f564d800d3f5b2e9f8fd3a5f8e8c9e81d5
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461807"
 ---
 # <a name="choose-a-version-of-attract"></a>Attract のバージョンの選択
 
@@ -64,7 +64,7 @@ ms.locfileid: "2898547"
 ## <a name="find-out-which-version-of-attract-you-have"></a>所有する Attract のバージョンを確認
 
 1. Attract で、ページの右上隅にある疑問符 (**?**) を選択します。
-2. **について**を選択します。
+2. **について** を選択します。
 
     表示されたウィンドウでは、所有する Attract にどのタイプのライセンスがあるか示します。
 

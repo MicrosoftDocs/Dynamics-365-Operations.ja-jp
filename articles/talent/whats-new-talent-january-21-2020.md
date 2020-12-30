@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6e18e8108a7382bfa052986bab5a8552e38100c6
-ms.sourcegitcommit: a2f9dce06322dada6b5f1c82051ef2359f8c0f12
+ms.openlocfilehash: e9dee64e94c904cfe07c6a7766f6a60b1d60a2db
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081844"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528125"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-january-21-2020"></a>Dynamics 365 Talent (2020 年 1 月 21 日) の新機能および変更された機能
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Talent の新機能および変更された機能について説明します。
 
@@ -57,11 +59,11 @@ ms.locfileid: "3081844"
 
 ### <a name="most-recent-annual-compensation-field-in-verify-employment-form-isnt-consistent-392092"></a>雇用検証フォームの最新の年次報酬フィールドに一貫性がない (392092)
 
-このリリースには、**雇用検証**フォームで会社のセレクターに基づく最新の通貨を常に表示する変更が含まれています。
+このリリースには、**雇用検証** フォームで会社のセレクターに基づく最新の通貨を常に表示する変更が含まれています。
 
 ### <a name="known-as-field-added-to-the-feedback-recipient-lookup-407789"></a>フィードバック受信者のルックアップに追加された呼称フィールド (407789)
 
-パフォーマンス フィードバックを提供する際、作業者のルックアップでは、フィードバックが正しい人に送られるかどうかを判断するための十分な情報が提供されませんでした。 従業員の一意の名前を識別するのに役立つ、**呼称**列を追加しました。
+パフォーマンス フィードバックを提供する際、作業者のルックアップでは、フィードバックが正しい人に送られるかどうかを判断するための十分な情報が提供されませんでした。 従業員の一意の名前を識別するのに役立つ、**呼称** 列を追加しました。
  
 ### <a name="hcmworkerpayrollinfo-record-is-created-without-an-association-to-a-worker-394526"></a>HcmWorkerPayrollInfo レコードが作業者への関連付けなしで作成される (394526)
 
@@ -69,7 +71,7 @@ ms.locfileid: "3081844"
 
 ### <a name="able-to-edit-department-when-navigating-from-position-hierarchy-341001"></a>職位階層からの移動時に部門を編集可能 (341001)
 
-セキュリティが編集部門へのアクセスを拒否するよう設定された場合、すべてのシナリオを**部門**フォームに移動する際に編集が無効になります。
+セキュリティが編集部門へのアクセスを拒否するよう設定された場合、すべてのシナリオを **部門** フォームに移動する際に編集が無効になります。
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -77,9 +79,9 @@ ms.locfileid: "3081844"
 
 | 説明 | 計上額 |
 | --- | --- |
-| **職務/職位**エンティティの変更 | <ul><li>追加された**報酬地域**</li><li>追加された**財務分析コード**</li></ul> |
-| **作業者**エンティティの変更 | <ul><li>追加された**名前の順序**</li><li>追加された**自宅から作業**</li><li>追加された**言語**</li><li>追加された**勤続日数**</li><li>追加された**記念日**</li><li>追加された**元の採用日付**</li></ul> |
-| **雇用**エンティティの変更 | <ul><li>追加された**財務分析コード**</li><li>追加された**退職理由**</li><li>**移行日**から名前変更された**退職日**</li><li>追加された**猶予期間**</li></ul> |
-| **作業者住所**エンティティの変更 | <ul><li>追加された**番地**</li><li>廃止としてマークされた**住所行 1**、**住所行 2**、および**住所行 3**</li></ul> |
+| **職務/職位** エンティティの変更 | <ul><li>追加された **報酬地域**</li><li>追加された **財務分析コード**</li></ul> |
+| **作業者** エンティティの変更 | <ul><li>追加された **名前の順序**</li><li>追加された **自宅から作業**</li><li>追加された **言語**</li><li>追加された **勤続日数**</li><li>追加された **記念日**</li><li>追加された **元の採用日付**</li></ul> |
+| **雇用** エンティティの変更 | <ul><li>追加された **財務分析コード**</li><li>追加された **退職理由**</li><li>**移行日** から名前変更された **退職日**</li><li>追加された **猶予期間**</li></ul> |
+| **作業者住所** エンティティの変更 | <ul><li>追加された **番地**</li><li>廃止としてマークされた **住所行 1**、**住所行 2**、および **住所行 3**</li></ul> |
 | 新しい変動報酬の設定エンティティ | <ul><li>**変動報酬プラン タイプ**</li><li>**変動報酬プラン**</li><li>**給付ルール**</li><li>**変動報酬プラン レベル**</li></ul> |
-| 新しい**作業者カレンダー雇用**エンティティ | <ul><li>追加された**作業カレンダー エンティティ**</li></ul> |
+| 新しい **作業者カレンダー雇用** エンティティ | <ul><li>追加された **作業カレンダー エンティティ**</li></ul> |

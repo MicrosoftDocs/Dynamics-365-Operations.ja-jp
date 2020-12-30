@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 30662ccf7e37f7f1e131e3b18b5a770c53fea0d1
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711871"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528452"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 7 月 23 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3416 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
@@ -35,7 +37,7 @@ ms.locfileid: "3711871"
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>階層にない職位が非アクティブな職位を表示する (397257)
 
-非アクティブな (有効期間が切れている) 職位が、**階層内の職位**として職位階層に表示されなくなる。 
+非アクティブな (有効期間が切れている) 職位が、**階層内の職位** として職位階層に表示されなくなる。 
 
 ## <a name="validation-occurring-between-leaveenrollmententity-and-hcmworkerentity-on-data-management-framework-dmf-import-causes-slow-data-loads-442324"></a>データ管理フレームワーク (DMF) インポートにおける LeaveEnrollmentEntity と HcmWorkerEntity との間で検証処理が発生し、データの読み込みが遅くなる (442324)
 
@@ -43,13 +45,13 @@ ms.locfileid: "3711871"
 
 ## <a name="unable-to-personalize-in-organization-administration-447490"></a>組織管理のカスタマイズができない (447490)
 
-今回の変更では、**組織の管理**でリンクをカスタマイズできるようになります。
+今回の変更では、**組織の管理** でリンクをカスタマイズできるようになります。
 
 ## <a name="in-preview"></a>プレビュー
 
 ## <a name="mandatory-fields"></a>必須項目 
 
-人事管理のパーソナル化機能を使用することにより、項目を必須にすることができます。 この機能には**保存されたビュー**が必要です。
+人事管理のパーソナル化機能を使用することにより、項目を必須にすることができます。 この機能には **保存されたビュー** が必要です。
 
 ## <a name="human-resources-application-in-teams"></a>Teams の Human Resources アプリケーション
 

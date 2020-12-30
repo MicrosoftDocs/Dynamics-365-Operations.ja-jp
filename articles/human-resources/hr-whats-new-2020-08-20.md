@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 11a1f166080b96760cb10f4d0cdc627979c2709e
-ms.sourcegitcommit: e0bf7a81ead351f5b109061c401589295058f808
+ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "3726310"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 8 月 20 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3478 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
@@ -35,7 +37,7 @@ ms.locfileid: "3726310"
 
 ## <a name="private-field-isnt-yes-by-default-for-employee-role-in-employee-self-service-477106"></a>従業員セルフサービスの従業員ロールの場合、プライベート フィールドは既定で [はい] になっていません (477106)
 
-従業員が従業員セルフサービスの **個人情報** ページを使用して新しい住所レコードを追加すると、**プライベート フィールド**の既定値が**はい**になります。 
+従業員が従業員セルフサービスの **個人情報** ページを使用して新しい住所レコードを追加すると、**プライベート フィールド** の既定値が **はい** になります。 
 
 ## <a name="candidates-to-hire-fasttab-in-personnel-management-shows-an-incorrect-count-of-candidates-470110"></a>従業員管理の採用候補クイックタブで、表示される候補の数が誤って表示される (470110)
 
@@ -47,7 +49,7 @@ ms.locfileid: "3726310"
 
 ## <a name="adding-custom-fields-to-the-new-worker-form-disables-the-fields-in-the-action-pane-for-manage-leave-473314"></a>新しい作業者のフォームにカスタム フィールドを追加すると、休暇管理のアクション ペインのフィールドが無効になる (473314)
 
-新しい**作業者** フォームにカスタム フィールドが追加されている場合は、**休暇管理**の新規**作業者**フォーム上のアクション ペインのオプションは無効化されます。
+新しい **作業者** フォームにカスタム フィールドが追加されている場合は、**休暇管理** の新規 **作業者** フォーム上のアクション ペインのオプションは無効化されます。
 
 ## <a name="making-the-leave-comment-field-mandatory-allows-a-leave-request-to-be-submitted-when-no-comment-is-entered-473543"></a>休暇のコメント フィールドを必須にしても、コメントが未入力のままで休暇申請ができてしまう (473543)
 
@@ -61,7 +63,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 ### <a name="mandatory-fields"></a>必須項目
 
-人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には**保存されたビュー**が必要です。 保存されたビューに関する詳細については、次を参照してください。
+人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には **保存されたビュー** が必要です。 保存されたビューに関する詳細については、次を参照してください。
 
 - [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
 - [保存されたビューを十分に活用するフォームの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
@@ -110,7 +112,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 ### <a name="benefit-plan-employee-entity"></a>福利厚生プランの従業員エンティティ 
 
-**BenefitsPlanEmployee** エンティティに関する2つの問題が発見されました。 作業者の登録をインポートする際に、**補充コード**と **計画タイプ コード**が正しく設定されません。 この問題が発生すると、従業員の福利厚生プランが **作業者の福利厚生プラン**フォームと、従業員セルフサービスの**オープン登録**フォームに正しく表示されません。 この問題は、従業員セルフ サービスでプランを選択する機能にも影響します。 現時点では回避策はありません。 この問題については優先度を挙げて取り組み、次のリリースで修正を展開していきます。
+**BenefitsPlanEmployee** エンティティに関する2つの問題が発見されました。 作業者の登録をインポートする際に、**補充コード** と **計画タイプ コード** が正しく設定されません。 この問題が発生すると、従業員の福利厚生プランが **作業者の福利厚生プラン** フォームと、従業員セルフサービスの **オープン登録** フォームに正しく表示されません。 この問題は、従業員セルフ サービスでプランを選択する機能にも影響します。 現時点では回避策はありません。 この問題については優先度を挙げて取り組み、次のリリースで修正を展開していきます。
 
 ## <a name="see-also"></a>参照
 

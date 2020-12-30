@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107355"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594239"
 ---
 # <a name="create-call-center-orders"></a>コール センター注文の作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "4107355"
 
 1. **Retail と Commerce \> 顧客 \> 顧客サービス** に移動します。
 2. **検索文字列** には、顧客を検索するための検索条件を入力します。
-    * この手順の例では、「Karen」を入力し、 **タブ** を選択します。  
+    * この手順の例では、「Karen」を入力し、**タブ** を選択します。  
 3. 検索 を選択します。
     * デモ データに「Karen」という名前の顧客が 1 人だけいるため、それが自動的に選択されます。  
 4. **新しい販売注文** を選択します。
@@ -45,7 +45,7 @@ ms.locfileid: "4107355"
 9. 販売注文に追加する製品を選択します。
 10. 販売数量を入力します。
 11. **作成** を選択します。
-12. 顧客支払を取得するために、 **完了** を選択します。
+12. 顧客支払を取得するために、**完了** を選択します。
 13. **追加** を選択します。
     * [追加] リンクは、[支払] タブにあります。[支払] タブが折りたたまれている場合、展開します。  
 14. 支払方法を選択します。
@@ -55,4 +55,10 @@ ms.locfileid: "4107355"
     * この手順では、販売注文の概要ページに表示される注文の残高と同じ金額を、金額フィールドの左側に入力します。 全額支払われるように注文を行うことができます。  
 17. **OK** を選択します。
 18. **送信** を選択します。
+
+## <a name="additional-resources"></a>追加リソース
+
+[配送モードによるトランザクション メールのカスタマイズ](../customize-email-delivery-mode.md)
+
+[POS での荷渡方法の変更](../pos-change-delivery-mode.md)
 

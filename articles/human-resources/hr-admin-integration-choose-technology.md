@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6bb754ca80af0a0793b5ee162a378ebbe92524c5
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 9e6eeac66cff24d193e30aa942039707fc0aed52
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197293"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528344"
 ---
 # <a name="choose-a-data-integration-technology"></a>データ統合テクノロジの選択
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Human Resources で管理されているデータを統合するための情報を提供します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
 

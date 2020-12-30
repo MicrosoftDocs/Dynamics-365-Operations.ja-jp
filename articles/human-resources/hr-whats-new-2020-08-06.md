@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94d8291190b6c08c6e0e5241513989354df7939d
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711845"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528428"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 8 月 6 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3444 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
@@ -122,7 +124,7 @@ ms.locfileid: "3711845"
 
 ### <a name="mandatory-fields"></a>必須項目
 
-人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には**保存されたビュー**が必要です。 保存されたビューに関する詳細については、次を参照してください。
+人事管理のパーソナル化機能を使用することにより、フィールドを必須にすることができます。 この機能には **保存されたビュー** が必要です。 保存されたビューに関する詳細については、次を参照してください。
 
 - [保存ビュー - Dynamics 365 2020 リリース ウェーブ 2 プランの一般提供](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) 
 - [保存されたビューを十分に活用するフォームの作成](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)

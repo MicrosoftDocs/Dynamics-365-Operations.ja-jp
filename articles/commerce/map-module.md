@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817209"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665423"
 ---
 # <a name="map-module"></a>マップ モジュール
 
@@ -58,7 +58,7 @@ ms.locfileid: "3817209"
 
 ## <a name="add-allowed-mapping-urls-to-a-sites-content-security-policy-directives"></a>サイトのコンテンツ セキュリティ ポリシー ディレクティブに許可されたマッピング URLを追加する
 
-マップ モジュールが Bing Maps と連携するには、サイトのコンテンツ セキュリティ ポリシー (CSP) に従って、次のマッピング URL が許可 ("ホワイト化" とも呼ばれます) されていることを確認する必要があります。 この設定は、Commerce サイト ビルダーで、さまざまなサイト CSP ディレクティブ (**img-src** など) に許可された URL を追加することによって実行されます。 詳細については、[コンテンツ セキュリティ ポリシー](manage-csp.md)を参照してください。 
+マップ モジュールが Bing Maps と連携するには、サイトのコンテンツ セキュリティ ポリシー (CSP) に従って、次のマッピング URL が許可されていることを確認する必要があります。 この設定は、Commerce サイト ビルダーで、さまざまなサイト CSP ディレクティブ (**img-src** など) に許可された URL を追加することによって実行されます。 詳細については、[コンテンツ セキュリティ ポリシー](manage-csp.md)を参照してください。 
 
 - **connect-src** ディレクティブに **&#42;.bing.com** を追加します。
 - **img-src** ディレクティブに **&#42;.virtualearth.net** を追加します。

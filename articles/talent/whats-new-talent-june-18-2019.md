@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-18
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4323496736ddf3e3558f15679789cbc13013720c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 6a8b17fbeba591c20253bc4ec66767ac0dea64e6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898992"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528078"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-18-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 18 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -37,7 +39,7 @@ ms.locfileid: "2898992"
 
 ### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
@@ -53,7 +55,7 @@ ms.locfileid: "2898992"
 
 ### <a name="the-compensation-section-of-the-transfer-worker-page-isnt-available-in-some-scenarios"></a>一部のシナリオでは、移動作業者ページの報酬セクションは使用できません。
 
-この変更により、ユーザーは**移動作業者**ページの入力時に報酬データを入力できるようになります。
+この変更により、ユーザーは **移動作業者** ページの入力時に報酬データを入力できるようになります。
 
 ## <a name="in-preview"></a>プレビュー
 
@@ -61,7 +63,7 @@ ms.locfileid: "2898992"
 
 変更を公開する方法の詳細については、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) を参照してください。
 
-Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを**実稼働**または**サンドボックス**のどちらかに指定することができます。 **サンドボックス** インスタンス タイプにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを **実稼働** または **サンドボックス** のどちらかに指定することができます。 **サンドボックス** インスタンス タイプにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>休暇申請で休暇タイプを制限する
 

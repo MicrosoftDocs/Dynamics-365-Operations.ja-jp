@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f542bb12910e3a4884c38a2fb24831c42a545908
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431271"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527921"
 ---
 # <a name="configure-integration-with-finance"></a>Finance との統合のコンフィギュレーション
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
 

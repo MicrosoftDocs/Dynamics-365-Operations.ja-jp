@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533393"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517309"
 ---
 # <a name="enable-location-based-store-detection"></a>場所に基づく店舗検出の有効化
 
@@ -44,19 +44,19 @@ ms.locfileid: "3533393"
 コマースで場所に基づく店舗検出を有効にするには、次の手順に従います。
 
 1. オーサリング ツールで、サイトに移動します。
-1. 左のナビゲーション ウィンドウで、**サイト管理**を選択します。
-1. **サイトの設定**を選択します。
-1. **場所に基づく店舗検出を有効にする**のオプションを**オン**に設定します。
+1. 左のナビゲーション ウィンドウで、**サイト管理** を選択します。
+1. **サイトの設定** を選択します。
+1. **場所に基づく店舗検出を有効にする** のオプションを **オン** に設定します。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[E コマース サイトの作成](create-ecommerce-site.md)
+[eコマース サイトの作成](create-ecommerce-site.md)
 
-[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

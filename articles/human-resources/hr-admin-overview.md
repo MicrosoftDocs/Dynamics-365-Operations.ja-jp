@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443421"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527864"
 ---
 # <a name="overview"></a>概要
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
+ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930020"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476080"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -50,7 +50,7 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 >[!NOTE]
 >Teams にサインインしていて、Teams の Human Resources アプリを使用しているユーザーだけが、通知を受け取ります。
 
-1. 人事管理では、**システム管理**を選択します。
+1. 人事管理では、**システム管理** を選択します。
 
 2. **リンク** を選択します。
 
@@ -68,7 +68,7 @@ Teams におけるアプリのアクセス許可の管理については、[Micr
 
 Teams の Human Resources アプリの通知を有効にした後、ユーザーごとに通知をオンまたはオフにすることができます。
 
-1. 人事管理では、**システム管理**を選択します。
+1. 人事管理では、**システム管理** を選択します。
 
 2. **リンク** を選択します。
 
@@ -86,9 +86,8 @@ Teams の Human Resources アプリの通知を有効にした後、ユーザー
 
 | 出庫 | ステータス |
 | --- | --- |
-| Android フォンで水平スクロールが機能しない | 水平スクロールは iOS または デスクトップ デバイスでは問題ではありません。 Android の修正プログラムに取り組んでいます。 |
 | 未来日付の休暇を送信する場合に、残日数に誤りがあることを示します。 | 予測機能は未実装です。 現在日付の残日数が表示されます。 |
-| **レビュー中**の申請をキャンセルできない 。 | この機能には現在対応していないため、今後のリリースで対応予定です。 |
+| **レビュー中** の申請をキャンセルできない 。 | この機能には現在対応していないため、今後のリリースで対応予定です。 |
 | 残日数情報が、現日付の時点に基づいて算出される。 | 現在のシステムでは、休暇と欠勤のパラメータで構成されている場合であっても、見越計上期間の残日数は表示されません。 |
 
 ## <a name="troubleshooting"></a>トラブルシューティング

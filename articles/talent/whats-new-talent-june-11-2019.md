@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897583"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528672"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 11 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -33,7 +35,7 @@ ms.locfileid: "2897583"
 
 ### <a name="search-engine-optimization-for-job-posts"></a>人材募集のための検索エンジンの最適化
 
-Dynamics 365 Talent: Attract 管理センターで**検索エンジン最適化**が有効にされた後、Attract は Google インデックス作成アプリケーション プログラミング インターフェイス (API) に、新しいジョブの有効化およびポスト時、または既存のジョブが更新された時に Web ページのクローリングを行うよう通知します。 このようにして、ジョブは Google および他の検索エンジンの検索結果に表示されます。
+Dynamics 365 Talent: Attract 管理センターで **検索エンジン最適化** が有効にされた後、Attract は Google インデックス作成アプリケーション プログラミング インターフェイス (API) に、新しいジョブの有効化およびポスト時、または既存のジョブが更新された時に Web ページのクローリングを行うよう通知します。 このようにして、ジョブは Google および他の検索エンジンの検索結果に表示されます。
 
 同様に、ジョブをアンポストした場合、Attract はインデックス作成 API に通知し、アンポストされたジョブは検索結果に表示されなくなります。
 
@@ -44,7 +46,7 @@ Dynamics 365 Talent: Attract 管理センターで**検索エンジン最適化*
 
 ### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
@@ -56,11 +58,11 @@ Dynamics 365 Talent: Attract 管理センターで**検索エンジン最適化*
 
 ### <a name="platform-update-27-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 27
 
-Finance and Operations のプラットフォーム更新プロフラム 27 の詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 27 (2019 年 6 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27) を参照してください。
+Finance and Operations のプラットフォーム更新プログラム 27 に関する詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27)を参照してください。
 
 ### <a name="feature-management-workspace-in-talent"></a>Talent における機能管理ワークスペース
 
-**システム管理**の**機能管理**ワークスペースにより、各リリースで提供されている機能の表示、有効化、無効化、およびスケジュールを行うことができます。 既定では、新機能が無効になっています。 **機能管理**ワークスペースを使用して、ドキュメントを有効にし、表示することができます。
+**システム管理** の **機能管理** ワークスペースにより、各リリースで提供されている機能の表示、有効化、無効化、およびスケジュールを行うことができます。 既定では、新機能が無効になっています。 **機能管理** ワークスペースを使用して、ドキュメントを有効にし、表示することができます。
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>カスタム フィールドに対する Common Data Service エンティティのサポート
 
@@ -76,7 +78,7 @@ Finance and Operations のプラットフォーム更新プロフラム 27 の�
 
 変更を公開する方法の詳細については、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) を参照してください。
 
-Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを実稼働またはサンドボックスのどちらかに指定することができます。 サンドボックス インスタンス タイプにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを実稼働またはサンドボックスのどちらかに指定することができます。 サンドボックス インスタンス タイプにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>休暇申請で休暇タイプを制限する
 

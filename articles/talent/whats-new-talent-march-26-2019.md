@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9cd6fda0e6e0405163184327f954b66eb8c7612
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 17eae6c2aa2a1305b1d6f403c595c022f71da48f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897560"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529093"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 26 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -70,7 +72,7 @@ ms.locfileid: "2897560"
 今回のリリースでは、会社ごとにセキュリティを制限している場合、固定報酬プランが表示されるようになりました。 すべてのセキュリティ設定が遵守され、ユーザーにアクセス許可がある会社に対しては固定プランが表示されます。 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Talent の Excel で開くオプションを使用してジョブ レコードを削除できない
-このリリースでは、Talent の **Excel で開く**オプションを使用して、ジョブ レコードを削除できるようになりました。
+このリリースでは、Talent の **Excel で開く** オプションを使用して、ジョブ レコードを削除できるようになりました。
 
 ### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
 Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、Power Apps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
@@ -91,7 +93,7 @@ Common Data Service へのアップグレードの期限が近づいています
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これらは、経営幹部または地域の従業員向けのものである可能性があります。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 アクセス権を付与されたロールのみが、これらの従業員の報酬を処理できます。
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-Finance and Operations のプラットフォーム更新プログラム 25 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
+Finance and Operations の Platform update 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>重複する従業員チェック : ユーザー インターフェイスの変更
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった重複の数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するために、重複フォームは自動的に開きません。

@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9787df5f36c1f08ade40e3e8fc5d5189e3bd5b0
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 28eecb6289e5e895e860cffa29a55e773c6aadaa
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711943"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528720"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 6 月 23 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3347 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
 ## <a name="when-an-enrollment-is-expired-for-a-terminated-employee-the-leave-type-balance-and-amount-are-all-cleared-in-the-leave-enrollment-form-444867"></a>加入契約は退職した従業員に対して期限切れになると、休暇タイプ、残高、および金額は、休暇登録フォーム にてすべてクリアされます (444867)
 
-**休暇タイプ**、**残高**、および**金額**は、この選択でクリアはされず、維持されるようになります。
+**休暇タイプ**、**残高**、および **金額** は、この選択でクリアはされず、維持されるようになります。
 
 ## <a name="incorrect-forecasted-balance-when-new-feature-leave-accrual-for-a-single-company-or-a-single-plan-is-enabled-456553"></a>新しい機能 (1 つの会社または 1 つの計画に対する休暇見越) が有効な場合、予測残高は正しくありません (456553)
 
@@ -47,7 +49,7 @@ ms.locfileid: "3711943"
  
 ## <a name="inconsistency-in-showing-compensation-management-data-432562"></a>報酬管理データの表示に不整合があります (432562)
 
-報酬データの一貫した見解が、マネージャーのセルフ サービスで保持されるようになりました。 報酬データは、作業者の**報酬の詳細**にどのように移動するかによって、一貫してマネージャーに表示されるようになっています。
+報酬データの一貫した見解が、マネージャーのセルフ サービスで保持されるようになりました。 報酬データは、作業者の **報酬の詳細** にどのように移動するかによって、一貫してマネージャーに表示されるようになっています。
  
 ## <a name="fixed-compensation-plans-effective-date-defaults-to-todays-date-411994"></a>固定報酬プランの有効日の既定値は、今日の日付です (411994)
 
@@ -55,7 +57,7 @@ ms.locfileid: "3711943"
 
 ## <a name="leave-and-absence-form-enable-half-day-definition-is-disabled-when-form-opens-452607"></a>半日の定義を有効にする休暇と欠勤のフォームが開くと、その定義は無効になります (452607)
 
-この変更により、**半日の定義を有効にする**は、新しい休暇トランザクションが存在するまで有効になります。 
+この変更により、**半日の定義を有効にする** は、新しい休暇トランザクションが存在するまで有効になります。 
 
 ## <a name="unable-to-publish-to-hcmdiscussionentity-via-excel-totalratingscore-field-error-453899"></a>Excel 経由で HcmDiscussionEntity に発行することはできません; TotalRatingScore フィールド エラー (453899)
 
@@ -69,7 +71,7 @@ ms.locfileid: "3711943"
 
 ## <a name="mandatory-fields"></a>必須項目 
 
-人事管理のパーソナル化機能を使用することにより、項目を必須にすることができます。 この機能には**保存されたビュー**が必要です。
+人事管理のパーソナル化機能を使用することにより、項目を必須にすることができます。 この機能には **保存されたビュー** が必要です。
 
 ## <a name="human-resources-application-in-teams"></a>Teams の Human Resources アプリケーション
 
@@ -114,7 +116,7 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 ## <a name="configure-the-name-of-employee-self-service"></a>従業員セルフ サービス名のコンフィギュレーション
 
-**人事管理パラメータ**で新しいオプションが使用可能になり、従業員セルフ サービス ワークスペースの名前をセルフ サービスに更新します。
+**人事管理パラメータ** で新しいオプションが使用可能になり、従業員セルフ サービス ワークスペースの名前をセルフ サービスに更新します。
 
 ## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Service に含まれるチェックリスト エンティティ
 

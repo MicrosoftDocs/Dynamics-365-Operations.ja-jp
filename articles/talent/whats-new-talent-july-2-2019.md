@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2aaf64fe1ebdaad8ec9b84615dbb8d48616f9a3a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899019"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461813"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-02-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 2 日)
 
@@ -46,7 +46,7 @@ ms.locfileid: "2899019"
 ### <a name="coming-soon-in-attract"></a>Attract で間もなく公開
 #### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 

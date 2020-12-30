@@ -20,11 +20,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Talent October 2019 update
 ms.openlocfilehash: eb97a16c15476c2f34ec581a32a677fa6fee8739
-ms.sourcegitcommit: acdd93637385246f9c5c652cccdf2cbfb263cc33
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975937"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461702"
 ---
 # <a name="export-data-from-attract-and-onboard"></a>Attract および Onboard からのデータのエクスポート
 
@@ -38,16 +38,16 @@ ms.locfileid: "2975937"
 
 1. [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport) に移動します。
 
-2. **データのエクスポート**で、**データのエクスポートを要求**を選択します。
+2. **データのエクスポート** で、**データのエクスポートを要求** を選択します。
 
    ![[Attract からのデータ エクスポートの要求](./media/attract-onboard-export-data-attract-request.png)](./media/attract-onboard-export-data-attract-request.png)
 
-3. **要求は処理中**メッセージボックスが表示されたら、**OK** を選択します。 エクスポートのサイズによっては、データのエクスポートに最大で 20 分かかる場合があります。
+3. **要求は処理中** メッセージボックスが表示されたら、**OK** を選択します。 エクスポートのサイズによっては、データのエクスポートに最大で 20 分かかる場合があります。
 
-4. エクスポートが完了したら、横にある**ダウンロード** ボタンを選択します。 
+4. エクスポートが完了したら、横にある **ダウンロード** ボタンを選択します。 
 
    >[!NOTE]
-   >すべてのデータ エクスポートは 7 日間実行でき、この時点で**ダウンロード** リンクの有効期限が切れます。</br>
+   >すべてのデータ エクスポートは 7 日間実行でき、この時点で **ダウンロード** リンクの有効期限が切れます。</br>
    
 ダウンロードには、Attract データを含む .zip ファイルが含まれており、以下のフォルダーが含まれます。
 
@@ -74,11 +74,11 @@ ms.locfileid: "2975937"
 
 1. [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport) に移動します。
 
-2. 非管理者による Attract 環境へのアクセスを制限するには、**このアプリへのアクセスの制限**で、**今すぐアクセスを制限**を選択します。 アクセスを制限すると、転記済の有効なジョブもすべて無転記になります。
+2. 非管理者による Attract 環境へのアクセスを制限するには、**このアプリへのアクセスの制限** で、**今すぐアクセスを制限** を選択します。 アクセスを制限すると、転記済の有効なジョブもすべて無転記になります。
 
    ![[非管理者の Attract へのアクセスの制限](./media/attract-onboard-export-data-attract-restrict-access.png)](./media/attract-onboard-export-data-attract-restrict-access.png)
 
-3. **これは永続的な変更です**という警告が表示された場合は、**アクセスの制限**を選択して、この環境に対して管理者以外のユーザーを完全に制限します。 この手順を完了する準備ができていない場合は、**キャンセル**を選択します。
+3. **これは永続的な変更です** という警告が表示された場合は、**アクセスの制限** を選択して、この環境に対して管理者以外のユーザーを完全に制限します。 この手順を完了する準備ができていない場合は、**キャンセル** を選択します。
 
    ![[アクセス制限が永続的な変更であるという警告](./media/attract-onboard-export-data-attract-warning.png)](./media/attract-onboard-export-data-attract-warning.png)
 
@@ -91,24 +91,24 @@ ms.locfileid: "2975937"
 
 1. [https://aka.ms/OnboardDataExport](https://aka.ms/OnboardDataExport) に移動します。
 
-2. **データのエクスポート**で、**データのエクスポートを要求**を選択します。 
+2. **データのエクスポート** で、**データのエクスポートを要求** を選択します。 
 
    ![[Onboard からのデータ エクスポートの要求](./media/attract-onboard-export-data-onboard-request.png)](./media/attract-onboard-export-data-onboard-request.png)
 
-3. **要求は処理中**メッセージボックスが表示されたら、**OK** を選択します。 エクスポートのサイズによっては、データのエクスポートに最大で 20 分かかる場合があります。
+3. **要求は処理中** メッセージボックスが表示されたら、**OK** を選択します。 エクスポートのサイズによっては、データのエクスポートに最大で 20 分かかる場合があります。
 
-4. エクスポートが完了したら、横にある**ダウンロード** ボタンを選択します。 
+4. エクスポートが完了したら、横にある **ダウンロード** ボタンを選択します。 
 
    ![[Onboard からのデータ エクスポートのダウンロード](./media/attract-onboard-export-data-onboard-download.png)](./media/attract-onboard-export-data-onboard-download.png)
 
    >[!NOTE]
-   >データ エクスポートは 7 日間使用できます。 7 日後に**ダウンロード** リンクの有効期限が切れ、データを再度ダウンロードする必要がある場合は、新しいエクスポートを要求する必要があります。 新しいデータ エクスポートを開始すると、新しいエクスポートが成功した後に既存のダウンロードが期限切れになります。
+   >データ エクスポートは 7 日間使用できます。 7 日後に **ダウンロード** リンクの有効期限が切れ、データを再度ダウンロードする必要がある場合は、新しいエクスポートを要求する必要があります。 新しいデータ エクスポートを開始すると、新しいエクスポートが成功した後に既存のダウンロードが期限切れになります。
 
 ダウンロードは、次の内容を含む .zip ファイルです。
 
-- Word 文書形式の Onboard テンプレートを含む**テンプレート** フォルダー。
+- Word 文書形式の Onboard テンプレートを含む **テンプレート** フォルダー。
 
-- Word 文書形式の Onboard ガイドを含む**ガイド** フォルダー。
+- Word 文書形式の Onboard ガイドを含む **ガイド** フォルダー。
 
 ## <a name="see-also"></a>参照
 

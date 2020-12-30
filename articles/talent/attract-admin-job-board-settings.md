@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833211"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461817"
 ---
 # <a name="enable-broadbean-integration-in-attract"></a>Attract における Broadbean 統合の有効化
 
@@ -40,9 +40,9 @@ ms.locfileid: "2833211"
 
 1. Attract に管理者としてサインインします。
 
-2. ページの右上隅にある**設定**ボタン (ギヤ記号) を選択して、**管理者センター**を選択します。
+2. ページの右上隅にある **設定** ボタン (ギヤ記号) を選択して、**管理者センター** を選択します。
 
-3. Broadbean に連絡して、**ユーザー名**、**クライアント ID**、および**暗号化トークン**フィールドに情報を入力します。
+3. Broadbean に連絡して、**ユーザー名**、**クライアント ID**、および **暗号化トークン** フィールドに情報を入力します。
 
 4. **保存** を選択します。
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1be555c35ef45029f2a26716e57a4e05c9be6112
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 29e941ddab1b2746ccd74d6e335fec7742d1391e
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896845"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529611"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-28-2019"></a>Dynamics 365 Talent (2019 年 5 月 28 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -36,7 +38,7 @@ ms.locfileid: "2896845"
 
 ### <a name="job-approvals-on-home-page"></a>ホーム ページのジョブ承認
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
@@ -49,7 +51,7 @@ ms.locfileid: "2896845"
 このリリースでは、次の Common Data Service エンティティでカスタム フィールドがサポートされるようになりました。給付金の計算レートの詳細、作業カレンダーの休日行、および雇用です。
 
 ### <a name="copy-position-now-includes-payroll-details"></a>職位のコピーに給与詳細が含まれるようにする
-**職位のコピー**を使用してすべてのオプションを選択すると、給与の詳細情報がコピー情報に含まれるようになります。 
+**職位のコピー** を使用してすべてのオプションを選択すると、給与の詳細情報がコピー情報に含まれるようになります。 
 
 ## <a name="in-preview-in-core-hr"></a>Core HR のプレビュー
 
@@ -59,7 +61,7 @@ ms.locfileid: "2896845"
 
 ### <a name="new-page-to-validate-position-hierarchy-data"></a>職位階層データを検証する新しいページ
 
-HR および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証**からアクセスできます。
+HR および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証** からアクセスできます。
 
 ### <a name="specify-reason-codes-on-leave-types"></a>休暇タイプの理由コードの指定
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1f19049b362070e2573db769bf7070ace0028406
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 8965636e539345be5ef0ad591f7017938efd322d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005943"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529807"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-27-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 8 月 27 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 for Talent の新機能または変更された機能について説明します。
 
@@ -65,11 +67,11 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="the-cdsjobposition-entity-displays-an-error-when-valid-to-date-is-set-349387"></a>失効日が設定されている場合、CDSJobPosition エンティティはエラーを表示します (349387)
 
-このリリースで、**CDSJobPosition** エンティティ上の **職位の詳細**および**職位の期間**データ ソースについて、Common Data Service から **有効日**フィールドに編集することが許可されています。 
+このリリースで、**CDSJobPosition** エンティティ上の **職位の詳細** および **職位の期間** データ ソースについて、Common Data Service から **有効日** フィールドに編集することが許可されています。 
 
 ### <a name="for-employee-termination-the-last-day-worked-is-populated-on-assignment-end-date-332496"></a>従業員の退職について、最終勤務日が割り当て終了日に設定されます (332496)
 
-この変更により、職位の**割り当て終了日**が**雇用終了日**に既定で設定されるようになりました。 これらの既定値は、データの入力時に変更できます。
+この変更により、職位の **割り当て終了日** が **雇用終了日** に既定で設定されるようになりました。 これらの既定値は、データの入力時に変更できます。
 
 ### <a name="legal-entities-arent-limited-with-hire-338871"></a>法人は雇用に関して制限されていません (338871)
  
@@ -79,7 +81,7 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 
-この機能は、サンドボックスおよび試用環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能**に移動します。 **拡張された作業者フォームおよびナビゲーション**を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
+この機能は、サンドボックスおよび試用環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能** に移動します。 **拡張された作業者フォームおよびナビゲーション** を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
 
 詳細については、[合理化された従業員の入力とナビゲーション](./streamlined-employee-entry.md) を参照してください。
 

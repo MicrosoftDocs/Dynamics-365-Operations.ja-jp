@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006081"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461783"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>作業時間に基づいて休暇を見越計上する
 
@@ -37,12 +37,12 @@ ms.locfileid: "3006081"
 
 作業時間を使用する休暇計画を設定するには、次の手順を実行します:
 
-1. **休暇計画**のページで、**新しい計画の作成**をクリックします。
+1. **休暇計画** のページで、**新しい計画の作成** をクリックします。
 2. 休暇計画の名前を入力します。
 3. 計画の見越計上の発生頻度を選択します。
 5. 計画の開始日を選択します。
 6. 見越計上期間の基準を選択し、該当する場合は、従業員固有の日付を選択します。
-7. 見越計上スケジュールに関しては、見越計上タイプの**作業時間**を選択します。
+7. 見越計上スケジュールに関しては、見越計上タイプの **作業時間** を選択します。
 8. 見越計上に使用する時間のタイプを選択します。
 9. 作業時間数、関連付けられている見越計上金額、最低限残高、および最大繰越または交付金額を入力します。
 

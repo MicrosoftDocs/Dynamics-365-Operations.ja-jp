@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456929"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529581"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="what-is-the-customer-portal"></a>顧客のポータルの概要
 
@@ -36,7 +38,7 @@ ms.locfileid: "3456929"
 > テンプレートそのものが、完全に機能するとは限りません。 企業の顧客が Supply Chain Management のデータにアクセスできるよう、外部向けの Web サイトを作成したいと考えている顧客のためのイネーブラーとしての役割を果たします。
 
 > [!NOTE]
-> 顧客ポータルのドキュメントは、Supply Chain Management の顧客ポータルをインストールや設定を行う管理者、カスタマイザー、システム インテグレーターに向けられています。 Supply Chain Management を運用している組織の顧客や、最終的なポータルの利用者は、_顧客_と_ユーザー_という用語で表わされます。
+> 顧客ポータルのドキュメントは、Supply Chain Management の顧客ポータルをインストールや設定を行う管理者、カスタマイザー、システム インテグレーターに向けられています。 Supply Chain Management を運用している組織の顧客や、最終的なポータルの利用者は、_顧客_ と _ユーザー_ という用語で表わされます。
 
 ## <a name="video"></a>ビデオ
 
@@ -51,7 +53,7 @@ ms.locfileid: "3456929"
 - こうした企業は、注文処理情報 (注文状況やアカウント情報など) を、Supply Chain Management システムから企業の顧客に直接連絡する、外部に向けた Webサイトの構築を目的としています。
 - Dynamics AX 2012 から Supply Chain Management へと移行しており、以前は [AX 2012 Customer self-service portal](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal) を使用していました。
 
-次のようなタイプの組織は、顧客ポータルの実装には **向いていない**でしょう :
+次のようなタイプの組織は、顧客ポータルの実装には **向いていない** でしょう :
 
 - エンタープライズ以外の顧客に向けて Web サイトを構築する企業。 こうした企業は、[Dynamics 365 Commerce e-コマースの Web サイト](https://docs.microsoft.com/dynamics365/commerce/create-ecommerce-site) 作成を検討する必要があります。
 - 既存の Power Apps Web サイトを同様の目的で使用している企業。 このような企業には、顧客ポータルをしようしてもさらなる恩恵を得ることはないでしょう。 顧客ポータルは、デュアル書き込み、Supply Chain Management、Power Apps ポータル間の「点と点をつなげる」ことを希望する顧客に向けたガイドとなるテンプレートとして提供されます。 この目的を果たす Web サイトを既に設定している場合は、顧客ポータル テンプレートを使用して Web サイトの再プロビジョニングを行っても多くの恩恵を得られない場合があります。

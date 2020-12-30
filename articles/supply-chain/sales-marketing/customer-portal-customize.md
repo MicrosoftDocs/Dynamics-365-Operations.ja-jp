@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413984"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527366"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、顧客ポータルで使用できるさまざまなページについて説明します。 ここでは、ページの機能とカスタマイズ方法について説明します。
 
 顧客 ポータルでは、既成 の Web ページとアクションが用意されています。 次のサイトマップは、これら Web ページとアクションの概要と、アクションを実行できるロールを示しています。
 
-![![顧客ポータルのサイトマップ](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")](media/customer-portal-site-map.png "Customer portal site map")
+![顧客ポータルのサイトマップ](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")
 
 ## <a name="typical-customizations"></a>一般的なカスタマイズ
 
@@ -53,7 +55,7 @@ ms.locfileid: "3413984"
 
 ここでは、顧客ポータルから注文を送信する標準的な手順について説明します。
 
-1. ホーム ページの**注文の作成**タイルを選択して、**注文の作成**ウィザードを開きます。
+1. ホーム ページの **注文の作成** タイルを選択して、**注文の作成** ウィザードを開きます。
 1. **注文情報** ページで、次のフィールドを設定します :
 
     - **入荷希望日** - 配送日を指定します。
@@ -62,28 +64,28 @@ ms.locfileid: "3413984"
     - **要求番号** - 注文の要求番号を入力します。 このフィールドは必須ではありません。
     - **配送先の国/地域** - 品目が配送される国または地域を入力します。 このフィールドは、管理者以外のユーザーには自動的に設定されます。
 
-    ![![注文情報のページ](media/customer-portal-order-information.png "注文情報のページ")](media/customer-portal-order-information.png "Order Information page")
+    ![注文情報のページ](media/customer-portal-order-information.png "注文情報のページ")
 
 1. **次へ** を選択します。
-1. **品目**ページで、**品目の追加**を選択します。
+1. **品目** ページで、**品目の追加** を選択します。
 
-    ![![品目ページ](media/customer-portal-items.png "品目ページ")](media/customer-portal-items.png "Items page")
+    ![品目ページ](media/customer-portal-items.png "品目ページ")
 
-1. **品目情報**のダイアログ ボックスで、次のフィールドを設定します :
+1. **品目情報** のダイアログ ボックスで、次のフィールドを設定します :
 
     - **製品名** - 注文に追加する製品を検索して選択します。
     - **数量** - 選択した製品のの数量を入力します。
     - **単位** - 測定単位を指定します ( **個**、**kg**、**箱** など )。
     - **見積正味金額** - この値は、選択された単位の品目の見積価格 × 数量で計算されます。
 
-    ![![品目情報のダイアログ ボックスの追加](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![品目情報のダイアログ ボックスの追加](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")
 
 1. **送信** を選択して、品目を注文に追加します。
 1. 手順 4 から 6 を繰り返して、注文するすべての品目を追加します。
 1. 品目の追加の完了後は、**品目** ページで **次へ** を選択します。
-1. **注文情報** ページに注文の概要が表示されます。 注文内容と配送の詳細を確認します。 すべてが正しい場合は、**送信**を選択して注文を送信します。
+1. **注文情報** ページに注文の概要が表示されます。 注文内容と配送の詳細を確認します。 すべてが正しい場合は、**送信** を選択して注文を送信します。
 
-    ![![注文情報のページ](media/customer-portal-order-submit.png "注文情報のページ")](media/customer-portal-order-submit.png "Order Information page")
+    ![注文情報のページ](media/customer-portal-order-submit.png "注文情報のページ")
 
 ### <a name="standard-data-setup"></a>標準データの設定
 
@@ -105,10 +107,10 @@ ms.locfileid: "3413984"
 - **会社** - 注文が属するエンティティ (既定では、この値は連絡先レコードから取得されます)
 - **見込み顧客** – 注文に関連付けられている顧客 ID (既定では、この値は連絡先レコードから取得されます)
 - **請求書顧客** - 注文に関連付けられている顧客 ID (既定では、この値は連絡先レコードから取得されます)
-- **販売注文の名前**- 販売注文の名前 (既定値は **販売注文**です)
+- **販売注文の名前**- 販売注文の名前 (既定値は **販売注文** です)
 - **通貨** - 注文の通貨 (既定では、この値は連絡先レコードから取得されます)
 - **価格表** - 顧客向けのカスタム価格リスト (既定では、連絡先レコードから取得されます)
-- **配送先住所の説明** - 販売注文の配送先住所 (既定値は **配送先住所の説明**です)
+- **配送先住所の説明** - 販売注文の配送先住所 (既定値は **配送先住所の説明** です)
 
 ### <a name="modify-the-order-creation-process"></a>注文作成プロセスの修正
 
@@ -148,19 +150,19 @@ ms.locfileid: "3413984"
 
 ホームページのタイル作成には、顧客ポータルのテンプレートに含まれるカスタム コントロールのみが使用されます。
 
-![![ホームページのタイル](media/customer-portal-home-page-tiles.png "ホームページのタイル")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![ホームページのタイル](media/customer-portal-home-page-tiles.png "ホームページのタイル")
 
 タイルを変更するには、次の手順を実行します。
 
 1. [ポータル管理アプリ](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal)を開きます。
-1. 左のナビゲーション ウィンドウで、**ページ テンプレート**を選択します。
+1. 左のナビゲーション ウィンドウで、**ページ テンプレート** を選択します。
 
-    ![![ポータル管理ナビゲーション ウィンドウ](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![ポータル管理ナビゲーション ウィンドウ](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")
 
 1. **ホーム** という名前のページ テンプレートを選択します。
 1. **Web テンプレート** フィールドで、**ホーム** リンクを選択して、そのページのソース コードを開きます。
 
-    ![![Web テンプレートのフィールド](media/customer-portal-web-template.png "Web テンプレートのフィールド")](media/customer-portal-web-template.png "Web Template field")
+    ![Web テンプレートのフィールド](media/customer-portal-web-template.png "Web テンプレートのフィールド")
 
 1. ホーム ページのすべてのソース コードが表示され、必要に応じて変更できるようになります。
 

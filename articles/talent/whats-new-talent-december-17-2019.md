@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-12-17
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 9af1c61f446f04f1f22cddf3f12dece517446701
-ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2921199"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461709"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-december-17-2019"></a>Dynamics 365 Talent (2019 年 12 月 17 日) の新機能および変更された機能
 
@@ -43,7 +43,7 @@ ms.locfileid: "2921199"
 
 ### <a name="print-performance-reviews"></a>業績の確認の印刷
 
-すべての環境で印刷パフォーマンスの確認が使用できるようになりました。 この機能を有効にするには、**機能管理**ワークスペースを使用します。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。 印刷パフォーマンスの確認の詳細については、[パフォーマンスの確認](https://docs.microsoft.com/dynamics365/talent/performance-management-overview#performance-reviews) を参照してください。
+すべての環境で印刷パフォーマンスの確認が使用できるようになりました。 この機能を有効にするには、**機能管理** ワークスペースを使用します。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。 印刷パフォーマンスの確認の詳細については、[パフォーマンスの確認](https://docs.microsoft.com/dynamics365/talent/performance-management-overview#performance-reviews) を参照してください。
 
 ### <a name="retired-position-with-direct-reports-floats-in-org-diagram-as-an-open-position-385436"></a>直接レポートのある破棄された職位が、組織図で空いている職位として「浮いて」しまう (385436)
 

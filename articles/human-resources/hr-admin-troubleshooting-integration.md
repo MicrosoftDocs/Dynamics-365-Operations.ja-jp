@@ -17,16 +17,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a3389d6ce5f1985f7515e777a2bafae4eae5f0c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
+ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431110"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4589066"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 このトピックでは、Dynamics 365 Human Resources が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
+
+## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Power Apps で Dynamics 365 Talent アプリケーションを編集することはできますか。
+
+No. Talent アプリケーション ユーザーを編集すると、Human Resources と Common Data Service の統合に失敗する可能性があります。 次のテーブルでは、Talent アプリケーション ユーザーに対する既定の設定を表示しています。
+
+| 姓名 | アプリケーション ID | Azure AD オブジェクト ID | アプリケーション ID URI |
+| --- | --- | --- | --- |
+| Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
+
+![Talent アプリケーション ユーザーに対する既定の設定](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>すべてのデータが同期された、または一部のデータ エンティティだけが同期されましたか。
 
@@ -44,13 +56,13 @@ ms.locfileid: "3431110"
 
 財務分析コードは、現在 Common Data Service にはなく、結果として既定のテンプレートの一部ではありません。 このエンティティは計画されていますが、現在利用可能なリリース タイムラインはありません。
 
-Finance and Operations で存在しますが、人事管理では存在しないデータに関しては、人事管理**リンクの構成**を使用して 2 つのシステムを相互にリンクします。
+Finance and Operations で存在しますが、人事管理では存在しないデータに関しては、人事管理 **リンクの構成** を使用して 2 つのシステムを相互にリンクします。
 
 ![財務分析コードのマップ](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>場合によっては、従業員をインポートする場合 Finance の無効な作業者に入ってしまいます。 なぜですか。
 
-従業員が人事管理に有効な雇用詳細レコードがない場合、このエラーが発生する可能性があります。 この問題を解決するには、**人事管理 \> 従業員 \> 雇用履歴 \> 日付マネージャー**に移動し、有効な雇用詳細レコードがあることを確認します。
+従業員が人事管理に有効な雇用詳細レコードがない場合、このエラーが発生する可能性があります。 この問題を解決するには、**人事管理 \> 従業員 \> 雇用履歴 \> 日付マネージャー** に移動し、有効な雇用詳細レコードがあることを確認します。
 
 ## <a name="if-i-select-to-map-only-a-subset-of-fields-will-changes-made-to-non-mapped-fields-trigger-a-sync"></a>フィールドのサブセットのみをマップする選択をする場合、非マップ フィールドに対して加えた変更は同期をトリガーしますか。
 
@@ -152,7 +164,7 @@ Common Data Service で予定どおりにデータが表示されない場合は
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>プロジェクトの設定後、Finance のフィールド マッピングは空のようです。 何をする必要がありますか。
 
-**データ管理 \> フレームワーク パラメーター \> エンティティ設定 \> エンティティ リストの更新**に移動して、Finance のデータ エンティティを更新します。 これは数分で完了し、それらのマッピングを表示できます。 新しいプロジェクトが作成されたときに、この問題が発生します。
+**データ管理 \> フレームワーク パラメーター \> エンティティ設定 \> エンティティ リストの更新** に移動して、Finance のデータ エンティティを更新します。 これは数分で完了し、それらのマッピングを表示できます。 新しいプロジェクトが作成されたときに、この問題が発生します。
 
 ![フィールド マッピングがありません](media/MissingFieldMapping.png)
 

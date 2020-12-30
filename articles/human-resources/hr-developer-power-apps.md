@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 2e89347829ccd6569d568db42c79b5fea2316ba3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893080"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527029"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した拡張
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Microsoft Power Apps および Microsoft Power Automate を使用する Microsoft Dynamics 365 Human Resources の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを Power Apps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
@@ -34,7 +36,7 @@ ms.locfileid: "3893080"
 
 ## <a name="prerequisites"></a>必要条件
 
-- パッケージをインポートするには、ユーザーは**環境メーカー**のアクセス許可が必要です。
+- パッケージをインポートするには、ユーザーは **環境メーカー** のアクセス許可が必要です。
 - アプリをエクスポートまたはインポートするには、Power Apps プラン 2 ライセンスもしくは Power Apps プラン 2 試用版ライセンスが必要です。
 
 ## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365, Power Automate との統合

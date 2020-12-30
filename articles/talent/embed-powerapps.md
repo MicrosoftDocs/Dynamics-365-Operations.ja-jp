@@ -18,17 +18,17 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 8275a8a7c68fa13d6b9880c4c411deaa2dcbb998
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017876"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461716"
 ---
 # <a name="embed-power-apps-apps-in-dynamics-365-human-resources"></a>Dynamics 365 Human Resources の Power Apps アプリの埋め込み
 
 **問題点**
 
-**Power Apps** メニュー項目が**システム管理**モジュールから消えました。
+**Power Apps** メニュー項目が **システム管理** モジュールから消えました。
 
 **原因**
 
@@ -46,8 +46,8 @@ Power Apps を Talent に埋め込む方法の詳細については、[Power App
 
 次に例を示します。
 
-1. **人事管理\>リンク\>作業者\>従業員**に移動します。
-2. **Power Apps** ボタンを選択し、**Power Apps からアプリを追加**をクリックします。
+1. **人事管理\>リンク\>作業者\>従業員** に移動します。
+2. **Power Apps** ボタンを選択し、**Power Apps からアプリを追加** をクリックします。
 
     ![Power Apps ボタン](media/png.png)
 
@@ -57,7 +57,7 @@ Power Apps を Talent に埋め込む方法の詳細については、[Power App
 
 または、次の手順に従います。
 
-1. ページのアクション ウィンドウの**オプション**タブ上の**個人用設定**グループで、**このページのパーソナライズ**を選択します。
+1. ページのアクション ウィンドウの **オプション** タブ上の **個人用設定** グループで、**このページのパーソナライズ** を選択します。
 
     ![オプション タブのグループをパーソナライズする](media/options.png)
 

@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 6c384d9a7100982eabd201d910e1bea14355dc1f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006313"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461740"
 ---
 # <a name="user-can-access-human-resources-but-not-onboard-or-attract"></a>ユーザーは人事管理にアクセスできるが、Onboard または Attract にアクセスできない
 
@@ -35,7 +35,7 @@ ms.locfileid: "3006313"
 
 **問題点**
 
-ユーザー B は人事管理にアクセスできますが、Talent: Attract または Talent: Onboard アプリにはアクセスできません。 ユーザーが**エクスペリエンス アプリ**に移動しようとすると、代わりに試用環境に移動してしまいます。
+ユーザー B は人事管理にアクセスできますが、Talent: Attract または Talent: Onboard アプリにはアクセスできません。 ユーザーが **エクスペリエンス アプリ** に移動しようとすると、代わりに試用環境に移動してしまいます。
 
 **ソリューション**
 

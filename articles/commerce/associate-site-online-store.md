@@ -1,5 +1,5 @@
 ---
-title: オンライン チャネルと E コマース サイトの関連付け
+title: Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。
 author: bicyclingfool
 manager: AnnBe
@@ -18,33 +18,32 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b7c393ec2f716c7057a77d0f3c3c1a9f79ee8c68
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b6ae02d34499275fa303358f7dae4d3835d438e1
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975371"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517333"
 ---
-# <a name="associate-an-e-commerce-site-with-an-online-channel"></a>オンライン チャネルと E コマース サイトの関連付け
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
 
 [!include [banner](includes/banner.md)]
 
-
 このトピックでは、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。 
 
-Microsoft Dynamics Lifecycle Services (LCS) ポータルを使用して E コマースを準備したら、最初の E コマース Web サイトを確立する準備が整います。 サイトの初期作成の一環として、サイトを以前に作成されたオンライン ストアに関連付けます。 この手順により、サイトがオンライン チャネルにバインドされ、そのサイトには、ナビゲーション階層、製品、カテゴリ、価格、配送オプション、およびオンライン ストアで定義したその他すべてが表示されます。
+Microsoft Dynamics Lifecycle Services (LCS) ポータルを使用して自分の Dynamics 365 Commerce E コマース環境をプロビジョニングしたら、最初の E コマース Web サイトを確立する準備が整いました。 サイトの初期作成の一環として、サイトを以前に作成されたオンライン ストアに関連付けます。 この手順により、サイトがオンライン チャネルにバインドされ、そのサイトには、ナビゲーション階層、製品、カテゴリ、価格、配送オプション、およびオンライン ストアで定義したその他すべてが表示されます。
 
-新しいサイトを確立し、そのサイトをオンライン ストアに関連付けるには、LCS でサイト作成環境のリンクを選択します。 その後、サイト作成環境のページで、**新しいサイト**を選択します。 **新しいサイト** ダイアログ ボックスでは、サイトに関する基本情報をいくつか入力する必要があります。 入力する必要がある情報の詳しい説明については、[新しい E コマース サイトの作成](create-ecommerce-site.md) を参照してください。
+新しいサイトを確立し、そのサイトをオンライン ストアに関連付けるには、LCS でサイト作成環境のリンクを選択します。 その後、サイト作成環境のページで、**新しいサイト** を選択します。 **新しいサイト** ダイアログ ボックスでは、サイトに関する基本情報をいくつか入力する必要があります。 入力する必要がある情報の詳しい説明については、[新しい E コマース サイトの作成](create-ecommerce-site.md) を参照してください。
 
-サイトが作成されると、**製品**タブを選択することにより、そのサイトがオンライン ストアに関連付けられていることを確認できます。そこでは、オンライン ストアに割り当てられた製品の品揃えが表示されます。 ページの左上にあるドロップダウン フィールドを使用して、割り当てられた製品にカテゴリ別にアクセスすることもできます。
+サイトが作成されると、**製品** タブを選択することにより、そのサイトがオンライン ストアに関連付けられていることを確認できます。そこでは、オンライン ストアに割り当てられた製品の品揃えが表示されます。 ページの左上にあるドロップダウン フィールドを使用して、割り当てられた製品にカテゴリ別にアクセスすることもできます。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[E コマース サイトの作成](create-ecommerce-site.md)
+[eコマース サイトの作成](create-ecommerce-site.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

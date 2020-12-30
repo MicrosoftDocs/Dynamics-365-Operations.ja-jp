@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706231"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527840"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス環境にデータベースをコピーすることもできます。
 
@@ -64,11 +66,11 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 1. LCS にサインインし、コピーをするインスタンスを含む LCS プロジェクトを選択します。
 
-2. LCS プロジェクトでは、**人事管理アプリの管理**タイルを選択します。
+2. LCS プロジェクトでは、**人事管理アプリの管理** タイルを選択します。
 
-3. コピーをするインスタンスを選択して、**コピー**を選択します。
+3. コピーをするインスタンスを選択して、**コピー** を選択します。
 
-4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー**を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
+4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー** を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
 
    ![[上書きするインスタンスを選択します](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -76,7 +78,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
    ![[Power Platformを選択します](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. コピーをするPower Apps 環境 を選択して、 **コピー**を選択します。
+6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
 
 7. コピー処理の完了後、対象のインスタンスにサインインし、 Common Data Service 統合を有効化します。 詳細情報と解説については、 [Common Data Service の統合を構成する](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration) を参照してください。
 
@@ -128,15 +130,15 @@ Common Data Service エンティティに表示されるユーザー設定フィ
 
 1. カスタム設定フィールドに移動して、**編集** を選択し ます。
 
-2. ユーザー設定フィールドが有効になっている各 "cdm_* エンティティ" の**有効**フィールドをオフにします。
+2. ユーザー設定フィールドが有効になっている各 "cdm_* エンティティ" の **有効** フィールドをオフにします。
 
 3. **変更を適用する** を選択します。
 
-4. 再度**編集**を選択します。
+4. 再度 **編集** を選択します。
 
-5. ユーザー設定フィールドが有効になっている各 "cdm_* エンティティ" の**有効**フィールドをオンにします。
+5. ユーザー設定フィールドが有効になっている各 "cdm_* エンティティ" の **有効** フィールドをオンにします。
 
-6. 再度**変更を適用する** を選択します。
+6. 再度 **変更を適用する** を選択します。
 
 選択解除、変更の適用、再選択、変更の再適用を行うプロセスでは、カスタム フィールドを含むように Common Data Service でスキーマを更新するように促されます。
 

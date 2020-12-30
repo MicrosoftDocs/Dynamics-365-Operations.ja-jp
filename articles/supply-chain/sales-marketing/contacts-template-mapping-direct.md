@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a7f66797dea62a22d93ab105722bb26b4cf94e1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210114"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528952"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
@@ -43,7 +45,7 @@ ms.locfileid: "3210114"
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト** を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
 Sales から Supply Chain Management へ連絡先 (連絡先) エンティティと連絡先 (顧客) エンティティを同期するには、以下のテンプレートと基本的なタスクが使用されます。
 
@@ -72,18 +74,18 @@ Sales から Supply Chain Management へ連絡先 (連絡先) エンティティ
 
 Sales の連絡先は Supply Chain Management の連絡先または顧客になります。 Sales の連絡先を Supply Chain Management の連絡先または顧客として同期する必要があるかどうかを判断するために、システムは Sales の連絡先の次のプロパティを調べます。
 
-- **Supply Chain Management の顧客への同期:** **有効な顧客**が**はい**に設定されている連絡先
-- **Supply Chain Management の連絡先との同期:** **有効な顧客**が**いいえ**に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
+- **Supply Chain Management の顧客への同期:** **有効な顧客** が **はい** に設定されている連絡先
+- **Supply Chain Management の連絡先との同期:** **有効な顧客** が **いいえ** に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-新しい**有効な顧客**フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 **有効な顧客**は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ**はい**に設定されます。 これらの連絡先のみが顧客として Supply Chain Management に同期されます。
+新しい **有効な顧客** フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 **有効な顧客** は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ **はい** に設定されます。 これらの連絡先のみが顧客として Supply Chain Management に同期されます。
 
-新しい **IsCompanyAnAccount** フィールドが連絡先に追加されました。 このフィールドは、連絡先が**アカウント**タイプの会社 (親勘定/連絡先) にリンクされているかどうかを示します。 この情報は、Supply Chain Management の連絡先として同期する必要がある連絡先を識別するために使用されます。
+新しい **IsCompanyAnAccount** フィールドが連絡先に追加されました。 このフィールドは、連絡先が **アカウント** タイプの会社 (親勘定/連絡先) にリンクされているかどうかを示します。 この情報は、Supply Chain Management の連絡先として同期する必要がある連絡先を識別するために使用されます。
 
-新しい**連絡先番号**フィールドが連絡先に追加され、統合をサポートするための固有のナチュラル キーが保証されます。 新しい連絡先が作成されると、**連絡先番号**値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
+新しい **連絡先番号** フィールドが連絡先に追加され、統合をサポートするための固有のナチュラル キーが保証されます。 新しい連絡先が作成されると、**連絡先番号** 値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
 
-Sales の統合ソリューションが適用されている場合、アップグレード スクリプトは、先に述べた番号順序を使用して、既存の連絡先の**連絡先番号**フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の**有効な顧客**フィールドが**はい**に設定されます。
+Sales の統合ソリューションが適用されている場合、アップグレード スクリプトは、先に述べた番号順序を使用して、既存の連絡先の **連絡先番号** フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の **有効な顧客** フィールドが **はい** に設定されます。
 
 ## <a name="in-supply-chain-management"></a>Supply Chain Management 内
 
@@ -93,11 +95,11 @@ Sales の統合ソリューションが適用されている場合、アップ�
 
 ### <a name="contact-to-customer"></a>連絡先から顧客へ
 
-- Supply Chain Management では**顧客グループ**が必要です。 同期エラーを防ぐために、マッピングで既定値を指定できます。 販売でこのフィールドが空白の場合、既定値が使用されます。
+- Supply Chain Management では **顧客グループ** が必要です。 同期エラーを防ぐために、マッピングで既定値を指定できます。 販売でこのフィールドが空白の場合、既定値が使用されます。
 
     既定のテンプレートの値は **10** です。
 
-- 次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。 たとえば、**国/地域**または**市町村**のデフォルト値または値マップを使用できます。
+- 次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。 たとえば、**国/地域** または **市町村** のデフォルト値または値マップを使用できます。
 
     - **SiteId** – Supply Chain Management の製品に対して既定のサイトを定義することもできます。 Supply Chain Management で見積書および販売注文を生成するにはサイトが必要です。
 
@@ -109,7 +111,7 @@ Sales の統合ソリューションが適用されている場合、アップ�
 
     - **LanguageId** – Supply Chain Management で見積書および販売注文を生成するには言語が必要です。
     
-        既定のテンプレートの値は **アメリカ英語** です。
+        既定のテンプレートの値は **en-us** です。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 

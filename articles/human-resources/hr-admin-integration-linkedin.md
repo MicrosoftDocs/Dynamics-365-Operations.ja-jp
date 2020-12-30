@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056100"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527888"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn タレント ハブ](https://business.linkedin.com/talent-solutions/talent-hub) は採用管理システム (ATS) のプラットフォームです。 これにより、従業員の調達、管理、雇用をすべて 1 か所で行うことができます。 Microsoft Dynamics 365 Human Resources を LinkedIn タレント ハブと統合することにより、職位に採用された応募者の従業員レコードを Human Resources で簡単に作成することができます。
 
@@ -39,13 +41,13 @@ LinkedIn タレント ハブとの統合を有効にするには、システム�
 
 1. [LinkedIn タレント ハブ](https://business.linkedin.com/talent-solutions/talent-hub) を開きます。
 
-2. ユーザー ドロップダウン メニューで、 **製品設定** を選択します。
+2. ユーザー ドロップダウン メニューで、**製品設定** を選択します。
 
-3. 左のナビゲーション ペインにある **詳細** セクションで、 **統合** を選択します。
+3. 左のナビゲーション ペインにある **詳細** セクションで、**統合** を選択します。
 
 4. Microsoft Dynamics 365 Human Resources の統合に対して **承認** を選択します。
 
-5. **Dynamics 365 Human Resources** ページで、LinkedIn タレント ハブをリンクする環境を選択し、 **リンク** を選択します。
+5. **Dynamics 365 Human Resources** ページで、LinkedIn タレント ハブをリンクする環境を選択し、**リンク** を選択します。
 
     ![LinkedIn タレント ハブのオンボード](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
@@ -60,11 +62,11 @@ LinkedIn タレント ハブとの統合を有効にするには、システム�
 
 3. **設定** を選択します。
 
-4. **ユーザー + アクセス許可** ノードを展開し、 **セキュリティ ロール** を選択します。
+4. **ユーザー + アクセス許可** ノードを展開し、**セキュリティ ロール** を選択します。
 
-5. **セキュリティ ロール** ページのツールバーで、 **新しいロール** を選択します。
+5. **セキュリティ ロール** ページのツールバーで、**新しいロール** を選択します。
 
-6. **詳細** タブで、 **LinkedIn タレント ハブ HRIS の統合** など、ロールの名前を入力します。
+6. **詳細** タブで、**LinkedIn タレント ハブ HRIS の統合** など、ロールの名前を入力します。
 
 7. **カスタマイズ** タブで、次のエンティティに対する組織レベルの **読み取り** アクセス許可を選択します:
 
@@ -84,7 +86,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 3. **設定** を選択します。
 
-4. **ユーザー + アクセス許可** ノードを展開し、 **ユーザー** を選択します。
+4. **ユーザー + アクセス許可** ノードを展開し、**ユーザー** を選択します。
 
 5. **Dynamics 365 でユーザーの管理** を選択します。
 
@@ -99,12 +101,12 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
     1. **ユーザー タイプ** フィールド値を **アプリケーション ユーザー** に変更します。
     2. **ユーザー名** フィールドを **Dynamics365 HR LinkedIn HRIS の統合** に設定します。
     3. **アプリケーション ID** を **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** に設定します。
-    4. **名** 、 **姓** 、 **代表電子メール** フィールドに値を入力します。
+    4. **名**、**姓**、**代表電子メール** フィールドに値を入力します。
     5. ツール バーの **保存 \& 終了** を選択します。
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>セキュリティ ロールを新規ユーザーに割り当てる
 
-前のセクションで新規アプリケーション ユーザーを保存して終了した後、 **ユーザーの一覧** ページに戻ります。
+前のセクションで新規アプリケーション ユーザーを保存して終了した後、**ユーザーの一覧** ページに戻ります。
 
 1. **ユーザーの一覧** ページで、ビューを **アプリケーション ユーザー** に変更します。
 
@@ -118,25 +120,25 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 ### <a name="add-an-azure-active-directory-app-in-human-resources"></a>Human Resources に Azure Active Directory アプリを追加
 
-1. Dynamics 365 Human Resources で、 **Azure Active Directory アプリケーション** ページを開きます。
+1. Dynamics 365 Human Resources で、**Azure Active Directory アプリケーション** ページを開きます。
 2. 一覧に新規レコードを追加し、次のフィールドを設定します:
 
-    - **クライアント ID** : **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** を入力します。
-    - **名前** : 以前に作成した Power Apps セキュリティ ロール ( **LinkedIn タレント ハブ HRIS の統合** など) の名前を入力します。
-    - **ユーザー ID** : 人事管理でデータを書き込むアクセス許可を持つユーザーを選択します。
+    - **クライアント ID**: **3a225c96-d62a-44ce-b3ec-bd4e8e9befef** を入力します。
+    - **名前**: 以前に作成した Power Apps セキュリティ ロール (**LinkedIn タレント ハブ HRIS の統合** など) の名前を入力します。
+    - **ユーザー ID**: 人事管理でデータを書き込むアクセス許可を持つユーザーを選択します。
 
 ### <a name="create-the-entity-in-common-data-service"></a>Common Data Service でのエンティティの作成
 
 > [!IMPORTANT]
 > LinkedIn タレント ハブは、Common Data Service for Human Resources の仮想エンティティに依存します。 設定でのこの手順の前提条件として、仮想エンティティを構成する必要があります。 仮想エンティティの構成方法については、[Common Data Service 仮想エンティティの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) を参照してください。
 
-1. Human Resources で、 **Common Data Service (CDS) の統合** ページを開きます。
+1. Human Resources で、**Common Data Service (CDS) の統合** ページを開きます。
 
 2. **仮想エンティティ** タブを選択します。
 
-3. エンティティの一覧をエンティティ ラベルでフィルターして、 **LinkedIn がエクスポートした候補者** を検索します。
+3. エンティティの一覧をエンティティ ラベルでフィルターして、**LinkedIn がエクスポートした候補者** を検索します。
 
-4. エンティティを選択し、 **生成/更新** を選択します。
+4. エンティティを選択し、**生成/更新** を選択します。
 
 ## <a name="exporting-candidate-records"></a>候補者レコードのエクスポート
 
@@ -150,13 +152,13 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 2. 候補者レコードを選択します。
 
-3. **ステージの変更** を選択し、 **雇用** を選択します。
+3. **ステージの変更** を選択し、**雇用** を選択します。
 
-4. 候補者の省略記号メニュー ( **...** ) で、 **HRIS へのエクスポート** を選択します。
+4. 候補者の省略記号メニュー (**...**) で、**HRIS へのエクスポート** を選択します。
 
 5. **HRIS へのエクスポート** ペインで、エクスポートする必要がある情報を入力します:
 
-    - **HRIS プロバイダー** フィールドで、 **Microsoft Dynamics 365 Human Resources** を選択します。
+    - **HRIS プロバイダー** フィールドで、**Microsoft Dynamics 365 Human Resources** を選択します。
     - **開始日** フィールドで、新規従業員に対する値を選択します。
     - **役職** フィールドに、新規従業員の役職を入力します。
     - **場所** フィールドに、従業員が拠点とする場所を入力します。
@@ -166,9 +168,9 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 ## <a name="complete-onboarding-in-human-resources"></a>Human Resources でのオンボードの完了
 
-LinkedIn タレント ハブから Human Resources にエクスポートされた候補者レコードは、 **人事管理** ページの **採用候補者** セクションに表示されます。
+LinkedIn タレント ハブから Human Resources にエクスポートされた候補者レコードは、**人事管理** ページの **採用候補者** セクションに表示されます。
 
-1. Human Resources で、 **人事管理** ページを開きます。
+1. Human Resources で、**人事管理** ページを開きます。
 
 2. **採用候補者** セクションで、選択した候補に対して **採用** を選択します。
 

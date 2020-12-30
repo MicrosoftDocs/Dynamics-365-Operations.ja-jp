@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8d89b1251429281521f32338f642cc7034420e0b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 360574d3c8e0b349119e0987f2453a5d5be21e90
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005989"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528150"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-23-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 23 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -41,7 +43,7 @@ Attract ユーザーは、添付ファイルをダウンロードする代わり
 
 ### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
@@ -51,7 +53,7 @@ Attract ユーザーは、添付ファイルをダウンロードする代わり
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service のカスタム フィールドに対するエンティティのサポート 
 
-このリリースにより、**作業カレンダー**および**作業カレンダー**日が Common Data Service のカスタム フィールドをサポートするようになりました。
+このリリースにより、**作業カレンダー** および **作業カレンダー** 日が Common Data Service のカスタム フィールドをサポートするようになりました。
 
 ### <a name="restrict-leave-types-in-time-off-requests"></a>休暇申請で休暇タイプを制限する
 
@@ -61,7 +63,7 @@ Attract ユーザーは、添付ファイルをダウンロードする代わり
 
 ### <a name="preview-features-are-enabled-only-in-sandbox-instances"></a>プレビュー機能は、サンドボックス インスタンスでのみ有効です。
 
-Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを**実稼働**または**サンドボックス**のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを **実稼働** または **サンドボックス** のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 変更を公開する方法の詳細については、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) を参照してください。
 

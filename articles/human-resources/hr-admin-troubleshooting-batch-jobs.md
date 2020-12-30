@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f67b4b4c20345297f186c792fe2766c686e2ddbf
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: 452a87cf5ba6c1ac73636584d75b2ec2ac555e02
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527768"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="issue"></a>問題
 
@@ -44,21 +46,21 @@ Microsoft Dynamics 365 Human Resources は、通常の営業時間中に実行�
 | 業務時間外に定期的に実行する必要があるデータベース圧縮システム ジョブ | 1 日に 1 回 |
 | 業務時間外に定期的に実行する必要があるデータベース インデックス リビルド システム ジョブ | 1 日に 1 回 |
 
-1. 人事管理では、**システム管理**を選択します。
+1. 人事管理では、**システム管理** を選択します。
 
-2. **検索**バーで、上記のバッチ ジョブのいずれかを検索します。
+2. **検索** バーで、上記のバッチ ジョブのいずれかを検索します。
 
-3. **バックグラウンドで実行**を選択して、**再実行**を選択します。
+3. **バックグラウンドで実行** を選択して、**再実行** を選択します。
 
    ![再実行の設定](media/talent-batch-history-cleanup-recurrence.png)
 
-4. **再実行の定義**で、**開始日**および**開始時刻**を時間外または週末に発生するよう設定します。 **終了日なし**を選択します。 
+4. **再実行の定義** で、**開始日** および **開始時刻** を時間外または週末に発生するよう設定します。 **終了日なし** を選択します。 
 
    ![再実行の開始日時の定義](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. **OK** を選択します。
 
-6. 必要に応じて、**バックグラウンドで実行**でその他のパラメータを変更してから、**OK** を選択します。
+6. 必要に応じて、**バックグラウンドで実行** でその他のパラメータを変更してから、**OK** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 

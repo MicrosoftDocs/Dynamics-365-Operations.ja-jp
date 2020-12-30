@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 0a4d4de6cf28e24d1265395d6440df85edf71a0d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897859"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461812"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Dynamics 365 Talent (2019 年 4 月 9 日) の新機能や変更された機能
 
@@ -38,10 +38,10 @@ Attract と Onboard では、問題をレポートする機能を使用してエ
 人材プールで、特定のスキル、名前、または学歴について候補データベース全体を検索できるようになりました。 候補者プロファイルの検索したいセクションを指定する必要がなくなりました。 Attract はプロファイル全体を検索し、すべての一致した項目を強調表示します。 Attract はまた、候補者に利用可能なすべてのドキュメントを検索し、検索結果をインテリジェントにランク付けします。 さらに、検索結果をソース別、または銀メダリストかどうかでフィルター処理することもできます。 詳細については、[候補者プロファイルの検索および表示](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles) を参照してください。
 
 ### <a name="prospect-recommendations"></a>候補者の推奨事項
-Attract は、組織の候補者データベースからインテリジェントな候補者の推奨事項を作成することで、有効にするとすぐ職務の調達に弾みをつけるのに役立ちます。 推奨事項には、関連する候補者を検索する際に特定されたスキルと教育情報が含まれます。 職務の採用プロセスで有効にした場合、これらの推奨事項は職務の下の**候補者**タブに表示されます。 詳細については、[候補者の推奨事項](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations)を参照してください。
+Attract は、組織の候補者データベースからインテリジェントな候補者の推奨事項を作成することで、有効にするとすぐ職務の調達に弾みをつけるのに役立ちます。 推奨事項には、関連する候補者を検索する際に特定されたスキルと教育情報が含まれます。 職務の採用プロセスで有効にした場合、これらの推奨事項は職務の下の **候補者** タブに表示されます。 詳細については、[候補者の推奨事項](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations)を参照してください。
 
 ### <a name="interviewer-availability-statuses"></a>面接者の使用可能状態
-面接スケジューラは面接者が効率よく働くために時間をスケジュールするのに役立つ、**外出中、他の場所からの作業**ステータスを表示するようになります。
+面接スケジューラは面接者が効率よく働くために時間をスケジュールするのに役立つ、**外出中、他の場所からの作業** ステータスを表示するようになります。
 
 ### <a name="candidate-interview-experience-save-calendar-invites"></a>候補者の面接経験: カレンダーの招待を保存
 候補者は、候補者に送信された面接の概要の電子メールに添付されている .ics ファイルを使用して、自分の個人カレンダーに面接イベントをダウンロードして保存できるようになりました。
@@ -58,7 +58,7 @@ Attract と Onboard では、問題をレポートする機能を使用してエ
 今週のリリースでは、基準プランの割合を使用して変動報酬報酬を読み込む際の問題が修正されました。
  
 ### <a name="date-picker-on-last-day-worked-doesnt-work-correctly"></a>最終勤務日の日付の選択が正しく動作しません
-この変更により、次の問題を修正 : ユーザーが**雇用の終了日**を編集し、カレンダーの管理を使用して日付を選択すると、選択に日付が追加されます。
+この変更により、次の問題を修正 : ユーザーが **雇用の終了日** を編集し、カレンダーの管理を使用して日付を選択すると、選択に日付が追加されます。
 
 ###  <a name="limit-personnel-action-types-by-the-action-taken"></a>行なわれるアクションによる個人のアクション タイプを制限する
 この変更により、特定のアクションを実行するときに表示されるアクション タイプが制限されます。 たとえば、新しい職位が要求されると、選択するアクションの一覧に新しい職位アクションのみが表示されます。 以前は、新規アクションと編集アクションの両方が表示されていました。 
@@ -89,4 +89,4 @@ Attract と Onboard では、問題をレポートする機能を使用してエ
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった重複の数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するために、重複フォームは自動的に開きません。
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-Finance and Operations のプラットフォーム更新プログラム 25 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
+Finance and Operations の Platform update 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 

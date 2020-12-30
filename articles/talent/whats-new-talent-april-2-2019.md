@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896937"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528222"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Dynamics 365 Talent (2019 年 4 月 2 日) の新機能や変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -41,7 +43,7 @@ ms.locfileid: "2896937"
 新しいテンプレートを使用して承認電子メールのコンテンツをカスタマイズできます。
 
 ### <a name="application-and-profile-attachments"></a>アプリケーションとプロファイルの添付ファイル
-アプリケーションと人材プールプロファイルの**ドキュメント**タブの改良により、ドキュメント名とタイプの両方が表示されるようになりました。
+アプリケーションと人材プールプロファイルの **ドキュメント** タブの改良により、ドキュメント名とタイプの両方が表示されるようになりました。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
@@ -55,7 +57,7 @@ Attract と Onboard では、問題をレポートする機能を使用してエ
 このセクションに記載された変更は、ビルド番号 8.1.2216 に適用されます。
 
 ### <a name="platform-update-25-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 25
-Finance and Operations のプラットフォーム更新プロフラム 25 の詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プロフラム 25 (2019 年 4 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25) を参照してください。
+Finance and Operations のプラットフォーム更新プログラム 25 の詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25) を参照してください。
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>高度な報酬セキュリティ (固定および変動)
 多くの組織では、報酬および福利厚生の管理者は特定の報酬レコードにのみアクセスできます。 これには、経営幹部または地域の従業員向けのレコードが含まれます。 この変更により、HR は組織内のさまざまな従業員グループの報酬プランを管理および維持できます。 セキュリティ ロールを固定および変動プランに割り当てることができます。 これらのセキュリティ ロールによって、給与または特別償却レコードなどのプランおよび関連する従業員データへのアクセスが決定されるため、それらのロールだけが従業員グループの報酬を処理できます。
@@ -77,4 +79,4 @@ Common Data Service へのアップグレードの期限に近づいています
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった重複の数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するために、重複フォームは自動的に開きません。
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-Finance and Operations のプラットフォーム更新プログラム 25 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
+Finance and Operations の Platform update 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 

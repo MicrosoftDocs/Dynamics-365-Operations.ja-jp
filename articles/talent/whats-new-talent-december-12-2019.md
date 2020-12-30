@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4bb599be27e7d97fed1c060f97627c7c6a868e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 18f86f5d87b780d5d4ffc83330d389077987dda6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915513"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528174"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-december-10-2019"></a>Dynamics 365 Talent (2019 年 12 月 10 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -43,17 +45,17 @@ ms.locfileid: "2915513"
 
 ### <a name="feature-management-workspace"></a>機能管理ワークスペース
 
-**機能管理**ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+**機能管理** ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
 
-すべての新機能は少なくとも 30 日間、通常は 30-60 日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 **機能管理**ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
+すべての新機能は少なくとも 30 日間、通常は 30-60 日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 **機能管理** ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
  
-場合によっては、通常は整数機能が有効になりますが、オフにすることはできません (**機能管理**ワークスペースなど)。
+場合によっては、通常は整数機能が有効になりますが、オフにすることはできません (**機能管理** ワークスペースなど)。
  
-機能が一般に使用可能になったら、運用環境でオンまたはオフにすることができます。 **機能管理**ワークスペースは、プレビュー機能が必須になるタイミングを示します。 この日付は、通常、半年のリリース計画に沿って 10 月 1 日または 4 月 1 日になっています。 必須機能を無効にすることはできません。 必須になるまでは、すべての環境で機能を有効または無効にすることができます。
+機能が一般に使用可能になったら、運用環境でオンまたはオフにすることができます。 **機能管理** ワークスペースは、プレビュー機能が必須になるタイミングを示します。 この日付は、通常、半年のリリース計画に沿って 10 月 1 日または 4 月 1 日になっています。 必須機能を無効にすることはできません。 必須になるまでは、すべての環境で機能を有効または無効にすることができます。
 
 ### <a name="streamlined-worker-form-has-moved-to-the-feature-management-workspace-390583"></a>合理化された作業者のフォームが機能管理ワークスペースに移動された (390583)
 
-この変更により、合理化された作業者のフォームを**機能管理**ワークスペースで有効にすることができるようになりました。 この機能は、**システム管理**の**システム パラメーター** フォームから移動されました。
+この変更により、合理化された作業者のフォームを **機能管理** ワークスペースで有効にすることができるようになりました。 この機能は、**システム管理** の **システム パラメーター** フォームから移動されました。
 
 ### <a name="prevent-hcmworkerpayrollinfo-records-from-being-written-without-a-worker-value-394526"></a>HcmWorkerPayrollInfo レコードが、作業者の値がなくても書き込まれるのを防止する (394526)
 
@@ -77,7 +79,7 @@ ms.locfileid: "2915513"
 
 ## <a name="in-preview"></a>プレビュー
 
-プレビュー機能は**サンドボックス**環境でのみ有効になります。
+プレビュー機能は **サンドボックス** 環境でのみ有効になります。
 
 ### <a name="print-performance-reviews"></a>業績の確認の印刷
 

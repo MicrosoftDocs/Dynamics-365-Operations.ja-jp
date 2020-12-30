@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551959"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461804"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Dynamics 365 Talent - Onboard における研修用ガイドの更新
+# <a name="update-onboarding-guides"></a>研修用ガイドの更新
 
 [!include [banner](includes/banner.md)]
 
@@ -34,21 +34,21 @@ Microsoft Dynamics 365 Talent: Onboard の研修用ガイドを変更する必�
 
 ## <a name="edit-an-onboarding-guide-directly"></a>研修ガイドを直接編集する
 
-1. 左側のメニューで、**ガイド**を選択します。
+1. 左側のメニューで、**ガイド** を選択します。
 2. 編集するガイドを選択します。
-3. 必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。
+3. 必要な変更をすべて行い、**保存** ボタン (ディスクのアイコン) を選択します。
 
     ![[研修ガイドへの変更の保存](./media/onboard-save.png)](./media/onboard-save.png)
 
-Onboard は新規採用者に変更内容を示す電子メールを自動的に送信します。 識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。
+Onboard は新規採用者に変更内容を示す電子メールを自動的に送信します。 識別しやすいように、変更のたびに赤い **新規** タグが横に表示されます。
 
 ## <a name="update-multiple-guides-by-editing-the-onboarding-template"></a>研修テンプレートを編集して複数のガイドを更新する
 
-1. 左側のメニューで、**テンプレート**を選択します。
-2. **自分のテンプレート**で、編集するテンプレートを選択します。
-3. 必要な変更をすべて行い、**保存**ボタン (ディスクのアイコン) を選択します。
-4. テンプレートに基づくすべてのガイドに変更をプッシュするには、**これらの変更をプッシュ**を選択します。
+1. 左側のメニューで、**テンプレート** を選択します。
+2. **自分のテンプレート** で、編集するテンプレートを選択します。
+3. 必要な変更をすべて行い、**保存** ボタン (ディスクのアイコン) を選択します。
+4. テンプレートに基づくすべてのガイドに変更をプッシュするには、**これらの変更をプッシュ** を選択します。
 
     ![[作成されたすべての研修ガイドへ研修テンプレートの変更をプッシュ](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
-変更は、研修ガイドを開く新規採用者に表示されます。 ただし、Onboard は、新規採用者に研修ガイドが変更されたことを知らせる電子メールアラートを送信しません。 識別しやすいように、変更のたびに赤い**新規**タグが横に表示されます。 
+変更は、研修ガイドを開く新規採用者に表示されます。 ただし、Onboard は、新規採用者に研修ガイドが変更されたことを知らせる電子メールアラートを送信しません。 識別しやすいように、変更のたびに赤い **新規** タグが横に表示されます。 

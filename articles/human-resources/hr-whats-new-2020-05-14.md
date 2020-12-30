@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d68647508c70a20b7ecba3358c7e3ebccd8d71ef
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712041"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528500"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3244 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
@@ -51,7 +53,7 @@ Common Data Service の候補リストがすべての列挙と一致するよう
  
 ## <a name="show-the-positions-full-time-equivalent-fte-in-the-enrolled-workers-form-414658"></a>登録された作業者フォームに該当する職位のフルタイム換算 (FTE) を表示する (414658)
 
-休暇タイプで [FTE] オプションが有効になっている場合は、作業者の職位の FTE 値によって作業者の見越計上率が決まります。 このフィールドは、 **登録された作業者**フォームと **一括登録**ダイアログに含まれるようになりました。
+休暇タイプで [FTE] オプションが有効になっている場合は、作業者の職位の FTE 値によって作業者の見越計上率が決まります。 このフィールドは、 **登録された作業者** フォームと **一括登録** ダイアログに含まれるようになりました。
 
 ## <a name="add-leave-balance-expiration-batch-job-431266"></a>休暇残数の有効期限バッチジョブの追加 (431266)
 
@@ -59,7 +61,7 @@ Common Data Service の候補リストがすべての列挙と一致するよう
 
 ## <a name="exporting-personal-contacts-for-an-employee-using-the-worker-personal-contact-person-entity-doesnt-export-personal-contacts-with-the-parent-relationship-type-345893"></a>作業者の個人連絡担当者を使用して、従業員の個人の連絡先をエクスポートしても、親関係タイプの個人連絡先がエクスポートされない (345893)
 
-**作業者の個人連絡担当者**データ エンティティ ( DMF の **HcmPersonalContactPersonEntity** と OData の**PersonalContactPerson**) は、**親**のリレーションシップ タイプが設定されている個人の連絡先をエクスポートできませんでした。 この問題は、この変更後に作成される個人の連絡先に対して修正されています。 **親**タイプの既存の個人連絡先 は、将来的なリリースで修正されます。
+**作業者の個人連絡担当者** データ エンティティ ( DMF の **HcmPersonalContactPersonEntity** と OData の **PersonalContactPerson**) は、**親** のリレーションシップ タイプが設定されている個人の連絡先をエクスポートできませんでした。 この問題は、この変更後に作成される個人の連絡先に対して修正されています。 **親** タイプの既存の個人連絡先 は、将来的なリリースで修正されます。
 
 ## <a name="reason-codes-display-across-different-scenarios-when-theyre-marked-as-leave-and-absence-and-the-streamlined-employee-form-is-enabled-434163"></a>休暇と欠勤の両方としてマークされている場合に、理由コードに異なるシナリオのものが表示される (434163)
 

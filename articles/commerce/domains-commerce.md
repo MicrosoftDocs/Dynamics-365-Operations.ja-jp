@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765004"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517358"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
@@ -34,7 +34,7 @@ ms.locfileid: "3765004"
 
 ## <a name="provisioning-and-supported-host-names"></a>プロビジョニングおよびサポートされているホスト名
 
-[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) で E コマース環境をプロビジョニングする場合 、E コマース プロビジョニング画面の **サポートされているホスト名** ボックスを使用して、展開された Commerce 環境に関連付けられるドメインを入力します。 これらのドメインは、E コマース Web サイトがホストされる顧客向けドメイン ネーム サーバー (DNS) 名になります。 この段階でドメインを入力しても、ドメインのトラフィックを Dynamics 365 Commerce に振り向けることはありません。 ドメインのトラフィックは、ドメインで Commerce エンドポイントを使用するように DNS CNAME レコードが更新された場合にのみ、Commerce エンドポイントにルーティングされます。
+[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) で e コマース環境をプロビジョニングする場合 、e コマース プロビジョニング画面の **サポートされているホスト名** ボックスを使用して、展開された Commerce 環境に関連付けられるドメインを入力します。 これらのドメインは、e コマース Web サイトがホストされる顧客向けドメイン ネーム サーバー (DNS) 名になります。 この段階でドメインを入力しても、ドメインのトラフィックを Dynamics 365 Commerce に振り向けることはありません。 ドメインのトラフィックは、ドメインで Commerce エンドポイントを使用するように DNS CNAME レコードが更新された場合にのみ、Commerce エンドポイントにルーティングされます。
 
 > [!NOTE]
 > 複数のドメインをセミコロンで区切ることによって、**サポートされているホスト名** ボックスに入力できます。
@@ -47,13 +47,13 @@ ms.locfileid: "3765004"
 
 ## <a name="commerce-generated-urls"></a>Commerce 生成の URL
 
-E コマース環境をプロビジョニングする際、Commerce は環境の作業用アドレスとなる URL を生成します。 この URL は、環境のプロビジョニング後に、LCS に表示されているE コマース サイトのリンクで参照されます。 Commerce 生成の URL は形式 `https://<e-Commerce tenant name>.commerce.dynamics.com` で、E コマース テナント名は、Commerce 環境に対して LCS に入力された名前です。
+Dynamics 365 Commerce e コマース環境をプロビジョニングする際、Commerce は環境の作業用アドレスとなる URL を生成します。 この URL は、環境のプロビジョニング後に、LCS に表示されている e コマース サイトのリンクで参照されます。 Commerce 生成の URL は、`https://<e-commerce tenant name>.commerce.dynamics.com` の形式で、e コマース テナント名は、Commerce 環境に対して LCS に入力された名前です。
 
 サンドボックス環境では、実稼働環境サイトのホスト名を使用することもできます。 このオプションは、サンドボックス環境から実稼働環境にサイトをコピーする場合に最も適しています。
 
 ## <a name="site-setup"></a>サイトの設定
 
-E コマース環境のプロビジョニング後、サイトを作業用 URL に関連付けるように、サイトを Commerce サイト ビルダーで設定する必要があります。
+e コマース環境のプロビジョニング後、サイトを作業用 URL に関連付けるように、サイトを Commerce サイト ビルダーで設定する必要があります。
 
 サイト ビルダーで初めてサイトを設定すると、**サイトの設定** ダイアログ ボックスが表示されます。
 
@@ -68,7 +68,7 @@ E コマース環境のプロビジョニング後、サイトを作業用 URL �
 > [!NOTE]
 > パスは、サイト ビルダーの **サイトの設定 \> チャネル** コンフィギュレーション セクションでチャネルを追加するときに、**一致パス** とも呼ばれます。
 
-たとえば、"xyz" という名前の E コマース テナントでサイト ビルダーに "fabrikam" というサイトがあり、空白のパスでサイトを設定した場合、次の Commerce 生成のベース URL に直接アクセスすることによって、Web ブラウザーで公開サイトのコンテンツにアクセスします:
+たとえば、"xyz" という名前の e コマース テナントでサイト ビルダーに "fabrikam" というサイトがあり、空白のパスでサイトを設定した場合、次の Commerce 生成のベース URL に直接アクセスすることによって、Web ブラウザーで公開サイトのコンテンツにアクセスします:
 
 `https://xyz.commerce.dynamics.com`
 
@@ -102,9 +102,9 @@ E コマース環境のプロビジョニング後、サイトを作業用 URL �
 
 ## <a name="traffic-forwarding-in-production"></a>実稼働環境でのトラフィックの転送
 
-Commerce.dynamics.com エンドポイント自体でドメインのクエリ文字列パラメータを使用して、複数のドメインをシミュレートできます。 ただし、実稼働環境で稼働させる必要がある場合は、カスタム ドメインのトラフィックを `<e-Commerce tenant name>.commerce.dynamics.com` エンドポイントに転送する必要があります。
+Commerce.dynamics.com エンドポイント自体でドメインのクエリ文字列パラメータを使用して、複数のドメインをシミュレートできます。 ただし、実稼働環境で稼働させる必要がある場合は、カスタム ドメインのトラフィックを `<e-commerce tenant name>.commerce.dynamics.com` エンドポイントに転送する必要があります。
 
-`<e-Commerce tenant name>.commerce.dynamics.com` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたはコンテンツ配信ネットワーク (CDN) を使用してカスタム ドメインを設定する必要があります。 
+`<e-commerce tenant name>.commerce.dynamics.com` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたはコンテンツ配信ネットワーク (CDN) を使用してカスタム ドメインを設定する必要があります。 
 
 フロント ドア サービスまたは CDN を使用してカスタム ドメインを設定するには、次の 2 つのオプションがあります:
 
@@ -115,7 +115,7 @@ CDN サービスを直接設定する方法の詳細については、[コンテ
 
 Commerce 提供の Azure Front Door インスタンスを使用するには、Commerce オンボード チームから CDN 設定支援のサービス要求を作成する必要があります。 
 
-- 会社名、実稼動環境ドメイン、環境 ID、および実稼動環境の E コマース テナント名を入力する必要があります。 
+- 会社名、実稼動環境ドメイン、環境 ID、および実稼動環境の e コマース テナント名を入力する必要があります。 
 - これが既存のドメイン (現在アクティブなサイトに使用されている) か、新しいドメインであるかを確認する必要があります。 
 - 新しいドメインの場合、ドメイン検証と SSL 証明書は 1 つのステップで実行できます。 
 - 既存の Web サイトに提供するドメインの場合、ドメイン検証と SSL 証明書を確立するために必要ないくつかのステップ プロセスがあります。 このプロセスには、複数の連続したステップが含まれているため、ドメインが稼働するために 7 営業日のサービス レベル契約 (SLA) があります。
@@ -152,13 +152,13 @@ Commerce 提供の Azure Front Door インスタンスは、apex ドメイン (�
 
   ## <a name="additional-resources"></a>追加リソース
 
-  [新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+  [新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
   [オンライン ストア チャネルのセットアップ](online-stores.md)
 
-  [E コマース サイトの作成](create-ecommerce-site.md)
+  [eコマース サイトの作成](create-ecommerce-site.md)
 
-  [チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+  [オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
   [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

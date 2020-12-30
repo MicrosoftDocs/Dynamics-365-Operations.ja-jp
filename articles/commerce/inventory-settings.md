@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817612"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517067"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定を適用する
 

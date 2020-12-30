@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-05-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2eb7fbabdbc945436c238dc59802f487ccada35c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461753"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-20-2019"></a>Dynamics 365 Talent (2019 年 5 月 20 日) の新機能および変更された機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "2897537"
 
 ### <a name="job-approvals-on-home-page"></a>ホーム ページのジョブ承認
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
@@ -50,7 +50,7 @@ ms.locfileid: "2897537"
 
 ### <a name="new-page-to-validate-position-hierarchy-data"></a>職位階層データを検証する新しいページ
 
-人事管理 (HR) および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証**からアクセスできます。
+人事管理 (HR) および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証** からアクセスできます。
 
 ### <a name="specify-reason-codes-on-leave-types"></a>休暇タイプの理由コードの指定
 

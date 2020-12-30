@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 06758ff5eb1c00ae299b1b8849fcabb0cd9593e8
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 40898ca7f54089337180def964b8942e8653663b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896638"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529483"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Dynamics 365 Talent (2019 年 10 月 8 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -51,7 +53,7 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 
-従業員の入力とナビゲーションの機能をすべての環境で使用できるようになりました。 この機能を有効にするには、**システム管理 \> リンク \> 設定 \> システム パラメーター \> プレビュー機能**に移動し、**拡張された作業者フォームとナビゲーション**を選択します。 この機能は、すべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
+従業員の入力とナビゲーションの機能をすべての環境で使用できるようになりました。 この機能を有効にするには、**システム管理 \> リンク \> 設定 \> システム パラメーター \> プレビュー機能** に移動し、**拡張された作業者フォームとナビゲーション** を選択します。 この機能は、すべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
 
 詳細については、Dynamics 365: 2019 リリース ウェーブ 2 プラン[合理化された従業員のデータ入力](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry)を参照してください。
 
@@ -67,13 +69,13 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 このリリースには、**HcmOnboardingWorkerChecklistTaskEntity** に関する追加情報が含まれています。 次にいくつか例を挙げます。
 
-- **グループ名** 割り当てられたタイプが**グループ**の場合
-- **従業員名** 割り当てられたタイプが**従業員**の場合
-- **マネージャー名** 割り当てられたタイプが**マネージャー**の場合
+- **グループ名** 割り当てられたタイプが **グループ** の場合
+- **従業員名** 割り当てられたタイプが **従業員** の場合
+- **マネージャー名** 割り当てられたタイプが **マネージャー** の場合
 
 ### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Common Data Service 管理においてエンティティがアルファベット順にリストされていない (377414)
 
-エンティティは、**CDS 管理**ページにアルファベット順にリストされるようになりました。
+エンティティは、**CDS 管理** ページにアルファベット順にリストされるようになりました。
 
 ### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>未来の日付で雇用タイプを変更しても、職位割り当てが許可されない (339958)
 

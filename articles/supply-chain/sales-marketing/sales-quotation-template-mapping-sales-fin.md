@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b6b4384e1b5f712c08de55195a738295a36b75e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204473"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527341"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -71,13 +73,13 @@ Sales から Supply Chain Management への販売見積ヘッダーと明細行�
 Sales からの販売見積は、次の条件が満たされた場合にのみに同期されます。
 
 - 販売見積のすべての見積は、外部から管理されます。
-- **有効化見積**をクリックした後、販売見積は有効です。
+- **有効化見積** をクリックした後、販売見積は有効です。
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-**外部で管理された製品のみ**フィールドが**見積**エンティティに追加され、販売見積が完全に外部管理製品から構成されているかどうか一貫して追跡されます。 販売見積に外部で管理された製品のみがある場合、製品は Supply Chain Management で管理されます。 この動作は、Supply Chain Management で不明な製品を含む販売見積明細行を同期させないことを保証するのに役立ちます。
+**外部で管理された製品のみ** フィールドが **見積** エンティティに追加され、販売見積が完全に外部管理製品から構成されているかどうか一貫して追跡されます。 販売見積に外部で管理された製品のみがある場合、製品は Supply Chain Management で管理されます。 この動作は、Supply Chain Management で不明な製品を含む販売見積明細行を同期させないことを保証するのに役立ちます。
 
-販売見積書のすべての見積製品は、販売見積書ヘッダーからの**外部で管理される製品のみ**情報で更新されます。 この情報は、**QuoteDetails**エンティティの**外部で管理される製品のみの見積**フィールドに記載されています。
+販売見積書のすべての見積製品は、販売見積書ヘッダーからの **外部で管理される製品のみ** 情報で更新されます。 この情報は、**QuoteDetails** エンティティの **外部で管理される製品のみの見積** フィールドに記載されています。
 
 割引は、見積製品に追加することができ、Supply Chain Management と同期されます。 **割引**、**請求**、および **税** フィールドは、ヘッダーで Supply Chain Management の設定によって制御されます。 今現在、この設定では、統合マッピングはサポートされていません。 現在の設計では、**価格**、**割引**、**請求金額**、および **税** の各フィールドは、FSupply Chain Management によって維持され、処理されます。
 
@@ -114,7 +116,7 @@ Sales では、値が Supply Chain Management に同期されていないため�
 - Supply Chain Management の **SalesUnitSymbol** に必要な値マップが存在することを確認して下さい。
 - Sales に必要な単位が定義されていることを確認します。
 
-    値マップを持つテンプレート値が**oumid.name**から**SalesUnitSymbol**まで定義されています。
+    値マップを持つテンプレート値が **oumid.name** から **SalesUnitSymbol** まで定義されています。
 
 - オプション： 次のマッピングを追加して、顧客または製品からの既定の情報がない場合、販売見積明細行を Supply Chain Management にインポートすることができます。
 
