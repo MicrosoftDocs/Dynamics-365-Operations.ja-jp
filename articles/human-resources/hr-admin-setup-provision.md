@@ -1,0 +1,110 @@
+---
+title: Human Resources のプロビジョニング
+description: この記事では、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングのプロセスについて説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/23/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-human-resources
+ms.technology: ''
+ms.search.form: SystemAdministrationWorkspaceForm
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: 7521
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527798"
+---
+# <a name="provision-human-resources"></a><span data-ttu-id="06c9f-103">Human Resources のプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="06c9f-103">Provision Human Resources</span></span>
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+<span data-ttu-id="06c9f-104">この記事では、Microsoft Dynamics 365 Human Resources の新しい実稼動環境のプロビジョニングのプロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-104">This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.</span></span> <span data-ttu-id="06c9f-105">この記事では、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。</span><span class="sxs-lookup"><span data-stu-id="06c9f-105">This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement.</span></span> <span data-ttu-id="06c9f-106">Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-106">If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.</span></span>
+
+<span data-ttu-id="06c9f-107">始めに、グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Human Resources プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-107">To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project.</span></span> <span data-ttu-id="06c9f-108">ライセンスの問題で Human Resources プロビジョニングが妨げられない限り、サポートまたは Dynamics サービス エンジニアリング (DSE) の担当者に問い合わせる必要はありません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-108">Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.</span></span>
+
+## <a name="create-an-lcs-project"></a><span data-ttu-id="06c9f-109">LCS プロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="06c9f-109">Create an LCS project</span></span>
+
+<span data-ttu-id="06c9f-110">Human Resources 環境を管理するために LCS を使用するには、最初に LCS プロジェクトを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-110">To use LCS to manage your Human Resources environments, you must first create an LCS project.</span></span>
+
+1. <span data-ttu-id="06c9f-111">Human Resources をサブスクライブするために使用したアカウントを使用して [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="06c9f-111">Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.</span></span>
+
+2. <span data-ttu-id="06c9f-112">プラス記号 (**+**) を選択してプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-112">Select the plus sign (**+**) to create a project.</span></span>
+
+3. <span data-ttu-id="06c9f-113">製品名、製品バージョンとして **Microsoft Dynamics 365 Human Resources** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-113">Select **Microsoft Dynamics 365 Human Resources** as the product name and product version.</span></span>
+
+4. <span data-ttu-id="06c9f-114">**Dynamics 365 Human Resources** 方法を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-114">Select the **Dynamics 365 Human Resources** methodology.</span></span>
+
+5. <span data-ttu-id="06c9f-115">**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-115">Select **Create**.</span></span>
+
+<span data-ttu-id="06c9f-116">Human Resources を使い始める方法については、新しいプロジェクトで作成した **Human Resources** の方法を参照してくだい。</span><span class="sxs-lookup"><span data-stu-id="06c9f-116">For information about how to get started with Human Resources, see the **Human Resources** methodology that you created in your new project.</span></span> <span data-ttu-id="06c9f-117">プロジェクトの作成が終了したら、Human Resources 環境をプロビジョニングするために次の手順を完了してください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-117">After you've finished creating the project, complete the following procedure to provision your Human Resources environment.</span></span>
+
+## <a name="provision-a-human-resources-project"></a><span data-ttu-id="06c9f-118">Human Resources プロジェクトのプロビジョニング</span><span class="sxs-lookup"><span data-stu-id="06c9f-118">Provision a Human Resources project</span></span>
+
+<span data-ttu-id="06c9f-119">LCS プロジェクトを作成した後は、環境に Human Resources をプロビジョニングすることができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-119">After you've created an LCS project, you can provision Human Resources into an environment.</span></span>
+
+1. <span data-ttu-id="06c9f-120">LCS プロジェクトでは、**人事管理アプリの管理** タイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-120">In your LCS project, select the **Human Resources App Management** tile.</span></span>
+
+2. <span data-ttu-id="06c9f-121">これ環境が Human Resources のサンドボックス、または実稼働インスタンスであるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-121">Indicate whether this environment is a Sandbox or Production instance of Human Resources.</span></span> <span data-ttu-id="06c9f-122">初期のプレビュー機能をサンドボックス インスタンスで使用することにより、早期のフィードバックおよびテストを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-122">Early preview features may be available in Sandbox instances to allow for early feedback and testing.</span></span>
+   
+    > [!NOTE]
+    > <span data-ttu-id="06c9f-123">Human Resources インスタンス タイプは、一度設定した後で変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-123">The Human Resources instance type cannot be changed once set.</span></span> <span data-ttu-id="06c9f-124">続行する前に、正しいインスタンス タイプが選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-124">Verify the correct instance type is selected before continuing.</span></span></br></br>
+    > <span data-ttu-id="06c9f-125">Human Resources のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-125">The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.</span></span>
+    
+3. <span data-ttu-id="06c9f-126">Human Resources テスト ドライブ エクスペリエンスで使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="06c9f-126">Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience.</span></span> <span data-ttu-id="06c9f-127">デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-127">Demo data is beneficial for long-term demo or training environments, and should never be used for production environments.</span></span> <span data-ttu-id="06c9f-128">初期展開時にこのオプションを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-128">You must choose this option upon initial deployment.</span></span> <span data-ttu-id="06c9f-129">既存の配置を後で更新することはできません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-129">You can't update an existing deployment later.</span></span>
+
+4. <span data-ttu-id="06c9f-130">Human Resources は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-130">Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility.</span></span> <span data-ttu-id="06c9f-131">続行する前に、この記事の「Power Apps 環境の選択」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-131">Read the “Selecting a Power Apps environment” section of this article before you continue.</span></span> <span data-ttu-id="06c9f-132">まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-132">If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center.</span></span> <span data-ttu-id="06c9f-133">次に、以下の手順に従って、[Power Apps 環境を作成します](https://docs.microsoft.com/powerapps/administrator/create-environment)。</span><span class="sxs-lookup"><span data-stu-id="06c9f-133">Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).</span></span>
+
+5. <span data-ttu-id="06c9f-134">Human Resources をプロビジョニングする環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-134">Select the environment to provision Human Resources into.</span></span>
+
+6. <span data-ttu-id="06c9f-135">使用条件に同意、および展開を開始するために **はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-135">Select **Yes** to agree to the terms and begin deployment.</span></span>
+
+   <span data-ttu-id="06c9f-136">新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-136">Your new environment appears in the list of environments in the navigation pane on the left.</span></span> <span data-ttu-id="06c9f-137">ただし、配置状態が **配置済み** に更新されるまでは、環境の使用を開始できません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-137">However, you can't start to use the environment until the deployment status is updated to **Deployed**.</span></span> <span data-ttu-id="06c9f-138">このプロセスには通常、数分間かかります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-138">This process typically takes a few minutes.</span></span> <span data-ttu-id="06c9f-139">プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-139">If the provisioning process is unsuccessful, you must contact Support.</span></span>
+
+7. <span data-ttu-id="06c9f-140">新しい環境を使用するために **Human Resources にログオンする** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-140">Select **Log on to Human Resources** to use your new environment.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="06c9f-141">最終要件をまだサインオフしていない場合、プロジェクトに Human Resources のテスト インスタンスを配置することができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-141">If you haven't yet signed off on the final requirements, you can deploy a test instance of Human Resources in the project.</span></span> <span data-ttu-id="06c9f-142">サインオフするまで、ソリューションをテストするためにこのインスタンスを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-142">You can then use this instance to test your solution until you sign off.</span></span> <span data-ttu-id="06c9f-143">テストのために新しい環境を使用する場合は、実稼動環境を作成するためにこの手順を繰り返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-143">If you use your new environment for testing, you must repeat this procedure to create a production environment.</span></span>
+
+    > <span data-ttu-id="06c9f-144">この場合は、60日間の無料の [Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962) を利用をご検討ください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-144">You might consider leveraging a free 60-day [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962).</span></span> <span data-ttu-id="06c9f-145">試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-145">Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources.</span></span> <span data-ttu-id="06c9f-146">試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-146">Trial environments contain fictitious data that can be used to explore the program in a safe manner.</span></span> <span data-ttu-id="06c9f-147">これらは実稼動環境として使用するものではありません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-147">They aren't intended to be used as production environments.</span></span> <span data-ttu-id="06c9f-148">試用環境が 60 日後に期限が切れると、その中にあるすべてのデータが削除され復元できないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-148">Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered.</span></span> <span data-ttu-id="06c9f-149">既存の環境の期限が切れた後、新しい試用環境に登録することができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-149">You can sign up for a new trial environment after the existing environment expires.</span></span>
+
+## <a name="select-a-power-apps-environment"></a><span data-ttu-id="06c9f-150">Power Apps 環境の選択</span><span class="sxs-lookup"><span data-stu-id="06c9f-150">Select a Power Apps environment</span></span>
+
+<span data-ttu-id="06c9f-151">Power Apps ツールを使用して、人事管理データの使用を統合、拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-151">You can integrate and extend the use of Human Resources data using Power Apps tools.</span></span> <span data-ttu-id="06c9f-152">環境スコープ、環境アクセス、および環境の作成および選択を含む、Power Apps 環境の詳細については、[Power Apps 環境の発表](https://powerapps.microsoft.com/blog/powerapps-environments/) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-152">For information about Power Apps environments, including environment scope, environment access, and creating and choosing an environment, see [Announcing Power Apps environments](https://powerapps.microsoft.com/blog/powerapps-environments/).</span></span> 
+
+<span data-ttu-id="06c9f-153">Human Resources を配置する Power Apps 環境を決定する際には、次のガイダンスを参考にしてください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-153">Use the following guidance when determining which Power Apps environment to deploy Human Resources into:</span></span> 
+
+1. <span data-ttu-id="06c9f-154">LCS で、**環境の管理** を選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-154">In LCS, select **Manage environments**.</span></span> <span data-ttu-id="06c9f-155">既存の環境の表示および新しい環境の作成ができる Power Apps 管理者センターに移動することも可能です。</span><span class="sxs-lookup"><span data-stu-id="06c9f-155">You can also go directly to the Power Apps Admin center, where you can view existing environments and create new ones.</span></span>
+
+2. <span data-ttu-id="06c9f-156">1 つの Human Resources 環境は、1 つの Power Apps 環境にマップされます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-156">A single Human Resources environment is mapped to a single Power Apps environment.</span></span>
+
+3. <span data-ttu-id="06c9f-157">Power Apps 環境には、対応する Power Apps、Power Automate、および Common Data Service アプリケーションと共に、Human Resources が含まれています。</span><span class="sxs-lookup"><span data-stu-id="06c9f-157">A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Common Data Service applications.</span></span> <span data-ttu-id="06c9f-158">Power Apps 環境を削除すると、その中のアプリも削除されます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-158">If the Power Apps environment is deleted, so are the apps within it.</span></span> <span data-ttu-id="06c9f-159">Human Resources 環境をプロビジョニングする場合、**試用** または **実稼働** 環境のいずれかをプロビジョニングできます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-159">When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment.</span></span> <span data-ttu-id="06c9f-160">環境の使用方法に基づいて環境のタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-160">Choose the type of environment based on how the environment will be used.</span></span> 
+
+4. <span data-ttu-id="06c9f-161">サンドボックス、UAT、または生産などのデータの統合およびテスト戦略を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-161">Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production.</span></span> <span data-ttu-id="06c9f-162">Power Apps 環境にマッピングされている Human Resources 環境を後から変更することは容易ではないため、実装へのさまざまな影響について考慮することを推奨します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-162">Carefully consider the implications for your deployment, because it's not easy to change which Human Resources environment is mapped to a Power Apps environment.</span></span>
+
+5. <span data-ttu-id="06c9f-163">次の Power Apps 環境を Human Resources に使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-163">You can't use the following Power Apps environments for Human Resources.</span></span> <span data-ttu-id="06c9f-164">これらは、LCS 内の選択リストからフィルタ処理されます：</span><span class="sxs-lookup"><span data-stu-id="06c9f-164">They're filtered from the selection list within LCS:</span></span>
+ 
+    - <span data-ttu-id="06c9f-165">**既定の Power Apps 環境** - 各テナントは既定の Power Apps 環境で自動的にプロビジョニングされますが、Human Resources での使用については推奨しません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-165">**Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources.</span></span> <span data-ttu-id="06c9f-166">すべてのテナント ユーザーが Power Apps 環境にアクセスでき、テストや Power Apps、Power Automate 統合の際に、本番データの意図しない破損につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-166">All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations.</span></span>
+   
+    - <span data-ttu-id="06c9f-167">**評価版環境** - これらの環境には、有効期限が設定されています。</span><span class="sxs-lookup"><span data-stu-id="06c9f-167">**Trial environments** - These environments are created with an expiration date.</span></span> <span data-ttu-id="06c9f-168">有効期限が切れると、環境とその中に含まれる Human Resources インスタンスが自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-168">Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.</span></span>
+   
+    - <span data-ttu-id="06c9f-169">**対応していない地域** - 現在の Human Resources は、次の地域でのみ対応しています：米国、ヨーロッパ、英国、オーストラリア、カナダ、アジア。</span><span class="sxs-lookup"><span data-stu-id="06c9f-169">**Unsupported regions** - Currently Human Resources is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada, and Asia.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="06c9f-170">Human Resources 環境は、Power Apps 環境がプロビジョニングされたのと同じ領域でプロビジョニングされます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-170">The Human Resources environment is provisioned in the same region in which the Power Apps environment is provisioned.</span></span> <span data-ttu-id="06c9f-171">Human Resources 環境の別の領域への移行には対応していません。</span><span class="sxs-lookup"><span data-stu-id="06c9f-171">Migrating a Human Resources environment to another region is not supported.</span></span>
+
+6. <span data-ttu-id="06c9f-172">使用する正しい環境の決定後、プロビジョニング プロセスを続行できます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-172">After you've determined the correct environment to use, you can continue with the provisioning process.</span></span> 
+ 
+## <a name="grant-access-to-the-environment"></a><span data-ttu-id="06c9f-173">環境へのアクセスを付与</span><span class="sxs-lookup"><span data-stu-id="06c9f-173">Grant access to the environment</span></span>
+
+<span data-ttu-id="06c9f-174">既定では、環境を作成したグローバル管理者がそこにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="06c9f-174">By default, the global administrator who created the environment has access to it.</span></span> <span data-ttu-id="06c9f-175">追加のアプリケーション ユーザーに対するアクセス権を明示的に付与する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-175">You must explicitly grant access to additional application users.</span></span> <span data-ttu-id="06c9f-176">Human Resources 環境では、ユーザーを追加し、適切な役割を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-176">You must add users and assign the appropriate roles to them in the Human Resources environment.</span></span> <span data-ttu-id="06c9f-177">Human Resources を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard の両方も起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06c9f-177">The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.</span></span> <span data-ttu-id="06c9f-178">これが発生するまで、他のユーザーは Attract および Onboard にアクセスすることはできませんし、アクセス違反エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="06c9f-178">Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors.</span></span> <span data-ttu-id="06c9f-179">詳細については、[新規ユーザーの作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="06c9f-179">For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).</span></span> 
