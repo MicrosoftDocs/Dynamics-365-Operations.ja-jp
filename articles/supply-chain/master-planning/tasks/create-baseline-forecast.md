@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987193"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4432403"
 ---
 # <a name="create-a-baseline-forecast"></a>ベースライン予測の作成
 
@@ -43,7 +43,7 @@ ms.locfileid: "3987193"
 7. ページを閉じます。
 8. ページを閉じます。
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>需要予測のパラメーターの設定
+## <a name="set-up-the-demand-forecasting-parameters"></a>需要予測のパラメーターの設定
 1. [マスター プラン] > [設定] > [需要予測] > [需要予測のパラメーター] の順に移動します。
 2. 予測アルゴリズム パラメータ セクションを展開します。
 3. [予測生成戦略] フィールドで、[履歴需要の上書き] を選択します。

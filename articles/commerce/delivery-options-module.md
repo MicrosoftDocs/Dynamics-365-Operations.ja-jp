@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39e597b88afcca69623b1a23acc95e4da3873082
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818302"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413919"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 
@@ -62,13 +62,15 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[買い物カゴ モジュール](add-cart-module.md)
+[カート モジュール](add-cart-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 
 [支払モジュール](payment-module.md)
 
-[配送先住所モジュール](ship-address-module.md)
+[出荷先住所モジュール](ship-address-module.md)
+
+[集荷情報モジュール](pickup-info-module.md)
 
 [注文詳細のモジュール](order-confirmation-module.md)
 

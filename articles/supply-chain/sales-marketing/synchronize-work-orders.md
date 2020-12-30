@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
 ms.openlocfilehash: 5ebf23c5c831e9dad5d13c72f82eb3eeb30da853
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215864"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431772"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 
@@ -34,7 +34,7 @@ ms.locfileid: "3215864"
 
 [![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-使用されている**ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
+使用されている **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
 このトピックでは、2 つのテンプレートの相違のみについて説明します:
 - **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)**
@@ -56,7 +56,7 @@ ms.locfileid: "3215864"
 - WorkOrderService
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
-**外部プロジェクト** フィールドが、ワーク オーダー エンティティに追加されました。 このフィールドはルックアップで、ワーク オーダーがプロジェクトにタグ付けられ、販売注文は Supply Chain Management 内のプロジェクトに関連付けられます。 **システム ステータス**がオープン – 処理中 (690,970,000) から上位のステータスへ変わった場合、**外部プロジェクト** フィールドはロックされ、値の追加、削除、また変更はできなくなります。
+**外部プロジェクト** フィールドが、ワーク オーダー エンティティに追加されました。 このフィールドはルックアップで、ワーク オーダーがプロジェクトにタグ付けられ、販売注文は Supply Chain Management 内のプロジェクトに関連付けられます。 **システム ステータス** がオープン – 処理中 (690,970,000) から上位のステータスへ変わった場合、**外部プロジェクト** フィールドはロックされ、値の追加、削除、また変更はできなくなります。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 

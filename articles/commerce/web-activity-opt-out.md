@@ -18,11 +18,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
-ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378995"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413772"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Web アクティビティ イベント コレクションのオプトアウト
 [!include [banner](includes/banner.md)]
@@ -47,7 +47,7 @@ Commerce 本部のアカウント管理では、管理者はユーザーに代�
 
     ![プライバシー設定](media/Disablepersonalizationpart2.png)
 
-1. **保存**を選択し、ページを閉じます。
+1. **保存** を選択し、ページを閉じます。
 
 ### <a name="module-based-opt-out-experience"></a>モジュールベースのオプトアウト エクスペリエンス
 

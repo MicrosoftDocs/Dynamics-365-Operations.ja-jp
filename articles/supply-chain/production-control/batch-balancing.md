@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016888"
+ms.locfileid: "4432312"
 ---
 # <a name="batch-balancing"></a>バッチ バランシング
 
@@ -155,7 +155,7 @@ ms.locfileid: "4016888"
 <a name="the-batch-balancing-process"></a>バッチ バランシング プロセス
 ---------------------------
 
-バッチ バランシング プロセスは、 **バッチ バランシング** ページから実行されます。
+バッチ バランシング プロセスは、**バッチ バランシング** ページから実行されます。
 **原価管理** \> **バッチ オーダー** を選択し、そして **プロセス** タブ上で **バッチ バランシング** を選択します。 バッチ バランシングは、ステータスが **開始済** のバッチ オーダーで使用できます。
 
 一般的に、成分タイプが **有効** の少なくとも 1 つのフォーミュラ明細行を含む場合、バッチ バランシングをバッチ オーダーに適用することができます。 (このルールの例外については、このトピックの後半の「バッチ バランシングには適用されないバッチ オーダー」を参照してください)。

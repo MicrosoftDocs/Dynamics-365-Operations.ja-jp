@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201735"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431942"
 ---
 # <a name="include-physical-value"></a>現物価格を含める
 
@@ -59,4 +59,4 @@ ms.locfileid: "3201735"
 物理的に転記された取引は平均原価価格には含まれないため、販売注文が転記されるときに、転記される原価金額は USD 10.00 になります。 
 
 > [!NOTE]
-> これに対して、この品目の**現物価格を含める**チェック ボックスをオンにすると、販売注文が転記されるときに転記された原価金額が USD 12.00 となります。
+> これに対して、この品目の **現物価格を含める** チェック ボックスをオンにすると、販売注文が転記されるときに転記された原価金額が USD 12.00 となります。

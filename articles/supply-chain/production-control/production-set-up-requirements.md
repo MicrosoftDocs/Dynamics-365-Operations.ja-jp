@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
-ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428403"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431715"
 ---
 # <a name="production-setup-requirements"></a>生産の設定の要件
 
@@ -62,7 +62,7 @@ ms.locfileid: "3428403"
 工程とは、完成製品を製造するために完了させる特定の活動を表します。 **注記:** 品目の製造に必要な活動の種類およびそれらの活動の順序と優先順位を把握している必要があります。 また、担当のリソースとその数を把握している必要があります。
 
 1.  **工程** – 完成品目の製造に必要なタスクを表す工程を設定します。
-2.  **リレーション** – 関連工程を設定して、詳細プロパティを決定します。 関連工程を定義するには、**工程**ページで**リレーション**をクリックします。
+2.  **リレーション** – 関連工程を設定して、詳細プロパティを決定します。 関連工程を定義するには、**工程** ページで **リレーション** をクリックします。
 
 ## <a name="setup-if-you-use-routes"></a>工順を使用する場合の設定
 工順を使用する場合は、設定する生産工順ごとに工程を定義する必要があります。 工順とは、生産プロセスの開始から終了までに、工程から工程へと品目が移動する経路を表します。

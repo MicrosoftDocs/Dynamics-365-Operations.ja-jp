@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982929"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431624"
 ---
 # <a name="product-configuration-overview"></a>製品コンフィギュレーションの概要
 
@@ -112,7 +112,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="the-configuration-page"></a>コンフィギュレーション ページ
 
-コンポーネントの間を移動するには**次へ**をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
+コンポーネントの間を移動するには **次へ** をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
 
 ## <a name="finalizing-a-model-for-configuration"></a>コンフィギュレーション モデルの完成
 製品コンフィギュレーション モデルをコンフィギュア ツー オーダーのシナリオで使用する準備が整ったら、バージョンを作成する必要があります。 ただし、モデリング経験を豊かにできる複数のオプションがあります。

@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e548e5e5528733412d47478dd740b87217cdac2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016105"
+ms.locfileid: "4432320"
 ---
 # <a name="enable-license-plate-label-printing"></a>ライセンス プレート ラベル印刷の有効化
 
@@ -78,7 +78,7 @@ ms.locfileid: "4016105"
 4. **タイトル** フィールドに値を入力します。
 5. **モード** フィールドで、オプションを選択します。
 6. **既存の作業を使用** フィールドで **はい** を選択します。
-7. **ライセンス プレートの生成** フィールドで、 **はい** を選択します。
+7. **ライセンス プレートの生成** フィールドで、**はい** を選択します。
 8. **作業クラス** のセクションを展開します。
 9. **新規** を選択します。
 10. **作業クラス ID** フィールドで、値を入力します。

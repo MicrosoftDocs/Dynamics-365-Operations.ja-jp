@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: a7b2b6ba8115b43ef2e52e934bf8364e6f4044e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023222"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413686"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>販売と利益幅のパフォーマンスの監視
 

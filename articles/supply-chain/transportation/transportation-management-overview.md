@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4affc5846ee329a4571d6fb3e0c42873387241ad
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016381"
+ms.locfileid: "4432331"
 ---
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
@@ -83,7 +83,7 @@ ms.locfileid: "4016381"
 ![出庫積荷の計画および処理](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>積荷構築
-Supply Chain Management には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、 **積荷構築ワークベンチ** ページの **設定** クイック タブの **積荷構築戦略** フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
+Supply Chain Management には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、**積荷構築ワークベンチ** ページの **設定** クイック タブの **積荷構築戦略** フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
 
 
 

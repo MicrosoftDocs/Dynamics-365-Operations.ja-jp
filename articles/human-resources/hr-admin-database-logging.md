@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443585"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419370"
 ---
 # <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
 
@@ -63,7 +63,7 @@ ms.locfileid: "3443585"
 
 ## <a name="set-up-database-logging"></a>データベース ログの設定
 
-**ログ データベースの変更**ウィザードを使用して、データベースのログを設定できます。 ウィザードでは、テーブルやフィールドのログを柔軟に設定できます。
+**ログ データベースの変更** ウィザードを使用して、データベースのログを設定できます。 ウィザードでは、テーブルやフィールドのログを柔軟に設定できます。
 
 1. **システム管理 > リンク > データベース > データベース ログの設定** に移動します。 **新規** を選択して、**ログ データベースの変更** ウィザードを開始します。
 2. ウィザードの操作を完了します。

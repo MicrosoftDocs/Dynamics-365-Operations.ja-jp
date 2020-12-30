@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
 ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431999"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>危険物の照会とレポート
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 
 通常、危険物を含む品目を出荷する場合は、安全を確保し、危険物に関する規制を遵守するために、特定のレポートを生成する必要があります。 レポートを設定するには、次の手順を実行します。
 
-1. **倉庫管理 \> 設定 \> 倉庫管理パラメーター**の順に移動します。
+1. **倉庫管理 \> 設定 \> 倉庫管理パラメーター** の順に移動します。
 2. **レポート** タブを開きます。**危険物レポート パラメータ** クイック タブで、次のフィールドを設定します。
 
     | 項 | フィールド | 説明 |

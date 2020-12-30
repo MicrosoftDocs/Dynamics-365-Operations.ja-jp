@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429960"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419397"
 ---
 # <a name="set-up-payment-frequencies"></a>支払頻度の設定
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources は、支払頻度を使用して年間�
 
 換算率フィールドでは、支払頻度から標準支払期間への換算率を識別し、システムが支払頻度間の計算を行えるようにします。 換算率の金額は、従業員が各支払頻度に支払う必要がある給付金割増金額も決定します。
 
-1. **給付金管理**ワーク スペースの**設定**で、**支払頻度**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**支払頻度** を選択します。
 
 2. **新規** を選択します。
 

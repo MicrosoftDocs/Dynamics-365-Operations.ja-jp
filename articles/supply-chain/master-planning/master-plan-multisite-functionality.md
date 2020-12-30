@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2adbac35d556314b3ec9916e2b7b2706ce3528c9
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987073"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432199"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>マスター プランとマルチサイト機能の概要
 

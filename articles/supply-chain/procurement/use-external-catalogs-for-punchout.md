@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cccd3517f31a82e502052f100e44322ac4cb344f
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018494"
+ms.locfileid: "4432385"
 ---
 # <a name="use-external-catalogs-for-punchout-e-procurement"></a>パンチアウト e-procurement の外部カタログの使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "4018494"
 調達カテゴリの複数のオプションがある場合は、要求に明細行を追加する前に、正しい調達カテゴリを選択します。
 明細行が要求に追加されると、外部カタログを使用せずにさらに明細行を追加することができます。 または、外部カタログを使用して明細行の追加を続行することができます。
 
-要求が準備できたら、 **ワークフロー** > **送信** アクションを使用して承認のためにその要求を送信します。
+要求が準備できたら、**ワークフロー** > **送信** アクションを使用して承認のためにその要求を送信します。
 
 ### <a name="additional-resources"></a>追加リソース
 

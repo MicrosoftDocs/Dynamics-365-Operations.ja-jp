@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6df9f7cb6c5062841d5c9855833a58e11be690a4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987441"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432116"
 ---
 # <a name="view-compliance-with-service-level-agreements"></a>サービス レベル契約に準拠しているかどうかの表示    
 
@@ -32,9 +32,9 @@ ms.locfileid: "3987441"
 
 ## <a name="view-compliance-with-a-service-level-agreement"></a>サービス レベル契約のコンプライアンスの表示
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。 サービス注文を選択してダブルクリックし、注文の詳細フォームを開きます。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。 サービス注文を選択してダブルクリックし、注文の詳細フォームを開きます。
 
-2.  **コンプライアンス**フィールドの**一般**タブで、サービス レベル アグリーメントで指定されている期間と、サービス注文に実際に費やした時間とを比較した割合が表示されます。
+2.  **コンプライアンス** フィールドの **一般** タブで、サービス レベル アグリーメントで指定されている期間と、サービス注文に実際に費やした時間とを比較した割合が表示されます。
 
 
 > [!TIP]

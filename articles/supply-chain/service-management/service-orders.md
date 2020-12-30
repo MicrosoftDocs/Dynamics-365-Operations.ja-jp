@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975467"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431648"
 ---
 # <a name="service-orders"></a>サービス注文   
 
@@ -48,7 +48,7 @@ ms.locfileid: "3975467"
 
 次のシナリオでは、サービス契約に関連付けられていないサービス注文を作成しておくと便利なもう一つの状況を説明します。
 
-法人の出荷係がエレベーターの緊急サービスを要求する電話を受け付けました。 サービス契約とサービスのプロジェクトを設定する時間はありません。 そこで、出荷係は**サービス注文**フォームでサービス注文を直接作成し、そのサービス注文を既存のプロジェクトに関連付け、サービス注文明細行を作成します。 出荷係は、既存のサービス注文に関連した仕事や目的を作成して、サービス契約に関連付けられていない作業を記録します。 詳細については、[サービス注文の手動作成](create-service-orders-manually.md) および [サービス作業関係の作成](create-service-task-relations.md) を参照してください。
+法人の出荷係がエレベーターの緊急サービスを要求する電話を受け付けました。 サービス契約とサービスのプロジェクトを設定する時間はありません。 そこで、出荷係は **サービス注文** フォームでサービス注文を直接作成し、そのサービス注文を既存のプロジェクトに関連付け、サービス注文明細行を作成します。 出荷係は、既存のサービス注文に関連した仕事や目的を作成して、サービス契約に関連付けられていない作業を記録します。 詳細については、[サービス注文の手動作成](create-service-orders-manually.md) および [サービス作業関係の作成](create-service-task-relations.md) を参照してください。
 
 ## <a name="monitor-the-progress-of-service-orders"></a>サービス注文の進捗状況の監視
 
@@ -76,7 +76,7 @@ ms.locfileid: "3975467"
 
 ## <a name="post-from-projects"></a>プロジェクトからの転記
 
-出荷係は、特定のプロジェクトに関連付けられているすべてのサービス注文を、必要に応じて、毎週末に転記します。 その場合、出荷係は**プロジェクト**フォームの関連プロジェクトを探して、完了したサービス注文を転記します。 詳細については、[サービス注文の転記 (クラス フォーム)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)) を参照してください。
+出荷係は、特定のプロジェクトに関連付けられているすべてのサービス注文を、必要に応じて、毎週末に転記します。 その場合、出荷係は **プロジェクト** フォームの関連プロジェクトを探して、完了したサービス注文を転記します。 詳細については、[サービス注文の転記 (クラス フォーム)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)) を参照してください。
 
 ## <a name="delete-service-orders"></a>サービス注文の削除
 

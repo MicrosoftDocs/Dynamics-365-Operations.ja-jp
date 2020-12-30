@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428665"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419391"
 ---
 # <a name="define-new-jobs"></a>新しいジョブの定義
 
@@ -57,7 +57,7 @@ ms.locfileid: "3428665"
 21. 一覧で、目的のレコードを見つけ、選択します。
 22. 一覧で、選択された行のリンクをクリックします。
 23. [スキル] セクションの展開を切り替えます。
-    * [スキル]、[証明書]、[教育] クイック タブのフィールドが空白であることに注意してください。 職務テンプレートから情報をコピーした後、これらのフィールドの情報は単一ステップで入力できます。   
+    * [スキル]、[証明書]、[教育] クイック タブのフィールドが空白であることに注意してください。 職務テンプレートから情報をコピーした後、これらのフィールドの情報は単一ステップで入力できます。   
 24. [保存] をクリックします。
 25. [コピー元] をクリックします。
 26. [テンプレートからコピー] をクリックします。

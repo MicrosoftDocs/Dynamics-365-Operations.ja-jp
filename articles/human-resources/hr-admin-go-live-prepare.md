@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011425"
+ms.locfileid: "4419447"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resources - Go Live の準備
 
@@ -57,7 +57,7 @@ ms.locfileid: "4011425"
 
 運用環境を確実に本番運用に使用できるようにするために、マイクロソフトでは、LCS の方法論で必要とされる活動が完了した後、実装が **運用** フェーズに近づいている場合にのみ、運用インスタンスをプロビジョニングします。 ご利用のサブスクリプションでの環境の詳細については、 [Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) を参照してください。 
 
-運用環境を要求するための  **構成**  ボタンが利用可能になる前に、LCS 手法で **分析** 、 **設計と開発** 、 **テスト**  フェーズを完了しておく必要があります。 LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。 フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。 変更する必要がある場合、常に後からフェーズを再オープンすることができます。 詳細については、 [Finance and Operations アプリ 顧客向け Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) を参照してください。 
+運用環境を要求するための  **構成**  ボタンが利用可能になる前に、LCS 手法で **分析**、**設計と開発**、**テスト**  フェーズを完了しておく必要があります。 LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。 フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。 変更する必要がある場合、常に後からフェーズを再オープンすることができます。 詳細については、 [Finance and Operations アプリ 顧客向け Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) を参照してください。 
 
 ステップを完了するプロセスは 2 つの部分で成り立っています。 
 

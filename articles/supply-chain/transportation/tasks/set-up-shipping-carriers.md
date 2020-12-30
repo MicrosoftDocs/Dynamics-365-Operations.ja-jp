@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016450"
+ms.locfileid: "4432333"
 ---
 # <a name="set-up-shipping-carriers"></a>出荷配送業者の設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "4016450"
 
 ## <a name="create-a-new-shipping-carrier"></a>新しい出荷の配送業者の作成
 1. **ナビゲーション ウィンドウ > モジュール > 輸送管理 > 設定 > 配送業者 > 出荷の配送業者** の順に移動します。
-2. アクション ウィンドウで、 **新規** を選択します。
+2. アクション ウィンドウで、**新規** を選択します。
 3. **出荷の配送業者** フィールドに値を入力します。
 4. **名前** フィールドに値を入力します。
 5. **モード** フィールドで、ドロップダウン メニューからオプションを選択します。

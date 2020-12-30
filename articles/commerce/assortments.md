@@ -16,11 +16,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413679"
 ---
 # <a name="assortment-management"></a>品揃え管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "3023119"
 
 ## <a name="overview"></a>概要
 
-Dynamics 365 Commerce では、チャンネル間で製品の可用性を管理できる*品揃え*を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
+Dynamics 365 Commerce では、チャンネル間で製品の可用性を管理できる *品揃え* を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
 
 Commerce で、品揃えは 1 つまたは複数のチャネル (または組織階層が使用される場合は一連のチャネル) を 1 つまたは複数の製品 (またはカテゴリ階層を使用する場合は製品のグループ) にマッピングします。
 
@@ -81,7 +81,7 @@ Commerce で、品揃えは 1 つまたは複数のチャネル (または組織
 
 ### <a name="stopped-products"></a>停止された製品
 
-**既存の注文**設定を有効にして、販売プロセスのためにリリースされた製品を「停止」することができます。 この設定には、製品の有効期間の終了時と、どのチャネルでも販売されない時に最もよく使用されます。 品揃えはこの設定を尊重し、品揃えコンフィギュレーションに関係なく、停止された製品を関連付けすることはしません。
+**既存の注文** 設定を有効にして、販売プロセスのためにリリースされた製品を「停止」することができます。 この設定には、製品の有効期間の終了時と、どのチャネルでも販売されない時に最もよく使用されます。 品揃えはこの設定を尊重し、品揃えコンフィギュレーションに関係なく、停止された製品を関連付けすることはしません。
 
 ### <a name="blocked-products"></a>ブロックされた製品
 

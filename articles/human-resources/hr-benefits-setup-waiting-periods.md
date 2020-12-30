@@ -19,17 +19,17 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429776"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419384"
 ---
 # <a name="configure-waiting-periods"></a>待機期間のコンフィギュレーション
 
 Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用するマイルストーンを確立します。 たとえば、雇用日から 3 か月、各月の最初、または 6 か月です。   
 
-1. **給付金管理**ワーク スペースの**設定**で、**待機期間**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**待機期間** を選択します。
 
 2. **新規** を選択します。
 

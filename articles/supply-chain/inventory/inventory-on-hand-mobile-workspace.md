@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212736"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431720"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
@@ -59,7 +59,7 @@ ms.locfileid: "3212736"
 組織に配置されている Supply Chain Management のバージョンによって、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件
-Supply Chain Management が組織に配置されている場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management が組織に配置されている場合、システム管理者は **手持在庫** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>プラットフォーム 更新プログラム 3 以降を使用する場合の前提条件 
 プラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 

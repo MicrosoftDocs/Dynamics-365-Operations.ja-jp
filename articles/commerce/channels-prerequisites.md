@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113785"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413712"
 ---
 # <a name="channel-setup-prerequisites"></a>チャネル設定の前提条件
 

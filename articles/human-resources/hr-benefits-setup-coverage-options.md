@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419418"
 ---
 # <a name="create-coverage-options"></a>補充オプションの作成
 
@@ -31,7 +31,7 @@ Microsoft Dynamics 365 Human Resources の補償オプションは、福利厚�
 
 補償オプションを定義したら、補償オプションを福利厚生計画タイプに関連付けます。 そして計画タイプは、給付金計画またはプログラムに関連付けられます。 計画タイプに関連付けられた補償オプションは、その計画タイプで作成されたすべての計画で使用できます。 
 
-1. **給付金管理**ワーク スペースの**設定**で、**補償オプション**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**補償オプション** を選択します。
 
 2. **新規** を選択します。
 
@@ -49,9 +49,9 @@ Microsoft Dynamics 365 Human Resources の補償オプションは、福利厚�
    | **最小パーセント** | パーセンテージ補償コードを選択した場合の最小パーセンテージ。 |
    | **最大パーセント** | パーセンテージ補償コードを選択した場合の最大パーセンテージ。 |
 
-4. **個人担当者の適格性オプション**では、各補償オプションに適切な個人担当者の適格性オプションを付けます。
+4. **個人担当者の適格性オプション** では、各補償オプションに適切な個人担当者の適格性オプションを付けます。
 
-5. **セルフサービス**で、次のフィールドの値を指定します。
+5. **セルフサービス** で、次のフィールドの値を指定します。
 
    | フィールド | 説明 |
    | --- | --- |

@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.openlocfilehash: db1a6887e7742700dd3451c9a877b948b5ab691b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207281"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431991"
 ---
 # <a name="outbound-process-overview"></a>出荷プロセスの概要
 
@@ -62,7 +62,7 @@ ms.locfileid: "3207281"
 
 [![在庫出荷注文の終了オプション](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-倉庫作業員が、ピッキング リスト数量を削減するときに、対応する在庫注文数量は出荷から削除されます。 ピッキング リストがある時点で更新されると、**在庫出荷注文の終了**オプションが**はい**に設定されている場合、残りの数量は注文に戻ります。 **在庫出荷注文の終了**オプションが**いいえ**に設定されている場合、残りの数量は出荷注文の数量として維持され、**出荷注文を開く**機能の一部として新しいピッキング リストに追加する必要があります。 
+倉庫作業員が、ピッキング リスト数量を削減するときに、対応する在庫注文数量は出荷から削除されます。 ピッキング リストがある時点で更新されると、**在庫出荷注文の終了** オプションが **はい** に設定されている場合、残りの数量は注文に戻ります。 **在庫出荷注文の終了** オプションが **いいえ** に設定されている場合、残りの数量は出荷注文の数量として維持され、**出荷注文を開く** 機能の一部として新しいピッキング リストに追加する必要があります。 
 
 [![[機能] メニューで [出荷注文を開く] コマンド](./media/open-output-order.png)](./media/open-output-order.png)
 

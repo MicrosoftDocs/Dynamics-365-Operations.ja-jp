@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 87c46cd7ee7410e1c7cb88868cd19f5075482f8c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975659"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431707"
 ---
 # <a name="reduction-days-example"></a>下方修正日数の例 
 
@@ -72,7 +72,7 @@ ms.locfileid: "3975659"
 
 顧客から、2 日間 (3 月 10 日と 3 月 11 日) のサービスは不要だという報告が出されます。 そこで、これら 2 日分の定期売買を削減することに合意します。
 
-**下方修正日数**タイプの新しいトランザクションを、次の表に示すように作成します。
+**下方修正日数** タイプの新しいトランザクションを、次の表に示すように作成します。
 
 <table>
 <colgroup>

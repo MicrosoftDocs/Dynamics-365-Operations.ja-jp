@@ -19,23 +19,23 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982824"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432204"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
 [!include [banner](../includes/banner.md)]
 
-需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Dynamics 365 Supply Chain Management の**履歴外需** (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
+需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Dynamics 365 Supply Chain Management の **履歴外需** (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
 
-**データ管理**ワークスペースで、エンティティのすべてのフィールドの概要を表示することができます。
+**データ管理** ワークスペースで、エンティティのすべてのフィールドの概要を表示することができます。
 
-1. **データ管理**ワークスペースを開きます。
+1. **データ管理** ワークスペースを開きます。
 2. **データ エンティティ** タイルをクリックします。
-3. エンティティの一覧で、**履歴外需**を探します。
+3. エンティティの一覧で、**履歴外需** を探します。
 4. **ターゲット フィールド** をクリックします。 次のエンティティ フィールドは必須です: サイト (**DeliveringSiteId**)、日付 (**DemandDate**)、数量 (**DemandQuantity**)、および品目番号 (**ItemNumber**) か品目配賦キー (**ProductAllocationKeyId**) のいずれか。
 
 データ エンティティを使用するには、履歴需要データを含む Microsoft Excel ファイルまたはコンマ区切り値 (CSV) ファイルが必要です。 次の例では、CSV ファイルからデータをインポートする方法を示します。
@@ -45,7 +45,7 @@ ms.locfileid: "3982824"
 次のファイルを例として使用できます。 [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast) をダウンロードします。 このファイルには、品目 D0001 の需要履歴データが含まれています。 また、次の必須フィールドのみが含まれています: サイト、数量、および需要の日付。
 
 1. 履歴需要データをインポートする会社を選択します。
-2. **データ管理**ワークスペースを開きます。
+2. **データ管理** ワークスペースを開きます。
 3. **インポート** タイルをクリックします。
 4. インポート プロジェクトの名前を入力します (たとえば、**品目 D0001 の履歴需要のインポート**)。
 5. **ソース データ形式** フィールドで、インポートするファイルのファイル形式を選択します。 この例の HistoricalDemandData ファイルをインポートするには、**CSV** を選択します。

@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017716"
+ms.locfileid: "4432300"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 
@@ -49,7 +49,7 @@ ms.locfileid: "4017716"
 
 ラベル印刷プロセスの一部として、この例のテキスト `$LicensePlateId$` はデータ値に置き換えられます。
 
-印刷される値を表示するには、 **倉庫管理 \> 照会およびレポート \> ライセンス プレート ラベル** に移動します。
+印刷される値を表示するには、**倉庫管理 \> 照会およびレポート \> ライセンス プレート ラベル** に移動します。
 
 いくつかの広く使用されているラベル生成ツールには、ラベル レイアウトのテキストの書式設定に役立つものがあります。 これらのツールの多くは、`$FieldName$` 形式をサポートしています。 さらに、Microsoft Dynamics 365 Supply Chain Management では、ドキュメント ルーティング レイアウトのフィールド マッピングの一部として特別な書式設定ロジックを使用しています。
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 この形式の説明は以下の通りです:
 
-- `FieldName` はデータ フィールドの名前 ( **数量** など) です。
+- `FieldName` はデータ フィールドの名前 (**数量** など) です。
 - `FormatString` は、データの印刷方法を定義します。
 
-次の例では、作業数量 ( **数量** ) フィールドをカスタマイズする方法を示します。
+次の例では、作業数量 (**数量**) フィールドをカスタマイズする方法を示します。
 
 - (プレースホルダーとしてゼロを使用して) 常に 4 桁を表示するには、`$Qty:0000$` を使用します。 たとえば、数量が 10 の場合、ラベルは "0010" と表示されます。
 - 常に小数点以下 2 桁を表示するには、`$Qty:0.00$` を使用します。 たとえば、数量が 10 の場合、ラベルは "10.00" と表示されます。

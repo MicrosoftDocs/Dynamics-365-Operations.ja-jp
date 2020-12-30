@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 37a16eed6c5a73eb8166ac5ea2469860424aaafd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981749"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432083"
 ---
 # <a name="create-time-windows"></a>時間枠の作成   
 
@@ -31,7 +31,7 @@ ms.locfileid: "3981749"
 
 サービス注文明細行のスケジューリングを最適化するために時間枠を使用できます。
 
-1. **サービス管理** \> **設定** \> **サービス契約** \> **時間枠**の順にクリックします。
+1. **サービス管理** \> **設定** \> **サービス契約** \> **時間枠** の順にクリックします。
 2. **Alt + N** キーを押して、新しい時間枠を作成します。
 3. **時間枠** フィールドに、時間枠の名前を入力します。
 4. **説明** フィールドに、時間枠の説明を入力します。

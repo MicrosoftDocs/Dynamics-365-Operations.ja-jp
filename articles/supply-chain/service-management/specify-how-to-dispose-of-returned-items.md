@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981669"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431632"
 ---
 # <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定 
 
@@ -168,9 +168,9 @@ ms.locfileid: "3981669"
 
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>検査指示の廃棄コードの選択
 
-1.  **在庫管理** \> **定期処理** \> **品質管理** \> **検査指示**の順にクリックします。
+1.  **在庫管理** \> **定期処理** \> **品質管理** \> **検査指示** の順にクリックします。
 
-2.  既存の検査指示に対して、**概要**タブの**廃棄コード**フィールドからアクションを選択します。
+2.  既存の検査指示に対して、**概要** タブの **廃棄コード** フィールドからアクションを選択します。
 
 
 

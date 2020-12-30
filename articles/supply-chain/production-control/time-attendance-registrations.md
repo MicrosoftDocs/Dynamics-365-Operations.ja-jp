@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9b6fa5715a04aa8077651f5c6e29e6bca83d763c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432008"
 ---
 # <a name="time-and-attendance-registration-overview"></a>時刻と出勤の登録の概要
 

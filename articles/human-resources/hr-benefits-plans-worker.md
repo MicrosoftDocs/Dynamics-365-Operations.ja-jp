@@ -19,17 +19,17 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429154"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419323"
 ---
 # <a name="create-worker-benefit-plans"></a>作業者の給付金プランの作成
 
 Microsoft Dynamics 365 Human Resources で作業者の給付金プランを作成して、従業員の給付金プランを選択および給付金プランの選択を確認することができます。 通常、従業員は従業員のセルフ サービスを使用して給付金プランを選択し、給付金プランの管理者はその選択を確認します。 
 
-1. **給付金管理**ワーク スペースの**プラン**で、**作業者の給付金プラン**を選択します。
+1. **給付金管理** ワーク スペースの **プラン** で、**作業者の給付金プラン** を選択します。
 
 2. **新規** を選択します。
 

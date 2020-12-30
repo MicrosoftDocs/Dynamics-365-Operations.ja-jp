@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 09dca3012952b739a75a6930908752fba73a4550
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431911"
 ---
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>非製造環境での標準原価を更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "3214114"
 
 次のガイドラインでは、標準原価の更新に 2 バージョンによるアプローチを使用することを想定しています。 この方法では、1 番目の原価バージョンには凍結期間の最初に定義された標準原価が含まれ、2 番目の原価バージョンには差分の更新が含まれます。 各更新は 2 番目の原価バージョンに収容される原価レコードとして入力され、最終的に各更新が有効になります。 代わりの 1 バージョンによるアプローチでは、最初に定義された標準原価セットを使用します。 2 バージョン方式では第 2 の原価バージョンを定義する必要があります。 原価バージョンの定義に関するガイドラインは次のとおりです。
 
--   **標準原価**の原価タイプを割り当てます。
+-   **標準原価** の原価タイプを割り当てます。
 -   **2016-UPDATES** など、原価バージョンの内容を示す意味のある識別子を割り当てます。
 -   内容には必ず原価レコードが含まれるようにします。
 -   すべてのサイトの原価レコードの入力を許可します。 サイトを指定すると、原価レコードはそのサイトに対してのみ入力できます。

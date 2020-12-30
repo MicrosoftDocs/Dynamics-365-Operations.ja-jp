@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2d6593d0eb1949140b23bc1ea6bcb87b12193aa7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975563"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432183"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>派遣表の変更の取消 
 
@@ -34,13 +34,13 @@ ms.locfileid: "3975563"
 
 派遣表の未保存の変更を取り消すには、次の手順を使用します。
 
-1.  **サービス管理** \> **定期処理** \> **派遣表**の順にクリックします。
+1.  **サービス管理** \> **定期処理** \> **派遣表** の順にクリックします。
 
-2.  **派遣表**フォームのフィールドに関連情報を入力し、**OK**をクリックします。 
+2.  **派遣表** フォームのフィールドに関連情報を入力し、**OK** をクリックします。 
 
-3.  未保存の最新の変更を取り消すには、**元に戻す**をクリックします。
+3.  未保存の最新の変更を取り消すには、**元に戻す** をクリックします。
 
-4.  未保存の一連の変更を取り消すには、破棄したい変更がすべて取り消されるまで、**元に戻す**を繰り返しクリックします。
+4.  未保存の一連の変更を取り消すには、破棄したい変更がすべて取り消されるまで、**元に戻す** を繰り返しクリックします。
 
 ## <a name="see-also"></a>参照
 

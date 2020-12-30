@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 90054b17283a9e081f9993e76a6860404dadac0f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978848"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431914"
 ---
 # <a name="accrue-subscription-revenue"></a>未収の定期売買収益 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **定期処理** \> **サービスの定期売買** \> **未収の定期売買収益**の順にクリックします。
+1.  **サービス管理** \> **定期処理** \> **サービスの定期売買** \> **未収の定期売買収益** の順にクリックします。
 
-2.  **期間コード**フィールドで、期間コードを選択します。 選択した期間コードを持つすべての定期売買手数料トランザクションについて、売上が転記されます。
+2.  **期間コード** フィールドで、期間コードを選択します。 選択した期間コードを持つすべての定期売買手数料トランザクションについて、売上が転記されます。
 
-3.  **転記日付**フィールドで、転記日付を入力して、**OK**をクリックします。
+3.  **転記日付** フィールドで、転記日付を入力して、**OK** をクリックします。
 
 
 > [!NOTE]

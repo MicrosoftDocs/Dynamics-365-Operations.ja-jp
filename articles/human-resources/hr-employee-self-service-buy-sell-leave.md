@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711821"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419446"
 ---
 # <a name="buy-and-sell-leave"></a>休暇の売買
 
@@ -35,7 +35,7 @@ Dynamics 365 Human Resources では、会社が設定した [購入と売却] �
 
 2. **休暇のタイプ** を追加し、購入したい休暇の金額を **金額** に入力します。 
 
-3. 申請を送信する準備ができたら、**送信**を選択します。 
+3. 申請を送信する準備ができたら、**送信** を選択します。 
 
 残高は、更新の前に自動的に更新されるか、または更新前に承認プロセスが開始されます。 これは、購入ポリシーがどのように構成されているかによって異なります。
 
@@ -45,7 +45,7 @@ Dynamics 365 Human Resources では、会社が設定した [購入と売却] �
 
 2. **休暇のタイプ** を追加し、売却する休暇の金額を **金額** に入力します。 
 
-3. 申請を送信する準備ができたら、**送信**を選択します。
+3. 申請を送信する準備ができたら、**送信** を選択します。
 
 残高は、更新の前に自動的に更新されるか、または更新前に承認プロセスが開始されます。 これは、購入ポリシーがどのように構成されているかによって異なります。
 

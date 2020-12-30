@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 165c1c89af52aac0b540cb6aee577d717d12b0f6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979735"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431634"
 ---
 # <a name="subscription-groups"></a>定期売買グループ    
 
@@ -34,7 +34,7 @@ ms.locfileid: "3979735"
 
   - 定期売買の番号順序コード (存在する場合)。
 
-  - 定期売買トランザクションが作成される請求期間。 たとえば、**定期売買グループ**フォームの**請求**期間コードが**四半期に1 回**に設定されている場合、定期売買グループに関連付けられているすべての定期売買のトランザクションが四半期単位で作成されます。
+  - 定期売買トランザクションが作成される請求期間。 たとえば、**定期売買グループ** フォームの **請求** 期間コードが **四半期に1 回** に設定されている場合、定期売買グループに関連付けられているすべての定期売買のトランザクションが四半期単位で作成されます。
 
   - 定期売買が計上される頻度 (行われる場合)。
 

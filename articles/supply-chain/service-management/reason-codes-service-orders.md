@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec8a318561663f4a1b2cfd7735b5c1a5d18e8c0f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975779"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431713"
 ---
 # <a name="reason-codes-for-service-orders"></a>サービス注文の理由コード   
 
@@ -38,9 +38,9 @@ ms.locfileid: "3975779"
 
 理由コードはオプションです。 特定のサービス ステージにサービス注文を更新するときに理由コードを要求するかどうかを選択できます。
 
-1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ** の順にクリックします。
 
-2.  **サービス ステージ**フォームで、サービス ステージを選択し、そのサービスのステージの**理由**チェック ボックスをオンにします。
+2.  **サービス ステージ** フォームで、サービス ステージを選択し、そのサービスのステージの **理由** チェック ボックスをオンにします。
 
 3.  フォームを閉じて、変更を保存します。
 

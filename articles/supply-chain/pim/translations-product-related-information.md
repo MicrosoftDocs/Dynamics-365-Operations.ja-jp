@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980993"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431810"
 ---
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
@@ -40,7 +40,7 @@ ms.locfileid: "3980993"
 -   製品属性値の説明、フレンドリ名、およびヘルプ テキスト。
 -   製品分析コード値の名前と説明。
 
-**テキストの翻訳** ページから使用できる任意の言語に、製品関連情報を翻訳できます。 詳細については、**製品関連情報の翻訳を作成する方法**を参照してください。
+**テキストの翻訳** ページから使用できる任意の言語に、製品関連情報を翻訳できます。 詳細については、**製品関連情報の翻訳を作成する方法** を参照してください。
 
 ## <a name="where-can-i-view-the-translated-information"></a>翻訳された情報はどこで表示できますか。
 製品関連情報の翻訳は、翻訳で利用可能な言語を使用する、請求書などの外部元伝票すべてで表示できます。

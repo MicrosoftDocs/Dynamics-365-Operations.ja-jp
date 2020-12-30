@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88e732f64b389acafee23427594225dfacda71cc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985771"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431916"
 ---
 # <a name="template-boms"></a>テンプレート BOM    
 
@@ -109,11 +109,11 @@ BOM 内の品目を交換する場合は、BOM デザイナで BOM 明細行の�
 
 ## <a name="set-up-number-sequences"></a>番号順序の設定
 
-1.  **Number sequences**リスト ページで、テンプレート BOM と BOM 履歴行番号の番号順序を作成します。 
+1.  **Number sequences** リスト ページで、テンプレート BOM と BOM 履歴行番号の番号順序を作成します。 
 
-2.  **サービス管理** \> **設定** \> **サービス管理パラメーター**の順にクリックします。
+2.  **サービス管理** \> **設定** \> **サービス管理パラメーター** の順にクリックします。
 
-3.  **番号順序**をクリックし、**番号順序**フォームで作成した番号順序の参照に対する番号順序コードを選択します。
+3.  **番号順序** をクリックし、**番号順序** フォームで作成した番号順序の参照に対する番号順序コードを選択します。
 
 4.  フォームを閉じて、変更を保存します。
 

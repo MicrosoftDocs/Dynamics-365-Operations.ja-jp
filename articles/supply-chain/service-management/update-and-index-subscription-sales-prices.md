@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432118"
 ---
 # <a name="update-and-index-subscription-sales-prices"></a>定期売買販売価格の更新および指数化 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買**の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買** の順にクリックします。
 
 2.  指数または基準価格を更新する定期売買を選択します。
 
-3.  **指数**をクリックします。 **変更**フィールドで、基準価格または指数を更新する方法、および割合と新しい値のどちらを更新に使用するかを指定します。 次のオプションを選択できます。
+3.  **指数** をクリックします。 **変更** フィールドで、基準価格または指数を更新する方法、および割合と新しい値のどちらを更新に使用するかを指定します。 次のオプションを選択できます。
     
       - **指数 (%)**
     

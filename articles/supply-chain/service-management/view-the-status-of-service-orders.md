@@ -19,18 +19,18 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5d81b33a9f30143891da6c7f21dc728e6e4fe7b8
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432120"
 ---
 # <a name="view-the-status-of-service-orders"></a>サービス注文のステータスを表示 
 
 [!include [banner](../includes/banner.md)]
 
 
-サービス注文のサービス活動の状態を表示するためには**派遣表**フォームを使用できます。
+サービス注文のサービス活動の状態を表示するためには **派遣表** フォームを使用できます。
 
 ## <a name="more-information-about-service-orders"></a>サービス注文に関する詳細
 

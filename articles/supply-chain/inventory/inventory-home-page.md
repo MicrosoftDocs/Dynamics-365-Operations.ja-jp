@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce9d22fa9a3a08b08f65943ba027ace8204d4443
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212805"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431723"
 ---
 # <a name="inventory-management-overview"></a>在庫管理の概要
 
@@ -57,4 +57,4 @@ ms.locfileid: "3212805"
 [Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/axmfg) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、在庫管理やその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。
 
 ### <a name="task-guides"></a>タスク ガイド
-追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの**ヘルプ** ボタンをクリックします
+追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの **ヘルプ** ボタンをクリックします

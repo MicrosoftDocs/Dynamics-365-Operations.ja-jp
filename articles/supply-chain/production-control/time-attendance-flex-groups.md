@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826506"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432007"
 ---
 # <a name="flex-groups"></a>フレックス グループ
 

@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432215"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
@@ -52,7 +52,7 @@ ms.locfileid: "3204013"
 
 ### <a name="export-a-default-warehouse-template"></a>既定の倉庫テンプレートのエクスポート 
 
-1. **データ管理**ワークスペースを開きます。
+1. **データ管理** ワークスペースを開きます。
 
     > [!NOTE]
     > 最初にこのワークスペースを使用する場合、続行する前に、すべてのデータ エンティティを読み込む必要があります。
@@ -60,7 +60,7 @@ ms.locfileid: "3204013"
 2. **テンプレート** タイルをオンにし、**既定のテンプレートの読み込み** を選択して既定のテンプレートを読み込みます。
 
     > [!NOTE]
-    > **既定のテンプレートの読み込み** は、**拡張** 表示でのみ使用できます。 **フレームワーク パラメーター** を選択し、次に **既定値の表示**フィールドで、**拡張表示** を選択します。
+    > **既定のテンプレートの読み込み** は、**拡張** 表示でのみ使用できます。 **フレームワーク パラメーター** を選択し、次に **既定値の表示** フィールドで、**拡張表示** を選択します。
 
 3. 既定のテンプレートが読み込まれた後、業務要件を満たすように変更することができます。
 

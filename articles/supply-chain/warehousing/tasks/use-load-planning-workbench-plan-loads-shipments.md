@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c37a98a3728cb1233a6e1207975a6b8f23f8120d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015921"
+ms.locfileid: "4432343"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>積荷計画ワークベンチを使用した積荷および出荷の計画
 
@@ -48,7 +48,7 @@ ms.locfileid: "4015921"
 ## <a name="create-a-new-load"></a>新しい積荷の作成
 1. **ナビゲーション ウィンドウ > モジュール > 輸送管理 > 計画 > 積荷計画ワークベンチ** の順に移動します。
 2. **販売明細行** タブを選択します。次に、作成した販売注文の積荷を構築します。 積荷は、発注書、移動オーダー、および販売注文からの供給と需要に基づいて作成することができます。  
-3. アクション ウィンドウで、 **供給と需要** を選択します。
+3. アクション ウィンドウで、**供給と需要** を選択します。
 4. **新しい積荷へ** を選択します。
 5. **読み込みテンプレート ID** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。 積荷のテンプレートには、積荷全体の重量および容積の最大測定値を定義します。 たとえば、積荷テンプレートは、コンテナーまたはトラックのサイズを表す場合があります。 品目を選択します。
 6. **OK** を選択します。

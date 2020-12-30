@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.openlocfilehash: d96d1cd91bad4f950868074d9558cb403821d73f
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546365"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432125"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Supply Chain Management の製品と Field Service の製品との同期
 
@@ -32,9 +32,9 @@ ms.locfileid: "3546365"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-使用されている **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、見込顧客を現金化の**製品 (Supply Chain Management から Sales) – 直接**テンプレートに基づきます。 詳細については、[製品 (Supply Chain Management から Sales) - 直接](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
+使用されている **Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、見込顧客を現金化の **製品 (Supply Chain Management から Sales) – 直接** テンプレートに基づきます。 詳細については、[製品 (Supply Chain Management から Sales) - 直接](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
 
-このトピックでは、**Field Service 製品 (Supply Chain Management から Field Service)** および**製品 (Supply Chain Management から Sales) – 直接**テンプレートの間の違いのみを説明します。
+このトピックでは、**Field Service 製品 (Supply Chain Management から Field Service)** および **製品 (Supply Chain Management から Sales) – 直接** テンプレートの間の違いのみを説明します。
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
@@ -46,7 +46,7 @@ ms.locfileid: "3546365"
 
 - 製品 - 製品
 
-**Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、**製品 (Supply Chain Management から Sales) – 直接**テンプレートに含まれていないマッピングに基づきます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
+**Field Service 製品 (Supply Chain Management から Field Service)** テンプレートは、**製品 (Supply Chain Management から Sales) – 直接** テンプレートに含まれていないマッピングに基づきます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
 
 ```plaintext
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-Supply Chain Management で、**販売可能なリリース済製品**データ エンティティ上の **Field Service 製品タイプ**の値は次のように計算されます。
+Supply Chain Management で、**販売可能なリリース済製品** データ エンティティ上の **Field Service 製品タイプ** の値は次のように計算されます。
 
 - **在庫:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = True
 - **在庫なし:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = False

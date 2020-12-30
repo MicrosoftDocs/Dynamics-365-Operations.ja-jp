@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7ec7203506d7fa3e71211bd1547dc8474f5d17dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984229"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431840"
 ---
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 
@@ -39,7 +39,7 @@ ms.locfileid: "3984229"
 
 3 つの主要な計画プロセスは次のとおりです。
 
--  **マスター プラン** - マスター プランは正味必要量を計算します。 実際の現在の注文に基づき、会社が在庫補充を短期的、日常的なベースで管理できるようにします。 これを説明する別の用語は、*正味必要量プラン*です。 詳細については、[マスター プランの概要](master-plans.md) を参照してください。 
+-  **マスター プラン** - マスター プランは正味必要量を計算します。 実際の現在の注文に基づき、会社が在庫補充を短期的、日常的なベースで管理できるようにします。 これを説明する別の用語は、*正味必要量プラン* です。 詳細については、[マスター プランの概要](master-plans.md) を参照してください。 
 
 -  **予測計画** - 予測スケジュールは総必要量を計算します。 将来の予想 (または予測) に基づき、会社が材料と能力の長期計画を実行できるようにします。 詳細については、[需要予測の概要](introduction-demand-forecasting.md) を参照してください。 
 

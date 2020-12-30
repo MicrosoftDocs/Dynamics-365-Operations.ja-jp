@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 4c1e068d273374c6c8ac162a92be6130d85cbe40
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888692"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431786"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>メンテナンス作業者のカレンダーとスケジューリング
 
@@ -31,7 +31,7 @@ ms.locfileid: "3888692"
 
  
 
-作業指示書をスケジュールする場合、メンテナンス作業者、ツール、および資産に対してスケジュールを作成します。 メンテナンス作業者のスケジュールするには、各メンテナンス作業者に対してカレンダーを設定する必要があります。 メンテナンス作業者はリソースに関連付けられ、作業時間カレンダーはリソースに対して設定されます。 リソースおよびカレンダーは、**資産管理** > **設定** > **作業者** > **作業者**で設定することができ、[メンテナンス作業者と作業者グループ](../setup-for-objects/workers-and-worker-groups.md) で説明されています。
+作業指示書をスケジュールする場合、メンテナンス作業者、ツール、および資産に対してスケジュールを作成します。 メンテナンス作業者のスケジュールするには、各メンテナンス作業者に対してカレンダーを設定する必要があります。 メンテナンス作業者はリソースに関連付けられ、作業時間カレンダーはリソースに対して設定されます。 リソースおよびカレンダーは、**資産管理** > **設定** > **作業者** > **作業者** で設定することができ、[メンテナンス作業者と作業者グループ](../setup-for-objects/workers-and-worker-groups.md) で説明されています。
 
 次のスクリーンショットは、「生産」の作業時間カレンダーを使用するリソースに関連付けられているメンテナンス作業者の例を示しています。
 

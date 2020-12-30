@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 29c21ceb4c259f463f4a039942e51141201a9809
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097050"
+ms.locfileid: "4413895"
 ---
 # <a name="set-up-an-experiment"></a>実験の設定
 
@@ -43,7 +43,7 @@ ms.locfileid: "4097050"
 成功したメトリックスを設定するには、次の手順を実行します。
 
 1. Commerce のサイト ビルダーで、左側のナビゲーション ウィンドウの **ページ** を選択して、メトリックスを収集するページを選択します。 
-1. 追跡するページまたはモジュールの右側のプロパティ ウィンドウで、 **追跡するイベント ID** セクションに移動します。
+1. 追跡するページまたはモジュールの右側のプロパティ ウィンドウで、**追跡するイベント ID** セクションに移動します。
 1. **表示** を選択します。 すべてのイベント ID の一覧が表示されます。 追跡するイベントをコピーし、そのイベント キーをサードパーティ サービスの指定された場所に貼り付けます。 複数のイベントが必要な場合は、一度に 1 つのキーをコピーします。 
     - ページビューや収益追跡など、使用可能なすべてのイベントと属性を表示する方法については、[診断とトラブルシューティングの Commerce コンポーネント イベント](dev-itpro/retail-component-events-diagnostics-troubleshooting.md) を参照してください。
 1. 必要に応じて、サードパーティ サービスで、メトリックスを追跡するためのその他の手順を実行します。

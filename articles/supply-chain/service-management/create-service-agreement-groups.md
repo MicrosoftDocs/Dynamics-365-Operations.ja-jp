@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0f76051d4d85d84362d171ba25330c7c260d88bb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978462"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432154"
 ---
 # <a name="create-service-agreement-groups"></a>サービス契約グループの作成 
 
@@ -31,7 +31,7 @@ ms.locfileid: "3978462"
 
 サービス契約グループは、サービス契約の並べ替えやフィルタ処理に便利です。
 
-1. **サービス管理** \> **設定** \> **サービス契約** \> **サービス契約グループ**の順にクリックします。
+1. **サービス管理** \> **設定** \> **サービス契約** \> **サービス契約グループ** の順にクリックします。
 2. **Alt + N** キーを押して、新しいサービス契約グループを作成します。
 3. **サービス契約グループ** フィールドで、サービス契約グループの ID を入力します。
 4. **説明** フィールドに、サービス契約グループの説明を入力します。

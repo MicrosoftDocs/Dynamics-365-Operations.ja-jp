@@ -20,11 +20,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 49bfcaa4c05ea8e6cc6bf0a8f855f2474cea35bc
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023215"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413865"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
 
@@ -50,7 +50,7 @@ Modern POS (MPOS) とクラウド POS は、言語設定と翻訳が店舗とユ
 
 ### <a name="configuring-the-stores-language-setting"></a>店舗の言語設定のコンフィギュレーション
 
-店舗の言語設定は、**一般 &gt; 地域の設定 &gt; 言語**の、**店舗**ページにある**すべての店舗**から設定します。 ドロップ ダウン リストを使用して、各店舗の言語を選択します。
+店舗の言語設定は、**一般 &gt; 地域の設定 &gt; 言語** の、**店舗** ページにある **すべての店舗** から設定します。 ドロップ ダウン リストを使用して、各店舗の言語を選択します。
 
 ## <a name="user-interface-language"></a>ユーザー インターフェイス言語
 
@@ -58,7 +58,7 @@ POS ユーザーの言語設定によって、アプリケーション ユーザ
 
 ### <a name="configuring-the-users-language-setting"></a>ユーザーの言語設定のコンフィギュレーション
 
-POS ユーザーの言語設定は、**Retail とコマース &gt; 言語**の下の、**作業者**ページの**すべての作業者**から設定します。 メインのプロフィール タブでは設定しません。この設定は POS では使用されません。 ユーザーの言語が設定されていないか、翻訳が使用できない言語に設定されている場合、POS は店舗の言語に戻ります。
+POS ユーザーの言語設定は、**Retail とコマース &gt; 言語** の下の、**作業者** ページの **すべての作業者** から設定します。 メインのプロフィール タブでは設定しません。この設定は POS では使用されません。 ユーザーの言語が設定されていないか、翻訳が使用できない言語に設定されている場合、POS は店舗の言語に戻ります。
 
 |             | [UI l言語]                  | [データ言語 (製品、受領書フォーマット、ライン ディスプレイなど)] |
 |-------------|----------------------------|---------------------------------------------------------------|

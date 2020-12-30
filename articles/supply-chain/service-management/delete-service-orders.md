@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b2012f48ec6450ca4fc9e42cd7cfba0ced13ed15
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984109"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431879"
 ---
 # <a name="delete-service-orders"></a>サービス注文の削除 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **定期処理** \> **サービス注文** \> **サービス注文の削除**の順にクリックします。
+1.  **サービス管理** \> **定期処理** \> **サービス注文** \> **サービス注文の削除** の順にクリックします。
 
-2.  **サービス注文の削除**フォームで、**選択**をクリックして削除するサービス注文を選択する基準を指定して、**OK**をクリックします。
+2.  **サービス注文の削除** フォームで、**選択** をクリックして削除するサービス注文を選択する基準を指定して、**OK** をクリックします。
 
-3.  削除されたサービス注文を表示する情報ログを生成するには、**情報ログの表示**チェック ボックスをオンにします。
+3.  削除されたサービス注文を表示する情報ログを生成するには、**情報ログの表示** チェック ボックスをオンにします。
 
 4.  **OK** をクリックします。
 
