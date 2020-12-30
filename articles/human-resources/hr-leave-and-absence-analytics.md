@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: a6cca83cf6eb17d9d700058365ac54c54efca7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429088"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419429"
 ---
 # <a name="view-analytics-for-leave-and-absence"></a>休暇の分析の表示
 
@@ -31,7 +31,7 @@ Dynamics 365 Human Resources は、組織の休暇のトレンドを理解する
 
 ## <a name="view-leave-and-absence-analytics"></a>休暇の分析の表示
 
-1. **休暇**ワークスペースで、**分析**タブを選択します。
+1. **休暇** ワークスペースで、**分析** タブを選択します。
 
 2. 下部にあるタブから、次のビューのいずれかを選択します。
 

@@ -19,11 +19,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023212"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413638"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 
@@ -72,7 +72,7 @@ ms.locfileid: "3023212"
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>POS トランザクション画面の営業担当者情報の照会
 
-POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。**販売担当者**フィールドは、入荷ウィンドウの明細行タブに追加できます。これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。
+POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。**販売担当者** フィールドは、入荷ウィンドウの明細行タブに追加できます。これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>販売担当者操作を POS ボタン グリッドに追加する
 

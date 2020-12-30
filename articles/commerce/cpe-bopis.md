@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599799"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413650"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce の評価環境で BOPIS を構成する
 
@@ -44,7 +44,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> レジスター の順に移動します**。
 2. **SANFRAN-5** の登録を選択し、 **編集** を選択します。
-3. **ハードウェア プロファイル** フィールドの値を **HW002** から **HW001**に変更し、**保存** をクリックします。
+3. **ハードウェア プロファイル** フィールドの値を **HW002** から **HW001** に変更し、**保存** をクリックします。
 4. 変更を同期するには、、**小売りと Commerce \> 小売りとCommerce IT \> 配送スケジュール** の順に移動します。
 5. 配送スケジュールに **1090** を選択し、アクション ウィンドウで **今すぐ実行** を選択します。
 6. **はい** を選択し、続いて **OK** をクリックしてデータの同期を開始します。 
@@ -54,7 +54,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> デバイス の順に移動します**。
 2. デバイスに **SANFRANCIS-5** を選択します。
 3. アクション ウィンドウで **ダウンロード** を選択し、続いて **構成ファイル** を選択します。
-4. **ダウンロード**を選択し、**Retail Modern POS** を選択します。 
+4. **ダウンロード** を選択し、**Retail Modern POS** を選択します。 
 5. **ModernPOSSetup** ファイルのダウンロードが完了したら、**ファイルを開く** を選択します。
 
     ![ファイルを開きます](./dev-itpro/media/PAYMENTS/openfile.png)
@@ -126,7 +126,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
     [トランザクション] 画面に明細行品目が追加され、**$0.00** が期日の残高として表示されます。
 
-5. **$0.00**の未払の残高を選択するか、取引を完了する支払方法を選択します。
+5. **$0.00** の未払の残高を選択するか、取引を完了する支払方法を選択します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

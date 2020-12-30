@@ -20,11 +20,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817333"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413701"
 ---
 # <a name="add-a-logo"></a>ロゴの追加
 
@@ -50,8 +50,8 @@ ms.locfileid: "3817333"
 
 サイトのヘッダー フラグメントにロゴを追加するには、次の手順を実行します。
 
-1. 左のナビゲーション ウィンドウで、**フラグメント**を選択します。
-1. 作成したヘッダー フラグメントを選択し、**編集**を選択します。
+1. 左のナビゲーション ウィンドウで、**フラグメント** を選択します。
+1. 作成したヘッダー フラグメントを選択し、**編集** を選択します。
 1. ヘッダー モジュールを展開します。
 1. ヘッダー モジュールのプロパティ ウィンドウで、ロゴの画像とリンクを提供します。 
 1. ヘッダー フラグメントを保存し、編集を終了して、公開します。

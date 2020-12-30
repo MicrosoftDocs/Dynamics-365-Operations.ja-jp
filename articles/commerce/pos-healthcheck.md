@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013207"
+ms.locfileid: "4413877"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 
@@ -66,7 +66,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このよ
 
 ### <a name="using-the-health-check-operation-in-the-pos"></a>POS での正常性チェック操作の使用
 
-POS で正常性チェック操作が開始されると、コンフィギュレーションされたデバイスの一覧と各デバイスの状態が右側のウィンドウに表示されます。 単一のデバイスに対して正常性チェックを行うには、デバイスを選択して、 **選択先をテスト** を選択します。 すべてのデバイスに対して正常性チェックを行うには、 **すべてテスト** を選択します。 **すべてテスト** 機能は、すべてのデバイスを一度に 1 つずつテストし、 **状態** 列の各デバイスの状態を更新します。
+POS で正常性チェック操作が開始されると、コンフィギュレーションされたデバイスの一覧と各デバイスの状態が右側のウィンドウに表示されます。 単一のデバイスに対して正常性チェックを行うには、デバイスを選択して、**選択先をテスト** を選択します。 すべてのデバイスに対して正常性チェックを行うには、**すべてテスト** を選択します。 **すべてテスト** 機能は、すべてのデバイスを一度に 1 つずつテストし、**状態** 列の各デバイスの状態を更新します。
 
 **最後のチェック** 列には、各デバイスに対して正常性チェックがいつ最後に行われたかが表示されます。
 

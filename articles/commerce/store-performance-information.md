@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 8d95bb0927de5a1906efe180cb9e725c380a724f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023179"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413823"
 ---
 # <a name="analyze-store-performance"></a>店舗のパフォーマンスの分析
 
@@ -32,7 +32,7 @@ ms.locfileid: "3023179"
 
 この記事では、アクセスしたり、参照したり、Dynamics 365 Commerce データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
 
-Retail の一部として、次の場所のいずれかの最初から用意されている**チャンネル概要**レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。
+Retail の一部として、次の場所のいずれかの最初から用意されている **チャンネル概要** レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。
 
 - **小売店舗管理** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **チャンネルの集計レポート**
 - **小売店舗の財務** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗の財務** &gt; **レポート** &gt; **チャンネルの集計レポート**

@@ -19,17 +19,17 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 78c65faa4ae0f428184700a912998e9dded026c5
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429408"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419327"
 ---
 # <a name="configure-future-life-events"></a>将来のライフ イベントのコンフィギュレーション
 
 Dynamics 365 Human Resources 将来のライフ サイクルをスケジュールできます。
 
-1. **給付金管理**ワーク スペースの**設定**で、**将来のライフ イベント**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**将来のライフ イベント** を選択します。
 
 2. **新規** を選択します。
 

@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 27e4f1c751ee865b0df536f3c1912cb1d8946032
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665005"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413664"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Dynamics 365 Commerce 環境での Azure Data Lake Storage の有効化
 
@@ -54,9 +54,9 @@ Azure Data Lake Storage を有効にするために必要な手順の詳しい�
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>環境での Azure Data Lake Storage の有効化
 
 1. 環境のバック オフィス ポータルにログインします。
-1. **システム パラメーター**を検索し、**データ接続**タブに移動します。 
-1. **Data Lake 統合の有効化**を**はい**に設定します。
-1. **Data Lake のトリクル更新**を**はい**に設定します。
+1. **システム パラメーター** を検索し、**データ接続** タブに移動します。 
+1. **Data Lake 統合の有効化** を **はい** に設定します。
+1. **Data Lake のトリクル更新** を **はい** に設定します。
 1. 次に、次の必要な情報を入力します。
     1. **アプリケーション ID** // **アプリケーション シークレット** // **DNS 名** - Azure Data Lake Storage シークレットが保存されている KeyVault に接続する必要があります。
     1. **シークレット名** - KeyVault に格納されていて、Azure Data Lake Storage の認証に使用されるシークレット名。
@@ -68,7 +68,7 @@ Azure Data Lake Storage を有効にするために必要な手順の詳しい�
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Azure Data Lake Storage 接続のテスト
 
-1. **Azure Key Vault のテスト**のリンクを使用して KeyVault への接続をテストします。
+1. **Azure Key Vault のテスト** のリンクを使用して KeyVault への接続をテストします。
 1. **Azure Storage のテスト** のリンクを使用して Azure Data Lake Storage への接続をテストします。
 
 > [!NOTE]
@@ -78,9 +78,9 @@ Azure Data Lake Storage を有効にするために必要な手順の詳しい�
 
 エンティティ格納の自動更新を有効にするには、以下の手順に従います。
 
-1. **エンティティ格納**を検索します。
-1. 左のリストで、**RetailSales** エントリに移動し、**編集**を選択します。
-1. **自動更新の有効化**が**はい**に設定されていることを確認してから**更新**を選択し、**保存**を選択します。
+1. **エンティティ格納** を検索します。
+1. 左のリストで、**RetailSales** エントリに移動し、**編集** を選択します。
+1. **自動更新の有効化** が **はい** に設定されていることを確認してから **更新** を選択し、**保存** を選択します。
 
 次の図は、自動更新が有効になっているエンティティ格納の例を示しています。
 

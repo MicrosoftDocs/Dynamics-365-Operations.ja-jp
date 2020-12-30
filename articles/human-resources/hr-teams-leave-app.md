@@ -3,7 +3,7 @@ title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3929996"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4419458"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -39,7 +39,7 @@ Human Resources アプリは、Teams ストアにあります。
 
    ![Teams Human Resources の休暇アプリの省略記号](./media/hr-teams-leave-app-ellipses.png)
  
-2. Dynamics 365 Human Resources を検索し、**Human Resources**タイルを選択します。
+2. Dynamics 365 Human Resources を検索し、**Human Resources** タイルを選択します。
 
    ![Teams Human Resources の休暇アプリの HR タイル](./media/hr-teams-leave-app-human-resources-tile.png)
 
@@ -86,7 +86,7 @@ Human Resources アプリは、Teams ストアにあります。
 
 ![Teams Human Resources 休暇アプリが申請を編集します](./media/hr-teams-leave-app-bot-edit.png)
  
-情報の入力が完了したら、**送信** を選択して、承認のために送信します。 また、**下書きとして保存**を選択すると、後で処理の続きを進めることができます。
+情報の入力が完了したら、**送信** を選択して、承認のために送信します。 また、**下書きとして保存** を選択すると、後で処理の続きを進めることができます。
 
 ![Teams Human Resources 休暇アプリが申請を送信します](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -116,17 +116,17 @@ Human Resources アプリは、Teams ストアにあります。
 
 3. 必要に応じて、理由コードを入力します。 また、コメントを入力して添付ファイルを追加します。
 
-4. 情報の入力が完了後は、**提出**と入力して承認を依頼します。 また、**下書きとして保存**と入力すると、後で処理の続きを進めることができます。
+4. 情報の入力が完了後は、**提出** と入力して承認を依頼します。 また、**下書きとして保存** と入力すると、後で処理の続きを進めることができます。
 
 ### <a name="manage-draft-requests"></a>申請の下書きを管理する
 
-1. **下書き**タブを選択します。
+1. **下書き** タブを選択します。
 
    ![Teams Human Resources 休暇アプリの下書きタブ](./media/hr-teams-leave-app-drafts-tab.png)
 
 2. 申請を編集するには鉛筆アイコンを選択するか、[ごみ箱] を選択することで申請を削除できます。
 
-3. 必要な変更を行います。 情報の入力が完了後は、**提出**と入力して承認を依頼します。 また、**下書きとして保存**を選択すると、後で処理の続きを進めることができます。
+3. 必要な変更を行います。 情報の入力が完了後は、**提出** と入力して承認を依頼します。 また、**下書きとして保存** を選択すると、後で処理の続きを進めることができます。
 
    ![Teams Human Resources 休暇アプリが下書きを編集します](./media/hr-teams-leave-app-drafts-edit.png)
    
@@ -187,6 +187,20 @@ Teams アプリで休暇申請を承認しようとしたときにエラーが�
 1. Microsoft Teams へのサインインに使用しているアカウントが、Dynamics 365 Human Resources にアクセスに使用しているアカウントと同じであることを確認します。
 
 2. 休暇承認のワークフロー設定を確認して、要求の有効な承認者であることを確認します。 休暇申請ワークフローの詳細については、[休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md) を参照してください。
+
+## <a name="known-accessibility-issues"></a>既知のアクセシビリティの問題
+
+Teams の Human Resources アプリには、今後のリリースに向けて修正を行っている次のようなアクセシビリティ上の問題があります。
+
+| 出庫 | 回避策または説明 |
+| --- | --- |
+| デスクトップで 400% に拡大すると、一部のアクション ボタンが表示されない場合があります。 | この拡大のレベルがサポートされるまで、代わりに拡大鏡を使用することをお勧めします。 |
+| **休暇** タブで、VoiceOver が、タイムアウト グリッドのヘッダーを読みながら、ボタンのアクションを読み上げます。 | グリッド内のヘッダーと要素は年によってグループ化され、折りたたむことができます。 VoiceOver は、これをアクション可能な項目として解釈しますが、アクション可能ではありません。 |
+| ポップアップまたはメニューが開いているときにスワイプすると、VoiceOver はポップアップまたはメニューのコンテンツを読み取りません。 | フィンガー スキャンを使用してコンテンツを確認します。 |
+| **休暇** タブで、新しい要求の **理由コード** へ移動する際に追加のスワイプ ジェスチャがあります。 | スワイプ ナビゲーションがアクセスしようとしている非表示のコントロールはありません。 |
+| **休暇** タブで、カレンダーが開いている状態でスワイプすると、新しい要求の上部または要求の編集中に移動するのではなく、コントロールの外部に出てしまいます。 | **今日に移動** が表示された場合、コントロールの最後で逆方向にスワイプして一番上に戻ることを検討してください。 |
+| VoiceOver は、日付のラベルを読み取りません。 | ペアになる日付は、常に **開始日** と **終了日** です。 |
+| **チャット** タブで、支援ツールまたはキーボードのナビゲーションを使用して日付を入力すると、フォーカスが上に戻ってきます。 | 入力領域に戻るまでタブを押し続けます。 |
 
 ## <a name="privacy-notice"></a>プライバシー通知
 

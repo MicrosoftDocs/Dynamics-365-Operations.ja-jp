@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431087"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419350"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Microsoft Dynamics 365 アプリでは、人事管理が表示されない
 
@@ -36,13 +36,13 @@ ms.locfileid: "3431087"
 
 1. Power Apps プラン 2 ライセンスを持つ管理者ユーザーは、[Power Apps 管理ポータル](https://preview.admin.powerapps.com/) を開く必要があります。
 
-2. **環境**を選択してから、人事管理の正しい環境を選択します。
+2. **環境** を選択してから、人事管理の正しい環境を選択します。
 
-3. **セキュリティ**タブの、**環境ロール**タブで、**環境メーカー**を選択します。
+3. **セキュリティ** タブの、**環境ロール** タブで、**環境メーカー** を選択します。
 
     ![環境ロール タブ](media/environment-roles.png)
 
-4. **ユーザー**タブで、ユーザーまたは組織を追加します。
+4. **ユーザー** タブで、ユーザーまたは組織を追加します。
 
     ![ユーザー タブ](media/environment-maker.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "3431087"
 
 6. ユーザーはこの時点で [Microsoft Dynamics 365](https://home.dynamics.com/) にサインインする必要があります。
 
-7. **同期**を選択してユーザー アプリを更新します。
+7. **同期** を選択してユーザー アプリを更新します。
 
     ![同期ボタン](media/get-more.png)
 

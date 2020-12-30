@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
-ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3700869"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413724"
 ---
 # <a name="enable-personalized-recommendations"></a>パーソナライズされた推奨事項の有効化
 
@@ -52,7 +52,7 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 1. Commerce Headquarters で、**機能管理** を検索します。
 1. **すべて** を選択して、使用可能な機能の一覧を表示します。 
 1. 検索ボックスに、**推奨事項** を入力します。
-1. **個人用設定がされた製品の推奨**機能を選択します。
+1. **個人用設定がされた製品の推奨** 機能を選択します。
 1. **個人用設定がされた製品の推奨** プロパティ ペインで、**すぐに有効化する** を選択します。
 
 ![個人用設定を有効にする](./media/FeatureManagement_Personalized.PNG)
@@ -100,9 +100,9 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 
 1. 製品収集モジュールを含む既存のサイト ビルダー ページを開きます。
 1. 左のナビゲーション ウィンドウで、製品収集モジュールを選択します。
-1. 右のナビゲーション ウィンドウの、**製品**で、リストを選択します。
-1. **製品リストのコンフィギュレーションの選**ダイアログ ボックスの、**タイプ**で、リスト タイプを選択します。
-1. **個人用設定を適用**チェック ボックスを選択し、**OK** を選択します。
+1. 右のナビゲーション ウィンドウの、**製品** で、リストを選択します。
+1. **製品リストのコンフィギュレーションの選** ダイアログ ボックスの、**タイプ** で、リスト タイプを選択します。
+1. **個人用設定を適用** チェック ボックスを選択し、**OK** を選択します。
 
     ![トレンド リストへの個人用設定の適用](./media/ApplyPersonalizationToTrending.PNG)
 

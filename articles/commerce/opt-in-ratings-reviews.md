@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057513"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413761"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>評価とレビューを使用するためのオプト イン
 
@@ -43,7 +43,7 @@ Commerce Web サイトで評価とレビューのソリューションを使用�
 
 1. [新しい E コマース サイトの配置](deploy-ecommerce-site.md) の手順に従ってください。
 1. まだ LCS を開いている間に、**小売配置の設定 \> その他の設定** の順に移動します。
-1. **評価およびレビュー サービスの有効化**オプションを、**はい**に設定します。
+1. **評価およびレビュー サービスの有効化** オプションを、**はい** に設定します。
 1. **評価およびレビュー モデレーター (セキュリティ グループ オブジェクト ID) の AAD セキュリティ グループ** フィールドで、評価およびレビュー モデレーターを含む Microsoft Azure Active Directory (Azure AD) セキュリティ グループの ID を入力します。
 
     ![評価とレビューを使用するためのオプト イン](media/LCS_RnR_Preference.png)

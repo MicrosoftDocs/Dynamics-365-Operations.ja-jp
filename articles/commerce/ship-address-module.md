@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7233b23020e6c82f39981d530095642902461807
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818401"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413914"
 ---
 # <a name="shipping-address-module"></a>発送先住所モジュール
 
@@ -59,13 +59,15 @@ Commerce 本社では、国や地域ごとに送付先住所の形式を定義�
 
 [買い物カゴ モジュール](add-cart-module.md)
 
-[買い物カゴ アイコン モジュール](cart-icon-module.md)
+[カート アイコン モジュール](cart-icon-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 
 [支払モジュール](payment-module.md)
 
 [配送オプション モジュール](delivery-options-module.md)
+
+[集荷情報モジュール](pickup-info-module.md)
 
 [注文詳細のモジュール](order-confirmation-module.md)
 

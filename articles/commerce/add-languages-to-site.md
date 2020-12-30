@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001418"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413692"
 ---
 # <a name="add-languages-to-your-site"></a>サイトに言語を追加する
 
@@ -40,10 +40,10 @@ Web サイトは、Commerce がサポートする任意の言語にローカラ�
 オンライン ストアに言語を追加するには、次の手順に従います。
 
 1. サイトの Dynamics 365 Commerce 環境を開きます。
-1. **Retail と Commerce \> チャネル \> オンライン ストア**の順に移動して、環境用にコンフィギュレーションされているオンライン ストアの一覧にアクセスします。 または、検索用語として**オンライン ストア**を入力します。
+1. **Retail と Commerce \> チャネル \> オンライン ストア** の順に移動して、環境用にコンフィギュレーションされているオンライン ストアの一覧にアクセスします。 または、検索用語として **オンライン ストア** を入力します。
 1. 言語を追加するオンライン ストアを選択します。
-1. **言語**クイック タブで、**追加**を選択します。
-1. **言語**フィールドで、追加する言語を選択します。
+1. **言語** クイック タブで、**追加** を選択します。
+1. **言語** フィールドで、追加する言語を選択します。
 
 追加した言語が使用可能になり、サイト作成環境で使用するようにサイトをコンフィギュレーションできるようになります。
 

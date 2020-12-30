@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961589"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413836"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>サイトにおける検索エンジン最適化 (SEO) の考慮事項
 
@@ -43,7 +43,7 @@ ms.locfileid: "3961589"
 
 サイトが運用中の場合、すべてのサイト ページが正しくタグ付けされていることを確認する必要があります。 Microsoft Dynamics 365 Commerce は、ページに入力された情報を使用して、ページのすべての SEO 情報を表示します。 カテゴリ ページの概要、リスト ページの概要、および製品ページの概要のモジュールは、この機能を提供します。
 
-検索エンジンのインデックスを最適化するために、レンダリング フレームワークは、Dynamics 365 Commerce およびモジュール固有の情報でコンフィギュレーションされた SEO プロパティからの両方の情報を使用します。 運用中のサイトの場合、robots.txt ファイルによりサイト全体のインデックスを作成することができ、公開したサイト マップ ドキュメントへのリンクを含んでいる必要があります。 **サイトの設定 \> サイト マップの有効化**で、サイト マップ生成の機能をオンにする必要があります。
+検索エンジンのインデックスを最適化するために、レンダリング フレームワークは、Dynamics 365 Commerce およびモジュール固有の情報でコンフィギュレーションされた SEO プロパティからの両方の情報を使用します。 運用中のサイトの場合、robots.txt ファイルによりサイト全体のインデックスを作成することができ、公開したサイト マップ ドキュメントへのリンクを含んでいる必要があります。 **サイトの設定 \> サイト マップの有効化** で、サイト マップ生成の機能をオンにする必要があります。
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>内部プレビュー、制限された対象者、およびすべての対象者に対するページの SEO 設定
 

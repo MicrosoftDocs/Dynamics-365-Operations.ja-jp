@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009746"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419379"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>LCS にタスク ガイドを保存して再生する
 
@@ -39,19 +39,19 @@ Microsoft Dynamics Lifecycle Services (LCS) 経由で配置された Microsoft D
 LCS にタスク記録を保存するには、次の手順に従います。
 
 1. LCS にサインインして、プロジェクトを選択します。
-2. **ビジネス プロセス モデラー**タイルを選択します。
+2. **ビジネス プロセス モデラー** タイルを選択します。
 3. 「更新された BPM エクスペリエンス。」でページを表示する
-4. ライブラリを選択してから、**コピー**を選択します。
+4. ライブラリを選択してから、**コピー** を選択します。
 5. ビジネス プロセス モデラー (BPM) モデルの名前を入力します。
 6. LCS から人事管理にログインします。
-7. **検索**フィールドで、**ヘルプ**と入力します。 Lifecycle Services ヘルプが開きます。
-8. Lifecycle Services のヘルプ構成の**更新**ボタンを選択します。
+7. **検索** フィールドで、**ヘルプ** と入力します。 Lifecycle Services ヘルプが開きます。
+8. Lifecycle Services のヘルプ構成の **更新** ボタンを選択します。
 
     新しい有効な BPM ライブラリが表示されます。
 
 9. ページを閉じます。
 10. タスク記録を作成します。
-11. 完了したら、**Lifecycle Services に保存**を選択します。
+11. 完了したら、**Lifecycle Services に保存** を選択します。
 
     ![Lifecycle Services に保存](media/task-guides.png)
 
@@ -60,6 +60,6 @@ LCS にタスク記録を保存するには、次の手順に従います。
 LCS からタスク ガイドを再生するにはこれらの手順に従います。
 
 1. タスク レコーダーを開始します。
-2. **LCS から開く**を選択します。
+2. **LCS から開く** を選択します。
 3. タスク ガイドが保存されているライブラリと BPM ノードを選択します。
 4. タスク ガイドを開きます。

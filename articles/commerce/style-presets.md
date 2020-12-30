@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621274"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413821"
 ---
 # <a name="work-with-style-presets"></a>スタイル プリセットの作業
 

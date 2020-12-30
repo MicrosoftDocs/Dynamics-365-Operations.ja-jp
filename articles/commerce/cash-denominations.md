@@ -20,11 +20,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023135"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413721"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 
@@ -34,7 +34,7 @@ ms.locfileid: "3023135"
 
 ## <a name="define-denominations"></a>貨幣単位の定義
 
-貨幣単位は店舗ごとに、店舗のプロパティ ページから**設定** \> **現金申告**オプションで設定されます。
+貨幣単位は店舗ごとに、店舗のプロパティ ページから **設定** \> **現金申告** オプションで設定されます。
 
 ![現金申告オプション](./media/image1-denomination.png)
 

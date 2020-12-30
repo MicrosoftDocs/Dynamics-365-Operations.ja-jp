@@ -17,11 +17,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
-ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036789"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413815"
 ---
 # <a name="task-management-in-pos"></a>POS におけるタスクの管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "3036789"
 
 ## <a name="overview"></a>概要
 
-Dynamics 365 Commerce POS アプリケーションにはタスク管理機能があり、店舗の管理者および作業者がタスクを管理したり、タスクの状態を更新したりすることができます。 店舗の作業者は、POS ホームページの**タスク** タイルを選択するか、またはタスクの通知を選択することにより、タスクにアクセスすることができます。 既定では、店舗の作業者は**自分のタスク** タブに移動し、割り当てられているタスクを確認できます。 ただし、**期限超過のタスク**、**タスクを開く**、および**タスク リスト** タブに簡単に切り替えることができます。
+Dynamics 365 Commerce POS アプリケーションにはタスク管理機能があり、店舗の管理者および作業者がタスクを管理したり、タスクの状態を更新したりすることができます。 店舗の作業者は、POS ホームページの **タスク** タイルを選択するか、またはタスクの通知を選択することにより、タスクにアクセスすることができます。 既定では、店舗の作業者は **自分のタスク** タブに移動し、割り当てられているタスクを確認できます。 ただし、**期限超過のタスク**、**タスクを開く**、および **タスク リスト** タブに簡単に切り替えることができます。
 
 ## <a name="task-operations-for-store-managers"></a>店舗マネージャーのタスク操作
 
@@ -47,7 +47,7 @@ Dynamics 365 Commerce POS アプリケーションにはタスク管理機能が
 - **タスクの状態** – 選択したタスクの状態を変更します。
 - **フィルター** – 既定では、有効なタスクのみが表示されます。 ただし、フィルターを適用することにより、作業者は完了またはキャンセルしたタスクを含め、すべてのタスクを表示できます。
 
-次の図は、Commerce POS アプリケーションの**自分のタスク** タブを示しています。
+次の図は、Commerce POS アプリケーションの **自分のタスク** タブを示しています。
 
 ![Commerce POS アプリケーションの自分のタスク タブ](media/POS-task-management.png)
 

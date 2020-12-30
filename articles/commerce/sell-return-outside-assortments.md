@@ -19,11 +19,11 @@ ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 86c6ecf9ef67ca3ac4ed3c44d930acaa965112b6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023192"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413834"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>店舗の品揃えに含まれない製品の販売および返品
 

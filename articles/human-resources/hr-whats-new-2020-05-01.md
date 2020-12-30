@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 074c678d9d8294aabf4e78b2a6ee0fa53efbaf23
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419385"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Dynamics 365 Human Resources（2020 年 5 月 1 日）の新機能と変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "3712283"
 - **測定**
 - **目標の測定**
 
-さらに、**合計スコア**と **平均スコア** が **ディスカッション** エンティティに追加されました。
+さらに、**合計スコア** と **平均スコア** が **ディスカッション** エンティティに追加されました。
 
 ## <a name="increase-length-of-leave-request-comments-275641"></a>休暇要求のコメントの文字数の増加 (275641)
 

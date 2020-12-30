@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097073"
+ms.locfileid: "4413894"
 ---
 # <a name="review-the-status-of-an-experiment"></a>実験のステータスを確認する
 Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含まれます。 実験のライフサイクルの詳細については、[Dynamics 365 Commerce での実験](experimentation-overview.md) を参照してください。
@@ -36,7 +36,7 @@ Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含�
 - **未公開** - この実験は、Web サイトでは使用できなくなりました。 実験がサードパーティ サービスで実行されている場合でも、Web サイトのユーザーには、既定のバージョンのページまたはフラグメントのみが表示されます。
 - **完了** - 実験はコースを実行し、バリエーションはすべての Web サイト ユーザーに公開されるようにレベルが上げられました。
 
-同様に、 **サードパーティの状態** 列には、サードパーティ サービスでの実験の状態を示す次の値が表示される場合があります。
+同様に、**サードパーティの状態** 列には、サードパーティ サービスでの実験の状態を示す次の値が表示される場合があります。
 - **ドラフト** - 実験はサードパーティ サービスで設定されていますが、まだ開始されていません。
 - **実行中** - 実験はサードパーティ サービスで開始され、データを収集しています。
 - **一時停止** - 実験は一時停止され、データを収集していません。 データを再度収集するには、実験を再開する必要があります。

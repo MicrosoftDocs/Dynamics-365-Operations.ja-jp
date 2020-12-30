@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3688324"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419316"
 ---
 # <a name="view-and-manage-address-changes"></a>住所変更の表示と管理
 
@@ -52,7 +52,7 @@ ms.locfileid: "3688324"
 
 2. **個人の詳細の編集** を選択します。
 
-3. 住所を追加するために、**追加**を選択します。 既存の住所を更新するには、リストから住所を選択し、**編集** を選択します。
+3. 住所を追加するために、**追加** を選択します。 既存の住所を更新するには、リストから住所を選択し、**編集** を選択します。
 
 4. **名前や説明** を入力してください。
 
@@ -80,7 +80,7 @@ ms.locfileid: "3688324"
 
 3. 作業者を選択し、**住所** をクリックします。
 
-3. 住所を追加するために、**追加**を選択します。 既存の住所を更新するには、リストから住所を選択し、**編集** を選択します。
+3. 住所を追加するために、**追加** を選択します。 既存の住所を更新するには、リストから住所を選択し、**編集** を選択します。
 
 4. **名前や説明** を入力してください。
 
