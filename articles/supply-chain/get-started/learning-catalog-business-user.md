@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793566"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668984"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management のユーザー向けラーニング カタログ
 
@@ -50,6 +50,7 @@ ms.locfileid: "3793566"
 | [Dynamics 365 Supply Chain Management での製品および在庫のコンフィギュレーションと管理](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | 製品情報は、すべての業界のサプライ チェーンと小売アプリケーションの柱です。 ビジネス ソリューションのさまざまなモジュールでは、製品、製品ファミリー、部品表、および製品カテゴリに関連する業務プロセスを管理するために製品固有の情報および構成が必要となります。 在庫レポートは、在庫の量をさまざまな方法で示し、在庫投資をより効果的に行う方法を説明しています。 基本計画は、事前に決められた要因に基づいて計画を合理化する際に役立ちます。これにより、どの資材を購入、製造する必要があるかを効率的に計画することができます。 | 無料の自習型オンライン学習パス | 14 時間 |
 | [Dynamics 365 Supply Chain Management での調達および仕入先のコンフィギュレーションと管理](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | 仕入先の検索と作業、製品の購入、商品とサービスの品質を保証するプロセスはすべて、会社の評判と成功に影響を与える重要な要素です。 | 無料の自習型オンライン学習パス | 14 時間 |
 | [Dynamics 365 Supply Chain Management で売上および顧客を構成して使用する](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | 顧客との関わり方、販売プロセスのライフ サイクルの理解、販売契約の設定などは、企業の成功を左右する重要な要素です。 | 無料の自習型オンライン学習パス | 7 時間 |
+| [Dynamics 365 Supply Chain Management のマスター プラン](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | マスター プランを使用すると、企業は将来の目標達成のために、これから必要になる原材料と容量を判断し、双方のバランスをとれるようになります。 マスター プランでは、現在使用可能な原材料と能力を評価し、生産を完了するために必要な原材料と能力を決定します。 たとえば、生産を完了する前に、製造、購入、輸送、安全在庫用として保管しておく必要があるものなどを特定することができます。 | 無料の自習型オンライン学習パス | 5 時間 |
 | [Dynamics 365 for Finance and Operations での倉庫管理のコンフィギュレーションおよび作業](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Dynamics 365 Supply Chain Management 個々のニーズに応じて倉庫プロセスを最適化および合理化するのに役立ち、顧客の満足度を高め、コストを削減するための在庫とツールの洞察を提供します。 | 無料の自習型オンライン学習パス | 8.5 時間 |
 | [Dynamics 365 Supply Chain Management での輸送管理のコンフィギュレーションおよび作業](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Dynamics 365 Supply Chain Management の輸送管理モジュールは、顧客に商品を配送する最も効率的な方法を見つける際に役立ちます。 輸送管理では、商品を納入するための最も安価で最も高速な方法が計算され、受信注文および送信注文の仕入先と工順のソリューションを識別できるようになります。 | 無料の自習型オンライン学習パス | 3 時間 |
 | [Dynamics 365 Supply Chain Management の資産管理で作業する](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | 資産管理は、会社の日常業務で使用する資産を管理に使用する Dynamics 365 Supply Chain Management のアドインです。 このタイプの資産の例としては、機械、生産設備、フォーク リフトなどがあります。 | 無料の自習型オンライン学習パス | 12.5 時間 |

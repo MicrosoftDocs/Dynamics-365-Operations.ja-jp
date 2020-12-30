@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d8f70e7aa7316241adbbde6c4188c2ae0e640633
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
+ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823530"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4669087"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resources の新機能および変更された機能
 
@@ -49,6 +49,8 @@ ms.locfileid: "3823530"
 
 Human Resources の隔週リリースの新機能や変更事項をについては、次の記事を参照してください:
 
+[2020 年 12 月 2 日](hr-whats-new-2020-12-02.md)</br>
+[2020 年 10 月 22 日](hr-whats-new-2020-10-22.md)</br>
 [2020 年 9 月 16 日](hr-whats-new-2020-09-16.md)</br>
 [2020 年 9 月 3 日](hr-whats-new-2020-09-03.md)</br>
 [2020 年 8 月 20 日](hr-whats-new-2020-08-20.md)</br>
@@ -74,6 +76,6 @@ Human Resources の隔週リリースの新機能や変更事項をについて�
 
 ## <a name="see-also"></a>参照
 
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
