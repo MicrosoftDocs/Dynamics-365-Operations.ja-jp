@@ -1,0 +1,66 @@
+---
+title: セグメント化されたエントリ コントロールのための parm メソッド
+description: セグメント化されたエントリ コントロールのインスタンスで、コード内で設定できる parm メソッドについて説明します。
+author: robinarh
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: rhaertle
+ms.custom: 25631
+ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
+ms.search.region: Global
+ms.author: ghenriks
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ab48920012e14e4dc5f78095cd9c4acdb9587cc5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681072"
+---
+# <a name="parm-methods-for-segmented-entry-controls"></a><span data-ttu-id="8fe9e-103">セグメント化されたエントリ コントロールのための parm メソッド</span><span class="sxs-lookup"><span data-stu-id="8fe9e-103">Parm methods for Segmented Entry controls</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="8fe9e-104">セグメント化されたエントリ コントロールのインスタンスで、コード内で設定できる parm メソッドについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-104">Describes the parm methods that can be set in code on an instance of a Segmented Entry control.</span></span>
+
+<span data-ttu-id="8fe9e-105">セグメント化されたエントリ コントロールには、コントロールの動作に影響を与える複数の parm メソッドがあります。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-105">The Segmented Entry control has multiple parm methods that influence how the control will behave.</span></span> <span data-ttu-id="8fe9e-106">各メソッドの説明を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-106">Here is a description of each method.</span></span>
+
+| <span data-ttu-id="8fe9e-107">方法</span><span class="sxs-lookup"><span data-stu-id="8fe9e-107">Method</span></span>                               | <span data-ttu-id="8fe9e-108">説明</span><span class="sxs-lookup"><span data-stu-id="8fe9e-108">Description</span></span>                                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="8fe9e-109">parmDataAreaId</span><span class="sxs-lookup"><span data-stu-id="8fe9e-109">parmDataAreaId</span></span>                       | <span data-ttu-id="8fe9e-110">コントロールが実行されている会社のコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-110">The company context that the control is running under.</span></span> <span data-ttu-id="8fe9e-111">ほとんどの場合、コンテキストは `curext()` ですが、フォームで異なる会社のコンテキストや異なる会社のサーフェス レコードなどを手動で設定できるシナリオもあります。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-111">In most cases, the context is `curext()` but there are scenarios where forms can manually set things like different company contexts and surface records from different companies.</span></span> <span data-ttu-id="8fe9e-112">フォームは、フォームのさまざまな条件の下で SEC を実行するコンテキストを評価する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-112">Forms need to evaluate which context the SEC should be running under the various conditions of the form.</span></span> |
+| <span data-ttu-id="8fe9e-113">parmCurrency</span><span class="sxs-lookup"><span data-stu-id="8fe9e-113">parmCurrency</span></span>                         | <span data-ttu-id="8fe9e-114">このメソッドは、主勘定の検証のためのアカウント コントロールによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-114">This method is used by Account controls for Main account validation.</span></span> <span data-ttu-id="8fe9e-115">このプロパティが設定されている場合は、主勘定検証中に mainAccount.checkAccountCurrency() が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-115">If this property is set, then mainAccount.checkAccountCurrency() is called during Main account validation.</span></span>                                                                                                                                                       |
+| <span data-ttu-id="8fe9e-116">parmControlDate</span><span class="sxs-lookup"><span data-stu-id="8fe9e-116">parmControlDate</span></span>                      | <span data-ttu-id="8fe9e-117">このメソッドは、セグメント値の検証や一部の内部クエリで使用されます。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-117">This method is used in validating segment values and in some internal queries.</span></span> <span data-ttu-id="8fe9e-118">既定では、現在の日付が使用されますが、フォームが業務要件に基づいてカスタム日付を設定する場合のシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-118">The default is to use the current date but there are scenarios when the form would want to set a custom date based on business requirements.</span></span>    |
+| <span data-ttu-id="8fe9e-119">parmDimensionAutoCompleteFilter</span><span class="sxs-lookup"><span data-stu-id="8fe9e-119">parmDimensionAutoCompleteFilter</span></span>      | <span data-ttu-id="8fe9e-120">分析コード auto-Complete データをフィルター処理するために、追加の制限を追加します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-120">Adds additional restrictions to filter dimension auto-Complete data.</span></span>                                                                     |
+| <span data-ttu-id="8fe9e-121">parmJournalName</span><span class="sxs-lookup"><span data-stu-id="8fe9e-121">parmJournalName</span></span>                      | <span data-ttu-id="8fe9e-122">このメソッドは、仕訳帳コントロールを適用することで使用されます。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-122">This method is used in enforcing Journal control.</span></span>                |
+| <span data-ttu-id="8fe9e-123">parmAccountTypeEnumType</span><span class="sxs-lookup"><span data-stu-id="8fe9e-123">parmAccountTypeEnumType</span></span>              |                                               |
+| <span data-ttu-id="8fe9e-124">parmDimensionAccountStorageUsageType</span><span class="sxs-lookup"><span data-stu-id="8fe9e-124">parmDimensionAccountStorageUsageType</span></span> | <span data-ttu-id="8fe9e-125">このメソッドにより、フォームまたはクラスは、フォーム上でセグメント化されたエントリ コントロールの使用方法を指定できます。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-125">This method allows the form or class to specify how the segmented entry control is being used on the form.</span></span> <span data-ttu-id="8fe9e-126">このプロパティは、DimensionAccountStorageUsage (値を持つ列挙型: 設定、トランザクション、エイリアス) 型です。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-126">This property is of type: DimensionAccountStorageUsage (an enumeration with values: Setup, Transactional, Alias).</span></span>                                                                                                          |
+| <span data-ttu-id="8fe9e-127">parmTaxCode</span><span class="sxs-lookup"><span data-stu-id="8fe9e-127">parmTaxCode</span></span>                          | <span data-ttu-id="8fe9e-128">このメソッドは使用しないため、削除されました。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-128">This method was unused and has been removed.</span></span>                                             |
+| <span data-ttu-id="8fe9e-129">parmAccountType</span><span class="sxs-lookup"><span data-stu-id="8fe9e-129">parmAccountType</span></span>                      |  |
+| <span data-ttu-id="8fe9e-130">parmIncludeFinancialAccounts</span><span class="sxs-lookup"><span data-stu-id="8fe9e-130">parmIncludeFinancialAccounts</span></span>         | <span data-ttu-id="8fe9e-131">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-131">Correlates to the design-time property.</span></span> <span data-ttu-id="8fe9e-132">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-132">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                          |
+| <span data-ttu-id="8fe9e-133">parmIncludeTotalAccounts</span><span class="sxs-lookup"><span data-stu-id="8fe9e-133">parmIncludeTotalAccounts</span></span>             | <span data-ttu-id="8fe9e-134">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-134">Correlates to the design-time property.</span></span> <span data-ttu-id="8fe9e-135">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-135">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                          |
+| <span data-ttu-id="8fe9e-136">parmIsDefaultAccount</span><span class="sxs-lookup"><span data-stu-id="8fe9e-136">parmIsDefaultAccount</span></span>                 | <span data-ttu-id="8fe9e-137">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-137">Correlates to the design-time property.</span></span> <span data-ttu-id="8fe9e-138">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-138">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                          |
+| <span data-ttu-id="8fe9e-139">parmLockMainAccountSegment</span><span class="sxs-lookup"><span data-stu-id="8fe9e-139">parmLockMainAccountSegment</span></span>           | <span data-ttu-id="8fe9e-140">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-140">Correlates to the design-time property.</span></span> <span data-ttu-id="8fe9e-141">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-141">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                          |
+| <span data-ttu-id="8fe9e-142">parmPostingType</span><span class="sxs-lookup"><span data-stu-id="8fe9e-142">parmPostingType</span></span>                      | <span data-ttu-id="8fe9e-143">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-143">Correlates to the design-time property.</span></span>  <span data-ttu-id="8fe9e-144">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-144">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                         |
+| <span data-ttu-id="8fe9e-145">parmValidateBlockedForManualEntry</span><span class="sxs-lookup"><span data-stu-id="8fe9e-145">parmValidateBlockedForManualEntry</span></span>    | <span data-ttu-id="8fe9e-146">デザイン時プロパティと関連します。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-146">Correlates to the design-time property.</span></span>  <span data-ttu-id="8fe9e-147">詳細については、「セグメント化されたエントリ コントロールのメタデータ詳細」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8fe9e-147">For more information, see the Segmented Entry control Metadata Specification.</span></span>                                                                                                                                                                                                         |
+
+
+
+<a name="additional-resources"></a><span data-ttu-id="8fe9e-148">追加リソース</span><span class="sxs-lookup"><span data-stu-id="8fe9e-148">Additional resources</span></span>
+--------
+
+[<span data-ttu-id="8fe9e-149">ダイアログのセグメント化されたエントリ コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="8fe9e-149">Support for Segmented Entry controls on dialogs</span></span>](segmented-entry-control-dialog-support.md)
+
+[<span data-ttu-id="8fe9e-150">セグメント化されたエントリ コントロールのデザイン時メタデータ</span><span class="sxs-lookup"><span data-stu-id="8fe9e-150">Design-time metadata for Segmented Entry controls</span></span>](segmented-entry-control-metadata-specification.md)
+
+[<span data-ttu-id="8fe9e-151">セグメント化されたエントリ コントロールの移行</span><span class="sxs-lookup"><span data-stu-id="8fe9e-151">Migrate Segmented Entry controls</span></span>](segmented-entry-control-conversion.md)
+
+[<span data-ttu-id="8fe9e-152">セグメント化されたエントリ コントロールに関する移行ガイダンス</span><span class="sxs-lookup"><span data-stu-id="8fe9e-152">Migration guidance for Segmented Entry controls</span></span>](segmented-entry-control-migration-guidance.md)
+
+
+

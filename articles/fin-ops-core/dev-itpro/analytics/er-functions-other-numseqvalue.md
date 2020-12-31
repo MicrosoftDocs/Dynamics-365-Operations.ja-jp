@@ -1,0 +1,107 @@
+---
+title: NUMSEQVALUE ER 機能
+description: このトピックでは、NUMSEQVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
+author: NickSelin
+manager: kfend
+ms.date: 12/17/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+audience: Application User, IT Pro
+ms.reviewer: kfend
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b513d04bfeb3a37aa0b1703d0fdde040885a5159
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680593"
+---
+# <a name="numseqvalue-er-function"></a><span data-ttu-id="0db2a-103">NUMSEQVALUE ER 機能</span><span class="sxs-lookup"><span data-stu-id="0db2a-103">NUMSEQVALUE ER function</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="0db2a-104">`NUMSEQVALUE` 関数は、指定された番号順序、範囲、およびスコープ ID に基づいて、番号順序の新しい生成値を表す *文字列* 値を返します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-104">The `NUMSEQVALUE` function returns a *String* value that represents the new generated value of a number sequence, based on the specified number sequence, scope, and scope ID.</span></span> <span data-ttu-id="0db2a-105">スコープ ID は、電子申告 (ER) 形式が実行されるコンテキストによって提供される会社コードと同じです。</span><span class="sxs-lookup"><span data-stu-id="0db2a-105">The scope ID equals the company code that is supplied by the context that the Electronic reporting (ER) format is run under.</span></span>
+
+## <a name="syntax-1"></a><span data-ttu-id="0db2a-106">構文 1</span><span class="sxs-lookup"><span data-stu-id="0db2a-106">Syntax 1</span></span>
+
+```vb
+NUMSEQVALUE (number sequence code)
+```
+
+## <a name="syntax-2"></a><span data-ttu-id="0db2a-107">構文 2</span><span class="sxs-lookup"><span data-stu-id="0db2a-107">Syntax 2</span></span>
+
+```vb
+NUMSEQVALUE (number sequence record ID)
+```
+
+## <a name="syntax-3"></a><span data-ttu-id="0db2a-108">構文 3</span><span class="sxs-lookup"><span data-stu-id="0db2a-108">Syntax 3</span></span>
+
+```vb
+NUMSEQVALUE (number sequence code, scope type, scope ID)
+```
+
+## <a name="arguments"></a><span data-ttu-id="0db2a-109">引数</span><span class="sxs-lookup"><span data-stu-id="0db2a-109">Arguments</span></span>
+
+<span data-ttu-id="0db2a-110">`number sequence code`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="0db2a-110">`number sequence code`: *String*</span></span>
+
+<span data-ttu-id="0db2a-111">新しい値で必要な番号順序のコードを表すテキスト値。</span><span class="sxs-lookup"><span data-stu-id="0db2a-111">A text value that represents the code of the number sequence that a new value is required in.</span></span>
+
+<span data-ttu-id="0db2a-112">`number sequence record ID`: *Int64*</span><span class="sxs-lookup"><span data-stu-id="0db2a-112">`number sequence record ID`: *Int64*</span></span>
+
+<span data-ttu-id="0db2a-113">新しい値で必要な番号順序の定義を含む、NumberSequenceTable テーブルの記録 ID を表す *Int64* 値。</span><span class="sxs-lookup"><span data-stu-id="0db2a-113">An *Int64* value that represents the record ID of a record in the NumberSequenceTable table that contains the definition of the number sequence that a new value is required in.</span></span>
+
+<span data-ttu-id="0db2a-114">`scope type`: *列挙値*</span><span class="sxs-lookup"><span data-stu-id="0db2a-114">`scope type`: *Enum value*</span></span>
+
+<span data-ttu-id="0db2a-115">新しい値が必要な番号順序のスコープを定義する **ERExpressionNumberSequenceScopeType** 列挙型の列挙値。</span><span class="sxs-lookup"><span data-stu-id="0db2a-115">An enumeration value of the **ERExpressionNumberSequenceScopeType** enumeration that defines the scope of the number sequence that a new value is required in.</span></span> <span data-ttu-id="0db2a-116">使用可能な範囲タイプは、**共有**、**法人**、および **会社** です。</span><span class="sxs-lookup"><span data-stu-id="0db2a-116">The available scope types are **Shared**, **Legal entity**, and **Company**.</span></span>
+
+<span data-ttu-id="0db2a-117">`scope ID`: *文字列*</span><span class="sxs-lookup"><span data-stu-id="0db2a-117">`scope ID`: *String*</span></span>
+
+<span data-ttu-id="0db2a-118">指定したスコープ タイプに基づいて、スコープを識別する *文字列* 値。</span><span class="sxs-lookup"><span data-stu-id="0db2a-118">A *String* value that identifies the scope, based on the specified scope type.</span></span>
+
+## <a name="return-values"></a><span data-ttu-id="0db2a-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="0db2a-119">Return values</span></span>
+
+<span data-ttu-id="0db2a-120">*文字列*</span><span class="sxs-lookup"><span data-stu-id="0db2a-120">*String*</span></span>
+
+<span data-ttu-id="0db2a-121">結果テキスト値。</span><span class="sxs-lookup"><span data-stu-id="0db2a-121">The resulting text value.</span></span>
+
+## <a name="usage-notes"></a><span data-ttu-id="0db2a-122">使用上の注意</span><span class="sxs-lookup"><span data-stu-id="0db2a-122">Usage notes</span></span>
+
+<span data-ttu-id="0db2a-123">**共有** スコープ タイプでは、スコープ ID として空の文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-123">For the **Shared** scope type, specify an empty string as the scope ID.</span></span>
+
+<span data-ttu-id="0db2a-124">**会社** および **法人** スコープ タイプでは、会社コードとスコープ ID を指定します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-124">For the **Company** and **Legal entity** scope types, specify the company code as the scope ID.</span></span> <span data-ttu-id="0db2a-125">これらのスコープ タイプのスコープ ID として空の文字列を指定した場合、現在の会社コードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-125">If you specify an empty string as the scope ID for these scope types, the current company code is used.</span></span>
+
+<span data-ttu-id="0db2a-126">構文 1 を使用すると、番号順序が **会社** スコープ タイプに対して要求され、会社コードが ER 形式を実行するコンテキストによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-126">When syntax 1 is used, the number sequence is requested for the **Company** scope type, and the company code is supplied by the context that the ER format is run under.</span></span>
+
+## <a name="example-1"></a><span data-ttu-id="0db2a-127">例 1</span><span class="sxs-lookup"><span data-stu-id="0db2a-127">Example 1</span></span>
+
+<span data-ttu-id="0db2a-128">ERフォーマットでは、*ユーザー入力パラメータ* タイプの **AskNumSeq** データ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-128">In your ER format, you define the **AskNumSeq** data source of the *User input parameter* type.</span></span> <span data-ttu-id="0db2a-129">このデータ ソースは、**説明** の拡張データ型 (EDT) を参照しています。</span><span class="sxs-lookup"><span data-stu-id="0db2a-129">This data source refers to the **Description** extended data type (EDT).</span></span> <span data-ttu-id="0db2a-130">次に、*計算フィールド* タイプの **NumSeq** データ ソースを定義します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-130">Next, you define the **NumSeq** data source of the *Calculated field* type.</span></span> <span data-ttu-id="0db2a-131">このデータ ソースは、式 `NUMSEQVALUE (AskNumSeq)` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0db2a-131">This data source contains the expression `NUMSEQVALUE (AskNumSeq)`.</span></span> <span data-ttu-id="0db2a-132">**NumSeq** データ ソースが呼び出されると、ダイアログ ボックスにコードを入力することにより、実行時に指定された番号順序の新しい生成値が返されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-132">When the **NumSeq** data source is called, it returns the new generated value of the number sequence that was specified at runtime by entering its code in the dialog box.</span></span> <span data-ttu-id="0db2a-133">**会社** スコープ タイプに対して番号順序が要求されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-133">The number sequence is requested for the **Company** scope type.</span></span> <span data-ttu-id="0db2a-134">会社コードは、ER 形式を実行するコンテキストによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-134">The company code is supplied by the context that the ER format is run under.</span></span>
+
+## <a name="example-2"></a><span data-ttu-id="0db2a-135">例 2</span><span class="sxs-lookup"><span data-stu-id="0db2a-135">Example 2</span></span>
+
+<span data-ttu-id="0db2a-136">モデル マッピングでは、次のデータ ソースが定義されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-136">The following data sources are defined in your model mapping:</span></span>
+
+- <span data-ttu-id="0db2a-137">*テーブル* タイプの **LedgerParms** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="0db2a-137">The **LedgerParms** data source of the *Table* type.</span></span> <span data-ttu-id="0db2a-138">このデータ ソースは、LedgerParameters テーブルを指します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-138">This data source refers to the LedgerParameters table.</span></span>
+- <span data-ttu-id="0db2a-139">*計算フィールド* タイプの **NumSeq** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="0db2a-139">The **NumSeq** data source of the *Calculated field* type.</span></span> <span data-ttu-id="0db2a-140">このデータ ソースは、式 `NUMSEQVALUE ( LedgerParameters.'numRefJournalNum()'.NumberSequenceId)` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0db2a-140">This data source contains the expression `NUMSEQVALUE ( LedgerParameters.'numRefJournalNum()'.NumberSequenceId)`.</span></span>
+
+<span data-ttu-id="0db2a-141">**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用に一般会計パラメーターでコンフィギュレーションされた、番号順序の新しく生成された値を返します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-141">When the **NumSeq** data source is called, it returns the new generated value of the number sequence that has been configured in the General ledger parameters for the company that supplies the context that the ER format is run under.</span></span> <span data-ttu-id="0db2a-142">この番号順序は、仕訳帳を一意に識別し、トランザクションをリンクするバッチ番号として機能します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-142">This number sequence uniquely identifies journals and acts as a batch number that links the transactions together.</span></span>
+
+## <a name="example-3"></a><span data-ttu-id="0db2a-143">例 3</span><span class="sxs-lookup"><span data-stu-id="0db2a-143">Example 3</span></span>
+
+<span data-ttu-id="0db2a-144">モデル マッピングでは、次のデータ ソースが定義されます。</span><span class="sxs-lookup"><span data-stu-id="0db2a-144">The following data sources are defined in your model mapping:</span></span>
+
+- <span data-ttu-id="0db2a-145">Microsoft Dynamics 365 Finance *列挙型* タイプの **enumScope** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="0db2a-145">The **enumScope** data source of the Microsoft Dynamics 365 Finance *enumeration* type.</span></span> <span data-ttu-id="0db2a-146">このデータ ソースは、**ERExpressionNumberSequenceScopeType** 列挙型を参照しています。</span><span class="sxs-lookup"><span data-stu-id="0db2a-146">This data source refers to the **ERExpressionNumberSequenceScopeType** enumeration.</span></span>
+- <span data-ttu-id="0db2a-147">*計算フィールド* タイプの **NumSeq** データ ソース。</span><span class="sxs-lookup"><span data-stu-id="0db2a-147">The **NumSeq** data source of the *Calculated field* type.</span></span> <span data-ttu-id="0db2a-148">このデータ ソースは、式 `NUMSEQVALUE ("Gene_1", enumScope.Company, "")` が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0db2a-148">This data source contains the expression `NUMSEQVALUE ("Gene_1", enumScope.Company, "")`.</span></span>
+
+<span data-ttu-id="0db2a-149">**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。</span><span class="sxs-lookup"><span data-stu-id="0db2a-149">When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="0db2a-150">追加リソース</span><span class="sxs-lookup"><span data-stu-id="0db2a-150">Additional resources</span></span>
+
+[<span data-ttu-id="0db2a-151">その他 (ビジネス ドメインの特定の) 関数</span><span class="sxs-lookup"><span data-stu-id="0db2a-151">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
