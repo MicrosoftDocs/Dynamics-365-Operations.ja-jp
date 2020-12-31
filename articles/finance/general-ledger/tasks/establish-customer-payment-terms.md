@@ -1,0 +1,59 @@
+---
+title: 顧客支払条件の設定
+description: この手順では、現金割引と期日の設定を定義します。
+author: aprilolson
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PaymDay, PaymTerm, CashDisc
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f641d75e06b11ca325d2624f836fc2a7c92d69e4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445092"
+---
+# <a name="establish-customer-payment-terms"></a><span data-ttu-id="f6724-103">顧客支払条件の設定</span><span class="sxs-lookup"><span data-stu-id="f6724-103">Establish customer payment terms</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="f6724-104">この手順では、現金割引と期日の設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="f6724-104">This procedure defines a cash discount and due date setup.</span></span> <span data-ttu-id="f6724-105">このタスク ガイドでは、デモ会社 USMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="f6724-105">This task guide uses the USMF demo company.</span></span>
+
+1. <span data-ttu-id="f6724-106">**ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払期日** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f6724-106">Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Payment days**.</span></span> <span data-ttu-id="f6724-107">**支払条件** の設定は、**売掛金勘定** または **買掛金勘定** で共有されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-107">The setup for the **Terms of payment** is shared for **Accounts receivable** and **Accounts payable**.</span></span> <span data-ttu-id="f6724-108">モジュールでそれを定義した場合、他のモジュールでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="f6724-108">If you define it in module, it will be available in the other module also.</span></span> <span data-ttu-id="f6724-109">このタスク ガイドでは、**売掛金勘定** に基づいてすべての支払条件を設定します。</span><span class="sxs-lookup"><span data-stu-id="f6724-109">For this task guide, I set up all the terms of payment under **Accounts receivable**.</span></span>
+2. <span data-ttu-id="f6724-110">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-110">Click **New**.</span></span> <span data-ttu-id="f6724-111">支払条件が、特定の曜日 (火曜日、月曜日など) または月の特定の日付 (5 日目、10 日目など) と規定されている場合、支払期日を作成します。</span><span class="sxs-lookup"><span data-stu-id="f6724-111">Create a payment day if your terms of payment require a specific day of the week (Monday, Tuesday, etc) or a specific date of the month (5th, 10th, etc).</span></span> 
+3. <span data-ttu-id="f6724-112">**支払期日** フィールドに ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-112">In the **Payment day** field, enter an ID.</span></span>
+4. <span data-ttu-id="f6724-113">**説明** フィールドに、支払期日の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-113">In the **Description** field, enter a description of the payment day.</span></span>
+5. <span data-ttu-id="f6724-114">**週 / 月** フィールドで、「週」または「月」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-114">In the **Week/Month** field, select either 'Week' or 'Month'.</span></span> <span data-ttu-id="f6724-115">月曜日など曜日を入力する場合は、「週」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-115">If you want to enter a day of the week, such as Monday, select Week.</span></span> <span data-ttu-id="f6724-116">10 日など月内の日付を入力する場合、月を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-116">If you want to enter a date in the month, such as the 10th, select Month.</span></span> <span data-ttu-id="f6724-117">この例の場合、[月] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-117">Select Month for this example.</span></span> 
+6. <span data-ttu-id="f6724-118">**月の日付** フィールドに、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-118">In the **Day of month** field, enter a date.</span></span> <span data-ttu-id="f6724-119">日付は、「10 日」ではなく、「10」などの数値を入力してください。</span><span class="sxs-lookup"><span data-stu-id="f6724-119">The date should be entered as a number, such as '10', and not as '10th'.</span></span> 
+7. <span data-ttu-id="f6724-120">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-120">Click **Save**.</span></span>
+8. <span data-ttu-id="f6724-121">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f6724-121">Close the page.</span></span>
+9. <span data-ttu-id="f6724-122">**ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払条件** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f6724-122">Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Terms of payment**.</span></span>
+10. <span data-ttu-id="f6724-123">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-123">Click **New**.</span></span> <span data-ttu-id="f6724-124">支払条件は期日を計算する方法を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-124">Terms of payment is used to define how the due dates will be calculated.</span></span> <span data-ttu-id="f6724-125">現金割引日の設定は個別のページで定義されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-125">The cash discount date setup is defined in a separate page.</span></span> 
+11. <span data-ttu-id="f6724-126">**支払条件フィールド** に ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-126">In the **Terms of payment field**, enter an ID.</span></span>
+12. <span data-ttu-id="f6724-127">**説明** フィールドに説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-127">In the **Description** field, enter a description.</span></span>
+13. <span data-ttu-id="f6724-128">代金引換払い、正味、当月などの **支払方法** を選択します。支払方法は、期日を計算する方法の開始を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-128">Select a **Payment method** such as COD, Net, Current month, etc. The Payment method is used to define the start of how the due will be calculated.</span></span> <span data-ttu-id="f6724-129">たとえば、期日が常に請求日後から一定の日数または月数を数えた日付である場合、正味が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-129">For example, Net is used if the due date is always a set number of months or days after the invoice date.</span></span> <span data-ttu-id="f6724-130">代金引換払 (COD) は、支払が請求書に必要な時に使用され、期日は計算されません。</span><span class="sxs-lookup"><span data-stu-id="f6724-130">COD can be used to when payment is required upon invoice, so a due date wouldn't be calculated.</span></span> <span data-ttu-id="f6724-131">このタスク ガイドの「現在の月」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-131">Select 'Current month' for this task guide.</span></span>  
+14. <span data-ttu-id="f6724-132">特定の曜日または日付を計算に含める場合は **支払期日** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-132">Select a **Payment day** if a specific day of the  week or date are included in the calculation.</span></span> <span data-ttu-id="f6724-133">支払条件によって、月単位または日単位で数量を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f6724-133">Depending on your terms of payment, you may enter a quantity in Months or Days.</span></span> <span data-ttu-id="f6724-134">または **支払スケジュール** または **支払期日** を使用して、支払方法の終了時点で「追加」します。</span><span class="sxs-lookup"><span data-stu-id="f6724-134">Or you can use the **Payment schedule** or **Payment day** to 'add' to the end of the Payment method.</span></span> <span data-ttu-id="f6724-135">期日が常に翌月の 10 日目になる場合、10 日の **支払期日** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-135">If the due date will always be the 10th of the next month, select a **Payment day** of the 10th.</span></span> 
+15. <span data-ttu-id="f6724-136">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-136">Click **Save**.</span></span>
+16. <span data-ttu-id="f6724-137">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f6724-137">Close the page.</span></span>
+17. <span data-ttu-id="f6724-138">**売掛金勘定 > 支払設定 > 現金割引** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f6724-138">Go to **Accounts receivable > Payments setup > Cash discounts**.</span></span>
+18. <span data-ttu-id="f6724-139">**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-139">Click **New**.</span></span> <span data-ttu-id="f6724-140">このページは現金割引日を計算する方法を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-140">This page is used to define how the cash discount date will be calculated.</span></span> 
+19. <span data-ttu-id="f6724-141">**現金割引** フィールドに ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-141">In the **Cash discount** field, enter an ID.</span></span>
+20. <span data-ttu-id="f6724-142">**説明** フィールドに説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-142">In the **Description** field, enter a description.</span></span>
+21. <span data-ttu-id="f6724-143">階層化された現金割引が使用できる場合は、この新しい現金割引の後に、該当する **次の割引コード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-143">If a tiered cash discount is available, select the **Next discount code** that is relevant after this new cash discount.</span></span>
+22. <span data-ttu-id="f6724-144">**日数** フィールドで、現金割引日を計算するのに使用される日数を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-144">In the **Days** field, enter the number of days used to calculate the cash dicount date.</span></span> <span data-ttu-id="f6724-145">**正味** 原則をオンにすると、日数が請求日に追加され、現金割引日が計算されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-145">If **Net** principle is selected, the number of days will be added to the invoice date to calculate the cash discount date.</span></span>  
+23. <span data-ttu-id="f6724-146">**割引率** フィールドに、現金割引率を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-146">In the **Discount percentage** field, enter the percentage of the cash discount.</span></span>
+24. <span data-ttu-id="f6724-147">**顧客割引の主勘定** で、顧客請求書に対する現金割引の転記先となる主勘定を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-147">In the **Main account for customer discounts**, enter the main account to which the cash discount will post for customer invoices.</span></span>
+25. <span data-ttu-id="f6724-148">**割引の相手勘定** フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-148">In the **Discount offset accounts** field, select an option.</span></span> <span data-ttu-id="f6724-149">「請求明細行の勘定」を選択した場合、現金割引は、仕入先請求書明細行の同じ資産/経費用主勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="f6724-149">If you select 'Accounts on the invoice lines', the cash discount will post to the same asset/expense main account on the lines of the vendor invoice.</span></span> <span data-ttu-id="f6724-150">「仕入先請求書用に主勘定を使用する」を選択した場合、現金割引は、「仕入先請求書用主勘定」に定義する主勘定に転記されるようになります。</span><span class="sxs-lookup"><span data-stu-id="f6724-150">If you select 'Use main account for vendor invoices', the cash discount will post to the main account you define in the 'Main account for vendor invoices'.</span></span> <span data-ttu-id="f6724-151">この例では、「仕入先請求書用に主勘定を使用する」を選択します。</span><span class="sxs-lookup"><span data-stu-id="f6724-151">For this example, select 'Use main account for vendor invoices'.</span></span> 
+26. <span data-ttu-id="f6724-152">**仕入先割引の主勘定** フィールドで、仕入先請求書に対する現金割引の転記先となる主勘定を入力します。</span><span class="sxs-lookup"><span data-stu-id="f6724-152">In the **Main account for vendor discounts** field, enter the main account to which the cash discount will post for vendor invoices.</span></span>
+27. <span data-ttu-id="f6724-153">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6724-153">Click **Save**.</span></span>
+
