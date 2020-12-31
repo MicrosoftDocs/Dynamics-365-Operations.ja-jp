@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail, Core
 ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 0200e9daa4e4922d84c5aaf8e41faf7fafce7224
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: 8493b400b411e2365b757f3faad13086278bd3a2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426330"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681494"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 

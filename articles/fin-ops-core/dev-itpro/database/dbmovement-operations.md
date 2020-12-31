@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ff8e2509414f5e9e42685bf1502adb35340618de
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 759a1fa51d835b7d213131769663bc18c55bc995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113603"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681092"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 
@@ -37,7 +36,8 @@ ms.locfileid: "3113603"
 * [データベースのエクスポート](export-database.md)
 * [データベースのインポート](import-database.md)
 * [ポイントインタイム復元 (PITR)](database-point-in-time-restore.md)
-* [実稼働環境からサンドボックス環境へのポイント イン タイム復元](database-pitr-prod-sandbox.md)
+* [サンドボックス環境への生産データベースのポイントインタイム復元](database-pitr-prod-sandbox.md)
+* [ジャストインタイム データベース アクセスの有効化](database-just-in-time-JIT-access.md)
 
 ## <a name="step-by-step-tutorials"></a>ステップバイステップ チュートリアル
 お客様に合わせて DataALM を使用して実装の一般的なシナリオを達成する方法を説明します。

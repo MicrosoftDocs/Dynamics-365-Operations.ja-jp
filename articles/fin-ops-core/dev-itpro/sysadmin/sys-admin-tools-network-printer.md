@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a87901dfdbde6878deab7412ece841af2054370
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93ffc9b5db93c05ff9f9386fe4bbdb218a2961b3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183071"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681608"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
@@ -31,7 +30,7 @@ ms.locfileid: "2183071"
 > [!IMPORTANT]
 > システム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。 **システム ネットワーク プリンター管理** ページは、システム管理者のみが使用できます。
 
-ドメイン管理者は、ドキュメント回覧エージェント (DRA) を使用して、Finance and Operations サービスにネットワーク プリンターを登録します。 プリンターが登録されると、組織管理者がユーザーに利用できるようにします。 設定は **ネットワーク プリンターの管理**ページで管理されます (**組織管理** \> **設定** \> **ネットワーク プリンター**)。
+ドメイン管理者は、ドキュメント回覧エージェント (DRA) を使用して、Finance and Operations サービスにネットワーク プリンターを登録します。 プリンターが登録されると、組織管理者がユーザーに利用できるようにします。 設定は **ネットワーク プリンターの管理** ページで管理されます (**組織管理** \> **設定** \> **ネットワーク プリンター**)。
 
 **ネットワーク プリンターの管理** ページの設定は、組織の管理者用であるため、データは有効な法人に限定されます。 システム管理者は、法人間でネットワーク プリンターの設定を管理することはできないので、場合によっては、ネットワーク プリンターの変更が発生したときなど、法人間での設定の更新が困難です。 たとえば、ネットワーク プリンター パスが更新されたときやハードウェアを交換したとき、またはユーザーがプリンター キュー内のすべてのドキュメントを削除しようとしたときに、ネットワーク プリンター インスタンスが削除されます。
 
@@ -42,7 +41,7 @@ ms.locfileid: "2183071"
 
 ![アクション ペインのプレビュー グループ](./media/network-printer-01.png)
 
-1. **組織管理** > **設定** > **ネットワーク プリンター**の順に選択します。
+1. **組織管理** > **設定** > **ネットワーク プリンター** の順に選択します。
 2. アクション ウィンドウの **プレビュー** グループで、**システム ネットワーク プリンター** を選択します。
 3. **システム ネットワーク プリンター** ページで、DRA を使用してサービスにネットワーク プリンターを登録します。 組織の各法人のコンフィギュレーション情報が表示されます。
 

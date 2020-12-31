@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 for Finance and Operations
-ms.openlocfilehash: c7c7167c5d0d5738e30e5cbf369719970140cb7a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 57efd0a5c78dab2b41be8e4441e156b3e11d1c79
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183389"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683177"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 
@@ -75,7 +74,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルを調べると、フィ
 - BusinessUnit\_説明
 - BusinessUnit\_値
 
-**仕入先**という名前の新しい財務分析コードをユーザーが定義した場合、エンティティ格納が更新されると、LedgerActivityMeasure \_仕入先という新しいテーブルが追加されます。
+**仕入先** という名前の新しい財務分析コードをユーザーが定義した場合、エンティティ格納が更新されると、LedgerActivityMeasure \_仕入先という新しいテーブルが追加されます。
 
 LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しいフィールド セットも含められます。
 
@@ -101,7 +100,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
     - **LedgerActivityMeasure\_LedgerActivityMeasureGroup.LEDGERDIMENSION** および **LedgerActivityMeasure\_DimensionCombination.DIMENTIONCOMBINATIONRECID** 間の結合を定義します。
     - **LedgerActivityMeasure\_LedgerActivityMeasureGroup.LEDGERGREGORIANDATEID** および **LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension.LEDGERPERIODGREGORIANDATEID** 間の結合を定義します。
 
-4. **販売**および **YearName** フィールドを使用するマトリックス レポートを作成します。 レポートは次の例のようになります。
+4. **販売** および **YearName** フィールドを使用するマトリックス レポートを作成します。 レポートは次の例のようになります。
 
     ![販売および YearName フィールドを使用するマトリックス レポートの例](media/d1d0e190896bec3a755b9b586a3cb657.png)
 
@@ -142,7 +141,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
 
     ここで、レポートにある既存のテーブルに選択したテーブルを関連付けます。 
 
-4. レポートで、**リレーションシップの管理**ダイアログ ボックスを開きます。
+4. レポートで、**リレーションシップの管理** ダイアログ ボックスを開きます。
 5. **LedgerActivityMeasure\_DimensionCombination.LegalEntity\_FK** を **LedgerActivityMeasure\_LegalEntity.KEY\_** に結合します。
 
 手順 3 で別の分析コード テーブルを選択する場合は、対応する **FieldName\_FK** フィールドを組み合わせテーブルから分析コード テーブルの **KEY\_** フィールドに関連付ける必要があります。
@@ -167,7 +166,7 @@ DimensionCombination は、DimensionAttributeValueCombination ベース テー�
 
 ### <a name="creating-role-playing-financial-dimensions"></a>ロールプレイング財務分析コードを作成しています
 
-元帳データを使用して報告するとき、基本アカウントと相手勘定に関する報告が必要なことがあります。 例については、元帳トランザクションが 1 つの勘定から別の勘定への金額の転送を含む場合、基本勘定は「元」勘定、相手勘定は、「先」勘定になります。 このパターンは、*ロールプレイング ディメンション*パターンとして知られています。
+元帳データを使用して報告するとき、基本アカウントと相手勘定に関する報告が必要なことがあります。 例については、元帳トランザクションが 1 つの勘定から別の勘定への金額の転送を含む場合、基本勘定は「元」勘定、相手勘定は、「先」勘定になります。 このパターンは、*ロールプレイング ディメンション* パターンとして知られています。
 
 基本勘定と相手勘定の両方がトランザクション データに関連付けられている必要があります。 したがって、基本勘定と相手勘定の両方の財務分析コード フィールドを拡張する必要があります。 ここで、この要件をどのように満たすことができるかを確認します。 以下の例について考えます。
 

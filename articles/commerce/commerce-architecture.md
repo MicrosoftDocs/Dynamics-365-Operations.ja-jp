@@ -19,16 +19,18 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ad659159793ee9664fd89ccf7678c554a68f09a8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: 39531cfc4d50dc2bdd1618a91435b0e7d014ea16
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961672"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528413"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。 
 

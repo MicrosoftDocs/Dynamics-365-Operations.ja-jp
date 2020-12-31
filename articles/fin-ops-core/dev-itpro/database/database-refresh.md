@@ -3,26 +3,25 @@ title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c31d92410a3aca95dcbd626e913a684c285e57e
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: 401d828a1859d5d1629d2bd613aec30bfad0421f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830733"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681096"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -34,7 +33,7 @@ ms.locfileid: "3830733"
 > 生産報告を目的としてサンドボックス環境に生産のデータをコピーすることはできません。
 
 ## <a name="self-service-database-refresh"></a>データベースのセルフ サービスエ更新
-人手または手動のプロセスに依存しないでお客様にデータ アプリケーション ライフサイクル管理 (*DataALM* とも呼ばれます) 機能を提供することを目標として、Lifecycle Services チームは自動化された**データベースの更新**アクションを導入しました。 このプロセスの概要を以下に示します。
+人手または手動のプロセスに依存しないでお客様にデータ アプリケーション ライフサイクル管理 (*DataALM* とも呼ばれます) 機能を提供することを目標として、Lifecycle Services チームは自動化された **データベースの更新** アクションを導入しました。 このプロセスの概要を以下に示します。
 
 1. **環境の詳細** ページで 対象のサンドボックスを確認し 、メニューオプションの **メンテナンス** \> **データベースの移動** をクリックします。
 2. **データベースの選択** オプションを選択し、ソース環境を選択します。
@@ -42,23 +41,32 @@ ms.locfileid: "3830733"
 4. 更新操作がすぐに開始されます。
 
 ### <a name="refresh-operation-failed"></a>更新操作が失敗しました
-失敗した場合、ロールバックを実行するオプションを使用できます。  工程が最初に失敗した後に**ロールバック** オプションをクリックすると、対象となるサンドボックス環境が更新の開始前の状態に戻されます。 Azure SQL ポイントインタイム復元機能により、データベースを復元できるようになります。 新しく更新されたデータでデータベースの同期を完了できないをターゲット サンドボックスにカスタマイズがある場合は、これがよく必要になります。
+失敗した場合、ロールバックを実行するオプションを使用できます。  工程が最初に失敗した後に **ロールバック** オプションをクリックすると、対象となるサンドボックス環境が更新の開始前の状態に戻されます。 Azure SQL ポイントインタイム復元機能により、データベースを復元できるようになります。 新しく更新されたデータでデータベースの同期を完了できないをターゲット サンドボックスにカスタマイズがある場合は、これがよく必要になります。
 
 失敗の根本原因を特定するには、ロールバック操作を開始する前に、使用可能なボタンを使用して Runbook ログをダウンロードします。  
 
 ### <a name="data-elements-that-arent-copied-during-refresh"></a>更新中にはコピーされないデータ要素
-実稼働環境をサンドボックス環境に、またはサンドボックス環境を別のサンドボックス環境に更新するときは、ターゲット環境にコピーされない特定のデータベース要素があります。 これらの要素として次のものがあります。
+このセクションの情報は、データベースの更新操作中にターゲット環境にコピーされないデータベースの特定の要素を一覧表示します。
+
+#### <a name="when-refreshing-a-production-environment-to-a-sandbox-environment-or-a-sandbox-to-another-sandbox-environment"></a>サンドボックス環境またはサンドボックスから別のサンドボックス環境に実稼動環境を更新する場合
 
 * LogisticsElectronicAddress テーブル内の電子メール アドレス。
-* BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。
 * SysEmailParameters テーブルの SMTP 中継サーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
+* 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
+
+#### <a name="when-refreshing-from-sandbox-environment-to-production-environment"></a>サンドボックス環境から実稼働環境に更新する場合
+これは、[ゴールデン構成プロモーション](/dbmovement-scenario-goldenconfig.md) とも呼ばれます。
+* バッチ ジョブ履歴は、BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルに格納されています。
+
+#### <a name="these-elements-are-removed-for-all-database-refresh-operations"></a>これらの要素は、すべてのデータベースの更新操作で削除されます
+
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
 * DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
-* 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
+* [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) はUAT環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチジョブも有効になっているため、無効な統合メッセージが送信されてしまう可能性もあるため、管理者がポストリフレッシュクリーンアップを行う前にユーザーが有効化されてしまう可能性があります。
 

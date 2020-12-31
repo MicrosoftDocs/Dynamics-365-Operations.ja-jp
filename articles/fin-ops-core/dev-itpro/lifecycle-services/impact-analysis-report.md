@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c8889112ae46fe64e637c42684ca1257801259db
-ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
+ms.openlocfilehash: 72863c6f8f2fb0d5e647b2b5c58cb780bd9ab0f7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3815640"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680008"
 ---
 # <a name="impact-analysis-report-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の影響分析レポート
 

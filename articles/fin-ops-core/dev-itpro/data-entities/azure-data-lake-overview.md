@@ -10,21 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: cb128ed79e3188a86b303d38f5733209e34a8967
-ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
+ms.openlocfilehash: 2469c09169d299b434e9cc105df40cf2f47abaa1
+ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3407513"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4656791"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="what-is-azure-data-lake"></a>Azure Data Lake の概要
 
@@ -183,7 +184,7 @@ Data Lake は、ビッグデータの分析を用途として設計されてい�
 
 Data Lake には、分析、データ変換、AI や機械学習の応用を可能にする多くの関連するサービスがあります。 Microsoft やパートナー、オープンソースのツールからの Azure サービスを利用してデータを推測することができます。
 
-Data Lake からオンプレミスのデータ ウェアハウスに Finance and Operations データをダウンロードするかわりに、オンプレミスのデータを Data Lake に取り込むことができます。 Microsoftでは、この変化を *データ ウェアハウスの近代化*と呼びます。
+Data Lake からオンプレミスのデータ ウェアハウスに Finance and Operations データをダウンロードするかわりに、オンプレミスのデータを Data Lake に取り込むことができます。 Microsoftでは、この変化を *データ ウェアハウスの近代化* と呼びます。
 
 ## <a name="planning-the-transition"></a>移行の計画
 
@@ -193,5 +194,5 @@ Data Lake からオンプレミスのデータ ウェアハウスに Finance and
 
 1. **現在の状況:** すでにエンティティ ストアをベースにした BYOD や分析ワークスペースを利用している場合もあります。
 2. **データへの簡単なアクセス：** Data Lake のテーブル、エンティティ、および集計測定にアクセスできるようになると、BYOD を廃止して、すぐに使用できるデータを利用できるようになります。 したがって、前述のとおり、管理の労力とコストを削減することができます。 既存の下流のデータ ウェアハウスやパイプラインを維持して、プロジェクトのスコープと予算を管理することができます。
-3. **パワーユーザーの支援** : 分析ワークスペースは、サービス更新の一環として Data Lake に移行します。 そのため、既製の分析ワークスペースは、Data Lake で使用可能なデータに基づいて作成されます。 パワーユーザーは分析ワークスペースの拡張を簡単に実行できます。 サービスの更新が発生すると、PowerBI.com のすべての機能をパワーユーザーが利用できるようになります。 Power BI データフローなどの機能を利用することで、パワーユーザーはオンライン サービスのデータを簡単に組み合わせることができ、Data Lake にはすでにデータが存在しています。 分析ワークスペースで使用可能なレポートは、PowerBI.com にて直接使用することもできます。  
+3. **パワーユーザーの支援** : 分析ワークスペースは、サービス更新の一環として Data Lake に移行します。 そのため、既製の分析ワークスペースは、Data Lake で使用可能なデータに基づいて作成されます。 パワーユーザーは分析ワークスペースの拡張を簡単に実行できます。 サービスの更新が発生すると、PowerBI.com のすべての機能をパワーユーザーが利用できるようになります。 Power BI データフローなどの機能を利用することで、パワーユーザーはオンライン サービスのデータを簡単に組み合わせることができ、Data Lake にはすでにデータが存在しています。 分析ワークスペースで使用可能なレポートは、PowerBI.com にて直接使用することもできます。  
 4. **以前のデータ ウェアハウスを近代化する** : 近代化とは、おそらく最も利益をもたらす投資になるでしょう。 オンプレミスのデータ ウェアハウスに現在存在しているデータは、クラウドに移動できます。 クラウドベースのコンピューティング サービスに依存し、同じ変換処理を従量課金ベースで適用することができます。 業務データとセンサー データやデバイス データを組み合わせて使用することもできます。

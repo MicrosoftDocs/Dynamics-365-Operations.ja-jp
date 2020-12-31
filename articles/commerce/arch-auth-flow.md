@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f0971f9835fa64b5625f877ad8b47d34f706e3d4
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d4f94fe234f80e5f0fe0a85151d017a72987c4f2
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621000"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584303"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 
@@ -42,7 +42,7 @@ Commerce Scale Unit の各アプリケーション プログラミング イン�
 - **匿名** – このロールに関連付けられている API は、主にユーザー認証を行わずに E コマース サイトによって使用されます。
 - **カスタムされた API** – このロールに関連付けられている API へのアクセスを制限するには、POS デバイスの有効化、顧客認証、匿名認証などの方法を使用します。
 
-Commerce Scale Unit API とそのアクセス制限の完全な一覧については、[Commerce Scale Unit 顧客およびコンシューマー API](/dev-itpro/retail-server-customer-consumer-api.md) を参照してください。
+Commerce Scale Unit API とそのアクセス制限の完全な一覧については、[Commerce Scale Unit 顧客およびコンシューマー API](/dev-itpro/retail-server-customer-consumer-api) を参照してください。
 
 ### <a name="supported-authentication-methods"></a>サポートされている認証方法
 

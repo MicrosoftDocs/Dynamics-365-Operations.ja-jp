@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 218654
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aef037d577e75138b53d85a2444e3213597fb82b
-ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
+ms.openlocfilehash: 19adceb4df14f66581f99b8795d2458dca755715
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3640997"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683358"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 

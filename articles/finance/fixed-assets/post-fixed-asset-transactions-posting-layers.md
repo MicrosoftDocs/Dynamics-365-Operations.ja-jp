@@ -1,7 +1,7 @@
 ---
 title: 転記階層への固定資産トランザクションを転記する
 description: この記事は、固定資産トランザクションの転記階層機能の概要を示します。
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770715"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493675"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>転記階層への固定資産トランザクションを転記する
 
@@ -39,8 +39,11 @@ ms.locfileid: "2770715"
 
 [固定資産転記プロファイル] ページで、固定資産トランザクションのための勘定科目を指定できます。 各転記プロファイルに対して、関連するトランザクション タイプと帳簿を選択してから、勘定科目を指定する必要があります。 総勘定元帳に転記する各帳簿の転記プロファイルのレコードを設定します。
 
+固定資産は、**現在** の転記レイヤー (**発注書**、**保留中の仕入先請求書**、**販売注文**、**自由書式の請求書** など) のみをサポートするドキュメントに入力できます。 いずれかのドキュメントで固定資産 ID を選択すると、資産帳簿は **最新** の転記階層の帳簿に対してフィルター処理され、固定資産転記階層が **最新** であることがシステムによって検証されたときに転記時に自動的に入力されます。 検証を完了できない場合、転記プロセスは停止されます。 
+
 > [!NOTE] 
-> 派生帳簿を使用することによって、複数の転記階層にトランザクションを同時に転記することができます。 帳簿の転記階層に対応する転記階層の仕訳帳で、基本帳簿のトランザクションを作成します。 転記の際には、派生帳簿のトランザクションが、適切な転記階層に転記されます。
+> 派生帳簿を使用することによって、複数の転記階層にトランザクションを同時に転記することができます。 帳簿の転記レイヤーに対応する転記レイヤーの仕訳帳または元伝票で、基本帳簿のトランザクションが作成されます。 転記の際には、派生帳簿のトランザクションが、適切な転記レイヤーに転記されます。 
+
 
 詳細については、[派生帳簿](derived-books.md) および[派生帳簿による転記](post-derived-value-models.md) を参照してください。
 

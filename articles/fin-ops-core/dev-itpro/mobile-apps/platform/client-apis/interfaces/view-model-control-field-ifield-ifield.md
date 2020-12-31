@@ -1,7 +1,7 @@
 ---
 title: フィールド タイプ
 description: フィールド コントロール タイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 607ce24c4112374378004a2cf5f0bf2ff954d59f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c26d1a79e1219cf57aa27e65cc2f7249c8553cd6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978593"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682574"
 ---
 # <a name="field-type"></a>フィールド タイプ
 

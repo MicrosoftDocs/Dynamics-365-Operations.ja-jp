@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 416cd1c73db0a949a285e43315b8c3cc5f4c53a1
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: e8d19c22e3bb765ff97a69a862d46a020cec2564
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893123"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679234"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -45,9 +44,9 @@ ms.locfileid: "3893123"
 - 数量データのあるオンプレミス環境
 - 以下の特性を持つ開発環境。
 
-    - Microsoft Visual Studio 2015 Enterprise 以降のバージョンがインストールされています。
+    - Microsoft Visual Studio Enterprise またはそれ以降のバージョンがインストールされています。
     - パフォーマンス SDK をインストールします。 (SDK は K:\\PerfSDK\\PerfSDKLocalDirectory にある可能性があります。 ただし、環境によっては C:\\PerfSDK のような別の場所にある可能性があります。)
-    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM]が、またはオンプレミス環境には、パブリックに登録済みのドメイン名がある場合があります。)
+    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM] が、またはオンプレミス環境にパブリックに登録済みのドメイン名がある可能性があります。)
 
 ## <a name="create-a-single-user-c-test-from-an-xml-recording"></a>XML 記録からシングル ユーザー C# テストを作成する
 
@@ -58,7 +57,7 @@ ms.locfileid: "3893123"
 
 2. Microsoft Visual Studio を管理者として起動し、**PerfSDKSample** プロジェクトをビルドします。 このプロジェクトは **PerfSDK** フォルダーにあります。 プロジェクトを既に構築している場合、この手順を省略します。
 3. **Dynamics 365** &gt; **アドイン** &gt; **記録から C# パフォーマンス テストを作成** を選択します。
-4. **タスクの記録をインポート** ダイアログ ボックスで、必要な詳細を入力し、**インポート**を選択します。
+4. **タスクの記録をインポート** ダイアログ ボックスで、必要な詳細を入力し、**インポート** を選択します。
 
     [![インポート タスク記録 ダイアログ ボックス](./media/perf103a.png)](./media/perf103a.png)
 
@@ -72,7 +71,7 @@ ms.locfileid: "3893123"
 ### <a name="prepare-the-development-environment"></a>開発環境の準備
 開発環境でこれらの手順に従います。
 
-1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ**  &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
+1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ**  &gt; **システム** &gt; **システムの詳細設定** を選択します。 **TestRoot** 環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
 
     [![TestRoot 環境変数](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
@@ -100,7 +99,7 @@ ms.locfileid: "3893123"
     - authcert.cer
     - authcert.pvk
 
-5. **authcert.pfx** 証明書ファイルをインストールします。 ファイルをインストールするときは、**ローカル コンピューター**を必ず選択します。
+5. **authcert.pfx** 証明書ファイルをインストールします。 ファイルをインストールするときは、**ローカル コンピューター** を必ず選択します。
 6. **authcert.pfx** ファイルを **PerfSDK** フォルダにコピーします。
 7. 管理者として Microsoft Windows PowerShell ウィンドウを開き、次のコマンドを実行してインストールされている証明書拇印を取得します。
 
@@ -173,12 +172,12 @@ ms.locfileid: "3893123"
 ### <a name="prepare-the-on-premises-environment"></a>オンプレミス環境の準備
 オンプレミス配置の各アプリケーション オブジェクト サーバー (AOS) VM で以下の手順に従います。
 
-1. このトピックの[開発環境の準備](#prepare-the-development-environment)セクションで作成した **authcert.cer** ファイルを AOS VM にコピーします。
-2. **authcert.cer** 証明書ファイルをインストールします。 証明書をインストールするときは、**ローカル コンピューター**を必ず選択します。 証明書を**信頼済ルート証明機関**ストアに置くようにしてください。
+1. このトピックの [開発環境の準備](#prepare-the-development-environment)セクションで作成した **authcert.cer** ファイルを AOS VM にコピーします。
+2. **authcert.cer** 証明書ファイルをインストールします。 証明書をインストールするときは、**ローカル コンピューター** を必ず選択します。 証明書を **信頼済ルート証明機関** ストアに置くようにしてください。
 3. **wif.config** ファイルをテキスト エディタで開きます。 ファイルのパスは、**C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App19\\AXSF.Code.1.0.20180717001108** のようになります。
 
     > [!NOTE]
-    > ファイル パスでは、使用している AOS ノードによって AOS 番号 (この例では**AOS1**) が異なります。 さらに、**ProgramData** フォルダーは隠しフォルダーです。 したがって、ファイル エクスプローラーでフォルダを表示するには、非表示のアイテムを有効にする必要があります。
+    > ファイル パスでは、使用している AOS ノードによって AOS 番号 (この例では **AOS1**) が異なります。 さらに、**ProgramData** フォルダーは隠しフォルダーです。 したがって、ファイル エクスプローラーでフォルダを表示するには、非表示のアイテムを有効にする必要があります。
 
 4. **wif.config** ファイルで、`https://fakeacs.accesscontrol.windows.net` という機関を検索します。 この権限に対する拇印の一覧で、[開発環境の準備](#prepare-the-development-environment)セクションで作成した証明書の拇印を追加します。 次の例では、4 番目の拇印が `https://fakeacs.accesscontrol.windows.net` 権限に追加されました。
 
@@ -207,7 +206,7 @@ ms.locfileid: "3893123"
     > **AosRole** を **AosRoleUnknown** に設定すると、ユーザーごとの Web セッションの数の制限を無効にします。 負荷テストでは、単一のユーザーに対して多数のセッションが作成されるため、これは大規模なユーザー負荷で負荷テストを完了するために必要です。 負荷テストが完了したら、この値を **"AosRoleWeb"** にリセットします。
 
 
-7. Service Fabric Explorer では、AOS ノードのための **コード** パッケージを検索し、省略記号ボタン (**...**) を選択し、アプリケーションを再起動させるため**再起動**を選択します。
+7. Service Fabric Explorer では、AOS ノードのための **コード** パッケージを検索し、省略記号ボタン (**...**) を選択し、アプリケーションを再起動させるため **再起動** を選択します。
 
     ![Service Fabric Explorer から Finance and Operations の再起動](./media/ServiceFabricExplorerRestart.png)
 
@@ -224,7 +223,7 @@ ms.locfileid: "3893123"
 
     [![PurchaseReq.cs でコメント アウトされた行](./media/perf103e.png)](./media/perf103e.png)
 
-2. **テスト** &gt; **テスト設定**を選択し、**既定のプロセッサ アーキテクチャ** フィールドを **x64** に設定して、ソリューションをビルドします。
+2. **テスト** &gt; **テスト設定** を選択し、**既定のプロセッサ アーキテクチャ** フィールドを **x64** に設定して、ソリューションをビルドします。
 3. **テスト** &gt; **Windows** &gt; **テスト エクスプローラー** を選択してテストの一覧を表示します。
 
     > [!NOTE]
@@ -285,15 +284,15 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
     %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
     ```
 
-4. **CloudCtuFakeACSInstall.cmd** ファイルの内容を変更して、**インポート**コマンドに **'パスワード'** の代わりに空の文字列が入るようにします。 スクリプトの 3 行目は、次の行に似ているはずです。
+4. **CloudCtuFakeACSInstall.cmd** ファイルの内容を変更して、**インポート** コマンドに **'パスワード'** の代わりに空の文字列が入るようにします。 スクリプトの 3 行目は、次の行に似ているはずです。
 
     ```powershell
     set MyStoreInstallCmd= .... $pfxcert.Import('%TestCertPath%', '', 'Exportable,PersistKeySet')....
     ```
 
 5. ソリューション ファイルで、テストの設定を変更する **vsonline.testsettings** ファイルをダブルクリックします。
-6. **一般**タブの**テストの設定**ダイアログ ボックスで、**テストの実行場所**フィールドを**ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行**に設定します。
-7. **配置**タブで、次の設定を使用します。
+6. **一般** タブの **テストの設定** ダイアログ ボックスで、**テストの実行場所** フィールドを **ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行** に設定します。
+7. **配置** タブで、次の設定を使用します。
 
     - **展開の有効化** チェック ボックスをオンにします。
     - **配置する追加のファイルやディレクトリ** フィールドで、以下のファイルおよびディレクトリが表示されていることを確認します。
@@ -310,7 +309,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
         > PerfSDK フォルダーが異なっている場合があります。
 
 8. **設定とクリーンアップ** タブで、 **PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
-9. **ホスト**タブについて、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
+9. **ホスト** タブについて、**64 ビット コンピューターで 64 ビット プロセスのテストを実行** を選択します。
 10. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
     [![負荷テストの実行](./media/perf103u.png)](./media/perf103u.png)
@@ -346,7 +345,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 - Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup2 = 0
 - Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\Zoomfactor = 80000
 
-使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更**を選択する必要があります。 このフィールドは、Windows の**表示設定**で使用できます。 
+使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更** を選択する必要があります。 このフィールドは、Windows の **表示設定** で使用できます。 
 
 これらの手順が機能しない場合は、Internet Explorer での既定のズーム レベルが 100 % になるよう、RDP セッションを開始する前に、リモート デスクトップのサイズを変更するようにします。
 

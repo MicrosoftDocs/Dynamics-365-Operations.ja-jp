@@ -1,7 +1,7 @@
 ---
 title: PageSubmitArgs タイプ
 description: ページの OnSubmit イベントに指定された引数。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b21cf6f86c5140a5485af6f51509e2854ac63f32
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 51d241efe64fc911268f96804989777f89326305
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980952"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679930"
 ---
 # <a name="pagesubmitargs-type"></a>PageSubmitArgs タイプ
 

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ec9b0dbb45d8d0e5914579fbd6bf848a53fd529
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1b8157608d28fb74063f4243232ed54fdf7c231f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980682"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683216"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 
@@ -33,12 +32,12 @@ Finance and Operations アプリの担当者検索レポートは、1 人のエ�
 
 ## <a name="add-another-entity-to-the-default-template"></a>既定のテンプレートへの別のエンティティの追加
 
-任意のエンティティを既定の個人検索レポート テンプレートに追加することができます。 **データ管理**ワークスペースを開いて、**テンプレート**を選択します。 テンプレートにエンティティを追加します。 追加するエンティティには、個人検索レポートをフィルター処理するために使用されるフィールドの少なくとも 1 つが含まれている必要があります。 
+任意のエンティティを既定の個人検索レポート テンプレートに追加することができます。 **データ管理** ワークスペースを開いて、**テンプレート** を選択します。 テンプレートにエンティティを追加します。 追加するエンティティには、個人検索レポートをフィルター処理するために使用されるフィールドの少なくとも 1 つが含まれている必要があります。 
 
 ## <a name="create-a-new-search-category"></a>新しい検索カテゴリを作成する
 
 1. **PersonSearchResultCategory** 列挙型を使用して、作業者と申請者のような異なるカテゴリの結果を区別します。
-2. 新しい結果タイプを作成するには、必要に応じて**PersonSearchResultCategory** 列挙型を拡張します。
+2. 新しい結果タイプを作成するには、必要に応じて **PersonSearchResultCategory** 列挙型を拡張します。
 
 ## <a name="create-search-processing-for-the-new-search-category"></a>新しい検索カテゴリの検索処理を作成する
 
@@ -78,8 +77,8 @@ Finance and Operations アプリの担当者検索レポートは、1 人のエ�
 4. **PersonSearch** フォームを拡張します。
 
     1. データ ソースとして新しいビューを追加します。
-    2. 結果のグリッドと**含む/除外**ボタンを使用して結果に新しいタブを追加します。
-    3. **含む/除外**ボタンのイベント ハンドラーを作成して **PersonSearchResult** レコードを更新します。
+    2. 結果のグリッドと **含む/除外** ボタンを使用して結果に新しいタブを追加します。
+    3. **含む/除外** ボタンのイベント ハンドラーを作成して **PersonSearchResult** レコードを更新します。
 
         **PersonSearchEventHandler::updateMarkedOnButtonClicked()** メソッドが利便性のために用意されています。
 
@@ -112,7 +111,7 @@ Finance and Operations アプリの担当者検索レポートは、1 人のエ�
 ## <a name="create-new-exclusions"></a>新しい除外を作成する
 
 1. **PersonSearchEntityExclusion** テーブルを拡張するには、Chain of Command (COC) を使用します。
-2. **CoC メソッド**で、エンティティ、エンティティ フィールド、除外が有効かどうかを指定します。
+2. **CoC メソッド** で、エンティティ、エンティティ フィールド、除外が有効かどうかを指定します。
 3. 新しい除外レコードを挿入します。
 
     個人検索フレームワークが、最初にフォームが開いたときに、すべての除外の初期化を自動的に管理します。

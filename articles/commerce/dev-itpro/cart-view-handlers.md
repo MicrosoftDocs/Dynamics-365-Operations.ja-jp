@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 677b3b36cbfa79bcf5b36a04533eb926429eba17
-ms.sourcegitcommit: 45a3564d5ade750e023fa0ab745ba6bca521ca61
+ms.openlocfilehash: 026ebbbb586f357d18b4fa6612757d9f171df31b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078936"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680384"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 
@@ -106,10 +105,10 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 ユーザー インターフェイス (UI) でイベントを使用する基底クラスがいくつかあります。
 
 + カスタム コントロール
-+ **合計**ウィンドウのカスタム フィールド
-+ **行**グリッドのカスタム列
-+ **支払**グリッドのカスタム列
-+ **出荷**グリッドのカスタム列
++ **合計** ウィンドウのカスタム フィールド
++ **行** グリッドのカスタム列
++ **支払** グリッドのカスタム列
++ **出荷** グリッドのカスタム列
 
 ### <a name="custom-controls"></a>カスタム コントロール
 

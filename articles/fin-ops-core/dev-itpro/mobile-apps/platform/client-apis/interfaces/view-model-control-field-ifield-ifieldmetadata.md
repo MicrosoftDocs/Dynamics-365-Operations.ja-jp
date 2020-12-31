@@ -1,7 +1,7 @@
 ---
 title: FieldMetadata タイプ
 description: フィールド メタデータのインターフェイス。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dc8c868c3cce26624e4ed0ffe7416cfe8a6c8597
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 2f5f18b9da77f42a1da60440c04e82f3267aa724
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987536"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679238"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 
@@ -113,7 +112,7 @@ DecimalPlaces: 番号 (オプション)
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可) 
 
-拡張されたコントロール タイプです。 E.g. コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
+拡張されたコントロール タイプです。 たとえば、コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) から継承
 
@@ -135,7 +134,7 @@ ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#con
 
 HelpText: 文字列 (オプション) 
 
-コマンドのキーボード ショートカットです。 E.g. 「(Shift + F5)」
+コマンドのキーボード ショートカットです。 たとえば、「(Shift + F5)」
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) から継承
 
@@ -162,7 +161,7 @@ Id: string (オプション)
 
 ラベル: 文字列 (省略可) 
 
-コントロールのラベル。 E.g. 個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
+コントロールのラベル。 たとえば、個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) から継承
 

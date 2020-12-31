@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 260954
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e694aca206d26a1789a43cff4edee6267eb60633
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: afaec983ec3ec069ed28057e4ca6499587853535
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893391"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680532"
 ---
 # <a name="azure-expressroute-and-finance-and-operations-apps"></a>Azure ExpressRoute と Finance and Operations アプリ
 

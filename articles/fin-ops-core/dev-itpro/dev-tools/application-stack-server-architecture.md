@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c160269f2173d8112bfd3e620518e268b30bb30e
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: bce5669a923833d28282684e49707969338f1941
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893377"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644853"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -48,7 +47,7 @@ ms.locfileid: "3893377"
     -   アクティブなクライアントは、サーバーからの応答に基づいて、アクションをプログラムで開始できます。 アクティブなクライアントは認証用の HTTP リダイレクトに依存しません。 スマート/リッチ クライアントは、アクティブなクライアントの例です。
     -   パッシブ クライアントは、サーバーからの応答に基づいて、アクションをプログラムで開始できません。 パッシブなクライアントは認証用の HTTP リダイレクトに依存します。 Web ブラウザーは、パッシブ クライアントの例です。
 
-    現在、Access Control Service (ACS) は非対話型認証のためのメカニズムをサポートしていません。 したがって、アクティブなクライアントが ACS を使用して認証を試みる場合でも、パッシブ クライアント認証を使用する必要があります。パッシブ クライアント認証では、ブラウザーのダイアログ ボックスに、ユーザーに資格情報の入力を求めるプロンプトが表示されます。
+    現在、Access Control Service (ACS) は非対話型認証のためのメカニズムをサポートしていません。 したがって、アクティブなクライアントが ACS を使用して認証を試みる場合でも、パッシブ クライアント認証を使用する必要があり、パッシブ クライアント認証では、ブラウザーのダイアログ ボックスに、ユーザーに資格情報の入力を求めるプロンプトが表示されます。
 -   完全に改訂されたメタデータ サブシステムには、新しいコンパイラおよび Microsoft Visual Studio ベース開発モデルが組み込まれています。 モデル ストアは、モデルによって編成された一連のフォルダーと XML コンポーネントとして表されます。 テーブル、フォーム、クラスなどのモデル要素は、メタデータとソース コードの両方を含む XML ファイルで表されます。
 
 次の図の左側に、アプリケーション スタックが個別のモデルに分割されている様子が示されています。 右側には、主要なコンポーネントがサーバーにどのように積み重ねられているかが示されています。 

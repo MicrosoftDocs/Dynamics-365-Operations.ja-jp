@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b53535d1a000b72577be5c6284cc4676c43d591b
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 3c7156b9990397822a6bea9ed8b3df8f65490572
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744602"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683284"
 ---
 # <a name="abs-er-function"></a>ABS ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ABS` 関数は、指定された数の絶対値 (係数) を*実数*値として返します。 つまり、符号のない数値を返します。
+`ABS` 関数は、指定された数の絶対値 (係数) を *実数* 値として返します。 つまり、符号のない数値を返します。
 
 ## <a name="syntax"></a>構文
 

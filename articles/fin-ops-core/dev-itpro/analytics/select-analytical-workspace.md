@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 3ed09261e57530348d4884ad6e2258d27453e126
-ms.sourcegitcommit: 045be8c2cb065497f3b58c50dff16d7a71aaa876
+ms.openlocfilehash: a52177ed6edad441374c3722db2bbac91ca11322
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "3722230"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682203"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 

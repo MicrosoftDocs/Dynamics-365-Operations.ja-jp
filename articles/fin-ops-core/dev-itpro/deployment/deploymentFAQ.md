@@ -3,24 +3,23 @@ title: セルフサービス配置の FAQ
 description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: rashmansur
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 11/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c6b297b17973c93ad72159e3e4226b97152c91e3
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: c940d1dd71c3e4c9b720cfaedee00a52694f60a6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456521"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680536"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -70,7 +69,7 @@ Microsoft リモート デスクトップ アクセスはなくなりますが�
 > 資格情報は 8 時間有効です。その後、有効期限が切れます。 資格情報の有効期限後、もう一度アクセス権を要求する必要があります。 
 
 ### <a name="access-log-files"></a>ログ ファイルへのアクセス
-すべてのログ ファイルは、LCS 環境監視ページの**活動**タブから表示してダウンロードできます。
+すべてのログ ファイルは、LCS 環境監視ページの **活動** タブから表示してダウンロードできます。
 
 ### <a name="use-perfmon-tools"></a>perfmon ツールを使用する
 リモート デスクトップを使用できなくなるため、パフォーマンスの問題を診断するために perfmon.exe を使用できなくなりますが、LCS を通じて CPU およびメモリ消費の重要な稼働状態メトリックを監視することができます。 さらに、事前定義されたクエリをオンデマンドで実行でき、レベル 2 以上の環境でのパフォーマンスの問題を軽減するために事前に定義されたアクションを実行することができます。 
@@ -94,3 +93,35 @@ LCS を通じて環境で実行されるセルフサービス操作に関連す�
 ## <a name="i-dont-have-remote-desktop-access-to-my-sandbox-environment-and-the-critical-action-that-i-must-perform-isnt-listed-in-this-topic-how-do-i-get-help"></a>サンドボックス環境にリモート デスクトップ アクセスがなく、実行する必要がある重要なアクションがこのトピックに挙げられていません。 ヘルプを表示する方法を教えてください。
 
 重要なアクションのこのトピックの前方に掲載されていない場合、このトピックにコメントを追加するかドキュメンテーション バグを記録すると、Microsoft が要求に対応します。
+
+## <a name="for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment"></a>Microsoft が管理する環境には、明示的な発信 IP セーフ リストに依存関係がある外部コンポーネントがあります。 セルフサービス配置への移行後にサービスが影響を受けないようにするにはどうすればよいですか?
+セルフサービス移行では、環境がホストされる地域の発信 IP アドレスを変更しています。 新しい発信 IP アドレスを使用して、今後のセルフサービス移行またはポスト移行の準備として追加することができます。
+
+* 外部コンポーネントのいずれにも、IP アドレスの明示的な包含一覧、ルーティングまたはファイアウォールの発信 IP アドレスの特別な処理が依存していない場合、アクションは必要ありません。
+* 外部コンポーネントのいずれかが AOS と通信するための発信 IP アドレスに対して特別な処理がある場合は、既存のものが表示される場所に新しい発信 IP アドレスを追加します。 既存の IP アドレスを置き換えないでください。 新しい発信 IP アドレスは、次の一覧にあります。 たとえば、発信 IP アドレスが AOS の外部のファイアウォールに明示的に含まれている場合や、外部サービスに、AOS の発信 IP アドレスを含む許可一覧が設定されている場合があります。
+
+AOS への受信 IP アドレスが動的になります。 これにより、インフラストラクチャの変更が行われるたびに時間とともに変更します。
+
+> [!NOTE]
+> AOS の発信 IP アドレスは、現在、2021 年 6 月で終了するように一覧表示されている個別の AOS セッションの期間中は、静的なままになります。 
+
+| リージョン | IP 接頭語
+|---------------------|-------------|
+| 米国西部 | 52.250.195.128/26
+| 米国東部 | 52.255.218.64/26
+| 米国中部 | 13.86.98.128/26
+| 西ヨーロッパ | 51.105.159.192/26
+| 西ヨーロッパ -2 | 20.61.88.128/26
+| 北ヨーロッパ | 52.155.160.192/26
+| イギリス西部 | 51.137.139.0/26
+| イギリス南部 | 51.11.26.192/26
+| オーストラリア東部 | 20.40.190.0/26
+| オーストラリア南東部 | 20.40.165.192/26
+| カナダ中部 | 20.151.60.0/26
+| カナダ東部 | 52.155.27.128/26
+| ブラジル南部 | 191.234.130.0/26
+| 東アジア | 52.229.231.64/26
+| 東南アジア | 20.44.247.0/26
+| 東日本 | 20.48.77.192/26
+| 西日本 | 20.39.179.192/26
+

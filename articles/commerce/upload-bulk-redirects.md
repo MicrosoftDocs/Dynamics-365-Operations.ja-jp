@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f117fd5e7f409cfd57b6db37ac30631609744c1
-ms.sourcegitcommit: 01c057aa0e33ed01362161420a9c3465fe8e7a9f
+ms.openlocfilehash: 8268045832a95d6a2413a6e82d86d4b48a14bb76
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3603132"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517344"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 
@@ -120,11 +120,11 @@ https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい E コマース テナントの配置](deploy-ecommerce-site.md)
 
 [E コマース サイトの作成](create-ecommerce-site.md)
 
-[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

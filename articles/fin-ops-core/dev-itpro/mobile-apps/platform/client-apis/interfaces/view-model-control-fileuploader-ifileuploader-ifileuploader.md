@@ -1,7 +1,7 @@
 ---
 title: FileUploader タイプ
 description: ファイル アップローダーコントロール タイプ。 イメージなどのファイルをアップロードするためのコントロールです。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 344c00c5521900737c8d054b89489a7b66473cdf
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 04dbd84de9c42dc2e80a04d1bf7518a1b0ac65b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976912"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679236"
 ---
 # <a name="fileuploader-type"></a>FileUploader タイプ
 

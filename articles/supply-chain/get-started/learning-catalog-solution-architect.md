@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0d93e17ffbd73527d8498a25618944251bb5b946
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: 906ccab2ced95a7b41a6e99eb95ab222e4e9facf
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793117"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516633"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-solution-architects"></a>Dynamics 365 Supply Chain Management ソリューション アーキテクトのラーニング カタログ
 
@@ -42,7 +42,7 @@ ms.locfileid: "3793117"
 | [Go-Live 計画 (DYN458PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) | Go-Live プロセスについて詳しく説明し、お客様、パートナー、および Microsoft にとって可能な限りスムーズにするために、どのように準備できるかについて説明します。 | Web カンファレンスの無料録画 | 60 分 |
 | [環境計画 (DYN450PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018) | 環境計画に関するこの Tech Talk にご参加ください。 標準環境、必要になる可能性のある他の環境、取得および配置のためのオプションとタイミング、および環境間で予想されるコードとデータ フローについて学習します。 | Web カンファレンスの無料録画 | 53 分 |
 | [デモ データ パッケージ (DYN443PAL) ](https://community.dynamics.com/365/b/techtalks/posts/demo-data-packages-february-14-2018) | 最近リリースされたデモ データ パッケージに関するこの Tech Talk にご参加ください。 これを使用して、シナリオに必要なデモ データをカスタマイズし、必要なものだけを環境に読み込むことができます。 | Web カンファレンスの無料録画 | 40 分 |
-| [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要については、この Tech Talk にご参加ください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Web カンファレンスの無料録画 | 48 分 |
+| [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要に関するこの Tech Talk にご参加ください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Web カンファレンスの無料録画 | 48 分 |
 | [コンフィギュレーションを使用したデータのインポートおよびエクスポート時間の削減 (DYN315PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reduce-data-import-and-export-time-using-configurations-june-13-2017) | この Tech Talk では、Dynamics 365 for Finance and Operations、Enterprise edition の新しいコンフィギュレーション機能について説明します。 事前定義されたテンプレートを使用してコンフィギュレーションを設定する方法、コンフィギュレーション データを法人からデータ プロジェクトにコピーしてエクスポートする方法、その後別の法人にインポートする方法について説明します。 | Web カンファレンスの無料録画 | 52 分 |
 | [Dynamics 365 for Operations のレポート オプション (VIR810PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reporting-options-in-dynamics-365-for-operations-february-23-2017) | このセッションでは、ドキュメント回覧エージェントのヒントとコツなど、Dynamics 365 for Operations でのさまざまな印刷のシナリオについて説明します。 | Web カンファレンスの無料録画 | 60 分 |
 | [分析 & レポート オプション: 印刷とドキュメント回覧エージェント](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| 2 つの関連トピックについて、この Tech Talk にご参加ください。 最初に、Dynamics 365 for Finance and Operations、Enterprise Edition 向けの分析およびレポートのソリューション パターンとツールについて説明します。 次に、印刷のシナリオとドキュメント回覧エージェントについて説明します。 | Web カンファレンスの無料録画 | 45 分|

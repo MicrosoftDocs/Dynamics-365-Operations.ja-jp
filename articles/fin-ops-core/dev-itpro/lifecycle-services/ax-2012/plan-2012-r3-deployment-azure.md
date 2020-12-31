@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18591
 ms.assetid: 84e597d7-6ad3-4322-8ac3-6b6151dd24f6
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4f5ea1ad7430c353e72c3232e472df6286b458b3
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: 2793ce6bc99ddd50867e827cb9d5b019d65b8238
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287839"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681080"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
@@ -50,7 +49,7 @@ Lifecycle Services (LCS) は、顧客およびパートナーが Microsoft Dynam
 Azure を使用するには、サブスクリプションを購入する必要があります。 サブスクリプション プランおよび価格決定の詳細については、[Azure 価格決定](https://azure.microsoft.com/pricing/) ページを参照してください。 その後、そのページの指示に従ってサブスクリプションを購入します。 サブスクリプションは、Azure に配備する AX 2012 R3 環境をサポートするのに十分な大きさでなければなりません。 次のテーブルは、Azure に配置できる AX 2012 R3 環境のタイプと、各環境を既定のコンフィギュレーションで配置するために必要なコアの数を示しています。 
 
 > [!NOTE]
-> 環境を配置するときに、配置される仮想マシンの数とサイズを変更できることに留意してください。 ただし、次のテーブルでは、その*既定*コンフィギュレーションで各環境を配置するために必要なコアの数を一覧にします。
+> 環境を配置するときに、配置される仮想マシンの数とサイズを変更できることに留意してください。 ただし、次のテーブルでは、その *既定* コンフィギュレーションで各環境を配置するために必要なコアの数を一覧にします。
 
 **環境タイプ:** - デモ
 
@@ -124,13 +123,13 @@ Azure VM エージェントは、Lifecycle Services を通じて展開された�
 必要に応じて、配置のためのクラウド サービス リソース要件を検討し、Azure サポートから Azure サブスクリプションの追加クラウド サービス キャパシティを要求してください。
 
 ## <a name="plan-for-storage-accounts"></a>ストレージ アカウントの計画
-Lifecycle Services で作成された各プロジェクトについては、1 つまたは複数の個別のストレージ アカウントが Azure 定期売買で作成されます。 ストレージ アカウントは、プロジェクトを Azure サブスクリプションに接続すると作成されます。 このストレージ アカウントは、ローカル冗長ストレージ (LRS) アカウントであり、展開に必要なスクリプトと VHD を格納するために使用されます。 最初の Premium ストレージ有効トポロジがプロジェクトから配置されると、各プロジェクトが作成され Premium ストレージ アカウントが追加されます。 ストレージ アカウントは、配置が同じ Azure サブスクリプションに行われる場合でも、Lifecycle Services プロジェクト間で共有されません。 Premium ストレージ アカウントが作成されると、それもまた LRS として作成されます。 ストレージの詳細については、[ここ](https://azure.microsoft.com/pricing/details/storage) をクリックしてください。 同じ Lifecycle Services (LCS) プロジェクトと Azure コネクタに展開されるトポロジと環境の数を検討します。 Premium ストレージ アカウントとは別に、既定では、LCS プロジェクトおよび Azure コネクタごとにストレージ アカウントが 1 つ存在します。 Azure Storage には[限度](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits)があるので注意してください。具体的には、標準ストレージ アカウントあたり 20,000 IOPS (秒単位の入力/出力オペレーション) です。 VHD あたり 500 IOPS と組み合わせると、調整が発生する前に約 40 個の***利用効率が高い*** VHDが残されます。 これを軽減するには、複数の Azure コネクタや複数の LCS プロジェクトを活用することをお勧めします。 たとえば、1 つの LCS プロジェクトで製造環境を、別で開発/テスト環境を検討します。 
+Lifecycle Services で作成された各プロジェクトについては、1 つまたは複数の個別のストレージ アカウントが Azure 定期売買で作成されます。 ストレージ アカウントは、プロジェクトを Azure サブスクリプションに接続すると作成されます。 このストレージ アカウントは、ローカル冗長ストレージ (LRS) アカウントであり、展開に必要なスクリプトと VHD を格納するために使用されます。 最初の Premium ストレージ有効トポロジがプロジェクトから配置されると、各プロジェクトが作成され Premium ストレージ アカウントが追加されます。 ストレージ アカウントは、配置が同じ Azure サブスクリプションに行われる場合でも、Lifecycle Services プロジェクト間で共有されません。 Premium ストレージ アカウントが作成されると、それもまた LRS として作成されます。 ストレージの詳細については、[ここ](https://azure.microsoft.com/pricing/details/storage) をクリックしてください。 同じ Lifecycle Services (LCS) プロジェクトと Azure コネクタに展開されるトポロジと環境の数を検討します。 Premium ストレージ アカウントとは別に、既定では、LCS プロジェクトおよび Azure コネクタごとにストレージ アカウントが 1 つ存在します。 Azure Storage には[限度](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits)があるので注意してください。具体的には、標準ストレージ アカウントあたり 20,000 IOPS (秒単位の入力/出力オペレーション) です。 VHD あたり 500 IOPS と組み合わせると、調整が発生する前に約 40 個の**_利用効率が高い_** VHD が残されます。 これを軽減するには、複数の Azure コネクタや複数の LCS プロジェクトを活用することをお勧めします。 たとえば、1 つの LCS プロジェクトで製造環境を、別で開発/テスト環境を検討します。 
 
 > [!NOTE]
 > インストール VHD など、LCS が配置するすべての VHD が高度に使用されるわけではありません。
 
 ## <a name="plan-your-sql-server-configuration"></a>SQL Server 構成の計画
-Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS を達成し、読み取り操作での待機時間は非常に短くなります。 Premium Storage は、生産能力で使用される AX 2012 R3 配置に必要です。 Azure DS シリーズ VM が選択されている場合、高可用性配置では Premium Storage が既定で有効になります。 Premium Storage は、現時点では DS シリーズ VM 上でのみ提供されています。 他のすべての記憶域ニーズに非 Premium ストレージが使用されているとき、SQL Server AlwaysOn データベース サーバーだけで Premium Storage が有効になります。 SQL Server AlwaysOn 可用性セットが作成されると、Lifecycle Services は、選択された DS シリーズ VM でサポートされているすべてのディスク スロットに対してディスクをアタッチします。 VM ディスク能力の詳細については、[ここ](https://msdn.microsoft.com/library/azure/dn197896.aspx) をクリックします。 異なる VM サイズには、スループットと IOPS の最大値が変化します。 結果として、 SQL Server の構成を計画しているときは、ビジネスに最も効率的でコスト効果の良いソリューションを展開するために、これらの制限に精通してください。 [Premium Storage: Azure 仮想マシン ワークロード向け高性能ストレージ](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)に関するページ (特に、**Premium Storage の使用時の調整**に関するセッション) にあるガイドラインに従ってください。 SQL Server AlwaysOn 可用性セットは、Lifecycle Services を通じて自動的に作成されます。 生産システムで使用するための高可用性トポロジを配置する前に、データおよびパフォーマンスのニーズを考慮することが重要です。 Azure Premium Storage については、[こちら](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)をご覧ください。 Premium Storage で配置を計画すると、高可用性トポロジには、原価とパフォーマンスの目標を達成するためのコンフィギュレーション オプションが提供されます。 高可用性のトポロジの詳細設定では、次の SQL Server 構成オプションが表示されます。
+Azure Premium Storage は、Azure 仮想マシン (VM) 上で実行される I/O 集約型ワークロードに対して高パフォーマンス、待機時間が短いディスク サポートを提供します。 Premium Storage では、アプリケーションは VM ごとに 32 TB までのストレージを持つことができ、VM ごとに 50,000 IOPS を達成し、読み取り操作での待機時間は非常に短くなります。 Premium Storage は、生産能力で使用される AX 2012 R3 配置に必要です。 Azure DS シリーズ VM が選択されている場合、高可用性配置では Premium Storage が既定で有効になります。 Premium Storage は、現時点では DS シリーズ VM 上でのみ提供されています。 他のすべての記憶域ニーズに非 Premium ストレージが使用されているとき、SQL Server AlwaysOn データベース サーバーだけで Premium Storage が有効になります。 SQL Server AlwaysOn 可用性セットが作成されると、Lifecycle Services は、選択された DS シリーズ VM でサポートされているすべてのディスク スロットに対してディスクをアタッチします。 VM ディスク能力の詳細については、[ここ](https://msdn.microsoft.com/library/azure/dn197896.aspx) をクリックします。 異なる VM サイズには、スループットと IOPS の最大値が変化します。 結果として、 SQL Server の構成を計画しているときは、ビジネスに最も効率的でコスト効果の良いソリューションを展開するために、これらの制限に精通してください。 [Premium Storage: Azure 仮想マシン ワークロード向け高性能ストレージ](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/) に関するページ (特に、_*Premium Storage の使用時の調整** に関するセッション) にあるガイドラインに従ってください。 SQL Server AlwaysOn 可用性セットは、Lifecycle Services を通じて自動的に作成されます。 生産システムで使用するための高可用性トポロジを配置する前に、データおよびパフォーマンスのニーズを考慮することが重要です。 Azure Premium Storage については、[こちら](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/)をご覧ください。 Premium Storage で配置を計画すると、高可用性トポロジには、原価とパフォーマンスの目標を達成するためのコンフィギュレーション オプションが提供されます。 高可用性のトポロジの詳細設定では、次の SQL Server 構成オプションが表示されます。
 
 -   **SQL Server イメージ コンフィギュレーションのカスタマイズ** - このオプションを使用すると、カスタム SQL Server Enterprise イメージまたは Azure Gallery SQL Server Enterprise イメージを使用できます。
     -   カスタム SQL Server イメージ (既定) - このイメージには、SQL Server Enterprise 2014の試用版が含まれています。 評価版ライセンスは 3〜6 か月間有効です。 既存の EA/etc. ライセンスを使用する場合は、このオプションを使用します。

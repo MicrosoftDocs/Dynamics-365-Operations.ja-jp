@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7ac28419315d03c2935ba318c032882365ea9d8
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: f8a5a2cc11d0da58497b967095c5835698d72d82
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329872"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683939"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 
@@ -37,8 +36,8 @@ Microsoft Power Apps では、作成したアプリ、または別の人が作�
     ![アプリ ID](media/powerapps-appid.png)
   
 2.  Visual Studio でプロジェクトを開き、フォーム デザイナーで、Power Apps ホスト コントロールのインスタンスをページに追加します。
-3.  **プロパティ** ウィンドウに**アプリ ID** の値を入力します。
-4.  ページでアプリが現在のデータ ソースを共有、またはそこにリンクされている場合、アプリで表示するデータのプライマリまたはリンクされたキー フィールドの ID を渡すことができます。 この場合、ID を**エンティティ ID**、**エンティティ ID データ ソース/フィールド**、または **DataMethod** プロパティの値で指定します。 この値は、アプリにパラメーター値として渡され、アプリはその値を使用して、リンクされているデータを取得する必要があります。 
+3.  **プロパティ** ウィンドウに **アプリ ID** の値を入力します。
+4.  ページでアプリが現在のデータ ソースを共有、またはそこにリンクされている場合、アプリで表示するデータのプライマリまたはリンクされたキー フィールドの ID を渡すことができます。 この場合、ID を **エンティティ ID**、**エンティティ ID データ ソース/フィールド**、または **DataMethod** プロパティの値で指定します。 この値は、アプリにパラメーター値として渡され、アプリはその値を使用して、リンクされているデータを取得する必要があります。 
     
     ![Power Apps ホスト コントロールのプロパティ ウィンドウ](media/powerapps-properties.png)
     

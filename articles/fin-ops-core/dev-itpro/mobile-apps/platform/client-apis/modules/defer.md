@@ -1,7 +1,7 @@
 ---
 title: 延期モジュール
 description: 延期タイプ
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f25d94acdeb31e37547d9111bfd799840ac35642
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 513eadb369379672b34dd3ecb6f8d087c907efbf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986909"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682567"
 ---
 # <a name="defer-module"></a>延期モジュール
 
@@ -61,7 +60,7 @@ ms.locfileid: "3986909"
 | [否認](../interfaces/defer-ideferred.md#reject) |reject(error?: any): void|  |
 | [解決](../interfaces/defer-ideferred.md#resolve) |resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void|  |
 
-## <a name="functions"></a>ファンクション
+## <a name="functions"></a>関数
 
 
 ### <a name="all"></a>すべて

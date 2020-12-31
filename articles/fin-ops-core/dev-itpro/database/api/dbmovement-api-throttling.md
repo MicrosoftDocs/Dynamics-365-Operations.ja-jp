@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: dc74150c7126cc1dd3edeb70b631ad17173ea809
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 0cd990e79e31fa7ec355b4c5f423eeeff405a387
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113651"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681118"
 ---
 # <a name="throttling"></a>調整
 
@@ -34,7 +33,7 @@ ms.locfileid: "3113651"
 
 ### <a name="current-limits"></a>現在の制限
 
-現在、データベース移動 API では、LCS での新しい操作をトリガーするすべてのアクションに対して、**24 時間枠あたり 3 回の実行**というグローバルな呼び出し制限があります。 これらの操作には、データベースの更新操作が含まれます。
+現在、データベース移動 API では、LCS での新しい操作をトリガーするすべてのアクションに対して、**24 時間枠あたり 3 回の実行** というグローバルな呼び出し制限があります。 これらの操作には、データベースの更新操作が含まれます。
 
 この制限を超えた場合は、新しい操作を開始することはできず、次の例のようなエラーが表示されます。
 

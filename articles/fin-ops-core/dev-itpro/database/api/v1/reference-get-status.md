@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 15521d0f685cb69623c708cd066c45b8ad30278f
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: a5659e221150d75827d9f333610f4c62b15b292e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830773"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681108"
 ---
 # <a name="get-status"></a>ステータスの取得
 

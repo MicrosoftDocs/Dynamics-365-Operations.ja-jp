@@ -10,20 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 3af7d6a15a479fe11aede6511f6ea61da2d87daf
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 7826201478c676243e330a3ce6302b8fbb63222d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834248"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680422"
 ---
 # <a name="finance-and-operations-and-common-data-service-admin-reference"></a>Finance and Operations および Common Data Service 管理リファレンス
+
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > この機能には、[Finance and Operations](../get-started/whats-new-platform-update-10-0-12.md) および Common Data Service の更新プログラム 189 のサービスが必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
@@ -35,7 +37,7 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
 次のソリューションが Common Data Service にインストールされていることを確認します。
 
-- **Dynamics365Company**: すべての Finance and Operations エンティティによって参照される**会社**エンティティを、PrimaryCompanyContext メタデータ値と共に追加します。
+- **Dynamics365Company**: すべての Finance and Operations エンティティによって参照される **会社** エンティティを、PrimaryCompanyContext メタデータ値と共に追加します。
 
 - **MicrosoftOperationsVESupport**: これにより、Finance and Operations 仮想エンティティ機能のコア サポートが提供されます。
 
@@ -56,7 +58,7 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
     - **名前**: 一意の名前を入力します。
 
-    - **アカウント タイプ**: **任意の Azure AD ディレクトリ**を入力します (単一またはマルチテナント)。
+    - **アカウント タイプ**: **任意の Azure AD ディレクトリ** を入力します (単一またはマルチテナント)。
 
     - **リダイレクト URI**: 空白のままにします。
 
@@ -74,13 +76,13 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
     - **保存** を選択します。 キーが作成され、表示されます。 この値を後で使用するためにコピーします。
 
-上で作成した AAD アプリケーションは、Common Data Service によって Finance and Operations アプリを呼び出すために使用されます。 したがって、Finance and Operations によって信頼され、Finance and Operations で適切な権限を持つユーザー アカウントに関連付けられている必要があり ます。 Finance and Operations では、特殊サービス ユーザーは、仮想エンティティ機能に対する権限*のみ*で作成することができます。その他の権限は必要ありません。 この手順を完了すると、上で作成した AAD アプリケーションのシークレットを使用するアプリケーションによって、この Finance and Operations 環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
+上で作成した AAD アプリケーションは、Common Data Service によって Finance and Operations アプリを呼び出すために使用されます。 したがって、Finance and Operations によって信頼され、Finance and Operations で適切な権限を持つユーザー アカウントに関連付けられている必要があり ます。 Finance and Operations では、特殊サービス ユーザーは、仮想エンティティ機能に対する権限 *のみ* で作成することができます。その他の権限は必要ありません。 この手順を完了すると、上で作成した AAD アプリケーションのシークレットを使用するアプリケーションによって、この Finance and Operations 環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
 
 次の手順では、このプロセスを Finance and Operations アプリで実行していきます。
 
-1.  Finance and Operations で、**システム管理 \> ユーザー \> ユーザー**の順に移動します。
+1.  Finance and Operations で、**システム管理 \> ユーザー \> ユーザー** の順に移動します。
 
-2.  **新規作成**を選択して、新しいユーザーを追加します。 次の情報を入力します。
+2.  **新規作成** を選択して、新しいユーザーを追加します。 次の情報を入力します。
 
     - **ユーザー ID**: **cdsintegration** (または別の値) を入力します。
 
@@ -88,17 +90,17 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
     - **プロバイダー**: 既定値をそのまま使います。
 
-    - **電子メール**: **cdsintegration** (または別の値) を入力します (有効な電子メール アカウントである必要は*ありません*)。
+    - **電子メール**: **cdsintegration** (または別の値) を入力します (有効な電子メール アカウントである必要は *ありません*)。
 
-    - このユーザーにセキュリティ ロール **CDS 仮想エンティティ アプリケーション**を割り当てます。
+    - このユーザーにセキュリティ ロール **CDS 仮想エンティティ アプリケーション** を割り当てます。
 
-    - **システム ユーザー**を含む他のすべてのロールを削除します。
+    - **システム ユーザー** を含む他のすべてのロールを削除します。
 
 3.  **システム管理 \> 設定 \> Azure Active Directory アプリケーション** の順に移動して Common Data Service を登録します。 
 
     - 新しい行を追加します。
 
-    - **クライアント ID**: 上で作成された**アプリケーション (クライアント) ID**
+    - **クライアント ID**: 上で作成された **アプリケーション (クライアント) ID**
 
     - **名前**: **CDS 統合** (または別の名前) を入力します。
 
@@ -106,7 +108,7 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
 プロセスの次の手順では、接続先の Finance and Operations インスタンスに Common Data Service を提供します。 以下の手順では、プロセスのこの部分について説明します。
 
-1.  Common Data Service では、**詳細設定 \> 管理 \> 仮想エンティティ データ ソース**に移動します。
+1.  Common Data Service では、**詳細設定 \> 管理 \> 仮想エンティティ データ ソース** に移動します。
 
 2.  "Finance and Operations" というデータ ソースを選択します。
 
@@ -118,7 +120,7 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
     - **テナント ID**: "contoso.com" などのテナント。
 
-    - **AAD アプリケーション ID**: 上で作成された**アプリケーション (クライアント) ID**。
+    - **AAD アプリケーション ID**: 上で作成された **アプリケーション (クライアント) ID**。
 
     - **AAD アプリケーション シークレット**: 上で生成されたシークレット。
 
@@ -130,7 +132,7 @@ Finance and Operations 仮想エンティティの Common Data Service ソリュ
 
 Finance and Operations には多数の OData 対応エンティティが含まれているため、既定では、エンティティは Common Data Service の仮想エンティティとしては使用できません。 次の手順では、必要に応じてエンティティを仮想にすることができます。
 
-1. Common Data Service で、**高度な検索**に移動します。
+1. Common Data Service で、**高度な検索** に移動します (フィルター アイコン)。
 
 2. [利用可能な Finance and Operations エンティティ] を探して、**結果** を選択します。
 

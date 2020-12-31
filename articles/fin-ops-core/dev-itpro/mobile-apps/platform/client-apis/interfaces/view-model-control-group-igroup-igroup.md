@@ -1,7 +1,7 @@
 ---
 title: グループ タイプ
 description: グループ コンテナーのコントロール タイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 681b80b87d13a4f52e15aeb6cc423870c0c9a4fe
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b0d33291d07044d492b485f14d32be72193dc34b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976907"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679218"
 ---
 # <a name="group-type"></a>グループ タイプ
 

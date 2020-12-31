@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 22917aa319a3c2850d1f42e38e55dcc04749e180
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 12a527a370021fe7ad35b06244feaf7c14ac1569
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183076"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679906"
 ---
 # <a name="enhanced-batch-forms"></a>拡張バッチ フォーム
 
@@ -37,12 +36,12 @@ ms.locfileid: "2183076"
 
 1. **システム管理** \> **照会** \> **バッチ ジョブ** の順に移動します。
 
-    拡張フォームに関する通知を受信します。 通知には、[アクション] ウィンドウの**拡張フォームに切り替える**ボタンの位置が示されています。
+    拡張フォームに関する通知を受信します。 通知には、[アクション] ウィンドウの **拡張フォームに切り替える** ボタンの位置が示されています。
 
     ![[拡張フォームに切り替える] ボタン](./media/batch-popup.png)
 
-2. **拡張フォームに切り替える**を選択します。
+2. **拡張フォームに切り替える** を選択します。
 
-通常のフォームに戻るには、拡張フォームのアクション ペインで**レガシー フォームに切り替える**を選択します。
+通常のフォームに戻るには、拡張フォームのアクション ペインで **レガシー フォームに切り替える** を選択します。
 
 ![[レガシー フォームに切り替える] ボタン](./media/enhanced-form.png)

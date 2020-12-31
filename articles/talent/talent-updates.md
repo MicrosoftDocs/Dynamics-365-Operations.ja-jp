@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: 4aca90cf91587168a51a0cfdee5fe61f92de0e6b
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 13cda71e1bc0e9287916ab2412defabc7334cc4e
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031056"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528233"
 ---
 # <a name="talent-updates"></a>人材の更新
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Talent は、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。 これらの更新には、定期的な更新を含むサービスに対する重要な改良を提供する、アプリケーションとプラットフォーム両方の変更が含まれます。
 
@@ -91,7 +93,7 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 - [Talent ブログ](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-- [Talent Yammerコミュニティー](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
+- [Talent Yammer コミュニティー](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>サンドボックス環境におけるプレビュー機能
 

@@ -3,30 +3,30 @@ title: メッセージング API - アクション センター、メッセー�
 description: このトピックでは、メッセージング システムについて説明します。
 author: jasongre
 manager: AnnBe
-ms.date: 05/13/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1d202bab5bee6d77c2763e8f6b4075ed5f13dd
-ms.sourcegitcommit: a303539b230167e5bc9ea88afc0b9dd96bdf4c45
+ms.openlocfilehash: 5217b03373a8ee7150de31301fc8e3c695499d86
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372798"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683949"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリのメッセージング システムについて、特にメッセージを作成してエンド ユーザーにルーティングするために使用されるアプリケーション プログラミング インターフェイス (API) の観点から、説明します。  
 
@@ -80,7 +80,9 @@ messageId = Message::Add(MessageSeverity::Informational, "The customer is marked
 Message::Remove(messageId);
 ```
 
-バージョン 10.0.10 プラットフォーム更新プログラム 34 以降、**Message::AddAction()** メソッドを使用して、メッセージ内にアクションを埋め込むことができます (ただし現在は、メッセージ バーにルーティングされるメッセージでのみサポートされています)。 このメソッドは、表示メニュー項目またはアクション メニュー項目に関連付けられた 1 つのアクションの追加をサポートし、リンク ボタンとして視覚化されます。 この例では、システム管理者に特定の必要なバッチ ジョブが実行されていないことを示すメッセージがトリガーされ、バッチ ジョブ ページに直接移動するアクションが表示されます。  
+バージョン 10.0.10 / Platform update 34 以降では、**Message::AddAction()** メソッドを使用して、メッセージ内にアクションを埋め込むことができます。 このメソッドは、表示メニュー項目またはアクション メニュー項目に関連付けられた 1 つのアクションの追加をサポートし、リンク ボタンとして視覚化されます。 アクションは、バージョン 10.0.16/Platform update 40 までメッセージ バーにルーティングされるメッセージでのみサポートされ、その時点でアクション センターまたはメッセージの詳細ウィンドウにルーティングされるメッセージに、これらのアクションが表示されます。
+
+この例では、システム管理者に特定の必要なバッチ ジョブが実行されていないことを示すメッセージがトリガーされ、**バッチ ジョブ** ページに直接移動するアクションが表示されます。  
 
 ![メッセージの例: アクションをメッセージに埋め込むために使用する AddAction API](./media/cli-messageAddAction.png)
 

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810694"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684166"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Lifecycle Services へのコンフィギュレーションのアップロード
 
@@ -36,7 +35,7 @@ ms.locfileid: "3810694"
     - 電子申告開発者
     - システム管理者
 
-2. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+2. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 3. **Litware, Inc.** を選択し、**アクティブ** としてマークします。
 4. **コンフィギュレーション** を選択します。
 
@@ -48,22 +47,22 @@ ms.locfileid: "3810694"
 
 ## <a name="create-a-new-data-model-configuration"></a>新しいデータ モデル コンフィギュレーションの作成
 
-1. **組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。
+1. **組織管理 \> 電子申告 \> コンフィギュレーション** の順に移動します。
 2. **コンフィギュレーション** ページで、**コンフィギュレーションの作成** を選択して、ドロップ ダウンのダイアログ ボックスを開きます。
 
     この例では、電子ドキュメントのサンプル データ モデルを含むコンフィギュレーションを作成します。 このデータ モデルのコンフィギュレーションは、LCS に後でアップロードされます。
 
 3. **名前** フィールドに、**サンプル モデル コンフィギュレーション** と入力します。
 4. **説明** フィールドに、**サンプル モデル コンフィギュレーション** と入力します。
-5. **構成の作成**を選択します。
+5. **構成の作成** を選択します。
 6. **モデル デザイナー** を選択します。
 7. **新規** を選択します。
 8. **名前** フィールドに、**エントリ ポイント** を入力します。
-9. **追加**を選択します。
+9. **追加** を選択します。
 10. **保存** を選択します。
 11. ページを閉じます。
-12. **ステータスの変更**を選択します。
-13. **完了**を選択します。
+12. **ステータスの変更** を選択します。
+13. **完了** を選択します。
 14. **OK** を選択します。
 15. ページを閉じます。
 
@@ -82,7 +81,7 @@ ms.locfileid: "3810694"
     新しいリポジトリを追加できるようになりました。
 
 5. **コンフィギュレーション リポジトリ入力** フィールドに、**LCS** を選択します。
-6. **レポジトリを作成**を選択します。
+6. **レポジトリを作成** を選択します。
 7. **プロジェクト** フィールドで値を入力または選択します。
 
     この例の場合、目的の LCS プロジェクトを選択します。 プロジェクトに [アクセス](#accessconditions) できる必要があります。
@@ -106,7 +105,7 @@ ms.locfileid: "3810694"
 
 ## <a name="upload-a-configuration-into-lcs"></a>LC へコンフィギュレーションをアップロードする
 
-1. **組織管理 \> 電子申告 \> コンフィギュレーション**の順に移動します。
+1. **組織管理 \> 電子申告 \> コンフィギュレーション** の順に移動します。
 2. **コンフィギュレーション** ページのコンフィギュレーション ツリーで、**サンプル モデルのコンフィギュレーション** を選択します。
 
     すでに完了している作成済みのコンフィギュレーションを選択する必要があります。
@@ -115,7 +114,7 @@ ms.locfileid: "3810694"
 
     この例の場合、状態が **完了** となっている選択したコンフィギュレーションのバージョンを選択します。
 
-4. **ステータスの変更**を選択します。
+4. **ステータスの変更** を選択します。
 5. **共有** を選択します。
 
     コンフィギュレーションが LCS で公開されると、コンフィギュレーションの状態が **完了** から **共有** に変更されます。

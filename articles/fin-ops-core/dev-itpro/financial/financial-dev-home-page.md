@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22815bbdb8b9980d2b803ba4a2c6cf95d63ea3c1
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 1269a2bd25209766b0878d1a5420f50eb1df5718
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885289"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680497"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 

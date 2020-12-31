@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ea703248cb8ea8af851a1103217359cfc9663443
-ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
+ms.openlocfilehash: 223066b5b5363d023011fbb27c615d6614c29d48
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3949158"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681112"
 ---
 # <a name="api-v1-reference-overview"></a>API v1 参照の概要
 

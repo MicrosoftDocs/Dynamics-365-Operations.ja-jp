@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7da0d1aa4bb10658c66fce996e00b5714125f100
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771145"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682699"
 ---
 # <a name="financial-reporting"></a>財務諸表
 
@@ -39,7 +38,7 @@ ms.locfileid: "2771145"
 **財務諸表の設定** ページには、財務諸表でレポートするデータを特定する 2 つのセクションがあります。
 
 - **分析コード** - 異なる会社がさまざまな分析コードや勘定構造を使用するため、レポートでユーザーがすべての財務分析コードを表示する順序を特定する方法はありません。 このページでは、財務分析コードを財務諸表でレポートを作成および表示する際に表示する順序を設定することができます。
-- **属性タブ**は、**仕入先**および**顧客**をフィルタリングおよびレポートデザインの属性として使用するかどうかを選択できる場所です。 トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。 仕入先または顧客を選択すると、統合にさらに時間が追加されます。
+- **属性タブ** は、**仕入先** および **顧客** をフィルタリングおよびレポートデザインの属性として使用するかどうかを選択できる場所です。 トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。 仕入先または顧客を選択すると、統合にさらに時間が追加されます。
 
 ## <a name="financial-reporting-components"></a>財務報告書のコンポーネント
 財務報告書の次のコンポーネントで、レポートの作成、表示、およびスケジュールが簡単にできます。

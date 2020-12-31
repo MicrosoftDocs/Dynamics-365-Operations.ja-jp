@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ed31cdee74c9db26ba76ed263b5e0578cd04bc3d
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421705"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679561"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 
@@ -39,8 +38,8 @@ ms.locfileid: "3421705"
     - 電子申告機能コンサルタント
     - システム管理者
 
-2. **組織管理 > ワークスペース > 電子申告**の順に移動します。
-3. **コンフィギュレーション プロバイダー**セクションで、**Microsoft** タイルを選択します。
+2. **組織管理 > ワークスペース > 電子申告** の順に移動します。
+3. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択します。
 3. **Microsoft** タイルで **リポジトリ** を選択します。
 
     ![電子申告ワークスペース](./media/er-download-configurations-global-repo-er-workspace.png)
@@ -60,7 +59,7 @@ ms.locfileid: "3421705"
 ## <a name="import-a-single-configuration"></a>単一のコンフィギュレーションをインポートする
 
 1. **コンフィギュレーション リポジトリ** ページの コンフィギュレーション ツリーで、必要な ER コンフィギュレーションを選択します。
-2. **バージョン**クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
+2. **バージョン** クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
 3. **インポート** を選択して、グローバル リポジトリから現在の Finance インスタンスに選択したバージョンをダウンロードします。
 
     > [!NOTE]

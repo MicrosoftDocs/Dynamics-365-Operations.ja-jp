@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: cf87d5f0ebf418475f38178701f14fae2c7fdeb0
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: f2f1631314941c96b2ab99f04fe6ef8ac7934f4f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456520"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680034"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 

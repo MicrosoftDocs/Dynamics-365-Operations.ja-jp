@@ -1,34 +1,33 @@
 ---
-title: Commerce Runtime (CRT) および Retail サーバーの拡張機能
+title: Commerce runtime (CRT) の拡張機能
 description: このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/20/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 93ae626d548fd1454b2f74124d29f15974f90268
-ms.sourcegitcommit: 1daa297b0c09090a9c30c5f84bd7000e5b948a26
+ms.openlocfilehash: afd8f3e47820fbb7f1f3e621e64390e4f012f316
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "3720710"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683364"
 ---
-# <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
+# <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Runtime (CRT) を拡張して、新しい Retail Server API を作成するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。
+このトピックでは、Commerce Runtime (CRT) を拡張するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。
 
 CRT にはコア ビジネス ロジックが含まれています。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 C# を使用して、すべての CRT コードが開発され、コンパイルされてクラス ライブラリとしてリリースされます (.NET アセンブリ)。 販売時点管理 (POS) はシン クライアントです。 すべてのビジネス ロジックは、CRT で行われます。 POS は、任意のビジネス ロジックを実行する CRT を呼び出し、CRT は情報を処理して POS に送り返されます。
 
@@ -114,7 +113,7 @@ CRT から HQ の同期呼び出しを行うことができます。
 <add source="assembly" value="your custom library name" />
 ```
 
-たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**構成**セクションに次の行を追加します。
+たとえば、カスタム ライブラリの名前が **Contoso.Commerce.Runtime.CustomerSearchSample** の場合、**構成** セクションに次の行を追加します。
 
 ```xml
 <add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />
@@ -641,9 +640,13 @@ public class StoreDayHours : CommerceEntity
             }
 ```
 
+
+> [!NOTE]
+> Commerce エンティティはスレッド セーフではありません。つまり、別のスレッドが書き込みを行っているときに、同じオブジェクトの読み取りや変更を行わないようにする必要があります。 これは、拡張コードのカスタム エンティティと OOB エンティティに適用されます。 同一の共有オブジェクトに対して読み取り/書き込みの操作を同期的に実行する場合は、2 つの異なるスレッドを使用しないでください。
+
 前の例では、CRT ランタイム エンジンは、登録されているデータ アダプターを介してチャンネルに自動的にクエリを作成します。 名前 **crt.ISVRetailStoreHoursView** を持つ型を照会して、コードで指定された **where** 句および列を生成します。 カスタマイザーは、カスタマイズの一部として SQL オブジェクトを提供する役割を担います。
 
-## <a name="adding-pre-triggers-and-post-triggers-for-a-specific-request"></a>特定の要求のプレトリガーとポストトリガーの追加
+## <a name="adding-pre-triggers-and-post-triggers-for-a-specific-request"></a>特定の要求のプレトリガーとポストトリガーの追加 
 
 CRT トリガーの拡張機能の作成方法については、[Commerce Runtime (CRT) トリガーの拡張機能](commerce-runtime-extensibility-trigger.md) を参照してください。
 

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: cd35bffd3b5c1da34df68fff98e827fd030dd870
-ms.sourcegitcommit: 0c10539e28de0241859b9ab056547eb34efde98e
+ms.openlocfilehash: 0fe2461d886cf1e2e3775cda44fc6c73027fa367
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3884667"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681514"
 ---
 # <a name="add-custom-buttons-to-the-pos-header-bar"></a>カスタム ボタンを POS ヘッダー バーに追加
 

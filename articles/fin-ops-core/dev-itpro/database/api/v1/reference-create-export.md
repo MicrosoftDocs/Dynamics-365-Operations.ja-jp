@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fd1a617b979ea812b4528a3966db13d248a8f456
-ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
+ms.openlocfilehash: f4f8baf07d693842c81d9ea51904c9cb86a1aa8a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3949156"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681114"
 ---
 # <a name="create-a-database-export"></a>データベース エクスポートの作成
 

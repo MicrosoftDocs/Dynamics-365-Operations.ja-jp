@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 6adc72769329283e6c426532eb2be0182d23e1e6
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 29248887e9df89dceb549b9577528c0df3f84d43
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554284"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681498"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -59,7 +58,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 
 ### <a name="using-telemetry-data-to-find-performance-issues"></a>テレメトリ データを使用してパフォーマンスの問題を検索する
 
-パフォーマンスのトラブルシューティングを行う必要がある場合 (特に速度が低下する SQL クエリまたは SQL デッドロック)、Microsoft Dynamics Lifecycle Services (LCS) の環境診断ページでは、貴重な遠隔測定データが表示されます。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
+パフォーマンスのトラブルシューティングを行う必要がある場合 (特に速度が低下する SQL クエリまたは SQL デッドロック)、Microsoft Dynamics Lifecycle Services (LCS) の環境診断ページでは、貴重な遠隔測定データが表示されます。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[Lifecycle Services の監視および診断ツール](../../fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics.md) を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
 
 
 ### <a name="performance-testing"></a>パフォーマンス テスト

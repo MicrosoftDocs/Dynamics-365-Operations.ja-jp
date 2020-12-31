@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 84681
 ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 114603a6370e01ebfe62f3f58828ced55b691807
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 528434724a4ab7379cb4d28bfacf3fea69cdfbef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117413"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680012"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>パートナー向け Finance and Operations アプリの Lifecycle Services (LCS)
 

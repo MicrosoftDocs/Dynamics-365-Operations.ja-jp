@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: ed144705507ca1479591dfd77f09a7db7f81ab01
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 11db58f94d0d0f4bb5276155565712d1e3ff31fc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329818"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680394"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
@@ -39,7 +38,7 @@ ms.locfileid: "3329818"
 毎回の操作では、次の要素を実装する必要があります。
 
 - **操作要求** – 操作要求は、**ExtensionOperationRequestBase** クラスから拡張されています。 操作を実行するために必要なすべての入力が含まれています。
-- **操作要求** – 操作要求は**応答**クラスから拡張されています。 工程の実行に基づく応答全体が含まれています。
+- **操作要求** – 操作要求は **応答** クラスから拡張されています。 工程の実行に基づく応答全体が含まれています。
 - **操作ファクトリ** – 操作ファクトリは、操作のためのボタンのクリックを操作ハンドラーとリンクします。
 - **操作ハンドラー** – 操作ハンドラーは、**ExtensionOperationRequestHandlerBase** クラスから拡張されています。 工程のコア ロジックが含まれています。 すべてのビジネス ロジックはハンドラーに記述され、操作実行後、工程応答に戻される必要があります。
 
@@ -78,7 +77,7 @@ ms.locfileid: "3329818"
         }
     }
     ```
-    
+
 ### <a name="create-the-operation-response-class"></a>operation response クラスの作成
 
 1. **工程** フォルダーで、**EndOfDayOperationResponse.ts** という typescript (.ts) ファイルを作成します。
@@ -88,7 +87,7 @@ ms.locfileid: "3329818"
     import { Response } from "PosApi/Create/RequestHandlers";
     ```
 
-3. **EndOfDayOperationResponse** という名のクラスを追加し、**応答**クラスから拡張します。
+3. **EndOfDayOperationResponse** という名のクラスを追加し、**応答** クラスから拡張します。
 
     ```typescript
     /**
@@ -119,7 +118,7 @@ ms.locfileid: "3329818"
 
    - supportedRequestType
    - executeAsync
-   
+
     ```typescript
     export default class EndOfDayOperationRequestHandler<TResponse extends EndOfDayOperationResponse> extends ExtensionOperationRequestHandlerBase<TResponse> {}
     ```
@@ -426,16 +425,16 @@ ms.locfileid: "3329818"
 
 ## <a name="add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters"></a>小売用バックオフィス内の POS レイアウトにカスタム操作ボタンを追加します
 
-1. Retail で**小売りとコマース &gt; チャンネル設定 &gt; POS 設定 &gt; POS &gt; 工程**の順に移動します。
+1. Retail で **小売りとコマース &gt; チャンネル設定 &gt; POS 設定 &gt; POS &gt; 工程** の順に移動します。
 2. **EOD** という工程を作成して、**5001** の工程 ID をもつようにします。
-3. **小売とコマース &gt; チャネル設定 &gt; POS 設定 &gt; POS &gt; ボタン グリッド**の順に移動します。
+3. **小売とコマース &gt; チャネル設定 &gt; POS 設定 &gt; POS &gt; ボタン グリッド** の順に移動します。
 4. **'F2W2'** コードのフィルターです。
-5. **デザイナー**ボタンを選択し、次の手順にしたがってデザイナーをインストールします。 資格情報を求めるメッセージが表示されたら、Retail のユーザー名とパスワードを入力します。
-6. デザイナ領域で右クリックし、**新しい行の追加**を選択します。
+5. **デザイナー** ボタンを選択し、次の手順にしたがってデザイナーをインストールします。 資格情報を求めるメッセージが表示されたら、Retail のユーザー名とパスワードを入力します。
+6. デザイナ領域で右クリックし、**新しい行の追加** を選択します。
 7. 新しいボタンを右クリックし、**ボタン プロパティ** を選択します。
-8. **EOD** に **アクション**プロパティを設定します。 **OK** を選択し、デザイナーを閉じます。
+8. **EOD** に **アクション** プロパティを設定します。 **OK** を選択し、デザイナーを閉じます。
 9. **小売りとコマース** &gt; **小売 IT** &gt; **配送スケジュール** の順に移動します。
-10. **1090** を選択してから、**今すぐ実行**を選択します。
+10. **1090** を選択してから、**今すぐ実行** を選択します。
 
     > [!NOTE]
     > 上記の手順では、デモ データを使用していることを前提としています。 デモ データを使用していない場合は、カスタム構成に従ってボタンを作成して追加します。

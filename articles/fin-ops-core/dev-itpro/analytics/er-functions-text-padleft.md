@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f8a8e2006fe279b25bbf154c6e1802babf51117
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 268941d8bc0bd4dc6de6d2597c05a11c1f530f15
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744362"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680149"
 ---
 # <a name="padleft-er-function"></a>PADLEFT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`PADLEFT` 関数は、指定の文字列から始まる指定の文字でパディングされた指定の長さの*文字列*値を返します。
+`PADLEFT` 関数は、指定の文字列から始まる指定の文字でパディングされた指定の長さの *文字列* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,11 +40,11 @@ PADLEFT (text, length, padding chars)
 
 `text`: *文字列*
 
-オリジナルのテキストを表す*文字列*値。
+オリジナルのテキストを表す *文字列* 値。
 
 `length`: *整数*
 
-パディングされた文字列の最終文字数を表す*整数*値。
+パディングされた文字列の最終文字数を表す *整数* 値。
 
 `padding chars`: *文字列*
 

@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a711af4d68fd6cbdab1de5aaae995260197dda9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 809c92828425dec8a34299eb4cdc7145c6feed0c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183296"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680466"
 ---
 # <a name="manage-access-to-sensitive-data"></a>機密データへのアクセスを管理
 
@@ -32,7 +31,7 @@ ms.locfileid: "2183296"
 ![顧客からのデータ フロー](../media/gdpr-sensitive-data-1.jpg)
 
 ## <a name="what-is-sensitive-data"></a>機密データとは何ですか ?
-組織は、ニーズにあった方法で*機密データ*を構成する要素を定義することができます。 一部の組織によっては、機密データが財務または人事データに関連付けられている任意のデータ、または個人のデータである単なるデータである可能性があります。 一部の業界や一部の国または地域には、組織自体が採用できる機密データのより詳細な定義がある場合があります。 機密データ識別子を使用するかどうか、およびその方法を決定するのは各組織次第です。 
+組織は、ニーズにあった方法で *機密データ* を構成する要素を定義することができます。 一部の組織によっては、機密データが財務または人事データに関連付けられている任意のデータ、または個人のデータである単なるデータである可能性があります。 一部の業界や一部の国または地域には、組織自体が採用できる機密データのより詳細な定義がある場合があります。 機密データ識別子を使用するかどうか、およびその方法を決定するのは各組織次第です。 
 
 機密データ識別子は、システム内で誰が機密データへのアクセス権を持っているかを示す監査ログを作成させることで、ユーザーのログ操作を向上させます。 この機能は、特定のデータへのアクセスの度合いが異なる複数のロールを持つ組織に役立ちます。 また、機密性の高いデータとして識別されているデータにアクセスしたユーザーを追跡する監査の詳細なレベルを必要とする組織でも役立ちます。
 

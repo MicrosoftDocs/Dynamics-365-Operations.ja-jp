@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 07ed9d5233d74bc81b7ba173f40ee1acc9f2ee6a
-ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
+ms.openlocfilehash: fce05d92498bdbb9fe0d9349fa7a24b436daec36
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577426"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681516"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -273,12 +272,12 @@ ms.locfileid: "3577426"
         ```typescript
         {
         "extensionPackages": [
-           { 
-              "baseUrl": "SampleExtensions2" 
-            }, 
-            { 
-              "baseUrl": " SampleExtensions" 
-            }, 
+           { 
+              "baseUrl": "SampleExtensions2" 
+            }, 
+            { 
+              "baseUrl": " SampleExtensions" 
+            }, 
             {
              "baseUrl": "POSRequestHandlerExtension"
             }

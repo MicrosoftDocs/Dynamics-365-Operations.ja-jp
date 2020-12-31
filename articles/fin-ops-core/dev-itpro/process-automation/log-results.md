@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 803ea7efb56bdd14ea440aaa7ee302b4a491b1da
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: cc5aae5a4724380928def8bdc11460db06521a02
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885345"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680410"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 
@@ -40,15 +39,15 @@ ms.locfileid: "3885345"
 
 ![結果の状態、時間、およびメッセージ](media/execution-results.png)
 
-次の図は、メッセージ ビューを示しています。 このビューを開くには、結果ビューで**ログ**列の**ログの表示**を選択します。
+次の図は、メッセージ ビューを示しています。 このビューを開くには、結果ビューで **ログ** 列の **ログの表示** を選択します。
 
 ![個々のメッセージの例外タイプとメッセージ](media/execution-message-log.png)
 
 ## <a name="processexecutionsourcelink-table"></a>ProcessExecutionSourceLink テーブル
 
-**ProcessExecutionSourceLink** テーブルには、処理の実行中に作成された結果が含まれます。 このテーブルには、**RefTableId** と **RefRecId** フィールドが含まれています。 これらのフィールドは、Microsoft SQL Server 内の任意のソース レコードにリンクされており、通常はプロセスが処理しているものです。 このテーブルには、**ヘッダー**および**メッセージ**フィールドも含まれます。 **ヘッダー** フィールドは、結果グリッドの列として表示されます。 メッセージは任意のものにすることができます。
+**ProcessExecutionSourceLink** テーブルには、処理の実行中に作成された結果が含まれます。 このテーブルには、**RefTableId** と **RefRecId** フィールドが含まれています。 これらのフィールドは、Microsoft SQL Server 内の任意のソース レコードにリンクされており、通常はプロセスが処理しているものです。 このテーブルには、**ヘッダー** および **メッセージ** フィールドも含まれます。 **ヘッダー** フィールドは、結果グリッドの列として表示されます。 メッセージは任意のものにすることができます。
 
-たとえば、仕入先支払提案が支払仕訳帳を作成している場合、**RefTableId** 値は **LedgerJournalTable** テーブルのテーブル ID です。 **RefRecId** 値は、実行中のプロセスによって作成された支払仕訳帳の **LedgerJournalTable** レコードの **RecId** 値です。 この場合、**ヘッダー** フィールドを仕訳帳番号に設定できます。 この値をジャンプ参照に設定して、ユーザーが支払仕訳帳に直接移動するための仕訳帳番号を選択できるようにすることもできます。 **支払仕訳帳が正常に作成された**など、表示したい任意のメッセージに**メッセージ** フィールドを設定できます。
+たとえば、仕入先支払提案が支払仕訳帳を作成している場合、**RefTableId** 値は **LedgerJournalTable** テーブルのテーブル ID です。 **RefRecId** 値は、実行中のプロセスによって作成された支払仕訳帳の **LedgerJournalTable** レコードの **RecId** 値です。 この場合、**ヘッダー** フィールドを仕訳帳番号に設定できます。 この値をジャンプ参照に設定して、ユーザーが支払仕訳帳に直接移動するための仕訳帳番号を選択できるようにすることもできます。 **支払仕訳帳が正常に作成された** など、表示したい任意のメッセージに **メッセージ** フィールドを設定できます。
 
 多数の品目を処理するプロセス (たとえば、多数の請求書を転記している場合など) では、各請求書に対して **ProcessExecutionSourceLink** レコードを作成できます。
 
@@ -70,7 +69,7 @@ ms.locfileid: "3885345"
 | `public RefRecId parmSourceRecId(RefRecId _sourceRecId = sourceRecId)` | ソース レコードのレコード ID を設定します。 たとえば、この値は、仕入先請求書ヘッダー テーブルのレコード ID である場合があります。 |
 | `public RefTableId parmSourceTableId(RefTableId _sourceTableId = sourceTableId)` | ソース テーブルのテーブル ID を設定します。 たとえば、この値は、仕入先請求書ヘッダー テーブルのテーブル ID である場合があります。 |
 | `public ProcessExecutionSourceLinkHeader parmHeader(ProcessExecutionSourceLinkHeader _header = header)` | ヘッダー フィールドの値を設定します。 以前に使用された仕入先請求書の転記の例では、この値は請求書番号である場合があります。 |
-| `public ProcessExecutionSourceLinkMessage parmMessage(ProcessExecutionSourceLinkMessage _message = message)` | メッセージを設定します。 以前に使用された仕入先請求書の転記の例では、この値は**転記成功**である場合があります。 |
+| `public ProcessExecutionSourceLinkMessage parmMessage(ProcessExecutionSourceLinkMessage _message = message)` | メッセージを設定します。 以前に使用された仕入先請求書の転記の例では、この値は **転記成功** である場合があります。 |
 | `public ProcessExecutionId parmExecutionId(ProcessExecutionId _executionId = executionId)` | このメソッドは、実行 ID を設定します。 この値は、**ProcessAutomationTask** インターフェイスの実装で **processscheduleworkitem** を介して提供されています。 |
 
 ## <a name="processexecutionmessagelog-table"></a>ProcessExecutionMessageLog テーブル

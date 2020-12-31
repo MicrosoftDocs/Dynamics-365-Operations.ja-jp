@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 266674
 ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 24fe64cbd4d2e4787a61fa6478ffa1f8fe7af3ef
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cf556655082235f554f0c0a2a5d9d99aa367e41e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771155"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682759"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigation"></a>レポート メニューの項目を拡張してユーザーナビゲーションをリダイレクトします。
 
@@ -42,7 +41,7 @@ ms.locfileid: "2771155"
 - 拡張メニュー項目は、コントローラ クラスを使用してレポート セッションを編成するレポートおよびソリューションへ直接参照に使用できます。
 
 ## <a name="extend-report-menu-items"></a>レポート メニュー項目の拡張
-次のチュートリアルでは、メニュー項目の拡張機能を使用して、アプリケーション内のユーザー ナビゲーションをカスタム ソリューションにリダイレクトする方法を示します。 このソリューションには、Fleet Management アプリケーション用のカスタム**顧客リスト** レポートが含まれており、純粋な拡張モデルですべてのアプリケーションのカスタマイズが定義されています。 次の図は、カスタムの **顧客リスト** レポートにアクセスするために使用するメニュー項目を示しています。
+次のチュートリアルでは、メニュー項目の拡張機能を使用して、アプリケーション内のユーザー ナビゲーションをカスタム ソリューションにリダイレクトする方法を示します。 このソリューションには、Fleet Management アプリケーション用のカスタム **顧客リスト** レポートが含まれており、純粋な拡張モデルですべてのアプリケーションのカスタマイズが定義されています。 次の図は、カスタムの **顧客リスト** レポートにアクセスするために使用するメニュー項目を示しています。
 
 [![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 

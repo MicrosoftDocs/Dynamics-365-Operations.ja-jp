@@ -3,26 +3,25 @@ title: AX 2012 からのアップグレード - 開発環境でのデータ ア�
 description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から最新の Finance and Operations にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 106163
 ms.assetid: ''
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5f4a083871a8c5af3bba8ed47707f67bce69e144
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: fa10db62c10287ea6467489ae366ef1f357ffb61
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830763"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679972"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -72,6 +71,14 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 - データ インポート/エクスポート サービス
 
 次に、元の AXDB データベースを **AXDB_orig** に名前を変更します。 このデータベースは、後でコードを開発する際に参照する場合があります。
+```sql
+ALTER DATABASE AXDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+ALTER DATABASE AXDB MODIFY NAME = AXDB_Orig
+GO
+ALTER DATABASE AXDB_Orig SET MULTI_USER
+GO
+```
 
 最後に、新しく復元された AX 2012 データベース **AXDB** の名前を変更します。
 
@@ -81,7 +88,7 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 
 1. [LCS](https://lcs.dynamics.com/) にサインインします。
 2. **共有資産ライブラリ** タイルを選択します。
-3. **共有アセット** ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
+3. **共有アセット** ライブラリの **アセット タイプの選択** で、**ソフトウェア配置可能パッケージ** を選択します。
 4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。 たとえば、AX 2012 からアップグレードする場合、パッケージ名は AX2012DataUpgrade から始まります。 アップグレードするリリースに対応するパッケージを選択します。 例: AX2012DataUpgrade-July2017。
 
 詳細については、 [開発、デモ、サンドボックス環境でのデータの更新](upgrade-data-to-latest-update.md) を参照してください。 

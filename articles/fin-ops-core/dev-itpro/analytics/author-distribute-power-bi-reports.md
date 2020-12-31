@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b059ec2b56840f0a146302a00e3e3a781470c07a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adc49c684624ab7e0266da2d85eff0ec1eea4da6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002556"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683125"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -32,17 +31,19 @@ ms.locfileid: "3002556"
 ユーザーが power user またはビジネス アナリストである場合は、自分の組織のために多くのレポートを作成している可能性があります。 他のユーザーと共有する前に、データの書式設定と関連付けによって、Microsoft Excel でこれらのレポートを作成する場合があります。 レポートへの変更が必要な場合、組織内のユーザーから連絡が来る可能性があります。 このソリューションを使用すると、リッチでインタラクティブなレポートを簡単に作成できます。 レポート ライターは、Microsoft Power BI Desktop をレポート ツールとして使用することができます。 作成したレポートは、PowerBI.com に公開することができます。 Power BI Desktop の詳細については、[Power BI Desktop で魅力的なレポートとビジュアライゼーションを作成する](https://powerbi.microsoft.com/desktop)を参照してください。
 
 ## <a name="accessing-the-local-entity-store-by-using-directquery"></a>DirectQuery を使用してローカル エンティティ ストアへのアクセス
-データ エンティティを介して公開されるオープン データ プロトコル (OData) エンドポイントを使用して、Microsoft Power BI レポートを作成することができます。このアプローチの限界にもかかわらず、エンティティ格納は従来のソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/)を参照してください。
+データ エンティティを介して公開されるオープン データ プロトコル (OData) エンドポイントを使用して、Microsoft Power BI レポートを作成することができます。 このアプローチの限界にもかかわらず、エンティティ格納はレガシ ソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/)を参照してください。
 
 Power BI Desktop を使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成することができます。 レポートに問題がなければ、管理者は、ユーザーがそれを実稼働環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
 
 > [!NOTE]
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
+> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [Power BI Desktop の前の月次更新](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive) で Power BI Desktop の2020 年 9 月の更新プログラムをダウンロードします。
+
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 
 
-1. クライアントで**エンティティ格納**ページを開きます。 (**システム管理** \> **設定** \> **エンティティ格納**の順に選択します。) 
+1. クライアントで **エンティティ格納** ページを開きます。 (**システム管理** \> **設定** \> **エンティティ格納** の順に選択します。) 
 2. **RetailCube** 集計測定を選択し、**更新** を選択します。 
 3. バック グラウンドで実行されるジョブ名を入力し、**OK** を選択します。
 
@@ -50,7 +51,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 ![更新ダイアログ ボックスのコンフィギュレーション](media/Configure-refresh.png)
 
-データをステージングするジョブの進行状況を監視するには、バッチ ジョブ監視ページを使用します。 (**システム管理** \> **データベース** \> **バッチ ジョブ**の順に選択します。) デモ データを使用している場合、ジョブは 1 分ほどかかります。 データがエンティティ格納に格納された後、レポートを作成できます。 
+データをステージングするジョブの進行状況を監視するには、バッチ ジョブ監視ページを使用します。 (**システム管理** \> **データベース** \> **バッチ ジョブ** の順に選択します。) デモ データを使用している場合、ジョブは 1 分ほどかかります。 データがエンティティ格納に格納された後、レポートを作成できます。 
 
 ### <a name="step-2-connect-to-the-local-entity-store-database"></a>手順 2: ローカル エンティティ格納データベースに接続する
 1. Power BI Desktop を起動します。 Power BI Desktop のアップデートが使用可能な場合は、それらをダウンロードし、適用する必要があります。 
@@ -69,7 +70,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
     > [!NOTE]
     > **インポート** オプションは現在サポートされていません。
 
-4. **OK**を選択します。 
+4. **OK** を選択します。 
 
     **ナビゲーター** ダイアログ ボックスが表示されます。 このダイアログ ボックスを使用して、レポートの対象となるテーブルとビューをエンティティ格納から選択します。 
 

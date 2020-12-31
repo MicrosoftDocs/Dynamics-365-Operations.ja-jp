@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Retail, Core
 ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 3311ff17d688af486986f2b90a464c2c677d574c
-ms.sourcegitcommit: d98f597feeeba6ba0fa32ce7a7d94bda328f074c
+ms.openlocfilehash: 29e643879312673c9e9bd105e5640a1202a1d230
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "3577403"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680398"
 ---
 # <a name="synchronize-self-service-installers-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のセルフサービス インストーラーの同期
 
@@ -51,7 +50,7 @@ ms.locfileid: "3577403"
 
 ## <a name="synchronize-installers-in-dynamics-365-headquarters"></a>Dynamics 365 Headquarters のインストーラーの同期
 
-1. **Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマース パラメーター**の順に移動します。
+1. **Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマース パラメーター** の順に移動します。
 2. **チャンネル配置** タブで **パッケージの更新の確認** を選択して、同期を実行します。 (標準セルフサービス プロセスを通じて) ダウンロード可能なインストーラーは、現在 LCS で利用可能などのインストーラーが環境に適用されるかに応じて、同期および更新されます。
 
     > [!IMPORTANT]

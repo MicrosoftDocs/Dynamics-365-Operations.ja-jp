@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 804878150f035adc051e89ec6be44457ad58e87e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: d60266aba42f502e7707bdace921cfee4526b6ae
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771194"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682874"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 
@@ -39,7 +38,7 @@ XML ELEMENT および XML SEQUENCE 形式要素を使用して生成されるフ
 
 特定の制限を超えるたびに生成された出力を分割するように構成された FILE 形式要素のファイルの出力先をコンフィギュレーションした場合、それぞれの生成された出力が個別のファイルとして構成されたファイルの出力先に送信されます。 出力を分割して作成されるファイルに固有の名前を付けるには、FILE 形式要素の ER 式をコンフィギュレーションする必要があります。 NUMBER SEQUENCE タイプの ER データ ソースを含める場合、番号順序は個々の分割出力に対して増加します。
 
-この機能の詳細については、**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である**ファイルのサイズおよびコンテンツの品目数量に基づく ER 分割 XML ファイル** タスクガイドを再生し、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードできます。 このタスク ガイドでは、ファイル サイズおよびコンテンツの品目数量の制限に基づいて生成されたファイルを分割するため、ER 形式のコンフィギュレーションのプロセスについて説明します。 タスクガイドを完了するには、次のファイルをダウンロードする必要があります。
+この機能の詳細については、**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である **ファイルのサイズおよびコンテンツの品目数量に基づく ER 分割 XML ファイル** タスクガイドを再生し、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードできます。 このタスク ガイドでは、ファイル サイズおよびコンテンツの品目数量の制限に基づいて生成されたファイルを分割するため、ER 形式のコンフィギュレーションのプロセスについて説明します。 タスクガイドを完了するには、次のファイルをダウンロードする必要があります。
 
 - [ER モデル コンフィギュレーション - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER 形式コンフィギュレーション - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)

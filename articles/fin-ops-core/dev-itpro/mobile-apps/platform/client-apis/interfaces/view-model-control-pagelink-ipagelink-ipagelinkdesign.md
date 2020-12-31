@@ -1,7 +1,7 @@
 ---
 title: PageLinkDesign タイプ
 description: Pagelink デザイン オブジェクトの種類。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f45c5cd4463b202868b0f93784911b6af375fb30
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: a3b7212dd292eb43af06d85d867fec8f48e80fb9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987528"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681610"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 
@@ -86,7 +85,7 @@ background: string (optional)
 
 背景色を設定します。
 「テーマ」を使用している場合、色はアプリケーションのテーマの色と一致します。 <br>
-![使用可能な色の画像](../../../platform/media/colors_pagelink.PNG)
+![使用可能な背景色の画像](../../../platform/media/colors_pagelink.PNG)
 
 
 ### <a name="bindings"></a>bindings
@@ -116,7 +115,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像](../../../media/colors.PNG)
+![使用可能な前景色の画像](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 
@@ -143,7 +142,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承

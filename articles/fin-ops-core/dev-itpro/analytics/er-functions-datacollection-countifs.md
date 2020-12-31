@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a28e2dd263c3f2cabd1c07c4aba8dfb22db01cc4
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 554750b2dae5ec1f0fcf6fdbdf439b4dbe4fa615
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3745660"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681137"
 ---
 # <a name="countifs-er-function"></a>COUNTIFS ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`COUNTIFS` 関数は、フォーマット中に送信ドキュメントを生成するのに形式要素が使用された際に収集された、形式要素の数を表す*整数*値を返します。これは指定された条件を満たすものです。 各条件は、キー範囲とキー値で構成されます。
+`COUNTIFS` 関数は、フォーマット中に送信ドキュメントを生成するのに形式要素が使用された際に収集された、形式要素の数を表す *整数* 値を返します。これは指定された条件を満たすものです。 各条件は、キー範囲とキー値で構成されます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,19 +40,19 @@ COUNTIFS (condition 1 range, condition 1 value[, condition 2 range, condition 2 
 
 `condition 1 range`: *文字列*
 
-電子申告 (ER) 形式コンポーネントの**収集したデータ キー名**プロパティでコンフィギュレーションされた式によって返される値。 この引数は必須です。
+電子申告 (ER) 形式コンポーネントの **収集したデータ キー名** プロパティでコンフィギュレーションされた式によって返される値。 この引数は必須です。
 
 `condition 1 value`: *文字列*
 
-ER 形式コンポーネントの**収集したデータ キー値**プロパティでコンフィギュレーションされた式によって返される値。 この引数は必須です。
+ER 形式コンポーネントの **収集したデータ キー値** プロパティでコンフィギュレーションされた式によって返される値。 この引数は必須です。
 
 `condition N range`: *文字列*
 
-ER 形式コンポーネントの**収集したデータ キー名**プロパティでコンフィギュレーションされた式によって返される値。 これらの追加引数はオプションです。
+ER 形式コンポーネントの **収集したデータ キー名** プロパティでコンフィギュレーションされた式によって返される値。 これらの追加引数はオプションです。
 
 `condition N value`: *文字列*
 
-ER 形式コンポーネントの**収集したデータ キー値**プロパティでコンフィギュレーションされた式によって返される値。 これらの追加引数はオプションです。
+ER 形式コンポーネントの **収集したデータ キー値** プロパティでコンフィギュレーションされた式によって返される値。 これらの追加引数はオプションです。
 
 ## <a name="return-values"></a>戻り値
 
@@ -63,9 +62,9 @@ ER 形式コンポーネントの**収集したデータ キー値**プロパテ
 
 ## <a name="usage-notes"></a>使用上の注意
 
-**収集したデータ キー名**および**収集したデータ キー値**プロパティは、ER 形式の**シーケンス** コンポーネントまたは **XML 要素** コンポーネントのいずれかに対してコンフィギュレーションできます。それは**出力の詳細を収集**オプションがオンになっている**共通\\ファイル** コンポーネントの下に存在します。
+**収集したデータ キー名** および **収集したデータ キー値** プロパティは、ER 形式の **シーケンス** コンポーネントまたは **XML 要素** コンポーネントのいずれかに対してコンフィギュレーションできます。それは **出力の詳細を収集** オプションがオンになっている **共通\\ファイル** コンポーネントの下に存在します。
 
-この関数は、現在の**共通\\ファイル** コンポーネントの**出力の詳細を収集**オプションを無効にすると、**0** (ゼロ) 値を返します。
+この関数は、現在の **共通\\ファイル** コンポーネントの **出力の詳細を収集** オプションを無効にすると、**0** (ゼロ) 値を返します。
 
 `condition range` 引数では、ワイルドカード文字 **"\*"** を使用して任意の複数の文字を表すことができます。
 
@@ -73,7 +72,7 @@ ER 形式コンポーネントの**収集したデータ キー値**プロパテ
 
 ## <a name="example"></a>例
 
-この関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発**業務プロセスの一部である [ER 棚卸および集計のために出力された形式の使用](tasks/er-format-counting-summing-1.md) タスク ガイドを参照してください。
+この関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発** 業務プロセスの一部である [ER 棚卸および集計のために出力された形式の使用](tasks/er-format-counting-summing-1.md) タスク ガイドを参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

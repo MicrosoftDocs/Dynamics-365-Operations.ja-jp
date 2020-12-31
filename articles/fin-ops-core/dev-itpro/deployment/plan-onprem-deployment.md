@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 38ff09111c55d10b7ca8812fb2e26e286e21fe83
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: c1c89577367ef860c92b5aa80c2d96d2c2829841
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893211"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683980"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -39,7 +38,6 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [オンプレミス配置に実装されない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md)
 - [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
@@ -136,7 +134,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 - **データ構成** - データ構成とは、システムをどのように設定してコンフィギュレーションするかということです。 たとえば、これは、法人の数、品目番号、BOM レベルの数、およびセキュリティ設定がどの程度複雑かを含みます。 これらの要因のそれぞれはパフォーマンスには影響しない可能性があるが、影響はインフラストラクチャに関しては賢明な選択肢を使用することで相殺できます。
 - **拡張機能** – カスタマイズはシンプルまたは複雑になり得ます。 カスタマイズの数と複雑さと使用の性質は、必要なインフラストラクチャのサイズにさまざまな影響を与えます。 複雑なカスタマイズの場合は、効率性のテストだけでなく、インフラストラクチャのニーズを理解するのに役立つように、パフォーマンス評価を行う必要があります。 拡張機能が、パフォーマンスとスケーラビリティにおけるベストプラクティスに従ってコード化されていない場合、これはさらに重要です。
 - **レポートと分析** – レポートと分析には、通常、データベースのシステムに対する大量のクエリの実行が含まれます。 データを大量に使用するレポートが実行される頻度を下げると、影響を減らすことができます。 クエリのデザインがパフォーマンスをどのように影響するかを理解することも重要です。
-- **サード パーティのソリューション**1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
+- **サード パーティのソリューション** 1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
 
 ## <a name="sizing-your-environment"></a>環境のサイズ変更
 サイジング要件を決定するには、処理する必要のあるトランザクションのピーク量を知る必要があります。 Management Reporter や SSRS などのほとんどの補助システムは、ミッション クリティカルではありません。 結果として、このトピックは主に AOS と SQL Server に焦点を当てています。

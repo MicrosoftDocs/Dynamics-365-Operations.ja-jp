@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 910bde858ceb888cb5f6676c9031a30758cc3c80
-ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
+ms.openlocfilehash: 204d964c78c2913a08c555ff9a1e27f7de6d885e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3409577"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680438"
 ---
 # <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
 
@@ -67,7 +66,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     | Selenium.Support.StrongNamed.3.13.1.nupkg   | Selenium.Support.StrongNamed.3.13.1.zip   |
     | Selenium.WebDriver.StrongNamed.3.13.1.nupkg | Selenium.WebDriver.StrongNamed.3.13.1.zip |
 
-4. **PerfSDK** フォルダ配下に、 **Common\\External\\Selenium**というフォルダを作成します。
+4. **PerfSDK** フォルダ配下に、 **Common\\External\\Selenium** というフォルダを作成します。
 
     [![新規PerfSDKフォルダ](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
@@ -97,7 +96,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     - **プロジェクト** のパス: PerfSDKSampleプロジェクトの場所。 通常、パスは \<Your\_PerfSDK\_Folder\>\\SampleProject\\PerfSDKSample\\PerfSDKSample.csproj です。
     - **PerfSDKのパス** – PerfSDK の場所。 通常、パスは \<ServiceVolumeDrive\>\\PerfSDK\\PerfSDKLocalDirectory です。
     
-6. 完了後、 **インポート**を選択します。 PerfSDKSample プロジェクトの **生成された** フォルダ配下に新しいC\# クラスが作成されます。
+6. 完了後、 **インポート** を選択します。 PerfSDKSample プロジェクトの **生成された** フォルダ配下に新しいC\# クラスが作成されます。
 
     [![生成されたフォルダ内の新しいC#クラス](./media/single-user-test-09.png)](./media/single-user-test-09.png)
 
@@ -114,7 +113,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
     [![更新およびコメント化されたコードのサンプル](./media/single-user-test-10.png)](./media/single-user-test-10.png)
 
-2. Visual Studioの **テスト** メニューにて、 **Windows** を指定し、 **テストエクスプローラー**を選択します。
+2. Visual Studioの **テスト** メニューにて、 **Windows** を指定し、 **テストエクスプローラー** を選択します。
 3. 実施したテストケースを右クリックし、 **選択したテストの実行** を選択します。
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣

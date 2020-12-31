@@ -1,6 +1,6 @@
 ---
 title: 資産分類
-description: Finance and Operations アプリは各テーブルに格納されているデータの種類の既定の分類のセットを提供します。
+description: Finance and Operations アプリは、各テーブルに格納されているデータの種類の既定の分類セットを提供します。
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -10,24 +10,23 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f00d0177b5092de89d9bbb64c94bc0b33198d72e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6a90418d0b92a8485d705ca0dd389c82ac5d92d4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183297"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681070"
 ---
 # <a name="asset-classifications"></a>資産分類
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations アプリは各テーブルに格納されているデータの種類の既定の分類のセットを提供します。 これらの分類は、さまざまな種類のデータを識別するために必要に応じて変更されることができます。 各テーブルの各フィールドの実際の分類は、データを識別するための異なるニーズに応じて、いつでも変更される可能性があります。
+Finance and Operations アプリは、各テーブルに格納されているデータの種類の既定の分類セットを提供します。 これらの分類は、さまざまな種類のデータを識別するために必要に応じて変更されることができます。 各テーブルの各フィールドの実際の分類は、データを識別するための異なるニーズに応じて、いつでも変更される可能性があります。
 
 カスタマイズによって、独自の分類や追跡ニーズに合わせて次のデータ分類を変更することができます。
 

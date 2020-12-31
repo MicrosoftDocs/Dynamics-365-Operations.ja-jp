@@ -3,26 +3,25 @@ title: Commerce Data Exchange の拡張 - リアルタイム サービス
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/15/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4e7ef72545249246263816612cf0054ccf36ecc0
-ms.sourcegitcommit: 4846ce7248734cc5166a920910d87e4a3282e990
+ms.openlocfilehash: 6cd95c85492b903983b65163e4ba64a4cdf68444
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "3815043"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681576"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -46,7 +45,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 ## <a name="create-and-call-a-new-extension-method"></a>新しい拡張メソッドの作成と呼び出し
 1. Microsoft Visual Studio を起動します。
 2. **Dynamics 365** メニューで、**モデル管理 > モデルの作成** をクリックします。
-3. **モデルの作成**ダイアログ ボックスに、次の詳細を入力します。
+3. **モデルの作成** ダイアログ ボックスに、次の詳細を入力します。
    -   **モデル名** - Contoso
    -   **モデル発行元** - Contoso
    -   **レイヤー** - USR (関連するレイヤーを選択)
@@ -54,7 +53,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
    -   **モデルの表示名** - Contoso
 
 4. **次へ** をクリックします。
-5. ダイアログ ボックスで、**既存のパッケージを選択**を選択してから、一覧で**アプリケーション スイート**を選択します。
+5. ダイアログ ボックスで、**既存のパッケージを選択** を選択してから、一覧で **アプリケーション スイート** を選択します。
 6. **次へ** をクリックします。
 7. **完了** をクリックします。
 8. **新しいプロジェクト** ダイアログ ボックスに、**ContosoRetailTransactionServiceEx** というプロジェクト名を入力します。
@@ -117,7 +116,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
         }
     }
     ```
-13. ソリューション エクスプローラーで、プロジェクトを右クリックしてから**ビルド**をクリックします。
+13. ソリューション エクスプローラーで、プロジェクトを右クリックしてから **ビルド** をクリックします。
 
 新しい拡張メソッドを作成した後は、プロジェクトが展開されます。
 
@@ -147,4 +146,23 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
         }
  ```
 
+## <a name="cdx-offline"></a>CDX オフライン
 
+HQ に接続されていない場合、クライアント/Retail Server は CDX メソッドを呼び出すことができません。 この場合、拡張機能コードは次のベスト プラクティスに従う必要があります。
+
+-   CDX メソッドを呼び出す前に、CRT がオンライン (Retail Server) データベースまたはオフライン (ローカル) データベースに接続されているかどうかを確認します。 この操作は、POS および CRT から行うことができ ます。
+
+### <a name="how-to-check-the-connection-status"></a>接続ステータスを確認する方法
+
+**POS**
+
+**GetConnectionStatusClientRequest** POS API を使用します。
+
+**CRT**
+
+```C#
+if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString)
+{ }
+```
+
+-   CDX メソッドへの接続に失敗した場合には、HQ に接続していない場合は操作を実行できない、または CDX メソッドに接続されていない状態でこの操作をする場合には軽減ロジックを実行する必要がある、というエラー メッセージが表示されることがあります。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4612562a82c137c2967857b44882c32be5f734bd
-ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
+ms.openlocfilehash: 794c2f150d64d7402f254140158586e39b9cf2bb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378958"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680522"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -167,7 +166,7 @@ ms.locfileid: "3378958"
     }
     ```
 
-8.  **ValidateConfigurationDetail** メソッドを実装します。 このメソッドにより、為替レート プロバイダーは、**為替レート プロバイダーの構成**ページでユーザーが変更した構成情報を検証できます。
+8.  **ValidateConfigurationDetail** メソッドを実装します。 このメソッドにより、為替レート プロバイダーは、**為替レート プロバイダーの構成** ページでユーザーが変更した構成情報を検証できます。
 
     ```xpp
     public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
@@ -213,7 +212,7 @@ ms.locfileid: "3378958"
 
 10. **GetExchangeRates** メソッドを実装します。 このメソッドは、構成情報と、**IExchangeRateRequest** インターフェイスを使用して、交換レート サービスを呼び出すとともに、**IExchangeRateResponse** クラスの適切なインスタンスを返します。 このメソッドを記述するときは、以下の重要な点を考慮します。
 
-    -   必要なすべてのコンフィギュレーション情報は **IExchangeRateProviderConfig** インターフェイスから取得する必要があります。 そのインターフェイスの**GetPropertyValue**メソッドへの呼び出しは、入力されたプロパティキーのプロパティ値の文字列形式を提供します。 この文字列値を別の型に変換する場合は、必要な対策を講じてください。
+    -   必要なすべてのコンフィギュレーション情報は **IExchangeRateProviderConfig** インターフェイスから取得する必要があります。 そのインターフェイスの **GetPropertyValue** メソッドへの呼び出しは、入力されたプロパティキーのプロパティ値の文字列形式を提供します。 この文字列値を別の型に変換する場合は、必要な対策を講じてください。
     -   事前に必要な検証を行います。 たとえば、OANDA は、すべてのサービス コールで API キーを指定するよう要求します。 この API キーが設定されていない場合は、サービスが失敗します。 API キーが設定されていなくて、適切なエラーメッセージを受け取って早期に終了することを確認します。
     -   一部のプロバイダーには、為替レートが要求される場合に明示的な通貨の組み合わせが必要です。 これらのプロバイダーは、**IExchangeRateProviderSupportedOptions.doesSupportSpecificCurrencyPairs** プロパティを **true** に設定したプロバイダーと同じです。 この場合、**IExchangeRateRequest** インターフェイスが提示する通貨ペアを使用して、取得プロセスを動作させる必要があります。 後に続く OANDA プロバイダーの実装には、このタイプのプロバイダーの適正例が示されます。 通常、特定の通貨の組み合わせをサポートしていないプロバイダーは、固定された通貨の組み合わせのデータを返します。 この場合、**IExchangeRateRequest** インターフェイスが提示する通貨ペアは無視できます。 プロバイダーは使用可能なすべてのレートを返す必要があり、このフレームワークは、必要な通貨ペアを自動的に作成するかどうかに関するユーザーの決定に基づいて、正しいレートをインポートします。 CentralBankOfEuropeProvider プロバイダーは、このタイプのプロバイダーの適切な例です。
     -   **IExchangeRateRequest** インターフェイスには、**ImportDateType** というプロパティがあります。 このプロパティは、サービスから為替レートを取得するために使用する日付を示します。 利用可能な 2 つの値は、**CurrentDate** と **DateRange** です。

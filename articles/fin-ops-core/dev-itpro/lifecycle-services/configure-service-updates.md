@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 0f52ab7133afd609f6a9559b576713e003ebebfb
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 51e44f62658f27740e44fe2c3a93f261f3518e76
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527408"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679252"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 
@@ -83,5 +82,5 @@ LCS で **プロジェクト所有者** ロールが割り当てられている�
 - ターゲット環境が見つかりません。 指定したサンドボックスが削除されたか、または実稼動環境が配置されていない場合、スケジュールされた更新は開始される前にキャンセルされます。
 - [ファースト リリース プログラム](https://experience.dynamics.com) に登録されています。  ファースト リリース プログラムは、異なるリリース リズムを備えており、以前にスケジュールされた更新がキャンセルされます。 
 
-キャンセルされた更新は、更新の設定で**最近キャンセルされた更新を表示**を介して確認できます。 最後の2つのスケジュールされた更新で、キャンセルされた更新がある場合はすべて表示されます。
+キャンセルされた更新は、更新の設定で **最近キャンセルされた更新を表示** を介して確認できます。 最後の2つのスケジュールされた更新で、キャンセルされた更新がある場合はすべて表示されます。
 

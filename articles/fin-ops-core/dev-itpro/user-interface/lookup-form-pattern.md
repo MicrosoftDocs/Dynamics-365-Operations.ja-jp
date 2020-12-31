@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 12911
 ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e565ec685395241c3a8cc667afead4b9fa00840
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: c617643a4219da7d8c57725d975e94a2abb6f86d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329878"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681580"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -112,7 +111,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 **ルックアップのガイドライン**
 
--   **グリッド**ガイドラインは、グリッドガイドライン セクションの [フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   **グリッド** ガイドラインは、グリッドガイドライン セクションの [フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   ルックアップ内に別の「ビュー」(タブ) を表示する必要がある場合は、コンボ ボックスを使用して、ユーザーがタブを切り替えるようにします。
 -   必要に応じてルックアップでツリー ビューを使用することができます。 また、ツリー内のデータの追加フィールドの表示が複雑であるため、標準のグリッドを提供することも検討します。
 -   グリッドに 5 つ以上の列を持たないでください。 ルックアップはすべての列を表示するようにサイズ変更されるので、5 列は非常に広いです。
@@ -124,19 +123,19 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 ## <a name="examples"></a>例
 ### <a name="lookup-basic"></a>基本のルックアップ
 
-フォーム: **SysLanguageLookup** (ナビゲーション バーで**設定** &gt; **ユーザー設定**をクリックします。) 
+フォーム: **SysLanguageLookup** (ナビゲーション バーで **設定** &gt; **ユーザー設定** をクリックします。) 
 
 [![基本ルックアップの例](./media/lookupform4.png)](./media/lookupform4.png)
 
 ### <a name="lookup-with-tabs"></a>タブ付きルックアップ
 
-フォーム: **CaseCategoryLookup** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース**の順にクリックして、詳細に移動するケースを選択します。) 
+フォーム: **CaseCategoryLookup** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース** の順にクリックして、詳細に移動するケースを選択します。) 
 
 ![タブ付きルックアップ フォームの例](./media/lookupform5.png)
 
 ### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
-フォーム: **HcmWorkerLookup** (**人事管理** &gt; **共通** &gt; **組織** &gt; **職位** &gt; **職位**の順にクリックし、詳細に移動するレコードをクリックします。 **作業者の割り当て** FastTab を展開し、**新規**をクリックして、次に**ワーカー**フィールドにドロップダウンの矢印をクリックします。 
+フォーム: **HcmWorkerLookup** (**人事管理** &gt; **共通** &gt; **組織** &gt; **職位** &gt; **職位** の順にクリックし、詳細に移動するレコードをクリックします。 **作業者の割り当て** FastTab を展開し、**新規** をクリックして、次に **ワーカー** フィールドにドロップダウンの矢印をクリックします。 
 
 [![プレビューによるルックアップ フォームの例](./media/lookupform6.png)](./media/lookupform6.png)
 

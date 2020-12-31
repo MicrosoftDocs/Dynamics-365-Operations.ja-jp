@@ -10,23 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21311
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 549e3f72b936e8f4274587a92306fc4f97b617b1
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 8192f6d0b40204ca09a937509006725b4b6c226f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173028"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683515"
 ---
 # <a name="integrated-worker-job-and-position"></a>統合された作業者、職務、職位
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -38,7 +39,7 @@ HR データの統合には、Dynamics 365 の Finance and Operations アプリ�
 
 ## <a name="templates"></a>テンプレート
 
-HR データには、従業員と契約社員、職位、職務に関する情報が含まれます。 次の表に示すように、エンティティ マップのコレクションは、データ操作中に連携して動作します。
+HR データには、従業員と契約社員、職位、職務に関する情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、データ操作中に連携して動作します。
 
 | Finance and Operations アプリ | Dynamics 365 モデル駆動型アプリ | 説明 |
 |-----------------------------|----------------------------------|-------------|
@@ -53,7 +54,7 @@ HR データには、従業員と契約社員、職位、職務に関する情�
 | 職位階層 | cdm\_jobpositions | |
 | 職位タイプ | cdm\_positiontypes | |
 | 職位作業者割り当て | cdm\_positionworkerassignmentmaps | |
-| ワーカー | cdm\_workers | Dynamics 365 Finance と Supply Chain Management では、作業者は従業員または契約社員のいずれかに分類されます。 Common Data Service では、作業者をボランティアとして分類することもできます。 データが Finance と Supply Chain Management に変換されると、ボランティアは契約社員になります。 |
+| ワーカー | cdm\_workers | Dynamics 365 Finance と Supply Chain Management では、作業者は従業員または契約社員のいずれかに分類されます。 Dataverse では、作業者をボランティアとして分類することもできます。 データが Finance と Supply Chain Management に変換されると、ボランティアは契約社員になります。 |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 

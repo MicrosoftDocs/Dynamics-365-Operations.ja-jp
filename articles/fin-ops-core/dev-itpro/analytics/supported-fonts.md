@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 39c999e008a1c37daf830fbd5587c9e2c3d61ba1
-ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
+ms.openlocfilehash: af2484686aa6f589b7c714e3892d400da4ddb805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677944"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682281"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 
@@ -312,7 +311,7 @@ Finance and Operations アプリには、クラウドでホストされるサー
 
 ## <a name="supported-fonts-for-application-version-80-with-platform-update-23"></a>アプリケーション バージョン 8.0 およびプラットフォーム更新プログラム 23 でサポートされるフォント
 
-|     | フォント ファミリー            |
+|  番号   | フォント ファミリ            |
 |-----|--------------------------|
 | 1   | 代理店 FB                |
 | 2   | アルジェリアン                 |

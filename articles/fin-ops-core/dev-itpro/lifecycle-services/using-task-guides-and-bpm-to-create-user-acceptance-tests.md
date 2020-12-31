@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c51bda28545a7579cc9147de2f3881c76b9fa666
-ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
+ms.openlocfilehash: 129a4a049654839b3675e7cb5070d52c64a5fe13
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346639"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682583"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -53,12 +52,12 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 #### <a name="create-and-save-a-new-task-recording"></a>新しいタスク記録を作成して保存する
 1. クライアントを開いて、サインインします。 
 2. 記録中に使用する会社を選択します。
-3. **設定** > **タスク レコーダー**に移動します。
+3. **設定** > **タスク レコーダー** に移動します。
 
     ![タスク レコーダーの選択](./media/select_task_recorder.PNG "タスク レコーダーの選択。")。
 
-4. **新しい記録の作成**をクリックします。
-5. コンフィギュレーション名を入力し、**開始**をクリックします。 記録は、**開始** をクリックすると開始されます。
+4. **新しい記録の作成** をクリックします。
+5. コンフィギュレーション名を入力し、**開始** をクリックします。 記録は、**開始** をクリックすると開始されます。
 6. 記録が完了したら、タスク レコーダー ウィンドウで、**停止** をクリックします。
 7. 添付された BPM にタスク記録を保存するには、**Lifecycle Services に保存** をクリックします。
 
@@ -73,19 +72,19 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 #### <a name="upload-an-axtr-file-to-bpm"></a>BPM に AXTR ファイルをアップロード
 ディスクに記録 (AXTR ファイル) を保存した場合、以下の手順に従って BPM にアップロードします。
 
-1. Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ** ページで、タスク記録をアップロードするライブラリを選択します。
-2. **作成と編集**をクリックして、明細行内で、タスク記録をアップロードするプロセスを特定し選択します。
-3. 右ウィンドウで**アップロード**をクリックします。 
+1. Lifecycle Services (LCS) で、プロジェクトの **業務プロセス ライブラリ** ページで、タスク記録をアップロードするライブラリを選択します。
+2. **作成と編集** をクリックして、明細行内で、タスク記録をアップロードするプロセスを特定し選択します。
+3. 右ウィンドウで **アップロード** をクリックします。 
 
     ![AXTR 1 のアップロード:](./media/upload_axtr_1.PNG "AXTR 1 のアップロード:")
 
-4. **参照**をクリックして、アップロードするファイルを検索して選択し、次に**アップロード**をクリックします。
+4. **参照** をクリックして、アップロードするファイルを検索して選択し、次に **アップロード** をクリックします。
 
     ![AXTR 2 のアップロード:](./media/upload_axtr_2.PNG "AXTR 2 のアップロード:")
 
 #### <a name="save-an-existing-task-recording-to-bpm"></a>既存のタスク記録を BPM を保存
 1. 既存のタスクの記録を添付するには、クライアントにサインインします。
-2. **設定** > **タスク レコーダー**に移動します。
+2. **設定** > **タスク レコーダー** に移動します。
 3. **タスクの記録を編集** を選択し、LCS に直接を保存するか、AXTR にダウンロードしてから BPM にアップグレードすることによって、そのファイルを添付します。
 
 ### <a name="guidelines-for-recording-test-cases"></a>テスト ケースを記録するためのガイドライン
@@ -110,7 +109,7 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳細については、[BPM ライブラリの Azure DevOps との同期について](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops) を参照してください。 
 
 コンフィギュレーションが完了した後、Azure DevOps プロジェクトと BPM ライブラリを同期します。
-1. **業務プロセス ライブラリ**ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期**を選択します。
+1. **業務プロセス ライブラリ** ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期** を選択します。
 
     ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
@@ -118,7 +117,7 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 
     ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 
-2. Azure DevOps の同期が完了した後、省略記号ボタン (…) を選択し、**テスト ケースの同期**を選択します。
+2. Azure DevOps の同期が完了した後、省略記号ボタン (…) を選択し、**テスト ケースの同期** を選択します。
 
     ![テスト ケースの同期](./media/sync_test_case.PNG "テスト ケースの同期")
 
@@ -134,10 +133,10 @@ Azure DevOps プロジェクトと BPM ライブラリを同期します。 詳�
 
 1. Azure DevOps にログインし、テストするプロジェクトとテスト計画を選択します。 
 2. ツール バーで、**テスト** > **テスト計画** を選択します。
-3. 左ウィンドウで、**+** を選択してから、**静的スイート**を選択します。 
+3. 左ウィンドウで、**+** を選択してから、**静的スイート** を選択します。 
 4. スイート名を入力します。
-5. **既存の追加**をクリックし、**LCS:Test Cases** タグを照会します。
-6. **実行** > **テスト ケースの追加**の順にクリックします。
+5. **既存の追加** をクリックし、**LCS:Test Cases** タグを照会します。
+6. **実行** > **テスト ケースの追加** の順にクリックします。
 
     ![テスト ケースの追加](./media/add_test_cases.PNG "テスト ケースの追加")
  
@@ -163,11 +162,11 @@ Azure DevOps はテストだけでなく、結果の管理と軽減策のため�
 
 Finance and Operations のプラットフォームは、タスク記録に基づいてテスト ケースを作成し、Azure DevOps を使用してそれらのテスト ケースの自動実行を管理するためのツールを開発者を提供します。 
 
-開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
+開発者は、**ビルドおよびテスト** 環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
 機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 詳細について[ツールのダウンロード](https://www.microsoft.com/download/details.aspx?id=57357)と[Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md)を参照してください。
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
-自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
+自動実行が完了したら、Azure DevOps ツール バーで **テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
 Azure DevOps のテストおよびテスト管理の詳細については、[Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops)を参照してください。
 

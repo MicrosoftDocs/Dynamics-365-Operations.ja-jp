@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0c9dc0258aa05e9056b1759cd19cf82ac113378a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: d5c34323b51348583ed1d09747a8fdd379ef2600
+ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983088"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665481"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 
@@ -59,3 +58,5 @@ ms.locfileid: "3983088"
 [セット ベースからレコード単位への操作の変換](xpp-data-perf.md) トピックでは、レコード セット ベースのステートメントおよびメソッドをより効率的に使用するための情報を提供します。
 
 [SysDa クラス](../sysda.md)を使用してデータを取得および変更することもできます。 拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。
+
+**executeQueryWithParameters** API は、[SQL インジェクション攻撃の軽減](../query-with-parameters.md) に役立ちます。

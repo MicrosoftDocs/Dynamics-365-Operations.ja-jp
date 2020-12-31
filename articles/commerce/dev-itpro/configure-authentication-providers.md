@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 31241
 ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: fd8e66881bab04a5d973082c18aab4e6ba98c18a
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 7949eb77abddd7749d8fb5642419a24ebb25bfe8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070437"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683369"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 
@@ -36,7 +35,7 @@ E コマース プラットフォームは、認証のためのメカニズム�
 
 Commerce Scale Unit で使用できるようにするため、OpenID プロバイダーを登録するプロセスのチュートリアルを次に示します。
 
-1.  Retail and Commerce IT ワークスペースから、**コマース共有パラメーター** &gt; **OpenID プロバイダー**に移動します。 **OpenID プロバイダー** ページを使用すると追加プロバイダーを登録することができます。 サポートする各プロバイダーについては、OpenID プロバイダーの詳細および依存する関係者の詳細を入力します。 Commerce Scale Unit は、この情報を使用し、認証トークンを要求して後続の呼び出しに使用します。
+1.  Retail and Commerce IT ワークスペースから、**コマース共有パラメーター** &gt; **OpenID プロバイダー** に移動します。 **OpenID プロバイダー** ページを使用すると追加プロバイダーを登録することができます。 サポートする各プロバイダーについては、OpenID プロバイダーの詳細および依存する関係者の詳細を入力します。 Commerce Scale Unit は、この情報を使用し、認証トークンを要求して後続の呼び出しに使用します。
 2.  配送スケジュール 1110 を実行します。
 3.  テスト オンライン ストアについては、次の例に示すように、正しいリダイレクト URL とドメインを指定できるように web.config ファイルを編集します。 第三者のオンライン ストアを使用している場合、この情報を必要に応じて保存できます。
 

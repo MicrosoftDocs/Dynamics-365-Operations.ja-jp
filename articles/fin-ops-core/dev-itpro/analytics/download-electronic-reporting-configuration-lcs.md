@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810622"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683308"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services から電子申告コンフィギュレーションをダウンロードする
 
@@ -37,8 +36,8 @@ ms.locfileid: "3810622"
     - 電子申告機能コンサルタント
     - システム管理者
 
-2. **組織管理** &gt; **ワークスペース** &gt; **電子申告**の順に移動します。
-3. **コンフィギュレーション プロバイダー**セクションで、**Microsoft** タイルを選択します。
+2. **組織管理** &gt; **ワークスペース** &gt; **電子申告** の順に移動します。
+3. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択します。
 4. **Microsoft** タイルで **リポジトリ** を選択します。
 
     [ローカライズ コンフィギュレーション ページ の ![Microsoft タイル](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
@@ -47,7 +46,7 @@ ms.locfileid: "3810622"
 
     1. **追加** を選択して、リポジトリを追加します。
     2. リポジトリ タイプとして、**LCS** を選択します。
-    3. **レポジトリを作成**を選択します。
+    3. **レポジトリを作成** を選択します。
     4. 認証についてのメッセージが表示された場合は、画面の指示に従います。
     5. リポジトリの名前と説明を入力します。
     6. **OK** を選択して、新しいリポジトリ エントリを確認します。
@@ -61,11 +60,11 @@ ms.locfileid: "3810622"
     > LCS の共有アセット ライブラリからコンフィギュレーションをダウンロードするのに、LCS リポジトリへのアクセスに問題がある場合は、代わりに [グローバル リポジトリ](er-download-configurations-global-repo.md) からコンフィギュレーションをダウンロードできます。
 
 7. 左側ペインのコンフィギュレーション ツリーで必要な ER コンフィギュレーションを選択します。
-8. **バージョン**クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
+8. **バージョン** クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
 9. **インポート** を選択して、LCS から現在のインスタンスに選択したバージョンをダウンロードします。
 
     > [!NOTE]
-    > **インポート**ボタンは、現在のインスタンスにある ER コンフィギュレーション バージョンでは使用できません。
+    > **インポート** ボタンは、現在のインスタンスにある ER コンフィギュレーション バージョンでは使用できません。
 
     [![レポジトリ ページのコンフィギュレーション](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 

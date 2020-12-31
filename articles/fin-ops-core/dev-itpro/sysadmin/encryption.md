@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 536c1b5c5c31e44c293c347dc5118b39227ba74a
-ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
+ms.openlocfilehash: 3337bd40ee00c3f0d296928d32d88ea7460a1fd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454947"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679908"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>Finance and Operations アプリにおける暗号化処理
 

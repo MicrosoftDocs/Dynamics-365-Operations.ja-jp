@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bf13b7c1e7cab7c803b352370084421a8180dee
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 1e6a4638cd32cb253261cc7fbaacb45b47f52c62
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743438"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683702"
 ---
 # <a name="splitlistbylimit-er-function"></a>SPLITLISTBYLIMIT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`SPLITLISTBYLIMIT` 関数は、指定されたリストを新しいサブリスト (バッチ) のリストに分割します。 各バッチのレコード数は動的に計算されます。 その後、関数は結果をバッチで構成された新しい*レコード リスト*値として返します。
+`SPLITLISTBYLIMIT` 関数は、指定されたリストを新しいサブリスト (バッチ) のリストに分割します。 各バッチのレコード数は動的に計算されます。 その後、関数は結果をバッチで構成された新しい *レコード リスト* 値として返します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +42,13 @@ SPLITLISTBYLIMIT (list, limit value, limit source)
 
 *レコード リスト* データ型のデータ ソースの項目の有効なパス。
 
-`limit value`: *整数*または*実数*
+`limit value`: *整数* または *実数*
 
 元のリストをバッチに分割するために使用される制限の最大値。
 
 `limit source`: *フィールド*
 
-指定されたリストの*整数*型または*実数*型のフィールドの有効なパス。 このフィールドの値は、合計が増加するステップを定義します。
+指定されたリストの *整数* 型または *実数* 型のフィールドの有効なパス。 このフィールドの値は、合計が増加するステップを定義します。
 
 ## <a name="return-values"></a>戻り値
 
@@ -96,7 +95,7 @@ SPLITLISTBYLIMIT (list, limit value, limit source)
 <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
 
 > [!NOTE] 
-> 制限は、制限のソース (**重量**) の値 (**11**) が定義済みの制限 (**9**) を超えるため、元のリストの最後の項目に適用されません。 レポートの生成中にサブリストを無視するには、必要に応じて、 `WHERE` 関数または対応するフォーマット要素の**有効**式のいずれかを使用します。
+> 制限は、制限のソース (**重量**) の値 (**11**) が定義済みの制限 (**9**) を超えるため、元のリストの最後の項目に適用されません。 レポートの生成中にサブリストを無視するには、必要に応じて、 `WHERE` 関数または対応するフォーマット要素の **有効** 式のいずれかを使用します。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ef024185c4654804f6f260a43c1bf294b33c10e2
-ms.sourcegitcommit: 6e290b0d3aeedd0e234ac4f1df92b1b9afd6fccc
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829682"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680857"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>電子申告で生成される大きなドキュメントを圧縮する 
 
@@ -40,7 +39,7 @@ ms.locfileid: "3829682"
 
 ## <a name="example-compress-an-outbound-document"></a>例: 送信ドキュメントの圧縮
 
-この例では、 **システム管理者** または **電子申告機能コンサルタント** のロールに割り当てられたユーザーが、ER 形式を構成して、生成されたドキュメントを圧縮できるようにする方法を示します。
+この例では、**システム管理者** または **電子申告機能コンサルタント** のロールに割り当てられたユーザーが、ER 形式を構成して、生成されたドキュメントを圧縮できるようにする方法を示します。
 
 ### <a name="prerequisites"></a>必要条件
 
@@ -62,8 +61,8 @@ ms.locfileid: "3829682"
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>生成された出力を圧縮するように形式を変更する
 
-1. **組織管理** \> **電子申告** \> **構成**の順に移動します。
-2. **コンフィギュレーション** ページのコンフィギュレーション ツリーで、**遅延要素を知るためのモデル**を展開します。
+1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
+2. **コンフィギュレーション** ページのコンフィギュレーション ツリーで、**遅延要素を知るためのモデル** を展開します。
 3. **遅延 XML 要素を知るための形式** コンフィギュレーションを選択します。
 4. **デザイナー** を選択して、形式構造を変更します。
 5. **形式デザイナー** ページの **形式** タブで **ルートの追加** を選択し、ルート形式要素を追加します。
@@ -76,7 +75,7 @@ ms.locfileid: "3829682"
 
 ### <a name="generate-an-er-format-to-get-a-compressed-document"></a>圧縮ドキュメントを取得するための ER 形式の生成
 
-1. **フォーマット デザイナー** ページで、**実行**を選択します。
+1. **フォーマット デザイナー** ページで、**実行** を選択します。
 2. Web ブラウザーが提供する ZIP ファイルをダウンロードし、レビュー用に開きます。
 3. ZIP 形式で生成されたドキュメントのサイズが 1 KB であることに注意してください。
 

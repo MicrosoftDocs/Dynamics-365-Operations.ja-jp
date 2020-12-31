@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b262d452f649021145cce0d6cf001cb5bdf236be
-ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
+ms.openlocfilehash: f9345aa54995608e496cf53b8bd21f20edbd9d36
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3969036"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679284"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
@@ -49,6 +48,7 @@ ms.locfileid: "3969036"
 次の機能は、セルフ サービス配置では実装されません。
 
 - **カスタム フォント** - カスタム フォントはサポートされていません。 詳細については、[Dynamics 365 アプリケーションのドキュメント レポート サービス](../analytics/reporting-experience-iias-environments.md)を参照してください。
+- **セルフサービスの UI コンポーネントに関連したカスタマイズ** - Finance and Operations アプリで標準の Financial Reporting または SQL Server Reporting Services (SSRS) を使用しないカスタマイズは、多くの場合、AOS が実行されているオペレーティング システムの UI コンポーネントに依存します。 依存関係の例としては、Windows フォント、Internet Explorer などの Web ブラウザー、またはカスタム PDF レンダリングなどがあります。 ホスト オペレーティング システムに、フォント インフラストラクチャ、Web ブラウザー、または一般的な UI コンポーネントのサポートが含まれることを保証するものではありません。 セルフサービス インフラストラクチャに移行すると、ホスト オペレーティング システムが変更されます。 このような依存関係があり他にご質問がある場合は、Microsoft サポートに問い合わせてください。
 
 ### <a name="features-no-longer-supported"></a>サポートされなくなった機能
 次の機能は、セルフ サービス配置ではサポートされなくなりました。

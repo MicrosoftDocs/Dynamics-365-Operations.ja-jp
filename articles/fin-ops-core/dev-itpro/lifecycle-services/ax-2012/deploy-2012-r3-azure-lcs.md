@@ -10,25 +10,24 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18231
 ms.assetid: 18a1ba1e-5c75-4cff-95f7-ec0beef0a28e
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2d637db0fe86c1395facf7946a30183a3f584c90
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1ad65926a4de1ce65a47b10efa90aa577a97dc5b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812070"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679262"
 ---
 # <a name="deploy-ax-2012-r3-on-azure-by-using-lifecycle-services-lcs"></a>Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する
 
 [!include [banner](../../includes/banner.md)]
 
-Azure はオープンで柔軟なクラウド プラットフォームであり、Microsoft が管理するデータセンターのグローバル ネットワーク間でアプリケーションをすばやく構築、展開、および管理することができます。 Azure は*クラウド コンピューティング*を有効にします。 クラウド コンピューティングとは、コンピューティング能力をサービスとして提供することです。 クラウド コンピューティングにより、コンピュータ、ネットワーク、ストレージなどの IT リソースへのアクセスが容易になります。 どんなユーティリティもそうであるように、一般的にはクラウド コンピューティングで使用するものに対してのみ支払いを行います。 クラウド サービスを使用することにより、コストのかかる複合 IT レポート パーツを作成、管理、または維持することなく、大規模なデータセンターの能力を活用することができます。 クラウドを使用すると、IT の複雑な面の多くを取り除き、業務にとって真に重要なインフラストラクチャ、データ、およびアプリケーション開発に集中することができます。 Azure 上に AX 2012 R3 を配置することができます。 これを実行すると、以下の利点に気付くと思います。
+Azure はオープンで柔軟なクラウド プラットフォームであり、Microsoft が管理するデータセンターのグローバル ネットワーク間でアプリケーションをすばやく構築、展開、および管理することができます。 Azure は *クラウド コンピューティング* を有効にします。 クラウド コンピューティングとは、コンピューティング能力をサービスとして提供することです。 クラウド コンピューティングにより、コンピュータ、ネットワーク、ストレージなどの IT リソースへのアクセスが容易になります。 どんなユーティリティもそうであるように、一般的にはクラウド コンピューティングで使用するものに対してのみ支払いを行います。 クラウド サービスを使用することにより、コストのかかる複合 IT レポート パーツを作成、管理、または維持することなく、大規模なデータセンターの能力を活用することができます。 クラウドを使用すると、IT の複雑な面の多くを取り除き、業務にとって真に重要なインフラストラクチャ、データ、およびアプリケーション開発に集中することができます。 Azure 上に AX 2012 R3 を配置することができます。 これを実行すると、以下の利点に気付くと思います。
 
 -   **コストの削減** Azure でインフラストラクチャを構築または管理する必要がないので、IT コストが大幅に削減される可能性があります。
 -   **時間の節約** オンプレミス AX 2012 R3 環境は、計画を立て、必要なハードウェアを入手し、配置するために数週間かかる場合があります。 Lifecycle Services でクラウド ホスト環境ツールを使用することにより、Azure に時間単位で AX 2012 R3 環境を配置することができます。
@@ -54,7 +53,7 @@ AX 2012 R3 を Azure に配置するときは、IaaS オファリングを使用
 ## <a name="architecture-of-ax-2012-r3-on-azure"></a>Azure 上の AX 2012 R3 のアーキテクチャ
 Azure に AX 2012 R3 を展開するには、Microsoft Dynamics Lifecycle Services を使用できます。 Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX プロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Lifecycle Services Web サイトで利用できるクラウド ホスト環境ツールを使用すると、Azure 上に AX 2012 R3 環境を配置できます。 クラウド ホスト環境ツールを使用して配置するとき、デモまたは開発/テスト環境などの、Azure 上に配置する環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure での仮想マシンの適切な数を提供します。 これらの仮想マシンには、AX 2012 R3 コンポーネント (およびそれらの必要物すべて) がインストール済みです。 たとえば、 AX 2012 R3 テスト環境を配置する場合、アーキテクチャは次のようになります: 
 
-[![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
+[![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
 
 クラウド ホスト環境ツールを使用して、次のタイプの AX 2012 R3 環境を Azure 上に配置することができます。
 

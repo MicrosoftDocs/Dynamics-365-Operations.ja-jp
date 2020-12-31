@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a569769fc76ccb348c5f95392d341e57098b34c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8b0fa7ecdac10f54dc04020e421e73947d903d03
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979656"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681502"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -109,7 +108,7 @@ Retail Modern POS によってが記録されたすべてのイベントには�
 - **AppSessionID** - アプリケーションが最初に起動されたときに生成される一意の ID。 これは記録されるすべてのイベントに含まれています。
 - **UserSessionID** – ユーザーが Retail Modern POS にサインインするときに生成される固有の ID。 これはユーザーがサインインしている限り、記録されるすべてのイベントに含まれています。 新しいユーザーがサインインするとき、新しい UserSessionID が作成されます。
 
-AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの**詳細**タブで見つけることができます。
+AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの **詳細** タブで見つけることができます。
 
 [![イベント ビューアーの詳細タブ](./media/correlation-1024x672.png)](./media/correlation.png)
 
@@ -118,7 +117,7 @@ AppSessionID 値および UserSessionID 値は、Retail Modern POS がインス�
 イベント ビューアで受信する Commerce Scale Unit 要求のデータを関連付けるには、最初に **Analytic** チャネルを有効にする必要があります。 分析チャネルを有効にするには、次の手順を実行します。
 
 1. イベント ビューアーの左ウィンドウで、**Commerce RetailServer** を選択します。
-2. **表示** &gt; **分析とデバッグ ログを有効にします**をクリックします。 分析チャネルの新しいノードは、**Commerce-RetailServer** ログ プロバイダーの下に表示されます。
+2. **表示** &gt; **分析とデバッグ ログを有効にします** をクリックします。 分析チャネルの新しいノードは、**Commerce-RetailServer** ログ プロバイダーの下に表示されます。
 3. **分析** ノードを右クリックし、**ログの有効化** をクリックします。
 
 イベント ビューアーでは、受信しているすべての Commerce Scale Unit の要求がイベント 5000 として Commerce-RetailServer ソースの分析チャネルに記録されます。 これらのイベントには、前述した AppSessionID と UserSessionID もあります。 すべてのイベントには、同じ要求のログに記録されたイベントごとに、固有の ActivityID も用意されています。
@@ -133,7 +132,7 @@ LCS ログ検索は、HA 運用トポロジに使用できます。 次のコマ
 - Retail Cloud POS
 - Commerce Scale Unit (Retail Cloud Scale Unit で実行中)
 
-LCS ログ検索に、次のコマース コンポーネントからのログは**含まれません**。
+LCS ログ検索に、次のコマース コンポーネントからのログは **含まれません**。
 
 - コマース レイアウト デザイナー
 - コマース受領書デザイナー
@@ -149,10 +148,10 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 1. [Lifecycle Services](https://lcs.dynamics.com/) に移動します。
 2. プロジェクトに関連付けられている資格情報を使用してログインします。
 3. プロジェクト ページで、正しいプロジェクトを選択します。
-4. **プロジェクトの詳細**ページで、正しい環境を選択します。
-5. **環境の詳細**ページで、**環境の監視**をクリックします。
-6. **環境の監視**ページで、**未加工ログの表示**をクリックします。
-7. **ログ検索**ページで、次のいずれかのクエリを選択します。
+4. **プロジェクトの詳細** ページで、正しい環境を選択します。
+5. **環境の詳細** ページで、**環境の監視** をクリックします。
+6. **環境の監視** ページで、**未加工ログの表示** をクリックします。
+7. **ログ検索** ページで、次のいずれかのクエリを選択します。
 
     - **コマース クライアント イベント** クエリには、Retail Modern POS、Retail Cloud POS、および Commerce Scale Unit (Retail Cloud Scale Unit で実行中) からのイベントが含まれます
     - **すべてのログ** クエリには、Commerce Scale Unit、Commerce Data Exchange、および Commerce Data Exchange: リアルタイム サービスからのデータが含まれます
@@ -223,7 +222,7 @@ IPageViewInfo = {
 
 ### <a name="cart-operations"></a>カートの操作
 
-次の**カート**関連のイベントがログに記録されます。
+次の **カート** 関連のイベントがログに記録されます。
 
 - カートに品目を追加する。
 - カートの品目を更新する。
@@ -234,73 +233,73 @@ IPageViewInfo = {
 **カート** イベントのスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Cart object
- * @property products       {IProductInfo[]}    - Array of product information
- * @property orderId        {string}            - ID for the order
- * @property cartId         {string}            - ID for the current cart object
- * @property cartVersion    {string}            - Version number for the current cart object
- */
-export interface ICartInfo {
-    products: IProductInfo[];
-    orderId: string;
-    cartId: string;
-    cartVersion: string;
+/**_
+ _ Defines the telemetry properties to track for a Cart object
+ * @property products       {IProductInfo[]}    - Array of product information
+ * @property orderId        {string}            - ID for the order
+ * @property cartId         {string}            - ID for the current cart object
+ * @property cartVersion    {string}            - Version number for the current cart object
+ */
+export interface ICartInfo {
+    products: IProductInfo[];
+    orderId: string;
+    cartId: string;
+    cartVersion: string;
 }
 ```
 
 ### <a name="purchase"></a>購買
 
-注文が送信されると、購入イベントがログに記録されます。 **購買**イベントのスキーマは次のとおりです。
+注文が送信されると、購入イベントがログに記録されます。 **購買** イベントのスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Purchase event
- * @property id            {string}         - Transaction ID
- * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
- * @property revenue       {number}         - Revenue from this transaction
- * @property tax           {number}         - Tax amount
- * @property shippingCost  {number}         - Shipping cost
- * @property products      {IProductInfo[]} - List of products in this transaction
- */
-export interface IProductTransaction {
-    id: string;
-    affiliation?: string;
-    revenue?: number;
-    tax?: number;
-    shippingCost?: number;
-    products?: IProductInfo[];
+/**_
+ _ Defines the telemetry properties to track for a Purchase event
+ * @property id            {string}         - Transaction ID
+ * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
+ * @property revenue       {number}         - Revenue from this transaction
+ * @property tax           {number}         - Tax amount
+ * @property shippingCost  {number}         - Shipping cost
+ * @property products      {IProductInfo[]} - List of products in this transaction
+ */
+export interface IProductTransaction {
+    id: string;
+    affiliation?: string;
+    revenue?: number;
+    tax?: number;
+    shippingCost?: number;
+    products?: IProductInfo[];
 }
 ```
 
 ### <a name="product-details"></a>製品の詳細
 
-製品の詳細は、**カート**および**購買**操作に記録されます。 **製品**の詳細に関するスキーマは次のとおりです。
+製品の詳細は、**カート** および **購買** 操作に記録されます。 **製品** の詳細に関するスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Product object
- * @property productChannelId       {string}   - Product channel ID
- * @property productChannelName     {string}   - Product channel name
- * @property productCategoryId      {string}   - Product category ID
- * @property productCategoryName    {string}   - Product category name
- * @property productId              {string}   - Product ID
- * @property productName            {string}   - Product name
- * @property productSku             {string}   - Product SKU
- * @property productPrice           {string}   - Product price
- * @property productQuantity        {string}   - Product quantity
- * @property productCurrency        {string}   - Product currency code
- */
-export interface IProductInfo {
-    productChannelId: string;
-    productChannelName: string;
-    productCategoryId: string;
-    productCategoryName: string;
-    productId: string;
-    productName: string;
-    productSku: string;
-    productPrice: string;
-    productQuantity: string;
-    productCurrency: string;
+/**_
+ _ Defines the telemetry properties to track for a Product object
+ * @property productChannelId       {string}   - Product channel ID
+ * @property productChannelName     {string}   - Product channel name
+ * @property productCategoryId      {string}   - Product category ID
+ * @property productCategoryName    {string}   - Product category name
+ * @property productId              {string}   - Product ID
+ * @property productName            {string}   - Product name
+ * @property productSku             {string}   - Product SKU
+ * @property productPrice           {string}   - Product price
+ * @property productQuantity        {string}   - Product quantity
+ * @property productCurrency        {string}   - Product currency code
+ */
+export interface IProductInfo {
+    productChannelId: string;
+    productChannelName: string;
+    productCategoryId: string;
+    productCategoryName: string;
+    productId: string;
+    productName: string;
+    productSku: string;
+    productPrice: string;
+    productQuantity: string;
+    productCurrency: string;
 }
 ```

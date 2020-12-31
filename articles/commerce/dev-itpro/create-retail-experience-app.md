@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 251594
 ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5c218b1d34e84b8da907f6cf8513d435cdede69a
-ms.sourcegitcommit: 09df26ec232f06e62f600ff52baf3b770c7e7125
+ms.openlocfilehash: 9ed078df080af0cc1d0a3e2cea3953d34137d4b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "3437752"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683353"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -106,7 +105,7 @@ Microsoft サンプル ブランドを使用して小売エクスペリエンス
 -   アプリ バー (アプリ バーはアクション バーまたはツール バーとも呼ばれます。)
 -   ステータス バーの色
 -   アクセント色
--   基本アクション ボタンの色。 たとえば、**カートに追加**、**チェック アウト**、**注文**、および**続行**ボタンすべてが同じ色です。
+-   基本アクション ボタンの色。 たとえば、**カートに追加**、**チェック アウト**、**注文**、および **続行** ボタンすべてが同じ色です。
 
 ### <a name="applying-branding-to-the-android-app"></a>Android アプリにブランディングを適用
 
@@ -161,7 +160,7 @@ iOS アプリのテキストを変更するには、TextResources.resx ファイ
 | ページ ラベルと対応するページ タイトルについて          | **Pages\_AccountPage\_About** および **Pages\_AboutPage\_Title**                          |
 
 > [!NOTE]
-> info.plist ファイルの一部のリソースは、iOS アプリでは使用されませんが、Android アプリで使用されます。 たとえば **MenuPage\_ 製品**です。 Android アプリに影響を与えずに、iOS アプリからこれらのリソースを変更することができます。
+> info.plist ファイルの一部のリソースは、iOS アプリでは使用されませんが、Android アプリで使用されます。 たとえば **MenuPage\_ 製品** です。 Android アプリに影響を与えずに、iOS アプリからこれらのリソースを変更することができます。
 
 #### <a name="colors"></a>色
 

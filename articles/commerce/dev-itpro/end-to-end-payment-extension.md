@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd29d62389ee6bd97ddba62eb55c0b5acd25c748
-ms.sourcegitcommit: 2abe82e7554edf9575af1741910c4a9581dc09bf
+ms.openlocfilehash: cc05e2f9f8c9bb48907d91912318a5f284eada15
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3547102"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681578"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
@@ -85,7 +84,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 **HandlerName** 文字列は、クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
 
 #### <a name="implement-supported-payment-requests"></a>サポートされている支払要求の実装
-支払関連フローを処理するには、支払コネクタが処理できる、サポートされている要求タイプを定義する必要があります。 また、**実行**メソッドは、コネクタが指定されたメソッドをサポートする各要求をルーティングするために実装する必要があります。 次の例は、サポートされている要求のタイプの完全な一覧と、特定の要求 (すなわち、承認要求) の例を示しています。
+支払関連フローを処理するには、支払コネクタが処理できる、サポートされている要求タイプを定義する必要があります。 また、**実行** メソッドは、コネクタが指定されたメソッドをサポートする各要求をルーティングするために実装する必要があります。 次の例は、サポートされている要求のタイプの完全な一覧と、特定の要求 (すなわち、承認要求) の例を示しています。
 
 ``` csharp
 namespace Contoso.Commerce.HardwareStation.PaymentSample 
@@ -267,7 +266,7 @@ public UpdateLineItemsPaymentTerminalDeviceRequest(string token, string totalAmo
 ##### <a name="authorizepaymentterminaldevicerequest"></a>AuthorizePaymentTerminalDeviceRequest
 ###### <a name="signature"></a>署名
 ``` csharp
-public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, ExtensionTransaction extensionTransactionProperties)
+public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, Retail.PaymentSDK.Portable.PaymentTransactionReferenceData transactionReferencedata, bool isTippingEnabled, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### <a name="variables"></a>変数
@@ -281,26 +280,30 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 | tenderInfo | 外部ソースから取得された POS から送信されるカード情報 (外部ソースがある場合)。 |
 | voiceAuthorization | 音声認証が必要な場合は、POS から送信される音声承認コード。 |
 | isManualEntry | カード番号を手動で入力されたかどうかを定義する値。 |
-| extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
+| transactionReferenceData | プロセッサに送信される販売者のトランザクション参照。 |
+| isTippingEnabled | チップが支払コネクタでサポートされているかどうかを示します。 このフィールドは省略可能です。 既定値は **false** です。 |
+| extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 このフィールドは省略可能です。 既定値は **null** です。 |
+
 
 ###### <a name="response"></a>応答
 **AuthorizePaymentCardPaymentResponse** 応答オブジェクトは、**AuthorizePaymentTerminalDeviceRequest** 要求が処理されたときに返される必要があります。 応答には、次の必須プロパティを持つ **PaymentInfo** オブジェクトのインスタンスが含まれている必要があります。
 
 | プロパティ | 説明 |
 |---|---|
-| ApprovedAmount | トランザクションに対して承認された金額。 |
+| ApprovedAmount | トランザクションに対して承認された金額。 チップが有効になっている場合は、チップ金額を含めます。 |
 | CardNumberMasked | マスクされたクレジット カード番号。 この値には、少なくとも POS 内の在庫置場範囲の参照をサポートするため、クレジット カードの最初の桁が含まれている必要があります。 (ほとんどのデバイスは、最初の 6 桁と最後の 4 桁を返します。) |
 | CardType | **Microsoft.Dynamics.Commerce.HardwareStation.CardPayment.CardType** エンティティを使用して支払い (**クレジット** または **デビット** など) に使われたカードのタイプ。 |
 | CashbackAmount | 借方トランザクションの場合、キャッシュ バック金額は支払のターミナルで定義されました。 |
 | エラー | 承認呼び出し中に発生したエラーのリスト。 |
 | IsApproved | 支払が承認されたかどうかを示すフラグ。 |
 | PaymentSdkData | 承認/返金と、キャプチャ/呼び出しの無効化またはクロスチャネルの支払操作の間の状態をサポートするために使用される応答データ。 |
+| TipAmount | デバイスで顧客によって選択されたチップ金額。 |
 
 **PaymentSdkData** プロパティには、次のデータを含める必要があります。
 
 | 名前空間 | 氏名 | 説明 | サンプル値 |
 |---|---|---|---|
-| コネクタ | ConnectorName | このトピックの後半にある「支払プロセッサの記述」セクションで説明している、トランザクションに使用される **IPaymentProcessor**インターフェイスの名前です。 |
+| コネクタ | ConnectorName | このトピックの後半にある「支払プロセッサの記述」セクションで説明している、トランザクションに使用される **IPaymentProcessor** インターフェイスの名前です。 |
 | AuthorizationResponse | プロパティ | 承認応答のリスト。 | 次の表を参照してください。 |
 
 **PaymentSdkData** プロパティの **プロパティ** フィールドには、次のフィールドを含める必要があります。
@@ -350,7 +353,7 @@ string paymentSdkData = PaymentProperty.ConvertPropertyArrayToXML(paymentSdkProp
 ```
 
 ###### <a name="other-considerations"></a>その他の考慮事項
-支払端末が 1 つの呼び出しでの要求を承認し、キャプチャし (つまり*迅速なキャプチャ*が発生する場合)、出納係が取引を無効にすることを希望する場合、支払い端末では即時回収の取消がサポートされている必要があります。 迅速なキャプチャが無効なとき、無効化要求が失敗した場合、レジ担当者は、ローカルで支払を無効にするかどうかを求められます。 レジ担当者が**はい**と選択した場合、入札は POS でのみ無効になります。 支払を無効にするために支払ターミナルに対して行われる呼び出しはありません。 基本的には、この動作により、支払ターミナルの支払を無効にできなくなった場合レジ担当者は POS をブロック解除することができます。 ただし、銀行が取り消すまでの 3 ~ 5日間はロックが続くため、この動作には問題が生じますが、迅速なキャプチャのための支払いが行われます。 したがって、重複した支払いが発生する可能性があります。
+支払端末が 1 つの呼び出しでの要求を承認し、キャプチャし (つまり *迅速なキャプチャ* が発生する場合)、出納係が取引を無効にすることを希望する場合、支払い端末では即時回収の取消がサポートされている必要があります。 迅速なキャプチャが無効なとき、無効化要求が失敗した場合、レジ担当者は、ローカルで支払を無効にするかどうかを求められます。 レジ担当者が **はい** と選択した場合、入札は POS でのみ無効になります。 支払を無効にするために支払ターミナルに対して行われる呼び出しはありません。 基本的には、この動作により、支払ターミナルの支払を無効にできなくなった場合レジ担当者は POS をブロック解除することができます。 ただし、銀行が取り消すまでの 3 ~ 5日間はロックが続くため、この動作には問題が生じますが、迅速なキャプチャのための支払いが行われます。 したがって、重複した支払いが発生する可能性があります。
 
 ##### <a name="canceloperationpaymentterminaldevicerequest"></a>CancelOperationPaymentTerminalDeviceRequest
 ###### <a name="signature"></a>署名
@@ -616,7 +619,7 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 ```
 
 ### <a name="configure-the-payment-connector-on-the-pos-hardware-profile-page-in-the-client"></a>クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする
-POS にロードする正しい支払コネクタを決定するには、次の図に示すように、クライアントの **POS ハードウェア プロファイル** ページの **PIN パッド** クイック タブで、**デバイス名**フィールドの **PaymentTerminalDevice** プロパティの値を設定する必要があります。
+POS にロードする正しい支払コネクタを決定するには、次の図に示すように、クライアントの **POS ハードウェア プロファイル** ページの **PIN パッド** クイック タブで、**デバイス名** フィールドの **PaymentTerminalDevice** プロパティの値を設定する必要があります。
 
 ![クライアントの POS ハードウェア プロファイル ページで支払コネクタをコンフィギュレーションする](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 

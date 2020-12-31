@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45fb014db80928d40a5fb5c1a2d7c3dae1a2f468
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 2a0b296e7e4926604edc488e4610bdcbdcd876cd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885347"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679220"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 
@@ -33,7 +32,7 @@ ms.locfileid: "3885347"
 
 ### <a name="processscheduleibuildoccurrencecard-interface"></a>ProcessScheduleIBuildOccurrenceCard のインターフェース
 
-**ProcessScheduleIBuildOccurrenceCard** のインターフェースを使用すると、週ごとのカレンダー表示のオカレンス カードの概観をカスタマイズできます。 インターフェイスには、**スケジュール**、**待機**、**実行**、**成功**、**失敗**、および**無効**の各ステータスに対応する静的メソッドがあります。 ステータス値ごとにカスタマイズされたオカレンス カードを作成できます。 これらの各メソッドは、**ProcessScheduleOccurrenceCard** のインスタンスを返します。
+**ProcessScheduleIBuildOccurrenceCard** のインターフェースを使用すると、週ごとのカレンダー表示のオカレンス カードの概観をカスタマイズできます。 インターフェイスには、**スケジュール**、**待機**、**実行**、**成功**、**失敗**、および **無効** の各ステータスに対応する静的メソッドがあります。 ステータス値ごとにカスタマイズされたオカレンス カードを作成できます。 これらの各メソッドは、**ProcessScheduleOccurrenceCard** のインスタンスを返します。
 
 プロセス自動化フレームワークでは、**ProcessScheduleOccurrenceCardBuilder** クラスの既定の実装が提供されます。 このクラスから継承して、必要に応じて機能を上書きします。 次に、特定のタイプの **SysPlugin** を介して派生クラスを登録します。 登録プロセスは、フレームワーク ドキュメントに含まれる多くのプラグインのプロセスに似ています。
 
@@ -41,7 +40,7 @@ ms.locfileid: "3885347"
 
 ### <a name="processscheduleoccurrencecard-class"></a>ProcessScheduleOccurrenceCard クラス
 
-**ProcessScheduleOccurrenceCard** クラスを使用すると、カレンダー表示に表示されるオカレンス カードの外観をカスタマイズできます。 最初の 2 行はプロセス自動化フレームワークによって制御されており、変更することはできません。 次の図では、サブヘッダーは**完了した**フェーズで、ステータス メッセージは**完了**という言葉の背景が青色であることを示しています。
+**ProcessScheduleOccurrenceCard** クラスを使用すると、カレンダー表示に表示されるオカレンス カードの外観をカスタマイズできます。 最初の 2 行はプロセス自動化フレームワークによって制御されており、変更することはできません。 次の図では、サブヘッダーは **完了した** フェーズで、ステータス メッセージは **完了** という言葉の背景が青色であることを示しています。
 
 ![ステータスと時間を表示する既定のオカレンス カード](media/uptake-schedule.png)
 
@@ -100,7 +99,7 @@ ms.locfileid: "3885347"
 | `public ProcessScheduleOccurrence getOccurrenceBeingRendered()` | このメソッドは、オカレンス カードに表示されているオカレンスを返します。 |
 | `public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | このメソッドは、発生したオカレンスの実行情報を返します。 通常、この情報には、バッチ ジョブ、開始時刻、および終了時刻の結果が含まれます。 |
 | `public void makeCardSubHeaderInvisible()` | このメソッドによって、カードのサブヘッダーが非表示になります。 このトピックの前の図と下の内容を参照して、どの行がサブヘッダーであるかを決定してください。 |
-| `public void makeCardButtonsInvisible()` | このメソッドは、オカレンス カードの**無効化**および**編集**ボタンを非表示にするかどうかを指定します。 |
+| `public void makeCardButtonsInvisible()` | このメソッドは、オカレンス カードの **無効化** および **編集** ボタンを非表示にするかどうかを指定します。 |
 | `public void setColumnsOnOccurrenceCardDetailGroup(int _numberOfColumns)` | この方法を使用すると、オカレンス カードの列の数をカスタマイズできます。 既定では、2 つの列があります。 |
 | `public FormButtonControl addButtonControl(FormControlName _buttonControlName)` | このメソッドを使用すると、新しいボタンをオカレンス カードに追加できます。 |
 | `public FormStaticTextControl addStaticTextControl(FormControlName _staticTextControlName)` | このメソッドを使用すると、静的テキスト コントロールをオカレンス カードに追加できます。 |
@@ -140,7 +139,7 @@ internal class ProcessScheduleSeriesFormAdminController implements ProcessSchedu
 
 ### <a name="processexecutioniresultscontroller-interface"></a>ProcessExecutionIResultsController インターフェイス
 
-**ProcessExecutionIResultsController** インターフェイスを使用すると、プロセスに従って結果ダイアログ ボックスをカスタマイズできます。 これにより、結果グリッドで**ヘッダー** フィールドの列ヘッダー ラベルを設定して、ヘッダー列の値をハイパーリンクにすることができます。 このインターフェイスは、プラグインであるクラスによって実装する必要があります。 サンプル プラグインを次に示します。
+**ProcessExecutionIResultsController** インターフェイスを使用すると、プロセスに従って結果ダイアログ ボックスをカスタマイズできます。 これにより、結果グリッドで **ヘッダー** フィールドの列ヘッダー ラベルを設定して、ヘッダー列の値をハイパーリンクにすることができます。 このインターフェイスは、プラグインであるクラスによって実装する必要があります。 サンプル プラグインを次に示します。
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -196,7 +195,7 @@ public final class ProcessExecutionSampleUptakeExecutionResultsController implem
 
 ### <a name="processexecutionmessagelogcontract-class"></a>ProcessExecutionMessageLogContract クラス
 
-**ProcessExecutionMessageLogContract** 契約を使用すると、メッセージ ログを移行元ドメインの特定の項目に制限できます。 **ProcessExecutionSourceLink** テーブルには、**RefRecId**および**RefTableId** 値が契約によって送られる値と一致しているレコードが必要です。
+**ProcessExecutionMessageLogContract** 契約を使用すると、メッセージ ログを移行元ドメインの特定の項目に制限できます。 **ProcessExecutionSourceLink** テーブルには、**RefRecId** および **RefTableId** 値が契約によって送られる値と一致しているレコードが必要です。
 
 | メソッド | 説明 |
 |---|---|

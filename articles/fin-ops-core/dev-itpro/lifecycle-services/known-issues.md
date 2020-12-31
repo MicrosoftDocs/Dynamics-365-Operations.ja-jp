@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 21861
 ms.assetid: 45699dd5-5e95-484b-8eb9-7bf32a4cf487
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 89f3ef1ba0dd3899afeb92edca6e32757e329c16
-ms.sourcegitcommit: e782d627d07c3d1dce4d87ce0e92bd03b09204cf
+ms.openlocfilehash: 0aa77901b6228b9e594485d7d0523a89e0df77e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680006"
 ---
 # <a name="known-issues"></a>既知の問題
 
@@ -30,7 +29,7 @@ ms.locfileid: "2933895"
 
 このトピックでは、Finance and Operations を使用する際に発生する可能性のある既知の問題を表示する方法について説明します。
 
-Finance and Operations の既知の問題は、「[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) (LCS)」内の問題検索ツールを使用して見つけることができます。 CustomerSource または PartnerSource アカウントを使用することにより、LCS にサインインすることができます。 その後、**問題検索** フィールドに、次のテーブルに示す検索文字列を入力します。 
+[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) (LCS) 内の問題検索ツールを使用して、Finance and Operations の既知の問題を見つけることができます。 CustomerSource または PartnerSource アカウントを使用することにより、LCS にサインインすることができます。 その後、**問題検索** フィールドに、次のテーブルに示す検索文字列を入力します。 
 
 > [!NOTE]
 > テーブルに表示されているとおりに正確にテキストを入力してください。 それ以外の場合、異なる検索結果を得る可能性があります。
@@ -59,7 +58,7 @@ Finance and Operations の既知の問題は、「[Microsoft Dynamics Lifecycle 
 |                 Microsoft Dynamics 365 for Operations                 | プラットフォーム update 7  | 7.0.4542.16189 |   2017 年 5 月    |                    Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の既知の問題                     |
 |                      Dynamics 365 for Operations                      | プラットフォーム update 6  | 7.0.4509.16180 |  2017 年 4 月   |                   Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の既知の問題                    |
 |                      Dynamics 365 for Operations                      | プラットフォーム update 5  | 7.0.4475.16165 |  2017 年 3 月   |                   Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の既知の問題                    |
-|                      Dynamics 365 for Operations                      | プラットフォーム update 4  | 7.0.4425.16161 | 2017 年 2月 |                  Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の既知の問題                  |
+|                      Dynamics 365 for Operations                      | プラットフォーム update 4  | 7.0.4425.16161 | 2017 年 2 月 |                  Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の既知の問題                  |
 |                      Dynamics 365 for Operations                      | プラットフォーム update 3  | 7.0.4307.16141 | 2016 年 11 月 |                 Dynamics 365 for Operations バージョン 1611 プラットフォーム更新プログラム 3 の既知の問題                 |
 |                         Microsoft Dynamics AX                         | プラットフォーム update 2  | 7.0.4230.16130 |  2016 年 8 月  |                         Dynamics AX プラットフォーム バージョン 7.2 (2016 年 8 月) の既知の問題                          |
 |                         Microsoft Dynamics AX                         | プラットフォーム update 1  | 7.0.4127.16103 |   2016 年 5 月    |                                        2016 年 5 月のリリースの既知の問題                                         |

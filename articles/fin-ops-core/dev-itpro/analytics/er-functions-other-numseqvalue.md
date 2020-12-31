@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70e07fe429472b703f739baa09f700fb8970d34e
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: b513d04bfeb3a37aa0b1703d0fdde040885a5159
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744026"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680593"
 ---
 # <a name="numseqvalue-er-function"></a>NUMSEQVALUE ER 機能
 
 [!include [banner](../includes/banner.md)]
 
-`NUMSEQVALUE` 関数は、指定された番号順序、範囲、およびスコープ ID に基づいて、番号順序の新しい生成値を表す*文字列*値を返します。 スコープ ID は、電子申告 (ER) 形式が実行されるコンテキストによって提供される会社コードと同じです。
+`NUMSEQVALUE` 関数は、指定された番号順序、範囲、およびスコープ ID に基づいて、番号順序の新しい生成値を表す *文字列* 値を返します。 スコープ ID は、電子申告 (ER) 形式が実行されるコンテキストによって提供される会社コードと同じです。
 
 ## <a name="syntax-1"></a>構文 1
 
@@ -61,11 +60,11 @@ NUMSEQVALUE (number sequence code, scope type, scope ID)
 
 `scope type`: *列挙値*
 
-新しい値が必要な番号順序のスコープを定義する **ERExpressionNumberSequenceScopeType** 列挙型の列挙値。 使用可能な範囲タイプは、**共有**、**法人**、および**会社**です。
+新しい値が必要な番号順序のスコープを定義する **ERExpressionNumberSequenceScopeType** 列挙型の列挙値。 使用可能な範囲タイプは、**共有**、**法人**、および **会社** です。
 
 `scope ID`: *文字列*
 
-指定したスコープ タイプに基づいて、スコープを識別する*文字列*値。
+指定したスコープ タイプに基づいて、スコープを識別する *文字列* 値。
 
 ## <a name="return-values"></a>戻り値
 
@@ -75,22 +74,22 @@ NUMSEQVALUE (number sequence code, scope type, scope ID)
 
 ## <a name="usage-notes"></a>使用上の注意
 
-**共有**スコープ タイプでは、スコープ ID として空の文字列を指定します。
+**共有** スコープ タイプでは、スコープ ID として空の文字列を指定します。
 
-**会社**および**法人**スコープ タイプでは、会社コードとスコープ ID を指定します。 これらのスコープ タイプのスコープ ID として空の文字列を指定した場合、現在の会社コードが使用されます。
+**会社** および **法人** スコープ タイプでは、会社コードとスコープ ID を指定します。 これらのスコープ タイプのスコープ ID として空の文字列を指定した場合、現在の会社コードが使用されます。
 
-構文 1 を使用すると、番号順序が**会社**スコープ タイプに対して要求され、会社コードが ER 形式を実行するコンテキストによって提供されます。
+構文 1 を使用すると、番号順序が **会社** スコープ タイプに対して要求され、会社コードが ER 形式を実行するコンテキストによって提供されます。
 
 ## <a name="example-1"></a>例 1
 
-ERフォーマットでは、*ユーザー入力パラメータ*タイプの **AskNumSeq** データ ソースを定義します。 このデータ ソースは、**説明**の拡張データ型 (EDT) を参照しています。 次に、*計算フィールド*タイプの **NumSeq** データ ソースを定義します。 このデータ ソースは、式 `NUMSEQVALUE (AskNumSeq)` が含まれています。 **NumSeq** データ ソースが呼び出されると、ダイアログ ボックスにコードを入力することにより、実行時に指定された番号順序の新しい生成値が返されます。 **会社**スコープ タイプに対して番号順序が要求されます。 会社コードは、ER 形式を実行するコンテキストによって提供されます。
+ERフォーマットでは、*ユーザー入力パラメータ* タイプの **AskNumSeq** データ ソースを定義します。 このデータ ソースは、**説明** の拡張データ型 (EDT) を参照しています。 次に、*計算フィールド* タイプの **NumSeq** データ ソースを定義します。 このデータ ソースは、式 `NUMSEQVALUE (AskNumSeq)` が含まれています。 **NumSeq** データ ソースが呼び出されると、ダイアログ ボックスにコードを入力することにより、実行時に指定された番号順序の新しい生成値が返されます。 **会社** スコープ タイプに対して番号順序が要求されます。 会社コードは、ER 形式を実行するコンテキストによって提供されます。
 
 ## <a name="example-2"></a>例 2
 
 モデル マッピングでは、次のデータ ソースが定義されます。
 
-- *テーブル*タイプの **LedgerParms** データ ソース。 このデータ ソースは、LedgerParameters テーブルを指します。
-- *計算フィールド*タイプの **NumSeq** データ ソース。 このデータ ソースは、式 `NUMSEQVALUE ( LedgerParameters.'numRefJournalNum()'.NumberSequenceId)` が含まれています。
+- *テーブル* タイプの **LedgerParms** データ ソース。 このデータ ソースは、LedgerParameters テーブルを指します。
+- *計算フィールド* タイプの **NumSeq** データ ソース。 このデータ ソースは、式 `NUMSEQVALUE ( LedgerParameters.'numRefJournalNum()'.NumberSequenceId)` が含まれています。
 
 **NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用に一般会計パラメーターでコンフィギュレーションされた、番号順序の新しく生成された値を返します。 この番号順序は、仕訳帳を一意に識別し、トランザクションをリンクするバッチ番号として機能します。
 
@@ -99,7 +98,7 @@ ERフォーマットでは、*ユーザー入力パラメータ*タイプの **A
 モデル マッピングでは、次のデータ ソースが定義されます。
 
 - Microsoft Dynamics 365 Finance *列挙型* タイプの **enumScope** データ ソース。 このデータ ソースは、**ERExpressionNumberSequenceScopeType** 列挙型を参照しています。
-- *計算フィールド*タイプの **NumSeq** データ ソース。 このデータ ソースは、式 `NUMSEQVALUE ("Gene_1", enumScope.Company, "")` が含まれています。
+- *計算フィールド* タイプの **NumSeq** データ ソース。 このデータ ソースは、式 `NUMSEQVALUE ("Gene_1", enumScope.Company, "")` が含まれています。
 
 **NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。
 

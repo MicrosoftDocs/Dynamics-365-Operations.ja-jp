@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 911a8983baa8df0fd3e21c86abb527e93b9c4978
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: d245bf7caaeee6d11672d666431f932d373d53f0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124813"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681056"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -46,7 +45,7 @@ Azure DevOps の詳細については、[www.visualstudio.com/team-services](htt
 Azure DevOps プロジェクトに接続するために、LCS は個人用アクセス トークンを使用して認証されます。 Azure DevOps で個人用アクセス トークンを作成するには、これらの手順に従います。
 
 1. <https://www.visualstudio.com> に移動し、サインイン、および Azure DevOps プロジェクトを検索します。
-2. 右上隅で、自分の名前にポインターを置き、表示されるメニューで**セキュリティ**を選択します。
+2. 右上隅で、自分の名前にポインターを置き、表示されるメニューで **セキュリティ** を選択します。
 3. **追加** を選択し、新しい個人用アクセス トークンを作成します。
 4. トークン名を入力し、トークンの持続時間を指定します。
 5. **トークンの作成** を選択します。
@@ -57,9 +56,9 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
 
 ### <a name="configure-your-lcs-project-to-connect-to-azure-devops"></a>LCS プロジェクトをコンフィギュレーションして Azure DevOps に接続する
 
-1. LCS プロジェクトで、**プロジェクト設定**タイルを選択します。
-2. **Azure DevOps** を選択し、**Azure DevOps の設定** を選択します。 この構成は多くの LCS ツールで必要です。 既に LCS を構成して Azure DevOps プロジェクトに接続している場合、この手順を省略するか、**変更**を選択して既存のコンフィギュレーションを変更できます。
-3. Azure DevOps アカウントのルート URL および以前に作成した個人用アクセス トークンを入力し、**続行**を選択します。
+1. LCS プロジェクトで、**プロジェクト設定** タイルを選択します。
+2. **Azure DevOps** を選択し、**Azure DevOps の設定** を選択します。 この構成は多くの LCS ツールで必要です。 既に LCS を構成して Azure DevOps プロジェクトに接続している場合、この手順を省略するか、**変更** を選択して既存のコンフィギュレーションを変更できます。
+3. Azure DevOps アカウントのルート URL および以前に作成した個人用アクセス トークンを入力し、**続行** を選択します。
 4. Azure DevOps プロジェクトを選択します。
 5. LCS/BPM 項目と関連付けられている Azure DevOps 作業項目の種類の間のマッピングを指定します。
 
@@ -81,7 +80,7 @@ LCS プロジェクトおよび Azure DevOps プロジェクト間の接続を�
 - 国または地域 (タグとして)
 - 業界 (タグとして)
 
-BPM ライブラリを Azure DevOps プロジェクトと同期させるには、**業務プロセス ライブラリ**ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期**を選択します。
+BPM ライブラリを Azure DevOps プロジェクトと同期させるには、**業務プロセス ライブラリ** ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期** を選択します。
 
 ![ライブラリのタイルから Azure DevOps 同期を開始](./media/newbpm_BlogPost25.png)
 
@@ -116,8 +115,8 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
 Azure DevOps に接続されている業務プロセスを確認するとき、Azure DevOps プロジェクトに要求を直接追加することができます。
 
 1. ビジネス プロセスを選択します。
-2. 右ウィンドウの**要件**タブで、**要件を追加**を選択します。
-3. 名前、説明、およびタイプを入力し、次に**作成**を選択します。
+2. 右ウィンドウの **要件** タブで、**要件を追加** を選択します。
+3. 名前、説明、およびタイプを入力し、次に **作成** を選択します。
 
     Azure DevOps では、現在の業務プロセスに関連付けられている要求作業項目が作成されます。
 

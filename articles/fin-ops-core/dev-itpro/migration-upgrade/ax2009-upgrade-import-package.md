@@ -1,6 +1,6 @@
 ---
 title: AX 2009 の移行 － パッケージのインポート
-description: このトピックは、Microsoft Dynamics AX 2009 から Finance and Operations に移行されたデータ パッケージをインポートする方法について説明します。
+description: このトピックは、Microsoft Dynamics AX 2009 から Finance and Operations に移行済みデータ パッケージをインポートする方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 09/13/2018
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 3b10d41b71f09072430614a1d8059b3a985d1bb2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4ee57895201bd30a4d4f178d33c974a03c5a164a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191889"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682577"
 ---
 # <a name="ax-2009-migration--import-packages"></a>AX 2009 の移行 - パッケージのインポート
 
@@ -43,7 +42,7 @@ ms.locfileid: "2191889"
 Finance and Operations 環境を使用して、移行のデータをインポートできます。 以下の手順を実行します。
 
 1. 管理者ロールを使用して、環境にログインします。
-2. ダッシュボードで、**データ管理**ワークスペースを選択します。
+2. ダッシュボードで、**データ管理** ワークスペースを選択します。
 3. **インポート** を選択します。
 4. パッケージの名前を入力し、**ソースのデータ形式** フィールドで **パッケージ** を選択します。
 5. **アップロード** を選択し、インポートするデータの場所から適切なパッケージ ファイルを選択します。 パッケージからすべてのファイルがインポートされます。

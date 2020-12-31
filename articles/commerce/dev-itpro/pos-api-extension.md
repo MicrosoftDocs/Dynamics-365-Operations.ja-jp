@@ -10,38 +10,37 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ccb4dcc55ec0a0637de62b6d6a6a4d7b5d702b40
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a4cc8cffddd0f86fa5eaad7b0b78edaf7cd91c6c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057683"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681524"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
 [!include [banner](../../includes/banner.md)]
 
-Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。 たとえば、製品の詳細を取得し、価格を変更し、またはカートに品目を追加する新しい機能を追加する場合は、その作業を行うための POS API を呼び出します。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。Commerce Runtime (RT)、POS、およびハードウェア ステーションの拡張パターンはすべて、要求/応答パターンを使用します。 
+Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。 たとえば、製品の詳細を取得し、価格を変更し、またはカートに品目を追加する新しい機能を追加する場合は、その作業を行うための POS API を呼び出します。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。 Commerce Runtime (RT)、POS、およびハードウェア ステーションの拡張パターンはすべて、要求/応答パターンを使用します。 
 
-このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。  
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。  
 
 ## <a name="scenarios"></a>シナリオ
 POS API は、3 つのさまざまなシナリオに分類されます。
 
-- **消費** - 拡張機能のパブリック API を使用します。 
-- **拡張** - 一部の追加ロジックを実行するパブリック API を拡張します。 
-- **作成** - POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。 
+- **消費** - 拡張機能のパブリック API を使用します。 
+- **拡張** - 一部の追加ロジックを実行するパブリック API を拡張します。 
+- **作成** - POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。 
 
 ## <a name="consume-pos-apis-in-extensions"></a>拡張機能で POS API を使用する
 API は要求/応答パターンを使用して公開されるため、ビジネス ロジックを実装するための外部 Web サービス呼び出しを行うことができます。 たとえばが、品目の価格を変更する場合、**PriceOverrideOperationRequest** を呼び出します。 API は、CRT、周辺機器、保存操作などのモジュールによりサブカテゴリ化されます。 
 
-多くの新しい API が追加されました。 すべての API のリストは **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts** ファイルで探すことができます。 
+多くの新しい API が追加されました。 すべての API のリストは **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts** ファイルで探すことができます。 
 
 ### <a name="how-to-consume-an-api-in-an-extension"></a>拡張機能で API を使用する方法
 拡張機能で  API を使用するには、次の手順を実行します。
@@ -81,7 +80,7 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
     private static DIALOG_YES_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_Yes";
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
     ```
-9. トリガー**実行**メソッドを実装し、既存の POS API を呼び出します。 **execute** メソッドは、API を呼び出して現在の買い物カゴと顧客を取得し、買い物カゴに属性を保存します。
+9. トリガー **実行** メソッドを実装し、既存の POS API を呼び出します。 **execute** メソッドは、API を呼び出して現在の買い物カゴと顧客を取得し、買い物カゴに属性を保存します。
     ```typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
@@ -370,4 +369,4 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 1.  F5 キーを押し、POS を展開してカスタマイズをテストします。
 2.  POS にログインし、任意の品目をトランザクションに追加します。
 3.  トランザクションに顧客を追加します。
-4.  **支払**ボタンをクリックし、トランザクションをコミットします。 属性を保存するかどうかをたずねるダイアログ ボックスが表示されます。
+4.  **支払** ボタンをクリックし、トランザクションをコミットします。 属性を保存するかどうかをたずねるダイアログ ボックスが表示されます。

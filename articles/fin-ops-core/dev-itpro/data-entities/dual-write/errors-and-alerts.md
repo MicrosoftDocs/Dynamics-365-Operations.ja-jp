@@ -11,35 +11,36 @@ ms.technology: ''
 ms.search.form: ''
 audience: Developer
 ms.reviewer: v-douklo
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1c77f6b26f98ddfb35b97fbb17e9966a28d958a
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 728aa5905c15422bc60a7ab8fa90f25e4a984576
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684041"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Microsoft は、エラーに強い二重書き込みを実現するために、多くの時間と労力を費やしてきました。 ただし、二重書き込み用のエンティティ マップを有効にしている間または後に、問題が発生した場合は、特定のエンティティ マップを選択して、それらのすべてのアクティビティとエラーの統合ビューを取得できます。 この統合ビューには、エラー ログが含まれています。 目標は、エンティティ マップのアクティビティの単一ビューを提供することにより、トラブルシューティング中に支援することです。
+
+Microsoft は、エラーに強い二重書き込みを実現するために、多くの時間と労力を費やしてきました。 ただし、二重書き込み用のテーブル マップを有効にしている間または後に、問題が発生した場合は、特定のテーブル マップを選択して、それらのすべてのアクティビティとエラーの統合ビューを取得できます。 この統合ビューには、エラー ログが含まれています。 目標は、テーブル マップのアクティビティの単一ビューを提供することにより、トラブルシューティングを支援することです。
 
 ## <a name="consolidated-error-management"></a>統合されたエラー管理
 
-アクティビティ ログは、特定のエンティティ マップが **実行していません** 状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、フィールド マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
+アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、フィールド マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
 
 ![アクティビティ ログの表示](media/activity-log.png)
 
-Finance and Operations アプリ と Common Data Service の間で既存のデータをコピーしているときに問題が発生した場合、**初回同期の詳細** タブにエラー数が表示されます。 また、原因となっているエラーを修正した後、実行を再実行することもできます。
+Finance and Operations アプリ と Dataverse の間で既存のデータをコピーしているときに問題が発生した場合、**初回同期の詳細** タブにエラー数が表示されます。 また、原因となっているエラーを修正した後、実行を再実行することもできます。
 
 ![エラーの修正と再実行](media/fix-error-rerun.png)
 

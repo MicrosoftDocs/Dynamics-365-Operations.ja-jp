@@ -10,24 +10,23 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdb4707635cdd515e92a099f67ed2c2d0cbc9446
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 34c5b90c97959d090f30d757ffa98a033be3b305
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885341"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679226"
 ---
 # <a name="series-registration"></a>シリーズ登録
 
 [!include [banner](../includes/banner.md)]
 
-すべてのプロセスには、*シリーズ*が必要です。 プロセス自動化のシリーズの概念は、Microsoft Outlook でのミーティング シリーズの概念に似ています。 ただし、プロセス自動化のシリーズは、一連のスケジュールされたプロセスの実行です。 ほとんどのスケジュールされたプロセス タイプでは、ユーザーがユーザー インターフェイス (UI) にシリーズを作成し、シリーズ登録を実装する必要がありません。 ただし、実装中のプロセスが一連のスケジュールである場合は、このタスクを省略できます。
+すべてのプロセスには、*シリーズ* が必要です。 プロセス自動化のシリーズの概念は、Microsoft Outlook でのミーティング シリーズの概念に似ています。 ただし、プロセス自動化のシリーズは、一連のスケジュールされたプロセスの実行です。 ほとんどのスケジュールされたプロセス タイプでは、ユーザーがユーザー インターフェイス (UI) にシリーズを作成し、シリーズ登録を実装する必要がありません。 ただし、実装中のプロセスが一連のスケジュールである場合は、このタスクを省略できます。
 
 バックグラウンド プロセスは、ユーザー操作を許可しない内部プロセスとなる傾向があるため、通常シリーズ登録を使用してコードを介してシリーズを作成します。 コードを介してシリーズを作成するには、**ProcessScheduleISeriesRegistration** インターフェイスを実装します。 このインターフェイスには、**ProcessScheduleSeriesRegistrationItem** のインスタンスを返す単一のメソッドがあります。
 
@@ -125,7 +124,7 @@ internal final class VendInvoicePostProcessScheduleSeriesRegistration implements
 
 ## <a name="validating-background-process-settings"></a>バックグラウンド プロセスの設定の検証
 
-バージョン 10.0.13では、プロセス自動化フレームワークによって、システム管理者は**バックグラウンド プロセスの編集**セクションを介してバックグラウンド プロセス設定を変更でき ます。 一部のバックグラウンド プロセスでは、実行頻度が制限されます。 Microsoft は、バックグラウンド プロセスが実装できるインターフェイスを導入しました。 このインターフェイスが呼び出されると、バックグラウンド プロセスを使用して、単位とポーリング間隔が許容範囲内にあることを確認できます。
+バージョン 10.0.13では、プロセス自動化フレームワークによって、システム管理者は **バックグラウンド プロセスの編集** セクションを介してバックグラウンド プロセス設定を変更でき ます。 一部のバックグラウンド プロセスでは、実行頻度が制限されます。 Microsoft は、バックグラウンド プロセスが実装できるインターフェイスを導入しました。 このインターフェイスが呼び出されると、バックグラウンド プロセスを使用して、単位とポーリング間隔が許容範囲内にあることを確認できます。
 
 次の例では、このプロセスが毎分または毎時間ごとに実行されないようにします。 このプロセスは 1 日に 1 回実行できます。 ただし、プロセスは、より頻繁に実行する必要があるような方法でルールを実装することができます。
 

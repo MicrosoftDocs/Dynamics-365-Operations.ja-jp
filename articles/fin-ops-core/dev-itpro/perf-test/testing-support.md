@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 24161
 ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497a98e1082b75eaa9a3448dea8d963414144722
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: ed2a42a44cea16a448a8f536c0fe72018142b5e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082009"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680432"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 
@@ -73,4 +72,4 @@ class FMUnitTestSample extends SysTestCase
 
 ## <a name="advanced-options"></a>詳細オプション
 
-分類および実行のためのテストをフィルター処理する詳細オプションは、[systest-filtering.md] を参照してください。
+分類および実行のためのテストをフィルター処理する詳細オプションについては、[systest-filtering.md] を参照してください

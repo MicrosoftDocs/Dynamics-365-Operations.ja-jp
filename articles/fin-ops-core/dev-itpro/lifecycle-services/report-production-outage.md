@@ -10,23 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 9aeb7041d2c77e8254ec11af4f53c93d1533c658
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: fd33aabc91ffb73636f098035840a0d105ec114e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117400"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681066"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 
 [!include[banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) には、**レポート生産停止**と呼ばれる機能があります。 この機能は、1 つ以上の Dynamics 365 Finance and Operations アプリを購入し、LCS に配置された実稼働環境の実装プロジェクトを持つすべての顧客が利用できます。 この機能は、実稼動環境のサービスが低下または使用不可能になった場合、Microsoft サポートに問題をエスカレートを迅速かつ有効なチャンネルを提供します。
+Lifecycle Services (LCS) には、**レポート生産停止** と呼ばれる機能があります。 この機能は、1 つ以上の Dynamics 365 Finance and Operations アプリを購入し、LCS に配置された実稼働環境の実装プロジェクトを持つすべての顧客が利用できます。 この機能は、実稼動環境のサービスが低下または使用不可能になった場合、Microsoft サポートに問題をエスカレートを迅速かつ有効なチャンネルを提供します。
 
 相互に包括的な条件に従って、稼働停止は、複数のユーザーに影響を与え、ビジネスの日常業務遂行を妨げる実稼働環境における 1 つ以上のシステム全体の問題として定義できます。
 
@@ -53,16 +52,16 @@ Lifecycle Services (LCS) には、**レポート生産停止**と呼ばれる機
 生産停止を報告するには、次の手順に従います。
 
 1. LCS プロジェクトにログインします。  
-2. ハンバーガー メニューから**サポート**をクリックします。 
+2. ハンバーガー メニューから **サポート** をクリックします。 
 
   ![サポートをクリック](media/click-support.png)
   
-3. **Microsoft に送信**タブで、**稼働停止のレポート**をクリックします。
+3. **Microsoft に送信** タブで、**稼働停止のレポート** をクリックします。
 
   ![サポートをクリック](media/report-production-outage.png)
   
-4. プロダクションの停止を確認し、ドロップダウン リストから停止シナリオを選択してから、**続行**をクリックします。
-5. 停止に関するタイトルと詳細を追加して、**次**をクリックします。
+4. プロダクションの停止を確認し、ドロップダウン リストから停止シナリオを選択してから、**続行** をクリックします。
+5. 停止に関するタイトルと詳細を追加して、**次** をクリックします。
 6. 連絡先の情報を入力し、**次へ** をクリックします。
 7. **完了** をクリックします。 
 

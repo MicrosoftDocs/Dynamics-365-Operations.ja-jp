@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 395e9b0f587d2a7c4dd56df08748a0f9e2b5692e
-ms.sourcegitcommit: 3227127dd20c43cedaa8912e74aaf6120a1dcbb9
+ms.openlocfilehash: 80b2961465456285ff83bd1029d480527b4f6f06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628389"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680378"
 ---
 # <a name="development-in-cloud-hosted-development-environments-without-admin-access"></a>管理者アクセスのないクラウド ホスト開発環境での開発
 
@@ -39,7 +38,7 @@ LCS で Microsoft Azure サブスクリプションを使用する環境を配�
 
 **クラウド POS を開発に使用している場合は、クラウド POS プロジェクトを開く前に以下の設定を行います**
 
-1. Visual Studio を開き、**表示** > **アプリケーション エクスプローラー**へ移動します。 インターネット インフォメーション サービス (IIS) Express が配置されているすべてのコマース Web サイトで開始するまで待ちます。 タスク バーに IIS トレー アイコンが表示され、クラウド POS や Commerce Scale Unit など、すべての Web サイトがすべて表示されます。
+1. Visual Studio を開き、**表示** > **アプリケーション エクスプローラー** へ移動します。 インターネット インフォメーション サービス (IIS) Express が配置されているすべてのコマース Web サイトで開始するまで待ちます。 タスク バーに IIS トレー アイコンが表示され、クラウド POS や Commerce Scale Unit など、すべての Web サイトがすべて表示されます。
 4. CRT/RS 拡張をデバッグするには、CRT/RS プロジェクトを IIS Express プロセスに添付します。
 5. Retail SDK からクラウド POS プロジェクトを開くと、次のエラーで IIS Express が失敗することがあります。 
 
@@ -72,16 +71,16 @@ LCS で Microsoft Azure サブスクリプションを使用する環境を配�
     <UseIIS>False</UseIIS>
     <IISUrl>https://YourCPOSURL.com</IISUrl>
 ```
-10. Pos.Web プロジェクトを右クリックし、**プロパティ**を選択します。
-11. **プロパティ**ウィンドウで、**Web** タブを選択します。**URL の開始**を選び、URL の開始をクラウド POS URL として設定し、ドロップ ダウン メニューから**サーバー セクションで、IIS Express をサーバーとして選択**を実行し、**プロジェクト URL** をクラウド POS URL として設定します。 
+10. Pos.Web プロジェクトを右クリックし、**プロパティ** を選択します。
+11. **プロパティ** ウィンドウで、**Web** タブを選択します。**URL の開始** を選び、URL の開始をクラウド POS URL として設定し、ドロップ ダウン メニューから **サーバー セクションで、IIS Express をサーバーとして選択** を実行し、**プロジェクト URL** をクラウド POS URL として設定します。 
 
 開発に対して IIS を使用している場合は (管理者アクセス権を持つ VMs)、UseIIS ノード値を False に設定し、サーバー ドロップ ダウン メニューからローカル IIS を選択する必要があります。
 
 たとえば、`https://usnconeboxax1pos.cloud.onebox.dynamics.com`。
 
 12. 変更を保存します。
-13. Pos Web プロジェクトを右クリックし、**StartUp プロジェクトとして設定**を選択ます。
-14. F5 キーを押して Pos.Web プロジェクトを実行するか、Visual Studio メニューの**実行**ボタンをクリックします。
+13. Pos Web プロジェクトを右クリックし、**StartUp プロジェクトとして設定** を選択ます。
+14. F5 キーを押して Pos.Web プロジェクトを実行するか、Visual Studio メニューの **実行** ボタンをクリックします。
 
 ## <a name="install-the-developer-topology-prerequisites"></a>開発者トポロジの前提条件のインストール
 
@@ -93,7 +92,7 @@ LCS で Microsoft Azure サブスクリプションを使用する環境を配�
    2. **プロジェクト** で、開発環境が展開されているプロジェクトを選択します。
    3. **追加ツール** セクションで、**アセット ライブラリ** タイルをクリックします。
    4. アセット ライブラリ タイプとして **ソフトウェア配置可能パッケージ** を選択し、**インポート** をクリックします。
-   5. **共有アセット ライブラリ リスト**で、**開発者トポロジの前提条件**を選択して**選択**をクリックします。
-   6. **環境**セクションに移動し、開発環境をクリックします。
-   7. **管理**タブをクリックし、**更新プログラムの適用**を選択します。
+   5. **共有アセット ライブラリ リスト** で、**開発者トポロジの前提条件** を選択して **選択** をクリックします。
+   6. **環境** セクションに移動し、開発環境をクリックします。
+   7. **管理** タブをクリックし、**更新プログラムの適用** を選択します。
    8. **開発者トポロジの前提条件** を選択し、**適用** をクリックします。

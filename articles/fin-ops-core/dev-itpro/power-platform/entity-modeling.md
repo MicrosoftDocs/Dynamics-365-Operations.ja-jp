@@ -10,21 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1f4ad175053a340b88615231660591798e1f7b7d
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 8f8bd61f3540489d4fbcc42e29402ba75e58e272
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967348"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680418"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
@@ -51,7 +52,7 @@ Finance and Operations エンティティに対して仮想エンティティが
 | 文字列 (memo 以外), 文字列 (memo)    | 文字列 – 1 行のテキスト、文字列 – 複数行テキスト |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>Finance and Operations における空の日付 (1900 年 1 月 1 日) は、Common Data Service では null 値として表されます。 |
 | 日                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>Finance and Operations における空の日付 (1900 年 1 月 1 日) は、Common Data Service では空の値として表されます。 |
-| Enum                                | 候補リスト<br><br>Finance and Operations 列挙 (列挙型) は、Common Data Service ではグローバル OptionSet として生成されます。 システム間のマッチングは、値の**外部名**プロパティを使用して行われます。 Common Data Service における列挙型整数値は、システム間で固定されているとは限りません。 したがって、これらの列挙型にも固定 ID が含まれていないので、依存することは避けてください (特に Finance and Operations の拡張可能な列挙型の場合)。 OptionSet を使用するエンティティが更新されると、OptionSet メタデータが更新されます。 |
+| Enum                                | 候補リスト<br><br>Finance and Operations 列挙 (列挙型) は、Common Data Service ではグローバル OptionSet として生成されます。 システム間のマッチングは、値の **外部名** プロパティを使用して行われます。 Common Data Service における列挙型整数値は、システム間で固定されているとは限りません。 したがって、これらの列挙型にも固定 ID が含まれていないので、依存することは避けてください (特に Finance and Operations の拡張可能な列挙型の場合)。 OptionSet を使用するエンティティが更新されると、OptionSet メタデータが更新されます。 |
 
 Finance and Operations における *real* および *long* データ型のフィールドは、Common Data Service で *decimal* データ型としてモデル化されます。 2 つのデータ型の間では、精度と小数点部桁数の不一致があるため、次の動作を考慮する必要があります。
 
@@ -175,7 +176,7 @@ Finance and Operations の列挙型は、Common Data Service の OptionSet と�
 
 ## <a name="company"></a>法人
 
-Finance and Operations のエンティティは、会社にバインドすることも、グローバルにすることもできます。 会社にバインドされている Finance and Operations エンティティの仮想エンティティは、Common Data Service の cdm\_company エンティティとのリレーションシップを持ちます。 cdm\_company エンティティは、Common Data Service におけるネイティブ エンティティで あり、Dynamics365Company ソリューションの一部です。 通常と同様、リレーションシップが作成されると、関連するエンティティ (この場合は cdm\_company) の仮想エンティティにも検索フィールドが作成されます。 このルックアップ フィールドは **会社** という名前であり、ユーザーがリストの値を選択したり、関連するレコードの詳細に移動したりできるように、最適なユーザー エクスペリエンスを提供するために使用する必要があります。 **会社コード**と呼ばれるフィールドは、仮想エンティティにも追加されます。 この値は 4 文字の文字列です。 このフィールドは、プログラミングで使用する必要があります。
+Finance and Operations のエンティティは、会社にバインドすることも、グローバルにすることもできます。 会社にバインドされている Finance and Operations エンティティの仮想エンティティは、Common Data Service の cdm\_company エンティティとのリレーションシップを持ちます。 cdm\_company エンティティは、Common Data Service におけるネイティブ エンティティで あり、Dynamics365Company ソリューションの一部です。 通常と同様、リレーションシップが作成されると、関連するエンティティ (この場合は cdm\_company) の仮想エンティティにも検索フィールドが作成されます。 このルックアップ フィールドは **会社** という名前であり、ユーザーがリストの値を選択したり、関連するレコードの詳細に移動したりできるように、最適なユーザー エクスペリエンスを提供するために使用する必要があります。 **会社コード** と呼ばれるフィールドは、仮想エンティティにも追加されます。 この値は 4 文字の文字列です。 このフィールドは、プログラミングで使用する必要があります。
 
 ## <a name="attachments"></a>アタッチメント
 

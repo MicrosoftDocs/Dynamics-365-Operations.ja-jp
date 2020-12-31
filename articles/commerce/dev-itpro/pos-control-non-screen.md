@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 7a7c1adb3e47dedcd61b14e115f8dd73530f6a9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 26af1c374139933cc2656ed6837c78f8628c558b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004658"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681526"
 ---
 # <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a>デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します
 

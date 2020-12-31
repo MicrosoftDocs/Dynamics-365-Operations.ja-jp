@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf0a1ca28e7ffea717ef61e1bedc832e0c850ae3
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: eaafed277943724ae90b4630162ad1342b4102cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893181"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679944"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 
@@ -39,7 +38,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 - Chatty (サーバーとクライアントの間で多くの相互トラフィックを引き起こす)。
 - 冗長 (フレームワークは自動的にこれらを処理するようになりました)。
 
-次のテーブルを通じて、 <br/>**廃止の理由**見出し、「クライアント」は Web クライアントを参照します。
+次のテーブルを通じて、 <br/>**廃止の理由** 見出し、「クライアント」は Web クライアントを参照します。
 
 ## <a name="list-of-deprecated-apis"></a>非推奨 API のリスト
 
@@ -84,7 +83,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | FormControl |方法 |inputSearch | |
 | FormControl |方法 |itemChanging | |
 | FormControl |方法 |keyDown | |
-| FormControl |方法 |labelMouseDblClick <br>mouseDblClick |**概要**<br/>he FormControl.labelMouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、コントロールのラベルがダブルクリックされたときに呼び出されます。 マウス ポインターの X、Y 座標、クリックされたマウス ボタンを示すブール値、Ctrl キーと Shift キーが押されたかどうかを示すブール値を提供します。 he FormControl.mouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、labelMouseDblClick メソッドへの関数と似ています。 違いは、このメソッドはダブル クリック (ラベルだけでなく) があるたびに呼び出されることです。<br/>**減価償却の理由**<br/>ダブルクリック アクションは、Web ベースのアプリケーションとタッチベースのシナリオにはうまく反映されません。 また多くのインスタンスで短くなり終了する可能性があります。<br/>**移行のメモ**<br/>これらのメソッドに推奨される代替は、ボタンと**クリックされた**イベントを使用することです。 |
+| FormControl |方法 |labelMouseDblClick <br>mouseDblClick |**概要**<br/>he FormControl.labelMouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、コントロールのラベルがダブルクリックされたときに呼び出されます。 マウス ポインターの X、Y 座標、クリックされたマウス ボタンを示すブール値、Ctrl キーと Shift キーが押されたかどうかを示すブール値を提供します。 he FormControl.mouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、labelMouseDblClick メソッドへの関数と似ています。 違いは、このメソッドはダブル クリック (ラベルだけでなく) があるたびに呼び出されることです。<br/>**減価償却の理由**<br/>ダブルクリック アクションは、Web ベースのアプリケーションとタッチベースのシナリオにはうまく反映されません。 また多くのインスタンスで短くなり終了する可能性があります。<br/>**移行のメモ**<br/>これらのメソッドに推奨される代替は、ボタンと **クリックされた** イベントを使用することです。 |
 | FormControl |方法 |labelMousedown labelMouseup mouseDown mouseEnter mouseLeave mouseMove mouseUp |**概要**<br/>マウス イベントを検出したり応答したりするのに使用します。<br/>**減価償却の理由**<br/>これらはタッチ スクリーン フレンドリーではなく、クライアントではサポートされていません。<br/>**移行のメモ**<br/>コードからこれらの API の使用を削除し、マウス イベントへの依存がないシナリオが有効になるようにリファクタリングします。 |
 | FormControl | 方法 | onHScroll onVScroll |  |
 | FormControl | 方法 | paint |  |

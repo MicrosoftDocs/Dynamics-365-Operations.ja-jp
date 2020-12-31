@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36272de896f5f9c7c971ce8b4e8a5300ae9ec789
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: c8f382401844e1942262add79c19a08d2c5196cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329879"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683368"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
@@ -68,7 +67,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     2.  このフォームは少なくとも 1 つのメニュー項目で参照される必要があります。
     3.  **TabPage.Caption** は空ではありません。
     4.  **TabPage.DataSource** は空ではありません。
-    5.  このプライマリ データ ソースには、**AllowEdit**=**いいえ**、**AllowCreate**=**いいえ**、および**AllowDelete**=**はい** が含まれています。
+    5.  このプライマリ データ ソースには、**AllowEdit**=**いいえ**、**AllowCreate**=**いいえ**、および **AllowDelete**=**はい** が含まれています。
     6.  **Grid.DefaultAction** は、子フォームを開くボタンを参照します。
     7.  **Grid.DefaultLabelAction** は、グリッドのコンテキスト メニューに表示するラベルを参照します。
 
@@ -101,9 +100,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   セカンダリ リスト ページについては、タイトルは、活動またはステータスを反映する必要があります。
 -   **グリッド**
     -   トランザクションのエンティティについては、**ID** フィールドが最初の列になり、次がマスタ エンティティ **ID** および **名前** フィールドになる必要があります。
-    -   マスタ エンティティについては、**名前**フィールドが最初の列になり、次が **ID** フィールドになる必要があります。
+    -   マスタ エンティティについては、**名前** フィールドが最初の列になり、次が **ID** フィールドになる必要があります。
 -   **ActionPane** ガイドラインは、ActionPane ガイドライン セクションの Dynamics AX 「[フォームの全般的なガイドライン](general-form-guidelines.md)」ドキュメントに統合されました。
--   **情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
+-   **情報ボックス** ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 
 ## <a name="examples"></a>例
 フォーム: **SalesTableListPage** [![リスト ページの例](./media/listpage2-1024x510.png)](./media/listpage2.png)

@@ -3,24 +3,23 @@ title: ユーザー ライセンス要件への準拠の維持
 description: このトピックでは、Finance and Operations アプリのユーザー ライセンス要件を遵守する方法に関する情報を提供します。
 author: peakerbl
 manager: AnnBe
-ms.date: 08/18/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 3ac6e6c7b66f18e54e4f1aaf1d193ec82fa5cbdd
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: 5b4e0994bdd6ad6ea09fa0662593554939c3dd96
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811200"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679904"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
@@ -49,13 +48,19 @@ ms.locfileid: "3811200"
 
 ![ユーザー ページで選択したユーザー情報ボックスのロール](media/UsersRoles.png)
 
-ライセンスの最大要件によって、ユーザーの実際のライセンス要件が決まります。 ライセンス要件が**操作** として識別された場合は、[ユーザー ライセンスの見積もり](#user-license-estimator-report) レポートを使用して、ユーザーのフル ライセンス要件を決定する必要があります。
+ライセンスの最大要件によって、ユーザーの実際のライセンス要件が決まります。 ライセンス要件が **操作** として識別された場合は、[ユーザー ライセンスの見積もり](#user-license-estimator-report) レポートを使用して、ユーザーのフル ライセンス要件を決定する必要があります。
+
+> [!NOTE]
+> バージョン 10.0.15 のプラットフォーム更新を開始して、必要なライセン スタイプが、Commerce、Finance、および Supply Chain Management などのアプリケーション固有のライセンス タイプが含まれるように拡張されています。 この拡張機能を使用すると、ロールをユーザーに割り当てるとき、および選択したユーザーの情報ボックスに対してロールを使用するときに、実際のライセンス要件を表示することができます。 必要なライセン スタイプに対して複数の値を表示できます。 
 
 ## <a name="view-permissions-page"></a>アクセス許可の表示ページ
 
 **セキュリティの構成** ページ (**システム管理者 \>セキュリティ \> セキュリティの構成**) でのセキュリティ構成中に、セキュリティ オブジェクト、役割、職務、またはアクセス許可を選択し、**アクセス許可の表示** を選択することにより、現在含まれているすべてのアクセス許可、およびライセンス要件を表示できます。 **アクセス許可の表示** ページのヘッダーに、必要なライセンス レベルが表示されます。
 
 ![アクセス許可の表示ページ](media/ViewPermissons.png)
+
+> [!NOTE]
+> バージョン 10.0.15 のプラットフォーム更新を開始して、必要なライセン スタイプが、Commerce、Finance、および Supply Chain Management などのアプリケーション固有のライセンス タイプが含まれるように拡張されています。 この拡張機能を使用すると、実際のライセンス要件を決定する特定のセキュリティ オブジェクトを識別しながら、セキュリティを構成することもできます。 必要なライセン スタイプに対して複数の値を表示できます。 
 
 ## <a name="user-license-counts-report"></a>ユーザー ライセンス数レポート
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92aef0d6920cbe87cd8b55030f170eaac2afd46
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f0c312bfd854ca4c7e4c0d38f4d4799ee00836cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812042"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681616"
 ---
-# <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、および修正プログラムのリソース
+# <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、修正プログラム
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,9 +33,9 @@ ms.locfileid: "2812042"
 
 開始するには、次のトピックを確認します。
 
-- [AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)
+- [AX 2012 から Finance and Operations へ更新](upgrade-overview-2012.md)
 
-- [Finance and Operations へのコードの移行の準備](prepare-migration.md)
+- [Finance and Operations へのコード移行の準備](prepare-migration.md)
 
 ## <a name="migration-from-microsoft-dynamics-ax-2009-to-finance-and-operations"></a>Microsoft Dynamics AX 2009 から Finance and Operations への移行
 この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4)。
@@ -48,7 +47,7 @@ ms.locfileid: "2812042"
 ### <a name="cloud"></a>クラウド
 Finance and Operations のクラウド バージョンをアップグレードする場合は、次のトピックを確認してください。
 
-- [最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
+- [Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)
 
 - [最新のプラットフォーム更新プログラムの環境への適用](upgrade-latest-platform-update.md)
 
@@ -73,4 +72,4 @@ Finance and Operations のオンプレミス バージョンに更新プログ�
 
  詳細については、以下を参照してください。 
 - [データベースの更新](../database/database-refresh.md)
-- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md) 
+- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md) 

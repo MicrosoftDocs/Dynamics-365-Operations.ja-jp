@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a431414044846bf4e79e6b9f0e5b27281ea8f46
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 2c3907d1d2c74c852f4f90731e5f4bc23bfbd717
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744410"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680269"
 ---
 # <a name="numberformat-er-function"></a>NUMBERFORMAT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された[カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す*文字列*の値を返します。 サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx) を参照してください。
+`NUMBERFORMAT` 関数は、指定された形式およびオプションで指定された [カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) で、指定された数を表す *文字列* の値を返します。 サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx) を参照してください。
 
 ## <a name="syntax-1"></a>構文 1
 
@@ -45,17 +44,17 @@ NUMBERFORMAT (number, format, culture)
 
 ## <a name="arguments"></a>引数
 
-`number`: *整数*または*実数*
+`number`: *整数* または *実数*
 
 書式設定する必要がある数値を指定する数値。
 
 `format` : *文字列*
 
-形式を表す*文字列*値。
+形式を表す *文字列* 値。
 
 `culture`: *文字列*
 
-書式設定に使用するカルチャを表す*文字列*値。
+書式設定に使用するカルチャを表す *文字列* 値。
 
 ## <a name="return-values"></a>戻り値
 

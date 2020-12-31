@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31501
 ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7354622cde6c066eee84328b46f723f457fd850
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 87166c55763b15b1cc359214675b79c5bb1e389e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329933"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679744"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 
@@ -123,7 +122,7 @@ int mouseDown(int x, int y, int button, boolean ctrl, boolean shift)
 現在のバージョンでは、まだあらかじめ選択されているノードがユーザーに表示されるシナリオの選択されている状態を設定します。 また、開発者は、FormTreeItem の作成時に、状態を明示的にまだ設定することができます。 ただし、現在の画像を指定する代わりに、開発者は FormTreeItem の **stateChecked** プロパティを設定できます。 開発者は、チェック ボックスの状態がいつ変更されるかを知る必要がある場合、**checkedStateChanged()** メソッドをオーバーライドできます。
 
 ## <a name="basic-check-box-use-for-tree-controls-in-the-current-version"></a>現在のバージョンのツリー コントロールに使用する基本的なチェック ボックス
-モデル化されたツリー コントロールの**チェック ボックス** プロパティが**はい**に設定されていることを確認します。 ノードの状態を明示的に設定するには、次のコードを使用します。
+モデル化されたツリー コントロールの **チェック ボックス** プロパティが **はい** に設定されていることを確認します。 ノードの状態を明示的に設定するには、次のコードを使用します。
 
 ```xpp
 formTreeItem.stateChecked(FormTreeCheckedState::Checked);

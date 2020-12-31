@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: ganas
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform update 22
-ms.openlocfilehash: be84c09efd547ae8beb341f8289829438c74b2b2
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: 969faa345be8ec629d0adfaee60f2d477893e320
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945404"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683955"
 ---
 # <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
 
@@ -41,12 +40,12 @@ ms.locfileid: "2945404"
 
 ## <a name="change-the-default-scheduled-timerecurrence"></a>スケジュールされた既定の時間/頻度の変更
 1. **システム管理 > 照会 > バッチ ジョブ** の順に移動します。
-2. *インデックスの再構築*を含むジョブの説明を検索します。   
+2. *インデックスの再構築* を含むジョブの説明を検索します。   
 3. レコードを選択します。  
-4. メニュー項目**バッチ ジョブ > 再実行**をクリックします。  
+4. メニュー項目 **バッチ ジョブ > 再実行** をクリックします。  
 5. スケジュールに合うようにスケジュール時間と頻度を変更します。
 
-インデックス再構築の結果は、**システム管理 > 照会 > データベース > SQLインデックスの断片化の詳細**にあります。 
+インデックス再構築の結果は、**システム管理 > 照会 > データベース > SQLインデックスの断片化の詳細** にあります。 
 
 > [!Note]
 > 場合によっては、断片化の前後で番号が同じであるかそれ以上であることがあります。 これは、Microsoft が侵入型オンライン再構築オプションを使用しているため通常です。 今後、オプションのオフライン再構築オプションの導入を計画しています。

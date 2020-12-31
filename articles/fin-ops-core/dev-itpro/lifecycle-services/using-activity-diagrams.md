@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3db997a361059e66addf41295b07d80eb90c8a50
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 776ad8a4505d888286f1f9fbca6700d69b33df81
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454615"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681042"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -50,7 +49,7 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 [![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
 
 
-右ウィンドウで、**参照**をクリックしてファイルを選択してから**アップロード**をクリックします。
+右ウィンドウで、**参照** をクリックしてファイルを選択してから **アップロード** をクリックします。
 
 [![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
 
@@ -79,5 +78,5 @@ BPM は作成されたすべてのタスク記録の活動ダイアグラムと�
 Visio ファイルを表示またはアップロードするには、次の手順を実行します。
 
 1. 業務プロセスを選択し、右ウィンドウの **概要** タブで **図** を選択します。
-2. **フローチャート**ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラーのフローチャート (BPM)](flowcharts-business-process-modeler.md) の未接続のフローチャート セクションを参照してください。
+2. **フローチャート** ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラーのフローチャート (BPM)](flowcharts-business-process-modeler.md) の未接続のフローチャート セクションを参照してください。
 

@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 90be8691950e5a29737dacbf4043b72c7a31a355
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: f084511dd7b46c2a9b399bb5b6a2ca8927174f51
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813872"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681574"
 ---
 # <a name="show-custom-notifications-in-the-pos"></a>POS でカスタム通知を表示する
 
@@ -51,7 +50,7 @@ CRT が通知に対する応答を返すと、通知、メッセージ、およ�
 
 ## <a name="required-steps-to-make-notifications-available-for-a-custom-operation"></a>カスタム操作の通知を使用可能にするための必要な手順
 
-1. Retail Headquarters で **Retail と Commerce \> チャネル設定 \> POS 設定 \> POS \> POS 操作**に移動し、操作を作成します。
+1. Retail Headquarters で **Retail と Commerce \> チャネル設定 \> POS 設定 \> POS \> POS 操作** に移動し、操作を作成します。
 
     > [!NOTE]
     > カスタム操作に 5000 以上の操作 ID を使用します。

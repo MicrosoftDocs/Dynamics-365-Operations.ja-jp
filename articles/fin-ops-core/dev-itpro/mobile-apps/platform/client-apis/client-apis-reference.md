@@ -1,7 +1,7 @@
 ---
 title: クライアント API のホームページ
 description: モバイル プラットフォーム クライアント API
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 427d26f812156c9ec445832d506e8ef4d9d2e246
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 4962f366629820bbf479d65fabc48066bad1fb1c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982940"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679242"
 ---
 # <a name="client-apis-home-page"></a>クライアント API のホームページ
 

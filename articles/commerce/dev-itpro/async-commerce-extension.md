@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6eeea2b51bdf49e329944caca1c1ebd71f3accf2
-ms.sourcegitcommit: 33fb057cd3b7b19b97e9c8941655516f7225b0f5
+ms.openlocfilehash: a2a9164e4be8b4595176d2e9ba88dde43ccd3002
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3087945"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680386"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 
@@ -35,7 +34,7 @@ ms.locfileid: "3087945"
 
 このフレームワーク拡張機能が追加される前は、要求が同期的にのみ実行できました。 入力/出力 (I/O) 操作、データベース クエリ、またはネットワーク要求などの長い操作により、実行スレッドがブロックされました。 非同期モデルのサポートが Commerce Runtime (CRT) に追加されたので、これらの操作の非同期バージョンを使用できます。 非同期要求は、実行スレッドをブロック解除します。   
 
-コマース API フレームワークでは、拡張 CRT 要求ハンドラーの**非同期**および**待機**キーワードでサポートされる、**タスク**および**タスク\<T\>** クラスがサポートされるようになりました。 すべての新しい拡張 API に対して非同期のコマース API フレームワークを使用し、拡張機能には標準の非同期コマース API を使用する必要があります。
+コマース API フレームワークでは、拡張 CRT 要求ハンドラーの **非同期** および **待機** キーワードでサポートされる、**タスク** および **タスク\<T\>** クラスがサポートされるようになりました。 すべての新しい拡張 API に対して非同期のコマース API フレームワークを使用し、拡張機能には標準の非同期コマース API を使用する必要があります。
 
 ## <a name="async-classesinterface-added-in-the-commerce-api-framework"></a>コマース API フレームワークに追加された非同期クラス/インターフェイス:
 
@@ -54,11 +53,11 @@ ms.locfileid: "3087945"
 
 次の非同期メソッドが、コマース API フレームワークに追加されました。
 
-| クラス/インターフェイス           | 方法                                              | 説明 |
+| クラス/インターフェイス           | メソッド                                              | 説明 |
 |---------------------------|-----------------------------------------------------|-------------|
 | SingleAsyncRequestHandler | タスク\<TResponse\> プロセス                           | 各派生クラスによって上書きされる実行メソッド。 |
-|                           | タスク\<応答\> 実行                            | 要求ハンドラーのエントリ ポイントを表すメソッド。 |
-| IRequestHandlerAsync      | タスク\<応答\> 実行 (要求の要求)          | 非同期要求ハンドラーのインターフェイス。 |
+|                           | タスク\<Response\> 実行                            | 要求ハンドラーのエントリ ポイントを表すメソッド。 |
+| IRequestHandlerAsync      | タスク\<Response\> 実行 (要求の要求)          | 非同期要求ハンドラーのインターフェイス。 |
 | IRequestTriggerAsync      | タスク OnExecuting(要求の要求)                   | 要求が **IRequestHandler** によって処理される前に呼び出されるメソッド。 |
 | IRequestTriggerAsync      | タスク OnExecuted(要求の要求、応答の応答) | 要求が **IRequestHandler** によって処理された後に呼び出されるメソッド。 |
 | DatabaseContext           | 非同期タスク<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) | 指定されたパラメーターを使用して、ストアド プロシージャを実行するメソッド。 |
@@ -96,8 +95,8 @@ ms.locfileid: "3087945"
 
 新しい非同期コマース API を作成するには、次の 3 つのクラスを作成する必要があります。
 
-+ **要求**クラスを実装することにより、要求クラスを作成します。
-+ **応答**クラスを実装することにより、非同期応答クラスを作成します。
++ **要求** クラスを実装することにより、要求クラスを作成します。
++ **応答** クラスを実装することにより、非同期応答クラスを作成します。
 + 非同期ハンドラー クラスを作成します。
 
 クラスを作成するには、次の手順に従います。
@@ -267,7 +266,7 @@ namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
 
 サポートされる標準の要求ハンドラーを上書きするには、このパターンに従います。
 
-たとえば、標準の**GetScanResultRequestHandler** ハンドラーを上書きするには、ハンドラーを上書きしてから、**タスク**と**待機**を使用して応答を返します。
+たとえば、標準の **GetScanResultRequestHandler** ハンドラーを上書きするには、ハンドラーを上書きしてから、**タスク** と **待機** を使用して応答を返します。
 
 ```C#
 namespace Contoso

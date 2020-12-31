@@ -1,7 +1,7 @@
 ---
 title: 財務分析コードを公開する読み取り専用エンティティの作成
 description: このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
-ms.author: pbj
+ms.author: rhaertle
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d80f8a50a9f1d898480a9b73eac7e93fe19168c1
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 615ab047e73abd52a0c8edaf032549fc00297ffe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033026"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680468"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ ms.locfileid: "3033026"
 
 [![新しい項目](./media/fd-basic.png)](./media/fd-basic.png)
 
-開いているフォームで、データ モデルの**データ エンティティ**要素のタイプを選択します。
+開いているフォームで、データ モデルの **データ エンティティ** 要素のタイプを選択します。
 
 [![データ要素](./media/fd-element.png)](./media/fd-element.png)
 
@@ -63,7 +62,7 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 
 [![すべての選択を解除](./media/fd-wizard2.png)](./media/fd-wizard2.png)
 
-最後に、**完了**をクリックして、エンティティのテンプレートを作成します。
+最後に、**完了** をクリックして、エンティティのテンプレートを作成します。
 
 ## <a name="customize-the-basic-entity"></a>基本的なエンティティをカスタマイズします。
 エンティティ、ステージング テーブル、およびセキュリティ資産が作成され、カスタム エンティティを作成できるようになりました。 プロジェクトでは、デザイナーで VendorInvoiceTransactionDetailsEntity エンティティを開きます。 
@@ -148,7 +147,7 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 
 [![外部結合](./media/fd-menu7.png)](./media/fd-menu7.png)
 
-ここで、新しいエンティティで必須フィールドをさまざまなデータ ソースから**フィールド** ノード (つまり、新たに作成された ProductLine) にドラッグする必要があります。 
+ここで、新しいエンティティで必須フィールドをさまざまなデータ ソースから **フィールド** ノード (つまり、新たに作成された ProductLine) にドラッグする必要があります。 
 
 [![ProductLine にドラッグ](./media/fd-menu8.png)](./media/fd-menu8.png)
 
@@ -156,7 +155,7 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 
 [![EntityKey にドラッグ](./media/fd-menu9.png)](./media/fd-menu9.png)
 
-ステージング テーブルが完全に構成されたエンティティに関連付けられていることを確認するには、ステージング テーブルを更新する必要があります。 エンティティのコンテキスト メニューで、**ステージング テーブルの更新**を選択します。 
+ステージング テーブルが完全に構成されたエンティティに関連付けられていることを確認するには、ステージング テーブルを更新する必要があります。 エンティティのコンテキスト メニューで、**ステージング テーブルの更新** を選択します。 
 
 [![ステージング テーブルの更新](./media/fd-menu10.png)](./media/fd-menu10.png)
 

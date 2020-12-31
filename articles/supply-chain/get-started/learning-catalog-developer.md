@@ -14,14 +14,16 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c778f4ae93f8f6c0be933084c47d7b06639b7ae6
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: 3428786545ba0971f209fd62f0298615c5c35da8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793551"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528937"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-developers"></a>Dynamics 365 Supply Chain Management 開発者向けラーニング カタログ
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 他のデータ ソースと統合したり、コア システム機能を拡張したり、複雑なアプリケーションを構築したりするためのコードを記述する必要がありますか。
 

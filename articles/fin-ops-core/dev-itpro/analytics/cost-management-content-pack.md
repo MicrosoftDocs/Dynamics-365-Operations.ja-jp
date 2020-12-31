@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4e12abceeef59d05fa21cb030b8aa738842cafb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982800"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683898"
 ---
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
@@ -35,27 +34,27 @@ ms.locfileid: "3982800"
 **原価管理** Microsoft Power BI コンテンツは、在庫経理担当者または在庫や進行中の作業 (WIP) を担当、または関心を持つ組織の担当者、または標準的な原価差異の分析を担当、または関心を持つ組織の担当者を対象としています。
 
 > [!NOTE]
-> このトピックで説明する**原価管理** Power BI コンテンツは、Dynamics 365 Finance and Operations 8.0 に適用されます。
+> このトピックで説明する **原価管理** Power BI コンテンツは、Dynamics 365 Finance and Operations 8.0 に適用されます。
 > 
-> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 この廃止の詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)を参照してください。
+> AppSource サイトで利用可能な **原価管理** Power BI コンテンツ パックの使用は推奨されていません。 この廃止の詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)を参照してください。
 
 この Power BI コンテンツは、在庫のパフォーマンスを監視し、原価の流れを視覚化するのに役立つカテゴリ化された形式を提供します。 回転資本率、在庫を保持している日数、精度、「ABC分類」などの経営洞察力を、望ましい集計レベル (会社、品目、品目グループ、またはサイト) で得ることができます。 利用可能になった情報は、財務諸表の詳細な補足情報として使用できます。
 
-Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータ ソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理**ワークスペースまたは**原価分析**ワークスペースのどちらでも実行することができます。
+Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータ ソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理** ワークスペースまたは **原価分析** ワークスペースのどちらでも実行することができます。
 
 **CostObjectStatementCache** テーブルを更新するたびに、Power BI ビジュアル化内のデータを更新する前に **CostObjectStatementCacheMonthly** 集計測定を更新する必要があります。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-**原価管理** Power BI コンテンツは、**原価管理**および**コスト分析**ワークスペースで表示されます。
+**原価管理** Power BI コンテンツは、**原価管理** および **コスト分析** ワークスペースで表示されます。
 
-**原価管理**ワークスペースには、次のタブが含まれています。
+**原価管理** ワークスペースには、次のタブが含まれています。
 
 - **概要** – このタブは、アプリケーション データを表示します。
 - **在庫会計ステータス** – このタブでは、Power BI コンテンツが表示されます。
 - **製造会計ステータス** – このタブでは、Power BI コンテンツが表示されます。
 
-**コスト分析**ワークスペースには、次のタブが含まれています。
+**コスト分析** ワークスペースには、次のタブが含まれています。
 
 - **概要** – このタブは、アプリケーション データを表示します。
 - **在庫会計分析** – このタブでは、Power BI コンテンツが表示されます。

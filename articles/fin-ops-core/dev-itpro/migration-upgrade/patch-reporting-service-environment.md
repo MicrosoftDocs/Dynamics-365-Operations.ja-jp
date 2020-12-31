@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 23661
 ms.assetid: 744bd1dc-d109-40df-a5dd-9db8982523a6
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ce8ef186eb573bb7385f7ef7573105c266a297f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5656e0f1db252a50a5214db6a5cace415fc2f2f6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191877"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683972"
 ---
 # <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
@@ -54,7 +53,7 @@ SSRS が実行されているマシンの管理者グループのユーザーと
 -   このタスクは、完了までに 20 ~ 30 分かかります。
 
 ### <a name="manually-copy-binaries-to-the-sql-server-binary-folder"></a>SQL Server バイナリ フォルダーへの手動でのバイナリのコピー
-1.  SQL Server Reporting Services を停止します。 これは、**サービス管理コンソール**または **Reporting Services 構成マネージャー**から実行できます。 [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
+1.  SQL Server Reporting Services を停止します。 これは、**サービス管理コンソール** または **Reporting Services 構成マネージャー** から実行できます。 [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
 2.  SQL Server Reporting Services バイナリ フォルダーを検索します。 このフォルダーは、通常、C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin にあります。
 3.  次のファイルのいずれかがパッチにある場合は、それらのファイルを SQL Server Reporting Services Bin フォルダーにコピーします。* *
 

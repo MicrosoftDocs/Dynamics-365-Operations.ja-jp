@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac477e1f2010bbe7fb19a5dee36daae747ec4198
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 777fcfcec6f43642e7b1f625ca85688c5b5c18dc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080757"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680470"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 
@@ -65,7 +64,7 @@ public void jumpRef()
 
 ### <a name="expensecost_ledgerdimension-control"></a>ExpenseCost\_LedgerDimension コントロール
 
-(**フォーム**タブの下にある検索バーで「ExpenseCost\_LedgerDimension」を検索してください。)
+(**フォーム** タブの下にある検索バーで「ExpenseCost\_LedgerDimension」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -285,7 +284,7 @@ public void jumpRef()
 
 ### <a name="ledgerjournaltrans_accountnum-control"></a>LedgerJournalTrans\_AccountNum コントロール
 
-(**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum」を検索してください。)
+(**フォーム** タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -352,7 +351,7 @@ public void loadSegments()
     . . .
     ```
 
-2.  **LedgerJournalTrans** データ ソースの **active()** メソッドでコードを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが**元帳**に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
+2.  **LedgerJournalTrans** データ ソースの **active()** メソッドでコードを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが **元帳** に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
 
     ```xpp
     . . .
@@ -516,7 +515,7 @@ public boolean validate()
 
 ### <a name="gridoffsetaccount-control"></a>GridOffsetAccount コントロール
 
-(**フォーム**タブの下にある「GridOffsetAccount」を検索してください。)
+(**フォーム** タブの下にある「GridOffsetAccount」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -620,7 +619,7 @@ public void loadSegments()
 
 ##### <a name="dynamics-ax-for-operations"></a>Dynamics AX for Operations
 
-1.  **initLedger()** メソッドを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが**元帳**に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
+1.  **initLedger()** メソッドを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが **元帳** に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
 
     ```xpp
     void initLedger()
@@ -651,7 +650,7 @@ public void loadSegments()
     . . .
     ```
 
-2.  **LedgerJournalTrans** データ ソースの **active()** メソッドでコードを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが**元帳**に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
+2.  **LedgerJournalTrans** データ ソースの **active()** メソッドでコードを更新します。 **注記:** **getValue()** メソッドは、勘定タイプが **元帳** に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
 
     ```xpp
     . . .
@@ -705,7 +704,7 @@ public void loadSegments()
     Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
     ```
 
-6.  **LedgerJournalTrans** データ ソースの **OffsetAccountType** フィールドの **modified()** メソッドに、次のコードを追加します。 **注記:** **getValue()** メソッドは、勘定タイプが**元帳**に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
+6.  **LedgerJournalTrans** データ ソースの **OffsetAccountType** フィールドの **modified()** メソッドに、次のコードを追加します。 **注記:** **getValue()** メソッドは、勘定タイプが **元帳** に設定されている場合にのみ呼び出す必要があります。 それ以外の場合、このメソッドを呼び出すと、無効な関数呼び出しが発生します。
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -820,7 +819,7 @@ public boolean validate()
 
 ### <a name="ledgerjournaltrans_accountnum1"></a>LedgerJournalTrans\_AccountNum1
 
-(**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum1」を検索してください。)
+(**フォーム** タブの下にある検索バーで、「LedgerJournalTrans\_AccountNum1」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -947,7 +946,7 @@ public boolean validate()
 
 ### <a name="ledgerjournaltrans_offsetaccount1"></a>LedgerJournalTrans\_OffsetAccount1
 
-(**フォーム**タブの下にある検索バーで、「LedgerJournalTrans\_OffsetAccount1」を検索してください。)
+(**フォーム** タブの下にある検索バーで、「LedgerJournalTrans\_OffsetAccount1」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -1006,7 +1005,7 @@ public void loadSegments()
 
 **GridOffsetAccount.loadSegments()** メソッドの移行手順は、すでにこのメソッドに必要な変更のほとんどを行いました。 ただし、次の変更を加える必要があります。
 
-1.  **LedgerJournalTrans** データ ソースの**有効な**メソッドにコード行を追加します。
+1.  **LedgerJournalTrans** データ ソースの **有効な** メソッドにコード行を追加します。
 
     ```xpp
     if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
@@ -1164,7 +1163,7 @@ public boolean validate()
 
 ### <a name="custpaymjournalfee_custaccount"></a>CustPaymJournalFee\_CustAccount
 
-(**フォーム**タブの下にある検索バーで、「CustPaymJournalFee\_CustAccount」を検索してください。)
+(**フォーム** タブの下にある検索バーで、「CustPaymJournalFee\_CustAccount」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -1356,7 +1355,7 @@ public boolean validate()
 
 ### <a name="group4_accountnum"></a>Group4\_AccountNum
 
-(**フォーム**タブの下にある検索バーで「Group4\_AccountNum」を検索してください。)
+(**フォーム** タブの下にある検索バーで「Group4\_AccountNum」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 
@@ -1488,7 +1487,7 @@ public boolean validate()
 
 ### <a name="group4_offsetaccount"></a>Group4\_OffsetAccount
 
-(**フォーム**タブの下にある検索バーで「Group4\_OffsetAccount」を検索してください。)
+(**フォーム** タブの下にある検索バーで「Group4\_OffsetAccount」を検索してください。)
 
 #### <a name="step-1"></a>ステップ１
 

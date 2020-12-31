@@ -1,6 +1,6 @@
 ---
 title: 統合された税
-description: このトピックでは、Finance and Operations と Common Data Service 間の税データの統合について説明します。
+description: このトピックでは、Finance and Operations と Dataverse 間の税データの統合について説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 26818ceace7d2b7e7c3ed4d0bb0bd9ab2e884aba
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997603"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679299"
 ---
 # <a name="integrated-tax"></a>統合された税
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ ms.locfileid: "3997603"
 
 ## <a name="templates"></a>テンプレート
 
-次の表に示すように、税データには、データ操作中に連携して動作するエンティティ マップのコレクションが含まれています。
+次の表に示すように、税データには、データ操作中に連携して動作するテーブル マップのコレクションが含まれています。
 
 Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
 -------------------------|---------------------------------|----|

@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 19021
 ms.assetid: 409386b2-98c8-44a7-be6f-252f8a21f819
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d9d5a175ef5f30e09656614a61cd43e54ffa23be
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 1c4581bb43ef74239157bb3030cfe9ca005c052b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983751"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679268"
 ---
 # <a name="customization-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のカスタマイズ分析
 
@@ -41,11 +40,11 @@ Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があ�
 ### <a name="upload-model-files"></a>モデル ファイルのアップロード
 
 1.  [Lifecycle Services に移動](https://lcs.dynamics.com).
-2.  プロジェクトを開いて、**カスタマイズ分析**タイルをクリックします。
-3.  **追加**をクリックし、**カスタマイズ分析: ジョブを作成**ページで、名前、適切なバージョンの Microsoft Dynamics AX、および適切なビルドを入力します。
+2.  プロジェクトを開いて、**カスタマイズ分析** タイルをクリックします。
+3.  **追加** をクリックし、**カスタマイズ分析: ジョブを作成** ページで、名前、適切なバージョンの Microsoft Dynamics AX、および適切なビルドを入力します。
 4.  **作成** をクリックします。
-5.  **ファイルの追加**をクリックして分析するモデルを参照し、**アップロード**をクリックします。 分析のために複数のモデル ファイルをアップロードすることができます。
-6.  **コードの分析**をクリックします。 サイトがファイルを処理し、レポートを生成します。 処理中に、ステータス インジケーターは更新します。 **注記:** 処理が続行されている間、ページを離れることができます。 処理には 10 分以上かかることがあります。
+5.  **ファイルの追加** をクリックして分析するモデルを参照し、**アップロード** をクリックします。 分析のために複数のモデル ファイルをアップロードすることができます。
+6.  **コードの分析** をクリックします。 サイトがファイルを処理し、レポートを生成します。 処理中に、ステータス インジケーターは更新します。 **注記:** 処理が続行されている間、ページを離れることができます。 処理には 10 分以上かかることがあります。
 
 ### <a name="evaluate-reports"></a>レポートの評価
 
@@ -54,9 +53,9 @@ Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があ�
 1.  ブラウザー内で表示できる HTML カスタマイズ分析のレポートです。
 2.  Excel ファイルを使用して生成されたエラーを確認できます。 このレポートを表示するには、**表示** をクリックし、ファイルを開きます。
 3.  HTML 開発者レポート。Microsoft Dynamics AX の開発者環境で開くことができます。 Microsoft Dynamics AX 開発環境でこのレポートを表示するには、次の手順を実行します。
-    1.  **表示**をクリックします。 ファイルはブラウザー ウィンドウで開きます。
+    1.  **表示** をクリックします。 ファイルはブラウザー ウィンドウで開きます。
     2.  開発環境のコンピューターにレポートを保存します。
-    3.  **コンパイラ出力**ウィンドウで、**インポート**をクリックし、ファイルを選択して開きます。
+    3.  **コンパイラ出力** ウィンドウで、**インポート** をクリックし、ファイルを選択して開きます。
     4.  レポート内で任意の行をダブルクリックして、報告された問題を含むオブジェクトおよび行を開くことができます。
 
 ### <a name="remove-a-customization-job"></a>カスタマイズ ジョブの削除

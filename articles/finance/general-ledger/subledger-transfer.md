@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 1ae10f406148e213fd0272d1387f15606233be27
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 7addb1f26a33db84d947e6fede876be648d2c654
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000450"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645173"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>一般会計への補助元帳の転送
 
@@ -31,7 +31,7 @@ ms.locfileid: "3000450"
 
 このトピックでは、補助元帳仕訳のバッチの転送のルールに関連する、Microsoft Dynamics 365 Finance での機能について説明します。
 
-バージョン 8.1 では、ルールの転送を許可するよう変更が加えられ、同期オプションは非推奨になりました。 詳細については、[Finance and Operations の削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20) を参照してください。
+バージョン 8.1 では、ルールの転送を許可するよう変更が加えられ、**同期** オプションは非推奨になりました。 詳細については、[Finance and Operations の削除済みまたは非推奨の機能](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20) を参照してください。
 
 次のオプションは、補助元帳バッチの転送に使用できます。 
 
@@ -39,6 +39,6 @@ ms.locfileid: "3000450"
 
 - スケジュール済バッチ – このオプションでは、総勘定元帳の処理キューに転送されている補助元帳勘定項目が追加されますが、この項目は、注文を受けた順序で処理されます。 リソースがサーバー上でこのバッチ ジョブを自由に処理できる場合、総勘定元帳伝票は予定時刻に記録されます。 
  
-バージョン 10.0.8 では、非同期オプションのパフォーマンスを向上させるための改良が加えられました。 この機能は、機能名**総勘定元帳への補助元帳の転送パフォーマンスの最適化**で有効にできます。 
+バージョン 10.0.8 では、非同期オプションのパフォーマンスを向上させるための改良が加えられました。 この機能は、機能名 **総勘定元帳への補助元帳の転送パフォーマンスの最適化** で有効にできます。 
  
 この機能により、補助元帳から総勘定元帳へのデータの転送が改善されます。 これにより、処理をより効率的にすることができ、転送する一連の小さなトランザクションをグループ化できます。 これにより、バッチ サーバーの使用がより効率的になります。 この機能には、バッチ サーバーの設定、オンライン、および非同期転送オプションが作動する機能が必要です。 

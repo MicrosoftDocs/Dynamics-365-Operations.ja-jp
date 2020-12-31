@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd56ad01b00dfd0fe67f2d8eb36fb2bd39e04f1c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5923a14f4ba544154bf40391896d29826d3ce1b1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142596"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681810"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-2---extend-data-model"></a>ER ドキュメント管理ファイルを形式出力で使用する (第 2 部 - データ モデルの拡張)
 
@@ -38,7 +37,7 @@ ms.locfileid: "3142596"
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
 2. [コンフィギュレーションをレポートする] をクリックします。
 3. ツリーで、「Customer invoice model」を選択します。
-4. ツリーで、「Customer invoice model\Customer invoice model (custom)]を選択します。
+4. ツリーで、[Customer invoice model\Customer invoice model (custom)]を選択します。
 5. [デザイナー] をクリックします。
 6. ツリーで、「Customer invoice(InvoiceCustomer)」を選択します。
     * このデータ モデルを拡張して、販売注文に添付されたファイルに適用させます。この販売注文は電子的処理の請求書に関連付けられています。  

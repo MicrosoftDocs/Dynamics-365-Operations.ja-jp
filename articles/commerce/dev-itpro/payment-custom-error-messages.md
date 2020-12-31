@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9c5a7b6f4f37b49503c4e64bf864916bfadca55f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1a551c0127ca339e7e1273221730483600337f19
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004665"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681560"
 ---
 # <a name="create-custom-localized-error-messages-for-payment-terminal-extensions"></a>支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 
@@ -43,7 +42,7 @@ ms.locfileid: "3004665"
 - **[ローカライズ済みエラー メッセージを作成します](#create-localized-error-messages)** – このセクションでは、返され、POS に表示される支払コネクタでエラー メッセージをローカライズする方法について説明します。
 
 ## <a name="create-custom-error-messages"></a>カスタム エラー メッセージを作成する
-POS でカスタム エラー メッセージをトリガーするには、**AuthorizePaymentTerminalDeviceResponse** オブジェクトに渡される **paymentInfo** の**エラー**プロパティに、適切なエラーを設定する必要があります。 具体的には、辞退済の支払の組み込みエラー メッセージの代わりに、カスタム エラー メッセージを使用する POS を強制するように、**PaymentError** オブジェクトのコンストラクター上の **isLocalized** パラメーターを **true** に設定する必要があります。
+POS でカスタム エラー メッセージをトリガーするには、**AuthorizePaymentTerminalDeviceResponse** オブジェクトに渡される **paymentInfo** の **エラー** プロパティに、適切なエラーを設定する必要があります。 具体的には、辞退済の支払の組み込みエラー メッセージの代わりに、カスタム エラー メッセージを使用する POS を強制するように、**PaymentError** オブジェクトのコンストラクター上の **isLocalized** パラメーターを **true** に設定する必要があります。
 
 ``` csharp
 namespace Contoso.Commerce.HardwareStation.PaymentSample 
@@ -126,8 +125,8 @@ POS でカスタム エラー メッセージを表示する方法を次の図�
 ### <a name="create-resource-files-for-each-locale"></a>ロケールごとにリソース ファイルを作成する
 ローカライズされたエラー メッセージを支払コネクタから POS に返すには、サポートするロケールごとにローカライズされたリソース ファイルを作成する必要があります。 リソース ファイルを作成するには、次の手順に従います。
 
-1. Microsoft Visual Studio では、コネクタのプロジェクト (または、必要に応じてサブフォルダー) を右クリックし、**追加 \> 新しい項目**を選択します。
-2. 新しい**新しい項目の追加**ダイアログ ボックスで、左側のウィンドウで **Visual C# 項目**を、中央のウィンドウで**リソース ファイル**を選択します。
+1. Microsoft Visual Studio では、コネクタのプロジェクト (または、必要に応じてサブフォルダー) を右クリックし、**追加 \> 新しい項目** を選択します。
+2. 新しい **新しい項目の追加** ダイアログ ボックスで、左側のウィンドウで **Visual C# 項目** を、中央のウィンドウで **リソース ファイル** を選択します。
 
     ![Visual Studio の新しいリソース ファイルを作成する](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
 

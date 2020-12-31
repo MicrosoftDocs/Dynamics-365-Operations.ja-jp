@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18161
 ms.assetid: 96e1f184-d049-46c3-a4ef-12641361f356
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 00096736e29667fe3df1d12cc9b1902e1b920b15
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 930420c7fa7f83d9c67019e3a60452e80a5addd8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983636"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679272"
 ---
 # <a name="create-tables-by-using-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
 
@@ -50,7 +49,7 @@ ms.locfileid: "2983636"
 > テーブル レコードのどこにもデータを含まないフィールドのみを削除することができます。 既存のフィールドのデータ型を変更することはできません。
 
 1.  テーブルの **フィールド** ノードを右クリックします。
-2.  **新規**をクリックし、フィールドの基になるプリミティブ データ型を選択します。 特定の拡張データ型のフィールドを基準に計画する場合は、拡張データ型の基準となるプリミティブ データ タイプを選択する必要があります。
+2.  **新規** をクリックし、フィールドの基になるプリミティブ データ型を選択します。 特定の拡張データ型のフィールドを基準に計画する場合は、拡張データ型の基準となるプリミティブ データ タイプを選択する必要があります。
 3.  拡張データ型に基づいてフィールドを設定するには、**ExtendedDataType** プロパティを設定します。
 4.  必要に応じて、追加のフィールド プロパティを変更します。 詳細については、 [アプリケーション オブジェクト ツリー (AOT) のテーブルプロパティ](table-properties.md) を参照してください。
 5.  フィールドを削除するには、フィールドを右クリックし、**削除** をクリックします。

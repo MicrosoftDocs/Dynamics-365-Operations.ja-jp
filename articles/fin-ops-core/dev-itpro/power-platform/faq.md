@@ -10,21 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: f12037aa7e1b1f28ef27c3a2812b9c00fcac8b48
-ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
+ms.openlocfilehash: 585e02c9c01ad90746924d2c9edd4253eedb7615
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819114"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680416"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
@@ -49,7 +50,7 @@ ms.locfileid: "3819114"
 
 ### <a name="do-all-microsoft-power-platform-users-have-to-be-users-in-finance-and-operations"></a>すべての Microsoft Power Platform ユーザーが Finance and Operations のユーザーである必要がありますか。
 
-仮想エンティティを介して Finance and Operations データにアクセスしようとする Microsoft Power Platform のユーザーはすべて、Finance and Operations でユーザーとして存在している必要があります。 したがって、*すべて*のユーザーが Finance and Operations のユーザーであるとは限りません。 仮想エンティティを介して Finance and Operations データにアクセスするユーザーのみが Finance and Operations のユーザーである必要があります。
+仮想エンティティを介して Finance and Operations データにアクセスしようとする Microsoft Power Platform のユーザーはすべて、Finance and Operations でユーザーとして存在している必要があります。 したがって、*すべて* のユーザーが Finance and Operations のユーザーであるとは限りません。 仮想エンティティを介して Finance and Operations データにアクセスするユーザーのみが Finance and Operations のユーザーである必要があります。
 
 ### <a name="where-do-i-find-the-catalog-entity"></a>カタログ エンティティはどこにありますか。
 
@@ -80,7 +81,7 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 前の Power Apps ユーザー インターフェイス (UI) と同様に、**既存の追加** 操作をやり直す必要があります。 ソリューションを選択した後、顧客グループが既にエンティティとして追加されている場合は、次の手順に従います。
 
 1. **既存の追加** \> **エンティティ** を選択します。
-2. 顧客グループ エンティティを選択し、**次へ**を選択します。
+2. 顧客グループ エンティティを選択し、**次へ** を選択します。
 3. **コンポーネント** で、**コンポーネントの選択** を選択します。
 4. 必要なフィールド、リレーションシップ、およびフォームを選択し、**追加** をクリックします。
 
@@ -102,8 +103,16 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 ### <a name="if-i-develop-a-new-finance-and-operations-entity-and-want-to-see-it-in-common-data-service-do-i-have-to-select-refresh-entity-list-in-finance-and-operations-do-i-have-to-do-anything-in-common-data-service"></a>新しい Finance and Operations エンティティを作成し、それを Common Data Service に表示する場合 、Finance and Operationsで [エンティティの更新] リストを選択する必要はありますか。 Common Data Service で何かを行う必要はありますか。
 
-理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Common Data Service から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする*必要があります*が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
+理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Common Data Service から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
 
 ### <a name="do-you-have-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
 二重書き込みは、データが Common Data Service にネイティブに存在する必要があるいくつかの主要なデータエンティティに対してのみ提供されます。 これらのデータ エンティティは、仮想エンティティとしては使用できません。
+
+### <a name="when-adding-records-using-virtual-entities-is-there-any-way-to-use-number-sequences"></a>仮想エンティティを使用してレコードを追加する場合、番号順序を使用する方法はありますか?
+はい、Finance and Operations エンティティで番号順序が自動生成される場合は、仮想エンティティからも同じように機能します。
+
+### <a name="why-does-search-view-not-work-in-power-apps"></a>Power Apps で「検索ビュー」が機能しないのはなぜですか?
+エンティティの簡易検索ビューにフィールドが追加されていない場合、検索ボックスは使用できません。 回避策として、エンティティのフィールドを 1 つ以上、簡易検索ビューに追加することができます。
+
+

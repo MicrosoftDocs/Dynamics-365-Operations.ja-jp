@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1871ee41267c2c0e8b35007a47c9601079f05d7
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 34ebbec94644276be4ef9beb1c77638606dd37a0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3745252"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679465"
 ---
 # <a name="enumerate-er-function"></a>ENUMERATE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ENUMERATE` 関数は、指定されたリストの列挙されたレコードで構成される新しい*レコード リスト*値を返します。
+`ENUMERATE` 関数は、指定されたリストの列挙されたレコードで構成される新しい *レコード リスト* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -53,7 +52,7 @@ ENUMERATE (list)
 
 返される列挙されたレコードのリストによって、次の追加の要素が公開されます。
 
-- フィールドのレコード (**値**コンポーネント)
+- フィールドのレコード (**値** コンポーネント)
 - 現在のレコード インデックス (**番号** コンポーネント)
 
 ## <a name="example"></a>例

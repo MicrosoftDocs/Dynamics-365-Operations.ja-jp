@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 106163
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: be1808dea39dc2998ca450f3a906d4e881b65755
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 456e574bf5d19d356057b40316b8b7b5b2e7ad41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3112768"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683967"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 
@@ -44,7 +43,7 @@ ms.locfileid: "3112768"
 
 model データベース全体を Azure SQL データベースにコピーしないようにするには、次の手順を使用して ModelElement テーブルをビジネス データ データベースに複製します。 後ほど、データのアップグレード実行中に、データベースの同期プロセスがこのレプリケートされたテーブルから必要な情報を取得し、アップグレードされた Finance and Operations 環境で要素 ID が管理されていることを確認します。
 
-1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ モデル メタデータを準備する**をクリックします。
+1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ モデル メタデータを準備する** をクリックします。
 2. メッセージが表示されたら、**はい** をクリックします。
 3. コピー処理が完了するまで待ちます。
 
@@ -54,7 +53,7 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 データ アップグレード中のもう 1 つの目標は、セキュリティ ロールの割り当てを維持することです。 このタスクは、前の「モデル メタデータの準備」タスクに似ています。 AX 2012 モデル データベースに格納されているセキュリティ ロールの情報は、アップグレード後も情報が Finance and Operations 環境に残るように、AX 2012 ビジネス データ データベースにコピーする必要があります。 データ アップグレード中に、同じセキュリティ ロールはアップグレードされた Finance and Operations 環境に復元されます。
 
-1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ ロール メタデータを準備する**をクリックします。
+1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ ロール メタデータを準備する** をクリックします。
 1. メッセージが表示されたら、**はい** をクリックします。
 1. コピー処理が完了するまで待ちます。
 
@@ -64,10 +63,10 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 AX 2012 では、ユーザーはオンプレミスの Active Directory サーバーで認証されます。 ただし、Finance and Operations では、ユーザーが Azure Active Directory (Azure AD) に対して認証されます。 このタスクは、既存の AX 2012 ユーザーを同等 Azure AD にマップするフォームを提供します。 AX 2012 ユーザーは、Finance and Operations にアクセスできるようになります。
 
-1. Finance and Operations のデータ アップグレード チェックリストで、**ユーザー マッピングの設定**をクリックします。
+1. Finance and Operations のデータ アップグレード チェックリストで、**ユーザー マッピングの設定** をクリックします。
 2. **ユーザー情報電子メール マッピング** フォームが表示されます。 グリッドに記入するには、次のいずれかのステップを実行します。
    - AX 2012 からユーザーをインポートしてから、手動で Azure AD の電子メール アドレスを入力します。
-       1. **AX からインポート**をクリックします。 グリッドには既存のユーザーが入力されます
+       1. **AX からインポート** をクリックします。 グリッドには既存のユーザーが入力されます
        1. 各ユーザーについては、次の図に示すように、対応する Azure AD 電子メール アドレスを入力します。
 
            ![AX 2012 ユーザーの Azure AD 電子メール アドレス](media/userInfoEmailMapping.png)
@@ -79,7 +78,7 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
          > [!NOTE]
          > ファイルの最初の行はヘッダー行として処理され、インポート時に無視されます。
 
-     2. ファイルが準備できたら、**ファイルからのインポート**をクリックし、ファイルを参照してインポートします。
+     2. ファイルが準備できたら、**ファイルからのインポート** をクリックし、ファイルを参照してインポートします。
 
         グリッドには、ファイルで指定したマッピングを入力する必要があります。
 
@@ -89,7 +88,7 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
 
 現在のバージョンをアップグレードできることを検証するには、このタスクを実行します。
 
-- Finance and Operations のデータ アップグレード チェックリストで、**ベースライン バージョンの検証**をクリックします。
+- Finance and Operations のデータ アップグレード チェックリストで、**ベースライン バージョンの検証** をクリックします。
 
 ベースライン バージョンがサポートされているベースライン バージョンのいずれかの場合は、タスクは完了としてマークされます。
 
@@ -98,6 +97,6 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
 
 このタスクは、RetailSaltUtility が使用するレジストリ キーを移行するために使用されます。 このツールは、チャンネル ユーザーの認証に使用されるハッシュに顧客が特定のランダム値を挿入する場所である、いくつかの配置に対して使用されます。
 
-- Finance and Operations のデータ アップグレード チェックリストで、**小売 salt データのアーカイブ**をクリックします。
+- Finance and Operations のデータ アップグレード チェックリストで、**小売 salt データのアーカイブ** をクリックします。
 
 プロセスが正常に行われた場合は、タスクは完了としてマークされています。

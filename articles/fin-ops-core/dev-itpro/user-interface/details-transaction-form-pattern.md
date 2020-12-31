@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 16281
 ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23405f09bdcf3f888ae983145088c2ba3ced6aef
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 42641bb4b2590ddbf53e8c96f90b73784f972254
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329899"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682455"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
@@ -142,8 +141,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 -   **新規** ボタンおよび **削除** ボタンは重複してはいけません。
 -   **ActionPane** ガイドラインは、ActionPane ガイドライン セクションの[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
--   **既定**の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。
--   **クイック タブ**ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   **既定** の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。
+-   **クイック タブ** ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **ページ タイトル エリア**
     -   **&lt;ID&gt; : &lt;Description&gt;** という形式を使用する必要があります。
     -   リスト ページが詳細ページにマージされてから、詳細ページへのリンクをメイン メニューで提供する必要があります。
@@ -161,7 +160,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   **グリッド**
         -   **ID** フィールドが最初の列になり、次がマスタ エンティティ **ID** および **名前** フィールドになる必要があります。
         -   追加のグリッド ガイドラインは、グリッド ガイドライン セクションの [全般的なフォームのガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
-    -   **情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
+    -   **情報ボックス** ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 
 ## <a name="example"></a>例
 フォーム: **SalesTable**

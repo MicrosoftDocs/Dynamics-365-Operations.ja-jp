@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 501fee3c200bdb214c4b43622aabcab3dfc6a84e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b5af2ec35e8f359169e100547556f74454fe73ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428722"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681572"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
@@ -42,7 +41,7 @@ Commerce 本体のデータベースが拡張されていない場合は、チ�
 次にいくつか例を挙げます。
 
 - チャネル データベースの **INVENTSERIALID** フィールドの長さは 50 文字ですが、POS UI では最大で 20 文字までのシリアル番号が入力できます。 この場合は、POS UI と Commerce 本体のデータベースの両方のフィールドを拡張する必要があります。
-- チャネルデータベースの **番地** フィールドの長さは、400文字まで拡張されますが、CRT の検証では Commerce 本体のデータベースの既定の長さを超えることは認められません。 この場合は、CRT 要求ハンドラー (**ValidateAddressLengthServiceRequest**) と Commerce 本体のデータベースの両方を拡張して、**番地**フィールドで 400 文字を使用できるようにする必要があります。
+- チャネルデータベースの **番地** フィールドの長さは、400文字まで拡張されますが、CRT の検証では Commerce 本体のデータベースの既定の長さを超えることは認められません。 この場合は、CRT 要求ハンドラー (**ValidateAddressLengthServiceRequest**) と Commerce 本体のデータベースの両方を拡張して、**番地** フィールドで 400 文字を使用できるようにする必要があります。
 
 一部のフィールドは、POS 内の読み取り専用フィールドである可能性があるため、POS UI または CRT ハンドラーの拡張は不要です。 たとえば、**ECORES** 製品に関連するフィールドは読み取り専用です。 POS では製品の作成に対応していないため、POS では製品の書き込みシナリオが存在しません。
 

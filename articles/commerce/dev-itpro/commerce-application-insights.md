@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 3bfac7da1ad0b585e7a86e5e595b6080f3052611
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: eeb329bf0bcf8754af796dd8525189541c998491
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823443"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683360"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -58,7 +57,7 @@ ms.locfileid: "3823443"
     > [!div class="mx-imgBorder"]
     > ![基本タブ](media/CreateNew.png)
 
-6. **レビュー + 作成** タブで、 **作成**を選択します。
+6. **レビュー + 作成** タブで、 **作成** を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![作成 ボタン](media/CreateConf.png)
@@ -186,7 +185,7 @@ ms.locfileid: "3823443"
 
 5. **RetailSDK\\Packages\\RetailDeployablePackage** フォルダーで、配置可能パッケージを検索します。 **content.folder** フォルダに移動して、3つのファイルがパッケージに含まれていることを確認します。(**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**)
 6. 展開可能パッケージを Microsoft Dynamics Lifecycle Services (LCS) の共有されたアセット ライブラリにアップロードします。
-7. LCS で、ご利用の環境のメイン ページを開き、**環境の機能** \> **Retail と Commerce** \> **管理**を選択します。
+7. LCS で、ご利用の環境のメイン ページを開き、**環境の機能** \> **Retail と Commerce** \> **管理** を選択します。
 8. **拡張機能の適用** を選択し、ライブラリから拡張機能を選択します。
 9. 拡張機能が正常に展開された後、Commerce Scale Unit に対して有効化された Modern POS (MPOS) または POS (CPOS) のインスタンスを開きます。
 10. ユーザー定義の Application Insights 記録処理 を使用する拡張シナリオを実行します。
@@ -194,7 +193,7 @@ ms.locfileid: "3823443"
 
 ## <a name="log-events-to-application-insights-in-the-pos-extension-projects"></a>POS 拡張プロジェクトで、イベントを Application Insights に記録する
 
-1. **RetailSDK\POS\Extensions** フォルダーに、**ライブラリ**という名前の新しいフォルダを作成します。
+1. **RetailSDK\POS\Extensions** フォルダーに、**ライブラリ** という名前の新しいフォルダを作成します。
 2. コマンド プロンプトを開き、**ライブラリ** フォルダーに移動します。
 3. **Npm** をインストールします。 **Npm** パッケージは、[OpenJS](https://nodejs.org) からダウンロードしてインストールすることができます。
 4. このコマンドを実行して、JavaScript Application Insights パッケージの **Npm** パッケージをインストールします。
@@ -210,7 +209,7 @@ ms.locfileid: "3823443"
     ファイル名は、Application Insights ライブラリの将来のバージョンで変更される可能性があります。 パスが変更された場合は、手順 8 と 10 のライブラリ パスをメインの Application Insights ライブラリをポイントするパスに更新します。
 
 6. **RetailSDK\POS** から **ModernPOS.sln**、または **CloudPos.sln** を開きます。
-7. **POS.Extensions** プロジェクトにある **tsconfig.json** ファイルを開きます。 **除外**セクションで、エントリを**ライブラリ** フォルダに追加します。
+7. **POS.Extensions** プロジェクトにある **tsconfig.json** ファイルを開きます。 **除外** セクションで、エントリを **ライブラリ** フォルダに追加します。
 
     ```typescript
     "exclude": [

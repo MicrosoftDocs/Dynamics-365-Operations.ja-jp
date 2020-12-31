@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: f37cbda01d294a805e43b67a71959aa6a46ea6e8
-ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
+ms.openlocfilehash: 8f54caeec9c71c4a1d1c7fa28f88da73c4bbc924
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3968786"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683969"
 ---
 # <a name="commerce-data-residency"></a>Commerce データ所在地
 
@@ -35,7 +34,7 @@ Commerce Scale Unit (クラウド) を初期化するときは、ホストする
 
 本社とは異なる場所のデータ センターで RCSU を初期化すると、データはこれらのデータ センター間を定期的に同期して移動します。 システムは特定の種類のデータを転送するようにコンフィギュレーション済みです。 このコンフィギュレーションを変更して異なるデータを同期できます。
 
-データ同期コンフィギュレーションを表示するには、**Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **スケジューラ ジョブ**に移動してデータ同期ジョブとサブジョブを表示します。 同期中のフィールドを表示するには、サブジョブをクリックします。 
+データ同期コンフィギュレーションを表示するには、**Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **スケジューラ ジョブ** に移動してデータ同期ジョブとサブジョブを表示します。 同期中のフィールドを表示するには、サブジョブをクリックします。 
 
 ## <a name="synchronize-specific-segments-of-records"></a>レコードの特定の区分を同期する
 
@@ -45,11 +44,11 @@ Commerce Data Exchange (CDX) を構成して、レコードの特定の区分の
 
 同期するレコード区分を構成する前に、チャネル データベース グループを構成する必要があります。 これらのデータベース グループは、セグメント化されたデータを同期する各 CSU に対して構成する必要があります。 同じチャネル データベース グループ内のすべての CSU は、その CSU 内のすべてのチャネルにサービスを提供するのに必要なデータを受け取ります。 セグメント化されたデータを同期させる予定の各 CSU チャネル データベースに対して、別々のデータベース グループを作成する必要があります。 それには、次の手順を実行します:
 
-1. **Retail と Commerce** \> **Headquarters の設定** \> **Commerce スケジューラ** \> **チャネル データベース グループ**の順に移動します。
+1. **Retail と Commerce** \> **Headquarters の設定** \> **Commerce スケジューラ** \> **チャネル データベース グループ** の順に移動します。
 2. セグメント化されたデータを同期させる各 CSU に対して新しいデータベース グループを作成します。
-3. **Retail と Commerce** \> **Retail と Commerce IT** \> **配送スケジュール**の順に移動します。
+3. **Retail と Commerce** \> **Retail と Commerce IT** \> **配送スケジュール** の順に移動します。
 4. 新しく作成されたチャンネル データベース グループを各スケジューラ ジョブに追加します。
-5. **Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **チャネル データベース**の順に移動します。
+5. **Retail とコマース** \> **バックオフィスの設定** \> **コマース スケジューラ** \> **チャネル データベース** の順に移動します。
 6. 対応する Commerce Scale Unit (クラウド) のチャネル データベースを選択します。
 7. **編集** を選択し、ステップ 2 で作成したチャネル データベース グループを選択します。
 8. **保存** を選択します。 

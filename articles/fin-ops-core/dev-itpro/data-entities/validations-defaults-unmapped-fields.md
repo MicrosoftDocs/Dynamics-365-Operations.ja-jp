@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 4624
 ms.assetid: 7ea995fa-8ea0-403d-8a68-f19993c40a6d
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db251b813a99983cf3b8383a2fcea61a8f818881
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 3d850ca2fbaa417768493c49d7da4adc2363ec08
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666844"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681172"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
@@ -43,7 +42,7 @@ ms.locfileid: "2666844"
 
 [![redo1](./media/redo1-1024x582.png)](./media/redo1.png)
 
-データ エンティティからフィールド値がマップされたデータ ソース フィールドにコピーされた後、フィールドの検証は設定されたフィールドで実行されます。 検証にはテーブル レベルの **validateField** が含まれ、**AllowEdit** および **AllowEditOnCreate** を検証します。 エラーにより検証が失敗した場合、残りのフィールドの検証が続行されます。 最後に、データ ソースのいずれかの検証プロセス中に発生したエラーが発生したかどうかを、検証によって確認します。 エラーがあった場合、この時点でプロセス エラーが発生するようになり、テーブル レベルの **validateWrite()** は呼び出されません。 バックエンド テーブルに対して **validateField** をスキップするには、コンシューマーは**DataEntity.skipDataSourceValidateField(Int \_DataEntityFieldId, ブール値 \_skip)** を呼び出します。 このメソッドのフィールド ID は、データ エンティティにマップされたフィールドのフィールド ID であり、フィールドに、バックエンド テーブルのフィールドではないことに注意してください。 次の API を使用することによって、コンシューマーに関係なく、特定のフィールドの検証をスキップできます。
+データ エンティティからフィールド値がマップされたデータ ソース フィールドにコピーされた後、フィールドの検証は設定されたフィールドで実行されます。 検証にはテーブル レベルの **validateField** が含まれ、**AllowEdit** および **AllowEditOnCreate** を検証します。 エラーにより検証が失敗した場合、残りのフィールドの検証が続行されます。 最後に、データ ソースのいずれかの検証プロセス中に発生したエラーが発生したかどうかを、検証によって確認します。 エラーがあった場合、この時点でプロセス エラーが発生するようになり、テーブル レベルの **validateWrite()** は呼び出されません。 バックエンド テーブルに対して **validateField** をスキップするには、コンシューマーは **DataEntity.skipDataSourceValidateField(Int \_DataEntityFieldId, ブール値 \_skip)** を呼び出します。 このメソッドのフィールド ID は、データ エンティティにマップされたフィールドのフィールド ID であり、フィールドに、バックエンド テーブルのフィールドではないことに注意してください。 次の API を使用することによって、コンシューマーに関係なく、特定のフィールドの検証をスキップできます。
 
 [![Over9](./media/over9.png)](./media/over9.png)
 
@@ -55,7 +54,7 @@ ms.locfileid: "2666844"
 
 [![Over10](./media/over10.png)](./media/over10.png)
 
-バック エンド テーブルに定義されている**Table.ValidateDelete** レコード レベル **ValidateDelete** 検証は、データ エンティティの削除を実行すると自動的に発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 これらの検証は、削除がデータ ソースに適用される直前に行われます。 検証が失敗すると、エラーが発生し、その他のデータ ソースのプロセスが停止されます。
+バック エンド テーブルに定義されている **Table.ValidateDelete** レコード レベル **ValidateDelete** 検証は、データ エンティティの削除を実行すると自動的に発生します。 これは、すべてのパス (X++、OData など) に当てはまります。 これらの検証は、削除がデータ ソースに適用される直前に行われます。 検証が失敗すると、エラーが発生し、その他のデータ ソースのプロセスが停止されます。
 
 [![Over11](./media/over11.png)](./media/over11.png)
 
@@ -138,7 +137,7 @@ ms.locfileid: "2666844"
 [![Captureb](./media/captureb.png)](./media/captureb.png)
 
 ## <a name="unmapped-fields"></a>マップされていないフィールド
-データ エンティティは、データ ソースのフィールドに直接マップされているフィールドに*マップされていない*フィールドを追加できます。 マップされていないフィールドの値を生成するメカニズムは 2 つあります。
+データ エンティティは、データ ソースのフィールドに直接マップされているフィールドに *マップされていない* フィールドを追加できます。 マップされていないフィールドの値を生成するメカニズムは 2 つあります。
 
 - カスタム X++ コード
 - Microsoft SQL Server によって実行される SQL

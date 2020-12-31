@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce 10.0.15 (2021 年 1 月) のプレビュー機能
+title: Dynamics 365 Commerce 10.0.15 (2021 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.15 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 10/09/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4df1ca667684f25b133a9a582c2216614b08bd37
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: eaac3dd2c46b032912245219b3b160998d7c52a9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974774"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665251"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10015-january-2021"></a>Dynamics 365 Commerce 10.0.15 (2021 年 1 月) のプレビュー機能
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10015-january-2021"></a>Dynamics 365 Commerce 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.15 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.644 で、次のスケジュールで使用できます。
 
@@ -67,8 +67,8 @@ Dynamics 365 Commerce 10.0.15 には、プラットフォーム更新プログ�
 
 [Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
 

@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18671
 ms.assetid: 8917c8ca-53dd-49f4-9e41-a3ac1fd9c293
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c27ad9758505c0f95fb65d5e9054fd430ae544c3
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 30c5f0700fa0a5a44adc048e4710b0cfaf29372e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812155"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682587"
 ---
 # <a name="methodologies-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での方法
 

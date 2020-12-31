@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18731
 ms.assetid: 88358334-0848-4463-9640-73af8aa36953
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8a64c8da5962e6a1e0f5f638e98d959d153d3f68
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 26f865a0ea45498d84c721163e540ac211843be1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983718"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680024"
 ---
 # <a name="updates-for-ax-2012-r3-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム
 
