@@ -18,11 +18,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4ad9a9bdf8afdbd8713c973cd8a70781b51c365c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175800"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408140"
 ---
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
@@ -57,7 +57,7 @@ ms.locfileid: "2175800"
 -   切り下げた分析コードごとの減価償却費 = 1.00 通貨単位
 -   固定資産の合計の切り下げた減価償却費 = 1.00 × 100 = 100 通貨単位
 
-各分析コードに割り当てる合計の切り下げた減価償却費が丸める額よりも小さい場合、この配賦ルールは減価償却に適用しません。 代わりに、減価償却額は主勘定に転記されるか、**固定資産転記プロファイル**  ページで設定する転記プロファイルを使用して相殺されます。 これらおよび同様のシナリオを回避するために、固定資産減価償却の丸めルールを**通貨**ページで手動で調整できます。
+各分析コードに割り当てる合計の切り下げた減価償却費が丸める額よりも小さい場合、この配賦ルールは減価償却に適用しません。 代わりに、減価償却額は主勘定に転記されるか、**固定資産転記プロファイル**  ページで設定する転記プロファイルを使用して相殺されます。 これらおよび同様のシナリオを回避するために、固定資産減価償却の丸めルールを **通貨** ページで手動で調整できます。
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)

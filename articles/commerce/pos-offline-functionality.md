@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 049fcc7d40043bae6f330fcf2339363e66888fea
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004676"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408664"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 
@@ -46,7 +46,7 @@ Modern POS のステータス ヘッダーは現在の接続ステータスを�
 
 ### <a name="creating-a-button-to-manually-switch-between-online-and-offline-modes"></a>手動でオンラインとオフライン モードを切り替えるためのボタンを作成
 
-Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。 POS 操作 **917 – データベース接続ステータス**のボタンを作成します。 このボタンの名前は、POS が Commerce Scale Unit に接続されている場合は**接続解除**となり、接続解除されている場合は**接続**となります。 このボタンは接続の表示、Commerce Scale Unit との接続解除および接続に使用できます。
+Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。 POS 操作 **917 – データベース接続ステータス** のボタンを作成します。 このボタンの名前は、POS が Commerce Scale Unit に接続されている場合は **接続解除** となり、接続解除されている場合は **接続** となります。 このボタンは接続の表示、Commerce Scale Unit との接続解除および接続に使用できます。
 
 [![Retail Modern POS の接続解除ボタン](./media/details-1024x537.png)](./media/details.png)
 

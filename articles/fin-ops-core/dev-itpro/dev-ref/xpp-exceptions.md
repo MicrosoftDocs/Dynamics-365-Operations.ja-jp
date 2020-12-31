@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150213
 ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3630e20dbac33c8c4ec76a5fb93f3c59bac94660
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: fdea8c4c88489296f6e48e8802ad44bfa47baead
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029424"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409237"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
@@ -30,7 +29,7 @@ ms.locfileid: "3029424"
 
 このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。 
 
-*例外*はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の System.Exception クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー**列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
+*例外* はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の System.Exception クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー** 列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
 
 **Global::error** メソッドは多くの場合、情報ログに診断情報を書き込む最善の方法です。 たとえば、メソッドは無効な入力パラメーター値を受け取る場合があります。 この場合、メソッドは例外をスローして、このエラー状況を処理するためのロジックを含む **catch** コード ブロックにすぐにコントロールを転送します。 例外がスローされる場合、コントロールを受け取る **Catch** ブロックの場所を必ずしも知る必要はありません。
 
@@ -42,7 +41,7 @@ ms.locfileid: "3029424"
 throw Exception::error;
 ```
 
-列挙値をスローするのではなく、**Global::error** メソッドの出力を**スロー**のオペランドとして使用することがベスト プラクティスです。
+列挙値をスローするのではなく、**Global::error** メソッドの出力を **スロー** のオペランドとして使用することがベスト プラクティスです。
 
 ```xpp
 throw Global::error("The parameter value is invalid.");
@@ -92,7 +91,7 @@ catch
 <strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 
 
 > [!NOTE] 
-> **再試行**ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、**試行**ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
+> **再試行** ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、**試行** ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
 
 ```xpp
 try 
@@ -119,7 +118,7 @@ finally
 
 -   呼び出しスタックの最も外側のフレームで、すべての明細書を含む **try** ブロックがあります。
 -   最も外側の **catch** リストの最後に非修飾の **catch** ブロックがあります。
--   **例外**列挙値を直接スローするのは避けてください。
+-   **例外** 列挙値を直接スローするのは避けてください。
 -   **Global** クラスの **Global::error**、**Global::warning**、または **Global::info** のいずれかのメソッドから返された列挙値をスローします。 (暗黙的 **Global::** 接頭語を省略することができます)。
 -   情報ログに表示されていない例外をキャッチするとき、**Global::info** 関数を呼び出してそれを表示します。
 
@@ -161,7 +160,7 @@ catch(Exception::CLRError)
 
 ## <a name="global-class-methods"></a>グローバル クラス メソッド
 
-このセクションでは、いくつかの**グローバル**クラス メソッドについて詳しく説明します。 これらのクラスのメソッドには、**Global::error**、**Global::info**、**Global::exceptionTextFallThrough** が含まれます。
+このセクションでは、いくつかの **グローバル** クラス メソッドについて詳しく説明します。 これらのクラスのメソッドには、**Global::error**、**Global::info**、**Global::exceptionTextFallThrough** が含まれます。
 
 ### <a name="globalerror-method"></a>Global::error メソッド
 
@@ -174,7 +173,7 @@ static Exception error
     SysInfoAction _sysInfoAction = null)
 ```
 
-戻り値の型は、**Exception::Error** 列挙値です。 **error** メソッドは例外をスローしません。 **throw** ステートメントで使用できる列挙値を提供するだけです。 **throw** ステートメントは例外をスローします。 **エラー**メソッドのパラメーターの説明を次に示します。 最初のパラメーターのみ必要です。
+戻り値の型は、**Exception::Error** 列挙値です。 **error** メソッドは例外をスローしません。 **throw** ステートメントで使用できる列挙値を提供するだけです。 **throw** ステートメントは例外をスローします。 **エラー** メソッドのパラメーターの説明を次に示します。 最初のパラメーターのみ必要です。
 
 - <strong>SysInfoLogStr</strong> txt は、メッセージ テキストの <strong>str</strong> です。 また、<strong>strFmt("@SYS12345", strThingName)</strong> などのラベルの参照にもなります。
 - **URL** helpUrl は、アプリケーション エクスプローラーのヘルプ トピックの場所への参照です (**"KernDoc:\\\\\\\\Functions\\\\substr"**)。 \_sysInfoAction が提供された場合、このパラメータは無視されます。
@@ -182,7 +181,7 @@ static Exception error
 
 ### <a name="globalinfo-method"></a>Global::info メソッド
 
-**Global::info** メソッドは、情報ログにテキストを表示するために頻繁に使用します。 プログラムでは、**情報 (「メッセージ。」)** としてよく書き込まれます。 **情報**メソッドは **Exception::Info** 列挙値を返しますが、まれに予期しないことが発生するため、**Exception::Info** をスローします。
+**Global::info** メソッドは、情報ログにテキストを表示するために頻繁に使用します。 プログラムでは、**情報 (「メッセージ。」)** としてよく書き込まれます。 **情報** メソッドは **Exception::Info** 列挙値を返しますが、まれに予期しないことが発生するため、**Exception::Info** をスローします。
 
 ### <a name="globalexceptiontextfallthrough-method"></a>Global::exceptionTextFallThrough メソッド
 
@@ -422,7 +421,7 @@ End of job.
 
 次のコード例は 2 つの部分で示されています。 
 
-- 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが**エラー** メソッドに渡されます。 
+- 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが **エラー** メソッドに渡されます。 
 - 2 番目の部分は、**SysInfoAction\_PrintWindow\_Demo** クラスを示します。
 
 #### <a name="part-1-calling-globalerror"></a>パート 1: Global::error を呼び出す
@@ -492,11 +491,11 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 | DuplicateKeyException             | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | DuplicateKeyExceptionNotRecovered | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | エラー                             | 致命的なエラーが発生しました。 トランザクションは停止されました。                                                                                                           |
-| 情報                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報**例外をスローしないでください。                                                                             |
+| 情報                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報** 例外をスローしないでください。                                                                             |
 | 内部                          | 開発システムで内部エラーが発生しました。                                                                                                               |
 | 数値                           | **str2int**、**str2int64**、または **str2num** 機能を使用中にエラーが発生しました。                                                                     |
 | 順番                          |                                                                                                                                                                     |
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
-| 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
+| 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。                         |
 | [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |

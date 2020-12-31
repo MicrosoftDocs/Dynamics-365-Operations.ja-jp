@@ -19,17 +19,17 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: aaa4a08f65e4a3452782cf2b928464dff27ed59b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189663"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445015"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>請求書照合と会社間発注
 
 [!include [banner](../includes/banner.md)]
 
-会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 **買掛金管理パラメーター** フォームの**不一致のある請求書を転記**フィールドが**承認の要求**に設定されている場合は、請求書照合検証が実行されます。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。
+会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 **買掛金管理パラメーター** フォームの **不一致のある請求書を転記** フィールドが **承認の要求** に設定されている場合は、請求書照合検証が実行されます。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。
 
 このトピックの例では、会社間取引に次の設定を使用します:
 -   Fabrikam Purchase は、購買側の法人です。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 63853
 ms.assetid: 46e5e47b-2c80-44fd-a7a3-e41884da2f55
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ae06fcc4b26cfd9213bbd3dd7a6c3f44a69537
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: 598645eb5ddf42352b3d3f056afa650592acfeee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971485"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408756"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 
@@ -34,7 +33,7 @@ ms.locfileid: "3971485"
 
 ### <a name="application-class-and-table-documentation-is-in-visual-studio"></a>アプリケーション クラスおよびテーブル ドキュメントは Visual Studio にあります
 
-Microsoft Visual Studio のアプリケーション クラスについては、ドキュメントを参照してください。 アプリケーション エクスプローラーでクラス名を検索し、そのコードを表示します。 クラスに関する追加のメタデータは**プロパティ** ウィンドウ内にあります。 [技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) 内のすべてのテーブルの一覧をダウンロードすることができます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+Microsoft Visual Studio のアプリケーション クラスについては、ドキュメントを参照してください。 アプリケーション エクスプローラーでクラス名を検索し、そのコードを表示します。 クラスに関する追加のメタデータは **プロパティ** ウィンドウ内にあります。 [技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) 内のすべてのテーブルの一覧をダウンロードすることができます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
 
 ### <a name="programming-with-application-tables-and-classes"></a>アプリケーション テーブルおよびクラスを使用したプログラミング
 
@@ -47,13 +46,13 @@ Microsoft Visual Studio のアプリケーション クラスについては、�
 
 ### <a name="design-pattern-of-private-new-in-application-classes"></a>アプリケーション クラスの新規プライベート設計パターン
 
-すべてのアプリケーション クラスはアプリケーション エクスプ ローラー &gt; クラスの下にあります。 クラスにアプリケーション エクスプローラーの**新規**ノードがなくても、すべてのアプリケーション クラスに `new` という名前のコンストラクター メソッドがあります。 クラスに明示的な**新規**ノードがない場合、暗黙的な**新規**メソッドがパブリックになります。 アプリケーション クラスで場合によって使用される設計パターンは、明示的な**新規**コンストラクター メソッドを**プライベート**として宣言します。 その後、**パブリック静的**メソッドを追加して**新規**メソッドを呼び出します。 静的メソッドは、必要に応じてさまざまな条件に基づき、**新規**メソッドの呼び出しを制限または制御できます。
+すべてのアプリケーション クラスはアプリケーション エクスプ ローラー &gt; クラスの下にあります。 クラスにアプリケーション エクスプローラーの **新規** ノードがなくても、すべてのアプリケーション クラスに `new` という名前のコンストラクター メソッドがあります。 クラスに明示的な **新規** ノードがない場合、暗黙的な **新規** メソッドがパブリックになります。 アプリケーション クラスで場合によって使用される設計パターンは、明示的な **新規** コンストラクター メソッドを **プライベート** として宣言します。 その後、**パブリック静的** メソッドを追加して **新規** メソッドを呼び出します。 静的メソッドは、必要に応じてさまざまな条件に基づき、**新規** メソッドの呼び出しを制限または制御できます。
 
 ## <a name="system-classes-and-tables"></a>システム クラスおよびテーブル
 
 ### <a name="system-api-class-and-table-documentation-is-on-the-microsoft-docs-site"></a>システム API、クラス、およびテーブル ドキュメントが Microsoft ドキュメント サイトにあります
 
-Microsoft docs サイトで使用可能なアプリケーション エクスプローラーの**システム ドキュメント**の下に、表示されているクラスおよび機能のドキュメント。
+Microsoft docs サイトで使用可能なアプリケーション エクスプローラーの **システム ドキュメント** の下に、表示されているクラスおよび機能のドキュメント。
 
 ## <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

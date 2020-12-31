@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7f5f62d33f6ffedb3fcefcdd9a83b922c1588df0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189042"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445089"
 ---
 # <a name="set-up-bills-of-exchange"></a>受取手形の設定
 
@@ -48,19 +48,19 @@ ms.locfileid: "2189042"
 
 ## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>受取手形の売掛金勘定パラメータの設定
 
-**売掛金勘定パラメーター**ページで、受取手形の既定の転記プロファイルは **元帳と消費税**タブで入力されます。番号順序は**番号順序**で定義できます。
+**売掛金勘定パラメーター** ページで、受取手形の既定の転記プロファイルは **元帳と消費税** タブで入力されます。番号順序は **番号順序** で定義できます。
 
 ## <a name="set-up-journal-names-for-bills-of-exchange"></a>為替手形の仕訳帳名の設定
 
 
-**仕訳帳名** ページでは、為替手形に使用する仕訳帳名を最低 5 個作成します。 仕訳帳のタイプを次に示します。
+**仕訳帳名** ページでは、為替手形に使用する仕訳帳名を 5 個以上作成します。 仕訳帳のタイプを次に示します。
 -   **顧客振出受取手形** – 受取手形振出仕訳帳の仕訳名を作成します。
 -   **顧客受取拒否受取手形** – 受取手形受取拒否仕訳帳の仕訳名を作成します。
 -   **顧客再振出受取手形** – 受取手形再振出仕訳帳の仕訳名を作成します。
 -   **顧客銀行送金為替** – 送金仕訳帳の仕訳帳名を作成します。
 -   **顧客決済受取手形** – 受取手形決済仕訳帳の仕訳名を作成します。
 
-それぞれの受取手形仕訳の仕訳伝票ページの、**受取手形** タブで受取手形に関する情報を入力します。転記済の為替手形仕訳帳明細行は、**受取手形仕訳帳照会**ページ、および**受取手形統計**ページで確認することができます。
+それぞれの受取手形仕訳の仕訳伝票ページの、**受取手形** タブで受取手形に関する情報を入力します。転記済の為替手形仕訳帳明細行は、**受取手形仕訳帳照会** ページ、および **受取手形統計** ページで確認することができます。
 
 ## <a name="set-up-methods-of-payment-for-bills-of-exchange"></a>為替手形の支払方法の設定
 

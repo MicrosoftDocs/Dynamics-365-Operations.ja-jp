@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: a93814746d9426417ef402cd1bd339234e668484
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 5f08262953367b63ce3a7bbf73a244879a68a777
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112276"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409274"
 ---
 # <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 

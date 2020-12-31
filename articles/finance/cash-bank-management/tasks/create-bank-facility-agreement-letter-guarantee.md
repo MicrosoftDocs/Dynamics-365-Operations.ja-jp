@@ -16,11 +16,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 165552cade2a38d9605240ab6a8ff423585786ca
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899496"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445172"
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>信用保証状の銀行融資契約の作成
 

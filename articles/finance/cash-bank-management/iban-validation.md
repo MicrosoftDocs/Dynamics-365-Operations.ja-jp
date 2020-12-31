@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977818"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445203"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>国際銀行番号 (IBAN) 口座の検証を管理
 
@@ -32,16 +32,16 @@ IBAN の構造についての情報は、Microsoft Dynamics 365 Finance に格�
 
 ## <a name="set-up-iban-structures"></a>IBAN 構造の設定
 
-1. **現金および銀行管理\>設定\> IBAN 構造**に移動します。
+1. **現金および銀行管理\>設定\> IBAN 構造** に移動します。
 2. 国や地域ごとの IBAN 構造は、自動的に設定されていることに注意してください。
 3. 特定の国または地域の構造をカスタマイズする場合は、それらを編集できます。
-4. 構造定義は、それぞれの新しいリリースの一部になります。 **構造をリセットする**メニューを使用して、各更新後に最新の定義を読み込むことができます。
+4. 構造定義は、それぞれの新しいリリースの一部になります。 **構造をリセットする** メニューを使用して、各更新後に最新の定義を読み込むことができます。
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>銀行口座の IBAN 構造を検証
 
-1. **現金および銀行管理\>銀行口座\>銀行口座**に移動します。
+1. **現金および銀行管理\>銀行口座\>銀行口座** に移動します。
 2. 銀行口座を作成します。
-3. **追加情報**クイック タブで、IBAN を入力します。
+3. **追加情報** クイック タブで、IBAN を入力します。
 
     IBAN の長さがそれぞれの国や地域に定義されている長さと一致しない場合、警告メッセージが表示されます。 IBAN の長さが IBAN 構造で指定された長さと一致しない場合は続行できません。
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f11f92b6a3ff3107c38db674f2f328c705d0225
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a752212daa9bfc70e93571e36cb311d433437c68
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191665"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408967"
 ---
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 
@@ -34,11 +33,11 @@ ms.locfileid: "2191665"
 
 この新機能は、ビルド プロセスにおけるパッケージ作成ステップの新しいオプション パラメーターを公開します。 このパラメーターはビルド変数で管理されるため、簡単に調整できます。
 
-1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの**ビルド**にある**すべての定義タブ**でビルド定義を検索します。 省略記号 (...)、**編集**の順にクリックします。
+1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの **ビルド** にある **すべての定義タブ** でビルド定義を検索します。 省略記号 (...)、**編集** の順にクリックします。
 
     ![ビルド定義を編集](media/builddef_edit.png)
 
-1. **変数**タブで、新しいビルド定義が **PackagingExclusions** という名前の変数を持つこと通知します。
+1. **変数** タブで、新しいビルド定義が **PackagingExclusions** という名前の変数を持つこと通知します。
 
     ![PackagingExclusions 変数](media/builddef_packexclvariable.png)
 
@@ -60,10 +59,10 @@ ms.locfileid: "2191665"
 > [!NOTE]
 > この機能は、ビルド仮想マシン (VM) をプラットフォーム更新プログラム 4 以降に更新した後でのみ、ビルド定義に追加できます。
 
-1. **変数**タブで、ページの下部にある **+ 追加**をクリックします。
-1. **名前**列に、**PackagingExclusions** と入力します。 最後の列で、**キュー時に設定可能**チェック ボックスをオンにします。
-1. **タスク**タブで、**生成パッケージ**タスクを検索します。 クリックして選択します。
-1. ページの右側で、**引数**パラメーターを見つけます。 テキスト ボックスをクリックし、End キーを押すか、テキスト ボックスの最後までスクロールします。 新しいビルド定義には、前に定義した **PackagingExclusions** 変数を渡す新しい引数があります。 ただし、既存のビルド定義については、スペースを追加し、さらにパラメーターの末尾に次のテキストを追加します: **-ExclusionList "$(PackagingExclusions)"**
+1. **変数** タブで、ページの下部にある **+ 追加** をクリックします。
+1. **名前** 列に、**PackagingExclusions** と入力します。 最後の列で、**キュー時に設定可能** チェック ボックスをオンにします。
+1. **タスク** タブで、**生成パッケージ** タスクを検索します。 クリックして選択します。
+1. ページの右側で、**引数** パラメーターを見つけます。 テキスト ボックスをクリックし、End キーを押すか、テキスト ボックスの最後までスクロールします。 新しいビルド定義には、前に定義した **PackagingExclusions** 変数を渡す新しい引数があります。 ただし、既存のビルド定義については、スペースを追加し、さらにパラメーターの末尾に次のテキストを追加します: **-ExclusionList "$(PackagingExclusions)"**
 
     **引数** テキスト ボックスは次のようになります。
 

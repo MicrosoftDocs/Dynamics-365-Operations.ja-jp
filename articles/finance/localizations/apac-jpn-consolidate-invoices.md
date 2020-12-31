@@ -19,11 +19,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a8041d91e72560e832ed6a0ee4b1507c7a02a364
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175796"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408184"
 ---
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 
@@ -41,7 +41,7 @@ ms.locfileid: "2175796"
 -   期日
 
 ## <a name="calculating-the-invoice-amount-for-a-consolidated-invoice"></a>月次締め請求書の請求金額の計算
-**月次締め請求書**ページで月次締め請求書を作成および確認した後、次の金額が計算されます。
+**月次締め請求書** ページで月次締め請求書を作成および確認した後、次の金額が計算されます。
 
 -   **前回の請求金額** – 前の連結期間の合計請求金額。
 -   **以前に支払済の金額** – 前の連結期間に支払われた合計金額。

@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 71b67828af02fb8972b4f1caa28a45c8df2db5b7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982978"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408144"
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 

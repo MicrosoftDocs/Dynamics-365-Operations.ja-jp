@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6886e0f7b21e656d2cd984f6216362b861197a3f
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: 5fd9d82e28f122bd9a761cbba6a4953244d250cc
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325872"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4409497"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Windows で実行される任意のビルド エージェントで、X++ コードのビルドと配置可能なパッケージの作成プロセスを自動化できます。 これらのエージェントには、[Microsoft-ホステッド エージェント](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops)が含まれています。 この方法は、ビルド バーチャル マシン (VM) の配置の設定、保守、およびコストを回避するのに役立ちます。 また、ビルド エージェントの既存の設定を再利用して、他の .NET ビルド自動化を実行することもできます。
+Microsoft Windows で実行される任意のビルド エージェントで、X++ コードのビルドと配置可能なパッケージの作成プロセスを自動化できます。 これらのエージェントには、[Microsoft-ホステッド エージェント](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted)が含まれています。 この方法は、ビルド バーチャル マシン (VM) の配置の設定、保守、およびコストを回避するのに役立ちます。 また、ビルド エージェントの既存の設定を再利用して、他の .NET ビルド自動化を実行することもできます。
 
 > [!NOTE]
 > この機能は、コンパイルとパッケージングに限定されています。 このランタイムを必要とする X++ 単体テスト (SysTest)、データベースの同期、またはその他の機能 (Application Object Server \[AOS \]) やそのコンポーネントはサポートされていません。
@@ -56,16 +55,16 @@ X++ コードをビルドするには、X++ コンパイラ (xppc.exe) などの
 
 これらのパッケージを LCS からダウンロードし、ビルドを実行する Azure DevOps 組織内の Azure コンポーネント フィードに追加し ます。 Azure コンポーネントを作成し、NuGet パッケージを追加する方法の詳細については、次のトピックを参照してください。
 
-- [Azure DevOps サービスおよび TFS の NuGet パッケージの使用を開始する](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops)
-- [フィードの作成](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-a-feed)
-- [独自の NuGet パッケージの作成と公開](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-and-publish-your-own-nuget-package)
+- [Azure DevOps サービスおよび TFS の NuGet パッケージの使用を開始する](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget)
+- [フィードの作成](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-a-feed)
+- [独自の NuGet パッケージの作成と公開](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-and-publish-your-own-nuget-package)
 
 > [!NOTE]
-> 無料の Azure DevOps 組織には、Azure コンポーネントの限られたストレージしかありません。 ストレージ容量を解放するために、古いバージョンと使用していないバージョンを削除することを検討してください。 詳細については、[Azure コンポーネントのサインアップ](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops#billing-and-free-monthly-usage) を参照してください。
+> 無料の Azure DevOps 組織には、Azure コンポーネントの限られたストレージしかありません。 ストレージ容量を解放するために、古いバージョンと使用していないバージョンを削除することを検討してください。 詳細については、[Azure コンポーネントのサインアップ](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts#billing-and-free-monthly-usage) を参照してください。
 
 ビルド中に使用する必要があるパッケージを特定するには、ビルド時に nuget.exe ファイルと packages.config ファイルを用意する必要があります。 これらのファイルを作成し、ソース管理リポジトリに追加することをお勧めします。 これらのファイルのパスは NuGet コマンドの明示的な入力であるため、ソース管理内の任意の場所にファイルを格納でき ます。
 
-nuget.exe ファイルには、パッケージが格納されているソース フィードを持つ NuGet が含まれています。 packages.config ファイルでは、パッケージとそのバージョンが指定されています。 新しいバージョンに対してビルドする場合は、packages.config ファイルのバージョンを更新するだけで済みます。 サンプルの nuget.config ファイルを含む詳細については、[Azure Pipelines でのパッケージ管理 NuGet パッケージの復元](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore?view=azure-devops)を参照してください。
+nuget.exe ファイルには、パッケージが格納されているソース フィードを持つ NuGet が含まれています。 packages.config ファイルでは、パッケージとそのバージョンが指定されています。 新しいバージョンに対してビルドする場合は、packages.config ファイルのバージョンを更新するだけで済みます。 サンプルの nuget.config ファイルを含む詳細については、[Azure Pipelines でのパッケージ管理 NuGet パッケージの復元](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore)を参照してください。
 
 次の例は、一般的な X++ ビルドに必要な 3 つの主要なパッケージのための、packages.config ファイルを示しています。
 
@@ -80,7 +79,7 @@ nuget.exe ファイルには、パッケージが格納されているソース 
 
 ## <a name="creating-the-pipeline"></a>パイプラインの作成
 
-Azure DevOps は、ビルドを自動化するために使用できるパイプラインを提供します。 パイプラインには、YML と Classic の 2 つのタイプがあります。 YML パイプラインは、Git ソース管理リポジトリを使用している場合にのみ使用できます。 Classic パイプラインを使用して、Team Foundation バージョン管理 (TFVC) リポジトリをビルドする必要があります。 詳細については、 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops) を参照してください。
+Azure DevOps は、ビルドを自動化するために使用できるパイプラインを提供します。 パイプラインには、YML と Classic の 2 つのタイプがあります。 YML パイプラインは、Git ソース管理リポジトリを使用している場合にのみ使用できます。 Classic パイプラインを使用して、Team Foundation バージョン管理 (TFVC) リポジトリをビルドする必要があります。 詳細については、 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) を参照してください。
 
 このセクションでは、パイプラインで X++ コードを作成するために必要な手順について説明します。 [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub リポジトリでは、既存の Azure DevOps プロジェクトにインポートできるサンプル パイプラインを見つけることができます。
 
@@ -122,7 +121,7 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 ### <a name="creating-a-full-pipeline-that-includes-packaging"></a>パッケージを含む完全なパイプラインの作成
 
-利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser)を参照してください。
+利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](https://docs.microsoft.com/azure/devops/marketplace/install-extension)を参照してください。
 
 パイプライン全体は、少なくとも次の手順で構成されている必要があります。
 

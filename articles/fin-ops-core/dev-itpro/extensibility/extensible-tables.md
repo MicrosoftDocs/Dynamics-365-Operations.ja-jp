@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 77dcda47017109d4bc9e572d9d17656d0bec1eca
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bcce9ada0da548df3f43f2a26c825d8d4574d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183319"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408845"
 ---
 # <a name="write-extensible-tables"></a>拡張可能なテーブルの書き込み
 [!include [banner](../includes/banner.md)]

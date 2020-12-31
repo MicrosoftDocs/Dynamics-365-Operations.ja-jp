@@ -18,11 +18,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 97db4dd1d6a626b1c73b66336e7f92f9fc8b7f6e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645327"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409173"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1008-february-2020"></a>Dynamics 365 Finance バージョン 10.0.8 (2020 年 2 月) の新機能および変更された機能
 
@@ -63,8 +63,8 @@ Microsoft Dynamics 365 Finance 10.0.8 には、プラットフォーム更新プ
 
 [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 

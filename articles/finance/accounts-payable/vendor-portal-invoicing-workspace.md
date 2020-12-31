@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 626607814d6c747d74a13de284db097f0efd8a0c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445020"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>仕入先コラボレーションの請求ワークスペース
 
@@ -31,7 +31,7 @@ ms.locfileid: "2178716"
 
 このトピックでは、仕入先請求書を表示する方法、および仕入先コラボレーションの請求ワークスペースの表示から請求書を送信する方法について説明します。
 
-**仕入先コラボレーションの請求**ワークスペースは、仕入先請求書の情報を表示したり、ワークフロー機能を使用して請求書を提出するために使用されます。
+**仕入先コラボレーションの請求** ワークスペースは、仕入先請求書の情報を表示したり、ワークフロー機能を使用して請求書を提出するために使用されます。
 
 
 <a name="vendor-collaboration-invoicing-workspace"></a>仕入先コラボレーションの請求ワークスペース

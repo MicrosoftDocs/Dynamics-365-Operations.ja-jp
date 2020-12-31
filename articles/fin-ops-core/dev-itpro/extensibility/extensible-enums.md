@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 4d61d41b67cbc4e429d0e1a1020136beb04dbcc9
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 2f64514976964326f68d5fb4d69ebba90f45fdd4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984715"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409383"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 
@@ -45,11 +44,11 @@ ms.locfileid: "3984715"
 
 モデルと依存しているすべてのモデルをコンパイルすると、比較および整数への変換がコンパイラによってエラーとして検出されます。
     
-列挙値が使用されているロジックがで**小さなメソッド**で抽出されることを確認します。 この方法により、コマンド チェーン (CoC) を使用する拡張が、追加された列挙値を処理できます。
+列挙値が使用されているロジックがで **小さなメソッド** で抽出されることを確認します。 この方法により、コマンド チェーン (CoC) を使用する拡張が、追加された列挙値を処理できます。
 
-インスタンス化が列挙値に基づいている**構築**メソッドの場合、可能な場合は必ず切り替えブロックを **SysExtension** に置き換えます。 それ以外の場合、既定のブロックが拡張可能であることを確認します。 例については、**PurchRFQCaseCopying** クラスを参照してください。
+インスタンス化が列挙値に基づいている **構築** メソッドの場合、可能な場合は必ず切り替えブロックを **SysExtension** に置き換えます。 それ以外の場合、既定のブロックが拡張可能であることを確認します。 例については、**PurchRFQCaseCopying** クラスを参照してください。
 
-列挙が**切り替えブロック**で使用される場合、拡張可能ではないスローを持つか持たない既定のブロックを回避します。 列挙値に**長い切り替えケース ブロック**または **if...else ブロック**がある場合、列挙に関連する特定のロジックを処理するクラス階層を作成することを検討します。 例については、**PriceGroupTypeTradeAgreementMapping** クラス階層を参照してください。
+列挙が **切り替えブロック** で使用される場合、拡張可能ではないスローを持つか持たない既定のブロックを回避します。 列挙値に **長い切り替えケース ブロック** または **if...else ブロック** がある場合、列挙に関連する特定のロジックを処理するクラス階層を作成することを検討します。 例については、**PriceGroupTypeTradeAgreementMapping** クラス階層を参照してください。
 
 列挙値を使用するクエリ範囲に **in** キーワードを使用し、**in** キーワードが使用するコンテナーを拡張可能にします。
 

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 82f7c8947bcc2dab394ea24e28a3631cc8682e5a
-ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295249"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445135"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
@@ -78,7 +78,7 @@ ms.locfileid: "3295249"
 </table>
 
 ## <a name="set-up-a-positive-pay-format"></a>確認後支払形式の設定
-確認後支払ファイルは、データ エンティティを使用して作成されます。 確認後支払ファイルを生成する前に、小切手情報を銀行と通信できる形式に変換するのに使用する変換入力形式を設定する必要があります。 **確認後支払形式** ページで、ファイル形式の ID と説明を作成できます。 変換入力形式は、XML タイプにする必要があります。 特定の形式は、使用している変換ファイルによって異なります。 たとえば、サンプル XSLT (Extensible Stylesheet Language Transformations) ファイルは**XML-Element**形式を使用するよう指定されています。 **変換に使用されるファイルのアップロード** アクションを使用して、銀行が必要な形式の変換ファイルの場所を指定します。
+確認後支払ファイルは、データ エンティティを使用して作成されます。 確認後支払ファイルを生成する前に、小切手情報を銀行と通信できる形式に変換するのに使用する変換入力形式を設定する必要があります。 **確認後支払形式** ページで、ファイル形式の ID と説明を作成できます。 変換入力形式は、XML タイプにする必要があります。 特定の形式は、使用している変換ファイルによって異なります。 たとえば、サンプル XSLT (Extensible Stylesheet Language Transformations) ファイルは **XML-Element** 形式を使用するよう指定されています。 **変換に使用されるファイルのアップロード** アクションを使用して、銀行が必要な形式の変換ファイルの場所を指定します。
 
 ## <a name="example-xslt-file-for-positive-pay-file"></a>例: 確認後支払ファイル用 XSLT ファイル
 

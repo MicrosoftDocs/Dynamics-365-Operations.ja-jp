@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 315dce440696ef93125a00b9776e47935dda4c0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: cc53a87a6a511c66ecdfdccb5c870e98317db8cc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409247"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
@@ -86,7 +85,7 @@ ms.locfileid: "3984717"
 ## <a name="class-hierarchies"></a>クラス階層
 出荷時のパターンを使用できる新規または既存のクラス階層の場合、SysExtension フレームワークにより簡単に拡張可能になります。 これらの拡張は完全に切り離されるため、基本クラスに変更を加えなくても新しいサブクラスを追加することができます。 したがってより少ないコードが必要です。 さらに、コストラクトのコントラクトが変わらないので、パブリック アプリケーション プログラミング インターフェイス (API) への変更はありません。 したがって、リファクタリングは低リスクです。
     
-いくつかの既存のファクトリ メソッドは、インスタンス コンストラクターを使用してサブクラスをインスタンス化しない可能性があります。 代わりに、**コンストラクト**などの静的コンストラクターを呼び出すことができます。 これらのファクトリ メソッドに SysExtension フレームワークが使用される場合、重大な変更が発生します。サブクラスの静的コンストラクターが呼び出されなくなるためです。 このような場合は、既定のケースにのみ SysExtension フレームワークを使用します。
+いくつかの既存のファクトリ メソッドは、インスタンス コンストラクターを使用してサブクラスをインスタンス化しない可能性があります。 代わりに、**コンストラクト** などの静的コンストラクターを呼び出すことができます。 これらのファクトリ メソッドに SysExtension フレームワークが使用される場合、重大な変更が発生します。サブクラスの静的コンストラクターが呼び出されなくなるためです。 このような場合は、既定のケースにのみ SysExtension フレームワークを使用します。
     
 クラス階層構造の詳細については、次のブログ記事を参照してください。
 

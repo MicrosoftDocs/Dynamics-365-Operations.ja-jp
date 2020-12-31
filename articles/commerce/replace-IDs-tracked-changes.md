@@ -18,11 +18,11 @@ ms.author: brshoo
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: b306bf7f4311423d92163ce54f528223bec346d9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277103"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408714"
 ---
 # <a name="replace-user-ids-associated-with-tracked-content-changes"></a>追跡しているコンテンツの変更に関連付いたユーザー ID の置換
 
@@ -48,7 +48,7 @@ Dynamics 365 Commerce では、サイト ビルダー オーサリング ツー�
 
     ![[電子メール アドレスの管理] ダイアログ ボックスに入力された電子メール アドレス](./media/ReplaceEmailAddress.png)
 
-1. **OK** を選択してから、**保存**を選択します。 メッセージ ボックスに、入力したユーザー ID のレコードが更新されたことが通知されます。
+1. **OK** を選択してから、**保存** を選択します。 メッセージ ボックスに、入力したユーザー ID のレコードが更新されたことが通知されます。
 
 > [!NOTE]
 > サイト ビルダーは、すべてのユーザー ID の電子メール アドレスを、匿名化されたランダムに生成された文字列に置き換えて、電子メール アドレスへの CMS 参照をすべて削除します。 このアクションは、サイト ビルダー インスタンスに関連付けられた特定の E コマース環境 (テナント) で参照される履歴ログにのみ影響します。

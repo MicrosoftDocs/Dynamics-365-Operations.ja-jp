@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d3f943eabbc0d00363c172b00e4e660d05bd0833
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409101"
+---
 標準ユーザー承認テスト (UAT) 環境のデータベースを前回のポイントインタイムに復元するには、次のステップを実行します。
 
 1. ターゲット サンドボックスの **環境詳細** ページを開き、 メニュー オプションから **管理** > **データベースの移動** を選択します。

@@ -18,11 +18,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e4d3179ad299db60e0f1a0ed920012bbafc9e8b9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772885"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408183"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 
@@ -41,20 +41,20 @@ ms.locfileid: "2772885"
 | ステップ 4      | 借方: 減価償却累計額 (FA) **10,000** 借方: 減価償却累計額 (ARO) **863** 貸方: 設備 **10,863** 借方: ARO 負債 **1,000** 貸方: 他の支払 **1,000** |
 
 > [!NOTE]
->\** 手順 2 と 3 が、固定資産の耐用年数全体に複数回繰り返されます。
+>\* 手順 2 と 3 が、固定資産の耐用年数全体に複数回繰り返されます。
 
 ![ARO トランザクションの T 字勘定での表示](./media/aro-t-account.png) 
 
 ## <a name="setup-information"></a>設定情報
 ARO を使用するには、次の設定手順を完了する必要があります。
 
--   既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを**固定資産パラメーター** ページで設定します
--   固定資産グループを**固定資産グループ**ページで定義します
+-   既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを **固定資産パラメーター** ページで設定します
+-   固定資産グループを **固定資産グループ** ページで定義します
 -   減価償却の会計カレンダーを設定します
 -   現在の市場の割引率を使用する割引率スケジュールを設定して、ARO 金額を計算します
 -   資産に使用する ARO タイプと、ARO 金額の変更を転記する頻度を指定します
 -   ARO の見積償却原価計画を設定し、資産の耐用年数の会計期間ごとに ARO 金額をシミュレーションします
--   **資本化資産償却責務**と**資産償却債務 - 増加** **経費**のドキュメント タイプで使用する転記プロファイルを設定します。
+-   **資本化資産償却責務** と **資産償却債務 - 増加** **経費** のドキュメント タイプで使用する転記プロファイルを設定します。
 -   **処分する ARO** のトランザクション タイプである固定資産を転記する際に、トランザクション金額の取得元の勘定を設定します
 
 ## <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力

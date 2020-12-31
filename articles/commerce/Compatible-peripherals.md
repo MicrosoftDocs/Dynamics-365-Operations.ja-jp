@@ -11,20 +11,16 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.scope: ''
-ms.search.region:
-- Global for most topics. Set Country/Region name for localizations
-ms.author:
-- author's Microsoft alias
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.search.region: Global
+ms.author: rubendel
+ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2f1311985925133c4cb35e5d58b211d9d1ba2de0
-ms.sourcegitcommit: fac1d519a85eab0c936b54e0a9247f6a11842871
+ms.openlocfilehash: 8f08c8720cdfeea7678892a9b687d065b72dd802
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3177857"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4409583"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 
@@ -61,7 +57,7 @@ ms.locfileid: "3177857"
 > [!NOTE]
 > この互換性リストは、2018 年 9 月現在最新です。 デバイスが正常にテストされ、結果が Microsoft に送信されるにつれて、リストは徐々に増加します。
 
-## <a name="device-compatiblity-testing"></a>デバイス互換性テスト
+## <a name="device-compatibility-testing"></a>デバイス互換性テスト
 
 デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator) を参照してください。
 

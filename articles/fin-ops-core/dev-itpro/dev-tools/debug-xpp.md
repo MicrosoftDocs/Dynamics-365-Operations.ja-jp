@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 23921
 ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81c5bfa79dda5fc96b0733bdbef889cbf0106310
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 34bee541d100e90e3835933aa462884155378f14
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983686"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408894"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
@@ -40,11 +39,11 @@ X++ コードをデバッグするには、次の手順を実行します。
 
    [![赤い丸](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)
 
-3. スタートアップ プロジェクトおよびスタートアップ オブジェクトを設定します。 スタートアップ オブジェクトは、任意のフォーム、**main** メソッドを持つ任意のクラス、または任意のメニュー項目にすることができます。 スタートアップ オブジェクトはプロジェクトの **プロパティ** ウィンドウで設定することができます。 または、ソリューション エクスプローラーで要素を右クリックし、その後**スタートアップ オブジェクトとして設定**をクリックします。
+3. スタートアップ プロジェクトおよびスタートアップ オブジェクトを設定します。 スタートアップ オブジェクトは、任意のフォーム、**main** メソッドを持つ任意のクラス、または任意のメニュー項目にすることができます。 スタートアップ オブジェクトはプロジェクトの **プロパティ** ウィンドウで設定することができます。 または、ソリューション エクスプローラーで要素を右クリックし、その後 **スタートアップ オブジェクトとして設定** をクリックします。
 
    ![スタートアップ オブジェクトとして設定](./media/setasstartupobject.jpg)
 
-4. **デバッグ**メニューで、**デバッグの開始**をクリックします。
+4. **デバッグ** メニューで、**デバッグの開始** をクリックします。
 5. アプリケーションで、目的のコードを実行させるアクションを実行します。 標準的なアクションには、フォームを開くことが含まれます。 処理は、設定したブレークポイントで停止します。 
 
    [![実行](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)
@@ -53,7 +52,7 @@ X++ コードをデバッグするには、次の手順を実行します。
 
    [![ホバー](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Finance and Operations アプリケーションに固有である別のツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示**メニューで、**情報ログ**をクリックします。 
+   Finance and Operations アプリケーションに固有である別のツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示** メニューで、**情報ログ** をクリックします。 
 
    [![情報ログ](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 

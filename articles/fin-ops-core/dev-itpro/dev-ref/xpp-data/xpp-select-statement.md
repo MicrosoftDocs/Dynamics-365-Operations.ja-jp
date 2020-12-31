@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0ce6370b1d269a5c3d5f9212610be1804f814a0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 120518e8885c201de11d2faba45066b6a6cb5e49
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987266"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408736"
 ---
 # <a name="select-statement"></a>明細書を選択
 
@@ -29,14 +28,14 @@ ms.locfileid: "3987266"
 
 **select** ステートメントは、データベースからデータをフェッチまたは操作します。
 
-+ すべての**選択**ステートメントではレコードをフェッチするためテーブル変数を使用します。 この変数は、**select** 文を実行する前に宣言する必要があります。
++ すべての **選択** ステートメントではレコードをフェッチするためテーブル変数を使用します。 この変数は、**select** 文を実行する前に宣言する必要があります。
 + **select** ステートメントは、レコードを 1 つだけ、またはフィールドをフェッチします。 複数のレコードをフェッチまたは移動したりするには、**next** ステートメントまたは **[while select](xpp-while-select.md)** ステートメントを使用できます。
 
-    + **next** ステートメントは、テーブルの次のレコードをフェッチします。 **選択**ステートメントの前に、**次**ステートメントがある場合、エラーが発生します。 **次**ステートメントを使用する場合、**firstOnly** 検索オプションを使用しません。
+    + **next** ステートメントは、テーブルの次のレコードをフェッチします。 **選択** ステートメントの前に、**次** ステートメントがある場合、エラーが発生します。 **次** ステートメントを使用する場合、**firstOnly** 検索オプションを使用しません。
     + **while select** ステートメントを使用して複数のレコードを移動する方がより適切です。
 
 + **select** ステートメントの結果はテーブル バッファ変数に返されます。
-+ **選択**ステートメントのフィールド リストを使用すると、これらのフィールドでは、テーブル変数が使用されます。
++ **選択** ステートメントのフィールド リストを使用すると、これらのフィールドでは、テーブル変数が使用されます。
 
 ## <a name="select-example"></a>例の選択
 
@@ -110,7 +109,7 @@ ttsCommit;
 
 | 記号                |   | 式 |
 |-----------------------|---|------------|
-| *SelectStatement*     | = | *パラメーター*を**選択する** |
+| *SelectStatement*     | = | *パラメーター* を **選択する** |
 | *パラメーター*          | = | { *FindOption* } \[ *FieldList* **from** \] *TableBufferVariable* \[ *IndexClause* \] \[ *Options* \] \[ *WhereClause* \] \[ *JoinClause* \] |
 | *FindOption*          | = | **crossCompany** \[**:** *ContainerVariable*\] \| **reverse** \| **firstFast** \| *FirstOption* \| **forUpdate** \| **noFetch** \| *ForceOption* \| **forceSelectOrder** \| **forceNestedLoop** \| *LockOption* \| **repeatableRead** \| **validTimeState** |
 | *FirstOption*         | = | **firstOnly** \| **firstOnly10** \| **firstOnly100** \| **firstOnly1000** |
@@ -150,7 +149,7 @@ ttsCommit;
 
 ## <a name="grouping-and-ordering-the-query-results"></a>クエリ結果のグループ化および順序付け
 
-クエリは複数の **group by** 句を持つことができますが、フィールドは 1 つの**group by** 句のテーブル名で修飾できます。 テーブル名の修飾子を使用することをお勧めします。 **order by** 句は、**group by** と同じ構文パターンに従います。 両方の句が提供されている場合は、**join** (または **from**) 句の後に表示する必要があり、両方とも同じ **join** 句に存在する **where** 句よりも前にある必要があります。 すべての **group by**、**order by**、および**where** の各句を、最後の **join** 句のすぐ後に表示することをお勧めします。 次の例は、フィールドがテーブル名で修飾されている **group by** 句を示しています。
+クエリは複数の **group by** 句を持つことができますが、フィールドは 1 つの **group by** 句のテーブル名で修飾できます。 テーブル名の修飾子を使用することをお勧めします。 **order by** 句は、**group by** と同じ構文パターンに従います。 両方の句が提供されている場合は、**join** (または **from**) 句の後に表示する必要があり、両方とも同じ **join** 句に存在する **where** 句よりも前にある必要があります。 すべての **group by**、**order by**、および **where** の各句を、最後の **join** 句のすぐ後に表示することをお勧めします。 次の例は、フィールドがテーブル名で修飾されている **group by** 句を示しています。
 
 ```xpp
 CustTable custTable;
@@ -200,7 +199,7 @@ while select AccountNum from custTable
 
 ## <a name="using-where-order-by-and-index-hint-together-in-a-query"></a>クエリで where、order by、および index hint を一緒に使用する
 
-返されるデータを並べ替えるには、**select** ステートメントで **order by** キーワードを使用します。 **index hint** キーワードを使用して、クエリで使用するインデックスを指定し、インデックスで定義された方法で選択したレコードを並び替えます。 インデックスは、レコードの選択を最適化します。 特定の順序でレコードを選択するには、**インデックス ヒント**キーワードを**並べ替え**の式と組み合わせます。 出力を逆順に並べ替えるには、**逆**キーワードを使用します。 テーブルのインデックスが無効になっている場合 (インデックスの**有効**プロパティが**いいえ**に設定されている場合)、索引を参照する**選択**ステートメントは引き続き有効です。 ただし、インデックスがデータベースに存在しないため、データベースはデータを並べ替えるヒントとしてインデックスを使用できません。 次のテーブルは、**select** ステートメントで **index hint** および **order by** キーワードを使用する方法を示しています。
+返されるデータを並べ替えるには、**select** ステートメントで **order by** キーワードを使用します。 **index hint** キーワードを使用して、クエリで使用するインデックスを指定し、インデックスで定義された方法で選択したレコードを並び替えます。 インデックスは、レコードの選択を最適化します。 特定の順序でレコードを選択するには、**インデックス ヒント** キーワードを **並べ替え** の式と組み合わせます。 出力を逆順に並べ替えるには、**逆** キーワードを使用します。 テーブルのインデックスが無効になっている場合 (インデックスの **有効** プロパティが **いいえ** に設定されている場合)、索引を参照する **選択** ステートメントは引き続き有効です。 ただし、インデックスがデータベースに存在しないため、データベースはデータを並べ替えるヒントとしてインデックスを使用できません。 次のテーブルは、**select** ステートメントで **index hint** および **order by** キーワードを使用する方法を示しています。
 
 | タスク | 明細書を選択 |
 |------|-----|
@@ -225,7 +224,7 @@ select salesTable
 
 ## <a name="asc-keyword"></a>asc キーワード
 
-**asc** キーワードは、**order by** または **group by** 句のオプションです。 昇順の並べ替え順序を指定します。 **昇順**または**降順**のどちらも指定されない場合、並べ替えは降順になります。
+**asc** キーワードは、**order by** または **group by** 句のオプションです。 昇順の並べ替え順序を指定します。 **昇順** または **降順** のどちらも指定されない場合、並べ替えは降順になります。
 
 ```xpp
 CustTable custTable;
@@ -268,7 +267,7 @@ select crossCompany :conCompanies
 
 ## <a name="desc-keyword"></a>降順キーワード
 
-**desc** キーワードは、**order by** または **group by** 句のオプションです。 降順の並べ替え順序を指定します。 **昇順**または**降順**のどちらも指定されない場合、並べ替えは降順になります。
+**desc** キーワードは、**order by** または **group by** 句のオプションです。 降順の並べ替え順序を指定します。 **昇順** または **降順** のどちらも指定されない場合、並べ替えは降順になります。
 
 ```xpp
 CustTable custTable;
@@ -278,7 +277,7 @@ select * from custTable
 
 ## <a name="exists-keyword"></a>exists キーワード
 
-**exists** キーワードは、ブール値と**結合**句を返すメソッドです。
+**exists** キーワードは、ブール値と **結合** 句を返すメソッドです。
 
 ```xpp
 CtrTable ctrTable;
@@ -328,7 +327,7 @@ select firstOnly custTable
 **forceLiterals** キーワードは、最適化時に Microsoft SQL Server データベースに対して **where** 句で使用される実際値を明らかにするように、カーネルに指示します。 **forceLiterals** および **forcePlaceholders** キーワードは相互に排他的です。 詳細については、[forcePlaceholders キーワード](#forceplaceholders-keyword) セクションを参照してください。
 
 > [!WARNING]
-> **選択**明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。
+> **選択** 明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。
 
 ## <a name="forcenestedloop-keyword"></a>forceNestedLoop キーワード
 
@@ -348,7 +347,7 @@ while select forceNestedLoop custGroup
 
 ## <a name="forceplaceholders-keyword"></a>forcePlaceholders キーワード
 
-**forcePlaceholders** キーワードは、最適化時に SQL Server データベースに対して **where** 句で使用される実際値を明らかに**しない**ように、カーネルに指示します。 既定では、この動作は**結合**ステートメントではないすべてのステートメントで使用されます。 このキーワードを使用する利点は、他の検索値がある同様の明細書のアクセス計画をカーネルが再利用できることです。 欠点は、アクセス計画が計算されても、データの配布が不均一になる可能性があるという事実が考慮されないことです。 アクセス計画は、平均的なアクセス計画です。 **forcePlaceholders** および **forceLiterals** キーワードは相互に排他的です。
+**forcePlaceholders** キーワードは、最適化時に SQL Server データベースに対して **where** 句で使用される実際値を明らかに **しない** ように、カーネルに指示します。 既定では、この動作は **結合** ステートメントではないすべてのステートメントで使用されます。 このキーワードを使用する利点は、他の検索値がある同様の明細書のアクセス計画をカーネルが再利用できることです。 欠点は、アクセス計画が計算されても、データの配布が不均一になる可能性があるという事実が考慮されないことです。 アクセス計画は、平均的なアクセス計画です。 **forcePlaceholders** および **forceLiterals** キーワードは相互に排他的です。
 
 次の例では、**CustTable** テーブルと結合されている **CustGroup** テーブルを反復処理します。
 
@@ -499,7 +498,7 @@ while select forUpdate custTable
 
 ## <a name="join-keyword"></a>join キーワード
 
-**join** キーワードは、両方のテーブルで共有される列のテーブルを結合するために使用されます。 SQL に見られるような **on** キーワードがないため、結合基準は **where** 句で指定されます。 このキーワードは、テーブルをループして関連テーブルのトランザクションを更新する場合に必要な SQL ステートメントの数を減らします。 たとえば、テーブル内の 500 のレコードを処理し、別のテーブルで関連するレコードを更新します。 入れ子になった **while select** を使用する場合、データベースへの 501 トリップがあります。 ただし、**結合**を使用する場合、データベースへのトリップは 1 回だけになります。
+**join** キーワードは、両方のテーブルで共有される列のテーブルを結合するために使用されます。 SQL に見られるような **on** キーワードがないため、結合基準は **where** 句で指定されます。 このキーワードは、テーブルをループして関連テーブルのトランザクションを更新する場合に必要な SQL ステートメントの数を減らします。 たとえば、テーブル内の 500 のレコードを処理し、別のテーブルで関連するレコードを更新します。 入れ子になった **while select** を使用する場合、データベースへの 501 トリップがあります。 ただし、**結合** を使用する場合、データベースへのトリップは 1 回だけになります。
 
 ```xpp
 CustTable custTable;
@@ -673,7 +672,7 @@ select pessimisticLock custTable
 
 ## <a name="repeatableread-keyword"></a>repeatableRead キーワード
 
-この **repeatableRead** キーワードは、他の取引が現在の取引内のロジックによって読み取られたデータを変更する前に、現在の取引を完了する必要があることを指定します。 明示的なトランザクションは **ttsAbort** または最も外側の **ttsCommit** のいずれかで完了します。 スタンドアロンの **select** 明細書では、トランザクション期間は **select** コマンドの期間です。 ただし、このキーワードがコードに表示されない場合でも、データベースは時に、個々の**選択**ステートメントの **repeatableRead** と同等のものを実施します。 (動作は、テーブルをスキャンするかどうかを決定するためにデータベースが使用する方法によって異なります。) 詳細については、基になるリレーショナル データベース製品のドキュメントを参照してください。
+この **repeatableRead** キーワードは、他の取引が現在の取引内のロジックによって読み取られたデータを変更する前に、現在の取引を完了する必要があることを指定します。 明示的なトランザクションは **ttsAbort** または最も外側の **ttsCommit** のいずれかで完了します。 スタンドアロンの **select** 明細書では、トランザクション期間は **select** コマンドの期間です。 ただし、このキーワードがコードに表示されない場合でも、データベースは時に、個々の **選択** ステートメントの **repeatableRead** と同等のものを実施します。 (動作は、テーブルをスキャンするかどうかを決定するためにデータベースが使用する方法によって異なります。) 詳細については、基になるリレーショナル データベース製品のドキュメントを参照してください。
 
 ## <a name="reverse-keyword"></a>reverse キーワード
 
@@ -697,7 +696,7 @@ info(int642Str(custTable.Value));
 
 ## <a name="validtimestate-keyword"></a>validTimeState キーワード
 
-**validTimeState**キーワードは、**ValidTimeStateFieldType** プロパティが**なし**以外の値に設定されているテーブルの行を選択します。
+**validTimeState** キーワードは、**ValidTimeStateFieldType** プロパティが **なし** 以外の値に設定されているテーブルの行を選択します。
 
 ```xpp
 CustPackingSlipTransHistory history;

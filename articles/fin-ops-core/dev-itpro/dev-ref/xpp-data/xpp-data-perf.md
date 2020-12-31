@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: Operations
 ms.custom: 150273
 ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: ed433f69183b4eb323f4de6b9115cdb921125807
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af1980881454ce4ba22a1b7a9d683d4ae4ea15b6
+ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978198"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4409600"
 ---
 # <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セットベースからレコード単位への操作の変換
 
@@ -43,9 +42,9 @@ ms.locfileid: "3978198"
 | データベース ログが有効になっています。 | 有 | 有 | 有 | 無 | **skipDatabaseLog** |
 | オーバーライドされたメソッド | 有 | 有 | 有 | 有 | **skipDataMethods** |
 | 警告はテーブルの設定をします。 | 有 | 有 | 有 | 無 | **skipEvents** |
-| テーブルの **ValidTimeStateFieldType** プロパティが**なし**以外の値に設定されています。 | 有 | 有 | 有 | 有 | 該当なし |
+| テーブルの **ValidTimeStateFieldType** プロパティが **なし** 以外の値に設定されています。 | あり | あり | あり | あり | 適用できません |
 
-「上書きに使用」列で表示される**スキップ\*** 設定を使用して、パフォーマンスに悪影響を与える 1 つまたは複数の要因を明示的にスキップまたは無視できます。 何らかの理由で、前述の SQL 操作のいずれかがレコードごとの操作にダウングレードされた場合、すべての**スキップ\*** 設定は無視されます。 たとえば、次のコードでは、コンテナーまたはメモ フィールドが myTable で定義されている場合はこの方法をスキップする必要があると明確に示されていても、myTable テーブルで**挿入**メソッドが実行されます。
+「上書きに使用」列で表示される **スキップ\**設定を使用して、パフォーマンスに悪影響を与える 1 つまた複数の要因を明示的にスキップまたは無視できます。何らかの理由で、前述の SQL 操作のいずれかがレコードごとの操作にダウングレードされた場合、すべての* スキップ\**設定は無視されます。たとえば、次のコードでは、コンテナーまたはメモ フィールドが myTable で定義されている場合はこの方法をスキップする必要があると明確に示されていても、myTable テーブルで* 挿入** メソッドが実行されます。
 
 ```xpp
 public void tutorialRecordInsertList()

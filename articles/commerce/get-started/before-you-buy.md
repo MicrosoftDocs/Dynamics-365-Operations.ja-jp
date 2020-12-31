@@ -17,11 +17,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
 ms.openlocfilehash: fc5261925bbdc1037ec019e736a1c3358d60a2fe
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004673"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408959"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 

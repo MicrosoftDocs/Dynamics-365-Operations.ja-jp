@@ -19,11 +19,11 @@ ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
 ms.openlocfilehash: ae46dab5250fbe8096f43e420cb7ef33a5862af0
-ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3432050"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445095"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Service (RCS) - グローバリゼーション機能
 
@@ -45,7 +45,7 @@ Microsoft Regulatory Configuration Services (RCS) を使用すると、電子請
 
 Finance and Operations アプリ インスタンスで、次の手順を実行します。
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. RCS 環境が貴社にプロビジョニングされていない場合は、**Regulatory services – 構成** を選択し、続いてプロビジョニングの指示に従います。
 
 > [!NOTE]

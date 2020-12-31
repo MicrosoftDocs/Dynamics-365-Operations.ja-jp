@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371254"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445247"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Service (RCS) のグローバル レポジトリの電子レポート (ER) の構成を外部組織と共有する
 
@@ -48,7 +48,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
 共有する構成が既にグローバル リポジトリにアップロードされていることを確認するには、次の手順に従います。
 
-1. **電子レポート** ワークスペースで、超す営プロバイダーの**リポジトリ**を選択します。
+1. **電子レポート** ワークスペースで、超す営プロバイダーの **リポジトリ** を選択します。
 
     ![コンフィギュレーション プロバイダー](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
 
@@ -59,14 +59,14 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
 構成プロバイダーの配下に構成が作成された後は、**グローバル構成リポジトリ** ページの **共有** クイックタブを使用して外部組織と直接共有することができます。
 
-1. **電子レポート** ワークスペースで、超す営プロバイダーの**リポジトリ**を選択します。
+1. **電子レポート** ワークスペースで、超す営プロバイダーの **リポジトリ** を選択します。
 2. **グローバル リポジトリ** \>**開く** を選択します。 
 3. 共有する構成を選択します。
-4. **共有** クイック タブで、**組織**を選択します。
+4. **共有** クイック タブで、**組織** を選択します。
 
     ![クイック タブで共有する](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
 
-5. ダイアログ ボックスで、外部組織のドメイン名を入力し、**OK**を選択し ます。
+5. ダイアログ ボックスで、外部組織のドメイン名を入力し、**OK** を選択し ます。
 
     ![外部組織との構成バージョンを共有するダイアログボックス](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
 

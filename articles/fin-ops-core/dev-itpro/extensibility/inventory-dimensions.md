@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 0a96de1ef1975b21aff29204e8baba9d76bbd061
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: cced9a6ab6eb6db0c16a523ca31164c31d664155
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657304"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408843"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 

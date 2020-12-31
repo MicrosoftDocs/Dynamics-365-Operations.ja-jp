@@ -4,25 +4,24 @@ description: このトピックでは、システム テーブルについて説
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
-ms.topic: reference
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 104503
 ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e4ea0865e921e5e7b2c9a513ab9d52399f0b997
-ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
+ms.openlocfilehash: 815c2f264edf541f15bd82ec2ff0f013b50491e6
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502485"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4409710"
 ---
 # <a name="system-tables"></a>システム テーブル
 

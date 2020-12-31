@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 46cb82e0dbd15d9f37b1499dbe3f8319f3c5365c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4517b07828b5b58b5ea69656ca53e396802b4acb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183329"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409348"
 ---
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 
@@ -72,18 +71,18 @@ CoC は、さまざまな点で継承に似ています。 通常、他のユー
 ### <a name="best-practices-when-you-write-code"></a>コードの作成時のベスト プラクティス
 メソッドの置き換え可能な場合、CoC を使用して拡張することができ、次の実行をスキップできます。 メソッドを置き換え可能にできるようにする前に、拡張担当者がメソッドの実行をスキップした場合の機能への影響を十分に評価する必要があります。
             
-+ **\[Replaceable\]** を持つメソッドに、メソッドの責任を説明する XML ドキュメントがあることを確認**します**。
-+ 顧客が置き換えられたロジックをスキップして何もしないようにすうるには、**\[Replaceable\]** を使用**しません**。
-+ **SysExtension** を代わりに使用可能な場合は、ファクトリ メソッドに **\[Replaceable\]** を使用**しません**。
-+ メソッドがデータベースまたはクラスの状態を変更する場合、**\[Replaceable\]** の使用を**回避します**。
-+ メソッドが複数の工程を実行し、複数の責任を持つ場合、**\[Replaceable\]** の使用を**回避します**。 代わりに、それぞれが単一の責任を持つ別個のメソッドにメソッドをリファクタリングし、どのメソッドを実際に置き換え可能にする必要があるかを検討します。
-+ 変換を解決するために、**\[Replaceable\]** の使用を**検討します**。 
++ **\[Replaceable\]** を持つメソッドに、メソッドの責任を説明する XML ドキュメントがあることを確認 **します**。
++ 顧客が置き換えられたロジックをスキップして何もしないようにすうるには、**\[Replaceable\]** を使用 **しません**。
++ **SysExtension** を代わりに使用可能な場合は、ファクトリ メソッドに **\[Replaceable\]** を使用 **しません**。
++ メソッドがデータベースまたはクラスの状態を変更する場合、**\[Replaceable\]** の使用を **回避します**。
++ メソッドが複数の工程を実行し、複数の責任を持つ場合、**\[Replaceable\]** の使用を **回避します**。 代わりに、それぞれが単一の責任を持つ別個のメソッドにメソッドをリファクタリングし、どのメソッドを実際に置き換え可能にする必要があるかを検討します。
++ 変換を解決するために、**\[Replaceable\]** の使用を **検討します**。 
 
     **例:** 既定のブロックがスローを持つ列挙値より切り替えステートメントを使う列挙変換。
 
-+ ルックアップと jumpref をオーバーライドするために **\[Replaceable\]** を使用することを**検討します**。
++ ルックアップと jumpref をオーバーライドするために **\[Replaceable\]** を使用することを **検討します**。
  
 ### <a name="best-practices-for-extenders"></a>拡張担当者のベスト プラクティス
-+ 置き換えるロジックとは異なる責任を持つロジックを記述し**ません**。
-+ 置き換えロジックが適用されない場合、基本機能を呼び出し**ます** (次を呼び出し)。
-+ 基本機能 (次を呼び出し) を呼び出さずにロジックを完全に置き換えることを**回避します**。
++ 置き換えるロジックとは異なる責任を持つロジックを記述し **ません**。
++ 置き換えロジックが適用されない場合、基本機能を呼び出し **ます** (次を呼び出し)。
++ 基本機能 (次を呼び出し) を呼び出さずにロジックを完全に置き換えることを **回避します**。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 103794fc9c68ca6bf2cc45ecec6a1b2fb89f3710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ea459233788040f172ba5b86c312b1667f75dad1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191581"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409241"
 ---
 # <a name="modify-the-properties-of-form-controls-through-extension"></a>拡張機能を使用して、フォーム コントロールのプロパティを変更する
 
@@ -41,7 +40,7 @@ ms.locfileid: "2191581"
 
 1. 拡張モデルでは、**EcoResProductDetailsExtended** フォームの拡張機能を作成します。
 2. フォーム デザイン ツリーを通じて、**TabPageInventory** タブ ページ (**デザイン** &gt; **タブ** &gt; **詳細** &gt; **GroupDetails** &gt; **TabHeader** &gt; **TabPageInventory**) に移動し、デザイナーでそれを選択して、**プロパティ** シートを開きます。
-3. **キャプション**プロパティを目的の値に更新します。
+3. **キャプション** プロパティを目的の値に更新します。
 
     ![キャプション プロパティ](media/ModifyControlProperties01.jpg)
 
@@ -59,7 +58,7 @@ ms.locfileid: "2191581"
     ![PdsCatchWeight グループ コントロールのプロパティを有効化](media/ModifyControlProperties03.jpg)
 
     > [!NOTE]
-    > **有効**および**表示**のようにメタデータのプロパティを変更した場合、実行時にその状態のままでコントロールの保証はありません。 フォームが読み込まれた後、そのフォームのビジネス ロジックは、コードを使用してコントロールの状態を変更できます。
+    > **有効** および **表示** のようにメタデータのプロパティを変更した場合、実行時にその状態のままでコントロールの保証はありません。 フォームが読み込まれた後、そのフォームのビジネス ロジックは、コードを使用してコントロールの状態を変更できます。
 
 完了したら、ページには追加のフィールドが含まれ、CW 情報を編集することはできず、クイック タブ全体のキャプションが異なります。 
 

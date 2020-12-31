@@ -17,11 +17,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d854923876e013cc53542d809f61901e997dc09f
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597156"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409461"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>IoT インテリジェンスの指標の設定
 
@@ -69,4 +69,4 @@ Redis キャッシュ内のすべての指標キーが取得され、**指標キ
 
 1. Supply Chain Management で、**生産管理 \> 照会とレポート \> IoT インテリジェンス \> 指標キー** に移動します。
 2. **指標キー** ページで、削除する指標キーを選択します。
-3. **削除**を選択します。
+3. **削除** を選択します。

@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: b9f97edaf001d1c4bec6ff4c168fdec09ba01b63
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978562"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408202"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 

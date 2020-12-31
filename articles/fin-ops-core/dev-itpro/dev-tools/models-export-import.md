@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3582b3c38d79d5b6fb9cdd74d9edc0c4afb952d7
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: be00b5a7bfb34a6c2feb06231ff97ccb781e32e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893091"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408911"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
@@ -55,7 +54,7 @@ ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement
 ModelUtil.exe -import -metadatastorepath=[path of the metadata store where model should be imported] -file=[full path of the file to import]
 ```
 
-モデルが開発環境で既に存在する場合、**-削除**指令を使用し、それを最初に削除する必要があります。
+モデルが開発環境で既に存在する場合、**-削除** 指令を使用し、それを最初に削除する必要があります。
 
 ```Console
 ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]

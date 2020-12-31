@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977170"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445144"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>消費税の二重通貨サポート
 [!include [banner](../includes/banner.md)]
@@ -51,7 +51,7 @@ Dynamics 365 Finance 用の二重通貨機能は、バージョン 8.1 (2018 年
 
 ## <a name="sales-tax-conversion"></a>消費税の換算
 
-**消費税変換**パラメータには、トランザクション通貨から税通貨に税金額を換算するためのオプションが 2 つあります。 
+**消費税変換** パラメータには、トランザクション通貨から税通貨に税金額を換算するためのオプションが 2 つあります。 
 
 - 会計通貨: パスは "トランザクション通貨での金額 > 会計通貨での金額 > 税通貨での金額"となります。 通貨換算では、会計通貨為替レートタイプ (元帳の設定で構成) が使用されます。
 - レポート通貨: パスは "トランザクション通貨での金額 > レポート通貨での金額 > 税通貨での金額" となります。 通貨換算では、レポート通貨為替レートタイプ (元帳の設定で構成) が使用されます。

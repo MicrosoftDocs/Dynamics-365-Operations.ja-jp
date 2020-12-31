@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 26731
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 071a1447f6550d66111bbc1babc76109bc1357ad
-ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
+ms.openlocfilehash: 9d9f75a98f79dca532f062b6b1eaed65ad29ae7e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3815646"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408723"
 ---
 # <a name="upload-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のアップロード
 

@@ -18,11 +18,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: d796fb8c2e1ce0c8df294396c52f57f3b13c7b3a
-ms.sourcegitcommit: d6b17b9bafa84b574a597a560a80e6b7b1852b14
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "3799915"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409177"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10013-october-2020"></a>Dynamics 365 Finance 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
@@ -54,7 +54,7 @@ ms.locfileid: "3799915"
  
 ### <a name="globalization-features"></a>グローバリゼーション機能
 
- - [拡張されたフィンランドのローカライズ - Finvoice 3.0](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/extended-finnish-localization--finvoice-3.0)
+ - [拡張されたフィンランド語ローカライズ - Finvoice 3.0](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/extended-finnish-localization--finvoice-3.0)
  - [請求: 高度なメモ管理](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-advanced-notes-management)
  - [請求: プロジェクト請求書の VAT ディレクティブ](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/invoicing-vat-directives-project-invoices)
  - [Regulatory Configuration Service が対象地域を拡大 - フランス](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage--europe)
@@ -87,8 +87,8 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 
 [Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 for Finance and Operations で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
 

@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: d61358be79adc943572bb4a5d624cb7c80b52e6e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977674"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445214"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>分析コードの作成と分析コード メンバーのインポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "3977674"
 -  原価オブジェクト
 -  統計分析コード
 
-**原価要素**は、勘定科目表で原価関連品目に対応します。 **原価オブジェクト**は、製品、コスト センター、またプロジェクトといった、見積したり、原価を割り当てたり、直接測定したりする財務分析コードのすべてのタイプに対応します。 **統計分析コード**とそのメンバーは、非通貨入力を登録するために使用されます。 統計分析コード メンバーは、コスト配分や配賦の配賦基準として使用できます。 
+**原価要素** は、勘定科目表で原価関連品目に対応します。 **原価オブジェクト** は、製品、コスト センター、またプロジェクトといった、見積したり、原価を割り当てたり、直接測定したりする財務分析コードのすべてのタイプに対応します。 **統計分析コード** とそのメンバーは、非通貨入力を登録するために使用されます。 統計分析コード メンバーは、コスト配分や配賦の配賦基準として使用できます。 
 
 次の図は、原価会計で使用される分析コードを示します。
 

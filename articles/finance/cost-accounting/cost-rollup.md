@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006169"
+ms.locfileid: "4445351"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
@@ -223,7 +223,7 @@ HR サービスは、次の大きさの配分によって消費されます。
 | 31-01-2017      | CC004       | 梱包業    | SC-CC004 | 梱包業 | 15.717,25 |
 
 > [!NOTE]
-> ポリシーが存在する場合、 **コスト ロールアップ ポリシー** のルールに基づいて仕訳入力が作成されます。 表示される残高は、間接費計算の残高です。
+> ポリシーが存在する場合、**コスト ロールアップ ポリシー** のルールに基づいて仕訳入力が作成されます。 表示される残高は、間接費計算の残高です。
 
 仕訳入力からアクセスする **コスト オブジェクトのコスト残高仕訳入力の詳細** ページでは、どのように残高が取得されるかが表示されます。
 

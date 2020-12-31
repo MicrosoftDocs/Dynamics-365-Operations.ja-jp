@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4232f4ce055904e11239535facfed07dab6f1785
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984849"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408177"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 

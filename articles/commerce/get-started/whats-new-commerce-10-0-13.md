@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: 3fb89f4d7596380d9150210d7a9603af727199f3
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409297"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10013-october-2020"></a>Dynamics 365 Commerce 10.0.13 (2020 年 10 月) の新機能または変更された機能
 
@@ -66,8 +66,8 @@ Dynamics 365 Commerce 10.0.13 には、プラットフォーム更新プログ�
 
 [Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
 

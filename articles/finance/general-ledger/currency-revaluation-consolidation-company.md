@@ -19,17 +19,17 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014986"
+ms.locfileid: "4445355"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>連結会社の通貨再評価
 
 [!include [banner](../includes/banner.md)]
 
-1 つの会計通貨から別の会計通貨にデータを連結する場合、為替レートに変更があれば、勘定残高が正しく再評価されるように通貨再評価を実行する必要があります。 最初にデータを連結する場合、 **為替換算** タブを使用して、連結プロセス中の換算のために、最初の為替レートを選択します。 新しい為替レートが入力された後 (たとえば、翌月に) に、勘定残高を再評価する必要があります。 未実現差益または差損は、新しい為替レートと日付に基づいて、適宜更新されます。 次の例では、プロセス中に作成された勘定項目を示します。
+1 つの会計通貨から別の会計通貨にデータを連結する場合、為替レートに変更があれば、勘定残高が正しく再評価されるように通貨再評価を実行する必要があります。 最初にデータを連結する場合、**為替換算** タブを使用して、連結プロセス中の換算のために、最初の為替レートを選択します。 新しい為替レートが入力された後 (たとえば、翌月に) に、勘定残高を再評価する必要があります。 未実現差益または差損は、新しい為替レートと日付に基づいて、適宜更新されます。 次の例では、プロセス中に作成された勘定項目を示します。
 
 ## <a name="company-setup"></a>会社設定
 -   **ソース / 営業会社 (USMF)** – 米ドル (USD) は、会計通貨およびレポート通貨として使用されます。

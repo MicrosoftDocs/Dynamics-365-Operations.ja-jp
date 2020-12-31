@@ -10,18 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: josaw
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 207cc15ee37a1a9ec74b933218c99029be73bfc5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: bf8672d46443101b57eed94129f7b838c620645e
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979368"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4409531"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -131,7 +131,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > [!NOTE]
     > Modern POS をカスタマイズしないでください。 ユーザー アカウント制御 (UAC) を有効にして、要求に応じて以前にインストールした Modern POS のインスタンスをアンインストールする必要があります。
 
-2. **extensions.json**で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
+2. **extensions.json** で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
 
     ``` json
     {
@@ -152,7 +152,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 ### <a name="cloud-pos-extension-components"></a>クラウド POS 拡張コンポーネント
 
 1. **RetailSdk\\POS\\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。
-2. **extensions.json**で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
+2. **extensions.json** で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
 
     ``` json
     {
@@ -168,7 +168,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > 詳細については、およびソース コード フォルダーを含め、拡張機能の読み込みを有効にする方法を示すサンプルについては、**Pos.Extensions** プロジェクトの readme.md ファイル内にある手順を参照してください。
 
 3. ソリューションをリビルドします。
-4. **実行**コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
+4. **実行** コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
 
@@ -176,7 +176,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 登録プロセスを有効にするには、次の手順を使用してバックオフィスを設定します。 詳細については、[コマース チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
 
-1. **コマース共有パラメーター**を開き、**全般**タブで**会計統合**を有効にします。
+1. **コマース共有パラメーター** を開き、**全般** タブで **会計統合** を有効にします。
 2. **Retail とコマース \> チャネル設定 \> 会計統合 \> 会計コネクタ** メニューを開きます。 RetailSdk からコネクタ構成を読み込みます。 ファイルは、SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml の下に保存されています。
 3. **Retail とコマース \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** メニューを開きます。 RetailSdk からドキュメント プロバイダー コンフィギュレーションを読み込みます。
 
@@ -185,12 +185,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 
-4. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル**を開きます。 上記の手順からドキュメント プロバイダーごとに 2 つの新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、データ マッピング設定を更新します。
-5. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ技術プロファイル**を開きます。 上記の手順から新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、接続設定を更新します。
-6. **Retail とコマース \> チャネル設定 \> 会計統合 \> 会計コネクタ グループ**を開きます。 上記の手順からコネクタの機能プロファイルごとに 2 つの新しいグループを作成します。
-7. **Retail とコマース \> チャネル設定 \> 会計統合 \> 登録プロセス**を開きます。 新しいプロセスを作成します。 上記の手順から両方のコネクタの機能グループを選択します。
-8. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル**を開きます。 登録プロセスを有効化する、店舗にリンクされているプロファイルを選択します。 **会計登録プロセス** タブを展開します。上記の手順から作成された登録プロセスを選択します。 POS で非会計イベントの登録を有効にするには、**機能**クイック タブで**監査**プロパティを有効にします。
-9. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル**を開きます。 会計プリンターの接続先のハードウェア ステーションにリンクされているプロファイルを選択します。 **会計周辺機器** を展開します。コネクタの技術的なプロファイルを選択します。
+4. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** を開きます。 上記の手順からドキュメント プロバイダーごとに 2 つの新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、データ マッピング設定を更新します。
+5. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ技術プロファイル** を開きます。 上記の手順から新しいプロファイルを作成し、読み込まれたコネクタを選択します。 必要な場合は、接続設定を更新します。
+6. **Retail とコマース \> チャネル設定 \> 会計統合 \> 会計コネクタ グループ** を開きます。 上記の手順からコネクタの機能プロファイルごとに 2 つの新しいグループを作成します。
+7. **Retail とコマース \> チャネル設定 \> 会計統合 \> 登録プロセス** を開きます。 新しいプロセスを作成します。 上記の手順から両方のコネクタの機能グループを選択します。
+8. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** を開きます。 登録プロセスを有効化する、店舗にリンクされているプロファイルを選択します。 **会計登録プロセス** タブを展開します。上記の手順から作成された登録プロセスを選択します。 POS で非会計イベントの登録を有効にするには、**機能** クイック タブで **監査** プロパティを有効にします。
+9. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** を開きます。 会計プリンターの接続先のハードウェア ステーションにリンクされているプロファイルを選択します。 **会計周辺機器** を展開します。コネクタの技術的なプロファイルを選択します。
 
 詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
 
@@ -201,7 +201,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
-    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの**構成**セクションに、次の行を追加します。
+    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
 
         ```xml  
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />

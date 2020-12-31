@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
 ms.openlocfilehash: a8e4dcb0b7d23604c38e606f000696132f706680
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004678"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408948"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -158,7 +158,7 @@ ms.locfileid: "3004678"
 | PaymentCard | 市町村 | 支払に使用されるカードに関連付けられている請求先住所の市町村。 |
 | PaymentCard | 行政単位 (区画) | 支払に使用されるカードに関連付けられている請求先住所の都道府県。 |
 | PaymentCard | PostalCode | 支払に使用されるカードに関連付けられている請求先住所の郵便番号。 |
-| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。 |
+| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または **電子商取引**)。 |
 | TransactionData | AllowPartialAuthorization | 部分的な承認がサポートされているかどうかを示す値。 |
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
@@ -197,7 +197,7 @@ ms.locfileid: "3004678"
 | PaymentCard | 市町村 | 支払に使用されるカードに関連付けられている請求先住所の市町村。 |
 | PaymentCard | 行政単位 (区画) | 支払に使用されるカードに関連付けられている請求先住所の都道府県。 |
 | PaymentCard | PostalCode | 支払に使用されるカードに関連付けられている請求先住所の郵便番号。 |
-| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。 |
+| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または **電子商取引**)。 |
 | TransactionData | AllowPartialAuthorization | 部分的な承認がサポートされているかどうかを示す値。 |
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
@@ -217,7 +217,7 @@ ms.locfileid: "3004678"
 | PaymentCard | PostalCode | 支払に使用されるカードに関連付けられている請求先住所の郵便番号。 |
 | PaymentCard | 国 | 支払に使用されるカードに関連付けられている請求先住所の国または地域。 |
 | PaymentCard | ShowSameAsShippingAddress | 請求先住所が出荷先住所と同じかどうかを識別する値。 |
-| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または**電子商取引**)。 |
+| TransactionData | IndustryType | 支払が発生したチャネルのタイプ (たとえば、**小売**、**ダイレクト マーケティング**、または **電子商取引**)。 |
 | TransactionData | AllowPartialAuthorization | 部分的な承認がサポートされているかどうかを示す値。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | TransactionData | TerminalId | トランザクションが発生した端末の一意の識別子。 |

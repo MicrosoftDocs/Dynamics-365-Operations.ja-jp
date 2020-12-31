@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9406cf7ca6ff196bf762c4a5d423a7a292bcec9a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982973"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408145"
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch"></a>バッチごとの減損損失の提案と転記
 

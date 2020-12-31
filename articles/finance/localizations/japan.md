@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: cd1ac44bd9e36a482f18bccd250726fe7b7cf4d1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408156"
 ---
 # <a name="japan-overview"></a>日本の概要
 

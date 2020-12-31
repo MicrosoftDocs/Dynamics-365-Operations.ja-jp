@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: fcfa65881aee2ef1d9bd6e04d5c6b398cfc6e4c6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981622"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408127"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 

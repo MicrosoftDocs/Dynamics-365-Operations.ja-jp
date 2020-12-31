@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 47561
 ms.assetid: 03d9d906-d683-47b4-8488-795173db2125
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9df9a833cd8a7c6d617b32040985a2e8412999cf
-ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
+ms.openlocfilehash: 0076f0bc22c67203ebec7e44dc589d8242601bd0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3502725"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408755"
 ---
 # <a name="f-classes"></a>F クラス
 
@@ -38,7 +37,7 @@ ms.locfileid: "3502725"
 
 [FilterValue クラス](system-classes/FilterValue-class.md)
 
-[Form クラス](system-classes/Form-class.md)
+[フォーム クラス](system-classes/Form-class.md)
 
 [FormActionPaneControl クラス](system-classes/FormActionPaneControl-class.md)
 

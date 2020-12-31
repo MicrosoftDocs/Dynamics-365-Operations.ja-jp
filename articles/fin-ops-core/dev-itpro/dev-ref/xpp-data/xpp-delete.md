@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: ea74da530fc2fd7b82ab8db1c6624d0169fd911b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: f9d840ac13443fd95d8bae56d573454b69416fd4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408739"
 ---
 # <a name="delete-data"></a>データの削除
 
@@ -37,9 +36,9 @@ ms.locfileid: "3987320"
 
 **delete** メソッドは、データベースから現在のレコードを削除します。 このメソッドを使用するには、**where** 句を使用して削除する行を指定します。 一度に 1 つのレコードが、指定されたテーブルから削除されます。
 
-**delete** メソッドは上書きすることができます。 たとえば、レコードが削除される前に、追加の検証を追加する場合があります。 **削除**方法をオーバーライドする場合、**doDelete** を呼び出すことで、**削除**メソッドの元の (ベース) バージョンを実行できます。 したがって、**doDelete** メソッドへの呼び出しは**delete** メソッドの **super()** への呼び出しに相当します。
+**delete** メソッドは上書きすることができます。 たとえば、レコードが削除される前に、追加の検証を追加する場合があります。 **削除** 方法をオーバーライドする場合、**doDelete** を呼び出すことで、**削除** メソッドの元の (ベース) バージョンを実行できます。 したがって、**doDelete** メソッドへの呼び出しは **delete** メソッドの **super()** への呼び出しに相当します。
 
-次の例では、**where** 句を満たす NameValuePair テーブル内のすべてのレコード (つまり、**名前**フィールドの値が **Name1** と等しいすべてのレコード) がデータベースから削除されます。 一度に 1 つのレコードが削除されます。
+次の例では、**where** 句を満たす NameValuePair テーブル内のすべてのレコード (つまり、**名前** フィールドの値が **Name1** と等しいすべてのレコード) がデータベースから削除されます。 一度に 1 つのレコードが削除されます。
 
 ```xpp
 ttsBegin;
@@ -81,7 +80,7 @@ ttsCommit;
 
 ## <a name="dodelete-method"></a><a id="do-delete-method"></a>doDelete メソッド
 
-**delete** テーブル メソッドと同様に、**doDelete** テーブル メソッドは、データベースから現在のレコードを削除します。 **delete** テーブル メソッドがオーバーライドされていて、オーバーライドされているバージョンではなく、そのメソッドの元の (ベース) バージョンを実行する場合は **doDelete** メソッドを使用します。 したがって、**doDelete** メソッドへの呼び出しは**delete** メソッドの **super()** への呼び出しに相当します。
+**delete** テーブル メソッドと同様に、**doDelete** テーブル メソッドは、データベースから現在のレコードを削除します。 **delete** テーブル メソッドがオーバーライドされていて、オーバーライドされているバージョンではなく、そのメソッドの元の (ベース) バージョンを実行する場合は **doDelete** メソッドを使用します。 したがって、**doDelete** メソッドへの呼び出しは **delete** メソッドの **super()** への呼び出しに相当します。
 
 > [!WARNING]
 > **doDelete** を呼び出すと、データベース イベント ハンドラー (たとえば **onDeleting** および **onDeleted**)、コマンド チェーン  **onDelete()**、および **delete()** の呼び出し自体を含むすべてのロジックをスキップします。 一般に、**doDelete** を使用することは不適切なプラクティスと見なされており、使用することはお勧めしません。
@@ -90,14 +89,14 @@ ttsCommit;
 
 **delete\_from** 演算子は、同時に複数のレコードを削除するレコード セット ベースの演算子です。 この方法は、一度に 1 つのレコードを削除するループで **delete** メソッドを使用する方法よりも効率的かつ高速になります。 **delete** メソッドをオーバーライドした場合、システムは削除される各行につき 1 回 **delete\_from** ステートメントを **delete** メソッドを呼び出すコードに解釈します。
 
-次の例では、**名前**列の値が **Name1** である NameValuePair テーブルのすべてのレコードを削除します。
+次の例では、**名前** 列の値が **Name1** である NameValuePair テーブルのすべてのレコードを削除します。
 
 ```xpp
 NameValuePair nameValuePair;
 delete_from nameValuePair where nameValuePair.Name == 'Name1';
 ```
 
-前の例とは対照的に、次の例では、各レコードに対してデータベース サーバーへの個別の SQL **削除**呼び出しを発行するため、非効率的です。 **delete** メソッドが、呼び出しごとに複数のレコードを削除することはありません。
+前の例とは対照的に、次の例では、各レコードに対してデータベース サーバーへの個別の SQL **削除** 呼び出しを発行するため、非効率的です。 **delete** メソッドが、呼び出しごとに複数のレコードを削除することはありません。
 
 ```xpp
 // Example of inefficient code.

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 6edbe7ebde28e4a9c6e4240d8414ab5f124e3ac1
-ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
+ms.openlocfilehash: f38d09e247ca0a1123b082eeb229c770d3c98a9f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "3734897"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409384"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
@@ -82,7 +81,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 -   AxDB データベースのバックアップ (.bak) を取得します。
 -   このバックアップを開発者と共有します。
 
-ビルド環境では、このバックアップを I:\\DynamicsBackupDatabases にコピーします (環境によっては i: とは異なるドライブになる可能性があります)。 このデータベースは、すべてのビルドの開始時にリストアされます。 このステップは、**ビルドの準備**と呼ばれるビルド定義の最初のステップの一部として実行されます。 
+ビルド環境では、このバックアップを I:\\DynamicsBackupDatabases にコピーします (環境によっては i: とは異なるドライブになる可能性があります)。 このデータベースは、すべてのビルドの開始時にリストアされます。 このステップは、**ビルドの準備** と呼ばれるビルド定義の最初のステップの一部として実行されます。 
 
 ![media/prepareforbuild.png](media/prepareforbuild.png)
 
@@ -140,7 +139,7 @@ Microsoft パートナーが 1 つ以上の顧客のコードを作成する場�
 ## <a name="customer-implementation-lcs-projects"></a>顧客実装 LCS プロジェクト
 ### <a name="how-many-sandbox-environments-do-i-need-within-an-lcs-customer-implementation-project"></a>LCS 顧客実装プロジェクト内でいくつのサンド ボックス環境が必要ですか。
 
-顧客サブスクリプションは、既定では、次の 3 つの環境があります: 開発またはビルド環境、2 層サンド ボックス環境、および本番環境です。 アプリケーションが生産の稼働に移行する前に、構成と UAT 環境として 2 層のサンド ボックス環境を使用できます。 Go-Live にする必要のあるコードとデータをサンドボックスに構成した後 (*ゴールド構成*とも呼ばれる)、同じ環境で検証を実行することができます。 検証に合格したとき、サンド ボックス データベースをそのゴールド構成の時点まで復元します。 コードを生産に展開して、サンドボックス データベースを生産環境にコピーすることができます。 また、特にアプリケーションが稼働後に、階層 2 またはそれ以上にある複数のサンドボックス環境を持つように選択することができます。 1 つのサンドボックスは、生産開始前の UAT 環境として使用することができ、他のサンドボックスはコンフィギュレーション、アップグレード、またはその他のシナリオに使用されます。 階層 2 またはそれより高階層のサンドボックスをさらに購入することができます。 
+顧客サブスクリプションは、既定では、次の 3 つの環境があります: 開発またはビルド環境、2 層サンド ボックス環境、および本番環境です。 アプリケーションが生産の稼働に移行する前に、構成と UAT 環境として 2 層のサンド ボックス環境を使用できます。 Go-Live にする必要のあるコードとデータをサンドボックスに構成した後 (*ゴールド構成* とも呼ばれる)、同じ環境で検証を実行することができます。 検証に合格したとき、サンド ボックス データベースをそのゴールド構成の時点まで復元します。 コードを生産に展開して、サンドボックス データベースを生産環境にコピーすることができます。 また、特にアプリケーションが稼働後に、階層 2 またはそれ以上にある複数のサンドボックス環境を持つように選択することができます。 1 つのサンドボックスは、生産開始前の UAT 環境として使用することができ、他のサンドボックスはコンフィギュレーション、アップグレード、またはその他のシナリオに使用されます。 階層 2 またはそれより高階層のサンドボックスをさらに購入することができます。 
 
 次のサービス要求とツールは LCS でサポートされています。これにより、実装に十分な 1 つの階層 2 サンドボックスがあるかどうかを判断するのに役立ちます。
 

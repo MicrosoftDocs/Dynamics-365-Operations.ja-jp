@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 935e08ea42d44db3c29a23006cb14dadbb8551f7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 462bbce4b7db57230e39d4e443fd76ec6a6f6250
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984711"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408846"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
@@ -44,10 +43,10 @@ ms.locfileid: "3984711"
 
 + **ブロックの切り替え**
 
-    - メソッドの途中でブロックを切り替えないでください。 切り替えブロックは、拡張可能になるにはそれ**自身のメソッド**になければなりません。 
-    - **長いケース ブロック**は、各ケース ブロックのサブクラスを持つクラス/クラス階層にリファクタリングされるのに適した候補です。 例については、**SalesLineCopyFromSource** クラス階層を参照してください。
-    - 切り替えステートメントでは**既定のブロック**を回避してください。切り替えブロックを拡張不能にするメソッドを作成するためです。
-    - 切り替えステートメントの**既定のブロックでスロー ステートメント**を回避してください。切り替えステートメントを拡張不能にするスイッチを作成するためです。 既定のケースでのスローを処理する 1 つの方法は、拡張可能な個別のメソッドに切り替えブロックをリファクタリングすることです。 または、メソッド全体を交換可能にすることができます。
+    - メソッドの途中でブロックを切り替えないでください。 切り替えブロックは、拡張可能になるにはそれ **自身のメソッド** になければなりません。 
+    - **長いケース ブロック** は、各ケース ブロックのサブクラスを持つクラス/クラス階層にリファクタリングされるのに適した候補です。 例については、**SalesLineCopyFromSource** クラス階層を参照してください。
+    - 切り替えステートメントでは **既定のブロック** を回避してください。切り替えブロックを拡張不能にするメソッドを作成するためです。
+    - 切り替えステートメントの **既定のブロックでスロー ステートメント** を回避してください。切り替えステートメントを拡張不能にするスイッチを作成するためです。 既定のケースでのスローを処理する 1 つの方法は、拡張可能な個別のメソッドに切り替えブロックをリファクタリングすることです。 または、メソッド全体を交換可能にすることができます。
             
         次の例では、**findOrderHeader** が交換可能です。
 

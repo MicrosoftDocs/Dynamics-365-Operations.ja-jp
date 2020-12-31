@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
 ms.openlocfilehash: d0739e0f2c4f062fdc4785d7f0e73c67f578d574
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832711"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408909"
 ---
 #  <a name="provision-onboard"></a>オンボード プロビジョニング
 
@@ -44,4 +44,4 @@ Onboard アプリは、対応する国または地域でのみで提供してい
 
 [![国/地域にもとづいた、スタンドアロン Onboardアプリの プロビジョニングプロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
-完全版の Talent とは異なり、スタンドアロンの Onboard アプリ では、各ユーザーがアクセス可能となる環境の一覧を管理していません。 ユーザーは、最後に使用した環境に自動的にサインインします。 **設定**ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。
+完全版の Talent とは異なり、スタンドアロンの Onboard アプリ では、各ユーザーがアクセス可能となる環境の一覧を管理していません。 ユーザーは、最後に使用した環境に自動的にサインインします。 **設定** ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 8a72ccbe248e3f428e1f48d5544775e7d75bd145
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 1163a4e0601466a2bbedda9a48134e35c54e6c20
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885350"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409195"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

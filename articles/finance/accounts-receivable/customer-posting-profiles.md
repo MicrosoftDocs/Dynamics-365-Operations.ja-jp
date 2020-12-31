@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830577"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445049"
 ---
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
@@ -43,7 +43,7 @@ ms.locfileid: "3830577"
 ## <a name="creating-a-posting-profile"></a>転記プロファイルの作成
 選択した転記プロファイルを使用するトランザクションを転記する際に使用される勘定科目を指定します。 選択した転記プロファイルについて、アカウント コードおよび (可能な場合) アカウント番号またはグループ番号を選択します。 転記プロセスでは、次の優先順位に従って特定のアカウント コード、アカウント番号、グループ番号の組み合わせを検索することにより、各トランザクションの最も適切な転記プロファイルを見つけます。
 
-| **アカウント コード** フィールド値 | **アカウント/グループ番号**フィールド値            | 検索の優先順位 |
+| **アカウント コード** フィールド値 | **アカウント/グループ番号** フィールド値            | 検索の優先順位 |
 |------------------------------|-------------------------------------------------|-----------------|
 | **テーブル**                    | 特定の顧客 ID                       | 1               |
 | **グループ**                    | 顧客に割り当てられた顧客グループ | 2               |

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 513db60a5a39d8a1fe054b267dd6c5ac0df4010b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 91ccc049fbef1018f3f763ae21fdd8e26bf19c80
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191647"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409351"
 ---
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 
@@ -45,7 +44,7 @@ ms.locfileid: "2191647"
 部品表、数式、および製造オーダーでは、既定では、小数点以下 4 桁の数量を管理できます。 小数点以下 5 桁以上が必要な場合、**BOMProductQuantity** 拡張データ型の小数点の精度を拡張します。
 
 ### <a name="related-data-types"></a>関連データ型
-**価格単位**、**価格数量**、および**請求数量データ**は、製品数量とは別に拡張できます。
+**価格単位**、**価格数量**、および **請求数量データ** は、製品数量とは別に拡張できます。
 **PriceUnit** 拡張データ型を拡張し、小数点の精度を、既定の価格単位 2 以外の値に変更できます。
 
 **PriceQty** 拡張データ型を拡張し、小数点の精度を、既定の価格および請求数量 2 以外の値に変更できます。

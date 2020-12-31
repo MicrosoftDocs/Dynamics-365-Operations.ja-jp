@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 4b947c355ad3bd6189edd2c005c8f8e4e1a3149b
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123935"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409292"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1008-february-2020"></a>Dynamics 365 Commerce 10.0.8 の新機能と変更点 (2020 年 2 月)
 
@@ -64,8 +64,8 @@ Microsoft Dynamics 365 Commerce 10.0.8 には、プラットフォーム更新�
 
 [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Finance and Operations アプリの削除済みまたは非推奨の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: a25387e0ec8ff99ddb9b6c1f1c515fd92008d33a
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 02ed19d12227187a0610f2fa4f4dc1e613a385b8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033027"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408842"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 

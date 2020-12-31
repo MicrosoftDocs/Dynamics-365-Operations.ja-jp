@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 537abb6cf790c8a36469cad0324f134f52979e19
-ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
+ms.openlocfilehash: 10d8f69faf7a85d8695e0fc65a337c7290aecd1f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3815642"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408988"
 ---
 # <a name="create-an-lcs-connection-in-azure-pipelines"></a>Azure Pipelines で LCS 接続を作成する
 

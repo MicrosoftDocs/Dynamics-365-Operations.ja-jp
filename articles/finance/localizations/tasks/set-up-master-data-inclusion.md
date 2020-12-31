@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: cc29b4fb7e17014b4332c43a3f956ee8ea91b539
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979613"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408178"
 ---
 # <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers"></a>複数の転記階層の損金算入額のマスター データの設定
 

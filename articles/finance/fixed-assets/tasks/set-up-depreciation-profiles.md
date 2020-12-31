@@ -17,11 +17,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 68aa220896e3d6f598f32cad201cde1aa89f1670
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138210"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445258"
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>減価償却プロファイルの設定および作成
 
@@ -31,12 +31,12 @@ ms.locfileid: "3138210"
 
 
 ## <a name="create-a-depreciation-profile"></a>減価償却プロファイルの作成
-1. ナビゲーション ウィンドウで、**モジュール > 固定資産 > 設定 > 減価償却**に移動します。
+1. ナビゲーション ウィンドウで、**モジュール > 固定資産 > 設定 > 減価償却** に移動します。
 2. **新規** をクリックします。
 3. **減価償却プロファイル** フィールドに、値を入力します。
-4. **名前**フィールドに値を入力します。
-5. **方法**フィールドで、オプションを選択します。 逓減残高を選択する場合は、**割合**フィールドに割合を入力する必要があります。  
-6. **償却年**フィールドで、オプションを選択します。
-7. **期間の頻度**フィールドで、オプションを選択します。
+4. **名前** フィールドに値を入力します。
+5. **方法** フィールドで、オプションを選択します。 逓減残高を選択する場合は、**割合** フィールドに割合を入力する必要があります。  
+6. **償却年** フィールドで、オプションを選択します。
+7. **期間の頻度** フィールドで、オプションを選択します。
 8. フォームを閉じます。
 

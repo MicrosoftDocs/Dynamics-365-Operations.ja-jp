@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31381
 ms.assetid: d0d4043e-5abb-42ae-bcc2-c6b678f4ef5b
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f47fa8270f712e8bcb5a69b4054649bd80828def
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 880789cebd317d872b71938b2a21b1f0ba5f5a0a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081984"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408727"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 
@@ -96,7 +95,7 @@ int dimOf(anytype object)
 -   **コンテナー**
 -   **anytype**
 -   クラス オブジェクトの配列
--   **配列**クラスのインスタンス
+-   **配列** クラスのインスタンス
 
 ### <a name="example"></a>例
 
@@ -466,7 +465,7 @@ enum typeOf(anytype _object)
 
 ### <a name="return-value"></a>戻り値
 
-**タイプ**システム列挙値。
+**タイプ** システム列挙値。
 
 ### <a name="example"></a>例
 

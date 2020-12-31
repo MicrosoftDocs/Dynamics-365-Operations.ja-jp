@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 09b24b88ee5f8104aabd11397d5bd2745e846cb0
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899573"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445067"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
@@ -40,7 +40,7 @@ ms.locfileid: "3899573"
 銀行ファイル レイアウト定義を Finance のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Finance ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>インポートされた口座取引明細書のタイム ゾーンの違い
-インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成**ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
+インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成** ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。

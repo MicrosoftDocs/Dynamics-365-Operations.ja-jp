@@ -17,11 +17,11 @@ ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 ms.openlocfilehash: d5aa569762671ea649066fde37c4642ed4002926
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973994"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408765"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -34,7 +34,7 @@ ms.locfileid: "3973994"
 このローカライズは、Commerce runtime (CRT)、Retail Servers、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー*を使用します。
+> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
 
 ## <a name="storing-a-certificate-for-digital-signing-in-azure-key-vault"></a>Azure Key Vault にデジタル署名用証明書を保存します。
 
@@ -120,7 +120,7 @@ CRT の新しい機能を適用するには、次の手順を実行します。
 カスタム フィールドを使用することで、次のようなアプリケーション属性をレシートに印刷できます。<!-- (for more information, see [Cash registers for France](./emea-fra-cash-registers.md))-->:
 
 - **ビルド番号**- POS アプリケーションのソフトウェアのバージョン。 既定では、この値は、Microsoft が POS アプリケーションに割り当てた POS ビルド番号と等しくなります。
-- **証明書のカテゴリ**および**証明書の番号** - アプリケーションの認定証明を発行するカテゴリとコンプライアンスの証明書の数。 既定では、値はカテゴリとMicrosoft に与えられた証明書の数に等しい。
+- **証明書のカテゴリ** および **証明書の番号** - アプリケーションの認定証明を発行するカテゴリとコンプライアンスの証明書の数。 既定では、値はカテゴリとMicrosoft に与えられた証明書の数に等しい。
 
     - Microsoft Dynamics 365 for Commerce:
 
@@ -459,7 +459,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
     ---
 
     > [!NOTE]
-    > プロジェクトに含まれているファイルだけでなく、プロジェクト フォルダーのすべてのファイルを表示するには、ソリューション エクスプ ローラーで**すべてのファイルを表示する** ボタンを選択します。 このボタンを使用できない場合は、プロジェクトが選択されていることを確認してください。 現時点でプロジェクトの一部ではないファイルとフォルダーのアイコンには点線があります。 プロジェクトに含めるためにフォルダーを右クリックし、**新しいプロジェクトに追加**を選択します。
+    > プロジェクトに含まれているファイルだけでなく、プロジェクト フォルダーのすべてのファイルを表示するには、ソリューション エクスプ ローラーで **すべてのファイルを表示する** ボタンを選択します。 このボタンを使用できない場合は、プロジェクトが選択されていることを確認してください。 現時点でプロジェクトの一部ではないファイルとフォルダーのアイコンには点線があります。 プロジェクトに含めるためにフォルダーを右クリックし、**新しいプロジェクトに追加** を選択します。
 
 3. **tsconfig.json** で除外リストから以下のフォルダーを削除して、コンパイルされる拡張機能を有効にします。
 
@@ -487,7 +487,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 
     ---
 
-4. **extensions.json**で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
+4. **extensions.json** で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
 
     # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
@@ -593,7 +593,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
     ---
 
     > [!NOTE]
-    > プロジェクトに含まれているファイルだけでなく、プロジェクト フォルダーのすべてのファイルを表示するには、ソリューション エクスプ ローラーで**すべてのファイルを表示する** ボタンを選択します。 このボタンを使用できない場合は、プロジェクトが選択されていることを確認してください。 現時点でプロジェクトの一部ではないファイルとフォルダーのアイコンには点線があります。 プロジェクトに含めるためにフォルダーを右クリックし、**新しいプロジェクトに追加**を選択します。
+    > プロジェクトに含まれているファイルだけでなく、プロジェクト フォルダーのすべてのファイルを表示するには、ソリューション エクスプ ローラーで **すべてのファイルを表示する** ボタンを選択します。 このボタンを使用できない場合は、プロジェクトが選択されていることを確認してください。 現時点でプロジェクトの一部ではないファイルとフォルダーのアイコンには点線があります。 プロジェクトに含めるためにフォルダーを右クリックし、**新しいプロジェクトに追加** を選択します。
 
 3. **tsconfig.json** で除外リストから以下のフォルダーを削除して、コンパイルされる拡張機能を有効にします。
 
@@ -621,7 +621,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 
     ---
 
-4. **extensions.json**で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
+4. **extensions.json** で、次の明細行を追加することによって拡張機能が読み込まれるようにします。
 
     # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
@@ -695,7 +695,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
     > 詳細については、およびソース コード フォルダーを含め、拡張機能の読み込みを有効にする方法を示すサンプルについては、**Pos.Extensions** プロジェクトの readme.md ファイル内にある手順を参照してください。
 
 5. ソリューションをリビルドします。
-6. **実行**コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
+6. **実行** コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
 7. 機能をテストします。
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
@@ -709,7 +709,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
-    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの**構成**セクションに、次の行を追加します。
+    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
 
         # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
@@ -761,7 +761,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
         <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
         ```
 
-    2. **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成**セクションに以下の行を追加します。
+    2. **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成** セクションに以下の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -837,7 +837,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
         <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
-4. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\ web.config**で、**extensionComposition** セクションに次の行を追加します。
+4. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\ web.config** で、**extensionComposition** セクションに次の行を追加します。
 
     ``` xml
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
@@ -853,7 +853,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 Modern POSでオフライン モードでのデジタル署名を有効にするには、新しい端末で Modern POS を有効化した後、これらの手順に従う必要があります。
 
 1. POS にサインインします。
-2. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **ダウンロードの保留中**フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
+2. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **ダウンロードの保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
 3. POS からのサインアウト
 4. オフライン データベースが完全に同期するため少しの間待ちます。
 5. POS にサインインします。

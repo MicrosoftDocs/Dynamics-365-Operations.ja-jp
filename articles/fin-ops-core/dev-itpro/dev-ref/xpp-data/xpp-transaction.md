@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: Operations
 ms.custom: 150273
 ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 48ab3c8d4ee92ff3e952bf731bb1fbf29b00d05f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 01f81018d4ef484193cc403536ae899810fb1e93
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987260"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408734"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

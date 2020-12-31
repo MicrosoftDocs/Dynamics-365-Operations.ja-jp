@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: d2799435590fdf8b12130df9785183444e4f79fb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985205"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408154"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 

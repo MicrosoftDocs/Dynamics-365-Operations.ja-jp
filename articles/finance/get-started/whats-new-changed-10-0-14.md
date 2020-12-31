@@ -3,7 +3,7 @@ title: Dynamics 365 Finance 10.0.14 (2020 年 11 月) の新機能および変�
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.14 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
 manager: AnnBe
-ms.date: 08/28/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: af1640a52f0ee0300c30939a1f59848388e0e6eb
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 9c3b85dc03ed5de8c5c74eb0254eb0a6bcf789e1
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761456"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4409561"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10014-november--2020"></a>Dynamics 365 Finance 10.0.14 の機能のプレビュー (2020 年 11 月)
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10014-november--2020"></a>Dynamics 365 Finance 10.0.14 (2020 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.14 の新機能または変更された機能について説明します。 このバージョンには 10.0.605 のビルド番号が含まれており、次のように使用できます。
 
@@ -77,8 +76,8 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 
 [Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 for Finance and Operations で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
 

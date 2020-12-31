@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSGenericEngine
+ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
 audience: Developer
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc5fb7e616f7b0e4b72733bc81e5f4b3a1d85bcd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0f4a550e25bf50c0d85eb12985bf37c69bcbd5a6
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206324"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4409555"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
@@ -36,11 +36,11 @@ ms.locfileid: "3206324"
 ## <a name="create-a-new-tms-engine"></a>新しい TMS エンジンを作成する
 このセクションでは、TMS エンジン実装を持つクラス ライブラリを作成する方法と、Supply Chain Management モデルからクラス ライブラリを参照する方法について説明します。
 
-1. 新しいエンジンを配置するには、エンジンを含めるモデルが必要です。 **Dynamics 365**&gt; **モデル管理**メニューで、**モデルの作成**をクリックして、新しいモデルを作成します。 **モデルの作成**ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
+1. 新しいエンジンを配置するには、エンジンを含めるモデルが必要です。 **Dynamics 365**&gt; **モデル管理** メニューで、**モデルの作成** をクリックして、新しいモデルを作成します。 **モデルの作成** ウィザードの最初のページで、モデル名を **TMSEngines** にします。 
 
    [![モデルの作成](./media/012.png)](./media/012.png)
 
-2. 次のページで、**新しいパッケージの作成**を選択します。 
+2. 次のページで、**新しいパッケージの作成** を選択します。 
 
    [![新規パッケージの作成](./media/021.png)](./media/021.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "3206324"
 
    [![参照するモデルの選択](./media/032.png)](./media/032.png)
 
-4. 次のページで、**完了**をクリックして新しいモデルの作成を確認します。 
+4. 次のページで、**完了** をクリックして新しいモデルの作成を確認します。 
 
    [![モデル作成の完了](./media/042.png)](./media/042.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "3206324"
 サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Supply Chain Management で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
 
 1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
-2. **配置パッケージの作成**ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
+2. **配置パッケージの作成** ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
 
    [![TMSEngines モデルの選択](./media/071.png)](./media/071.png)
 
@@ -139,7 +139,7 @@ ms.locfileid: "3206324"
 
    [![新規出荷の配送業者の作成](./media/092.png)](./media/092.png)
 
-6. **工順ワークベンチの評価**ページで、**レート ショップ**をクリックします。 次のスクリーン ショットに示すように、SampleCarrier から 100.00 のレートが表示されます。 この例では、倉庫 24 から顧客 US-004 へのルートの輸送料を検索しています。 ただし、料金がハードコーディングされているために、100.00 の料金が常に表示されます。 
+6. **工順ワークベンチの評価** ページで、**レート ショップ** をクリックします。 次のスクリーン ショットに示すように、SampleCarrier から 100.00 のレートが表示されます。 この例では、倉庫 24 から顧客 US-004 へのルートの輸送料を検索しています。 ただし、料金がハードコーディングされているために、100.00 の料金が常に表示されます。 
 
    [![工順ワークベンチの評価](./media/101.png)](./media/101.png)
 

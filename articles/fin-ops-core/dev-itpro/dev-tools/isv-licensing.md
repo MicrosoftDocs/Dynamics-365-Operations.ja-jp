@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e29cba877d2f26bcda5abf67b52ae22d9722506
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 7ad0724fdf6009b95daaac60483e464a42e44b9b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386121"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408849"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -51,7 +50,7 @@ ISV は独自のライセンスを個別に生成し、ソリューションに�
 
 ### <a name="there-are-two-types-of-license-boolean-and-number"></a>ライセンスには、ブール値と数値の 2 種類があります
 
-ISV は**ブール値**および**番号**の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または**数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/library/jj677284.aspx)を参照してください。
+ISV は **ブール値** および **番号** の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または **数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/library/jj677284.aspx)を参照してください。
 
 ### <a name="license-validation-errors"></a>ライセンス検証エラー
 
@@ -93,7 +92,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
         ![リソースとして証明書を追加](media/isv_resource_cer.png)
 
-3. ライセンス コードを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**ライセンス コード** を選択し、ライセンス コードに名前を付けます。 この例では、ライセンス コードに **ISVLicenseCode** という名前を付けました。 **追加**をクリックします。
+3. ライセンス コードを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**ライセンス コード** を選択し、ライセンス コードに名前を付けます。 この例では、ライセンス コードに **ISVLicenseCode** という名前を付けました。 **追加** をクリックします。
 
     ![ライセンス コードを作成しています](media/isv_new_license_code.png)
 
@@ -197,7 +196,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 ![保護されている ISV ソリューションと保護されていない ISV ソリューション](./media/isv_protected_solution.png)
 
 ## <a name="production-environments"></a>実稼働環境
-実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。 構成モード用テンプレート パッケージは、すべてのインストールの \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常 j:\\AOSService\\PackagesLocalDirectory または c:\\AOSService\\PackagesLocalDirectory\\ の下にあります) で見つけることができます。 
+実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。 コンフィギュレーション モード用テンプレート パッケージは、すべてのインストールに関して次の場所にあります: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常次の下にあります j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 > [!div class="mx-imgBorder"]
 > ![コンフィギュレーション モードのテンプレート パッケージの場所](media/isv_template_location.png)

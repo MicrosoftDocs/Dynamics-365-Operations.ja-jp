@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9065ac7bcc0e96e2f93df7cfc90d63a0bb201313
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985695"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408168"
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 

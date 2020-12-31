@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 455306c8ffff387386c67a8c03fc02344635550d
-ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
+ms.openlocfilehash: ac3edf5e44db1f45fa91bd8d8899a9d14fca820a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3815648"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409147"
 ---
 # <a name="download-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のダウンロード
 
@@ -43,6 +42,6 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 | LCS 接続 | あり | LCS へのサービス接続を選択または作成します。 詳細については、[Azure Pipelines での LCS 接続の作成](pipeline-lcs-connection.md) を参照してください。 |
 | LCS プロジェクト ID | あり | 配置する資産およびターゲット環境の両方を含むプロジェクトの ID を LCS に入力します。 プロジェクト ID は、プロジェクトのダッシュボードの URL の末尾に記載できます。 |
 | ダウンロード先のパス | あり | 資産のダウンロード先のパスを入力します。 |
-| 検索パターン | あり | LCS の資産ライブラリで資産を検索するために使用する検索パターンのタイプを選択します。 選択した値に応じて、次のオプションを使用できます。<ul><li>**資産 ID (guid)** – この値を選択する場合は、**LCS ファイル資産 ID** フィールドに、資産 ID を入力するか、またはセミコロンで区切られた資産 ID の一覧を入力します。 資産 ID は、グローバル一意識別子 (GUID) です。</li><li>**名前** – この値を選択した場合は、**LCS ファイル資産タイプ** フィールドで資産タイプを選択します。 次に、**LCS ファイル資産名**フィールドで、検索する名前を指定します。 アスタリスク (\*) を名前でワイルドカード文字として使用できます。 たとえば、**MyPackage\*** と入力します。</li></ul> |
+| 検索パターン | あり | LCS の資産ライブラリで資産を検索するために使用する検索パターンのタイプを選択します。 選択した値に応じて、次のオプションを使用できます。<ul><li>**資産 ID (guid)** – この値を選択する場合は、**LCS ファイル資産 ID** フィールドに、資産 ID を入力するか、またはセミコロンで区切られた資産 ID の一覧を入力します。 資産 ID は、グローバル一意識別子 (GUID) です。</li><li>**名前** – この値を選択した場合は、**LCS ファイル資産タイプ** フィールドで資産タイプを選択します。 次に、**LCS ファイル資産名** フィールドで、検索する名前を指定します。 アスタリスク (\*) を名前でワイルドカード文字として使用できます。 たとえば、**MyPackage\*** と入力します。</li></ul> |
 
 ダウンロードが正常に行われた後、ファイル パスの一覧を出力変数と共に取得できます。 複数のファイルが存在する場合は、セミコロンで区切られたファイル パスの一覧が出力変数に割り当てられます。 Azure DevOps の出力変数の詳細については、[タスクからの出力変数を使用する を参照してください](https://docs.microsoft.com/azure/devops/pipelines/process/variables#use-output-variables-from-tasks) を参照してください。

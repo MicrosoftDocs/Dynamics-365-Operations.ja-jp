@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.14 の機能のプレビュー (2020 年 11 月)
+title: Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.14 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 12a98bbda609446916bad937280f597adee02404
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: f6ad1cdbadef85016b0e75bde84200cf1c57e572
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3764989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4409559"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10014-november-2020"></a>Dynamics 365 Commerce 10.0.14 の機能のプレビュー (2020 年 11 月)
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10014-november-2020"></a>Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.14 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.605 で、次のスケジュールで使用できます。
 
@@ -66,8 +66,8 @@ Dynamics 365 Commerce 10.0.14 には、プラットフォーム更新プログ�
 
 [Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
 

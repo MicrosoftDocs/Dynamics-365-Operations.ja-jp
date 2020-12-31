@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 996c31c682ff507ba6a204f2881c19b006e37d1f
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 6cc2a2843d4cad5c4294af02d2f5461b9b7103c7
+ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033028"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4409606"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -31,14 +30,16 @@ ms.locfileid: "3033028"
 このチュートリアルでは、フリート管理拡張モデルを詳しく見ていきます。 このモデルには、フリート管理アプリケーションの機能を拡張する要素が含まれています。 *拡張機能* を作成することにより、モデル要素をカスタマイズすることができます。 Microsoft Dynamics AX 2012 の オーバーレイ機能とは異なり、拡張機能はベースライン モデル要素をオーバーレイしません。 代わりに、拡張機能はモデルと関連付けられているビジネス ロジックに追加またはカスタマイズする別のアセンブリとしてコンパイルされます。 テーブルにフィールドを追加、またはフォームにコントロールを追加することなどによりメタデータを拡張、およびイベント ハンドラおよびプラグイン クラスを定義することによりビジネス ロジックを拡張またはカスタマイズすることができます。 テーブル、フォーム、フォーム データ ソース、フォーム コントロール、およびその他を使用して、様々な定義済みイベントでイベント ハンドラーを作成することができるようになりました。 プラグインは、アプリケーションのビジネス ロジックを交換または拡張するできるようにする新しい機能拡張の概念でもあります。
 
 ## <a name="prerequisites"></a>前提条件
+
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングする必要があります。
 
 ## <a name="understanding-the-fleet-management-model"></a>フリート管理モデルを理解する
-フリート管理アプリケーションは、車両、顧客、および車両予約を管理するためのシステムをレンタル自動車会社に提供します。 アプリケーションは、フリート係とフリート マネージャの役割で使用されるよう設計されています。
+
+フリート管理アプリケーションは、車両、顧客、および車両予約を管理するためのシステムをレンタカー会社に提供します。 アプリケーションは、フリート係とフリート マネージャの役割で使用されるよう設計されています。
 
 ### <a name="fleet-clerk"></a>フリート係
 
-担当者は、顧客との対面または電話でのやり取りを処理する受付従業員です。 担当者は主に、アプリケーションに顧客情報を入力する、顧客の車両予約を作成する、車両アクセサリをオファーすることで予約をアップセルする、車両レンタルの終了時に車両の返却を処理することに関心を持っています。 担当者は、各自のニーズを予測し、楽しくて印象的なエクスペリエンスを提供しながら、顧客とやり取りすることにより、**フリート管理ワークスペース**を使用して顧客とのやり取りを準備することに大部分の時間を費やします。
+担当者は、顧客との対面または電話でのやり取りを処理する受付従業員です。 担当者は主に、アプリケーションに顧客情報を入力する、顧客の車両予約を作成する、車両アクセサリをオファーすることで予約をアップセルする、車両レンタルの終了時に車両の返却を処理することに関心を持っています。 担当者は、各自のニーズを予測し、楽しくて印象的なエクスペリエンスを提供しながら、顧客とやり取りすることにより、**フリート管理ワークスペース** を使用して顧客とのやり取りを準備することに大部分の時間を費やします。
 
 ### <a name="fleet-manager"></a>フリート マネージャー
 
@@ -50,7 +51,7 @@ ms.locfileid: "3033028"
 
 ### <a name="vehicles"></a>車両及び運搬具
 
-車両は主として価格が異なり、車両の*クラス*に比例します。 車両に関する情報を格納するテーブルの名前は、 **FMVehicle**で始まります。
+車両は主として価格が異なり、車両の *クラス* に比例します。 車両に関する情報を格納するテーブルの名前は、 **FMVehicle** で始まります。
 
 ### <a name="reservations-and-rentals"></a>引当とレンタル
 
@@ -74,12 +75,11 @@ ms.locfileid: "3033028"
 ## <a name="setup"></a>段取り
 前のチュートリアルでフリート管理ソリューションを開いていない場合は、以下の手順を実行します。 フリート管理ソリューション ファイルは、Dynamics AX のダウンロード可能な VM で利用できます。
 
-1.  **デスクトップ**で、**Visual Studio** ショートカットをダブルクリックして、開発環境を開きます。
-2.  **FleetManagement** ソリューションを開きます。 **ファイル**メニューで、**開く**をポイントし、**プロジェクト/ソリューション**をクリックします。
+1.  **デスクトップ** で、**Visual Studio** ショートカットをダブルクリックして、開発環境を開きます。
+2.  **FleetManagement** ソリューションを開きます。 **ファイル** メニューで、**開く** をポイントし、**プロジェクト/ソリューション** を選択します。
 3.  デスクトップを参照し、**FleetManagement** フォルダーを開きます。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
 4.  **FleetManagement** という名前のソリューション ファイルを選択します。 表示されるファイル タイプは Microsoft Visual Studio Solution です。
-5.  **開く** をクリックします。 ソリューションを開くには時間がかかる場合があります。
-
+5.  **開く** を選択します。 ソリューションを開くには時間がかかる場合があります。
 
 
 ### <a name="installing-the-demo-data"></a>デモ データのインストール
@@ -88,66 +88,66 @@ ms.locfileid: "3033028"
 
 1.  VM で、Internet Explorer を開き、アプリケーションのベース URL に移動します。
 2.  サインインします。
-3.  ダッシュ ボードで、ナビゲーション ウィンドウを開き、**フリート管理 &gt; 設定 &gt; フリート設定**に移動します。 
+3.  ダッシュ ボードで、ナビゲーション ウィンドウを開き、**フリート管理 &gt; 設定 &gt; フリート設定** に移動します。 
 
     [![フリート設定 > カスタマイズ モデル](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
 
-4.  **デモ データの設定**をクリックします。 
+4.  **デモ データの設定** をクリックします。 
 
     [![コンフィギュレーション > モデルをカスタマイズする](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)
 
-5.  デモ データの再読み込みを促すメッセージが表示されたら、**はい**をクリックします。
-6.  データが読み込みを完了したら、**閉じる** をクリックします。
-7.  ダッシュ ボードで、ナビゲーション バーを開き、**システム管理 &gt; 共通 &gt; 集計の測定を維持**に移動します。 (手順 7 ～ 9 は、新しいリリースでは適用できません)
-8.  **FMAggregateMeasurements** を選択し、アクション ペインで **今すぐ更新** をクリックします。
+5.  デモ データの再読み込みを促すメッセージが表示されたら、**はい** を選択します。
+6.  データの読み込みが完了したら、 **閉じる** を選択します。
+7.  ダッシュ ボードで、ナビゲーション バーを開き、**システム管理 &gt; 共通 &gt; 集計の測定を維持** に移動します。 (手順 7 ～ 9 は、新しいリリースでは適用できません。)
+8.  **FMAggregateMeasurements** を選択し、アクション ペインで **今すぐ更新** を選択します。
 9.  処理が完了するまで待機します。 進行中の処理は、一連の移動するドットによってページの上部に示されます。 インジケータが消えて、**前回処理時刻** フィールドが更新されると、処理が完了します。
 
 ## <a name="open-the-fmrental-form-on-the-one-box-environment"></a>1 ボックス環境で FMRental フォームを開く
 1.  VM で、Internet Explorer を開き、Dynamics AX アプリケーションのベース URL に移動します。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 2.  求められた場合にログインします。
-3.  **予約管理**タイルを検索し、予約管理ワークスペースを開くためそれをクリックします。 
+3.  **予約管理** タイルをクリックして予約管理ワークスペースを開きます。 
 
     [![予約管理タイル](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)
 
-4.  **予約管理** ワークスペースが開いたら、**現在のレンタル** をクリックします。 
+4.  **予約管理** ワークスペースが開いたら、**現在のレンタル** を選択します。 
 
     [![現在のレンタル](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)
 
-5.  これにより、グリッド ビューで **レンタル** フォームが開きます。 
+5.  グリッド ビューで **レンタル** フォームが開きます。 
 
     [![レンタル フォーム](./media/rentalform_customizemodel.png)](./media/rentalform_customizemodel.png)
 
-6.  **レンタル** フォームを実行した後、**オプション &gt; ビューの変更 &gt; ヘッダー** をクリックして、**ヘッダーの表示**を開きます。
+6.  **レンタル** フォームを読み込んだら、**オプション &gt; ビューの変更 &gt; ヘッダー** を選択して、**ヘッダーの表示** を開きます。
 
     [![ヘッダーの表示](./media/headerview_customizemodel.png)](./media/headerview_customizemodel.png)
 
-7.  **ヘッダーの表示**フォームを読み込んだら、下までスクロールし、**割引** タブを展開します。このタブはフリート管理モデルに含まれていません。 これは、**FMRental** フォームに対する拡張機能としてフリート管理拡張モデルでモデリングされています。
+7.  **ヘッダーの表示** フォームを読み込んだら、下までスクロールし、**割引** タブを展開します。このタブはフリート管理モデルに含まれていません。 これは、**FMRental** フォームに対する拡張機能としてフリート管理拡張モデルでモデリングされています。
 
     [![割引](./media/discounts_customizemodel.png)](./media/discounts_customizemodel.png)
 
-8.  割引を追加するために**追加**をクリックします。
-9.  **得意先** 割引を選択し、**OK** をクリックします。 選択した割引が **割引** グリッドに追加されます。 
+8.  割引を追加するために **追加** を選択します。
+9.  **得意先** 割引を選択し、**OK** を選択します。 選択した割引が **割引** グリッドに追加されます。 
 
     [![得意先割引](./media/fcdiscount_customizemodel.png)](./media/fcdiscount_customizemodel.png)
 
 10. FactBox を開くには、ショートカット キー **Alt+F2** を使用します。
-11. 右側の**レンタル合計**情報ボックスを展開し、適用されるディスカウントの割引を表示します。 
+11. 右側の **レンタル合計** 情報ボックスを展開し、適用されるディスカウントの割引を表示します。 
 
     [![レンタル合計](./media/rentaltotal_customizemodel.png)](./media/rentaltotal_customizemodel.png)
 
 ## <a name="overview-of-the-fleet-management-discount-extension-project"></a>フリート管理割引の拡張プロジェクトの概要
-このチュートリアルでは、**FleetManagementDiscounts** プロジェクトに**フリート管理拡張**という名前のモデルに属しているモデルの要素が含まれます。 ここで、プロジェクト要素について調べ、学びます。
+このチュートリアルでは、**FleetManagementDiscounts** プロジェクトに **フリート管理拡張** という名前のモデルに属しているモデルの要素が含まれます。 ここで、プロジェクト要素について調べ、学びます。
 
 ### <a name="navigate-to-fmrentalextension-in-the-tree-designer"></a>ツリー デザイナーで FMRental.Extension に移動します。
 
-1.  Visual Studio の**ソリューション エクスプローラー**の **FleetManagement 割引**プロジェクトで、**ユーザー インターフェイス &gt; フォーム機能拡張**と展開します。 
+1.  Visual Studio の **ソリューション エクスプローラー** の **FleetManagement 割引** プロジェクトで、**ユーザー インターフェイス &gt; フォーム機能拡張** と展開します。 
 
     [![ソリューション エクスプローラー](./media/solutionexplorer1_customizemodel.png)](./media/solutionexplorer1_customizemodel.png)
 
     **FMRental.Extension** 要素は、2 つの新しいデータ ソースと新しいタブ コントロールを追加することによって **FMRental** フォームの機能を拡張する拡張要素です。
-2.  **ソリューション エクスプローラー**で、**FMRental.Extension** をダブルクリックしてデザイナーを開きます。 次のイメージに示します。
-    -   *斜体*のテキストで示されているデータ ソースはベースライン フォームで定義されているデータ ソースです。
-    -   **太字**で示されているデータ ソースは現在の拡張子で定義されています。
+2.  **ソリューション エクスプローラー** で、**FMRental.Extension** をダブルクリックしてデザイナーを開きます。 次のイメージに示します。
+    -   *斜体* のテキストで示されているデータ ソースはベースライン フォームで定義されているデータ ソースです。
+    -   **太字** で示されているデータ ソースは現在の拡張子で定義されています。
 
     デザイナーは、その拡張機能を含めて、モデル要素の統合ビューを表示します。 読み取り専用ノードは斜体で表示さえｒますが、現在の拡張機能に属するノードはカスタマイズの種類を示す他の視覚的な記号と共に太字で表示されます。 
 
@@ -167,10 +167,10 @@ ms.locfileid: "3033028"
 
 ### <a name="open-the-fmrentalextension-xml-file-to-view-the-metadata"></a>FMRental.Extension XML ファイルを開いてメタデータを表示
 
-1.  **ソリューション エクスプローラー**で、FMRental.Extension フォーム拡張子をクリックしてから**プログラムから開く**をクリックします。
-2.  **プログラムから開く**ダイアログ ボックスで、**XML (テキスト) エディター**を選択してから **OK** をクリックします。
+1.  **ソリューション エクスプローラー** で、FMRental.Extension フォーム拡張子をクリックしてから **プログラムから開く** をクリックします。
+2.  **プログラムから開く** ダイアログ ボックスで、**XML (テキスト) エディター** を選択してから **OK** をクリックします。
 3.  デザイナーを閉じるように求めるメッセージが表示されたら、**はい** をクリックします。
-4.  対応するマイナス記号をクリックすると、**制御**および**データ ソース** ノードの子ノードが折りたたまれます。 正しい結果については次の図を参照してください。 
+4.  対応するマイナス記号をクリックすると、**制御** および **データ ソース** ノードの子ノードが折りたたまれます。 正しい結果については次の図を参照してください。 
 
     [![レンタル コード](./media/fmrentalcode_customizemodel.png)](./media/fmrentalcode_customizemodel.png) 
 
@@ -180,8 +180,8 @@ ms.locfileid: "3033028"
 
 **FleetManagement Discounts** プロジェクトには 2 つの新しいテーブル **FEDiscount** および **FERentalDiscountRelationTable** と、既存のフリート管理テーブル **FMRental** および **FMRentalCharge** への 2 つの拡張が含まれています。
 
-1.  **ソリューション エクスプローラー**の FleetManagement 割引で**データ モデル &gt; テーブル拡張機能 &gt; FMRental.Extension** をダブルクリックしてデザイナーを開きます。
-2.  **フィールド**ノードを展開し、拡張子に追加されたフィールド FEVehicleRateDiscount がベース FMRental テーブルに含まれていることを確認します。 
+1.  **ソリューション エクスプローラー** の FleetManagement 割引で **データ モデル &gt; テーブル拡張機能 &gt; FMRental.Extension** をダブルクリックしてデザイナーを開きます。
+2.  **フィールド** ノードを展開し、拡張子に追加されたフィールド FEVehicleRateDiscount がベース FMRental テーブルに含まれていることを確認します。 
 
     [![FEVehicleRateDiscount](./media/nodes_customizemodel.png)](./media/nodes_customizemodel.png)
 
@@ -189,11 +189,11 @@ ms.locfileid: "3033028"
 
 ### <a name="inspect-the-data-event-handlers"></a>データ イベント ハンドラーの検査
 
-**ソリューション エクスプローラー**の FleetManagement 割引プロジェクトで、**コード &gt; クラス &gt; FMRentalCharge\_Extension** をダブルクリックしてコード エディターを開きます。 
+**ソリューション エクスプローラー** の FleetManagement 割引プロジェクトで、**コード &gt; クラス &gt; FMRentalCharge\_Extension** をダブルクリックしてコード エディターを開きます。 
 
 [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
 
-このクラスには、**FMRentalCharge** テーブルの**更新**および**挿入**イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 
+このクラスには、**FMRentalCharge** テーブルの **更新** および **挿入** イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 
 
 > [!NOTE]
 > このクラスが拡張クラス ( \_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
@@ -202,7 +202,7 @@ ms.locfileid: "3033028"
 
 前のセクションに示された **FMRentalCharge\_Extension** クラスのイベント ハンドラー コードでは、両方のイベント ハンドラーが **FMTotalsEngineBase::GetInstance** を呼び出してフリート管理計算エンジンの現在のインスタンスを取得することを確認してください。 計算エンジンは、プラグイン クラスを使用して実装されます。 クラス ファクトリは、コンフィギュレーションまたはビジネス データに基づくプラグイン クラスの適切なインスタンスを作成します。
 
-1.  FMRentalCharge\_Extension.xpp を表示するコード エディター ウィンドウで、**GetInstance** を右クリックしてから**定義に移動**をクリックします。 これにより、抽象クラス **FMTotalsEngineBase** のコードが開きます。 この抽象クラスは**プラグインポイント**と呼ばれ、属性 \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] に関連付けられています。 
+1.  FMRentalCharge\_Extension.xpp を表示するコード エディター ウィンドウで、**GetInstance** を右クリックしてから **定義に移動** を選択します。 抽象クラス **FMTotalsEngineBase** が表示したコード エディターが開きます。 この抽象クラスは **プラグインポイント** と呼ばれ、属性 \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] に関連付けられています。 
 
     [![定義に移動](./media/godefinition_customizemodel.png)](./media/godefinition_customizemodel.png) 
 
@@ -218,40 +218,40 @@ ms.locfileid: "3033028"
 
     [![FMParameters](./media/code3_customizemodel.png)](./media/code3_customizemodel.png) 
 
-    Dynamics AX は、コンフィギュレーション可能なプラグイン クラスもサポートします。このクラスでは、クラスに関連付けられているプラグイン メタデータは開発時は未知であり、管理者がランタイム時にコンフィギュレーション可能です。 これは、このチュートリアルの対象ではありません。
+    Finance and Operations アプリは、構成可能なプラグイン クラスもサポートしており、クラスに関連付けられているプラグイン メタデータは開発時は未知で、管理者がランタイム時に構成可能です。 このチュートリアルでは、その機能についてカバーしていません。
 
 ## <a name="create-additional-fleet-management-extensions"></a>追加のフリート管理拡張子を作成する
 このセクションでは、Visual Studio ツールを使用して拡張機能を作成して操作する方法を示します。
 
 ### <a name="extend-the-fmvehicle-table"></a>FMVehicle テーブルを拡張
 
-1.  **ソリューション エクスプローラー**で、**FleetManagement 割引**プロジェクトを選択します。
-2.  Visual studio の**アプリケーション エクスプローラー**で、**表示 &gt; アプリケーション エクスプローラー**をクリックして、FMVehicle という名前のテーブルを検索します。 フィルター バーに "FMVehicle type:Table" と入力し、**Enter** を押します。 
+1.  **ソリューション エクスプローラー** で、**FleetManagement 割引** プロジェクトを選択します。
+2.  Visual studio の **アプリケーション エクスプローラー** で、**表示 &gt; アプリケーション エクスプローラー** を選択して、FMVehicle という名前のテーブルを検索します。 フィルター バーに `FMVehicle type:Table` と入力し、**Enter** を押します。 
 
     [![FMVehicle の AppExplore 検索](./media/appexplorersmall_customizemodel.png)](./media/appexplorersmall_customizemodel.png)
 
-3.  **FMVehicle** を右クリックし、**拡張子の作成** をクリックします。 
+3.  **FMVehicle** を右クリックしてから、**拡張機能の作成** を選択します。 
 
     [![AppExplorer 拡張機能の作成](./media/appexplorerlarge1_customizemodel.png)](./media/appexplorerlarge1_customizemodel.png)
 
-    これにより、**FMVehicle.Extension** という名前の **FleetManagement Discounts** プロジェクトに **FMVehicle** テーブルの拡張が作成されます。 
+    **FMVehicle.Extension** という名前の **FleetManagement Discounts** プロジェクトで **FMVehicle** テーブルの拡張機能が作成されます。 
 
     [![FMVehicle.Extension](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)
 
-4.  **ソリューション エクスプローラー**で、**FMVehicle.Extension** を右クリックしてから**プログラムから開く**をクリックします。 ダイアログ ボックスで **XML (テキスト) エディター**を選択してから **OK** をクリックします。 **注記**: この拡張子ファイルは、データベースの **FMVehicle** テーブルのメタデータを含まない簡単なテンプレートです。 拡張ファイルには拡張を定義するメタデータのみが常に含まれ、基本モデル要素からは何もありません。 
+4.  **ソリューション エクスプローラー** で、**FMVehicle.Extension** を右クリックしてから **プログラムから開く** を選択します。 ダイアログ ボックスで **XML (テキスト) エディター** を選択してから **OK** を選択します。 **注記**: この拡張子ファイルは、データベースの **FMVehicle** テーブルのメタデータを含まない簡単なテンプレートです。 拡張ファイルには拡張を定義するメタデータのみが常に含まれ、基本モデル要素からは何もありません。 
 
     [![FMVehicle](./media/code4_customizemodel.png)](./media/code4_customizemodel.png)
 
 5.  XML エディターを閉じます。
-6.  **ソリューション エクスプローラー**で、**FMVehicle.Extension** をダブルクリックしてデザイナーを開きます。
+6.  **ソリューション エクスプローラー** で、**FMVehicle.Extension** をダブルクリックしてデザイナーを開きます。
 7.  **フィールド** を右クリックし、新しい整数型フィールドを追加します。 フィールドの名前を **NumberOfCylinders** に変更します。
-8.  **プロパティ** ウィンドウで、新しいフィールドの**ラベル** プロパティを **NumberofCylinders** に設定します。
+8.  **プロパティ** ウィンドウで、新しいフィールドの **ラベル** プロパティを **NumberofCylinders** に設定します。
 9.  **NumberOfCylinders** フィールドを **AutoReport** フィールド グループにドラッグ アンド ドロップし、ベース テーブルのフィールド グループに展開します。 
 
     [![NumberOfCylinders\_CustomizeModel](./media/numberofcylinders_customizemodel.png)](./media/numberofcylinders_customizemodel.png)
 
 10. FMVehicle.Extension を保存します。
-11. **イベント**ノードを展開します。 **イベント** ノードには、テーブルが公開するすべてのイベントが一覧表示されます。 これには、フレームワークによって定義されたイベントと、アプリケーション開発者によって定義されたデリゲート メソッドが含まれます。 
+11. **イベント** ノードを展開します。 **イベント** ノードには、テーブルが公開するすべてのイベントが一覧表示されます。 このリストには、フレームワークによって定義されたイベントと、アプリケーション開発者によって定義されたデリゲート メソッドが含まれています。 
 
     [![イベント ノード](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png)
 
@@ -263,7 +263,7 @@ ms.locfileid: "3033028"
 
     このステップは、イベント ハンドラー メソッドのシグネチャをクリップボードにコピーします。
 13. **FMVehicleEventHandlers** という名前の新しいクラスを **FleetManagement Discounts** プロジェクトに追加します。
-14. **ソリューション エクスプローラー**で、**FEVehicleEventHandlers** をダブルクリックしてコード エディターを開きます。
+14. **ソリューション エクスプローラー** で、**FEVehicleEventHandlers** をダブルクリックしてコード エディターを開きます。
 15. 右クリックし、手順 12 にコピーしたイベント ハンドラー メソッドを貼り付けます。
 
     ```xpp
@@ -307,9 +307,9 @@ ms.locfileid: "3033028"
 
 ### <a name="extend-the-fmvehicle-form"></a>FMVehicle フォームを拡張
 
-次に、**FleetManagement 割引**プロジェクトの **FMVehicle** フォーム拡張機能を追加します。 最初に、**ソリューション エクスプローラー**でこのプロジェクトを選択することを確認します。
+次に、**FleetManagement 割引** プロジェクトの **FMVehicle** フォーム拡張機能を追加します。 最初に、**ソリューション エクスプローラー** でこのプロジェクトを選択することを確認します。
 
-1.  **アプリケーション エクスプローラー**を使用して **FMVehicle** という名前のフォームを検索するには、**アプリケーション エクスプローラー**のフィルタ バーに *FMVehicle タイプ:フォーム* を入力します。
+1.  **アプリケーション エクスプローラー** を使用して **FMVehicle** という名前のフォームを検索し、**アプリケーション エクスプローラー** のフィルター バーに `FMVehicle type:form` を入力します。
 2.  フォームを右クリックし、**拡張子の作成** をクリックします。
 3.  下に示すように、**NumberOfCylinders** という名前の新しい整数コントロールを **Attributes2** グループ コントロールに追加します。 このコントロールは、**デザイン&gt; タブ &gt; TabPageDetails &gt; TabHeader &gt; DetailsDetails &gt; Attributes2** を展開すると見つけることができます。 
 
@@ -323,23 +323,24 @@ ms.locfileid: "3033028"
 
 ### <a name="test-your-extensions"></a>拡張機能をテスト
 
-1.  **ソリューション エクスプローラー**で、**FleetManagement 割引**を右クリックしてから、**スタートアップ プロジェクトとして設定**をクリックします。
+1.  **ソリューション エクスプローラー** で、**FleetManagement 割引** を右クリックしてから、**スタートアップ プロジェクトとして設定** をクリックします。
 2.  同様に、FleetManagement 割引で、スタートアップ オブジェクトとして **FMVehicle.Extension** フォームを設定します。
 3.  **Ctrl+F5** キーを押してデバッグなしで開始するか、**デバッグ** メニューを使用します。
-4.  **車両**フォームが開いた後、車両を選択して詳細を表示します。
-5.  **詳細**タブを展開し、新しい**シリンダ番号**フィールドを通知します。 
+4.  **車両** フォームが開いた後、車両を選択して詳細を表示します。
+5.  **詳細** タブを展開し、新しい **シリンダ番号** フィールドを通知します。 
 
     [![シリンダー数の詳細](./media/nbofcyls.jpg)](./media/nbofcyls.jpg)
 
-6.  アクション ウィンドウで、**編集**をクリックして**シリンダの数**フィールドの値を 12 に変更します。
-7.  アクション ウィンドウで、**保存**をクリックします。
+6.  アクション ウィンドウで、**編集** をクリックして **シリンダの数** フィールドの値を 12 に変更します。
+7.  アクション ウィンドウで、**保存** をクリックします。
 8.  検証エラーを確認します。
 9.  有効なシリンダ数を 9 より小さく入力し、次に新しい値を保存します。
 
 ## <a name="experiment-with-event-handlers-on-form-controls"></a>フォーム コントロールでのイベント ハンドラーを試す
-これは、既存のコントロールにイベント ハンドラー メソッドを追加する例です。
 
-1.  **FMRental** フォーム デザイナーで **AddLine** コマンド ボタン コントロールを検索し、**OnClicked** イベントを右クリックし、次に選択**イベント ハンドラーのメソッドをコピー**を選択します。
+既存のコントロールにイベント ハンドラー メソッドを追加できます。
+
+1.  **FMRental** フォーム デザイナーで **AddLine** コマンド ボタン コントロールを検索し、**OnClicked** イベントを右クリックし、次に選択 **イベント ハンドラーのメソッドをコピー** を選択します。
 
     [![明細行 OnClicked イベントを追加します。](./media/addlineonclickedevent.jpg)](./media/addlineonclickedevent.jpg)
 
@@ -447,21 +448,17 @@ public static class FMVehicle_Extension
 ![拡張表示メソッド](./media/extensiondisplaymethod.jpg)
 
 ## <a name="create-a-fleet-extension-package-for-deployment"></a>展開のためのフリート拡張パッケージを作成する
+
 拡張機能をテスト環境、運用前環境、運用環境などの別の環境に展開するには、展開パッケージを作成する必要があります。
 
-1.  Visual Studio の **Dynamics AX** メニューで、**配置**をポイントしてから、**配置パッケージの作成**をクリックします。 
+1. Visual Studio の **Dynamics AX** メニューで、**配置** をポイントしてから、**配置パッケージの作成** を選択します。 
 
     ![配置パッケージの作成](./media/createdeploymentpackage_customizemodel.png)
 
-2.  **フリート管理拡張** チェック ボックスをオンにします。
-3.  **パッケージ ファイルの場所**テキスト ボックスに、「c:\FMLab」と入力します。
-4.  **作成** をクリックします。 これにより、フリート管理拡張パッケージを含む展開パッケージが作成されます。
+2. **フリート管理拡張** チェック ボックスをオンにします。
+3. **パッケージ ファイルの場所** テキスト ボックスに、「c:\FMLab」と入力します。
+4. **作成** を選択します。 フリート管理拡張パッケージを含む配置パッケージが作成されます。
 
-
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [FMLab サンプル コードをダウンロードする](https://github.com/Microsoft/FMLab)
-
-
-

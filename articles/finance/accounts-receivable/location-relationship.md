@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770899"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445216"
 ---
 # <a name="add-location-and-party-relationship-types"></a>場所と関係者のリレーションシップ タイプの追加 
 
@@ -33,7 +33,7 @@ ms.locfileid: "2770899"
 
 住所および連絡先情報について、新たに場所ロールを追加するには 2 つの方法があります。
 
--  **住所および連絡先情報の目的**ページに追加します。 新規ロールは **LogisticsLocationRole** テーブルにタイプ = 0 で保存されます。これは、ロールが **LogisticsLocationRoleType** 列挙型とその拡張で定義されたシステム ロールではないことを示しています。 ユーザーは住所や連絡先情報を作成するときに、このロールを使用できるようになります。
+-  **住所および連絡先情報の目的** ページに追加します。 新規ロールは **LogisticsLocationRole** テーブルにタイプ = 0 で保存されます。これは、ロールが **LogisticsLocationRoleType** 列挙型とその拡張で定義されたシステム ロールではないことを示しています。 ユーザーは住所や連絡先情報を作成するときに、このロールを使用できるようになります。
 
     ![住所とコンテンツ情報の目的](media/Address-Contact.PNG)
 
@@ -51,7 +51,7 @@ ms.locfileid: "2770899"
 
         ![データ設定](media/Dirdata.PNG)
 
-    4.  新規場所ロールの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertLogisticsLocationRoles() を呼び出します。 このプロセスが完了すると、**LogisticsLocationRole** テーブルでタイプ \>0 で設定した新規ロールが表示されます。 **住所と連絡先情報の目的**ページに新規ロールが表示されます。
+    4.  新規場所ロールの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertLogisticsLocationRoles() を呼び出します。 このプロセスが完了すると、**LogisticsLocationRole** テーブルでタイプ \>0 で設定した新規ロールが表示されます。 **住所と連絡先情報の目的** ページに新規ロールが表示されます。
 
         ![新規の場所の挿入](media/InsertNewLocation.PNG)
 
@@ -59,7 +59,7 @@ ms.locfileid: "2770899"
 
 新規リレーションシップ タイプを追加するには次の 2 つの方法があります。
 
--   **リレーションシップ タイプ**ページに追加します。 新規リレーションシップは **DirRelationshipTypeTable** に、systemtype = 0 で保存されます。
+-   **リレーションシップ タイプ** ページに追加します。 新規リレーションシップは **DirRelationshipTypeTable** に、systemtype = 0 で保存されます。
 
     ![関係タイプ](media/Relationship.PNG)
 
@@ -71,6 +71,6 @@ ms.locfileid: "2770899"
     
     ![DirRelationshipChild 初期化子](media/DirRelationship.PNG)
 
-    3.  新規リレーションシップ タイプの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertDirRelationshipTypes() を呼び出します。 **DirRelationshipTypeTable** に新規リレーションシップ タイプが表示され、**リレーションシップ タイプ**ページでこの新規リレーションシップ タイプが利用可能となります。
+    3.  新規リレーションシップ タイプの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertDirRelationshipTypes() を呼び出します。 **DirRelationshipTypeTable** に新規リレーションシップ タイプが表示され、**リレーションシップ タイプ** ページでこの新規リレーションシップ タイプが利用可能となります。
 
         ![実行可能なクラス](media/Runnable.PNG)

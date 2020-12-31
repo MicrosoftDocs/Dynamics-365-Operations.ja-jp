@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ac3bf768e3ec298114aef4f5716c60f34fc11cc
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: 74dc5f3e1531a886c1eabbe11d07b1de9614b463
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3764987"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408687"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 

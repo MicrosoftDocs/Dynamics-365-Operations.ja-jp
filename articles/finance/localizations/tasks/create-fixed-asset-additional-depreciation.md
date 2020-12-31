@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6a2cb3474b46eab7252dde0944c59a3ca9d798f9
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978553"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408196"
 ---
 # <a name="create-a-fixed-asset-with-additional-depreciation"></a>割増償却を使用する固定資産の作成
 

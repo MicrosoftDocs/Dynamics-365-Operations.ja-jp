@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 003ddd227a9217b90934c0e0cebd6284c6ffc086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 709f3c64d8a728817375d2cb5dc598933018e30e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409492"
 ---
 # <a name="modify-extended-data-types-edts-through-extension"></a>拡張機能を通じて拡張データ型 (EDT) を変更する
 

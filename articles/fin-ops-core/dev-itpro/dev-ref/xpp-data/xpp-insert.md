@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: d5d829711c1fdf166e1fb264810cf9713fdd10cb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5310f978a7f625e6a5bfdafc0aa5d09f7e5b9ba9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985056"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408738"
 ---
 # <a name="insert-data"></a>データの挿入
 
@@ -44,11 +43,11 @@ ms.locfileid: "3985056"
 + **insert** メソッドを呼び出す前に、テーブル変数で **select** ステートメントを使用しないでください。
 + **insert** メソッドでは、すべての主要なフィールド要件とテーブルの依存関係を処理するわけではありません。 それらの処理を行うには、コードを記述する必要があります。
 
-**挿入**メソッドが作用する方法を次に示します。
+**挿入** メソッドが作用する方法を次に示します。
 
 + クエリによって選択されている行の指定された列のみ、名前付きテーブルに挿入されます。
 + コピー元のテーブルの列とコピー先のテーブルの列は、互換性のある型であることが必要です。
-+ 両方のテーブルの列がタイプおよび順序において一致する場合、列リストは**挿入**句から省略されます。
++ 両方のテーブルの列がタイプおよび順序において一致する場合、列リストは **挿入** 句から省略されます。
 
 次の例では、新しいレコードを CustGroup テーブルに挿入します。 新しいレコードの **CustGroup** 列は **41** に設定されています。 レコードの他のフィールドは空白になります。
 
@@ -82,11 +81,11 @@ ttsCommit;
 **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
 + *ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。
-+ *WhereClause* および *JoinedWhereClause* は、**[select](xpp-select-statement.md#where-keyword)** ステートメントの*WhereClause* 句で説明されています。
++ *WhereClause* および *JoinedWhereClause* は、**[select](xpp-select-statement.md#where-keyword)** ステートメントの *WhereClause* 句で説明されています。
 
 ### <a name="insert_recordset-inserting-data-from-another-table"></a>insert\_recordset: 別のテーブルからのデータの挿入
 
-この例では、NameValuePair テーブルの**値**列は**名前**値ごとに合計されます。 集計の結果は、ValueSumByName テーブルに格納されます。
+この例では、NameValuePair テーブルの **値** 列は **名前** 値ごとに合計されます。 集計の結果は、ValueSumByName テーブルに格納されます。
 
 ```xpp
 ValueSumByName valueSumName;
@@ -106,7 +105,7 @@ insert_recordset valueSumName (Name, ValueSum)
 - **128** または **"このリテラル文字列"** などのリテラルは、挿入されたデータのソースとしてクエリで使用できません。
 - ソース テーブルの列は、ターゲット テーブルに対応している必要はありません。
 
-この例では、NameValuePair テーブルに 1 つの新しいレコードが挿入されます。 このレコードの **ID** 値は **1**、**名前**の値は **Name1**、**値**の値は **1** です。
+この例では、NameValuePair テーブルに 1 つの新しいレコードが挿入されます。 このレコードの **ID** 値は **1**、**名前** の値は **Name1**、**値** の値は **1** です。
 
 ```X++
 NameValuePair nameValuePair;
@@ -124,7 +123,7 @@ select firstonly id_var, name_var, value_var from custTable;
 
 次の例は、サブセレクトを持つ **insert\_recordset** ステートメント上の 3 つのテーブルの結合を示しています。 また、同じ結合がある **while select** ステートメントも示しています。 変数は、1 つの列に挿入された値を供給するために使用されます。 **str** 変数は、宣言する必要があり、対応するデータベース フィールドの最大長さ以下の長さである必要があります。
 
-この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに**説明**という名前が付けられ、そのデータはローカル **sDescriptionVariable** 変数から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは*コンフィギュレーション キーの自動化*の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
+この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに **説明** という名前が付けられ、そのデータはローカル **sDescriptionVariable** 変数から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは *コンフィギュレーション キーの自動化* の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
 
 ```X++
 static void InsertJoin42Job(Args _args)

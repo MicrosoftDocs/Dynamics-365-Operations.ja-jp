@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b066d323f229d1d328490d07627271614d2aed32
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b06c72e16ba071e2029cc6402cab712bbaba422
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183330"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409350"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 
@@ -30,7 +29,7 @@ ms.locfileid: "2183330"
 
 このトピックでは、数値シーケンスのスコープを拡張する方法を示します。
 
-数字シーケンスの範囲は、数字シーケンスを使用する組織を定義します。 範囲は、**共有**、**会社**、**法人**、または**作業単位**のいずれかにすることができます。 **会社**と**法人**スコープを会計カレンダー期間と組み合わせて、より具体的な番号順序を作成することができます。 新しい番号順序の範囲は、拡張機能を通じて追加できます。  
+数字シーケンスの範囲は、数字シーケンスを使用する組織を定義します。 範囲は、**共有**、**会社**、**法人**、または **作業単位** のいずれかにすることができます。 **会社** と **法人** スコープを会計カレンダー期間と組み合わせて、より具体的な番号順序を作成することができます。 新しい番号順序の範囲は、拡張機能を通じて追加できます。  
 
 新しいスコープを作成してクライアントに表示させるには、次の手順を実行します。
 
@@ -45,8 +44,8 @@ ms.locfileid: "2183330"
 5. **NumberSequenceScopeFactory** クラスの拡張クラスを作成します。 新しいスコープ タイプを表す新しい **NumberSeqScope** を初期化するメソッドを追加します。
 6. **NumberSequenceDetails** フォームのフォーム拡張を作成します。 **スコープ** タブに新しいスコープ タイプを表示するコントロールを追加します。
 7. **NumberSequenceDetails** フォームの拡張クラスを作成します。
-   1. 新しいスコープ タイプが**スコープ**ボックスで選択されたときに新しいスコープ タイプを表示するために、**updateScopeControlVisibility** メソッドのポスト ハンドラーを作成します。
-   2. **updateScopeControlValues** メソッドのポスト ハンドラーを作成して、**スコープ**タブのコントロールの値を更新します。
+   1. 新しいスコープ タイプが **スコープ** ボックスで選択されたときに新しいスコープ タイプを表示するために、**updateScopeControlVisibility** メソッドのポスト ハンドラーを作成します。
+   2. **updateScopeControlValues** メソッドのポスト ハンドラーを作成して、**スコープ** タブのコントロールの値を更新します。
    3. 新しいスコープ タイプが選択されたときに **NumberSeqScope** インスタンスを初期化するための **createScope** メソッドのポスト ハンドラーを作成します。
    4. 新しいスコープ タイプの短い名前を返す **getShortNameForParameterType** デリゲートのイベント ハンドラーを作成します。
 8. **NumberSequenceTableEntity** および **NumberSequencesReferenceEntity** データ エンティティの拡張クラスを追加します。 新しいスコープ タイプの **NumberSequenceScope** を生成するために、**GenerateNumberSequenceScopeTypes** メソッドと **GenerateNumberSequenceScopeValues** メソッドのポスト ハンドラーを作成します。

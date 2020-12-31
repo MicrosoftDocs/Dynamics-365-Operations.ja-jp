@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: da7367f69ec58d4e51d715b37c8d02ec63ecaa5e
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: ac3d583c5f4cf32e121cf45fcd602d57d91da736
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029418"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409273"
 ---
 # <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 
@@ -30,7 +29,7 @@ ms.locfileid: "3029418"
 
 テーブルに関連付けられているビジネス ロジックを拡張するとき、コードをクリーンに維持するために役立つ一般的なコーディング原則はまだ適用されます。 したがって、最終的にアクションをテーブルの別々のメソッドにカプセル化する必要があります。 Microsoft Dynamics AX 2012 では、オーバーレイ経由でテーブルに直接メソッドを追加することによってそのタスクを完了していました。 拡張を使用して同じタスクを完了するには、別の方法を使用します。 具体的には、拡張クラスを作成します。
 
-たとえば、**MyInventLocationId** という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。 **挿入**イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。 そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに **myDefaultInventLocationId** という名前を付けます。
+たとえば、**MyInventLocationId** という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。 **挿入** イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。 そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに **myDefaultInventLocationId** という名前を付けます。
 
 最初に、拡張モデルに新しいクラスを作成します。 このクラスは InventTable テーブルを拡張し、読みやすく理解しやすい方法でテーブルのフィールドとメソッドにアクセスできるようにします 強化クラスに正しい名前を選択することが重要です。 この名前は、展開されるすべてのモデルのすべてのタイプにわたって一意でなければなりません。 詳細については、[拡張機能の名前付けのガイドライン](naming-guidelines-extensions.md) を参照してください。
 
@@ -51,7 +50,7 @@ final class InventTableMy_Extension
 拡張クラスにはいくつかのルールがあります。
 
 + 最終である必要があります。
-+ **\_拡張子**で接尾辞を付ける必要があります。
++ **\_拡張子** で接尾辞を付ける必要があります。
 + **[ExtensionOf()]** 属性で装飾されている必要があります。
 
 たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。
@@ -71,4 +70,4 @@ class InventTableMy_EventHandler
 ```
 
 > [!NOTE]
-> イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。 ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では**ありません**。 そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。 これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。
+> イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。 ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では **ありません**。 そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。 これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。

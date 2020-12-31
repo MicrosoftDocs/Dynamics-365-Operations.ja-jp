@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150373
 ms.assetid: f06da12e-911c-442c-97fd-280cbc970061
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 7fc47364dfb78297f4c40e8a6e651c76df306740
-ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
+ms.openlocfilehash: 152c0798c57fd59bb49a6cd659c1b5be7dd01392
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872429"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408754"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 

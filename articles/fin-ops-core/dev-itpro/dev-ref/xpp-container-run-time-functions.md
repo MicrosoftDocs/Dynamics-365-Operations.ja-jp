@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31301
 ms.assetid: 5b4741a5-dec1-4a3b-b739-6c12142ac668
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06bf0415c0120014a22dcacbb30bf22056e1d1ad
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f0cd819ec87e989b6c1827c48956fd7728e4db69
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026199"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408745"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 
@@ -126,7 +125,7 @@ container conIns (container container, int start, anytype element, ... )
 
 ### <a name="remarks"></a>備考
 
-コンテナーの最初の要素は、番号 **1** によって指定されます。. n 番目の要素の後に挿入するには、*開始*パラメーターは n+1 でなければなりません。 また、**+=** 演算子を使用して任意のタイプの値をコンテナに追加することができます。 たとえば、最初の 10 ループ反復処理の自乗値を含むコンテナーを作成するには、次のコードを使用します。
+コンテナーの最初の要素は、番号 **1** によって指定されます。. n 番目の要素の後に挿入するには、*開始* パラメーターは n+1 でなければなりません。 また、**+=** 演算子を使用して任意のタイプの値をコンテナに追加することができます。 たとえば、最初の 10 ループ反復処理の自乗値を含むコンテナーを作成するには、次のコードを使用します。
 
 ```xpp
 int i;
@@ -234,7 +233,7 @@ anytype conPeek(container container, int number)
 | パラメーター | 説明                                                                                                                                                                                                                      |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | コンテナー | 要素を返すコンテナー。                                                                                                                                                                                         |
-| 数値    | 返す要素の位置。 最初の要素を取得するには **1** を指定します。 **-3**、**0**などの無効な位置番号、またはコンテナーの長さより高い番号は予期しないエラーが発生する可能性があります。 |
+| 数値    | 返す要素の位置。 最初の要素を取得するには **1** を指定します。 **-3**、**0** などの無効な位置番号、またはコンテナーの長さより高い番号は予期しないエラーが発生する可能性があります。 |
 
 ### <a name="return-value"></a>戻り値
 

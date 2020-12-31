@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 64cf58da5307c4e4e8d340518ac59bef9bf63f5f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984656"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408139"
 ---
 # <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 

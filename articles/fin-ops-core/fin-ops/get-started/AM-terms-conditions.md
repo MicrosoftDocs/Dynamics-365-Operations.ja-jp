@@ -17,11 +17,11 @@ ms.author: smiller
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: f9fc0f8e73bc3e6ee4be994923a602c960b8a750
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409252"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件
 [!include [banner](../includes/banner.md)] 

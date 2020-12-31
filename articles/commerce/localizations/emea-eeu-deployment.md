@@ -17,18 +17,18 @@ ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: e04549e9812b31879f7aa5ae8e4f1c9e5a8db113
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057574"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408766"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Commerce のローカライゼーションを有効にする方法を示します。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から**事前請求書**レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランドのローカライズの詳細については、[東ヨーロッパのコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
+このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Commerce のローカライゼーションを有効にする方法を示します。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から **事前請求書** レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランドのローカライズの詳細については、[東ヨーロッパのコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
 
 ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 詳細については、[Retail ソフトウェア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
@@ -51,7 +51,7 @@ ms.locfileid: "3057574"
     ```
 
     > [!WARNING]
-    > commerceruntime.config ファイルは編集しては**いけません**。 このファイルは、カスタマイズのためのものではありません。
+    > commerceruntime.config ファイルは編集しては **いけません**。 このファイルは、カスタマイズのためのものではありません。
 
 ### <a name="modern-pos-extension-components"></a>Modern POS 拡張コンポーネント
 
@@ -101,10 +101,10 @@ ms.locfileid: "3057574"
 
 以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
 
-1. **クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た**Modern POS 拡張コンポーネント**セクションで手順を完了します。
+1. **クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た **Modern POS 拡張コンポーネント** セクションで手順を完了します。
 2. **RetailSdk\\Assets** フォルダーの下にあるパッケージ構成ファイルに、次の変更を加えます。
 
-    **Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
+    **Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.UseAdvanceInvoice" />

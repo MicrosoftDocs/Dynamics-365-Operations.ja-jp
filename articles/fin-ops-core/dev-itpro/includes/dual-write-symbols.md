@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b4c074e5b8884c65f03558814c35dcaf8adfa5ae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409100"
+---
 ## <a name="mapping-tables"></a>テーブルのマッピング
 
 ### <a name="mapping-types"></a>マッピング タイプ

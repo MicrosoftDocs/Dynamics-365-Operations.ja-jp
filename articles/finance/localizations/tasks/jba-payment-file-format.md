@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: da391f2dab77ac100b37f17ea887e8214bdc67b4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408171"
 ---
 # <a name="enable-the-jba-payment-file-format"></a>JBA 支払ファイル形式の有効化
 

@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: 7229f15467a116288a5f550bdf58b5673fa6fb4c
-ms.sourcegitcommit: 1f072d8bd7975671ccc73d02dd828ebf52c6608d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661087"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408962"
 ---
 # <a name="planning-optimization-extensibility"></a>計画最適化の拡張機能
 

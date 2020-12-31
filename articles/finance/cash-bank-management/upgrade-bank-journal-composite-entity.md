@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: ec196600a54a2aed4565cf422dc386d6646ff524
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899645"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445051"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>銀行仕訳帳の複合エンティティの更新
 
@@ -40,11 +40,11 @@ ms.locfileid: "3899645"
     -   テーブル\\銀行仕訳帳明細行ステージング
 
 2.  データ管理\\データ プロジェクト
-    -   **データ ソース**レイアウトの**銀行トランザクション**タイプを公開します。
+    -   **データ ソース** レイアウトの **銀行トランザクション** タイプを公開します。
         -   ソースデータ形式 = XML-Element
         -   エンティティ名 = 銀行仕訳帳
         -   データ ファイルのアップロード = 新しいバージョンの SampleBankJournalCompositeEntity.xml
-        -   既存のファイルを上書きするには、**はい**をクリックします。
+        -   既存のファイルを上書きするには、**はい** をクリックします。
         -   最初からマッピングを生成するためには、**はい** をクリックします。
         -   銀行トランザクション タイプがマップされていることを確認します。
             -   明細行エンティティの **マップの表示** をクリックします。

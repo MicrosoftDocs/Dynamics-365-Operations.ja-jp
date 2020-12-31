@@ -18,11 +18,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187110"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445245"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>固定資産グループの交換費用と保証金額の再計算
 

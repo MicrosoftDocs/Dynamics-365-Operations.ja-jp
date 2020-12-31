@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6e5bfb19be03cb5d2be192dc34ed73348ee5790b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987502"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408170"
 ---
 # <a name="jp-00005-input-journal-in-t-account-form-japan"></a>JP-00005 T 勘定フォームでの仕訳帳入力 (日本)
 

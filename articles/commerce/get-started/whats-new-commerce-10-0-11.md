@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: da92a2f793ae0a17ff717b5f4e409fe51902ac33
-ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
+ms.openlocfilehash: 029a5b52924b997c47d46f72cc05c22db1a1bc9e
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435605"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4409526"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
@@ -44,7 +44,7 @@ ms.locfileid: "3435605"
 - [通知とミニカート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [テーマ拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
 - [トランザクション電子メールの新しいイベントとプレースホルダー](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
-- [Commerce SDK が Visual Studio  2017 に更新](../dev-itpro/retail-sdk/migrate-sdk)
+- [Commerce SDK が Visual Studio  2017 に更新](../dev-itpro/retail-sdk/migrate-sdk.md)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -65,8 +65,8 @@ Dynamics 365 Commerce 10.0.11 には、プラットフォーム更新プログ�
 
 [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Finance and Operations アプリの削除済みまたは非推奨の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
