@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7cd63d6756c1d4878dd0ce46bcbee330b14a12f5
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 4255eca80ecbf25765dc74daa8db0929b0818762
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983673"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687924"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 
@@ -41,8 +40,8 @@ ms.locfileid: "2983673"
 標準のビジネス プロセス ライブラリを選択するには、次の手順を実行します。
 
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** タイルをクリックします。
-2.  **グローバル ライブラリ**または**コーポレート ライブラリ** セクションで、ライブラリを右クリックします。
-3.  アプリ バーで、**コピー**をクリックします。 ライブラリは、**自分のライブラリ** セクションに追加されます。
+2.  **グローバル ライブラリ** または **コーポレート ライブラリ** セクションで、ライブラリを右クリックします。
+3.  アプリ バーで、**コピー** をクリックします。 ライブラリは、**自分のライブラリ** セクションに追加されます。
 4.  **自分のライブラリ** セクションで、ライブラリをクリックして業務プロセス ライブラリを表示します。
 
 ## <a name="search-for-a-process-within-a-library"></a>ライブラリ内のプロセスの検索
@@ -57,8 +56,8 @@ ms.locfileid: "2983673"
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** タイルをクリックします。
 2.  業務プロセス ライブラリを開きます。
 3.  業務プロセス ライブラリに変更を加えます。
-    -   既存のライブラリ ノードを変更するには、ノードを右クリックして [アプリ] バーを表示し、**編集** をクリックします。 変更を行ってから、**保存**をクリックします。
-    -   ライブラリ ノードを追加するには、ノードを **活動** 一覧からライブラリにドラッグします。 新しいノードを右クリックし、**編集** をクリックしてノードの名前およびアクティビティの他の情報を変更します。 変更を行ってから、**保存**をクリックします。
+    -   既存のライブラリ ノードを変更するには、ノードを右クリックして [アプリ] バーを表示し、**編集** をクリックします。 変更を行ってから、**保存** をクリックします。
+    -   ライブラリ ノードを追加するには、ノードを **活動** 一覧からライブラリにドラッグします。 新しいノードを右クリックし、**編集** をクリックしてノードの名前およびアクティビティの他の情報を変更します。 変更を行ってから、**保存** をクリックします。
     -   ライブラリ ノードを削除するには、ノードを右クリックし、**削除** をクリックします。
 
 ## <a name="export-a-business-process-library-to-word"></a>業務プロセス ライブラリを Word へエキスポート

@@ -10,27 +10,26 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51c960f30bd74360e35680f180ade9b3686f1a2
-ms.sourcegitcommit: 9b23eff7adfe4043419f5b18e8df1d3a91b28c27
+ms.openlocfilehash: 710d851e7177a5d2ef02f3b9ef68af3d4096eb5e
+ms.sourcegitcommit: 792a81ae86d4854e450c3c5006d2523dd721d522
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3815644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "4723391"
 ---
 # <a name="deploy-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のデプロイ
 
-Microsoft Azure DevOps の **Lifecycle Services (LCS) 資産の配置**タスクを使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリに保存されている資産の配置を特定の環境に自動的に配置できます。 ただし、このタスクには、次のような考慮すべき制限があります。
+Microsoft Azure DevOps の **Lifecycle Services (LCS) 資産の配置** タスクを使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリに保存されている資産の配置を特定の環境に自動的に配置できます。 ただし、このタスクには、次のような考慮すべき制限があります。
 
 * このタスクは、**リリース** パイプラインでのみ使用できます。
 * ソフトウェア配置可能パッケージの運用環境への配置を自動化することはできません。
 * ソフトウェア配置可能パッケージをビルド環境に配置することはできません。
-* ソフトウェア配置可能パッケージを、ローカル ビジネス データ (LBD) 環境にオンプレミスで配置することはできません。
+* ソフトウェア配置可能パッケージは、オンプレミスのローカル ビジネス データ (LBD) 環境に配置することができます (更新プログラム 39 10.0.15 以降)。
 
 このトピックは、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
 
@@ -47,7 +46,7 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 |---|---|---|
 | LCS 接続 | あり | LCS へのサービス接続を選択または作成します。 詳細については、[Azure Pipelines での LCS 接続の作成](pipeline-lcs-connection.md) を参照してください。 |
 | LCS プロジェクト ID | あり | 配置する資産およびターゲット環境の両方を含むプロジェクトの ID を LCS に入力します。 プロジェクト ID は、プロジェクトのダッシュボードの URL の末尾に記載できます。 |
-| LCS 環境 ID | 有 | ターゲット環境の ID を入力します。 環境 ID はグローバル一意識別子 (GUID) であり、環境詳細ページの**環境詳細**\>**環境 ID** で検索できます。 |
-| LCS ファイル資産 ID | 有 | 配置するソフトウェア配置可能なパッケージの資産 ID を入力します。 資産 ID は、資産ライブラリで検索できる GUID です。 配置する資産の行を選択し、**追加の詳細**の下の**資産 ID** フィールドを検索します。 通常、この ID は、[Dynamics Lifecycle Services (LCS) 資産アップロード](pipeline-asset-upload.md) タスクなどの他のパイプライン ステップから動的に取得されます。 |
+| LCS 環境 ID | 有 | ターゲット環境の ID を入力します。 環境 ID はグローバル一意識別子 (GUID) であり、環境詳細ページの **環境詳細**\>**環境 ID** で検索できます。 |
+| LCS ファイル資産 ID | 有 | 配置するソフトウェア配置可能なパッケージの資産 ID を入力します。 資産 ID は、資産ライブラリで検索できる GUID です。 配置する資産の行を選択し、**追加の詳細** の下の **資産 ID** フィールドを検索します。 通常、この ID は、[Dynamics Lifecycle Services (LCS) 資産アップロード](pipeline-asset-upload.md) タスクなどの他のパイプライン ステップから動的に取得されます。 |
 | 更新プログラムの名前 | あり | LCS の環境履歴に表示される更新プログラムの名前を入力します。 |
 | 完了まで待機する | 清算済 (いいえ) | このチェック ボックスをオンにして、資産の配置が成功または失敗するまで待機するようタスクに指示します。 清算済 (**いいえ**) の場合、タスクは配置のみを開始します。 タスクが待機するように指示されている場合、実行時間の長い配置中にパイプラインのタイムアウトが発生することがあります。 タイムアウト オプションの詳細については、[タイムアウト](https://docs.microsoft.com/azure/devops/pipelines/process/phases#timeouts) を参照してください。 |

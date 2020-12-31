@@ -10,35 +10,34 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 210231bb442928674b490d83f50bf787d7bfa60c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181016"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688470"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Excel でエンティティ データを開き、Excel アドインを使用して更新する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel または Finance and Operations のいずれからでも開始できます。
+このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Finance and Operations のいずれからでも開始できます。
 
 Excel でエンティティ データを開くことにより、Excel アドインを使用して迅速かつ簡単にデータを表示し編集することができます。 このアドインには Microsoft Excel 2016 が必要です。
 
 > [!NOTE]
-> Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。
+> Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。
 
 Excel アドインの使用に関する詳細については、短い [Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) ビデオをご覧ください。
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Finance and Operations から開始して Excel でエンティティ データを開く
-1. Finance and Operations のページで、**Microsoft Office で開く**を選択します。
+## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Finance and Operations Excel から開始して Excel でエンティティ データを開く
+1. Finance and Operations のページで 、**Microsoft Office で開く** を選択します。
 
     そのページのルート データ ソース (テーブル) がエンティティのルート データ ソースと同じである場合は、既定の **Excel で開く** オプションがそのページに生成されます。 **Excel で開く** オプションは **すべての仕入先** や **すべての顧客** などの頻繁に使用するページに表示されます。
  
@@ -51,10 +50,10 @@ Excel アドインが、選択したエンティティのデータを自動的�
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Excel から開始して Excel でエンティティ データを開く
 1. Excel の **挿入** タブの **アドイン** グループで、**ストア** を選択して Office ストアを開きます。
-2. Office ストアで、**Dynamics** で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の**追加**を選択します。
+2. Office ストアで、**Dynamics** で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の **追加** を選択します。
 3. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択して Excel アドインの実行を有効化します。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. **サーバー情報の追加** を選択して **オプション** ウィンドウを開きます。
-5. お使いのブラウザで、ターゲットの Finance and Operations インスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
+5. お使いのブラウザーで、ターゲットの Finance and Operations インスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
 
     たとえば、URLが `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage` の場合、`https://xxx.dynamics.com` を除くすべてを削除します。
 
@@ -85,7 +84,7 @@ Excel アドインで **公開** を選択することにより、必要に応�
 レコードを削除するには、次のいずれかの手順を実行します。
 
 - 削除するべきワークシートの行の横にある行番号を右クリックし、**削除** をクリックします。
-- 削除するべきワークシートの行の任意の場所を右クリックし、**削除**&gt;**表の行**をクリックします。
+- 削除するべきワークシートの行の任意の場所を右クリックし、**削除**&gt;**表の行** をクリックします。
 
 関連するデータ ソースとしてデータ ソースが関連付けて追加される場合、行の前にヘッダーが発行されます。 他のデータ ソースとの間に依存関係がある場合は、既定の公開オーダーを変更する必要があるかもしれません。 公開オーダーを変更する場合、Excel アドインで **オプション** ボタン (ギヤ記号) を選択してから、**データ コネクタ** クイック タブで **公開オーダーのコンフィギュレーション** を選択します。
 
@@ -116,7 +115,7 @@ Excel アドインで **公開** を選択することにより、必要に応�
 
     Excel アドインの再起動後に、ブックが環境コピー モードになっているとメッセージ ボックスが表示されます。
 
-4. 新しいデータとして新しい環境にデータをコピーするには、**発行**を選択します。 環境コピー操作をキャンセルし、新しい環境で既存のデータを確認するには、**更新**を選択します。
+4. 新しいデータとして新しい環境にデータをコピーするには、**発行** を選択します。 環境コピー操作をキャンセルし、新しい環境で既存のデータを確認するには、**更新** を選択します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 生じる問題のいくつかは簡単なステップで解決できます。

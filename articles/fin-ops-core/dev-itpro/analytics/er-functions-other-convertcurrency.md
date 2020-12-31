@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae6e0069c6e9227d4cf1045eeebbb825a2f943c3
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: a27fd30236a61576ab9063010ea6bc38d9cf7a1e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744314"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686789"
 ---
 # <a name="convertcurrency-er-function"></a>CONVERTCURRENCY ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`CONVERTCURRENCY` 関数は、特定の日付で指定された会社の設定を使用して、指定された換算元の通貨から指定された換算先の通貨に指定された金額を変換した結果を表す、*実数*値を返します。
+`CONVERTCURRENCY` 関数は、特定の日付で指定された会社の設定を使用して、指定された換算元の通貨から指定された換算先の通貨に指定された金額を変換した結果を表す、*実数* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,7 +38,7 @@ CONVERTCURRENCY (amount, source currency, target currency, date, company)
 
 ## <a name="arguments"></a>引数
 
-`amount`: *整数*または*実数*
+`amount`: *整数* または *実数*
 
 変換が必要な金額を表す数値。
 
@@ -53,11 +52,11 @@ CONVERTCURRENCY (amount, source currency, target currency, date, company)
 
 `date`: *日付*
 
-変換の為替レートを決定するために使用される日付を表す*日付*値。
+変換の為替レートを決定するために使用される日付を表す *日付* 値。
 
 `company`: *文字列*
 
-変換に使用される設定を提供する会社のコードを表す*文字列*値。
+変換に使用される設定を提供する会社のコードを表す *文字列* 値。
 
 ## <a name="return-values"></a>戻り値
 

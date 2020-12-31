@@ -3,24 +3,23 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971448"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689569"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -28,8 +27,8 @@ ms.locfileid: "3971448"
 
 このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
@@ -37,8 +36,16 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
 
-> [!NOTE]
-> バージョン 10.0.15 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[1 つのバージョンのサービス更新に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version)を参照してください。
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
+| **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
+| **配置オプション**              | All|
+| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
 
@@ -52,10 +59,6 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.14 に対する Platform update
-
-> [!NOTE]
-> バージョン 10.0.14 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
-
 
 ### <a name="online-users-page"></a>オンライン ユーザー ページ 
 
@@ -143,8 +146,8 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **廃止 / 削除の理由** | Visual Studio の最新バージョンをサポートするためには、Visual Studio の X++ 拡張機能に変更を加える必要があります。 これらの変更は、Visual Studio 2015 と互換性がありません。 |
 | **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
-| **配置オプション**              | すべて |
-| **ステータス**                         | Visual Studio 2017 で新しいバーチャルマシン (Vm) の可用性 が発表されると、Visual Studio 2015のみの既存の VM を、2021 のリリース Wave 1 で再配置する必要があります。 |
+| **配置オプション**              | All |
+| **ステータス**                         | バージョン 10.0.13 (プラットフォームの更新 37) またはそれ以降のバージョンで展開される仮想マシンには、Visual Studio 2017 が含まれます。 バージョン 10.0.16 (プラットフォームの更新 40) は、Visual Studio 2015 をサポートする最終リリースです 。 Visual Studio 2015 のみを含む仮想マシンは、バージョン 10.0.17 (プラットフォーム更新 41) に更新することはできません。 |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>無効なフィールド参照を含むフィールド グループ
 

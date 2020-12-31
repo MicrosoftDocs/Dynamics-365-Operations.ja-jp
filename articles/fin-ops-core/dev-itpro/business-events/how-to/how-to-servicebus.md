@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 1bae669f6da048887ecdf8fcdf9d761e6f105e5f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 9aada97278915f88e916803b40855758e318d907
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893349"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688103"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -94,7 +93,7 @@ ms.locfileid: "3893349"
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
-5. **作成**を選択します。
+5. **作成** を選択します。
 
 ## <a name="register-a-new-application"></a>新しいアプリケーションの登録
 
@@ -128,7 +127,7 @@ ms.locfileid: "3893349"
 
 ## <a name="configure-a-business-events-endpoint"></a>ビジネス イベント エンドポイントのをコンフィギュレーション 
 
-1. アプリケーションにサイン インし、**システム管理** \> **設定** \> **ビジネス イベント**の順に移動します。
+1. アプリケーションにサイン インし、**システム管理** \> **設定** \> **ビジネス イベント** の順に移動します。
 2. **エンドポイント** を選択します。
 3. **新規** を選択します。
 4. **Azure Service Bus のトピック** を選択します。
@@ -143,7 +142,7 @@ ms.locfileid: "3893349"
 
 ビジネス シナリオは USMF 企業の顧客の支払いが転記されるたびに、電子メールやメッセージをチーム チャネルに送信します。 顧客アカウント番号、顧客名、支払い額などの詳細がメッセージ`に含まれる必要があります。
 
-1. ビジネス イベント カタログを選択し、**顧客の支払が転記されました**ビジネス イベントを探します
+1. ビジネス イベント カタログを選択し、**顧客の支払が転記されました** ビジネス イベントを探します
 2. USMF 会社のビジネス イベントを有効化します。
 
     <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
@@ -172,7 +171,7 @@ ms.locfileid: "3893349"
 9. ロジック アプリの **RootManageSharedAccessKey** ポリシーを選択して **作成** を選択します。
 
     > [!NOTE]
-    > メッセージを送信するのではなく*取得* する必要があるため **送信** ポリシーをここで使用できません。 ベスト プラクティスとして、このユース ケースに新しいポリシーを作成して **リッスン** アクセス許可のみを付与できます。
+    > メッセージを送信するのではなく *取得* する必要があるため **送信** ポリシーをここで使用できません。 ベスト プラクティスとして、このユース ケースに新しいポリシーを作成して **リッスン** アクセス許可のみを付与できます。
 
     <img alt="Service bus listen policy " src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
@@ -197,7 +196,7 @@ ms.locfileid: "3893349"
 
     次に、アプリケーションから受け取った契約のスキーマを入力する必要があります。 アプリケーションでは、サンプル ペイロードのみ提供します。 ただし、Azure Logic Apps の機能を使用してペイロードからスキーマを生成できます。
 
-15. ビジネス イベント カタログのイベントを選択し、**スキーマのダウンロード**リンクを選択します。 ダウンロードしたテキスト ファイルを開いて内容をコピーします。
+15. ビジネス イベント カタログのイベントを選択し、**スキーマのダウンロード** リンクを選択します。 ダウンロードしたテキスト ファイルを開いて内容をコピーします。
 16. Logic Apps に戻って **サンプル ペイロードを使用してスキーマを生成** リンクを選択します。 テキスト ファイルの内容を貼り付けて **完了** を選択します。
 
     <img alt="Message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">
@@ -208,7 +207,7 @@ ms.locfileid: "3893349"
 
     次に、顧客の支払いの詳細を含む通知電子メールの送信など、最終的なアクションを選択します。
 
-18. **電子メールの送信**アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
+18. **電子メールの送信** アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 19. メッセージの本文および、必須項目を入力します。
 
     <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">

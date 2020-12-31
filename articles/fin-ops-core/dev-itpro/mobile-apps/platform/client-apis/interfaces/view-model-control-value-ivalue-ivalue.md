@@ -1,7 +1,7 @@
 ---
 title: 値の型
 description: 値コントロール型 これは、単一の値のコントロールの基本クラスです。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 535e0c035309ac99f56a5630ba9ce36d8bc79f5b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 3094ac4265feb0e911f9f52555d6fd8ecc577776
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982759"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686616"
 ---
 # <a name="value-type"></a>値の型
 

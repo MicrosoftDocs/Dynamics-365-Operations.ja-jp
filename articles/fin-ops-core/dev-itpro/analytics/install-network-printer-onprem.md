@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 76cc7dc6b5edd001ee6c88a2dbedab7df83521fd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5407963653b758e131d6e858d53787d113e6cd25
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183405"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685288"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
@@ -45,7 +44,7 @@ ms.locfileid: "2183405"
 2. 次の手順に従って印刷およびドキュメント サービスをコンフィギュレーションします [印刷およびドキュメント サービスのコンフィギュレーション](https://technet.microsoft.com/library/jj134163(v=ws.11).aspx)。
 3. AXService アプリケーションをホストするために使用する各サーバーに対して、これらの手順に従います。
 
-    1. ローカル サーバーで、**ローカル ユーザーとグループ**マネージャーを開始します。
+    1. ローカル サーバーで、**ローカル ユーザーとグループ** マネージャーを開始します。
     2. **グループ** ノードを選択します。
     3. **出力演算子** を右クリックし、**グループへの追加** を選択します。
     4. グループに AXService アプリケーションを実行するために使用されるネットワーク Active Directory アカウントを追加します。
@@ -58,6 +57,6 @@ ms.locfileid: "2183405"
 システム管理者は、このセクションの情報を使用してネットワーク プリンターを定義します。
 
 1. **組織管理** \> **設定** \> **ネットワーク プリンター** の順に移動します。
-2. **ネットワーク プリンター**ページで、新しいプリンターを追加します。 各プリンターで、名前、説明、パス、およびステータスを指定します。 プリンター パスがインストールされているプリンターのネットワーク パスと一致していることを確認します。
+2. **ネットワーク プリンター** ページで、新しいプリンターを追加します。 各プリンターで、名前、説明、パス、およびステータスを指定します。 プリンター パスがインストールされているプリンターのネットワーク パスと一致していることを確認します。
 
-**有効**とマークされている項目は、すぐにアプリケーションのユーザーによって利用できるようになるので、ネットワーク プリンター デバイスで文書スタイル レポートの印刷を開始できます。
+**有効** とマークされている項目は、すぐにアプリケーションのユーザーによって利用できるようになるので、ネットワーク プリンター デバイスで文書スタイル レポートの印刷を開始できます。

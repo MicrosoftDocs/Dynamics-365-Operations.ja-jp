@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d299e18f30d7bbf3c9b65b4aa8e831586da529fa
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: f086ad85451dd98c64dcc98d411d4973e2fe15df
+ms.sourcegitcommit: fe37f4f74e35d628bb6df8796d66e918f4112454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971748"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "4713702"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10015-january-2021"></a>Dynamics 365 Finance 10.0.15 (2021 年 1 月) のプレビュー機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10015-january-2021"></a>Dynamics 365 Finance 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.15 の新機能または変更された機能について説明します。 このバージョンには 10.0.644 のビルド番号が含まれており、次のように使用できます。
 
@@ -67,8 +66,8 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 
 [Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 for Finance and Operations で削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
 

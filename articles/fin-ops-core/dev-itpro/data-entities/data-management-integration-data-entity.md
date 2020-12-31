@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 26441
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 466af74e10c5f980ad82e1fb3b6c2c3b31616416
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 707f97cebda5d0731c3bab8ddd9ecf9ff7ba73a6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183429"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685687"
 ---
 # <a name="data-management-and-integration-by-using-data-entities-overview"></a>データ エンティティを使用したデータの管理と統合についての概要
 

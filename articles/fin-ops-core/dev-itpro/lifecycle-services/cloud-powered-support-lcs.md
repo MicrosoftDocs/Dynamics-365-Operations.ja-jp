@@ -3,32 +3,29 @@ title: Finance and Operations アプリのサポート エクスペリエンス�
 description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e908264901eda9be312caf98e97c043b64f4de
-ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
+ms.openlocfilehash: 21569b26f161d5b2af74eb51538fcb5c462f341c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "3734892"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687914"
 ---
-# <a name="manage-the-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する 
-
+# <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]
 
-サポート ツールを使用するには、あらかじめ Lifecycle Services (LCS) でプロジェクトを作成して、環境にシステム診断プログラムをインストールして実行する必要があります。 詳細については、 [Lifecycle Services (LCS) の システム診断](ax-2012/system-diagnostics-lcs.md) を参照してください。
 
 ## <a name="open-a-new-incident"></a>新しいインシデントを開く
 1. LCS にて、サポート インシデントを提出するプロジェクトに移動します。 
@@ -37,7 +34,7 @@ ms.locfileid: "3734892"
 
    ![サポート メニュー](media/CPS1.png)
 
-3. **Microsoft に送信**タブで、**インシデントの送信**ボタンをクリックします。
+3. **Microsoft に送信** タブで、**インシデントの送信** ボタンをクリックします。
 
    ![サポート ボタン](media/CPS2.png)
 
@@ -48,7 +45,7 @@ ms.locfileid: "3734892"
 6. **問題の説明** 欄で、次の内容を入力します。
 
    - 環境で問題が発生した場合は、 **はい** を選択して下さい。 環境名を選択します。  
-   - **タイトル**フィールドの問題について短い説明を入力します。
+   - **タイトル** フィールドの問題について短い説明を入力します。
    - 問題の詳細と、エラーを再生成するために必要なステップに関する詳細を提供します。
    - 該当する場合は、エラー メッセージを入力します。 
    - 可能であれば、問題を示すスクリーン ショットを関連付けます。 これを行うには、**コンピュータからの添付ファイル** をクリックします。
@@ -69,7 +66,7 @@ ms.locfileid: "3734892"
   
 9. **送信** をクリックします。 
 
-**送信**をクリックした後、インシデントが作成され**インシデント** リストに追加されます。 このケースに割り当てられている Microsoft サポート エンジニアから、電子メール メッセージを受け取ります。 
+**送信** をクリックした後、インシデントが作成され **インシデント** リストに追加されます。 このケースに割り当てられている Microsoft サポート エンジニアから、電子メール メッセージを受け取ります。 
 
 
 ## <a name="support-plans-in-lifecycle-services"></a>Lifecycle Servicesにおけるサポートプラン
@@ -109,12 +106,12 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 ![契約の追加](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
-### <a name="sign-in-specfic-options"></a>サインイン 特定のオプション
+### <a name="sign-in-specific-options"></a>サインインの特定のオプション
 該当するものがある場合、ログインのアカウントに基づき次の問題とサポートの特典が表示されます。
 
 -   MPN gold および シルバー インシデント
 -   シグネイチャークラウドサポート
--   個々のインシデントと [support.microsoft.com/supportforbusiness] で購入した5パック 
+-   個々のインシデントと [support.microsoft.com/supportforbusiness] で購入した 5 パック。 
 
    > [!NOTE]
    > インシデントはMicrosoftアカウントを使用して購入する必要があります。 Microsoftアカウントは \@hotmail.com または \@outlook.com のような形式です。 作業アカウントまたは Azure Active Directory アカウントは、それぞれに関連付けられているインシデントを持つことはできません。

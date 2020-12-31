@@ -3,25 +3,24 @@ title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有�
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/23/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: bce3a113845da908eb5d0aaa87c9742847a175fc
-ms.sourcegitcommit: 9ea9f6ef5a788549b19abfb1db7a0e4bab73fe26
+ms.openlocfilehash: 504058bb1aba63195a72f464a781bff33fca8236
+ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "3894552"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4712682"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -34,7 +33,7 @@ CDX は、コマース バックオフィス (HQ) と、オンライン スト�
 + CDX のコンフィギュレーション ユーザー インターフェイス (UI) を使用して、すべてのカスタム ジョブとサブジョブをコンフィギュレーションします。
 + プッシュおよびプルの両方のカスタム ジョブとサブジョブをサポートするために用意されている拡張ポイントを使用して、コマース初期化クラスを拡張します。
 
-コマース初期化クラスを使用する利点は、さまざまな環境 (開発、テスト、および実稼働) でカスタム ジョブを構成する必要がないことです。 代わりに、**Retail と Commerce > バックオフィスの設定 > コマース スケジューラ > コマース スケジューラの初期化**から**コマース スケジューラの初期化**ダイアログ ボックスを使用して、CDX 初期化を実行できます。 データの同期のためのカスタム ジョブに関する情報は CDX で自動的に作成されます。
+コマース初期化クラスを使用する利点は、さまざまな環境 (開発、テスト、および実稼働) でカスタム ジョブを構成する必要がないことです。 代わりに、**Retail と Commerce > バックオフィスの設定 > コマース スケジューラ > コマース スケジューラの初期化** から **コマース スケジューラの初期化** ダイアログ ボックスを使用して、CDX 初期化を実行できます。 データの同期のためのカスタム ジョブに関する情報は CDX で自動的に作成されます。
 
 HQ とチャネル データベース間のデータ転送には、さまざまなシナリオがあります。
 
@@ -102,11 +101,11 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
     同様に、マッピング セクションでは、コマース側にあるフィールドの名前だけが指定されています (**AxFields**)。 既定では、同じフィールド名がチャネル側でも使用されていると想定します。 ただし、対応するチャンネル テーブルのフィールド名は、時にコマース側にあるフィールド名とは異なる場合があります。 この場合、マッピングで **&lt;フィールド&gt;** ノードの **ToName** 属性を使用してチャネル側でフィールドの名前を設定できます。
 
 4. プロジェクトを右クリックし、**追加** &gt; **新しい項目** を選択します。
-5. **新しい項目の追加**ダイアログ ボックスで、**リソース**を選択し、リソース ファイルに **RetailCDXSeedDataAX7_Custom** と名前を付けてから、**追加**を選択します。
+5. **新しい項目の追加** ダイアログ ボックスで、**リソース** を選択し、リソース ファイルに **RetailCDXSeedDataAX7_Custom** と名前を付けてから、**追加** を選択します。
 
     ![新しい品目の追加](media/cdx-ext-1.png)
 
-6. **リソース ファイルの選択**ダイアログ ボックスで、手順 2 で作成したリソース ファイルを検索し、**開く**を選択します。
+6. **リソース ファイルの選択** ダイアログ ボックスで、手順 2 で作成したリソース ファイルを検索し、**開く** を選択します。
 7. **registerCDXSeedDataExtension** イベントを処理するために使用する新しいクラスを追加します。 **RetailCDXSeedDataBase** クラスを検索し、デザイナーで開きます。 **registerCDXSeedDataExtension** デリゲートを右クリックし、**イベント ハンドラーをコピー** を選択します。
 8. 作成したイベント ハンドラー クラスに移動して、次のイベント ハンドラー コードを貼り付けます。
 
@@ -124,8 +123,8 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
     >
     > 初期化クラスが実行される場合、このクラスはこのハンドラーを実装する拡張機能を検索します。 拡張子が見つかった場合、ランタイムはリソース ファイルに含まれるカスタム情報も初期化します。
 
-9. **Retail と Commerce > バックオフィスの設定 > コマース スケジューラ >コマース スケジューラの初期化**に移動します。
-10. **コマース スケジューラの初期化**ダイアログの **OK** ボタンをクリックして CDX の初期化を実行します。
+9. **Retail と Commerce > バックオフィスの設定 > コマース スケジューラ >コマース スケジューラの初期化** に移動します。
+10. **コマース スケジューラの初期化** ダイアログの **OK** ボタンをクリックして CDX の初期化を実行します。
 
 ## <a name="pull-data-from-a-new-channel-database-table-to-a-new-hq-table-by-using-a-push-job"></a>プッシュ ジョブを使用して新しいチャンネル データベース テーブルから HQ テーブルにデータをプルする
 
@@ -142,9 +141,6 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
     ```
 
 + 新しい行を追加しなくて済むように、新しい情報を含む既存のリソース ファイルを更新します。 アップロードするには、次の例に示すように、リソース ファイルの **IsUpload** 属性を **true** に設定し、カスタム プルジョブに関する情報を追加します。
-
-> [!NOTE]
-> Commerce Data Exchange (CDX) を使用して Retail Headquarters に新しい拡張テーブル データをプルする必要がある場合は、拡張テーブルに REPLICATIONCOUNTERFROMORIGIN ID 列 ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) が含まれている必要があります。 CDX プル ジョブを実行するために必要です。 データを Retail Headquarters からチャネル データベースにプッシュする場合は、REPLICATIONCOUNTERFROMORIGIN は必須ではありません。データがチャネル データベースから Retail Headquarters にプルされる場合にのみ必要です。
 
     ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
@@ -165,10 +161,14 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
         </AxFields>
     </Subjob>
     ```
-  > [!NOTE]
-  > この新規テーブルを既存のプル ジョブ (P-1000) の一部として追加するか、または新しいプル ジョブを作成するかのいずれかを実行できます。 
+
+    > [!NOTE]
+    > 拡張テーブルを作成している場合にデータを HQ に同期するには、テーブルの主キーおよびクラスター化されたインデックスが拡張テーブルの HQ テーブルと同じである必要があります。そうでない場合 CDX 同期は失敗します。 拡張テーブルから HQ にデータをプルする必要がある場合は、拡張テーブルに REPLICATIONCOUNTERFROMORIGIN ID 列 ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) が含まれている必要があります。
+    
+    > この新規テーブルを既存のプル ジョブ (P-0001) の一部として追加するか、または新しいプル ジョブを作成するかのいずれかを実行できます。
 
 ## <a name="other-scenarios"></a>その他のシナリオ
+
 残りのプッシュとプル シナリオでは、サンプル リソース ファイルの情報のみが記載されます。それは前のセクションの説明にあるように、初期化が同じであるためです。
 
 ### <a name="push-existing-headquarters-tables-to-channel-database-that-are-not-part-of-cdx-configurations"></a>CDX コンフィギュレーションに含まれていないチャネル データベースに既存の Headquarters テーブルをプッシュする
@@ -177,7 +177,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 ### <a name="push-existing-columns-that-arent-mapped-as-part-of-any-subjobs"></a>任意のサブジョブの一部としてマップされていない既存の列をプッシュ
 
-次の例で示すように、マッピングされていない既存の列を、新しい拡張列またはチャンル データベース内の既存の列のいずれかにプッシュすることができます。 
+次の例で示すように、マッピングされていない既存の列を、新しい拡張列またはチャンル データベース内の既存の列のいずれかにプッシュすることができます。
 
 ```xml
 <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
@@ -232,7 +232,8 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 ```
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
-Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+
+Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、**RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 
@@ -266,15 +267,15 @@ Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 �
 コマース側のテーブル拡張は、サンプルですでに作成されています。 手動で作成するには、次の手順を実行します。
 
 1. Visual Studio を起動します。
-2. メニューで、**表示** > **アプリケーション エクスプローラー**を選択します。
+2. メニューで、**表示** > **アプリケーション エクスプローラー** を選択します。
 3. **データ モデル** > **テーブル** > **RetailTransactionTable** を選択し、**RetailTransactionTable** を右クリックして **拡張機能を作成** を選択します。
 
     ベスト プラクティスは、デフォルトの名前を次のように変更する必要があります **RetailTransactionTable.ContosoRetailExtension**。 常に一意の接頭語を追加します。 このサンプルでは、**ContosoRetail** が一意の接頭語として使用されます。 一意の接頭語を使用することにより、複数の独立系ソフトウェア ベンダー (ISV) によってテーブルが拡張されている場合、名前の競合を防ぐことができます。
 
 4. 新しい **RetailTransactionTable.ContosoRetailExtension** テーブルで、2 つの新しいフィールドを作成します。
 
-    **タイプ = 文字列、名前 =ContosoRetailServerStaffId**: **拡張データ型**プロパティを **RetailStaffId** に設定します。
-    **タイプ = 整数、名前 =ContosoRetailSeatNumber**: **拡張データ型**プロパティを **ContosoRetailSeatNumber** に設定します。
+    **タイプ = 文字列、名前 =ContosoRetailServerStaffId**: **拡張データ型** プロパティを **RetailStaffId** に設定します。
+    **タイプ = 整数、名前 =ContosoRetailSeatNumber**: **拡張データ型** プロパティを **ContosoRetailSeatNumber** に設定します。
 
 5. 変更を保存し、プロジェクトをビルドします。
 6. プロジェクトを右クリックし、**データベースの同期** を選択します。
@@ -286,7 +287,7 @@ Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 �
 
 Retail SDK フォルダーから SQL Server **ContosoRetailExtensionTablesUpdate.sql** スクリプトを開いて実行します。 複数の品目が作成され、コンフィギュレーションされています。
 
-+ 外部キーとカスタム (拡張子) フィールドを含む **[ext].ContosoRetailTransactionTable** テーブルが作成されます。 テーブルに追加した拡張列に加えて、チャネル側の拡張テーブルにはチャネル側にある元のテーブルと同じ主キー列が必要です。 したがって、[ext].RetailTransactionTable_ContosoRetailExtension には、[ax].RetailTransactionTable で使用される 4 つの主キー列があります。 ベスト プラクティスは、チャンネル側の拡張子テーブルに主キー列を追加するときに、列の名前を元のテーブルの主キー列の名前と同じにしておきます。 
++ 外部キーとカスタム (拡張子) フィールドを含む **[ext].ContosoRetailTransactionTable** テーブルが作成されます。 テーブルに追加した拡張列に加えて、チャネル側の拡張テーブルにはチャネル側にある元のテーブルと同じ主キー列が必要です。 したがって、[ext].RetailTransactionTable_ContosoRetailExtension には、[ax].RetailTransactionTable で使用される 4 つの主キー列があります。 ベスト プラクティスは、チャンネル側の拡張子テーブルに主キー列を追加するときに、列の名前を元のテーブルの主キー列の名前と同じにしておきます。
 
 + CDX は、チャネル拡張テーブルからカスタム列をアップロードしてコマースに戻すように構成されています。 RetailCDXSeedDataAX7 リソースには、コマースからチャネル データベースへのテーブル マッピングの情報が含まれています。 CDX はこの情報を使用して、必要なデータ転送スケジューラのジョブとサブジョブを作成します。 データ転送に新しい拡張テーブルまたは列を含めるには、CDX データ転送のカスタマイズを指定するリソース ファイルを提供する必要があります。 ベスト プラクティスは、競合を防ぐため次のような名前付け規則を使用します。 **RetailCDXSeedDataAX7_ContosoRetailExtension**。 (ここでは、**ContosoRetail** は、固有の拡張機能です。)
 
@@ -328,7 +329,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
 #### <a name="subscribe-to-the-registercdxseeddataextension-delegate"></a>registerCDXSeedDataExtension デリゲートにサブスクライブ
 
-1. **表示** > **アプリケーション エクスプローラー**を選択します。
+1. **表示** > **アプリケーション エクスプローラー** を選択します。
 2. **RetailCDXSeedDataBase** クラスを検索します。
 3. クラスを右クリックし、**デザイナーで開く** を選択します。
 4. デザイナーのデリゲートおよびメソッドの一覧で、**registerCDXSeedDataExtension** デリゲートを選択します。
@@ -351,20 +352,20 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
     ```
 
 8. CDX 機能拡張フレームワークは、コマースの初期化を選択するとこのメソッドを呼び出します。 CDX 拡張モジュールが CDX カスタマイズを使用するようにするためには、上記のメソッドに次のコードを貼り付けます。
-    
+
     ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7_ContosoRetailExtension));
     }
     ```
-    
+
     カスタム リソースをリストに追加する前に、処理中の originalCDXSeedDataResource リソースが RetailCDXSeedDataAX7 であることを確認する必要があります。 そうしないと、予期しない結果が生じる場合があります。
 
 9. カスタマイズした構成で CDX モジュールを初期化または再初期化するには、次の手順を実行します。
 
-   1. **Retail と Commerce** > **バックオフィスの設定** > **コマース スケジューラ** > **スケジューラ ジョブ** > **コマース スケジューラの初期化**に移動します。
-   2. 表示されるダイアログ ボックスで、**既存のコンフィギュレーションの削除**を選択します。
+   1. **Retail と Commerce** > **バックオフィスの設定** > **コマース スケジューラ** > **スケジューラ ジョブ** > **コマース スケジューラの初期化** に移動します。
+   2. 表示されるダイアログ ボックスで、**既存のコンフィギュレーションの削除** を選択します。
    3. **OK** を選択して、初期化を開始します。
 
       初期化が完了したとき、CDX スケジューラ ジョブ、サブジョブの定義、および配布スケジュールは、元の RetailCDXSeedDataAX7 リソースとカスタマイズされた RetailCDXSeedDataAX7_ContosoRetailExtension リソースを使用して更新されます。
@@ -373,9 +374,9 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
 1. カスタマイズが正しく動作することを確認します。
 
-    1. 初期化が完了した後、**Retail と Commerce** > **バックオフィスの設定** > **コマース スケジューラ**に移動し、**スケジューラ サブジョブ** リンクを選択します。
+    1. 初期化が完了した後、**Retail と Commerce** > **バックオフィスの設定** > **コマース スケジューラ** に移動し、**スケジューラ サブジョブ** リンクを選択します。
     2. サブジョブ テーブルで、**RetailTransactionTable** サブジョブ ID を検索します。
-    3. 詳細領域の**チャネル フィールド マッピング** セクションで、新しいカスタム (拡張) 列がマッピングに表示されていることを確認します。
+    3. 詳細領域の **チャネル フィールド マッピング** セクションで、新しいカスタム (拡張) 列がマッピングに表示されていることを確認します。
 
 2. CDX ジョブのアップロード、およびチャネル側の元のテーブルと拡張テーブルからのプルをテストします (元のテーブルと拡張可能なテーブルを組み合わせたビューが、CDX フレームワークによって生成されます)。
 
@@ -404,16 +405,16 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
         他のトランザクションにもこの手順を繰り返します。 MPOS で作成したトランザクションの一部 [ext].[CONTOSORETAILTRANSACTIONTABLE] に対応するデータを追加しないでください。 この方法で、拡張テーブルに対応するデータがない場合でも、[ax].RetailTransactionTable からデータを取得してアップロードすることを確認できます。
 
-    3. **Dynamics 365** > **Retail と Commerce** > **Retail とコマース IT** に移動し, **配送スケジュール**を選択します。
+    3. **Dynamics 365** > **Retail と Commerce** > **Retail とコマース IT** に移動し, **配送スケジュール** を選択します。
     4. 配送スケジュールの一覧で、**P-0001** を選択します。 この配布スケジュールには、カスタマイズした RetailTransactionTable のサブジョブが含まれています。
-    5. アクション ウィンドウで、**実行**を選択します。 確認メッセージが表示されたら、**はい** を選択します。
-    6. アクション ウィンドウで、**履歴**を選択し**履歴**ページを開き、アップロードされたセッションが正常に完了したことを確認できます。
-    7. **履歴**ページで、新しいアップロード セッション レコードがあることを確認します。 レコードのステータスが**申請済**に設定され、さらに**影響を受けた行**値は**0** (ゼロ) でないことを確認してください。
+    5. アクション ウィンドウで、**実行** を選択します。 確認メッセージが表示されたら、**はい** を選択します。
+    6. アクション ウィンドウで、**履歴** を選択し **履歴** ページを開き、アップロードされたセッションが正常に完了したことを確認できます。
+    7. **履歴** ページで、新しいアップロード セッション レコードがあることを確認します。 レコードのステータスが **申請済** に設定され、さらに **影響を受けた行** 値は **0** (ゼロ) でないことを確認してください。
 
-3. アップロード セッションが正常に適用されたら、**Retail と Commerce** > **照会やレポート** > **店舗のトランザクション**に移動し、アップロードした新しいトランザクションを検索します。 トランザクション、シート番号、およびサーバー スタッフ ID の各カスタム列に期待された値が入っていることを確認します。
+3. アップロード セッションが正常に適用されたら、**Retail と Commerce** > **照会やレポート** > **店舗のトランザクション** に移動し、アップロードした新しいトランザクションを検索します。 トランザクション、シート番号、およびサーバー スタッフ ID の各カスタム列に期待された値が入っていることを確認します。
 
     また、チャネル側の [ext].ContosoRetailTransactionTable 拡張テーブルに対応するレコードを持たないトランザクションもアップロードされていることを確認します。 これらのトランザクションにシート番号とサーバー スタッフ ID の既定値が含まれていることを確認します。 シート番号は **0** (ゼロ) に設定し、サーバー スタッフ ID は **000160** に設定する必要があります。
-    
-#### <a name="mpos-offline-transaction-sync"></a>MPOS オフライン トランザクションの同期
- MPOS をオフライン モードに切り替えて、トランザクションを実行します。 オンラインに切り替えて、データがオフライン データベースからチャネル データベースに、次いでバックオフィスに正しく同期されていることを確認します。
 
+#### <a name="mpos-offline-transaction-sync"></a>MPOS オフライン トランザクションの同期
+
+ MPOS をオフライン モードに切り替えて、トランザクションを実行します。 オンラインに切り替えて、データがオフライン データベースからチャネル データベースに、次いでバックオフィスに正しく同期されていることを確認します。

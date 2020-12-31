@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31f7d1812b0e71a9b959b298657df2771367c128
-ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
+ms.openlocfilehash: 47b49c3f4cfd1082bb69615a7a173ad209194ea6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172013"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685683"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 
@@ -75,7 +74,7 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 ### <a name="step-3-create-a-new-composite-entity"></a>手順 3: 新しい複合エンティティを作成する
 
 1. **Composite entity** タイプの新しい **Dynamics 365** コンポーネント品目をプロジェクトに追加します。
-2. デザイナー モードで、エンティティを右クリックし、**新しいルート データ エンティティ参照**を選択します。
+2. デザイナー モードで、エンティティを右クリックし、**新しいルート データ エンティティ参照** を選択します。
 
     [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
 
@@ -112,7 +111,7 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 
 ローカル テストで、複合エンティティ メタデータは更新される必要があります。
 
-1. **DIXF パラメータ &gt; エンティティ設定**に移動します。 **エンティティ リストの更新**をクリックします。
+1. **DIXF パラメータ &gt; エンティティ設定** に移動します。 **エンティティ リストの更新** をクリックします。
 
     [![DevelopingCompositeEntities (8)](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
 
@@ -135,17 +134,17 @@ DIXF 標準プロセスからの通常のエンティティとして、データ
 > ソース タイプの XML-属性または XML-要素は、複合エンティティでサポートされています。 エンティティ実行パラメータでは、並列処理設定を使用して複合エンティティを並行してインポートすることはできません。
 
 ## <a name="import-a-composite-entity"></a>複合エンティティのインポート
-1. **インポート**をクリックします。
-2. **名前**、**ソース データ フォーマット**、および**エンティティ名**を入力します。
+1. **インポート** をクリックします。
+2. **名前**、**ソース データ フォーマット**、および **エンティティ名** を入力します。
 3. **ソース データ形式** は、xml-attribute または xml-element です。
-4. **今すぐインポート**をクリックします。
+4. **今すぐインポート** をクリックします。
 5. 作成/更新/保留中のレコードの数が表示されます。
 
 ## <a name="export-a-composite-entity"></a>複合エンティティをエキスポート
 1. **エクスポート** をクリックします。
-2. **名前**、**ソース データ フォーマット**、**およびエンティティ名**を入力します。
-3. **エンティティの追加**および**今すぐエクスポート**をクリックします。
-4. **ダウンロード パッケージ**をクリックします。
+2. **名前**、**ソース データ フォーマット**、**およびエンティティ名** を入力します。
+3. **エンティティの追加** および **今すぐエクスポート** をクリックします。
+4. **ダウンロード パッケージ** をクリックします。
 
 ## <a name="general-troubleshooting-guidelines"></a>トラブルシューティングの一般的なガイドライン
 - 問題: エクスポートされた複合 XML ファイルがインポートされません。 これを生成するシナリオは次のとおりです。

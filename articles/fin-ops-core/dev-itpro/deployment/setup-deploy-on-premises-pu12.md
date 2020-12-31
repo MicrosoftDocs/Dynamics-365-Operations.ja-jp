@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 0844316f5a97faa79e32e91259f77779b51625d5
-ms.sourcegitcommit: 42dbebced4a99dfe703689b7e38c3c5caecd12e1
+ms.openlocfilehash: f4627235abfc26d7026866e78863c5814d4a9154
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3949234"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685224"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -32,7 +31,7 @@ ms.locfileid: "3949234"
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 
-このトピックの内容に関する質問やフィードバックがある場合は、このページ下の**コメント**セクションに転記してください。
+このトピックの内容に関する質問やフィードバックがある場合は、このページ下の **コメント** セクションに転記してください。
 
 ## <a name="finance--operations-components"></a>Finance + Operations のコンポーネント
 
@@ -142,7 +141,7 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 - Active Directory Domain Services (AD DS) は、ネットワークにインストールして構成する必要があります。
 - AD FS は、展開する必要があります。
 - SQL Server 2016 SP2 は SSRS コンピューターにインストールされている必要があります。
-- SQL Server Reporting Services 2016 は、SSRS コンピューターに**ネイティブ** モードでインストールする必要があります。
+- SQL Server Reporting Services 2016 は、SSRS コンピューターに **ネイティブ** モードでインストールする必要があります。
 
 次の必須ソフトウェアは、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされます。
 
@@ -225,7 +224,7 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 | AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書としても使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p> | <p>Service Fabric サーバー証明書として使用するのと同じワイルドカード証明書を使用することができます。 それ以外の場合は、次の値を使用します:</p> <p> CN: ax.d365ffo.onprem.contoso.com <br> DNS 名: ax.d365ffo.onprem.contoso.com </p> |
 | セッション認証証明書           | この証明書は、AOS がユーザーのセッション情報を保護するために使用します。 | <p> この証明書は、LCS からの展開時に使用されるファイル共有証明書です。</p> <p> CN: SessionAuthentication <br> DNS 名: SessionAuthentication </p> |
 | データの暗号化証明書                  | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | <p>これはプロバイダー **Microsoft Enhanced RSA および AES Cryptographic Provider** を使用して作成する必要があります。 </p> <p> CN: DataEncryption <br> DNS 名: DataEncryption </p> |
-| データ署名の証明書                     | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | <p> これは、データ暗号化証明書とは別のもので、プロバイダー**Microsoft の拡張された RSA および AES 暗号化プロバイダー**を使用して作成する必要があります。 </p> <p> CN: DataSigning <br> DNS 名: DataSigning </p> |
+| データ署名の証明書                     | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | <p> これは、データ暗号化証明書とは別のもので、プロバイダー **Microsoft の拡張された RSA および AES 暗号化プロバイダー** を使用して作成する必要があります。 </p> <p> CN: DataSigning <br> DNS 名: DataSigning </p> |
 | 財務報告クライアント証明書       | この証明書は、財務報告サービスと AOS 間の通信を保護するのに役立ちます。   この証明書を使用して、財務報告サービスと AOS 間の通信を保護します。 | <p>CN: FinancialReporting <br> DNS 名: FinancialReporting </p>  |
 | 報告証明書                        | この証明書を使用して、SSRS と AOS 間の通信を保護します。| <p> **財務報告クライアント証明書を再利用しないでください。** </p> <p> CN: ReportingService <br> DNS 名: ReportingService </p> |
 | オンプレミス ローカル エージェント証明書           | <p>この証明書は、オンプレミスと LCS でホストされているローカル エージェント間の通信を保護するのに役立ちます。</p><p>この証明書を使用すると、Azure AD テナントに代わってローカル エージェントが動作し、LCS と通信して配置を編成および監視することができます。</p><p>**注記:** テナントにはオンプレミス ローカル エージェント証明書が 1 つだけ必要です。</p> | <p> CN: OnPremLocalAgent <br> DNS 名: OnPremLocalAgent </p> |
@@ -283,29 +282,29 @@ DNS ゾーンを追加するには、次の手順を実行します。
 1. ドメイン コントローラー コンピューターにログインして **スタート** を選択し、**dnsmgmt.msc** と入力して **dnsmgmt (DNS)** アプリケーションを選択することにより DNS マネージャーを起動します。
 2. コンソール ツリーでドメイン コントローラー名を右クリックし、**新しいゾーン** \> **次へ** の順に選択します。
 3. **プライマリ ゾーン** を選択します。
-4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** のチェック ボックスが選択されたままの状態で、**次へ**を選択します。
+4. **Active Directory にゾーンを保存 (DNS サーバーが書き込み可能なドメイン コントローラーの場合にのみ使用可能)** のチェック ボックスが選択されたままの状態で、**次へ** を選択します。
 5. **このドメイン (Contoso.com) のドメイン コントローラーで実行されているすべての DNS サーバーに対して** を選択し、**次へ** を選択します。
 6. **前方参照ゾーン** を選択し、**次へ** を選択します。
-7. 設定するゾーン名を入力し、**次へ**をクリックします。 たとえば、**d365ffo.onprem.contoso.com** と入力します。
+7. 設定するゾーン名を入力し、**次へ** をクリックします。 たとえば、**d365ffo.onprem.contoso.com** と入力します。
 8. **動的更新を許可しない** を選択し、**次へ** を選択します。
 9. **完了** を選択します。
 
 #### <a name="set-up-an-a-record-for-aos"></a>AOS の A レコードを設定する
 
-新しい DNS ゾーンで、**AOSNodeType** タイプの Service Fabric クラスター ノード**ごと**に、**ax.d365ffo.onprem.contoso.com** という名前の 1 つの A レコードを作成します。 他のノード タイプの A レコードは作成しないでください。
+新しい DNS ゾーンで、**AOSNodeType** タイプの Service Fabric クラスター ノード **ごと** に、**ax.d365ffo.onprem.contoso.com** という名前の 1 つの A レコードを作成します。 他のノード タイプの A レコードは作成しないでください。
 
-1. DNS マネージャーの**前方参照ゾーン**フォルダーで、新しく作成したゾーンを検索します。
+1. DNS マネージャーの **前方参照ゾーン** フォルダーで、新しく作成したゾーンを検索します。
 2. 新しいゾーンを右クリックして、**新しいホスト** を選択します。
-3. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**ax** を名前として入力し、**10.179.108.12** を IP アドレスとして入力します。) **ホストの追加**を選択します。
+3. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**ax** を名前として入力し、**10.179.108.12** を IP アドレスとして入力します。) **ホストの追加** を選択します。
 4. どのチェック ボックスもオンにしないでください。
 5. 各 AOS ノードで手順 1 ～ 4 を繰り返します。
 
 #### <a name="set-up-an-a-record-for-the-orchestrator"></a>Orchestrator の A レコードを設定する
 
-新しい DNS ゾーンで、**OrchestratorType** タイプの Service Fabric クラスター ノード**ごと**に、**sf.d365ffo.onprem.contoso.com** という名前の 1 つの A レコードを作成します。 他のノード タイプの A レコードは作成しないでください。
+新しい DNS ゾーンで、**OrchestratorType** タイプの Service Fabric クラスター ノード **ごと** に、**sf.d365ffo.onprem.contoso.com** という名前の 1 つの A レコードを作成します。 他のノード タイプの A レコードは作成しないでください。
 
 1. 新しいゾーンを右クリックして、**新しいホスト** を選択します。
-2. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**sf** を名前としてを入力し、**10.179.108.15** を IP アドレスとして入力します。) **ホストの追加**を選択します。
+2. Service Fabric ノードの 名前および IP アドレスを入力します。 (たとえば、**sf** を名前としてを入力し、**10.179.108.15** を IP アドレスとして入力します。) **ホストの追加** を選択します。
 3. どのチェック ボックスもオンにしないでください。
 4. 各オーケストレータ ノードを繰り返します。
 
@@ -329,12 +328,12 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 > スクリプトは、オンプレミス インフラストラクチャと同じドメイン内のコンピューターから実行する必要があります。
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
-2. ダッシュボードで、**共有アセット ライブラリ**タイルを選択します。
-3. **モデル**タブの、グリッドで、**Dynamics 365 for Operations オンプレミス - 配置スクリプト**行を選択します。
+2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
+3. **モデル** タブの、グリッドで、**Dynamics 365 for Operations オンプレミス - 配置スクリプト** 行を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
    >[!Note] 
    > プラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 の以前のバージョンが必要な場合は、バージョン 1 をダウンロードします。
-5. zip ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで、**ブロック解除**チェック ボックスをオンにします。
+5. zip ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで、**ブロック解除** チェック ボックスをオンにします。
 6. ZIP ファイルをスクリプトの実行に使用するマシンにコピーします。
 7. **infrastructure** という名前のフォルダーにファイルを解凍します。
 
@@ -376,7 +375,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 #### <a name="create-gmsa-and-domain-user-accounts"></a>gMSA およびドメイン ユーザー アカウントを作成する
 
 1. **インフラストラクチャ** フォルダーに展開したインフラストラクチャ スクリプトがあるマシンに移動します。
-2. **インフラストラクチャ**フォルダーをドメイン コントローラー マシンにコピーします。
+2. **インフラストラクチャ** フォルダーをドメイン コントローラー マシンにコピーします。
 3. 管理者特権モードで Windows PowerShell を起動し、ディレクトリを **infrastructure** フォルダーに変更して、次のコマンドを実行します。
     > [!IMPORTANT]
     > 次のスクリプトは、ドメイン ユーザー AxServiceUser を作成しません。 ユーザーが作成する必要があります。
@@ -411,7 +410,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 3. 既に生成されている SSL 証明書を使用している場合は、証明書生成をスキップし、configTemplate.xml ファイルの拇印を更新します。 証明書は CurrentUser\My ストアにインストールする必要があり、その秘密キーはエクスポート可能でなければなりません。
 
     > [!WARNING]
-    > 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 印刷できない特殊文字がある場合、**X509 証明書が無効です**というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
+    > 存在する場合に特定するのが難しい先頭の印刷不可能な特殊文字のため、証明書マネージャーは拇印をコピーするために使用しないでください。 印刷できない特殊文字がある場合、**X509 証明書が無効です** というエラーが表示されます。 拇印を取得するには、PowerShell コマンドの結果を参照するか、PowerShell で次のコマンドを実行します。
     > ```powershell
     > dir cert:\CurrentUser\My
     > dir cert:\LocalMachine\My
@@ -501,9 +500,9 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 ### <a name="10-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a> 10. スタンドアロン Service Fabric クラスターの設定
 
-1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を使用中の Service Fabric ノードのいずれかにダウンロードします。 ZIP ファイルをダウンロードした後、 ZIP ファイルを右クリックし**プロパティ**を選択してブロックを解除します。 ダイアログ ボックスで、右下の **ブロック解除** チェック ボックスを選択します。
+1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を使用中の Service Fabric ノードのいずれかにダウンロードします。 ZIP ファイルをダウンロードした後、 ZIP ファイルを右クリックし **プロパティ** を選択してブロックを解除します。 ダイアログ ボックスで、右下の **ブロック解除** チェック ボックスを選択します。
 
-2. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ**フォルダーが、このフォルダーにアクセスすることを確認します。
+2. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ** フォルダーが、このフォルダーにアクセスすることを確認します。
 
 3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric Cluster の ClusterConfig.json ファイルを生成します。
 
@@ -538,7 +537,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
     5. すべてのノードが緑で表示されていることを確認します。
     
     > [!IMPORTANT]
-    > クライアント マシンが Windows Server 2016 のようなサーバー コンピューターである場合は、**Service Fabric エクスプローラー**ページにアクセスするときに IE のセキュリティ強化の構成をオフにする必要があります。
+    > クライアント マシンが Windows Server 2016 のようなサーバー コンピューターである場合は、**Service Fabric エクスプローラー** ページにアクセスするときに IE のセキュリティ強化の構成をオフにする必要があります。
     > ウィルス対策ソフトウェアがインストールされている場合は、[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) ドキュメントのガイダンスに従って除外を設定してください。
 
 ### <a name="11-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a> 11. テナント用 LCS 接続のコンフィギュレーション
@@ -610,18 +609,18 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
    2. **タスク**\>**新しい共有** を選択し、新しい共有を作成します。 共有に **aos-storage** と名前を付けます。
-   3. **共有のキャッシュを許可**を選択したままにします。
-   4. **データ アクセスを暗号化**を確認してください。
-   5. OrchestratorType を除いて、Service Fabric クラスター内のすべてのマシンに対して**変更**許可を与えます。
-   6. AOS ドメイン ユーザー (contoso\\AXServiceUser) と gMSA ユーザー (contoso\\svc-AXSF$) に対して、**変更**アクセス許可を付与します。
+   3. **共有のキャッシュを許可** を選択したままにします。
+   4. **データ アクセスを暗号化** を確認してください。
+   5. OrchestratorType を除いて、Service Fabric クラスター内のすべてのマシンに対して **変更** 許可を与えます。
+   6. AOS ドメイン ユーザー (contoso\\AXServiceUser) と gMSA ユーザー (contoso\\svc-AXSF$) に対して、**変更** アクセス許可を付与します。
 
       >[!NOTE]
-      > マシンを追加するために**オブジェクト タイプ**の下の**コンピューター**を、またはサービス アカウントを追加するために**オブジェクト タイプ**下の**サービス アカウント**を有効にする必要がある場合があります。
+      > マシンを追加するために **オブジェクト タイプ** の下の **コンピューター** を、またはサービス アカウントを追加するために **オブジェクト タイプ** 下の **サービス アカウント** を有効にする必要がある場合があります。
 
 3. \\\\DAX7SQLAOFILE1\\ エージェント ファイル共有を設定するには、これらの手順に従います。
 
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
-    2. **タスク**\>**新しい共有** を選択し、新しい共有を作成します。 共有に**エージェント**と名前を付けます。
+    2. **タスク**\>**新しい共有** を選択し、新しい共有を作成します。 共有に **エージェント** と名前を付けます。
     3. ローカル展開エージェント (contoso\\svc-LocalAgent$) の gMSA ユーザーに対して **フル コントロール** のアクセス許可を与えます。
 
     ```PowerShell
@@ -671,7 +670,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     **Always-On SQL インスタンスの自己署名証明書**
 
-    Always-On 用の証明書のテストを設定する場合は、次の**リモート処理**スクリプトを使用します。 これにより、次の**手動**スクリプトが実行され、手順 **a ～ e** が実行されます。
+    Always-On 用の証明書のテストを設定する場合は、次の **リモート処理** スクリプトを使用します。 これにより、次の **手動** スクリプトが実行され、手順 **a ～ e** が実行されます。
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -698,8 +697,8 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
         1. \[コンピューター証明書の管理\] (**certlm.msc**) を開きます。
         2. 作成した証明書を右クリックし、**タスク** \> **プライベート キーの管理** をクリックします。
         3. SQL Server サービス アカウントを追加し、読み取りアクセスを許可します。
-    3. Microsoft SQL Server Configuration Manager で **ForceEncryption** と新しい **証明書**を有効にします。
-        1. **SQL Server 構成マネージャー**で、**SQL Server ネットワークの構成**を展開し、**サーバーのインスタンスのプロトコル**を右クリックしてから、**プロパティ**を選択します。
+    3. Microsoft SQL Server Configuration Manager で **ForceEncryption** と新しい **証明書** を有効にします。
+        1. **SQL Server 構成マネージャー** で、**SQL Server ネットワークの構成** を展開し、**[サーバー インスタンス] のプロトコル** を右クリックしてから、**プロパティ** を選択します。
         2. **プロトコル** ダイアログ ボックスの **証明書** タブで、**証明書** ボックスのドロップダウン メニューから目的の証明書を選択します。
         3. **プロパティ** ダイアログ ボックスの **フラグ** タブにある **ForceEncryption** ボックスで、**はい** を選択します。
         4. **OK** を選択して保存します。
@@ -717,9 +716,9 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 
-2. ダッシュボードで、**共有アセット ライブラリ**タイルを選択します。
+2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
 
-3. **モデル**タブで、必要なリリースのデモ データを選択し、zip ファイルをダウンロードします。
+3. **モデル** タブで、必要なリリースのデモ データを選択し、zip ファイルをダウンロードします。
 
     | リリース | デモ データ |
     |-------|------|
@@ -739,7 +738,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
    > 
    > - 同じ名前のデータベースが存在する場合は、データベースが再利用されます。
 
-6. **インフラストラクチャ**フォルダーを SQL Server マシンにコピーし、権限を昇格した PowerShell ウィンドウでそのフォルダーに移動します。
+6. **インフラストラクチャ** フォルダーを SQL Server マシンにコピーし、権限を昇格した PowerShell ウィンドウでそのフォルダーに移動します。
 
 #### <a name="configure-the-orchestratordata-database"></a>OrchestratorData データベースのコンフィギュレーション
 
@@ -859,7 +858,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 データ管理と統合ワークロードを有効にするには、各 AOS 仮想マシンに SSIS をインストールする必要があります。 各 AOS 仮想マシン上で、次の手順を実行します。
 
 1. マシンに SSIS インストールへのアクセス許可があることを確認し、SSIS セットアップ ウィザードを開きます。
-2. **機能の選択**ウィンドウの**機能**ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェック ボックスをオンにします。
+2. **機能の選択** ウィンドウの **機能** ウィンドウで、**Integration Services** および **SQL クライアント接続 SDK** のチェック ボックスをオンにします。
 3. セットアップを完了し、インストールが正常に完了したことを確認します。
 
 詳細については、[統合サービスのインストール](https://docs.microsoft.com/sql/integration-services/install-windows/install-integration-services) を参照してください。
@@ -879,7 +878,7 @@ Finance + Operations では、AD FS の既定で標準のコンフィギュレ�
 
 1. AD FS 識別子を構成して、AD FS トークン発行者と一致するようにします。
 
-   このコマンドは、Finance + Operations クライアントの**ユーザー** ページ (**システム管理 > ユーザー > ユーザー**) で**ユーザーをインポート** オプションを使用した新しいユーザーの追加に関連しています。
+   このコマンドは、Finance + Operations クライアントの **ユーザー** ページ (**システム管理 > ユーザー > ユーザー**) で **ユーザーをインポート** オプションを使用した新しいユーザーの追加に関連しています。
 
     ```PowerShell
     $adfsProperties = Get-AdfsProperties
@@ -907,7 +906,7 @@ Finance + Operations では、AD FS の既定で標準のコンフィギュレ�
 
 AD FS が認証を交換するために Finance + Operations を信頼するためには、AD FS アプリケーション グループの下の AD FS にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップし、エラーを減らすために、次のスクリプトを使用して登録します。 Publish-ADFSApplicationGroup.ps1 スクリプトと D365FO-OP ディレクトリを、AD FS ロール サービスがインストールされているマシンにコピーします。 次に、AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
 
-スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises**を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
+スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises** を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
 
 > [!NOTE]
 > 以前に構成した AD FS サーバーを別の環境で再利用する方法については、[複数の環境に同じ AD FS インスタンスを再使用する](./onprem-reuseadfs.md) を参照してください。
@@ -933,7 +932,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 ### <a name="19-configure-a-connector-and-install-an-on-premises-local-agent"></a><a name="configureconnector"></a> 19. コネクタのコンフィギュレーションと、オンプレミスのローカル エージェントのインストール
 
 1. [LCS](https://lcs.dynamics.com/) にサインインし、オンプレミスの実装プロジェクトを開きます。
-2. ハンバーガー メニューで、**プロジェクト設定**を選択します。
+2. ハンバーガー メニューで、**プロジェクト設定** を選択します。
 
     ![プロジェクト設定コマンド](./media/OPSetup_06_ProjectSettings.png)
 
@@ -943,7 +942,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
     ![[ホスト インフラストラクチャ設定] タブで、エージェント インストーラー ボタンをダウンロードする](./media/OPSetup_07_DownloadAgentInstaller.png)
     
-6. zip ファイルがブロックされていないことを確認します。 ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで**ブロック解除**を選択します。
+6. zip ファイルがブロックされていないことを確認します。 ファイルを右クリックし、**プロパティ** を選択します。 ダイアログ ボックスで **ブロック解除** を選択します。
 7. **OrchestratorType** タイプの Service Fabric ノードの 1 つでエージェント インストーラーを解凍します。
 8. **構成エージェント** タブで、コンフィギュレーションの設定を入力します。 必要な値を取得するには、そのマシンと構成ファイルにアクセスできる任意のマシンで次のスクリプトを実行します。
 
@@ -966,7 +965,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
     > このコマンドを実行するユーザーは、OrchestratorData データベースに対して **db\_owner** のアクセス許可を持っている必要があります。
 
 12. ローカル エージェントが正常にインストールされると、LCS のオンプレミス コネクタに戻るようにします。
-13. **設定の検証**タブで、**メッセージ エージェント**を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、ページは下図のようになります。
+13. **設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、ページは下図のようになります。
 
     ![エージェントの検証](./media/ValidateAgent.PNG)
 
@@ -982,7 +981,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 ### <a name="21-deploy-your-finance--operations-environment-from-lcs"></a><a name="deploy"></a> 21. LCS から Finance + Operations 環境を配置する
 
-1. LCS で、オンプレミス プロジェクトに移動し、**環境** > **サンドボックス**に移動してから**構成**を選択します。 必要な値を取得するには、ADFS および DNS サーバー設定にアクセスする必要があるプライマリ ドメイン コントローラ VM で次のスクリプトを実行します。
+1. LCS で、オンプレミス プロジェクトに移動し、**環境** > **サンドボックス** に移動してから **構成** を選択します。 必要な値を取得するには、ADFS および DNS サーバー設定にアクセスする必要があるプライマリ ドメイン コントローラ VM で次のスクリプトを実行します。
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -1000,17 +999,17 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
     ![準備フェーズ](./media/Preparing.png)
 
-    以下に示すような環境の詳細ページに移動するには、**完全な詳細**をクリックします。
+    以下に示すような環境の詳細ページに移動するには、**完全な詳細** をクリックします。
 
     ![環境の詳細ページ](./media/Details_Preparing.png)
 
-5. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。 表示されているとおりに、配置の開始がしたときに、ステータスは**配置**に変更します。
+5. ローカル エージェントは配置要求を受け取り、配置を開始し、環境の準備ができたら LCS に再度通知します。 表示されているとおりに、配置の開始がしたときに、ステータスは **配置** に変更します。
 
     ![ステータスを展開に変更する](./media/Deploying.png)
 
     ![環境を展開する](./media/Details_Deploying.png)
 
-    展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
+    展開に失敗した場合、LCS のお客様の環境では、**再設定** ボタンは次のように利用可能になります。 基になる問題を修正し、**再コンフィギュレーション** をクリックして、任意のコンフィギュレーションの変更を更新し、**配置** をクリックして配置を再試行します。
 
     ![再構成ボタンが使用可能になる](./media/Failed.png)
 
@@ -1034,10 +1033,10 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 ## <a name="known-issues"></a>既知の問題
 
 ### <a name="error-key-does-not-exist-when-running-the-new-d365fogmsaaccounts-cmdlet"></a>New-D365FOGMSAAccounts cmdlet を実行した際のエラー、「キーが存在しません」
-ドメインでグループ管理サービス アカウント パスワードを初めて作成し生成する場合は、最初に**キー配分サービス KDS ルート キー**を作成する必要があります。 詳細については、[キー配分サービス KDS ルート キーの作成](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)を参照してください。
+ドメインでグループ管理サービス アカウント パスワードを初めて作成し生成する場合は、最初に **キー配分サービス KDS ルート キー** を作成する必要があります。 詳細については、[キー配分サービス KDS ルート キーの作成](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)を参照してください。
 
 ### <a name="error-the-winrm-client-cannot-process-the-request-when-running-the-remoting-script-configure-prereqs-allvms-cmdlet"></a>リモート処理スクリプト Configure-Prereqs-AllVms cmdlet を実行した際のエラー、「WinRM クライアントは要求を処理できません」
-Service Fabric Cluster のすべてのマシンでコンピューター ポリシー**新しい資格情報委任を許可**を有効にするには、エラー メッセージの指示に従う必要があります。
+Service Fabric Cluster のすべてのマシンでコンピューター ポリシー **新しい資格情報委任を許可** を有効にするには、エラー メッセージの指示に従う必要があります。
 
 ### <a name="error-not-process-argument-transformation-on-parameter-test-cannot-convert-value-systemstring-to-type-systemmanagementautomationswitchparameter-when-running-the-config-prereqs-allvms-cmdlet"></a>エラー、「'テスト'パラメータでの引数変換を処理できません」 Config-Prereqs-AllVms cmdlet 実行時、値 "System.String" を、タイプ "System.Management.Automation.SwitchParameter" に変換することはできません
 このエラーを回避するには、**インフラストラクチャ** フォルダーにある Config-Prereqs-AllVms.ps1 の 56 行目の「-Test:$Test」を削除します。
@@ -1046,7 +1045,7 @@ Service Fabric Cluster のすべてのマシンでコンピューター ポリ�
 このエラーを回避するには、**インフラストラクチャ** フォルダーにある Complete-Prereqs-AllVms.ps1 の 56、61、66 行目の「-Test:$Test」を削除します。
 
 ### <a name="error-install-windowsfeature-the-request-to-add-or-remove-features-on-the-specified-server-failed-when-running-configure-prereqs-on-mrtype-and-reportservertyoe-servers"></a>MRType および ReportServerTyoe サーバーで Configure-Prereqs を実行した際のエラー、「Install-WindowsFeature: 指定されたサーバーへの機能の追加または削除の要求に失敗しました」
-.NET Framework 3.5 には、MRType および ReportServerType サーバーが必要です。 ただし、既定では .NET Framework 3.5 ソース ファイルは Windows Server 2016 インストールに含まれていません。 このエラーを回避するには、サーバー マネージャーによって新機能を手動で追加するときに**ソース** オプションを使用してインストールし、ソース ファイルを指定します。
+.NET Framework 3.5 には、MRType および ReportServerType サーバーが必要です。 ただし、既定では .NET Framework 3.5 ソース ファイルは Windows Server 2016 インストールに含まれていません。 このエラーを回避するには、サーバー マネージャーによって新機能を手動で追加するときに **ソース** オプションを使用してインストールし、ソース ファイルを指定します。
 
 ### <a name="error-msis7628-scope-names-should-be-a-valid-scope-description-name-in-ad-fs-configuration-when-running-the-publish-adfsapplicationgroup-cmdlet"></a>Publish-ADFSApplicationGroup cmdlet を実行した際のエラー、「MSIS7628: スコープ名は AD FS コンフィギュレーションで有効なスコープ説明でなければなりません」
 このエラーは D365FO-OP-ADFSApplicationGroup で必要とされる OpenID スコープ **allatclaims** が原因で表示されます。ただし、一部の Windows Server 2016 インストールでは表示されないことがあります。 このエラーを回避するには、AD FS Management\Service\Scope Descriptions を使用してスコープの説明 **allatclaims** を追加します。

@@ -3,25 +3,24 @@ title: 購入する前に
 description: Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce の購買を検討しているときに使用するステップ バイ ステップのガイドです。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 4619a359a352d702526c576d97b666439d71ed96
-ms.sourcegitcommit: 6aceca43c53c4dde46954c0b6b855d488eb44ed2
+ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027727"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694139"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -41,7 +40,7 @@ Finance and Operations アプリケーションをクラウドにまたはオン
 
 - クラウド認証で使用できない規制およびコンプライアンスのニーズ。
 - アプリケーション ライフサイクル管理の Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのに必要な断続的なインターネット接続を持つ、未接続の業務プロセス。
-- [オンプレミス配置に実装されない機能](features-not-implemented-on-prem.md)。
+- [クラウドとオンプレミスの機能比較](cloud-prem-comparison.md)。
 - [オンプレミス配置のシステム要件](system-requirements-on-prem.md)。
 
 > [!IMPORTANT]

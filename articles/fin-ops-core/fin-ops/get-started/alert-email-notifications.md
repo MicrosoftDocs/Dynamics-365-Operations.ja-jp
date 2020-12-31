@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a0cf8037ba151bb4e68da1cf4609fb2e4806303a
-ms.sourcegitcommit: b952b9f9066a5317259b8344db4c5d99eab4bf3c
+ms.openlocfilehash: bf485b407d56b21621617682bab3492925f7f9a4
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3165778"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693825"
 ---
 # <a name="client-alert-notifications-by-email"></a>電子メールによるクライアント警告通知
 
@@ -29,7 +28,7 @@ ms.locfileid: "3165778"
 
 データのフィルター処理されたビューを監視し、定義済のイベントが発生した場合に、電子メール通知を自動的に送信するカスタム警告ルールを定義できます。 電子メール通知を送信するオプションは、サポートされているすべての警告タイプで使用可能であり、既存の警告ルールでも有効にできます。
 
-組み込みのコントロールを使用して、システム バッチ ジョブのフィルタ処理されたビューを監視する警告ルールを作成できます。 **ステータス**フィールドの値を監視することで、バッチ ジョブが失敗したときに電子メールを送信する警告ルールも設定できます。 これらの警告ルールを作成した後は、ビジネス データへの変更についてレポートを確認する必要はなくなりました。 代わりに、インテリジェントな変更検出サービスに監視させることができます。
+組み込みのコントロールを使用して、システム バッチ ジョブのフィルタ処理されたビューを監視する警告ルールを作成できます。 **ステータス** フィールドの値を監視することで、バッチ ジョブが失敗したときに電子メールを送信する警告ルールも設定できます。 これらの警告ルールを作成した後は、ビジネス データへの変更についてレポートを確認する必要はなくなりました。 代わりに、インテリジェントな変更検出サービスに監視させることができます。
 
 クライアントの警告は、Microsoft Office との統合を通じて提供される電子メール サブシステムによって異なります。 電子メールの配信がローカル メール クライアントに依存する必要がないように、Simple Mail Transfer Protocol (SMTP) プロバイダーを使用することをお勧めします。
 
@@ -37,12 +36,12 @@ ms.locfileid: "3165778"
 
 電子メールをコンフィギュレーションする方法の詳細については、[電子メールのコンフィギュレーションと送信](../organization-administration/configure-email.md)をご覧ください。
 
-次の図は、**電子メールの送信**オプションを含む**警告ルールの作成**ダイアログ ボックスを示しています。
+次の図は、**電子メールの送信** オプションを含む **警告ルールの作成** ダイアログ ボックスを示しています。
 
 [![ 電子メールの送信オプションがはいに設定されている警告ルールの作成ダイアログ ボックス](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
-> **電子メールの送信**オプションが**はい**に設定されている場合、警告通知はアクション センターから配信され続けます。
+> **電子メールの送信** オプションが **はい** に設定されている場合、警告通知はアクション センターから配信され続けます。
 
 ## <a name="alert-notification-email-templates"></a>警告通知用電子メール テンプレート
 

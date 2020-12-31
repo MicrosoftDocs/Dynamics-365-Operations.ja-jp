@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7653d5b771674854b55bece34fe526110abd2d23
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: f07857c5d9e34e6fab8499b0a5e7c514e96df6f8
+ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329825"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4712680"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
@@ -32,7 +31,7 @@ ms.locfileid: "3329825"
 POS デュアル ディスプレイ ビューを拡張するには、カスタム コントロールを追加します。 カスタム コントロールでは、カスタム情報を表示する画像、POS データ リスト、ラベルなどを追加できます。
 
 > [!NOTE]
-> POS デュアル ディスプレイ ビューのみを拡張するには、カスタム コントロールを追加します。 カスタム コントロールは、POS デュアル ディスプレイ ビューに表示される標準的な内容を上書きします。
+> POS デュアル ディスプレイ ビューのみを拡張するには、カスタム コントロールを追加します。 カスタム コントロールは、POS デュアル ディスプレイ ビューに表示される標準的な内容を上書きします。 デュアル ディスプレイ カスタム コントロールとデュアル ディスプレイに関連するその他の拡張機能の詳細情報は、拡張機能の詳細ビューには表示されません。
 
 ## <a name="required-steps"></a>必要なステップ
 
@@ -51,11 +50,11 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 ## <a name="configure-the-hardware-profile-to-enable-dual-display"></a>デュアル ディスプレイを有効にするハードウェア プロファイルをコンフィギュレーションします
 
 1. クライアントにサイン インします。
-2. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル**の順に移動します。
+2. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。
 3. レジスタにリンクしているハードウェア プロファイルを選択します。
-4. **デュアル ディスプレイ**タブで、**デュアル ディスプレイの使用**オプションを**はい**に設定します。
-5. **Retail とコマース \> Retail とコマース IT \> 配送スケジュール**の順に移動します。
-6. **レジスター** (**1090**) ジョブを選択し、**今すぐ実行**を選択します。
+4. **デュアル ディスプレイ** タブで、**デュアル ディスプレイの使用** オプションを **はい** に設定します。
+5. **Retail とコマース \> Retail とコマース IT \> 配送スケジュール** の順に移動します。
+6. **レジスター** (**1090**) ジョブを選択し、**今すぐ実行** を選択します。
 
 > [!NOTE]
 > エンド ツー エンド (E2E) サンプルを \\RetailSDK\\POS\\拡張機能\\DualDisplaySample で検索できます。
@@ -565,7 +564,7 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
     }
     ```
 
-20. **extensions.json**ファイルを **POS.Extensions** プロジェクトで開いて、**DualDisplayExtension** サンプルで更新します。 このようにして、実行時に POS にこの拡張が含まれます。
+20. **extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**DualDisplayExtension** サンプルで更新します。 このようにして、実行時に POS にこの拡張が含まれます。
 
     ```typescript
     {
@@ -608,7 +607,7 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 ## <a name="validate-the-customization"></a>カスタマイズの検証
 
 1. オペレーター ID に **000160**、パスワードに **123** を使用して Retail Modern POS にサインインします。
-2. ようこそ画面で、**現在のトランザクション**ボタンを選択します。
+2. ようこそ画面で、**現在のトランザクション** ボタンを選択します。
 3. 品目をトランザクションに追加します。 たとえば、品目番号 **0005** を追加します。
 4. 顧客をトランザクションへ追加します。 たとえば、**Karen Berg** を追加します。
 5. デュアル ディスプレイには、買い物カゴ、合計、従業員、および顧客の詳細が表示される必要があります。

@@ -1,28 +1,27 @@
 ---
 title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
-author: RobinARH
+author: robinarh
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 10/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: b643a03180a5a47de0686e1516dfec32fc57789b
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: d74c3877a69394b400c25f32e1eb128bf166a6f3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887154"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688203"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -69,7 +68,7 @@ ms.locfileid: "3887154"
 + [ビジネス ロジック イベントの概要](business-logic-events-overview.md)
 + [クライアント API](client-apis/client-apis-reference.md)
 
-引当管理ワークスペースのためにサンプルのビジネス ロジック ファイル (.js ファイル名拡張子付き) をダウンロードすることができます。 [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) に移動し、**business_logic フォルダ**を開き、FM.js ファイルを指定します。
+引当管理ワークスペースのためにサンプルのビジネス ロジック ファイル (.js ファイル名拡張子付き) をダウンロードすることができます。 [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) に移動し、**business_logic フォルダ** を開き、FM.js ファイルを指定します。
 
 ## <a name="server-side-development"></a>サーバー側の開発
 
@@ -95,7 +94,7 @@ ms.locfileid: "3887154"
 1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
 2. Android デバイスで、Finance and Operations アプリの Android デバッグ apk をインストールします。
-    - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
+    - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ** の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう **未知のソース** を確認します。
     - Finance and Operations アプリのアンインストール - Finance and Operations アプリの以前のバージョンがアンインストールされていることを確認します。
     - apk ファイルのダウンロード - デバイスのブラウザーから、最新の [GitHub 上の Finance and Operations Android デバッグ apk](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
     - Finance and Operations apk ファイルのインストール - apk ファイル経由で Finance and Operations アプリのインストールを確認します。
@@ -105,7 +104,7 @@ ms.locfileid: "3887154"
 
     - Azure でホストされた開発マシンまたは別の PC で、「[リモート デバッグ Android デバイスで開始](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)」する Android 開発者指示に従います。 また、「[Android 用 Chrome のリモート デバッグ](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging)」を検索することにより、YouTube 上で多様な説明ビデオを見つけることができます。 
     
-4. デバッガーに接続した後は、デバイスの有効タブを見つけます。 Android で**その他のタブを表示**をクリックすることが必要な場合があります。 タブのいずれかは、`/www.index.html#/app/appList`または`/www.index.html#/app/app_landing`のようになります。 
+4. デバッガーに接続した後は、デバイスの有効タブを見つけます。 Android で **その他のタブを表示** をクリックすることが必要な場合があります。 タブのいずれかは、`/www.index.html#/app/appList`または`/www.index.html#/app/app_landing`のようになります。 
 
     **ファイル** > (ドメインなし) > **ExpenseMobile.js** などのワークスペース JavaScript を表示するには、ノードを展開します。 JavaScript ファイルをクリックして表示し、ブレークポイントを追加します。
     
@@ -149,12 +148,12 @@ ms.locfileid: "3887154"
 
 ## <a name="troubleshooting-the-app"></a>アプリ の トラブルシューティング
 
-### <a name="no-support-for-ios14-due-to-issues-with-date-and-time-controls"></a>日付と時刻のコントロールに問題があるため、iOS14 はサポートされません
-IOS14 で導入された変更により、ユーザーがデバイスを iOS14 に更新した後 Finance and Operations モバイル アプリの日付と時刻のコントロールが機能しなくなります。 IOS14 に移動した後、日付の選択と時間の選択はタッチまたはキーボードを使用して開かないので、ユーザーは新しい日付または時刻を入力したり、既存の値をクリアしたりすることはできません。 この問題は現在調査中です。
+### <a name="resolved---no-support-for-ios14-due-to-issues-with-date-and-time-controls"></a>**[解決済]** - 日付と時刻のコントロールに問題があるため、iOS14 はサポートされません
+Finance and Operations モバイル アプリのバージョン 2.2.8 は、iOS14 の日時のピッカーに関する既知の問題を修正します。 IOS14 上でアプリケーションを実行する際に問題が発生した場合は、最新バージョンのアプリを使用していることを確認してください。  
 
 ### <a name="the-mobile-client-app-is-not-working-on-particular-devices"></a>モバイル クライアント アプリ が 特定のデバイスで動作しない
 アプリと関連付けられているキャッシュが動作不良の原因となる場合があるため、これらを削除してください。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
-アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Finance and Operations (Dynamics 365)** の順に移動し、**アプリの削除**をクリックしてアプリを完全にアンインストールします。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
+アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Finance and Operations (Dynamics 365)** の順に移動し、**アプリの削除** をクリックしてアプリを完全にアンインストールします。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
 
 ### <a name="on-android-devices-with-non-english-regions-the-comma-cant-be-used-as-the-decimal-separator-in-an-amount-field"></a>英語圏以外の Android デバイスでは、カンマが金額フィールドで小数点の記号として使用できない場合があります
 英語圏以外の Android デバイスでは、カンマを小数点の記号として標準使用してください。 金額フィールドで発生するカンマの問題は、 Android 固有の問題であり、iPhone では発生していません。 Android における金額フィールドのカンマ問題は、既定のキーボードとされている「gboard」やその他のキーボードが原因で発生しています。 SwiftKey キーボード (Microsoft 製) をインストールすることで、iPhone のようなカンマ入力が可能となります: [SwiftKey キーボード](https://www.microsoft.com/swiftkey)。
@@ -167,7 +166,7 @@ Finance and Operations (モバイル クライアント) アプリでは、埋�
 
 - 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではアプリ がアクティブな状態を維持することができます。
 - 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
-- これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
+- これを回避するには、認証通知を「長押し」したまま **承諾** オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
 
 MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator アプリ ログの送信](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) に役立ち、結果のインシデント ID に対するサポートを提供します。
 
@@ -202,13 +201,13 @@ Finance and Operations (モバイル クライアント) アプリには Microso
 ### <a name="tips-for-workspace-creation-and-modification"></a>ワークスペースの作成および変更に関するヒント
 ワークスペースの作成および変更に関するヒントを以下に示します。
 - 大規模で複雑なフォームを記録するのではなく、記録用の簡略化されたフォームを新しく作成します。
-- フォームを記録したら、**完了**をクリックする代わりにフォームを閉じる必要があります。そうしないと、フォームは開いたままです。
+- フォームを記録したら、**完了** をクリックする代わりにフォームを閉じる必要があります。そうしないと、フォームは開いたままです。
 - "ジョブ ステップ" を使用して記録が正しいことを確認します。
 - タスク レコーダーの再生を使用して記録を再生し、確認します。
 - 前のページのコンテキストをキャプチャする必要があるため、記録を開始する前にページに移動しないでください。
 - グリッドのあるページを記録し直す場合は、[詳細] ページへのリンクをもう一度記録する必要があります。そうしないと、リンクがページに含まれないためです。
-- アクションを記録するときは、フィールドに追加する値を変更します。 記録が完了したら、**保存**をクリックする代わりににフォームを閉じます。
-- 携帯のルックアップは、記録済みのリスト ページです。 **保存する値としてフィールドを使用する** (データ) および**ユーザーに表示するフィールド** (表示) を選択するには、それぞれ**フィールド データの選択**および**表示するフィールドを選択します**を使用します。
+- アクションを記録するときは、フィールドに追加する値を変更します。 記録が完了したら、**保存** をクリックする代わりににフォームを閉じます。
+- 携帯のルックアップは、記録済みのリスト ページです。 **保存する値としてフィールドを使用する** (データ) および **ユーザーに表示するフィールド** (表示) を選択するには、それぞれ **フィールド データの選択** および **表示するフィールドを選択します** を使用します。
 - ルックアップ フィールドを追加する場合は、ルックアップ フィールドを追加するだけでなく、ルックアップで値を選択します。 これにより、正しい値が選択されます。
 - ルックアップを再記録する場合は、ルックアップの GUID が変更されるため、すべての参照も再記録する必要があります。
 - ページにフィールドを追加する場合は、すべてのフィールドをもう一度追加する必要があります。これは、各編集の最初にリストがクリアされるためです。 これは、タスク レコーダーの制限です。 並べ替えもできないことに注意してください。

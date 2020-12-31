@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 28
 ms.dyn365.ops.version: 2019-07-31
-ms.openlocfilehash: cc554fc389c2be4b29f761853c5d78adc3065402
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4f3d7a690babd03ffe4e401b56ed3e51f1a7918
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183443"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688109"
 ---
 # <a name="business-events-and-azure-event-hubs"></a>ビジネス イベント と Azure イベントのハブ
 
@@ -52,7 +51,7 @@ ms.locfileid: "2183443"
 
     ![新規エンドポイントウィザードの構成をする](../../media/BE_EH_endpointconfig.jpg)
 
-7. **エンドポイントの種類** フィールドで、 **Azure イベント ハブ**を選択します。
+7. **エンドポイントの種類** フィールドで、 **Azure イベント ハブ** を選択します。
 8. **次へ** を選択します。
 9. **エンドポイント名称** フィールドで、エンドポイントの名前を入力します。
 10. **ハブの名称** フィールドで、イベントハブの名前を入力します。

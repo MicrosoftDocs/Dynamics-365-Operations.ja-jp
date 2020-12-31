@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 13511
 ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24cd0154dba2669c3ca756e8c627757565d53461
-ms.sourcegitcommit: 9a053d020e672a87b660f27009a492544e6c81a9
+ms.openlocfilehash: 1b29f285a47e470f5d02243f664f9a0be43b2ff3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3641460"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688193"
 ---
 # <a name="workflow-subsystem-updates-in-finance-and-operations"></a>Finance and Operations のワークフロー サブシステムのアップデート
 

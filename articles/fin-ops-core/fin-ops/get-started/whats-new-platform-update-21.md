@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: a765a61c-52a3-47c5-b579-68b9249c592b
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 21
-ms.openlocfilehash: e99994c7ed3e930ebf4f25bc312640d51596ac34
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a9360a69e79df736227444559662eab5e8b06865
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191729"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694110"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-november-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
 
@@ -56,9 +55,9 @@ TransientSqlConnectionError 例外は、トランザクション内ではキャ�
 
 詳細については、[SQL 接続エラー X++ 例外](../../dev-itpro/dev-ref/sql-connection-error.md)を参照してください。
 
-## <a name="sticky-default-actions-in-grids"></a>グリッド内の既定の付箋アクション
+## <a name="sticky-default-actions-in-grids"></a>グリッド内にある既定の付箋アクション
 
-Finance and Operations の多くのグリッドで*既定のアクション*が定義されています。 これは、すべての行の値がハイパーリンクとして表示されるグリッド内の 1 つの列です。それに対して、その他の列ではアクティブな行の値だけがハイパーリンクとして表示されます。 この既定のアクションは常に、ユーザー個人設定が適用される前に、グリッド内の最初のテキスト列に表示されます。 たとえば、以下の **顧客** 一覧の **アカウント** 列を考えます。
+Finance and Operations の多くのグリッドで *既定のアクション* が定義されています。 これは、すべての行の値がハイパーリンクとして表示されるグリッド内の 1 つの列です。それに対して、その他の列ではアクティブな行の値だけがハイパーリンクとして表示されます。 この既定のアクションは常に、ユーザー個人設定が適用される前に、グリッド内の最初のテキスト列に表示されます。 たとえば、以下の **顧客** 一覧の **アカウント** 列を考えます。
 
 ![顧客リスト](media/customerGrid.png "顧客リスト")
 
@@ -66,11 +65,11 @@ Finance and Operations の多くのグリッドで*既定のアクション*が�
 
 既定の付箋アクションをオフにすると (プラットフォーム更新 21 より前で既定のアクションがどのように動作したかに対応します)、既定のアクション ハイパーリンクが、個人用設定の適用後に最初のテキスト列に表示される列に変更されます。 たとえば、**アカウント** 列をグリッドの 4 番目の列に移動する場合 (または **アカウント** 列を非表示にした場合)、既定のアクションを表すハイパーリンクは **名前** 列に移動します。
 
-![既定の付箋アクションがオフ](media/stickyDAOff.png "既定の付箋アクションがオフになると、[アカウント] 列が最初の列に移動されない場合、[名前] 列が既定のアクション列になります。")
+![既定の付箋アクションがオフ](media/stickyDAOff.png "既定の付箋アクションがオフになると、アカウント列が最初の列に移動されない場合、名前列が既定のアクション列になります。")
 
 既定の付箋アクションがオンになると、既定のアクション ハイパーリンクは、フォームに適用される個人用設定に関係なく同じ列になります。 つまり、この顧客リストについて、**アカウント** 列が移動されるか非表示になるか関係なく、**アカウント** 列は引き続き既定のアクション列です。
 
-![既定の付箋アクションがオフ](media/stickyDAOn.png "既定の付箋アクションがオンになると、[アカウント] 列は個人用設定にかかわらず既定のアクション列です。")
+![既定の付箋アクションがオフ](media/stickyDAOn.png "既定の付箋アクションがオンになると、アカウント列は個人用設定にかかわらず既定のアクション列です。")
 
 プラットフォーム更新 21 では、既定の付箋アクション機能がオフですが、システム管理者が環境で有効にできます。 この機能を有効にするには、**システム管理** で **クライアント パフォーマンス オプション** ページに移動し、**既定の付箋アクションを有効にする** オプションを見つけます。
 

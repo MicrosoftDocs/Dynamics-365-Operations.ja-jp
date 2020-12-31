@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b1a094402f4ed81de2f9b10f3c40557bc103eb65
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005828"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687184"
 ---
 # <a name="compensation-power-bi-content"></a>補償 Power BI コンテンツ
 
@@ -30,7 +29,7 @@ ms.locfileid: "3005828"
 このトピックでは、**補償** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-次の製品のいずれかを使用する場合、**補償** Power BI コンテンツは、**補償管理**ワークスペースに表示されます。
+次の製品のいずれかを使用する場合、**補償** Power BI コンテンツは、**補償管理** ワークスペースに表示されます。
 
 - Finance and Operations アプリ
 - Microsoft Dynamics 365 Human Resources

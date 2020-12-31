@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c9833fd45242071c9d5ea5ea4351522a54024e56
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 10632cb9387d70df1ef809fb108ed01d2444a2e4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665040"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687559"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 
@@ -58,6 +57,9 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 次の図は、拡張機能のクラス ダイアグラムを示しています。
 
 ![Commerce Scale Unit の拡張機能クラス ダイアグラム](media/RSClassFlow.png)
+
+> [!NOTE]
+> Retail サーバーでは、IController と CommerceController の両方の拡張機能の読み込みはサポートされていません。 両方のタイプの拡張機能を含めると、Retail サーバーの負荷は失敗します。 拡張機能は IController または CommerceController のいずれかである必要があります。 IController 拡張機能に移行する場合は、すべての Retail サーバー拡張機能を IController に移行します。
 
 ### <a name="steps"></a>ステップ
 

@@ -1,6 +1,6 @@
 ---
 title: ユーザー補助機能
-description: このトピックでは、さまざまな障害を持つユーザーを支援するようにデザインされた機能について説明します。
+description: このトピックでは、さまざまな障がいを持つユーザーを支援するようにデザインされた機能について説明します。
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 12/02/2019
@@ -10,23 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
-ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
+ms.openlocfilehash: 332306abbd4eedb725efbf6022940c59419e1747
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872445"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693849"
 ---
 # <a name="accessibility-features"></a>ユーザー補助機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、さまざまな障害を持つユーザーが、このアプリケーションを使用することを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
+このトピックでは、さまざまな障がいを持つユーザーが、このアプリケーションを使用することを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows ナレーターとキーボード専用アクセス
 
@@ -85,7 +84,7 @@ ms.locfileid: "2872445"
 
 ## <a name="form-patterns"></a>フォーム パターン
 
-アプリケーションのページのほぼ 90% は、少数のパターンのセットに基づいています。 これらのパターンは *フォーム パターン*と呼ばれます。 各フォーム パターンは、ページ上で最も頻繁に実行されるアクションを提供するのに使用されます。 頻繁に使用されるアクションおよびデータは違うページの同じ場所に常に表示されるため、フォーム パターンは、使いやすさと容易な理解を保証するのに役立ちます。 フォーム パターンの数が少ないため、ユーザーはページの数に関係なくシステムを容易に理解でき、フォーム パターンを認識した後に自信をもって使用することができます。
+アプリケーションのページのほぼ 90% は、少数のパターンのセットに基づいています。 これらのパターンは *フォーム パターン* と呼ばれます。 各フォーム パターンは、ページ上で最も頻繁に実行されるアクションを提供するのに使用されます。 頻繁に使用されるアクションおよびデータは違うページの同じ場所に常に表示されるため、フォーム パターンは、使いやすさと容易な理解を保証するのに役立ちます。 フォーム パターンの数が少ないため、ユーザーはページの数に関係なくシステムを容易に理解でき、フォーム パターンを認識した後に自信をもって使用することができます。
 
 フォーム パターンに関する詳細は、[フォームのスタイルとパターン](../../dev-itpro/user-interface/form-styles-patterns.md)を参照してください。
 

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e571cc26f55e0bd7a1eef301e193921e0b3f8e31
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: abf7a1a0a75ac3098efeeab3df65481999b69acc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454698"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687881"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の削除済み、または非推奨の機能
 
@@ -28,7 +27,7 @@ ms.locfileid: "3454698"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の削除済み、または非推奨の機能について説明します。
 
-- *削除された*フィーチャーはサービスではもう使用できません。
+- *削除された* フィーチャーはサービスではもう使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、自身の計画を立てる際に、これらの削除や非推奨を検討できるように提供されます。

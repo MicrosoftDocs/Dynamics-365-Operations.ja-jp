@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1bc3f0f487a61cac7b9d3355d376aa391f97dc7a
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 419aab6e0776ad186ec6cdac320a79d0a68e980d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803177"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685455"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミスにおけるディザスター リカバリーの構成
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -55,7 +54,7 @@ Microsoft が指定した新しい前提条件を適用していることを確�
 
 ## <a name="environment-configuration"></a>環境のコンフィギュレーション
 
-Lifecycle Services (LCS) では、運用環境は、**運用**と名付けた環境のスロットを使用して配置する必要があります。 ディザスター リカバリー環境では、LCS の追加の環境スロットが使用されません。 その代わりに、運用環境でスロットを再利用します。 
+Lifecycle Services (LCS) では、運用環境は、**運用** と名付けた環境のスロットを使用して配置する必要があります。 ディザスター リカバリー環境では、LCS の追加の環境スロットが使用されません。 その代わりに、運用環境でスロットを再利用します。 
 
 Finance and Operations AOS ノードと SQL Server は、同じデータセンター内に共存している必要があります。 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements)を参照してください。
 
@@ -231,13 +230,13 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 1. LCS で、ご利用の運用環境の環境ページに移動します。
 
-1. **管理**を選択し、**更新の設定**を選択します。
+1. **管理** を選択し、**更新の設定** を選択します。
 
     ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-1. 値を変更しないでください。 **準備**を選択します。
+1. 値を変更しないでください。 **準備** を選択します。
 
-1. ダウンロードと準備が完了後は、**環境の更新**ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
+1. ダウンロードと準備が完了後は、**環境の更新** ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
 
     ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
 

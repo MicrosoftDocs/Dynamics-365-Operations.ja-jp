@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9b4ea930f6353585eb8535df54ccd7c5b87949fa
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: ecd88fbb7a4bf9786c000f07b94d96434d3b6ca8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258664"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684971"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 
@@ -52,20 +51,20 @@ ms.locfileid: "3258664"
 ## <a name="set-up-receipts"></a>レシートの設定
 
 1. POSで、"レシートの形式" を検索して **レシートの形式** ページを開きます。
-2. POS で使用する**顧客のクレジットカード レシート**形式のレシートを選択します。 デモ データを使用している場合は、レシート形式に **3\_P** を選択し、**印刷の動作** フィールドを **印刷しない** に設定します。
+2. POS で使用する **顧客のクレジットカード レシート** 形式のレシートを選択します。 デモ データを使用している場合は、レシート形式に **3\_P** を選択し、**印刷の動作** フィールドを **印刷しない** に設定します。
 3. **デザイナー** を設定し、レシート デザイナーを開きます。
 4. レシートの形式からすべてのフィールドを削除します。
 
     レシートのセクションを編集するには、まず、レシート デザイナーの左ウィンドウの下部で、当該セクションを選択する必要があります。 次に、[選択済] セクションで目的のレシートの変数を選択します。 最後に、選択した変数を削除するには **、Alt + D** のキーボード ショートカットを使用します。
 
-5. 左ウィンドウの下部にある**ヘッダー** セクションを選択し、**EFTメッセージ**のレシートの変数をヘッダーにドラッグします。
+5. 左ウィンドウの下部にある **ヘッダー** セクションを選択し、**EFTメッセージ** のレシートの変数をヘッダーにドラッグします。
 
     ![カード所有者のレシートのヘッダにおける EFT メッセージ変数](media/Cardholders.png)
 
 6. **保存** を選択します。
 7. レシート デザイナーがまだ開いている場合は、左上隅にある **形式の選択** を選択してレシート セレクターを開きます。
 8. レシート セレクターで、 POS で使用する **レシート** の形式を選択します。 デモ データを使用している場合は、レシート形式に **1\_p**  を選択します。
-9. レシート デザイナーで、左ウィンドウの**下部**にあるフッター セクションを選択し、**カード支払/入金明細** のレシート変数をフッターにドラッグします。
+9. レシート デザイナーで、左ウィンドウの **下部** にあるフッター セクションを選択し、**カード支払/入金明細** のレシート変数をフッターにドラッグします。
 
     ![顧客のレシートのフッターにおけるカードの支払/入金の詳細変数](media/customersreceipt.png)
 

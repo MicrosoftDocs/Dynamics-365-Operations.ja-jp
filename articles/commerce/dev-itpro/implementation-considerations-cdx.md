@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 15c503e76f6630f8564166556713ce873f78eb62
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: af66dd8353f73aacd0b05e2c112a0da0b97fa160
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712558"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685403"
 ---
 # <a name="commerce-data-exchange-implementation-guidance"></a>Commerce Data Exchange 実装ガイダンス
 [!include[banner](../includes/banner.md)]
@@ -85,7 +84,7 @@ Scheduler ジョブが実行されると、チャネル データベース グ�
 
 - **サインイン前に手動でのオフライン切り替えを許可する** – この設定により、Modern POS ユーザーは POS にサインインする前にオフライン モードに切り替えることができます。 これは、サインインが完了する前にタイムアウトが発生する可能性がある場合や、Commerce Scale Unit (クラウドまたは自己ホスト) からの非定型の応答コードが発生している場合のシナリオで役立ちます。 この設定を有効にすると、オフライン データベースを使用している Modern POS ユーザーが、POS サインイン ページから **設定** メニューにアクセスできるようになります。 このメニューには、オフライン モードに切り替えるための新しいオプションが含まれています。 このオプションを選択すると、ユーザーは、Commerce Scale Unit への呼び出しによって最初にログインする必要がなく、オフライン データベースに対して直接サインインできます。
 - **詳細なオフライン切り替えの有効化** – この設定により、Modern POS をより簡単により頻繁にオフライン モードに切り替えることができます。 通常、Modern POS はオンライン状態を維持しようとし、機能を続行するためにこのようなスイッチが必要になった場合にのみオフライン モードに切り替えます。 この設定を有効にすると、Modern POS は、特にサインインや POS 操作への遅延とみなされる可能性のある追加の Commerce Scale Unit の応答を含むシナリオで、より頻繁に切り替えることができます。 この設定は、オンラインのみの機能の可用性を維持するより速度を優先するシナリオ (Headquarters への接続を必要とするギフト カードでの支払など) で最も重要です。
-- **システムの正常性チェックの間隔 (分)** – この設定は、説明した **詳細なオフライン切り替えの有効化** 設定のサブ機能として機能します。 通常、この設定がオフで、Modern POS がオフライン モードの場合、POS は **オフライン プロファイル**の構成に基づいて特定の時間だけ待機し、次に発生する操作呼び出し中に Commerce Scale Unit への再接続を試みます。 この詳細なオフラインの正常性チェックは、オンラインの可用性を確認し、オンライン機能が再び使用可能になるとすぐに切り替える、より頻繁な操作に依存しない方法を提供します。
+- **システムの正常性チェックの間隔 (分)** – この設定は、説明した **詳細なオフライン切り替えの有効化** 設定のサブ機能として機能します。 通常、この設定がオフで、Modern POS がオフライン モードの場合、POS は **オフライン プロファイル** の構成に基づいて特定の時間だけ待機し、次に発生する操作呼び出し中に Commerce Scale Unit への再接続を試みます。 この詳細なオフラインの正常性チェックは、オンラインの可用性を確認し、オンライン機能が再び使用可能になるとすぐに切り替える、より頻繁な操作に依存しない方法を提供します。
 
 #### <a name="offline-data-exclusion"></a>オフライン データの除外
 

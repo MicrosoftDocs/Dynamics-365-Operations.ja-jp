@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailSharedParameters, RetailDevice
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail, Core
 ms.custom: 18341
 ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 82cb05f8a785f4f53a0b0f84dcd4c48be9c3a507
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: e6d1105ffec99c93bf3004d289498881067cf975
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070779"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688007"
 ---
 # <a name="point-of-sale-pos-device-activation"></a>販売時点管理 (POS) デバイスのライセンス認証
 
@@ -34,8 +33,8 @@ ms.locfileid: "3070779"
 <a name="checklist-to-follow-before-activation"></a>起動前のチェックリスト
 -------------------------------------
 
-1.  本部 (HQ) で**有効化のためにデバイスを検証**チェックを完了し、デバイスが検証をパスしたことを確認します。
-2.  デバイスを有効化しているクライアント マシンで、Commerce Scale Unit URL 正常性チェックにアクセスし、正常性チェックが承認されていることを確認します。 次の形式を使用します: https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping
+1.  本部 (HQ) で **有効化のためにデバイスを検証** チェックを完了し、デバイスが検証をパスしたことを確認します。
+2.  デバイスを有効化しているクライアント マシンで、Commerce Scale Unit URL 正常性チェックにアクセスし、正常性チェックが承認されていることを確認します。 次の形式を使用します: `https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping`。
 3.  作業者は、Microsoft Azure Active Directory (AAD) アカウント (**外部 ID 下**) にマップする必要があります。
 4.  マッピングする AAD アカウントは、同じテナントに属している必要があります。
 5.  作業者を AAD アカウントにマップするには、Microsoft Dynamics Lifecycle Services (LCS) の管理者アカウントを使用して HQ に サインインします。
@@ -58,7 +57,7 @@ ms.locfileid: "3070779"
 
 ## <a name="activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation"></a>ガイド付きの有効化を使用して、Modern POS または Cloud POS デバイスを有効化
 1.  Modern POS またはクラウド POS 用の初期デバイスの有効化ページを開きます。 サインインするように求められます。
-2.  **始める前に**ページで、指示に従い、**次へ**をクリックします。
+2.  **始める前に** ページで、指示に従い、**次へ** をクリックします。
 
     ![POS ウィザード (ページを開始する前に)](./media/p24.png)
 
@@ -67,7 +66,7 @@ ms.locfileid: "3070779"
 
     [![POS ウィザード、サーバー URL ページの追加](./media/p18.png)](./media/p18.png)
 
-5.  店舗のリストを入力するには、**次へ**をクリックします。
+5.  店舗のリストを入力するには、**次へ** をクリックします。
 6.  一覧で適切な店舗を選択します。
 
     [![POS ウィザード、店舗ページの選択](./media/p20.png)](./media/p20.png)
@@ -75,7 +74,7 @@ ms.locfileid: "3070779"
 7.  適切なレジスターとデバイスを選択します。 
 
     > [!NOTE]
-    > このデバイスは **保留中**、**非有効化**、または **有効化** とすることができます。 または、HQ で**デバイスをストアからレジスターに関連付ける**設定を有効にする場合と、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
+    > このデバイスは **保留中**、**非有効化**、または **有効化** とすることができます。 または、HQ で **デバイスをストアからレジスターに関連付ける** 設定を有効にする場合と、関連付けられているデバイスを持たないレジスターの一覧を表示する可能性があります。 
 
     [![POS ウィザード、レジスターおよびデバイス ページの選択](./media/p22.png)](./media/p22.png)
 
@@ -86,15 +85,15 @@ ms.locfileid: "3070779"
 ## <a name="create-a-device-id-from-modern-pos-and-cloud-pos"></a>モダン POS とクラウド POS からデバイス ID を作成する
 Modern POS または Cloud POS からデバイスを作成する (すなわち、自動的にデバイス ID を生成する) 機能を追加しました。これにより、デバイスがまだマップされていないレジスターにデバイスを関連付けることができます。 この機能は、HQ の設定を次のように設定した場合にのみ Modern POS で使用できます。
 
-1.  **Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマース共有パラメーター** &gt; **全般**の順に移動します。
+1.  **Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマース共有パラメーター** &gt; **全般** の順に移動します。
 2.  **デバイス** で **デバイスからの登録を許可する** を **はい** に設定します。
-3.  Modern POS クライアントで、ガイド付きの有効化フローの**関連付けられているデバイスがありません**とリストされているレジスターを選択するときにデバイスを追加できるようになりました。
-4.  レジスターを選択した後に、レジスター マッピングを持たないデバイスを選択するか、**またはデバイスを追加**リンクを使用するかのいずれかを使用することができます。
-5.  **またはデバイスを追加**リンクをクリックし、新しいデバイス ID を入力するか、または**新しいデバイス ID を自動的に作成する**を選択します。
-6.  **有効化**をクリックして新しいデバイス ID を作成し、選択したレジスタへの関連付け、および有効化が完了します。
+3.  Modern POS クライアントで、ガイド付きの有効化フローの **関連付けられているデバイスがありません** とリストされているレジスターを選択するときにデバイスを追加できるようになりました。
+4.  レジスターを選択した後に、レジスター マッピングを持たないデバイスを選択するか、**またはデバイスを追加** リンクを使用するかのいずれかを使用することができます。
+5.  **またはデバイスを追加** リンクをクリックし、新しいデバイス ID を入力するか、または **新しいデバイス ID を自動的に作成する** を選択します。
+6.  **有効化** をクリックして新しいデバイス ID を作成し、選択したレジスタへの関連付け、および有効化が完了します。
 
 ## <a name="activate-the-device-for-modern-pos-by-using-a-configuration-file"></a>コンフィギュレーション ファイルを使用して Modern POS のデバイスを有効化
-IT プロフェッショナルは、Modern POS と一緒にダウンロードできるコンフィギュレーション ファイルを使用して、Modern POS のデバイス アクティベーションを簡単に設定できるようになりました。 このファイルは、適切な Modern POS デバイス (**Retail とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス**) の**デバイス** ページで利用できます。 
+IT プロフェッショナルは、Modern POS と一緒にダウンロードできるコンフィギュレーション ファイルを使用して、Modern POS のデバイス アクティベーションを簡単に設定できるようになりました。 このファイルは、適切な Modern POS デバイス (**Retail とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス**) の **デバイス** ページで利用できます。 
 
 [![構成ファイルのダウンロード](./media/p16_11_16-1024x481.png)](./media/p16_11_16.png) 
 

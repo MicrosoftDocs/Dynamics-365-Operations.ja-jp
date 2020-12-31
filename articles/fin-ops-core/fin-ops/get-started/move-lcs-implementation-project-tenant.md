@@ -3,24 +3,23 @@ title: LCS 実装プロジェクトを別の Azure AD テナントに移動す�
 description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 10/12/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: d72f1c67fd9534c4a37efbf323960d41c4ee8b1b
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 3bb849759579abed8ce6dc32dcb2ddbaa4647f4c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989325"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695103"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -45,7 +44,7 @@ ms.locfileid: "3989325"
 
 ### <a name="cloud-service-provider"></a>クラウド サービス プロバイダー
 
-Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じてライセンスを取得している場合は、クラウド サービス プロバイダーから新しいテナントに対して必要なサブスクリプションを購入してください。 新しいテナントが既に存在する場合、クラウド サービス プロバイダは、再販業者関係を要求する必要があります。 または、パートナー センターのクラウド サービス プロバイダで必要な既定ドメイン名の新しい顧客を作成する必要があります**\*.onmicrosoft.com** (たとえば、**contoso.onmicrosoft.com**)。
+Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じてライセンスを取得している場合は、クラウド サービス プロバイダーから新しいテナントに対して必要なサブスクリプションを購入してください。 新しいテナントが既に存在する場合、クラウド サービス プロバイダは、再販業者関係を要求する必要があります。 または、パートナー センターのクラウド サービス プロバイダで必要な既定ドメイン名の新しい顧客を作成する必要があります **\*.onmicrosoft.com** (たとえば、**contoso.onmicrosoft.com**)。
 
 クラウド サービス プロバイダーに、今回は既存のサブスクリプションを中断しないよう依頼します。
 
@@ -67,14 +66,14 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 
 新しいテナントで、開始し設定する必要がある新しい LCS プロジェクトを取得します。
 
-1. 新しいプロジェクト オンボード ウィザードの操作を完了します。 詳細については、[LCS プロジェクトのオンボード](../../dev-itpro/lifecycle-services/project-onboarding.md) を参照してください。 ウィザードの完了時に、既存の **LCS プロジェクトを別のテナントから移動** し、ソース LCS プロジェクト ID を提供する **プロジェクトの概要**ページで、このウィザードを指定する必要があります。
+1. 新しいプロジェクト オンボード ウィザードの操作を完了します。 詳細については、[LCS プロジェクトのオンボード](../../dev-itpro/lifecycle-services/project-onboarding.md) を参照してください。 ウィザードの完了時に、既存の **LCS プロジェクトを別のテナントから移動** し、ソース LCS プロジェクト ID を提供する **プロジェクトの概要** ページで、このウィザードを指定する必要があります。
 2. LCS を完全に構成します。 この構成の一部として、次の作業を行う必要があります。
     1. サブスクリプション見積もりをアップロードして有効にします。 ソース LCS プロジェクトで既に住んでいる場合は、見積が一致することを確認する必要があります。
     2. 配置可能パッケージをアセット ライブラリに追加します。
     3. ビジネス プロセス モデラー (BPM) ライブラリの更新。
 
 > [!IMPORTANT]
-> この期間中、2 つの並列 LCS プロジェクトがあります。 LCS 内の**利用可能なサブスクリプション**ページの LCS プロジェクトに関連付けられている Azure AD テナントの名前と ID を確認できます。
+> この期間中、2 つの並列 LCS プロジェクトがあります。 LCS 内の **利用可能なサブスクリプション** ページの LCS プロジェクトに関連付けられている Azure AD テナントの名前と ID を確認できます。
 
 ## <a name="move-your-sandbox-environments-to-the-new-tenant"></a>サンドボックス環境を新しいテナントに移動する
 1. 新しい LCS プロジェクトの非運用環境を配置します。
@@ -104,7 +103,7 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 
 ソリューションとスコープに応じて、新しい Azure AD テナントで追加の手順を実行する必要があります。 これらの手順には、アプリケーションの登録 (定期的な統合と倉庫管理のため)、ドメインの追加、およびシングル サインオン (SSO) を有効にするディレクトリ同期の設定が含まれます。
 
-Web サービスへの呼び出しが、環境の**ホーム**テナントからのみ許可されていることに注意してください。 たとえば、元のテナントは companya.com であり、統合は `services\@companya.com` として実行されました。 この場合、テナントを companyb.com に切り替えると、**userInfo.networkdomain** を `https://sts.windows.net/companyb.com` に更新してもWeb サービスの呼び出しに対して `services\@companya.com` を使用できなくなります。
+Web サービスへの呼び出しが、環境の **ホーム** テナントからのみ許可されていることに注意してください。 たとえば、元のテナントは companya.com であり、統合は `services\@companya.com` として実行されました。 この場合、テナントを companyb.com に切り替えると、**userInfo.networkdomain** を `https://sts.windows.net/companyb.com` に更新してもWeb サービスの呼び出しに対して `services\@companya.com` を使用できなくなります。
 
 > [!IMPORTANT]
 > サンドボックス環境で、Azure Blob Storage に保存されている添付ファイルを処理するドキュメントは失われます。 Blob ストレージは、Microsoft によって運用環境に対してのみ移動されます。
@@ -153,10 +152,15 @@ Web サービスへの呼び出しが、環境の**ホーム**テナントから
 
 7. 運用環境を配置した後、ソース環境とターゲット環境のコードがまったく同じであることを確認します。それ以外の場合は、移行は失敗します。 必要に応じて、配置可能なパッケージをターゲットの運用環境にインストールする必要があります。
 8. 古い運用環境から新しい運用環境にデータベースと BLOB ストレージをコピーすることを要求します。
-    1. Microsoft サービス エンジニアリング チームが古い運用環境から新しい運用環境にデータベースと BLOB ストレージのコピーを要求するのに、タイプ**その他**の[サービス要求](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) をファイルします。
-    2. このプロセスには、Microsoft と実装するプロジェクト チームとの間の対話が必要です。 電子メール通知または通知をサービス要求で直接フォローしていることを確認します。 
-    3. Microsoft が活動を完了して通知した後、新しい運用環境を検証する必要があります。 
-    4. 移行後に問題が発生した場合は、サポート チケットをファイルします。
+
+     - **セルフ サービス環境へのクラウド配置**: タイプ **その他** の[サービス要求を送信](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)して、Microsoft サービス エンジニアリング チームがデータベースと Blob ストレージを (該当する場合)、古い運用環境から新しい運用環境にコピーするよう要求します。 サービス要求には、ソースとターゲット プロジェクトの LCS ID および環境 ID が含まれていることを確認してください。
+     
+     - **両方のプロジェクト (新旧) はセルフ サービス配置です**: **サポート チケット** を送信して、データベースと Blob ストレージのコピーを (該当する場合)、古い運用環境から新しい運用環境に要求します。 サポート チケットには、ソースとターゲット プロジェクトの LCS ID および環境 ID が含まれていることを確認してください。
+     
+     
+    1. このプロセスには、Microsoft と実装するプロジェクト チームとの間の対話が必要です。 電子メール通知または通知をサービス要求で直接フォローしていることを確認します。 
+    2. Microsoft が活動を完了し、更新された情報が提供された後、新しい運用環境を検証する必要があります。 
+    3. 移行後に問題が発生した場合は、サポート チケットをファイルします。
 
 ## <a name="tear-down-the-lcs-project-on-the-old-tenant"></a>古いテナントの LCS プロジェクトの破棄
 

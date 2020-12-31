@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b756a61c-52a3-47c5-b579-66b9249c592b
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: e0ed208be8eeb75b4cf8825edb4fa338eac54138
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 91a72860017243ae364a24e919d49711da9deb5e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180493"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694108"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
@@ -47,15 +46,15 @@ ms.locfileid: "2180493"
 
 ## <a name="export-up-to-1-million-rows-to-excel"></a>最大 100 万行を Excel にエクスポート
 
-Excel へのエクスポート機能は、Finance and Operations のグリッドから最大 100 万行をエクスポートできるように構成できるようになりました。以前の 10,000 行の制限から大幅に上昇しました。 既定では、エクスポート制限は 50,000 行に設定されていますが、クライアント パフォーマンス オプション ページからシステム管理者が 100 万行までエクスポート制限を調整できます。
+Excel へのエクスポート機能は、Finance and Operations のグリッドから最大 100 万行をエクスポートできるように構成されました。以前の 10,000 行の制限から大幅に上昇しました。 既定では、エクスポート制限は 50,000 行に設定されていますが、クライアント パフォーマンス オプション ページからシステム管理者が 100 万行までエクスポート制限を調整できます。
 
 ## <a name="improved-usability-of-the-navigation-pane"></a>ナビゲーション ウィンドウの使いやすさの向上
 
-ナビゲーション ウィンドウは、お気に入り、最近開いたページや、ークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
+ナビゲーション ウィンドウは、お気に入り、最近開いたページ、ワークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
 
 ## <a name="restyled-personalization-toolbar"></a>個人用設定ツールバーの再編成
 
-個人用設定ツールバーがプラットフォーム更新 22 で再編成され、ユーザーが Finance and Operations でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。
+個人用設定ツールバーがプラットフォーム更新プログラム 22 で再編成され、ユーザーが Finance and Operations でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。
 
 - 各個人用設定ツールの名前がアイコンと共に表示されるようになったため、ユーザーが使おうと思っているツールをすばやく認識できます。
 - 現在のツールを使用する方法についての説明も表示され、目的の個人用設定を行う方法を理解するのに役立ちます。
@@ -67,9 +66,9 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 
 次の画像は、プラットフォーム更新 22 以降の個人用設定ツールバーの表示を示しています。
 
-![プラットフォーム更新 22 以降の個人用設定ツールバー](media/restyledPersonalizationToolbar.png "プラットフォーム更新 22 以降の個人用設定ツールバー")
+![プラットフォーム更新 22 以降の個人用設定ツールバー](media/restyledPersonalizationToolbar.png "プラットフォーム更新 22 以降の個人用設定ツールバー]")
 
-## <a name="optimized-is-one-of-filtering-experience"></a>「次の値のいずれか」のフィルタリング結果を最適化
+## <a name="optimized-is-one-of-filtering-experience"></a>最適化された "次の値のいずれか" のフィルタリング結果
 
 「次の値のいずれか」フィルター演算子は、フィルター ウィンドウおよびグリッド ヘッダーのドロップダウン リストを使用する場合にほとんどのフィールドで使用できます。 この演算子により、複数の異なる値に基づいてフィールドをフィルター処理できます。 「次の値のいずれか」演算子の新機能と向上したエクスペリエンスはプラットフォーム更新 22 で利用可能です。 詳しくは、[「次の値のいずれか」のフィルタリング結果の最適化](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)をご覧ください。
 

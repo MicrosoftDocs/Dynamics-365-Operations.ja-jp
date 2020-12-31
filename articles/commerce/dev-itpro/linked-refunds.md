@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: c01045f63752eee991f821a37591893cd158d477
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 5c8fe296e7351d744ad5105d84f39e5a1e641c6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113748"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685397"
 ---
 # <a name="linked-refunds--refunds-of-previously-approved-and-confirmed-transactions"></a>リンクされた払戻 – 以前に承認および確認済みのトランザクションの払戻
 
@@ -50,7 +49,7 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 リンクされた払戻機能は、Microsoft Dynamics 365 Retail 8.1.3 以降で利用可能なオムニチャネル支払い機能と連携します。
 
-リンクされた払戻機能を有効にするには **Retail とコマース \> バックオフィスの設定 \> パラメーター \> コマース共有パラメーター**に移動します。 **オムニ チャネル支払い** タブで **オムニ チャネル支払いを使用する** オプションを **はい** に設定します。
+リンクされた払戻機能を有効にするには **Retail とコマース \> バックオフィスの設定 \> パラメーター \> コマース共有パラメーター** に移動します。 **オムニ チャネル支払い** タブで **オムニ チャネル支払いを使用する** オプションを **はい** に設定します。
 
 ![オムニチャネル支払いの構成](media/LinkedRefundsOmniChannel.jpg)
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21681
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53f6aa4ee42713ebc8b4a09f7995627d6ff486ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1dbeb11e639f1b4c496d90498d6e24bc5a43b47d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183283"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685071"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 
@@ -75,7 +74,7 @@ ms.locfileid: "2183283"
 > **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
 
 ## <a name="using-the-legal-entity-as-the-controlling-party"></a>法人を管理関係者として使用
-法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域**フィールドの既定値は、システムのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
+法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域** フィールドの既定値は、システムのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
 
 ## <a name="setting-another-party-as-the-controlling-party"></a>別の当事者を管理側の関係者として設定
 顧客、銀行、または仕入先などの、別の関係者を制御関係者として使用することができます。 たとえば、特定の国/地域の顧客に対して対象となる機能を有効化する、または特定の国/地域から仕入先の固有の検証を必要とすることができます。 管理者を設定するには、フォーム、コントロール、またはその他の要素の **CountryRegionContextField** プロパティを使用します。 このプロパティを使用すると、管理関係者であるエンティティを選択できます。 既定値は法人です。 次の図は、フィールドに **CountryRegionContextField** プロパティを設定する方法を示しています。 

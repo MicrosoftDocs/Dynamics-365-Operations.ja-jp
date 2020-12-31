@@ -11,23 +11,24 @@ ms.technology: ''
 ms.search.form: ''
 audience: Developer
 ms.reviewer: v-douklo
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 474dc7a51d8d48997484f1b11fd91d0d0bc90fb5
-ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
+ms.openlocfilehash: 0086a0b4669bc25e8ccc245716a0a48ad1991ffe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3818636"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685523"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 ## <a name="what-regions-are-available"></a>どの地域で使用できますか?
@@ -47,9 +48,9 @@ ms.locfileid: "3818636"
 
 ## <a name="verify-requirements-and-grant-access"></a>要件を確認し、アクセスを許可する
 
-二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Common Data Service 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
+二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Dataverse 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
 
-次の図に示すように、環境の設定時に**Dynamics 365 アプリ**を**はい**に設定する必要があります。 または、Common Data Service に付属している Dynamics 365 環境で、すでに **Dynamics 365 アプリを有効化する**が**はい**に設定されているモデル駆動型アプリを選択することもできます。
+次の図に示すように、環境の設定時に **Dynamics 365 アプリ** を **はい** に設定する必要があります。 または、Dataverse に付属している Dynamics 365 環境で、すでに **Dynamics 365 アプリを有効化する** が **はい** に設定されているモデル駆動型アプリを選択することもできます。
 
 :::image type="content" source="media/add_database.png" alt-text="アプリ切り替えの有効化" lightbox="media/add_database_expanded.png":::
 
@@ -65,10 +66,10 @@ ms.locfileid: "3818636"
 
 2. 二重書き込みコア ソリューションをインストールします。
 
-    二重書き込みコア ソリューションには、エンティティ マップのメタデータが含まれており、環境にインストールする必要があります。
+    二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれており、環境にインストールする必要があります。
 
-    1. Power Apps の左ウィンドウで、**Solutions**を選択します。
-    2. **AppSource を開く**を選択します。
+    1. Power Apps の左ウィンドウで、**Solutions** を選択します。
+    2. **AppSource を開く** を選択します。
     3. **二重書き込みコア** ソリューションを選択します。
     4. プロンプトに従ってソリューションをインポートします。
 
@@ -78,27 +79,27 @@ ms.locfileid: "3818636"
 
     *二重書き込みコア ソリューションが見つかりました*
 
-    *二重書き込みコア ソリューションには、エンティティ マップのメタデータが含まれており、環境にインストールする必要があります*
+    *二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれており、環境にインストールする必要があります*
 
-3. Finance and Operations アプリに接続できるように Common Data Service アクセスを許可します。
+3. Finance and Operations アプリに接続できるように Dataverse アクセスを許可します。
 
     1. Finance and Operations アプリのインスタンスを開き 、Azure Active Directory アプリケーションを検索して移動します。
 
-    2. 新しいクライアント ID レコード: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452** を追加するには、**新規**を選択します。 このレコードは、Common Data Service から Finance and Operations アプリへの接続に使用されるアプリのアプリケーション ID です。
+    2. 新しいクライアント ID レコード: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452** を追加するには、**新規** を選択します。 このレコードは、Dataverse から Finance and Operations アプリへの接続に使用されるアプリのアプリケーション ID です。
     3. 前の2つの手順を繰り返して、別のクライアント ID レコード: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** を追加します。
 
-    完了したら、次の手順に従ってエンティティの一覧を更新します:
+    完了したら、次の手順に従ってテーブルの一覧を更新します:
 
-    1. **ワークスペース \> データ管理**に移動し、**データ エンティティ** タイルを選択して、エンティティ リストが入力されていることを確認します。
-    2. **ワークスペース \> データ管理**に移動して、**フレームワーク パラメーター** タイルを選択します。 次に、**エンティティ** タブ (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`) で、**エンティティ リストの更新**を選択します。
+    1. **ワークスペース \> データ管理** に移動し、**データ テーブル** タイルを選択して、エンティティ リストが入力されていることを確認します。
+    2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択します。 次に、**エンティティ** タブ (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`) で、**テーブル リストの更新** を選択します。
 
     **関連する正常性チェックの結果:**<br>
-    *Common Data Service は Finance and Operations アプリに接続できます*<br>
+    *Dataverse は Finance and Operations アプリに接続できます*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
-4. Common Data Service に接続できるように Finance and Operations アプリへのアクセスを許可します。
+4. Dataverse に接続できるように Finance and Operations アプリへのアクセスを許可します。
 
-    1. Power Apps で、右上隅にある**設定**ボタン (ギヤ記号) を選択し、**詳細設定 \> セキュリティ** に移動して、**ユーザー**を選択します。
+    1. Power Apps で、右上隅にある **設定** ボタン (ギヤ記号) を選択し、**詳細設定 \> セキュリティ** に移動して、**ユーザー** を選択します。
 
         ![ユーザー](media/selecting-users.png)
 
@@ -106,21 +107,21 @@ ms.locfileid: "3818636"
 
         ![アプリケーション ユーザー ビューへの切り替え](media/selecting-application-users.png)
 
-    3. 新しいユーザーを作成し、**ユーザー** メニューで**アプリケーション ユーザー**を選択します。
+    3. 新しいユーザーを作成し、**ユーザー** メニューで **アプリケーション ユーザー** を選択します。
 
         ![アプリケーション ユーザーへの切り替え](media/create-new-user.png)
 
-    4. **アプリケーション ID** フィールドに、**00000015-0000-0000-c000-000000000000** と入力します。 このアプリケーション ID は Finance and Operations アプリ用で、アプリを Common Data Service に接続できるようにします。 完了したら、プロンプトに従って他のフィールドに入力し、ユーザー アカウントを保存します。
+    4. **アプリケーション ID** フィールドに、**00000015-0000-0000-c000-000000000000** と入力します。 このアプリケーション ID は Finance and Operations アプリ用で、アプリを Dataverse に接続できるようにします。 完了したら、プロンプトに従って他のフィールドに入力し、ユーザー アカウントを保存します。
 
         ![アプリケーション ID の入力](media/add-application-id.png)
 
     5. 基本電子メール アドレスを入力します。
-    6. **ロールの管理**を選択し、**ユーザー ロールの管理**ダイアログ ボックスで**システム管理者**チェック ボックスを選択して、選択したアプリケーション ユーザーにシステム管理者権限を付与します。
+    6. **ロールの管理** を選択し、**ユーザー ロールの管理** ダイアログ ボックスで **システム管理者** チェック ボックスを選択して、選択したアプリケーション ユーザーにシステム管理者権限を付与します。
 
         ![システム管理者ロールの割り当て](media/manage-user-roles.png)
 
-    7. **Dynamics 365 \> 設定 \> セキュリティ**に移動し、**チーム**を選択して、**すべての所有者チーム**にビューを変更します。
-    8. **ルートの事業単位の既定のチーム**を選択し、**ロールの管理**を選択して、**チーム ロールの管理**ダイアログ ボックスで事前にコンフィギュレーションされた**セキュリティ ロール**を選択し、二重書き込みを通して統合された各エンティティの**ユーザー**スコープに対して**読み取り**権限を付与します。 
+    7. **Dynamics 365 \> 設定 \> セキュリティ** に移動し、**チーム** を選択して、**すべての所有者チーム** にビューを変更します。
+    8. **ルートの事業単位の既定のチーム** を選択し、**ロールの管理** を選択して、**チーム ロールの管理** ダイアログ ボックスで事前にコンフィギュレーションされた **セキュリティ ロール** を選択し、二重書き込みを通して統合された各エンティティの **ユーザー** スコープに対して **読み取り** 権限を付与します。 
     
       セキュリティ ロールの作成方法に関する説明については、[カスタム セキュリティ ロールの作成またはコンフィギュレーション](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role)を参照してください。
       
@@ -134,7 +135,7 @@ ms.locfileid: "3818636"
         ![アプリケーション ID の割り当て](media/assign-application-id.png)
 
     **関連する正常性チェックの結果:**<br>
-    *Finance and Operations アプリは Common Data Service に接続できます*<br>
+    *Finance and Operations アプリは Dataverse に接続できます*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 00000015-0000-0000-c000-000000000000 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
 5. テナントでアプリへの同意をします。
@@ -152,7 +153,7 @@ ms.locfileid: "3818636"
 
         Plugin Registration Tool には、二重書き込みに関連付けられている 2 つのプラグイン アセンブリが必要です: **DualWriteRegistration.Plugins** と **DualWriteRuntime.Plugins**。 これらのアセンブリには、二重書き込みを使用する前に、順番に有効にする必要があるプラグイン ステップがあります。 プラグイン ステップを表示するには、プラグイン アセンブリとそのプラグイン タイプを展開します。 二重書き込みプラグイン アセンブリに属するすべてのステップを有効にする必要があります。
 
-    2. ステップを有効にするには、ステップを選択したまま (または右クリック) にし、**有効**を選択します。 **有効**オプションがなく、**無効**オプションのみの場合、ステップは既に有効になっており、変更する必要はありません。
+    2. ステップを有効にするには、ステップを選択したまま (または右クリック) にし、**有効** を選択します。 **有効** オプションがなく、**無効** オプションのみの場合、ステップは既に有効になっており、変更する必要はありません。
 
         ![Plugin Registration Tool の使用](media/plugin-registration-tool.png)
 
@@ -161,13 +162,13 @@ ms.locfileid: "3818636"
 
     **関連する正常性チェックの結果:**<br>
     *二重書き込み登録とランタイム プラグインが有効です*<br>
-    *Common Data Service で CRUD 操作を確実に行うには、二重書き込みプラグインを有効にする必要があります*
+    *Dataverse で CRUD 操作を確実に行うには、二重書き込みプラグインを有効にする必要があります*
 
 7. **二重書き込みアプリケーション オーケストレーション ソリューション** マップ ソリューションをインストールします。
 
-    Power Apps の左ウィンドウで、**ソリューション**を選択します。 **AppSource を開く**を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション**という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューション**の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)を参照してください。 
+    Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューション** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)を参照してください。 
  
-    二重書き込みコア ソリューションには、エンティティ マップのメタデータが含まれていますが、二重書き込みアプリケーション オーケストレーション ソリューションには、次の追加のマスタ データ シナリオが含まれます:
+    二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれていますが、二重書き込みアプリケーション オーケストレーション ソリューションには、次の追加のマスタ データ シナリオが含まれます:
     
     + 顧客、製品、仕入先。
     + 見込顧客から現金などのエンド ツー エンド プロセス フロー。
@@ -185,7 +186,7 @@ ms.locfileid: "3818636"
 
 9. サポートされているテナント コンフィギュレーションを指定します。
 
-    Finance and Operations アプリと Common Data Service が同じテナントにインストールされていることを確認します。 テナント間シナリオは現在サポートされていません。
+    Finance and Operations アプリと Dataverse が同じテナントにインストールされていることを確認します。 テナント間シナリオは現在サポートされていません。
 
     > [!NOTE]
     > バージョン 1.0.16.0 より前の二重書き込みコア ソリューションについては、変更および追加の手順の次のセクションを参照してください。 
@@ -201,7 +202,7 @@ ms.locfileid: "3818636"
 
     2. **受け入れる** を選択します。
 
-        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Common Data Service は、Finance and Operations アプリと通信するためにこのアプリが必要です。
+        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Dataverse は、Finance and Operations アプリと通信するためにこのアプリが必要です。
 
     
     **関連する正常性チェックの結果:**<br>

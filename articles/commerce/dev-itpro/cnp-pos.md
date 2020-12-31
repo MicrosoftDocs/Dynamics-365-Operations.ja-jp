@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3ebb4743d0e4a7cf2a604db97fe7330fa6113d4d
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4b0c8af3bcd47596a218d7fee98492722bd91b58
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818212"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684981"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 
@@ -77,7 +76,7 @@ ms.locfileid: "3818212"
 この機能を有効にする構成は、レジのみで完了できます。
 
 1. バック オフィスで、**小売りとコマース\> チャンネル設定 \> POS 設定 \> レジスター** の順に移動します。
-2. 該当のレジを選択し、**編集**を選択します。
+2. 該当のレジを選択し、**編集** を選択します。
 3. **全般** クイックタブの **カードが存在しない処理** フィールドで、**小売サーバーを使用する** を選択します。 (既定では、このフィールドは **ハードウェア ステーションを使用する** に設定されています。)
 
     ![カードが存在しない処理フィールド](media/PAYMENTS/CNP-POS.png)

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a97d73f8e260054042faf6f740035446c4b4265f
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 4fc06a269c613f1a1c0e4feac29c123144fb805a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117406"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687895"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 
@@ -142,7 +141,7 @@ SPID は、現在実行中のクエリのリストまたは現在ブロック中
 
 ### <a name="parameters"></a>パラメーター
 - **クエリ ID** は、現在実行中のクエリ、現在ブロック中のクエリ、最も高価なクエリ、およびステートメント テキストによるクエリなど、他の複数の工程から取得できます。
-- 時間数単位の**時間間隔**は、多くの場合、前週のすべてのプランを示すために &quot;168&quot; として、前日のすべてのプランを示すために &quot;24&quot; として指定されます。 多くの場合、プランは 1 週間に複数回変更されますが、数日安定する可能性があります。 そのため、ここでそれ以上の間隔を選択と多くの場合有利です。
+- 時間数単位の **時間間隔** は、多くの場合、前週のすべてのプランを示すために &quot;168&quot; として、前日のすべてのプランを示すために &quot;24&quot; として指定されます。 多くの場合、プランは 1 週間に複数回変更されますが、数日安定する可能性があります。 そのため、ここでそれ以上の間隔を選択と多くの場合有利です。
 
 ## <a name="get-wait-stats"></a>待機統計の取得
 

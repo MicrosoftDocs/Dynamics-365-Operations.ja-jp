@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AutomatedEntityStoreRefresh
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7584ce242bbc4c4545b230c3d6cc3483aff065
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 527f45a4e927a109379d00918f0a65e23502259a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174579"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687292"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 

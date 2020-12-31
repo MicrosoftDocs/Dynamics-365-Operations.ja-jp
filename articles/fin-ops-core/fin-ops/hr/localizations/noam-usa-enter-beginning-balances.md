@@ -1,28 +1,27 @@
 ---
 title: 給与の期首残高を入力します。
 description: 所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを移行または転送する場合に役立ちます。
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005681"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693405"
 ---
 # <a name="enter-payroll-beginning-balances"></a>給与の期首残高を入力します。
 
@@ -115,7 +114,7 @@ ms.locfileid: "3005681"
 
 #### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>なぜ [会計の無効化] スライダーを、支払明細書を生成する場合に [はい] に設定する必要があるか。
 
-スライダーを **はい** と設定することにより、明細行が支払明細書から総勘定元帳に配分されなくなります。 レガシー システムからの勘定残高が入力されたときに、総勘定元帳の金額が以前より更新されていました。 給与計算の開始時残高を入力すると、前年度の情報を含むレポートを生成することができます。また、給付と税金の限度額を特定することもできます。
+スライダーを **はい** と設定することにより、支払ステートメントの明細行が一般会計に配分されなくなります。 レガシー システムからの勘定残高が入力されたときに、総勘定元帳の金額が以前より更新されていました。 給与計算の開始時残高を入力すると、前年度の情報を含むレポートを生成することができます。また、給付と税金の限度額を特定することもできます。
 
 ### <a name="c-create-pay-statements-for-employees"></a>C. 従業員への支払明細書の生成
 

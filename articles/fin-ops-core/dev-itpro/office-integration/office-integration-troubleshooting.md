@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OfficeAppParameters, SysEmailParameters
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62729dc2768d4e0b0130e734a71656088b36cc2f
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 7ba679397d63b92613567e7b151ce9965993b278
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295093"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688495"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -157,9 +156,9 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **問題:** Excel アドインを開始してデータを更新すると、次のエラー メッセージが表示されます。「データ キャッシュに書き込み中にエラーが発生しました」。 エラー状態の詳細は次の通りです。「引数が無効または不足している、またはフォーマットが正しくありません」 
 
-**説明**: クライアントを Internet Explorer で開いていて、ユーザーが **Excel で開く**オプションを選択した直後に、**開く**をクリックすると、このエラー メッセージが表示されます。 Internet Explorer が一時的なインターネット ファイルを処理する方法は、Excel で問題を引き起こします。 この問題は、API 呼び出しの失敗の原因となります。 
+**説明**: クライアントを Internet Explorer で開いていて、ユーザーが **Excel で開く** オプションを選択した直後に、**開く** をクリックすると、このエラー メッセージが表示されます。 Internet Explorer が一時的なインターネット ファイルを処理する方法は、Excel で問題を引き起こします。 この問題は、API 呼び出しの失敗の原因となります。 
 
-**回避策**: Internet Explorer でブックを開く際、まず**保存**をクリックし、それから**開く**をクリックしてください。 ファイルはダウンロード フォルダーから開かれます。 別の方法として、Edge または Google Chrome ブラウザを使用します。 既定では、これらの両方のブラウザはファイルをダウンロード フォルダに保存します。 したがって、問題は発生しません。 
+**回避策**: Internet Explorer でブックを開く際、まず **保存** をクリックし、それから **開く** をクリックしてください。 ファイルはダウンロード フォルダーから開かれます。 別の方法として、Edge または Google Chrome ブラウザを使用します。 既定では、これらの両方のブラウザはファイルをダウンロード フォルダに保存します。 したがって、問題は発生しません。 
 
 **長期的な修正プログラム:** Office チームと協力してこの問題を理解し、Excel で解決できるようにしています。
 
@@ -169,14 +168,14 @@ Excelアドイン、データ管理 フレームワーク、 Power BI レポー�
 
 **説明:** この問題は、通常、電子メール アカウントの送信者アクセス許可が正しく設定されていないために発生します。 
 
-**修正:** Microsoft 365 管理センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションできます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する**の順にクリックします。 詳細については、[Microsoft 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。 
+**修正:** Microsoft 365 管理センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションできます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する** の順にクリックします。 詳細については、[Microsoft 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。 
 
 次の図は、**電子メール パラメーター** ページでの SMTP の設定を示しています。 ここで、送信メール サーバー、ポート、ユーザー名、パスワード、および Secure Sockets Layer (SSL) の要件を指定する必要があります。 
 
 [![電子メール パラメータ ページ上の SMTP 設定タブ](./media/smtp.png)](./media/smtp.png)
 
 > [!IMPORTANT]
-> すべてのユーザーは、SMTP アカウントに Microsoft 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Microsoft 365 管理ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
+> すべてのユーザーは、SMTP アカウントに Microsoft 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Microsoft 365 Admin ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
 
 [![Microsoft 365 で送信者アクセス許可を付与されている SMTP アカウント](./media/o365.png)](./media/o365.png)
 
@@ -206,7 +205,7 @@ Office の更新プログラムをインストールできない場合、次の�
 
 1.  Internet Explorer および Excelを終了します。
 2.  Internet Explorer を起動し、クライアントにサインインします。
-3.  [Excel で開く] エクスペリエンスを使用して Excel アドインをテストします。 (たとえば、**フリート管理** &gt; **顧客** &gt; **顧客** &gt; **Microsoft Office で開く** &gt; **Excel で開く** &gt; **フリート管理の顧客**をクリックします。)
+3.  [Excel で開く] エクスペリエンスを使用して Excel アドインをテストします。 (たとえば、**フリート管理** &gt; **顧客** &gt; **顧客** &gt; **Microsoft Office で開く** &gt; **Excel で開く** &gt; **フリート管理の顧客** をクリックします。)
 
 ### <a name="fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in"></a>\[固定\] 問題: Excel アドインが正しく実行されず、サインインが有効にならない
 

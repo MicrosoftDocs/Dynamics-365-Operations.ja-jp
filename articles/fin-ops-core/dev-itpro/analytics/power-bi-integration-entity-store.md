@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 60b7f20924f9072eed33de4aaabf209cc7aecaf1
-ms.sourcegitcommit: c978cdccc62210d548746c120ad0a998124e5dfc
+ms.openlocfilehash: 605b8b410887d782abe8370abdfeacda00393ad8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3460282"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688305"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
@@ -60,15 +59,7 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 上記の理由のいずれかによってユーザーの状況がカバーされる場合、エンティティ店舗で集計測定を実行し、Power BI 統合に対して使用する必要があります。
 
 ## <a name="update-entity-store"></a>エンティティ店舗の更新
-クライアントで、**エンティティ格納**ページは**システム管理** &gt; **設定** &gt; **エンティティ格納**で表示できます。
-
-[![エンティティ格納ページ](./media/entity-store-form-1024x548.jpg)](./media/entity-store-form.jpg)
-
-このページには、集計の測定の一覧が含まれています。 これらの集計測定はエンティティ格納内で実施することができます。 開発者で、アプリケーション オブジェクト ツリー (AOT) で使用できる集計測定に関する知識があれば、なぜ一部の集計測定値がここに表示されないのか疑問に思われるかもしれません。 AX 2012 R3 (つまり、アップグレード プロセスの一部として移行された SQL Server Analysis Service プロジェクト) から移行した測定値を集計する場合は、開発者が用途プロパティを **StagedEntityStore** に変更するまで展開できません。 この動作は意図的です。 集計の測定に影響を与える一般的なアップグレードの問題のいくつかを取り込むことを目的とする、ベスト プラクティスの警告とエラーを有効にしました。 ほぼリアルタイムな (NCCI) モードを使用する場合は、ベスト プラクティスのエラーや警告を修正する必要があります。 2016 年 5 月の更新時点で、管理者は**エンティティ格納**ページで**更新**をクリックして定期更新をスケジュールする必要があります。 **更新** ボタンを使用すると、以下の図に示すように、1 回限りの更新 (つまり、デモ) または定期的な更新のスケジュールを実行することができます。
-
-[![ダイアログ ボックスの更新構成](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg)
-
-バッチ フレームワークはスケジューリングに使用されます。 したがって、更新ジョブは、バッチ フレームワークの機能を使用して監視、負荷分散、優先順位付けを行うことができます。 2016 年 5 月更新時点では、完全な更新プログラムのみがサポートされます。 ただし、まもなく差分更新が有効化されます。 最終的には、将来の更新プログラムにおいて、システムが実際の使用パターンに基づくエンティティ格納が更新されます。 したがって、管理者は **更新のコンフィギュレーション** ダイアログ ボックスを例外としてのみ使用する必要があります。
+エンティティ格納が自動化され、システムにより管理されます。 クライアントで、**エンティティ格納** ページは **システム管理** &gt; **設定** &gt; **エンティティ格納** で表示できます。 詳細については、[エンティティ格納の自動化更新](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh)を参照してください。
 
 ### <a name="connecting-to-the-entity-store-database"></a>エンティティ格納データベースに接続する
 トラブルシューティングや診断の場合、関連するサンドボックス環境から直接エンティティ格納データベースに接続することができます。  接続するには

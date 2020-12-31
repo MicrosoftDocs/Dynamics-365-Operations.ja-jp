@@ -10,24 +10,23 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 87e294ba26358d7336bf5b95ba1f8cef184775b4
-ms.sourcegitcommit: b6d255a53754ed97e17a5cf5eb23383e46584060
+ms.openlocfilehash: e7290bd1595a48555beb9c348fba7068b198a57d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "3796944"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688301"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 
 [!include[banner](../includes/banner.md)]
 
 
-Finance and Operations アプリは、埋め込み PDF ビューアーでのドキュメントのプレビュー時に使用するオプションをさらに拡張して提供します。 このトピックでは、**エクスポート**と**ネットワーク プリンター** オプションについて説明します。
+Finance and Operations アプリは、埋め込み PDF ビューアーでのドキュメントのプレビュー時に使用するオプションをさらに拡張して提供します。 このトピックでは、**エクスポート** と **ネットワーク プリンター** オプションについて説明します。
 
 ## <a name="overview"></a>概要
 ドキュメントの発行と配分を効率的に行うことは、多くの業務にとって重要なコンポーネントであるだけでなく、日々のビジネス機能にとっても重要です。 ドキュメントは、トランザクションの詳細を把握するために使用されます。また、2 当事者間の合意を表す場合もあります。 見積書から最終的な領収書と顧客明細書が発生する梱包明細プロセスで使用された売上請求書に至るまで、ビジネス ドキュメントはさまざまな形式で使用されます。 ドキュメントのレポート プレビュー オプションを使用すると、ドキュメントに対して適切なアクションをすばやく実行することができます。
@@ -37,10 +36,10 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 ドキュメントすべての相互作用のほぼ半数は、画面プレビューに関連しています。 使用可能なツールバー オプションは、サポートされているすべてのデバイスに対応しており、Finance and Operations アプリケーションによって表示されるドキュメントをエクスポートおよび印刷するためのシンプルで直観的なソリューションを提供します。
 
 ## <a name="file-export"></a>ファイルのエクスポート
-追加のユーザー オプションは、HTML ベースの**レポート ビューワー** コントロールで以前提供されていた機能に取って代わります。 これらのツールバー オプションを使用して、サポートされているさまざまな形式のファイルをエクスポートできます。 これには、Microsoft Word、Excel、HTML、CSV などが含まれます。 プリンター出力と一貫したレイアウトにするために、新しいモダン エクスペリエンスでは PDF ページネーション ルールを使用したドキュメントが表示されます。 詳細については、[レポートでのページネーション](https://docs.microsoft.com/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver15)を参照してください。
+追加のユーザー オプションは、HTML ベースの **レポート ビューワー** コントロールで以前提供されていた機能に取って代わります。 これらのツールバー オプションを使用して、サポートされているさまざまな形式のファイルをエクスポートできます。 これには、Microsoft Word、Excel、HTML、CSV などが含まれます。 プリンター出力と一貫したレイアウトにするために、新しいモダン エクスペリエンスでは PDF ページネーション ルールを使用したドキュメントが表示されます。 詳細については、[レポートでのページネーション](https://docs.microsoft.com/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver15)を参照してください。
 
 ## <a name="network-printing"></a>ネットワーク印刷
-**印刷**ボタンを使用してローカルに接続されたデバイスに印刷するか、またはツールバー オプションを使用してドキュメントをネットワーク プリンターに直接送信するかを選択できます。 ネットワーク印刷 オプションを使用すると、携帯電話などのインターネットに接続されたほとんどのデバイスからリモートでの作業中に、ネットワーク接続されたプリンターに対して印刷手順を開始できます。
+**印刷** ボタンを使用してローカルに接続されたデバイスに印刷するか、またはツールバー オプションを使用してドキュメントをネットワーク プリンターに直接送信するかを選択できます。 ネットワーク印刷 オプションを使用すると、携帯電話などのインターネットに接続されたほとんどのデバイスからリモートでの作業中に、ネットワーク接続されたプリンターに対して印刷手順を開始できます。
 
 ツールバー オプションを使用して、ネットワーク プリンターを選択し、印刷設定を確立します。
 
@@ -51,4 +50,4 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 - **レポート PDF ビューアーでのエクスポートを有効にする**
 - **レポート PDF ビューアーでのネットワーク印刷を有効にする**
 
-これらの機能を選択し、**今すぐ有効にする**を選択して、新しいユーザー オプションを利用します。 詳細については [機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+これらの機能を選択し、**今すぐ有効にする** を選択して、新しいユーザー オプションを利用します。 詳細については [機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。

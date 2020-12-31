@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b364a31c-52d3-45c5-b698-64c5242c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
-ms.openlocfilehash: a91c9dcdfa3b878ed42f38e315c4e6163aec860d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0c5e24bc5428f7e4e916e6fcfef895a3b20fae91
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811469"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693160"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-november-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 11 月) の新機能および変更された機能
 
@@ -41,7 +40,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ## <a name="bug-fixes"></a>バグ修正
 
-Finance and Operations 8.1.1 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://go.microsoft.com/fwlink/?linkid=2038101)を参照してください。
+Finance and Operations バージョン 8.1.1 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://go.microsoft.com/fwlink/?linkid=2038101) を参照してください。
 
 ## <a name="platform-update-21"></a>プラットフォーム update 21
 

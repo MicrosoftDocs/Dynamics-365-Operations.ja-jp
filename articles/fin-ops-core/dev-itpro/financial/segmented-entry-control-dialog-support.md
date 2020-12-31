@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 25571
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 542c18c5fe6c6fa29d3cc9a8a20bd71a15894735
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 91ab677c2e99e44ea2602e211ba7d3dd4a17e089
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080750"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688211"
 ---
 # <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
@@ -30,7 +29,7 @@ ms.locfileid: "3080750"
 
 セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。
 
-セグメント化されたエントリ コントロールをダイアログに追加するプロセスが変更されました。 これは、Dynamics AX 2012 の例です。
+セグメント化されたエントリ コントロールをダイアログに追加するプロセスが変更されました。 このコードは、Dynamics AX 2012 の例です。
 
 ```xpp
 DialogField dialogFeeLedgerDimension;
@@ -59,15 +58,14 @@ dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
 -   BudgetLedgerDimensionController
 -   BudgetPlanningLedgerDimensionController
 
-これは、セグメント化されたエントリについての簡単なダイアログ シナリオです。 さらに高度なシナリオは次のとおりです。
+このシナリオは、セグメント化されたエントリについての簡単なダイアログ シナリオです。 さらに高度なシナリオは次のとおりです。
 
 -   動的アカウントをバインドしています。
 -   会社の選択をサポートしています。
 -   勘定構造選択のサポート。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [セグメント化されたエントリ コントロールのデザイン時メタデータ](segmented-entry-control-metadata-specification.md)
 
@@ -76,6 +74,3 @@ dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
 [セグメント化されたエントリ コントロールに関する移行ガイダンス](segmented-entry-control-migration-guidance.md)
-
-
-

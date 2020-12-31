@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be8ed4d69af116792b8ec9c229562463931d1fac
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 402fce89b2531a967435f7daabd40c78cd761978
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819701"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685469"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
@@ -33,7 +32,7 @@ ms.locfileid: "3819701"
 ## <a name="enable-change-tracking-for-byod"></a>BYOD の変更追跡を有効する
 データ ストア (BYOD) に 1 つまたは複数のエンティティを発行するとき、変更追跡を有効にすることができます。
 
-1. **データ管理**ワークスペースで、**データベースへのエンティティのエクスポートのコンフィギュレーション**を選択します。
+1. **データ管理** ワークスペースで、**データベースへのエンティティのエクスポートのコンフィギュレーション** を選択します。
 2. データのエクスポート先のデータベースを選択し、**発行** を選択します。
 
     1 つまたは複数のエンティティをデータベースに公開することができます。 **公開のみ表示** を選択し、既に公開されているエンティティの一覧を表示します。
@@ -53,7 +52,7 @@ ms.locfileid: "3819701"
     > 変更がトリガーされた場合、変更はフィールド レベルではなくレコード全体で追跡されます。 エンティティ レコード全体がエクスポート先にエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。
 
 ## <a name="enable-change-tracking-for-non-byod-scenarios"></a>非 BYOD シナリオでの変更追跡の有効化
-非 BYOD シナリオでは、変更追跡は、エンティティを選択して **変更追跡**をクリックすることによって、データ管理のデータ エンティティ リスト ページから有効にできます。
+非 BYOD シナリオでは、変更追跡は、エンティティを選択して **変更追跡** をクリックすることによって、データ管理のデータ エンティティ リスト ページから有効にできます。
 
 ## <a name="custom-query-for-change-tracking"></a>変更追跡用のカスタム クエリ
 次の例は、エンティティに静的メソッドを追加する方法を示しています。 メソッドがクエリを返し、ルート ノードがエンティティと同様であることを確認する必要があります。 たとえば、顧客エンティティについては、ルート ノードは custTable で、その変更追跡クエリも custTable です。

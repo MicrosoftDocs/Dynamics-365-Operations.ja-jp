@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 147dc55160de7d3cc01cc077095d2eb71f4d7861
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: f7a9e12eae7065bb37fc0ddbb579a0437120c165
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978181"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693524"
 ---
 # <a name="view-and-export-field-descriptions"></a>フィールドの説明を表示およびエクスポートする
 
@@ -42,9 +41,9 @@ ms.locfileid: "3978181"
 フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 説明がない場合、フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。
 
 > [!NOTE]
-> Dynamics AX 7.0 (2016 年 2 月) では、**フィールド説明**ページでのみ、フィールドの説明を表示できます。
+> Dynamics AX 7.0 (2016 年 2 月) では、**フィールド説明** ページでのみ、フィールドの説明を表示できます。
 
-次の図は、**カウント中に品目をロック**フィールドの上に置くときに表示されるフィールドの説明を示しています。
+次の図は、**カウント中に品目をロック** フィールドの上に置くときに表示されるフィールドの説明を示しています。
 
 [![フィールドの説明の例](./media/field-description.png)](./media/field-description.png)
 
@@ -58,7 +57,7 @@ ms.locfileid: "3978181"
 
 - **名前を選択** フィールドに、ページの名前を入力します。 または、矢印をクリックしてすべてのページのリストを開き、一覧を参照またはフィルター処理します。
 
-ユーザー インターフェイス (UI) に表示されるページ名 (たとえば、**Customers**)、またはページを右クリックすると使用できる、**CustTable**などのページのコード名 (AOT 名) を使用することができます。
+ユーザー インターフェイス (UI) に表示されるページ名 (たとえば、**Customers**)、またはページを右クリックすると使用できる、**CustTable** などのページのコード名 (AOT 名) を使用することができます。
 
 ページの一覧にフィルターを適用するさまざまな方法については、この記事の後半の「ページを検索」を参照してください。
 
@@ -69,7 +68,7 @@ ms.locfileid: "3978181"
 ページの説明をエクスポートするには以下を実行します。
 
 1. **ページの選択** フィールドでページを選択します。
-2. 右上隅の **Microsoft Office で開く**ボタンをクリックしてから、**FieldDescriptionTmp** をクリックします。
+2. 右上隅の **Microsoft Office で開く** ボタンをクリックしてから、**FieldDescriptionTmp** をクリックします。
 
 ### <a name="searching-for-a-page"></a>ページを検索する
 
@@ -83,7 +82,7 @@ ms.locfileid: "3978181"
     - 複数の一致がある場合は、説明は表示されません。 ドロップダウン リストを開き、表示するページを選択する必要があります。
     - 入力した名前が別のページの名前の一部である場合は、ページの説明が表示されます。 ただし、ドロップダウン リストを開くと、その名前が含まれている追加のページが表示されます。
 
-例えば、**棚卸**を**ページの選択**フィールドに入力しても、説明は表示されません。 ドロップダウン リストを開くと、**Counting** という名前の 2 つのページが表示され、"Counting" という語を含む複数のページも表示されます。 AOT 名 **InventJournalCount** を持つページを選択すると、そのページのフィールドの説明が表示されます。 ただし、ドロップダウン リストを再度開くと、リスト内に AOT ページ名の一部として "InventJournalCount" を含むすべてのページが含まれます。
+例えば、**棚卸** を **ページの選択** フィールドに入力しても、説明は表示されません。 ドロップダウン リストを開くと、**Counting** という名前の 2 つのページが表示され、"Counting" という語を含む複数のページも表示されます。 AOT 名 **InventJournalCount** を持つページを選択すると、そのページのフィールドの説明が表示されます。 ただし、ドロップダウン リストを再度開くと、リスト内に AOT ページ名の一部として "InventJournalCount" を含むすべてのページが含まれます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

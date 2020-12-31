@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 80517f9fff4c9ed1143fc2a3e8711a8a63b14240
-ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
+ms.openlocfilehash: 2263289d95c5d9f2eb8c7f10bb593d5a0d90a058
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3638169"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687335"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -232,7 +231,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    **初期化**メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。
+    **初期化** メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。
 
 4. 静的コンストラクター メソッドを実装します。
 
@@ -594,7 +593,7 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## <a name="extending-filters-so-that-they-have-custom-fields-if-the-middleware-supports-this-extension"></a>カスタム フィールドを持つようにフィルターを拡張する (ミドルウェアがこの拡張機能をサポートしている場合)
 
-一部のミドルウェア システムはイベントのフィルター処理を許可します。 たとえば、Microsoft Azure Service Bus にはキーと値のペアを設定できるプロパティ バッグがあります。 これらのキーと値のペアは、Service Bus のキューやトピックからの読み込み時にイベントをフィルター処理するために使用できます。 また、Azure イベント グリッドには**件名**、**イベント タイプ**、および **ID** などのフィルター処理が可能なメッセージ プロパティがあります。 異なるシステムに対してこれら各種プロパティをサポートするために、ビジネス イベントのフレームワークは、*ペイロード コンテキスト*という名前の概念を使用します。 この概念を拡張して、さまざまなイベント システムがフィルター処理のために使用できるカスタム フィールドを含めることができます
+一部のミドルウェア システムはイベントのフィルター処理を許可します。 たとえば、Microsoft Azure Service Bus にはキーと値のペアを設定できるプロパティ バッグがあります。 これらのキーと値のペアは、Service Bus のキューやトピックからの読み込み時にイベントをフィルター処理するために使用できます。 また、Azure イベント グリッドには **件名**、**イベント タイプ**、および **ID** などのフィルター処理が可能なメッセージ プロパティがあります。 異なるシステムに対してこれら各種プロパティをサポートするために、ビジネス イベントのフレームワークは、*ペイロード コンテキスト* という名前の概念を使用します。 この概念を拡張して、さまざまなイベント システムがフィルター処理のために使用できるカスタム フィールドを含めることができます
 
 ### <a name="payload-context"></a>ペイロード コンテキスト
 
@@ -680,7 +679,7 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 
 ### <a name="step-2-add-a-new-endpoint-table-to-the-hierarchy"></a>ステップ 2: 新しいエンドポイント テーブルを階層に追加します
 
-すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承**プロパティを **Yes** に、**拡張**プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
+すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承** プロパティを **Yes** に、**拡張** プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
 
 ![テーブルは BusinessEventsEndpoint を拡張](../media/customendpoint2.png)
 
@@ -698,7 +697,7 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 {
 ```
 
-**初期化**メソッドを実装して、渡された **BusinessEventsEndpoint** バッファーのタイプを確認し、次の例が示すように、バッファーが適切な型である場合は初期化します。
+**初期化** メソッドを実装して、渡された **BusinessEventsEndpoint** バッファーのタイプを確認し、次の例が示すように、バッファーが適切な型である場合は初期化します。
 
 ```xpp
 if (!(_endpoint is CustomBusinessEventsEndpoint))
@@ -757,7 +756,7 @@ final public class CustomBusinessEventsEndpointConfiguration_Extension
 
 この機能は、Platform 更新 30 以降でのみ利用できます。
 
-ビジネス イベントのシリアル化には、FormJsonSerializer を使用してデータ契約内のオブジェクトをシリアル化します。 FormJsonSerializer は、**UtcDataTime** の値を ISO 8601 の日時形式にすることができます。 ビジネス イベンのペイロードを表示する時、人が判読可能な形式になります。 たとえば、**UtcDataTime**の値を、**/Date(1196865000000)/** の代わりに、**2007-12-05T14:30Z**の形式にすることができます。 「/Date(N)」形式では、N は 1970 年 1 月 1 日 (UTC+0) から経過したミリ秒数です。 ISO 形式は、JavaScript Object Notation (JSON) を解析するツールで、より頻繁に理解されます。
+ビジネス イベントのシリアル化には、FormJsonSerializer を使用してデータ契約内のオブジェクトをシリアル化します。 FormJsonSerializer は、**UtcDataTime** の値を ISO 8601 の日時形式にすることができます。 ビジネス イベンのペイロードを表示する時、人が判読可能な形式になります。 たとえば、**UtcDataTime** の値を、**/Date(1196865000000)/** の代わりに、**2007-12-05T14:30Z** の形式にすることができます。 「/Date(N)」形式では、N は 1970 年 1 月 1 日 (UTC+0) から経過したミリ秒数です。 ISO 形式は、JavaScript Object Notation (JSON) を解析するツールで、より頻繁に理解されます。
 
 人が判読可能な形式にするため、**DateTimeIso8601** という名前の拡張データ型 (EDT) をデータ契約の値の型として使用します。 または、**DateTimeIso8601** EDTから派生した EDT を使用します。
 

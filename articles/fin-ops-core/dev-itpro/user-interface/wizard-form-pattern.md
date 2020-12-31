@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ebfb6ea94f50f89b5a27f7cf5b038a333843049
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 6bed7bad0033906bdd455ed0990cb4adb0e07637
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329824"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684991"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
@@ -95,7 +94,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **WrkCtrBulkResReqEditWizard** 
 
-[![ウィザードの例](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+![ウィザードの例](./media/wizard2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

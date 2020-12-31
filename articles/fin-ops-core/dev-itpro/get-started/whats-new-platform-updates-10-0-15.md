@@ -3,31 +3,29 @@ title: Finance and Operations アプリ バージョン 10.0.15 のプラット�
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/09/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fd5b93dcc1ca92f886eb2c9de4afc0888a47a015
-ms.sourcegitcommit: 2fc3bc7c6cd6baefdcf318b5c45d9b40e174ce21
+ms.openlocfilehash: aa5ad25f50ac4f83ff31e1fa5e69c44d8f2e6f7c
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973368"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700995"
 ---
 # <a name="platform-updates-for-version-10015-of-finance-and-operations-apps-january-2021"></a>Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.5816 で、次のスケジュールで使用できます。
 
@@ -57,7 +55,7 @@ ms.locfileid: "3973368"
 
 [削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
+- *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。

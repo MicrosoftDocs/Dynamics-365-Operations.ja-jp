@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 12414
 ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91feabff07cc87bebd34ff6ee72c1f14b5f10b69
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: c851da3c933c97bf16c61f007334702583663d5e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329891"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686596"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 
@@ -42,7 +41,7 @@ ms.locfileid: "3329891"
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
 
-[Container]
+[コンテナー]
 
 文字列 | StaticText
 

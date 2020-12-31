@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3afdc0b815a45eb5f3b3db7cf9c30b36cfc46d3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 92cd7029f46ba4c570c06c3172d9cce323db5c72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248824"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685151"
 ---
 # <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 
@@ -32,9 +31,9 @@ ms.locfileid: "2248824"
 
 ## <a name="user-management"></a>ユーザー管理 
 
-テナント管理者は、LCS のホーム ページの**組織ユーザー**タイルでユーザーを表示および管理できます。 
+テナント管理者は、LCS のホーム ページの **組織ユーザー** タイルでユーザーを表示および管理できます。 
  
-管理者は、LCS の**組織ユーザー**ページで全ての組織ユーザーを表示および管理できます。
+管理者は、LCS の **組織ユーザー** ページで全ての組織ユーザーを表示および管理できます。
 
 ユーザーをエクスポートするには、管理者はフィルタリングを使用して特定のユーザーを検索し、そのユーザーを選択し、ユーザーの名前と電子メールアドレスをコピーします。 
 

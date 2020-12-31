@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 25ca380d0af7b88da56a1bc74654962c110a9ca2
-ms.sourcegitcommit: 7b0cec2e898ef8ee33baf72f18cdd9cba0e9399c
+ms.openlocfilehash: ead11c548405c374ab179fc5a05a01fbbc57c641
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3503007"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687864"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 
@@ -48,11 +47,11 @@ ms.locfileid: "3503007"
 1. アップグレード前のチェックリストをインストールします。 詳細については、[インストール](prepare-data-upgrade.md#installation) を参照してください。
 1. データ アップグレードの準備手順を実行します。 「ユーザー マッピングの設定」の手順はスキップできます。 この手順は、クラウドでホストされているアップグレードのみ関連しています。
 1. データベースのバックアップを作成します (MicrosoftDynamicsAX)。 詳細については、「[フル データベース バックアップの作成](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016)」を参照してください。
-1. LCS で、ページの右側にあるタイルを選択して、共有アセット ライブラリに移動します。 **資産タイプの選択**の下の**ダウンロード可能な VHD** を選択し、オンプレミス環境でアップグレードするバージョンに最も適合する VHD パッケージ全体をダウンロードします。 画像は大量のディスク容量を必要とします。 したがって、十分な空き領域のあるドライブでパッケージをダウンロードし、展開する必要があります。 
+1. LCS で、ページの右側にあるタイルを選択して、共有アセット ライブラリに移動します。 **資産タイプの選択** の下の **ダウンロード可能な VHD** を選択し、オンプレミス環境でアップグレードするバージョンに最も適合する VHD パッケージ全体をダウンロードします。 画像は大量のディスク容量を必要とします。 したがって、十分な空き領域のあるドライブでパッケージをダウンロードし、展開する必要があります。 
 1. ダウンロードしたファイルは、自己展開する zip ファイルです。 十分な空き容量が確保されている場所に VHD を展開してください。
 1. Hyper-V を使用して、仮想マシン (VM) を開始し、VHD を接続します。 (VM はジェネレーション 1 である必要があります。)
 1. VM に接続します。 資格情報の詳細については、[ローカルで仮想マシン (VM) を実行する](../dev-tools/access-instances.md#running-the-virtual-machine-locally) を参照してください。
-1. オンプレミスで予定されている 10.0.x のターゲット バージョンとダウンロードした VHD イメージによっては、 共有アセット ライブラリから必要なアプリケーション更新プログラムとプラットフォーム更新プログラムをダウンロードして適用することが必要となる場合があります。 **アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。 詳細な情報については、[コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
+1. オンプレミスで予定されている 10.0.x のターゲット バージョンとダウンロードした VHD イメージによっては、 共有アセット ライブラリから必要なアプリケーション更新プログラムとプラットフォーム更新プログラムをダウンロードして適用することが必要となる場合があります。 **アセット タイプの選択** で、**ソフトウェア配置可能パッケージ** を選択します。 詳細な情報については、[コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
 
     > [!IMPORTANT]
     > いずれの場合でも、最新の品質更新プログラムが VHD に適用されていることを確認し、データ アップグレードを実行するための最新の修正プログラムが含まれていることを確認してください。 
@@ -73,7 +72,7 @@ ms.locfileid: "3503007"
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを検証します。
 
-1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択**で**ソフトウェア配置可能パッケージ**を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
+1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
 1. ファイルをコピーして目的の場所に貼り付け (**c:\\D365FFOUpgrade\\** など)、展開します。
 1. 管理者としてコマンド プロンプト ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
 
@@ -88,15 +87,15 @@ ms.locfileid: "3503007"
     - カスタマイズがある場合、次の手順に従います。
 
         1. LCS では、共有アセット ライブラリに移動します。
-        1. **資産タイプの選択**の下で、**モデル**を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ**をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
         1. このファイルから新しいデータベースを作成するのには、SQL Server に対して復元バックアップ オプションを使用します。 (通常、このデータベースには **AXDB** という名前が付けられます。) 詳細については、[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017) を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS で新しい環境を設定し、バージョン 10.0.x で配置します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前に作成したデータベースの名前 (通常は **AXDB**) を指定する必要があります。
         1. 新たに作成した 10.0.x 環境と ISV および VAR モジュールにカスタマイズを適用します。 それ以外の場合、この環境が最初にデータベースと同期される時、カスタマイズ関連または拡張機能関連のデータが削除されます。
-        1. オンプレミスの Application Object Server (AOS)、ビジネス インテリジェンス (BI)、および Management Reporter (MR) サーバーをシャットダウンするか、または**無効化 (再起動)** を選択して、Azure Service Fabric ポータルからサービスを停止します。
+        1. オンプレミスの Application Object Server (AOS)、ビジネス インテリジェンス (BI)、および Management Reporter (MR) サーバーをシャットダウンするか、または **無効化 (再起動)** を選択して、Azure Service Fabric ポータルからサービスを停止します。
         1. 名前を変更するか、配置で使用したデモ データベース (通常は **AXDB**) を削除して、新しいデータベース (通常は **AXDBupgraded**) の名前を、デモ データベースが使用していた名前 (通常は **AXDB**) に変更します。
         1. 名前を変更したデータベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
-        1. オンプレミス AOS、BI、および MR サーバーを開始するか、または**有効化**を選択して Service Fabric ポータルからサービスを開始します。
+        1. オンプレミス AOS、BI、および MR サーバーを開始するか、または **有効化** を選択して Service Fabric ポータルからサービスを開始します。
 
             > [!NOTE]
             > AOS ノードの開始時にデータベースの同期プロセスがトリガーされますが、プロセスが完了するまで環境は使用できません。
@@ -120,10 +119,10 @@ ms.locfileid: "3503007"
     > - **\<DB-name\>**、**\<SqlServerName\>**、**\<User\>**、および **\<Password\>** を必要な値に置換します。
     > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2016)」を参照してください。
     > - SQL Server 証明書に署名した証明機関の証明書を、OneBox VHD の信頼された証明機関ストアに追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
-    > - 使用するデータベースのユーザーに、**sysadmin** サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくとも**すべての特権**があるかを確認します。 また、ユーザーに tempDB にアクセスするためのアクセス許可があることを確認します。 これらの条件を満たしていない場合、アップグレード プロセスのステップ 6 は失敗します。
+    > - 使用するデータベースのユーザーに、**sysadmin** サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくとも **すべての特権** があるかを確認します。 また、ユーザーに tempDB にアクセスするためのアクセス許可があることを確認します。 これらの条件を満たしていない場合、アップグレード プロセスのステップ 6 は失敗します。
     > - 証明機関の証明書を OneBox VHD にインストールする場合、そこに表示されるデータベースへ接続するには完全修飾ドメイン名 (FQDN) または IP アドレスを使用してください。 サーバーを指していないため、ドメイン名を使用してデータベースにアクセスできない場合は、ホスト ファイルを編集して FQDN が解決する必要がある FQDN と IP アドレスを追加します。
 
-1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択**で**ソフトウェア配置可能パッケージ**を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
+1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
 1. ファイルをコピーして目的の場所に貼り付け (**c:\\D365FFOUpgrade\\** など)、展開します。
 1. 管理者としてコマンド プロンプト ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
 
@@ -139,7 +138,7 @@ ms.locfileid: "3503007"
     - カスタマイズがある場合、次の手順に従います。
 
         1. LCS では、共有アセット ライブラリに移動します。
-        1. **資産タイプの選択**の下で、**モデル**を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ**をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
         1. SQL Server に対して復元バックアップ オプションを使用して、このファイルから新しいデータベース (通常は **AXDB**) を作成します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016)」を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前にコンフィギュレーションしたデータベースの名前 (通常は **AXDB**) を指定する必要があります。

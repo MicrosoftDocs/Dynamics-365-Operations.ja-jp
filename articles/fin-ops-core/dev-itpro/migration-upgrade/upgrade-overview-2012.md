@@ -1,7 +1,7 @@
 ---
 title: AX 2012 から Finance and Operations へのアップグレード
 description: このトピックでは、現在 Microsoft Dynamics AX 2012 を実行している顧客が、データとコードを Finance and Operations に移動するために使用できるプロセスについて説明します。
-author: tariqbell
+author: LaneSwenka
 manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3657ba02b0b50f35b67569a5df21afc135ec0777
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: aebd8994a14caae2ad40882e59431f6cd0d34980
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979714"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685439"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -64,7 +63,7 @@ LCS パートナー プロジェクトを取得する方法の詳細について
 これは、[30日間試用版](https://aka.ms/D365OperationTrials) と異なることに注意してください。 30 日間試用版は、アプリケーションの調査と評価に使用できる Finance and Operations の展開済みインスタンスを提供します。 ただし、分析活動には完全な LCS 経験とツールが必要です。
 
 ### <a name="select-the-upgrade-methodology"></a>アップグレード方法の選択
-新しい LCS プロジェクトで、プロジェクト方法を **AX 2012 を Dynamics 365 for Finance and Operations にアップグレードする**に設定します。 この方法は、アップグレード中の AX 2012 の顧客に対して特別に行われます。 3 つのフェーズについて詳細に説明し、プロセスに関するすべてのサポート ドキュメントへのリンクを提供します。
+新しい LCS プロジェクトで、プロジェクト方法を **AX 2012 を Dynamics 365 for Finance and Operations にアップグレードする** に設定します。 この方法は、アップグレード中の AX 2012 の顧客に対して特別に行われます。 3 つのフェーズについて詳細に説明し、プロセスに関するすべてのサポート ドキュメントへのリンクを提供します。
 
 ![アップグレード方法](./media/methodology.png)
  
@@ -161,7 +160,7 @@ LCS 実装プロジェクトに初めてサインインすると、**プロジ�
 ### <a name="perform-cutover-testing-and-create-a-cutover-plan"></a>切替テストの実行および切替計画の作成
 ここでは _切替_ という用語を使用して、新しいシステムを作動させる最終的なプロセスを表します。 このプロセスは、AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 
 
-テストの目標、または*切替モック*は、切替プロセスを練習することです。 こうして、稼働への実際の切替に携わるすべての人が円滑に作業を進められるようになります。
+テストの目標、または *切替モック* は、切替プロセスを練習することです。 こうして、稼働への実際の切替に携わるすべての人が円滑に作業を進められるようになります。
 
 次の 2 つの主要なワーク ストリームがあります。
 
@@ -191,7 +190,7 @@ Finance and Operations コード基準でコード変更を凍結することも
 ### <a name="go-live"></a>Go live
 標準またはプレミア承認テスト環境 (サンドボックス レベル 2 またはそれ以上) でアップグレード テストを正常に完了した場合、および正常にテスト切替を完了した後、実稼働環境をアップグレードして稼働するその時が来ました。 
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Dynamics AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 
+*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Dynamics AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 
 
 詳細については、[AX 2012 からのアップグレード - 切替プロセス (Go live)](2012-upgrade-cutover.md) を参照してください
 

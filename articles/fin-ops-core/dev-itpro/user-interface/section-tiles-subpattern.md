@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 29311
 ms.assetid: 196e714a-ecfc-42b3-a7f5-84e29fb271bb
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 545f18d55d53f08abe6ff6d5ffbbb64199a97bbd
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 49a9941f1a033aa10e5be2c70531d33ed6e90986
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329873"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688429"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 
@@ -70,7 +69,7 @@ ms.locfileid: "3329873"
     -   使用可能なサイズには縦 1 タイル × 横 2 タイル、2 × 2、2 × 3、2 × 4、2 × 6、4 × 4、4 × 6 および 4 × 8 が含まれます。
 
 ## <a name="examples"></a>例
-フォーム: **PurchOrderMaintainWorkspace** (**すべてのワークスペース** &gt; **発注書の準備** (**集計**セクションを参照してください)
+フォーム: **PurchOrderMaintainWorkspace** (**すべてのワークスペース** &gt; **発注書の準備** (**集計** セクションを参照してください)
 
 [![セクション タイルの例](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
 

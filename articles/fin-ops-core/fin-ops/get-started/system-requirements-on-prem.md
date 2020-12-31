@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: a4052e0b4d9d821654d410618119507a8133cbbc
-ms.sourcegitcommit: 821a54851a36ab735b3aca5114baff3b11aafe49
+ms.openlocfilehash: 591450ce309f88dd37e294c4a151e74092ea47a3
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3324532"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693685"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -47,7 +46,7 @@ Dynamics 365 Finance + Operations (オンプレミス) は、インターネッ�
 | 待機時間   | 250 ～ 300 ミリ秒 (ms) 未満     | 1 ミリ秒 (ローカル エリア ネットワーク \[LAN\] のみ) 未満。 AOS およびデータベースは、同一配置である必要があります。 |
 
 - Finance + Operations は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 この待機時間は、ブラウザー クライアントから Finance + Operations をホストするデータ センターまでの待機時間のことです。
-- 帯域幅の要件は、シナリオによって異なります。 一般的なシナリオでは、ブラウザーおよびサーバーの間に 1 秒あたり 50 KBps 以上の帯域幅が必要です。 ただし、ワークスペースや大がかりなカスタマイズを含む高度な伝送データ要件があるシナリオには、より高い帯域幅を勧めます。 特定の帯域幅の量は、用途によって異なります。
+- 帯域幅の要件は、シナリオによって異なります。 一般的なシナリオでは、ブラウザーおよびサーバーの間に 50 KBps 以上の帯域幅が必要です。 ただし、ワークスペースや大がかりなカスタマイズを含む高度な伝送データ要件があるシナリオには、より高い帯域幅を勧めます。 特定の帯域幅の量は、用途によって異なります。
 
 AOS および Microsoft SQL Server データベースが異なるデータセンターにある配置はサポートされていません。 AOS および SQL Server データベースは、同一配置である必要があります。
 
@@ -97,8 +96,8 @@ Finance + Operations は、ユーザー ワークステーションからイン�
 
 Finance + Operations をインストールする場合は、次のドメイン要件を検討してください:
 
-- Finance + Operations コンポーネントをホストする VM は、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) は、ネイティブ モードで構成する必要があります。
-- Finance + Operations コンポーネントを実行する VM は、相互にアクセスする必要があります。 このアクセスは、AD DS で設定されています。
+- Finance + Operations コンポーネントをホストする VM は、Active Directory ドメインに属している必要があります。 Active Directory Domain Services (AD DS) は、ネイティブ モードで構成する必要があります。
+- Finance + Operations コンポーネントを実行する VM は、相互にアクセスする必要があります。 このアクセスは、AD DS で構成されています。
 - ドメイン コントローラは、Microsoft Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。
 
 ### <a name="full-2-way-trust"></a>双方向の完全な信頼
@@ -137,7 +136,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 次の表では、この配置オプションを実行するために必要な役割ごとに求められるプロセッサの数およびランダムアクセス メモリ (RAM) の量を示します。 詳細については、[Service Fabric クラスターの計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) の Service Fabric スタンドアロン クラスターに推奨する最小要件を参照してください。
 
 > [!NOTE]
-> その他の Microsoft ソフトウェアが同じコンピューターにインストールされている場合、システムはそのソフトウェアのハードウェア要件も満たす必要があります。 他のサーバー アプリケーションが AOS と同じコンピューターにインストールされている場合、これらのサーバー アプリケーションを 1 ギガバイト (GB) の RAM に制限することをお勧めします。
+> その他の Microsoft ソフトウェアが同じコンピューターにインストールされている場合、システムはそのソフトウェアのハードウェア要件も満たす必要があります。 他のサーバー アプリケーションが AOS と同じコンピューターにインストールされている場合、これらのサーバー アプリケーションを RAM の 1 ギガバイト (GB) に制限することをお勧めします。
 
 **ロールおよびトポロジ タイプのサイズ変更**
 
@@ -235,7 +234,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
     - オンライン トランザクション 処理 (OLTP) スループットに対して最適化された SAN
     - 高パフォーマンス直接接続ストレージ (DAS)
 
-- **SQL サーバーとデータの管理 IOPS** – データ管理と SQL Server の両方のストレージには、少なくとも 1 秒あたり 2,000 IOPS が必要です。 生産 IOPS はさまざまな要因に依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。
+- **SQL サーバーとデータの管理 IOPS** – データ管理と SQL Server の両方のストレージには、少なくとも 2,000 IOPS が必要です。 生産 IOPS はさまざまな要因に依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。
 - **VM IOPS** – 各 VM は少なくともt 100 書き込み IOPS が必要です。
 
 ## <a name="virtual-host-requirements"></a>仮想ホストの要件
@@ -292,7 +291,7 @@ Finance + Operations Web アプリケーションは、HTML 5.0 に準拠して�
 
 ## <a name="software-requirements-for-active-directory-federation-services"></a>Active Directory フェデレーション サービスのソフトウェア要件
 
-Windows Server 2016 の Active Directory Federation Services (AD FS) は必要です。
+Windows Server 2016 の Active Directory フェデレーション サービス (AD FS) は必要です。
 
 ドメイン コントローラは、Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。 ドメイン機能レベルの詳細については、次のページを参照してください。
 

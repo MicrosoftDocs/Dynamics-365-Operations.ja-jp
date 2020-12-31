@@ -1,7 +1,7 @@
 ---
 title: モバイル ワークスペースのローカライズ
 description: このトピックでは、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: fab93327641e8634d846a71cc15a87f6e779a19c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 580d2868738db28dc0933e390747b4b8e296b100
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183104"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687829"
 ---
 # <a name="localize-mobile-workspaces"></a>モバイル ワークスペースのローカライズ
 
@@ -37,7 +36,7 @@ ms.locfileid: "2183104"
 
  ![レンタル リンクのテキストがローカライズされていないお客様の詳細ワークスペース](media/workspace-api/ConfigObjectsPage.png)
 
-アプリケーションのビジネス ロジックには、次の図に示すように、**addLink** メソッドの呼び出しが含まれています。 この **addLink** メソッドは、現在のお客様の **レンタル** ページへリンクを追加します。 この場合、リンクのラベルは**レンタル**です。 ただし、リンクのローカライズされたラベルがないため、リンクは常に**レンタル**として表示されます。
+アプリケーションのビジネス ロジックには、次の図に示すように、**addLink** メソッドの呼び出しが含まれています。 この **addLink** メソッドは、現在のお客様の **レンタル** ページへリンクを追加します。 この場合、リンクのラベルは **レンタル** です。 ただし、リンクのローカライズされたラベルがないため、リンクは常に **レンタル** として表示されます。
 
 ![metadataService.addLink への呼び出し](media/workspace-api/ConfigObjectsBusinessLogicOriginal.png)
 
@@ -64,7 +63,7 @@ ms.locfileid: "2183104"
     ![config オブジェクトの呼び出しによる metadataService.addLink](media/workspace-api/ConfigObjectsBusinessLogicFinal.png)
 
 ## <a name="use-a-workspace-class-to-update-the-workspace-title-and-description"></a>ワークスペース クラスを使用して、ワークスペースのタイトルと説明を更新する
-ワークスペース クラスは、ワークスペースのタイトルと説明のローカライズされた文字列を提供するために使用することができます。 タイトルと説明をローカライズしていない場合、それらを実装した言語がフィールドの言語になります。 この例では、**MyWorkspace** がタイトルで、**サンプル ワークスペース**が説明となっているワークスペースをローカライズします。
+ワークスペース クラスは、ワークスペースのタイトルと説明のローカライズされた文字列を提供するために使用することができます。 タイトルと説明をローカライズしていない場合、それらを実装した言語がフィールドの言語になります。 この例では、**MyWorkspace** がタイトルで、**サンプル ワークスペース** が説明となっているワークスペースをローカライズします。
 
 ![ワークスペースのリスト](media/workspace-api/LocalizeWorkspaceTitle.png) 
 

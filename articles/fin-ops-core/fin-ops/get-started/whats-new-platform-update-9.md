@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 052e67af7b3827883b672d4999b75eae0a668e7b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e05f5d9d5b44c02b56c211a34cd0649b2e23cf3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812449"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694923"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 
@@ -36,7 +35,7 @@ ms.locfileid: "2812449"
 
 バッチ ジョブの履歴をクリーンアップする機能が追加されました (Dynamics AX 2012 で使用できた機能)。 この機能を使用すると、ボタンをクリックしてバッチジョブ履歴のすべてまたは一部を削除できます。  特定のフォームを使用することで、バッチ ジョブの名前、会社、状態、または完了時間などの異なる基準で、バッチ ジョブ履歴をフィルターし、フィルター処理済みのサブセットを削除することができます。 履歴を整理して関連性を維持することに加えて、この機能は長期間監視されていない場合に、履歴テーブル内に大量のエントリを持つ負のパフォーマンスを排除することによりパフォーマンスも向上させます。 プラットフォーム更新プログラム 9 より前に、職務ごとに履歴を削除する必要があります。そのためには希望するすべての職務をカバーする余分な時間が必須です。
 
-**システム管理**ワークスペース - **バッチ ジョブ履歴クリーンアップ**に 2 つの新しいフォームが追加されました (通常およびカスタム バージョン)。
+**システム管理** ワークスペース - **バッチ ジョブ履歴クリーンアップ** に 2 つの新しいフォームが追加されました (通常およびカスタム バージョン)。
 
 バッチ ジョブ履歴クリーンアップの通常バージョンを使用すると、指定した時間枠 (日) より古いすべての履歴エントリをすばやく消去できます。 \<Today\> - \<History limit\> よりも前に作成されたエントリは、**BatchJobHistory** テーブルから削除され、関連するレコード (**BatchHistory** および **BatchConstraintsHistory**) のリンク テーブルからも削除されます。 このフォームでは、フィルター処理を実行する必要がないため、パフォーマンスの最適化が向上しました。
 

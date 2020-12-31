@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 21449b8684256c5ddf6d710175b3724c300da428
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 824d6bdf53cacbd81004a009e4019b5ab7e5cff0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181407"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686726"
 ---
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>コンテンツを XML のままで追加してレポートを生成する
 
 [!include[banner](../includes/banner.md)]
 
-XML 形式で送信ドキュメントを生成する電子申告 (ER) 形式をデザインするための、新しい**未加工の XML** 形式要素を使用できます。 場合によっては、次の 1 つ以上の理由により未加工の XML データをこれらのレポートに追加します。
+XML 形式で送信ドキュメントを生成する電子申告 (ER) 形式をデザインするための、新しい **未加工の XML** 形式要素を使用できます。 場合によっては、次の 1 つ以上の理由により未加工の XML データをこれらのレポートに追加します。
 
 - XML 構造がランタイム式を実行することによって自動生成されるため、レポートの元のデザインおよび継続的なメンテナンスに対する未加工の XML を使用する方がより便利です。 したがって、デザイン時に複数のバインディングを複数の形式要素に対して特定する必要はありません。 使用しているデータ ソースに、レポートの生成時に XML 要素を構成するのに使用される情報が含まれる場合もあります。
 - 以前に受信されシステムに格納された XML コンテンツでレポートを入力するのに使用できる他のメソッドはありません。 たとえば、生成される XML 応答には、以前に送信された XML 要求のコンテンツが含まれる必要があります。

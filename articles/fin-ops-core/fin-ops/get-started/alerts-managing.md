@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: a06ca45de3a7bb6d65a8ed5466cd6591d4e0820f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e34685731a09131d2ab49a0e04479c9c20f4da8
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180809"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693801"
 ---
 # <a name="batch-processing-of-alerts"></a>警告のバッチ処理
 
@@ -51,12 +50,12 @@ ms.locfileid: "2180809"
 
 変更ベース イベントのバッチ処理の頻度を低く設定すると、バッチが処理される前に警告ルールの条件に該当するデータが変更される場合があります。 したがって、警告を受信できなくなる場合があります。
 
-たとえば、イベントが**顧客連絡先の変更**で条件が**顧客 = BB** を満たす場合に、警告をトリガーするように警告ルールを設定したとします。 つまり、顧客の連絡先が顧客 BB のために変更されると、イベントが記録されます。 ただし、バッチ処理システムは、バッチ処理の頻度がデータ入力より低くなるように設定されます。 イベント処理前に顧客名が **BB** から **AA** に変更される場合、データベース内のデータはルール **顧客 = BB** の条件に一致しなくなります。 したがって、イベントが最終的に処理されても、警告が生成されません。
+たとえば、イベントが **顧客連絡先の変更** で条件が **顧客 = BB** を満たす場合に、警告をトリガーするように警告ルールを設定したとします。 つまり、顧客の連絡先が顧客 BB のために変更されると、イベントが記録されます。 ただし、バッチ処理システムは、バッチ処理の頻度がデータ入力より低くなるように設定されます。 イベント処理前に顧客名が **BB** から **AA** に変更される場合、データベース内のデータはルール **顧客 = BB** の条件に一致しなくなります。 したがって、イベントが最終的に処理されても、警告が生成されません。
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>変更ベースの警告処理を設定する
 
-1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **変更に基づく警告**に移動します。
-2. **変更に基づく警告**ダイアログ ボックスで、適切な情報を入力します。
+1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **変更に基づく警告** に移動します。
+2. **変更に基づく警告** ダイアログ ボックスで、適切な情報を入力します。
 
 ## <a name="batch-processing-for-due-date-events"></a>期日イベントに関するバッチ処理
 
@@ -81,5 +80,5 @@ ms.locfileid: "2180809"
 
 ### <a name="set-up-processing-for-due-date-alerts"></a>期日の警告処理を設定する
 
-1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **期日の警告**に移動します。
-2. **期日の警告**ダイアログ ボックスで、適切な情報を入力します。
+1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **期日の警告** に移動します。
+2. **期日の警告** ダイアログ ボックスで、適切な情報を入力します。

@@ -3,25 +3,24 @@ title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: bb59a4f540b2c4a29e505867af8fef7f02c539da
-ms.sourcegitcommit: 6bf8602333191e5161ba3a9ceecf160c85ff7e79
+ms.openlocfilehash: 350897f8f2e7a4953eaf84bbc3cd8fc6290ab42d
+ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3484331"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4712676"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -34,6 +33,7 @@ ms.locfileid: "3484331"
 拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
+
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
 - Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
 - Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
@@ -41,17 +41,18 @@ ms.locfileid: "3484331"
 
 ## <a name="ext-schema"></a>Ext スキーマ
 
-Finance と Commerce では、拡張機能をサポートするため、**ext スキーマ** と呼ばれる新たなスキーマを導入しました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Finance と Commerce のいずれでも、CRT、AX や DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありません、というエラーが表示されます。 拡張機能には、展開の過程で CRT、AX、や DBO のスキーマ定義を読み取るアクセス許可がありません。 CRT、AX、や DBO のスキーマ定義を読み取る拡張スクリプトにクエリを含めないでください 。 
+Finance と Commerce では、拡張機能をサポートするため、**ext スキーマ** と呼ばれる新たなスキーマを導入しました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Finance と Commerce のいずれでも、CRT、AX や DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ** で行う必要があります。 CRT または AX スキーマの何かを変更すると、Lifecycle Services (LCS) での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありません、というエラーが表示されます。 拡張機能には、展開の過程で CRT、AX、や DBO のスキーマ定義を読み取るアクセス許可がありません。 CRT、AX、や DBO のスキーマ定義を読み取る拡張スクリプトにクエリを含めないでください 。
 
 > [!NOTE]
 > いずれかのチャネル DB フィールドの長さを伸ばす場合は、LCS で拡張機能の要求を作成し、EDT の伸長または小数点以下の精度を高める必要があります。 変更はチャネル DB に自動的にプッシュされません。また、拡張子には、チャネル DB - CRT、AX、または DBO スキーマでなにかを変更または修正するための許可は付与されません。 CRT または AX スキーマの何かを変更すると、LCS での展開が失敗します。
 
 ## <a name="best-practices-for-channel-db-extensions"></a>チャネル DB 拡張機能のためのベスト プラクティス
 
-- CRT、AX、または DBO スキーマのいずれも変更しないでください。 すべての拡張シナリオで **ext スキーマ**を使用します。
+- CRT、AX、または DBO スキーマのいずれも変更しないでください。 すべての拡張シナリオで **ext スキーマ** を使用します。
 - 使用可能な場合は、CRT、AX、または DBO オブジェクトからチャネル データベース コンポーネントに直接アクセスするのではなく、Commerce Runtime データ サービスを介してデータを取得することをお勧めします。
 
 ### <a name="dont-do-this"></a>このようにしない
+
 以下はユーザーがしてはいけないことの例です。 代わりに、主キーの値を取得するために CRT データ サービスを使用してから、拡張テーブルに挿入するために主キーの値を使用する必要があります。
 
 ```sql
@@ -89,14 +90,13 @@ IF @i_Error <> 0
 END;
 ```
 
-
 ### <a name="dont-do-this"></a>このようにしない
-- CRT、AX、またはDBO スキーマに新しい拡張テーブル、ビュー、または手順を作成しないでください。 すべての拡張コンポーネントは、ext スキーマで実行する必要があります。 
+
+- CRT、AX、またはDBO スキーマに新しい拡張テーブル、ビュー、または手順を作成しないでください。 すべての拡張コンポーネントは、ext スキーマで実行する必要があります。
 - ext スキーマでは、CRT、AX、またはDBO スキーマのデータ型を使用しないでください。 ext スキーマのカスタム タイプを作成して使用してください。
 - ビュー、手順、関数、またはデータベース コンポーネントを修正しないでください。
 - 可能な場合は、拡張機能からのデータベース コンポーネントへのアクセスや呼び出しは回避してください。 代わりに、CRT データ サービスを使用してデータを取得します。 データ サービスを使用する利点は、今後データベース スキーマに重大な変更が行われた場合でも、SLA まで継続的にサポートされることです。 ただし、必要なデータを公開しない CRT データ サービスのインスタンスもあります。 このような場合、チャネル データベース コンポーネントに結合するビューを作成することによって、このデータにアクセスすることができます。 ビューの作成は、CRT 拡張機能を使用してメモリ内で行うのではなく、データベース レベルで必要な形式のデータを構築する強力なツールになります。
 - DBO スキーマ オブジェクトは Commerce scale unit の展開では使用できないため、拡張スクリプトから dbo.objects にはアクセスしないでください。
-
 
 ```sql
 CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
@@ -114,38 +114,40 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## <a name="adding-extensions"></a>拡張機能の追加
 
-1. すべての拡張テーブルの列には、NOT NULL の制約を適用する必要があります。 更新の過程で、列の値が空白で更新され、NULL の値が正しく処理されない場合は、 CRT でランタイムの例外処理が発生する可能性があります。
-2. すべての拡張機能テーブルは **UserRole** および **DeployExtensibilityRole** にアクセス許可を付与する必要があります。
+1. 拡張テーブルを作成している場合にデータを HQ に同期するには、テーブルの主キーおよびクラスター化されたインデックスが拡張テーブルの HQ テーブルと同じである必要があります。そうでない場合 CDX 同期は失敗します。 拡張テーブルから HQ にデータをプルする必要がある場合は、拡張テーブルに REPLICATIONCOUNTERFROMORIGIN ID 列 ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) が含まれている必要があります。
+
+2. すべての拡張テーブルの列には、NOT NULL の制約を適用する必要があります。 更新の過程で、列の値が空白で更新され、NULL の値が正しく処理されない場合は、 CRT でランタイムの例外処理が発生する可能性があります。
+
+3. すべての拡張機能テーブルは **UserRole** および **DeployExtensibilityRole** にアクセス許可を付与する必要があります。
 
     ```sql
     --Tables:
 
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [UsersRole]
     GO
-    
+
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [DeployExtensibilityRole]
     GO
-    
-    --Stored procedures: 
-    
+
+    --Stored procedures:
+
     GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [UsersRole];
     GO
-    
+
     GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [PublishersRole];
     GO
-    
+
     GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [DeployExtensibilityRole];
     GO
     ```
 
-3. テーブルが HQ からデータを送受信する場合は、 **DataSyncUsersRole** のアクセス許可を付与します。
+4. テーブルが HQ からデータを送受信する場合は、 **DataSyncUsersRole** のアクセス許可を付与します。
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-4. 拡張テーブルを作成し、HQ にデータを同期させる場合は、拡張テーブルに親テーブルの主となる列を含めます。
 5. たとえば、 **ContosoRetailTransactionTable** などのように、常にテーブルに接頭語を付けると、他のカスタマイズとの競合を回避できます。
 
 ## <a name="attributes"></a>属性
@@ -153,16 +155,18 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 顧客、顧客の注文、現金売りトランザクション、およびコール センター注文の属性をサポートするために、HQ の属性フレームワークを拡張しました。
 
 ### <a name="customer-attributes"></a>顧客属性
+
 新しい顧客属性フレームワークでは、構成を使用して、POS または HQ 内の顧客追加/編集画面または顧客詳細画面に新しいフィールドを追加することができます。 コマース パラメーターで顧客属性グループを構成した後、POS や HQ はコードの変更やカスタマイズを行わずに新しい属性を自動的に表示します。 画面レイアウト設計者は、取引画面 (**顧客** パネル) に顧客属性を表示するようにも設定されます。
 
 ### <a name="order-attributes"></a>注文属性
+
 属性フレームワークは、現金売りトランザクション、顧客の注文、およびコール センター注文の属性をサポートするように拡張されました。 HQ または CRT で値を直接編集して設定することができます。 これらすべてはデータベースを変更せずにコンフィギュレーションを介して実行することができます。 (基本的な CRUD 操作は必要ではなく、主要なビジネス ロジックの属性値をカスタマイズすることができます。) 以前は、これを行うには、HQ とチャンネル DB に新しいテーブルを作成し、CRT を変更する必要がありました。 現在は、すべての属性の作成をコンフィギュレーションを通じて実行できるようになりました。
 
 ## <a name="adding-a-new-table"></a>新しいテーブルの追加
 
-このシナリオでは、新しいテーブルを作成し、チャネル DB に追加する方法について説明します。 すべての拡張コードは **ext スキーマ**へアクセスすることができます。
+このシナリオでは、新しいテーブルを作成し、チャネル DB に追加する方法について説明します。 すべての拡張コードは **ext スキーマ** へアクセスすることができます。
 
-- SQL Server Management Studio デザイナーを使用するか、SQL スクリプトを使用して、**ext スキーマ**のチャネル データベースに新しいテーブルを作成します。 以下は、SQL スクリプトの例です。
+- SQL Server Management Studio デザイナーを使用するか、SQL スクリプトを使用して、**ext スキーマ** のチャネル データベースに新しいテーブルを作成します。 以下は、SQL スクリプトの例です。
 
     ```sql
     -- Create the extension table to store the custom fields.
@@ -175,6 +179,8 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
     [REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,
+    [ROWVERSION] [timestamp] NOT NULL,
+    [DATAAREAID] [nvarchar](4) NOT NULL,
     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
     (
         [RECID] ASC
@@ -187,7 +193,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
 
 > [!NOTE]
-> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the `REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL` (required if the table data is per company). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
@@ -208,7 +214,7 @@ GRANT INSERT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
 GRANT DELETE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
-GRANT UPDATE ON [ext\].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GRANT UPDATE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
 GRANT SELECT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
@@ -216,7 +222,7 @@ GO
 
 ## <a name="adding-new-views-stored-procedure-functions-and-defined-types"></a>新しいビュー、ストアド プロシージャ、関数、定義済タイプの追加
 
-すべての新しいストアド プロシージャ、ビューまたは機能は **ext スキーマ**に作成する必要があります。 手順、ビューまたは機能から、データベース コンポーネントをアクセスするまたは呼びだすことはやめてください。
+すべての新しいストアド プロシージャ、ビューまたは機能は **ext スキーマ** に作成する必要があります。 手順、ビューまたは機能から、データベース コンポーネントをアクセスするまたは呼びだすことはやめてください。
 
 ## <a name="deployment-checks"></a>配置のチェック
 
@@ -242,7 +248,7 @@ GO
 
 拡張スクリプトは、ファイル名に基づくアルファベット順に実行されるので、並べ替えたときに正しい実行順序が使用される名前付け規則を確立する必要があります。
 
-1 つの例は、次のパターンを持つファイルの名前付けです: "<ISO 8601 date>_<descriptio>.sql"。ここで **<ISO 8601 date>** は ISO 8601 形式の日付で、**<description>** はスクリプトの目的を識別するための説明のテキストです。
+1 つの例は、次のパターンを持つファイルの名前付けです: `<ISO 8601 date>_<descriptio>.sql`。ここで `<ISO 8601 date>` は ISO 8601 形式の日付で `<description>` はスクリプトの目的を識別するための説明のテキストです。
 たとえば、*"20180501_CustomerDetails.sql"* と *"20181102_CustomerDetailsIndex.sql"* などです。
 前者は、「顧客の詳細」機能に関連する 2018 年 5 月 1 日に作成された拡張スクリプトを表しており、後者は、2018 年 11 月 2 日に作成された以前の機能に関連するインデックスに関連付けられている拡張スクリプトです。
 

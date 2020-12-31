@@ -11,17 +11,16 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e5a357d4ec4194606dd23fe2d501960196927c14
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: db5b9b4f0f0a64984b9fb721ba759f2ac48bfb76
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3697957"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693164"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件
 

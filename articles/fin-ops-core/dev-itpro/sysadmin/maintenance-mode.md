@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a92d50811cf7bc7a88d1aae4fcd5473023576af
-ms.sourcegitcommit: b942014958b7f60e15fc7a78c26aed5e175eadde
+ms.openlocfilehash: 74e8bf9ef7420b01e8a3c00bc02bdf4e1d677358
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3166395"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686311"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -43,7 +42,7 @@ ms.locfileid: "3166395"
 7. これが完了すると、環境が **配置中** 状態に戻ります。 すべてのユーザーが環境にログオンできるようになりました。
 8. メンテナンス モードが有効または無効かを環境の履歴ページで確認することができます。 環境履歴ページに移動するには環境の詳細ページで **履歴** および **環境の変更** を選択します。
 
-サンドボックスおよび運用環境のメンテナンス モードをオン/オフにする操作と、サービス操作にとても似ています。 メンテナンス モードのオンまたはオフに失敗した場合は、**再開**、**ロールバック**、および **中止** などのオプションが表示されます。 操作に失敗した理由をトラブルシューティングするために**ログをダウンロード**するオプションもあります。
+サンドボックスおよび運用環境のメンテナンス モードをオン/オフにする操作と、サービス操作にとても似ています。 メンテナンス モードのオンまたはオフに失敗した場合は、**再開**、**ロールバック**、および **中止** などのオプションが表示されます。 操作に失敗した理由をトラブルシューティングするために **ログをダウンロード** するオプションもあります。
 
 ## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-hosted-in-a-microsoft-subscription"></a>Microsoft サブスクリプションで動作している開発テスト環境またはデモ環境にてメンテナンス モードをオンにする/オフにする。
 1. 開発者のマシンに RDP の接続を確立します。
@@ -88,7 +87,7 @@ Application Object Server (AOS) のインスタンスを再起動すると、シ
 
 [![メンテナンス モード以外のライセンス コンフィギュレーション ページ](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
 
-メンテナンス モードになっている際にシステムへアクセスしようとすると、システム管理者または**メンテナンス モード ユーザー** ロールを持つユーザーではない人が、Finance and Operations にアクセスしようとすると、エラー メッセージが表示されることがあります。 
+メンテナンス モードになっている際にシステムへアクセスしようとすると、システム管理者または **メンテナンス モード ユーザー** ロールを持つユーザーではない人が、Finance and Operations にアクセスしようとすると、エラー メッセージが表示されることがあります。 
 
 次のコマンドを実行して、メンテナンス モードをオフにすることができます。
 

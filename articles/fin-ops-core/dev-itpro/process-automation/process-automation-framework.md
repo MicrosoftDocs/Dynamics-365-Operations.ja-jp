@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e66744ec041a6a5abd9f11e0a70d7eae74e7d69
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 44f85c7805f4cc36067e184ff24de14dea7941b4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885343"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685415"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 
@@ -48,8 +47,8 @@ Microsoft は今後の機能追加を計画します。 プロセス自動化フ
 |--------------------|------------|
 | 呼び出し             | 呼び出しは、毎分実施される重要なシステムのバッチ プロセスで、プロセス自動化フレームワークのさまざまなサブシステムを起動します。 スケジュールを参照して、実行する準備ができているプロセスを判別し、フレームワークのランタイム側を起動して、プロセスが確実に実行されるようにします。 |
 | スケジュール済プロセス  | スケジュール済プロセスとは、ユーザーによってユーザー インターフェイス (UI) でスケジュールされたプロセスのことです。 これらのプロセスの発生は、カレンダー表示できます。 |
-| バックグラウンド プロセス | バックグラウンド プロセスは、*ポーリング プロセス*とも呼ばれます。 これはユーザーの入力を必要とせずに頻繁に実行されるプロセスで、バックグラウンド プロセスを実行します。 一般会計への補助元帳の転送はひとつの例です。 |
-| 種類               | このトピックおよび関連トピックでは、[タイプ登録](type-registration.md)で説明したように、*タイプ*という用語は **ProcessScheduleType** を指します。 |
+| バックグラウンド プロセス | バックグラウンド プロセスは、*ポーリング プロセス* とも呼ばれます。 これはユーザーの入力を必要とせずに頻繁に実行されるプロセスで、バックグラウンド プロセスを実行します。 一般会計への補助元帳の転送はひとつの例です。 |
+| 種類               | このトピックおよび関連トピックでは、[タイプ登録](type-registration.md)で説明したように、*タイプ* という用語は **ProcessScheduleType** を指します。 |
 | シリーズ             | 登録済タイプのすべてのプロセスには、シリーズが必要です。 スケジュール済プロセスのシリーズは、ユーザーによって UI の中に作成されます。 バックグラウンド プロセスのためのシリーズは、シリーズの登録を通じて作成されます。 詳細については、[シリーズ登録](series-registration.md)を参照してください。 |
 | 日時      | すべてのフレームワークの日付は協定世界時 (UTC) で保存されますが、ユーザーの優先タイムゾーンに表示されます。 |
 

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: de295ac7bb328a91cb161f938083c766a033d07a
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: bf64fb54435dbf0b8bc0c5e227157abc028b635b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554282"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685401"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 

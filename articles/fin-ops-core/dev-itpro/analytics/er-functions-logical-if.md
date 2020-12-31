@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87e252a2751beeecb51e512cae38b271c1456fae
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: b8733022b44f3460e34a610140fd6d584ab990c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744698"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687005"
 ---
 # <a name="if-er-function"></a>IF ER 関数
 
@@ -61,7 +60,7 @@ IF (condition, first value, second value) as any of the supported data types
 
 `first value` および `second value` 引数 は、同じデータ型を使用して指定する必要があります。 構成された値のデータ型が一致しない場合は、デザイン時に例外がスローされます。
 
-最初の結果値と 2 番目の結果値が*コンテナー (レコード)* または*レコード リスト* データ型の値である場合、結果には両方の値に存在するフィールドのみが含まれます。
+最初の結果値と 2 番目の結果値が *コンテナー (レコード)* または *レコード リスト* データ型の値である場合、結果には両方の値に存在するフィールドのみが含まれます。
 
 ## <a name="example"></a>例
 

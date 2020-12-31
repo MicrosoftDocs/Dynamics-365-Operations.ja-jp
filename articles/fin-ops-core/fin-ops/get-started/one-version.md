@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f4f62278546bf455788fa97762d717106587ac1f
-ms.sourcegitcommit: 47d77535aca36b9f98801cb00e5ad2ae1386b3b9
+ms.openlocfilehash: 0f6dad2b7cfbfe98723368062bcfe6524be7528d
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686607"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694953"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 

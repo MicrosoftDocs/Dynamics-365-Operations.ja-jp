@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 17551
 ms.assetid: 1681290d-93f0-489d-9746-7793b2ffe690
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 48dc3922dae3a390b0f804c1e11df7794261a372
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 48d175c8b1176bb9cfae1b026571d17ff8e3d38b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983745"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685009"
 ---
 # <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
 
@@ -39,8 +38,8 @@ Microsoft SQL Server の使用経験がある開発者またはデータベー�
 
 ## <a name="install-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) のインストール
 1.  「[Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkId=228148)」のダウンロード可能なツール セクションからツールを取得し、ローカル フォルダーに展開します。
-2.  **AX2012TestDataTransferTool.msi** を右クリックして**管理者として実行** をクリックします。
-3.  **設定** **ウィザード**で、ライセンス条項に同意してからツールのバイナリおよびファイルをインストールする場所を選択します。 既定では、ツールは %Program Files%/Microsoft Dynamics AX 2012 のテスト データ転送ツール (ベータ) にインストールされています。
+2.  **AX2012TestDataTransferTool.msi** を右クリックして **管理者として実行** をクリックします。
+3.  **設定** **ウィザード** で、ライセンス条項に同意してからツールのバイナリおよびファイルをインストールする場所を選択します。 既定では、ツールは %Program Files%/Microsoft Dynamics AX 2012 のテスト データ転送ツール (ベータ) にインストールされています。
 
 
 

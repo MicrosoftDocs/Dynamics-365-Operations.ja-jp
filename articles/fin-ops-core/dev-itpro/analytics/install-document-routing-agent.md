@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 035829f70f4a07367455751cdeacb8b495b6407f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 85d5ffb2d5f56b2b8edc42c8f274a1834ddbe202
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248715"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687441"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
@@ -36,7 +35,7 @@ ms.locfileid: "2248715"
 - Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でサポートされています。
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
 - DRA をインストールする場合は、管理者ユーザーとしてログインしていることを確認してください。
-- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
+- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
 - DRA には、クライアント上に .NET 4.62 以降と Adobe Acrobat Reader が必要です。
 - ドキュメントの拡大縮小を防止するために、Adobe クライアントの印刷設定をコンフィギュレーションします。
 
@@ -53,8 +52,8 @@ ms.locfileid: "2248715"
 ## <a name="install-the-document-routing-agent"></a>ドキュメント回覧エージェントのインストール
 アプリケーションは、ドキュメント回覧エージェントを使用して、ネットワーク プリンター デバイスへのドキュメントのスプーリングを管理します。 Web アプリケーションに埋め込まれている直接リンクを使用して、クライアントを取得することができるようになりました。 アプリケーションをローカル コンピューターにダウンロードするには、次の手順を使用します。 次に、コンピューターに接続されているローカル プリンターとネットワーク プリンターの両方に、単一配置からアクセスできます。
 
-1. **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
-2. **オプション**タブの、**アプリケーション**グループで、**ドキュメント回覧エージェント インストーラーのダウンロード**をクリックします。
+1. **ネットワーク プリンターの管理** ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
+2. **オプション** タブの、**アプリケーション** グループで、**ドキュメント回覧エージェント インストーラーのダウンロード** をクリックします。
 
     [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
 
@@ -68,28 +67,28 @@ ms.locfileid: "2248715"
 
 1. アプリケーションを実行しているすべてのブラウザー インスタンスを閉じます。 これにより、ローカル Azure 認証トークンがリセットされます。
 2. デスクトップで、ドキュメント回覧エージェントを実行します。
-3. ツール バーで、**設定**をクリックします。
+3. ツール バーで、**設定** をクリックします。
 
     [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
 
 4. 次の設定を追加します。
 
     - **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
-    - **Finance and Operations URL** – アプリケーションのベース URL です。
-    - **Azure AD テナント** - Azure AD のドメイン名。
+    - **Finance and Operations URL** – アプリケーションのベース URL。
+    - **Azure AD テナント** – Azure AD のドメイン名。
 
 5. **OK** をクリックします。
-6. **サインイン**をクリックしてアカウントにサインインします。
+6. **サインイン** をクリックしてアカウントにサインインします。
 
     > [!NOTE]
-    > アカウントは、アプリケーションに関連付けられている Azure AD と同じドメインを共有する必要があります。 ドキュメント回覧エージェントで、ドキュメントを処理する準備が整いました。
+    > アカウントは、アプリケーションに関連付けられている Azure AD と同じドメインを共有する必要があります。 ドキュメント回覧エージェントで、ドキュメントを処理する準備が整いました。
 
 正常にサインインした後、**プリンター** ボタンがツールバーに表示されます。
 
 ## <a name="register-network-printers"></a>ネットワーク プリンターの登録
 この手順を実行する前に、ローカル ホスト コンピューターのすべてのネットワーク プリンターをインストールしていることを確認してください。 サービス登録にインストールされているすべてのプリンター デバイスは利用可能です。 アプリケーションで公開するプリンターのみを選択してください。
 
-1. ツール バーで、**プリンター**をクリックします。
+1. ツール バーで、**プリンター** をクリックします。
 2. アプリケーションで使用できるようにするプリンターを選択します。
 
     [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
@@ -102,7 +101,7 @@ ms.locfileid: "2248715"
 ## <a name="administer-network-printers"></a>ネットワーク プリンターの管理
 クライアントのページを使用して、1 つ以上のドキュメント回覧エージェントによって登録されているネットワーク プリンターへのアクセスを管理します。 ネットワーク プリンターは、パスで一意に識別されます。 したがって、複数のドキュメント回覧エージェントによって登録されている場合でも、プリンターは一度に一覧表示されます。 Application Object Server (AOS) のネットワーク プリンターを有効にするには、次の手順を使用します。
 
-1. **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
+1. **ネットワーク プリンターの管理** ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
 
     [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
 
@@ -124,13 +123,20 @@ ms.locfileid: "2248715"
 
 はい。 Azure Active Directory トークンは 90 日おきに更新する必要があります。 更新しなかった場合、DRA は認証できなくなり、印刷する指示のアプリケーションを取得できなくなります。
 
-### <a name="will-microsoft-add-support-for-microsoft-windowsserver2008-servers"></a>Microsoft は Microsoft Windows Server 2008 サーバーのサポートを追加しますか。
+### <a name="is-the-document-routing-agent-supported-on-microsoft-windows-server-2019"></a>ドキュメント回覧エージェントは Microsoft Windows Server 2019 でサポートされていますか?
+
+はい。 ドキュメント回覧エージェントは Microsoft Windows Server 2019 でサポートされています。
+
+> [!NOTE]
+> サーバーがバックグラウンド サービスを回避するよう構成されている場合、ドキュメント回覧エージェントのクライアントはサービスとして実行できません。 詳細については、[Windows サービスとしてドキュメント回覧エージェントを実行](run-document-routing-agent-as-windows-service.md) を参照してください。
+
+### <a name="will-microsoft-add-support-for-microsoft-windows-server-2008-servers"></a>Microsoft は Microsoft Windows Server 2008 サーバーのサポートを追加しますか?
 
 いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 および Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
 
-### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operationsapps-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations アプリ セキュリティ グループの一部である必要がありますか。
+### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-apps-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations アプリ セキュリティ グループの一部である必要がありますか?
 
-はい。 エージェントのインストール リンクにアクセスするには、ユーザーは**ドキュメント ルート指定クライアント**のセキュリティ ロールの一部でなければなりません。
+はい。 エージェントのインストール リンクにアクセスするには、ユーザーは **ドキュメント ルート指定クライアント** のセキュリティ ロールの一部でなければなりません。
 
 ### <a name="how-many-network-printers-can-the-document-routing-agent-support"></a>ドキュメント回覧エージェントはいくつのネットワーク プリンターをサポートできますか。
 

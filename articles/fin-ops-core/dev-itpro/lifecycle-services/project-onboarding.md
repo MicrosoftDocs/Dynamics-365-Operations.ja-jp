@@ -3,24 +3,23 @@ title: プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクト オンボード ウィザードについて説明します。
 author: vetrivicky
 manager: AnnBe
-ms.date: 08/19/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a20f056bfeda82ff12edb1ca8a96b00909d1a90
-ms.sourcegitcommit: 02aad0b1f9307f6dad96faa296a3583152351645
+ms.openlocfilehash: a168fbcda27c26cebbdea49500418a33d5b06aea
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3702185"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687892"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -68,6 +67,8 @@ Microsoft では、お客様から提供された情報を必要としていま�
 - すべてのプロジェクト チーム メンバーが参加していて、コンフィギュレーションされていることを確認します。
 - ユーザー リストに有効な電子メール アドレスがある少なくとも 2 人のユーザーに対して、**FastTrack の基本連絡先** オプションを **はい** に設定します。 どのチーム メンバーに対してもこのオプションが **はい** に設定されていない場合は、FastTrack が実装時に実装ガイドのためにすべてのチーム メンバーに連絡します。 必要に応じて、FastTrack から連絡を受ける少なくとも 1 人の顧客と 1 人のパートナー チーム メンバーを指名する必要があります。
 - 各チーム メンバーには、プロジェクト セキュリティ ロールおよび実装ロールが割り当てられます。 プロジェクト セキュリティ ロールは LCS プロジェクト ワークスペースへのアクセスに関連しており、実装ロールは、実装チームにおける個々のチーム メンバーのロールに関連しています。 監視対象の電子メール アドレスを持つプロジェクト チーム メンバーの間に、顧客の代表者を含めることを強くお勧めします。
+
+詳細については、[プロジェクト セキュリティのコンフィギュレーション](configure-lcs-security.md#configuring-project-security) および [Dynamics 365 実装のロール](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 ## <a name="define-milestone-dates"></a>マイルストーン日付の定義
 

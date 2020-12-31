@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8abd2567e52ac8111299675fc0dccae7eaf67ee0
-ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
+ms.openlocfilehash: 47d2bbff0510aa0e835d46e4d0e0c41f1b9b77a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3901583"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687910"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 
@@ -39,7 +38,7 @@ ms.locfileid: "3901583"
 LCS クラウドの実装プロジェクトが作成されたら、完全に構成する必要があります。 この構成の一部として、ユーザー、Azure DevOps DevOps アソシエーション、サブスクリプションの見積りを追加し、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などに入力する必要があります。
 
 > [!NOTE]
-> プロジェクトのオンボードしている間、ソースシステムとして **AX 2012 アップグレード**を選択する必要があります。これにより、エラスティック プールの代わりにシングルトンの Azure SQL データベースがサンドボックスに使用されます。 最終的には、オンプレミスの **Finance and Operations** など、より適切なオプションが利用可能となります。
+> プロジェクトのオンボードしている間、ソースシステムとして **AX 2012 アップグレード** を選択する必要があります。これにより、エラスティック プールの代わりにシングルトンの Azure SQL データベースがサンドボックスに使用されます。 最終的には、オンプレミスの **Finance and Operations** など、より適切なオプションが利用可能となります。
 
 ## <a name="complete-development-and-testing-of-updated-integrations"></a>更新された統合の開発とテストの完了
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 91183
 ms.assetid: 259a6844-3675-44bd-a4ea-57a5976628ff
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 430fd2a86aad367204c85e4c88b9182a5fe79b5d
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: d3077ba410141eea6275600990fcb8fcec5906d6
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893178"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693128"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-1-may-2016"></a>Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) の新機能および変更された機能
 
@@ -227,7 +226,7 @@ ms.locfileid: "3893178"
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| 新しいフィード コントロールを使用して、ページに Yammer または Twitter 会話フィードを追加します。 | 管理者は、Yammer フィードをワークスペースにコンフィギュレーションして、ユーザーが関連する会話を表示して参加することができます。 たとえば、Yammer フィード コントロールは、開発者により**販売処理**ワークスペースに追加され、それから「販売ディスカッション」 Yammer グループを指すようにコンフィギュレーションされます。 |
+| 新しいフィード コントロールを使用して、ページに Yammer または Twitter 会話フィードを追加します。 | 管理者は、Yammer フィードをワークスペースにコンフィギュレーションして、ユーザーが関連する会話を表示して参加することができます。 たとえば、Yammer フィード コントロールは、開発者により **販売処理** ワークスペースに追加され、それから「販売ディスカッション」 Yammer グループを指すようにコンフィギュレーションされます。 |
 | 新しい Microsoft Exchange メール プロバイダー経由で送信されるようにメールをコンフィギュレーションします。 | 管理者は、新しいエクスチェンジ メール プロバイダー経由で送信されるようにメールを設定できます。 Microsoft 365 ライセンスがテナント (ドメイン) に関連付けられている場合、Exchange メール プロバイダーは複数の理由から優れたオプションとなります。 たとえば、単一の保存されたアカウントを使用する代わりに、現在のユーザーとして電子メールを送信します。 また、Simple Mail Transfer Protocol (SMTP) プロバイダーとは異なり、Exchange メール プロバイダーは送信済フォルダーに電子メールを保存します。 最後に、任意のコンフィギュレーションを有効にすること以外は、必要ありません。 |
 | **SysEmailAddress** または **EmailBase** EDT を使用するメール フィールドの横にある Skype for Business プレゼンス インジケータを参照してください。 (この機能は、編集モードではない非グリッドフィールドにのみ適用されます。) | Skype for Business を使用して、連絡先がオンラインか、質問に回答できるかどうかをすぐに確認できます。 |
 | Word アドインを使用してラベルとして、Word テンプレートにバインドされていないテキストを追加します。 | テンプレート デザイナーは、ドキュメントが生成されたときに現在使用されている言語に応じて、テキストが適切に翻訳されるようにバインドされていないテキストにラベルを使用できます。 |

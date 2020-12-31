@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 4630ec20e7cbca97c5e43093e6a888a5e09f41a3
-ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
+ms.openlocfilehash: 26a7148a4caa80a191688145bac625bdf0bf83b2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3705146"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686909"
 ---
 # <a name="valueinlarge-er-function"></a>VALUEINLARGE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`VALUEINLARGE` 関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 この関数は、指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 `VALUEIN` 関数との違いを理解するには、このトピックで後述する [使用上の注意](#usage_note) セクションを参照してください。
+`VALUEINLARGE` 関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 この関数は、指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 `VALUEIN` 関数との違いを理解するには、このトピックで後述する [使用上の注意](#usage_note) セクションを参照してください。
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +54,7 @@ VALUEINLARGE (input, list, list item expression)
 
 *ブール値*
 
-結果*ブール*値。
+結果 *ブール* 値。
 
 ## <a name=""></a><a name="usage_note">使用上の注意</a>
 

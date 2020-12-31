@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2ee399ac553ab2c32103c8caabca08cec2f324a3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 9c1ec8e70dd6aa98ff9ce587ced6c2a51245013e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097123"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686333"
 ---
 # <a name="reuse-the-same-ad-fs-instance-for-multiple-environments"></a>複数の環境への同じ AD FS インスタンスの再利用
 
@@ -33,7 +32,7 @@ ms.locfileid: "3097123"
 > [!IMPORTANT]
 > この手順では、[オンプレミス環境コンテンツの設定および展開](./setup-deploy-on-premises-environments.md) コンテンツの手順に従って 1 つの環境に対して以前に AD FS が既に構成されていることを前提にしています。 また、環境が問題なく実行されていることも前提としています。
 
-1. AD FS マネージャーで、**AD FS** \> **アプリケーション グループ**に移動し、**Microsoft Dynamics 365 for Operations オンプレミス**を開きます。
+1. AD FS マネージャーで、**AD FS** \> **アプリケーション グループ** に移動し、**Microsoft Dynamics 365 for Operations オンプレミス** を開きます。
 2. **ネイティブ アプリケーション** セクションで、次の手順を実行します。
 
     1. **Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション** を開き、新しい環境のリダイレクト URI (`https://ax.contoso.com/namespaces/AXSF`) を追加します。
@@ -42,7 +41,7 @@ ms.locfileid: "3097123"
 3. **Web API** セクションで、次の手順を実行します。
 
     1. **Microsoft Dynamics 365 for Operations オンプレミス-Web API** を開き、新しい環境のリダイレクト URI (`https://ax.contoso.com/namespaces/AXSF` および `https://ax.contoso.com`) のエントリを 2 つ追加します。
-    2. **Microsoft Dynamics 365 for Operations オンプレミス - Financial Reporting Web API**を開き、新しい環境のリダイレクト URI (`https://ax.contoso.com/FinancialReporting`) のエントリを 2 つ追加します。
+    2. **Microsoft Dynamics 365 for Operations オンプレミス - Financial Reporting Web API** を開き、新しい環境のリダイレクト URI (`https://ax.contoso.com/FinancialReporting`) のエントリを 2 つ追加します。
 
 4. オプション : **サーバー** セクションで、**Microsoft Dynamics 365 for Operations オンプレミス - Retail** を開き、新しい環境のリダイレクト URI (`https://ax.contoso.com/namespaces/AXSF/`) を追加します。
 5. オプション: 新しい環境向けの Warehouse Mobile App を、[オンプレミスでの Warehousing アプリのコンフィグレーション](./warehousing-for-on-premise-deployments.md) で次の手順に従って構成します。 新しい環境 (`https://ax.contoso.com`) の URI を **リソース URL** 値として使用することに注意してください。

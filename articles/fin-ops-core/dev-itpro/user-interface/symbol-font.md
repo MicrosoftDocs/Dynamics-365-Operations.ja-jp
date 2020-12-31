@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 16321
 ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84
 ms.search.region: Global
 ms.author: bensm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e113a08c9c2abcc3443a6ef76752cd790f4c65c7
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: a42380a8ed519ce7143e09b41d0b3d24e717ce54
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329832"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688545"
 ---
 # <a name="dynamics-symbol-font"></a>Dynamics Symbol フォント
 

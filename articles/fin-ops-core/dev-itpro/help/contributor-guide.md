@@ -6,18 +6,17 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: 41cb362a6046bcafad2e0094a7088b73b64cd5bd
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 369f33e759af0570082d6945f03e3fb752945396
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367071"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685097"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 
@@ -38,7 +37,7 @@ GitHub の利点の 1 つは、Microsoft チームが [MicrosoftDocs/Dynamics-36
 
 ## <a name="extend-and-customize-microsoft-source-content-from-github-repos"></a>GitHub リポジトリから Microsoft ソース コンテンツを拡張とカスタマイズする
 
-Microsoft は、ソース コンテンツと Microsoft がコンテンツを翻訳する各言語について、GitHub で個別のリポジトリを使用します。 [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) リポジトリには、英語 (米国) でのソース コンテンツが含まれています。 他の言語のコンテンツにアクセスする場合は、名前はパターン **Dynamics-365-Operations.\<言語\>-\<国\>** に従います。 たとえば、ドイツ語 (ドイツ) のバージョンは [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de) という名前になります。
+Microsoft は、ソース コンテンツと Microsoft がコンテンツを翻訳する各言語について、GitHub で個別のリポジトリを使用します。 [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) リポジトリには、英語 (米国) でのソース コンテンツが含まれています。 他の言語のコンテンツにアクセスする場合は、名前はパターン **Dynamics-365-Operations\<language\>-\<country\>** に従います。 たとえば、ドイツ語 (ドイツ) のバージョンは [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de) という名前になります。
 
 Microsoft がコンテンツの更新を公開すると、対応する GitHub リポジトリの *ライブ* ブランチが更新されます。 ソース リポジトリは毎週更新されます。 ただし、関連する言語固有のリポジトリの更新頻度は低くなります。 頻度は、新しい翻訳がいつ使用可能になるかによって異なります。 Microsoft リポジトリの 1 つをフォークする場合、優先作業プロセスに応じて、Microsoft リポジトリからの更新でフォークを毎月またはそれ以下の頻度で更新することを選択できます。 GitHub プラットフォームとツールを使用すると、Microsoft が変更したファイルを変更した場合に起こり得るマージの競合を管理することができます。 詳細については、ドキュメント作成ガイドの [ドキュメント用に Git リポジトリをローカルに設定する](/contribute/get-started-setup-local)、または GitHub のヘルプの [リポジトリをフォークする](https://help.github.com/articles/fork-a-repo/) を参照してください。
 

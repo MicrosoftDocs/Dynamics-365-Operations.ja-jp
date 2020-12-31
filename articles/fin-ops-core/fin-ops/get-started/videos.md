@@ -3,26 +3,25 @@ title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: sericks007
 manager: AnnBe
-ms.date: 10/12/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: f61872e25cd2e91724d4918b8f974ee913913d37
-ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
+ms.openlocfilehash: 4c34c539428563e69013e60ed3d0403b648c96bc
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3991455"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693572"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -145,8 +144,11 @@ ms.locfileid: "3991455"
 
 ### <a name="procurement-and-sourcing"></a>調達
 
-- [モバイル デバイスで発注書を承認する](https://youtu.be/gZ-gOlJe7H8)
+- [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)
 - [新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
+
+### <a name="product-information-management"></a>製品情報管理
+- [変更管理機能](https://youtu.be/N313FqvRuBc)
 
 ### <a name="production-control"></a>生産管理
 

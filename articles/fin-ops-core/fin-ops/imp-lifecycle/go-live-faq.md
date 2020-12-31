@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7c46c43fb316d89f2caa2b93543a1b6392ec09d7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 3b1de56db5703a9e4e4208e7fe478ca4fa607f28
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812425"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694407"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -47,7 +46,7 @@ FastTrack ソリューション アーキテクトがプロジェクトに割り
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
-LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および**テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
+LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および **テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、[Finance and Operations アプリ顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
 
 > [!NOTE]
 > 実稼働環境は、運用の評価/レビューが完了するまで配置されません。
@@ -73,7 +72,7 @@ LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイ�
 
 ## <a name="i-submitted-the-request-for-a-production-environment-but-i-made-a-mistake-can-i-still-change-it"></a>実稼働環境の要求を送信しましたが、間違いが発生しました。 いまでも変更できますか。
 
-はい。 実稼働環境のステータスが**キュー**に設定されている限り、サインオフ フラグをクリアし、変更、および再度サイン オフにすることができます。
+はい。 実稼働環境のステータスが **キュー** に設定されている限り、サインオフ フラグをクリアし、変更、および再度サイン オフにすることができます。
 
 ## <a name="how-long-does-it-take-to-deploy-my-production-environment"></a>実稼働環境を配置するにはどのくらい時間がかかりますか。
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 373e278fc83db997d3981825713cf792b5c3f30d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b540e6f3cca7de7f0d96a7ddcd185ebf051eaa3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812490"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693497"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-100-april-2019"></a>Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能および変更された機能
 
@@ -80,7 +79,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 ### <a name="enabling-tax-configuration-with-tax-currency-and-sales-tax-codes"></a>税通貨および消費税コードによる税コンフィギュレーションの有効化
 
-GTE における消費税コードはの設定は、Finance and Operationsと機能統合するうえで必須となります。 これまでは、 GTE が税コンフィギュレーションを同期する際に税コンポーネントと同名の消費税コードを生成しており、この消費税コードの自動生成には通貨会計が使用されています。
+GTE における消費税コードはの設定は、Finance and Operations と機能統合するうえで必須となります。 これまでは、 GTE が税コンフィギュレーションを同期する際に税コンポーネントと同名の消費税コードを生成しており、この消費税コードの自動生成には通貨会計が使用されています。
 
 世界中の複数の税を登録する必要のある会社は、異なる国で使用されている税通貨を税コンポーネントで管理する必要があります。 今回のリリースでは、次の機能をご利用いただけます。
 
@@ -102,7 +101,7 @@ RCSへの機能拡張を継続的に行っていく一環として、対象地�
 
 中国では、正式なタックスインボイスは政府が承認した2つのインボイスソフトウェア (AisinoとBaiWang) のみが発行することができます。 この機能では発行されたインボイスを、.TXTおよび. XMLファイル形式にエクスポートし、それらファイルを必要に応じて承認されたソフトである Aisino と BaiWang にインポートすることができます。 
 
-Finance and Operations の税分類とコードを管理することも可能です。これは税統合インターフェイス3.0と整合性を保ちます。 請求書をエクスポートしたファイルには、中国では必須となっている商品コード (商品やサービスの分類) が含まれています。 
+Finance and Operations の税分類とコードを管理することも可能です。これは税統合インターフェイス 3.0 と整合性を保ちます。 請求書をエクスポートしたファイルには、中国では必須となっている商品コード (商品やサービスの分類) が含まれています。 
 
 標準カテゴリ階層の設定には、エクスポートしたファイル内にインボイスの明細行に商品コードを含める機能が実装されています。
 
@@ -124,11 +123,11 @@ Finance and Operations の税分類とコードを管理することも可能で
 
 ### <a name="setting-up-parameters-by-legal-entity"></a>法人別パラメーターの設定
 
-この機能では、抽象データソースを含むER形式の構成をすることができ、法人ユーザーがどのようにデータ ソースを入力するか指定することができます。 ビジネス ユーザーは、Finance and Operationsのインターフェースを使って指定した法人のマスターデータをもとにERフォーマットを設定することができます。 これは、対応するERフォーマットの実行を制御する可能性のある法人に対して行うことができます。
+この機能では、抽象データソースを含むER形式の構成をすることができ、法人ユーザーがどのようにデータ ソースを入力するか指定することができます。 ビジネス ユーザーは、Finance and Operations のユーザー インターフェイスを使って、指定した法人のマスターデータをもとに ER フォーマットを設定することができます。 これは、対応するERフォーマットの実行を制御する可能性のある法人に対して行うことができます。
 
-この機能では、 ビジネス ユーザー が Finance and Operations インスタンスから特定の企業のERフォーマットをマスターデータとともにエクスポートし、もう一方へとインポートすることができます。
+この機能では、ビジネス ユーザーが Finance and Operations インスタンスから特定の企業の ER フォーマットをマスター データとともにエクスポートし、もう一方へとインポートすることができます。
 
-### <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
+### <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージ場所を指定する
 
 新たなERの拡張点としては、コードを作成することができ、その中でERフォーマットが生成されるドキュメントにアクセスすることが可能なイベントに参加できます。 ERフレームワークに対応したファイルの保存先を拡張することができ、ドキュメントを継続的に保存していくことが可能です。
 
@@ -183,13 +182,13 @@ Finance and Operations の税分類とコードを管理することも可能で
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
-Finance and Operations 10.0 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://go.microsoft.com/fwlink/?linkid=2080156)を参照してください。 
+Finance and Operations バージョン 10.0 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://go.microsoft.com/fwlink/?linkid=2080156) を参照してください。 
 
 ## <a name="regulatory-updates"></a>規制の更新
-Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+Finance and Operations の規制の更新についての詳細は、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
 
 ### <a name="platform-update-24"></a>プラットフォーム update 24
-Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、プラットフォーム更新プログラム 24 が含まれています。 プラットフォーム更新プロフラム 24 については [Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](whats-new-platform-update-24.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、プラットフォーム更新プログラム 24 が含まれています。 プラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能または変更された機能](whats-new-platform-update-24.md) を参照してください。
 
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -197,11 +196,11 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[Finance and Operations の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

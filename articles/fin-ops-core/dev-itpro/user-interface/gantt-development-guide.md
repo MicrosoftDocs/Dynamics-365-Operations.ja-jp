@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 896ad761630c1af1ac0a2b21f1efcd7773bf3c01
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 680c271a12ffbaccb6620573e417f19315c2911d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982373"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686586"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 
@@ -40,7 +39,7 @@ Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケー�
 
 [![ガントの要素](./media/ganttchartelements.png)](./media/ganttchartelements.png)
 
-コントロールを新しいフォームに追加するには、フォーム デザインの一番上のノードを右クリックし、**新規追加**&gt;**Gantt** を選択します。 **高さ**および**幅**プロパティを **SizeToAvailable** に設定した後、デザイナーで設定する必要がある他のプロパティはありません。 他の多くのコントロールとは異なり、Gantt コントロールはデータ ソースにバインドすることはできません。 代わりに、コードからコントロールにすべてのデータを追加する必要があります。
+コントロールを新しいフォームに追加するには、フォーム デザインの一番上のノードを右クリックし、**新規追加**&gt;**Gantt** を選択します。 **高さ** および **幅** プロパティを **SizeToAvailable** に設定した後、デザイナーで設定する必要がある他のプロパティはありません。 他の多くのコントロールとは異なり、Gantt コントロールはデータ ソースにバインドすることはできません。 代わりに、コードからコントロールにすべてのデータを追加する必要があります。
 
 ## <a name="adding-activities-links-and-milestone-markers"></a>活動、リンク、マイルストーン マーカーの追加
 ガント チャートの最も基本的な要素はタスク活動です。 各活動は、個々の行がグラフに割り当てられます。 活動は、親活動を参照することによって、ツリーのような階層を形成できます。 また、任意の 2 つの活動は、リンクを使用して (階層間で) 互いに接続できます。 コントロールにデータを追加するには、追加する要素のインスタンスを含むリストを作成します。 次に、**parm** メソッドを使用して、リストをコントロールに割り当てます。 データを変更するときに、リストの内容だけの変更はできないことに注意してください。 データが変更されたことをクライアントに通知し、リフレッシュをトリガーするには、**parm** メソッドを使用してリストをコントロールに再割り当てする必要があります。
@@ -50,7 +49,7 @@ Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケー�
 各活動は、すべてのアクティビティ タイプに固有の ID を持つ必要があります。 この ID は、階層とリンクをビルドするために必要です。 ID は、ユーザー操作後にサーバーに通知されたときに活動を識別するためにも使用します。 マイルストーンには 2 つのタイプがあります。マイルストーン アクティビティは、チャート内で独自の行を受け取り、リンクから参照できるスタンドアロン アクティビティです。マイルストーン マーカーは関連するアクティビティと同じ行に表示されます。 両方のタイプのマーカーは、Dynamics Symbol フォントの記号を使用して表されます。
 
 ## <a name="column-headers-and-content"></a>列のヘッダーとコンテンツ
-コントロールの左側にある「グリッド」で、データを列に配置できます。 列の定義は、**GanttControlColumn** オブジェクトのリストである **GanttControl.parmColumns** プロパティを使用して提供されます。 列の内容は、**GanttControlActivity.parmColumnTexts** プロパティを通じてアクティビティのテキスト文字列を含む単純な**リスト** オブジェクトとして指定されます。 列リスト内の値は文字列でなければならないことに注意してください。 したがって、数字、列挙型、日付などの書式は、サーバー側で発生する必要があります。 **utcdatetime** の書式設定では、ユーザーの優先時間帯を考慮する必要があります。これは、ガント チャートが表示されるときにその時間帯が使用されるためです。
+コントロールの左側にある「グリッド」で、データを列に配置できます。 列の定義は、**GanttControlColumn** オブジェクトのリストである **GanttControl.parmColumns** プロパティを使用して提供されます。 列の内容は、**GanttControlActivity.parmColumnTexts** プロパティを通じてアクティビティのテキスト文字列を含む単純な **リスト** オブジェクトとして指定されます。 列リスト内の値は文字列でなければならないことに注意してください。 したがって、数字、列挙型、日付などの書式は、サーバー側で発生する必要があります。 **utcdatetime** の書式設定では、ユーザーの優先時間帯を考慮する必要があります。これは、ガント チャートが表示されるときにその時間帯が使用されるためです。
 
 [![コントロールを構成するための API](./media/ganttchartconfigurationapi.png)](./media/ganttchartconfigurationapi.png)
 
@@ -69,7 +68,7 @@ Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケー�
 -   onSummaryActivityCollapse(str \_activityId)
 -   onActivityChanged(GanttControlActivityModification \_modification, GanttControlActivityModificationResponse \_response)
 
-これらすべてのイベントはクライアントからの一方向の通知です。 ただし、応答を設定できるため、**onActivityChanged** イベントは多少特殊なものです。 通常、ユーザーが変更を加えた場合 (たとえば、アクティビティを新しい時間にドラッグする)、他のアクティビティも更新するか、アクティビティ自体を調整する必要があります (たとえば、列テキストを変更する必要がある)。 **GanttControlActivityModificationResponse** 応答で、更新する必要のあるアクティビティの一覧を提示することができます。 ユーザーによる変更がそのまま受け入れられる場合、応答を設定する必要はありません。 ただし、少なくとも、新しい開始日と終了日を表示するよう保証するため、ほとんどの場合現在の活動の列テキストは更新される必要があります。 活動で、**parmAllowMove** フラグは、活動が移動できるかどうかを決定します。 ただし、**GanttControlConfiguration** の高レベルのフラグは、任意の活動を移動 (**parmAllowMoveActivities**) またはサイズを変更 (**parmAllowResizeActivities**) できるかどうか、または、活動の完了率を変更 (**parmAllowCompletionChange**) できるかどうかを決定します。
+これらすべてのイベントはクライアントからの一方向の通知です。 ただし、応答を設定できるため、**onActivityChanged** イベントは多少特殊なものです。 通常、ユーザーが変更を加えた場合 (たとえば、アクティビティを新しい時間にドラッグする)、他のアクティビティも更新するか、アクティビティ自体を調整する必要があります (たとえば、列テキストを変更するなど)。 **GanttControlActivityModificationResponse** 応答で、更新する必要のあるアクティビティの一覧を提示することができます。 ユーザーによる変更がそのまま受け入れられる場合、応答を設定する必要はありません。 ただし、少なくとも、新しい開始日と終了日を表示するよう保証するため、ほとんどの場合現在の活動の列テキストは更新される必要があります。 活動で、**parmAllowMove** フラグは、活動が移動できるかどうかを決定します。 ただし、**GanttControlConfiguration** の高レベルのフラグは、任意の活動を移動 (**parmAllowMoveActivities**) またはサイズを変更 (**parmAllowResizeActivities**) できるかどうか、または、活動の完了率を変更 (**parmAllowCompletionChange**) できるかどうかを決定します。
 
 
 

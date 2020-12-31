@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27661
 ms.assetid: ''
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b8dbf8568ddf3219896a74ac1ef7e86ce82b76d7
-ms.sourcegitcommit: fc93df8ca6a25af797a53578a83324506545a63d
+ms.openlocfilehash: 4d7ffa81bfe9ca8af112c7b7fc6e6639b22f7f96
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3373069"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687444"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 
@@ -81,4 +80,4 @@ PDF を使用して、 Finance and Operations アプリにバンドルされて�
     - **ConfigPath** : SQL Server Reporting SERVICES (SSRS) が既定の場所に配置されていない場合は、構成の場所を指定します。
     - **RemoveRules** : ルールを削除するには、このパラメーターを設定します。
     - **ForceUpdate** : ルールを強制的に再作成するには、このパラメーターを設定します。
-    - **LogDir** : ログの書き込みをする場所を指定します。 既定の場所は、**UpdateRDLSandboxRule.ps1**コマンドの場所となります。
+    - **LogDir** : ログの書き込みをする場所を指定します。 既定の場所は、**UpdateRDLSandboxRule.ps1** コマンドの場所となります。

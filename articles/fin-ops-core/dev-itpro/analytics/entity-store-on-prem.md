@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntityStoreOnPrem
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27bd3c81ff0493af28bb3ad004d0ff2ea1606230
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 1a7fba42e55564c55fe9bd9f5d11ffce577223e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029440"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687088"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
@@ -57,7 +56,7 @@ ms.locfileid: "3029440"
 
 エンティティストアに使用するデータベースを作成する場合は、最初に ConfigTemplate .xml ファイルを変更する必要があります。
 
-1. **DbServer - セキュリティ**で、 **axdwadmin** および **axdwruntimeuser** の **generateuser** フラグを **True**に設定します。 次の手順のスクリプトを実行すると、2つのユーザーが作成されます。 ユーザーのパスワードを設定するよう求められます。
+1. **DbServer - セキュリティ** で、 **axdwadmin** および **axdwruntimeuser** の **generateuser** フラグを **True** に設定します。 次の手順のスクリプトを実行すると、2つのユーザーが作成されます。 ユーザーのパスワードを設定するよう求められます。
 2. 次のスクリプトを実行します。
 
     ```powershell

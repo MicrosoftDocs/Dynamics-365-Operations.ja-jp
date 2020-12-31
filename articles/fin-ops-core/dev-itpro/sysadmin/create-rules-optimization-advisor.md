@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,22 +18,22 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8c4f5eff01ab20ce9de2a30b27b163df8cf83e02
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 7052aeb4154cefe30a1935dfdca53085a035deb6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985222"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687614"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>最適化アドバイザーのためのルールを作成します
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**最適化アドバイザー**のための新しいルールを作成する方法について説明します。 例えば、見積依頼 (RFQ) のケースに空のタイトルがあるかどうかを識別する新しいルールを作成できます。 ケースのタイトルを使用して、識別および検索を容易にします。 非常に単純ですが、この例では最適化ルールで何が達成できるかを示しています。 
+このトピックでは、**最適化アドバイザー** のための新しいルールを作成する方法について説明します。 例えば、見積依頼 (RFQ) のケースに空のタイトルがあるかどうかを識別する新しいルールを作成できます。 ケースのタイトルを使用して、識別および検索を容易にします。 非常に単純ですが、この例では最適化ルールで何が達成できるかを示しています。 
 
-*ルール*はアプリケーション データのチェックです。 ルールの評価条件が満たされた場合、プロセスを最適化したり、データを改善する案件が作成されます。 営業案件を対象にすることができ、必要に応じてアクションの影響を測定することができます。 
+*ルール* はアプリケーション データのチェックです。 ルールの評価条件が満たされた場合、プロセスを最適化したり、データを改善する案件が作成されます。 営業案件を対象にすることができ、必要に応じてアクションの影響を測定することができます。 
 
-**最適化アドバイザー**の新しいルールを作成するために、**SelfHealingRule** 抽象クラスを拡張する新しいクラスの追加、**IDiagnosticsRule** インターフェイスの実装、および **DiagnosticRule** 属性によって修飾がされます。 クラスは **DiagnosticsRuleSubscription** 属性で修飾されるメソッドも必要です。 慣例として、これは **opportunityTitle** メソッドで実行されます。これについては後で説明します。 この新しいクラスは **SelfHealingRules** に依存関係を持つカスタム モデルに追加することができます。 実装されている **RFQTitleSelfHealingRule** と呼ばれるルールを以下の例に示します。
+**最適化アドバイザー** の新しいルールを作成するために、**SelfHealingRule** 抽象クラスを拡張する新しいクラスの追加、**IDiagnosticsRule** インターフェイスの実装、および **DiagnosticRule** 属性によって修飾がされます。 クラスは **DiagnosticsRuleSubscription** 属性で修飾されるメソッドも必要です。 慣例として、これは **opportunityTitle** メソッドで実行されます。これについては後で説明します。 この新しいクラスは **SelfHealingRules** に依存関係を持つカスタム モデルに追加することができます。 実装されている **RFQTitleSelfHealingRule** と呼ばれるルールを以下の例に示します。
 
 ```xpp
 [DiagnosticsRule] 
@@ -44,7 +43,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 } 
 ```
 
-**SelfHealingRule** 抽象クラスは、派生クラスで実装される必要がある抽象メソッドを持っています。 コアは**評価**方法です。ルールによって識別される案件の一覧を返します。 営業案件は法人ごと、またはシステム全体に適用できます。
+**SelfHealingRule** 抽象クラスは、派生クラスで実装される必要がある抽象メソッドを持っています。 コアは **評価** 方法です。ルールによって識別される案件の一覧を返します。 営業案件は法人ごと、またはシステム全体に適用できます。
 
 ```xpp
 protected List evaluate() 
@@ -76,7 +75,7 @@ protected List evaluate()
 } 
 ```
 
-上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。 このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。 **SelfHealingOpportunity** テーブルの **データ** フィールドはタイプ **コンテナー**です。そのため、このルールに固有のロジックに適切なデータを含めることができます。 現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。  
+上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。 このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。 **SelfHealingOpportunity** テーブルの **データ** フィールドはタイプ **コンテナー** です。そのため、このルールに固有のロジックに適切なデータを含めることができます。 現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。  
 
 営業案件は会社間でも可能です。 この場合、会社にループすることは必要ではなく、営業案件は **getOpportunityAcrossCompanies** メソッドで作成される必要があります。 
 
@@ -195,7 +194,7 @@ class ScanNewRulesJob
 
 ルールは **診断検証ルール** フォームで表示され、**システム管理** > **定期処理のタスク** > **診断検証ルールの管理** からも使用できます。 それを評価するために、**システム管理** > **定期処理のタスク** > **診断検証ルールのスケジュール** に移動し、**毎日** のようなルールの頻度を選択します。 **OK** をクリックします。 **システム管理** > **最適化アドバイザー** に移動し、営業案件を表示します。 
 
-次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。
+次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。 この例で使用されているラベルとアクション メニュー項目は、デモ目的でのみ使用されます。
 
 ```xpp
 [DiagnosticsRuleAttribute]

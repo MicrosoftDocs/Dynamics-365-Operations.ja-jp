@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 69191
 ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e8d378329ff5ea0d5932271888f3489ec9ace91
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 1b024ceb51ee74a9f20c862fd161e13ca83b58be
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569072"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688427"
 ---
 # <a name="document-reporting-services"></a>ドキュメントの Reporting Services
 
@@ -36,7 +35,7 @@ ms.locfileid: "2569072"
 
 ### <a name="service-deployment--local-vs-cloud"></a>サービスの展開 - ローカルとクラウド
 
-1 ボックス環境では、開発者は Microsoft Visual Studio 2015 を使用して、エンド ツー エンドでレポートを作成、変更、およびプレビューできます。 アプリケーションのメタデータ ストアにレポートを追加するために、別のプロセスは必要ありません。 レポートの変更は、他のソリューションの更新と一緒にパッケージ化され、ローカル環境での開発が完了した後にクラウドに展開されます。
+1 ボックス環境では、開発者は Microsoft Visual Studio を使用して、エンド ツー エンドでレポートを作成、変更、およびプレビューできます。 アプリケーションのメタデータ ストアにレポートを追加するために、別のプロセスは必要ありません。 レポートの変更は、他のソリューションの更新と一緒にパッケージ化され、ローカル環境での開発が完了した後にクラウドに展開されます。
 
 ### <a name="viewing-reports"></a>レポートを表示する 
 
@@ -68,7 +67,7 @@ ms.locfileid: "2569072"
 </table>
 
 ## <a name="developing-application-reports"></a>アプリケーションのレポートの開発
-Visual Studio 2015 では、レポート ソリューションを完全に作成および検証できるので、現在のバージョンでレポートを作成するプロセスは AX 2012 で行うよりも簡単です。 次のテーブルは、アプリケーションがどのようにしてクエリに基づく自動設計レポートを追加するための基本手順を簡素化するかを示しています。
+Visual Studio では、レポート ソリューションを完全に作成および検証できるので、現在のバージョンでレポートを作成するプロセスは AX 2012 で行うよりも簡単です。 次のテーブルは、アプリケーションがどのようにしてクエリに基づく自動設計レポートを追加するための基本手順を簡素化するかを示しています。
 
 <table>
 <thead>

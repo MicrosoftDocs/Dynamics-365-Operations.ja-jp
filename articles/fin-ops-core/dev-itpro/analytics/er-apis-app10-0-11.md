@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: b958b6f5544b4e88e3487d97fe395ae17abf6a62
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: f3da1ac6da742b1a4dd8b423c5be5ab37b746876
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411450"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685367"
 ---
 # <a name="electronic-reporting-framework-api-changes"></a>電子申告のフレームワーク API の変更点
 
@@ -68,7 +67,7 @@ class ERIntegrationPointCodeSamples extends RunBaseBatch
 ```
 
 > [!NOTE]
-> - モデルマッピング統合ポイントのコンポーネントとしてマークできるのは、**テーブル レコード**、**テーブル**、**クラス**、**オブジェクト**タイプのデータソースのみです。
+> - モデルマッピング統合ポイントのコンポーネントとしてマークできるのは、**テーブル レコード**、**テーブル**、**クラス**、**オブジェクト** タイプのデータソースのみです。
 > - 現在、モデルマッピング統合ポイントの構成要素として使用できるデータ ソースは単一のものに限られています。
 > - その他の既存の基準に加えて、統合ポイントは最適なモデル マッピングの選択時に考慮されます。
 > - 実行時に、実行中の ER 形式のマッピングに適用可能なモデル マッピングの中から、要求された統合ポイントを持つモデル マッピングが複数検出された場合は、エラーが発生します。

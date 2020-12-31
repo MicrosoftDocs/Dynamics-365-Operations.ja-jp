@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 56551
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cc3ef55d9a6710ea294ac49b3a18591174a3628
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: e05c75e5a71b427bef5bba8d261a739958a40213
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287831"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694090"
 ---
 # <a name="finance-and-operations-application-architecture"></a>Finance and Operations アプリケーション アーキテクチャ
 

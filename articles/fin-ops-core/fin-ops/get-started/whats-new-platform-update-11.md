@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 4b70211ba9132a006e38e4447c62b8f0e7a0d91a
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: f94eddd0dfcc9b23a08e54f8956a98e807118066
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627636"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694122"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-11-october-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月) の新機能および変更された機能
 
@@ -50,7 +49,7 @@ ms.locfileid: "2627636"
 
 テーブル、ビュー、データ エンティティ、メニュー項目、およびサービス操作には、**運用ドメイン** および **サブスクライバー アクセス レベル** というメタデータ プロパティが追加されています。 [クラウドおよびエッジの配置](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/23/the-right-cloud-option-for-your-business)をサポートするには新しいメタデータ プロパティが必要で、Microsoft Visual Studio で表示されます。
 
-また、同じで目的で**配置**、**DeploymentAccessibleCompany**、**NumberSequenceDeployments** の 3 つのテーブルが追加されました。
+また、同じで目的で **配置**、**DeploymentAccessibleCompany**、**NumberSequenceDeployments** の 3 つのテーブルが追加されました。
 
 現時点では、新しいプロパティとテーブルを取得する必要はありません。
 
@@ -81,11 +80,11 @@ final class MyLedgerJournalTransAccrual_Extension
 }
 ```
 
-新しいフィールド グループを **MyLedgerAccountName** のテーブル拡張機能に追加し、フィールド グループの表示データ フィールドとしてメソッド **MyLedgerAccountName** を選択します。 
+新しいフィールド グループを **MyLedgerAccountName** のテーブル拡張機能に追加し、フィールド グループの表示データ フィールドとしてメソッド **MyLedgerAccountName** を選択します。 
 
 1. 新しいフィールド グループを追加します。
 2. フィールドグループに新しいフィールドを追加します。
-3. **データ フィールド** プロパティを **LedgerJournalTransAccrual\_Extension::MyLedgerAccountName** に設定します。 (それを入力するか、**データ フィールド** ドロップダウン リストから選択することができます)。
+3. **データ フィールド** プロパティを **LedgerJournalTransAccrual\_Extension::MyLedgerAccountName** に設定します。 (それを入力するか、**データ フィールド** ドロップダウン リストから選択することができます)。
 
 ## <a name="development-and-customization---support-for-field-arrays-in-table-extensions"></a>開発およびカスタマイズ - テーブル拡張のフィールド配列のサポート
 
@@ -106,11 +105,11 @@ table1.EDTArrayField1[3] = 'text3';
 
 ## <a name="development-and-customization---use-edt-extensions-to-customize-number-of-decimals"></a>開発およびカスタマイズ - EDT 拡張機能を使用して小数点以下桁数をカスタマイズする
 
-EDTReal 型の拡張データ型の拡張機能を使用するとき、小数点精度の変更を確認できます。 展開している EDT 要素が持っている**番号の小数点以下が拡張可能な**プロパティが true に設定されている場合、この EDT の拡張機能を作成でき、**小数点以下なし**プロパティを変更することができます。 これにより、開発者はタイプ EDTReal の EDT の小数点精度をカスタマイズできます。 現在のプラットフォーム更新プログラム 11 では、次の EDT で小数点の拡張が可能です。量および AmountMST。
+EDTReal 型の拡張データ型の拡張機能を使用するとき、小数点精度の変更を確認できます。 展開している EDT 要素が持っている **番号の小数点以下が拡張可能な** プロパティが true に設定されている場合、この EDT の拡張機能を作成でき、**小数点以下なし** プロパティを変更することができます。 これにより、開発者はタイプ EDTReal の EDT の小数点精度をカスタマイズできます。 現在のプラットフォーム更新プログラム 11 では、次の EDT で小数点の拡張が可能です。量および AmountMST。
 
 ## <a name="multiple-document-reports-sent-as-a-zip-file-to-streamline-delivery"></a>配送を簡素化するために .zip ファイルとして送信する複数のドキュメント レポート
 
-このフレームワークは、レポート セッションがダウンロード用の複数の文書を生成するシナリオをよりよく扱うように拡張されました。セキュリティ上の事前措置として、Dynamics 365 for Finance and Operations サービスは複数のファイルをブラウザにダウンロードするシナリオの処理方法を調整しました。複数のドキュメントを次々と受信するのではなく、ドキュメントは 1 つの .zip ファイルにパッケージ化してダウンロードされます。 これは、顧客取引明細書や督促状などの複数のドキュメントを生成する既存のレポートに影響します。
+このフレームワークは、レポート セッションがダウンロード用の複数の文書を生成するシナリオをよりよく扱うように拡張されました。 セキュリティ上の事前措置として、Dynamics 365 for Finance and Operations サービスは複数のファイルをブラウザにダウンロードするシナリオの処理方法を調整しました。 複数のドキュメントを次々と受信するのではなく、ドキュメントは 1 つの .zip ファイルにパッケージ化してダウンロードされます。 これは、顧客取引明細書や督促状などの複数のドキュメントを生成する既存のレポートに影響します。
 
 ## <a name="resource-governor-manages-server-workloads"></a>リソース ガバナーは、サーバー ワークロードを管理します。
 

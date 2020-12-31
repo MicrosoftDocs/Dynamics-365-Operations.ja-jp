@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
-ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
+ms.openlocfilehash: b89135cd9e951e690e53c1b4bf98dfcb03f2d652
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870267"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694472"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -61,7 +60,7 @@ ms.locfileid: "2870267"
 - **データ構成** – これは主に、システムのセットアップと設定方法に関するものです。 たとえば、法人の数、アイテムの数、BOM レベルの数、セキュリティ設定の複雑さなどです。 これらの要因のそれぞれはパフォーマンスにはほとんど影響しない可能性があるため、これらの要因はインフラストラクチャに関しては賢明な選択肢を使用することで相殺できます。
 - **拡張機能** – カスタマイズはシンプルまたは複雑になり得ます。 カスタマイズの数と複雑さと使用の性質は、必要なインフラストラクチャのサイズにさまざまな影響を与えます。 複雑なカスタマイズの場合は、効率性のテストだけでなく、インフラストラクチャのニーズを理解するのに役立つように、パフォーマンス評価を行うことをお勧めします。 拡張機能が、パフォーマンスとスケーラビリティにおけるベストプラクティスに従ってコード化されていない場合、これはさらに重要です。
 - **レポートと分析** – これらの要因には、通常、システムのさまざまなデータベースに対する大量のクエリの実行が含まれます。 高価なレポートを実行する頻度を理解し、削減することで、レポートの影響を理解するのに役立ちます。
-- **サード パーティのソリューション**1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
+- **サード パーティのソリューション** 1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
 
 ## <a name="sizing-your-environment"></a>環境のサイズ変更
 
@@ -97,7 +96,7 @@ ms.locfileid: "2870267"
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
 
-AD FS のサイズについては、[AD FS の処理能力ドキュメント](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity) を参照してください。
+広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。
 
 A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
 

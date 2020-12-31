@@ -8,17 +8,16 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: b5fdfc7f98fdf54582166ba111c29aaf4ec0317c
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 4216965e4f5dce36f6250b5cffc3982b8207cf48
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3366990"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685092"
 ---
 # <a name="custom-help-toolkit"></a>カスタム ヘルプ ツールキット
 

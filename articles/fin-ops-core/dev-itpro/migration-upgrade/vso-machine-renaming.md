@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e059b8d5684bca4805e53ea8bb6ea1e3d2beea4d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 3afab2f9f0295a071a2745828a80457e535d0c26
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979712"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685435"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 
@@ -69,7 +68,7 @@ AzureStorageEmulator.exe start
 AzureStorageEmulator.exe status
 ```
 
-**-server** スイッチまたは **-forcecreate** スイッチを使用して **init**オプションを試してください。 必ず、**new\_name** を新しい名前に置き換えてください。
+**-server** スイッチまたは **-forcecreate** スイッチを使用して **init** オプションを試してください。 必ず、**new\_name** を新しい名前に置き換えてください。
 
 ```Console
 AzureStorageEmulator.exe init -server new_name

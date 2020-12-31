@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5af3b4d95985b61f488f3b7b61a770201c1751dc
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 24286c8a256ec8eeb5076acfda6c0b043210c6d7
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031005"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693503"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能と変更点
 
@@ -82,7 +81,7 @@ ms.locfileid: "3031005"
 
 予測ポジションの財務分析コードの既定のテンプレートを管理するには、**予測ポジション** ページの **財務分析コード** のクイックタブにあるコントロールを使用します。 クイックタブの上部に表示されるグリッドには、すべての配分明細行の割合と共に表示されます。 クイックタブの下の部分には、予測ポジションの既定の分析コードが表示されます。
 
-予測ポジションの既定の分析コードがあなたの組織の勘定科目表に対して適切であるかどうかを検証できます。 予測ポジションに対して、**予測ポジション** ページで、アクション] ウインドウで **検証** を選択して、予測ポジションの財務分析コードの設定が有効かどうかを確認します。 この検証は簡単で、予測ポジションから予算計画を生成する前にエラーを識別するのに役立ちます。 **予測ポジション** ページでは、複数の予測ポジションを同時に検証することもできます。
+予測ポジションの既定の分析コードがあなたの組織の勘定科目表に対して適切であるかどうかを検証できます。 予測ポジションに対して、**予測ポジション** ページで、アクション ウインドウで **検証** を選択して、予測ポジションの財務分析コードの設定が有効かどうかを確認します。 この検証は簡単で、予測ポジションから予算計画を生成する前にエラーを識別するのに役立ちます。 **予測ポジション** ページでは、複数の予測ポジションを同時に検証することもできます。
 
 ## <a name="deferred-put"></a>繰延プット
 繰延処理機能では、入力操作がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーが処理時間の増加をアドホックまたは計画外でおこない、増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
@@ -108,8 +107,8 @@ ms.locfileid: "3031005"
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 

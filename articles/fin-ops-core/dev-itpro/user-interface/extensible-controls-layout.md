@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea915608ba4ded28df01d403b88cae63faed73fe
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 53bfeb5a3c8f765b86a24c0a069e979deb8f13f1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686606"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 
@@ -33,9 +32,9 @@ ms.locfileid: "3329895"
 <a name="dos-and-donts-for-achieving-the-desired-layout"></a>目的のレイアウトを実現するための注意事項
 -----------------------------------------------
 
--   コントロールのレイアウト クラスを直接使用しないでください。 (たとえば、**layout-container** および **layout-horizontal** は、DOM のコントロールに表示されるクラスです。) 代わりに、レイアウト バインディング ハンドラーを使用して、これらのクラスを適用します。 Internet Explorer は異なるレイアウト フレームワークを使用しており、要素にいくつかのインライン スタイルを追加するには、このフレームワークにハンドラーが提供する予備のバインディング情報が必要です。 したがって、クラスがコントロールにハードコードされて**いない**ことを確認してください。
+-   コントロールのレイアウト クラスを直接使用しないでください。 (たとえば、**layout-container** および **layout-horizontal** は、DOM のコントロールに表示されるクラスです。) 代わりに、レイアウト バインディング ハンドラーを使用して、これらのクラスを適用します。 Internet Explorer は異なるレイアウト フレームワークを使用しており、要素にいくつかのインライン スタイルを追加するには、このフレームワークにハンドラーが提供する予備のバインディング情報が必要です。 したがって、クラスがコントロールにハードコードされて **いない** ことを確認してください。
 -   レイアウト バインディング ハンドラーを使うコンテナーの子である要素に、絶対配置 (**position: absolute** and **top**/**bottom**/**left**/**right** positions) を使用しないでください。 これらの要素の絶対配置は、正しく物事をレイアウトすることに適用される CSS クラスを妨げます。
--   **幅: 100%** と**高さ: 100%** の使用には注意が必要です。 これらの設定は、レイアウト CSS クラスと組み合わせて使用すると、必ずしも機能しない場合があります。 塗りつぶし動作を使用する場合、代わりにサイズ変更バインディング ハンドラーの **$dyn.layout.Size.available** オプションを使用することをお勧めします。
+-   **幅: 100%** と **高さ: 100%** の使用には注意が必要です。 これらの設定は、レイアウト CSS クラスと組み合わせて使用すると、必ずしも機能しない場合があります。 塗りつぶし動作を使用する場合、代わりにサイズ変更バインディング ハンドラーの **$dyn.layout.Size.available** オプションを使用することをお勧めします。
 
 ## <a name="layout-binding-handlers"></a>レイアウト バインディング ハンドラー
 ### <a name="layout"></a>レイアウト
@@ -105,8 +104,8 @@ ms.locfileid: "3329895"
     -   layout-vertical
     -   layout-horizontal
 -   検索するクラスのサイズ設定:
-    -   **$dyn.layout.Size.available** で、**入力幅**または**入力高さ**のいずれかを表示する必要があります。
-    -   手動サイズについては、**固定高さ**または**固定幅**のいずれかを表示する必要があります。
+    -   **$dyn.layout.Size.available** で、**入力幅** または **入力高さ** のいずれかを表示する必要があります。
+    -   手動サイズについては、**固定高さ** または **固定幅** のいずれかを表示する必要があります。
     -   **$dyn.layout.Size.content** では、追加のクラスは存在すべきでなく、手動の高さと幅は要素で特定されたインラインである必要があります。
 
 これらのクラスが予期したとおりに表示されない場合、拘束力のあるハンドラーの使用状況を確認し、このページの注意事項の一覧を読んだことを確認します。

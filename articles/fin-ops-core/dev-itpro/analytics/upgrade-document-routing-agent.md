@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efb0cc4b5bb8ed6c12b31179f0990bba283fadfd
-ms.sourcegitcommit: 8a4e2adb999112e1b6576bcb3e93e29834ba36aa
+ms.openlocfilehash: 4169f32fa30f9c4e32de546c5df5507553f56d0e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3376037"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687415"
 ---
 # <a name="update-the-document-routing-agent"></a>ドキュメント回覧エージェントの更新
 
@@ -40,12 +39,12 @@ IT 管理者は、DRA をホストするために使用される各ドメイン 
 > DRA 更新プログラムを完了すると、IT 管理者は、ホストサーバー経由で接続しているすべてのプリンターを登録する必要があります。 ネットワーク パスによって識別されるネットワーク プリンターでは、パスが変更されていない限りは更新の必要はありません。
 
 ## <a name="get-started"></a>はじめに
-DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、更新プログラム完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス**を選択します。
+DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、更新プログラム完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス** を選択します。
 
 ![マネージャー スナップイン](media/Services_dialog.png)
 
 ## <a name="uninstall-an-existing-document-routing-agent"></a>既存のドキュメント回覧エージェントのアンインストール
-**プログラムと機能**を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧**を検索し、削除します。
+**プログラムと機能** を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧** を検索し、削除します。
 
 ![プログラム ウィンドウのアンインストールまたは変更](media/Programs_and_Features_dialog.png)
 

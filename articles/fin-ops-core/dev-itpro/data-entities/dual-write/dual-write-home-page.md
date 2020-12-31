@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21311
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2fee73f2f392eaa2332ee35d07b739343aa3ebb8
-ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
+ms.openlocfilehash: 10360bf3c913a504318e7f056c7dd4cc0bd4c127
+ms.sourcegitcommit: fedb8092e5827b906b6b1cb2ca44241a9b38f432
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3901484"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4737626"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 次のトピックでは、二重書き込み統合について説明します。
 
@@ -39,26 +38,28 @@ ms.locfileid: "3901484"
 
 + [二重書き込みの新機能および変更された機能](whats-new-dual-write.md)
 + [よく寄せられる質問](dual-write-faq.md)    
-    
+
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
 + [二重書き込みのシステム要件](dual-write-system-req.md)
-+ [二重書き込みの設定のサポートされているシナリオ](connection-setup.md)
++ [二重書き込みの設定方法に関するガイダンス](connection-setup.md)
++ [初期同期に関する考慮事項](initial-sync-guidance.md)
 + [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
 + 既存の Finance and Operations アプリの二重書き込みの有効化
 
     + [既存 Finance and Operations アプリの二重書き込みを有効化](enable-dual-write.md)
     + [システム要件と前提条件](requirements-and-prerequisites.md)
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
-    + [エンティティ マップの二重書き込みの有効化](enable-entity-map.md)
+    + [テーブル マップの二重書き込みの有効化](enable-entity-map.md)
 
 + [二重書き込みの通貨データ型の移行](currrency-decimal-places.md)
 + [販売注文の状態フィールドのマッピングを設定](sales-status-map.md)
++ [会社間注文をフィルター処理して注文および注文明細行の同期を回避する](filtering-intercompany-orders.md)
 
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 
 + [エンティティとフィールドのマッピングのカスタマイズ](customizing-mappings.md)
-+ [複数のエンティティ マップの処理](multiple-entity-maps.md)
++ [複数のテーブル マップの処理](multiple-entity-maps.md)
 + [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
@@ -77,7 +78,7 @@ ms.locfileid: "3901484"
 
     + [統合されたサイトおよび倉庫](sites-warehouses-mapping.md)
 
-+ [Common Data Service 企業理念](company-data.md)
++ [Dataverse 企業理念](company-data.md)
 
     + [社内データを含むブートストラップに関するよく寄せられる質問](bootstrap-company-data.md)
 
@@ -87,8 +88,9 @@ ms.locfileid: "3901484"
     + [統合された元帳](ledger-mapping.md)
     + [統合された税マスター](tax-mapping.md)
 
++ [Field Service および Supply Chain Management の調達の統合](scm-field-service-procurement.md)
 + [Dynamics 365 Supply Chain Management 価格エンジンとオンデマンドの同期](pricing-engine.md)
-+ [二重書き込みでの見込顧客から入金](dual-write-prospect-to-cash.md)
++ [二重書き込みでの見込顧客の現金化](dual-write-prospect-to-cash.md)
 + [サービスのための社内資産](in-house-assets.md)
 + [作業者、職務、および職位の統合](integrated-hr.md)
 
@@ -98,7 +100,7 @@ ms.locfileid: "3901484"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-+ [Finance and Operations アプリと Common Data Service で二重書き込みが設定されていることを確認する](dual-write-troubleshooting-verify-config.md)
++ [Finance and Operations アプリと Dataverse で二重書き込みが設定されていることを確認する](dual-write-troubleshooting-verify-config.md)
 + [初期セットアップ中の問題のトラブルシューティング](dual-write-troubleshooting-initial-setup.md)
 + [初期同期中の問題のトラブルシューティング](dual-write-troubleshooting-initial-sync.md)
 + [Finance and Operations アプリの二重書き込みモジュールに関する問題のトラブルシューティング](dual-write-troubleshooting-dual-write-module.md)

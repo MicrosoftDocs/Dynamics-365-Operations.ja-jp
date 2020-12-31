@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ff280d66fd2c418984f2d7fd31a32609932e89c
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: c39700fab90265ed1915b4815a6bb27af58d9516
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3745012"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686467"
 ---
 # <a name="orderby-er-function"></a>ORDERBY ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ORDERBY` 関数は、指定されたリストを、指定された引数に基づいて並べ替えられた後に*レコード リスト*値として返します。 これらの引数は、式として定義することができます。
+`ORDERBY` 関数は、指定されたリストを、指定された引数に基づいて並べ替えられた後に *レコード リスト* 値として返します。 これらの引数は、式として定義することができます。
 
 ## <a name="syntax"></a>構文
 
@@ -63,7 +62,7 @@ ORDERBY (list , expression 1[, expression 2, …, expression N])
 
 ## <a name="example-2"></a>例 2
 
-**仕入先**を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `ORDERBY (Vendors, Vendors.'name()')` は昇順の名前で並べ替えられた仕入先のリストを返します。
+**仕入先** を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `ORDERBY (Vendors, Vendors.'name()')` は昇順の名前で並べ替えられた仕入先のリストを返します。
 
 ## <a name="additional-resources"></a>追加リソース
 

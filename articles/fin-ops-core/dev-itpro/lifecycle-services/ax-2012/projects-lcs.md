@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 18941
 ms.assetid: 6634d000-b031-40d7-ad2a-c6626e4cbdc2
 ms.search.region: Global
-ms.author: manado
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a9bfcc1c6864cb849e626ebe3cb4d8a0ba12622
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 766acef808413d17a552faa6e4faafd29b83137b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183238"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688553"
 ---
 # <a name="projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のプロジェクト
 

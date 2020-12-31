@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 88dd0cb8f17e742819cf1c7374e3af39772ecc28
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 077dc5d28e44505601b99361d291fd9e2bb93fe0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885349"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687656"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 
@@ -41,7 +40,7 @@ No.
 
 ## <a name="is-there-a-report-that-determines-when-throttling-might-occur"></a>調整が発生する時を決定するレポートがありますか?
 
-はい。 レポートは提供され、Microsoft Dynamics Lifecycle Services (LCS) の環境監視ページ内の**未加工ログ**を通してアクセスできます。
+はい。 レポートは提供され、Microsoft Dynamics Lifecycle Services (LCS) の環境監視ページ内の **未加工ログ** を通してアクセスできます。
 
 ## <a name="will-throttling-affect-the-data-importexport-framework-dixf-and-batch"></a>調整はデータのインポート/エクスポート フレームワーク (DIXF) とバッチに影響しますか?
 
@@ -49,7 +48,7 @@ No. 調整は、Odata と カスタム サービス統合のためです。
 
 ## <a name="in-preview-will-my-requests-be-throttled-if-priorities-arent-configured"></a>プレビューで、優先順位が構成されない場合、自分の要求は調整されますか?
 
-いいえ、なぜならテレメトリのみが有効だからです。 実際の調整は、優先順位を構成した場合に実行されます。 プレビュー期間中は、**非実稼働**環境でこのアプローチを使用することをお勧めします。
+いいえ、なぜならテレメトリのみが有効だからです。 実際の調整は、優先順位を構成した場合に実行されます。 プレビュー期間中は、**非実稼働** 環境でこのアプローチを使用することをお勧めします。
 
 ## <a name="what-happens-to-requests-if-the-user-didnt-retry-a-throttled-request"></a>ユーザーが調整された要求を再試行しなかった場合は、要求にどのような影響がありますか?
 

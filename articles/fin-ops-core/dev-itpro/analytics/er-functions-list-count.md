@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c48483a6677aaeb36eac57a57cec71bf54c7991d
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: b3a5bb33964c70c85c7d8571057060c1c2b9d433
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3745348"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687723"
 ---
 # <a name="count-er-function"></a>COUNT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`COUNT` 関数は、リストが空でない場合に、指定されたリストのレコード数を表す*整数*値を返します。 リストが空の場合は、この関数は **0** (ゼロ) を返します。
+`COUNT` 関数は、リストが空でない場合に、指定されたリストのレコード数を表す *整数* 値を返します。 リストが空の場合は、この関数は **0** (ゼロ) を返します。
 
 ## <a name="syntax"></a>構文
 

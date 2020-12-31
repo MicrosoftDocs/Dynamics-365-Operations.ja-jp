@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: a765d51c-52d3-45c5-b578-63b5242c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: 47d5c98060f2d58c065aec59c7665a6020342ed4
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: eabcae712765496f2748bce3ccb2f654224b1b60
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081957"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694118"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -49,7 +48,7 @@ ms.locfileid: "3081957"
 
 ## <a name="accessibility-support-for-controls-and-forms-developed-using-the-cloud-platform"></a>クラウド プラットフォームを使用して開発されたコントロールとフォームのユーザー補助サポート
 
-アクセス可能なソフトウェアを提供するに対する取り組みを再確認することにより、この更新プログラムは既に豊富なユーザー補助機能セットを増やすことに焦点を当てています。 これらの更新プログラムは、Microsoft のアクセシビリティ標準に準拠するために、グリッド、表、フォームなどの多くのプラットフォーム コンポーネントを改善します。キーボードを使用したタスクの実行の詳細サポートには、スクリーン リーダー、ハイコントラスト テーマや完全なラベル サポート、およびクラウド プラットフォームを使用して作成されたアプリケーションとの豊富な統合があり、これにより障害のあるユーザーのための追加環境が提供されます。
+アクセス可能なソフトウェアを提供するに対する取り組みを再確認することにより、この更新プログラムは既に豊富なユーザー補助機能セットを増やすことに焦点を当てています。 これらの更新プログラムは、Microsoft のアクセシビリティ標準に準拠するために、グリッド、表、フォームなどの多くのプラットフォーム コンポーネントを改善します。 キーボードを使用したタスクの実行の詳細サポートには、スクリーン リーダー、ハイコントラスト テーマや完全なラベル サポート、およびクラウド プラットフォームを使用して作成されたアプリケーションとの豊富な統合があり、これにより障害のあるユーザーのための追加環境が提供されます。
 
 ## <a name="client-based-alerts"></a>クライアントに基づく警告
 
@@ -100,7 +99,7 @@ Dynamics 365 for Finance and Operations ではカスタム フィールドへの
 
 **ISO 27001(Secure)** – ISO 27001 認証は、サービスが情報セキュリティ管理システム (ISMS) で概説されているコントロールおよび仕様に準拠していることを確認します。 ISO 27001 を達成することにより、お客様のビジネスを実行するために当社のサービスが安全であることが保証されます。 これを選択した場合は、ISO27001 認定サービスでビジネスを実行していることを監査人に安心させることで、自分のビジネスを証明するサポートにも役立ちます。
 
-**ISO 27018 (個人データの保護)** – ISO 27018 は、クラウド内の個人情報の保護を対象としています。 Dynamics 365 for Finance and Operations は ISO 27018 認証を取得しています。マイクロソフトのサービスを使用して業務を管理するとき、個人の機密データはクラウドで安全かつ保護されることを理解していただくことを望みます。また、業務に独自の ISO 27018 認証の取得を選択した場合、監査担当者は Finance and Operations に ISO 27108 認証があることを評価します。 
+**ISO 27018 (個人データの保護)** – ISO 27018 は、クラウド内の個人情報の保護を対象としています。 Dynamics 365 for Finance and Operations は ISO 27018 認証を取得しています。 マイクロソフトのサービスを使用して業務を管理するとき、個人の機密データはクラウドで安全かつ保護されることを理解していただくことを望みます。 また、業務に独自の ISO 27018 認証の取得を選択した場合、監査担当者は Finance and Operations に ISO 27108 認証があることを評価します。 
 
 **SOC-1/Type-2 および SOC-2/Type-2** – サービス組織制御レポート (SOC) は、クラウド サービスに財務データが安全かつ保護されていることを保証するためのコントロールの設定があることを確認するのに役立ちます。 Finance and Operations は、SOC-1/Type-2 および SOC-2/Type-2 の認証を取得しています。
 
@@ -158,4 +157,4 @@ public final class abClassTable_Extension
 }
 ```
 
-フォームまたはフォーム拡張は、DataMethod プロパティに **\<ClassName\>.\<MethodName\>** を指定することによって、フォーム コントロールから表示および編集メソッドを消費することができます。
+フォームまたはフォーム拡張は、DataMethod プロパティで **\<ClassName\>.\<MethodName\>** を指定することによって、フォーム コントロールから表示および編集メソッドを 消費することができます。

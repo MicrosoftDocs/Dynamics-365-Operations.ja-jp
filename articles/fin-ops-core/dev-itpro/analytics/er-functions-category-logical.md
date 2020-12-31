@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
-ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
+ms.openlocfilehash: a37b3341b05fde1283a21a0c52faec26cd1a7030
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3705098"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686192"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>論理カテゴリ内の ER 関数のリスト
 
@@ -35,13 +34,13 @@ ms.locfileid: "3705098"
 
 | 職務 | 説明 |
 |----------|-------------|
-| [かつ](er-functions-logical-and.md)                       | この関数は、指定したすべての条件が true である場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
+| [かつ](er-functions-logical-and.md)                       | この関数は、指定したすべての条件が true である場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 |
 | [ケース](er-functions-logical-case.md)                     | この関数は、指定された代替オプションに対して指定された式の値を評価し、指定された式の値に等しい最初のオプションの結果を返します。 それ以外の場合は、オプションの前にはない、呼び出された関数の最後の引数としてデフォルト結果が指定されている場合、オプションのデフォルト結果を返します。 返される値は、サポートされているいずれかのデータ型の値にすることができます。 |
 | [次の場合](er-functions-logical-if.md)                         | この関数は、特定の条件が満たされている場合、最初に指定された値を返します。 それ以外の場合、2 つ目に指定された値を返します。 返される値は、サポートされているいずれかのデータ型の値にすることができます。 |
-| [ない](er-functions-logical-not.md)                       | この関数は、指定された条件の取消論理値を*ブール*値として返します。 |
-| [Or](er-functions-logical-or.md)                         | この関数は、指定したすべての条件が false である場合、**FALSE** の*ブール*値を返します。 指定した任意の条件が true である場合、関数は **TRUE** の*ブール*値を返します。 |
-| [ValueIn](er-functions-logical-valuein.md)               | この関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
-| [ValueInLarge](er-functions-logical-valueinlarge.md)     | この関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。 |
+| [ない](er-functions-logical-not.md)                       | この関数は、指定された条件の取消論理値を *ブール* 値として返します。 |
+| [Or](er-functions-logical-or.md)                         | この関数は、指定したすべての条件が false である場合、**FALSE** の *ブール* 値を返します。 指定した任意の条件が true である場合、関数は **TRUE** の *ブール* 値を返します。 |
+| [ValueIn](er-functions-logical-valuein.md)               | この関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | この関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 |
 
 
 ## <a name="additional-resources"></a>追加リソース

@@ -3,24 +3,23 @@ title: オンプレミス環境の問題を解決するためのスクリプト
 description: このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
 author: faix
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: a53ceb54ca7119d7c13c574326a68cfcea6b4751
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 25988d97e2ae8dbc7272da85f3cf27f5670de8db
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124821"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687326"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]
@@ -50,6 +49,8 @@ ms.locfileid: "3124821"
     #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
 
     #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+    
+    #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
     ```
 
 3. このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。 このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。 ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。 修正する必要があるその他の問題について、この手順を繰り返します。
@@ -222,4 +223,75 @@ foreach( $file in $delete)
 }
 
 Write-Output "TSG WindowsAzureStorage script succeeded"
+```
+
+
+## <a name="tsg_removefilesfromzipps1"></a><a name="taxengine"></a>TSG\_RemoveFilesFromZip.ps1
+
+次のスクリプトは、以前バージョン 10.0.5 から 10.0.9 を使用していた一部の顧客に発生する問題を修正するために使用されます。 準備プロセスの仕組みにより、TaxEngine フォルダーにはいくつかの古いバージョンの DLL が 残っていますが、新しいリリースでは、別のモジュールフォルダに移動されています。 このスクリプトを使用すると、DLL が AOS ノードに配置される前に、ダウンロードした資産から削除されます。
+
+```powershell
+[CmdletBinding()]
+param
+(
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+    [ValidateNotNullOrEmpty()]
+    [string[]]$filesToRemove
+)
+
+#requires -Version 5
+$ErrorActionPreference = 'Stop'
+$InformationPreference = 'Continue'
+$files = @()
+
+[Reflection.Assembly]::LoadWithPartialName('System.IO.Compression')
+
+if(! (Test-Path $AgentShare))
+{
+    throw "The path provided for the agentshare is not valid/accessible."
+}
+
+ForEach($file in $FilesToRemove)
+{
+    if(!$file.StartsWith('Packages'))
+    {
+        throw "The path of $file does not start with Packages."
+    }
+    $files += $file.Replace('\', '/')
+} 
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\Apps | Select-Object -First 1 -Expand FullName
+
+#Some customers experience an unexpected behavior with the previous command.
+if($basePath -notmatch "\AOS")
+{
+    $basePath = Join-Path $basePath -ChildPath "\AOS" 
+}
+
+$basePath = Join-Path $basePath -ChildPath "AXServiceApp\AXSF\Code"
+$zipfile = Join-Path $basePath -ChildPath "Packages.zip"
+
+try
+{
+    $stream = New-Object IO.FileStream($zipfile, [IO.FileMode]::Open)
+    $mode   = [IO.Compression.ZipArchiveMode]::Update
+    $zip    = New-Object IO.Compression.ZipArchive($stream, $mode)
+
+    ($zip.Entries | ? { $files -contains $_.FullName }) | % { $_.Delete() } | Write-Host
+}
+catch
+{
+    throw 'An Error Occurred'
+}
+finally
+{
+    $zip.Dispose()
+    $stream.Close()
+    $stream.Dispose() 
+}
+
 ```

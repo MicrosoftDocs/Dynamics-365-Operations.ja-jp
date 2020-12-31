@@ -3,24 +3,23 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 290f7026e5276665a9a60810fc8d4d3b960d0e19
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: 7b5e6b38aedb17850e0fe41cc81c182c2608dc78
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830727"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686345"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -33,13 +32,18 @@ ms.locfileid: "3830727"
 > 
 > 古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。
 
+> [!CAUTION]
+> この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。 
+>
+> 証明書ローテーションをする前に Service Fabric Clusterを 7.2. x にアップグレードします。
+
 ## <a name="preparation-steps"></a>準備段階 
 
-1. プロセス中に作成した元の**インフラストラクチャ**フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu12.md#downloadscripts)するようにします。 フォルダーの名前を **InfrastructureOld** に変更します。
+1. プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu12.md#downloadscripts)するようにします。 フォルダーの名前を **InfrastructureOld** に変更します。
 
 2. [LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu12.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。 **infrastructure** という名前のフォルダーにファイルを解凍します。
 
-3. **Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から**インフラストラクチャ**にコピーします。
+3. **Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。
 
 4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書をコンフィギュレーションする](setup-deploy-on-premises-pu12.md#configurecert)の手順に従って、特に、次の手順を実行します。
 
@@ -218,7 +222,7 @@ ms.locfileid: "3830727"
 3. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。
 
     > [!NOTE] 
-    > **KeyId \<key\> による既存の資格情報の更新は許可されていません**というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。
+    > **KeyId \<key\> による既存の資格情報の更新は許可されていません** というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。
 
 4. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。
 
@@ -288,13 +292,13 @@ ms.locfileid: "3830727"
 
     ![配置設定のサムプリント画像 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
-4. **準備**を選択します。
+4. **準備** を選択します。
 
 5. ダウンロードおよび準備が完了すると、**環境の更新** ボタンが表示されます。
 
     ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
 
-6. **環境の更新**を選択して、環境の更新を開始します。
+6. **環境の更新** を選択して、環境の更新を開始します。
 
 7. 更新中、環境は使用できません。
 

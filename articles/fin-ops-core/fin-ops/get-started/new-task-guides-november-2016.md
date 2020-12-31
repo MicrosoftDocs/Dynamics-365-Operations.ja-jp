@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811604"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695040"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>新規または更新されたタスク ガイド (2016 年 11 月)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811604"
 
 このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 – すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
-APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft DynamicsAX プラットフォーム更新プログラム 2、Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
+APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft DynamicsAX プラットフォーム更新プログラム 2、Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、 [Finance and Operations ホームページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
 > [!NOTE]
 > ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイド  Dynamics 365 for Operations 2016 年 11 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
@@ -40,7 +39,7 @@ APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Mic
 | BPM ライン                                                                                           | 国/地域 |
 |----------------------------------------------------------------------------------------------------|----------------|
 | 承認仕訳帳を使用した AP システムの主請求書データ                                               | グローバル         |
-| 仕入先請求書を使用した AP システムの主請求書データ (一致する仕入先請求書の入力と転記） | グローバル         |
+| 仕入先請求書を使用した AP システムの主請求書データ (一致する仕入先請求書の入力と転記) | グローバル         |
 | 請求仕訳帳を使用した AP システムの主請求書データ                                              | グローバル         |
 | 請求管理グループを使用した AP システムの主請求書データ                                                 | グローバル         |
 | 仕入先請求書の受領の記録および入庫済数量との照合                           | グローバル         |
@@ -545,6 +544,6 @@ APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Mic
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
-[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)

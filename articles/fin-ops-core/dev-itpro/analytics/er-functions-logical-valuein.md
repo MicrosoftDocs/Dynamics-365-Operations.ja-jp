@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4f88c0d71b6fa6980ee8e180ae5be482a463f1c
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 0a133067ab74c711084cc1d7f456cbe49acdf79d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744674"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686933"
 ---
 # <a name="valuein-er-function"></a>VALUEIN ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`VALUEIN` 関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。
+`VALUEIN` 関数は指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +54,7 @@ VALUEIN (input, list, list item expression)
 
 *ブール型*
 
-結果*ブール*値。
+結果 *ブール* 値。
 
 ## <a name="usage-notes"></a>使用上の注意
 
@@ -69,7 +68,7 @@ VALUEIN (input, list, list item expression)
 
 ## <a name="example-1"></a>例 1
 
-モデル マッピングで、*計算済フィールド* タイプの**リスト** データ ソースを定義します。 このデータ ソースには、式 `SPLIT ("a,b,c", ",")` が含まれています。
+モデル マッピングで、*計算済フィールド* タイプの **リスト** データ ソースを定義します。 このデータ ソースには、式 `SPLIT ("a,b,c", ",")` が含まれています。
 
 データ ソースが呼び出されると、`VALUEIN ("B", List, List.Value)` 式として構成されている場合は、**TRUE** を返します。 この場合、`VALUEIN` 関数は次の一連の条件に変換されます。`("B" = "b")` が **TRUE** と等しい場合、`(("B" = "a") or ("B" = "b") or ("B" = "c"))`。
 
@@ -90,7 +89,7 @@ VALUEIN (input, list, list item expression)
 モデル マッピングでは、次のデータ ソースを定義します。
 
 - *テーブル レコード* タイプの **In** データ ソース。 このデータ ソースは、イントラスタット テーブルを参照します。
-- *テーブル レコード* タイプの**ポート** データ ソース。 このデータ ソースは、IntrastatPort テーブルを参照します。
+- *テーブル レコード* タイプの **ポート** データ ソース。 このデータ ソースは、IntrastatPort テーブルを参照します。
 
 `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` 式として構成されたデータ ソースが呼び出されると、次の SQL ステートメントが生成され、イントラスタット テーブルのフィルターされたレコードを返します。
 
@@ -107,7 +106,7 @@ where IntrastatPort.PortId = Intrastat.Port
 モデル マッピングでは、次のデータ ソースを定義します。
 
 - *計算済フィールド* タイプの **Le** データ ソース。 このデータ ソースには、式 `SPLIT ("DEMF,GBSI,USMF", ",")` が含まれています。
-- *テーブル レコード* タイプの **In** データ ソース。 このデータ ソースはイントラスタット テーブルを参照し、**会社間**オプションが有効になっています。
+- *テーブル レコード* タイプの **In** データ ソース。 このデータ ソースはイントラスタット テーブルを参照し、**会社間** オプションが有効になっています。
 
 `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` 式として構成されたデータ ソースが呼び出されると、最終的な SQL ステートメントには次の条件が含まれています。
 

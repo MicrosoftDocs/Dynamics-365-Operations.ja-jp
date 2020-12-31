@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 06101f13816397048a344b585c586d8dd8d6091b
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 4cec65cc9d9d25a42e8a697d187f7bbf61e70eb9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967272"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687557"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -48,6 +47,9 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
 次の図は、拡張機能のクラス ダイアグラムを示しています。
 
 ![Commerce Scale Unit の拡張機能クラス ダイアグラム](media/RSExtensionClass.png)
+
+> [!NOTE]
+> Retail サーバーでは、IController と CommerceController の両方の拡張機能の読み込みはサポートされていません。 両方のタイプの拡張機能を含めると、Retail サーバーの負荷は失敗します。 拡張機能は IController または CommerceController のいずれかである必要があります。 IController 拡張機能に移行する場合は、すべての Retail サーバー拡張機能を IController に移行します。
 
 ## <a name="create-a-new-retail-server-api"></a>新しい Retail Server API の作成
 
@@ -172,7 +174,7 @@ namespace Contoso.UnboundController.Sample
 
 ```
 
-Retail Server API では、さまざまな承認ロールがサポートされています。 コントローラー メソッドへのアクセスは、コントローラー メソッドの**承認**属性で指定された承認ロールに基づいて許可されます。 次の例は、サポートされている承認ロールを示しています。 拡張コードは、**承認**属性の代わりに **CommerceAuthorization** 属性を使用することはできません。 **CommerceAuthorization** 属性は、10.0.11 より前の SDK バージョンでのみサポートされています。
+Retail Server API では、さまざまな承認ロールがサポートされています。 コントローラー メソッドへのアクセスは、コントローラー メソッドの **承認** 属性で指定された承認ロールに基づいて許可されます。 次の例は、サポートされている承認ロールを示しています。 拡張コードは、**承認** 属性の代わりに **CommerceAuthorization** 属性を使用することはできません。 **CommerceAuthorization** 属性は、10.0.11 より前の SDK バージョンでのみサポートされています。
 
 
 ```csharp
@@ -234,6 +236,10 @@ public static class CommerceRoles
 
 Retail Server 拡張 API を使用して、**EdmModelExtender** ファイルを拡張機能に追加する必要はありません。 これらのファイルは、Retail SDK バージョン 10.0.10 またはそれ以前を使用している場合にのみ必要です。
 
+### <a name="debugging-rs-extension"></a>RS 拡張機能のデバッグ
+
+Visual Studio で RS 拡張機能プロジェクトをデバッグする方法。 **デバッグ > プロセスに添付する** に移動します。 w3wp.exe (Retail Server の IIS プロセス) を選択します。 複数の w3wp.exe プロセスがある場合は、プロセス ID に基づいて適切なプロセスを使用します。 Retail サーバー プロセス IDは、**IIS > ワーカー プロセス** を使用するか、コマンド プロンプトと tasklist コマンドを使用して見つけることができます。
+
 ## <a name="generate-the-typescript-proxy-for-pos"></a>POS Typescript プロキシの生成
 
 POS は Typescript プロキシ を使って、Retail サーバー API や CRT エンティティにアクセスします。 プロキシ クラスは、サービスを実行するためのクラスまたは Wrapper として機能し、プロキシ拡張機能を使用せずに Retail Server API やエンティティ メタデータを検索することによって、Retail Server API にアクセスします。
@@ -257,13 +263,13 @@ POS は Typescript プロキシ を使って、Retail サーバー API や CRT �
     <Copy SourceFiles="@(GeneratedDataServiceContracts)" DestinationFolder="$(SdkRootPath)\POS\Extensions\Sample\DataService" SkipUnchangedFiles="true" />
     ```
 
-6. 変更が完了したら、プロキシ プロジェクトをビルドして TypeScript プロキシ ファイルを生成します。 ビルドが完了すると、**\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService** フォルダーでプロキシ ファイルが使用可能となり、そのフォルダーは**コピー** コマンドによって指定されます。 パスとフォルダー パスは、フォルダ構造によって異なる場合があります。
+6. 変更が完了したら、プロキシ プロジェクトをビルドして TypeScript プロキシ ファイルを生成します。 ビルドが完了すると、**\\RetailSDK\\Code\\SampleExtensions\\TypeScriptProxy\\TypeScriptProxy.Extensions.StoreHoursSample\\DataService** フォルダーでプロキシ ファイルが使用可能となり、そのフォルダーは **コピー** コマンドによって指定されます。 パスとフォルダー パスは、フォルダ構造によって異なる場合があります。
 
 ## <a name="retail-server-extension-in-offline"></a>オフラインの Retail Server 拡張機能
 
 **Microsoft.Dynamics.Commerce.Hosting.Contracts** API を使用してビルトされた Retail Server 拡張機能は、オフライン実装でも使用できます。 個別の C# プロキシ ライブラリを生成する必要はありません。 **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** フォルダーにある Retail Server 拡張機能ライブラリをコピーして、 **RetailProxy.MPOSOffline.ext** 構成ファイルにこのライブラリを含めるように構成します。 この拡張機能では、Typescript プロキシのみを生成する必要があります。 SDK サンプルは、**\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** フォルダーにあります。
 
-次の例は、**RetailProxy.MPOSOffline.ext** 構成ファイル内の要素の**追加**を更新する方法を示しています。
+次の例は、**RetailProxy.MPOSOffline.ext** 構成ファイル内の要素の **追加** を更新する方法を示しています。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 

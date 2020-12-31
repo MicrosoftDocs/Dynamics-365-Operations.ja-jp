@@ -1,7 +1,7 @@
 ---
 title: PageData タイプ
 description: ページに読み込まれたデータを表します。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 590b1188dcc1b2abe9c67b695278bb91e49043c3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: e88bf49b7f759191d3a74bb1623ff86a1408a4e2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980673"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687314"
 ---
 # <a name="pagedata-type"></a>PageData タイプ
 

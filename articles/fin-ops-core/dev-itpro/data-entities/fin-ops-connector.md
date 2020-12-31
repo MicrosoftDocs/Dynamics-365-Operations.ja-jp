@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 341fd38b7efed5275b6512ed453669d785963f2b
-ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
+ms.openlocfilehash: 8f5202dcaca712120742e75d8bf94b588479f352
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946203"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688067"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 
@@ -40,7 +39,7 @@ ms.locfileid: "2946203"
 - [定期統合](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## <a name="triggers"></a>トリガー
-ビジネス イベントは、*ビジネス イベントが発生した場合*にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、 [Microsoft Power Automate のビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) および [ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page) を参照してください。
+ビジネス イベントは、*ビジネス イベントが発生した場合* にトリガーを使用して公開されます。 ビジネス イベントに関する詳細については、 [Microsoft Power Automate のビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) および [ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page) を参照してください。
 
 ## <a name="actions"></a>アクション
 
@@ -50,9 +49,9 @@ ms.locfileid: "2946203"
 
 このアクションは、ターゲット インスタンスから特定のデータ エンティティのレコードをフェッチするために使用できます。
 
-*インスタンス*は、コネクタが接続するアプリケーションのターゲット インスタンスの URL を参照します。 予測値は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス* は、コネクタが接続するアプリケーションのターゲット インスタンスの URL を参照します。 予測値は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
-*エンティティ名*は、レコードをフェッチする必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
+*エンティティ名* は、レコードをフェッチする必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
 
 *オブジェクト ID* は、フェッチする必要のあるレコードを一意に識別するために指定する必要のある主キーのフィールドを参照します。 エンティティで定義されている順序で、コンマ区切りの値のリストとして値を指定する必要があります。
 
@@ -60,9 +59,9 @@ ms.locfileid: "2946203"
 
 このアクションを使用して、データ エンティティのデータ レコードを作成できます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス* は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
-*エンティティ名*は、レコードを作成する必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
+*エンティティ名* は、レコードを作成する必要があるデータ エンティティを参照します。 ドロップダウン メニューは、ターゲット環境のデータ エンティティの一覧を表示します。
 
 表示されるフィールドの一覧は、選択したデータ エンティティに基づいて異なります。
 
@@ -78,12 +77,12 @@ ms.locfileid: "2946203"
 
 このアクションを使用して、ビジネス アクションを実行するメソッドをデータ エンティティ上で呼び出すことができます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス* は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
 
-*アクション*は、実行する必要があるデータ エンティティ上のメソッドを参照します。 表示されるフィールドの一覧は、選択したメソッドに基づいて異なります。 これらのフィールドは、選択したメソッドのパラメーターを表します。
+*アクション* は、実行する必要があるデータ エンティティ上のメソッドを参照します。 表示されるフィールドの一覧は、選択したメソッドに基づいて異なります。 これらのフィールドは、選択したメソッドのパラメーターを表します。
 
 **エンティティの一覧を取得する**
 
 このアクションを使用してエンティティの一覧を取得し、開発中のアプリで使用することができます。
 
-*インスタンス*は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。
+*インスタンス* は、コネクタが接続するターゲット インスタンスの URL を参照します。 この値の構文は、「https://」' 接頭語のない URL を入力するか、またはドロップダウン メニューからいずれかを選択します。 これは、Power Automate、Power Apps、ロジック アプリなどの特定のクライアントへのサインインに使用されたユーザー アカウントの Azure Active Directory テナントに配置されている、すべての環境のリストです。

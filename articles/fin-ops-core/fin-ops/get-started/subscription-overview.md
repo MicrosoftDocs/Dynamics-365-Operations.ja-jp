@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: a4647afbab926b954de9283b58fb00827e0ae9ae
-ms.sourcegitcommit: 47d77535aca36b9f98801cb00e5ad2ae1386b3b9
+ms.openlocfilehash: 18b4940df646b37e3d394fb14c23ef78b84b8cba
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686581"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693689"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 
@@ -55,7 +54,7 @@ ms.locfileid: "3686581"
 
 ## <a name="what-if-i-forget-to-delete-the-existing-environments-before-i-suspend-the-existing-subscription"></a>既存のサブスクリプションを一時停止する前に既存の環境を削除するのを忘れた場合はどうすればよいですか。
 
-サブスクリプションを中断する前に、既存の環境の割り当てを解除して削除しないと、環境は**配置済み**状態のままになります。 ただし、これらの環境の全詳細にアクセスしようとすると、エラー メッセージが表示されます。
+サブスクリプションを中断する前に、既存の環境の割り当てを解除して削除しないと、環境は **配置済み** 状態のままになります。 ただし、これらの環境の全詳細にアクセスしようとすると、エラー メッセージが表示されます。
 
 ## <a name="can-i-have-a-csp-agreement-and-a-volume-licensing-agreement-in-parallel"></a>CSP 契約とボリューム ライセンス契約を並行して締結することはできますか？
 
@@ -63,14 +62,14 @@ ms.locfileid: "3686581"
 
 ## <a name="how-can-i-find-the-tenant-name-and-tenant-id-within-lcs"></a>LCS 内のテナント名とテナント ID をどのように見つけますか?
 1. LCS のプロジェクト ホーム ページに移動します。
-2. **環境**セクションで、**利用可能なサブスクリプション**を選択します。
-3. **利用可能なサブスクリプション** ページで、**テナント名**および**テナント ID** が表示されます。
+2. **環境** セクションで、**利用可能なサブスクリプション** を選択します。
+3. **利用可能なサブスクリプション** ページで、**テナント名** および **テナント ID** が表示されます。
 
 ## <a name="how-can-i-find-the-subscription-status"></a>サブスクリプションのステータスをどのように見つけますか?
 1. LCS のプロジェクト ホーム ページに移動します。
-2. **環境**セクションで、**利用可能なサブスクリプション**を選択します。
-3. **利用可能なサブスクリプション**ページで、テナントへが利用できるすべての**サービス プラン**が表示されます。  
-4. **割り当てられた日**は、サービス プランのステータスが変更された日付を示します。 
+2. **環境** セクションで、**利用可能なサブスクリプション** を選択します。
+3. **利用可能なサブスクリプション** ページで、テナントへが利用できるすべての **サービス プラン** が表示されます。  
+4. **割り当てられた日** は、サービス プランのステータスが変更された日付を示します。 
 
 ## <a name="how-would-the-subscription-status-impact-the-environment"></a>サブスクリプション ステータスは環境にどのように影響しますか?
 環境の操作の一部は、次のサブスクリプション ステータスにより影響を受ける可能性があります:

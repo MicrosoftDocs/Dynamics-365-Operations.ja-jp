@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18391
 ms.assetid: f62f5636-4d63-473e-b326-277ea500c540
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1e8f6d2f8ef112cdc2100707998c15dc965248a4
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 3f1dd62244d7c360cb38c64e44c397f00a72ea37
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983746"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688209"
 ---
 # <a name="install-the-security-development-tool"></a>セキュリティ開発ツールをインストールする
 
@@ -45,27 +44,29 @@ ms.locfileid: "2983746"
 ### <a name="install-the-tool"></a>ツールのインストール
 
 1.  SecurityDevelopmentTool.msi フォームを「[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)」の Downloadable ツールからダウンロードします (Microsoft のアカウントでログインする場合のみ Downloadable ツールはアクセス可能です。組織アカウントでサインインすると表示されませんので注意してください)
-2.  **SecurityDevelopmentTool.msi** を実行して**インストール ウィザード**を開きます。
-3.  Microsoft ソフトウェア ライセンス条件に同意し、**インストール**をクリックします。
-4.  ツールが正常にインストールされたことを示すメッセージが表示されたら、**完了** をクリックします。 **インストール** **ウィザード**の実行が完了すると、ファイルは次の場所で使用できます。
+2.  **SecurityDevelopmentTool.msi** を実行して **インストール ウィザード** を開きます。
+3.  Microsoft ソフトウェア ライセンス条件に同意し、**インストール** をクリックします。
+4.  ツールが正常にインストールされたことを示すメッセージが表示されたら、**完了** をクリックします。 **インストール** **ウィザード** の実行が完了すると、ファイルは次の場所で使用できます。
     -   64 ビット システム用: %ProgramFiles (x86)%Microsoft%Security 開発ツール
     -   32 ビット システム用: %ProgramFiles%Microsoft%Security 開発ツール
 
 ### <a name="import-and-compile-the-tool"></a>ツールのインポートおよびコンパイル
 
 1.  使用している Application Object Server (AOS) のインスタンスからクライアント接続を排除します。 詳細については、[AOS からユーザーを排除](https://technet.microsoft.com/library/hh433538.aspx) を参照してください。
-2.  **管理ツール**に移動し、**サービス**をクリックし、**Microsoft Dynamics AX Object Server 6.0** サービスを停止します。
+2.  **管理ツール** に移動し、**サービス** をクリックし、**Microsoft Dynamics AX Object Server 6.0** サービスを停止します。
 3.  Windows PowerShell または AXUtil を使用して、**SecurityDevelopmentTool.axmodel** モデルを Microsoft Dynamics AX AOT にインポートします。
-    1.  スタートメニューで、**すべてのプログラム**をポイントし、**管理ツール**をポイントして、**Microsoft Dynamics AX 管理シェル**をクリックします。
+    1.  スタートメニューで、**すべてのプログラム** をポイントし、**管理ツール** をポイントして、**Microsoft Dynamics AX 管理シェル** をクリックします。
     2.  Windows PowerShell コマンド プロンプト PS C:&gt; で、次のコマンドを入力して Enter キーを押します。
 
-            Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
+        ```powershell
+        Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
+        ```
 
         詳細については、「[方法: モデルのエクスポートとインポート](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)」を参照してください。
 
 4.  Microsoft Dynamics AX Object Server 6.0 サービスを開始します。
 5.  Microsoft Dynamics AX クライアントを起動します。 モデル ストアが変更されました。ダイアログ ボックスが開きます。
-6.  **コンパイルして同期**をクリックします。
+6.  **コンパイルして同期** をクリックします。
 7.  同期が完了したときに、**Ctrl+Shift+W** を押して、開発ワークスペースを開きます。
 8.  **SysSecEntryPointManagerSetup** クラスを実行して以下のメニュー項目を標準  Microsoft Dynamics AX メニューに追加します。
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 203464
 ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 200b2acd801e4569b7eec504fa964bb6ac9a896f
-ms.sourcegitcommit: 49bee13f0df00e50b5a6c1a3d227246cb5cc50d8
+ms.openlocfilehash: 7d3c3f207d7a5ff249eac67cf809b5a353a6e8f6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3827256"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686313"
 ---
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 

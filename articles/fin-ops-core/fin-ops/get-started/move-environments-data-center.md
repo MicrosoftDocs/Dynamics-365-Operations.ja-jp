@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 44296225770191a3e841d7fb186d1d7dbfcd2a8e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ff7feb8bdccef8e86425dfaba3f5ecca7168fdcf
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003692"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695076"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -34,7 +33,7 @@ ms.locfileid: "3003692"
 
 Microsoft により同じデータ センターですべての環境を維持するよう求められます。 環境を別のデータ センターに移行する場合、最終的にはすべての環境を同じデータ センターに展開することを計画する必要があります。
 
-環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の**環境の管理**ページ上で確認できます。
+環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の **環境の管理** ページ上で確認できます。
 
 データ センターを変更するには、すべての環境を再配置する必要があります。 サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは実稼動環境のプロセスとは異なります。
 
@@ -61,11 +60,11 @@ Microsoft により同じデータ センターですべての環境を維持す
 1. コードのすべてのパッケージが LCS でアセット ライブラリにアップロードされていることを確認します。
 2. 各環境について、次の手順を実行します。
 
-    1. LCS で**完全な詳細**を選択します。
-    2. 環境を停止してから、環境が停止した時に、**割り当て解除**を選択します。
-    3. 割り当て解除が完了した後、**削除**を選択します。
-    4. この環境が削除された後、**構成**を選択し、環境を再配置します。
-    5. **地理/場所**フィールドで、使用するデータ センターを選択します。
+    1. LCS で **完全な詳細** を選択します。
+    2. 環境を停止してから、環境が停止した時に、**割り当て解除** を選択します。
+    3. 割り当て解除が完了した後、**削除** を選択します。
+    4. この環境が削除された後、**構成** を選択し、環境を再配置します。
+    5. **地理/場所** フィールドで、使用するデータ センターを選択します。
     6. 環境が再配置された後は、コード パッケージを適用します。
     7. 再配置された環境がビルド環境として使用されている場合は、 [継続的なビルドとテストの自動化をサポートする環境を配置して使用](../../dev-itpro/perf-test/continuous-build-test-automation.md) に記載されている必要なコンフィギュレーションを完了します。
     8. データを復元します。

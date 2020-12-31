@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ef0977c3d686d02eeec4f0f8a11b9a4c709cdfb1
-ms.sourcegitcommit: e4ec76a7b3865a2796d0654e2cd65c1ce193cad9
+ms.openlocfilehash: 25e24b7de84ecdec2402a957f781505094857814
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "3552244"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693445"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 
@@ -51,7 +50,7 @@ Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理�
 
 一連番号 セキュリティ以外の修正プログラムも規制更新プログラムも、製品ライフサイクルの延長サポート フェーズでは、Dynamics AX 製品に対しては入手できなくなります (Dynamics AX 2009 SP1、Dynamics AX 2012、または Dynamics AX 2012 R2)。
 
-特定の製品のセキュリティ以外の修正プログラムをリクエストする機能は Unified Support Advanced and Performance Levels に含まれていますが、Microsoft は*ビジネス上合理的な*努力ではこれらの製品に対してセキュリティ以外の修正プログラムを提供できないと判断しました。その結果、セキュリティ以外の修正プログラムや規制更新プログラムに対する要求は受け付けられません。 ただし、Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。 Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、それらの変更を必要に応じて選択的に統合できます。 顧客やパートナーは、LCS で公開されている、および LCS 問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
+特定の製品のセキュリティ以外の修正プログラムをリクエストする機能は Unified Support Advanced and Performance Levels に含まれていますが、Microsoft は *ビジネス上合理的な* 努力ではこれらの製品に対してセキュリティ以外の修正プログラムを提供できないと判断しました。 このため、セキュリティ以外の修正プログラムや規制更新プログラムに対する要求は受け付けられません。 ただし、Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。 Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、それらの変更を必要に応じて選択的に統合できます。 顧客やパートナーは、LCS で公開されている、および LCS 問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
 
 ### <a name="i-knew-about-the-regulatory-change-before-october-9-2018-but-it-has-the-law-enforcement-date-after-october-9-2018-will-i-still-get-a-regulatory-update-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>2018 年 10 月 9 日より前に規制の変更について知っていましたが、法律実施日は 2018 年 10 月 9 日より後です。 それでも Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 の規制更新プログラムを入手できますか?
 

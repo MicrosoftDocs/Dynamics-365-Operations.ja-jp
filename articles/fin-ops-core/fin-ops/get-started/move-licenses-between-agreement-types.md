@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: c0e105678d210b491588ba39e1610367e0261c64
-ms.sourcegitcommit: 990dd96d1dcd462928aa0029ff84a8185198e5de
+ms.openlocfilehash: 871469f42fcf154b474ee8ddff1c630e7c3fdfc0
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3287834"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695075"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
@@ -89,10 +88,10 @@ ms.locfileid: "3287834"
 
 古い契約下で配置されたすべての環境で、次の手順を実行します。 環境を削除した後、再び使用したり再配置したりしないでください。
 
-1. LCS の、**環境の詳細**ページで、**完全な詳細**を選択します。
-2. 環境を停止してから、環境が停止した時に、**割り当て解除**を選択します。
-3. 割り当て解除が完了したとき、**削除**を選択します。
-4. 環境が削除されたら、**コンフィグレーション**を選択します。
+1. LCS の、**環境の詳細** ページで、**完全な詳細** を選択します。
+2. 環境を停止してから、環境が停止した時に、**割り当て解除** を選択します。
+3. 割り当て解除が完了したとき、**削除** を選択します。
+4. 環境が削除されたら、**コンフィグレーション** を選択します。
 
 ### <a name="update-environments"></a>環境の更新
 

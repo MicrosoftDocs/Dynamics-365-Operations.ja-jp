@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 572feac8dca997ada6934a53db9a4241f9efd229
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 27d935ecd9e676a19a3bce2470878ad2b435b8ee
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893347"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688107"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントと Microsoft Power Automate
 
@@ -39,11 +38,11 @@ ms.locfileid: "3893347"
 
 2.  Power Automate リソースを作成するために必要なアクセス許可のある既存の環境を選択します。 既定の環境は、すべての会社に対して開かれています。
 
-3.  **空白から新規 \> を作成する**選択します。
+3.  **空白から新規 \> を作成する** 選択します。
 
 4.  **Dynamics 365 for Finance and Operations** を検索して、コネクタを選択します。
      
-5.  **ビジネス イベントが発生した場合**という名称のトリガーを確認できます。 このトリガーを選択します。
+5.  **ビジネス イベントが発生した場合** という名称のトリガーを確認できます。 このトリガーを選択します。
 
 6.  環境インスタンス、カテゴリ、イベント名称、法的エンティティを選択します。 
     > [!TIP]
@@ -61,7 +60,7 @@ ms.locfileid: "3893347"
 
     <img alt="Parse JSON input " src="../../media/BEF-Howto-Flow-07.png" width="50%">
 
-10. コントラクトのスキーマを入力します。 アプリでは、サンプルのペイロードしか提供されないため、ペイロードからスキーマを生成する Power Automate の機能を使用することができます。 カタログ内のイベントを選択し (例えば、顧客の支払)、**スキーマのダウンロード**リンクを選択します。 テキストファイルがダウンロードされます。 テキストファイルを開き、内容をコピーします。
+10. コントラクトのスキーマを入力します。 アプリでは、サンプルのペイロードしか提供されないため、ペイロードからスキーマを生成する Power Automate の機能を使用することができます。 カタログ内のイベントを選択し (例えば、顧客の支払)、**スキーマのダウンロード** リンクを選択します。 テキストファイルがダウンロードされます。 テキストファイルを開き、内容をコピーします。
 
     <img alt="Event payload" src="../../media/BEF-Howto-Flow-08.png" width="50%">
 
@@ -73,7 +72,7 @@ ms.locfileid: "3893347"
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信**アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
+13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信** アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 
 14.  メッセージの本文および、必須項目を入力します。
 

@@ -3,7 +3,7 @@ title: セキュリティ アークテクチャ
 description: このトピックでは、Finance and Operations のセキュリティ アーキテクチャの概要を提供します。
 author: Peakerbl
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 15441
 ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17d5cc3a01fac7e71aba489395ba531a4db5e7f4
-ms.sourcegitcommit: 8b05cd6a7f2341c6c6ab9b8e905f75c30526b074
+ms.openlocfilehash: 34997cf31ca2d0b4b628d71e3960bd3511246a65
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555597"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686307"
 ---
 # <a name="security-architecture"></a>セキュリティ アーキテクチャ
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ Microsoft Azure Active Directory (AAD) は主要な ID プロバイダーです�
 
 個別のセキュリティ アクセス許可は特権に、特権は職務に組み込まれています。 管理者は、セキュリティ ロールに職務権限と権限を割り当てることにより、これらのセキュリティ ロールへのアクセス許可をプログラムに付与します。 
 
-コンテキスト ベースのセキュリティは、セキュリティ設定が可能なオブジェクトへのアクセスをコントロールします。 特権がエントリ ポイント (メニュー項目またはサービス操作など) に関連付けられているとき、**読み取り**または **削除**などのアクセス レベルが指定されます。 承認サブシステムは、そのエントリ ポイントにアクセスがあると実行時にアクセスを検出し、エントリ ポイントが導かれるセキュリティ保護可能なオブジェクトに指定したレベルのアクセスを適用します。 この機能は、過剰なアクセス権がないことを保証し、開発者が意図したアクセス権を得るのに役立ちます。 
+コンテキスト ベースのセキュリティは、セキュリティ設定が可能なオブジェクトへのアクセスをコントロールします。 特権がエントリ ポイント (メニュー項目またはサービス操作など) に関連付けられているとき、**読み取り** または **削除** などのアクセス レベルが指定されます。 承認サブシステムは、そのエントリ ポイントにアクセスがあると実行時にアクセスを検出し、エントリ ポイントが導かれるセキュリティ保護可能なオブジェクトに指定したレベルのアクセスを適用します。 この機能は、過剰なアクセス権がないことを保証し、開発者が意図したアクセス権を得るのに役立ちます。 
 
 詳細については、[ロールベース セキュリティ](role-based-security.md)を参照してください。
 

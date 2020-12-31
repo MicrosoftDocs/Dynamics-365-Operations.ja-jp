@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 16261
 ms.assetid: 47f02822-51d5-4db2-8d99-2706548301e5
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fe52c56a137584a2c6e5d92a011d7fecbd18ad1
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 246bdf55159a831cde0a066a60289a1b4f6f3cbd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329836"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687808"
 ---
 # <a name="simple-list-form-pattern"></a>簡易リストのフォーム パターン
 
@@ -43,7 +42,7 @@ ms.locfileid: "3329836"
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
 
 -   上部の ActionPane ストリップ コントロールが標準の ActionPane に変換されました。
--   **新規**、**削除**、および**編集**ボタンは、フレームワークによって提供されます。
+-   **新規**、**削除**、および **編集** ボタンは、フレームワークによって提供されます。
 -   表示モードが既定で使用されます。
 -   グリッドの上にクイック フィルターが追加されました。
 -   フォームが依存関係があるフォームとして使用されているとき、親フォームのレコード コンテキストがフォーム キャプションの上に自動的に表示されます。

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0dc71f819f132b91fe153f83089eab24fa33173a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772491"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686689"
 ---
 # <a name="production-performance-power-bi-content"></a>生産パフォーマンス Power BI コンテンツ
 
@@ -42,7 +41,7 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 **生産パフォーマンス** Power BI コンテンツには、製造オーダーおよびバッチ オーダーからのデータが含まれます。 レポートには、かんばん生産に関連するデータは含まれていません。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**生産パフォーマンス** Power BI コンテンツは、**生産パフォーマンス**ページ (**生産管理** \> **照会およびレポート** \> **生産パフォーマンスの分析** \> **生産パフォーマンス**) に表示されます。 
+**生産パフォーマンス** Power BI コンテンツは、**生産パフォーマンス** ページ (**生産管理** \> **照会およびレポート** \> **生産パフォーマンスの分析** \> **生産パフォーマンス**) に表示されます。 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 

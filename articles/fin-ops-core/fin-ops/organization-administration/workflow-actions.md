@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 56411
 ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0796574c19fa417a8f63187b5d952b853d90e93f
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3697996"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694290"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 
@@ -38,7 +37,7 @@ ms.locfileid: "3697996"
 
 ## <a name="actions-that-an-originator-can-perform"></a>作成者が実行できるアクション
 
-作成者は、処理対象のドキュメントを送信することによって、ワークフロー インスタンスを開始します。 たとえば、康介が経費精算書を送信するには、康介が**経費精算書**ページで **送信** ボタンをクリックする必要があります。
+作成者は、処理対象のドキュメントを送信することによって、ワークフロー インスタンスを開始します。 たとえば、康介が経費精算書を送信するには、康介が **経費精算書** ページで **送信** ボタンをクリックする必要があります。
 
 ## <a name="actions-that-a-task-assignee-can-perform"></a>タスク割り当て対象者が実行できるアクション
 

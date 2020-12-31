@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: a3ad07de286f851f2ed52021ed4f6c84c21ea4ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4ff676f90e26942f7c0483f9d72029cdb46eea06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770011"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685748"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 
@@ -41,7 +40,7 @@ ms.locfileid: "2770011"
 
 ## <a name="advantages-of-power-bi-embedded"></a>Power BI Embedded のメリット
 - **アプリケーションで Power BI ワークスペースとレポートを配信します。** ユーザーが power user またはビジネス アナリストである場合は、Power BI ツールを使用して既製のレポートを調整したり、新しいレポートを作成することができます。 開発者は、ワークスペースを通じて製品の豊富なナビゲーション エクスペリエンスを提供するためにユーザーが作成したレポートを使用できます。 パートナーおよび ISV コミュニティにいる場合は、Power BI エクスペリエンスを含む豊富なワークスペースを構築し、そのワークスペースをソリューションの一部としてリリースすることができます。
-- **Power BI Embedded サービス ライセンスは、アプリケーションにまとめられます。** ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、Power BI で有効化されたワークスペース (およびこれらのワークスペースにより提供されるナビゲーション エクスペリエンス) をパッケージ化できます。 顧客は、PowerBI.com サブスクリプションなしで、同じ体験をします。 ワークスペースは、Finance and Operations アプリケーションで動作します。
+- **Power BI Embedded サービス ライセンスは、アプリケーションにまとめられます。** ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、Power BI で有効化されたワークスペース (およびこれらのワークスペースにより提供されるナビゲーション エクスペリエンス) をパッケージ化できます。 顧客は、PowerBI.com サブスクリプションなしで、同じ体験をします。 ワークスペースは、単に Finance and Operations アプリケーションと動作します。
 - **Power BI から詳細ページへのドリルダウンを有効にします。** ビジュアルは、アクションの開始点です。 ユーザーは、業務プロセスやページにドリルダウンして、明らかになっていない問題にすぐ対応できます。 ユーザーは、ビジュアルを使用して、データをフィルタリングして傾向を把握できます。 アクションのページには、注意が必要なデータのセットのみを反映します。
 - **メニュー項目を使用して Power BI レポートへのアクセスを保護します。** 開発者は、Power BI の基準となるワークスペースに同一の概念を拡張するために、Finance and Operations アプリで利用可能な使い慣れたプログラミングの概念を使用できます。 Power BI で駆動される概要ページを追加することにより、ワークスペースを新規作成または既存のワークスペースを拡張することができます。 開発者は、メニュー項目を Power BI レポートに関連付けて、リンクをワークスペースに含めることができます。 Finance and Operations アプリにおけるロール ベースおよびタスク ベースのセキュリティは、これらのメニュー項目を保護するために使用できます。
 - **アプリケーション コンテキストに基づくレポートのフィルター処理。** 1 つまたは複数のフィルターを Power BI レポートに渡すことにより、ナビゲーション エクスペリエンスをビルドすることができます。 たとえば、ユーザーのアクションまたはコンテキストに応じて、Power BI レポートが 1 つの事業単位または特定の製品からのデータを反映するようにフィルタ処理できます。 ユーザーはデータをフィルタリングする必要はありません。 ユーザーがトランザクション詳細ページに直接移動することができる、Finance and Operations ページへのドリルスルー リンクを定義することができます。
@@ -50,9 +49,6 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
 
 ## <a name="service-availability"></a>サービスの可用性
 **Power BI Embedded サービスは自動的に配置し、すべてのクラウド ホスト、複数のボックス配置を構成します。** このサービスは Microsoft Azure サービスに依存しているため、アプリケーションの分析ワークスペースとレポートはワンボックス環境では使用できません。 Power BI Embedded サービスは、ほとんどの Azure データ センターで既に利用できます。 [Azure の状態](https://azure.microsoft.com/status/) ページで最新の使用可能性を確認することができます。
-
-> [!NOTE]
-> Microsoft Dynamics 365 チームは、顧客が Power BI Embedded サービスのインスタンスをホストしなくても、ワン ボックス環境で分析ワークスペースを有効にするソリューションで作業します。 [Dynamics 365 ロードマップ](https://roadmap.dynamics.com)のサイトのお知らせをご覧ください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -71,11 +67,11 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
 ### <a name="how-is-currency-shown-across-multiple-companies"></a>通貨は複数の会社間でどのように表示されますか。
 通貨は、システム通貨で示されます。 システム通貨は、**システム パラメーター** ページで定義されます。
  
-### <a name="can-i-drill-from-summary-balances-back-into-finance-and-operations"></a>Finance and Operations に戻す概要残高をドリルすることはできますか。
+### <a name="can-i-drill-from-summary-balances-back-into-finance-and-operations"></a>Finance and Operations に戻す概要残高をドリルすることはできますか?
 はい、Power BI レポートの詳細を表示することができます。 ただし、Finance and Operations アプリへのドリルダウンに対するサポートは限られています。
  
 ### <a name="what-languages-are-currently-supported"></a>現在どのような言語がサポートされていますか。
 現在、英語のみがサポートされています。 ただし、Power BI チームはその他の言語のサポートを追加する予定です。
  
-### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか。
+### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか?
 いいえ、現在 Dynamics 365 Finance + Operations (オンプレミス) の分析ワークスペースおよびレポートにアクセスできません。 インテリジェンス機能のシステムは、クラウドにホストされているソリューションに依存します。

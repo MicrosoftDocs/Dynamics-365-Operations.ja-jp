@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 7fa972dfd730aad297550973ee5d5caf4598f641
-ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
+ms.openlocfilehash: dc1bcf2290d20c1126ef6ea7b6a8fbeb50720057
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3666348"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685369"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 
@@ -43,8 +42,8 @@ ms.locfileid: "3666348"
 
     1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
     2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](https://docs.microsoft.com/azure/key-vault/key-vault-overview) を参照してください。
-    3. **Key Vault パラメーター**ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
-    4. **Key Vault パラメーター**ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
+    3. **Key Vault パラメーター** ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
+    4. **Key Vault パラメーター** ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
 
 ## <a name="consume-the-secret-in-the-crt-extension"></a>CRT 拡張機能のシークレットの使用
 

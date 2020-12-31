@@ -10,25 +10,24 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 683d0fc35dda652195cab0b11124be4bca24178c
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: c6e47a6ef0d1c8af20df3f3715ae668f3a399d8b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138550"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684973"
 ---
 # <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、支払ターミナルとの統合を管理する支払コネクタの重複支払保護機能を有効にする方法について説明します。 *支払コネクタ*は支払ターミナルをPOSに統合するために書き込まれた拡張ライブラリです。
+このトピックでは、支払ターミナルとの統合を管理する支払コネクタの重複支払保護機能を有効にする方法について説明します。 *支払コネクタ* は支払ターミナルをPOSに統合するために書き込まれた拡張ライブラリです。
 
 ## <a name="overview"></a>概要
 
@@ -49,7 +48,7 @@ ms.locfileid: "3138550"
 重複支払保護のサポートを有効にするために、対応する支払端末または支払ゲートウェイ/プロセッサは固有のトランザクション スコープのサポートを提供する必要があります。 通常、このサポートは支払端末で生成される固有の支払参照識別子を通して、または支払が処理される前に支払ゲートウェイ/プロセッサにより処理されています。 一意の識別子のサポートなしでは、コネクタは先に開始された取引を、正常に行われた支払の承認と一意に対応付けることができず、これが重複支払保護が失敗する元となります。
 
 ## <a name="understanding-duplicate-payment-protection-flows"></a>重複支払保護フローを理解します。
-Retail POS が拡張され、支払コネクタに**承認**要求を出す直前など、POS 全体の様々なシナリオで新しい要求である `GetTransactionReferencePaymentTerminalDeviceRequest` および `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出すようになりました。 これらの新しい要求の目的は、新しい支払要求を実行する前に、支払コネクタを通して正常に処理された支払を検出し、復元するものです。 次の図は、支払要求は支払コネクタを通して正常に処理されたものの、応答を受信する前にPOS がクラッシュしたというシンプルなシナリオを示しています。 その後、POS は重複支払保護機能により、前の処理済の支払を復元することができます。 
+Retail POS が拡張され、支払コネクタに **承認** 要求を出す直前など、POS 全体の様々なシナリオで新しい要求である `GetTransactionReferencePaymentTerminalDeviceRequest` および `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出すようになりました。 これらの新しい要求の目的は、新しい支払要求を実行する前に、支払コネクタを通して正常に処理された支払を検出し、復元するものです。 次の図は、支払要求は支払コネクタを通して正常に処理されたものの、応答を受信する前にPOS がクラッシュしたというシンプルなシナリオを示しています。 その後、POS は重複支払保護機能により、前の処理済の支払を復元することができます。 
 
 ![重複支払保護フロー](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
 
@@ -190,5 +189,5 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 #### <a name="response-variables"></a>変数への応答
 | 変数 | 説明 |
 |---|---|
-| paymentInfo | 復元された支払取引。 これは、**承認**または**返金**のような、ほかの支払要求などで返される支払応答と同じです。 |
+| paymentInfo | 復元された支払取引。 これは、**承認** または **返金** のような、ほかの支払要求などで返される支払応答と同じです。 |
                                                                                                                                                                                                                                                                                                             

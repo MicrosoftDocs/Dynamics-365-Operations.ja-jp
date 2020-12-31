@@ -10,29 +10,30 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: cfa5a6d0a978b487be601c8566142003ce19dc6a
-ms.sourcegitcommit: 9baadeeb922666f79b28805da51d41cef18601b1
+ms.openlocfilehash: 57acc10a176f7b32b9be07716a01bfdc6c925591
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888551"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685470"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 二重書き込みは、Microsoft Dynamics 365 アプリと Finance and Operations アプリの Customer Engagement アプリ間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
 
 [リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
 
-+ [Common Data Service のデータ - フェーズ 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Common Data Service のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Common Data Service の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
++ [Dataverse のデータ - フェーズ 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
++ [Dataverse のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
++ [Dataverse の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
 ## <a name="september-2020-release"></a>2020 年 9 月リリース
 
@@ -42,10 +43,10 @@ ms.locfileid: "3888551"
 
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
-| Sales での潜在顧客認定プロセスは、会社によってストライプされる | Dynamics 365 Sales のユーザーは、潜在顧客を作成し、営業案件に対する潜在顧客を見込みありとし、営業案件を見積もりに変換し、見積もりを有効にして、注文を作成することができます。 このプロセスは、**潜在顧客**エンティティに対する会社のストライピングが欠如しているために、二重書き込みで分割されました。 基になる**取引先企業**と**営業案件**のエンティティに会社をカスケードするように、**潜在顧客**エンティティに会社のストライピングを実装しています。 したがって、アプリケーション動作が復元され、プロセスがサポートされます。 **潜在顧客**特定プロセスの間、**取引先担当者**エンティティは会社でストライプされません。 この設計では、2020 年 10 月で期限となる**関係者**エンティティ モデルがサポートされます。 二重書き込みの**関係者**および **GlobalAddressBook** モデルについては、[二重書き込み Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all) に参加してください。 | 一般提供 |
-| [**注文**から**販売注文**へのマップ状態遷移](sales-status-map.md) | Dynamics 365 Sales の**注文**フォームは、常に**有効**に設定されています。 Dynamics 365 Salesの**注文**から Dynamics 365 Supply Chain Management の**販売注文**に状態遷移を作成するために、**ProcessingStatus** フィールドを導入しました 。 |   一般提供   |  
-| [金額から 10 進データ型への変換](currrency-decimal-places.md) |  Common Data Service 環境では、通貨は小数点以下 4 桁、為替レートは小数点以下 10 桁に制限されています。 Finance and Operations アプリでは、Common Data Service より多くの小数点以下の桁数をサポートします。 Common Data Service の 10 進数サポートを拡張にオプトインして、二重書き込みを使用するときに小数点以下のデータが失われないようにすることができます。 | 一般提供 |
-| 会社および通貨為替のセキュリティ ロール | 会社と通貨為替エンティティは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのエンティティへの読み取りアクセスが必要です。 経験を簡略化するために、**二重書き込みアプリ ユーザー**という名前の新しいセキュリティ ロールを追加しました 。 各二重書き込みユーザーが、このセキュリティ ロールに追加される必要があります。   | 一般提供 |
+| Sales での潜在顧客認定プロセスは、会社によってストライプされる | Dynamics 365 Sales のユーザーは、潜在顧客を作成し、営業案件に対する潜在顧客を見込みありとし、営業案件を見積もりに変換し、見積もりを有効にして、注文を作成することができます。 このプロセスは、**潜在顧客** エンティティに対する会社のストライピングが欠如しているために、二重書き込みで分割されました。 基になる **取引先企業** と **営業案件** のテーブルに会社をカスケードするように、**潜在顧客** エンティティに会社のストライピングを実装しています。 したがって、アプリケーション動作が復元され、プロセスがサポートされます。 **潜在顧客** 特定プロセスの間、**取引先担当者** エンティティは会社でストライプされません。 この設計では、2020 年 10 月で期限となる **関係者** エンティティ モデルがサポートされます。 二重書き込みの **関係者** および **GlobalAddressBook** モデルについては、[二重書き込み Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all) に参加してください。 | 一般提供 |
+| [**注文** から **販売注文** へのマップ状態遷移](sales-status-map.md) | Dynamics 365 Sales の **注文** フォームは、常に **有効** に設定されています。 Dynamics 365 Salesの **注文** から Dynamics 365 Supply Chain Management の **販売注文** に状態遷移を作成するために、**ProcessingStatus** フィールドを導入しました 。 |   一般提供   |  
+| [金額から 10 進データ型への変換](currrency-decimal-places.md) |  Dataverse 環境では、通貨は小数点以下 4 桁、為替レートは小数点以下 10 桁に制限されています。 Finance and Operations アプリでは、Dataverse より多くの小数点以下の桁数をサポートします。 Dataverse の 10 進数サポートを拡張にオプトインして、二重書き込みを使用するときに小数点以下のデータが失われないようにすることができます。 | 一般提供 |
+| 会社および通貨為替のセキュリティ ロール | 会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。 経験を簡略化するために、**二重書き込みアプリ ユーザー** という名前の新しいセキュリティ ロールを追加しました 。 各二重書き込みユーザーが、このセキュリティ ロールに追加される必要があります。   | 一般提供 |
 | せていのセキュリティ ロール | **二重書き込みランタイム ユーザー** セキュリティ ロールを追加します。 このロールを使用すると、管理者以外のユーザーは、二重書き込み用に設定されたレコードを作成できます。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
 | 追跡 | トレースに使用するために追加された内部フィールド。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
 | バグ修正 | プラグインと移行先の環境の間に不一致があるために二重書き込みに失敗する問題を修正します。 この修正は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
@@ -57,7 +58,7 @@ ms.locfileid: "3888551"
 
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
-| 複数のエンティティ マップの管理 | 日常業務の一部として、エンティティ マップを一括処理する必要がある場合があります。 たとえば、一連のエンティティ マップを同時に有効化または一時停止することができます。 これを 1 つ行う代わりに、煩雑で時間がかかりますが、二重書き込みリスト ページで複数のエンティティ マップを同時に有効化、一時停止、再開、または停止することができます。 | 一般提供 |
+| 複数のテーブル マップの管理 | 日常業務の一部として、テーブル マップを一括処理する必要がある場合があります。 たとえば、一連のテーブル マップを同時に有効化または一時停止することができます。 これを 1 つ行う代わりに、煩雑で時間がかかりますが、二重書き込みリスト ページで複数のテーブル マップを同時に有効化、一時停止、再開、または停止することができます。 | 一般提供 |
 | バグ修正 | プロジェクトの実行時に特定の状況でレコードがスキップされる問題を修正します。 この修正は、二重書き込みコア ソリューション バージョン 10.0.19 の一部です。  | 一般提供 |
 
 ## <a name="june-2020-release"></a>2020 年 6 月リリース
@@ -78,12 +79,12 @@ ms.locfileid: "3888551"
 | 手持在庫の検索 | Customer Engagement アプリのフォームで、手持在庫と納期回答可能日を参照できます。 | 一般提供 |
 | 単位換算 |    Finance and Operations アプリで見積もり明細行と注文明細行の単位換算が発生すると、Customer Engagement アプリによって、その単位換算が受け入れられ、顧客契約アプリの見積詳細と注文の詳細の単位と価格に対する変更が反映されます。 | 一般提供 |
 | 通貨変更の制限 | 既存の見積もりや注文に対して Finance and Operations アプリの通貨を変更しようとすると、変更は失敗します。   | 一般提供 |
-| **アカウント** フォームと **契約** フォームのパリティ | B2B と B2C の Customer Engagement アプリで **アカウント** フォームと **連絡先** フォームの属性アプリを持ち込みます。  | 一般提供 |
+| **アカウント** フォームと **連絡先** フォームのパリティ | B2B と B2C の Customer Engagement アプリで **アカウント** フォームと **連絡先** フォームの属性アプリを持ち込みます。  | 一般提供 |
 | アドレスの重複なし | Customer Engagement アプリの見積または注文に対して作成または更新のアクションがある場合は、Finance and Operations アプリでアドレスを重複させないでください。  | 一般提供 |
 | **SalesTaxGroup** サポート | 企業間 (B2B) および企業と顧客間 (B2C) 顧客向けの **アカウント** フォームと **連絡先** フォームの **SalesTaxGroup** をサポートしています。 | 一般提供 |
-| 販売可能の契約の作成 | Customer Engagement アプリの **簡易作成: 連絡先** フォームを使用して、販売可能な連絡先を作成できるようにします。 | 一般提供 |
+| 販売可能な連絡先の作成 | Customer Engagement アプリの **簡易作成: 連絡先** フォームを使用して、販売可能な連絡先を作成できるようにします。 | 一般提供 |
 | 見積もりと注文の作成 | B2C 顧客の見積もりと注文の作成を有効にします。 | 一般提供 |
 | テナント管理者レベルの承認要件の削除 | これまでは、デュアル書き込みを有効にするには、アプリケーションに対する承認を明示的に行う必要がありました。 これは、実用的で、追加の承認が必要であるため、時間がかかる場合があります。 この機能を使用すると、この前提条件と、アプリケーションに対する同意を明示的に提供する必要がなくなりました。 | 一般提供 |
-| デュアル書き込み環境の強制リンク解除 | これまでは、デュアル書き込みのテスト中に、すべてのエンティティ マップを無効にしてから、デュアル書き込み環境のリンクを解除する必要がありました。 この方法は煩雑になり、いずれかの環境が使用できない場合は不可能になることがあります。 この新しい機能を使用すると、テスト環境とトライアル環境を簡単にリンク解除することができます。 | 一般提供 |
+| デュアル書き込み環境の強制リンク解除 | これまでは、二重書き込みのテスト中に、すべてのテーブル マップを無効にしてから、二重書き込み環境のリンクを解除する必要がありました。 この方法は煩雑になり、いずれかの環境が使用できない場合は不可能になることがあります。 この新しい機能を使用すると、テスト環境とトライアル環境を簡単にリンク解除することができます。 | 一般提供 |
 
 

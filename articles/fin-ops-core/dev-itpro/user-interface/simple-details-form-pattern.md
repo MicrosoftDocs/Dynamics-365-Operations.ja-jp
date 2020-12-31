@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14791
 ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfa2aad252c6b0bf62be4efe927b1ea9b0193dff
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 83a5a96f52efc2a821a619e71160d58143e089c9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329816"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687820"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 
@@ -131,7 +130,7 @@ ms.locfileid: "3329816"
 
 ### <a name="simple-details-wstandard-tabs"></a>標準タブ付き簡易詳細
 
-フォーム: **HcmEmploymentDateManager** (**人事管理** &gt; **共通** &gt; **作業者** &gt; **作業者**の順にクリックし、**一般** &gt; **バージョン** &gt; **職歴**の順にクリックし、それから**日付マネージャー**をクリックします。) 
+フォーム: **HcmEmploymentDateManager** (**人事管理** &gt; **共通** &gt; **作業者** &gt; **作業者** の順にクリックし、**一般** &gt; **バージョン** &gt; **職歴** の順にクリックし、それから **日付マネージャー** をクリックします。) 
 
 [![標準タブ付き簡易詳細](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
 

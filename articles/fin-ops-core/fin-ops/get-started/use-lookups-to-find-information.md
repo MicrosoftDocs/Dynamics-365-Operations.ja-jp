@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c7cd0042e5b801cc6c60b966709673351601eed
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a555db8ced5981abf1f3f58f16b77e1c263dcfa2
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178781"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693644"
 ---
 # <a name="find-information-by-using-lookups"></a>ルックアップを使用した情報の検索
 
@@ -61,7 +60,7 @@ ms.locfileid: "2178781"
 
 データを入力するとき、ユーザーは大抵、エンティティを表す ID よりもむしろ、顧客または仕入先などの名前でエンティティを識別することを試みます。 多くの (すべてではない) ルックアップでは、コンテキスト データ入力ができるようになります。 この強力な機能によって、ユーザーがルックアップ 制御に対応する名前または ID を入力することもできます。
 
-たとえば、販売注文の作成時に **顧客口座** フィールドを考慮します。 このフィールドは、顧客の **口座 ID** を表示しますが、ユーザーは「US-003」の代わりに、「Forest Wholesales」のような販売注文を作成するとき、通常は**口座 ID** よりも **アカウント名** を入力します。
+たとえば、販売注文の作成時に **顧客口座** フィールドを考慮します。 このフィールドは、顧客の **口座 ID** を表示しますが、ユーザーは「US-003」の代わりに、「Forest Wholesales」のような販売注文を作成するとき、通常は **口座 ID** よりも **アカウント名** を入力します。
 
 ユーザーがルックアップ制御に **口座 ID** を入力し始めると、前のセクションで説明されている通りドロップダウンメニューが自動的に開き、ユーザーには次に表示されるようにルックアップが表示されます。
 

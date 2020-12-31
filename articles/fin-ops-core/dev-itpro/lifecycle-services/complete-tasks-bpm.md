@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 384470cbd40c30f900e31c05482011f9ae70dbfb
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: f107880091460bc8200af337366ee5430bb03f67
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454522"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687920"
 ---
 # <a name="complete-tasks-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) でのタスクの完了
 
@@ -30,7 +29,7 @@ ms.locfileid: "3454522"
 
 ## <a name="upload-a-task-recording"></a>タスク記録のアップロード
 
-1. Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ**ページにて、タスク記録をアップロードするライブラリを選択します。
+1. Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの **業務プロセス ライブラリ** ページにて、タスク記録をアップロードするライブラリを選択します。
 
     ![業務プロセス ライブラリ ページのライブラリ](./media/choose-library.PNG "業務プロセス ライブラリ ページのライブラリ")
 
@@ -38,7 +37,7 @@ ms.locfileid: "3454522"
 
     ![プロセスの選択](./media/select-upload.PNG "プロセスの選択")
 
-3. **概要**ウィンドウで、**アップロード**を選択します。 **参照** を選択して、アップロードするファイルを検索して選択し、次に **アップロード** を選択します。
+3. **概要** ウィンドウで、**アップロード** を選択します。 **参照** を選択して、アップロードするファイルを検索して選択し、次に **アップロード** を選択します。
 
     ![AXTR のアップロード ダイアログ ボックス](./media/upload.PNG "AXTR のアップロード ダイアログ ボックス")
     
@@ -56,7 +55,7 @@ BPM プロセスにアップロードされたタスク記録 (AXTRファイル)
     
 ## <a name="export-a-methodology-to-word"></a>方法を Word へエクスポート
 
-1. LCS プロジェクトの**業務プロセス ライブラリ** ページで、エクスポートするライブラリを選択します。
+1. LCS プロジェクトの **業務プロセス ライブラリ** ページで、エクスポートするライブラリを選択します。
 2. エクスポートするプロセスを選択し、右ウィンドウで **ドキュメント** を選択してダウンロードを開始します。
 
     > [!NOTE]
@@ -64,7 +63,7 @@ BPM プロセスにアップロードされたタスク記録 (AXTRファイル)
 
 ## <a name="publish-a-bpm-library"></a>BPM ライブラリの公開
 
-- LCS プロジェクトの**業務プロセス ライブラリ** ページで、コピーするライブラリのタイルの省略記号ボタン (...) を選択し、**パブリッシュ**を選択します。
+- LCS プロジェクトの **業務プロセス ライブラリ** ページで、コピーするライブラリのタイルの省略記号ボタン (...) を選択し、**パブリッシュ** を選択します。
 
     ![BPM ライブラリの公開](./media/PUB_DIS.png "BPM ライブラリの公開")
 
@@ -74,4 +73,4 @@ BPM ライブラリを配布すると、そのライブラリは、組織に所�
 
 1. プロジェクトに招待するよう顧客に依頼します。
 2. 組織のアカウントを使用して、顧客の LCS プロジェクトにログインします。
-3. **業務プロセス ライブラリ**ページで、ライブラリを**コーポレート ライブラリ**ウィンドウから、顧客のプロジェクトにコピーします。
+3. **業務プロセス ライブラリ** ページで、ライブラリを **コーポレート ライブラリ** ウィンドウから、顧客のプロジェクトにコピーします。

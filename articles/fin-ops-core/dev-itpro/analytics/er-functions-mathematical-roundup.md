@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83262a11f92a924e5e49461cf414fb07ab278541
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 8ed86e2a848248dd8f2fc99401d12e0a162bf20a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744506"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686837"
 ---
 # <a name="roundup-er-function"></a>ROUNDUP ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ROUNDUP` 関数は、指定された数を指定された小数点以下の桁数に切り上げてから、*実数*値として返します。
+`ROUNDUP` 関数は、指定された数を指定された小数点以下の桁数に切り上げてから、*実数* 値として返します。
 
 ## <a name="syntax"></a>構文
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 16301
 ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff4891fad18b4117006e0ab3c36c09d2532f5a8
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 6976bdc38c1595c805f624a50c2e136548ebd8ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033029"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688515"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 
@@ -149,7 +148,7 @@ public void selectedMenuOption(int selectedOption)
 
 -   最も重要なコマンドは、メニューの先頭にある必要があります。
 -   右クリックの対象となる要素の現在の状態に適用されないコマンドを削除します。
--   右クリックはショートカットです。 したがって、コンテキスト メニューのコマンドは、**常に**ページの他の場所で利用できる必要があります。
+-   右クリックはショートカットです。 したがって、コンテキスト メニューのコマンドは、**常に** ページの他の場所で利用できる必要があります。
 -   コンテキスト メニューのサブメニューを作成しないでください。 サブメニューは使いにくくタッチ対応ではありません。
 -   メニュー項目の数を 5 に制限します。
 
