@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: b95efc2eaee19603d68ff5172b0385f78451c090
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: de3268cd32cf2a3b7539c7862e83f41dc2c6791f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191879"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679934"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
@@ -47,7 +46,7 @@ ms.locfileid: "2191879"
     | **Microsoft Office 64 ビット**       | Access エンジン 32 ビットおよび 64 ビット | Access エンジン 64 ビット      |
 
 - Microsoft Dynamics AX 2009 SP1 5.0.1000.52 以降。
-- 前提条件となる修正プログラム (axpatch.exe) がインストールされている。 修正プログラムを見つけるには、ZIP ファイルをダウンロードして展開した場所から、<pre-requisiteforpatch\>\<application\> に移動します。
+- 前提条件となる修正プログラム (axpatch.exe) がインストールされている。 修正プログラムを見つけるには、ZIP ファイルをダウンロードして抽出した場所から、<pre-requisiteforpatch\>\<application\> に移動します。
 
 ## <a name="install-dixf-service"></a>DIXF サービスのインストール
 
@@ -72,7 +71,7 @@ DMT をインストールする方法は 2 つあります。 結合された XP
 2. AX 2009 に結合された XPO ファイルをインポートします。
 3. **DMT_V1.0\Label file** ファイルから  **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** フォルダーにラベル ファイルをコピーします。
 4. Application Object Server (AOS) インスタンスを再起動します。
-5. AX 2009 で、**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期**を選択します。
+5. AX 2009 で、**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期** を選択します。
 
 ユーザーがログインしているレイヤーに結合された XPO ファイルがインポートされることに注意してください。
 
@@ -99,7 +98,7 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
     - **DIXF サービス ホスト**: DIXF サービスのインストールのホスト名を入力します。
     - **テナント URL** – アプリケーション テナントの URL を入力します。 テナントが不明な場合は、Finance and Operations アプリケーションの web.config ファイルを参照してください。
 
-    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
+    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成する際に、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
 
 ## <a name="multi-box-setup"></a>マルチボックスの設定
 マルチボックスの設定の場合、次のコンピューターが必要です。

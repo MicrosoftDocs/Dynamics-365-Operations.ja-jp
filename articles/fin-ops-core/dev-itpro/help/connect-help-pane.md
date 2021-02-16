@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: aae6b629e262feae912ee83e74d042a112e16f9b
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 4a950e20c4c333acf58d8a16a817eb611177b791
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367047"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685099"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 
@@ -103,7 +102,7 @@ Finance and Operations ソリューションのカスタム ヘルプ コンテ�
 > [!IMPORTANT]
 > **parentlanguage** 属性が設定されている場合は、対応する **parentindex** キーが必要です。
 
-次のシナリオは、**language="de"** には **parentindex="indexde"** があり、**de-DE** と **de-AT** の両方が **de**の子孫であるため有効です。
+次のシナリオは、**language="de"** には **parentindex="indexde"** があり、**de-DE** と **de-AT** の両方が **de** の子孫であるため有効です。
 
 ```
 <add language="de" parentindex="indexde"/>

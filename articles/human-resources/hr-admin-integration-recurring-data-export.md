@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419412"
 ---
 # <a name="create-a-recurring-data-export-app"></a>定期的なデータ エクスポートのアプリの作成
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 統合のひとつの典型的なビジネス シナリ�
 このチュートリアルでは下記のテクノロジを使用します:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – エクスポートされる作業者のマスター データ ソース。
-- **[Azure ロジック アプリ](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – 定期的なエクスポートのオーケストレーションとスケジュールを提供するテクノロジ。
 
     - **[コネクタ](https://docs.microsoft.com/azure/connectors/apis-list)** – ロジック アプリを必要なエンドポイントに接続するために使用されるテクノロジ。
 
@@ -83,7 +83,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
     ![ロジック アプリ作成ページ](media/integration-logic-app-creation-1.png)
 
-2. ロジック アプリ デザイナーで、空白のロジック アプリから始めます。
+2. Logic Apps Designer で、空白のロジック アプリから始めます。
 3. 24 時間ごとに (または選択したスケジュールに従って) ロジック アプリを実行するために [定期スケジュール トリガー](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) を追加します。
 
     ![定期ダイアログ ボックス](media/integration-logic-app-recurrence-step.png)
@@ -104,7 +104,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
     3. HTTP **POST** 要求をセットアップして **ExportToPackage DMF** REST API を呼び出します。
 
         - **メソッド:** POST
-        - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+        - **要求の URL:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
         - **B要求の本文:**
 
             ```JSON
@@ -141,7 +141,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
         > このサンプルはエラー チェックを実行しません。 **GetExecutionSummaryStatus** API は成功しなかった端末状態 (つまり、**"成功"** 以外の状態) を返す可能性があります。 詳細については [API のドキュメント](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) を参照してください。
 
         - **メソッド:** POST
-        - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+        - **要求の URL:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
         - **要求の本文:** body('Invoke\_an\_HTTP\_request')?['value']
 
             > [!NOTE]
@@ -152,14 +152,14 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
         ![変数アクションの設定](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
-        > デザイナーが同じ方法で値を表示するとしても、 **変数を設定**アクション (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) の値は **Invoke an HTTP request 2** 本文値の値とは異なります。
+        > デザイナーが同じ方法で値を表示するとしても、 **変数を設定** アクション (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) の値は **Invoke an HTTP request 2** 本文値の値とは異なります。
 
 7. エクスポートしたパッケージのダウンロード URL を取得します。
 
-    - **HTTP 要求の呼び出し アクション**を追加して  [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST AP を呼び出します。
+    - **HTTP 要求の呼び出し アクション** を追加して  [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST AP を呼び出します。
 
         - **メソッド:** POST
-        - **要求のUrl:** https://\<ホスト名\>/名前空間/\<名前空間\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+        - **要求の URL:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **要求の本文:** {"executionId": body('GetExportedPackageURL')?['value']}
 
         ![GetExportedPackageURL action](media/integration-logic-app-get-exported-package-step.png)
@@ -196,7 +196,7 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 
 どこかのステップで失敗が報告された場合、デザイナーから失敗したステップを選択し、その **入力** フィールドと **出力** フィールドを確認します。 エラーを修正するため必要に応じてステップをデバッグおよび調整します。
 
-次の図はロジック アプリのすべてのステップが正常に実行された場合のロジック アプリ デザイナーの外観を示しています。
+次の図はロジック アプリのすべてのステップが正常に実行された場合の Logic Apps Designer の外観を示しています。
 
 ![成功したロジック アプリの実行](media/integration-logic-app-successful-run.png)
 

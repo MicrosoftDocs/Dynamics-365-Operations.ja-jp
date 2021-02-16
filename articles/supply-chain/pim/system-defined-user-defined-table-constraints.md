@@ -16,15 +16,15 @@ ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 014a12c16e60d980fdd4726e05a06d3f3e8950e5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 3fb1395859b5abd06539e07ada3d968b2e9c9147
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209332"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431979"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>システム定義およびユーザー定義のテーブル制約
 
@@ -40,7 +40,7 @@ ms.locfileid: "3209332"
 この記事では、製品コンフィギュレーション モデルのコンポーネントのユーザー定義とシステム定義のテーブル制約について説明します。
 
 ## <a name="user-defined-table-constraints"></a>ユーザー定義のテーブル制約
-ユーザー定義のテーブル制約は、属性タイプによって定義される属性値の組み合わせの説明に使用されるマトリックス タイプです。 たとえば、スピーカーを生産する場合、キャビネットの仕上げと前グリルの列を、ユーザー定義のテーブル制約に含めることができます。 キャビネットの仕上げの属性タイプには 4 つの値、前グリルの属性タイプには 3 つの値があります。 したがって、制約を使用しない場合、4 × 3 = 12 が可能な組み合わせです。 ただし、この例では、次の表に示すように 6 つの組み合わせのみ許可するようにします。 この情報は、**テーブル制約の編集**ページの**許可済み組み合わせ**タブに表示されます。
+ユーザー定義のテーブル制約は、属性タイプによって定義される属性値の組み合わせの説明に使用されるマトリックス タイプです。 たとえば、スピーカーを生産する場合、キャビネットの仕上げと前グリルの列を、ユーザー定義のテーブル制約に含めることができます。 キャビネットの仕上げの属性タイプには 4 つの値、前グリルの属性タイプには 3 つの値があります。 したがって、制約を使用しない場合、4 × 3 = 12 が可能な組み合わせです。 ただし、この例では、次の表に示すように 6 つの組み合わせのみ許可するようにします。 この情報は、**テーブル制約の編集** ページの **許可済み組み合わせ** タブに表示されます。
 
 | キャビネットの仕上げ | 前グリル |
 |----------------|-------------|

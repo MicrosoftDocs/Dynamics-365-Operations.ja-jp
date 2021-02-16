@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 25991
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff4e16a2e07002043331dcc3b2b04cb8288004b4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b68182ff7da07f350e2eacaf569089e0fdf44a8d
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178786"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695064"
 ---
 # <a name="navigation-search"></a>ナビゲーション検索
 
@@ -35,7 +34,7 @@ ms.locfileid: "2178786"
 この機能を使用するには、**検索** アイコンをクリックして **検索** ボックスを表示します。 その後、ボックスに 1 つ以上の単語を入力します。 システムはすぐに、アプリケーション内にある、入力した単語と一致する関連ページを検索します。 たとえば、入力として「仕入先請求書」と入力すると、システムはその入力に一致する結果を表示します。
 
 > [!NOTE]
-> **検索**ボックスは、ページの検索や移動に役立ちます。 特定のデータまたはアクションの検索には役立ちません。
+> **検索** ボックスは、ページの検索や移動に役立ちます。 特定のデータまたはアクションの検索には役立ちません。
 
 [![検索ボックス](media/navigation-search.png "検索ボックス")
 
@@ -45,7 +44,7 @@ ms.locfileid: "2178786"
 
 検索結果一覧には、ナビゲーション パスとページ タイトルが表示されます。 これはアプリケーション内のページの場所を示します。 また、結果内の複数の同じようなページを区別するのに役立ちます。
 
-ページの検索時には、入力はページ タイトル、ナビゲーション パスと照合されます。 たとえば、**検索**ボックスに「売掛金」と入力した場合、ページ タイトルに「売掛金」という語を含んでいない場合にも、売掛金勘定エリアで使用できるページの結果が表示されます。
+ページの検索時には、入力はページ タイトル、ナビゲーション パスと照合されます。 たとえば、**検索** ボックスに「売掛金」と入力した場合、ページ タイトルに「売掛金」という語を含んでいない場合にも、売掛金勘定エリアで使用できるページの結果が表示されます。
 
 ## <a name="quickly-navigate-to-a-page-based-on-the-technical-form-name"></a>技術的なフォーム名に基づくページにすばやく移動する
 

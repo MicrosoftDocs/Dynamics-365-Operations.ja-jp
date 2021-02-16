@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 84383
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a308d864f0ef9b6bd5c8fbd70f097175cac24daf
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: 45c8a0552fc09dc7d2be86c9771bac21a6ab503d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426336"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687563"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
@@ -83,7 +82,7 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetOrderInvoices                                       | customerAccount string型, QueryResultSettings queryResultSettings                                                                                    | PageResult\<OrderInvoice\> | 従業員                 | 与えられた顧客IDに関連付けられている顧客に結びつく未処理の注文請求書を取得します。 |
 | GetInvoices                                            | InvoiceSearchCriteria invoiceSearchCriteria, QueryResultSettings queryResultSettings                                                               | PageResult\<OrderInvoice\> | 従業員                 | 検索条件に結びつく未処理の請求書を取得します。                                              |
 | GetInvoicedSalesLinesBy- SalesIds                        | IEnumerable\<string\> salesIds, QueryResultSettings queryResultSettings                                                                        | PageResult\<SalesLine\>    | 従業員                 | 販売注文IDごとの請求済販売明細行の一覧を取得します。                                        |
-| CreatePickingList [廃止(かわりにCreatePickingListForItemsを使用)]  | salesId string型                                                                                                                                     | 無効                           | 従業員                 | 販売注文のピッキングリストを作成します。                                                                |
+| CreatePickingList [廃止 ("かわりに CreatePickingListForItems を使用")]  | salesId string型                                                                                                                                     | 無効                           | 従業員                 | 販売注文のピッキングリストを作成します。                                                                |
 | CreatePickingListForItems                              | string salesId, IEnumerable- \<PickAndPackSalesLineParameter\> pickAndPackSalesLineParameters                                                    | 文字列                         | 従業員                 | 販売注文の選択された行のピッキング リストを作成する。                                               |
 | GetPickingLists                                        | salesId string型, QueryResultSettings queryResultSettings                                                                                            | PageResult\<PickingList\>  | 従業員                 | Headquarters からの受注のピッキング リストを取得します。                                           |
 | CreatePackingSlip                                      |                                                                                                                                                    | 無効                           | 従業員                 | パッキングスリップを作成する                                                                                  |

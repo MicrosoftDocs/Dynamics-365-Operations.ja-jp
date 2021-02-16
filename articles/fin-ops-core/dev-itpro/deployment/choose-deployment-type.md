@@ -3,32 +3,31 @@ title: 配置オプション
 description: Finance and Operations アプリは、クラウドまたはオンプレミスで実行することができます。 このトピックでは、各種の展開オプションについて説明します。
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: fe49f6f3a6d36a10d35d043cec53882004f1afdd
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 62fad19cd0f63f88c2af0a3a1dd3ca55cb5c6166
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935478"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686341"
 ---
 # <a name="deployment-options"></a>配置オプション
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations アプリをクラウドまたはオンプレミスで展開することができます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
+クラウドまたはオンプレミスの Finance and Operations アプリをデプロイすることができます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
 > [!IMPORTANT]
 > オンプレミス配置は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 
 
@@ -38,7 +37,7 @@ Finance and Operations アプリをクラウドまたはオンプレミスで展
 
 
 ## <a name="why-cloud"></a>クラウドを使用する理由
-クラウド展開では、Microsoft が完全に管理するデータ センターだけでなく、必要に応じて簡単にスケールアップまたはスケールダウンできるクラウド サービスを提供します。 Finance and Operations アプリの実装に費やされる時間を大幅に短縮し、必要なカスタマイズを減らし、IT ハードウェアやインフラストラクチャのコストを削減できます。 
+クラウド展開では、Microsoft が完全に管理するデータ センターだけでなく、必要に応じて簡単にスケールアップまたはスケールダウンできるクラウド サービスを提供します。 Finance and Operations アプリ の実装に費やされる時間を大幅に短縮し、必要なカスタマイズを減らし、IT ハードウェアやインフラストラクチャのコストを削減できます。 
 
 クラウド展開には、インテリジェンス、インフラストラクチャ、コンピューティング、およびデータベース サービスのクラウドベースのシステムを組み合わせた高可用性、障害復旧、サンドボックス環境、アプリケーション ライフサイクル管理が含まれます。 必要に応じて、クラウドでのデータ フェールオーバー、自動配置と継続的な更新、および柔軟な処理能力を使用できます。 クラウド配置では、データの集計、財務報告およびインテリジェンスも提供されます。
 
@@ -58,5 +57,5 @@ Finance and Operations アプリをクラウドまたはオンプレミスで展
 
 これらの機能を配置および管理するための原価が増えると、配置コストおよび総保有コスト (TCO) の増大につながる可能性があります。 Finance and Operations アプリおよび更新プログラムを展開するためのツールは、Lifecycle Services を通じてパートナーおよび顧客に提供されます。 クラウド展開オプションとは異なり、Advanced Analytics と Azure Machine Learning はオンプレミス展開オプションには含まれていません。 
 
-オンプレミス オプションではまだ有効になっていない機能がいくつかあります。 これらの機能は、将来の更新で利用可能になります。 詳細については、[オンプレミス配置で実装されていない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md) を参照してください。
+
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210160"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432063"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
@@ -38,7 +38,7 @@ ms.locfileid: "3210160"
 -   計画製造オーダーからのジョブ。
 -   時間予測タイプのジョブ スケジューリング済のプロジェクト活動。
 
-ガント チャートは、**発注ビュー** および **リソース ビュー** [](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true) の 2 つの異なるビューで開くことができます。 **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
+ガント チャートは **注文ビュー** と **リソース ビュー** の異なる 2 つのビューを開くことができます。 **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
 
 1.  ガント チャートの活動
 2.  材料不足アイコン

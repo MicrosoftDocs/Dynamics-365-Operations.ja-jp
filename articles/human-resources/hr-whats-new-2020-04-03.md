@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 3 日)
-description: この記事では、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 4 月 3 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/03/2020
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab732853a2c37338d8003c5f8911c011aa8ffc60
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 8f5d7ab996e0d27f763cd4c3c51e9a2c923d909b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225154"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526789"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 3 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3111 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
@@ -66,15 +68,15 @@ LCS のプロジェクトあたりの環境数の制限が変更されました�
 
 | 説明 | 計上額 |
 | --- | --- |
-| **職務/職位**エンティティの変更 | <ul><li>追加された**報酬地域**</li>|
-| 追加された**職務職位分析**エンティティ | <ul><li>追加された**財務分析コード**</li>
-| **作業者**エンティティの変更 | <ul><li>追加された**名前の順序**</li><li>追加された**自宅から作業**</li><li>追加された**言語**</li><li>追加された**勤続日数**</li><li>追加された**記念日**</li><li>追加された**元の採用日付**</li></ul> |
-| **雇用**エンティティの変更 | <ul><li>追加された**財務分析コード**</li><li>追加された**退職理由**</li><li>**移行日**から名前変更された**退職日**</li><li>追加された**猶予期間**</li></ul> |
-| **作業者住所**エンティティの変更 | <ul><li>追加された**番地**</li><li>廃止としてマークされた**住所行 1**、**住所行 2**、および**住所行 3**</li></ul> |
+| **職務/職位** エンティティの変更 | <ul><li>追加された **報酬地域**</li>|
+| 追加された **職務職位分析** エンティティ | <ul><li>追加された **財務分析コード**</li>
+| **作業者** エンティティの変更 | <ul><li>追加された **名前の順序**</li><li>追加された **自宅から作業**</li><li>追加された **言語**</li><li>追加された **勤続日数**</li><li>追加された **記念日**</li><li>追加された **元の採用日付**</li></ul> |
+| **雇用** エンティティの変更 | <ul><li>追加された **財務分析コード**</li><li>追加された **退職理由**</li><li>**移行日** から名前変更された **退職日**</li><li>追加された **猶予期間**</li></ul> |
+| **作業者住所** エンティティの変更 | <ul><li>追加された **番地**</li><li>廃止としてマークされた **住所行 1**、**住所行 2**、および **住所行 3**</li></ul> |
 | 新しい変動報酬の設定エンティティ | <ul><li>**変動報酬プラン タイプ**</li><li>**変動報酬プラン**</li><li>**給付ルール**</li><li>**変動報酬プラン レベル**</li></ul> |
-| 新しい**作業者カレンダー雇用**エンティティ | <ul><li>追加された**作業カレンダー エンティティ**</li></ul> |
-| 新しい**給与職位詳細**エンティティ | <ul><li>追加された**給与職位詳細**</li></ul> |
-| 新しい**肩書**エンティティ | <ul><li>追加された**タイトル**</li></ul>新しい**タイトル** エンティティは Common Data Service に含まれますが、この時点では**職位**または**職務**エンティティから参照されません。 |
+| 新しい **作業者カレンダー雇用** エンティティ | <ul><li>追加された **作業カレンダー エンティティ**</li></ul> |
+| 新しい **給与職位詳細** エンティティ | <ul><li>追加された **給与職位詳細**</li></ul> |
+| 新しい **肩書** エンティティ | <ul><li>追加された **タイトル**</li></ul>新しい **タイトル** エンティティは Common Data Service に含まれますが、この時点では **職位** または **職務** エンティティから参照されません。 |
 
 > [!NOTE]
 > 職位と雇用どちらの財務分析コードは、Human Resources から Common Data Service への更新の一方向の統合を提供します。 財務分析コードの更新は、現在 Common Data Service から Human Resources へは同期されません。
@@ -83,17 +85,17 @@ LCS のプロジェクトあたりの環境数の制限が変更されました�
 
 1.  [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) に移動します。
 
-2.  **環境**を選択します。
+2.  **環境** を選択します。
 
-3.  アップグレードする環境を検索します。 環境は、Human Resources の**バージョン情報**フォームで、**Common Data Service 情報**セクションの**環境名**に対応している必要があります。
+3.  アップグレードする環境を検索します。 環境は、Human Resources の **バージョン情報** フォームで、**Common Data Service 情報** セクションの **環境名** に対応している必要があります。
 
 4.  環境の詳細を表示するための環境を選択します。
 
-5.  上部の操作バーで、**ソリューションの管理**を選択します。 新しいブラウザー ウィンドウが開き、環境のコンテキストで**Dynamics 365 管理センター**に移動します。
+5.  上部の操作バーで、**ソリューションの管理** を選択します。 新しいブラウザー ウィンドウが開き、環境のコンテキストで **Dynamics 365 管理センター** に移動します。
 
-6.  **ソリューション** リストで、**Dynamics 365 Human Resources アンカー**を選択します。
+6.  **ソリューション** リストで、**Dynamics 365 Human Resources アンカー** を選択します。
 
-7.  最新のソリューションを適用するには、**アップグレード**を選択します。
+7.  最新のソリューションを適用するには、**アップグレード** を選択します。
 
 ## <a name="in-preview"></a>プレビュー
 
@@ -128,3 +130,10 @@ SharePoint で保存されているドキュメントのドキュメント プ�
 3. SharePoint で添付ファイルにアクセスして、ドキュメントのプレビューを開始します。
 
 4. 添付ファイルにアクセスできる他のユーザー アカウントでサインインし、適切にプレビューが機能することを確認します。
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

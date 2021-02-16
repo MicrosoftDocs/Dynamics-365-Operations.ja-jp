@@ -1,7 +1,7 @@
 ---
 title: AsyncService タイプ
 description: ビジネス ロジック コードから非同期操作を実行する機能を提供します。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ebb53674cfceec9f9fbc9634a38217153562ed61
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 77dfc1ed0144907f1f2b8b8f0baa9a4aaff1bf13
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191865"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679241"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 
@@ -30,11 +29,11 @@ ms.locfileid: "2191865"
 
 ### <a name="hierarchy"></a>階層
 
-AsyncService <br>
+AsyncService
 
 ## <a name="index"></a>指数
 
-### <a name="methods"></a>メソッド
+### <a name="method-list"></a>メソッド リスト
 
 * [すべて](services-business-logic-services-iasyncservice.md#all)
 * [延期](services-business-logic-services-iasyncservice.md#defer)
@@ -43,11 +42,7 @@ AsyncService <br>
 
 ### <a name="all"></a>すべて
 
-
-all(...args: any [ ]): Promise &lt;any [ ]&gt;
-
-
-
+`all(...args: any [ ]): Promise <any [ ]>`
 
 #### <a name="parameters"></a>パラメーター
 
@@ -59,10 +54,8 @@ all(...args: any [ ]): Promise &lt;any [ ]&gt;
 
 ### <a name="defer"></a>defer
 
+`defer <>(): [Deferred](defer-ideferred.md) <>`
 
-defer &lt;T&gt;(): [Deferred](defer-ideferred.md) &lt;T&gt;
+イベント ハンドラー (該当する場合) から回答を返し、非同期でそれらを拒否または解決するために使用できる遅延オブジェクトを作成します。
 
-イベント ハンドラー (該当する場合) から回答を返し、非同期でそれらを解決/拒否するために使用できる遅延オブジェクトを作成します。
-
-#### <a name="returns-deferreddefer-ideferredmd-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します
-
+#### <a name="returns-deferred-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します

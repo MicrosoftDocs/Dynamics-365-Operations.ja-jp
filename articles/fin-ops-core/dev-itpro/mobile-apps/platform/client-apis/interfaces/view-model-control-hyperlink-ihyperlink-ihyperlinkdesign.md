@@ -1,7 +1,7 @@
 ---
 title: HyperLinkDesign タイプ
 description: Hyperlink デザイン オブジェクトの種類。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f8f68af727b241c80bb04a9ad662d4dea806c73b
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: a9ceeb1960fda05c11829a1c316c541b8f7792b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658890"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682569"
 ---
 # <a name="hyperlinkdesign-type"></a>HyperLinkDesign タイプ
 
@@ -120,7 +119,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承

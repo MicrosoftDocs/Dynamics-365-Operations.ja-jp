@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 31521
 ms.assetid: 3a169648-592b-4616-9834-598c0244a852
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 984c7468ab752eae26dfd43d129ddb6dc4ff9d91
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0a32c63a3db17f3b780aff49c73b01f9fb440f48
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004630"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683179"
 ---
 # <a name="commerce-scale-unit-architecture"></a>Commerce Scale Unit アーキテクチャ
 

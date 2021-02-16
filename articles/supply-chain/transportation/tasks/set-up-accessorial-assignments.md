@@ -8,20 +8,21 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c86461f980112e2d759dfd0c905ae2ef05e7041
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214990"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432335"
 ---
 # <a name="set-up-accessorial-assignments"></a>付帯サービス割り当ての設定
 

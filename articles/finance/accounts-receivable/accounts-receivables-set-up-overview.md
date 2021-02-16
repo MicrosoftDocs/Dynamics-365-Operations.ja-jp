@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426422"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445160"
 ---
 # <a name="configure-accounts-receivable-and-credit-and-collections"></a>売掛金勘定、貸方転記、取立の構成
 

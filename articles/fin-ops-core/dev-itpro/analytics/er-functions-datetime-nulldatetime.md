@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cd4c152d4e220a2f6315265ed5e44d148134279
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 65e9ef92dc30e46c297d93e262bad8878df47a0c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042263"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682296"
 ---
-# <a name="NULLDATETIME">NULLDATETIME ER 関数</a>
+# <a name="nulldatetime-er-function"></a>NULLDATETIME ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,7 +44,7 @@ NULLDATETIME ()
 
 ## <a name="example"></a>例
 
-`DATETIMEFORMAT( NULLDATETIME(), "O")` は、**言語と国/地域の基本設定**セクションにタイムゾーン値 **(GMT) 協定世界時** を持つアプリケーション ユーザーによって開始されたプロセス中に呼び出されると、文字列値 **1900-01-01T00:00:00.0000000+00:00** を返します。
+`DATETIMEFORMAT( NULLDATETIME(), "O")` は、**言語と国/地域の基本設定** セクションにタイムゾーン値 **(GMT) 協定世界時** を持つアプリケーション ユーザーによって開始されたプロセス中に呼び出されると、文字列値 **1900-01-01T00:00:00.0000000+00:00** を返します。
 
 ## <a name="additional-resources"></a>追加リソース
 

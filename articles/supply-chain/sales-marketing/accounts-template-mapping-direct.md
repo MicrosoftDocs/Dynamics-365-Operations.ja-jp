@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1146fce7cf620a002231a5bc9246c706b97d478d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210137"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529213"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Supply Chain Management の顧客への Sales の勘定の直接同期
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
@@ -43,7 +45,7 @@ ms.locfileid: "3210137"
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。 **プロジェクト** を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
 Sales から Supply Chain Management への勘定同期には、以下のテンプレートと基本的なタスクが使用されます。
 
@@ -64,11 +66,11 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-**勘定番号**フィールドは、**勘定**ページで利用できます。 統合をサポートするため固有なナチュラル キーとなっています。 顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** フィールドを使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。 現時点では、統合ソリューションは、このケースをサポートしていません。
+**勘定番号** フィールドは、**勘定** ページで利用できます。 統合をサポートするため固有なナチュラル キーとなっています。 顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** フィールドを使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。 現時点では、統合ソリューションは、このケースをサポートしていません。
 
-新しいアカウントが作成され、**勘定番号**値が存在しない場合、番号順序を使用して自動的に生成されます。 その値は**勘定**で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **ACC-01000-BVRCPS**
+新しいアカウントが作成され、**勘定番号** 値が存在しない場合、番号順序を使用して自動的に生成されます。 その値は **勘定** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **ACC-01000-BVRCPS**
 
-売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号**フィールドが設定されます。 **勘定番号** 値がない場合は、前述した番号順序を使用します。
+売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号** フィールドが設定されます。 **勘定番号** 値がない場合は、前述した番号順序を使用します。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -76,7 +78,7 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
     既定のテンプレートの値は **10** です。
 
-- 次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。 たとえば、**国/地域**または**市町村**のデフォルト値または値マップを使用できます。
+- 次のマッピングを追加することによって、Supply Chain Management で必要な手動更新の数を減らすことができます。 たとえば、**国/地域** または **市町村** のデフォルト値または値マップを使用できます。
 
     - **SiteId** – Supply Chain Management で見積書および販売注文を生成するにはサイトが必要です。 デフォルトのサイトは、製品から、または注文ヘッダーの顧客から取得できます。
 
@@ -88,12 +90,12 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
     - **LanguageId** – Supply Chain Management で見積書および販売注文を生成するには言語が必要です。 既定では、顧客からの注文ヘッダの言語が使用されます。
 
-        既定のテンプレートの値は **アメリカ英語** です。
+        既定のテンプレートの値は **en-us** です。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 > [!NOTE]
-> **支払条件**,**運賃条件**,**配送条件**,**送付方法**,および**配送モード**フィールドは、既定のマッピングに含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+> **支払条件**,**運賃条件**,**配送条件**,**送付方法**,および **配送モード** フィールドは、既定のマッピングに含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ統合のテンプレート マッピングの例を示しています。 
 

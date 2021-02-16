@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afeb7756ae8c81b6cb5b7f3eff0642cdc47c3d19
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: be00b5a7bfb34a6c2feb06231ff97ccb781e32e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408911"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
@@ -55,7 +54,7 @@ ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement
 ModelUtil.exe -import -metadatastorepath=[path of the metadata store where model should be imported] -file=[full path of the file to import]
 ```
 
-モデルが開発環境で既に存在する場合、**-削除**指令を使用し、それを最初に削除する必要があります。
+モデルが開発環境で既に存在する場合、**-削除** 指令を使用し、それを最初に削除する必要があります。
 
 ```Console
 ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]
@@ -74,9 +73,3 @@ ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname
     [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 
-
-<!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
-
-
-
-

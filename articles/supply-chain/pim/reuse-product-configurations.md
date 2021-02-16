@@ -16,15 +16,15 @@ ms.custom: 201813
 ms.assetid: 4985e308-7824-41fc-83fd-fd0bdae888e3
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f72d93600db3d9bf0a44ac1fe84111527bb31d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: dd6d730528522f4074b6e2a3ce6059cc12ff5a0f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209407"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431732"
 ---
 # <a name="reuse-product-configurations"></a>製品のコンフィギュレーションの再利用
 

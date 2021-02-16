@@ -10,21 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20bedabd929cd2030577eec6c3c0ade3932835a
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 6a7405ccca0f728f7290d8a3a6590df574de3297
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033003"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679358"
 ---
-# <a name="custom-service-development"></a>顧客サービスの開発
+# <a name="custom-service-development"></a>カスタム サービスの開発
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +32,7 @@ Finance and Operations に対してカスタム サービスを開発できま�
 - SOAP エンドポイント
 - JSON エンドポイント
 
-### <a name="soap-based-custom-service"></a>SOAP ベース顧客サービス
+### <a name="soap-based-custom-service"></a>SOAP ベース カスタム サービス
 
 SOAP ベースのサービスは Dynamics AX 2012 のものと同じままです。
 
@@ -41,7 +40,7 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 #### <a name="key-changes"></a>キーの変更
 
-- **AOTService グループ**ノードの下にあるすべてのサービス グループが自動的に配置されます。
+- **AOTService グループ** ノードの下にあるすべてのサービス グループが自動的に配置されます。
 - 配置する必要があるすべてのサービスはサービス グループの一部である必要があります。
 
 **開発環境でのエンドポイントの例**
@@ -57,11 +56,7 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 - [カスタム サービスを使用する \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
 - [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
 
-<!--
-- [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
-
-
-### <a name="json-based-custom-service"></a>JSON ベース顧客サービス
+### <a name="json-based-custom-service"></a>JSON ベース カスタム サービス
 
 この機能により、X++ クラスを JSON サービスとして使用できます。 つまり、返り値のデータ セットは、JSON 形式でです。 JavaScript Object Notation の略である JSON は、クライアントとサーバー間のデータ通信によく使用されるコンパクトで軽量なフォーマットです。
 
@@ -71,4 +66,4 @@ JSON エンドポイントが `https://host_uri/api/services/service_group_name/
 
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
-JSON サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication)で利用できます。
+JSON サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication) で利用できます。

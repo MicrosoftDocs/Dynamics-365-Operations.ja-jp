@@ -3,25 +3,25 @@ title: ノルウェーのキャッシュ レジスタの配置ガイドライン
 description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
 author: AlexChern0v
 manager: olegkl
-ms.date: 07/08/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Norway
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: abbe8d81308bff8f3e0d2563e834af7b3c1723c8
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 34bd4c3626e6d1b6f5c52889256bf12e44cd4760
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057575"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409357"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -34,10 +34,34 @@ ms.locfileid: "3057575"
 このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー*を使用します。
+> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
 
 > [!NOTE]
 > 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+
+### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
+
+Commerce バージョン 10.0.15 では、Key Vault または本社が使用できない場合に、オフラインにするためのフェールオーバーをサポートする[小売店舗のユーザー定義の証明書プロファイル](./certificate-profiles-for-retail-stores.md) を使用できます。 この機能は、[小売チャンネルのシークレットを管理 ](../dev-itpro/manage-secrets.md) を拡張ます。
+
+CRT でこの機能を適用するには、次の手順を実行します。
+
+1. 新しい CRT 拡張機能プロジェクトを作成します (C# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (RetailSDK\SampleExtensions\CommerceRuntime)。
+
+2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
+
+3. シークレット呼び出しを読み取るには、プロファイスされたパラメータのあるコンストラクターを使用し、GetUserDefinedSecretCertificateServiceRequest を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+    
+    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);  GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+    
+    X509Certificate2 証明書 = getUserDefinedSecretCertificateServiceResponse.Certificate;
+    
+4. 証明書が取得されたら、データ署名に進みます。
+
+5. CRT 拡張機能プロジェクトを作成します。
+
+6. 出力クラス ライブラリをコピーし、手動テスト用の ...\RetailServer\webroot\bin\Ext に貼り付けます。
+
+7. CommerceRuntime.Ext.config ファイルで、カスタム ライブラリ情報で拡張機能の合成セクションを更新します。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -68,7 +92,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salespaymenttransext-component"></a>SalesPaymentTransExt コンポーネント
 
@@ -91,7 +115,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="xzreportsnorway-component"></a>XZReportsNorway コンポーネント
 
@@ -114,7 +138,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="application-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
@@ -139,7 +163,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignature-sample-component"></a>SalesTransactionSignature サンプル コンポーネント
 
@@ -168,7 +192,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="application-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
@@ -193,7 +217,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignature-sample-component"></a>SalesTransactionSignature サンプル コンポーネント
 
@@ -222,7 +246,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturesamplemessages-component"></a>SalesTransactionSignatureSample.Messages コンポーネント
 
@@ -245,7 +269,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -270,7 +294,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignature-sample-component"></a>SalesTransactionSignature サンプル コンポーネント
 
@@ -299,7 +323,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts コンポーネント
 
@@ -333,7 +357,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister コンポーネント
 
@@ -362,7 +386,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -385,7 +409,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts コンポーネント
 
@@ -417,7 +441,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-735-and-later"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
@@ -435,7 +459,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister コンポーネント
 
@@ -464,7 +488,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -487,7 +511,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts コンポーネント
 
@@ -519,7 +543,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-811-and-later"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
@@ -537,7 +561,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister コンポーネント
 
@@ -566,7 +590,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -589,7 +613,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="sequentialsignatureregistercontracts-component"></a>SequentialSignatureRegister.Contracts コンポーネント
 
@@ -621,7 +645,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 ---
 
@@ -771,7 +795,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     ---
 
-3. プロキシ コードを再生成するには、コマンドラインから **msbuild/t:Rebuild** コマンドを使用して**プロキシ**フォルダーを構築します。
+3. プロキシ コードを再生成するには、コマンドラインから **msbuild/t:Rebuild** コマンドを使用して **プロキシ** フォルダーを構築します。
 4. **Proxies.RetailProxy** プロジェクトの依存関係を解決します。
 
     # <a name="application-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
@@ -780,7 +804,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     # <a name="application-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
-    **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開き、**RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** プロジェクトをソリューションに追加し、プロジェクト参照を **RetailProxy** プロジェクトと、**SalesTransactionSignatureSample.Messages**参照に追加します。
+    **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開き、**RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** プロジェクトをソリューションに追加し、プロジェクト参照を **RetailProxy** プロジェクトと、**SalesTransactionSignatureSample.Messages** 参照に追加します。
 
     # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -1222,7 +1246,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     > 詳細については、およびソース コード フォルダーを含め、拡張機能の読み込みを有効にする方法を示すサンプルについては、**Pos.Extensions** プロジェクトの readme.md ファイル内にある手順を参照してください。
 
 5. ソリューションをリビルドします。
-6. **実行**コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
+6. **実行** コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
 7. 機能をテストします。
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
@@ -1236,7 +1260,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
-    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの**構成**セクションに、次の行を追加します。
+    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
 
         # <a name="application-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
@@ -1330,7 +1354,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
-        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
+        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -1338,7 +1362,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
-        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
+        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -1346,7 +1370,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         # <a name="retail-735-and-later"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
-        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
+        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -1354,7 +1378,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         # <a name="retail-811-and-later"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
-        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
+        **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -1608,7 +1632,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 Modern POSでオフライン モードでのデジタル署名を有効にするには、新しい端末で Modern POS を有効化した後、これらの手順に従う必要があります。
 
 1. POS にサインインします。
-2. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **ダウンロードの保留中**フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
+2. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **ダウンロードの保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
 3. POS からのサインアウト
 4. オフライン データベースが完全に同期するため少しの間待ちます。
 5. POS にサインインします。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 55871
 ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da98becdfe793910d7ea15260cac44945854085
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 6e0be0d9e4d1cfd9fa827bb66b828c7572c8366f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329881"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686578"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページ上またはグリッド内の画像
 
@@ -170,7 +169,7 @@ ttscommit;
 -   ResID (記号にマッピングされます)
 
 > [!NOTE]
-> ResID および Int は、同じ戻り値の型です。 画像コントロール インスタンスの**イメージ リスト** プロパティにインスタンス値が割り当てられている場合、表示メソッドの戻り値はイメージ リストへの配列インデックスと見なされます。 **imageList** プロパティが **null** である場合、戻り値は、記号をレガシー ResID をマップするために使用されます。
+> ResID および Int は、同じ戻り値の型です。 画像コントロール インスタンスの **イメージ リスト** プロパティにインスタンス値が割り当てられている場合、表示メソッドの戻り値はイメージ リストへの配列インデックスと見なされます。 **imageList** プロパティが **null** である場合、戻り値は、記号をレガシー ResID をマップするために使用されます。
 
 ## <a name="images-in-a-grid-and-the-legacy-imagelist-collection"></a>グリッドのイメージと旧式 ImageList コレクション
 AX 2012 およびそれ以前のバージョンにおいて、イメージを表示するための共通の使用パターンでは、リソースとしてイメージを格納、またはカーネルによって提供されるイメージ リソースを使用してから、実行時にそのイメージを抽出して、ImageList と呼ばれる再利用可能なコレクションに配置します。 このガイダンスでは軽量の記号画像を使用します。 すべてのレガシ コードは、記号を直接使用するように書き換える必要があります。 ImageList コレクションを使用するすべてのコードを置換する必要もあります。 これらの変更を行わない場合は、旧式 ImageList コレクションを使用すると、もはや存在しない埋め込み (カーネル) のリソースに依存するため、イメージが表示されなくなります。 したがって、更新されるまでレガシー コードをサポートするために、ImageList コレクションは埋め込みリソースの ResID を新しいフォント ベースのシンボルにマップし、ImageList コレクションを使用するコードが引き続き実行され、イメージが提供されるようにします。

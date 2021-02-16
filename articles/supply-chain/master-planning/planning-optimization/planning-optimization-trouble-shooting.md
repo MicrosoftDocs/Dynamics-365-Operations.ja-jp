@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367004"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431743"
 ---
 # <a name="troubleshoot-planning-optimization"></a>計画最適化のトラブルシューティング 
 
@@ -58,7 +58,7 @@ ms.locfileid: "3367004"
 
 ## <a name="cant-enable-planning-optimization"></a>計画の最適化を有効化できない
 
-**計画の最適化**を使用する設定を **はい** にする前に、**接続ステータス** を **接続済** とする必要があります。 詳細については、[計画の最適化を開始する](get-started.md) を参照してください。
+**計画の最適化** を使用する設定を **はい** にする前に、**接続ステータス** を **接続済** とする必要があります。 詳細については、[計画の最適化を開始する](get-started.md) を参照してください。
 
 **修正** : 計画最適化アドインが正常にインストールされていることを確認してください。
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: b364a31d-34de-45c5-b698-64c5262c592e
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: aac59e81463b098a0fb17cba2a060434eb26d2b0
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 5ac2bd67059c5823634f0ee7ef4fbeb8e7f41e39
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627627"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693156"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
 
@@ -41,7 +40,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ### <a name="bug-fixes"></a>バグ修正
 
-Finance and Operations 8.1.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://go.microsoft.com/fwlink/?linkid=2049362)を参照してください。
+Finance and Operations バージョン 8.1.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://go.microsoft.com/fwlink/?linkid=2049362) を参照してください。
 
 ### <a name="platform-update-23"></a>プラットフォーム update 23
 
@@ -73,16 +72,16 @@ ER モデル マッピングの国コンテキストを指定することがで�
 
 ### <a name="accounts-receivable"></a>売掛金管理
 - 税登録では、ロシア税会計原則に従って課税利益および損失を追跡して管理できます。 次の税登録を使用できるようになりました。
-  -  **売掛金勘定の棚卸資産活動**の引当 
-  -  **売掛金 – 貸倒損失引当**の引当
+  -  **売掛金勘定の棚卸資産活動** の引当 
+  -  **売掛金 – 貸倒損失引当** の引当
   -  **売掛金 – 貸倒損失引当の移動** の引当 
-  -  **売掛金勘定の棚卸資産の移動**の引当 
+  -  **売掛金勘定の棚卸資産の移動** の引当 
 - 売掛金貸倒損失を損金処理できるようになりました。
  
 ### <a name="accounts-payable"></a>買掛金管理
  - 税登録では、ロシア税会計原則に従って課税利益および損失を追跡して管理できます。 次の税登録を使用できるようになりました。
-   - **買掛金勘定の棚卸資産活動**の引当
-   - **買掛金勘定の借入金移動**の引当 
+   - **買掛金勘定の棚卸資産活動** の引当
+   - **買掛金勘定の借入金移動** の引当 
  - 買掛金貸倒損失を損金処理できるようになりました。
 
 ### <a name="client-bank-interface-and-reconciliation-procedure"></a>クライアント-銀行のインターフェイスと調整手順

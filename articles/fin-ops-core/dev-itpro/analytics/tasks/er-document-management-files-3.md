@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4324ed62c56abea6d90d83d950429b6ddf7a84b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142034"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681856"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER 形式の出力 (パート 3 - 形式の作成) におけるドキュメント管理ファイルの使用
 
@@ -38,7 +37,7 @@ ms.locfileid: "3142034"
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
 2. [コンフィギュレーションをレポートする] をクリックします。
 3. ツリーで、「Customer invoice model」を選択します。
-4. ツリーで、「Customer invoice model\Customer invoice model (custom)]を選択します。
+4. ツリーで、[Customer invoice model\Customer invoice model (custom)]を選択します。
     * 販売注文に添付されるファイル情報がある電子メッセージを生成するにはフォーマットを作成します。当該ファイルは電子処理請求書に関連付けられています。  
 5. [コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。
 6. [新規] フィールドで、「データモデル・顧客請求書モデル（カスタム）に基づくフォーマット」を入力します。

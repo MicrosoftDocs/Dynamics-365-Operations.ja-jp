@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: fc93c40c595e6ef3c471e28c8f7c2f595f72cfcd
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: f7a434aac758c6f36a50b68f08a9df4c02cd613f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431726"
 ---
 # <a name="consolidate-shipments-by-using-shipment-consolidation-policies"></a>出荷連結ポリシーを使用して出荷を連結する
 

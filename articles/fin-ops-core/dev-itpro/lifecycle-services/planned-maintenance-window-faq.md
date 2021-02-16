@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 6154
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e65b1cef84c8ea101993447dd68b99c3ede109b
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 1b98c5bb6a08740ac367974d98e852f0250ee254
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117402"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687894"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "3117402"
 メンテナンス予定期間は、機器設備や [サービス](../../fin-ops/get-started/one-version.md) に関する重要な更新を適用するために Microsoft がスケジュール設定をした時間枠です。
 
 ### <a name="how-does-a-planned-maintenance-window-work"></a>計画されているメンテナンス ウィンドウはどのように機能しますか。
-レベル 2 からレベル 5 のサンドボックス環境および実稼働環境でスケジュールされた計画的保守については、パッチ適用を開始する **5 日前**に Microsoft がすべての利害関係者に通知を送信します。 パッチ適用枠は環境にパッチが適用される期間です。 それは地理的な地域によって定義されます。 保守活動に関する詳細は、関係者に送信される通知に含まれます。 Microsoft が管理するレベル 1 の環境では、更新前に通知は送信されません。 
+レベル 2 からレベル 5 のサンドボックス環境および実稼働環境でスケジュールされた計画的保守については、パッチ適用を開始する **5 日前** に Microsoft がすべての利害関係者に通知を送信します。 パッチ適用枠は環境にパッチが適用される期間です。 それは地理的な地域によって定義されます。 保守活動に関する詳細は、関係者に送信される通知に含まれます。 Microsoft が管理するレベル 1 の環境では、更新前に通知は送信されません。 
 
 ### <a name="when-is-this-planned-maintenance-window-taken"></a>この計画済みメンテナンス ウィンドウはいつ使用されますか ?
 ユーザーへの影響を制限するため、環境が配置されている地域に応じてメンテナンス ウィンドウが予定されています。 次のリストは、各地域のメンテナンス ウィンドウを示しています。 すべての環境は、これら 3 つの地域のいずれかに分類されます。 時間は協定世界時 (UTC、グリニッジ標準時) で表示されます。

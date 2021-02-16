@@ -16,15 +16,15 @@ ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c56d80dca9bf7753585532dffd57552ce2ee7a3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203828"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432206"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
@@ -63,7 +63,7 @@ ms.locfileid: "3203828"
 会社間計画グループ、品目配賦キーおよびその他のフィルタは予測生成時に適用できます。 これらはパフォーマンスの改善、または管理しやすいチャンクにデータを分割するのに使用できます。 ただし品目配賦キーをクエリで選択した場合でも、会社間計画グループに関連付けられない品目配賦キーのメンバーに対して需要予測は生成されない事に、注意してください。 
 
 > [!TIP]
-> 場合によっては、需要予測の生成中、または予測の生成がセッション ログなしで完了した際に、エラーが発生する場合があります。 これは、予測の生成に以前に使用されたクエリのデータが残っている場合に発生することがあります。 この問題を解決するには、**選択**をクリックして**クエリ** ページを開き、**リセット**を選択して、ベースライン予測を再生成します。 
+> 場合によっては、需要予測の生成中、または予測の生成がセッション ログなしで完了した際に、エラーが発生する場合があります。 これは、予測の生成に以前に使用されたクエリのデータが残っている場合に発生することがあります。 この問題を解決するには、**選択** をクリックして **クエリ** ページを開き、**リセット** を選択して、ベースライン予測を再生成します。 
 
 たとえば 1 つの品目または 1 つの品目配賦キーを一度に生成する場合など、大きい 1 つの品目の予測が生成されない場合や、パフォーマンスを向上させるために、**マスタ プラン - 設定 - 需要予測** - **需要予測のパラメーター - Azure Machine Learning** のタブで **要求応答モードの使用** のチェック ボックスを選択できます。
 

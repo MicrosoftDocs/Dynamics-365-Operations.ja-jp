@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 134215af15183cd4f9a36f839de6fd1d7a3bcd11
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 9288b11aebdace43ea52cb295163db13ee4c1e4f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329929"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682459"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 
@@ -67,8 +66,8 @@ Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
 URL ジェネレーターは、アクティブなユーザー セッションまたはバッチ処理で、AOS 上で実行されているコードから使用する必要があります。 この要件は、URL を生成するインスタンスに固有の暗号化によるセキュリティで保護することができます。 少なくとも、作業 URL を生成するために次の情報を指定して URL ジェネレータに渡す必要があります。
 
 -   **ホスト URL**
-    -   インスタンスの Web ルートの URL。 例: https://ax.dynamics.contoso.com/
--   **メニュー項目の表示**の AOT 名
+    -   インスタンスの Web ルートの URL。 例: `https://ax.dynamics.contoso.com/`
+-   **メニュー項目の表示** の AOT 名
     -   フォームを開くために使用するメニュー項目の表示。
 -   **パーティション**
     -   要求に使用するパーティション。

@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 37b541ff5037a38b60dbfd6a6c071f55afcc1304
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443921"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689537"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -28,21 +28,60 @@ ms.locfileid: "3443921"
 
 このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Commerce 10.0.15 リリースの削除済みまたは非推奨の機能
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 による Internet Explorer 11 サポートの非推奨
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **別の機能で置き換えられているか?**   | お客様が Microsoft Edge に移行することをお勧めします。|
+| **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
+| **配置オプション**              | All|
+| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commerce 10.0.11 リリースの削除済みまたは非推奨の機能
 ### <a name="data-action-hooks"></a>データ アクションのフック
 |   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | パフォーマンスの問題のために、データ アクション フック機能は廃止されました。 |
-| **別の機能で置き換えられているか?**   | データアクション層のビジネスロジックを変更するために、[データ アクションの上書き](../e-commerce-extensibility/data-action-overrides.md) を使用することが推奨されます。|
+| **別の機能で置き換えられているか?**   | データアクション層のビジネス ロジックを変更するために、[データ アクションの上書き](../e-commerce-extensibility/data-action-overrides.md) の使用をお勧めします。|
 | **影響を受ける製品領域**         | eコマースの拡張データ アクション |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
+
+### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Visual Studio 2015、msbuild 14.0、および Retail SDK\Reference ライブラリとツールのための Retail SDK サポート
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Visual Studio 2015 の Retail SDK サポートは推奨されておらず、VS 2017、msbuild 15.0、すべての参照ライブラリをサポートするために更新され、RetailSDK\References フォルダ内の commerce プロキシ ジェネレーター ツールが、拡張モデルと SDK アップグレード プロセスを簡素化するために NuGet パッケージに移動しました。|
+| **別の機能で置き換えられているか?**   | [Retail SDK を Visual Studio 2015 から Visual Studio 2017への移行](../dev-itpro/retail-sdk/migrate-sdk.md) の情報に従って、システムを更新することをお勧めします。 |
+| **影響を受ける製品領域**         | Retail SDK 拡張機能 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
+
+### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>IEdmModelExtender と CommerceController を使用した Retail Server 拡張機能
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | IEdmModelExtender と CommerceController を使用した Retail Server 拡張機能は、簡略化された拡張モデルを提供するために廃止されました。 新しい実装では、追加の IEdmModelExtender クラスの実装のない、コントローラー クラスのみが含まれます。 これにより、特定の OData バージョンとの依存関係を回避します (OData バージョンが更新されると、拡張機能が壊れてしまう可能性があります。) |
+| **別の機能で置き換えられているか?**   |  NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) パッケージをインポートして、IController クラス拡張モデルを使用することをお勧めします。 |
+| **影響を受ける製品領域**         | Retail Sever 拡張機能 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
+
+### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>IHardwareStationController を使用した Hardware Station 拡張機能
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | IHardwareStationController を使用した Hardware Station 拡張機能は、簡略化された拡張モデルを提供するために廃止されました。 新しい実装では、追加のクラス実装のない、IController クラスのみを持つことになり、コア Hardware Station ライブラリとの依存関係を回避するために、以前の拡張では複数のライブラリを参照する必要があります。) |
+| **別の機能で置き換えられているか?**   | NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) パッケージをインポートして、IController クラス拡張モデルを使用することをお勧めします。 |
+| **影響を受ける製品領域**         | Hardware Station の拡張機能 |
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: リリース 10.0.11 現在 |
 

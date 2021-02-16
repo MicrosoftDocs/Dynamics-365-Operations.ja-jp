@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: e3e8c4d225ccc168993869d9e7db6d5cc4ed3f4b
-ms.sourcegitcommit: dca6ac616b901f33ad278dfd9c7ef55b7c898840
+ms.openlocfilehash: 38bad607ce8a5241b2cfb89f1fd53c803eae6707
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225513"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409266"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMDimensionMember
+ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -16,15 +16,15 @@ ms.custom: 223174
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c2cea745ec645b2e9cc6f9d72a0aeae2f7467155
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188007"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445077"
 ---
 # <a name="allocation-bases"></a>配賦基準 
 
@@ -333,7 +333,7 @@ ms.locfileid: "2188007"
 |-------------------|------------------------|-----------------------|---------|
 | 電気固定費 |                        | 統計要素  |         |
 
-**フォーミュラ**フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+**フォーミュラ** フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
 
 **フォーミュラ配賦基準係数**
 
@@ -386,7 +386,7 @@ ms.locfileid: "2188007"
 |-------------------|------------------------|-----------------------|---------|
 | 電気使用量 |                        | 統計要素  |         |
 
-**フォーミュラ**フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+**フォーミュラ** フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
 
 **フォーミュラ配賦基準係数**
 

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dde06f758be57fb646696c861218565476abcadc
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 673403680525eff57c5886bb4f430a33efd76250
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140562"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694792"
 ---
 # <a name="create-an-organization-hierarchy"></a>組織階層の作成
 
@@ -34,18 +33,18 @@ ms.locfileid: "3140562"
 この手順の作成に使用するデモ データの会社は USMF です。
 
 ## <a name="create-a-hierarchy"></a>階層の作成
-1. **ナビゲーション ウィンドウ > モジュール > 組織管理 > 組織 > 組織階層**の順に移動します。
-2. **アクション ウィンドウ**で、**新規**をクリックします。
-3. **名前**フィールドに値を入力します。
-4. **目的**セクションで、**目的の割り当て**をクリックします。
+1. **ナビゲーション ウィンドウ > モジュール > 組織管理 > 組織 > 組織階層** の順に移動します。
+2. **アクション ウィンドウ** で、**新規** をクリックします。
+3. **名前** フィールドに値を入力します。
+4. **目的** セクションで、**目的の割り当て** をクリックします。
 5. 一覧で、目的のレコードを見つけ、選択します。 組織階層に割り当てる目的を選択します。  
-6. **割り当て済の階層**セクションで、**追加**をクリックします。
+6. **割り当て済の階層** セクションで、**追加** をクリックします。
 7. 一覧で、選択された行をマークします。 作成した階層を検索します。  
-8. **OK**をクリックします。
+8. **OK** をクリックします。
 
 ## <a name="add-organizations-to-the-hierarchy"></a>階層への組織の追加
 1. 一覧で、目的のレコードを見つけ、選択します。 階層を選択します。  
-2. **割り当て済の階層**セクションで、**セクションで**をクリックします。
+2. **割り当て済の階層** セクションで、**セクションで** をクリックします。
     - 必要に応じて組織を追加します。  
-    - 組織を追加するには、**編集**、 次に**挿入**をクリックして組織を追加します。 変更が完了したら、ドラフトを**保存**または変更を**公開**できます。  
+    - 組織を追加するには、**編集**、 次に **挿入** をクリックして組織を追加します。 変更が完了したら、ドラフトを **保存** または変更を **公開** できます。  
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CustPosting
+ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb2784d70e99c3c3443bed1b8cb040552b5b6f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189065"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445049"
 ---
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
@@ -43,7 +43,7 @@ ms.locfileid: "2189065"
 ## <a name="creating-a-posting-profile"></a>転記プロファイルの作成
 選択した転記プロファイルを使用するトランザクションを転記する際に使用される勘定科目を指定します。 選択した転記プロファイルについて、アカウント コードおよび (可能な場合) アカウント番号またはグループ番号を選択します。 転記プロセスでは、次の優先順位に従って特定のアカウント コード、アカウント番号、グループ番号の組み合わせを検索することにより、各トランザクションの最も適切な転記プロファイルを見つけます。
 
-| **アカウント コード** フィールド値 | **アカウント/グループ番号**フィールド値            | 検索の優先順位 |
+| **アカウント コード** フィールド値 | **アカウント/グループ番号** フィールド値            | 検索の優先順位 |
 |------------------------------|-------------------------------------------------|-----------------|
 | **テーブル**                    | 特定の顧客 ID                       | 1               |
 | **グループ**                    | 顧客に割り当てられた顧客グループ | 2               |

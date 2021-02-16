@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,19 +17,19 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1f0c1be0bb2b68e4dd36842d1bfd86047b9fbffd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: db8061a743a6e4857d5d090f2b2b065922b3e4c3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004602"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680390"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 電子商取引プラットフォームで Adyen の "カードが存在しない" 支払コネクタを使用している場合に、支払手段の保存に関連する設定と機能について説明します。 
+このトピックでは、Dynamics 電子商取引プラットフォームで Adyen の "カードが存在しない" 支払コネクタを使用しているときの支払い方法の保存に関連する設定と機能について説明します。 
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -67,7 +66,7 @@ ms.locfileid: "3004602"
 
     このトピックで説明されている電子商取引の設定手順を完了することに加えて、**オンライン ストア** フォームの支払口座クイック タブの **電子商取引で支払情報の保存を許可する** オプションを **はい** に設定する必要があります。 
 
-- **オムニ チャネルの支払コンフィギュレーション** – バック オフィスで **小売とコマース \>本社の設定 \>パラメーター \>コマース共有パラメーター**に移動します。 次に **オムニ チャネルの支払** タブで **オムニ チャネルの支払を使用する** オプションを **はい** に設定します。 
+- **オムニ チャネルの支払コンフィギュレーション** – バック オフィスで **小売とコマース \>本社の設定 \>パラメーター \>コマース共有パラメーター** に移動します。 次に **オムニ チャネルの支払** タブで **オムニ チャネルの支払を使用する** オプションを **はい** に設定します。 
 
 ## <a name="functional-experience"></a>機能のエクスペリエンス
 

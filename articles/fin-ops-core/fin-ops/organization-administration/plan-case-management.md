@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 23581
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0123804d1e8b737d23c9cc77537f48cec4bc5e0c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c4967d468bcac4866ad0c11aeec71326aa31888d
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180479"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693918"
 ---
 # <a name="plan-case-category-security-case-processes-and-case-categories"></a>ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 

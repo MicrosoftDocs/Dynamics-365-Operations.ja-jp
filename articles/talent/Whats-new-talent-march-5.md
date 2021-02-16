@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898922"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527293"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 3 月 5 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、 Talent の新機能または変更された機能について説明します。
 
@@ -33,10 +35,10 @@ ms.locfileid: "2898922"
 
 ### <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
 
-Attract には、Common Data Service 内のオプション セットである複数のフィールドがあります。 **不採用**理由フィールド、**雇用タイプ**フィールド、および**勤続タイプ**フィールドをはじめとするオプション セットを拡張するための新しい機能が導入されました。
+Attract には、Common Data Service 内のオプション セットである複数のフィールドがあります。 **不採用** 理由フィールド、**雇用タイプ** フィールド、および **勤続タイプ** フィールドをはじめとするオプション セットを拡張するための新しい機能が導入されました。
 
 > [!IMPORTANT]
-> LinkedIn 機能へのジョブ求人転記には、**ジョブの詳細**ページの**雇用タイプ**および**勤続タイプ**フィールドの使用が求められます。 これらのフィールドの既定値は LinkedIn でサポートされ、ジョブが転記されるときに表示されます。 LinkedIn にジョブ求人を転記していて、これらのフィールドの既存のオプション セット値を変更した場合、ジョブ求人は転記されますが、LinkedIn はカスタム**雇用タイプ**および**勤続タイプ**の値を表示しません。
+> LinkedIn 機能へのジョブ求人転記には、**ジョブの詳細** ページの **雇用タイプ** および **勤続タイプ** フィールドの使用が求められます。 これらのフィールドの既定値は LinkedIn でサポートされ、ジョブが転記されるときに表示されます。 LinkedIn にジョブ求人を転記していて、これらのフィールドの既存のオプション セット値を変更した場合、ジョブ求人は転記されますが、LinkedIn はカスタム **雇用タイプ** および **勤続タイプ** の値を表示しません。
 
 ## <a name="changes-in-onboarding"></a>オンボードの変更
 
@@ -77,4 +79,4 @@ Common Data Service へのアップグレードの期限が近づいています
 多くの組織で、報酬および福利厚生のマネージャーは、経営幹部または地域の従業員のレコードなど、特定の報酬レコードにのみアクセスできます。 この変更により、組織内のさまざまな従業員数の報酬プランを管理および維持できます。 固定および変動プランにはセキュリティ ロールを割り当てることができます。これは、プランへのアクセス権とプランに関連する従業員データ (給与または特別償却レコードなど) を決定します。 与えられたアクセス権を持つロールのみが、それらの従業員の報酬を処理できます。
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
-Finance and Operations のプラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
+Finance and Operations のプラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)を参照してください。

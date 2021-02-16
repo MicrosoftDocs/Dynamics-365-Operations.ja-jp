@@ -1,7 +1,7 @@
 ---
 title: 口座取引明細書ファイルのインポートのトラブルシューティング
 description: 銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 Finance がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5e7e6897f19dc0303ffbd3111f93669a91daa1b
-ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
+ms.openlocfilehash: 09b24b88ee5f8104aabd11397d5bd2745e846cb0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3059379"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445067"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
@@ -40,7 +40,7 @@ ms.locfileid: "3059379"
 銀行ファイル レイアウト定義を Finance のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Finance ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>インポートされた口座取引明細書のタイム ゾーンの違い
-インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成**ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
+インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成** ページでタイム ゾーンの設定を入力します。 タイム ゾーンの設定の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。

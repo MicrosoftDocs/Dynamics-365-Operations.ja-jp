@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b365bf99fcb5c97a1afe1675ddcf34a0db8f07
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a14ae2771890085308b560cea59240556c6a55a3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207859"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432399"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -36,9 +36,9 @@ ms.locfileid: "3207859"
 購買要求が承認された後、購買要求を使用して発注書を生成できます。 発注書は、購買部門が仕入先に提出する外部ドキュメントです。
 
 ## <a name="creating-purchase-requisitions"></a>購買要求の作成
-**自分の購買要求**ページで購買要求を作成して、必要な品目とサービスを選択できます。 組織が作成した調達カタログから品目を選択するか、またはそのカタログに品目が見つからなかった場合は、調達カテゴリを選択し、製品の詳細を入力して品目を請求できます。  
+**自分の購買要求** ページで購買要求を作成して、必要な品目とサービスを選択できます。 組織が作成した調達カタログから品目を選択するか、またはそのカタログに品目が見つからなかった場合は、調達カテゴリを選択し、製品の詳細を入力して品目を請求できます。  
 
-購買要求をレビューのために送信する前に、ワークフローを構成する必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
+購買要求をレビューのために送信する前に、ワークフローを構成する必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を **ドラフト** の最初のステータスから **承認済** の最後のステータスへ移動します。
 
 ### <a name="purchase-requisition-statuses"></a>購買要求のステータス
 
@@ -157,7 +157,7 @@ ms.locfileid: "3207859"
 **購買要求の詳細** ページの **保留** チェック ボックスを選択すると、購買要求を保留にすることができます。 購買要求の処理は、チェック ボックスをオフにして、保留を解除した後にのみ実行できます。  
 
 > [!NOTE]
-> eProcurement では、仕入先は購買要求の RFQ によって代替明細行を追加できる場合があります。 この場合、購買要求は、承認された代替明細行に反映します。
+> e-procurement では、仕入先は購買要求の RFQ によって代替明細行を追加できる場合があります。 この場合、購買要求は、承認された代替明細行に反映します。
 
 ## <a name="demand-consolidation"></a>需要連結
 複数の購買要求からの購買要求明細行を連結すると、仕入先との交渉力が高まり、有利な商品価格決定、配送費用および手数料の低減、間接費の削減を実現できます。  
@@ -169,12 +169,12 @@ ms.locfileid: "3207859"
 
 手動処理の条件を満たす承認済購買要求明細行の一覧は、**承認済購買要求のリリース** ページに表示されます。 購買要求明細行が需要連結の条件も満たしている場合は、その明細行を連結機会に追加できます。  
 
-連結機会とは、購買担当者が仕入先と最良の取引を交渉できるようにグループ化される一連の購買要求明細行です。 連結機会に対して選択した購買要求明細行は**購買要求連結**ページに表示されます。 変更が必要な場合、このページで明細行を変更できます。 また、新しい明細行を連結機会に追加したり、既存の明細行を削除したりすることもできます。  
+連結機会とは、購買担当者が仕入先と最良の取引を交渉できるようにグループ化される一連の購買要求明細行です。 連結機会に対して選択した購買要求明細行は **購買要求連結** ページに表示されます。 変更が必要な場合、このページで明細行を変更できます。 また、新しい明細行を連結機会に追加したり、既存の明細行を削除したりすることもできます。  
 
 要求明細行を連結機会に追加して必要な変更を行うと、連結購買要求明細行の発注書を作成できます。  
 
 > [!NOTE]
-> **購買要求連結**ページで購買要求明細行に対して行った変更は、作成した発注書に反映されます。 ただし、購買要求では履歴を保持するように明細行は変更されません。  
+> **購買要求連結** ページで購買要求明細行に対して行った変更は、作成した発注書に反映されます。 ただし、購買要求では履歴を保持するように明細行は変更されません。  
 
 需要連結を適用できない購買要求明細行の発注書、または連結機会に対して選択されていない購買要求明細行の発注書を作成するには、手動で処理する必要があります。
 

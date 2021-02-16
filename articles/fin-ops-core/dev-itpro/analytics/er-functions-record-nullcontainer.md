@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea71bfc4b30164fd32e804bf83a46c49cd18d155
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: c1932116b67cef79622f0f6152b168b5961a72c7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041472"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683041"
 ---
-# <a name="NULLCONTAINER">NULLCONTAINER ER 関数</a>
+# <a name="nullcontainer-er-function"></a>NULLCONTAINER ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`NULLCONTAINER` 関数は、指定されたリストまたはレコードと同じ構造を持つ*コンテナー (レコード)* 値を返します。
+`NULLCONTAINER` 関数は、指定されたリストまたはレコードと同じ構造を持つ *コンテナー (レコード)* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,9 +38,9 @@ NULLCONTAINER (list)
 
 ## <a name="arguments"></a>引数
 
-`list`: *レコード リスト*または*コンテナー (レコード)*
+`list`: *レコード リスト* または *コンテナー (レコード)*
 
-*レコード リスト*または*コンテナー (レコード)* タイプのデータ ソースの有効なパス。
+*レコード リスト* または *コンテナー (レコード)* タイプのデータ ソースの有効なパス。
 
 ## <a name="return-values"></a>戻り値
 

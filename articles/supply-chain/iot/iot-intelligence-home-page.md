@@ -2,8 +2,8 @@
 title: IoT インテリジェンス ホーム ページ
 description: このトピックでは、IoT インテリジェンスに関する情報へのリンクについて説明します。
 author: robinarh
-manager: AnnBe
-ms.date: 04/25/2020
+manager: tfehr
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,19 +16,25 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd27b820e4863f443ee03d839aa4d4f480148d18
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: dbb4e2d87b4e8b7a71073e66ffc1861701ce8c3f
+ms.sourcegitcommit: bb75a2373b520a8e2b6a9a276d40697bf90ced75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386423"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "4717265"
 ---
-# <a name="iot-intelligence-home-page"></a>IoT インテリジェンス ホーム ページ
+# <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> **使用可能性:** この機能は、中国の 21Vianet が運営する Finance and Operations アプリでは使用できません。
+> この機能は、現在次の国/地域でのみ使用できます。
+>
+> - US (米国)
+> - EU (欧州連合)
+> - AU (オーストラリア)
+> - CA (カナダ)
+> - UK (英国)
 
 IoT インテリジェンス、Microsoft Dynamics 365 Supply Chain Management のアドインです。 また、モノのインターネット (Internet of Things: IoT) の信号を Supply Chain Management のデータと統合し、実用的な分析情報を生み出します。
 
@@ -56,7 +62,7 @@ IoT インテリジェンスにより、次のシナリオがサポートされ�
 ## <a name="tracking-and-maintenance"></a>進捗管理とメンテナンス
 
 + [Dynamics 365 Supply Chain Management でシナリオを監視](iot-management.md#monitor-scenarios)
-+ [シナリオの無効化](iot-scenario-setup.md#how-to-disable-a-scenario)
++ [シナリオの無効化](iot-scenario-setup.md#disable-a-scenario)
 + [アドインのアンインストール](iot-lcs-setup.md#uninstall-addin)
 + [実行中の IoT インテリジェンス シナリオの変更](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [シミュレーション オプション](iot-management.md#simulation-options)

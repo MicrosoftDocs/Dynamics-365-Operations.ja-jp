@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14741
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6732ba9ab0e870fa6219fce16391eb73c7de0ae
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: c07e7cb16da762cb84fc01c5c7ebf32d109db768
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329839"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683945"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
@@ -40,7 +39,8 @@ ms.locfileid: "3329839"
 -   NSL+D サブパターンの詳細部分は、SL+D パターンよりも単純です。 NSL + D サブパターンはグループのみ使用しますが、SL+D パターンはコンテンツをクイック タブに整理します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![簡易リストと詳細パターンのワイヤーフレーム](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
+
+![簡易リストと詳細パターンのワイヤーフレーム](./media/nestedsimplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -73,7 +73,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     3.  **ActionPane.DataSource**=**&lt;グリッドと同じデータ ソース&gt;** を設定します。
     4.  ツール バー コマンドの追加プロパティを設定します。
     5.  ツール バー コマンドの削除プロパティを設定します。
-    6.  グリッドのデータ ソースが読み取り専用の場合は、ツールバーに**追加**/**削除**ボタンがあることを確認します。
+    6.  グリッドのデータ ソースが読み取り専用の場合は、ツールバーに **追加**/**削除** ボタンがあることを確認します。
 
 ## <a name="ux-guidelines"></a>UX ガイドライン
 検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。 このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。 ブラウザーでフォームを開いて、これらの手順を確認します。
@@ -85,11 +85,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 **入れ子になった簡易リスト & 詳細ガイドライン**
 
 -   **新規** ボタンまたは **削除** ボタンは重複してはいけません。
--   **グリッド**は、パターンのリスト部分に使用します。
+-   **グリッド** は、パターンのリスト部分に使用します。
     -   グリッドは、**list-style** グリッドにする必要があります。
     -   リスト スタイル グリッドでは、リスト スタイル グリッドの各レコードに 3 行 (行) まで表示します。 通常は IDと説明だけで十分です。
     -   データが存在しないとき、グリッド コントロールは新しいレコードを自動的に追加できません。
--   **詳細**セクションがコンテナー本体の右側に表示されます:
+-   **詳細** セクションがコンテナー本体の右側に表示されます:
     -   グリッドに表示されているのと同じ順序で、グリッドの列を Details Header Group の最初のフィールドとして表示します。
     -   レコードが追加されるとき、フォーカスは詳細セクションの最初のフィールドに移動するはずです。
 

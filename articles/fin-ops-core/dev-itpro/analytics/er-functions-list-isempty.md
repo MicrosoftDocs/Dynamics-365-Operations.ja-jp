@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6adca3c95c10e7d4b3287561925a9d9fe8a74121
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 5dbba375104b57f9fb09ed4e330d85181ec0dff8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042047"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684886"
 ---
-# <a name="ISEMPTY">ISEMPTY ER 関数</a>
+# <a name="isempty-er-function"></a>ISEMPTY ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ISEMPTY` 関数は、指定したリストにレコードが含まれていない場合、**TRUE** の*ブール*値を返します。 それ以外の場合は、**FALSE** の*ブール*値が返されます。
+`ISEMPTY` 関数は、指定したリストにレコードが含まれていない場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。
 
 ## <a name="syntax"></a>構文
 
@@ -47,7 +46,7 @@ ISEMPTY (list)
 
 *ブール型*
 
-結果*ブール*値。
+結果 *ブール* 値。
 
 ## <a name="example-1"></a>例 1
 

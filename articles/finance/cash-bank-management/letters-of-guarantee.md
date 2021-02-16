@@ -1,7 +1,7 @@
 ---
 title: 信用保証状
 description: この記事は、信用保証状に関する情報を提供します。 信用保証状で銀行は、銀行の顧客がある者に対して支払や義務を履行しない場合に、銀行がその者に特定の金額を支払うことに合意します。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 18291
 ms.assetid: 5c0b5e37-d51d-4a01-bb37-1882173abb9f
 ms.search.region: Global
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e7ab2e66c378388d002d2f2090f89bf6c96dac2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e3dbf08679c165258a4a4027bf1cf73484d9efd3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178683"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445234"
 ---
 # <a name="letters-of-guarantee"></a>信用保証状
 

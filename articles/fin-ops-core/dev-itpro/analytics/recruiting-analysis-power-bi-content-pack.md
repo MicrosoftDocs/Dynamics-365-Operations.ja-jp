@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b92078ca2bc89d752895bf3b4f2f3cdb2c2fd2f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185224"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680565"
 ---
 # <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツ
 
@@ -32,10 +31,10 @@ ms.locfileid: "2185224"
 このトピックでは、**Recruiting** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**Recruiting** Power BI コンテンツが**採用管理**ワークスペースで表示されます。
+**Recruiting** Power BI コンテンツが **採用管理** ワークスペースで表示されます。
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>採用管理ワークスペースでのレポートおよびビジュアル
-**採用管理**ワークスペースは、**分析**タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。 このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。 次の表に各タブのレポートを示します。
+**採用管理** ワークスペースは、**分析** タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。 このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。 次の表に各タブのレポートを示します。
 
 | レポート                | コンテンツ |
 |----------------------|----------|

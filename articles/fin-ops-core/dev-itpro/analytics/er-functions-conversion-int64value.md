@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fcb8a617507801d82d16175e9e86c9193091a12
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: bb750116312df82448f5a0048e380f9e5274f8e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042691"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686054"
 ---
-# <a name="INT64VALUE">INT64VALUE ER 関数</a>
+# <a name="int64value-er-function"></a>INT64VALUE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,9 +48,9 @@ INT64VALUE (number)
 
 *Int64* 数に変換する必要があるテキスト値。
 
-`number`: *実数*または*整数*
+`number`: *実数* または *整数*
 
-*Int64* 数に変換する必要がある数値の*実数*または*整数*値。
+*Int64* 数に変換する必要がある数値の *実数* または *整数* 値。
 
 ## <a name="return-values"></a>戻り値
 

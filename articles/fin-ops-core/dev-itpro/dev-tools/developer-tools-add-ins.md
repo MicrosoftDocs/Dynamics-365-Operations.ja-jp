@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb18336c1075ca284ab55114ae013abba5f87665
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 5625510500abb11f9d0f02940bed9f5e52287f81
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983662"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409326"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 
@@ -30,7 +29,7 @@ ms.locfileid: "2983662"
 
 このトピックでは、Microsoft Visual Studio に追加されたアドイン インフラストラクチャを説明し、開発者が開発ツールをより簡単に追加できるようにします。
 
-開発をサポートするため、数多くの優れたツールが Microsoft Visual Studio に追加されました。 ただし、特定の要件を満たすため、追加のツールが常にあります。 これらの追加ツールを簡単に追加できるように、開発者向けに**アドイン** インフラストラクチャが提供されています。 追加ツールが、次の 2 つの場所に用意されています。
+開発をサポートするため、数多くの優れたツールが Microsoft Visual Studio に追加されました。 ただし、特定の要件を満たすため、追加のツールが常にあります。 これらの追加ツールを簡単に追加できるように、開発者向けに **アドイン** インフラストラクチャが提供されています。 追加ツールが、次の 2 つの場所に用意されています。
 
 -   **Dynamics 365** メニューで **アドイン** サブメニューをポイントします。
 -   要素デザイナーのショートカット メニューの **アドイン** サブメニュー

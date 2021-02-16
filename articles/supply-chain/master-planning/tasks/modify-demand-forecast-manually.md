@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ddb14968bee06dd26b6584fab3d88445cd926cbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 105cf50698889e81804155cdac3a8b484cbf87d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209585"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431795"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>需要予測の手動変更
 
@@ -31,15 +31,15 @@ ms.locfileid: "3209585"
 
 
 ## <a name="modify-the-forecast-for-an-item"></a>品目の予測の変更
-1. **ナビゲーション ウィンドウ**で、**モジュール > 製品情報管理 > 製品 > リリース済製品**の順に移動します。
+1. **ナビゲーション ウィンドウ** で、**モジュール > 製品情報管理 > 製品 > リリース済製品** の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。 予測を変更する品目を選択します。 たとえば、品目「D0001」を選択できます。  
-3. **アクション** ペインで**計画**をクリックします。
-4. **需要予測**をクリックします。
+3. **アクション** ペインで **計画** をクリックします。
+4. **需要予測** をクリックします。
 5. 一覧で、選択された行をマークします。 予測明細行がない場合は、アプリ バーで新規をクリックして、新しい行を作成します。  
-6. **販売数量**フィールドに数値を入力します。 この数値は、品目の予測数量を表わします。  
+6. **販売数量** フィールドに数値を入力します。 この数値は、品目の予測数量を表わします。  
 7. [保存] をクリックします。
 
 ## <a name="modify-the-forecast-in-excel"></a>Excel での予測の編集
-1. Microsoft Office で**開く**をクリックします。
-2. Excel で**需要予測の編集**をクリックします。 Excel では、需要予測明細行を追加、削除、および編集できます。 Excel でデータを検索できない場合、「サインインしたままにする」オプションを有効化することによってサイン インし、データ接続のアプリを信頼する必要があります。  
+1. Microsoft Office で **開く** をクリックします。
+2. Excel で **需要予測の編集** をクリックします。 Excel では、需要予測明細行を追加、削除、および編集できます。 Excel でデータを検索できない場合、「サインインしたままにする」オプションを有効化することによってサイン インし、データ接続のアプリを信頼する必要があります。  
 

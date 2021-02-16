@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 3cdf650c6ab7b8004c01c5c8b839af7a26f57ee4
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 8bb5345e20a51cb947d565640d61a5bfad305512
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367015"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409334"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -51,7 +50,6 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 + [オーバーレイから拡張機能への移行](migrate-overlayer-extension.md)
 + [拡張機能によってモデル要素をカスタマイズする](customize-model-elements-extensions.md)
 + [拡張機能およびオーバーレイによるカスタマイズ](customization-overlayering-extensions.md)
-<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## <a name="fundamentals-on-extensions"></a>拡張機能の基本
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ab601891faac34db6bc5397b387c126fa1289f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 52bcb72e8222b378198fcd044428fa1a4a0e8944
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215059"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431647"
 ---
 # <a name="service-order-stages"></a>サービス注文ステージ   
 
@@ -32,7 +32,7 @@ ms.locfileid: "3215059"
 
 サービス注文のステージを設定して、完了する必要があるタスク、完了する順番、それらの実行を担当する作業者を定義できます。 サービス注文のステージを定義し、作業者に割り当てると、サービス組織内のさまざまな従業員が実行するタスクでのサービス注文の流れを管理できます。 ステージ シーケンスには、初期ステージを含める必要があります。
 
-また、各ステージで許可されるアクションを定義できます。 たとえば、最後のステージを除くすべてのステージの**転記**チェック ボックスをオフにすると、サービス注文がステージの全シーケンスを完了するまで、サービス注文を転記できないようにすることができます。
+また、各ステージで許可されるアクションを定義できます。 たとえば、最後のステージを除くすべてのステージの **転記** チェック ボックスをオフにすると、サービス注文がステージの全シーケンスを完了するまで、サービス注文を転記できないようにすることができます。
 
 ## <a name="branching-in-service-order-stages"></a>サービス注文ステージの分岐
 

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e34628712066d92a244676123ce928a468ea9e
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 66398e624e4b9d69d4dc3ccf3ee8f97758f4f861
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042392"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682344"
 ---
-# <a name="DAYS">DAYS ER 関数</a>
+# <a name="days-er-function"></a>DAYS ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`DAYS` 関数は、ある指定された日付から 2 番目の指定された日付までの日数を表す*整数*値を返します。
+`DAYS` 関数は、ある指定された日付から 2 番目の指定された日付までの日数を表す *整数* 値を返します。
 
 ## <a name="syntax"></a>構文
 

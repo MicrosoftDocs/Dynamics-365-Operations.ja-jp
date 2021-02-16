@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
 ms.openlocfilehash: 1228339c12d26f7b91875d15f0daa8da2869cba0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215910"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431846"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への在庫レベル情報の同期 
 
@@ -71,15 +71,15 @@ Supply Chain Management は、在庫レベルのマスターとして機能し�
 > Field Services で複数の倉庫を作成し (**外部で管理 = いいえ**)、Supply Chain Management で高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Supply Chain Management への在庫調整の同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Supply Chain Management のプロジェクトにリンクされている販売注文に同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
-**外部の製品在庫**エンティティは、統合へのバックエンドのみに使用されます。 このエンティティは統合内の Supply Chain Management から在庫レベルの値を受け取り、次のそれらの値を Manuel 在庫仕訳帳に変換します。これにより、倉庫の在庫製品が変更されます。
+**外部の製品在庫** エンティティは、統合へのバックエンドのみに使用されます。 このエンティティは統合内の Supply Chain Management から在庫レベルの値を受け取り、次のそれらの値を Manuel 在庫仕訳帳に変換します。これにより、倉庫の在庫製品が変更されます。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
 ### <a name="data-integration"></a>データ統合
 プロジェクトを機能させるには、統合キーが msdynce_externalproductinventories 用に更新されていることを確認する必要があります。
-1.  **データ統合 > 接続セット**に移動します。
+1.  **データ統合 > 接続セット** に移動します。
 2.  使用する接続設定を選択します。
-3.  **統合キー**タブで、次のキーが msdynce_externalproductinventories に追加されていることを確認します。
+3.  **統合キー** タブで、次のキーが msdynce_externalproductinventories に追加されていることを確認します。
       - msdynce_productnumber (製品番号)
       - msdynce_warehouseid (倉庫 ID)
       

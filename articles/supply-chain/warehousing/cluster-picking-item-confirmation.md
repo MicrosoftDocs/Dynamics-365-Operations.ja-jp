@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367295"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432002"
 ---
 # <a name="product-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品の確認
 
@@ -36,8 +36,8 @@ ms.locfileid: "3367295"
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>クラスタ ピッキングの品目の検証の設定
 
-1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: **倉庫管理** > **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目**に進みます。
-1. モバイル デバイス メニュー品目から、**作業確認の設定**を開きます。
+1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: **倉庫管理** > **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目** に進みます。
+1. モバイル デバイス メニュー品目から、**作業確認の設定** を開きます。
 
 |        オプション        |                                    説明                                    |
 |----------------------|-----------------------------------------------------------------------------------|

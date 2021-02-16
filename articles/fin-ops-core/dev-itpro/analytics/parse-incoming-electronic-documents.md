@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 880b73c68727f2617dae332c85b95d0e86d1f33f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d8e8f01d614f37e0bcc7a5a6df2e9a5b0ea11f80
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191559"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685747"
 ---
 # <a name="parse-incoming-documents-to-update-application-data"></a>アプリケーションのデータを更新するために受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.locfileid: "2191559"
 導入された次の新しい ER 機能は、XML 形式の受信する電子ドキュメンの解析を改善します。
 
 - **CASE** 形式要素は、XML 形式の受信電子ドキュメントを解析するように構成された ER 形式のルート要素として使用することができます。 **FILE** 形式要素は、**CASE** 要素の入れ子になった要素としてサポートされます。 したがって、1 つの ER フォーマットを設定して、異なるルート XML 要素を含む可能性のある受信電子ドキュメントを解析することができます。
-- **入れ子になった要素の順序を解析**属性が ER 形式の XML 形式要素に導入されました。 この属性を使用すると、読み込まれるファイルで予期される 1 つの XML 要素を定義することができます。 ネストされた要素には 2 つの有効なシーケンスがあります。
+- **入れ子になった要素の順序を解析** 属性が ER 形式の XML 形式要素に導入されました。 この属性を使用すると、読み込まれるファイルで予期される 1 つの XML 要素を定義することができます。 ネストされた要素には 2 つの有効なシーケンスがあります。
 
     - **形式どおり** - 受信ファイルは、ファイル内の入れ子になった要素の順序は、ER 形式に記載されている順序と同じ場合に有効です。
     - **任意** - 着信ファイルは、そのファイル内の順番に関係なく、ER 形式のすべての入れ子になった要素が解析ファイルに存在する場合に有効です。

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56ef02e3ea0ca2207ccdc79468a9ea4c1fbe8f95
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041886"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680342"
 ---
-# <a name="SPLITLIST">SPLITLIST ER 関数</a>
+# <a name="splitlist-er-function"></a>SPLITLIST ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`SPLITLIST` 関数は、指定されたリストをサブリスト (またはバッチ) に分割します。各サブリストには指定されたレコード数が含まれます。 その後、結果をバッチで構成された新しい*レコード リスト*値として返します。
+`SPLITLIST` 関数は、指定されたリストをサブリスト (またはバッチ) に分割します。各サブリストには指定されたレコード数が含まれます。 その後、結果をバッチで構成された新しい *レコード リスト* 値として返します。
 
 ## <a name="syntax"></a>構文
 
@@ -67,7 +66,7 @@ SPLITLIST (list, number)
 
 ## <a name="example"></a>例
 
-次の図では、**明細行**データ ソースが、3 つのレコードがあるレコード リストとして作成されます。 このリストは、それぞれ最大 2 つのレコードを含むバッチに分割されます。
+次の図では、**明細行** データ ソースが、3 つのレコードがあるレコード リストとして作成されます。 このリストは、それぞれ最大 2 つのレコードを含むバッチに分割されます。
 
 <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
 

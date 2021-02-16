@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431041"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419348"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>セキュリティ ロールによる個人住所へのアクセス
 
@@ -34,8 +34,8 @@ ms.locfileid: "3431041"
 
 問題を解決するには、顧客は複製したセキュリティ ロールのための以下の手順を実行する必要があります。
 
-1. **組織管理\> グローバル アドレス帳 \> グローバル アドレス帳パラメーター**の順に移動します。
-2. **プライベートな場所のセキュリティ**タブで、新しいセキュリティ ロールを**利用可能なロール**リストから、**選択されたロール**リストへ移動します。
+1. **組織管理\> グローバル アドレス帳 \> グローバル アドレス帳パラメーター** の順に移動します。
+2. **プライベートな場所のセキュリティ** タブで、新しいセキュリティ ロールを **利用可能なロール** リストから、**選択されたロール** リストへ移動します。
 3. **保存** を選択します。
 
 ![グローバル アドレス帳パラメーター ページ](media/GAD-parameters.png)

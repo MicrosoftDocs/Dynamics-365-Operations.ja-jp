@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
 ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: b6a21d2df95b6fa55003ba1d17ab0fd51ba98480
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bae5238c9975db4e21edcf60f3f3c385d331ed7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183277"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685037"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 

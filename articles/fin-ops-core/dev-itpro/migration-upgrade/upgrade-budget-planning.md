@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191503"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681001"
 ---
 # <a name="upgrade-budget-planning"></a>予算計画のアップグレード
 
@@ -68,11 +67,11 @@ AX 2012 では、妥当性ドキュメントは添付ファイル フォルダ�
 
 ### <a name="define-columns-and-layouts"></a>列とレイアウトの定義
 
-1. **予算計画のコンフィギュレーション**ページで**列**タブをクリックします。アップグレードの一環として、予算計画の明細行に基づき、新しい列が自動的に作成されます。 列は動的な日付を使用するようになり、予算計画プロセスで定義されている会計年度から時刻と年を補正します。 **注:** パフォーマンス上の理由で、アップグレード中にすべての予算サイクルは会計年度ではなく暦年を表示すると想定されます。 会計年度を使用する場合は、列が会計年度に正しくマップされるよう編集を行う必要があります。 たとえば、AX 2012 には次の要素が存在していました。
+1. **予算計画のコンフィギュレーション** ページで **列** タブをクリックします。アップグレードの一環として、予算計画の明細行に基づき、新しい列が自動的に作成されます。 列は動的な日付を使用するようになり、予算計画プロセスで定義されている会計年度から時刻と年を補正します。 **注:** パフォーマンス上の理由で、アップグレード中にすべての予算サイクルは会計年度ではなく暦年を表示すると想定されます。 会計年度を使用する場合は、列が会計年度に正しくマップされるよう編集を行う必要があります。 たとえば、AX 2012 には次の要素が存在していました。
    -   予算計画シナリオ: 実績、ベースライン、予算要求、承認済予算
    -   2017 年のすべてのシナリオのための予算計画ライン、および 2017 年と 2016 年両方の実績
 
-   Finance and Operations では、次の列が作成されます。
+   次の列が Finance and Operations で作成されます。
 
    | 列名    | 予算計画シナリオ | 列の期間 | 年度相殺 |
    |----------------|----------------------|--------------------|-------------|

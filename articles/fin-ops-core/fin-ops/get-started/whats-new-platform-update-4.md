@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 271823
 ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
 ms.search.region: global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 391d07d89ce3a43e1a278b7cc45f300e2a27e183
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 862188180e59aa2acd1b665e9219d59a3d36220b
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812453"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694096"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 
@@ -54,7 +53,7 @@ Microsoft Dynamics クラウド プラットフォームの継続的な更新サ
 
 [![更新 4 を含むトポロジ](./media/2222222222.png)](./media/2222222222.png)
 
-[Dynamics 365 for Operations バージョン 1611](whats-new-platform-update-3.md)では、ラットフォーム モデルをオーバーレイできません。 したがって、このリリースからすべての更新がバイナリであるため、**プラットフォーム X++ 更新プログラム** タイルは不要になりました。 Dynamics 365 for Operations バージョン 1611 より前のバージョンを使用しているお客様は、引き続きプラットフォーム モデルに対するカスタマイズのために**プラットフォーム X++ 更新プログラム** タイルを表示します。 バイナリ更新プログラムは累積的であるため、常に最新の更新プログラムを適用することをお勧めします。 詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/) を参照してください。 Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 4 でのその他の機能の概要を次に示します。
+[Dynamics 365 for Operations バージョン 1611](whats-new-platform-update-3.md)では、ラットフォーム モデルをオーバーレイできません。 したがって、このリリースからすべての更新がバイナリであるため、**プラットフォーム X++ 更新プログラム** タイルは不要になりました。 Dynamics 365 for Operations バージョン 1611 より前のバージョンを使用しているお客様は、引き続きプラットフォーム モデルに対するカスタマイズのために **プラットフォーム X++ 更新プログラム** タイルを表示します。 バイナリ更新プログラムは累積的であるため、常に最新の更新プログラムを適用することをお勧めします。 詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/) を参照してください。 Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 4 でのその他の機能の概要を次に示します。
 
 ## <a name="embedded-power-bi-reports-are-licensed-for-all-users"></a>埋め込み Power BI レポートは、すべてのユーザーに許可されています
 

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c7b32e2a9578f8864570a552817ec3ce28fa43
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 903429994ae5618b597aa0ab0991e9f6783a96ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041176"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687941"
 ---
-# <a name="CONCATENATE">CONCATENATE ER 機能</a>
+# <a name="concatenate-er-function"></a>CONCATENATE ER 機能
 
 [!include [banner](../includes/banner.md)]
 
-`CONCATENATE` 関数は、一つの文字列に結合された後、*文字列*値として指定されたすべてのテキスト文字列を返します。
+`CONCATENATE` 関数は、一つの文字列に結合された後、*文字列* 値として指定されたすべてのテキスト文字列を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,11 +40,11 @@ CONCATENATE (text 1[, text 2, …, text N])
 
 `text 1`: *文字列*
 
-*文字列*データ タイプのデータ ソースの参照。 この引数は必須です。
+*文字列* データ タイプのデータ ソースの参照。 この引数は必須です。
 
 `text N`: *文字列*
 
-*文字列*データ タイプのデータ ソースの参照。 これらの追加引数はオプションです。
+*文字列* データ タイプのデータ ソースの参照。 これらの追加引数はオプションです。
 
 ## <a name="return-values"></a>戻り値
 

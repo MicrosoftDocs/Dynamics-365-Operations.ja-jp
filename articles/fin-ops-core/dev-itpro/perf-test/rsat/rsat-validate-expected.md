@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd4a7b81f03641e190cd49e99e846d5a9b818e41
-ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
+ms.openlocfilehash: b95132ba773c81196bbabc4fd814d2b0fb073203
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3418555"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680440"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 

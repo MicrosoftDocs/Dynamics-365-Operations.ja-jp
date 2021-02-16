@@ -1,7 +1,7 @@
 ---
 title: インド向けアップグレードと N-1 のサポート
 description: このトピックでは、インドでのコマース顧客向けの N-1 サポート概要を提供します。
-author: DmitryAkimoff
+author: kfend
 manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: dmakimo
+ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e0e5b5b53de23380167012f1a032b86a54df0ca3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ada6f65ea61b2931b9e0fff801e029cef8c8e421
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004683"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4409532"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 
@@ -45,7 +45,7 @@ ms.locfileid: "3004683"
 
 GST コンフィギュレーション データは AX 2012 およびコマースのバージョン間で異なります。 データを変換するには、特別な定期処理手順を実行する必要があります。 この手順を実行するには、以下の内容を実行します:
 
-1. バックオフィスにサインインして、**Retail と Commerce \> Retail と Commerce IT \> N-1 から税構成を処理する**に移動します。
-2. **OK**をクリックします。
+1. バックオフィスにサインインして、**Retail と Commerce \> Retail と Commerce IT \> N-1 から税構成を処理する** に移動します。
+2. **OK** をクリックします。
 
 税構成の変更が行われて確定するたび、データを AX 2012 チャネルに送信する間に上記の操作を実行する必要があります。

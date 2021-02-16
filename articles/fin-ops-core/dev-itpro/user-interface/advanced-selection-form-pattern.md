@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4529b538c24a36788a5fe3b3060e3c5e13f1996b
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: d7d244596deaaa2c11d3c10d23355337f994597d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112302"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682467"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -56,9 +55,9 @@ ms.locfileid: "3112302"
     -   データが存在しないとき、グリッドは新しいレコードを自動的に追加できません。
 
 ## <a name="example"></a>例
-フォーム: **ProcCategoryAddVendor** (**調達** &gt; **調達カテゴリ**をクリックします。 **仕入先**クイック タブで、**追加**をクリックします)。 
+フォーム: **ProcCategoryAddVendor** (**調達** &gt; **調達カテゴリ** をクリックします。 **仕入先** クイック タブで、**追加** をクリックします)。 
 
-> [注記] ごのフォームでは、このパターンが利用できません。ここで表示している画像では、一般的な拡張選択フォームパターンの例を示しています。
+> [注記] このフォームでは、このパターンが利用できません。ただし、表示している画像では、一般的な高度な選択のフォーム パターンの例を示しています。
 
 [![高度な選択の例](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 

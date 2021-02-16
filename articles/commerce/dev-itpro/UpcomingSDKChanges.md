@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: bed0de76a55fd6c0f8f4878c773d5f6a2e4b277d
-ms.sourcegitcommit: 1eb0d42a1e9d9c0a4417daca7aaadffad30c0037
+ms.openlocfilehash: 843f44dfa02c83cb5b803f9f06b2762de0d2eccb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3169976"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680392"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Microsoft は、新しい機能の計画を行って取り込む準備ができ�
 Retail ソフトウェア開発キット (SDK) の拡張が計画されている新機能と、取り込むためにお客様の側で作業が必要となる新機能の一覧を以下に示します。
 
 ## <a name="independent-packaging-model"></a>独立したパッケージ モデル
-Microsoft は、*独立したパッケージ モデル*という名前の新しい機能を開発しています。 このパッケージ モデルは、コアとサービスから個別に拡張機能を分割するのに役立ちます。 Microsoft は、拡張機能の個別のパッケージも最終的にサポートする予定です。 独立系ソフトウェア ベンダー (ISV) ソリューションおよびパートナーの拡張機能がある場合は、パッケージ化して個別にサービスを提供できます。 ISV ソリューションおよびパートナー拡張機能は、結合する必要がなくなりました。 
+Microsoft は、*独立したパッケージ モデル* という名前の新しい機能を開発しています。 このパッケージ モデルは、コアとサービスから個別に拡張機能を分割するのに役立ちます。 Microsoft は、拡張機能の個別のパッケージも最終的にサポートする予定です。 独立系ソフトウェア ベンダー (ISV) ソリューションおよびパートナーの拡張機能がある場合は、パッケージ化して個別にサービスを提供できます。 ISV ソリューションおよびパートナー拡張機能は、結合する必要がなくなりました。 
 
 Retail Modern POS でこの新しいパッケージ モデルをサポートできるようにするため、Microsoft は 販売時点管理 (POS) フレームワークを変更して、Microsoft Windows のオプションのパッケージ拡張モデルをサポートできるようにします。 拡張機能を開発する方法は変更されません。 拡張機能をパッケージ化し、配置する方法のみが変更されます。 新しいモデルでは、すべての Modern POS 拡張機能が個別の .appx ファイルとして作成されます。 コア POS は、それらのファイルをアドインとして読み込み、コア Modern POS アプリケーション ID の下で実行されます。 以前は、コア POS および拡張機能は、1 つの .appx ファイルとしてパッケージ化されました。 今回、開発者が .appx ファイルに対してだけ個別にサービスを提供できるように、コア アドインと拡張アドインの両方に .appx ファイルが用意されます。 開発された拡張機能は、クラウド POS と Modern POS の両方で機能します。 テンプレートが異なる場合がありますが、コードは両方のアプリケーション間で共有されます。
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
 ms.search.region: Global
-ms.author: robinarh
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a071d08fcc97ebe18b89ab404b37ecd27d39797e
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: d132ad77c4df4c62f9d75a76d12caca2bb16d331
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329880"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686576"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 
@@ -41,11 +40,11 @@ ms.locfileid: "3329880"
 
 これらの潜在的な問題のため、キーの組み合わせを選択する際はこのガイダンスに従うことをお勧めします。
 
-- 現在、Finance and Operations アプリで使用されているか、または今後の実装が計画されているキーの組み合わせを選択**しない**でください。
-- サポートされているすべてのブラウザーで機能するためのキーの組み合わせを選択**します**。
-- サポートされているブラウザで使用されているショートカットを上書きするときは**よく**注意してください。 重要な、または頻繁に使用されるブラウザー機能のショートカットを無効にしないでください。
-- コントロール固有の動作のために、より長いキーの組み合わせ (3 つのキー) を使用**します**。 ユーザー定義のキーボード ショートカット用に、短い組み合わせを予約する必要があります。
-- この組み合わせはいくつかの東ヨーロッパ言語の Alt+Gr にマップされ、他のショートカットと競合するため、Ctrl+Alt を含むキーの組み合わせを選択**しない**でください。
+- 現在、Finance and Operations アプリで使用されているか、または今後の実装が計画されているキーの組み合わせを選択 **しない** でください。
+- サポートされているすべてのブラウザーで機能するためのキーの組み合わせを選択 **します**。
+- サポートされているブラウザで使用されているショートカットを上書きするときは **よく** 注意してください。 重要な、または頻繁に使用されるブラウザー機能のショートカットを無効にしないでください。
+- コントロール固有の動作のために、より長いキーの組み合わせ (3 つのキー) を使用 **します**。 ユーザー定義のキーボード ショートカット用に、短い組み合わせを予約する必要があります。
+- この組み合わせはいくつかの東ヨーロッパ言語の Alt+Gr にマップされ、他のショートカットと競合するため、Ctrl+Alt を含むキーの組み合わせを選択 **しない** でください。
 
 ### <a name="keyboard-shortcut-links"></a>キーボード ショートカットのリンク
 Finance and Operations アプリおよびサポートされているブラウザーに記載されているキーボード ショートカットへのリンクを次に示します。

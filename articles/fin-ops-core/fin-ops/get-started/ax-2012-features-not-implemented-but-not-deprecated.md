@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21881
 ms.assetid: 26793616-9b3f-41f5-8500-6983769c51d8
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 47905da239317d54e37b3c5b8a9d452e55097e30
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 725eba85ef858d7160bd25e488f6e2b663ae28b4
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005740"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694152"
 ---
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 
@@ -426,7 +425,7 @@ ms.locfileid: "3005740"
 <td>実装されていません</td>
 </tr>
 <tr>
-<td>[ロシア] 税登録</td>
+<td>[ロシア] 税レジスター</td>
 <td>法人は、レジスターを使用して、収益と経費を開示できます。 レジスターは、売上請求書や配送メモなどの基本ドキュメントが、生産の原価価格の計算を使って最初に入力されたときからの収益および経費データを追跡するために使用されます。 レジスターからのデータは、法人の宣言された利益を確認するために使用されます。 この機能には次の機能が含まれています。
 <ul>
 <li>現在の期間の収入</li>
@@ -459,7 +458,7 @@ ms.locfileid: "3005740"
 <td>実装されていません</td>
 </tr>
 <tr>
-<td>[ロシア] VAT申告</td>
+<td>[ロシア] VAT 申告</td>
 <td>VAT 申告の電子形式。</td>
 <td>実装されていません</td>
 </tr>
@@ -509,7 +508,7 @@ ms.locfileid: "3005740"
 <td>実装されていません</td>
 </tr>
 <tr>
-<td>[ロシア] 買掛金勘定/売掛金勘定 - サード パーティの雑費</td>
+<td>[ロシア] AP/AR - サード パーティの雑費</td>
 <td>サード パーティの雑費の登録および次の管理体制に基づいた分配: 購入済商品の原価に含める (ほかの仕入先からの請求書明細行に配賦)、ほかの当事者への再振出、およびほかの経費勘定への再配分。</td>
 <td>8.1.1で実装</td>
 </tr>
@@ -539,7 +538,7 @@ ms.locfileid: "3005740"
 <td>実装されていません</td>
 </tr>
 <tr>
-<td>[ロシア] アルコール販売の申告: 卸売申請書 6、7、8。 小売申請書 11、12</td>
+<td>[ロシア] アルコール販売の申告: 卸売申告書 6、7、8。 小売申請書 11、12</td>
 <td>生産者、測定単位、小売ライセンス、および卸売取引を含む、アルコール飲料のタイプを追跡。 次のアルコール飲料の活動データを準備: 印刷済みの申告、電子報告書経由で Excel 形式にエクスポートした申告。</td>
 <td>実装されていません</td>
 </tr>

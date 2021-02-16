@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 8cbe0118bcaba37a63964dcbd48e43219526c13e
-ms.sourcegitcommit: a2c75429f4944de88bf10223e4346043a44ace27
+ms.openlocfilehash: c1c89577367ef860c92b5aa80c2d96d2c2829841
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854459"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683980"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -39,8 +38,7 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [オンプレミス配置に実装されない機能](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
+- [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
 Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 顧客とパートナーは LCS を使用して、クラウドとオンプレミスの両方の導入を管理します。 以下のタスクに対して LCS を使用することができます。
@@ -136,7 +134,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 - **データ構成** - データ構成とは、システムをどのように設定してコンフィギュレーションするかということです。 たとえば、これは、法人の数、品目番号、BOM レベルの数、およびセキュリティ設定がどの程度複雑かを含みます。 これらの要因のそれぞれはパフォーマンスには影響しない可能性があるが、影響はインフラストラクチャに関しては賢明な選択肢を使用することで相殺できます。
 - **拡張機能** – カスタマイズはシンプルまたは複雑になり得ます。 カスタマイズの数と複雑さと使用の性質は、必要なインフラストラクチャのサイズにさまざまな影響を与えます。 複雑なカスタマイズの場合は、効率性のテストだけでなく、インフラストラクチャのニーズを理解するのに役立つように、パフォーマンス評価を行う必要があります。 拡張機能が、パフォーマンスとスケーラビリティにおけるベストプラクティスに従ってコード化されていない場合、これはさらに重要です。
 - **レポートと分析** – レポートと分析には、通常、データベースのシステムに対する大量のクエリの実行が含まれます。 データを大量に使用するレポートが実行される頻度を下げると、影響を減らすことができます。 クエリのデザインがパフォーマンスをどのように影響するかを理解することも重要です。
-- **サード パーティのソリューション**1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
+- **サード パーティのソリューション** 1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
 
 ## <a name="sizing-your-environment"></a>環境のサイズ変更
 サイジング要件を決定するには、処理する必要のあるトランザクションのピーク量を知る必要があります。 Management Reporter や SSRS などのほとんどの補助システムは、ミッション クリティカルではありません。 結果として、このトピックは主に AOS と SQL Server に焦点を当てています。
@@ -207,7 +205,7 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 - **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)」を参照してください。
 - **Active Directory ドメイン サービス (AD DS)** - Finance + Operations コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
-- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Office 365、クラウド ベースの SaaS アプリケーション、会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御とシングル サインオンを提供します。
+- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Microsoft 365、クラウド ベースの SaaS アプリケーション、および会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御およびシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
   - ユーザーについては、同じ、使い慣れたアカウントの資格情報を使用してシームレスなサインを提供します。
   - 開発者については、組織のディレクトリに ID があるユーザーを認証するための簡単な方法を提供します。 つまり、認証や識別ではなく、アプリケーションに力を注ぐことができます。

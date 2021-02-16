@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20022babce6355b4d6c0d75cf28ead8701bc183
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: afef5361bdd41e28fe52502015f24e9e0ee353db
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029421"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408969"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 
@@ -54,7 +53,7 @@ ms.locfileid: "3029421"
     -  `ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2`
 
 4.  1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。
-    1.  Visual Studio で、 **ソース管理エクスプローラー**を開き、ワークスペース ドロップダウンから **ワークスペースの管理**を選択します。
+    1.  Visual Studio で、 **ソース管理エクスプローラー** を開き、ワークスペース ドロップダウンから **ワークスペースの管理** を選択します。
     2.  アプリケーション ワークスペースを選択して、 **編集** をクリックし、 **詳細** をクリックしてワークスペースを **パブリック ワークスペース** に設定します。
     
     [![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 12444
 ms.assetid: ac176ec7-7f14-47b8-908c-d2175a29fc5c
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f460151e9dede95d006a69019b5ec17105b2fd8b
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 31a7fe2cd046538cc38b7e4d890021c161f5d5bf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329882"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687561"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 

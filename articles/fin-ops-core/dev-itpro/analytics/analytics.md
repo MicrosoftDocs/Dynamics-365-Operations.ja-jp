@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 24491
 ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bab18f80b290c33b59dc570faacdaf29003ca13a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0b2cc30b601376740a85435122a3b8a9f921e2af
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248714"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683127"
 ---
 # <a name="analytics-aggregate-measurements-and-kpi-modeling"></a>分析、集計の測定、および KPI モデリング
 
@@ -73,4 +72,4 @@ Dynamics AX 2012 およびそれ以降の視点を使って生成されたプロ
 集計の測定が Microsoft SQL Server 非集合縦棒ストア インデックス (NCCI) に配置されます。 そのため、Azure DB として Microsoft SQL Server 2016 に組み込まれているインメモリ コンピューティング (IMC) エンジンを利用することができます。 集計測定の IMC エンジンは送信先としてインメモリ、ほぼリアルタイム (IM NRT) 集計測定と呼ばれます。 これらの集計測定値では、Microsoft SQL Server Analysis Services (SSAS) サーバーを使用する必要はありません。 これらのモデルにはデータの更新が含まれていないため、送信されるクエリは運用データベース内の最新のデータ状態を反映します。 ほぼリアルタイムと呼ばれるのはそのためです。
 
 ## <a name="kpi-modeling-and-customization"></a>KPI のモデリングおよびカスタマイズ
-AX 2012 およびそれ以前のバージョンでは、KPI とビジネス指標をネイティブの SQL Server 開発ツールを使用してモデル化する必要がありました。 ユーザーは KPI または**業務概要** Web パーツを使用して業務インジケーターにロール センターを固定できますが、KPI 定義を目標のように変更することはできません。 ユーザーは開発者によりビルドされ公開された KPI 定義を変更するために、リッチ クライアントのフォームを使用できます。 集計測定値に含まれる集計データを使用して、新しい KPI を定義することもできます。 開発者は、Microsoft Visual Studio で KPI の定義をモデル化して、プロジェクトまたは独立系ソフトウェア ベンダー (ISV) ソリューションと共に、顧客に出荷することができます。 KPI を定義した後、ユーザーは実行時にカスタマイズできます。
+AX 2012 およびそれ以前のバージョンでは、KPI とビジネス指標をネイティブの SQL Server 開発ツールを使用してモデル化する必要がありました。 ユーザーは KPI または **業務概要** Web パーツを使用して業務インジケーターにロール センターを固定できますが、KPI 定義を目標のように変更することはできません。 ユーザーは開発者によりビルドされ公開された KPI 定義を変更するために、リッチ クライアントのフォームを使用できます。 集計測定値に含まれる集計データを使用して、新しい KPI を定義することもできます。 開発者は、Microsoft Visual Studio で KPI の定義をモデル化して、プロジェクトまたは独立系ソフトウェア ベンダー (ISV) ソリューションと共に、顧客に出荷することができます。 KPI を定義した後、ユーザーは実行時にカスタマイズできます。

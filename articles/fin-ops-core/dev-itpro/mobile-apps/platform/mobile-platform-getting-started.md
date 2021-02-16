@@ -1,7 +1,7 @@
 ---
 title: モバイル プラットフォームを使い始める
 description: このトピックでは、モバイル プラットフォームでの開発方法について説明します。
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 29956a05b8ecbf8e008bdbb071611fba0956aa24
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d95920affdbde898d353bbd734bfe651142281e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248722"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679918"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 
@@ -36,22 +35,22 @@ ms.locfileid: "2248722"
 
 1.  [フリート管理プロジェクトを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp ファイル)。
 2.  ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。
-3.  Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**Finance and Operations** &gt; **プロジェクトのインポート**をクリックします)。
+3.  Microsoft Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポート (**Finance and Operations** &gt; **プロジェクトのインポート** をクリック) します。
 4.  プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。
 
 ### <a name="get-the-sample-workspace"></a>サンプル ワークスペースを取得します
 
-引当管理のためのサンプルのワークスペースを提供します。 このワークスペースは、**フリート管理**モジュールに基づいています。
+引当管理のためのサンプルのワークスペースを提供します。 このワークスペースは、**フリート管理** モジュールに基づいています。
 
 1.  [サンプル ワークスペースを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml ファイル)。
 2.  非生産クライアントにログインします。 (管理者としてログインする必要があります)。
 3.  アドレス バーで、**&mode=mobile** を URL の末尾に追加してから Enter キーを押します。
-4.  クライアントで、**設定** &gt; **モバイル アプリ**と移動します。 モバイル アプリ デザイナーは、クライアントの横にドッキングして表示されます。
-5.  **オーバーフロー** ボタン (**…**) をクリックし、**インポート**をクリックします。
-6.  ページの下部に表示される**参照**ボタンをクリックします。
+4.  クライアントで、**設定** &gt; **モバイル アプリ** と移動します。 モバイル アプリ デザイナーは、クライアントの横にドッキングして表示されます。
+5.  **オーバーフロー** ボタン (**…**) をクリックし、**インポート** をクリックします。
+6.  ページの下部に表示される **参照** ボタンをクリックします。
 7.  表示されるファイル選択ダイアログ ボックスで、以前に zip ファイルから抽出した XML ファイルのいずれかを選択します。
-8.  アプリがモバイル アプリ デザイナーに読み込まれた後、ページの下部にある**完了**をクリックします。
-9.  **ワークスペースの公開**をクリックします。
+8.  アプリがモバイル アプリ デザイナーに読み込まれた後、ページの下部にある **完了** をクリックします。
+9.  **ワークスペースの公開** をクリックします。
 
 ### <a name="get-the-mobile-app"></a>モバイル アプリの取得
 

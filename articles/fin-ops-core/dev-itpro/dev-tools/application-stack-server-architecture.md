@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3708fa711a424444a7a9ac1a385986e9ec17089
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bce5669a923833d28282684e49707969338f1941
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191671"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644853"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -48,7 +47,7 @@ ms.locfileid: "2191671"
     -   アクティブなクライアントは、サーバーからの応答に基づいて、アクションをプログラムで開始できます。 アクティブなクライアントは認証用の HTTP リダイレクトに依存しません。 スマート/リッチ クライアントは、アクティブなクライアントの例です。
     -   パッシブ クライアントは、サーバーからの応答に基づいて、アクションをプログラムで開始できません。 パッシブなクライアントは認証用の HTTP リダイレクトに依存します。 Web ブラウザーは、パッシブ クライアントの例です。
 
-    現在、Access Control Service (ACS) は非対話型認証のためのメカニズムをサポートしていません。 したがって、アクティブなクライアントが ACS を使用して認証を試みる場合でも、パッシブ クライアント認証を使用する必要があります。パッシブ クライアント認証では、ブラウザーのダイアログ ボックスに、ユーザーに資格情報の入力を求めるプロンプトが表示されます。
+    現在、Access Control Service (ACS) は非対話型認証のためのメカニズムをサポートしていません。 したがって、アクティブなクライアントが ACS を使用して認証を試みる場合でも、パッシブ クライアント認証を使用する必要があり、パッシブ クライアント認証では、ブラウザーのダイアログ ボックスに、ユーザーに資格情報の入力を求めるプロンプトが表示されます。
 -   完全に改訂されたメタデータ サブシステムには、新しいコンパイラおよび Microsoft Visual Studio ベース開発モデルが組み込まれています。 モデル ストアは、モデルによって編成された一連のフォルダーと XML コンポーネントとして表されます。 テーブル、フォーム、クラスなどのモデル要素は、メタデータとソース コードの両方を含む XML ファイルで表されます。
 
 次の図の左側に、アプリケーション スタックが個別のモデルに分割されている様子が示されています。 右側には、主要なコンポーネントがサーバーにどのように積み重ねられているかが示されています。 
@@ -62,7 +61,7 @@ Finance and Operations アプリケーションは、エントリ ポイント�
 
 -   **Lifecycle Services (LCS)** – LCS は、広範なライフサイクル関連の機能を可能にするマルチ テナントの共有サービスです。 このリリースに固有の機能には、ソフトウェア開発、顧客プロビジョニング、サービス レベル アグリーメント (SLA) の監視、およびレポート機能が含まれます。
 -   **Finance and Operations** – VM インスタンスは、LCS によって Azure サブスクリプションに配置されます。 デモ、開発/テスト、高可用性の運用トポロジなど、さまざまなトポロジが利用できます。
--   **Microsoft サービスを共有** – Finance and Operations アプリケーションは様々な Microsoft のサービスを使用して、顧客がシングル サインインや、Finance and Operations アプリケーション、Microsoft Office 365 および他のオンライン サービス間での定期管理および Microsoft との請求関係を管理できる「One Microsoft」ソリューションを有効にします。
+-   **Microsoft サービスの共有** – Finance and Operations アプリケーションは様々な Microsoft のサービスを使用して、「One Microsoft」ソリューションを有効にします。このソリューションでは、顧客は、Finance and Operations アプリケーション、Microsoft 365、および他のオンライン サービス間でのシングル サインイン、サブスクリプション管理および Microsoft との請求関係を管理することができます。
 
 Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など、Azure プラットフォームの多くの機能はいくつかの名前に使用されます。  共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。
 

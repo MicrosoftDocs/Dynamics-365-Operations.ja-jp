@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: b7d6c9c5a897b48858e185eb7884985cb2a5b4a8
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: dfd5025d6af0657c752d8ad03ad6dcfff0bc74f5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367043"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685095"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 

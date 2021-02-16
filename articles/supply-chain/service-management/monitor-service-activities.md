@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 687768ac8891b778f7d8d0eb6e3dcd9a4aa3298a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b364c1f19888b711626312b77335b06ef3959886
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202241"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431877"
 ---
 # <a name="monitor-service-activities"></a>サービス活動の監視 
 
 [!include [banner](../includes/banner.md)]
 
 
-**派遣表**フォームでは、スケジュールされたさまざまなサービス活動の状態更新の概要、および法人の一般的なサービス注文フローを追跡するためのツールが提供されます。
+**派遣表** フォームでは、スケジュールされたさまざまなサービス活動の状態更新の概要、および法人の一般的なサービス注文フローを追跡するためのツールが提供されます。
 
 
 > [!TIP]
@@ -47,7 +47,7 @@ ms.locfileid: "3202241"
 
 ## <a name="open-the-dispatch-board-form"></a>"派遣表" フォームの表示
 
-**サービス管理** \> **定期処理** \> **派遣表**の順にクリックします。
+**サービス管理** \> **定期処理** \> **派遣表** の順にクリックします。
 
 ## <a name="see-also"></a>参照
 

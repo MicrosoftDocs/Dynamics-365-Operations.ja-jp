@@ -1,7 +1,7 @@
 ---
 title: MetadataService タイプ
 description: アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6814cb4dbece96a86fd9ded06ffff5c320e0763f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d2eab9aabc0fdb9b594720935ce4496642134f96
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183144"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687318"
 ---
 # <a name="metadataservice-type"></a>MetadataService タイプ
 
@@ -257,7 +256,7 @@ var newCustomerTaskMetadata = metadataService.findTask("New-customer");
 | ---- | ---- | ----------- |
 | actionName|string|アクション名|
 
-#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
+#### <a name="returns-pagemetadata"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
 
 
 
@@ -283,7 +282,7 @@ var firstNameControl = metadataService.findControl(newCustomerTaskMetadata, 'FMC
 | componentMetadata|any|ページまたはアクションのメタデータ インスタンス|
 | controlName|string|コントロール名|
 
-#### <a name="returns-controlmetadataview-model-control-basecontrol-icontrol-icontrolmetadatamd"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
+#### <a name="returns-controlmetadata"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
 
 
 
@@ -308,7 +307,7 @@ var reservationDetailsMetadata = metadataService.findPage("Reservation-details")
 | ---- | ---- | ----------- |
 | pageName|string|ページ名|
 
-#### <a name="returns-pagemetadataview-model-ipage-ipagemetadatamd"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
+#### <a name="returns-pagemetadata"></a>[PageMetadata](view-model-ipage-ipagemetadata.md) を返します
 
 
 
@@ -356,7 +355,7 @@ getFormReference(componentName: string, filterContext: DataFilter, excludeContex
 | excludeContext|ブール値||
 | filterLocalOnly?|ブール値||
 
-#### <a name="returns-navigationargsview-model-ipage-inavigationargsmd"></a>[NavigationArgs](view-model-ipage-inavigationargs.md) を返します
+#### <a name="returns-navigationargs"></a>[NavigationArgs](view-model-ipage-inavigationargs.md) を返します
 
 
 

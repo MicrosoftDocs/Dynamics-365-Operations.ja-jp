@@ -1,7 +1,7 @@
 ---
 title: 信用状および輸入取立
 description: この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 714cebc3d7aca60004af3418cdbb6a6576491b09
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178684"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445202"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>信用状および輸入取立
 

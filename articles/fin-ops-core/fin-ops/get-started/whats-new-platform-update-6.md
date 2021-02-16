@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: ed4e254c9da3a3cea0b8a6a49bae87b4cf7c5213
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: dda1a169c80763cccfea20cb734cd3eb936bd9db
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812452"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694227"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
@@ -49,7 +48,7 @@ Dynamics 365 for Operations は、開発者に対して新しいコントロー�
 
 ## <a name="document-management--attachment-storage-cleanup"></a>ドキュメント管理 - ストレージ クリーンアップの添付ファイル
 
-Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデータベースの記憶領域が使用されなくなりました。ただし、移行する必要のあるプラットフォーム機能が一部残っています。 Dynamics 365 for Operations プラットフォーム更新プログラム 6 では、最後に残ったプラットフォーム使用状況が削除され、移行ボタンが**ドキュメント管理パラメーター** フォームに追加されました。 移行ボタンを使用して、アップグレード後にデータベースに残っている可能性のあるファイルをクリーンアップすることができます。 移行により、データベースに格納されている添付ファイルが BLOB ストレージに移行されます。 詳細については、[最新のプラットフォーム更新プログラムの環境への適用](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md)を参照してください。
+Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデータベースの記憶領域が使用されなくなりました。ただし、移行する必要のあるプラットフォーム機能が一部残っています。 Dynamics 365 for Operations プラットフォーム更新プログラム 6 では、最後に残ったプラットフォーム使用状況が削除され、移行ボタンが **ドキュメント管理パラメーター** フォームに追加されました。 移行ボタンを使用して、アップグレード後にデータベースに残っている可能性のあるファイルをクリーンアップすることができます。 移行により、データベースに格納されている添付ファイルが BLOB ストレージに移行されます。 詳細については、[最新のプラットフォーム更新プログラムの環境への適用](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md)を参照してください。
 
 ## <a name="number-sequence-scope-extensibility"></a>番号順序スコープの拡張性
 
@@ -71,7 +70,7 @@ Dynamics 365 for Operations アイデア フォーラムは、 [アイデア ポ
 
 [![ideas-menu](./media/ideas-menu.png)](./media/ideas-menu.png)
 
-Dynamics 365 for Operations フォーラムに移動するには**アイデア**のリンクをクリックします。
+Dynamics 365 for Operations フォーラムに移動するには **アイデア** のリンクをクリックします。
 
 
 

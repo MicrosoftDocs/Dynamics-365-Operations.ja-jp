@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98b5ad077c479f31486d4c34cca5d5dea232fa69
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eaafed277943724ae90b4630162ad1342b4102cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191882"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679944"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 
@@ -39,7 +38,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 - Chatty (サーバーとクライアントの間で多くの相互トラフィックを引き起こす)。
 - 冗長 (フレームワークは自動的にこれらを処理するようになりました)。
 
-次のテーブルを通じて、 <br/>**廃止の理由**見出し、「クライアント」は Web クライアントを参照します。
+次のテーブルを通じて、 <br/>**廃止の理由** 見出し、「クライアント」は Web クライアントを参照します。
 
 ## <a name="list-of-deprecated-apis"></a>非推奨 API のリスト
 
@@ -65,7 +64,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | フォーム |方法 |isPreloadedInstance |**概要**<br/>Dynamics AX 2012 のプリロードで使用されます。<br/>**減価償却の理由**<br/>プリロードは、クライアントでは適用されません。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
 | フォーム |方法 |lastField nextField nextGroup prevField prevGroup | |
 | フォーム |方法 |ロック <br>lockWindowUpdate <br>unLock |**概要**<br/>これらのメソッドは、一連の UI 更新を実行する際にウィンドウの再描画を防止するために使用されていました。 これらがない場合、それぞれの変更に応答してウィンドウが再描画され、エンド ユーザー エクスペリエンスが悪化してパフォーマンスが低下します。<br/>**減価償却の理由**<br/>これらのメソッドは Windows クライアントに固有のもので、クライアントにとって必要ではなくなりました。<br/>**移行のメモ**<br/>これらの API の発生を削除するためのコード アップグレード ルールが提供されています。 コードからこれらの API への任意の呼び出しを安全に削除することができます。 |
-| フォーム |方法 |print printPreview send |**概要**<br/>Dynamics AX 2012 でフォームの自動レポート生成をオーバーライドするのに使用<br/>**減価償却の理由**<br/>Microsoft Office 365 統合では、クライアントでの強化されたユーザー エクスペリエンスが用意されています。  Dynamics AX クライアント フォームのユーザーは、「エクスポート」機能を使用できます。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
+| フォーム |方法 |print printPreview send |**概要**<br/>Dynamics AX 2012 でフォームの自動レポート生成をオーバーライドするのに使用<br/>**減価償却の理由**<br/>Microsoft 365 統合では、クライアントでの強化されたユーザー エクスペリエンスが用意されています。  Dynamics AX クライアント フォームのユーザーは、「エクスポート」機能を使用できます。<br/>**移行のメモ**<br/>コードからこれらの API への呼び出しを削除します。 |
 | フォーム |方法 |redraw <br>resetStatusBar- <br>BackgroundColor <br>setStatusBar- <br>BackgroundColor <br>sysColorChanged |**概要**<br/>スタイルや色を制御するのに使用します。<br/>**減価償却の理由**<br/>一貫したビジュアルを実現するために API を通じて色を指定する開発者向けの機能を削除します。<br/>**移行のメモ**<br/>API の再振出の発生を削除するためのコード アップグレード ルールが提供されています。 コードからこれらの API の使用を削除します。 |
 | フォーム |方法 |reload | |
 | フォーム |方法 |resetSize |**概要**<br/>このメソッドは、コントロールがフォームの追加/削除によってサイズが変更された場合に使用されました。 それがないと、追加/削除コントロールを含めるように、ウィンドウが適切な大きさにならない場合があります。<br/>**減価償却の理由**<br/>これらのメソッドは Windows クライアントに固有のもので、クライアントにとって必要ではなくなりました。<br/>**移行のメモ**<br/>コードからこれらの API への任意の呼び出しを安全に削除することができます。 |
@@ -84,7 +83,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | FormControl |方法 |inputSearch | |
 | FormControl |方法 |itemChanging | |
 | FormControl |方法 |keyDown | |
-| FormControl |方法 |labelMouseDblClick <br>mouseDblClick |**概要**<br/>he FormControl.labelMouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、コントロールのラベルがダブルクリックされたときに呼び出されます。 マウス ポインターの X、Y 座標、クリックされたマウス ボタンを示すブール値、Ctrl キーと Shift キーが押されたかどうかを示すブール値を提供します。 he FormControl.mouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、labelMouseDblClick メソッドへの関数と似ています。 違いは、このメソッドはダブル クリック (ラベルだけでなく) があるたびに呼び出されることです。<br/>**減価償却の理由**<br/>ダブルクリック アクションは、Web ベースのアプリケーションとタッチベースのシナリオにはうまく反映されません。 また多くのインスタンスで短くなり終了する可能性があります。<br/>**移行のメモ**<br/>これらのメソッドに推奨される代替は、ボタンと**クリックされた**イベントを使用することです。 |
+| FormControl |方法 |labelMouseDblClick <br>mouseDblClick |**概要**<br/>he FormControl.labelMouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、コントロールのラベルがダブルクリックされたときに呼び出されます。 マウス ポインターの X、Y 座標、クリックされたマウス ボタンを示すブール値、Ctrl キーと Shift キーが押されたかどうかを示すブール値を提供します。 he FormControl.mouseDblClick (int x、int y、int ボタン、Boolean Ctrl, Boolean Shift) メソッドは、labelMouseDblClick メソッドへの関数と似ています。 違いは、このメソッドはダブル クリック (ラベルだけでなく) があるたびに呼び出されることです。<br/>**減価償却の理由**<br/>ダブルクリック アクションは、Web ベースのアプリケーションとタッチベースのシナリオにはうまく反映されません。 また多くのインスタンスで短くなり終了する可能性があります。<br/>**移行のメモ**<br/>これらのメソッドに推奨される代替は、ボタンと **クリックされた** イベントを使用することです。 |
 | FormControl |方法 |labelMousedown labelMouseup mouseDown mouseEnter mouseLeave mouseMove mouseUp |**概要**<br/>マウス イベントを検出したり応答したりするのに使用します。<br/>**減価償却の理由**<br/>これらはタッチ スクリーン フレンドリーではなく、クライアントではサポートされていません。<br/>**移行のメモ**<br/>コードからこれらの API の使用を削除し、マウス イベントへの依存がないシナリオが有効になるようにリファクタリングします。 |
 | FormControl | 方法 | onHScroll onVScroll |  |
 | FormControl | 方法 | paint |  |

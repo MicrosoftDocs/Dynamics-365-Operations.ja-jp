@@ -17,11 +17,11 @@ ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: ed798e1b7848bdb647f3ef0ca6a61b073b89e646
-ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3059364"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408133"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
@@ -44,10 +44,10 @@ ms.locfileid: "3059364"
 4. ファイルで、7 桁に満たない郵便番号コードには前にゼロを追加します。 7 桁に満たない郵便番号コードは認められません。
 
 ## <a name="create-a-data-import-project-and-import-the-data"></a>データのインポート プロジェクトを作成し、データをインポートします。
-1. **システム管理** > **ワークスペース** > **データ管理**の順に移動します。
-2. **インポート**をクリックしてインポート プロジェクトを作成します。
-3. 名前を入力し、**日本の郵便番号**をエンティティの名前として選択します。
+1. **システム管理** > **ワークスペース** > **データ管理** の順に移動します。
+2. **インポート** をクリックしてインポート プロジェクトを作成します。
+3. 名前を入力し、**日本の郵便番号** をエンティティの名前として選択します。
 4. データ ファイルをアップロードします。
 5. インポート プロジェクトのソース ファイル形式を「CSV (Unicode)」に設定します。
-6. **インポート**をクリックします。
+6. **インポート** をクリックします。
 7. 結果を検証します。

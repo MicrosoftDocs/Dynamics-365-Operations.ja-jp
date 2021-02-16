@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: e0c1a3bf7613db4887e0943a70ad6262a70997f0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461748"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-24-2018"></a>Dynamics 365 Talent - Core HR (2018 年 9 月 24 日) の新機能および変更された機能
 
@@ -45,4 +45,4 @@ ms.locfileid: "2898969"
 
 ## <a name="known-issue"></a>既知の問題
 
--   **問題:** 作業者に新しい添付ファイルを追加する場合、**新規**および**編集**ボタンは灰色表示です。**回避策:** 添付ファイル ページを開く前に、**作業者**ページの情報ボックスが閉じていることを確認します。 **作業者**ページが読み込まれるとき情報ボックスが閉じている場合、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)
+-   **問題:** 作業者に新しい添付ファイルを追加する場合、**新規** および **編集** ボタンは灰色表示です。**回避策:** 添付ファイル ページを開く前に、**作業者** ページの情報ボックスが閉じていることを確認します。 **作業者** ページが読み込まれるとき情報ボックスが閉じている場合、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34f53903d89ce71a021eda50518504479346fed6
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: ec5f2f12244499fb66a809f645144f7b16780f25
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161792"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408164"
 ---
 # <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 

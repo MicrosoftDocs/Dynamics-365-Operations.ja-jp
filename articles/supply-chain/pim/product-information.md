@@ -1,14 +1,14 @@
 ---
 title: 製品情報の概要
 description: このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。
-author: cvocph
+author: t-benebo
 manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,19 +16,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14bcce9235a8ce1d8dc0f8c12e53f9006427cee6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527389"
 ---
 # <a name="product-information-overview"></a>製品情報の概要
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。 
 
@@ -63,7 +65,7 @@ Supply Chain Management で製品定義を作成することができます。 �
 
 ## <a name="product-masters-and-product-variants"></a>製品マスターと製品バリアント
 
-製品がお客様の要件に迅速に適応されなければならないアジャイル環境では、製品定義は、特徴的製品の代わりに一連の製品を指定します。 Supply Chain Management では、これらの汎用製品は*製品マスター*として知られています。 製品マスターは、特徴的製品が業務プロセスでどのように説明され、動作されるかを指定する定義およびルールを保持します。 これらの定義に基づいて、特徴的製品を生成できます。 これらの特徴的製品は、*製品バリアント*として知られています。
+製品がお客様の要件に迅速に適応されなければならないアジャイル環境では、製品定義は、特徴的製品の代わりに一連の製品を指定します。 Supply Chain Management では、これらの汎用製品は *製品マスター* として知られています。 製品マスターは、特徴的製品が業務プロセスでどのように説明され、動作されるかを指定する定義およびルールを保持します。 これらの定義に基づいて、特徴的製品を生成できます。 これらの特徴的製品は、*製品バリアント* として知られています。
 
 製品マスターは製品分析コード グループおよびビジネス ルールを指定するコンフィギュレーション テクノロジに関連付けられています。 製品分析コード (色、サイズ、スタイル、およびコンフィギュレーション) は、関連製品の特定の動作を定義および追跡するためにアプリケーション全体で使用できる特定の属性セットです。 これらの分析コードは、ユーザーが製品を検索して識別するのにも役立ちます。
 
@@ -83,14 +85,14 @@ Supply Chain Management の実装を計画する場合は、業務プロセス�
 
 ## <a name="released-products"></a>リリースされた製品
 
-特定の法人にリリースされる製品は、*リリース済製品* として知られています。 製品は一度に 1 つの法人または多くの法人に一括してリリースすることができます。 製品のさまざまなプロパティおよび属性を法人単位で追加する必要がある場合には、**リリース済製品の保守**ワークスペースで、各法人または法人の下位組織で最近リリースされた製品を監視および完了させることができます。
+特定の法人にリリースされる製品は、*リリース済製品* として知られています。 製品は一度に 1 つの法人または多くの法人に一括してリリースすることができます。 製品のさまざまなプロパティおよび属性を法人単位で追加する必要がある場合には、**リリース済製品の保守** ワークスペースで、各法人または法人の下位組織で最近リリースされた製品を監視および完了させることができます。
 
 ### <a name="released-product-maintenance-workspace"></a>[リリース済製品の保守] ワークスペース
 
-**リリース済製品の保守**メニュー項目から**リリース済製品の保守**ワークスペースをコンフィギュレーションすることができます。 カテゴリ階層およびカテゴリを選択し、ワークスペースをフィルタ処理します。 ワークスペース内の関連する製品データを調整するには、**最近リリース済の製品**および**リリース済製品の停止**のタイム フェンスを日数で定義することもできます。
+**リリース済製品の保守** メニュー項目から **リリース済製品の保守** ワークスペースをコンフィギュレーションすることができます。 カテゴリ階層およびカテゴリを選択し、ワークスペースをフィルタ処理します。 ワークスペース内の関連する製品データを調整するには、**最近リリース済の製品** および **リリース済製品の停止** のタイム フェンスを日数で定義することもできます。
 
-ワークスペースは、タイルの集計および 2 つのリストで構成されます。 **オープンなケース**リストでは、完了および終了していない選択した製品カテゴリ階層内の製品の製品変更ケースが表示されます。 **最近リリース済**リストには、ワークスペースのコンフィギュレーションで設定されているタイム フェンス内にリリースされた製品が表示されます。 一覧の各品目について、検証が実行され、および検証ステータスが表示されます。 このステータスは、法人の必要なコンフィギュレーションが完了していないことを示す場合があります。 一覧から、**リリース済製品の詳細**、**製品属性の保守**、**製品カテゴリの保守**、**既定の注文設定**、および製品の必要なコンフィギュレーションを完了する**テキストの翻訳**ページに直接アクセスできます。
+ワークスペースは、タイルの集計および 2 つのリストで構成されます。 **オープンなケース** リストでは、完了および終了していない選択した製品カテゴリ階層内の製品の製品変更ケースが表示されます。 **最近リリース済** リストには、ワークスペースのコンフィギュレーションで設定されているタイム フェンス内にリリースされた製品が表示されます。 一覧の各品目について、検証が実行され、および検証ステータスが表示されます。 このステータスは、法人の必要なコンフィギュレーションが完了していないことを示す場合があります。 一覧から、**リリース済製品の詳細**、**製品属性の保守**、**製品カテゴリの保守**、**既定の注文設定**、および製品の必要なコンフィギュレーションを完了する **テキストの翻訳** ページに直接アクセスできます。
 
 ### <a name="manually-creating-a-new-released-product"></a>新たにリリースされた製品を手動で作成する
 
-組織の業務プロセスおよびこの機能を使用するかどうかに関するルールに応じて、リリース済み製品を手動で一度に作成することができます。 この機能は、新しい製品を作成し、それを現在の法人に自動的にリリースします。 新しい製品を作成するには、**リリース済製品の保守**ワークスペース、または**リリースされた製品**リスト ページ内の**リリース済製品**をクリックします。
+組織の業務プロセスおよびこの機能を使用するかどうかに関するルールに応じて、リリース済み製品を手動で一度に作成することができます。 この機能は、新しい製品を作成し、それを現在の法人に自動的にリリースします。 新しい製品を作成するには、**リリース済製品の保守** ワークスペース、または **リリースされた製品** リスト ページ内の **リリース済製品** をクリックします。

@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0e23e7aedb069fb0cd7c862e41f6104f03f69b7
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: 8e390ea6a89d9318346fef1ed1a69ba98d84e9ff
+ms.sourcegitcommit: 1f2c17f08c00a3684a0a01d4e27fffa29b93a8d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325801"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4636959"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -91,6 +90,11 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 - [Azure Pipelines にある配置可能なパッケージへのライセンス ファイルの追加](pipeline-add-license-package.md)
 - [Azure Pipelines に配置可能なパッケージの作成](pipeline-create-deployable-package.md)
 - [Azure Pipelines で、X++ モデルのバージョン管理](pipeline-model-version.md)
+- [Azure Pipelines を使用した資産のダウンロード](pipeline-asset-download.md)
+- [Azure Pipelines を使用した資産のアップロード](pipeline-asset-upload.md)
+- [Azure Pipelines を使用した資産のデプロイ](pipeline-deploy-asset.md)
+- [Azure Pipelines での Lifecycle Services (LCS) 接続の作成](pipeline-lcs-connection.md)
+- [Azure Pipelines でのレガシ パイプラインの更新](pipeline-msbuild-update.md)
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 

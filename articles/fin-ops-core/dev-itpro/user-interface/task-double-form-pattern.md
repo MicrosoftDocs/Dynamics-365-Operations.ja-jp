@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cc992140ba0566ec7dfab0fd4386a3b6a09f164
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 1d1a538dbe586c5cc27b056f66f1a80371b04cb8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329867"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680952"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 
@@ -37,7 +36,7 @@ ms.locfileid: "3329867"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![タスク ダブルのフォームのワイヤーフレーム](./media/patterntaskdouble.png)](./media/patterntaskdouble.png)[](./media/taskdouble1.png)
+![タスク ダブルのフォームのワイヤーフレーム](./media/patterntaskdouble.png)]
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -46,7 +45,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   上部の ActionPane ストリップ コントロールが標準の ActionPane に変換されました。
 -   親タブの **概要** ラベルが **リスト** に変更されました。
 -   タブ コンテナーの内容は、応答レイアウト用の動的列を使用します。
--   子タブのリストのラベルは、**&lt;x&gt; リスト** で、ここで、**&lt;x&gt;** は、エンティティに基づいて適切な文字列に置き換えられます。 たとえば、子エンティティは通常請求と呼ばれ、タブのラベルは**請求リスト**である必要があります。
+-   子タブのリストのラベルは、**&lt;x&gt; リスト** で、ここで、**&lt;x&gt;** は、エンティティに基づいて適切な文字列に置き換えられます。 たとえば、子エンティティは通常請求と呼ばれ、タブのラベルは **請求リスト** である必要があります。
     -   例外: 子エンティティが何らかの「リスト」である場合は、末尾に「リスト」のワードは追加できません。
 
 ## <a name="model"></a>モデル

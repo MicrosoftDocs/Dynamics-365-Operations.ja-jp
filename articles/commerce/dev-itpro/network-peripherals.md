@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e59700b1241caddced356b8f448547dc66813d37
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 54761c8fc3b04e81f8e03a36645139fa8648fa54
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416595"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682427"
 ---
 # <a name="support-for-network-peripherals"></a>ネットワーク周辺機器のサポート
 
@@ -94,7 +93,7 @@ Adyen 支払ターミナルの設定方法については、[Adyen の Dynamics 
 8. **保存** を選択します。
 9. **すべての店舗** を検索します。
 10. **小売チャンネル ID** 値を選択して店舗を選択し、**編集** を選択します。
-11. **ハードウエア ステーション** クイック タブで、**追加**を選択します。
+11. **ハードウエア ステーション** クイック タブで、**追加** を選択します。
 12. **ハードウェア ステーション タイプ** フィールドを **専用** に設定します。
 13. 説明を入力しますが、ハードウェア プロファイルを設定したり、このハードウェア ステーションにその他の値は設定したりしないでください。
 14. **保存** を選択します。
@@ -106,7 +105,7 @@ iOS 用 Modern POS およびクラウド アプリケーション用 Modern POS 
 
 1. Dynamics 365 Commerce で、**すべての店舗** を検索します。
 2. **小売チャンネル ID** 値を選択して店舗を選択し、**編集** を選択します。
-3. **ハードウエア ステーション** クイック タブで、**追加**を選択します。
+3. **ハードウエア ステーション** クイック タブで、**追加** を選択します。
 4. **ハードウェア ステーション タイプ** フィールドを **共有** に設定します。
 5. 説明を入力します。 ハードウェア ステーションは、組み込みのハードウェア ステーション ロジックを持つ POS クライアントを含め、複数の POS クライアントで共有できます。
 6. **ハードウェア プロファイル** フィールドで、ドロップダウン矢印を使用して、ネットワーク周辺機器のハードウェア プロファイルをこのハードウェア ステーションに割り当てます。

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af983b30530a7f5d0a82f98deeb12180c42d86cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7341ec21a89bf952e2fd21e9bebf7de65a1b2648
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215818"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431770"
 ---
 # <a name="create-delivery-schedule"></a>配送スケジュールの作成
 
@@ -65,4 +65,3 @@ ms.locfileid: "3215818"
 22. [OK] をクリックします。
 23. [はい] をクリックします。
 24. ページを閉じます。
-

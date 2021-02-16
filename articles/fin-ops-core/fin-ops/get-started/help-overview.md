@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367341"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695142"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -49,7 +48,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](https://docs.mic
 
 docs.microsoft.com のコンテンツは、任意の検索エンジンを使用して検索できます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: **site:docs.microsoft.com dynamics 365 "検索する語句"**。
 
-### <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
 
 docs.microsoft.com 上のコンテンツにおけるすべての更新について、Really Simple Syndication (RSS) フィードを購読するには、次のリンクを使用します:
 
@@ -59,7 +58,7 @@ docs.microsoft.com 上のコンテンツにおけるすべての更新につい�
 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。
 
-1. **フィードバック** をクリックして、ページ下部のコメントに移動します。 次に、**製品フィードバック** 、または **サインインしてドキュメントのフィードバックを提供する**を選択します。
+1. **フィードバック** をクリックして、ページ下部のコメントに移動します。 次に、**製品フィードバック** 、または **サインインしてドキュメントのフィードバックを提供する** を選択します。
 
 2. コメントを入力して、**フィードバックを送信する** を選択します。
 
@@ -68,7 +67,7 @@ docs.microsoft.com 上のコンテンツにおけるすべての更新につい�
 > [!NOTE]
 > ドキュメントのフィードバックを送信する場合は、GitHub アカウントを使用してログインする必要があります。 詳細については、[GitHub プロファイルの設定と管理](https://help.github.com/github/setting-up-and-managing-your-github-profile)を参照してください 。
 
-### <a name="contribute-to-the-documentation"></a>ドキュメントに寄稿する
+## <a name="contribute-to-the-documentation"></a>ドキュメントに寄稿する
 
 ドキュメントを寄稿し、編集することができます。 開始するには、トピックの **編集** ボタン (鉛筆記号) を選択します。 次のビデオでは、ドキュメントに寄稿する方法を示します。
 
@@ -102,20 +101,20 @@ Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリ�
 
 一部のフィールドには、フィールドに格納されているデータに不明点がある場合に備えて、ユーザーがブロックを解除できるようにフィールドの説明が用意されています。 また、製品内 **ヘルプ** ウィンドウを使用すると、コンテキストに応じたコンテンツへのアクセスが可能となり、ユーザーの使用開始、ブロック解除、詳細情報の取得が容易になります。
 
-ヘルプ コンテンツにアクセスするには、 **ヘルプ** ボタン ( **?**) を選択し、 **ヘルプ** を選択します。 または、**Ctrl+Shift+?** を押します。 どちらの場合も、**ヘルプ** ウィンドウが表示されます。 **ヘルプ**ウィンドウから 、現在使用している製品の領域に関連する概念的なトピックやタスクガイドにアクセスすることができます。
+ヘルプ コンテンツにアクセスするには、 **ヘルプ** ボタン ( **?**) を選択し、 **ヘルプ** を選択します。 または、**Ctrl+Shift+?** を押します。 どちらの場合も、**ヘルプ** ウィンドウが表示されます。 **ヘルプ** ウィンドウから 、現在使用している製品の領域に関連する概念的なトピックやタスクガイドにアクセスすることができます。
 
 ![[ヘルプ] ウィンドウ](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>ヘルプ ウィンドウからヘルプ トピックにアクセスする
 
-**ヘルプ** ウィンドウから、クライアントに適用するトピックにアクセスできます。 最初に**ヘルプ** ウィンドウを開いてから**ヘルプ** タブをクリックすると、現在のページに対応するトピックが表示されます。 トピックが見つからない場合は、検索するキーワードを入力できます。 **ヘルプ** ウィンドウでトピックを選択すると 、ブラウザーの新しいタブに表示されます。
+**ヘルプ** ウィンドウから、クライアントに適用するトピックにアクセスできます。 最初に **ヘルプ** ウィンドウを開いてから **ヘルプ** タブをクリックすると、現在のページに対応するトピックが表示されます。 トピックが見つからない場合は、検索するキーワードを入力できます。 **ヘルプ** ウィンドウでトピックを選択すると 、ブラウザーの新しいタブに表示されます。
 
 > [!IMPORTANT]
 > このセクションは Dynamics 365 Human Resources には適用されません。 人事管理 のヘルプ システムは、製品のタスク ガイドに自動的に関連付けられます。 また、人事管理 のタスク ガイドをカスタマイズすることはできません。
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
-**ヘルプ** ウィンドウからタスク ガイドにアクセスできるようにするには、システム管理者が、Finance、Supply Chain Management、 Commerce の**システム パラメーター** ページにて、いくつかの設定を構成する必要があります。 詳細については、[タスク ガイドの追加](help-connect.md#adding-task-guides)を参照してください。
+**ヘルプ** ウィンドウからタスク ガイドにアクセスできるようにするには、システム管理者が、Finance、Supply Chain Management、 Commerce の **システム パラメーター** ページにて、いくつかの設定を構成する必要があります。 詳細については、[タスク ガイドの追加](help-connect.md#adding-task-guides)を参照してください。
 
 <!-- > [!NOTE]
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
@@ -133,7 +132,7 @@ On the **System parameters** page, follow these steps:
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
 4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
-システム管理者がこれらの手順を完了すると、**ヘルプ** ウィンドウを開いて**タスク ガイド**タブをクリックすることができます。そして現在表示しているページに対応したタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。 **ヘルプ** ウィンドウでタスク ガイドをクリックした後は、**ヘルプ** ウィンドウに段階を追った指示が表示され、タスク ガイドを再生できます。
+システム管理者がこれらの手順を完了すると、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブをクリックすることができます。そして現在表示しているページに対応したタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。 **ヘルプ** ウィンドウでタスク ガイドをクリックした後は、**ヘルプ** ウィンドウに段階を追った指示が表示され、タスク ガイドを再生できます。
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
@@ -146,7 +145,7 @@ On the **System parameters** page, follow these steps:
 
 ## <a name="creating-custom-help"></a>ユーザー定義のヘルプの作成
 
-ユーザー定義のタスク ガイドを作成することで、ユーザー向けのヘルプを作成したり、自分の Web サイトを**ヘルプ** ウィンドウに接続することができます。 詳細については、次のトピックを参照してください。
+ユーザー定義のタスク ガイドを作成することで、ユーザー向けのヘルプを作成したり、自分の Web サイトを **ヘルプ** ウィンドウに接続することができます。 詳細については、次のトピックを参照してください。
 
 - [タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)
 - [カスタム ヘルプの概要](../../dev-itpro/help/custom-help-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 5 月 28 日)
-description: このトピックでは、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: このトピックでは、2020 年 5 月 28 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/28/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 00a5881ea88749c8553e4c810fb57070f217b01c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443467"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419417"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 5 月 28 日)
 
@@ -103,3 +103,10 @@ ms.locfileid: "3443467"
 ## <a name="dmf-entity-available-for-accrual-suspensions-june-1"></a>DMF エンティティで休暇付与の一時停止が可能 (6 月 1 日)
 
 DMF エンティティが見越し計上の停止に使用できるようになりました 。
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bba9cd190db61fda3636cc3c8093030f886b9bd
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 69b76a06bcd3ba002d9543447e60afa14d5a6ce6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041771"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687029"
 ---
-# <a name="CASE">CASE ER 関数</a>
+# <a name="case-er-function"></a>CASE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -75,7 +74,7 @@ CASE (expression, option 1, result 1[, option 2, result 2, …, option N, result
 
 すべての結果は、同じデータ型を使用して指定する必要があります。 構成された結果のデータ型が一致しない場合は、デザイン時に例外がスローされます。
 
-最初の結果値と *N* 番目の結果値が*コンテナー (レコード)* または*レコード リスト* データ型の値である場合、結果には両方の値に存在するフィールドのみが含まれます。
+最初の結果値と *N* 番目の結果値が *コンテナー (レコード)* または *レコード リスト* データ型の値である場合、結果には両方の値に存在するフィールドのみが含まれます。
 
 ## <a name="example"></a>例
 

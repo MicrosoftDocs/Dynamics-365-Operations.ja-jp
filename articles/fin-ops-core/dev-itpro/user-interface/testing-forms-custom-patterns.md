@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 28291
 ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6b167e4e28f8fe10973d1b9a1c95ea558f1a60b
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 719780cc16ecb4342004a7bc6780cbecbce8b6e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329949"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685003"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 
@@ -36,7 +35,7 @@ ms.locfileid: "3329949"
 フォーム パターンに従うことによって、さまざまなメリットが得られます。 たとえば、フォームのパターンは正しくレイアウト プロパティを設定して、フォームが応答しやすいように配置されます。 ただし、フォーム パターンの補充が欠落している場合 (たとえば、現在多くの拡張コントロールのサポートがない場合)、またはフォームまたはコンテナーに任意のパターンに適合しない固有の要件/用途がある場合、開発者はカスタムにパターンを設定できます。 開発者は、正しい、応答フォーム レイアウトを作成する責任を負います。
 
 ## <a name="forms-that-use-custom-patterns"></a>カスタム パターンを使用したフォーム
-カスタム パターンを使用するフォームは、**フォーム パターン** レポートを使用することにより見つけることができます。 レポートを実行する詳細については、[フォーム パターン アドイン](form-pattern-add-ins.md) を参照してください。レポートを実行した後、**パーセンテージ補充されるコントロール**列をフィルター処理して 100% 補充より少ないフォームを表示します。 最上位レベルのカスタム パターンを持つフォームについては、**カスタム**が**パターン**列に表示されます。 
+カスタム パターンを使用するフォームは、**フォーム パターン** レポートを使用することにより見つけることができます。 レポートを実行する詳細については、[フォーム パターン アドイン](form-pattern-add-ins.md) を参照してください。レポートを実行した後、**パーセンテージ補充されるコントロール** 列をフィルター処理して 100% 補充より少ないフォームを表示します。 最上位レベルのカスタム パターンを持つフォームについては、**カスタム** が **パターン** 列に表示されます。 
 
 ## <a name="testing-configurations"></a>コンフィギュレーションのテスト
 ### <a name="key-resolution"></a>キー ソリューション

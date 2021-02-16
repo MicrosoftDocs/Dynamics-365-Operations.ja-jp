@@ -1,7 +1,7 @@
 ---
 title: ImageMetadata タイプ
 description: イメージ メタデータの種類。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 87db0512d532f9667c5db7b1ac16ffa73761bf16
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 93cda54caeb83a6734a54bb8581f5160e8e8a30c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191852"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687304"
 ---
 # <a name="imagemetadata-type"></a>ImageMetadata タイプ
 
@@ -106,7 +105,7 @@ BoundField: 文字列 (オプション)
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可) 
 
-拡張されたコントロール タイプです。 E.g. コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
+拡張されたコントロール タイプです。 たとえば、コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) から継承
 
@@ -123,7 +122,7 @@ ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#con
 
 HelpText: 文字列 (オプション) 
 
-コマンドのキーボード ショートカットです。 E.g. 「(Shift + F5)」
+コマンドのキーボード ショートカットです。 たとえば、「(Shift + F5)」
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) から継承
 
@@ -157,7 +156,7 @@ ImageStyle: [ImageStyleType](../modules/view-model-control-image-iimage.md#image
 
 ラベル: 文字列 (省略可) 
 
-コントロールのラベル。 E.g. 個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
+コントロールのラベル。 たとえば、個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) から継承
 

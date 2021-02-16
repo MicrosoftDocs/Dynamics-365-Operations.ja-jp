@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24419cb9bad4b4344fe23789750387de6cca3796
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc41f99085e5f30ae29edce296a5e3752cbabd33
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431820"
 ---
 # <a name="maintain-route-for-a-product-model"></a>製品モデルのルートの管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "3203526"
 ## <a name="enter-route-operation-details"></a>工順工程の詳細の入力
 1. [工順工程の詳細] をクリックします。
 2. [操作] フィールドで、値を入力または選択します。
-3. [工程 一連番号 フィールドで番号を入力します。
+3. 工程 一連番号 フィールドで番号を入力します。
     * 工程番号が工順を決定します。  
     * 工順工程の各プロパティは、静的値を取得するか、または属性にマップすることができます。 属性へのマッピングは、コンフィギュレーションの一部として設定された値になります。  
 4. [工順グループ] フィールドで、値を入力または選択します。

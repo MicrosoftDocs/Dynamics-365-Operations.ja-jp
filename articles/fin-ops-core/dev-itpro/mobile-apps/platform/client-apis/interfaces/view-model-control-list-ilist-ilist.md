@@ -1,7 +1,7 @@
 ---
 title: リスト タイプ
 description: リスト コントロール タイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5207d788b0bf25dc86eca3e0987f4e1e1b6504
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3031fd7bf42c14315fcc69e1782524f122ad7f59
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183131"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687299"
 ---
 # <a name="list-type"></a>リスト タイプ
 
@@ -289,7 +288,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string|コントロール名|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -309,7 +308,7 @@ getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-ic
 | ---- | ---- | ----------- |
 | id|string|コントロール ID|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -327,7 +326,7 @@ getControlMetadata(controlName: string): [Control](view-model-control-basecontro
 | ---- | ---- | ----------- |
 | controlName|string||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getcontrolmetadatabyid"></a>getControlMetadataById
 
@@ -341,9 +340,9 @@ getControlMetadataById(id: string): [Control](view-model-control-basecontrol-ico
 
 | 氏名 | 種類 | 説明 |
 | ---- | ---- | ----------- |
-| id|string||
+| id|文字列||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getdata"></a>getData
 
@@ -363,7 +362,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -383,7 +382,7 @@ getRenderedRows(): [Row](view-model-control-list-ilist-irow.md) [ ]
 
 
 
-#### <a name="returns-rowview-model-control-list-ilist-irowmd--"></a>[Row](view-model-control-list-ilist-irow.md) [ ] を返します
+#### <a name="returns-row--"></a>[Row](view-model-control-list-ilist-irow.md) [ ] を返します
 
 ### <a name="getrownavigation"></a>getRowNavigation
 
@@ -516,7 +515,7 @@ metadata(): [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)
 
 > [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata) をオーバーライドします。
 
-#### <a name="returns-listmetadataview-model-control-list-ilist-ilistmetadatamd"></a>[ListMetadata](view-model-control-list-ilist-ilistmetadata.md) を返します
+#### <a name="returns-listmetadata"></a>[ListMetadata](view-model-control-list-ilist-ilistmetadata.md) を返します
 
 
 
@@ -529,7 +528,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -551,7 +550,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

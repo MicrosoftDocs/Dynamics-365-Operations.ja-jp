@@ -10,18 +10,17 @@ ms.service: Dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 44351
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8d2855d7d8e21e8a5efcd012f1d7cd8eb5704495
-ms.sourcegitcommit: d64a07748bdd7c85877cfe0343bee952f235f38e
+ms.openlocfilehash: 9fa3b7258b0fb51d46ccf239f20f99d4ac124e78
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457182"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681562"
 ---
 # <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 

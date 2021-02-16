@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5a45b7d952daecd875a051da7b0fe308378ed4
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: af2484686aa6f589b7c714e3892d400da4ddb805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087359"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682281"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 
@@ -32,9 +31,9 @@ Finance and Operations アプリには、クラウドでホストされるサー
 
 次の一覧は、Finance and Operations アプリで SQL Server Reporting Services (SSRS) サービスを使用して生成されたドキュメントに使用できるフォント ファミリーのポートフォリオをキャプチャします。
 
-## <a name="supported-fonts-for-application-version-83-with-platfrom-update-32-or-later"></a>アプリケーション バージョン 8.3 およびプラットフォーム更新プログラム 32 またはそれ以降でサポートされるフォント
+## <a name="supported-fonts-for-application-version-83-with-platform-update-32-or-later"></a>アプリケーション バージョン 8.3 およびプラットフォーム更新プログラム 32 またはそれ以降でサポートされるフォント
 
-| フォント ファミリー              | 配賦元              |
+| フォント ファミリ              | 配賦元              |
 |--------------------------|-----------------------------|
 | 代理店 FB                | オフィス フォント                 |
 | アルジェリアン                 | オフィス フォント                 |
@@ -312,7 +311,7 @@ Finance and Operations アプリには、クラウドでホストされるサー
 
 ## <a name="supported-fonts-for-application-version-80-with-platform-update-23"></a>アプリケーション バージョン 8.0 およびプラットフォーム更新プログラム 23 でサポートされるフォント
 
-|     | フォント ファミリー            |
+|  番号   | フォント ファミリ            |
 |-----|--------------------------|
 | 1   | 代理店 FB                |
 | 2   | アルジェリアン                 |

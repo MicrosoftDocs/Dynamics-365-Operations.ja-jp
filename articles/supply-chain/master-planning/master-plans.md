@@ -16,15 +16,15 @@ ms.custom: 7911
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
-ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
+ms.openlocfilehash: 70a5b8f0c7e4857aa2904003b458bf6d02b72064
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3409525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432196"
 ---
 # <a name="master-plans-overview"></a>マスター プランの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "3409525"
 
 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。 
 
-**マスター プラン**ページでマスター プランを構成することができます。
+**マスター プラン** ページでマスター プランを構成することができます。
 
 プランには次の 2 つのタイプがあります。
 -   **静的マスター プラン**: マスター プランの計算では、現在のデータを使用して正味必要量プランが生成されます。 このプランは、次回のマスター プランを実行するか、手動でプランを変更するまで変わりません。 これは、購買担当者や生産計画担当者など、さまざまな従業員が意思決定の基準として使用し、日々の活動を遂行するための業務プランです。
@@ -42,7 +42,7 @@ ms.locfileid: "3409525"
 -   欠品を防ぐために在庫レベルの設定を高くする。
 -   信頼できない仕入先への対策として安全マージンを長めに設定する。
 
-このほか、マスター プランを実行するたびに新しい必要量プランを使用して更新されるように、初期動的マスター プランを設定することもできます。 **マスター プラン パラメータ**ページでこれらの設定を指定できます。
+このほか、マスター プランを実行するたびに新しい必要量プランを使用して更新されるように、初期動的マスター プランを設定することもできます。 **マスター プラン パラメータ** ページでこれらの設定を指定できます。
 
 
 

@@ -3,7 +3,7 @@ title: システム管理ホーム ページ
 description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/03/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.custom: 13531
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc6102dae0fd2c88bc8f7b3228a51ccfabd66bbb
-ms.sourcegitcommit: 497e07d7e42541f9e707495ab334cf2185b70e4e
+ms.openlocfilehash: 1f2c15e04c7b219546f15f1760ad9320617a470e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454920"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679902"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -74,7 +73,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装�
 ## <a name="security"></a>セキュリティ
 Finance and Operations アプリは、ロール ベースのセキュリティを使用します。 アクセスは、セキュリティ ロールにのみ付与され、個々のユーザーには付与されません。 ユーザーはロールに割り当てられます。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。 任意のロールに割り当てられていないユーザーには権限がありません。
 
-ロールベースのセキュリティは、業務の構造に合わせられます。 ユーザーが割り当てられるセキュリティ ロールは、組織内のユーザーの責任とビジネス プロセスへのユーザーの関与によって異なります。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。
+ロールベースのセキュリティは、業務の構造に合わせられます。 ユーザーに割り当てられるセキュリティ ロールは、組織内でのユーザーの責任とビジネス プロセスへのユーザーの関与によって異なります。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。
 
 自動ロール割り当てのルールを設定できるため、ユーザーの職責が変更されるたびに管理者が関与する必要はありません。 セキュリティ ロールとルールが設定された後、業務管理者は、業務データに基づいて、日常的なユーザーのアクセスを制御できます。
 
@@ -111,6 +110,11 @@ Finance and Operations モバイル アプリにより、組織はビジネス �
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
 
+## <a name="process-automation"></a>プロセスの自動化
+プロセス自動化フレームワークを使用すると、管理者は、バッチ サーバーでスケジュールされる自動化プロセスを表示および作成できます。  スケジュールされた作業の可視性の追加レイヤーは、アプリケーション領域で使用するために拡張できるカレンダー ビューで表示されます。これにより、システム管理者以外のユーザーが自分の領域に影響を与える作業を表示できるようにします。 
+
+- [プロセス自動化ホーム ページ](process-automation.md)
+
 ## <a name="general-administration"></a>一般管理
 - [デモ データの概要](../../fin-ops/get-started/demo-data.md)
 - [会社間データ共有](../sysadmin/cross-company-data-sharing.md)
@@ -119,6 +123,6 @@ Finance and Operations モバイル アプリにより、組織はビジネス �
 - [メンテナンス モード](maintenance-mode.md)
 - [コンフィギュレーション済みのシステム アカウント](pre-configured-system-accounts.md)
 - [企業間 (B2B) ユーザーを Azure Active Directory にエクスポートする](implement-b2b.md)
-- [セッション アイドル タイムアウトの設定](session-idle-timeout.md)
-- [AOS 起動時に Odata メタデータ キャッシュを作成する](odata-warmup.md)
+- [セッション無通信タイムアウトの設定](session-idle-timeout.md)
+- [AOS 起動時に OData メタデータ キャッシュを作成する](odata-warmup.md)
 - [データベース ログの構成と管理](configure-manage-database-log.md)

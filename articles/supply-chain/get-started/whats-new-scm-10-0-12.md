@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a210af5e37e12d883054d46719602604870213b4
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413896"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4432267"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Management 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.12 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.507 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.12 の新機能または変更された機能について列挙します。 このバージョンには 10.0.507 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース :** 2020 年 5 月
 - **一般提供 (自己更新) :**  2020 年 7 月
@@ -39,16 +38,23 @@ ms.locfileid: "3413896"
 
 このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [ジョブ カードのタッチスクリーンをサニタイズ用にロックすることを許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) -詳細については、[デバイスのジョブ カードの構成](../production-control/config-job-card-device.md) を参照してください。
-- [積荷品目の読み込み中に倉庫管理アプリで製品バリアントと追跡分析コードをキャプチャする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) - 詳細については、[倉庫作業用のモバイルデバイスの設定](../warehousing/configure-mobile-devices-warehouse.md) を参照してください。
-- 原価計算レベル (新しいBOMレベル) - 詳細については、[原価計算レベル](../cost-management/cost-calculation-level.md) を参照してください。
-- [Dynamics 365 Supply Chain Management の顧客ポータル ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) - 詳細については、[Dynamics 365 Supply Chain Management の概要](../sales-marketing/customer-portal-overview.md) を参照してください。
-- [手持サービスの在庫](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
-- [IoT インテリジェンス コア インサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) - 詳細については、[IoT インテリジェンスのホーム ページ](../iot/iot-intelligence-home-page.md) を参照してください。
-- [倉庫管理アプリのライセンス プレート入荷機能の拡張設定](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - 詳細については、[倉庫アプリを介したライセンス プレート入荷](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
-- [Warehouse Mobile App の一括配置 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) - 詳細については、[倉庫管理アプリのインストールと構成の概要](../warehousing/install-configure-warehousing-app.md) を参照してください。
-- [倉庫管理の手持在庫エントリのクリーン アップ ジョブの最大実行時間 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) - 詳細については、[倉庫管理の手持在庫エントリのクリーン アップ ジョブ](../warehousing/onhand-cleanup.md) を参照してください。
-- [購買の売買契約の最適化サポート計画 ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) - 詳細については、[購買の売買契約を使ったマスター プラン](../master-planning/planning-optimization/purchase-trade-agreement.md) を参照してください。
+- [ジョブ カードのタッチスクリーンをサニタイズ用にロックすることを許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - 詳細については、[デバイスのジョブ カードの構成](../production-control/config-job-card-device.md)を参照してください。
+
+- [積荷品目入庫中に倉庫アプリで製品バリアントと追跡分析コードをキャプチャする](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - 詳細については、[倉庫作業用のモバイル デバイスの設定](../warehousing/configure-mobile-devices-warehouse.md)を参照してください。
+
+- 原価計算レベル (新しいBOMレベル)<br> - 詳細については、[原価計算レベル](../cost-management/cost-calculation-level.md)を参照してください。
+
+- [Dynamics 365 Supply Chain Management の顧客ポータル](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - 詳細については、[Dynamics 365 Supply Chain Management の顧客ポータルのの概要](../sales-marketing/customer-portal-overview.md)を参照してください。
+
+- [IoT インテリジェンス コア インサイト](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - 詳細については、[IoT インテリジェンスのホーム ページ](../iot/iot-intelligence-home-page.md)を参照してください。
+
+- [倉庫アプリのライセンス プレート受取の機能拡張 (継続)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - 詳細については、[倉庫アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
+
+- [Warehouse Mobile App の一括配置](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - 詳細については、[倉庫アプリのインストールと構成の概要](../warehousing/install-configure-warehousing-app.md)を参照してください。
+
+- [倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - 詳細については、[倉庫管理の手持在庫エントリのクリーンアップ ジョブ](../warehousing/onhand-cleanup.md)を参照してください。
+
+- [購買の売買契約の最適化サポート計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - 詳細については、[購買の売買契約を使ったマスター プラン](../master-planning/planning-optimization/purchase-trade-agreement.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -70,8 +76,8 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.12 には、Platform updates
 
 [Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 

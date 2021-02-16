@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 107013
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1d2892c9899a2d2d6032d62a53757fb462acdc0f
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.openlocfilehash: 7be773c8ee36e8fb82cce43524f017c10c142263
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403323"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680534"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 
@@ -40,7 +39,7 @@ ms.locfileid: "3403323"
 次のセクションでは、このプロセスの詳細について説明します。
 
 ## <a name="development-tools-and-platform"></a>開発ツールおよびプラットフォーム
-クラウド アプリケーションまたはオンプレミス アプリケーションの開発、拡張、またカスタマイズに関係なく、開発プラットフォーム、ツール、および環境 (仮想マシン [VM]) は同じです。 ターゲットのランタイム環境がクラウド環境またはオンプレミス環境にあるかどうかに関係なく、カスタム コードは同じ開発用 VM 上で開発されます。
+クラウド アプリケーションまたはオンプレミス アプリケーションを開発、拡張、カスタマイズするのかに関係なく、開発プラットフォーム、ツール、および環境 (仮想マシン [VM]) は同じです。 ターゲットのランタイム環境がクラウド環境またはオンプレミス環境にあるかどうかに関係なく、カスタム コードは同じ開発用 VM 上で開発されます。
 
 開発の詳細については、 [ホーム ページの開発とカスタマイズ](../dev-tools/developer-home-page.md) を参照してください。 拡張機能やカスタマイズの詳細については、[拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) を参照してください。 構築、テスト、および継続的なデリバリーについての詳細については、 [継続的なデリバリーのホームページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
@@ -57,7 +56,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 
     [![クラウド ホスト環境のボタンの追加](./media/alm-flow-02.png)](./media/alm-flow-02.png)
   
-2. **Azure** または **ローカル** を選択します。 **ローカル** を選択した場合、開発 VHDを検索し、ダウンロードします。 **Azure** を選択した場合、次の 3 つのトポロジー、**ビルドおよびテスト**、**デモ**または**開発**から 1 つを選択するように求められます。
+2. **Azure** または **ローカル** を選択します。 **ローカル** を選択した場合、開発 VHDを検索し、ダウンロードします。 **Azure** を選択した場合、次の 3 つのトポロジー、**ビルドおよびテスト**、**デモ** または **開発** から 1 つを選択するように求められます。
 3. 配置の手順を完了し、Azure サブスクリプションに VM を配置します。
 
 ローカルの開発 VHD を構成する方法の詳細については、 [開発環境の配置とアクセス](../dev-tools/access-instances.md#vm-that-is-running-locally) を参照してください。
@@ -73,7 +72,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 
 配置可能なパッケージの準備ができたら、以下の手順に従って、そのパッケージを LCS プロジェクトの資産ライブラリにアップロードします。
 
-1. **アセット ライブラリ**ページを開きます。
+1. **アセット ライブラリ** ページを開きます。
 
     [![資産ライブラリのメニュー項目](./media/alm-flow-04.png)](./media/alm-flow-04.png)
 
@@ -86,11 +85,11 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 ## <a name="configure-an-on-premises-runtime-environment-that-uses-your-code"></a>コードを使用するオンプレミスのランタイム環境をコンフィギュレーションする
 2017 年 7 月リリースの Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、サンボックスの配置または実稼動環境中にのみカスタマイズや拡張機能を適用できます。
 
-1. LCS プロジェクトで、**構成**をクリックして環境を配置します。
+1. LCS プロジェクトで、**構成** をクリックして環境を配置します。
 
     [![サンドボックス 構成ボタン](./media/alm-flow-06.png)](./media/alm-flow-06.png)
 
-2. 配置ツールで、環境名を入力する必要がある場合、**詳細設定**をクリックします。
+2. 配置ツールで、環境名を入力する必要がある場合、**詳細設定** をクリックします。
 
     [![オンプレミス トポロジの詳細設定ボタン](./media/alm-flow-07.png)](./media/alm-flow-07.png)
 
@@ -98,5 +97,5 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 
     [![配置設定カスタマイズ ソリューション資産タブ](./media/alm-flow-08.png)](./media/alm-flow-08.png)
 
-4. **展開する AOT パッケージの選択**フィールドで、カスタマイズを含むアプリケーション (AOT) の展開可能パッケージを選択します。 このフィールドには、アセット ライブラリのすべての AOT パッケージがリストされます。
-5. **完了**をクリックして**配置設定**ページを閉じ、環境の展開プロセスを続行します。
+4. **展開する AOT パッケージの選択** フィールドで、カスタマイズを含むアプリケーション (AOT) の展開可能パッケージを選択します。 このフィールドには、アセット ライブラリのすべての AOT パッケージがリストされます。
+5. **完了** をクリックして **配置設定** ページを閉じ、環境の展開プロセスを続行します。

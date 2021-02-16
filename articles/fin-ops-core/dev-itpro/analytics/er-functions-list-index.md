@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45e95751e3adfe6aa208daaba774a349216e1f1f
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: a49def8aaa5398fbc7e0f06cc26df8a745207c93
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042070"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687994"
 ---
-# <a name="INDEX">INDEX ER 関数</a>
+# <a name="index-er-function"></a>INDEX ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`INDEX` 関数は、指定されたリストの指定された数値インデックスを使用して選択された*コンテナー (レコード)* 値を返します。 インデックスが指定されたリスト内のレコードの範囲外である場合は、例外がスローされます。
+`INDEX` 関数は、指定されたリストの指定された数値インデックスを使用して選択された *コンテナー (レコード)* 値を返します。 インデックスが指定されたリスト内のレコードの範囲外である場合は、例外がスローされます。
 
 ## <a name="syntax"></a>構文
 

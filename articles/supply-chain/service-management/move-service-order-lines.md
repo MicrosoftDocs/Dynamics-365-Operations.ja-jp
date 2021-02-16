@@ -15,30 +15,30 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5911a3c48d7ddd7dc705cb90fd72b821a2ae1921
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5aef889641a677838dcebe97451e057f2bfbeada
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202218"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431876"
 ---
 # <a name="move-service-order-lines"></a>サービス注文明細行の移動 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
 2.  別のサービス注文に移動する明細行が含まれているサービス注文をダブルクリックします。
 
-3.  アクション ウィンドウの、**サービス注文**フォームで、**行の移動**ボタンをクリックします。
+3.  アクション ウィンドウの、**サービス注文** フォームで、**行の移動** ボタンをクリックします。
 
-4.  **サービス注文**フィールドの、**サービス注文明細行の移動**フォームで、行の移動先となるサービス注文を選択します。
+4.  **サービス注文** フィールドの、**サービス注文明細行の移動** フォームで、行の移動先となるサービス注文を選択します。
 
-5.  サービス注文明細行の移動元のサービス注文を削除するには、**空のサービス注文を削除**チェック ボックスをオンにします。
+5.  サービス注文明細行の移動元のサービス注文を削除するには、**空のサービス注文を削除** チェック ボックスをオンにします。
 
 6.  **OK** をクリックします。
 

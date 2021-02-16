@@ -3,12 +3,12 @@ title: 製品関連の翻訳のよく寄せられる質問
 description: このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。
 author: cvocph
 manager: tfehr
-ms.date: 11/03/2017
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails
+ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,15 +16,15 @@ ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c60ed8ede095306f5a950711bdf094d5abe05433
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213035"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431810"
 ---
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
@@ -40,7 +40,7 @@ ms.locfileid: "3213035"
 -   製品属性値の説明、フレンドリ名、およびヘルプ テキスト。
 -   製品分析コード値の名前と説明。
 
-**テキストの翻訳** ページから使用できる任意の言語に、製品関連情報を翻訳できます。 詳細については、**製品関連情報の翻訳を作成する方法**を参照してください。
+**テキストの翻訳** ページから使用できる任意の言語に、製品関連情報を翻訳できます。 詳細については、**製品関連情報の翻訳を作成する方法** を参照してください。
 
 ## <a name="where-can-i-view-the-translated-information"></a>翻訳された情報はどこで表示できますか。
 製品関連情報の翻訳は、翻訳で利用可能な言語を使用する、請求書などの外部元伝票すべてで表示できます。
@@ -115,7 +115,7 @@ ms.locfileid: "3213035"
 1.  **製品情報管理** &gt; **設定** &gt; **バリアント グループ** の順にクリックします。
 2.  **サイズ** **グループ**、**色グループ** または **スタイル グループ** を選択します。
 3.  **新規** をクリックし、**サイズ** **グループ**、**色グループ**、または **スタイル グループ** フィールドにグループの名前を入力します。 **サイズ**、**色** または **スタイル** をクリックして、グループの明細行を作成します。
-4.  **サイズ** **グループ** 明細行]、**色** **グループ** **明細行**、または **スタイル グループ明細行** ページで、**新規** をクリックし、グループのためにサイズ、色、およびスタイルを作成します。
+4.  **サイズ** **グループ** 明細行、**色** **グループ** **明細行**、または **スタイル グループ明細行** ページで、**新規** をクリックし、グループのためにサイズ、色、およびスタイルを作成します。
 
 分析コード値グループの値の翻訳を管理するには、次の手順を実行します。
 1.  分析コード値グループを作成するための以前の手順に従い、**サイズ グループ明細行**、**色グループ明細行** または **スタイル グループ明細行** ページを開くます。

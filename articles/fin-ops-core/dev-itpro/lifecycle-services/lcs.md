@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 71724
 ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0f9bd456fa7e53c31acefaf60005cccac52c4d5
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: 50941f0cab0a26d5519148d996181816db5a905b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421620"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682585"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 

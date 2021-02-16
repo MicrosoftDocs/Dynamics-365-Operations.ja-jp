@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: a6d916f87ca30aa7405a51841e56ab31bbe31ac8
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832607"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461802"
 ---
 # <a name="user-not-found-in-people-picker-in-attract-or-onboard"></a>ユーザーが Attract または Onboard の人員ピッカーで見つからない
 

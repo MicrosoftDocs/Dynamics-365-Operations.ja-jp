@@ -3,7 +3,7 @@ title: 重複支払の防止
 description: このトピックでは、Modern POS で Dynamics 365 Commerce が支払いの重複を防ぐ方法について説明します。
 author: rubendel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bfa17299c73e865a826d3566a1d6f4d53d7215b0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 161d24480f4d970153e82b4e07f324669c216f65
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004620"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4409584"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 
@@ -37,6 +37,9 @@ ms.locfileid: "3004620"
 
 重複支払保護機能により、Modern POS は、通信が失われても、顧客が支払ターミナルを使用して別に支払処理をし、結果として重複して支払ってしまうようなことなくシームレスに回復できます。
 
+> [!NOTE]
+> 重複支払保護機能は、支払ターミナルを使用して行われた支払に対してのみサポートされています。
+
 このトピックでは、重複支払保護機能の次の側面について説明します。
 
 - [前提条件](#prerequisites) – Modern POS でこの機能を活用するため、一連の前提条件を設定します。
@@ -46,7 +49,7 @@ ms.locfileid: "3004620"
 
 ## <a name="prerequisites"></a>必要条件
 
-- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、この機能をサポートする必要があります。 *支払コネクタ*は、コマース (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準支払 SDK を使用して実装されています。
+- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、この機能をサポートする必要があります。 *支払コネクタ* は、コマース (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準支払 SDK を使用して実装されています。
 - コネクタが対応する重複支払保護インターフェイスを実装する場合、 その機能は Modern POS で自動的に有効になります。 それ以外の場合、自動的に無効になっています。
 
 <!---
@@ -62,7 +65,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 1. **レジ担当者が支払を開始します。**
 
-    レジ担当者が、**カードで支払う**をクリックし、**支払**ページに移り、**支払/入金**をクリックして、カード支払を開始します。
+    レジ担当者が、**カードで支払う** をクリックし、**支払** ページに移り、**支払/入金** をクリックして、カード支払を開始します。
 
 2. **顧客は支払ターミナルを操作します。**
 
@@ -83,7 +86,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 ### <a name="payment-recovery-scenarios"></a>支払の回収シナリオ
 
-販売またはネットワークの通信の点が回復した後は、レジ担当者が前の支払を使用するように要求されるいくつかのシナリオがあります。 支払の回収をトリガーできるいくつかのシナリオを次に示します。
+POS またはネットワーク通信が回復した後は、レジ担当者が前の支払を使用するように要求されるいくつかのシナリオがあります。 支払の回収をトリガーできるいくつかのシナリオを次に示します。
 
 回復されない支払があり、レジ担当者が次のアクションのいずれかを実行する場合、支払が既にされていることを示すダイアログ ボックスがレジ担当者に表示されます。
 
@@ -109,7 +112,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 2. **取引を無効にします**
 
-    買い物カゴページに移動し、**トランザクションの無効化**をクリックします。
+    買い物カゴページに移動し、**トランザクションの無効化** をクリックします。
 
 3. **回復した支払を無視します。**
 

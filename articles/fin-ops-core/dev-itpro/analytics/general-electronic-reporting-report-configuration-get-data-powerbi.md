@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34d4ad9106b2751c77db4fd03d83932e587a5332
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770026"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680123"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告 (ER) を構成する
 
@@ -53,39 +52,39 @@ Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な
 - Power BI フレームワークへのアクセス
 
 ## <a name="configure-document-management-parameters"></a>ドキュメント管理パラメーターのコンフィギュレーション
-1. **ドキュメント管理パラメーター**ページで、サインインしている会社 (この例では DEMF 会社) が使用する SharePoint Serverへのアクセスをコンフィギュレーションします。
+1. **ドキュメント管理パラメーター** ページで、サインインしている会社 (この例では DEMF 会社) が使用する SharePoint Serverへのアクセスをコンフィギュレーションします。
 2. アクセス権があることを確認するために、SharePoint Server への接続をテストします。
 
     [![ドキュメント管理パラメーター ページ](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. コンフィギュレーションされた SharePoint サイトを開きます。 Power BI データセットのソースとして Power BI レポートに必要なビジネス データがある Excel ファイルを ER が格納する新しいフォルダーを作成します。
-4. **ドキュメント タイプ** ページで、作成した SharePoint フォルダーにアクセスするために使用される新しいドキュメント タイプを作成します。 **グループ**フィールドに**ファイル**を入力し、**場所**フィールドに **SharePoint** を入力し、SharePoint フォルダーのアドレスを入力します。
+4. **ドキュメント タイプ** ページで、作成した SharePoint フォルダーにアクセスするために使用される新しいドキュメント タイプを作成します。 **グループ** フィールドに **ファイル** を入力し、**場所** フィールドに **SharePoint** を入力し、SharePoint フォルダーのアドレスを入力します。
 
     [![ドキュメント タイプ ページ](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
 ## <a name="configure-er-parameters"></a>ER パラメーターのコンフィギュレーション
 1. **電子申告** のワークスペースで、**電子申告パラメーター** のリンクをクリックします。
 2. **添付ファイル** タブで、すべてのフィールドの **ファイル** ドキュメント タイプを選択します。
-3. **電子申告** のワークスペースで、**有効日に設定** をクリックして必要なプロバイダーを有効にします。 詳細については、**ER サービス プロバイダーの選択**のタスク ガイド を再生してください。
+3. **電子申告** のワークスペースで、**有効日に設定** をクリックして必要なプロバイダーを有効にします。 詳細については、**ER サービス プロバイダーの選択** のタスク ガイド を再生してください。
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>データのソースとして ER データ モデルを使用
-Power BI レポートで使用されるビジネス データのソースとして、ER データ モデルが必要です。 このデータ モデルは、ER コンフィギュレーション リポジトリからアップロードされます。 詳細については、「[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](download-electronic-reporting-configuration-lcs.md)」、または**Lifecycle Services からのコンフィギュレーションの ER インポート**を参照してください。 選択した ER コンフィギュレーション リポジトリからアップロードされるデータ モデルとして、**イントラスタット** を選択します。 (この例では、モデルのバージョン 1 が使用されています)。**コンフィギュレーション** のページで、**イントラスタット** ER モデル コンフィギュレーションにアクセスできます。
+Power BI レポートで使用されるビジネス データのソースとして、ER データ モデルが必要です。 このデータ モデルは、ER コンフィギュレーション リポジトリからアップロードされます。 詳細については、「[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](download-electronic-reporting-configuration-lcs.md)」、または **Lifecycle Services からのコンフィギュレーションの ER インポート** を参照してください。 選択した ER コンフィギュレーション リポジトリからアップロードされるデータ モデルとして、**イントラスタット** を選択します。 (この例では、モデルのバージョン 1 が使用されています)。**コンフィギュレーション** のページで、**イントラスタット** ER モデル コンフィギュレーションにアクセスできます。
 
 [![構成ページ](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>ER 形式のコンフィギュレーションをデザイン
-ビジネス データのソースとして**イントラスタット** データ モデルを使用する新しい ER 形式のコンフィギュレーションを作成する必要があります。 この形式のコンフィギュレーションは、OpenXML (Excel ファイル) 形式の電子ドキュメントとして出力結果を生成する必要があります。 詳細については、**OPENXML 形式でレポートのコンフィギュレーションを ER 作成する**のタスク ガイドを再生してください。 次の図に示すように、新しいコンフィギュレーションに**インポート/エクスポート活動**の名前を付けます。 ER 形式をデザインするときにテンプレートとして、「[ER データのインポートとエクスポートの詳細](https://go.microsoft.com/fwlink/?linkid=845208)」 Excel ファイルを使用します。 (形式のテンプレートをインポートする方法について、タスク ガイドを再生してください。)
+ビジネス データのソースとして **イントラスタット** データ モデルを使用する新しい ER 形式のコンフィギュレーションを作成する必要があります。 この形式のコンフィギュレーションは、OpenXML (Excel ファイル) 形式の電子ドキュメントとして出力結果を生成する必要があります。 詳細については、**OPENXML 形式でレポートのコンフィギュレーションを ER 作成する** のタスク ガイドを再生してください。 次の図に示すように、新しいコンフィギュレーションに **インポート/エクスポート活動** の名前を付けます。 ER 形式をデザインするときにテンプレートとして、「[ER データのインポートとエクスポートの詳細](https://go.microsoft.com/fwlink/?linkid=845208)」 Excel ファイルを使用します。 (形式のテンプレートをインポートする方法について、タスク ガイドを再生してください。)
 
 [![インポート/エクスポート活動のコンフィギュレーション](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
-**インポート/エクスポート活動**形式のコンフィギュレーションを変更するには、次の手順に従います。
+**インポート/エクスポート活動** 形式のコンフィギュレーションを変更するには、次の手順に従います。
 
 1. **デザイナー** をクリックします。
-2. **形式** タブで、この形式の **Excel 出力ファイル**のファイル要素に名前を付けます。
+2. **形式** タブで、この形式の **Excel 出力ファイル** のファイル要素に名前を付けます。
 
     [![Excel 出力ファイル要素](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
 
-3. **マッピング** タブで、この形式で実行されるたびに生成される Excel ファイルの名前を指定します。 値の**インポートとエクスポートの詳細**を返して関連する式をコンフィギュレーションします (.xlsx ファイル名拡張子は自動的に追加されます)。
+3. **マッピング** タブで、この形式で実行されるたびに生成される Excel ファイルの名前を指定します。 値の **インポートとエクスポートの詳細** を返して関連する式をコンフィギュレーションします (.xlsx ファイル名拡張子は自動的に追加されます)。
 
     [![形式デザイナー](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
 
@@ -93,11 +92,11 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
     1. データ ソース **direction\_enum** に名前を付けます。
     2. データ ソース タイプとして、**データ モデルの列挙** を選択します。
-    3. **方向**データ モデルの列挙を参照してください。
+    3. **方向** データ モデルの列挙を参照してください。
 
     [![direction_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 
-5. 次の図に示すように、**イントラスタット**データ モデルの要素と設計された形式の要素のバインディングを完了します。
+5. 次の図に示すように、**イントラスタット** データ モデルの要素と設計された形式の要素のバインディングを完了します。
 
     [![バインディングの完了](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
 
@@ -105,7 +104,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
 [![イントラスタット ページ](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
 
-次の出力の結果が生成されます。 書式設定で指定したとおり、ファイルは**Import and export details.xlsx**と名前が付けられます。
+次の出力の結果が生成されます。 書式設定で指定したとおり、ファイルは **Import and export details.xlsx** と名前が付けられます。
 
 [![Import and export details.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
 
@@ -115,15 +114,15 @@ Power BI レポートで使用されるビジネス データのソースとし�
 - 出力結果は、選択した SharePoint Server のフォルダーに送信する必要があります。
 - 形式のコンフィギュレーションを実行するたびに、同じ Excel ファイルの新しいバージョンを作成する必要があります。
 
-**電子申告** のページ (**組織管理** &gt; **電子申告**) で、**電子申告の送信先** の項目をクリックして、新しい送信先を追加します。 **参照**フィールドで、以前に作成した**エクスポート/インポート活動**の形式のコンフィギュレーションを選択します。 参照用の新しいファイル送信先レコードを追加するには、次の手順に従います。
+**電子申告** のページ (**組織管理** &gt; **電子申告**) で、**電子申告の送信先** の項目をクリックして、新しい送信先を追加します。 **参照** フィールドで、以前に作成した **エクスポート/インポート活動** の形式のコンフィギュレーションを選択します。 参照用の新しいファイル送信先レコードを追加するには、次の手順に従います。
 
-1. **名前**フィールドに、ファイルの送信先のタイトルを入力します。
-2. **ファイル名**で、Excel ファイル形式のコンポーネントの名前 **Excel 出力ファイル** を選択します。
+1. **名前** フィールドに、ファイルの送信先のタイトルを入力します。
+2. **ファイル名** で、Excel ファイル形式のコンポーネントの名前 **Excel 出力ファイル** を選択します。
 
 新しい送信先レコードの **設定** ボタンをクリックします。 次に、**送信先の設定** のダイアログ ボックスで、次の手順に従います。
 
-1. **Power BI** タブで、**有効**オプションを**はい**に設定します。
-2. **SharePoint** フィールドで、以前に作成した**共有**ドキュメント タイプを選択します。
+1. **Power BI** タブで、**有効** オプションを **はい** に設定します。
+2. **SharePoint** フィールドで、以前に作成した **共有** ドキュメント タイプを選択します。
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>コンフィギュレーションされた ER 形式の実行をスケジュールする
 1. **コンフィギュレーション** ページ (**組織管理** &gt; **電子申告** &gt; **コンフィギュレーション**) のコンフィギュレーション ツリーで、以前に作成した **インポート/エクスポート活動** のコンフィギュレーションを選択します。
@@ -150,7 +149,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
     [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
-2. **SharePoint – チーム サイト**オプションを選択してから、使用している SharePoint Server のパス (上記の例では、`https://ax7partner.litware.com`) を入力します。
+2. **SharePoint – チーム サイト** オプションを選択してから、使用している SharePoint Server のパス (上記の例では、`https://ax7partner.litware.com`) を入力します。
 3. **/共有ドキュメント/GER データ/PowerBI** フォルダーを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。
 
     [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
@@ -162,14 +161,14 @@ Power BI レポートで使用されるビジネス データのソースとし�
 5. このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint サーバ上に作成された Excel ファイルの新しいバージョンを使用した ER レポートを定期的に実行することで、新しいビジネス データが利用可能になります。
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>新しいデータセットを使用して Power BI レポートを作成
-1. 作成した**インポートとエクスポートの詳細** Power BI データセットをクリックします。
+1. 作成した **インポートとエクスポートの詳細** Power BI データセットをクリックします。
 2. 視覚化をコンフィギュレーションします。 たとえば **入力済マップ** の視覚化を選択して、次のようにコンフィギュレーションします:
 
     - **CountryOrigin** データセット フィールドをマップ視覚化の **場所** フィールドに割り当てます。
     - **金額** データセット フィールドをマップ視覚化の **彩度** フィールドに割り当てます。
     - **活動** と **年** のデータセット フィールドに、マップ視覚化の **フィルター** フィールド コレクション を追加します。
 
-3. **インポートとエクスポートの詳細レポート**として Power BI レポートを保存します。
+3. **インポートとエクスポートの詳細レポート** として Power BI レポートを保存します。
 
     [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
@@ -186,8 +185,8 @@ Power BI レポートで使用されるビジネス データのソースとし�
 ## <a name="access-power-bi-report-in-finance"></a>財務で Power BI レポートへのアクセス
 統合と Power BI を設定します。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。
 
-1. Power BI 統合 (**組織管理** &gt; **ワークスペース** &gt; **電子申告ワークスペース**) をサポートする**電子申告**ワークスペース ページで、**オプション** &gt; **レポート カタログを開く**をクリックします。
-2. 作成した**インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
+1. Power BI 統合 (**組織管理** &gt; **ワークスペース** &gt; **電子申告ワークスペース**) をサポートする **電子申告** ワークスペース ページで、**オプション** &gt; **レポート カタログを開く** をクリックします。
+2. 作成した **インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
 3. アクション項目をクリックして、Power BI でデザインされたレポートを表示するページを開きます。
 
     [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)

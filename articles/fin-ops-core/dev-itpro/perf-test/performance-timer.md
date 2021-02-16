@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c64e0a6b727efc57a8c04f1c637ed52a4e79ff5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 7c45a6f7b862062e603e5a9c1299af3f2e918205
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578267"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680448"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 
@@ -49,10 +48,4 @@ ms.locfileid: "2578267"
 
 [![呼び出しによってトリガーされた SQL クエリのリストの例](./media/3_timer.png)](./media/3_timer.png) 
 
-
 この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
-
-<!--In addition to this topic, you can watch this video for more information: [PERF The Performance Timer and Other Tools](https://mix.office.com/watch/ij5cqidra5q3)-->
-
-
-

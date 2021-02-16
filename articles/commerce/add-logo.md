@@ -3,7 +3,7 @@ title: ロゴの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce のサイトにロゴを追加する方法について説明します。
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025708"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413701"
 ---
 # <a name="add-a-logo"></a>ロゴの追加
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ ms.locfileid: "3025708"
 
 ## <a name="overview"></a>概要
 
-サイトの構築時には、まず最初に会社またはブランド ロゴをサイトのヘッダーに追加するのが一般的です。 Dynamics 365 Commerce オンライン スタート キットでは、このタスクを簡単にするためのモジュールが提供されます。
+サイトの構築時には、まず最初に会社またはブランド ロゴをサイトのヘッダーに追加するのが一般的です。 Dynamics 365 Commerce オンライン モジュール ライブラリでは、このタスクを簡単にするためのモジュールが提供されます。
 
 テンプレート、レイアウト、またはページに、ロゴを直接追加できます。 この方法により、特定のページまたはページ グループに表示されるロゴを簡単に変更できます。 ただし、このトピックでは、サイトのすべてのページで再利用できるヘッダー フラグメントにロゴを追加する最もよくあるシナリオについて説明します。
 
@@ -51,8 +50,8 @@ ms.locfileid: "3025708"
 
 サイトのヘッダー フラグメントにロゴを追加するには、次の手順を実行します。
 
-1. 左のナビゲーション ウィンドウで、**ページ フラグメント**を選択します。
-1. 作成したヘッダー フラグメントを選択し、**編集**を選択します。
+1. 左のナビゲーション ウィンドウで、**フラグメント** を選択します。
+1. 作成したヘッダー フラグメントを選択し、**編集** を選択します。
 1. ヘッダー モジュールを展開します。
 1. ヘッダー モジュールのプロパティ ウィンドウで、ロゴの画像とリンクを提供します。 
 1. ヘッダー フラグメントを保存し、編集を終了して、公開します。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ejchoGIT
 ms.search.region: Global
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 162aad9c875eea1d564c8ac89d5d0efdf2675be4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: cc3368de63a419677eabcfdce6711930eaeacdec
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003570"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681052"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service 概要
 
@@ -63,10 +62,10 @@ LCS の次の 2 つの場所で DTS にアクセスすることができます�
 - LCS プロジェクト内から
 
 ### <a name="accessing-dts-from-the-lcs-home-page"></a>LCS のホーム ページから DTS へのアクセス
-LCS にログインし、ページの右側にスクロールします。 タイル ワッフルを展開し、**翻訳サービス**タイルを選択して DTS のダッシュボード ビューを開きます。
+LCS にログインし、ページの右側にスクロールします。 タイル ワッフルを展開し、**翻訳サービス** タイルを選択して DTS のダッシュボード ビューを開きます。
 
 ### <a name="accessing-dts-from-within-an-lcs-project"></a>LCS プロジェクト内から DTS へのアクセス
-新しいプロジェクトを作成するか、既存のプロジェクトを開きます。 プロジェクト ダッシュ ボードの、**追加ツール**セクションで、**翻訳サービス**タイルを選択します。 または、プロジェクト ダッシュ ボードで、**メニュー**ボタンを選択し、その後**翻訳サービス**を選択します。
+新しいプロジェクトを作成するか、既存のプロジェクトを開きます。 プロジェクト ダッシュ ボードの、**追加ツール** セクションで、**翻訳サービス** タイルを選択します。 または、プロジェクト ダッシュ ボードで、**メニュー** ボタンを選択し、その後 **翻訳サービス** を選択します。
 
 ### <a name="accessing-dts-from-the-lcs-home-page-vs-accessing-it-from-within-an-lcs-project"></a>LCS プロジェクト内からアクセス対 LCS ホーム ページから DTS へのアクセス
 LCS のホーム ページから DTS にアクセスして、翻訳要求を作成するとき、その要求に使用される製品を選択できます。 異なる製品を使用するリクエストを追加するには、製品を選択するだけで変更できます。 サービスを閉じて、さまざまな翻訳プロジェクトを開く必要はありません。

@@ -1,7 +1,7 @@
 ---
 title: 連結会社の通貨再評価
 description: このトピックでは、連結会社の通貨を再評価する方法について説明します。
-author: ShylaThompson
+author: roschlom
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
-ms.author: hminzner
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b7f0a18910cbaed382971e47eb688c075e7e6a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178621"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4445355"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>連結会社の通貨再評価
 
 [!include [banner](../includes/banner.md)]
 
-1 つの会計通貨から別の会計通貨にデータを連結する場合、為替レートに変更があれば、勘定残高が正しく再評価されるように通貨再評価を実行する必要があります。 最初にデータを連結する場合、**為替換算**タブを使用して、連結プロセス中の換算のために、最初の為替レートを選択します。 新しい為替レートが入力された後 (たとえば、翌月に) に、勘定残高を再評価する必要があります。 未実現差益または差損は、新しい為替レートと日付に基づいて、適宜更新されます。 次の例では、プロセス中に作成された勘定項目を示します。
+1 つの会計通貨から別の会計通貨にデータを連結する場合、為替レートに変更があれば、勘定残高が正しく再評価されるように通貨再評価を実行する必要があります。 最初にデータを連結する場合、**為替換算** タブを使用して、連結プロセス中の換算のために、最初の為替レートを選択します。 新しい為替レートが入力された後 (たとえば、翌月に) に、勘定残高を再評価する必要があります。 未実現差益または差損は、新しい為替レートと日付に基づいて、適宜更新されます。 次の例では、プロセス中に作成された勘定項目を示します。
 
 ## <a name="company-setup"></a>会社設定
 -   **ソース / 営業会社 (USMF)** – 米ドル (USD) は、会計通貨およびレポート通貨として使用されます。

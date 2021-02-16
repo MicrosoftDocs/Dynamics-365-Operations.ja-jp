@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aeed503500abf4f4b7ccf166f589d09bba306689
-ms.sourcegitcommit: 7a855deed9f95ca2589f38db214890464b2b9061
+ms.openlocfilehash: 7d83d6536d85100ef6a91e909be5a8e57e423371
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951212"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693933"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の計画
 
@@ -37,7 +36,7 @@ ms.locfileid: "2951212"
 
 **意思決定**
 
-- どの順序で、名前を**個人**タイプの関係者レコードに表示しますか。 姓、ミドルネーム、名の順序など。
+- どの順序で、名前を **個人** タイプの関係者レコードに表示しますか。 姓、ミドルネーム、名の順序など。
 - ロール レコードが削除された場合、関係者レコードをアドレス帳から削除しますか。 たとえば、顧客レコードを削除する場合、関係者レコードも削除しますか。
 - 新しいレコードを作成する場合、重複レコードがグローバル アドレス帳にあることをユーザーに通知しますか。
 - 関係者レコードの情報にデータ普遍的の番号付けシステム (DUNS) 番号を含めますか。

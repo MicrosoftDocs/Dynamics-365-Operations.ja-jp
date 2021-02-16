@@ -16,15 +16,15 @@ ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50849a173e74ad88dd10c6a30ea66c91b936e165
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 85e590322c75cfb2ad21236af56656061037a4b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201781"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432104"
 ---
 # <a name="cost-objects"></a>原価オブジェクト
 
@@ -34,7 +34,7 @@ ms.locfileid: "3201781"
 
 ## <a name="cost-objects"></a>原価オブジェクト
 
-**原価オブジェクト**ページは、製品に登録されるすべての原価オブジェクトを表示します。 原価オブジェクトは、次のソースのデータによって定義されます。
+**原価オブジェクト** ページは、製品に登録されるすべての原価オブジェクトを表示します。 原価オブジェクトは、次のソースのデータによって定義されます。
 
 -   品目
 -   製品分析コード グループ
@@ -59,11 +59,11 @@ ms.locfileid: "3201781"
     -   現物原価金額
     -   財務費用金額
     -   調整
--   **数量**フィールドの値は、次の値の合計です。
+-   **数量** フィールドの値は、次の値の合計です。
     -   受取済
     -   払出済
     -   転記された数量
--   **平均単位原価**フィールドは計算済フィールドです。 この値は、**値** の値を**数量**の値で割ることにより計算されます。
+-   **平均単位原価** フィールドは計算済フィールドです。 この値は、**値** の値を **数量** の値で割ることにより計算されます。
 
 **注記:** **現物価格を含める**パラメーターは、前の計算には影響しません。
 

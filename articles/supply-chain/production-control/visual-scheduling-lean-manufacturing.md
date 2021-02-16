@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization
+ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2173084b7ea2e18be7f62f657359f1d03806ebe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210295"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431718"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>リーン生産の視覚的スケジューリング
 
@@ -61,7 +61,7 @@ ms.locfileid: "3210295"
 
 ### <a name="view-the-time-scale"></a>タイム スケールを表示
 
-ボードは、それぞれノード (4) として表される期間に分割されます。 期間ノードは垂直軸に表示され、水平方向のアクセスは、期間の長さを示すタイム スケール (7) を表します。 期間は、1 日または 1 週間いずれかの長さです。 期間の長さは、かんばんスケジュール ボード (2) に対して選択された作業セルのコンフィギュレーションによって決まります。 各期間ノードに対して、かんばんスケジュール ボードは、スケジュール済かんばん作業がどの程度期間を読み込むかを示します。 期間の最大スループットの表示もあります。 スケジュールされたスループットが最大スループットを超える場合、期間は過負荷状態とみなされ、赤い警告記号が表示されます。 スケジュール済かんばんジョブは、スケジュール済の開始時刻と終了時刻 (5) を持つ期間に表示されます。 ジョブの長さは、活動時間と等しくなります。 かんばん作業は、作業セルのタクト タイムが活動時間を超えた場合、期間に重複として示されます。
+ボードは、それぞれノード (4) として表される期間に分割されます。 期間ノードは垂直軸に表示され、水平方向の軸は、期間の長さを示すタイム スケール (7) を表します。 期間は、1 日または 1 週間いずれかの長さです。 期間の長さは、かんばんスケジュール ボード (2) に対して選択された作業セルのコンフィギュレーションによって決まります。 各期間ノードに対して、かんばんスケジュール ボードは、スケジュール済かんばん作業がどの程度期間を読み込むかを示します。 期間の最大スループットの表示もあります。 スケジュールされたスループットが最大スループットを超える場合、期間は過負荷状態とみなされ、赤い警告記号が表示されます。 スケジュール済かんばんジョブは、スケジュール済の開始時刻と終了時刻 (5) を持つ期間に表示されます。 ジョブの長さは、活動時間と等しくなります。 かんばん作業は、作業セルのタスク タイムが活動時間を超えた場合、期間に重複として示されます。
 
 ### <a name="view-job-status"></a>ジョブ ステータスを表示
 

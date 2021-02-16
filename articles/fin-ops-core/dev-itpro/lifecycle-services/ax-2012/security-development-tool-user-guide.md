@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18451
 ms.assetid: fc61e23f-f20d-4149-800a-3614d13828a6
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8d5d203e36b0af74b7ab6805673b9a8085ea5233
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b53190499a18a76a28e1d779693e4f1b927db49a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811703"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688551"
 ---
 # <a name="security-development-tool-user-guide"></a>セキュリティ開発ツールのユーザー ガイド
 

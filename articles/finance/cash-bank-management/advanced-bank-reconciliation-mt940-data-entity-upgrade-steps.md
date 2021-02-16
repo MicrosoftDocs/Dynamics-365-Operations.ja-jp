@@ -1,7 +1,7 @@
 ---
 title: 詳細な口座調整 MT940 のインポート – 複合データ エンティティのアップグレード
 description: 番号順序は、MT940 形式をサポートするために、口座取引明細書のインポート エンティティに追加する必要があります。
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2019
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 221594
 ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb
 ms.search.region: Global
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 91100c3e3c33462e5b19ca239a784cdb720210ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772010"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445127"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>詳細な口座調整 MT940 のインポート – 複合データ エンティティのアップグレード
 
@@ -43,20 +43,20 @@ ms.locfileid: "2772010"
 2.  データ管理\\data projects.
     1.  MT940 のプロジェクトのインポートを読み込みます。
         1.  XSLT に変更します。
-            -   **マップの表示**をクリックします。
-            -   口座取引明細書ドキュメントの**表示のマップ**をクリックします。
-            -   **変換**をクリックします。
+            -   **マップの表示** をクリックします。
+            -   口座取引明細書ドキュメントの **表示のマップ** をクリックします。
+            -   **変換** をクリックします。
             -   BankReconiliation-to-Composite.xslt ファイルを削除します。
             -   BankReconiliation-to-Composite.xsl の新しいバージョンを追加します。
 
-        2.  **ソース データ**レイアウトで**番号順序**を公開します。
+        2.  **ソース データ** レイアウトで **番号順序** を公開します。
             1.  ソースデータ形式 = XML-Element
             2.  エンティティ名 = 口座取引明細書
             3.  データ ファイルのアップロード = 新しいバージョンの SampleBankCompositeEntity.xml
-            4.  既存のファイルを上書きするには、**はい**をクリックします。
-            5.  新しいマップを生成するためには、**はい**をクリックします。
+            4.  既存のファイルを上書きするには、**はい** をクリックします。
+            5.  新しいマップを生成するためには、**はい** をクリックします。
             6.  **SequenceNumber** がマップされていることを確認します。
-                -   明細書エンティティの**マップの表示**をクリックします。
+                -   明細書エンティティの **マップの表示** をクリックします。
                 -   **SequenceNumber** がソースからステージングにマップされたことを確認します。
 
 3.  新しい明細書をインポートします。

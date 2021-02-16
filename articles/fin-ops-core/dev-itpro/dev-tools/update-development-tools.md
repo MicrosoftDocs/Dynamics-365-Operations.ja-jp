@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69230d4819be67f58bb8d020c783af7b17aff0f
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 419a67b0755fa010e2824014069142cf90327e30
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983651"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408672"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 
@@ -40,18 +39,18 @@ ms.locfileid: "2983651"
 
 ### <a name="verify-your-current-version-of-the-visual-studio-extension"></a>Visual Studio 拡張機能の現在のバージョンを確認します。
 
-1.  Visual Studio で**ヘルプ &gt; Microsoft Visual Studio について**ダイアログを開いて、**Finance and Operations 開発者ツール**を表示します。
+1.  Visual Studio で **ヘルプ &gt; Microsoft Visual Studio について** ダイアログを開いて、**Finance and Operations 開発者ツール** を表示します。
 2.  選択して **OK** をクリックします。
 
 ### <a name="uninstall-the-extension"></a>拡張機能をアンインストールする
 
-1.  Visual Studio の**ツール&gt;拡張子と更新**ダイアログを開きます。
-2.  **Finance and Operations Visual Studio ツール**を選択し、**削除**をクリックします。
+1.  Visual Studio の **ツール&gt;拡張子と更新** ダイアログを開きます。
+2.  **Finance and Operations Visual Studio ツール** を選択し、**削除** をクリックします。
 3.  拡張機能がアンインストールされると、Visual Studio を終了します。
 
 ## <a name="install-a-new-version-of-the-extension"></a>拡張機能の新しいバージョンのインストール
 1.  Visual Studio が実行されていないことを確認します。
-2.  新しいバージョンの VSIX ファイルをダブルクリック (または右クリックと**未処理**) します。
+2.  新しいバージョンの VSIX ファイルをダブルクリック (または右クリックと **未処理**) します。
 3.  インストールの指示に従ってください。
 4.  インストールが完了したら、Visual Studio を起動して、アプリケーションの開発を開始できます。
 

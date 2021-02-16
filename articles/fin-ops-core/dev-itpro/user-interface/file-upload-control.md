@@ -3,26 +3,25 @@ title: ファイルのアップロード コントロール
 description: このトピックでは、ファイル アップロード コントロールについて説明します。 このコントロールを使用して、ファイルをアップロードできます。
 author: aneesmsft
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 54311
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08417f0c31457ad1a3cf8de6819f278677f66969
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: 30de4a3b6b5206114bb500648bce82011cccbf55
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412325"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686598"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -44,7 +43,7 @@ ms.locfileid: "3412325"
 -   **最小限** スタイルは **参照** ボタンのみ表示します。
 -   **MinimalWithFileName** スタイルは、ファイル名フィールドと **参照** ボタンを表示します。
 
-ファイル アップロード コントロールの **FileTypesAccepted** プロパティを使用すると、ユーザーがアップロードできるファイルの種類を制限できます。 ユーザーがアップロードできるファイル タイプは、主に関連するアップロード方法によって制御されます。 ファイル アップロード コントロールの **FileTypesAccepted** プロパティは、さらに制限が必要な場合にのみ使用してください。 アップロード コントロールは、アップロード戦略によって制限されているファイルの種類を指定するしようとすると、**参照**ボタンが使用できなくなります。
+ファイル アップロード コントロールの **FileTypesAccepted** プロパティを使用すると、ユーザーがアップロードできるファイルの種類を制限できます。 ユーザーがアップロードできるファイル タイプは、主に関連するアップロード方法によって制御されます。 ファイル アップロード コントロールの **FileTypesAccepted** プロパティは、さらに制限が必要な場合にのみ使用してください。 アップロード コントロールは、アップロード戦略によって制限されているファイルの種類を指定するしようとすると、**参照** ボタンが使用できなくなります。
 
 | 許可されたファイル タイプ    | アップロード戦略の許可されたファイル タイプ | 最終結果                          |
 |-----------------------|---------------------------------------------|---------------------------------------|
@@ -53,7 +52,7 @@ ms.locfileid: "3412325"
 | 「image/\*」            | 「image/png」                                 | **参照** ボタンは使用できません。 |
 | 「.jpg、.png、.gif、.txt」 | 「.jpg、.png」                                 | **参照** ボタンは使用できません。 |
 
-**OnBrowseButtonClicked**、**OnUploadAttemptStarted**、および**OnUploadCompleted** オーバーライドを使用すると、ファイル アップロード プロセスの様々なステージにフックすることができます。 また、カスタム ファイル アップロード戦略を作成して、**FileUpload Strategy Class** プロパティを使用してファイル アップロード コントロールと関連付けることができます。
+**OnBrowseButtonClicked**、**OnUploadAttemptStarted**、および **OnUploadCompleted** オーバーライドを使用すると、ファイル アップロード プロセスの様々なステージにフックすることができます。 また、カスタム ファイル アップロード戦略を作成して、**FileUpload Strategy Class** プロパティを使用してファイル アップロード コントロールと関連付けることができます。
 
 ## <a name="design-classes"></a>デザイン クラス
 開発者がファイル アップロード コントロールのために使用できる基底クラスは 2 つあります。
@@ -69,16 +68,17 @@ ms.locfileid: "3412325"
 [![ファイル アップロード シーケンス ダイアグラム](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## <a name="scanning-uploaded-files-for-viruses-and-malicious-code"></a>アップロードされたファイルでのウイルスおよび悪意のあるコードのスキャン
-ファイルをシステムにアップロードする前に、ウイルスや悪質なコードをスキャンすることをお勧めします。 Finance and Operations アプリにはこの機能が用意されていませんが、バージョン 10.0.12 で拡張ポイントが追加されたため、選択したファイル スキャン ソフトウェアをファイル アップロード プロセスに統合できるようになりました。 添付ファイルをスキャンできるように、類似した拡張ポイントが追加されています。 詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。 
+ファイルをシステムにアップロードする前に、ウイルスや悪質なコードをスキャンすることをお勧めします。 したがって、バージョン10.0.12 以降では、ユーザーが選択したファイル スキャン ソフトウェアをファイル アップロード プロセスに統合できるように、拡張ポイントを使用できます。 添付ファイルのスキャンにも、同様の拡張ポイントが使用可能です。 これらの拡張ポイントの詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。 
 
 > [!IMPORTANT]
-> バージョン 10.0.12 はプレビュー リリースです。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) を参照してください。
+> 初期状態では、Finance and Operations アプリはファイルのウイルスや悪意のあるコードをスキャンせず、ファイルをスキャンするための特定のソフトウェアはお勧めしません。 代わりに、お客様は、独自のファイル スキャン ソフトウェアを選択し、ファイルのスキャンにソフトウェアまたはサービスを使用できるように適切なコードをデリゲート ハンドラーに追加する必要があります。
 
-特に、**FileUploadResultBase** クラスは **delegateScanStream()** デリゲートを公開します。 このデリゲートは、**アップロード戦略クラス**が特殊化されているファイル アップロード シナリオに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、アップロード プロセスは失敗します。    
+特に、**FileUploadResultBase** クラスは **delegateScanStream()** デリゲートを公開します。 このデリゲートは、**アップロード戦略クラス** が特殊化されているファイル アップロード シナリオに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、アップロード プロセスは失敗します。    
 
 ### <a name="implementation-details"></a>実装詳細
 次の **ScanDocuments** クラスの例は、ハンドラーの定型コードを示しています。 デリゲートのハンドラーを実装する方法の一般情報については、[要求または応答シナリオの EventHandlerResult クラス](../dev-tools/event-handler-result-class.md)を参照してください。
 
+```xpp
     public final class ScanDocuments
     {
 
@@ -100,3 +100,5 @@ ms.locfileid: "3412325"
             return true;
         }
     }
+```
+

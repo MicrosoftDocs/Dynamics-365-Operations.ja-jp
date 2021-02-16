@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18691
 ms.assetid: cc7c6dd5-b715-4734-9918-c25df4187c6e
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 36f885a00b1e91c5156fd416f5f728dacc4359e6
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: 9ba7268dddb7b88e53de4f8ef3c4044d9a5a38a1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029797"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680026"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
@@ -35,13 +34,13 @@ ms.locfileid: "3029797"
 
 Windows のデモ環境で仮想マシンに試用版のライセンスを更新する必要がある場合は、次の手順を実行します。
 
-1.  **クラウド ホスト環境**ページで、デモ環境を選択します。
+1.  **クラウド ホスト環境** ページで、デモ環境を選択します。
 2.  環境に関する詳細を表示するためにページの右側にスクロールします。
 3.  **DEMO-&lt;GUID&gt;** リンクをクリックします。
-4.  ページの下部にある**開く**をクリックして、.rdp ファイルを開きます。
+4.  ページの下部にある **開く** をクリックして、.rdp ファイルを開きます。
 5.  資格情報を求めるメッセージが表示されたら、 この環境の **クラウドによってホストされた環境** ページにある、適切なユーザー名とパスワードを入力します。
 6.  仮想マシンのデスクトップが表示されたとき、c:\\DemoFiles\\StartupScripts の場所に移動します。
-7.  **rearm.cmd** を右クリックして**管理者として実行** をクリックします。
+7.  **rearm.cmd** を右クリックして **管理者として実行** をクリックします。
 
 コマンド プロンプト ウィンドウが短く表示され、仮想マシンが再起動します。 ライセンスは現在 180 日間有効です。 この手順は 3 回完了することができます。
 
@@ -64,7 +63,7 @@ Dynamics AX クライアントは、再起動後または最初のログイン�
 
 1.  Dynamics AX クライアントで、**オプション** フォーム (**ファイル** &gt; **ツール** &gt; **オプション**) を開きます。
 2.  **ステータス バー** オプションをクリックします。
-3.  **ステータス バーの表示** フィールドで**なし**を選択します。
+3.  **ステータス バーの表示** フィールドで **なし** を選択します。
 
 ### <a name="install-kernel-633000287-or-later"></a>カーネル 6.3.3000.287 以降のインストール
 

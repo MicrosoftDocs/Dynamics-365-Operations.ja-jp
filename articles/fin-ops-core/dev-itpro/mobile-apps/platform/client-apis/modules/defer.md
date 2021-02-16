@@ -1,7 +1,7 @@
 ---
 title: 延期モジュール
 description: 延期タイプ
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f41a6ef2a14cdcdb78323121071fa012ecc9db58
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 513eadb369379672b34dd3ecb6f8d087c907efbf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191837"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682567"
 ---
 # <a name="defer-module"></a>延期モジュール
 
@@ -61,7 +60,7 @@ ms.locfileid: "2191837"
 | [否認](../interfaces/defer-ideferred.md#reject) |reject(error?: any): void|  |
 | [解決](../interfaces/defer-ideferred.md#resolve) |resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void|  |
 
-## <a name="functions"></a>ファンクション
+## <a name="functions"></a>関数
 
 
 ### <a name="all"></a>すべて
@@ -84,7 +83,7 @@ defer &lt;T&gt;(): [Deferred](../interfaces/defer-ideferred.md) &lt;T&gt;
 
 
 
-#### <a name="returns-deferredinterfacesdefer-ideferredmd-lttgt"></a>[Deferred](../interfaces/defer-ideferred.md) &lt;T&gt; を返します
+#### <a name="returns-deferred-lttgt"></a>[Deferred](../interfaces/defer-ideferred.md) &lt;T&gt; を返します
 
 
 ### <a name="reject"></a>否認

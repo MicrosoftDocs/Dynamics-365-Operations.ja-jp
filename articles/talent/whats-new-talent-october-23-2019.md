@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 27cb4a7c125cb2b330dff083c8ed0c1ee89c0e7e
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528006"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Dynamics 365 Talent (2019 年 10 月 23 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -49,11 +51,11 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>作業者フォームで国/地域を 2 回選択すると発生するエラー (350294)
 
-今週のリリースでは、**作業者**フォームで国/地域を選択した際に発生する問題が修正されました。
+今週のリリースでは、**作業者** フォームで国/地域を選択した際に発生する問題が修正されました。
 
 ### <a name="financial-dimension-values-default-to-the-combination-display-field-when-do-not-allow-manual-entry-is-set-to-true-340097"></a>手動入力を許可しない、が true に設定されている場合、財務分析コード値が既定で組み合わせ表示フィールドに設定される (340097)
 
-この変更により、財務分析コードを設定し、手動入力を許可しないオプションを使用すると、システムは分析コード値を**組み合わせ表示**フィールドに正しく既定設定します。
+この変更により、財務分析コードを設定し、手動入力を許可しないオプションを使用すると、システムは分析コード値を **組み合わせ表示** フィールドに正しく既定設定します。
 
 ### <a name="new-relationship-types-should-be-added-to-relationship-lookup-in-the-personal-contacts-form-347691"></a>個人連絡先フォームのリレーション ルックアップに新しいリレーション タイプを追加する必要がある (347691)
 
@@ -77,7 +79,7 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 
 ### <a name="system-allows-creation-of-new-positions-where-the-available-for-assignment-date-is-earlier-than-the-activation-date-340103"></a>システムが、割り当て可能日が有効化した日よりも早い新しい職位の作成を許可する (340103)
 
-この変更により、**割り当てに使用可能**な日付が職位を**有効化** した日付より前の場合には警告が表示されます。
+この変更により、**割り当てに使用可能** な日付が職位を **有効化** した日付より前の場合には警告が表示されます。
 
 ## <a name="coming-soon"></a>間もなく公開
 

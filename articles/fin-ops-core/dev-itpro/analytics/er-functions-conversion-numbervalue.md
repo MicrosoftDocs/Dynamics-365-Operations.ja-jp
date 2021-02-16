@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6eeb66f4206eb39141a5b2573fcb9d15428ae52a
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d3eec6dc5a472f366c9029456fe05cf1e431e1c5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042660"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685982"
 ---
-# <a name="NUMBERVALUE">NUMBERVALUE ER 機能</a>
+# <a name="numbervalue-er-function"></a>NUMBERVALUE ER 機能
 
 [!include [banner](../includes/banner.md)]
 
-`NUMBERVALUE` 関数は、指定された*文字列*値から変換された*実数*値を返します。 変換時に、指定された 10 進と桁区切り記号が考慮されます。
+`NUMBERVALUE` 関数は、指定された *文字列* 値から変換された *実数* 値を返します。 変換時に、指定された 10 進と桁区切り記号が考慮されます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +40,7 @@ NUMBERVALUE (text, decimal separator, digit grouping separator)
 
 `text`: *文字列*
 
-*実数*の数に変換する必要があるテキスト値。
+*実数* の数に変換する必要があるテキスト値。
 
 `decimal separator`: 文字列
 

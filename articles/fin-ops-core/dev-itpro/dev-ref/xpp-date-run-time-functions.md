@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31341
 ms.assetid: fbaf07ef-63d0-40aa-bef5-e44d6c6a4643
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29a05b0fe89bacdb93ef9d662ca32a3d0b89b56e
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: cc4c26f116eb45aabe2505877af907dfe60bf74a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408691"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
@@ -114,7 +113,7 @@ int dayOfWk(date date)
 
 | パラメーター | 説明                                               |
 |-----------|-----------------------------------------------------------|
-| 日付      | 年、月、日を示す**日付**値。 |
+| 日付      | 年、月、日を示す **日付** 値。 |
 
 ### <a name="return-value"></a>戻り値
 
@@ -180,7 +179,7 @@ date endMth(date date)
 
 | パラメーター | 説明                                             |
 |-----------|---------------------------------------------------------|
-| 日付      | 年、月、日を示す**日付**値。 |
+| 日付      | 年、月、日を示す **日付** 値。 |
 
 ### <a name="return-value"></a>戻り値
 
@@ -210,7 +209,7 @@ date mkDate(int day, int month, int year)
 
 ### <a name="return-value"></a>戻り値
 
-*日*、*月*、および*年*のパラメーター値に基づく**日付**値。
+*日*、*月*、および *年* のパラメーター値に基づく **日付** 値。
 
 ### <a name="remarks"></a>備考
 
@@ -249,7 +248,7 @@ str monthName(int number)
 
 ### <a name="remarks"></a>備考
 
-*番号*のパラメーターの有効値は **1** ～ **12** です。 1 月は **1** で、12 月は **12** で表されます。
+*番号* のパラメーターの有効値は **1** ～ **12** です。 1 月は **1** で、12 月は **12** で表されます。
 
 ### <a name="example"></a>例
 
@@ -488,7 +487,7 @@ date systemDateGet()
 
 ### <a name="remarks"></a>備考
 
-**セッション日時**ページを開くには、**ツール**メニューの**セッション日時**を使用してください。 このページを使用して、セッションの日付を有効に設定できます。 システムによってこの設定されたアクションが検出されると、その後の **systemDateGet** 関数の呼び出しによってセッションの日付が返されます。 **today** 関数は、システム日付を返します。 この関数は、タイム ゾーンをサポートしていません。
+**セッション日時** ページを開くには、**ツール** メニューの **セッション日時** を使用してください。 このページを使用して、セッションの日付を有効に設定できます。 システムによってこの設定されたアクションが検出されると、その後の **systemDateGet** 関数の呼び出しによってセッションの日付が返されます。 **today** 関数は、システム日付を返します。 この関数は、タイム ゾーンをサポートしていません。
 
 ### <a name="example"></a>例
 

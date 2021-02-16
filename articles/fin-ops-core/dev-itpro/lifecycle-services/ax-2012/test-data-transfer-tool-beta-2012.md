@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18651
 ms.assetid: de54d768-d7a3-45d4-93bf-e95356b797aa
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1df9730a60b1321f1dba07d1680011b89a887e39
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: f2c6ac91d437a2672577799850831e7e6c920b2f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983716"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680028"
 ---
 # <a name="test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2983716"
 
 Microsoft Dynamics AX 2012 Test Data Transfer Tool (ベータ) (DP.exe) は、生産環境または非生産環境の Microsoft Dynamics AX 2012 ビジネス データベースからデータをエクスポートするコマンド ライン ツールです。 このツールは、実稼働環境以外の環境でも Microsoft Dynamics AX 2012 ビジネス データベースにデータをインポートします。 非実稼働環境は、開発環境またはテスト環境のいずれかになります。
 
-テスト データ転送ツール (ベータ) は移動されました。 Microsoft Dynamics Lifecycle Services の**ダウンロード可能なツール** セクションから利用できます。 [Lifecycle Services に移動](https://lcs.dynamics.com). 
+テスト データ転送ツール (ベータ) は移動されました。 Microsoft Dynamics Lifecycle Services の **ダウンロード可能なツール** セクションから利用できます。 [Lifecycle Services に移動](https://lcs.dynamics.com). 
 
 > [!NOTE]
 > 注記: マイクロソフトでは、データを実稼動環境にインポートするテスト データ転送ツール (ベータ) の使用はサポートしていません。 このツールは、実稼働環境からのデータのエクスポートと、テスト環境または開発環境へのデータのインポートにのみ使用できます。 テスト データ転送ツール (ベータ) は、次の場合に特に便利です。

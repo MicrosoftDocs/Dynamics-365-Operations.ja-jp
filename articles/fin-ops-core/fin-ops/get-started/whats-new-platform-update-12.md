@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: a071839c98d55ca79d153d6d5edb3921d7eaecf9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e57dbd3a2b77a3555b408ddab5afbafabbbb1a9a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812461"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694116"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 
@@ -35,7 +34,7 @@ ms.locfileid: "2812461"
 
 ## <a name="browser-client--discover-and-learn-currently-available-keyboard-shortcuts"></a>ブラウザー クライアント - 現在利用可能なキーボード ショートカットを見つけて学ぶ
 
-キーボード ショートカットの説明書を検索する必要がなくなりました。 代わりに、ユーザー インターフェイスから直接、現在利用可能なキーボード ショートカットを見つけることができるようになりました。 コントロールを右クリックし、**ショートカットの表示** を選択します。 これにより、ページの場所に応じて使用できるショートカットが一覧表示されたダイアログボックスが開きます。 
+キーボード ショートカットの説明書を検索する必要がなくなりました。 代わりに、ユーザー インターフェイスから直接、現在利用可能なキーボード ショートカットを見つけることができるようになりました。 コントロールを右クリックし、**ショートカットの表示** を選択します。 これにより、ページの場所に応じて使用できるショートカットが一覧表示されたダイアログボックスが開きます。 
 
 詳細については、「[キーボード ショートカット](shortcut-keys.md)」を参照してください。
 
@@ -64,7 +63,7 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。
 
 - Azure AD で B2B 招待サービス アプリケーションを設定します。
-- Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
+- Finance and Operations で B2B 招待サービスの設定を構成します。
 
 詳細については、[企業間 (B2B) ユーザーを Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 

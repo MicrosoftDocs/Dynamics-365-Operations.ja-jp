@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
-ms.search.form: OMHierarchyManager
+ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e1b9fc647ccaa3caeec0d0e3a8594fd6a2a8be0f
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 8f7e4d01970f459f66934fe434ec7307104b39b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070739"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413846"
 ---
 # <a name="commerce-hierarchies"></a>コマース階層
 
@@ -32,7 +32,7 @@ ms.locfileid: "3070739"
 
 この記事は、Dynamics 365 Commerce の階層について説明します。
 
-カテゴリ階層を作成して、チャンネルを使用して販売する製品を整理することができます。 製品階層を使用して、製品を分類またはグループ化できます。 その後、これらの製品を使用して、製品の品揃えと顧客ロイヤルティ プログラムを作成できます。 また、製品の属性またはプロパティの割り当て、価格決定構造の割り当て、製品プロモーションへの製品の挿入、およびレポートでの製品の使用を行うこともできます。 1 つのカテゴリ階層を作成して組織のすべての製品およびカテゴリを表し、複数の目的にそのカテゴリ階層を使用することができます。 また、製品のプロモーションなどの特殊な目的に複数のカテゴリ階層を作成できます。 製品階層を作成する際に、カテゴリ階層の目的を識別するためにカテゴリ階層タイプを割り当てる必要があります。 たとえば、**コマースのナビゲーション階層**タイプが割り当てられている製品階層のみが、製品をカテゴリごとにオンラインで、または販売時点管理 (POS) で表示する場合に参照されます。
+カテゴリ階層を作成して、チャンネルを使用して販売する製品を整理することができます。 製品階層を使用して、製品を分類またはグループ化できます。 その後、これらの製品を使用して、製品の品揃えと顧客ロイヤルティ プログラムを作成できます。 また、製品の属性またはプロパティの割り当て、価格決定構造の割り当て、製品プロモーションへの製品の挿入、およびレポートでの製品の使用を行うこともできます。 1 つのカテゴリ階層を作成して組織のすべての製品およびカテゴリを表し、複数の目的にそのカテゴリ階層を使用することができます。 また、製品のプロモーションなどの特殊な目的に複数のカテゴリ階層を作成できます。 製品階層を作成する際に、カテゴリ階層の目的を識別するためにカテゴリ階層タイプを割り当てる必要があります。 たとえば、**コマースのナビゲーション階層** タイプが割り当てられている製品階層のみが、製品をカテゴリごとにオンラインで、または販売時点管理 (POS) で表示する場合に参照されます。
 
 ## <a name="hierarchy-types"></a>階層タイプ
 

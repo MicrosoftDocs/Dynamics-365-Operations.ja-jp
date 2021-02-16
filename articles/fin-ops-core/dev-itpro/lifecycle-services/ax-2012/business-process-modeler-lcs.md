@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 15031
 ms.assetid: 01c38560-f588-4558-a7ec-3af1bb518069
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 86042088e89e5a8dc1e50c577b01071682389e8f
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 895fcdcd96efe436920d0f3629ae32133564acca
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983753"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685021"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -49,13 +48,13 @@ Microsoft Dynamics Lifecycle Services では、ビジネス プロセス モデ�
 ビジネス プロセス モデラーにアクセスするには、次の手順を実行します。
 
 1.  [Lifecycle Services に移動](https://lcs.dynamics.com).
-2.  サインインしてプロジェクトを開き、**ビジネス プロセス モデラー** タイルをクリックします。 **ビジネス プロセス ライブラリ** には 3 つのセクションが表示されます。
-    -   **自分のライブラリ** にはユーザーが作成または追加したビジネス プロセスが含まれます。
-    -   **コーポレート ライブラリ** には、組織内のユーザーによってアップロードされた独自のビジネス プロセスが含まれます。
-    -   **グローバル ライブラリ** には、産業間の標準のビジネス プロセスが含まれます。
+2.  サインインしてプロジェクトを開き、**ビジネス プロセス モデラー** タイルをクリックします。 **ビジネス プロセス ライブラリ** には 3 つのセクションが表示されます。
+    -   **自分のライブラリ** には、ユーザーが作成または追加したビジネス プロセスが含まれます。
+    -   **コーポレート ライブラリ** には、組織内のユーザーによってアップロードされた独自のビジネス プロセスが含まれます。
+    -   **グローバル ライブラリ** には、産業間の標準のビジネス プロセスが含まれています。
 
-3.  標準的なビジネス プロセス ライブラリを **グローバル ライブラリ** セクションから **マイ ライブラリ** セクションにコピーするには、**グローバル ライブラリ** セクションでタイルを右クリックし、アプリ バーで **コピー** をクリックします。
-4.  ビジネス プロセス ライブラリが **自分のライブラリ** セクションに追加された後、タイルをクリックしてビジネス プロセス ライブラリを表示します。
+3.  標準的なビジネス プロセス ライブラリを **グローバル ライブラリ** セクションから **自分のライブラリ** セクションにコピーするには、**グローバル ライブラリ** セクションでタイルを右クリックし、アプリ バーで **コピー** をクリックします。
+4.  ビジネス プロセス ライブラリが **自分のライブラリ** セクションに追加された後、タイルをクリックしてビジネス プロセス ライブラリを表示します。
 
 
 <a name="additional-resources"></a>追加リソース

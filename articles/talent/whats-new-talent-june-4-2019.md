@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 97b44ee0d985755b33971c29c1f39561c4138fad
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 4a42a3b817024447e2ff26cfcb3cdd0df1351158
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896891"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528051"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 6 月 4 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -37,7 +39,7 @@ ms.locfileid: "2896891"
 
 ### <a name="job-approvals-on-the-home-page"></a>ホーム ページのジョブ承認
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。 このセクションでは、ジョブ ID、タイトル、他の承認者、およびジョブが割り当てられた日付について示します。 承認のためにジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。 このセクションでは、送信されたジョブを承認する必要がある承認者について示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。 このセクションでは、ジョブ ID、タイトル、他の承認者、およびジョブが割り当てられた日付について示します。 承認のためにジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。 このセクションでは、送信されたジョブを承認する必要がある承認者について示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
@@ -49,7 +51,7 @@ ms.locfileid: "2896891"
 
 ### <a name="new-page-to-validate-position-hierarchy-data"></a>職位階層データを検証する新しいページ
 
-人事管理 (HR) スタッフおよび管理者は、誤ってインポートされた循環参照に対して管理階層を検証できます。 この新しいページは、**組織管理 \> リンク \> 職位 \> 職位階層の検証**でアクセスすることができます。
+人事管理 (HR) スタッフおよび管理者は、誤ってインポートされた循環参照に対して管理階層を検証できます。 この新しいページは、**組織管理 \> リンク \> 職位 \> 職位階層の検証** でアクセスすることができます。
 
 ### <a name="specify-reason-codes-on-leave-types"></a>休暇タイプの理由コードの指定
 
@@ -73,13 +75,13 @@ Talent: Core HR から削除されたレコードは、Common Data Service か�
 
 ### <a name="performance-review-comments-are-removed-when-users-select-cancel"></a>ユーザーがキャンセルを選択した場合、業績の確認のコメントは削除されます
 
-このリリースは、ユーザーがコメントの変更を開始した後に**キャンセル**を選択した場合、確認のコメントが削除されるという問題を修正します。 
+このリリースは、ユーザーがコメントの変更を開始した後に **キャンセル** を選択した場合、確認のコメントが削除されるという問題を修正します。 
 
 ## <a name="in-preview"></a>プレビュー
 
 ### <a name="preview-features-are-enabled-only-in-sandbox-instances"></a>プレビュー機能は、サンドボックス インスタンスでのみ有効です。
 
-Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを**実稼働**または**サンドボックス**のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを **実稼働** または **サンドボックス** のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 変更を公開する方法の詳細については、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) を参照してください。
 

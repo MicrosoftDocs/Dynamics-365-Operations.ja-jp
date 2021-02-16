@@ -19,17 +19,17 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 7c59fa09e83ca91e0ad866e5875ff06370b7491d
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419289"
 ---
 # <a name="configure-deductions"></a>控除のコンフィギュレーション
 
 Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金について従業員の給与から控除する金額 (必要な場合) を決定します。 控除は日付が有効であるため、控除情報の履歴を記録しておくことができます。 
 
-1. **給付金管理**ワーク スペースの**設定**で、**控除**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**控除** を選択します。
 
 2. **新規** を選択します。
 
@@ -49,6 +49,6 @@ Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金�
    | **変更の有効日** | 給付控除の変更が有効になる日付。 この日付に、システムは自動的に給付控除を変更し、**控除変更の更新** 処理を実行している限り、この控除に関連するすべての給付プランを更新します。 |
    | **控除の変更が完了しています** | 控除更新の変更処理によって給付控除の変更が完了すると、**控除の変更が完了しました** チェック ボックスが自動的に選択されます。 |
    
-4. 利益率の設定に対する変更を追跡して維持するには、**アクション**を選択し、**バージョンの維持**を選択します。
+4. 利益率の設定に対する変更を追跡して維持するには、**アクション** を選択し、**バージョンの維持** を選択します。
 
 5. **保存** を選択します。 

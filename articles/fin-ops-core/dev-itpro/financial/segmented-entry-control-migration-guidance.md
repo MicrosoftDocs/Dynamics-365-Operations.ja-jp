@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79b7a1c81d1c9e8db17fb3046447381281fbf7f5
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: faaefc11830a25465a1c076cb1c127010b2fa6fb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411401"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683971"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -46,7 +45,7 @@ ms.locfileid: "3411401"
     -   **以前:** controller.parmDate(systemDateGet())
     -   **以後:** LedgerAccount.parmControlDate(systemDateGet());
 
-    この例では、**コントローラー** &gt; **LedgerDimensionAccountController** インスタンスと **LedgerAccount** &gt; 新規**セグメント化エントリ** コントロールのインスタンス
+    この例では、**コントローラー** &gt; **LedgerDimensionAccountController** インスタンスと **LedgerAccount** &gt; 新規 **セグメント化エントリ** コントロールのインスタンス
 -   コントロールやデータ フィールドでオーバーライドされたメソッドでは、コード アップグレード ルールが、コントローラーのメソッドの呼び出しを、特定のコントローラーを使用していた各コントロール インスタンスのメソッドの呼び出しに置き換えます。 
 
 -   **例**
@@ -75,7 +74,7 @@ ms.locfileid: "3411401"
 -   **parmTaxCode** が削除されました。 交換はありません。
 
 ## <a name="properties"></a>プロパティ
-**セグメント化エントリ**コントロールのカスタム プロパティは、**コントローラー**の下にあります。 次のスクリーン ショットは、例を示します。 
+**セグメント化エントリ** コントロールのカスタム プロパティは、**コントローラー** の下にあります。 次のスクリーン ショットは、例を示します。 
 
 [![111](./media/111.png)](./media/111.png) 
 
@@ -331,7 +330,7 @@ public void onSegmentChanged(DimensionControlSegment _segment)
 **メモ :**
 
 -   **onSegmentChanged()** メソッドを追加するには、次の手順を実行します。
-    1.  メソッドを追加するには、**セグメント化されたエントリ**コントロールを展開します。
+    1.  メソッドを追加するには、**セグメント化されたエントリ** コントロールを展開します。
     2.  **メソッド** ノードをクリックし、**オーバーライド** &gt; **onSegmentChanged** を選択します。
 -   新しいメソッドは、**super()** またはコントロールまたはコントローラーのいずれかの他のメソッドを呼び出す必要はありません。
 
@@ -567,7 +566,7 @@ ledgerDimensionAccountController.setValues(ledgerJournalTrans.DefaultDimension, 
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-分析コードの指定子のマップを作成してから、**セグメント化されたエントリ**コントロールの **setDimensionSpecifiers** メソッドに送信する必要があります。
+分析コードの指定子のマップを作成してから、**セグメント化されたエントリ** コントロールの **setDimensionSpecifiers** メソッドに送信する必要があります。
 
 ```xpp
 Map defaultDimensionSpecifiers = LedgerDimensionDefaultingEngine::getDefaultDimensionSpecifiers(ledgerJournalTable.DefaultDimension);
@@ -604,7 +603,7 @@ ledgerDimensionDefaultAccountController.parmFilterLedgerPostingType(LedgerPostin
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-これは、コントロールの**転記タイプ**プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 
+これは、コントロールの **転記タイプ** プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 
 
 [![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
 
@@ -634,7 +633,7 @@ ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-一般に、コントローラー クラスに以前設定されていたプロパティをコントロールに直接設定する必要があります。 このプロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判断できます。 また、**セグメント化エントリ** コントロールの場合、Microsoft Visual Studio の**プロパティ** ダイアログ ボックスで使用できるプロパティは、コントロール インスタンスで対応する **parm** メソッドを使用して、コードで設定することもできます。
+一般に、コントローラー クラスに以前設定されていたプロパティをコントロールに直接設定する必要があります。 このプロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判断できます。 また、**セグメント化エントリ** コントロールの場合、Microsoft Visual Studio の **プロパティ** ダイアログ ボックスで使用できるプロパティは、コントロール インスタンスで対応する **parm** メソッドを使用して、コードで設定することもできます。
 
 ### <a name="step-20"></a>ステップ 20
 
@@ -648,7 +647,7 @@ dimOffetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-一般に、コントローラー クラスに以前設定されていたプロパティをコントロールに直接設定する必要があります。 このプロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判断できます。 また、**セグメント化エントリ** コントロールの場合、Visual Studio の**プロパティ** ダイアログ ボックスで使用できるプロパティは、コントロール インスタンスで対応する **parm** メソッドを使用して、コードで設定することもできます。
+一般に、コントローラー クラスに以前設定されていたプロパティをコントロールに直接設定する必要があります。 このプロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判断できます。 また、**セグメント化エントリ** コントロールの場合、Visual Studio の **プロパティ** ダイアログ ボックスで使用できるプロパティは、コントロール インスタンスで対応する **parm** メソッドを使用して、コードで設定することもできます。
 
 ### <a name="step-21"></a>ステップ 21
 
@@ -682,7 +681,7 @@ DimensionDynamicAccountController::construct(ledgerJournalTrans_ds, fieldStr(Led
 
 この機能を実装するには、2 つのメソッドがあります。 これらのメソッドは相互に排他的なため、状況に応じてそれらのメソッドのうち 1 つのみを使用してください。
 
--   **セグメント化されたエントリー**コントロールについては、**プロパティ**ダイアログ ボックスで、**勘定タイプ フィールド**プロパティを勘定タイプを提供するデータ ソース フィールドに設定します。 これが推奨されるメソッドです。 
+-   **セグメント化されたエントリー** コントロールについては、**プロパティ** ダイアログ ボックスで、**勘定タイプ フィールド** プロパティを勘定タイプを提供するデータ ソース フィールドに設定します。 これが推奨されるメソッドです。 
 
     > [!NOTE]
     > **super()** 呼び出しが、**口座タイプ フィールド** プロパティにバインドされているフィールドの **modified()** メソッドから削除されている場合、このメソッドは機能しません。 **LedgerJournalTransDaily** などのいくつかの仕訳帳フォームで、この問題が確認されました。 このような場合、**super()** コールバックを **modified()** メソッドに追加するか、2 つ目のメソッドを使用します。
@@ -721,7 +720,7 @@ ledgerDimensionDefaultAccountController.parmCurrentLedgerCOA(LedgerCOA::current(
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-ほとんどの場合に必要がなくなったため、このコード行を削除します。 この線を削除する前に、**LedgerCOA** 値がその情報から派生するため、データ領域 ID がパラメーターとしてコントローラーに正しく渡されていることを確認してください。 データ領域 ID が渡されない場合は、**parmCurrentLedgerCOA()** を **parmDataAreaId()** で交換し、通常は **curext()** または会社のアカウント管理のために範囲を制御する別のテーブル フィールドである適切な **SelectableDataArea** 値を渡します。 フォームにデータ領域のコンテキストはありませんが、現在の **LedgerCOA** 値のみがある場合、既定のアカウント コント ローラーだけで動作する必要があります。 企業には無関係ですが、特定の勘定科目表 (COA) (**MainAccount** および **Allocations** など) にスコープされているフォームがいくつかあります。 そのような場合、**parmCurrentLedgerCOA** が、既定のアカウント コントローラー タイプ セットを持つ**セグメント化エントリ** コントロール インスタンスで呼び出される必要があります。
+ほとんどの場合に必要がなくなったため、このコード行を削除します。 この線を削除する前に、**LedgerCOA** 値がその情報から派生するため、データ領域 ID がパラメーターとしてコントローラーに正しく渡されていることを確認してください。 データ領域 ID が渡されない場合は、**parmCurrentLedgerCOA()** を **parmDataAreaId()** で交換し、通常は **curext()** または会社のアカウント管理のために範囲を制御する別のテーブル フィールドである適切な **SelectableDataArea** 値を渡します。 フォームにデータ領域のコンテキストはありませんが、現在の **LedgerCOA** 値のみがある場合、既定のアカウント コント ローラーだけで動作する必要があります。 企業には無関係ですが、特定の勘定科目表 (COA) (**MainAccount** および **Allocations** など) にスコープされているフォームがいくつかあります。 そのような場合、**parmCurrentLedgerCOA** が、既定のアカウント コントローラー タイプ セットを持つ **セグメント化エントリ** コントロール インスタンスで呼び出される必要があります。
 
 ### <a name="step-25"></a>ステップ 25
 
@@ -735,10 +734,10 @@ LedgerDimensionDefaultAccountController.parmIncludeFinancialAccounts(NoYes::Yes)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-このコード行は不要になり、**セグメント化されたエントリ**コントロールのプロパティを使用して直接設定する必要があります。 
+このコード行は不要になり、**セグメント化されたエントリ** コントロールのプロパティを使用して直接設定する必要があります。 
 
 > [!NOTE]
-> フレームワークのバグのため、これを明示的に設定しないと、以前の動作では、構築中に暗黙的に **はい** が割り当てられていましたが、勘定分析コードの既定のアカウント コントローラーに **いいえ** が割り当てられます。 この操作は、プロパティとして手動で設定する必要があります。 または、**ダイアログ**クラスへの、**parm** メソッドがまだ明示的に呼び出されるはずです。
+> フレームワークのバグのため、これを明示的に設定しないと、以前の動作では、構築中に暗黙的に **はい** が割り当てられていましたが、勘定分析コードの既定のアカウント コントローラーに **いいえ** が割り当てられます。 この操作は、プロパティとして手動で設定する必要があります。 または、**ダイアログ** クラスへの、**parm** メソッドがまだ明示的に呼び出されるはずです。
 
 ### <a name="step-26"></a>ステップ 26
 
@@ -761,7 +760,7 @@ public void modified()
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-このデータ フィールドの **modified** メソッドは、**参照** フィールドとして **セグメント化されたエントリ** コントロールにバインドされた勘定分析コード フィールドをクリアしなければならなくなりました。 たとえば、**セグメント化されたエントリ**コントロールの名前が **OffsetAccount** である場合、このコントロールの**参照**フィールド プロパティが **LedgerDimension** に設定され、上記のコード内の**変更**メソッドが次のように変更される必要があります。
+このデータ フィールドの **modified** メソッドは、**参照** フィールドとして **セグメント化されたエントリ** コントロールにバインドされた勘定分析コード フィールドをクリアしなければならなくなりました。 たとえば、**セグメント化されたエントリ** コントロールの名前が **OffsetAccount** である場合、このコントロールの **参照** フィールド プロパティが **LedgerDimension** に設定され、上記のコード内の **変更** メソッドが次のように変更される必要があります。
 
 ```xpp
 public void modified()
@@ -811,7 +810,7 @@ fromBudgetPlanningLedgerDimensionController.parmAccountStructureId(accountStruct
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
-**parmAccountStructureId()** メソッドは、コントロール上に存在しません。 代わりに、個別の **getAccountStructure()** および **setAccountStructure()** メソッドがあります。 したがって、**parmAccountStructureId()** 呼び出しは、**parm** メソッドがどのように使用されていたかに応じて、**get** メソッドまたは **set** メソッドで置き換えられる必要があります。 たとえば、上記のコードで **parm** メソッドはセッターとして呼び出されたので、呼び出しは**設定**メソッドへの呼び出しによって置換される必要があります。
+**parmAccountStructureId()** メソッドは、コントロール上に存在しません。 代わりに、個別の **getAccountStructure()** および **setAccountStructure()** メソッドがあります。 したがって、**parmAccountStructureId()** 呼び出しは、**parm** メソッドがどのように使用されていたかに応じて、**get** メソッドまたは **set** メソッドで置き換えられる必要があります。 たとえば、上記のコードで **parm** メソッドはセッターとして呼び出されたので、呼び出しは **設定** メソッドへの呼び出しによって置換される必要があります。
 
 ```xpp
 ToBudgetPlanningTransactionLine_LedgerDimension.setAccountStructureId(accountStructureIdLocal);
@@ -851,7 +850,7 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
 
 ### <a name="migrating-a-segmented-entry-control-on-a-dialog"></a>ダイアログ上のセグメント化エントリ コントロールの移行
 
-ダイアログ上の新しい**セグメント化されたエントリ** コントロールの取得パターンは Dynamics AX で変更されています。 コントローラー クラス API とのやり取りではなく、**SegmentedEntryControlBuild** クラスとやり取りしてダイアログと SEC をリンクする必要があります。 このセクションでは、異なるコントローラー タイプのダイアログで SEC を使用するためのコード パターンを示します。 
+ダイアログ上の新しい **セグメント化されたエントリ** コントロールの取得パターンは Dynamics AX で変更されています。 コントローラー クラス API とのやり取りではなく、**SegmentedEntryControlBuild** クラスとやり取りしてダイアログと SEC をリンクする必要があります。 このセクションでは、異なるコントローラー タイプのダイアログで SEC を使用するためのコード パターンを示します。 
 
 > [!NOTE] 
 > Dynamics  AX ではヘルプ テキストが不要になるため、ダイアログ フィールドにヘルプ テキストを設定する必要はありません。
@@ -968,7 +967,7 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
         ```
 
 -   **予算:**
-    -   **以前:** 既存のプログラム ソース コード内でダイアログ シナリオの**予算計画**コントローラー (**BudgetLedgerDimensionController**) の取り込みは見つかりませんでした。
+    -   **以前:** 既存のプログラム ソース コード内でダイアログ シナリオの **予算計画** コントローラー (**BudgetLedgerDimensionController**) の取り込みは見つかりませんでした。
     -   **以後:**
 
         ```xpp
@@ -980,7 +979,7 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
     -   コントロールのデフォルト値は、**ledgerDimensionBudget** 変数で指定します。
     -   **予算** コントローラーを用いて、使用する勘定構造を指定する必要があります。 **Dialog** クラスは、ユーザーが勘定構造を選択し (SEC の外部で)、選択した勘定構造を SEC で設定する方法を実装する必要があります。
 -   **予算計画:**
-    -   **以前:** 既存のプログラム ソース コード内でダイアログ シナリオの**予算計画**コントローラー (**BudgetPlanningLedgerDimensionController**) の取り込みは見つかりませんでした。
+    -   **以前:** 既存のプログラム ソース コード内でダイアログ シナリオの **予算計画** コントローラー (**BudgetPlanningLedgerDimensionController**) の取り込みは見つかりませんでした。
     -   **以後:**
 
         ```xpp

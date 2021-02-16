@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 65893
 ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02b2d0d29488d9cc274c3974d1bd03772c3a4b6b
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 4b99aab233d5c1fffbe77539d09a7d0fd91a3827
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070775"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687976"
 ---
 # <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 
@@ -39,7 +38,7 @@ ms.locfileid: "3070775"
     -   Microsoft.Dynamics.Commerce.Runtime.Framework.dll
     -   Microsoft.Dynamics.Commerce.Runtime.Services.Messages.dll
 
-4.  GetCustomersServiceRequestTrigger.cs ファイルに、次の明細書を**使用して**追加します。
+4.  GetCustomersServiceRequestTrigger.cs ファイルに、次の明細書を **使用して** 追加します。
 
     ```typescript
     using Microsoft.Dynamics.Commerce.Runtime.Messages;

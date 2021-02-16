@@ -1,7 +1,7 @@
 ---
 title: FieldDesign タイプ
 description: フィールド コントロール用のデザイン オブジェクト インターフェイス。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b96f45b1093c04c1a325e8584b8b272f663d66a8
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: fb3c51ec669f0f5b32f33a0f0ffbc3f7764cdcb8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658893"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679246"
 ---
 # <a name="fielddesign-type"></a>FieldDesign タイプ
 
@@ -120,7 +119,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承

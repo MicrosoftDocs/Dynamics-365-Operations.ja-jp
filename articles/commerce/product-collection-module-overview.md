@@ -3,7 +3,7 @@ title: 製品収集モジュール
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品収集モジュールの概要を示します。
 author: v-chgri
 manager: annbe
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413624"
 ---
 # <a name="product-collection-modules"></a>製品収集モジュール
 
@@ -78,13 +78,13 @@ ms.locfileid: "3464956"
 1. **モジュールの追加** ダイアログ ボックスで、**コンテナー** モジュールを選択して、**OK** を選択します。
 1. **コンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
 1. **モジュールの追加** ダイアログ ボックスで、**製品コレクション** モジュールを選択し、続いて **OK** を選択します。  
-1. 製品収集モジュールのプロパティ ウィンドウで、**製品リストの追加**を選択します。
+1. 製品収集モジュールのプロパティ ウィンドウで、**製品リストの追加** を選択します。
 1. **製品リスト構成の選択** ダイアログ ボックスで、リストのタイプ、リストのソースを選択し、品目の数を入力します。 リスト タイプに使用できるその他のオプションを構成します。 リスト タイプの詳細については、次の表を参照してください。 
 1. **OK** を選択します。
-1. **保存** を選択し、 続いて**プレビュー** を選択してページをプレビューします。
+1. **保存** を選択し、 続いて **プレビュー** を選択してページをプレビューします。
 1. **編集の完了** を選択してページをチェックインし、 **発行** を選択して公開します。
 
-次の表に、**製品リストのコンフィギュレーションの選択**ダイアログ ボックスの選択に使用可能なリスト タイプを示します。
+次の表に、**製品リストのコンフィギュレーションの選択** ダイアログ ボックスの選択に使用可能なリスト タイプを示します。
 
 | 型                       | 説明 | 用途 | ページ コンテキスト | 特定のコンテキスト | 個人用設定 |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
@@ -98,7 +98,7 @@ ms.locfileid: "3464956"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [カルーセル モジュール](add-carousel.md)
 

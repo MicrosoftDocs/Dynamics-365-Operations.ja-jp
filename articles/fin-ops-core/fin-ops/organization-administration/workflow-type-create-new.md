@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0c674088f9fc9e576868148631b280a115c94165
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0f34e08a47ce9c09300dd650ba58a9e98720372c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811229"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693886"
 ---
 # <a name="create-a-new-workflow-type"></a>新しいワークフロー タイプの作成
 
@@ -41,7 +40,7 @@ ms.locfileid: "2811229"
 
 1. 次のいずれかの手順に従って、 **ワークフロー** ウィザードを開きます。 ウィザードは、新しいワークフロー タイプを作成するのに役立ちます。
 
-    + アプリケーションエクスプローラーで、 **ビジネスプロセスとワークフロー** ノードを右クリックし、次に **アドイン** \> **ワークフロー タイプ ウィザード**を選択します。
+    + アプリケーションエクスプローラーで、 **ビジネスプロセスとワークフロー** ノードを右クリックし、次に **アドイン** \> **ワークフロー タイプ ウィザード** を選択します。
     + **プロジェクト** メニューの **新しい項目の追加** を選択します。 **新しい項目の追加** ダイアログ ボックスで、 **ワークフロー タイプ** を選択します。 クエリ名を入力し、 **作成** を選択します。
 
 2. ウィザードに、次の値を設定します。

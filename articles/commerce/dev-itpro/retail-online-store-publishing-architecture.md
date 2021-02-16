@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 72124
 ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc71a52ee0cb1208e1b63558f5ec1061918a66d2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5ee14f4f18958130a9236b418488f9858dc4597e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004639"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681490"
 ---
 # <a name="online-store-publishing-architecture"></a>オンライン ストア公開アーキテクチャ
 
@@ -60,8 +59,8 @@ ms.locfileid: "3004639"
 
 1.  Finances and Operations は、コマース データベース内の製品テーブルを読み取ります。
 2.  Async Server はチャネル データベースのすべての製品を同期します。
-3.  CRT/パブリッシュ コネクターは、*一覧*を作成します。 一覧は、特定の時点におけるチャネルの製品のインスタンスです。 たとえば、「ジーンズ」という名前の製品があり、この製品には「赤」という名前のバリアントがあります。 この場合、システムは「赤いジーンズ」の一覧を作成します。
-4.  システムは、リスティングに新しい属性が追加されたかどうかを判断します。 新しい属性が追加された場合 (例えば、一覧表示「赤いジーンズ」には、**テクスチャ**という名前の新しい属性が含まれ、この属性がチャンネル レベルで**組み込まれている**とマークされている場合)、システムではカスタム サイト内の列が作成されます。 また、リスト アイテムの新しいルールが作成され、「赤いジーンズ」リストの新しい行が作成され、SharePoint でプロセスが完了します。
+3.  CRT/パブリッシュ コネクターは、*一覧* を作成します。 一覧は、特定の時点におけるチャネルの製品のインスタンスです。 たとえば、「ジーンズ」という名前の製品があり、この製品には「赤」という名前のバリアントがあります。 この場合、システムは「赤いジーンズ」の一覧を作成します。
+4.  システムは、リスティングに新しい属性が追加されたかどうかを判断します。 新しい属性が追加された場合 (例えば、一覧表示「赤いジーンズ」には、**テクスチャ** という名前の新しい属性が含まれ、この属性がチャンネル レベルで **組み込まれている** とマークされている場合)、システムではカスタム サイト内の列が作成されます。 また、リスト アイテムの新しいルールが作成され、「赤いジーンズ」リストの新しい行が作成され、SharePoint でプロセスが完了します。
 5.  CRT では、一覧の公開状況を記録します。
 6.  Async Server は、一覧の公開ステータスを他のすべての公開ステータスと同期します。 状態は、**公開済** または **エラー** のいずれかになります。
 

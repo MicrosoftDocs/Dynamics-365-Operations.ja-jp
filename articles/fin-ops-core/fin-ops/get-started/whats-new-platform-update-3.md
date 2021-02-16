@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 220184
 ms.assetid: 8beb4e7f-4a71-4c50-adf7-7733e6a150d9
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e72a4b423413fb5d89513b90810b6d54aaca9100
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6500b1e302f00881d37428efdc4be9ab6afb6f68
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812455"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694094"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 
@@ -133,7 +132,7 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 
 | 実行可能事項 | これは、なぜ重要ですか |
 |-----------------|-----------------------|
-| グリッド内で下向きの矢印を使用して、新しい行を追加します。 | グリッドに行を追加するとき、現在の行に不完全な情報が含まれている場合、新しい行を作成するために下方向キーを使用しても無視されます。 この動作は、**新規追加**ボタンとそのショートカット **Alt + N** の使用と一致しませんでした。 新しい行の作成に下向きの矢印を使用することが現在は首尾一貫しています。 |
+| グリッド内で下向きの矢印を使用して、新しい行を追加します。 | グリッドに行を追加するとき、現在の行に不完全な情報が含まれている場合、新しい行を作成するために下方向キーを使用しても無視されます。 この動作は、**新規追加** ボタンとそのショートカット **Alt + N** の使用と一致しませんでした。 新しい行の作成に下向きの矢印を使用することが現在は首尾一貫しています。 |
 | 一部の API は使用されなくなりました | 新しい Web ベースのプラットフォームの導入により、Dynamics 365 for Operations プラットフォームでは新しい対話型コントロールの完全なセットが提供されます。 場合によっては、ほとんど使用していないプロパティまたはメソッドが、Dynamics AX 2012 に存在したコントロールで非推奨でした。 FormListControl の場合、ほとんど使用メソッドが実装されていませんでしたが、それらの API は非推奨としてマークされていませんでした。 このリリースでは、これらのメソッドは非推奨としてマークされました。 |
 
 ## <a name="mobile-app"></a>モバイル アプリ

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgFlexGroup
+ms.search.form: JmgFlexGroup, JmgFlexCorrection
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 753874e4cf1d0403e9c422f44d159b11ef1d7247
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210229"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432007"
 ---
 # <a name="flex-groups"></a>フレックス グループ
 

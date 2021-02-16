@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005589"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683435"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
@@ -84,9 +83,9 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>モバイル ワークスペースを使用して、会社のディレクトリを表示します。
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。 従業員の一覧が表示されます。
-3.  従業員を選択します。 **従業員のプロファイル**ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
+3.  従業員を選択します。 **従業員のプロファイル** ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
 
 ## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a>モバイル ワークスペースを使用して、会社のディレクトリを検索します。
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。
-2.  **検索**フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
-3.  従業員を選択します。 **従業員のプロファイル**ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
+2.  **検索** フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
+3.  従業員を選択します。 **従業員のプロファイル** ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。

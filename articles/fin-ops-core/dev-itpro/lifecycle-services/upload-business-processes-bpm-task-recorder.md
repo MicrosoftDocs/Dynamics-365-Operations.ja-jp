@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 18991
 ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9295162c37b292678457b0cfd19ee8a210de46
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 2631b386aa21ebabd37d93ba2ce9b935101d0704
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983672"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681050"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
@@ -41,8 +40,8 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 業務プロセス コンポーネント (\*.axbpm ファイル) を業務プロセス ライブラリにアップロードすることができます。 これらのファイルは、タスク レコーダーから生成されます。 アップロード後、ビジネス プロセス モデラーに記録されたプロセスを表示および変更できます。 記録したカスタム ビジネス プロセスをアップロードするには、次の手順を実行します。
 
 1.  **プロジェクト** ホーム ページで、**業務プロセス モデラー** タイルをクリックします。
-2.  **業務プロセスのライブラリ**ページで、**自分のライブラリ**セクションまたは**コーポレート ライブラリ**で、**アップロード**をクリックします。
-3.  **アップロード**ページで、業種を選択し、名前と説明をアップロードするファイルを入力します。 **アップロード** をクリックし、.axbpm ファイルを選択し、**OK** をクリックします。 アップロード プロセスには少し時間がかかる場合があります。 **管理** ページでは、アップロードの状態を表示できます。
+2.  **業務プロセスのライブラリ** ページで、**自分のライブラリ** セクションまたは **コーポレート ライブラリ** で、**アップロード** をクリックします。
+3.  **アップロード** ページで、業種を選択し、名前と説明をアップロードするファイルを入力します。 **アップロード** をクリックし、.axbpm ファイルを選択し、**OK** をクリックします。 アップロード プロセスには少し時間がかかる場合があります。 **管理** ページでは、アップロードの状態を表示できます。
 4.  業務プロセスのファイルをアップロードした後、**業務プロセスのライブラリ** ページから業務プロセス フレームワークを表示できます。
 
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysAppDesignerPane
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
 ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 228e519138fcb321999bcf0884291a79ac45eed7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cc8ef25d70450522668063f79acae31af0702838
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183101"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679916"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 
@@ -34,7 +33,7 @@ ms.locfileid: "2183101"
 ## <a name="publish-a-mobile-workspace"></a>モバイル ワークスペースの公開
 
 1. ブラウザーで、Web クライアントを起動します。
-2. **設定** > **モバイル アプリ**とクリックします。
+2. **設定** > **モバイル アプリ** とクリックします。
 3. 公開するモバイル ワークスペースを選択します。
 4. **発行** をクリックします。
 

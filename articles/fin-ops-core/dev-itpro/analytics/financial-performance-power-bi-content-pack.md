@@ -10,31 +10,30 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771122"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682748"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>財務パフォーマンス PowerBI.com ソリューション
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この PowerBI.com ソリューションは、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) で記載されたものとして非推奨になっています。
+> この PowerBI.com ソリューションは、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) に記載されている通り非推奨となっています。.
 
 このトピックでは、**財務パフォーマンス** PowerBI.com ソリューションについて説明します。 含まれているダッシュボードおよびレポートについて説明し、ソリューションを作成するために使用したデータ モデルとエンティティに関する情報を提供します。
 
 ## <a name="main-account-setup"></a>主勘定の設定
-組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
+組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>PowerBI.com ソリューションに含まれるダッシュボードおよびレポート
 ダッシュボードには、基になるレポートに基づいて集計されたデータ タイルが含まれます。 各タイルには、組織のすべての会社間での今年度における集計情報が含まれます。 次にタイルの例を示します。
@@ -73,7 +72,7 @@ ms.locfileid: "2771122"
 これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-次のエンティティは**財務パフォーマンス** PowerBI.com ソリューションの基準として使用されていました。
+次のエンティティは **財務パフォーマンス** PowerBI.com ソリューションの基準として使用されていました。
 
 **データ エンティティの集計**
 

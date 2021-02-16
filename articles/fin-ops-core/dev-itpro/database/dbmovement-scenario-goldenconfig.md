@@ -3,24 +3,23 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/19/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8de49bf17ef4505a54147720996c5725553088b5
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: 6070ed177ce599a4fbf37a683aed704f468ccacf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488750"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681084"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -41,7 +40,7 @@ ms.locfileid: "3488750"
 
 このチュートリアルを完了するには、ゴールデン コンフィギュレーション データベースとして管理されるデータベースに配置されている開発者環境が必要です。 少なくとも 1 つの標準 UAT 環境が展開されていることと、必要に応じて、実稼働環境が 1 つ以上必要です。
 
-開発環境は、ターゲット UAT 環境と同じ*アプリケーション バージョン*を実行している必要があります。 加えて、開発者環境の*プラットフォーム バージョン*は、ターゲット UAT 環境のプラットフォーム バージョン以前でなければなりません。
+開発環境は、ターゲット UAT 環境と同じ *アプリケーション バージョン* を実行している必要があります。 加えて、開発者環境の *プラットフォーム バージョン* は、ターゲット UAT 環境のプラットフォーム バージョン以前でなければなりません。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -61,7 +60,7 @@ ms.locfileid: "3488750"
 | ExchangeRateProviderConfigurationDetails.Value           | **総勘定元帳** &gt; **通貨** &gt; **為替レート プロバイダーを構成する** を選択します。 |
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは、データ インポート/エクスポート フレームワーク (DIXF) によって使用されます。 |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
+| HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー** タブの、**個人情報** グループで、**ID 番号** を選択します。 |
 | HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** ページ (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) に表示されていました。 |
 | SysEmailSMPTPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、アプリケーション オブジェクト サーバー (AOS) により内部で使用されています。 これは無視できます。 |
@@ -76,17 +75,7 @@ ms.locfileid: "3488750"
 
 ## <a name="create-a-copy-of-the-source-database"></a>ソース データベースのコピーを作成します。
 
-ソース SQL Server データベースをエクスポートする前に、データベース ユーザーを削除する必要があるため、そのデータベースのコピーを作成してください。 元のデータベースを修正する代わりに、コピーで作業することができます。 次のスクリプトは、既定の AxDB データベースをバックアップし、それを新しいインスタンス名に変更して同じインスタンスに復元します。 このスクリプトを使用するには、最初に D:\\backups のパスが存在することを確認します。
-
-```sql
-BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
-NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
-GO
-RESTORE DATABASE [AxDB_CopyForExport] FROM DISK = N'D:\Backups\axdb_golden.bak' WITH FILE = 1,
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_CopyForExport.mdf',
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForExport_Log.ldf',
-NOUNLOAD, STATS = 5
-```
+SSMS を使用してソース データベースをバックアップします。 ソース データベースを右クリックし、**タスク > バックアップ オプション** を選択します。  この作業が完了したら、SSMS ナビゲーション ウィンドウの **データベース** フォルダーを右クリックし、**データベースの復元** をクリックします。  作成したバックアップを選択しますが、ターゲット データベースには AXDB_CopyForExport などの新しい名前を付けます。   
 
 ## <a name="prepare-the-database"></a>データベースの準備
 
@@ -164,6 +153,9 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 前の手順で作成された .bacpac ファイルを、LCS プロジェクトの資産ライブラリ内の **データベースのバックアップ** セクションにアップロードします。 次に、インポートを開始します。 対象となる UAT 環境のデータベースは、ゴールデン構成データベースによって上書きされます。
 
+> [!NOTE]
+> 一部の要素は、データベースのインポート ステップの一部としてコピーされません。  ゴールデン コンフィギュレーションのシナリオでは、これはメール アドレスや印刷管理の設定などに影響を与えます。  これらの設定は、次の手順に従ってマスター データ移行の一部として実施し、ゴールデン コンフィギュレーション データベースには含めないことをお勧めします。
+
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
 ## <a name="perform-master-data-migration"></a>マスター データを移行します。
@@ -175,11 +167,11 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 ## <a name="copy-the-sandbox-database-to-production"></a>サンドボックス データベースを生産環境にコピーします。
 
-モック Go-Live または実際の Go-Live を行う準備ができたら、生産環境に UAT 環境をコピーすることができます。 このプロセスは、*切替*と呼ばれます。 実際の Go-Live には複数回切り替えることをお勧めします。 この方法では、Microsoft にコピー操作の実行を依頼する**生産へのサンドボックス** サービス要求を送信するステップを含む、プロセスの各ステップで詳細な時間見積を取得できます。
+モック Go-Live または実際の Go-Live を行う準備ができたら、生産環境に UAT 環境をコピーすることができます。 このプロセスは、*切替* と呼ばれます。 実際の Go-Live には複数回切り替えることをお勧めします。 このようにして、プロセスの各ステップの詳細な時間見積を取得できます。
 
-> [!NOTE]
-> 要求には実稼働環境へのコピーが含まれるので、**データベースを最新の情報に更新要求** タイプの要求を使用することはできません。
+実稼働環境の **環境タイプ** を決定し、それに応じて関連する手順を実行します。
 
+### <a name="microsoft-managed"></a>Microsoft 管理
 1. LCS のプロジェクト ホーム ページで、**サービス要求** を選択します。
 2. **サービス要求** ページで、**追加** を選択し、**サンドボックスから実稼働環境** を選択します。
 3. **サンドボックスから実稼働環境** ダイアログ ボックスで、次の手順に従います。
@@ -188,11 +180,21 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
     2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 4 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信することをお勧めします。
     3. 下部にあるチェック ボックスをオンにして、条項に同意します。
 
+### <a name="self-service"></a>セルフ サービス
+1. LCS で、実稼働環境の **完全な詳細** を開いて、**環境ページ** を読み込みます。
+2. **管理** メニューで、**データベースの移動** を選択します。
+3. 操作のオプションで、**データベースの更新** を選択します。
+4. **ソース環境** で、ゴールデン 構成があるサンドボックスを選択します。 このタイプの操作については、[データベースの更新ページ](database-refresh.md) にある重要な手順に注意してください。
+5. 操作が運用データベースを上書きすることを理解していることを確認するには、このチェック ボックスをオンにします。 要求を送信すると工程がすぐに開始されます。
+
+> [!IMPORTANT]
+> データベースの更新ごとに、復元ポイントの **ポイントインタイム復元** チェーンをリセットする新しいデータベースが作成されます。
+
 ## <a name="reconfigure-environment-specific-settings"></a>環境の固有の設定を変更
 
-更新が完了した後、LCS で**サインオフ** ボタンを使用し、操作を閉じます。 その後、環境固有の設定のコンフィギュレーションを開始できます。
+更新が完了した後、LCS で **サインオフ** ボタンを使用し、操作を閉じます。 その後、環境固有の設定のコンフィギュレーションを開始できます。
 
-まず、環境にログインします。LCS の**環境の詳細**ページにある管理者アカウントを使用します。 再設定の標準的な領域をいくつか次に示します。 設定およびインストールされている独立系ソフトウェア ベンダー (ISV) ソリューションによっては、追加の再設定が必要です。
+まず、環境にログインします。LCS の **環境の詳細** ページにある管理者アカウントを使用します。 再設定の標準的な領域をいくつか次に示します。 設定およびインストールされている独立系ソフトウェア ベンダー (ISV) ソリューションによっては、追加の再設定が必要です。
 
 * **システム管理**\>**設定**\>**バッチ グループ:** 必要なバッチ サーバー グループにさまざまな AOS インスタンスを追加します。
 * **システム管理**\>**設定**\>**エンティティ店舗:** Microsoft Power BI レポートに必要なさまざまなエンティティを更新します。

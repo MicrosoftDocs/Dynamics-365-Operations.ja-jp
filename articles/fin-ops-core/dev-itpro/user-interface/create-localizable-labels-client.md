@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 18531
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
 ms.search.region: Global
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05ba812cc76a7c5c1e90f41f85863626ade28247
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: a0a59b5ced986f3eb7e84a9b7304762c83a67c11
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329927"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687625"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 
@@ -30,7 +29,7 @@ ms.locfileid: "3329927"
 
 この記事では、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ可能なラベルを作成する方法について説明します。
 
-この記事では、クライアント コンポーネントと HTML/JavaScript コントロールの**ローカライズ可能な**ラベルを作成するプロセスについて詳しく説明します。 このプロセスでは、既存のローカライズ ツールとラベル用のプロセスを使用して、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ  サポートを提供します。 次のプロセスでは、クライアント コンポーネントと HTML/JavaScript コントロールでラベルを使用できるように、ラベル ファイルを JavaScript に相当するものにシリアル化できるラベル リソース コントローラーが使用されています。 ラベル リソース コントローラーは自動的に配置されます。 /Resources/Labels エンドポイントに配置されている MVC サービスです。
+この記事では、クライアント コンポーネントと HTML/JavaScript コントロールの **ローカライズ可能な** ラベルを作成するプロセスについて詳しく説明します。 このプロセスでは、既存のローカライズ ツールとラベル用のプロセスを使用して、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ  サポートを提供します。 次のプロセスでは、クライアント コンポーネントと HTML/JavaScript コントロールでラベルを使用できるように、ラベル ファイルを JavaScript に相当するものにシリアル化できるラベル リソース コントローラーが使用されています。 ラベル リソース コントローラーは自動的に配置されます。 /Resources/Labels エンドポイントに配置されている MVC サービスです。
 
 ## <a name="1-create-a-label-file"></a>1. ラベル ファイルの作成
 開発者ツールを使用して、コントロールの領域に新しいラベル ファイルを作成するか、コントロールの領域に既存のラベル ファイルを使用します。 コントロールの領域は、チームによって決定されます。
@@ -64,7 +63,7 @@ Globalize.addCultureInfo("en-us", {
 });
 ```
 
-カルチャ情報は、現在のユーザーのカルチャに基づいて自動的に挿入されます。 コントロールの部分でユーザーのカルチャの設定、変更、読み取りに必要なアクションはありません。 上記のコードは、jQuery Globalize ラベル記憶域に各ラベル文字列を追加します。 HTML と JavaScript 全体でラベルを参照することができます。 スクリプト ファイルにある JavaScript コードは、ブラウザーによってファイルが読み込まれた時点で実行されます。 したがって、ラベルはすぐに使用できる状態になります。 HTML に他のスクリプト読み込みタグの**後**、ラベルスクリプトの読み込みタグを必ず追加してください。 スクリプト読み込みタグは、上から順に処理されます。 最後にラベル スクリプトを読み込むことによって、他のスクリプトが競合を起こさないようにするか、スクリプト ラベル ファイルに設定されているラベルを上書きすることができます。
+カルチャ情報は、現在のユーザーのカルチャに基づいて自動的に挿入されます。 コントロールの部分でユーザーのカルチャの設定、変更、読み取りに必要なアクションはありません。 上記のコードは、jQuery Globalize ラベル記憶域に各ラベル文字列を追加します。 HTML と JavaScript 全体でラベルを参照することができます。 スクリプト ファイルにある JavaScript コードは、ブラウザーによってファイルが読み込まれた時点で実行されます。 したがって、ラベルはすぐに使用できる状態になります。 HTML に他のスクリプト読み込みタグの **後**、ラベルスクリプトの読み込みタグを必ず追加してください。 スクリプト読み込みタグは、上から順に処理されます。 最後にラベル スクリプトを読み込むことによって、他のスクリプトが競合を起こさないようにするか、スクリプト ラベル ファイルに設定されているラベルを上書きすることができます。
 
 ## <a name="4-use-localizable-labels-in-html-and-javascript"></a>4. HTML と JavaScript でローカライズ可能なラベルを使用する
 次のフレームワーク アプリケーション プログラミング インターフェイス (API) は、HTML (内部 **data-dyn-bind**) または JavaScript でラベルにアクセスするために使用できます。 **HTML**
@@ -100,9 +99,9 @@ var string mylabel = $dyn.label(self.SecondsLabel);
 ## <a name="troubleshooting"></a>トラブルシューティング
 ラベル ファイルが正しく作成され、そのラベルが展開されている場合は、ブラウザから直接、ラベルファイルの JavaScript バージョンを読み込むことができます。 JavaScript のラベル ファイルには、クライアントのホーム ページに移動して、URL にパス **/Resources/Labels/MyLabelFile.js** を加えてアクセスすることができます。ここで **MyLabelFile** は言語の接尾語なしのラベル ファイル名です。 MyLabelFile.en-us という名前の配置されたラベル ファイルのについては、これらの手順に従います。
 
-1. ホーム ページに移動して、サインインします。 (ワン ボックス配置では、ホーム ページの URL は<https://usncax1aos.cloud.onebox.dynamics.com/en/> です。)
-2. 目的の言語が**オプション** &gt; **言語および地域**で設定されていることを確認します。 (目的の言語に設定されている場合は言語を変更する必要はありません。) ユーザーの言語が現在のセッションで設定されたので、ラベル リソース コントローラーは、ラベル ファイルが読み込まれるときに使用する言語を認識します。
-3. JavaScript バージョンのラベル ファイルを読み込むには、<strong>Resources/Labels/MyLabelFile.js</strong> を URL に追加してラベル ファイルに移動します。 (ワン ボックス配置では、全体の URL は<https://usncax1aos.cloud.onebox.dynamics.com/en/Resources/Labels/MyLabelFile.js> です。)
+1. ホーム ページに移動して、サインインします。 (ワン ボックス配置では、ホーム ページの URL は`https://usncax1aos.cloud.onebox.dynamics.com/en/` です。)
+2. 目的の言語が **オプション** &gt; **言語および地域** で設定されていることを確認します。 (目的の言語に設定されている場合は言語を変更する必要はありません。) ユーザーの言語が現在のセッションで設定されたので、ラベル リソース コントローラーは、ラベル ファイルが読み込まれるときに使用する言語を認識します。
+3. JavaScript バージョンのラベル ファイルを読み込むには、<strong>Resources/Labels/MyLabelFile.js</strong> を URL に追加してラベル ファイルに移動します。 (ワン ボックス配置では、全体の URL は`https://usncax1aos.cloud.onebox.dynamics.com/en/Resources/Labels/MyLabelFile.js` です。)
 4. 対応するラベル ファイルは JSON シリアル化され、ブラウザーは現在のタブにテキストを表示するか、.js ファイルのダウンロードを促すメッセージを表示します。 ファイルをダウンロードする場合、ローカルでそれを開き、検査できます。
 
 ブラウザーにファイルが見つからない場合は、ラベルの名前を誤って入力した、またはラベルを正しく展開しなかった可能性があります。 Web フォルダー/リソース/ラベルのラベルに物理的な .js ファイルはありません。 .js ファイルは、ラベル リソース コントローラーによって動的に生成されます。

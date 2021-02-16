@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 27561
 ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fc8de17bfa9dc17fa195679a88ccabae0131c18
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0458dafd76587c0ce1792daa575679fbcb98f2ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003594"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685025"
 ---
 # <a name="separation-of-localization-models"></a>ローカライズ モデルの分離
 

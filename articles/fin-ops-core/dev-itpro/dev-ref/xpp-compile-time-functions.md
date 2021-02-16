@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 29581
 ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72bec5a120a4b05d5f1fff5c3e736e44c0652fe6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: d10ee2709f9bb94e63b4b4f3ff95804327d2af60
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386120"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408749"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 
@@ -1146,7 +1145,7 @@ date maxDate()
 
 ### <a name="return-value"></a>戻り値
 
-**日付** の変数に使用できる最大値は、**2154-12-31**です。
+**日付** の変数に使用できる最大値は、**2154-12-31** です。
 
 ### <a name="remarks"></a>備考
 

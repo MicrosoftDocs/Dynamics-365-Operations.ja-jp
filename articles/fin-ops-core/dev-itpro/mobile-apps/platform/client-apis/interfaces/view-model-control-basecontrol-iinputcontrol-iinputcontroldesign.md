@@ -1,7 +1,7 @@
 ---
 title: InputControlDesign タイプ
 description: 入力コントロール デザイン。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e0e1fd99d7eeebb15e02b6d0be6d9ce6e5bb8297
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 748d22ca5517f49a8ee8a847278f41664ef3d7ff
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191862"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688507"
 ---
 # <a name="inputcontroldesign-type"></a>InputControlDesign タイプ
 
@@ -120,7 +119,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承

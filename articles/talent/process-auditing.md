@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 ms.openlocfilehash: c009f82e69bff0e4ea540514de8f9e60eca1e466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006358"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461799"
 ---
 # <a name="track-changes-in-recruiting-data"></a>採用データの変更の追跡
 
@@ -35,9 +35,9 @@ OData コネクタを使用して、Power BI で追跡データを表示でき�
 
 1. [Power Apps](https://web.powerapps.com) で、適切な環境を選択します。
 
-2. **設定** (ギア アイコン) を選択し、**高度なカスタマイズ**を選択して、**開発者リソース**の下で**リソース**を選択します。 
+2. **設定** (ギア アイコン) を選択し、**高度なカスタマイズ** を選択して、**開発者リソース** の下で **リソース** を選択します。 
 
-3. **開発者リソース**ページで、**インスタンス Web API 値**フィールドをコピーします。 たとえば、値は次のようになります : https://yourorgname.api.crm.dynamics.com/api/data/v9.1/。
+3. **開発者リソース** ページで、**インスタンス Web API 値** フィールドをコピーします。 たとえば、値は次のようになります : https://yourorgname.api.crm.dynamics.com/api/data/v9.1/。
 
 4. その後、次のいずれかのエンティティからデータを照会できます。
   - ジョブ開始履歴 (msdyn_jobopeninghistories)

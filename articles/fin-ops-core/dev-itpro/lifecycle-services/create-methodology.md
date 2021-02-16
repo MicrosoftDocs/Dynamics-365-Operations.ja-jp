@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 266824
 ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f356bd83d35c4e4be648524af2b9ec7fcaf81c46
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: af17a07aa5e079cc69a807a886179953d9f2afb2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117414"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687916"
 ---
 # <a name="create-or-update-methodologies"></a>方法の作成または更新
 
@@ -45,13 +44,13 @@ Microsoft Dynamics の Lifecycle Services (LCS) は、より反復可能で予�
 パートナーまたはプロジェクト管理者は、新しい方法を作成するか、自身の組織または特定のプロジェクトの範囲内の既存の方法を変更を加えることができます。 これらの追加および変更は、プロジェクト レベルまたは組織レベルで行うことができます。 新しい方法を作成して保存し、既存の方法を更新し、必要に応じて組織レベルに新しい方法を取り入れたり方法を変更するには、次の手順を使用ます。
 
 ### <a name="create-a-new-methodology"></a>新しい方法の作成
-1.  Lifecycle Services ダッシュ ボードで、画面の右側の、**方法の管理**をクリックします。
+1.  Lifecycle Services ダッシュ ボードで、画面の右側の、**方法の管理** をクリックします。
 2.  **方法の管理**ページで、プラス記号 (+) をクリックします。
-3.  **新しい方法**ウィンドウに、新しい方法の名前および説明を入力します。 **確定** をクリックします。
-4.  **オプション:** 方法を確認した後、グリッド内の方法、および**昇格**を選択して、組織レベルに昇格できます。 [![promotemethodology](./media/promotemethodology-1024x506.jpg)](./media/promotemethodology.jpg)**注記:** 組織レベルに方法を昇格させるには、組織の管理者でなければなりません。
+3.  **新しい方法** ウィンドウに、新しい方法の名前および説明を入力します。 **確定** をクリックします。
+4.  **オプション:** 方法を確認した後、グリッド内の方法、および **昇格** を選択して、組織レベルに昇格できます。 [![promotemethodology](./media/promotemethodology-1024x506.jpg)](./media/promotemethodology.jpg)**注記:** 組織レベルに方法を昇格させるには、組織の管理者でなければなりません。
 
 ### <a name="change-or-update-a-methodology"></a>方法の変更または更新
-方法論を変更するには 2 つの方法があります。 既存の方法を追加するか、プロジェクトの範囲内で方法に変更を加えることができます。 LCSプロジェクト ダッシュ ボードから更新する方法を選択し、**方法の編集**または**方法の追加**を選択します。 [![projectlevelmethodology](./media/projectlevelmethodology-1024x494.jpg)](./media/projectlevelmethodology.jpg) 方法を編集することを選択した場合は、次の変更を行うことができます。
+方法論を変更するには 2 つの方法があります。 既存の方法を追加するか、プロジェクトの範囲内で方法に変更を加えることができます。 LCSプロジェクト ダッシュ ボードから更新する方法を選択し、**方法の編集** または **方法の追加** を選択します。 [![projectlevelmethodology](./media/projectlevelmethodology-1024x494.jpg)](./media/projectlevelmethodology.jpg) 方法を編集することを選択した場合は、次の変更を行うことができます。
 
 -   新しいフェーズを追加します。
 -   新しいタスクを追加します。

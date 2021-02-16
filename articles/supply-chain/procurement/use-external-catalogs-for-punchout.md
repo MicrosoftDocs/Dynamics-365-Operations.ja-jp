@@ -1,5 +1,5 @@
 ---
-title: パンチアウト eProcurement の外部カタログの使用
+title: パンチアウト e-procurement の外部カタログの使用
 description: このトピックでは、外部カタログを使用して要求を作成し送信する方法について説明します。
 author: mkirknel
 manager: tfehr
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchVendorPortalRequests
+ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f7a784e6a66c0c2df9043468e9878de161c3be0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cccd3517f31a82e502052f100e44322ac4cb344f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207419"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432385"
 ---
-# <a name="use-external-catalogs-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの使用
+# <a name="use-external-catalogs-for-punchout-e-procurement"></a>パンチアウト e-procurement の外部カタログの使用
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,3 +50,8 @@ ms.locfileid: "3207419"
 明細行が要求に追加されると、外部カタログを使用せずにさらに明細行を追加することができます。 または、外部カタログを使用して明細行の追加を続行することができます。
 
 要求が準備できたら、**ワークフロー** > **送信** アクションを使用して承認のためにその要求を送信します。
+
+### <a name="additional-resources"></a>追加リソース
+
+- [パンチアウト e-procurement の外部カタログの設定](set-up-external-catalog-for-punchout.md)
+- [cXML の拡張機能の購入](purchasing-cxml-enhancements.md)

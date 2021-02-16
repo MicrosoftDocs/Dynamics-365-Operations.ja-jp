@@ -1,7 +1,7 @@
 ---
 title: SysAppWorkspace クラスを使用してワークスペースを構成する
 description: このトピックでは、SysAppWorkspace クラスを使用してサーバー上のワークスペースを構成および公開する方法について説明します。
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 0cdc956a07f4169de5ae2a75aec523160b464590
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: e26dd987994837c5ffafc79cda8a5e272669f4ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570540"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688005"
 ---
 # <a name="configure-workspaces-by-using-the-sysappworkspace-class"></a>SysAppWorkspace クラスを使用してワークスペースを構成する
 
@@ -32,7 +31,7 @@ ms.locfileid: "2570540"
 
 - **ワークスペースの属性** - これはモバイルワークスペースを構築するために、ページ、タスク、エンティティ、ルックアップ、リレーションシップの作成に使用されます。 
     - フリート管理のモバイル アプリのサンプル プロジェクトをダウンロードします。 これは、[Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) で発見された .axpp ファイルです。
-    - ファイルをダウンロードした後、運用開発環境で Visual Studio を開き、**Dynamics 365 > Import Project** を選び、ダウンロードされたプロジェクト ファイルを参照します。 同じダイアログ ボックスで、**上書き**を選び、**新しいソリューションの作成**を選択します。 インポートが完了したら、ソリューションをビルドします (または、フリート管理 モデルをビルドします)。 
+    - ファイルをダウンロードした後、運用開発環境で Visual Studio を開き、**Dynamics 365 > Import Project** を選び、ダウンロードされたプロジェクト ファイルを参照します。 同じダイアログ ボックスで、**上書き** を選び、**新しいソリューションの作成** を選択します。 インポートが完了したら、ソリューションをビルドします (または、フリート管理 モデルをビルドします)。 
     - 例を確認するには、まず FMReservationManagementWorkspace クラスを確認し、ワークスペースに含まれるすべてのページとアクションを表示します。 ソリューション エクスプローラーを使用して、ページとタスク クラス、およびそれらに含まれるすべての資産を検索します。 各 API の詳細については、API リファレンスを参照してください。
     - モバイル ワークスペースは、X + + 属性 APIs またはその両方の組み合わせを使用して、デザイナー ウィンドウから作成できます。 デザイナーから AOT にモバイル アプリのメタデータをインポートする方法については、この後の「ワークスペース クラスを使用して AOT リソースからワークスペースを発行」を参照してください。 サンプル プロジェクトのフリート管理モバイル アプリは、X + + 属性 APIs を使用して作成された完全なモバイル アプリです。
 

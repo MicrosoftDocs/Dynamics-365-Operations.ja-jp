@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5fc7e88451c4d9a915743babb8ec8f96f002e91
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c0a1ebd51830766332929792ddc0256ab15f5b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211816"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432137"
 ---
 # <a name="project-attached-to-service-agreement"></a>サービス合意に関連付けられたプロジェクト 
 
 [!include [banner](../includes/banner.md)]
 
 
-サービス合意は、**時間プロジェクト**タイプ以外のすべてのタイプのプロジェクトに関連付けることができます。
+サービス合意は、**時間プロジェクト** タイプ以外のすべてのタイプのプロジェクトに関連付けることができます。
 
-すべてのサービス注文トランザクションの登録および転記は、サービス合意に関連付けられているプロジェクトを介して行います。 これらのトランザクションを登録および転記する仕訳帳は、**サービス管理パラメーター**フォームの**仕訳帳**リンクで指定します。
+すべてのサービス注文トランザクションの登録および転記は、サービス合意に関連付けられているプロジェクトを介して行います。 これらのトランザクションを登録および転記する仕訳帳は、**サービス管理パラメーター** フォームの **仕訳帳** リンクで指定します。
 
   
 

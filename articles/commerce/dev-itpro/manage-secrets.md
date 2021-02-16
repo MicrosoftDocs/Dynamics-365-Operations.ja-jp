@@ -1,33 +1,32 @@
 ---
 title: 小売チャンネルのシークレットを管理
-description: このトピックでは、チャネル データベースを拡張する方法について説明します。
+description: このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 133d415a8cc1ac1230c8bbe362b858e42ea2ea82
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: dc1bcf2290d20c1126ef6ea7b6a8fbeb50720057
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004565"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685369"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
+このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。 拡張機能では、カスタム証明書を Commerce Scale Unit に配置したり、拇印やシークレットを web.config ファイルに追加することはできません。 シークレットを管理するための推奨される方法は、このトピックで説明したように、Azure Key Vault を使用する方法です。
 
 ## <a name="key-vault-setup"></a>Key Vault の設定
 
@@ -43,8 +42,8 @@ ms.locfileid: "3004565"
 
     1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
     2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](https://docs.microsoft.com/azure/key-vault/key-vault-overview) を参照してください。
-    3. **Key Vault パラメーター**ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
-    4. **Key Vault パラメーター**ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
+    3. **Key Vault パラメーター** ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
+    4. **Key Vault パラメーター** ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
 
 ## <a name="consume-the-secret-in-the-crt-extension"></a>CRT 拡張機能のシークレットの使用
 
@@ -85,11 +84,18 @@ CRT 拡張機能のシークレットを読み取るには、次の手順を実�
             if (requestedType == typeof(SaveCartRequest))
             {
                 // Sample code to get the secret in string format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
-                string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
-                // Sample code to get the secret in X509Certificate2 format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest ();
-                X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+               
+                string result = null;
+                   
+                GetUserDefinedSecretStringValueServiceRequest keyVaultRequest = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+                GetUserDefinedSecretStringValueServiceResponse keyVaultResponse = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(keyVaultRequest);
+                result = keyVaultResponse.SecretStringValue;
+
+                 GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: null, secretName: "SecretName", thumbprint: null, expirationInterval: null);
+                 GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+
+                X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+               
                 // custom code to additional processing with secrets.
             }
         }

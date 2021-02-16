@@ -1,7 +1,7 @@
 ---
 title: 支払コネクタ用の Windows インストーラーの作成
 description: このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。
-author: sericks007
+author: RobinARH
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 141573
 ms.assetid: 045bb979-989f-4f72-9eb1-6b963680b65e
 ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1bd2673b9ceb34e46ad1049c743df2ebdc1175f6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: dd0490d0482a1f58a4a98c074651c86d9980ed9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004589"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683352"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 

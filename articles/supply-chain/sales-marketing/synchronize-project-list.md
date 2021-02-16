@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
 ms.openlocfilehash: d80fce409ee92973a6134d96ce839b9722980918
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215933"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431631"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service へのプロジェクト リストの同期
 
@@ -52,10 +52,10 @@ ms.locfileid: "3215933"
 |msdynce_externalprojects | プロジェクト                |
 
 ## <a name="entity-flow"></a>エンティティのフロー
-プロジェクトは Supply Chain Management で作成されます。 **プロジェクト タイプ**を**時間、原材料**に、および**プロジェクト ステージ**を**処理中**に設定されたプロジェクトは、プロジェクト番号、プロジェクト名、プロジェクト ステージおよび顧客口座情報を含め、Field Service の**外部プロジェクト** エンティティに同期されます。 **外部プロジェクト**のリストは、Field Service のワーク オーダーと Supply Chain Management のプロジェクトをペアリングするために使用されます。
+プロジェクトは Supply Chain Management で作成されます。 **プロジェクト タイプ** を **時間、原材料** に、および **プロジェクト ステージ** を **処理中** に設定されたプロジェクトは、プロジェクト番号、プロジェクト名、プロジェクト ステージおよび顧客口座情報を含め、Field Service の **外部プロジェクト** エンティティに同期されます。 **外部プロジェクト** のリストは、Field Service のワーク オーダーと Supply Chain Management のプロジェクトをペアリングするために使用されます。
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
-**外部プロジェクト** エンティティは、Supply Chain Management からすべてのプロジェクトを取得します。 **外部プロジェクト** フィールドが、**ワーク オーダー** エンティティに追加されました。 これはルックアップ フィールドであるため、ワーク オーダーがプロジェクトにタグ付けられ、販売注文は Supply Chain Management によりプロジェクトに関連付けられます。 **システム ステータス**が**オープン – 処理中 (690,970,000)** から上位のステータスへ変更した後、**外部プロジェクト** フィールドはロックされ、値の追加、削除、また変更はできなくなります。
+**外部プロジェクト** エンティティは、Supply Chain Management からすべてのプロジェクトを取得します。 **外部プロジェクト** フィールドが、**ワーク オーダー** エンティティに追加されました。 これはルックアップ フィールドであるため、ワーク オーダーがプロジェクトにタグ付けられ、販売注文は Supply Chain Management によりプロジェクトに関連付けられます。 **システム ステータス** が **オープン – 処理中 (690,970,000)** から上位のステータスへ変更した後、**外部プロジェクト** フィールドはロックされ、値の追加、削除、また変更はできなくなります。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 ### <a name="supply-chain-management"></a>サプライ チェーン マネジメント

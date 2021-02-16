@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e7e3f37d759953b7b4f70fe9eae78154da44d1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8617785ea969f9f4facaccdf81cfaf5344c30839
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178609"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445098"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>基準金額および計算方法に基づいた、売上税の税率
 
@@ -161,7 +161,7 @@ ms.locfileid: "2178609"
 | 50 ～ 100           | 20%      |
 | 100 - 0 (&gt; 100) | 10%      |
 
-基準金額: **単位ごとの総額**ランプにはそれぞれ 5.00 の特別税が課せられます。 この関税は、売上税が計算される前に正味金額に加算されます。 1 つ 25.00 のランプを 8 つ購入します。 単位ごとの総額は 30.00 です。 税は次のように計算されます: 単位ごとの売上税 = 30 x 30% = 9.00 売上税の合計 = 9.00 x 8 = 72.00 関税の合計 = 5.00 x 8 = 40.00 合計請求金額 = 200.00 + 72.00 + 40.00 = 312.00
+基準金額: **単位ごとの総額** ランプにはそれぞれ 5.00 の特別税が課せられます。 この関税は、売上税が計算される前に正味金額に加算されます。 1 つ 25.00 のランプを 8 つ購入します。 単位ごとの総額は 30.00 です。 税は次のように計算されます: 単位ごとの売上税 = 30 x 30% = 9.00 売上税の合計 = 9.00 x 8 = 72.00 関税の合計 = 5.00 x 8 = 40.00 合計請求金額 = 200.00 + 72.00 + 40.00 = 312.00
 
 ## <a name="invoice-total-incl-other-sales-tax-amounts"></a>請求合計には他の売上税金額が含まれています
 

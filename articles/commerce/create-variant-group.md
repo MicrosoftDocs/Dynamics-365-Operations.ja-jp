@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
+ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b9acd41c000b22e6c74b0d636a7f58917e4b5ac5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5d9279e1076796bb455429e5ff004c89ec5829e7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413751"
 ---
 # <a name="create-a-variant-group"></a>バリアント グループの作成
 
@@ -41,25 +42,25 @@ Dynamics 365 Commerce は、製品に対して複数のバリアントをサポ�
 
 サイズ グループを作成するには、次の手順に従います。
  
-1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 製品とカテゴリ \> バリアント グループ \> サイズ グループ**の順に移動します。
-1. アクション ウィンドウで、**新規**を選択します。
+1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 製品とカテゴリ \> バリアント グループ \> サイズ グループ** の順に移動します。
+1. アクション ウィンドウで、**新規** を選択します。
 1. **サイズ グループ** ボックスで、サイズ グループの名前を入力します。
-1. **説明**ボックスに、適切な説明を入力します。
-1. アクション ウィンドウで、**保存**を選択します。
+1. **説明** ボックスに、適切な説明を入力します。
+1. アクション ウィンドウで、**保存** を選択します。
 
 ## <a name="add-attributes-to-the-size-group"></a>サイズ グループへの属性の追加
 
 サイズ グループに属性を追加するには、次の手順に従います。
 
-1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 製品とカテゴリ \> バリアント グループ \> サイズ グループ**の順に移動
+1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> 製品とカテゴリ \> バリアント グループ \> サイズ グループ** の順に移動
 1. ナビゲーション ウィンドウで、サイズ グループを選択します。
-1. **サイズ グループ明細行**の下で、**追加**を選択します。
+1. **サイズ グループ明細行** の下で、**追加** を選択します。
 1. **サイズ** ボックスで、サイズを表す文字列を入力します (たとえば、「XL」)。
-1. **サイズ名**ボックスで、サイズの名前を入力します (たとえば、「特大」)。
-1. **補充重量**ボックスに、補充重量を表す番号を入力します。
-1. **バーコードの番号**ボックスに、バーコードを表す番号を入力します。
-1. **表示順序**ボックスに、表示順序を表す番号を入力します。
-1. サイズの追加が完了したら、アクション ウィンドウの**保存**を選択します。
+1. **サイズ名** ボックスで、サイズの名前を入力します (たとえば、「特大」)。
+1. **補充重量** ボックスに、補充重量を表す番号を入力します。
+1. **バーコードの番号** ボックスに、バーコードを表す番号を入力します。
+1. **表示順序** ボックスに、表示順序を表す番号を入力します。
+1. サイズの追加が完了したら、アクション ウィンドウの **保存** を選択します。
 
 次の図は、「カジュアル シャツのサイズ」のサイズ グループの例を示しています。
 

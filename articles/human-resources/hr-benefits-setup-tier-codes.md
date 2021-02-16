@@ -19,17 +19,17 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 3245b4265e51ad87419786c01fad578d743f2c06
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419362"
 ---
 # <a name="set-up-tier-codes"></a>層コードの設定
 
 Dynamics 365 Human Resources では、従業員と雇用主によって支払われる給付金レートと共に階層コードが使用されます。 無制限の数の階層コードを定義し、会社のニーズに合うようにレート計算を設定できます。
 
-1. **給付金管理**ワーク スペースの**設定**で、**階層コード**を選択します。
+1. **給付金管理** ワーク スペースの **設定** で、**階層コード** を選択します。
 
 2. **新規** を選択します。
 

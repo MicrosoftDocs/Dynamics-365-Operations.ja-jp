@@ -3,7 +3,7 @@ title: 価格調整および割引
 description: この記事は、Dynamics 365 Commerce における価格調整および割引についての情報を提供します。
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023209"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584318"
 ---
 # <a name="price-adjustments-and-discounts"></a>価格調整および割引
 
@@ -41,11 +41,13 @@ ms.locfileid: "3023209"
 
 ## <a name="types-of-discounts"></a>割引タイプ
 
-割引には次の 4 タイプがあります。
+割引には多くのタイプがあります。
 
 - **単純割引** – 単一のパーセントまたは量。
 - **数量割引** – 複数の製品を購入するときに適用される割引。
 - **組み合わせ割引** – 顧客が特定の製品の組み合わせを購入した場合に提供される割引。
 - **しきい値割引** – トランザクションの合計が指定金額より大きいときに適用される割引。
+- **支払/入金ベースの割引** – トランザクションの合計が指定した金額を超えて、特定の支払タイプ (現金、貸方、またはデビット カードなど) が支払に使用された場合に適用される割引。
+- **送料割引** – トランザクションの合計が指定した金額を超えて、特定の荷渡方法 (出荷または一括出荷) が注文で使用される場合に適用される割引。
 
 価格調整と割引のどちらも、価格グループと関連付けることができます。 価格グループは、チャンネル、カタログ、加盟者およびロイヤルティ プログラムに関連付けることができます。

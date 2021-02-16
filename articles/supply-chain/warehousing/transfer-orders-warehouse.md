@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa5786df72f87da992f1020bbaaa1c2185adf043
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216715"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432345"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>移動オーダー用の倉庫の設定 
 
@@ -32,9 +33,9 @@ ms.locfileid: "3216715"
 
 2.  補充する倉庫を選択します。
 
-3.  **マスター プラン** クイック タブで、**補充**チェック ボックスを選択します。
+3.  **マスター プラン** クイック タブで、**補充** チェック ボックスを選択します。
 
-4.  **主要倉庫**フィールドで、補充倉庫として割り当てる倉庫を選択します。 マスタ スケジューリングは選択した倉庫の移動要求を計算し、割り当てられた**主要倉庫**から計画移動オーダーを生成します。
+4.  **主要倉庫** フィールドで、補充倉庫として割り当てる倉庫を選択します。 マスタ スケジューリングは選択した倉庫の移動要求を計算し、割り当てられた **主要倉庫** から計画移動オーダーを生成します。
    
     > [!NOTE]
     > <P><STRONG>補充</STRONG>チェックボックスをオフにすると、<STRONG>主要倉庫</STRONG>に関連する倉庫レベルが選択した倉庫に割り当てられますが、<STRONG>主要倉庫</STRONG>は補充倉庫として設定されません。</P>
@@ -47,8 +48,8 @@ ms.locfileid: "3216715"
 
 ## <a name="set-up-transport-lead-time"></a>配送のリード タイムの設定
 
-**配送日数**ページの倉庫間で配送のリード タイムを設定することも必要です。 
-1. **在庫管理 > 設定 > 配分 > 配送日数**に移動します。
-2. **入荷場所**フィールドで、**倉庫**を選択します。
-3. **出荷倉庫**、**入荷倉庫**、および**配送日数**を選択します。 
-4. (オプション) 荷渡方法によっては、**荷渡方法ごとの配送日数**タブで配送時間を設定することもできます。
+**配送日数** ページの倉庫間で配送のリード タイムを設定することも必要です。 
+1. **在庫管理 > 設定 > 配分 > 配送日数** に移動します。
+2. **入荷場所** フィールドで、**倉庫** を選択します。
+3. **出荷倉庫**、**入荷倉庫**、および **配送日数** を選択します。 
+4. (オプション) 荷渡方法によっては、**荷渡方法ごとの配送日数** タブで配送時間を設定することもできます。

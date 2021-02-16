@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d119ab23c0b2bfc668131cd5b354b709d8045afb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 4ba02e3c82593e44c0e516a3029b734ecb431b4b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026203"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685449"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -48,11 +47,11 @@ AD FS および Finance + Operations 間で認証を正常に交換するため�
 1.  アプリケーションのエントリを作成する Windows PowerShell コンソールに、次のコマンドを入力します。  
 
     ```powershell
-    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
     ```
 
-    - \<リソース URL\> は、たとえば `https://ax.d365ffo.onprem.contoso.com` などです (`https://ax.d365ffo.onprem.contoso.com` は、Finance + Operations にアクセスするための URL です)。
-    - \<管理者ユーザー\> は、AD FS コンピューターへの管理者のアクセス権を持つ任意のユーザーにすることができます。
+    - \<Resource URL\> は、たとえば `https://ax.d365ffo.onprem.contoso.com` などです (`https://ax.d365ffo.onprem.contoso.com` は、Finance + Operations にアクセスするための URL です)。
+    - \<Admin user\> は、AD FS マシンへの管理者アクセスを持つ任意のユーザーにすることができます。
 
 2.  受信した値を保存します。
 
@@ -68,7 +67,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
 
 1.  Finance + Operations でユーザーを作成し、倉庫管理モバイル デバイス ユーザー ロールをユーザーに割り当てます。
 
-    a.  **システム管理** \> **共通** \> **ユーザー**の順に移動します。
+    a.  **システム管理** \> **共通** \> **ユーザー** の順に移動します。
     
     b.  新規ユーザーを作成します。
     
@@ -78,7 +77,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
 
 2.  AD FS アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
 
-    a.  Finance + Operations で、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション**をクリックします。
+    a.  Finance + Operations で、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** をクリックします。
     
     b.  新しい行を作成します。
     
@@ -94,7 +93,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
 
 AD FS アプリケーションを使用してサーバーに接続するには、デバイス上で倉庫管理アプリを設定する必要があります。
 
-1.  アプリで**接続設定**を開きます。
+1.  アプリで **接続設定** を開きます。
 2.  次の情報を入力します。
 
     a.  **Active Directory クライアント ID** - AD FS でアプリケーション エントリを作成したときに取得したクライアント ID (「AD FS でのアプリケーション エントリの作成」の手順 2)。

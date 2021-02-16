@@ -1,7 +1,7 @@
 ---
 title: 新規ユーザーの作成
 description: ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。
-author: maertenm
+author: peakerbl
 manager: AnnBe
 ms.date: 06/08/2020
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: maertenm
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
-ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
+ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435587"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679843"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 
@@ -38,21 +37,21 @@ ms.locfileid: "3435587"
 環境が配置されたテナントの外部ユーザーは、ライセンスを割り当てることができるように、ホスト テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示されている必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) を参照してください。
 
 ## <a name="add-a-new-user"></a>新しいユーザーを追加する
-1. **システム管理 \> ユーザー \> ユーザー**の順に移動します。
-2. アクション ウィンドウで、**新規**を選択します。
+1. **システム管理 \> ユーザー \> ユーザー** の順に移動します。
+2. アクション ウィンドウで、**新規** を選択します。
 3. **ユーザー ID** フィールドに、ユーザーの固有 ID を入力します。 ユーザー ID が必要です。  
-4. **ユーザー名**フィールドに、ユーザー名を入力します。  
-5. **ドメイン**フィールドに、ユーザーのドメインを入力します。  
-6. **エイリアス**フィールドに、ユーザーのエイリアスを入力します。  
-7. **法人**フィールドで、目的の会社を選択します。 
-8. **ユーザーのロール** クイック タブで、**ロールの割り当て**を選択し、ユーザーをセキュリティ ロールに割り当てます。 詳細については、[ユーザーのセキュリティ ロールへの割り当て](assign-users-security-roles.md) を参照してください。
+4. **ユーザー名** フィールドに、ユーザー名を入力します。  
+5. **ドメイン** フィールドに、ユーザーのドメインを入力します。  
+6. **エイリアス** フィールドに、ユーザーのエイリアスを入力します。  
+7. **法人** フィールドで、目的の会社を選択します。 
+8. **ユーザーのロール** クイック タブで、**ロールの割り当て** を選択し、ユーザーをセキュリティ ロールに割り当てます。 詳細については、[ユーザーのセキュリティ ロールへの割り当て](assign-users-security-roles.md) を参照してください。
 9. **OK** を選択します。
 10. **保存** を選択します。
 
 ## <a name="import-users"></a>ユーザーのインポート
-1. **システム管理 \> ユーザー \> ユーザー**の順に移動します。
-2. アクション ウィンドウで、**ユーザーのインポート**を選択します。
+1. **システム管理 \> ユーザー \> ユーザー** の順に移動します。
+2. アクション ウィンドウで、**ユーザーのインポート** を選択します。
 3. 一覧で、選択された行をマークします。
-4. **ユーザーのインポート**を選択します。
-5. **閉じる**を選択します。
+4. **ユーザーのインポート** を選択します。
+5. **閉じる** を選択します。
 

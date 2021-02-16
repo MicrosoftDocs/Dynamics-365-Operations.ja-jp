@@ -8,22 +8,22 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule
+ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule, SalesQuotationDeliverySchedule
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d77468a02379fefa105ba21376c7f3a7be337819
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: bc25ff113291b2a8a0a7ba15637e4d094feb9aae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210057"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432126"
 ---
 # <a name="delivery-schedules"></a>配送スケジュール
 
@@ -43,7 +43,7 @@ ms.locfileid: "3210057"
 
 このシナリオでは、顧客は 6 か月の期間にわたって 100 脚の椅子をバッチにして 600 脚の椅子を配送するように要求しています。 引き渡し要件を追跡するには、配送スケジュールを作成します。 配送スケジュール ページで、6 通の配送明細行を作成します。 各配送明細行が 100 脚の椅子を含み、それらの 100 脚の椅子の配送日を表示します。 この場合、各行は 6 か月の連続した月の初日で相殺されます。  
 
-配送スケジュールを作成すると、元の注文明細行のタイプが自動的に**複数の配送を含む発注明細行**に変更されます。 このタイプの行は、業務行として参照され、アイコンで示されます。 配送明細行には、別のアイコンが表示されます。 配送明細行の数量を変更すると、業務行は配送スケジュールの合計数量に更新されます。 売買契約が注文の割引合計を定義している場合、配送スケジュールを使用すると、オーダーが別の出荷に分割される場合でも、合計注文割引の適用対象となるようにします。  
+配送スケジュールを作成すると、元の注文明細行のタイプが自動的に **複数の配送を含む発注明細行** に変更されます。 このタイプの行は、業務行として参照され、アイコンで示されます。 配送明細行には、別のアイコンが表示されます。 配送明細行の数量を変更すると、業務行は配送スケジュールの合計数量に更新されます。 売買契約が注文の割引合計を定義している場合、配送スケジュールを使用すると、オーダーが別の出荷に分割される場合でも、合計注文割引の適用対象となるようにします。  
 
 配送スケジュールがある注文は、出荷明細行に対して処理されます。 処理には、梱包明細、製品受領書、および請求の転記が含まれます。  
 

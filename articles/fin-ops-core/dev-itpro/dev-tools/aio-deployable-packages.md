@@ -3,24 +3,23 @@ title: オールインワン配置可能パッケージ
 description: このトピックでは、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 969b76d03a123259c3a1ff95fd44b975d17769e4
-ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
+ms.openlocfilehash: 71ee80c7f2e7e724b44a6ef6b06b4e12aa878298
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3374785"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409197"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
@@ -29,7 +28,7 @@ ms.locfileid: "3374785"
 このトピックでは、オールインワン配備可能パッケージを作成および管理するためのベスト プラクティスについて説明します。
 
 > [!IMPORTANT]
-> - オールインワン配置可能パッケージでは **ない** 配置可能パッケージのサポートは、2020 年 10 月 31 日に終了します。
+> - オール イン ワン パッケージの適用は、フェーズで行われます。 オールインワン配置可能パッケージでは **ない** 配置可能パッケージに対するサポートを拡張する要求は、2020 年 10 月 31 日に終了します。 延長の承認は、有効な正当化の対象となります。
 > - 現在、支払コネクタが環境に配置されている場合、[支払コネクタ パッケージを作成](../../../commerce/dev-itpro/payment-connector-package.md) して、オールインワン配置可能パッケージに含める必要があります。
 > - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。
 
@@ -55,6 +54,10 @@ ms.locfileid: "3374785"
 ## <a name="what-if-my-isv-packages-dont-contain-source-code"></a>ISV パッケージにソース コードが含まれていない場合どうなりますか?
 
 ISV はソース コードを共有するかどうかを選択できます。 共有しない場合は、バイナリのみのパッケージを提供します。 このパッケージは、オールインワン配置可能パッケージで簡単に管理できます。 手順については、[ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](manage-runtime-packages.md) を参照してください。
+
+## <a name="how-can-i-deploy-isv-licenses"></a>ISV ライセンスはどのように配置できますか?
+
+ISV はライセンスの配置可能パッケージを送信し、ライセンスを提供または更新することができます。 ただし、セルフサービス環境では、ライセンスはすべてオールインワン配置可能パッケージに含める必要があります。 ビルド パイプラインまたはリリース パイプラインにタスクを追加して、配置可能なパッケージに対して所有するライセンスを追加できます。 詳細については [Azure Pipelines にある配置可能パッケージへのライセンス ファイルの追加](pipeline-add-license-package.md) を参照してください。
 
 ## <a name="why-are-these-packages-important"></a>これらのパッケージはなぜ重要なのですか?
 

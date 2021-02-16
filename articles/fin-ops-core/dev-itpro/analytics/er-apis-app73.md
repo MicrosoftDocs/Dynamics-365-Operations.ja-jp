@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7b5e9223281c276a8228238de5ab455dcb626fcd
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 65b25388029187971050dd6e3185dc19723ae38a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025868"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685365"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 
@@ -38,25 +37,25 @@ ER API には 2 つのタイプの変更があります。
 外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。
 
 ```xpp
-using Microsoft.Dynamics365.LocalizationFramework;
+using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 たとえば、追加の変更をせずに外部クラスにアクセスすることができます。
 
 ```xpp
-var destination = new ERFileDestinationMemory();
+var destination = new ERFileDestinationMemory();
 ```
 
 名前空間のエイリアスを作成することもできます。
 
 ```xpp
-using LF = Microsoft.Dynamics365.LocalizationFramework;
+using LF = Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。
 
 ```xpp
-var destination = new LF.ERFileDestinationMemory();
+var destination = new LF.ERFileDestinationMemory();
 ```
 
 ## <a name="how-to-access-internal-x-objects-by-using-erobjectsfactory"></a>ERObjectsFactory を使用して内部 X++ オブジェクトにアクセスする方法

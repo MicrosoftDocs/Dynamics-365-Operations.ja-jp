@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203414"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432364"
 ---
 # <a name="onboard-vendors"></a>Onboard 仕入先
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -33,7 +34,7 @@ ms.locfileid: "3203414"
 システムでさまざまなロールがアクションを実行する中で、プロセスは次の手順で構成されます。
 
 1. **データ管理 OData** – エンティティ インポート - 最初の要求は、見込み仕入先の登録要求です。 通常、この要求は、匿名アクセスを許可する顧客がホストしている Web サイトなどのソースから取得されます。 仕入先は、仕入先名、妥当性、組織番号、および連絡担当者の名前および電子メール アドレスなどの基本的な情報を提供することで登録できます。 データ管理インターフェイス経由で、要求がインポートされます。
-2. **見込み仕入先登録要求のリスト ページ** - 見込み仕入先登録要求で提供される情報に基づいて、調達担当者は、仕入先が研修される必要があるかどうかを決定します。 調達担当者は、**見込み仕入先の登録要求**リスト ページで、受信した要求を表示できます。
+2. **見込み仕入先登録要求のリスト ページ** - 見込み仕入先登録要求で提供される情報に基づいて、調達担当者は、仕入先が研修される必要があるかどうかを決定します。 調達担当者は、**見込み仕入先の登録要求** リスト ページで、受信した要求を表示できます。
 3. **ユーザー繰入ワークフロー** - 調達担当者は、受信した要求で情報を検証し、研修プロセスを実行すると決定した場合、Microsoft Dynamics 365 の認証されたユーザーとして連絡担当者を受け入れるため、ユーザー要求ワークフローは、新しいユーザーをプロビジョニングし、招待電子メールを送信します。
 4. **仕入先登録ウィザード** - 仕入先の連絡担当者は、新しいユーザー アカウントを使用してサインインします。 ユーザーは、住所、業務情報、調達カテゴリ、およびアンケートの回答などの情報を提供する仕入先登録ウィザードを完了します。
 5. **承認ワークフロー** - 登録情報を含む仕入先要求が作成されます。 この仕入先要求はワークフローに送信され、確認および承認のためにルーティングされます。
@@ -141,7 +142,7 @@ Supply Chain Management にサインインする見込み仕入先ユーザー�
 
 仕入先要求を承認する前に、**一般** クイック タブの **新しい仕入先** ページで、仕入先グループを選択するため **仕入先グループ** を選択します。
 
-見込み仕入先ユーザーが、仕入先を代表する仕入先コラボレーション ユーザーとして Supply Chain Management へアクセスする必要がある場合、仕入先コラボレーションへのアクセス許可を**はい**に設定します。 登録するために使用していた見込み仕入先のユーザー アカウントを無効にするには、このアクセス許可を **いいえ** に設定します。
+見込み仕入先ユーザーが、仕入先を代表する仕入先コラボレーション ユーザーとして Supply Chain Management へアクセスする必要がある場合、仕入先コラボレーションへのアクセス許可を **はい** に設定します。 登録するために使用していた見込み仕入先のユーザー アカウントを無効にするには、このアクセス許可を **いいえ** に設定します。
 
 仕入先コラボレーションのアクセス許可を **はい** に設定すると、仕入先要求が承認される場合、ユーザー ロールを変更するよう要求が送信されます。それにより、ユーザーが、**外部ロール** で **仕入先** タイプに対して定義されているロールを持つようになります。 このアクセス許可が **いいえ** に設定されると、仕入先要求が承認される場合、ユーザーを無効にするため要求が送信されます。 この場合、ユーザーの要求を無効にするワークフローを設定する必要があります。
 

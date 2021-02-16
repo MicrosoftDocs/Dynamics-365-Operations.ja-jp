@@ -16,15 +16,15 @@ ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d85d10113e7cc4e95a25efe7fee6d1f23990694
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208476"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432161"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
@@ -42,14 +42,14 @@ ms.locfileid: "3208476"
 
 ### <a name="example-of-a-table-constraint"></a>テーブル制約の例
 
-この例では、スピーカーのコンフィギュレーションを特定のキャビネットの仕上げと前グリルに限定する方法を示します。 最初の表には、コンフィギュレーションで一般に使用できるキャビネットの仕上げと前グリルを示します。 値は、**キャビネットの仕上げ**と**前グリル**の属性タイプで定義されます。
+この例では、スピーカーのコンフィギュレーションを特定のキャビネットの仕上げと前グリルに限定する方法を示します。 最初の表には、コンフィギュレーションで一般に使用できるキャビネットの仕上げと前グリルを示します。 値は、**キャビネットの仕上げ** と **前グリル** の属性タイプで定義されます。
 
 | 属性の型 | 値                      |
 |----------------|-----------------------------|
 | キャビネットの仕上げ | 黒、カシ、シタン、白 |
 | 前グリル    | 黒、メタル、白         |
 
-次の表には、**色と仕上げ**テーブルの制約によって定義される組み合わせを示します。 このテーブルの制約を使用すると、カシの仕上げと黒いグリルのスピーカー、シタンの仕上げと白いグリルのスピーカーなどをコンフィギュレーションできます。
+次の表には、**色と仕上げ** テーブルの制約によって定義される組み合わせを示します。 このテーブルの制約を使用すると、カシの仕上げと黒いグリルのスピーカー、シタンの仕上げと白いグリルのスピーカーなどをコンフィギュレーションできます。
 
 | 完了         | グリル                       |
 |----------------|-----------------------------|
@@ -112,7 +112,7 @@ ms.locfileid: "3208476"
 <td>これは最初の条件が false、2 番目の条件が true、または両方とも true の場合に true です。</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>演算子:</strong> Implies[x != 0, y &gt;= 0]</li>
 <li><strong>インフィックス表記法:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
@@ -121,7 +121,7 @@ ms.locfileid: "3208476"
 <td>これは、すべての条件が true の場合にのみ true です。 条件数が 0 の場合、<strong>True</strong> になります。</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>オペレーター:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>演算子:</strong> And[x == 2, y &lt;= 2]</li>
 <li><strong>インフィックス表記法:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -130,7 +130,7 @@ ms.locfileid: "3208476"
 <td>これは、任意の条件が true の場合に true です。 条件数が 0 の場合、<strong>False</strong> になります。</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>演算子:</strong> Or[x == 2, y &lt;= 2]</li>
 <li><strong>インフィックス表記法:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -139,7 +139,7 @@ ms.locfileid: "3208476"
 <td>これにより要件が合計されます。 条件数が 0 の場合、<strong>0</strong> になります。</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Plus[x, y, 2] == z</li>
+<li><strong>演算子:</strong> Plus[x, y, 2] == z</li>
 <li><strong>インフィックス表記法:</strong> x + y + 2 == z</li>
 </ul></td>
 </tr>
@@ -148,7 +148,7 @@ ms.locfileid: "3208476"
 <td>これは引数を無効にします。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Minus[expr], infix: -expr</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Minus[x] == y</li>
+<li><strong>演算子:</strong> Minus[x] == y</li>
 <li><strong>インフィックス表記法:</strong> -x == y</li>
 </ul></td>
 </tr>
@@ -156,23 +156,23 @@ ms.locfileid: "3208476"
 <td>Abs</td>
 <td>これは、条件の絶対値を取ります。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Abs[expr]</td>
-<td><strong>オペレーター:</strong> Abs[x]</td>
+<td><strong>演算子:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>時間</td>
 <td>これは、条件の製品を取ります。 条件数が 0 の場合、<strong>1</strong> になります。</td>
 <td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Times[x, y, 2] == z</li>
+<li><strong>演算子:</strong> Times[x, y, 2] == z</li>
 <li><strong>インフィックス表記法:</strong> x * y * 2 == z</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>パワー</td>
-<td>これは、指数関数を取ります。 これはべき乗を右から左に適用します。 (つまり、右結合です)。したがって、<strong>Power[a, b, c]</strong> は <strong>Power[a, Power[b, c]]</strong> と等価です。 <strong>Power</strong> は、指数が正の定数の場合にのみ使用できます。</td>
+<td>これは、指数関数を取ります。 これはべき乗を右から左に適用します。 (つまり、&#39;右結合です)。したがって、<strong>Power[a, b, c]</strong> は <strong>Power[a, Power[b, c]]</strong>と等価です。 <strong>Power</strong> は、指数が正の定数の場合にのみ使用できます。</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Power[x, 2] == y</li>
+<li><strong>演算子:</strong> Power[x, 2] == y</li>
 <li><strong>インフィックス表記法:</strong> x ^ 2 == y</li>
 </ul></td>
 </tr>
@@ -180,20 +180,20 @@ ms.locfileid: "3208476"
 <td>最大</td>
 <td>これにより、最大条件が作成されます。 条件数が 0 の場合、<strong>Infinity</strong> (無限) になります。</td>
 <td>Max[args]</td>
-<td><strong>オペレーター: </strong> Max[x, y, 2] == z</td>
+<td><strong>演算子:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
 <td>最小</td>
 <td>これにより、最小条件が作成されます。 条件数が 0 の場合、<strong>Infinity</strong> (無限) になります。</td>
 <td>Min[args]</td>
-<td><strong>オペレーター:</strong> Min[x, y, 2] == z</td>
+<td><strong>演算子:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
 <td>ない</td>
 <td>これにより、条件の論理逆数が作成されます。 これは条件がきっかり 1 つの場合に限ります。</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>オペレーター:</strong> Not[x] &amp; Not[y == 3]</li>
+<li><strong>演算子:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>インフィックス表記法:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94ef15d1971287e8bf13944bc8f693b567950031
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: a93a9171456fb69e16c8104b0afb9ad485311b1a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411440"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683798"
 ---
-# <a name=""></a><a name="TODAY">TODAY ER 関数</a>
+# <a name="today-er-function"></a>TODAY ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`TODAY` 関数は、現在のアプリケーション サーバーの日付を表す*日付*値を返します。
+`TODAY` 関数は、現在のアプリケーション サーバーの日付を表す *日付* 値を返します。
 
 ## <a name="syntax"></a>構文
 

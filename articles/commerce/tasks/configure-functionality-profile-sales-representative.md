@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cdca0b790131c6d30987ca9651b61ceef82d95ba
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 1818ae569d1d29bf4d02ab8cbc481180531449b9
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141063"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4413898"
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>販売担当者の機能プロファイルのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。 この手順では、 USRT デモ データの会社が使用されます。
+この手順は、USRT デモ データの会社を利用して、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。
 
 1. 小売りとコマース > チャンネル設定 > POS 設定 > POS プロファイル > 機能プロファイルの順に移動します。
 2. [編集] をクリックします。

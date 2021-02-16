@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1dd714c2fcdab0d1f90d63f71068fcfdeb6f7fe0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 81ea7f372ce75afba2eb7e2f11b38bf3f4525322
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183461"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681090"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 
@@ -34,7 +33,7 @@ ms.locfileid: "2183461"
 > * データベース バックアップ資産を使用します。
 > * ポイントインタイム復元を使用します。
 
-このシナリオの例として、顧客は会議室パイロットを実行しようとしており、トランザクションがない (つまり、販売注文や発注書がない) 環境で開始します。 顧客は、同じパイロットを行うために、ユーザーの地域間で物理的な倉庫から物理的な倉庫に移動し、各パイロットが行われる前に、環境を「リセット」することを希望しています。
+このシナリオの例として、顧客は会議室パイロットを実行しようとしており、トランザクションがない (つまり、販売注文や発注書がない) 環境で開始します。 顧客は、同じパイロットを行うために、地理的な環境地域間で物理的な倉庫から物理的な倉庫に移動し、各パイロットが行われる前に、環境を「リセット」することを希望しています。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -42,7 +41,7 @@ ms.locfileid: "2183461"
 
 ## <a name="using-a-database-backup"></a>データベースのバックアップの使用
 
-すでにテストの準備ができているデータベース バックアップ (.bacpac) ファイルがある場合、最も簡単な方法は、バックアップ ファイルを LCS プロジェクトの資産ライブラリ内の**データベース バックアップ**セクションにアップロードすることです。 その後、ここで説明するように、対象となる環境にインポートすることができます。
+すでにテストの準備ができているデータベース バックアップ (.bacpac) ファイルがある場合、最も簡単な方法は、バックアップ ファイルを LCS プロジェクトの資産ライブラリ内の **データベース バックアップ** セクションにアップロードすることです。 その後、ここで説明するように、対象となる環境にインポートすることができます。
 
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 

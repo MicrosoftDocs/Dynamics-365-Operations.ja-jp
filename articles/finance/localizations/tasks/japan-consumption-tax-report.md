@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Japan
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0bc184ee4707b98a4b653ff62fcb017acd0ada8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 596ef2229c99f34d49fb0a3b03d605ce0c584192
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140055"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408172"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 
@@ -63,4 +63,4 @@ ms.locfileid: "3140055"
     * [レポートを印刷] をクリックして、最終レポートを生成します。  
 
 > [!NOTE]
-> 2019 年 10 月 1 日から提出される消費税申告書を計算するには、**機能管理**ワークスペースの**消費税申告書**機能を有効にする必要があります。 詳細については [機能管理の概要](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+> 2019 年 10 月 1 日から提出される消費税申告書を計算するには、**機能管理** ワークスペースの **消費税申告書** 機能を有効にする必要があります。 詳細については [機能管理の概要](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。

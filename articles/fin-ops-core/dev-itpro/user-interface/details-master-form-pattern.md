@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d9c805ca4e456e86156fc722c69385b0d67f99f
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 9ecb2094f3f7d788b3ede13049dea034e057f286
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329900"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687591"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
@@ -180,14 +179,14 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 -   **新規** ボタンおよび **削除** ボタンは重複してはいけません。
 -   従来のタブではなく、フィールドをグループ化するのにクイック タブを使用する必要がありますか。 詳細マスター / 標準タブ パターンは、関連するこれらのクイック タブを従来のタブにグループ化します。
-    -   **既定**の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。
-    -   **クイック タブ**ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+    -   **既定** の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。
+    -   **クイック タブ** ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **ActionPane** ガイドラインは、ActionPane ガイドライン セクションの[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **ページ タイトル エリア:**
     -   "&lt;ID&gt; : &lt;Description&gt;" という形式を使用する必要があります。
     -   リスト ページが詳細ページにマージされている場合は、詳細ページへのリンクをメイン メニューで提供する必要があります。
     -   ページ タイトルは、複数フォームの形式にする必要があります。
--   **情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
+-   **情報ボックス** ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 -   **ナビゲーション リスト グリッド:**
     -   リスト スタイル グリッドは、グリッド行内に行が 3 行以上にまたがるフィールドはありません。
         -   通常は IDと説明だけで十分です。

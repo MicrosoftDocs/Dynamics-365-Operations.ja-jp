@@ -1,7 +1,7 @@
 ---
 title: NumberSequenceConfig タイプ
 description: 番号順序のコンフィギュレーションのタイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2848831eea362bc418abb36786b00b1404b77706
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73ecdb2aeaed39bf578431818f3dd67410c76a1c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191859"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688503"
 ---
 # <a name="numbersequenceconfig-type"></a>NumberSequenceConfig タイプ
 

@@ -3,25 +3,24 @@ title: Regression Suite Automation Tool
 description: Regression Suite Automation Tool では、機能パワー ユーザーがタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。
 author: robadawy
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1d570c77a9d743b892c5a889c212f8fc64132d7
-ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
+ms.openlocfilehash: c6ffd1f6261b8bf7d4d52497217df79f6cbdde6e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3418529"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680446"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 
@@ -65,6 +64,12 @@ RSAT の使用についての定義。
 
 [Regression Suite Automation Tool (RSAT) の使用方法](https://youtu.be/uhN9JItzGAk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
+### <a name="the-improved-excel-experience-in-rsat-20"></a>RSAT 2.0 での Excel エクスペリエンスの向上
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+
+上記の [RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)ビデオは、YouTube で視聴できる [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。 
+
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
 このツールは、次に定義するエンド ツー エンド フローのパーツに含まれています。 このアプリケーションは、Microsoft Dynamics Lifecycle Services (LCS) および Azure DevOps と共に、テスト ケースの作成 (タスク レコーダーを使用)、構成、実行、調査、および報告に対する一連のツールを提供します。
@@ -88,7 +93,7 @@ BPM を使用していない場合は、Azure DevOps で手動でテスト ケ�
 ## <a name="intended-usage-and-test-classification"></a>使用目的およびテストの分類
 
 ### <a name="business-cycle-business-process-testing"></a>ビジネス サイクル (ビジネス プロセス) のテスト
-Regression Suite Automation Tool は、ビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネントのテスト) を使用目的としており、通常は開発ライフ サイクルの終了時に発生します。 これは、*ユーザー受け入れテスト*とも呼ばれます。 ビジネス サイクルのテストは、コンポーネントまたは単体テストよりも少ない数のテスト ケースで構成されます。 これを下の図に示します。
+Regression Suite Automation Tool は、ビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネントのテスト) を使用目的としており、通常は開発ライフ サイクルの終了時に発生します。 これは、*ユーザー受け入れテスト* とも呼ばれます。 ビジネス サイクルのテストは、コンポーネントまたは単体テストよりも少ない数のテスト ケースで構成されます。 これを下の図に示します。
 
 ![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクルテスト](media/business-cycle.png)
 

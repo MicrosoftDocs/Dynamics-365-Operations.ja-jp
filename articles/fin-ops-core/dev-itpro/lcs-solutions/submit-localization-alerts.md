@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15cdd5226560c53fc07e7a840b9acb286f26d7df
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f0604f4b6edd5fbe111b9254abcbeea8b0e80d33
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003595"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685027"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
@@ -33,7 +32,7 @@ ms.locfileid: "3003595"
 <a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
 -------------------------------------------------
 
-Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側までスクロールしてから、**追加ツール**の**警告サービス** タイルをクリックします。 
+Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側までスクロールしてから、**追加ツール** の **警告サービス** タイルをクリックします。 
 
 **Dynamics 規制の警告の送信** ページが表示されます。 このページを使用すると、個人または組織が以前に提出したすべての警告を表示できます。
 
@@ -50,7 +49,7 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
 問題検索を使用して、警告に関連する規制機能が既に存在するかどうかを識別します。
 
 1.  キーワード、国/地域、 Microsoft Knowledge Base (KB) 番号または Application Object Tree (AOT) オブジェクトなどの検索用語を入力します。 検索ボタンをクリックします。 製品問題または規制機能のいずれかに、検索用語を含むすべての項目が検索結果に表示されます。 使用可能なフィルターを使用して、検索を絞ることができます。
-2.  ユーザーが探している規制における機能がない場合は、ブラウザー ウィンドウの下部にある**規制に関する警告を送信**をクリックし、規制に関する警告を送信します。 
+2.  ユーザーが探している規制における機能がない場合は、ブラウザー ウィンドウの下部にある **規制に関する警告を送信** をクリックし、規制に関する警告を送信します。 
 
 ### <a name="attach-business-processes"></a>業務プロセスの関連付け
 
@@ -61,7 +60,7 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
 
 ### <a name="describe-the-alert"></a>警告の説明
 
-1. 適切なフィールドに警告に関する情報を入力します。 必須フィールドは赤いアスタリスクで示されます。 次のテーブルでは、**警告の説明**ページのフィールドの詳細について説明します。
+1. 適切なフィールドに警告に関する情報を入力します。 必須フィールドは赤いアスタリスクで示されます。 次のテーブルでは、**警告の説明** ページのフィールドの詳細について説明します。
 
     <table >
             <tr>
@@ -77,7 +76,7 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
                 <p>肩書き</p>
                 </td>
                 <td>
-                <p>影響の区分を識別するために、内容を示すタイトルを入力します。 たとえば、<strong>、2018 年 1 月1 日時点での請求書ドキュメントの変更</strong>を入力します。</p>
+                <p>影響の区分を識別するために、内容を示すタイトルを入力します。 たとえば、<strong>2018 年 1 月 1 日時点での請求書ドキュメントの変更</strong>を入力します。</p>
                 </td>
             </tr>
             <tr>
@@ -189,19 +188,19 @@ Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側�
     </table>
 
 2.  すべての情報入力が完了したら、同意チェック ボックスを選択します (**この規制の警告を送信することで、Microsoft がこの警告に関する追加の情報を入手する目的で私に連絡することに同意します。Microsoft のプライバシーに関する声明**) 。 チェック ボックスを選択すると、**送信** ボタンが使用できるようになります。
-3.  警告を保存して送信するには、**送信**をクリックします。
+3.  警告を保存して送信するには、**送信** をクリックします。
 
 すべての必要な情報を持っていない場合、または警告を送信する準備が整っていない場合は、部分的に完了した警告を保存することができます。
 
 ### <a name="confirm-your-submission"></a>送信を確認する
 
--   警告が正常に送信されると、確認メッセージが表示されます。 **完了**をクリックし、ウィザードを終了します。
+-   警告が正常に送信されると、確認メッセージが表示されます。 **完了** をクリックし、ウィザードを終了します。
 -   送信する前に警告を保存すると、警告 ID が生成され、警告が保存されたという確認を受け取ります。
 
 ## <a name="track-the-status-of-regulatory-features-in-issue-search"></a>問題検索の規制機能の状態を追跡する
 LCS で問題検索を使用して計画済みおよびリリース済みの規制フィーチャー、および任意の関連ローカライズ ドキュメント、証明、およびレポートを見つけることができます。 検索を規制機能に絞り込むには、次のフィルターを使用します。
 
--   **カテゴリ** - **規制機能**のみを選択します。
+-   **カテゴリ** - **規制機能** のみを選択します。
 -   **国/地域** - **&gt;** をクリックして、目的の国/地域を選択します。
 
 検索範囲をさらに絞り込むには、次の追加フィルターを適用します

@@ -1,28 +1,27 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 23 (2019 年 1 月 の新機能または変更された機能について説明します。
+description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: cfb86686913ab07d4999f01a137536600f5fa3a7
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 83755747608e4f63f1de4c16c698c39ff01f88ea
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029351"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694106"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
@@ -42,7 +41,7 @@ ms.locfileid: "3029351"
 
 ## <a name="legal-entity-filtering-using-grid-column-headers"></a>グリッド列ヘッダーを使用した法人のフィルター処理
 
-プラットフォーム更新プログラム 23 以降、会社間クエリを含むグリッドでは、グリッド内の他の列と同様、列ドロップダウン メニューを使用して、ユーザーが *法人* 列をフィルター処理できます。 たとえば、ユーザーが特定の顧客のグローバル トランザクションを見ているとき、会社の小さいサブセット内のトランザクションを検索することがあります。 この機能が追加される前は、[フィルターまたは並べ替えの編集] ダイアログ ボックスの [顧客範囲] タブを使用してフィルタ処理するか、ページ固有のカスタム フィルターを使用する必要がありました。
+プラットフォーム更新プログラム 23 以降、会社間クエリを含むグリッドでは、グリッド内の他の列と同様、列ドロップダウン メニューを使用して、ユーザーが *法人* 列をフィルター処理できます。 たとえば、ユーザーが特定の顧客のグローバル トランザクションを見ているとき、会社の小さいサブセット内のトランザクションを検索することがあります。 この機能が追加される前は、フィルターまたは並べ替えの編集ダイアログ ボックスの顧客範囲タブを使用してフィルター処理するか、ページ固有のカスタム フィルターを使用する必要がありました。
 
 ![法人によるフィルター](media/legalEntityFiltering.png "法人によるフィルター")
 
@@ -54,7 +53,7 @@ ms.locfileid: "3029351"
 
 ## <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
-プラットフォーム更新プログラム 23 には、ネットワーク プリンターを Dynamics 365 for Finance and Operations に登録するためのドキュメント回覧エージェント (DRA) と共に、システム管理者が使用できる**システム ネットワーク プリンター管理**フォームが含まれています。
+プラットフォーム更新プログラム 23 には、ネットワーク プリンターを Dynamics 365 for Finance and Operations に登録するためのドキュメント回覧エージェント (DRA) と共に、システム管理者が使用できる **システム ネットワーク プリンター管理** フォームが含まれています。
 
 この機能を有効にすると、**プレビュー** リンクが **システム ネットワーク プリンター** フォームに表示されます (**組織管理** \> **設定** \> **ネットワーク プリンター** で **システム ネットワーク プリンター** をクリック)。
 

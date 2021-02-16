@@ -10,7 +10,6 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df093f54bfb1c1fe2742212d781512315a468f39
-ms.sourcegitcommit: f79776e56a316fdba25cb40b3aad1963ae0ea623
+ms.openlocfilehash: 8ebf3ff4296307aec323daba9f3db9e7871780c1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3489473"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688059"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -48,6 +47,9 @@ OData の詳細については、次の Web ページを参照してください
 
 パブリック OData サービス エンドポイントにより、幅広いクライアントにわたって、一貫した方法でデータにアクセスできるようになります。 公開されているすべてのエンティティの一覧を表示するには、OData サービスのルート URLを開きます。 システムのサービス ルートの URL の形式は **\[お客様の組織のルート URL\]/data** です。
 
+> [!NOTE]
+> 拡張機能を介して追加された OData アクションは、現在サポートされていません。
+
 ## <a name="addressing"></a>アドレス指定
 次のテーブルでは、フリート管理サンプルのリソースと対応する URL を示しています。
 
@@ -66,9 +68,7 @@ OData REST エンドポイントを提供します。 このエンドポイン�
 > [!NOTE]
 > OData を使用してデータ エンティティを操作する場合、OData 呼び出しを正常に実行するには、エンティティ キーのすべてのフィールドを指定する必要があります。
 
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
-
-OData サービスを使用するためのコード例は、「[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication)」です。
+OData サービスを使用するためのコード例については、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication)を参照してください。
 
 ### <a name="supported-features-from-the-odata-specification"></a>OData 仕様からサポートされている機能
 
@@ -237,7 +237,7 @@ public List GetColorsByAvailability(boolean onlyAvailableVehicles)
 ソース コード内の **SysODataActionAttribute** 属性を検索することにより、データ エンティティ上で定義されたアクションを見つけることができます。
 
 ## <a name="querying-or-browsing-an-odata-endpoint"></a>OData エンドポイントの照会や参照
-OData は、データベースに対して豊富なクエリを作成できる SQL に似た言語を有効にして、結果に希望するデータ項目のみが含まれるようにします。 クエリを作成するには、リソース パスに条件を追加します。 たとえば、ブラウザで次のクエリ オプションを加えることによって、**顧客**エンティティ コレクションのクエリを行うことができます。
+OData は、データベースに対して豊富なクエリを作成できる SQL に似た言語を有効にして、結果に希望するデータ項目のみが含まれるようにします。 クエリを作成するには、リソース パスに条件を追加します。 たとえば、ブラウザで次のクエリ オプションを加えることによって、**顧客** エンティティ コレクションのクエリを行うことができます。
 
 | URL                                                                        | 説明 |
 |----------------------------------------------------------------------------|-------------|
@@ -249,7 +249,7 @@ OData は、データベースに対して豊富なクエリを作成できる S
 OData プロトコルは、エンティティで多くの似たフィルター処理とクエリ オプションをサポートします。 クエリ オプションの完全なセットについては、[Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx) を参照してください。
 
 ## <a name="using-enums"></a>列挙型の使用
-列挙型は、名前空間 **Microsoft.Dynamics.DataEntities**の配下にあります。 OData クエリに列挙型を含めるには、次の構文を使用します。
+列挙型は、名前空間 **Microsoft.Dynamics.DataEntities** の下にあります。 OData クエリに列挙型を含めるには、次の構文を使用します。
 
 `Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
@@ -261,7 +261,7 @@ OData プロトコルは、エンティティで多くの似たフィルター�
 
 `https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'`
 
-列挙型に対応している演算子は **eq** と **ne**です。
+列挙型に対応している演算子は **eq** と **ne** です。
 
 ## <a name="authentication"></a>認証
 OData は、サーバーと同じ認証スタック上に配置されます。 認証の詳細については、 [サービス エンドポイントの概要](services-home-page.md) を参照してください。
@@ -269,7 +269,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 
 ### <a name="run-multiple-requests-in-a-single-transaction"></a>1 つのトランザクションで複数の要求を実行
-OData バッチ フレームワークは、*変更セット*を使用します。 各変更セットには、単一アトミック ユニットとして扱われるべき要求のリストが含まれています。 つまり、すべての要求が正常に実行されるか、要求が失敗した場合はすべての要求が正常に実行されません。 次の例は、単一の変更セット内に要求のリストを持つバッチ要求を送信する方法を示しています。
+OData バッチ フレームワークは、*変更セット* を使用します。 各変更セットには、単一アトミック ユニットとして扱われるべき要求のリストが含まれています。 つまり、すべての要求が正常に実行されるか、要求が失敗した場合はすべての要求が正常に実行されません。 次の例は、単一の変更セット内に要求のリストを持つバッチ要求を送信する方法を示しています。
 
 **SaveChanges()** の **SaveChangesOptions.BatchWithSingleChangeset** オプションを使用すると、単一の変更セットにすべての要求がバンドルされていることを保証できます。
 
@@ -322,7 +322,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
-列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で OData ロジック のより詳細な処理をするために使用することができます。
+列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、削除しなければならない重複する名前のインスタンスを識別するために [GitHub のヘルパー コード](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) を使用できます。 生成されたメタデータ ドキュメントは、クライアント側で OData ロジック のより詳細な処理をするために使用することができます。
 
 ### <a name="array-fields"></a>配列フィールド
 OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。

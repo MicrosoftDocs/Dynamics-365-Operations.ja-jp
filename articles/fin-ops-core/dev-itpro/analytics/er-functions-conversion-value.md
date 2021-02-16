@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c90772ca1e93500ac45cc52ba92d4169c4d29bad
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 56b32a802674725347ab496d3a09b99c8f04446d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042622"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681211"
 ---
-# <a name="VALUE">VALUE ER 関数</a>
+# <a name="value-er-function"></a>VALUE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`VALUE` 関数は、指定された文字列から変換された*実数*値を返します。
+`VALUE` 関数は、指定された文字列から変換された *実数* 値を返します。
 
 ## <a name="syntax"></a>構文
 

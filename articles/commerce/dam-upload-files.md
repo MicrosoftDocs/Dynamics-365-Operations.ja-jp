@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fc0490e3532dcbb9c1e91101009b2d4605315416
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4acd3bec32cdfe627f6eb33dd5dc652f7cff74a8
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097042"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594215"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>画像とビデオ以外のファイルのアップロード
 
@@ -78,11 +78,11 @@ ms.locfileid: "3097042"
 
 コマース サイト ビルダーでファイルをアップロードするには、次の手順を実行します。
 
-1. 左のナビゲーション ウィンドウで、**メディア ライブラリー**を選択します。
-1. コマンド バーで、**アップロード \> メディア項目のアップロード**を選択します。
-1. ファイル エクスプローラーで、1 つ以上のファイルを選択し、**開く**を選択します。
+1. 左のナビゲーション ウィンドウで、**メディア ライブラリー** を選択します。
+1. コマンド バーで、**アップロード \> メディア項目のアップロード** を選択します。
+1. ファイル エクスプローラーで、1 つ以上のファイルを選択し、**開く** を選択します。
 1. **メディア項目のアップロード** ダイアログ ボックスで、タイトル、説明、キーワードのメタデータを必要に応じて入力します。
-1. ファイルをアップロードした直後に公開するには、**アップロード後にメディア項目を公開する**チェック ボックスをオンにします。
+1. ファイルをアップロードした直後に公開するには、**アップロード後にメディア項目を公開する** チェック ボックスをオンにします。
 1. **OK** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
@@ -95,4 +95,6 @@ ms.locfileid: "3097042"
 
 [画像のトリミング](dam-crop-images.md)
 
-[画像の焦点のカスタマイズ](dam-custom-focal-point.md)
+[画像の中心のカスタマイズ](dam-custom-focal-point.md)
+
+[静的ファイルのアップロードと提供](upload-serve-static-files.md)

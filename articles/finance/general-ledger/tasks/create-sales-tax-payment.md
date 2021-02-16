@@ -1,6 +1,6 @@
 ---
-title: 売上税支払の作成
-description: 売上税の決済と転記のジョブは、売上税勘定の売上税残高を決済して、特定の期間の売上税決済勘定と相殺します。
+title: 消費税支払の作成
+description: 売上税の決済と転記のジョブでは、売上税勘定の売上税残高を決済して、特定の期間の売上税決済勘定と相殺します。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -13,27 +13,27 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99059a8e5d6f4bf125266ad2a98cb73751529e6b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7aec00c2fb657f0b4074063ef7acad5f4372ebca
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139926"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646338"
 ---
-# <a name="create-a-sales-tax-payment"></a>売上税支払の作成
+# <a name="create-a-sales-tax-payment"></a>消費税支払の作成
 
 [!include [banner](../../includes/banner.md)]
 
-売上税の決済と転記のジョブは、売上税勘定の売上税残高を決済して、特定の期間の売上税決済勘定と相殺します。
+売上税の決済と転記のジョブでは、売上税勘定の売上税残高を決済して、特定の期間の売上税決済勘定と相殺します。
 
-1. [税] > [申告] > [売上税] > [売上税の決済と転記] の順に移動します。
-2. [決済期間] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+1. **税 > 申告 > 売上税 > 売上税の決済と転記** の順に移動します。
+2. **決済期間** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 3. 一覧で、選択された行のリンクをクリックします。
-4. [開始日] フィールドに日付を入力します。
-    * [訂正を含める] オプションが [総勘定元帳のパラメータ] のページで選択されていない場合、決済は、異なるバージョンについて処理できます。 [オリジナル] は決済期間の最初の決済で、1 つの間隔について 1 回のみ処理できます。 最新の修正は、オリジナル バージョンの作成後に転記された売上税トランザクションを決済します。   
-5. [トランザクション日付] フィールドに、日付を入力します。
-6. [OK] をクリックします。
+4. **開始日** フィールドに日付を入力します。
+    * **訂正を含める** オプションが **総勘定元帳のパラメーター** のページで選択されていない場合、決済処理で異なるバージョンを処理できます。 [オリジナル] は決済期間の最初の決済であり、1 つのサイクル間隔で 1 回のみ処理できます。 最新の修正は、オリジナル バージョンの作成後に転記された売上税のトランザクションを決済します。   
+5. **トランザクション日付** フィールドに、日付を入力します。
+6. **OK** をクリックします。
 

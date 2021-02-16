@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 3 日)
-description: この記事では、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 2 月 3 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4abf2b8fee05005757388eb3127ec21de98aa3ad
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: b9efcea4fa52f73ac09a3e0ae74582fc563aeb64
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076028"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527005"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-3-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 3 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.2809 に適用されます。 ヘッダーにあるかっこ内の数字は、Microsoft Dynamics Lifecycle Services (LCS) のサポート番号を参照していることがあります。
 
 ## <a name="cant-remove-activities-from-performance-review-form-403542"></a>業績の確認フォームからは活動を削除できません (403542)
 
-選択した活動は、**業績の確認**フォームの**削除**ボタンを使用して削除できます。
+選択した活動は、**業績の確認** フォームの **削除** ボタンを使用して削除できます。
 
 ## <a name="in-preview"></a>プレビュー
 
@@ -47,14 +49,14 @@ ms.locfileid: "3076028"
 
 | 説明 | 計上額 |
 | ----------------------------------------- | --- |
-| **職務/職位**エンティティの変更 | 追加された**報酬地域**</br>追加された**財務分析コード** |
-| **作業者**エンティティの変更 | 追加された**名前の順序**</br>追加された**自宅から作業**</br>追加された**言語**</br>追加された**勤続日数**</br>追加された**記念日**</br>追加された**元の採用日付** |
-| **雇用**エンティティの変更 | 追加された**財務分析コード**</br>追加された**退職理由**</br>**移行日**から名前変更された**退職日**</br>追加された**猶予期間** |
-| **作業者住所**エンティティの変更 | 追加された**番地**</br>廃止としてマークされた**住所行 1**、**住所行 2**、および**住所行 3** |
+| **職務/職位** エンティティの変更 | 追加された **報酬地域**</br>追加された **財務分析コード** |
+| **作業者** エンティティの変更 | 追加された **名前の順序**</br>追加された **自宅から作業**</br>追加された **言語**</br>追加された **勤続日数**</br>追加された **記念日**</br>追加された **元の採用日付** |
+| **雇用** エンティティの変更 | 追加された **財務分析コード**</br>追加された **退職理由**</br>**移行日** から名前変更された **退職日**</br>追加された **猶予期間** |
+| **作業者住所** エンティティの変更 | 追加された **番地**</br>廃止としてマークされた **住所行 1**、**住所行 2**、および **住所行 3** |
 | 新しい変動報酬の設定エンティティ | **変動報酬プラン タイプ**</br>**変動報酬プラン**</br>**給付ルール**</br>**変動報酬プラン レベル** |
-| 新しい**作業者カレンダー雇用**エンティティ | 追加された**作業カレンダー エンティティ** |
-| 新しい**給与職位詳細**エンティティ | 追加された**給与職位詳細** |
-| 新しい**肩書**エンティティ | 追加済み**タイトル**。 新しい**タイトル** エンティティが、Human Resources と Common Data Service の間の同期プロセスに含まれます。 **職位**または**ジョブ** エンティティから最初に参照されることはありません。 |
+| 新しい **作業者カレンダー雇用** エンティティ | 追加された **作業カレンダー エンティティ** |
+| 新しい **給与職位詳細** エンティティ | 追加された **給与職位詳細** |
+| 新しい **肩書** エンティティ | 追加済み **タイトル**。 新しい **タイトル** エンティティが、Human Resources と Common Data Service の間の同期プロセスに含まれます。 **職位** または **ジョブ** エンティティから最初に参照されることはありません。 |
 
 ## <a name="see-also"></a>参照
 

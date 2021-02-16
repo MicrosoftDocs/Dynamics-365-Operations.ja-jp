@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: ae22c6d7753bf322f546f0388075aa86598b772e
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 16020cfa345101d8cebf4a99aa31db13d6017d7d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3082018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409485"
 ---
 # <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 
@@ -55,7 +54,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(Inven
 
 デリゲート メソッドが、**EventHandlerAcceptResult** または **EventHandlerRejectResult** オブジェクト パラメーターを使用して、応答を要求するとき、サブスクライバーは、承認または否認でのみ応答することを想定します。 サブスクライブ ロジックは、メッセージを Infolog に追加することもできます。
 
-次の例は、前の例に似ています。 ただし、デリゲート メソッドは、**EventHandlerAcceptResult** オブジェクトの使用によりおよび**受け入れ**メソッドを呼び出すことにより、応答を要求するようになります。
+次の例は、前の例に似ています。 ただし、デリゲート メソッドは、**EventHandlerAcceptResult** オブジェクトの使用によりおよび **受け入れ** メソッドを呼び出すことにより、応答を要求するようになります。
     
 ```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
@@ -101,7 +100,7 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
 - サブスクライブしているロジックが応答を担当する場合にのみ対応します。 デリゲート ハンドラー メソッドは、特定の条件が満たされたときに応答を提供するために実装されました。 したがって、サブスクライブしているロジックは、特定の条件が満たされた場合に結果を提供する必要があります。 サブスクライブしているロジックが応答する前に、結果オブジェクト パラメーターは既に結果が含まれているかどうかを評価することができません。 たとえば、デリゲート ハンドラー メソッドは、次の例にあるロジックに似たロジックを含めないようにする必要があります。 このロジックは、メソッド実行時に **EventHandlerResult** オブジェクト パラメーターに結果がすでに含まれているかどうかを評価します。
 
     > [!WARNING]
-    > この例は、書くべきでは**ない**コードの例です。
+    > この例は、書くべきでは **ない** コードの例です。
 
     ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
@@ -126,7 +125,7 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
 - 他のサブスクライバーの代理として応答を提供しないでください。 デリゲート ハンドラー メソッドが応答を提供する責任を負わない場合、メソッドは応答を提供できません。 条件が満たされていないときに、メソッドが応答を提供する場合は、他のサブスクライバーに代わって応答を提供しています。 要求元のロジックは、サブスクライバーが応答していない状況を処理する責任を負わなければなりません。 デリゲート ハンドラー メソッドは、次の例にあるロジックに似たロジックを含めないようにする必要があります。 このロジックは、条件が **false** と評価されたときに結果を提供します。
     
     > [!WARNING]
-    > この例は、書くべきでは**ない**コードの例です。
+    > この例は、書くべきでは **ない** コードの例です。
     
     ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]

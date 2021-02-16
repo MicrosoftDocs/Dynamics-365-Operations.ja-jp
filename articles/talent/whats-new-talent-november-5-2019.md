@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 48de07178acfaccf11e0a02b2848bf24e6ccc117
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c4068cf81782d2f9559179b91da31e049c006059
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896776"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527123"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-5-2019"></a>Dynamics 365 Talent (2019 年 11 月 5 日) の新機能または変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -59,7 +61,7 @@ ms.locfileid: "2896776"
 
 ### <a name="a-positions-available-for-assignment-date-can-be-earlier-than-the-activation-date-340103"></a>職位の割り当て可能日が、有効化した日より以前になることがある (340103)
 
-この変更により、職位が**有効化した日**より以前に**割り当て可能日**を選択した場合に警告が表示されるようになります。
+この変更により、職位が **有効化した日** より以前に **割り当て可能日** を選択した場合に警告が表示されるようになります。
 
 ### <a name="cant-create-a-compensation-change-request-in-employee-self-service-for-step-based-plans-376872"></a>ステップベースの計画では従業員セルフサービスで報酬変更要求を作成できない (376872)
 
@@ -69,7 +71,7 @@ ms.locfileid: "2896776"
 
 この変更により、30 文字を超える理由コードが Common Data Service で更新されます。 Common Data Service で行われた変更は、Talent にも反映されます。
 
-### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Talent から Finance and Operations への住所統合 (351961)
+### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Talent から Finance and Operations に対する住所の統合 (351961)
 
 このリリースにより、Talent で更新された住所が Finance and Operations では更新されないという問題が修正されます。 住所のブロックに対する変更が更新されます。
 

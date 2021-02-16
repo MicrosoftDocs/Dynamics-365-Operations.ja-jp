@@ -8,17 +8,16 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 8b3976ac82dbfb660530992a307de9a6b5970a34
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: f65545c6650ba7cc4e5e4676836bb48ece5a05e0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367044"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685088"
 ---
 # <a name="custom-help-toolkit-the-converthtmltojson-tool"></a>カスタム ヘルプ ツールキット: ConvertHtmlToJson ツール
 

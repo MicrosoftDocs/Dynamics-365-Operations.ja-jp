@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 42eaa3df5ab09278ed96506d17e1b42d4fc2a9e1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 371cc2efa64916698da8e4230825c3c949920698
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570267"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445126"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>固定資産の仕損としての処分
 
@@ -43,7 +43,7 @@ ms.locfileid: "2570267"
 > [!NOTE]
 > 会社の最高財務責任者 (CFO) または管理者と密接に協力して、各トランザクション タイプに使用する適切な勘定を識別し、処分プロセスとトランザクションを検証して、アカウントの正しい更新を生成することをお勧めします。
 
-固定資産を仕損として処分する前に、資産の取得金額、今年度の減価償却、前年度の減価償却、および資産の NBV に関連付けられている勘定科目を作成する必要があります。 固定資産トランザクション タイプは、**固定資産転記プロファイル**ページに一覧表示されます。  **固定資産 \> 設定 \> 固定資産転記プロファイル**の順に移動し、**処分**クイック タブでグリッドの上のフィールドにある**仕損**を選択します。 次の図は、**固定資産の転記プロファイル**ページにある固定資産トランザクション タイプの一覧を示しています。
+固定資産を仕損として処分する前に、資産の取得金額、今年度の減価償却、前年度の減価償却、および資産の NBV に関連付けられている勘定科目を作成する必要があります。 固定資産トランザクション タイプは、**固定資産転記プロファイル** ページに一覧表示されます。  **固定資産 \> 設定 \> 固定資産転記プロファイル** の順に移動し、**処分** クイック タブでグリッドの上のフィールドにある **仕損** を選択します。 次の図は、**固定資産の転記プロファイル** ページにある固定資産トランザクション タイプの一覧を示しています。
 
 
 [![仕損としての資産の処分 (図1)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
@@ -64,14 +64,14 @@ ms.locfileid: "2570267"
 [![固定資産の減価償却の例](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
-処分仕訳帳を作成するには、**固定資産 \> 仕訳入力 \> 固定資産仕訳帳l**の順に移動し、アクション ウィンドウで、**明細行**を選択します。 **処分 - 仕損**を選択し、固定資産 ID を選択します。 資産を完全に処分するには、**借方**フィールドまたは**貸方**フィールドに値を入力しないようにします。
+処分仕訳帳を作成するには、**固定資産 \> 仕訳入力 \> 固定資産仕訳帳l** の順に移動し、アクション ウィンドウで、**明細行** を選択します。 **処分 - 仕損** を選択し、固定資産 ID を選択します。 資産を完全に処分するには、**借方** フィールドまたは **貸方** フィールドに値を入力しないようにします。
 
 [![固定資産仕訳帳](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 固定資産の処分仕損トランザクションでは、固定資産帳簿のフィールド値が次のように変更されます。
 
-- **残高**セクションで、**ステータス**フィールドが**仕損**に更新されます。
-- **払出**セクションで、**処分日**フィールドは資産が仕損された日付に設定されます。
+- **残高** セクションで、**ステータス** フィールドが **仕損** に更新されます。
+- **払出** セクションで、**処分日** フィールドは資産が仕損された日付に設定されます。
 
 [![固定資産仕訳帳の詳細](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 

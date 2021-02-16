@@ -3,26 +3,25 @@ title: POS 要求ハンドラーのオーバーライド
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: ce81aaa57923b6f5f844629d186eea47f15f986a
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: fce05d92498bdbb9fe0d9349fa7a24b436daec36
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368779"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681516"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -115,6 +114,8 @@ ms.locfileid: "3368779"
 | LoyaltyCardPointsBalanceOperationRequestHandler     | POS でロイヤルティ カード残高操作を行うときに実行されます。 |
 | GetReportParametersClientRequestHandler             | レポート パラメーターを使用するときに実行されます。 POS レポートに入力パラメーターが必要な場合は、このダイアログが実行されてパラメーターを取得します。 |
 | GetPickingAndReceivingOrdersClientRequestHandler            | 注文がピッキングおよび入荷処理に対してフェッチされると実行されます。 |
+| GetStartingAmountClientRequestHandler               | POS で開始金額申告を行うとき (ビューに移動する前) に実行されます。 |
+
 
 
 **支払/入金計算要求ハンドラー**
@@ -271,12 +272,12 @@ ms.locfileid: "3368779"
         ```typescript
         {
         "extensionPackages": [
-           { 
-              "baseUrl": "SampleExtensions2" 
-            }, 
-            { 
-              "baseUrl": " SampleExtensions" 
-            }, 
+           { 
+              "baseUrl": "SampleExtensions2" 
+            }, 
+            { 
+              "baseUrl": " SampleExtensions" 
+            }, 
             {
              "baseUrl": "POSRequestHandlerExtension"
             }

@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 13661
 ms.assetid: 88d3758d-7d54-4c66-8b1a-f7a9ad8c825e
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 93d54a0c8d36b1e089212b6f5715c7ab8689891b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f16cbe79bfa77c1786bebda251069ff710e7eaa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811707"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685017"
 ---
 # <a name="cloud-hosted-environments-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のクラウド ホスト環境
 

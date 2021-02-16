@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4792cf982b9d5be3b30755483a5185a6d5a5a21
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207928"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432398"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
@@ -52,7 +52,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 | 発注書のタイプ        | 説明                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 仕訳帳        | ドラフト注文を作成するには、このタイプを使用します。 このタイプは、在庫数量に影響せず、在庫トランザクションの生成も行われません。 発注書仕訳帳明細行は、マスター スケジューリングには含まれません。                                                                                                       |
-| 発注書 | このタイプを使用して、注文が仕入先から確認済みとなり、注文が受領書をとおして処理され、仕入先に支払が行われる前に請求書の処理を行う、発注書を作成します。 このタイプの発注書が最も一般的です。                                                                          |
+| 発注書 | このタイプを使用して、注文が仕入先から確認済みとなり、注文が受領書を通して処理され、仕入先に支払が行われる前に請求書の処理を行う、発注書を作成します。 このタイプの発注書が最も一般的です。                                                                          |
 | 返品済注文 | このタイプを仕入先に返品する場合に使用します。 このタイプの注文は、仕入先が提供する返品確認 (RMA) 番号を指定する必要があります。 RMA 番号を、発注書の **一般** タブで指定します。 注文明細行には、負の数量が必要です。 |
 
 ## <a name="purchase-order-statuses"></a>発注書の状態

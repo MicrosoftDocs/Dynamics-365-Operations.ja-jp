@@ -1,9 +1,9 @@
 ---
-title: PowerBI.com の統合で使用可能となる機能
+title: Power BI の統合によって使用できる機能
 description: このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 02/09/2018
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1b96088d3be3aacde153a971c15d2c3fb3c34df
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: bb2671c9d8b3d69cd6c39396bf9b2582bf183bad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258544"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685721"
 ---
-# <a name="features-available-through-powerbicom-integration"></a>PowerBI.com の統合で使用可能となる機能
+# <a name="features-available-through-the-power-bi-integration"></a>Power BI の統合によって使用できる機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +41,7 @@ Microsoft SQL Server Reporting Services (SSRS) は、多くの場合に印刷が
 
 すべてのドキュメント以外のレポートまたは印刷する必要がないレポートに関しては、Power BI を採用します。
  
-過去には、_セルフ サービス レポート_および_アドホック レポート_といった用語で Power BI について言及していました。 ここで、_data exploration_ という用語を使用します。 この用語の変更は、パラダイムの微妙な変化を反映しています。 セルフ サービス レポートは、ユーザーが自分で作成したレポートです。 (または、パワー ユーザーがレポートを作成して他のユーザーと共有しました。 その後、これらのユーザーは、要件に応じてレポートを調整し続けました。多くの場合、グラフの形状を変更したり、新しい列を追加したり、グループを変更したり、新しいデータ ビューを作成したりしなければなりませんでした。 結果を報告書として考えるかもしれませんが、ユーザーはデータを調べ、列の周りをピボットし、グラフの形を変えたりして、ただ理解しようとしているだけです。 過去のテクノロジでは、ユーザーは大量のデータを対話的に参照できません。 したがって、ユーザーは「レポート」、または同じデータの多くのビューを作成する必要がありました。
+過去には、_セルフ サービス レポート_ および _アドホック レポート_ といった用語で Power BI について言及していました。 ここで、_data exploration_ という用語を使用します。 この用語の変更は、パラダイムの微妙な変化を反映しています。 セルフ サービス レポートは、ユーザーが自分で作成したレポートです。 (または、パワー ユーザーがレポートを作成して他のユーザーと共有しました。 その後、これらのユーザーは、要件に応じてレポートを調整し続けました。多くの場合、グラフの形状を変更したり、新しい列を追加したり、グループを変更したり、新しいデータ ビューを作成したりしなければなりませんでした。 結果を報告書として考えるかもしれませんが、ユーザーはデータを調べ、列の周りをピボットし、グラフの形を変えたりして、ただ理解しようとしているだけです。 過去のテクノロジでは、ユーザーは大量のデータを対話的に参照できません。 したがって、ユーザーは「レポート」、または同じデータの多くのビューを作成する必要がありました。
 
 Power BI では、Microsoft SQL Server のメモリ内データベース テクノロジーにより、レポートはインタラクティブなデータ探索の開始点にすぎません。 Power BI レポートのグラフは、ユーザーにクリックを促し、ビジュアルの形状を対話的に変更し、データを簡単にフィルタリングすることができます。 簡単に既存のレポートを調整したり、独自のデータ ビューを作成したりできます。 レポートを共有して、チームがデータ上でコラボレーションできます。
 
@@ -92,7 +91,7 @@ Excel を使用できるシナリオはいくつかあります。
 アドホックな「1 回限り」のレポートには、Excel のエクスポート機能を使用することを検討してください。 レポートをユーザー グループと共有する場合、エンティティの店舗を使用してそれらを作成することを検討する必要があります。
 
 ## <a name="sharing-and-using-reports-in-powerbicom"></a>PowerBI.com でレポートを共有して使用
-PowerBI.com は、Microsoft が提供するサービスです。 これにより、ダッシュボードおよびレポートを作成することができ、ユーザーのグループと共同作業することもできます。 レポートを作成する方法に関係なくに、PowerBI.com サービスにアップロードすることで、ユーザーとレポートを共有できます。 (このプロセスは_公開_とも呼ばれます。)
+PowerBI.com は、Microsoft が提供するサービスです。 これにより、ダッシュボードおよびレポートを作成することができ、ユーザーのグループと共同作業することもできます。 レポートを作成する方法に関係なくに、PowerBI.com サービスにアップロードすることで、ユーザーとレポートを共有できます。 (このプロセスは _公開_ とも呼ばれます。)
 
 レポートをアップロードした後、ユーザーは Web 上で (自宅またはオフィスでインターネットに接続されている場合) またはデバイス上のアプリを使用して表示、調整、検索することができます。
 

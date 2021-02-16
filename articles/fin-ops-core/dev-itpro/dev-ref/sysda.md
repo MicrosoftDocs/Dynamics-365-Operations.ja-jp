@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 72211
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37da0a13176e73b09e4b62c4e4fce9d37e7ca2d3
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 06a8f41eec22779a5e5148c6f3e1114be45f3215
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872655"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408753"
 ---
 # <a name="access-data-by-using-the-sysda-classes"></a>SysDa クラスを使用したデータへのアクセス
 
@@ -30,7 +29,7 @@ ms.locfileid: "2872655"
 
 このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。
 
-拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。 実際、API は、X++ コンパイラが生成するコードのラッパーです。 したがって、SysDa クラスを使用しても、たとえば**QueryRun**オブジェクトなどを使用してもオーバーヘッドは発生しません。 さらに、X++ コンパイラがデータアクセス明細書に対して行うチェックは、ユーザーの責任です。 たとえば、グローバルな一意識別子 ( GUID) を整数と比較する **where** 句を作成します。 X++ コンパイラは、この句をエラーとして診断します。
+拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。 実際、API は、X++ コンパイラが生成するコードのラッパーです。 したがって、SysDa クラスを使用しても、たとえば **QueryRun** オブジェクトなどを使用してもオーバーヘッドは発生しません。 さらに、X++ コンパイラがデータアクセス明細書に対して行うチェックは、ユーザーの責任です。 たとえば、グローバルな一意識別子 ( GUID) を整数と比較する **where** 句を作成します。 X++ コンパイラは、この句をエラーとして診断します。
 
 SysDa API には、カスタムクエリを作成するための広範な API セットが含まれています。 ただし、主なクエリ活動を駆動するもっと小さなタイプには以下のものがあります。
 
@@ -47,9 +46,9 @@ SysDa API には、カスタムクエリを作成するための広範な API �
 
 1. 指定されたレコードを含むテーブルインスタンスを指定する、**SysDaQueryObject** オブジェクトを作成および構成します。
 2. **Sysdasearchobject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。
-3. **Sysdasearchobject** オブジェクトを**SysDaSearchStatement.next()** メソッドに渡すことで、クエリの結果を繰り返します。
+3. **Sysdasearchobject** オブジェクトを **SysDaSearchStatement.next()** メソッドに渡すことで、クエリの結果を繰り返します。
 
-次の例では**intField**\<= **5** のTestTableのすべての行を検索します。
+次の例では **intField**\<= **5** のTestTableのすべての行を検索します。
 
 ```xpp
 // t is the table buffer that will hold the result.
@@ -94,7 +93,7 @@ while (ss.next(so))
 
 **Update** 明細書を実行するには、次の手順を実行します。
 
-1. **SysDaUpdateObject**オブジェクトを作成および構成します。
+1. **SysDaUpdateObject** オブジェクトを作成および構成します。
 2. **SysDaUpdateObject** オブジェクトを **SysDaUpdateStatement.execute()** オブジェクトに渡すことでデータを更新します。 更新ではデータベースのデータが変更されるため、**ttsbegin** および **ttscommit** ステートメントで **実行** するための呼び出しをラップする必要があります。
 
 次の例では、**intField** = **50** のすべての行について、**stringField** を **"fifty"** に更新します。
@@ -133,14 +132,14 @@ info("Updated value is: " + t1.stringField);
 
 ## <a name="insert-statement"></a>明細書の挿入
 
-**挿入**明細書を実行するには、次の手順を実行します。
+**挿入** 明細書を実行するには、次の手順を実行します。
 
 1. **SysDaInsertObject** オブジェクトを作成および構成して、挿入中に更新されるフィールドを指定します。
 2. 挿入する行のソースを指定する **SysDaQueryObject** オブジェクトを作成および構成します。 **SysDaQueryObject.予測()** のフィールドの順序は、**SysDaInsertObject.fields()** のフィールドの順序と一致している必要があります。
 3. **SysDaQueryObject** オブジェクトを、**SysDaInsertObject** オブジェクトに割り当てます。
-4. 新しい行を挿入するには**SysDaInsertObject** オブジェクトを **SysDaInsertStatement.executeQuery()** メソッドに渡します。
+4. 新しい行を挿入するには **SysDaInsertObject** オブジェクトを **SysDaInsertStatement.executeQuery()** メソッドに渡します。
 
-次の例では、行を **intField** = **40** と**stringField** = **"en-us"** を TestTable に挿入します。
+次の例では、行を **intField** = **40** と **stringField** = **"en-us"** を TestTable に挿入します。
 
 ```xpp
 TestTable t;
@@ -239,7 +238,7 @@ info("Number of rows after deletion: " + any2Str(t.RowCount()));
 
 SysDa クエリは複数の句をサポートします。
 
-+ **whereClause** – **where** 句は、**SysDaQueryExpression** から継承したオブジェクトから構築されます。 例は**SysDaEqualsExpression**、**SysDaNotEqualsExpression**、**SysDaLessThanExpression**があります。 完全な一覧は、アプリケーションエクスプローラーでフィルタ処理することによって確認できます。
++ **whereClause** – **where** 句は、**SysDaQueryExpression** から継承したオブジェクトから構築されます。 例は **SysDaEqualsExpression**、**SysDaNotEqualsExpression**、**SysDaLessThanExpression** があります。 完全な一覧は、アプリケーションエクスプローラーでフィルタ処理することによって確認できます。
 + **orderByClause**
 + **groupByClause**
 + **joinClauseKind** 付き **joinClause**
@@ -248,4 +247,4 @@ SysDa クエリは複数の句をサポートします。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-**toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および**SysDaQueryObject**オブジェクトに対して使用して、構築している明細書を表示できます。
+**toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および **SysDaQueryObject** オブジェクトに対して使用して、構築している明細書を表示できます。

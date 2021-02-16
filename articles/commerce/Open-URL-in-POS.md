@@ -19,11 +19,11 @@ ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: 137b699d5f60b9b62a5ce9501e3b2a262e60a88f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023117"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413660"
 ---
 # <a name="open-url-in-pos"></a>POS で URL を開く
 
@@ -39,15 +39,15 @@ ms.locfileid: "3023117"
 
 ## <a name="open-in-new-window"></a>新しいウィンドウで開く
 
-このコンフィギュレーションは、URL を新しいウィンドウで開くか、アプリ内で開くかどうかを定義します。 アプリ内で Web URL を開くようにコンフィギュレーションされている場合は、サイド ナビゲーション ウィンドウおよび POS 上部のバーが表示され、ユーザー操作が可能になります。 新しいウィンドウで開くようにコンフィギュレーションされている場合は、URL は Windows 用の Modern POS の新しいアプリ ウィンドウ、およびその他のすべての POS クライアントの新しいブラウザー タブで開きます。 これを有効にするには、**新しいウィンドウで開く**オプションを選択して URL をコンフィギュレーションする必要があります。
+このコンフィギュレーションは、URL を新しいウィンドウで開くか、アプリ内で開くかどうかを定義します。 アプリ内で Web URL を開くようにコンフィギュレーションされている場合は、サイド ナビゲーション ウィンドウおよび POS 上部のバーが表示され、ユーザー操作が可能になります。 新しいウィンドウで開くようにコンフィギュレーションされている場合は、URL は Windows 用の Modern POS の新しいアプリ ウィンドウ、およびその他のすべての POS クライアントの新しいブラウザー タブで開きます。 これを有効にするには、**新しいウィンドウで開く** オプションを選択して URL をコンフィギュレーションする必要があります。
 
 ## <a name="open-within-pos"></a>POS 内で開く
 
-POS 内で Web URL を開くことは、現在 Windows 用 Modern POS に対してのみサポートされています。 他のクライアントでは、この機能は現在開発中で、将来の更新でリリースされる予定です。 これを有効にするには、**新しいウィンドウで開く**オプションを選択せずに URL をコンフィギュレーションする必要があります。
+POS 内で Web URL を開くことは、現在 Windows 用 Modern POS に対してのみサポートされています。 他のクライアントでは、この機能は現在開発中で、将来の更新でリリースされる予定です。 これを有効にするには、**新しいウィンドウで開く** オプションを選択せずに URL をコンフィギュレーションする必要があります。
 
 ## <a name="open-a-native-app"></a>ネイティブ アプリを開く
 
-この機能では、ネイティブ アプリを開くための Web 以外の URL を指定することもできます。 たとえば、MailTo、SIP、IM、または MSTEAMS などの、ホスト デバイス上のそれぞれのネイティブ アプリで処理できる URL プロトコルを指定できます。 これを有効にするには、**新しいウィンドウで開く**オプションを選択して URL をコンフィギュレーションする必要があります。
+この機能では、ネイティブ アプリを開くための Web 以外の URL を指定することもできます。 たとえば、MailTo、SIP、IM、または MSTEAMS などの、ホスト デバイス上のそれぞれのネイティブ アプリで処理できる URL プロトコルを指定できます。 これを有効にするには、**新しいウィンドウで開く** オプションを選択して URL をコンフィギュレーションする必要があります。
 
 - Windows のコンピューターで、Deployment Image Servicing and Management (DISM) を使用してコンピューターを設定している場合は、[既定のアプリケーション アソシエーションをエクスポートまたはインポートする](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) を参照して、既定のプロトコル アソシエーションを設定できます。
 - Intune のような MDM を使用して Windows コンピューターを管理している場合は、[ポリシー CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults) を参照してください。
@@ -76,10 +76,10 @@ Windows、iOS、および Android では、アプリ プロトコル アソシ�
 
 POS で開くように URL をコンフィギュレーションするには、次の手順を実行します。
 
-1. 本社で、**Retail および Commerce \>チャネル設定 \> POS 設定 \> POS \> 画面レイアウト**に移動します。
-2. **ボタン グリッド \> デザイナー**を選択します。
+1. 本社で、**Retail および Commerce \>チャネル設定 \> POS 設定 \> POS \> 画面レイアウト** に移動します。
+2. **ボタン グリッド \> デザイナー** を選択します。
 3. 新しいボタンを作成します。
-4. **ボタン**プロパティを選択します。
-5. アクションとして **URL を開く**を選択します。
+4. **ボタン** プロパティを選択します。
+5. アクションとして **URL を開く** を選択します。
 6. 使用する URL を入力します。
 7. 新しいウィンドウで URL を開くかどうかをコンフィギュレーションします。

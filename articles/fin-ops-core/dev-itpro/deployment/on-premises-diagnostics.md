@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 2544f018c815d8513e1217b5cb2bef1e148fad3b
-ms.sourcegitcommit: 708b3966b1c2bd4999f528d4a03a89d9bb530616
+ms.openlocfilehash: ee21526058eb72ef6fd32a7fc29070704a1a2d7f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100515"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685465"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -62,7 +61,7 @@ Finance + Operations (オンプレミス) の配置と実行を診断するた�
 - **Kibana** – Elasticsearch に格納されているデータを照会するためのインタフェース。
 
 > [!NOTE]
-> 既定では、Elastic Stack クラスター内の通信は HTTPS 経由で送信され**ない**ようになっています。 リスクを考慮し、それらのリスクの軽減策を準備または実装していない限り、Elastic スタックを設定しないでください。 X-Pack の[支払済バージョン](https://www.elastic.co/subscriptions) は、Elastic Stack のコミュニケーションを暗号化するために使用されます。 設定の詳細については、[クラスタでの TLS の設定](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html)を参照してください。 オープン ソース [Elasticsearch プラグイン](https://github.com/floragunncom/search-guard-ssl) もあります。 ドキュメントによると、Microsoft はこのプラグインをテストしていませんが、HTTPS を有効にすることができます。
+> 既定では、Elastic Stack クラスター内の通信は HTTPS 経由で送信され **ない** ようになっています。 リスクを考慮し、それらのリスクの軽減策を準備または実装していない限り、Elastic スタックを設定しないでください。 X-Pack の[支払済バージョン](https://www.elastic.co/subscriptions) は、Elastic Stack のコミュニケーションを暗号化するために使用されます。 設定の詳細については、[クラスタでの TLS の設定](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html)を参照してください。 オープン ソース [Elasticsearch プラグイン](https://github.com/floragunncom/search-guard-ssl) もあります。 ドキュメントによると、Microsoft はこのプラグインをテストしていませんが、HTTPS を有効にすることができます。
 
 Elastic スタックを展開する場合、このトピックで説明されている手順を実行するなら異なる経験になるかもしれません。 テストでは、Microsoft は、Elastic Stack コンポーネントのバージョン 6.2.3 と、Microsoft Dynamics 365 for Finance and Operations 7.3 およびプラットフォーム更新プログラム 12 を使用しました。
 
@@ -98,7 +97,7 @@ Elasticsearch のインストールは、非常に簡単です。 テストで�
 
 オペレーティング システム (OS) が再起動された場合に、Elasticsearch がもう一度実行を開始するのを容易にするために、Microsoft は、それを Windows 上でサービスとしてインストールしました。 インストーラーを使用して、サービスを設定できます。
 
-インストーラーの**コンフィギュレーション**で、Microsoft は、各 Elasticsearch ノードをクラスターにインストールするときに、同じクラスター名を使用しました。
+インストーラーの **コンフィギュレーション** で、Microsoft は、各 Elasticsearch ノードをクラスターにインストールするときに、同じクラスター名を使用しました。
 
 Microsoft はすべての Elasticsearch ノードを Data、Master、Ingest という 3 つの役割をすべて実行するように設定しました。
 
@@ -106,7 +105,7 @@ Kibana と Elasticsearch の使用量に応じて、メモリ増設を検討し�
 
 設定した Elasticsearch ノードの数に応じて、検出の最小マスターノードを適切に設定できます。 わからない場合は、マスター ノードを空にしておくことができます。 探索および Node の詳細については、[Node](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html) を参照してください。
 
-発見可能性に関しては、**ネットワークの設定**で、Microsoft は、各ノードの**ネットワーク ホスト**値をノードの IP アドレスに設定し、すべての Elasticsearch ノードの IP アドレスを、各ノードの **Unicast Hosts** リストに追加します。 たとえば、IP アドレスが 10.0.0.12 のオーケストレータ #1 の場合、Microsoft は **Network host** の値を **10.0.0.12** に設定し、次の IP アドレスを **Unicast Hosts** リストに追加しました。10.0.0.12 および 10.0.0.13 (10.0.0.13 はオーケストレータ #2)
+発見可能性に関しては、**ネットワークの設定** で、Microsoft は、各ノードの **ネットワーク ホスト** 値をノードの IP アドレスに設定し、すべての Elasticsearch ノードの IP アドレスを、各ノードの **Unicast Hosts** リストに追加します。 たとえば、IP アドレスが 10.0.0.12 のオーケストレータ #1 の場合、Microsoft は **Network host** の値を **10.0.0.12** に設定し、次の IP アドレスを **Unicast Hosts** リストに追加しました。10.0.0.12 および 10.0.0.13 (10.0.0.13 はオーケストレータ #2)
 
 **Elasticsearch 6.3 以降のバージョンをインストールする場合、この段落は無視できます。** 今または後で、X-Pack をインストールすることができます。 設定および X-Pack をインストールする必要があるかどうかに関する詳細については、このトピックの「X-Pack」を参照してください。 ここでは、X-Pack がどういうものか理解していない限り、インストールしないでください。
 
@@ -129,7 +128,7 @@ Logstash が起動時に実行されることを確認するために、Non-Suck
     .\nssm.exe install Logstash
     ```
 
-3. **アプリケーション**タブで、次のフィールドを設定して、**保存**をクリックします。
+3. **アプリケーション** タブで、次のフィールドを設定して、**保存** をクリックします。
 
     - **パス:** C:\\ELK\\Logstash\\6.2.4\\bin\\logstash.bat
     - **起動ディレクトリ:** C:\\ELK\\Logstash\6.2.4
@@ -147,7 +146,7 @@ Microsoft が実行したテストでは、NSSM には、インストールさ�
 
 Microsoft は、Logstash に対し構成ファイルを作成し、[C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises) にプットします。このファイルは診断で、便利な変換を実行します。
 
-設定のためコンフィギュレーションを行うには、クラスターの Elasticsearch ノードを指すように、**出力**セクションの**ホスト**フィールドを変更する必要があります。 たとえば、**ホスト** を **\["ORCH1:9200", "ORCH2:9200"\]** に変更します。
+設定のためコンフィギュレーションを行うには、クラスターの Elasticsearch ノードを指すように、**出力** セクションの **ホスト** フィールドを変更する必要があります。 たとえば、**ホスト** を **\["ORCH1:9200", "ORCH2:9200"\]** に変更します。
 
 構成は、次のセクションから Winlogbeat 構成を使用してテストされました。
 
@@ -177,9 +176,9 @@ server.name: "Dyn365FinOps On-Premises Diagnostics"
 elasticsearch.url: "http://ORCH1:9200"
 ```
 
-Kibana から、Microsoft は**管理**タブでインデックス パターンを定義しなければなりませんでした。インデックス パターンは名前でインデックスをグループ化するため、1 つのインデックス パターンが作成された 2 つのインデックス: 配置-\* およびランタイム-\* を必要とするためです。 インデックス名は、大文字と小文字が区別されます。
+Kibana から、Microsoft は **管理** タブでインデックス パターンを定義しなければなりませんでした。インデックス パターンは名前でインデックスをグループ化するため、1 つのインデックス パターンが作成された 2 つのインデックス: 配置-\* およびランタイム-\* を必要とするためです。 インデックス名は、大文字と小文字が区別されます。
 
-Microsoft は、既定のパターンとしてランタイム -\* インデックス パターンを設定しました。 **管理**タブのインデックス パターンを確認するときは、アスタリスク (\*) をクリックします。 インデックス パターンが、**Discover** タブに表示されます。
+Microsoft は、既定のパターンとしてランタイム -\* インデックス パターンを設定しました。 **管理** タブのインデックス パターンを確認するときは、アスタリスク (\*) をクリックします。 インデックス パターンが、**Discover** タブに表示されます。
 
 [![ランタイム インデックス パターン](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
@@ -190,13 +189,13 @@ Microsoft は Kibana を Logstash と同じ方法でサービスとして実行�
 #### <a name="example-queries-on-the-discover-tab-in-kibana"></a>Kibana の検出タブでのクエリの例
 次のサンプル クエリでは、診断データの調査を開始できます。 例に示されているもの以上のものが必要な場合、次のクエリのいずれかをお試しください。
 
-- **低速データベース クエリの検索:** 検索フィールドに**低速**と入力して、イベント データのどこかに「低速」という単語が含まれているイベントを検索します。 より正確にするには、**AosDatabaseSlowQuery** のタスク名を持つイベントを検索し、検索フィールドに **TaskName:AosDatabaseSlowQuery** と入力します。
-- **最新の例外を見つける:** **例外**を検索フィールドに入力して、例外をスローしたイベント、または例外を処理してログに記録したイベントを探します。 Kibana の右上隅で、検索を制限する必要がある期間を選択します。 そこで設定したタイム フレームは、タブの間で保持されます。 したがって、**視覚化**タブ上のデータは選択されているタイム フレームに反映されます。
+- **低速データベース クエリの検索:** 検索フィールドに **低速** と入力して、イベント データのどこかに「低速」という単語が含まれているイベントを検索します。 より正確にするには、**AosDatabaseSlowQuery** のタスク名を持つイベントを検索し、検索フィールドに **TaskName:AosDatabaseSlowQuery** と入力します。
+- **最新の例外を見つける:** **例外** を検索フィールドに入力して、例外をスローしたイベント、または例外を処理してログに記録したイベントを探します。 Kibana の右上隅で、検索を制限する必要がある期間を選択します。 そこで設定したタイム フレームは、タブの間で保持されます。 したがって、**視覚化** タブ上のデータは選択されているタイム フレームに反映されます。
 
     [![検索の時間枠](./media/time-visualize.png)](./media/time-visualize.png) 
 
 - **AOS ノードからイベントを検索:** ノードからすべてのイベントを検索するために、検索フィールドに **host:AOS1** と入力します。
-- **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある**関連するドキュメントを表示します**をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
+- **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある **関連するドキュメントを表示します** をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
 
     [![関連するドキュメントを表示します](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
 
@@ -243,7 +242,7 @@ xpack.monitoring.elasticsearch.url: "http://orch1:9200"
 X-Pack の支払済バージョンには、クラスター、パスワードで保護されたデータ アクセスなどの接続に使用するための HTTPS 暗号化が含まれています。 X-Pack の詳細については、[Elastic Web サイト](https://www.elastic.co/products/x-pack)を参照してください。
 
 ### <a name="export-a-query-to-a-csv-file"></a>CSV ファイルへのクエリのエクスポート
-Kibana では、**検出**タブで、クエリを作成し、保存します。 クエリを保存した後、**検出**ページの上部にある**レポート** タブの **CSV を生成**をクリックします。
+Kibana では、**検出** タブで、クエリを作成し、保存します。 クエリを保存した後、**検出** ページの上部にある **レポート** タブの **CSV を生成** をクリックします。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="you-dont-receive-any-data-in-kibana"></a>Kibana 内のデータを受信しません

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178746"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694692"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
@@ -43,9 +42,9 @@ ms.locfileid: "2178746"
 
 ## <a name="decide-whether-to-model-internal-organizations-as-legal-entities-or-operating-units"></a>内部組織を法人または作業単位としてシミュレーションするかどうかを決定
 
-業務を表す最低 1 つの法人が必要です。 法人は、法的契約を締結することが可能であり、業績を報告する財務諸表の作成が要求されます。
+業務を表す 1 つ以上の法人が必要です。 法人は、法的契約を締結することが可能であり、業績を報告する財務諸表の作成が要求されます。
 
-法人は、トランザクション業務または連結に対して使用できます。 このことは、Finance and Operations での法人は、ビジネスの実際のエンティティを必ずしも表さないことを意味します。 たとえば、トランザクションに参加する会社は、関連法人を所有できます。 このシナリオでは、トランザクションのために法人が必要であり、関連法人の業績および残高を連結するために仮想の法人が必要です。
+法人は、トランザクション業務または連結に対して使用できます。 このことは、 Finance and Operations での法人は、ビジネスの実際のエンティティを必ずしも表さないことを意味します。 たとえば、トランザクションに参加する会社は、関連法人を所有できます。 このシナリオでは、トランザクションのために法人が必要であり、関連法人の業績および残高を連結するために仮想の法人が必要です。
 
 支社などの企業の内部組織を、追加の法人として、または主法人の作業単位として表すことができます。 作業単位は法的に定義された組織である必要はありません。 作業単位は、企業の経済資源と業務プロセスの管理に使用されます。 たとえば、部門、コスト センターは作業単位です。
 
@@ -174,7 +173,7 @@ ms.locfileid: "2178746"
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>組織を作業単位としてシミュレーションする場合
 
-法定レポートは、別のアプリケーションを使用して作成する必要があります。 本社の要件とは異なる各作業単位の要件をサポートするために、データを Finance and Operations アプリで確実に取得する必要があります。
+法定レポートは、別のアプリケーションを使用して作成する必要があります。 本社の要件とは異なる各作業単位の要件をサポートするように、データを Finance and Operations アプリで確実に取得する必要があります。
 
 ### <a name="currency"></a>通貨
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-10
 ms.dyn365.ops.version: App 10.0
-ms.openlocfilehash: 7017dae97c49e9b9082089c3d934f347b6be1442
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fbe2137977cc0096ef592515db26953bda318e3d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183328"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409344"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-1002"></a>Dynamics 365 for Finance and Operations バージョン 10.0.2 の拡張機能の変更
 

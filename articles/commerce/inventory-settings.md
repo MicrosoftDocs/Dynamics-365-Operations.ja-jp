@@ -3,7 +3,7 @@ title: 在庫設定を適用する
 description: このトピックでは在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7fc81c190806a0bdb50569f526589cfa1808ce0c
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417441"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517067"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定を適用する
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 このトピックでは在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
@@ -39,6 +38,9 @@ ms.locfileid: "3417441"
 Dynamics 365 Commerce は、製品の手持在庫の見積を提供します。 見積済手持在庫の計算方法については、[小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md) を参照してください。
 
 Commerce サイト ビルダーでは、在庫のしきい値と範囲を製品またはカテゴリに対して定義できます。 在庫を在庫あり、低在庫、または在庫切れに分類できるかを判定します。 詳細については、[在庫バッファーと在庫レベルのコンフィギュレーション](inventory-buffers-levels.md) を参照してください。
+
+> [!NOTE]
+> 在庫のしきい値と範囲のサポートは、Dynamics 365 Commerce 10.0.12 リリースで利用できます。
 
 ## <a name="inventory-settings"></a>在庫設定
 
@@ -56,6 +58,9 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
     - **在庫切れ** を選択すると、"在庫切れ" メッセージのみが表示されます。
 
 - **在庫切れしきい** – この古い数値設定は、**基準となる在庫レベル** 設定に対して **在庫切れしきい** 値が選択されている場合にのみ有効になります。
+
+> [!IMPORTANT] 
+> これらの設定は、Dynamics 365 Commerce のリリース バージョン 10.0.12 で使用可能です。 古いバージョンの Dynamics 365 Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 appsettings.json ファイルを更新する手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)を参照してください 。
 
 ## <a name="modules-that-use-inventory-settings"></a>在庫設定を使用するモジュール
 
@@ -75,7 +80,7 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
 
 ## <a name="additional-resources"></a>追加リソース
 
-[スタート キットの概要](starter-kit-overview.md)
+[モジュール ライブラリの概要](starter-kit-overview.md)
 
 [在庫バッファーと在庫レベルのコンフィギュレーション](inventory-buffers-levels.md)
 
@@ -86,3 +91,5 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
 [アカウント管理ページとモジュール](account-management.md)
 
 [店舗セレクター モジュール](store-selector.md)
+
+[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)

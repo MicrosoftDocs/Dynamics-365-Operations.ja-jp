@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bdc4b5c31d9a478a5226ae6b5e8c776de3b661dd
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 11e006e41f467a594521dfc601f46b4d1b492ce5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144838"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445271"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>ドキュメントの売上税トランザクションの作成
 

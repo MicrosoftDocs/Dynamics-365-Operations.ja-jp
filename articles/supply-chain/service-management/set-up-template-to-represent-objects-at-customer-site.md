@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35c7237bd84aeb13f6c24626a6aaa722f8ad5756
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206706"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431635"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>顧客のサイトのオブジェクトを表すためのテンプレートの設定 
 
@@ -32,19 +32,19 @@ ms.locfileid: "3206706"
 
 顧客サイトのオブジェクトを表すテンプレートを設定するには、この手順を使用します。
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約**の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
 
-2.  サービス契約をダブルクリックするか、**サービス契約**をクリックして新しいサービス契約を作成します。
+2.  サービス契約をダブルクリックするか、**サービス契約** をクリックして新しいサービス契約を作成します。
 
 3.  **設定** タブをクリックします。
 
-4.  **サービス対象**をクリックし、テンプレートの部品表 (BOM) をサービス契約に関連付けます。
+4.  **サービス対象** をクリックし、テンプレートの部品表 (BOM) をサービス契約に関連付けます。
 
-5.  **サービス対象**フォームで、サービス対象を選択し、**機能** \> **テンプレート BOM の添付**をクリックします。
+5.  **サービス対象** フォームで、サービス対象を選択し、**機能** \> **テンプレート BOM の添付** をクリックします。
 
-6.  **テンプレート BOM の選択**フォームの、**テンプレート BOM**フィールドでテンプレート BOM を選択し、**OK** をクリックします。
+6.  **テンプレート BOM の選択** フォームの、**テンプレート BOM** フィールドでテンプレート BOM を選択し、**OK** をクリックします。
 
-7.  **サービス対象**フォームで**デザイナ**をクリックして、BOM が目的の対象を表すようにテンプレート BOM の明細行を変更します。
+7.  **サービス対象** フォームで **デザイナ** をクリックして、BOM が目的の対象を表すようにテンプレート BOM の明細行を変更します。
 
 8.  フォームを閉じて、変更を保存します。
 

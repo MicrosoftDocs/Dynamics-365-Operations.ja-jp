@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58911
 ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a64d6929bbe316ea0eacd9684cb28cf9034ca20
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: e2b706e2ff3ad9535d69d28af4ac81fafa5f7130
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026172"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682637"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
@@ -33,8 +32,8 @@ ms.locfileid: "3026172"
 
 アプリケーション コードのすべての電子レポート機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
 
-- **引数の数を固定** – これらの関数は、接頭語 **parm** (次のサンプルコードの **parmInput**、**parmStartNum**を参照してください) を持つメソッドを含むクラスで表されます。 引数の順序は、**SysOperationDisplayOrderAttribute** 属性によって設定されます。
-- **可変数の引数** – これらの機能は (**ERExpressionGenericCase** クラスを参照してください)**ERIObjectContainer** インターフェイスを実装するクラスで表されます。 追加の**追加**メソッドを使用して関数を受け入れる型を宣言します。
+- **引数の数を固定** – これらの関数は、接頭語 **parm** (次のサンプルコードの **parmInput**、**parmStartNum** を参照してください) を持つメソッドを含むクラスで表されます。 引数の順序は、**SysOperationDisplayOrderAttribute** 属性によって設定されます。
+- **可変数の引数** – これらの機能は (**ERExpressionGenericCase** クラスを参照してください)**ERIObjectContainer** インターフェイスを実装するクラスで表されます。 追加の **追加** メソッドを使用して関数を受け入れる型を宣言します。
 
 電子申告式の新しい機能を導入するのに推奨されている手順を次に示します。
 

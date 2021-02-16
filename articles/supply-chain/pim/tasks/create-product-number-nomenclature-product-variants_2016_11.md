@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6970b37594bc999f8f1ea112a6056f15faccc02c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5f75d7e493255b9c09c10b121f388854861cb0fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213252"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431960"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>コンフィギュレーション済みの製品バリアントの製品番号の分類の作成
 

@@ -7,7 +7,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
-ms.technology: Dynamics 365 Human Resources;PowerApps;Flow;Common Data Service
+ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36b8145764338b91bfedf96c43a7137a89831742
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: 2e89347829ccd6569d568db42c79b5fea2316ba3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410107"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527029"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した拡張
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Microsoft Power Apps および Microsoft Power Automate を使用する Microsoft Dynamics 365 Human Resources の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを Power Apps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
@@ -34,16 +36,16 @@ ms.locfileid: "3410107"
 
 ## <a name="prerequisites"></a>必要条件
 
-- パッケージをインポートするには、ユーザーは**環境メーカー**のアクセス許可が必要です。
+- パッケージをインポートするには、ユーザーは **環境メーカー** のアクセス許可が必要です。
 - アプリをエクスポートまたはインポートするには、Power Apps プラン 2 ライセンスもしくは Power Apps プラン 2 試用版ライセンスが必要です。
 
-## <a name="integration-with-office-365-power-automate"></a>Office 365 および Power Automate との統合
+## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365, Power Automate との統合
 
-**Office 365 との統合**アプリケーションを使用して、Microsoft Office 365 からサインイン ユーザーのチーム情報を抽出することができます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
+**Microsoft 365 との統合** アプリを使用すると、Microsoft 365 からサインイン ユーザーのチーム情報を抽出できます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
 
 このアプリは他のシナリオのために拡張することができます。 たとえば、チームの休暇情報、カレンダーのイベント、およびそのチーム固有のイベントを表示するために使用することができます。
 
-**Office 365, Power Automate との統合**アプリケーションをダウンロードするには、Microsoft ダウンロード センターの [Office 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
+**Microsoft 365, Power Automate との統合** アプリをダウンロードするには、Microsoft ダウンロード センターの [Microsoft 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – SQL 接続と実行
 

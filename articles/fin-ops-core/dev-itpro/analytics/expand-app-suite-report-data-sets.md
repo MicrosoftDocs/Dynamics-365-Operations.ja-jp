@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 94b4646344d519742de33e2e9aaf0704fc6c10fb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0aef414d357ee5175b44dd2f831245daf39b5ad2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026148"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682811"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 
@@ -56,18 +55,18 @@ ms.locfileid: "3026148"
 
 [![カスタム ソリューション (カスタマイズ後)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**フリート管理拡張**モデルにカスタム レポートを追加します。
+1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**フリート管理拡張** モデルにカスタム レポートを追加します。
 2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
     [![Visual Studio でのプロジェクト設定](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 
-3. **カスタム レポート データを格納するテーブル拡張機能を追加します。** RDP クラスによって設定される **TmpFMRentalsByCust** データ セットの一時的キャッシュを検索し、モデルで拡張を作成します。 レポート サーバーのデータの格納に使用するフィールドを定義し、**保存**をクリックして変更を保存します。 次の図は、この例で必要なテーブル拡張機能を示しています。
+3. **カスタム レポート データを格納するテーブル拡張機能を追加します。** RDP クラスによって設定される **TmpFMRentalsByCust** データ セットの一時的キャッシュを検索し、モデルで拡張を作成します。 レポート サーバーのデータの格納に使用するフィールドを定義し、**保存** をクリックして変更を保存します。 次の図は、この例で必要なテーブル拡張機能を示しています。
 
     [![この例の拡張テーブル](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
 
-4. **プロジェクトに、カスタム レポートを追加します。** カスタム デザインは、標準的なソリューションによく似ています。 したがって、**フリート管理拡張**モデルで既存のアプリケーション レポートを複製してから、レンタル料金コンテナーにカスタム タイトルと追加テキスト ボックスが含まれるようにレポート デザインを更新することができます。
+4. **プロジェクトに、カスタム レポートを追加します。** カスタム デザインは、標準的なソリューションによく似ています。 したがって、**フリート管理拡張** モデルで既存のアプリケーション レポートを複製してから、レンタル料金コンテナーにカスタム タイトルと追加テキスト ボックスが含まれるようにレポート デザインを更新することができます。
 5. **レポートの名前を変更して、わかりやすい名前にします。** この例では、カスタム レポートの **FERentalsByCustomer** の名前を変更し、標準のソリューションと区別します。
-6. **レポート データ セットの参照を復元します。** レポート デザイナーを開いて、**データセット**コレクションを展開し、**FMRentalsByCustDS** と名付けられたデータ セットを右クリックし、それから**復元**をクリックします。 データ セットは、新しく導入された列を含むように拡張されます。 したがって、これらの列は、レポート デザイナーで使用できるようになりました。
+6. **レポート データ セットの参照を復元します。** レポート デザイナーを開いて、**データセット** コレクションを展開し、**FMRentalsByCustDS** と名付けられたデータ セットを右クリックし、それから **復元** をクリックします。 データ セットは、新しく導入された列を含むように拡張されます。 したがって、これらの列は、レポート デザイナーで使用できるようになりました。
 7. **レポート デザインのカスタマイズ** デザイナーは、カスタム ソリューションを作成するために使用できる自由形式のデザイン サーフェスを提供します。 次の図は、この例で使用されるカスタム デザインを示しています。
 
     [![この例のカスタム デザイン](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)

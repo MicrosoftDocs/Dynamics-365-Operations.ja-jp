@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0ad6f86cfb21b2d74078fba1e9ae2dd358eb4cbb
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 92c7c98f3c38a30a6da177cd0c923e408572a9c3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454801"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687926"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -54,7 +53,7 @@ BPM にアクセスするには、これらの手順に従います。
     - **グローバル ライブラリ** – このセクションには、Microsoft が一般的に公開している業界に共通する標準的なビジネス プロセスが含まれています。
 
 3. 標準的なビジネス プロセス ライブラリを **グローバル ライブラリ** セクションから **プロジェクト ライブラリ** セクションにコピーするには、**グローバル ライブラリ** セクションでタイルの右上隅を選択し、**コピー** を選択します。
-4. 業務プロセス ライブラリが**プロジェクト ライブラリ** セクションに追加された後、タイルを選択して業務プロセス ライブラリを表示します。
+4. 業務プロセス ライブラリが **プロジェクト ライブラリ** セクションに追加された後、タイルを選択して業務プロセス ライブラリを表示します。
 
 ## <a name="additional-resources"></a>追加リソース
 

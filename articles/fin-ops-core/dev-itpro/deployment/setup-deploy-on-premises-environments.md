@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.custom: NotInToc
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3b841058284cc7db18b1b4607b782ce2145a02bc
-ms.sourcegitcommit: d27803a29a1668cf1932e848ed40be87a663807c
+ms.openlocfilehash: b9d438ca95c4d3701b4e4ee35fb82b12d34d0379
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3176773"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683975"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 
@@ -37,4 +36,4 @@ ms.locfileid: "3176773"
 
 > [!NOTE]
 > [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all)が利用可能になりました。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
-> 以下のコンテンツに関する質問またはフィードバックがある場合は、このページの下部にある**コメント** セクションに転記します。
+> 以下のコンテンツに関する質問またはフィードバックがある場合は、このページの下部にある **コメント** セクションに転記します。

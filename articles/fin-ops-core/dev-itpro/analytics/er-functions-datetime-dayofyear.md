@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d24aabb582151b0b357b64a988cc932a9c9f3cea
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: b9b937e7fae3e90d1a87196fab653dfac8e94179
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070670"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682392"
 ---
-# <a name="DAYOFYEAR">DAYOFYEAR ER 関数</a>
+# <a name="dayofyear-er-function"></a>DAYOFYEAR ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`DAYOFYEAR` 関数は、1 月 1 日から指定された日までの日数を表す*整数*値を返します。
+`DAYOFYEAR` 関数は、1 月 1 日から指定された日までの日数を表す *整数* 値を返します。
 
 ## <a name="syntax"></a>構文
 

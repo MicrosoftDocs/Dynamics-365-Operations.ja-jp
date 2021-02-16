@@ -3,26 +3,25 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 55651
 ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 4fe019601cc323ba41e4cf030e02208206c6342d
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.openlocfilehash: fd6dfbc5947436420f08a01da696c32060c98da2
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403324"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693683"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -34,7 +33,7 @@ ms.locfileid: "3403324"
 
 Web アプリケーションは、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。
 
-- Windows 10 の Microsoft Edge (公開されている最新のバージョン)
+- Windows 10 の Microsoft Edge (公開されている最新のバージョン)。 これは、レガシ Edge と Chromium に基づく Microsoft Edge の両方に適用さ れます。 
 - Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
 - Google Chrome (公開されている最新バージョン) 
 - Apple Safari (公開されている最新バージョン)

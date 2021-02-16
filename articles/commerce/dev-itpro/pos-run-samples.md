@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 81f955b7dcefaef515abd112b37b9cff7c8d1bd5
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 5eb0e98d9e4f43f17bd7d5983a1e2fac32a128a6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057656"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681508"
 ---
 # <a name="run-the-point-of-sale-pos-samples"></a>販売時点管理 (POS) サンプルを実行
 
@@ -102,7 +101,7 @@ ms.locfileid: "3057656"
     > [!Note] 
     > その他の拡張機能パッケージ フォルダーは、Visual Studio プロジェクトに含まれていない場合でも、追加する予定でない場合は除外リストに含める必要があります。
 6. 検証のために Modern POS を使用している場合、**ソリューション プラットフォーム** を **x86** に、**オプションの配置** を **ローカル コンピューター** または **シミュレーター** に設定します。
-7. **すべて保存**をクリックし、**F5** キーを押して拡張機能を検証します。
+7. **すべて保存** をクリックし、**F5** キーを押して拡張機能を検証します。
 
     > [!Note] 
     > クラウド POS では、Visual Studio でクリーン ソリューションを使用して、ソリューションを再構築します。

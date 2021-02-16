@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 148da191ce4ea99c237895c40ec007a1aa0cd537
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150795"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679609"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>プリンター出力先
 
@@ -37,7 +36,7 @@ ms.locfileid: "3150795"
 
 ## <a name="make-the-printer-destination-available"></a>プリンター送信先を利用可能にする
 
-Microsoft Dynamics 365 Finance の現在のインスタンスで**プリンター**送信先を利用可能にするには、**機能管理**ワークスペースに移動して、順序どおりに次の機能を有効にします。
+Microsoft Dynamics 365 Finance の現在のインスタンスで **プリンター** 送信先を利用可能にするには、**機能管理** ワークスペースに移動して、順序どおりに次の機能を有効にします。
 
 1. Microsoft Office 形式から PDF に電子申告送信ドキュメントを変換する
 2. 送信ドキュメントの電子申告の送信先としてのドキュメント回覧エージェント
@@ -46,24 +45,24 @@ Microsoft Dynamics 365 Finance の現在のインスタンスで**プリンタ�
 
 ### <a name="applicability"></a>適合性
 
-**プリンター**送信先は、印刷可能な PDF 形式 (PDF 合併または PDF ファイル形式の要素) または Microsoft Office Excel/Word 形式 (Excel ファイル) のいずれかで出力を生成するために使用されるファイル コンポーネントに対してのみコンフィギュレーションできます。 出力が PDF 形式で生成された場合、プリンターに送信されます。 出力が Microsoft Office 形式で生成された場合、自動的に PDF 形式に変換され、プリンターに送信されます。
+**プリンター** 送信先は、印刷可能な PDF 形式 (PDF 合併または PDF ファイル形式の要素) または Microsoft Office Excel/Word 形式 (Excel ファイル) のいずれかで出力を生成するために使用されるファイル コンポーネントに対してのみコンフィギュレーションできます。 出力が PDF 形式で生成された場合、プリンターに送信されます。 出力が Microsoft Office 形式で生成された場合、自動的に PDF 形式に変換され、プリンターに送信されます。
 
 ### <a name="limitations"></a>制限
 
 この機能はプレビュー機能で、[Microsoft Dynamics 365 プレビューの追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274) で説明されている使用条件に従います。
 
-**印刷**送信先は、クラウド配置に対してのみ実装されます。
+**印刷** 送信先は、クラウド配置に対してのみ実装されます。
 
 ### <a name="use-the-printer-destination"></a>印刷送信先の使用
 
-1. 生成されたドキュメントをプリンターに送信するには、**有効**オプションを **Yes** に設定します。
-2. **プリンター名**フィールドで、必要なネットワーク プリンターを選択します。
-3. **印刷アーカイブに保存しますか?** オプションを**はい**に設定して生成された出力を印刷アーカイブに保存することにより、さらに印刷できるようになります。 後でアーカイブ出力にアクセスするには、**組織管理** \> **照会およびレポート** \> **レポート アーカイブ**に移動します。
+1. 生成されたドキュメントをプリンターに送信するには、**有効** オプションを **Yes** に設定します。
+2. **プリンター名** フィールドで、必要なネットワーク プリンターを選択します。
+3. **印刷アーカイブに保存しますか?** オプションを **はい** に設定して生成された出力を印刷アーカイブに保存することにより、さらに印刷できるようになります。 後でアーカイブ出力にアクセスするには、**組織管理** \> **照会およびレポート** \> **レポート アーカイブ** に移動します。
 
 [![プリンター送信先の使用](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
-> **プリンター**送信先をコンフィギュレーションする場合、**PDF への変換**オプションを有効にする必要はありません。 印刷目的のための PDF 変換は、オプションが無効になっていても実行されます。
+> **プリンター** 送信先をコンフィギュレーションする場合、**PDF への変換** オプションを有効にする必要はありません。 印刷目的のための PDF 変換は、オプションが無効になっていても実行されます。
 
 送信ドキュメントを Excel 形式で印刷する際に特定の [ページの向き](electronic-reporting-destinations.md#SelectPdfPageOrientation) を使用するには、**PDF に変換する** オプションを有効にする必要があります。 **PDF に変換する** オプションを **はい** に設定すると、**ページの向き** フィールドが使用できるようになります。 **ページの方向** フィールドで、ページの向きを選択することができます。
 

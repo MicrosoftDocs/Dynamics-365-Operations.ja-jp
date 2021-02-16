@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404374"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413838"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の調整
 
@@ -62,11 +62,11 @@ ms.locfileid: "3404374"
 
 ### <a name="for-new-trending-or-best-selling-lists"></a>「新規」、「トレンド」、または「ベスト セラー」リスト用
 
-1.  **Retail と Commerce** > **製品推奨事項** > **推奨パラメーター**に移動します。
-1.  共有パラメーターのリストで、**推奨リスト**を選択します。
+1.  **Retail と Commerce** > **製品推奨事項** > **推奨パラメーター** に移動します。
+1.  共有パラメーターのリストで、**推奨リスト** を選択します。
 1.  リストの追加または製品をリストから削除を選択します。
-1.  テーブルに製品を追加するには、**行の追加**を選択します。 
-1.  製品列で、**名前**または**製品番号**で製品を検索します。
+1.  テーブルに製品を追加するには、**行の追加** を選択します。 
+1.  製品列で、**名前** または **製品番号** で製品を検索します。
 
     ![新しい製品リストでの製品の検索例](./media/examplenewlistconfiguration1.png)
 
@@ -76,22 +76,22 @@ ms.locfileid: "3404374"
     
     ![新しい製品リストに製品を含めるまたは除外する例](./media/examplenewlistconfiguration2.png)
 
-1.  **表示順序**を変更して、**含める**とマークされた製品がリストに表示される順序を変更します。
-    - 2 つの製品が同じ**表示順序**の値を持つ場合、これら 2 つの結果の最終的な順序は、バック オフィスとは異なる場合があります。
-1.  テーブルから製品を削除するには: 削除する行を選び、**削除**を選択します。
+1.  **表示順序** を変更して、**含める** とマークされた製品がリストに表示される順序を変更します。
+    - 2 つの製品が同じ **表示順序** の値を持つ場合、これら 2 つの結果の最終的な順序は、バック オフィスとは異なる場合があります。
+1.  テーブルから製品を削除するには: 削除する行を選び、**削除** を選択します。
 
 
 ### <a name="for-people-also-like-or-frequently-bought-together-lists"></a>「人気製品」「よく一緒に購入される」リスト用
 
 「よく一緒に購入される」または「人気製品」リストのコンテキストでは、機械学習を使用してコンシューマー向け購入パターンを分析し、固有のシード製品に対して共通に購入した関連製品を推奨することができます。 
  
-*シード製品*とは、結果を生成する製品です。 推奨リストを手動で調整するコンテキストでは、この製品の結果を追加または削除します。 
+*シード製品* とは、結果を生成する製品です。 推奨リストを手動で調整するコンテキストでは、この製品の結果を追加または削除します。 
 
 シード製品の結果を手動で追加または削除するには、次の手順に従います。
-1.  **シード製品**を選択します。 
-1.  **製品**列の下で、**名前**または**製品番号**で製品を検索します。
+1.  **シード製品** を選択します。 
+1.  **製品** 列の下で、**名前** または **製品番号** で製品を検索します。
 ![よく一緒に購入したリストで製品検索の例](./media/exampleFBTlistconfiguration1.png)
-1. **行タイプ**列で、次の 2 つのオプションのいずれかを選択します。
+1. **行タイプ** 列で、次の 2 つのオプションのいずれかを選択します。
     - **含める**: 製品をリストの先頭に強制的に追加
     - **除外** - リストに表示される製品を削除     
 ![よく一緒に購入したリストの製品を含める、または除外する例](./media/exampleFBTlistconfiguration2.png)
@@ -108,11 +108,13 @@ ms.locfileid: "3404374"
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [POS での製品推奨事項の追加](product.md)
 
-[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+[トランザクション画面への推奨事項の追加](add-recommendations-control-pos-screen.md)
 
 [収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
 

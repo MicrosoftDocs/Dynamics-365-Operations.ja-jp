@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0ac6531025bb191d4ab3c4bbc39e098042f1c5c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f53c482bbf97e91821d256f18931477d0fb50f68
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811951"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680456"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-azure-devops"></a>パフォーマンス SDK と Azure DevOps を使用したマルチユーザー テスト
 
@@ -38,7 +37,7 @@ ms.locfileid: "2811951"
 このトピックの手順を完了する前に、次の前提条件が満たされていることを確認してください:
 
 - 自身の Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
-- 開発環境に Microsoft Visual Studio 2015 Enterprise edition がある
+- 開発環境には Microsoft Visual Studio Enterprise Edition があります。
 - 開発環境と同じリリース (アプリケーション バージョンとプラットフォーム更新プログラム) の階層 2 以上のサンドボックスがあります。
 - [タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト](single-user-test-perf-sdk.md) のすべての手順と、 [パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト](multi-user-testing-local-test-controller.md) の "ローカル テスト コントローラーを使用したマルチユーザー テストの実行" を除くすべての手順を完了しました。
 

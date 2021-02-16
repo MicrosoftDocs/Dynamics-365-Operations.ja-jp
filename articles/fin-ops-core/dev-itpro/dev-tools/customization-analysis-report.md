@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 49681
 ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af658e0d358c1803949de086da00e10a6f08affe
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 094fcb40aa4f501a2b1cb13191424d36544a20de
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248999"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408895"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 
@@ -50,7 +49,7 @@ xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C
 xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalDirectory\\bin にあります。
 
 ## <a name="issues-list"></a>問題リスト
-このセクションでは、レポートの**問題リスト**ページに表示されるベスト プラクティスのルール (エラー、警告、または情報メッセージ) をすべて説明し、問題を解決するための提案を示します。 **メタデータ**または**コード**の型の問題です。 すべての**コード**問題に関しては、重ねたメソッドで警告またはエラーが発生する場合、ルールに違反しているコードの明細行は下位レイヤーのモデルに属していることに留意してください。 その場合、自分のものではないコードの警告やエラーを修正する責任はありません。
+このセクションでは、レポートの **問題リスト** ページに表示されるベスト プラクティスのルール (エラー、警告、または情報メッセージ) をすべて説明し、問題を解決するための提案を示します。 **メタデータ** または **コード** の型の問題です。 すべての **コード** 問題に関しては、重ねたメソッドで警告またはエラーが発生する場合、ルールに違反しているコードの明細行は下位レイヤーのモデルに属していることに留意してください。 その場合、自分のものではないコードの警告やエラーを修正する責任はありません。
 
 ### <a name="bpcheckpackreturnsconnull"></a>BPCheckPackReturnsConnull
 
@@ -106,7 +105,7 @@ xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalD
 |---------------------|------------------|
 | エラー メッセージ       | メソッド %1 の select ステートメントに、関数呼び出しが見つかりました     |
 | 出庫タイプ/重要度 | コード/警告    |
-| 修正する方法       | **選択**ステートメントを呼び出す前に、関数の戻り値をローカル変数へと割り当て、**選択**ステートメントでローカル変数を使用します。 |
+| 修正する方法       | **選択** ステートメントを呼び出す前に、関数の戻り値をローカル変数へと割り当て、**選択** ステートメントでローカル変数を使用します。 |
 
 ### <a name="bpcheckinvalidexecutequery"></a>BPCheckinvalidExecuteQuery
 
@@ -118,7 +117,7 @@ xppbp.exe ツール、c:\\packages\\bin または I:\\AosService\\PackagesLocalD
 
 ### <a name="bpcheckinvalidinitformmethod"></a>BPCheckInvalidInitFormMethod
 
-| 説明         | このルールは、**super()** を呼び出す前にフォームの**init** メソッドでフォーム コントロールとデータソースを初期化しないようにします。 **element** または **this** を **super()** に対する呼び出し (**this.aMethod()** または **element.aMethod()**) の前に使用するステートメントが検出された場合に失敗します。 情報メッセージは番号順序の初期化など許可されたいくつかのパターンのみを表示します (**numberSeqPreInit**) 。 |
+| 説明         | このルールは、**super()** を呼び出す前にフォームの **init** メソッドでフォーム コントロールとデータソースを初期化しないようにします。 **element** または **this** を **super()** に対する呼び出し (**this.aMethod()** または **element.aMethod()**) の前に使用するステートメントが検出された場合に失敗します。 情報メッセージは番号順序の初期化など許可されたいくつかのパターンのみを表示します (**numberSeqPreInit**) 。 |
 |---------------------|---------------------------------------------------------------------------------------------------------|
 | エラー メッセージ       | フォーム要素ステートメントは、フォーム %1 の init メソッドで、super() の前に使用しないでください。      |
 | 出庫タイプ/重要度 | コード/情報または警告                                   |
@@ -321,7 +320,7 @@ catch(Exception::UpdateConflictNotRecovered) {}
 
 ### <a name="bpcheckmissingdeleteactions"></a>BPCheckMissingDeleteActions
 
-| 説明         | このルールは、テーブル関係の**削除**アクションまたは**削除時**プロパティの値が**なし**と等しくないことを検証します。 関連するテーブルまたは現在のテーブルが tempDB、メモリ テーブル、参照テーブル、ステージング テーブル、パラメーター テーブルの場合、ルールはトリガーされません。 |
+| 説明         | このルールは、テーブル関係の **削除** アクションまたは **削除時** プロパティの値が **なし** と等しくないことを検証します。 関連するテーブルまたは現在のテーブルが tempDB、メモリ テーブル、参照テーブル、ステージング テーブル、パラメーター テーブルの場合、ルールはトリガーされません。 |
 |---------------------|---------------------------------------------------|
 | エラー メッセージ       | リレーション名 %3 でテーブル %2 に関連付けられているテーブル %1 に欠けているアクションを削除します      |
 | 出庫タイプ/重要度 | メタデータ/警告   |
@@ -337,7 +336,7 @@ catch(Exception::UpdateConflictNotRecovered) {}
 
 ### <a name="bpcheckdimensionmodel"></a>BPCheckDimensionModel
 
-| 説明         | テーブル フィールドが、**分析コード**または **LedgerAccount** タイプの場合、このルールは失敗します。 これらのタイプは、コードが新しい財務分析コード フレームワークを受け入れなかったことを示します。 |
+| 説明         | テーブル フィールドが、**分析コード** または **LedgerAccount** タイプの場合、このルールは失敗します。 これらのタイプは、コードが新しい財務分析コード フレームワークを受け入れなかったことを示します。 |
 |---------------------|----------|
 | エラー メッセージ       | テーブル %2 のフィールド %1 は、財務分析コード フレームワークの一部ではありません               |
 | 出庫タイプ/重要度 | メタデータ/警告   |

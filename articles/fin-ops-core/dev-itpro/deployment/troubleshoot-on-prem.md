@@ -3,26 +3,25 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: be97631dc70bd5c38d74d31dc40edd08bea3e55a
-ms.sourcegitcommit: bdea45af52cab804e5d325ff3cee7f65aacfd8fc
+ms.openlocfilehash: f3ee5620f4cca7a8630a67486a91d174623f8749
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442729"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685463"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -39,7 +38,7 @@ Service Fabric Explorer には、Web ブラウザーと既定のアドレス `ht
 - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#createdns)
 - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#createdns)
 
-クライアント証明書が、サイトにアクセスするマシンの証明書、cert:\\CurrentUser\\My に含まれている場合のみ、サイトにアクセスできます (証明書マネージャーで、**証明書 - 現在のユーザー** \> **個人** \> **証明書**に移動します。) サイトにアクセスしたとき、メッセージが表示されたら、クライアント証明書を選択します。
+クライアント証明書が、サイトにアクセスするマシンの証明書、cert:\\CurrentUser\\My に含まれている場合のみ、サイトにアクセスできます (証明書マネージャーで、**証明書 - 現在のユーザー** \> **個人** \> **証明書** に移動します。) サイトにアクセスしたとき、メッセージが表示されたら、クライアント証明書を選択します。
 
 ## <a name="monitor-the-deployment"></a>配置の監視
 
@@ -155,7 +154,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配
 
 Service Fabric エクスプローラーで、**アプリケーション ノード** \> **アプリケーション** \> **MonitoringAgentAppType-Agent** に移動します。 **ファブリック:/エージェント監視** の横にある省略記号ボタン (**...**) を選択し、アプリケーションを削除します。 アプリケーションの完全な名前を入力して、アプリケーションの削除を確認します。
 
-また、省略記号ボタンの選択および**非引当タイプ**の順に選択することにより、MonitoringAgentAppType-Agent を削除することができます。 アプリケーションの削除を確認するために、正式名称を入力します。
+また、省略記号ボタンの選択および **非引当タイプ** の順に選択することにより、MonitoringAgentAppType-Agent を削除することができます。 アプリケーションの削除を確認するために、正式名称を入力します。
 
 ## <a name="remove-all-applications-from-service-fabric"></a>Service Fabric からすべてのアプリケーションを削除
 
@@ -184,7 +183,7 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
     .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
-2. エラーが発生した場合は、**CleanFabric.ps1**コマンドを使用して、クラスタ内の特定のノードを削除します。 このコマンドは、C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code で検索することができます。
+2. エラーが発生した場合は、**CleanFabric.ps1** コマンドを使用して、クラスタ内の特定のノードを削除します。 このコマンドは、C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code で検索することができます。
 3. 既定の場所を使用している場合、**C:\\ProgramData\\SF** フォルダーを削除します。 それ以外の場合、指定したフォルダーを削除します。
 
     "アクセス拒否" エラーが発生した場合は、Microsoft Windows PowerShell を再起動するか、マシンを再起動します。
@@ -193,7 +192,7 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 
 既存の環境をクリーンアップして再配置するには、以下の手順を実行します。
 
-1. LCS でプロジェクトを開き、**環境**セクションで展開を削除します。
+1. LCS でプロジェクトを開き、**環境** セクションで展開を削除します。
 
     アプリケーションが環境の Service Fabric Explorer から表示されなくなります。 このプロセスは 1、2 分かかります。
 
@@ -469,7 +468,7 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
     ```
 
     > [!IMPORTANT]
-    > これらのスクリプトは、**常時オン**に設定されているときは機能しません。 データベースは最初にプライマリ ノードに作成されてから複製される必要があります。
+    > これらのスクリプトは、**常時オン** に設定されているときは機能しません。 データベースは最初にプライマリ ノードに作成されてから複製される必要があります。
 
 ### <a name="error"></a>エラー
 
@@ -495,9 +494,32 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
+## <a name="infrastructure-scripts-errors"></a>インフラストラクチャ スクリプト エラー
+
+### <a name="issue"></a>出庫
+
+**エラー:** Test-D365FOConfiguration.ps1 or Test-D365FOConfiguration-AllVMs.ps1 を実行すると、メッセージを受信します:
+
+```stacktrace
+"Get-LocalGroupMember : Failed to compare two elements in the array.
+At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
++         Get-LocalGroupMember -Group 'Administrators' | `
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
+```
+
+**理由:** PowerShell コマンドレット Get-LocalGroupMember にバグがあり、無効なエントリがあると失敗します。
+
+**ステップ:** スクリプトが失敗しているマシンで、**ローカル ユーザーとグループ** を開きます。 管理者グループに移動し、次の画像で強調表示されているようなエントリを持つエントリをすべて削除します。
+
+![無効な SID](media/InvalidSID.png)
+
+このエラーを受け取ったすべてのマシンでこれを実行します。 変更が完了したら、スクリプトを再実行してください。
+
 ## <a name="restart-applications-such-as-aos"></a><a name="restartapplications"></a>アプリケーション (AOS など) を再起動
 
-Service Fabric で、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード**の順に展開します。 省略記号ボタン (**...**) を選択し、**再起動**を選択します。 求められたらコードを入力します。
+Service Fabric で、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード** の順に展開します。 省略記号ボタン (**...**) を選択し、**再起動** を選択します。 求められたらコードを入力します。
 
 ## <a name="upgrade-service-fabric"></a>Service Fabric を更新します。
 
@@ -541,7 +563,7 @@ Windows PowerShell で Service Fabric をアップグレードするにはこれ
 
 新しい Service Fabric リリースの時期については、[Azure Service Fabric チームのブログ](https://blogs.msdn.microsoft.com/azureservicefabric/) を参照してください。
 
-アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録して、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード** を展開して再起動してください。 省略記号ボタン (**...**) を選択し、**再起動**を選択します。
+アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録して、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード** を展開して再起動してください。 省略記号ボタン (**...**) を選択し、**再起動** を選択します。
  
 ## <a name="error-unable-to-load-dll-fabricclientdll"></a>エラー、「DLL 'FabricClient.dll' を読み込むことができません」
 
@@ -563,7 +585,7 @@ AOS アカウント パスワードを暗号化するために使用されたデ
 Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
 ```
 
-このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 イベント ビューアーで、このパラメータが定義されているどうかを確認するには、**カスタム ビュー** \> **管理イベント**の順に移動し、次の情報を確認します。
+このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 イベント ビューアーで、このパラメータが定義されているどうかを確認するには、**カスタム ビュー** \> **管理イベント** の順に移動し、次の情報を確認します。
 
 - Credentials.json ファイルの資格情報の暗号化には、正しいレイアウト/構造があります。 詳細については、ご使用の環境に適した設定および配置のトピックの「資格情報の暗号化」のセクションを参照してください。
 
@@ -666,7 +688,7 @@ Category does not exist.
 
 ## <a name="management-reporter"></a>Management Reporter
 
-追加のログは、プロバイダーを登録することで実行できます。 [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) を **プライマリ**オーケストレータ マシン にダウンロードし、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
+追加のログは、プロバイダーを登録することで実行できます。 [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) を **プライマリ** オーケストレータ マシン にダウンロードし、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
 
 > [!NOTE]
 > イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。
@@ -686,7 +708,7 @@ Category does not exist.
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister
 ```
 
-プロバイダーが登録されると、新しい配置についての追加詳細は**アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** でイベント ビューアーにログインされます。 次のフォルダが表示されます:
+プロバイダーが登録されると、新しい配置についての追加詳細は **アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** でイベント ビューアーにログインされます。 次のフォルダが表示されます:
 
 - MR-Logger
 - MR-Sql
@@ -759,7 +781,7 @@ AddAXDatabaseChangeTracking イベントのみを受け取った場合は、`htt
 
 ### <a name="error-on-importdefaultreports"></a>ImportDefaultReports のエラー
 
-配置中に Management Reporter レポートがチェックアウトされると、配置処理は失敗します。 レポートがチェック アウトされているかどうかを表示するには、FinancialReporting データベースで次の**選択**明細書を実行します。
+配置中に Management Reporter レポートがチェックアウトされると、配置処理は失敗します。 レポートがチェック アウトされているかどうかを表示するには、FinancialReporting データベースで次の **選択** 明細書を実行します。
 
 ```sql
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null
@@ -767,7 +789,7 @@ select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not
 select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
 ```
 
-どのユーザーがオブジェクトをチェック アウトするかを知るには、次の**選択**ステートメントを実行します。
+どのユーザーがオブジェクトをチェック アウトするかを知るには、次の **選択** ステートメントを実行します。
 
 ```sql
 select * from Reporting.SecurityUser where UserID = ''
@@ -820,7 +842,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 - Dynamics 365 リンクを信頼されているサイトの一覧に追加します。
 - 末尾にスラッシュ「/」を追加し、動作が変更されるかどうかを確認します。
 
-**ADFS** \> **アプリケーション グループ**の順に移動して、AD FS マネージャーを確認します。 **Microsoft Dynamics 365 for Operations オンプレミス**をダブルクリックします。 その後、**ネイティブ アプリケーション**で、**Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**をダブルクリックします。
+**ADFS** \> **アプリケーション グループ** の順に移動して、AD FS マネージャーを確認します。 **Microsoft Dynamics 365 for Operations オンプレミス** をダブルクリックします。 その後、**ネイティブ アプリケーション** で、**Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション** をダブルクリックします。
 
 **リダイレクト URI** 値に注意してください。 Finance + Operations の DNS 前方参照ゾーンに一致させる必要があります。
 
@@ -828,14 +850,14 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 
 「SSL/TLS のセキュリティで保護されているチャネルに対する信頼関係を確立できませんでした」というエラーが表示された場合は、次の操作を行います。
 
-1. Service Fabric で、**クラスタ** \> **アプリケーション** \> **AXSFType** \> **fabric:/AXSF** の順に移動し、**詳細**タブでスクロールし、**Aad\_AADMetadataLocationFormat** および **Aad\_FederationMetadataLocation** の URL に注意します。
+1. Service Fabric で、**クラスタ** \> **アプリケーション** \> **AXSFType** \> **fabric:/AXSF** の順に移動し、**詳細** タブでスクロールし、**Aad\_AADMetadataLocationFormat** および **Aad\_FederationMetadataLocation** の URL に注意します。
 2. AOS からそれらの URL を参照します。
 3. 詳細については、AOS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** の順に移動します。
 4. AD FS 証明書が信頼されていることを確認します。
 
-    1. AD FS 証明書を確認します。 AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理**に移動します。
+    1. AD FS 証明書を確認します。 AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理** に移動します。
     2. **AD FS** \> **サービス** \> **証明書** を展開し、証明書を記録しておきます。 たとえば、1 つの証明書は、dc1.contoso.com の場合があります。
-    3. AOS マシンの、Microsoft 管理コンソール証明書スナップインで、**証明書 (ローカル コンピューター)** \> **信頼済ルート証明機関** \> **証明書**の順に移動し、AD FS 証明書が一覧表示されていることを確認します。
+    3. AOS マシンの、Microsoft 管理コンソール証明書スナップインで、**証明書 (ローカル コンピューター)** \> **信頼済ルート証明機関** \> **証明書** の順に移動し、AD FS 証明書が一覧表示されていることを確認します。
 
 サイトが安全でないことを示すメッセージが表示された場合は、AD FS の Secure Sockets Layer (SSL) 証明書が信頼済ルート証明機関ストアに追加されていません。
 
@@ -870,9 +892,9 @@ Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする�
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
 - **IDENTITYPROVIDER:** これは **NETWORKDOMAIN** の内容と一致している必要があります。
 
-AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理** \> **サービス**に移動します。 **フェデレーション サービス プロパティの保守と編集** を右クリックします。 **フェデレーション サービスの識別子** は **USERINFO.NETWORKDOMAIN** の値と一致している必要があり、URL に **https** が入っている必要があります (たとえば `https://DC1.contoso.com/adfs`)。
+AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理** \> **サービス** に移動します。 **フェデレーション サービス プロパティの保守と編集** を右クリックします。 **フェデレーション サービスの識別子** は **USERINFO.NETWORKDOMAIN** の値と一致している必要があり、URL に **https** が入っている必要があります (たとえば `https://DC1.contoso.com/adfs`)。
 
-AD FS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **AD FS** \> **管理者**に移動してエラーを確認します。
+AD FS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **AD FS** \> **管理者** に移動してエラーを確認します。
 
 ### <a name="fiddler"></a>Fiddler
 
@@ -929,7 +951,7 @@ Fiddler の右側のウィンドウには、リクエストとレスポンスが
 .\Reset-DatabaseUsers.ps1
 ```
 
-タスク マネージャーの各 AOS マシンで、**AXService.exe** を選択し、**タスクの終了**を選択します。
+タスク マネージャーの各 AOS マシンで、**AXService.exe** を選択し、**タスクの終了** を選択します。
 
 ユーザーがリセットされたことを確認するには、AXDB SQL databaseで次の **select** 文を実行します。
 
@@ -982,7 +1004,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 
 > 未処理の FabricException がレプリカに障害を引き起こしたため、RunAsync が失敗しました: System.Fabric.FabricException: 最初の Fabric アップグレードではコード バージョンと設定バージョンの両方を指定する必要があります。 要求された値: 0.0.0.0:
 
-この場合、ClusterConfig.json ファイルで、 **diagnosticsStore** をネットワーク共有からローカル パスに変更します。 たとえば、**\\\\サーバー\\パス**を、規定値の **C:\\ProgramData\\SF\\DiagnosticsStore** に変更します。
+この場合、ClusterConfig.json ファイルで、 **diagnosticsStore** をネットワーク共有からローカル パスに変更します。 たとえば、**\\\\サーバー\\パス** を、規定値の **C:\\ProgramData\\SF\\DiagnosticsStore** に変更します。
 
 ## <a name="service-fabric-aos-node-error-during-build-the-execution-time-out-expired"></a>ビルド中に Service Fabric AOS ノード エラー: 実行タイムアウトが期限切れ
 
@@ -991,7 +1013,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 > 操作を完了する前にタイムアウト期間が経過したか、サーバーが応答していません。  
 > 明細書は終了しました。
 
-一度に 1 つの AOS マシンのみ DB Sync を実行できます。 このエラーは無視しても問題ありません。 AOS VM のいずれかが DB Sync で実行されているため、他の VM が実行できないという警告が表示されたためです。 DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で**アプリケーションおよびサービスのログ** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational** の順に移動します。
+一度に 1 つの AOS マシンのみ DB Sync を実行できます。 このエラーは無視しても問題ありません。 AOS VM のいずれかが DB Sync で実行されているため、他の VM が実行できないという警告が表示されたためです。 DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で **アプリケーションおよびサービスのログ** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational** の順に移動します。
 
 ## <a name="error-requirenonce-is-true-default-but-validationcontextnonce-is-null"></a>エラー、「RequireNonce が True (既定) ですが、validationContext.Nonce は Null です」
 
@@ -1073,7 +1095,7 @@ AOS ユーザーはローカル管理者グループに属しておらず、ユ�
     - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#joindomain)
 
 2. すべての AOS コンピューターで、**Config-PreReq** スクリプトを実行します。
-3. **テスト構成**スクリプトがパスすることを確認します。
+3. **テスト構成** スクリプトがパスすることを確認します。
 4. UAC が変更された場合は、変更を有効にする前にマシンを再起動する必要があります。
 
 ## <a name="files-in-use-errors"></a>使用中ファイルのエラー
@@ -1098,7 +1120,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 この場合は、パッケージが開発された環境のバージョンと、パッケージを配置する環境のバージョンが異なっている可能性があります。
 
-この問題を回避するには、展開されたオンプレミス環境と同じバージョンで開発環境またはビルド環境を維持します。 パッケージのアップロード先にあるアセット ライブラリの**追加の詳細**セクションをクリックすることにより、パッケージ バージョンを確認することができます。 このエラーを修正するには、オンプレミス環境に配置されたバージョンと同じか、またはそれ以前のバージョンでパッケージを生成する必要があります。
+この問題を回避するには、展開されたオンプレミス環境と同じバージョンで開発環境またはビルド環境を維持します。 パッケージのアップロード先にあるアセット ライブラリの **追加の詳細** セクションをクリックすることにより、パッケージ バージョンを確認することができます。 このエラーを修正するには、オンプレミス環境に配置されたバージョンと同じか、またはそれ以前のバージョンでパッケージを生成する必要があります。
 
 ### <a name="package-deployment-fails-because-of-dependencies-on-missing-modules"></a>欠落しているモジュールの依存関係が原因でがパッケージの展開に失敗する
 
@@ -1110,7 +1132,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 >
 > パッケージ \[dynamicsax-My\_uiextension.7.0.4679.35176.nupkg に依存関係がありません: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests\]\]
 
-問題を確認し、欠落している依存関係を見つけるには、イベント ビューアーで、**アプリケーションとサービス**を開き、**Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** の順で移動して、見つからないモジュールのあるイベントを表示します。 たとえば、一般的に見つからないモジュールの 1 つは、ApplicationFoundationFormAdaptor です。
+問題を確認し、欠落している依存関係を見つけるには、イベント ビューアーで、**アプリケーションとサービス** を開き、**Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** の順で移動して、見つからないモジュールのあるイベントを表示します。 たとえば、一般的に見つからないモジュールの 1 つは、ApplicationFoundationFormAdaptor です。
 
 この問題を修正してパッケージを正常に適用するには、依存モジュールを追加するか、依存モジュールが必要なモジュールを削除します。 依存するモジュールを追加するには、パッケージをビルドするときに依存関係を含める必要があります。 モジュールを削除するには、ModelUtil.exe を使用してモジュールを削除できます。 詳細については、 [モデルのエクスポートとインポート](../dev-tools/models-export-import.md) を参照してください。
 
@@ -1122,7 +1144,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 ## <a name="an-error-occurs-when-you-sign-in-to-on-premises-environments"></a>オンプレミス環境へのログイン時にエラーが発生
 
-- **プラットフォーム更新 12:** **システム管理** \> **設定** \> **クライアント パフォーマンス オプション**に移動して、Skype 統合を無効にしてください。 アプリに移動するとき、`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true` の例のように、**?debug=true** を URL に追加します。
+- **プラットフォーム更新 12:** **システム管理** \> **設定** \> **クライアント パフォーマンス オプション** に移動して、Skype 統合を無効にしてください。 アプリに移動するとき、`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true` の例のように、**?debug=true** を URL に追加します。
 - **プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11:** 確認されている問題は、 Skype の アプリケーション プログラミング インターフェイス (API) が、オンプレミス環境へのサインインする機能に影響を及ぼしているというものです。 Microsoftはこの問題の解決方法を調査しています。 この問題を回避するために、次の例のように URL の末尾に **?debug=true** を追加できます。`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
 ## <a name="the-local-agent-stops-working-after-the-tenant-for-the-project-from-lcs-is-changed"></a>ローカル エージェントは、LCS からのプロジェクトのテナントが変更されると作業を停止します
@@ -1452,6 +1474,7 @@ truncate table databaselog
 ```
 
 ## <a name="dbsync-fails-to-start"></a>DBSync が起動に失敗する
+
 **問題 :** AXSF アプリケーションが Service Fabric explorer で "InBuild" の状態のままとなり、配置が失敗する。 AXSF ノードの作業ディレクトリのログを確認すると、次の DBSync エラーが見つかります。
 
 ```stacktrace
@@ -1474,3 +1497,27 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 **理由 :** この問題は、SQL パスワードに特殊文字が含まれていることが原因で発生する場合があります。
 
 **解決策 :** SQL ユーザーのパスワードを更新し、特殊文字を削除します。 続いて、新しいパスワードを使用して Credentials.json ファイルを更新し、LCS から配置作業を再試行します。
+
+## <a name="dbsync-fails-with-peap-and-first-release-app-version-10014-platform-update-38"></a>DBSync は PEAP と 初回リリースの APP のバージョン 10.0.14、更新プログラム 38 でエラーが発生する
+
+**問題 :** AXSF アプリケーションが Service Fabric explorer で "InBuild" の状態のままとなり、配置が失敗する。 AXSF ノードの作業ディレクトリでログを確認する場合、以下の DBSync エラーが複数回発生します。
+
+```stacktrace
+10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
+```
+
+**理由:** この問題は、Finance+Operations で使用している SQL Server アカウントに操作を実行するための十分な権限がないことによって発生します。
+
+**解決:** SQL Server で下記のコマンドを実行してください。
+
+```sql
+use master
+GRANT ALTER ANY EVENT SESSION to axdbadmin;
+```

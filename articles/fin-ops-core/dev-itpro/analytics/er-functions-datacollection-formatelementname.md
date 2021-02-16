@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f299a4bb697afce152a61ec35fcefab7157f356
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: ef59bb44a7096f4c095ce37a89558a717748f02e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042530"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685330"
 ---
-# <a name="FORMATELEMENTNAME">FORMATELEMENTNAME ER 関数</a>
+# <a name="formatelementname-er-function"></a>FORMATELEMENTNAME ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`FORMATELEMENTNAME` 関数は、現在の電子申告 (ER) 形式要素の名前を表す*文字列*値を返します。
+`FORMATELEMENTNAME` 関数は、現在の電子申告 (ER) 形式要素の名前を表す *文字列* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,11 +44,11 @@ FORMATELEMENTNAME ()
 
 ## <a name="usage-notes"></a>使用上の注意
 
-この関数は、**テキスト** グループからの ER 形式のコンポーネントの**収集したデータ キー名**および**収集したデータ キー値**プロパティに対してコンフィギュレーションされた ER 式で呼び出すことができます。それは**出力の詳細を収集**オプションがオンになっている**共通\\ファイル** コンポーネントの下に存在します。
+この関数は、**テキスト** グループからの ER 形式のコンポーネントの **収集したデータ キー名** および **収集したデータ キー値** プロパティに対してコンフィギュレーションされた ER 式で呼び出すことができます。それは **出力の詳細を収集** オプションがオンになっている **共通\\ファイル** コンポーネントの下に存在します。
 
 ## <a name="example"></a>例
 
-この関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発**業務プロセスの一部である [ER 棚卸および集計のために出力された形式の使用](tasks/er-format-counting-summing-1.md) タスク ガイドを参照してください。
+この関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発** 業務プロセスの一部である [ER 棚卸および集計のために出力された形式の使用](tasks/er-format-counting-summing-1.md) タスク ガイドを参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

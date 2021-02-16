@@ -1,26 +1,25 @@
 ---
 title: AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 description: このトピックでは、サンドボックス環境で Microsoft Dynamics AX 2012 から Finance and Operations にデータ アップグレードを実行する方法を説明します。
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 07/10/2019
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: e7c5780674ab465ddec27f4c0a5cd48036990492
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 04869d532a235b3d4432dc35084ffa79d20cf089
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033043"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681624"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
@@ -28,12 +27,15 @@ ms.locfileid: "3033043"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このタスクの出力は、サンドボックス環境で使用できるデータベースのアップグレードです。 このトピックでは、*サンドボックス*という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。 この環境では、ビジネス ユーザーと機能チームのメンバーがアプリケーション機能を検証できます。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 から継承されたデータが含まれます。
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
+
+このタスクの出力は、サンドボックス環境で使用できるデータベースのアップグレードです。 このトピックでは、*サンドボックス* という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。 この環境では、ビジネス ユーザーと機能チームのメンバーがアプリケーション機能を検証できます。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 から継承されたデータが含まれます。
 
 この方法は、データを正常にアップグレードするのに必要な全体的な時間の短縮に役立つため、共有サンドボックス環境で実行する前に開発環境でデータ アップグレード プロセスを実行することを強くお勧めします。 詳細については[AX 2012からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト](prepare-data-upgrade.md) を参照してください。
 
 > [!NOTE]
-> このプロセスを開始する前に、SQL Server Management Studio の最新バージョンをインストールすることが非常に重要です。[SQL Server Management Studio のダウンロード](/sql/ssms/download-sql-server-management-studio-ssms). 
+> このプロセスを開始する前に、SQLPackage の最新バージョンをインストールすることが非常に重要です。 これを行うには、[SQLPackage のダウンロードとインストール](/sql/tools/sqlpackage-download) を参照してください。 .NET Core バージョンの使用をお勧めします。 これは C:\temp に保存および抽出することができます。
 
 ## <a name="overview-of-the-sandbox-data-upgrade-process"></a>サンドボックス データ アップグレード プロセスの概要
 サンドボックス環境でのデータのアップグレードを開始する前に、[AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト](prepare-data-upgrade.md)で説明しているように、開発環境で既にデータがアップグレードされています。 2 つのプロセスはよく似ています。 主な違いは、サンドボックス環境では Microsoft Azure SQL データベースをデータ保管に使用し、開発環境では Microsoft SQL Server を使用する点です。 このデータベース レイヤーの技術的な違いにより、AX 2012 データベース インスタンスからのバックアップを SQL データベースに復元できないため、サンドボックス環境でデータのアップグレード手順を少し変更する必要があります。
@@ -65,18 +67,8 @@ AX 2012 環境と統合されている他のシステムをお持ちかもしれ
 
 データベースのコピーを作成するには、元のデータベースのバックアップを作成し、新しい名前で復元します。 両方のデータベースに十分なスペースがあることを確認します。 別のサーバーでコピーを作成できます。 データベースを実行する SQL Server インスタンスのバージョンは重要ではありません。
 
-データベースのコピーを作成するコードの例を以下に示します。 特定のデータベース名を反映するよう、この例を変更する必要があります。
+このアクションを実行するには、ソースデータベースを右クリックし、**タスク** \> **バックアップ** を選択します。 フル コピー バックアップを作成します。 既存のデータベースのバックアップが上書きされないようにするために、ファイルを別の名前でバックアップ ディレクトリに保存することをお勧めします。
 
-```sql
-BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-GO
-
-RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-NOUNLOAD,  STATS = 5
-```
 ## <a name="run-the-t-sql-script-to-prepare-the-database"></a>データベースの準備のため T-SQL スクリプトを実行
 
 このスクリプトは、ユーザーを削除、AX 2012 RTM モデル ストアに関連するステップを削除、スキーマをクリーンアップ、ビューを削除、および tempDB への参照を削除によってデータベースを準備します。 
@@ -179,6 +171,9 @@ end
 
 ## <a name="export-the-copied-database-to-a-bacpac-file"></a>コピーしたデータベースを bacpac ファイルにエクスポートする
 
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
+
 SQLPackage.exe ツールを使用して、コピーしたデータベースを bacpac ファイルにエクスポートします。 この手順は、DBA または同等の知識を持っているチーム メンバーが行う必要があります。
 
 > [!IMPORTANT]
@@ -200,7 +195,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 パラメータの説明を以下に示します。
 
-- **ssn** (ソース サーバー名) – エクスポートする SQL Server の名前。 このプロセスでは、このパラメータは常に **localhost** に設定する必要があります。
+- **ssn** (ソース サーバー名) – エクスポートする SQL Server の名前。 このプロセスでは、パラメータは常に **localhost** に設定する必要があります。
 - **sdn** (ソース データベース名) – エクスポートするデータベースの名前。
 - **tf** (ターゲット ファイル) – エクスポートするファイルのパスと名前。 フォルダーが既に存在するはずですが、ファイルはプロセスによって作成されます。
 - **/p:CommandTimeout** – クエリあたりのタイムアウト値。 このパラメータによって、タイムアウトを起こさずに大きなテーブルをエクスポートできます。
@@ -213,16 +208,18 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
-もう 1 つの (無料) オプションは、LCS 資産ライブラリを使用することですが、アップロードやダウンロードは Azure ストレージよりも時間がかかる場合があります。 このオプションを使用するには、次のようにします。
-1. LCS でプロジェクトにログインし、アセット ライブラリに移動します。
+Microsoft Dynamics Lifecycle Services (LCS) でアセット ライブラリを使用することもできます。 ただし、アップロードとダウンロードには、Azure ストレージよりも長い時間がかかります。 このオプションを使用するには、次のようにします。
+1. LCS でプロジェクトにサインインし、アセット ライブラリに移動します。
 2. データベース バックアップ タブを選択します。
 3. bacpac ファイルをアップロードします。
 その VM から LCS にログインして LCS アセット ライブラリからダウンロードすることにより、後から bacpac をサンドボックス AOS VM にダウンロードすることができます。
 
 ## <a name="import-the-bacpac-file-into-sql-database"></a>bacpac ファイルを SQL Database にインポートする
 
-この手順では、エクスポートした bacpac ファイルを、サンドボックス環境で使用する SQL データベース インスタンスにインポートします。 まず、サンドボックス AOS コンピューターに Management Studio の最新バージョンをインストールする必要があります。 その後 SQLPackage.exe ツールを使用してファイルをインポートします。
+> [!NOTE]
+> このトピックは段階的に廃止され、dacpac ファイル形式に基づく新しいプロセスが採用されます。 新しいプロセスの詳細については、「[AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境からデータをアップグレードするための DACPAC プロセス](upgrade-data-sandbox-dacpac.md)」を参照してください。
 
+この手順では、エクスポートした bacpac ファイルを、サンドボックス環境で使用する SQL データベース インスタンスにインポートします。 まず、サンドボックス AOS コンピューターに Management Studio の最新バージョンをインストールする必要があります。 その後 SQLPackage.exe ツールを使用してファイルをインポートします。
 
 SQL データベース インスタンスへのアクセスを制限するファイアウォール規則があるため、サンドボックス環境の AOS コンピューターでこれらのタスクを直接実行します。 ただし、AOS コンピューターを使用すると、アクセス許可を取得できます。
 
@@ -235,22 +232,27 @@ SQL データベース インスタンスへのアクセスを制限するファ
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tdn:<New database name> /tu:sqladmin /tp:<password from LCS> /mp:64 /p:CommandTimeout=1200 /p:DatabaseEdition=<Edition> /p:DatabaseServiceObjective=<Service objective> /p:DatabaseMaximumSize=<Maximum size>
 ```
 
 パラメータの説明を以下に示します。
 
+- **sf** (ソース ファイル) – インポートするファイルのパスと名前。
 - **tsn** (ターゲット サーバー名) – インポートする SQL Azure サーバーの名前。 名前は LCS で確認できます。 末尾に **.database.windows.net** を付け加えます。
 - **tdn** (ターゲット データベース名) – インポートするデータベースの名前。 データベースが既に存在していない必要があります。 インポート処理が作成されます。
-- **sf** (ソース ファイル) – インポートするファイルのパスと名前。
-- **tp** (ターゲット パスワード) – ターゲット SQL データベース インスタンスの SQL パスワード。
 - **tu** (ターゲット ユーザー) – ターゲット SQL データベース インスタンスの SQL ユーザー名。 **sqladmin** を使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
+- **tp** (ターゲット パスワード) – ターゲット SQL データベース インスタンスの SQL パスワード。
+- **mp** (最大並列処理) - データベースに対して実行される同時操作の並列度を指定します。 既定値は 8 です。 値を 64 にすると、ほとんどの場合に最高のパフォーマンスが得られます。
 - **/p:CommandTimeout** – クエリあたりのタイムアウト値。 このパラメータによって、タイムアウトを起こさずに大きなテーブルをエクスポートできます。
-- **/p:DatabaseServiceObjective** - S1、P2、P4 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseEdition** – Basic、Standard、Premium、GeneralPurpose、BusinessCritical、Hyperscale などのデータベースのエディションを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseServiceObjective** - S1、P2、P4 または GP_Gen5_8 など、データベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、この環境で現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルを使用します。 Management Studio を使用して、既存のデータベースの値を確認できます。 データベースを右クリックし、**プロパティ** を選択します。
+- **/p:DatabaseMaximumSize** – Azure SQL データベースの最大サイズを GB 単位で定義します。 大きなデータベースをインポートできるようにするには、このパラメータを使用する必要があります。
 
-コマンドを実行すると、次の警告が表示される場合があります。 これは無視してかまいません。
+コマンドを実行すると、次の警告を受け取る場合があります。 これは無視してかまいません。
 
 ![サンドボックス エラー](./media/sandbox-2.png)
+
+無効な値に関するエラー メッセージを受け取る場合は、パラメータを再確認してください。 問題がない場合は、新しいバージョンの SqlPackage を使用する必要があります。 [Windows .NET Core](/sql/tools/sqlpackage-download) バージョンをインストールすることなく使用できます。 これは、たとえば、C:\Temp\Sqlpackage-dotnetcore に抽出できる .zip ファイルです。 これで、データベースをインポートするときに、C:\Program Files (x86) の下で Sqlpackage.exe を使用する代わりに、C:\Temp\Sqlpackage-dotnetcore で Sqlpackage.exe を使用できます。
 
 
 ## <a name="run-a-t-sql-script-to-update-the-database"></a>データベースの更新のため T-SQL スクリプトを実行
@@ -293,14 +295,9 @@ ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 
 ## <a name="run-the-data-upgrade-deployable-package"></a>データ アップグレード展開可能なパッケージを実行
 
-レベル 2 サンドボックス環境では、DataUpgrade パッケージを LCS 経由で実行することはできません。 最新の Finance and Operations の更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
+レベル 2 のサンドボックス環境では、レベル 1 の DevTest 環境と同様に、データ アップグレード パッケージを LCS から直接実行できるようになりました。 パッケージを適用するには、LCS の環境に移動し、**メンテナンス** \> **更新プログラムの適用** を選択します。 一覧の一番下までスクロールし、共用資産ライブラリからデータ アップグレード パッケージが読み込まれるまで待ちます。 パッケージが読み込まれるまでにしばらく時間がかかる場合があります。 リストにデータ アップグレード パッケージが表示されない場合は、LCS のプロジェクト設定に移動し、レガシ システムが **AX2012 アップグレード** に設定されていることを確認してください。 その後、パッケージを適用できます。
 
-1. [LCS](https://lcs.dynamics.com/)にサインインします。
-2. **共有資産ライブラリ** タイルを選択します。
-3. **共有アセット** ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
-4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。 たとえば、AX 2012 からアップグレードする場合、パッケージ名は AX2012DataUpgrade から始まります。 アップグレードするリリースに対応するパッケージを選択します。 例: AX2012DataUpgrade-July2017。
-
-次に、AOS VM のリモートデスクトップを開始て手動でパッケージを実行します。 
+選択するパッケージの名前は、使用しているバージョンと一致している必要があります。 たとえば、バージョン 10.0.14 にアップグレードするには、**AX2012DataUpgrade-10-0-14** を選択します。
 
 詳細については、 [開発、デモ、サンドボックス環境でのデータの更新](upgrade-data-to-latest-update.md) を参照してください。 
 

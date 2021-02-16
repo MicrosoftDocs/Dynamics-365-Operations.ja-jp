@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6c59c90d49a4dcf3df4672c5f40d52ed639760c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431887"
 ---
 # <a name="subscription-sales-prices"></a>定期売買販売価格   
 
@@ -173,7 +173,7 @@ ms.locfileid: "3206614"
 </table>
 
 
-**カテゴリ**および**定期売買**フィールドが空白であることに注意してください。
+**カテゴリ** および **定期売買** フィールドが空白であることに注意してください。
 
 次に、以下の定期売買を作成します。
 
@@ -219,11 +219,11 @@ ms.locfileid: "3206614"
 
 次に、定期売買グループ Sub1 内の両方の定期売買に定期売買手数料を作成します。
 
-1.  **サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービスの定期売買** \> **定期売買グループ** の順にクリックします。
 
-2.  **定期売買グループ**フォームで、**関数** \> **定期売買手数料の作成**をクリックします。
+2.  **定期売買グループ** フォームで、**関数** \> **定期売買手数料の作成** をクリックします。
 
-3.  **定期売買手数料の作成**フォームに、適切な情報を入力します。 詳細については、[定期売買手数料トランザクションの作成](create-subscription-fee-transactions.md)を参照してください。
+3.  **定期売買手数料の作成** フォームに、適切な情報を入力します。 詳細については、[定期売買手数料トランザクションの作成](create-subscription-fee-transactions.md)を参照してください。
 
 販売価格 EUR 500 を持つ定期売買手数料は、次の表に示すように、両方の定期売買で作成されます。
 

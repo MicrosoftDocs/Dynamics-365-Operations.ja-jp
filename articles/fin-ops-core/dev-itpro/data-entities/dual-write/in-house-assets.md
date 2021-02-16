@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 1e423199d0639db5e403e280880036b590149095
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172949"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684008"
 ---
 # <a name="in-house-assets-for-servicing"></a>サービスのための社内資産
 
@@ -38,7 +37,7 @@ Microsoft Dynamics 365 Field Service は、顧客資産をサービスするよ�
 
 ## <a name="templates"></a>テンプレート
 
-社内資産には、次のテーブルに示すように、データの相互作用中に連携して作業するコア エンティティ マップのコレクションが含まれます。
+社内資産には、次のテーブルに示すように、データの相互作用中に連携して作業するコア テーブル マップのコレクションが含まれます。
 
 | Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
 |-----------------------------|-----------------------------------|-------------|

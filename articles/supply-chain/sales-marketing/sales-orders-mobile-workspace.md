@@ -19,22 +19,22 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212943"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432156"
 ---
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**販売注文**モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
+このトピックでは、**販売注文** モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
 
 このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
-**販売注文**モバイル ワークスペースを使用して、各販売注文に関する詳細情報を表示できます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 
+**販売注文** モバイル ワークスペースを使用して、各販売注文に関する詳細情報を表示できます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 
 
 モバイル ワークスペースは、より詳しい販売注文の分析に役立つ 2 つのビューを提供します。
 
@@ -84,7 +84,7 @@ ms.locfileid: "3212943"
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件 
-Supply Chain Management が組織に配置されている場合、システム管理者は**販売注文**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management が組織に配置されている場合、システム管理者は **販売注文** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -137,8 +137,8 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 ## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>販売注文モバイル ワークスペースを使用して顧客の販売注文に関する情報を表示
 
 1.  モバイル デバイスで、**販売注文** ワークスペースを選択します。
-2.  **顧客の注文の表示**を選択します。
+2.  **顧客の注文の表示** を選択します。
 3.  顧客を見つけるため、アカウントまたは顧客名情報を使用します。
 4.  顧客を選択します。
-5.  **連絡先情報** または **販売注文**を選択します。 **販売注文** を選択すると、顧客の販売注文の一覧が表示されます。
-6.  **販売注文**を選択します。 販売注文明細行、出荷に関する情報、顧客の連絡先情報、および注文受付者の連絡先情報を表示できるようになりました。
+5.  **連絡先情報** または **販売注文** を選択します。 **販売注文** を選択すると、顧客の販売注文の一覧が表示されます。
+6.  **販売注文** を選択します。 販売注文明細行、出荷に関する情報、顧客の連絡先情報、および注文受付者の連絡先情報を表示できるようになりました。

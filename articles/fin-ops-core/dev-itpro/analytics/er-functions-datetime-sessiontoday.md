@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 483ff46a27068bc2d70c80a848f0329861c914b3
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 87e8d5498c82d7c9ca6ee0a855f139dde77d75ab
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042272"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683822"
 ---
-# <a name="SESSIONTODAY">SESSIONTODAY ER 関数</a>
+# <a name="sessiontoday-er-function"></a>SESSIONTODAY ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`SESSIONTODAY` 関数は、現在のアプリケーション セッションの日付を表す*日付*値を返します。
+`SESSIONTODAY` 関数は、現在のアプリケーション セッションの日付を表す *日付* 値を返します。
 
 ## <a name="syntax"></a>構文
 

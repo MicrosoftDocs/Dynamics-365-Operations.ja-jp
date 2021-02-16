@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bfa09fe7059925249f20e1d93bc9d091d6bc63d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141905"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684622"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 
@@ -45,7 +44,7 @@ ms.locfileid: "3141905"
 6. [デザイナー] をクリックします。
 7. ツリーで、「送信ドキュメント用」を展開します。
 8. ツリーで、「送信ドキュメント用\トランザクション」を展開します。
-    * インポートされたデータ モデルの構造を確認します。 ルート項目 「送信ドキュメント用」 は、アプリケーションからデータを取得し、イントラスタット レポートを生成するデータソースとして使用するデータフローを指定する目的で定義されていることに注意してください。 「トランザクション (レコード リスト)」を使用して、報告する必要のある イントラスタット トランザクションのリストを表す目的で使用されます。 報告された商品コードをアーカイブする目的で、このデータフローでは、単一の商品コード 「Commodity rec id (Int64)」 の一意な識別子が必要となります。   
+    * インポートされたデータ モデルの構造を確認します。 ルート項目 「送信ドキュメント用」 は、アプリケーションからデータを取得し、イントラスタット レポートを生成するデータソースとして使用するデータフローを指定する目的で定義されていることに注意してください。 「トランザクション (レコード リスト)」を使用して、報告する必要のある イントラスタット トランザクションのリストを表す目的で使用されます。 報告された商品コードをアーカイブする目的で、このデータフローでは、単一の商品コード 「商品 rec id (Int64)」 の一意な識別子が必要となります。   
 9. ページを閉じます。
 10. [交換] をクリックします。
 11. [XML ファイルから読み込む] をクリックします。

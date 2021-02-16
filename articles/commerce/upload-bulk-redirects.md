@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 08c209cb2295d24d117cfd3c450aed8bfc057732
-ms.sourcegitcommit: 71fec2553158c332ce4d4bfcedc2c1ab58c1a1a5
+ms.openlocfilehash: 8268045832a95d6a2413a6e82d86d4b48a14bb76
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340474"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517344"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 
@@ -56,11 +56,11 @@ URL リダイレクトを処理するために、Commerce では、単純です�
 次の例では、リダイレクトされた CSV ファイルのリダイレクト行セットを示します。
 
 ```plaintext
-https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301, true
+https://www.contoso.com/shop, https://www.fabrikam.com/allstores, 301, true
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301, false
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301, false
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 ```
 
 > [!IMPORTANT]
@@ -120,11 +120,11 @@ https://www.oldsite.com/news, https://www.newsite.com/updates, 301
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい E コマース テナントの配置](deploy-ecommerce-site.md)
 
 [E コマース サイトの作成](create-ecommerce-site.md)
 
-[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ade723a41428a01d0e4afe7b556a752b1f22f3d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540c0079a9fca8158ed507ce2bc50839bd585fc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431913"
 ---
 # <a name="view-undispatched-service-orders"></a>実出荷のサービス注文の表示 
 
@@ -32,9 +32,9 @@ ms.locfileid: "3212000"
 
 このトピックでは、出荷チームからそれらに割り当てられた作業者がいないサービス注文の活動を表示する方法について説明します。
 
-1.  **サービス管理** \> **定期処理** \> **派遣表**の順にクリックします。
+1.  **サービス管理** \> **定期処理** \> **派遣表** の順にクリックします。
 
-2.  **派遣表**ウィンドウで、派遣活動を表示する期間の開始日と終了日を入力します。
+2.  **派遣表** ウィンドウで、派遣活動を表示する期間の開始日と終了日を入力します。
 
 3.  オプション: 結果に終了した活動および関連するチームを含めるかどうかを選択します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "3212000"
 
 
 
-5.  割り当てられている派遣チームがないサービス注文の一覧を表示するには、**未出荷**タブをクリックします。
+5.  割り当てられている派遣チームがないサービス注文の一覧を表示するには、**未出荷** タブをクリックします。
 
 ## <a name="see-also"></a>参照
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 39bcee8e17d7b744a8f9ee49323b702183d12c0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f64514976964326f68d5fb4d69ebba90f45fdd4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409383"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 
@@ -41,15 +40,15 @@ ms.locfileid: "2191632"
 ## <a name="using-extensible-enums-in-code"></a>コードでの拡張可能列挙の使用
 列挙値は開発者により制御されなくなったため、列挙値に関する確実性はありません。 コードで拡張可能列挙を使用する場合は、比較で拡張可能列挙を使用することはできない点に注意してください。 たとえば、**MyEnum::Value1 \> MyEnum::Value2** などです。
 
-さらに、整数と列挙の間のすべての変換を探します。 たとえば、ビューとクエリのモデル化された範囲、比較を使用するか比較でハードコード化された整数値を使用してコードから作成したクエリ (**\<** や **\>** など) などです。
+さらに、整数と列挙の間のすべての変換を探します。 たとえば、ビューとクエリのモデル化された範囲、および **\<** and **\>** などの比較を使用するか比較でハードコード化された整数値を使用してコードから作成したクエリです。
 
 モデルと依存しているすべてのモデルをコンパイルすると、比較および整数への変換がコンパイラによってエラーとして検出されます。
     
-列挙値が使用されているロジックがで**小さなメソッド**で抽出されることを確認します。 この方法により、コマンド チェーン (CoC) を使用する拡張が、追加された列挙値を処理できます。
+列挙値が使用されているロジックがで **小さなメソッド** で抽出されることを確認します。 この方法により、コマンド チェーン (CoC) を使用する拡張が、追加された列挙値を処理できます。
 
-インスタンス化が列挙値に基づいている**構築**メソッドの場合、可能な場合は必ず切り替えブロックを **SysExtension** に置き換えます。 それ以外の場合、既定のブロックが拡張可能であることを確認します。 例については、**PurchRFQCaseCopying** クラスを参照してください。
+インスタンス化が列挙値に基づいている **構築** メソッドの場合、可能な場合は必ず切り替えブロックを **SysExtension** に置き換えます。 それ以外の場合、既定のブロックが拡張可能であることを確認します。 例については、**PurchRFQCaseCopying** クラスを参照してください。
 
-列挙が**切り替えブロック**で使用される場合、拡張可能ではないスローを持つか持たない既定のブロックを回避します。 列挙値に**長い切り替えケース ブロック**または **if...else ブロック**がある場合、列挙に関連する特定のロジックを処理するクラス階層を作成することを検討します。 例については、**PriceGroupTypeTradeAgreementMapping** クラス階層を参照してください。
+列挙が **切り替えブロック** で使用される場合、拡張可能ではないスローを持つか持たない既定のブロックを回避します。 列挙値に **長い切り替えケース ブロック** または **if...else ブロック** がある場合、列挙に関連する特定のロジックを処理するクラス階層を作成することを検討します。 例については、**PriceGroupTypeTradeAgreementMapping** クラス階層を参照してください。
 
 列挙値を使用するクエリ範囲に **in** キーワードを使用し、**in** キーワードが使用するコンテナーを拡張可能にします。
 

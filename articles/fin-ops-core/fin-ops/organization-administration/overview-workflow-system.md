@@ -1,7 +1,7 @@
 ---
 title: ワークフロー システムの概要
 description: このトピックでは、ワークフロー システムについて説明します。
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: feb4ef0233b99420ebdd8781aae0191c9fa379f8
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812366"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692845"
 ---
 # <a name="workflow-system-overview"></a>ワークフロー システムの概要
 
@@ -32,7 +31,7 @@ ms.locfileid: "2812366"
 
 ## <a name="what-is-workflow"></a>ワークフローについて
 
-*ワークフロー*という用語は 2 とおりに定義できます。それは、システムとしての定義と、業務プロセスとしての定義です。
+*ワークフロー* という用語は 2 とおりに定義できます。それは、システムとしての定義と、業務プロセスとしての定義です。
 
 ### <a name="workflow-is-a-system"></a>システムとしてのワークフロー
 

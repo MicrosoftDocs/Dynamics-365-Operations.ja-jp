@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cbafea9063844dd3f19e5828ab37632e04591f18
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 53faf972759c8f770017fcd3a87920410988e626
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897901"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527189"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Dynamics 365 Talent (2019 年 4 月 23 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -50,8 +52,8 @@ ms.locfileid: "2897901"
 ### <a name="employee-rehire-flag-always-available-310047"></a>従業員再雇用フラグは常に使用可能 (310047)
 従業員の再雇用オプションが、退職プロセス以外の更新で使用可能になりました。 
 
-### <a name="cannot-change-the-name-of-my-payment-method-308815"></a>**自分の支払方法**の名前を変更することはできません (308815)
-従業員セルフ サービスにおいて**自分の支払方法**のラベルを変更できるように、個人用設定が有効になっています。
+### <a name="cannot-change-the-name-of-my-payment-method-308815"></a>**自分の支払方法** の名前を変更することはできません (308815)
+従業員セルフ サービスにおいて **自分の支払方法** のラベルを変更できるように、個人用設定が有効になっています。
 
 ### <a name="financial-dimensions-against-a-position-cant-be-deleted-293908"></a>職位に対する財務分析コードは削除できません (293908)
 既存の職位および会社間の財務分析コードに対する変更の要求時に財務分析コードを削除することができるようになりました。 
@@ -77,4 +79,4 @@ ms.locfileid: "2897901"
 ## <a name="known-issues"></a>既知の問題
 
 ### <a name="email-support-for-alerts"></a>アラートの電子メールサポート
-Finance and Operations のプラットフォーム更新プログラム 26 では、あるイベントによってトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
+Finance and Operations の Platform update 26 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。

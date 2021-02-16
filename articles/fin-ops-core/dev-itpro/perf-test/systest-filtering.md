@@ -10,27 +10,26 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acd1f0ff3aafdaf2d17a43cb778fc8151cd513bc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 02a8802c2c4b7944ddc2ba62879b89f4f959b016
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183085"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680436"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 
 [!include [banner](../includes/banner.md)]
 
-プラットフォーム更新プログラム 12 以降、SysTest フレームワークには、X++ で SysTest クラスおよびメソッドの属性の強化が含まれています。 これらの機能強化により、これらの属性が、Visual Studio テスト ウィンドウおよび自動ビルドプロセスで使用されるツールである Visual Studio テスト コンソールでどのように機能するかも変わります。 SysTest フレームワークは、MSTest フレームワーク アダプターと同等になるように、アダプター内の主要なテスト属性をサポートするようになりました。 これには**カテゴリ**、**所有者**、**優先順位**、および**テスト プロパティ**などの属性が含まれます。
+プラットフォーム更新プログラム 12 以降、SysTest フレームワークには、X++ で SysTest クラスおよびメソッドの属性の強化が含まれています。 これらの機能強化により、これらの属性が、Visual Studio テスト ウィンドウおよび自動ビルドプロセスで使用されるツールである Visual Studio テスト コンソールでどのように機能するかも変わります。 SysTest フレームワークは、MSTest フレームワーク アダプターと同等になるように、アダプター内の主要なテスト属性をサポートするようになりました。 これには **カテゴリ**、**所有者**、**優先順位**、および **テスト プロパティ** などの属性が含まれます。
 
 ## <a name="testcategory"></a>TestCategory
 
-**カテゴリ**属性である **SysTestCategory** は、**SysTestCategory** 属性を使用した以前のプラットフォーム更新プログラムですでに利用可能でした。 プラットフォーム更新プログラム 12 以降、クラス レベルと個々のメソッド レベルの両方で複数のカテゴリを指定できます。 さらに、**TestCategory** では、Visual Studio テスト コンソールでのフィルター処理が有効になっています。 つまり、特定のカテゴリのテスト フィルターを使用して、ビルド パイプラインを作成できます。 ビルド パイプラインで、**TestFilter** 変数を使用できます。 たとえば、カテゴリ **Nightly** でのみテストを実行するには、変数を **TestCategory=Nightly** に設定します。
+**カテゴリ** 属性である **SysTestCategory** は、**SysTestCategory** 属性を使用した以前のプラットフォーム更新プログラムですでに利用可能でした。 プラットフォーム更新プログラム 12 以降、クラス レベルと個々のメソッド レベルの両方で複数のカテゴリを指定できます。 さらに、**TestCategory** では、Visual Studio テスト コンソールでのフィルター処理が有効になっています。 つまり、特定のカテゴリのテスト フィルターを使用して、ビルド パイプラインを作成できます。 ビルド パイプラインで、**TestFilter** 変数を使用できます。 たとえば、カテゴリ **Nightly** でのみテストを実行するには、変数を **TestCategory=Nightly** に設定します。
 
 ## <a name="priority"></a>優先順位
 
@@ -38,13 +37,13 @@ ms.locfileid: "2183085"
 
 ## <a name="owner"></a>所有者
 
-**所有者**属性である **SysTestOwner** も追加されました。 この属性は技術的には既に **Test Toolbox** ウィンドウでのフィルター処理に対してサポートされていましたが、属性自体は X ++ にはありませんでした。 **Priority** と同様に、所有者は 1 回のみ指定でき、クラスとメソッドの両方のレベルでサポートされ、メソッド レベルが優先されます。 **所有者**は、コンソール用のテストフィルターとしては使用できません。これは、Visual Studio テスト コンソール用の MSTest アダプターに対応しています。 ただし、**所有者**は Visual Studio の **Test Toolbox** ウィンドウに表示されます。
+**所有者** 属性である **SysTestOwner** も追加されました。 この属性は技術的には既に **Test Toolbox** ウィンドウでのフィルター処理に対してサポートされていましたが、属性自体は X ++ にはありませんでした。 **Priority** と同様に、所有者は 1 回のみ指定でき、クラスとメソッドの両方のレベルでサポートされ、メソッド レベルが優先されます。 **所有者** は、コンソール用のテストフィルターとしては使用できません。これは、Visual Studio テスト コンソール用の MSTest アダプターに対応しています。 ただし、**所有者** は Visual Studio の **Test Toolbox** ウィンドウに表示されます。
 
 ## <a name="test-property"></a>テスト プロパティ
 
-**テスト プロパティ** 属性の **SysTestProperty** は、プラットフォームの以前のリリースに存在していましたが、完全には機能しませんでした。 ただし、**SysTestProperty** 属性は **Test Essentials** パッケージに存在する他の属性とは対照的に、**アプリケーション基準**パッケージに存在します。 プラットフォームの下位互換性への確約のため、現在この属性を予定の場所に移動することはできません。そのため、使用するには**アプリケーション基準**パッケージへの参照が必要になります。 **SysTestProperty** はプロパティと値 (2 つの文字列) を指定し、Visual Studio の **Test Toolbox** ウィンドウで使用できるようになりました。 **テスト プロパティ**は複数回指定でき、クラスとメソッドの両方のレベルで存在できます。 **テスト プロパティ**は、MSTest アダプタに従って、Visual Studio テスト コンソールのフィルター処理のテストには使用できません。
+**テスト プロパティ** 属性の **SysTestProperty** は、プラットフォームの以前のリリースに存在していましたが、完全には機能しませんでした。 ただし、**SysTestProperty** 属性は **Test Essentials** パッケージに存在する他の属性とは対照的に、**アプリケーション基準** パッケージに存在します。 プラットフォームの下位互換性への確約のため、現在この属性を予定の場所に移動することはできません。そのため、使用するには **アプリケーション基準** パッケージへの参照が必要になります。 **SysTestProperty** はプロパティと値 (2 つの文字列) を指定し、Visual Studio の **Test Toolbox** ウィンドウで使用できるようになりました。 **テスト プロパティ** は複数回指定でき、クラスとメソッドの両方のレベルで存在できます。 **テスト プロパティ** は、MSTest アダプタに従って、Visual Studio テスト コンソールのフィルター処理のテストには使用できません。
 
 Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](https://docs.microsoft.com/dotnet/core/testing/selective-unit-tests) を参照してください。 
 
 > [!NOTE]
-> フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前**でフィルター処理することができます。
+> フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前** でフィルター処理することができます。

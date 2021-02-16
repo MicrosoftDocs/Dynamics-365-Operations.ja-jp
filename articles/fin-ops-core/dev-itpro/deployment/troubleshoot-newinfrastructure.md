@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0991493b566d12dcac309c9d91270742cf00c1b0
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: e122487fd7bedcbd3f5de16b7435d20532d1b650
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096738"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685157"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 
@@ -33,10 +32,10 @@ ms.locfileid: "3096738"
 **環境監視** ダッシュボードを開くには、以下の手順に従います。
 
 1. LCS を開き、適切なプロジェクトに移動します。
-2. **環境**セクションで、表示する環境を選択してから**完全な詳細**をクリックします。
-3. **環境の詳細**ページで、**環境の監視**をクリックして、監視および診断ポータルを開きます。
+2. **環境** セクションで、表示する環境を選択してから **完全な詳細** をクリックします。
+3. **環境の詳細** ページで、**環境の監視** をクリックして、監視および診断ポータルを開きます。
 
-環境監視ダッシュボードに、**概要**および**活動**の 2 つのタブが表示されます。
+環境監視ダッシュボードに、**概要** および **活動** の 2 つのタブが表示されます。
 
 [![問題を解決する](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
@@ -50,7 +49,7 @@ ms.locfileid: "3096738"
 
 さらに、2 つのセクションも表示されます。
 
-  - **ユーザー操作**の図は、環境および SQL 使用率の傾向でさまざまなコンピューターにおけるユーザーの活動を示しています。
+  - **ユーザー操作** の図は、環境および SQL 使用率の傾向でさまざまなコンピューターにおけるユーザーの活動を示しています。
   - **ユーザー アクティビティ** グリッドには、そのセッション タイムスタンプに基づいて、ユーザーが実行したさまざまな活動が表示されます。 有効なセッションは、グリッドの左側に表示されます。 セッションごとに、Form:Control:Command と、アクションが実行されたときの対応するタイムスタンプが表示されます。 ユーザーがこのグリッドに表示される情報を実行した正確な手順を追跡することができます。
   
  > [!IMPORTANT]
@@ -66,7 +65,7 @@ ms.locfileid: "3096738"
   - クラッシュ
 
 > [!NOTE]
-> **概要**および**活動**タブに表示されるデータは、30 日間だけ保持されます。
+> **概要** および **活動** タブに表示されるデータは、30 日間だけ保持されます。
 
 > [!IMPORTANT]
 > 環境監視には、パフォーマンスの問題を診断および軽減するための高度な SQL トラブルシューティングのツールも含まれます。 この機能は、現在は使用できませんが、すぐに追加されます。 

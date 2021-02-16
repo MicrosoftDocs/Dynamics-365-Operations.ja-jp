@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources（2020 年 5 月 1 日）の新機能と変更された機能
-description: この記事では、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 5 月 1 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/01/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1a0cfd1c1b0dcc9defaad7e4cce22ebe1e91fae
-ms.sourcegitcommit: cc5dc0bd90277f1ba684dd310da3274886ce573c
+ms.openlocfilehash: 074c678d9d8294aabf4e78b2a6ee0fa53efbaf23
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3320922"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419385"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Dynamics 365 Human Resources（2020 年 5 月 1 日）の新機能と変更された機能
 
@@ -41,7 +41,7 @@ ms.locfileid: "3320922"
 - **測定**
 - **目標の測定**
 
-さらに、**合計スコア**と **平均スコア** が **ディスカッション** エンティティに追加されました。
+さらに、**合計スコア** と **平均スコア** が **ディスカッション** エンティティに追加されました。
 
 ## <a name="increase-length-of-leave-request-comments-275641"></a>休暇要求のコメントの文字数の増加 (275641)
 
@@ -102,3 +102,10 @@ SharePoint で保存されているドキュメントのドキュメント プ�
 3. SharePoint で添付ファイルにアクセスして、ドキュメントのプレビューを開始します。
 
 4. 添付ファイルにアクセスできる他のユーザー アカウントでサインインし、適切にプレビューが機能することを確認します。
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

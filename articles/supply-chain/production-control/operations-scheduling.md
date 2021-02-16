@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e95374e0aebca825f589f13eda389d6612737181
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211356"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432029"
 ---
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
@@ -55,7 +55,7 @@ ms.locfileid: "3211356"
 ## <a name="scheduling-direction-and-date"></a>スケジューリング指示と日付
 スケジューリング指示は、スケジューリング プロセスの基本となる要素です。 生産は、タイミングとスケジューリング要件に応じて、任意の日付から順方向 (将来) または逆方向 (過去) にスケジューリングできます。
 
--   で**スケジューリングの日付から順方向** – できるだけ早く開始する生産をスケジュールを設定できます。 生産の開始日としては、今日、明日、または将来の特定の日付を指定できます。 生産が最も早い終了日にスケジュール設定されます。
+-   で **スケジューリングの日付から順方向** – できるだけ早く開始する生産をスケジュールを設定できます。 生産の開始日としては、今日、明日、または将来の特定の日付を指定できます。 生産が最も早い終了日にスケジュール設定されます。
 -   **スケジューリングの日付から逆方向** – できるだけ遅く開始する生産をスケジュール設定できます。 逆方向のスケジューリングは、生産の完了期限の日付に基づいています。 スケジュールは、この日付から、生産が開始され、なお期限どおりに完了可能な一番遅い日付へ逆方向にカウントされます。
 
 ## <a name="resource-scheduling"></a>リソース スケジューリング

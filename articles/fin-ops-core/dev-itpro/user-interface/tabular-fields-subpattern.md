@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14761
 ms.assetid: a2c38c58-b312-44b1-bf48-c40dc8518011
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8066426c6dc18dc88fa01bea6665bf0ae8652972
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 4e16be4af8609ecd03463a58dbb80ee5fcda6897
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329866"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687817"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 

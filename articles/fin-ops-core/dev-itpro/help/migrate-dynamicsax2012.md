@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: f409dbac51d8dab5c7c025fd61d20ba3f15bc9ee
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: c083ce69881e26d4ef944eb1cc6b23b06cb28f0d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3366989"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685079"
 ---
 # <a name="convert-dynamics-ax-custom-help-for-use-in-dynamics-365"></a>Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
 

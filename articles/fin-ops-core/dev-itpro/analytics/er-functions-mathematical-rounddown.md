@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92150bb23e76f82907e0f3e8f0738b25801958bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9221476c1c12a7cc3fe2367cdee3ad44e5cbe381
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041565"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686885"
 ---
-# <a name="ROUNDDOWN">ROUNDDOWN ER 関数</a>
+# <a name="rounddown-er-function"></a>ROUNDDOWN ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`ROUNDDOWN` 関数は、指定された数を指定された小数点以下の桁数に切り下げてから、*実数*値として返します。
+`ROUNDDOWN` 関数は、指定された数を指定された小数点以下の桁数に切り下げてから、*実数* 値として返します。
 
 ## <a name="syntax"></a>構文
 

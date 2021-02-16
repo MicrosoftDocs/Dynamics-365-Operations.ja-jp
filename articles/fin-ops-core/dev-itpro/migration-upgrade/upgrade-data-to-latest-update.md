@@ -3,24 +3,23 @@ title: 開発環境またはデモ環境でデータをアップグレードす�
 description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8ce5b0d8207178f3091e3194647729042997c0dc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c2212bd6bc78e44fa44f7eaf947525309c58e8e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124840"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681622"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
@@ -33,7 +32,7 @@ ms.locfileid: "3124840"
 運用環境を含むレベル 2 以上の環境では、[最新バージョンへのセルフサービス アップグレード](self-service-upgrade.md) で説明されているセルフ サービスのアップグレード手順を実行します。
 
 > [!IMPORTANT]
-> - Finance and Operations の**プラットフォーム**を最新版に更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
+> - Finance and Operations の **プラットフォーム** を最新版に更新している場合、データベースをアップグレードする必要は **ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
 > - このプロセスは、Microsoft Azure BLOB ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
 > - アップグレードされたすべてのカスタム コードは、データ アップグレード プロセスを実行する前に環境に適用する必要があります。
 > - バージョン 8.0 以降を使用している場合、アプリケーションのバージョンの間でデータのアップグレードは行われなくなりました。
@@ -41,8 +40,8 @@ ms.locfileid: "3124840"
 ## <a name="before-you-begin"></a>準備
 
 1. 現在のデータベースをバックアップします。
-2. 更新プログラムが既に正常に実行されている機能環境が必要です。
-3. **ソース**環境では、アップグレードする前のバージョンに応じて次の修正プログラムのいずれかをインストールする必要があります。 これらの修正プログラムは、SysSetupLog ロジックの問題を修正するため、アップグレード プロセスでアップグレード元のバージョンが検出されます。
+1. 更新プログラムが既に正常に実行されている機能環境が必要です。
+1. **ソース** 環境では、アップグレードする前のバージョンに応じて次の修正プログラムのいずれかをインストールする必要があります。 これらの修正プログラムは、SysSetupLog ロジックの問題を修正するため、アップグレード プロセスでアップグレード元のバージョンが検出されます。
 
    - **2016 年 11 月リリースからアップグレードする場合 (1611 または 7.1 とも呼ばれる、ビルド 7.1.1541.3036):** KB 4023686、"最新のアプリケーションリリースにアップグレードすると、'ソース システムのバージョン情報が見つかりませんでした' というエラーが表示されます。"
    - **2017 年 7 月リリース からアップグレードする場合 (7.2 とも呼ばれる、ビルド 7.2.11792.56024):** このバージョンに修正プログラムは必要ありません。
@@ -54,26 +53,27 @@ ms.locfileid: "3124840"
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
 
-4. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
+1. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
 
     - KB 4033183 - Dynamics AX 2012 R2 または Dynamics AX 2012 R3 Pre-CU8 non-retail アップグレードは、dbo.RETAILTILLLAYOUTZONE のオブジェクトが存在しないため失敗しました。
     - KB 4040692 - Microsoft Dynamics 365 for Operations 7.2 への Dynamics AX 2012 R3 のアップグレードは、SalesLineIdx に RetailSalesLine の重複インデックスが存在するため失敗しました。
     - KB 4035490 - GeneralJournalAccountEntry MainAccount フィールドのアップグレード スクリプトに関するパフォーマンスの問題。
 
-5. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。
+1. Dynamics 365 Finance バージョン 10.0.9 または 10.0.10 にアップグレードする場合、データのアップグレードを実行する前に、品質更新プログラムを移行先の環境にインストールします。
+1. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。
 
     ```sql
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-6. Commerce Data Exchange (CDX) のすべてのジョブが正常に実行され、チャネル データベースのクラウド バージョンで同期されていないトランザクション データがないことを確認してください。
+1. Commerce Data Exchange (CDX) のすべてのジョブが正常に実行され、チャネル データベースのクラウド バージョンで同期されていないトランザクション データがないことを確認してください。
 
 ## <a name="select-the-correct-data-upgrade-deployable-package"></a>適切なデータ アップグレード展開可能なパッケージを選択
 
 最新の更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共有アセット ライブラリからダウンロードします。
 1. [LCS](https://lcs.dynamics.com/) にサインインします。
 2. **共有資産** ライブラリ タイルを選択します。
-3. 共有アセット ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
+3. 共有アセット ライブラリの **アセット タイプの選択** で、**ソフトウェア配置可能パッケージ** を選択します。
 4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。
 
     - AX 2012 をアップグレードする場合、パッケージ名は **AX2012DataUpgrade** から始まります。 アップグレードするリリースに対応するパッケージを選択します。 たとえば、**AX2012DataUpgrade-10-0**。
@@ -255,10 +255,10 @@ CREATE PROCEDURE [DBO].PATCHRELATIONTYPE
         EXEC (@SQLTATEMENT);
     END;
 GO
-exec PatchRelationType  'CAMDATADIMENSIONHIERARCHYNODE'
-exec PatchRelationType  'CAMDataJournal'
-exec PatchRelationType  'CAMDataCostAccountingLedgerSourceEntryProvider'
-exec PatchRelationType  'CAMDataImportedDimensionMember'
+exec PatchRelationType  'CAMDATADIMENSIONHIERARCHYNODE'
+exec PatchRelationType  'CAMDataJournal'
+exec PatchRelationType  'CAMDataCostAccountingLedgerSourceEntryProvider'
+exec PatchRelationType  'CAMDataImportedDimensionMember'
 ```
 
 ### <a name="an-index-cant-be-created-on-inventdistinctproduct"></a>InventDistinctProduct にインデックスを作成することはできません
@@ -299,7 +299,7 @@ set transactioncurrencycode = 'USD'
 where transactioncurrencycode = 'INR'
 ```
 
-または、データが元の環境 (旧バージョンなど) から元の環境に移動し、失われた為替レートを**総勘定元帳** &gt; **通貨** &gt; **通貨の為替レート**に追加します。 2014 をカバーするインド ルピー (INR) およびブラジル レアル (BRL) のレコードを追加する必要があります。 次に、そのデータベースを新しい環境に持ち込み、そのデータベースに対してアップグレードを開始します。
+または、データが元の環境 (旧バージョンなど) から元の環境に移動し、失われた為替レートを **総勘定元帳** &gt; **通貨** &gt; **通貨の為替レート** に追加します。 2014 をカバーするインド ルピー (INR) およびブラジル レアル (BRL) のレコードを追加する必要があります。 次に、そのデータベースを新しい環境に持ち込み、そのデータベースに対してアップグレードを開始します。
 
 ### <a name="the-interpreter-evaluation-stack-has-grown-during-a-call-to-the-kernel"></a>インタプリター評価スタックは、カーネルの呼び出し中に増加しました
 
@@ -327,7 +327,7 @@ UserInfom などのカーネル テーブルでデータベース ログを有�
 
 ### <a name="pre-sync-or-post-sync-errors-on-releaseupdatedb71_ledgerperiodclose"></a>ReleaseUpdateDB71\_LedgerPeriodClose で事前同期または事後同期エラー
 
-**ReleaseUpdateDB71\_LedgerPeriodClose** クラスの **preSyncLedgerPeriodCloseTemplateTask**、**updateMenuItemTypeForCurrencyReval**、または**updateLedgerPeriodCloseTemplateTask** メソッドでは、次のエラー メッセージの 1 つを受け取る可能性があります。
+**ReleaseUpdateDB71\_LedgerPeriodClose** クラスの **preSyncLedgerPeriodCloseTemplateTask**、**updateMenuItemTypeForCurrencyReval**、または **updateLedgerPeriodCloseTemplateTask** メソッドでは、次のエラー メッセージの 1 つを受け取る可能性があります。
 
 > 必要なデータベース操作を実行できません。 SQL データベースによってエラーが出されました。 オブジェクト サーバー DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\] 無効な列名「TEMPLATE」です。 INSERT INTO LedgerPeriodCloseTemplateTaskTmp (TEMPLATE、AREA, NAME、MENUITEM、MENUITEMTYPE、 TARGETDAYSFROMPROJECTCOMPLETE、DUETIME、LEGALENTITYSELECTION、RECVERSION、PARTITION、RECID、CLOSINGROLE、LINENUM) SELECT T1.TEMPLATE、T1.AREA、T1.NAME、T1.MENUITEM、T1.MENUITEMTYPE、T1.TARGETDAYSFROMPROJECTCOMPLETE、T1.DUETIME、 T1.LEGALENTITYSELECTION、T1.RECVERSION、T1.PARTITIONT1.RECID、T1.CLOSINGROLE、0 FROM LedgerPeriodCloseTemplateTask T1 session 1013 (Admin) Microsoft.Dynamics.Ax.Xpp.ErrorException: Cannot execute the required database operation。 SQL データベースによってエラーが出されました。
 > 
@@ -336,6 +336,14 @@ UserInfom などのカーネル テーブルでデータベース ログを有�
 > 必要なデータベース操作を実行できません。 SQL データベースによってエラーが出されました。 オブジェクト サーバー DynamicsAXBatchManagement: \[Microsoft\]\[SQL Server Native Client 11.0\]\[SQL Server\] 無効な列名「TEMPLATE」です。 INSERT INTO LedgerPeriodCloseTemplateTask (TEMPLATE、AREA、NAME、MENUITEM、MENUITEMTYPE、TARGETDAYSFROMPROJECTCOMPLETE、DUETIME、LEGALENTITYSELECTION、RECVERSION、PARTITION、RECID、CLOSINGROLE、LINENUM) SELECT T1.TEMPLATE、T1.AREA、T1.NAME、 T1.MENUITEM、T1.MENUITEMTYPE、T1.TARGETDAYSFROMPROJECTCOMPLETE、T1.DUETIME、T1.LEGALENTITYSELECTION、T1.RECVERSION、 T1.PARTITION、T1.RECID、T1.CLOSINGROLE、T1.LINENUM FROM LedgerPeriodCloseTemplateTaskTmp T1 session 1013 (Admin)
 
 この問題を解決するには、Management Studio を使用して、データベースから LedgerPeriodCloseTemplateTaskTmp テーブルを手動でドロップします。 Runbook ステップを返します。 この問題は、将来の修正プログラムで修正されます。
+
+### <a name="table-sync-failed-for-table-warrantygroupconfigurationitem"></a>テーブルでのテーブル同期に失敗しました: WarrantyGroupConfigurationItem
+
+Dynamics 365 Finance バージョン 10.0.9 または 10.0.10 にアップグレードする場合、データのアップグレード中に次のエラー メッセージが表示されることがあります。
+
+> テーブルでのテーブル同期に失敗しました: WarrantyGroupConfigurationItem
+
+この問題を解決するには、データベースのアップグレードをロールバックし、移行先環境で品質更新プログラムをインストールしてから、データのアップグレードを再実行します。 
 
 ### <a name="kb-number-3170386"></a>KB 番号 3170386
 
@@ -350,8 +358,8 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 
 1. ファイル エクスプローラーの **DataUpgradeAosServiceScripts** フォルダーで、ファイルが最後に変更された日付を降順に並べ替えてから、どの手順が失敗したかを特定するためにリストの上部にあるファイルを確認します。
 
-    - 一番上のファイルの名前が **dbUpgrade*PreSync*Monitor.error.log** と付けられている場合は、同期前サブステップが失敗します。
-    - 一番上のファイルの名前が **dbUpgrade*PostSync*Monitor.error.log** と付けられている場合は、同期後サブステップが失敗します。
+    - 一番上のファイルの名前が **dbUpgrade *PreSync* Monitor.error.log** と付けられている場合は、同期前サブステップが失敗します。
+    - 一番上のファイルの名前が **dbUpgrade *PostSync* Monitor.error.log** と付けられている場合は、同期後サブステップが失敗します。
 
 2. Management Studio で、次の **SELECT** ステートメントを実行します。
 

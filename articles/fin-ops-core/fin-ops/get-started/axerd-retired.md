@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 62303
 ms.assetid: ''
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 6c3483c91de961125087b2ccbeda3bdff93242bb
-ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
+ms.openlocfilehash: 27ed4de98ab0006832d44646848010fd122b3d44
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109840"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694150"
 ---
 # <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 

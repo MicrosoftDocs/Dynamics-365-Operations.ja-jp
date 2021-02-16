@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a822e5f5a6cb71a0234b1776211788578470b0bb
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 67e0b3d1058e5fc085f51577ccf0b79e51546de0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124303"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445155"
 ---
 # <a name="credit-and-collections-overview"></a>与信および回収の概要
 
@@ -47,7 +47,7 @@ ms.locfileid: "3124303"
 
 ## <a name="collections-management"></a>回収管理
 
-**回収**ページでは、売掛金勘定回収情報が管理される一元的な表示が提供されます。 回収マネージャーは、この一元的な表示を使用して回収を管理できます。 回収代行業者は、定義済の回収基準を使用して生成された顧客リスト、または**顧客**ページから回収プロセスを開始できます。
+**回収** ページでは、売掛金勘定回収情報が管理される一元的な表示が提供されます。 回収マネージャーは、この一元的な表示を使用して回収を管理できます。 回収代行業者は、定義済の回収基準を使用して生成された顧客リスト、または **顧客** ページから回収プロセスを開始できます。
 
 回収を設定または作業を開始する前に、次の概念を理解する必要があります:
 

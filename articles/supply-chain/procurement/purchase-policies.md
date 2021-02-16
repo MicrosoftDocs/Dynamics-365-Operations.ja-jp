@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
+ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207905"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432397"
 ---
 # <a name="purchasing-policies-overview"></a>購入ポリシーの概要
 
@@ -102,9 +102,9 @@ Samは、Sales UK つまり Contoso 社の英国オフィスの販売部門で�
 
 ### <a name="purchase-requisition-control-rule"></a>購買要求管理ルール
 
-購買要求管理ルールは、オプションのルールです。 このタイプのルールを作成すると、さまざまなタブのオプションを設定できます。
+**消費** タイプの要求に対する購買要求管理ルールは、オプションのルールです。 このタイプのルールを作成すると、さまざまなタブのオプションを設定できます。
 
--   **ワークフローの送信** タブでは、要求目的が **消費** の場合、承認のための送信に必要な要求明細行で入力するフィールドをコンフィギュレーションできます。
+-   **ワークフローの送信** タブでは、承認のために送信される要求に対して要求明細行に入力する必要があるフィールドを構成できます。
 -   **注文数量** タブで、特定の条件下で購買要求に必要なフィールドをコンフィギュレーションできます。 また、注文数量を適用できます。
 -   **日付** タブで、決算日が要求日と同じかどうかを設定できます。
 -   **アドレス** タブで、ユーザーが購買要求に適用するシステムで新しい住所を作成することが許可されるかを定義できます。

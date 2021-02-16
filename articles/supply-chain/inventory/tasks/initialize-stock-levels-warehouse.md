@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 03481ddc5bd12b3459b69d65b1cfaeb23c60dfd4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204105"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432225"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>倉庫の在庫レベルの初期化
 

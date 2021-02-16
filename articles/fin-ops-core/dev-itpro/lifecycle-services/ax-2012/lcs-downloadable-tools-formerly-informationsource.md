@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 62603
 ms.assetid: 1e9eb4d9-3826-42f6-a917-99b3940436a7
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2d99ca365c4a4567d1c8156011c0d89ffa8933df
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: b99e3389c7eeb42c73ef20edbda9a398deb347e2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983744"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687629"
 ---
 # <a name="downloadable-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のダウンロード可能ツール
 

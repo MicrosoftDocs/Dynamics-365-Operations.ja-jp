@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベントおよび Azure Event Grid
 description: このトピックでは、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 6ab7c0081fec1688cdd57cdbfea10040813b5f51
-ms.sourcegitcommit: b6ecc60e33deef76b7248466c5747ac6f20d30ee
+ms.openlocfilehash: ded07e0837a631e0e5f3ee157cb241522dcd1e2f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "2691549"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688105"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]
@@ -74,7 +73,7 @@ ms.locfileid: "2691549"
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
-5. **作成**を選択します。
+5. **作成** を選択します。
 
 ## <a name="procedure-3-register-a-new-application"></a>手順 3: 新しいアプリケーションの登録
 
@@ -108,7 +107,7 @@ ms.locfileid: "2691549"
 
 ## <a name="procedure-4-configure-a-business-events-endpoint"></a>手順 4: ビジネス イベント エンドポイントのコンフィギュレーション
 
-1. アプリケーションにサイン インし、**システム管理 \> 設定 \> ビジネス イベント**の順に移動します。
+1. アプリケーションにサイン インし、**システム管理 \> 設定 \> ビジネス イベント** の順に移動します。
 2. **エンドポイント** を選択します。
 3. **新規** を選択します。
 4. **Azure Event Grid** を選択します。
@@ -123,7 +122,7 @@ ms.locfileid: "2691549"
 
 ビジネス シナリオでは、USMF 会社に自由書式の請求書が転記されるたびに電子メール メッセージを送信します。 顧客アカウント番号、顧客名、請求書の合計金額など、詳細がメッセージ`に含まれる必要があります。
 
-1. ビジネス イベント カタログを選択し、**自由書式の請求書が転記されました**ビジネス イベントを探します
+1. ビジネス イベント カタログを選択し、**自由書式の請求書が転記されました** ビジネス イベントを探します
 2. 次に USMF 会社のビジネス イベントを有効化します。 一度有効になると、テスト メッセージは送信され、構成を検証し、接続をキャッシュします。
 3. テスト メッセージが受信されたことを確認するには、Azure ポータルでイベント グリッド トピックを選択して **メトリック** を選択します。 **公開されたイベント** メトリックと **一致しないイベント** メトリックの両方が少なくとも **1** の値を示していることを確認します。 そうでない場合は、バッチ ジョブがメッセージを受信するまで待ちます。
 
@@ -153,7 +152,7 @@ ms.locfileid: "2691549"
 
     次に、契約の指定されたスキーマを入力する必要があります。 これは、ただのサンプル ペイロードです。 ただし、Azure Logic Apps の機能を使用してペイロードからスキーマを生成できます。
 
-12. ビジネス イベント カタログのイベントを選択し、**スキーマのダウンロード**リンクを選択します。 テキスト ファイルがダウンロードされます。 テキストファイルを開いて内容をコピーします。
+12. ビジネス イベント カタログのイベントを選択し、**スキーマのダウンロード** リンクを選択します。 テキスト ファイルがダウンロードされます。 テキストファイルを開いて内容をコピーします。
 13. Logic Apps に戻って **サンプル ペイロードを使用してスキーマを生成** リンクを選択します。 テキスト ファイルの内容を貼り付けて **完了** を選択します。
 
     <img alt="Event schema " src="../../media/BEF-Howto-EventGrid-16.png" width="70%">
@@ -164,7 +163,7 @@ ms.locfileid: "2691549"
 
     次に、顧客の支払いの詳細を含む通知電子メールの送信など、最終的なアクションを選択します。
 
-15. **電子メールの送信** アクションを検索し、自分の Microsoft Office 365 アカウントにサインインします。
+15. **電子メールの送信** アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
 16. メッセージの本文および、必須項目を入力します。
 17. ロジック アプリを保存します。
 18. 顧客の支払いを転記して、ビジネス イベントをトリガーします。 そして、ロジック アプリが実行されていること、顧客の支払いの詳細が記載された電子メールを受信することを確認します。

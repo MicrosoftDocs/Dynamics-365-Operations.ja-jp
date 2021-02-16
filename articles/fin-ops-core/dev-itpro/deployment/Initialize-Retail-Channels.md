@@ -3,24 +3,23 @@ title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: f1e534498988e207277cfde9ae8a67696d662bad
-ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
+ms.openlocfilehash: a581da3c6090ff971ea908a9eacd41300ec7d0cb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454995"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681075"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -36,7 +35,7 @@ ms.locfileid: "3454995"
 ## <a name="prerequisites"></a>必要条件
 
 1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
-2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求**を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
+2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求** を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
 
 ## <a name="region-availability"></a>地域の可用性
 Commerce Scale Unit は、次の地域に配置することができます。
@@ -82,7 +81,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 ## <a name="configure-retail-channels-to-use-commerce-scale-unit"></a>Commerce Scale Unit を使用するための小売チャンネルのコンフィギュレーション
 
-1. Commerce Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース**の順に移動して、この Commerce Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
+1. Commerce Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース** の順に移動して、この Commerce Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
 2. 各小売りチャンネルに移動して、対応する Commerce Scale Unit のチャンネル プロファイルを選択します。
 
 ### <a name="database-refresh-and-commerce-scale-units"></a>データベースの更新と Commerce Scale Unit
@@ -91,7 +90,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 データベース更新の一部として (チャネル データベース フォームで) スケール ユニット チャネル データベース レコードを環境を越えて移動できません。 これはレコードが環境固有のコンフィギュレーションを表すためです。
 
-データベースの更新後と Retail の再プロビジョニング ツールの実行後、LCS でスケール ユニットの再展開を発行して、スケール ユニットのチャネル データベース レコードを再生成できます。 スケール ユニットで配置やサービス操作を行うと、登録が行われていないことが検出された場合に、本社でスケール ユニットが登録されます。
+データベース更新後、LCS でスケール ユニットの再展開を発行して、スケール ユニットのチャネル データベース レコードを再生成できます。 スケール ユニットで配置やサービス操作を行うと、登録が行われていないことが検出された場合に、本社でスケール ユニットが登録されます。
 
 スケール ユニットがすでに存在するのと同じバージョンの展開を選択することで、コンポーネントを変更することなくスケール ユニットの再配置を発行できます。 これは次の手順により LCS で行うことができます:
 
@@ -112,7 +111,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 展開する追加の RCSU ごとに、チャネル データ ベースグループを 個別に作成することもお勧めします。 これを行うには、次の手順に従います。
 
-1. コマース バックオフィスで、**Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャネル データベース グループ**の順に移動します。
+1. コマース バックオフィスで、**Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャネル データベース グループ** の順に移動します。
 2. 新しいチャネル データベース グループを作成します。
 3. **Retail とコマース> Retail Headquarters > Retail スケジューラの設定 > チャネル データベース** フォームの順に移動し、新しく作成された RCSU に対応するチャネル データベースを選択します。
 4. **編集** を選択して、新しいチャンネル データベース グループを選択します。
@@ -132,7 +131,7 @@ Commerce Scale Unit は、次の地域に配置することができます。
 3. 本社で **既定** のチャネル データベースにマップされたすべてのチャネルは、新しい Commerce Scale Unit にマップするように更新されます。
 4. Commerce Data Exchange (CDX) 完全データ同期は、チャンネル データを新しいスケール ユニットに取り込むために実行されます。
 
-原則として、**Commerce Scale Unit の初期化の計画とテストを行う**には、店舗業務や、小売りサーバーやクラウドの販売時点管理を使用する E コマース チャネル業務のダウンタイムを 5 時間程度想定した計画を立てる必要があります。
+原則として、**Commerce Scale Unit の初期化の計画とテストを行う** には、店舗業務や、小売りサーバーやクラウドの販売時点管理を使用する E コマース チャネル業務のダウンタイムを 5 時間程度想定した計画を立てる必要があります。
 
 1. 運用環境からサンドボックス UAT 環境へのデータベースの更新を実行します。 
 2. サンドボックス UAT 環境で Commerce Scale Unit を初期化します。 

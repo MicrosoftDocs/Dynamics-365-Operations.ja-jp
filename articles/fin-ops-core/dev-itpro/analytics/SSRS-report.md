@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 203494
 ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: cadd69447a730a7e51b655d9ad5cdc0d928c8616
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9b5d3f8b523a8ef0b4315f6d90bd6d57114b4278
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771646"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686526"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
@@ -39,4 +38,4 @@ ms.locfileid: "2771646"
 詳細については、[レポート ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[SQL Server Reporting Services レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。
+[SQL Server Reporting Services レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。

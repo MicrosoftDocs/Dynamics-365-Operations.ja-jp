@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: fac44dc271e9c1084ac1cda5b7c67ecd7c95bdf0
-ms.sourcegitcommit: baab88d037ebf26e6c8822d96056e5ee475877aa
+ms.openlocfilehash: 6b5ad11ad6f93681af752ba10ab36036b45846d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3369506"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408963"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
@@ -39,9 +38,9 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 オンプレミス環境に ISV ライセンス ファイルをインポートする前に、次の前提条件が満たされていることを確認します。
 
 - 最新のバージョンのローカル エージェントは、環境が配置されたときに使用されました。
-- 環境はプラットフォーム更新プログラム 12 で配置され、プラットフォーム更新プログラム 12 のすべての修正プログラムが適用されます。 Microsoft が ISV ライセンス シナリオの修正プログラムをリリースしたため、このステップは必須です。 最新の修正プログラムを入手するには、Microsoft Dynamics Lifecycle Services (LCS) の **環境の詳細**ページでタイルを使用します。
+- 環境はプラットフォーム更新プログラム 12 で配置され、プラットフォーム更新プログラム 12 のすべての修正プログラムが適用されます。 Microsoft が ISV ライセンス シナリオの修正プログラムをリリースしたため、このステップは必須です。 最新の修正プログラムを入手するには、Microsoft Dynamics Lifecycle Services (LCS) の **環境の詳細** ページでタイルを使用します。
 - ISV ライセンスをインポートする前に、環境を展開し、Application Object Server (AOS) サービスを実行している必要があります。
-- ISV ライセンスをインポートする前に、ISV ソリューションをオンプレミス環境に適用する必要があります。 ISV ソリューションは、配置フロー中に設置環境に適用できます。 または、LCS の**更新プログラムの適用**フローを使用して配置後のステップとして ISV ソリューションを適用することができます。 ライセンスをインポートする前に、ISV ソリューションが適用されていない場合、カスタマイズを使用できません。
+- ISV ライセンスをインポートする前に、ISV ソリューションをオンプレミス環境に適用する必要があります。 ISV ソリューションは、配置フロー中に設置環境に適用できます。 または、LCS の **更新プログラムの適用** フローを使用して配置後のステップとして ISV ソリューションを適用することができます。 ライセンスをインポートする前に、ISV ソリューションが適用されていない場合、カスタマイズを使用できません。
 
 ## <a name="import-licenses"></a>ライセンスのインポート
 オンプレミス プロジェクトに配置されているサンドボックス環境または本番環境では、次の手順を使用できます。
@@ -52,7 +51,7 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 1. ライセンスを発行する顧客のテナント名と ID を収集します:
 
     1. 環境がホストされている Service Fabric Explorer のインスタンスに接続します。
-    2. **クラスタ** &gt; **アプリケーション** &gt; **AXSFType** &gt; **ファブリック:\\AXSF** の順に移動し、次に右のページで、**詳細**タブを選択します。
+    2. **クラスタ** &gt; **アプリケーション** &gt; **AXSFType** &gt; **ファブリック:\\AXSF** の順に移動し、次に右のページで、**詳細** タブを選択します。
     3. **パラメーター** テーブルで **License\_TenantDomainGuid** および **Licence\_TenantId** キーの値を検索します。
 
 2. 顧客のライセンス (テナント ID と名前) を生成し、証明書のプライベート キーを使用してライセンスを登録します。 ライセンス ファイルを作成するには、次のパラメーターを  AXUtil **genlicense**  コマンドに渡す必要があります。 コマンドは XML ファイルを生成します。

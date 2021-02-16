@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 2e49c1f4f55a1f9df4a60a0e188727282a3a871d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a31ecfaaddfd29b82ffa87aca3c4eb3cf64f495
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191635"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409245"
 ---
 # <a name="extended-data-types"></a>拡張データ型
 [!include [banner](../includes/banner.md)]
@@ -42,14 +41,14 @@ ms.locfileid: "2191635"
 文字列 EDT への割り当てでは、定義されている文字列のサイズを照合するために文字列が切り捨てられます。
 
 ## <a name="extends"></a>拡張
-拡張によって**拡張**プロパティを変更することはできません。 リリース後にこのプロパティに対して行った変更はすべて、重大な変更を引き起こします。 したがって、リリース前に、プロパティが正しく設定されていることを確認する必要があります。
+拡張によって **拡張** プロパティを変更することはできません。 リリース後にこのプロパティに対して行った変更はすべて、重大な変更を引き起こします。 したがって、リリース前に、プロパティが正しく設定されていることを確認する必要があります。
 
 このプロパティを設定した場合、自分も拡張担当者も後での文字列サイズを変更することはできません。 
 
 不要な依存関係を回避してください。 たとえば、名前や説明などの一般的な EDT を拡張しないでください。
 
 ## <a name="number-of-decimals"></a>小数点以下の桁数
-拡張によって**拡張によって**プロパティを変更することはできません。
+拡張によって **拡張によって** プロパティを変更することはできません。
 
 このプロパティを **True** に設定した場合、拡張担当者は小数点以下桁数を変更できます。 
 

@@ -8,17 +8,16 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 307f0e67328c40a7a47ed47fbc9ed54c01da4c2e
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: b3b69553d2ea4432e78426211a2f1d8d1b40d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367045"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685087"
 ---
 # <a name="custom-help-toolkit-the-htmllocalechanger-tool"></a>カスタム ヘルプ ツールキット: HtmlLocaleChanger ツール
 

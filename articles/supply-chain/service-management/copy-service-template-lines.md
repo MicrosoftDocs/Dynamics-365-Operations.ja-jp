@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97e3c06cd8ff7e615bd5f4f1286fdb51df1aa840
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a8b26924641b8b0d26fa6834623b482be7fb7d6d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202931"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431750"
 ---
 # <a name="copy-service-templates-lines"></a>サービス テンプレート行のコピー 
 
@@ -33,7 +33,7 @@ ms.locfileid: "3202931"
 
 ## <a name="copy-service-template-lines-into-a-service-agreement"></a>サービス テンプレート行をサービス合意へコピー
 
-1. **サービス合意**をクリックします。
+1. **サービス合意** をクリックします。
 2. **サービス合意** ページを開くには、サービス合意をダブルクリックします。
 3. **テンプレートの行** をクリックして **サービス テンプレート行のコピー** ページを開きます。
 4. **ツリー コントロール** タブで、ツリーを展開し、サービス合意にコピーする行を含むテンプレートを探して、サービス テンプレートを選択します。
@@ -45,7 +45,7 @@ ms.locfileid: "3202931"
 
 ## <a name="copy-service-template-lines-into-a-service-order"></a>サービス テンプレート行をサービス注文へコピー
 
-1. **サービス注文**をクリックします。
+1. **サービス注文** をクリックします。
 2. **サービス注文** ページを開くには、サービス注文をダブルクリックします。
 3. コピー \> テンプレート行のコピーをクリックして **サービス テンプレート行のコピー** ページを開きます。
 4. **ツリー コントロール** タブで、ツリーを展開し、サービス注文にコピーする行を含むテンプレートを探して、サービス テンプレートを選択します。

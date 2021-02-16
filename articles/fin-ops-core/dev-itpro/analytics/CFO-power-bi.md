@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 513d645c5f419dd9f0b938b3354b00d7e221aa2d
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5970f5c333803c45426b75d09b4f07c26bf892de
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536896"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688152"
 ---
 # <a name="cfo-overview-power-bi-content"></a>CFO 概要 Power BI コンテンツ
 
@@ -30,12 +29,12 @@ ms.locfileid: "2536896"
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-**CFO 概要** Power BI コンテンツからのレポートは、**CFO 概要**ワークスペースで表示されます。
+**CFO 概要** Power BI コンテンツからのレポートは、**CFO 概要** ワークスペースで表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **CFO 概要** Power BI コンテンツは、総勘定元帳からの実際残高と予算残高に加え、さまざまな Power BI コンテンツからのレポートの複合です。 したがって、この Power BI コンテンツは、最高財務責任者 (CFO) に組織の概要を示します。
 
-次の表は、Power BI コンテンツにコピーされるレポート、および **CFO 概要**ワークスペースで提供されているレポートを示します。 さまざまな Power BI コンテンツのドキュメントへのリンクが提供されています。
+次の表は、Power BI コンテンツにコピーされるレポート、および **CFO 概要** ワークスペースで提供されているレポートを示します。 さまざまな Power BI コンテンツのドキュメントへのリンクが提供されています。
 
 | 含まれている Power BI コンテンツ | レポート |
 |-----------------------------------|---------|

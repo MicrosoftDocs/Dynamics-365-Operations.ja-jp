@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54dae6edb6681e1ba29709ebeeea2e5094262257
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 74594871e9eeed86ae2914d1e5a08c0af28ab643
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206476"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432117"
 ---
 # <a name="use-stage-reason-codes"></a>ステージ理由コードの使用 
 
@@ -44,27 +44,27 @@ ms.locfileid: "3206476"
 
 ## <a name="set-up-reason-codes"></a>理由コードの設定
 
-1.  **サービス管理** \> **設定** \> **サービス注文** \> **ステージ理由コード**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス注文** \> **ステージ理由コード** の順にクリックします。
 
-2.  **ステージ理由コード**フォームで、**新規**をクリックして新しい理由コードを作成します。
+2.  **ステージ理由コード** フォームで、**新規** をクリックして新しい理由コードを作成します。
 
-3.  **ステージ理由コード**フィールドに、固有のステージの理由コードを入力します。
+3.  **ステージ理由コード** フィールドに、固有のステージの理由コードを入力します。
 
-4.  **説明**フィールドに、ステージの理由コードの説明を入力します。
+4.  **説明** フィールドに、ステージの理由コードの説明を入力します。
 
 5.  フォームを閉じて、変更を保存します。
 
 ## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a>サービス レベル契約がキャンセルされた場合の理由コードの要求
 
-1.  **サービス管理** \> **設定** \> **サービス管理パラメーター**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス管理パラメーター** の順にクリックします。
 
-2.  **サービス管理パラメーター**フォームで、**一般**リンクをクリックし、次に**キャンセルの理由コード**チェック ボックスをオンにします。
+2.  **サービス管理パラメーター** フォームで、**一般** リンクをクリックし、次に **キャンセルの理由コード** チェック ボックスをオンにします。
 
 ## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a>サービス注文がサービス レベル契約で設定されている期限を過ぎた場合の理由コードの要求
 
-1.  **サービス管理** \> **設定** \> **サービス管理パラメーター**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス管理パラメーター** の順にクリックします。
 
-2.  **サービス管理パラメーター**フォームで、**一般**リンクをクリックし、次に**時間超過の理由コード**チェック ボックスをオンにします。
+2.  **サービス管理パラメーター** フォームで、**一般** リンクをクリックし、次に **時間超過の理由コード** チェック ボックスをオンにします。
 
 ## <a name="see-also"></a>参照
 

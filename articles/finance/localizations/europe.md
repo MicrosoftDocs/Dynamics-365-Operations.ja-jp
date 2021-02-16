@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772848"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512214"
 ---
 # <a name="europe-overview"></a>欧州の概要
 
@@ -99,4 +99,3 @@ ms.locfileid: "2772848"
 
 - [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-

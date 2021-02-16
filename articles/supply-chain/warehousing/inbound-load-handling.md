@@ -2,25 +2,26 @@
 title: 発注書に対する入庫積荷の倉庫処理
 description: このトピックでは、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 709a75a259b1f8daa5b72e76b56942573c403f43
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261348"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432289"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -62,11 +63,11 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 - **出荷で予定されている品目の数量を説明する入庫積荷レコード**
 
-    通常、仕入先は、出荷が倉庫に到着する前に入庫積荷レコードを確認します。 したがって、積荷は _出荷済_ 状態になります。 ただし、倉庫作業者は、状態が _未処理_または _受入済_ である積荷についても品目数量を登録することができます。
+    通常、仕入先は、出荷が倉庫に到着する前に入庫積荷レコードを確認します。 したがって、積荷は _出荷済_ 状態になります。 ただし、倉庫作業者は、状態が _未処理_ または _受入済_ である積荷についても品目数量を登録することができます。
 
 - **積荷入庫をサポートするようにコンフィギュレーションされたモバイル デバイス メニュー**
 
-    モバイルデバイス用の [Dynamics 365 for Finance and Operations – 倉庫アプリ](install-configure-warehousing-app.md) は、次の作業作成プロセスをサポートします。
+    モバイル デバイス用の[倉庫アプリ](install-configure-warehousing-app.md) は、次の作業作成プロセスをサポートします。
 
     - 積荷品目入庫
     - 積荷品目入庫とプット アウェイ
@@ -212,7 +213,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 **積荷状態** フィールドを _受入済_ に設定すると、その積荷に対してこれ以上製品受領書の転記を行うことはできません。 ただし、次の条件下では、作業者は受入済積荷に対して残りの注文数量を登録できます。 (詳細については、このトピックの前の [積荷の入荷超過](#load-over-receiving) セクションを参照してください。)
 
 - Supply Chain Management のバージョンは 10.0.11 よりも古いバージョンです。
-- _積荷数量の受入超過_ 機能がオンになり、積荷品目入庫アクションのモバイル デバイス メニュー項目の**受入超過積荷明細行の数量** フィールドが _許可_ に設定されます。
+- _積荷数量の受入超過_ 機能がオンになり、積荷品目入庫アクションのモバイル デバイス メニュー項目の **受入超過積荷明細行の数量** フィールドが _許可_ に設定されます。
 
 製品の入庫を行い、状態が _受入済_ の積荷に対して追加の登録済積荷数量を転記するには、関連する発注書から転記アクションを実行する必要があります。
 
@@ -244,7 +245,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 前に説明したように、システムには 2 つの製品受領書転記オプションが用意されています。 オプションには、次の場所からアクセスできます:
 
-- **積荷** ページ、または**倉庫管理 \> 定期処理のタスク** メニューから更新ジョブとして
+- **積荷** ページ、または **倉庫管理 \> 定期処理のタスク** メニューから更新ジョブとして
 - **発注書** ページ、または **調達 \> 発注書 \> 製品の入荷** メニューから更新ジョブとして
 
 積荷を使用して、入庫指示の輸送と倉庫処理を計画および管理する会社は、積荷を処理するように設計された次の機能を使用することをお勧めします:
@@ -265,7 +266,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 これらのシナリオでは、_積荷ごとに複数の製品受領書を転記する_ 機能とその前提条件となる機能が必要です。 管理者は、次の手順に従って、これらの機能を有効にできます。
 
-1. **機能管理**ワークスペースを開きます。 (このワークスペースを検索して使用する方法の詳細については、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。)
+1. **機能管理** ワークスペースを開きます。 (このワークスペースを検索して使用する方法の詳細については、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。)
 
 1. 次のように表示される _発注書の在庫トランザクションを積荷と関連付ける_ 機能をオンにします:
 
@@ -285,7 +286,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 倉庫の入庫係がモバイル デバイスを使用して、積荷にリンクされている入庫在庫を登録する前に、その目的でモバイル デバイス メニュー項目を作成する必要があります。
 
-このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫アプリで選択できます。
+このセクションでは、モバイル デバイスのメニュー項目を作成し、既存のメニューに追加します。 倉庫作業者は、メニュー項目を倉庫アプリで選択できるようになります。
 
 1. **倉庫管理 \> 設定 \> モバイル デバイス \> モバイル デバイスのメニュー項目** に移動し、モバイル デバイス メニューに次の設定のメニュー項目が含まれていることを確認します:
 
@@ -332,7 +333,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
     ![貨物の詳細](media/inbound-load-details.png "貨物の詳細")
 
-1. アクション ウィンドウの **出荷と入荷** タブで、**確定 \> インバウンド出荷** を選択します。 **積荷の状態**が _出荷済_ に変更されていることに注意してください。
+1. アクション ウィンドウの **出荷と入荷** タブで、**確定 \> インバウンド出荷** を選択します。 **積荷の状態** が _出荷済_ に変更されていることに注意してください。
 1. 次の手順で使用できるように、**積荷 ID** の値をメモしておきます。
 
 #### <a name="register-receipt-of-the-quantities-that-arrived-on-the-load"></a>積荷で到着した数量の受入を登録する
@@ -380,7 +381,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 1. 積荷の詳細に戻ります。 次の点に注意してください:
 
     - **積荷の状態** フィールドが _入庫済_ に設定されます。
-    - 積荷明細行では、積荷の **数量** 値が _10_ から _9_ 個に変更され、登録済数量と一致しますが、**作業作成数量** 値は _9_のままです。
+    - 積荷明細行では、積荷の **数量** 値が _10_ から _9_ 個に変更され、登録済数量と一致しますが、**作業作成数量** 値は _9_ のままです。
 
 購買チームは、仕入先からの残りの注文数量 1 の配送を想定していない場合は、明細行の配送残量を _0_ に更新することで注文を閉じることができます。 ただし、不足している部品が元の積荷に到達したことがすぐに判明した場合、倉庫の担当者は次のいずれかのアクションを実行できます:
 
@@ -402,7 +403,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 この手順では、同じ積荷から複数の製品受領書の転記を有効にします。
 
-1. **倉庫管理 \> 設定 \> 倉庫管理パラメーター**の順に移動します。
+1. **倉庫管理 \> 設定 \> 倉庫管理パラメーター** の順に移動します。
 1. **積荷** タブで、**積荷ごとに複数の製品受領書を許可する** フィールドを _はい_ に設定します。
 
 #### <a name="create-two-loads-to-plan-receipt-of-a-purchase-order"></a>2 つの積荷を作成して、発注書の受入を計画する

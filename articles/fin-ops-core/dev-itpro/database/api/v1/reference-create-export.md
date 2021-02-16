@@ -3,29 +3,27 @@ title: データベース移動 API - 照会 - v1 - データベース エクス
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 8429e4d8d4f5bfd9d0640b40d6a469a85f9288cd
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: f4f8baf07d693842c81d9ea51904c9cb86a1aa8a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150851"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681114"
 ---
 # <a name="create-a-database-export"></a>データベース エクスポートの作成
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 サンドボックス環境からプロジェクトの資産ライブラリへのデータベース エクスポートを作成できます。 Microsoft Dynamics Lifecycle Services (LCS) の詳細ページと同じ検証ルールは、 アプリケーション プログラミング インターフェイス (API) に適用されます。
 

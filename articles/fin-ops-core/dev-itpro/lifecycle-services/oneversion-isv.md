@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 42329ed1e511e70baa540b1f78b04817853cb0dd
-ms.sourcegitcommit: a08470a59cfa34a2f451be3431e4ae0bfd7df8cf
+ms.openlocfilehash: 625c21d83ea7cb7fb5da3b2b767b8b5d110d6d07
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3291674"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687908"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 

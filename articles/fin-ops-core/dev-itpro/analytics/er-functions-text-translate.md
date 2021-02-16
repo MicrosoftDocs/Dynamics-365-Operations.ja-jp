@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 415444bda097c00522155d1b37988a79da836902
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: c5d192b8679d6df2c44a0038fe4ffc181a6a54df
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201115"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685306"
 ---
-# <a name=""></a><a name="TRANSLATE">TRANSLATE ER 関数</a>
+# <a name="translate-er-function"></a>TRANSLATE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +40,7 @@ TRANSLATE (text , pattern, replacement)
 
 `text`: *文字列*
 
-*文字列*型のデータ ソースの有効なパス。
+*文字列* 型のデータ ソースの有効なパス。
 
 `pattern`: *文字列*
 

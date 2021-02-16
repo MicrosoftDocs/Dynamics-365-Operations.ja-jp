@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31fd4076d04ce7d849555bc8301c4d23ad8e1a7e
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e4af3926998d128f8269ab9af46caeb8be896509
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041013"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680221"
 ---
-# <a name="NUMERALSTOTEXT">NUMERALSTOTEXT ER 機能</a>
+# <a name="numeralstotext-er-function"></a>NUMERALSTOTEXT ER 機能
 
 [!include [banner](../includes/banner.md)]
 
-`NUMERALSTOTEXT` 関数は、指定された言語で綴らた後 (つまりテキスト文字列に変換された)、*文字列*値として指定された数を返します。
+`NUMERALSTOTEXT` 関数は、指定された言語で綴らた後 (つまりテキスト文字列に変換された)、*文字列* 値として指定された数を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,25 +38,25 @@ NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal po
 
 ## <a name="arguments"></a>引数
 
-`number`: *整数*または*実数*
+`number`: *整数* または *実数*
 
 綴りが必要な数を指定する数値。
 
 `language`: *文字列*
 
-言語コードを表す*文字列*値。
+言語コードを表す *文字列* 値。
 
 `currency`: *文字列*
 
-通貨コードを表す*文字列*値。
+通貨コードを表す *文字列* 値。
 
 `print currency name flag`: *ブール値*
 
-綴られたテキストに通貨名を追加する必要があるかどうかを示す*ブール*値。
+綴られたテキストに通貨名を追加する必要があるかどうかを示す *ブール* 値。
 
 `decimal points`: *整数*
 
-綴られたテキストを持つべき小数点以下の桁数を示す*整数*値。
+綴られたテキストを持つべき小数点以下の桁数を示す *整数* 値。
 
 ## <a name="return-values"></a>戻り値
 
@@ -67,7 +66,7 @@ NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal po
 
 ## <a name="usage-notes"></a>使用上の注意
 
-言語コードはオプションです。 空の文字列として定義されている場合、実行中のコンテキストの言語コードが使用されます。 既定の言語コードは **EN-US** です。 実行中のコンテキストの言語コードは、実行されている電子申告 (ER) の**フォルダー**または**ファイル**要素で定義されます。
+言語コードはオプションです。 空の文字列として定義されている場合、実行中のコンテキストの言語コードが使用されます。 既定の言語コードは **EN-US** です。 実行中のコンテキストの言語コードは、実行されている電子申告 (ER) の **フォルダー** または **ファイル** 要素で定義されます。
 
 通貨コードはオプションです。 空の文字列として定義されている場合、実行中のコンテキストの会社通貨が使用されます。
 

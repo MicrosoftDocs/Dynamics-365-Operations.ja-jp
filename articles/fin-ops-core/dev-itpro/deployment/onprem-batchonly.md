@@ -3,29 +3,27 @@ title: オンプレミス配置でのバッチのみおよび対話型のみの 
 description: このトピックでは、環境をコンフィギュレーションして、バッチのみおよび対話型のみの AOS ノードを配置できるようにする方法について説明します。
 author: faix
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: e1a9e3c5079f0d8b276bdb52e2caf66d7a5b4779
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: 4c6f7b558be86ae975f26d960c01d065ff7a920e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412421"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685457"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > この機能は、アプリケーション更新 10.0.12 (プラットフォーム更新 36) 以降でサポートされます。
@@ -71,7 +69,7 @@ ms.locfileid: "3412421"
 1. コンフィギュレーション ファイルを保存する時点まで、[AOS ノードの削除](onprem-remove-reinstall-AOS-node.md#option-1-use-a-configuration-file-preferred-option)の手順に従います。
 
     > [!IMPORTANT]
-    > オプション 1「構成ファイルを使用する (推奨オプション)」を使用する必要があります。 オプション 2 は使用**しない**でください。
+    > オプション 1「構成ファイルを使用する (推奨オプション)」を使用する必要があります。 オプション 2 は使用 **しない** でください。
 
 2. **ClusterConfig.json** ファイルの編集を続け、新しいノード タイプを **NodeTypes** セクションに追加します。 完了すると、**NodeTypes** セクションは次の例のようになります。
 

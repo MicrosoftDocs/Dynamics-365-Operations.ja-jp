@@ -1,7 +1,7 @@
 ---
 title: グループ タイプ
 description: グループ コンテナーのコントロール タイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af06e438a3b3a1a667ed7c9a6c5ade3bb030d784
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b0d33291d07044d492b485f14d32be72193dc34b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191856"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679218"
 ---
 # <a name="group-type"></a>グループ タイプ
 
@@ -134,7 +133,7 @@ getChildren(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ 
 
 このグループ コントロールに関連付けられている子のリストを返します。
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd--"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ] を返します
+#### <a name="returns-control--"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ] を返します
 
 
 
@@ -154,7 +153,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string|コントロール名|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -174,7 +173,7 @@ getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-ic
 | ---- | ---- | ----------- |
 | id|string|コントロール ID|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -187,7 +186,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -217,7 +216,7 @@ metadata(): [GroupMetadata](view-model-control-group-igroup-igroupmetadata.md)
 
 > [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata) をオーバーライドします。
 
-#### <a name="returns-groupmetadataview-model-control-group-igroup-igroupmetadatamd"></a>[GroupMetadata](view-model-control-group-igroup-igroupmetadata.md) を返します
+#### <a name="returns-groupmetadata"></a>[GroupMetadata](view-model-control-group-igroup-igroupmetadata.md) を返します
 
 
 
@@ -230,7 +229,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -243,7 +242,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

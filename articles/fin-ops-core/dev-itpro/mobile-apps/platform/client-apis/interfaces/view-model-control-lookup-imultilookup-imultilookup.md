@@ -1,7 +1,7 @@
 ---
 title: MultiLookup タイプ
 description: 複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0c607e05fb34c0763c5c7a70fd2a7a79281209e2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a9b2ef72ee0e7bc8c50791c1c0aed992ea8bc6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191848"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687627"
 ---
 # <a name="multilookup-type"></a>MultiLookup タイプ
 
@@ -94,7 +93,7 @@ getEntityRefs: function(): string [ ] &#124; number [ ]
 
 
 
-### <a name="hidden"></a>hidden
+### <a name="hidden"></a>非表示
 
 hidden: boolean
 
@@ -110,7 +109,7 @@ setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt;
 
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>メソッド
 
 ### <a name="applydesign"></a>applyDesign
 
@@ -151,7 +150,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -162,7 +161,7 @@ getLookupPage(): [Page](view-model-ipage-ipage.md)
 
 
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 ### <a name="iseditable"></a>isEditable
 
@@ -190,7 +189,7 @@ metadata(): [MultiLookupMetadata](view-model-control-lookup-imultilookup-imultil
 
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[metadata](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata) をオーバーライドします。
 
-#### <a name="returns-multilookupmetadataview-model-control-lookup-imultilookup-imultilookupmetadatamd"></a>[MultiLookupMetadata](view-model-control-lookup-imultilookup-imultilookupmetadata.md) を返します
+#### <a name="returns-multilookupmetadata"></a>[MultiLookupMetadata](view-model-control-lookup-imultilookup-imultilookupmetadata.md) を返します
 
 
 
@@ -203,7 +202,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -216,7 +215,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

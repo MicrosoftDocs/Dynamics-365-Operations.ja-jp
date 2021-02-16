@@ -3,7 +3,7 @@ title: パーソナライズされた製品推奨事項の有効化
 description: このトピックでは、パーソナライズされた製品推奨事項を Microsoft Dynamics 365 Commerce の顧客に対して使用可能にする方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404143"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413724"
 ---
 # <a name="enable-personalized-recommendations"></a>パーソナライズされた推奨事項の有効化
 
@@ -49,11 +49,13 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 
 個人用設定を有効にするには、次の手順に従います。
 
-1. **Retail とコマース \> 製品推奨事項 \> 推奨パラメーター**に移動します。
-1. Retai 共有パラメーターのリストで、**推奨リスト**を選択します。
-1. **個人用設定を有効化する**オプションを**はい**に設定します。
+1. Commerce Headquarters で、**機能管理** を検索します。
+1. **すべて** を選択して、使用可能な機能の一覧を表示します。 
+1. 検索ボックスに、**推奨事項** を入力します。
+1. **個人用設定がされた製品の推奨** 機能を選択します。
+1. **個人用設定がされた製品の推奨** プロパティ ペインで、**すぐに有効化する** を選択します。
 
-![個人用設定を有効にする](./media/enablepersonalization.png)
+![個人用設定を有効にする](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > 個人用設定を有効にすると、パーソナライズされた製品推奨事項リストを生成するプロセスが開始します。 これらのリストを利用可能にし、オンラインおよび POS で表示するまでに、少なくとも 1 日必要な場合があります。
@@ -98,9 +100,9 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 
 1. 製品収集モジュールを含む既存のサイト ビルダー ページを開きます。
 1. 左のナビゲーション ウィンドウで、製品収集モジュールを選択します。
-1. 右のナビゲーション ウィンドウの、**製品**で、リストを選択します。
-1. **製品リストのコンフィギュレーションの選**ダイアログ ボックスの、**タイプ**で、リスト タイプを選択します。
-1. **個人用設定を適用**チェック ボックスを選択し、**OK** を選択します。
+1. 右のナビゲーション ウィンドウの、**製品** で、リストを選択します。
+1. **製品リストのコンフィギュレーションの選** ダイアログ ボックスの、**タイプ** で、リスト タイプを選択します。
+1. **個人用設定を適用** チェック ボックスを選択し、**OK** を選択します。
 
     ![トレンド リストへの個人用設定の適用](./media/ApplyPersonalizationToTrending.PNG)
 
@@ -113,6 +115,8 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 [Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [製品推奨事項の有効化](enable-product-recommendations.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
 

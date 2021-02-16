@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 95b44e65659045e5db28da1c67a660e2357249c0
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1ee718abb6b16a483c15d8d665f84bfd4e9546c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812102"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679280"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 
@@ -136,4 +135,4 @@ CustTrans::settleTransaction(
 
 この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
 
-フライトの名称は **EnableCustTransSettleTransaction**です。
+フライトの名称は **EnableCustTransSettleTransaction** です。

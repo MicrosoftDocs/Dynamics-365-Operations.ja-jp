@@ -3,26 +3,25 @@ title: ローカル開発 (VHD) 環境の名前変更
 description: このトピックでは、複数のコンピューター間で Microsoft Azure DevOps プロジェクトにアクセスし、1 つのバージョンのサービスの更新プログラムを正常にインストールできるように、ローカル開発 (VHD) 環境の名前を変更する方法について説明します。
 author: MargoC
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081f346f92c913c7abb5b67ff3f350a760a236a0
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 3afab2f9f0295a071a2745828a80457e535d0c26
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033044"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685435"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 
@@ -30,7 +29,7 @@ ms.locfileid: "3033044"
 
 ローカル開発 (VHD) 環境では、次のシナリオで名前を変更する必要があります。
 
-* **複数のコンピューター間で 1 つの Microsoft Azure DevOps プロジェクトにアクセスする:** Azure DevOps がバージョン管理のために必要です。 以前は Visual Studio Online (VSO) または Visual Studio Team Services (VSTS) と呼ばれていました。 開発トポロジでは、複数の仮想マシン (VM) が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Dynamics Lifecycle Services (LCS) からダウンロードされたローカル VM で開発する場合は、問題が発生する可能性があります。
+* **複数のコンピューター間で 1 つの Microsoft Azure DevOps プロジェクトにアクセスする:** Azure DevOps がバージョン管理のために必要です。 開発トポロジでは、複数の仮想マシン (VM) が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Dynamics Lifecycle Services (LCS) からダウンロードされたローカル VM で開発する場合は、問題が発生する可能性があります。
 * **1 つのバージョンのサービスの更新プログラムをインストールする:** 8.1.x などの 1 つのバージョンのサービス更新プログラムを、runbook を使用して VHD 環境にインストールする必要があります。 Runbook が正常に完了するようにするため、VHD 環境の名前を変更する必要があります。 このトピックに記載されているその他の手順を実行する必要もあります。
 
 ## <a name="rename-the-machine"></a>コンピューターの名前を変更する
@@ -69,7 +68,7 @@ AzureStorageEmulator.exe start
 AzureStorageEmulator.exe status
 ```
 
-**-server** スイッチまたは **-forcecreate** スイッチを使用して **init**オプションを試してください。 必ず、**new\_name** を新しい名前に置き換えてください。
+**-server** スイッチまたは **-forcecreate** スイッチを使用して **init** オプションを試してください。 必ず、**new\_name** を新しい名前に置き換えてください。
 
 ```Console
 AzureStorageEmulator.exe init -server new_name

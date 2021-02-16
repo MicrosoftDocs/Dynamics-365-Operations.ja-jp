@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: smmContactPerson, VendBankAccounts, VendTable
+ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216086"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432339"
 ---
 # <a name="set-up-vendor-accounts"></a>仕入れ先の設定
 
@@ -66,7 +66,7 @@ ms.locfileid: "3216086"
 
 連絡先がドキュメントで参照される連絡担当者レコードは削除できません。 代わりに、連絡先を無効にできます。  
 
-Microsoft Office 365 の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook セットアップ ウィザードの両方で、Supply Chain Management と Office 365 間の同期を設定する必要があります。
+Microsoft 365 の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook の設定ウィザードの両方で、Supply Chain Management と Microsoft 365 間の同期を設定する必要があります。
 
 ## <a name="vendors-in-different-legal-entities"></a>異なる法人の仕入先
 仕入先が組織の一つの法人として登録される場合、他の法人は同じ仕入先を登録する必要があります。**別の法人の仕入先の追加** ページを使用して、別の法人と取引がある仕入先をコンフィギュレーションします。 仕入先グループ、通貨、および選択された法人に対する仕入先の保留状態を選択する必要があります。  

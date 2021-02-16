@@ -1,7 +1,7 @@
 ---
 title: 管理モジュール
 description: コントロールは、ページのコンテンツを構成するものです。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2da574c29d3311085322814b5c0a9295793a1bf3
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7307471e3023f7db51d0ceccca8ecffc1a5373d0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124836"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687856"
 ---
 # <a name="control-module"></a>管理モジュール
 
@@ -84,11 +83,11 @@ ControlMetadata <br>&nbsp;&nbsp;&nbsp;└─ [PageLinkMetadata](../interfaces/vi
 | [BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) |BoundField: 文字列 (オプション)  <br>|  |
 | [説明](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) |説明:文字列 (オプション)  <br>|コントロールの説明。<br>  |
 | [編集可能](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) |編集可能: プール値 (省略可)  <br>|コントロールが編集可能かどうかを示すブール値。<br>  |
-| [ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|拡張されたコントロール タイプです。 E.g. コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。<br>  |
-| [HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) |HelpText: 文字列 (オプション)  <br>|コマンドのキーボード ショートカットです。 E.g. 「(Shift + F5)」<br>  |
+| [ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|拡張されたコントロール タイプです。 たとえば、コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。<br>  |
+| [HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) |HelpText: 文字列 (オプション)  <br>|コマンドのキーボード ショートカットです。 たとえば、「(Shift + F5)」<br>  |
 | [非表示](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) |非表示: ブール値 (オプション)  <br>|コントロールを非表示にするかどうかを示すブール値。<br>  |
 | [ID](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) |Id: string (オプション)  <br>|コントロールの ID 文字列です。<br>  |
-| [ラベル](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) |ラベル: 文字列 (省略可)  <br>|コントロールのラベル。 E.g. 個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。<br>  |
+| [ラベル](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) |ラベル: 文字列 (省略可)  <br>|コントロールのラベル。 たとえば、個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。<br>  |
 | [名前](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) |Name: 文字列 (省略可)  <br>|コントロールの名前です。<br>  |
 | [注文](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  |
 | [タイプ](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  |

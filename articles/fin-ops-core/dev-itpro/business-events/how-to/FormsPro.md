@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 5bacd83317df7034934eccd709df9af8a5447408
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 61c6b36339d9665b15391482462a500c6c9a8add
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030879"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688111"
 ---
 # <a name="business-events-and-microsoft-forms-pro"></a>ビジネスイベントと Microsoft Forms Pro
 

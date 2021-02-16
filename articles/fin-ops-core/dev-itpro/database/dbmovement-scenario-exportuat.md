@@ -3,24 +3,23 @@ title: 標準ユーザー承認テスト (UAT) データベースのコピーの
 description: このトピックでは、Finance and Operations のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ca32e156179f0d133e0c9dd863bbe37da6a6edac
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 62e41ad32579ea295a9f40bfe339f4324d733bfb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029432"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681088"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -36,7 +35,7 @@ ms.locfileid: "3029432"
 > * データベース バックアップをダウンロードします。
 > * データベースをインポートし、開発者環境で使用できるようにそれを準備します。
 
-このシナリオの例として、既に稼働している顧客が、生産トランザクションの最新のコピーを開発環境に読み込もうとしているということがあります。 これにより、顧客は特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
+このシナリオの例として、既に稼働している顧客が、生産トランザクションの最新のコピーを開発環境に読み込もうとしていることがあります。 これにより、顧客は特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
 
 > [!IMPORTANT]
 > ビルド環境へのデータベースのコピーはサポートされていません。 詳細については、 [ビルドの環境](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments) を確認してください
@@ -73,7 +72,7 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<ta
 パラメータの説明を以下に示します。
 
 - **tsn (ターゲット サーバー名)** – インポートする Microsoft SQL Server インスタンスの名前。
-- **tdn(ターゲット データベース名)** – インポートするデータベースの名前。 データベースが既に存在していては**いけません**。
+- **tdn(ターゲット データベース名)** – インポートするデータベースの名前。 データベースが既に存在していては **いけません**。
 - **sf(ソース ファイル)** – インポートするファイルのパスと名前。
 
 > [!NOTE]
@@ -168,6 +167,12 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 
 元のデータベースに戻すには、このプロセスを逆にします。 つまり、サービスを停止し、データベースの名前を変更してから、サービスを再起動します。
 
+### <a name="post-steps-for-commerce-environments"></a>Commerce 環境でその後に行う手順
+Commerce チャネルを使用している場合は、最初はセルフサービス サンドボックスからエクスポートされた開発環境にデータベースをインポートするときに、インポート先の開発者環境で次の手順を実行する必要があります。 これらの手順を実行しないと、Commerce チャネルは機能しません。
+
+1.  Commerce チャネル機能を復元するには、最新の Microsoft サービス更新または品質更新プログラムを適用します。これにより、チャネル データベースが作成されます。
+2.  以前に展開したチャネル データベース拡張機能を復元するには、対応する Retail セルフサービス配置可能パッケージを再度適用します。
+
 ### <a name="reprovision-the-target-environment"></a>対象の環境を再プロビジョニング
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
@@ -186,7 +191,7 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 | ExchangeRateProviderConfigurationDetails.Value           | **総勘定元帳** &gt; **通貨** &gt; **為替レート プロバイダーを構成する** を選択します。 |
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは、データ インポート/エクスポート フレームワーク (DIXF) によって使用されます。 |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
+| HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー** タブの、**個人情報** グループで、**ID 番号** を選択します。 |
 | HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
 | SysEmailSMTPPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、アプリケーション オブジェクト サーバー (AOS) により内部で使用されています。 これは無視できます。 |
@@ -219,8 +224,8 @@ Microsoft SQL Server Management Studio インストーラーをダウンロー�
 
 この問題を回避するには、次の手順を実行してファイルのダウンロードを有効にします。
 
-1. Web ブラウザーで**インターネット オプション**を開きます。
-2. **セキュリティ**タブで、**インターネット**ゾーンを選択し、**レベルのカスタマイズ**を選択します。
+1. Web ブラウザーで **インターネット オプション** を開きます。
+2. **セキュリティ** タブで、**インターネット** ゾーンを選択し、**レベルのカスタマイズ** を選択します。
 3. **ダウンロード** までスクロールし、**ファイルのダウンロード** で **有効にする** オプションを選択します。
 
 ### <a name="database-synchronization-fails"></a>データベース同期の失敗

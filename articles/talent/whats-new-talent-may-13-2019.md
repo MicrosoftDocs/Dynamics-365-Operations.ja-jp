@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ab201e099a5075760c038d819759162682874a33
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 11c9f03f4b3915d81b624115a1d97a0c7bc31709
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896920"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529735"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-13-2019"></a>Dynamics 365 Talent (2019 年 5 月 13 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -33,7 +35,7 @@ ms.locfileid: "2896920"
 
 ### <a name="job-approvals-on-home-page"></a>ホーム ページのジョブ承認
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、および割り当て日が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブをまだ承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 
@@ -45,7 +47,7 @@ ms.locfileid: "2896920"
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Talent のプロビジョニング時に、インスタンス タイプを示す
 
-Talent の新しいインスタンスのプロビジョニング時に、インスタンス タイプが**実稼働**か**サンドボックス**であるかを示すことができ、新しい機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスのプロビジョニング時に、インスタンス タイプが **実稼働** か **サンドボックス** であるかを示すことができ、新しい機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>カスタム フィールドに対する Common Data Service エンティティのサポート
 
@@ -53,7 +55,7 @@ Talent の新しいインスタンスのプロビジョニング時に、イン�
 
 ### <a name="common-data-service-integration-page"></a>Common Data Service 統合ページ
 
-このリリースは、**システム管理 > リンク > 統合 > Common Data Service コンフィギュレーション**で新しいオプションを提供します。 **Common Data Service コンフィギュレーション** オプションを使用すると、管理者またはデータ管理者は、Common Data Service を使用してある程度の柔軟性と洞察を得ることができます。 このオプションにより、Talent インスタンスとの Common Data Service 統合を有効または無効にでき、Talent インスタンスと Common Data Service 間の同期の詳細を表示できます。
+このリリースは、**システム管理 > リンク > 統合 > Common Data Service コンフィギュレーション** で新しいオプションを提供します。 **Common Data Service コンフィギュレーション** オプションを使用すると、管理者またはデータ管理者は、Common Data Service を使用してある程度の柔軟性と洞察を得ることができます。 このオプションにより、Talent インスタンスとの Common Data Service 統合を有効または無効にでき、Talent インスタンスと Common Data Service 間の同期の詳細を表示できます。
 
 ### <a name="import-performance-data-with-final-employee-rating-316710"></a>最終従業員評価 (316710) でパフォーマンス データをインポートします
 
@@ -67,7 +69,7 @@ Talent の新しいインスタンスのプロビジョニング時に、イン�
 
 ### <a name="new-page-to-validate-position-hierarchy-data"></a>職位階層データを検証する新しいページ
 
-人事管理 (HR) および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証**からアクセスできます。
+人事管理 (HR) および管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できます。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証** からアクセスできます。
 
 ### <a name="specify-reason-codes-on-leave-types"></a>休暇タイプの理由コードの指定
 

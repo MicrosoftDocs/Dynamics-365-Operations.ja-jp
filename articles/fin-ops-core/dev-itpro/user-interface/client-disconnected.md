@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 29151
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 7dc6d4ede3ca6081bd564189c8eeaa47b8de8cbf
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 5ba70b2af71d962ae7bb275a10b8d585ac87a6bd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334721"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679742"
 ---
 # <a name="client-internet-connectivity"></a>クライアントのインターネット接続
 
@@ -39,14 +38,14 @@ Dynamics 365 Finance + Operations (オンプレミス) 展開用のローカル 
 + ブラウザー タブに表示されるお気に入りのアイコンは、アプリケーションのアイコンではなく、ブラウザーの既定のお気に入りのアイコンになります。 
 + Excel アドインが実行されないため、Excel で開くオプションは表示されません。
 
-クライアントがインターネットにアクセスできない場合にアクセスできない可能性があるプラットフォーム機能に加えて、開発者が非表示にするかオフにする必要がある、インターネット接続に依存したアプリケーション機能もある可能性があります。 これを容易にするために、開発者は**セッション**クラスに追加された **clientHasRestrictedInternet()** メソッドを使用できます。 このメソッドは、クライアントがインターネットにアクセスできない場合は true を返します。
+クライアントがインターネットにアクセスできない場合にアクセスできない可能性があるプラットフォーム機能に加えて、開発者が非表示にするかオフにする必要がある、インターネット接続に依存したアプリケーション機能もある可能性があります。 これを容易にするために、開発者は **セッション** クラスに追加された **clientHasRestrictedInternet()** メソッドを使用できます。 このメソッドは、クライアントがインターネットにアクセスできない場合は true を返します。
 
 ## <a name="client-internet-connectivity-options"></a>クライアント インターネット接続オプション
 
 クライアント インターネット接続オプションにより、管理者は、インターネット接続が利用可能であってもクライアントが行う外部接続を手動でオフにすることができます。 これらは、問題のトラブルシューティングや、インターネット接続が利用できない場合にクライアントがどのように見えるか確認するために使用できます。 これらのクライアント インターネット接続オプションは、プラットフォーム アップデート 16 からすぐに利用できますが、プラットフォーム アップデート 15 ([KB 4091764](https://fix.lcs.dynamics.com/Issue/Details?kb=4091764&bugId=3934774&qc=245bb2cc9839fa2a2ecf6bfffc48c3dec102a3c1047e5e755387d00148db18cb) 経由) およびプラットフォーム アップデート 12 ([KB 4091763](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=19e9634da3297903a2ac51cf291a4770fd4532c9767ca7b5cefbe1bccb5d4d9f) 経由) でも利用できます。 
 
 
-クライアント インターネット接続オプションは、**システム管理** > **設定** > **クライアント パフォーマンス オプション**ページにあります。 
+クライアント インターネット接続オプションは、**システム管理** > **設定** > **クライアント パフォーマンス オプション** ページにあります。 
 
 - **インターネット接続が有効** - 管理者は、Web クライアントが外部から行う外部接続をすべてオフにすることができます。
 - **Skype プレゼンスが有効** - 管理者がスカイプへの外部接続をオフにし、そうでなければWeb クライアントが行います。

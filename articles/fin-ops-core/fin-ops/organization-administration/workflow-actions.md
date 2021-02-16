@@ -1,7 +1,7 @@
 ---
 title: ワークフローの承認プロセスでのアクション
 description: この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 56411
 ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 ms.search.region: Global
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6516e8b1e4be83f3450f03c769bca6d158ffb79b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178739"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694290"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 
@@ -38,7 +37,7 @@ ms.locfileid: "2178739"
 
 ## <a name="actions-that-an-originator-can-perform"></a>作成者が実行できるアクション
 
-作成者は、処理対象のドキュメントを送信することによって、ワークフロー インスタンスを開始します。 たとえば、康介が経費精算書を送信するには、康介が**経費精算書**ページで **送信** ボタンをクリックする必要があります。
+作成者は、処理対象のドキュメントを送信することによって、ワークフロー インスタンスを開始します。 たとえば、康介が経費精算書を送信するには、康介が **経費精算書** ページで **送信** ボタンをクリックする必要があります。
 
 ## <a name="actions-that-a-task-assignee-can-perform"></a>タスク割り当て対象者が実行できるアクション
 

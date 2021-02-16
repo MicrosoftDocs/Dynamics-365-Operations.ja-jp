@@ -5,6 +5,28 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2020 年 12 月 2 日
+          href: hr-whats-new-2020-12-02.md
+        - name: 2020 年 10 月 22 日
+          href: hr-whats-new-2020-10-22.md
+        - name: 2020 年 10 月 6 日
+          href: hr-whats-new-2020-10-06.md
+        - name: 2020 年 9 月 26 日
+          href: hr-whats-new-2020-09-26.md
+        - name: 2020 年 9 月 16 日
+          href: hr-whats-new-2020-09-16.md
+        - name: 2020 年 9 月 3 日
+          href: hr-whats-new-2020-09-03.md
+        - name: 2020 年 8 月 20 日
+          href: hr-whats-new-2020-08-20.md
+        - name: 2020 年 8 月 6 日
+          href: hr-whats-new-2020-08-06.md
+        - name: 2020 年 7 月 23 日
+          href: hr-whats-new-2020-07-23.md
+        - name: 2020 年 7 月 8 日
+          href: hr-whats-new-2020-07-08.md
+        - name: 2020 年 6 月 25 日
+          href: hr-whats-new-2020-06-23.md
         - name: 2020 年 6 月 11 日
           href: hr-whats-new-2020-06-11.md
         - name: 2020 年 5 月 28 日
@@ -13,20 +35,20 @@
           href: hr-whats-new-2020-05-14.md
         - name: 2020 年 5 月 1 日
           href: hr-whats-new-2020-05-01.md
-        - name: 2020 年 4 月 13 日
-          href: hr-whats-new-2020-04-13.md
-        - name: 2020 年 4 月 3 日
-          href: hr-whats-new-2020-04-03.md
-        - name: 2020 年 3 月 24 日
-          href: hr-whats-new-2020-03-24.md
-        - name: 2020 年 3 月 19 日
-          href: hr-whats-new-2020-03-19.md
-        - name: 2020 年 3 月 10 日
-          href: hr-whats-new-2020-03-10.md
-        - name: 2020 年 3 月 3 日
-          href: hr-whats-new-2020-03-03.md
         - name: 新機能アーカイブ 2020
           items:
+            - name: 2020 年 4 月 13 日
+              href: hr-whats-new-2020-04-13.md
+            - name: 2020 年 4 月 3 日
+              href: hr-whats-new-2020-04-03.md
+            - name: 2020 年 3 月 24 日
+              href: hr-whats-new-2020-03-24.md
+            - name: 2020 年 3 月 19 日
+              href: hr-whats-new-2020-03-19.md
+            - name: 2020 年 3 月 10 日
+              href: hr-whats-new-2020-03-10.md
+            - name: 2020 年 3 月 3 日
+              href: hr-whats-new-2020-03-03.md
             - name: 2020 年 2 月 25 日
               href: hr-whats-new-2020-02-25.md
             - name: 2020 年 2 月 18 日
@@ -61,22 +83,104 @@
               href: hr-admin-integration-common-data-service.md
             - name: Common Data Service エンティティ
               href: hr-developer-entities.md
+            - name: Common Data Service 仮想エンティティのコンフィギュレーション
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Finance との統合のコンフィギュレーション
               href: hr-admin-integration-finance.md
             - name: Dayforce との統合のコンフィギュレーション
               href: hr-admin-integration-dayforce.md
             - name: 定期的なデータ エクスポート アプリの作成
               href: hr-admin-integration-recurring-data-export.md
+            - name: LinkedIn Talent Hub との統合
+              href: hr-admin-integration-linkedin.md
             - name: Office との統合
               items:
                 - name: Office 統合のチュートリアル
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Excel でのエンティティ データの更新
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: '[Excel で開く] エクスペリエンスの作成'
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Office 統合のトラブルシューティング
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: データ管理のコンフィギュレーション
+          items:
+            - name: データ管理フレームワークの概要
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ エンティティ
+              items:
+                - name: データ エンティティの概要
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ プロジェクト
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: 会社間または法人間のコンフィギュレーション データのコピー
+                  items:
+                    - name: コンフィギュレーション データのコピーの概要
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: コンフィギュレーション データ パッケージ
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ テンプレート
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: エンティティの変更の追跡
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: 標準データ エンティティに関する情報の検索
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: 複数のワークシート付きデータ テンプレート
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: エンティティの変更追跡の有効化
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション キーおよびデータ エンティティ
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: コンフィギュレーション データ パッケージ
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ インポート/エクスポート ジョブ
+              items:
+                - name: データ インポート/エクスポート ジョブの概要
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ エンティティの開発
+              items:
+                - name: データ エンティティに関する設計原則とベスト プラクティス
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: 新しいデータ エンティティの作成
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: データ エンティティのプロパティ
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 計算列と仮想フィールドの作成
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: 会社間動作
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: 国/地域コードの処理
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: 継承パターン
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: データ エンティティ ウィザード ルール
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: メタデータのプロパティ
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 検証、既定値、およびマップされていないフィールド
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: セキュリティとデータ エンティティ
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: サード パーティ サービス テスト ユーティリティの使用
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 財務分析コードを公開する読み取り専用エンティティの作成
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: 自分のデータベースの持ち込み
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD バッチ ジョブの最適化
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: 自動化エンティティ格納更新
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ タスクの自動化
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ検証チェックリスト ワークスペース
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: データ管理エラーの説明
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: 機能の管理
           href: hr-admin-manage-features.md
         - name: データベース ログの構成と管理
@@ -111,7 +215,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: カスタム フィールドの作成と操作
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: PowerApps アプリの埋め込み
+            - name: Power Apps からキャンバス アプリを埋め込む
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: ルックアップを使用した情報の検索
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
@@ -123,7 +227,11 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Teams の Human Resources アプリ
           href: hr-admin-teams-leave-app.md
-        - name: 伝票リソース
+        - name: Go Live の準備
+          href: hr-admin-go-live-prepare.md
+        - name: Go Live に関するよく寄せられる質問
+          href: hr-admin-go-live-faq.md
+        - name: ドキュメント リソース
           items:
             - name: ヘルプ システム
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
@@ -140,7 +248,9 @@
         - name: Human Resources のトラブルシューティング
           items:
             - name: サポートの利用
-              href: hr-admin-troubleshooting-support.md
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+            - name: 時間後にバッチ ジョブのスケジュールを設定してパフォーマンスを最適化する
+              href: hr-admin-troubleshooting-batch-jobs.md
             - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
               href: hr-admin-troubleshooting-batch-history.md
             - name: 分析レポートが更新されない
@@ -213,12 +323,10 @@
           href: hr-hrpro-overview.md
         - name: Human Resources の設定
           items:
-            - name: 人事管理パラメーターのコンフィギュレーション
+            - name: Human Resources パラメーターのコンフィギュレーション
               href: hr-setup-parameters.md
-            - name: 人事管理共有パラメーターのコンフィギュレーション
+            - name: Human Resources 共有パラメーターのコンフィギュレーション
               href: hr-setup-shared-parameters.md
-            - name: 人事管理ワークフローの設定
-              href: hr-setup-workflows.md
             - name: 日付と時刻のフィールドの理解
               href: hr-setup-date-time-fields.md
         - name: 組織設定のコンフィギュレーション
@@ -371,10 +479,14 @@
               href: hr-personnel-define-jobs.md
             - name: 作業時間カレンダーの作成
               href: hr-personnel-create-working-time-calendar.md
+            - name: 職務候補者の採用
+              href: hr-personnel-recruit.md
             - name: 個人のアクションに関するよく寄せられる質問
               href: hr-personnel-actions-faq.md
             - name: ワークフローを使用した従業員情報の管理
               href: hr-workflow-manage-employee-information.md
+            - name: 住所変更の表示と管理
+              href: hr-personnel-view-address-changes.md
             - name: 職位の報告関係の変更
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: 作業者情報の入力
@@ -387,8 +499,6 @@
               href: hr-personnel-loan-items.md
             - name: 継続的計画の作成
               href: hr-personnel-develop-succession-plan.md
-            - name: プロジェクト タイムシートの入力
-              href: hr-personnel-enter-project-timesheets.md
             - name: 大量雇用プロジェクト
               href: hr-personnel-mass-hire-projects.md
             - name: 大量雇用プロジェクトの作成
@@ -427,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: 福利厚生の管理のコンフィギュレーション
                   items:
-                    - name: 福利厚生管理パラメーターの設定
+                    - name: 会社ごとの福利厚生管理パラメータのコンフィギュレーション
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: すべての会社の福利厚生管理と従業員セルフサービスのパラメータの設定
                       href: hr-benefits-setup-parameters.md
                     - name: 適格性のルールとオプションのコンフィギュレーション
                       href: hr-benefits-setup-eligibility-rules.md
@@ -531,6 +643,8 @@
               href: hr-employee-self-service-calendar.md
             - name: 休暇の売買ポリシーの管理
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: 休暇の売買ワークフローの作成
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: 休暇の売買
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Teams での休暇要求の管理
@@ -573,5 +687,9 @@
           items:
             - name: 従業員およびマネージャー セルフ サービスの概要
               href: hr-employee-manager-self-service-overview.md
+            - name: マネージャー セルフ サービスでカスタム リンクを作成する
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: 従業員セルフサービスのワークスペース名を変更する
+              href: hr-employee-self-service-workspace-name.md
             - name: 個人情報の編集
               href: hr-employee-manager-self-service-edit-personal-information.md

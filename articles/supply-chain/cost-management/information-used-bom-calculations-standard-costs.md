@@ -16,15 +16,15 @@ ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ae34b2d00ba41b25f886d37cb7a9098af275398
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: bbc7e4105d085e2af0e8e6e574244f5083d08c15
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201712"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431941"
 ---
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>標準原価を使用する BOM 計算で使用される情報
 

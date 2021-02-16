@@ -3,24 +3,23 @@ title: 1 つのバージョンのサービス更新に関するよく寄せら�
 description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: ShellyBakke
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dd4d97162525b7007d3eac0629ad91a11737e0e3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 0f6dad2b7cfbfe98723368062bcfe6524be7528d
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096936"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694953"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -98,7 +97,10 @@ ms.locfileid: "3096936"
 
 ### <a name="can-i-select-the-day-and-time-to-update"></a>更新する日時は選択できますか?
 
-ユーザーは、LCS に日と保守の時間枠を構成できます。 更新方法に含まれる手順をが記載された LCS 通知を受信するように選択したユーザーには、メールが送信されます。 ユーザーは、更新プログラムの指定された階層 2/UAT サンドボックスを選択できるようになります。 ユーザーは、テストと検証に 7 カレンダー日かけることができます。 お客様は、LCS からのすべての環境に対して、以前の更新を適用することもできます。 実稼働準備ができた配置可能パッケージは、Lifecycle services のアクション センターからすべての顧客が入手できます。 ユーザーには、更新を追加サンドボックスまたは開発者/ビルド (階層 1) 環境に展開する責任があります。
+ユーザーは、LCS に日と保守の時間枠を構成できます。 更新プログラムの設定に基づくサービス更新は、15分以内に開始されます。 更新方法に含まれる手順をが記載された LCS 通知を受信するようにオプトインしたユーザーには、電子メールが送信されます。 ユーザーは、更新プログラムの指定された階層 2/UAT サンドボックスを選択できるようになります。 ユーザーは、テストと検証に 7 カレンダー日かけることができます。
+
+お客様は、LCS からのすべての環境に対して、以前の更新を適用することもできます。 実稼働準備ができた配置可能パッケージは、Lifecycle Services のアクション センターを介してすべてのユーザーが入手できます。 ユーザーには、更新を追加サンドボックスまたは開発者/ビルド (階層 1) 環境に展開する責任があります。 詳細については、[サービス更新の構成](../../dev-itpro/lifecycle-services/configure-service-updates.md) を参照してください。
+
 
 ### <a name="a-service-update-was-applied-to-the-environment-when-looking-at-the-tile-in-lifecycle-services-for-this-environment-what-does-the-number-on-the-tile-represent"></a>サービスの更新が環境に適用されたて、この環境の Lifecycle Services のタイルを見たとき、タイルの番号に表示される数字は何を表しますか。
 

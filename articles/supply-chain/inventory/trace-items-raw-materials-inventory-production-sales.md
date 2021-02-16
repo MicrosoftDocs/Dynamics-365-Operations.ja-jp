@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fa1be4970f1106bf4b87eeaa428bac07c645b4f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432217"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>在庫、生産、および販売における品目と原材料の追跡
 
@@ -130,7 +130,7 @@ ms.locfileid: "3213862"
 アクション ウィンドウのアクションの *<strong><em>追跡</em></strong>* の下の <strong>エクスポート</strong> をクリックして、<strong>詳細</strong> タブの情報を XML ファイルとして保存できます。 追跡の詳細に加えて、XML ファイルには追跡の条件、親ノード、在庫数量が含まれます。 追跡の詳細を保存する能力は、品質指示やそのほかのコンプライアンス ドキュメントに情報を添付する場合に役立ちます。 ファイルの保存場所を指定できます。 ファイルを素早く表示するには、<strong>ドキュメントの表示</strong> オプションをオンにします。 <strong>メモ:</strong> ファイルを表示するだけで、そのファイルは常に保存されます。 既定では、XML ファイルがブラウザー ウィンドウに開きます。 ただし、ファイルを右クリックし、<strong>プログラムから開く</strong> を選択し、内容を表示するために使用するプログラムを選択できます。
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>特定の品目または成分の残高を計算することができますか。
-集計ページから Microsoft Excel に情報をエクスポートできます。 関連するページを開き、**Microsoft Office で開く**アイコンをクリックし、**Microsoft Excel にエクスポート**をクリックします。 この機能は、**トランザクション集計** ページから品目または成分の物質収支を計算する場合に、特に役立ちます。 **トランザクション集計** ページで、必要に応じて、品目または成分およびバッチをフィルター処理し、Excel に情報をエクスポートすることができます。 Excel では、たとえば、手持在庫数量、販売された数量、生産で使用された数量を分割することができます。
+集計ページから Microsoft Excel に情報をエクスポートできます。 関連するページを開き、**Microsoft Office で開く** アイコンをクリックし、**Microsoft Excel にエクスポート** をクリックします。 この機能は、**トランザクション集計** ページから品目または成分の物質収支を計算する場合に、特に役立ちます。 **トランザクション集計** ページで、必要に応じて、品目または成分およびバッチをフィルター処理し、Excel に情報をエクスポートすることができます。 Excel では、たとえば、手持在庫数量、販売された数量、生産で使用された数量を分割することができます。
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>品目または原材料で問題の履歴があるかどうかを調査することができますか。
 追跡の詳細には、品目や原材料に関連する品質指示および不適合についての情報が含まれます。 品質指示および不適合の概要を表示するには、[アクション ペイン] の **品質指示** または **不適合** をクリックします。 **メモ:** 破壊試験の品質指示は、追跡の詳細に何度も表示される場合があります。 破壊試験の品質指示が発注書などのドキュメントに対して作成されると、そのドキュメントのトランザクションごとに表示されます。

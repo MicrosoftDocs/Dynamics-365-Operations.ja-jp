@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 834135c591d2f1e5281d15448f6f1a62baa29d82
-ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
+ms.openlocfilehash: 43193da363acd8301c8702f621d78c7078e40475
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378244"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409174"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-april-2020"></a>Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) の新機能および変更された機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "3378244"
 
 - [資金の説明責任に関する日次計算書](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
- - [詳細な元帳入力を使用してトランザクションを転記する際の銀行残高の更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [詳細な元帳入力を使用してトランザクションを転記する際の銀行残高の更新](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
  - [仕入先の入札 – 仕入先からの RFQ の質問と、集計された応答](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  
@@ -88,8 +88,8 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 
 [削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 

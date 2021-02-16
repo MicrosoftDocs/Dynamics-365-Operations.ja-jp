@@ -1,28 +1,27 @@
 ---
-title: PowerBI.comからの分析ワークスペースの選択
-description: このトピックでは、PowerBI.comでホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
+title: Power BI から分析ワークスペースを選択する
+description: このトピックでは、Power BI でホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
 author: tjvass
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: a3c2dc3f195a7eca2eebc8598690e03ee719b7e2
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: a52177ed6edad441374c3722db2bbac91ca11322
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030882"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682203"
 ---
-# <a name="select-analytical-workspaces-from-powerbicom"></a>PowerBI.comからの分析ワークスペースの選択
+# <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
 [!include[banner](../includes/banner.md)]
 

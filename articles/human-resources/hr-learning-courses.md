@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429339"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419438"
 ---
 # <a name="set-up-training-courses"></a>トレーニング コースの設定
 
@@ -126,12 +126,12 @@ ms.locfileid: "3429339"
 </table>
 
 ## <a name="course-participants"></a>コース参加者
-コース参加者は、トレーニング コースまたはイベントに参加する作業者です。 オープン コースの参加者のみを登録できます。 コースに登録できる参加者の最小数と最大数は、**コース** ページの**全般**クイック タブで定義されます。
+コース参加者は、トレーニング コースまたはイベントに参加する作業者です。 オープン コースの参加者のみを登録できます。 コースに登録できる参加者の最小数と最大数は、**コース** ページの **全般** クイック タブで定義されます。
 
 <a name="workflow"></a>ワークフロー
 --------
 
-**従業員セルフ サービス** ページからコースに登録する従業員は、承認のワークフローを経て登録することができます。 **コース** ページの**一般**クイック タブで、コースにワークフローを割り当てることができます。
+**従業員セルフ サービス** ページからコースに登録する従業員は、承認のワークフローを経て登録することができます。 **コース** ページの **一般** クイック タブで、コースにワークフローを割り当てることができます。
 
 
 

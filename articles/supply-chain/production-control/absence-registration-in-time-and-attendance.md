@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JMGParameters
+ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a076ade51ad295886bef747302c4874ef09d3fa7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 16b338010662f8c2115fcc38f6830b58c49259e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203276"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431702"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>勤務時間外の登録
 
@@ -50,7 +50,7 @@ ms.locfileid: "3203276"
 
 ### <a name="set-up-standard-time-and-flex-time"></a>標準勤務時間とフレックス時間を設定する。
 
-- **時間と休暇のパラメータ**ページの**休暇の自動挿入**と**フレックスの自動挿入-** オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。
+- **時間と休暇のパラメータ** ページの **休暇の自動挿入** と **フレックスの自動挿入-** オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。
 
 ## <a name="absence-groups"></a>休暇グループ
 
@@ -62,19 +62,19 @@ ms.locfileid: "3203276"
 
 ### <a name="set-up-planned-absence"></a>計画休暇を設定する
 
-1. **人事管理** &gt; **労働災害** &gt; **従業員**を選択し、従業員を選択します。
-2. **時間** &gt; **時間の割り当て** &gt; **時間の休暇登録**を選択し、計画休暇を設定します。
+1. **人事管理** &gt; **労働災害** &gt; **従業員** を選択し、従業員を選択します。
+2. **時間** &gt; **時間の割り当て** &gt; **時間の休暇登録** を選択し、計画休暇を設定します。
 
 ## <a name="interrupted-planned-absence"></a>計画休暇の中止
 
-計画休暇を設定する際、**中止** オプションを適用した場合、計画休暇期間中に作業者がサインインした場合、計画休暇は中止されます。 計画休暇は、**中止**としてマークされ、今後の計算には影響はありません。
+計画休暇を設定する際、**中止** オプションを適用した場合、計画休暇期間中に作業者がサインインした場合、計画休暇は中止されます。 計画休暇は、**中止** としてマークされ、今後の計算には影響はありません。
 
 ### <a name="set-up-a-planned-absence-for-interruption"></a>中止する計画休暇を設定する。
 
 1. 計画休暇設定の手順に従い、**休暇時間登録** を開きます。
-2. **中止**を選択します。
+2. **中止** を選択します。
 
-**中止**オプションは、作業現場ターミナルまたは作業現場端末を通して時間を登録している際に適用されます。 登録が計算および承認ページ、または、 **電子タイムカード** ページに入力されている場合、このオプションは適用されません。
+**中止** オプションは、作業現場ターミナルまたは作業現場端末を通して時間を登録している際に適用されます。 登録が計算および承認ページ、または、 **電子タイムカード** ページに入力されている場合、このオプションは適用されません。
 
 ## <a name="examples-of-the-use-of-absence-in-a-flex-profile"></a>フレックス プロファイルにおける休暇の使用例
 
@@ -108,4 +108,4 @@ ms.locfileid: "3203276"
 
 ### <a name="calculate-and-approve-absence"></a>休暇の計算と承認
 
-- **休暇時間** &gt; **確認および承認** &gt; **承認または計算**を選択します。
+- **休暇時間** &gt; **確認および承認** &gt; **承認または計算** を選択します。

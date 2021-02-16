@@ -1,7 +1,7 @@
 ---
 title: フィールドに数を表示
 description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 79d8345caee0f1858ec9c558c006cd1de38e53e8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a0a77046fe6d02a5a30844887b4069c8e6189cda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191823"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687832"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

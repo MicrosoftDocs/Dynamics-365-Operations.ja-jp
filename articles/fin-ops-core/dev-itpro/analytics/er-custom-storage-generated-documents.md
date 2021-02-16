@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 98c08ae2ab4c7cceadb6caaf98fa431e56be4b97
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042737"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680809"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
@@ -57,9 +56,9 @@ ms.locfileid: "3042737"
 ER フォーマットが生成するドキュメントのルーティング方法を指定するには、[電子申告 (ER) の送信先](electronic-reporting-destinations.md) を構成する必要があります。 生成するドキュメントをファイルとして保存するように構成する各 ER の送信先では、ドキュメントのドキュメント タイプを指定する必要があります。 異なる ER フォーマットが生成するドキュメントをルーティングするには、異なるドキュメント タイプが使用できます。
 
 1. 前に作成またはインポートした ER フォーマット用に、新しい [ドキュメント タイプ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) を追加します。 次の図では、ドキュメント タイプは **FileX** です。
-2. このドキュメント タイプをその他のドキュメント タイプから区別するには、名前に特定のキーワードを含めます。 たとえば、次の図では、名前は **(ローカル) フォルダー**です。
-3. **クラス** フィールドには、**ファイルの添付**を指定します。
-4. **グループ** フィールドには、**ファイル**を指定します。
+2. このドキュメント タイプをその他のドキュメント タイプから区別するには、名前に特定のキーワードを含めます。 たとえば、次の図では、名前は **(ローカル) フォルダー** です。
+3. **クラス** フィールドには、**ファイルの添付** を指定します。
+4. **グループ** フィールドには、**ファイル** を指定します。
 
 ![ドキュメント タイプ ページ](media/er-extend-file-storages-document-type.png)
 
@@ -169,7 +168,7 @@ public DocuRef insertFile(
 ## <a name="run-the-er-format-that-you-created-or-imported"></a>作成またはインポートした ER フォーマットの実行
 
 1. 作成またはインポートした ER フォーマットを実行します。
-2. **組織管理 \> 電子申告 \> 電子申告ジョブ**の順に選択します。 この実行ジョブのために作成され、関連付けられた生成ファイルを持つレコードを検索します。
+2. **組織管理 \> 電子申告 \> 電子申告ジョブ** の順に選択します。 この実行ジョブのために作成され、関連付けられた生成ファイルを持つレコードを検索します。
 3. ローカルの **C:\\0** フォルダーを表示し、同じ生成ファイルを検索します。
 
 ## <a name="additional-resources"></a>追加リソース

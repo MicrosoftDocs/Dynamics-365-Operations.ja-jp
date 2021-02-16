@@ -1,7 +1,7 @@
 ---
 title: ControlMetadata タイプ
 description: コントロールのメタデータのインターフェイス。 コントロール メタデータをオーバーライドすると、コントロール&#x27;の外観と動作を変更できます。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9c6bafd19b44141a169422155ee765492cd22a6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08c9edaaed07c20855705c24bbd918832e7ab3b4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191863"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687308"
 ---
 # <a name="controlmetadata-type"></a>ControlMetadata タイプ
 
@@ -88,14 +87,14 @@ BoundField: 文字列 (オプション)
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可) 
 
-拡張されたコントロール タイプです。 E.g. コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
+拡張されたコントロール タイプです。 たとえば、コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。
 
 
 ### <a name="helptext"></a>HelpText
 
 HelpText: 文字列 (オプション) 
 
-コマンドのキーボード ショートカットです。 E.g. 「(Shift + F5)」
+コマンドのキーボード ショートカットです。 たとえば、「(Shift + F5)」
 
 
 ### <a name="hidden"></a>非表示
@@ -116,7 +115,7 @@ Id: string (オプション)
 
 ラベル: 文字列 (省略可) 
 
-コントロールのラベル。 E.g. 個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
+コントロールのラベル。 たとえば、個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。
 
 
 ### <a name="name"></a>氏名

@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 1a7598db1dc4c11864cf5f5a73d00672ceb66e8c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897469"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461751"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-november-15-2018"></a>Dynamics 365 Talent - Core HR (2018 年 11 月 15 日) の新機能および変更された機能
 
@@ -52,5 +52,5 @@ Talent で新しい従業員を採用するときに割り当て可能なすべ�
 
 ## <a name="known-issue"></a>既知の問題
 
-- **問題**: 作業者に新しい添付ファイルを追加する時、**新規**および**編集**ボタンが灰色表示になります。 
-- **回避策:** 添付ファイル ページを開く前に、**作業者**ページの Factbox が閉じていることを確認します。 **作業者**ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)
+- **問題**: 作業者に新しい添付ファイルを追加する時、**新規** および **編集** ボタンが灰色表示になります。 
+- **回避策:** 添付ファイル ページを開く前に、**作業者** ページの Factbox が閉じていることを確認します。 **作業者** ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)

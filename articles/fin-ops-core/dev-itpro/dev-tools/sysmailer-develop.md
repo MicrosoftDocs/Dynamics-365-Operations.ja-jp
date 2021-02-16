@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 270774
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: c751c2e2bbff164170d34441b96866e9a772a77f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 76997218b645a48cbb8a116ae05ab11c60d7376d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026196"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408731"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
@@ -132,7 +131,7 @@ for (i = 1; i <= conLen(_notifyCon); i++)
 
 電子メール プロバイダーを実装するには、以下のプロパティを持つ実装クラスを作成する必要があります。
 
-- クラスには、適切な**エクスポート**の属性が必要です。
+- クラスには、適切な **エクスポート** の属性が必要です。
 - クラスでは、基準の **SysIMailer** メソッド、**getId** および **getDescription** を実装する必要があります。
 - クラスでは **SysImailerInteractive** インターフェイス、**SysIMailerNonInteractive** インターフェイス、または両方のインターフェイスを実装する必要があります。
 

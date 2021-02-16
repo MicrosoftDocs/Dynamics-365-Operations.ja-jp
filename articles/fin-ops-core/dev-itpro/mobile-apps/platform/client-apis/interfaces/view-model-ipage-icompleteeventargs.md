@@ -1,7 +1,7 @@
 ---
 title: CompleteEventArgs タイプ
 description: CompleteEventArgs タイプ
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dff25185eb1d8b6ad3e64744e6df2d9657851c74
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1346b4f98cb709bfc9789a8266abdaba6790e42b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183121"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686620"
 ---
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 

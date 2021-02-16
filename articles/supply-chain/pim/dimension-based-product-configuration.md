@@ -16,15 +16,15 @@ ms.custom: 19821
 ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525d18c2c734929fe03995ea2217d1915037e9f9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 45688f1882d2711cd43b9b7c199f1fca7ff089ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432164"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>分析コード ベース製品コンフィギュレーションの概要
 

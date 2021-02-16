@@ -1,7 +1,7 @@
 ---
 title: Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
-description: このトピックでは、Lifecycle Services (LCS) の <strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Finance and Operations アプリに移行する方法について説明します。
-author: tariqbell
+description: このトピックでは、Lifecycle Services (LCS) の<strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Finance and Operations アプリに移行する方法について説明します。
+author: LaneSwenka
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 265594
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
 ms.search.region: Global
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3148e3bec6d628cb8d57c2691725822747c8f1c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7bbb175a0f1dbfa2d2b83d229db28e181d64a8e1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811695"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679256"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
@@ -34,7 +33,7 @@ ms.locfileid: "2811695"
 --------
 
 
-コードのアップグレード ツールは、Azure DevOps プロジェクトに接続し、トランク\\メインブランチを検索し、リリース\\\<バージョン番号\>という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、開発環境を、リリース \\\<バージョン番号\> 下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。
+コードのアップグレード ツールは、Azure DevOps プロジェクトに接続し、トランク\\メイン ブランチを検索し、リリース\\\<version number\> という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、開発環境を、リリース\\\<version number\> の下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。
 
 
 Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以降では、Microsoft モデルをオーバーレイしてカスタマイズすることはできません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md) および [モデルの制限を緩和して、オーバレイを拡張機能にリファクタリングする](../extensibility/refactoring-over-layering.md) を参照してください。
@@ -63,8 +62,8 @@ Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以�
 Azure DevOps プロジェクトに接続するために、LCS は個人用アクセス トークンを使用して認証されます。 Azure DevOps で個人用アクセス トークンを作成するには、以下の手順に従います。 LCS プロジェクトを Azure DevOps プロジェクトへ接続できるように構成する場合、このセクションを省略できます。
 
 1. visualstudio.com にログインし、Azure DevOps プロジェクトを見つけます。
-2. 右上隅で、名前をポイントするとメニューが表示され、**セキュリティ**を選択します。
-3. **追加**をクリックして、新しい個人用アクセス トークンを作成し、名前を付けて、トークンが使用できる期間を入力します。 **トークンの作成**をクリックします。 
+2. 右上隅で、名前をポイントするとメニューが表示され、**セキュリティ** を選択します。
+3. **追加** を選択して、新しい個人用アクセス トークンを作成し、名前を付けて、トークンが使用できる期間を入力します。 **トークンの作成** を選択します。 
 
    [![コード アップグレードのトークンの作成](./media/codeupgrademaketoken.png)](./media/codeupgrademaketoken.png)
 
@@ -72,20 +71,20 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
 
 ### <a name="configure-your-lifecycle-services-project-to-connect-to-azure-devops"></a>Lifecycle Services プロジェクトをコンフィギュレーションして Azure DevOps に接続する
 
-1. LCS プロジェクトで、**プロジェクト設定**タイルに移動し、**Visual Studio Team Services** を選択してから、**Visual Studio Team Services の設定**ボタンを選択します。 この構成は多くの LCS ツールで必要になります。すでに Azure DevOps プロジェクトに接続するように LCS を設定している場合は、このセクションをスキップできます。 
+1. LCS プロジェクトで、**プロジェクト設定** タイルに移動し、**Visual Studio Team Services** を選択してから、**Visual Studio Team Services の設定** ボタンを選択します。 この構成は多くの LCS ツールで必要になります。すでに Azure DevOps プロジェクトに接続するように LCS を設定している場合は、このセクションをスキップできます。 
 
 
    [![LCS VSTS の設定](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
 
-2. Azure DevOps アカウントのルート URL および以前に作成したアクセス トークンを入力し、**続行**をクリックします。
+2. Azure DevOps 組織のルート URL および以前に作成したアクセス トークンを入力し、**続行** を選択します。
 
    [![LCS トークン](./media/lcstoken.png)](./media/lcstoken.png)
 
-3. 接続する Azure DevOps アカウント内のプロジェクトを選択し、**続行** を選択します。 
+3. 接続する Azure DevOps 組織内のプロジェクトを選択し、**続行** を選択します。 
    
    [![LCS がプロジェクトを選択](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)
 
-4. **確認および保存**ページで、**保存**をクリックします。
+4. **確認および保存** ページで、**保存** を選択します。
 
 ### <a name="create-an-ax7version-file"></a>ax7.version ファイルを作成します
 
@@ -104,22 +103,22 @@ LCS のコードのアップグレード タイルは、移行元のバージョ
 
    [![コード アップグレード タイル](./media/codeupgradetile.png)](./media/codeupgradetile.png)
 
-2. 画面の左下隅で、**追加**をクリックしてから名前と説明を入力します。 アップグレード元のバージョンとして Microsoft Dynamics AX 7 を選択し、**作成**をクリックします。
+2. 画面の左下隅で、**追加** を選択してから名前と説明を入力します。 アップグレード元のバージョンとして Microsoft Dynamics AX 7 を選択し、**作成** を選択します。
    -   Dynamics AX 2012 R3 からコードをアップグレードする場合は、アップグレード元のバージョンを選択します。 圧縮バージョンの Dynamics AX 2012 R3 モデル ストア ファイルをアップロードするように要求されます。
-   -   **見積のみ**チェック ボックスがオンになっている場合、ツールはレポートのみを生成し、チェックインや Azure DevOps の新しいコード分岐の作成を行いません。 実際のアップグレードをコミットする前に、アップグレードに必要な作業の潜在的なサイズを評価する場合、このオプションを使用する必要があります。
+   -   **見積のみ** チェック ボックスがオンになっている場合、ツールはレポートのみを生成し、チェックインや Azure DevOps の新しいコード分岐の作成を行いません。 実際のアップグレードをコミットする前に、アップグレードに必要な作業の潜在的なサイズを評価する場合、このオプションを使用する必要があります。
 
    [![新規コード ブランチ](./media/codeupgrade_new.png)](./media/codeupgrade_new.png)
 
-3. 右下にある**コードの分析**をクリックします。 コードのアップグレード プロセスが開始されます。 これは、大規模なソリューションが完了するまでに通常 40 分かかります。 完了したら、LCS の **コードのアップグレード** タイルに戻り、結果を表示します。
-4. コードのアップグレード サービスは、新しいブランチを作成し、アップグレードされたコードを Azure DevOps プロジェクトにチェックインします。 アップグレード プロセスが完了した後、コードは**リリース**フォルダ下の新しいブランチに存在します。 分岐名の後には、アップグレードの日時が付いています。 
+3. 右下にある **コードの分析** を選択します。 コードのアップグレード プロセスが開始されます。 このプロセスには、大規模なソリューションが完了するまでに通常 40 分かかります。 完了したら、LCS の **コードのアップグレード** タイルに戻り、結果を表示します。
+4. コードのアップグレード サービスは、新しいブランチを作成し、アップグレードされたコードを Azure DevOps プロジェクトにチェックインします。 アップグレード プロセスが完了した後、コードは **リリース** フォルダ下の新しいブランチに存在します。 分岐名の後には、アップグレードの日時が付いています。 
 
    [![コード アップグレード ブランチ](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
 
-
 ### <a name="merge-releases-back-into-trunkmain"></a>リリースを Trunk\\Main にマージ
 
-リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、 Visual Studio の開発環境で、ソース管理エクスプローラー ウィンドウを開き、 **リリース\\\<バージョン番号\>** の分岐を右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
+リリース\\\<version number\> のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整います。 マージするには、Visual Studio の開発環境で、ソース管理エクスプローラー ウィンドウを開き、**リリース\\\<version number\>** のブランチを右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
 
 [![リリース ブランチのマージ](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
-[ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) が開きます。ここでは、リリース\\\<バージョン番号\> ブランチを トランク\\メイン にマージする手順が示されます。 
+[ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) が開かれ、リリース\\\<version number\> ブランチを トランク\\メインにマージする手順が示されます。
+

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150243
 ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8b41333bd5d11f3ffe18be4e9f3edf0b1beaee8
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 156ca965127399cd4f517434e26e051c7a914b82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872657"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408752"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 
@@ -74,7 +73,7 @@ public class RegularClass
 
 ### <a name="naming-conventions"></a>名前付け規則
 
-すべての属性クラスには名前に接尾語**属性**があります。 **属性** サフィックスは、推奨される名前付け規則ですが、システム要件ではありません。 **アプリケーション エクスプローラー** 内のクラスを選択して **プロパティ** ウインドウで **拡張** プロパティを確認することにより、クラスが **SysAttribute** から直接 **拡張** されるか決定することができます。
+すべての属性クラスには名前に接尾語 **属性** があります。 **属性** サフィックスは、推奨される名前付け規則ですが、システム要件ではありません。 **アプリケーション エクスプローラー** 内のクラスを選択して **プロパティ** ウインドウで **拡張** プロパティを確認することにより、クラスが **SysAttribute** から直接 **拡張** されるか決定することができます。
 
 ## <a name="sysobsoleteattribute"></a>SysObsoleteAttribute
 システムは、**SysObsoleteAttribute** クラスを含むいくつかの属性を提供します。 **SysObsoleteAttribute** クラスの 1 つの使用方法は、ソース コード内の特定のメソッドが呼び出された場合、コンパイルが失敗することをコンパイラに通知することです。 コンパイラはコンパイルを拒否し、この属性の使用に格納されている特定のメッセージを表示します。 **SysObsoleteAttribute** クラスを使用すると、エラーではなく問題の警告メッセージをコンパイラに通知することもできます。

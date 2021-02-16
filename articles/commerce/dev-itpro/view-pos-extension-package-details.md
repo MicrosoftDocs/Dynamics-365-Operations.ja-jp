@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: 5b5fe39b1688f8e2414c526a821415d291acef8f
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: de6b4384dafdb0eb5d16d52c819326dd0672627b
+ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275337"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4712678"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 
@@ -54,3 +53,7 @@ ms.locfileid: "3275337"
 **状態** 列はパッケージの各拡張機能の状態を示し、**名前** 列は拡張の種類名を示し、**パス** 列はパッケージの実装ファイルのパスを示します。 特定の行項目を選択すると、右側のウィンドウにも拡張機能の説明が表示されます。
 
 このビューの情報は拡張パッケージに含まれるマニフェスト ファイルに基づいています。 POS 拡張ローダーはすべての拡張パッケージを読み込んで状態を更新します。 状態の情報には記録されたエラーがすべて含まれています。
+
+> [!NOTE]
+> デュアル ディスプレイ カスタム コントロールとデュアル ディスプレイに関連するその他の拡張機能の詳細情報は、拡張機能の詳細ビューには表示されません。
+

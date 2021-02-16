@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4d4fa5520cfc35f0671a89fd107629d4b57fca1
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: a0dd2fd7c34a565ecb30ef0f772f2e81537f117e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080786"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680516"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -99,7 +98,7 @@ ms.locfileid: "3080786"
 
 ### <a name="empty-values"></a>空の値
 
-分析コードのフレームワークは、値が入力された分析コードについてのみ行を保存します。 空の行に対してはデータが保存されません。 したがって、データが保存された後、フレームワークは値を持たない分析コードについて、それがユーザーが削除したものなのか、そもそも値が入っていないものなのかを区別することができません。 空の値を保存するには、空白であることを意味する値を作成する必要があります。 命名の例としては **empty** , **n/a** , **\<cleared\>**, **\*blank\*** などです。 ユーザーは、空白の値に対しては入力時にこの値を選択して、これは空白値入力の既定の動作とすることができます。
+分析コードのフレームワークは、値が入力された分析コードについてのみ行を保存します。 空の行に対してはデータが保存されません。 したがって、データが保存された後、フレームワークは値を持たない分析コードについて、それがユーザーが削除したものなのか、そもそも値が入っていないものなのかを区別することができません。 空の値を保存するには、空白であることを意味する値を作成する必要があります。 例えば、**empty**、**n/a**、**\<cleared\>**、または **\*blank\*** などの名前を付けます。 ユーザーは、空白の値に対しては入力時にこの値を選択して、これは空白値入力の既定の動作とすることができます。
 
 ### <a name="immutable-data"></a>不変データ
 
@@ -245,7 +244,7 @@ ms.locfileid: "3080786"
 
 このセクションでは、新しい勘定分析コードを作成するために既定の分析コードをマージするか方法について説明します。
 
-既定の分析コードは、仕訳帳と勘定配布で使用される勘定科目の組み合わせを作成するために後のステップで使用される値を提供します。 [勘定科目の組み合わせに関する一連のブログの記事](https://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx)に定義されている内容に従い、勘定科目の組み合わせには、構造と順序が適用される MainAccount と 分析コード値の組み合わせのみを使用します。
+既定の分析コードは、仕訳帳と勘定配布で使用される勘定科目の組み合わせを作成するために後のステップで使用される値を提供します。 勘定科目の組み合わせは、構造と順序が適用される MainAccount および分析コード値の組み合わせにすぎません。 詳細については、[第 5 部: 勘定分析コード](ledgeraccountcombinations.md#part-5-ledger-dimensions) を参照
 
 既定の分析コードには、 MainAccount 以外の勘定科目の組み合わせに必要なすべての分析コードが用意されています。 既定の分析コードは既定の勘定と組み合わせることも、別の勘定分析コードを組み合わせて勘定分析コードを生成することもできます。
 
@@ -316,7 +315,7 @@ public static DimensionDefault serviceReplaceAttributeValue(
 
 **ServiceMergeValidDefaultDimensions ()** APIは、現在の元帳に対して有効な値のみをマージしていく場合に便利です。 **ServiceMergeDefaultDimensions** と同じように動作しますが、有効な値の検証がされます。
 
-**例: DimensionDefaultFacade::serviceReplaceAttributeValue ()** 
+**例: DimensionDefaultFacade::serviceMergeValidDefaultDimensions()** 
 
 ```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(

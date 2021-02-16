@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a02cdd085a236065bb3622b36f7d3284144d96e5
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d50b31fcbbb99050fca46b0a5ce10cc3fd243691
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041287"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684814"
 ---
-# <a name="EMPTYRECORD">EMPTYRECORD ER 機能</a>
+# <a name="emptyrecord-er-function"></a>EMPTYRECORD ER 機能
 
 [!include [banner](../includes/banner.md)]
 
-`EMPTYRECORD`関数は、指定されたリストまたはレコードと同じ構造を持つ*コンテナー (記録)* 値を返します。
+`EMPTYRECORD`関数は、指定されたリストまたはレコードと同じ構造を持つ *コンテナー (記録)* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,9 +38,9 @@ EMPTYRECORD (list)
 
 ## <a name="arguments"></a>引数
 
-`list`: *レコード リスト*または*コンテナー (レコード)*
+`list`: *レコード リスト* または *コンテナー (レコード)*
 
-*レコード リスト*または*コンテナー (レコード)* タイプのデータ ソースの有効なパス。
+*レコード リスト* または *コンテナー (レコード)* タイプのデータ ソースの有効なパス。
 
 ## <a name="return-values"></a>戻り値
 

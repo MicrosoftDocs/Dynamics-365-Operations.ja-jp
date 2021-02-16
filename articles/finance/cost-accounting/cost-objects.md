@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CAMDimensionMember
+ms.search.form: CAMDimensionMember, CAMCostObject
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -16,15 +16,15 @@ ms.custom: 223174
 ms.assetid: 2a1cdd35-30cb-41e7-9506-67fd04a537c5
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c15402993568c53eda8e03351fc2fccbcd82ab8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a090ecae2aadf1d0e08dd6127f831abdbf4a6b0a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770830"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445217"
 ---
 # <a name="cost-object-dimensions"></a>原価オブジェクト分析コード
 
@@ -35,7 +35,7 @@ ms.locfileid: "2770830"
 原価オブジェクトは、見積、原価の割り当て、または直接測定するオブジェクトのタイプがあります。 標準的な原価のオブジェクトには、製品、プロジェクト、リソース、部門、原価部門、および地理的領域が含まれます。 管理は、原価を定量化するのに原価オブジェクトを使用し、収益性分析を推進します。
 
 ## <a name="cost-object-dimensions-and-cost-object-dimension-members"></a>原価オブジェクト分析コードと原価オブジェクト分析コード メンバー
-原価オブジェクトは、*原価オブジェクト分析コード*として知られています。 原価オブジェクト分析コードが参照するエンティティを決定した後、個々の分析コード値を指定するか、またはそれらを他のソース システムから原価オブジェクトにインポートする必要があります。 これらの個別の分析コード値は*原価オブジェクト分析コード メンバ*と呼ばれます。 たとえば、原価オブジェクト分析コードとして原価部門として知られる財務分析コードを使用するとします。 個々の原価部門にどのように原価が流れるかを確認するには、原価オブジェクト分析コード メンバをインポートする必要があります。 この場合、原価オブジェクト分析コード メンバは、販売、生産、管理、地理的な場所などの実際の原価部門です。 次のスクリーン ショットは、原価オブジェクト分析コード メンバーとしての実際の原価部門である原価オブジェクト分析コードとしての原価部門の例を示しています。 
+原価オブジェクトは、*原価オブジェクト分析コード* として知られています。 原価オブジェクト分析コードが参照するエンティティを決定した後、個々の分析コード値を指定するか、またはそれらを他のソース システムから原価オブジェクトにインポートする必要があります。 これらの個別の分析コード値は *原価オブジェクト分析コード メンバ* と呼ばれます。 たとえば、原価オブジェクト分析コードとして原価部門として知られる財務分析コードを使用するとします。 個々の原価部門にどのように原価が流れるかを確認するには、原価オブジェクト分析コード メンバをインポートする必要があります。 この場合、原価オブジェクト分析コード メンバは、販売、生産、管理、地理的な場所などの実際の原価部門です。 次のスクリーン ショットは、原価オブジェクト分析コード メンバーとしての実際の原価部門である原価オブジェクト分析コードとしての原価部門の例を示しています。 
 
 [![原価オブジェクト分析コードとして原価部門を表示するスクリーンショット](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca1ca177fe7048e5ff37a8058d00face4a8166f0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215105"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431651"
 ---
 # <a name="service-object-groups"></a>サービス対象グループ 
 
@@ -53,13 +53,13 @@ ms.locfileid: "3215105"
 
 サービス対象グループを作成するには、次の手順に従います:
 
-1. **サービス管理 > 設定 > サービス対象 > サービス対象グループ**の順にクリックします。
+1. **サービス管理 > 設定 > サービス対象 > サービス対象グループ** の順にクリックします。
 
-2. **新規**をクリックして、新しいサービス対象グループを作成します。
+2. **新規** をクリックして、新しいサービス対象グループを作成します。
 
 3. サービス対象グループに一意の名前、および必要に応じて説明を入力します。
 
-**サービス対象**フォームを使用すると、グループにサービス対象を割り当てることができます。 
+**サービス対象** フォームを使用すると、グループにサービス対象を割り当てることができます。 
 
 ## <a name="see-also"></a>参照
 

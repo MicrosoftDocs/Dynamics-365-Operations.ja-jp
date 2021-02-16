@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, ERDataSourceAddDropDialog, ERExpressionDesignerFormula, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8a4965c07c5a084b21da40667747db36530284c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b26a7f50a2237e0d3d756f8eebf2e4cd81f24683
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141955"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684670"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3---use-computations-to-make-the-output"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 3 部 - 出力を作成するための計算の使用)
 
@@ -73,11 +72,11 @@ ms.locfileid: "3141955"
 30. [名称] フィールドで、「ブロックコード」と入力します。
     * ブロック コード  
 31. [OK] をクリックします。
-32. [ストリングの追加」をクリックします。
+32. [ストリングの追加] をクリックします。
 33. [名称] フィールドに、「Lines counting」と入力します。
     * 計算の明細行  
 34. [OK] をクリックします。
-35. [ストリングの追加」をクリックします。
+35. [ストリングの追加] をクリックします。
 36. [名前] フィールドに、「Total amount」を入力します。
     * 合計時間  
 37. [OK] をクリックします。

@@ -1,7 +1,7 @@
 ---
 title: クライアント側の設計 API
 description: このトピックでは、クライアント側での設計のための API の概要と、それらの使用に関する推奨事項について説明します。
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 8ca156f601135c68de5d2a0e7f80d0e19b1669c4
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 105d9cf1c61bc348a7cfe063200123a63cf20d1e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029392"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682553"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
@@ -71,7 +70,7 @@ ms.locfileid: "3029392"
 > [!NOTE]
 > コントロールに適用される色、フォント サイズ、またはフォントの太さはコントロールのすべての子にも適用されます。 埋め込みは、コンテナー以外の子によって継承されます。 その他のプロパティは継承されません。 コンテナーにはリスト、ページ、グループ、およびパーツが含まれます。
 
-子または品目を持たないコントロールを作成した後、コントロール名は引用符で囲む必要があります (次のコードの **FMCustomer\_FullName** を参照してください)。 ただし、任意のカスタマイズがコントロールに適用される場合、コードはブロックされる必要があり、**名前**ラベルを使用する必要があります (次のコードで **FMCustomer\_画像**を参照してください)。
+子または品目を持たないコントロールを作成した後、コントロール名は引用符で囲む必要があります (次のコードの **FMCustomer\_FullName** を参照してください)。 ただし、任意のカスタマイズがコントロールに適用される場合、コードはブロックされる必要があり、**名前** ラベルを使用する必要があります (次のコードで **FMCustomer\_画像** を参照してください)。
 
 ```json
 // Page root container

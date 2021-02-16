@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2d7a53ce1304cd217d7751f855a0802965cca929
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 2cfef34da1e595a51a3aadb1ea54c8add7e95511
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983644"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680984"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 
@@ -28,7 +27,7 @@ ms.locfileid: "2983644"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、かつ Finance and Operations をオンにする前に発生するタスクで構成されます。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
+*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、かつ Finance and Operations をオンにする前に発生するタスクで構成されます。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
 
 切替中には、3 つの主要なワーク ストリームがあります。
 
@@ -43,7 +42,7 @@ ms.locfileid: "2983644"
 モック カットオーバー プロセスは、サンドボックス環境での基本的なデータ アップグレードの検証と非常によく似ています。 そのプロセスを熟知していて、そのプロセスを既に実行済みであると仮定します。 切替モックは、次の点で異なります。
 
 - サンドボックス環境でデータ更新を実行した後、アップグレードされたデータベースをデータ アップグレード サンドボックス環境から実稼働環境にコピーするには、他のタイプの LCS サービス リクエストが必要です。 以下の電子メール テンプレートは、ユーザーの使用のため提供されています。
->[!コピー] これは、サンドボックス環境<source sandbox environment name>から本番環境への 2012 データ アップグレード データベース コピーの要求です。 現在稼働中のデータベースを上書きすることに同意します。
+>[!コピー] これは、サンドボックス環境 <source sandbox environment name> から本番環境への 2012 データ アップグレード データベース コピーの要求です。 現在稼働中のデータベースを上書きすることに同意します。
 
 - 次のタスクを追加しました。
     - スモーク テストを実行します。

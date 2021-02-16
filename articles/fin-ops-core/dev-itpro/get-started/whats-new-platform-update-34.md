@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 5afa038fe9683c35b42bbb1408f25eba7f3666b8
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 5c2630acda860140f66f53e455f4e49e8709c12e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249048"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685111"
 ---
 # <a name="platform-updates-for-version-10010-of-finance-and-operations-apps-may-2020"></a>Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム（2020 年 5 月）
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラムの一覧を表示します。 この更新プログラムは、*プラットフォーム更新プログラム 34*と呼ばれていました。このバージョンには、ビルド番号 7.0.5600 が付与されており、次のスケジュールで利用できます：
+このトピックでは、Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラムの一覧を表示します。 この更新プログラムは、*プラットフォーム更新プログラム 34* と呼ばれていました。このバージョンには、ビルド番号 7.0.5600 が付与されており、次のスケジュールで利用できます：
 
 - **プレビュー リリース :** 2020 年 3 月
 - **一般提供 (自己更新) :**  2020 年 4 月
@@ -57,7 +56,7 @@ ms.locfileid: "3249048"
 
 [削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
+- *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。

@@ -3,7 +3,7 @@ title: 与信および回収管理 Power BI コンテンツ
 description: このトピックでは、与信および回収管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278877"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4445370"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>与信および回収管理 Power BI コンテンツ
 
@@ -44,16 +44,20 @@ ms.locfileid: "3278877"
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Power BI コンテンツを表示するための設定
 
-データを**顧客の与信および回収** Power BI ビジュアルに表示するには、次の設定を完了する必要があります。
+データを **顧客の与信および回収** Power BI ビジュアルに表示するには、次の設定を完了する必要があります。
 
-1. **システム管理 > 設定 > システム パラメーター**に移動して、**システム通貨**および**システム為替レート**を設定します。
-2. **総勘定元帳 > 設定 > 元帳**に移動して、**会計通貨**および**為替レート タイプ**を設定します。
-3. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート**に移動します。
-4. **システム管理 > 設定 > エンティティ格納** に移動して、**CustCollectionsBIMeasurementsV2** 集計測定を更新します。
+1. **システム管理 > 設定 > システム パラメーター** に移動して、**システム通貨** および **システム為替レート** を設定します。
+2. **一般会計 > カレンダー > 会計カレンダー** に移動し、有効な期間に割り当てられている会計カレンダーを検証します。
+3. **総勘定元帳 > 設定 > 元帳** に移動して、**会計通貨** および **為替レート タイプ** を設定します。
+4. トランザクション通貨と会計通貨、会計通貨とシステム通貨の間の為替レートを定義します。 これを行うには、**総勘定元帳 > 通貨 > 通貨の為替レート** に移動します。
+5. **システム管理 > 設定 > エンティティ格納** に移動して、**CustCollectionsBIMeasurementsV2** 集計測定を更新します。
+
+>[!NOTE] 
+> エイジング期間の定義は、**売掛金勘定パラメータ > コレクション > コレクションの既定値** から設定して、Power BI コンテンツ内のエイジング データを有効にします。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-**与信および回収管理** Power BI コンテンツは**顧客の与信および回収**ワークスペースに表示されます。
+**与信および回収管理** Power BI コンテンツは **顧客の与信および回収** ワークスペースに表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 

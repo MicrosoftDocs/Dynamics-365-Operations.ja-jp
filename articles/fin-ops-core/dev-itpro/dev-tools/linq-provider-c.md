@@ -10,21 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4acea8ab36db2b64ffeb712762b8878b3a71b4f
-ms.sourcegitcommit: ce7b5f3d4c7a48edcbaab795ed521e35d07746e3
+ms.openlocfilehash: 6d1278ee607dda2b7af32eee6489cd11e8fb6f98
+ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854050"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4409523"
 ---
-# <a name="language-integrated-query-linq-provider-for-c"></a>C# の統合言語クエリ (LINQ) プロバイダー
+# <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,32 +31,34 @@ ms.locfileid: "2854050"
 
 LINQ (統合言語クエリ) は、さまざまな場所および形式で保存されているデータにアクセスできるクラスおよびメソッドのセットです。 LINQ フレームワークは、マネージド言語のデータにアクセスするための標準です。 LINQ は次のような異なる種類のデータ ソースからのデータへのアクセスに関する統合されて一貫した API をプログラマーに提示します。
 
--   メモリ内のオブジェクト グラフ
--   Active Directory エントリ
--   Flickr 画像および XML
--   SQL Server
+- メモリ内のオブジェクト グラフ
+- Active Directory エントリ
+- Flickr 画像および XML
+- SQL Server
 
 LINQ プロバイダーでは、.NET マネージド言語を使用して業務データにアクセスできます。
 
 ## <a name="two-syntactical-mechanisms-for-accessing-linq"></a>LINQ にアクセスするための 2 つの構文メカニズム
+
 次のテーブルに示すように、LINQ を使用する構文的アプローチは 2 つあります。
 
-|                                                                | X++              | C\# と Visual Basic      |
-|----------------------------------------------------------------|------------------|---------------------------|
-| 標準メソッドの呼び出し構文による LINQ。                           | 実用的ではありません。 ジェネリックの言語サポートは、LINQ にとって重要で、X++ ではサポートされていません。 | 必須のラムダ構文が使用可能です。 |
+| アプローチ | X++ | C\# と Visual Basic |
+|-------------------------|------------------|---------------------------|
+| 標準メソッドの呼び出し構文による LINQ。 | 実用的ではありません。 ジェネリックの言語サポートは、LINQ にとって重要で、X++ ではサポートされていません。 | 必須のラムダ構文が使用可能です。 |
 | コンパイラで認識される特殊な構文による LINQ。 | 使用不可。   | 簡単に使用できます。 |
 
 C\# (または Visual Basic) の LINQ プロバイダーにアクセスするには、2 つの構文メカニズムがあります。
 
--   標準、または流暢なメソッドの呼び出し構文。
--   特殊な構文により、C\# コンパイラは LINQ メソッド呼び出しと同等として理解できるように拡張されています。 (このような構文は「構文砂糖」とも呼ばれます。)
+- 標準、または流暢なメソッドの呼び出し構文。
+- 特殊な構文により、C\# コンパイラは LINQ メソッド呼び出しと同等として理解できるように拡張されています。 (このような構文は「構文砂糖」とも呼ばれます。)
 
 このトピックでは、簡単な特殊構文から始めて、LINQ の各構文メカニズムを検討します。
 
 ## <a name="linq-by-specialized-syntax-in-c"></a>C\# の特殊な構文による LINQ
-一部の .NET 言語は、書きやすい代替方法として LINQ 向けの特殊な構文を理解します。 C\# はそのような言語の 1 つです。 
 
-C\# で LINQ を使用するには、変数の宣言に使われる、C\# のキーワード **var**を理解する必要があります。 var キーワードは、変数に割り当てられているものによって変数のデータ型を把握するようにコンパイラに指示します。 この機能は、X++ でも利用可能になりました。 タイプはソース コード内に暗黙的に格納されており、コンパイルが完了した後にタイプは解決され、変更されません。
+一部の .NET 言語は、書きやすい代替方法として LINQ 向けの特殊な構文を理解します。 C\# はそのような言語の 1 つです。
+
+C\# で LINQ を使用するには、変数の宣言に使われる、C\# のキーワード **var** を理解する必要があります。 var キーワードは、変数に割り当てられているものによって変数のデータ型を把握するようにコンパイラに指示します。 この機能は、X++ でも利用可能になりました。 タイプはソース コード内に暗黙的に格納されており、コンパイルが完了した後にタイプは解決され、変更されません。
 
 ### <a name="comparing-x-to-c-linq"></a>X++ to C\# LINQ の比較
 
@@ -81,7 +82,7 @@ while select * from ct
 
 ```csharp
 // C#, with specialized LINQ syntax.
-// Get access to the data provider:       
+// Get access to the data provider:
 var provider = new QueryProvider(null);
 
 var customers = new QueryCollection(provider);
@@ -101,12 +102,13 @@ foreach (var ct in query)
 ```
 
 ## <a name="linq-query-in-c-by-method-syntax-using-the-lambda-operator-"></a>メソッド構文による C\# の LINQ クエリでは、ラムダ演算子 > を使用します
+
 次は、C\# での LINQ の別の用途です。今回以外では、LINQ API を呼び出すためにより多くの標準構文が使用されます。 この方法では、ラムダ演算子 `>` を使用します。 次の C\# クエリは、前述の C\# クエリと機能的に同等です。
 
 ```csharp
 var query = customers
     .Where(c => string.Compare(c.AccountNum, "4000") >= 0)
-    .Join(customers, 
+    .Join(customers,
         primary => primary.AccountNum,
         foreign => foreign.AccountNum,
         (primary, foreign) => new { P = primary, F = foreign })
@@ -127,10 +129,11 @@ var query = (from ct in customers
             where ct.AccountNum >= “4000”
             where trans.AccountNum == ct.AccountNum
             orderby ct.AccountNum descending
-            select ct).crosscompany();      
+            select ct).crosscompany();
 ```
 
 ## <a name="linq-query-execution"></a>LINQ クエリの実行
+
 LINQ クエリ用に生成されたコードは、実行時にツリーを構築します。 クエリの結果が要求されるときは、このツリーは、ツリーを解釈するバックエンドに渡され、クエリで表された形でデータを提供します。 X++ コンパイラは、クエリを表すツリーも作成しますが、X++ コンパイラには、データベース バックエンドの機能についての詳細な知識があります。 これには、以下のサブセクションで説明する重要な意味があります。
 
 ### <a name="inability-to-diagnose-problems-at-linq-compile-time"></a>LINQ コンパイル時に問題を診断することができません
@@ -138,7 +141,7 @@ LINQ クエリ用に生成されたコードは、実行時にツリーを構築
 C\# コンパイラは多くの場合、互換性のない LINQ クエリをバックエンドで処理できないため、実行時に発生するエラーを予測および診断できません。 たとえば、次の C\# コード ブロックで、特殊な LINQ 構文が C\# コンパイラに基づいて有効化されます。 まだ実行時にエラーが発生します。
 
 ```csharp
-var customerQuery = from c in db.Customers    
+var customerQuery = from c in db.Customers
                     where (from o in db.Orders
                     where o.ShipCountry == “Germany”
                     select o.CustomerID).Contains(c.CustomerID);
@@ -150,12 +153,12 @@ var customerQuery = from c in db.Customers
 
 実行時には、ツリーの解析が行われ、適切なアクセス言語が生成されるときに、間接費のペナルティが支払われます。 予想通り、LINQ 式ツリーを分析する際にパフォーマンス ペナルティが発生します。 実際にデータをフェッチするために実行時に必要な時間は、C\# と LINQ間と X++ と `while select` 間の間で大きく異なりません。 主要な数値は、レコードがほとんどフェッチされない場合、X++ `while select` と比較して、C\# LINQ ではクエリの最初から最後までのパフォーマンスが約 3 倍長くなりそうなことを示しています。 ただし、多くのレコードがフェッチされる場合、合計時間は C\# と X++ の間でほぼ同じです。 結論として、言語ツリーを分析するよりも、多くのレコードを取得するほうが時間がかかります。
 
-### <a name="query-composability-with-linq"></a>LINQ を使った構成可能性の照会
+### <a name="composing-queries-with-linq"></a>LINQ を使用したクエリの作成
 
 LINQ によって提供されるモデルでは、クエリをサブクエリで構成できます。 X++ 言語は、この機能を正しく提供することはできません。 これを理解するには、次の C\# LINQ コードを考えてみてください。 フラグは、データの結果の順序を制御するメソッドに渡されます。
 
 ```csharp
-private IEnumerable RichCustomers(bool orderByName) 
+private IEnumerable RichCustomers(bool orderByName)
 {
     // Create a query for the rich customers. Note carefully
     // that no data is fetched when this is executed.
@@ -183,6 +186,3 @@ LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レ
 [X++ と X++ コンパイラの変更](programming-language-support.md)
 
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
-
-
-

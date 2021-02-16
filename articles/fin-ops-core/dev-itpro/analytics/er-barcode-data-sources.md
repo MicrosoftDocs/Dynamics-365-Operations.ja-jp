@@ -3,7 +3,7 @@ title: バーコードのイメージを生成するためにバーコード デ
 description: このトピックでは、バーコードのイメージを生成するためのバーコード データ ソースの使用方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: fdb70c7e72647de4c6cd977b286c19c906559438
-ms.sourcegitcommit: a56b22729fbbb941471e927e2f932acaf624cf5e
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435468"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681427"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>バーコードのイメージを生成するためにバーコード データソースを使用する
 
@@ -54,16 +53,17 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
     - EAN-8
     - EAN-13
     - ITF-14
+    - Intelligent Mail
+    - MSI
+    - Plessey
     - PDF417
     - UPC-A
     - UPC-E
-    - MSI
-    - Plessey
 
 - 2 次元バーコード。
 
     - Aztec
-    - DataMatrix
+    - Data Matrix
     - QR コード
 
 **バーコード** データソースを構成する場合、イメージの生成に使用される特定のレンダリング パラメータを定義できます。
@@ -129,14 +129,14 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>コンフィギュレーション プロバイダーの有効化
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成プロバイダー** セクションで、**Litware, Inc.** サンプル会社の [構成プロバイダー](general-electronic-reporting.md#Provider) がリストされ、アクティブとしてマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[構成プロバイダーの作成およびアクティブなプロバイダーとしてのマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) トピックの手順に従ってください。
 
 ![ローカライズ構成ページで、サンプル会社をアクティブにする設定](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>指定された ER ソリューションをインポートする
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成** セクションで、**レポート構成** タイルを選択します。
 3. **構成** ページで、**小切手のモデル** 構成が構成ツリーで使用できない場合、ER データ モデル構成をインポートするためにこれらのステップに従います。
 
@@ -181,10 +181,10 @@ Excel デスクトップ アプリケーションを使用して、前にイン�
 
 ER ソリューションを変更してから、変更したテンプレートを[再度適用](modify-electronic-reporting-format-reapply-excel-template.md) する必要があります。
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成** セクションで、**レポートの構成** タイルを選択します。
 3. **構成** ページの構成ツリーで、**小切手のモデル** を展開して、**小切手の印刷形式** を選択します。
-4. アクション ウィンドウで、**デザイナー**を選択します。
+4. アクション ウィンドウで、**デザイナー** を選択します。
 5. ER 運営デザイナーで、**マッピング** タブを選択し、左側の形式ツリー ウィンドウで **展開/折りたたみ** を選択します。
 6. すべてのセル形式要素が適切なデータソースにバインドされていることに注意してください。
 
@@ -248,7 +248,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 
 ##### <a name="complete-the-modified-format-version"></a><a name="CompleteToRun"></a>変更した形式のバージョンを完了する
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成** セクションで、**レポートの構成** タイルを選択します。
 3. **構成** ページの構成ツリーで、**小切手のモデル** を展開して、**小切手の印刷形式** を選択します。
 4. **バージョン** クイック タブで、ステータスが **ドラフト** のレコードを選択します。
@@ -259,7 +259,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 
 ##### <a name="make-the-draft-version-available-for-use"></a><a name="MarkToRun"></a>下書きバージョンを使用できるようにする
 
-1. **組織管理** \> **ワークスペース** \> **電子申告**の順に移動します。
+1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成** セクションで、**レポートの構成** タイルを選択します。
 3. **構成** ページの、操作ウィンドウ、**構成** タブ、**詳細設定** グループで、**ユーザー パラメーター** を選択します。
 4. ダイアログ ボックスで、**実行設定** オプションを **はい** に設定し、**OK** を選択します。

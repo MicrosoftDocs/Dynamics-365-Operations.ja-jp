@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-17
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 336721dc01d10de40d5db8e17c864a2b5857aece
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899154"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461759"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-17-2019"></a>Dynamics 365 Talent - Core HR (2019 年 1 月 17 日) の新機能および変更された機能
 
@@ -37,10 +37,10 @@ ms.locfileid: "2899154"
 従業員を転送するときに、システムはそのユーザーのタイムゾーンの日付およびその日の始業時間に日時を設定します。
 
 ### <a name="all-employees-have-the-same-position-description-in-the-exited-worker-task-management-list"></a>すべての従業員は、退職した作業者タスク管理の一覧で同じ職位の説明となっています
-**タスク管理**ワークスペースでは最近退職したすべての従業員の正しい職位の説明が表示されるように更新されました。
+**タスク管理** ワークスペースでは最近退職したすべての従業員の正しい職位の説明が表示されるように更新されました。
 
 ### <a name="action-requested-by-field-is-now-populated-on-workers-action-page"></a>「アクションの要求者」フィールドは作業者アクション ページで設定されるようになりました
-この変更により、**アクションの要求者**フィールドの既定値が、変更を要求しているユーザーになりました。
+この変更により、**アクションの要求者** フィールドの既定値が、変更を要求しているユーザーになりました。
 
 ### <a name="ideas-portal-updated"></a>アイデア ポータルの更新
 アプリ内で人材のアイデアを送信するためのリンクが新しいアイデア ポータルに更新されました。 古いポータルに入力されたすべてのアイデアは移行されているので、ユーザーの優れたアイデアはすべて残っており、他のユーザーが投票することができます。  

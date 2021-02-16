@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbb43bc4f696935bba9fca6435eb73fc9a2e5149
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202103"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431988"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>返品品目を検査に渡す 
 
@@ -32,13 +32,13 @@ ms.locfileid: "3202103"
 
 返品品目を登録する場合、品目を在庫に戻すか、なんらかの手段で処分する前に、品目を検査に送ることがあります。
 
-1.  **在庫管理** \> **仕訳帳** \> **品目到着** \> **品目到着**の順にクリックします。
+1.  **在庫管理** \> **仕訳帳** \> **品目到着** \> **品目到着** の順にクリックします。
     
     \-または-
     
-    **在庫管理** \> **仕訳帳** \> **品目到着** \> **生産入力**の順にクリックします。
+    **在庫管理** \> **仕訳帳** \> **品目到着** \> **生産入力** の順にクリックします。
 
-2.  通常どおり、**在庫場所仕訳帳**フォームで、品目の受入を登録してください。
+2.  通常どおり、**在庫場所仕訳帳** フォームで、品目の受入を登録してください。
     
 
     > [!NOTE]
@@ -46,9 +46,9 @@ ms.locfileid: "3202103"
 
 
 
-3.  **既定値**タブの、**取扱方法**領域で、**検査管理**ボックスをオンにします。
+3.  **既定値** タブの、**取扱方法** 領域で、**検査管理** ボックスをオンにします。
 
-システムから検査指示が作成され、検査の担当者または担当部署が**検査指示**フォームを使ってこの指示に対応します。
+システムから検査指示が作成され、検査の担当者または担当部署が **検査指示** フォームを使ってこの指示に対応します。
 
 ## <a name="see-also"></a>参照
 

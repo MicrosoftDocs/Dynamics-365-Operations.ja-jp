@@ -1,6 +1,6 @@
 ---
 title: 統合された仕入先マスター
-description: このトピックでは、Finance and Operations アプリと Common Data Service 間の仕入先データの統合について説明します。
+description: このトピックでは、Finance and Operations アプリと Dataverse 間の仕入先データの統合について説明します。
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,26 +18,28 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173111"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685488"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先*は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Dynamics 365 のモデル駆動型アプリには仕入先の概念は存在しません。 ただし、**取引先企業 / 連絡先** エンティティをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Dynamics 365のモデル駆動アプリケーションで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業 / 連絡先** エンティティに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
+
+*仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先* は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Dynamics 365 のモデル駆動型アプリには仕入先の概念は存在しません。 ただし、**取引先企業 / 連絡先** エンティティをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Dynamics 365のモデル駆動アプリケーションで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業 / 連絡先** エンティティに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
 
 どちらの手法でも、仕入先データは Dynamics 365 Supply Chain Management、Dynamics 365 Sales、Dynamics 365 Field Service、および Power Apps の各ポータル間で統合されます。 Supply Chain Management では、購買要求や発注書などのワークフローでデータを使用できます。
 
 ## <a name="vendor-data-flow"></a>仕入先データ フロー
 
-仕入先データを Common Data Service の **取引先企業 / 連絡先** エンティティに格納しない場合は、新規仕入先設計を使用できます。
+仕入先データを Dataverse の **取引先企業 / 連絡先** エンティティに格納しない場合は、新規仕入先設計を使用できます。
 
 ![仕入先データ フロー](media/dual-write-vendor-data-flow.png)
 
@@ -51,12 +52,12 @@ ms.locfileid: "3173111"
 
 ## <a name="templates"></a>テンプレート
 
-仕入先データには、仕入先グループ、住所、連絡先情報、支払プロファイル、請求書プロファイル、およびロイヤルティ ステータスなど、仕入先に関するすべての情報が含まれます。 次の表に示すように、エンティティ マップのコレクションは、仕入先データの操作中に連携して動作します。
+仕入先データには、仕入先グループ、住所、連絡先情報、支払プロファイル、請求書プロファイル、およびロイヤルティ ステータスなど、仕入先に関するすべての情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、仕入先データの操作中に連携して動作します。
 
 Finance and Operations アプリ | その他の Dynamics 365 アプリ     | 説明
 ----------------------------|-----------------------------|------------
 仕入先 V2                   | 口座                     | アカウント エンティティを使用して仕入先情報を格納する企業は、引き続き同じ方法で使用できます。 また、Finance and Operations アプリ統合により、明示的な仕入先機能を利用することもできます。
-仕入先 V2                   | Msdyn\_vendors              | 仕入先向けのカスタム ソリューションを使用する企業は、Finance and Operations アプリ統合による Common Data Service で導入されている直定の仕入先概念を利用できます。 
+仕入先 V2                   | Msdyn\_vendors              | 仕入先向けのカスタム ソリューションを使用する企業は、Finance and Operations アプリ統合による Dataverse で導入されている直定の仕入先概念を利用できます。 
 仕入先グループ               | msdyn\_vendorgroups         | このテンプレートは、仕入先グループ情報を同期します。
 仕入先支払方法       | msdyn\_vendorpaymentmethods | このテンプレートは、仕入先支払方法に関する情報を同期します。
 CDS 連絡先 V2             | 連絡先                    | [連絡先](customer-mapping.md#cds-contacts-v2-to-contacts) テンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。

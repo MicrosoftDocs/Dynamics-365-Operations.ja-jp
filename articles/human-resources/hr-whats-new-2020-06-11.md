@@ -1,9 +1,9 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 6 月 11 日)
-description: このトピックでは、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: このトピックでは、2020 年 6 月 11 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/16/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39f18dc92fb01f9a0437f4166c0f08f8d6b1b81b
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: 0720b2024a865fcd42cd80fd905586d626388f8f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456623"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419416"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 6 月 11 日)
 
@@ -64,7 +64,7 @@ ms.locfileid: "3456623"
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>1 社または 1 プランの有給休暇
 
-顧客は、1 社または 1 休暇および不就業プランの有給休暇を処理できます。 この機能により、異なる休暇年数または有給休暇ポリシーを持つ顧客のために有給休暇プロセスを明確にします。 詳細については、[会社別または休暇プラン別の有給休暇](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan) を参照してください。
+顧客は、1 社または 1 休暇および不就業プランの有給休暇を処理できます。 この機能により、異なる休暇年数または有給休暇ポリシーを持つ顧客のために有給休暇プロセスを明確にします。 詳細については、[会社別または休暇プラン別の有給休暇](hr-leave-and-absence-accrue.md) を参照してください。
 
 ## <a name="add-attachments-to-time-off-requests"></a>添付ファイルを休暇申請に追加
 
@@ -95,3 +95,10 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="configure-the-name-of-employee-self-service"></a>従業員セルフ サービス名のコンフィギュレーション
 
 人事管理パラメータで新しいオプションが使用可能になり、従業員セルフ サービス ワークスペースの名前をセルフ サービスに更新します。 
+
+## <a name="see-also"></a>参照
+
+[Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[更新プロセス](hr-admin-setup-update-process.md)</br>
+[機能の管理](hr-admin-manage-features.md)

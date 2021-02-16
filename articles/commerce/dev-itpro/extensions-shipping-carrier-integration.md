@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: b7d17fb5ecfa5a8fa3af269d3668eb3440404d25
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 75976565d1ff68229090886e183477bd8db0faaa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057893"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681566"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 
@@ -31,7 +30,7 @@ ms.locfileid: "3057893"
 販売時点管理 (POS) から顧客注文の梱包明細を生成するとき、梱包明細に品目の重量を印刷する場合があります。 パッケージについてのカスタム情報、送料に関して配送業者を呼び出す方法に関する情報、またはパッケージの返却方法についての情報を追加することもできます。 これらのシナリオを処理するため、受注処理のための梱包明細プロセスの延長ポイントが、バックオフィス、ビジネス ロジック層である Commerce Runtime (CRT)、および POS で追加されました。 これらの拡張ポイントを使用すると、拡張を介してカスタム フローとロジックを追加できます。
 
 ## <a name="pos"></a>POS
-POS では、**PrintPackingSlipClientRequestHandler** という名前の新しい要求ハンドラーで拡張機能をオーバーライドできます。 この要求は、POS で**梱包明細を印刷する**ボタンを選択すると呼び出されます。 この要求を上書きすることによって、POS でカスタム ロジックを使用することができます。 たとえば、独自の印刷メソッドを呼び出し、追加情報を印刷できます。
+POS では、**PrintPackingSlipClientRequestHandler** という名前の新しい要求ハンドラーで拡張機能をオーバーライドできます。 この要求は、POS で **梱包明細を印刷する** ボタンを選択すると呼び出されます。 この要求を上書きすることによって、POS でカスタム ロジックを使用することができます。 たとえば、独自の印刷メソッドを呼び出し、追加情報を印刷できます。
 
 たとえば、既定では、PDF 形式で梱包明細を印刷することができます。 POS クライアント要求を上書きすることによって、さまざまな形式で梱包明細を印刷できます。 または、特定の条件を確認し、基本的な条件に基づいて梱包明細の印刷、または印刷停止をすることができます。 また、印刷前に検証を実行して、印刷ロジックまたはカスタム ロジックを止めることができます。 ただし、印刷される実際のデータを変更する場合、CRT およびバックオフィスでビジネス ロジックを変更する必要があります。
 
@@ -98,7 +97,7 @@ POS クライアントの要求ハンドラーと同様、カスタム ロジッ
 **GetFulfillmentLinesByPackingSlipId** メソッドは、梱包明細 ID に基づいて調達のための明細行を返します。 たとえば、梱包明細 ID があり、その梱包明細 ID に関連する販売明細行を取得する場合、このメソッドを使用します。
 
 ### <a name="markfulfillmentlinesaspacked"></a>MarkFulfillmentLinesAsPacked
-**MarkFulfillmentLinesAsPacked** メソッドは、調達のための詳細を XML 文字列形式でパラメーターとして取得することにより梱包される調達のための明細行のステータスを更新します。 POS は、POS ユーザー インターフェイス (UI) の選択した明細行をピッキング済としてマークするために CRT を呼び出します。 CRT の **MarkAsPickedRealtimeRequest** 要求がバックオフィスで **MarkFulfillmentLinesAsPacked** リアルタイム サービス メソッドを呼び出し、行のステータスを**梱包済み**として設定します。
+**MarkFulfillmentLinesAsPacked** メソッドは、調達のための詳細を XML 文字列形式でパラメーターとして取得することにより梱包される調達のための明細行のステータスを更新します。 POS は、POS ユーザー インターフェイス (UI) の選択した明細行をピッキング済としてマークするために CRT を呼び出します。 CRT の **MarkAsPickedRealtimeRequest** 要求がバックオフィスで **MarkFulfillmentLinesAsPacked** リアルタイム サービス メソッドを呼び出し、行のステータスを **梱包済み** として設定します。
 
 行が梱包済みとマークされていて印刷のために返された場合にカスタム ロジックを追加したり追加情報を返すには、**packingSlipExtensionPoint** メソッドをカスタマイズできます。
 

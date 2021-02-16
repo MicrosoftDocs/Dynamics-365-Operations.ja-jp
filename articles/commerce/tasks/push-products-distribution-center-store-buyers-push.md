@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141229"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413787"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>集中的購買を使用した物流センターから店舗への製品の配送
 

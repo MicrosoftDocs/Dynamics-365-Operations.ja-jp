@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff37655150596a4be8088e20b43f626f97262aba
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3137848"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445324"
 ---
 # <a name="create-a-cost-rollup-policy"></a>原価ロールアップ ポリシーの作成
 

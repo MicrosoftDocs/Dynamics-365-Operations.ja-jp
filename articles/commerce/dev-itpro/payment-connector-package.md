@@ -3,26 +3,25 @@ title: セルフサービス配置でのアプリケーション エクスプロ
 description: このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c3c75bb4ab1be13edf465f3ab45bdd692b207f73
-ms.sourcegitcommit: 78a1aa37f9a1565135b139e36501b759e7b2f849
+ms.openlocfilehash: b75d3836e13d2c9e161457636d49b984e69a90d6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3374809"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681558"
 ---
 # <a name="create-payment-packaging-for-application-explorer-for-self-service-deployment"></a>セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
 
@@ -42,31 +41,45 @@ ms.locfileid: "3374809"
 
 ## <a name="create-an-aos-payment-package-in-the-10010-release"></a>10.0.10 リリースでの AOS 支払パッケージの作成
 
-1. Visual Studio の、**Dynamics 365** メニューで、**モデル管理 \> モデルの作成**をクリックします。
+1. Visual Studio の、**Dynamics 365** メニューで、**モデル管理 \> モデルの作成** をクリックします。
 2. モデル名、モデル発行元、およびその他の必要な詳細を入力します。 その後、**次へ** を選択します。
 
     モデル名には、**RetailPaymentConnectors** の接頭語を付ける必要があります。 この接頭語の後に、カスタム モデル名に関する情報を追加します。 たとえば、作成するモデルには **RetailPaymentConnectorsCustomConnector** という名前が付けられます。 **RetailPaymentConnectors** の接頭語で始まるモデル名のみが、コマース支払コネクタ オプションに読み込まれます。
 
     ![モデルの作成ウィザードでのパラメーター ページの追加](./media/CreateModel.png)
 
-3. **新しいパッケージの作成**オプションを選択し、**次へ**を選択します。
-4. 必要な参照パッケージを選択し、**次へ**を選択します。
-5. **完了**を選択して、モデルの作成を終了します。
-6. ソリューション エクスプローラーで、プロジェクトを選択し、**参照**を右クリックしてから、**参照の追加**を選択します。
+3. **新しいパッケージの作成** オプションを選択し、**次へ** を選択します。
+4. 必要な参照パッケージを選択し、**次へ** を選択します。
+5. **完了** を選択して、モデルの作成を終了します。
+6. ソリューション エクスプローラーで、プロジェクトを選択し、**参照** を右クリックしてから、**参照の追加** を選択します。
 7. すべての支払コネクタ アセンブリとその依存関係を、プロジェクトに参照として追加します。
 
     ![参照ダイアログ ボックスの追加](./media/Reference.png)
 
-8. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
-9. 配備可能なパッケージを作成するには、**Dynamics 365** メニューで、**配置 \> 配置パッケージの作成**を選択します。
-10. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成**を選択します。
+8. 拡張機能を実装するのに HTML と CSS ファイルが必要な場合 、それらをリソース ファイルとしてプロジェクトに追加します。 配置中は、HTML ファイルが AosService\WebRoot\Resources\Html フォルダーにコピーされます。 CSS ファイルは AosService\WebRoot\Resources\Styles フォルダーにコピーされ、次の URL 形式を使用してアクセスすることができます。
+
+```
+https://AOSUrl/resources/html/Myhtml.html
+https://AOSUrl/resources/styles/Mycss.css
+```
+> [!NOTE]
+> リソースとしてプロジェクトに追加された HTML および CSS ファイルは AosService\WebRoot\, にコピーされ、リソースとして追加された他のファイル形式は AosService\WebRoot\. にコピーされません。 AosService\WebRoot\ フォルダーにファイルが必要な場合は、HTML ファイル形式に移行する必要があります。
+
+9. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
+
+> [!NOTE]
+> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages)」を参照してください。
+
+10. 配備可能なパッケージを作成するには、**Dynamics 365** メニューで、**配置 \> 配置パッケージの作成** を選択します。
+11. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成** を選択します。
+
 
     ![配置パッケージ ダイアログ ボックスの作成](./media/Create.png)
 
     Visual Studio はモデルをビルドし、配置可能なパッケージを作成します。
 
-10. 配置可能パッケージが作成された後、Microsoft Dynamics Lifecycle Services (LCS) にサインインしてから、LCS プロジェクトで、**資産ライブラリ** タイルを選択します。
-11. 作成した展開可能なパッケージをアップロードします。
+12. 配置可能パッケージが作成された後、Microsoft Dynamics Lifecycle Services (LCS) にサインインしてから、LCS プロジェクトで、**資産ライブラリ** タイルを選択します。
+13. 作成した展開可能なパッケージをアップロードします。
 
 ## <a name="apply-a-deployable-package"></a>配置可能パッケージの適用
 

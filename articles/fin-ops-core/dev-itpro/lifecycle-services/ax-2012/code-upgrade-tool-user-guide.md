@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 15101
 ms.assetid: 76a3bf45-51bd-4027-80b1-50b5fea4da1e
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e7c3952334d256b7c92748becd59026d8bcb8439
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b40de15cb03c5a169b8bf36ad5a48ded85f29f6b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812071"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679278"
 ---
 # <a name="code-upgrade-service-user-guide"></a>コード アップグレード サービス ユーザー ガイド
 

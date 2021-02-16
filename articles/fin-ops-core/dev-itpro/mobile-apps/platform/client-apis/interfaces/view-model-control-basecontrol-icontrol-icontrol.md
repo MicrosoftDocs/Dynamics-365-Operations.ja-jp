@@ -1,7 +1,7 @@
 ---
 title: コントロール タイプ
 description: すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。 プロパティの変更は、UI にすぐに反映されます。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 48fb471d830cf7dcf8e70348cb4974ba42d34dd0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5bc77edf397228eed2dc94f461c858bf52d4281
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183143"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687312"
 ---
 # <a name="control-type"></a>コントロール タイプ
 
@@ -117,7 +116,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 このコントロールのデザイン オブジェクトを返します。
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -143,7 +142,7 @@ metadata(): [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolme
 
 このコントロールのメタデータ オブジェクトを返します。
 
-#### <a name="returns-controlmetadataview-model-control-basecontrol-icontrol-icontrolmetadatamd"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
+#### <a name="returns-controlmetadata"></a>[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) を返します
 
 
 
@@ -154,7 +153,7 @@ parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; 
 
 このコントロールの親 (コントロールまたはページ) を返します。
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-control-124-page"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します
 
 
 
@@ -165,7 +164,7 @@ root(): [Page](view-model-ipage-ipage.md)
 
 このコントロールのルート フォーム インスタンス (ページ) を返します。
 
-#### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
+#### <a name="returns-page"></a>[Page](view-model-ipage-ipage.md) を返します
 
 
 

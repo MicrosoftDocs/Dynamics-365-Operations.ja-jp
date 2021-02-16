@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6a6f53007f8bd04724c43c518c5a9b10856b68d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772240"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459407"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
@@ -31,7 +31,7 @@ ms.locfileid: "2772240"
 
 このトピックでは、買掛金勘定の概要を示します。 
 
-仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または**仕入先請求書**ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
+仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または **仕入先請求書** ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
 
 **業務プロセス**
 
@@ -129,7 +129,7 @@ ms.locfileid: "2772240"
 
 買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)および [Microsoft Dynamics 365 Finance - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
 #### <a name="community-blogs"></a>コミュニティのブログ
 

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2395a1932e543e35ced28a2a6e56ab44835de19a
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 38908c63c35465747505479bc983ada891f9e2bf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041541"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686813"
 ---
-# <a name="CN_GBT_ADDITIONALDIMENSIONID">CN_GBT_ADDITIONALDIMENSIONID ER 関数</a>
+# <a name="cn_gbt_additionaldimensionid-er-function"></a>CN_GBT_ADDITIONALDIMENSIONID ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`CN_GBT_ADDITIONALDIMENSIONID` 関数は、指定された文字列から取得された単一の財務分析コード ID を表す*文字列*値を返します。 指定された文字列は、ID のコンマ区切りのリストとしてすべての分析コードを示します。
+`CN_GBT_ADDITIONALDIMENSIONID` 関数は、指定された文字列から取得された単一の財務分析コード ID を表す *文字列* 値を返します。 指定された文字列は、ID のコンマ区切りのリストとしてすべての分析コードを示します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,11 +40,11 @@ CN_GBT_ADDITIONALDIMENSIONID (text, number)
 
 `text`: *文字列*
 
-ID のコンマ区切りのリストとしてすべての分析コードを示す*文字列*値。
+ID のコンマ区切りのリストとしてすべての分析コードを示す *文字列* 値。
 
 `number`: 整数
 
-指定された文字列で要求された分析コードの順序コードを定義する*整数*値。
+指定された文字列で要求された分析コードの順序コードを定義する *整数* 値。
 
 ## <a name="return-values"></a>戻り値
 

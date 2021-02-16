@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01bd06b1cad956ae50698a86095f4fbe2564d9f4
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: b88995da982a78643243797e8155af296034bbb6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687922"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -44,7 +43,7 @@ Go-Live の後、実稼働環境は定期的に更新する必要があります
 - **アプリケーション リリース** – アプリケーションの新しいメジャー リリース。 このタイプの更新プログラムには、通常、アップグレードが必要です。
 - **アプリケーションのカスタマイズ** – アプリケーション上に構築されたカスタマイズ。 ベスト プラクティスとして、すべての独立ソフトウェア ベンダー (ISV) のソリューションおよびカスタマイズで構成される展開可能なパッケージを 1 つ適用する方法があります。
 
-**Dynamics 365 for Finance and Operationsバージョン 8.1 (2018 年 10 月) 以降**の顧客については、次の更新プログラムが提供されています。
+**Dynamics 365 for Finance and Operationsバージョン 8.1 (2018 年 10 月) 以降** の顧客については、次の更新プログラムが提供されています。
 
 - **アプリケーションの更新プログラム** – アプリケーションおよびプラットフォームの修正に関する 1 つの累積的なバイナリ更新プログラム。 更新は、通常の更新プログラムフローを使用して自分で行うことができます。 それ以外の場合は、Microsoft によって自動的に更新されます。
 - **アプリケーションのカスタマイズ** – アプリケーション上に構築されたカスタマイズ。 ベスト プラクティスとして、すべての ISV のソリューションおよびカスタマイズで構成される展開可能なパッケージを 1 つ適用する方法があります。
@@ -64,7 +63,7 @@ Microsoft は環境のインフラストラクチャの管理について責任�
   - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、 [モデルの配備可能なパッケージを作成する](../deployment/create-apply-deployable-package.md) および [開発環境でメタデータ修正をインストールする](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
   - アプリケーションのカスタマイズ: ISV またはパートナーが作成するカスタマイズです。 これらは展開可能なパッケージで、アセット ライブラリにアップロードされ、そこから適用することができます。
 - **更新の適用** [クラウド環境に更新を適用する](../deployment/apply-deployable-package-system.md) トピック内の情報を使用して、配置可能なパッケージを適用する手順を参照してください。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
-- **更新の検証**更新の適用後、アプリケーションを検証する必要があります。
+- **更新の検証** 更新の適用後、アプリケーションを検証する必要があります。
   - 更新プログラムが適用された問題を解決することを確認します。
   - 更新プログラムの適用によって回帰が発生していないことを確認します。
   - バイナリの更新を反映するようにビルド情報が更新されたことを確認します。

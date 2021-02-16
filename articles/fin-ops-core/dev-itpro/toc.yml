@@ -14,12 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
-                - name: 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)
-                  href: get-started/whats-new-platform-update-10-0-12.md
-                - name: 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)
-                  href: get-started/whats-new-platform-update-35.md
-                - name: 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)
-                  href: get-started/whats-new-platform-update-34.md
+                - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
+                - name: 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
+                - name: 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -28,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 延期された AX 2012 の機能
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: オンプレミス配置に実装されない機能
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: ビジネス イベント
@@ -84,6 +82,10 @@
           items:
             - name: データ統合方法 (インポート/エクスポート) の選択
               href: data-entities/integration-overview.md
+            - name: 優先順位に基づく調整
+              hreF: data-entities/priority-based-throttling.md
+            - name: 優先順位に基づく調整に関する FAQ
+              href: data-entities/throttling-faq.md
             - name: データ統合 API
               items:
                 - name: データ管理パッケージ REST API
@@ -96,7 +98,7 @@
                       href: data-entities/troubleshoot-service-authentication.md
                 - name: OData
                   href: data-entities/odata.md
-                - name: 顧客サービスの開発
+                - name: カスタム サービスの開発
                   href: data-entities/custom-services.md
                 - name: 定期統合
                   href: data-entities/recurring-integrations.md
@@ -128,14 +130,18 @@
                       items:
                         - name: 二重書き込みのホームページ
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: 二重書き込みの新機能および変更された機能
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: 二重書き込みの概要
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: 二重書き込みの設定
                           items:
                             - name: 二重書き込みのシステム要件
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: 二重書き込みの設定のサポートされているシナリオ
+                            - name: 二重書き込みの設定方法に関するガイダンス
                               href: data-entities/dual-write/connection-setup.md
+                            - name: 初期同期に関する考慮事項
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Lifecycle Services からの二重書き込みの設定
                               href: data-entities/dual-write/lcs-setup.md
                             - name: 既存の Finance and Operations アプリの二重書き込みの有効化
@@ -150,10 +156,18 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: 二重書き込みの通貨データ型の移行
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: 販売注文の状態フィールドのマッピングを設定
+                              href: data-entities/dual-write/sales-status-map.md
+                            - name: 会社間注文をフィルター処理して注文および注文明細行の同期を回避する
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: 二重書き込みの管理
                           items:
                             - name: エンティティとフィールドのマッピングのカスタマイズ
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: 複数のエンティティ マップを処理する
+                              href: data-entities/dual-write/multiple-entity-maps.md
+                            - name: 二重書き込み設定後に法人を編集する
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: エラー管理と警告通知
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: アプリケーション ライフサイクル管理
@@ -192,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: 統合された税マスター
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: 二重書き込みでの見込顧客の現金化
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Dynamics 365 Sales での Dynamics 365 Commerce 価格決定エンジンの使用
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: サービスのための社内資産
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 作業者、職務、および職位の統合
@@ -224,6 +240,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: 一般的なトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: 二重書き込みに関してよく寄せられる質問
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Power Platform との統合
                       items:
                         - name: 見込顧客を現金化シナリオのコンフィギュレーション
@@ -374,6 +392,8 @@
           items:
             - name: 概要
               href: database/dbmovement-operations.md
+            - name: データベース移動ツールキット
+              href: database/database-movement-toolkit.md
             - name: クイック スタート ガイド
               items:
                 - name: データベースの更新
@@ -386,11 +406,13 @@
                   href: database/database-point-in-time-restore.md
                 - name: サンドボックス環境への生産データベースのポイントインタイム復元
                   href: database/database-pitr-prod-sandbox.md
+                - name: ジャストインタイム データベース アクセスの有効化
+                  href: database/database-just-in-time-jit-access.md
             - name: チュートリアル
               items:
                 - name: トレーニング用の更新
                   href: database/dbmovement-scenario-general-refresh.md
-                - name: 生産データベースのコピーのデバッグ
+                - name: 運用データベースのコピーのデバッグ
                   href: database/dbmovement-scenario-debugdiag.md
                 - name: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
                   href: database/dbmovement-scenario-exportuat.md
@@ -462,7 +484,9 @@
                   href: deployment/Update-retail-channel.md
                 - name: Commerce Scale Unit (クラウド) の初期化
                   href: deployment/Initialize-Retail-Channels.md
-                - name: 小売データ所在地
+                - name: チャネルを別の Commerce Scale Unit に移行する
+                  href: deployment/Reassign-CSU.md
+                - name: 小売データの所在地
                   href: deployment/retail-data-residency.md
             - name: オンプレミス配置
               items:
@@ -476,13 +500,15 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: ハードウェアのサイズ要件
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Dynamics 365 Finance + Operations (on-premises) での認証
+                      href: deployment/authentication-onprem.md
                 - name: オンプレミス環境の設定と配置
                   items:
                     - name: LCS での設置プロジェクトの設定
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
                     - name: オンプレミス環境の設定と配置
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
+                    - name: オンプレミス環境での Retail チャネル コンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
                     - name: カスタム モデルの開発とオンプレミス環境への配置
                       href: deployment/develop-deploy-custom-models-on-premises.md
@@ -514,7 +540,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: ローカル エージェント
                   items:
-                    - name: AD FS Office 365 の互換性
+                    - name: AD FS Microsoft 365 の互換性
                       href: deployment/onprem-adfscompatibility.md
                     - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
                       href: lifecycle-services/pre-post-scripts.md
@@ -598,6 +624,16 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: Azure Pipelines で、X++ モデルのバージョン管理
                   href: dev-tools/pipeline-model-version.md
+                - name: Azure Pipelines を使用した資産のダウンロード
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Azure Pipelines を使用した資産のアップロード
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Azure Pipelines を使用した資産のデプロイ
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Azure Pipelines での Lifecycle Services (LCS) 接続の作成
+                  href: dev-tools/pipeline-lcs-connection.md
+                - name: Azure Pipelines でのレガシ パイプラインの更新
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: フリート管理のサンプル アプリケーション
               items:
                 - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
@@ -611,9 +647,7 @@
                 - name: 開発ツールのチュートリアル
                   href: dev-tools/introduction-visual-studio.md
                 - name: アプリケーション チェッカー
-                  items:
-                    - name: アプリケーション チェッカーに対する BaseX のインストール
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: アプリケーション エクスプローラー
                   href: dev-tools/application-explorer.md
                 - name: プロジェクトのビルドおよびデバッグ
@@ -713,9 +747,31 @@
                         - name: イベント
                           href: dev-ref/xpp-events.md
                     - name: X++ データの選択と操作
-                      href: dev-ref/xpp-data-query.md
-                    - name: SysDa API を使用したデータアクセス
-                      href: dev-ref/sysda.md
+                      items:
+                        - name: X++ データの選択と操作の概要
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: 明細書を選択
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: データの選択
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: データの挿入
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: データの更新
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: データの削除
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: 明細書の選択中
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: 選択したステートメントを式として記述
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: トランザクションの整合性
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: セットベースからレコード単位への操作の変換
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: SysDa API を使用したデータアクセス
+                          href: dev-ref/sysda.md
+                        - name: SQL インジェクション攻撃の緩和
+                          href: dev-ref/query-with-parameters.md
                     - name: X++ マクロ
                       href: dev-ref/xpp-macros.md
                     - name: X++ 属性クラス
@@ -754,76 +810,58 @@
                   href: dev-ref/system-tables.md
                 - name: システム クラス
                   items:
-                    - name: A クラス
-                      href: dev-ref/a-classes.md
-                    - name: B クラス
-                      href: dev-ref/b-classes.md
-                    - name: C クラス
-                      href: dev-ref/c-classes.md
-                    - name: D クラス
-                      href: dev-ref/d-classes.md
-                    - name: E クラス
-                      href: dev-ref/e-classes.md
-                    - name: F クラス (FormBuildAnimateControl への FieldBinding)
-                      href: dev-ref/fieldbinding-classes.md
-                    - name: F クラス (FormBuildFastTabSummarySeparator への FormBuildButtonControl)
-                      href: dev-ref/formbuildbuttoncontrol-classes.md
-                    - name: F クラス (FormBuildRealControl への FormBuildFilterPaneControl)
-                      href: dev-ref/formbuildfilterpanecontrol-classes.md
-                    - name: F クラス (FormButtonSeparatorControl への FormBuildReferenceControl)
-                      href: dev-ref/formbuildreferencecontrol-classes.md
-                    - name: F クラス (FormControlEventArgs への FormChangeTracker)
-                      href: dev-ref/formchangetracker-classes.md
-                    - name: F クラス (FormFastTabHeaderControl への FormDataObject)
-                      href: dev-ref/formdataobject-classes.md
-                    - name: F クラス (FormGridControl への FormFastTabSummarySeparator)
-                      href: dev-ref/formfasttabsummaryseparator-classes.md
-                    - name: F クラス (FormIntControl への FormGroupControl)
-                      href: dev-ref/formgroupcontrol-classes.md
-                    - name: F クラス (FormNotifyEventArgs への FormListBoxControl)
-                      href: dev-ref/formlistboxcontrol-classes.md
-                    - name: F クラス (FormRealControl への FormObject)
-                      href: dev-ref/formobject-classes.md
-                    - name: F クラス (FormStringControl への FormReferenceControl)
-                      href: dev-ref/formreferencecontrol-classes.md
-                    - name: F クラス (FormWindowControl への FormTabControl)
-                      href: dev-ref/formtabcontrol-classes.md
-                    - name: G クラス
-                      href: dev-ref/g-classes.md
-                    - name: H クラス
-                      href: dev-ref/h-classes.md
-                    - name: I クラス
-                      href: dev-ref/i-classes.md
-                    - name: J クラス
-                      href: dev-ref/j-classes.md
-                    - name: K クラス
-                      href: dev-ref/k-classes.md
-                    - name: L クラス
-                      href: dev-ref/l-classes.md
-                    - name: M クラス
-                      href: dev-ref/m-classes.md
-                    - name: N クラス
-                      href: dev-ref/n-classes.md
-                    - name: O クラス
-                      href: dev-ref/o-classes.md
-                    - name: P クラス
-                      href: dev-ref/p-classes.md
-                    - name: Q クラス
-                      href: dev-ref/q-classes.md
-                    - name: R クラス
-                      href: dev-ref/r-classes.md
-                    - name: S クラス
-                      href: dev-ref/s-classes.md
-                    - name: T クラス
-                      href: dev-ref/t-classes.md
-                    - name: U クラス
-                      href: dev-ref/u-classes.md
-                    - name: V クラス
-                      href: dev-ref/v-classes.md
-                    - name: W クラス
-                      href: dev-ref/w-classes.md
-                    - name: X クラス
-                      href: dev-ref/x-classes.md
+                    - name: システム クラス リスト
+                      href: dev-ref/system-classes/toc.yml
+                    - name: システム クラスをアルファベット順にグループ化
+                      items:
+                        - name: A クラス
+                          href: dev-ref/a-classes.md
+                        - name: B クラス
+                          href: dev-ref/b-classes.md
+                        - name: C クラス
+                          href: dev-ref/c-classes.md
+                        - name: D クラス
+                          href: dev-ref/d-classes.md
+                        - name: E クラス
+                          href: dev-ref/e-classes.md
+                        - name: F クラス
+                          href: dev-ref/f-classes.md
+                        - name: G クラス
+                          href: dev-ref/g-classes.md
+                        - name: H クラス
+                          href: dev-ref/h-classes.md
+                        - name: I クラス
+                          href: dev-ref/i-classes.md
+                        - name: J クラス
+                          href: dev-ref/j-classes.md
+                        - name: K クラス
+                          href: dev-ref/k-classes.md
+                        - name: L クラス
+                          href: dev-ref/l-classes.md
+                        - name: M クラス
+                          href: dev-ref/m-classes.md
+                        - name: N クラス
+                          href: dev-ref/n-classes.md
+                        - name: O クラス
+                          href: dev-ref/o-classes.md
+                        - name: P クラス
+                          href: dev-ref/p-classes.md
+                        - name: Q クラス
+                          href: dev-ref/q-classes.md
+                        - name: R クラス
+                          href: dev-ref/r-classes.md
+                        - name: S クラス
+                          href: dev-ref/s-classes.md
+                        - name: T クラス
+                          href: dev-ref/t-classes.md
+                        - name: U クラス
+                          href: dev-ref/u-classes.md
+                        - name: V クラス
+                          href: dev-ref/v-classes.md
+                        - name: W クラス
+                          href: dev-ref/w-classes.md
+                        - name: X クラス
+                          href: dev-ref/x-classes.md
             - name: 拡張性
               items:
                 - name: 拡張機能のホーム ページ
@@ -964,7 +1002,7 @@
               items:
                 - name: Trace Parser を使用したトレースの実行
                   href: perf-test/trace-trace-tutorial.md
-                - name: タスク レコーダーおよびパフォーマンス SDK を使用したシングル ユーザー テスト
+                - name: タスク レコーダーおよびPerformance SDK を使用したシングル ユーザー テスト
                   href: perf-test/single-user-test-perf-sdk.md
                 - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-local-test-controller.md
@@ -1342,14 +1380,32 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
                     - name: PartMetadata タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
-                    - name: Row タイプ
+                    - name: 行タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
-                    - name: 値のタイプ
+                    - name: 値の型
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
                     - name: ValueDesign タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata タイプ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: プロセスの自動化のフレームワーク
+          items:
+            - name: プロセスの自動化のフレームワークの開発
+              href: process-automation/process-automation-framework.md
+            - name: タイプ登録
+              href: process-automation/type-registration.md
+            - name: シリーズ登録
+              href: process-automation/series-registration.md
+            - name: プロセス パラメーター
+              href: process-automation/process-parameters.md
+            - name: 構成可能なユーザーのクエリ
+              href: process-automation/user-queries.md
+            - name: プロセスを実行する
+              href: process-automation/run-process.md
+            - name: 結果とメッセージを記録する
+              href: process-automation/log-results.md
+            - name: ユーザー インターフェイスのカスタマイズ
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Regression Suite Automation Tool の概要
@@ -1377,7 +1433,7 @@
             - name: 開発とリリース
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: ステージおよび公開
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: 方法の追加
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: ビジネス プロセス モデラー ライブラリの設定
@@ -1408,15 +1464,15 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: サポート
           items:
-            - name: Finance and Operations および Lifecycle Services のサポートの取得
+            - name: Finance and Operations および Lifecycle Services のサポートの利用
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
-            - name: Finance and Operations のテクニカル サポートの設定
+            - name: Finance and Operations アプリのテクニカル サポートを設定する
               href: lifecycle-services/support-experience.md
-            - name: Finance and Operations サポート エクスペリエンスの管理
+            - name: Finance and Operations アプリのサポート エクスペリエンスを管理する
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: システム管理
           items:
@@ -1442,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Finance and Operations アプリの暗号化
                   href: sysadmin/encryption.md
-                - name: セッション アイドル タイムアウトの設定
+                - name: セッション非活動タイムアウトの設定
                   href: sysadmin/session-idle-timeout.md
                 - name: 最初から用意されているセキュリティ レポート
                   href: sysadmin/security-reports.md
                 - name: 新規ユーザーの作成
                   href: sysadmin/tasks/create-new-users.md
+                - name: ユーザー セッション管理
+                  href: sysadmin/user-session-management.md
                 - name: ユーザーの一括インポート
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: 職務分掌の設定
@@ -1456,8 +1514,18 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: ユーザーのセキュリティ ロールへの割り当て
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする
+                  href: sysadmin/import-export-customized-security.md
                 - name: タスク記録のセキュリティ診断
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: 拡張可能なデータ セキュリティ ポリシー
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: セキュリティ ポリシーを作成する
+                  href: sysadmin/create-simple-security-policy.md
+            - name: ユーザー ライセンス要件への準拠の維持
+              href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: プロセスの自動化
+              href: sysadmin/process-automation.md
             - name: バッチ処理
               items:
                 - name: バッチ処理の概要
@@ -1498,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Azure Key Vault クライアントの設定
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: クリーンアップ ルーチン
+              href: sysadmin/cleanuproutines.md
         - name: アップグレード、更新プログラム、および修正プログラム
           items:
             - name: アップグレード、更新プログラム、および修正プログラムのリソース
@@ -1516,8 +1586,12 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 アップグレード - DACPAC プロセスを使用したサンドボックス環境でのデータ アップグレード
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
                   href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 アップグレード - オンプレミス環境
+                  href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012 アップグレード - 切替テスト
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 アップグレード - アップグレード後のタスク
@@ -1632,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: ナビゲーションの構築
                   href: user-interface/build-navigation.md
-                - name: ワークスペースの構築
+                - name: ワークスペースの変更
                   href: user-interface/build-workspace.md
             - name: フォーム
               items:
@@ -1664,7 +1738,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: フィルター処理のオプション
                   href: user-interface/filtering.md
-                - name: PowerApps ホスト コントロール
+                - name: Power Apps ホスト コントロール
                   href: user-interface/powerapps-host-control.md
             - name: ウィンドウの管理
               items:

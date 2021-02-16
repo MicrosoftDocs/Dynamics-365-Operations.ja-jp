@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 98d7d70b0c6fa39b1611df47b1f45e4feeadb144
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d7cc03c878414b9fc0a1440bbbb48535ea39555b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183155"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681618"
 ---
 # <a name="upgrade-from-ax-2012---prepare-for-go-live"></a>AX 2012 からのアップグレード - 稼働の準備
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e2d79ee9e182df4a4efe65beb685567b1e7446ce
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 09d53c82b4244f20d0d7f301691b01263258a32f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897445"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529687"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-29-2019"></a>Dynamics 365 Talent (2019 年 10 月 29 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -43,11 +45,11 @@ ms.locfileid: "2897445"
 
 ### <a name="delete-parties-with-no-roles-should-be-on-by-default-371233"></a>ロールのない関係者は既定で削除すべき (371233)
 
-Talent で新しい環境をプロビジョニングする場合、**ロールが存在しない関係者を削除**が既定でオンになります。 この設定がオンになっている場合を除き、作業者を削除しても、作業者に関連付けられている関係者は削除されません。 この変更により、作業者のインポート、変更、または再インポートを行う必要がある場合に、グローバル アドレス帳の重複レコードが制限されます。
+Talent で新しい環境をプロビジョニングする場合、**ロールが存在しない関係者を削除** が既定でオンになります。 この設定がオンになっている場合を除き、作業者を削除しても、作業者に関連付けられている関係者は削除されません。 この変更により、作業者のインポート、変更、または再インポートを行う必要がある場合に、グローバル アドレス帳の重複レコードが制限されます。
 
 ### <a name="draft-and-cancelled-leave-requests-should-be-allowed-to-be-deleted-in-common-data-service-376999"></a>下書きおよびキャンセルされた休暇要求は、Common Data Service で削除が許可されるべき (376999)
 
-この変更により、Common Data Service でステータスが**下書き**または**キャンセル済**になっている休暇依頼を削除できます。
+この変更により、Common Data Service でステータスが **下書き** または **キャンセル済** になっている休暇依頼を削除できます。
 
 ### <a name="additional-list-values-in-custom-fields-arent-reflected-in-common-data-service-after-clicking-apply-on-the-custom-fields-form-379599"></a>カスタム フィールド フォームで適用をクリックしても、カスタム フィールドの追加リスト値が Common Data Service に反映されない (379599)
 
@@ -55,7 +57,7 @@ Talent で新しい環境をプロビジョニングする場合、**ロール�
 
 ### <a name="apply-onboarding-checklists-across-legal-entities-when-more-than-one-employment-exists-371270"></a>1 つ以上の雇用がある場合、会社間でオンボーディング チェックリストを適用 (371270)
 
-今週のリリースにより、**作業者フォーム > チェックリスト**で、1 つ以上の雇用のある従業員にチェックリストを適用することができます。
+今週のリリースにより、**作業者フォーム > チェックリスト** で、1 つ以上の雇用のある従業員にチェックリストを適用することができます。
 
 ### <a name="benefits-open-enrollment-preview-feature-has-been-removed"></a>福利厚生の自由登録プレビュー機能は削除されました
 

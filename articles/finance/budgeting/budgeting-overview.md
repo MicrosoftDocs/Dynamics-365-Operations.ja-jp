@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b56f56f5307c292ced30ec94d178244268c5e68
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935445"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528548"
 ---
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
@@ -64,7 +64,7 @@ ms.locfileid: "2935445"
 ## <a name="user-interface-and-reporting-capabilities"></a>ユーザー インターフェイスとレポート機能
 ユーザーは直接クライアントで (コンフィギュレーション可能な予算計画ドキュメント ページを使用することにより)、または Excel を使用して、予算計画を作成できます。 Excel は、いくつかの追加機能を提供します。 たとえば、予算計画のソースとして外部データを使用し、カスタム計算を実行し、Microsoft PivotTable やグラフを使用できます。 予算計画プロセスの変数のほとんどは、コンフィギュレーションできます。 
 
-たとえば、予算作成者、予算作成する対象、プロセスの概要を定義できます。 予算計画には Excel を使用できますが、アプリケーションでは、まったくの単一のソースとして保持され、予算管理の問題を防ぐのに役立ちます。 定期処理プロセスは、予算作成の初期データを予算計画に移動するために使用できます。 アプリケーションでは、予算作成データを表示および分析できる一連の標準的なレポートの照会ページを提供します。 予算計画データは、Management Reporter を使用してアクセスでき、別の予算計画シナリオは、Management Reporter レポートで列として表示できます。
+たとえば、予算作成者、予算作成する対象、プロセスの概要を定義できます。 予算計画には Excel を使用できますが、アプリケーションでは、まったくの単一のソースとして保持され、予算管理の問題を防ぐのに役立ちます。 定期処理プロセスは、予算作成の初期データを予算計画に移動するために使用できます。 アプリケーションでは、予算作成データを表示および分析できる一連の標準的なレポートの照会ページを提供します。 予算計画データは、[Financial Reporting](../general-ledger/financial-reporting-getting-started.md) を使用してアクセスでき、別の予算計画シナリオは、財務諸表で列として表示できます。
 
 
 

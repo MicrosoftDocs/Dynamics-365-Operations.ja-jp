@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e2eb131db8e167868913f036149779133c1d46ed
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812439"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694941"
 ---
 # <a name="human-resources-overview"></a>人事管理の概要
 
@@ -80,10 +79,10 @@ ms.locfileid: "2812439"
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 
-Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持に役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
+Microsoft Dynamics AX は、アメリカ障碍者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持に役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
 
 - [フォーム I-9 の検証](localizations/noam-usa-form-i-9-verification.md)
-- [アメリカ障害者法 (ADA) への準拠](localizations/noam-usa-comply-ada.md)
+- [アメリカ障碍者法 (ADA) への準拠](localizations/noam-usa-comply-ada.md)
 - [育児介護休業法 (FMLA) の休暇の追跡](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>アンケートによる情報の収集

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqGroup
+ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6eb65f0cf97490177d38001e5ac793aa584f33bb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46e170b18a3c32d443c1de55516d19408b7947d3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432210"
 ---
 # <a name="action-messages"></a>アクション メッセージ
 
@@ -43,8 +43,8 @@ ms.locfileid: "3203966"
 
 | メッセージ             | 説明                                                                                                                                                                                                                                              |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **繰り上げ**         | このメッセージを選択した場合は、以前の日付に注文を移動する必要があるときに、システムによってアクション メッセージが生成されます。 **要求日前受入許容日数**フィールドで、入庫から出庫までの最大日数 (前金アクションなし) を指定することもできます。 |
-| **延期**        | このメッセージを選択した場合は、後の日付に注文を移動する必要があるときに、システムによってアクション メッセージが生成されます。 **延期日数**フィールドで、入庫から出庫までの最大日数 (延期金アクションなし) を指定することができます。       |
+| **繰り上げ**         | このメッセージを選択した場合は、以前の日付に注文を移動する必要があるときに、システムによってアクション メッセージが生成されます。 **要求日前受入許容日数** フィールドで、入庫から出庫までの最大日数 (前金アクションなし) を指定することもできます。 |
+| **延期**        | このメッセージを選択した場合は、後の日付に注文を移動する必要があるときに、システムによってアクション メッセージが生成されます。 **延期日数** フィールドで、入庫から出庫までの最大日数 (延期金アクションなし) を指定することができます。       |
 | **減少**        | このメッセージを選択した場合は、製造オーダー、発注書、およびそのほかの受入トランザクションが、過剰な在庫レベルを防ぐために差し引かれる必要があります。                                                                                                   |
 | **増加**        | このメッセージを選択した場合は、製造オーダー、発注書、およびそのほかの受入トランザクションが、在庫不足を防ぐために増加される必要があります。                                                                                                    |
 | **派生アクション** | このメッセージを選択した場合は、生産を満たすコンポーネントの注文に対するアクションなど派生要件に対して、アクション メッセージが作成されます。                                                                                                   |

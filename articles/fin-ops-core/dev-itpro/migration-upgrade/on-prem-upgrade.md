@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 53926f9120a3d3d9acd6bd7f10d6d61c3f9d0b6d
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: 2d4353f231774541bc879653de7d726f74f763f7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224875"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687860"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -109,7 +108,7 @@ ms.locfileid: "3224875"
 
 11. オンプレミス AOS、BI、および MR サーバーを開始するか、または Service Fabric ポータルからサービスを開始します。
 
-12. LCS でプロジェクトを開き、**環境**セクションで展開を削除します。 アプリケーションが環境の Service Fabric Explorer から表示されなくなります。 このプロセスは、持っているノードの数に応じて、時間がかかることがあります。 新しい環境を配置する前に、Service Fabric Explorer を確認し、すべての申請が削除されていることを確認します。 実際のプロセスが完了する前に、LCS では環境が削除されていることを示す場合があることに注意してください。
+12. LCS でプロジェクトを開き、**環境** セクションで展開を削除します。 アプリケーションが環境の Service Fabric Explorer から表示されなくなります。 このプロセスは、持っているノードの数に応じて、時間がかかることがあります。 新しい環境を配置する前に、Service Fabric Explorer を確認し、すべての申請が削除されていることを確認します。 実際のプロセスが完了する前に、LCS では環境が削除されていることを示す場合があることに注意してください。
 
 13. カスタマイズする場合、次の事項を行います。
 
@@ -192,7 +191,7 @@ ms.locfileid: "3224875"
 
 10. オンプレミス AOS、BI、および MR サーバーを開始するか、または Service Fabric ポータルからサービスを開始します。
 
-11. LCS でプロジェクトを開き、**環境**セクションで展開を削除します。 アプリケーションが環境の Service Fabric Explorer から表示されなくなります。 このプロセスは、持っているノードの数に応じて、時間がかかることがあります。
+11. LCS でプロジェクトを開き、**環境** セクションで展開を削除します。 アプリケーションが環境の Service Fabric Explorer から表示されなくなります。 このプロセスは、持っているノードの数に応じて、時間がかかることがあります。
 
 12. カスタマイズする場合、次の事項を行います。
 

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 8ff91a1df82d6195da266b97c347ef27afec662d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176001"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459432"
 ---
 # <a name="customer-workflow"></a>顧客ワークフロー
 
@@ -58,6 +58,6 @@ ms.locfileid: "2176001"
 1. **提案済み変更** を選択して **提案済み変更** ページを開き、変更内容を確認してください。
 2. **ワークフロー \> 送信** を選択して変更内容をワークフローに送信します。
 
-    ページの状態が**変更の承認待ち**に変わります。
+    ページの状態が **変更の承認待ち** に変わります。
 
-ワークフローは、アプリケーションの標準的なワークフロー プロセスに従います。 承認者は**顧客**ページに転送され、そこで**提案済みの変更**ページの変更を確認してから**ワークフロー \> 承認**を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。
+ワークフローは、アプリケーションの標準的なワークフロー プロセスに従います。 承認者は **顧客** ページに転送され、そこで **提案済みの変更** ページの変更内容を確認してから **ワークフロー \> 承認** を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。

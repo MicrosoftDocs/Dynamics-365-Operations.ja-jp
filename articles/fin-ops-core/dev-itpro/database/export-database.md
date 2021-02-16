@@ -3,24 +3,23 @@ title: データベースのエクスポート
 description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b790f96ce193e23c0044904d94aebb8968e24205
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: aa3ddfdea3717bb5b7a34376ca9f4cbd1aca1db4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113600"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681082"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -32,11 +31,39 @@ ms.locfileid: "3113600"
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
+### <a name="maximum-limit-50-gb-on-exported-bacapcs"></a>エクスポートされた bacapcs で最大 50 GB 
+LCS からデータベースのエクスポートを実行するシステムを維持するために、最大 bacpac サイズの制限が設定されています。 この制限は、エクスポートする bacpac ごとに、50 GB に設定されます。 この制限の理由は次のとおりです。 
+
+- 一元化されたシステムでは、同じ地域の複数の顧客に対してエクスポートを実行しています。このシステムは、ディスク領域に制限があります。  
+- Azure SQL は、データを bacpac 形式で適切に圧縮します。多くの場合、顧客が 50 GB を超えると、カスタマイズ、またはバイナリ データがバックアップ ファイルのサイズは大幅に増加します。  
+
+出力される bacpac のサイズが 50 GB を超えるためにエクスポートに失敗した場合、次の SQL スクリプトをサンドボックス データベースに対して実行して、上位 15 テーブルをメガバイト単位で特定してください。  データ エンティティのステージングに使用するすべてのテーブル (テーブル名の最後に「ステージング」が割り当てられます) は、切り捨てることができます。 バイナリまたは BLOB データを格納しているテーブル (JSON/XML/binary) はすべて切り捨てられるか、フィールドのコンテンツを削除して領域を解放する必要があります。 バイナリ データは圧縮できないので、データベース自体に大量のデータを格納すると、すぐに 50 GBの制限に達することになります。
+
+```sql
+USE [YourDBName] -- replace your dbname
+GO
+SELECT top 15
+s.Name AS SchemaName,
+t.Name AS TableName,
+p.rows AS RowCounts,
+CAST(ROUND((SUM(a.used_pages) / 128.00), 2) AS NUMERIC(36, 2)) AS Used_MB,
+CAST(ROUND((SUM(a.total_pages) - SUM(a.used_pages)) / 128.00, 2) AS NUMERIC(36, 2)) AS Unused_MB,
+CAST(ROUND((SUM(a.total_pages) / 128.00), 2) AS NUMERIC(36, 2)) AS Total_MB
+FROM sys.tables t
+INNER JOIN sys.indexes i ON t.OBJECT_ID = i.object_id
+INNER JOIN sys.partitions p ON i.object_id = p.OBJECT_ID AND i.index_id = p.index_id
+INNER JOIN sys.allocation_units a ON p.partition_id = a.container_id
+INNER JOIN sys.schemas s ON t.schema_id = s.schema_id
+GROUP BY t.Name, s.Name, p.Rows
+ORDER BY Total_MB DESC
+GO
+```
+
 ### <a name="export-operation-failure"></a>エクスポート操作失敗
 
-多くの場合、LCS のプロセスは、Microsoft Azure SQL データベースからの応答を待っている間にタイムアウトして、エクスポート処理を失敗してしまいます。 **経歴**ボタンを使用すると、LCS を進行中のエクスポート プロセスに再接続して、完了まで確認することができます。 エクスポートを開始してから 24 時間を超過した場合は、LCS プロジェクトの資産ライブラリの保留中の資産の期限が切れます。 この場合、エクスポート操作をロールバックして再起動する必要があります。
+多くの場合、LCS のプロセスは、Microsoft Azure SQL データベースからの応答を待っている間にタイムアウトして、エクスポート処理を失敗してしまいます。 **経歴** ボタンを使用すると、LCS を進行中のエクスポート プロセスに再接続して、完了まで確認することができます。 エクスポートを開始してから 24 時間を超過した場合は、LCS プロジェクトの資産ライブラリの保留中の資産の期限が切れます。 この場合、エクスポート操作をロールバックして再起動する必要があります。
 
-失敗したエクスポート操作をキャンセルするには、**ロールバック**ボタンを使用します。
+失敗したエクスポート操作をキャンセルするには、**ロールバック** ボタンを使用します。
 
 ### <a name="data-elements-that-arent-exported"></a>エクスポートされないデータ要素
 

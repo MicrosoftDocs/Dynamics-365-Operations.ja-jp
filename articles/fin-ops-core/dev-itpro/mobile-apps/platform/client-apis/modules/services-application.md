@@ -1,7 +1,7 @@
 ---
 title: アプリケーション モジュール
-description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データクエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
-author: shadykdc
+description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データ クエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
+author: robinarh
 manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
@@ -9,25 +9,24 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 21691ce2506798ff747b03a7fa8af80978112e8e
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 85deae4eb8f77348419c6a35259b11e658ae5b51
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091861"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682562"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 
-アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。
-各アプリケーションは、ページ、アクション、データクエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。 <br>
+アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データ クエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
+
 アプリケーションの付随的な拡張は、一般に指定されたエントリポイントである [主な関数](#main) を持つスクリプト モジュールで定義されます。これにより、付随的なロジックをアプリケーション ライフ サイクルと統合できます。
 
 ## <a name="index"></a>指数
@@ -54,7 +53,7 @@ ms.locfileid: "3091861"
 
 | 氏名 | 署名 | 説明 |
 | ---- | --------- | ----------- |
-| [minVersion](../interfaces/services-application-iapplication.md#minversion) |minVersion: string (省略可)  <br>|このコンポーネントで必要な最小プラットフォーム バージョンを示すオプション マーカーです。 これが指定され、プラットフォームの以前のバージョンへのコンポーネントの読み込みが試行されるとき、対応するワークスペースは読み込まれず、ユーザーはプラットフォームの新しいバージョンのインストールを指示されます。<br>  |
+| [minVersion](../interfaces/services-application-iapplication.md#minversion) |minVersion: string (省略可)  <br>|このコンポーネントで必要な最小プラットフォーム バージョンを示すオプション マーカーです。 この値が指定され、プラットフォームの以前のバージョンでコンポーネントの読み込みが試行されるとき、対応するワークスペースは読み込まれず、ユーザーはプラットフォームの新しいバージョンのインストールを指示されます。<br>  |
 
 #### <a name="methods"></a>メソッド
 
@@ -77,8 +76,8 @@ ApplicationMetadata <br>
 | [Configs](../interfaces/services-application-iapplicationmetadata.md#configs) |Configs: [名前: 文字列]: 任意 (オプション)  <br>|アプリケーションは作成者またはリソース プロバイダーにより指定された名前付き構成のセットを持つことができます<br>  |
 | [説明](../interfaces/services-application-iapplicationmetadata.md#description) |説明:文字列 (オプション)  <br>|アプリケーションの説明<br>  |
 | [IconName](../interfaces/services-application-iapplicationmetadata.md#iconname) |IconName: 文字列 (オプション)  <br>|アプリケーションの代表的なアイコン<br>  |
-| [ID](../interfaces/services-application-iapplicationmetadata.md#id) |Id: 文字列 <br>|アプリケーションの一意の識別子<br>  |
-| [タイトル](../interfaces/services-application-iapplicationmetadata.md#title) |タイトル: 文字列 <br>|アプリケーションのタイトル。<br>  |
+| [ID](../interfaces/services-application-iapplicationmetadata.md#id) |ID: 文字列 <br>|アプリケーションの一意の識別子<br>  |
+| [肩書き](../interfaces/services-application-iapplicationmetadata.md#title) |タイトル: 文字列 <br>|アプリケーションのタイトル。<br>  |
 
 ## <a name="functions"></a>関数
 

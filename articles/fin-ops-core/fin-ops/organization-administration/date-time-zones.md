@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysUserSetup, SystemDate
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 13571
 ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b93bd9e4827e6fbd0c6ca4208bde55b89793982
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f89fe7633a550f8ba091b12e5287913f7960ffce
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191715"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693246"
 ---
 # <a name="datetime-data-and-time-zones"></a>日時データとタイム ゾーン
 
@@ -41,4 +40,4 @@ ms.locfileid: "2191715"
 
 ## <a name="time-zones"></a>タイム ゾーン
 
-UTC 時刻を現地時間で 表すには、タイム ゾーンを指定する必要があります。 タイム ゾーンは、ローカル時刻に相当する UTC からの補正時間を制御します。 たとえば、モスクワの補正時間は UTC+3 になります。 優先タイム ゾーンは、コンピュータの Windows ロケールに従って最初に設定されますが、管理者によって変更されている場合もあります。 優先タイム ゾーンは、結合された日付と時刻を表示する場合にのみ使用されます。 ユーザーの優先タイム ゾーンを設定するには、**ユーザー** ページに移動します。 ページにシステムのユーザーのリストが表示されます。 優先タイム ゾーンを設定するユーザーを選択し、**ユーザー オプション** をクリックします。 **言語と地域**タブで、優先タイム ゾーンを選択します。
+UTC 時刻を現地時間で 表すには、タイム ゾーンを指定する必要があります。 タイム ゾーンは、ローカル時刻に相当する UTC からの補正時間を制御します。 たとえば、モスクワの補正時間は UTC+3 になります。 優先タイム ゾーンは、コンピュータの Windows ロケールに従って最初に設定されますが、管理者によって変更されている場合もあります。 優先タイム ゾーンは、結合された日付と時刻を表示する場合にのみ使用されます。 ユーザーの優先タイム ゾーンを設定するには、**ユーザー** ページに移動します。 ページにシステムのユーザーのリストが表示されます。 優先タイム ゾーンを設定するユーザーを選択し、**ユーザー オプション** をクリックします。 **言語と地域** タブで、優先タイム ゾーンを選択します。

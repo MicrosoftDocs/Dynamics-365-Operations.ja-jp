@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 2abe38d1f6a87600bbd02b8ba9939db199115b3a
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: ef720d78b5d3be5056fd60dc79a8931f53afec8d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411426"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681625"
 ---
 # <a name="self-service-deployment-overview"></a>セルフサービス配置の概要
 
@@ -30,7 +29,7 @@ ms.locfileid: "3411426"
 クラウド環境では、セルフサービス配置が可能です。 セルフ サービス配置により、簡単な配置が可能になり配置時間が大幅に減少します。
 
 > [!IMPORTANT]
-> この機能は、Microsoft Azure の国/地域に基づいて段階的にリリースされます。 ただし、この機能は現在、Finance and Operations アプリのサインアップ過程にいる**新しい顧客**のみ利用可能です。 現在の顧客の既存の環境に変更はありません。
+> この機能は、Microsoft Azure の国/地域に基づいて段階的にリリースされます。 ただし、この機能は現在、Finance and Operations アプリのサインアップ過程にいる **新しい顧客** のみ利用可能です。 現在の顧客の既存の環境に変更はありません。
 >
 > すべての新しい顧客にこの機能が表示されるわけではない点に注意してください。 ただし、アクセス権を持つ新しい顧客の数は、徐々に増加します。 
 
@@ -42,7 +41,7 @@ ms.locfileid: "3411426"
 
    ![配置設定](media/deployment-settings.png)
 
-- レベル 2 以上のサンドボックス環境へのリモート デスクトップ アクセスがなくなります。 リモート デスクトップ アクセスが必要なすべての操作は、セルフ サービス アクションとして使用可能になりました。 次の図に、環境の**メンテナンス** \> **データベース メニューの移動**オプションにおける操作の一部を示します。 詳細については、[配置のメンテナンス操作](maintenanceoperationsguide-newinfrastructure.md)を参照してください。
+- レベル 2 以上のサンドボックス環境へのリモート デスクトップ アクセスがなくなります。 リモート デスクトップ アクセスが必要なすべての操作は、セルフ サービス アクションとして使用可能になりました。 次の図に、環境の **メンテナンス** \> **データベース メニューの移動** オプションにおける操作の一部を示します。 詳細については、[配置のメンテナンス操作](maintenanceoperationsguide-newinfrastructure.md)を参照してください。
 
     > [!IMPORTANT]
     > リモート デスクトップ アクセスは、セルフ サービス展開を使用して配置された環境にのみ制限されます。 既存の環境または既存の顧客に変更はありません。 

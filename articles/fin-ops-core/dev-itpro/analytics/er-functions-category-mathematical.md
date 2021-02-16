@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 751598b2d32ac84e8a9bd201dd5098ccc575fc18
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 8288c2cbf16ae0d73a065e323b5e8214252889a1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917790"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686150"
 ---
 # <a name="list-of-er-functions-in-the-mathematical-category"></a>算術カテゴリ内の ER 関数のリスト
 
@@ -35,11 +34,11 @@ ms.locfileid: "2917790"
 
 | 職務 | 説明 |
 |----------|-------------|
-| [Abs](er-functions-mathematical-abs.md)             | この関数は、指定された数の絶対値 (モジュール) を*実数*値として返します。 つまり、符号のない数値を返します。 |
-| [パワー](er-functions-mathematical-power.md)         | この関数は、指定された正の数を指定された累乗した結果を表す*実数*値を返します。 |
-| [Round](er-functions-mathematical-round.md)         | この関数は、指定された数を指定された小数点以下の桁数に丸めてから、*実数*値として返します。 |
-| [RoundDown](er-functions-mathematical-rounddown.md) | この関数は、指定された数を指定された小数点以下の桁数に切り捨ててから、*実数*値として返します。 |
-| [RoundUp](er-functions-mathematical-roundup.md)     | この関数は、指定された数を指定された小数点以下の桁数に切り上げてから、*実数*値として返します。 |
+| [Abs](er-functions-mathematical-abs.md)             | この関数は、指定された数の絶対値 (モジュール) を *実数* 値として返します。 つまり、符号のない数値を返します。 |
+| [パワー](er-functions-mathematical-power.md)         | この関数は、指定された正の数を指定された累乗した結果を表す *実数* 値を返します。 |
+| [Round](er-functions-mathematical-round.md)         | この関数は、指定された数を指定された小数点以下の桁数に丸めてから、*実数* 値として返します。 |
+| [RoundDown](er-functions-mathematical-rounddown.md) | この関数は、指定された数を指定された小数点以下の桁数に切り捨ててから、*実数* 値として返します。 |
+| [RoundUp](er-functions-mathematical-roundup.md)     | この関数は、指定された数を指定された小数点以下の桁数に切り上げてから、*実数* 値として返します。 |
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6134ae7eb1a8044cf906f2a8d02eb153522a6cf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 895d5f13f065b2188f245d081fa69e7e63555dde
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041932"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686443"
 ---
-# <a name="REVERSE">REVERSE ER 関数</a>
+# <a name="reverse-er-function"></a>REVERSE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`REVERSE` 関数は、指定されたリストを、逆の並べ替え順で*レコード リスト*値として返します。
+`REVERSE` 関数は、指定されたリストを、逆の並べ替え順で *レコード リスト* 値として返します。
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +54,7 @@ REVERSE (list)
 
 ## <a name="example-2"></a>例 2
 
-**仕入先**を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` は降順の名前で並べ替えられた仕入先のリストを返します。
+**仕入先** を VendTable テーブルを参照する電子申告 (ER) データ ソースとして構成している場合、式 `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` は降順の名前で並べ替えられた仕入先のリストを返します。
 
 ## <a name="additional-resources"></a>追加リソース
 

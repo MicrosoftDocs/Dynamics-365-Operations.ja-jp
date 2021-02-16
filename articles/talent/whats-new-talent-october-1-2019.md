@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6bfe8a60b8c7eb9b7542a6ef3be6094144b06b3c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 69c0a805027f215b2a2a42d826ee7a346cfdd511
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897422"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529663"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-1-2019"></a>Dynamics 365 Talent (2019 年 10 月 1 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -43,7 +45,7 @@ ms.locfileid: "2897422"
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>合理化された従業員の入力とナビゲーション
 
-この機能は、すべての環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能**に移動します。 **拡張された作業者フォームおよびナビゲーション**を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
+この機能は、すべての環境で使用可能になりました。 この機能を有効にするには、**システム管理 > リンク > 設定 > システム パラメーター > プレビュー機能** に移動します。 **拡張された作業者フォームおよびナビゲーション** を選択します。 これにより、これらの変更がすべてのユーザーに対して有効になります。 このオプションはいつでもオフにすることができます。
 
 詳細については、[合理化された従業員の入力とナビゲーション](./streamlined-employee-entry.md) を参照してください。 これらの変更のビデオを視聴するには、[Dynamics 365 for Talent 2019 リリース ウェーブ 2 の概要](https://aka.ms/ROGT19RW2ROV) を参照してください。
 
@@ -59,11 +61,11 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="not-able-to-end-compensation-along-with-its-position-assignment-328993"></a>その職位の割り当てと共に報酬を終了することはできません (328993)
 
-この変更により、個人のアクションが有効になっている**作業者職位の割り当て**ページで**割り当ての終了**を使用して、職位の割り当てを終了する際に報酬を終了できます。
+この変更により、個人のアクションが有効になっている **作業者職位の割り当て** ページで **割り当ての終了** を使用して、職位の割り当てを終了する際に報酬を終了できます。
 
 ### <a name="bank-account-validation-requires-routing-and-account-numbers-in-all-locations-340403"></a>銀行口座の検証には、すべての場所における処理番号、口座番号が必要になります (340403)
 
-今週の変更により、検証の必要な**処理番号**および**口座番号**が無効にする新しいコンフィギュレーション オプションが追加されます。 
+今週の変更により、検証の必要な **処理番号** および **口座番号** が無効にする新しいコンフィギュレーション オプションが追加されます。 
 
 ### <a name="attachments-are-not-enabled-in-mss-performance-journals-for-performance-feedback-341794"></a>パフォーマンス フィードバックの MSS 業績仕訳帳で添付ファイルが有効になりません (341794)
 
@@ -75,7 +77,7 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 
 ### <a name="job-description-doesnt-display-for-the-job-in-the-skill-gap-analysis-page-369398"></a>職務明細書がスキル ギャップ分析ページに表示されません (369398)
 
-今週のビルドでは、**スキル ギャップ分析**ページでジョブを選択する際に詳細が表示されます。
+今週のビルドでは、**スキル ギャップ分析** ページでジョブを選択する際に詳細が表示されます。
 
 ## <a name="coming-soon"></a>間もなく公開
 

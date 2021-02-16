@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143318"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684285"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 
@@ -98,11 +97,11 @@ ER は、ビジネス ユーザーに対し、外部データ ファイルを、
 
     設計された形式が、ここではデータ ソース コンポーネントとして示されていることに注意してください。  
 
-6. ツリーで、[format: Record\*settlement: XML Element 1..1 (settlement): Record] を展開します。
-7. ツリーで、[format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list] を展開します。
-8. ツリーで、[format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record] を展開します。
-9. ツリーで、[format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record] を展開します。
-10. ツリーで、[format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record] を選択します。
+6. ツリーで、`format: Record\*settlement: XML Element 1..1 (settlement): Record` を展開します。
+7. ツリーで、`format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list` を展開します。
+8. ツリーで、`format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` を展開します。
+9. ツリーで、`format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record` を展開します。
+10. ツリーで、`format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` を選択します。
 
     事前定義された「フォーマット 」データ ソース 構成では、必須およびオプションのフォーマット要素の表示が異なることに注意してください。  
 11. ツリーで、[Transactions: Record list= format.settlement.'$enumerated'] を展開します。
@@ -237,7 +236,7 @@ ER は、ビジネス ユーザーに対し、外部データ ファイルを、
 19. ページを閉じます。
 20. [編集] をクリックします。
 
-    修正プログラム「KB 4012871 異なるバージョンの Dynamics 365 Finance に展開するための異なる種類の前提条件を指定する機能を備えた、分離された構成でのGERモデル マッピングのサポート」 (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) をインストールした場合、入力したフォーマット設定に対して次の手順 「モデル マッピングの既定の フラグをオンにする」 を実行します。 それ以外の場合、次のステップをスキップします。  
+    修正プログラム 「KB 4012871 異なるバージョンの Dynamics 365 Finance に展開するための異なる種類の前提条件を指定する機能を備えた、分離された構成でのGERモデル マッピングのサポート」 ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) をインストールした場合、入力したフォーマット設定に対して次の手順 「'モデル マッピングの既定' のフラグをオンにする」 を実行します。 それ以外の場合、次のステップをスキップします。  
 
 21. [モデル マッピング] フィールドの既定値で [はい] を選択します。
 22. ツリーで、[1099 Payments model] を選択します。
@@ -245,9 +244,9 @@ ER は、ビジネス ユーザーに対し、外部データ ファイルを、
 24. [モデルからデータ ソースへのマップ] をクリックします。
 25. [実行] をクリックします。
 
-    修正プログラム KB 4012871 異なるバージョンで展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) をインストールした場合、ルックアップ フィールドで目的のモデル マッピングを選択します。 修正プログラムをまだインストールしていない場合、マッピングは既定の書式設定の定義で既に選択されているため、次のステップに進みます。  
+    修正プログラム KB 4012871 異なるバージョンで展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) をインストールした場合、ルックアップ フィールドで目的のモデル マッピングを選択します。 修正プログラムをまだインストールしていない場合、マッピングは既定の書式設定の定義で既に選択されているため、次のステップに進みます。  
     
-    修正プログラムの KB 4012871 がインストールされていない場合、インポートするファイルをパースするために使用する追加のモデル マッピング質問がダイアログ ボックスに含まれていることに注意してください。 次にデータはダイアログ ボックスからデータ モデルにポートされます。 現時点では、インポートする計画のファイル タイプに応じてどの書式マッピングを使用する必要があるか選択することができます。  
+    修正プログラムの KB 4012871 がインストールされていない場合、インポートするファイルの解析に使用される追加のモデル マッピング質問がダイアログ ボックスに含まれていることに注意してください。 次にデータはダイアログ ボックスからデータ モデルにポートされます。 現時点では、インポートする計画のファイル タイプに応じてどの書式マッピングを使用する必要があるか選択することができます。  
     
     アクション用に特別に設計されたアプリケーション内のポイントからこのモデル マッピングをコールする場合は、ER の出力先および書式マッピングを統合の一部としてマークする必要があります。  
 

@@ -3,7 +3,7 @@ title: 製品推奨事項の有効化
 description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為的知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404212"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413636"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
@@ -65,11 +65,13 @@ ms.locfileid: "3404212"
 
 製品推奨事項を有効にするには、次の手順を実行します。
 
-1. **Retail と Commerce &gt; 製品推奨事項 &gt; 推奨パラメーター**に移動します。
-1. 共有パラメーターのリストで、**推奨リスト**を選択します。
-1. **推奨事項を有効にする**のオプションを、**はい** に設定します。
+1. Commerce Headquarters で、**機能管理** を検索します。
+1. **すべて** を選択して、使用可能な機能の一覧を表示します。 
+1. 検索ボックスに、**推奨事項** を入力します。
+1. **製品推奨事項** 機能を選択します。
+1. **製品推奨事項** プロパティ ペインで、**直ちに有効化** を選択します。
 
-![推奨事項の有効化](./media/enablepersonalization.png)
+![推奨事項の有効化](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > この手順では、製品推奨リストを生成するプロセスを開始します。 リストが有効になり、販売時点管理 (POS) または Dynamics 365 Commerce で表示できるようになるまでに、数時間かかる場合があります。
@@ -95,6 +97,8 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 [Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効化する](enable-adls-environment.md)
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
 

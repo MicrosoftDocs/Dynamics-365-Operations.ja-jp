@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
+ms.devlang: xpp
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150213
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd04b193a88304df9f08df7bd107d3a7d0782715
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 7a1114b0eb47ea6dd8386372295f4f001ab42d54
+ms.sourcegitcommit: 71a19a55ae84df917c19a11c065d0d8a6140e669
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872644"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "4409580"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
@@ -111,7 +111,7 @@ int FindPower(real realNumber)
 
 ## <a name="continue-statement"></a>ステートメントの続行
 
-**continue** ステートメントは、**for**、**while**、または **do**...**while** ループの次の反復処理に直接移動する実行を発生させます。 **実行**または**途中**で、すぐにテストを実行します。 **対象**ステートメントで、増分手順を実行します。 
+**continue** ステートメントは、**for**、**while**、または **do**...**while** ループの次の反復処理に直接移動する実行を発生させます。 **実行** または **途中** で、すぐにテストを実行します。 **対象** ステートメントで、増分手順を実行します。 
 
 ### <a name="example-of-a-continue-statement"></a>続行明細書の例
 

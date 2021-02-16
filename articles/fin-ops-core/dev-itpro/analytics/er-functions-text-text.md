@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c08aca949ffc7e62009bf3f6c664d96b368f43e7
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d489da24d0589549153913bbc6db699e3c217e72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040898"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682898"
 ---
-# <a name="TEXT">TEXT ER 関数</a>
+# <a name="text-er-function"></a>TEXT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`TEXT` 関数は、現在のアプリケーション インスタンス のサーバー ロケール設定に従って、書式設定されるテキスト文字列に変換した後に、*文字列*値として指定された数を返します。
+`TEXT` 関数は、現在のアプリケーション インスタンス のサーバー ロケール設定に従って、書式設定されるテキスト文字列に変換した後に、*文字列* 値として指定された数を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,7 +38,7 @@ TEXT (number)
 
 ## <a name="arguments"></a>引数
 
-`number`: *整数*または*実数*
+`number`: *整数* または *実数*
 
 テキスト文字列に変換する必要がある番号。
 
@@ -51,7 +50,7 @@ TEXT (number)
 
 ## <a name="usage-notes"></a>使用上の注意
 
-*実数*型の値では、文字列変換が小数点第 2 位に制限されます。
+*実数* 型の値では、文字列変換が小数点第 2 位に制限されます。
 
 ## <a name="example"></a>例
 

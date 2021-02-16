@@ -1,37 +1,38 @@
 ---
 title: キーボード ショートカット
-description: 次のキーボード ショートカットは、データを短時間および効率的にに入力するのに役立ちます。
+description: このトピックでは、Finance and Operations アプリを操作するときに使用できるショートカットキーの概要を示し ます。
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811558"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693728"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
 
-次のキーボード ショートカットは、データを短時間および効率的にに入力するのに役立ちます。
+次のキーボード ショートカットは、Finance and Operations アプリでデータを短時間および効率的にに入力するのに役立ちます。
 
 > [!NOTE]
 > ここで説明するショートカット キーは、米国のキーボード レイアウトのものです。 他のキーボード レイアウト キーは、米国のキーボード キーとまったく同じではない場合があります。
+
+このページのショートカットの一部は *キー コード* です。つまり、必要なアクションをトリガーするために個別に押す必要がある 2 つの連続するキーの組み合わせのセット (コンマで区切ぎる) が必要です。 たとえば、ショートカット "Alt + M、A" は、ユーザーは最初に "Alt+M" を押し、キーを放してから、"A" を押す必要があります。 
 
 ## <a name="finding-a-shortcut"></a>ショートカットの検索
 
@@ -193,7 +194,7 @@ ms.locfileid: "2811558"
 | メインのページの内容に移動する (別のウィンドウにフォーカスがある場合)                    | Alt+M、M                    |
 | 情報ボックス ウィンドウに移動する (開くことも含まれます)                       | Alt+M、B または Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>個人用設定のショートカット
+## <a name="personalization-shortcuts"></a>[個人用設定](personalize-user-experience.md) ショートカット 
 
 | 目的                                                                                                             | キー                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -236,7 +237,21 @@ ms.locfileid: "2811558"
 | ルックアップの行を上下に移動                                                                                        | 上方向キーまたは下方向キー            |
 | ルックアップのページを上下に移動                                                                                       | Page up キーまたは Page down キー              |
 | ルックアップの一番上または下に移動                                                                                    | Home または End                       |
+
+## <a name="task-recorder-shortcuts"></a>[タスク レコーダー](../../dev-itpro/user-interface/task-recorder.md) ショートカット 
+
+| 目的                                                                    |  を押します                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| 記録の停止 (記録中)                                          | Alt+R、S                    |
+| タスク レコーダー ペインの表示を切り替える (記録中)             | Alt+R、T                    |
+| レール モードの切り替え (タスク ガイドの再生中)                                | Alt+R、L                    |
+| 前の手順に移動 (タスク ガイドの再生中)                          | Alt+R、P                    |
+| 次の手順に移動 (タスク ガイドの再生中)                              | Alt+R、N                    |
+| ページとアニメーション化されたポップアップ プロンプトとの間でのフォーカスの切り替え (タスク ガイドの再生中) | Alt+R、F               |
+| アニメーション化されたポップアップ プロンプトの展開/折りたたみ (タスク ガイドの再生中)              | Alt+R、C                    |
+| アニメーション化されたポップアップ プロンプトにより多くの/より少ない情報を表示する (タスク ガイドの再生中) | Alt+R、M                    |
+
 ## <a name="additional-resources"></a>追加リソース
 
-- [[欠落している勘定分析のキーボード ショートカット](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)]
+[欠落している勘定分析のキーボード ショートカット](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 13441
 ms.assetid: eb0fbbaf-07d4-4a02-85e8-0d4f7920a0b9
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 217fa4c2859166510c6633a5614f23832a0cdd5b
-ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
+ms.openlocfilehash: 6a991363847ab1996d07c0ab3c0f7aaf419a9bbf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410402"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680428"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
@@ -40,7 +39,7 @@ ms.locfileid: "3410402"
 トレース パーサーで分析するデータを取得するには、2 つの方法があります。 次のものが含まれます。
 
 -   ローカルのインストールからイベントをキャプチャします。
-    -   **トレースの選択**ウィンドウが開いていない場合、**ファイル** メニューに移動し、**トレースを開く**をクリックします。 **追跡の選択**ウィンドウで、**イベントのキャプチャ**をクリックします。 プロバイダーを選択して、**開始**をクリックします。 Trace Parser ツールは、すべてのプロバイダーのリッスンとイベントのキャプチャを開始します。 **停止およびインポート**をクリックするとキャプチャは停止します。
+    -   **トレースの選択** ウィンドウが開いていない場合、**ファイル** メニューに移動し、**トレースを開く** をクリックします。 **追跡の選択** ウィンドウで、**イベントのキャプチャ** をクリックします。 プロバイダーを選択して、**開始** をクリックします。 Trace Parser ツールは、すべてのプロバイダーのリッスンとイベントのキャプチャを開始します。 **停止およびインポート** をクリックするとキャプチャは停止します。
 -   Logman などのツールを使用してキャプチャされた、既存の ETL(Windows イベント) ファイルを開きます。 
 
     [![開いている Windows イベントのファイルの例](./media/1_desktop.png)](./media/1_desktop.png)
@@ -59,7 +58,7 @@ ms.locfileid: "3410402"
 -   イベントのフィルター処理。
 -   セッション分析メモ。
 
-**呼び出しツリーの表示** **呼び出しツリー**タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
+**呼び出しツリーの表示** **呼び出しツリー** タブを選択すると、すべての X++ メソッドの呼び出しツリーが表示されます。 タブは、次に示します。 
 
 [呼び出しツリー タブ](./media/3_desktop.png)に表示される情報の例 (./media/3_desktop.png) 
 

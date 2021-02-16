@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: be4050f24127491a3b2a57c9b9a0b2163e3f9e52
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 08bbde23cde6dcecea398b84bb3d7f78e2204a71
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019872"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679537"
 ---
-# <a name="ScreenDestinationType">画面出力先</a>
+# <a name="screen-destination"></a>画面出力先
 
 [!include [banner](../includes/banner.md)]
 

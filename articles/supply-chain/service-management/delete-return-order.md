@@ -15,28 +15,28 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe3b56526ec62da18b142cb943d0ef4240e18cee
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08384bd5241c934b2f56ab2b482f5d06f24f0926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431882"
 ---
 # <a name="delete-a-return-order"></a>返品注文の削除 
 
 [!include [banner](../includes/banner.md)]
 
 
-複数の返品注文を削除するには、**返品注文の削除**フォームを使用します。
+複数の返品注文を削除するには、**返品注文の削除** フォームを使用します。
 
-1.  **販売とマーケティング** \> **定期処理** \> **クリーンアップ** \> **返品注文の削除**の順にクリックします。
+1.  **販売とマーケティング** \> **定期処理** \> **クリーンアップ** \> **返品注文の削除** の順にクリックします。
 
-2.  **選択**をクリックして**販売更新**フォームを開きます。
+2.  **選択** をクリックして **販売更新** フォームを開きます。
 
-3.  基準を指定し、**OK**をクリックして**返品注文の削除**フォームに戻ります。 法人で作成した返品注文は、指定した基準に基づいて表示されます。
+3.  基準を指定し、**OK** をクリックして **返品注文の削除** フォームに戻ります。 法人で作成した返品注文は、指定した基準に基づいて表示されます。
 
 4.  削除する返品注文の明細行を選択し、**OK** をクリックします。
 

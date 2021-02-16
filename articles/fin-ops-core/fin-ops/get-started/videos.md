@@ -1,28 +1,27 @@
 ---
 title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
-author: josaw1
+author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: e4756e4d1697fdba40ad8a71a5d33594583a219a
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: 4c34c539428563e69013e60ed3d0403b648c96bc
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456952"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693572"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -82,6 +81,7 @@ ms.locfileid: "3456952"
 - [タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する方法](https://youtu.be/bBr4BXAxTNI)
 - [Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する方法](https://youtu.be/3jIuBleAnQk) 
 - [Regression Suite Automation Tool のチュートリアルを使用する方法](https://youtu.be/uhN9JItzGAk)
+- [Regression Suite Automation Tool (RSAT) 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance に関するビデオ
@@ -124,7 +124,8 @@ ms.locfileid: "3456952"
 - [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
 
 ### <a name="customer-portal"></a>顧客ポータル
-- [Dynamics 365 Supply Chain Management での顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8)
+- [顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8)
+- [顧客を招待して顧客ポータルを登録および使用する](https://youtu.be/drGUYHX9QIQ)
 
 ### <a name="help-system"></a>ヘルプ システム
 
@@ -143,8 +144,11 @@ ms.locfileid: "3456952"
 
 ### <a name="procurement-and-sourcing"></a>調達
 
-- [モバイル デバイスで発注書を承認する](https://youtu.be/gZ-gOlJe7H8)
+- [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)
 - [新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
+
+### <a name="product-information-management"></a>製品情報管理
+- [変更管理機能](https://youtu.be/N313FqvRuBc)
 
 ### <a name="production-control"></a>生産管理
 

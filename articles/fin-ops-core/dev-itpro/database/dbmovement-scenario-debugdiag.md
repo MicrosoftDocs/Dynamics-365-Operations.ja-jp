@@ -3,24 +3,23 @@ title: 生産データベースのコピーのデバッグ
 description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8d3636f464b9f2c58f1f597b9e01446fa110dad0
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.openlocfilehash: 4636fcbb0c83923e30a04397ae35b26e4c0b4389
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456547"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681094"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 
@@ -36,7 +35,7 @@ ms.locfileid: "3456547"
 > * UAT データベースに接続できるように、開発者環境を更新します。
 > * ブレークポイントを設定し、データのデバッグを開始します。
 
-このシナリオの例として、既に稼働している顧客が、開発環境から生産トランザクションの最新のコピーをデバッグしようとしているということがあります。 これにより、顧客は止まっている特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
+このシナリオの例として、既に稼働している顧客が、開発環境から生産トランザクションの最新のコピーをデバッグしようとしていることがあります。 これにより、顧客は止まっている特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -49,24 +48,11 @@ ms.locfileid: "3456547"
 
 この更新操作は、生産データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
 
-## <a name="add-your-ip-address-to-a-safe-list"></a>IP アドレスをセーフ リストに追加します
+## <a name="enable-database-access"></a>データベース アクセスの有効化
 
 既定では、すべてのサンドボックス標準受け入れテスト環境で Microsoft Azure データベース プラットフォームとして SQL データベースを使用します。 このような環境のデータベースは、最初に配置された Application Object Server (AOS) へのアクセスを制限するファイアウォールで保護されています。
 
-ただし、UAT データベースに直接開発環境 (クラウドにホストされているか、または Microsoft が管理) を接続できるように、例外を作ることができます。 開発者環境を UAT データベースに直接接続するには、開発者仮想マシン (VM) で IP アドレスを取得する必要があります。
-
-サンドボックス AOS VM で、Microsoft SQL Server Management Studio (SSMS) を開き、Microsoft Dynamics Lifecycle Services (LCS) で環境の詳細のページから使用できる情報を使用してデータベースに接続します。 ユーザー名レコードで **axdbadmin** を検索し、**{sqlServer\\sqlDatabase}** 形式のサーバーとデータベースに注目します。
-
-SSMS で、SQL Server、ユーザー名、およびパスワードを入力します。 **接続のプロパティ** タブで、LCS の **axdbadmin** レコードから明示的にデータベース名を入力します。
-
-接続したら、データベースに対してクエリを開き、次の Transact-SQL (T-SQL) コマンドで IP アドレスを入力します。
-
-```sql
--- Create database-level firewall setting for IP a.b.c.d 
-EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
-```
-
-開発環境に戻って SSMS を開き、UAT データベースに対して同じ **axdbadmin** 資格情報を使用して接続を試みます。 次の手順に進む前に接続できることを確認します。
+データベースに接続するには、[ジャストインタイム アクセスの有効化](database-just-in-time-JIT-access.md) の手順に従います。
 
 > [!NOTE]
 > 更新を実行するたびにファイアウォールのセーフ リストはリセットされます。 将来の必要なときに、このデータベースに DevTest 環境を追加する必要があります。
@@ -75,7 +61,7 @@ EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment',
 
 開発者環境で、データベース接続を変更するために web.config ファイルを更新する必要があります。 この手順を使用すると、データベースに対して UAT からコンフィギュレーションされたローカル コードとバイナリを実行できます。
 
-サービス ドライブで **AoSService\\WebRoot** ディレクトリに移動します。 (通常は、サービス ドライブはドライブ J または K です)。web.config という名前のファイルを検索し、*バックアップを作成*します。 次に、メモ帳などのエディターで **web.config** ファイルを開き、次の構成を見つけます。
+サービス ドライブで **AoSService\\WebRoot** ディレクトリに移動します。 (通常は、サービス ドライブはドライブ J または K です)。web.config という名前のファイルを検索し、*バックアップを作成* します。 次に、メモ帳などのエディターで **web.config** ファイルを開き、次の構成を見つけます。
 
 - DataAccess.Database
 - DataAccess.DBServer
@@ -97,6 +83,10 @@ LCS で UAT 環境の環境詳細ページから値を使用するように、�
 ## <a name="debug-transactions-in-the-devtest-environment"></a>DevTest 環境でトランザクションをデバッグする
 
 これで、環境が正しく再構成され、Visual Studio を開いてニーズを最も満たすアプリケーション コードでブレークポイントを設定できるようになりました。 UAT 環境のユーザーは、DevTest 環境でのデバッグ中に影響を受けないことに注意してください。
+
+### <a name="debugging-batch"></a>バッチのデバッグ
+
+バッチ・ジョブをデバッグする必要があるシナリオでは、デバッグ DevTest マシン上で、Visual Studio からデバッガーを関連付けるオプションとして表示される前にバッチ・サービスを再起動する必要があります。 さらに、この DevTest マシンを独自のバッチ グループに分離して、デバッグするジョブが DevTest マシンで実行されるようにしておくと便利です。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 

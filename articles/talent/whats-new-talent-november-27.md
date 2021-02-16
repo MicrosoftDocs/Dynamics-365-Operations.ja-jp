@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 1d6b5f5f7b62c400679df5eb014dee05f02e11d0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897491"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461736"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-november-27-2018"></a>Dynamics 365 Talent - Core HR (2018 年 11 月 27 日) の新機能および変更された機能
 
@@ -48,7 +48,7 @@ ms.locfileid: "2897491"
 
 ### <a name="leave-and-absence-error-object-reference-not-set-to-an-instance-of-an-object"></a>休暇と欠勤エラー: オブジェクト参照がオブジェクトのインスタンスに設定されていない
 
-**自分自身に割り当てられた作業項目**リストに休暇と欠勤の記録を承認した後、このエラーを修正するための休暇と欠勤への変更が加えられました。
+**自分自身に割り当てられた作業項目** リストに休暇と欠勤の記録を承認した後、このエラーを修正するための休暇と欠勤への変更が加えられました。
 
 ### <a name="unable-to-recall-an-image-workflow"></a>イメージのワークフローを取り消すことができない
 
@@ -60,5 +60,5 @@ ms.locfileid: "2897491"
 
 ## <a name="known-issue"></a>既知の問題
 
-- **問題**: 作業者に新しい添付ファイルを追加する時、**新規**および**編集**ボタンが灰色表示になります。 
-- **回避策:** 添付ファイル ページを開く前に、**作業者**ページの Factbox が閉じていることを確認します。 **作業者**ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)
+- **問題**: 作業者に新しい添付ファイルを追加する時、**新規** および **編集** ボタンが灰色表示になります。 
+- **回避策:** 添付ファイル ページを開く前に、**作業者** ページの Factbox が閉じていることを確認します。 **作業者** ページが読み込まれる時、FactBoxes が閉じている場合には、添付ファイルボタンが有効になります。 (この問題は次のプラットフォーム更新プログラムで修正されます。)

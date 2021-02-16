@@ -19,29 +19,29 @@ ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832666"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461744"
 ---
 # <a name="track-candidate-sources-in-attract"></a>Attract における候補者のソースの追跡
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE] 
-> このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の**管理者設定**を使用して有効にするよう管理者に依頼してください。 将来のリリースでは、ソース追跡レポートを提供します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。
+> このトピックに記載されている機能は、プレビュー レビュー リリースの一部として、対象とするユーザーが使用可能です。 コンテンツおよび機能は、変更されることがあります。 この機能を使用するには、Attract の **管理者設定** を使用して有効にするよう管理者に依頼してください。 将来のリリースでは、ソース追跡レポートを提供します。 詳細については、[Talent のプレビュー機能の利用](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) を参照してください。
 
 候補者が職務に応募すると、Attract は自動的に申請のソースを追跡し、採用活動に役立つ貴重な情報を提供します。 採用担当者および採用マネージャーは、職務または人材プールに候補者を手動で追加するときに、アプリケーション ソースを選択できます。
 
-アプリケーション ソースは、**活動**タブ下のアプリケーション活動の詳細、および人材プールの**プロファイル**で利用可能なアプリケーション履歴を確認できます。 アプリケーションおよび人材プールの**プロファイル**タブの候補者の詳細から、候補者のプロファイルソースを検索できます。
+アプリケーション ソースは、**活動** タブ下のアプリケーション活動の詳細、および人材プールの **プロファイル** で利用可能なアプリケーション履歴を確認できます。 アプリケーションおよび人材プールの **プロファイル** タブの候補者の詳細から、候補者のプロファイルソースを検索できます。
 
 > [!NOTE] 
 > プロセス テンプレートについては、[包括採用アドオン](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) を参照してください。
 
 ## <a name="pre-configured-sources"></a>構成済みのソース
 
-既定のソース リストには、一般的なアプリケーションソースが含まれています。 **職務ボード**および**ソーシャル ネットワーク**のような、一部のソース タイプには追加のソースの詳細があります。 たとえば、**ソーシャル ネットワーク**には Facebook および Twitter が含まれます。 **照会**ソース タイプでは、参照先として内部従業員を指定することができます。 既定のソース リストには、次の構成済みのソースが含まれます。
+既定のソース リストには、一般的なアプリケーションソースが含まれています。 **職務ボード** および **ソーシャル ネットワーク** のような、一部のソース タイプには追加のソースの詳細があります。 たとえば、**ソーシャル ネットワーク** には Facebook および Twitter が含まれます。 **照会** ソース タイプでは、参照先として内部従業員を指定することができます。 既定のソース リストには、次の構成済みのソースが含まれます。
 
 -   Attract キャリア サイト
 

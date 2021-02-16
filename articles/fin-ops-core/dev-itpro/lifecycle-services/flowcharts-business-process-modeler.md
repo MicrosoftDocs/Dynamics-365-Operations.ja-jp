@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 733800915dd66d9747c485aa4b17f964036837a5
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: fc7636e47964be5c6471b5c5ee8745298b2a1ebf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454800"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680014"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -138,7 +137,7 @@ Visio のダイアグラムなどの未接続のフローチャートは、Finan
 1.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。
 2.  ライブラリを展開し、関連付けられたフローチャート・アイコンを持つ全てのライブラリ・ノードをクリックします。
 3.  **概要** ウィンドウで、**ダイアグラム** を選択し ます。   
-5.  **Visio**タブで、 **アップロード** をクリックしてvisioファイルをアップロードします。
+5.  **Visio** タブで、 **アップロード** をクリックしてvisioファイルをアップロードします。
 
 > [!Note] 
 > 間違ったファイルをアップロードした場合は、既存のファイルを削除し、新たなファイルをアップロードして置き換えてください。

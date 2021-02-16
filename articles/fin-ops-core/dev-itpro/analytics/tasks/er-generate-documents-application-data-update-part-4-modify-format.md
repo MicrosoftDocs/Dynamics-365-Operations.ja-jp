@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142458"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684550"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するための形式の変更
 
@@ -95,16 +94,17 @@ ms.locfileid: "3142458"
 52. [保存] をクリックします。
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>レポートの詳細を記憶するために形式を変更する
+
 1. [形式をモデルにマップ] をクリックします。
 2. [新規] をクリックします。
 3. [定義] フィールドで、ルート項目 「アプリケーション データの更新」 を入力または選択します。
-    * アプリケーション データの更新用  
+    * アプリケーション データの更新用。
 4. [名前] フィールドで、「データを更新するためのマッピング」と入力します。
     * データを更新するためのマッピング  
 5. [保存] をクリックします。
-    * このマッピングは、データ モデル内でイントラスタット レポートの詳細をどのように収集するかを定義します。その構造は、選択したルート項目 「アプリケーション データの更新」 によって指定されます。 これらの詳細と、同じルート項目「アプリケーションデータ更新」を持つモデル マッピングと、方向「指定先」がアプリケーション データの更新に使用されます。 アプリケーション データの更新は、送信するイントラスタット レポートの生成後すぐに開始します。 アプリケーション データの更新は実行時にスキップできますが、データ モデルは空でなければならないことに注意してください (空のレコード リストを含みます)。   
+    * このマッピングは、データ モデル内でイントラスタット レポートの詳細をどのように収集するかを定義します。その構造は、選択したルート項目 「アプリケーション データの更新」 によって指定されます。 これらの詳細と、同じルート項目「アプリケーションデータ更新」を持つモデル マッピングと、方向「指定先」がアプリケーション データの更新に使用されます。 アプリケーション データの更新は、送信するイントラスタット レポートの生成後すぐに開始します。 アプリケーション データの更新は実行時にスキップできますが、データ モデルは空である必要があります (空のレコード リストを含みます)。
 6. [デザイナー] をクリックします。
-    * 送信するイントラスタット レポート形式が、このモデル マッピングのデータ ソースとしてデフォルトで追加されていることに注意してください。  
+    * 送信するイントラスタット レポート形式が、このモデル マッピングのデータ ソースとして既定で追加されます。  
     * 設計されたレポートの要素（データソースとして表示される）を、選択したモデルのルート項目に基づいてフィルターされたデータ モデルの要素にバインドします。  
 7. ツリーで、「アーカイブ ヘッダー」を展開します。
 8. ツリーで、「アーカイブ ヘッダー\アーカイブ明細行」を展開します。
@@ -120,8 +120,8 @@ ms.locfileid: "3142458"
 18. [機能の追加] をクリックします。
 19. ツリーで、「形式」を展開します。
 20. ツリーで、「形式\Declaration: XML Element(Declaration)」を展開します。
-21. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)」を展開します。
-22. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)」を選択します。
+21. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` を展開します。
+22. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` を選択します。
 23. [データ ソースの追加] をクリックします。
 24. [フォーミュラ] フィールドに、「COUNT(format.Declaration.Data.Item)」と入力します。
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ ms.locfileid: "3142458"
 27. ツリーで、「アーカイブ ヘッダー\ファイル名」を選択します。
 28. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)」を選択します。
 29. [バインド] をクリックします。
-30. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)」を選択します。
+30. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` を選択します。
 31. ツリーで、「アーカイブ ヘッダー\アーカイブ明細行\品目番号」を選択します。
 32. [バインド] をクリックします。
-33. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)」を選択します。
+33. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` を選択します。
 34. ツリーで、「アーカイブ ヘッダー\アーカイブ明細行\金額」を選択します。
 35. [バインド] をクリックします。
-36. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)」を選択します。
+36. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` を選択します。
 37. ツリーで、「アーカイブ ヘッダー\アーカイブ明細行\商品 rec id」を選択します。
 38. [バインド] をクリックします。
 39. ツリーで、「アーカイブ ヘッダー\アーカイブ明細行」を選択します。
-40. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)」を選択します。
+40. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` を選択します。
 41. [バインド] をクリックします。
 42. ツリーで、「アーカイブ ヘッダー」を選択します。
-43. ツリーで、「形式\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)」を選択します。
+43. ツリーで、`format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` を選択します。
 44. [バインド] をクリックします。
 45. [保存] をクリックします。
 46. ページを閉じます。
 47. ページを閉じます。
 48. ページを閉じます。
-

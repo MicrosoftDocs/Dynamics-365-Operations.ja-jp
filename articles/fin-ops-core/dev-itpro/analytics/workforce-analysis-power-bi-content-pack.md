@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 263fa2fc97e39b0521407d3fdc5a6d6e3f2ca034
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 5e921b9ca7d46b3365068a5cdcb029396b62a0ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005759"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687354"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>要員指標 Power BI コンテンツ
 
@@ -32,7 +31,7 @@ ms.locfileid: "3005759"
 このトピックでは、**要員指標** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-これらの製品のいずれかを使用する場合、**要員指標** Power BI コンテンツは **人事管理**ワークスペースに表示されます。
+これらの製品のいずれかを使用する場合、**要員指標** Power BI コンテンツは **人事管理** ワークスペースに表示されます。
 
 - Microsoft Dynamics 365 Finance
 - Microsoft Dynamics 365 Human Resources
@@ -58,7 +57,7 @@ ms.locfileid: "3005759"
 
 これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
-必ず、使用している Microsoft Dynamics 365 バージョンに適用される**要員指標** Power BI コンテンツをダウンロードしてください。
+必ず、使用している Microsoft Dynamics 365 バージョンに適用される **要員指標** Power BI コンテンツをダウンロードしてください。
 
 > [!NOTE]
 > Lifecycle Services で使用できる .pbix ファイルは、Finance and Operations アプリにのみ適用されます。

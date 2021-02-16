@@ -3,7 +3,7 @@ title: 顧客ポータルのユーザーの作成と管理
 description: このトピックでは、顧客ポータルのユーザー アカウントを作成し、アクセス権限の設定方法について説明します。
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413983"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528296"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>顧客ポータルのユーザーの作成と管理
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 既定の実装では、ユーザーは顧客ポータルを使用して作成された Web サイトを自分で登録することはできません。 Web サイトにログインして使用するには、ユーザーが管理者で招待されている必要があります。マイクロソフトでは、ユーザーが登録を行う権限を意図的にブロックしています。
 
@@ -30,13 +32,18 @@ ms.locfileid: "3413983"
 
 担当者レコードは、ユーザーが登録した際に自動的に作成されます。 そのため、ユーザーが正しい顧客アカウントとエンティティを選択しない可能性があります。 一方で、招待形式の処理では、招待の送信前に、管理者が正しい顧客アカウントとエンティティを担当者レコードに割り当てることができます。 ユーザーが自分で登録できるようなソリューションのカスタマイズを検討している場合は、想定される結果を必ず考慮してください。
 
+## <a name="video"></a>ビデオ
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+[顧客を招待して、顧客ポータルへの登録と利用を促進する](https://youtu.be/drGUYHX9QIQ)  ビデオ (上記) は、YouTube で利用可能な [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
+
 ## <a name="prerequisite-setup"></a>前提条件の設定
 
-Power Apps ポータルの担当者は、Common Data Service の **担当者**エンティティにレコードとして保存されます。 デュアル書き込みでは、これらのレコードが必要に応じて Microsoft Dynamics 365 Supply Chain Management に同期されます。
+Power Apps ポータルの担当者は、Common Data Service の **担当者** エンティティにレコードとして保存されます。 デュアル書き込みでは、これらのレコードが必要に応じて Microsoft Dynamics 365 Supply Chain Management に同期されます。
 
-![![顧客ポータルの担当者で使用するシステム ダイアグラム](media/customer-portal-contacts.png "顧客ポータルの担当者で使用するシステム ダイアグラム")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![顧客ポータルの担当者で使用するシステム ダイアグラム](media/customer-portal-contacts.png "顧客ポータルの担当者で使用するシステム ダイアグラム")
 
-新たな顧客の招待をする前に、**担当者**エンティティのマッピングがデュアル書き込みで有効化されていることを確認してください。
+新たな顧客の招待をする前に、**担当者** エンティティのマッピングがデュアル書き込みで有効化されていることを確認してください。
 
 ## <a name="the-invitation-process"></a>招待の処理
 
@@ -44,8 +51,8 @@ Power Apps ポータルの担当者は、Common Data Service の **担当者**�
 
 顧客を顧客ポータルに招待する前に、顧客の [担当者レコード ](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) が有効なものであり、次のように設定されていることを確認してください :
 
-1. **会社**フィールドを、Supply Chain Management にて顧客を所属させる法人に設定します。
-2. **顧客番号**フィールドを、Supply Chain Management にて顧客に設定する顧客アカウントの番号に設定します。
+1. **会社** フィールドを、Supply Chain Management にて顧客を所属させる法人に設定します。
+2. **顧客番号** フィールドを、Supply Chain Management にて顧客に設定する顧客アカウントの番号に設定します。
 
 担当者の作成後は、Supply Chain Management でその担当者を表示できるようになります。
 

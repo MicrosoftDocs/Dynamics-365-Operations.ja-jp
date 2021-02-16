@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205555"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432279"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
@@ -54,7 +54,7 @@ ms.locfileid: "3205555"
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>引き取りかんばんのピッキングに向け、倉庫作業を構成
 
-引き取りかんばんの原材料ピッキングを可能にするため、ウェーブ テンプレートや作業テンプレート、**かんばんピッキング** ワーク オーダー タイプの場所ディレクティブを構成します。 この作業の注文タイプは、引き取りかんばんのピッキング プロセスをサポートするだけではありません。 製造かんばんのピッキング プロセスもサポートします。 ただし、ウェーブ テンプレートや作業テンプレート、および場所ディレクティブを分けることで、かんばんのタイプごとに個別のピッキング プロセスを構成することができます。 ウエーブ テンプレートや作業テンプレート、および場所ディレクティブを分けるには、これらのエンティティのクエリ内の活動タイプ (**プロセス**または**転送**) に基準を設定します。
+引き取りかんばんの原材料ピッキングを可能にするため、ウェーブ テンプレートや作業テンプレート、**かんばんピッキング** ワーク オーダー タイプの場所ディレクティブを構成します。 この作業の注文タイプは、引き取りかんばんのピッキング プロセスをサポートするだけではありません。 製造かんばんのピッキング プロセスもサポートします。 ただし、ウェーブ テンプレートや作業テンプレート、および場所ディレクティブを分けることで、かんばんのタイプごとに個別のピッキング プロセスを構成することができます。 ウエーブ テンプレートや作業テンプレート、および場所ディレクティブを分けるには、これらのエンティティのクエリ内の活動タイプ (**プロセス** または **転送**) に基準を設定します。
 
 ## <a name="configure-the-withdrawal-kanban"></a>引き取りかんばんを構成
 

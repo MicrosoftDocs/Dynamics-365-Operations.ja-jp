@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6bc41d6d17fce5ec212cb65a09afbc4a4180b4c2
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6fbf149814dd73681f2f601f18b6ca65c891326d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772349"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681086"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 
@@ -51,10 +50,10 @@ ms.locfileid: "2772349"
 LCS を通して手動でユーザーに通知するには、以下の手順を実行します。
 
 1. LCS で、ターゲット環境の **環境の詳細** ページを開きます。
-2. **管理**\>**オンライン ユーザーにメッセージ**を選択します。
-3. **ダウンタイムに関する新しいメッセージの配信**を選択します。
+2. **管理**\>**オンライン ユーザーにメッセージ** を選択します。
+3. **ダウンタイムに関する新しいメッセージの配信** を選択します。
 4. ローカル タイム ゾーンで有効開始/有効終了の時刻を選択します。
-5. **投稿**を選択します。
+5. **投稿** を選択します。
 
 ### <a name="programmatically-send-a-broadcast-message"></a>プログラムによりブロードキャスト メッセージを送信
 
@@ -119,9 +118,9 @@ public class Program
 
 ## <a name="reconfigure-environment-specific-settings"></a>環境の固有の設定を変更
 
-更新が完了した後、LCS で**サインオフ** ボタンを使用し、操作を閉じます。 その後、環境固有の設定のコンフィギュレーションを開始できます。
+更新が完了した後、LCS で **サインオフ** ボタンを使用し、操作を閉じます。 その後、環境固有の設定のコンフィギュレーションを開始できます。
 
-まず、環境にログインします。LCS の**環境の詳細**ページにある管理者アカウントを使用します。 再設定の標準的な領域を次に示します。 設定およびインストールされている独立系ソフトウェア ベンダー (ISV) ソリューションによっては、追加の再設定が必要です。
+まず、環境にログインします。LCS の **環境の詳細** ページにある管理者アカウントを使用します。 再設定の標準的な領域を次に示します。 設定およびインストールされている独立系ソフトウェア ベンダー (ISV) ソリューションによっては、追加の再設定が必要です。
 
 * **システム管理**\>**設定**\>**バッチ グループ:** 必要なバッチ サーバー グループにさまざまなアプリケーション おぶじぇくと サーバー (AOS) インスタンスを追加します。
 * **システム管理**\>**設定**\>**エンティティ店舗:** Microsoft Power BI レポートに必要なさまざまなエンティティを更新します。

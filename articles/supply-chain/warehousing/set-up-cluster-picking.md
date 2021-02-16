@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367410"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432381"
 ---
 # <a name="set-up-cluster-picking"></a>クラスター ピッキングの設定
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、作業者がモバイル デバイスを使用してピッキング作業をクラスターにグループ化して、複数のワーク オーダーに対して 1 つの場所から品目を同時にピッキングできるようにする方法について説明します。 これは *クラスター ピッキング*と呼ばれます。
+このトピックでは、作業者がモバイル デバイスを使用してピッキング作業をクラスターにグループ化して、複数のワーク オーダーに対して 1 つの場所から品目を同時にピッキングできるようにする方法について説明します。 これは *クラスター ピッキング* と呼ばれます。
 
 ## <a name="about-cluster-picking"></a>クラスター ピッキングについて
 
@@ -79,4 +79,4 @@ ms.locfileid: "3367410"
 
 1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます、**倉庫管理** \> **倉庫管理** \> **設定** \>  **モバイル デバイス** \> **モバイル デバイスのメニュー項目** に移動します。
 
-1. モバイル デバイス メニュー品目から、**作業確認の設定**を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。
+1. モバイル デバイス メニュー品目から、**作業確認の設定** を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。

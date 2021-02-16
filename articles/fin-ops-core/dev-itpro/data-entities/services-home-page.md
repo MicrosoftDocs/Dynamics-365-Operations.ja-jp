@@ -3,26 +3,25 @@ title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90a208599e85646e8a6756bf6d3d0d6d4ec603bc
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 5f76298d621e3d74dfbf1ad85b43b4e2b97fe27e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030883"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685235"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -39,18 +38,18 @@ ms.locfileid: "3030883"
 | SOAP ベースのメタデータ サービス | 有     | いいえ – REST メタデータに置き換えられます |
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
-| SOAP ベース顧客サービス   | 有     | 有                            |
-| JSON ベース顧客サービス   | 無      | 有                            |
+| SOAP ベース カスタム サービス   | 有     | 有                            |
+| JSON ベース カスタム サービス   | 無      | 有                            |
 | OData サービス               | 無      | 有                            |
 | REST メタデータ サービス       | 無      | 有                            |
 
 このトピックは、サービスと、REST メタデータ サービスの認証について説明します。 次のリンクでは、以下のための詳細なドキュメントを提供します。
 
-- [顧客サービスの開発](custom-services.md)
+- [カスタム サービスの開発](custom-services.md)
 - [データ プロトコル (OData) を開く](odata.md)
 
 ## <a name="authentication"></a>認証
-OData サービス、JSON ベース顧客サービス、および REST メタデータ サービスは、標準の OAuth 2.0 認証をサポートします。
+OData サービス、JSON ベース カスタム サービス、および REST メタデータ サービスは、標準の OAuth 2.0 認証をサポートします。
 
 現在のところ、[承認コード付与フロー](https://msdn.microsoft.com/library/azure/dn645542.aspx)と[クライアントの資格情報 (共有シークレットまたは証明書) を使用したサービス間の呼び出し](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)の両方をサポートしています。
 
@@ -70,7 +69,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 以下の図では、クライアントの資格情報 (共有秘密または証明書) を使用したサービス間の呼び出し承認の仕組みを説明します。
 
-![クライアント資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
+![クライアントの資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
 
 ### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 
@@ -93,13 +92,13 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. アプリケーションで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション**の順に移動します。
+1. Finance and Operations アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** の順に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 
     - **クライアント ID** フィールドで、Azure AD に登録したアプリケーション ID を入力します。
-    - **名前**フィールドに、アプリケーションの名前を入力します。
-    - **ユーザー ID** フィールドで、適切なサービス アカウントのユーザー ID を選択します。 この例では、**管理者**ユーザーを選択しました。 ただし、実行する必要がある操作に対して適切なアクセス許可を持つ、専用のサービス アカウントをプロビジョニングすることをお勧めします。
+    - **名前** フィールドに、アプリケーションの名前を入力します。
+    - **ユーザー ID** フィールドで、適切なサービス アカウントのユーザー ID を選択します。 この例では、**管理者** ユーザーを選択しました。 ただし、実行する必要がある操作に対して適切なアクセス許可を持つ、専用のサービス アカウントをプロビジョニングすることをお勧めします。
 
     完了したら、**保存** を選択します。
 

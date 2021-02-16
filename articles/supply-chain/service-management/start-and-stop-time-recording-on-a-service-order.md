@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4c101f6d52366898492b6c9c70fb6cd12edfb9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206637"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431633"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>サービス注文の時刻記録の開始および停止 
 
@@ -34,21 +34,21 @@ ms.locfileid: "3206637"
 
 ## <a name="start-time-recording"></a>時刻記録の開始
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
-2.  **サービス注文**タブをクリックします。**サービス レベル契約**グループの**アクション ウィンドウ**で、**開始**をクリックします。
+2.  **サービス注文** タブをクリックします。**サービス レベル契約** グループの **アクション ウィンドウ** で、**開始** をクリックします。
 
 3.  時刻記録を開始する日時を入力します。
 
 ## <a name="stop-time-recording"></a>時刻記録の停止
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
-2.  **サービス注文**タブをクリックします。**サービス レベル契約**グループの**アクション ウィンドウ**で、**停止**をクリックします。
+2.  **サービス注文** タブをクリックします。**サービス レベル契約** グループの **アクション ウィンドウ** で、**停止** をクリックします。
 
 3.  時刻記録を停止する日時を入力します。
 
-4.  **失効理由を追加**を選択し、**ステージ理由コード**リストで理由コードを選択し、時間記録を停止する理由を指定します。
+4.  **失効理由を追加** を選択し、**ステージ理由コード** リストで理由コードを選択し、時間記録を停止する理由を指定します。
 
 
 > [!NOTE]

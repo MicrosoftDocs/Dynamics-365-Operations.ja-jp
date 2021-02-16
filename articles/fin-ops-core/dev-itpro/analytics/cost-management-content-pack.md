@@ -8,23 +8,22 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771520"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683898"
 ---
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
@@ -35,27 +34,27 @@ ms.locfileid: "2771520"
 **原価管理** Microsoft Power BI コンテンツは、在庫経理担当者または在庫や進行中の作業 (WIP) を担当、または関心を持つ組織の担当者、または標準的な原価差異の分析を担当、または関心を持つ組織の担当者を対象としています。
 
 > [!NOTE]
-> このトピックで説明する**原価管理** Power BI コンテンツは、Dynamics 365 Finance and Operations 8.0 に適用されます。
+> このトピックで説明する **原価管理** Power BI コンテンツは、Dynamics 365 Finance and Operations 8.0 に適用されます。
 > 
-> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 この廃止の詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)を参照してください。
+> AppSource サイトで利用可能な **原価管理** Power BI コンテンツ パックの使用は推奨されていません。 この廃止の詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)を参照してください。
 
 この Power BI コンテンツは、在庫のパフォーマンスを監視し、原価の流れを視覚化するのに役立つカテゴリ化された形式を提供します。 回転資本率、在庫を保持している日数、精度、「ABC分類」などの経営洞察力を、望ましい集計レベル (会社、品目、品目グループ、またはサイト) で得ることができます。 利用可能になった情報は、財務諸表の詳細な補足情報として使用できます。
 
-Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータ ソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理**ワークスペースまたは**原価分析**ワークスペースのどちらでも実行することができます。
+Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータ ソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理** ワークスペースまたは **原価分析** ワークスペースのどちらでも実行することができます。
 
 **CostObjectStatementCache** テーブルを更新するたびに、Power BI ビジュアル化内のデータを更新する前に **CostObjectStatementCacheMonthly** 集計測定を更新する必要があります。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-**原価管理** Power BI コンテンツは、**原価管理**および**コスト分析**ワークスペースで表示されます。
+**原価管理** Power BI コンテンツは、**原価管理** および **コスト分析** ワークスペースで表示されます。
 
-**原価管理**ワークスペースには、次のタブが含まれています。
+**原価管理** ワークスペースには、次のタブが含まれています。
 
 - **概要** – このタブは、アプリケーション データを表示します。
 - **在庫会計ステータス** – このタブでは、Power BI コンテンツが表示されます。
 - **製造会計ステータス** – このタブでは、Power BI コンテンツが表示されます。
 
-**コスト分析**ワークスペースには、次のタブが含まれています。
+**コスト分析** ワークスペースには、次のタブが含まれています。
 
 - **概要** – このタブは、アプリケーション データを表示します。
 - **在庫会計分析** – このタブでは、Power BI コンテンツが表示されます。
@@ -178,7 +177,7 @@ Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に�
 
 | オブジェクト                          | キー集計の測定 | Finance and Operations のデータ ソース | フィールド               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
-| CostObjectStatementCacheMonthly | 量                     | CostObjectStatementCache               | 量              |
+| CostObjectStatementCacheMonthly | 日数                     | CostObjectStatementCache               | 量              |
 | CostObjectStatementCacheMonthly | 件数                   | CostObjectStatementCache               | 数量                 |
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
@@ -193,10 +192,10 @@ Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に�
 | 期末残高数量                | 期末残高数量 = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | 差分変更                         | 差分変更 = SUM(\[AMOUNT\]) |
 | 差分変更数量                    | 差分変更数量 = SUM(\[QTY\]) |
-| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR(\[在庫平均残高\] \<= 0, \[販売在庫または消費の払出\] \>= 0), 0, ABS(\[販売在庫または消費の払出\])/\[在庫平均残高\]) |
+| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR(\[在庫平均残数\] \<= 0, \[Inventory sold or consumed issues\] \> = 0), 0, ABS(\[販売在庫または消費の払出\])/\[在庫平均残数\]) |
 | 在庫平均残高          | 在庫平均残高 = ((\[期末残高\] + \[期首残高\]) / 2) |
 | 手持在庫日数             | 手持在庫日数 = 365 / CostObjectStatementEntries\[金額別の在庫回転率\] |
-| 在庫の正確性                 | 金額ごとの在庫の正確性 = IF(\[期末残高\] \<= 0, IF(OR(\[在庫棚卸金額\] \<\> 0, \[期末残高\] \< 0), 0, 1), MAX(0, (\[期末残高\] - ABS(\[在庫棚卸金額\]))/\[期末残高\])) |
+| 在庫の正確性                 | 金額による在庫の正確度 = IF ( \[終了残数\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0、\[終了残数 \] \< 0)、0、1)、MAX (0, (\[終了残数\] - ABS (\[在庫棚卸\]))/\[終了残数\])) |
 
 以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。
 

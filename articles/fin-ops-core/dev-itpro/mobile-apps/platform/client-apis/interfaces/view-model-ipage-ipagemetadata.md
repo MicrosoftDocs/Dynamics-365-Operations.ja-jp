@@ -1,7 +1,7 @@
 ---
 title: PageMetadata タイプ
 description: PageMetadata タイプ
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80475ac5ccdf6ed91c5719bb3c5ab7d6326d0830
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 290530ac234d0cefe6efb993fb85c50024280dc5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191839"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687302"
 ---
 # <a name="pagemetadata-type"></a>PageMetadata タイプ
 
@@ -28,20 +27,20 @@ ms.locfileid: "2191839"
 
 ### <a name="hierarchy"></a>階層
 
-PageMetadata <br>
+PageMetadata
 
 ## <a name="index"></a>指数
 
 ### <a name="properties"></a>プロパティ
 
 * [コントロール](view-model-ipage-ipagemetadata.md#controls)
-* [Design](view-model-ipage-ipagemetadata.md#design)
+* [デザイン](view-model-ipage-ipagemetadata.md#design)
 * [ID](view-model-ipage-ipagemetadata.md#id)
 * [QuickSubmit](view-model-ipage-ipagemetadata.md#quicksubmit)
 * [SourcePageId](view-model-ipage-ipagemetadata.md#sourcepageid)
 * [SubmitButtonDesign](view-model-ipage-ipagemetadata.md#submitbuttondesign)
 * [仕事](view-model-ipage-ipagemetadata.md#tasks)
-* [タイトル](view-model-ipage-ipagemetadata.md#title)
+* [肩書き](view-model-ipage-ipagemetadata.md#title)
 
 ### <a name="events"></a>イベント
 
@@ -56,10 +55,7 @@ PageMetadata <br>
 
 ### <a name="controls"></a>コントロール
 
-コントロール: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (オプション) 
-
-
-
+コントロール: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)\[\] (オプション) 
 
 ### <a name="design"></a>デザイン
 
@@ -70,7 +66,7 @@ PageMetadata <br>
 
 ### <a name="id"></a>ID
 
-Id: string (オプション) 
+ID: string (オプション) 
 
 
 
@@ -98,7 +94,7 @@ SubmitButtonDesign: [デザイン](view-model-ipage-idesign.md) (省略可)
 
 ### <a name="tasks"></a>仕事
 
-タスク: [PageMetadata](view-model-ipage-ipagemetadata.md)\[\] (省略可) 
+仕事: [PageMetadata](view-model-ipage-ipagemetadata.md)\[\] (オプション) 
 
 
 

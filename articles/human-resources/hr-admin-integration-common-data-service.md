@@ -3,7 +3,7 @@ title: Common Data Service 統合のコンフィギュレーション
 description: Common Data Service と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示し、追跡データをクリアし、エンティティを再同期して、2 つの環境間のデータ問題のトラブルシューティングに役立てることもできます。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431317"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527930"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service 統合のコンフィギュレーション
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Common Data Service と Dynamics 365 Human Resources の統合を有効化また無効化にできます。 また、同期の詳細を表示したり、追跡データをクリアしたり、エンティティを再同期して、2 つの環境間のデータ問題をトラブルシューティングすることもできます。
 
@@ -44,15 +46,15 @@ Common Data Service と Dynamics 365 Human Resources の統合を有効化また
 
 ## <a name="access-the-common-data-service-integration-page"></a>Common Data Service 統合のページにアクセス
 
-1. Common Data Service による統合の設定を表示または構成を希望する Human Resources インスタンスで、**システム管理**のタイルを選択します。
+1. Common Data Service による統合の設定を表示または構成を希望する Human Resources インスタンスで、**システム管理** のタイルを選択します。
 
     [![システム管理のタイル](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
-2. **リンク**タブを選択します。
+2. **リンク** タブを選択します。
 
     [![リンク タブ](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. **統合**で、**Common Data Service 統合**を選択します。
+3. **統合** で、**Common Data Service 統合** を選択します。
 
     [![Common Data Service コンフィギュレーション リンク](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
 
@@ -67,11 +69,14 @@ Common Data Service と Dynamics 365 Human Resources の統合を有効化また
 
 [![Common Data Service 統合を有効化または無効化](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
 
+> [!WARNING]
+> データ移行タスクの実行中は、 Common Data Service 統合をオフにすることを強くお勧めします。 大規模なデータのアップロードはパフォーマンスに大きな影響を与える可能性があります。 たとえば、2000 件の作業者をアップロードすると、統合が有効になっている場合には数時間かかりますが、無効になっている場合は1時間もかかりません。 この例で示している数値は、デモンストレーションの目的でのみ使用されます。 レコードのインポートにかかる正確な時間は、さまざまな要因によって多くの影響を受けます。
+
 ## <a name="view-data-integration-details"></a>データ統合の詳細を表示
 
-**Common Data Service 統合**ページの**管理**クイック タブで、レコードが Human Resources と Common Data Service 間でどのようにリンクされているか確認できます。
+**Common Data Service 統合** ページの **管理** クイック タブで、レコードが Human Resources と Common Data Service 間でどのようにリンクされているか確認できます。
 
-- エンティティのレコードを表示するには、**CDS エンティティ名**フィールドでエンティティを選択します。 グリッドには、選択したエンティティにリンクされているすべてのレコードが表示されます。
+- エンティティのレコードを表示するには、**CDS エンティティ名** フィールドでエンティティを選択します。 グリッドには、選択したエンティティにリンクされているすべてのレコードが表示されます。
 
 [![エンティティのレコードを表示](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
 
@@ -90,7 +95,7 @@ Common Data Service と Dynamics 365 Human Resources の統合を有効化また
 
 Human Resources と Common Data Service 間のデータ同期中に問題が発生した場合、追跡をクリアにして追跡テーブルを再同期させることで、問題を解決できる可能性があります。 アソシエーションを削除し、Common Data Service のレコードを変更または削除する場合、その変更は Human Resources に同期されません。 Human Resources に変更を加える場合、新しい追跡レコードが作成され、レコードは Common Data Service に更新されます。
 
-- Human Resources と Common Data Service 間でレコードのアソシエーションを削除するには、**CDS エンティティ名**フィールドでエンティティを選び、**追跡情報をクリアにする**を選択します。
+- Human Resources と Common Data Service 間でレコードのアソシエーションを削除するには、**CDS エンティティ名** フィールドでエンティティを選び、**追跡情報をクリアにする** を選択します。
 
 [![追跡情報をクリア](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002808"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413836"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>サイトにおける検索エンジン最適化 (SEO) の考慮事項
 
@@ -43,11 +43,11 @@ ms.locfileid: "3002808"
 
 サイトが運用中の場合、すべてのサイト ページが正しくタグ付けされていることを確認する必要があります。 Microsoft Dynamics 365 Commerce は、ページに入力された情報を使用して、ページのすべての SEO 情報を表示します。 カテゴリ ページの概要、リスト ページの概要、および製品ページの概要のモジュールは、この機能を提供します。
 
-検索エンジンのインデックスを最適化するために、レンダリング フレームワークは、Dynamics 365 Commerce およびモジュール固有の情報でコンフィギュレーションされた SEO プロパティからの両方の情報を使用します。 運用中のサイトの場合、robots.txt ファイルによりサイト全体のインデックスを作成することができ、公開したサイト マップ ドキュメントへのリンクを含んでいる必要があります。 **サイトの設定 \> サイト マップの有効化**で、サイト マップ生成の機能をオンにする必要があります。
+検索エンジンのインデックスを最適化するために、レンダリング フレームワークは、Dynamics 365 Commerce およびモジュール固有の情報でコンフィギュレーションされた SEO プロパティからの両方の情報を使用します。 運用中のサイトの場合、robots.txt ファイルによりサイト全体のインデックスを作成することができ、公開したサイト マップ ドキュメントへのリンクを含んでいる必要があります。 **サイトの設定 \> サイト マップの有効化** で、サイト マップ生成の機能をオンにする必要があります。
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>内部プレビュー、制限された対象者、およびすべての対象者に対するページの SEO 設定
 
-Dynamics 365 Commerce は 「What You See Is What You Get」 (WYSIWYG) 認証のプレビューをサポートしているので、作成者は情報がサイト訪問者に表示されるか心配することなく、ページ コンテンツを準備することができます。 ページを公開する必要はあるが、エクスポージャは制限する必要がある場合、検索エンジンでインデックスが作成されないようにするために **NOINDEX** メタ タグが必要です。 ページがすべての対象者に準備されている場合、検索エンジン インデックスの効率を最大にするために、すべての基本的な SEO メタ データが存在する必要があります。 また、**NOLIMIT** メタ タグを削除する必要があります。
+Dynamics 365 Commerce は、ビジュアル ページ ビルダーの「What You See Is What You Get」 (WYSIWYG) 認証のプレビューをサポートしているので、作成者は情報がサイト訪問者に表示されるか心配することなく、ページ コンテンツを準備することができます。 ページを公開する必要はあるが、エクスポージャは制限する必要がある場合、検索エンジンでインデックスが作成されないようにするために **NOINDEX** メタ タグが必要です。 ページがすべての対象者に準備されている場合、検索エンジン インデックスの効率を最大にするために、すべての基本的な SEO メタ データが存在する必要があります。 また、**NOLIMIT** メタ タグを削除する必要があります。
 
 ## <a name="additional-resources"></a>追加リソース
 

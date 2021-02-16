@@ -3,7 +3,7 @@ title: 電子申告における多言語レポートの設計
 description: このトピックでは、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444624"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679705"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 
@@ -33,7 +32,7 @@ ms.locfileid: "3444624"
 
 ビジネス ユーザーとして、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国や地域の法的要件に従って生成されなければならない送信ドキュメントの形式を構成できます。 これらの要件により、送信ドキュメントを国や地域ごとに異なる言語で生成する必要がある場合は、言語依存のリソースを含む 1 つの ER [形式](general-electronic-reporting.md#FormatComponentOutbound) を構成できます。 このようにすると、この形式を再利用してさまざまな国や地域の送信ドキュメントを生成できます。 また、1 つの ER 形式を使用して、対応する顧客、仕入先、関連会社、またはその他の関係者向けに、送信ドキュメントを異なる言語で生成することもできます。
 
-ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider)として 、構成済みの [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)、[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)、および [形式](general-electronic-reporting.md#FormatComponentOutbound) を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
+ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider)として 、構成済みの [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)、[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)、および [形式](general-electronic-reporting.md#FormatComponentOutbound) を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
 
 言語依存のリソースを ER ラベルとして構成できます。 これらのラベルを使用して、ER コンポーネントを次の目的で構成できます:
 

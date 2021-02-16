@@ -10,20 +10,19 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-18-05
+ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: f49285fe18edc8a6fa0bb5b1eed1f0b1de67b3be
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 5542abd97e41887708255eb32739fcb43b806174
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428816"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683348"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -48,7 +47,7 @@ CRT には、次の 3 つの主要なレイヤーがあります。
 
 CRT サービス要求 \< \> 0 以上のワークフロー要求 \< \> 0 以上のデータ アクセス要求
 
-たとえば、複数のワークフローおよびデータ アクセス要求が呼び出されて**販売注文の作成**サービス要求が実行されます。
+たとえば、複数のワークフローおよびデータ アクセス要求が呼び出されて **販売注文の作成** サービス要求が実行されます。
 
 ## <a name="crt-services"></a>CRT サービス
 

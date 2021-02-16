@@ -1,5 +1,5 @@
 ---
-title: データベース ログの構成と管理
+title: データベース ログの構成
 description: このトピックでは、データベース ログの管理について説明します。 データベース ログの設定方法、セキュリティとパフォーマンスの管理方法、およびデータベース ログのクリーンア ップ方法について説明します。
 author: hasaid
 manager: AnnBe
@@ -10,21 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9db0cd6829c606b34dac1b0bc5c4db359e9108a7
-ms.sourcegitcommit: 8bd87814d32dc4941a84b696d821960455265709
+ms.openlocfilehash: 40cd2a76d0328d8542f6cb115f1edc017046aa14
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117058"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683953"
 ---
-# <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
+# <a name="configure-database-logging"></a>データベース ログの構成
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,7 +64,7 @@ ms.locfileid: "3117058"
 
 ## <a name="set-up-database-logging"></a>データベース ログの設定
 
-**ログ データベースの変更**ウィザードを使用して、データベースのログを設定できます。 このウィザードを使用すると、テーブルやフィールドのログを柔軟に設定することができます。
+**ログ データベースの変更** ウィザードを使用して、データベースのログを設定できます。 このウィザードを使用すると、テーブルやフィールドのログを柔軟に設定することができます。
 
 1. **システム管理** \> **設定** \> **データベース** \> **データベース ログの設定** に移動します。
 2. **新規** を選択して、**ログ データベースの変更** ウィザードを開きます。
@@ -85,7 +84,7 @@ ms.locfileid: "3117058"
 
 ## <a name="consistency-check-for-database-log-triggers"></a>データベース ログ トリガーの整合性チェック
 
-プラットフォーム更新プログラム 34 では、整合性チェックをする機能が追加されました。 整合性チェックは、**データベースログ** ウィザードの一環として実行されます。 **完了** を選択した後、**データベース ログの設定** ページの**整合性チェック** を選択した後に実行されます。
+プラットフォーム更新プログラム 34 では、整合性チェックをする機能が追加されました。 整合性チェックは、**データベースログ** ウィザードの一環として実行されます。 **完了** を選択した後、**データベース ログの設定** ページの **整合性チェック** を選択した後に実行されます。
 
 整合性チェックでは、不足しているデータベース ログのトリガーが再作成されます。 また、対応する構成が見つからない孤立したデータベース ログのトリガーも削除されます。 整合性チェックでは、このように現在の構成と、ログ機能の実装に使用するデータベース トリガーとの間に不整合がある場合は、ただちにそれを検出して修正します。
 

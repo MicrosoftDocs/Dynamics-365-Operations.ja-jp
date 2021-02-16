@@ -3,107 +3,82 @@ title: Typescript および小売販売時点管理 (POS) の C# プロキシ
 description: このトピックでは、コマース プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/11/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 862fbd14fb7c57156c8c04b325f340d8384e5171
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 0870f7cb7cc672338bb07e7b72c60090300422ee
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443477"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680376"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce Scale Unit アプリケーション プログラミング インターフェイス (API) の新しいコントローラーを作成するたびに、または既存のコントローラーを拡張するたびに、Retail ソフトウェアの開発キット (SDK) の一部として提供されているツールを使用して、Commerce プロキシを生成する必要があります。 たとえば、顧客コントローラーを拡張することにより、顧客エンティティの新しい API を追加する場合、コマース プロキシを生成する必要があります。
+新しい小売サーバー API を作成する場合は、Retail ソフトウェア開発キット (SDK) の一部として使用できるツールを使用して、Commerce プロキシを生成する必要があります。 たとえば、新しい Retail サーバー API を追加する場合は、Commerce プロキシを生成する必要があります。
 
-## <a name="what-is-the-commerce-proxy-used-for-and-when-should-you-use-it"></a>コマース プロキシは何に使用され、いつ使用するか?
+## <a name="the-commerce-proxy-and-when-to-use-it"></a>Commerce プロキシとそれを使用する場合
 
-すべてのクライアントは Commerce Scale Unit とやりとりするためにプロキシ API を使用します。 コマース プロキシは、Commerce Scale Unit と Commerce Runtime (CRT) 間のインターフェイスを抽象化します。 たとえば、CRT で要求/応答の操作として新しいエンティティとビジネス ロジックを作成し、そのエンティティおよびそれらの要求/応答の操作を公開するために、新しい Commerce Scale Unit API を追加できます。 販売時点管理 (POS) におけるエンティティと要求/応答動作にアクセスして、あるクライアント ロジックを実行する必要が出てきました。 POS ですべてのエンティティと要求/応答メタデータを手動で作成し、適切なパラメーターを使用して Commerce Scale Unit にアクセスすることができます。 ただし、エンティティ、マネージャ、および 2 つの場所で要求/応答コードを複製する必要があり、および多くのコードの書き込みもする必要があるため、このアプローチには追加の間接費が多く含まれます。
+すべてのクライアントは Retail Serve とやりとりするためにプロキシ API を使用します。 Commerce プロキシは、Retail Server と Commerce Runtime (CRT) 間のインターフェイスを抽象化します。 たとえば、CRT で要求/応答の操作として新しいエンティティとビジネス ロジックを作成し、そのエンティティおよびそれらの要求/応答の操作を公開するために、新しい Retail サーバー API を追加できます。 販売時点管理 (POS) におけるエンティティと要求/応答動作にアクセスして、あるクライアント ロジックを実行する必要が出てきました。 POS ですべてのエンティティと要求/応答メタデータを手動で作成し、適切なパラメーターを使用して Retail サーバー API にアクセスすることができます。 ただし、エンティティ、マネージャ、および 2 つの場所で要求/応答コードを複製する必要があり、および多くのコードの書き込みもする必要があるため、このアプローチには追加の間接費が多く含まれます。
 
-コマース プロキシは、Commerce Scale Unit に追加されたすべてのカスタム エンティティと要求/応答操作のプロキシを自動的に作成することによって、この労力を軽減します。 プロキシ ツールは、必須のインターフェイスとすべての必須メタデータを生成し、実際の実装を抽象化します。 この方法では、拡張プロジェクトにファイルを含めることができ、生成されたメタデータとインターフェイスを使用して Commerce Scale Unit API とエンティティにアクセスできます。
+Commerce プロキシは、Retail Server に追加されたすべてのユーザー定義エンティティと要求/応答操作のプロキシを自動的に作成することによって、この労力を軽減します。 プロキシ ツールは、必須のインターフェイスとすべての必須メタデータを生成し、実際の実装を抽象化します。 この方法では、拡張プロジェクトにファイルを含めることができ、生成されたメタデータとインターフェイスを使用して Retail サーバー API とエンティティにアクセスできます。
 
 ## <a name="proxy-types"></a>プロキシのタイプ
 
 クロス プラットフォーム シナリオをサポートするプロキシのタイプには 2 つあります。
 
-- **Typescript プロキシ** – POS は、Typescript プロキシを使用して Commerce Scale Unit API および CRT エンティティにアクセスします。 POS が Commerce Scale Unit を使用する場合は、Typescript プロキシが必要です。 でなければ、POS はオペレーションまたはワークフローのために Commerce Scale Unit と通信することができません。
-- **C# プロキシ** - POS はオフラインのときに C# プロキシを使用します。 (POS がオフラインの場合、Commerce Scale Unit を使用せずに CRT と直接通信します)。POS は、Dynamics 電子商取引プラットフォームにもこのプロキシを使用します。 POS がオフラインのときにカスタマイズを動作させ、電子商取引クライアントが Commerce Scale Unit API にアクセスできるようにするには、C# プロキシを生成する必要があります。
+- **Typescript プロキシ** – POS は、Typescript プロキシを使用して Retail サーバー API および CRT エンティティにアクセスします。 POS が Retail サーバーを使用する場合は、Typescript プロキシが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
+- **C# プロキシ** - POS はオフラインのときに C# プロキシを使用します。 (POS がオフラインの場合、Retail サーバーを使用せずに CRT と直接通信します)。POS は、Dynamics 電子商取引プラットフォームにもこのプロキシを使用します。 カスタマイゼーションを POS がオフラインのときに動作させ、電子商取引クライアントを Retail Server API にアクセスするようにするには、C＃ プロキシを生成する必要があります。
 
 Typescript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 このトピックの後半では、各タイプのプロキシを生成する方法について説明します。
 
-## <a name="generate-the-typescript-proxy"></a>Typescript プロキシを生成します
+## <a name="generate-the-typescript-proxy-10011-or-lower-retail-server"></a>Typescript プロキシ (10.0.11 以前) Retail サーバーの生成
+
+Microsoft Dynamics Commerce バージョン 10.0.12 以降を使用している場合は、[新しい Ratail サーバー拡張機能 API を作成する](retail-server-icontroller-extension.md) で説明している手順に従ってください。
 
 > [!IMPORTANT]
-> 次の手順は Microsoft Dynamics 365 Retail (2017 年 7 月リリース) および Microsoft Dynamics 365 Finance にのみ適用されます。 Retail SDK のルート フォルダから MSBuild を使用する必要があります。 Visual studio の開発者コマンド プロンプト、または MSBuild コマンドプロンプトを使用して、参照フォルダー内のすべてのパッケージを復元してから、プロキシを生成します。 この手順を実行しない場合、RetailSDK\Reference フォルダーに CoreProxyGenerator.exe パッケージを利用できません。
+> Retail SDK ルート フォルダーから MSBuild を実行して、CommerceProxyGenerator.exe パッケージを復元します。 Visual Studio の開発者コマンド プロンプト、または MSBuild コマンド プロンプトを使用して、参照フォルダー内のすべてのパッケージを復元してから、プロキシを生成します。 この手順を実行しないと、RetailSDK\Reference フォルダーで CommerceProxyGenerator.exe パッケージを利用できません。
 
 Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools フォルダーから CommerceProxyGenerator.exe ファイルを使用して、POS の typescript プロキシを生成します。
 
-1. プロキシを生成する前に、カスタマイズした Commerce Scale Unit、CRT、およびその他の依存ライブラリを、**Retail SDK\\Reference** フォルダにコピーします。
-2. 管理者としてコマンド プロンプト ウィンドウを開き、**...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools** フォルダへ移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
+1. プロキシを生成する前に、カスタマイズされた Retail サーバー API、CRT、その他の依存ライブラリを、**Retail SDK\\参照** フォルダーにコピーしてください。
+2. 管理者としてコマンド プロンプト ウィンドウを開き、**...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator\<version_number>\tools** フォルダーへ移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
 
-    ```Console
+  
+  POS Typescript プロキシ
+```Console 
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-    ```
+```
+ 電子商取引の Typescript プロキシ
+ ```Console 
+    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptmoduleextensions
+```
 
 > [!NOTE]
-> \RetailSDK\References\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.<version_number>\build から Microsoft.Dynamics.Retail.RetailServerLibrary.dll ファイルを使用します。
+> Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from \RetailSDK\References\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.<version_number>\build を使用します。
 
 ```Console
-Ex:
+Example
 CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.9.21.20042.5\\build\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
 ```
 
-実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Commerce Scale Unit 拡張ライブラリの名前に置き換えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。
+実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Retail サーバー拡張ライブラリの名前に置き換えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。
 
-> [!NOTE]
-> すべての Commerce Scale Unit 拡張機能のプロキシを生成する必要があります。
-
-## <a name="generate-the-c-proxy-71-and-72"></a>C# プロキシ (7.1 および 7.2) の生成
+## <a name="generate-the-c-proxy-commerce-version-10011-or-lower"></a>C# プロキシ (Commerce バージョン 10.0.11 以下) の生成
 
 > [!IMPORTANT]
-> 7.3 以降のバージョンには、次の手順は適用されません。
-
-1. **Customization.settings** ファイルを **...Retail SDK\\BuildTools** から開きます。
-2. **RetailServerLibraryPathForProxyGeneration** ノードの下には、次に示すように、すべてのカスタム Retail サーバー拡張ライブラリを含めます。
-
-    ```xml
-    <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>;
-    ```
-
-    この例では、カスタム ライブラリは **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** の 1 つだけあります。 ただし、カスタム Retail サーバー拡張ライブラリが含まれるようにします。
-
-3. **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開きます。
-4. カスタム CRT プロジェクト ライブラリを **Proxies.RetailProxy.csproj** への参照として含めます。
-5. ソリューションの **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** を開きます。
-6. **UsingStatements.Extensions.txt** で、CRT エンティティの名前空間および要求/応答の名前空間の **using** ステートメントを追加します。 たとえば、CRT 拡張機能で **Contoso.Commerce.Runtime.DataModel** 名前空間を使用する場合、ここに示すように、追加プロキシを生成するため **UsingStatements.Extensions.txt** にその名前空間を追加します。
-
-    ```csharp
-    using Contoso.Commerce.Runtime.DataModel;
-    ```
-
-7. プロジェクトを構築します。
-8. **アダプタ** フォルダの新しいクラスを追加します。 アダプター フォルダーの他のマネージャー クラスをテンプレートとして使用すると、名前空間全体が含まれます。
-9. インターフェイス マネージャーからクラスを拡張し、必要なインターフェイス メソッドのみを実装します。
-  
-    インターフェイス クラスとマネージャ クラスの生成方法については、Retail SDK の Store Hours サンプルを参照してください。 指示は、**RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** ファイルにあります。
-
-## <a name="generate-the-c-proxy-73"></a>C# プロキシ (7.3) の生成
-
-> [!IMPORTANT]
-> 次の手順は、POS と電子商取引の両方に適用されます。
+> この Microsoft.Dynamics.Commerce.Hosting.Contracts API を使用してビルトされた Retail Server 拡張機能は、オフライン実装でも使用でき、別に C# プロキシ ライブラリを作成する必要はありません。 この手順は、Dynamics.Commerce.Runtime.Hosting.Contracts を使用しない Commerce バージョン 10.0.11 以前、または低またはRetail Server の拡張機能に対してのみ必要です。
 
 Retail サーバー拡張機能ごとに、別個のプロキシを生成する必要があります。
 

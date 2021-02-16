@@ -1,7 +1,7 @@
 ---
 title: DataService タイプ
 description: アプリケーション ワークスペースの下でデータ アクセス機能を提供します。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6cc7cffdad7f10d1be49ae408490b0189bbcf799
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 10ef31bcff5eee93b3f0925ce3d8b34a999e275a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191866"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687853"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 
@@ -95,5 +94,5 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 | フィルタ|any||
 | allowedStaleness|数値||
 
-#### <a name="returns-promise-ltpagedataservices-business-logic-services-ipagedatamdgt"></a>Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt; を返します
+#### <a name="returns-promise-ltpagedatagt"></a>Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt; を返します
 

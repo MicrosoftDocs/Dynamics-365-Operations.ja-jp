@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5dbdb7ed70305de355da436cd7d0fb7de0e8dc41
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 93f2ed89c9b27ae4209e3300a5a447d0fdad5b49
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124831"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685113"
 ---
 # <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 
@@ -81,7 +80,7 @@ ms.locfileid: "3124831"
 
 [削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
+- *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。

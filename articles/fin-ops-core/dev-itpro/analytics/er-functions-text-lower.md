@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6784384bac31d8c7cdc9c6f71b7dbab79c15a934
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: ad971bd78fa1da17be916efcc6857aa32575f7ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041104"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680317"
 ---
-# <a name="LOWER">LOWER ER 関数</a>
+# <a name="lower-er-function"></a>LOWER ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`LOWER` 関数は、小文字に変換した後の*文字列*値として指定されたテキスト返します。
+`LOWER` 関数は、小文字に変換した後の *文字列* 値として指定されたテキスト返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +40,7 @@ LOWER (text)
 
 `text`: *文字列*
 
-*文字列*値は、テキストを指定。
+*文字列* 値は、テキストを指定。
 
 ## <a name="return-values"></a>戻り値
 

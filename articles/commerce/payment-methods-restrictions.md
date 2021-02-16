@@ -20,11 +20,11 @@ ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
 ms.openlocfilehash: dfc49e3c3132fe2687ea71e5da75fe31753d57f9
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023217"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413746"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>レシートのない返品の支払方法の制限
 
@@ -46,11 +46,11 @@ ms.locfileid: "3023217"
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>レシートのない返品の支払方法の制限
 
-各店舗の支払方法について、**店舗管理**ページの**レシートなしの返品**で、**レシートなしの払戻の制限**を**はい**に設定します。 
+各店舗の支払方法について、**店舗管理** ページの **レシートなしの返品** で、**レシートなしの払戻の制限** を **はい** に設定します。 
 
-切替の既定値が**いいえ**である場合は、その支払方法は払戻が許可されていることを保証します。 
+切替の既定値が **いいえ** である場合は、その支払方法は払戻が許可されていることを保証します。 
 
-**レシートなしの払戻の制限**が**はい**に設定されている場合、選択された支払方法は払戻に使用できません。 
+**レシートなしの払戻の制限** が **はい** に設定されている場合、選択された支払方法は払戻に使用できません。 
 
 ![店舗支払方法](media/NoReceiptReturns3.png "小売店舗の支払方法") 
 

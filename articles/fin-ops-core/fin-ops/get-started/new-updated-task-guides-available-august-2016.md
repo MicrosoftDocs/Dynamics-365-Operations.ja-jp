@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fb43be5e57758664c5e17e48db5b9c38630b2ded
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812535"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694992"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>新規または更新されたタスク ガイド (2016 年 8 月)
 
@@ -32,7 +31,7 @@ ms.locfileid: "2812535"
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語) 
 
-APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)、Dynamics AX 2016 年 5 月アプリケーション更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
+APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)、Dynamics AX 2016 年 5 月アプリケーション更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、 [Finance and Operations ホームページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
 ### <a name="data-access"></a>データ アクセス
 
@@ -97,6 +96,6 @@ APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Micros
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
-[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)

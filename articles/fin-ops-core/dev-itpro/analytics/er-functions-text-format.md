@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ae688ef6b24f8d90c0354c8c6449adba1588bfa
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 8b347a7209ee543f6bd687c2864203eb632d6a4a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041081"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688416"
 ---
-# <a name="FORMAT">FORMAT ER 関数</a>
+# <a name="format-er-function"></a>FORMAT ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`FORMAT` 関数は、*N* 番目の引数で **%N** の出現を置き換えることで書式設定した後に、*文字列*値として指定された文字列を返します。
+`FORMAT` 関数は、*N* 番目の引数で **%N** の出現を置き換えることで書式設定した後に、*文字列* 値として指定された文字列を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +40,7 @@ FORMAT (string, argument 1[, argument 2, …, argument N])
 
 `string`: *文字列*
 
-書式設定が必要な*文字列*タイプのデータ ソースを参照。 この引数は必須です。
+書式設定が必要な *文字列* タイプのデータ ソースを参照。 この引数は必須です。
 
 `argument 1`: *文字列*
 
@@ -59,11 +58,11 @@ FORMAT (string, argument 1[, argument 2, …, argument N])
 
 ## <a name="usage-notes"></a>使用上の注意
 
-パラメーターに引数が指定されない場合は、文字列内では **"%N"** として返されます。 *実数*型の値では、既定の文字列変換が小数点第 2 位に制限されます。
+パラメーターに引数が指定されない場合は、文字列内では **"%N"** として返されます。 *実数* 型の値では、既定の文字列変換が小数点第 2 位に制限されます。
 
 ## <a name="example"></a>例
 
-次の図では、**PaymentModel** データ ソースが**顧客**コンポーネントを使用して顧客レコードの一覧を返します。 **ProcessingDate** フィールドを使用して、処理日の値を返します。
+次の図では、**PaymentModel** データ ソースが **顧客** コンポーネントを使用して顧客レコードの一覧を返します。 **ProcessingDate** フィールドを使用して、処理日の値を返します。
 
 <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>
 

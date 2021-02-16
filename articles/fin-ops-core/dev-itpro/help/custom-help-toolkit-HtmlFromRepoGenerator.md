@@ -8,17 +8,16 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 2eea1ea193dc9265827b0fc0c958ae35e349323a
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 30f7703e2f7c46ae49daf3bc0f8a7e7079624686
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367046"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685091"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 

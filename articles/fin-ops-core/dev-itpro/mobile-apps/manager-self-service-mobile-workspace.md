@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c2ad5f30ed0e69df1769eb0379b5da2865d4ce4f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005612"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680973"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
@@ -84,16 +83,16 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペースを使用して、チーム メンバーを表示
-1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、および直属の部下にも表示されます。
-2.  チーム メンバーを選択します。 **チーム メンバーの概要** ページが表示されます。 このページには、チーム メンバーの生年月日や勤続日数と年数、および現在の職位の年数と報酬情報が含まれています。
+1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、およびそのメンバーの直属の部下にも表示されます。
+2.  チーム メンバーを選択します。 **チーム メンバーの概要** ページが表示されます。 このページには、チーム メンバーの生年月日や勤続日数、勤続期間、および現在の職位の年数と報酬情報が含まれています。
 
 ## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペースを使用して、拡張チーム メンバーを表示
-1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、および直属の部下にも表示されます。
+1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、およびそのメンバーの直属の部下にも表示されます。
 1.  **直属の部下** リンクを選択します。 拡張チーム メンバーの一覧が表示されます。
-1.  チーム メンバーを選択します。 **チーム メンバーの概要** ページが表示されます。 このページには、チーム メンバーの生年月日や勤続日数と年数、および現在の職位の年数と報酬情報が含まれています。
+1.  チーム メンバーを選択します。 **チーム メンバーの概要** ページが表示されます。 このページには、チーム メンバーの生年月日や勤続日数、勤続期間、および現在の職位の年数と報酬情報が含まれています。
 
 ## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペースを使用して、チーム メンバーについて称賛を送信
-1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、および直属の部下にも表示されます。
+1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、およびそのメンバーの直属の部下にも表示されます。
 1.  チーム メンバーを選択します。 **チーム メンバーの概要** ページが表示されます。
 1.  **称賛の送信** を選択します。 
 1. 送信する称賛のテキストを入力します。 

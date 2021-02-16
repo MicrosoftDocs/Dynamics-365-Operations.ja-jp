@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, SysRecordTemplateSelect
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 15b7386736a58048ff9d9bc6177c8384188c1b7b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b9c71bab129aeecfdf5c59affece0d665e133979
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142941"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685172"
 ---
 # <a name="use-record-template-to-create-a-new-record"></a>レコード テンプレートを使用した新しいレコードの作成
 
@@ -31,8 +30,8 @@ ms.locfileid: "3142941"
 
 この手順では、USMF という会社を使用します。
 
-1. **ナビゲーション ウィンドウ**で、**モジュール > 固定資産 > 固定資産 > 固定資産**に移動します。
+1. **ナビゲーション ウィンドウ** で、**モジュール > 固定資産 > 固定資産 > 固定資産** に移動します。
 2. **新規** をクリックします。 テンプレートの選択が求められます。 ビジネスのニーズに対応するものを選択します。  
 3. 一覧で、目的のレコードを見つけ、選択します。
-4. **OK**をクリックします。
+4. **OK** をクリックします。
 

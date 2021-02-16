@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 141853
 ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 835f849cf92fd8e017ee6b0d7ba5b5b632f24546
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 3c7c0e8b7edf46cab677d3b8149fdc9509132de5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329928"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682457"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 
@@ -52,13 +51,13 @@ ms.locfileid: "3329928"
 ### <a name="images-for-platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降における画像
 -   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
 -   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **30 x 30 px** ピクセルに収まるように配置します (以下の図を参照してください)。
--   アイコンは、 **白い背景で透明性のあるコンテンツ**となっている必要があります。 
+-   アイコンは、 **白い背景で透明性のあるコンテンツ** となっている必要があります。 
 -   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
 
 ### <a name="images-for-platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前における画像
 -   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
 -   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **21 x 21 px** ピクセルに収まるように配置します (以下の図を参照してください)。
--   アイコンは、 **透明性のある背景で白いコンテンツ**となっている必要があります。
+-   アイコンは、 **透明性のある背景で白いコンテンツ** となっている必要があります。
 -   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
 
 ## <a name="example"></a>例 

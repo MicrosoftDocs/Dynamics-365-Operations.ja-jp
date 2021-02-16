@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad677d1c36ac5159111afdcb5c31aed215d7b0a1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9887d22a513e820c35c51b6c702e2d9d34ab1214
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897744"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529759"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-14-2018"></a>Dynamics 365 Talent - Core HR (2018 年 12 月 14 日) の新機能および変更された機能
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **ビルド 8.1.2085**
 
@@ -39,11 +41,11 @@ ms.locfileid: "2897744"
 
 ### <a name="during-import-submittedbypersonid-field-on-hcmperfjournalentity-is-ignored"></a>インポート中は HcmPerfJournalEntity の SubmittedByPersonId フィールドが無視されます。
 
-業績仕訳帳入力のインポート中およびエクスポート中に、**送信者**フィールドは無視されます。 この変更によって、**インポート/エクスポート**値がエクスポート中のテーブルの値に反映され、インポート時にインポート ファイルで指定された値にシステムが更新されます。
+業績仕訳帳入力のインポート中およびエクスポート中に、**送信者** フィールドは無視されます。 この変更によって、**インポート/エクスポート** 値がエクスポート中のテーブルの値に反映され、インポート時にインポート ファイルで指定された値にシステムが更新されます。
 
 ### <a name="analytics-tab-on-leave-and-absence-workspace-displays-openconnectionerror-error-for-non-system-admin-roles"></a>[休暇と欠勤] ワークスペースの分析タブで、非システム管理者ロールの "OpenConnectionError" エラーを表示
 
-この更新により、**休暇と欠勤**ワークスペースの**分析**タブを開いた時のエラーが表示されなくなりました。
+この更新により、**休暇と欠勤** ワークスペースの **分析** タブを開いた時のエラーが表示されなくなりました。
 
 ### <a name="employee-self-service-position-hierarchy-drill-down-from-tile-fails-to-get-parent-node"></a>従業員セルフ サービス、タイルの失敗から親ノードを取得する職位階層のドリルダウン
 
@@ -63,7 +65,7 @@ ms.locfileid: "2897744"
 
 ### <a name="integration-between-core-hr-and-attract"></a>Core HR と Attract 間の統合
 
-採用候補者に関連する Core HR と Attract の統合を更新するための変更が行われました。 採用候補者を**人材管理**ワークスペースに表示するため、次の Common Data Service エンティティが使用されます。
+採用候補者に関連する Core HR と Attract の統合を更新するための変更が行われました。 採用候補者を **人材管理** ワークスペースに表示するため、次の Common Data Service エンティティが使用されます。
 
 求人応募
 - 状態理由はオファー承諾済に設定する必要があります。
@@ -88,7 +90,7 @@ ms.locfileid: "2897744"
 
 現在表示されている使用可能な残高は、現在までの見越しおよび承認されたすべての休暇申請を含む申請に対して利用可能な休暇の量です。 
 
-予測機能がリリースされると、表示されている残高は、現在までの見越額および申請を含めて、現在の休暇の残高に変更されます。 従業員およびマネージャーの両方が、**休暇**カードと**残高休暇**ウィンドウにある従業員およびマネージャー セルフサービスで更新された残高を参照できます。 **人員**ワークスペースと従業員の**割り当て済の休暇計画**ウィンドウにある更新済みの残高は HR マネージャーが参照できます。
+予測機能がリリースされると、表示されている残高は、現在までの見越額および申請を含めて、現在の休暇の残高に変更されます。 従業員およびマネージャーの両方が、**休暇** カードと **残高休暇** ウィンドウにある従業員およびマネージャー セルフサービスで更新された残高を参照できます。 **人員** ワークスペースと従業員の **割り当て済の休暇計画** ウィンドウにある更新済みの残高は HR マネージャーが参照できます。
 
 ## <a name="known-issue"></a>既知の問題
 
@@ -105,7 +107,7 @@ ms.locfileid: "2897744"
 | -------------------------------|------------------|
 | cdm_description (説明)  | cdm_name (名前)  |
 
-追加のマッピングも追加する必要があります。 最後の**なし**フィールドを選択して、次のマッピングを追加します。
+追加のマッピングも追加する必要があります。 最後の **なし** フィールドを選択して、次のマッピングを追加します。
 
 | ソース フィールド                   | 出力先フィールド    |
 | -------------------------------|----------------------|
@@ -135,13 +137,13 @@ ms.locfileid: "2897744"
 | cdm_emailaddress1 (電子メール アドレス 1)   | cdm_primaryemailaddress (主要な電子メール アドレス |
 | cdm_telephone1 (電話1)          | cdm_primarytelephone (代表電話)       |
 
-性別フィールドの変換は、更新する必要があります。 性別の**fn** (機能) マップを選択し、次の値のマッピングを更新します。
+性別フィールドの変換は、更新する必要があります。 性別の **fn** (機能) マップを選択し、次の値のマッピングを更新します。
 
-| Common Data Service 値                   | Finance and Operations 値                     |
+| Common Data Service の値                   | Finance and Operations の値                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | 男性                                             |
 | 75440001                    | 女性                                           |
-| 75440002                    | なし                                             | 
+| 75440002                    | None                                             | 
 | 75440003                    | 不特定                                      |
 
 更新されたマッピングは、次の画像のようになります。

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 74d5b92f8f8864544e6b333bd957206f02a2503f
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811629"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695092"
 ---
 # <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
 
@@ -641,7 +640,7 @@ APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリー
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 

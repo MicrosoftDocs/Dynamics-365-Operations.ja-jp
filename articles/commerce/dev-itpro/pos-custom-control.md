@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 79f67abdd45d342ee8f09a375c676fee3ec41c9b
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 8922a256989151623e77a38b86dfdaf448a130d0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329831"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681530"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
@@ -44,10 +43,10 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 | POS ビュー                   | カスタム コントロールのサポート | 画面レイアウト デザイナーのサポート |
 |----------------------------|--------------------------|---------------------------------|
 | カート ビュー/トランザクション ページ | 有                      | 有                             |
-| 顧客の詳細表示      | 有                      | 無                              |
-| 製品詳細表示       | 有                      | 無                              |
-| 顧客の追加/編集表示     | はい (仕掛品)   | 無                              |
-| アドレスの追加/編集表示      | はい (仕掛品)   | 無                              |
+| 顧客の詳細表示      | 有                      | 第        条                              |
+| 製品詳細表示       | 有                      | 第        条                              |
+| 顧客の追加/編集表示     | 有    | 第        条                              |
+| アドレスの追加/編集表示      | 有    | 第        条                              |
 
 > [!NOTE]
 > カスタム コントロールは、次の製品バージョンでのみサポートされます。
@@ -56,7 +55,7 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 ## <a name="create-a-custom-control"></a>カスタム コントロールの作成
 
-次の例は、既存の POS ビューの 1 つにカスタム コントロールを追加するために拡張機能を使用する方法を示しています。 この例では、製品の詳細ビューで表示される製品使用可能性についての情報が必要です。 この情報を表示するために、**場所**、**在庫**、**予約**、**注文**の 4 つの列を持つカスタム データ リストを追加します。 同じ手順を使用して、POS ビューにその他のカスタム情報を表示することができます。
+次の例は、既存の POS ビューの 1 つにカスタム コントロールを追加するために拡張機能を使用する方法を示しています。 この例では、製品の詳細ビューで表示される製品使用可能性についての情報が必要です。 この情報を表示するために、**場所**、**在庫**、**予約**、**注文** の 4 つの列を持つカスタム データ リストを追加します。 同じ手順を使用して、POS ビューにその他のカスタム情報を表示することができます。
 
 1. 開発者仮想マシン (VM) で、Microsoft Visual Studio 2015 を起動します。
 2. **ModernPos.sln** ファイルを RetailSDK\\POS から開きます。

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52bc276a4a88971a7214fa09087cb1323b91aaf5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143279"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684263"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
 
@@ -199,7 +198,7 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
 4. [コンフィギュレーションをレポートする] をクリックします。
 5. ツリーで、「支払 (単純化モデル)」を展開します。
 6. ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業)」を展開します。
-7. ツリーで、「支払 (単純化モデル)\BACS (英国の企業)\BACS (英国関税」を選択します。
+7. ツリーで、「支払 (単純化モデル)\BACS (英国の企業)\BACS (英国関税)」を選択します。
 
     Proseware, Inc. が所有する BACS (英国関税) コンフィギュレーションを選択します。  
 

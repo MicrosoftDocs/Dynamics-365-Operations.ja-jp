@@ -20,11 +20,11 @@ ms.author: cbittner
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Retail July 2017 update
 ms.openlocfilehash: c80266a06a3b90dc6be5f3a5dea416b6e7656ed7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004677"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408990"
 ---
 # <a name="client-images-in-pos"></a>POS のクライアント イメージ
 

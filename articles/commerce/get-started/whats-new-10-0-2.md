@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
 ms.openlocfilehash: 2b721ed81dd4568889562936715b2a72c86e7d7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004670"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409261"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a>Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点
 

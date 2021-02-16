@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
+ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace, ProdBOM, ProdJournalTransBOM, ProdBOMCurrent, PmfBOMDesignerEditCoBy, ProdJournalPickingListLineSummary, ProdBOMOverview, PmfCoReqPlanning, EcoResProductProdTypeFormulaNoActiveFormulaFormPart, EcoResItemsMissingActiveRouteVersionFormPart, EcoResItemsProdTypeBOMExpiringBOMFormPart, BOMDesignerBOMVersion, BOMExpandPurch, BOMChangeLine, BOMExpandSales, EcoResItemsProdTypeBOMExpiringRouteFormPart, EngChgEcmBomDesigner, EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmBOMCopyDialog, EngChgEcmBomDesignerEditBom, BOMDesignerFilterDialog, BOMDesignerFilterDialog, BOMPartOf, BOMSetupReportFinish, EcoResItemsMissingActiveBOMVersionFormPart, BOMIdLookup, EcoResProductProdTypeFormulaNoActiveRouteFormPart, BOMExpandPurchRFQ, EngChgCaseRouteTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,15 +16,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a24136c9fad3f1de68158cbd14a60b0ebd147b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211701"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432031"
 ---
 # <a name="bills-of-materials-and-formulas"></a>部品表およびフォーミュラ
 
@@ -35,7 +35,7 @@ ms.locfileid: "3211701"
 <a name="bills-of-materials"></a>部品表
 ------------------
 
-部品表 (BOM) は、製品の製造に必要なコンポーネントを定義します。 コンポーネントは、原材料、半完成製品、または材料のいずれかです。 場合によっては、サービスを BOM 内で参照できます。 ただし、一般的に、BOM は、必要な*原材料リソース* について説明しています。  
+部品表 (BOM) は、製品の製造に必要なコンポーネントを定義します。 コンポーネントは、原材料、半完成製品、または材料のいずれかです。 場合によっては、サービスを BOM 内で参照できます。 ただし、一般的に、BOM は、必要な *原材料リソース* について説明しています。  
 
 製品の作成のために必要な工程とリソースを説明するルートまたは生産フローと BOM を組み合わせた場合、BOM は、製品の見積原価を計算するための基礎になります。  
 
@@ -98,21 +98,21 @@ BOM 明細行は、次の明細行タイプを使用できます。**品目**、
 
 ### <a name="item"></a>品目
 
-直接消費される、さらに展開する必要がないまたはペギングされた供給がない、材料やサービスに対しては、**品目**明細行タイプを選択します。
+直接消費される、さらに展開する必要がないまたはペギングされた供給がない、材料やサービスに対しては、**品目** 明細行タイプを選択します。
 
 ### <a name="phantom"></a>ファントム
 
-BOM 明細行に含まれる低レベルの BOM 品目を展開する場合は、**ファントム**明細行タイプを選択します。 マスター スケジューリングの場合、予定原価の計算では、**ファントム**タイプの BOM 明細行を使用する製造オーダーの見積で、ファントム BOM をもつ製品バリアントを参照する親 BOM 明細行が、その製品バリアントに適用できる有効な BOM バージョンによって決定される BOM で BOM 明細行として表示されているコンポーネント品目と置き換えられます。 製品バリアントが適用できる有効な工順を持つ場合、その工順の工程は親の工順にマージされます。  
+BOM 明細行に含まれる低レベルの BOM 品目を展開する場合は、**ファントム** 明細行タイプを選択します。 マスター スケジューリングの場合、予定原価の計算では、**ファントム** タイプの BOM 明細行を使用する製造オーダーの見積で、ファントム BOM をもつ製品バリアントを参照する親 BOM 明細行が、その製品バリアントに適用できる有効な BOM バージョンによって決定される BOM で BOM 明細行として表示されているコンポーネント品目と置き換えられます。 製品バリアントが適用できる有効な工順を持つ場合、その工順の工程は親の工順にマージされます。  
 
 通常、ファントムは、エンジニアリング プロセスを簡略化するために使用されることに注意してください。 多くのレベルのファントム BOM を広い範囲で使用すると、特に非常に反復的な製造シナリオではパフォーマンスに影響を与えます。 パフォーマンスを改善するには、ファントムの階層が深くなることを避ける必要があります。 代わりに、事前に展開される生産 BOM および工順を使用します。
 
 ### <a name="pegged-supply"></a>ペギングされた供給
 
-BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、**ペギングされた供給**明細行タイプを選択します。 製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。 必要な品目数量が消費する製造オーダーに自動的に引き当てられます。
+BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、**ペギングされた供給** 明細行タイプを選択します。 製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。 必要な品目数量が消費する製造オーダーに自動的に引き当てられます。
 
 ### <a name="vendor"></a>ベンダー
 
-生産プロセスが下請業者を使用し、下請業者にサブ生産や発注書を自動的に作成したい場合は、**仕入先**明細行タイプを選択します。  
+生産プロセスが下請業者を使用し、下請業者にサブ生産や発注書を自動的に作成したい場合は、**仕入先** 明細行タイプを選択します。  
 
 **BOM の外注した工程に関する注記:** 下請業者が実行するサービスや作業は、在庫を追跡されるサービス品目として作成する必要があります。 BOM 明細行として親品目にサービス品目を関連付ける必要があります。 工順には、協力会社の運営ソースに割り当てられる工程を含める必要があります。
 

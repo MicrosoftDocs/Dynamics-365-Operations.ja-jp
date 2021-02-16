@@ -8,22 +8,22 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesQuotationPriceSimulation
+ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 821e35f9c7dbae6bf877fe79d82ec2ef7fe11dc1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212989"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4432265"
 ---
 # <a name="price-simulation"></a>価格のシミュレーション
 
@@ -74,7 +74,7 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 次の表に、見積明細行を示します。
 
-|                            | 計算                          | 結果   |
+|    &nbsp;                  | 計算                          | 結果   |
 |----------------------------|--------------------------------------|----------|
 | 販売数量             | 10 単位 + 12 単位                  | 22 単位 |
 | 販売額 (USD)         | (10 × 15.32) + (12 × 13.75)          | 318.20   |
@@ -84,7 +84,7 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 価格シミュレーションを実行し、すべての見積に 15 パーセントの割引合計、または見積ヘッダーを適用します。 次の表に、価格シミュレーションの実行後の見積の新しい合計を示します。
 
-|                                                      | 計算                               | 結果   |
+|     &nbsp;                                           | 計算                               | 結果   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | 販売数量                                       | 10 単位 + 12 単位                       | 22 単位 |
 | 以前の販売額 (USD)                               | (10 × 15.32) + (12 × 13.75)               | 318.20   |
@@ -105,7 +105,7 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 次の表に、見積明細行を示します。
 
-|                                      | 計算                          | 結果   |
+|      &nbsp;                          | 計算                          | 結果   |
 |--------------------------------------|--------------------------------------|----------|
 | 販売数量                       | 10 単位 + 12 単位                  | 22 単位 |
 | BR-12 の販売額 (USD)         | 10 × 15.32                           | 153.20   |
@@ -123,7 +123,7 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 価格シミュレーションを実行し、BR-12 の単位に 10 パーセントの合計割引を適用します。 次の表に、単一明細行品目に対して価格シミュレーションを実行した後の見積の新しい合計を示します。
 
-|                                                   | 計算                             | 結果   |
+|    &nbsp;                                         | 計算                             | 結果   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | 販売数量                                    | 10 単位 + 12 単位                     | 22 単位 |
 | BR-12 の以前の販売額 (USD)                  | 10 × 15.32                              | 153.20   |

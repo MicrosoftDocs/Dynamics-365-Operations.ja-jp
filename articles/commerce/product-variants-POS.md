@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023205"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413864"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>販売時点管理 (POS) の在庫検索
 
@@ -34,7 +34,7 @@ ms.locfileid: "3023205"
 
 組織間の在庫の正確なリアルタイム表示により、店舗関係者が適切なタイミングで、より優れた顧客サービスを提供できるようにします。 最も重要な時点は、顧客が購入決定をする準備ができている時点です。 製品の出荷や受取を正確に保証できるように、店舗のレジ担当者が、リアルタイムの在庫情報に精通していることが重要です。
 
-**Retail Modern POS** ワークスペースまたは **Retail Cloud POS** ワークスペースから **在庫検索**ページを開くことができます。
+**Retail Modern POS** ワークスペースまたは **Retail Cloud POS** ワークスペースから **在庫検索** ページを開くことができます。
 
 ![POS ホーム ページの在庫検索タイル](media/POSHomepage.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "3023205"
 
 ## <a name="opening-the-dimension-based-matrix-view-to-show-all-variants"></a>すべてのバリアントを表示するマトリックス ビューに基づく分析コードを開く
 
-製品マスターの **製品の詳細**ページ、または**在庫検索** ページで、ページの下部にあるアプリケーション バーから **すべてのバリアントの表示** を選択します。 これらのページからの初期起動に対する **分析コードに基づくマトリックス** ビューは、現在の店舗の製品のすべてのバリアントに対して使用可能な在庫情報を表示します。
+製品マスターの **製品の詳細** ページ、または **在庫検索** ページで、ページの下部にあるアプリケーション バーから **すべてのバリアントの表示** を選択します。 これらのページからの初期起動に対する **分析コードに基づくマトリックス** ビューは、現在の店舗の製品のすべてのバリアントに対して使用可能な在庫情報を表示します。
 
 > [!NOTE]
 > **すべてのバリアントの表示** ボタンは、製品バリアントを持つ品目製品マスターに対してのみ使用できます。 スタンドアロン製品やキットには使用できません。

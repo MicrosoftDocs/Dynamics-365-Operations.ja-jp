@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 18921
 ms.assetid: 8dff2c13-1ea2-4b00-b0cb-0462da2d904b
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1ffe3378dd7f36773668e53bed59bd0716c14fc8
-ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
+ms.openlocfilehash: 7c37dc27a18a708b183f8843f2d5dd45e9be589a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2983743"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683220"
 ---
 # <a name="performance-benchmark-software-development-kit-sdk"></a>パフォーマンス ベンチマーク ソフトウェア開発キット (SDK)
 

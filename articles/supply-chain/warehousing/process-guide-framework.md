@@ -17,11 +17,11 @@ ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: 86a974f949627c69f86f3f76281bb0fb90e893ce
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408684"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -122,7 +122,7 @@ ms.locfileid: "3204966"
 
 ![簡略化された制御フロー](media/control-flow.png)
 
-ユーザーがボタンをクリックして (または、通常は既定のアクションをトリガーする値をスキャンして) モバイル デバイスでアクションを実行すると、要求は同じルートを経由して **ProcessGuideController** クラス内の **createResponse()** メソッドに到着します。 ただし、このとき、コントローラーはセッション状態情報から、ユーザーがいるステップを知ります。 したがって、適切な **ProcessGuideStep** クラスのインスタンスを作成し、実行メソッドを呼び出します。 同様に、**ProcessGuideStep**はユーザーによって呼び出されるアクション名を読み取り、適切な **ProcessGuideAction** クラスをインスタンス化して **execute()** を呼び出します。
+ユーザーがボタンをクリックして (または、通常は既定のアクションをトリガーする値をスキャンして) モバイル デバイスでアクションを実行すると、要求は同じルートを経由して **ProcessGuideController** クラス内の **createResponse()** メソッドに到着します。 ただし、このとき、コントローラーはセッション状態情報から、ユーザーがいるステップを知ります。 したがって、適切な **ProcessGuideStep** クラスのインスタンスを作成し、実行メソッドを呼び出します。 同様に、**ProcessGuideStep** はユーザーによって呼び出されるアクション名を読み取り、適切な **ProcessGuideAction** クラスをインスタンス化して **execute()** を呼び出します。
 
 **ProcessGuideAction** クラスは、特定のアクションを実行することを担当しますが、2 つの重要な例外があります。
 
@@ -159,7 +159,7 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 ```
 
 > [!NOTE]
-> クラスの名前付けパターンは、**\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller** です。 これは、コントローラー クラスに使用されるパターンであり、その他のクラスを拡張するためのものです。
+> クラスの名前付けパターンは、**\<FunctionalArea\>ProcessGuide\<Businessprocessname\>コントローラー** です。 これは、コントローラー クラスに使用されるパターンであり、その他のクラスを拡張するためのものです。
 
 
 ## <a name="building-the-first-step"></a>最初のステップの作成
@@ -324,7 +324,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> このトピックでは、X + + メソッドに対して同じソースコードをアプリケーションエクスプローラーを使用して検索できます。 クラス名をフィルター処理し、クラス名を右クリックして **コードの表示**を選択します。
+> このトピックでは、X + + メソッドに対して同じソースコードをアプリケーションエクスプローラーを使用して検索できます。 クラス名をフィルター処理し、クラス名を右クリックして **コードの表示** を選択します。
 
 ### <a name="step-3-start-the-production-order"></a>ステップ 3: 製造オーダーを開始する
 

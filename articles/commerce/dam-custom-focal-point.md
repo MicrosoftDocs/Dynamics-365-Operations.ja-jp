@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af922e857e6bd7a58c0b9891939c8265568b549b
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269524"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594335"
 ---
 # <a name="customize-image-focal-points"></a>画像の焦点のカスタマイズ
 
@@ -39,17 +39,17 @@ ms.locfileid: "3269524"
 
 画像のカスタム焦点を定義するには、次の手順に従います。
 
-1. Commerce サイト ビルダーの左側のナビゲーション ウィンドウで、**メディア ライブラリー**を選択します。
+1. Commerce サイト ビルダーの左側のナビゲーション ウィンドウで、**メディア ライブラリー** を選択します。
 1. メイン ウィンドウで、変更する画像を選択します。
 1. コマンド バーで、**編集** を選択します。
-1. 画像を選択して、**編集モード**を入力します。
-1. **編集モード**で、**焦点を変更**を選択します。 画像上に、円形の焦点コントロールが表示されます。
+1. 画像を選択して、**編集モード** を入力します。
+1. **編集モード** で、**焦点を変更** を選択します。 画像上に、円形の焦点コントロールが表示されます。
 1. 焦点コントロールを選択して、目的の焦点の上に移動します。
-1. 完了したら、コマンド バーで**保存**を選択し、**編集完了**を選択します。
+1. 完了したら、コマンド バーで **保存** を選択し、**編集完了** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[資産管理の概要をデジタル化](dam-overview.md)
+[デジタル資産管理の概要](dam-overview.md)
 
 [画像のアップロード](dam-upload-images.md)
 
@@ -58,3 +58,5 @@ ms.locfileid: "3269524"
 [ファイルのアップロード](dam-upload-files.md)
 
 [画像のトリミング](dam-crop-images.md)
+
+[静的ファイルのアップロードと提供](upload-serve-static-files.md)

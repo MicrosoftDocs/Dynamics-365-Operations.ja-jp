@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: e1801991077d65b2aa331ed83871bfda6df103f6
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: 0898649f066cc2b77803733e0cde273eb5d5da57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100246"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687862"
 ---
 # <a name="reconfigure-environments-to-take-a-new-platform-or-topology"></a>新しいプラットフォームまたはトポロジを使用するために環境を再構成
 
@@ -35,11 +34,11 @@ ms.locfileid: "3100246"
 
 ## <a name="reconfigure-your-environment"></a>環境の再構成
 
-1. Lifecycle Services (LCS) で、オンプレミスのプロジェクトに移動し、**環境**ブレードを開きます。 
+1. Lifecycle Services (LCS) で、オンプレミスのプロジェクトに移動し、**環境** ブレードを開きます。 
 
 2. 新しい配置を再設定するかどうかに基づいて、次のいずれかを実行します。
 
-- 環境を再構成する場合は、**再構成**をクリックします。
+- 環境を再構成する場合は、**再構成** をクリックします。
 - 新しい展開またはトポロジーを使用する必要がある場合は、使用しているプラットフォーム用の新しいトポロジーを選択し、環境名を入力します。 同じ名前を使用したり、新しい名前を入力することができます。 
   
-3. **詳細設定**をクリックし、コンフィギュレーションを更新します。 以前の展開の設定が保存されます。 
+3. **詳細設定** をクリックし、コンフィギュレーションを更新します。 以前の展開の設定が保存されます。 

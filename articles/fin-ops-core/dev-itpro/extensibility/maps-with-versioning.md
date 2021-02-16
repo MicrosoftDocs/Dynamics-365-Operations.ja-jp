@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: cb15f492b8ba2f6341babb95e1ca6ceeabdfdb1e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f03c5b687504f81cb6c57927e68de5df1f6a0701
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248828"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408840"
 ---
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 
@@ -34,7 +33,7 @@ ms.locfileid: "2248828"
 
 ![VersioningPurchaseOrder](media/MapsWithVersioning1.png)
 
-コピーする新しいフィールドを指定できるようにするため、**PurchLineMap**テーブル マップ ロジックとその使用がリファクタリングされています。 コピー ロジックが **PurchLineVersioning** 移動されているため、**VersioningPurchaseOrder** クラスは**PurchLineMap** テーブルマップの代わりに、**PurchLineVersioning** を参照します。 **PurchLineVersioning** クラスは、フィールドをコピーするロジックや、**PurchLineIVersioningFieldSet**インターフェイス を実行するクラスからの確認が必須かどうかを決定するロジックを委任します。 インターフェイスを実装する各クラスは、コピーするフィールドを指定するテーブル マップに関連付けられます。
+コピーする新しいフィールドを指定できるようにするため、**PurchLineMap** テーブル マップ ロジックとその使用がリファクタリングされています。 コピー ロジックが **PurchLineVersioning** 移動されているため、**VersioningPurchaseOrder** クラスは **PurchLineMap** テーブルマップの代わりに、**PurchLineVersioning** を参照します。 **PurchLineVersioning** クラスは、フィールドをコピーするロジックや、**PurchLineIVersioningFieldSet** インターフェイス を実行するクラスからの確認が必須かどうかを決定するロジックを委任します。 インターフェイスを実装する各クラスは、コピーするフィールドを指定するテーブル マップに関連付けられます。
 
 **PurchLineDictVersioning** クラスは、リフレクションを使用して **PurchLineIVersioningFieldSet** オブジェクトをインスタンス化します。 **PurchLineDictVersioning** クラスは、コピーする必要があるフィールドのセット全体を収集します。 フィールドデータは、**PurchLineIVersioningFieldSet** を実装するクラスに関連付けられているすべてのテーブル マップに基づいて収集されます。 次の図は、新しいクラスとその依存関係を示しています。
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationTypeCopy, EntAssetAttributeType, EntAssetAttributeTypeValue, EntAssetFunctionalLocationType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed333a3064654691966eac3c20626955ada0030
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 469bcb16bb3099ffabdccfb026f0414de0213aaa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205900"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432261"
 ---
 # <a name="maintenance-attribute-types"></a>属性タイプの管理
 
@@ -44,20 +44,20 @@ ms.locfileid: "3205900"
 
 独自の属性タイプを作成できます。 また、**属性タイプ** ページに製品分析コードを転送できます。
 
-1. **資産管理** \> **設定** \> **属性タイプ**選択します。
-2. 属性タイプを初めて設定する場合は、**製品分析コードの作成**を選択し、標準の製品分析コードを自動的に転送します。
-3. **新規作成**を選択して、新しい属性タイプを作成します。
+1. **資産管理** \> **設定** \> **属性タイプ** 選択します。
+2. 属性タイプを初めて設定する場合は、**製品分析コードの作成** を選択し、標準の製品分析コードを自動的に転送します。
+3. **新規作成** を選択して、新しい属性タイプを作成します。
 4. **属性タイプ** フィールドに、属性タイプの名前を入力します。
-5. **説明**フィールドに説明を入力します。
-6. **単位**フィールドで、必要に応じて関連する属性単位を選択します。
-7. **データ型**フィールドで、単位のデータ型を選択します。
-8. データ型として**文字列**を選択した場合は、次の手順に従って属性タイプの値を作成します。
+5. **説明** フィールドに説明を入力します。
+6. **単位** フィールドで、必要に応じて関連する属性単位を選択します。
+7. **データ型** フィールドで、単位のデータ型を選択します。
+8. データ型として **文字列** を選択した場合は、次の手順に従って属性タイプの値を作成します。
 
-    1. 属性タイプを選択し、**値**を選択します。
-    2. **属性値**フィールドで、**新規**を選択します。
+    1. 属性タイプを選択し、**値** を選択します。
+    2. **属性値** フィールドで、**新規** を選択します。
     3. **属性タイプ** フィールドで、属性タイプ (分析コード) を選択します。
-    4. **値**フィールドで、関連する値を入力します。
-    5. **説明**フィールドに説明を入力します。
+    4. **値** フィールドで、関連する値を入力します。
+    5. **説明** フィールドに説明を入力します。
     6. レコードを保存します。
     7. **属性タイプ** ページに戻ります。
 

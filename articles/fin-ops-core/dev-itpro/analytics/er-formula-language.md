@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb1f026b6a83aa8c1de0dc5088940d7377867a8b
-ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
+ms.openlocfilehash: b3f11e91d06f20d1c384c3c2c5cf9326214331ee
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331350"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686272"
 ---
 # <a name="electronic-reporting-formula-language"></a>電子申告の数式言語
 
@@ -97,20 +96,20 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 アルファベットの文字で表されない参照元のデータ ソースの名前のすべての文字は、単一引用符 (') の後に続く必要があります。 参照データ ソースの名前がアルファベットの文字を表さない記号を少なくとも 1 つ含む場合、名前を単一引用符で囲む必要があります。 たとえば、これらアルファベットでない記号は、句読点またはそのほかの書面記号です。 次にいくつか例を挙げます。
 
-- **今日の日付 & 時間**データ ソースは、`'Today''s date & time'` のように ER の式で参照する必要があります。
-- **顧客**データ ソースの **name()** メソッドは、ER 式で `Customers.'name()'` のように参照する必要があります。
+- **今日の日付 & 時間** データ ソースは、`'Today''s date & time'` のように ER の式で参照する必要があります。
+- **顧客** データ ソースの **name()** メソッドは、ER 式で `Customers.'name()'` のように参照する必要があります。
 
 アプリケーション データ ソースのメソッドにパラメーターがある場合は、次の構文を使用して、これらのメソッドを呼び出します。
 
-- **システム** データ ソースの **isLanguageRTL** メソッドが、*文字列*データ型の **EN-US** パラメーターを含む場合、このメソッドは ER 式で `System.isLanguageRTL("EN-US")` として参照する必要があります。
+- **システム** データ ソースの **isLanguageRTL** メソッドが、*文字列* データ型の **EN-US** パラメーターを含む場合、このメソッドは ER 式で `System.isLanguageRTL("EN-US")` として参照する必要があります。
 - メソッド名に英数字シンボルのみが含まれている場合、引用符は必須ではありません。 ただし、名前にかっこが含まれている場合、テーブルのメソッドに対しては必須です。
 
-**システム** データ ソースが、**グローバル** アプリケーション クラスを参照する ER マッピングに追加されると、式 `System.isLanguageRTL("EN-US ")` は*ブール*値の **FALSE** を返します。 変更された式 `System.isLanguageRTL("AR")` は*ブール*値の **TRUE** を返します。
+**システム** データ ソースが、**グローバル** アプリケーション クラスを参照する ER マッピングに追加されると、式 `System.isLanguageRTL("EN-US ")` は *ブール* 値の **FALSE** を返します。 変更された式 `System.isLanguageRTL("AR")` は *ブール* 値の **TRUE** を返します。
 
 値がこのメソッドのタイプのパラメータに渡される方法を制限することができます。
 
 - このタイプのメソッドに、定数だけを渡すことができます。 定数の値は、デザイン時に定義されます。
-- このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 プリミティブ データ型には、*整数*、*実数*、*ブール値*、および*文字列*が含まれます。
+- このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 プリミティブ データ型には、*整数*、*実数*、*ブール値*、および *文字列* が含まれます。
 
 ## <a name=""></a><a name="Paths">パス</a>
 
@@ -118,7 +117,7 @@ ER フォーミュラ デザイナーはエスケープ シーケンスをサポ
 
 ### <a name="relative-path"></a>相対パス
 
-構成されたデータ ソースのパスが "at" 記号 (@) で始まる場合は、相対パスとなります。 使用される階層ツリー構造の絶対パスの残り部分の代わりに、"at" 記号が表示されます。 次の図は、例を示します。 ここでは、絶対パス `Ledger.'accountingCurrency()'` は、**元帳**データ ソースからの会計通貨値がデータ モデルの**会計通貨**フィールドに入力されることを示します。
+構成されたデータ ソースのパスが "at" 記号 (@) で始まる場合は、相対パスとなります。 使用される階層ツリー構造の絶対パスの残り部分の代わりに、"at" 記号が表示されます。 次の図は、例を示します。 ここでは、絶対パス `Ledger.'accountingCurrency()'` は、**元帳** データ ソースからの会計通貨値がデータ モデルの **会計通貨** フィールドに入力されることを示します。
 
 ![ER モデル マッピング デザイナー ページでの絶対パスの例](./media/ER-FormulaLanguage-AbsolutePath.png)
 

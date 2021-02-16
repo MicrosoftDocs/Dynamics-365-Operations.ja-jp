@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a931980add70ddc003d8a7c1a78f451bacbf57d4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: a4b50782c7a1b69b6953c65d6df155f003028333
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144499"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445336"
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権のコンフィギュレーション
 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 25331
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04254a8f68018e9823cae117c3c0a8cc109934d6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e94d81a1a73e71ac4789d5de75767303610bc993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183422"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685233"
 ---
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 
@@ -67,7 +66,7 @@ ms.locfileid: "2183422"
 
 ### <a name="creating-entities-for-specified-types"></a>指定したタイプのエンティティを作成しています
 
-この例では、個別の**個人**および**組織**エンティティを作成します。 **担当者** エンティティのプライマリ データ ソースは DirPerson で、**組織** エンティティのプライマリ データ ソースは DirOrganization です。 この方法は、次のスクリーン ショットに反映されていますが、特別なランタイム コードを記述する必要はありません。
+この例では、個別の **個人** および **組織** エンティティを作成します。 **担当者** エンティティのプライマリ データ ソースは DirPerson で、**組織** エンティティのプライマリ データ ソースは DirOrganization です。 この方法は、次のスクリーン ショットに反映されていますが、特別なランタイム コードを記述する必要はありません。
 
 [![sub7](./media/sub7.png)](./media/sub7.png)
 
@@ -75,18 +74,18 @@ ms.locfileid: "2183422"
 
 ### <a name="creating-entities-for-generalized-types"></a>一般化されたタイプのエンティティを作成しています
 
-この例では、単一のエンティティである**パーティ**を作成して、**個人**および**組織**の両方に使用できます。 プライマリ データ ソースが DirPartyTable で、派生データ ソースが DirPerson と DirOrganization です。 新しいエンティティには、次のようなフィールドが含まれています。
+この例では、単一のエンティティである **パーティ** を作成して、**個人** および **組織** の両方に使用できます。 プライマリ データ ソースが DirPartyTable で、派生データ ソースが DirPerson と DirOrganization です。 新しいエンティティには、次のようなフィールドが含まれています。
 
-- **一般的な属性** -**個人**または**組織**に固有ではない属性 (例: **名前**) これらのフィールドは、DirPartyTable にマップされます。
-- **個人の固有の属性** – **性別**、**配偶者の有無**など。 これらのフィールドは、派生データ ソース DirPartyTable\_DirPerson にマップされます。
+- **一般的な属性** -**個人** または **組織** に固有ではない属性 (例: **名前**) これらのフィールドは、DirPartyTable にマップされます。
+- **個人の固有の属性** – **性別**、**配偶者の有無** など。 これらのフィールドは、派生データ ソース DirPartyTable\_DirPerson にマップされます。
 - **組織に固有の属性** – **OrgNumber**、**ABC** などです。 これらのフィールドは、派生データ ソース DirPartyTable\_DirOrganization にマップされます。
 
 [![sub9](./media/sub9.png)](./media/sub9.png)
 
-デザイン時のタスクとして、ひとつのデータエンティティで基本型と複数の派生型のフィールドをマッピングします。 ただし、実行時に、各派生型が作成されるときを指定する必要があります。 これは、**InstanceRelationType** などのフィールドに基づいても、異なるタイプを表す **String** を使用するように計算カラムを作成もできます。 **関係者**エンティティの例で、**PartyType** 計算列を作成して**個人**および**組織**の派生型を表すことができます。 次のコード スニペットは、このアプローチを示しています。
+デザイン時のタスクとして、ひとつのデータエンティティで基本型と複数の派生型のフィールドをマッピングします。 ただし、実行時に、各派生型が作成されるときを指定する必要があります。 これは、**InstanceRelationType** などのフィールドに基づいても、異なるタイプを表す **String** を使用するように計算カラムを作成もできます。 **関係者** エンティティの例で、**PartyType** 計算列を作成して **個人** および **組織** の派生型を表すことができます。 次のコード スニペットは、このアプローチを示しています。
 
 [![sub10](./media/sub10.png)](./media/sub10.png)
 
-この例では、**関係者**タイプは DirPartyTable の **InstanceRelationType** 列を使用して計算されます。 この方法は、データを読み取るために機能します。 ただし、**作成**または**更新**操作を行うには、タイプに基づいて、データ エンティティの **initializeEntityDataSource** メソッドを上書きするコードを記述する必要があり、およびデータ ソースの実行時コンテキスト バッファに対する派生型の正しいインスタンスを設定する必要があります。
+この例では、**関係者** タイプは DirPartyTable の **InstanceRelationType** 列を使用して計算されます。 この方法は、データを読み取るために機能します。 ただし、**作成** または **更新** 操作を行うには、タイプに基づいて、データ エンティティの **initializeEntityDataSource** メソッドを上書きするコードを記述する必要があり、およびデータ ソースの実行時コンテキスト バッファに対する派生型の正しいインスタンスを設定する必要があります。
 
 [![sub11](./media/sub11.png)](./media/sub11.png)

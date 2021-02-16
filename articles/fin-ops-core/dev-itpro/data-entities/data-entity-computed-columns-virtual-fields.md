@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 505b0f6452bc70aafef3bd7cdac506faa1288fc4
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 43eb7b809a13e26ed74ee14ebfe7067e754c50c7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029439"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684074"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
@@ -34,7 +33,7 @@ ms.locfileid: "3029439"
 
 ## <a name="overview"></a>概要
 
-データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に*マップされていない*フィールドを追加で持つことができます。 マップされていないフィールドの値を生成するメカニズムは次のとおりです。
+データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に *マップされていない* フィールドを追加で持つことができます。 マップされていないフィールドの値を生成するメカニズムは次のとおりです。
 
 - カスタム X++ コード
 - Microsoft SQL Server で実行される SQL
@@ -100,7 +99,7 @@ ms.locfileid: "3029439"
 この例では、**FMCustomerEntity** エンティティに計算フィールドを追加します。 読み取りについては、このフィールドは、顧客の名前と住所を適切な形式に結合します。 書き込みについては、X++ コードは複合値を個別の名前および住所の値に解析し、それからコードが通常の名前や住所フィールドを更新します。
 
 1. Microsoft Visual Studio で、プロジェクトを右クリックし、既存の **FMCustomerEntity** を追加します。
-2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから**開く**をクリックします。
+2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから **開く** をクリックします。
 3. **FMCustomerEntity** のデザイナービューで、 **Fields** ノードを右クリックし、 **New** &gt; **String Unmapped Field** とクリックします。
 
     [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
@@ -110,11 +109,11 @@ ms.locfileid: "3029439"
 
     [![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
 
-6. **FMCustomerEntity** &gt; **メソッド**に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
+6. **FMCustomerEntity** &gt; **メソッド** に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
 7. 次の X++ コードをメソッドに貼り付けます。 このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。
 
     > [!NOTE]
-    > **サーバー**キーワードが必要です。
+    > **サーバー** キーワードが必要です。
 
     ```xpp
     private static server str formatNameAndAddress()   // X++
@@ -155,18 +154,18 @@ ms.locfileid: "3029439"
     > 計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を用意することは簡単です。
 
 8. プロジェクトをリビルドします。
-9. データベースを同期させます。 この手順を忘れないでください。 **Dynamics 365 &gt; データベースの同期 &gt; 同期**に移動することによりこれを実行することができます。
+9. データベースを同期させます。 この手順を忘れないでください。 **Dynamics 365 &gt; データベースの同期 &gt; 同期** に移動することによりこれを実行することができます。
 
 ## <a name="example-create-a-virtual-field"></a>例: 仮想フィールドを作成
 この例では、**FMCustomerEntity** エンティティに仮想フィールドを追加します。 このフィールドには、姓と名の組み合わせとしてフルネームが表示されます。 X++ コードは複合値を生成します。
 
-1. **FMCustomerEntity** エンティティのデザイナーで、**フィールド**ノードを右クリックしてから、**新規 &gt; マップされていない文字列フィールド**をクリックします。
-2. マップされていないフィールドのプロパティ ウィンドウで、**名前**プロパティを **FullName** に設定します。
-3. **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド**が空のままであることを確認します。
+1. **FMCustomerEntity** エンティティのデザイナーで、**フィールド** ノードを右クリックしてから、**新規 &gt; マップされていない文字列フィールド** をクリックします。
+2. マップされていないフィールドのプロパティ ウィンドウで、**名前** プロパティを **FullName** に設定します。
+3. **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド** が空のままであることを確認します。
 
     [![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
 
-4. **FMCustomerEntity** デザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
+4. **FMCustomerEntity** デザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
 5. 次の X++ コードを **postLoad** オーバーライドに貼り付けます。 **postLoad** メソッドが **void** を返すことに注意します。
 
     ```xpp
@@ -182,9 +181,9 @@ ms.locfileid: "3029439"
 6. プロジェクトをコンパイルします。
 
 ## <a name="example-use-a-virtual-field-to-receive-and-parse-an-inbound-field"></a>例: 受信フィールドを受信および解析する仮想フィールドを使用
-外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。 ただし、システムは姓と名を個別に格納します。 このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。 この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。 **更新**が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。
+外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。 ただし、システムは姓と名を個別に格納します。 このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。 この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。 **更新** が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。
 
-1. **FMCustomerEntity** のデザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。
+1. **FMCustomerEntity** のデザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。
 2. 次の X++ コードを **mapEntityToDataSource** メソッドに貼り付けます。
 
     ```xpp
@@ -234,3 +233,8 @@ ms.locfileid: "3029439"
         ttsabort;
     }
     ```
+    
+### <a name="note-on-computed-column-generation-failures"></a>計算列の生成に失敗した場合の注意事項
+計算列の SQL を生成する X++ メソッドが例外をスローした場合、DbSync は例外をキャッチし、**その列の値を `NULL` に設定** して、*警告* を記録します。
+
+開発者は、計算列のメソッドでコンフィギュレーション キーを手動でチェックして、生成に失敗した場合に `NULL` 値がヒットされないようにすることをお勧めします。

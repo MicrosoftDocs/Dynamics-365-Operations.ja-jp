@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59b4dd7a29af739d92a20f6fe55eff9f201fcb6d
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413625"
 ---
 # <a name="create-recommendations-with-demo-data"></a>推奨事項とデモ データの作成
 
@@ -77,11 +77,13 @@ ms.locfileid: "3454559"
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [POS での製品推奨事項の追加](product.md)
 
-[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+[トランザクション画面への推奨事項の追加](add-recommendations-control-pos-screen.md)
 
 [AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
 

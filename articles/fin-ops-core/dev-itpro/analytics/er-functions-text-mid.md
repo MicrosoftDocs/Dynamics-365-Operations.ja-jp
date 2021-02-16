@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fbaf5952222d90a855956fb93713e0f9ef81305
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 1d8a7d2e9beb0fc8724d26de0acaf1d61e3834c6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041035"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680293"
 ---
-# <a name="MID">MID ER 関数</a>
+# <a name="mid-er-function"></a>MID ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`MID` 関数は、指定された位置から始まる指定された文字列から、指定された数の文字を表す*文字列*値を返します。
+`MID` 関数は、指定された位置から始まる指定された文字列から、指定された数の文字を表す *文字列* 値を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +40,15 @@ MID (text, starting position, number of characters)
 
 `text`: *文字列*
 
-文字を返すテキストを指定する*文字列*値。
+文字を返すテキストを指定する *文字列* 値。
 
 `starting position`: *整数*
 
-指定されたテキストから返す必要がある最初の文字の位置を指定する*整数*値。
+指定されたテキストから返す必要がある最初の文字の位置を指定する *整数* 値。
 
 `number of characters`: *整数*
 
-指定された開始位置から始め、返す必要がある文字の数を指定する*整数*値。
+指定された開始位置から始め、返す必要がある文字の数を指定する *整数* 値。
 
 ## <a name="return-values"></a>戻り値
 

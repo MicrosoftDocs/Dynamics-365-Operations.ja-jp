@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb491b1c3eced52f6cfc69e3da028dfed36b823b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a7239bf5f8e53e61c4259abbcbf2ff740f4cef55
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205187"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432022"
 ---
 # <a name="inbound-and-outbound-assets"></a>入庫および出庫資産
 
@@ -40,19 +40,19 @@ ms.locfileid: "3205187"
 
 ## <a name="register-assets-as-inbound"></a>資産を入庫として登録する
 
-1. **資産管理**\>**共通**\>**メンテナンス要求**\>**有効なメンテナンス要求**を選択します。
+1. **資産管理**\>**共通**\>**メンテナンス要求**\>**有効なメンテナンス要求** を選択します。
 2. メンテナンス要求を選択します。
-3. **メンテナンス要求の状態の更新**を選択します。
+3. **メンテナンス要求の状態の更新** を選択します。
 4. **入庫** (または入庫資産用に作成した別のライフサイクル状態) を選択し、**OK** を選択します。
 
 ![資産を入庫として登録する](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>入庫資産を入庫済として登録する
 
-1. **資産管理**\>**共通**\>**入庫/出庫資産**\>**入庫資産**を選択します。
+1. **資産管理**\>**共通**\>**入庫/出庫資産**\>**入庫資産** を選択します。
 2. 資産またはメンテナンス要求を選択します。
-3. **資産の受入**を選択します。
-4. **受入済**フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**入庫資産**リスト ページから削除されます。
+3. **資産の受入** を選択します。
+4. **受入済** フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**入庫資産** リスト ページから削除されます。
 
 ![入庫資産を入庫済として登録する](media/08-manage-maintenance-requests.png)
 
@@ -60,14 +60,14 @@ ms.locfileid: "3205187"
 
 メンテナンス作業または修理作業が完了したら、資産を返却済として登録できます。
 
-1. **資産管理**\>**共通**\>**メンテナンス要求**\>**有効なメンテナンス要求**を選択します。
+1. **資産管理**\>**共通**\>**メンテナンス要求**\>**有効なメンテナンス要求** を選択します。
 2. メンテナンス要求を選択します。
-3. **メンテナンス要求の状態の更新**を選択します。
+3. **メンテナンス要求の状態の更新** を選択します。
 4. **出庫** (または出庫資産用に作成した別のライフサイクル状態) を選択し、**OK** を選択します。
 
 ## <a name="register-outbound-assets-as-delivered"></a>出庫資産を配送済として登録する
 
-1. **資産管理**\>**共通**\>**入庫/出庫資産**\>**出庫資産**を選択します。
+1. **資産管理**\>**共通**\>**入庫/出庫資産**\>**出庫資産** を選択します。
 2. 資産またはメンテナンス要求を選択します。
-3. **資産を配送**を選択します。
-4. **配送済**フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**出庫資産**リスト ページから削除されます。
+3. **資産を配送** を選択します。
+4. **配送済** フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**出庫資産** リスト ページから削除されます。

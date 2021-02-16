@@ -1,7 +1,7 @@
 ---
 title: 行タイプ
 description: 行コントロールは、一覧を構成しています。 リストには、任意の数の行のコントロールが含まれています。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c84660ac4784146b71b73aa4826bc61a2a166ef8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da0d72e256c47e3ffcee27bc8902b2549237dc10
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191850"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688195"
 ---
 # <a name="row-type"></a>行タイプ
 
@@ -74,7 +73,7 @@ headerField: [Control](view-model-control-basecontrol-icontrol-icontrol.md)
 
 
 
-### <a name="hidden"></a>hidden
+### <a name="hidden"></a>非表示
 
 hidden: boolean
 
@@ -95,7 +94,7 @@ isSelected: boolean
 
 
 
-### <a name="item"></a>項目
+### <a name="item"></a>品目
 
 item: any
 
@@ -125,7 +124,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getcontrolbyid"></a>getControlById
 
@@ -141,7 +140,7 @@ getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-ic
 | ---- | ---- | ----------- |
 | id|string|id は valueKey か、またはリスト コントロール メタデータの displayKey になります|
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getcontrolvaluebyid"></a>getControlValueById
 
@@ -166,7 +165,7 @@ getRowHeader(): [Control](view-model-control-basecontrol-icontrol-icontrol.md)
 
 
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 ### <a name="getrowid"></a>getRowId
 

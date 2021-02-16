@@ -10,25 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: RobinARH
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 816fae931392bc2c508077a8066b9b3999116f51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a88494a211ad8400becf84cb99aaced7bea0fed0
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180475"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693892"
 ---
 # <a name="create-a-submittoworkflow-class"></a>SubmitToWorkflow クラスの作成 
 
 [!include [banner](../includes/banner.md)]
 
-ワークフローは、ユーザーがワークフロー ツールバーの**送信**ボタンを選択したときに開始されます。 **送信** ボタンは、ワークフローを有効にするために作成したクラスの **main** メソッドを呼び出すアクション メニュー項目にバインドされます。 このトピックでは、 **SubmitToWorkflow** クラスを作成する方法、およびワークフロー タイプの名前を使用してワークフローを有効にする方法について説明します。
+ワークフローは、ユーザーがワークフロー ツールバーの **送信** ボタンを選択したときに開始されます。 **送信** ボタンは、ワークフローを有効にするために作成したクラスの **main** メソッドを呼び出すアクション メニュー項目にバインドされます。 このトピックでは、 **SubmitToWorkflow** クラスを作成する方法、およびワークフロー タイプの名前を使用してワークフローを有効にする方法について説明します。
 
 ワークフロー コンフィギュレーション IDまたはワークフローのシーケンス 番号を使用してワークフローを有効にすることもできます。 基本的な手順は同じです。 詳細については、 [ワークフローの有効化](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow) を参照してください。
 

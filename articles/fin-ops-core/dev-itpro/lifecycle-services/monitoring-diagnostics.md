@@ -3,26 +3,25 @@ title: Lifecycle Services (LCS) の監視および診断ツール
 description: このトピックでは、管理する Finance and Operations 環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。
 author: meeramahabala
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b2f55f613ccd8cb544999c6df631dfac46fecce8
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 30b3ce059c57267a53f58af3ccc4b591ae0fad6c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117409"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687917"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -61,7 +60,7 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 1. LCS を開き、適切なプロジェクトに移動します。
 2. **環境** セクションで、表示する環境を選択してから **完全な詳細** を選択します。
-3. 環境の詳細ページで、**環境の監視**を選択して、監視および診断ポータルを開きます。 
+3. 環境の詳細ページで、**環境の監視** を選択して、監視および診断ポータルを開きます。 
 
 [![環境の詳細](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
@@ -115,17 +114,17 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 ### <a name="monitoring-dashboard"></a>ダッシュボードの監視
 
-**環境の監視**ページで、**正常性指標** タブを選択して、**監視**ダッシュボードを開きます。 すべてのマシンおよびコンポーネントの正常性指標が収集されます。 これらの正常性メトリックには、CPU 使用率、使用可能なメモリ、1 秒あたりに記録されるエラー、バッチ ハートビートが含まれます。 指標の異常に関する警告が表示されます。 いくつかの警告は自動修復されますが、Microsoft サービス エンジニアリング チームは他の警告の原因を調査し、それらを軽減するアクションを実行します。 特定の領域で何が発生しているかを確認するために正常性モニターを表示することができます。
+**環境の監視** ページで、**正常性指標** タブを選択して、**監視** ダッシュボードを開きます。 すべてのマシンおよびコンポーネントの正常性指標が収集されます。 これらの正常性メトリックには、CPU 使用率、使用可能なメモリ、1 秒あたりに記録されるエラー、バッチ ハートビートが含まれます。 指標の異常に関する警告が表示されます。 いくつかの警告は自動修復されますが、Microsoft サービス エンジニアリング チームは他の警告の原因を調査し、それらを軽減するアクションを実行します。 特定の領域で何が発生しているかを確認するために正常性モニターを表示することができます。
 
 ### <a name="activity-monitoring"></a>活動の監視
 
-**環境の監視**ページで、**活動**タブを選択して、活動監視ツールを使用します。 このツールは、お客様または別のユーザーが特定の期間に実行する内容を表示するストーリー ボード ビューを提供します。 
+**環境の監視** ページで、**活動** タブを選択して、活動監視ツールを使用します。 このツールは、お客様または別のユーザーが特定の期間に実行する内容を表示するストーリー ボード ビューを提供します。 
 
 [![活動タブ](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
-- **ユーザー操作**の図は、環境および SQL 使用率の傾向でさまざまなコンピューターにおけるユーザーの活動を示しています。
+- **ユーザー操作** の図は、環境および SQL 使用率の傾向でさまざまなコンピューターにおけるユーザーの活動を示しています。
 - **ユーザー負荷** セクションは、すべてのシステム ユーザーを示しています。 各グラフには、ユーザーが特定のマシンに費やした時間が示されます。
-- **活動負荷** セクションには、各コンピューターで実行された活動が表示されます。 活動の上にマウス ポインターを移動すると、タプルとして Form:Control:Action が表示されます。 たとえば、このセクションで LedgerJournal:New:Click を見ている場合、そのユーザー A が、新しい仕訳帳入力を作成するため **LedgerJournals** ページを開き**新規**ボタンを選択したのを表示できます。
+- **活動負荷** セクションには、各コンピューターで実行された活動が表示されます。 活動の上にマウス ポインターを移動すると、タプルとして Form:Control:Action が表示されます。 たとえば、このセクションで LedgerJournal:New:Click を見ている場合、そのユーザー A が、新しい仕訳帳入力を作成するため **LedgerJournals** ページを開き **新規** ボタンを選択したのを表示できます。
 - **ユーザー アクティビティ** グリッドには、そのセッション タイムスタンプに基づいて、ユーザーが実行したさまざまな活動が表示されます。
 
 情報ログを絞り込むには、このページで、フィルターを使用できます。 利用可能なフィルタを次に示します。
@@ -135,7 +134,7 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 - **検索用語** – 調査中の問題に基づいて検索を作成します。
 
 > [!NOTE]
-> ページには、既定ではデータが読み込まれません。 ページを表示するために必要なデータをロードするには、期間を選択し、**送信時刻**を選択する必要があります。
+> ページには、既定ではデータが読み込まれません。 ページを表示するために必要なデータをロードするには、期間を選択し、**送信時刻** を選択する必要があります。
 
 > [!IMPORTANT]
 > 活動の監視ツールは 30 日間だけデータを保持します。
@@ -153,6 +152,3 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 監視および診断ポータルには、パフォーマンスの分析を有効にする高度な SQL トラブルシューティングのツールも含まれます。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと似ています。 詳細については、[Lifecycle Services (LCS) でツールを使用したパフォーマンスのトラブルシューティング](performancetroubleshooting.md)を参照してください。
 
-## <a name="other-resources"></a>その他のリソース
-
-- [環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)

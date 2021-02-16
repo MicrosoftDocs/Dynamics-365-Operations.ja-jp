@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214185"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432133"
 ---
 # <a name="merge-inventory-batches"></a>在庫バッチのマージ
 
@@ -95,7 +95,7 @@ ms.locfileid: "3214185"
 |-----------|---------|-----------|---------|
 | 等級     | 3       | 3         | 30      |
 
-ソース バッチの**等級バッチ**属性の属性値は次のようになります。
+ソース バッチの **等級バッチ** 属性の属性値は次のようになります。
 
 | バッチ | 件数 | 属性 | 属性値 |
 |-------|----------|-----------|-----------------|

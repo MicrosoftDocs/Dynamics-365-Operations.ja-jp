@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adeefd08531f59e478efbb45ab294b3bc8216f4c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042161"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679441"
 ---
-# <a name="FILTER">FILTER ER 関数</a>
+# <a name="filter-er-function"></a>FILTER ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`FILTER` 関数は、クエリが変更された後、指定されたリストを*レコード リスト*値として返し、指定された条件でフィルタリングします。
+`FILTER` 関数は、クエリが変更された後、指定されたリストを *レコード リスト* 値として返し、指定された条件でフィルタリングします。
 
 ## <a name="syntax"></a>構文
 
@@ -61,15 +60,15 @@ FILTER (list, condition)
 
 ## <a name="example-1"></a>例 1
 
-**仕入先**が VendTable テーブルを参照する ER データ ソースとして構成されている場合、式 `FILTER (Vendors, Vendors.VendGroup = "40")` は仕入先グループ 40 に属している仕入先のみのリストを返します。
+**仕入先** が VendTable テーブルを参照する ER データ ソースとして構成されている場合、式 `FILTER (Vendors, Vendors.VendGroup = "40")` は仕入先グループ 40 に属している仕入先のみのリストを返します。
 
 ## <a name="example-2"></a>例 2
 
-**仕入先**が VendTable テーブルを参照する ER データ ソースとして構成され、**parmVendorBankGroup** が*文字列*データ型の値を返す ER データ ソースとして構成されている場合、式 `FILTER ( Vendor.'<Relations'.VendBankAccount, Vendor.'<Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)` が特定の銀行グループに属する仕入先のみの一覧を返します。
+**仕入先** が VendTable テーブルを参照する ER データ ソースとして構成され、**parmVendorBankGroup** が *文字列* データ型の値を返す ER データ ソースとして構成されている場合、式 `FILTER ( Vendor.'<Relations'.VendBankAccount, Vendor.'<Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)` が特定の銀行グループに属する仕入先のみの一覧を返します。
 
 ## <a name="example-3"></a>例 3
 
-`SPLIT ("A,B,C", ",")` 式を含む*計算済フィールド* タイプの **DS** データ ソースを入力します。 次に、別の式 `FILTER( DS, DS.Value = "B")` を入力します。 この式を ER フォーミュラ デザイナーに保存しようとすると、次の例外がスローされます。「検証エラー : FILTER 関数のリスト式はクエリ可能ではありません。」
+`SPLIT ("A,B,C", ",")` 式を含む *計算済フィールド* タイプの **DS** データ ソースを入力します。 次に、別の式 `FILTER( DS, DS.Value = "B")` を入力します。 この式を ER フォーミュラ デザイナーに保存しようとすると、次の例外がスローされます。「検証エラー : FILTER 関数のリスト式はクエリ可能ではありません。」
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -20,11 +20,11 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215979"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431838"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
 
@@ -40,7 +40,7 @@ ms.locfileid: "3215979"
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
-利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+利用可能なテンプレートにアクセスするには、[Power Apps 管理者センター](https://preview.admin.powerapps.com/dataintegration)を開きます。 **プロジェクト** を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
 Supply Chain Management から Sales への販売請求書ヘッダーと明細行の同期には、以下のテンプレートと基本的なタスクが使用されます。
 
@@ -73,9 +73,9 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-- **請求書番号**フィールドが**請求書**エンティティに追加され、ページに表示されます。
-- 請求書が Supply Chain Management で作成され、Sales に同期されるため、**販売注文**ページの**請求書の作成**ボタンは非表示になります。 請求書が Supply Chain Management から同期されるため、**請求書**ページは編集できません。
-- Supply Chain Management からの関連請求書が Sales に同期されると、**販売注文状態**値は自動的に**請求済**に変更されます。 さらに、請求書の作成元である販売注文の所有者は、請求書の所有者として割り当てられます。 したがって、販売注文書の所有者は、請求書を表示することができます。
+- **請求書番号** フィールドが **請求書** エンティティに追加され、ページに表示されます。
+- 請求書が Supply Chain Management で作成され、Sales に同期されるため、**販売注文** ページの **請求書の作成** ボタンは非表示になります。 請求書が Supply Chain Management から同期されるため、**請求書** ページは編集できません。
+- Supply Chain Management からの関連請求書が Sales に同期されると、**販売注文状態** 値は自動的に **請求済** に変更されます。 さらに、請求書の作成元である販売注文の所有者は、請求書の所有者として割り当てられます。 したがって、販売注文書の所有者は、請求書を表示することができます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -86,7 +86,7 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 **設定** > **管理** > **システムの設定** > **Sales** の順に移動し、次の設定を使用することを確認します。
 
 - **システム プライジング計算システムの使用** オプションが、**はい** に設定されている。
-- **割引の計算方法**フィールドが、**明細行品目**に設定されている。
+- **割引の計算方法** フィールドが、**明細行品目** に設定されている。
 
 ### <a name="setup-in-the-data-integration-project"></a>データ統合プロジェクトでの設定
 
@@ -102,7 +102,7 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
     
 #### <a name="salesinvoiceline-task"></a>SalesInvoiceLine タスク
 
-- **測定単位**で必要なマッピングが存在することを確認します。
+- **測定単位** で必要なマッピングが存在することを確認します。
 - Supply Chain Management の **SalesUnitSymbol** に必要な値マップが存在することを確認して下さい。
 
     **SalesUnitSymbol** から **Quantity\_** UMO に対して値マップを持つテンプレート値が定義されます。

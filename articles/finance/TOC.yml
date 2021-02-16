@@ -10,12 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: プレビュー サブスクリプションのサインアップ
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: 1 つのバージョンのサービス更新
+            - name: One Version のサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
                 - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+                - name: Dynamics 365 Commerce を含む更新およびカスタム コードのライフサイクルの管理
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
                 - name: ソフトウェアのライフサイクル ポリシー - クラウド
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
@@ -34,7 +36,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: 1 つのバージョンを使用した ISV ソリューションの提供
+                - name: One Version を使用した ISV ソリューションの提供
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: ユーザー受け入れテストの作成と自動化
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -58,7 +60,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: オンプレミス配置の倉庫管理のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: 中国の 21Vianet で運用されている Finance and Operations アプリ
+                - name: 中国で 21Vianet が運用している Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: フランスの Finance and Operations アプリ
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
@@ -70,12 +72,12 @@
                   items:
                     - name: Finance ホーム ページの新機能および変更された機能
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.12 (2020 年 8 月)
-                      href: get-started/whats-new-changed-10-0-12.md
-                    - name: Finance 10.0.11 (2020 年 7 月)
-                      href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (2020 年 5 月)
-                      href: get-started/whats-new-changed-10-0-10.md
+                    - name: Finance 10.0.16 (2021 年 2 月)
+                      href: get-started/whats-new-changed-10-0-16.md
+                    - name: Finance 10.0.15 (2021 年 1 月)
+                      href: get-started/whats-new-changed-10-0-15.md
+                    - name: Finance 10.0.14 (2020 年 11 月)
+                      href: get-started/whats-new-changed-10-0-14.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
@@ -84,11 +86,9 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
             - name: 延期された AX 2012 の機能
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: オンプレミス配置に実装されない機能
-              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
-            - name: 伝票リソース
+            - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
@@ -109,23 +109,23 @@
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: 業務意志決定者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: ビジネス ユーザー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: 実装プロジェクト マネージャー
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: 管理者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: 開発者
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: パートナー販売とマーケティング
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: 機能コンサルタント
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: ソリューション アーキテクト
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: ユーザー インターフェイスの操作
               items:
                 - name: ユーザー インターフェイスの要素
@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: カスタム フィールドの作成と操作
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: PowerApps アプリの埋め込み
+                - name: Power Apps からキャンバス アプリを埋め込む
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: ルックアップを使用した情報の検索
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -180,9 +180,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live の準備
+                - name: Go Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live に関するよく寄せられる質問
+                - name: Go Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: 買掛金勘定
@@ -226,7 +228,19 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: 買掛金勘定の請求書照合検証の設定
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: 仕入先請求書の勘定配布と補助元帳仕訳
+            - name: 仕入先請求書の自動化
+              items:
+                - name: 自動化された仕入先請求プロセスの概要
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: 仕入先請求書の自動化の設定オプション
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: ワークフロー システムに請求書を送信し、製品受領書行を照合
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: 仕入先請求書の自動化の結果を表示
+                  href: accounts-payable/view-automated-vendor-invoice.md
+                - name: 仕入先請求書入力ワークスペース
+                  href: accounts-payable/vendor-invoices-workspace.md
+            - name: 仕入先請求書の勘定配布と補助元帳仕訳入力
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: 仕入先コラボレーションの請求ワークスペース
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: 仕入先請求書の自動化
+            - name: スキャン済みドキュメントの請求書の自動化
               href: accounts-payable/vendor-invoice-automation.md
             - name: ブローカー契約管理
               href: accounts-payable/broker-contract.md
@@ -412,6 +426,8 @@
                   href: accounts-receivable/set-up-collections.md
                 - name: 取立情報の確認
                   href: accounts-receivable/tasks/review-collections-information.md
+                - name: 回収プロセスの自動化
+                  href: accounts-receivable/collections-process-automate.md
                 - name: 与信管理設定
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: 与信管理設定情報
@@ -448,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: 売掛金勘定のエイジング情報の設定および生成
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: 顧客エイジング レポート
+              href: accounts-receivable/customer-aging.md
             - name: 顧客の損金処理仕訳帳の作成
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: 詳細なメモの管理
@@ -704,6 +722,8 @@
               href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
             - name: 派生帳簿による転記
               href: fixed-assets/post-derived-value-models.md
+            - name: 仕訳帳ごとの帳簿数
+              href: fixed-assets/number-books-per-journal.md
             - name: 転記階層への固定資産トランザクションの転記
               href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: 固定資産トランザクションのオプション
@@ -712,6 +732,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: 固定資産の分割
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: 分割後の逓減残高による減価償却
+              href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: 固定資産グループの設定
               href: fixed-assets/tasks/set-up-fixed-asset-groups.md
             - name: 固定資産グループの変更
@@ -756,6 +778,8 @@
                   href: fixed-assets/175-percent-reducing-balance-depreciation.md
                 - name: 200% 逓減残高による減価償却
                   href: fixed-assets/200-percent-reducing-balance-depreciation.md
+                - name: 半年の減価償却規則の方法論
+                  href: fixed-assets/half-year-depreciation-methodology.md
                 - name: 特別償却
                   href: fixed-assets/bonus-depreciation.md
                 - name: 特別償却の設定
@@ -788,11 +812,79 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: 耐用年数定額減価償却
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: 資産リース
+          items:
+            - name: 資産リースのホームページ
+              href: asset-leasing/asset-leasing-homepage.md
+            - name: 資産リースの開始
+              href: asset-leasing/asset-leasing-quick-start.md
+            - name: 資産リースの設定
+              items:
+                - name: 資産リース パラメーターのコンフィギュレーション
+                  href: asset-leasing/config-lease-parameters.md
+                - name: リース帳簿の設定
+                  href: asset-leasing/set-up-lease-books.md
+                - name: リース グループの作成
+                  href: asset-leasing/create-lease-group.md
+                - name: 指標金利の設定
+                  href: asset-leasing/set-up-index-rate-types.md
+                - name: 経費タイプの設定
+                  href: asset-leasing/set-up-expense-types.md
+                - name: リース仕訳帳名の設定
+                  href: asset-leasing/set-up-lease-journal-names.md
+                - name: リース転記勘定の設定
+                  href: asset-leasing/set-up-lease-posting-accts.md
+                - name: 番号順序の割り当て
+                  href: asset-leasing/leasing-number-sequences.md
+                - name: ユーザー ロールの割り当て
+                  href: asset-leasing/lease-user-roles.md
+            - name: 資産リースの管理
+              items:
+                - name: リースの追加またはコピー
+                  href: asset-leasing/add-lease.md
+                - name: 支払請求書の作成
+                  href: asset-leasing/create-payment-invoice.md
+                - name: 使用権資産減価償却の記録
+                  href: asset-leasing/record-rou-asset-depreciation.md
+                - name: 転記されたリース トランザクションの取消
+                  href: asset-leasing/reverse-posted-lease-trans.md
+                - name: リースの調整
+                  href: asset-leasing/adjust-lease.md
+                - name: 使用権資産の減損
+                  href: asset-leasing/impair-rou-asset.md
+                - name: 固定資産へのリースの関連付け
+                  href: asset-leasing/associate-lease-with-fixed-asset.md
+                - name: 外貨でのリースの記録
+                  href: asset-leasing/record-leases-foreign-currency.md
+                - name: 指標金利に関連付けられたリース支払の再評価
+                  href: asset-leasing/revalue-payments-tied-2-index-rate.md
+                - name: リース負債の短期部分の再分類
+                  href: asset-leasing/reclassify-st-lease-liability.md
+                - name: 負債、資産、および経費トランザクションの表示
+                  href: asset-leasing/view-asset-transactions.md
+                - name: 複利間隔機能
+                  href: asset-leasing/compound-interval-functionality.md
+                - name: バッチ内の支払スケジュールの確認
+                  href: asset-leasing/confirm-payment-schedules-in-batch.md
+                - name: バッチ内の月次仕訳入力の作成
+                  href: asset-leasing/create-monthly-journals-batch.md
+                - name: リース転記タイプ
+                  href: asset-leasing/lease-posting-types.md
+                - name: 二重レポート
+                  href: asset-leasing/dual-reporting.md
+                - name: リース ワークフローの設定
+                  href: asset-leasing/set-up-lease-wrkflw.md
+                - name: リース承認ワークフローの使用
+                  href: asset-leasing/use-create-lease-wrkflw.md
+                - name: リース インポート フレームワークでのリースの管理
+                  href: asset-leasing/manage-leases-thru-imprt-framewrk.md
+            - name: 資産リース レポート
+              href: asset-leasing/asset-leasing-rprts.md
         - name: 一般会計
           items:
             - name: 一般会計の概要
               href: general-ledger/general-ledger.md
-            - name: アカウント
+            - name: 勘定
               items:
                 - name: 見越計上の概要
                   href: general-ledger/accruals-overview.md
@@ -808,7 +900,7 @@
                   href: general-ledger/example-posting-definitions.md
                 - name: 自動転記の既定の説明を設定する
                   href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-                - name: 総勘定元帳残高
+                - name: 一般会計残高
                   href: general-ledger/general-ledger-account-balances.md
                 - name: 財務分析コードの定義
                   href: general-ledger/tasks/define-financial-dimensions.md
@@ -848,6 +940,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: 配賦の処理
                   href: general-ledger/process-allocations.md
+                - name: 配賦条件
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: 財務分析コード
                   href: general-ledger/financial-dimensions.md
                 - name: 連結勘定グループおよび追加の連結勘定
@@ -880,6 +974,8 @@
                   href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                 - name: 仕訳元帳タイプ
                   href: general-ledger/ledger-journal-types.md
+                - name: 元帳のコンフィギュレーション
+                  href: general-ledger/configure-ledger.md
                 - name: 仕訳帳の作成および検証
                   href: general-ledger/tasks/create-validate-journals.md
                 - name: 仕訳入力またはトランザクションの表示
@@ -896,6 +992,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: 仕訳入力とトランザクションの表示
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: トランザクションの詳細レポートを使用した試算表
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: 転記された仕訳帳の仕訳入力
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: 連結会社の通貨再評価
@@ -972,6 +1070,44 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: 元伝票の監査ポリシーの定義
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Finance 分析情報
+          items:
+            - name: Finance 分析情報のホーム ページ
+              href: finance-insights/finance-insights-home-page.md
+            - name: コンフィギュレーションと管理
+              items:
+                - name: Finance 分析情報のコンフィギュレーション
+                  href: finance-insights/configure-for-fin-insites.md
+                - name: 顧客支払予測の有効化
+                  href: finance-insights/enable-cust-paymnt-prediction.md
+                - name: キャッシュ フロー予測の有効化
+                  href: finance-insights/enable-cash-flow-forecasting.md
+                - name: 予算案の有効化
+                  href: finance-insights/enable-budget-proposal.md
+                - name: データ インテグレーター プロジェクトの作成
+                  href: finance-insights/create-data-integrate-project.md
+            - name: Finance 分析情報の使用
+              items:
+                - name: 予算案
+                  href: finance-insights/budget-proposals.md
+                - name: 現金持高
+                  href: finance-insights/cash-position.md
+                - name: キャッシュ フロー予測
+                  href: finance-insights/cash-flow-forecast-intro.md
+                - name: キャッシュ フロー予測に外部データを使用する
+                  href: finance-insights/external-data-in-cash-flow.md
+                - name: 顧客支払予測
+                  href: finance-insights/payment-insights-overview.md
+                - name: 顧客支払予測の使用
+                  href: finance-insights/use-customer-payment-predictions.md
+                - name: スナップショットの概要
+                  href: finance-insights/payment-snapshots.md
+                - name: 機械学習モデルの結果
+                  href: finance-insights/confusion-matrix.md
+                - name: 初期顧客支払予測モデルの評価
+                  href: finance-insights/evaluate-payment-prediction.md
+                - name: 予測モデルの改善
+                  href: finance-insights/improve-model.md
         - name: プロジェクト管理および会計
           items:
             - name: プロジェクト管理および会計の概要
@@ -1011,8 +1147,28 @@
             - name: プロジェクトに見積書を転送する
               href: project-management/transfer-quote-new-existing-project.md
             - name: プロジェクト リソース
-              href: project-management/project-resourcing.md
-            - name: 在庫品目要求からの発注品目の入庫
+              items:
+                - name: プロジェクト リソースの概要
+                  href: project-management/project-resourcing.md
+                - name: プロジェクト リソースの設定
+                  href: project-management/set-up-project-resources.md
+                - name: リソースのコンピテンシーの管理
+                  href: project-management/manage-resource-competencies.md
+                - name: 新しいプロジェクトの作成
+                  href: project-management/create-new-project.md
+                - name: ロール ベースの価格の設定
+                  href: project-management/set-up-role-based-pricing.md
+                - name: プロジェクト チームの作成
+                  href: project-management/create-project-team.md
+                - name: リソース能力の同期
+                  href: project-management/synchronize-resource-capacity.md
+                - name: プロジェクト リソースのスケジューリング パフォーマンス
+                  href: project-management/project-scheduling-performance.md
+                - name: 作業分解構造テンプレートにロールを設定する
+                  href: project-management/set-up-roles-wbs-template.md
+                - name: 計画されているリソースの履行
+                  href: project-management/resource-fulfillment-planned-resources.md
+            - name: 在庫品目要求からの発注書品目の入庫
               href: project-management/tasks/receive-items-purchase-order-item-requirement.md
             - name: 作業分解構造
               items:
@@ -1148,9 +1304,11 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: 公的機関の仕入先証明タイプの追加
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: カナダの統合売上税の計算
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: 財務諸表
           items:
-            - name: 財務諸表の概要
+            - name: 財務諸表の使用を開始する
               href: general-ledger/financial-reporting-getting-started.md
             - name: 財務諸表の概要
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -1184,6 +1342,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: 列定義
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: 財務諸表のレポート ツリー定義
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: 行定義セルの変更
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: 財務報告のデータ マートのリセット
@@ -1194,6 +1354,22 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
+            - name: 電子請求アドオン
+              items:
+                - name: 電子請求アドオンの概要
+                  href: localizations/e-invoicing-service-overview.md
+                - name: Azure ストレージ アカウントと Key Vault の作成
+                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                - name: 電子請求アドオンの使用を開始する
+                  href: localizations/e-invoicing-get-started.md
+                - name: ブラジル用電子請求アドオンの使用を開始する
+                  href: localizations/e-invoicing-bra-get-started.md
+                - name: イタリア用電子請求アドオンの使用を開始する
+                  href: localizations/e-invoicing-ita-get-started.md
+                - name: メキシコ用電子請求アドオンの使用を開始する
+                  href: localizations/e-invoicing-mex-get-started.md
+                - name: 電子請求アドオンの設定
+                  href: localizations/e-invoicing-setup.md
             - name: オーストラリア
               items:
                 - name: オーストラリアの概要
@@ -1216,6 +1392,16 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: VAT 明細書
                   href: localizations/emea-aut-vat-statement-details.md
+            - name: バーレーン
+              items:
+                - name: バーレーンの概要
+                  href: localizations/bahrain.md
+                - name: バーレーンの請求書レイアウトの構成
+                  href: localizations/emea-bhr-invoice-layout.md
+                - name: バーレーンの VAT 申告
+                  href: localizations/emea-bhr-vat-declaration.md
+                - name: 請求書発行の期限
+                  href: localizations/gcc-invoice-issue-deadline.md
             - name: ベルギー
               items:
                 - name: ベルギーの概要
@@ -1224,6 +1410,8 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: トランザクションの作成と BLWI への転送
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
+                - name: 元帳トランザクションのエクスポート
+                  href: localizations/emea-bel-export-ledger-transactions.md
                 - name: INTERVAT 税申告
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: 調整レポート
@@ -1248,7 +1436,7 @@
                       href: localizations/latam-bra-icms-tax-fiscal-documents.md
                     - name: 会計ドキュメントのインポート
                       href: localizations/latam-bra-import-fiscal-documents.md
-                    - name: 総勘定元帳の連結からの法人トランザクションのエクスポートとインポート
+                    - name: 一般会計の連結からの法人トランザクションのエクスポートとインポート
                       href: localizations/latam-bra-general-ledger-consolidation-transactions.md
                     - name: NF E XML ドキュメントと DANFE ファイルのインポートと確認
                       href: localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
@@ -1318,12 +1506,16 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e 証明書
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: NF-e カスタム証明書の検証
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: NF E XML ドキュメントと DANFE の設定、インポートおよび確認
                       href: localizations/latam-bra-set-up-import-nfe.md
-                    - name: NF-e 連邦税パラメーターの設定
+                    - name: NF-e 連邦パラメーターの設定
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: 会計施設の NF-e パラメーターの設定
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2019.001 - NF-e/NFC-e の税便益および非課税ルール
+                      href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf 税明細書
@@ -1422,7 +1614,7 @@
               items:
                 - name: 中国の概要
                   href: localizations/china.md
-                - name: 中国の 21Vianet で運用されている Finance and Operations
+                - name: 中国で 21Vianet が運用している Finance and Operations
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: 部品表の比較
                   href: localizations/apac-chn-bom-comparison.md
@@ -1488,6 +1680,8 @@
                   href: localizations/emea-amount-printing-forms.md
                 - name: VAT 明細書
                   href: localizations/emea-cze-vat-statement-details.md
+                - name: VAT 申告 (チェコ共和国)
+                  href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: 年度末決算
                   href: localizations/emea-cze-hun-year-end.md
             - name: デンマーク
@@ -1604,7 +1798,7 @@
                   href: localizations/emea-invoice-processing.md
                 - name: EU 登録証明書の発行
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-                - name: OIOUBL 標準
+                - name: サポートされる電子請求用の標準
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
                 - name: 請求書原本照会 (東ヨーロッパ)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
@@ -1750,6 +1944,8 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: ドイツの VAT 申告
                   href: localizations/emea-de-vat-declaration.md
+                - name: 顧客電子請求書レポート
+                  href: localizations/emea-deu-e-invoices.md
                 - name: 仕訳リスト レポート
                   href: localizations/emea-deu-journal-list-report.md
                 - name: 電子税申告の設定
@@ -1772,6 +1968,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: オンライン請求システム
                   href: localizations/emea-hun-online-invoicing.md
+                - name: 繰延消費税計算
+                  href: localizations/emea-hun-deferred-vat.md
             - name: アイスランド
               items:
                 - name: アイスランドの概要
@@ -1816,11 +2014,11 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: 資本品目の固定資産への移動
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: インド販売税
+                - name: インドの商品及びサービス税
                   items:
-                    - name: インド販売税の概要
+                    - name: インド商品及びサービス税の概要
                       href: localizations/apac-ind-gst.md
-                    - name: APAC インド販売税のローカライズの新機能および変更された機能
+                    - name: インド商品及びサービス税のローカライズに関する新機能および変更された機能
                       items:
                         - name: 10.0.0 の新機能または変更された機能
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1846,9 +2044,15 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: 10.0.11 の新機能または変更された機能
                           href: localizations/apac-ind-news-letter-10-0-11.md
-                    - name: インド販売税参照グループ
+                        - name: 10.0.12 の新機能または変更された機能
+                          href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: 10.0.13 の新機能または変更された機能
+                          href: localizations/ind-news-letter-10-0-13.md
+                        - name: 10.0.14 の新機能または変更された機能
+                          href: localizations/apac-ind-news-letter-10-0-14.md
+                    - name: インド商品及びサービス税参照グループ
                       href: localizations/apac-ind-gst-reference-groups.md
-                    - name: キャッシュ レジスターの販売税統合
+                    - name: キャッシュ レジスターの商品及びサービス税統合
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
                     - name: マスター データの設定
                       items:
@@ -1864,7 +2068,7 @@
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
                         - name: 税率の作成
                           href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: 販売税転記タイプの主勘定の作成
+                        - name: 商品及びサービス税転記タイプの主勘定の作成
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: 税決済期間の作成
                           href: localizations/apac-ind-GST-create-tax-settlement-period.md
@@ -1894,7 +2098,7 @@
                           href: localizations/apac-ind-GST-purchase-exempted-goods.md
                         - name: 税率 0 の商品の購入
                           href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: 販売税がない商品の購入
+                        - name: 商品及びサービス税がない商品の購入
                           href: localizations/apac-ind-GST-purchase-non-gst-goods.md
                         - name: 複合ディーラーからの購入
                           href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
@@ -1928,7 +2132,7 @@
                           href: localizations/apac-ind-GST-sales-exempted-item.md
                         - name: 税率 0 の商品の販売
                           href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: 販売税がない商品の販売
+                        - name: 商品及びサービス税がない商品の販売
                           href: localizations/apac-ind-GST-sell-non-gst-goods.md
                         - name: 割引と仮評価が適用される課税対象商品の販売
                           href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
@@ -1946,9 +2150,9 @@
                           href: localizations/apac-ind-GST-return-order-form.md
                     - name: 外部トランザクション
                       items:
-                        - name: 販売税がある商品のインポート
+                        - name: 商品及びサービス税がある商品のインポート
                           href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: 販売税があるサービスのインポート
+                        - name: 商品及びサービス税があるサービスのインポート
                           href: localizations/apac-ind-import-services-gst.md
                         - name: 税率 0 の商品のエクスポート
                           href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
@@ -1956,6 +2160,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: 在庫トランザクション
                       items:
+                        - name: 在庫移動オーダー
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: 移転価格が課税される在庫移動オーダー
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: 顧客支払トランザクション
@@ -1974,9 +2180,9 @@
                           href: localizations/apac-ind-GST-customer-payment-refund.md
                     - name: 直接税トランザクション
                       items:
-                        - name: 税控除の計算時に販売税を含める
+                        - name: 税控除の計算時に商品及びサービス税を含める
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: 徴税の計算時に販売税を含める
+                        - name: 徴税の計算時に商品及びサービス税を含める
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                     - name: 税額の調整
                       href: localizations/apac-ind-GST-tax-adjustments.md
@@ -1986,8 +2192,12 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: 税還付用 GSTR レポート データの生成
                       href: localizations/apac-ind-GST-tax-returns.md
+                    - name: GSTR レポートに対してマルチ バッチ処理を有効化する
+                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: 税の照会
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: TaxDocumentJSON テーブルのクリーンアップ
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: 税エンジン
                   items:
                     - name: 税エンジンの概要
@@ -2008,8 +2218,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: 税しきい値に関するよく寄せられる質問
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: 在庫移動
-                  href: localizations/apac-ind-stock-transfer.md
             - name: イタリア
               items:
                 - name: イタリアの概要
@@ -2066,6 +2274,10 @@
                   href: localizations/emea-ita-exil-protest-boe.md
                 - name: 税控除
                   href: localizations/emea-ita-exil-tax-plafond.md
+                - name: 顧客電子請求書
+                  href: localizations/emea-ita-e-invoices.md
+                - name: 年次税通信
+                  href: localizations/emea-ita-yearly-tax-communication.md
             - name: 日本
               items:
                 - name: 日本の概要
@@ -2226,6 +2438,10 @@
                   href: localizations/tasks/use-assemble-list-fixed-asset.md
                 - name: 固定資産の分解一覧の使用
                   href: localizations/tasks/use-disassemble-list-fixed-assets.md
+            - name: クウェート
+              items:
+                - name: クウェートの概要
+                  href: localizations/kuwait.md
             - name: ラトビア
               items:
                 - name: ラトビアの概要
@@ -2262,20 +2478,22 @@
                   href: localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
                 - name: 商品及びサービス税 (GST)
                   href: localizations/apac-mys-gst.md
-                - name: 販売税 - 必要な形式での GAF ファイルの生成
+                - name: 商品及びサービス税 - 必要な形式での GAF ファイルの生成
                   href: localizations/tasks/my-00010-gst-gaf-files-required-format.md
-                - name: 販売税の顧客の借方および貸方の管理
+                - name: 商品及びサービス税の顧客の借方および貸方の管理
                   href: localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
-                - name: 販売税の仕入先の借方および貸方の管理
+                - name: 商品及びサービス税の仕入先の借方および貸方の管理
                   href: localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: 控除条件のある販売税顧客請求書の印刷
+                - name: 控除条件のある商品及びサービス税顧客請求書の印刷
                   href: localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
-                - name: 販売税請求書の印刷
+                - name: 商品及びサービス税請求書の印刷
                   href: localizations/tasks/my-00005-print-gst-tax-invoices.md
                 - name: 自動請求の請求書
                   href: localizations/tasks/my-00007-self-billed-invoices.md
-                - name: 販売税の控除条件の設定
+                - name: 商品及びサービス税の控除条件の設定
                   href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+                - name: マレーシアの SST-02 申告
+                  href: localizations/apac-mys-sst-declaration.md
             - name: メキシコ
               items:
                 - name: メキシコの概要
@@ -2316,6 +2534,10 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: 仕入先登録 ID
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
+            - name: オマーン
+              items:
+                - name: オマーンの概要
+                  href: localizations/oman.md
             - name: オランダ
               items:
                 - name: オランダの概要
@@ -2342,6 +2564,8 @@
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: ノルウェーの税の標準監査ファイル (SAF-T)
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
+                - name: ノルウェーの顧客電子請求書
+                  href: localizations/emea-nor-e-invoices.md
             - name: ポーランド
               items:
                 - name: ポーランドの概要
@@ -2374,6 +2598,12 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: 買掛金勘定/売掛金勘定為替差異の分割
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: レジスターを使用した VAT 申告 (JPK_V7M、VDEK)
+                  href: localizations/emea-pol-vdek.md
+            - name: カタール
+              items:
+                - name: カタールの概要
+                  href: localizations/qatar.md
             - name: ロシア
               items:
                 - name: ロシアの概要
@@ -2540,12 +2770,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: 在庫レポート
                       href: localizations/rus-inventory-reports.md
-                    - name: 在庫プロファイルの概要
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: 在庫プロファイルの設定
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: ドキュメントおよびクエリでの在庫プロファイルの使用
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: 在庫プロファイル
+                      items:
+                        - name: 在庫プロファイルの概要
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: 在庫プロファイルの設定
+                          href: localizations/rus-set-up-inventory-profile.md
+                        - name: ドキュメントおよびクエリでの在庫プロファイルの使用
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: レポート
                   items:
                     - name: 財務諸表
@@ -2588,6 +2820,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: 繰延のレポート
                       href: localizations/rus-reporting-deferrals.md
+                - name: 税会計
+                  items:
+                    - name: 経費および所得コード
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: 資産の税登録
+                      href: localizations/rus-assets-tax-registers.md
             - name: サウジアラビア
               items:
                 - name: サウジアラビアの概要
@@ -2596,11 +2834,13 @@
                   href: localizations/apac-sau-sales-tax.md
                 - name: サウジアラビアのザカート レポート
                   href: localizations/emea-sau-zakat-reporting.md
+                - name: 銀行ドキュメントの諸費用の出荷への割り当て
+                  href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
             - name: シンガポール
               items:
                 - name: シンガポールの概要
                   href: localizations/singapore.md
-                - name: GST-05 レポートを生成します
+                - name: GST-05 レポートの生成
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: スペイン
               items:
@@ -2630,10 +2870,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: レポート 340
                   href: localizations/emea-esp-report-340.md
+                - name: 申告 347 レポート
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: 販売および購買サイクル
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: 特殊エントリと期首表
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: VAT に関する情報の即時提供
+                  href: localizations/emea-esp-sii.md
             - name: スウェーデン
               items:
                 - name: スウェーデンの概要
@@ -2700,17 +2944,19 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: 公的機関向けのフォーム 1099
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: 人事管理
+                - name: 1099 レポートの仕入先の設定
+                  href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
+        - name: Human Resources
           items:
-            - name: 人事管理の概要
+            - name: Human Resources の概要
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: 人事管理の設定
+            - name: Human Resources の設定
               items:
-                - name: 人事管理パラメーターのコンフィギュレーション
+                - name: Human Resources パラメーターのコンフィギュレーション
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: 人事管理共有パラメーターのコンフィギュレーション
+                - name: Human Resources 共有パラメーターのコンフィギュレーション
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: 人事管理ワークフローの設定
+                - name: Human Resources ワークフローの設定
                   href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
                 - name: 日付と時刻のフィールドの理解
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
@@ -2858,7 +3104,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
                 - name: フォーム I-9 ドキュメント タイプの設定
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: アメリカ障害者法 (Americans with Disabilities Act) への準拠
+                - name: 米国障碍者法 (Americans with Disabilities Act) への準拠
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
                 - name: 作業者の特別設備の管理
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
@@ -2868,13 +3114,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: 情報へのアクセスとレポート
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: PowerBI.com でのパーソナル化オプション
+            - name: Power BI.com でのパーソナル化オプション
               items:
-                - name: PowerBI.com の統合によって使用できる機能
+                - name: Power BI.com の統合によって使用できる機能
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: PowerBI.com コンテンツのピン留め
+                - name: Power BI.com コンテンツのピン留め
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: PowerBI.com から分析ワークスペースを選択する
+                - name: Power BI.com からの分析ワークスペースの選択
+            - name: Power BI でのパーソナル化オプション
+              items:
+                - name: Power BI の統合によって使用できる機能
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Power BI コンテンツのピン留め
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Power BI から分析ワークスペースを選択する
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Power BI コンテンツ
               items:
@@ -2882,7 +3135,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: 実績対予算
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: 福利厚生
+                - name: 給付金
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: 現金の概要 Power BI コンテンツ
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
@@ -2946,7 +3199,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: IaaS 環境での既定のレポート エクスペリエンス
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
-                - name: 印刷
+                - name: ドキュメント レポートのプレビュー オプション
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
+                - name: 印刷中
                   items:
                     - name: ドキュメントの印刷の概要
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
@@ -2970,7 +3225,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
                 - name: エンティティ格納のメンテナンス後に問題を解決する
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com 統合のコンフィギュレーション
+                - name: Power BI 統合のコンフィギュレーション
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
                 - name: 自分のデータベースの持ち込み
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -2984,7 +3239,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: 集計の測定への財務分析コードの追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: PowerBI Desktop を使用した分析レポートの作成
+                - name: Power BI Desktop を使用した分析レポートの作成
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3110,6 +3365,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3146,6 +3403,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
                     - name: 算術
                       items:
                         - name: 算術関数
@@ -3302,7 +3561,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
                     - name: OPENXML 形式でレポートを生成する例
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Excel テンプレートを再適用して ER 形式を変更する
+                    - name: Excel テンプレートを再適用して電子申告形式を変更する
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
                       items:
@@ -3356,7 +3615,7 @@
                   items:
                     - name: オプションの属性を使用して XML 形式でファイルをインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
-                    - name: オプションの属性を含む XML 形式のファイルをインポートするための ER 形式を構成する
+                    - name: オプションの属性を含む XML 形式のファイルをインポートするための電子申告形式を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: コンフィギュレーション ライフサイクル
               items:
@@ -3386,12 +3645,22 @@
                       items:
                         - name: コンフィギュレーションを GR からインポートする
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: GR へコンフィギュレーションをアップロードする
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: GR でコンフィギュレーションを共有する
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: クイック スタート ガイド
+              items:
+                - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: カスタム レポートを印刷するための新しい電子申告ソリューションの設計
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+                - name: カスタム電子ドキュメントを生成するための電子申告ソリューションの調整
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
             - name: チュートリアル
               items:
                 - name: データ ソースの使用方法を確認する
@@ -3401,7 +3670,11 @@
                     - name: 生 XML を使用してコンテンツを追加する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                     - name: 計算フィールドのデータ ソースのパラメーター化された呼び出しをサポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                      items:
+                        - name: ユーザー エクスペリエンスとユーザビリティ メンテナンスの向上
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                        - name: データ アクセスのパフォーマンスの向上
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
                     - name: 会社間 ER データ ソース
                       href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: 財務分析コードの詳細データ ソースを使用する
@@ -3454,7 +3727,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: 法人ごとの電子申告形式のパラメーターの設定
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: ER 形式要素の実行を遅延する
+                    - name: 電子申告形式要素の実行を遅延する
                       items:
                         - name: シーケンス要素の実行を延期する
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
@@ -3462,6 +3735,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                     - name: 多言語レポートのデザイン
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: 大量の発信ドキュメントの圧縮
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+                - name: コンフィギュレーションされた ER コンポーネントの調査
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
                 - name: データ バインディングの相対パス
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Finance and Operations での電子申告ソリューションの使用
@@ -3498,7 +3775,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
                     - name: 行先のコンフィギュレーション
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: ER 形式への参照の設定
+                - name: 電子申告形式への参照の設定
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されたレポートの自動検証
                   items:
@@ -3514,26 +3791,38 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                - name: ビジネス ドキュメントの管理
+                - name: ビジネス ドキュメントの管理 (BDM)
                   items:
-                    - name: ビジネス ドキュメント管理の概要
+                    - name: BDM 概要
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-                    - name: Microsoft Excel のビジネス ドキュメント テンプレートに新しいフィールドを追加する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: BDM の新しいドキュメント ユーザー インターフェイス
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+                    - name: BDM のビジネス ドキュメント テンプレートの編集
+                      items:
+                        - name: Microsoft Excel のビジネス ドキュメント テンプレートに新しいフィールドを追加する
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                        - name: ビジネス ドキュメント テンプレートの構造の更新
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
             - name: 電子申告フレームワーク API
               items:
                 - name: 組み込み関数の一覧を展開する
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-                - name: Application update 10.0.11 での API の変更
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                - name: Application update 7.3 での API の変更
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                - name: API の変更
+                  items:
+                    - name: Application update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                    - name: Application update 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                    - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                - name: ユーザー入力パラメータタイプのデータ ソース値をソースコードから開始する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ

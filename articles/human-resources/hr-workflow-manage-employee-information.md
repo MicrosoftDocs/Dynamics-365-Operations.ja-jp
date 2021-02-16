@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a159f5fd811ee80c0ac45ca1b582f2f46fcb2c61
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 250b214372a12f99d2ababc97c5edf4456cadcad
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009636"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419419"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>ワークフローを使用した従業員情報の管理
 
@@ -67,6 +67,9 @@ ms.locfileid: "3009636"
 11. **マトリックス** を選択します。
 12. **作業者 ID 番号** ワークフローを一覧に追加します。
 
+## <a name="additional-resources"></a>追加リソース
+
+[住所変更の表示と管理](hr-personnel-view-address-changes.md) 
 
 
 

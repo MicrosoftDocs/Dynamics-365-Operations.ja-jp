@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 51921d205751a27f154229bdd533302140010055
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 9df8cb3f6f4919bdac985c49e9f1a65895eef5dc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367018"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685081"
 ---
 # <a name="deploy-custom-help-to-azure"></a>Azure にカスタム ヘルプを展開
 
@@ -124,7 +123,7 @@ JSON ファイルを BLOB コンテナーにアップロードするには、い
 
 ### <a name="create-a-data-source"></a><a name="searchdatasource"></a>データ ソースを作成する
 
-1. Postman を開いて、新しい POST 要求を作成します。 このツールに慣れていない場合は、[Postman を使用して Azure Cognitive Search REST API の探索](/azure/search/search-get-started-postman.md) を参照してください。
+1. Postman を開いて、新しい POST 要求を作成します。 このツールに慣れていない場合は、[Postman を使用して Azure Cognitive Search REST API の探索](/azure/search/search-get-started-postman) を参照してください。
 2. **リクエスト URL の入力** フィールドで、`https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11` と入力します。 **\[AzureSearchServicename\]** を、このトピックの [検索サービスの作成](#searchservice) セクションで作成した検索サービスの名前 (例えば、**mycustomhelpsearch**) に置き換えます。
 3. **ヘッダー** タブで、**"Content-type"** を **application/json** に設定し、Azure Cognitive Search サービスからのキーに対して **api-key** を設定します。 キーは、検索サービスの左側にある **設定** の **アクセス キー** にあります。
 4. **認証** タブで、**タイプ** を **非認証** に設定します。

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5d9a2470fc1a6b2ee076d68fd6bcfa2991a465b9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 33338c331a53586b325def398267ab10db23f78a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184166"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459393"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>共有番号順序を使用して、仕入先をコピーする
 

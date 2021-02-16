@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dc69687b1dd94407b28209178e923fe5169bcdac
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b14bebadd7088c9bbcfb6b1c5df1fe1a3c98694d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211333"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432147"
 ---
 # <a name="phantom-items"></a>ファントム品目
 

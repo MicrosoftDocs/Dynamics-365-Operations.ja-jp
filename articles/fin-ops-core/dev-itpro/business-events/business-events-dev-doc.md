@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b5b6570782854b9e5d9b88d05328c2936d4b998e
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 2263289d95c5d9f2eb8c7f10bb593d5a0d90a058
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033015"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687335"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -50,6 +49,8 @@ ms.locfileid: "3033015"
 - **目標** – ビジネス イベントは受取人に対する消費ストーリーを最適化するように設計する必要があります。 つまり、ビジネス イベントを消費する受信者のためにできるだけ簡単にする必要があります。 そのため、ビジネス イベントは可能な限り具体的であり、特定のユース ケースを対象としている必要があります。 消費者がペイロードを理解するよう試みてビジネス イベントが何であったか判断する必要があるため、ビジネス イベントは一般的なものであるべきではありません。 デザインの選択は、対象となるビジネス イベントの保持のために許可されている必要があります。
 - **ノイズレス** – デザインはノイズを除外するための努力が最小になるようにする必要があります。 ビジネス イベントを非常に明確にするため、予期するビジネス イベントと一致しない条件を除外するフィルター ロジックの記述を避けます。 選択したアプローチは、ノイズ除去が必要でないように、十分に特定された時点でビジネス イベントがコードで実装されていることを保証する必要があります。 ロジックの追加によるノイズ除去の試行すべてはパフォーマンスに影響し、また特定のユースケースが複雑になることがあります。
 
+次の表では、ビジネス レベルとテーブル レベルのキャプチャを比較します。
+
 | ビジネス ロジック レベルでのキャプチャ | テーブル レベルでのキャプチャ |
 |-------------------------------------|----------------------------|
 | このレベルでのキャプチャは、トランザクションで発生するため、持続性を保証するのに役立ちます。 | このレベルでのキャプチャは、トランザクションで発生するため、持続性を保証するのに役立ちます。 |
@@ -71,13 +72,13 @@ ms.locfileid: "3033015"
 以下の 2 つのクラスを実装する必要があります。
 
 - **ビジネス イベント** - このクラスは **BusinessEventsBase** クラスを拡張します。 ビジネス イベントの構築、ペイロードの構築、およびビジネス イベントの送信がサポートされます。
-- **ビジネス イベント契約** - このクラスは **BusinessEventsContract** クラスを拡張します。 ビジネス イベントのペイロードを定義して、実行時に契約の作成を許可します。 
+- **ビジネス イベント契約** - このクラスは **BusinessEventsContract** クラスを拡張します。 ビジネス イベントのペイロードを定義して、実行時に契約の作成を許可します。
 
 ### <a name="businesseventsbase-extension"></a>BusinessEventsBase 拡張機能
 
 #### <a name="naming-convention"></a>名前付け規則
 
-ビジネス イベントの名前は、\<名詞/名詞句\>\<過去時制のアクション\>BusinessEvent のパターンに従う必要があります 名前の \<名詞/名詞句\> の部分は、アプリケーション領域の接頭語の既存の定義に準拠する必要があります。
+ビジネス イベント名は、以下のパターン \<noun or noun phrase\>\<past tense action\>BusinessEvent に従う必要があります。 名前の \<noun or noun phrase\> パートは、アプリケーション領域の接頭語の既存の定義に準拠する必要があります。
 
 **例**
 
@@ -88,7 +89,7 @@ ms.locfileid: "3033015"
 
 **BusinessEventsBase** クラスの拡張機能を実装するプロセスは簡単です。 **BusinessEventsBase** クラスの拡張、および静的コンストラクター メソッドの実装、プライベート **新規** メソッド、内部状態を保持するメソッド、および **buildContract** メソッドが含まれます。
 
-1. **newFrom\<my\_buffer\>** 静的メソッドを実装します。 メソッド名の \<my\_buffer\> の部分は通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
+1. 静的 **newFrom\<my\_buffer\>** メソッドを実装します。 メソッド名の \<my\_buffer\> の部分は通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
 
     ```xpp
     static public SalesInvoicePostedBusinessEvent
@@ -230,7 +231,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    **初期化**メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。
+    **初期化** メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。
 
 4. 静的コンストラクター メソッドを実装します。
 
@@ -257,7 +258,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    **parm** メソッドには **DataMember('\<名前\>')** および **BusinessEventsDataMember('\<説明\>')** 属性がある必要があります。 **DataMember** 属性で提供する名前 (たとえば、**'InvoiceAccount'**) はデータ契約消費者に対して表示されます。 **BusinessEventsDataMember** 属性で指定された説明は、ビジネス イベント カタログ UI に表示され、この契約のデータ メンバーを説明するために使用されます。
+    **parm** メソッドには、**DataMember('\<name\>')** および **BusinessEventsDataMember('\<description\>')** 属性がある必要があります。 **DataMember** 属性で提供する名前 (たとえば、**'InvoiceAccount'**) はデータ契約消費者に対して表示されます。 **BusinessEventsDataMember** 属性で指定された説明は、ビジネス イベント カタログ UI に表示され、この契約のデータ メンバーを説明するために使用されます。
 
 > [!NOTE]
 > - **RecId** 値はビジネス イベントのペイロードの一部にすることはできません。 代わりに代替キー (AK) を使用します。
@@ -592,7 +593,7 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## <a name="extending-filters-so-that-they-have-custom-fields-if-the-middleware-supports-this-extension"></a>カスタム フィールドを持つようにフィルターを拡張する (ミドルウェアがこの拡張機能をサポートしている場合)
 
-一部のミドルウェア システムはイベントのフィルター処理を許可します。 たとえば、Microsoft Azure Service Bus にはキーと値のペアを設定できるプロパティ バッグがあります。 これらのキーと値のペアは、Service Bus のキューやトピックからの読み込み時にイベントをフィルター処理するために使用できます。 また、Azure イベント グリッドには**件名**、**イベント タイプ**、および **ID** などのフィルター処理が可能なメッセージ プロパティがあります。 異なるシステムに対してこれら各種プロパティをサポートするために、ビジネス イベントのフレームワークは、*ペイロード コンテキスト*という名前の概念を使用します。 この概念を拡張して、さまざまなイベント システムがフィルター処理のために使用できるカスタム フィールドを含めることができます
+一部のミドルウェア システムはイベントのフィルター処理を許可します。 たとえば、Microsoft Azure Service Bus にはキーと値のペアを設定できるプロパティ バッグがあります。 これらのキーと値のペアは、Service Bus のキューやトピックからの読み込み時にイベントをフィルター処理するために使用できます。 また、Azure イベント グリッドには **件名**、**イベント タイプ**、および **ID** などのフィルター処理が可能なメッセージ プロパティがあります。 異なるシステムに対してこれら各種プロパティをサポートするために、ビジネス イベントのフレームワークは、*ペイロード コンテキスト* という名前の概念を使用します。 この概念を拡張して、さまざまなイベント システムがフィルター処理のために使用できるカスタム フィールドを含めることができます
 
 ### <a name="payload-context"></a>ペイロード コンテキスト
 
@@ -640,7 +641,7 @@ public final class CustomPayloadContextBusinessEventsSender_Extension
 
 ペイロード コンテキストを使用するアダプターは、新しいペイロード コンテキストの使用を許可する CoC メソッドを公開するように記述されます。 次の例は、サービス バス アダプターに対するこのステップの概要を示しています。 このアダプターには、サービス バスの消費者がフィルター処理できる汎用のプロパティ バッグがあります。
 
-**BusinessEventsServiceBusAdapter** には **addProperties** という名前の CoC メソッドがあります。
+**BusinessEventsServiceBusAdapter** クラスには、**addProperties** という名前の CoC メソッドがあります。
 
 ```xpp
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
@@ -667,23 +668,24 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 ```
 
 ## <a name="adding-a-custom-endpoint-type"></a>カスタム エンドポイント タイプの追加
+
 ビジネス イベント フレームワークは、最初から用意されているエンドポイント タイプに加え、新しいエンドポイント タイプの追加物もサポートしています。 このセクションでは、新しいカスタム エンドポイント タイプの追加方法を示す例を提供します。
 
 ### <a name="step-1-add-a-new-endpoint-type"></a>ステップ 1: 新しいエンドポイント タイプを追加します
 
-各エンドポイント タイプは、列挙 **BusinessEventsEndpointType** によって表されます。 新しいエンドポイントを追加するプロセスの最初のステップは、次のセクションに示すように、この列挙を拡張することです。
+各エンドポイント タイプは、列挙 **BusinessEventsEndpointType** によって表されます。 新しいエンドポイントを追加するプロセスの最初のステップは、次の図に示すように、この列挙を拡張することです。
 
-![ビジネス イベントのエンドポイント](../media/customendpoint1.png)
+![列挙拡張子](../media/customendpoint1.png)
 
 ### <a name="step-2-add-a-new-endpoint-table-to-the-hierarchy"></a>ステップ 2: 新しいエンドポイント テーブルを階層に追加します
 
-すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承**プロパティを **Yes** に、**拡張**プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
+すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承** プロパティを **Yes** に、**拡張** プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
 
-![ビジネス イベントのエンドポイント](../media/customendpoint2.png)
+![テーブルは BusinessEventsEndpoint を拡張](../media/customendpoint2.png)
 
 その後、新しいテーブルに、初期化およびコード内でのエンドポイントとの通信に必要なカスタム フィールドの定義が保持されます。 競合を回避するには、属している特定のエンドポイントに対してフィールド名を限定する必要があります。 たとえば、2 つのエンドポイントは、**URL** フィールドの概念を持つことができます。 フィールドを区別するために、名前はカスタム エンドポイントに対して固有である必要があります。 たとえば、カスタム エンドポイントの **CustomURL** のフィールドに名前を付けます。
 
-![ビジネス イベントのエンドポイント](../media/customendpoint3.png)
+![カスタム フィールドを含む新しいテーブル](../media/customendpoint3.png)
 
 ### <a name="step-3-add-a-new-endpoint-adapter-class-that-implements-the-ibusinesseventsendpoint-interface"></a>ステップ 3: IBusinessEventsEndpoint インターフェイスを実装する新しいエンドポイント アダプター クラスを追加します
 
@@ -695,7 +697,7 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 {
 ```
 
-**初期化**メソッドを実装して、渡された **BusinessEventsEndpoint** バッファーのタイプを確認し、次の例が示すように、バッファーが適切な型である場合は初期化します。
+**初期化** メソッドを実装して、渡された **BusinessEventsEndpoint** バッファーのタイプを確認し、次の例が示すように、バッファーが適切な型である場合は初期化します。
 
 ```xpp
 if (!(_endpoint is CustomBusinessEventsEndpoint))
@@ -717,11 +719,11 @@ if (!customField)
 
 カスタム フィールド入力を保持するには FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ の下に新しいグループ コントロールを追加します。
 
-![ビジネス イベントのエンドポイント](../media/customendpoint4.png)
+![カスタム フィールド入力用の新しいグループ コントロール](../media/customendpoint4.png)
 
 カスタム フィールドの入力は、前の手順で作成した新しいテーブルとフィールドにバインドする必要があります。 次の例に示すように、**BusinessEventsEndpointConfiguration** フォームの **getConcreteType** と **showOtherFields** メソッドを拡張するクラス拡張機能を作成します。
 
-![ビジネス イベントのエンドポイント](../media/customendpoint5.png)
+![データ ソースのクラス拡張](../media/customendpoint5.png)
 
 ```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
@@ -754,7 +756,7 @@ final public class CustomBusinessEventsEndpointConfiguration_Extension
 
 この機能は、Platform 更新 30 以降でのみ利用できます。
 
-ビジネス イベントのシリアル化には、FormJsonSerializer を使用してデータ契約内のオブジェクトをシリアル化します。 FormJsonSerializer は、**UtcDataTime** の値を ISO 8601 の日時形式にすることができます。 ビジネス イベンのペイロードを表示する時、人が判読可能な形式になります。 たとえば、**UtcDataTime**の値を、**/Date(1196865000000)/** の代わりに、**2007-12-05T14:30Z**の形式にすることができます。 「/Date(N)」形式では、N は 1970 年 1 月 1 日 (UTC+0) から経過したミリ秒数です。 ISO 形式は、JavaScript Object Notation (JSON) を解析するツールで、より頻繁に理解されます。
+ビジネス イベントのシリアル化には、FormJsonSerializer を使用してデータ契約内のオブジェクトをシリアル化します。 FormJsonSerializer は、**UtcDataTime** の値を ISO 8601 の日時形式にすることができます。 ビジネス イベンのペイロードを表示する時、人が判読可能な形式になります。 たとえば、**UtcDataTime** の値を、**/Date(1196865000000)/** の代わりに、**2007-12-05T14:30Z** の形式にすることができます。 「/Date(N)」形式では、N は 1970 年 1 月 1 日 (UTC+0) から経過したミリ秒数です。 ISO 形式は、JavaScript Object Notation (JSON) を解析するツールで、より頻繁に理解されます。
 
 人が判読可能な形式にするため、**DateTimeIso8601** という名前の拡張データ型 (EDT) をデータ契約の値の型として使用します。 または、**DateTimeIso8601** EDTから派生した EDT を使用します。
 

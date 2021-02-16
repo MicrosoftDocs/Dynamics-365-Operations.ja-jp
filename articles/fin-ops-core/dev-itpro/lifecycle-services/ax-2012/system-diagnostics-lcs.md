@@ -10,19 +10,18 @@ ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 ms.custom: 19061
 ms.assetid: 9a217373-f72b-4a28-adef-79900e40c872
 ms.search.region: Global
-ms.author: murtazac
+ms.author: perahlff
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: c2e7800321e12b464c57298be860eb515fcbbd82
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: df60442b646ad09dc8025d448813c3c7ef6d129e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811702"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680030"
 ---
 # <a name="system-diagnostics-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のシステム診断
 

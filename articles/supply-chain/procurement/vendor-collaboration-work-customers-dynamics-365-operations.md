@@ -1,33 +1,34 @@
 ---
 title: 顧客との仕入先コラボレーション
 description: このトピックでは、仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
-author: mkirknel
+author: TaylorVH
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
-ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.author: v-savanh
+ms.search.validFrom: 2020-11-01
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207350"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654343"
 ---
 # <a name="vendor-collaboration-with-customers"></a>顧客との仕入先コラボレーション
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 仕入先は、以下のワークスペースから一連のビジネス プロセスを完了できます。
 
@@ -40,9 +41,9 @@ ms.locfileid: "3207350"
 
 ## <a name="working-with-pos-in-the-purchase-order-confirmation-workspace"></a>発注書確認ワークスペースで、発注書を処理します。
 
-**発注書確認** ワークスペースにより、確認のために送られてきた発注書に対応することができます。 顧客からのアクションを待っている発注書、および確認済みではあるが未処理の発注書についての情報を確認することもできます。
+**発注書確認** ワークスペースにより、確認のために送られてきた発注書 (PO) に対応することができます。 顧客からのアクションを待っている発注書、および確認済みではあるが未処理の発注書についての情報を確認することもできます。
 
-**発注書確認**ワークスペースには、3 つのリストがあります。
+**発注書確認** ワークスペースには、3 つのリストがあります。
 
 - **確認用の発注書** – このリストには、送られてきた発注書のうち対応待ちの発注書が表示されます。 対応した後、注文書はリストに表示されなくなります。 以前のバージョンの発注書に対応する前に、顧客から新しいバージョンの発注書が送られてきた場合、最新のバージョンのみが表示されます。
 - **顧客のアクション待ち** – このリストには、対応したものの、顧客がまだ確認していないすべての発注書を表示します。 発注書を受け取ると、ステータスが **確認済** に変更になるまで、このリストで監視できます。 発注書を否認するか、または変更した内容で承認する場合、顧客が新しいバージョンを送信するまで発注書をここで監視できます。
@@ -53,13 +54,13 @@ ms.locfileid: "3207350"
 - **確認用の発注書** – このページには、ワークスペースの **確認用の発注書** リストとして同じ情報が含まれます。 このトピックの先の説明を参照してください。
 - **発注書仕入先確認履歴** – このページには、すべての発注書および仕入先に送信された発注書のすべてのバージョンが含まれます。 仕入先から返されたすべての応答も含まれます。
 - **確認済発注書を開く** このページには、ワークスペースの **確認済発注書を開く** リストとして同じ情報が含まれます。 このトピックの先の説明を参照してください。
-- **すべての確認済発注書** – このページには、確認済のすべての発注書が含まれています。 このページの発注書には、受領した製品またはサービスの発注書が含まれます。 請求書を送ることができる発注書を監視するのに、このリストを使用できます。
+- **すべての確認済発注書** – このページには、確認済のすべての発注書が含まれています。 このページに表示された発注書には、受領した製品またはサービスの発注書が含まれます。 請求書を送ることができる発注書を監視するのに、このリストを使用できます。
 
 ### <a name="responding-to-pos"></a>発注書への応答
 
 顧客が確認のために送信する発注書は **発注書の確認** ワークスペースと **確認用の発注書** ページに表示されます。 発注書を開いた後、それを承認、否認、または変更した内容で承認できます。 発注書のヘッダーまたは個々の明細行に添付ファイルがある場合もあります。 また、応答の際、発注書のヘッダーまたは個々の明細行に情報を添付することもできます。 たとえば、明細行の 1 つに代替品目を提案する場合があります。
 
-**プレビュー/印刷**オプションを使用して、発注書のプレビュー表示、および PDF ファイルとして印刷できます。 **分析コードの表示** アクションをも使用して、次の分析コード列の表示または非表示を選択できます: **サイト**、**倉庫**、**色**、**サイズ**、**スタイル**、および**構成**。 
+**プレビュー/印刷** オプションを使用して、発注書のプレビュー表示、および PDF ファイルとして印刷できます。 **分析コードの表示** アクションをも使用して、次の分析コード列の表示または非表示を選択できます: **サイト**、**倉庫**、**色**、**サイズ**、**スタイル**、および **構成**。 
 
 使用する際は **変更した内容で承認** オプションを個々の明細行を承認または否認できます。 また、以下の変更を明細行に行うことができます。
 
@@ -81,7 +82,7 @@ ms.locfileid: "3207350"
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>仕入先入札ワークスペースでの RFQ に関する作業
 
-**仕入先入札** ワークスペースで、応答するよう招待された会社の RFQ を確認することができます。 RFQ に応答することもできます。 
+**仕入先入札** ワークスペースで、応答するよう招待された会社の見積依頼 (RFQ) を確認することができます。 RFQ に応答することもできます。 
 
 ワークスペースは、失注または受注したすべての RFQ も表示します。 さらに、システムは公的機関用にコンフィギュレーションされ、ワークスペースは公開されている RFQ を表示します。
 
@@ -105,15 +106,18 @@ ms.locfileid: "3207350"
 
     入札するよう招待された場合、**新しい入札の招待** ページで同じ RFQ を見つけることができます。 場合によっては、未処理の RFQ に入札したいかもしれませんが、入札するよう招待されていません。 この場合、顧客が RFQ ケースの自己招待を有効にして、自分で自身を招待することができます。
 
+    **見積の公開済依頼を開くリンクをタイルとして表示する** 機能をオンにすることで、**見積の公開済依頼を開く** リンクのアクセシビリティを強化します。 この機能は、リンクをタイルに変換して目立つ場所に移動し、見つけやすいようにします。
+
 - **終了した公開済見積依頼** リンクを選択して、公開されている終了した RFQ の一覧を確認します。 終了した RFQ は、期限切れの RFQ です。 RFQ のヘッダーで、有効期限の日付および時刻が表示されます。
 
     終了した RFQ は、品目レベルまでのすべての仕入先入札を表示します。 入札が落札されるかまたは拒否されるかによって、この情報は終了した RFQ に反映されます。 入札に含まれる任意の添付ファイルも利用可能です。
 
-**注記:** この機能は、公的機関の構成が有効である場合のみ使用できます。
+> [!NOTE]
+> この機能は、公的機関の構成がオンである場合のみ使用できます。
 
 ### <a name="bidding"></a>入札
 
-- **入札** をクリックして RFQ で入札を開始します。
+- **入札** を選択して RFQ で入札を開始します。
 
     RFQ のヘッダーおよび行の入札フィールドに対する編集を有効にすると、直接明細行のグリッドで入札を入力できます。 明細行の詳細に追加される必要がある、追加の入札情報も検討する必要があります。
 

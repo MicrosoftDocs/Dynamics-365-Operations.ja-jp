@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 3fccac39fdf5947e5bc2c489a1802056df68497d
-ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "3396093"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408814"
 ---
 # <a name="strong-customer-authentication-sca-using-the-adyen-connector"></a>Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)
 
@@ -54,7 +54,7 @@ SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment C
 
 ## <a name="functional-experience"></a>機能のエクスペリエンス
 
-顧客が SCA にリダイレクトされると、通常、新しいブラウザ ウィンドウ または iFrame 内で、銀行からチャレンジが提供されます。 認証されると、チェックアウト セッションにリダイレクトされます。 検証に失敗すると、チェックアウトを続行することはできません。 
+顧客が SCA にリダイレクトされると、通常、新しいブラウザ ウィンドウまたは iFrame 内で、銀行から課題が提出されます。 認証されると、チェックアウト セッションにリダイレクトされます。 検証に失敗すると、チェックアウトを続行することはできません。 
 
 ## <a name="additional-resources"></a>追加リソース
 

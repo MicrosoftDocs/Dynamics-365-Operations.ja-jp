@@ -15,21 +15,21 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4618ea82744b5967cfce8258412e53a7d8aa67f3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccf4c722bd2342888326ae65e9f059bcd307c98f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431646"
 ---
 # <a name="service-subscriptions"></a>サービスの定期売買
 
 [!include [banner](../includes/banner.md)]
 
-定期売買は、時間/実費払プロジェクトに基づいています。 定期売買は、プロジェクトから**サービスの定期売買**ページで作成するか、サービスの定期売買グループを使用して作成できます。
+定期売買は、時間/実費払プロジェクトに基づいています。 定期売買は、プロジェクトから **サービスの定期売買** ページで作成するか、サービスの定期売買グループを使用して作成できます。
 
 各定期売買に対して、任意の数の定期売買手数料を作成できます。 定期売買手数料は、顧客に請求するトランザクションです。
 

@@ -17,17 +17,17 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430121"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419386"
 ---
 # <a name="set-up-injury-and-illness-information"></a>けが/病気の情報を設定します
 
 
 
-雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。 [障害と疾病] ページで情報を設定し、職場における障害または疾病の報告を促進できます。 ここでは、治療、原価、結果のタイプなど、傷害と疾病のタイプを設定できます。 この手順の作成に使用するデモ データの会社は USMF です。
+雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。 けがおよび病気のページで情報を設定し、職場におけるけがまたは病気の報告を促進できます。 ここでは、治療、原価、結果のタイプなど、傷害と疾病のタイプを設定できます。 この手順の作成に使用するデモ データの会社は USMF です。
 
 1. [人事管理] > [作業者] > [けがおよび病気] > [けがおよび病気の設定] へ移動します。
 2. [新規] をクリックします。

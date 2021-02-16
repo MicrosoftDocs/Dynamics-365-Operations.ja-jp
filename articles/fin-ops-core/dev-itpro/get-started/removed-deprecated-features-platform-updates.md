@@ -3,24 +3,23 @@ title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
-ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
+ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457569"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689569"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -28,19 +27,62 @@ ms.locfileid: "3457569"
 
 このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 
-- *削除された*機能は製品では使用できません。
-- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-> [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
+| **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
+| **配置オプション**              | All|
+| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | メタデータ修正プログラムは、バージョン 8.1 で 2018 年 7 月に導入された [One Version](../../fin-ops/get-started/one-version.md) サービス更新プログラムではサポートされなくなりました。 |
+| **別の機能で置き換えられているか?**   | サポートされているバージョンでは、個別のメタデータ修正プログラムは使用できません。 代わりに、累積的な品質更新が適用されます。 |
+| **影響を受ける製品領域**         | Visual Studio アドイン |
+| **配置オプション**              | 開発仮想マシン |
+| **ステータス**                         | バージョン 10.0.15 では、アドインが Visual Studio ツールに含まれなくなりました。 |
+
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.14 に対する Platform update
+
+### <a name="online-users-page"></a>オンライン ユーザー ページ 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | これは、以前のクライアント/サーバー アーキテクチャ用に構築されたレガシーページです。 このページの情報は常に正確であるとは限らず、混乱や誤解を招く可能性があります。 |
+| **別の機能で置き換えられているか?**   | 今後の更新プログラムで新しいページを提供する予定です。|
+| **影響を受ける製品領域**         | システム管理 |
+| **配置オプション**              | All |
+| **ステータス**                         | 2021 年 10 月までに、このフォームは削除されます。   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
 
-> [!NOTE]
-> バージョン 10.0.13 はまだリリースされていません。 この情報は計画目的のために提供されています。 バージョン 10.0.13 のコンテンツと機能は、変更されることがあります。 このリリースの詳細については、[ご利用いただけるサービス更新プログラム](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
 
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS レポート プロパティで定義されたカスタム コード 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 一般に、カスタム コードは限られたメリットしかなく、同時に重要なリソースと、サポートのためのコンピューティングが必要になります。 カスタム コードは、レポート作成者が主にカスタム コード アセンブリからパブリック メソッドを呼び出すために使用します。 ただし、クラウドにホストされるサービスは、SSRS レポートのカスタム アセンブリへの参照はサポートしていません。 |
+| **別の機能で置き換えられているか?**   | レポート作成者は、すべてのテキスト ボックス式での計算、変換、書式設定の処理に対して、パブリック .NET API を引き続き参照することを選択できます。 詳細については、[コードをレポート (SSRS) に追加する](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15) をご覧ください。  |
+| **影響を受ける製品領域**         | カスタム コードを含む RDL で定義されているアプリケーション レポート デザインのサブセット。 |
+| **配置オプション**              | All |
+| **ステータス**                         | バージョン 10.0.13 を使用した場合、コンパイラは、SSRS レポート定義でカスタム コードが検出された場合に警告を発行します。 この問題を修正するには、レポート デザイン定義を開き、すべてのカスタム コードの成果物を削除します。 この警告は、将来の更新でコンパイラ エラーに置換されます。   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>3 つの jQuery コンポーネント ライブラリのアップグレード 
 
@@ -51,6 +93,27 @@ ms.locfileid: "3457569"
 | **影響を受ける製品領域**         | 拡張可能なコントロール、特に廃止または削除された Api を使用したカスタム JavaScript コード |
 | **配置オプション**              | すべて |
 | **ステータス**                         | バージョン 10.0.13/プラットフォーム アップデート 37を使用すると、必要に応じて "3 つの jQuery コンポーネント ライブラリをアップグレードする" 機能を有効にして、最新のライブラリに移動することができます。 影響を受ける API の移行時間を確保するために、2021 年 4 月のリリースでは、新しいライブラリへの移動が必須となります。   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>既存のグリッドコントロール/forceLegacyGrid () API
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 既存のグリッドコントロールは、新しいグリッドコントロールに置き換えられます。 |
+| **別の機能で置き換えられているか?**   | [新しいグリッド コントロール](../..//fin-ops/get-started/grid-capabilities.md) |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **ステータス**                         | バージョン 10.0.13 では、新しいグリッド コントロールが一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 新しいグリッド コントロールは、2021 年 10 月リリースで必須になります。 この新しいグリッド コントロールが必須化される場合、**forceLegacyGrid()** API は尊重されません。 |
+
+### <a name="personalization-without-saved-views"></a>保存されていないビューのないパーソナル化 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | パーソナル化サブシステムは、ビューの保存機能にオーバーホールされているので、パフォーマンスが向上し、追加機能を提供します。 |
+| **別の機能で置き換えられているか?**   | 保存されているビュー |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **ステータス**                         | バージョン 10.0.13/プラットフォーム更新プログラム 37では、ビューの保存機能は一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 この保存されたビュー機能は、2021 年 10 月リリースで必須になります。 |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.12 に対する Platform update
 
@@ -83,8 +146,8 @@ ms.locfileid: "3457569"
 | **廃止 / 削除の理由** | Visual Studio の最新バージョンをサポートするためには、Visual Studio の X++ 拡張機能に変更を加える必要があります。 これらの変更は、Visual Studio 2015 と互換性がありません。 |
 | **別の機能で置き換えられているか?**   | Visual Studio 2017 は、配置および必要なバージョンとして Visual Studio 2015 を置き換えます。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
-| **配置オプション**              | すべて |
-| **ステータス**                         | Visual Studio 2017 で新しいバーチャルマシン (Vm) の可用性 が発表されると、Visual Studio 2015のみの既存の VM を、2021 のリリース Wave 1 で再配置する必要があります。 |
+| **配置オプション**              | All |
+| **ステータス**                         | バージョン 10.0.13 (プラットフォームの更新 37) またはそれ以降のバージョンで展開される仮想マシンには、Visual Studio 2017 が含まれます。 バージョン 10.0.16 (プラットフォームの更新 40) は、Visual Studio 2015 をサポートする最終リリースです 。 Visual Studio 2015 のみを含む仮想マシンは、バージョン 10.0.17 (プラットフォーム更新 41) に更新することはできません。 |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>無効なフィールド参照を含むフィールド グループ
 

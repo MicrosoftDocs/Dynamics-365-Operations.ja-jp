@@ -16,15 +16,15 @@ ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770236"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459377"
 ---
 # <a name="public-sector-home-page"></a>公的機関ホーム ページ
 
@@ -55,7 +55,7 @@ ms.locfileid: "2770236"
 \* 組織がフランスにある場合にのみ適用されます。
 
 ## <a name="why-do-i-need-the-public-sector-configuration-key"></a>公的機関のコンフィギュレーション キーが必要なのはなぜですか。
-**公的機関**のコンフィギュレーション キーを使用すると、コア アプリケーションを補うページおよびコントロールが有効になります。 このキーは、**ライセンス コンフィギュレーション** ページで有効または無効にできます。
+**公的機関** のコンフィギュレーション キーを使用すると、コア アプリケーションを補うページおよびコントロールが有効になります。 このキーは、**ライセンス コンフィギュレーション** ページで有効または無効にできます。
 
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>公的機関のコンフィギュレーション キーは、他のコンフィギュレーション キーとどのように関連付けられていますか。
 次の表では、このコンフィギュレーション キーが他のコンフィギュレーション キーにどのように関連しているかを説明しています。

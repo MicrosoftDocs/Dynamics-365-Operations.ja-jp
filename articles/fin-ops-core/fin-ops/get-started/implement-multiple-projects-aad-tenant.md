@@ -1,28 +1,27 @@
 ---
-title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 06/07/2018
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 990118d9569cbe8b9a8f039edaa8a26cca718c81
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e26b95c89674b02f69bd5ec72c48f42b9fe66e0c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812545"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693168"
 ---
-# <a name="multiple-lcs-projects-and-production-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+# <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,9 +36,9 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 
 同じ Azure AD テナント上で実行されるすべての LCS 実装プロジェクトでは、ライセンス契約の最小要件を満たす必要があります。 たとえば、同じ Azure AD テナントに 3 つの LCS 実装プロジェクトがある場合、顧客は最低限のサブスクリプション ライセンス数の 3 倍以上を購入する必要があります。 現在、ライセンスの最少要件は 20 のユーザー フルライセンスです。 したがって、同じ Azure AD テナントで 3 つの LCS 実装プロジェクトを実行するには、少なくとも 60 ライセンスを購入する必要があります。
 
-ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの**利用可能なサブスクリプション**ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
+ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの **利用可能なサブスクリプション** ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
 
-同時に複数の環境にアクセスするユーザーは、環境ごとに個別にライセンスが必要です。 ライセンスの詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)をダウンロードしてください。
+同時に複数の環境にアクセスするユーザーは、環境ごとに個別にライセンスが必要です。 ユーザーは、各 Azure AD テナントの各製品に対して 1 つのライセンスのみを割り当てることができます。 特定のユーザーの LCS プロジェクトに対するライセンス要件の配賦は、システムの外部で文書化する必要があります。 ライセンスの詳細追加については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) をダウンロードしてください。
 
 ## <a name="disadvantages-of-multiple-lcs-projects"></a>複数の LCS プロジェクトの欠点
 
@@ -73,6 +72,6 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 同じ Azure AD テナントにおける、複数の LCS プロジェクトの影響を、顧客が理解していることを確認します。
 
 ## <a name="online-deployments-in-china-sovereign-cloud"></a>中国の主権クラウドにおけるオンラインの展開
-中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、 [Finance and Operations アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
+中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[中国で 21Vianet が運用する Finance and Operations アプリ](../../dev-itpro/deployment/china-local-deployment.md)を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
 
 これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、マルチ Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。

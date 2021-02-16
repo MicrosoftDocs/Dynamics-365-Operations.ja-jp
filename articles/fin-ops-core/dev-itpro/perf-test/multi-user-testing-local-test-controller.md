@@ -3,26 +3,25 @@ title: パフォーマンス SDK とローカル テスト コントローラー
 description: このトピックでは、タスク レコーダーから生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してマルチユーザー テストを行う方法を説明します。
 author: hasaid
 manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cf46dc723efef26e1094de08ae4f65df9b0e1ca
-ms.sourcegitcommit: 3f344b841027c0025419c8c3958e0477d51eea36
+ms.openlocfilehash: f3ce022f42b7bc45698311fee40572119a915930
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3409575"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680452"
 ---
 # <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
 
@@ -39,15 +38,15 @@ ms.locfileid: "3409575"
 
 - Microsoft Azure サブスクリプションに、プラットフォーム更新プログラム 21 以降の開発環境があります。
 > [!IMPORTANT]
-> Finance and Operations アプリが 21Vianet に配置された場合、環境のプラットフォーム更新は 10.0.11 またはそれ以上のプラットフォーム更新である必要があります。
-- 開発環境に Microsoft Visual Studio 2015 Enterprise edition がある
+> Finance and Operations アプリが 21Vianet に配置された場合、環境のプラットフォーム更新プログラムは 10.0.11 またはそれ以上である必要があります。
+- 開発環境には Microsoft Visual Studio Enterprise Edition があります。
 - 開発環境と同じリリース (アプリケーション バージョンとプラットフォーム更新プログラム) の階層 2 以上のサンドボックス環境があります。
 - [タスク レコーダーとパフォーマンス SDK を使用したシングルユーザー テスト](single-user-test-perf-sdk.md) の手順に従って開発環境を構成しました。
 - エンド ツー エンド (E2E) シナリオ用に C\# パフォーマンス テスト クラスが生成され、[タスク レコーダーとパフォーマンス SDK を使用したシングルユーザー テスト](single-user-test-perf-sdk.md) の手順に従ってシングルユーザー テストを実行できます。
 
 ## <a name="configure-a-development-environment-for-multi-user-testing"></a>マルチ ユーザー テストのための開発環境のコンフィギュレーション
 
-1. [SQL Server の ODBC ドライバー 17](https://download.microsoft.com/download/E/6/B/E6BFDC7A-5BCD-4C51-9912-635646DA801E/en-US/msodbcsql_17.2.0.1_x64.msi) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
+1. [SQL Server の ODBC ドライバー 17](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
 
     [![Visual Studio Online フォルダーの msodbcsql ファイル](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 
@@ -134,7 +133,7 @@ ms.locfileid: "3409575"
 
     [![更新された CloudEnvironment.config ファイル](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
 
-    - Finance and Operations アプリが 21Vianet に配置されている場合、必ず **NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定してください。
+    - Finance and Operations アプリが 21Vianet に配置された場合、**SelfMintingSysUser** および **SelfMintingAdminUser** で **NetworkDomain="https://sts.chinacloudapi.cn/"** を指定してください。
 
 4. **vsonline.testsettings** を構成します。 **テストの設定** ダイアログ ボックスの **一般** タブの **テストの実行場所** フィールド グループで **ローカル コンピューターまたはテスト コント ローラーを使用してテストを実行** オプションを選択します。
 
@@ -215,25 +214,50 @@ ms.locfileid: "3409575"
     
 ## <a name="configure-a-tier-2-or-above-sandbox-environment-for-multi-user-testing"></a>マルチユーザー テスト用に階層 2 以上のサンドボックス環境を構成する
 
-1. 各 Application Object Server (AOS) コンピューターの **ローカル コンピュータ\\パーソナル** の下に **authcert.pfx** と **authcert.cer** 証明書をインストールします。
+### <a name="if-your-aos-allows-remote-desktop-connections"></a>AOS がリモート デスクトップ接続を許可している場合
 
-    [![インストールした証明書](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
+1. **管理ツール** から Microsoft インターネット インフォメーション サービス (IIS) マネージャを開き、**サイト** から **AOSService** を選択します。
+2. 右側で **アクションの確認** を選択し、次にウィンドウの一番下から **wif.config** ファイルを見つけます。
+3. **authcert.pfx** 証明書の拇印を `https://fakeacs.accesscontrol.windows.net/` オーソリティの下部に追加し、変更を保存します。
 
-2. **authcert.pfx** 証明書の拇印を階層 2 以上のサンドボックス環境の **wif.config** ファイルに追加します。
-3. **管理ツール** から Microsoft インターネット インフォメーション サービス (IIS) マネージャを開き、**サイト** から **AOSService** を選択します。
-4. 右側で **アクションの確認** を選択し、次にウィンドウの一番下から **wif.config** ファイルを見つけます。
-5. 生成された証明書の拇印を `https://fakeacs.accesscontrol.windows.net/` 認証局の末尾に追加します。
+    [![生成された証明書から追加された拇印](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-22.png)
 
-    [![生成された証明書から追加された拇印](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
+4. 各 AOS コンピューターで手順 1 ～ 3 を繰り返します。
+5. すべての AOS インスタンスを再起動します。
 
-6. 変更を保存して IIRESET を実行します。
-7. 各 AOS コンピューターで手順 3 ～ 6 を繰り返します。
-8. **SampleLoadTest.load** テストを開き、テスト ユーザーを作成してターゲット環境にインポートします。 次に各ユーザーに **システム管理者** セキュリティ ロールを割り当てます。
+### <a name="if-you-do-not-have-remote-desktop-access-to-the-server"></a>サーバーへのリモート デスクトップ アクセス権がない場合
 
-    [![ターゲット環境のユーザー ページ](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
+Microsoft が管理するサンドボックス、またはセルフ サービス タイプ サンドボックスなど、リモート デスクトップ プロトコル (RDP) アクセスが削除された場合、Microsoft は環境に応じた証明書を生成し、事前にコンフィギュレーションします。 次の手順に従って、PerfSDK での使用に必要な RSAT 証明書を取得します。
 
-    > [!NOTE]
-    > **MS.Dynamics.Performance.CreateUsers.exe** を実行してテスト ユーザーを作成することもできます。 この場合、IISRESET を実行する必要はありません。
+1. Lifecycle Services の環境詳細ページの **管理** の下に、2 つの新しいオプションが表示されます。
+  - RSAT 証明書のダウンロード
+  - RSAT 証明書を再生成する
+
+![RSAT 証明書のオプションのダウンロードと再生成](rsat/media/rsat-lcs1.png)
+
+**ダウンロード** ボタンを使用して、証明書バンドルを .zip ファイルとして取得します。
+
+2. クリアテキスト パスワードが画面に表示されるという警告が表示されます。 **はい** を選択して続行します。
+
+3. クリアテキスト パスワードを後で使用できるようにコピーします。 .zip ファイルがダウンロードされていることを確認します。 .zip ファイルの内部には、証明書 (.cer) と個人情報交換 (.pfx) ファイルがあります。 ファイルを解凍します。
+
+4. 証明書をダブルクリックして開き、**インストール** を選択します。 この証明書をローカル コンピューターにインストールしてから、**個人** ストアを参照します。 ローカル コンピューターに対してこの手順を繰り返し、特定の **信頼済ルート証明機関** ストアを参照します。
+
+5. 個人情報交換 (.pfx) ファイルをダブルクリックして開き、**インストール** を選択します。 この証明書をローカル コンピューターにインストールしてから、手順 2 で保存したパスワードを入力して **個人** ストアを参照します。 ローカル コンピューターの場所に対してこの手順を繰り返し、手順 2 で保存したパスワードを入力して、特定の **信頼済ルート証明機関** ストアを参照します。
+
+6. 証明書ファイルをダブルクリックして、開きます。 **詳細** タブを参照し、**拇印** セクションが表示されるまで下にスクロールします。 **拇印** を選択し、テキスト ボックスに ID をコピーします。 RSAT に対してこの拇印を使用し、PerfSDK **CloudEnvironment.config** 拇印を更新します。
+![拇印の設定](rsat/media/rsat-lcs4.png)
+
+これで、この証明書を使用して環境に対してテストを実行できます。 証明書は期限が切れる前に Microsoft によって自動的にローテーションされます。その後、上記の手順 1 からこの証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、有効期限に最も近いダウンタイム ウィンドウで 90 日ごとにローテーションされます。 これらのダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
+
+## <a name="create-test-users"></a>新規ユーザーのテスト
+
+**SampleLoadTest.load** テストを開き、テスト ユーザーを作成してターゲット環境にインポートします。 次に各ユーザーに **システム管理者** セキュリティ ロールを割り当てます。
+
+![ターゲット環境のユーザー ページ](./media/multi-user-test-local-23.png)
+
+> [!NOTE]
+> **MS.Dynamics.Performance.CreateUsers.exe** を実行してテスト ユーザーを作成することもできます。 この場合、IISRESET を使用する必要はありません。
 
 ## <a name="run-multi-user-testing-by-using-a-local-test-controller"></a>ローカル テスト コントローラーを使用したマルチユーザー テストの実行
 

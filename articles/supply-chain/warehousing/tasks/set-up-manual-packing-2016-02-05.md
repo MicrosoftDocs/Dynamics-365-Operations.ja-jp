@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8486ca90da44bb4c05c71a2babfc79445ed2dd12
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216899"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432347"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 

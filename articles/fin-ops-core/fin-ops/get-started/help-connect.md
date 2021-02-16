@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 827d4cd14f497b79c85fb084a6295af13c5eb0c7
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 0495bbc008ed1760b98c2c1ace63fc4a8b1ab5cc
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367387"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694424"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 
@@ -52,18 +51,18 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 
 [![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
-ソリューションの作業ガイドを構成するには、**システム パラメーター**のページで次の手順を実行 します。
+ソリューションの作業ガイドを構成するには、**システム パラメーター** のページで次の手順を実行 します。
 
 > [!IMPORTANT]
-> 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して**システム パラメーター**ページを取得します。
+> 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して **システム パラメーター** ページを取得します。
 >
 > [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続")](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
-3. BPM ライブラリの表示順序を選択します。 表示順序では、ライブラリからのタスク録画が**ヘルプ**ウィンドウに表示される順序を定義します。
+3. BPM ライブラリの表示順序を選択します。 表示順序では、ライブラリからのタスク録画が **ヘルプ** ウィンドウに表示される順序を定義します。
 
-これらのステップを完了すると、**ヘルプ** ウィンドウを開いて**タスク ガイド** タブを選択すすることができます。Finance and Operations アプリの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
+これらのステップを完了すると、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブを選択すすることができます。Finance and Operations アプリの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
 
 ### <a name="showing-translated-task-guides"></a>翻訳されたタスク ガイドの表示
 
@@ -89,7 +88,7 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 
 Finance and Operations アプリが既成のフォームで使用されることはほとんどありません。 その代わりに、ソリューションは組織のニーズに合わせてカスタマイズされ、拡張されます。 また、ヘルプ エクスペリエンスをカスタマイズ、拡張することが可能です。 たとえば、製品内の **ヘルプ** ウィンドウにユーザー定義のヘルプを追加できます。
 
-Microsoft では、ユーザー定義のヘルプを展開して**ヘルプ**ウィンドウに接続するツールキットを提供しています。 **ヘルプ**ウィンドウに接続されているユーザー定義のヘルプ ソリューションを設定する方法の詳細については 、[カスタムヘルプの概要](../../dev-itpro/help/custom-help-overview.md)を参照してください。
+Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** ウィンドウに接続するツールキットを提供しています。 **ヘルプ** ウィンドウに接続されているユーザー定義のヘルプ ソリューションを設定する方法の詳細については 、[カスタムヘルプの概要](../../dev-itpro/help/custom-help-overview.md)を参照してください。
 
 ヘルプをカスタマイズするのツールやプロセスを Microsoft と連携したい場合は、[https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback) のフォームに記入してください。
 

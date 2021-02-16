@@ -10,19 +10,18 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 102343
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 01d14b624e197eb22ac8aba439521d62d625dccd
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 8489622b64aa2c16661a9b7ba3c4aef0b364e96a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622786"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688509"
 ---
 # <a name="plan-and-prepare-for-compiling-code-against-the-latest-update"></a>最新の更新プログラムに対してコードをコンパイルするための計画と準備
 

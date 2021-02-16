@@ -1,9 +1,9 @@
 ---
 title: クラウドを利用した検索の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413630"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
 
@@ -73,8 +73,12 @@ Dynamics 365 Commerce では、さまざまなカテゴリでのキーワード�
 
 Dynamics 365 Commerce の強化された並べ替えにより、顧客は検索結果を並べ替え、検索、参照し、価格、製品名、製品番号などの基準で検索結果を絞り込むことができます。 顧客は、製品が新しいか、売れ筋か、または最近追加されたかに基づいて、結果を並べ替えることもできます。
 
+>[!NOTE]
+>これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。 **コマース パラメーター > コンフィギュレーション パラメーター** で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。 
+![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>追加リソース
 
-[既定のカテゴリ ランディング ページと検索結果ページ](category-search-page-overview.md)
+[既定のカテゴリ ランディング ページと検索結果ページの概要](category-search-page-overview.md)
 
 [SEO メタデータの管理](manage-seo-metadata.md)

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e44b337379aab222cc1f911d30471fd6ab36685f
-ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
+ms.openlocfilehash: 045c81f3fafd8bfc1e6e80fa4be75a72bb8c8987
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080760"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680518"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
@@ -42,7 +41,7 @@ ms.locfileid: "3080760"
     -   **検証** - 番号
     -   **基数** - ZeroMore
     -   **名前** - 部門などの、財務分析コードの名前を入力します。
-    -   **関連データ エンティティ** - **名前**フィールドで入力した財務分析コードのエンティティを選択します。 次のテーブルに、財務分析コードと関連するエンティティの一覧を示します。
+    -   **関連データ エンティティ** - **名前** フィールドで入力した財務分析コードのエンティティを選択します。 次のテーブルに、財務分析コードと関連するエンティティの一覧を示します。
 
         | 財務分析コード '値の使用元'     | 関連するエンティティ                            |
         |-------------------------------------------|-------------------------------------------|
@@ -89,7 +88,7 @@ ms.locfileid: "3080760"
 
 5.  **関係** で、**財務分析コード** の名前を右クリックします。
 6.  **新規** を選択して **標準** をクリックします。
-7.  プロパティ ウィンドウで、**フィールド**で財務分析コードの名前を選択します。
+7.  プロパティ ウィンドウで、**フィールド** で財務分析コードの名前を選択します。
 8.  関連フィールドに **Value** と入力します。 新しいリレーションは、次の例のようになります:
     
     ```xpp

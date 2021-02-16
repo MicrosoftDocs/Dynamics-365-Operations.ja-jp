@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
 ms.openlocfilehash: 1b59fdbdd9ed46f42afd3e7310d2cd3f076edd95
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006382"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461806"
 ---
 # <a name="get-the-onboard-app"></a>Onboard アプリを入手する
 
@@ -63,9 +63,9 @@ Onboard アプリを取得するには、次の手順に従ってください。
 
 ## <a name="try-the-walkthrough"></a>チュートリアルをお試しください
 
-最初に Onboard を開いた場合、**チュートリアルの開始**を選択して、作業テンプレートを開始できます。
+最初に Onboard を開いた場合、**チュートリアルの開始** を選択して、作業テンプレートを開始できます。
 
-チュートリアルをスキップする場合は、後で**ヘルプ** ボタン (**?**) を選択してから、**はじめに**を選択して、チュートリアルにアクセスできます。
+チュートリアルをスキップする場合は、後で **ヘルプ** ボタン (**?**) を選択してから、**はじめに** を選択して、チュートリアルにアクセスできます。
 
 ![[Onboard チュートリアルを開始する](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
 
@@ -75,7 +75,7 @@ Onboard にサインアップする際に既定のドメイン名を受け入れ
 
 1. [Microsoft サインイン ページ](https://portal.office.com/) を開きます。
 2. メッセージが表示されたら、Microsoft 365 電子メール アドレスとパスワードを入力します。
-3. **ユーザーへの推奨事項**で独自のドメインを追加する推奨事項が表示される場合、**推奨事項の表示**を選択し、プロンプトに従います。 推奨事項を表示しない場合、左のメニューで**すべて表示**を選択し、**設定**を選択し、**ドメイン**を選択してから、**ドメインの追加**または**ドメインの購入**を選択します。 その後、プロンプトに従います。
+3. **ユーザーへの推奨事項** で独自のドメインを追加する推奨事項が表示される場合、**推奨事項の表示** を選択し、プロンプトに従います。 推奨事項を表示しない場合、左のメニューで **すべて表示** を選択し、**設定** を選択し、**ドメイン** を選択してから、**ドメインの追加** または **ドメインの購入** を選択します。 その後、プロンプトに従います。
 
 ## <a name="next-steps"></a>次のステップ
 

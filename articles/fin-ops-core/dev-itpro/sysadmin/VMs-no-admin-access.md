@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform
 ms.custom: ''
 ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 7132cc3a84d0a0a92cd6a1c67cedff12684def36
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: b9e5ab743e5adb6842ff77f27f2c23b9dec3459d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029382"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679228"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -44,7 +43,7 @@ Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integra
 はい、サービス ボリューム ドライブに対する完全なアクセス権があります。 したがって、監視データをクリーンアップすることができます。
 
 ## <a name="what-are-the-alternatives-to-vms-that-dont-allow-administrator-access"></a>管理者アクセスを許可しない VM に代わる方法とは
-プライベート Azure サブスクリプションの Microsoft Azure 環境とローカル仮想ハード ディスク (VHD) の両方は管理者アクセスを許可します。 ただし、Visual Studio を管理者として実行する必要があります。 管理者は明示的にではなく、**管理者**グループを介してのみこれらの代替手段にアクセスできるため、この要件が適用されます。
+プライベート Azure サブスクリプションの Microsoft Azure 環境とローカル仮想ハード ディスク (VHD) の両方は管理者アクセスを許可します。 ただし、Visual Studio を管理者として実行する必要があります。 管理者は明示的にではなく、**管理者** グループを介してのみこれらの代替手段にアクセスできるため、この要件が適用されます。
 
 ## <a name="can-i-run-visual-studio-as-an-administrator"></a>Visual Studio を管理者として実行できますか。
 管理者として Visual Studio を実行する必要はありません。 Microsoft 所有の Azure サブスクリプションである VM に対して、リモート デスクトップ プロトコル (RDP) を使用して管理者として接続することはできません。 これらの VM には、サブスクリプションおよび Tier 1 アドオン VM に含まれる Tier 1 VM が含まれます。 ただし、管理者として Microsoft 所有のサブスクリプションの下にはない VM に接続する場合、管理者として引き続き Visual Studio を実行する必要があります。
@@ -53,7 +52,7 @@ Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integra
 IIS Express を使用する必要があります。 詳細については、次のセクションを参照してください。
 
 ## <a name="what-are-the-instructions-for-using-iis-express"></a>IIS Express の使用方法は ?
-IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動**を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
+IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動** を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
 
 IIS Express および Finance and Operations Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします:
 

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: d1534e37e83e22dd9860de54165c062935db3798
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430650"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419422"
 ---
 # <a name="configure-employee-self-service"></a>従業員セルフ サービスのコンフィギュレーション
 
@@ -31,9 +31,9 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
 
 ## <a name="set-up-a-benefit-plans-tile"></a>給付金計画タイルの設定
 
-1. **給付金管理**ワークスペースで、**設定**の**従業員セルフサービス パラメータ**を選択します。
+1. **給付金管理** ワークスペースで、**設定** の **従業員セルフサービス パラメータ** を選択します。
 
-2. **給付金計画タイルの設定**タブをクリックし**新規**を選択します。
+2. **給付金計画タイルの設定** タブをクリックし **新規** を選択します。
 
 3. 次のフィールドの値を指定します。
 
@@ -53,9 +53,9 @@ Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービス�
 
 ## <a name="set-up-a-flex-credit-plan-tile"></a>フレックス クレジット プラン タイルを設定する
 
-1. **給付金管理**ワークスペースで、**設定**の**従業員セルフサービス パラメータ**を選択します。
+1. **給付金管理** ワークスペースで、**設定** の **従業員セルフサービス パラメータ** を選択します。
 
-2. **フレックス クレジット プラン タイルの設定**タブをクリックし**新規**を選択します。
+2. **フレックス クレジット プラン タイルの設定** タブをクリックし **新規** を選択します。
 
 3. 次のフィールドの値を指定します。
 

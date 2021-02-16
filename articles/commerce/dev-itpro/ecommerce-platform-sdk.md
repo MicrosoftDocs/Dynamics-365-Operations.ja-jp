@@ -1,7 +1,7 @@
 ---
 title: E コマース プラットフォーム ソフトウェア開発キット (SDK)
 description: このトピックでは、電子商取引プラットフォーム SDK について説明します。
-author: kfend
+author: mugunthanm
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -10,45 +10,44 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 18101
 ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
-ms.author: meeram
+ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ae662491d93459d65db716fb612145d3915e2a0f
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 72250684395aa59142b3669722c7fe581704c8e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070436"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684969"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子商取引プラットフォーム SDK について説明します。 E コマース プラットフォーム SDK は、次のコンポーネントで構成されています。
+このトピックでは、電子商取引プラットフォーム SDK について説明します。 E コマース プラットフォーム ソフトウェア開発キット (SDK) は、次のコンポーネントで構成されています。
 
 -   フレームワーク
 -   コントロール
 -   発行 (バージョン 1661 以上でサポートされます: [Retail サーバーでのサービス間認証のサポート](https://community.dynamics.com/ax/b/axforretail/archive/2016/09/24/support-for-service-to-service-authentication-in-retail-server))
--   サンプル ASP.net Web サイト
+-   サンプル ASP.NET Web サイト
 
-## <a name="use-the-sample-aspnet-website"></a>サンプル asp.net web サイトの使用
+## <a name="use-the-sample-aspnet-website"></a>サンプル ASP.NET Web サイトの使用
 
 
 ### <a name="download-the-retail-sdk"></a>Retail SDK をダウンロード
 
-Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。 詳細については、「」を参照してください。
+Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。
 
 - 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)」を参照してください。 
 - 修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。 修正プログラムは累積的であり、その他のすべての修正プログラムが含まれています。 
 
 Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。
 
-### <a name="use-the-retail-sdk-to-create-the-sample-aspnet-website"></a>Retail SDK を使用して、サンプルの asp.net Web サイトを作成します
-1.  管理者モードで Visual Studio を開きます。 これは、inetpub フォルダーにパブリッシュするために必要です。
+### <a name="use-the-retail-sdk-to-create-the-sample-aspnet-website"></a>Retail SDK を使用して、サンプル ASP.NET Web サイトを作成する
+1.  管理者モードで Visual Studio を開きます。 この手順は、inetpub フォルダーにパブリッシュするために必要です。
 2.  C:\\Microsoft Dynamics AX70\\RetailSdkOnlineStoreOnlineStore.sln を開き、すべてのフレームワーク コンポーネントを含めます。
 3.  サンプルのオンライン ストアは C:\\Microsoft Dynamics AX70\\RetailSdkSampleExtensionsOnlineStore にあります。
 4.  Visual Studio 内から Web ストア フロントをコンパイルし、公開します。
@@ -57,27 +56,29 @@ Visual Studio Online などのソース管理システムに SDK を配置する
     -  ただし、RetailSDK から Web ストアフロントを公開すると、C:\\inetpub\\RetailWeb\\Storefront でファイルがドロップされます。
     -  したがって、RetailStorefrontWebSite の物理パスは、以前と同じポートで Web ストア フロントにアクセスする「C:\\inetpub\\RetailWeb\\Storefront」にポイントするように更新される必要があります。 もう 1 つのオプションは、新しい Web サイトを作成し inetpub 場所を指すことです。
 
-6.  `http://localhost:55080` を参照、または `https://usnconeboxax1ecom.cloud.onebox.dynamics.com/` にアクセスして、テスト asp.net Web サイトを表示します。
+6.  `http://localhost:55080` を参照、または `https://usnconeboxax1ecom.cloud.onebox.dynamics.com/` にアクセスして、テスト ASP.NET Web サイトを表示します。
 
-### <a name="enabling-anonymous-access"></a>匿名アクセスの有効化
+### <a name="enable-anonymous-access"></a>匿名アクセスの有効化
 
-E コマース Web サイトでは、匿名アクセスを有効にする必要があります。 これは、アプリ設定の Commerce Scale Unit web.config で web.config ファイルとして利用できます。 Web サイトが動作するため、これが有効であることを確認してください。 
+E コマース Web サイトでは、匿名アクセスが正常に機能するように許可する必要があります。 アプリケーション設定にある Commerce Scale Unit web.config ファイルに次のキーを追加して、匿名アクセスが有効であることを確認にします。
 
 `
 add key="IsAnonymousEnabled" value="true"
 `
 
-### <a name="externally-accessing-the-aspnet-website"></a>ASP.net Web サイトに外部からアクセス
+### <a name="externally-accessing-the-aspnet-website"></a>ASP.NET Web サイトに外部からアクセス
 
-これらのいずれかが当てはまる場合は、次の設定変更が必要になります。
+これらのいずれかが当てはまる場合は、次の構成の変更が必要になります。
 
--   電子商取引サーバーと同梱上にはないブラウザー内から Web ストア フロントにアクセスしています。
--   電子商取引サーバーと Commerce Scale Unit が 2 つの異なるボックス上にある場合。
+-   E コマース サーバーと同じボックス上にはないブラウザー内から Web ストア フロントにアクセスしています。
+-   E コマース サーバーおよび Commerce Scale Unit は 2 つの異なるボックス上にあります。
 
 RetailStorefrontWebSite の web.config ファイル内の "retailServerUrl" を更新する必要があります。 ローカル ホストの代わりにマシン名を使用するには、次の 2 つのフィールドを更新する必要があります。
 
-- retailServerUrl=<http://localhost:35080/RetailServer/V1>
-- &lt;キーの追加 ="RetailServerRoot" 値 ="<http://localhost:35080/RetailServer/V1>" /&gt;
+```xml
+retailServerUrl=<http://localhost:35080/RetailServer/V1>
+<add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" />
+```
 
 Web ストア フロントを HTTPS 経由でアクセスする場合は、前述の Url を同等の HTTPS に更新する必要があります。
 
@@ -85,9 +86,10 @@ Web ストア フロントを HTTPS 経由でアクセスする場合は、前�
 
 E コマースの Web サイトは、web.configで指定された作業単位数 (チャネル) で動作します。これを変更するには、以下の OU \# を変更します。 Fabrikam はデモ データ内で「077」であることに注意してください。 RetailStorefrontWebSite の web.config 内の "retailServerUrl" を更新する必要があります。 ローカル ホストの代わりにマシン名を使用するには、次の 2 つのフィールドを更新する必要があります。
 
--  `<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">`
-
--  `<add key="OperatingUnitNumber" value="068" />`
+```xml
+<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
+<add key="OperatingUnitNumber" value="068" />
+```
 
 ## <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 ### <a name="authentication-providers-that-you-are-using"></a>使用している認証プロバイダー
@@ -102,6 +104,6 @@ E コマース プラットフォームは、認証のためのメカニズム�
     
     後続のステップは、追加プロバイダーを登録する場合にのみ行う必要があります。
 
-2.  **Retail 共有パラメーター -&gt; ID プロバイダーを開く**フォームは、追加プロバイダーを登録するために使用できます。
+2.  **Retail 共有パラメーター -&gt; ID プロバイダーを開く** フォームは、追加プロバイダーを登録するために使用できます。
 3.  配送スケジュール 1110 を実行します。
 

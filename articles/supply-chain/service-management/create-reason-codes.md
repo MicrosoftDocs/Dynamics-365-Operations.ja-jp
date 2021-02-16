@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff99161aa88e853790ddbf5f327bff5bb3898f56
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c65a63dc48be6241ea23c5330fc3fbe526207613
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202839"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431655"
 ---
 # <a name="create-reason-codes"></a>理由コードの作成    
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **設定** \> **サービス注文** \> **ステージ理由コード**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス注文** \> **ステージ理由コード** の順にクリックします。
 
 2.  Ctrl + N キーを押して新しい理由コードを作成します。
 

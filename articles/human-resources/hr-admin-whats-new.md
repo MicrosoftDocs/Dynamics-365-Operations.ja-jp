@@ -1,9 +1,9 @@
 ---
 title: Human Resources の新機能および変更された機能
-description: 週ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 ここに記載されている記事では、毎週行われる変更について詳しく説明します。
+description: 週ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 ここに記載されているトピックでは、毎週行われる変更について詳しく説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/01/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33c436c0ac65470c6237d079314222b2925cfca7
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
+ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443444"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4669087"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resources の新機能および変更された機能
 
-2 週間ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 このセクションの記事では、各リリースで行われた変更について詳しく説明します。
+2 週間ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 ここに記載されているトピックでは、各リリースで行われた変更について詳しく説明します。
 
-予定されている機能または Human Resources の更新プロセスの詳細については、次の記事を参照してください。
+>[!NOTE]
+>休日を考慮した、2020 年 11 月と 12 月のリリース スケジュールは次のとおりです:
+>
+>- 11 月リリース: 11 月 2 日 - 11 月 13 日
+>- 12 月リリース: 11 月 30 日 - 12 月 11 日
+> 
+>2 週間のリリース頻度は、2021 年 1 月 11 日に通常どおり再開します。
+
+予定されている機能または Human Resources の更新プロセスの詳細については、次の記事を参照してください。 
 
 - [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -41,6 +49,15 @@ ms.locfileid: "3443444"
 
 Human Resources の隔週リリースの新機能や変更事項をについては、次の記事を参照してください:
 
+[2020 年 12 月 2 日](hr-whats-new-2020-12-02.md)</br>
+[2020 年 10 月 22 日](hr-whats-new-2020-10-22.md)</br>
+[2020 年 9 月 16 日](hr-whats-new-2020-09-16.md)</br>
+[2020 年 9 月 3 日](hr-whats-new-2020-09-03.md)</br>
+[2020 年 8 月 20 日](hr-whats-new-2020-08-20.md)</br>
+[2020 年 8 月 6 日](hr-whats-new-2020-08-06.md)</br>
+[2020 年 7 月 23 日](hr-whats-new-2020-07-23.md)</br>
+[2020 年 7 月 8 日](hr-whats-new-2020-07-08.md)</br>
+[2020 年 6 月 23 日](hr-whats-new-2020-06-23.md)</br>
 [2020 年 6 月 11 日](hr-whats-new-2020-06-11.md)</br>
 [2020 年 5 月 28 日](hr-whats-new-2020-05-28.md)</br>
 [2020 年 5 月 14 日](hr-whats-new-2020-05-14.md)</br>
@@ -59,6 +76,6 @@ Human Resources の隔週リリースの新機能や変更事項をについて�
 
 ## <a name="see-also"></a>参照
 
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)

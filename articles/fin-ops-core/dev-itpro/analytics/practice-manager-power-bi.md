@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
-ms.author: knelson
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a6e6b8d6243c1f7c5831baaee91baf38d51e0c26
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770000"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685708"
 ---
 # <a name="practice-manager-power-bi-content"></a>プラクティス マネージャー Power BI コンテンツ
 
@@ -40,7 +39,7 @@ ms.locfileid: "2770000"
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-**プラクティス マネージャー** Power BI コンテンツが**プロジェクト管理**ワークスペースで表示されます。
+**プラクティス マネージャー** Power BI コンテンツが **プロジェクト管理** ワークスペースで表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 

@@ -3,24 +3,23 @@ title: Lifecycle Services (LCS) の新機能および変更された機能
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のリリース計画、主要な発表などへのリンクを提供します。
 author: laneswenka
 manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34597728d3e2236a352cda0a2cc5fc79a73cd88f
-ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
+ms.openlocfilehash: 6713a81e3b72d804bcd2862ce9b03fd26a85cc78
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3385561"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682581"
 ---
 # <a name="whats-new-or-changed-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能および変更された機能
 
@@ -34,6 +33,15 @@ LCS の使用を開始するには、[Lifecycle Services (LCS) ユーザーガ�
 > LCS 機能およびサービスの変更は、ブログ投稿では発表されなくなります。 LCS 機能の説明については、[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) で提供されます。 
 
 次のセクション リストでは、LCS リリースに含まれる機能を一覧表示します。
+## <a name="june-2020---wave-1"></a>2020 年 6 月 - ウェーブ 1
+| 面 | 機能 |ステータス |
+|------|---------|-------|
+| ビジネス プロセス モデラー (BPM) | [タスク記録のダウンロード (AXTR)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/download-task-recordings-business-process-modeler) | 一般提供 | 
+| サービスの更新 | [キャンセルされた更新の表示](configure-service-updates.md#canceled-updates) | 一般提供 |  
+
+## <a name="may-2020---wave-2"></a>2020 年 5 月 - ウェーブ 2
+
+このリリースには、一般的なパフォーマンスの向上および小さなバグの修正が含まれています。   
 
 ## <a name="may-2020---wave-1"></a>2020 年 5 月 - ウェーブ 1
 | 面 | 機能 |ステータス |

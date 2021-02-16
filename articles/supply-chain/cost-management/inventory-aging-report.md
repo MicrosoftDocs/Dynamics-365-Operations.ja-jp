@@ -2,15 +2,15 @@
 title: 在庫エイジング レポートの例とロジック
 description: このトピックでは、在庫のエイジング レポートの結果を解釈する方法を示すいくつかの例を示します。
 author: RichardLuan
-manager: AnnBe
+manager: tfehr
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c165599c11b84e4064a9303d8b1f59558fc6b9d
-ms.sourcegitcommit: 6bf8602333191e5161ba3a9ceecf160c85ff7e79
+ms.openlocfilehash: a6e708e4dc818f20fc8d835053da75c2fe9c98f6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3484533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431944"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>在庫エイジング レポートの例とロジック
 

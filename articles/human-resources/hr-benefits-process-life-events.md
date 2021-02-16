@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 504408505168947ac725b5ee9764ecd994a64631
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429223"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419321"
 ---
 # <a name="process-life-events"></a>ライフ イベントのプロセス
 
@@ -35,9 +35,9 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
 
 たとえば、今日が 2 月 1 日で、2 月 14 日に作業者である Joe Smith が法人を変更する予定である場合、2 月 15 日にライフ イベント処理を実行すると、2 月 15 日までのすべてのイベントが処理されます。 
 
-1. **給付金管理**ワークスペースにて、**処理**の下の**ライフ イベントの処理**を選択します。
+1. **給付金管理** ワークスペースにて、**処理** の下の **ライフ イベントの処理** を選択します。
 
-2. **ライフ イベントの処理を実行**ダイアログ ボックスで、次のフィールドの値を指定します。
+2. **ライフ イベントの処理を実行** ダイアログ ボックスで、次のフィールドの値を指定します。
 
    | フィールド | 説明 |
    | --- | --- |
@@ -46,13 +46,13 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
    | **ライフ イベント日付** | システムによって登録期間中に、この日付までのすべてのイベントが処理されます。 |
    | **ワーカー** | ライフ イベントを処理する作業者。 このフィールドを空白のままにすると、ライフ イベントがすべての作業者に対して処理されます。 |
 
-3. バックグラウンドで処理を実行する場合は、**バックグラウンドで実行**を選択し、次のタスクを実行します。
+3. バックグラウンドで処理を実行する場合は、**バックグラウンドで実行** を選択し、次のタスクを実行します。
 
    1. 処理情報を入力します。
 
-   2. 定期的なジョブを設定するには、**再実行**を選び、繰り返しの情報を入植し、**OK** を選択します。
+   2. 定期的なジョブを設定するには、**再実行** を選び、繰り返しの情報を入植し、**OK** を選択します。
 
-   3. ジョブ警告を設定するには、**警告**を選び、入庫する警告を選択し、**OK** を選択します。
+   3. ジョブ警告を設定するには、**警告** を選び、入庫する警告を選択し、**OK** を選択します。
 
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 

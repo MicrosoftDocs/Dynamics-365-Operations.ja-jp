@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c0b4c58c3e4cfce58aa1d9da87435126280171d1
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 47db8718e7223d8a6a78068538c39afa9b0ca193
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164686"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681504"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -77,6 +76,8 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | PickingAndReceivingDetailsView (高度な倉庫)  | 無                            | 有                          | 有           |
 | SalesInvoiceDetailsView (10.0.11) | 無                            | 無                          | 有           |
 | SalesInvoicesView (10.0.11) | 無                            | 有                          | 無           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | なし                          | あり           |
+| InventoryDocumentListView  | なし                            | はい (10.0.15)                          | はい (10.0.13)          |
 
 
 
@@ -86,7 +87,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 > [!NOTE]
 > 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューのカスタム列は、行サブ フィールドの使用をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
-フィルターの拡張機能は**仕訳帳ビューを表示**および**注文ビューを検索**でもサポートされ、カスタム フィルターを追加します。 **注文ビューを検索** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、既定のストア検索パラメータを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+フィルターの拡張機能は **仕訳帳ビューを表示** および **注文ビューを検索** でもサポートされ、カスタム フィルターを追加します。 **注文ビューを検索** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、既定のストア検索パラメータを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
 
 ## <a name="add-a-custom-column-and-an-app-bar-button"></a>カスタム列とアプリ バー ボタンの追加
 
@@ -233,7 +234,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
     import * as SearchView from "PosApi/Extend/Views/SearchView";
-    import MessageDialog from "../DialogSample/MessageDialog";
+    import MessageDialog from "../../Controls/DialogSample/MessageDialog";
     ```
 
 21. **ViewCustomerSummaryCommand** という名前のクラスを作成し、**CustomerSearchExtensionCommandBase** からクラスを拡張します。
@@ -268,7 +269,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     }
     ```
 
-24. **init** メソッドを追加して、**表示**プロパティを初期化します。
+24. **init** メソッドを追加して、**表示** プロパティを初期化します。
 
     ```typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
@@ -276,7 +277,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     }
     ```
 
-25. アプリ ボタン クリック ハンドラーを処理する**実行**メソッドを追加します。 **execute** メソッドは、ハンドラーから選択した顧客のデータを読み取り、単純なダイアログ ボックスに表示します。
+25. アプリ ボタン クリック ハンドラーを処理する **実行** メソッドを追加します。 **execute** メソッドは、ハンドラーから選択した顧客のデータを読み取り、単純なダイアログ ボックスに表示します。
 
     ```typescript
     protected execute(): void {

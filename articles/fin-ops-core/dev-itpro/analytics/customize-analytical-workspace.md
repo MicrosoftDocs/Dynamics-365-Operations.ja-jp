@@ -3,7 +3,7 @@ title: 分析ワークスペースでの埋め込みレポートのカスタマ�
 description: このトピックでは、分析ワークスペースに埋め込まれているアプリケーション レポートをパワー ユーザーがカスタマイズできるようにする方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d35087ab08bb311d02c883bdac28e526bcb3b7
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: bcd36106a9938a93f4a7a5b08af3ee7570d4fd52
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270198"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687493"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -41,6 +40,12 @@ ms.locfileid: "3270198"
 > [!IMPORTANT]
 > 埋め込み分析レポートに対して行われたカスタマイズは、サービスによって自動的に配置され、システムの他のユーザーが使用できるようになります。
 
+### <a name="edit-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースで埋め込みレポートを編集する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+
+[分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ) のビデオ (上記) は YouTube で利用可能な[プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+
 ### <a name="important-points-about-embedded-analytical-reports"></a>埋め込み分析レポートに関する重要なポイント
 
 標準レポートからは、特定のビジネス ペルソナに合わせてカスタマイズされたインサイトが提供されますが、カスタマイズによって、しばしば、これらの標準レポートの価値を最大化することができます。
@@ -54,7 +59,7 @@ ms.locfileid: "3270198"
 
 ## <a name="customize-an-analytical-workspace"></a>分析ワークスペースをカスタマイズします。
 
-埋め込みアプリケーション ソリューションをカスタマイズするには、ユーザーはシステム レポート エディター セキュリティ グループのメンバーである必要があります。 このセキュリティ グループのメンバーは、アプリケーション ワークスペースのアクション ウィンドウの**オプション** タブにあるボタンを使用してカスタマイズを行うことができます。 この例では、アプリケーション スイートにバンドルされている標準分析ワークスペースのいずれかをカスタマイズする方法を示します。
+埋め込みアプリケーション ソリューションをカスタマイズするには、ユーザーはシステム レポート エディター セキュリティ グループのメンバーである必要があります。 このセキュリティ グループのメンバーは、アプリケーション ワークスペースのアクション ウィンドウの **オプション** タブにあるボタンを使用してカスタマイズを行うことができます。 この例では、アプリケーション スイートにバンドルされている標準分析ワークスペースのいずれかをカスタマイズする方法を示します。
 
 1. サインインし、カスタマイズするアプリケーション ワークスペースを開きます。 この例では、 **報酬管理** ワークスペースに埋め込まれている標準分析レポートを置換します。
 
@@ -69,7 +74,7 @@ ms.locfileid: "3270198"
     > [!NOTE]
     > 分析ワークスペースには、Power BI専用の環境に対してのみ使用できるホストされたMicrosoftサービスが必要です。 詳細については、「[1 Box 環境での分析ワークスペースおよびレポートへのアクセス](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)」を参照してください。
 
-3. アクション ペインの**オプション** タブの**Power BI**グループで **Edit Analytics** を選択してください。
+3. アクション ペインの **オプション** タブの **Power BI** グループで **Edit Analytics** を選択してください。
 
     ![Analytics Analytics ボタンを編集します](media/analytical-workspace-edit-entry.png)
 
@@ -80,22 +85,25 @@ ms.locfileid: "3270198"
 4. レポート キャンバスPower BIをカスタマイズするには、web デザイナー ツールを使用します。 直感的な web コントロールを使用すると、ビジュアルの追加および削除、ビジュアル型の変更、コンテンツの書式設定などの一般的なアクションを実行できます。 視覚エフェクト レポートのソースを調査して、システムで利用可能な最も関連性のあるデータに基づいて意思決定を行うこともできます。 詳細については、「[Power BIレポートへの視覚エフェクトの追加](https://docs.microsoft.com/power-bi/visuals/power-bi-report-add-visualizations-i)」を参照してください。
 5. レポートのカスタマイズが完了したら、 **保存** ボタンを選択してレポート編集のレベルを上げます。 レポートへのカスタマイズは、サービスにすぐに反映されます。 したがって、組織のユーザーは最新のイノベーションにアクセスできます。
 
+    > [!NOTE]
+    > Web エディタで行われたカスタマイズは、基になる PBIX レポートには保存されませんし、後で PBIX レポートが開発環境でカスタマイズされても取得できません。
+
 ## <a name="restore-the-standard-application-solution"></a>標準のアプリケーション ソリューションの復元
 
 アプリケーション ソリューションにバンドルされている分析ワークスペースを復元するには、次の手順に従います。
 
-1. 分析ワークスペースの、アクション ペインの、**オプション** タブの、**Power BI**グループで、**Restore Analytics** を選択してください。
+1. 分析ワークスペースの、アクション ペインの、**オプション** タブの、**Power BI** グループで、**Restore Analytics** を選択してください。
 2. ワークスペースの更新を表示するには、ページを再度読み込みます。 ワークスペースから移動して戻ってくるか、ブラウザーを更新します。
-3. **報酬管理**ワークスペースで、**Analytics** タブを選択すると、アプリケーションと共にパッケージ化された元の分析ワークスペースにアクセスできます。
+3. **報酬管理** ワークスペースで、**Analytics** タブを選択すると、アプリケーションと共にパッケージ化された元の分析ワークスペースにアクセスできます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 次の手順に従って、分析ワークスペースを使用しようとしたときに発生する一般的な問題に対処します。
 
-**エラー メッセージ:** ***リソースにアクセスするには、Power BI にログインしてください***
+**エラー メッセージ:** **_リソースにアクセスするには、Power BI にログインしてください_* _
 
 Power BI サービスでは、ホストされたコンテンツへのアクセスを許可するためにユーザーからの明示的なアクセス許可が必要です。 次の手順を使用して、現在のユーザーが PowerBI.com でホストされているレポートにアプリケーション スイートから接続できることを確認します。
 
-1. **リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
+1. _*リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
 2. **オプション** を選択し、左上にある **レポート カタログを開く** を選択します。
 3. ダイアログボックスの手順に従って、**Power BI に承認** して、現在のユーザーの Finance and Operations アプリにアクセスします。

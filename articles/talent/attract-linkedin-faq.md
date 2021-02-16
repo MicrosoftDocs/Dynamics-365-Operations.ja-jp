@@ -20,11 +20,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 35428da709f480e1d3842b7e92deacba200326ee
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833095"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461726"
 ---
 # <a name="linkedin-integration-faq"></a>LinkedIn の統合に関するよく寄せられる質問
 
@@ -50,7 +50,7 @@ LinkedIn との Attract 統合により、次のタスクを実行できます�
 
 ### <a name="how-do-i-post-jobs-to-linkedin-from-attract"></a>Attract から LinkedIn へ、どのようにジョブを転記しますか。
 
-Attract にジョブを作成した後、LinkedIn に対応する**今すぐ転記**ボタンを選択するだけです。 詳細については、[Microsoft Dynamics 365 Talent - Attract から LinkedIn にジョブを転記](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin) を参照してください。
+Attract にジョブを作成した後、LinkedIn に対応する **今すぐ転記** ボタンを選択するだけです。 詳細については、[Microsoft Dynamics 365 Talent - Attract から LinkedIn にジョブを転記](./attract-post-jobs-to-linkedin.md#post-jobs-to-linkedin) を参照してください。
 
 ### <a name="can-i-get-candidate-information-from-linkedin-into-attract"></a>Linkedln から Attract に応募者情報を取得できますか。
 
@@ -68,7 +68,7 @@ Attract にジョブを作成した後、LinkedIn に対応する**今すぐ転�
 
 ### <a name="how-do-i-configure-attract-so-that-recruiters-and-hiring-managers-can-post-jobs-to-linkedin"></a>採用担当者および採用マネージャーが LinkedIn にジョブを転記できるようにするには、どのようにして Attract をコンフィギュレーションしますか。
 
-使用可能なオプションを、管理者センターの **LinkedIn 統合**タブでコンフィギュレーションできます。 詳細については、[Microsoft Dynamics 365 Talent - Attract への LinkedIn の統合の設定](./attract-admin-linkedin.md) を参照してください。
+使用可能なオプションを、管理者センターの **LinkedIn 統合** タブでコンフィギュレーションできます。 詳細については、[Microsoft Dynamics 365 Talent - Attract への LinkedIn の統合の設定](./attract-admin-linkedin.md) を参照してください。
 
 ### <a name="can-i-export-candidate-information-from-linkedin"></a>Linkedln から応募者情報をエクスポートできますか。
 
@@ -83,7 +83,7 @@ Attract にジョブを作成した後、LinkedIn に対応する**今すぐ転�
 LinkedIn では、次のタイプのジョブを転記できます。
 
 - **制限付き一覧** - 候補者が LinkedIn と会社の LinkedIn ページでジョブを検索すると、検索結果で表示される無料ジョブ転記。 制限付き一覧は、有効な求職者を対象にしています。 このタイプの一覧は、Attract が LinkedIn に提供されるタイプです。 LinkedIn で制限付き一覧のジョブを昇格することはできません。 制限付き一覧を昇格したい場合は、LinkedIn を使用して求人ラッピングを有効にする必要があります。 求人ラッピングに関する詳細については、[求人ラッピングにおける制限付き一覧対プレミアム ジョブ スロット](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping) および [求人ラッピング プラス - よく寄せられる質問](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions) を参照してください。
-- **プレミアム ジョブ スロット** - Linkedln フィード、電子メール、および**関心のあるジョブ**など、Linkedln のさまざまな場所に表示される購買済み転記。 プレミアム ジョブ スロットは、受動的な候補者を対象としていますが、ジョブ検索にも表示されます。
+- **プレミアム ジョブ スロット** - Linkedln フィード、電子メール、および **関心のあるジョブ** など、Linkedln のさまざまな場所に表示される購買済み転記。 プレミアム ジョブ スロットは、受動的な候補者を対象としていますが、ジョブ検索にも表示されます。
 
 Attract では、制限付き一覧として LinkedIn にジョブを転記します。 プレミアム ジョブ スロットを使用する場合は、LinkedIn Recruiter で求人ラッピングを使用する必要があります。 求人ラッピングには、LinkedIn を使用した求人ラッピング契約が必要です。 詳細については、[LinkedIn Recruiter を介して求人ラッピング](https://www.linkedin.com/help/recruiter/answer/79037) を参照してください。
 

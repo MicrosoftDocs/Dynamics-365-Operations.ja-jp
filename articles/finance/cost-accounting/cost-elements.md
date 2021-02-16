@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 44d404aaafd124a5d5a9d92cac8add51f1ee846a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e67ce047d08af6d34090ee4e1dc379dd16ecce07
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771987"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445280"
 ---
 # <a name="cost-element-dimensions"></a>原価要素分析コード
 
@@ -64,7 +64,7 @@ ms.locfileid: "2771987"
 </table>
 
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>原価要素分析コードと原価要素分析コード メンバー
-原価要素は、*原価要素分析コード*と呼ばれます。 個別の分析コード値は、*原価要素分析コード メンバー*と呼ばれます。 たとえば、法定レポートの基準となる米国の勘定科目表の構造 (COA) があります。 この COA は、原価要素分析コードとして使用されます。 主要原価要素である勘定は、原価計算の原価要素分析コード メンバーとして表されます。 次のスクリーン ショットは、原価要素分析コード メンバーとしての実際の主勘定である原価要素分析コードとしての主勘定の例を示しています。 
+原価要素は、*原価要素分析コード* と呼ばれます。 個別の分析コード値は、*原価要素分析コード メンバー* と呼ばれます。 たとえば、法定レポートの基準となる米国の勘定科目表の構造 (COA) があります。 この COA は、原価要素分析コードとして使用されます。 主要原価要素である勘定は、原価計算の原価要素分析コード メンバーとして表されます。 次のスクリーン ショットは、原価要素分析コード メンバーとしての実際の主勘定である原価要素分析コードとしての主勘定の例を示しています。 
 
 [![原価要素分析コードとしての主勘定のスクリーンショット](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 

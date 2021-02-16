@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6892c904e1b8192f6062ec985463350c0c19abc1
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: f09dbf28435de28e89d200043fb9d49137598100
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3112771"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681038"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
@@ -139,7 +138,7 @@ ms.locfileid: "3112771"
 
 環境に新しいパッケージを適用する場合、プロセスは、定期的な環境保守のプロセスと同じになります。 パッケージ アプリケーションが完成したら、別のパッケージの適用に進む前に、そのパッケージの **サインオフ** ボタンを使用する必要があります。
 
-パッケージの展開が失敗した場合は、**ロールバック** ボタンを使用して取り消すことができます。 このボタンは、**アップグレード** メニューの **ロールバック** オプションとは同じでは**ない**ことに注意してください。
+パッケージの展開が失敗した場合は、**ロールバック** ボタンを使用して取り消すことができます。 このボタンは、**アップグレード** メニューの **ロールバック** オプションとは同じでは **ない** ことに注意してください。
 
 ### <a name="critical-hotfixes"></a>重要な修正プログラム
 

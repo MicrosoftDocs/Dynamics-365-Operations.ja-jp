@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 13b42680c931bdf83149b1b211b33be164eac6c0
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: a4f701a85979cce3fa4840b48279c45ec565612b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323442"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432195"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 
@@ -32,9 +32,9 @@ ms.locfileid: "3323442"
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management で計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
 
-計画の履歴を表示するには、**マスター プラン** \> **設定** \> **計画** \> **マスター プラン**の順に移動して**履歴**を選択することにより、計画を開きます。 履歴には、選択された計画のすべてのジョブが一覧表示されます。 一覧には、完了ジョブおよび有効なジョブが含まれます。
+計画の履歴を表示するには、**マスター プラン** \> **設定** \> **計画** \> **マスター プラン** の順に移動して **履歴** を選択することにより、計画を開きます。 履歴には、選択された計画のすべてのジョブが一覧表示されます。 一覧には、完了ジョブおよび有効なジョブが含まれます。
 
-ジョブの開始時刻とステータスが表示されるのに加えて、特定のジョブのログも表示できます。 ログには、追加の情報および警告が含まれます。 すべてのジョブにログがあるわけではありません。 ジョブのログを表示するには、**ログ**を選択します。
+ジョブの開始時刻とステータスが表示されるのに加えて、特定のジョブのログも表示できます。 ログには、追加の情報および警告が含まれます。 すべてのジョブにログがあるわけではありません。 ジョブのログを表示するには、**ログ** を選択します。
 
 ## <a name="related-resources"></a>関連するリソース
 

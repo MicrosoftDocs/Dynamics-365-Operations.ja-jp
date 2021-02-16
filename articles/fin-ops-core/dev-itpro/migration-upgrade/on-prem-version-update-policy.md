@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SysAbout
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 69914
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8494567ac0f22d7fc7d9e36c99a3644e1d84286e
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: cf20c5e598f35e9ae583a8f1bb06ee227e680008
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553057"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687852"
 ---
 # <a name="software-lifecycle-policy-and-on-premises-releases"></a>ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
 
@@ -40,7 +39,7 @@ Finance + Operations (オンプレミス) ソフトウェアは、Modern Lifecyc
 
 重要な修正および重要でない更新は、次のように処理されます。 
   - **重要な修正** - 重要な修正には、セキュリティの修正および、信頼性と可用性をサポートするために必要な修正が含まれます。 重要な修正は、最新のプラットフォーム更新版で利用可能になります。  
-  - **重要ではない更新** – 重要ではない更新を導入するには、最新の Finance and Operations プラットフォームと財務レポートのバージョンに更新する必要があります。   
+  - **重要ではない更新** – 重要ではない更新を導入するには、最新の Finance and Operations プラットフォームと財務諸表のバージョンに更新する必要があります。   
 
 ## <a name="finance--operations-on-premises-release-dates"></a>Finance + Operations (オンプレミス) リリース日
 
@@ -86,5 +85,5 @@ VHD の使用の際には、[ソフトウェア ライセンス条件](https://g
 |----------------------------------------------|------------------------------|---------------------|
 | プラットフォーム アップデート 12 / アプリケーション リリース 7.2 | FinandOps7.2PlatUpdate12.vhd |    2018 年 5 月 24 日     |
 | プラットフォーム アップデート 12 / アプリケーション リリース 7.3 | FinandOps7.3PlatUpdate12.vhd |    2018 年 6 月 5 日    |
-| プラットフォーム アップデート 15 / アプリケーション リリース 7.3 | FinandOps7.3withPlatUpdate15 |    2018 年 12 月    |
+| プラットフォーム アップデート 15 / アプリケーション リリース 7.3 | FinandOps7.3withPlatUpdate15 |    2018 年 12 月 8 日    |
 

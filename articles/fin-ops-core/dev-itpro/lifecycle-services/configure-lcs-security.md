@@ -1,28 +1,27 @@
 ---
 title: Lifecycle Services (LCS) のセキュリティの構成
-description: Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。
-author: RobinARH
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のセキュリティが、組織レベルとプロジェクト レベルの両方で制御される方法について説明します。
+author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 ms.search.region: Global
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8bfc22215e8105cf5eaad1703ab909906c3ebe4
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: bf02ea673a550a7ac257008e3e67277025d13506
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124829"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679254"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -30,7 +29,7 @@ ms.locfileid: "3124829"
 
 Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。 <br>
 
-現在、サインアップ時に [Microsoft Office 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287) で作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 <br> 
+現在、サインアップ時に [Microsoft 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287)で作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 <br> 
 
 Microsoft Dynamics AX 2012 では、LCS への組織レベルのアクセスは、個人の Microsoft ID と CustomerSource または PartnerSource の組織との関連付けによって制御されます。 したがって、CustomerSource または PartnerSource のユーザーは、LCS の組織のワークスペースに自動的にアクセスし、参加するように招待されたすべてのプロジェクトを表示できます。 CustomerSource および PartnerSource の組織の管理者になっているユーザーは LCS の管理者になります。 <br>
 
@@ -52,10 +51,10 @@ LCS へのプロジェクト レベル アクセスは、招待によって行�
 1.  [LCS](https://lcs.dynamics.com/) にサインインします。
 2.  プロジェクトを選択してユーザーを追加します。
 3.  **プロジェクト ユーザー** タイルを選択し、**プロジェクト ユーザー** ページで、プラス記号 (**+**) を選択します。
-4.  ユーザーの電子メール アドレスを入力し、次に正しいセキュリティ ロールを選択して、**招待**を選択します。
+4.  ユーザーの電子メール アドレスを入力し、次に正しいセキュリティ ロールを選択して、**招待** を選択します。
 
 > [!NOTE]
-> 実装プロジェクトで、招待されたユーザーの実装ロールを選択できます。 **FastTrack からの連絡を許可する**を**はい**に設定した場合、Microsoft FastTrack チームは実装ロールと実装プロジェクトのステージに基づいてご連絡を差し上げる場合があります。   
+> 実装プロジェクトで、招待されたユーザーの実装ロールを選択できます。 **FastTrack からの連絡を許可する** を **はい** に設定した場合、Microsoft FastTrack チームは実装ロールと実装プロジェクトのステージに基づいてご連絡を差し上げる場合があります。   
 
 ## <a name="working-with-customersource-and-partnersource"></a>CustomerSource および PartnerSource での作業
 このセクションの情報は、CustomerSource または PartnerSource へのアクセスを支援することを目的としています。
@@ -97,10 +96,10 @@ CustomerSource の管理者がわからない場合、または組織に Custome
 </tr>
 <tr class="even">
 <td>プロジェクト チーム メンバー (見込顧客)</td>
-<td>このロールのメンバーは LCS プロジェクトのすべてのツールに制限付きでアクセスできます。 見込顧客は、プロジェクトに追加されましたが、VOICE または Azure AD にアカウントを持っていないユーザーです。 <strong>見込み顧客</strong> がユーザーの組織として一覧表示されるため、ユーザーが見込み顧客であることを識別することができます。</td>
+<td>このロールのメンバーは LCS プロジェクトのすべてのツールに制限付きでアクセスできます。 見込顧客は、プロジェクトに追加されましたが、VOICE または Azure AD にアカウントを持っていないユーザーです。 <strong>見込み顧客</strong>が組織として一覧表示されるため、ユーザーが見込み顧客であることを識別することができます。</td>
 </tr>
 <tr class="odd">
-<td>オペレーション ユーザー</td>
+<td>Operations user</td>
 <td>このロールのメンバーは LCS の次のツールにアクセスできます。
 <ul>
 <li>システム診断</li>
@@ -115,5 +114,7 @@ CustomerSource の管理者がわからない場合、または組織に Custome
 
 1 つのプロジェクトのセキュリティをコンフィギュレーションした後は、別のプロジェクトにユーザーをインポートできます。
 
+## <a name="configure-implementation-roles"></a>実装ロールのコンフィギュレーション 
+実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 

@@ -3,7 +3,7 @@ title: 一般会計と財務諸表の概要
 description: 法人の財務レコードを定義および管理するには、一般会計を使用します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,17 @@ ms.search.scope: Core, Operations
 ms.custom: 65431
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 1ade10020e4bab02490c9104c37fe1f234d634e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771802"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445299"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>一般会計と財務諸表の概要
+# <a name="general-ledger-home-page"></a>一般会計のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
@@ -57,11 +57,14 @@ ms.locfileid: "2771802"
 
 予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
 
+#### <a name="financial-reporting"></a>財務報告
+財務諸表については、[Financial Reporting の概要](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) を参照してください。
+
 #### <a name="blogs"></a>ブログ
 
 Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Microsoft Dynamics パートナーが Dynamics 365 の最新情報とトレンドを知ることができる単一のリソースを提供しています。
 
 ### <a name="videos"></a>ビデオ
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897675"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529141"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 2 月 27 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -43,11 +45,11 @@ ms.locfileid: "2897675"
 
 ### <a name="add-a-custom-fields-menu-item-to-system-administration"></a>システム管理にカスタム フィールドのメニュー項目を追加する
 
-**システム管理**ワークスペースに追加された**カスタム フィールド**メニューに移動します。
+**システム管理** ワークスペースに追加された **カスタム フィールド** メニューに移動します。
 
 ### <a name="hide-the-import-and-create-options-for-new-mobile-applications"></a>インポートを非表示にし、新しいモバイル アプリケーションのオプションを作成する
 
-現時点では、Talent で新しいモバイル アプリケーションを作成することはできません。 新しいモバイル エクスペリエンスを作成するオプションは、**モバイル アプリ**メニューから削除されました。
+現時点では、Talent で新しいモバイル アプリケーションを作成することはできません。 新しいモバイル エクスペリエンスを作成するオプションは、**モバイル アプリ** メニューから削除されました。
 
 ### <a name="variable-compensation-award-dmf-entity"></a>変動報酬 (DMF エンティティ)
 
@@ -77,7 +79,7 @@ ms.locfileid: "2897675"
 
 ### <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
 
-Microsoft Dynamics 365 Finance and Operations のプラットフォーム更新プログラム 24 (2019 年 3 月) の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) を参照してください。
+Microsoft Dynamics 365 Finance and Operations のプラットフォーム更新プログラム 24 (2019 年 3 月) の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)を参照してください。
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>従業員の固定報酬を将来の職位の割り当てに使用できるようにする
 
@@ -98,19 +100,19 @@ Core HR のテンプレートは、「高度なクエリ テンプレート」�
 
     - **ジョブ職位から職位:** このマッピングを削除します。
     - **ジョブ職位から職位親ジョブ割り当て:** このマッピングを削除します。
-    - **ジョブ職位から基本職位:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**基本職位** Finance and Operations エンティティに追加します。 シーケンス内の職位 7 に移動します。
+    - **ジョブ職位から基本職位:** 新しいマッピングを **ジョブ職位** Common Data Service エンティティから **基本職位** Finance and Operations エンティティに追加します。 シーケンス内の職位 7 に移動します。
 
         [![ジョブ職位から基本職位マッピング](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **ジョブ職位から職位の詳細:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位の詳細** Finance and Operations エンティティに追加します。 シーケンス内の職位 8 に移動します。
+    - **ジョブ職位から職位の詳細:** 新しいマッピングを **ジョブ職位** Common Data Service エンティティから **職位の詳細** Finance and Operations エンティティに追加します。 シーケンス内の職位 8 に移動します。
 
         [![ジョブ職位から職位の詳細マッピング](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **ジョブ職位から職位の期間:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位の期間** Finance and Operations エンティティに追加します。
+    - **ジョブ職位から職位の期間:** 新しいマッピングを **ジョブ職位** Common Data Service エンティティから **職位の期間** Finance and Operations エンティティに追加します。
 
         [![ジョブ職位から職位の期間マッピング](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **ジョブ職位から職位階層:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位階層** Finance and Operations エンティティに追加します。 **高度なクエリ**を選択して、高度なクエリをプロジェクトに対して使用できるようにします。
+    - **ジョブ職位から職位階層:** 新しいマッピングを **ジョブ職位** Common Data Service エンティティから **職位階層** Finance and Operations エンティティに追加します。 **高度なクエリ** を選択して、高度なクエリをプロジェクトに対して使用できるようにします。
 
        [![高度なクエリ ボタン](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -120,22 +122,22 @@ Core HR のテンプレートは、「高度なクエリ テンプレート」�
 
     1. cdm_jobpositionnumber cdm_jobspositionnumb... = POSITIONID cdm_parentjobpositionid.cdm-jobpositionnumb... = PARENTPOSITIONID cdm_validfrom cdm_validfrom = VALIDFROM cdm_validto cdm_validto = VALIDTO
        
-    2. **検索**フィールドの隣の**高度なクエリおよびフィルター処理**リンクを選択します。  
+    2. **検索** フィールドの隣の **高度なクエリおよびフィルター処理** リンクを選択します。  
 
     3. **cdm_parentjobpositionid.cdm_jobpositionnumber** 列を検索し、その右側にある下矢印ボタンを選択します。
 
-    4. 表示されるダイアログ ボックスで、**空にする**を選択します。
+    4. 表示されるダイアログ ボックスで、**空にする** を選択します。
 
-    5. **列の追加 \> 条件付き列の追加**を選択して、HIERARCHYTYPENAME の既定値の変換を追加します。
+    5. **列の追加 \> 条件付き列の追加** を選択して、HIERARCHYTYPENAME の既定値の変換を追加します。
 
         [![条件付き列のコマンドの追加](./media/Add-column.png)](./media/Add-column.png)
 
-    6. **条件付き列の追加**ダイアログ ボックスに、新しい列の名前として **HIERARCHYTYPENAME** と入力します。
-    7. 条件の **If** の部分で、任意のフィールドを選択して、リレーションシップとして**次の値に等しい**を使用し、任意の値を入力します。 条件の **Then** および **Otherwise** の部分で、既定値を指定します。 この場合は、両方の部分に**行**を入力します。
+    6. **条件付き列の追加** ダイアログ ボックスに、新しい列の名前として **HIERARCHYTYPENAME** と入力します。
+    7. 条件の **If** の部分で、任意のフィールドを選択して、リレーションシップとして **次の値に等しい** を使用し、任意の値を入力します。 条件の **_Then_* および **Otherwise** の部分で、既定値を指定します。 この場合は、両方の部分に **行** を入力します。
 
         [![条件付きの列のダイアログ ボックスの追加](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
-    8. **OK** を選択して、**高度なクエリおよびフィルター処理**ダイアログ ボックスを閉じます。
-    9. **マッピング タスク**ページで、HIERARCHYTYPENAME の別のマッピングを作成するソースとして新しい列を選択します。
+    8. **OK** を選択して、**高度なクエリおよびフィルター処理** ダイアログ ボックスを閉じます。
+    9. **マッピング タスク** ページで、HIERARCHYTYPENAME の別のマッピングを作成するソースとして新しい列を選択します。
 
         [![マッピング](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)

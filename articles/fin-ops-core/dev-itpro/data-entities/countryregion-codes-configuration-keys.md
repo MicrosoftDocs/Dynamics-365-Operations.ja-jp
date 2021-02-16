@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 4644
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fdd434feff4288a57f34e3f11c0b106c6d4067
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 9ecddca62a092729ce38947275e561d3679f59ba
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029441"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679362"
 ---
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 

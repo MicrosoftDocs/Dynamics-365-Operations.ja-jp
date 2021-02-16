@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 25971
 ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cbf45b7c847cc562e9d51899910b0d1cfcf140b
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 400bb81fc5a36409d54dae8b21e142006c8b1886
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033047"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681040"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
 
@@ -79,7 +78,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 -   [1 ボックス開発環境のコンフィギュレーション](../dev-tools/configure-developer-vm.md)
 -   [コード移動中の Azure DevOps マッピングのコンフィギュレーション](configure-vso-solution.md)
 
-コードのアップグレード サービスは、コードをコンパイルするために開くことができる Visual Studio ソリューションを提供します。 競合を含むすべての要素向けの**コード マージ**ソリューションと、すべてのアップグレードされた要素向けの**アップグレード**ソリューション。 通常、以下の順序でコンパイル エラーを修正して、アプリケーションをコンパイルできます。 順序はパッケージの依存関係のグラフに基づいて決定され、グラフの中で最も低いパッケージから開始されます。 パッケージの依存関係を調べるには、[モデルおよびパッケージ](../dev-tools/models.md) を参照してください。 標準的な注文は、Application Platform、Application Foundation、Directory など、Application Suite です。 各アップグレードされたモデル対象:
+コードのアップグレード サービスは、コードをコンパイルするために開くことができる Visual Studio ソリューションを提供します。 競合を含むすべての要素向けの **コード マージ** ソリューションと、すべてのアップグレードされた要素向けの **アップグレード** ソリューション。 通常、以下の順序でコンパイル エラーを修正して、アプリケーションをコンパイルできます。 順序はパッケージの依存関係のグラフに基づいて決定され、グラフの中で最も低いパッケージから開始されます。 パッケージの依存関係を調べるには、[モデルおよびパッケージ](../dev-tools/models.md) を参照してください。 標準的な注文は、Application Platform、Application Foundation、Directory など、Application Suite です。 各アップグレードされたモデル対象:
 
 -   マージの競合を修正します。
 -   モデルの分割 (パッケージ全体の参照) に関連するコンパイル エラーを修正します。
@@ -101,13 +100,11 @@ LCS コード アップグレード サービス構成のコードをアップ�
 4.  すべてのシナリオが、カスタム パターンに対して異なるサイズで、複数のブラウザーで動作することを検証します。
 5.  記述してテストを実行します。
 
-<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
-
 ## <a name="best-practice-setup"></a>ベスト プラクティスの設定
 ベスト プラクティス フレームワークには、移行を完了するために解決する必要があるベスト プラクティス警告のサブセットがあります。 これは、Dynamics AX 2012 R3 またはそれ以前から移行する場合に適用されます。
 
-1.  Visual Studio で、**Dynamics 365 &gt; オプション &gt; ベスト プラクティス**をクリックします。
-2.  **モデル** ドロップダウン メニューで、**アプリケーション スイート**を選択します (作業しているすべてのモデルで繰り返します)
+1.  Visual Studio で、**Dynamics 365 &gt; オプション &gt; ベスト プラクティス** をクリックします。
+2.  **モデル** ドロップダウン メニューで、**アプリケーション スイート** を選択します (作業しているすべてのモデルで繰り返します)
 
 これらのルールは、ソリューションの移行中に「オン」に設定する必要があります。 この設定は、AxRuleSet フォルダー内の XML ファイルによって実行されます。 たとえば、C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet の下にある、アプリケーション スイート xml ファイル、BPRules.xml を参照してください。 
 
@@ -128,10 +125,10 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 ### <a name="setup"></a>セットアップ
 
-1.  Visual Studio で、**アプリケーション エクスプローラー**を開き、フォーム PurchCommitment\_PSN を検索します。
+1.  Visual Studio で、**アプリケーション エクスプローラー** を開き、フォーム PurchCommitment\_PSN を検索します。
 2.  **OK** をクリックします。
 3.  プロジェクトを右クリックし、**プロパティ** を選択します。
-4.  モデル プロパティで**アプリケーション スイート**を選択します。
+4.  モデル プロパティで **アプリケーション スイート** を選択します。
 5.  会社プロパティで、FRSI を選択します。
 6.  注記: このフォームは、フランスのデモ データ会社 FRSI に配置されます。
 7.  **Ctrl+F5** キーを押してフォームを表示します。
@@ -142,7 +139,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 ### <a name="navigation-migration-tasks"></a>ナビゲーション移行タスク
 
-1.  Visual Studio で、プロジェクトをビルドし、ツール バーで**表示** &gt; **タスク一覧** をクリックします。
+1.  Visual Studio で、プロジェクトをビルドし、ツール バーで **表示** &gt; **タスク一覧** をクリックします。
 2.  **コメント** ドロップダウン リストをクリックして、TO DO: (コード アップグレード) タスクを表示します。
 3.  一覧で、ActionPane TODO を検索します。
 
@@ -190,7 +187,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
     [![m](./media/m1.png)](./media/m1.png)
 
-6.  **編集**ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
+6.  **編集** ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
 
     ```xpp
     /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
@@ -211,7 +208,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
     [![n](./media/n1.png)](./media/n1.png)
 
-8.  モデル化された**編集**ボタンでコードを検査します。 このロジックは、フォームの task() メソッドに移動する必要があります。
+8.  モデル化された **編集** ボタンでコードを検査します。 このロジックは、フォームの task() メソッドに移動する必要があります。
 
     ```xpp
     [Control("CommandButton")]
@@ -240,7 +237,7 @@ Finance and Operations では、次の主要なアクションはシステム定
     }
     ```
 
-9.  Visual Studio デザイナーの左側で、**メソッド** &gt; **上書き**を右クリックし、**タスク**を選択して、フォームのタスク メソッドの上書きを追加します。
+9.  Visual Studio デザイナーの左側で、**メソッド** &gt; **上書き** を右クリックし、**タスク** を選択して、フォームのタスク メソッドの上書きを追加します。
 10. システム定義の **編集** ボタンをクリックしたときに上記のコードがトリガーされるように、以下に示すようにタスク メソッドを更新します。
 
     ```xpp
@@ -288,14 +285,14 @@ Finance and Operations では、次の主要なアクションはシステム定
     [![o](./media/o1.png)](./media/o1.png)
 
 12. **Ctrl+S** キーを押してフォームを保存します。
-13. **Ctrl+F5** キーを押してフォームを表示します。 **確約**タブの**削除**および**編集**ボタンが削除されたことを確認します。
+13. **Ctrl+F5** キーを押してフォームを表示します。 **確約** タブの **削除** および **編集** ボタンが削除されたことを確認します。
 
 ## <a name="resolve-casting-exceptions"></a>キャスト例外を解決
 Finance and Operations では、X++ は完全に中間言語 (IL) ベースであるため、解釈された Dynamics AX 2012 よりも厳密なランタイム タイプ動作を行います。 この厳しいランタイム タイプの動作により、移行された Dynamics AX 2012 R3 メタデータの例外を生成できます。 移行中にこれらの例外が発生することがあります。 キャスト例外は、ダウンキャスト、タイム オブジェクトを設計するためのキャスト ランタイム、サイド キャストなど、さまざまな実行時シナリオで発生させることができます。 以下のセクションで、フォーム CosJournalName が実行時にコントロールを生成し、強い型付けのために .NET 例外を発生させる型の不一致がある例について説明します。
 
 ### <a name="example-side-casting-exception"></a>例: サイドキャストの例外
 
-1.  Visual Studio で、**プロジェクト プロパティ**を選択して右クリックし、USMF が既定の会社であることを確認します。
+1.  Visual Studio で、**プロジェクト プロパティ** を選択して右クリックし、USMF が既定の会社であることを確認します。
 2.  表示メニュー項目に CosJournalName を追加し、スタートアップ オブジェクトとしてメニュー項目を設定します。
 3.  プロジェクトに CosJournalName フォームを追加します。
 4.  プロジェクトに cosDimCheckBoxController クラスを追加します。

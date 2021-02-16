@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 3555be3067db459625df9f9b0ac6b78fc2715289
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430907"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419377"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) 報告の生成
 
@@ -52,7 +52,7 @@ Affordable Care Act 補償グループ値の例外を入力するには、[作�
 ## <a name="generate-1095b-and-1095c-forms"></a>1095B および 1095C フォームの生成
 製品内から 109-B および 1095-C フォームを生成し、各従業員に配布することもできます。 1095-C および対応する1094-C 送信書類ファイルを電子的に生成します。それらは IRS に送信するために使用され、システムからも作成できます。  
 
-1095-C フォームを生成する場合、該当する税年度を入力し、社会保障番号がマスクされるべきかどうかを示します。 500 人を超える従業員に対して 1095-C フォームを印刷する場合は、1 つ以上の PDF ファイルを受け取ります。 **ドキュメント管理パラメーター**ウィンドウで、**最大ファイル サイズ**を 150 MB に拡大することをお勧めします。
+1095-C フォームを生成する場合、該当する税年度を入力し、社会保障番号がマスクされるべきかどうかを示します。 500 人を超える従業員に対して 1095-C フォームを印刷する場合は、1 つ以上の PDF ファイルを受け取ります。 **ドキュメント管理パラメーター** ウィンドウで、**最大ファイル サイズ** を 150 MB に拡大することをお勧めします。
 
 ## <a name="viewing-information"></a>情報の表示
 **作業者の Affordable Care Act 補償** ページを使用して、どの従業員が各補償グループに割り当てられているか、どの従業員がレポートに含められる必要がないか、さらにどの従業員が割り当てられていないかを確認します。

@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e06236bf1d158a4cf579b8b89cc0a5f7d815c38
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 98b91a983c60bb99280763f7f7a944d08f535e60
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042656"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686006"
 ---
-# <a name="INTVALUE">INTVALUE ER 関数</a>
+# <a name="intvalue-er-function"></a>INTVALUE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,9 +48,9 @@ INTVALUE (number)
 
 *Int* 数に変換する必要があるテキスト値。
 
-`number`: *実数*または*整数*
+`number`: *実数* または *整数*
 
-*Int* 数に変換する必要がある数値の*実数*または*整数*値。
+*Int* 数に変換する必要がある数値の *実数* または *整数* 値。
 
 ## <a name="return-values"></a>戻り値
 

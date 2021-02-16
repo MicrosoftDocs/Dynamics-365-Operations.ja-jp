@@ -9,20 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 ms.custom: 27001
 ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 ms.search.region: Global
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41170e2bbbbbc716cdc1b5fea288c5680edcc0ad
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: 31f441bf6f0ccb34389c8c039048fbfcb6c874d8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029435"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679970"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -56,7 +55,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 メソッドに **SubscribesTo** キーワードを追加して、静的委任ハンドラーを作成します。 **SubscribesTo** にはデリゲートのクラス名、およびデリゲート メソッドの文字列名が必要です。 
 
-デリゲートが適切に処理されるには、デリゲート メソッドの宣言、デリゲート インスタンスおよびデリゲート ハンドラーに*同じ*メソッドの署名が必要です。 たとえば、次に示すデリゲート インスタンスには、2 つの入力が必要です。実数および EventHandlerResult で、上記のデリゲート宣言およびハンドラー署名と一致するものです。 
+デリゲートが適切に処理されるには、デリゲート メソッドの宣言、デリゲート インスタンスおよびデリゲート ハンドラーに *同じ* メソッドの署名が必要です。 たとえば、次に示すデリゲート インスタンスには、2 つの入力が必要です。実数および EventHandlerResult で、上記のデリゲート宣言およびハンドラー署名と一致するものです。 
 
 ![static delegate ハンドラー](media/static-delegate-handler.png)
 
@@ -119,7 +118,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メソッドを applyDiscountDelegate デリゲートにハンドラーとして結合します。
 
 > [!NOTE]
-> デリゲートごとに複数のハンドラーが存在する可能性があります。 ハンドラー メソッドの処理には、定義された順序は**ありません**。 注文が重要な場合は、代行ハンドラーのペアは一緒に連鎖する必要があります。 以下の最終クラスでは、calculateTotalTax() メソッドが実行されるとき、applyDiscountDelegate が起動および処理され、receiptTotal が更新されて正確な税計算が提供されます。
+> デリゲートごとに複数のハンドラーが存在する可能性があります。 ハンドラー メソッドの処理には、定義された順序は **ありません**。 注文が重要な場合は、代行ハンドラーのペアは一緒に連鎖する必要があります。 以下の最終クラスでは、calculateTotalTax() メソッドが実行されるとき、applyDiscountDelegate が起動および処理され、receiptTotal が更新されて正確な税計算が提供されます。
 
 #### <a name="full-code"></a>完全なコード
 

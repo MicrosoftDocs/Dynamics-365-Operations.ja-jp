@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be7b1142b011b805c78a3b9380d12085e4b7d28f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1fc7ae950ed32a75b8767d764c1b77193c454381
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204980"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654127"
 ---
 # <a name="replenishment-overview"></a>補充の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "3204980"
 
 **補充テンプレート** ページには **ウェーブ需要に未引当数量の使用を許可する** チェック ボックスが含まれています。 選択した補充テンプレートから生成された作業から要求補充が未引当の数量を控除できるようにする必要がある場合は、このチェック ボックスを選択します。 要求補充テンプレートがこのロジックを使用できるようにするには、既存の補充テンプレートごとにこのチェック ボックスを選択します。 要求補充が倉庫でトリガーされると、**ウェーブ需要が未引当の数量を使用することを許可する** チェック ボックスがオンになった補充テンプレートから作業が生成される場合、未引当の数量を持つ既存の補充作業から需要を控除します。
 
-**補充単位**は補充する最小単位です。 単位の倍数である整数を指定する必要があります。 システムは、作業を作成するときに、可能な限り最大単位に切り上げます。
+**補充単位** は補充する最小単位です。 単位の倍数である整数を指定する必要があります。 システムは、作業を作成するときに、可能な限り最大単位に切り上げます。
 
 要求補充は、販売注文、移動オーダー、製造オーダー、およびかんばんに対してサポートされます。 
 

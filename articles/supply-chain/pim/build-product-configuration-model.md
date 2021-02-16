@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PCProductConfigurationModelDetails
+ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,15 +16,15 @@ ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9287cd5719eb558f379331946d7896d61e4345a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208642"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431624"
 ---
 # <a name="product-configuration-overview"></a>製品コンフィギュレーションの概要
 
@@ -112,7 +112,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="the-configuration-page"></a>コンフィギュレーション ページ
 
-コンポーネントの間を移動するには**次へ**をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
+コンポーネントの間を移動するには **次へ** をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
 
 ## <a name="finalizing-a-model-for-configuration"></a>コンフィギュレーション モデルの完成
 製品コンフィギュレーション モデルをコンフィギュア ツー オーダーのシナリオで使用する準備が整ったら、バージョンを作成する必要があります。 ただし、モデリング経験を豊かにできる複数のオプションがあります。

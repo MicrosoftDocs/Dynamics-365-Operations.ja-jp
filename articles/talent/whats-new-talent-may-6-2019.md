@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897514"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529711"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Dynamics 365 Talent の新機能および変更された機能 (2019 年 5 月 6 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -45,7 +47,7 @@ ms.locfileid: "2897514"
 
 ### <a name="platform-update-26-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 26
 
-Finance and Operations のプラットフォーム更新プロフラム 26 に関する追加情報については、[Dynamics 365 Finance and Operations プラットフォーム更新プロフラム 26 (2019 年 5 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26) を参照してください。 
+Finance and Operations のプラットフォーム更新プログラム 26 に関する追加情報については、[Dynamics 365 Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26)を参照してください。 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>カスタム フィールドに対する Common Data Service エンティティのサポート
 
@@ -61,7 +63,7 @@ Finance and Operations のプラットフォーム更新プロフラム 26 に�
 
 ### <a name="dimension-fields-arent-updated-when-using-open-in-excel-176261"></a>「Excel で開く」の使用時に分析コード フィールドが更新されない (176261)
 
-このリリースにより、**作業者**のページから**Excelで開く**を使用して財務分析コードを更新できるようになりました。 
+このリリースにより、**作業者** のページから **Excelで開く** を使用して財務分析コードを更新できるようになりました。 
 
 ### <a name="worker-address-created-in-common-data-service-isnt-synced-to-talent-317555"></a>Common Data Service で作成された作業者の住所が Talent に同期されない (317555)
 
@@ -72,7 +74,7 @@ Finance and Operations のプラットフォーム更新プロフラム 26 に�
 
 ### <a name="new-page-to-validate-position-hierarchy-data"></a>職位階層データを検証する新しいページ
 
-人事管理 (HR) および 管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できるようになりました。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証**からアクセスできます。
+人事管理 (HR) および 管理者は、誤ってインポートされた循環参照に対して、管理階層を検証できるようになりました。 この新しいページは、**組織管理 > リンク > 職位 > 職位階層の検証** からアクセスできます。
 
 ### <a name="specify-reason-codes-on-leave-types"></a>休暇タイプの理由コードの指定
 
@@ -90,4 +92,4 @@ Finance and Operations のプラットフォーム更新プロフラム 26 に�
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Talent のプロビジョニング時に、インスタンス タイプを示す
 
-Talent の新しいインスタンスのプロビジョニング時に、インスタンス タイプが**実稼働**か**サンドボックス**であるかを示すことができ、新しい機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、実稼働インスタンス タイプに更新されます。 既存のインスタンスのいずれかをサンドボックス インスタンス タイプに更新する場合は、変更要求を開始するようサポートに連絡してください。
+Talent の新しいインスタンスのプロビジョニング時に、インスタンス タイプが **実稼働** か **サンドボックス** であるかを示すことができ、新しい機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、実稼働インスタンス タイプに更新されます。 既存のインスタンスのいずれかをサンドボックス インスタンス タイプに更新する場合は、変更要求を開始するようサポートに連絡してください。

@@ -11,17 +11,16 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: eb72e3bee5cbebea0be576d6b2709fd287fd7e75
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 99df913fe883ecb9ef32a551c82770b6f6a860cb
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277102"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693655"
 ---
 # <a name="terms-and-conditions-for-add-ins-to-microsoft-dynamics-365-supply-chain-management"></a>Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件
 

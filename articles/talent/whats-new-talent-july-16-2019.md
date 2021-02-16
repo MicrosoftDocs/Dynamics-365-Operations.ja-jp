@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6dce39bc529bf6dd6079ed900af12510c0773f9a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: cd7f288e5c1015f4266db527adfcd62a5dbbc95f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899085"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528102"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-16-2019"></a>Dynamics 365 Talent の新機能または変更された機能 (2019 年 7 月 16 日)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Talent の新機能または変更された機能について説明します。
 
@@ -35,7 +37,7 @@ ms.locfileid: "2899085"
 ### <a name="coming-soon-in-attract"></a>Attract で間もなく公開
 #### <a name="job-approvals-appear-on-the-home-page"></a>ホーム ページ上のジョブ承認の表示
 
-承認は、ダッシュボードの**承認**セクションに表示されます。 承認者は**自分に割り当て済み**で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済**で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
+承認は、ダッシュボードの **承認** セクションに表示されます。 承認者は **自分に割り当て済み** で自分の承認を確認できます。ここではジョブ ID、職位、他の承認者、およびジョブが割り当てられた日付が表示されます。 承認のジョブを送信するユーザーは、**ユーザーにより要求済** で自分のジョブを確認できます。ここでは送信したジョブを承認する必要がある承認者を表示します。
 
 ## <a name="changes-in-onboard"></a>Onboard の変更
 今回のリリースには、Dynamics 365 Talent: Onboard のマイナーなバグ修正が含まれています。
@@ -90,7 +92,7 @@ ms.locfileid: "2899085"
 
 ### <a name="goal-form-cannot-be-closed-after-a-user-edits-any-goal-field"></a>ユーザーが目標フィールドを編集した後、目標フォームを閉じることができない
 
-このリリースでは、**閉じる**を選択しても目標フォームが閉じない問題が修正されています。
+このリリースでは、**閉じる** を選択しても目標フォームが閉じない問題が修正されています。
 
 ### <a name="creating-new-goals-and-saving-displays-error"></a>新しい目標の作成および表示エラーの保存
 
@@ -112,24 +114,24 @@ ms.locfileid: "2899085"
 
 このリリースで、データベースのバッチ ジョブが失敗する問題が修正されます。 手動で更新するには
 
-1. **データ管理**に移動します。
-2. **データベースへのエンティティのエクスポートのコンフィギュレーション**を選択します。
-3. ターゲット データベースへの接続文字列を再入力し、**保存**を選択します。
+1. **データ管理** に移動します。
+2. **データベースへのエンティティのエクスポートのコンフィギュレーション** を選択します。
+3. ターゲット データベースへの接続文字列を再入力し、**保存** を選択します。
 
 ### <a name="smtp-email-configuration-suddenly-fails-with-error-message-the-smtp-server-requires-a-secure-connection-or-the-client-was-not-authenticated"></a>SMTP 電子メールのコンフィギュレーションが突然エラー メッセージと共に失敗する: 「SMTP サーバーがセキュリティで保護された接続を必要としてるか、またはクライアントが認証されていません。」
 
 このリリースで、SMTP 電子メール コンフィギュレーションが突然失敗する問題が修正されます。 手動で更新するには
 
-1. **システム管理**に移動します。
-2. **電子メール パラメーター**を選択します。
+1. **システム管理** に移動します。
+2. **電子メール パラメーター** を選択します。
 3. **SMTP** を選択します。 
-4. SMTP サーバーに使用するユーザー名とパスワードを再入力し、**保存**をクリックします。
+4. SMTP サーバーに使用するユーザー名とパスワードを再入力し、**保存** をクリックします。
 
 ## <a name="in-preview"></a>プレビュー
 
 ### <a name="preview-features-are-enabled-only-in-sandbox-instances"></a>プレビュー機能は、サンドボックス インスタンスでのみ有効です。
 
-Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを**実稼働**または**サンドボックス**のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働**インスタンス タイプに更新されます。 既存のインスタンスのいずれかを**サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
+Talent の新しいインスタンスをプロビジョニングする時に、インスタンス タイプを **実稼働** または **サンドボックス** のどちらかに指定することができます。 **サンドボックス** タイプのインスタンスにより、新機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、**実稼働** インスタンス タイプに更新されます。 既存のインスタンスのいずれかを **サンドボックス** インスタンス タイプに更新する場合は、変更要求を開始するよう [サポート](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) に連絡してください。
 
 変更を公開する方法の詳細については、[Talent のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) を参照してください。
 

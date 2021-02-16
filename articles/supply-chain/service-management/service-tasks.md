@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2864b481c67c078df73436d752069a6b6c78640
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206038"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431645"
 ---
 # <a name="service-tasks-overview"></a>サービス作業の概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "3206038"
 
 ## <a name="create-a-service-task"></a>サービス作業の作成
 
-1. **サービス管理** \> **設定** \> **サービス作業**をクリックします。
+1. **サービス管理** \> **設定** \> **サービス作業** をクリックします。
 2. 新しい行を作成します。
 3. サービス ID と説明を入力します。
 
@@ -86,7 +86,7 @@ ms.locfileid: "3206038"
 
 **サービス作業によるグループ化**
 
-1. **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約**の順にクリックします。
+1. **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
 2. **設定** タブの、**サービス注文の組み合わせ** フィールドで **サービス作業別** を選択します。
 
 

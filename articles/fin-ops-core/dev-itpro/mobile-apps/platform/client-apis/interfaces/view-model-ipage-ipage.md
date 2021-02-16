@@ -1,7 +1,7 @@
 ---
 title: ページのタイプ
 description: ページ オブジェクト タイプ。
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -9,18 +9,17 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.search.scope: ''
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 125f50db9d266bf7a0e6958a4fe4db544a50dc99
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a4dca6f7f13c52b15b0cd203caf5056660031f5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191841"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688191"
 ---
 # <a name="page-type"></a>ページのタイプ
 
@@ -81,7 +80,7 @@ ms.locfileid: "2191841"
 
 ### <a name="children"></a>children
 
-children: [Control](view-model-control-basecontrol-icontrol-icontrol.md) [ ]
+子: [Control](view-model-control-basecontrol-icontrol-icontrol.md)[ ]
 
 (読み取り専用) ページのすべての直接の子コントロールの一覧。
 
@@ -211,9 +210,9 @@ getAction(actionName: string): [PageLink](view-model-control-pagelink-ipagelink-
 
 | 氏名 | 種類 | 説明 |
 | ---- | ---- | ----------- |
-| actionName|string||
+| actionName|文字列||
 
-#### <a name="returns-pagelinkview-model-control-pagelink-ipagelink-ipagelinkmd"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) を返します
+#### <a name="returns-pagelink"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) を返します
 
 
 
@@ -225,7 +224,7 @@ getActions(): [PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ]
 すべてのページ アクションを取得します。
 これらには、アクション シート/メニュー内のアクションが含まれます。
 
-#### <a name="returns-pagelinkview-model-control-pagelink-ipagelink-ipagelinkmd--"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ] を返します
+#### <a name="returns-pagelink--"></a>[PageLink](view-model-control-pagelink-ipagelink-ipagelink.md) [ ] を返します
 
 
 
@@ -244,7 +243,7 @@ getControl(controlName: string): [Control](view-model-control-basecontrol-icontr
 | ---- | ---- | ----------- |
 | controlName|string||
 
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
+#### <a name="returns-control"></a>[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します
 
 
 
@@ -255,7 +254,7 @@ getDesign(): [Design](view-model-ipage-idesign.md)
 
 ページに関連付けられているデザイン オブジェクトを取得します。
 
-#### <a name="returns-designview-model-ipage-idesignmd"></a>[Design](view-model-ipage-idesign.md) を返します
+#### <a name="returns-design"></a>[Design](view-model-ipage-idesign.md) を返します
 
 
 
@@ -310,7 +309,7 @@ submit(): Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md
 
 アクションを送信します。
 
-#### <a name="returns-promise-ltcompleteeventargsview-model-ipage-icompleteeventargsmdgt"></a>Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md)&gt; を返します
+#### <a name="returns-promise-ltcompleteeventargsgt"></a>Promise &lt;[CompleteEventArgs](view-model-ipage-icompleteeventargs.md)&gt; を返します
 
 
 

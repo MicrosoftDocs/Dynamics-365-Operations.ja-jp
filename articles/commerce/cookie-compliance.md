@@ -3,7 +3,7 @@ title: Cookie のコンプライアンス
 description: このトピックでは、Cookie のコンプライアンスおよび Microsoft Dynamics 365 Commerce に含まれる既定のポリシーに関する考慮事項について説明します。
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413653"
 ---
 # <a name="cookie-compliance"></a>Cookie のコンプライアンス
 
@@ -56,6 +56,10 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | SSO セッションを維持するために使用されます。                        |
 | x-ms-cpim-trans                             | 現在のトランザクションなど、トランザクションを追跡するために使用されます (企業からコンシューマー (B2C) サイトに対して認証されている開いたタブの数)。 |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>電子商取引サイトにおけるサイト利用者向け cookie の同意 
+
+電子商取引サイトの機能、またはモジュールが必須ではない Cookie を使用している場合は、サイト利用者の同意を取得してから、cookie を追跡する必要があります。 サイト利用者が電子商取引サイトで cookie の同意を得られるようにするには、サイトの作成者が、ページのヘッダーモジュールに cookie の同意モジュールを追加および構成して、cookie の同意を要求し、同意を得られたことを確認する必要があります。 イト利用者の同意は、非必須の cookie を使用した機能、またはモジュールがサイトのページに表示される前に得なければなりません。
+
 ## <a name="additional-resources"></a>追加リソース
 
 [ユーザー補助機能](accessibility.md)
@@ -64,4 +68,8 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 
 [プライバシー ポリシー ページの追加](add-privacy-page.md)
 
-[追跡しているコンテンツの変更に関連付けられたユーザー ID の置換](replace-IDs-tracked-changes.md)
+[追跡しているコンテンツの変更に関連付いたユーザー ID の置換](replace-IDs-tracked-changes.md)
+
+[Cookie の同意モジュール](cookie-consent-module.md) 
+ 
+[ヘッダー モジュール](author-header-module.md)

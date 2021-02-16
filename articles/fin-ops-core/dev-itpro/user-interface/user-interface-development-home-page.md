@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c21c2793430141b77899f85150506668fbca3fd7
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: a4c14a39a35f806dfe9d7fcd40152c1be25ee742
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329829"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684987"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
@@ -45,7 +44,6 @@ Finance and Operation アプリケーションのユーザー インターフェ
 
 ## <a name="forms"></a>フォーム
 -   [ナビゲーション概念](page-navigation.md)
-<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
 -   [Web クライアントのページ レイアウト](page-layout.md)
 -   [Dynamics Symbol フォント](symbol-font.md)
 -   [カスタム パターンを使用するテスト フォーム](testing-forms-custom-patterns.md)

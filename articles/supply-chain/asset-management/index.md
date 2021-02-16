@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: bec6612290de71933ea1cb3bbe2147b9c98e21bc
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205348"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431853"
 ---
 # <a name="asset-management-overview"></a>資産管理の概要
 

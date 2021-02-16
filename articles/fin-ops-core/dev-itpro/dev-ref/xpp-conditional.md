@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 150213
 ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 709694ec8468ce9b1d682846652787b3f794322f
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: 0ab74d2c838243b897fc80bbd8646aa682e5b509
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872656"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408748"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 
@@ -38,7 +37,7 @@ ms.locfileid: "2872656"
 **\[else** *ステートメント* 
 **\]**
 
-この構文では、 どちらの *ステートメント* も複合ステートメント (中括弧で囲まれたステートメント) にすることができます。 かっこで囲まれた*式* (条件式) は、**true** または **false** として評価される有効な式にすることができます。 0 (ゼロ) を除くすべての番号は **true** です。 空でない文字列はすべて **true** です。 **if** ステートメントは入れ子にすることができます。 ただし、**if** ステートメントの入れ子が深すぎる場合、**switch** ステートメントを代わりに使用することを考慮する必要があります。
+この構文では、 どちらの *ステートメント* も複合ステートメント (中括弧で囲まれたステートメント) にすることができます。 かっこで囲まれた *式* (条件式) は、**true** または **false** として評価される有効な式にすることができます。 0 (ゼロ) を除くすべての番号は **true** です。 空でない文字列はすべて **true** です。 **if** ステートメントは入れ子にすることができます。 ただし、**if** ステートメントの入れ子が深すぎる場合、**switch** ステートメントを代わりに使用することを考慮する必要があります。
 
 ### <a name="examples-of-if-and-ifelse-statements"></a>if および if...else ステートメントの例
 
@@ -64,10 +63,10 @@ else
 
 **Switch** ステートメントは、ネストされた **if** と同じ動作をするマルチブランチ言語コンストラクトです。 **switch** ステートメントの式が評価され、それぞれの Case の値に対してチェックされます。 大文字と小文字の値は、コンパイラが評価できる定数でなければなりません。 
 
-- ケース定数が**切り替え**式と一致する場合、**case** ステートメントを実行します。 
+- ケース定数が **切り替え** 式と一致する場合、**case** ステートメントを実行します。 
 - そのケースに **break** ステートメントが含まれている場合、プログラムはスイッチからジャンプ アウトします。 
 - ケースに **break** ステートメントが含まれていない場合、プログラムは継続し、次の **ケース** ステートメントを実行します。 
-- 一致が見つからない場合、**既定**ステートメントを実行します。 
+- 一致が見つからない場合、**既定** ステートメントを実行します。 
 - 一致するものがなく、**default** ステートメントがない場合、**switch** ステートメント内のステートメントは実行されません。 
 
 **switch** ステートメントの構文を次に示します。
@@ -138,7 +137,7 @@ case 13, 17, 21, 500;
 
 *式1* **?** *式2* **:** *式3*
 
-この構文では、*expression1* は **true** または **false** の値を返す必要があります。 *expression1* が **true** である場合、三項全体の明細書は*式*を返します。 それ以外の場合、ステートメントは *expression3* を返します。 *expression2* と *expression3* の両方は同じタイプである必要があります。
+この構文では、*expression1* は **true** または **false** の値を返す必要があります。 *expression1* が **true** である場合、三項全体の明細書は *式* を返します。 それ以外の場合、ステートメントは *expression3* を返します。 *expression2* と *expression3* の両方は同じタイプである必要があります。
 
 ### <a name="examples-of-the-ternary-operator-"></a>三項演算子 (?) の例
 

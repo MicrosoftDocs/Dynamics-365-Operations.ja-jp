@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 72211
 ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e931d3681f34772d137c5a2ae3e672e55ef2891f
-ms.sourcegitcommit: 7eae20185944ff7394531173490a286a61092323
+ms.openlocfilehash: b6425813c83242cfd2179e8f8698e56fc572f2fa
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872651"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4409508"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -766,7 +765,7 @@ X++ の式は数学的または論理的ないずれかの方法で使用され�
 
 ### <a name="ebnf-description-of-expressions-in-x"></a>EBNF Description of Expressions in X++
 
-|                    |   |                                                             |
+|    相談            | &nbsp; |   定義                                                |
 |--------------------|---|-------------------------------------------------------------|
 |     式     | = | 簡易式  \[RelationalOperator Simple-expression \] |
 | RelationalOperator | = |                              =                              |

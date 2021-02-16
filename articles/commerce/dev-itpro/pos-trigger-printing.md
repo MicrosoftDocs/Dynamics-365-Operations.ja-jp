@@ -3,27 +3,26 @@ title: Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、任意の Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 5c7157274e9169b217eefa6344a7bac30333f301
-ms.sourcegitcommit: 60ad3da04c815c2516672543320ae4b631e78662
+ms.openlocfilehash: 4fdbe10ca39f0ff5eab45d0734959f76acac2ea9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3368807"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681506"
 ---
-# <a name="modern-pos-mpos-triggers-and-printing"></a>Modern POS (MPOS) のトリガーと印刷
+# <a name="pos-triggers"></a>POS トリガー
 
 [!include [banner](../../includes/banner.md)]
 
@@ -154,24 +153,29 @@ ms.locfileid: "3368807"
 | PrePickUpCustomerOrderLinesTrigger    | 解約可能     | 顧客注文明細行が選択される前に実行されます。  |
 | PreChangeShippingOriginTrigger    | 解約可能     | 顧客注文時に出荷元が変更される前に実行されます。|
 | PreGetFulfillmentLinesTrigger     | 解約可能     | 注文フルフィルメント明細行が注文フルフィルメント ビューに読み込まれる前に実行されます。|
-| PreShipFulfillmentLinesTrigger    | 解約可能     | **出荷**ボタンを選択することで、注文フルフィルメント ビューから出荷が行われる前に実行されます。|
-| PostShipFulfillmentLinesTrigger   | キャンセル不可     | **出荷**ボタンを選択することで、注文フルフィルメント ビューから出荷が行われた後に実行されます。|
-| PreMarkFulfillmentLinesAsPackedTrigger    | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされる前に実行されます。|
-| PostMarkFulfillmentLinesAsPackedTrigger   | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされた後に実行されます。|
-| PreCreatePackingSlipTrigger   | 解約可能     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされる前に実行されます。|
-| PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包**ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
+| PreShipFulfillmentLinesTrigger    | 解約可能     | **出荷** ボタンを選択することで、注文フルフィルメント ビューから出荷が行われる前に実行されます。|
+| PostShipFulfillmentLinesTrigger   | キャンセル不可     | **出荷** ボタンを選択することで、注文フルフィルメント ビューから出荷が行われた後に実行されます。|
+| PreMarkFulfillmentLinesAsPackedTrigger    | 解約可能     | **梱包** ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされる前に実行されます。|
+| PostMarkFulfillmentLinesAsPackedTrigger   | キャンセル不可     | **梱包** ボタンを選択することで、注文フルフィルメント ビューから梱包オプションとしてマークがトリガーされた後に実行されます。|
+| PreCreatePackingSlipTrigger   | 解約可能     | **梱包** ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされる前に実行されます。|
+| PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包** ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
 | PostReturnInvoicedSalesLinesTrigger   | キャンセル不可     | 返品対象として 1 つ以上の請求書が選択された後に実行されます。|
+| PreResendEmailReceiptTrigger (10.0.13)    | 解約可能     | 仕訳帳ビューを表示から電子メールを送信する前に実行されます。|
+
 
 
 ## <a name="shift-triggers"></a>シフト トリガー
-| トリガー              | 型           | 説明                                             |
-|----------------------|----------------|---------------------------------------------------------|
-| PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |
-| PreCloseShiftTrigger | 解約可能 | このトリガーは、シフトが開かれる前に実行されます。 |
+
+| トリガー              | 種類           | 説明                                             | リリース    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |     |
+| PreCloseShiftTrigger | 解約可能 | このトリガーは、シフトが開かれる前に実行されます。 |    |
+| PreResumeShiftTrigger | 解約可能 | このトリガーは、シフトが再開される前に実行されます。 |10.0.16   |
+| PostResumeShiftTrigger | キャンセル不可 | このトリガーは、シフトが再開された後に実行されます。 | 10.0.16 |
 
 ## <a name="tax-override-triggers"></a>税上書きトリガー
 
-| トリガー                           | 型           | 説明                                                                                     |
+| トリガー                           | 種類           | 説明                                                                                     |
 |-----------------------------------|----------------|---------------|
 | PreOverrideLineProductTaxTrigger  | 解約可能     | 税額またはコードがカート行に上書きされる前に実行されます。           |
 | PostOverrideLineProductTaxTrigger | キャンセル不可 | 税額またはコードがカート行に上書きされた後に実行されます。            |
@@ -197,7 +201,7 @@ ms.locfileid: "3368807"
 | PostCartCheckoutTrigger            | キャンセル不可 | チェックアウト プロセスの完了後に実行されます。     |
 | PreRecallTransactionTrigger        | 解約可能     | 顧客の注文がリコールされる前に実行されます。       |
 | PostRecallTransactionTrigger       | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。        |
-| PreSelectTransactionPaymentMethodTrigger       | 解約可能 |  ユーザーが**カート ビュー - 合計**パネルで**合計**を選択すると、使用可能な支払方法が表示され、このトリガーはこのダイアログが表示される前に実行されます。 このトリガーから利用可能な支払方法を変更するための拡張コードを使用できます。      |
+| PreSelectTransactionPaymentMethodTrigger       | 解約可能 |  ユーザーが **カート ビュー - 合計** パネルで **合計** を選択すると、使用可能な支払方法が表示され、このトリガーはこのダイアログが表示される前に実行されます。 このトリガーから利用可能な支払方法を変更するための拡張コードを使用できます。      |
 | PreShipSelectedCartLinesTrigger       | 解約可能 |  製品が出荷対象として選択されたときに実行されます。      |
 
 ## <a name="reason-code-triggers"></a>理由コード トリガー
@@ -211,6 +215,18 @@ ms.locfileid: "3368807"
 | PreCreateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが作成される前に実行 (注文入力後に実行) されます。 |
 | PreUpdateTransferOrderTrigger | 解約可能 | このトリガーは、移動オーダーが更新される前に実行されます。 |
 
+## <a name="inventory-triggers"></a>在庫トリガー
+| トリガー              | 種類           | 説明                                             | リリース     |
+|----------------------|----------------|---------------------------------------------------------|--------------------------|
+| PreCreateInventoryDocumentTrigger | 解約可能 | このトリガーは、入庫/出庫ドキュメントが作成される前に実行 (注文入力後に実行) されます。 | 10.0.15 |
+| PreUpdateInventoryDocumentTrigger | 解約可能 | このトリガーは、入庫/出庫ドキュメントが更新される前に実行されます。 | 10.0.15 |
+
+## <a name="stock-count-triggers"></a>在庫数のトリガー
+
+| トリガー              | 種類           | 説明                                             | リリース    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PreAdjustStockCountLineQuantityTrigger | 解約可能 | このトリガーは、明細行の在庫数が調整される前に実行されます。 |10.0.16    |
+| PreSaveStockCountJournalTrigger | 解約可能 | このトリガーは、在庫数仕訳帳が保存される前に実行されます。 | 10.0.16 |
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 この例では、ユーザーがトランザクションを中断したときに、カスタム レシートが印刷されます。 この例では、**PostSuspendTransactionTrigger** トリガーを実装し、既存の周辺機器 API を使用してカスタム レシートを印刷します。
@@ -243,7 +259,7 @@ ms.locfileid: "3368807"
     ```typescript
     export default class PostSuspendTransactionTrigger extends Triggers.PostSuspendTransactionTrigger { }
     ```
-8. トリガーの**実行**メソッドを実装し、レシート プロファイルを取得して、カスタムのレシートを印刷します。
+8. トリガーの **実行** メソッドを実装し、レシート プロファイルを取得して、カスタムのレシートを印刷します。
    
     ```typescript
     public execute(options: Triggers.IPostSuspendTransactionTriggerOptions): Promise < void> {
@@ -420,7 +436,7 @@ ms.locfileid: "3368807"
 
 
 1. Visual Studio 2015 を起動します。
-2. **ファイル**メニューで、**開く \> プロジェクト/ソリューション**を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
+2. **ファイル** メニューで、**開く \> プロジェクト/ソリューション** を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
 3. テンプレート プロジェクト **Runtime.Extensions.SuspendReceiptSample** を名前変更します。
 4. オプション: 既定の名前空間を変更します。
 5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** を名前変更します。
@@ -657,8 +673,8 @@ ms.locfileid: "3368807"
 11. プロジェクトをコンパイル、およびビルドします。
 12. 出力ディレクトリに移動し、出力アセンブリをコピーします。
 13. **…\\RetailServer\\webroot\\bin\\ext** フォルダに移動し、アセンブリに貼り付けます。
-14. また、**…\\RetailSDK\\参照**フォルダーでアセンブリを貼り付けます。
-15. **commerceruntime.ext.config**ファイルを開き、\<構成\>セクションでカスタム アセンブリ情報を追加します。
+14. また、**…\\RetailSDK\\参照** フォルダーでアセンブリを貼り付けます。
+15. **commerceruntime.ext.config** ファイルを開き、\<composition\> セクションでカスタム アセンブリ情報を追加します。
 
     ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
@@ -670,27 +686,27 @@ ms.locfileid: "3368807"
 ## <a name="add-the-custom-receipt-layout"></a>カスタム レシート レイアウトの追加
 
 1. Dynamics 365 Commerce を開きます。
-2. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS** > **受領書フォーマット**の順に移動します。
-3. **受領書フォーマット**内の**新規**をクリックします。
-4. **提出した受領書フォーマット** フィールドに、**中断**という形式名を入力します。 **受領書タイプ** フィールドで、**CustomReceiptType7** を選択します。
-5. **デザイナー**をクリックし、入庫デザイナーを開きます。
+2. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS** > **受領書フォーマット** の順に移動します。
+3. **受領書フォーマット** 内の **新規** をクリックします。
+4. **提出した受領書フォーマット** フィールドに、**中断** という形式名を入力します。 **受領書タイプ** フィールドで、**CustomReceiptType7** を選択します。
+5. **デザイナー** をクリックし、入庫デザイナーを開きます。
 6. インストールするようメッセージが表示されたら、指示に従います。 Azure Active Directory (AAD) 資格情報を入力し、デザイナーを起動します。
 7. 必須のフィールドをヘッダー、明細行、またはフッターにドラッグおよびドロップします。 または、コピー機能を使用して既存のレシートの形式からコピーし、それを編集します。
-8. **保存**をクリックします。
-9. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS プロファイル** > **視覚プロファイル**の順に移動します。
-10. **電子メール受信** プロファイルまたは保存するプロファイルを選択します。 **一般**タブの**追加**ボタンをクリックします。
-11. **受領書タイプ**で、**CustomReceiptType7** を選択し、**受領書フォーマット**で**中断**を選択します。
-12. **Retail とコマース > Retail とコマース IT > 配送スケジュール**の順に移動します。
+8. **保存** をクリックします。
+9. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS プロファイル** > **視覚プロファイル** の順に移動します。
+10. **電子メール受信** プロファイルまたは保存するプロファイルを選択します。 **一般** タブの **追加** ボタンをクリックします。
+11. **受領書タイプ** で、**CustomReceiptType7** を選択し、**受領書フォーマット** で **中断** を選択します。
+12. **Retail とコマース > Retail とコマース IT > 配送スケジュール** の順に移動します。
 13. **レジスター (1090)** を選択し、アクション バーで **今すぐ実行** をクリックします。 要求するメッセージが表示されたら、**はい** をクリックしてジョブを実行します。 
 
 ## <a name="configure-the-xps-printer-for-quick-testing"></a>クイック テスト用の XPS プリンタのコンフィギュレーション
 
-1. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS プロファイル** > **ハードウェア プロファイル**の順に移動します。
+1. **Retail とコマース** > **チャネル設定** > **POS 設定** > **POS プロファイル** > **ハードウェア プロファイル** の順に移動します。
 2. デバイスで使用しているハードウェア プロファイルを選択します。 たとえば、デモ データのすべてのヒューストン デバイスは **HW002** を使用します。
-3. 操作バーの**編集**をクリックします。
-4. **プリンター** FastTab を展開します。 **プリンター** ドロップダウン リストで、**Windows ドライバー**を選択し、デバイス名フィールドに **Microsoft XPS ドキュメント ライター**と入力します。
-5. **保存**をクリックします。
-6. **Retail とコマース** > **Retail とコマース IT** > **配送スケジュール**の順に移動します。
+3. 操作バーの **編集** をクリックします。
+4. **プリンター** FastTab を展開します。 **プリンター** ドロップダウン リストで、**Windows ドライバー** を選択し、デバイス名フィールドに **Microsoft XPS ドキュメント ライター** と入力します。
+5. **保存** をクリックします。
+6. **Retail とコマース** > **Retail とコマース IT** > **配送スケジュール** の順に移動します。
 7. **レジスター (1090)** を選択し、アクション バーで **今すぐ実行** をクリックします。 要求するメッセージが表示されたら、**はい** をクリックしてジョブを実行します。 
 
 ## <a name="validate-the-extension"></a>拡張機能の検証

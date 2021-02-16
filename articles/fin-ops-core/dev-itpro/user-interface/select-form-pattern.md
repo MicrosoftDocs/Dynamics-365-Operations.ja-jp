@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 28681
 ms.assetid: 09a51876-8c9d-41ed-ab81-b780894a4281
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80a77fd5a93df36d71b6176a19abcf6384b7b308
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 8b139c0df13bfd12100b3ff938618e607c9636e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329945"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687828"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
@@ -63,11 +62,11 @@ ms.locfileid: "3329945"
 | ナビゲーション リストにフィールドが 4 ～ 5 個の場合は SimpleListDetails                         | [簡易リストと詳細 – 表形式のグリッド](simple-list-details-form-pattern.md) |
 | ツリーがある場合は SimpleListDetails (まれ)                                                  | [簡易リストと詳細 – ツリー](simple-list-details-form-pattern.md)         |
 | TableOfContents                                                                                  | [目次](table-of-contents-form-pattern.md)                        |
-| 自動には**概要**タブ、**一般**タブ、および単一のデータ ソースが存在する            | [タスク シングル](task-single-form-pattern.md)                                    |
-| 自動には**概要**タブ、**一般**タブ、またはヘッダーを含めたラインの 2 つのセットが存在する | [タスク ダブル](task-double-form-pattern.md)                                    |
+| 自動には **概要** タブ、**一般** タブ、および単一のデータ ソースが存在する            | [タスク シングル](task-single-form-pattern.md)                                    |
+| 自動には **概要** タブ、**一般** タブ、またはヘッダーを含めたラインの 2 つのセットが存在する | [タスク ダブル](task-double-form-pattern.md)                                    |
 | 自動には1 つのレコードにフォーカスが存在する                                                    | [簡易詳細](simple-details-form-pattern.md)                              |
 | 自動には「ルックアップ」で終了するフォーム名が存在する                                                       | [ルックアップ](lookup-form-pattern.md)                                              |
-| 自動には 1 つのタブ コントロールと**次へ**/**前へ**ボタンがある                      | [ウィザード](wizard-form-pattern.md)                                              |
+| 自動には 1 つのタブ コントロールと **次へ**/**前へ** ボタンがある                      | [ウィザード](wizard-form-pattern.md)                                              |
 | 自動には「ウィザード」で終了するフォーム名が存在する                                                       | [ウィザード](wizard-form-pattern.md)                                              |
 | 自動にはグリッドとボタンが存在する                                                | [簡易リスト](simple-list-form-pattern.md)                                    |
 
@@ -112,7 +111,7 @@ ms.locfileid: "3329945"
 
 ### <a name="finding-forms-that-currently-use-a-particular-form-pattern"></a>特定のフォーム パターンを現在使用しているフォームを検索
 
-特定のフォーム パターンを現在使用しているフォームの一覧全体については、Microsoft Visual Studio 内から**フォーム パターン**レポートを生成します。 レポートを実行する詳細については、[フォーム パターン アドイン](form-pattern-add-ins.md) を参照してください。Excel でレポートをフィルター処理し、特定のパターンを使用するフォームを検索できます。
+特定のフォーム パターンを現在使用しているフォームの一覧全体については、Microsoft Visual Studio 内から **フォーム パターン** レポートを生成します。 レポートを実行する詳細については、[フォーム パターン アドイン](form-pattern-add-ins.md) を参照してください。Excel でレポートをフィルター処理し、特定のパターンを使用するフォームを検索できます。
 
 ### <a name="form-pattern-visuals-and-descriptions"></a>フォームのパターンのビジュアルと説明
 
@@ -158,7 +157,7 @@ ms.locfileid: "3329945"
 
 [![ダイアログ - 基本フォーム](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)
 
-[ダイアログ – 読み取り専用](dialog-form-pattern.md) ダイアログが編集できない情報だけを表示する場合は、このダイアログバリアントを使用します。 **閉じる**ボタンだけがあります。
+[ダイアログ – 読み取り専用](dialog-form-pattern.md) ダイアログが編集できない情報だけを表示する場合は、このダイアログバリアントを使用します。 **閉じる** ボタンだけがあります。
 
 フォーム: SalesTablePostings
 
@@ -192,7 +191,7 @@ ms.locfileid: "3329945"
 
 [![ドロップ ダイアログ フォーム](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)
 
-[ドロップ ダイアログ – 読み取り専用](drop-dialog-form-pattern.md) ドロップ ダイアログのフィールドが編集できない場合は、このドロップ ダイアログ バリアントを使用します。 **OK**/**閉じる**ボタンはモデル化されません。
+[ドロップ ダイアログ – 読み取り専用](drop-dialog-form-pattern.md) ドロップ ダイアログのフィールドが編集できない場合は、このドロップ ダイアログ バリアントを使用します。 **OK**/**閉じる** ボタンはモデル化されません。
 
 現在、例が製品に存在しません。
 

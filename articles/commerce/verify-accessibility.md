@@ -1,7 +1,7 @@
 ---
 title: ページ コンテンツのアクセシビリティの検証
 description: このトピックでは、Microsoft Dynamics 365 Commerce のページ コンテンツのアクセシビリティを検証する方法について説明します。
-author: arotkin
+author: josaw1
 manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: arotkin
+ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8e35b0f71ff41bade266fb177e4500c7d124ed1f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002662"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4413879"
 ---
 # <a name="verify-page-content-accessibility"></a>ページ コンテンツのアクセシビリティの検証
 
@@ -46,26 +46,26 @@ ms.locfileid: "3002662"
 
 1. システム管理者として Commerce にサインインします。
 1. 左のナビゲーション ウィンドウで、**テナントの設定** (ギア記号の横) を選択して展開します。
-1. **テナントの設定**で、**機能**を選択します。
-1. **アクセシビリティ チェック** オプションを**オン**にします。
+1. **テナントの設定** で、**機能** を選択します。
+1. **アクセシビリティ チェック** オプションを **オン** にします。
 
 ## <a name="turn-on-microsoft-accessibility-insights-for-a-single-site"></a>1 つのサイトに対する Microsoft アクセシビリティ インサイトの有効化
 
 1 つの Commerce サイトに対する [Microsoft アクセシビリティ インサイト 統合](https://accessibilityinsights.io/) を有効にするには、次の手順を実行します。
 
-1. **サイト**で、**Fabrikam** (またはサイトの名前) を選択します。
-1. 左のナビゲーション ウィンドウで、**サイト設定**を選択して展開します。
-1. **サイト設定**で、**機能**を選択します。
-1. **アクセシビリティ チェック** オプションを**オン**にします。
+1. **サイト** で、**Fabrikam** (またはサイトの名前) を選択します。
+1. 左のナビゲーション ウィンドウで、**サイト設定** を選択して展開します。
+1. **サイト設定** で、**機能** を選択します。
+1. **アクセシビリティ チェック** オプションを **オン** にします。
 
 ## <a name="verify-the-accessibility-of-the-content-on-the-home-page"></a>ホーム ページのコンテンツのアクセシビリティを確認する
 
 統合された [Microsoft アクセシビリティ インサイト](https://accessibilityinsights.io/) サービスを使用して、Commerce のホーム ページのコンテンツのスキャンおよび確認をするには、次の手順を実行します。
 
-1. **サイト**で、**Fabrikam** (またはサイトの名前) を選択します。
-1. 左のナビゲーション ウィンドウで、**ページ**を選択します。
+1. **サイト** で、**Fabrikam** (またはサイトの名前) を選択します。
+1. 左のナビゲーション ウィンドウで、**ページ** を選択します。
 1. ホーム ページを検索、選択して、ページ エディターで開きます。
-1. コマンド バーで、**アクセシビリティのチェック**を選択します。 **アクセシビリティのチェック**のページが表示されます。
+1. コマンド バーで、**アクセシビリティのチェック** を選択します。 **アクセシビリティのチェック** のページが表示されます。
 1. スキャンが完了した後、レポートの内容を確認します。
 1. チェックが失敗した場合、失敗したチェック項目をそれぞれ選択して展開し、詳細を表示します。
 1. 確認した後、レポートを閉じるには、**アクセシビリティのチェック** ページの下部までスクロールし、**OK** を選択します。

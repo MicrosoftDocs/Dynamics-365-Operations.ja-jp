@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 99b201b01c4d9d3fc280d6c85812d0efe1a8fa5e
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: fc45c204e05ac7a22491c4a03cb9f5aae163466d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057901"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680396"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 
@@ -34,7 +33,7 @@ ms.locfileid: "3057901"
 以下のセクションは新しい Retail SDK に拡張機能を手動で移動する方法を説明しますが、Azure DevOps または Git などのソース管理システムを使用してこれを行うことができます。
 
 ## <a name="update-the-retail-sdk"></a>Retail SDK の更新
-新しいバイナリの修正プログラムを適用することで Retail SDK を更新するときに、既存の Retail SDK フォルダー内に新しい **更新** フォルダーと、更新済の SDK のコピーが作成されます。 新しい環境を配置する場合、新しい Retail SDK は仮想マシン (VM) のサービス ボリュームまたはダウンロード可能な VHD の C ドライブにあります。
+新しい環境を配置する場合、新しい Retail SDK は仮想マシン (VM) のサービス ボリュームまたはダウンロード可能な VHD の C ドライブにあります。 Lifecycle Services (LCS) からの新しいバイナリ修正プログラムを適用して Retail SDK を更新すると、既存の Retail SDK フォルダ内に新しい **更新プログラム** フォルダーが作成され、更新された新しい SDK のコピーが {{Guid.RetailSDKUpdate.Date}} という名前で更新プログラム フォルダー内に作成されます。 このフォルダーをコピーする際、パスまたはファイル名が長すぎるという内容のエラー メッセージが表示されることがあるため、フォルダーの名前を短くすることをお勧めします。
 
 ### <a name="retail-sdk-components"></a>Retail SDK のコンポーネント
 
@@ -84,7 +83,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
 > [!NOTE]
 > ソース管理/マージ ツールを使用してコード アップグレードを完了できます。 変更を追跡して必要に応じて戻すことができるように、このプロセスでソース コード管理ツールを使用することをお勧めします。 ソース管理を使用していない場合、コードをアップグレードする前に、古いおよび新しい Retail SDK フォルダーのバックアップを作成することを確認します。
 
-- **資産:** カスタム アセンブリを含めるために次の拡張構成ファイルのいずれかを変更した場合、これらの変更を新しい**資産フォルダー**にある同じ構成ファイルに移動する必要があります。
+- **資産:** カスタム アセンブリを含めるために次の拡張構成ファイルのいずれかを変更した場合、これらの変更を新しい **資産フォルダー** にある同じ構成ファイルに移動する必要があります。
 
   - CommerceRuntime.Ext.config - CRT 拡張。
   - CommerceRuntime.MPOSOffline.Ext.config - CRT オフライン拡張。
@@ -103,7 +102,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
   > [!NOTE]
   > 配置可能パッケージには、パッケージ用のオンライン ストア コードは含まれません。
 
-- **支払の外部参照**: 支払拡張アセンブリすべてをコピーして以下の**支払アセンブリ** フォルダーに貼り付けます。
+- **支払の外部参照**: 支払拡張アセンブリすべてをコピーして以下の **支払アセンブリ** フォルダーに貼り付けます。
 
   - IPaymentDeviceAssemblies
   - IPaymentProcessorAssemblies
@@ -138,7 +137,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
 
 - **参照:** **Commerce ランタイム**、**ハードウェア ステーション**、**プロキシ** などのすべての拡張機能出力アセンブリと、へのすべての外部アセンブリを参照フォルダーにコピーします。 配置およびパッケージの一部として含めようとしているすべてのアセンブリを含めます。
 
-- **Commerce runtime (CRT) と Commerce Scale Unit 拡張機能:** CRT および拡張機能プロジェクトすべてを **Retail SDK** フォルダーの下にコピーします。 msbuild 中にすべての拡張プロジェクトがビルドされ、プロジェクト アセンブリの出力パスが *RetailSDK\\Reference* フォルダーに設定されるように、必ず、CRT および RS 拡張ソリューション ファイルの詳細を **RetailSDK フォルダー**にある dirs.proj ファイルに含めてください。
+- **Commerce runtime (CRT) と Commerce Scale Unit 拡張機能:** CRT および拡張機能プロジェクトすべてを **Retail SDK** フォルダーの下にコピーします。 msbuild 中にすべての拡張プロジェクトがビルドされ、プロジェクト アセンブリの出力パスが *RetailSDK\\Reference* フォルダーに設定されるように、必ず、CRT および RS 拡張ソリューション ファイルの詳細を **RetailSDK フォルダー** にある dirs.proj ファイルに含めてください。
 
 - **ハードウェア ステーション (HWS) および支払拡張機能:** すべてのハードウェア ステーション (HWS) と支払拡張プロジェクトを **Retail SDK** フォルダーの下にコピーします。 msbuild 中にすべての拡張プロジェクトがビルドされ、プロジェクト アセンブリの出力パスが *RetailSDK\\Reference* フォルダーに設定されるように、必ず、HWS および支払拡張ソリューション ファイルの詳細を **RetailSDK** フォルダーにある dirs.proj ファイルに含めてください。
 
@@ -150,7 +149,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
 すべてのコンポーネントをアップグレードしたら、コマース配置可能パッケージを配置し、配置を検証して、Retail SDK ファイルをリポジトリに追加します。
 
 ## <a name="upgrade-the-channel-extension-from-72-to-a-higher-version"></a>7.2 からそれ以上のバージョンにチャネル拡張機能をアップグレードする
-前のセクション **7.3 からそれ以上のバージョンにチャネル拡張機能をアップグレードする**で説明した手順はコマース プロキシを除くすべてのコンポーネントでも同じです。 RS 拡張機能を持つ CRT があり、**customization.settings** ファイルに基づいて TypeScript セッションが自動生成された場合、7.2 では、プロキシ プロジェクトでインライン変更を完了している必要があります。
+前のセクション **7.3 からそれ以上のバージョンにチャネル拡張機能をアップグレードする** で説明した手順はコマース プロキシを除くすべてのコンポーネントでも同じです。 RS 拡張機能を持つ CRT があり、**customization.settings** ファイルに基づいて TypeScript セッションが自動生成された場合、7.2 では、プロキシ プロジェクトでインライン変更を完了している必要があります。
 
 プロキシを 7.3 にアップグレードするには、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md)のトピックの手順を完了した後、Retail SDK フォルダーにプロキシを移動し、構成ファイル **RetailProxy.MPOSOffline.ext.config** を更新します。
 

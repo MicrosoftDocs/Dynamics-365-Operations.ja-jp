@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0d3bd837c25b32dfe59ed74f448db230d7d53681
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0829296d01e474437e8080db8b03d047e3a613fc
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178785"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695016"
 ---
 # <a name="new-or-updated-task-guides-december-2017"></a>新規または更新されたタスク ガイド (2017 年 12 月)
 
@@ -150,9 +149,9 @@ ms.locfileid: "2178785"
 - BR-00053 NF-e 3.10 (2017 年 7 月)
 - BR-00058 NF-e 会計ドキュメントの自動送信 (2017 年 7 月)
 - BR-00042 顧客支払の源泉徴収税 (2017 年 7 月)
-- BR-10016 非会計運用 (2017年 7 月)
-- BR-00076 プロジェクト借方票 (2017年 7 月)
-- BR-00067 仕入先支払の電子支払管理 (2017年 7 月)
+- BR-10016 非会計運用 (2017 年 7 月)
+- BR-00076 プロジェクト借方票 (2017 年 7 月)
+- BR-00067 仕入先支払の電子支払管理 (2017 年 7 月)
 - BR-00061 仕入先支払の源泉徴収税 (2017 年 7 月)
 - BR-00024 仕入先の会計ドキュメントの受信 (製品) (2017 年 7 月)
 - BR-00082 仕入先の会計ドキュメントの受信 (固定資産 - ICMS 長期回収可能) (2017 年 7 月)

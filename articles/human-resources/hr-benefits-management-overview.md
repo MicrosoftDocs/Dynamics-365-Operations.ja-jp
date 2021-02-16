@@ -3,7 +3,7 @@ title: 福利厚生の管理の概要
 description: Dynamics 365 Human Resources の福利厚生の管理機能の概要。 使いやすいオンライン エクスペリエンスで、従業員に拡張された給付金オプションを提供します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4157cb1f83d686d435f3d04e47c578df455376c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429269"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419336"
 ---
 # <a name="benefits-management-overview"></a>給付金管理の概要
 
@@ -41,15 +41,9 @@ ms.locfileid: "3429269"
 
 デモ データにアクセスする場合は、サンドボックス環境を再配置する必要があります。
 
-## <a name="benefits-management-known-issues"></a>給付金管理に関する既知の問題
-
-### <a name="flex-credit-programs"></a>フレックス クレジット プログラム
-
-フレックス クレジット プログラムに定義された合計クレジット値は、**作業者の福利厚生計画** フォームには表示されません。 また、フレックス クレジット プログラムに **なし** の比例配分ルールを設定すると、計画を選択して確認するときに、**作業者の福利厚生計画** フォームでエラーが発生します。
-
 ## <a name="enable-benefits-management"></a>給付金管理を有効にする
 
-この記事では、Human Resources の機能を有効にする方法について説明します。 また、福利厚生の管理を有効にすると、福利厚生の管理が置換されるか無効になる Human Resources の既存機能も示されます。
+このトピックでは、Human Resources の機能を有効にする方法について説明します。 また、福利厚生の管理を有効にすると、福利厚生の管理が置換されるか無効になる Human Resources の既存機能も示されます。
 
 > [!IMPORTANT]
 > **実稼働** 環境で福利厚生の管理を有効にした後、無効にすることはできません。 **実稼働** 環境で有効にする前に、**サンドボックス** 環境で福利厚生の管理を有効にしてテストすることをお勧めします。 従来の福利厚生機能と新しい福利厚生の管理機能には大きな違いがあり、追加の設定が必要であり、実稼働前にテストする必要があります。
@@ -59,6 +53,8 @@ ms.locfileid: "3429269"
 ## <a name="configure-employee-information"></a>従業員情報のコンフィギュレーション
 
 従業員を福利厚生に登録する前に、必要な情報を提供する必要があります。 従業員を開始日に **固定報酬プラン** に登録し、**従業員** フォームの **従業員の詳細** で **給付金支払頻度** を選択する必要があります。
+
+コミッションなどの補足報酬を受け取る従業員がいる場合は、従業員レコードから **福利厚生の年間給与** 額を追加できます。 Human Resources では、補償範囲額を決定する際に、固定報酬の年間金額ではなく、**福利厚生の年間給与** 額を使用します。 **福利厚生の年間給与** は、従業員の開始日または受給期間の開始日のいずれか遅い方の日付で有効である必要があります。 従業員に対して固定報酬と福利厚生の年間給与額の両方が記録されている場合、福利厚生の年間給与が補償範囲額の決定に使用されます。
 
 性別または年齢に基づくレートを使用する給付金プランを作成する場合、従業員が福利厚生コストを計算するには、生年月日と性別を入力する必要があります。
 

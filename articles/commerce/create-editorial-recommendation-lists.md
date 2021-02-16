@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b866704b419fb07dcf1ddd386af2f7d6cfa02e2
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 9826785700dcc1a35e6199b7aeff4e06b6d9da39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413755"
 ---
 # <a name="manually-create-curated-recommendations"></a>収集された推奨事項の手動作成
 
@@ -38,15 +38,15 @@ ms.locfileid: "3404119"
 
 精選された製品推奨事項リストを作成するには、次の手順に従います。
 
-1. **小売りとコマース &gt; 製品推奨事項 &gt; 推奨リスト**に移動します。
+1. **小売りとコマース &gt; 製品推奨事項 &gt; 推奨リスト** に移動します。
 1. **新規** を選択します。
 1. **リスト ID** フィールドに値を入力します。
-1. **リスト名**フィールドに値を入力します。
-    - **リスト名**は、**製品収集**モジュールの精選されたリスト セクションに表示されるリストのタイトルです。
-1. リストに製品を追加するには、**製品の追加**を選択します。
-1. リスト上で製品の表示順を変えるには、**表示順**列に値を入力します。
+1. **リスト名** フィールドに値を入力します。
+    - **リスト名** は、**製品収集** モジュールの精選されたリスト セクションに表示されるリストのタイトルです。
+1. リストに製品を追加するには、**製品の追加** を選択します。
+1. リスト上で製品の表示順を変えるには、**表示順** 列に値を入力します。
     - 2 つの製品が同じ表示順の値を持つ場合、それら 2 つの最終的な並び順は、バック オフィスとは異なることがあります。
-1. **保存**を選択してリストを保存します。
+1. **保存** を選択してリストを保存します。
 
 ## <a name="example-list"></a>リストの例
 
@@ -62,11 +62,13 @@ ms.locfileid: "3404119"
 
 [カスタマイズされた推奨事項の有効化](personalized-recommendations.md)
 
-[カスタマイズされた製品推奨事項のオプト アウト](personalization-gdpr.md)
+[カスタマイズされた推奨事項のオプト アウト](personalization-gdpr.md)
+
+["類似したルックを買う" 推奨を有効にする](shop-similar-looks.md)
 
 [POS での製品推奨事項の追加](product.md)
 
-[トランザクション画面への推奨設定の追加](add-recommendations-control-pos-screen.md)
+[トランザクション画面への推奨事項の追加](add-recommendations-control-pos-screen.md)
 
 [AI-ML 推奨事項結果の調整](modify-product-recommendation-results.md)
 

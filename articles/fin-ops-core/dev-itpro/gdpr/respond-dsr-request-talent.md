@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2e69aa51816460173c29dc6665071c1a95569f1
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e7aebffed7552ac74d698853e60419ca1ebdaebb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005742"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685147"
 ---
 # <a name="respond-to-requests-for-personal-data-in-human-resources"></a>人事管理の個人データ要求への対応
 
@@ -88,7 +87,7 @@ ms.locfileid: "3005742"
 
 + 作業者職位を削除します。 
 
-    職位の割り当てを削除するには、**作業者** ページで **職位の割り当て** を選択します。 **次の日の時点** および **すべてのレコードを表示** を選択します。 位置番号をドリルインするには、**タイムラインの変更** &gt; **変更の管理** &gt; **職位作業者割り当て**を選択し、削除している作業員に割り当てられている位置の割り当てレコードを削除します。
+    職位の割り当てを削除するには、**作業者** ページで **職位の割り当て** を選択します。 **次の日の時点** および **すべてのレコードを表示** を選択します。 位置番号をドリルインするには、**タイムラインの変更** &gt; **変更の管理** &gt; **職位作業者割り当て** を選択し、削除している作業員に割り当てられている位置の割り当てレコードを削除します。
 
 + 固定報酬を削除します。
 

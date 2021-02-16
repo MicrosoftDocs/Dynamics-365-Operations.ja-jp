@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
-ms.openlocfilehash: 58a8ae66b126b06c62834223984f11e9694a8ed7
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: 7de034307035c61015f0bda1b1f7064cd840009d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945406"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683959"
 ---
 # <a name="abort-an-executing-batch-job"></a>実行中のバッチ ジョブの中止
 [!include [banner](../includes/banner.md)]
@@ -39,6 +38,6 @@ ms.locfileid: "2945406"
 
 1. **システム管理** \> **照会** \> **バッチ ジョブ** の順に移動します。
 2. **状態** が **キャンセル** のバッチ ジョブを選択します。
-3. **バッチ タスク** タブで タスク上の **中止** を選択し、**OK** をクリックします。
+3. **バッチ タスク** タブでタスク上の **中止** を選択し、**OK** を選択します。
 
     ![バッチ タスクの中止](./media/batch-abort.PNG) 

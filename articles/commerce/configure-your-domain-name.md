@@ -3,7 +3,7 @@ title: ドメイン名のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。
 author: psimolin
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2ad9ca3aee21301ef6d830d7b29982a45cd53f60
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: ac1b0c8baaddd6ca62cc49657fff364df21c14f2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096823"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517128"
 ---
 # <a name="configure-your-domain-name"></a>ドメイン名のコンフィギュレーション
 
@@ -33,23 +33,21 @@ ms.locfileid: "3096823"
 
 このトピックでは、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。 
 
-## <a name="add-domains-during-e-commerce-initialization"></a>E-コマースの初期化中にドメインを追加する
+## <a name="add-domains-during-e-commerce-initialization"></a>eコマースの初期化中にドメインを追加する
 
-ドメインを E コマース環境に関連付けるには、[新しい E コマース サイトの配置](deploy-ecommerce-site.md) に記載され E コマースを初期化します。 初期化中、E コマース環境のプロビジョニングに使用する情報を提供するように求められます。 **サポートされるホスト名**フィールドに、この環境で使用する予定のすべてのドメインを追加します。 複数のドメインはセミコロンで区切る必要があります。 この方法で、全ての必要な E コーマース コンポーネントでドメインがコンフィギュレーションされ、それらは、コンテンツ配信ネットワーク (CDN) または Web サーバーからのトラフィックを切り替えて、それを E コマース フロント エンドにポイントする際に使用することができます。
+ドメインを Dynamics 365 Commerce e コマース環境に関連付けるには、[新しい e コマース テナントのデプロイ](deploy-ecommerce-site.md).に記載されている通り、e コマースを初期化します。 初期化中、e コマース環境のプロビジョニングに使用する情報を提供するように求められます。 **サポートされるホスト名** フィールドに、この環境で使用する予定のすべてのドメインを追加します。 複数のドメインはセミコロンで区切る必要があります。 この方法で、全ての必要な e コーマース コンポーネントでドメインがコンフィギュレーションされ、それらは、コンテンツ配信ネットワーク (CDN) または Web サーバーからのトラフィックを切り替え、それを e コマース フロント エンドにポイントする際に使用する準備が整います。
 
-## <a name="add-domains-after-e-commerce-initialization"></a>E-コマースの初期化後にドメインを追加する
+## <a name="add-domains-after-e-commerce-initialization"></a>e-コマースの初期化後にドメインを追加する
 
-E コマースの初期化後に新しいドメインを E コマース環境に関連付けるには、サービス要求を送信する必要があります。
+e コマースの初期化後に新しいドメインを e コマース環境に関連付けるには、サービス要求を送信する必要があります。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[新しい E コマース サイトの配置](deploy-ecommerce-site.md)
+[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[オンライン ストア チャネルのセットアップ](online-stores.md)
+[eコマース サイトの作成](create-ecommerce-site.md)
 
-[E コマース サイトの作成](create-ecommerce-site.md)
-
-[チャンネルとオンライン サイトの関連付け](associate-site-online-store.md)
+[オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
 [robots.txt ファイルの管理](manage-robots-txt-files.md)
 

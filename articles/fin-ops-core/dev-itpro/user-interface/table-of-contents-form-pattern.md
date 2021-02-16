@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 14621
 ms.assetid: 1785880c-d729-43b7-bd78-9ae03bac4043
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bffc691f136f81674bba714f066ad252928f4a3
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: 69ab1116820e466d20ae1de087d5f947c85cdb1f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329869"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687806"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 
@@ -94,13 +93,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   補足命令が表示されている場合は、文例の完全で簡潔な文で構成され、終端の句読点が付きます。
 -   TOC タブは、情報の入力に通常使用されるのと同じ順序で表示されます。
 -   別のフォームの特定のタスクのコンテキストでフォームが開かれていない限り、フォームを開いたときにリストの最初のタブを強調表示する必要があります。
--   目次コンテンツの**コンテンツ領域**は、主に 3 つのパターンのいずれかです (単純な一覧、単純なリストと詳細、または単純な詳細)。
+-   目次コンテンツの **コンテンツ領域** は、主に 3 つのパターンのいずれかです (単純な一覧、単純なリストと詳細、または単純な詳細)。
     -   簡易リスト コンテンツは、サブパターン ガイドラインに従う必要があります。
     -   簡易リストと詳細のコンテンツは、[入れ子になった簡易リストと詳細](nested-simple-list-details-subpattern.md)サブパターン ガイドラインに従う必要があります。
     -   簡易明細コンテンツは、[ツール バーとフィールド](toolbar-fields-subpattern.md) サブパターン ガイドラインに従う必要があります。
     -   FastTabs は Dynamics AX [全般的なフォーム ガイドライン](general-form-guidelines.md) ドキュメントの FastTab ガイドラインに従う必要があります。
     -   タブ ページのツールバーに表示されるアクション。
--   TOC フォームには、次の項目は**ありません**:
+-   TOC フォームには、次の項目は **ありません**:
     -   標準の ActionPane に対するアプリケーション アクション。 (フレームワーク アクションのみを必要とします。)
     -   情報ボックス。
     -   TOC タブ ページ上の標準タブ。

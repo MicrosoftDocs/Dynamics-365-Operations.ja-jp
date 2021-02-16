@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 021dec02ef382f384ddcc8f76f115b719f712988
-ms.sourcegitcommit: 2d3c757f453fcb07df629f86de4ea0c94f1370aa
+ms.openlocfilehash: 03cf3607059e1489d6df26a4e92ded0561993f98
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3264300"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680036"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 
@@ -189,7 +188,7 @@ ms.locfileid: "3264300"
     4. IP アドレスを書き留めてから、IP アドレスを範囲内の空いているアドレスに変更します。
     5. サーバーをシャットダウンします。
 
-6. サーバーのシャットダウンの完了後、または既にダウンしていた場合は、Service Fabric エクスプローラーの状態が反映されます。 省略符号（**...**）ボタンを再度クリックし、**ノードの状態を削除する**を選択します。
+6. サーバーのシャットダウンの完了後、または既にダウンしていた場合は、Service Fabric エクスプローラーの状態が反映されます。 省略符号（**...**）ボタンを再度クリックし、**ノードの状態を削除する** を選択します。
 
     ![ノードの状態を削除するコマンド](media/e0460a280693cdf13896731aa7f2377f.png)
 
@@ -218,7 +217,7 @@ ms.locfileid: "3264300"
 
     サーバーをドメインに接続した後は、[オンプレミス環境 (プラットフォーム更新プログラム 12 以降) の設定と展開](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine) に記載されているオンプレミス環境の前提条件に従う必要があります。 次の手順は、これら前提条件の手順をまとめたものです。
 
-4. それぞれの、インフラストラクチャ\\VM\<VM名\> フォルダの内容を、対応する仮想マシン (VM) にコピーします。 （リモート スクリプトを使用している場合は、コンテンツが自動的に対象のVMにコピーされます。）続いて、次の Windows PowerShell スクリプトを管理者として実行します。
+4. それぞれのインフラストラクチャ \\VMs\<VMName\> フォルダの内容を、対応する仮想マシン (VM) にコピーします。 （リモート スクリプトを使用している場合は、コンテンツが自動的に対象のVMにコピーされます。）続いて、次の Windows PowerShell スクリプトを管理者として実行します。
 
     > [!NOTE]
     > リモートで実行している既存のサーバーを修復する場合は、すべてのサーバーに対してファイルコピー処理が実行されるように、[インフラストラクチャ] フォルダから lbdscripts_remote_status.json ファイルを削除する必要があります。
@@ -230,7 +229,7 @@ ms.locfileid: "3264300"
     .\Configure-PreReqs.ps1 -MSIFilePath <share folder path of the MSIs>
     ```
 
-5. 再起動を求めるメッセージが表示されるたびにコンピューターを再起動してください。 すべての前提条件がインストールされるまでは、再起動後に  **.\\Configure-PreReqs.ps1**   スクリプトを必ず再実行してください。 リモート処理の場合、すべてのコンピューターがオンラインに戻った際に **AllVMs** スクリプトを再実行します。
+5. 再起動を求めるメッセージが表示されるたびにコンピューターを再起動してください。 すべての前提条件がインストールされるまでは、再起動後に **.\\Configure-PreReqs.ps1** スクリプトを必ず再実行してください。 リモート処理の場合、すべてのコンピューターがオンラインに戻った際に **AllVMs** スクリプトを再実行します。
 6. リモート処理スクリプトを使用する場合は、現在のユーザーが Microsoft Windows インストーラー パッケージ ファイル (.msiファイル) の共有フォルダにアクセスできることを確認してください。
 7. リモート処理スクリプトを使用する場合は、ユーザーが **AOSNodeType**、**MRType**、**ReportServerType** タイプのコンピューターにアクセスしていないことを確認してください。 この条件に当てはまる場合は、ユーザーがログインしている理由によって、リモートスクリプトがコンピューターを再起動できなくなります。
 8. VM セットアップを完了するため、存在する場合は、次のスクリプトを実行します。

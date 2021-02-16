@@ -10,19 +10,18 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 ms.custom: 17971
 ms.assetid: 256f7f2b-c419-442f-b195-0c6a299a056e
 ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cdb9307abe91ca44e539a0413a7fcf4e6c145a2e
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 76a8d88337ca97e0310e18cf2ac8e38b1dc588aa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070441"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685407"
 ---
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
@@ -120,13 +119,13 @@ namespace Contoso
 ## <a name="hardware-station-extensibility-configuration"></a>Hardware Station 拡張機能コンフィギュレーション
 ### <a name="configuration-for-iis-hosted-hardware-station"></a>IIS でホストされているハードウェア ステーションのコンフィギュレーション
 
-ハードウェア ステーションが拡張機能を使用する前に、拡張機能のエントリが含まれるようにハードウェア ステーション Web.config ファイルの**合成**セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。 
+ハードウェア ステーションが拡張機能を使用する前に、拡張機能のエントリが含まれるようにハードウェア ステーション Web.config ファイルの **合成** セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。 
 
 [![ハードウェア ステーション Web コンフィギュレーション](./media/hws-webconfig.png)](./media/hws-webconfig.png)
 
 ### <a name="configuration-for-local-ipc-based-hardware-station"></a>ローカル IPC ベースのハードウェア ステーションのコンフィギュレーション
 
-ローカルのハードウェア ステーションが拡張機能を使用する前に、拡張機能用のエントリが含まれるように Modern POS DllHost.exe.config ファイル (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) の**合成**セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。
+ローカルのハードウェア ステーションが拡張機能を使用する前に、拡張機能用のエントリが含まれるように Modern POS DllHost.exe.config ファイル (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) の **合成** セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。
 
 [![ローカル ハードウェア ステーションのコンフィギュレーション](./media/hws-dll-host-local-config.png)
 

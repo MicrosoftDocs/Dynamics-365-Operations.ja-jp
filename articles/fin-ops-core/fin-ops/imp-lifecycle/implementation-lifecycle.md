@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4007ef865c24fce7524297fc100726267efb9598
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 18413ed8f24f7482e32a755b16dbe534e0900e9e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811418"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694403"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
@@ -36,7 +35,7 @@ ms.locfileid: "2811418"
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
-[Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+[Finance and Operations アプリ顧客用 Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## <a name="processes"></a>プロセス
 

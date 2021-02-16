@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 371157aee389694d349ec4fe51af0d9bfbf08cb7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 90924c853793a3d70f2f2d46d8a154a19bd7d6bb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213259"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431956"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>1 つの会社に対するリリース済製品の作成
 

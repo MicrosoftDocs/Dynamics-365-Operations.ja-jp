@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c58cd8002f6bb80ebcbd8c552e4e3509d7528ea
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 451aeebd46d60251eed940016486509c4aa3f458
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215174"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431653"
 ---
 # <a name="service-management-overview"></a>サービス管理の概要
 
 [!include [banner](../includes/banner.md)]
 
 
-サービス契約とサービスの定期売買を締結し、サービス注文および顧客の照会を処理し、顧客へのサービスの配送を管理および分析するには、**サービス管理**を使用します。 サービス契約を使用して、標準的なサービス訪問で使用されるリソースを定義できます。 また、サービス契約を使用して、それらのリソースに関する顧客への請求方法を表示できます。 サービス契約には、標準応答時間を指定し、実際の時間を記録するツールを提供する、サービス レベル契約も含まれています。
+サービス契約とサービスの定期売買を締結し、サービス注文および顧客の照会を処理し、顧客へのサービスの配送を管理および分析するには、**サービス管理** を使用します。 サービス契約を使用して、標準的なサービス訪問で使用されるリソースを定義できます。 また、サービス契約を使用して、それらのリソースに関する顧客への請求方法を表示できます。 サービス契約には、標準応答時間を指定し、実際の時間を記録するツールを提供する、サービス レベル契約も含まれています。
 
 サービス注文を作成して、サービス技術者の顧客サイトへの予定された訪問および予定外の訪問に関する情報を管理できます。 サービス注文には次のような情報が含まれます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "3215174"
 
 ## <a name="business-processes"></a>業務プロセス
 
-次の図は、**サービス管理**の上位レベルの業務プロセスを示し、サービス プロセスが他のモジュールと統合する場所を示します。
+次の図は、**サービス管理** の上位レベルの業務プロセスを示し、サービス プロセスが他のモジュールと統合する場所を示します。
 
 [![サービス管理の業務プロセス図](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 

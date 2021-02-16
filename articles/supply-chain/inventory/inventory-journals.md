@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2d184b34ec33184d730d5b6eed3db144f1433f1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212782"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431722"
 ---
 # <a name="inventory-journals"></a>在庫仕訳帳
 
@@ -66,7 +66,7 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 
 ### <a name="item-arrival"></a>品目到着
 
-着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要**ページから着荷管理の一部として作成するか、**品目到着**ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Supply Chain Management は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
+着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要** ページから着荷管理の一部として作成するか、**品目到着** ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Supply Chain Management は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
 
 ### <a name="production-input"></a>生産入力
 

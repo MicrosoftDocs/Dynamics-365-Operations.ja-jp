@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30b06e537b010b6b32799f76964cb85af892bc3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 01cdfe519e55ca2a9aa17f4ac181ee675b2793cf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216140"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432050"
 ---
 # <a name="service-level-agreements-overview"></a>サービス レベル契約の概要       
 
@@ -38,9 +38,9 @@ SLA により、顧客に提供されるサービスの水準が決定されま�
 
 ## <a name="create-a-service-level-agreement"></a>サービス レベル契約の作成
 
-1.  **サービス管理** \> **設定** \> **サービス契約** \> **サービス レベル契約**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス契約** \> **サービス レベル契約** の順にクリックします。
 
-2.  **サービス レベル契約**フィールドで、サービス レベル契約の名前をタイプします。
+2.  **サービス レベル契約** フィールドで、サービス レベル契約の名前をタイプします。
 
 3.  サービス レベル契約に関連付けられているサービス コールの完了に許容する時間を入力します。 それから、サービス レベル契約を特定のカレンダーに基づかせる場合には、カレンダーを選択します。
 
@@ -54,15 +54,15 @@ SLA はサービス合意に直接適用されます。
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a>サービス合意へのサービス レベル契約の適用
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約**の順にクリックします。 SLA を適用するサービス契約を選択してから、**アクション ウィンドウ**で**編集**をクリックします。
+1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。 SLA を適用するサービス契約を選択してから、**アクション ウィンドウ** で **編集** をクリックします。
 
-2.  **サービス レベル契約**フィールドで、割り当てる SLA を選択します。
+2.  **サービス レベル契約** フィールドで、割り当てる SLA を選択します。
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement-group"></a>サービス合意グループへのサービス レベル契約の適用
 
-1.  **サービス管理** \> **設定** \> **サービス契約** \> **サービス契約グループ**の順にクリックします。
+1.  **サービス管理** \> **設定** \> **サービス契約** \> **サービス契約グループ** の順にクリックします。
 
-2.  **サービス レベル契約**フィールドで、割り当てる SLA を選択します。
+2.  **サービス レベル契約** フィールドで、割り当てる SLA を選択します。
 
 ## <a name="track-time-on-a-service-order-against-an-sla"></a>サービス注文での SLA に対する時間の追跡
 

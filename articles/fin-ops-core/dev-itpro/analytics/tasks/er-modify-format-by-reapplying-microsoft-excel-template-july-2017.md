@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143005"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684238"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による形式の変更
 
@@ -82,5 +81,5 @@ ms.locfileid: "3143005"
 6. [ドラフトの実行] フィールドで、[はい] を選択します。
 
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>支払仕訳処理に ER 形式の変更されたドラフト バージョンを使用する
-    * 支払日という支払い明細行の新しい詳細を含む、作成したワークシートを確認します。  
 
+支払日という支払い明細行の新しい詳細を含む、作成したワークシートを確認します。  

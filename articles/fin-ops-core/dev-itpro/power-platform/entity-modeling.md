@@ -3,32 +3,34 @@ title: エンティティ モデリング
 description: このトピックでは、Finance and Operations エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/17/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1caa6b569b46d1756e0809f64308db6e97176e48
-ms.sourcegitcommit: 7f3cec9d4a402db8a594b46ea36d6297e288cd79
+ms.openlocfilehash: 8f8bd61f3540489d4fbcc42e29402ba75e58e272
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3462518"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680418"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Common Data Service のサービス更新プログラム 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+
+> Finance and Operations 仮想エンティティの Common Data Service メタデータで公開されるパブリック エンティティ名は、Finance and Operations エンティティの物理名を使用します。 これは、Finance and Operations アプリの OData メタデータによって公開されるエンティティのパブリック名とは異なる場合があります。
 
 アプリを作成するには、アプリで使用されているエンティティの間でリレーショナル モデリングを実行する機能が必要です。 仮想エンティティのコンテキストでは、Common Data Service の仮想エンティティとネイティブ エンティティが連携して、目的のユーザー エクスペリエンスを実現する必要があります。 このトピックでは、Finance and Operations の仮想エンティティを使用して実装できるリレーショナル モデリングの概念について説明します。
 
@@ -50,7 +52,7 @@ Finance and Operations エンティティに対して仮想エンティティが
 | 文字列 (memo 以外), 文字列 (memo)    | 文字列 – 1 行のテキスト、文字列 – 複数行テキスト |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>Finance and Operations における空の日付 (1900 年 1 月 1 日) は、Common Data Service では null 値として表されます。 |
 | 日                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>Finance and Operations における空の日付 (1900 年 1 月 1 日) は、Common Data Service では空の値として表されます。 |
-| Enum                                | 候補リスト<br><br>Finance and Operations 列挙 (列挙型) は、Common Data Service ではグローバル OptionSet として生成されます。 システム間のマッチングは、値の**外部名**プロパティを使用して行われます。 Common Data Service における列挙型整数値は、システム間で固定されているとは限りません。 したがって、これらの列挙型にも固定 ID が含まれていないので、依存することは避けてください (特に Finance and Operations の拡張可能な列挙型の場合)。 OptionSet を使用するエンティティが更新されると、OptionSet メタデータが更新されます。 |
+| Enum                                | 候補リスト<br><br>Finance and Operations 列挙 (列挙型) は、Common Data Service ではグローバル OptionSet として生成されます。 システム間のマッチングは、値の **外部名** プロパティを使用して行われます。 Common Data Service における列挙型整数値は、システム間で固定されているとは限りません。 したがって、これらの列挙型にも固定 ID が含まれていないので、依存することは避けてください (特に Finance and Operations の拡張可能な列挙型の場合)。 OptionSet を使用するエンティティが更新されると、OptionSet メタデータが更新されます。 |
 
 Finance and Operations における *real* および *long* データ型のフィールドは、Common Data Service で *decimal* データ型としてモデル化されます。 2 つのデータ型の間では、精度と小数点部桁数の不一致があるため、次の動作を考慮する必要があります。
 
@@ -103,7 +105,7 @@ Common Data Service の基本フィールドには文字列型のフィールド
 
 Finance and Operations エンティティのリレーションは、1 対多 (1: n) または多対 1 (n:1) のリレーションとしてモデル化されます。 これらのリレーションは、Common Data Service の仮想エンティティのリレーションシップとしてモデル化されています。 多対多 (n:n) のリレーションは、Finance and Operations ではサポートされていないことに注意してください。
 
-たとえば、Finance and Operations では、エンティティ A がエンティティ B への外部キーを持っている場合、このリレーションは、Common Data Service の仮想エンティティ A で n:1 のリレーションシップとしてモデル化されます。 Common Data Service でのこのリレーションシップのスキーマ名は、名前付け規則 **mserp\_FK\_\<source entity name\>\_\<relation name\>** を使用します。 この名前付け規則では、最大文字列長が 120 文字になっています。 スキーマ名が 120 文字を超える名前を生成するリレーションは、Common Data Service の仮想エンティティで生成されません。
+たとえば、Finance and Operations では、エンティティ A がエンティティ B への外部キーを持っている場合、このリレーションは、Common Data Service の仮想エンティティ A で n:1 のリレーションシップとしてモデル化されます。 Common Data Service でのこのリレーションシップのスキーマ名は、名前付け規則 **mserp\_FK\_\<source entity name\>\_\<relation name\>** を使用します。 この名前付け規則では、最大文字列長が 92 文字になっています。 スキーマ名が 92 文字を超える名前を生成するリレーションは、Common Data Service の仮想エンティティで生成されません。
 
 このリレーションシップの外部名は、名前付け規則 **FK\_\<relation name\>** を使用します。 外部名は、Finance and Operations に送信されるクエリが作成されるときの Finance and Operations におけるリレーションを決定するために使用されます。
 
@@ -114,7 +116,7 @@ Common Data Service の仮想エンティティ内のリレーションシップ
 要約すると、次のいずれかの理由により、別の Finance and Operations 仮想エンティティとのリレーションシップが仮想エンティティに存在しない場合があります。
 
 - リレーションシップに参加している Finance and Operations エンティティは、仮想エンティティとして存在しません。
-- リレーションシップの名前の長さは、120 文字を超えています。
+- リレーションシップの名前の長さは、92 文字を超えています。
 
 Finance and Operations 仮想エンティティの一部が Common Data Service で生成されたときにエラーが発生した場合 、仮想エンティティはまったく作成されません。 上記のいずれかの理由でリレーションシップが存在しない場合は、エラーとは見なされません。
 
@@ -147,7 +149,7 @@ Finance and Operations 仮想エンティティの一部が Common Data Service 
 フィールド マッピングは、仮想エンティティのフィールドが、ネイティブ エンティティのフィールドにマップされていることを示します。 フィールド マッピングでは、キーが仮想エンティティ フィールドである、値がネイティブ エンティティ フィールドです。
 
 ```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
     public static Map syntheticAccountRelationship()
     {
         Map fieldMapping = new Map(Types::String, Types::String);
@@ -174,7 +176,7 @@ Finance and Operations の列挙型は、Common Data Service の OptionSet と�
 
 ## <a name="company"></a>法人
 
-Finance and Operations のエンティティは、会社にバインドすることも、グローバルにすることもできます。 会社にバインドされている Finance and Operations エンティティの仮想エンティティは、Common Data Service の cdm\_company エンティティとのリレーションシップを持ちます。 cdm\_company エンティティは、Common Data Service におけるネイティブ エンティティで あり、Dynamics365Company ソリューションの一部です。 通常と同様、リレーションシップが作成されると、関連するエンティティ (この場合は cdm\_company) の仮想エンティティにも検索フィールドが作成されます。 このルックアップ フィールドは **会社** という名前であり、ユーザーがリストの値を選択したり、関連するレコードの詳細に移動したりできるように、最適なユーザー エクスペリエンスを提供するために使用する必要があります。 **会社コード**と呼ばれるフィールドは、仮想エンティティにも追加されます。 この値は 4 文字の文字列です。 このフィールドは、プログラミングで使用する必要があります。
+Finance and Operations のエンティティは、会社にバインドすることも、グローバルにすることもできます。 会社にバインドされている Finance and Operations エンティティの仮想エンティティは、Common Data Service の cdm\_company エンティティとのリレーションシップを持ちます。 cdm\_company エンティティは、Common Data Service におけるネイティブ エンティティで あり、Dynamics365Company ソリューションの一部です。 通常と同様、リレーションシップが作成されると、関連するエンティティ (この場合は cdm\_company) の仮想エンティティにも検索フィールドが作成されます。 このルックアップ フィールドは **会社** という名前であり、ユーザーがリストの値を選択したり、関連するレコードの詳細に移動したりできるように、最適なユーザー エクスペリエンスを提供するために使用する必要があります。 **会社コード** と呼ばれるフィールドは、仮想エンティティにも追加されます。 この値は 4 文字の文字列です。 このフィールドは、プログラミングで使用する必要があります。
 
 ## <a name="attachments"></a>アタッチメント
 

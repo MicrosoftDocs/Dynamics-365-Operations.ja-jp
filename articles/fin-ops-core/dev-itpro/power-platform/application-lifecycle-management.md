@@ -3,32 +3,32 @@ title: 仮想エンティティを使用するソリューションのアプリ�
 description: このトピックでは、Finance and Operations の仮想エンティティを使用するソリューションのアプリケーション ライフサイクルについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 40a71c2b265e515eef03d6cad271bdeae9db8f51
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: ee5107990d8744b08a54c622ef3de752e2140d45
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456780"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680420"
 ---
 # <a name="application-lifecycle-management-for-solutions-that-use-virtual-entities"></a>仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Common Data Service のサービス更新プログラム 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 Finance and Operations 仮想エンティティを使用するエンド ツー エンド ソリューションのアプリケーション ライフサイクルには、Finance and Operations および Common Data Service の両方が含まれます。 詳細については、このトピックで説明します。
 

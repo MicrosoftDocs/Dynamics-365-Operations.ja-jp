@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d5619460a36d23a25c793c660a54e98593820c46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178608"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445241"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Excel から仕訳帳明細行とドキュメントを発行する
 
@@ -41,7 +41,7 @@ ms.locfileid: "2178608"
 | 請求仕訳帳          | 勘定: 仕入先の相手勘定: 会社間元帳でサポートされています。                                                      | AP 請求仕訳帳                                                                      |
 | 仕入先請求書           |                                                                                                                         | 仕入先請求書                                                                          |
 | 顧客請求書仕訳帳 | 勘定: 顧客の相手勘定: 会社間元帳でサポートされています。                                                     | 一般仕訳帳                                                                         |
-| 自由書式の請求書        |                                                                                                                         | **自由書式の請求書**ページで、**Excel で開く** (Microsoft Office のアイコン) をクリックします。 |
+| 自由書式の請求書        |                                                                                                                         | **自由書式の請求書** ページで、**Excel で開く** (Microsoft Office のアイコン) をクリックします。 |
 | 固定資産仕訳帳     | 元帳、銀行、顧客、または仕入先への資産。 会社間ではサポートされていません。                                               | 固定資産仕訳帳                                                                     |
 | 仕入先支払仕訳帳   | 勘定: 仕入先の相手勘定: 銀行間でサポートされています。                                                 | 仕入先支払仕訳帳                                                                  |
 | 顧客支払仕訳帳 | 勘定: 顧客の相手勘定: 銀行間でサポートされています。                                               | 顧客支払仕訳帳                                                                |

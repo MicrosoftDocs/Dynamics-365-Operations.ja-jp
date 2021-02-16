@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: 31461
 ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71c59a744faf1eabd24eb45dd330be3a4a979915
-ms.sourcegitcommit: 9f90b194c0fc751d866d3d24d57ecf1b3c5053a1
+ms.openlocfilehash: 8a9447decf2720ca4a624c5113430555c10e7589
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3033019"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4409507"
 ---
 # <a name="x-runtime-function-resources"></a>X++ ランタイム関数リソース
 
@@ -32,11 +31,11 @@ ms.locfileid: "3033019"
 
 X++ 言語は、約 200 のシステム関数を提供しており、これらは、任意のクラスの一部ではなく、実行時に実行されます。 ランタイム関数は、データ型変換、算術操作などに使用されます。 いくつかの共通のランタイム関数を次に示します。
 
--   **str2Int** – は、str 値から int 値を作成します。
--   **abs** – 正または負の実際の値から正の実数値を作成します。
--   **conFind** – コンテナー内の要素の位置を取得します。
+- **str2Int** – は、str 値から int 値を作成します。
+- **abs** – 正または負の実際の値から正の実数値を作成します。
+- **conFind** – コンテナー内の要素の位置を取得します。
 
-### <a name="call-run-time-functions-from-net"></a>.NET からランタイム関数を呼び出す
+## <a name="call-run-time-functions-from-net"></a>.NET からランタイム関数を呼び出す
 
 X++ ランタイム関数のロジックは、次の .NET アセンブリでも実装されています。
 
@@ -51,6 +50,7 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 ```
 
 ## <a name="categories-and-functions"></a>カテゴリおよび機能
+
 次のテーブルは、X++ 関数のカテゴリのみを一覧表示して説明しています。 これらのカテゴリは、多数の機能を理解するのに役立つものです。 ただし、カテゴリでは任意の正式コンストラクトが表されません。
 
 | カテゴリ                  | 説明  |
@@ -66,9 +66,10 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 | 外                     | [ビープ音](#beep)、[newGuid](#newguid)、[スリープ](#sleep)                                                                                                                                                                        |
 
 ## <a name="business"></a>勤務先
+
 詳細については、[X++ ビジネス ランタイム関数](xpp-business-run-time-functions.md) を参照してください。
 
-|          |         |          |        |
+|  &nbsp;  |  &nbsp; | &nbsp;   | &nbsp; |
 |----------|---------|----------|--------|
 | cTerm    | ddb     | dg       | fV     |
 | idg      | intvMax | intvName | intvNo |
@@ -76,6 +77,7 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 | レート     | sln     | syd      | term   |
 
 ## <a name="container"></a>コンテナー
+
 詳細については、[X++ コンテナー ランタイム関数](xpp-container-run-time-functions.md) を参照してください。
 
 - conDel
@@ -87,9 +89,10 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 - conPoke
 
 ## <a name="conversion"></a>換算
+
 詳細については、[X++ 換算ランタイム関数](xpp-conversion-run-time-functions.md) を参照してください。
 
-|           |              |              |            |
+| &nbsp;    | &nbsp;       | &nbsp;       | &nbsp;     |
 |-----------|--------------|--------------|------------|
 | any2Date  | any2Enum     | any2Guid     | any2Int    |
 | any2Int64 | any2Real     | any2Str      | anytodate  |
@@ -102,9 +105,10 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 | str2Time  | time2Str     | uint2Str     |            |
 
 ## <a name="date"></a>日
+
 詳細については、[X++ 日付ランタイム関数](xpp-date-run-time-functions.md) を参照してください。
 
-|         |          |               |               |
+| &nbsp;  | &nbsp;   | &nbsp;        | &nbsp;        |
 |---------|----------|---------------|---------------|
 | dayName | dayOfMth | dayOfWk       | dayOfYr       |
 | endMth  | mkDate   | mthName       | mthOfYr       |
@@ -113,9 +117,10 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 | timeNow | 今日    | wkOfYr        | 年          |
 
 ## <a name="math"></a>計算
+
 詳細については、[X++ 数学ランタイム関数](xpp-math-run-time-functions.md) を参照してください。
 
-|         |          |               |               |
+| &nbsp;  | &nbsp;   | &nbsp;        | &nbsp;        |
 |---------|----------|---------------|---------------|
 |abs|acos|asin|atan|
 |corrFlagGet|corrFlagSet|cos|cosh|
@@ -125,27 +130,30 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 |tan|tanh|trunc||
 
 ## <a name="reflection"></a>反映
+
 詳細については、[X++ リフレクションランタイム関数](xpp-reflection-run-time-functions.md) を参照してください。
 
-|              |               |              |               |
+|  &nbsp;      | &nbsp;        | &nbsp;       | &nbsp;        |
 |--------------|---------------|--------------|---------------|
 | classIdGet   | dimOf         | fieldId2Name | fieldId2PName |
 | fieldName2Id | indexId2Name  | indexName2Id | refPrintAll   |
 | tableId2Name | tableId2PName | tableName2Id | typeOf        |
 
 ## <a name="session"></a>セッション
+
 詳細については、[X++ セッション ランタイム関数](xpp-session-run-time-functions.md) を参照してください。
 
-|                          |           |           |                     |
+| &nbsp;                   | &nbsp;    | &nbsp;    | &nbsp;              |
 |--------------------------|-----------|-----------|---------------------|
 | curExt                   | curUserId | funcName  | getCurrentPartition |
 | getCurrentPartitionRecId | getPrefix | sessionId | prmIsDefault        |
 | runAs                    | setPrefix |           |                     |
 
 ## <a name="string"></a>文字列
+
 詳細については、[X++ 文字列ランタイム関数](xpp-string-run-time-functions.md) を参照してください。
 
-|         |          |          |           |
+|  &nbsp; | &nbsp;   | &nbsp;   | &nbsp;    |
 |---------|----------|----------|-----------|
 | 照合   | strAlpha | strCmp   | strColSeq |
 | strDel  | strFind  | strFmt   | strIns    |
@@ -155,13 +163,14 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 | strUpr  | subStr   |          |           |
 
 ## <a name="beep"></a>beep
+
 コンピューターのスピーカーから短いサウンドを出力します。
 
 ```xpp
 void beep()
 ```
 
-### <a name="example"></a>例
+### <a name="beep-example"></a>beep の例
 
 ```xpp
 static void beepExample(Args _args)
@@ -171,6 +180,7 @@ static void beepExample(Args _args)
 ```
 
 ## <a name="newguid"></a>newGuid
+
 グローバル一意識別子 (GUID) を作成します。
 
 ```xpp
@@ -181,7 +191,7 @@ guid newGuid()
 
 GUID。
 
-### <a name="example"></a>例
+### <a name="newguid-example"></a>newGuid の例
 
 次の例では、GUID を作成します。
 
@@ -196,6 +206,7 @@ static void newGuidExample(Args _arg)
 ```
 
 ## <a name="sleep"></a>sleep
+
 指定されたミリ秒間、現在のスレッドの実行を一時停止します。
 
 ```xpp
@@ -208,7 +219,7 @@ int sleep(int _duration)
 |------------|--------------------------------------|
 | \_期間 | 一時停止するミリ秒数。 |
 
-### <a name="return-value"></a>戻り値
+### <a name="sleep-return-value"></a>sleep の戻り値
 
 スレッドが実際に一時停止した時間 (ミリ秒)。
 
@@ -224,7 +235,3 @@ static void sleepExample(Args _arg)
     print "job slept for " + int2str(i/1000) + " seconds";
 }
 ```
-
-
-
-

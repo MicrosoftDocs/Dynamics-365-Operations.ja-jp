@@ -16,11 +16,11 @@ ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: f9ee7f1af8e88f56589c84bfaa063ea005aa353a
-ms.sourcegitcommit: 88b4a9d19d16b0ef6543adf7c378a08bf0e07b3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3311784"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431792"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
 
@@ -108,7 +108,7 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
 > また、作業指示書や作業タイプのメンテナンス チェックリストにガイドを直接関連付けることもできます。
 
 > [!IMPORTANT]
-> メンテナンス チェックリストのテンプレートを既定のメンテナンス作業タイプに関連付けた場合、そのテンプレートにリンクされているガイドは、 **メンテナンス ジョブ タイプの既定値 ページの**関連するガイド**クイックタブには表示されません**。 ただし、**関連するガイド** のクイックタブでは、その作業タイプが作業指示に適用された後にこのガイドが表示されます。
+> メンテナンス チェックリストのテンプレートを既定のメンテナンス作業タイプに関連付けた場合、そのテンプレートにリンクされているガイドは、 **メンテナンス ジョブ タイプの既定値 ページの **関連するガイド** クイックタブには表示されません**。 ただし、**関連するガイド** のクイックタブでは、その作業タイプが作業指示に適用された後にこのガイドが表示されます。
 
 ## <a name="see-also"></a>参照
 

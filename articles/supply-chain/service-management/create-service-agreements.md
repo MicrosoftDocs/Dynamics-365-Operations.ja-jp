@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c937f43896d239a5cc8b48ed06854add8c9a618
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7a1a47761869a4190eac6dc9e069a6b520bf7a1d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202793"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432153"
 ---
 # <a name="create-service-agreements"></a>サービス契約の作成
 
@@ -33,7 +33,7 @@ ms.locfileid: "3202793"
 
 ## <a name="create-a-service-agreement-from-service-management"></a>サービス管理からのサービス合意の作成
 
-1. **サービス管理**に移動します。
+1. **サービス管理** に移動します。
 2. **サービス契約** をクリックして、ページ ヘッダーで新しいサービス契約項目を作成します。 
 3. **新規** をクリックします。 説明を入力し、**プロジェクト ID** フィールドでプロジェクトへの参照を選択し、サービス合意の残りのフィールドおよび項目に情報を入力します。 **保存** をクリックします。
 4. **関係** タブで、**サービス対象** または **サービス タスク** を選択して、サービス合意のサービス対象関係またはサービス作業関係を作成します。 関係を作成したサービス対象およびサービス作業は、サービス合意項目で関連付けることができます。
@@ -50,10 +50,10 @@ ms.locfileid: "3202793"
 
 ## <a name="create-a-service-agreement-from-project"></a>プロジェクトからのサービス合意の作成
 
-1. **プロジェクト管理と会計**をクリックします。
-2. **すべてのプロジェクト**をクリックします。
+1. **プロジェクト管理と会計** をクリックします。
+2. **すべてのプロジェクト** をクリックします。
 3. リストからプロジェクトを選択します。
-4. **アクション ウィンドウ**で、**管理**をクリックします。 **新規** アクション グループで、**サービス** をクリックして **サービス契約**を選択します。
+4. **アクション ウィンドウ** で、**管理** をクリックします。 **新規** アクション グループで、**サービス** をクリックして **サービス契約** を選択します。
 5. このトピックで前述されているように、**サービス契約の作成** というタイトルのセクションで手順に従ってプロジェクト参照を入力します。
 
 

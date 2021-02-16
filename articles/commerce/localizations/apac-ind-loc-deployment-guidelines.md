@@ -17,11 +17,11 @@ ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 ms.openlocfilehash: fe9a676bd15d16cd0391fcc1a4f3ea33edc28dd5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004684"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408767"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
@@ -95,7 +95,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
@@ -147,7 +147,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
 
@@ -199,7 +199,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
 
@@ -217,7 +217,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては*いけません*。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては *いけません*。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
 
@@ -237,7 +237,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > 上に示すように、拡張機能の順序を保持します。
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 ---
 
@@ -433,7 +433,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     ---
 
-2. **RetailSdk\\Assets** フォルダーの下の **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、以下の行を**合成**セクションに追加します。
+2. **RetailSdk\\Assets** フォルダーの下の **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 
     # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 

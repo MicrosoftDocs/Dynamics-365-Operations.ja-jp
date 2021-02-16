@@ -3,7 +3,7 @@ title: 候補者採用手段の確認と配置
 description: 空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143952"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693067"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>候補者採用手段の確認と配置
 
@@ -39,8 +38,8 @@ ms.locfileid: "3143952"
 7. [職務] をクリックします。
 8. [職務] フィールドで値を入力または選択します。
 9. [OK] をクリックします。
-10. 範囲のクイック タブを展開し、部署などの追加情報を追加します。
-11. 証明書のクイック タブを展開し、証明書を表示または編集します。
+10. [範囲] クイック タブを展開し、部署などの追加情報を追加します。
+11. [証明書] クイック タブを展開し、証明書を表示または編集します。
 12. [スキル] クイック タブを展開し、スキルを表示または編集します。
 13. [教育] クイック タブを展開し、教育基準を表示または編集します。
 14. [実行] をクリックします。

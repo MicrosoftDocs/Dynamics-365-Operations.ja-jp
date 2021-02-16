@@ -10,17 +10,16 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dcb8ab0fe8e40e6b3dea23dcdd3f2f5e963a030
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 01255628bddd145bfc61702e904596dab797fd4e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096910"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681064"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 
@@ -41,15 +40,15 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
 展開された環境で特定のサービスを再起動するには、次の手順を実行します。
 
 1. LCS で、適切なプロジェクトを開き、サービスを再起動する環境を選択します。
-2. **環境の詳細**ページで、**メンテナンス** &gt; **サービスのリセット**を選択します。
-3. **サービスを再起動します**ダイアログ ボックスで、再起動するサービスを選択してから **OK** を選択します。
+2. **環境の詳細** ページで、**メンテナンス** &gt; **サービスのリセット** を選択します。
+3. **サービスを再起動します** ダイアログ ボックスで、再起動するサービスを選択してから **OK** を選択します。
 
     **環境状態** 値は、サービスが再起動されると更新されます。
 
 4. 更新された状態を表示するには、ページを更新します。
 
     > [!NOTE]
-    > サービスの再起動には数秒しかかからないため、**環境の状態**の値はすでに**配置済み**にリセットされている可能性があります。 再起動が完了すると、エントリが **履歴** ページに追加されます。
+    > サービスの再起動には数秒しかかからないため、**環境の状態** の値はすでに **配置済み** にリセットされている可能性があります。 再起動が完了すると、エントリが **履歴** ページに追加されます。
     
     
  ## <a name="stop-and-start-all-services"></a>すべてのサービスを再起動する

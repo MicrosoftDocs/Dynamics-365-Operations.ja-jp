@@ -1,9 +1,9 @@
 ---
-title: クラウド配置のシステム要件
+title: Dynamics 365 Commerce のクラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,14 +17,14 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bff7461f84bb90ba1c22579386e5289409b4c5c0
-ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
+ms.openlocfilehash: 893aa9a337b76ff7bde34487f4d0b5b78212ef91
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3426385"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672462"
 ---
-# <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
+# <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,6 +38,9 @@ Web アプリケーションは、指定されたオペレーティング シス
 - Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
 - Google Chrome (公開されている最新バージョン) 
 - Apple Safari (公開されている最新バージョン)
+
+> [!NOTE]
+> Azure Active Directory トークンが取得できないため、クラウド POS デバイスのデバイスのアクティブ化中に Safari ブラウザーでエラーが表示されることがあります。 この問題は、[Apple デバイスの Microsoft Enterprise SSO プラグイン](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin) を利用することで解決できます。
 
 各 Web ブラウザーの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。
 
@@ -128,8 +131,8 @@ Web アプリケーションは、指定されたオペレーティング シス
         > [!NOTE]
         > Windows 7 は、Internet Explorer 11 が手動でシステムにインストールされている場合にのみサポートされます。
         > Windows 7 は、サポート対象のオペレーティング システムではなくなりました (上記の **重要な** メモを参照してください)。 このオペレーティング システムへのハードウェア ステーションのインストールに関して、最近の問題が検出されました。 この問題は、次の回避策が利用できるため、修正されません。 **Common-Web.ps1** ファイルで、次の 2 組の **Log-ActionItem** を削除します:
-          1. **Log-ActionItem** 'Config アプリケーションプール [...] アイドル タイムアウトを 0 にします。
-          2. **Log-ActionItem** 'Config アプリケーションプール [...] アイドル タイムアウト アクションを中断にします。
+          1. **Log-ActionItem** 'Config アプリケーション プール [...] アイドル タイムアウトを 0 にします。
+          2. **Log-ActionItem** 'Config アプリケーション プール [...] アイドル タイムアウト アクションを中断します。
         > 上記で指定した **Log-ActionItem** と、**Set-ItemProperty** および **Log-ActionResult** に関連する次の 2 行を削除します。
 
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
@@ -149,7 +152,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 > [!NOTE]
 > 2019 年 8 月 1 日以降、Commerce Scale Unit や 他のクライアント側コンポーネントを使用するには、.NET Framework バージョン 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 >
-> このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧*シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
+> このコンポーネントは、Azure Service to Service 認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧 *シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
 
 以下に示す最小システム要件は、テスト シナリオでの機能へ Commerce Scale Unit を取得するのに必要最低限であることをご確認下さい。 以下は実際的な実稼働環境を表すものではありません。 適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
 
