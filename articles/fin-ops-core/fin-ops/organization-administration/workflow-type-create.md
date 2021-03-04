@@ -16,33 +16,33 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c43512d26df6a1ebddf4916a4824512db3e4065c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 835524881569175362df47974334cd61a2313e36
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694043"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798763"
 ---
-# <a name="create-a-workflow-type"></a><span data-ttu-id="3bb71-103">ワークフロー タイプの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-103">Create a workflow type</span></span>
+# <a name="create-a-workflow-type"></a><span data-ttu-id="ca15d-103">ワークフロー タイプの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-103">Create a workflow type</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3bb71-104">ドキュメント のワークフロー サポートを追加するには、ワークフロー タイプを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bb71-104">To add workflow support for a document, you must create a workflow type.</span></span> <span data-ttu-id="3bb71-105">ワークフロー タイプを作成すると、ドキュメントのワークフロー コンフィギュレーションを作成するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="3bb71-105">After you create a workflow type, it can be used to create workflow configurations for the document.</span></span> <span data-ttu-id="3bb71-106">このトピックでは、ワークフロー タイプを作成する手順へのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="3bb71-106">This topic provides links to the procedures for creating a workflow type.</span></span>
+<span data-ttu-id="ca15d-104">ドキュメント のワークフロー サポートを追加するには、ワークフロー タイプを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca15d-104">To add workflow support for a document, you must create a workflow type.</span></span> <span data-ttu-id="ca15d-105">ワークフロー タイプを作成すると、ドキュメントのワークフロー コンフィギュレーションを作成するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="ca15d-105">After you create a workflow type, it can be used to create workflow configurations for the document.</span></span> <span data-ttu-id="ca15d-106">このトピックでは、ワークフロー タイプを作成する手順へのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="ca15d-106">This topic provides links to the procedures for creating a workflow type.</span></span>
 
-<span data-ttu-id="3bb71-107">ワークフロータイプを作成して、次の要素を定義します:</span><span class="sxs-lookup"><span data-stu-id="3bb71-107">You create workflow types to define the following elements:</span></span>
+<span data-ttu-id="ca15d-107">ワークフロータイプを作成して、次の要素を定義します:</span><span class="sxs-lookup"><span data-stu-id="ca15d-107">You create workflow types to define the following elements:</span></span>
 
-- <span data-ttu-id="3bb71-108">ワークフローを割り当てるワークフロー ドキュメント</span><span class="sxs-lookup"><span data-stu-id="3bb71-108">The workflow document to assign the workflow to</span></span>
-- <span data-ttu-id="3bb71-109">ワークフロー タイプが使用可能なモジュールを定義するカテゴリ</span><span class="sxs-lookup"><span data-stu-id="3bb71-109">A category that defines the module that the workflow type is available in</span></span>
-- <span data-ttu-id="3bb71-110">ワークフローでサポートされているタスク、自動化タスク、および承認</span><span class="sxs-lookup"><span data-stu-id="3bb71-110">Tasks, automated tasks, and approvals that are supported for the workflow</span></span>
-- <span data-ttu-id="3bb71-111">ワークフローの開始、完了、コンフィギュレーションデータの変更、およびキャンセルされたイベント ハンドラー</span><span class="sxs-lookup"><span data-stu-id="3bb71-111">The workflow started, completed, configuration data change, and canceled event handlers</span></span>
-- <span data-ttu-id="3bb71-112">**SubmitToWorkflowMenuItem** メニュー項目</span><span class="sxs-lookup"><span data-stu-id="3bb71-112">A **SubmitToWorkflowMenuItem** menu item</span></span>
+- <span data-ttu-id="ca15d-108">ワークフローを割り当てるワークフロー ドキュメント</span><span class="sxs-lookup"><span data-stu-id="ca15d-108">The workflow document to assign the workflow to</span></span>
+- <span data-ttu-id="ca15d-109">ワークフロー タイプが使用可能なモジュールを定義するカテゴリ</span><span class="sxs-lookup"><span data-stu-id="ca15d-109">A category that defines the module that the workflow type is available in</span></span>
+- <span data-ttu-id="ca15d-110">ワークフローでサポートされているタスク、自動化タスク、および承認</span><span class="sxs-lookup"><span data-stu-id="ca15d-110">Tasks, automated tasks, and approvals that are supported for the workflow</span></span>
+- <span data-ttu-id="ca15d-111">ワークフローの開始、完了、コンフィギュレーションデータの変更、およびキャンセルされたイベント ハンドラー</span><span class="sxs-lookup"><span data-stu-id="ca15d-111">The workflow started, completed, configuration data change, and canceled event handlers</span></span>
+- <span data-ttu-id="ca15d-112">**SubmitToWorkflowMenuItem** メニュー項目</span><span class="sxs-lookup"><span data-stu-id="ca15d-112">A **SubmitToWorkflowMenuItem** menu item</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="3bb71-113">このセクションでは</span><span class="sxs-lookup"><span data-stu-id="3bb71-113">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="ca15d-113">このセクションでは</span><span class="sxs-lookup"><span data-stu-id="ca15d-113">In this section</span></span>
 
-- [<span data-ttu-id="3bb71-114">ワークフロー タイプ チェックリスト</span><span class="sxs-lookup"><span data-stu-id="3bb71-114">Workflow type checklist</span></span>](workflow-type-checklist.md)
-- [<span data-ttu-id="3bb71-115">ワークフロー カテゴリの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-115">Create a workflow category</span></span>](workflow-type-category.md)
-- [<span data-ttu-id="3bb71-116">ワークフロー タイプのクエリの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-116">Create a query for a workflow type</span></span>](workflow-type-query.md)
-- [<span data-ttu-id="3bb71-117">新しいワークフロー タイプの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-117">Create a new workflow type</span></span>](workflow-type-create-new.md)
-- [<span data-ttu-id="3bb71-118">ワークフロー ドキュメント クラスの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-118">Create a workflow document class</span></span>](workflow-type-document-create.md)
-- [<span data-ttu-id="3bb71-119">SubmitToWorkflow クラスの作成</span><span class="sxs-lookup"><span data-stu-id="3bb71-119">Create a SubmitToWorkflow class</span></span>](workflow-type-submit-to-workflow.md)
-- [<span data-ttu-id="3bb71-120">ワークフロー ドキュメント クラスとワークフロー タイプの関連付け</span><span class="sxs-lookup"><span data-stu-id="3bb71-120">Associate a workflow document class with a workflow type</span></span>](workflow-type-associate-document.md)
+- [<span data-ttu-id="ca15d-114">ワークフロー タイプ チェックリスト</span><span class="sxs-lookup"><span data-stu-id="ca15d-114">Workflow type checklist</span></span>](workflow-type-checklist.md)
+- [<span data-ttu-id="ca15d-115">ワークフロー カテゴリの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-115">Create a workflow category</span></span>](workflow-type-category.md)
+- [<span data-ttu-id="ca15d-116">ワークフロー タイプのクエリの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-116">Create a query for a workflow type</span></span>](workflow-type-query.md)
+- [<span data-ttu-id="ca15d-117">新しいワークフロー タイプの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-117">Create a new workflow type</span></span>](workflow-type-create-new.md)
+- [<span data-ttu-id="ca15d-118">ワークフロー ドキュメント クラスの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-118">Create a workflow document class</span></span>](workflow-type-document-create.md)
+- [<span data-ttu-id="ca15d-119">SubmitToWorkflow クラスの作成</span><span class="sxs-lookup"><span data-stu-id="ca15d-119">Create a SubmitToWorkflow class</span></span>](workflow-type-submit-to-workflow.md)
+- [<span data-ttu-id="ca15d-120">ワークフロー ドキュメント クラスとワークフロー タイプの関連付け</span><span class="sxs-lookup"><span data-stu-id="ca15d-120">Associate a workflow document class with a workflow type</span></span>](workflow-type-associate-document.md)

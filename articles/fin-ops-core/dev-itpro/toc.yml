@@ -14,12 +14,12 @@
               items:
                 - name: プラットフォーム更新プログラムのホーム ページの新機能および変更された機能
                   href: get-started/whats-new-home-page.md
+                - name: 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)
+                  href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)
                   href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
                   href: get-started/whats-new-platform-updates-10-0-15.md
-                - name: 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
-                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨のプラットフォームの機能
@@ -122,9 +122,9 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: レコード テンプレートを使用したレコードの作成
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Common Data Service を使用したデータ統合
+                - name: Dataverse を使用したデータ統合
                   items:
-                    - name: Common Data Service を使用したデータ統合の概要
+                    - name: Dataverse を使用したデータ統合の概要
                       href: data-entities/data-integration-cds.md
                     - name: 二重書き込みの統合
                       items:
@@ -192,11 +192,11 @@
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
                             - name: 会社統合
                               items:
-                                - name: Common Data Services での会社の概念
+                                - name: Dataverse での会社の概念
                                   href: data-entities/dual-write/company-data.md
-                                - name: 会社データを使用したブートストラップ
+                                - name: 会社データの初期化
                                   href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Common Data Service の組織階層
+                            - name: Dataverse の組織階層
                               href: data-entities/dual-write/organization-mapping.md
                             - name: 財務および税データ
                               items:
@@ -206,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: 統合された税マスター
                                   href: data-entities/dual-write/tax-mapping.md
+                            - name: Field Service および Supply Chain Management の調達の統合
+                              href: data-entities/dual-write/scm-field-service-procurement.md
+                            - name: Supply Chain Management の価格決定エンジンとのオンデマンド同期
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: 二重書き込みでの見込顧客の現金化
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Dynamics 365 Supply Chain Management の価格決定エンジンとのオンデマンド同期
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Dynamics 365 Sales での Dynamics 365 Commerce 価格決定エンジンの使用
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: サービスのための社内資産
@@ -222,21 +224,23 @@
                           items:
                             - name: Field Service ソリューションと Project Service Automation ソリューションのサポート
                               href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: 見込顧客の現金化のデータをデータ インテグレーターから二重書き込みに移行
+                              href: data-entities/dual-write/migrate-prospect-to-cash.md
                             - name: トラブルシューティング
                               items:
-                                - name: Finance and Operations アプリと Common Data Service で二重書き込みが構成されていることの確認
+                                - name: Finance and Operations アプリと Dataverse での二重書き込みの構成の確認
                                   href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                                 - name: 初期セットアップ中の問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                                 - name: 初期同期中の問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Finance and Operations アプリの二重書き込みモジュールでの問題のトラブルシューティング
+                                - name: Finance and Operations アプリの二重書き込みの問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                                 - name: ライブ同期の問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                                 - name: ソリューションの認識に関する問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング
+                                - name: Finance and Operations アプリのアップグレードの問題のトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: 一般的なトラブルシューティング
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -338,8 +342,12 @@
               items:
                 - name: データ インポート/エクスポート ジョブの概要
                   href: data-entities/data-import-export-job.md
-                - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+                - name: インポート ジョブの日時の同期
+                  href: data-entities/data-synchronize-date-and-time.md
+                - name: 一般仕訳エンティティを使用した伝票のインポート
                   href: data-entities/tips-tricks-import-general-journal-entity.md
+                - name: Finance and Operations アプリのデータ移行の最適化
+                  href: sysadmin/optimize-data-migration.md
             - name: データ エンティティの開発
               items:
                 - name: データ エンティティに関する設計原則とベスト プラクティス
@@ -442,6 +450,8 @@
                       href: database/api/v1/reference-create-export.md
                     - name: 取得操作活動の状態
                       href: database/api/v1/reference-get-status.md
+                    - name: 環境の開始と停止
+                      href: database/api/v1/reference-start-stop-environments.md
         - name: デモ データ
           items:
             - name: デモ データの概要
@@ -808,60 +818,6 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: システム テーブル
                   href: dev-ref/system-tables.md
-                - name: システム クラス
-                  items:
-                    - name: システム クラス リスト
-                      href: dev-ref/system-classes/toc.yml
-                    - name: システム クラスをアルファベット順にグループ化
-                      items:
-                        - name: A クラス
-                          href: dev-ref/a-classes.md
-                        - name: B クラス
-                          href: dev-ref/b-classes.md
-                        - name: C クラス
-                          href: dev-ref/c-classes.md
-                        - name: D クラス
-                          href: dev-ref/d-classes.md
-                        - name: E クラス
-                          href: dev-ref/e-classes.md
-                        - name: F クラス
-                          href: dev-ref/f-classes.md
-                        - name: G クラス
-                          href: dev-ref/g-classes.md
-                        - name: H クラス
-                          href: dev-ref/h-classes.md
-                        - name: I クラス
-                          href: dev-ref/i-classes.md
-                        - name: J クラス
-                          href: dev-ref/j-classes.md
-                        - name: K クラス
-                          href: dev-ref/k-classes.md
-                        - name: L クラス
-                          href: dev-ref/l-classes.md
-                        - name: M クラス
-                          href: dev-ref/m-classes.md
-                        - name: N クラス
-                          href: dev-ref/n-classes.md
-                        - name: O クラス
-                          href: dev-ref/o-classes.md
-                        - name: P クラス
-                          href: dev-ref/p-classes.md
-                        - name: Q クラス
-                          href: dev-ref/q-classes.md
-                        - name: R クラス
-                          href: dev-ref/r-classes.md
-                        - name: S クラス
-                          href: dev-ref/s-classes.md
-                        - name: T クラス
-                          href: dev-ref/t-classes.md
-                        - name: U クラス
-                          href: dev-ref/u-classes.md
-                        - name: V クラス
-                          href: dev-ref/v-classes.md
-                        - name: W クラス
-                          href: dev-ref/w-classes.md
-                        - name: X クラス
-                          href: dev-ref/x-classes.md
             - name: 拡張性
               items:
                 - name: 拡張機能のホーム ページ
@@ -1002,13 +958,13 @@
               items:
                 - name: Trace Parser を使用したトレースの実行
                   href: perf-test/trace-trace-tutorial.md
-                - name: タスク レコーダーおよびPerformance SDK を使用したシングル ユーザー テスト
+                - name: タスク レコーダーおよび Performance SDK を使用したシングル ユーザー テスト
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: パフォーマンス SDK およびローカル テスト コントローラーを使用したマルチ ユーザー テスト
+                - name: ローカル テスト コントローラーを使用したマルチユーザー パフォーマンス SDK テスト
                   href: perf-test/multi-user-testing-local-test-controller.md
                 - name: パフォーマンス SDK および Azure DevOps を使用したマルチ ユーザー テスト
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザー テストのトラブルシューティング ガイド
+                - name: パフォーマンス SDK を使ったテストのトラブルシューティング ガイド
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1022,7 +978,7 @@
                   href: perf-test/testing-validation.md
                 - name: Visual Studio でのプロジェクトのテスト
                   href: perf-test/testing-support.md
-                - name: 継続的なビルドおよびテストの自動化をサポートする環境の配置
+                - name: 継続的なビルドおよびテストの自動化環境のデプロイと使用
                   href: perf-test/continuous-build-test-automation.md
                 - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
                   href: perf-test/systest-filtering.md
@@ -1172,11 +1128,13 @@
           items:
             - name: Finance and Operations と Microsoft Power Platform の統合
               href: power-platform/overview.md
+            - name: アドインの概要
+              href: power-platform/add-ins-overview.md
             - name: エンティティ モデリング
               href: power-platform/entity-modeling.md
             - name: アプリケーション ライフサイクル管理
               href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations および Common Data Service 管理リファレンス
+            - name: Finance and Operations および Dataverse 管理リファレンス
               href: power-platform/admin-reference.md
             - name: Power Apps ポータルと Finance and Operations
               href: power-platform/power-portal-reference.md
@@ -1420,8 +1378,8 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: 派生テスト ケース
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Regression Suite Automation Tool チュートリアルおよびその他の機能
-              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Regression Suite Automation Tool チュートリアル
+              href: perf-test/rsat/rsat-tutorial.md
             - name: ベスト プラクティス
               href: perf-test/rsat/rsat-best-practices.md
             - name: Regression Suite Automation Tool を使用したデータに依存しないテスト
@@ -1467,7 +1425,7 @@
             - name: Finance and Operations および Lifecycle Services のサポートの利用
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: 中国の 21Vianet で運用されている Finance and Operations のサポートを受ける
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations アプリのテクニカル サポートを設定する
@@ -1506,6 +1464,8 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: ユーザー セッション管理
                   href: sysadmin/user-session-management.md
+                - name: Azure AD 条件付きアクセスを使った場所に基づくアクセスのブロック
+                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: ユーザーの一括インポート
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: 職務分掌の設定
@@ -1524,6 +1484,8 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: ユーザー ライセンス要件への準拠の維持
               href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: 独立系ソフトウェア ベンダーのライセンス ステータスの表示
+              href: sysadmin/view-isv-license-status.md
             - name: プロセスの自動化
               href: sysadmin/process-automation.md
             - name: バッチ処理
@@ -1542,15 +1504,13 @@
                   href: sysadmin/batch-active-period-dst.md
                 - name: バッチ マネージャーのセキュリティ ロール
                   href: sysadmin/runby.md
-                - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
-                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: バッチ警告のコンフィギュレーション
                   href: sysadmin/alerts.md
                 - name: 拡張バッチ フォーム
                   href: sysadmin/enhanced-forms.md
                 - name: バッチ履歴のクリーンアップ
                   href: sysadmin/batch-history-cleanup.md
-                - name: 実行中のバッチ ジョブの中止
+                - name: 実行中のバッチ ジョブのキャンセル
                   href: sysadmin/batch-abort.md
             - name: 最適化アドバイザー
               items:

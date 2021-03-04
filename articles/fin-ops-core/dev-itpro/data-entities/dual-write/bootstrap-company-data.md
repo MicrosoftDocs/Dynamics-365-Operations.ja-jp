@@ -1,444 +1,110 @@
 ---
-title: 社内データを含むブートストラップに関するよく寄せられる質問
-description: デュアル書き込み接続を有効にする前に、会社情報を含む Dataverse または他の Dynamics 365 アプリのデータをブートストラップする方法。
+title: 会社データの初期化
+description: このトピックでは、デュアル書き込み接続を有効にする前に、会社情報を使用してデータを初期化する方法について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 09/20/2019
+manager: tfehr
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: ''
-audience: Application User, IT Pro
+audience: Developer
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: ''
-ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 8cd753a5b0d63833a911e0692c83c653e0278153
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.custom: 31301
+ms.search.region: Global
+ms.author: rhaertle
+ms.search.validFrom: 2020-12-01
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ceb199927a099ff1de6f9d3ce28f35bdd8e586a4
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131263"
 ---
-# <a name="bootstrap-with-company-data-faq"></a><span data-ttu-id="25ff5-103">社内データを含むブートストラップに関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="25ff5-103">Bootstrap with company data FAQ</span></span>
- 
+# <a name="initialize-company-data"></a><span data-ttu-id="e2970-103">会社データの初期化</span><span class="sxs-lookup"><span data-stu-id="e2970-103">Initialize company data</span></span>
+
 [!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## <a name="why-do-i-need-bootstrapping"></a><span data-ttu-id="25ff5-104">ブートストラップが必要なのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="25ff5-104">Why do I need bootstrapping?</span></span> 
-<span data-ttu-id="25ff5-105">ビジネスデータを含む既存の Dataverse または他の Dynamics 365 アプリ インスタンスがあり、それに対してデュアル書き込み接続を有効にする場合があります。</span><span class="sxs-lookup"><span data-stu-id="25ff5-105">You might have an existing Dataverse or other Dynamics 365 app instance with business data, and you want to enable dual-write connection against it.</span></span> <span data-ttu-id="25ff5-106">この場合、デュアル書き込み接続を有効にする前に、会社情報を含む Dataverse または他の Dynamics 365 アプリのデータをブートストラップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="25ff5-106">In this case, you need to bootstrap Dataverse or other Dynamics 365 app data with company information before enabling dual-write connection.</span></span>  
- 
-## <a name="when-should-i-use-bootstrapping"></a><span data-ttu-id="25ff5-107">ブートストラップはどのように使用する必要がありますか?</span><span class="sxs-lookup"><span data-stu-id="25ff5-107">When should I use bootstrapping?</span></span> 
-<span data-ttu-id="25ff5-108">ブートストラップは、デュアル書き込みテーブル マップを有効にする前に使用する必要があります (ステップ #5 の間)。</span><span class="sxs-lookup"><span data-stu-id="25ff5-108">You should use bootstrapping before enabling dual-write table maps (during step #5).</span></span>  
-1. <span data-ttu-id="25ff5-109">Finance and Operations アプリと Dataverse または他の Dynamics 365 アプリのインスタンス間にデュアル書き込み接続を設定するには、Finance and Operations アプリに管理者としてログインします。</span><span class="sxs-lookup"><span data-stu-id="25ff5-109">To setup the dual-write connection between instances of your Finance and Operations app and the Dataverse or other Dynamics 365 app, log in to the Finance and Operations app as an administrator.</span></span> 
-2. <span data-ttu-id="25ff5-110">**データ管理** モジュールに移動し、**デュアル書き込み** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="25ff5-110">Go to the **Data Management** module and click the **Dual-Write** button.</span></span> <span data-ttu-id="25ff5-111">これにより、**データ インテグレーター** が起動します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-111">This launches the **Data Integrator**.</span></span> 
-3. <span data-ttu-id="25ff5-112">1 つ以上の会社に対して、デュアル書き込み接続を作成します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-112">Create the dual-write connection for one or more companies.</span></span>  
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="25ff5-113">![デュアル書き込み接続の作成](media/dual-write-boot-1.png)</span><span class="sxs-lookup"><span data-stu-id="25ff5-113">![Create dual-write connection](media/dual-write-boot-1.png)</span></span>
-4. <span data-ttu-id="25ff5-114">**Cdm_companies** テーブル マップを有効にします。</span><span class="sxs-lookup"><span data-stu-id="25ff5-114">Enable the **Cdm_companies** table map.</span></span> <span data-ttu-id="25ff5-115">これにより、Finance and Operations アプリから Dataverse に会社が同期されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-115">This synchronizes companies from the Finance and Operations app to Dataverse.</span></span>  
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="25ff5-116">![テーブル マップの有効化](media/dual-write-boot-2.png)</span><span class="sxs-lookup"><span data-stu-id="25ff5-116">![Enable the table map](media/dual-write-boot-2.png)</span></span>
-5. <span data-ttu-id="25ff5-117">Dataverse または他の Dynamics 365 アプリのインスタンスでサンプルのブートストラップ コードを実行します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-117">Run the sample bootstrapping code on the Dataverse or other Dynamics 365 app instance.</span></span>  
-6. <span data-ttu-id="25ff5-118">ブートストラップが完了し、システムでライブ同期の準備ができている場合は、テーブル マップを有効にします。</span><span class="sxs-lookup"><span data-stu-id="25ff5-118">When the bootstrapping is done and the system is ready for the live sync, enable the table maps.</span></span>  
+<span data-ttu-id="e2970-104">ビジネス データを持つ既存の Microsoft Dataverse インスタンスまたは Finance and Operations アプリ インスタンスを所有している場合、それに対してデュアル書き込み接続を有効にすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e2970-104">If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it.</span></span> <span data-ttu-id="e2970-105">この場合は、デュアル書き込みを有効にする前に、会社情報を使用して Dataverse データまたは Finance and Operations アプリ データを初期化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e2970-105">In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write.</span></span> <span data-ttu-id="e2970-106">この初期化プロセスは、*bootstrapping* と呼ばれる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e2970-106">This initialization process is sometimes referred to as *bootstrapping*.</span></span>
 
-    <span data-ttu-id="25ff5-119">テーブル マップを有効にすると、有効なテーブル マップの最初のデータの同期がトリガーされます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-119">Enabling the table maps triggers the initial data sync for the enabled table maps.</span></span> <span data-ttu-id="25ff5-120">デュアル書き込み接続で選択された会社に対応するデータが Finance and Operations アプリと Dataverse の間で同期されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-120">The data corresponding to the companies chosen on the dual-write connection is synchronized between the Finance and Operations app and Dataverse.</span></span> 
- 
-## <a name="how-to-i-use-the-code-sample"></a><span data-ttu-id="25ff5-121">コード サンプルを使用するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="25ff5-121">How to I use the code sample?</span></span>
-<span data-ttu-id="25ff5-122">サンプル コードは Visual Studio で読み込むことができる C# アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="25ff5-122">The sample code is a C# application that you can load in Visual Studio.</span></span> <span data-ttu-id="25ff5-123">このコードでは、Dataverse SDK での NuGet パッケージの依存関係が使用されます。これは、標準の Visual Studio ツールで更新できます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-123">It takes NuGet package dependencies on the Dataverse SDK, that you can refresh through standard Visual Studio tooling.</span></span> 
+<span data-ttu-id="e2970-107">このトピックには、デュアル書き込み用 Dataverse のデータを初期化するために、[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) の使い方をを説明するサンプル シナリオが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e2970-107">This topic includes sample scenarios that explain how to use [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write.</span></span> <span data-ttu-id="e2970-108">すべてのテーブル、エラー処理のシナリオ、またはルックアップについては説明しません。</span><span class="sxs-lookup"><span data-stu-id="e2970-108">It doesn't cover all tables, error handling scenarios, or lookups.</span></span> <span data-ttu-id="e2970-109">照会としてこのトピックとテンプレートを使用し、独自の Azure Data Factory パイプラインを設定して、データを Dataverse にインポートまたは  Dataverse に更新します。</span><span class="sxs-lookup"><span data-stu-id="e2970-109">Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.</span></span>
 
-<span data-ttu-id="25ff5-124">Visual Studio でソリューションを解凍して開き、NuGet パッケージを復元したら、コードで **TODO** を検索します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-124">After unzipping and opening the solution in Visual Studio and restoring the NuGet packages, search for **TODO** in the code.</span></span> <span data-ttu-id="25ff5-125">会社情報をブートストラップする方法について決定する必要があるたびに、その決定は正規の実装のサンプル コードとともに、**TODO** によって示されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-125">Each decision you need to make about how you want to bootstrap company information is noted by a **TODO**, with sample code for a canonical implementation.</span></span> 
+## <a name="high-level-scenario"></a><span data-ttu-id="e2970-110">高レベルのシナリオ</span><span class="sxs-lookup"><span data-stu-id="e2970-110">High-level scenario</span></span>
 
-<span data-ttu-id="25ff5-126">このサンプル コードでは、会社ごとにエンティティ行を分類する方法のうちのひとつつを示しています。</span><span class="sxs-lookup"><span data-stu-id="25ff5-126">The sample code shows only one of many ways you might categorize entity rows by company.</span></span> <span data-ttu-id="25ff5-127">**TODO** セクションのロジックを変更することにより、カスタム分類を作成できます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-127">By changing the logic in the **TODO** sections, you can create your custom categorization.</span></span> 
- 
-## <a name="what-should-i-expect"></a><span data-ttu-id="25ff5-128">何を予期する必要がありますか?</span><span class="sxs-lookup"><span data-stu-id="25ff5-128">What should I expect?</span></span>
-<span data-ttu-id="25ff5-129">既定では、サンプル アプリケーションを使用すると、事業単位から会社へのコード マッピングの辞書を提供できます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-129">By default, the sample application lets you provide a dictionary of business unit-to-company code mappings.</span></span> <span data-ttu-id="25ff5-130">**OwningBusinessUnit** フィールドを使用してブートストラップしたエンティティは、指定した会社を使用するように自動的に設定されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-130">Any entity you bootstrap with an **OwningBusinessUnit** field is automatically set to use the specified company.</span></span> <span data-ttu-id="25ff5-131">製品などの **OwningBusinessUnit** フィールドを持たないエンティティでは、空の事業単位の値によるマッピングに基づいて会社が設定されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-131">Any entity without an **OwningBusinessUnit** field, such as product, will set the company based on the mapping with an empty business unit value.</span></span>
+<span data-ttu-id="e2970-111">Finance and Operations アプリに **顧客** テーブル、および Dataverse に **アカウント** テーブルを考慮します。</span><span class="sxs-lookup"><span data-stu-id="e2970-111">Consider the **Customers** table in a Finance and Operations app, and the **Account** table in Dataverse.</span></span>
 
-<span data-ttu-id="25ff5-132">コンソールアプリケーションには **–simulate** または **–apply** のいずれか 1 つのパラメーターが必要です。</span><span class="sxs-lookup"><span data-stu-id="25ff5-132">The console application expects one parameter, either **–simulate** or **–apply**.</span></span> <span data-ttu-id="25ff5-133">**–simulate** コマンド ライン パラメーターを使用すると、データは更新されません。</span><span class="sxs-lookup"><span data-stu-id="25ff5-133">If you use the **–simulate** command line parameter, then no data is updated.</span></span> <span data-ttu-id="25ff5-134">更新されるエンティティごとに 1 つ、**simulation_<entityname>.csv** ファイルのみがツールと同じディレクトリに生成されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-134">Only **simulation_<entityname>.csv** files are generated in the same directory as the tool, one for each entity that would have been updated.</span></span> <span data-ttu-id="25ff5-135">これらのファイルを繰り返しレビューして、コードが期待どおりに会社の値を更新するように作業できます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-135">You can iteratively review these files while working to ensure the code updates company values as expected.</span></span> 
+- <span data-ttu-id="e2970-112">最初の書き込みを使用して、Finance and Operations アプリから Dataverse へ、**会社**、**顧客グループ** および **支払条件** などの照会と依存テーブルをコピーします。</span><span class="sxs-lookup"><span data-stu-id="e2970-112">Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the Finance and Operations app to Dataverse.</span></span>
+- <span data-ttu-id="e2970-113">データ管理フレームワークを使用して、コンマ区切り値 (CSV) 形式で Finance and Operations アプリからデータをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="e2970-113">Use the Data management framework to export data from the Finance and Operations app in comma-separated values (CSV) format.</span></span> <span data-ttu-id="e2970-114">たとえば、データ管理のプロジェクトを設定し、Finance and Operations アプリの **DataAreaId** フィールドを使用して会社ごとに顧客をエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="e2970-114">For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the Finance and Operations app.</span></span> <span data-ttu-id="e2970-115">このプロセスは、1 回の手動プロセスです。</span><span class="sxs-lookup"><span data-stu-id="e2970-115">This process is a one-time manual process.</span></span>
+- <span data-ttu-id="e2970-116">Azure Blob Storage を使用し、ルックアップと変換用の CSV ファイルを格納します。</span><span class="sxs-lookup"><span data-stu-id="e2970-116">Use Azure Blob Storage to store the CSV files for lookup and transformation.</span></span> <span data-ttu-id="e2970-117">Finance and Operations 顧客の CSV ファイルを Azure Blob Storage にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e2970-117">Upload the CSV file for your Finance and Operations customers into Azure Blob Storage.</span></span>
+- <span data-ttu-id="e2970-118">Azure Data Factory を使用し、Dataverse のデータを初期化します。</span><span class="sxs-lookup"><span data-stu-id="e2970-118">Use Azure Data Factory to initialize data in Dataverse.</span></span>
 
-<span data-ttu-id="25ff5-136">更新のシミュレーションが終了したら、**-apply** パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-136">When you finish with the simulated updates, then use the **–apply** parameter.</span></span> <span data-ttu-id="25ff5-137">これにより、現在、間違った会社の値を持つすべての行が一度に 1000 行ずつ更新されます (既定)。</span><span class="sxs-lookup"><span data-stu-id="25ff5-137">This updates all rows that currently have an incorrect company value, in batches of 1000 rows at a time (by default).</span></span> <span data-ttu-id="25ff5-138">このコードは提供されているとおりべき等であるため、再実行が可能で、誤って割り当てられた会社のみが更新されます。</span><span class="sxs-lookup"><span data-stu-id="25ff5-138">The code is idempotent as provided, meaning you can re-run it and only the incorrectly assigned companies will be updated.</span></span> <span data-ttu-id="25ff5-139"> **–apply** を実行すると、このコードでは変更が加えられた CSV ファイルを **applied_<entityname>.csv** という名前で出力します。</span><span class="sxs-lookup"><span data-stu-id="25ff5-139">When running with **–apply**, the code outputs CSV files of the changes made, which are named **applied_<entityname>.csv**.</span></span> 
+<span data-ttu-id="e2970-119">次の図はワークフローを示します。</span><span class="sxs-lookup"><span data-stu-id="e2970-119">The following illustration shows the workflow.</span></span>
 
- ```csharp
- using Microsoft.Crm.Sdk.Messages;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Messages;
-using Microsoft.Xrm.Sdk.Query;
-using Microsoft.Xrm.Tooling.Connector;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
+:::image type="content" source="media/boot-process-flow.png" alt-text="高レベル フロー":::
 
-namespace BootstrapCompany
-{
-    /// <summary>
-    /// Application to bootstrap the company field on existing rows in CDS in preparation for integration to Finance and Operations.
-    /// </summary>
-    /// <remarks>
-    /// This application assumes that the target companies already exist in the CDS environment in the cdm_Company table and are
-    /// identified by their company code. It also assumes that the current owning business unit of each row should be used
-    /// to categorize by company. This logic can easily be updated to utilize alternate sources of categorization including
-    /// custom tables, teams, custom fields on tables, or any other data. This code is provided only as a sample. 
-    /// 
-    /// To utilize this code, update each of the locations currently denoted with a TODO statement.
-    /// 
-    /// This code is provided AS IS with no warranties or guarantees, and confers no rights.
-    /// </remarks>
-    public class Program
-    {
-        /// <summary>
-        /// The number of rows to query and update in CDS in a single operation.
-        /// </summary>
-        /// <remarks>
-        /// The larger this number, the fewer calls will need to be made, so the faster the updates
-        /// will complete. However, larger batch sizes are more likely to cause contention. Additionally,
-        /// when SQL exceeds some threshold of locks (generally around 5,000), it will escalate to
-        /// an entire table lock, which blocks all other activity in the live system on this table. As 
-        /// such, a batch size of around 1,000 is relatively fast, while also relatively safe in terms
-        /// of contention and transaction time.
-        /// </remarks>
-        const int requestBatchSize = 1000;
+<span data-ttu-id="e2970-121">このシナリオは、次の前提に基づいています。</span><span class="sxs-lookup"><span data-stu-id="e2970-121">This scenario is based on the following assumptions:</span></span>
 
-        /// <summary>
-        /// The number of faults that may be seen in CDS before the operation is aborted and an exception is thrown.
-        /// </summary>
-        /// <remarks>
-        /// An occassional error due to contention when updating large tables in production is expected, so by default
-        /// errors are logged and skipped. However, if a large number of errors are seen, ignoring those errors
-        /// in subsequent batches gets expensive, and is usually indicative of a larger issue that should be addressed
-        /// before continuing. Faulted requests are *not* retried, but would be picked up in a subsequent run of this script.
-        /// </remarks>
-        const int maxFaultThreshold = 100;
+- <span data-ttu-id="e2970-122">ソース データは Finance and Operations アプリにあります。</span><span class="sxs-lookup"><span data-stu-id="e2970-122">The source data is in the Finance and Operations app.</span></span>
+- <span data-ttu-id="e2970-123">アカウントが Dataverse に存在し、Finance and Operations アプリに存在しない場合は、このフローの一部として初期化されません。</span><span class="sxs-lookup"><span data-stu-id="e2970-123">If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow.</span></span>
+- <span data-ttu-id="e2970-124">顧客関与アプリのすべてのアカウント レコードには、Finance and Operations ナチュラル キーと一致するナチュラル キー (アカウント番号) が設定されています (**CustomerAccount**)。</span><span class="sxs-lookup"><span data-stu-id="e2970-124">All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**).</span></span>
+- <span data-ttu-id="e2970-125">行には、アプリ全体での 1 対 1 (1:1) マッピングがあります。</span><span class="sxs-lookup"><span data-stu-id="e2970-125">Rows have a one-to-one (1:1) mapping across the apps.</span></span>
 
-        /// <summary>
-        /// The maximum number of rows per business unit to export when simulating.
-        /// </summary>
-        /// <remarks>
-        /// During simulation, queries are not batched since doing so would require ordering and so be slightly
-        /// different from the actual execution logic. To keep this the same between both paths, simulates are
-        /// not batched and so a separate maximum number of rows per business unit can be specified.
-        /// </remarks>
-        const int maxSimulateRecordsPerBusinessUnit = 10000;
+## <a name="prerequisites"></a><span data-ttu-id="e2970-126">必要条件</span><span class="sxs-lookup"><span data-stu-id="e2970-126">Prerequisites</span></span>
 
-        /// <summary>
-        /// Whether or not operations should continue if any errors are encountered.
-        /// </summary>
-        /// <remarks>
-        /// This is different than setting maxFaultThreshold = 0, since the first batch of updates will be processed
-        /// together. If continueOnError is true and maxFaultThreshold is 0, it is possible that multiple errors may
-        /// be encountered and at the same time some rows successfully updated. In a healthy system when updating
-        /// a higher number of rows, an occasional spurious error is expected, so it is recommended this be left as true.
-        /// </remarks>
-        const bool continueOnError = true;
+- <span data-ttu-id="e2970-127">**Azure の定期売買** – 既存の Azure 定期売買に対する **貢献者のアクセス** があります。</span><span class="sxs-lookup"><span data-stu-id="e2970-127">**Azure subscription** – You have **contributor access** to an existing Azure subscription.</span></span> <span data-ttu-id="e2970-128">Azure 定期売買をお持ちでない場合は、開始前に[フリー Azure アカウント](https://azure.microsoft.com/free/) を作成してください。</span><span class="sxs-lookup"><span data-stu-id="e2970-128">If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.</span></span>
+- <span data-ttu-id="e2970-129">**Azure Storage アカウント** – Azure Srage アカウントがあります。</span><span class="sxs-lookup"><span data-stu-id="e2970-129">**Azure storage account** – You have an Azure storage account.</span></span> <span data-ttu-id="e2970-130">ストレージ アカウントを持っていない場合は、[Azure Storage アカウントを作成](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e2970-130">If you don't have a storage account, follow the steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.</span></span>
+- <span data-ttu-id="e2970-131">**Azure データ ファクトリ** – [データ ファクトリを作成](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory) の手順に従い Azure Data Factory のリソースを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2970-131">**Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).</span></span>
+- <span data-ttu-id="e2970-132">**Finance and Operations アプリ**  – データ管理フレームワークを使用して、CSV 形式でデータをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="e2970-132">**Finance and Operations app** – Use the Data management framework to export the data in CSV format.</span></span> <span data-ttu-id="e2970-133">詳細については、 [データ管理の概要](../data-entities-data-packages.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2970-133">For more information, see [Data management overview](../data-entities-data-packages.md).</span></span> <span data-ttu-id="e2970-134">このテンプレートでは、顧客が **CustCustomerV3Entity** テーブルを使用してエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="e2970-134">In this template, customers are exported by using the **CustCustomerV3Entity** table.</span></span>
+- <span data-ttu-id="e2970-135">**Dynamics 365 Dataverse** – Dataverse 管理者ユーザーの認証情報を使い、データを初期化します。</span><span class="sxs-lookup"><span data-stu-id="e2970-135">**Dynamics 365 Dataverse** – Use the credentials for the Dataverse admin user to initialize the data.</span></span>
+- <span data-ttu-id="e2970-136">**デュアル書き込み** – デュアル書き込みソリューションがインストールされ、初期書き込みを使用して参照データがコピーされます。</span><span class="sxs-lookup"><span data-stu-id="e2970-136">**Dual-write** – Dual-write solutions are installed, and reference data is copied by using initial write.</span></span>
 
-        #region private variables
-        private static Dictionary<string, EntityReference> cachedCompanyReferences = new Dictionary<string, EntityReference>();
-        #endregion
+## <a name="deployment-steps"></a><span data-ttu-id="e2970-137">配置の手順</span><span class="sxs-lookup"><span data-stu-id="e2970-137">Deployment steps</span></span>
 
-        /// <summary>
-        /// The main execution loop of the program.
-        /// </summary>
-        /// <param name="args">No arguments are expected.</param>
-        static void Main(string[] args)
-        {
-            if (args.Length != 1 && args[0] != "-simulate" && args[0] != "-apply")
-            {
-                Console.WriteLine("Usage: BootstrapCompany -simulate");
-                Console.WriteLine("       BootstrapCompany -apply");
-                Console.WriteLine("The -simulate flag will create a file called simulation.csv in the working");
-                Console.WriteLine("directory, but will not change any data. The -apply flag will update live data");
-                Console.WriteLine("in the same way that was demonstrated in the simulation.");
+### <a name="set-up-an-azure-storage-account"></a><span data-ttu-id="e2970-138">Azure ストレージ アカウントの設定</span><span class="sxs-lookup"><span data-stu-id="e2970-138">Set up an Azure storage account</span></span>
 
-                return;
-            }
+<span data-ttu-id="e2970-139">Azure ストレージ アカウントを持っていない場合は、[Azure ストレージ アカウントを作成](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e2970-139">If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.</span></span> <span data-ttu-id="e2970-140">ストレージ アカウントで、**ce-data** という名前のコンテナーを 1 つ作成します。</span><span class="sxs-lookup"><span data-stu-id="e2970-140">In your storage account, create one container that is named **ce-data**.</span></span> <span data-ttu-id="e2970-141">このコンテナには、すべてのデータ ファイルが格納されます。</span><span class="sxs-lookup"><span data-stu-id="e2970-141">This container will store all data files.</span></span> <span data-ttu-id="e2970-142">データセットおよびパイプライン内のコンテナは、必要に応じ変更できます。</span><span class="sxs-lookup"><span data-stu-id="e2970-142">You can change the container in your datasets and pipelines as you require.</span></span> <span data-ttu-id="e2970-143">次の図に示すように、**アクセス キー** に移動し、**接続文字列** 値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e2970-143">Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration.</span></span> <span data-ttu-id="e2970-144">この値は、Azure Data Factory テンプレートをインポートする際に必須です。</span><span class="sxs-lookup"><span data-stu-id="e2970-144">This value is required when you import the Azure Data Factory template.</span></span>
 
-            bool isSimulate = args[0].Equals("-simulate", StringComparison.OrdinalIgnoreCase);
+:::image type="content" source="media/boot-storage-account.png" alt-text="アクセス キーの設定":::
 
-            // Delete the simulation or applied files if existing
-            foreach (string existingSimulate in Directory.EnumerateFiles(Directory.GetCurrentDirectory(), $"{(isSimulate ? "simulation" : "applied")}_*.csv"))
-            {
-                File.Delete(existingSimulate);
-            }
+### <a name="deploy-an-azure-data-factory-template"></a><span data-ttu-id="e2970-146">Azure Data Factory テンプレートの配置</span><span class="sxs-lookup"><span data-stu-id="e2970-146">Deploy an Azure Data Factory template</span></span>
 
-            IOrganizationService orgService;
+1. <span data-ttu-id="e2970-147">作成した Azure データ ファクトリーの名前をメモします。</span><span class="sxs-lookup"><span data-stu-id="e2970-147">Make a note of the name of the Azure data factory that you created.</span></span>
+2. <span data-ttu-id="e2970-148">Azure ストレージ アカウントの接続文字列をメモします。</span><span class="sxs-lookup"><span data-stu-id="e2970-148">Make a note of the connection string for the Azure storage account.</span></span>
+3. <span data-ttu-id="e2970-149">Dataverse インスタンスのサービス URI と管理者ユーザーの名前、パスワードをメモします。</span><span class="sxs-lookup"><span data-stu-id="e2970-149">Make a note of the service URI of the Dataverse instance, and the admin user name and password.</span></span>
 
-            // TODO: Provide your connection string details for your environment
-            CrmServiceClient cdsConnection = new CrmServiceClient("AuthType=Office365;Username=youraliashere@yourdomainhere.com;Password=yourpasswordhere;URL=https://yourorganizationurlhere.crm.dynamics.com/;");
-            orgService = (IOrganizationService)cdsConnection.OrganizationWebProxyClient != null ? (IOrganizationService)cdsConnection.OrganizationWebProxyClient : (IOrganizationService)cdsConnection.OrganizationServiceProxy;
+    <span data-ttu-id="e2970-150">次の表に、必要なパラメーターを示します。</span><span class="sxs-lookup"><span data-stu-id="e2970-150">The following table shows the parameters that are required.</span></span>
 
-            if (orgService != null)
-            {
-                // Get the current user ID to verify the connection was successful
-                Guid userid = ((WhoAmIResponse)orgService.Execute(new WhoAmIRequest())).UserId;
+    | <span data-ttu-id="e2970-151">パラメーター名</span><span class="sxs-lookup"><span data-stu-id="e2970-151">Parameter name</span></span> | <span data-ttu-id="e2970-152">説明</span><span class="sxs-lookup"><span data-stu-id="e2970-152">Description</span></span> | <span data-ttu-id="e2970-153">サンプル値</span><span class="sxs-lookup"><span data-stu-id="e2970-153">Example value</span></span> |
+    |---|---|---|
+    | <span data-ttu-id="e2970-154">ファクトリー名</span><span class="sxs-lookup"><span data-stu-id="e2970-154">Factory name</span></span> | <span data-ttu-id="e2970-155">データ ファクトリー名</span><span class="sxs-lookup"><span data-stu-id="e2970-155">The name of your data factory</span></span> | <span data-ttu-id="e2970-156">*BootstrapDataverseDataADF*</span><span class="sxs-lookup"><span data-stu-id="e2970-156">*BootstrapDataverseDataADF*</span></span> |
+    | <span data-ttu-id="e2970-157">Bootstrap blob storage account Linked Service\_connection String</span><span class="sxs-lookup"><span data-stu-id="e2970-157">Bootstrap blob storage account Linked Service\_connection String</span></span> | <span data-ttu-id="e2970-158">Blob ストレージの接続文字列</span><span class="sxs-lookup"><span data-stu-id="e2970-158">The connection string for blob storage</span></span> | <span data-ttu-id="e2970-159">ストレージ アカウントの作成時にコピーした値</span><span class="sxs-lookup"><span data-stu-id="e2970-159">The value that you copied when you created the storage account</span></span> |
+    | <span data-ttu-id="e2970-160">Bootstrap Dynamics 365 Linked Service\_service URI</span><span class="sxs-lookup"><span data-stu-id="e2970-160">Bootstrap Dynamics 365 Linked Service\_service Uri</span></span> | <span data-ttu-id="e2970-161">Dataverse インスタンスの URI</span><span class="sxs-lookup"><span data-stu-id="e2970-161">The URI of the Dataverse instance</span></span> | `https://contosod365.crm4.dynamics.com` |
+    | <span data-ttu-id="e2970-162">Bootstrap Dynamics 365 Linked Service\_properties\_type Properties\_username</span><span class="sxs-lookup"><span data-stu-id="e2970-162">Bootstrap Dynamics 365 Linked Service\_properties\_type Properties\_username</span></span> | <span data-ttu-id="e2970-163">Dynamics 365 管理者ユーザーのユーザー ID</span><span class="sxs-lookup"><span data-stu-id="e2970-163">The Dynamics 365 admin user's user ID</span></span> | `<adminservice@contoso.onmicrosoft.com>` |
+    | <span data-ttu-id="e2970-164">Bootstrap Dynamics 365 Linked Service\_password</span><span class="sxs-lookup"><span data-stu-id="e2970-164">Bootstrap Dynamics 365 Linked Service\_password</span></span> | <span data-ttu-id="e2970-165">Dynamics 365 管理者ユーザーのパスワード</span><span class="sxs-lookup"><span data-stu-id="e2970-165">The Dynamics 365 admin user's password</span></span> | _\*\*\*\*\*\*\*\*_ | 
 
-                if (userid != Guid.Empty)
-                {
-                    Console.WriteLine("Connection Successful!");
-                }
+4. <span data-ttu-id="e2970-166">[Azure Resource Manager (ARM) テンプレート ファイル](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) をローカル ディレクトリにダウンロートします。</span><span class="sxs-lookup"><span data-stu-id="e2970-166">Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.</span></span>
+5. <span data-ttu-id="e2970-167">Azure ポータルで、[カスタム デプロイ](https://ms.portal.azure.com/#create/Microsoft.Template) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e2970-167">In the Azure portal, go to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).</span></span>
+6. <span data-ttu-id="e2970-168">**独自のテンプレートをエディターに作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e2970-168">Select **Build your own template in the editor**.</span></span>
+7. <span data-ttu-id="e2970-169">**ファイルの読み込み** を選択し、先にダウンロードした ARM テンプレート ファイルを検索して選択します。</span><span class="sxs-lookup"><span data-stu-id="e2970-169">Select **Load file**, and find and select the ARM template file that you downloaded earlier.</span></span> <span data-ttu-id="e2970-170">その後、**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e2970-170">Then select **Save**.</span></span>
+8. <span data-ttu-id="e2970-171">必要なパラメータを指定し、**確認** を選び、**作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e2970-171">Provide the required parameters, select **Review**, and then select **Create**.</span></span>
 
-                // TODO: Provide a mapping of OwningBusinessUnit name to cdm_Company company ID. You can reuse
-                // the same company ID for multiple business units if desired. In this example, it assumes that
-                // the business unit named "USMF" is related to the company "USMF". If all rows were owned
-                // by the same root business unit, then the first field in the dictionary should be set to the 
-                // name of the root business unit, usually the same value as the organization (eg, "Contoso").
-                Dictionary<string, string> businessUnitToCompanyMapping = new Dictionary<string, string>()
-                {
-                    { "", "USMF" }, // The default mapping to use for any entity that doesn't have an owningbusinessunit field
-                    { "USMF", "USMF" },
-                    { "FRRT", "FRRT" },
-                };
+    :::image type="content" source="media/boot-custom-deployment.png" alt-text="テンプレートのカスタマイズ":::
 
-                // TODO: Provide a list of tables for which the company field should be backfilled based
-                // on owning business unit. The list below represents all existing tables for which a cdm_Company
-                // lookup field was added as part of the Finance and Operations dual write project.
-                BatchUpdateEntity(orgService, "account", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "accountnumber", "name");
-                BatchUpdateEntity(orgService, "contact", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "fullname");
-                // ... Add more here
+9. <span data-ttu-id="e2970-173">デプロイ後、リスト ウィンドウに **パイプライン**、**データセット** および **データ フロー** セクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e2970-173">After deployment, you will see **Pipelines**, **Datasets**, and **Data flows** sections in the list pane.</span></span>
 
-                // Note, the product entity does not have an owningbusinessunit field like most other tables, so
-                // assigning company by Business Unit is not applicable. In this case, whichever mapping specifies an
-                // empty business unit will be used to categorize tables without an owningbusinessunit field.
-                BatchUpdateEntity(orgService, "product", "msdyn_companyid", businessUnitToCompanyMapping, false, isSimulate, "productnumber");
-            }
-            else
-            {
-                Console.WriteLine("Connection failed...");
-            }
+    :::image type="content" source="media/boot-pipeline.png" alt-text="パイプライン、データセット、およびデータ フロー":::
 
-            Console.WriteLine("Done");
-            Console.ReadLine();
-        }
+## <a name="run-the-process"></a><span data-ttu-id="e2970-175">プロセスを実行する</span><span class="sxs-lookup"><span data-stu-id="e2970-175">Run the process</span></span>
 
-        /// <summary>
-        /// Updates all incorrectly assigned company relationships for the specified entity.
-        /// </summary>
-        /// <param name="orgService">The connection to CDS.</param>
-        /// <param name="entityName">The logical name of the entity to update.</param>
-        /// <param name="companyFieldName">The physical name of the field in the entity being updated which contains the cdm_Company id.</param>
-        /// <param name="businessUnitToCompanyMapping">A dictionary of business unit name to company code.</param>
-        /// <param name="hasOwningBusinessUnit">true if the entity has an owningbusinessunit field; otherwise, false.</param>
-        /// <param name="isSimulate">true to simulate output; otherwise, false.</param>
-        /// <param name="fieldsToExport">A set of fields to export into a CSV for this entity if simulating.</param>
-        /// <returns>true if the entity was successfully processed without any errors; otherwise, false.</returns>
-        private static bool BatchUpdateEntity(
-            IOrganizationService orgService, 
-            string entityName, 
-            string companyFieldName, 
-            Dictionary<string, string> businessUnitToCompanyMapping, 
-            bool hasOwningBusinessUnit, 
-            bool isSimulate, 
-            params string[] fieldsToExport)
-        {
-            List<Guid> faultedIds = new List<Guid>();
-            int totalRecordsProcessed = 0;
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+1. <span data-ttu-id="e2970-176">Finance and Operations アプリで、データ管理フレームワークを使用して、CSV 形式でデータをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="e2970-176">In the Finance and Operations app, use the Data management framework to export data in CSV format.</span></span> <span data-ttu-id="e2970-177">詳細については、 [データ管理の概要](../data-entities-data-packages.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2970-177">For more information, see [Data management overview](../data-entities-data-packages.md).</span></span> <span data-ttu-id="e2970-178">このテンプレートでは、顧客データが **CustCustomerV3Entity** テーブルからエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="e2970-178">In this template, customer data was exported from the **CustCustomerV3Entity** table.</span></span> <span data-ttu-id="e2970-179">**CustCustomerV3Entity** を設定し、**FullPripriyAdtomer** フィールド マップをマッピングから削除します。</span><span class="sxs-lookup"><span data-stu-id="e2970-179">Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping.</span></span> <span data-ttu-id="e2970-180">**DataAreaId** フィールドを CSV ファイルに追加します。</span><span class="sxs-lookup"><span data-stu-id="e2970-180">Add the **DataAreaId** field to the CSV file.</span></span> <span data-ttu-id="e2970-181">エクスポートしたファイル名を **01-CustomersV3Export-Customers V3.csv** にして、**ce-data** と名前をつけた Azure ストレージ アカウントにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e2970-181">Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.</span></span>
 
-            string fileName = isSimulate ? "simulation" : "applied";
-            StreamWriter simulationWriter = new StreamWriter(Path.Combine(Directory.GetCurrentDirectory(), $"{fileName}_{entityName}.csv"), true);
-            simulationWriter.Write("EntityName,EntityId,");
-            foreach (string fieldToExport in fieldsToExport)
-            {
-                simulationWriter.Write($"{fieldToExport},");
-            }
-            simulationWriter.WriteLine("BusinessUnit,NewCompanyId");
+    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations顧客ファイル":::
 
-            // Process each mapped business unit individually
-            foreach (string businessUnitName in businessUnitToCompanyMapping.Keys)
-            {
-                Console.WriteLine("Updating any {0} rows for business unit {1} to company {2}...", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
+2. <span data-ttu-id="e2970-183">[サンプル顧客ファイル](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv) をダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e2970-183">Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).</span></span>
 
-                // The empty business unit value is only applicable for tables without an owning business unit field
-                if (hasOwningBusinessUnit && string.IsNullOrEmpty(businessUnitName))
-                {
-                    continue;
-                }
-                else if (!hasOwningBusinessUnit && !string.IsNullOrEmpty(businessUnitName))
-                {
-                    continue;
-                }
-
-                var companyRef = GetCompanyReference(orgService, businessUnitToCompanyMapping[businessUnitName]);
-
-                // Iteratively loop in batches to keep transaction lock size small
-                bool moreRecordsExist = true;
-
-                while (moreRecordsExist)
-                {
-                    moreRecordsExist = false;
-
-                    // Find the first batch of rows for this business unit with the wrong company ID. Ordering
-                    // is not explicity specified, but SQL will most likely process based on the index starting with
-                    // company ID, since all new company ID fields added for Finance and Operations integration have
-                    // also added a new index starting with company ID. Explicitly specifying order would reduce the
-                    // query plan options for SQL and introduce unnecessary overhead.
-                    QueryExpression query = new QueryExpression(entityName);
-                    query.ColumnSet.AddColumns(companyFieldName);
-                    foreach (string fieldToExport in fieldsToExport)
-                    {
-                        query.ColumnSet.AddColumn(fieldToExport);
-                    }
-                    query.Criteria.AddCondition(companyFieldName, ConditionOperator.NotEqual, companyRef.Id);
-
-                    // TODO: Uncomment the line below if you only want to fill in companies that are empty
-                    // as opposed to the line above which updates the company any time it differs from the 
-                    // desired value
-                    // query.Criteria.AddCondition(companyFieldName, ConditionOperator.Equal, Guid.Empty);
-
-                    if (isSimulate)
-                    {
-                        // During simulation, get as a single block of rows to avoid positioning complexities
-                        query.TopCount = maxSimulateRecordsPerBusinessUnit;
-                    }
-                    else
-                    {
-                        // Only batch rows during actual application, otherwise retrieve all as a single operation
-                        query.TopCount = requestBatchSize + faultedIds.Count;
-                    }
-
-                    // For tables with an owning business unit, join based on business unit name
-                    if (hasOwningBusinessUnit)
-                    {
-                        // TODO: Replace this logic with different algorithms to determine the correct company
-                        // in situations where business unit is not the best way to categorize.
-                        LinkEntity linkEntity = query.AddLink("businessunit", "owningbusinessunit", "businessunitid", JoinOperator.Inner);
-                        linkEntity.Columns.AddColumns("name");
-                        linkEntity.LinkCriteria.AddCondition("name", ConditionOperator.Equal, businessUnitName);
-                    }
-
-                    var multipleRequest = new ExecuteMultipleRequest()
-                    {
-                        Settings = new ExecuteMultipleSettings()
-                        {
-                            ContinueOnError = true,
-                            ReturnResponses = true
-                        },
-                        Requests = new OrganizationRequestCollection()
-                    };
-
-                    EntityCollection result = orgService.RetrieveMultiple(query);
-
-                    int rowsAddedToBatch = 0;
-
-                    foreach (var entity in result.Entities)
-                    {
-                        // Skip any previously faulted ID's. These values will be re-queried with each batch
-                        // which is inefficient, but is more efficient than passing hundreds of ID values to 
-                        // the underlying SQL query to be skipped at the database level (assuming the 
-                        // max fault count is relatively small).
-                        if (faultedIds.Contains(entity.Id))
-                        {
-                            continue;
-                        }
-
-                        entity.Attributes[companyFieldName] = companyRef;
-                        
-                        UpdateRequest updateRequest = new UpdateRequest()
-                        {
-                            Target = entity
-                        };
-
-                        simulationWriter.Write($"{entityName},{entity.Id},");
-                        foreach (string fieldToExport in fieldsToExport)
-                        {
-                            simulationWriter.Write($"{entity.Attributes[fieldToExport]},");
-                        }
-                        simulationWriter.WriteLine($"{businessUnitName},{businessUnitToCompanyMapping[businessUnitName]}");
-
-                        // Only add the update request when applying for real
-                        if (!isSimulate)
-                        {
-                            multipleRequest.Requests.Add(updateRequest);
-                        }
-
-                        rowsAddedToBatch++;
-                        Console.Write(".");
-                    }
-
-                    totalRecordsProcessed += rowsAddedToBatch;
-
-                    if (rowsAddedToBatch > 0 && !isSimulate)
-                    {
-                        Console.Write("Sending {0} updates in a batch", rowsAddedToBatch);
-                        var updateResult = orgService.Execute(multipleRequest) as ExecuteMultipleResponse;
-                        moreRecordsExist = true;
-                        Console.WriteLine(" done");
-
-                        // If any faults are encountered, flag those IDs to not be processed again
-                        // in subsequent batches.
-                        if (updateResult.IsFaulted)
-                        {
-                            foreach (var response in updateResult.Responses)
-                            {
-                                if (response.Fault != null)
-                                {
-                                    Console.WriteLine(response.Fault);
-                                    faultedIds.Add(((UpdateRequest)multipleRequest.Requests[response.RequestIndex]).Target.Id);
-
-                                    if (faultedIds.Count > 100)
-                                    {
-                                        throw new ApplicationException("Excessive number of update failures, aborting operation");
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("No {0} rows remain to be updated for {1}->{2}", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
-                    }
-                }
-            }
-
-            simulationWriter.Close();
-            simulationWriter = null;
-
-            stopwatch.Stop();
-            Console.WriteLine("Processed {0} rows for the {1} entity in {2}ms.", totalRecordsProcessed, entityName, stopwatch.ElapsedMilliseconds);
-
-            return (faultedIds.Count == 0);
-        }
-
-        /// <summary>
-        /// Gets an entity reference to the company with the specified ID if one exists.
-        /// </summary>
-        /// <param name="orgService">The CDS connection.</param>
-        /// <param name="companyId">The company ID to search for.</param>
-        /// <returns>An entity reference if one exists; otherwise, null.</returns>
-        private static EntityReference GetCompanyReference(IOrganizationService orgService, string companyId)
-        {
-            if (cachedCompanyReferences.ContainsKey(companyId))
-            {
-                return cachedCompanyReferences[companyId];
-            }
-
-            QueryExpression query = new QueryExpression("cdm_company");
-            query.ColumnSet.AddColumns("cdm_companyid");
-            query.Criteria.AddCondition("cdm_companycode", ConditionOperator.Equal, companyId);
-            query.TopCount = 1;
-
-            EntityCollection result = orgService.RetrieveMultiple(query);
-
-            EntityReference entityRef = null;
-
-            foreach (var entity in result.Entities)
-            {
-                entityRef = entity.ToEntityReference();
-                break;
-            }
-
-            cachedCompanyReferences[companyId] = entityRef;
-
-            return entityRef;
-        }
-    }
-}
-
- ```
- 
- 
+3. <span data-ttu-id="e2970-184">Azure Data Factory から **CountAccountsPipeline** を実行します。</span><span class="sxs-lookup"><span data-stu-id="e2970-184">Run **BootstrapAccountsPipeline** from Azure Data Factory.</span></span>

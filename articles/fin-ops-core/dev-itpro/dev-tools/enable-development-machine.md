@@ -1,6 +1,6 @@
 ---
 title: 開発マシンでの新しいユーザーの作成
-description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。
+description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが開発者として有効になります。 この記事では、別のユーザー アカウントを有効にする方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/11/2018
@@ -16,47 +16,47 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afef5361bdd41e28fe52502015f24e9e0ee353db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b3fd52787c9e0b0baf1416a02173f566e3ac55a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408969"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092884"
 ---
-# <a name="create-new-users-on-development-machines"></a><span data-ttu-id="cbd1f-104">開発マシンでの新しいユーザーの作成</span><span class="sxs-lookup"><span data-stu-id="cbd1f-104">Create new users on development machines</span></span>
+# <a name="create-new-users-on-development-machines"></a><span data-ttu-id="93a8f-104">開発マシンでの新しいユーザーの作成</span><span class="sxs-lookup"><span data-stu-id="93a8f-104">Create new users on development machines</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cbd1f-105">この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-105">This article explains how to enable another user account as a developer on a development VM.</span></span>
+<span data-ttu-id="93a8f-105">この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-105">This article explains how to enable another user account as a developer on a development VM.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="cbd1f-106">このトピックは、ダウンロードされたローカル仮想マシン (VM) か、顧客のサブスクリプションでホストされている VM にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-106">This topic only applies to downloaded local virtual machines (VMs) or VMs that are hosted in a customer’s subscription.</span></span> <span data-ttu-id="cbd1f-107">開発者が VM への管理者アクセスを持たない Microsoft が管理する開発およびビルド マシン (プラットフォーム更新 12 以降) において、新しいユーザーを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-107">You can't create new users on Microsoft-managed developer and build machines where developers have no administrator acces to the VM (Platform update 12 or newer).</span></span>
+> <span data-ttu-id="93a8f-106">このトピックは、ダウンロードされたローカル仮想マシン (VM) か、顧客のサブスクリプションでホストされている VM にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="93a8f-106">This topic only applies to downloaded local virtual machines (VMs) or VMs that are hosted in a customer’s subscription.</span></span> <span data-ttu-id="93a8f-107">開発者が VM への管理者アクセスを持たない Microsoft が管理する開発およびビルド マシン (プラットフォーム更新 12 以降) において、新しいユーザーを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="93a8f-107">You can't create new users on Microsoft-managed developer and build machines where developers have no administrator acces to the VM (Platform update 12 or newer).</span></span>
 
-<span data-ttu-id="cbd1f-108">環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-108">When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM).</span></span> <span data-ttu-id="cbd1f-109">このユーザーは、Microsoft Dynamics Lifecycle Services (LCS) によって事前設定するか、ダウンロードした仮想ハードディスク (VHD) のローカル管理者のアカウントです。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-109">This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs).</span></span> <span data-ttu-id="cbd1f-110">ただし、新しいユーザー アカウントを VM で開発できます。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-110">However, you can enable a new user account to develop on the VM.</span></span> <span data-ttu-id="cbd1f-111">新しいアカウントを有効にした後でも、同じ VM/アプリケーションで一度に開発できる開発者は 1 人だけです。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-111">Even after you enable a new account, only one developer can develop at a time on the same VM/application.</span></span>
+<span data-ttu-id="93a8f-108">環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。</span><span class="sxs-lookup"><span data-stu-id="93a8f-108">When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM).</span></span> <span data-ttu-id="93a8f-109">このユーザーは、Microsoft Dynamics Lifecycle Services (LCS) によって事前設定するか、ダウンロードした仮想ハードディスク (VHD) のローカル管理者のアカウントです。</span><span class="sxs-lookup"><span data-stu-id="93a8f-109">This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs).</span></span> <span data-ttu-id="93a8f-110">ただし、新しいユーザー アカウントを VM で開発できます。</span><span class="sxs-lookup"><span data-stu-id="93a8f-110">However, you can enable a new user account to develop on the VM.</span></span> <span data-ttu-id="93a8f-111">新しいアカウントを有効にした後でも、同じ VM/アプリケーションで一度に開発できる開発者は 1 人だけです。</span><span class="sxs-lookup"><span data-stu-id="93a8f-111">Even after you enable a new account, only one developer can develop at a time on the same VM/application.</span></span>
 
 
-## <a name="prerequisites"></a><span data-ttu-id="cbd1f-112">前提条件</span><span class="sxs-lookup"><span data-stu-id="cbd1f-112">Prerequisites</span></span>
-<span data-ttu-id="cbd1f-113">新しいユーザー アカウントが VM で開発できるようにするには、ユーザー アカウントが VM の管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-113">To enable a new user account to develop on the VM, the user account must be an administrator on the VM.</span></span> <span data-ttu-id="cbd1f-114">また、既定の開発者アカウントの資格情報を使用して VM にログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-114">Additionally, you must log on to the VM by using the credentials of the default developer account.</span></span> <span data-ttu-id="cbd1f-115">VM が Microsoft Azure VM である場合は、この勘定の情報は LCS の環境のページで使用できます。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-115">If the VM is a Microsoft Azure VM, the account information is available on the environment page in LCS.</span></span> <span data-ttu-id="cbd1f-116">VM がダウンロードした VHD 上で実行されるローカル VM である場合は、ローカル管理者アカウントを使用します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-116">If the VM is a local VM that runs on the downloaded VHD, use the local administrator account.</span></span> <span data-ttu-id="cbd1f-117">詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-117">For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="93a8f-112">前提条件</span><span class="sxs-lookup"><span data-stu-id="93a8f-112">Prerequisites</span></span>
+<span data-ttu-id="93a8f-113">新しいユーザー アカウントが VM で開発できるようにするには、ユーザー アカウントが VM の管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="93a8f-113">To enable a new user account to develop on the VM, the user account must be an administrator on the VM.</span></span> <span data-ttu-id="93a8f-114">また、既定の開発者アカウントの資格情報を使用して VM にログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="93a8f-114">Additionally, you must log on to the VM by using the credentials of the default developer account.</span></span> <span data-ttu-id="93a8f-115">VM が Microsoft Azure VM である場合は、この勘定の情報は LCS の環境のページで使用できます。</span><span class="sxs-lookup"><span data-stu-id="93a8f-115">If the VM is a Microsoft Azure VM, the account information is available on the environment page in LCS.</span></span> <span data-ttu-id="93a8f-116">VM がダウンロードした VHD 上で実行されるローカル VM である場合は、ローカル管理者アカウントを使用します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-116">If the VM is a local VM that runs on the downloaded VHD, use the local administrator account.</span></span> <span data-ttu-id="93a8f-117">詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93a8f-117">For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).</span></span>
 
-## <a name="steps"></a><span data-ttu-id="cbd1f-118">ステップ</span><span class="sxs-lookup"><span data-stu-id="cbd1f-118">Steps</span></span>
-1.  <span data-ttu-id="cbd1f-119">スクリプト ProvisionAxDeveloper.ps1 をダウンロードしてください。スクリプトは、<https://github.com/Microsoft/Dynamics-AX-Scripts> で利用可能です。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-119">Download the following script: ProvisionAxDeveloper.ps1, the script is available at <https://github.com/Microsoft/Dynamics-AX-Scripts>.</span></span>
-2.  <span data-ttu-id="cbd1f-120">Microsoft Windows PowerShell **コマンド プロンプト** ウィンドウを管理者として開きます。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-120">Open a Microsoft Windows **PowerShell Command Prompt** window as an administrator.</span></span>
-3.  <span data-ttu-id="cbd1f-121">ProvisionAxDeveloper.ps1 スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-121">Run the ProvisionAxDeveloper.ps1 script.</span></span> <span data-ttu-id="cbd1f-122">次のパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-122">Specify the following parameters:</span></span>
+## <a name="steps"></a><span data-ttu-id="93a8f-118">ステップ</span><span class="sxs-lookup"><span data-stu-id="93a8f-118">Steps</span></span>
+1.  <span data-ttu-id="93a8f-119">スクリプト ProvisionAxDeveloper.ps1 をダウンロードしてください。スクリプトは、<https://github.com/Microsoft/Dynamics-AX-Scripts> で利用可能です。</span><span class="sxs-lookup"><span data-stu-id="93a8f-119">Download the following script: ProvisionAxDeveloper.ps1, the script is available at <https://github.com/Microsoft/Dynamics-AX-Scripts>.</span></span>
+2.  <span data-ttu-id="93a8f-120">Microsoft Windows PowerShell **コマンド プロンプト** ウィンドウを管理者として開きます。</span><span class="sxs-lookup"><span data-stu-id="93a8f-120">Open a Microsoft Windows **PowerShell Command Prompt** window as an administrator.</span></span>
+3.  <span data-ttu-id="93a8f-121">ProvisionAxDeveloper.ps1 スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-121">Run the ProvisionAxDeveloper.ps1 script.</span></span> <span data-ttu-id="93a8f-122">次のパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-122">Specify the following parameters:</span></span>
 
-    -   <span data-ttu-id="cbd1f-123">**DatabaseServerName** - 通常、これは、コンピューター名です。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-123">**DatabaseServerName** – Typically, this is the machine name.</span></span>
-    -   <span data-ttu-id="cbd1f-124">**ユーザー** – 次の形式を使用します: &lt;ドメインまたはコンピューター名&gt;\\ユーザー 1、…</span><span class="sxs-lookup"><span data-stu-id="cbd1f-124">**Users** – Use the following format: &lt;domain or machine name&gt;\\user1, …</span></span> <span data-ttu-id="cbd1f-125">&lt;ドメインまたはコンピューター名&gt;\\ユーザー n</span><span class="sxs-lookup"><span data-stu-id="cbd1f-125">&lt;domain or machine name&gt;\\user n</span></span>
+    -   <span data-ttu-id="93a8f-123">**DatabaseServerName** - 通常、これは、コンピューター名です。</span><span class="sxs-lookup"><span data-stu-id="93a8f-123">**DatabaseServerName** – Typically, this is the machine name.</span></span>
+    -   <span data-ttu-id="93a8f-124">**ユーザー** – 次の形式を使用します: &lt;ドメインまたはコンピューター名&gt;\\ユーザー 1、…</span><span class="sxs-lookup"><span data-stu-id="93a8f-124">**Users** – Use the following format: &lt;domain or machine name&gt;\\user1, …</span></span> <span data-ttu-id="93a8f-125">&lt;ドメインまたはコンピューター名&gt;\\ユーザー n</span><span class="sxs-lookup"><span data-stu-id="93a8f-125">&lt;domain or machine name&gt;\\user n</span></span>
 
-    <span data-ttu-id="cbd1f-126">**例**</span><span class="sxs-lookup"><span data-stu-id="cbd1f-126">**Examples**</span></span>
+    <span data-ttu-id="93a8f-126">**例**</span><span class="sxs-lookup"><span data-stu-id="93a8f-126">**Examples**</span></span>
 
     -  `ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1`
 
     -  `ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2`
 
-4.  <span data-ttu-id="cbd1f-127">1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-127">If more than one user account will be developing on the same version control workspace, you need to make the workspace public.</span></span>
-    1.  <span data-ttu-id="cbd1f-128">Visual Studio で、 **ソース管理エクスプローラー** を開き、ワークスペース ドロップダウンから **ワークスペースの管理** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-128">In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.</span></span>
-    2.  <span data-ttu-id="cbd1f-129">アプリケーション ワークスペースを選択して、 **編集** をクリックし、 **詳細** をクリックしてワークスペースを **パブリック ワークスペース** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cbd1f-129">Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.</span></span>
+4.  <span data-ttu-id="93a8f-127">1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="93a8f-127">If more than one user account will be developing on the same version control workspace, you need to make the workspace public.</span></span>
+    1.  <span data-ttu-id="93a8f-128">Visual Studio で、 **ソース管理エクスプローラー** を開き、ワークスペース ドロップダウンから **ワークスペースの管理** を選択します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-128">In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.</span></span>
+    2.  <span data-ttu-id="93a8f-129">アプリケーション ワークスペースを選択して、 **編集** をクリックし、 **詳細** をクリックしてワークスペースを **パブリック ワークスペース** に設定します。</span><span class="sxs-lookup"><span data-stu-id="93a8f-129">Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.</span></span>
     
-    <span data-ttu-id="cbd1f-130">[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)</span><span class="sxs-lookup"><span data-stu-id="cbd1f-130">[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)</span></span>
+    <span data-ttu-id="93a8f-130">[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)</span><span class="sxs-lookup"><span data-stu-id="93a8f-130">[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)</span></span>
 
 
 
