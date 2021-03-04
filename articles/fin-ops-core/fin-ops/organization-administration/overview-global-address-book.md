@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63af35178ccfb19ac6d9ea5a91c1de2dd33b7af6
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 5f72d27ef188cf4f08690882d013486b1e254a5a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694092"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797010"
 ---
 # <a name="global-address-book-overview"></a>グローバル アドレス帳の概要
 

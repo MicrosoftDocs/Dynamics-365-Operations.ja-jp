@@ -3,7 +3,7 @@ title: Modern POS (MPOS) のインストール、構成、有効化
 description: このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTable
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f4a1497f1583501e83d56012e686efd85a9d0005
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 970c687b0a6b31c06b2e5895b69d1e121b76fb73
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672458"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141932"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -34,6 +33,8 @@ ms.locfileid: "4672458"
 
 > [!NOTE]
 > 最新の POS インストーラーには、Modern POS とオフラインの Modern POS (このインストーラーでもオフライン データベースをインストールします) の 2 つが用意されています。
+
+> リリース 10.0.11 以降、ClientBroker フォルダーに保存されているカスタマイズ ファイルを変更すると、新しいリリースをインストールするときに問題が発生することがあります。 これらの問題には、オフラインの使用不可、または新しいインストーラーが正常に完了できないことが含まれることがあります。 回避策として、新しいインストーラーを使用してインストールを実行する前に、Modern POS ディレクトリの ClientBroker フォルダーにあるファイルを削除することができます。
 
 ## <a name="technology"></a>テクノロジ
 
@@ -108,11 +109,12 @@ ms.locfileid: "4672458"
 
 > [!NOTE]
 > - Modern POS インストーラーを実行する前に、すべての[システム要件](../fin-and-ops/get-started/system-requirements.md)が満たされていることを確認してください。
+> - 一時的にウィルス対策アプリケーションを無効にすることをお勧めします。  積極的なウィルス対策ソリューションの場合、使用中のアクティブなファイルをチェックしたときに、ウィルス対策ソリューションがフリーズする可能性があることが報告されています。
 > - インストーラーは、最新のアプリケーションをサイドロードします。 したがって、サイドロードされたアプリケーションを許可するようにグループ ポリシー エントリを設定する必要があります。 インストーラーは、このインストールを可能にするために、次のように関連するレジストリ キーを変更します。
->
->    - **パス:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->    - **プロパティ:** AllowAllTrustedApps
->    - **値:** 1
+>     - **パス:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
+>     - **プロパティ:** AllowAllTrustedApps
+>     - **値:** 1
+> - オフラインが使用されている (オフライン データベースが作成されている) 場合、既定の SQL Server のインスタンスが存在している必要があります。 SQL Server のインスタンスが存在していても、既定として設定されていない場合、インストーラーはオフライン データベースのインストールに失敗します。
 
 オンプレミス環境で使用する Modern POS をインストールする場合は、次のようにコマンド ラインからインストーラーを起動する必要があります。
 

@@ -1,6 +1,6 @@
 ---
 title: セクション積み上げグラフのサブパターン
-description: この記事では、セクション積み上げグラフのサブパターンに関する情報を提供します。 このサブパターンは、パノラマ セクションに 1 つまたは 2 つのグラフが含まれているとき、運用ワークスペース パターンの一部として使用されます。
+description: この記事では、セクション積み上げグラフのサブパターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49c5d7ca9d621726361e8ecd84139fbdf7eab36c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a8f316f174a7048370679431bde65b003ec231bb
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687296"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092367"
 ---
 # <a name="section-stacked-chart-subpattern"></a>セクション積み上げグラフのサブパターン
 

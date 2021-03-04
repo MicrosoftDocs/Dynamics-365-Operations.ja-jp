@@ -1,7 +1,7 @@
 ---
 title: Financial Reporting の通貨の機能
 description: Financial Reporting には、複雑な通貨のレポート要件をサポートする機能が含まれます。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 0c27b6d2e58660d1bce149b38da71775a7a55fd9
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 83bc473629dfccb52e03d9cb92f8e2fdf0d99f5d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4409543"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019062"
 ---
 # <a name="currency-capabilities-in-financial-reporting"></a>Financial Reporting の通貨の機能
 

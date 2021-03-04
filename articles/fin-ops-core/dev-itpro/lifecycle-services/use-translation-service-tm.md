@@ -1,6 +1,6 @@
 ---
 title: 翻訳メモリ ファイル
-description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) が高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
+description: このトピックでは、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 03/29/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 30bead590f7ae899a51af59a97ccb76fb97ba6bf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: be259d51931842dd55df9c95f79482c32539202c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130789"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 

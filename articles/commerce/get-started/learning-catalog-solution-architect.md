@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 02158c328bc4014b873bcad925f91a003f15d14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0531aa759a002fef04e6c515404d4e361a3ec016
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409255"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009726"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-solution-architects"></a>Dynamics 365 Commerce ソリューション アーキテクトのラーニング カタログ
 

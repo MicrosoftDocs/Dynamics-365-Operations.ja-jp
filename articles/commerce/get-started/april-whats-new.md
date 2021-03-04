@@ -10,19 +10,18 @@ ms.service: dynamics-ax-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 949694a498aa3007ff018af3dfb1321fc18bd352
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 936982ef0395e9fe5d6f5318ad011b1007a73930
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408960"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972880"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
 

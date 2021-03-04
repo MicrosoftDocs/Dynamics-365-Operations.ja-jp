@@ -10,19 +10,18 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b306bf7f4311423d92163ce54f528223bec346d9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a85ba6a371d631a3e93b6fe16b8dd687f2b61366
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408714"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979690"
 ---
 # <a name="replace-user-ids-associated-with-tracked-content-changes"></a>追跡しているコンテンツの変更に関連付いたユーザー ID の置換
 

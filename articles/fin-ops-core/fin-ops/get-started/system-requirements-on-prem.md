@@ -3,7 +3,7 @@ title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 591450ce309f88dd37e294c4a151e74092ea47a3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b2c99f7c0ab8528b377f15e09228fe63b6d60162
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693685"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077646"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -282,12 +282,15 @@ Finance + Operations コンポーネントをインストールする前に、�
 
 ## <a name="software-requirements-for-client-computers"></a>クライアント コンピュータのソフトウェア要件
 
-Finance + Operations Web アプリケーションは、HTML 5.0 に準拠している Web ブラウザーを備えた任意のデバイス上で実行できます。 Microsoft が確認した特定のデバイス / ブラウザーの組み合わせは、次の通りです。
+ユーザーは、これらの一般的なブラウザの最新バージョンを使用して Finance + Operations にアクセスできます。
 
-- Windows 10 の Microsoft Edge (公開されている最新のバージョン)
-- Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
-- Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン)
-- Mac OS X 10.10 (Yosemite)、10.11 (El Capitan)、または 10.12 (Sierra)、または Apple iPad の Apple Safari (公開されている最新のバージョン)
+- Microsoft Edge (推奨: [Chromium ベースの Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
+- Google Chrome
+- Apple Safari
+- Internet Explorer 11 (非推奨)
+
+> [!NOTE]
+> パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 Internet Explorer 11 のサポートは非推奨です。 詳細については、[Internet Explorer 非推奨のお知らせ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)を参照してください。
 
 ## <a name="software-requirements-for-active-directory-federation-services"></a>Active Directory フェデレーション サービスのソフトウェア要件
 

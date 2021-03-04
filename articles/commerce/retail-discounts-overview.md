@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 7b609993f424332e00d17bd5002d21b6d1bb1d82
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: f8fec3841bb82dc6dcdd2bf938333efaf2dd3d7b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594466"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979662"
 ---
 # <a name="retail-discounts"></a>小売割引
 

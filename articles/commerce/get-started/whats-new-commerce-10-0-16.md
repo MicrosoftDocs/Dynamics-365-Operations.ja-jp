@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.16 (2021 年 2 月) のプレビュー機能
+title: Dynamics 365 Commerce 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.16 の新機能または変更された機能について説明します。
 author: josaw1
 manager: AnnBe
@@ -10,24 +10,23 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 15a51112e76252dd07056c8d999a4b3722b52820
-ms.sourcegitcommit: ce34e1ac6ce3a7033618bb9fd2983b11d63d3112
+ms.openlocfilehash: 731b69dcd0753cbaedf6e01ff5c2224e7b72b426
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "4597282"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053453"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10016-february-2021"></a>Dynamics 365 Commerce 10.0.16 (2021 年 2 月) のプレビュー機能
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10016-february-2021"></a>Dynamics 365 Commerce 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.16 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.689 で、次のスケジュールで使用できます。
 

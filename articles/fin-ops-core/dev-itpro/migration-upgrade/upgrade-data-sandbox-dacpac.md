@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境でデータをアップグレードするための DACPAC プロセス
-description: このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations アプリにアップグレードする際に、リモート デスクトップ プロトコル (RDP) を使用してレベル 2 からレベル 5 のサンドボックス環境にアクセスできなくなった顧客に役立ちます。
+description: このトピックは、アップグレード時にサンドボックス環境へのリモート デスクトップ プロトコル (RDP) がないお客様を対象としています。
 author: laneswenka
 manager: AnnBe
 ms.date: 12/02/2020
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: a456ca35e59910f7ff908ba3c0f716234c4c268f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bdb22bcb8f7b52602d8eed19344c72a9f2346163
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128657"
 ---
 # <a name="upgrade-from-ax-2012---dacpac-process-to-upgrade-data-in-sandbox-tiers-2-5-environments"></a>AX 2012 からのアップグレード - レベル 2 からレベル 5 のサンドボックス環境でデータをアップグレードするための DACPAC プロセス
 

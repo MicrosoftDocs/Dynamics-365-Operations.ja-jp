@@ -1,6 +1,6 @@
 ---
-title: ローカライズ機能の分類
-description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。 この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
+title: ローカリゼーション機能の分類
+description: このトピックでは、規制機能と競合機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3b0ecd0f9cbcf80339ed3108025f36fe17ec04
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 244581b0d4591eda408b494d6f43997343d1200d
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129969"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 
 [!include [banner](../includes/banner.md)]
 
-ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。 この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
+ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制または競合として分類される必要があります。 この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
 
 ローカライズ機能は、Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制または競合として分類される必要があります。 次の定義は、2 つのタイプの機能を区別するのに役立ちます。
 

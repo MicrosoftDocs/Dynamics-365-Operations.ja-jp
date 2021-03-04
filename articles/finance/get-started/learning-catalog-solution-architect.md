@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3f72fc3a989c350a12df833b633cdb39290f01f0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 35e4673e8e14ebe28f30cec7c280c86059f6ff70
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408928"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984896"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-solution-architects"></a>Dynamics 365 Finance ソリューション アーキテクトのラーニング カタログ
 
@@ -56,7 +55,7 @@ ms.locfileid: "4408928"
 | [Dynamics 365 for Finance and Operations の Azure 統合ツール (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | この Tech Talk では、Dynamics 365 for Finance and Operations との統合において考慮する必要があるツールのタイプについて、およびどの統合ツールをいつ選択するべきかについて扱います。 このセッションでは、Azure 統合サービスを使用して調整できた統合シナリオのいくつかについても説明します。 | Web カンファレンスの無料録画 | 63 分 |
 | [拡張性 (DYN384PAL2)](https://community.dynamics.com/365/b/techtalks/posts/extensibility-november-1-2017) | このセッションでは、Microsoft が発表した拡張性計画の概要を示し、コードがオーバーレイヤーしているパートナーや顧客向けに推奨されるパスを示します。 ソリューションを拡張するさまざまな方法について説明し、メタデータの拡張性機能とコードを補強および拡張する機能を詳しく調べます。 強力な新しいコマンドのチェーン機能が示され、このテクノロジーによってブロックされていない拡張性機能の数を示します。 | Web カンファレンスの無料録画 | 55 分 |
 | [Dynamics 365 for Finance & Operations 内の統合フレームワーク (DYN385PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-frameworks-within-dynamics-365-for-finance-amp-operations-october-31-2017) | このセッションでは、Dynamics 365 for Finance & Operations 内の統合フレームワークの概要を示し、これらのフレームワークを使用するうえでの考慮事項について説明します。 | Web カンファレンスの無料録画 | 64 分 |
-| [CDS 経由で Dynamics 365 for Sales と Dynamics 365 for Finance & Operations 間を統合 (DYN340PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | この Tech Talk では、Dynamics 365 for Sales での販売およびマーケティング活動と、Dynamics 365 for Finance and Operations フルフィルメントを含む、見込顧客を現金化と呼ばれる統合シナリオを紹介します。 また、データ インテグレーターおよび統合を変更する方法も確認します。 | Web カンファレンスの無料録画 | 54 分 |
+| [Dataverse 経由の Dynamics 365 for Sales と Dynamics 365 for Finance & Operations 間の統合 (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | この Tech Talk では、Dynamics 365 for Sales での販売およびマーケティング活動と、Dynamics 365 for Finance and Operations フルフィルメントを含む、見込顧客を現金化と呼ばれる統合シナリオを紹介します。 また、データ インテグレーターおよび統合を変更する方法も確認します。 | Web カンファレンスの無料録画 | 54 分 |
 | [モバイル フレームワーク (VIR824PAL) ](https://community.dynamics.com/365/b/techtalks/posts/mobile-framework-april-11-2017) | この Tech Talk では、Dynamics 365 for Operations でアプリを構築するためのモバイル フレームワーク機能について説明します。 このセッションでは、最近構築されたアプリの一部も紹介します。 | Web カンファレンスの無料録画 | 58 分 |
 | [統合 (VIR806PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-february-16-2017) | この Tech Talk では、コード サンプルおよびデモンストレーションを含めた Dynamics 365 for Operations のさまざまな統合オプションについて説明します。 | Web カンファレンスの無料録画 | 58 分 |
 | [Visual Studio Team Services (VSTS) の設定 (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | この Tech Talk では、VSTS のインスタンスとプロジェクトを構成して、開発/テスト環境を構成する LCS 実装プロジェクトに接続するために必要な手順について説明します。 | Web カンファレンスの無料録画 | 41 分 |

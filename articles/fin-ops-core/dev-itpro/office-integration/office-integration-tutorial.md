@@ -1,7 +1,7 @@
 ---
 title: Office 統合のチュートリアル
 description: このチュートリアルでは、Excel、Word、ドキュメント管理および電子メールが関係する Office 統合エクスペリエンスを使用して構築します。
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 10884
 ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83410554decd5a6d57e5f68de4fcb6c213a692ba
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e4e307f847528f1b7e63fd202d06ce713bab70cb
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688491"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141920"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 

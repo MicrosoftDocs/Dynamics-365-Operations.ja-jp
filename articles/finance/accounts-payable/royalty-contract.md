@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a6d32d1b4c3011353ff60b6adcca1ddb9099b353
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 271124420dab2456873f6253cfbf7016c6d449be
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408852"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972033"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 

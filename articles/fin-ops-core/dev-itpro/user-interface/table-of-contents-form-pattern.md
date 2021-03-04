@@ -1,6 +1,6 @@
 ---
 title: 目次のフォーム パターン
-description: この記事では、目次フォームのパターンに関する情報を提供します。 このパターンは、セットアップ構成に論理的に関連する 2 つ以上のフォームが必要な場合に使用します。
+description: この記事では、設定コンフィギュレーションに複数の関連フォームが必要な場合に使用される目次のフォーム パターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69ab1116820e466d20ae1de087d5f947c85cdb1f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b0d28d234afcf789089c4f54ecbe5aab2a317383
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687806"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093043"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 

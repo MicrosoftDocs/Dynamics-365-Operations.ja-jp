@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b2d1f88407d4fe0e44f880cf06a1811868869ecc
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: e9ccdb68005e8076d08359ea3e0d1b7fb4739eac
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4655717"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993387"
 ---
 # <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK でのチップのサポート
 

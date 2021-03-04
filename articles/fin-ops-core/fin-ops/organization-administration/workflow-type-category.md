@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 43ffd6b6627e211977e616c0c9ff42a001d19d91
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6ed544a67d22c7eab674df60581eeec32ec22721
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693888"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798791"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0898649f066cc2b77803733e0cde273eb5d5da57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 349e3919711a2542bc42702d5ce1b74e0848b23a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5126651"
 ---
 # <a name="reconfigure-environments-to-take-a-new-platform-or-topology"></a>新しいプラットフォームまたはトポロジを使用するために環境を再構成
 

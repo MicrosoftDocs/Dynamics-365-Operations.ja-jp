@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
-ms.openlocfilehash: 00370311365e6011d4b1134a38c44259f6556de9
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3cfd8c0082e6128f66394e9818e65c11971a1036
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694100"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797847"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-27-june-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
 

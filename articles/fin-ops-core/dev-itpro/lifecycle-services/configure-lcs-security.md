@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02ea673a550a7ac257008e3e67277025d13506
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 73c2fd242cbb9057b4a6f711b50d7cb9049b5fb3
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679254"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154319"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -61,7 +61,7 @@ LCS へのプロジェクト レベル アクセスは、招待によって行�
 
 ### <a name="signing-in-to-customersource-or-partnersource"></a>CustomerSource または PartnerSource へのサインイン
 
-[CustomerSource サインイン ページ](https://mbs.microsoft.com/customersource/)に移動し、Microsoft アカウント (以前は Windows Live ID と呼ばれる) のユーザー名とパスワードを入力してサイトにアクセスします。 組織の CustomerSource 勘定へのアクセスがない場合、「[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) にログインする方法」ページに従います。
+[CustomerSource サインイン ページ](https://docs.microsoft.com/dynamics/s-e/)に移動し、Microsoft アカウント (以前は Windows Live ID と呼ばれる) のユーザー名とパスワードを入力してサイトにアクセスします。 組織の CustomerSource 勘定へのアクセスがない場合、「[CustomerSource](https://docs.microsoft.com/dynamics/s-e/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) にログインする方法」ページに従います。
 
 ### <a name="determining-the-administrator-for-your-organization-in-customersource-or-partnersource"></a>CustomerSource または PartnerSource で組織の管理者を決定する
 

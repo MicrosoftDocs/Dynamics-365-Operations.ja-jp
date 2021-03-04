@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 14477d1feac7f39534060e68742c0df8e2a6b9b2
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2ba107da07d56372e9397bd79524adfd13b3a55d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694753"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797590"
 ---
 # <a name="configure-the-workflow-message-processing-batch-job-as-critical"></a>ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82fd96271468d68b37db244393f682e0edd17b55
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98edc9edbe6d33d36688c023fc94fc291f6ec105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409411"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989516"
 ---
 # <a name="shipping-discount-overview"></a>出荷割引の概要
 

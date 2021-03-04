@@ -1,6 +1,6 @@
 ---
-title: セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
+title: Finance and Operations 配置用コマース支払パッケージの作成
+description: このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 12/02/2020
@@ -16,25 +16,25 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: b75d3836e13d2c9e161457636d49b984e69a90d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: efad7d429f8bd63751a21a2d9c95180b8cd7dd36
+ms.sourcegitcommit: cd0860e47dcc6666911ce8ca084dd717eca65979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681558"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "4858156"
 ---
-# <a name="create-payment-packaging-for-application-explorer-for-self-service-deployment"></a>セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
+# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations 配置用コマース支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 
 10.0.10 より前のリリースでは、コマース ソフトウェア開発キット (SDK) を使用して支払コネクタ パッケージを作成します。 (以前は Commerce SDK は Retail SDK と呼ばれていました。) 10.0.10 リリース以降では、Visual Studio のみを使用して Application Object Server (AOS) 支払コネクタ パッケージを作成できます。 この方法を使用して作成したパッケージは、[オールイン ワンパッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md) を使用して、以前の展開とセルフサービス配置の両方に展開できます。
 
 > [!NOTE]
 > 10.0.10 以前のリリースでは、単一の支払パッケージを作成し、それをアプリケーション エクスプローラーとコマース チャネルおよびクラウド コンポーネント (Commerce Scale Unit) の両方に使用できます。 10.0.10 リリースでは、2 つのパッケージを作成する必要があります。 1 つのパッケージはアプリケーション エクスプローラー用で、Dynamics 365 パッケージング モデルを使用して作成します。 もう 1 つのパッケージは、コマース チャネルとクラウド コンポーネント用で、コマース SDK を使用して作成します。 コマース SDK を使用してアプリケーション エクスプローラー支払パッケージを作成した以前の方法は、10.0.10 リリースの時点で廃止 (非推奨) となります。
 
-セルフ サービスで配置できる支払パッケージを作成するには、次のセクションの手順に従います。
+配置できる支払パッケージを作成するには、次のセクションの手順に従います。
 
 > [!NOTE]
 > コマース チャネルとクラウド コンポーネント用パッケージを作成するため、コマース SDK を使用する手順は変更されていません。 詳細については、「[コネクタの作成と配置](deploy-payment-connector.md)」を参照してください。
@@ -63,7 +63,7 @@ https://AOSUrl/resources/html/Myhtml.html
 https://AOSUrl/resources/styles/Mycss.css
 ```
 > [!NOTE]
-> リソースとしてプロジェクトに追加された HTML および CSS ファイルは AosService\WebRoot\, にコピーされ、リソースとして追加された他のファイル形式は AosService\WebRoot\. にコピーされません。 AosService\WebRoot\ フォルダーにファイルが必要な場合は、HTML ファイル形式に移行する必要があります。
+> リソースとしてプロジェクトに追加された HTML および CSS ファイルは AosService\WebRoot\, にコピーされ、リソースとして追加された他のファイル形式は AosService\WebRoot\. にコピーされません。 AosService\WebRoot\ フォルダーのファイルが必要な場合、HTML ファイル形式に移行するか、またはサポートされていないファイル形式を外部でホストします。 外部でホストされている場合、カスタマイズまたはパートナーがホスティングを管理する必要があります。
 
 9. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
 

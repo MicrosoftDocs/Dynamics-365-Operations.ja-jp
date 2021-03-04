@@ -1,6 +1,6 @@
 ---
 title: ワークスペースのタイルおよびリストのキャッシュ
-description: ワークスペースが正常に機能し、応答可能である (つまり、ワークスペースに表示されるデータが期待どおりに更新され、最新の状態である) ことが重要です。 このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。
+description: このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワーク サポートについて説明します。これにより、ワークスペースが正常に動作し、応答可能になります。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a61605f4144817a45bce28d855a967bd22632ac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ebd4ea0896756eae41398e0e47e100a0fb35b3b7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684997"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094196"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 

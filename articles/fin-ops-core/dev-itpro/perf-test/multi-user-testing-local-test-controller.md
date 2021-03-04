@@ -1,6 +1,6 @@
 ---
-title: パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
-description: このトピックでは、タスク レコーダーから生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してマルチユーザー テストを行う方法を説明します。
+title: ローカル テスト コントローラーを使用したマルチ ユーザー パフォーマンス SDK テスト
+description: このトピックでは、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー テスト スクリプトを使用してマルチユーザー テストを行う方法について説明します。
 author: hasaid
 manager: AnnBe
 ms.date: 07/07/2020
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3ce022f42b7bc45698311fee40572119a915930
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0446a90c39c32c36362637feac221a4fc782f3d2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128371"
 ---
-# <a name="multi-user-testing-with-the-performance-sdk-and-a-local-test-controller"></a>パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト
+# <a name="multi-user-performance-sdk-testing-with-a-local-test-controller"></a>ローカル テスト コントローラーを使用したマルチ ユーザー パフォーマンス SDK テスト
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "4680452"
 
 ## <a name="configure-a-development-environment-for-multi-user-testing"></a>マルチ ユーザー テストのための開発環境のコンフィギュレーション
 
-1. [SQL Server の ODBC ドライバー 17](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
+1. [SQL Server の ODBC ドライバー 17](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server) をダウンロードして、ダウンロードしたファイルを **msodbcsql** に名前を変更して、それを **PerfSDK** フォルダーの **Visual Studio Online** フォルダーにコピーします。
 
     [![Visual Studio Online フォルダーの msodbcsql ファイル](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 

@@ -3,7 +3,7 @@ title: AX 2012 から Finance and Operations へのアップグレード
 description: このトピックでは、現在 Microsoft Dynamics AX 2012 を実行している顧客が、データとコードを Finance and Operations に移動するために使用できるプロセスについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: aebd8994a14caae2ad40882e59431f6cd0d34980
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1696fddaae0ddcb61f605181c1d760b51cfcf7da
+ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685439"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "4743455"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
@@ -50,17 +50,9 @@ Finance and Operations は、Platform update 8 および 2017 年 7 月のアプ
 
 分析フェーズにおける活動は、アップグレードに必要な工数を見積もるのに役立ちます。 またプロジェクト計画の準備にも役立ちます。 これらの活動は Finance and Operations を購入する前に実行できます。 必要になる工数およびリソースについてのデータ点を提供することにより、確かな情報に基づいた購買決定をするのに役立ちます。
 
-### <a name="sign-up-for-a-lifecycle-services-trial-or-partner-project"></a>Lifecycle Services 試用版またはパートナー プロジェクトにサインアップする
+### <a name="sign-up-for-a-preview-subscription"></a>プレビュー サブスクリプションのサインアップ
 
-Finance and Operations を購入する前に分析活動を実行するには、Microsoft Dynamics Lifecycle Services (LCS) 試用版またはパートナー プロジェクトにサインアップする必要があります。 これにより、独自の Finance and Operations 環境を展開できます。 また、AX 2012 環境と既存のカスタム コードを評価するために使用する LCS のツールにアクセスすることもできます。
-
-AX 2012 に既存の LCS プロジェクトがある場合は、Finance and Operations の追加の LCS プロジェクトにサインアップする必要があります。
-
-顧客用に LCS トライアル プロジェクトを取得する方法の詳細については、https://go.microsoft.com/fwlink/?LinkId=2017742&clcid=0x409 を参照してください。
-
-LCS パートナー プロジェクトを取得する方法の詳細については、https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview を参照してください。
-
-これは、[30日間試用版](https://aka.ms/D365OperationTrials) と異なることに注意してください。 30 日間試用版は、アプリケーションの調査と評価に使用できる Finance and Operations の展開済みインスタンスを提供します。 ただし、分析活動には完全な LCS 経験とツールが必要です。
+プレビュー サブスクリプションにサインアップするには、[プレビュー サブスクリプションへのサインアップ](../dev-tools/sign-up-preview-subscription.md)を参照してください。
 
 ### <a name="select-the-upgrade-methodology"></a>アップグレード方法の選択
 新しい LCS プロジェクトで、プロジェクト方法を **AX 2012 を Dynamics 365 for Finance and Operations にアップグレードする** に設定します。 この方法は、アップグレード中の AX 2012 の顧客に対して特別に行われます。 3 つのフェーズについて詳細に説明し、プロセスに関するすべてのサポート ドキュメントへのリンクを提供します。

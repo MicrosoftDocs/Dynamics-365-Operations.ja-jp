@@ -1,5 +1,5 @@
 ---
-title: Field Service ソリューションと Project Service Automation ソリューションへの対応
+title: Field Service と Project Service Automation ソリューションのサポート
 description: このトピックでは、 Field Service ソリューション と Project Service Automation ソリューションへの対応に関する情報を提供します。
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6ce0bcce7dc7ae9f6d7489289c68fd16e6a752c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ac52cbe1742c70e60836e380f6ff0cf4bf7b493d
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130993"
 ---
-# <a name="support-for-field-service-solutions-and-project-service-automation-solutions"></a>Field Service ソリューションと Project Service Automation ソリューションへの対応
+# <a name="support-for-field-service-and-project-service-automation-solutions"></a>Field Service と Project Service Automation ソリューションのサポート
 
 [!include [banner](../../includes/banner.md)]
 

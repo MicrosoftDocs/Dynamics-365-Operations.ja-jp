@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, SysEmailTable,
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 252934
 ms.assetid: 4b9f733b-bf28-4b85-94de-4f7adf67a62c
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4a268d746730a5422885b1de7b3bfd08f20661c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a1046cddc0aed0f36bd4119cf9adc8920f44d386
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010127"
 ---
 # <a name="send-email-receipts-from-modern-pos-mpos"></a>Modern POS (MPOS) からの電子メール レシートの送信
 

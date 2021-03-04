@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dbae5a1dc974a73409fa0ea3c038c9536b4f0b7
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2873dddd16557bba26252c787db9a2d455228c25
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694483"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798391"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
@@ -124,4 +124,4 @@ USMF というデモ会社には、承認すべき INGA についての 2 つの
 
 [![原価会計パラメーター](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
-アクセス レベルのセキュリティが有効にした後、Alica を原価オブジェクト コントローラーのロールに割り当てます。 Alica としてログインして **原価管理** ワークスペースにアクセスすることができます。 アリシアはコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。
+アクセス レベルのセキュリティを有効にした後、従業員を原価オブジェクト コントローラーのロールに割り当てることができます。 従業員としてログインして **原価管理** ワークスペースにアクセスできます。 従業員はコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。

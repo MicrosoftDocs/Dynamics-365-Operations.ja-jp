@@ -13,15 +13,14 @@ ms.reviewer: josaw
 ms.search.region: Norway
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 34bd4c3626e6d1b6f5c52889256bf12e44cd4760
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5c08e88fe30d30ac25050294f08799368112b457
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409357"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985941"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 

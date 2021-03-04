@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) 内のカスタマイズ分析
-description: Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。 その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。
+description: カスタマイズ分析は、モデル ファイルをベスト プラクティス ルールに従って検証する Microsoft Dynamics AX 2012 の自動ツールです。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/13/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1c4581bb43ef74239157bb3030cfe9ca005c052b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e1a9d92d3c3915fd8c874f576b0438591aaa525b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129321"
 ---
 # <a name="customization-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のカスタマイズ分析
 

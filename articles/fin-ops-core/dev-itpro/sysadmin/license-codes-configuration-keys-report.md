@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7d3c3f207d7a5ff249eac67cf809b5a353a6e8f6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 82e100f1759081ff1202b5e9fb65591c692b740e
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686313"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154347"
 ---
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 
@@ -35,7 +35,7 @@ Finance and Operations を購入したときには、すべての機能が含ま
 ライセンス コードまたはコンフィギュレーション キーを無効にすると、関連するモジュールまたは機能がユーザー インターフェイスから削除されます。 モジュールなどの大規模な機能のセットは、ライセンス コードによって制御されます。 次に、多くのライセンス コードは、より詳細なレベルで機能を有効または無効にできるコンフィギュレーション キーを有効にします。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[ライセンス コードとコンフィギュレーション キー レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、使用できる各コンフィギュレーション キーが一覧表示されています。 レポートには、各構成キーに関連付けられているライセンス コードとメニュー項目も表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+[ライセンス コードとコンフィギュレーション キー レポート](https://docs.microsoft.com/dynamics/s-e/)には、使用できる各コンフィギュレーション キーが一覧表示されています。 レポートには、各構成キーに関連付けられているライセンス コードとメニュー項目も表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
 
 
 

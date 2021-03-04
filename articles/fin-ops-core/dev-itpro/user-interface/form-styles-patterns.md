@@ -1,6 +1,6 @@
 ---
 title: フォームのスタイルとパターン
-description: このトピックでは、フォーム パターンの概念について説明し、パターンを適用および削除するプロセスについて説明します。 このトピックでは、よく寄せられる質問の一覧にも回答します。
+description: このトピックでは、フォーム パターンの概念について説明し、パターンを適用および削除するプロセスについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf7e65ce31a1560bb657b5e9f7c0cd26870af414
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7f329577e926c8c6fc7605137d4b20707abf0d0a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686592"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093037"
 ---
 # <a name="form-styles-and-patterns"></a>フォームのスタイルとパターン
 

@@ -3,26 +3,25 @@ title: Dynamics 365 Commerce のクラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Retail
 ms.custom: 55651
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 893aa9a337b76ff7bde34487f4d0b5b78212ef91
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 67f89afd678d46742354d41ee7a722f988724b7d
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672462"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141924"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
@@ -55,6 +54,8 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 - Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 - Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
+  > [!NOTE]
+  > リリース 10.0.17 から、Internet Explorer はサポートされなくなりました。
 - Windows 10、Windows 8.1、または Windows 7 の Chrome (公開されている最新のバージョン)
 
 ## <a name="network-requirements"></a>ネットワーク要件
@@ -126,18 +127,9 @@ Web アプリケーションは、指定されたオペレーティング シス
 - Retail hardware station は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
 - Retail hardware station は、以下のオペレーティング システムでサポートされます。
 
-    - Windows 7 Professional、Enterprise、または Ultimate エディション。
-
-        > [!NOTE]
-        > Windows 7 は、Internet Explorer 11 が手動でシステムにインストールされている場合にのみサポートされます。
-        > Windows 7 は、サポート対象のオペレーティング システムではなくなりました (上記の **重要な** メモを参照してください)。 このオペレーティング システムへのハードウェア ステーションのインストールに関して、最近の問題が検出されました。 この問題は、次の回避策が利用できるため、修正されません。 **Common-Web.ps1** ファイルで、次の 2 組の **Log-ActionItem** を削除します:
-          1. **Log-ActionItem** 'Config アプリケーション プール [...] アイドル タイムアウトを 0 にします。
-          2. **Log-ActionItem** 'Config アプリケーション プール [...] アイドル タイムアウト アクションを中断します。
-        > 上記で指定した **Log-ActionItem** と、**Set-ItemProperty** および **Log-ActionResult** に関連する次の 2 行を削除します。
-
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
     - Windows 10 Pro、Enterprise、Enterprise LTSB、および IOT Enterprise Edition。
-    - Windows Server 2012 R2 および Windows Server 2016 (現時点では Windows Server 2012 R2 は、メインストリーム サポート対象外であることに注意してください)。
+    - Windows Server 2016 および Windows Server 2019。
     - Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Retail ハードウェア ステーションおよびその他のコマースのコンポーネントの使用をお勧めしません。
 
 ### <a name="minimum-system-requirements"></a>最少システム要件
@@ -161,14 +153,9 @@ Web アプリケーションは、指定されたオペレーティング シス
 - Commerce Scale Unit は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
 - Commerce Scale Unit は、以下のオペレーティング システムでサポートされます。
 
-    - Windows 7 Professional、Enterprise、または Ultimate エディション。
-
-        > [!NOTE]
-        > Windows 7 は、Internet Explorer 11 が手動でシステムにインストールされている場合にのみサポートされます。
-
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
     - Windows 10 Pro、Enterprise、Enterprise LTSB、および IOT Enterprise Edition。
-    - Windows Server 2012 R2 および Windows Server 2016 (現時点では Windows Server 2012 R2 は、メインストリーム サポート対象外であることに注意してください)。
+    - Windows Server 2016 および Windows Server 2019。
     - Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Commerce Scale Unit およびその他のコマース コンポーネントの使用をお勧めしません。
 
 ### <a name="minimum-system-requirements"></a>最少システム要件
@@ -202,10 +189,9 @@ Web アプリケーションは、指定されたオペレーティング シス
 - どちらのコンポーネントも 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
 - 次のオペレーティング システムでは、両方のコンポーネントがサポートされています。
 
-    - Windows 7 Professional、Enterprise、または Ultimate エディション。
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
     - Windows 10 Pro、Enterprise、または Enterprise LTSB エディション。
-    - Windows Server 2012 R2 および Windows Server 2016。
+    - Windows Server 2016 および Windows Server 2019。
     - Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro でコマース コンポーネントの使用をお勧めしません。
 
 ### <a name="minimum-system-requirements"></a>最少システム要件

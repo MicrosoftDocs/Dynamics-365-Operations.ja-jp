@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
-description: このトピックでは、Lifecycle Services (LCS) の<strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Finance and Operations アプリに移行する方法について説明します。
+description: このトピックでは、コード アップグレード タイルを構成して、ソリューションを最新バージョンの Finance and Operations アプリに移行する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/01/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7bbb175a0f1dbfa2d2b83d229db28e181d64a8e1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6a4470bd84c3766dabe03eae4b494a277aa66677
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128867"
 ---
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 

@@ -1,6 +1,6 @@
 ---
 title: X++ およびデバッガーの機能
-description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。 これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。
+description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。
 author: pvillads
 manager: AnnBe
 ms.date: 11/25/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c775470e35fd49c1914783fbef6ed3b0dc9b937d
-ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
+ms.openlocfilehash: 7acacf1e475d15d54381948b467e7056c368e048
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4409517"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093457"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 

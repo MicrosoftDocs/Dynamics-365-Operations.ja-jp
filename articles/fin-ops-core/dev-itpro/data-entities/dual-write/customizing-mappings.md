@@ -1,6 +1,6 @@
 ---
-title: エンティティとフィールドのマッピングのカスタマイズ
-description: このトピックでは、エンティティとフィールド マッピングをカスタマイズする方法について説明します。
+title: テーブル マッピングと列マッピングのカスタマイズ
+description: このトピックでは、テーブル マッピングと列マッピングをカスタマイズする方法について説明します。
 author: sabinn-msft
 manager: AnnBe
 ms.date: 03/20/2020
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee1872f0ef8cb5f7cb07d11fc5cc79c05f5b1902
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e8f3b0dcfbfbf02f3b6703054153ec3727efc325
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683661"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744787"
 ---
-# <a name="customize-entity-and-field-mappings"></a>エンティティとフィールドのマッピングのカスタマイズ
+# <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
 [!include [banner](../../includes/banner.md)]
 
@@ -32,18 +32,18 @@ ms.locfileid: "4683661"
 
 
 
-すぐに使えるテーブル マップには、2 つのアプリ間のデータ フローを可能にする事前定義されたエンティティおよびフィールド マッピングがあります。 このように、それらは "青写真" として機能します。 ただし、ビジネスごとに異なるため、既定のテーブル マップでは不十分な場合があります。 したがって、二重書き込みは、テーブル マップおよびフィールド マッピングを変更する方法を提供することにより、カスタマイズを完全にサポートします。
+標準のテーブル マップには、2 つのアプリ間のデータ フローを可能にする事前定義されたテーブル マッピングおよび列マッピングがあります。 このように、それらは "青写真" として機能します。 ただし、ビジネスごとに異なるため、既定のテーブル マップでは不十分な場合があります。 したがって、二重書き込みはテーブル マップおよび列マッピングを変更する方法を提供することにより、カスタマイズを完全にサポートします。
 
-## <a name="customize-field-mappings-add-transforms-and-enable-filtering"></a>フィールド マッピングのカスタマイズ、変換の追加、およびフィルタ処理の有効化
+## <a name="customize-column-mappings-add-transforms-and-enable-filtering"></a>列マッピングのカスタマイズ、変換の追加、およびフィルタ処理の有効化
 
 1. Finance and Operations アプリの **二重書き込み** ページの **テーブル マッピング** タブで、カスタマイズするテーブル マップを選択します。
 
     > [!NOTE]
     > テーブル マッピングを変更する前に、停止する (実行しない) 必要があります。 そうしないと、変更は保存されません。
 
-2. **テーブル マッピング** タブで、Finance and Operations アプリまたは Dataverse から新しいフィールドまたはカスタム フィールドを選択して、フィールドをカスタマイズできます。
+2. **テーブル マッピング** タブで、Finance and Operations アプリまたは Dataverse から新しい列またはカスタム列を選択して、フィールドをカスタマイズできます。
 
-    ![フィールドのカスタマイズ](media/customize-a-field.png)
+    ![列のカスタマイズ](media/customize-a-field.png)
 
 3. 同期の方向 (単一方向または双方向) をカスタマイズし、マップの種類を選択して変換を追加できます。
 
@@ -53,27 +53,27 @@ ms.locfileid: "4683661"
 
     | 記号 | 説明 |
     |---|---|
-    | ![等号](media/equal-symbol.png) | 双方向のフィールド割り当て |
-    | ![大なり/小なり記号](media/greater-less-symbol.png) | 変換を使用する双方向フィールド割り当て |
-    | ![大なり記号](media/greater-than-symbol.png) | 単一方向フィールド割り当て (左から右) |
-    | ![小なり記号](media/less-than-symbol.png) | 単一方向フィールド割り当て (右から左) |
-    | ![右矢印キー](media/right-arrow-symbol.png) | 変換を使用する単一方向フィールド割り当て (左から右) |
-    | ![左矢印キー](media/left-arrow-symbol.png) | 変換を使用する単一方向フィールド割り当て (右から左) |
+    | ![等号](media/equal-symbol.png) | 双方向の列の割り当て |
+    | ![大なり/小なり記号](media/greater-less-symbol.png) | 変換を使用する双方向の列の割り当て |
+    | ![大なり記号](media/greater-than-symbol.png) | 単一方向の列の割り当て (左から右) |
+    | ![小なり記号](media/less-than-symbol.png) | 単一方向の列の割り当て (右から左) |
+    | ![右矢印キー](media/right-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (左から右) |
+    | ![左矢印キー](media/left-arrow-symbol.png) | 変換を使用する単一方向の列の割り当て (右から左) |
 
     次の表で、使用可能な変換のタイプについて説明します。
 
     | 変換のタイプ | 説明 |
     |---|---|
-    | 既定 | 既定値は、ソース フィールド値が使用できない場合に、宛先フィールドに適用される値です。 対応するソース フィールドがない場合に、宛先エンティティで必要なフィールドには既定値を使用します。 |
-    | 値のマップ | 値マップでは、あるエンティティに存在する値を他のエンティティの値にマップする方法を定義します。 |
+    | 既定 | 既定値は、ソース列値が使用できない場合に、出力先の列に適用される値です。 対応するソース列がない場合に、出力先テーブルで必要な列には既定値を使用します。 |
+    | 値のマップ | 値マップでは、あるテーブルに存在する値を他のテーブルの値にマップする方法を定義します。 |
 
-4. 新しいフィールドを追加するには、**マッピングの追加** を選択し、リストの既存のフィールドまたはカスタム フィールドを選択します。
+4. 新しい列を追加するには、**マッピングの追加** を選択し、リストの既存の列またはカスタム列を選択します。
 
-    次の図は、新しい **生年月日** フィールドを追加する例を示しています。
+    次の図は、新しい **生年月日** の列を追加する例を示しています。
 
-    ![新しい生年月日フィールドの追加](media/add-new-field.png)
+    ![新しい生年月日の列の追加](media/add-new-field.png)
 
-5. フィールド マッピングのカスタマイズが完了したら **保存** を選択します。 次に、プロンプトに従って、パブリッシャーとバージョン番号を指定します。
+5. 列マッピングのカスタマイズが完了したら **保存** を選択します。 次に、プロンプトに従って、パブリッシャーとバージョン番号を指定します。
 
     ![パブリッシャーとバージョン番号の指定](media/choose-publisher-version.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "4683661"
 
     クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
     
-    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 エンティティのフィールドに対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
+    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
     
 ## <a name="add-new-table-maps"></a>新しいテーブル マップの追加
 

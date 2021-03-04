@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 39531cfc4d50dc2bdd1618a91435b0e7d014ea16
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ed9117fa091b8fac687ca9f93f4152a023288d11
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528413"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993565"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -52,7 +51,7 @@ Dynamics 365 Commerce、 Dynamics 365 Supply Chain Management、 Dynamics 365 Fi
 
 ### <a name="unified-data"></a>統合されたデータ
 
-Dynamics 365 Commerce は、[Common Data Service](https://powerapps.microsoft.com/common-data-service/) と [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 標準で統合しており、統合されたデータソリューションを提供します。 Dynamics 365 Sales や Dynamics 365 Marketing などの Dynamics 365 の業務アプリケーション間の統合やデータ共有は、共有された Common Data Service を介してサポートされています。 Data Lake Storage のトランザクショ データは、Dynamics 365 Commerce ソリューションのさまざまな分析や把握のシナリオに対応するために使用されます。 ただし、任意のサードパーティ製ソフトウェアの統合でも使用できます。
+Dynamics 365 Commerce は、[Dataverse](https://powerplatform.microsoft.com/dataverse/) と [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 標準で統合しており、統合されたデータソリューションを提供します。 Dynamics 365 Sales や Dynamics 365 Marketing などの Dynamics 365 の業務アプリケーション間の統合やデータ共有は、Dataverse を介してサポートされています。 Data Lake Storage のトランザクショ データは、Dynamics 365 Commerce ソリューションのさまざまな分析や把握のシナリオに対応するために使用されます。 ただし、任意のサードパーティ製ソフトウェアの統合でも使用できます。
 
 ### <a name="powered-by-ai-and-analytics"></a>AI と Analytics を搭載
 
@@ -166,9 +165,9 @@ Dynamics 365 Commerce のパッケージ化された企業管理型コマース�
 
 自身の Azure Data Lake Storage アカウントを持っている顧客は、バックオフィス業務の構造化されたビジネスデータや、E コマース のクリック ストリームデータを活用することができます。 このデータは、製品の推奨、顧客の分析情報、コマース分析などのインテリジェンス サービスに戻され、顧客中心の業務プロセスやユーザー エクスペリエンスを強化します。 これらの業務プロセスとユーザー エクスペリエンスは、 Dynamics 365 Commerce 本部、POS、E コマースのウェブサイトに再び組み込むことができます。 詳細については、[エンティティストアを Data Lake として利用する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake) を参照してください。
 
-#### <a name="common-data-service"></a>Common Data Service
+#### <a name="dataverse"></a>Dataverse
 
-Common Data Service は、すべての業務アプリケーションのデータを統合する統合データ ストアです。 Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Commerce などの Dynamics 365 アプリケーションは Common Data Service を使って業務データを保存しています。 そのため、Common Data Service は業務横断的なアプリケーション シナリオを可能にし、Power Apps や Power Automate を介して新たなシナリオを強化することができます。 詳細については、 [Common Data Service の概要](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) を参照してください。
+Dataverse は、すべての業務アプリケーションのデータを統合する統合データ ストアです。 Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Commerce などの Dynamics 365 アプリケーションは Dataverse を使って業務データを保存しています。 そのため、Dataverse は業務横断的なアプリケーション シナリオを可能にし、Power Apps や Power Automate を介して新たなシナリオを強化することができます。 詳細については、[Microsoft Dataverse とは?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -176,7 +175,7 @@ Common Data Service は、すべての業務アプリケーションのデータ
 
 [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 
-[Common Data Service](https://powerapps.microsoft.com/common-data-service/)
+[Dataverse](https://powerplatform.microsoft.com/dataverse/)
 
 [Modern POS (MPOS) アーキテクチャ](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture)
 

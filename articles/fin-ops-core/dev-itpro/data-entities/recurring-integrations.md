@@ -1,6 +1,6 @@
 ---
 title: 定期統合
-description: このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。
+description: このトピックでは、データ移行のプロセスや、エンタープライズ システムの内外への移動など、定期的な統合について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/12/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1223870603885ce82ffc9d7a52317e04667a9c67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4113d01228c322c292972491f0479dc08160657e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127666"
 ---
 # <a name="recurring-integrations"></a>定期統合
 

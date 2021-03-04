@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - アップグレード後のタスク
-description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Finance and Operations アプリで実行する必要があるタスクについて説明します。
+description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に実行する必要があるタスクについて説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 11/12/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f996ee91abe3ad4d35253d2a6e8fd359611d9c5f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 770b7660027e77d6b320adf8c48e12b36343bb05
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129639"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 

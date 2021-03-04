@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 19a0217f93ec361efb27a61cc85203d04d6d20c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6c0b02fc3b33959709ddda910a781a11642ef3cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408665"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970143"
 ---
 # <a name="apply-multiple-retail-discounts-to-a-product"></a>製品に対する複数の小売割引の適用
 

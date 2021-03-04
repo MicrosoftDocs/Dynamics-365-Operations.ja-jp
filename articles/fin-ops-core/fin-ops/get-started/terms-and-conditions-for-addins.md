@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 99df913fe883ecb9ef32a551c82770b6f6a860cb
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 53477117e9b5cc6a2b7cfe46b4bc4203e55bfd90
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693655"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798139"
 ---
 # <a name="terms-and-conditions-for-add-ins-to-microsoft-dynamics-365-supply-chain-management"></a>Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件
 

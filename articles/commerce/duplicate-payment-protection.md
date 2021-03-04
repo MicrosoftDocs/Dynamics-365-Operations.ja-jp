@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 161d24480f4d970153e82b4e07f324669c216f65
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 8e2beeeb72200c533d672d653a4d9b03539f6b13
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4409584"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010234"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 

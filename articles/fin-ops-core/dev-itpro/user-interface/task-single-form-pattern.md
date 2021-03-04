@@ -1,6 +1,6 @@
 ---
 title: タスク シングルのフォーム パターン
-description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
+description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0d6be915848d955ce1c7d03f67ef562fed00608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6c1038e9ba27af93087d3fee8feaa764e08c8bcf
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685001"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094193"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 

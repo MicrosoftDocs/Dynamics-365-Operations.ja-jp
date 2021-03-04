@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0c2fd15c3198e4c7a66b4a577cd8687920cedcdb
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c9c0615832fa61f6ce2b3ca96c78ced17ae8014f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693681"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797247"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) の新機能と変更点
 
@@ -942,7 +942,7 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 
 キャッシュ統合機能の見込顧客は、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise Edition 間で最初の関係者の統合を配送します。
 
-このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Common Data Service (CDS) を介してそれらを接続します。 データは Finance and Operationsと Dynamics 365 for Sales との間をシームレスに流れていますが、ユーザーは Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文処理を扱うことができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
+このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Dataverse を介してそれらを接続します。 データは Finance and Operationsと Dynamics 365 for Sales との間をシームレスに流れていますが、ユーザーは Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文処理を扱うことができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
 
 - Dynamics 365 for Sales でアカウントを管理し、ユーザーとして Finance and Operations に同期させます。
 - Dynamics 365 for Sales の連絡先を管理し、Finance and Operations と同期します。
@@ -951,9 +951,9 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 - Finance and Operations で販売注文を作成し、Dynamics 365 for Sales と同期します。
 - Finance and Operations で請求書を作成し、Dynamics 365 for Sales と同期します。
 
-**Common Data Service の機能を使用してデータへ簡単にアクセス**
+**Dataverse の機能を使用してデータへ簡単にアクセス**
 
-このソリューションは Azure Public Cloud の力を活用し、組み合わせたデータは Common Data Service を介して利用可能になります。 これにより、ビジネス ユーザーは、Power Apps、Power BI を使用して統一された Sales and Operations データにアクセスし、視覚化し、共有し、変更したり、さまざまなビジネス プロセスにあらかじめ定義されたテンプレートを使用してフローを使用してワークフローの自動化を作成できます。 これにより、Power BI ダッシュボードを使用すると、2 つのシステム間でビジネス プロセス情報をより正確に把握できるようになります。
+このソリューションは Azure Public Cloud の力を活用し、組み合わせたデータは Dataverse を介して利用可能になります。 これにより、ビジネス ユーザーは、Power Apps、Power BI を使用して統一された Sales and Operations データにアクセスし、視覚化し、共有し、変更したり、さまざまなビジネス プロセスにあらかじめ定義されたテンプレートを使用してフローを使用してワークフローの自動化を作成できます。 これにより、Power BI ダッシュボードを使用すると、2 つのシステム間でビジネス プロセス情報をより正確に把握できるようになります。
 
 **迅速な実装**
 

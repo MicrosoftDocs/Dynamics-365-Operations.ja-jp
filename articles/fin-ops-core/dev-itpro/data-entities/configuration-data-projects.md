@@ -1,6 +1,6 @@
 ---
 title: コンフィギュレーション データ プロジェクト
-description: このトピックでは、構成データ プロジェクトと構成データ テンプレートの概要、およびそれらを使用してアプリケーションのインスタンス間で会社の構成データを移動するプロセスの概要を示します。
+description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートについて説明します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: a2fc5d5254fb5899f768339a4b205368093751ac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d513c71e5135804a42f68a5b73dabc070954230e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129292"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 

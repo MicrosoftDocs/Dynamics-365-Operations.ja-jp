@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 720ffe718fd95d6f7f9ba046ecb3b15ed739ac02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 898feb5aca81729328bdbd11f0c10960946a1451
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409460"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983636"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>IoT ハブ メッセージのスキーマ形式
 

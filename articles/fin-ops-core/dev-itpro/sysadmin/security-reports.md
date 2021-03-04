@@ -1,6 +1,6 @@
 ---
 title: 最初から用意されているセキュリティ レポート
-description: このトピックでは、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートについて説明します。
+description: このトピックでは、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられているユーザーを理解するのに役立つセキュリティ レポートについて説明します。
 author: peakerbl
 manager: AnnBe
 ms.date: 08/14/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 00ad5b78447ed61462e138759fcb9f22bb1344b7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b0c6e159f526c87ba751d72005bb090a6a7cd1ad
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128224"
 ---
 # <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 

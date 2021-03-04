@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 2576d610d8c83c8161f670631d23e437fd80ca82
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a4746d25283785041b3ea8eb77f424df1b06cca6
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693687"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798160"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件 
 

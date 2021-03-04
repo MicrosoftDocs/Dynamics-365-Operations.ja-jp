@@ -1,6 +1,6 @@
 ---
-title: 開発と継続的な配信のよく寄せられる質問
-description: このトピックでは、ISV やパートナーによってよく寄せられる質問、特に、開発、テスト、デリバリー、およびライフサイクル管理に関するガイドラインについて、その回答をまとめています。
+title: 開発と継続的デリバリーに関するよく寄せられる質問
+description: このトピックでは、ISV やパートナーによってよく寄せられる質問、特に、開発、テスト、デリバリー、およびライフサイクル管理に関する質問に回答します。
 author: RobinARH
 manager: AnnBe
 ms.date: 01/21/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: f38d09e247ca0a1123b082eeb229c770d3c98a9f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d70457870431c0a57d703911c508375a957a5831
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409384"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093373"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 

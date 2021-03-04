@@ -3,7 +3,7 @@ title: 実装ライフサイクル管理ホーム ページ
 description: これらのトピックでは、Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 02/09/2018
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 18413ed8f24f7482e32a755b16dbe534e0900e9e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 260e3b9f93e1aacefcaac1d32d1047029c31fa96
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694403"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4822945"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
@@ -29,7 +29,7 @@ ms.locfileid: "4694403"
 
 ## <a name="programs"></a>プログラム
 
-[Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md)
+[Microsoft FastTrack](https://aka.ms/D365FastTrackDocs)
 
 ## <a name="tools"></a>ツール
 

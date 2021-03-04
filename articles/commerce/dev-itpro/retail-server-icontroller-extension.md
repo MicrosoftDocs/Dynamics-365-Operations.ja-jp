@@ -1,5 +1,5 @@
 ---
-title: 新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
+title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 4cec65cc9d9d25a42e8a697d187f7bbf61e70eb9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9912b1f19469d6f8735abc308ccf3c58d4e25794
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5126680"
 ---
-# <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
+# <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,11 +54,11 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
 ## <a name="create-a-new-retail-server-api"></a>新しい Retail Server API の作成
 
 1. CRT 拡張機能を作成します。 Retail Server 拡張機能を作成する前に、CRT 拡張機能を作成します。 Retail Server API には、パラメーターで CRT を呼び出すロジック以外のロジックはありません。
-2. Microsoft .NET Framework バージョン 4.6.1 を使用する新しい C# クラス ライブラリ プロジェクトを作成するか、または Retail SDK 内の Retail Server のひとつをテンプレートとして使用します。
+2. Microsoft .NET フレームワーク バージョン netstandard 2.0 をターゲット フレームワークとして使用する、新しい C# クラス ライブラリ プロジェクトを作成します。 または、Retail SDK に含まれている Retail Server のサンプルのいずれかをテンプレートとして使用します。
 3. Retail Server 拡張機能プロジェクトで、CRT 拡張機能ライブラリまたはプロジェクトへの参照を追加します。 この参照を使用して、CRT 要求、応答およびエンティティを呼び出すことができます。
 4. Retail Server 拡張機能プロジェクトで、NuGet パッケージ マネージャーを使用して、**Microsoft.Dynamics.Commerce.Hosting.Contracts** パッケージを追加します。 NuGet パッケージは、**RetailSDK\\pkgs** フォルダにあります。
-5. 新しいコントローラー クラスを作成し、**IController** からクラスを拡張します。 このコントローラー クラスには、Retail Server API が公開する必要のあるメソッドが含まれています。
-6. コントローラー クラス内で、CRT 要求を呼び出すメソッドを追加します。 新しいコントローラー クラスを、**CustomerController** や **ProductController** などの既存のコントローラー クラスから拡張しないでください。 拡張クラスでは、**IController** クラスのみを拡張する必要があります。
+5. 新しい公開コントローラー クラスを作成し、**IController** からクラスを拡張します。 このコントローラー クラスには、Retail Server API が公開する必要のあるメソッドが含まれているので、コントローラー クラスは公開である必要があります。
+6. コントローラー クラス内で、CRT 要求を呼び出すメソッドを追加します。 新しいコントローラー クラスを、**CustomerController**、**SalesOrdersController**、または **ProductController** などの既存のコントローラー クラスから拡張しないでください。 拡張クラスでは、**IController** クラスのみを拡張する必要があります。
 7. コントローラー クラス (コントローラー クラス名) 上で **RoutePrefix** 属性を追加します。
 
     ```csharp

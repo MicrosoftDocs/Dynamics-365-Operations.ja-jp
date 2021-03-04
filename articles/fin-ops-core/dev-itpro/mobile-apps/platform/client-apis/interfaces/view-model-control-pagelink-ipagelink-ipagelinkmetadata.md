@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4a4ba1b67cec1062cad4f9dcb8de3c24f15e0023
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: 71d091104f5b6804fadfa9d41c7b06e02148132d
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4659519"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154265"
 ---
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 
@@ -53,7 +53,7 @@ Pagelink メタデータ タイプ。
 * [ShowCount](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#showcount)
 * [スタイル](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#style)
 * [ターゲット](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#target)
-* [[タイプ](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)]
+* [タイプ](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)
 * [UseDataContext](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#usedatacontext)
 
 ### <a name="events"></a>イベント
@@ -129,7 +129,7 @@ HelpText: 文字列 (オプション)
 アイコン: string (オプション)
 
 ページ リンク コントロールに表示されるアイコンの名前。
-次に [利用可能なアイコンの一覧](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont) を示します。
+次に [利用可能なアイコンの一覧](https://docs.microsoft.com/dynamics/s-e/) を示します。
 
 ### <a name="iconsize"></a>IconSize
 

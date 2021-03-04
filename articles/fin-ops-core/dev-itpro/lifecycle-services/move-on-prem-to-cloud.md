@@ -3,7 +3,7 @@ title: LCS 実装プロジェクトをオンプレミスからクラウドに移
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境をクラウドに移行する方法について説明します。
 author: MartinWalkerDynSA
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 47d2bbff0510aa0e835d46e4d0e0c41f1b9b77a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fe7ebf111e469c503bcd4a1452a803169e96518b
+ms.sourcegitcommit: 8657493a17790364dfcfd02eebea7f8739524e36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687910"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5109675"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 
@@ -50,7 +50,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
 
 1. 階層 2 環境を展開します。
 2. オンプレミスの運用環境 (または、必要に応じて、前のセクションで説明したクラウド統合開発ブランチからの現在のビルド) に適用されるのと同じコード パッケージを適用します。 このコード パッケージは、独立系ソフトウェア ベンダー (ISV) のソリューションとライセンスを含む単一の完全な展開可能なパッケージである必要があります。
-3. SQL Server Management Studio (SSMS) では、サンドボックス データベースに対して次の Transact-SQL (T-SQL) コマンドを実行し、現在の管理者アカウントと Azure AD テナント ID 情報をそのデータベースに保持します。 結果を保存します。
+3. SQL Server Management Studio (SSMS) では、サンドボックス データベースに対して次の Transact-SQL (T-SQL) コマンドを実行し、現在の管理者アカウントと Azure AD テナント ID 情報、およびデータ管理フレームワーク (DMF) 共有作業ディレクトリをそのデータベースに保持します。 結果を保存します。
 
     ```sql
     SELECT SID,NETWORKALIAS,NETWORKDOMAIN,IDENTITYPROVIDER from USERINFO WHERE ID = 'Admin'
@@ -59,6 +59,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
     SELECT TENANTID from PROVISIONINGMESSAGETABLE
     SELECT TENANTID from B2BINVITATIONCONFIG
     SELECT TENANTID from RETAILSHAREDPARAMETER
+    SELECT SHAREDFOLDERPATH from DMFPARAMETERS
     ```
 
 4. データベースをオンプレミスからオンラインにコピーします。 使用するエクスポートとインポートのプロセスは、[ゴールデン構成プロモーション](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig) データベースの移動チュートリアルで説明されているプロセスと同じです。 ただし、この場合、ソース データベースは既存のオンプレミスの実稼動 SQL データベースであり、開発環境にインポートするために説明されている sqlpackage.exe アプローチを使用する必要があります。 代わりに、LCS セルフ サービス データベース インポート オプションを使用する場合は、クリーンアップされるデータ要素に関する警告に記載されているように、一部のデータがインポートされません。 次のコードに示されているプレースホルダーの代わりに、LCS 環境の詳細で使用可能なターゲット データベース情報を使用する必要があります。
@@ -67,7 +68,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
     SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
     ```
 
-5. 管理者アカウントと Azure AD テナント ID の情報を復元します。 また、**SF** スキーマとそのテーブルが存在する場合は削除します。
+5. 管理者アカウント、Azure AD テナント ID、および、DMF 共有ディレクトリの値を復元します。 また、**SF** スキーマとそのテーブルが存在する場合は削除します。
 
     ```sql
     UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
@@ -76,6 +77,7 @@ LCS クラウドの実装プロジェクトが作成されたら、完全に構�
     UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
     UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserved TENANTID>'
     UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserved TENANTID>'
+    UPDATE DMFPARAMETERS SET SHAREDFOLDERPATH='<preserved SHAREDFOLDERPATH>'
     DROP TABLE IF EXISTS SYNCLOG
     DROP TABLE IF EXISTS SYNCLOCK
     DROP SCHEMA IF EXISTS SF

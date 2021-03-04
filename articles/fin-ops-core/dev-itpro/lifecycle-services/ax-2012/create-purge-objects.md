@@ -1,6 +1,6 @@
 ---
 title: Intelligent Data Management Framework の削除オブジェクトの作成
-description: このトピックでは、Microsoft Dynamics AX のアプリケーション テーブル間で階層関係ツリーを定義する IDMF パージ オブジェクトを作成する方法について説明します。
+description: このトピックでは、Microsoft Dynamics AX のアプリケーション テーブル間で階層関係を定義する IDMF パージ オブジェクトを作成する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: e27f7ec2eed8eae21820f2704ed69ecc927c90fd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d7c954e17b2767bbb56a409eaab46b76c8d49341
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129323"
 ---
 # <a name="create-purge-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework の削除オブジェクトの作成
 

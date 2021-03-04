@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58df620223755996e5c7bd857bad466134dacd2a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4a8ebe8f06d94452e5d967db9907977b8eece420
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683486"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4822177"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
@@ -42,9 +42,9 @@ ms.locfileid: "4683486"
 
     ![環境ページを選択する](media/data-service-environment.png)
 
-5. リーガル テーブルを選択して、**次へ** を選択します。
+5. 法人を選択して、**次へ** を選択します。
 
-    ![リーガル テーブルの選択手順](media/select-legal-entities.png)
+    ![法人の選択手順](media/select-legal-entities.png)
 
     正常性チェックを実行し、システムが二重書き込みを有効にするための要件を満たしていることを確認します。 正常性チェックでは、すべての前提条件が完了していることも確認します。 いずれかの正常性チェックが失敗した場合は、次の手順に進む前に、すべての前提条件を完了していることを確認してください。
 

@@ -1,6 +1,6 @@
 ---
 title: 右から左へ読み書きする言語のサポートと双方向のテキスト
-description: 右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 このトピックでは、双方向テキストの問題とその処理方法について説明します。
+description: このトピックでは、双方向テキストの問題とその処理方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998e2f5b77d2ba4bfb8184f326c99492df807bd1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b3178a52293adeaf34f76958fca1eea0ac59f87
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682463"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094172"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 

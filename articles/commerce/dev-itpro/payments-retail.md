@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b5a9b519a5c2e0b880847e8972a8b1701392acc2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2c8edac83d1d350552fd5dc7c2fb54e4d7a5db22
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681556"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878645"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -36,13 +36,17 @@ ms.locfileid: "4681556"
 - 受諾ページを使用して、POS 現金払い返品を処理します。
 - 受諾ページを使用して、POS 現金払い返品を処理します。
 - 受諾ページを使用して POS 顧客注文を処理します。
-- Microsoft Dynamics AX 2012 Retail ハードウェア ステーションを使用して、POS 現金払いトランザクションを処理します。
+- Microsoft Dynamics Commerce Retail ハードウェア ステーションを使用して、POS 現金払いトランザクションを処理します。
 - ハードウェア ステーションを使用して、POS 現金払い返品を処理します。
 - ハードウェア ステーションを使用して POS 顧客注文を処理します。
+- オンラインで購入し、店舗で受け取ります。
+- コール センターで購入し、店舗で受け取ります。
 
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
 
 - Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+- PayPal はオンライン購買でサポートされます。 対応している地域の一覧については、[PayPal 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/commerce/paypal) を参照してください。
+- **TestConnector** は、ユーザー受け入れテスト (UAT) または運用 (prod) ではサポートされていません。 **TestConnector** は、サンドボックスおよび開発のみで使用することができ、サンプル専用です。 
 - Mastercard Simplify は新しい顧客に対しては対応していません。
 
 ## <a name="what-is-a-payment-connector-and-in-what-cases-do-i-need-to-deploy-and-implement-a-payment-connector"></a>支払コネクタとは何ですか、またどのような場合に支払コネクタの配置と実装が必要ですか ?

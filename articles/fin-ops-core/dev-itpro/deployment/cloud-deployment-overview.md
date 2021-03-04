@@ -1,9 +1,9 @@
 ---
 title: クラウド展開の概要
-description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Finance and Operations アプリで管理する必要があるデータおよびカスタマイズについて説明します。
+description: このトピックでは、クラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および管理する必要があるデータとカスタマイズについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: b8181fff0a848b3a021b77d511ad82d08f64276c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 030020d0ed2127c3bbc24a78cf26ebd48214d7fe
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130773"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -131,11 +131,11 @@ Finance and Operations アプリの保証稼働時間は 99.9% です。 計画�
 
 ### <a name="disaster-recovery-features"></a>障害復旧の機能
 実稼動環境は、以下のものを含む Azure 障害復旧サポートで構成されます。
-- プライマリ データベースの Azure SQL アクティブ geo レプリケーション、復旧ポイント見積 (RPO) は < 5 秒です。 詳細については、[geo レプリケーションとフェールオーバー グループの比較](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
+- Azure SQL のアクティブ geo レプリケーションは、実稼働環境の Finance and Operations データベースに対して構成されています。 SQL レプリケーションの詳細については、[geo レプリケーションとフェールオーバー グループの比較](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
 - 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[Azure 冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy) を参照してください。
 - Azure SQL および Azure ブログ記憶域レプリケーションの同じセカンダリ地域。  
 
-プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部のアプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を 5 秒に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/) を参照してください。
+プライマリのデータ格納場所のみレプリケーションがサポートされます。 Financial Reporting サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および Finance and Operations サービスの開始後に生成する必要があります。 
 
 ## <a name="service-availability-in-azure-regions"></a>Azure リージョンにおけるサービスの可用性
 Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。

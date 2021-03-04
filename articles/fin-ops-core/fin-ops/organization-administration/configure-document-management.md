@@ -1,7 +1,7 @@
 ---
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
@@ -11,20 +11,19 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c0cdac7ede45b453abbd8b2b2bc82905eca7763a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ad3887705f019a2f8c84b24060e044f2c3412bf6
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692906"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141890"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
 

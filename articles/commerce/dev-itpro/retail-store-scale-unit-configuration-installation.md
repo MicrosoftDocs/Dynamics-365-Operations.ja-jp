@@ -3,7 +3,7 @@ title: Commerce Scale Unit のコンフィギュレーションとインスト�
 description: このトピックでは、セルフ サービスを使用して、Commerce Headquarters で Commerce Scale Unit (自己ホスト) を構成し、ダウンロードして、従来型の店舗の 1 台以上のコンピューターにインストールする方法について説明します。
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 09dca5f6050b0e96727b8cd33bfc7bcd806760f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4be87d40daf5331be910fe9ce676a2161f9c9af3
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687555"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141918"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
@@ -403,11 +403,12 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 確認する項目のチェックリストを次に示します。
 
-1. Commerce の **Commerce 共有パラメーター** ページで、適切なクライアント ID が **依存する関係者** クイック タブに追加されていることを確認します。 また、正しい `https://retailstorescaleunit.retailserver.com` エントリが **サーバー リソース ID** クイック タブに追加されていることを確認します。
-2. Commerce で、各店舗に生成されたすべてのクライアント ID が **Azure Active Directory アプリケーション** ページに存在することを確認します。
-3. Commerce の **チャネル プロファイル** ページで、URL が正しいことを確認します。 (つまり、各 URL のコンピュータ名が正しいこと、URL が正しく書式設定されていることなどを確認します。)
-4. Commerce の **チャネル データベース** ページで、新しいチャネル データベースに完全同期が正しく発生したことを確認します。
-5. 新しいチャネル データベースを使用するように店舗が正しく構成されていることを確認します。
+1. 構成ファイルを開き、指定された Retail サーバーの URLに接尾語 **/Commerce** が含まれていて、使用しているコンピューター名とポートに対して期待されている値に基づいて正しく形成されていることを確認します。  URL 内または末尾にスラッシュ (**/** 文字) が含められていないか確認します。
+2. Commerce の **Commerce 共有パラメーター** ページで、適切なクライアント ID が **依存する関係者** クイック タブに追加されていることを確認します。 また、正しい `https://retailstorescaleunit.retailserver.com` エントリが **サーバー リソース ID** クイック タブに追加されていることを確認します。
+3. Commerce で、各店舗に生成されたすべてのクライアント ID が **Azure Active Directory アプリケーション** ページに存在することを確認します。
+4. Commerce の **チャネル プロファイル** ページで、URL が正しいことを確認します。 これを行うには、各 URL のコンピューター名が正しいこと、URL が正しく書式設定されていることなどを確認します。
+5. Commerce の **チャネル データベース** ページで、新しいチャネル データベースに完全同期が正しく発生したことを確認します。
+6. 新しいチャネル データベースを使用するように店舗が正しく構成されていることを確認します。
 
 Retail Server が一定時間の後に停止した場合、確認すべき 2 つの簡単なことがあります。
 

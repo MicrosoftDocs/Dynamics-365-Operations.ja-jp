@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6759a9b8b40ba6f4f91512377c2447ac7473174
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0251b6fffe4cdae8682f2d919fdf94da9f69d661
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685077"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744651"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>Finance and Operations アプリの開発と管理
 
@@ -67,7 +67,7 @@ Finance and Operations のモバイル アプリは、組織の業務プロセ�
 + IT 管理者または開発者は、ビジネス ロジック拡張フレームワークを使用してワークスペースのオフライン機能を必要に応じて最適化できます。 デバイスがオフラインの間もデータは引き続き処理されるため、デバイスが常時ネットワーク接続していなくても、モバイル シナリオは豊富で流動的なままです。 
 
 ## <a name="data-management-and-data-entities"></a>データ管理とデータ エンティティ
-Finance and Operations からのデータは、Common Data Service、Power Apps、および Power BI を使用して、Microsoft のデータ ソースおよび Microsoft 以外のデータ ソースと簡単に統合することができます。 詳細については、 [データ エンティティの概要](data-entities/data-entities.md) を参照してください。
+Finance and Operations からのデータは、Dataverse、Power Apps、および Power BI を使用して、Microsoft のデータ ソースおよび Microsoft 以外のデータ ソースと簡単に統合することができます。 詳細については、 [データ エンティティの概要](data-entities/data-entities.md) を参照してください。
 
 ## <a name="office-integration"></a>Office 統合
 Microsoft Office の統合機能は、生産的環境を提供し、Office 製品を使用して作業を遂行するユーザーを支援します。 詳細については、 [Office 統合の概要](office-integration/office-integration.md) を参照してください。

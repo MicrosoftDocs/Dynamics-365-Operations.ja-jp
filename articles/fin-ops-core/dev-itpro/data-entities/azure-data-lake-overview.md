@@ -1,6 +1,6 @@
 ---
 title: Azure Data Lake の概要
-description: このトピックでは、Microsoft Azure Data Lake の概要を説明します。 Data Lake は、Azure cloud で大きなデータの分析および人工知能 (AI) を利用できるように設計された技術です。
+description: このトピックでは、Microsoft Azure Data Lake の概要を説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/27/2020
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 2469c09169d299b434e9cc105df40cf2f47abaa1
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: ddd82ddf2e494128c8db5ffcafed63f4c6746a61
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4656791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128661"
 ---
 # <a name="azure-data-lake-overview"></a>Azure Data Lake の概要
 
@@ -102,10 +102,10 @@ Data Lake の共通データモデルに関する詳細については、 [共�
 - 共通データモデルのフォルダを、参照データフローとして Power BI データフローに関連付けることができます。 Power BI データフローを使用してデータの再構築や Power BI のデータセットとレポートを作成することができます。
 - データ ファクトリーまたはその他のデータ変換ツールを使用して、データの構造をさらに強化することができます。
 
-Finance and Operations アプリと同様に、他のサービス（Common Data Service を含む）、Azure IoT、多くのサードパーティ製ツールやサービスは、共通データモデルフォルダ内のデータを理解して作業することができます。 サービスの一覧は増えています。 次にいくつか例を挙げます。
+Finance and Operations アプリと同様に、他のサービス（Dataverse を含む）、Azure IoT、多くのサードパーティ製ツールやサービスは、共通データモデルフォルダ内のデータを理解して作業することができます。 サービスの一覧は増えています。 次にいくつか例を挙げます。
 
-- Common Data Service データを自分の Data Lake にエクスポートできます。 詳細については、[Azure Data Lake に CDS データをエクスポートする](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/)を参照してください。
-- パワーユーザーは、Common Data Service データフローを使用して Data Lake のデータを変換できます。 詳細については、[共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](https://docs.microsoft.com/common-data-model/data-lake)を参照してください。
+- Dataverse データを自分の Data Lake にエクスポートできます。 詳細については、[Dataverse データを Azure Data Lake にエクスポートすることは一般的に利用可能です](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) を参照してください。
+- パワーユーザーは、Dataverse データフローを使用して Data Lake のデータを変換できます。 詳細については、[共通データモデルを使用して Azure Data Lake Storage Gen2 を最適化する](https://docs.microsoft.com/common-data-model/data-lake)を参照してください。
 
 ## <a name="how-you-can-use-data-lake-later-if-youre-currently-using-byod"></a>現在 BYOD を使用している場合に、後から Data Lake を使用する方法
 

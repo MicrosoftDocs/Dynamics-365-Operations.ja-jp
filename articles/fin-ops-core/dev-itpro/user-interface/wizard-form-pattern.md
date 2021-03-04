@@ -1,6 +1,6 @@
 ---
 title: ウィザードのフォーム パターン
-description: この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。
+description: この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、ユーザーがタスクを実行するためのユーザー アシスタンス フォームです。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bed7bad0033906bdd455ed0990cb4adb0e07637
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: db0b5a24aed387ff8eb765947fccd75c39d7f05d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684991"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094181"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 

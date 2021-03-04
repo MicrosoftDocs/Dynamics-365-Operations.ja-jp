@@ -3,7 +3,7 @@ title: Power BI Desktop を使用した分析レポートの作成
 description: このトピックでは、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。
 author: MilindaV2
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: adc49c684624ab7e0266da2d85eff0ec1eea4da6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5809cf5ad0422939fe68ab97f0e8782b4d6769e4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093096"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -38,7 +38,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 > [!NOTE]
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
-> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [Power BI Desktop の前の月次更新](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive) で Power BI Desktop の2020 年 9 月の更新プログラムをダウンロードします。
+> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [Power BI Desktop の前の月次更新](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive#power-bi-desktop-monthly-update-video-3) で Power BI Desktop の 2020 年 8 月の更新プログラムをダウンロードします。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 

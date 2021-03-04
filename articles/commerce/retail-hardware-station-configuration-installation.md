@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailHardwareStation
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 27161
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9daa573fcccfdff8f6ef94ca39246d8098c70828
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9013b5943a135be8a446e0bd2b1d54d8345d7d8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408637"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979634"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 
@@ -67,7 +66,7 @@ ms.locfileid: "4408637"
 
 ### <a name="download-the-retail-hardware-station-installer"></a>Retail ハードウェア ステーション インストーラーをダウンロード
 
-1. Azure AD 証明書を使用して、小売用バックオフィスまたは Retail トライアル版にサインインします。
+1. Azure AD 資格情報を使用して、Retail Headquarters または Retail トライアル版にサインインします。
 2. **ようこそ** ページで、左上隅のメニューを使用して、**小売** &gt; **チャンネル** &gt; **小売店舗** &gt; **すべての小売店舗** に移動します。
 3. **すべての小売店舗** ページで、目的の店舗の小売チャネル ID を選択します。 店舗の詳細ビューが表示されます。
 
@@ -131,7 +130,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
     
     > - バージョン 10.0.6 以降では、Install マーチャント情報ツールは使用されなくなりました。 代わりに、ハードウェア ステーションのマーチャント情報は、ログオン時またはハードウェア ステーションが有効になったときに POS によって設定されます。 ハードウェア ステーションを有効にした後にも Retail サーバーを使用できない場合は、最後の商社プロパティが、Retail サーバーへの接続が再確立されるまでの間に使用されます。 ハードウェア ステーションの更新と同時に、POS クライアントがバージョン 10.0.6 に更新されていないと、POS クライアントが同じまたはそれ以降のバージョンに更新されるまで、商社プロパティは更新されません。 
 
-8. Install マーチャント情報ツールは、Azure AD 資格情報を要求する可能性があります。 Retail ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
+8. 支払商社情報のインストール ツールは、Azure AD 資格情報を要求する可能性があります。 Retail ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
 9. Retail Server URL は、Retail ハードウェア ステーションのインストールによって決定され、自動的に入力されます。 インストーラーは、この URL を使用して、ユーザーがアドレス帳を介して接続している店舗のリストをロードします。
 10. ハードウェア ステーションがインストールされた小売店舗を選択します。
 11. 現在のコンピューターにインストールされていたハードウェア ステーションに一致するハードウェア プロファイルを選択します。

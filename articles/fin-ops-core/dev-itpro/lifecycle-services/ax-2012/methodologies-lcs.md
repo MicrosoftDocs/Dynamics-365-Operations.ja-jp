@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) での方法
-description: LCS の方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。 いずれかの既成の方法を使用するか、自分の方法を作成することができます。 方法を使用すると、進捗状況を容易に追跡およびレポートすることができます。
+description: LCS の方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 30c5f0700fa0a5a44adc048e4710b0cfaf29372e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3e2ba87e190997c9ac056e4979d5ae773b5a01c7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130791"
 ---
 # <a name="methodologies-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での方法
 

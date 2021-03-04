@@ -1,6 +1,6 @@
 ---
 title: フォーム パターン セクション リストのフォーム パターン
-description: このトピックでは、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
+description: このトピックでは、フォーム パート セクション リストのフォーム パターンに関する情報を提供します。これは、ワークスペース内にフィルタ処理されたリストを表示するために開発されました。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba777ac433d8d4c0f6d8bbfea54e72bdd9e84fd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b033c22fcc62cc428e6f6b6d0a6999876ccfc708
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683909"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092376"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 

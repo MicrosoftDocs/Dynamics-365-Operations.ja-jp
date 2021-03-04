@@ -1,6 +1,6 @@
 ---
 title: ビジネスイベントと Microsoft Forms Pro
-description: このトピックでは、製品の出荷時に調査がユーザーに送信されるシナリオについて説明します。 調査情報は Microsoft Forms Pro を使用して収集されます。
+description: このトピックでは、製品の出荷時に調査がユーザーに送信されるシナリオについて説明します。
 author: murrayfife
 manager: AnnBe
 ms.date: 08/12/2019
@@ -14,14 +14,14 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 61c6b36339d9665b15391482462a500c6c9a8add
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 13d05cf848d8123b22ee91c23d8513e44f3c73f8
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128663"
 ---
-# <a name="business-events-and-microsoft-forms-pro"></a>ビジネスイベントと Microsoft Forms Pro
+# <a name="business-events-and-microsoft-forms-pro"></a>ビジネス イベントおよび Microsoft Forms Pro
 
 [!include[banner](../../includes/banner.md)]
 

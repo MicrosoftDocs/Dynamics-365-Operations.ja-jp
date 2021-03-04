@@ -1,6 +1,6 @@
 ---
 title: ドキュメント回覧エージェントを Windows サービスとして実行する
-description: ドキュメント回覧エージェントは、デスクトップ アプリケーションまたは Microsoft Windows サービスのいずれかとして実行できます。 このトピックでは、正しく実行モードを選択するのに役立つ重要な情報を提供します。
+description: このトピックでは、ドキュメント回覧エージェントによって使用される実行モードの選択に役立つ情報を提供します。
 author: TJVass
 manager: AnnBe
 ms.date: 09/13/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: d749c3d1f288cc0facf7aafb91e13f54bfecb10c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 51ffd9fd0baa987b04fc182a7428dfa25dba90be
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688219"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093578"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 

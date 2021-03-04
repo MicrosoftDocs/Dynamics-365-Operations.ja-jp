@@ -1,6 +1,6 @@
 ---
 title: 異なるディメンション パターンをサポート
-description: さまざまな分析コードのパターンをサポートするために、分析コードを含む他のエンティティのデータ ソースとして使用できる一連のフレームワーク データ エンティティが作成されています。
+description: さまざまな分析コードのパターンをサポートするため、一連のフレームワーク データ エンティティが分析コードを含む他のエンティティのデータ ソースとして使用できます。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab670e53c42db7fd3cf81b0fc504114c5c4ba218
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 31f9d068c1d354ca7e7e4d0ad45f38785bb58e21
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127634"
 ---
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 
@@ -29,8 +29,7 @@ ms.locfileid: "4680500"
 
 さまざまな分析コードのパターンをサポートするために、分析コードを含む他のエンティティのデータ ソースとして使用できる一連のフレームワーク データ エンティティが作成されています。
 
-<a name="the-sfk-and-the-natural-key"></a>SFK とナチュラル キー
----------------------------
+## <a name="the-sfk-and-the-natural-key"></a>SFK とナチュラル キー
 
 さまざまな分析コードのパターンをサポートするために、分析コードを含む他のエンティティのデータ ソースとして使用できる一連のフレームワーク データ エンティティが作成されています。 データ エンティティのこの入れ子が発生すると、分析コードのデータ エンティティの代理外部キー (SFK) およびナチュラル キーは別に処理されます。 次の表では、違いについて説明します。
 
@@ -40,6 +39,7 @@ ms.locfileid: "4680500"
 | ナチュラル キー | public          | 分析コード エンティティのナチュラル キーは、分析コード属性値のパブリック文字列として公開されます。 値は連結されていますが、アカウント デリミタで区切られています。 アカウントの区切り記号は、パーティションごとに定義されます。 連結された文字列が表示値として使用されます。 このドキュメントで後で説明するように、エンティティの一部のフィールドに接尾語として “DisplayValue” という句が追加さます。 |
 
 ## <a name="reads-and-writes"></a>読み取りおよび書き込み
+
 **読み取り:** 外部データ エンティティの読み取りでは、フレームワークの分析コードのエンティティを使用して、パブリック表示値が計算列から取得されます。 読み取りは計算列が使用されるため、エクスポート シナリオでは X++ ロジックは必要ありません。 **書き込み:** 作成またはエンティティ インスタンスの値の更新で、公開表示値は、プライベート フィールドと一致するように SFK に解決されます。
 
 ### <a name="examples"></a>例
@@ -57,6 +57,7 @@ ms.locfileid: "4680500"
 [![例を記述](./media/subb.png)](./media/subb.png)**DisplayValue** は実行時に **DefaultDimension** に解決します。
 
 ## <a name="create-an-entity-by-using-a-wizard"></a>ウィザードを使用してエンティティを作成する
+
 このセクションでは、ウィザードを使用してデータ エンティティを作成する方法について説明します。 そのウィザードを使用することをお勧めします。 分析コードの SFK フィールドを選択することのみ必要です。 ウィザードは、必要なデータ ソース、フィールド、リレーションをすべて正しく設定します。
 
 1. **ファイル** &gt; **新規** &gt; **プロジェクト** とクリックし、新しいプロジェクトを作成します。
@@ -104,7 +105,7 @@ ms.locfileid: "4680500"
 
 13. データ エンティティで **persistEntity** メソッドをオーバーライドし、次の X++ コードを入力します。 
 
-    [![persistEntity メソッドを上書きします](./media/dim11.png)](./media/dim11.png)
+    [![persistEntity のコード](./media/dim11.png)](./media/dim11.png)
 
 14. テストでは、既存の単位テスト クラス、**DimensionEntityTest** を参照してください。
 
@@ -125,21 +126,16 @@ ms.locfileid: "4680500"
 
 2.  分析コード SFK のプライベート フィールドを作成します。 このエンティティ フィールドでは、ソース フィールドは、**FieldDimensionDefault** SFK フィールドです。
 
-    [![dim13fixed](./media/dim13fixed.png)](./media/dim13fixed.png)
+    [![FieldDimensionDefault フィールド](./media/dim13fixed.png)](./media/dim13fixed.png)
 
 3.  分析コード表示値のパブリック フィールドを作成し、前の手順で作成したデータ ソースにバインドします。 分析コード表示値フィールドの名前は、12 文字のリテラル「DisplayValue」が付加されるプライベート フィールド名である必要があります。
 
-    [![dim14fixed](./media/dim14fixed.png)](./media/dim14fixed.png)
+    [![FieldDimensionDefaultDisplayValue フィールド](./media/dim14fixed.png)](./media/dim14fixed.png)
 
 4.  エンティティ リレーションを追加します。 エンティティ リレーションはエンティティ間の OData ナビゲーションを有効にします。 リレーションの名前は、「DimensionSet」が付加されたプライベート分析コード フィールド名の名前にする必要があります。 **DimensionSetEntity** のパブリック名は **DimensionSet** です。 したがって、そのエンティティへのナビゲーションには意味のある名前が必要です。 適切な選択は、SFK に "DimensionSet"をたした分析コードの名前です。
 
-    [![dim15fixed](./media/dim15fixed.png)](./media/dim15fixed.png)
+    [![新規エンティティ リレーション](./media/dim15fixed.png)](./media/dim15fixed.png)
 
 5.  **persistEntity** メソッドをオーバーライドし、次の X++ コードを入力します。 
 
     [![persistEntity メソッドを上書きします](./media/dim16.png)](./media/dim16.png)
-
-
-
-
-

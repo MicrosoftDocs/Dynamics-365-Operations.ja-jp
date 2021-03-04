@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c940d1dd71c3e4c9b720cfaedee00a52694f60a6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c0db290d424203ccff3c152f15ca7601bf9b9f9c
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680536"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077680"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -125,3 +125,6 @@ AOS への受信 IP アドレスが動的になります。 これにより、�
 | 東日本 | 20.48.77.192/26
 | 西日本 | 20.39.179.192/26
 
+## <a name="is-there-a-potential-impact-on-the-environments-certificates"></a>環境の証明書に影響が及ぶ可能性がありますか?
+
+はい、以前の非セルフサービス配置から移行する場合、インフラストラクチャの違いによって環境の証明書が更新される場合があります。 ソリューション/統合の証明書に依存しているかどうかを判断し、移行後に必要なアクションを実行します。

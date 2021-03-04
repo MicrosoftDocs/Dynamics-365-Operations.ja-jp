@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: dee66ea11601c5c497c2449c23d3d5f568c83ea0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 5b01bfdb03c69758772a96bc7a9ab20a07e3039b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694581"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798757"
 ---
 # <a name="create-a-query-for-a-workflow-type"></a>ワークフロー タイプのクエリの作成 
 

@@ -1,6 +1,6 @@
 ---
 title: 優先順位に基づく調整に関する FAQ
-description: このトピックでは、Open Data Protocol (OData) およびカスタム サービス ベースの統合の優先順位に基づく調整に関するよく寄せられる質問 (FAQ) に対する回答を提供します。
+description: このトピックでは、OData およびカスタム サービス ベースの統合の優先順位に基づく調整に関するよく寄せられる質問 (FAQ) に対する回答を提供します。
 author: hasaid
 manager: AnnBe
 ms.date: 09/23/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 077dc5d28e44505601b99361d291fd9e2bb93fe0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60d7a6ef02fb3141e49c12dde8ddf9df847f515
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129613"
 ---
 # <a name="priority-based-throttling-faq"></a>優先順位に基づく調整に関する FAQ
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 3592799bb604a919ab696e75006d5589b4df996f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6e89a66d72744547eb38707c9cdad17a700ad7f2
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679942"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154349"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 
@@ -47,4 +47,4 @@ Microsoft コード ベースが進歩すると共に、いくつかのメソッ
 
 ## <a name="list-of-deprecated-methods-and-metadata-elements"></a>非推奨のメソッドとメタデータの要素のリスト
 
-参考のため、CustomerSource の[方法とメタデータの要素の廃止](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/DeprecationMME)ページにある Microsoft Excel ファイルをダウンロードしてください。各メジャー リリースで非推奨とマークされた成果物が示されています。
+参考のため、CustomerSource の[方法とメタデータの要素の廃止](https://docs.microsoft.com/dynamics/s-e/)ページにある Microsoft Excel ファイルをダウンロードしてください。各メジャー リリースで非推奨とマークされた成果物が示されています。

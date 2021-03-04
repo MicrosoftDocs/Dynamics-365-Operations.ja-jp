@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ada6f65ea61b2931b9e0fff801e029cef8c8e421
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 28b76c7b88f6839750e48b928fd94dae32076fe4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4409532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012406"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 

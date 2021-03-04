@@ -1,6 +1,6 @@
 ---
 title: モデルとパッケージ
-description: このトピックでは、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
+description: このトピックでは、モデルとパッケージの概念について説明します。 新しいモデルの作成方法、パラメーターの更新方法、およびモデル間の依存関係を視覚化する方法について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 02/07/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d06551d2c72d972fa09cdfe100d094235cb426c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65e514843b5594d26a793b9771ea9d3f9d9f2e6f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093460"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 

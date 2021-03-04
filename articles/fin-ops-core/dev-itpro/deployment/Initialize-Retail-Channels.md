@@ -3,7 +3,7 @@ title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a581da3c6090ff971ea908a9eacd41300ec7d0cb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6dd3dd23016ec871470e108b4ea32396cf39650a
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681075"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152211"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -36,6 +36,17 @@ ms.locfileid: "4681075"
 
 1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
 2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求** を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
+3. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
+
+- RetailBasic
+- RetaileCommerce - Dynamics 365 Commerce にeコマースを使用する予定の場合。
+- RetailGiftCard - ギフト カードを使用する予定の場合。
+- RetailInvent - 在庫を使用する予定の場合。
+- RetailModemodePos - 販売時点管理 (POS) を使用する予定の場合。
+- RetailReplenishment - 補充を使用する予定の場合。
+- RetailScheduler
+- RetailStores - POS を使用する予定の場合。
+
 
 ## <a name="region-availability"></a>地域の可用性
 Commerce Scale Unit は、次の地域に配置することができます。

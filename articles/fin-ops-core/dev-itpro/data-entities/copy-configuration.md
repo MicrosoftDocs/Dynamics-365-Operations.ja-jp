@@ -1,6 +1,6 @@
 ---
 title: 企業または法人エンティティ間で行う設定データのコピーの概要
-description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートを使用して、Finance and Operations のインスタンス間で企業または法人のコンフィギュレーション データを移動する方法について説明します。
+description: このトピックでは、データ プロジェクトとデータ テンプレートを使用して、アプリのインスタンス間で企業または法人のコンフィギュレーション データを移動する方法について説明します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 07/25/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 1a72bb81b2f9a1cdccab434fc19660de94d82050
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b59a1c063b35c40fd69d633b1e8220dab0099153
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130793"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities-overview"></a>企業または法人エンティティ間で行う設定データのコピーの概要
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d4f94fe234f80e5f0fe0a85151d017a72987c4f2
-ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
+ms.openlocfilehash: bf4c9f5ee742b9ba3bfbc10209126eb49d3749ab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4584303"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980040"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 

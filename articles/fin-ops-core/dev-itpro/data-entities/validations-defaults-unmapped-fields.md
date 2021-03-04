@@ -1,6 +1,6 @@
 ---
 title: 検証、既定値、およびマップされていないフィールド
-description: このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。
+description: このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされていないフィールドを使用する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/28/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d850ca2fbaa417768493c49d7da4adc2363ec08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e9fcdae11a071e0e7babdf1cd02b00b44c2bd518
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129587"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 

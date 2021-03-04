@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: c6e8c2d2f249ad54658e1ea47b67e2e6455b4e38
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6a3e5bac46163749a8fe9841fe1ecd11f87a93de
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693419"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797863"
 ---
 # <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-for-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
 

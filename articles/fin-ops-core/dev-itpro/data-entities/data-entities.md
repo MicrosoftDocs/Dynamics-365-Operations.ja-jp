@@ -1,6 +1,6 @@
 ---
 title: データ エンティティの概要
-description: このトピックは、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。
+description: このトピックでは、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 04/20/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9911155cdf25d8cb9c4e9dc4685be89124493e0b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6e9d35524d67badd5d281f1888ec22e08971df9e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130019"
 ---
 # <a name="data-entities-overview"></a>データ エンティティの概要
 

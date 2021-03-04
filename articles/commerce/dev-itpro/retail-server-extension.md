@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 10632cb9387d70df1ef809fb108ed01d2444a2e4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d9cba70830f807077fa9e00c45622aa94435d7cd
+ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687559"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5031835"
 ---
 # <a name="create-a-new-retail-server-extension-api-retail-sdk-version-10010-and-earlier"></a>新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.10 以前)
 
@@ -32,6 +32,9 @@ ms.locfileid: "4687559"
 このトピックは、Retail SDK バージョン 10.0.10 以前に適用されます。
 
 Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) を含む、エンドツーエンドの Commerce Scale Unit 拡張機能のサンプルがいくつか用意されているのみです。 これらのサンプルをテンプレートとして使用して、拡張機能を起動できます。 サンプル拡張機能は、RetailSDK\\SampleExtensions\\RetailServer フォルダーで見つけることができます。
+
+> [!NOTE]
+> CommerceController 拡張モデルは、間もなく非推奨になります。 すべての Retail Sever 拡張機能を IController に移行する必要があります。 CommerceController と IController の両方を存在させることはサポートされていません。 IController の詳細については、新しい [新しい Retail Sever 拡張機能の作成 (Retail SDK バージョン 10.0.11 以降)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension) を参照してください。
 
 ## <a name="end-to-end-sample-repository-in-the-retail-sdk"></a>Retail SDK のエンドツーエンド サンプル リポジトリ
 
@@ -64,7 +67,7 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 ### <a name="steps"></a>ステップ
 
 1. Commerce Scale Unit 拡張機能を作成する前に、CRT 拡張機能を作成します。 Commerce Scale Unit API には、パラメーターで CRT を呼び出すロジック以外のロジックはありません。
-2. Microsoft .NET フレームワーク バージョン 4.6.1 以降をターゲット フレームワークとして使用する、新しい C\# クラス ライブラリ プロジェクトを作成します。
+2. Microsoft .NET フレームワーク バージョン netstandard 2.0 をターゲット フレームワークとして使用する、新しい C\# クラス ライブラリ プロジェクトを作成します。
 3. Commerce Scale Unit 拡張機能プロジェクトで、CRT 拡張機能ライブラリまたはプロジェクトへの参照を追加します。 この参照を使用して、CRT 要求と応答を呼び出すことができます。 また、Commerce Scale Unit 拡張機能プロジェクトからのエンティティを使用することもできます。
 4. Commerce Scale Unit 拡張機能プロジェクトで、**NonBindableOperationController** または **CommerceController** を拡張する新しいコントローラー クラスを作成します。 基本クラスは、シナリオによって異なります。 このコントローラー クラスには、Commerce Scale Unit API によって公開される必要のあるメソッドが含まれています。 コントローラー クラス内で、CRT 要求を呼び出すメソッドを追加します。
 

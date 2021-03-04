@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a3b7212dd292eb43af06d85d867fec8f48e80fb9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d35d2c70eac8c68ac410698592921dc4eb3afa0b
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681610"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154423"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 
@@ -142,7 +142,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承
@@ -180,7 +180,7 @@ hideArrow: boolean (省略可)
 icon: string (省略可) 
 
 ページリンク コントロールに表示されるアイコンの名前。
-次に [利用可能なアイコンの一覧](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont) を示します。
+次に [利用可能なアイコンの一覧](https://docs.microsoft.com/dynamics/s-e/) を示します。
 
 
 ### <a name="justifyitems"></a>justifyItems

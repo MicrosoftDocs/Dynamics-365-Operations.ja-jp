@@ -1,6 +1,6 @@
 ---
 title: 高度な選択のフォーム パターン
-description: この記事では、高度な選択フォーム パターンに関する情報を提供します。 このダイアログ フォーム パターンを使用すると、ユーザーは大規模な全体のリストから項目をフィルターして選択できます。 リスト パネルのパターンと同様に、このパターンは主要なユーザー タスクが項目のセットを選択するときに使用する必要があります。
+description: この記事では、高度な選択のフォーム パターンに関する情報を提供します。これにより、ユーザーが大規模で広範なリストから品目をフィルタ処理して選択できます。
 author: jasongre
 manager: AnnBe
 ms.date: 03/09/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7d244596deaaa2c11d3c10d23355337f994597d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c0982d9ae36574370e9d830325772bd7d7b0b442
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682467"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094175"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
@@ -57,7 +57,7 @@ ms.locfileid: "4682467"
 ## <a name="example"></a>例
 フォーム: **ProcCategoryAddVendor** (**調達** &gt; **調達カテゴリ** をクリックします。 **仕入先** クイック タブで、**追加** をクリックします)。 
 
-> [注記] このフォームでは、このパターンが利用できません。ただし、表示している画像では、一般的な高度な選択のフォーム パターンの例を示しています。
+> [注記] ごのフォームでは、このパターンが利用できません。ここで表示している画像では、一般的な拡張選択フォームパターンの例を示しています。
 
 [![高度な選択の例](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 

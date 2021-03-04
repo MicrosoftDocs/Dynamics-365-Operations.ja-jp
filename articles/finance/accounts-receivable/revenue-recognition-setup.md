@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b90c98628fef2006addb64a6b880ab4020edb8cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459391"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995569"
 ---
 # <a name="revenue-recognition-setup"></a>収益認識の設定
 [!include [banner](../includes/banner.md)]
@@ -30,6 +29,8 @@ ms.locfileid: "4459391"
 
 > [!NOTE]
 > 収益認識機能は、機能管理を使用して有効にすることはできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
+
+> バンドル機能を含む収益認識は、Commerce チャネル (eコマース、POS、コール センター) での使用はサポートされません。 収益認識で構成された品目は、Commerce チャネルで作成された注文やトランザクションに追加できません。
 
 **収益認識** モジュールには、次の設定オプションがあります。
 

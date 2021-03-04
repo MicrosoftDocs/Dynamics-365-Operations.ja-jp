@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d06d61ac5ff661ab2ab0af7fdb3141c54e34b321
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: 5a4e820afdc06450c265eec9c37c5408e4269780
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4659850"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796644"
 ---
 # <a name="authentication-in-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) での認証
 

@@ -1,7 +1,7 @@
 ---
 title: データ パッケージを使用してデモ データを生成します
 description: このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
@@ -12,15 +12,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 77523
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 83e6f45dbdd4250fc16704afedc08d58098fd63b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4f61f4c25adc0a9d796422e48b2198afcbd5ec66
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688062"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018665"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 

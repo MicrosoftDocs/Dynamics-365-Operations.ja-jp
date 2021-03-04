@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75c9a9694441ceed2e9f12700e0aca3170fb5c94
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: df6e88560ec1649dc6e35d549a7bd6e5db6e3d0a
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644859"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120467"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 
@@ -225,16 +225,16 @@ static void JobContainerMultiAssignmentUsesAnytype(Args _args)
     info(strfmt("int4==11==(%1), str7==222==(%2)", int4, str7));
 }
 
-/**_  Output:
+/***  Output:
 Message (10:36:22 am)
 int4==11==(11), str7==222==(222)
-_*_/
+***/
 
 static void UseQuery()
 {
     // An example of how the compiler diagnoses attempts to store object in containers
     container c = [new Query()];   // This statement will cause the error message shown below.
-    /_*_ Instance of type 'Query' cannot be added to a container. _*_/
+    /*** Instance of type 'Query' cannot be added to a container. ***/
 
     // An example of a code that won't cause an error message, but will
     // cause an error message to be thrown at runtime.
@@ -245,7 +245,7 @@ static void UseQuery()
 
 ## <a name="classes-as-data-types"></a>データ型としてのクラス
 
-クラス*は、クラスのインスタンスの変数とメソッドの両方を説明するタイプ定義です。 (クラスのインスタンスは *オブジェクト* ともよばれます。) クラスはオブジェクトの定義に過ぎず、すべてのオブジェクトは宣言されると **null** です。 アプリケーション エクスプローラーでは、**クラス** ノードの各アプリケーション クラスはデータ型です。 これらの種類の変数をコード内で宣言することができます。 クラスのインスタンスを構築してインスタンスを変数に割り当てることができます。 
+*クラス* は、クラスのインスタンスの変数とメソッドの両方を説明するタイプ定義です。 (クラスのインスタンスは *オブジェクト* ともよばれます。) クラスはオブジェクトの定義に過ぎず、すべてのオブジェクトは宣言されると **null** です。 アプリケーション エクスプローラーでは、**クラス** ノードの各アプリケーション クラスはデータ型です。 これらの種類の変数をコード内で宣言することができます。 クラスのインスタンスを構築してインスタンスを変数に割り当てることができます。 
 
 クラスはソース コードに入れ子にできます。 入れ子になったクラスはフォーム内 (**FormRun** を拡張するクラスなど) でのみ使用でき、コントロール、データ ソースまたはデータ フィールドを表すために使用します。 属性の修飾で接尾語に **属性** がある場合、属性の修飾などのクラスまたはメソッドで、属性名の接尾語を省略できます。 したがって、X++ は **\[MyFavoriteAttribute\]** を必要とするのではなく、**\[MyFavorite\]** を許可します。 また、属性はデリゲートとメソッドのハンドラーに現在適用され、ハンドラーをこれらのターゲットにマップします。 
 
@@ -310,7 +310,7 @@ public class Singleton
 
 ### <a name="class-elements-in-application-explorer"></a>アプリケーション エクスプローラーのクラス要素
 
-アプリケーション エクスプ ローラーのほとんどのクラス・ノードの下には、**classDeclaration** ノードと **new** ノードという 2 つの特殊ノードがあります。 **classDeclaration** は、常に X++ **クラス** キーワードになります。 追加のキーワードは、**拡張** のように、クラスを変更するために含めることができます。 このノードには、メンバー変数の宣言も含めることができます。 メンバー変数は、**classDeclaration** の値に初期化することはできません。また静的にすることはできません。 
+アプリケーション エクスプ ローラーのほとんどのクラス・ノードの下には、**classDeclaration** ノードと **new** ノードという 2 つの特殊ノードがあります。 **classDeclaration** は、常に X++ **クラス** キーワードになります。 追加のキーワードは、**拡張** のように、クラスを変更するために含めることができます。 このノードには、メンバー変数の宣言も含めることができます。  
 
 次の例では、変数 **m\_priority** および **m\_rectangle** はクラスのメンバーです。
 

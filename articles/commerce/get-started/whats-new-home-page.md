@@ -3,26 +3,25 @@ title: Dynamics 365 Commerce の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce の各リリースにおける新しい機能と変更された機能について説明するトピックを示します。
 author: josaw1
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 721390c9529afd3896f0f05acf794272bcd28437
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: e62b6ee587911141c30ecd0880ab2acd28a7d0b1
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665286"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053459"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の新機能および変更された機能 
 
@@ -33,6 +32,7 @@ Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューに�
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細 |
 |---------|--------------|--------------|-------------|
+| 10.0.16  |   10.0.689     | 2021 年 2 月 | [Dynamics 365 Commerce バージョン 10.0.16 の新機能および変更された機能](whats-new-commerce-10-0-16.md) |
 | 10.0.15  |   10.0.644     | 2021 年 1 月 | [Dynamics 365 Commerce バージョン 10.0.15 の新機能および変更された機能](whats-new-commerce-10-0-15.md) |
 | 10.0.14  |   10.0.605        | 2020 年 11 月 | [Dynamics 365 Commerce バージョン 10.0.14 の新機能および変更された機能](whats-new-commerce-10-0-14.md) |
 | 10.0.13  |   10.0.569        | 2020 年 10 月 | [Dynamics 365 Commerce バージョン 10.0.13 の新機能および変更された機能](whats-new-commerce-10-0-13.md) |

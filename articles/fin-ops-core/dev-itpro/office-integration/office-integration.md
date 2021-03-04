@@ -1,7 +1,7 @@
 ---
 title: オフィス統合の概要
 description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 25511
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d67760e7e88bb4fc98356b17c27bfbbe071b0106
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7539251b06cd2a4eaa1ec590ce11c116e802aa13
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688489"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141862"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -38,7 +38,7 @@ Microsoft Office の統合機能は、生産的環境を提供し、Office 製�
 ## <a name="excel-data-connector-add-in"></a>Excel Data Connector アドイン
 Microsoft Excel は、データを変更してすばやく分析することができます。 Excel Data Connector アプリは、公開されたデータ エンティティに作成された Excel ブックおよび OData サービスとやり取りします。 Excel Data Connector アドインを使用すると、Excel がユーザー エクスペリエンスのシームレスな部分となることができます。 Excel Data Connector アドインは、Office Web アドイン フレームワークを使用して構築されます。 アドインは作業ウィンドウで実行されます。 Office Web アドインは、埋め込み Internet Explorer ブラウザー ウィンドウ内で実行される Web アプリケーションです。 
 
-[![Excel データ コネクタ アプリのスクリーン ショット](./media/1_office.png)](./media/1_office.png)
+[![Excel データ コネクタ アプリのスクリーンショット](./media/1_office.png)](./media/1_office.png)
 
 ### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャと Finance and Operations のアーキテクチャ
 

@@ -1,6 +1,6 @@
 ---
 title: 画像のプレビューのサブパターン
-description: この記事では、イメージ プレビュー フォームのサブパターンについて説明します。 このサブパターンは、フォーム コンテナ内、特にクイック タブまたはグループ内に表示されるほとんどの画像に使用できます。
+description: この記事では、イメージ プレビュー フォームのサブパターンについて説明します。 このサブパターンは、フォーム コンテナ内に表示されるほとんどの画像に使用できます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31a7fe2cd046538cc38b7e4d890021c161f5d5bf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e84bdad6d3087cc5331c56f5a7d5d30c1ac6c109
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093519"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 

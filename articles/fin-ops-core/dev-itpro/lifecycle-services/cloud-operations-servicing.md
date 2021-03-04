@@ -1,6 +1,6 @@
 ---
 title: クラウドの工程とサービス
-description: Finance and Operations アプリはマネージド サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
+description: このトピックでは、クラウドの工程とサービスについて説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 10/03/2019
@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88995da982a78643243797e8155af296034bbb6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9cd08caf8af60751764699aa007e0b179fc5655e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130517"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
 [!include [banner](../includes/banner.md)]
 
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
+
+Finance and Operations アプリはマネージド サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
 クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理センターである Lifecycle Services (LCS) には、管理している環境を正確に表示することを保証する一連の監視ツールと診断ツールが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。

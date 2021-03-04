@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 710d851e7177a5d2ef02f3b9ef68af3d4096eb5e
-ms.sourcegitcommit: 792a81ae86d4854e450c3c5006d2523dd721d522
+ms.openlocfilehash: b811510ee479f9a7c6a801fb0a9e32d7a5f6c5c1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
+ms.lasthandoff: 01/18/2021
 ms.locfileid: "4723391"
 ---
 # <a name="deploy-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のデプロイ
@@ -29,7 +29,7 @@ Microsoft Azure DevOps の **Lifecycle Services (LCS) 資産の配置** タス�
 * このタスクは、**リリース** パイプラインでのみ使用できます。
 * ソフトウェア配置可能パッケージの運用環境への配置を自動化することはできません。
 * ソフトウェア配置可能パッケージをビルド環境に配置することはできません。
-* ソフトウェア配置可能パッケージは、オンプレミスのローカル ビジネス データ (LBD) 環境に配置することができます (更新プログラム 39 10.0.15 以降)。
+* ソフトウェア配置可能パッケージを、ローカル ビジネス データ (LBD) 環境にオンプレミスで配置することはできません。
 
 このトピックは、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
 

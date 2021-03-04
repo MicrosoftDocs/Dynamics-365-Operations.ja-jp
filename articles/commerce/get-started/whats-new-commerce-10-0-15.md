@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: eaac3dd2c46b032912245219b3b160998d7c52a9
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 9ce16229c45dac54dee80df461812a34139ef9ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665251"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979924"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10015-january-2021"></a>Dynamics 365 Commerce 10.0.15 (2021 年 1 月) の新機能および変更された機能
 

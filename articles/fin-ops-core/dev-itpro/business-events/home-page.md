@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントの概要
-description: このトピックは、外部システムが Dynamics 365 Finance and Operations アプリケーションから通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
+description: このトピックは、外部システムが Dynamics 365 Finance and Operations アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/03/2020
@@ -14,12 +14,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b421d9c68d75e4c4e7f56225d9e0a48874603786
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8799b97c51f9cbdd6a20d0d5c4ebe783b97047ae
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688113"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128665"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 

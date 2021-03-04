@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) におけるアップグレード分析
-description: このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。 アップグレード分析は、Microsoft Dynamics AX 2012 のフル バージョン、マイナー バージョン、およびインプレース アップグレードの計画に役立ちます。
+description: このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/13/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: fd79af57638ef71933f3f68e600f8ffd4e7db512
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fff6887677fadbb8b93bc48cf72cf45626638b4a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5126710"
 ---
 # <a name="upgrade-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) におけるアップグレード分析
 

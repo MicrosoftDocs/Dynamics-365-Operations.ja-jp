@@ -1,6 +1,6 @@
 ---
 title: タイル、リスト、およびデータ キャッシュを使用してワークスペースを変更する
-description: このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。
+description: このチュートリアルでは、ワークスペースの概要に新しいタイルを作成し、新しいリストを構築して、リストのデータ キャッシュを作成します。
 author: jasongre
 manager: AnnBe
 ms.date: 11/30/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51d5b55f2141ec1b97eca7a18c231e790a9c5761
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 883746ee194b452a3aca45cddd54cf85c5301b77
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679774"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092352"
 ---
 # <a name="modify-a-workspace-with-a-tile-list-and-data-cache"></a>タイル、リスト、およびデータ キャッシュを使用してワークスペースを変更する
 

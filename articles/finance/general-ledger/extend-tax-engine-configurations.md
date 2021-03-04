@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 53dd729fe36e21ea60d65019afd3d33dfc5c8de1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22089dda3788a92fccd5d46213adc3ece9bdf616
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409463"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975803"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 

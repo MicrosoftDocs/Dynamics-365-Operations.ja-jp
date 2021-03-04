@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21569b26f161d5b2af74eb51538fcb5c462f341c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0fa292aa38c21f58630adf4aa57502246d012e56
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687914"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154321"
 ---
 # <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]
@@ -111,7 +111,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 -   MPN gold および シルバー インシデント
 -   シグネイチャークラウドサポート
--   個々のインシデントと [support.microsoft.com/supportforbusiness] で購入した 5 パック。 
+-   個々のインシデントと [support.microsoft.com/supportforbusiness] で購入した5パック 
 
    > [!NOTE]
    > インシデントはMicrosoftアカウントを使用して購入する必要があります。 Microsoftアカウントは \@hotmail.com または \@outlook.com のような形式です。 作業アカウントまたは Azure Active Directory アカウントは、それぞれに関連付けられているインシデントを持つことはできません。
@@ -138,4 +138,4 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 [新しいインシデントを開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:
 
 - [プレミア電話サポート](https://support.microsoft.com/premier/contacts)
-- [広範な商業電話サポート](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)
+- [広範な商業電話サポート](https://docs.microsoft.com/dynamics/s-e/)

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: be9e903e339bc84d691916fd8f8de8700273bd38
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3d6c181d0aec9758a96ae9a354ffb9aa876b8fb5
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693166"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798191"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 

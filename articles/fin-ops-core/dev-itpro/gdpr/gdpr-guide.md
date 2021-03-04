@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4852686f4e8d743938822725db7851b7471acbc0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a1cdfcce85140c827f03d0b1a6a4adf6b979ed4e
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685155"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154133"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -323,7 +323,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 + 応募者
 + 競合他社
 
-個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata)ページからスプレッドシートを表示したりダウンロードしたりできます。 
+個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://docs.microsoft.com/dynamics/s-e/)ページからスプレッドシートを表示したりダウンロードしたりできます。 
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 

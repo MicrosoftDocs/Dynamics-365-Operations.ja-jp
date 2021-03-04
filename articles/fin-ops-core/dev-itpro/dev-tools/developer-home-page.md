@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e390ea6a89d9318346fef1ed1a69ba98d84e9ff
-ms.sourcegitcommit: 1f2c17f08c00a3684a0a01d4e27fffa29b93a8d9
+ms.openlocfilehash: 6d0d2ecd3644c31e5c4ed3f896f10a248c058134
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4636959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130771"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -156,7 +156,7 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 - [テストと検証](../perf-test/testing-validation.md)
 - [Visual Studio のプロジェクトをテストする](../perf-test/testing-support.md)
-- [継続的ビルドとテストの自動化を使用した開発者トポロジの展開](../perf-test/continuous-build-test-automation.md)
+- [継続的なビルドおよびテストの自動化環境の配置と使用](../perf-test/continuous-build-test-automation.md)
 - [タスク レコーダー リソース](../user-interface/task-recorder.md)
 
 ## <a name="office-integration"></a>Office 統合

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 307d1e3b5d7e9e24b0ba8fd4e923189bb08dca42
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ad23b2a63642696fc594db959ad51406c293e4e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995678"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 

@@ -1,6 +1,6 @@
 ---
 title: 受信したドキュメントを解析する
-description: このトピックでは、受信したドキュメントを解析し、選択したコンテンツをアプリケーション データに適用して更新できるように電子報告 (ER) 形式を設定する方法について説明します。
+description: このトピックでは、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
 author: nickselin
 manager: AnnBe
 ms.date: 02/20/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ede95a0a8d6025525464534047e380ded194db33
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1d3143df46e8de157c364ae3276dc0b9f458ec7d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093599"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]

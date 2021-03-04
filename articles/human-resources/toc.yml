@@ -5,6 +5,10 @@
       items:
         - name: Human Resources の新機能および変更された機能
           href: hr-admin-whats-new.md
+        - name: 2021 年 1 月 28 日
+          href: hr-whats-new-2021-01-28.md
+        - name: 2021 年 1 月 21 日
+          href: hr-whats-new-2021-01-21.md
         - name: 2020 年 12 月 2 日
           href: hr-whats-new-2020-12-02.md
         - name: 2020 年 10 月 22 日
@@ -79,12 +83,16 @@
           items:
             - name: データ統合テクノロジの選択
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service 統合のコンフィギュレーション
+            - name: スロットリングに関するよく寄せられる質問
+              href: hr-admin-integration-throttling-faq.md
+            - name: Dataverse 統合のコンフィギュレーション
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service エンティティ
+            - name: Dataverse テーブル
               href: hr-developer-entities.md
-            - name: Common Data Service 仮想エンティティのコンフィギュレーション
+            - name: Dataverse 仮想エンティティのコンフィギュレーション
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Human Resources の仮想エンティティに関するよく寄せられる質問
+              href: hr-admin-virtual-entity-faq.md
             - name: Finance との統合のコンフィギュレーション
               href: hr-admin-integration-finance.md
             - name: Dayforce との統合のコンフィギュレーション
@@ -277,9 +285,9 @@
       items:
         - name: 概要
           href: hr-developer-overview.md
-        - name: Power Apps および Power Automate を使用したの拡張
+        - name: Power Apps および Power Automate を使用した拡張
           href: hr-developer-power-apps.md
-        - name: Common Data Service エンティティ
+        - name: Dataverse テーブル
           href: hr-developer-entities.md
         - name: カスタム フィールド
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: データ統合テクノロジの選択
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service 統合のコンフィギュレーション
+            - name: Dataverse 統合のコンフィギュレーション
               href: hr-admin-integration-common-data-service.md
             - name: Finance との統合のコンフィギュレーション
               href: hr-admin-integration-finance.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: 休暇申請をワークフローに送信する
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: ATS 統合 API
+          items:
+            - name: はじめに
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: 採用要求および関連エンティティ
+              items:
+                - name: 採用要求
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: 採用要求教育
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: 採用要求場所
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: 採用要求職位
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: 採用要求スキル
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: 採用要求のクエリの例
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: 採用要求のオプション セット
+              items:
+                - name: ジョブ控除状態
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: 採用要求職位の状態
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: 採用要求の状態
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: 規制のジョブ カテゴリ
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: 採用候補者および関連エンティティ
+              items:
+                - name: 採用候補者
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: 証明書タイプ
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: 当事者の連絡先
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: 名前
+                  href: hr-admin-integration-ats-api-person.md
+                - name: 住所
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: 証明書
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: 教育
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: ID 番号
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: 職務経験
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: 審査
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: スキル
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: 評価レベル
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: 審査タイプ
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: 採用候補者のクエリの例
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: 候補オプション セット
+              items:
+                - name: 申請者の統合結果
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: 空白 はい いいえ
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: 完了状態
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: 連絡先タイプ
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: 教育クレジット基準
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: 性別
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: 配偶者の有無
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: 月
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: いいえ はい
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: 期間の単位
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: 審査頻度
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: 審査頻度の生成元
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: スキル レベル タイプ
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: ユーザー ガイド
       items:
         - name: 概要
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: 電子メールによるクライアント警告通知
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: 電子署名
-              items:
-                - name: 電子署名の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: 電子署名の設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: ケース管理
               items:
                 - name: ケース管理の概要
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: レート変更の処理
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA 報告書
+                  href: hr-benefits-management-aca-reports.md
             - name: 福利厚生プログラムの定義および管理
               href: hr-benefits-manage-program.md
             - name: 給付金適格性ポリシー

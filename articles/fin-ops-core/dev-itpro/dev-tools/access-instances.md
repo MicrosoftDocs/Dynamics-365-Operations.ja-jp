@@ -1,6 +1,6 @@
 ---
 title: 開発環境の配置とアクセス
-description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
+description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 09/22/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 981f7f2df8758f2117c6f1717daa4a63c18ecad7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9f79f7450c5b1ebdf3fa2b3faf8f17a1d7ef57e8
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409196"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093289"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 

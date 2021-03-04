@@ -1,6 +1,6 @@
 ---
 title: アプリケーション モジュール
-description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データ クエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
+description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。
 author: robinarh
 manager: AnnBe
 ms.date: 09/17/2019
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85deae4eb8f77348419c6a35259b11e658ae5b51
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b49766eab69b02f6bf6c9207d3e883b0fb29572b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682562"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130511"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 

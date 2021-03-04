@@ -1,6 +1,6 @@
 ---
 title: データ タスクの自動化
-description: このトピックでは、Finance and Operations でのデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
+description: このトピックでは、データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/04/2019
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: e58e9834663077fba7fcc015baa6a9fd46d13561
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 066f685fc861f49e8ea4ac580c919b0a60adba29
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130045"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 585e02c9c01ad90746924d2c9edd4253eedb7615
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1912757eba69a8dd798d52f947d688423ad7cb6a
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680416"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744447"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -28,7 +28,7 @@ ms.locfileid: "4680416"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Common Data Service にはサービス更新 189 が必要です。 Common Data Service のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問のコレクションを示します。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "4680416"
 
 はい。 仮想エンティティはすべて MicrosoftOperationsERPVE ソリューションで生成され、API 管理されます。言い換えると、ソリューションの項目は、エンティティの表示/非表示を切り替えたときに変更されますが、ソリューションは依存できるマネージド ソリューションのままになります。 標準 ALM フローでは、ISV ソリューションの **既存の追加** オプションを使用して、このソリューションから仮想エンティティに対する標準参照を取得するだけです。 ソリューションの依存関係が見つからない場合は、ソリューションがインポートされたときやインポート時に、その仮想エンティティが存在しない場合は自動的に表示されます。
 
-### <a name="which-entities-from-finance-and-operations-do-users-see-in-the-catalog-in-common-data-service"></a>Common Data Service のカタログでユーザーに表示される Finance and Operations のエンティティは何ですか。
+### <a name="which-entities-from-finance-and-operations-do-users-see-in-the-catalog-in-dataverse"></a>Dataverse のカタログでユーザーに表示される Finance and Operations のエンティティは何ですか。
 
 一般に、ユーザーには、**IsPublic** が **はい** に設定されているすべてのエンティティが表示されます。 これらのエンティティは、Open Data Protocol (OData) で現在表示されているものと同じです。
 
@@ -58,7 +58,7 @@ ms.locfileid: "4680416"
 
 ### <a name="is-there-a-way-to-specify-a-company-when-i-perform-data-operations-on-a-virtual-entity"></a>仮想エンティティに対してデータ操作を実行するときに会社を指定する方法はありますか。
 
-はい。 Finance and Operations には、会社が暗黙のうちに含まれていますが、Common Data Service では会社でストライプされたエンティティごとに明示的なフィールドになっています。 **会社コード** フィールド (値は 4 文字の文字列) または **会社** フィールド (cdm\_Company へのルックアップ) のいずれかを使用できます。 どちらの方法でも同じ情報が得られます。
+はい。 Finance and Operations には、会社が暗黙のうちに含まれていますが、Dataverse では会社でストライプされたエンティティごとに明示的なフィールドになっています。 **会社コード** フィールド (値は 4 文字の文字列) または **会社** フィールド (cdm\_Company へのルックアップ) のいずれかを使用できます。 どちらの方法でも同じ情報が得られます。
 
 ### <a name="can-i-change-the-prefix-for-the-virtual-entities"></a>仮想エンティティの接頭辞を変更することはできますか。
 
@@ -72,9 +72,9 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 いいえ、現時点では、モデル駆動アプリを Finance and Operations にピン留めすることはできません。
 
-### <a name="how-can-i-show-in-the-same-grid-data-from-multiple-virtual-entities-that-are-joined-to-a-physical-entity-record-in-common-data-service"></a>Common Data Service の物理エンティティ レコードに結合されている複数の仮想エンティティからのデータを、同じグリッドで表示する方法はありますか。
+### <a name="how-can-i-show-in-the-same-grid-data-from-multiple-virtual-entities-that-are-joined-to-a-physical-entity-record-in-dataverse"></a>Dataverse の物理エンティティ レコードに結合されている複数の仮想エンティティからのデータを、同じグリッドで表示する方法はありますか。
 
-このアプローチは、現在 Common Data Service でサポートされていません。
+このアプローチは、現在 Dataverse でサポートされていません。
 
 ### <a name="how-do-i-add-subcomponents-in-the-new-power-apps-experience"></a>新しい Power Apps エクスペリエンスでサブコンポーネントを追加するにはどうすればよいですか。
 
@@ -89,11 +89,11 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 はい。 呼び出しの順序を次に示します。
 
-1. Common Data Service が作成または更新メッセージを送信します。
+1. Dataverse が作成または更新メッセージを送信します。
 2. Finance and Operations エンティティおよびバッキング テーブルの既存のすべてのロジックが呼び出されます。 このロジックには、値を変更する可能性がある既定値のエントリが含まれています。
-3. Common Data Service は、既定値が入力されたフィールドを含む、データの最新のコピーを取得するための別の取得 (1 つ) メッセージを送信します。
+3. Dataverse は、既定値が入力されたフィールドを含む、データの最新のコピーを取得するための別の取得 (1 つ) メッセージを送信します。
 
-### <a name="can-i-debug-finance-and-operations-when-we-do-a-create-read-update-and-delete-crud-operation-from-common-data-service-if-so-which-process-do-i-have-to-attach"></a>Common Data Service から作成、読み取り、更新、および削除 (CRUD) 操作を行うとき、Finance and Operations をデバッグできますか。 できる場合、どのプロセスにアタッチする必要がありますか。
+### <a name="can-i-debug-finance-and-operations-when-we-do-a-create-read-update-and-delete-crud-operation-from-dataverse-if-so-which-process-do-i-have-to-attach"></a>Dataverse から作成、読み取り、更新、および削除 (CRUD) 操作を行うとき、Finance and Operations をデバッグできますか。 できる場合、どのプロセスにアタッチする必要がありますか。
 
 はい、Finance and Operations でデバッグするには、管理者として Visual Studio を起動します。通常、Finance and Operations アプリは、w3wp.exe でプロセスとして実行されます。 ただし、管理者として Visual Studio を開くと、IISExpress が自動的に開かれ、Finance and Operations がそこにホストされます。 IISExpress.exe (管理者として Visual Studio が実行されていない場合は w3wp.exe) にアタッチできます。 仮想エンティティ コードにブレークポイントを設定するには、**CDSVirtualEntityAdapter** および **CDSVirtualEntityController** クラスを検索します。 アダプター クラスは、最初に呼び出されるクラスであり、シリアル化と逆シリアル化のみを行います。 次に、実際のクエリを実行するためにコントローラー クラスに委任します。 したがって、通常はコントローラー クラスが最も簡単なブレークポイントの配置です。
 
@@ -101,13 +101,13 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 
 フォームに存在する Finance and Operations ビジネス ロジックは、仮想エンティティを介して起動されることはありません。 代わりに、同じエンティティへの OData アクセスを行う場合と同じ動作を期待する必要があります。 予想されるのは、OData に公開されているエンティティ (つまり、**IsPublic** が **Yes** に設定されているエンティティ) が適切に保護され、データが破損しないようにすることです。 この保護がないエンティティがある場合は、この状況はエンティティのバグを表します。 OData と仮想エンティティ間でエンティティの動作に違いがある場合は、仮想エンティティ機能のバグを示しています。
 
-### <a name="if-i-develop-a-new-finance-and-operations-entity-and-want-to-see-it-in-common-data-service-do-i-have-to-select-refresh-entity-list-in-finance-and-operations-do-i-have-to-do-anything-in-common-data-service"></a>新しい Finance and Operations エンティティを作成し、それを Common Data Service に表示する場合 、Finance and Operationsで [エンティティの更新] リストを選択する必要はありますか。 Common Data Service で何かを行う必要はありますか。
+### <a name="if-i-develop-a-new-finance-and-operations-entity-and-want-to-see-it-in-dataverse-do-i-have-to-select-refresh-entity-list-in-finance-and-operations-do-i-have-to-do-anything-in-dataverse"></a>新しい Finance and Operations エンティティを作成し、それを Dataverse に表示する場合 、Finance and Operationsで [エンティティの更新] リストを選択する必要はありますか。 Dataverse で何かを行う必要はありますか。
 
-理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Common Data Service から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
+理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Dataverse から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
 
 ### <a name="do-you-have-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
-二重書き込みは、データが Common Data Service にネイティブに存在する必要があるいくつかの主要なデータエンティティに対してのみ提供されます。 これらのデータ エンティティは、仮想エンティティとしては使用できません。
+二重書き込みは、データが Dataverse にネイティブに存在する必要があるいくつかの主要なデータエンティティに対してのみ提供されます。 これらのデータ エンティティは、仮想エンティティとしては使用できません。
 
 ### <a name="when-adding-records-using-virtual-entities-is-there-any-way-to-use-number-sequences"></a>仮想エンティティを使用してレコードを追加する場合、番号順序を使用する方法はありますか?
 はい、Finance and Operations エンティティで番号順序が自動生成される場合は、仮想エンティティからも同じように機能します。

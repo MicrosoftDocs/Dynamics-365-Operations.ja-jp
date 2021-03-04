@@ -1,6 +1,6 @@
 ---
 title: ワークスペースのフォーム パターン
-description: このトピックでは、ワークスペース フォーム パターンについて説明します。 ワークスペースはユーザーがタスクと特定のページに移動する主な方法です。 ワークスペースは、サポートされている重要な事業活動ごとに作成する必要があります。
+description: このトピックでは、ワークスペース フォーム パターンについて説明します。 ワークスペースはユーザーがタスクと特定のページに移動する主な方法です。
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebe0a7213194d6bcbe9e96ed9e326586099da733
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2db675bde4bc376a1dc2c2716bb1c153d8594308
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684985"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093710"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 

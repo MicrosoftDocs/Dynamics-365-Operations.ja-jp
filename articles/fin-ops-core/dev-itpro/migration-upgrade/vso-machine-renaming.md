@@ -1,6 +1,6 @@
 ---
 title: ローカル開発 (VHD) 環境の名前変更
-description: このトピックでは、複数のコンピューター間で Microsoft Azure DevOps プロジェクトにアクセスし、1 つのバージョンのサービスの更新プログラムを正常にインストールできるように、ローカル開発 (VHD) 環境の名前を変更する方法について説明します。
+description: このトピックでは、Microsoft Azure DevOps プロジェクトにアクセスし、One Version のサービスの更新プログラムをインストールできるように、ローカル環境の名前を変更する方法について説明します。
 author: MargoC
 manager: AnnBe
 ms.date: 07/24/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3afab2f9f0295a071a2745828a80457e535d0c26
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5e83068a198a35cc6ab8ca2112d903d8cea93bae
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130777"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 

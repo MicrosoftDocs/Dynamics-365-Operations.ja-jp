@@ -1,6 +1,6 @@
 ---
 title: C# および X++ ソース コードを使用したビジネス ロジックを記述する
-description: このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
+description: このチュートリアルでは、C# と X++ 間での相互運用性について説明します。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
 author: pvillads
 manager: AnnBe
 ms.date: 02/07/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53ada319a9b9b969eb27b4ed9c7d74e295bb3644
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 41c9793534a05935222848791be755d5567e0bda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409279"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093581"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 

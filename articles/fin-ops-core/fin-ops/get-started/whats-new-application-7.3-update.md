@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ae1957a268398aa4e2ab55756fdac417193a3d6c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 053b49baf451e2c538772883b2b92902d2785daf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694925"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797861"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "4694925"
 
 Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合の最初のフェーズは、プライベート プレビューで利用できるようになりました。
 
-Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Common Data Service (CDS) 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約明細行の流れを有効にします。 Common Data Service データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Common Data Service へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
+Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約明細行の流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
 
 このソリューションは、次の領域で直接同期を提供します。
 

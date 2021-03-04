@@ -1,5 +1,5 @@
 ---
-title: バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更
+title: バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
 description: このトピックでは、開発ツール、ソフトウェア開発キット (SDK)、およびアプリケーション ライフサイクル管理 (ALM) の主要な変更点について説明します。
 author: RobBertram
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d0bcbd48a9beff240410966ceb61b8c123301fc4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ccead497c5c87a036b799e87525c54ff2e156bb5
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128377"
 ---
-# <a name="important-development-and-alm-changes-from-version-10010-to-10013"></a>バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更
+# <a name="development-and-alm-changes-from-version-10010-to-10013"></a>バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: ルックアップ コントロール
-description: この記事では、コントロールの検索動作を有効にする方法について説明します。 また、複数選択ルックアップを作成する方法について説明し、現在サポートされていないルックアップ シナリオの概要について説明します。
+description: この記事では、コントロールの検索動作を有効にする方法について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa1ab09507ff3569811e5264e2679007f18ff07
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 40e521991a6b6ebceef6b3d027e620e7915db07b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687822"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092438"
 ---
 # <a name="lookup-controls"></a>ルックアップ コントロール
 

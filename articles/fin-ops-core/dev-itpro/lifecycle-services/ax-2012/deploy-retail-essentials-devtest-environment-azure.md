@@ -1,6 +1,6 @@
 ---
 title: Azure での Retail Essentials 開発/テスト環境の配置
-description: このトピックでは、Microsoft Azure に Retail essentials 開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
+description: このトピックでは、Microsoft Azure に Retail essentials 開発環境またはテスト環境を配置する方法について説明します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: ab90351791709fd9ee2d3c3e814516f5a056b269
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 42b10719b68da13e0c5400c068f89757e05ac836
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128651"
 ---
 # <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 

@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: 91a72860017243ae364a24e919d49711da9deb5e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 63eeb4e380de76847b2cb8ac614531860c6e2f8c
+ms.sourcegitcommit: 284265c3252d05a9c95f05bedc3520c6fbef65a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694108"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
@@ -81,4 +81,3 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 ## <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
 プラットフォーム更新プログラム 22 では、断片化したインデックスを再構築する新しいシステム バッチ ジョブが導入されました。 インデックスの断片化により、固有のシナリオでパフォーマンスが著しく低下します。 断片化の問題に対処し、データベースを最高のパフォーマンス状態に維持するため、このバッチ ジョブはスケジュールされた時間に定期的に激しく断片化したインデックスを再構築します。 既定では、そのジョブは毎日現地時間の午前 3:00 に最大 2 時間実行されるようにスケジュールされます。 再構築する必要がある断片化されたインデックスが多くないとバッチ ジョブが判断した場合は早期に完了します。  
 
-詳細については [SQL インデックスの最適化を処理するバッチ ジョブ](../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md) を参照してください。

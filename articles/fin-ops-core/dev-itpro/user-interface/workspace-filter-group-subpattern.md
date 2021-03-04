@@ -1,6 +1,6 @@
 ---
 title: ワークスペース ページ フィルター グループのサブパターン
-description: この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。 このサブパターンは、ワークスペースがフォーム上で 1 つのワークスペース全体にかかわるフィルターを公開する必要があるとき、運用ワークスペース パターンの一部として使用されます。
+description: この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d1e19ab247be6a5e8970adc7653982380700ad8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: de0acc19f2b50cce826a49375f111dacebfe45bb
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684989"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094178"
 ---
 # <a name="workspace-page-filter-group-subpattern"></a>ワークスペース ページ フィルター グループのサブパターン
 

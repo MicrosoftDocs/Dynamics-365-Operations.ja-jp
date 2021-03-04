@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: e26b95c89674b02f69bd5ec72c48f42b9fe66e0c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: aa594eca38d54efd1c4f90a9d4b433837b9d1e69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693168"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797329"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 

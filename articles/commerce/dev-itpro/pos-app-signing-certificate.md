@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: aabca5d14e25069a9b34340e0e189223977e2348
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e406b0a096181c313a1f0670d29f409c2c3e67c9
+ms.sourcegitcommit: 0653a89b9f675df52882103934a6dd6b0557cc5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681528"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "4842902"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
 [!include [banner](../includes/banner.md)]
 
-Modern POS (MPOS) をインストールするには、信頼されたプロバイダーからの署名証明書を使用して MPOS アプリに署名する必要があります。 証明書を使用して MPOS アプリに署名するために、**Retail SDK\\ビルド ツール\\Customization.settings** ファイルにあるオプションのいずれかを使用します。
+Modern POS (MPOS) をインストールするには、信頼されたプロバイダーからのコード署名証明書を使用して MPOS アプリに署名し、現在のユーザーの信頼されたルート フォルダーの下に MPOS がインストールされているすべてのコンピューターに同じ証明書をインストールする必要があります。
+
+証明書を使用して MPOS アプリに署名するために、**Retail SDK\\ビルド ツール\\Customization.settings** ファイルにあるオプションのいずれかを使用します。
 
 - Azure DevOps ビルド ステップのセキュア ファイル タスク部分を追加して、証明書をアップロードしてファイル タスクを保護します。 セキュア ファイル タスクの出力パス変数を Customization.settings ファイルのパラメーターとして使用します。
 

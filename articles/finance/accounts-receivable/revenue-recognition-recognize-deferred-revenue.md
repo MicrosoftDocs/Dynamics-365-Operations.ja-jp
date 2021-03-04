@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459406"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115923"
 ---
 # <a name="recognize-deferred-revenue"></a>繰延収益の認識
 
@@ -39,7 +38,7 @@ ms.locfileid: "4459406"
 - 収益認識スケジュールは、請求済の販売注文から直接開くことができます。 この場合、収益スケジュールの情報は、選択した販売注文の詳細のみを表示するようにフィルター処理されます。 この方法は、販売注文のスケジュールの詳細を検証する場合に役立ちます。
 - 収益認識スケジュールは、**収益認識 \> 定期処理のタスク** ページから開くことができます。 この方法は、多くの場合、期間の最後に収益が認識される場合に使用されます。 ページが最初に開かれたときは、情報は表示されません。 グリッドの上にあるフィルターを使用して、表示するスケジュールの詳細の基準を定義します。 日付範囲、販売注文、顧客、プロジェクト ID、または都道府県を入力して、請求書の日付をフィルター処理できます。
 
-[![収益スケジュール ページ](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![収益スケジュール ページの図](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 グリッドの下の **財務分析コード** クイック タブに、販売注文明細行の財務分析コードが表示されます。 これらの分析コードは、繰延収益への転記時に考慮されています。 収益が認識されたときにも考慮されます。 使用される分析コード値は、収益および繰延収益の主勘定に配賦されている勘定構造によって異なります。
 

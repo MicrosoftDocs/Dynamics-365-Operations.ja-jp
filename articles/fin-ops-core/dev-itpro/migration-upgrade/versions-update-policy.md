@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: f0a2f4e257c6dc8f946af9d8704b3537d5cc0e77
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 213483668ea1c05db68385a8e84af8d272a0f232
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685437"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067638"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -53,7 +53,7 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
      
       リリース 8.1 で動作しているユーザーは、重要ではない更新を展開するには、最新のサービス更新プログラムに更新する必要があります。
 
-> [!Note]
+> [!NOTE]
 > アプリケーションおよびプラットフォーム リリースは、ソフトウェアのライフサイクルの月末に期限が切れます。
 >
 > Microsoft は、サービスの終了に達しているバージョンの問題を修正しません。 Microsoft は、以前のバージョンで発生した問題の調査とトラブルシューティングも行いません。 サービスの終了に達したバージョンで問題が発生した場合は、最新の更新プログラムに更新し、それでも問題が解決されない場合は、その問題を報告する必要があります。

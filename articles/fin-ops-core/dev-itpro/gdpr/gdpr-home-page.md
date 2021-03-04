@@ -1,6 +1,6 @@
 ---
 title: GDPRデータの要求リソースに応答する
-description: このトピックでは、Finance and Operations アプリ、およびその他の Dynamics 365 製品を使用する顧客として、一般データ保護規則 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
+description: このトピックでは、一般データ保護規則 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
 author: rschloma
 manager: AnnBe
 ms.date: 07/23/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b25fd35c4283439176f3fb48a401b8b32ac4a1e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0ff26f95359fb18aaa270ad53da2c4de5d7d836b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685153"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130667"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 

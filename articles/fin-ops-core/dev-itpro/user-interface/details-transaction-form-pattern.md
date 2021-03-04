@@ -1,6 +1,6 @@
 ---
 title: 詳細トランザクション フォーム パターン
-description: このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー
+description: このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用すると、ユーザーはヘッダーの表示と明細行の表示間で切り替えができます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42641bb4b2590ddbf53e8c96f90b73784f972254
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b7e7ed419382420912ba0dd17517c9957e91a6a1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682455"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092318"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 

@@ -1,6 +1,6 @@
 ---
 title: エンティティ格納と Power BI の統合
-description: エンティティ格納は、Microsoft Dynamics 365 Finance に含まれている運用データ ストアです。 このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
+description: このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/16/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 605b8b410887d782abe8370abdfeacda00393ad8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 54cbfc0aac365256e0174bedcff73ee94e697566
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688305"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092472"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

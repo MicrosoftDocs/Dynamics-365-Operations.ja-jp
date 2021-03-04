@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations アプリのテクニカル サポートを設定する
-description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。 必要な設定およびサポートの問題を作成して対応する方法について説明します。
+description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/13/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45fce57f7324ec0be652e63822657c113eae30d9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5bab27e7d39cf5656294c1e6d8756dcc4538c612
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129695"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
 [!include [banner](../includes/banner.md)]

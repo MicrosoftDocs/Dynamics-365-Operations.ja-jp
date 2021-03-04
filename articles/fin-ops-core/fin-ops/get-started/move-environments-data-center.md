@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: ff7feb8bdccef8e86425dfaba3f5ecca7168fdcf
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 824ece56f3794afc61edfdcf98948d382d32cb28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695076"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798244"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 

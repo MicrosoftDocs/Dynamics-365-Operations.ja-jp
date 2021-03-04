@@ -1,7 +1,7 @@
 ---
 title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
@@ -14,20 +14,19 @@ ms.reviewer: sericks
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f66cca1d8725edde8c2feb9594d0400503cf8d5
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a3231e8bf9d2d4e34b299e3552bb31424e62906f
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694373"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141892"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。 このトピックでは、関連情報を見つけやすくするために、管理者のセクションとユーザーのセクションに分かれています。
 
@@ -101,7 +100,7 @@ ms.locfileid: "4694373"
 | 電子メール プロバイダー ID | ユーザーは、電子メールを送信するときに使用する電子メール プロバイダーを選択できます。 ここでオプションを選択することは、**どのように電子メール送信しますか** ダイアログ ボックスで **今後確認しない** をオンにするのと同じです。 空白のオプション **使用する電子メール プロバイダーの入力を求める** を選択すると、メールが送信されるときに **電子メールを送信する方法** ダイアログ ボックスが表示されます。 |
 | 送信者の電子メール    | 管理者が電子メールの **ソース** フィールドでユーザーに電子メール アドレスの上書きを提供できるようにします。 既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの **ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。 SMTP で電子メールを送信するとき、ユーザーは交換または SMTP サーバー上で構成された適切な **送信者** および **代理送信者** アクセス許可を持っている必要があります。<blockquote>[!NOTE] **送信者** および **代理送信** 権限は、 Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。</blockquote> |
 
-## <a name="user-how-would-you-like-to-send-email-dialog-box-optional"></a>[ユーザー] 電子メールをどのように送信しますかダイアログ ボックス (省略可)
+## <a name="user-how-would-you-like-to-send-email-dialog-box-optional"></a>[ユーザー] 電子メール ダイアログ ボックスをどのように送信しますか (省略可)
 
 電子メールを送信するときは、**電子メールをどのように送信しますか** ダイアログ ボックスが表示され、それに電子メールを送信するために使用可能なオプションが一覧表示されます。
 
@@ -112,7 +111,7 @@ ms.locfileid: "4694373"
 | システムの電子メール クライアントの使用 | **電子メール送信する** 構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。 |
 | 今後このメッセージを表示しない                                                       | このフィールドが選択されていない場合は、次回に電子メールが送信されたときに最後に選択したオプションが使用され、ダイアログ ボックスが表示されません。 |
 
-## <a name="user-send-email-dialog-box-optional"></a>[ユーザー] 電子メールの送信ダイアログ ボックス (省略可)
+## <a name="user-send-email-dialog-box-optional"></a>[ユーザー] 電子メール ダイアログ ボックスを送信 (省略可)
 
 **電子メール送信** ダイアログ ボックスが開き、送信される電子メールの内容を編集できます。 次のフィールドの一部は、このウィンドウであらかじめ設定されています。
 
@@ -296,4 +295,4 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 [Office 統合のチュートリアル](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
-[Microsoft Dynamics AX [AX 2012] で電子メール機能をコンフィギュレーションする](https://technet.microsoft.com/library/aa834374.aspx)
+[Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)

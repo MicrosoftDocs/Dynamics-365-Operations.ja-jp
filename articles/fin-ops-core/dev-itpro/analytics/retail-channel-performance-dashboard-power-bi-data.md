@@ -1,6 +1,6 @@
 ---
 title: 小売チャネルの実績 PowerBI.com ソリューション
-description: このトピックでは、Dynamics AX 7.0 リリースの Retail channel performance PowerBI.com ソリューションに関する情報を提供します。 この PowerBI.com ソリューションを使用すると、チャネル パフォーマンス アナリティクスを迅速にビルドして、販売実績に基づいて傾向を予測し、洞察を得ることができます。
+description: このトピックでは、Dynamics AX 7.0 リリースの Retail channel performance PowerBI.com ソリューションに関する情報を提供します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 05/09/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0dcad44ce6cd617138cf195aa31569f907b9f71
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ce6744cebd1b6544ef01042ec52f853d28c58662
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688297"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093280"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 

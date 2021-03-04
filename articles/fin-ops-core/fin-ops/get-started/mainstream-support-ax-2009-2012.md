@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 25e24b7de84ecdec2402a957f781505094857814
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 63b62dff994d3c3c1838e708e12ef8054fe34191
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693445"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797327"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 

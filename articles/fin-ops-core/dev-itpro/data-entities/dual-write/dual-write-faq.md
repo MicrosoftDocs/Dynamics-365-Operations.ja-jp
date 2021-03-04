@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a28d001998bcfd2966a00aba316ec5544bfdfe03
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d3acfac5d953e773ed82a4894fcf956361d0b41b
+ms.sourcegitcommit: 48cbc5b0dbbc8aaddd19ee36fb04834540c4781a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685627"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5107822"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -43,7 +43,7 @@ ms.locfileid: "4685627"
 
 ### <a name="do-application-users-require-any-special-permissions-to-enable-or-configure-dual-write"></a>アプリケーション ユーザーは、二重書き込みを有効にしたり構成したりするために特別なアクセス許可を必要としていますか?
 
-Finance and Operations 環境に対して 2 つ の Azure Active Directory (Azure AD) アプリケーションが設定され、Dataverse 環境で 2 つのアプリケーション ユーザーが設定されている必要があります。 これらのアプリケーション ユーザーには、適切なアプリケーション ID を含める必要があります。 正常に接続されるようにするため、アプリケーションに、セキュリティ ロールを使用して関連するエンティティ アクセス許可を付与する必要があります。 詳細については、[要件を確認してアクセスを許可する](requirements-and-prerequisites.md#verify-requirements-and-grant-access) を参照してください。
+Finance and Operations 環境に対して 2 つ の Azure Active Directory (Azure AD) アプリケーションが設定され、Dataverse 環境で 2 つのアプリケーション ユーザーが設定されている必要があります。 これらのアプリケーション ユーザーには、適切なアプリケーション ID を含める必要があります。 正常に接続されるようにするため、アプリケーションに、セキュリティ ロールを使用して関連するテーブル アクセス許可を付与する必要があります。 詳細については、[要件を確認してアクセスを許可する](requirements-and-prerequisites.md#verify-requirements-and-grant-access) を参照してください。
 
 ### <a name="do-end-users-require-any-special-permissions-to-enable-or-configure-dual-write"></a>エンド ユーザーは、二重書き込みを有効にしたり構成したりするために特別なアクセス許可を必要としていますか?
 
@@ -51,7 +51,7 @@ Finance and Operations 環境に対して 2 つ の Azure Active Directory (Azur
 
 すべてのユーザーおよび環境が単一テナントに属し、ユーザーが必要なセキュリティおよびライセンスの割り当てを所有している限り、複数のユーザーが二重書き込みマッピングにアクセスできます。
 
-### <a name="i-have-multiple-legal-entities-some-of-my-maps-are-legal-entityspecific-or-valid-for-only-some-of-the-legal-entities-what-is-the-best-way-to-address-this-requirement-can-i-apply-a-filter-such-as-company--usmf-to-address-it"></a>複数の法人を担当しています。 扱っているマップの中には、法人に特化しているもの、または一部の法人に対してのみ有効というものがあります。 この要件に対応する最善の方法は何でしょうか? Company = USMF などのフィルタを適用して対応することはできますか?
+### <a name="i-have-multiple-legal-entities-some-of-my-maps-are-legal-tablespecific-or-valid-for-only-some-of-the-legal-entities-what-is-the-best-way-to-address-this-requirement-can-i-apply-a-filter-such-as-company--usmf-to-address-it"></a>複数の法人を担当しています。 扱っているマップの中には、リーガル テーブルに特化しているもの、または一部の法人に対してのみ有効というものがあります。 この要件に対応する最善の方法は何でしょうか? Company = USMF などのフィルタを適用して対応することはできますか?
 
 Dataverse 環境がリンクされているなら、リーガル テーブル マッピングを行うことができます。 特定の法人にテーブル マップをマップすることはできません。
 
@@ -67,9 +67,9 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 ### <a name="what-is-the-purpose-of-the-integration-key-and-is-it-mandatory"></a>統合キーの目的は何ですか。これは必須ですか?
 
-統合キーは、行を一意に識別するナチュラル キーです。 統合キーは、Dataverse テーブルに対してのみ必要です。 二重書き込みで統合キーを手動作成できます。 エンティティに対して代替キーが既に提供されている場合は、エンティティの代替キーから自動的に統合キーを作成することもできます。 統合キーは、代替キーと同じ目的で使用されます。これにより、データを外部システムと統合するための効率的かつ正確な方法が提供されます。 統合キーは、Dataverse の行を一意に識別するグローバル一意識別子 (GUID) が外部システムに格納されていない場合に必須です。
+統合キーは、行を一意に識別するナチュラル キーです。 統合キーは、Dataverse テーブルに対してのみ必要です。 二重書き込みで統合キーを手動作成できます。 テーブルに対して代替キーが既に提供されている場合は、テーブルの代替キーから自動的に統合キーを作成することもできます。 統合キーは、代替キーと同じ目的で使用されます。これにより、データを外部システムと統合するための効率的かつ正確な方法が提供されます。 統合キーは、Dataverse の行を一意に識別するグローバル一意識別子 (GUID) が外部システムに格納されていない場合に必須です。
 
-二重書き込みでは、統合キーを使用して、固有の組み合わせを表す 1 つ以上のエンティティ フィールド値を使用して、行を一意に識別します。 たとえば、統合キーを使用して勘定行を識別するには、勘定番号フィールドを使用できます。 別の方法として、勘定番号フィールドを、変更すべきではない値を持つ他のフィールドと共に使用することもできます。 詳細については、[Power Apps ポータルを使用した代替キーの定義](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal) を参照してください。
+二重書き込みでは、統合キーを使用して、固有の組み合わせを表す 1 つ以上のテーブル列の値を使用して、行を一意に識別します。 たとえば、統合キーを使用して勘定行を識別するには、勘定番号列を使用できます。 別の方法として、勘定番号列を、変更すべきではない値を持つ他の列と共に使用することもできます。 詳細については、[Power Apps ポータルを使用した代替キーの定義](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal) を参照してください。
 
 キーが Finance and Operations 環境と Dataverse 環境との間で一致していることは重要です。 そうでない場合、初期同期フェーズで問題が発生する可能性があります。
 
@@ -81,7 +81,7 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 基本的なフィルタ処理の例については、[データのフィルター処理](customizing-mappings.md#filter-your-data) を参照してください。
 
-Dataverse での詳細な例については、[結果のフィルター](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) を参照してください。 二重書き込みソースフィルターでは、ネストしたルックアップはサポートされません。 エンティティ フィールドに対する直接的な[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) のみがサポートされています。
+Dataverse での詳細な例については、[結果のフィルター](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) を参照してください。 二重書き込みソースフィルターでは、ネストしたルックアップはサポートされません。 テーブル列に対して直接、[標準のフィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)のみがサポートされています。
 
 Finance and Operations のフィルターの詳細については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges)、および[高度なフィルター処理とクエリ構文](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options) を参照してください。
 
@@ -89,7 +89,7 @@ Finance and Operations のフィルターの詳細については、[クエリ�
 
 統合がライブ同期モードの場合、いずれかのアプリケーションで同期が失敗すると、他のアプリケーションも失敗し、ユーザーにエラーが表示されます。 統合が一時停止すると、変更がステージングされます。 その後、ターゲット システムが起動して実行されるときに、これらが書き込まれます。 統合を自動的に一時停止する方法の詳細については、[警告の通知](errors-and-alerts.md#alert-notifications) を参照してください
 
-### <a name="when-live-synchronization-is-paused-and-then-resumed-does-it-follow-the-sequence-of-changes-for-example-if-the-name-field-in-the-finance-and-operations-app-is-changed-from-namea-to-nameb-to-namec-is-customer-engagement-data-changed-from-namea-to-nameb-to-namec-or-is-it-changed-directly-from-namea-to-namec"></a>ライブ同期が一時停止後に再開された場合、変更の順序に従いますか? たとえば、Finance and Operations アプリの名前フィールドが NameA から NameB、次いで NameC に変更された場合、Customer Engagement のデータは NameA から NameB、次いで NameC に変更されますか。それとも、NameA から NameC に直接変更されますか?
+### <a name="when-live-synchronization-is-paused-and-then-resumed-does-it-follow-the-sequence-of-changes-for-example-if-the-name-column-in-the-finance-and-operations-app-is-changed-from-namea-to-nameb-to-namec-is-customer-engagement-data-changed-from-namea-to-nameb-to-namec-or-is-it-changed-directly-from-namea-to-namec"></a>ライブ同期が一時停止後に再開された場合、変更の順序に従いますか? たとえば、Finance and Operations アプリの名前列が NameA から NameB、次いで NameC に変更された場合、Customer Engagement のデータは NameA から NameB、次いで NameC に変更されますか? それとも、NameA から NameC に直接変更されますか?
 
 統合は、変更の順序を完全に反映します。 この例では、Customer Engagement アプリのデータは、**NameA** から **NameB** に、次いで、**NameC** に変更されます。
 
@@ -110,35 +110,35 @@ Prospect to Cash を二重書き込みに移行する方法の詳細について
 + 高度なクエリ機能がないため、テーブルを変更
 + 会社のストライピングなどの新しい概念に適合するためのデータ移行
 
-### <a name="on-finance-and-operations-data-tables-can-i-develop-unbounded-fields-that-flow-to-dataverse-by-using-dual-write"></a>Finance and Operations データ テーブルでは、二重書き込みを使用して Dataverse にフローするバインドされないフィールドを開発することはできますか?
+### <a name="on-finance-and-operations-data-tables-can-i-develop-unbounded-columns-that-flow-to-dataverse-by-using-dual-write"></a>Finance and Operations データ テーブルでは、二重書き込みを使用して Dataverse にフローするバインドされない列を開発することはできますか?
 
-はい。 [計算フィールドと仮想フィールド](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields) の両方を使用できます。 ただし、読み取りと書き込みに必要な追加のX++ ロジックを使用して、パフォーマンスのオーバーヘッドを監視する必要があります。 同じトランザクション内でのラウンド トリップは許可されません。 したがって、X++ を使用して追加の値を変換または計算するために仮想フィールドを使用することは避け、それが同じトランザクション内の Dataverse に戻ることを予期してください。
+はい。 [計算列と仮想列](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-columns)の両方を使用できます。 ただし、読み取りと書き込みに必要な追加のX++ ロジックを使用して、パフォーマンスのオーバーヘッドを監視する必要があります。 同じトランザクション内でのラウンド トリップは許可されません。 したがって、X++ を使用して追加の値を変換または計算するために仮想列を使用することは避け、それが同じトランザクション内の Dataverse に戻ることを予期してください。
 
 ### <a name="when-i-use-the-dataverse-offline-app-what-happens-if-i-cant-sync-the-data-after-reconnection-does-this-situation-cause-an-inconsistent-state-between-the-dataverse-environment-and-the-finance-and-operations-environment"></a>Dataverse オフライン アプリを使用して、再接続後にデータを同期できない場合はどうなりますか? この状況により、Dataverse 環境と Finance and Operations 環境との間で状態が矛盾することになりますか?
 
-[電話用 Dynamics 365 アプリ](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](https://docs.microsoft.com/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに Finance and Operations 環境に同期されます。 
+[電話用 Dynamics 365 アプリ](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](https://docs.microsoft.com/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに Finance and Operations 環境に同期されます。 詳細については、[Power Apps Mobile でモデル駆動型アプリおよびキャンバス アプリを実行する](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile)を参照してください。
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
 ### <a name="how-are-number-sequences-handled-for-example-the-customer-account-number-is-automatically-generated-in-finance-and-operations-apps-but-its-added-manually-in-customer-engagement-apps"></a>番号順序はどのように処理されますか? たとえば、顧客アカウント番号は Finance and Operations アプリで自動的に生成されますが、Customer Engagement アプリでは手動で追加されています。
 
-Finance and Operations アプリと Customer Engagement アプリの番号順序は関連付けられていません。 複数のマスター エンティティが含まれるシナリオでは、別々の番号順序の形式を設計するか、各アプリケーションの範囲を定める必要があります。 次にいくつか例を挙げます。
+Finance and Operations アプリと Customer Engagement アプリの番号順序は関連付けられていません。 複数のマスター テーブルが含まれるシナリオでは、別々の番号順序の形式を設計するか、各アプリケーションの範囲を定める必要があります。 次にいくつか例を挙げます。
 
 + Finance and Operationsアプリでは、**F0001、F0002、F0003** を使用します。 Customer Engagement アプリでは、**C0001、C0002、C0003** を使用します。
 + Finance and Operations アプリでは、**US0001 から US4999 まで** を使用します。 Customer Engagement アプリでは、**US5000 から US9999 まで** を使用します。
 
-エンティティが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番フィールド](https://docs.microsoft.com/powerapps/maker/common-data-service/autonumber-fields) を参照してください。
+テーブルが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番列](https://docs.microsoft.com/powerapps/maker/common-data-service/autonumber-columns)を参照してください。
 
-### <a name="can-i-map-a-company-specific-entity-in-a-customer-engagement-app-with-a-global-entity-in-a-finance-and-operations-app-or-a-global-entity-in-a-customer-engagement-app-with-a-company-specific-entity-in-a-finance-and-operations-app"></a>Customer Engagement アプリの会社固有のエンティティを Finance and Operations アプリのグローバル エンティティに、または Customer Engagement アプリのグローバル エンティティを Finance and Operations アプリの会社固有のエンティティにマップすることはできますか?
+### <a name="can-i-map-a-company-specific-table-in-a-customer-engagement-app-with-a-global-table-in-a-finance-and-operations-app-or-a-global-table-in-a-customer-engagement-app-with-a-company-specific-table-in-a-finance-and-operations-app"></a>Customer Engagement アプリの会社固有のテーブルを Finance and Operations アプリのグローバル テーブルに、または Customer Engagement アプリのグローバル テーブルを Finance and Operations アプリの会社固有のテーブルにマップすることはできますか?
 
 二重書き込みでは、会社間のテーブル、または会社固有のテーブルのみ、両側からのマッピングがサポートされます。
 
-### <a name="how-do-i-make-a-company-specific-entity-in-dataverse"></a>どのように Dataverse の会社固有のエンティティを作成しますか?
+### <a name="how-do-i-make-a-company-specific-table-in-dataverse"></a>どのように Dataverse の会社固有のテーブルを作成しますか?
 
-Dataverse の会社固有のカスタム テーブルを作成するには、カスタム テーブルと標準の会社エンティティとの間に多対一 (N:1) の関係を追加します。 また、エンティティ キーの一部として会社の外部キーを含める必要があります。 詳細については、[Dataverse の企業概念](company-data.md) を参照してください。
+Dataverse の会社固有のカスタム テーブルを作成するには、カスタム テーブルと標準の会社テーブルとの間に多対一 (N:1) の関係を追加します。 また、テーブル キーの一部として会社の外部キーを含める必要があります。 詳細については、[Dataverse の企業概念](company-data.md) を参照してください。
 
 テーブル マップの二重書き込みを有効にするには、Dataverse で代替キーを定義する必要があります。 Dataverse の代替キーの値は、Finance and Operations アプリで定義されているキーと一致する必要があります。 詳細については、[テーブルをリンクするための基準](enable-entity-map.md#criteria-for-linking) を参照してください。
 
-### <a name="is-there-a-document-about-best-practices-for-entity-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>エンティティの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
+### <a name="is-there-a-document-about-best-practices-for-table-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>テーブルの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
 
 可能であれば、顧客や仕入先の統合などの一般的なシナリオをカバーしている[標準のシナリオ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping)を使用してください。

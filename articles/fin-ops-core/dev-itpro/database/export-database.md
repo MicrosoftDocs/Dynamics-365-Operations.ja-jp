@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: aa3ddfdea3717bb5b7a34376ca9f4cbd1aca1db4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e165da0762bb3486059d5d0377f1f8f54595457
+ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681082"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "4826382"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -31,7 +31,7 @@ ms.locfileid: "4681082"
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-### <a name="maximum-limit-50-gb-on-exported-bacapcs"></a>エクスポートされた bacapcs で最大 50 GB 
+### <a name="maximum-limit-50-gb-on-exported-bacpacs"></a>エクスポートされた bacpacs で最大 50 GB 
 LCS からデータベースのエクスポートを実行するシステムを維持するために、最大 bacpac サイズの制限が設定されています。 この制限は、エクスポートする bacpac ごとに、50 GB に設定されます。 この制限の理由は次のとおりです。 
 
 - 一元化されたシステムでは、同じ地域の複数の顧客に対してエクスポートを実行しています。このシステムは、ディスク領域に制限があります。  
@@ -69,22 +69,23 @@ GO
 
 環境からデータベース バックアップをエクスポートするときは、バックアップ ファイルにエクスポートされないデータベース要素があります。 次にいくつか例を挙げます。
 
-* LogisticsElectronicAddress テーブル内の電子メール アドレス。
-* BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。
-* SysEmailParameters テーブルの SMTP 中継サーバー。
-* PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
-* SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* **LogisticsElectronicAddress** テーブル内の電子メール アドレス。
+* **BatchJobHistory**、**BatchHistory**、および **BatchConstraintsHistory** テーブルのバッチ ジョブ履歴。
+* **SysEmailParameters** テーブルの SMTP 中継サーバー。
+* **PrintMgmtSettings** と **PrintMgmtDocInstance** テーブルの印刷管理設定。
+* **SysServerConfig**、**SysServerSessions**、**SysCorpNetPrinters**、**SysClientSessions**、 **BatchServerConfig**、および **BatchServerGroup** テーブル内の環境固有のレコード。
+* **DocuValue** テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
-* 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
+* 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、**SysEmailSMTPPassword** テーブルの **パスワード** フィールドです。
+
 
 ### <a name="known-issues"></a>既知の問題
 
 #### <a name="export-ran-for-some-time-and-then-reached-a-preparation-failed-state"></a>エクスポートはしばらく実行され、「準備に失敗しました」の状態になります。
 
-エクスポート プロセスは、大規模なデータベースが関係する Azure SQL データベースではタイムアウトすることがあります。 場合によっては、LCS から **再開** アクションを使用してエクスポート プロセスを復元することができます、 Lifecycle Services チームは既知のエラー コードを認識するよう努めており、データベースのエクスポート操作のログにこれらを追加することで、ユーザーが問題を解決できるようにします。 LCS の将来のリリースでは、これらの既知のエラー コードが追加されます。 問題が発生した場合は、以下の「手動エクスポート」セクションに従って手動でのエクスポートを行うことができます。
+エクスポート プロセスは、大規模なデータベースが関係する Azure SQL データベースではタイムアウトすることがあります。 場合によっては、LCS から **再開** アクションを使用してエクスポート プロセスを復元することができます、 Lifecycle Services チームは既知のエラー コードを認識するよう努めており、データベースのエクスポート操作のログにこれらを追加することで、ユーザーが問題を解決できるようにします。 LCS の将来のリリースでは、これらの既知のエラー コードが追加されます。 
 
 #### <a name="export-doesnt-show-any-progress-in-lcs"></a>エクスポートで LCS に進捗状況が表示されない
 

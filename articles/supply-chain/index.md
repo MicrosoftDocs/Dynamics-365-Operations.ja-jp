@@ -3,14 +3,13 @@ title: Supply Chain Management ホーム ページ
 description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: kamaybac
 manager: tfehr
-ms.date: 06/30/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 17c8b95dd9cf05813d765d4552f493a1a1b00f31
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459427"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154282"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -89,7 +88,6 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
   - [Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)](https://youtu.be/zotrj3SbCl4)
 - **倉庫管理:**
   - [倉庫管理システムを最大限に活用する](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: 高度な倉庫管理 - プロセス製造の日常](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **生産管理ビデオ:**
   - [Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)](https://youtu.be/y1jrd3A_k70)
@@ -102,7 +100,7 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 ## <a name="white-papers"></a>ホワイト ペーパー
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)](https://docs.microsoft.com/dynamics/s-e/)
 - [BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>eLearning コース

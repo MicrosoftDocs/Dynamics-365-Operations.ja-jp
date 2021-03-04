@@ -1,6 +1,6 @@
 ---
 title: 開発マシンでの新しいユーザーの作成
-description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。
+description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが開発者として有効になります。 この記事では、別のユーザー アカウントを有効にする方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/11/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afef5361bdd41e28fe52502015f24e9e0ee353db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b3fd52787c9e0b0baf1416a02173f566e3ac55a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408969"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092884"
 ---
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 

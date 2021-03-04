@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 63811296e6be8d0b24554d493123f4e3f28d5f06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6d410dac11848dc741686da97dc63b906ef7e86f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688299"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797532"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -29,16 +29,11 @@ ms.locfileid: "4688299"
 
 このトピックでは、 Microsoft Dynamics 365 Finance での Financial Reporting のリセット方法を説明します。 データマートは、ユーザーの役割 と クライアント や インフラストラクチャー へのアクセス権に応じて、複数の方法でリセットすることができます。
 
-特定のシナリオでは、場合によっては財務諸表のデータ マートをリセットする必要があります。 次にいくつか例を挙げます。
-
-- アプリケーション データベースが復元されましたが、データ マート データベースは復元されませんでした。
-- ある期間で誤ったデータが表示され、その問題がレポートの設定による問題ではないと判断した場合。
-- ある期間で誤ったデータが表示され、レポート デザイナーの統合ステータス ページの統合実施の下にレコードが表示されます。 (レポート デザイナーを起動し、 **ツール** > **統合ステータス**)。
-- トラブルシューティング手順の一部として、サポートはデータ マートをリセットするように指示します。
-
 データマートのリセットは、データベース で あまり処理が行われていないときだけに留めるようにしてください。 財務諸表は、リセット プロセス中は使用できません。
 
 > [!NOTE]
+> データ マートのリセットが必要なことを確認するには、[データ マートをリセットする場合](when-to-reset-data-mart.md) を参照してください。
+
 > データマートのリセットは、レポートの構造を定義しているレポートの定義には影響しません。 しかし、レポートのエクスポートを実行してバックアップを取っておくことをお勧めします。 レポート定義をエクスポートする手順は、このトピックの後半にあるレポート定義のエクスポートとインポートという名前のセクションの最後に記載されています。
 
 ### <a name="reset-the-financial-reporting-data-mart-from-report-designer"></a>レポート デザイナーからの財務報告のデータ マートのリセット

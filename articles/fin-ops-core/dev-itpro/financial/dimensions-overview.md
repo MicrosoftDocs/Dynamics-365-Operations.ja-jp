@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86420da59a8c5e2270a85129012ab7a00fc4f765
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c238c61cd798c0cb430396487a3b4bf24ef3b47a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680502"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982252"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -50,9 +50,12 @@ ms.locfileid: "4680502"
 
     ![Odata の財務分析コード](media/financial-dimensions-odata.png).
 
-3. プロジェクトをコンパイルし、データベースと同期します。
+3. プロジェクトをコンパイルし、データベースと同期します。 
 
-    ![8](media/8-300x260.png)
+    > [!NOTE] 
+    > プロジェクトが適切に機能するには、拡張機能名 "DimensionIntegration" を保持する必要があります。
+
+    ![構築および同期するメニュー オプション](media/8-300x260.png)
 
 4. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 

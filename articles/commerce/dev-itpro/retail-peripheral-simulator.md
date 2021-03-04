@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ca86b2a19c22d73993bc0d05147213f8be8d7184
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dbde30231ff06154f081e2955ed75c2637bc20fc
+ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687979"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "4801437"
 ---
 # <a name="peripheral-simulator-for-commerce"></a>コマースの周辺機器シミュレーター
 

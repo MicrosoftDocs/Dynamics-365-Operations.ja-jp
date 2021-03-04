@@ -1,7 +1,7 @@
 ---
 title: '[Excel で開く] エクスペリエンスの作成'
 description: Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 79223
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92b86cf5412774e9c561c682fae568f8d0fc2087
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 259c601bc24d2fe82328b67ce5b75dd1fa331a75
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685419"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141930"
 ---
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
@@ -315,7 +315,7 @@ _settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(
 ## <a name="how-do-i-enable-relationship-lookups-in-excel"></a>Excel でリレーションシップ ルックアップをどのように有効にしますか。
 Excel データ コネクタでリレーションシップ ルックアップを有効にするには、次のメタデータが設定されていることを確認する必要があります。
 
-- 関係で定義されているロールと関連データ エンティティ ロールは、ソースおよびターゲット エンティティの両方のすべての関係間で一意である必要があります。 これは、DimensionCombinationEntity など多くのリレーションシップを持つエンティティのリレーションシップにとって特に重要です。 予想されるルックアップが表示されない場合は、ロール名を次の形式に変更してみます。
+- 関係で定義されているロールと関連データ エンティティ ロールは、ソースおよびターゲット エンティティの両方のすべての関係間で一意である必要があります。 また、リレーション ロールのプロパティはすべてのエンティティで一意である必要があります。 これは、DimensionCombinationEntity など多くのリレーションシップを持つエンティティのリレーションシップにとって特に重要です。 予想されるルックアップが表示されない場合は、ロール名を次の形式に変更してみます。
 
    - **ロール**: \[このエンティティのパブリック名\] + \[ターゲット エンティティのパブリック名\] + \[ターゲット エンティティ フィールド\] + 「ソース」
    - **関連データ エンティティ ロール**: \[このエンティティのパブリック名\] + \[ターゲット エンティティのパブリック名\] + \[ターゲット エンティティ フィールド\] + 「ターゲット」

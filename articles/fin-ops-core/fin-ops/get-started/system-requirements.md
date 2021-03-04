@@ -3,7 +3,7 @@ title: クラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 10/28/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: fd6dfbc5947436420f08a01da696c32060c98da2
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e13b1c8de761f70d186ed3053d0664fb81785a0d
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693683"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077593"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -31,12 +31,15 @@ ms.locfileid: "4693683"
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 
-Web アプリケーションは、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。
+ユーザーは、これらの一般的なブラウザの最新バージョンを使用してアプリにアクセスできます。 
 
-- Windows 10 の Microsoft Edge (公開されている最新のバージョン)。 これは、レガシ Edge と Chromium に基づく Microsoft Edge の両方に適用さ れます。 
-- Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
-- Google Chrome (公開されている最新バージョン) 
-- Apple Safari (公開されている最新バージョン)
+- Microsoft Edge (推奨: [Chromium ベースの Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
+- Google Chrome
+- Apple Safari
+- Internet Explorer 11 (非推奨)
+
+> [!NOTE]
+> パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 Internet Explorer 11 のサポートは非推奨です。 詳細については、[Internet Explorer 非推奨のお知らせ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)を参照してください。
 
 各 Web ブラウザーの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。
 

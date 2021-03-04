@@ -13,15 +13,14 @@ ms.reviewer: josaw
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bf8672d46443101b57eed94129f7b838c620645e
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 2022b24a87136f332542cbfd66099ecf75cf20da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4409531"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985938"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 

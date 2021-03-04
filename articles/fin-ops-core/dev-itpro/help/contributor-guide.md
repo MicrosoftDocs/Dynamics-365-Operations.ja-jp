@@ -11,12 +11,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: 369f33e759af0570082d6945f03e3fb752945396
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f8b9bf8255d5c57a67d8285407b450c36ff14bce
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685097"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5121562"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 
@@ -67,8 +67,6 @@ GitHub および Markdown の世界で Microsoft に参加するには、新し�
 
 オープンソース ツールまたはその他のツールを使用して、Microsoft Word から Markdown に変換できます。 このようにして、コンテンツを簡単にリサイクルできます。
 
-> [!IMPORTANT]
-> Word の [Writage](http://www.writage.com/) プラグインは、既存のコンテンツ Markdown に変換する場合に役立ちますが、Word でマークダウン ファイルを編集するのに使用 **しない** ことをお勧めします。 それ以外の場合は、マークダウン ファイルを保存すると、すべてのメタデータ タグおよび一部の書式設定が失われます。
 
 ### <a name="get-updates-from-microsoft"></a>Microsoft から更新プログラムを入手
 

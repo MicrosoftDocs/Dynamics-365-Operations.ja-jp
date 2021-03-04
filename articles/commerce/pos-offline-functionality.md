@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 27041
 ms.assetid: 20b51874-8912-40cf-9296-864df707315a
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 049fcc7d40043bae6f330fcf2339363e66888fea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e036f80c2d4542d4516ba6505101fecf3b84d1ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408664"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989569"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 

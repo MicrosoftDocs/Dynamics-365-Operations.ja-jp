@@ -1,6 +1,6 @@
 ---
 title: Azure での Retail E-commerce 開発/テスト環境の配置
-description: このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
+description: このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を配置する方法について説明します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4d5537f4c21dd62eaf30057abca51983c694e6f0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cbd7c5a830408bf7ad1dd74e652518e6ebcef9d0
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683484"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128451"
 ---
 # <a name="deploy-retail-e-commerce-devtest-environments-on-azure"></a>Azure での Retail E-commerce 開発/テスト環境の配置
 

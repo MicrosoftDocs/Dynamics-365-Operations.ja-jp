@@ -72,12 +72,12 @@
                   items:
                     - name: Supply Chain Management ホーム ページの新機能または変更された機能
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.17 (2021 年 4 月)
+                      href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (2021 年 2 月)
                       href: get-started/whats-new-scm-10-0-16.md
                     - name: Supply Chain Management 10.0.15 (2021 年 1 月)
                       href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (2020 年 11 月)
-                      href: get-started/whats-new-scm-10-0-14.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
@@ -154,6 +154,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 保存されているビュー
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Supply Chain Management の標準の保存済みビュー
+                  href: get-started/saved-views-scm.md
                 - name: グリッド機能
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: カスタム フィールドの作成と操作
@@ -174,8 +176,8 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations アプリのアーキテクチャ
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
                 - name: 実装プロジェクトの研修
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 環境計画
@@ -224,6 +226,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
+              href: cloud-edge/cloud-edge-warehouse-order.md
         - name: 資産管理
           items:
             - name: 資産管理の概要
@@ -363,6 +367,8 @@
               items:
                 - name: 予測、作業指示書、およびプロジェクト
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: 顧客所有の資産のメンテナンスの請求
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: 資産管理と固定資産の統合
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: 予防的/リアクティブ メンテナンス
@@ -439,10 +445,14 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: メンテナンスの状態
                   href: asset-management/controlling-and-reporting/maintenance-status.md
-            - name: 資産管理と Dynamics 365 Guidesの統合
+            - name: モバイル アプリからの資産管理
+              items:
+                - name: 資産管理モバイル ワークスペースの設定
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: 資産管理モバイル ワークスペースの使用
+                  href: asset-management/asset-management-mobile-workspace.md
+            - name: 資産管理と Dynamics 365 Guides の統合
               href: asset-management/asset-management-guides-integration.md
-            - name: 資産管理モバイル ワークスペース
-              href: asset-management/asset-management-mobile-workspace.md
         - name: データ管理
           items:
             - name: ターゲット エンティティ
@@ -1319,6 +1329,8 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: 手持在庫モバイル ワークスペース
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: 在庫操作のトラブルシューティング
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: 出荷プロセス
               items:
                 - name: 出荷プロセスの概要
@@ -1377,12 +1389,18 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: 安全マージン
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: 購買要求
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: 生産計画
+                  href: master-planning/planning-optimization/production-planning.md
                 - name: 計画最適化を使用した在庫マーキング
                   href: master-planning/planning-optimization/marking.md
                 - name: 会社間計画
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: 特定の製品ライフサイクル状態の製品を除外する
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: 補充タイム フェンス
+                  href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: 計画オーダーの承認
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: 計画最適化の自動確定
@@ -1909,6 +1927,8 @@
                   href: production-control/bom-designer-functionality.md
                 - name: フォーミュラ デザイナーの使用
                   href: production-control/formula-designer.md
+                - name: 生産材料の既定の予約原則の上書き
+                  href: production-control/override-default-reservation-principle.md
                 - name: バリアント重量を使用した発注書へのバリアント製品の追加
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: コンフィギュレーション可能な製品の販売注文の作成
@@ -2027,6 +2047,8 @@
                       href: production-control/bill-of-material-bom.md
                     - name: BOM デザイナーの機能
                       href: production-control/bom-designer-functionality.md
+                    - name: 生産材料の既定の予約原則の上書き
+                      href: production-control/override-default-reservation-principle.md
                     - name: ファントム品目
                       href: production-control/phantom-items.md
                     - name: BOM 計算
@@ -2757,6 +2779,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: システム主導のクラスター ピッキング
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: 梱包と保管へのさまざまな分析コードの設定
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: コンテナー詰めの設定
                       href: warehousing/tasks/set-up-containerization.md
                     - name: バッチおよびライセンス プレートの確認
@@ -2823,6 +2847,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: ウェーブ ラベルの再印刷と無効化
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: 小型パーセルの出荷
+                      href: warehousing/small-parcel-shipping.md
                     - name: 積荷構築と出荷のトラブルシューティング
                       href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: 出荷連結ポリシー
@@ -2915,12 +2941,16 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: 場所ディレクティブの作業
                       href: warehousing/create-location-directive.md
+                    - name: 倉庫トランザクション用の製品フィルターのコンフィギュレーション
+                      href: warehousing/filters-and-filter-codes.md
                     - name: 場所別在庫限度
                       href: warehousing/location-stocking-limits.md
                     - name: ウェーブ ステップ コード
                       href: warehousing/wave-step-codes.md
                     - name: ウェーブ処理のコンフィギュレーション
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: ウェーブ中の作業作成のスケジュール
+                      href: warehousing/configure-wave-schedule-work-creation.md
                     - name: ウェーブ ラベル印刷の設定と使用
                       href: warehousing/configure-wave-label-printing.md
                     - name: 出荷の自動更新
@@ -2955,6 +2985,8 @@
                       href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: 倉庫アプリのインストールとコンフィギュレーション
                   items:
+                    - name: 倉庫管理モバイル アプリのインストールと接続
+                      href: warehousing/install-configure-warehouse-management-app.md
                     - name: 倉庫アプリのインストールと接続
                       href: warehousing/install-configure-warehousing-app.md
                     - name: 倉庫アプリでカメラを使用するバーコード スキャン

@@ -1,6 +1,6 @@
 ---
 title: PowerBI.com 統合の構成
-description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。
+description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/12/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8583f2e4c4f626c78aba4c08d88821d0bdcdab08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f3bde334e3132468763cba66b9f161e321f26ba7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687495"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093401"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 

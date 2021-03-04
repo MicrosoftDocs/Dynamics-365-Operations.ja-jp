@@ -1,6 +1,6 @@
 ---
 title: クックブックの照会
-description: このトピックでは、LCS の [環境の監視] ページにある [SQL インサイト] タブの下の各クエリの詳細と、パフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法を示します。
+description: このトピックでは、SQL インサイト タブのクエリについて、またパフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法について説明します。
 author: meeramahabala
 manager: AnnBe
 ms.date: 10/02/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4fc06a269c613f1a1c0e4feac29c123144fb805a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca1049f33421ff94b824ca09c9a8a4df2f0a71d5
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130047"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 

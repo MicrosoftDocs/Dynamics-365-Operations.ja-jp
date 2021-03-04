@@ -1,6 +1,6 @@
 ---
 title: 会社間データ共有
-description: このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Finance and Operations 展開で、参照およびグループ データを会社間で共有するためのメカニズムです。
+description: このトピックでは、配置において参照データおよびグループ データを会社間で共有するためのメカニズムである会社間データ共有について説明します。
 author: peakerbl
 manager: AnnBe
 ms.date: 06/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a3d276572f3b93a85208cc7232e09fcb1e379f43
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0acc779438951b2f0546d67113f1906f84672a7e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128551"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 

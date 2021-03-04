@@ -1,6 +1,6 @@
 ---
-title: コマンド ラインからの配置可能パッケージのインストール
-description: このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
+title: コマンド ラインからの配置可能なパッケージのインストール
+description: このトピックでは、コマンド ラインを使用して、バイナリ更新プログラムまたは環境で作成されたアプリケーション (AOT) 配置可能パッケージを適用する方法について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 07/23/2019
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2710e6c2ce357733bf5f7f3b645d2bb491010f6b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 19be1208a3eba3785a0c5a8e3731ce1fdfa1b565
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127663"
 ---
-# <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
+# <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能なパッケージのインストール
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
 
 > [!IMPORTANT]
-> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics  Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[クラウド環境への更新プログラムの適用](apply-deployable-package-system.md)を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、ローカル開発環境 (ダウンロード可能な仮想ハード ディスク [VHD])、Microsoft Azure のマルチボックス開発/テスト環境 (LCS パートナーおよび試用プロジェクト)、およびビルド環境があります。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
+> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics  Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[クラウド環境への更新プログラムの適用](apply-deployable-package-system.md)を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、Microsoft Azure のローカル開発環境 (ダウンロード可能な仮想ハード ディスク [VHD])、マルチボックス開発/テスト環境 (LCS パートナーおよび試用プロジェクト) およびビルド環境があります。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
 
 ## <a name="key-concepts"></a>重要な概念
 - **配置可能パッケージ** - 配置可能パッケージとは、任意の環境に適用できる配置の単位です。 Application Object Server (AOS)、更新されたアプリケーション パッケージ、または新しいアプリケーション パッケージのランタイム コンポーネントに対するバイナリの修正プログラムで構成できます。

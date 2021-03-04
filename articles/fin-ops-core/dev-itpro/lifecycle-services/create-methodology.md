@@ -1,6 +1,6 @@
 ---
 title: 方法の作成または更新
-description: Microsoft Dynamics の Lifecycle Services (LCS) は、より反復可能で予測可能な実装プロジェクト体験を保証するために使用できる方法を提供します。 いずれかの提供された方法を使用するか、自分の方法を作成することができます。 方法を使用すると、進捗状況を容易に追跡およびレポートすることができます。
+description: Lifecycle Services は、より反復可能で予測可能な実装プロジェクト体験を保証するために使用できる方法を提供します。
 author: meeramahabala
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af17a07aa5e079cc69a807a886179953d9f2afb2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cba5fc667a0b58a91ed6ed1cf20d6b6c64daf984
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128863"
 ---
 # <a name="create-or-update-methodologies"></a>方法の作成または更新
 

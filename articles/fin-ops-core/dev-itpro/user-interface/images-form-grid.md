@@ -1,6 +1,6 @@
 ---
 title: ページ上またはグリッド内の画像
-description: このトピックでは、画像をページまたはグリッドに表示する手順について説明します。 このトピックでは、イメージの使用方法のいくつかについての背景と、使用される API についても説明します。
+description: このトピックでは、画像をページまたはグリッドに表示する手順について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/09/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e0be0d9e4d1cfd9fa827bb66b828c7572c8366f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc8a37c960b1e126bcbb97c2bc388698374be372
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686578"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093516"
 ---
-# <a name="images-on-a-page-or-in-a-grid"></a>ページ上またはグリッド内の画像
+# <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 
 [!include [banner](../includes/banner.md)]
 

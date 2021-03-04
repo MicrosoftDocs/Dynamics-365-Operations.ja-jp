@@ -1,6 +1,6 @@
 ---
-title: ドキュメントの Reporting Services
-description: この記事では、Finance and Operations で利用できる統合レポート ソリューションについて説明します。 このソリューションにより、サービス管理が簡略化され、開発者の生産性が向上し、ユーザーのレポート表示エクスペリエンスが強化されます。
+title: ドキュメント レポート サービス
+description: このトピックでは、サービス管理が簡略化され、開発者の生産性が向上し、強化されたレポート表示を提供するレポート ソリューションについて説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b024ceb51ee74a9f20c862fd161e13ca83b58be
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 720590ad437b25694280a19e85387e0b7c1998a6
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688427"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093370"
 ---
-# <a name="document-reporting-services"></a>ドキュメントの Reporting Services
+# <a name="document-reporting-services"></a>ドキュメント レポート サービス
 
 [!include [banner](../includes/banner.md)]
 

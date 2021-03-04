@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0f23b62a557b842b4b7c205d9976716d0f878e14
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c60ba00ddcdf50c2d8897cb6d13089c3be1b9eb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409175"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009146"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1007-january-2020"></a>Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能と変更点
 

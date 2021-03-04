@@ -1,6 +1,6 @@
 ---
 title: プロジェクトのビルドおよびデバッグ
-description: このチュートリアルでは、フリート管理アプリケーションでコードを分析してデバッグするために Visual Studio でのツールの使用について確認します。 ブレークポイントを設定し、あるコードを変更し、その結果を構築する、単純な開発者のシナリオを検討します。
+description: このチュートリアルでは、フリート管理アプリを使用して、ブレークポイントの設定方法、コードの変更方法、および結果の構築方法を示します。
 author: pvillads
 manager: AnnBe
 ms.date: 02/06/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5880e09cd17f7ff9b0f6700597309802e6192bd1
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 1a53ed27ebf9697ae9794bd03fa75d3fc407c457
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409501"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093283"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 

@@ -1,6 +1,6 @@
 ---
 title: セキュリティとデータ エンティティ
-description: このトピックでは、データ エンティティのセキュリティについて説明します。 データ エンティティはエントリ ポイント セキュリティをサポートするため、ロール ベースのセキュリティ フレームワークによって制御されます。 データ エンティティのエントリ ポイントを権限および職務にマッピングするモデルは、ターゲット シナリオによって異なります。 したがって、データ エンティティでは、統合モードごとに個別のセキュリティ構成が可能です。
+description: このトピックでは、データ エンティティのセキュリティについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 03/11/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2d4a4d29de61dc9df1c303866abb11fa522d0e0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 222b18106e8af461f801097e49d8626c336dc01f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127661"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 

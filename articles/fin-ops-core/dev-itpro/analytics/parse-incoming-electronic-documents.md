@@ -1,6 +1,6 @@
 ---
 title: アプリケーションのデータを更新するために受信したドキュメントを解析する
-description: このトピックでは、受信したドキュメントを解析し、選択したコンテンツをアプリケーション データに適用して更新できるように電子報告 (ER) 形式を設定する方法について説明します。
+description: このトピックでは、受信したドキュメントを解析することができる電子報告 (ER) 形式を設定する方法について説明します。
 author: nickselin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d8e8f01d614f37e0bcc7a5a6df2e9a5b0ea11f80
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca810f35642e06d9a8a56d854597ad2fa475060f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685747"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092410"
 ---
-# <a name="parse-incoming-documents-to-update-application-data"></a>アプリケーションのデータを更新するために受信したドキュメントを解析する
+# <a name="parse-incoming-documents-to-update-application-data"></a>アプリケーション データを更新するために受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
 
 電子申告 (ER) 書式をデザインしてアプリケーション内で実行し、受信した電子ドキュメントを解析し、その内容を使用してアプリケーション データを更新することができます。

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a88494a211ad8400becf84cb99aaced7bea0fed0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 986fdd56b96f5f45da368d2a20f236adf6ecc061
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693892"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797297"
 ---
 # <a name="create-a-submittoworkflow-class"></a>SubmitToWorkflow クラスの作成 
 

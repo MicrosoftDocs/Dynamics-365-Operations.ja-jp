@@ -1,6 +1,6 @@
 ---
 title: セクション タイルのサブパターン
-description: この記事では、セクション タイルのサブパターンに関する情報を提供します。 このサブパターンは、タイル、グラフ、および単一カードのセットを含む最初のパノラマ セクション (概要セクション) 専用の、運用ワークスペース パターンの一部として使用されます。
+description: この記事では、セクション タイルのサブパターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49a9941f1a033aa10e5be2c70531d33ed6e90986
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 90443e71c1f1790cb6070347c401bf9939671544
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688429"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092441"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 

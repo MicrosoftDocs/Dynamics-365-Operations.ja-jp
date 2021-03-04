@@ -1,6 +1,6 @@
 ---
 title: Power BI Embedded 統合
-description: パートナーと ISV が開発する Power BI コンテンツは、アプリケーションに直接埋め込むことができます。 このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
+description: このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 02/09/2018
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 4ff676f90e26942f7c0483f9d72029cdb46eea06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2f968ea764cd6b654cba1659bb754c5a1715e623
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685748"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092475"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 

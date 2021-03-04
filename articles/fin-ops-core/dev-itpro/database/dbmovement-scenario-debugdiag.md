@@ -3,7 +3,7 @@ title: 生産データベースのコピーのデバッグ
 description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 4636fcbb0c83923e30a04397ae35b26e4c0b4389
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e89dfaf7997379eb8419f0dd03ba21221e99a1f1
+ms.sourcegitcommit: 9f9045ad1fc4062a5d112cf312ba691c632aec96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681094"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5068486"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 
@@ -94,3 +94,4 @@ LCS で UAT 環境の環境詳細ページから値を使用するように、�
 
 - DevTest 環境のコードとバイナリのバージョンが、UAT 環境のバージョンと正確に一致することを確認します。 展開用のパッケージを作成したのと同じブランチに DevTest 環境を接続します。 または、リリースされている最新のカスタマイズで最新の状態になっている "HotfixSupport" ブランチに接続します。
 - Visual Studio からデータベースの同期を実行しないでください。 そうしないと、UAT データベース内のスキーマの可用性に影響を与え、UAT 環境のユーザーに影響を与える可能性があります。
+- 最適なエクスペリエンスのため、UAT 環境として同じデータセンターに配置された開発者環境を使用してください。

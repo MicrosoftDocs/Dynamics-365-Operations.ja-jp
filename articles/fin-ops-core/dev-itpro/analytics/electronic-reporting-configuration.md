@@ -1,6 +1,6 @@
 ---
-title: 電子申告 (ER) コンフィギュレーションを作成する
-description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは電子申告ツールの使用によって国/地域別機能またはソリューション固有機能を実装する必要があります。
+title: 電子申告 (ER) コンフィギュレーションの作成
+description: この記事では、電子レポートを使用しての構成の作成に役立つ背景情報を提供します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/18/2018
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b158ea60f4af99e9ae70b7be9e8daa9cabcac23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b03535377ad23af55410a2b3d5674f65395db4c2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683343"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092831"
 ---
-# <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションを作成する
+# <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションの作成
 
 [!include [banner](../includes/banner.md)]
 

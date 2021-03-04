@@ -1,6 +1,6 @@
 ---
 title: ツールバーおよびリストのサブパターン
-description: この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。
+description: この記事では、ツールバーとリストのフォームのサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 805a60ec6d861dbce13370efee7991fd33620393
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 339ef327524c34a2a972f1e5ec55e5adb177b661
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684995"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094187"
 ---
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: cbittner
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: c80266a06a3b90dc6be5f3a5dea416b6e7656ed7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e9d45dd1d128c9e6cebf4952324a7f2ecb528b0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408990"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000624"
 ---
 # <a name="client-images-in-pos"></a>POS のクライアント イメージ
 

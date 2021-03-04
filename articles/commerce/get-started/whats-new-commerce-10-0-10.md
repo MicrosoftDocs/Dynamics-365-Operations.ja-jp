@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 099d0639df734f043205d087b8b8ba22900d5745
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d5cc42cf1f25e2aa87c1e2ccce364e9eb4be3a2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409290"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012490"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10010-may-2020"></a> Dynamics 365 Commerce 10.0.10 (2020 年 5 月) の新機能および変更された機能
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 1b053e528145d03a6fa8757ff489a502decac844
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: be99375b3c7d007f1786f4be3d6dbc6fad4b132d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694225"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798242"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 

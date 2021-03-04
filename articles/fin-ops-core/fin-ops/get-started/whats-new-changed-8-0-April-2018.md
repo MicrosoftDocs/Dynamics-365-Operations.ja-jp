@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 7e94f1c796a7dd3ba3138f3364281a5850d23b0e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2b5b79776b122a2c4e38825468823d96bf7b52c8
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693162"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797183"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
@@ -101,9 +101,9 @@ Microsoft Power Apps を使用して、外部ソースからのデータを Fina
 
 ## <a name="integration"></a>統合 
 
-### <a name="integration-with-common-data-service-cds"></a>Common Data Service (CDS) との統合
+### <a name="integration-with-dataverse"></a>Dataverse との統合
 
-Dynamics 365 for Finance and Operations では、Finance and Operations と Dynamics 365 for Field Service の間、および Finance and Operations と Dynamics 365 for Project Service Automation の間のクロス アプリケーションの業務プロセスを有効にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと CDS を使用して構成され、クロス アプリケーション シナリオを実現します。
+Dynamics 365 for Finance and Operations では、Finance and Operations と Dynamics 365 for Field Service の間、および Finance and Operations と Dynamics 365 for Project Service Automation の間のクロス アプリケーションの業務プロセスを有効にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと Dataverse を使用して構成され、クロス アプリケーション シナリオを実現します。
 
 ### <a name="integration-with-dynamics-365-for-field-service"></a>Dynamics 365 for Field Service との統合
 

@@ -1,7 +1,7 @@
 ---
 title: Office 統合のトラブルシューティング (タスク ガイド)
-description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
-author: ChrisGarty
+description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
+author: jasongre
 manager: AnnBe
 ms.date: 04/28/2020
 ms.topic: article
@@ -14,17 +14,17 @@ ms.reviewer: sericks
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ba679397d63b92613567e7b151ce9965993b278
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 04f2d1f5b9565e070ce638063e51c303c53254bc
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688495"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141928"
 ---
-# <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
+# <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 

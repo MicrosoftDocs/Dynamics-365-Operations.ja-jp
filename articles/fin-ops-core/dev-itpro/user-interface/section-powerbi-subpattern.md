@@ -1,6 +1,6 @@
 ---
 title: セクション Power BI のサブパターン
-description: この記事では、セクション PowerBI サブパターンに関する情報を提供します。 このサブパターンは、PowerBI コントロールを含むパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
+description: この記事では、セクション PowerBI サブパターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f9809af3cdd96723594e46751e60c4c468479ea
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1596cdeaa4fb56f287949952ed19068f36abc5b4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687298"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092373"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 

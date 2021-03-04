@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d79664fc66ff3854bd735d2d006ff2a4294dfa0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bfd0eed2be6ca941b9462d182d75a5764afae7af
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130769"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 

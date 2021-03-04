@@ -1,6 +1,6 @@
 ---
 title: 画像タイプ
-description: モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。 イメージは、次のいずれかの種類が使用できます&amp;58 DataUri、Base64、URL、AOTResource、または Symbol。
+description: モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b272a349a9e85f77545d16be21ee27764e567b59
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9b77308dca5691fbd33d9dda7124549148915ed0
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129265"
 ---
 # <a name="image-type"></a>画像タイプ
 

@@ -1,6 +1,6 @@
 ---
 title: セクション関連リンクのサブパターン
-description: この記事では、関連リンクのサブパターンに関する情報を提供します。 このサブパターンは、他のフォームへのリンクのセットを含む最後のパノラマ セクション専用の運用ワークスペース パターンの一部として使用されます。
+description: この記事では、関連リンクのサブパターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42818f11527598d36cb716e2fe39186a1aeb2d85
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a61febe140bb953ee0de39ac29b699ce03c02f8c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687294"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092370"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 

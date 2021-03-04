@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: db5b9b4f0f0a64984b9fb721ba759f2ac48bfb76
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 1f148c5783645bd6eab4bd309e988040b0e51f8e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693164"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798240"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件
 

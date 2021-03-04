@@ -1,7 +1,7 @@
 ---
 title: 仕入先コラボレーションの設定と管理
 description: このトピックでは、Dynamics 365 Supply Chain Management で仕入先コラボレーションを設定する方法について説明します。 また、新しい仕入先コラボレーション ユーザーのプロビジョニング方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/03/2018
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 audience: IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9e919c9815c06f3c1c2e1d88a890d5956e78661
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5c4d534a40582fb0f5cb7c924ed4287376eda70f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408910"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016364"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 

@@ -1,6 +1,6 @@
 ---
 title: フォームの全般的なガイドライン
-description: このトピックには、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
+description: このトピックには、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
 author: jasongre
 manager: AnnBe
 ms.date: 03/09/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e40d7e1714da3616647795c87125d2d5578f34f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2fd08551a5e8b0fb1b2fbb477ec85adf0f1e5cb1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686584"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093550"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 

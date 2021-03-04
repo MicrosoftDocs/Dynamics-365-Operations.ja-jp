@@ -1,6 +1,6 @@
 ---
 title: 日付の有効期間
-description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。
+description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/04/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87ee95ba63ae4281cdf7cb5cc13d39e9350115af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 75a724614b17a3b7c9f06346b82b96f935cb6acb
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409392"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093629"
 ---
 # <a name="date-effectivity"></a>日付の有効期間
 

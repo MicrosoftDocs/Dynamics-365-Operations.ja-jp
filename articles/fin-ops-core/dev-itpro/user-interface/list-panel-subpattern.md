@@ -1,6 +1,6 @@
 ---
 title: リスト パネルのサブパターン
-description: この記事では、リスト パネル フォームのサブパターンに関する情報を提供します。 アプリケーション チームはこのサブパターンを使用して相互にデータを移動する 2 つのリストを管理します。
+description: この記事では、リスト パネル フォームのサブパターンに関する情報を提供します。このサブパターンは、互いにデータを移動する 2 つのリストを管理します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2afd72e1753dbb7c843a03a35f48705a733f0d34
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0542abffb977f1935cf2b1ff2295c8cebdd69e69
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682453"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092125"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 

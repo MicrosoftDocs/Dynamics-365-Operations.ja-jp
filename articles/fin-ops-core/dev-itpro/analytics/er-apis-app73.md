@@ -1,6 +1,6 @@
 ---
 title: Application update 7.3 での ER フレームワーク API の変更
-description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。
+description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告フレームワークの API における変更について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/28/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65b25388029187971050dd6e3185dc19723ae38a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 89a4c4479b9e1c655abb8a910d14adba805fc862
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685365"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093585"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 

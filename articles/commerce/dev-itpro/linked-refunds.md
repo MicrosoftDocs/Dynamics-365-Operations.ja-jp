@@ -1,5 +1,5 @@
 ---
-title: リンクされた払戻 - 以前に承認および確認済みのトランザクションの払戻
+title: 以前に承認および確認済みのトランザクションのリンクされた払戻
 description: このトピックでは、リンクされた払戻を有効にして使用する方法を説明します。
 author: josaw1
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 5c8fe296e7351d744ad5105d84f39e5a1e641c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 957b8aa7fedb0bec4c5cd0a3a85e359676ef7fdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128653"
 ---
-# <a name="linked-refunds--refunds-of-previously-approved-and-confirmed-transactions"></a>リンクされた払戻 – 以前に承認および確認済みのトランザクションの払戻
+# <a name="linked-refunds-of-previously-approved-and-confirmed-transactions"></a>以前に承認および確認済みのトランザクションのリンクされた払戻
 
 [!include [banner](../../includes/banner.md)]
 

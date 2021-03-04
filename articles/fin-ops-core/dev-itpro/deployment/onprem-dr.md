@@ -1,6 +1,6 @@
 ---
-title: オンプレミスにおけるディザスター リカバリーの構成
-description: このコンテンツでは、ディザスター リカバリーに向けて Dynamics 365 Finance + 操作 (オンプレミス) を構成する方法と、プライマリ データセンターとセカンダリ データセンターの切り替えプロセスを構成する方法について説明します。
+title: オンプレミス障害復旧コンフィギュレーション
+description: このトピックでは、ディザスター リカバリー用に Dynamics 365 Finance + Operations (オンプレミス) を構成する方法について説明します。
 author: faix
 manager: AnnBe
 ms.date: 09/11/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 419aab6e0776ad186ec6cdac320a79d0a68e980d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d9159d0d7a00d9d312ec3ca11cc244a62fd56389
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128741"
 ---
-# <a name="on-premises-disaster-recovery-configuration"></a>オンプレミスにおけるディザスター リカバリーの構成
+# <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
 
 ディザスター リカバリーの中心となる概念は、データ復元環境を含む2番目のデータセンターを使用することです。 ディザスター リカバリーの計画、文書化、テストは、運用環境の設定と同様に慎重に行うことを推奨します。

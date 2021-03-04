@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 9ba7268dddb7b88e53de4f8ef3c4044d9a5a38a1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 88130fa3bcf8bea28b190b8b20f083920f9bd719
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680026"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154105"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
@@ -45,7 +45,7 @@ Windows のデモ環境で仮想マシンに試用版のライセンスを更新
 コマンド プロンプト ウィンドウが短く表示され、仮想マシンが再起動します。 ライセンスは現在 180 日間有効です。 この手順は 3 回完了することができます。
 
 ## <a name="how-do-i-renew-the-microsoft-dynamics-ax-license-on-a-demo-virtual-machine"></a>デモ仮想マシンで Microsoft Dynamics AX ライセンスを更新するにはどうすればよいですか。
-Microsoft Dynamics AX のデモ環境で仮想マシンのライセンスを更新する必要がある場合、[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898) から試用版のライセンス ファイルをダウンロードします。 「[ライセンス情報の指定](https://technet.microsoft.com/library/aa496447.aspx)」に記載の手順に従います。
+Microsoft Dynamics AX のデモ環境で仮想マシンのライセンスを更新する必要がある場合、[CustomerSource](https://docs.microsoft.com/dynamics/s-e/) または [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898) から試用版のライセンス ファイルをダウンロードします。 「[ライセンス情報の指定](https://technet.microsoft.com/library/aa496447.aspx)」に記載の手順に従います。
 
 ## <a name="how-do-i-activate-windows-on-the-virtual-machines-in-my-non-demo-environment"></a>非デモ環境で仮想マシンの Windows をアクティブにするにはどうしたらいいですか。
 Windows は非デモ環境に含まれている仮想マシン上で自動的に有効化されます。 ただし、有効化には完了までに 4 日間かかる場合があります。 4 日間後に Windows を有効化するように求めるメッセージが続けて表示される場合は、Azure サポート チームに問い合わせます。 Azure サポート チームに連絡する方法の詳細については、次のセクションを参照してください。

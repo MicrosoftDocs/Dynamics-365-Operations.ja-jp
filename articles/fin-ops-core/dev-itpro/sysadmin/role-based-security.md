@@ -3,7 +3,7 @@ title: ロールベース セキュリティ
 description: このトピックでは、ロールベースのセキュリティの要素の概要を提供します。
 author: peakerbl
 manager: AnnBe
-ms.date: 07/18/2019
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0243734235b8c2a5773e41960749b897d7fac222
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 207d52f42cb99ae69d2df74e35529a52e602a266
+ms.sourcegitcommit: 053f4cda6862fbcd9e3aa6e9cb009e7de833beac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686309"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5075753"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
@@ -68,7 +68,7 @@ Finance and Operations アプリでは、ロールベースのセキュリティ
 既定の職務が用意されています。 管理者は、職務権限に関連付けられている権限を変更するか、新しい職務権限を作成することができます。
 
 ## <a name="privileges"></a>権限
-セキュリティ モデルでは、ジョブを実行したり、問題を解決したり、割り当てを完了したりするために必要なアクセス許可のレベルが権限によって指定されます。 権限はロールに直接割り当てることができますが、職務をロールのみに割り当てることをお勧めします。 これにより、権限をまずグループ化して職務にまとめられ、メンテナンスが容易になります。 
+セキュリティ モデルでは、ジョブを実行したり、問題を解決したり、割り当てを完了したりするために必要なアクセス許可のレベルが権限によって指定されます。 権限はロールに直接割り当てることができますが、職務をロールのみに割り当てることをお勧めします。 これにより、権限がまずグループ化して職務にまとめられ、メンテナンスが容易になります。 
 
 権限には、ユーザー インターフェイス要素やテーブルなどの個別のアプリケーション オブジェクトへのアクセス許可が含まれています。 たとえば、**支払のキャンセル** 権限には、支払のキャンセルに必要なメニュー項目、フィールド、およびテーブルへのアクセス許可が含まれています。 
 

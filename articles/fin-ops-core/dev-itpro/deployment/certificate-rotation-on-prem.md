@@ -3,7 +3,7 @@ title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 7b5e6b38aedb17850e0fe41cc81c182c2608dc78
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 28d01e3e7a529391839995321b7ff03a33fecdf4
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686345"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118697"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -35,7 +35,7 @@ ms.locfileid: "4686345"
 > [!CAUTION]
 > この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。 
 >
-> 証明書ローテーションをする前に Service Fabric Clusterを 7.2. x にアップグレードします。
+> 証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。
 
 ## <a name="preparation-steps"></a>準備段階 
 
@@ -45,15 +45,26 @@ ms.locfileid: "4686345"
 
 3. **Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。
 
-4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書をコンフィギュレーションする](setup-deploy-on-premises-pu12.md#configurecert)の手順に従って、特に、次の手順を実行します。
+4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書のコンフィギュレーション](setup-deploy-on-premises-pu12.md#configurecert) の手順に従って、特に、次の手順を実行します。
 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    > [!IMPORTANT]
-    > 自己署名証明書は、実稼働環境では使用しないでください。 信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
+    または、Active Directory 証明書サービス (AD CS) 証明書に切り替える場合は、この情報を使用します。
+
+    ```powershell
+    # Only run the first command if you have not generated the templates yet.
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!NOTE]
+    > AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。
+    > AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。 
+
+    > 自己署名証明書は、実稼働環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
@@ -207,24 +218,37 @@ ms.locfileid: "4686345"
 - Service Fabric クライアント証明書を変更しました。
 - LocalAgent 証明書を更新しました。
 
+1. **serverCertThumprint** および **clientCertThumbprint** の値を新しいサムプリントで置き換えて、現在の localagent-config.json を更新します。
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
 1. いずれかの Orchestrator ノードに対して次の PowerShell コマンドを実行します。
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. 次の PowerShell コマンドを実行して、新しい LocalAgent の拇印を記録します。
+1. 次の PowerShell コマンドを実行して、新しい LocalAgent の拇印を記録します。
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。
+1. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。
 
     > [!NOTE] 
     > **KeyId \<key\> による既存の資格情報の更新は許可されていません** というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId <key> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。
 
-4. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。
+1. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。
 
     - クライアント証明書の拇印
     - サーバー証明書の拇印
@@ -251,8 +275,8 @@ ms.locfileid: "4686345"
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
-        "clientCertThumbprint": "Old client thumbprint"
+            "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+            "clientCertThumbprint": "Old client thumbprint"
         }
     },
     ```
@@ -265,8 +289,8 @@ ms.locfileid: "4686345"
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "New server thumbprint(Star/SF)",
-        "clientCertThumbprint": "New client thumbprint"
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
         }
     },
     ```

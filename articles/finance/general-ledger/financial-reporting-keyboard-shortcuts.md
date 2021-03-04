@@ -1,7 +1,7 @@
 ---
 title: '[欠落している勘定分析のキーボード ショートカット]'
 description: このトピックでは、Management Reporter にて不明のアカウント分析を実行する際に使用可能なキーボードショートカットの一覧を扱います。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 08/24/2019
 ms.topic: article
@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cb6c46f2280d641294363c82b6538bd18ac47d35
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4df11398e7b3a302daafa13c4f850433f4ccb705
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409462"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019090"
 ---
 # <a name="keyboard-shortcuts-for-missing-account-analysis"></a>[欠落している勘定分析のキーボード ショートカット]
 [!include [banner](../includes/banner.md)]

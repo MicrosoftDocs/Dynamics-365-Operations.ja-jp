@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8e4fd62da1ef6b585d5553238669f19f6de7abed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 387179b0d422ae9108e7af03963a696db54796bb
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685693"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154101"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 
@@ -35,7 +35,7 @@ Microsoft Dynamics Lifecycle Services (LCS) のコンフィギュレーション
 
 ## <a name="reports"></a>レポート
 
-Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)からダウンロードできます。
+Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](https://docs.microsoft.com/dynamics/s-e/)からダウンロードできます。
 
 - データ エンティティの集計: 集計するデータ エンティティと、それぞれに含まれるフィールドを一覧表示します。
 - メジャーの集計: 集計するメジャーを一覧表示します。

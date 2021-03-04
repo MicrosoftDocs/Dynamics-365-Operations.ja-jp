@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations の更新とカスタム コード ライフサイクルの管理
-description: このトピックでは、ソースコードの開発分岐を管理し、Microsoft サービス更新プログラムの次のバージョンを適用し、カスタムコードの新しいバージョンを適用するためのアプリケーション ライフサイクル シナリオについて説明します。
+description: このトピックでは、Finance and Operations の更新とカスタム コード ライフサイクルを管理する方法について説明します。
 author: rbadawy
 manager: AnnBe
 ms.date: 10/22/2020
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 94843d180c3561365a47c236a6eda5f81cdda40b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a8be97e6cbb77df2f80a5d6952ff7cc9d55aa42
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130859"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 31e5b9e6c142d6ba04485e69ff23c912b242fdcc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b2104e61a8d4d080181ed546106c4e881bfb4d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408685"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984999"
 ---
 # <a name="tax-engine-import-configuration"></a>税エンジン インポート コンフィギュレーション
 

@@ -3,7 +3,7 @@ title: オンプレミス環境のインプレース アップグレード プ�
 description: このトピックでは、 バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 2d4353f231774541bc879653de7d726f74f763f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 93b0ab28d4a8fd7ac595e4eb77d4c1dda4dd2e1d
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687860"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077464"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -82,7 +82,7 @@ ms.locfileid: "4687860"
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > (たとえば、AXDB などの) 適切な値に <DB-Name> を置き換えます。 値をさらに編集する場合は、付録 A を参照します。
+    > (たとえば、AXDB などの) 適切な値に <DB-Name> を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを確認します。
 
@@ -226,7 +226,7 @@ ms.locfileid: "4687860"
     CLUSTERED (RECID)
     ```
 
-## <a name="appendix-a"></a>付録 A
+## <a name="appendix"></a>付録
 
 ### <a name="configure-on-premises-upgradeps1-usage"></a>Configure-On-Premises-Upgrade.ps1 の使用状況
 
@@ -254,7 +254,7 @@ DatabaseServer または DatabaseUser のような追加のパラメーターを
 ```powershell
 <#
 .Synopsis
-   Configures a OnebBox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
+   Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
 
 .DESCRIPTION
    This must be executed before the upgrade process is carried out.

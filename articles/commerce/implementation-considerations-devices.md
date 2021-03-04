@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 3e72fa1ab9c4a7d14541e35e5d98bc431e6813f4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0754a813b536bd332f2990a1c0175ff89187a15
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408933"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012484"
 ---
 # <a name="device-management-implementation-guidance"></a>デバイス管理実装ガイダンス
 

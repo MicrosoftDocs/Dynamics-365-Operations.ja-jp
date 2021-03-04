@@ -1,6 +1,6 @@
 ---
 title: コントロール タイプ
-description: すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。 プロパティの変更は、UI にすぐに反映されます。
+description: すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5bc77edf397228eed2dc94f461c858bf52d4281
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 213c9f244421ef37e3382bfa60efb39ee27d6d8a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130787"
 ---
 # <a name="control-type"></a>コントロール タイプ
 

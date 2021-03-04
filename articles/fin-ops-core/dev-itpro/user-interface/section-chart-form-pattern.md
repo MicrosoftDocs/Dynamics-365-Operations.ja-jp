@@ -1,6 +1,6 @@
 ---
 title: セクション グラフのフォーム パターン
-description: このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。 このパターンは主に、作業ワークスペース パターンと組み合わせて使用されます。特に、チャート コントロールを含むフォームに使用されます。
+description: このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a87882348e357b7350eb35897fa87833161ec4e7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b962b26bc36303036deb803f5d1c03da8a4a1e1d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683935"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092379"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 

@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 86a974f949627c69f86f3f76281bb0fb90e893ce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 216e9d2efd6381981b42358797cea90c14704fcc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408684"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996238"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 

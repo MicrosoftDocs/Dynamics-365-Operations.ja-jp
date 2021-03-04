@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 264224657c737b058ee6c35e2987bb325d0a67b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40dd87c617cd6156577e1f312116f4a56a32226d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409373"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993331"
 ---
 # <a name="manage-activation-accounts-and-validate-devices"></a>アクティベーション アカウントの管理とデバイスの検証
 

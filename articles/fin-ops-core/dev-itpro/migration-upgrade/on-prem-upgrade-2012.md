@@ -3,7 +3,7 @@ title: Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 の
 description: このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance  + Operations (オンプレミス) 10.0.X にアップグレードするプロセスについて説明します。
 author: faix
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: ead11c548405c374ab179fc5a05a01fbbc57c641
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 77081f2e42097850309d4fcaab178465735eb04c
+ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687864"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "4743553"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
 
@@ -42,7 +42,7 @@ ms.locfileid: "4687864"
 
 ### <a name="prerequisites"></a>必要条件
 
-1. [LCS トライアルまたはパートナー プロジェクトにサインアップ](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project) します。
+1. [プレビュー サブスクリプションへのサインアップ](upgrade-overview-2012.md#sign-up-for-a-preview-subscription)。
 1. 各 AX 2012 リリースについては、Finance + Operations アプリケーションの最新リリースにアップグレードする前に、利用可能な最新の累積更新プログラムに更新します。
 1. アップグレード前のチェックリストをインストールします。 詳細については、[インストール](prepare-data-upgrade.md#installation) を参照してください。
 1. データ アップグレードの準備手順を実行します。 「ユーザー マッピングの設定」の手順はスキップできます。 この手順は、クラウドでホストされているアップグレードのみ関連しています。

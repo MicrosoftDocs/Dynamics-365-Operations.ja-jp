@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c7fe430a6b69aa267e2e6302aa570e2abc4ba863
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 24dc9b0014621d673b5e7df5033ad2a6e0a73733
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694401"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799018"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 

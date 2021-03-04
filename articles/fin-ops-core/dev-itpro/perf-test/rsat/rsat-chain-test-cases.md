@@ -3,7 +3,7 @@ title: テスト ケースのチェーンへの変数のコピー
 description: このトピックでは、 Regression Suite Automation Tool を使用してテスト ケースを連鎖させる方法 (テストが他のテストに値を渡す機能) について説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdcb33958cdeb8e3071a116093b5b931ce48f4a4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 22c277c27e60493a321c9ac94cb2e770c2519909
+ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688204"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5036615"
 ---
 # <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 
@@ -28,18 +28,18 @@ ms.locfileid: "4688204"
 
 Regression Suite Automation Tool の主要な機能の１つとして、テスト ケースの連鎖、つまり、テストが他のテストに値を渡す機能、があります。 テスト ケースは、 Azure DevOps テスト計画内で定義されている順序に従って実行され、テスト ツール自体で更新することもできます。 １つのテスト ケースから別のテスト ケースに変数を渡す場合は、テストを正しく順序付けることが重要です。
 
-タスク レコーダーでテストを記録しながら変数の値を保存するには、次の図に示すように、フィールドを右クリックして **タスク レコーダー > コピー** を選択します。 コピーすると、変数は記録ファイルに保存されます。 この変数は、後続のテストで使用できます。 
- 
-![タスク レコーダーのメニュー項目のコピー](media/task-recorder-copy.png)
+タスク レコーダーでテストを記録しながら変数の値を保存するには、次の図に示すように、フィールドを右クリックして **タスク レコーダー > コピー** を選択します。 コピーすると、変数は記録ファイルに保存されます。 この変数は、後続のテストで使用できます。
 
-RSAT が Excel パラメーター ファイルを生成すると、これらの保存された値が、**一般** タブの **保存された変数** テーブルに表示されます。
- 
+:::image type="content" source="media/task-recorder-copy.png" alt-text="タスク レコーダーのメニュー項目のコピー":::
+
+RSAT が Excel パラメーター ファイルを生成する場合、保存された変数は **一般** タブの **保存された変数** テーブルに表示されます。これらの変数は、**TestCaseSteps** タブのテスト ケース ステップのコンテキストにも表示されます。次の画像内では、テスト ケースの記録中に発注書 ID の値がコピーされています (手順 5)。 この値は **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}** という名前の変数に格納されます 。
+
 ![Excel に保存された変数](media/saved-variables.png)
- 
-これらの変数をテスト再生中に再利用するには、次に示すように、変数名をコピーして、別のテスト (または同じテスト) のデータ ファイルでパラメーター値の代わりに使用します。 
- 
+
+これらの変数をテスト再生中に再利用するには、次に示すように、変数名をコピーして、別のテスト (または同じテスト) のデータ ファイルでパラメーター値の代わりに使用します。
+
 ![Excel での変数の再利用](media/reuse-variables.png)
- 
+
 変数は、定義されている同じテストケースで使用できます。また、同じテストの実行中にテスト間で渡すこともできます。
 
 ## <a name="support-for-formulas-of-saved-variables"></a>保存された変数の式のサポート
@@ -50,7 +50,7 @@ RSAT が Excel パラメーター ファイルを生成すると、これらの�
 
 ![Excelでの式の作成](media/formulas.png)
 
-RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** などの Excel 関数を使用して、RAST 変数を使用した式を作成することもできます。 この機能は、Excel 式評価機能を使用して実装されるため、Excel でサポートされている関数は RSAT でサポートされています。 
+RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** などの Excel 関数を使用して、RAST 変数を使用した式を作成することもできます。 この機能は、Excel 式評価機能を使用して実装されるため、Excel でサポートされている関数は RSAT でサポートされています。
 
 次にその例を示します。
 
@@ -61,7 +61,7 @@ RSAT バージョン 1.220 の時点では、**ROUND**、**CONCAT**、**UPPER** 
 + 文字列を連結するには、以下を使用します。
 
     `=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})`
- 
+
 + 日付を計算して文字列に変換するには、以下を使用します。
 
     `=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")`
@@ -79,4 +79,3 @@ RSAT では、テストの実行中にこれらの式が評価されるため、
 保存済 (コピー済) 変数は、同じテスト ケース内で、または同じテスト スイート内の複数のテスト ケース間で使用できます。
 
 ![変数を含むメッセージ](media/rsat-message-with-variable.png)
-

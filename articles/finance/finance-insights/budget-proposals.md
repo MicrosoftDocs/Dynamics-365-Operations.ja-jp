@@ -1,7 +1,7 @@
 ---
 title: 予算案 (プレビュー)
 description: このトピックでは、組織の履歴データで機械学習モデルを使用して予算案を生成するプロセスについて説明します。
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: f230a51488dab83d98c3ac3af7daf46694db8f12
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 3fc551496a060f83541af75dea5a79a05cb7ee8b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645904"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020925"
 ---
 # <a name="budget-proposals-preview"></a>予算案 (プレビュー)
 

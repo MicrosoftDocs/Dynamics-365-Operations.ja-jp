@@ -1,6 +1,6 @@
 ---
 title: サーバー側の開発 (ワークスペース X++ API)
-description: このトピックでは、モバイル フォン アプリをサポートするプラットフォームに関する詳細情報を提供します。これにより、オフラインおよびモバイルの相互関係が充実し、使いやすいデザイナー エクスペリエンスを実現できます。
+description: このトピックでは、携帯電話アプリをサポートするプラットフォームについて説明します。このプラットフォームは、充実したオフラインおよびモバイルの相互関係、および使いやすいデザイナー エクスペリエンスを提供します。
 author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 622b27b6149009129de8d0847625ba35f4d9bdff
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ff7f2aeb2e3923e7f553166360b8e618e818422
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127631"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 

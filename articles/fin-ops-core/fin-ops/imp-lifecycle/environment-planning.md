@@ -3,7 +3,7 @@ title: 環境計画
 description: このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
 author: petryo
 manager: AnnBe
-ms.date: 11/24/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: petryo
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 50cd6e104eba4230011312c6098a25e1e2ba848b
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 64117b0a9a51d6f3da34369edecac367d0a0750f
+ms.sourcegitcommit: cf0ddcaa3e13b088ba5f6cff5e21a1480e175803
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694408"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097037"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -174,5 +174,3 @@ ms.locfileid: "4694408"
 4. マトリックスに必要な環境の一覧をまとめています。
 
 環境を識別した後は、アプリケーション ライフサイクル管理 (ALM) フローを構造化するために環境計画を使用できます。 たとえば、環境計画が完成したら、環境間でのコードおよびデータの構築と移動のためのフローを定義できます。
-
-[環境計画 TechTalk](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018) をご覧になることを強くお勧めします。 リンク先のページからは、環境計画の演習を有利に始めることができるように、*サンプル環境計画演習* スプレッドシートをダウンロードすることもできます。

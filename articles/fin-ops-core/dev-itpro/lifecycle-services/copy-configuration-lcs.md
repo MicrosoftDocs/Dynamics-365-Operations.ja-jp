@@ -1,6 +1,6 @@
 ---
 title: 構成マネージャーを使用して構成をコピーする
-description: Microsoft Dynamics Lifecycle Services の構成マネージャー (ベータ) 機能を使用して、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。
+description: 構成マネージャー (ベータ) 機能を使用すると、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5841e46ab6421fa8611eb35d417d231464a23685
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5e99a08413462b3c2459d0be685e4c180ee42bd7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128865"
 ---
 # <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 
@@ -30,7 +30,7 @@ ms.locfileid: "4679250"
 開始する前に、構成マネージャー (ベータ) を設定する必要があります。 詳細については、 [構成マネージャーの設定](set-up-configuration-manager-lcs.md) を参照してください。
 
 > [!IMPORTANT]
-> この機能は、運用上の用途ではサポートされて **いません**。  構成マネージャー (ベータ) は、環境内のデータのインポート/エクスポート フレームワークからのエンティティに依存します。 これらのエンティティには現在 AX 2012 R3 のすべての機能が含まれていないため、一部の構成データは環境間でコピーされません。
+> この機能は、運用上の用途ではサポートされて **いません**。 構成マネージャー (ベータ) は、環境内のデータのインポート/エクスポート フレームワークからのエンティティに依存します。 これらのエンティティには現在 AX 2012 R3 のすべての機能が含まれていないため、一部の構成データは環境間でコピーされません。
 
 
 ## <a name="export-a-configuration"></a>コンフィギュレーションのエクスポート

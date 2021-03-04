@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9b5d3f8b523a8ef0b4315f6d90bd6d57114b4278
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e45a5ac8d31eb223187a1f4f2f481a2009c24e45
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686526"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154267"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
@@ -38,4 +38,4 @@ ms.locfileid: "4686526"
 詳細については、[レポート ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
-[SQL Server Reporting Services レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+[SQL Server Reporting Services レポート](https://docs.microsoft.com/dynamics/s-e/)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。

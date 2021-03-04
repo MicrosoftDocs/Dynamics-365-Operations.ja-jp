@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45a62234319a7870d37e5d8f13425ea9cb3cd19e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 34472c31d54cd14639bfc80ecbb0dce8ca3ecd86
+ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685601"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5153627"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 
@@ -30,7 +30,7 @@ ms.locfileid: "4685601"
 デュアル書き込みの接続設定には、次の要件があります。
 
 + Finance and Operations アプリのビルド バージョン 10.0.9 (10.0.383.20013) (品質更新プログラム)、および Platform update 33 以降
-+ プラットフォーム バージョン 9.1.0000.11732 またはそれ以降の Microsoft Dynamics 365 モデル駆動型アプリ
++ プラットフォーム バージョン 9.1.0000.11732 以降の Customer Engagement アプリ
 
 二重書き込みには、次の制限があります:
 
@@ -41,6 +41,10 @@ ms.locfileid: "4685601"
 + 二重書き込みは、[会社間のデータ共有](../../sysadmin/cross-company-data-sharing.md) をサポートしていません。
 + 二重書き込みでは、Finance and Operations アプリおよび Customer Engagement アプリを、同じ Microsoft Azure Active Directory (Azure AD) テナントに含める必要があります。
 + 二重書き込みでは、Finance and Operations アプリおよび Customer Engagement アプリを、同じ Microsoft Azure データセンター テナントに配置する必要があります。
++ 二重書き込みは、Finance and Operations アプリの **doInsert**、**doUpdate**、および **doDelete** イベントによりトリガーされません。 二重書き込みをトリガーする場合は、Finance and Operations アプリの **挿入**、**更新**、**削除** イベントを使用します。 
++ 二重書き込みでは、分散トランザクションはサポートされません。 たとえば、[製品受領書の転記プロセスがキャンセルされた](scm-field-service-procurement.md#cancelling-the-posting-process)場合、二重書き込みは製品受領書を Dataverse で作成する場合がありますが、Supply Chain Management では作成しません。 
+
+
 
 ## <a name="one-version"></a>1 つのバージョン
 

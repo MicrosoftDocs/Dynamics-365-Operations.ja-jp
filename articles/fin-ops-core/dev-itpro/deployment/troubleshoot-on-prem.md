@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
 manager: AnnBe
-ms.date: 10/29/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: f3ee5620f4cca7a8630a67486a91d174623f8749
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bcf5175390b1d5effc8e2eb384889c5d0a481d71
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685463"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118699"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -623,7 +623,16 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 「暗号の解読に使用する証明書と秘密キーを見つけることができません」というメッセージを受信した場合は、axdataenciphermentcert と svc-AXSF$ AXServiceUser ACLs を確認してください。
 
-credentials.json ファイルが変更された場合は、LCS から環境を削除して再配置します。
+credentials.json ファイルが変更された場合、実行する必要のあるアクションは、LCS の環境ステータスによって異なります。
+
+- 環境が LCS に配置されている場合は、次の操作を行います。
+    1. 環境ページに移動して、**管理** を選択します。
+    1. **更新プログラムの設定** を選択します。
+    1. 設定は変更しないでください。 **準備** を選択します。
+    1. 数分後に環境が準備されたら、**配置** を選択します。
+
+- LCS で環境が失敗状態の場合は、次の操作を行います。
+    1. **再試行** を選択します。 新しい Credentials.json ファイルは、再試行操作中に使用されます。
 
 上記のソリューションのいずれも機能しない場合は、次の手順を実行します。
 
@@ -1202,7 +1211,26 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 ## <a name="redeploy-ssrs-reports"></a>SSRS レポートを再配置する
 
-SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。 AOS コンピューターは DB 同期を再実行し、レポートを配置します。
+#### <a name="version-10013-or-later"></a>バージョン 10.0.13 、またはそれ以降
+
+ビジネス データ データベース (AXDB) に対して次のコマンドを実行します。
+
+```sql
+    UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
+
+#### <a name="version-10012-or-earlier"></a>バージョン 10.0.12、または以前
+
+ビジネス データ データベース (AXDB) に対して次のコマンドを実行します。
+
+```sql
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
+```
+
+>[!NOTE]
+> バージョン 10.0.12、またはそれ以前のバージョンを使用している場合は、データベース全体が同期されます。
+
+コマンドを実行した後、Service Fabric エクスプローラを使用して AOS ノードの 1 つを再起動するか、ノードが実行されている VM を再起動します。
 
 ## <a name="add-axdbadmin-to-tempdb-after-a-sql-server-restart-via-a-stored-procedure"></a>ストアド プロシージャ経由で SQL Server を再起動した後、tempdb に axdbadmin を追加します。
 

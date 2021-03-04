@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Translation Service 概要
-description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。 DTS はパートナーおよび ISV がソリューションの翻訳またはサポートされている Microsoft Dynamics 製品に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。
+description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。
 author: ejcho
 manager: AnnBe
 ms.date: 07/23/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc3368de63a419677eabcfdce6711930eaeacdec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2b9c4c2a9b94c959799990e018f8c8355f9c2258
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129693"
 ---
-# <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service 概要
+# <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
 [!include [banner](../includes/banner.md)]
 

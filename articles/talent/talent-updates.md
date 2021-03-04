@@ -2,7 +2,7 @@
 title: 人材の更新
 description: この記事は、Microsoft Dynamics 365 Talent に関するプロセスと頻度についての情報を提供します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,18 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: anbichse
-ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: 13cda71e1bc0e9287916ab2412defabc7334cc4e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a94899a5c209f3051b6ae3bd97ce26cdd5c98f70
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130569"
 ---
 # <a name="talent-updates"></a>人材の更新
 
@@ -42,7 +41,7 @@ Talent の更新は、すべての環境に自動的に適用されます。 Tal
 
     特に断りのない限り、サポートされているすべてのデータセンターが毎週更新されます。 毎週の更新は、通常は水曜日に開始され、日曜日に完了します。 米国、オーストラリア、ヨーロッパ、英国、アジア、およびカナダ地域が毎週の更新プログラムに含まれています。 
 
-- **Common Data Service ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規エンティティと Common Data Service の既存のエンティティに対する変更が含まれています。 これらの更新は、週単位の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションび更新は、毎週のサービス更新と一致しない場合もあります。
+- **Dataverse ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規テーブルと Dataverse の既存のテーブルに対する変更が含まれています。 これらの更新は、週単位の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションび更新は、毎週のサービス更新と一致しない場合もあります。
 
 次の表は、スケジュールの例を示します。
 

@@ -1,6 +1,6 @@
 ---
 title: セグメント化されたエントリ コントロールの移行
-description: このチュートリアルでは、簡単なシナリオ (SMAServiceOrderTable フォームの場合) と複雑なシナリオ (LedgerJournalTransDaily フォームの場合) の 2 つのセグメント化エントリ管理の移行シナリオについて説明します。
+description: このトピックでは、セグメント化されたエントリ コントロールの移行シナリオ、SMAServiceOrderTable を使用した単純なシナリオ、および LedgerJournalTransDaily を使用した複雑なシナリオについて説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 777fcfcec6f43642e7b1f625ca85688c5b5c18dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 12f1a70278e4c96358ddb497477ca2d4fa1b9777
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680470"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129666"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98372ee1976bdce2017dd8b9a023bdf9a74106aa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a9b3a6bc91dc514c1b76e4c65cd998c33a97a86e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688061"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744657"
 ---
 # <a name="choose-a-data-integration-strategy"></a>データ統合戦略の選択
 
@@ -51,20 +51,20 @@ ms.locfileid: "4688061"
 > オンプレミス配置の場合、唯一サポートされる API は [データ管理パッケージ REST API](data-management-api.md) です。 これは、7.2、platform update 12 ビルド 7.0.4709.41184 で現在利用可能です。
 
 ## <a name="power-platform-integration"></a>Power Platform の統合
-Finance and Operations は、Common Data Service の仮想データ ソースであり、Common Data Service および Microsoft Power Platform からの完全な作成、読み取り、更新、削除 (CRUD) 操作を可能にし ます。 定義上、仮想エンティティのデータは、Common Data Service には存在しません。 代わりに、Finance and Operations には引き続き存在します。 Common Data Service から Finance and Operations エンティティに対して CRUD 操作を有効にするには 、エンティティを Common Data Service の仮想エンティティとして使用できるようにする必要があります。 これにより、Finance and Operations アプリに存在するデータに対して、Common Data Service と Microsoft Power Platform から CRUD 処理を実行できるようになります。 詳細については、[Microsoft Power Platform 統合](../power-platform/overview.md)を参照してください。
+Finance and Operations は、Dataverse の仮想データ ソースであり、Dataverse および Microsoft Power Platform からの完全な作成、読み取り、更新、削除 (CRUD) 操作を可能にし ます。 定義上、仮想エンティティのデータは、Dataverse には存在しません。 代わりに、Finance and Operations には引き続き存在します。 Dataverse から Finance and Operations エンティティに対して CRUD 操作を有効にするには 、エンティティを Dataverse の仮想エンティティとして使用できるようにする必要があります。 これにより、Finance and Operations アプリに存在するデータに対して、Dataverse と Microsoft Power Platform から CRUD 処理を実行できるようになります。 詳細については、[Microsoft Power Platform 統合](../power-platform/overview.md)を参照してください。
 
 ## <a name="dual-write-vs-classic-data-integration-patterns-vs-virtual-entities"></a>二重書き込み対クラシック データ統合のパターン対仮想エンティティ
 
 二重書き込みにより、Dynamics 365 と Finance and Operations アプリケーションのモデル駆動型アプリケーション間で、同期、双方向、ほぼリアルタイムのエクスペリエンスが可能です。 データ同期は、ほとんどまたはまったく介入を伴うことなく行われ、エンティティに対する作成、更新、および削除アクションによってトリガーされます。 二重書き込みは、Dynamics 365 アプリケーションにまたがる対話型業務シナリオに適しています。
 
-クラシック データ統合により、Dynamics 365 と Dynamics 365 Finance and Operations アプリケーションのモデル駆動型アプリケーションの間で非同期および単一方向のデータ同期エクスペリエンスが可能です。 IT管理者主導のエクスペリエンスであり、データ同期ジョブを特定の頻度で実行するようにスケジュールする必要があります。 クラシック データの統合は、Dynamics 365アプリケーション間で大量のデータの入出力を伴う業務シナリオに適しています。
+クラシック データ統合により、Customer Engagement アプリと Finance and Operations アプリの間で非同期および単一方向のデータ同期エクスペリエンスが可能です。 IT管理者主導のエクスペリエンスであり、データ同期ジョブを特定の頻度で実行するようにスケジュールする必要があります。 クラシック データの統合は、Dynamics 365アプリケーション間で大量のデータの入出力を伴う業務シナリオに適しています。
 
 | パターン                       | タイミング                        | バッチ | テクノロジ | Finance and Operations アプリ | Dynamics 365 モデル駆動型アプリ |
 |-------------------------------|-------------------------------|-------|---|------|------------|
 | 二重書き込み             | 同期<br>双方向   | 無    | OData | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 | 
 | クラシック データの統合 | 非同期、単一方向 | 有   | DIXF | Finance<br>サプライ チェーン<br>Commerce<br>サービス業<br>CoreHR | Sales<br>マーケティング<br>顧客サービス<br>Field Service<br>Project Service Automation<br>人材 |
 
-仮想エンティティは、データを Common Data Service に物理的にコピーすることなく、Finance and Operations で Microsoft Power Platform を使用するメカニズムを提供します。 このガイダンスは、要件に二重書き込みまたはデータ統合、または仮想エンティティが必要かどうかを判断するために使用する必要があります。 仮想エンティティと二重書き込み/データ統合は、必要に応じて併用できる補完的なテクノロジです。
+仮想エンティティは、データを Dataverse に物理的にコピーすることなく、Finance and Operations で Microsoft Power Platform を使用するメカニズムを提供します。 このガイダンスは、要件に二重書き込みまたはデータ統合、または仮想エンティティが必要かどうかを判断するために使用する必要があります。 仮想エンティティと二重書き込み/データ統合は、必要に応じて併用できる補完的なテクノロジです。
 
 ## <a name="synchronous-vs-asynchronous-integration-patterns"></a>同期および非同期の統合パターン
 

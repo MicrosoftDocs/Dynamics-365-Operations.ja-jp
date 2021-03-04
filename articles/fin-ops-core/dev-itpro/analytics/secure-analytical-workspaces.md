@@ -1,6 +1,6 @@
 ---
 title: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
-description: このトピックでは、Power BI Embedded を使用して提供されるレポートと、ビューアーのアクセス権に基づいてデータ セットへのアクセスを保護するための推奨方法について説明します。
+description: このトピックでは、Power BI Embedded を使用して提供されるレポートとデータ セットの両方へのアクセスを保護するための推奨方法について説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9fa3dcd0b81e2e323fdc9c08b8dd1d5625e0bed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f046bfebbc849d410a02fa271ab26ea637e2810a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682205"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094280"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 

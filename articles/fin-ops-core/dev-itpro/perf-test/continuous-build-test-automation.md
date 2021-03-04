@@ -1,5 +1,5 @@
 ---
-title: 継続的なビルドとテストの自動化をサポートする環境を配置して使用する
+title: 継続的なビルドおよびテストの自動化環境の配置と使用
 description: このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
 author: RobinARH
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a40bb90e61c630956e0e91423a7062bac2d2a4ec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb95feba09809583df877b7d1fee4c2924caed5f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127069"
 ---
-# <a name="deploy-and-use-an-environment-that-supports-continuous-build-and-test-automation"></a>継続的なビルドとテストの自動化をサポートする環境を配置して使用する
+# <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 
 [!include [banner](../includes/banner.md)]
 

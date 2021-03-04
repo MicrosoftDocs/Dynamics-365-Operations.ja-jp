@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) のプロジェクト
-description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトに関する情報を提供します。 いくつかの重要な機能について説明し、プロジェクト方法のロールについても説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトについて説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 766acef808413d17a552faa6e4faafd29b83137b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a0033c134907ea0b871d6727bb408d3d6bf7c8a2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5126987"
 ---
 # <a name="projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のプロジェクト
 

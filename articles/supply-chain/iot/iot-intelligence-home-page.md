@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbb4e2d87b4e8b7a71073e66ffc1861701ce8c3f
-ms.sourcegitcommit: bb75a2373b520a8e2b6a9a276d40697bf90ced75
+ms.openlocfilehash: edd83daec2caef7383f1f9f5232769e4a98a0d3a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "4717265"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000021"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 

@@ -1,6 +1,6 @@
 ---
 title: InputControl タイプ
-description: すべてのコントロールのメソッドと属性を持つ入力コントロール インターフェイス。 入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。
+description: すべてのコントロールのメソッドと属性を持つ入力コントロール インターフェイス。
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4d818aed74a662dbf5a67a0d4c054fc7ae6f7716
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 682b040cd871aa8f56ba7772a93807879022dbf8
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130785"
 ---
 # <a name="inputcontrol-type"></a>InputControl タイプ
 

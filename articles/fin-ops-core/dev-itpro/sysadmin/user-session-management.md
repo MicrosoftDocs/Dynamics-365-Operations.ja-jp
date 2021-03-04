@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1b6279fcf16ff8c3442c37158d7c1baeb208990d
-ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
+ms.openlocfilehash: 99fb44e5ff205088c3975848e9f8bff8c0337405
+ms.sourcegitcommit: 35cb173f0d356f00e2f50464ab77c3802ad28fbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4663318"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5033837"
 ---
 # <a name="user-session-management"></a>ユーザー セッション管理
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 
 ユーザー セッション設定は、ユーザーのセッションが期限切れになるまでにユーザーがサインインできる時間を表します。 ユーザーのセッションが期限切れになった後、ユーザーは資格情報を使用してサインインする必要があります。

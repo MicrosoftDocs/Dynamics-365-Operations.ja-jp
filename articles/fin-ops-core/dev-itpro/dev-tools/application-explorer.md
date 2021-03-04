@@ -1,6 +1,6 @@
 ---
 title: アプリケーション エクスプローラー
-description: このトピックでは、アプリケーション エクスプローラ、およびその中のさまざまなビューとフィルター処理方法について説明します。 また、トピックはアプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
+description: このトピックでは、アプリケーション エクスプローラ、およびその中のビューとフィルター処理方法について説明します。 また、トピックはアプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c157b11d3941ced71e12fd072958a44f187cfbe
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 3c0b89c068b3fa50f6ba426efd1faaec148bf3bf
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409498"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093286"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 

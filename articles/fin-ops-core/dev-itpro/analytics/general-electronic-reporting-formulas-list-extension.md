@@ -1,6 +1,6 @@
 ---
-title: 電子申告 (ER) 関数の一覧の拡張
-description: テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
+title: 電子申告 (ER) 機能の一覧の拡張
+description: この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2b706e2ff3ad9535d69d28af4ac81fafa5f7130
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 83bf426d614b383c35f9ee8b6d993ce0086128cd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682637"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093889"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 

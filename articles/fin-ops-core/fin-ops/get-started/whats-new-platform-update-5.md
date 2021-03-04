@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
-ms.openlocfilehash: 5e103c3acc2f9fb725ed286dc83a85113cd623c1
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 85603efadc49c870141d627155c73ad5625cc3e6
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692856"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797835"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-5-march-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の新機能および変更された機能
 

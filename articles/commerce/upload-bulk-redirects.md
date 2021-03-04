@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8268045832a95d6a2413a6e82d86d4b48a14bb76
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 2225ee862fe43197dc23d23f96f47fe327162b4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517344"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962897"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 

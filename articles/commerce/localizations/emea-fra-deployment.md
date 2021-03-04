@@ -13,15 +13,14 @@ ms.reviewer: josaw
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: d5aa569762671ea649066fde37c4642ed4002926
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 21cb93a4b2a19a9256cbe5f16f84f6f8aaf93048
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408765"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989578"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 

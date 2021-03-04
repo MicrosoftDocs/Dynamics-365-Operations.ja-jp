@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 045c81f3fafd8bfc1e6e80fa4be75a72bb8c8987
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24a85dc4bbef2fef36e32d1cb95e10aeac8a6fc7
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680518"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4820605"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
@@ -95,7 +95,7 @@ ms.locfileid: "4680518"
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![lookupwiki](./media/lookupwiki.png)
+    ![Visual Studio の関係プロパティ](./media/lookupwiki.png)
 
 9.  プロジェクトを構築してデータベースと同期します。
 
@@ -106,5 +106,4 @@ ms.locfileid: "4680518"
 
 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
 
-
-
+[[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)

@@ -1,0 +1,87 @@
+---
+title: Dynamics 365 Commerce 10.0.17 の機能のプレビュー (2021 月 4 月)
+description: このトピックでは、Dynamics 365 Commerce 10.0.17 の新機能または変更された機能について説明します。
+author: josaw1
+manager: AnnBe
+ms.date: 02/01/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Developer, IT Pro
+ms.reviewer: josaw
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2021-02-28
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: ea15d755d6d03ad164be90ce868b65b3ae40ec15
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104324"
+---
+# <a name="preview-features-in-dynamics-365-commerce-10017-april-2021"></a>Dynamics 365 Commerce 10.0.17 の機能のプレビュー (2021 月 4 月)
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+
+このトピックでは、Microsoft Dynamics 365 Commerce 10.0.17 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.761 で、次のスケジュールで使用できます。
+
+- **リリースのプレビュー:** 2021 年 2 月
+- **リリースの一般提供 (自己更新):** 2021 年 3 月
+- **リリースの一般提供 (自動更新):** 2021 年 4 月
+
+## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
+
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+
+- [B2B eコマース](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/b2b-e-commerce)<br> - 詳細については、[B2B eコマース サイトの設定](/b2b/set-up-b2b-site.md)を参照してください。
+- [POS で部分的にフルフィルメントされた顧客注文を編集する](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/edit-partially-fulfilled-customer-orders-pos)<br> - 詳細については、[販売時点管理 (POS) の顧客注文](../customer-orders-overview.md)を参照してください。
+- [シリアル化された品目の POS とフルフィルメント エクスペリエンスの改善](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-pos-ordering-fulfillment-experiences-serialized-items)<br> - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください。
+- [店舗の類似商品の説明](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-description)<br> - 詳細については、[「同様の説明を購入」のおすすめ候補を有効にする](../shop-similar-description.md)を参照してください。
+- コンテキストに基づいて表示されるモジュール プロパティのコンフィギュレーション<br> - 詳細については、[コンテキストに基づいて表示されるモジュール プロパティのコンフィギュレーション](/e-commerce-extensibility/configure-properties-context.md)を参照してください。
+- GeoLookup コネクタ<br> - 詳細については、[コネクタのコンフィギュレーションと有効化](/e-commerce-extensibility/connectors.md)を参照してください。
+- URL パラメーターに基づく Dynamic 電子商取引ページ<br> - 詳細については、[URL パラメーターに基づく Dynamic 電子商取引ページの作成](../create-dynamic-pages.md)を参照してください。
+- [クイック ビュー モジュール](https://docs.microsoft.com/dynamics365/commerce/quick-view-module)<br> - 詳細については、[クイック ビュー モジュール](../quick-view-module.md)を参照してください。
+- クライアンテリングの改善<br> - 詳細については、[クライアンテリングの概要](../clienteling-overview.md)を参照してください。
+- [増分支払取得に対するオムニチャネル サポート](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - 詳細については、[バックオフィスの請求の増分取得](/dev-itpro/incremental-capture.md)を参照してください。
+- [店頭チェックアウトでのリファクターされた支払処理](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
+- [電子メール受信の改善と新機能](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
+- [排他しきい値割引と排他非しきい値期間割引との競合](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
+- [販売時点管理における集荷注文処理のユーザー エクスペリエンスの向上](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - 詳細については、[POS での顧客注文集荷処理](../process-order-pickup-pos.md)を参照してください。
+- [MPOS、CPOS、MPS、および CSU の拡張機能のための独立した配置およびインストール パッケージ](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/independent-deployment-installation-packages-modern-pos-cloud-pos-hardware-station-cloud-scale-unit-extensions)
+- [簡略化した Commerce SDK の更新と開発者エクスペリエンス](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)
+- [ブラジル向け Commerce ローカライズ](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - 詳細については、「[ブラジル向け Commerce ローカライズ](/localizations/latam-bra-commerce-localization.md)」を参照してください。
+- [会計統合フレームワークに基づくフランスの小売トランザクションのデジタル署名](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/digital-signing-retail-transactions-france-based-fiscal-integration-framework)
+- [Dynamics 365 Commerce と Microsoft Teams の統合 – 組織構造、店舗、作業者を追加する](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/dynamics-365-commerce-teams-integration-add-org-structure-stores-workers)
+- [Dynamics 365 Commerce と Microsoft Teams 間のタスク管理を相乗活用する](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/synergize-task-management-between-dynamics-365-commerce-teams)
+
+## <a name="additional-resources"></a>追加リソース
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+
+Dynamics 365 Commerce 10.0.17 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.17 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) を参照してください。
+
+### <a name="bug-fixes"></a>バグ修正 
+この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=551039&dbType=3&qc=91219e7c3fc585acb17b810c915c3cbea499403538520c40e54de43a53aea6a8) を参照してください。
+
+### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 リリースのウェーブ 1 プラン
+
+当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
+
+[Dynamics 365: 2021 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
+
+[Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
+
+- *削除された* 機能は製品では使用できません。
+- *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
+
+コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

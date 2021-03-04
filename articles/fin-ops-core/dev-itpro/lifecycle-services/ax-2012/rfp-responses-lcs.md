@@ -1,6 +1,6 @@
 ---
 title: 提案依頼 (RFP) の応答
-description: RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。 このセクションの Microsoft Dynamics Lifecycle Services は、パートナー、販売前プロジェクトでのみ使用できます。
+description: RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 781964573958441f9009f26247c1966dbf8dfc6d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4c6a0a664e4f77d6346543ae7fbc57415996d88e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5126959"
 ---
 # <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cc05e2f9f8c9bb48907d91912318a5f284eada15
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74bbaf9dd2e15cb489eda0ef59a32f4b8224e950
+ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681578"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "4801433"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 

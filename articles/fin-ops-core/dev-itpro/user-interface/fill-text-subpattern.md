@@ -1,6 +1,6 @@
 ---
 title: テキスト入力のサブパターン
-description: この記事では、テキスト入力のサブパターンについて説明します。 このサブパターンは、1 つの String コントロールまたは StaticText コントロールをコンテナーの全幅まで広げる必要があるときに使用されます。これにより、ユーザーはより多くの情報を入力する領域を獲得します。
+description: この記事では、テキスト入力のサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c851da3c933c97bf16c61f007334702583663d5e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e319dc13397e6adeb4cb83f2d3d148aee1513270
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686596"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092315"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 
@@ -41,7 +41,7 @@ ms.locfileid: "4686596"
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
 
-[コンテナー]
+[Container]
 
 文字列 | StaticText
 

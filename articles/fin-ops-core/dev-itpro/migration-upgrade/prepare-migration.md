@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations へのコード移行の準備
-description: このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。
+description: このトピックでは、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/10/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 400bb81fc5a36409d54dae8b21e142006c8b1886
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2bbe780b9e23b20ca3f9bff7d193610cbc172e58
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127171"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
 

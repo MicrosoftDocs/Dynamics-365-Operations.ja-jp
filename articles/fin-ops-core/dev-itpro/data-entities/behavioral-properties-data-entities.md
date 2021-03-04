@@ -1,6 +1,6 @@
 ---
 title: データ エンティティの動作プロパティ
-description: このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるビヘイビア データ エンティティのプロパティについて説明します。
+description: このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるデータ エンティティのプロパティについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/01/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91c4b2914f58f8545ab1846481b99378658da33e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 896d8b8efa14906a21d5d49d18aff2d3bd59256d
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128659"
 ---
 # <a name="behavioral-properties-on-data-entities"></a>データ エンティティの動作プロパティ
 

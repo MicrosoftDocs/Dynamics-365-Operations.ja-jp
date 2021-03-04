@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance 10.0.16 の新機能および変更された機能 (2021 年 2 月)
+title: Dynamics 365 Finance 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.16 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
 manager: AnnBe
@@ -10,29 +10,27 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-11-20
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: aee580cd671e35bdc13fd9f0a5c1e667fe810c15
-ms.sourcegitcommit: ce34e1ac6ce3a7033618bb9fd2983b11d63d3112
+ms.openlocfilehash: 6a5419ac2eb47baeee7b48a13795c97ca95d4280
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "4597283"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053452"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10016-february-2021"></a>Dynamics 365 Finance 10.0.16 (2021 年 2 月) のプレビュー機能
+# <a name="whats-new-and-changed-in-dynamics-365-finance-10016-february-2021"></a>Dynamics 365 Finance 10.0.16 の新機能と変更された機能 (2021 年 2 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.16 の新機能または変更された機能について説明します。 このバージョンには 10.0.689 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース:** 2020 年 10 月
-- **一般提供 (自己更新):** 2020 年 1 月
+- **一般提供 (自己更新):** 2021 年 1 月
 - **自動更新:** 2021 年 2 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
