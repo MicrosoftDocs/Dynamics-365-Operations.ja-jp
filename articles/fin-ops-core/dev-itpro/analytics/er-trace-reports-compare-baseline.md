@@ -243,3 +243,6 @@ ms.locfileid: "4682826"
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

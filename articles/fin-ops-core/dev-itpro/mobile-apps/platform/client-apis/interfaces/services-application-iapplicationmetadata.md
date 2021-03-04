@@ -86,3 +86,6 @@ Id: 文字列
 アプリケーションのタイトル。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

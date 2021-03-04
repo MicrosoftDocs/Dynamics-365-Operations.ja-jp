@@ -48,3 +48,6 @@ ms.locfileid: "4445320"
 14. [転記階層] フィールドで、[現行] を選択します。
 15. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

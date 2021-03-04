@@ -58,3 +58,6 @@ ms.locfileid: "4408180"
     * 提案金額は現在の値に割引されます。  
 13. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

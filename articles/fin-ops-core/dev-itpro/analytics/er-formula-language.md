@@ -174,3 +174,6 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [電子申告機能の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

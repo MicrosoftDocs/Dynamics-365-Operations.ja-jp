@@ -49,3 +49,6 @@ ms.locfileid: "5153627"
 ## <a name="one-version"></a>1 つのバージョン
 
 将来的には、二重書き込みソリューションの更新は 1 つのバージョンから利用できるようになります。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

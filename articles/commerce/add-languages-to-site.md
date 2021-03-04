@@ -176,3 +176,6 @@ Web サイトは、Commerce がサポートする任意の言語にローカラ�
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

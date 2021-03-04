@@ -108,3 +108,6 @@ Azure DevOps でテスト スイートを作成するとき、テスト ケー�
 RSAT バージョン 1.210 では、このプロセスが簡単になりました。 不一致のすべての事例を自動的に修正するには、グリッドで目的のテスト ケースを選択し、**新規** メニューで **テスト ケース ID の不一致を解決** を選択します。
 
 ![不一致の解決](media/resolve-test-case-id-mismatch.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

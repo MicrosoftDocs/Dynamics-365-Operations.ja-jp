@@ -59,3 +59,6 @@ while select custTable
     info(strFmt("%1 , %2", custTable.AccountNum, custTable.SalesGroup));
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ XML ELEMENT および XML SEQUENCE 形式要素を使用して生成されるフ
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

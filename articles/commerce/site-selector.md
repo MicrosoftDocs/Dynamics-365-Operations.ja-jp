@@ -64,3 +64,6 @@ ms.locfileid: "4665226"
 [階層リンク モジュール](add-breadcrumb.md)
 
 [ナビゲーション メニュー モジュール](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ ms.locfileid: "4445209"
 7. [元帳決済] をクリックします。
 8. 一覧で、選択された行をマークします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

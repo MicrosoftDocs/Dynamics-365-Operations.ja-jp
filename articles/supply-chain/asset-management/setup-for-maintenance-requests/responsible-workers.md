@@ -54,3 +54,6 @@ ms.locfileid: "4432073"
 次の図は、**メンテナンス担当作業者** ページの例を示しています。
 
 ![担当メンテナンス作業者ページ](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

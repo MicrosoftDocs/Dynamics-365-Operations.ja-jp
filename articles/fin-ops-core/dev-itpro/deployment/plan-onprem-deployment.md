@@ -231,3 +231,6 @@ Finance + Operations のオンプレミス配置オプションは、オンプ�
 このトピックに記載されている計画活動を完了した後、 [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) の [研修](on-premises-deployment-landing-page.md#onboard) セクションにリストされている手順を開始することができます。
 
 計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

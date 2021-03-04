@@ -158,3 +158,6 @@ if (found)
     // do something
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

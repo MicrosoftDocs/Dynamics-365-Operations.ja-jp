@@ -53,3 +53,6 @@ Dynamics 365 Finance + Operations (オンプレミス) 展開用のローカル 
 ## <a name="why-does-the-client-connect-to-the-skype-for-business-api-when-it-first-loads"></a>クライアントが最初に読み込まれたときに Skype for Business API に接続する理由。
 
 クライアントの読み込み時に、インターネット接続が使用可能かどうかを確認するために、Skype for Business API へのクイック コール (ping) が実行されます。 使用できない場合は、クライアントは切断された方法で機能します。 環境では、このチェックを実行するために Skype for Business を表示するかどうかを指定する必要はありません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

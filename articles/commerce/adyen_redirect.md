@@ -60,3 +60,6 @@ SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment C
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [チェックアウト モジュール](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

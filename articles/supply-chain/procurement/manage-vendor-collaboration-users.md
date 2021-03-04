@@ -94,3 +94,6 @@ Dynamics 365 Supply Chain Management の仕入先コラボレーション イン
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

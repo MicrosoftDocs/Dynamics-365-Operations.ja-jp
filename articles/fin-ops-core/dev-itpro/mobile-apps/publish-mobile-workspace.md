@@ -41,3 +41,6 @@ ms.locfileid: "5127317"
 
 [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

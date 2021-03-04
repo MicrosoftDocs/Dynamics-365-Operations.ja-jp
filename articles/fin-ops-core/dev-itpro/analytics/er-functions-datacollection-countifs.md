@@ -77,3 +77,6 @@ ER 形式コンポーネントの **収集したデータ キー値** プロパ�
 ## <a name="additional-resources"></a>追加リソース
 
 [データ収集機能](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

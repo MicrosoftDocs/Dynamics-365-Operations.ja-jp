@@ -31,3 +31,6 @@ Microsoft Dynamics AX 4.0 コンテンツは TechNet および MSDN から破棄
 
 - [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Dynamics AX 2012 にサポートされるアップグレード パス](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>実稼働環境がダウンした場合はどうすればよいでしょうか ?
 
 稼働停止をレポートするには、トピック [稼働停止のレポート](../../dev-itpro/lifecycle-services/report-production-outage.md) で説明されているプロセスに従います。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

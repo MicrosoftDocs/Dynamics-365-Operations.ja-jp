@@ -316,3 +316,6 @@ ms.locfileid: "4432363"
 次の図は、完了したクロスドッキング作業が Microsoft Dynamics 365 Supply Chain Management でどのように表示されるかを示しています。
 
 ![クロスドッキング作業が完了しました](media/PlannedCrossDockingWork.png "クロスドッキング作業が完了しました")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

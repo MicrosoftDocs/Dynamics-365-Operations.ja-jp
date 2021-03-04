@@ -118,3 +118,6 @@ CustomerSource の管理者がわからない場合、または組織に Custome
 実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

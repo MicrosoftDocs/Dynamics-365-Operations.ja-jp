@@ -52,3 +52,6 @@ Microsoft Dynamics AX 2012 プロジェクト ワークスペースを作成し�
 
 LCS に登録する各顧客に対して、実装プロジェクト ワークスペースは、登録プロセス中に自動的に作成されます。 パートナーとして、実装プロジェクトを作成することはできません。 プロジェクト ワークスペースの導入に関する詳細情報については、[Finance and Operations アプリの顧客に向けた Lifecycle Services (LCS) ](lcs-works-lcs.md) を参照してください。 プロジェクト ワークスペース内のサービスは、同じように動作します。 ただし、実装プロジェクトとその他のプロジェクト タイプとの大きな違いは、Microsoft が管理する Finance and Operations の現行バージョンを設定できることです。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

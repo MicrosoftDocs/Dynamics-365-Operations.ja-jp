@@ -55,3 +55,6 @@ LISTOFFIRSTITEM (list)
 ## <a name="additional-resources"></a>追加リソース
 
 [リスト機能](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

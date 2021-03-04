@@ -49,3 +49,6 @@ ms.locfileid: "4445231"
     * インポートのボタンを使用できない場合は、そのコンフィギュレーションは既にインポートされています。  
 9. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

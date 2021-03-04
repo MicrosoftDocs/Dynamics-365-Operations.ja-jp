@@ -54,3 +54,6 @@ ms.locfileid: "4445021"
 
 
 詳細については、[仕入先の支払概要](../cash-bank-management/tasks/vendor-payment-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

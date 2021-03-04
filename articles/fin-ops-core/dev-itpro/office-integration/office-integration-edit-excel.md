@@ -424,3 +424,6 @@ Excel データ コネクタでリレーションシップ ルックアップを
 14. 必要に応じて zip ファイルの名前を変更します。たとえば、ファイル 2015-05-25-FleetCustomersWithLocations.zip の名前を変更します。
 15. zip ファイル拡張子を .xlsx に変更します。
 16. 必要な場合は、ブック .xlsx ファイルを再発行します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

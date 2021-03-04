@@ -50,3 +50,6 @@ BOE の状態が **裏書済** の場合、裏書引当を行うことができ�
 - [顧客の為替手形の裏書きによって日本の支払を設定します](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [裏書済受取手形の決済](./tasks/settle-endorsed-bill-exchange.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

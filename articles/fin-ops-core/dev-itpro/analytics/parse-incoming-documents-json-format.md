@@ -50,3 +50,6 @@ JavaScript に基づくテキスト形式 (つまり、JavaScript Object Notatio
 | 肩書き                  | ファイル名 |
 |------------------------|-----------|
 | ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

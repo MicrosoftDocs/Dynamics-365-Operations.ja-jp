@@ -113,3 +113,6 @@ LCS から電子請求書アドオンをインストールし、必要となる�
 - [メキシコ向け電子請求のアドオンの使用を開始する](e-invoicing-mex-get-started.md)
 - [イタリア向け電子請求書のアドオンの使用を開始する](e-invoicing-ita-get-started.md)
 - [電子請求のアドオン設定](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

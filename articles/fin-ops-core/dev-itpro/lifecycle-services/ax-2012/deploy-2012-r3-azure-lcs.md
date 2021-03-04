@@ -141,3 +141,6 @@ dev/test 環境を展開するには、以下を参照してください。
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

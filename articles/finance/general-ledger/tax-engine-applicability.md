@@ -177,3 +177,6 @@ OR(
 ![ルックアップ列](media/gte-tax-document-applicability-change-lookups.png)
 
 **使用可能な列** で **品目 ID** を選択し、商品を一意に決定します。 右矢印アイコンをクリックして、**選択された列** 側に追加します。 HSN が不要な場合は、**選択された列** で **HSN コード** を選択し、左矢印アイコンをクリックして削除できます。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

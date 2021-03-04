@@ -65,3 +65,6 @@ ms.locfileid: "4445234"
 [信用保証状についての銀行融資と転記プロファイルの設定](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

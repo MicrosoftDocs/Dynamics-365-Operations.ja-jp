@@ -57,3 +57,6 @@ ms.locfileid: "4712678"
 > [!NOTE]
 > デュアル ディスプレイ カスタム コントロールとデュアル ディスプレイに関連するその他の拡張機能の詳細情報は、拡張機能の詳細ビューには表示されません。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

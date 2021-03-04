@@ -121,3 +121,6 @@ Application Suite Modern Designs モデルは、Application Suite モデルの�
 
 6. 別のページを開きます。 このステップでは、保存操作が強制的に実行されます。
 7. アプリケーションで最新のデザインを表示するために販売注文を転記します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

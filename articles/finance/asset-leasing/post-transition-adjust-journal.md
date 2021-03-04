@@ -47,3 +47,6 @@ ms.locfileid: "4445402"
 
 5. 仕訳入力を表示するには、**資産リース仕訳** を選択します。
 6. 新規仕訳を選択し、**転記** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

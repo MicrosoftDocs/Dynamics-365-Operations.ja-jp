@@ -183,3 +183,6 @@ Retail ソフトウェア開発キット (SDK) には、Commerce Runtime (CRT) �
 10. クライアントで Commerce Scale Unit 拡張機能を呼び出すには、Commerce プロキシを生成する必要があります。 その後、プロキシを使用して、クライアントから新しい Commerce Scale Unit API を呼び出すことができます。
 
     プロキシの生成方法の詳細については、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

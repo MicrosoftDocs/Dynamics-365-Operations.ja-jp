@@ -464,3 +464,6 @@ public static class FMVehicle_Extension
 ## <a name="additional-resources"></a>追加リソース
 
 [FMLab サンプル コードをダウンロードする](https://github.com/Microsoft/FMLab)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ ms.locfileid: "4432103"
     4. **割合** フィールドに、保証明細行の補償割合を入力します。 この割合は、会社の補償範囲を示します。
 
 ![保証ページ](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

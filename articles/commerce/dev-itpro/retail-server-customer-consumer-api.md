@@ -691,3 +691,6 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 | GetEntityByKey | 文字列 scannedText | ScanResult   | 従業員                 | キーにより ScanResult エンティティを取得します。 |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

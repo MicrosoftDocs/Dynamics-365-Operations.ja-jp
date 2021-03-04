@@ -268,3 +268,6 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 
 > [!NOTE]
 > 機能を中断しないためには、ビジネス イベントでセキュリティを有効にする前に、前述の下位互換性の動作を理解することが重要です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

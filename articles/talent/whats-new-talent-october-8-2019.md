@@ -110,3 +110,6 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 ### <a name="print-performance-reviews"></a>業績の確認の印刷
 
 詳細については、Dynamics 365: 2019 リリース ウェーブ 2 プランにある[業績の確認の印刷](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

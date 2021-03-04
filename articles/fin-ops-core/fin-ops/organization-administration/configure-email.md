@@ -296,3 +296,6 @@ SysEmail フレームワークを介して有効になっている電子メー�
 [Office 統合のチュートリアル](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
 [Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

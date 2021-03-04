@@ -59,3 +59,6 @@ ms.locfileid: "4683957"
 4. **OK** を選択します。
 
 ![カスタマイズ ジョブ](./media/batch-cleanup-custom.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

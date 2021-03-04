@@ -323,3 +323,6 @@ Visual Studio は、現在のプロジェクトまたは新しいプロジェク
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

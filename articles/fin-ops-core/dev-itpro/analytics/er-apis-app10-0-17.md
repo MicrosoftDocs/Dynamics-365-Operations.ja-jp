@@ -75,3 +75,6 @@ if(formatMappingRun.parmShowPromptDialog(true))
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [カスタム レポートを印刷するための新しい電子申告ソリューションの設計](er-quick-start1-new-solution.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

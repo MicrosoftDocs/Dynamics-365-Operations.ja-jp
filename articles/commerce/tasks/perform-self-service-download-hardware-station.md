@@ -37,3 +37,6 @@ ms.locfileid: "4413790"
 5. 一覧で、目的のレコードを見つけ、選択します。
 6. [ダウンロード] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

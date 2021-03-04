@@ -79,3 +79,6 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 [![Azure ポータルで新しいアプリに登録する](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページが表示されます。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

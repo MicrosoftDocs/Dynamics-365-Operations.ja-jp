@@ -62,3 +62,6 @@ ms.locfileid: "4408161"
     * 在庫品目の原価を入力します。  
 9. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

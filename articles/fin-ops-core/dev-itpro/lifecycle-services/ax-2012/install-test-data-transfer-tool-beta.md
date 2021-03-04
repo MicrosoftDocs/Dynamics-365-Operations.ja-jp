@@ -52,3 +52,6 @@ Microsoft SQL Server の使用経験がある開発者またはデータベー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

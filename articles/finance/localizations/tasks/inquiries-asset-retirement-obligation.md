@@ -56,3 +56,6 @@ ms.locfileid: "4408175"
 5. [転記金額] セクションを展開または折りたたみます。
 6. [差異] セクションを展開または折りたたみます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

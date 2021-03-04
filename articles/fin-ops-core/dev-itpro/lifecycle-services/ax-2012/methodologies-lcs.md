@@ -65,3 +65,6 @@ LCS の方法では、さらなる反復可能で予測可能な実装プロジ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

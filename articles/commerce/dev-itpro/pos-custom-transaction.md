@@ -403,3 +403,6 @@ ms.locfileid: "4681518"
 3. トランザクションを任意の品目に追加し、追加した明細行品目を選択します。
 
     カスタム コントロールには、選択した明細行品目の ID と説明が表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

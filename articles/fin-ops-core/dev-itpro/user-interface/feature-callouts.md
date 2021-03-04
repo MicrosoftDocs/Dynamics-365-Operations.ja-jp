@@ -94,3 +94,6 @@ public void init()
 ## <a name="notes"></a>摘要
 -  複数の機能のコールアウトを一度に 1 ページに表示できます。
 -  機能のコールアウトは、コントロールごとに 1 つのみ使用できます。 複数のコールアウトが存在する場合は、最後にトリガーされたものが表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

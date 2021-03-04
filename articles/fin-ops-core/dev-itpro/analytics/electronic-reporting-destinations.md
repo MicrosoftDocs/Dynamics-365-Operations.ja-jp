@@ -238,3 +238,6 @@ ER の構成を Excel 形式で生成し、PDF 形式に変換する場合は、
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

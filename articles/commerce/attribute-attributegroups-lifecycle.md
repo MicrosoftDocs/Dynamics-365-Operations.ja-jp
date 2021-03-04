@@ -257,3 +257,6 @@ ms.locfileid: "4413734"
 
     > [!NOTE]
     > 共有製品メディアと共有製品属性が作成される場合、それらはすべての製品に適用されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

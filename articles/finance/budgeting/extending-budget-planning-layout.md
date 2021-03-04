@@ -127,3 +127,6 @@ BudgetPlanLineActiveView と BudgetPlanLine テーブル間のマッピングを
 変更を検証するには、36 の通貨列や数量列を超える予算計画のレイアウトを作成する必要があります。 すべてのステップを正しく完了した場合、各列に値を入力し値を保存して Excel で編集できます。
 
 変更を検証した後は、拡張機能をローカルの開発環境を越えて発行および宣伝できます。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -329,3 +329,6 @@ OData はエンティティで配列フィールドをサポートしていま�
 
 ### <a name="after-restarting-aos-the-first-odata-call-may-take-a-long-time-to-process"></a>AOS を再起動した後、最初の OData 呼び出しの処理に時間がかかることがあります
 メタデータがキャッシュされていないために、再起動された AOS によって処理される最初の OData 呼び出しは処理に時間がかかる場合があります。 この待ち時間は、AOS 起動時に OData をウォーム アップすることで回避できます。 詳細については、[AOS 起動時に OData メタデータ キャッシュを作成する](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -203,3 +203,6 @@ IFeatureLifecycle は、機能ライフサイクル ステージを示すため�
 - PublicPreview - 既定で表示されますが、機能がプレビュー中であるという警告が表示されます。
 - リリース済 - 完全にリリースされました。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

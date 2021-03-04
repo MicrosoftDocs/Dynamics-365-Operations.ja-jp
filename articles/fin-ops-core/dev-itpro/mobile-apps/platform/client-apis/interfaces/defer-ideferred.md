@@ -83,3 +83,6 @@ resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void
 
 #### <a name="returns-void"></a>void を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

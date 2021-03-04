@@ -44,3 +44,6 @@ ms.locfileid: "4419349"
 
 1. [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments) に移動します。
 2. 次の手順に従って、環境を作成します [人事管理のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent)。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ ms.locfileid: "4679918"
 [クライアント APIs リファレンス](client-apis/client-apis-reference.md)
 
 [サーバー APIs 参照](mobile-workspace-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

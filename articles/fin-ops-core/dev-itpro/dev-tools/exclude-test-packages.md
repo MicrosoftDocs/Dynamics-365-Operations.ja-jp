@@ -71,3 +71,6 @@ ms.locfileid: "5092137"
 1. **保存** をクリックします。
 
 説明の通りに、新しいフィーチャーを使用することができるようになりました。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ referencePageName: string
 番号順序が編集可能かどうかを定義するページのページ名。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ ms.locfileid: "4431765"
 23. [関連付けられている販売契約書] をクリックします。
 24. [履行] タブをクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

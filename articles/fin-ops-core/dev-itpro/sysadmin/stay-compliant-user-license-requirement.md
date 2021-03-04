@@ -111,3 +111,6 @@ Finance and Operations アプリの購入方法とライセンスの詳細につ
 Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) を参照してください。
 
 同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ ms.locfileid: "4646110"
 - **在庫状態の表示:** *はい*
 
 必要に応じて、ページの他のフィールドを設定できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

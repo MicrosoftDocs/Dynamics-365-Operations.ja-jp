@@ -60,3 +60,6 @@ Commerce サイト ビルダーでの実験のバリエーションを確認す�
 
 ## <a name="next-step"></a>次のステップ
 [実験の実行と監視](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

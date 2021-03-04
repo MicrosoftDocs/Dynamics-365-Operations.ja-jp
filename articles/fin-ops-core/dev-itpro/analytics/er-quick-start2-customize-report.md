@@ -514,3 +514,6 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 - [電子申告の概要](general-electronic-reporting.md)
 - [ER コンフィギュレーションを Lifecycle Services からダウンロードする](download-electronic-reporting-configuration-lcs.md)
 - [ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

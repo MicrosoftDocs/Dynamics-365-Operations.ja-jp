@@ -48,3 +48,6 @@ ms.locfileid: "4693462"
 2. 一覧で、選択された行のリンクをクリックします。
 3. [添付ファイル] セクションを展開します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

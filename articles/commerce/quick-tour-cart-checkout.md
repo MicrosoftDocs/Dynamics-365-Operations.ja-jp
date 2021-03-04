@@ -107,3 +107,6 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 [製品詳細ページの概要](quick-tour-pdp.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

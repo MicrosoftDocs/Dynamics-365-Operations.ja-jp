@@ -55,3 +55,6 @@ ms.locfileid: "4645820"
 - [Microsoft Dynamics AX WMS と新しい R3 倉庫および輸送機能への移行](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2 項目の移行](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
 - [倉庫管理を Microsoft Dynamics AX 2012 から Supply Chain Management にアップグレードする](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

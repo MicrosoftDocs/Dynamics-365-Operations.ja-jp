@@ -312,3 +312,6 @@ Windows Server 2016 の Active Directory フェデレーション サービス (
 ## <a name="hardware-and-software-requirements-for-commerce-components"></a>コマース コンポーネントのハードウェアおよびソフトウェア要件
 
 現在、Finance + Operations はコマース コンポーネントを含んでいません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

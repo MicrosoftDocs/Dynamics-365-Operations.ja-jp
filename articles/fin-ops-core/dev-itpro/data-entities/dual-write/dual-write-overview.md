@@ -109,3 +109,6 @@ Finance and Operations アプリケーションと同等の機能を作成する
 
 今後の変更の詳細については、[二重書き込みの新機能および変更された機能](whats-new-dual-write.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

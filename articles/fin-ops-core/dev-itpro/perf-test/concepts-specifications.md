@@ -69,3 +69,6 @@ work.lines().assertExpectedLines(
     workLines.spec().withLineNum(5).withWorkType(WHSWorkType::Put).setQuantity(2).setStatus(WHSWorkStatus::Cancelled)
 );
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

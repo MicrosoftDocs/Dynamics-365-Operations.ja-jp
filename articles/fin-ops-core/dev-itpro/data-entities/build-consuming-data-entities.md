@@ -435,3 +435,6 @@ Cannot create a row of size xxx which is greater than the allowable maximum row 
 ## <a name="additional-resources"></a>追加リソース
 
 [データ移行のエンティティの開発](develop-entity-for-data-migration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

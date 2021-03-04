@@ -215,3 +215,6 @@ Microsoft Dynamics AX IDMF **ステータス** メニューのオプションを
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

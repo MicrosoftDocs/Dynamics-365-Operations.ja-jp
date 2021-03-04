@@ -54,3 +54,6 @@ ms.locfileid: "4419312"
 20. 説明フィールドに、「会議でのすべての支援への感謝!」と入力します。
 21. [送信] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

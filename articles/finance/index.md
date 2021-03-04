@@ -73,3 +73,6 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 Supply Chain Management 機能は、企業が購買する商品やサービスの要求、注文、入荷、請求、支払を含む、仕入から支払プロセスの一部をカバーします。 購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホームぺージ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

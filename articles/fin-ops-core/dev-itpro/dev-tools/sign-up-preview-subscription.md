@@ -166,3 +166,6 @@ LCS は、オンライン管理アクティビティを実行するための出�
         > このページにアクセスするには、組織の Microsoft Online Services テナントにおいて **グローバル管理者** ロールのメンバーである必要があります。 インストール ユーザーは常にグローバル管理者ですが、他のユーザーをこのロールに追加する必要があります。
 
         [![Microsoft 365 管理センターの有効なユーザー](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

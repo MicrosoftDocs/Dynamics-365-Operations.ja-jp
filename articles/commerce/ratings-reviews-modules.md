@@ -100,3 +100,6 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

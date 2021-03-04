@@ -35,3 +35,6 @@ Dynamics 365 Supply Chain Management - 倉庫アプリは、バーコード ス�
 
 顧客は購入するハードウェアを決定する前に、選択したハードウェアで倉庫モバイル スキャンのアプリケーションをテストすることをお勧めします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

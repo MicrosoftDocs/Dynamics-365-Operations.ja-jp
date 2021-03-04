@@ -126,3 +126,6 @@ Finance and Operations モバイル アプリにより、組織はビジネス �
 - [セッション無通信タイムアウトの設定](session-idle-timeout.md)
 - [AOS 起動時に OData メタデータ キャッシュを作成する](odata-warmup.md)
 - [データベース ログの構成と管理](configure-manage-database-log.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

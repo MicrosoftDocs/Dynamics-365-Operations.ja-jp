@@ -100,3 +100,6 @@ Supply Chain Management を使用してベースラインの予測を視覚化�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Microsoft Dynamics の Lifecycle Services (LCS) は、より反復可能で予�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

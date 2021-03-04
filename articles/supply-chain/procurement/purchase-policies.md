@@ -151,3 +151,6 @@ Samは、Sales UK つまり Contoso 社の英国オフィスの販売部門で�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ ms.locfileid: "4413716"
 [小売チャネルの設定](channel-setup-retail.md)
     
 [オンライン チャネルの設定](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

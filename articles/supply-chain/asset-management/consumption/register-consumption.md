@@ -95,3 +95,6 @@ ms.locfileid: "4432077"
 >[!NOTE]
 >3 つの登録タイプすべてについて、財務分析コードの組み合わせが検証され、無効な組み合わせは空白になります。 これは、他の Finance and Operations アプリの標準的な設定です。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

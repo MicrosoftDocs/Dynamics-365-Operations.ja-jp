@@ -50,3 +50,6 @@ Supply Chain Management では、次のタイプの予測の正確性を計算�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

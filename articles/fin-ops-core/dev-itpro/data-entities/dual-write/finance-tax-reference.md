@@ -37,3 +37,6 @@ ms.locfileid: "4684034"
 
 + [統合された元帳](ledger-mapping.md)
 + [統合された税マスター](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

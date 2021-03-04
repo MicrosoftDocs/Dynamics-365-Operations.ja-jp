@@ -61,3 +61,6 @@ IEventListener: 機能
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

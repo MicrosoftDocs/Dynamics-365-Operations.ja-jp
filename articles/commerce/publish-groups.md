@@ -155,3 +155,6 @@ E コマース Web サイトは年間を通して常に新しいコンテンツ�
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
 
 [サイト ナビゲーションのカスタマイズ](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

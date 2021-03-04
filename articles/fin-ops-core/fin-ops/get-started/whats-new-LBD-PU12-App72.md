@@ -48,3 +48,6 @@ LCS からダウンロードできる修正プログラムは、プラットフ�
 
 - **[KB 4091763 - 管理者がクライアントの接続と Skype プレゼンスを切り替える](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6):** この修正プログラムにより、管理者はクライアント マシンのインターネット接続に依存するエクスペリエンスを無効にできます。 詳細については、[クライアント インターネット接続](../../dev-itpro/user-interface/client-disconnected.md)を参照してください。
 - **[KB 4093454 - オンプレミスの ISV ライセンス サポート](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592):** プラットフォーム更新プログラム 12 から開始するオンプレミス環境を配置する場合、テナント GUID は LCS からオンプレミス環境に自動的に入力されます。 ライセンス供与の検証では次の値を読み取り、正常にライセンスを検証できます。 詳細については、[独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
 [![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) 
 
 これらのフォルダーをマップした後、ローカル ボックスにコードを同期させることができます。 **メタデータ** を右クリックし、**最新バージョンを取得** を選択します。 同様に、プロジェクト フォルダーを同期します。 メタデータ フォルダーを同期した後、**Finance and Operations** &gt; **モデル管理** &gt; **モデルの更新** から Visual Studio でモデルを更新します。 [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) これで、プロジェクトを立ち上げ、競合を解決し、コードの移行を構築、テスト、および実行する準備が整いました。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

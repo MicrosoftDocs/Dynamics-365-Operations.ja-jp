@@ -264,3 +264,6 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 
 このプロセス時間がかかる場合があります。 cmd.exe ウィンドウが終了すると、プロセスが完了します。 ランタイムを再配置せずに AOS を再起動するのみの場合は、管理者の **Command Prompt** ウィンドウから **iisreset** を実行するか、IIS から AOSWebApplication を再起動します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

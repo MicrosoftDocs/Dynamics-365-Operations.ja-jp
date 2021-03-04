@@ -91,3 +91,6 @@ ms.locfileid: "4680410"
 |---|---|
 | `public static ProcessExecutionMessageLogItem newFromProcessExecutionSourceLinkAndMessage(RefRecId _processExecutionSourceLinkRecId, Exception _exception, ProcessExecutionMessage _message)` | |
 | `public static ProcessExecutionMessageLogItem newFromProcessExecutionSourceLinkAndLabel(RefRecId _processExecutionSourceLinkRecId, Exception _exception, LabelId _labelId, container _labelParameters)` | |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ ms.locfileid: "4976666"
 
 注文が完全に返品された場合、顧客に返金される税額は、最初に請求された税額と等しくなります。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

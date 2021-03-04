@@ -54,3 +54,6 @@ ms.locfileid: "4408160"
 5. [ヘッダーの表示] をクリックします。
     * [締めの対象] スライダーが「はい」に設定されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

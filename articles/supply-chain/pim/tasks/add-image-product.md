@@ -37,3 +37,6 @@ ms.locfileid: "4431976"
 5. [新規] をクリックします。
     * [参照] をクリックします。 使用する画像を見つけて、選択し、ダイアログ ボックスを閉じます。    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

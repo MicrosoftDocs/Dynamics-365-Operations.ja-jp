@@ -1233,3 +1233,6 @@ ER フォーマットのマッピング レコードへのアクセスに使用�
 - [IF 関数](er-functions-logical-if.md)
 - [ORDERBY 関数](er-functions-list-orderby.md)
 - [SESSIONNOW 関数](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

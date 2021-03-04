@@ -118,3 +118,6 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**消費�
 18. ジョブの同期が完了したら、POS を開きます。
 19. 品目 **91050** をトランザクションに追加します。 予定されている合計金額は **$75.06** です。
 20. **Matthew Tolley** をトランザクションに追加します。 この顧客の控除を反映するように税額が再計算されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

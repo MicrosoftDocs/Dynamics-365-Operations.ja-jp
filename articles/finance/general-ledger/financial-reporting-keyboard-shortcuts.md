@@ -112,3 +112,6 @@ ms.locfileid: "5019090"
 | バックスペース | セルの編集時に、カーソルの前の文字を削除します。 |
 | Ctrl キー +Enter | フォーカスを移動せずに、現在のセルへの変更を確定します。 また、現在の行に対する変更も確定します。 |
 |   |   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

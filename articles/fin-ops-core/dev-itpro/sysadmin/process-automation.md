@@ -47,3 +47,6 @@ ms.locfileid: "4682512"
 ## <a name="developer-documentation"></a>開発者のドキュメント
 
 プロセス自動化フレームワークを使用すると、開発者はプロセス自動化フレームワークを拡張できます。 [プロセス自動化フレームワーク](../process-automation/process-automation-framework.md) ドキュメントでは、プロセス自動化ウィザードでスケジュールされたバッチ サーバーによって実行され、カレンダー表示に自動的に表示される必要があるカスタム プロセスを作成する方法について説明します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ ms.locfileid: "4682748"
 - ChartofAccounts
 
 これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用されるレポートを計算するために使用されます。 既定では、コンテンツにより、過去 3 年間および将来 1 年間のデータが取得されます。 追加の計算をレポートおよびダッシュボードに含めるには、[Microsoft Excel ワークブック](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) を変更できます。 このワークブックはコンテンツを作成するために使用された既定のデータ モデルです。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

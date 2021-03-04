@@ -133,3 +133,6 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 ## <a name="additional-resources"></a>その他のリソース
 
 [配置可能なパッケージのコマンドラインからのインストール](install-deployable-package.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

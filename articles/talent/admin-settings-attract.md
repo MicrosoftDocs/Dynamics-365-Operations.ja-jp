@@ -69,3 +69,6 @@ Microsoft Dynamics 365 Talent: Attract には、構成設定、統合オプシ�
 オファーの有効期限を設定し適用することもできます。 **すべてのオファーの有効期限を要求する** オプションを **はい** と設定した場合、指定した時間数または日数の後にオファーの期限は切れます。
 
 オファー管理の詳細については、[オファー管理の設定](./offer-setup.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

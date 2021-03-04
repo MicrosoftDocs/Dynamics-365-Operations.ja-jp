@@ -105,3 +105,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 **SalesTable** 
 
 [![フォーム例](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR 仮想�
 ### <a name="why-doesnt-search-view-work-in-power-apps"></a>Power Apps で「検索ビュー」が機能しないのはなぜですか?
 
 テーブルの簡易検索ビューに列が追加されていない場合、検索ボックスは使用できません。 回避策として、テーブルの列を 1 つ以上、簡易検索ビューに追加することができます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

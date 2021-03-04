@@ -72,3 +72,6 @@ Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

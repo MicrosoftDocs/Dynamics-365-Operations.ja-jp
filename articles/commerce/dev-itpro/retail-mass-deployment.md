@@ -124,3 +124,6 @@ HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 ```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

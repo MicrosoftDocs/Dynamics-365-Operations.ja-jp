@@ -85,3 +85,6 @@ https://experience.dynamics.com で Insider プログラムに参加して、PEA
 ファースト リリース プログラムははすべてのお客様に公開されます。 ファースト リリース プログラムに参加したお客様は、本稼働に至るまでのサービスアップデートに携わることのできる最初の選抜グループとなることができます。  Microsoftは、このサービス更新をUATサンド ボックスへと展開し、7日後に更新プログラムを運用環境へと展開します。 このプログラムに参加しているお客様にはさらなる特典として、更新が適用された後の環境の問題発生を監視するマイクロソフトの専任技術者が付きます。 ファースト リリースに参加するには、[ファースト リリース調査](https://aka.ms/FirstRelease)から登録してください。  
 
 サービスの更新は多くの場合、LCS のアクション センターを使用して行われます。  サービスの更新が利用可能な場合は、運用環境を含むすべての環境に手動で適用できます。  サービスの更新が指定されたサンド ボックスまたは運用環境に適用されていない場合、Microsoft は LCS プロジェクトの更新の設定に基づいて自動的に更新を適用します。 より詳しい情報は、 [Lifecycle Servicesによるサービスの更新の構成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates) をご確認ください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

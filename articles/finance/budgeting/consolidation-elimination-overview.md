@@ -90,3 +90,6 @@ ms.locfileid: "4445307"
 詳細については、[連結会社の通貨再評価](../general-ledger/currency-revaluation-consolidation-company.md)を参照してください。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

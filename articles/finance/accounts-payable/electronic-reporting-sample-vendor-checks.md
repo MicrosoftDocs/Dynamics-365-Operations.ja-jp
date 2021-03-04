@@ -44,3 +44,6 @@ Microsoft Dynamics 365 Finance には、小切手が一番上にあり、その�
 - 支払仕訳でコンフィギュレーションしてある銀行口座に対する支払を生成する時、小切手は指定されたフォーマットを使用して印刷されます。
 
 詳細については、「[電子レポートのフォーマットを修正する](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

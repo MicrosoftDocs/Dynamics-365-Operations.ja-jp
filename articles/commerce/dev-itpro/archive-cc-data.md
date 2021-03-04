@@ -87,3 +87,6 @@ ms.locfileid: "5131503"
 [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)
 
 [チェックアウト モジュール](../add-checkout-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

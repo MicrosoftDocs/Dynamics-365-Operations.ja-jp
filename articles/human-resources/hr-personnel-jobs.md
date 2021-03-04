@@ -87,3 +87,6 @@ ms.locfileid: "4419361"
 
 ## <a name="steps-for-creating-a-job"></a>ジョブを作成する手順
 新しいジョブを作成するためのステップ バイ ステップの手順については次の記事 [新しいジョブの定義](../fin-and-ops/hr/tasks/define-new-jobs.md) を参照してください。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

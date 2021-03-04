@@ -270,3 +270,6 @@ ms.locfileid: "4681514"
 2. ヘッダー バーを確認します。 追加したカスタム ボタンが表示されます。
 
 [POS 設定ページ](view-pos-extension-package-details.md) で、拡張機能パッケージの状態を表示できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

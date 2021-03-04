@@ -97,3 +97,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 1.  **称賛の送信** を選択します。 
 1. 送信する称賛のテキストを入力します。 
 1. **完了** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

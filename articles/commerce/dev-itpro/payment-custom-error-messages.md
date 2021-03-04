@@ -257,3 +257,6 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -334,3 +334,6 @@ ms.locfileid: "4431746"
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>現物マイナス手持在庫があるライセンス プレートを使用することはできますか?
 
 この機能は、正の現物手持在庫の数量のみをサポートします。 移動オーダーにライセンス プレートを割り当てる前に、倉庫および在庫の状態スレベルが正の現物手持の数量であることを確認してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

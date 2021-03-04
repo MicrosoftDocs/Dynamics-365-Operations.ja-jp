@@ -153,3 +153,6 @@ None
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![例](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ ms.locfileid: "4687129"
 | Workforce\_WorkerName             | 名、姓、フルネーム                                                                       | |
 | Workforce\_WorkerTitle            | 役職と勤続日数                                                                                   | |
 | Workorce\_WorkerTrend             | 時間経過に伴う作業者、人員、会社、職位                                                        | Workforce\_Company、Workforce\_Compensation、Workforce\_GeographicLocation、Workforce\_Performance、Workforce\_WorkerName、Workforce\_ReportsToWorkerName、Workforce\_CalendarOffset、Workforces\_Date、Workforce\_WorkerTitle、Workforce\_Demographics、Workforce\_Employment、Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

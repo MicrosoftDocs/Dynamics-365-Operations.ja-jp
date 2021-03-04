@@ -63,3 +63,6 @@ Microsoft Dynamics 365 Human Resources のプラン タイプは、給付金の�
    | **レポート ウィンドウ** | ライフ イベントのレポート ウィンドウを日単位で指定します。 **注記**: 金額を入力しない場合、システムはレポート ウィンドウはゼロとみなし、ライフ イベントは処理されません。 |
 
 5. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ ms.locfileid: "4687824"
 **配送条件** フィールドは、次の図に示すように **必須** としてマークされるようになりました。
 
 ![配信条件フィールドは必須とマークされています](media/workspace-api/MarkFieldAsMandatoryFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

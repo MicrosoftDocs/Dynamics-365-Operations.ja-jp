@@ -78,3 +78,6 @@ ms.locfileid: "4413876"
 
 [ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

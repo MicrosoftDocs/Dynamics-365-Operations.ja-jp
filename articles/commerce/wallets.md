@@ -85,3 +85,6 @@ ms.locfileid: "5012328"
 
 - [支払に関するよく寄せられる質問](dev-itpro/payments-retail.md)
 - [PayPal 向け Dynamics 365 Payment Connector](paypal.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

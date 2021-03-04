@@ -1636,3 +1636,6 @@ End.
 |戻された行を移動するためのカーソル。|while select 文は、カーソル機能を提供します。 代わりに、**next** キーワードを使用することもできます。|**select** ステートメントから戻される行間ループのために、**cursor** を宣言することができます。||
 |**From** 句。|列がリストされず、1 つのテーブルだけが参照される場合、**from** キーワードはオプションです。 次の 2 つの構文オプションは同等です。 <br>`select \* from tCustTable;` <br>`select tCustTable;`|**選択** ステートメントは、**from** 句が使用されていない限り、テーブルから読み取ることはできません。|X++ SQL では、シンプルな **選択** ステートメントが返された最初の行でテーブル バッファ変数を入力します。 これは、次のコード フラグメントによって示されています。 <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

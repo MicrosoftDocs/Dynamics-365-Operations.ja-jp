@@ -82,3 +82,6 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇の中断](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

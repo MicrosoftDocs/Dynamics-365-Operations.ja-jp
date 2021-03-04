@@ -69,3 +69,6 @@ POS ソリューションは、以下の分析コードに対しては完全に�
 ## <a name="inventory-lookup"></a>在庫検索
 
 複数の店舗および倉庫における現在の手持在庫製品の数量は、**在庫検索** ページで表示できます。 手持在庫の現在の数量に加えて、将来的な納期回答可能在庫 (ATP) 数量は、各店舗ごとに表示することができます。 ATP の数量を表示する店舗を選択し、続いて **店舗の可用性を表示する** を選択します。 使用可能な構成オプションの詳細については、[小売チャンネルの在庫引当可能範囲の算出](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

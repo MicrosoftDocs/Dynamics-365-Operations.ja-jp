@@ -240,3 +240,6 @@ ms.locfileid: "4970143"
 
 > [!NOTE]
 > 同じ割引設定の場合、選択された割引同時実行管理モデルによって結果は大幅に異なります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -301,3 +301,6 @@ ms.locfileid: "4688128"
 
 - [OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)](tasks/er-design-reports-openxml-2016-11.md)
 - [Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

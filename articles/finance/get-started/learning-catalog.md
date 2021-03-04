@@ -179,3 +179,6 @@ Dynamics 365 Finance アプリケーションのユーザーとして、ロー�
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

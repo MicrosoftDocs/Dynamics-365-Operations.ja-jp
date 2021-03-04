@@ -70,3 +70,6 @@ ms.locfileid: "5130667"
 ## <a name="additional-resources"></a>追加リソース
 
 GDPR および組織がデータの要求に対して実行する必要があるアクションの詳細については、[Microsoft サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers) にアクセスしてください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

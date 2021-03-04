@@ -89,3 +89,6 @@ ms.locfileid: "4645068"
 
 > [!NOTE]
 > これにより、このマスター プランに対して実行される展開の期間が 1 日に制限されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

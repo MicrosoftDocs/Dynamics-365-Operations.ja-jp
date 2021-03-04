@@ -71,3 +71,6 @@ ms.locfileid: "4686325"
 - [拡張可能なデータ セキュリティの例 – Andre Arnaud De Calavon [ブログ]](https://dynamicspedia.com/tag/xds/)
 
 - [D365FO での拡張可能なデータ セキュリティ (XDS) フレームワーク - Alex Meyer [ブログ]](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-framework-in-d365fo/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

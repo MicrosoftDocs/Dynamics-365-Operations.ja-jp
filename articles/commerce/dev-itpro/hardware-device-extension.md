@@ -259,3 +259,6 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
         "Sample", "Custom parameters or custom object");
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

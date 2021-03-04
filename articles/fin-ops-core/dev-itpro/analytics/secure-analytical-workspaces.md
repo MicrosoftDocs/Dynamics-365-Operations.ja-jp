@@ -104,3 +104,6 @@ Power BI ワークスペースとレポートは会社が保護できます (た
     3. **CompanyFilter** チェック ボックスをオンにします。
 
 これでレポートに、USMF 企業を経営しているかのようなデータが表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

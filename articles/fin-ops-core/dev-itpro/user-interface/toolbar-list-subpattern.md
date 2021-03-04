@@ -128,3 +128,6 @@ ms.locfileid: "5094187"
 **VendTable** 
 
 [![以前のバージョンの例](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

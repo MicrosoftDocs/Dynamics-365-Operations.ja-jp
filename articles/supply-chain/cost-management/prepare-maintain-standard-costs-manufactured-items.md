@@ -73,3 +73,6 @@ ms.locfileid: "4432000"
 
 [生産または調達する製品を設定する](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

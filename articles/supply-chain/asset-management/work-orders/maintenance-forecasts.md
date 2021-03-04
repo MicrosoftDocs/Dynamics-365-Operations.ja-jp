@@ -124,3 +124,6 @@ ms.locfileid: "4432413"
 次の図は、**作業指示書予測の更新** ダイアログの例を示しています。
 
 ![図 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

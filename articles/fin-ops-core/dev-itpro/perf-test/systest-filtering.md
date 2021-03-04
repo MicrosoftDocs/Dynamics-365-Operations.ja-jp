@@ -47,3 +47,6 @@ Visual Studio テスト コンソールで使用できる高度なフィルタ�
 
 > [!NOTE]
 > フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前** でフィルター処理することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadat
 DVT または ETWのステップが実行されると IIS/アプリケーション プールが完全に再開されない既知の問題があります。 DVT が環境の URL に接続しようとしているため、問題が発生します。 この問題を解決するには、LCS の展開で **再開** をクリックして、ステップを再試行します。  この問題を解決するため、タイマーと自動再試行が追加されます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

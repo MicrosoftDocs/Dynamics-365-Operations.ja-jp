@@ -57,3 +57,6 @@ ms.locfileid: "4693933"
 **意思決定:**
 
 - 追加のアドレス帳をいくつ作成しますか。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

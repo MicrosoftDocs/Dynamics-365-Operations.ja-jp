@@ -65,3 +65,6 @@ Commerce のサイト ビルダーの **製品** ページには、サイトに�
 [製品ページの拡充](enrich-product-page.md)
 
 [ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

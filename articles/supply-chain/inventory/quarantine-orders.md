@@ -67,3 +67,6 @@ ms.locfileid: "4432237"
 --------
 
 [在庫ブロック](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

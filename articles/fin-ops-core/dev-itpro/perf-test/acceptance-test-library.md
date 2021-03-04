@@ -85,3 +85,6 @@ ATL のクラスとメソッドの構造と命名は非常に厳格です。 こ
 ## <a name="further-reading"></a>参考文献
 
 何千ものテスト基盤として、Microsoft は ATL を社内で何年も使用してきました。 詳細については [承認テスト ライブラリのベスト プラクティス](atl-best-practices.md) および [承認テスト ライブラリについてよく寄せられる質問](atl-faq.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

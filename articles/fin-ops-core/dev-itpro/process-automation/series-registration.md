@@ -175,3 +175,6 @@ internal final class ProcessScheduleExplodeAutomationBackgroundDialogValidationP
 | `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | 次に協定世界時 (UTC) で予定されているプロセスの実行。 |
 | `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | スリープを開始するタイミングを指定します。 プロセス自動化フレームワークによって、システム管理者はプロセスを一定時間スリープ状態にすることができます。 **parmPolledNextScheduleDateTime()** の設定に関係なく、この時間範囲中にプロセスが実行されることはありません。 この時間範囲は最大 16 時間であり、日付をまたぐことができます。 |
 | `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | スリープを終了するタイミングを指定します。 プロセス自動化フレームワークによって、システム管理者はプロセスを一定時間スリープ状態にすることができます。 **parmPolledNextScheduleDateTime()** の設定に関係なく、この時間範囲中にプロセスが実行されることはありません。 この時間範囲は最大 16 時間であり、日付をまたぐことができます。  |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

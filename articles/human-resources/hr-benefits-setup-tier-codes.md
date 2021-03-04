@@ -41,3 +41,6 @@ Dynamics 365 Human Resources では、従業員と雇用主によって支払わ
    | **説明** | 給付金階層コードの説明。 |
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

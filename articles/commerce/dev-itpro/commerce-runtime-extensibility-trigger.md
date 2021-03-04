@@ -104,3 +104,6 @@ CRT 拡張機能がオフライン モードで動作するためには、構成
 ### <a name="debugging-crt"></a>CRT のデバッグ
 
 POS から CRT をデバッグするには、POS が Retail Server に接続されているときに、CRT 拡張プロジェクトを、w3wp.exe (Retail Server の IIS プロセス) に関連付けます。 オフライン モードの場合は、dllhost.exe プロセスに CRT 拡張プロジェクトを関連付けます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Microsoft がリリースしている最新の更新プログラムから 3つ �
 どちらの場合も、関係者に通知するために電子メールが送信されます。
 
 サービス更新プログラムに関する詳細は [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../../fin-ops-core/fin-ops/get-started/one-version.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

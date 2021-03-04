@@ -64,3 +64,6 @@ Commerce Web サイトで評価とレビューのソリューションを使用�
 [Dynamics 365 Commerce の商品評価の同期](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

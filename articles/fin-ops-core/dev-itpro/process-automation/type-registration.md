@@ -207,3 +207,6 @@ internal final class VendPaymProposalAutomationFeature implements IFeatureMetada
 | `public LabelId parmCaption(LabelId _caption = caption)` | パラメーター ページのキャプション。 |
 | `public LabelId parmHelpText(LabelId _helpText = helpText)` | パラメーター ページのヘルプ テキスト。 |
 | `public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | 指定されたメニュー項目名でインスタンスを初期化するコンストラクター。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

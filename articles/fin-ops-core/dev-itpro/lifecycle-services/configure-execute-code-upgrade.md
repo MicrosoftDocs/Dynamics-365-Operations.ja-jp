@@ -122,3 +122,6 @@ LCS のコードのアップグレード タイルは、移行元のバージョ
 
 [ソース管理マージ ウィザード](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) が開かれ、リリース\\\<version number\> ブランチを トランク\\メインにマージする手順が示されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

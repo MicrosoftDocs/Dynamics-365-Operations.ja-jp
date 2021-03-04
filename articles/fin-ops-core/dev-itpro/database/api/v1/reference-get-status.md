@@ -91,3 +91,6 @@ GET /databasemovement/v1/fetchstatus/project/12345/environment/5362377c-bc37-4f9
 | RollbackInProgress | アクションは取消中です。                |
 | RollbackFailed     | アクションの取消が停止されました。                    |
 | RollbackCompleted  | アクションの取り消しが正常に完了しました。    |
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

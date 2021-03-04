@@ -137,3 +137,6 @@ Modern POS は、Microsoft Dynamics 365 Commerce のクライアント側コン�
 
 ### <a name="perform-modern-pos-device-activation"></a>Modern POS のデバイスの有効化の実行
 Modern POS デバイスを有効化してください。 依然として問題が発生する場合は、Windowsでイベント ビューアーを開き、Modern POS に対応するログを表示します。 前のセクションで見逃したステップを判断する際に役立つを警告やエラーを探します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

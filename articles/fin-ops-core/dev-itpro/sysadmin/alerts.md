@@ -56,3 +56,6 @@ Finance and Operations の重大なイベントの通知システムは、警告
 
 > [!NOTE] 
 > 電子メールで通知を受信するには、 **バッチ ジョブの警告** ダイアログ ボックスで、 **電子メール** のオプションを **はい** に設定します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

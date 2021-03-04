@@ -255,3 +255,6 @@ salesOrder = data.sales().salesOrders().find(salesOrderId);
 ### <a name="automatic-prerequisite-setup"></a>自動前提条件設定
 
 エンティティがクエリ サポートを持っている場合、実装は既に前提条件サポートを設定しているクエリを使う必要があります。 それ以外の場合は、レコード バッファを検索してエンティティの新しいインスタンスを初期化した後で、エンティティの事業運営イベントに `ensure` メソッドを購読する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -206,3 +206,6 @@ Microsoft Windows でコントロール パネルを使用して Retail ハー�
 2. コントロール パネルで、**プログラム** &gt; **プログラムのアンインストール** を選択します。 **プログラムと機能** ウィンドウが開きます。
 3. **Microsoft Dynamics 365 for Retail ハードウェア ステーション** を選択し、プログラムの一覧の上にある **アンインストール** を選択します。
 4. アンインストールがプログラムの削除を完了するまで待ちます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

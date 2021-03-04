@@ -141,3 +141,6 @@ ms.locfileid: "4687846"
 | [UnWrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#unwraptext) |UnWrapText: ブール値 (オプション)  <br>|既定で False -- ページのテキストが折り返されます。<br>  |
 | [WrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#wraptext) |WrapText: ブール値 (オプション)  <br>|True の場合、フィールド コントロールのテキストは、次の行に折り返されます。<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

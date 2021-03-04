@@ -66,3 +66,6 @@ Microsoft では、プライベート プレビュー グループにおける A
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

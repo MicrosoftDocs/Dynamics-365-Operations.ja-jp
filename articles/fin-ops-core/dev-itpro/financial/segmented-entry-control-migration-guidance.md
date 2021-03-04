@@ -1007,3 +1007,6 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

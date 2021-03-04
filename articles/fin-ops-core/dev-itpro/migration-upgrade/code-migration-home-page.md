@@ -47,3 +47,6 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management、また�
 - [Finance and Operations のワークフロー サブシステムのアップデート](workflow-subsystem.md)
 - [更新した AX 2012 R3 セールスキューブをエンティティ の ストレージ へと移行する](migrate-upgraded-cube-entity-store.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

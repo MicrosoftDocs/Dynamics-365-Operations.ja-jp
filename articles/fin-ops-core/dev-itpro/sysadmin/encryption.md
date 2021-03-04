@@ -63,3 +63,6 @@ Finance and Operations アプリは以下の暗号スイートにのに対応し
 * [Microsoft SQL Server透過データの暗号化 (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
 * [Azure ストレージの暗号化](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 * [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

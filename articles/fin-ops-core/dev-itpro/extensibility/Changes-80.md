@@ -575,3 +575,6 @@ Dynamics 365 for Finance and Operations バージョン 8.0 では、Microsoft �
 |インデックスの変更: テーブル InventTestAssociationTable|
 |パブリックに切り替えられたエンティティ UnitOfMeasureEntity|
 |パブリックに切り替えられたエンティティ UnitOfMeasureTranslationEntity|
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

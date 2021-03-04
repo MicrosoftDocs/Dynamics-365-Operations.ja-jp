@@ -85,3 +85,6 @@ ms.locfileid: "4419407"
 
 > [!Warning]
 > Power Apps 環境は、削除後の 7 日間のみ保存されています。 この 7 日の期間内に環境を復旧する必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

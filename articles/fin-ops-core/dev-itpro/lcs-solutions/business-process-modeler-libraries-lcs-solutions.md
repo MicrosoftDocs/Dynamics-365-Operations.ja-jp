@@ -135,3 +135,6 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 ## <a name="additional-resources"></a>追加リソース
 
 AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

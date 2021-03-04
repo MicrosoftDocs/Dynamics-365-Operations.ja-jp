@@ -116,3 +116,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![AX 2012 の例](./media/simplelist3.png)](./media/simplelist3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

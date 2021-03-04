@@ -122,3 +122,6 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
 [サイトに言語を追加する](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ ms.locfileid: "4409275"
     ![拡張列挙を作成する (方法2)](media/AddEnum03.png)
         
 選択されたモデルで列挙型拡張が作成されます。 新しい列挙値をこの拡張に追加することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

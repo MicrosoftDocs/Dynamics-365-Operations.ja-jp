@@ -123,3 +123,6 @@ ms.locfileid: "5093286"
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 [Visual Studio の開発ツール](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

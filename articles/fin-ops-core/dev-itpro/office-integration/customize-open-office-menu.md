@@ -280,3 +280,6 @@ public class MyEntity extends common
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

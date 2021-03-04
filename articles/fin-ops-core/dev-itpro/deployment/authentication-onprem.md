@@ -104,3 +104,6 @@ AD FS は、クライアント ID および URL を使用して、アクセス�
 ![AD FS のイベント ログ エラー](media/ADFSredirectwrong.png)
 
 AD FS 申請グループの設定に誤りがある場合、イベント ログに探していた値を説明するエラーが見つかる可能性が高いので、何が正しく設定されていないのかを判断することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

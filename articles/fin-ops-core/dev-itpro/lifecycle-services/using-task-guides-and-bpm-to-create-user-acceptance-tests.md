@@ -170,3 +170,6 @@ Finance and Operations のプラットフォームは、タスク記録に基づ
 自動実行が完了したら、Azure DevOps ツール バーで **テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
 Azure DevOps のテストおよびテスト管理の詳細については、[Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

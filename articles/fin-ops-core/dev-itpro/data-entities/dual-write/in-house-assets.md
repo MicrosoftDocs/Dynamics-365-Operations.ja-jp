@@ -76,3 +76,6 @@ Microsoft Dynamics 365 Field Service は、顧客資産をサービスするよ�
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

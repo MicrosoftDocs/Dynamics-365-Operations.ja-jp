@@ -97,3 +97,6 @@ Finance and Operations の Platform update 25 を使用すると、あるイベ�
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>重複する従業員チェック : ユーザー インターフェイスの変更
 この変更により、名前のフィールドを入力すると重複が検出され、見つかった重複の数がステータスに表示されるようになります。 提供されたリンクを選択して新しいページを開き、検出された一致を使用するかどうかを評価できます。 データ入力の中断を回避するために、重複フォームは自動的に開きません。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Retail バージョン 10.0.4 以降で行われた改善では、バッチ追�
 
 > [!NOTE]
 > 倉庫管理が複雑でない場合、明細書を転記する際にバッチ追跡項目の処理を改善するためのサポートが Retail バージョン 10.0.5 に導入されました。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

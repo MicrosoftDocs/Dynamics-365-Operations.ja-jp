@@ -78,3 +78,6 @@ ms.locfileid: "4976542"
 
 > [!NOTE]
 > より多くのシナリオをサポートするための検証ルールは、将来のリリースで追加されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

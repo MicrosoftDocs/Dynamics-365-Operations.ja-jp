@@ -341,3 +341,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ ms.locfileid: "4408136"
 - [特別償却の提案](./tasks/propose-special-depreciation.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

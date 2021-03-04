@@ -336,3 +336,6 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ ms.locfileid: "4797010"
 ### <a name="locations-and-transactions"></a>場所とトランザクション
 
 関係者が担うロールがトランザクションに含まれているとき、トランザクションの詳細が入力されると、その関係者の場所、住所、または連絡先情報にアクセスできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -302,3 +302,6 @@ ms.locfileid: "4685719"
 
 ## <a name="additional-resources"></a>追加リソース
 - [データ エンティティの概要](data-entities.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

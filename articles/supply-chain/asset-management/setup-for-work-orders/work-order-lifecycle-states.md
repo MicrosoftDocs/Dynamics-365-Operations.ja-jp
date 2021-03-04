@@ -139,3 +139,6 @@ ms.locfileid: "4432018"
 9. ワーク オーダー ライフサイクル モデルを保存します。
 
 ![ワーク オーダー ライフサイクル モデル ページ](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Platform update 32 のリリースでは、最初の OData 要求が行われた
 
 > [!NOTE]
 > この機能を有効にした場合は、AOS が既に実行されており、1 つの OData 要求を処理している必要があります。 これは、キャッシュが既に作成されていることを意味します。 この新しい機能は、次の AOS 再起動時に有効になります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -149,3 +149,6 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

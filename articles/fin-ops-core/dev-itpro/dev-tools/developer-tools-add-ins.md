@@ -39,3 +39,6 @@ ms.locfileid: "4409326"
 アドインの詳細については、以下を参照してください。
 - [フォーム パターンに対応している Visual Studio アドイン](../user-interface/form-pattern-add-ins.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

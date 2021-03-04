@@ -252,3 +252,6 @@ ms.locfileid: "5129587"
 | 仮想フィールド | 計算フィールド |
 |---------------|----------------|
 | postLoad() で、*// UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode 値に、フィールドに基づいてレコードが存在するかどうかを確認します* (this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; の場合 | ComputedFieldMethod() で *// 任意の SQL 計算された列の明細書 (T2.RECID が NULL の場合は 0 ELSE 1)INTとして)* |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

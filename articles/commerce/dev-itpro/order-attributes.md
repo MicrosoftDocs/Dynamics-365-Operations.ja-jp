@@ -381,3 +381,6 @@ Retail SDK に追加された新しいサンプルでは、POS の注文属性�
         return isB2B;
     } } } }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Sales では、**ATP情報** ボタンが **見積**、**注文**、**請求書*
 - 受入数量
 - 払出数量
 - 手持在庫数量
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

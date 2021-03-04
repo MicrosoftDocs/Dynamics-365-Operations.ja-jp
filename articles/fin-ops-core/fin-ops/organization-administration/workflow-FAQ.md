@@ -59,3 +59,6 @@ ms.locfileid: "4694059"
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>ワークフロー拡張エラー機能とは ?
 Version 10.0.13 のワークフロー拡張エラー機能によって、さまざまなクラスのワークフロー エラーを区別するためのエラー コードが追加されます。 報告されたエラーメッセージは、多くの場合、若干の違いがあるため、わかりやすくすることができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

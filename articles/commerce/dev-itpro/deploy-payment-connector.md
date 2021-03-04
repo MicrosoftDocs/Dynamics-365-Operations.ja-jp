@@ -117,3 +117,6 @@ E コマース サイトは、LCS の管理された環境では配置されて�
 [支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
 [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

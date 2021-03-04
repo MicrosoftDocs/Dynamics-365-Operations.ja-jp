@@ -185,3 +185,6 @@ Finance + Operations (オンプレミス) 環境のドキュメント処理添�
     ```
 
 5. ドキュメント処理の添付ファイルのサンプルをテストして、サンドボックス環境でアクセスできるようになったことを確認します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

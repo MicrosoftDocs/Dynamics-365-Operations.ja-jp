@@ -51,3 +51,6 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 
 > [!NOTE]
 > NuGet バージョン 3.4 以降のセマンティック バージョニングが導入されたため、バージョン 3.3.0 またはそれ以前のバージョンをインストールする必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

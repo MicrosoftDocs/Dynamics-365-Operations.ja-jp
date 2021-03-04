@@ -158,3 +158,6 @@ POS でシフトおよびキャッシュ ドロワーの調整が使用される
 この設定により、バック オフィスの明細書が POS のシフトと同じトランザクションを含み、データがそのシフトごとに集計されていることが保証されます。
 
 明細書および決済方法の詳細については、[小売明細書の店舗のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Azure サブスクリプションに配置されているプラットフォー�
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 複数のドキュメント回覧エージェントを使用して単一のプリンターを登録できることに注意してください。 プリンターの基本設定を解決するため、ホストされているサービスは、すべてのネットワーク プリンターを一意に識別するネットワーク パスを使用します。 その結果、プリンターが複数のクライアントにより登録されている場合でも、アプリケーションで使用可能なプリンターの一覧で単一の選択として表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

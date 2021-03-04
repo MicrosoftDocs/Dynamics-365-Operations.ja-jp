@@ -102,3 +102,6 @@ ms.locfileid: "4461744"
 - **外**
 
 代わりに、他のタイプのソースを追加するために **TalentSource** 列挙を拡張できます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ ms.locfileid: "4431682"
     * かんばんには生産フローの 2 つのプロセス ジョブが含まれています。 1 番目は SpeakerAssemblyAndPolish で、2 番目は SpeakerTestAndPackaging です。  
     * これは最後のステップです!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

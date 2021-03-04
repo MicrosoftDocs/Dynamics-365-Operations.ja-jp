@@ -71,3 +71,6 @@ Finance and Operations では、環境内で実行されている一連のセキ
 
 ![レポートのバッチ処理](media/a6142c903497381171bf6c6b27495895.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

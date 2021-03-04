@@ -224,3 +224,6 @@ ms.locfileid: "4445238"
 連結および通貨換算の詳細については、このトピックの親トピック、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
 
 オンライン連結の詳細を入力する方法については、[オンライン財務連結](./consolidate-online.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

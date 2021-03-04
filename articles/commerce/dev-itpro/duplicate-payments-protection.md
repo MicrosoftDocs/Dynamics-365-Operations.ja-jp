@@ -191,3 +191,6 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 |---|---|
 | paymentInfo | 復元された支払取引。 これは、**承認** または **返金** のような、ほかの支払要求などで返される支払応答と同じです。 |
                                                                                                                                                                                                                                                                                                             
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

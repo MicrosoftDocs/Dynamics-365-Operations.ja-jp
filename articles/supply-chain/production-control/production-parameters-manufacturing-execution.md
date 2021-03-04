@@ -154,3 +154,6 @@ BOM 品目の部品消費ルールの設定に従ってピッキング リスト
 | 完了レポート |   自動 BOM 消費    | <strong>許可しない</strong>  |
 | 完了レポート | オンラインで完了レポートを更新 | <strong>ステータス</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

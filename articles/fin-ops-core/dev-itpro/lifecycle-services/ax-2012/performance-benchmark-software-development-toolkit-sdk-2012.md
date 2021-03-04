@@ -33,3 +33,6 @@ Microsoft Dynamics AX 2012 Performance Benchmark ソフトウェア開発キッ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

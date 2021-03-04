@@ -346,3 +346,6 @@ ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生�
 ## <a name="additional-resources"></a>その他のリソース
 
 [配賦基準](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

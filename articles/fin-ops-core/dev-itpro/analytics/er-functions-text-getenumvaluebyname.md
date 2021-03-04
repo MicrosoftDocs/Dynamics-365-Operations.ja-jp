@@ -117,3 +117,6 @@ Nullable *列挙*
 [FIRSTORNULL ER 関数](er-functions-list-firstornull.md)
 
 [WHERE ER 関数](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

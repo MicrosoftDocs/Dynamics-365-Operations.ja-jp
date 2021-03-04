@@ -91,3 +91,6 @@ Dynamics 365 Talent により、従業員および雇用データを効率的に
 
 [![職位](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

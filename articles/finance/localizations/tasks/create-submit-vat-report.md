@@ -35,3 +35,6 @@ ms.locfileid: "4445284"
 5. [電子税務書類の作成] フィールドで [はい] を選択します。
 6. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

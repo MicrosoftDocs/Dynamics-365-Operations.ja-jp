@@ -102,3 +102,6 @@ Finance and Operations バージョン 10.0.5 では、ER テンプレートの�
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

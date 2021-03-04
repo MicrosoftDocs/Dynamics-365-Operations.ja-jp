@@ -40,3 +40,6 @@ ms.locfileid: "4445116"
 9. **OK** をクリックして、フィルター ページを閉じます。
 10. **OK** をクリックして仕訳入力プロセスを開始します。 レポートは、プロセスが完了した後生成されます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

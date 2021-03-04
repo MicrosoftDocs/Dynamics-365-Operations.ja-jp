@@ -56,3 +56,6 @@ ms.locfileid: "4432275"
 2. LCS で、Supply Chain Management 環境の詳細に移動します。
 3. **環境アドイン** セクションまでスクロールします。
 4. IoT インテリジェンス アドインの **アンインストール** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

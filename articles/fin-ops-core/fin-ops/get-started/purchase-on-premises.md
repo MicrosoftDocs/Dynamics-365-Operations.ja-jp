@@ -66,3 +66,6 @@ Microsoft Online Services ID は、Finance + Operations (オンプレミス) を
 - [PartnerSource のプロビジョニング ガイド](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、オンプレミス環境を配置できます。 LCS プロジェクトの使い方の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

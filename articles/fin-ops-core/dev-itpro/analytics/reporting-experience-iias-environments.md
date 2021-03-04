@@ -81,3 +81,6 @@ PDF を使用して、 Finance and Operations アプリにバンドルされて�
     - **RemoveRules** : ルールを削除するには、このパラメーターを設定します。
     - **ForceUpdate** : ルールを強制的に再作成するには、このパラメーターを設定します。
     - **LogDir** : ログの書き込みをする場所を指定します。 既定の場所は、**UpdateRDLSandboxRule.ps1** コマンドの場所となります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

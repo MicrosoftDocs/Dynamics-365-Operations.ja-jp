@@ -123,3 +123,6 @@ Microsoft のタスク記録をダウンロードおよび編集し、自分の�
 [タスク レコーダー](task-recorder.md)
 
 [タスク レコーダー (外部リンク) でリッチ ヘルプ トピックを作成](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

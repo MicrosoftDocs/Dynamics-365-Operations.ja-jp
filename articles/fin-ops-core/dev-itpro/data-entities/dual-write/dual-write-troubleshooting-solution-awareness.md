@@ -45,3 +45,6 @@ ms.locfileid: "4683569"
 *MetadataCache で 'msdyn\_dualwriteentitymap' with namemapping='Logical という名称のエンティティが見つかりませんでした。*
 
 この問題を修正するには、Dataverse にデュアル書き込みのコアソ リューションがインストールされていることを確認してください。 デュアル書き込みのコア ソリューションは、ソリューションを認識するにあたって必須となります。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

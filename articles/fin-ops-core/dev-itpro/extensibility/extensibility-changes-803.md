@@ -309,3 +309,6 @@ ms.locfileid: "4409340"
 - EcoResProductSearchName の EDT の文字列のサイズを増加
 - AssetLedgerAccounts の CacheLookup プロパティを NotInTTS に変更します。
 - TaxOnItem、TaxJurisdiction、TaxGroupData、TaxData、およびAssetLedgerAcounts で CacheLookup プロパティを検出に変更します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

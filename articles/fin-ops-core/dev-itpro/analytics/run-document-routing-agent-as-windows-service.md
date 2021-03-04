@@ -105,3 +105,6 @@ ms.locfileid: "5093578"
 ### <a name="review-the-event-logs"></a>イベント ログを確認
 1. ホスト コンピューターで、イベント ビューアーを開始します。
 2. **アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-DocumentRouting** でログを確認します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

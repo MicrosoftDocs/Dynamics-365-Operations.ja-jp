@@ -57,3 +57,6 @@ ms.locfileid: "4685838"
 | Training\_Position        | 職位、タイトル、およびフルタイム相当額 (FTE)                  | Training\_CourseAgenda、Training\_CourseAttendees |
 | Training\_WorkerName      | 名、姓、フルネーム                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | 役職と勤続日数                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ ms.locfileid: "4431693"
 7. [完了] をクリックします。
     * ここでは、かんばん作業は別のかんばんルールを使用します。 これは負荷の作業セルのレベルに有用です。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

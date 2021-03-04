@@ -56,3 +56,6 @@ ms.locfileid: "4798761"
 [ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
 
 [ワークフローでの承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

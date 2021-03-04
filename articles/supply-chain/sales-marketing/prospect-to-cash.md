@@ -82,3 +82,6 @@ ms.locfileid: "4431891"
 
 - Dynamics 365 Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンラインまたはそれ以降のバージョン
 - Dynamics 365 Sales バージョン 1.15.0.0 またはそれ以降のバージョンの見込顧客を現金化するソリューション。 このソリューションは、AppSource からダウンロードできます。 [Dynamics 365、見込顧客を現金化のダウンロード](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

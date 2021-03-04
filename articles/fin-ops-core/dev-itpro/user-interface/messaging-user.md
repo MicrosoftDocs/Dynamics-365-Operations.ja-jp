@@ -169,3 +169,6 @@ UI からメッセージを削除する際に、開発者が詳細な制御を�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

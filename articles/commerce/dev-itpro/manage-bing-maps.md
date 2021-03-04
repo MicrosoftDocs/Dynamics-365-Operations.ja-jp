@@ -46,3 +46,6 @@ ms.locfileid: "4685371"
 Bing Map を有効にする場合、住所情報が自動的に Bing Map にインターネット経由で送信され、このアプリケーション内で住所のオンライン マップが表示されます。 このアプリケーション内で Bing マップをクリックすると、[www.bing.com/maps](https://www.bing.com/maps) にリダイレクトされます。 Bing マップの使用は、[Bing マップ エンドユーザーの使用条件](https://go.microsoft.com/?linkid=9710837)によっても支配されます。  
   
 管理者は、**コマース共有パラメーター** > **Bing マップ** の下で Bing マップ機能をオンまたはオフにすることができます。 Bing Maps アプリをオフにすると、このアプリケーションで機能を使用できなくなります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

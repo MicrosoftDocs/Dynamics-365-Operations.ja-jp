@@ -96,3 +96,6 @@ ms.locfileid: "4413861"
 
 [買い物カゴとチェックアウト ページの概要](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

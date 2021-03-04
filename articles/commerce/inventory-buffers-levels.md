@@ -149,3 +149,6 @@ Commerce サイト ビルダーでは、Commerce Headquarters の在庫バッフ
 [在庫設定を適用する](inventory-settings.md)
 
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

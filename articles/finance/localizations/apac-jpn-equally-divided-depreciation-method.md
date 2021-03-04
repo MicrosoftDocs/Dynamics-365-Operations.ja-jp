@@ -106,3 +106,6 @@ Finance が均等減価償却法を使用して減価償却を計算する場合
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

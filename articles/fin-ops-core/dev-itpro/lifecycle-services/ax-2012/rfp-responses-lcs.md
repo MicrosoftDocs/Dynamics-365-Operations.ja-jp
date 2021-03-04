@@ -50,3 +50,6 @@ RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

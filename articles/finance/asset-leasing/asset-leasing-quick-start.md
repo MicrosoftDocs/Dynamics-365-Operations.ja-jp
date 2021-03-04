@@ -253,3 +253,6 @@ ms.locfileid: "4445361"
 
    **リース負債トランザクション** ページには、初期認識、リース利息支払、リース支払、およびリース負債残高が表示されます。 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

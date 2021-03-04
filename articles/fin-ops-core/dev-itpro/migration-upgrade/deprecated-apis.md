@@ -169,3 +169,6 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | XmlWriter | 方法 | CreateNewFile |  |
 | XppCompiler | クラス |  |  |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

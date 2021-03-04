@@ -110,3 +110,6 @@ ms.locfileid: "4694029"
     </table>
 
 8. ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

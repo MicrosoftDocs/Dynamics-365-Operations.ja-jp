@@ -205,3 +205,6 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 説明、会社、スケジュールの開始日および時間、繰り返し、およびアカウントごとの実行を同時に設定することができます。 バッチ ジョブをコピーするときに、元のジョブから警告と依存関係もコピーされます。
 
 詳細については、[バッチ ジョブのコピー](../../dev-itpro/sysadmin/copy-batch-job.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

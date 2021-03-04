@@ -111,3 +111,6 @@ ms.locfileid: "4431864"
 ## <a name="related-resources"></a>関連するリソース
 
 [原価会計サービス ホーム ページ](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -197,3 +197,6 @@ ms.locfileid: "4686248"
 [財務諸表の表示](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance ブログ](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ ms.locfileid: "4431863"
 - **すべての資産** で複数の資産を選択し、**一般** タブの **資産 KPI** ボタンをクリックできます。次に、**資産 KPI の計算** ダイアログで **OK** をクリックして、選択した資産の KPI を計算します。  
 - KPI 計算の結果は、メンテナンス ダウンタイム理由コードの設定および使用に応じて、[メンテナンス ダウンタイム登録](../work-orders/maintenance-downtime.md) を含む場合と含まない場合があります。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

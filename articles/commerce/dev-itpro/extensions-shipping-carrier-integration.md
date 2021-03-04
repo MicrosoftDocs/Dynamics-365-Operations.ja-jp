@@ -103,3 +103,6 @@ POS クライアントの要求ハンドラーと同様、カスタム ロジッ
 
 ### <a name="packingslipextensionpoint"></a>packingSlipExtensionPoint
 **packingSlipExtensionPoint** メソッドをカスタマイズして、カスタム ロジックを追加、または梱包明細 ID とともにカスタム情報を戻すことができます。 このカスタム情報には、梱包情報または納品書が含まれています。 このメソッドは、通常、カスタム シナリオの拡張機能に追加されます。 このメソッドは、コマンド拡張ポイントのチェーンを使用して **MarkFulfillmentLinesAsPacked** メソッドから呼び出されます。 **MarkFulfillmentLinesAsPacked** メソッドは、CRT コードが行うリアルタイム サービス呼び出しから実行されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

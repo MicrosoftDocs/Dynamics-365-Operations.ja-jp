@@ -169,3 +169,6 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 [Dynamics AX 7 のエンティティを自分の Azure SQL データベースにエクスポートする](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

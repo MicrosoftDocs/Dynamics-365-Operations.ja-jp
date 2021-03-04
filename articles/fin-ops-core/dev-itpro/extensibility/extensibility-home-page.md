@@ -129,3 +129,6 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 + 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
 + [互換性チェック ツール](compatibility-checker-tool.md) を使用すると、指定されたベースライ ンリリースまたは更新に対して、メタデータの互換性に影響する変更を検出できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

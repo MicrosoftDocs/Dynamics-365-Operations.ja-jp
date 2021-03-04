@@ -81,3 +81,6 @@ ms.locfileid: "4687829"
 次の図は、英語とデンマーク語を使用する電話機のタイトルと説明を示しています。
 
 ![最終ワークスペース](media/workspace-api/LocalizeWorkspaceFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

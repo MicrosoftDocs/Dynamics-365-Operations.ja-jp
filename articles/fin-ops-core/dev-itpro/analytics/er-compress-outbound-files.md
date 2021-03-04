@@ -94,3 +94,6 @@ ms.locfileid: "4680857"
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [電子申告形式における XML 要素の実行の延期](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

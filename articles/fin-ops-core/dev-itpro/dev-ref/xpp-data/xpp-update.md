@@ -110,3 +110,6 @@ join tabDept
 join tabProj
     where tabProj.ProjId == tabEmpl .ProjId;
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

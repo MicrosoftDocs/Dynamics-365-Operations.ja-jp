@@ -303,3 +303,6 @@ export interface IProductInfo {
     productCurrency: string;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

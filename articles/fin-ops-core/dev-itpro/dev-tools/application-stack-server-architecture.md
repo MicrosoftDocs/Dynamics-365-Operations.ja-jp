@@ -69,3 +69,6 @@ Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など
 開発環境のアーキテクチャは、クラウド インスタンスのアーキテクチャに似ています。 また、Visual Studio 開発ツールとその他のコンポーネントで構成されるソフトウェア開発キット (SDK) も含まれます。 Team Foundation Server または Visual Studio Online を介したソース管理により、複数開発者のシナリオが可能になります。このシナリオでは、各開発者が別個の開発環境を使用できます。 配置パッケージは、開発環境でコンパイルおよび生成し、LCS を使用してクラウド インスタンスに展開できます。 次の図は、主要なコンポーネントが開発環境でどのようにやり取りするかを示しています。
 
 ![開発アーキテクチャ、Visual Studio、ローカル ランタイム、およびクラウド配置](./media/dev-environ.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

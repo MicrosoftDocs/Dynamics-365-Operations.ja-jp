@@ -88,3 +88,6 @@ D365 で予想される値と一致しないレポートがある場合、それ
 2.  レポートを Excel にエクスポートします。
 
 これで、FR Excel レポートから D365 試算表レポートにデータをコピーして、[決算残高] 列を比較できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

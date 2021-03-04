@@ -1845,3 +1845,6 @@ public MenuItemType WorkspaceMenuItemType ([MenuItemType _workspaceMenuItemType]
 #### <a name="return-value"></a>戻り値
 
 ワークスペース セキュリティ属性のワークスペース メニュー項目タイプ
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

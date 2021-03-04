@@ -74,3 +74,6 @@ ms.locfileid: "4432360"
 6. **明細行** セクションを折りたたみます。
 7. **OK** を選択して、受領を転記します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

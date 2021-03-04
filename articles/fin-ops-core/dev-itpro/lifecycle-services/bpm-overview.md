@@ -65,3 +65,6 @@ BPM にアクセスするには、これらの手順に従います。
 - [ビジネス プロセス モデラー (BPM) のフローチャート](flowcharts-business-process-modeler.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

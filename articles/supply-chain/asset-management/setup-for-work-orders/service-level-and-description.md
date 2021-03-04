@@ -56,3 +56,6 @@ ms.locfileid: "4432014"
 2. **新規** を選択します。
 3. **説明** フィールドに説明を入力します。
 4. **保存** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

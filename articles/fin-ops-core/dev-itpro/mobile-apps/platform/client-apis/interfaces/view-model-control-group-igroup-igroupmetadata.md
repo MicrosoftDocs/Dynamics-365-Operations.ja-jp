@@ -170,3 +170,6 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

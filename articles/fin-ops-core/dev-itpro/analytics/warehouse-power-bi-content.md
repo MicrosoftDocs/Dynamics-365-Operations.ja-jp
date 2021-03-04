@@ -111,3 +111,6 @@ ms.locfileid: "4687404"
 | 出荷パフォーマンス        | 製品別出荷                       | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
 | 出荷パフォーマンス        | 顧客別出荷                      | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
 | 出荷パフォーマンス        | サイト / 倉庫別出荷              | CustPackingSlipOnTimeStatus           | 期日前、期限内、遅延 (この表で前の説明を参照してください)。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

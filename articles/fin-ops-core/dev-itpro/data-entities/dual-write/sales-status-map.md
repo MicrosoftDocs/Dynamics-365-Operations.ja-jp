@@ -150,3 +150,6 @@ Sales では、2 つのフィールドが注文の状態を示します。 マ�
     ![統合ユーザー モード フィールド値の変更](media/sales-map-user-mode-yes.png)
 
 これで、販売注文がマップされました。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

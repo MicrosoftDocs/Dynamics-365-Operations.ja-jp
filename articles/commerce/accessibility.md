@@ -114,3 +114,6 @@ CC およびオーディオ トランスクリプト ファイルを編集する
 [プライバシー ポリシー ページの追加](add-privacy-page.md)
 
 [追跡しているコンテンツの変更に関連付けられたユーザー ID の置換](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

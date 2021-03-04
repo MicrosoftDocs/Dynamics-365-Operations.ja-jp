@@ -62,3 +62,6 @@ ms.locfileid: "4431716"
 ## <a name="warehouse-management"></a>倉庫管理
 
 倉庫管理で出荷を準備すると、製品情報管理で設定した情報を使用するいくつかの新しいレポートを印刷できるようになります。 利用可能なレポートとその使用方法の詳細については、[危険物の照会およびレポート](hazmat-reports.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

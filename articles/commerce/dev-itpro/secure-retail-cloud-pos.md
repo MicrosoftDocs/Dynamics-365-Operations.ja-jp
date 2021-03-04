@@ -344,3 +344,6 @@ Retail Cloud POS ユーザーに次の制限を適用することをお勧めし
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

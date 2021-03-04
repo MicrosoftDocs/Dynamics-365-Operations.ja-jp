@@ -147,3 +147,6 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 ### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![前のバージョンのワークスペースの例](./media/workspace5.png)](./media/workspace5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

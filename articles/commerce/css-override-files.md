@@ -114,3 +114,6 @@ CSS 上書きファイルを有効化するには、次の手順に従います�
 [サイトに言語を追加する](add-languages-to-site.md)
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

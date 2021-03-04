@@ -140,3 +140,6 @@ ms.locfileid: "4445148"
 3. 一覧で、選択された行のリンクをクリックします。
     * [出荷ステータス] = [支払領収済] および [残高金額] = 0.00 となることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ ms.locfileid: "4431768"
 ## <a name="additional-resources"></a>追加リソース
 ### <a name="community-blogs"></a>コミュニティのブログ
 - [Dynamics 365 for Finance and Operations での販売価格](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Dynamics 365 Commerce には、サイトのユーザーにプライバシー ポ
 [Cookie のコンプライアンス](cookie-compliance.md)
 
 [追跡しているコンテンツの変更に関連付けられたユーザー ID の置換](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

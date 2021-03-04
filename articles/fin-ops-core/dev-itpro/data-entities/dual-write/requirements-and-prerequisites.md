@@ -212,3 +212,6 @@ ms.locfileid: "4744313"
 ## <a name="next-steps"></a>次のステップ
 
 [二重書き込みウィザードを使用して環境をリンクする](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

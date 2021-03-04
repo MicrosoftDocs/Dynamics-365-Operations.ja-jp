@@ -73,3 +73,6 @@ ms.locfileid: "4461713"
 
 有効なプロセスおよび関連するタスクを表示するには、**業務プロセス** ワークスペースを開きます。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

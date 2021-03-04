@@ -37,3 +37,6 @@ ms.locfileid: "4431815"
 5. [製品ライフサイクルの状態] フィールドで値を入力または選択します。
 6. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

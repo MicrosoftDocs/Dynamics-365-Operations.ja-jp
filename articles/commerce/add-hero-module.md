@@ -107,3 +107,6 @@ ms.locfileid: "4413691"
 [テキスト ブロック モジュール](add-content-rich-block.md)
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Microsoft が公開した二重書き込みテーブル マップ ソリュー�
 ## <a name="next-steps"></a>次のステップ
 
 [テーブル マップの二重書き込みの有効化](enable-entity-map.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

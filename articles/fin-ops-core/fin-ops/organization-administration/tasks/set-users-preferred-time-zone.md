@@ -35,3 +35,6 @@ ms.locfileid: "4694596"
 5. **タイム ゾーン** フィールドで、ドロップダウン リストからオプションを選択します。
 6. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

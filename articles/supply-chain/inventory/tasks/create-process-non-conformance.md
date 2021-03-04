@@ -67,3 +67,6 @@ ms.locfileid: "4432227"
 2. **不適合のクローズ** を選択します。
 3. **はい** を選択します。
 4. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

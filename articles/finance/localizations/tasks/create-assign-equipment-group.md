@@ -64,3 +64,6 @@ ms.locfileid: "4408201"
 4. [固定資産設備グループ] フィールドに値を入力します。
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

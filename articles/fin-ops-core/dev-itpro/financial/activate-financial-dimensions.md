@@ -46,3 +46,6 @@ ms.locfileid: "4680524"
 [財務分析コードの定義](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [メンテナンス モード](../sysadmin/maintenance-mode.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

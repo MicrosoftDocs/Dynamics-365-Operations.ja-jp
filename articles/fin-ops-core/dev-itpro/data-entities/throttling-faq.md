@@ -109,3 +109,6 @@ No.
 ## <a name="can-the-throttling-engine-be-configured-thresholds"></a>調整エンジンは構成できますか (しきい値)?
 
 No.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

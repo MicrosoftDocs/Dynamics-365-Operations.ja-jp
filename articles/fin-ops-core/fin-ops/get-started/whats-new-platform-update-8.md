@@ -71,3 +71,6 @@ Dynamics 365 for Finance and Operations Enterprise Edition の分析レポート
 オンプレミス配置シナリオでは、アプリケーション サーバーおよび SQL データベースは顧客またはパートナーのデータ センター内で実行されます。 顧客とパートナーは、業務プロセスの設計、オンプレミス ノードに展開するためのソフトウェア イメージの作成と展開、システム ヘルス ダッシュボードのオンプレミス ノードの監視、およびメンテナンスを含むマイクロソフト クラウドの LCS を通じてアプリケーション ライフサイクルを管理します。 Microsoft のイノベーションです。
 
 詳細については、[ビジネスに適したクラウド オプション](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business) を参照してください。 このブログ記事は、「ローカル ビジネス データ」展開機能を参照しています。 これは、製品とドキュメントの「オンプレミス」と呼ばれる機能です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

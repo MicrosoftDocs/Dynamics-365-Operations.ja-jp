@@ -133,3 +133,6 @@ iOS 用 Modern POS およびクラウド アプリケーション用 Modern POS 
 - [Android と iOS での POS ハイブリッドアプリの設定](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](https://go.microsoft.com/fwlink/?linkid=2129966)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

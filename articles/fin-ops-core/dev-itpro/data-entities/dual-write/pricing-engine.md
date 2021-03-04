@@ -69,3 +69,6 @@ Sales のフィールドが入力されている場合は、次の制限事項�
 + Supply Chain Management での請求金額と請求金額配賦の設定は、Sales ではレプリケートされません。
 + 価格決定では、Supply Chain Management の販売注文行ページの **小売チャネル** フィールドで指定された特別な小売価格は考慮しません。
 + Supply Chain Management の **取引手当管理** セクションで定義されている割引は考慮されません。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

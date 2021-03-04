@@ -360,3 +360,6 @@ ms.locfileid: "4409339"
 - メタデータの変更: WHSContainerLine, Relations WHSLoadLine & WHSShipmentTable.On Delete。
 - メタデータの変更: WHSContainerTable, Relation WHSShipmentTable.On Delete。
 - プロジェクトの価格決定: 新しい価格決定検索メソッドの完全な取得。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

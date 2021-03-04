@@ -431,3 +431,6 @@ public static LedgerDimensionBase serviceMergeLedgerDimensions(
 ```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimFromLedgerDim(LedgerDimensionAccount _ledgerDimension)
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

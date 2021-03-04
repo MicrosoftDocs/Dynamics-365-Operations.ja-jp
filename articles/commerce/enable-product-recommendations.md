@@ -114,3 +114,6 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

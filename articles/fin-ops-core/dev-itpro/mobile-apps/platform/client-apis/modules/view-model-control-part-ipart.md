@@ -129,3 +129,6 @@ ms.locfileid: "4682557"
 | [ターゲット](../interfaces/view-model-control-part-ipart-ipartmetadata.md#target) |ターゲット: [PageTarget](../interfaces/view-model-ipage-ipagetarget.md) (オプション)  <br>|パーツのターゲット ページ。<br>  |
 | [[タイプ](../interfaces/view-model-control-part-ipart-ipartmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

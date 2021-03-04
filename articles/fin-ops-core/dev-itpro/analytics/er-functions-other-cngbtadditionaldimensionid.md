@@ -59,3 +59,6 @@ ID のコンマ区切りのリストとしてすべての分析コードを示�
 ## <a name="additional-resources"></a>追加リソース
 
 [その他 (ビジネス ドメインの特定の) 関数](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

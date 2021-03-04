@@ -156,3 +156,6 @@ ms.locfileid: "4688320"
 [財務報告](financial-reporting-intro.md)
 
 [レポート デザイナー インターフェイス](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

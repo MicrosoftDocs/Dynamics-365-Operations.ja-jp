@@ -81,3 +81,6 @@ SLA が割り当てられているサービス契約に新しいサービス注�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -249,3 +249,6 @@ ms.locfileid: "4680737"
 - [棚卸および集計を行うための形式のコンフィギュレーション](./tasks/er-format-counting-summing-1.md)
 - [パフォーマンス上の問題をトラブルシューティングするため ER 形式の追跡実行](trace-execution-er-troubleshoot-perf.md)
 - [ER 形式における XML 要素の実行の延期](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

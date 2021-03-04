@@ -142,3 +142,6 @@ April は仕入先 3064 の請求書の残高を現金割引期間の 7 月 8日
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ ms.locfileid: "4413769"
 ## <a name="reporting-options"></a>レポート オプション
 
 日付範囲、保留コード、またはその他の関連の基準による注文保留に関するレポートを実行するため、**Retail とコマース** \> **照会およびレポート** \> **コール センター レポート** \> **注文保留レポート** の順に移動します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ ms.locfileid: "4461817"
 
 > [!NOTE]
 > Microsoft と Attract は、これらの値を作成し管理することには関与していません。 Attract でそれらを最新の状態に保ち、Broadbean と協力してユーザーの資格情報に関連する問題を解決するのはユーザー個人の責任となりす。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

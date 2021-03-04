@@ -53,3 +53,6 @@ ms.locfileid: "4431968"
     * 内容を説明するために、コンフィギュレーションの説明を入力します。  
 11. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

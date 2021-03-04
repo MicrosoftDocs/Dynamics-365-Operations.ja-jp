@@ -41,3 +41,6 @@ ms.locfileid: "4432141"
 4.  **サービス ステージの変更** フォームで、適切なステージを選択します。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

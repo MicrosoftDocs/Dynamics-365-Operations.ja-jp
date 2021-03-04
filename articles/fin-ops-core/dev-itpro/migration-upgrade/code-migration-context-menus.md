@@ -153,3 +153,6 @@ public void selectedMenuOption(int selectedOption)
 -   メニュー項目の数を 5 に制限します。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

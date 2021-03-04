@@ -681,3 +681,6 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
 8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

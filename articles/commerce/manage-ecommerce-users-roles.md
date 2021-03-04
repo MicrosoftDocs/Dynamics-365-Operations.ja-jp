@@ -71,3 +71,6 @@ Microsoft Dynamics Lifecycle Services (LCS) 環境で Dynamics 365 Commerce を�
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

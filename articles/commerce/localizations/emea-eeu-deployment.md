@@ -111,3 +111,6 @@ ms.locfileid: "4964960"
 
 3. Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。
 4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

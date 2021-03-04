@@ -57,3 +57,6 @@ ER マッピング デザイナーの使用可能性を改善する目的でに�
 ## <a name="additional-resources"></a>追加リソース
 
 [ER 式の言語](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -300,3 +300,6 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 - [電子申告の概要](general-electronic-reporting.md)
 - [電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング](trace-execution-er-troubleshoot-perf.md)
 - [計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ CSU は、Microsoft によって自動更新された後、次の順序で実行
 ![CSU の自動更新順序](./media/CSU-auto-update-timeline.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4432130"
 2. 一覧で、選択された行をマークします。
     * [材料取り扱い単位] ステータスが空になっていることに注意してください。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

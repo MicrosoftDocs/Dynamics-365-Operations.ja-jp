@@ -65,3 +65,6 @@ xppbp.exe ファイルは、*c:\packages\bin* または *I:\AosService\Packages\
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
 
 [開発およびカスタマイズのホーム ページ](../dev-tools/developer-home-page.md#code-migration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

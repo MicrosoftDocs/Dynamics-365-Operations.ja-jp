@@ -163,3 +163,6 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

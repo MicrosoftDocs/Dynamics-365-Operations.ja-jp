@@ -126,3 +126,6 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 [Office 統合のトラブルシューティング](office-integration-troubleshooting.md)
 
 [アプリケーション スタックおよびサーバーのアーキテクチャ](../dev-tools/application-stack-server-architecture.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4445199"
     * 固定資産の帳簿を転送する前に結果を確認します。  
 10. **転送** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

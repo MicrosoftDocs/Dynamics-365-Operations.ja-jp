@@ -211,3 +211,6 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     行の初期同期が完了しました。
 
 8. Finance and Operations アプリで、**顧客 V3** エンティティの Change Tracking をオンにし直します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

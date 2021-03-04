@@ -333,3 +333,6 @@ ms.locfileid: "4972645"
 ## <a name="related-topics"></a>関連トピック
 
 - **[支払端末のエンド ツー エンド支払統合の作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ MessageBox は、重要な状況について通知するためユーザーを中
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

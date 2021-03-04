@@ -82,3 +82,6 @@ ms.locfileid: "4665423"
 [組織の Bing 地図の管理](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web コントロール](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

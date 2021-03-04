@@ -69,3 +69,6 @@ Supply Chain Management では、材料フローがモデルに従っている�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

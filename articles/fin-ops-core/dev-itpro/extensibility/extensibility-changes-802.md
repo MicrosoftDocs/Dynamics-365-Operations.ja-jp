@@ -87,3 +87,6 @@ ms.locfileid: "4409341"
 - 拡張子からマップのサポート: CustVendTrans
 - 拡張子からマップのサポート: CustVendTransOpen
 - SQL 明細書の機能拡張をサポート: PriceDiscAdmCheckPost.postJournal
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

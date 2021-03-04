@@ -57,3 +57,6 @@ ms.locfileid: "4681092"
 * [調整](./api/dbmovement-api-throttling.md)
 * [参照](./api/v1/dbmovement-api-v1-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

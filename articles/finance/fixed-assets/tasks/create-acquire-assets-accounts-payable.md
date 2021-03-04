@@ -56,3 +56,6 @@ ms.locfileid: "4445218"
 17. 一覧で、選択された行のリンクをクリックします。
 18. **転記** をクリックします。 固定資産は、請求書の転記時に作成および取得されます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

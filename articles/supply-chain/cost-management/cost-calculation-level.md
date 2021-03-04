@@ -57,3 +57,6 @@ ms.locfileid: "4431874"
     - **製品 C :** 2
 
 この動作により、製造オーダー BOM に対する変更が後続の原価計算に影響を与えることがなくなります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

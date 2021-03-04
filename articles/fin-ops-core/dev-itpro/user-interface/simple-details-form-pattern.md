@@ -148,3 +148,6 @@ ms.locfileid: "4687820"
 ### <a name="open-issues"></a>未処理の問題
 
 -   少量の関連するコンテンツを表示する簡易詳細のフォームに、全ページ フォーム以外のプレゼンテーションを設ける必要があるかどうかを調べます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

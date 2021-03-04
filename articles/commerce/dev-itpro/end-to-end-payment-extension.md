@@ -744,3 +744,6 @@ public class SampleConnector : IPaymentProcessor
 | MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
 
 \* この列のサンプル値を、独自の支払プロセッサの固有値に置き換える **必要があります** 。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

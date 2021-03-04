@@ -66,3 +66,6 @@ ms.locfileid: "4687090"
 
 > [!NOTE]
 > 以前に PowerBI.com に展開されたレポートは、エラーを発生させることがあります。 これが発生した場合、保守活動が終了したあとにレポートを削除し再配置する必要がある場合があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

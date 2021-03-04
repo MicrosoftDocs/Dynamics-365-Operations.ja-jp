@@ -40,3 +40,6 @@ ms.locfileid: "4445258"
 7. **期間の頻度** フィールドで、オプションを選択します。
 8. フォームを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

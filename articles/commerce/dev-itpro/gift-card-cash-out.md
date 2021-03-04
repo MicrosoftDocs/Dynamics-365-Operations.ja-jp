@@ -104,3 +104,6 @@ ms.locfileid: "4685411"
 すべての一般的な問題については、Modern POS または IIS ハードウェア ステーション イベント ログを常に参照してください。 ログは、Windows イベント ログの以下のノードにあります。
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

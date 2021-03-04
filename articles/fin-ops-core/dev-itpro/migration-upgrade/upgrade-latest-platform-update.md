@@ -193,3 +193,6 @@ if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\Dynami
 --------
 
 [Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Commerce Scale Unit (自己ホスト) は、実店舗などお客様の環境に
 詳細については、以下を参照してください。
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
 - [Commerce Scale Unit (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

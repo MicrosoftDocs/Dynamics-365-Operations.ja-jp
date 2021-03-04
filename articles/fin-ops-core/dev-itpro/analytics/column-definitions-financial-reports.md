@@ -599,3 +599,6 @@ ms.locfileid: "4687233"
 [財務諸表デザイナーでの行の定義](row-definitions-financial-reporting.md)
 
 [財務諸表の高度な形式オプション](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

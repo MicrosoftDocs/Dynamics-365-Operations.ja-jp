@@ -97,3 +97,6 @@ ms.locfileid: "4995545"
 予定収益認識スケジュールが削除され、最終収益認識スケジュールに置き換えられます。 収益スケジュールの詳細は販売注文明細行ごとに管理され、契約上の責務が満たされたときに、繰延収益を実際の収益にリリースするために使用されます。
 
 [![最終収益認識スケジュール](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -162,3 +162,6 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 このタブで、Azure DevOps で最も関連性の高いページへのクイック アクセスが提供されます。
 
 ![UI DevOps の移動](media/UI-DevOps-navigate.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

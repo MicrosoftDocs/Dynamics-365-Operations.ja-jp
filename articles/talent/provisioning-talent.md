@@ -105,3 +105,6 @@ Talent を配置する Power Apps 環境を決定する際には、次のガイ�
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
 
 既定では、環境を作成したグローバル管理者がそこにアクセスできます。 ただし、追加のアプリケーション ユーザーは、明示的にアクセスを許可する必要があります。 アクセスを許可するには、人事管理環境でユーザーを追加し適切なロールを割り当てる必要があります。 Talent を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard の両方も起動する必要があります。  これが発生するまで、他のユーザーは Attract および Onboard にアクセスすることはできませんし、アクセス違反エラーが発生します。 詳細については、[新規ユーザーの作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [ユーザーのセキュリティ ロールへの割り当て](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) を参照してください。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

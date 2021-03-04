@@ -115,3 +115,6 @@ Cloud POS は手動入力モードで起動し、Commerce Scale Unit URL、デ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

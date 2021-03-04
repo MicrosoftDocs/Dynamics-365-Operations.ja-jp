@@ -163,3 +163,6 @@ Azure Front Door にカスタムドメインを追加する方法の詳細につ
 [Commerce 環境での複数の B2C テナントのコンフィギュレーション](configure-multi-B2C-tenants.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

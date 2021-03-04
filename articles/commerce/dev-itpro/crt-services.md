@@ -260,3 +260,6 @@ CRT の多くのサービスは、チャネルおよび店舗運営の機能を�
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | この要求により、カートまたはカート行の販売担当者を更新するための要求がカプセル化されます。                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | この要求は、販売注文をアップロードします。                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | この要求は、チェックアウトのカートを検証します。                                                                              |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

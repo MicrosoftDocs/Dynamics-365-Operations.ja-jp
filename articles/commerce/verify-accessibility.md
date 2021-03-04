@@ -85,3 +85,6 @@ ms.locfileid: "4413879"
 [製品ページの拡充](enrich-product-page.md)
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

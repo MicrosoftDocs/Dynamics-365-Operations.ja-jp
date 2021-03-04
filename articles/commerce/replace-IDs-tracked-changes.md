@@ -61,3 +61,6 @@ Dynamics 365 Commerce では、サイト ビルダー オーサリング ツー�
 [Cookie のコンプライアンス](cookie-compliance.md)
 
 [プライバシー ポリシー ページの追加](add-privacy-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -210,3 +210,6 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

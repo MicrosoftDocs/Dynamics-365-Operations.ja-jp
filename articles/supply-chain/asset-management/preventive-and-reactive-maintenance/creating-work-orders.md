@@ -52,3 +52,6 @@ ms.locfileid: "4432003"
 
 5. **OK** をクリックします。 1 つ以上の作業指示書が作成されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

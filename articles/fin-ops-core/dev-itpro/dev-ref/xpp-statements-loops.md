@@ -150,3 +150,6 @@ static void AnotherMethod()
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

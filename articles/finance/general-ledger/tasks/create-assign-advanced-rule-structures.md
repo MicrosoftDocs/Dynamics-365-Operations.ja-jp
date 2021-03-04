@@ -59,3 +59,6 @@ ms.locfileid: "4445069"
 17. ページを閉じます。
 18. **有効化** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

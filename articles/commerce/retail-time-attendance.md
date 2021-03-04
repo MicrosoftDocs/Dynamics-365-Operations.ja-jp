@@ -139,3 +139,6 @@ POS で:
 - 休暇の登録
 
 時刻と出勤の登録の処理方法については、[時刻と出勤の登録を処理](https://technet.microsoft.com/library/aa573180.aspx)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

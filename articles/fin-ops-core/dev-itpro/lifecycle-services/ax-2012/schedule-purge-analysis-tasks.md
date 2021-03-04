@@ -385,3 +385,6 @@ IDMF では、予期しないエラー状態を障害とみなし、スケジュ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

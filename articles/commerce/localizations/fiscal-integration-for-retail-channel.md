@@ -150,3 +150,6 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 Retail SDK で使用可能な次のレガシ会計統合機能は、会計統合フレームワークを使用せず、それ以降の更新では推奨されません。
 
 - [スウェーデン向け制御ユニットの統合サンプル (レガシ)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

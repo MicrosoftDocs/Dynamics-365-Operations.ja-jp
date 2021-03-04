@@ -53,3 +53,6 @@ ms.locfileid: "4461705"
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 23
 マイナーなバグ修正は、Finance and Operations のプラットフォーム更新プログラム 23 の一部として含まれています。 詳細については、[Dynamics 365 Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23) を参照してください。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

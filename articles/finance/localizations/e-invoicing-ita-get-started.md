@@ -246,3 +246,6 @@ RCS の設定を行う際には、次の作業を実行します :
 - [電子請求書アドオン機能の概要](e-invoicing-service-overview.md)
 - [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
 - [電子請求のアドオン設定](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

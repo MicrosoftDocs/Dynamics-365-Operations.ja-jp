@@ -148,3 +148,6 @@ AtlDataHelpers
 
 AtlDataWHSHelpers
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

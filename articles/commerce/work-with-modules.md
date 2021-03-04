@@ -173,3 +173,6 @@ ms.locfileid: "4413770"
 
 [公開グループの作業](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

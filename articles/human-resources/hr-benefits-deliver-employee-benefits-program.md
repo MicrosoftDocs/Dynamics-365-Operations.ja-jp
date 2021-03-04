@@ -68,3 +68,6 @@ ms.locfileid: "4419398"
 16. [基準] フィールドで、オプションを選択します。
 17. [金額またはレート] フィールドに数値を入力します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ ms.locfileid: "4432147"
 次の図では、(a) は製品 G およびパーツ F の BOM、(b) は製品 G およびパーツ F の工順シートです。
 
 ![工順シートを含む製品 G およびパーツ F](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

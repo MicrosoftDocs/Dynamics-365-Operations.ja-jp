@@ -61,3 +61,6 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 ## <a name="vat-declaration-for-russia"></a>ロシアの VAT申告
 
 今回のリリースでは、電子的な形式でロシアの VAT 申告を生成する ER コンフィギュレーションを確認できます。 詳細については、[電子形式の RUS/ロシア VAT 申告](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ ms.locfileid: "4445333"
 5. [原価管理単位] フィールドで、値を入力または選択します。
 6. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

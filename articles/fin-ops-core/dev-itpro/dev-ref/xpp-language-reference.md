@@ -54,3 +54,6 @@ X++ 言語プログラミング ガイドは、以下のセクションに分か
 + [X++ と C# の比較](xpp-cs-comparison.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

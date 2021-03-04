@@ -64,3 +64,6 @@ ms.locfileid: "4680006"
 |                         Microsoft Dynamics AX                         | プラットフォーム update 1  | 7.0.4127.16103 |   2016 年 5 月    |                                        2016 年 5 月のリリースの既知の問題                                         |
 |                         Microsoft Dynamics AX                         |        7.0         | 7.0.4030.16079 | 2016 年 2 月 |                                      2016 年 2 月のリリースの既知の問題                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

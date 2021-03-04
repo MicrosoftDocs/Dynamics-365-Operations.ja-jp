@@ -131,3 +131,6 @@ ms.locfileid: "4419433"
 アンケートへのアクセス許可は、特定のユーザーまたはユーザー グループに限定する場合と、ネットワーク内のすべてのユーザーに与える場合があります。
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

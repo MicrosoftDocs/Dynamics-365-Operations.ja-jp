@@ -277,3 +277,6 @@ cXML 経由で送信できる注文は確認されると、_待機_ ステータ
 
 - [パンチアウト e-procurement の外部カタログの設定](set-up-external-catalog-for-punchout.md)
 - [パンチアウト e-procurement の外部カタログの使用](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

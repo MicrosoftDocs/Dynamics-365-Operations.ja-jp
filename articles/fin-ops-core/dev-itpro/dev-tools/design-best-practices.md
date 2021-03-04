@@ -100,3 +100,6 @@ ms.locfileid: "5093596"
 ### <a name="number-of-columns-in-a-data-entity"></a>データ エンティティ内の列の数
 Microsoft Excel ベースのインポート/エクスポートでは、最大 255 列までサポートされることに注意してください。 エンティティが 255 列以上をエクスポート/インポートできる場合、非 Excel 形式を計画するか、エンティティの列数が 255 列以下である必要があります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

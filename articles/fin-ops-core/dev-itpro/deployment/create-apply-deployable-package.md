@@ -62,3 +62,6 @@ AOT パッケージは、環境に適用することのできる、1 つまた�
 
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
 環境から配置可能パッケージをアンインストールしたり、削除したりするには、[パッケージ のアンインストール](uninstall-deployable-package.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

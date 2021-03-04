@@ -65,3 +65,6 @@ AND (condition 1[, condition 2, …, condition N])
 ## <a name="additional-resources"></a>追加リソース
 
 [論理機能](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

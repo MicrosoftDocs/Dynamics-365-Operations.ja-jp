@@ -87,3 +87,6 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 - [Lifecycle Service - 問題検索](https://lcs.dynamics.com/Logon/Index) (サイン イン必須) ですべての計画されたおよびリリース済みの規制の更新を検索します。
 - サポートされているローカライズの一覧は、[国際可用性ガイド](https://aka.ms/dynamics_365_international_availability_deck) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

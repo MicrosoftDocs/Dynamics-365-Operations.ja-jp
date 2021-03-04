@@ -66,3 +66,6 @@ ms.locfileid: "4413912"
 [注文詳細のモジュール](order-confirmation-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

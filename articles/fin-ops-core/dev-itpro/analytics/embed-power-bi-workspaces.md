@@ -56,3 +56,6 @@ Power BI ワークスペースは、ほぼリアルタイムの情報に基づ�
 
 ## <a name="whats-next"></a>次の新機能
 今後、Power BI Embedded サービスがバンドルされた新しいクラウド配置が登場します。 開発者 ALM プロセスを説明している追加のドキュメントは、使用可能な Power BI Embedded サービス統合オプションを利用して新しいソリューションを作成するパートナーと ISV を支援するために利用可能になります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

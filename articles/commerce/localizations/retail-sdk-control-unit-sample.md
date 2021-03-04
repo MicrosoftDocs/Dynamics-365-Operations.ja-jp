@@ -319,3 +319,6 @@ Retail POS がスウェーデンのコントロール ユニットと統合さ�
 4. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

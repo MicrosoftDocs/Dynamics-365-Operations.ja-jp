@@ -139,3 +139,6 @@ NumberSequenceConfig <br>
 | [データ型](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md#datatype) |dataType: string <br>|データ型は、参照ページで番号順序が編集可能かどうかを検索するために使用されます。<br>  |
 | [referencePageName](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md#referencepagename) |referencePageName: string <br>|番号順序が編集可能かどうかを定義するページのページ名。<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

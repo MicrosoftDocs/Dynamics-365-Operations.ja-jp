@@ -39,3 +39,6 @@ ms.locfileid: "4431957"
 8. [製品番号] フィールドに値を入力します。
 9. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Attract は、申請、審査、面接、およびオファーという 4 つの
 
 ## <a name="analytic-reports"></a>分析レポート
 採用チームは、[Attract の分析レポート](analytic-reports.md)を使用して、1 つのジョブまたはすべてのジョブにまたがって集計された採用プロセス メトリックスを使用できます。 この機能は現在[プレビュー](access-preview-feature.md)で、[Microsoft Dynamics 365 Talent - Attract のどのバージョンですか](attract-comprehensive-hiring.md) を参照しているユーザー向けに表示されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

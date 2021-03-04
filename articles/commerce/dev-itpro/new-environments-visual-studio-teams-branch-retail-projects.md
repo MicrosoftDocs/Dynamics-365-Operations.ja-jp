@@ -341,3 +341,6 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

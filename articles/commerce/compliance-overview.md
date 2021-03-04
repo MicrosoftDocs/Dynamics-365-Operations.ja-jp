@@ -46,3 +46,6 @@ Microsoft が使用する基本原則の詳細については、[Microsoft Trust
 [プライバシー ポリシー ページの追加](add-privacy-page.md)
 
 [追跡しているコンテンツの変更に関連付けられたユーザー ID の置換](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1568,3 +1568,6 @@ ms.locfileid: "4409347"
 |            その他: CompanyHelper.testCreateParameter のバグ修正             |
 | テーブル CustCollectionLetterJour - クラス cancelCollectionLetterCodeCustTrans |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

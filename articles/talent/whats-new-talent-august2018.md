@@ -85,3 +85,6 @@ ms.locfileid: "4690103"
 ## <a name="other-fixes"></a>その他の修正
 
 今回のリリースには、複数のバグ修正、新しいエンティティの追加、既存のエンティティの修正、およびローカライズされたラベルの変更が含まれます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

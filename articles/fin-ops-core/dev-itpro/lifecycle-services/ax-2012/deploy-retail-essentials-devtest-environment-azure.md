@@ -282,3 +282,6 @@ Dynamics AX クライアントを開いて、次の手順を実行します。
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -216,3 +216,6 @@ static void noRecurrenceButton(Args _args)
 -   **IO** – 外部ファイルの読み取りと書き込みを行います。
 -   **ODBCConnection** – 外部データベースへの Open Database Connectivity (ODBC) インターフェイス。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

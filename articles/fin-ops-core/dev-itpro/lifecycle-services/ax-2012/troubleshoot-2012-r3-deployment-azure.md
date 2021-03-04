@@ -165,3 +165,6 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ ms.locfileid: "4431685"
     * 作成済みのかんばんルールに基づいて活動を処理するために 27 のかんばんが作成されたことを確認します。  
     * これは最後のステップです。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

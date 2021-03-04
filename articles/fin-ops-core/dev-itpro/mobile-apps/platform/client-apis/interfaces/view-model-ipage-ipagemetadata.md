@@ -150,3 +150,6 @@ OnTaskSubmitted: 機能 (taskOptions: すべて): すべて (オプション)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

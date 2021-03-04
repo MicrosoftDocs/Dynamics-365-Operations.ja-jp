@@ -57,3 +57,6 @@ Dynamics 365 Commerce での実験を使用して、E コマース ページの�
 
 ## <a name="next-step"></a>次のステップ
 [仮想を識別して実験の成功メトリックを決定する](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

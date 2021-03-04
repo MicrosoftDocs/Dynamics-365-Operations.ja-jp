@@ -72,3 +72,6 @@ ms.locfileid: "4431749"
 11. [過少支払の理由コード] フィールドで、値を入力または選択します。
 12. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ ms.locfileid: "4686183"
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [電子報告のフォーミュラ言語](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

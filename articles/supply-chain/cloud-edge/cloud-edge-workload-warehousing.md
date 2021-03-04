@@ -245,3 +245,6 @@ ms.locfileid: "4516822"
 
 - ウェーブ テーブル レコードを処理する
 - サイクル実行制御転送イベントの処理
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Power BI Desktop でも計算の作成がサポートされ、複数の集計測
 ## <a name="validating-reports-in-a-demo-environment"></a>デモ環境でのレポートの検証
 
 レポートにはデベロッパー環境のデモまたはテスト データが表示されます。 デモ環境にレポートを統合する場合は、引き続きこのレポートを PowerBI.com アカウントに公開し、クライアントに固定することができます。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

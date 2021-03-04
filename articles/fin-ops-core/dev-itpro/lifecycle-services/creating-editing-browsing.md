@@ -132,3 +132,6 @@ BPM ライブラリ内で語または語句を検索することができます�
 ![検索ボックス](./media/searching.png "検索ボックス")
 
    
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

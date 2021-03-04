@@ -246,3 +246,6 @@ ms.locfileid: "4461712"
 
 [アンケート結果の表示と評価](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

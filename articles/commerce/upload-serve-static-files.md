@@ -107,3 +107,6 @@ URL パスを変更するには、次の手順に従います。
 [画像のトリミング](dam-crop-images.md)
 
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

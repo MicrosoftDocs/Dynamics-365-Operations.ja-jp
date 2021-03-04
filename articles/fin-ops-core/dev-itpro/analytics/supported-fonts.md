@@ -586,3 +586,6 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | 271 | 游ゴシック UI ライト       |
 | 272 | 游ゴシック UI やや太字    |
 | 273 | 游ゴシック UI セミライト   |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

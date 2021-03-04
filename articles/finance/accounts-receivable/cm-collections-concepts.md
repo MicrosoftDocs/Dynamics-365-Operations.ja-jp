@@ -122,3 +122,6 @@ ms.locfileid: "4445153"
 [販売注文の与信保留](./cm-sales-order-credit-holds.md)
 
 [顧客与信管理の定期処理タスク](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

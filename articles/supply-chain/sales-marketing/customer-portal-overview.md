@@ -69,3 +69,6 @@ ms.locfileid: "4529581"
 ![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
 顧客ポータルは、 Power Apps ポータルを使用して Supply Chain Management のインストール データを使用した外部向けの Web サイトを構築したいと考えている組織にとっての出発点としての役割を果たします。 これにより、組織は、デュアル書き込み、Supply Chain Management、Power Apps ポータルを接続することができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

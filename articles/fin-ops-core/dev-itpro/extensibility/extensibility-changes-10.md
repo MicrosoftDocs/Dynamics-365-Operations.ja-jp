@@ -427,3 +427,6 @@ ms.locfileid: "4409343"
 
 - InventSumFields が使用されているクエリを SysDa に変換します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

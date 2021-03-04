@@ -44,3 +44,6 @@ Onboard アプリは、対応する国または地域でのみで提供してい
 [![国/地域にもとづいた、スタンドアロン Onboardアプリの プロビジョニングプロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 完全版の Talent とは異なり、スタンドアロンの Onboard アプリ では、各ユーザーがアクセス可能となる環境の一覧を管理していません。 ユーザーは、最後に使用した環境に自動的にサインインします。 **設定** ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

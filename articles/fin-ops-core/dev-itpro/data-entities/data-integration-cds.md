@@ -34,3 +34,6 @@ Dataverse を使用することにより、Finance and Operations アプリお�
 Dataverse データ統合の詳細については、Microsoft Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) を参照してください。
 
 Dataverseを使用する例については、 [見込顧客から収益化へ](../../../supply-chain/sales-marketing/prospect-to-cash.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

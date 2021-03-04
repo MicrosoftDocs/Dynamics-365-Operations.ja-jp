@@ -76,3 +76,6 @@ FILTER (MyTable,
 
 - [ER モデル コンフィギュレーション - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER 形式コンフィギュレーション - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

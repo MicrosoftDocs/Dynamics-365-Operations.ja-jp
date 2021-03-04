@@ -85,3 +85,6 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 ## <a name="table-extension--previewpartref-property"></a>テーブル拡張 - PreviewPartRef プロパティ
 
 このリリースには、テーブル拡張を介して **PreviewPartRef** プロパティの値を変更する機能が含まれています。 この機能を使用すると、TMSRoute のプレビューの強化など、既存へのプレビューを強化できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

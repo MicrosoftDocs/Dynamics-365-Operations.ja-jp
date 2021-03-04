@@ -334,3 +334,6 @@ Finance and Operations の場合:
 > TLS 1.2 またはそれ以降のバージョンを使用することが原因で対象サービスを変更できない場合は、次の図に示すように、ブローカー サービスを導入して 2 ホップ コールを行うことでこの問題を回避できます。
 >
 > ![TLS の要件](./media/integration-tls.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ main(metadataService: [MetadataService](../interfaces/services-business-logic-se
 
 #### <a name="returns-application"></a>[Application](../interfaces/services-application-iapplication.md) を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

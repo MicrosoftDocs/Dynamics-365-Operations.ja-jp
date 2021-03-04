@@ -136,3 +136,6 @@ https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

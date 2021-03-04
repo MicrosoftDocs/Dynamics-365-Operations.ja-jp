@@ -501,3 +501,6 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
 5.  ルックアップ列として **原産国/地域** を選択し、右矢印ボタンをクリックします。
 6.  **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

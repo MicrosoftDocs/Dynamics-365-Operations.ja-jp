@@ -45,3 +45,6 @@ ms.locfileid: "4432075"
 次の図は、**メンテナンス要求のタイプ** ページの例を示しています。
 
 ![メンテナンス要求のタイプ ページ](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

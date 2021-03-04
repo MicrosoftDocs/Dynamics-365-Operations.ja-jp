@@ -50,3 +50,6 @@ ms.locfileid: "4409270"
 
 **解決策** - ナビゲーション メソッドは現時点でサポートされていません。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

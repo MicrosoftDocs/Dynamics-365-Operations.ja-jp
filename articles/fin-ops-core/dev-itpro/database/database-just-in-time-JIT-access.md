@@ -49,3 +49,6 @@ LCS のアカウントおよび有効にした IP アドレスを使用して、
 ![有効期限の時間とともに表示されるデータベース アカウント](media/sql-jit3.png)
 
 LCS のアカウントおよび有効にした IP アドレスを使用して、データベースに接続する SQL Server Management Studio (SSMS) のようなツールを使用することができるようになります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
 ## <a name="additional-resources"></a>追加リソース
 
 [コンフィギュレーション、インストール、および有効化 Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

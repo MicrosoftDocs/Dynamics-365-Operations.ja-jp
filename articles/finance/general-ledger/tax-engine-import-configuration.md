@@ -50,3 +50,6 @@ ms.locfileid: "4984999"
 ![コンフィギュレーションの読み込み](media/gte-extension-import-configurations.png)
 
 7. **はい** をクリックして、インポートを確認します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

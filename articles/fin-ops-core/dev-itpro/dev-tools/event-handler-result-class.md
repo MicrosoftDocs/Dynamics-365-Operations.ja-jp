@@ -85,3 +85,6 @@ if (result.hasResult())
     ret = result.isAccepted();
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

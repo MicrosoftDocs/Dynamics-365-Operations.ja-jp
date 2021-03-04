@@ -68,3 +68,6 @@ ms.locfileid: "4445208"
 5. **OK** をクリックします。
 6. **ステータス** フィールドで '転記済' を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

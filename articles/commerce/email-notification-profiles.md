@@ -96,3 +96,6 @@ ms.locfileid: "4413666"
 [チャネル設定の前提条件](channels-prerequisites.md)
 
 [組織と組織階層の概要](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

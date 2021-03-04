@@ -52,3 +52,6 @@ ms.locfileid: "4687832"
 
 この方法を使用することにより、**pageLink** コントロールのローカライズされたラベルも取得します。 ワークスペースが読み込まれると、結果ははるかに高速になります。
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

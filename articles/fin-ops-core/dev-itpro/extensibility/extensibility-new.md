@@ -45,3 +45,6 @@ ms.locfileid: "4409333"
 + [バージョン 7.3 の拡張機能の変更](extensibility-changes-73.md)
 + [拡張機能の変更 (2017 年 7 月)](changes-july-2017.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

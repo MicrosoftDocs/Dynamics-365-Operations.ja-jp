@@ -76,3 +76,6 @@ ms.locfileid: "4680497"
 
 - [[Excel で明細行を開く] メニューへのテンプレートの追加](../user-interface/add-templates-open-lines-excel-menu.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

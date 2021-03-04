@@ -57,3 +57,6 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
  
   > [!NOTE]
   > この機能は Tier-2+ Sandbox においてのみ利用可能となっています。プロダクション環境でがご利用いただけません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

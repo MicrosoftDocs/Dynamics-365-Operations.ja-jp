@@ -157,3 +157,6 @@ ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

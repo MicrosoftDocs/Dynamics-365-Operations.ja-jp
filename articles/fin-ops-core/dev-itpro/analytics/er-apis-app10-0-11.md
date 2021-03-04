@@ -101,3 +101,6 @@ class ERIntegrationPointCodeSamples extends RunBaseBatch
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

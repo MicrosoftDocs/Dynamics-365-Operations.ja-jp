@@ -91,3 +91,6 @@ ROUNDAMOUNT (number, decimals, round rule)
 [その他 (ビジネス ドメインの特定の) 関数](er-functions-category-other.md)
 
 [算術関数](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ POS でこの機能がコンフィギュレーションされた後、**荷渡�
 [コール センター注文の作成](tasks/create-call-center-orders.md)
 
 [配送モードによるトランザクション メールのカスタマイズ](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

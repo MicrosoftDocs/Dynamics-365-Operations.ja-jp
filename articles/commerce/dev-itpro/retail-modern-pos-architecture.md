@@ -46,3 +46,6 @@ Modern 販売時点管理 (POS) のユーザーは、サポートされている
 Cloud POS は、Modern POS のホストされたバージョンであり、特定のデバイスまたは特定のブラウザでレンダリングされる方法のみが異なります。 また、Modern POS は、オフライン モードをサポートしており、したがってローカル CRT です。 その他のネイティブ周辺機器のサポートは、Modern POS に固有です。
 
 ![CloudPOS および MPOS](./media/cloudpos-and-mpos.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -684,3 +684,6 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
 - [顧客フォームの作成](build-customer-form.md) – フォーム パターンを公開する場合は、このチュートリアルを参照してください。 このチュートリアルでは、詳細マスター パターンをフォームに適用するプロセスについて説明します。
 - [ナビゲーションの構築](build-navigation.md) – メニュー構造にワークスペースを追加する方法については、このチュートリアルを参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

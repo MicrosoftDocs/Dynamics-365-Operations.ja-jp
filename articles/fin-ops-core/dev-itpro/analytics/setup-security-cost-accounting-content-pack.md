@@ -63,3 +63,6 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 
 ## <a name="additional-resources"></a>追加リソース
 Power BI の行レベルのセキュリティの詳細については、「[Power BI のモデルでのセキュリティ管理](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

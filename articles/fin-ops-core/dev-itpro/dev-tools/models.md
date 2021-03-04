@@ -98,3 +98,6 @@ ms.locfileid: "5093460"
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 [モデルのエクスポートとインポート](models-export-import.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

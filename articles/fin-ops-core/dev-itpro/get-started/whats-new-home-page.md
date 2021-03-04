@@ -68,3 +68,6 @@ Finance and Operations アプリのプラットフォーム更新での新機能
 | プラットフォーム update 1  | 7.0.4127.16103   | 2016 年 5 月         | [Dynamics AX プラットフォーム更新プログラム 1 の新機能および変更された機能](../../fin-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md)                                    |
 | Dynamics AX 7.0                | 7.0.4030.16079   | 2016 年 2 月    | [Dynamics AX 7.0 の新機能および変更された機能](../../fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                                         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

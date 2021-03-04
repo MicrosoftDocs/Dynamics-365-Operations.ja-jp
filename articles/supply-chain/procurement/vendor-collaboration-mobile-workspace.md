@@ -170,3 +170,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 
 ### <a name="open-confirmed-orders"></a>確認済みのオープン注文
 顧客によって発注書が確認されると、(発注書の状態が **確認済** に変更される)、確定済受注の公開に表示されます。 これは、顧客が受領済に登録されるまでリストに保持されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

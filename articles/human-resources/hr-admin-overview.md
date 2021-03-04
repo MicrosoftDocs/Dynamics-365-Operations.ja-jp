@@ -102,3 +102,5 @@ ms.locfileid: "4527864"
 - [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)
 - [開発者ガイド](hr-developer-overview.md)
 - [ユーザー ガイド](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

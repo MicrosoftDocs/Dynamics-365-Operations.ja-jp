@@ -119,3 +119,6 @@ ms.locfileid: "4979603"
 | 配送のモデル             | 取得可能          |
 | 返品場所               | 取得可能          |
 | 配分済み注文の管理   | 使用不可      |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

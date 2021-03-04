@@ -120,3 +120,6 @@ Commerce 本社で明細書にリンクされていないトランザクショ�
 [小売トランザクションを編集するために Excel ブックを作成する](create-excel-edit.md)
 
 [小売トランザクションを編集するために Excel ブックにフィールドを追加する](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

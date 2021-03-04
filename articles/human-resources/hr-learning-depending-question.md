@@ -56,3 +56,6 @@ ms.locfileid: "4419441"
 10. ツリーで、「質問\自分の作業に対して公正な給料をもらっている」を選択します。
     * 依存関係を表示する更新された質問ツリーに注意します。  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -664,3 +664,6 @@ _page.addButton(step.createAction(#ActionOK), true);
 拡張方法:
 
 -   **isComplete()** メソッドを拡張し、追加ロジックを構築します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

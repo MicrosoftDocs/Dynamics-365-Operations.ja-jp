@@ -59,3 +59,6 @@ Finance and Operations では、多くのタスクをバッチ ジョブの一�
 -  [バッチジョブ履歴のクリーンアップ](batch-history-cleanup.md)
 -  [実行中のバッチ ジョブの中止](batch-abort.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

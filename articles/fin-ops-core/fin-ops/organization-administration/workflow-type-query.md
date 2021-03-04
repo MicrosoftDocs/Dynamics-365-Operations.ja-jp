@@ -42,3 +42,6 @@ ms.locfileid: "4798757"
 5. アプリケーション オブジェクト ツリー (AOT) で、新しいクエリを右クリックし、 **保存** を選択します。
 
 クエリの作成方法の詳細については、 [AOTを使用したクエリの作成](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

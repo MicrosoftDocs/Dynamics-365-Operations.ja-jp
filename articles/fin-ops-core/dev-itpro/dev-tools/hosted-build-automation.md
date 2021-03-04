@@ -140,3 +140,6 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 ### <a name="sample-pipeline-for-x-developers"></a>X++ 開発者のためのサンプル パイプライン
 
 [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub リポジトリでは、既存の Azure DevOps プロジェクトにインポートできるサンプル パイプラインを見つけることができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -225,3 +225,6 @@ ms.locfileid: "4679924"
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [選択](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

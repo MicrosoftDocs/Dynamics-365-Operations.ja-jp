@@ -145,3 +145,6 @@ Contoso の請求書には次の情報が含まれています。
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

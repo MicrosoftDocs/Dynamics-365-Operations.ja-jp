@@ -62,3 +62,6 @@ Microsoft では、決算に関する不適切な期末プロセスが原因で�
 ## <a name="inventory-aging-report-discrepancies"></a>在庫エイジング レポートの差異
 
 **在庫エイジング レポート** には、さまざまな保管分析コード (サイトや倉庫など) で表示した場合、異なる値が表示されます。 レポート ロジックの詳細については、[在庫エイジング レポートの例とロジック](inventory-aging-report.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

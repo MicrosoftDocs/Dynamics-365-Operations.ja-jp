@@ -100,3 +100,6 @@ URL を公開するには、次の手順に従います。
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
 [ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

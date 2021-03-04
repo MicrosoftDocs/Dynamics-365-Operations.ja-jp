@@ -57,3 +57,6 @@ ms.locfileid: "4431776"
 21. **コメント** フィールドで、値を入力します。
 22. **送信** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

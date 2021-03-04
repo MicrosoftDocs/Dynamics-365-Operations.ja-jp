@@ -217,3 +217,6 @@ BODY
 デキュー API は、HTTPS ではなく HTTP を返します。 この動作は、運用環境などのロード バランサーを使用するアプリケーション環境で確認できます。 (1 つのボックス環境で動作を表示ことはできません)。 アプリケーションからキューから削除しようとするミドルウェア アプリケーションで、URI スキームを HTTPS に変更することをお勧めします。
 
 ![バッチ ジョブの状態](./media/show-batch-status.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

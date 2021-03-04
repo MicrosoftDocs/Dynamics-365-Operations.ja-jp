@@ -79,3 +79,6 @@ RSAT では、テストの実行中にこれらの式が評価されるため、
 保存済 (コピー済) 変数は、同じテスト ケース内で、または同じテスト スイート内の複数のテスト ケース間で使用できます。
 
 ![変数を含むメッセージ](media/rsat-message-with-variable.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

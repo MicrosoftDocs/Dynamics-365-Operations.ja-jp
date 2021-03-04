@@ -107,3 +107,6 @@ ms.locfileid: "4820605"
 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
 
 [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

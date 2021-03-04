@@ -110,3 +110,6 @@ Dynamics 365 for Finance and Operations リリース 8.0 の後では、新し�
 ## <a name="still-have-questions"></a>疑問が解決されない場合
 
 [拡張性についてよく寄せられる質問](app-sealing-faq.md)と[拡張機能のホーム ページ](extensibility-home-page.md)にリストされた他のリソースをご覧ください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

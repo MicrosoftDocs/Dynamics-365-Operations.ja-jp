@@ -83,3 +83,6 @@ LIST (list 1 [, list 2, …, list N])
 [リスト関数](er-functions-category-list.md)
 
 [実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

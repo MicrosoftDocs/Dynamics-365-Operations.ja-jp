@@ -54,3 +54,6 @@ ms.locfileid: "4445248"
     * 耐用年数を設定した後に減価償却期間が計算されることに注意してください。  
     * 税務用の減価償却方法を必要に応じて設定できます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

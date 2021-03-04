@@ -95,3 +95,6 @@ Dynamics 365 Commerce では、個々のページの SEO メタデータを管�
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
 [ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

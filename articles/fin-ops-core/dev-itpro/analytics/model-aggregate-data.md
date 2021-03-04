@@ -287,3 +287,6 @@ ms.locfileid: "4682231"
     | 次の値を超えた場合に緑 | 110        |
 
 8. 変更を保存するには、左下の **保存** をクリックします。 KPI の状態の色が表示される KPI タイルで変更されたことに注意します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

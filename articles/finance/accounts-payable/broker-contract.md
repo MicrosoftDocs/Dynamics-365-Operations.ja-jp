@@ -141,3 +141,6 @@ ms.locfileid: "4995678"
 > [!NOTE]
 > 損金処理経費勘定番号は、**差異の理由** ページの **主勘定** フィールドで、特定の理由コードにより指定されます。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

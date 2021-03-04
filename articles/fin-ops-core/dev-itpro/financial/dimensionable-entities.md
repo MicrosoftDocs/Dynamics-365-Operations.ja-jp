@@ -194,3 +194,6 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 
 > [!NOTE]
 > これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Finance and Operations でエンティティの開発に対して確立された
 ### <a name="managing-a-finance-and-operation-instance-in-a-dataverse-environment-for-virtual-entities"></a>仮想エンティティの Dataverse 環境における Finance and Operation インスタンスの管理 
 
 仮想エンティティの Dataverse 環境には、1 つの Finance and Operations インスタンスをリンクする必要があります。 必要な接続設定情報は、Finance and Operations の仮想エンティティ データ ソースでキャプチャされます。 このデー タソースは、MicrosoftOperationsERPCatalog ソリューションに含まれています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

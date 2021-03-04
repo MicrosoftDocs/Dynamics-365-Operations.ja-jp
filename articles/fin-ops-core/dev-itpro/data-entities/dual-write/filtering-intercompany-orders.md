@@ -65,3 +65,6 @@ ms.locfileid: "4701036"
 7. **見積** エンティティの範囲を指定したら、クエリ文字列として `CUSTGROUP !=  "<company>"` にフィルターを適用します。
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="販売見積ヘッダー、クエリの編集":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

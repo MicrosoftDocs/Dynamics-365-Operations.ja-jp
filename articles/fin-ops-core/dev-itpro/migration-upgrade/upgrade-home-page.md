@@ -73,3 +73,6 @@ Finance and Operations のオンプレミス バージョンに更新プログ�
  詳細については、以下を参照してください。 
 - [データベースの更新](../database/database-refresh.md)
 - [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

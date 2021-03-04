@@ -51,3 +51,6 @@ ms.locfileid: "4685679"
 
 開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure Storage エミュレーターが使用できないか、旧バージョンの エミュレーター が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポート ジョブを再実行してください。 ストレージのエミュレーターは [Azure Storage エミュレーター](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) からインストールすることができます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

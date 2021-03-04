@@ -53,3 +53,6 @@ ms.locfileid: "4461764"
 5. **削除** のアクセス許可を付与するよう設定します。
 6. **未公開のオブジェクト** タブを選択します。
 7. **すべて公開** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ ms.locfileid: "5126991"
 | 初期 | ツールキットは LCS 共有 アセット ライブラリにアップロード済み。|
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

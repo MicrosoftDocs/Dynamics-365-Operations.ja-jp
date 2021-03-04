@@ -110,3 +110,6 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 ## <a name="packing-list-report"></a>梱包リスト レポート
 
 危険物機能がシステムで有効になっている場合、梱包リストには、品目の出荷印刷テキストに関連する追加情報が含まれます。 このレポートは、通常どおり **すべての積荷** ページから使用できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

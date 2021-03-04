@@ -558,3 +558,6 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 - [税エンジンの概要](tax-engine.md)
 - [税エンジン コンフィギュレーションの拡張](extend-tax-engine-configurations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

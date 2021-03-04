@@ -81,3 +81,6 @@ ms.locfileid: "4431681"
 4. [入庫場所] フィールドで、値を入力または選択します。
     * 運営リソースが消費する材料を格納している倉庫の場所を指定します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

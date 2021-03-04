@@ -96,3 +96,6 @@ Finance にまだない利息、手数料、諸費用など新しい銀行開始
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

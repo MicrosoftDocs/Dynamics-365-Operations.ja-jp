@@ -49,3 +49,6 @@ ms.locfileid: "5092410"
 | Web サービス応答サンプル 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

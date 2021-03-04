@@ -98,3 +98,6 @@ Fabrikam は、顧客 4031 に 2 つの現金割引期間を提示します。 �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

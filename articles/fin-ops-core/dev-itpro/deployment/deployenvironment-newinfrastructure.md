@@ -58,3 +58,6 @@ ms.locfileid: "4680541"
 
 > [!IMPORTANT]
 > クラウドでチャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、2020 年 1 月 31 日までに [Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) を行う必要があります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

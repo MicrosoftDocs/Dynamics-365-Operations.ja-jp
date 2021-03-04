@@ -88,3 +88,6 @@ ms.locfileid: "4694167"
 [警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

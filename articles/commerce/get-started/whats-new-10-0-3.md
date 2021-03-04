@@ -63,3 +63,6 @@ Microsoft Dynamics 365 for Finance and Operations の機能については、[Fi
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

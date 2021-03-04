@@ -79,3 +79,6 @@ Microsoft Dynamics 365: Attract では、候補者が詳細を入力する候補
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [テナントと環境間でのアプリケーションの移行](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

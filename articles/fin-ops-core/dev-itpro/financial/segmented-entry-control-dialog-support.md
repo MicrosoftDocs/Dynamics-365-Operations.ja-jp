@@ -74,3 +74,6 @@ dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
 [セグメント化されたエントリ コントロールに関する移行ガイダンス](segmented-entry-control-migration-guidance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

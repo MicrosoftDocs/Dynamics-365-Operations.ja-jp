@@ -50,3 +50,6 @@ Finance and Operations アプリケーションの機能については、[Finan
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

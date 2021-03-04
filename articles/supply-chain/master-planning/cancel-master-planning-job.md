@@ -53,3 +53,6 @@ Microsoft Dynamics 365 Supply Chain Management には、マスター プラン �
 4. **バッチ タスク** で、終了するタスクを選択します。
 5. **ステータスの変更** をクリックし、**キャンセル**、続いて **OK** をクリックします。
 6. **バッチ タスク** クイック タブで **中止** をクリックします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

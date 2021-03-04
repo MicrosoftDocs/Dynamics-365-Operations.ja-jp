@@ -45,3 +45,6 @@ ms.locfileid: "4683141"
 - [仕入先支払ワークスペース](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [倉庫のパフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
 - [要員指標 Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

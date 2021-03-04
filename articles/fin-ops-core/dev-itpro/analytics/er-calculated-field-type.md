@@ -342,3 +342,6 @@ ms.locfileid: "4681259"
 - [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 - [パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

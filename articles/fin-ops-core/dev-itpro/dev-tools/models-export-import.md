@@ -73,3 +73,6 @@ ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname
     [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ ms.locfileid: "4445324"
     * 全てのコスト センターに、対応する第 2 原価要素が位置づけされるまで続けます。  
 16. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

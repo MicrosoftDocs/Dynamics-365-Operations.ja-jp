@@ -66,3 +66,6 @@ Power Apps を Talent に埋め込む方法の詳細については、[Power App
 2. ツール バーで、**Power Apps からアプリを追加** を選択します。
 
     ![個人用設定ツールバーを使用して Power Apps からアプリを追加する](media/powerapp-bar.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 
 4. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

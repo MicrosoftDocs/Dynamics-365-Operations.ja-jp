@@ -80,3 +80,6 @@ Visio ファイルを表示またはアップロードするには、次の手�
 1. 業務プロセスを選択し、右ウィンドウの **概要** タブで **図** を選択します。
 2. **フローチャート** ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラーのフローチャート (BPM)](flowcharts-business-process-modeler.md) の未接続のフローチャート セクションを参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

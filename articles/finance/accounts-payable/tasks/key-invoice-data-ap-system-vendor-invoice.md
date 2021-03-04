@@ -73,3 +73,6 @@ ms.locfileid: "4445024"
 19. **転記** をクリックします。
 20. フォームを閉じます。 発注書が受入済未請求として一覧に現れないことに注意してください。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ ms.locfileid: "4685151"
 ## <a name="additional-resources"></a>その他のリソース
 - [公式 GDPR サイト](https://www.eugdpr.org/)
 - [Microsoft サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

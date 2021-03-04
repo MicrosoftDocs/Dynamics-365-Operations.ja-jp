@@ -74,3 +74,6 @@ ms.locfileid: "4445216"
     3.  新規リレーションシップ タイプの設定をテストするには、実行可能なクラスを作成し、Main() の DirDataPopulation::insertDirRelationshipTypes() を呼び出します。 **DirRelationshipTypeTable** に新規リレーションシップ タイプが表示され、**リレーションシップ タイプ** ページでこの新規リレーションシップ タイプが利用可能となります。
 
         ![実行可能なクラス](media/Runnable.PNG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

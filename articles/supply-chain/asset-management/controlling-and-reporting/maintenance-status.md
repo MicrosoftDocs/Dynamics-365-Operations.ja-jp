@@ -68,3 +68,6 @@ ms.locfileid: "4431859"
 
 ![機能の場所を含む月ごとのワークロードの例](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

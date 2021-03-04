@@ -79,3 +79,6 @@ ms.locfileid: "4432052"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス契約の作成](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

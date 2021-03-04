@@ -144,3 +144,6 @@ ms.locfileid: "4431758"
 - 既定の棚卸理由コード
 - 棚卸理由コードを表示する
 - 棚卸理由コードを編集する
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ ms.locfileid: "4445222"
 33. **OK** をクリックして支払を生成します。
 34. すべての支払が承認され生成された場合は、**転記** をクリックします。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

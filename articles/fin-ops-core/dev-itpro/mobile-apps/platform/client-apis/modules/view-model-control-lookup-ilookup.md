@@ -147,3 +147,6 @@ ms.locfileid: "4679922"
 | [OnOptionSelected](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onoptionselected) |OnOptionSelected: 機能 (ルックアップ: すべて、lookupEntityData: すべて): 無効 (オプション)  <br>|オプションが選択されることによって発生するイベントです。<br>  |
 | [OnValueChanged](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onvaluechanged) |OnValueChanged: 機能 (値 : すべて): 無効 (オプション)  <br>|値が変更されることによって発生するイベントです。<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ LinkedIn へのジョブ転記に問題がある場合は、[LinkedIn と Micros
 [LinkedIn Recruiter 候補者のソーシング](./attract-linkedin-recruiter.md)
 
 [LinkedIn との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

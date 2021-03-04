@@ -81,3 +81,6 @@ ms.locfileid: "4432259"
 次の図は、**メンテナンス要求のライフサイクル モデル** ページの例を示しています。
 
 ![メンテナンス要求のライフサイクル モデルのページ](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

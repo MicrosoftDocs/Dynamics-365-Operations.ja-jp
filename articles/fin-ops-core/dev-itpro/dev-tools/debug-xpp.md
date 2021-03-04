@@ -63,3 +63,6 @@ X++ コードをデバッグするには、次の手順を実行します。
 --------
 
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

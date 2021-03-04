@@ -104,3 +104,6 @@ ID と値のペアは、IoT インテリジェンス メッセージ スキー�
 上記の 2 つのメッセージには **ID** と **値** プロパティが含まれます。 **id** 値は、シナリオ設定時に **シグナル データ値** テーブルにマップできます。 **装置のダウンタイム** シナリオでは、**IoTInt.Machine1225.PartOut** 値をマップします。 **製品品質** シナリオでは、**IoTInt.Machine1225.Temperature** 値をマップします。
 
 詳細については、[Azure IoT Hub ドキュメント](https://docs.microsoft.com/azure/iot-hub/) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

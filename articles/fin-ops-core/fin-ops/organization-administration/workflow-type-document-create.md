@@ -93,3 +93,6 @@ ms.locfileid: "4798759"
 ## <a name="see-also"></a>参照
 
 [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

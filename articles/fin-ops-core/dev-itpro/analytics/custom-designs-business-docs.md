@@ -102,3 +102,6 @@ Microsoft Dynamics 365 Finance には、カスタム レポート ソリュー�
     [![コンパイル後の印刷管理設定](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 これで、ビジネス ドキュメントのカスタマイズが完了しました。 アプリケーションでトランザクションを処理するとき、ビジネス ドキュメントのカスタム レポート デザインがユーザーに提示されるようになります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

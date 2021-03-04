@@ -53,3 +53,6 @@ Dynamics AX 2012 では、クライアントが初期化中に発生したイベ
 - *_isBatch* はシステムがバッチ ジョブを実行しているかどうかを指定します。
 - *_isInteractive* はセッションが対話型であるかを指定します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

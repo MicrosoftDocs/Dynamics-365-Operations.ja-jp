@@ -380,3 +380,6 @@ metadataService.hideNavigation('Select-a-customer', 'Select-a-vehicle');
 
 #### <a name="returns-any"></a>any を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

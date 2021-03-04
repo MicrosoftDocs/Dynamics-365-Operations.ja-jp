@@ -118,3 +118,6 @@ Adyen と PayPal の両方の支払コネクタが必要な場合は、両方の
 [PayPal 向け Dynamics 365 Payment Connector](paypal.md)
 
 [Adyen を使用した強力な顧客認証 (SCA)](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

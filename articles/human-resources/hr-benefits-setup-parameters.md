@@ -68,3 +68,6 @@ Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に�
 3. **保存** を選択します。
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

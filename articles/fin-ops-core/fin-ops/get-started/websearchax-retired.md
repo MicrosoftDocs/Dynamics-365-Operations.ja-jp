@@ -34,3 +34,6 @@ WebSearchAX ページを破棄する必要があります。 お気に入りの�
 - または -
 
 サイト: msdn.microsoft.com Dynamics AX 2012 「検索用語」
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

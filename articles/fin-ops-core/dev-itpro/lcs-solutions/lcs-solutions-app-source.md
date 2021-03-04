@@ -35,3 +35,6 @@ Microsoft AppSource の Lifecycle Services (LCS) ソリューション パッケ
 -   [ビジネス プロセス モデル](business-process-modeler-libraries-lcs-solutions.md)
 -   [方法](methodologies-lcs-solutions.md)
 -   [マーケティング](marketing-content-lcs-solutions.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

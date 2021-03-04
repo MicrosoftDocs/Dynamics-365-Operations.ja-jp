@@ -74,3 +74,6 @@ Microsoft Office の統合機能は、生産的環境を提供し、Office 製�
 
 ## <a name="elearning-courses"></a>eLearning コース
 オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance and Operations ](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2Cdeveloper) をご確認ください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

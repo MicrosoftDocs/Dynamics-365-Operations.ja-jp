@@ -108,3 +108,6 @@ ms.locfileid: "4681712"
 
 ![ER データ モデル デザイナーのページ](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

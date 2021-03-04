@@ -69,3 +69,6 @@ Microsoft Dynamics AX 2012 モデル ファイルの分析を行う必要があ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

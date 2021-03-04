@@ -107,3 +107,6 @@ ms.locfileid: "4432251"
 ## <a name="additional-resources"></a>追加リソース
 
 [測定単位の管理](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

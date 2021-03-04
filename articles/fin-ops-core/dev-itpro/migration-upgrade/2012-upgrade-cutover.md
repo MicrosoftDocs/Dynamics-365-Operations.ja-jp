@@ -64,3 +64,6 @@ ms.locfileid: "5130719"
 - [オンボード](../../fin-ops/imp-lifecycle/onboard.md)
 - [Dynamics サービス エンジニア リング チームへのサービス要求の送信](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
 - [AX 2012 からのアップグレード - 切替テスト (切替モック)](./upgrade-cutover-testing.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

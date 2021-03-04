@@ -49,3 +49,6 @@ Finance and Operations のユーザー エクスペリエンスで重要な役�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

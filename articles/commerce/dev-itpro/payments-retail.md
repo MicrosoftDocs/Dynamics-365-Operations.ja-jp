@@ -73,3 +73,6 @@ Adyen コネクタに関して、設定に関する問題の場合は Adyenコ�
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

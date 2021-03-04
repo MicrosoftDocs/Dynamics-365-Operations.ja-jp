@@ -58,3 +58,6 @@ Finance and Operations アプリでデータを作成する際に発生する問
 Dataverse でデータの作成時に発生する問題の修正方法については、[ライブ同期に関する問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md) を参照してください。
 
 Dataverse でデータの作成時にエラーが発生した場合にエラーの詳細の確認する方法については、[ Dataverse でプラグイン追跡ログを有効化してエラーの詳細を確認する](dual-write-troubleshooting.md#enable-view-trace) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ ms.locfileid: "4688022"
 | [販売注文](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | 販売注文を最新の状態に保つことができます。                                                                                                                          |  2017 年 1 月                  |
 | [仕入先コラボレーション](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | 仕入先は、承認のために送信された発注書を最新の状態を保つことができます。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。 |2017 年 1 月    |
 | [資産管理](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | このワークスペースでは、ユーザーがメンテナンス要求と作業指示を表示および作成できます。 ユーザーは、カレンダーまたはリスト表示で、割り当てられた作業指示書ジョブを表示することもできます。 資産と機能の場所を表示したり、検索したりすることもできます。 |2019 年 10 月    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

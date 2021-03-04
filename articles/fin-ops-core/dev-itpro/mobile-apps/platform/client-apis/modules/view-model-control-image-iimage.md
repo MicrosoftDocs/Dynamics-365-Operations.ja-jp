@@ -140,3 +140,6 @@ ImageStyleType: 「平方」 &#124; 「シンボル」 &#124; 「幅」 &#124; �
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

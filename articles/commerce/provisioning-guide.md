@@ -176,3 +176,6 @@ Commerce 評価環境のプロビジョニングと構成のプロセスを続�
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

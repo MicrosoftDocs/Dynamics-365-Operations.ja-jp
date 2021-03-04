@@ -500,3 +500,6 @@ HTTP `POST` メソッドでクエリが実行されます。
 ```
 
 "数量" フィールドは、測定とそれに関連付けられた値のディクショナリとして構成されています。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1485,3 +1485,6 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 [X++ 言語リファレンス](xpp-language-reference.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

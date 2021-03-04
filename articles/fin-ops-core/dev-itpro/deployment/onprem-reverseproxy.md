@@ -66,3 +66,6 @@ LocalAgent は Azure リソースと通信する必要があります。 結果�
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

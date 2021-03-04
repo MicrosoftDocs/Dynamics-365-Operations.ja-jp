@@ -66,3 +66,6 @@ Finance and Operations の最新バージョンを導入するには 3 つの基
 
 [Lifecycle Services (LCS) によるサービスの更新の構成](../lifecycle-services/configure-service-updates.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

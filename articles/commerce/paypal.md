@@ -176,3 +176,6 @@ PayPal で **ライブ** のマーチャント アカウントを作成するに
 - [支払に関するよく寄せられる質問](dev-itpro/payments-retail.md)
 - [チェックアウト モジュール](add-checkout-module.md)
 - [支払モジュール](payment-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

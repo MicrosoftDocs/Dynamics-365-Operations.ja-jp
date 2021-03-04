@@ -115,3 +115,6 @@ Microsoft Dynamics Lifecycle Services インフラストラクチャ見積もり
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

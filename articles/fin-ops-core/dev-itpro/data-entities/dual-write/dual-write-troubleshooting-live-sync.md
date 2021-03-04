@@ -127,3 +127,6 @@ Dynamics 365 のモデル駆動アプリでは、次のようにエラーが表�
 
 3. **externalenvironmentURL** の列に、正しい Dataverse またはアプリの URL が設定されていることを確認してください。 誤った Dataverse の URL を指している重複行を削除します。 DUALWRITEPROJECTFIELDCONFIGURATION テーブルと DUALWRITEPROJECTCONFIGURATION テーブルにて該当する行を削除します。
 4. テーブルのマッピングを停止して、再起動してください
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

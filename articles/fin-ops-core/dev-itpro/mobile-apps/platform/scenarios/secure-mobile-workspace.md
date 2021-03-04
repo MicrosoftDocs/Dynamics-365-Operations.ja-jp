@@ -49,3 +49,6 @@ ms.locfileid: "4685413"
 
 ## <a name="add-a-menu-item-and-override-the-workspacehidden-method"></a>メニュー項目を追加して、workspaceHidden メソッドを上書きする
 アプリで両方の先行メソッドを使用することができます。 メニュー項目はセキュリティ チェックを提供し、**workspaceHidden** メソッドには、ワークスペースの可視性に関連する追加ロジックが含まれています。
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

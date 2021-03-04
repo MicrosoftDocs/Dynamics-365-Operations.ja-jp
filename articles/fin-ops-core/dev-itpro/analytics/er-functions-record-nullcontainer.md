@@ -60,3 +60,6 @@ NULLCONTAINER (list)
 ## <a name="additional-resources"></a>追加リソース
 
 [レコード機能](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

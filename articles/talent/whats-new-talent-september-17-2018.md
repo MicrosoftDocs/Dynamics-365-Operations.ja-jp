@@ -54,3 +54,6 @@ Finance and Operations のプラットフォーム更新プログラム 18 は T
 ## <a name="bug-fixes"></a>バグ修正
 
 このリリースには ACA、ADA、および I9 への参照を含むいくつかの追加のバグ修正が含まれ、米国企業でのみ有効になります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

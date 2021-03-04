@@ -205,3 +205,6 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 **アクション** メニューで、別の役立つコマンドは **予算プロセス状態の表示** です。 このコマンドは、計画のワークフロー ステータス、金額別および単位別集計、予算計画自体へのワンクリック ナビゲーションなどの関連するデータと共に、プロセス内の予算計画をグラフィック表示します。
 
 [![予算計画プロセス状態](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

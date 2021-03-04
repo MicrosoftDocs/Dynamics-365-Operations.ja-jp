@@ -54,3 +54,6 @@ ms.locfileid: "4694215"
 22. [文章番号] フィールドで、値を入力または選択します。
 23. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

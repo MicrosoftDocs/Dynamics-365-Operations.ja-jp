@@ -288,3 +288,6 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 
 9.  **F5** キーを押して **保存** 操作を完了します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

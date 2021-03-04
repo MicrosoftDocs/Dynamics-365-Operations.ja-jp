@@ -123,3 +123,6 @@ Visual Studio の **エラー一覧** ウィンドウには、ビルド プロ�
 [Visual Studioの開発ツール](development-tools-overview.md)
 
 [ホーム ページの開発およびカスタマイズ](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

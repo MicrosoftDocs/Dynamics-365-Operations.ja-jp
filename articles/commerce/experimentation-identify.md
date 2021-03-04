@@ -40,3 +40,6 @@ ms.locfileid: "4413890"
 
 ## <a name="next-step"></a>次のステップ
 [実験の設定](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

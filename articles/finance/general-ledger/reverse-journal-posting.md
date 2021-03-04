@@ -70,3 +70,6 @@ ms.locfileid: "4445196"
 
 トランザクションを取り消すことができるのは、取消のためのビジネス ルールに合致している場合だけです。 このトピックで説明されている機能を使用して仕入先支払を取り消すことはできません。 仕入先支払は、[仕入先支払の取消](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) に一覧表示されている手順に従って取り消す必要があります。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

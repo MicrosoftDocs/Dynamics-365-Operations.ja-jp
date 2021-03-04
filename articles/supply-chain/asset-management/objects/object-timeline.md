@@ -49,3 +49,6 @@ ms.locfileid: "4432096"
 - 転記されたアイテムとメモを含む、ワーク オーダー
 - エラー
 - 条件評価
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

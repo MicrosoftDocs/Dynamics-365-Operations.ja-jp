@@ -133,3 +133,6 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

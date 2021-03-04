@@ -96,3 +96,6 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 
 #### <a name="returns-promise-ltpagedatagt"></a>Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt; を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

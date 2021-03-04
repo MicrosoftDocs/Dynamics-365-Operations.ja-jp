@@ -126,3 +126,6 @@ Active Directory のセキュリティ設定が原因で、Google Chrome ブラ�
 ## <a name="azure-devops-connectivity"></a>Azure DevOps 接続
 
 RSAT の設定で目的の Azure DevOps プロジェクトを選択すると、このエラーが表示される場合があります: 「構造のパス \<iteration path\> が無効です。 設定を確認してから、もう一度お試しください。」 このエラーを解決するには、Azure DevOps でプロジェクトを開き、テスト計画に移動します。 各テスト計画に定義されているイテレーション パスを確認します。 イテレーション パスがエラーで示されているものと似ている場合は、既存のイテレーション パスを削除し、テスト計画に新しいイテレーション パスを追加してから保存します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

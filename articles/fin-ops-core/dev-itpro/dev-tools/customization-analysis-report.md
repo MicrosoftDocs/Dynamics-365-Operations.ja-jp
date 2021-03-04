@@ -406,3 +406,6 @@ catch(Exception::UpdateConflictNotRecovered) {}
 | エラー メッセージ       | %1 はベース テーブルであり、変更することはできません。   |
 | 出庫タイプ/重要度 | メタデータ/警告     |
 | 修正する方法       | テーブルをカスタマイズしないでください。    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

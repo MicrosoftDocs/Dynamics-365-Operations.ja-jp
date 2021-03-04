@@ -60,3 +60,6 @@ Retail およびその他のソリューションに関する意見、ニュー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

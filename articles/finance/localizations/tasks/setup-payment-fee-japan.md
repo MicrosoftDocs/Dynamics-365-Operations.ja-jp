@@ -127,3 +127,6 @@ ms.locfileid: "4408185"
     * 例: 「課税対象」 を選択します。  
 30. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ ms.locfileid: "4445288"
 2. アクション ウィンドウで、**売上税コード** を選択します。
 3. **転記済売上税** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

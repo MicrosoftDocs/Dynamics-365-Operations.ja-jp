@@ -75,3 +75,6 @@ setControlValue(controlName: string, value: any): any
 
 #### <a name="returns-any"></a>any を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

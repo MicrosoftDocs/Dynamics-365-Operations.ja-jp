@@ -87,3 +87,6 @@ VHD の使用の際には、[ソフトウェア ライセンス条件](https://g
 | プラットフォーム アップデート 12 / アプリケーション リリース 7.3 | FinandOps7.3PlatUpdate12.vhd |    2018 年 6 月 5 日    |
 | プラットフォーム アップデート 15 / アプリケーション リリース 7.3 | FinandOps7.3withPlatUpdate15 |    2018 年 12 月 8 日    |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

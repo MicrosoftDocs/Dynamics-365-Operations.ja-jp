@@ -29,3 +29,6 @@ Application チェッカー ツールは、アプリケーション コード (�
 
 アプリケーション チェッカーをインストールして使用する方法については、[Dynamics365FO-AppChecker](https://github.com/microsoft/Dynamics365FO-AppChecker) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

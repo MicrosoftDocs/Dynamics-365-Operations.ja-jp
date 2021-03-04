@@ -260,3 +260,6 @@ ER 形式とアプリケーション固有のパラメーター間の関係は�
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

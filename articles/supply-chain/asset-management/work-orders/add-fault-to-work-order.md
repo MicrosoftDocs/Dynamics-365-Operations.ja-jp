@@ -80,3 +80,6 @@ ms.locfileid: "4431992"
 >[!NOTE]
 >**資産管理** > **レポート** > **資産** > **資産エラー** の順に選択して、複数の資産または資産タイプに対するエラー レポートを印刷できます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

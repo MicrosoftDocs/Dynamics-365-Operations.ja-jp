@@ -134,3 +134,6 @@ SystemNotificationsManager::AddNotification(notification);
 ## <a name="additional-resources"></a>追加リソース
 
 [ユーザー インターフェイス開発のホーム ページ](user-interface-development-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

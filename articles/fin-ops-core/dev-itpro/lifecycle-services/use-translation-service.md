@@ -122,3 +122,6 @@ XLIFF での翻訳ファイルのレビューと編集が完了したら、次�
 ![再生成された出力](./media/dts-regenerate-output.png "再生成された出力")
 
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

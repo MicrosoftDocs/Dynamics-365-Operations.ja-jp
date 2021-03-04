@@ -39,3 +39,6 @@ Finance and Operations を購入したときには、すべての機能が含ま
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

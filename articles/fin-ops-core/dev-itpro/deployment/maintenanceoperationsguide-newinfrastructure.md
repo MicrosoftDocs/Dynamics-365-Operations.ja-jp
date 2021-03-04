@@ -59,3 +59,6 @@ Finance and Operations アプリには、[メンテナンス モード](../sysad
 [セルフサービス配置](infrastructure-stack.md)エクスペリエンスを使用して配置された環境では、リモート アクセスがオフになっています。 実装時に、トラブルシューティング目的で階層 2、階層 3、階層 4、または階層 5 の標準受け入れテスト環境のデータベースに接続する必要がある場合、必要に応じてアクセスが許可されます。 アクセス権は永続的ではありません。
 
 データベースに接続するには、[Just-In-Time のアクセスを有効にする](../database/database-just-in-time-jit-access.md)に従ってください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Microsoft Dynamics Lifecycle Services で、システム診断は管理者が 1 
 -   [Lifecycle Services (LCS) のシステム診断](system-diagnostics-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

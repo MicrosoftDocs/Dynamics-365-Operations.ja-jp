@@ -139,3 +139,6 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 - [プレミア電話サポート](https://support.microsoft.com/premier/contacts)
 - [広範な商業電話サポート](https://docs.microsoft.com/dynamics/s-e/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

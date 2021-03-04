@@ -99,3 +99,6 @@ Dynamics AX データ エンティティおよび集約データ エンティテ
 [Power BI 統合を通して利用可能な機能とサービス](power-bi-integration.md)
 
 [ワークスペース用に Power BI 統合を構成する](configure-power-bi-integration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

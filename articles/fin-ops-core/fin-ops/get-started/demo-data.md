@@ -125,3 +125,6 @@ USMF というデモ会社には、承認すべき INGA についての 2 つの
 [![原価会計パラメーター](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
 アクセス レベルのセキュリティを有効にした後、従業員を原価オブジェクト コントローラーのロールに割り当てることができます。 従業員としてログインして **原価管理** ワークスペースにアクセスできます。 従業員はコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

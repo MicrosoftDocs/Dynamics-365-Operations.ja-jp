@@ -95,3 +95,6 @@ ms.locfileid: "4432347"
 8. [重量単位] フィールドで、値を入力または選択します。
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

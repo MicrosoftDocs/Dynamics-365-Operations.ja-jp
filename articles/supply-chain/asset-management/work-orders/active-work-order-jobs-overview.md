@@ -43,3 +43,6 @@ ms.locfileid: "4431805"
 
 **有効な作業指示書のメンテナンス作業** リスト ページのボタンの簡単な説明に関しては、同じボタンについて説明されている[作業指示書の概要](../work-orders/introduction-to-work-orders.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

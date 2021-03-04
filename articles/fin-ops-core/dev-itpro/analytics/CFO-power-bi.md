@@ -43,3 +43,6 @@ ms.locfileid: "4688152"
 | [販売と収益性のパフォーマンス](sales-profitability-performance-content-pack.md) | <ul><li>地域ごとの収益</li><li>収益による上位 10 件の顧客</li><li>収益による上位 10 件の製品</li></ul> |
 | [与信および回収管理](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>期日が経過した顧客</li><li>与信限度額を超えた顧客</li><li>指定の期間に達している残高</li></ul> |
 | [購買と支出の分析](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>月/日別の購買</li><li>購買高別上位 10 の仕入先</li><li>購買高の上位 10 の製品</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

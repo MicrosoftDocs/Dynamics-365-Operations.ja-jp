@@ -299,3 +299,6 @@ MX-00010 と MX-00016 (CFDI 請求書と CFDI 取消) 機能を有効にする�
 - [電子請求書アドオン機能の概要](e-invoicing-service-overview.md)
 - [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
 - [電子請求のアドオン設定](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

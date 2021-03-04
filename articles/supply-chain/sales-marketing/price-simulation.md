@@ -145,3 +145,6 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

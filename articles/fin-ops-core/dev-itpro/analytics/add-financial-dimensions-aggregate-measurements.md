@@ -177,3 +177,6 @@ LedgerActivityMeaureGroup の 2 つの分析コード参照をモデル化しま
 2 番目の参照、OffsetDimensionCombination は、同じ分析コードへの別の参照です。 DimensionCombination 集計分析コードを再使用し、それに新しい名前を付けました。 2 番目のケースでは、**OffsetLedgerDimension** フィールドを使用して参加できます。
 
 実行時に、システムは両方の分析コードを追加のフィールドに展開します。 したがって、主およびオフセットの分析コード フィールドについてレポートすることができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

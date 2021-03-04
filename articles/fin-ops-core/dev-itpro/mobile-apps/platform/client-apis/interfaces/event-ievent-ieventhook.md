@@ -80,3 +80,6 @@ unsubscribeAll(): void
 
 #### <a name="returns-void"></a>void を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

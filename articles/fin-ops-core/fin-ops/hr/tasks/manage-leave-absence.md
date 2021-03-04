@@ -46,3 +46,6 @@ ms.locfileid: "4693019"
     * 例: 採用のための休暇  
 12. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

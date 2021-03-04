@@ -164,3 +164,6 @@ ER フォーミュラ デザイナーを使用して、実行時に生成され�
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [電子報告のフォーミュラ言語](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

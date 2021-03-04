@@ -117,3 +117,6 @@ ms.locfileid: "4682553"
 次の図は、前のコードで生成された顧客画像、顧客名、フォント、背景色などを示しています。
 
 ![前のコードにより生成された情報を示す画像](media/detail-page.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

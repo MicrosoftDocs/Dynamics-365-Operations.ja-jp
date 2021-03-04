@@ -73,3 +73,6 @@ ms.locfileid: "4432194"
 [ヒューリスティック](https://techterms.com/definition/heuristic)
 
 [制約充足問題](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

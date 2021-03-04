@@ -66,3 +66,6 @@ Microsoft Dynamics 365 Talent では、簡単にユーザー インターフェ�
 ### <a name="videos"></a>ビデオ
 「[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)」のハウツー ビデオをご覧ください。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

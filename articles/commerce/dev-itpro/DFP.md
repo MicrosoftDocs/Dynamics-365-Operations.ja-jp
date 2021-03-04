@@ -165,3 +165,6 @@ Microsoft にとってお客様のプライバシーは重要です。 詳細に
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 支払データの使用](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

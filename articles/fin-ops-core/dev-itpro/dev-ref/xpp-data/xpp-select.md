@@ -67,3 +67,6 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 詳細については、[select ステートメント](xpp-select-statement.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ iOS で Xamarin をインストールに関する詳しい手順については�
 ## <a name="additional-resources"></a>追加リソース
 - [支払に関するよく寄せられる質問](payments-retail.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

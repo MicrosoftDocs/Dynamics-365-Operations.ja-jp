@@ -63,3 +63,6 @@ NUMBERVALUE (text, decimal separator, digit grouping separator)
 ## <a name="additional-resources"></a>追加リソース
 
 [型変換関数](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

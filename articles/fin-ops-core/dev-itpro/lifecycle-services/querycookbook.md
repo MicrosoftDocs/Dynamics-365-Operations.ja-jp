@@ -275,3 +275,6 @@ SPID が非常に多くのリソースを消費して、他のプロセスの工
 
 ### <a name="parameters"></a>パラメーター
 - テーブル名パラメーターは、統計情報を更新するテーブルの物理的な名前です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

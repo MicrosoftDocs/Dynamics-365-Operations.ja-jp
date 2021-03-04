@@ -80,3 +80,6 @@ ms.locfileid: "4419425"
 [休暇計画の累計](hr-leave-and-absence-accrue.md)</br>
 [休暇の売買](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

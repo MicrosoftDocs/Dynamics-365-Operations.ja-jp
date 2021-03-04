@@ -48,3 +48,6 @@ Microsoft コード ベースが進歩すると共に、いくつかのメソッ
 ## <a name="list-of-deprecated-methods-and-metadata-elements"></a>非推奨のメソッドとメタデータの要素のリスト
 
 参考のため、CustomerSource の[方法とメタデータの要素の廃止](https://docs.microsoft.com/dynamics/s-e/)ページにある Microsoft Excel ファイルをダウンロードしてください。各メジャー リリースで非推奨とマークされた成果物が示されています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

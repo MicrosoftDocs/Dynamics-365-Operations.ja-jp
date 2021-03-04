@@ -82,3 +82,6 @@ ms.locfileid: "4413883"
 [購入ボックス モジュール](add-buy-box.md)
 
 [Cookie のコンプライアンス](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

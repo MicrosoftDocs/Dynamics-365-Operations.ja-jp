@@ -74,3 +74,6 @@ Azure AD アカウントを作業者に関連付けるには、次の手順に�
 [小売機能プロファイルの作成](retail-functionality-profile.md)
 
 [作業者のコンフィギュレーション](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

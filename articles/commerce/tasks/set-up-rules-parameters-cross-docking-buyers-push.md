@@ -48,3 +48,6 @@ ms.locfileid: "4413783"
 14. [重量] フィールドに数値を入力します。
 15. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

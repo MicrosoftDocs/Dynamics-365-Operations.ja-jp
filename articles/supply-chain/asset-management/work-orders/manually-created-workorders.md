@@ -166,3 +166,6 @@ ms.locfileid: "4431780"
 >[!NOTE]
 >作業指示書を自動的に作成する場合は、メンテナンス計画ジョブをスケジュールしたり、資産に対して、"自動作成" [メンテナンス計画](../preventive-and-reactive-maintenance/maintenance-plans.md) または [メンテナンス ラウンド](../preventive-and-reactive-maintenance/maintenance-rounds.md) を設定できます。 **すべてのメンテナンススケジュール** リスト ページのメンテナンス要求から作成された作業指示書には、メンテナンス要求で選択されたメンテナンス ジョブ タイプがあります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>ラベルを印刷する方法の詳細
 
 ラベルの設定および印刷方法の詳細については、[ライセンス プレート ラベル印刷の有効化](tasks/license-plate-label-printing.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

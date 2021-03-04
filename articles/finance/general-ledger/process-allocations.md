@@ -44,3 +44,6 @@ ms.locfileid: "4445194"
 > [!NOTE]
 > 会社間元帳配賦ルールは予算計画には使用できません。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

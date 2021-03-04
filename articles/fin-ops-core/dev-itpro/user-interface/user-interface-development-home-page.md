@@ -95,3 +95,6 @@ Finance and Operation アプリケーションのユーザー インターフェ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -174,3 +174,6 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

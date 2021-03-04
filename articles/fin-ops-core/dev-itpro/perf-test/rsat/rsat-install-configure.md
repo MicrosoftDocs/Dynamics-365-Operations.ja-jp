@@ -250,3 +250,6 @@ RSAT クライアント コンピュータで証明書ファイルを生成す�
     ![拇印の一覧を示す証明書ダイアログ](media/certificate-dialog.png)
 
 6. 拇印をコピーして保存します。 このトピックで前述されているように、AOS をコンフィギュレーションする必要があります。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

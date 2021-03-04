@@ -87,3 +87,6 @@ ms.locfileid: "4684981"
 ## <a name="additional-resources"></a>追加リソース
 
 [オムニチャネル支払の概要](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -264,3 +264,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type) から継承
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

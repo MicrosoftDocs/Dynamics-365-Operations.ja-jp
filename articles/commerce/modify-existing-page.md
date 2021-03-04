@@ -87,3 +87,6 @@ ms.locfileid: "4413833"
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
 [ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

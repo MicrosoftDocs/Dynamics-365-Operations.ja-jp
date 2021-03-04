@@ -149,3 +149,6 @@ Arnie はこの仕訳帳を転記し、顧客トランザクションを **顧�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

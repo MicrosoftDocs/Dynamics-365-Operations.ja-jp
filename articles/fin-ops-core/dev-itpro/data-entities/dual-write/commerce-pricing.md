@@ -53,3 +53,6 @@ Dynamics 365 Commerce 価格設定エンジンは、店舗レベルの価格設�
 ## <a name="additional-resources"></a>追加リソース
 
 [二重書き込みの見込顧客を現金化](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

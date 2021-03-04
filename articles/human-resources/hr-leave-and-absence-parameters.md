@@ -92,3 +92,6 @@ Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

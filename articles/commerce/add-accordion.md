@@ -87,3 +87,6 @@ FAQ ページにアコーディオン モジュールを追加して、サイト
 [タブ モジュール](add-tab.md)
 
 [テキスト ブロック モジュール](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

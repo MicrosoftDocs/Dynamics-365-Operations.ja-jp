@@ -100,3 +100,6 @@ AX 2012 R3 クライアントがインストールされている仮想マシン
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

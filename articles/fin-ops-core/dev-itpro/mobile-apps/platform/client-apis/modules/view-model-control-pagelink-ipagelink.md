@@ -141,3 +141,6 @@ ms.locfileid: "4682559"
 | ---- | --------- | ----------- |
 | [OnNavigate](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#onnavigate) |OnNavigate: function(navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) &#124; string): any (optional)  <br>|ナビゲーションがトリガーされたときに発生するイベントです。<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

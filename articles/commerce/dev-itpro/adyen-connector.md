@@ -654,3 +654,6 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 ## <a name="additional-resources"></a>追加リソース
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

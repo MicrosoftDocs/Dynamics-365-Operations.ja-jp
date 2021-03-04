@@ -87,3 +87,6 @@ ms.locfileid: "5127633"
 ## <a name="additional-resources"></a>追加リソース
 
 [Excel テンプレートへの分析コードの追加](dimensions-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ ms.locfileid: "4683626"
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
 + マッピング元、またはマッピング先のフィールドがない可能性があります。 Finance and Operations アプリのフィールドが見つからない場合は、[マッピングにおけるエンティティ フィールドの欠落](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse でフィールドが表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、フィールドが自動的にマッピングに反映されるようにします。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

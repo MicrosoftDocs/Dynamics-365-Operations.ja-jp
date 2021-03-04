@@ -109,3 +109,6 @@ ms.locfileid: "4413624"
 [購入ボックス モジュール](add-buy-box.md)
 
 [製品推奨事項の概要](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

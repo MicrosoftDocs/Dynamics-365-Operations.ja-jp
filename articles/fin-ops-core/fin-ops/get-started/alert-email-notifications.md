@@ -50,3 +50,6 @@ ms.locfileid: "4693825"
 次の図は、電子メールで受信された時の警告通知の構造を表示します。
 
 [![レコードの作成、フィールドの変更、およびテンプレート削除のためのテンプレートに基づく警告通知](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

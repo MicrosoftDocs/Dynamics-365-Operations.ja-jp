@@ -69,3 +69,6 @@ ms.locfileid: "4680398"
 | Modern POS | [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) |
 | Hardware station | [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md) |
 | Commerce Scale Unit (旧 Retail Store Scale Unit) | [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

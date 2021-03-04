@@ -210,3 +210,6 @@ ER バージョン管理では、ER コンポーネント内の任意の属性�
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [電子申告機能](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

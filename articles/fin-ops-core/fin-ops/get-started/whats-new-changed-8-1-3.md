@@ -91,3 +91,6 @@ ER モデル マッピングの国コンテキストを指定することがで�
 - 出力先 (RU).version.22.4への支払モデル マッピング
 - 口座取引明細書 (RU).version.22.6
 - 支払指示 (RU).version.22.4
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

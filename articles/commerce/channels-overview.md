@@ -89,3 +89,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
 
 [組織階層の設定](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

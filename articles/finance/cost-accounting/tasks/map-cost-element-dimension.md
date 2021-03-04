@@ -44,3 +44,6 @@ ms.locfileid: "4445319"
     * この例の場合、分析コード メンバー6001004 [Telefono] を選択します。  
 11. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

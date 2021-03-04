@@ -55,3 +55,6 @@ ms.locfileid: "4413792"
 1. [発行] をクリックします。
 2. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

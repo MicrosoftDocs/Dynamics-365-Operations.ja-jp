@@ -205,3 +205,6 @@ Human Resources で、作業者をエクスポートするデータ エクスポ
 このチュートリアルではロジック アプリを使用して Human Resources からデータをエクスポートして、そのエクスポートしたデータを OneDrive for Business フォルダーに保存する方法を学びました。 ビジネスのニーズに合わせて、このチュートリアルの手順を必要に応じて変更できます。
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

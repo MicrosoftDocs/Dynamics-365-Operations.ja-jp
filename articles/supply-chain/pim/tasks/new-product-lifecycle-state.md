@@ -35,3 +35,6 @@ ms.locfileid: "4431818"
 3. [状態] フィールドに値を入力します。
 4. [説明] フィールドに値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

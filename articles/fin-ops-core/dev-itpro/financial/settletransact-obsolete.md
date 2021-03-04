@@ -136,3 +136,6 @@ CustTrans::settleTransaction(
 この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
 
 フライトの名称は **EnableCustTransSettleTransaction** です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

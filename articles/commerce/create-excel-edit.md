@@ -78,3 +78,6 @@ ms.locfileid: "4965380"
 [小売トランザクションの財務分析コードの編集](edit-financial-dim.md)
 
 [小売トランザクションを編集するために Excel ブックにフィールドを追加する](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

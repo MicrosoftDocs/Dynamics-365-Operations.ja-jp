@@ -57,3 +57,6 @@ ms.locfileid: "4413842"
 6. [既定のグループ] フィールドで、値を入力または選択します。
 7. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

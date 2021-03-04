@@ -46,3 +46,6 @@ Microsoft Dynamics AX 2012 のセキュリティ開発ツールは、ロール�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ ms.locfileid: "4431811"
 5. [製品モデルをエクスポート] をクリックします。
     * ダウンロードの動作は、セキュリティ設定の設定方法によってブラウザーごとに異なります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

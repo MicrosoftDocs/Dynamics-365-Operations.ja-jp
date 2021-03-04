@@ -82,3 +82,6 @@ ms.locfileid: "4688487"
 ### <a name="additional-optional-steps"></a>追加オプション
 
 `spec` のメソッドをデータクラスに追加することにより、このトピックの最初に作成した `AtlSpec` クラスのインスタンスを返します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ ms.locfileid: "4419443"
 ## <a name="additional-resources"></a>追加リソース
 
 - [従業員およびマネージャー セルフサービスの概要](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

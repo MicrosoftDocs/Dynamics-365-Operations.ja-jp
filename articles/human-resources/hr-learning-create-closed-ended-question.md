@@ -68,3 +68,6 @@ ms.locfileid: "4419436"
 5. [回答グループ] フィールドで、値を入力または選択します。
 6. [テキスト] フィールドに値を入力します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

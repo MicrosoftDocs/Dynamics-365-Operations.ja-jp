@@ -190,3 +190,6 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 ### <a name="accessibility-enhancements"></a>アクセシビリティの拡張機能
 
 業界をリードするアクセシビリティ標準については [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

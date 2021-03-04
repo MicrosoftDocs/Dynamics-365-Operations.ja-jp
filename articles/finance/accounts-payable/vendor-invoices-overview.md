@@ -128,3 +128,6 @@ ms.locfileid: "4701679"
 - [承認仕訳帳を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [請求管理グループを使用した AP システムへの請求書データの入力](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [請求仕訳帳の仕入先請求書の記録](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

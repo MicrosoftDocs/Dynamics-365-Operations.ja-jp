@@ -138,3 +138,6 @@ Commerce では、複数のレポートを生成および表示して、オン�
 ## <a name="additional-resources"></a>追加リソース
 
 - [Commerce のホーム ページ](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

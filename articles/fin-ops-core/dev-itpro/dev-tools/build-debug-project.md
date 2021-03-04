@@ -226,3 +226,6 @@ public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct ren
 4.  ベスト プラクティス ルールのセットの一部に対する選択内容をマークします。 たとえば、**CodeStyleRules** のエントリを選択する場合、変数のベスト プラクティスのガイドラインが検査されます。 選択を更新した後、**OK** をクリックします。
 5.  プロジェクト名を右クリックして **リビルド** をクリックすることにより、フリート管理プロジェクトをリビルドします。 指定したベスト プラクティス ルールの違反が **エラー一覧** ウィンドウに表示されることがわかります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

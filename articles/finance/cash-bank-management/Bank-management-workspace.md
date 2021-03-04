@@ -64,3 +64,6 @@ ms.locfileid: "4445371"
 -   通貨別残高
 
 **現金の概要 – すべての会社** ワークスペースから、すべての会社での銀行分析を表示できます。 詳細については、[現金の概要 Power BI コンテンツ](Cash-Overview-Power-BI-content.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

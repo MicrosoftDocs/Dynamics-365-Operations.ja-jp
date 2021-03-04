@@ -83,3 +83,6 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

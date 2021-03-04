@@ -72,3 +72,6 @@ Dynamics 365 Human Resources でチームおよび会社のカレンダーを表
 
 カレンダー設定の詳細については、[カレンダー パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md?configure-calendar-parameters) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

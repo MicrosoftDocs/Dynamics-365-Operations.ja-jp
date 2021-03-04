@@ -128,3 +128,6 @@ Dynamics 365 Human Resources ユーザーガイドでは、人事管理の設定
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

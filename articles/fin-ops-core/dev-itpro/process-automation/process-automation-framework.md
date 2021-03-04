@@ -67,3 +67,6 @@ UI のカスタマイズのほとんどは、バックグラウンド プロセ�
 | [プロセスの実行](run-process.md)                     | あり | あり |
 | [結果とメッセージを記録する](log-results.md)          | あり | あり |
 | [ユーザー インターフェイスのカスタマイズ](ui-customization.md) | なし | [ユーザー インターフェイスのカスタマイズ](ui-customization.md)を参照してください。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

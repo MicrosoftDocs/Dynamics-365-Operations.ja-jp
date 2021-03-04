@@ -67,3 +67,6 @@ ms.locfileid: "4413875"
 [小売チャネルの設定](channel-setup-retail.md)
 
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

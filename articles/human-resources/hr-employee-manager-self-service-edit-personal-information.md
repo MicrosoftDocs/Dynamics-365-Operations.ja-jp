@@ -72,3 +72,6 @@ ms.locfileid: "4419298"
     - イメージをアップロードするには、**新規イメージをアップロード** を選択します。
     - イメージを削除するには、イメージを選択し、**削除** を選択します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

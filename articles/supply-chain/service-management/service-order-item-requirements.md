@@ -70,3 +70,6 @@ ms.locfileid: "4431649"
 
 [在庫品目要求 (フォーム)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

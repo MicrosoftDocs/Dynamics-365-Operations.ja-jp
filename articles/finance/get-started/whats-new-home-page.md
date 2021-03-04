@@ -67,3 +67,6 @@ Dynamics 365 Finance の各リリースでの新機能や変更事項を確認�
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016 年 5 月         | [Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016 年 2 月    | [Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

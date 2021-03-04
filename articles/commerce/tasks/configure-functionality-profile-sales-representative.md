@@ -37,3 +37,6 @@ ms.locfileid: "4413898"
 4. [販売担当者への確認] フィールドで、オプションを選択します。
 5. [販売担当者の要求] フィールドで、[はい] を選択します。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Commerce Scale Unit は次の概念を使用します。
 
 自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。 Commerce Runtime をカスタマイズする場合は、Commerce Scale Unit のさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

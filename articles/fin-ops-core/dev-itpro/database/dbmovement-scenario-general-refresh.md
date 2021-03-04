@@ -135,3 +135,6 @@ public class Program
 必要に応じて、システムを構成する場合は、選択したユーザーが環境にアクセスできるようにできます。 デフォルトでは、管理者と Microsoft サービス アカウントを除くすべてのユーザーが無効になります。
 
 **システム管理**\>**ユーザー**\>**ユーザー** に移動し、UAT 環境へのアクセスが必要なユーザーを有効にします。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](../office-integration/use-excel-add-in.md)を使用してこのタスクをすばやく完了できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

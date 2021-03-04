@@ -92,3 +92,6 @@ ms.locfileid: "4432244"
 -   材料は超過消費することができます。 たとえば、材料が 100 ポンドの数量で消費される見積の場合、105 ポンドといった数量で超過消費することができます。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

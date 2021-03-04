@@ -39,3 +39,5 @@ ms.locfileid: "4419444"
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇計画の作成](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

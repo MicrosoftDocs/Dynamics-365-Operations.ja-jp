@@ -45,3 +45,6 @@ ms.locfileid: "4445318"
     * この例の場合、[会計 2017 期間 9] を選択します。  
 14. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

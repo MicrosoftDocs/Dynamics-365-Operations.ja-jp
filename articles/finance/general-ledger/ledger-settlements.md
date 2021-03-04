@@ -75,3 +75,6 @@ ms.locfileid: "4445099"
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>トランザクションの一覧に含まれる勘定の一覧を更新します。
 
 **元帳決済勘定** を選択して、トランザクションの一覧に含まれる勘定を編集するダイアログ ボックスを開きます。 **新規** をクリックして、新しい勘定を一覧に追加します。 このリストは、**元帳決済** ページに表示されるトランザクションの一覧をフィルターするために使用します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

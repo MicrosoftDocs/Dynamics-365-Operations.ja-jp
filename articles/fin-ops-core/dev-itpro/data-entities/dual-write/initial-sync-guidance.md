@@ -295,3 +295,6 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 - 職位作業者割り当て (cdm\_positionworkerassignmentmaps)
 - 倉庫の場所 (msdyn\_inventorylocations)
 - 配送モード (msdyn\_shipvias)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

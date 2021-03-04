@@ -52,3 +52,6 @@ Onboard は新規採用者に変更内容を示す電子メールを自動的に
     ![[作成されたすべての研修ガイドへ研修テンプレートの変更をプッシュ](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 変更は、研修ガイドを開く新規採用者に表示されます。 ただし、Onboard は、新規採用者に研修ガイドが変更されたことを知らせる電子メールアラートを送信しません。 識別しやすいように、変更のたびに赤い **新規** タグが横に表示されます。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -283,3 +283,6 @@ PageTarget <br>&nbsp;&nbsp;&nbsp;└─ [NavigationArgs](../interfaces/view-mode
 | [パラメーター](../interfaces/view-model-ipage-ipagetarget.md#params) |params: [PageOptions](../interfaces/view-model-ipage-ipageoptions.md) (省略可)  <br>|  |
 | [to](../interfaces/view-model-ipage-ipagetarget.md#to) |to: string (省略可)  <br>|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ ms.locfileid: "4646136"
 [![例 2](media/ReplenTemp_example_2.png "例 2")](media/ReplenTemp_example_2_large.png)
 
 したがって、補充された場所に対して最大数量を取得するには、補充ピッキングの保管場所ディレクティブで **分割を許可** オプションを *はい* に設定する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

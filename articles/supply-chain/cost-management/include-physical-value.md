@@ -60,3 +60,6 @@ ms.locfileid: "4431942"
 
 > [!NOTE]
 > これに対して、この品目の **現物価格を含める** チェック ボックスをオンにすると、販売注文が転記されるときに転記された原価金額が USD 12.00 となります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

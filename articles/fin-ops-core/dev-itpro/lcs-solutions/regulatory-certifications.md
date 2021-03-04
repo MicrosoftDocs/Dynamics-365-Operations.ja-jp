@@ -54,3 +54,6 @@ BPM の詳細については、[ビジネス プロセス モデラー (BPM) の
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

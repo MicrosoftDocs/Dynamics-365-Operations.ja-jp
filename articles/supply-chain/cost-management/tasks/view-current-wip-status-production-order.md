@@ -38,3 +38,6 @@ ms.locfileid: "4432094"
 6. [開始日] フィールドで、日付を「2012 年 12 月 1 日」に設定します。
 7. [終了日] フィールドで、日付を「2012 年 12 月 31 日」に設定します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

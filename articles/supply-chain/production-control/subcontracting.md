@@ -303,3 +303,6 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     ![原価の比較チャート](./media/subcontract35_cost-comparison-charts.png)
 
 データの設定がありません。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

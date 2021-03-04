@@ -64,3 +64,6 @@ Commerce Data Exchange: リアルタイム サービスは、バックオフィ�
 [![Real-time Service](./media/rts.png)](./media/rts.png) 
 
 定義済の Real-time Service プロファイルが作成されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Finance and Operations の多くのグリッドで *既定のアクション* �
 - アクティブ期間内で任意の回数の繰り返しを設定します。 たとえば、管理者は、午後 6 時から午前 8 時の間のみ、毎時間バッチ ジョブを実行することを選択できます。
 
 詳細については、「[バッチ アクティブ期間](../../dev-itpro/sysadmin/activeperiod.md)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ ms.locfileid: "5093252"
 次の図は、Excel テンプレートから生成された支払い小切手のテスト印刷の例です。
 
 [![支払チェック テスト印刷](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

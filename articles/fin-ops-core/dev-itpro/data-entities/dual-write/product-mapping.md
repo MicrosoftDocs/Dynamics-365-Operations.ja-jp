@@ -223,3 +223,6 @@ Finance and Operations と Dataverse、および他の Dynamics 365 アプリで
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから Finance and Operations への製品データの移行
 
 その他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合は、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft D
 8. レコードをエクスポートして長期間保存するには、**エクスポート グリッド** を選択します。
 
 完全な監査証跡を保証するために、IT 管理者は 7 日ごとにこの手順を完了する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

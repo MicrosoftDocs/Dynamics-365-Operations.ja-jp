@@ -118,3 +118,6 @@ LinkedIn に転記された職務は、ライブ LinkedIn サイトに表示さ�
 [Attract でジョブ求人の作成、承認、および投稿](./creating-jobs-attract.md)
 
 [LinkedIn と Microsoft Dynamics 365 Talent - Attract との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

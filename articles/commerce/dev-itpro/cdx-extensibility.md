@@ -418,3 +418,6 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 #### <a name="mpos-offline-transaction-sync"></a>MPOS オフライン トランザクションの同期
 
  MPOS をオフライン モードに切り替えて、トランザクションを実行します。 オンラインに切り替えて、データがオフライン データベースからチャネル データベースに、次いでバックオフィスに正しく同期されていることを確認します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

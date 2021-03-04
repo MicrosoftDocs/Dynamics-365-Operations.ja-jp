@@ -117,3 +117,6 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 ## <a name="additional-resources"></a>その他のリソース
 
 [データ エンティティ](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

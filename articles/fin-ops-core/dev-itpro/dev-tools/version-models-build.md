@@ -93,3 +93,6 @@ ISV または ISP レイヤーでソリューションを開発するサード �
 
 1. **変数** タブで、変数のリストの下部にある **+ 追加** をクリックします。 最初の列で、**名前** の変数に **ModelVersionExclusions** と入力します。
 1. 新しいタスクを保存するには、**保存** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

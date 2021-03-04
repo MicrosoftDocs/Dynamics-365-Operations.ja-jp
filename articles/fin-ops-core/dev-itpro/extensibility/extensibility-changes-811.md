@@ -470,3 +470,6 @@ ms.locfileid: "4409337"
 - アルゴリズムを検索する InventPosting を再設計します 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

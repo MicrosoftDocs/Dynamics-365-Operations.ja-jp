@@ -101,3 +101,6 @@ ms.locfileid: "4409272"
      
 ## <a name="metadata-extensions"></a>メタデータの拡張
 + **メタデータまたは拡張クラスの名前付けガイドラインに従わない**: ユーザーは、同じ名前を持つ要素を持っている可能性があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

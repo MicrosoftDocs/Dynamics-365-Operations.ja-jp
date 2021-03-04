@@ -201,3 +201,6 @@ DBSync.err ファイルを検索し、エラーを検出し、および DBSync.l
     | データベースの実行に失敗しました: 無効な列名「DEFAULTDIMENSION」。 VIEW の作成 | この問題は、SyncEngine の問題のようです。 Microsoft サポートにチケットを作成します。 |
     | データベースの実行に失敗しました: 無効なオブジェクトの名前「PMBI\_DEPROJECTTIMESHEET」。 VIEW の作成 | この問題は、SyncEngine の問題のようです。 Microsoft サポートにチケットを作成します。 |
     | % プロバイダー: 名前付きパイプ プロバイダー、エラー: 40: - SQL Server への接続を開けませんでした %  | Platform Update 3 でこの問題を修正されている必要があります。 ステップを再試行します。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

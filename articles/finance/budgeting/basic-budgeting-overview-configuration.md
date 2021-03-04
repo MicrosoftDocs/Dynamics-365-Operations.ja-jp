@@ -88,3 +88,6 @@ Microsoft Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) で導入
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

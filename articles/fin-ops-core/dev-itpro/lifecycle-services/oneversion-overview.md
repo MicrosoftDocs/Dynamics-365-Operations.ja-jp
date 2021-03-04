@@ -75,3 +75,6 @@ UAT 環境で更新が完了したら、基本的なビジネス プロセス �
 一部の顧客は外部データ統合と内部データ統合の両方があります。 これらの顧客はテストに [データ タスクの自動化ツール](../data-entities/data-task-automation.md) を使用することをお勧めします。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

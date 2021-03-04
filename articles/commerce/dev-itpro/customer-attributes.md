@@ -121,3 +121,6 @@ ms.locfileid: "4683349"
 
 1. POS を起動し、顧客をトランザクションに追加します。
 2. トランザクション画面を開いて、追加された属性を表示します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

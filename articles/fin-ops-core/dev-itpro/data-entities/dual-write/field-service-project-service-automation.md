@@ -42,3 +42,6 @@ Microsoft は、Field Service ソリューションをベースにした既存�
 ## <a name="support-for-project-service-automation-solutions"></a>Project Service Automation ソリューションへの対応
 
 Microsoft は、Project Service Automation ソリューションをベースにした既存の Dataverse 環境上で二重書き込みに対応しています。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

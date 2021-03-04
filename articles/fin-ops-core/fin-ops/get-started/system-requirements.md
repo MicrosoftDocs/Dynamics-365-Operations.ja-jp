@@ -80,3 +80,6 @@ ms.locfileid: "5077593"
 ## <a name="additional-resources"></a>追加リソース
 
 [評価版コピーの入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

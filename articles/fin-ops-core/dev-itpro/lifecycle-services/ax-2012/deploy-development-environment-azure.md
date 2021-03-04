@@ -408,3 +408,6 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

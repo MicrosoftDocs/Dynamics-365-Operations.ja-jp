@@ -56,3 +56,6 @@ ms.locfileid: "4445221"
 16. ページを閉じます。
 17. [先日付小切手] タブをクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

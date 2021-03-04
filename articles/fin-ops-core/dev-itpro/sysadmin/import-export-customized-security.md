@@ -88,3 +88,6 @@ ms.locfileid: "4686316"
 
 - [データ インポート/エクスポート ジョブの概要](../data-entities/data-import-export-job.md)
 - Andr&eacute; Arnaud de Calavon で、[データ エンティティ (ブログの投稿) を含むすべてのユーザーおよびセキュリティ設定の移動](https://dynamicspedia.com/2020/05/move-all-user-and-security-settings-with-data-entities/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

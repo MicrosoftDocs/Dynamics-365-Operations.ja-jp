@@ -211,3 +211,6 @@ Web アプリケーションは、指定されたオペレーティング シス
 ## <a name="additional-resources"></a>その他のリソース
 
 [ベータ評価版の入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

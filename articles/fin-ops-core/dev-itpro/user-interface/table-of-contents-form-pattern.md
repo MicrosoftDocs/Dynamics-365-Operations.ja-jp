@@ -128,3 +128,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 [![例](./media/toc3.png)](./media/toc3.png)
 
 [![例](./media/toc4.png)](./media/toc4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

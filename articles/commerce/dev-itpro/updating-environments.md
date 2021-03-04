@@ -193,3 +193,6 @@ Finance およびコマース カスタマイズ パッケージは、ビルド�
 [コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

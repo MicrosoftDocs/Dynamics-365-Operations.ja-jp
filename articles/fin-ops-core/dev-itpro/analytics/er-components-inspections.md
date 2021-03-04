@@ -813,3 +813,6 @@ Excel テンプレートをインポートすることで、編集可能な ER �
 [電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング](trace-execution-er-troubleshoot-perf.md)
 
 [ビジネス ドキュメント管理の概要](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

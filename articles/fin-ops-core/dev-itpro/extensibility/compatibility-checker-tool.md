@@ -146,3 +146,6 @@ CompatibilityChecker.exe -BaselineDirectory="\\servername\archive\Build1\Baselin
 ### <a name="application-elements"></a>申請の要素
 
 + **要素を削除する** – ユーザーは、要素の存在にコンパイル時の依存関係を持っている可能性があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

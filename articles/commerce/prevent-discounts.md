@@ -41,3 +41,6 @@ ms.locfileid: "4413683"
 > 価格上書き操作は、基準価格の設定をするもので割引としては扱われないので、これらの設定によって制限されません。
 
 [![割引フィールドの禁止](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

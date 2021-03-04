@@ -55,3 +55,6 @@ X++ コードは、Visual Studio 用のコード エディターに書き込ま�
 ### <a name="dynamics-365-menu"></a>Dynamics 365 メニュー
 このツールは **Dynamics 365** メニューを Visual Studio に追加します。 開発プロセス中に使用するいくつかのツールは、ここで入手できます。 たとえば、モデルを管理するツールは、メニューからアクセスします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

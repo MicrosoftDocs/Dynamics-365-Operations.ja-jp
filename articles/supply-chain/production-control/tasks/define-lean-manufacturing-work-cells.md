@@ -100,3 +100,6 @@ ms.locfileid: "4431666"
 ## <a name="save"></a>保存
 1. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Dynamics 365 Commerce POS アプリケーションにはタスク管理機能が
 [タスク リストの作成およびタスクの追加](task-mgmt-create-lists.md)
 
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Dataverse での既存の通貨フィールドの保管では、4 桁以上の�
 ### <a name="tables-currency-field"></a>テーブル: 通貨フィールド
 
 特定の通貨フィールドに対して構成可能な小数位の数は 4 つに制限されます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

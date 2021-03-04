@@ -120,3 +120,6 @@ Microsoft は引き続き新しいテーブルを追加していますが、標�
 ## <a name="next-steps"></a>次のステップ
 
 [エラー管理と警告通知](errors-and-alerts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

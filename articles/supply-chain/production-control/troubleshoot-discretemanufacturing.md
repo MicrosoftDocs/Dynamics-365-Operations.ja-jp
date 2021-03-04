@@ -142,3 +142,6 @@ ms.locfileid: "4516820"
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>消費された商品のシリアル番号に対して、完成品のシリアル番号を追跡できますか。
 
 完成品のシリアル番号を、製造オーダーが完成品を作成するために消費する材料のシリアル番号に対して追跡することはできません。 このシナリオは、現在サポートされていません。 この回避策として、数量 1 の製造オーダーを作成できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

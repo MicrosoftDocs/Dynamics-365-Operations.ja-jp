@@ -837,3 +837,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 [コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ Retail サーバー拡張機能ごとに、別個のプロキシを生成する�
         // END SDKSAMPLE_STOREHOURS */
     });
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

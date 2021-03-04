@@ -166,3 +166,6 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 ```
 
 -   CDX メソッドへの接続に失敗した場合には、HQ に接続していない場合は操作を実行できない、または CDX メソッドに接続されていない状態でこの操作をする場合には軽減ロジックを実行する必要がある、というエラー メッセージが表示されることがあります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

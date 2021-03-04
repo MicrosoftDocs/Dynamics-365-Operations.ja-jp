@@ -60,3 +60,6 @@ ms.locfileid: "4408181"
 2. [加速償却] セクションを展開または折りたたみます。
     * [加速償却] に使用する [主勘定] と [相手勘定] を指定します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

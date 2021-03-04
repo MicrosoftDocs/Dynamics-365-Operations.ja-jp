@@ -127,3 +127,6 @@ X++ 更新プログラムをダウンロードするには、LCS で次の手順
 ## <a name="additional-resources"></a>追加リソース
 - [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
 - [開発環境でのメタデータ修正プログラムのインストール](./install-metadata-hotfix-package.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

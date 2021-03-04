@@ -274,3 +274,6 @@ OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

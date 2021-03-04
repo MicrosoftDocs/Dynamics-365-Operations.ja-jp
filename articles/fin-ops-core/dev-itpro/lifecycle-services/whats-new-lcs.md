@@ -87,3 +87,6 @@ LCS の使用を開始するには、[Lifecycle Services (LCS) ユーザーガ�
 ## <a name="lcs-releases-before-november-2019"></a>2019 年 11 月以前の LCS リリース
 
 2019 年 11 月以前に発生した LCS リリースについては、[Dynamics 365 ブログ](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/) で Lifecycle Services チームが発行したブログ投稿を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

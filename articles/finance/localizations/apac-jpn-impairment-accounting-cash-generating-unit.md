@@ -58,3 +58,6 @@ ms.locfileid: "4408135"
 - [日本の固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
 - [資産グループの減損損失の提案と転記](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

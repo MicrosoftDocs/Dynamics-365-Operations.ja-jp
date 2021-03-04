@@ -55,3 +55,6 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 
 ### <a name="restore-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、復元は拒否されます
 環境でプラットフォーム更新 20 以前を実行している場合は、データベース復元の処理を実行することはできません。 詳細については、[ソフトウェアのライフサイクル ポリシーとクラウド リリース](..//migration-upgrade/versions-update-policy.md)で現在サポートされているプラットフォーム更新の一覧を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

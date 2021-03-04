@@ -47,3 +47,6 @@ ms.locfileid: "4688217"
 ## <a name="next-steps"></a>次のステップ
 
 [システム要件と前提条件](requirements-and-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

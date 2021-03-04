@@ -64,3 +64,6 @@ ms.locfileid: "5033837"
 
 1. 削除する行を選択します。 
 2. **削除** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

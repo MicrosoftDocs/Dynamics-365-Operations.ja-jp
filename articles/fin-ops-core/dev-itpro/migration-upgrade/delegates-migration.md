@@ -152,3 +152,6 @@ SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メ�
 クラス参照の検索と同様、すべての参照の検索は、SubscribesTo キーワードで行うことができます。 結果リストには、すべての静的デリゲート ハンドラーが含まれます。 この一覧を手動で移動することで、静的デリゲート ハンドラーを検索できます。 これは、SubscribesTo キーワードを使用しない動的に宣言された代理ハンドラを返しません。 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

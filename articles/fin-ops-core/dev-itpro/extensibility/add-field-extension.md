@@ -47,3 +47,6 @@ ms.locfileid: "4409278"
 コンパイルとデータベースの同期の後、ユーザー インターフェイスで新しいフィールドを表示および編集することができます。
 
 ![ユーザー インターフェイスの新しいフィールド](media/TableNewField04.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

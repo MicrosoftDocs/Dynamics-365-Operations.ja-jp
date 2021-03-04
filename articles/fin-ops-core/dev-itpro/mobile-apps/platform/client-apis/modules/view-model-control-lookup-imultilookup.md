@@ -141,3 +141,6 @@ ms.locfileid: "4682561"
 | [OnLookupPageCreate](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate) |OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): (無効) オプション  <br>|  |
 | [OnLookupPageCreated](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated) |OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (オプション)  <br>|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行�
 4. **設定** で、**マップを構成および生成** ををクリックします。
 5. フォームの情報が正しいことを確認してから、**パスの検証** をクリックします。
 6. 検証が完了したら、**マップを生成** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

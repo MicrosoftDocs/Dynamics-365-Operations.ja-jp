@@ -111,3 +111,6 @@ Arnie は、この顧客に残りの 7.00 ドルの現金割引を適用しな�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

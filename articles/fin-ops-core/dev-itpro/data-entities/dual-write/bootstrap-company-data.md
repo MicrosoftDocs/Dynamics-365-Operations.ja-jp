@@ -108,3 +108,6 @@ Azure ストレージ アカウントを持っていない場合は、[Azure ス
 2. [サンプル顧客ファイル](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv) をダウンロードします。
 
 3. Azure Data Factory から **CountAccountsPipeline** を実行します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

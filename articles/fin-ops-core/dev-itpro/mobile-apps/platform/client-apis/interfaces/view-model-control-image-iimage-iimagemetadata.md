@@ -196,3 +196,6 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 サイズは CSS 空白サイズとほぼ同じです。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

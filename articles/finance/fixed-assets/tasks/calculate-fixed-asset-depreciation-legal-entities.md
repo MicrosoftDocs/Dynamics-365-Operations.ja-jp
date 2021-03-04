@@ -51,3 +51,6 @@ ms.locfileid: "4445044"
 5. [仕訳帳の作成] をクリックします。
 6. [固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

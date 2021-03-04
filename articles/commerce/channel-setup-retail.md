@@ -182,3 +182,6 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

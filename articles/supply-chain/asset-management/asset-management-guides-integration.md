@@ -114,3 +114,6 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
 
 - [二重書き込みの概要](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [資産管理の概要](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

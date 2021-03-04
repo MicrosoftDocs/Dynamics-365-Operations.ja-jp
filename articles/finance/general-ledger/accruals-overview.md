@@ -46,3 +46,6 @@ ms.locfileid: "4445147"
 
 
 詳細については、[発生主義スキーマの作成](tasks/create-accrual-schemes.md) および [元帳発生トランザクションの作成](tasks/create-ledger-accrual-transactions.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

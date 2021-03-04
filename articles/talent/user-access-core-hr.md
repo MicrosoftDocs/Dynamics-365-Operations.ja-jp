@@ -46,3 +46,6 @@ ms.locfileid: "4461740"
 **長期のソリューション**
 
 Microsoft は、ユーザーが人事管理に追加される際に Onboard および Attract に適切な権限を自動的に割り当てることを検討しています。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -361,3 +361,6 @@ ms.locfileid: "4445366"
 
     > [!NOTE]
     > **はい** を選択すると 、コンフィギュレーション バージョンのステータスが自動的に **完了** から **共有** に変更されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

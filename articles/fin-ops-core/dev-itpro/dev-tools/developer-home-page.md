@@ -187,3 +187,6 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 ## <a name="additional-resources"></a>その他のリソース
 
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

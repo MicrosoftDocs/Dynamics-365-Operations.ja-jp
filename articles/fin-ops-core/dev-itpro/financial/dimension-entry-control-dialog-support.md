@@ -65,3 +65,6 @@ dimensionEntryValues.loadAttributeValueSet(dimensionAttributeValueSetId);
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

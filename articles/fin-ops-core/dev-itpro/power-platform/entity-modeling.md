@@ -220,3 +220,6 @@ Dataverse の仮想エンティティを介してが呼び出されたときに�
 ## <a name="calculatedunmapped-fields"></a>計算済み/マップ解除済みフィールド
 
 Finance and Operations エンティティの計算されたフィールドとマップされていないフィールドは、Dataverse の対応する仮想エンティティでも使用できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

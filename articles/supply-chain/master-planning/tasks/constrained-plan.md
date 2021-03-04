@@ -53,3 +53,6 @@ ms.locfileid: "4431984"
 3. **OK** を選択します。
 4. **計画オーダー** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

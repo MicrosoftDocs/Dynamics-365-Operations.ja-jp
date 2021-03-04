@@ -193,3 +193,6 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 ## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

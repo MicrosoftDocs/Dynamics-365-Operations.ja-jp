@@ -46,3 +46,6 @@ ms.locfileid: "4445119"
 5. **再分類日** フィールドに、日付を入力します。
 6. **伝票** フィールドで値を入力または選択します。
 7. **OK** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

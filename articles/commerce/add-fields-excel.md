@@ -55,3 +55,6 @@ ms.locfileid: "4980409"
 [小売トランザクションの財務分析コードの編集](edit-financial-dim.md)
 
 [小売トランザクションを編集するために Excel ブックを作成する](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

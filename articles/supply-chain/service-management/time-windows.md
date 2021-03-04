@@ -45,3 +45,6 @@ ms.locfileid: "4432123"
 
 [時間枠の作成](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

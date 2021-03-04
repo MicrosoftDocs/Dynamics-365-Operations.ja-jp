@@ -60,3 +60,6 @@ ms.locfileid: "4432319"
 6. **保存** を選択します。
 7. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

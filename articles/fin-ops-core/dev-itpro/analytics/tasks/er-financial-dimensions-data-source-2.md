@@ -147,3 +147,6 @@ ms.locfileid: "4681688"
 4. [完了] をクリックします。
 5. [OK] をクリックします。
 ![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

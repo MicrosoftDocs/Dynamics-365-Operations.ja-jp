@@ -54,3 +54,6 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 [休暇の申請](hr-employee-self-service-request-time-off.md)
 [休暇と欠勤申請の管理](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

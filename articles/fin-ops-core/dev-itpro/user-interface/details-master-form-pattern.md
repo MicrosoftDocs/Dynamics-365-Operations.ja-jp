@@ -262,3 +262,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

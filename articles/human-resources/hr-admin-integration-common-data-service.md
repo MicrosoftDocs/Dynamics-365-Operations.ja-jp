@@ -118,3 +118,6 @@ Human Resources と Common Data Service の間のエンティティで完全同�
 [![完全同期の実行](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

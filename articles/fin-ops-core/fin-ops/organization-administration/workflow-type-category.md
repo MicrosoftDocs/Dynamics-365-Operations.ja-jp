@@ -63,3 +63,6 @@ ms.locfileid: "4798791"
 [ワークフロー タイプの作成](workflow-type-create.md)
 
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

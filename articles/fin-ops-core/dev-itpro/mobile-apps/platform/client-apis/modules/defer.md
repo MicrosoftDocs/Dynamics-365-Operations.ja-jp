@@ -115,3 +115,6 @@ resolve &lt;T&gt; (value?: T &#124; PromiseLike &lt;T&gt;) : Promise &lt;T&gt;
 
 #### <a name="returns-promise-lttgt"></a>Promise &lt;T&gt; を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

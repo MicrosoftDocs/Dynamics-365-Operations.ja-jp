@@ -228,3 +228,6 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

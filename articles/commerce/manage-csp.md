@@ -153,3 +153,6 @@ Nonce を有効にするには、次の手順に従います。
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

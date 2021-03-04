@@ -54,3 +54,6 @@ Microsoft Windows インストーラー (MSI) は、Microsoft Windows 用のア�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

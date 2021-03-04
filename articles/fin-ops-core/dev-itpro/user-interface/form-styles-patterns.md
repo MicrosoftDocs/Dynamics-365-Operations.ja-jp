@@ -161,3 +161,6 @@ Microsoft Dynamics AX 2012 では、いくつかのフォームのスタイル�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

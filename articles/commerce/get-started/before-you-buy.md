@@ -68,3 +68,6 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 ## <a name="step-3-learn-about-fasttrack-and-plan-your-deployment"></a>手順 3: FastTrack について学び、展開を計画する
 
 Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 また、Dynamics 365 でのお客様の経験を成功に導く Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

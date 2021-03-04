@@ -145,3 +145,6 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

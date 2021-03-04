@@ -151,3 +151,6 @@ ms.locfileid: "4683461"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 [モバイル プラットフォームのリソース](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

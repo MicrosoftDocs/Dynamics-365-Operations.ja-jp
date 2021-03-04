@@ -54,3 +54,6 @@ ms.locfileid: "4445287"
 3. 一覧で、選択された行をマークします。
 4. [伝票] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

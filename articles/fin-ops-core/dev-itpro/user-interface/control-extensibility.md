@@ -45,3 +45,6 @@ ms.locfileid: "4682461"
 ## <a name="control-extensibility-architecture-overview"></a>コントロールの拡張機能アーキテクチャの概要
 
 次の図は、関係するコンポーネントとそれらの相互関係を示しています。 [![拡張性アーキテクチャのコントロール](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

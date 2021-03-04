@@ -273,3 +273,6 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

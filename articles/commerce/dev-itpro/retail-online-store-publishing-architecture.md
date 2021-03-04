@@ -64,3 +64,6 @@ ms.locfileid: "4681490"
 5.  CRT では、一覧の公開状況を記録します。
 6.  Async Server は、一覧の公開ステータスを他のすべての公開ステータスと同期します。 状態は、**公開済** または **エラー** のいずれかになります。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

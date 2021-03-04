@@ -56,3 +56,6 @@ Commerce 本部のアカウント管理では、管理者はユーザーに代�
 ### <a name="custom-extensions"></a>カスタムの拡張機能
 
 管理者は、ユーザーのオプトアウト エクスペリエンスを管理するの独自の拡張機能を作成できます。 詳細については、[Retail サーバー API](e-commerce-extensibility/call-retail-server-apis.md) および [オンライン チャネルの拡張性](e-commerce-extensibility/overview.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

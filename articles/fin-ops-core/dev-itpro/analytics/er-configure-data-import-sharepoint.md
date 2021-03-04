@@ -206,3 +206,6 @@ ER フレームワークには、データ インポート用に無人モード�
 
 [Application update 7.3 での ER フレームワーク API の変更](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

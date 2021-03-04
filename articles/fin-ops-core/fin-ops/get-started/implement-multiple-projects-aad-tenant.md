@@ -75,3 +75,6 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[中国で 21Vianet が運用する Finance and Operations アプリ](../../dev-itpro/deployment/china-local-deployment.md)を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
 
 これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、マルチ Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

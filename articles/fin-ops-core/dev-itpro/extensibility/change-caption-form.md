@@ -37,3 +37,6 @@ ms.locfileid: "4409267"
 
 > [!NOTE]
 > フォームのデザインの他のプロパティはいずれも変更できません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

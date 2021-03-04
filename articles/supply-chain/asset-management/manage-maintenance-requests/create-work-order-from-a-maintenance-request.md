@@ -55,3 +55,6 @@ ms.locfileid: "4432024"
 
     ![新しい作業指示書を開く](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,5 @@ ms.locfileid: "4461729"
 - ブラウザー サポートの更新 (LinkedIn は 2020 年 7 月 1 日時点で Internet Explorer 11 以降をサポートしなくなりました)
 
 詳細については、[Attract での、LinkedIn Recruiter を使用した候補者のソーシング](attract-linkedin-recruiter.md)を参照してください。
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

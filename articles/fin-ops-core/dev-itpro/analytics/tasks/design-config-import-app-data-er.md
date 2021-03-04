@@ -113,3 +113,6 @@ ms.locfileid: "4682096"
     * [参照] を選択して、Response4.xml ファイルを選択します。
 16. OK を選択します。
     * 生成された出荷を確認します。 ファイルの応答タイプが Response1.xml 同じものであると認識されるようになりました。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Commerce では、顧客注文のすべての製品または選択された製�
 ## <a name="additional-resources"></a>追加リソース
 
 [Modern POS (MPOS) の顧客注文](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

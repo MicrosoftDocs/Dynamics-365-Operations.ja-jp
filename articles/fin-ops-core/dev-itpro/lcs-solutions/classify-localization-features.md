@@ -55,3 +55,6 @@ BPMの詳細については、 [ユーザー定義の業務プロセスをビジ
 
 - [グローバリゼーション リソース](country-region.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -120,3 +120,6 @@ DTS は .docx 形式の翻訳レビュー ファイルを提供します。 要�
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
 
 Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](./translation-service-overview.md) を参照してください。 ユーザー インターフェイス (UI) ファイルを翻訳する方法については、[ユーザー インタ フェース ファイルの翻訳](./use-translation-service.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

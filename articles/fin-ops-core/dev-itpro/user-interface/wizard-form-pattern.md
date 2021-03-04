@@ -115,3 +115,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![以前のバージョンの例](./media/wizard3.png)](./media/wizard3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

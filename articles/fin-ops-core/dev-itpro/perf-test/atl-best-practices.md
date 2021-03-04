@@ -134,3 +134,6 @@ class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 ### <a name="considerations"></a>注意事項
 
 必要なナビゲーション ノードすべてにショートカットを作成する必要はありません。 ただし、頻繁に使用されるナビゲーション ノードに対してそれらを作成することを検討してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

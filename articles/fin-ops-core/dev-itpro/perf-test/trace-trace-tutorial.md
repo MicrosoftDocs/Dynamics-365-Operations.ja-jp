@@ -75,3 +75,6 @@ ms.locfileid: "4680426"
 
 > [!NOTE]
 > 注記: トレースは、7 日後に削除されます。 Trace Parser のデスクトップ バージョンの詳細については、[Trace Parser を使用して問題を診断し、パフォーマンスを分析します](trace-parser.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ AX 2012 環境内のシステム診断サービスを既に使用している場
 AX 2012 環境内のシステム診断サービスをコンフィギュレーションする方法の詳細については、[システム診断のインストールと実行](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md)を参照してください。
 
 システム診断サービスを構成してから数分で、AX 2012 環境が LCS プロジェクトに表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

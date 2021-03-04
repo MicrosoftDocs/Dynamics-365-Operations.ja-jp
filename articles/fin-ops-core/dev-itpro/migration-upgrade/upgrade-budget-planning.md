@@ -162,3 +162,6 @@ AX 2012 で、予算計画には、各値ごとに保存された 1 つの計画
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

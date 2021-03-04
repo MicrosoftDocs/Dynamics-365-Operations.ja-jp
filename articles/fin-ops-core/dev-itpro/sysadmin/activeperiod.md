@@ -51,3 +51,6 @@ ms.locfileid: "4688189"
 
 ![有効期間の割り当て](./media/assign-active-period.png)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

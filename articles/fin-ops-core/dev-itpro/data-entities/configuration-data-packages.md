@@ -322,3 +322,6 @@ LCS から構成データ パッケージにアクセスすることができま
 | 配送条件                                       |                     |                 | x           |
 | 支払条件                                        |                     |                 | x           |
 | 割引合計顧客グループ                          |                     |                 | x           |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

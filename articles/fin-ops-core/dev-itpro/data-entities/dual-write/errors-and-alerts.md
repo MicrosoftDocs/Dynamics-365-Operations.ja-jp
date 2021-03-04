@@ -67,3 +67,6 @@ Finance and Operations アプリ と Dataverse の間で既存のデータをコ
 ## <a name="next-steps"></a>次のステップ
 
 [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

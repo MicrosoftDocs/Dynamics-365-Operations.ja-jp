@@ -67,3 +67,6 @@ ms.locfileid: "4408158"
 6. [減価償却の資産の配賦ルール] フィールドに値を入力します。
 7. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

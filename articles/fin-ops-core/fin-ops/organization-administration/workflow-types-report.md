@@ -34,3 +34,6 @@ ms.locfileid: "5154103"
 ## <a name="view-the-report"></a>レポートの表示
 
 [ワークフロー タイプ レポート](https://docs.microsoft.com/dynamics/s-e/)には、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 詳細については、[標準データ エンティティに関する情報の検索](../../dev-itpro/data-entities/data-entities-report.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

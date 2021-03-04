@@ -124,3 +124,6 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

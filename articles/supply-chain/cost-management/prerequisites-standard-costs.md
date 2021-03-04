@@ -80,3 +80,6 @@ ms.locfileid: "4432136"
 
 - [Dynamics 365 for Finance and Operations で直接材料の標準原価を設定する方法](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Dynamics 365 for Finance and Operations での標準直接人件費](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

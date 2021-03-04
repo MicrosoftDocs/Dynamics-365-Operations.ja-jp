@@ -65,3 +65,6 @@ POS ユーザーの言語設定は、**Retail とコマース &gt; 言語** の�
 | **会社** | 既定                    | 既定                                                       |
 | **店舗**   | 会社を上書き          | 会社を上書き                                             |
 | **ユーザー**    | 店舗又は会社を上書き | なし                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

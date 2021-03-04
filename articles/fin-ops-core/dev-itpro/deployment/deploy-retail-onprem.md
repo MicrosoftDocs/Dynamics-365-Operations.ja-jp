@@ -123,3 +123,6 @@ ms.locfileid: "4680539"
      > ```
 
 28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit (自己ホスト) のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ ms.locfileid: "4431645"
 2. **設定** タブの、**サービス注文の組み合わせ** フィールドで **サービス作業別** を選択します。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4413805"
 17. リストで、更新されたレジスターの分析コード値を参照して選択します。
 18. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Microsoft docs サイトで使用可能なアプリケーション エクスプ�
 [Microsoft.Dynamics.Ax.Xpp 名前空間](https://docs.microsoft.com/dotnet/api/microsoft.dynamics.ax.xpp)
 
 [Dynamics.AX.Application 名前空間](https://docs.microsoft.com/dotnet/api/dynamics.ax.application)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

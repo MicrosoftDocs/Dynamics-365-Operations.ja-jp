@@ -80,3 +80,6 @@ Common Data Service へのアップグレードの期限が近づいています
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operations のプラットフォーム更新プログラム 24
 Finance and Operations のプラットフォーム更新プログラム 24 の詳細については、[Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能と変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

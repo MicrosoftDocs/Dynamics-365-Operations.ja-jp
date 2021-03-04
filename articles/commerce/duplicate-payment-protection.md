@@ -143,3 +143,6 @@ Modern POS で、前の支払の復元中にエラーが発生する可能性が
 ## <a name="additional-resources"></a>追加リソース
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1124,3 +1124,6 @@ console.log($dyn.label("greeting"));
 
 ### <a name="control-instantiation"></a>インスタンス化の制御
 [![Extensibility プロセス](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

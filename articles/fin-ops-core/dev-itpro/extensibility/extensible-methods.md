@@ -112,3 +112,6 @@ ms.locfileid: "4408846"
     - **SysQueryInsertRecordSet** を使用して、insert_recordset をクエリに変換します。
     - select ステートメントではフィールド リストは避けてください。 この方法では、拡張することがなく、拡張担当者が追加のフィールドを取得できるようにすることができます。
     - クエリ範囲で **in** キーワードを使用し、拡張担当者が値をさらにクエリ範囲に追加できるようにします。 この方法は特に、列挙値を持つクエリ範囲にお勧めします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

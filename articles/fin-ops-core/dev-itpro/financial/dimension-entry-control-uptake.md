@@ -389,3 +389,6 @@ parmDimensionEntryControlHeader(
 [ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ ms.locfileid: "4413722"
 [新しいサイト ページの追加](add-new-page.md)
 
 [ページ URL の作成](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

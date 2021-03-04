@@ -42,3 +42,6 @@ Microsoft Azure ExpressRoute で、Azure データ センターとオンプレ�
 - [ExpressRoute 技術の概要](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
 - [ExpressRoute パートナーおよびピアリング場所](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
 - [ExpressRoute の価格決定](https://azure.microsoft.com/pricing/details/expressroute/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

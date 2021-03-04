@@ -114,3 +114,6 @@ ms.locfileid: "4995641"
 - [収益認識の再配賦 – シナリオ 2](rev-rec-reallocation-scenario-2.md) – 2 つの販売注文が入力され、最初の販売注文が請求された後、顧客は契約に品目を追加しました。
 - [収益認識の再配賦 – シナリオ 3](rev-rec-reallocation-scenario-3.md) – 既存の請求済販売注文に、新しい明細行が追加されました。
 - [収益認識の再配賦 – シナリオ 4](rev-rec-reallocation-scenario-4.md) – 一部が請求済の既存の販売注文から、明細行が削除されました。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

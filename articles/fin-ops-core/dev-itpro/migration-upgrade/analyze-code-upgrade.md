@@ -48,3 +48,6 @@ ms.locfileid: "5129583"
 コード アップグレード サービスを構成する方法については、 [Lifecycle Services (LCS) で、コード アップグレード サービスを構成する](../lifecycle-services/configure-execute-code-upgrade.md) を参照してください。
 
 コード アップグレード サービスの出力は、開発者が使用するように設計されています。 この出力は、開発者がコードのアップグレード タスクを完了するために必要な工数を見積もるのに役立ちます。 見積もりを作成するには、サービスが Azure DevOps で生成するタスクと、サービスが生成する新しいバージョンのコードを確認する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

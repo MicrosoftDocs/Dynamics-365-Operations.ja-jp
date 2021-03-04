@@ -64,3 +64,6 @@ offline: 1 ページはオフライン モードで読み込まれたので更�
 更新中: 4 ページは現在データを更新中です。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

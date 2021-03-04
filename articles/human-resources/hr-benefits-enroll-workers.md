@@ -58,3 +58,6 @@ ms.locfileid: "4419290"
 14. 一覧で、選択された行のリンクをクリックします。
 15. このページは、福利厚生に登録された従業員と、登録されていない従業員を表示することができます。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

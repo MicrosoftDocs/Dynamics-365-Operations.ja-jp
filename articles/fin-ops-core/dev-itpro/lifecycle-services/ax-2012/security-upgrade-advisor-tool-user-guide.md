@@ -247,3 +247,6 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

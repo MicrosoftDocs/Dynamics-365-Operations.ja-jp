@@ -67,3 +67,6 @@ ms.locfileid: "4431965"
 8. 一覧で、選択された行のリンクをクリックします。
 9. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

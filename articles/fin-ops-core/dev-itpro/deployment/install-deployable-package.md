@@ -214,3 +214,6 @@ Runbook には、環境を更新するために実行する必要がある一連
     ```
 
 - データベースの同期を確認するには **aosservice\\scripts\\** フォルダー内の **dbsync.error.txt** ファイルを見つけて開き、エラーを探します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

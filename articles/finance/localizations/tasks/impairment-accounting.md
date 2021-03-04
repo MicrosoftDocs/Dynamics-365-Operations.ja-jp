@@ -60,3 +60,6 @@ ms.locfileid: "4408177"
 9. [相殺勘定] フィールドで、任意の値を指定します。
 10. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

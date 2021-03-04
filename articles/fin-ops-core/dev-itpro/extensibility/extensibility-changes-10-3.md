@@ -133,3 +133,6 @@ ms.locfileid: "4409346"
 - **小売チャンネル:** Shipped、PackingSlip、MarkAsPacked に対してプレトリガーが追加されました。
 - **小売チャンネル:** キャンセル費用のダイアログボックスを無効化することができます。
 - **小売チャンネル:** オーダー検索のダイアログボックスに、オーダー取消のデフォルト パラメータ値が拡張されました。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

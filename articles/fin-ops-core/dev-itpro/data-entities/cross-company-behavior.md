@@ -200,3 +200,6 @@ AS
 - 新しいレコードが作成されたときに、1 つの特定の会社があるデータ エンティティにアクセスします。
 
 [![X++ テスト コード](./media/snip2.png)](./media/snip2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

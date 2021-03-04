@@ -45,3 +45,6 @@ ms.locfileid: "4679906"
 通常のフォームに戻るには、拡張フォームのアクション ペインで **レガシー フォームに切り替える** を選択します。
 
 ![[レガシー フォームに切り替える] ボタン](./media/enhanced-form.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

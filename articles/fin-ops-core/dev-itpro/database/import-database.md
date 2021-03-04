@@ -56,3 +56,6 @@ web.config ファイルを変更するために環境に管理者ユーザー �
 ## <a name="steps-to-complete-after-a-database-import-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース インポート後に実行する手順
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

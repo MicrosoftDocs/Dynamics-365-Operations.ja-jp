@@ -344,3 +344,6 @@ ms.locfileid: "4654175"
 
 - 動的な場所を使用している場合、場所ディレクティブ アクションが **連結** 戦略を使用するように設定されている場合は、最初に使用可能な場所または在庫が含まれている場所に対して補充作業が作成されます。
 - ゾーンではなく固定の場所を使用する場合は、[標準の最小/最大補充](tasks/set-up-min-max-replenishment-process.md)を使用する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

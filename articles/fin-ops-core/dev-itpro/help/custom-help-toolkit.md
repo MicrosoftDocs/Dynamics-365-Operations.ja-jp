@@ -59,3 +59,6 @@ Microsoft は、カスタマイズされた Finance and Operations ソリュー�
 [カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する](connect-help-pane.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

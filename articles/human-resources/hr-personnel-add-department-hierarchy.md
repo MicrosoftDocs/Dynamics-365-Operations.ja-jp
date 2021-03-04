@@ -54,3 +54,6 @@ ms.locfileid: "4419305"
 
 ## <a name="steps-for-creating-a-department"></a>部門を作成する手順
 新しい部門を作成するためのステップ バイ ステップの手順については次の記事 [新しい部門の定義](../fin-and-ops/hr/tasks/define-new-departments.md) を参照してください。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ ms.locfileid: "4445263"
 4. ツリーで、「この仕訳帳名で転記を許可するグループ」をチェックします。
 5. **OK** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

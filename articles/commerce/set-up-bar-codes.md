@@ -47,3 +47,6 @@ ms.locfileid: "4413850"
 ## <a name="additional-resources"></a>その他のリソース
 
 [バーコード マスクの設定](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -289,3 +289,6 @@ ER の実行を [トレース](trace-execution-er-troubleshoot-perf.md) しな�
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [パフォーマンス上の問題をトラブルシューティングするため ER 形式の追跡実行](trace-execution-er-troubleshoot-perf.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -167,3 +167,6 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 [![ビルドの成功または失敗の詳細を表示する](./media/build10-1024x446.jpg)](./media/build10.jpg) テストのリンクをクリックすると、テストの実行の失敗が表示されます。 
 
 [![テスト実行エラーの可視化](./media/build11-1024x455.jpg)](./media/build11.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ ms.locfileid: "4409522"
 [ホーム ページの開発およびカスタマイズ](developer-home-page.md)
 
 [Visual Studioの開発ツール](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

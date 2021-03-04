@@ -60,3 +60,6 @@ ms.locfileid: "4679366"
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
     }
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

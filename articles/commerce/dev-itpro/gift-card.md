@@ -404,3 +404,6 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 5. ファイルを保存して閉じます。
 6. MPOS を再起動します。
 7. 問題が解消しない場合は、MPOS を終了し、タスク マネージャーを使用して、実行中の dllhost.exe インスタンスを終了させ、インターネット インフォメーション サービス (IIS) のリセットを別に行います。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

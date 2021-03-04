@@ -151,3 +151,6 @@ ms.locfileid: "4529759"
 ![作業者から作業者タスク](./media/WorkerMapping.png)
 
 ![性別フィールドの変換](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

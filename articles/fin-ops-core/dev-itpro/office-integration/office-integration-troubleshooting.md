@@ -263,3 +263,6 @@ Office の更新プログラムをインストールできない場合、次の�
 [Office 統合のチュートリアル](office-integration-tutorial.md)
 
 [Power BI 統合のコンフィギュレーション](../analytics/configure-power-bi-integration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -170,3 +170,6 @@ Windows PowerShell tを使用して、データベース移動ツールキット
 データのアップグレードが完了したら、サンドボックス環境の同じカスタマイズ パッケージを実稼働環境に適用します。 その後、サンドボックス環境の AXDB データベースを実稼働環境にコピーすることができます。
 
 コピー操作の実行方法については、「[サンドボックス データベースを実稼働環境にコピーする](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

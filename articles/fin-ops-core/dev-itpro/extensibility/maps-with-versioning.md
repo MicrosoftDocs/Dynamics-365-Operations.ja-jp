@@ -58,3 +58,6 @@ ms.locfileid: "4408840"
 
 ![MapClassExtensions](media/TableMaps.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Dynamics 365 Finance では、1096 Annual Summary and Transmission of US Informa
 公的機関の新機能として、**主勘定ごとの 1099 情報の更新** が追加されました。これは **機能管理** ワークスペースで有効にできます。 この機能を使用すると、仕入先レコードの既定の勘定ではなく、勘定配布の主勘定によって、仕入先の 1099 値を関連付けることができます。
 
 詳細については、[1099 レポートの仕入先の設定](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

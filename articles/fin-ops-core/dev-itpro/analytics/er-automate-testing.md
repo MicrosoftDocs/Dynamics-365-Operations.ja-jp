@@ -380,3 +380,6 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 - [生成されたレポート結果を追跡し、ベースライン値と比較する](er-trace-reports-compare-baseline.md)
 - [ER 形式の新しい基準バージョンを採用してその形式をアップグレードする](tasks/er-upgrade-format.md)
 - [Lifecycle Services からのコンフィギュレーションの ER インポート](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

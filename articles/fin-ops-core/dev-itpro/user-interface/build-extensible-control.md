@@ -432,3 +432,6 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

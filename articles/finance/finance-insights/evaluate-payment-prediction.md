@@ -101,3 +101,6 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 #### <a name="privacy-notice"></a>プライバシー通知
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

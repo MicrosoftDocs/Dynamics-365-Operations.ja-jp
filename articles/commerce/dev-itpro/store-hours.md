@@ -78,3 +78,6 @@ ms.locfileid: "4687514"
 POS レシートには、店舗の営業時間が含まれるようになります。 テンプレートに休日が含まれている場合は、レシートに表示されます。
 
 ![レシート例](../dev-itpro/media/Storehours3.png "レシート例")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

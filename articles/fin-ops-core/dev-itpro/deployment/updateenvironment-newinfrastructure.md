@@ -116,3 +116,6 @@ Lifecycle Services (LCS) を通じて配置されたレベル 1 サンドボッ�
 
 > [!IMPORTANT]
 > 最新のインフラストラクチャ スタックに配置されている環境では、サービスが失敗した場合、その環境は自動的にロールバックされます。 工程が失敗した理由については、環境履歴ページからログをダウンロードできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

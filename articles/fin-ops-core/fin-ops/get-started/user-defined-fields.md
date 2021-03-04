@@ -162,3 +162,6 @@ ms.locfileid: "4693548"
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>開発者ツールからカスタム フィールドを参照することはできますか?  
 
 カスタム フィールドは、ユーザー インターフェイスを通してのみ管理でき、コードからは参照できません。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

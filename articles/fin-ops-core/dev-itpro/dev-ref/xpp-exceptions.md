@@ -499,3 +499,6 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。                         |
 | [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

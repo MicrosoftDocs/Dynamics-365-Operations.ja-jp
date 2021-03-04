@@ -127,3 +127,6 @@ CRT 拡張機能のシークレットを読み取るには、次の手順を実�
 ## <a name="offline-support"></a>オフライン サポート
 
 資格情報をオフラインでサポートするには、Key Vault の資格情報が使用できないまたはアクセスできない場合に、拡張機能コードでオフラインへのフェールオーバーが必要です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

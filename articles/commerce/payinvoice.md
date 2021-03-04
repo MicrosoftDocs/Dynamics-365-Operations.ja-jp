@@ -45,3 +45,6 @@ Dynamics 365 Commerce の請求書の支払機能は拡張され、以下の機�
 
 > [!NOTE]
 > 金額の部分的な支払や決済は、まだサポートされていません。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

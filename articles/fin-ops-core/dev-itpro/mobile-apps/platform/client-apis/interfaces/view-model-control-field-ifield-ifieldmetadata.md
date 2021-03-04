@@ -269,3 +269,6 @@ WrapText: ブール値 (オプション)
 True の場合、フィールド コントロールのテキストは、次の行に折り返されます。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ ABS (number)
 ## <a name="additional-resources"></a>追加リソース
 
 [算術関数](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

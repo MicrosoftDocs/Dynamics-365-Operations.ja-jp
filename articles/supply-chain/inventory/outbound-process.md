@@ -85,3 +85,6 @@ ms.locfileid: "4431991"
 **ピッキング リスト登録** ページですべてのピッキング ラインがピッキングされるとすぐに、関連付けられている出荷が完了します。 販売注文の梱包明細のプロセスは、ピッキング済の在庫に基づいて初期化されます。
 
 [![出荷配送の更新](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -667,3 +667,6 @@ ms.locfileid: "4432383"
     作業が完了しました。
 
 この時点から先は、その他のすべての倉庫プロセスが適用されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

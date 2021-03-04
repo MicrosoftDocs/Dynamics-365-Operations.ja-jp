@@ -43,3 +43,6 @@ ms.locfileid: "4431993"
 6. **保存** を選択します。
 
 ![実行予定](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

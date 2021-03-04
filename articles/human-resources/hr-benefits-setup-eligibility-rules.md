@@ -176,3 +176,6 @@ Microsoft Dynamics 365 Human Resources の給付金管理に必要なパラメ�
    | **適格性ルール** | 給付金プログラムに適用する適格性ルールを選択します。 このページの **適格性ルール** タブで適格性ルールを定義します。 |
    
 4. **保存** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Finance and Operations のプラットフォーム更新プログラム 26 に�
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Talent のプロビジョニング時に、インスタンス タイプを示す
 
 Talent の新しいインスタンスのプロビジョニング時に、インスタンス タイプが **実稼働** か **サンドボックス** であるかを示すことができ、新しい機能を事前にテストできるようになります。 既存の Talent のインスタンスすべては、実稼働インスタンス タイプに更新されます。 既存のインスタンスのいずれかをサンドボックス インスタンス タイプに更新する場合は、変更要求を開始するようサポートに連絡してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

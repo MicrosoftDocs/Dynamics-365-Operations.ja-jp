@@ -106,3 +106,6 @@ public static string SupportsMultipleCaptures
 売掛金勘定パラメータに従って期限切れになる承認は、増分取得の対象にはなりません。 
 
 **SupportsMultipleCaptures** プロパティはグローバルではありません。 これは承認に固有です。 環境には、増分取得をサポートするコネクタと、それをサポートしないコネクタの両方がある場合があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

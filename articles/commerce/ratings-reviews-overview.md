@@ -59,3 +59,6 @@ Dynamics 365 Commerce の評価とレビュー ソリューションは、Azure 
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Commerce の商品評価の同期](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

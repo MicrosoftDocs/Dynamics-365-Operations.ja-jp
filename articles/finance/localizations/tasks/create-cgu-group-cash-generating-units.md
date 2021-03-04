@@ -100,3 +100,6 @@ ms.locfileid: "4408198"
     * 認識テストの実行に使用できるのは、有効な CGU グループだけです。  
 2. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

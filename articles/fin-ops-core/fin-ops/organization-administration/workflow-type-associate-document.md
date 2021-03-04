@@ -45,3 +45,6 @@ ms.locfileid: "4798793"
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
 
 [ワークフロー ドキュメント クラスの作成](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

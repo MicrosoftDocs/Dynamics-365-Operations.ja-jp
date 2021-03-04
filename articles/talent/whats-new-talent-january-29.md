@@ -41,3 +41,6 @@ ms.locfileid: "4690055"
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>作業者の採用アクションが「ワークフロー完了」の状態で止まっています
 いくつかのワークフローが「ワークフロー完了」の状態で終了する問題を修正するための変更が行われました。 ワークフローが終了すると、新しいワークフローは「完了」の状態に移行するようになりました。 ワークフロー完了状態のワークフローはすべてエラー ステータスに移行され、必要に応じて更新または削除が可能になります。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

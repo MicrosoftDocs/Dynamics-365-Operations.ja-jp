@@ -93,3 +93,6 @@ ms.locfileid: "4683924"
 13. **終了** をクリックし、**Reporting Services 構成マネージャー** を閉じます。
 
     [![reporting services 構成マネージャーの終了](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Redis キャッシュ内のすべての指標キーが取得され、**指標キ
 1. Supply Chain Management で、**生産管理 \> 照会とレポート \> IoT インテリジェンス \> 指標キー** に移動します。
 2. **指標キー** ページで、削除する指標キーを選択します。
 3. **削除** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

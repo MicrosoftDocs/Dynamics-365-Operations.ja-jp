@@ -109,3 +109,6 @@ ms.locfileid: "4431702"
 ### <a name="calculate-and-approve-absence"></a>休暇の計算と承認
 
 - **休暇時間** &gt; **確認および承認** &gt; **承認または計算** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

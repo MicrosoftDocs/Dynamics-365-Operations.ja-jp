@@ -53,3 +53,6 @@ ms.locfileid: "4431974"
 20. ページを閉じます。
 21. **リリース製品の詳細** フォームを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

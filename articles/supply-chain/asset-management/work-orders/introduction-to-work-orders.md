@@ -119,3 +119,6 @@ ms.locfileid: "4431784"
 >[!NOTE]
 >マスター スケジューリングを実行する際に作業指示書で作成した予測を含めるには、**資産管理パラメーター** ページで選択した予測モデルを使用します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

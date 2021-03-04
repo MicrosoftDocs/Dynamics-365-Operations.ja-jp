@@ -231,3 +231,6 @@ AOS がインストールされているサーバーまたは仮想マシンに�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

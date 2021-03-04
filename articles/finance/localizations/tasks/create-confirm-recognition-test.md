@@ -58,3 +58,6 @@ ms.locfileid: "4408195"
     * 確認済の認識テストだけを転記することができます。  
 11. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

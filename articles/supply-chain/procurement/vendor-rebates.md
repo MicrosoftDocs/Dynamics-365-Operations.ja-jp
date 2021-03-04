@@ -167,3 +167,6 @@ ms.locfileid: "4432178"
 - 正確なリベート請求の作成
 - 一般会計で予定された売掛および中間利益の発生。
 - 割引の期日を迎えた仕入先残高と損益計算書の更新
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

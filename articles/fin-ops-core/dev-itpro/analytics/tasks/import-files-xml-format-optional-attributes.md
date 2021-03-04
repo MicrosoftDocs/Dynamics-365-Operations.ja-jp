@@ -123,3 +123,6 @@ ms.locfileid: "4684142"
 
 > [!NOTE]
 > 同じファイルがフォーマット デザインとしてインポートされて、‘document’ 要素の ‘ID’ 属性はオプションとして見なされます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

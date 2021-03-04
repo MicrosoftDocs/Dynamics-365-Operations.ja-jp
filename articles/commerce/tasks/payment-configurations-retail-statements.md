@@ -53,3 +53,6 @@ ms.locfileid: "4413791"
     * 金庫保管額を転記する口座を選択します。  
 8. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

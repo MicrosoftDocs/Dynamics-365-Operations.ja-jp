@@ -303,3 +303,6 @@ ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ### <a name="upgrade-a-copy-of-the-database-in-a-development-environment"></a>データベースのコピーを開発環境でアップグレードする
 
 開発環境で同じデータベースをアップグレードすることを強くお勧めします。 開発環境で利用できるデータベースのコピーを使用する場合は、アップグレードされたサンドボックス環境で検出されるバグを調査する方がはるかに簡単です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ ms.locfileid: "4432036"
 [品質管理プロセス](quality-management-processes.md)
 
 [不適合管理の前提条件を設定する](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

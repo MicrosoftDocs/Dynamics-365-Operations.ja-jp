@@ -90,3 +90,6 @@ Talent の新しいインスタンスをプロビジョニングする時に、�
 ### <a name="platform-update-29"></a>プラットフォーム update 29
 
 プラットフォーム更新プログラム 29 に関する詳細については [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 29 (2019 年 10 月) のプレビュー機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

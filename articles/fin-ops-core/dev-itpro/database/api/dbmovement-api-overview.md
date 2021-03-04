@@ -39,3 +39,6 @@ ms.locfileid: "4681120"
 
 * [認証](dbmovement-api-authentication.md) の設定方法について説明します。
 * [API リファレンス](./v1/dbmovement-api-v1-overview.md) を確認します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

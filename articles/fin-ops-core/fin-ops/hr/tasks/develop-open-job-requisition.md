@@ -65,3 +65,6 @@ ms.locfileid: "4693091"
     * 開始済ステータスは、プロジェクトが応募を受け付ける準備が整っていることを示します。  
 33. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇の売
 [休暇の概要](hr-leave-and-absence-overview.md)<br>
 [休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

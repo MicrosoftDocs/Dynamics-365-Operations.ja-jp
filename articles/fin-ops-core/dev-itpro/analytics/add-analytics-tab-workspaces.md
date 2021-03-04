@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | フィルタ ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。     |
 | showNavPane      | ナビゲーション ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。 |
 | defaultFilters   | Power BI レポートの既定のフィルター。                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ ms.locfileid: "5154267"
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
 [SQL Server Reporting Services レポート](https://docs.microsoft.com/dynamics/s-e/)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

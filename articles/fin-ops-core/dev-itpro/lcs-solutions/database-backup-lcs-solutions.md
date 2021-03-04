@@ -42,3 +42,6 @@ SQL Server Management Studio で、データベースのバックアップを圧
 ## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

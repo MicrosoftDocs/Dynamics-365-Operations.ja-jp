@@ -281,3 +281,6 @@ ms.locfileid: "4432285"
     ![位置 1 の場所](media/LocationLicensePlatePositioning.png "位置 1 の場所")
 
 1. 場所に対して作成したライセンス プレートの ID を入力し、プロンプトに従って販売注文を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

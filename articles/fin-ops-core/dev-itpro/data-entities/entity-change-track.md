@@ -80,3 +80,6 @@ public static Query defaultCTQuery()
     return q;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ ms.locfileid: "4445138"
 詳細については、[例外の調査/解決](tasks/research-resolve-exceptions.md) を参照してください。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

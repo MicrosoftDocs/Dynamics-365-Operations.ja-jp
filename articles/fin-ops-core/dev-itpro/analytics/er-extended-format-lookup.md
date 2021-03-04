@@ -91,3 +91,6 @@ ER 形式検索の GR へのアクセスは、現在、送信ドキュメント�
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) のフレームワーク API](er-apis-app73.md)
 - [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

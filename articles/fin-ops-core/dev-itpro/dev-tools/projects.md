@@ -99,3 +99,6 @@ Finance and Operations プロジェクト タイプは開発ツールの一部�
     [![プロジェクトのインポート ダイアログ](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 
 6. **OK** をクリックしてインポート プロセスを完了します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ ms.locfileid: "4665481"
 [SysDa クラス](../sysda.md)を使用してデータを取得および変更することもできます。 拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。
 
 **executeQueryWithParameters** API は、[SQL インジェクション攻撃の軽減](../query-with-parameters.md) に役立ちます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

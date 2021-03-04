@@ -101,3 +101,6 @@ ControlType: 「FileUpload」 &#124; 「バーコード」 &#124; 「入力」 &
 
 コントロールには、ControlType にリストされているタイプのいずれかを割り当てる必要があります。
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

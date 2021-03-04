@@ -72,3 +72,5 @@ Talent ユーザー ロールを Talent Relationship チームに割り当てて
 
    1. 新しいブラウザ ウィンドウから、キャリア ポータルにログインします。
    2. このジョブを求人ポータルから適用します。 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

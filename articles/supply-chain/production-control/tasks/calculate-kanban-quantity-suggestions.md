@@ -85,3 +85,6 @@ ms.locfileid: "4431692"
     * これは、かんばん数量計算から算出した固定かんばん数量 4 です。  
 5. ListPanel タブをクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

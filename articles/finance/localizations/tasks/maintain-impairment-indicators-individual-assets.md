@@ -84,3 +84,6 @@ ms.locfileid: "4408168"
     * 1500000.00 を入力します。  
 18. [インジケーターの更新] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

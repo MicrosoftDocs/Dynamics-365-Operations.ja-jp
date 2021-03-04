@@ -216,3 +216,6 @@ OLE DB Destination failed the pre-execute phase and returned error code 0xC02020
 
 **解決策** - AZURE SQL BYOD サーバーの接続ポリシーがプロキシに設定されている場合に、この問題が発生することがあります。 [SQL DB 接続アーキテクチャ](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) の説明に従って、これを「リダイレクト」に変更する必要があります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ ms.locfileid: "4684718"
 8. ツリーで、「Intrastat model」を展開します。
 9. ツリーで、「イントラスタットmodel\Intrastat (DE)を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

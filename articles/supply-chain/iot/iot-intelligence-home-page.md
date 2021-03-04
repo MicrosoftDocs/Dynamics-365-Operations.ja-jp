@@ -65,3 +65,6 @@ IoT インテリジェンスにより、次のシナリオがサポートされ�
 + [アドインのアンインストール](iot-lcs-setup.md#uninstall-addin)
 + [実行中の IoT インテリジェンス シナリオの変更](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [シミュレーション オプション](iot-management.md#simulation-options)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

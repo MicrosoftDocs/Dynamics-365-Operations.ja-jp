@@ -79,3 +79,6 @@ PowerShell.exe -File run_ax2012.ps1 "Original file location" "New file location"
 [カスタム ヘルプの概要](custom-help-overview.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)  
 [ヘルプの拡張、カスタマイズ、および共同作業](contributor-guide.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

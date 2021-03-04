@@ -89,3 +89,6 @@ ms.locfileid: "4431782"
 >[!NOTE]
 >**資産管理** モジュールで使用されるすべてのカレンダーは、**組織管理** > **設定** > **カレンダー** > **カレンダー** で設定されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

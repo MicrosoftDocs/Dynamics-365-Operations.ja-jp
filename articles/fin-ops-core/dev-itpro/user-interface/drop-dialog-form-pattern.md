@@ -150,3 +150,6 @@ Form: **CustCollectionsNewActivityAction** (**売掛金勘定** &gt; **共通** 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![ドロップ ダイアログの例](./media/dropdialog4.png)](./media/dropdialog4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

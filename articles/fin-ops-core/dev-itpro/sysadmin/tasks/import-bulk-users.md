@@ -58,3 +58,6 @@ ms.locfileid: "4679817"
 ## <a name="run-in-a-sandbox-environment"></a>サンドボックス環境で実行
 1. **バッチインポート** を選択します。
 2. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

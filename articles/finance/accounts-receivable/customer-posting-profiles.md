@@ -140,3 +140,6 @@ ms.locfileid: "4445049"
 
 詳細については、「[顧客支払の概要](../cash-bank-management/tasks/customer-payment-overview.md)」を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

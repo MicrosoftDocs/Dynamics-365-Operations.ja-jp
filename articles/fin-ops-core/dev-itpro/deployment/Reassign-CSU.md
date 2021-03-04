@@ -81,3 +81,6 @@ ms.locfileid: "4687328"
 > 元の CSU を削除しないでください。 これを行うと、店舗を開けなくなる可能性があります。
 
 サンドボックス UAT 環境ですべての手順を完了した後、運用環境で同じ手順を繰り返します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

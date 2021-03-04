@@ -62,3 +62,6 @@ ms.locfileid: "4445210"
 詳細については、[転記の定義例](example-posting-definitions.md) を参照してください。 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

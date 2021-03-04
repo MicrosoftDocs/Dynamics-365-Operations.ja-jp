@@ -70,3 +70,6 @@ ms.locfileid: "5141926"
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md) 
 - [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) 
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

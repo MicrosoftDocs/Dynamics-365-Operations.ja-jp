@@ -3645,3 +3645,6 @@ VSAssembly テーブルには、AOT 内で Visual Studio プロジェクト ノ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理�
 ### <a name="how-are-binary-hotfixes-handled-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、および Dynamics AX 2012 R2 のバイナリ修正プログラムはどのように処理されますか?
 
 Microsoft がソース コードを提供しないシステムの一部に修正プログラムが必要であり、セキュリティ不具合ではない場合、修正プログラムは提供されません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

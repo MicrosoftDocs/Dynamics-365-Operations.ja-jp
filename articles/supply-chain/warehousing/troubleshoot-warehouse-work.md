@@ -50,3 +50,6 @@ ms.locfileid: "4645796"
 ### <a name="issue-resolution"></a>問題の解決
 
 Microsoft は、この問題を評価し、それが機能上の制限であることを確認しました。 現在、倉庫管理プロセスでは、法人によって所有されている在庫のみがサポートされています。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

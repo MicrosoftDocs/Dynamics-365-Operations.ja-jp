@@ -284,3 +284,6 @@ ms.locfileid: "4408755"
 [FormTreeItem クラス](system-classes/FormTreeItem-class.md)
 
 [FormWindowControl クラス](system-classes/FormWindowControl-class.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

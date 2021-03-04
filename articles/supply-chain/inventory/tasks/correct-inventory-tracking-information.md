@@ -64,3 +64,6 @@ ms.locfileid: "4432231"
 2. [トランザクション] をクリックします。
     * ここで、仕訳帳の転記時に作成されたトランザクションを確認できます。   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

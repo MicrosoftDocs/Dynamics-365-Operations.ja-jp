@@ -46,3 +46,6 @@ ms.locfileid: "4822945"
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 [実装プロジェクト FAQ の Go-live](go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

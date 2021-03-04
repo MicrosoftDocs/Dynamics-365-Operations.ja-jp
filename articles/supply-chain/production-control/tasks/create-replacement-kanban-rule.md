@@ -56,3 +56,6 @@ ms.locfileid: "4431677"
 1. 最大数量を「100」に設定します。
     * Quantities FastTab を展開して、Maximum quantity field を確認します。 100 に最大数量を変更すると、100 のかんばんが処理されるようになります。    これは、このタスクの最後のステップです。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

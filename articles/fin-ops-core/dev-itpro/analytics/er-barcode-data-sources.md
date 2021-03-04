@@ -303,3 +303,6 @@ ER ソリューションを変更してから、変更したテンプレート�
 - [電子レポートの出力先](electronic-reporting-destinations.md)
 - [電子報告のフォーミュラ言語](er-formula-language.md)
 - [NUMBERFORMAT 機能](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

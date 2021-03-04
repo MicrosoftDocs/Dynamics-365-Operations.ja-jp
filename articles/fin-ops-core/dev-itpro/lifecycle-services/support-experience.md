@@ -183,3 +183,6 @@ Microsoft に問題を送信するためには、LCS ユーザーに有効な Mi
 
 ## <a name="prevent-users-from-creating-issues-from-the-client"></a>ユーザーが、クライアントからの問題を作成できなようにする
 既定では、システム ユーザー ロールに *SysLCSCPSIssueEntry* という権限が割り当てられています。 この権限は、[ヘルプ] メニューの **サポート チームに連絡** メニュー項目へのアクセスを制御します。 ユーザーがクライアントからの問題を作成して送信できないようにするには、システム ユーザー ロールからこの権限を削除します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

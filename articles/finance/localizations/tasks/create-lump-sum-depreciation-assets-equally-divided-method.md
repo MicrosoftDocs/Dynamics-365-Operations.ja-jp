@@ -63,3 +63,6 @@ ms.locfileid: "4408193"
     * [均等償却年数] が 3 年であることを確認します。  
     * この値は、固定資産のタイプが一括比例配分か、繰延資産か、または低価額資産かによって異なります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

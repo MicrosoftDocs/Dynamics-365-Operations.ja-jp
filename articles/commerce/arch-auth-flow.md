@@ -108,3 +108,6 @@ Commerce Scale Unit API とそのアクセス制限の完全な一覧につい�
 [認証プロバイダーのコンフィギュレーション](/dev-itpro/configure-authentication-providers.md)
 
 [販売時点管理 (POS) デバイスのライセンス認証](/dev-itpro/retail-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

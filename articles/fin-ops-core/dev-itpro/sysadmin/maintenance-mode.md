@@ -95,3 +95,6 @@ Application Object Server (AOS) のインスタンスを再起動すると、シ
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

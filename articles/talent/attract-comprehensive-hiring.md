@@ -85,3 +85,6 @@ Attract の評価版に含まれていたすべての機能が表示されない
 
 - 同僚は、Attract の包括採用アドオンの評価版またはライセンスで操作しています。一方では、Attract の基本的なバージョンを操作しています。
 - Attract の包括採用アドオンを所有していますが、すべての機能を使用するための適切なロールには割り当てられていません。 詳細については、[Attract のセキュリティおよびロール管理](security-attract.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

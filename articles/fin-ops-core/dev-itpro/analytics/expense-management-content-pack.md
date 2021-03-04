@@ -93,3 +93,6 @@ Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI 
 | 従業員統計 | 原価タイプ別経費清算書            |
 |                     | 個人経費                       |
 |                     | 統計グループ別経費精算書     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

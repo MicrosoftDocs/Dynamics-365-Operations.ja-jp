@@ -51,3 +51,6 @@ ms.locfileid: "4408133"
 5. インポート プロジェクトのソース ファイル形式を「CSV (Unicode)」に設定します。
 6. **インポート** をクリックします。
 7. 結果を検証します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

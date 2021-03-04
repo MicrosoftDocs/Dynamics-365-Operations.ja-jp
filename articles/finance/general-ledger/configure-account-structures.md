@@ -107,3 +107,6 @@ ms.locfileid: "4445257"
 勘定構造への新しい設定や変更に問題がなければ、それを有効化する必要があります。 勘定構造が元帳に割り当てられている場合、この有効化は実行時間の長いプロセスになることがあり、システムの転記されていないトランザクションは新しい構造と同期される必要があります。 転記済トランザクションは勘定構造の変更による影響を受けません。
 
 詳細については次を参照してください。[勘定科目表の計画](plan-chart-of-accounts.md)、[財務分析コード](financial-dimensions.md)、[勘定と分析コードの組み合わせの入力 (セグメント化エントリ コントロール)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

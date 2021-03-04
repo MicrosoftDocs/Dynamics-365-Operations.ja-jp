@@ -84,3 +84,6 @@ ms.locfileid: "4679920"
 [アクション デザインのガイドライン](action-design-guidelines.md)
 
 [フォーム デザインの要件](form-design-requirements.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

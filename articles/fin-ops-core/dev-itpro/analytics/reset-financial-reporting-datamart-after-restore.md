@@ -705,3 +705,6 @@ END
     - 特定のレポートをインポートするには、行、列、ツリー、あるいは必要な要素を選択してください。
 
 5. **インポート** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ PITR プロセスは、異なる地域間の Microsoft による管理および�
 ### <a name="point-in-time-restore-between-source-and-target-that-are-both-on-self-service-in-different-regions"></a>異なる地域で、両方ともセルフ サービスにあるソースとターゲット間のポイントインタイム復元
 PITR プロセスは、異なる地域間のセルフ サービス環境間ではサポートされていません。 たとえば、実稼働環境が米国東部にあり、セルフ サービスのサンドボックス環境に PITR が必要な場合、西ヨーロッパでは PITR はサポートされていません。 代わりに、環境を両方とも同じ地域にするか、定期的なデータベース更新を選択することもできます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -545,3 +545,6 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### <a name="solution"></a>ソリューション
 
 この問題を解決する修正プログラムが利用可能です。 Microsoft サポート技術情報 (KB) 番号は 4095640 です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

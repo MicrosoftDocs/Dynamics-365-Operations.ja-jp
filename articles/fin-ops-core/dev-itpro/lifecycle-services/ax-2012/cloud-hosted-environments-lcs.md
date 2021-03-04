@@ -38,3 +38,6 @@ Microsoft Dynamics Lifecycle Services では、クラウド ホスト環境は�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

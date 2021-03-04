@@ -151,3 +151,6 @@ Microsoft パートナーが 1 つ以上の顧客のコードを作成する場�
 6.  実稼働環境に適用する前に検証用のサンドボックス環境に更新プログラム (修正プログラム、カスタマイズ) を適用します。
 
 環境の計画に関する詳細については、[環境計画](../../fin-ops/imp-lifecycle/environment-planning.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

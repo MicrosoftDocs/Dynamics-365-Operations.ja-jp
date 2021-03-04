@@ -59,3 +59,6 @@ AsyncService
 イベント ハンドラー (該当する場合) から回答を返し、非同期でそれらを拒否または解決するために使用できる遅延オブジェクトを作成します。
 
 #### <a name="returns-deferred-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

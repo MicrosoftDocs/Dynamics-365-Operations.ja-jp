@@ -142,3 +142,6 @@ Dataverse の会社固有のカスタム テーブルを作成するには、カ
 ### <a name="is-there-a-document-about-best-practices-for-table-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>テーブルの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
 
 可能であれば、顧客や仕入先の統合などの一般的なシナリオをカバーしている[標準のシナリオ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping)を使用してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

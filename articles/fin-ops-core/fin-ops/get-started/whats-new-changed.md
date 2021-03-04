@@ -50,3 +50,6 @@ Lifecycle Services の新機能や変更事項を確認するには、次のト�
 - [Lifecycle Services (LCS) の新機能および変更された機能](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

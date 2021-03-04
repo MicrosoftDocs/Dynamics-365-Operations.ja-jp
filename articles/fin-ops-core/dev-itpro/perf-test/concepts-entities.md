@@ -291,3 +291,6 @@ public AtlQueryWHSLoadLines lines()
 ## <a name="additional-resources"></a>追加リソース
 
 [承認テスト ライブラリのクエリ](concepts-queries.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

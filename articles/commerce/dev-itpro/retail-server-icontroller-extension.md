@@ -279,3 +279,6 @@ POS は Typescript プロキシ を使って、Retail サーバー API や CRT �
     </composition> 
 </retailProxyExtensions> 
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

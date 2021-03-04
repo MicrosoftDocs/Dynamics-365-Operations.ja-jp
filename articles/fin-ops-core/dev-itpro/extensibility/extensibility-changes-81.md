@@ -597,3 +597,6 @@ ms.locfileid: "4409338"
 - whsWorkExecuteDisplayReprintLabel を ProcessGuide フレームワークにリファクター
 - 小売チャネル: サポート BankDropOperationRequest
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

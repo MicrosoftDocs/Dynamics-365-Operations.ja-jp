@@ -60,3 +60,6 @@ ms.locfileid: "4445271"
 29. [売上税] をクリックします。
 30. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

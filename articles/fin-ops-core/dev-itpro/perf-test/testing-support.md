@@ -73,3 +73,6 @@ class FMUnitTestSample extends SysTestCase
 ## <a name="advanced-options"></a>詳細オプション
 
 分類および実行のためのテストをフィルター処理する詳細オプションについては、[クラスおよびメソッドの属性を使用した SysTest フィルター処理](systest-filtering.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

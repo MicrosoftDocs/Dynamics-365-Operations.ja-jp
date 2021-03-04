@@ -61,3 +61,6 @@ ms.locfileid: "4432337"
 5. クリックして [参照仕訳帳番号] フィールドのリンクに従います。
 6. [明細行] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

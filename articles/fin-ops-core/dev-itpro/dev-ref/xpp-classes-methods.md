@@ -577,3 +577,6 @@ static void StaticFunction()
 
 コール スタックの深さは 100 に制限されています。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

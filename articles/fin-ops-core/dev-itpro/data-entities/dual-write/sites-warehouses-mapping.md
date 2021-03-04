@@ -50,3 +50,6 @@ Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
 
 [!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

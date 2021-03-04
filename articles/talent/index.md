@@ -35,3 +35,6 @@ Talent に含まれている Attract アプリは、組織が必要とするス�
 > [!IMPORTANT]
 > Dynamics 365 Talent: Core HR の機能は、現在 Dynamics 365 Human Resources に含まれています。 [Dynamics 365 Human Resources へようこそ](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome) で Human Resources のドキュメントを参照できます。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

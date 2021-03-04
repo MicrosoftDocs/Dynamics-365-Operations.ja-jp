@@ -46,3 +46,6 @@ ms.locfileid: "4445179"
 15. この支払方法に使用する支払属性を定義するには、 **支払属性** タブを使用します。
 16. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

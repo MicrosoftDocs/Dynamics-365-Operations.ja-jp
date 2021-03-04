@@ -66,3 +66,6 @@ Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ |
 
 [!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

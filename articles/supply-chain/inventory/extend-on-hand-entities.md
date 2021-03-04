@@ -69,3 +69,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 これらの手順を完了した後で、新しいフィールドを追加することで、サイト別の手持在庫と倉庫データ エンティティ別の手持在庫を拡張できます。 このようにして、これらのデータ エンティティを使用するデータ移行中に、拡張フィールドが認識されて含まれるようにします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

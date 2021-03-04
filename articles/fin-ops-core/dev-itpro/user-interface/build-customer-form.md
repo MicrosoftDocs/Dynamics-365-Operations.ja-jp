@@ -303,3 +303,6 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

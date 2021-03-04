@@ -51,3 +51,6 @@ ms.locfileid: "4686333"
 
 6. 新しい環境で、OpenID メタデータ エンドポイント (`https://<adfs-dns-name>/adfs/.well-known/openid-configuration`) に **AOS** ノードおよび **MR** ノードからアクセスできることを確認します。 自己署名付き証明書を使用している場合は、AD FS Secure Sockets Layer (SSL) 証明書を各ノードの信頼済みルート証明機関ストアにインポートする必要があります。
 7. Microsoft Dynamics Lifecycle Services (LCS) から新しい環境を配置し、配置構成を指定する場合は、以前の環境に対して指定したのと同じ AD FS OpenID メタデータ エンドポイントと AD FS OpenID 接続クライアント ID を使用していることを確認してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

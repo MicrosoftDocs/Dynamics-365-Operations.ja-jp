@@ -198,3 +198,6 @@ BOM には、2 つのコンフィギュレーション グループに分割さ�
 
 [コンフィギュレーション済製品バリアントにおける製品番号の分類の作成](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

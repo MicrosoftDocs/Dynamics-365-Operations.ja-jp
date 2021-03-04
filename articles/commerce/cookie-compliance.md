@@ -73,3 +73,6 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 [Cookie の同意モジュール](cookie-consent-module.md) 
  
 [ヘッダー モジュール](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

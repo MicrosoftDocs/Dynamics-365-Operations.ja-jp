@@ -92,3 +92,6 @@ Dataverse では、**accountnumber** はアカウント テーブルのキーと
 ## <a name="next-steps"></a>次のステップ
 
 [テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ X++ では、すべての保護されたパブリック メソッドが拡張ポ
 + [クリーンなコード: アジャイル ソフトウェア作成者が守るべき事柄のハンドブック](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [DRY 原則](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

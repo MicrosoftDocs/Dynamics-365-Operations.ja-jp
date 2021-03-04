@@ -66,3 +66,6 @@ ms.locfileid: "4409241"
 
 > [!NOTE]
 > コントロールで **AutoDeclaration** プロパティを変更することはできません。 ただし、コードから名前でコントロールにアクセスすることはできます。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

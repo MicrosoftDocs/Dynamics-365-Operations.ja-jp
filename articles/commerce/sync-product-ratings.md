@@ -135,3 +135,6 @@ POS で製品の評価を有効にするには、次の手順に従います。
 [評価とレビューの管理](manage-reviews.md)
 
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

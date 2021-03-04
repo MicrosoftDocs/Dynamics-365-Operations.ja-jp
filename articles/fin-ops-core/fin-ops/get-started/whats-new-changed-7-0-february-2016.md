@@ -1033,3 +1033,6 @@ Lifecycle Services (LCS) は、サインアップから日常業務までのシ�
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

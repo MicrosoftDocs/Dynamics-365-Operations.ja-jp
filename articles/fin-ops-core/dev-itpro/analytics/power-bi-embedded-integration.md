@@ -75,3 +75,6 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
  
 ### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか?
 いいえ、現在 Dynamics 365 Finance + Operations (オンプレミス) の分析ワークスペースおよびレポートにアクセスできません。 インテリジェンス機能のシステムは、クラウドにホストされているソリューションに依存します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

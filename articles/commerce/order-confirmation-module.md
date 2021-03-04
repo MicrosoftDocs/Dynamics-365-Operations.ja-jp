@@ -87,3 +87,6 @@ ms.locfileid: "4413916"
 [集荷情報モジュール](pickup-info-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -165,3 +165,6 @@ class SomeApi
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

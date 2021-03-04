@@ -105,3 +105,6 @@ ms.locfileid: "4445300"
 
 ## <a name="delete-journal-lines"></a>仕訳帳明細行の削除
 すべての仕訳帳明細行をすぐに削除する機能は、仕訳帳の **機能** > **仕訳帳明細行の削除** を使用します。 この機能を有効にするには、**機能管理** で **仕訳帳パフォーマンスの最適化の削除** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

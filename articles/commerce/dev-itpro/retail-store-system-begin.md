@@ -57,3 +57,6 @@ Commerce Scale Unit (自己ホスト) のセットアップを開始する前に
 
 [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

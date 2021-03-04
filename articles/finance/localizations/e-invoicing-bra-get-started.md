@@ -309,3 +309,6 @@ BR-00053 (NF-e 連邦) 機能を有効にすると、組織の税務登録 ID �
 - [電子請求書アドオン機能の概要](e-invoicing-service-overview.md)
 - [電子請求書のアドオンの使用を開始する](e-invoicing-get-started.md)
 - [電子請求のアドオン設定](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

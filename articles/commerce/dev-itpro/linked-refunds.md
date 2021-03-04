@@ -98,3 +98,6 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 - [支払に関するよく寄せられる質問](payments-retail.md)
 - [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

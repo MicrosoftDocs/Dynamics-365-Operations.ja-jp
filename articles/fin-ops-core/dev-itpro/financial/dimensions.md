@@ -139,3 +139,6 @@ ms.locfileid: "5127634"
 5.  **persistEntity** メソッドをオーバーライドし、次の X++ コードを入力します。 
 
     [![persistEntity メソッドを上書きします](./media/dim16.png)](./media/dim16.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

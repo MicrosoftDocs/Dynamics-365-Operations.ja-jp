@@ -51,3 +51,6 @@ Finance and Operations アプリは、埋め込み PDF ビューアーでのド�
 - **レポート PDF ビューアーでのネットワーク印刷を有効にする**
 
 これらの機能を選択し、**今すぐ有効にする** を選択して、新しいユーザー オプションを利用します。 詳細については [機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

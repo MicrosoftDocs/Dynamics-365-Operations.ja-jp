@@ -149,3 +149,6 @@ ms.locfileid: "5127195"
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [Finance and Operations 配置用コマース支払パッケージの作成](payment-connector-package.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | 3        | 発送先開始郵便番号 | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 4        | 発送先終了郵便番号   | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 5        | 発送先国           | 割り当て | 文字列    | 国/地域 |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

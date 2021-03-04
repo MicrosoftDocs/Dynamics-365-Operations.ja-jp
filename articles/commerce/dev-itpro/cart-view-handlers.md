@@ -151,3 +151,6 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 | CustomDeliveryGridColumnBase | 公開タイトル(): 文字列 { } | カスタム列のタイトルを設定します。 |
 |                              | 公開 computeValue(cartLine: ProxyEntities.CartLine): 文字列 { } | カスタム列の値を計算します。 |
 |                              | 公開配置(): CustomGridColumnAlignment { }<p>**サポートされている値:** 列挙 CustomGridColumnAlignment { 左 = 0, 右 = 1 }</p> | カスタム列の左側または右側の配置を設定します。 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

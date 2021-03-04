@@ -86,3 +86,6 @@ Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提�
 [小売チャネルの設定](channel-setup-retail.md)
     
 [オンライン チャネルの設定](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -204,3 +204,6 @@ WPF RichTxt コントロールには、文字列の最初の文字に従って�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

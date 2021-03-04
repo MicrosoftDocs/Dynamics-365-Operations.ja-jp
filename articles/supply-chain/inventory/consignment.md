@@ -103,3 +103,6 @@ USMF は追加の定期的なプロセスを実行します:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

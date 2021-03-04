@@ -63,3 +63,6 @@ ms.locfileid: "4681058"
  
  ## <a name="additional-resources"></a>追加リソース
  [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

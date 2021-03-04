@@ -112,3 +112,6 @@ var string mylabel = $dyn.label(self.SecondsLabel);
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

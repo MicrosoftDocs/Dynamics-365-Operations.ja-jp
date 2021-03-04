@@ -60,3 +60,6 @@ Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサ�
 LCS チームは、 [Lifecycle Services エンジニアリング ブログ](https://cloudblogs.microsoft.com/dynamics365/?s=lcs) にも記事を執筆しています。 投稿やお知らせの最新情報を入手するため、RSS フィードを購読します。
 
 [Lifecycle Servicesにアクセスする](https://lcs.dynamics.com/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

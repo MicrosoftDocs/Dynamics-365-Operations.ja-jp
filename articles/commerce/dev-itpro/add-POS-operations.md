@@ -443,3 +443,6 @@ ms.locfileid: "4680394"
 
 1. F5 キーを押し、POS を展開してカスタマイズをテストします。
 2. トランザクション画面で、新しい **EOD** 操作ボタンを選択し、手順を実行します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

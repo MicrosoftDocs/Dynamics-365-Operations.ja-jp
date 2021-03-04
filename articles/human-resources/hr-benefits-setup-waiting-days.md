@@ -42,3 +42,6 @@ Microsoft Dynamics 365 Human Resources では、待機日は、給付金プラ�
    | **日付** | システムが待機期間の日付を設定する毎月の日。 |
    
 4. **保存** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

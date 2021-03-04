@@ -178,3 +178,6 @@ Finance and Operations アプリはコンテキスト メニューを提供し�
 - *aria-valuemax* - 範囲ウィジェットの最大許容値を定義します。
 
 - *aria-valuemin* - 範囲ウィジェットの最小許容値を定義します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

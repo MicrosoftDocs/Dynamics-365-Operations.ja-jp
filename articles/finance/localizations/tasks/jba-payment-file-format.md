@@ -55,3 +55,6 @@ ms.locfileid: "4408171"
 6. 一覧で、JBA [支払ファイル (JP)] を選択します。
 7. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Print c.method1(33);
 
 > [!NOTE]
 > この問題は、ビルド コンピューター (参加リストがあり、コードをコンパイルする VM) として使用される仮想マシンで発生することがあります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

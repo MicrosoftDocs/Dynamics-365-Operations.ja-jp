@@ -113,3 +113,5 @@ ms.locfileid: "4461702"
 ## <a name="see-also"></a>参照
 
 [Dynamics 365 Talent: Attract および Dynamics 365 Talent: Onboard アプリの廃止](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

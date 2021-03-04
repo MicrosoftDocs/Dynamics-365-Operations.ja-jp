@@ -46,3 +46,6 @@ Dynamics 365 Human Resources 将来のライフ サイクルをスケジュー�
    | ライン | 将来のライフ イベントの行番号。 |
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

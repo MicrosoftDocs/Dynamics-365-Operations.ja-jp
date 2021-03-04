@@ -88,3 +88,6 @@ Power BI の優れた機能の 1 つは、レポート ページのすべての�
 ## <a name="export-to-excel"></a>Excel にエクスポート
 
 レポート データを Excel で表示するには、ビジュアル上のオプション メニュー (3 つのドット) をクリックし、**基になるデータのエクスポート** を選択します。 エクスポートされたデータは、Attract ユーザーのアクセス許可に従い、フィルタリングされ、エクスポートされます。 詳細については[視覚エフェクトからのデータのエクスポート](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

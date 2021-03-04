@@ -58,3 +58,6 @@ ms.locfileid: "4969655"
 > これらの追加の品目が表示される理由に関する背景を提供するため、**再配賦 ID** や **販売注文** などの他の列をグリッドに追加できます。
 > 
 > [![収益価格の配賦ページの追加列](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

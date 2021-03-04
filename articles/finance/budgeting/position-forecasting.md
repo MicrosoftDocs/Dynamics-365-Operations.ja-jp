@@ -218,3 +218,6 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

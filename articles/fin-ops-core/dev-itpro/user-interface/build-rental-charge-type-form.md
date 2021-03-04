@@ -136,3 +136,6 @@ Visual Studio を使用して、**FmtChargeType** フォームをビルドして
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ ms.locfileid: "4409596"
 |`code:"insert" type:table,form`    | 「挿入」を含むフォームまたはテーブルのいずれかのソース コード内で、すべての場所を検索します。   |
 |`code:"public display" type:form,method`  | 「公開表示」のコードを含む、すべてのフォーム メソッドを検索します。 |
 |`type:formbuttoncontrol property:text=` | **空** テキスト プロパティを持つ、すべてのフォームのボタン コントロールを検索します。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

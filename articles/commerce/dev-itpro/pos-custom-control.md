@@ -195,3 +195,6 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
     ![製品の詳細ビューに表示された製品の可用性情報](media/pos-custom-control-2.png)
 
 このサンプルの完全なコードは RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails からコピーすることができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

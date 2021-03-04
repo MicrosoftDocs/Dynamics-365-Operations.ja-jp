@@ -453,3 +453,6 @@ currentCart = getCurrentCartClientResponse.data.result;
 | BankDropOperationRequest                 |  銀行入金要求。   |        10.0.14        |
 | DeclareStartAmountOperationRequest        |   開始金額申告要求。       |          10.0.14        |
 | GetAllDiscountsServiceRequest        | 現在の買い物カゴに適用できる割引を取得します。  | 10.0.16 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

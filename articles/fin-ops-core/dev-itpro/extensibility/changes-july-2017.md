@@ -904,3 +904,6 @@ ms.locfileid: "4409269"
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません          |
 |            WhsRFControlData.processControl は switch ブロック内の _data ではなく WhsControl.data を参照する必要があります             |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

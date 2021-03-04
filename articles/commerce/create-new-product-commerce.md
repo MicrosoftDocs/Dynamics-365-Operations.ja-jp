@@ -115,3 +115,6 @@ ms.locfileid: "4413711"
 [法人の作成](channels-legal-entities.md)
 
 [バリアント グループの作成](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

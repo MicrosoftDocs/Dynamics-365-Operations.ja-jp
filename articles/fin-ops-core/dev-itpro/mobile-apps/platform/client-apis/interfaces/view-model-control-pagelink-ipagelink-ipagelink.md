@@ -229,3 +229,6 @@ showCount(): boolean
 
 #### <a name="returns-boolean"></a>ブール値を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

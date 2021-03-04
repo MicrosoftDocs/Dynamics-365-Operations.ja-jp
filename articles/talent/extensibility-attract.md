@@ -91,3 +91,6 @@ Web コンテンツ (iframe) 活動を使用して、採用プロセスまたは
 
 > [!NOTE]
 > Web コンテンツ活動は、包括採用アドオンでのみ使用できます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Adyen コネクタにはチップ サポートが含まれています。 承認
 
 - [Adyen コネクタの概要](adyen-connector.md?tabs=10-0-14.md)
 - [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

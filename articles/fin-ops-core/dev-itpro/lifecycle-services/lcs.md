@@ -56,3 +56,6 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

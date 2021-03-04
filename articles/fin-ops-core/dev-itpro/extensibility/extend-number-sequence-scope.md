@@ -51,3 +51,6 @@ ms.locfileid: "4409350"
 8. **NumberSequenceTableEntity** および **NumberSequencesReferenceEntity** データ エンティティの拡張クラスを追加します。 新しいスコープ タイプの **NumberSequenceScope** を生成するために、**GenerateNumberSequenceScopeTypes** メソッドと **GenerateNumberSequenceScopeValues** メソッドのポスト ハンドラーを作成します。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

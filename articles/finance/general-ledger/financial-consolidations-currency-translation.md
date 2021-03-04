@@ -182,3 +182,6 @@ ms.locfileid: "4445304"
 
 ## <a name="generating-consolidated-financial-statements"></a>連結された財務諸表の生成
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ ms.locfileid: "4693849"
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>ガイダンスは、開発者および顧客がカスタマイズでアクセス可能な考えを反映できるようにします。
 
 有効なユーザー補助機能の Microsoft ベスト プラクティスについての詳細は、[フォーム、製品、およびコントロールのユーザー補助機能](../../dev-itpro/user-interface/enable-accessibility.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

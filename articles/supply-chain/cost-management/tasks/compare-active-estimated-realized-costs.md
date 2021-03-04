@@ -40,3 +40,6 @@ ms.locfileid: "4432040"
 6. [原価の比較の表示] をクリックします。
 7. [閉じる] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

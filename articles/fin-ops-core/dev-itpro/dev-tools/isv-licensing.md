@@ -283,3 +283,6 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     ```PowerShell
     certutil -addstore root C:\Temp\IsvCert.cer
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Microsoft Dynamics 365 Supply Chain Management に組み込まれる計画の最
 - 自動確定は要求期日 (終了日) に基づきます。
 - 注文が期限内に確定されるようにするには、確定タイム フェンスはリード タイムよりも長くする必要があります。
 - 現在の週に開始する必要があるすべての注文を確定する場合、確定タイム フェンスはリードタイム + 1 週間にする必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

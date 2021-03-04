@@ -145,3 +145,6 @@ ms.locfileid: "4432386"
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>発注書をキャンセルしたユーザーを見つけることができますか ?
 
 この情報は、発注書が変更管理の対象となる場合にのみ追跡されます。 変更管理を使用すると、変更 (キャンセル) を送信したユーザーと、変更を承認したユーザーを確認できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

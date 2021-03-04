@@ -130,3 +130,6 @@ Excel ファイルを保存して閉じます。 **レイアウト** で、**テ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

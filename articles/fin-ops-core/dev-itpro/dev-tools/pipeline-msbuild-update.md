@@ -60,3 +60,6 @@ ms.locfileid: "4680528"
 | テストの実行 | プラットフォーム バージョンのテスト | Visual Studio2015 | Visual Studio2017 |
 | テストの実行 | その他のコンソール オプション | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

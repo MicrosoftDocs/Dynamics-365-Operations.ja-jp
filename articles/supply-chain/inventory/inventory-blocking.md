@@ -70,3 +70,6 @@ ms.locfileid: "4432033"
 [品質管理プロセス](quality-management-processes.md)
 
 [商品の品質の調査](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

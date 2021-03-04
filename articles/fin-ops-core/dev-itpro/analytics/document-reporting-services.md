@@ -101,3 +101,6 @@ Visual Studio では、レポート ソリューションを完全に作成お�
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

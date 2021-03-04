@@ -90,3 +90,6 @@ Commerce 本社でトランザクションの編集と監査を行うには、�
 [小売トランザクションを編集するために Excel ブックを作成する](create-excel-edit.md)
 
 [小売トランザクションを編集するために Excel ブックにフィールドを追加する](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

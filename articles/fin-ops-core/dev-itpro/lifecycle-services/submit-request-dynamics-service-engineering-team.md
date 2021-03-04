@@ -128,3 +128,6 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 |                                | 運用 | IP セーフ リストの規則 | 5 時間 | 2 時間 |
 |                                | 運用 | Power BI Embedded | 5 時間 | 2 時間 |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

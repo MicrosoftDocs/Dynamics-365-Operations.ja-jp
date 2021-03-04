@@ -112,3 +112,6 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -198,3 +198,6 @@ ms.locfileid: "4409344"
 - **小売チャンネル:** 出荷ビュー拡張コントローラクラス。
 - **小売チャンネル:** AddressAddEditView の [App Bar] ボタンの実装。
 - **小売チャンネル:** ダイアログボックスで銀行預金額キーの無効化に対応。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

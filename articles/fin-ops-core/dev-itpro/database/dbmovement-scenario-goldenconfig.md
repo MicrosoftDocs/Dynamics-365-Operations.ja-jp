@@ -219,3 +219,6 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) には、コミュニティによって作成された多くの貴重なツールがあります。
 * [GitHub でコミュニティによって提供されたオープン ソース プロジェクト](https://github.com/search?q=dynamics+365+finance+operations&s=stars)。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -158,3 +158,6 @@ public final class abClassTable_Extension
 ```
 
 フォームまたはフォーム拡張は、DataMethod プロパティで **\<ClassName\>.\<MethodName\>** を指定することによって、フォーム コントロールから表示および編集メソッドを 消費することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

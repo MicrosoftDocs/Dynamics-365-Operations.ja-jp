@@ -282,3 +282,6 @@ DP.exe インポート Import_March2013 AXTestDB
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

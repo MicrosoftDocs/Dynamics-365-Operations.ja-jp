@@ -58,3 +58,6 @@ ms.locfileid: "4685687"
 32,768 文字を超える文字列をインポートする必要がある場合は、コンテナー エンティティ フィールドを使用することをお勧めします。
 
 詳細については、FastTrack 技術解説のビデオ: [Dynamics 365 for Operations – 技術解説: 統合](https://www.youtube.com/watch?v=fooBvQhIo6I)をご覧ください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

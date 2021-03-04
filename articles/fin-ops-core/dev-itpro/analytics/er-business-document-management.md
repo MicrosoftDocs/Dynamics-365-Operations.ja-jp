@@ -423,3 +423,6 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 [Power BI にデータをプルするよう電子申告 (ER) を構成する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

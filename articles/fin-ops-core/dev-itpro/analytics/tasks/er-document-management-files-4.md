@@ -69,3 +69,6 @@ ms.locfileid: "4681784"
 11. [OK] をクリックします。
     * 生成された出荷を確認します。 各添付ファイルに対して単一のXMLノードが作成されたことに注意してください。 添付ファイルのコンテンツは、MIME (base64) テキスト形式で XML 出力に取り込まれます。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

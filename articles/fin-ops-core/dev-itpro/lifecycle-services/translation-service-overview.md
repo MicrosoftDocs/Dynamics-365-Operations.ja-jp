@@ -103,3 +103,6 @@ DTS には 2 つのプレビュー機能があります。
 
 DTSの使用方法の詳細については、[ユーザー インタ フェース ファイルの翻訳](use-translation-service.md)と[ドキュメント ファイルの翻訳](use-translation-service-ua.md)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ ms.locfileid: "4432067"
 8. **保存** を選択します。
 
 ![作業指示書タイプ](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

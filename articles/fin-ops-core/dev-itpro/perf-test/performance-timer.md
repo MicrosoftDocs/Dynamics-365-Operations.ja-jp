@@ -49,3 +49,6 @@ ms.locfileid: "4680448"
 [![呼び出しによってトリガーされた SQL クエリのリストの例](./media/3_timer.png)](./media/3_timer.png) 
 
 この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

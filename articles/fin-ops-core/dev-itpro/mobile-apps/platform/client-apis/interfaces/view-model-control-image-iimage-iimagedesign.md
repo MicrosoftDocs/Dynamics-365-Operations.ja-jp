@@ -225,3 +225,6 @@ width: string (省略可)
 サイズは CSS 空白サイズとほぼ同じです。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

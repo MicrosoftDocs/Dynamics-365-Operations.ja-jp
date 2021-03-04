@@ -80,3 +80,6 @@ Dynamics 365 for Operations フォーラムに移動するには **アイデア*
 - **個人用フィードバック** 機能を使用すると、提出された提案、提案のステータス、受け取った合計投票数の詳細なビューを表示できます。
 
 [![ideas-options](./media/ideas-options.png)](./media/ideas-options.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

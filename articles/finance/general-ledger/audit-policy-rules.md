@@ -101,3 +101,6 @@ ms.locfileid: "4445146"
 [元伝票の監査ポリシーの定義](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

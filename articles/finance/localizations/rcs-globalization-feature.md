@@ -252,3 +252,6 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 10. **公開** を選択して、環境を公開します。
 
     ![公開された環境](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

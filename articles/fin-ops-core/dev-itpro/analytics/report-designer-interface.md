@@ -227,3 +227,6 @@ ms.locfileid: "4687469"
 [財務諸表](financial-reporting-intro.md)
 
 [財務諸表の生成](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

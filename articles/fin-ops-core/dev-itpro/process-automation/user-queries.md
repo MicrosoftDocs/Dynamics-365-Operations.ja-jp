@@ -54,3 +54,6 @@ ms.locfileid: "4679216"
 | メソッド | 説明 |
 |---|---|
 | `public static void applyCriteriaForOccurrenceExecution(Query _queryToApplyCriteria, RefRecId _scheduleOccurrenceRecId)` | |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

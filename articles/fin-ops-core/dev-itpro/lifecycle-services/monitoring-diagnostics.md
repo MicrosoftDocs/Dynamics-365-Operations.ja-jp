@@ -152,3 +152,6 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 監視および診断ポータルには、パフォーマンスの分析を有効にする高度な SQL トラブルシューティングのツールも含まれます。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと似ています。 詳細については、[Lifecycle Services (LCS) でツールを使用したパフォーマンスのトラブルシューティング](performancetroubleshooting.md)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

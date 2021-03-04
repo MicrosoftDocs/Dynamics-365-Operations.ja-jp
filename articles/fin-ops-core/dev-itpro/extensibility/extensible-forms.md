@@ -40,3 +40,6 @@ ms.locfileid: "4409193"
 
 ## <a name="form-controls"></a>フォーム コントロール
 コントロールが移動により拡張不可になった場合、フォーム コントロールでの移動により中断が発生する可能性があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

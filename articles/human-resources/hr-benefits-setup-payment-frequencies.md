@@ -56,3 +56,6 @@ Microsoft Dynamics 365 Human Resources は、支払頻度を使用して年間�
    | **時間ごとの変換係数** | 支払頻度の年間変換率。 たとえば、月次支払頻度の年間の変換率は次のようになります: </br></br>(12 か月の支払 / 2080 時間) = 0.005769
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

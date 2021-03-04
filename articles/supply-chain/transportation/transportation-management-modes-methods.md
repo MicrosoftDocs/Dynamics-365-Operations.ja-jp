@@ -47,3 +47,6 @@ ms.locfileid: "4432428"
 1. **新規** を選択して新しい配送方法を作成します。
 1. 配送方法のための固有 ID および説明のついた名前を入力します。
 1. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

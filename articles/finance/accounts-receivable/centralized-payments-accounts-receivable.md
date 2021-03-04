@@ -296,3 +296,6 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 売掛金 (Fabrikam West)    |              | 75.00         |
 | Fabrikam East からの借り (Fabrikam West) | 25.00        |               |
 | 売掛金 (Fabrikam West)    |              | 25.00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

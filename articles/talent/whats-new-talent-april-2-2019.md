@@ -80,3 +80,6 @@ Common Data Service へのアップグレードの期限に近づいています
 
 ###  <a name="email-support-for-alerts"></a>アラートの電子メールサポート
 Finance and Operations の Platform update 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 - [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans)
 - [Dynamics 365 Talent での新機能と変更](https://docs.microsoft.com/dynamics365/talent/whats-new)
 - [ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

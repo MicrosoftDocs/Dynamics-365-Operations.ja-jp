@@ -533,3 +533,6 @@ POS シミュレーターは、Windows プリンターをテストするため�
 ## <a name="additional-resources"></a>追加リソース
 
 [周辺機器](../retail-peripherals-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ ms.locfileid: "4685736"
 - 原価管理
 - [財務パフォーマンス](financial-performance-power-bi-content-pack.md)
 - [小売チャネルの実績](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

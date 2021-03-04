@@ -136,3 +136,6 @@ ms.locfileid: "4517091"
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

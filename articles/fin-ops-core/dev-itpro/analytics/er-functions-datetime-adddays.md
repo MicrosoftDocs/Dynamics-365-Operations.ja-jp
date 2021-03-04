@@ -67,3 +67,6 @@ ADDDAYS (datetime, days)
 ## <a name="additional-resources"></a>追加リソース
 
 [日時の関数](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

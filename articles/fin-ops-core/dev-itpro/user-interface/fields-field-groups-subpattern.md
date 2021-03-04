@@ -107,3 +107,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 **InventLocation**[![フォーム例](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

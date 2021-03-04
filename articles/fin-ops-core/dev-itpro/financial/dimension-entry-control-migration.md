@@ -139,3 +139,6 @@ ms.locfileid: "5130783"
 
 - [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 - [ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

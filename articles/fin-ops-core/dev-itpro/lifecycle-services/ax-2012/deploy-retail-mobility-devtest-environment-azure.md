@@ -228,3 +228,6 @@ Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -166,3 +166,6 @@ GER は、ユーザーが電子フォーマット構造を定義できるよう�
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

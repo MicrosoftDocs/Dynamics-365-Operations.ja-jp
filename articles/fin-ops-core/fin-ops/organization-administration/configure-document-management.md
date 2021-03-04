@@ -283,3 +283,6 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 ### <a name="how-does-the-document-preview-work-for-attachments-stored-in-sharepoint"></a>SharePoint に保存された添付ファイルにおけるドキュメント プレビューのしくみ。
 
 ファイルは、WOPI サービスによって現在のユーザーのアクセス許可を使用して SharePoint から取得されます。 これらのファイルは、ドキュメント プレビューを表示するために HTML で表示されます。 つまり、現在のユーザーは、ファイルをプレビューしたり開いたりするためにファイルにアクセスできる必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

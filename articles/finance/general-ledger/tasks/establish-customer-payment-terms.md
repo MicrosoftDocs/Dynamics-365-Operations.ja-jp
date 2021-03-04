@@ -57,3 +57,6 @@ ms.locfileid: "4445092"
 26. **仕入先割引の主勘定** フィールドで、仕入先請求書に対する現金割引の転記先となる主勘定を入力します。
 27. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

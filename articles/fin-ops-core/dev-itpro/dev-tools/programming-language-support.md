@@ -114,3 +114,6 @@ X++ は .NET の世界でファーストクラスの住民になりました。 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

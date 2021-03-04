@@ -317,3 +317,6 @@ ms.locfileid: "5128655"
     ![コマンドと結果の追加](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
 23. ノードを再追加した後は、Service Fabric エクスプローラーに戻り、アプリケーションの展開の状態を確認します。 すべての復元された AOS アプリケーション（**AXBootstrapperAppType**、**AXSFType**、**RTGatewayAppType**、**LBDTelemetryType-<envname\>** 、**MonitoringAgentAppType**）がプッシュ アウトされ、ノードにインストールされるには数分を要します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

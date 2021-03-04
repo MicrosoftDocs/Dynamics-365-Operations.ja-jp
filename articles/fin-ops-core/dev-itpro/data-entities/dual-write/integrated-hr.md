@@ -81,3 +81,6 @@ HR データには、従業員と契約社員、職位、職務に関する情�
 [!include [position worker assignment](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
 
 [!include [worker](includes/Worker-cdm-workers.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

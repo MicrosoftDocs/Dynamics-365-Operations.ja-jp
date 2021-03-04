@@ -437,3 +437,6 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
 
 ### <a name="tooling"></a>ツール
 このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

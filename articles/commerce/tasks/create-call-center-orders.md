@@ -62,3 +62,6 @@ ms.locfileid: "4594239"
 
 [POS での荷渡方法の変更](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -226,3 +226,6 @@ Finance and Operations アプリでは、サイズ変更はサイズ プロパ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

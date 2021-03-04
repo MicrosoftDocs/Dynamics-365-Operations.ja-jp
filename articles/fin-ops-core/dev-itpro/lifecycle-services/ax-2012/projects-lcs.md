@@ -45,3 +45,6 @@ LCS を開くと、最新のプロジェクトに関する表示が得られま�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

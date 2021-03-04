@@ -57,3 +57,6 @@ DRA を Microsoft Windows サービスとして引き続き実行するには、
 
 > [!NOTE]
 > アップグレード後に DRA クライアントを開いて、ネットワーク ユーザーの資格情報を更新してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

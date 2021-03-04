@@ -45,3 +45,6 @@ ms.locfileid: "4692871"
 15. [連絡先情報] セクションを展開または折りたたみます。
 16. [個人情報] セクションを展開または折りたたみます。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

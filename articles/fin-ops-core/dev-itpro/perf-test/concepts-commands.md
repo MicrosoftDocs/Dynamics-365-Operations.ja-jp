@@ -86,3 +86,6 @@ onHandAdjustment.forItem(item).setQuantity(10).execute();
     
 picking.forSalesLine(salesLine).setInventDims([warehouse, batch1]).setQuantity(10).execute();
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

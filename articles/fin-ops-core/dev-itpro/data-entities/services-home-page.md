@@ -141,3 +141,6 @@ REST メタデータ サービスは、読み取り専用サービスです。 �
 - **データ エンティティ** - システム内のすべてのデータ エンティティの JSON 形式の一覧を返します。
 
     **例:** `https://[baseURI\]/Metadata/DataEntities`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

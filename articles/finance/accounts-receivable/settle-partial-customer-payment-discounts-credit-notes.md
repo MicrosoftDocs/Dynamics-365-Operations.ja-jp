@@ -61,3 +61,6 @@ Fabrikam は、一部支払または貸方票 (クレジット メモ)で顧客�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

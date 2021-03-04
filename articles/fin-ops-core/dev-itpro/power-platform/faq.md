@@ -116,3 +116,6 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 エンティティの簡易検索ビューにフィールドが追加されていない場合、検索ボックスは使用できません。 回避策として、エンティティのフィールドを 1 つ以上、簡易検索ビューに追加することができます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ ms.locfileid: "4432372"
 6. **ウェーブ ステップ コード** で、補充テンプレートで選択したウェーブ ステップ コードを選択します。
 
 これらの手順を各法人に対して実行します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

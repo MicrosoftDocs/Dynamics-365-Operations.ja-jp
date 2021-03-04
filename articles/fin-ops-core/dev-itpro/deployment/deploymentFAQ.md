@@ -128,3 +128,6 @@ AOS への受信 IP アドレスが動的になります。 これにより、�
 ## <a name="is-there-a-potential-impact-on-the-environments-certificates"></a>環境の証明書に影響が及ぶ可能性がありますか?
 
 はい、以前の非セルフサービス配置から移行する場合、インフラストラクチャの違いによって環境の証明書が更新される場合があります。 ソリューション/統合の証明書に依存しているかどうかを判断し、移行後に必要なアクションを実行します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

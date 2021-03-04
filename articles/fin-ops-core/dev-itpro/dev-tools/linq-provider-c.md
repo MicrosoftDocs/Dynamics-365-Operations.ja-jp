@@ -186,3 +186,6 @@ LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レ
 [X++ と X++ コンパイラの変更](programming-language-support.md)
 
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

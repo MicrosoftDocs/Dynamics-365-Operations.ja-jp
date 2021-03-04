@@ -46,3 +46,6 @@ ms.locfileid: "4419296"
 15. [福利厚生] をクリックします。
 16. 一覧で、福利厚生を検索し、レコードを選択します。 新しい適用終了日に注意します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

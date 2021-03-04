@@ -151,3 +151,6 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

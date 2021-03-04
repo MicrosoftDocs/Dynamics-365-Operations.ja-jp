@@ -178,3 +178,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 **HcmWorkerLookup (プレビューによるルックアップ)** 
 
 ![プレビューによるルックアップ フォームの例](./media/lookupform9.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

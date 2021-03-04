@@ -90,3 +90,6 @@ ms.locfileid: "4684406"
  30. [無効な銀行口座での事前通知の作成を許容] フィールドで [はい] を選択します。  
  31. [保存] をクリックします。  
  32. ページを閉じます。  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

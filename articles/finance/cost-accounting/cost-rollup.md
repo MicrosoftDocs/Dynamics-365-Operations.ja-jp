@@ -301,3 +301,6 @@ HR サービスは、次の大きさの配分によって消費されます。
 -  [原価要素分析コード](cost-elements.md)
 -  [分析コード階層](dimension-hierarchy.md)
 -  [間接費の計算](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

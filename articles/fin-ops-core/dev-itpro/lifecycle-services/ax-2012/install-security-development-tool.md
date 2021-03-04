@@ -74,3 +74,6 @@ ms.locfileid: "4688209"
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT アドイン)       |
     | SysSecRoleEntryPoint          | システム管理設定セキュリティ |
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

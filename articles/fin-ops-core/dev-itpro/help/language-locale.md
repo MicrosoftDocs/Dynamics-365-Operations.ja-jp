@@ -93,3 +93,6 @@ Microsoft teams は、英語 (米国) でコンテンツを作成します。 �
 
 [カスタム ヘルプの概要](custom-help-overview.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -207,3 +207,6 @@ Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に�
 | 法人                                          | 法人名                              |
 | 会計カレンダー                                        | 会計カレンダー、年、四半期、期間、月   |
 | サイト                                                    | ID、名前、住所、都道府県、国               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

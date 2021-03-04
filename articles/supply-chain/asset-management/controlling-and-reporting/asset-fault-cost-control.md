@@ -62,3 +62,6 @@ ms.locfileid: "4431862"
     ![図 1](media/05-controlling-and-reporting.png)
 
 エラーの設定方法に関しては、[エラー管理](../setup-for-work-orders/fault-management.md) トピックを参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ April は支払仕訳帳を転記します。 940.00 ドルの支払と 60.00 �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

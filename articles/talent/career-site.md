@@ -142,3 +142,6 @@ LinkedIn を通じて適用を許可するよう Attract を構成すること�
 ## <a name="internal-jobs"></a>内部のジョブ求人
 
 現時点では、内部求人としてマークされ Attract キャリア サイトに募集されているジョブは、キャリア サイトに表示されません。 Attract アプリケーションからコピーできる直接 **応募** URL を使用してのみアクセスできます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

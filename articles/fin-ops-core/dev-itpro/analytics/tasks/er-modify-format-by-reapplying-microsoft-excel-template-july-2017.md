@@ -83,3 +83,6 @@ ms.locfileid: "4684238"
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>支払仕訳処理に ER 形式の変更されたドラフト バージョンを使用する
 
 支払日という支払い明細行の新しい詳細を含む、作成したワークシートを確認します。  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

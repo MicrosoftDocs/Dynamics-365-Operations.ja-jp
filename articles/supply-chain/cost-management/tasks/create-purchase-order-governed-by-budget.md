@@ -62,3 +62,6 @@ ms.locfileid: "4432039"
 4. [予算確認のエラーまたは警告] をクリックします。
 5. [閉じる] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

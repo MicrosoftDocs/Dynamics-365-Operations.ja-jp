@@ -309,3 +309,6 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [法人ごとの ER 形式のパラメーターの設定](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

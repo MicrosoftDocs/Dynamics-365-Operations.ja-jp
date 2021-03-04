@@ -67,3 +67,6 @@ ms.locfileid: "4687826"
 フィールドはリンクとして表示されるようになりました。
 
 ![変更後の顧客詳細ページ](media/workspace-api/FieldAsURLFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

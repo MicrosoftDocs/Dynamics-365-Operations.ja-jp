@@ -43,3 +43,6 @@ ms.locfileid: "4431828"
 10. **循環棚卸** フィールドで **はい** を選択します。
 11. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

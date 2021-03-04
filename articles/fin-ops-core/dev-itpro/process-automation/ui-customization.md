@@ -200,3 +200,6 @@ public final class ProcessExecutionSampleUptakeExecutionResultsController implem
 | メソッド | 説明 |
 |---|---|
 | `public static ProcessExecutionMessageLogContract newForSourceRecord(ProcessScheduleTypeName _typeName, RefTableId _refTableId, RefRecId _refRecId, guid _executionId = emptyGuid())` | このメソッドは、指定された型名、**RefTableld** 値、および **RefRecld** 値を使用して契約を初期化します。 **ProcessExecutionSourceLink** テーブルには一致するレコ―ドが存在している必要があります。 バックグラウンド プロセスには、複数の実行 ID が割り当てられます。 したがって、実行 ID の省略可能なパラメーターをバックグラウンド処理用に提供する必要があります。 詳細については、[タイプ登録](type-registration.md) を参照してください。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

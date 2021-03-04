@@ -161,3 +161,6 @@ SDK アップグレード プロセスは、バージョンによって異なり
 
 ## <a name="generate-a-deployable-package-for-validation"></a>検証用の配置可能パッケージを生成する
 トピック [配置可能なパッケージの作成](retail-sdk/retail-sdk-packaging.md) の手順を完了し、検証用の配置可能パッケージを生成します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

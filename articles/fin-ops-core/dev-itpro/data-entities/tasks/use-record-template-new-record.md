@@ -35,3 +35,6 @@ ms.locfileid: "4685172"
 3. 一覧で、目的のレコードを見つけ、選択します。
 4. **OK** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

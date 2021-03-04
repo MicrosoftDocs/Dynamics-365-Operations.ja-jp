@@ -53,3 +53,6 @@ ms.locfileid: "5128865"
 6.  保存された構成をインポートするには、**続行** をクリックします。 コンフィギュレーションが作成された後、その内容を確認することができます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

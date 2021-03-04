@@ -99,3 +99,6 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 には�
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

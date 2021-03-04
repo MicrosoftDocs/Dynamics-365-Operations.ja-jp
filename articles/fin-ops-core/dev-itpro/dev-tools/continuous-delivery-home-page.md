@@ -57,3 +57,6 @@ ms.locfileid: "4409148"
 - [開発環境でのメタデータ修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md)
 - [1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用](../migration-upgrade/patch-reporting-service-environment.md)
 - [ Visual Studio の開発ツールを更新する](update-development-tools.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

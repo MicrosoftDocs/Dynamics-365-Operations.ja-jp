@@ -73,3 +73,6 @@ ms.locfileid: "5126757"
 --------
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

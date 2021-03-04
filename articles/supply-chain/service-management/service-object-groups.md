@@ -66,3 +66,6 @@ ms.locfileid: "4431651"
 [サービス対象の作成](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

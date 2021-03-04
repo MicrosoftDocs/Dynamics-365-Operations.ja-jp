@@ -90,3 +90,6 @@ ms.locfileid: "5003405"
 [![転記された勘定項目のある伝票トランザクション ページ](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 収益と販売の合計が 1,170.44 ドルを超えるため、差額の -130.17 ドルが転記されます。 この金額は、請求書収益の一部決済勘定から残高を決済します。 その残高は、再配賦後に新しい勘定項目に転記されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

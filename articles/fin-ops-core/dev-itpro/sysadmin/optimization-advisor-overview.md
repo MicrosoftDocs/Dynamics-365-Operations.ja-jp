@@ -94,3 +94,6 @@ ms.locfileid: "4682540"
 [最適化アドバイザーのルールの作成](./create-rules-optimization-advisor.md)
 
 [Dynamics 365 for Finance and Operations の最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

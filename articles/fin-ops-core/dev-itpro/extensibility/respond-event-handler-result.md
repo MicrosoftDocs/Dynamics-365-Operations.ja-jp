@@ -145,3 +145,6 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
         }
     }
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

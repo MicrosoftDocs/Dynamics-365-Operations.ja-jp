@@ -68,3 +68,6 @@ TabPage | Group *TopFieldGroup (グループ) \[オプション\]* – **注:** 
 ### <a name="open-issues"></a>未処理の問題
 
 なし。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

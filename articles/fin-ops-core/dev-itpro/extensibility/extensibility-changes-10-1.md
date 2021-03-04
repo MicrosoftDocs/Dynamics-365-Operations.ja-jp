@@ -199,3 +199,6 @@ ms.locfileid: "4409345"
 - **小売チャンネル** : OrderFulfillmentViewにてラインアイテムの場所を表示することができます。
 - **小売チャンネル:** OrderFulfillmentView に ICustomListColumn が追加され、詳細情報を参照できるようになります。
 - Retail ステートメントのポスティングメソッドは、RetailTransactionAggregationFieldListテーブルを使用して、別の集計ビューを追加します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

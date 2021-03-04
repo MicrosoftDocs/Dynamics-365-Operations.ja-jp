@@ -50,3 +50,6 @@ ms.locfileid: "4432236"
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>委託販売プロセスでの仕入先コラボレーション
 仕入先コラボレーション インターフェイスを使用している仕入れ先は、サイトで在庫の消費を監視するために、これを使用することもできます。 仕入先コラボレーションを使用する仕入先の設定については、[仕入先ポータルのユーザー セキュリティ](../procurement/configure-security-vendor-portal-users.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

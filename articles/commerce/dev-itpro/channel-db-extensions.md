@@ -281,3 +281,6 @@ GO
 ### <a name="do-write-backward-compatible-channel-database-extensions"></a>後方互換性のあるチャネルデータベースの拡張機能を作成する
 
 チャネルデータベースには後方互換性がある必要があります。 これは、Commerce Scale Unit または POS を更新せずにチャネル データベースだけを更新することにより、既存の Commerce Scale Unit または POS 操作が正常に機能するのを妨げてはならないことを意味します。 配置フロー中は、Commerce Scale Unit と Modern POS のさまざまなコンポーネントが、依存関係なく逆で更新されます。 これは、チャネル データベースが最初に更新されるコンポーネントで、Commerce Scale Unit または POS が次に更新されることを意味します。 Commerce Scale Unit または POS が正常に更新できなかった場合、これらのコンポーネントはロールバックされて、以前の作業状態に戻されます。 このような場合であっても、データの損失を防ぐためにチャネルデータベースはロールバックされません。 ご利用の拡張機能に後方互換性がない場合、正常な展開処理が完了するまでは、これら拡張機能が正しく動作しない可能性があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

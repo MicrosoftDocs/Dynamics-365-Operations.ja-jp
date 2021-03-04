@@ -55,3 +55,6 @@ ms.locfileid: "4684190"
 5. **閉じる** を選択します。 
 6. ER 構成の目的のバージョンを選択、**インポート** を選択し、そのバージョンを現在のインスタンスにインポートします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

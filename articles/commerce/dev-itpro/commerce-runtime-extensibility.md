@@ -832,3 +832,6 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 ```
 
 同様に、製品、顧客、および住所など他のすべてのエンティティから拡張機能プロパティを読み取ることができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

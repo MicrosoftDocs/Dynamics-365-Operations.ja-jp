@@ -53,3 +53,6 @@ ms.locfileid: "5154141"
 
 詳細については、[金税統合エクスポートの設定](./tasks/golden-tax-integration-export-setup.md)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

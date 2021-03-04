@@ -37,3 +37,6 @@ ms.locfileid: "4683975"
 > [!NOTE]
 > [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all)が利用可能になりました。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 > 以下のコンテンツに関する質問またはフィードバックがある場合は、このページの下部にある **コメント** セクションに転記します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Commerce バージョン 10.0.11 以降において、店舗管理者は POS ク
 シフトの財務調整の詳細は、P- ジョブを使用して Commerce 本社に同期されます。
 
 Commerce 本社の財務小売明細書では、合計を計算して明細行の詳細を表示することはできません。 代わりに、POS クライアントの確定額を使用して、財務小売明細書を作成および転記します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

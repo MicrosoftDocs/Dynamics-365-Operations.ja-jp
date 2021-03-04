@@ -68,3 +68,6 @@ E コマース Web サイトのようこそメッセージは、訪問者に実�
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

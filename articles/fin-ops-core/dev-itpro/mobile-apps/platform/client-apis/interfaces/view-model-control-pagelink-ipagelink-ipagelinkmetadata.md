@@ -217,3 +217,6 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 ナビゲーションがトリガーされたときに発生するイベントです。
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

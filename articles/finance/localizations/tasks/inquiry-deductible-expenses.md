@@ -43,3 +43,6 @@ ms.locfileid: "4408174"
 6. [報告日] フィールドに日付を入力します。
     * 日付を変更して、他の会計年度を表示します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

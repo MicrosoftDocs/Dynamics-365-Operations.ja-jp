@@ -48,3 +48,6 @@ ms.locfileid: "4445033"
 10. [支払勘定] フィールドで、値「DEMF OPER」を指定します。
 11. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

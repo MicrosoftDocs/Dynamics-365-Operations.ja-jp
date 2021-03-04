@@ -73,3 +73,6 @@ ms.locfileid: "4687897"
 
 スクリプトの実行は、Event Tracing for Windows (ETW) イベントとしてもログに記録されます。 これらのイベントはイベント ビューアーで表示できます。 スクリプトでエラーが発生すると、エラー イベントがログに記録されますが、配置は通常どおり続行されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

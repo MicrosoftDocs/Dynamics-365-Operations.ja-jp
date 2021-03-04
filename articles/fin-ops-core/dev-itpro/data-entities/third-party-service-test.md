@@ -157,3 +157,6 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
     ![結果の検証](./media/soapui8.png)
 
 ここでは、正常に認証されてから、SOAP を介して UserSessionService を照会しています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

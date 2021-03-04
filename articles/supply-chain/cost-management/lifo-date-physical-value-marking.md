@@ -157,3 +157,6 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

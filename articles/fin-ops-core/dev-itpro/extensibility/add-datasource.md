@@ -51,3 +51,6 @@ ms.locfileid: "4409276"
 1. 次の図に示されるように、これらの新しいフィールドおよびテーブル内でデータを表示して編集できるようになりました。
 
     ![新しいフィールド](media/AddFormDataSource04.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

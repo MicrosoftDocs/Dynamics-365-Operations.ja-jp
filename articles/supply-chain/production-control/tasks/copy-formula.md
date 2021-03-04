@@ -65,3 +65,6 @@ ms.locfileid: "4431690"
 5. [選択] をクリックします。
 6. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

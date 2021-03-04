@@ -128,3 +128,6 @@ ms.locfileid: "4419316"
 > これらの住所変更に関する警告またはメールを受信する場合は、アクション ウィンドウの **オプション** タブで新しいアラート ルールを作成できます。 アラート ルールを作成する方法の詳細については、[アラート ルールを作成](/fin-ops-core/fin-ops/get-started/create-alert-rules.md) を参照してください。<br><br>
 
 > 住所の変更に対してワークフローをコンフィギュレーションする場合は、アラート ルールで **外部送信** オプションを選択し、Power Automate を使用して、ビジネス イベントのトリガーとワークフローのコンフィギュレーションを行うことができます。 詳細については、[ビジネス イベントとしてのアラート](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

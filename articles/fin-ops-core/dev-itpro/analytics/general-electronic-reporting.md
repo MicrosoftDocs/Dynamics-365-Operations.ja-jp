@@ -367,3 +367,6 @@ ER により、現在の派生コンポーネントのドラフト バージョ�
 
 - [電子申告 (ER) コンフィギュレーションを作成する](electronic-reporting-configuration.md)
 - [電子申告 (ER) コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

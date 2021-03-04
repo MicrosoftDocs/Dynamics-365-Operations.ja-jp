@@ -192,3 +192,6 @@ Finance and Operations のクラウド バージョンへのアップグレー�
 
 Dynamics AX 2012 RTM からのアップグレードは現在サポートされていません。 オンプレミス バージョンへのアップグレードは現在サポートされていませんが、サポートは将来追加される予定です。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

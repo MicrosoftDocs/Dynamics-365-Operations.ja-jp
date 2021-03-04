@@ -40,3 +40,5 @@ ms.locfileid: "4529557"
 [Common Data Service エンティティ](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [カスタム フィールドの作成と操作](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [データ エンティティのカスタム フィールドを公開。](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources は、2 つの異なるセッションが
 特定のブラウザー タイプにつき 1 つだけの環境が開いていることを確認します。 ユーザーは、同じ環境 (つまり、同じブラウザの複数のタブ) に対して複数のセッションを開くことができます。
 
 同時に 2 つの環境間を移動するユーザーは、異なるブラウザー タイプで各環境を開く必要があります。 (たとえば、ユーザー A は Chrome で環境 1 を、Microsoft Edge で環境 2 を表示できます。)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

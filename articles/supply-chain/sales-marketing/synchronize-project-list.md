@@ -67,3 +67,6 @@ ms.locfileid: "4431631"
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>プロジェクト (Supply Chain Management から Field Service): プロジェクト
 
 [![データ統合のテンプレートのマッピング](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

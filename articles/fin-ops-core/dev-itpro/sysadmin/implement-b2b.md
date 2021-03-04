@@ -102,3 +102,6 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 7. 設定を **保存します**。
 
 これで、ワークフローで **Azure AD B2B ユーザーのプロビジョニング** ワークフロー タスクの使用を開始して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

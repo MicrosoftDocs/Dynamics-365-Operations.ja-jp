@@ -273,3 +273,6 @@ Field Service および Supply Chain Management の統合をサポートする�
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または (msdynce_headersystemstatus eq 690970004) または (msdyn_allocated ne true))
 
 [![データ統合のテンプレートのマッピング](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

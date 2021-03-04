@@ -72,3 +72,6 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 - [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
 - [ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ ms.locfileid: "5075725"
     ![デュアル書き込みの失敗](media/Error.png)
 
 - 能力やライセンスに関する問題が発生すると、Dataverse 環境の準備に失敗することがあります。 そのような場合は、Power Platform 管理センターにログインして問題を修正します。 次に LCS の **環境詳細** ページの **Power Platform 統合** セクションで、**経歴** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

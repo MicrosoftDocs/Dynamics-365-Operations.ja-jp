@@ -126,3 +126,6 @@ ms.locfileid: "5068482"
 ### <a name="extensibility-and-packing"></a>拡張性および梱包
 
 拡張機能の保守機能については、[配置可能なパッケージの作成](./dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ ms.locfileid: "4687280"
 - [ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md)
 - [利用できる SQL Server Reporting Services (SSRS) レポート](SSRS-report.md)
 - [ワークフロー タイプのレポート](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

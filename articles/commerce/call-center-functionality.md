@@ -69,3 +69,6 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 ## <a name="configure-continuity-programs"></a>連続プログラムのコンフィギュレーション
 
 [コール センターの連続プログラムの設定](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

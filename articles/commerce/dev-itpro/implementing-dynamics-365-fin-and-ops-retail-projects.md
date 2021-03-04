@@ -38,3 +38,6 @@ ms.locfileid: "4685401"
 [Commerce プロジェクトのコードと環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンスに関する問題](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

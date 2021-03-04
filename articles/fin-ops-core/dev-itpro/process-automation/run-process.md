@@ -90,3 +90,6 @@ internal final class ProcessAutomationTaskTestImplementation extends ProcessAuto
 | `public ProcessScheduleDateTime parmScheduledDateTime(ProcessScheduleDateTime _scheduledDateTime = scheduledDateTime)` | プロセスの実行がスケジュールされている日時。 この日時は、実際にプロセスが実行されたときの日時とは異なる場合があります。 |
 | `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | 実行中の発生の所有者。 |
 | `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | 別のインスタンスから **ProcessScheduleWorkItem** のインスタンスを初期化します。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

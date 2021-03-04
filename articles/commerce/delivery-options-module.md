@@ -83,3 +83,6 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 [ヘッダー料金を販売明細行と一致するよう比例配分する](pro-rate-charges-matching-lines.md)
 
 [荷渡方法の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

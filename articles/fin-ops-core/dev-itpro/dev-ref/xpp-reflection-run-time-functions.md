@@ -481,3 +481,6 @@ typeof(conpeek(conpeek(c, 1), 1)) != Types::Integer)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

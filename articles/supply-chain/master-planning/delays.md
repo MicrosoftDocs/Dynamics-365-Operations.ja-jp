@@ -59,3 +59,6 @@ ms.locfileid: "4432208"
 --------
 
 [補充設定](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

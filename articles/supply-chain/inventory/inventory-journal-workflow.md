@@ -112,3 +112,6 @@ ms.locfileid: "4431721"
 1. ナビゲーション ウィンドウで、**在庫管理 \> 仕訳帳の入力 \> 項目** を展開し、在庫仕訳帳のタイプを選択します。
 1. 関連する仕訳を開きます。
 1. アクションペインの **ワークフロー** ボタンを選択すると、ドロップダウン ダイアログ ボックスが開きます。 **ワークフロー履歴** を選択します。 詳細については、[ワークフロー履歴を確認する](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

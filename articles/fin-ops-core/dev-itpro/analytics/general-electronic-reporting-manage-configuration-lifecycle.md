@@ -87,3 +87,6 @@ ER に関連する次の理由から、個別の Finance and Operations イン�
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

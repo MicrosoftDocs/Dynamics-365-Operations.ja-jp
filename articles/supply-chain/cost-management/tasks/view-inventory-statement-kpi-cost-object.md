@@ -39,3 +39,6 @@ ms.locfileid: "4431837"
 7. [開始日] フィールドに日付を入力します。
 8. [終了日] フィールドで、日付を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

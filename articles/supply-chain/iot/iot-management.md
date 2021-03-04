@@ -62,3 +62,6 @@ IoT インテリジェンスが行う処理は、複数の場所から監視で�
 + [IoT DevKit AZ3166 を Azure IoT ハブに接続する](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Raspberry Pi online シミュレーターを Azure IoT ハブ (node.js) に接続する](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [デバイス シミュレーション ソリューション アクセラレータの概要](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

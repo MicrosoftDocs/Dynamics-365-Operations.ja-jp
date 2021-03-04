@@ -67,3 +67,6 @@ ms.locfileid: "4688213"
 
 ![法人の更新に成功しました](media/legal-entities-updated.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ ms.locfileid: "4413866"
 [POS でのインバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [POS でのアウトバウンド在庫操作](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

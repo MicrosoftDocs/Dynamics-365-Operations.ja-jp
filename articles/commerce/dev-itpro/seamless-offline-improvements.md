@@ -56,3 +56,6 @@ ms.locfileid: "4687540"
 
 - [オフライン販売時点管理 (POS) の機能](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

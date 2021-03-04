@@ -111,3 +111,6 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-commerce"></a>コマースの開発をしている場合、何を把握する必要がありますか。
 Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

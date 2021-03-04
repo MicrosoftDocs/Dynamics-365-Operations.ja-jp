@@ -66,3 +66,6 @@ ms.locfileid: "4680576"
 ## <a name="additional-resource"></a>その他のリソース
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

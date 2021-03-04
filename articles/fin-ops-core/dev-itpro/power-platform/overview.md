@@ -68,3 +68,6 @@ Power Apps ポータルでは、仮想エンティティにもアクセスでき
 ## <a name="virtual-entities-for-core-hr"></a>Core HR の仮想エンティティ
 Core HR エンティティは、Finance and Operations エンティティと同じように仮想化することもでき ます。 詳細については、[Core HR の仮想エンティティ](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities)を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

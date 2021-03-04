@@ -128,3 +128,6 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 パフォーマンス SDK を使用するシングル ユーザーまたはマルチ ユーザーのテストの詳細については、[パフォーマンス SDK によるシングルユーザーまたはマルチユーザーのテストに関するトラブルシューティングガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

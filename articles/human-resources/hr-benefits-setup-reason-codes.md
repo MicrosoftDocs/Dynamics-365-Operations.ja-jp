@@ -41,3 +41,6 @@ Dynamics 365 Human Resources は、理由コードを使用して、従業員の
    | **説明** | 理由コードの説明。 |
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

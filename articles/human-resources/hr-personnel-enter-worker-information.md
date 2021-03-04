@@ -45,3 +45,6 @@ ms.locfileid: "4419333"
 8. 一覧で、選択された行のマークを解除します。
     * 次のプロジェクトの職位を選択し、採用する各作業者の情報を入力し続けます。  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

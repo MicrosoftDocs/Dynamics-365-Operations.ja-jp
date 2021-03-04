@@ -415,3 +415,6 @@ ms.locfileid: "5129141"
 
 1. **F5** キーを押し、POS を展開してカスタマイズをテストします。
 2. POS の起動後、POS にログインします。 任意の製品を検索し、製品詳細ビュー移動します。 追加したカスタム コントロールが表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

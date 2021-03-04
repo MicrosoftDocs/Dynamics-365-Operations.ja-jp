@@ -198,3 +198,6 @@ public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 ## <a name="migration-from-microsoft-dynamics-ax-2012-to-finance-and-operations-applications"></a>Microsoft Dynamics AX 2012 から Finance and Operations アプリケーションへの移行
 
 移行には、このトピックの例に示すように **SysMailerMessageBuilder** オブジェクトを使用して メッセージを構築し、**SysMailerFactory** を使用して送信することが含まれます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

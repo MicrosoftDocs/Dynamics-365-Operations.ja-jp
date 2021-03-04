@@ -104,3 +104,6 @@ ms.locfileid: "4413849"
 [コンテナー モジュール](add-container-module.md)
 
 [画像のアップロード](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

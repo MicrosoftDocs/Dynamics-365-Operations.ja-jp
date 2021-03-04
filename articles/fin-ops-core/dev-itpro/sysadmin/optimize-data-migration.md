@@ -186,3 +186,6 @@ ms.locfileid: "5118275"
 
 * [Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング](../lifecycle-services/performancetroubleshooting.md)
 * [クックブックの照会](../lifecycle-services/querycookbook.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

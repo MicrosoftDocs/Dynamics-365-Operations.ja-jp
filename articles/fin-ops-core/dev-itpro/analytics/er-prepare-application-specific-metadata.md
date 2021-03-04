@@ -280,3 +280,6 @@ ms.locfileid: "4680197"
 ## <a name="additional-resources"></a>追加リソース
 
 または、アプリケーションの **RCS で使用できるアプリケーション メタデータを準備する** タスク ガイド、**ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする** および RCS の **接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする** タスク ガイドを再生することができます。 これらのタスク ガイドは、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページからダウンロードできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

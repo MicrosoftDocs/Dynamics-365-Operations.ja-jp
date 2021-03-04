@@ -343,3 +343,6 @@ export default class PaymentTerminalExecuteTaskRequestHandlerExt extends Payment
 **PaymentTerminalVoidPaymentRequestHandler**、無効化要求、無効化カード支払要求を開始する POS からの支払要求です。 無効なワークフローを変更する場合は、この要求をオーバーライドします。 リクエストをオーバーライドにするには、POS の **PaymentTerminalVoidPaymentRequestHandler** を拡張する必要があります。
 
 無効および払い戻し要求コード パターンを拡張することは、承認および取得要求と同じです。 拡張プロパティを渡す方法とともに、無効および払い戻し支払要求の完全なコードサンプルは、RetailSDK\Code\POS\Extensions\PaymentSample フォルダーの Retail SDK アプリケーション 3 で利用できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

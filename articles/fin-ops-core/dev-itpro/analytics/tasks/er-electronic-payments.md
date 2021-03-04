@@ -81,3 +81,6 @@ ms.locfileid: "4681736"
 25. [OK] をクリックします。
     * XML 形式で作成した支払ファイルを分析します。 設計されたドキュメント レイアウトおよび定義された支払トランザクションの属性と比較します。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ ms.locfileid: "4419403"
 1. ページの上部で **編集** を選択して、開始予定日/時刻を現在の時刻に近い分析を更新する値に設定します。
 
 ![バッチ ジョブ](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

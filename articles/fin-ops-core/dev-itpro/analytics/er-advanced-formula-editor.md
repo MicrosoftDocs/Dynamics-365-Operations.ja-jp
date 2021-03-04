@@ -171,3 +171,6 @@ Microsoft Dynamics 365 Finance のインスタンスで高度なフォーミュ�
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 - [モナコ エディター](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ ms.locfileid: "4431658"
 4. [OK] をクリックします。
     * これは、現在のジョブ ステータスを「計画済み」から「未定」に戻し、プロセス表から削除します。   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

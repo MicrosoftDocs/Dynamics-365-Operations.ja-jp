@@ -219,3 +219,6 @@ Microsoft が管理するレベル 1 から レベル 5 のサンドボックス
 これは、ライセンスが期限切れになったためです。つまり、環境スロットを取得するために必要な最低限のライセンスが不要になったことを意味します。  [サブスクリプションのステータス](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) を確認し、有効期限が切れたライセンスを再開してから、再配置を有効にしてください。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

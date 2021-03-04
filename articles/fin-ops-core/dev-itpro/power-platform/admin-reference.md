@@ -166,3 +166,6 @@ Finance and Operations には多数の OData 対応エンティティが含ま�
 ![ソリューション](../media/fovesolution.png)
 
 ソリューションをエクスポートすると、MicrosoftOperationsERPVE ソリューションで生成された仮想エンティティへのハード依存関係が含められます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

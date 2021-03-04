@@ -67,3 +67,6 @@ ms.locfileid: "4413806"
 3. チャンネル データベースへの同期変更に、1070 配送スケジュールを実行します。 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

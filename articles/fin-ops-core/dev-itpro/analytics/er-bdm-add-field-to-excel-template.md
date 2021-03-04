@@ -169,3 +169,6 @@ BDM テンプレートのエディターページが表示されます。 Micros
 [ビジネス ドキュメント管理の概要](er-business-document-management.md)
 
 [OPENXML 形式のレポートを生成するコンフィギュレーションを設計する](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

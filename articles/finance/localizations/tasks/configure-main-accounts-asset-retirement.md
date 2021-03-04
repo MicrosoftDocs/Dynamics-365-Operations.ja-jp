@@ -76,3 +76,6 @@ ms.locfileid: "4408163"
 3. [開始日] フィールドに日付を入力します。
 4. [市場割引率] フィールドに、数値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

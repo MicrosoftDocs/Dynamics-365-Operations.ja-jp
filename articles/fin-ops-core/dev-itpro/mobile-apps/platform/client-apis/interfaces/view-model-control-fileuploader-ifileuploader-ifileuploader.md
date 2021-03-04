@@ -311,3 +311,6 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

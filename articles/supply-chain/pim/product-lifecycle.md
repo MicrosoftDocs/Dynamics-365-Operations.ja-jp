@@ -109,3 +109,6 @@ ms.locfileid: "4432422"
 - [リリース済製品に製品ライフサイクル状態を割り当てる](tasks/product-lifecycle-state-released-product.md)
 - [古い形式の製品バリアントを検索して、製品ライフサイクルの状態を割り当てる](tasks/obsolete-product-variants.md)
 - [マスター プランから製品を除外する場合は、製品ライフサイクルの状態を作成](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

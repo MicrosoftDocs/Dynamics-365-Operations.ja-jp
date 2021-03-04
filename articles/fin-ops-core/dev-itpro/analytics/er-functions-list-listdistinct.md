@@ -97,3 +97,6 @@ LISTDISTINCT (list, selector)
 ## <a name="additional-resources"></a>追加リソース
 
 [リスト関数](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

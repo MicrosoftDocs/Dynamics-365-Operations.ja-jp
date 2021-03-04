@@ -106,3 +106,6 @@ Office 365 オンライン機能を使用してテンプレートを変更する
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [ビジネス ドキュメント管理の概要](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

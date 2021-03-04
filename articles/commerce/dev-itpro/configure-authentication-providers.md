@@ -42,3 +42,6 @@ Commerce Scale Unit で使用できるようにするため、OpenID プロバ�
     ```xml
     redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

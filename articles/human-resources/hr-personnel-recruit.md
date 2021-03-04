@@ -227,3 +227,5 @@ HR のプロフェッショナルにすべての採用要求を表示するに�
 [Common Data Service 仮想エンティティの構成](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [従業員の編成](hr-personnel-departments-jobs-positions.md)<br>
 [職務のコンポーネントの設定](hr-personnel-jobs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

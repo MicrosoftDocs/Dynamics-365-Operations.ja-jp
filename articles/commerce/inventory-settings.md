@@ -93,3 +93,6 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
 [店舗セレクター モジュール](store-selector.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ ms.locfileid: "4413647"
 [Dynamics 365 Commerce 評価環境のオプション機能を構成する](cpe-optional-features.md)
 
 [Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

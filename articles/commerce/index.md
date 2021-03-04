@@ -56,3 +56,6 @@ Dynamics 365 Commerce: 実績のある Dynamics 365 Retail 機能に基づいて
 - [E コマース サイトの管理](online-store-overview.md)
 - [Fraud Protection](dev-itpro/DFP.md)
 - [コマース開発と拡張性](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

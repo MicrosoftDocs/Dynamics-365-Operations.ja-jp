@@ -90,3 +90,6 @@ public void testIndexHintRegularTable()
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 プラットフォーム更新プログラム 23 に含まれる[プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4)は、2018 年 10 月リリース ノートにドキュメントされています。 6 つの強化機能が詳細に説明されており、ハイライトの 1 つはクエリ データソースへの新しいリレーションの追加です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

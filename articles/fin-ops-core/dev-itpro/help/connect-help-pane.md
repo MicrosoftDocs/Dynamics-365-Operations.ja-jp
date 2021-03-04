@@ -153,3 +153,6 @@ Finance and Operations ソリューションのカスタム ヘルプ コンテ�
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Finance and Operations アプリのヘルプ エクスペリエンスのコンフィギュレーション](../../fin-ops/get-started/help-connect.md)  
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Power Apps ポータル認証は Dataverse の連絡先エンティティにリ�
 
 > [!NOTE]
 > ユーザー (認証済または匿名) にいずれかの Finance and Operations アプリで、システム管理者ロールが割り当てられている場合、Power Apps ポータルからのアクセスは失敗します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

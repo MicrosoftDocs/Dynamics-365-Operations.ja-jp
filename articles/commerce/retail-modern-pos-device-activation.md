@@ -367,3 +367,6 @@ Modern POS インストーラーは、まず関連付けられているファイ
 ## <a name="additional-resources"></a>追加リソース
 
 [POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

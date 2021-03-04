@@ -44,3 +44,6 @@ ms.locfileid: "4431671"
 3. [値] フィールドに値を入力します。
 4. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

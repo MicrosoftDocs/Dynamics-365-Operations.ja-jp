@@ -107,3 +107,6 @@ ms.locfileid: "4413649"
 [品揃えの設定](set-up-assortments.md)
 
 [属性および属性グループの管理](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

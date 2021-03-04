@@ -85,3 +85,6 @@ class smmLeadCaseAssociationProvider implements CaseIAssociation
     // Your code here.
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

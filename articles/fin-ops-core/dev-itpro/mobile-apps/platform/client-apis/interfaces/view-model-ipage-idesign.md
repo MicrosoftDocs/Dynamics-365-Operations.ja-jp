@@ -170,3 +170,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 文字列としてのコントロールのタイプ。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

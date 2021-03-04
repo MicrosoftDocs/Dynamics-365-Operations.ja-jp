@@ -75,3 +75,6 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 ![外部組織と共有する設定](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. 外部組織と既に共有されている構成の共有を解除するには、構成を選択して **共有解除** をクリックし、**OK** をクリックします
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

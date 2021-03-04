@@ -82,3 +82,6 @@ ms.locfileid: "4409514"
 要素デザイナのノード値は、多くの場合、別の要素への参照です。 たとえば、テーブル要素内のフィールド ノードは、通常拡張データ型 (EDT) 要素に基づいています。 要素デザイナーでノードを右クリックするとき、**&lt;要素&gt;に移動** コマンドをクリックして、関連要素に移動します。 たとえば、FMVehicle テーブルのフィールドの一覧で **FuelType** ノードを右クリックするとき、**基本列挙 FMFuelType に移動する** をクリックして、フィールドを定義するために使用される基本列挙を表示します。
 
 [![要素に移動](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

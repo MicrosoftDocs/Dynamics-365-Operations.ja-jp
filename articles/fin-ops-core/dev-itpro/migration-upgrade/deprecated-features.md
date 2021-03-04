@@ -1373,3 +1373,6 @@ Windows 8 タブレット アプリケーションは経費入力と承認のた
 |     <strong>影響を受ける製品領域</strong>     |                                              一般会計                                              |
 |             <strong>ステータス</strong>             |                                      Dynamics AX 2012 から削除された                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

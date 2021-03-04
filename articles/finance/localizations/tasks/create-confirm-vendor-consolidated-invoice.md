@@ -55,3 +55,6 @@ ms.locfileid: "4408194"
     * 請求済の発注書が月次締め請求書に含まれていることを確認します。  
 8. [確認] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

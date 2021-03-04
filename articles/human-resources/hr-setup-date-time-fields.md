@@ -95,3 +95,6 @@ DMF などの外部ソースを使用してデータを表示または作成す�
 
 [日付と時刻データ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [ユーザーの優先タイム ゾーン](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -504,3 +504,6 @@ ms.locfileid: "4432035"
 [不適合管理](enable-nonconformance-management.md)
 
 [倉庫プロセスに対する品質管理](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

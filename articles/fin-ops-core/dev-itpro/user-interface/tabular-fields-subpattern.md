@@ -104,3 +104,6 @@ Microsoft Dynamics AX の以前のリリースでは、このパターンをモ�
 ### <a name="open-issues"></a>未処理の問題
 
 -   None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

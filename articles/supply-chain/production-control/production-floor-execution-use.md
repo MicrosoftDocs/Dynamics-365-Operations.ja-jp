@@ -146,3 +146,6 @@ ms.locfileid: "4432273"
 1. 作業者は、このガイドを通じてタスクを学習します。
 
 HoloLens 用ガイドの作成、割り当て、および使用の方法の詳細については、[生産での作業者向け Mixed Reality ガイドを提供する](instruction-guides-in-production-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

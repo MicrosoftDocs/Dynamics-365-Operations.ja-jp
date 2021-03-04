@@ -47,3 +47,6 @@ ms.locfileid: "4432069"
 14. [範囲の開始] フィールドに数値を入力します。
 15. [範囲の終了] フィールドに数値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ ms.locfileid: "4431860"
 
 ![品目の使用場所の計算例](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [Regulatory Services のコンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

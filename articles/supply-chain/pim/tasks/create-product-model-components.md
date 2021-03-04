@@ -38,3 +38,6 @@ ms.locfileid: "4431958"
 7. [説明] フィールドに値を入力します。
 8. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ ms.locfileid: "4431963"
     * 製品分析コードの値の組み合わせに基づいてすべてのバリアントの説明を生成できます。 説明はオプションです。  
 5. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

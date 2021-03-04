@@ -183,3 +183,6 @@ ms.locfileid: "4431836"
 [計画最適化の開始](get-started.md)
 
 [計画最適化適合分析](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

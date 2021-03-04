@@ -134,3 +134,6 @@ Human Resources アプリでチャット ボットと会話しながら、会話
 [Microsoft Teams ヘルプ センター](https://support.office.com/teams)</br>
 [Teams での休暇要求の管理](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

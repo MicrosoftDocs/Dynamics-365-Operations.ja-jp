@@ -120,3 +120,6 @@ Windows 8 ではタイルの概念が導入され、クライアントで使用�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

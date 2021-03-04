@@ -405,3 +405,6 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 ## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operationsで最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

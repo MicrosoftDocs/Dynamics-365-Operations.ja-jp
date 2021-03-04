@@ -88,3 +88,6 @@ https://AOSUrl/resources/styles/Mycss.css
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
 
 環境から配置可能パッケージをアンインストールまたは削除する方法についての詳細は、[パッケージのアンインストール](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

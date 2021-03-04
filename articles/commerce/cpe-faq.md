@@ -71,3 +71,6 @@ Dynamics 365 Commerce と Commerce Scale Unit は、完全に software as a serv
 [Dynamics 365 Commerce 評価環境で BOPIS を構成する](cpe-bopis.md)
 
 [Dynamics 365 Commerce 評価環境のオプション機能を構成する](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

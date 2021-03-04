@@ -68,3 +68,6 @@ ms.locfileid: "4431684"
 5. [かんばん] セクションを展開します。
     * 必要な材料を倉庫 12 に転送するためにかんばんが作成されたことを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

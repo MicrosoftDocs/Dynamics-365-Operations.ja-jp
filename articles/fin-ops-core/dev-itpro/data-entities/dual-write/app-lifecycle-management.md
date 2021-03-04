@@ -198,3 +198,6 @@ AppSource にパッケージを公開する方法の詳細については、[App
     ![テーブル マップのアップグレード](media/upgrade-entity-maps.png)
 
 アップグレードには数分かかります。 完了すると、通知が表示されます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

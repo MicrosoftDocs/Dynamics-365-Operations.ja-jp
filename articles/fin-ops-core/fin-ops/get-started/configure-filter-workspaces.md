@@ -63,3 +63,6 @@ ms.locfileid: "4694522"
 [![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

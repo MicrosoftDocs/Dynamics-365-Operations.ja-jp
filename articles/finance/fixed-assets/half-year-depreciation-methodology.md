@@ -42,3 +42,6 @@ ms.locfileid: "4445048"
    [![半期減価償却方法の減価償却スケジュール](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 半年簡便法によって追加された減価償却期間の延長は、減価償却のより正確な配賦を提供します。 半年簡便法では、減価償却がより均等になるため、損益計算書の報告に役立ちます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

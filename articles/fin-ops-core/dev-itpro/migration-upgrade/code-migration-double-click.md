@@ -76,3 +76,6 @@ Dynamics AX 2012 の一部のカスタム ルックアップでは、ユーザ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

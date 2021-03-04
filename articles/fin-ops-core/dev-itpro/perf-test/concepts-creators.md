@@ -71,3 +71,6 @@ item = new AtlCreatorProductsReleasedVariant()
 ## <a name="when-should-creators-be-used-instead-of-entities"></a>エンティティの代わりに作成者を使用するのはいつですか。
 
 エンティティと作成者を選択するのに役立つ情報は、[エンティティまたは作成者クラスを実装する必要があるか](atl-faq.md#should-i-implement-an-entity-or-a-creator-class) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

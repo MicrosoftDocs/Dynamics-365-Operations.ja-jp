@@ -45,3 +45,6 @@ Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含�
 次の図は、両方の状態のセットと、それらが互いにどのように関連しているかを示します。
 
 [![実験の状態](./media/experimentation_statuses.svg)](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

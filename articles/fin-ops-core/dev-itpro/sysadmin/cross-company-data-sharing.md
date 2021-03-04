@@ -173,3 +173,6 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

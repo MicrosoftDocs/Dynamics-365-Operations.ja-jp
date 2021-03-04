@@ -480,3 +480,6 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

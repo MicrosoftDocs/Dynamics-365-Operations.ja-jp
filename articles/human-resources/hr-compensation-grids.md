@@ -92,3 +92,6 @@ ms.locfileid: "4419356"
 29. 一覧で、すべての行のマークを設定または解除します。
 30. [グリッドに適用] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

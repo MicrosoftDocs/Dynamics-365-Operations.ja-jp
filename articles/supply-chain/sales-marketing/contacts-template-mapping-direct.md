@@ -142,3 +142,6 @@ Sales の統合ソリューションが適用されている場合、アップ�
 [売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

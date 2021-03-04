@@ -171,3 +171,6 @@ Dynamics 365 Commerce の配分済み注文の管理 (DOM) の最初のイテレ
 
 > [!IMPORTANT]
 > DOM でこれらの原価を実行時に考慮するには、関連するフルフィルメント プロファイルに原価係数を追加する必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

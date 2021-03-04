@@ -50,3 +50,6 @@ RSAT がテスト ケースの Excel パラメーター ファイルを生成す
 + コントロールが編集可能か読み取り専用かを検証します。
 
 この検証を活用するには、10.0.13 (またはそれ以降) および RSAT 2.0 (またはそれ以降) で実行されている Finance and Operationsアプリを使用する必要があります。 詳細については、[検証](../../user-interface/task-recorder.md#validate)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

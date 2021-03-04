@@ -122,3 +122,6 @@ Commerce Runtime で、証明書プロファイルが呼び出されたときに
 
 > [!NOTE]
 > Commerce Runtime では、証明書の新しいバージョンが最初に呼び出されます。 証明書がまだ特定の店舗または特定のターミナルで更新されていない場合は、以前のバージョンが呼び出されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

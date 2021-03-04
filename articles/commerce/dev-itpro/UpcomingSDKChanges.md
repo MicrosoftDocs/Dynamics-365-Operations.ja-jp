@@ -68,3 +68,6 @@ Commerce Runtime、Commerce Scale Unit、Commerce プロキシ、Commerce ツー
 
 ## <a name="retail-sdk-samples-to-github"></a>Retail SDK のサンプルを GitHub に移動
 Microsoft は、Retail SDK からサンプルを GitHub に移動する計画です。 サンプルはサンプル コードとしてのみ公開されているため、この変更は拡張機能に影響しません。 GitHub により、最新のサンプルが取得しやすくなります。 LCS プロセスを実行する必要がなくなります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

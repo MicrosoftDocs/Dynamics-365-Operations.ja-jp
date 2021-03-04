@@ -65,3 +65,6 @@ ms.locfileid: "4682072"
     * イントラスタットのサンプル マッピング  
 5. [コンフィギュレーションの作成] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

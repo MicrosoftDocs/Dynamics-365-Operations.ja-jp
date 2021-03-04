@@ -368,3 +368,6 @@ ms.locfileid: "4409335"
 - CW 品目の割合管理を有効にします。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

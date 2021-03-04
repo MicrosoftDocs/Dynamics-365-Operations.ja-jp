@@ -76,3 +76,6 @@ ms.locfileid: "4683308"
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

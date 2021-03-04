@@ -105,3 +105,6 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 [Dynamics 365 人事管理の新機能および変更された機能](hr-admin-whats-new.md)</br>
 [ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

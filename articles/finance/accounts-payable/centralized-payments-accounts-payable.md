@@ -301,3 +301,6 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

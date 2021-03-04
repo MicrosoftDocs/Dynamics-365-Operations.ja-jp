@@ -70,3 +70,6 @@ ms.locfileid: "4431769"
 13. **販売注文** をクリックします。
 14. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

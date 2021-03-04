@@ -215,3 +215,6 @@ ms.locfileid: "4685457"
      > [!IMPORTANT]
     > この手順により、ダウンタイムが発生するため、しばらくの間環境を使用できなくなる可能性があることを確認してください。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

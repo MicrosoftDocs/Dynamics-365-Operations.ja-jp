@@ -28,3 +28,6 @@ ms.locfileid: "4688206"
 [!include [banner](../../includes/banner.md)]
 
 このトピックは、 [モバイル プラットフォームを使い始める](mobile-platform-getting-started.md) および [モバイル プラットフォームのアーキテクチャと設計の考慮事項](mobile-platform-architecture.md) のトピックに置き換えられました。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

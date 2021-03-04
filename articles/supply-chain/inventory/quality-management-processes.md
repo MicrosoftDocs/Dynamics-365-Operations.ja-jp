@@ -101,3 +101,6 @@ ms.locfileid: "4432238"
 [品質指示の設定](tasks/set-up-quality-orders.md)
 
 [商品の品質の調査](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

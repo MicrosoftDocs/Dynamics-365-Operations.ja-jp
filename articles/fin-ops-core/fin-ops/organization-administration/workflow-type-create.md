@@ -46,3 +46,6 @@ ms.locfileid: "4798763"
 - [ワークフロー ドキュメント クラスの作成](workflow-type-document-create.md)
 - [SubmitToWorkflow クラスの作成](workflow-type-submit-to-workflow.md)
 - [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

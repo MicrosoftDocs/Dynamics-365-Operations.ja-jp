@@ -67,3 +67,6 @@ JSON エンドポイントが `https://host_uri/api/services/service_group_name/
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 JSON サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication) で利用できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

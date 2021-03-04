@@ -91,3 +91,6 @@ BOM レポートを生成する場合は、**原産国ルール** のページ�
 各パートの原産国に関する情報を表示するレポートが生成、表示されます。 レポートの例を次に示します。
 
 ![原産国のレポート](media/country-of-origin-report.png "原産国のレポート")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

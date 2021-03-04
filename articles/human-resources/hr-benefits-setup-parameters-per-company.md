@@ -42,3 +42,5 @@ ms.locfileid: "4692748"
    | **既定のメール送信者アドレス** | 確認メールを送信するときに使用するメール アドレス。 |
 
 3. **保存** を選択します。
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ ms.locfileid: "4693873"
 8. 電子メール メッセージの入力を続け、任意の箇所にブックマーク フィールドを挿入します。
 9. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

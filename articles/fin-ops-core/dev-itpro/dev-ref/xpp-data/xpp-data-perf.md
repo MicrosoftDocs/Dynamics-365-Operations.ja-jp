@@ -62,3 +62,6 @@ public void tutorialRecordInsertList()
     insertList.insertDatabase();
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

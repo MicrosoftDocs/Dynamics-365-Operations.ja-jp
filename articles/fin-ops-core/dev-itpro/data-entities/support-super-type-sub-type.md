@@ -89,3 +89,6 @@ ms.locfileid: "4685233"
 この例では、**関係者** タイプは DirPartyTable の **InstanceRelationType** 列を使用して計算されます。 この方法は、データを読み取るために機能します。 ただし、**作成** または **更新** 操作を行うには、タイプに基づいて、データ エンティティの **initializeEntityDataSource** メソッドを上書きするコードを記述する必要があり、およびデータ ソースの実行時コンテキスト バッファに対する派生型の正しいインスタンスを設定する必要があります。
 
 [![sub11](./media/sub11.png)](./media/sub11.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

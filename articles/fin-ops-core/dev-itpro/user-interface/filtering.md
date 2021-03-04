@@ -137,3 +137,6 @@ Dynamics AX 2012 では、QuickFilter がリスト ページにのみ自動的�
 
 ## <a name="grid-column-header-filteringsorting"></a>グリッド列のヘッダーのフィルター処理/並べ替え
 Finance and Operations アプリでは、グリッド フィルター エクスペリエンスは Microsoft Excel での体験により近く調整されています。 ユーザーが列のヘッダーをクリックするとき (フィルター処理できる列の場合) 、ドロップ ダイアログが表示され、ユーザーはそのダイアログを使用して列をフィルター処理できます。 ここでのフィルタリング経験は、フィルター ウィンドウでのフィルタリング経験を模倣します。 また、現在選択されている列に基づくグリッドをソートするオプションがあります。 [![グリッド フィルタのスクリーン ショット](./media/4_filter.png)](./media/4_filter.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

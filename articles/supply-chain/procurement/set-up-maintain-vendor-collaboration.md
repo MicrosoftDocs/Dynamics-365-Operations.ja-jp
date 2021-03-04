@@ -161,3 +161,6 @@ Azure AD アカウント管理のワークフローでの **Azure B2B ユーザ�
 [外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)
 
 仕入先のオンボーディング プロセスの簡単なビデオ[新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)をご覧ください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 
       - **Finance and Operations にログオン**
       - **コマースにログオン**
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

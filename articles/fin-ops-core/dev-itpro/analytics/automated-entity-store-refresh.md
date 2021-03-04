@@ -59,3 +59,6 @@ ms.locfileid: "4687292"
 
 > [!IMPORTANT]
 > 自動化更新を有効にすると、システムは集計測定の更新を無効にすることができます。 集計測定に戻って、適切な更新間隔が適用されていることを検証する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

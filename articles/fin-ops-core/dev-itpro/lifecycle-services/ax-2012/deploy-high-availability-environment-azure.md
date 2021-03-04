@@ -472,3 +472,6 @@ Lifecycle Services でエンタープライズ ポータル サーバーが配�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

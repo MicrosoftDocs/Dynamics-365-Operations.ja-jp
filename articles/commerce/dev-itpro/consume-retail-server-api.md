@@ -256,3 +256,6 @@ API にアクセスするには、最初に認証トークンを生成します�
         Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
     }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

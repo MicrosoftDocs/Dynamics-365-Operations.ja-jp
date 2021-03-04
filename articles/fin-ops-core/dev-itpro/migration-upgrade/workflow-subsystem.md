@@ -57,3 +57,6 @@ Dynamics AX 2012 を使用したことがあれば、Finance and Operations の�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

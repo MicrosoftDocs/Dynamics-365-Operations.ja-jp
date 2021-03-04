@@ -141,3 +141,6 @@ Dynamics AX クライアントがインストールされている仮想マシ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

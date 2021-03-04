@@ -100,3 +100,6 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
 - Finance and Operations のデータ アップグレード チェックリストで、**小売 salt データのアーカイブ** をクリックします。
 
 プロセスが正常に行われた場合は、タスクは完了としてマークされています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

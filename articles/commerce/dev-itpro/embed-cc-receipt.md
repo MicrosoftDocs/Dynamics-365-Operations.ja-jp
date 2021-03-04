@@ -74,3 +74,6 @@ ms.locfileid: "4684971"
 13. クレジットカード取引を実行して、決済処理業者のクレジット カード レシートが顧客のレシートに埋め込まれていることを確認します。
 
     ![クレジットカード情報が記載された顧客のレシート](media/receipt_w_cc.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

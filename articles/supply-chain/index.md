@@ -106,3 +106,6 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 ## <a name="elearning-courses"></a>eLearning コース
 
 オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) をご確認ください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -248,3 +248,6 @@ SysDa クエリは複数の句をサポートします。
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 **toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および **SysDaQueryObject** オブジェクトに対して使用して、構築している明細書を表示できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

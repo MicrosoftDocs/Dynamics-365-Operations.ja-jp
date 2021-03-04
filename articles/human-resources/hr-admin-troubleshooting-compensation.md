@@ -47,3 +47,6 @@ ms.locfileid: "4419317"
 - 処理:
 
     - [報酬の処理](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

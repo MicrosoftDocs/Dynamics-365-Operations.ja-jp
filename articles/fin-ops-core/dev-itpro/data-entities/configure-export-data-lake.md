@@ -213,3 +213,6 @@ Finance and Operations アプリから Data Lake にデータをエクスポー�
 
 システムが、ご利用の環境に Data Lake をインストールし構成します。 インストールと構成が完了すると、 **環境** のページに **Azure Data Lake** の一覧が表示されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

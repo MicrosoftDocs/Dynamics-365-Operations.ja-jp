@@ -55,3 +55,6 @@ ms.locfileid: "4679843"
 4. **ユーザーのインポート** を選択します。
 5. **閉じる** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

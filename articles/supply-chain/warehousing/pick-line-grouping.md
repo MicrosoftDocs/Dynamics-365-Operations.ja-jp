@@ -131,3 +131,6 @@ ms.locfileid: "4432297"
 >    - 未完了の補充作業がある作業明細行。
 >    - 超過ピッキング。
 >    - 品目再配賦の未処理ピッキング
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

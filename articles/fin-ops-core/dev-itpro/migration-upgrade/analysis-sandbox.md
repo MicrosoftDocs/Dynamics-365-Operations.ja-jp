@@ -36,3 +36,6 @@ ms.locfileid: "5129215"
 ライセンスをまだ購入しておらず、無料トライアルを使用している場合は、 [デモ環境の配置](../deployment/deploy-demo-environment.md) の手順に従い、自分で持ち込む Microsoft Azure サブスクリプションにデモ環境を配置できます。
 
 ライセンスを既に購入している場合、Microsoft Dynamics Lifecycle Services (LCS) で特殊なタイプのプロジェクト (実装プロジェクト) を構成するためのリンクを受け取ります。 実装プロジェクトにより、開発者/テスト環境とサンドボックス環境を配置できます。 このタイプの環境の配置の詳細については、[AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード](upgrade-data-sandbox.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -247,3 +247,6 @@ Kibana では、**検出** タブで、クエリを作成し、保存します�
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="you-dont-receive-any-data-in-kibana"></a>Kibana 内のデータを受信しません
 Kibana で、何もデータを受け取っていない場合、Winlogbeat から Logstash、Elasticsearch、および Kibana のログを確認してください。 Winlogbeat のインストールでは、C:\\ProgramData\\winlogbeat\\Logs にログが記録されますが、他の Elastic スタック コンポーネントはログをインストール パスに近づけることに注意してください (例: C:\\ELK\\Elasticsearch\\logs)。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

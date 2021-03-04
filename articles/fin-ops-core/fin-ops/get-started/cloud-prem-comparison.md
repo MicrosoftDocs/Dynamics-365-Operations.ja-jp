@@ -175,3 +175,6 @@ ms.locfileid: "4694570"
 
 \* オンプレミス環境では、クライアントの結果が PerfTimer によってのみ表示されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

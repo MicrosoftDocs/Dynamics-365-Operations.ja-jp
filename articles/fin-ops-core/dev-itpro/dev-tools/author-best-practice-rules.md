@@ -370,3 +370,6 @@ foreach (var name in names)
 - モデル内のすべての項目で BP を実行します (モジュール内のこの 1 つのモデルに対してのみ): `xppbp -module:FleetManagement -model:FleetManagement –all`
 - モジュール内のすべてのモデルのすべての品目で BP を実行します: `xppbp -module:FleetManagement –all`
 - ログ ファイルに対する出力を記述します: `xppbp -module:FleetManagement -all -xmllog=Log.xml -log=Log.txt`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

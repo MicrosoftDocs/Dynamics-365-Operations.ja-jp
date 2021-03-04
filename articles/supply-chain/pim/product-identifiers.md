@@ -190,3 +190,6 @@ Supply Chain Management では、特定の測定単位を定義することに�
 ## <a name="related-topic"></a>関連するトピック
 
 [注文入力時の製品および製品バリアントの検索](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

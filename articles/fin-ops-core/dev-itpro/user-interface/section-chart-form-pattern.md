@@ -73,3 +73,6 @@ ms.locfileid: "5092379"
 ### <a name="open-issues"></a>未処理の問題
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

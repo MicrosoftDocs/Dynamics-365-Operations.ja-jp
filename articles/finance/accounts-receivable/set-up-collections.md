@@ -115,3 +115,6 @@ NSF 支払が **回収** ページで指定される時に、正しい仕訳が�
 
  - [取立情報の確認](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

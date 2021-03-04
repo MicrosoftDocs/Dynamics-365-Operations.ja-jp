@@ -89,3 +89,6 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 [コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

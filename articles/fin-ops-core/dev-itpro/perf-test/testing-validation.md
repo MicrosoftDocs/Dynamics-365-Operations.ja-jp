@@ -185,3 +185,6 @@ ms.locfileid: "4680430"
 テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に **テスト** という単語を含むすべてのテスト モジュールを検出します。 次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。 
 
 [![ビルドおよびテストの実行](./media/69.png)](./media/69.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

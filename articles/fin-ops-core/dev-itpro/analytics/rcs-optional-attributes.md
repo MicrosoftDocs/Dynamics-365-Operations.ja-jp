@@ -130,3 +130,6 @@ XML 形式で受信する電子ドキュメントを解析するための電子�
 3. **参照** をクリックし、ファイル **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml** を選択します。
 4. **OK** をクリックします。
 5. 生成したファイルを確認します。 同じファイルが形式デザインとしてインポートされ、「document」要素の「ID」属性はオプションとして見なされることに注意してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -228,3 +228,6 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 4. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 6. [バックオフィスで要求されるパラメーターの設定](#set-up-required-parameters-in-headquarters) を完了します
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

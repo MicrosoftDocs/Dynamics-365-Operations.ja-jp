@@ -66,3 +66,6 @@ Microsoft Dynamics Lifecycle Services では、ビジネス プロセス モデ�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

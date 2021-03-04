@@ -255,3 +255,6 @@ JSON ファイルを BLOB コンテナーにアップロードするには、い
 [カスタム ヘルプの概要](custom-help-overview.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

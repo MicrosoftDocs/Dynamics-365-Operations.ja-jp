@@ -69,3 +69,6 @@ ms.locfileid: "5128549"
 
 ### <a name="validate-the-links-in-modern-point-of-sale-mpos-and-cloud-point-of-sale-cpos"></a>Modern POS (MPOS) およびクラウド POS (CPOS) のリンクの検証
 リンクが追加されたことを検証するには、**設定** ページにアクセスします。 **情報** セクションで、適切なページが開くことを検証するためにリンクをクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

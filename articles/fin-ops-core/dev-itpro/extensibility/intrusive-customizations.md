@@ -64,3 +64,6 @@ ms.locfileid: "4408844"
 
 > [!NOTE]
 > 拡張機能の作成者は、これらの原則に違反しないようにする責任があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

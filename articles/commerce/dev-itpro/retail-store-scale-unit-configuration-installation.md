@@ -423,3 +423,6 @@ Microsoft Windows でコントロール パネルを使用して Commerce Scale 
 2. コントロール パネルで、**プログラム** &gt; **プログラムのアンインストール** を選択します。
 3. **プログラムと機能** ウィンドウで、**Microsoft Dynamics 365 Commerce Scale Unit** を選択してから、プログラムの一覧で **アンインストール** を選択します。
 4. アンインストールがプログラムの削除を完了するまで待ちます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

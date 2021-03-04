@@ -62,3 +62,6 @@ ms.locfileid: "5094175"
 [![高度な選択の例](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

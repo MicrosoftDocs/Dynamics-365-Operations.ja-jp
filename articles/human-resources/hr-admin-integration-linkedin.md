@@ -190,3 +190,6 @@ LinkedIn タレント ハブから Human Resources にエクスポートされ�
 
 [Common Data Service 仮想エンティティの構成](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Common Data Service とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ ms.locfileid: "4431675"
 24. [単位] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 25. [単位の変更] を解決します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

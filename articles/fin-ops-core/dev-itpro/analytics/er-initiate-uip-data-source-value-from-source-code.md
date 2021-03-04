@@ -134,3 +134,6 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [受信したドキュメントを解析する](er-parse-incoming-documents.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

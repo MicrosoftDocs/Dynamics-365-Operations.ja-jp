@@ -180,3 +180,6 @@ Common Data Service の詳細については、[Common Data Service とは何か
 
 [データ統合テクノロジの選択](hr-admin-integration-choose-technology.md)</br>
 [Common Data Service 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ ms.locfileid: "4461767"
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>ジョブの報酬レベルに対して作成された新しいエンティティ
 新しいデータ管理フレームワーク (DMF) エンティティが作成されました。 エンティティは、報酬レベル、市場価値、およびシステムで定義されている各ジョブの調査情報の作成と更新を提供します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ JavaScript を含む HTML **&lt;スクリプト&gt;** 要素をテンプレー�
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
 
 [プリセット レイアウトの使用](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

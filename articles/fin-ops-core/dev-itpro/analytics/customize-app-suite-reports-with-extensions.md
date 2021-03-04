@@ -47,3 +47,6 @@ Finance and Operations は、カスタム ソリューションをサポート�
 
 - [レポート メニュー項目を拡張してユーザー ナビゲーション に リダイレクトする](extend-report-menu-items.md)– アプリケーションのメニュー項目をカスタマイズして、カスタム レポート デザインへの参照をリダイレクトします。
 - [ビジネス ドキュメントのユーザー定義のデザインを作成する](custom-designs-business-docs.md) – 委任ハンドラーを使用すると、既存の印刷の管理ドキュメント インスタンスに ユーザー定義 レポート デザインを追加できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

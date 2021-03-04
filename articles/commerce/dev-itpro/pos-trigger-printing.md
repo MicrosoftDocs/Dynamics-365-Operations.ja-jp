@@ -715,3 +715,6 @@ ms.locfileid: "4681506"
 2. POS が開始されると、POS にサインインし、トランザクションへ品目を追加します。
 3. トランザクションを中断します。
 4. カスタム レシートが印刷されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

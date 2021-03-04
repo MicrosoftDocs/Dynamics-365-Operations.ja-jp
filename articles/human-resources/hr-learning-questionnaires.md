@@ -44,3 +44,6 @@ Microsoft Dynamics 365 Finance で使用できるさまざまな機能の組み�
 | [アンケートのデザイン](hr-learning-design-questionnaires.md) | この記事は、アンケートを設計する方法について説明します。 デザイン プロセスは、前提条件、回答、質問を設定し、それらをアンケートに組み合わせることを前提にしています。 |
 | [アンケートの配布とスケジューリング](hr-learning-distribute-questionnaires.md) | この記事は、アンケートを回答者に配布する方法と、アンケートを記入する方法について説明します。 |
 | [アンケート結果の表示と評価](hr-learning-evaluate-questionnaire-results.md) | この記事は、完了したアンケートの結果を表示および評価する方法について説明します。 |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

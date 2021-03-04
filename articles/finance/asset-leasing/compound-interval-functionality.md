@@ -160,3 +160,6 @@ ms.locfileid: "4445394"
 
 > [!NOTE]
 > 定期支払タイプを **期首払い** に変更すると、12 月の代わりに 1 月の支払が行われます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

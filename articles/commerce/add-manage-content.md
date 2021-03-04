@@ -57,3 +57,6 @@ ms.locfileid: "4413700"
 [ドキュメントの状態とライフサイクル](document-states-overview.md)
 
 [クロスチャネル共有の有効化と使用](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ SUMIF (key name for summing, condition range, condition value)
 ## <a name="additional-resources"></a>追加リソース
 
 [データ収集機能](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

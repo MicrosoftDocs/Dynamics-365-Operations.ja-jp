@@ -33,3 +33,6 @@ ms.locfileid: "4798139"
 不明な点やその他の質問がある場合は、[Microsoft Dynamics サポート](https://dynamics.microsoft.com/support/) にお問い合わせください。
 
 **追加使用条件のプレビュー** - [追加使用条件のプレビュー](https://go.microsoft.com/fwlink/p/?linkid=2105274) には、ベータ、プレビュー、または一般にまだリリースされていないアドインの使用に適用される追加の法律条項が含まれています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

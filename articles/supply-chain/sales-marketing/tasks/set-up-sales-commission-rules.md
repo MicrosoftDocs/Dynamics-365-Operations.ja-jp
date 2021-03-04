@@ -96,3 +96,6 @@ ms.locfileid: "4431888"
 17. 一覧で、以前に作成したコミッショングループを選択します。
 18. **保存** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

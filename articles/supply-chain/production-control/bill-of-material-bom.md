@@ -118,3 +118,6 @@ BOM 明細行が参照する製品バリアントのための、サブ生産、B
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

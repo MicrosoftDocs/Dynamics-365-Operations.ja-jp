@@ -91,3 +91,6 @@ ms.locfileid: "4409342"
 - 小数点以下の変数番号のサポート - InventTestUpperTolerance
 - トランザクションの取消でスキップ確認をサポートします。
 - PSAProjQuotationApproval ワークフローの拡張機能の有効化
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

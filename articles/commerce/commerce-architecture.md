@@ -192,3 +192,6 @@ Dataverse は、すべての業務アプリケーションのデータを統合�
 [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview)
 
 [Microsoft Bing をコマースに使用する](https://www.microsoft.com/bing/commerce)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

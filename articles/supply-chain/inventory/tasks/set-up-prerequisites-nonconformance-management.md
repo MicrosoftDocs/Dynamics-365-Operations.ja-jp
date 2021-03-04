@@ -80,3 +80,6 @@ ms.locfileid: "4432220"
 4. **説明** フィールドで、値を入力します。
 5. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ url: string (省略可)
 指定した場合、このリンクは直接開かれます。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

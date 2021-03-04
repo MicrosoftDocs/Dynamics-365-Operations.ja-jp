@@ -60,3 +60,6 @@ Forms Pro を使用したことがない場合は、まず [Forms Pro のドキ�
     ユーザーが調査に入力して送信すると Forms Pro に分析が表示されます。
 
     ![Forms Pro の調査分析](../../media/Forms_Pro2.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

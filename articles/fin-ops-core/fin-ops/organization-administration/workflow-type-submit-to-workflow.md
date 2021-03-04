@@ -98,3 +98,6 @@ ms.locfileid: "4797297"
 [ワークフロー::activateFromWorkflowSequenceNumber メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
 [ワークフロー::activateFromWorkflowConfigurationId メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

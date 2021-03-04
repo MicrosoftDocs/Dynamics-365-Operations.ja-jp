@@ -79,3 +79,6 @@ Microsoft Dynamics AX 2012 Test Data Transfer Tool (ベータ) は、ツール�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
