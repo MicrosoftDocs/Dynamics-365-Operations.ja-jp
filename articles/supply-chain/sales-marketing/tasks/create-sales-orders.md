@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431767"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974813"
 ---
 # <a name="create-sales-orders"></a>販売注文を作成する。
 
@@ -39,7 +38,7 @@ ms.locfileid: "4431767"
 
 ## <a name="enter-sales-order-line-details"></a>販売注文ヘッダーの明細行を入力
     
-組織で販売される製品は、構成、色、サイズ、スタイルなどの分析コードによって差別化されたバリアントが展開されている場合があります。 また製品には、サイト、倉庫、パレットなどの保管分析コードや、バッチ番号、シリアル番号などのラッキング分析コードが設定されている場合があります。 これらの分析コードが割り当てられていると、注文明細行でこれらの分析コードの値を選択する必要があります。 注文入力の効率を向上させるために、注文のグリッドに個々の分析コードのフィールドを追加することができます。
+組織で販売される製品は、構成、色、サイズ、スタイルなどの分析コードによって差別化されたバリアントが展開されている場合があります。 また製品には、サイト、倉庫、パレットなどの保管分析コードや、バッチ番号、シリアル番号などのトラッキング分析コードが設定されている場合があります。 これらの分析コードが割り当てられていると、注文明細行でこれらの分析コードの値を選択する必要があります。 注文入力の効率を向上させるために、注文のグリッドに個々の分析コードのフィールドを追加することができます。
     
 1. **販売注文明細行** セクションで、**販売注文明細行** を選択します。
 2. **分析コード** を選択します。
@@ -68,6 +67,3 @@ ms.locfileid: "4431767"
     **合計** ページは、注文全体に関する詳細を表示します。 これには、小計金額が含まれます。小計金額は、明細行割引を加味して調整された明細行の正味金額、注文レベルの割引を加味して調整済の合計請求金額、手数料、売上税、顧客の与信限度額の条件、およびその他の金額の合計です。 請求金額は、顧客の請求書に表示される金額です。  
     
 3. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

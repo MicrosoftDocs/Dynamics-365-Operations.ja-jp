@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 24d57982981ca7b72e43c086ace381e420acb06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672447"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975689"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting の使用を開始する 
 
@@ -45,9 +44,11 @@ ms.locfileid: "4672447"
 法人の財務諸表を作成、生成するには、その法人に次の情報を設定する必要があります。
 
 -   会計カレンダー
--   Ledger
+-   会計
 -   勘定科目表
 -   通貨
+-   少なくともひとつの勘定への取引の転記
+-   MainAccount が **総勘定元帳 > 元帳の設定 > Financial Reporting の設定** の選択された列に一覧表示されます
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Financial Reporting へのセキュリティ アクセス権限を取得する
 財務報告の機能は、セキュリティ ロールによって適切な権限、職務が割り当てられたユーザーが使用できます。 次のセクションでは、関連するロールとともにこれらの権限と職務を表示します。
@@ -173,6 +174,3 @@ ms.locfileid: "4672447"
 ## <a name="additional-resources"></a>追加リソース
 - [財務諸表の表示](view-financial-reports.md)
 - [財務諸表のレポート ツリー定義](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

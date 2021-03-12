@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432157"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974988"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>販売注文の Sales と Supply Chain Management の間の直接同期
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -64,8 +65,8 @@ Sales と Supply Chain Management との間での販売注文の直接同期の�
 
 | サプライ チェーン マネジメント  | 販売注文             |
 |-------------------------|-------------------|
-| CDS 販売注文ヘッダー | SalesOrders       |
-| CDS 販売注文明細行   | SalesOrderDetails |
+| Dataverse 販売注文ヘッダー | SalesOrders       |
+| Dataverse 販売注文明細行   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
@@ -75,7 +76,7 @@ Sales で注文を作成する必要はありません。 代わりに、Supply 
 
 Supply Chain Management では、テンプレートのフィルタは関連する販売注文のみが同期に含まれていることを保証します。
 
-- 販売注文では、受注顧客と請求顧客の両方が Sales から生成されて同期に含める必要があります。 Supply Chain Management で、**OrderingCustomerIsExternallyMaintained** および **InvoiceCustomerIsExternallyMaintained** フィールドは、データ エンティティからの販売注文をフィルタするために使用されます。
+- 販売注文では、受注顧客と請求顧客の両方が Sales から生成されて同期に含める必要があります。 Supply Chain Management で、**OrderingCustomerIsExternallyMaintained** および **InvoiceCustomerIsExternallyMaintained** 列は、データ テーブルからの販売注文をフィルタするために使用されます。
 - Supply Chain Management で販売注文を確定する必要があります。 **出荷済** や **請求済** など、確認済の販売注文または処理ステータスの高い販売注文のみが Sales に同期されます。
 - 販売注文を作成または変更した後、Supply Chain Management で **販売合計の計算** のバッチ ジョブを実行する必要があります。 販売合計が計算された販売注文のみが Sales に同期されます。
 
@@ -103,10 +104,10 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-新しいフィールドが **注文** エンティティに追加され、ページに表示されます。
+新しい列が **注文** テーブルに追加され、ページに表示されます。
 
 - **外部で管理** - 注文が Supply Chain Management から来る場合、このオプションを **はい** に設定します。
-- **処理状態** - このフィールドには、Supply Chain Management の注文の処理状態が表示されます。 使用可能な値は次のとおりです。
+- **処理状態** - この列には、Supply Chain Management のオーダーの処理状態が表示されます。 使用可能な値は次のとおりです。
 
     - **ドラフト** – Sales で受注が作成される場合の初期ステータス。 Sales では、この処理ステータスの注文のみ編集することができます。
     - **有効** – **有効** ボタンを使用すると、受注後のステータスが Sales で有効になります。
@@ -141,7 +142,7 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 - **設定** &gt; **管理** &gt; **システム設定** &gt; **Sales** へと順に進み、次の設定が使用されていることを確認してください。
 
     - **システム プライジング計算システムの使用** オプションが、**はい** に設定されている。
-    - **割引の計算方法** フィールドが、**明細行品目** に設定されている。
+    - **割引の計算方法** 列が、**明細行品目** に設定されている。
 
 ### <a name="setup-in-supply-chain-management"></a>Supply Chain Management での設定
 
@@ -151,10 +152,10 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 
 1. **販売とマーケティング** \> **設定** \> **販売注文** \> **販売元** に移動します。
 2. **新規** を選択し、新しい販売元を作成します。
-3. **販売元** フィールドに、**SalesOrder** のような販売元の名前を入力します。
-4. **説明** フィールドに、**販売からの販売注文** のような説明を入力します。
+3. **販売元** 列に、**SalesOrder** のような販売元の名前を入力します。
+4. **説明** 列に、**Sales からの販売注文** のような説明を入力します。
 5. **発生元タイプの割り当て** チェック ボックスを選択します。
-6. **販売元タイプ** フィールドを **販売注文統合** に設定します。
+6. **販売元タイプ** 列を **販売注文統合** に設定します。
 7. **保存** を選択します。
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>販売注文のセット アップ (Sales から Supply Chain Management) - ダイレクト データ統合プロジェクト
@@ -181,12 +182,12 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 > [!NOTE]
-> **支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+> **支払条件**、**運賃条件**、**配送条件**、**送付方法**、**配送モード** 列は、既定のマッピングの一部ではありません。 これらの列をマップするには、テーブル間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ統合のテンプレート マッピングの例を示しています。
 
 > [!NOTE]
-> マッピングでは、Supply Chain Management に、または Supply Chain Management から Sales に同期するフィールド情報を表示します。
+> マッピングでは、Supply Chain Management に、または Supply Chain Management から Sales に同期する列情報を表示します。
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>販売注文 (Supply Chain Management から Sales) - 直接: OrderHeader
 
@@ -207,6 +208,3 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 ## <a name="related-topics"></a>関連トピック
 
 [見込顧客を現金化](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

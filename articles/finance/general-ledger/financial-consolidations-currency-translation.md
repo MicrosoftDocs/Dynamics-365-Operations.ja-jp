@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445304"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975767"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -125,7 +124,7 @@ ms.locfileid: "4445304"
 
 基本プロパティを定義した後、**明細行** を選択して実際の処理ルールを定義できます。 削除には 2 つのオプションがあります。正味金額の変更を削除、または固定金額を定義することができます。
 
-ソースの勘定を選択します。 アスタリスク (\*) をワイルドカード文字として使用できます。 たとえば、**1\*** は **1** で始まるすべての勘定を配賦のデータのソースとして選択します。
+ソースの勘定を選択します。 アスタリスク (\*) をワイルドカード文字として使用できます。 たとえば、**1\**は* 1** で始まるすべての勘定を配賦のデータのソースとして選択します。
 
 ソースの勘定を選択した後、**勘定仕様** フィールドを使用して相手方の会社から使用されている勘定を指定してください。 ソースの勘定で定義されている同じ主勘定を使用するには、**ソース** を選択します。 **ユーザー定義** を選択する場合、相手方の勘定を指定する必要があります。
 
@@ -182,6 +181,3 @@ ms.locfileid: "4445304"
 
 ## <a name="generating-consolidated-financial-statements"></a>連結された財務諸表の生成
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

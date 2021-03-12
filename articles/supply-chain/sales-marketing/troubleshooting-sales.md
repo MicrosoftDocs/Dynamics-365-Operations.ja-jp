@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431920"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974788"
 ---
 # <a name="troubleshoot-sales-orders"></a>販売注文に関するトラブルシューティング
 
@@ -59,6 +58,8 @@ ms.locfileid: "4431920"
 *作成済* 状態の販売注文および返品注文のみをキャンセルできます。 詳細については、[返品注文のキャンセル](../service-management/cancel-return-order.md) を参照してください。
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>販売注文をキャンセルしようとすると、"予約に依存する作業が作成されているため、"引当を削除できません" というエラーを受信します。
+
+エラーコード: WAX4661
 
 作業が販売注文に関連付けられている場合、その作業がキャンセルされて取り消されるまで、販売注文をキャンセルすることはできません。 この要件は、販売注文に関連付けられている作業が終了されている場合にも適用されます。
 
@@ -111,6 +112,3 @@ Supply Chain Management は、転記された請求書のコミッションの�
 このバンドル品目は、発注書に対しては使用できません。なぜなら、このバンドル品目の販売注文明細行を確認すると、数量が *0* (ゼロ) になり、ステータスが *キャンセル済* であることがわかります。 この動作は仕様です。 この販売注文では、バンドル品目のコンポーネントのみが購入されます。 バンドル品目自体は購入されません。
 
 バンドルを購入する必要がある場合、この機能は実際には収益認識シナリオのために設計されているため、バンドル品目としてマークする必要があるかどうかを検討します。 バンドル品目についての詳細情報は、[バンドル](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

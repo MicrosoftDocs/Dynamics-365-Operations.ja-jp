@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f4c33191e9a3b8f7c211093ff733f6cd025cb9bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432332"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973888"
 ---
 # <a name="transportation-management-engines"></a>輸送管理エンジン
 
@@ -89,7 +88,7 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | **ゾーン エンジン**                                | メタデータはゾーン マスターで直接設定する必要があります。                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **輸送時間エンジン** および **マイレージ エンジン** | マイレージ エンジンのコンフィギュレーション設定フォームから直接メタデータを取得します。                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **レート エンジンのメタデータの例** 輸送管理エンジンには、出荷元住所の ID、目的地の都道府県および国/地域、出荷の開始と終了地点が必要です。 これらの要件を使用して、メタデータは、次の表のデータのようになります。 また、テーブルには、どのような入力データが必要かに関する情報も含まれます。
+  **レート エンジンのメタデータの例** 輸送管理エンジンには、出荷元住所の ID、目的地の都道府県および国/地域、出荷の開始と終了地点が必要です。 これらの要件を使用して、メタデータは、次の表のデータのようになります。 また、テーブルには、どのような入力データが必要かに関する情報も含まれます。
 -   この情報は、**レート基準タイプ** ページの **配送管理** &gt; **設定** で定義します。
 
 | 順番 | 氏名                          | フィールド タイプ | データ型 | 参照タイプ    | 必須 |
@@ -99,6 +98,3 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | 3        | 発送先開始郵便番号 | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 4        | 発送先終了郵便番号   | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 5        | 発送先国           | 割り当て | 文字列    | 国/地域 |           |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

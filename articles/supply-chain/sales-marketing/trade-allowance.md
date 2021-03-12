@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15f324f66240380f698dbc67b95f3bea19314a18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431919"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974913"
 ---
 # <a name="trade-allowance-management"></a>取引割引管理
 
@@ -200,6 +199,3 @@ ms.locfileid: "4431919"
 
 プロモーションに対するさまざまなパフォーマンス測定の分析概要をさらに取得するには、分析ビューを使用できます。 分析ビューに移動するには、**販売およびマーケティング** \> **取引割引** \> **取引割引契約** の順にクリックします。 アクション ウィンドウで、**分析** をクリックします。 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSRatingProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c54e7457813774027debd301d9a0bf8ce1b6d47
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ceb2b7a5edcee6e248798a6bee114c7da7ecb18a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646407"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973963"
 ---
 # <a name="rating-profiles"></a>評価プロファイル
 
@@ -61,6 +60,3 @@ ms.locfileid: "4646407"
 
 > [!NOTE]
 > **出荷配送業者** ページで作成したプロファイルは、**評価プロファイル** ページにも表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

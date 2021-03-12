@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 615d17c71b904d426081d4c57492ba7e95c2c749
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: ea89d54b9b8287d9c81b75a99c5808b5deb05cef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976094"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>分割後の逓減残高による減価償却
 
@@ -45,6 +44,3 @@ ms.locfileid: "4650671"
 元の資産に対して減価償却する金額は USD1,822.25 です。 この金額は、分割トランザクションが転記される前の (USD9,111.25) NBV、分割トランザクション (-USD8,000) の転記中に生成される取得原価調整、分割トランザクション中 (USD711) に生成される減価償却調整と等しくなります。 したがって、2 年目の減価償却は (1,822.25 × 18 パーセント) ÷ 12 = USD27.33です。
 
 初年度の新しい固定資産に対して減価償却する金額は (8,000 × 18 パーセント) ÷ 12 = USD120 です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

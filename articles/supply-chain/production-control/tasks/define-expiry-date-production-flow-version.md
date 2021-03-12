@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 97ac33d28a49ad0f2a3956ad65b159e4ec4785c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a595ca4ff9f6753631303b656d56735320a22a69
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975088"
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>生産フロー バージョンの有効期限の定義
 
@@ -41,6 +40,3 @@ ms.locfileid: "4431668"
 6. [有効期限] フィールドに日時を入力します。
     * 有効期限においては、新しいバージョンが開始されたり、または有効化されません。 また、この生産フローのジョブを作成するか、または開始することもできなくなります。 しかし、有効期限以降に開始したジョブは完了できます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
