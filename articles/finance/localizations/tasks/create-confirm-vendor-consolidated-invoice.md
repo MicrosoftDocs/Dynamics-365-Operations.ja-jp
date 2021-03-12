@@ -11,47 +11,46 @@ ms.technology: ''
 ms.search.form: VendConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc8812217cd9b67aca74655fe1d520e7778259d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0839a6faf33385f5ba59c4e668110142d1c17642
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408194"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005717"
 ---
-# <a name="create-and-confirm-a-vendor-consolidated-invoice"></a><span data-ttu-id="79e8e-103">仕入先月次締め請求書の作成および確認</span><span class="sxs-lookup"><span data-stu-id="79e8e-103">Create and confirm a vendor consolidated invoice</span></span>
+# <a name="create-and-confirm-a-vendor-consolidated-invoice"></a><span data-ttu-id="3f15e-103">仕入先月次締め請求書の作成および確認</span><span class="sxs-lookup"><span data-stu-id="3f15e-103">Create and confirm a vendor consolidated invoice</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="79e8e-104">日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。</span><span class="sxs-lookup"><span data-stu-id="79e8e-104">In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount.</span></span> 
+<span data-ttu-id="3f15e-104">日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。</span><span class="sxs-lookup"><span data-stu-id="3f15e-104">In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount.</span></span> 
 
 
 
-<span data-ttu-id="79e8e-105">このタスクでは、仕入先の月次締め請求書の作成と確定について説明します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-105">This task walks you through creating and confirming a vendor consolidated invoice.</span></span>
+<span data-ttu-id="3f15e-105">このタスクでは、仕入先の月次締め請求書の作成と確定について説明します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-105">This task walks you through creating and confirming a vendor consolidated invoice.</span></span>
 
 
 
-<span data-ttu-id="79e8e-106">このタスクを完了するためには、仕入請求書の転記が完了している必要があります。</span><span class="sxs-lookup"><span data-stu-id="79e8e-106">Before you can complete this task, you must have posted purchase invoices.</span></span> 
+<span data-ttu-id="3f15e-106">このタスクを完了するためには、仕入請求書の転記が完了している必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f15e-106">Before you can complete this task, you must have posted purchase invoices.</span></span> 
 
 
 
-<span data-ttu-id="79e8e-107">このタスクは デモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="79e8e-107">This task was created using the demo data company JPMF.</span></span>
+<span data-ttu-id="3f15e-107">このタスクは デモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="3f15e-107">This task was created using the demo data company JPMF.</span></span>
 
-1. <span data-ttu-id="79e8e-108">[買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-108">Go to Accounts payable > Periodic tasks > Consolidated invoice.</span></span>
-2. <span data-ttu-id="79e8e-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79e8e-109">Click New.</span></span>
-3. <span data-ttu-id="79e8e-110">[実行日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-110">In the Execution date field, enter a date.</span></span>
-4. <span data-ttu-id="79e8e-111">[以下で指定する月次締め日の使用] チェックボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="79e8e-111">Select or clear the Use consolidation date specified below check box.</span></span>
-    * <span data-ttu-id="79e8e-112">月次締め日を上書きする場合は、[月次締め日の使用] のスライダーを「はい」に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79e8e-112">If you want to override the consolidation date, you must set the Use consolidation date slider to be 'Yes'.</span></span>  
-5. <span data-ttu-id="79e8e-113">[月次締め日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-113">In the Consolidation date field, enter a date.</span></span>
-    * <span data-ttu-id="79e8e-114">例: 月次締め日が 25 日の場合、このスライダーを「はい」に設定していれば、24 日に連結を実行できます。</span><span class="sxs-lookup"><span data-stu-id="79e8e-114">Example: When the consolidation date is the 25th, you can run the consolidation on the 24th if you set this slider to 'Yes'.</span></span> <span data-ttu-id="79e8e-115">[月次締め日] は手動で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79e8e-115">You will have to manually specify a Consolidation date.</span></span>  
-6. <span data-ttu-id="79e8e-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79e8e-116">Click OK.</span></span>
-    * <span data-ttu-id="79e8e-117">生成された月次締め請求書を確認します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-117">Verify the generated  consolidate invoice.</span></span>  
-7. <span data-ttu-id="79e8e-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="79e8e-118">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="79e8e-119">グリッド内の [月次締め請求書] の [締め ID] をクリックして [月次締め請求書] ページの詳細表示に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="79e8e-119">Switch to the detail view of the Consolidated invoice page by clicking on the Consolidation ID of the Consolidated invoice in the grid.</span></span>  
-    * <span data-ttu-id="79e8e-120">請求済の発注書が月次締め請求書に含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="79e8e-120">Verify that the invoiced purchase orders are included in the consolidated invoice.</span></span>  
-8. <span data-ttu-id="79e8e-121">[確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="79e8e-121">Click Confirm.</span></span>
+1. <span data-ttu-id="3f15e-108">[買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-108">Go to Accounts payable > Periodic tasks > Consolidated invoice.</span></span>
+2. <span data-ttu-id="3f15e-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f15e-109">Click New.</span></span>
+3. <span data-ttu-id="3f15e-110">[実行日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-110">In the Execution date field, enter a date.</span></span>
+4. <span data-ttu-id="3f15e-111">[以下で指定する月次締め日の使用] チェックボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="3f15e-111">Select or clear the Use consolidation date specified below check box.</span></span>
+    * <span data-ttu-id="3f15e-112">月次締め日を上書きする場合は、[月次締め日の使用] のスライダーを「はい」に指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f15e-112">If you want to override the consolidation date, you must set the Use consolidation date slider to be 'Yes'.</span></span>  
+5. <span data-ttu-id="3f15e-113">[月次締め日] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-113">In the Consolidation date field, enter a date.</span></span>
+    * <span data-ttu-id="3f15e-114">例: 月次締め日が 25 日の場合、このスライダーを「はい」に設定していれば、24 日に連結を実行できます。</span><span class="sxs-lookup"><span data-stu-id="3f15e-114">Example: When the consolidation date is the 25th, you can run the consolidation on the 24th if you set this slider to 'Yes'.</span></span> <span data-ttu-id="3f15e-115">[月次締め日] は手動で指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f15e-115">You will have to manually specify a Consolidation date.</span></span>  
+6. <span data-ttu-id="3f15e-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f15e-116">Click OK.</span></span>
+    * <span data-ttu-id="3f15e-117">生成された月次締め請求書を確認します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-117">Verify the generated  consolidate invoice.</span></span>  
+7. <span data-ttu-id="3f15e-118">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f15e-118">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="3f15e-119">グリッド内の [月次締め請求書] の [締め ID] をクリックして [月次締め請求書] ページの詳細表示に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="3f15e-119">Switch to the detail view of the Consolidated invoice page by clicking on the Consolidation ID of the Consolidated invoice in the grid.</span></span>  
+    * <span data-ttu-id="3f15e-120">請求済の発注書が月次締め請求書に含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="3f15e-120">Verify that the invoiced purchase orders are included in the consolidated invoice.</span></span>  
+8. <span data-ttu-id="3f15e-121">[確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3f15e-121">Click Confirm.</span></span>
 
