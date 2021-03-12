@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a149b35c6964166207effc799a02cd4c59bbb843
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445114"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968732"
 ---
 # <a name="mass-financial-period-close"></a>財務期間一括終了
 
@@ -42,6 +41,3 @@ ms.locfileid: "4445114"
 11. **期間の状態の更新** を選択し、状態を **保留中**、**オープン**、または **完全に閉じる** に設定します。 **オープン** は、ユーザーにアクセス許可がある場合に転記できる期間を示します。 **保留中** は、期間は転記できないが、再度開くことができることを意味します。 **完全に閉じる** は、期間が終了され、開くことができないことを意味します。 調整は転記できません。 すべての調整と監査が完了するまで、期間を **完全に閉じる** と設定しないようにお勧めします。  
 12. **更新プログラム** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

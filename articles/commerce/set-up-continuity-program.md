@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16081
 ms.assetid: 426a9be7-a931-4780-b372-e06f6083dd60
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 738841407b63ef604da092b7c8f4d0f2064d3886
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 941685c9bad3b8f288e2acdf31bb25c7bcaa7cba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413631"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969754"
 ---
 # <a name="set-up-continuity-programs-for-call-centers"></a>コール センターの連続プログラムの設定
 
@@ -50,6 +49,3 @@ ms.locfileid: "4413631"
 - **連続行数の拡張** (必要な場合) – 連続イベントを繰り返す回数を拡張します。 これにより出荷の繰り返しは、コール センター パラメーターの **連続繰り返しのしきい値** フィールドで設定されている制限を超えて拡張することができます。
 - **連続更新の実行** (必要な場合) – 連続プログラムと親連続販売注文の間の差を同期します。
 - **連続の親明細行と注文を閉じる** – 連続注文を閉じます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

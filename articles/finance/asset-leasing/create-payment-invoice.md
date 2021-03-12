@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32618814d00cb1e1f1082169a64b187cce1e76b4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445374"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969581"
 ---
 # <a name="create-payment-invoices"></a>支払請求書の作成
 
@@ -49,6 +48,3 @@ ms.locfileid: "4445374"
 6. トランザクションが転記された後は、 リース帳簿の **負債トランザクション** を選択すると、取引情報やリース負債の帳簿価額を確認することができます。
 
     支払スケジュールで、**転記済仕訳帳** チェック ボックスがオンになり、明細行に請求仕訳帳番号が表示されます。 支払仕訳とその仕訳の入力が作成された後は、再作成する前に入力を取り消す必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

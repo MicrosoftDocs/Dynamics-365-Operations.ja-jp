@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: aa4a4975fc2ccdd91d5beb32060d68f7e77dbcb7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: e0445046d8016dfa2c02c1ff1a05bdd148f9409a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645652"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969256"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 
@@ -110,6 +109,3 @@ Finance 分析情報のパブリック プレビューは、米国、ヨーロ�
 ## <a name="privacy-notice"></a>プライバシー通知
 
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

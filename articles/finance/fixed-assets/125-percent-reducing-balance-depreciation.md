@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5af050fb6099b583be4e9c60ba56dacf38d31c08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9511917d72a1bb45daf2ce7e4b56d94c17825daf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445305"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969231"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125% 逓減残高による減価償却
 
@@ -75,7 +74,7 @@ ms.locfileid: "4445305"
 | 耐用年数             | 5      |
 | 年次減価償却率 | 25%    |
 
-125% 低減残高法では、125% を耐用年数で除算します。 この比率は、資産の正味簿価額で乗算され、各年の減価償却金額が決まります。
+125% 逓減残高による減価償却法では、125% を耐用年数で除算します。 この比率は、資産の正味簿価額で乗算され、各年の減価償却金額が決まります。
 
 | 期間 | 年次減価償却額の計算 | 簿価額                    | 年末の正味簿価額 |
 |--------|-----------------------------------------------|-------------------------------|---------------------------------------|
@@ -88,6 +87,3 @@ ms.locfileid: "4445305"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

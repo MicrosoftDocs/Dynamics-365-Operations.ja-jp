@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0538701588b9c71dff4c538711606913a359de6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 541b7ecca5c1c36999f573d6d0f2dc0c9e901631
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967586"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>移動平均フォールバック コスト シーケンス
 
@@ -46,6 +45,3 @@ ms.locfileid: "4432150"
     - **有効な原価 – 品目価格** – 在庫が定期的にマイナスになり、同時に、トランザクション量が高い業務プロセスを使用している場合、組織でパフォーマンスの問題が発生する可能性があります。 この設定は、これらのパフォーマンスの問題を軽減するのに役立ちます。
 
 ![在庫会計パラメーター](media/inventory-accounting-parameters.png "在庫会計パラメーター")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

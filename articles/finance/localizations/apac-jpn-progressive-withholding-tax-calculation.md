@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265164
 ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab4ad1526f8cc2c5d162507482d52a246a0d0797
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4085bfbcee7f9efbf2bafae26e96a2caed6b3499
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408132"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968352"
 ---
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 
@@ -127,6 +126,3 @@ ms.locfileid: "4408132"
 |         2,001 ～ 0         | 20% |                    2,545.00                     |         509.00          |
 |                         |            |        <strong>合計 WHT 金額</strong>        | <strong>759.00</strong> |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

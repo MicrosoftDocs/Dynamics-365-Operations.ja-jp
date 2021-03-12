@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413661"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970106"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) か Cloud POS かの選択
 
@@ -105,6 +104,3 @@ Windows 用 MPOS は、オフライン モードをサポートします。 オ�
 - **ハードウェア デバイス/周辺機器** – Retail POS システムの 1 つの重要な側面は、プリンター、キャッシュ ドロワー、および支払ターミナルなどの POS 周辺機器を使用する能力です。 使用可能なすべての POS オプションは周辺機器を使用できますが、Windows 用 MPOS のみそれらを直接サポートします。 その他のすべてのアプリケーションには、1 つまたは複数のハードウェア ステーションが必要です。 この方法により柔軟性が増しますが、追加コンポーネントは配置、コンフィギュレーション、およびサービスの対象となる必要があります。
 - **システム要件** – POS アプリケーションのシステム要件が異なります。 選択を行う前に、最新の情報を確認してください。 たとえば、ブラウザーで CPOS が実行されるため、より広範囲のオペレーティング システムをサポートします。 システム要件に関する詳細については、「[クラウド配置のシステム要件](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements)」を参照してください。
 - **配置およびサービス** – アプリケーションおよび配置の選択に応じて、配置とサービス要件の複雑度が異なります。 たとえば、クラウド ホスト環境の CPOS 展開では、すべてのデバイスにインストールおよび更新は必要ありません。 したがって、この方法は、複雑度および原価を大幅に減少します。 ただし、オフライン モードを有効にしてすべてのレジスターに MPOS を配置する場合、共有ハードウェア ステーションも配置し、管理する必要があるエンドポイントの数が大幅に増加します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f08906c14f80b07368d88d820acae83cf1157e6c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413864"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969954"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>販売時点管理 (POS) の在庫検索
 
@@ -115,6 +114,3 @@ ms.locfileid: "4413864"
 | 適用の対象         | 選択した場所の選択したバリアントの組み合わせに対する ATP 情報を表示します。 |
 | すべての場所を表示します   | 標準の在庫検索ビューに切り替え、店舗ロケーター グループ、および **標準/既定** タイプの流通センターのすべての店舗間で品目バリアントの使用可能な在庫情報を強調します。 |
 | 製品の詳細表示 | 関連付けられている製品マスターの **製品の詳細** ページに、ユーザーをリダイレクトします。 |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

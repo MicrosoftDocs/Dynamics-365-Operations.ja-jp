@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcfa65881aee2ef1d9bd6e04d5c6b398cfc6e4c6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7007b824c1d58cbe99f122feb0cf1f194f8dd04
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408127"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968295"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 
@@ -75,6 +74,3 @@ ms.locfileid: "4408127"
     * 正しい結果が作成されていることを確認します。  
 13. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetComponentList_JP, AssetComponentPriceCalcDropDialog_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec5f2f12244499fb66a809f645144f7b16780f25
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4619b6b2809ba08e3501702158141199882ea258
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408164"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968277"
 ---
 # <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 
@@ -71,6 +70,3 @@ ms.locfileid: "4408164"
     * 貸方金額を変更できます。  
 8. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,14 +3,13 @@ title: Dynamics 365 Commerce 評価環境のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4413908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969904"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のプロビジョニング
 
@@ -117,7 +116,7 @@ Azure コネクタ を LCS プロジェクトに追加するには、[Azure Reso
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Commerce Scale Unit (CSU) を初期化する (クラウド)
 
-CSU を初期化するためには、次の手順に従います。
+CSU を初期化するには、次の手順に従います。
 
 1. **クラウド ホスト環境** ビュー内で、リストから環境を選択します。
 1. 右側の環境ビューで、**完全な詳細** を選択します。 環境の詳細のビューが表示されます。
@@ -130,6 +129,22 @@ CSU を初期化するためには、次の手順に従います。
 1. 続行する前に、CSU の状態が **成功** となっていることを確認します。 初期化には約 2 ~ 5 時間かかります。
 
 環境の詳細ビューに **管理** リンクが見つからない場合は 、Microsoft の連絡先に問い合わせてください。
+
+デプロイのプロセスでは、次のエラー メッセージが表示される場合があります。
+
+> 評価 (デモ/テスト) 環境では、スケール ユニット コネクタ アプリケーションを本部の \<application ID\> に登録する必要があります。
+
+CSU の初期化が失敗してこのエラー メッセージが表示された場合は、アプリケーション ID (グローバル一意識別子 : GUID) をメモし、次のセクションの手順に従って CSU デプロイ アプリケーションをCommerce 本部に登録します。
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Commerce 本部に CSU デプロイ アプリケーションを登録します (必要に応じて)
+
+Commerce 本部に CSU デプロイ アプリケーションを登録するには、次の手順に従います。
+
+1. Commerce 本部で、**システム管理 \> 設定 \> Azure Active Directory アプリケーション** に移動します。
+1. **クライアント ID** 列に、受信した CSU 初期化エラー メッセージのアプリケーション ID を入力します。
+1. **名前** 列に、説明用テキスト (例 : **CSU Eval**) を入力します 。
+1. **ユーザー ID** 列に、**RetailServiceAccount** と入力します。
+1. LCS から CSU の初期化とデプロイを再試行します。
 
 ### <a name="initialize-e-commerce"></a>E コマースの初期化
 
@@ -176,6 +191,3 @@ Commerce 評価環境のプロビジョニングと構成のプロセスを続�
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

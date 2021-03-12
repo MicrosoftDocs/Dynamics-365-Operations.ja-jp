@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d4ce0343ac766b30d532be0866a381dc520fd462
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ea79747e8e7c078baa6e270ecebf88c4832e079
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445289"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968807"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>仕訳帳の税金計算遅延の有効化
 [!include [banner](../includes/banner.md)]
@@ -65,6 +64,3 @@ ms.locfileid: "4445289"
 4. **設定** タブで、**税金計算遅延** オプションを **はい** に設定します。
 
 ![一般仕訳帳ページの画像](media/delayed-tax-calculation-journal-header.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

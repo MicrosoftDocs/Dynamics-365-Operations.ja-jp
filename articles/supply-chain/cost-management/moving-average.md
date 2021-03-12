@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0957fee111ec1fd5bb66951126869cf46d88b36e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431804"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967486"
 ---
 # <a name="moving-average"></a>移動平均
 
@@ -155,6 +154,3 @@ ms.locfileid: "4431804"
 
 > [!NOTE]
 > **トランザクション時間で並べ替え** オプション使用して、一般会計と在庫を一致させることはできません。 レポートは、**転記日付** オプションを使用して印刷する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

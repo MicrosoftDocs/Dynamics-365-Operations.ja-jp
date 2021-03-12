@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50ee568df492bcd811d2fefb1784bb55b50384b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad18063e0a66a4aac0ebef7f0ce45c73137abcc7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445116"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968532"
 ---
 # <a name="journalize-posted-journal-entries"></a>転記された仕訳帳の仕訳入力
 
@@ -40,6 +39,3 @@ ms.locfileid: "4445116"
 9. **OK** をクリックして、フィルター ページを閉じます。
 10. **OK** をクリックして仕訳入力プロセスを開始します。 レポートは、プロセスが完了した後生成されます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

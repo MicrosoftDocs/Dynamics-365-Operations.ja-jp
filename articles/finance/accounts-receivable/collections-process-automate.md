@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445057"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969704"
 ---
 # <a name="collections-process-automation"></a>回収プロセスの自動化
 
@@ -118,6 +117,3 @@ ms.locfileid: "4445057"
 |     売掛金パラメーター > 回収プロセスの自動化     |     督促状を自動的に転記する           |     督促状アクション タイプは、自動化時に督促状を転記します。                                      |
 |     売掛金パラメーター > 回収プロセスの自動化     |     自動化に使用する活動を作成する                |     活動以外のアクション タイプの活動を作成して閉じることで、アカウントで行われたすべての自動化されたステップを表示することができます。        |
 |     売掛金パラメーター > 回収プロセスの自動化     |     回収プロセスの自動化を維持する日数     |     回収履歴を格納する日数を定義します。                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

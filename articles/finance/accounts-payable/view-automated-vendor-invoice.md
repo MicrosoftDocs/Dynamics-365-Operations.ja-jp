@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4445358"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969729"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>仕入先請求書の自動化の結果を表示
 
@@ -38,6 +37,3 @@ ms.locfileid: "4445358"
 - **一時停止** – **買掛金勘定パラメーター** ページで定義されている自動化されたプロセスが実行されましたが、プロセスの少なくとも 1 つの手順が失敗しました。 **一時停止** 状態は、**自動化された処理に含める** フィールドが **いいえ** に設定されている場合にも適用されます。 **最新の結果の表示** を選択すると、失敗を表示できます。
 - **ワークフロー内** – インポートした請求書は、自動化されたワークフローへの送信プロセスまたは手動でワークフロー システムに送信されました。
 - **ワークフローの完了** – インポートされた請求書に対してのワークフロー プロセスが完了しました。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

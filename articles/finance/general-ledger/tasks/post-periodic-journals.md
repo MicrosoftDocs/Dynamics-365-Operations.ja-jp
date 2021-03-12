@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f721a05c8b74f1cfcf43177b73129751483650e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445213"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968507"
 ---
 # <a name="post-periodic-journals"></a>定期処理仕訳帳の転記
 
@@ -58,6 +57,3 @@ ms.locfileid: "4445213"
 27. **定期処理仕訳帳番号** フィールドで、値を入力または選択します。
 28. 一覧で、選択された行のリンクをクリックします。
 29. **OK** をクリックします。 定期処理仕訳帳は条件および設定に応じて、確認、承認、または転記できます。   
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

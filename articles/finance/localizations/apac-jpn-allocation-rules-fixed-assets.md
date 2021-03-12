@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10194
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ad9a9bdf8afdbd8713c973cd8a70781b51c365c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5161013e614583be11048c78d171369a970d9584
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408140"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968362"
 ---
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
@@ -43,7 +42,7 @@ ms.locfileid: "4408140"
 
 ### <a name="rounded-up-currency"></a>通貨の切り上げ
 
-この例では、固定資産の減価償却費の金額が 170 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも大きい小数の通貨単位は、もっとも近い通貨単位に切り上げることを指示する丸めルールを設定します。このシナリオでの分析コードごとの減価償却費の計算方法をここに示します。
+この例では、固定資産の減価償却費の金額が 170 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも大きい小数の通貨単位は、もっとも近い通貨単位に切り上げることを指示する丸めルールを設定します。 このシナリオでの分析コードごとの減価償却費の計算方法です。
 
 -   分析コードごとの元の減価償却費 = 1.70 通貨単位
 -   切り上げた分析コードごとの減価償却費 = 2.00 通貨単位
@@ -51,7 +50,7 @@ ms.locfileid: "4408140"
 
 ### <a name="rounded-down-currency"></a>切り下げた通貨
 
-この例では、固定資産の減価償却費の金額が 120 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも小さい小数の通貨単位は、もっとも近い通貨単位に切り下げることを指示する丸めルールを設定します。 このシナリオでの分析コードごとの減価償却費の計算方法をここに示します。
+この例では、固定資産の減価償却費の金額が 120 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも小さい小数の通貨単位は、もっとも近い通貨単位に切り下げることを指示する丸めルールを設定します。 このシナリオでの分析コードごとの減価償却費の計算方法です。
 
 -   分析コードごとの元の減価償却費 = 1.20 通貨単位
 -   切り下げた分析コードごとの減価償却費 = 1.00 通貨単位
@@ -61,6 +60,3 @@ ms.locfileid: "4408140"
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

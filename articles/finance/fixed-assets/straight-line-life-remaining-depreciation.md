@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445303"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969007"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>耐用年数残減価償却について
 
@@ -38,7 +37,7 @@ ms.locfileid: "4445303"
 
 ### <a name="calendar"></a>カレンダー
 
-***償却年*** フィールドで **カレンダー** を選択すると、会計カレンダーを別に定義している場合でも、1 年は 1 月 1 日から 12 月 31 日までとみなされます。 **暦年** 選択すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、償却基礎額は、正味簿価額から救済価格を差し引いた額です。 このトピックの後の例では、計算列の最初の式の分子が減価償却基準です。 償却年として **暦年** を選択すると、**期間の頻度** フィールドで次のオプションが使用できます。
+**_償却年_*_フィールドで **カレンダー** を選択すると、会計カレンダーを別に定義した場合でも、1 年は 1 月 1 日から 12 月 31 日までとみなされます。_* カレンダー** オプション を使用すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、償却基礎額は、正味簿価額から救済価格を差し引いた額です。 このトピックの後の例では、計算列の最初の式の分子が減価償却基準です。 償却年として **暦年** を選択すると、**期間の頻度** フィールドで次のオプションが使用できます。
 
 -   **年 1 回** を選択すると、12 月 31 日に金額が転記されます。
 -   **月 1 回** を選択すると、各カレンダー月の最終日に 1 か月分の金額が転記されます。
@@ -80,6 +79,3 @@ ms.locfileid: "4445303"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

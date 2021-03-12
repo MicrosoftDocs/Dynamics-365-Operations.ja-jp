@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26614d319453041177e8072793f09f52ebfd51fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413852"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969829"
 ---
 # <a name="set-up-assortments"></a>品揃えの設定
 
@@ -55,6 +54,3 @@ ms.locfileid: "4413852"
 2. チャネル、または品揃えが適用されているチャネルの上位レベル グループを選択します。
 3. 製品カテゴリ、個々の製品、または製品バリアントを品揃えに追加します。 特定のカテゴリにすべての製品を含めたり、選択した製品を品揃えに含まれているカテゴリから除外したりすることができます。
 4. 品揃えを公開します。 品揃えを公開すると、品揃えスケジューラが自動的に実行されます。 このプロセスにより、製品の一覧が生成されます。 このプロセスが完了すると、製品の品揃えが割り当てられているチャネルで製品が利用可能になります。 公開されている品揃えを変更したり、品揃えが割り当てられているチャネルを変更したりする場合には、品揃えを更新する必要があります。 変更時に品揃えを更新するには、品揃えスケジューラをバッチ ジョブとして実行できます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendTable, PurchTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 330b3ec0f36df63b8a42c1018d0d3df5a349fead
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c80590d25bc7825e16afb93071cb47be2ba6163
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408160"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968271"
 ---
 # <a name="setup-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象にする仕入先マスターおよび発注書の設定
 
@@ -54,6 +53,3 @@ ms.locfileid: "4408160"
 5. [ヘッダーの表示] をクリックします。
     * [締めの対象] スライダーが「はい」に設定されていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
