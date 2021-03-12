@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0973d36a8fddd16d02776ac6567d424ac6ebc3ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445247"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994313"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Service (RCS) のグローバル レポジトリの電子レポート (ER) の構成を外部組織と共有する
 
@@ -50,7 +49,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
 1. **電子レポート** ワークスペースで、超す営プロバイダーの **リポジトリ** を選択します。
 
-    ![コンフィギュレーション プロバイダー](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![コンフィギュレーション プロバイダー](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. **グローバル リポジトリ** \>**開く** を選択します。
 3. 共有する構成を検索します。 フィルターのフィールドを使用して検索を絞り込むことができます。 グローバル リポジトリに構成が見つからない場合は、[新しいバージョンの電子レポート (ER) 構成の作成とアップロード](rcs-global-repo-upload.md)に記載の手順に従ってください。
@@ -64,17 +63,12 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 3. 共有する構成を選択します。
 4. **共有** クイック タブで、**組織** を選択します。
 
-    ![クイック タブで共有する](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![クイック タブで共有する](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. ダイアログ ボックスで、外部組織のドメイン名を入力し、**OK** を選択し ます。
 
-    ![外部組織との構成バージョンを共有するダイアログボックス](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![外部組織との構成バージョンを共有するダイアログボックス](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 構成が外部組織と共有され、その組織ではグローバルリポジトリで利用できるようになります。 そこから RCS の組織のインスタンスにインポートをする、または組織の Finance and Operations アプリのインスタンスにインポートすることができます。
 
-![外部組織と共有する設定](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
 6. 外部組織と既に共有されている構成の共有を解除するには、構成を選択して **共有解除** をクリックし、**OK** をクリックします
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

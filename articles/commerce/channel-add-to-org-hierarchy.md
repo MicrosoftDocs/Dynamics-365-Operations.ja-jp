@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 701c90e8e28b4419422cddde698e9c9862a588a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 297bd34f9bde23d5cc7de266b8e8f49b1a752662
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413716"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993701"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>組織階層へのチャネルの追加
 
@@ -82,6 +81,3 @@ ms.locfileid: "4413716"
 [小売チャネルの設定](channel-setup-retail.md)
     
 [オンライン チャネルの設定](channel-setup-online.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

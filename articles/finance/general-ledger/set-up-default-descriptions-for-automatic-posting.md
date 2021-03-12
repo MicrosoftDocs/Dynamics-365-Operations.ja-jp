@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445018"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994743"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>自動転記の既定の説明を設定する
 
@@ -87,6 +86,3 @@ ms.locfileid: "4445018"
 2. **参照テーブル** フィールドで、パラメーター データを説明に追加するデータベース テーブルを選択します。
 3. **参照フィールド** フィールドで、説明にパラメーター データを追加するフィールドを選択します。
 4. 手順 1. ～ 3. を繰り返してパラメーターを追加します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

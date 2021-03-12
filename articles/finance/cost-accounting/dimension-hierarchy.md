@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7fde19ad1a58616672de72fb5e5cbeea39138b46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445104"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995193"
 ---
 # <a name="dimension-hierarchy"></a>分析コード階層
 
@@ -333,6 +332,3 @@ Excel または Power BI を使用してレポートを作成する場合は、�
 > [!NOTE] 
 > - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。
 > - アクセス リスト階層は、Excel へのデータのエクスポートの保護には役立ちません。 したがって、そのレポート ツールは、データの表示に完全なアクセス権を持つ必要があるコスト経理担当者およびマネージャーのみが使用します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

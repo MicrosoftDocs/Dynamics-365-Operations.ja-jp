@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 74854fa95837dd8a133860e2a017be4c92ff84a3
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2cce1038ed393fc8a7bb489a37fc0921b0ac755e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645480"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993936"
 ---
 # <a name="troubleshoot-picking-and-packing"></a>ピッキングと梱包のトラブルシューティング
 
@@ -110,6 +109,3 @@ WMS が有効になっている品目に対して転記された梱包明細を�
 ### <a name="issue-resolution"></a>問題の解決
 
 この問題を修正するには、クラスター プロファイルを編集し、**職位のアクティブ化** オプションを *いいえ* に設定します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

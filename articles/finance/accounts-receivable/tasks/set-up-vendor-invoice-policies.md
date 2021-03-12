@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 79cbabba74fdb76d8fcc0553d39e0f140aacf03e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445205"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995457"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーの設定
 
@@ -73,6 +72,3 @@ ms.locfileid: "4445205"
 16. **OK** を選択します。
 17. ページを閉じて、ホーム ページに戻ります。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

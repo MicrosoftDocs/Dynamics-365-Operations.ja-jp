@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bbb541a09809c1f1bfada42094d840a2f6e7764
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fb001d51fcaff2307845d918eddee8256c2ab8a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431661"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994207"
 ---
 # <a name="estimate-a-production-order"></a>製造オーダーの見積
 
@@ -42,6 +41,3 @@ USMF デモ データ会社または用意したデータ セットを使用し�
 1. [アクション] ペインで [原価の管理] をクリックします。
 2. [計算の詳細の表示] をクリックします。
     * このページは、原価内訳を表示します。 たとえば、先頭行の完成品の単位あたりの原価価格合計を表示できます。 後続の行には、部品表、生産工順、および間接原価などの原価が含まれます。  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

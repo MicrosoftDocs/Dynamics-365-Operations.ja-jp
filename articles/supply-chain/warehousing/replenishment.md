@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc7ae950ed32a75b8767d764c1b77193c454381
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: d554a6d415ca3e720c71387e218e50215c288991
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654127"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996076"
 ---
 # <a name="replenishment-overview"></a>補充の概要
 
@@ -35,7 +34,7 @@ ms.locfileid: "4654127"
 次の補充戦略を利用できます:
 
 - **ウェーブ需要補充** - この方法では、作業がウェーブによって作成されるときに在庫がない場合、出荷オーダーまたは積荷の補充作業が作成されます。 たとえば、ウェーブが処理されるときに販売注文に必要な数量がない場合は、補充作業を作成できます。
-- **最小/最大の補充** – この方法では、いつ場所を補充する必要があるかをを決めるのに、最小および最大在庫制限を使用します。 品目および場所の基準は、補充で考慮される在庫を定義します。 最小/最大補充のテンプレートは、ピッキング場所で最適なレベルを維持する上での主要なメカニズムです。 ウェーブの需要を満たすために十分な在庫が使用可能であるかを保証するには、最小/最大の補充サイクル間の補足として需要補充を使用できます。
+- **最小/最大の補充** – この方法では、いつ場所を補充する必要があるかを決めるのに、最小および最大在庫制限を使用します。 品目および場所の基準は、補充で考慮される在庫を定義します。 最小/最大補充のテンプレートは、ピッキング場所で最適なレベルを維持する上での主要なメカニズムです。 ウェーブの需要を満たすために十分な在庫が使用可能であるかを保証するには、最小/最大の補充サイクル間の補足として需要補充を使用できます。
 - **積荷要求補充**– この戦略は、複数の荷重に対する需要を合計して、関連するピッキング場所をストックするために必要な補充作業を作成します。 この戦略は、作成された積荷を出荷後に倉庫でピッキングできることを保証するのに役立ちます。
 - **即時補充** – この方法は、補充テンプレートを含む場所ディレクティブの明細行の割り当てに失敗した場合、ウェーブを実行する前に在庫を補充します。 
 
@@ -79,6 +78,3 @@ ms.locfileid: "4654127"
 |   場所のディレクティブ   |                                                       場所ディレクティブは、補充を必要とする場所および在庫をソースする場所へ作業をガイドするために必要です。                                                        |
 |     作業テンプレート      |                                                   <strong>補充</strong> 型の作業テンプレートは、在庫を必要な場所に移動できるため、補充作業を作成するために必要です。                                                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

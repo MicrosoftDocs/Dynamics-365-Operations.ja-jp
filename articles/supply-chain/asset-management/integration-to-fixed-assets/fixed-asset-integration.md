@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 879950b9aeb345fcd59dfe73d3963a44607c7ac2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431854"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994232"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>資産管理と固定資産の統合
 
@@ -115,6 +114,3 @@ ms.locfileid: "4431854"
 1. 固定資産を検索して開きます。
 1. **固定資産** クイックタブで、**機能の場所** フィールドの値を削除します。
 1. アクション ウィンドウで、**保存** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

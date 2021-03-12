@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7008891d194dc990d13a9f56db155c6990aae0c0
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 76c7eff17df92b01317544112099e391fd05d105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4445400"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995371"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>負債、資産、および経費トランザクションの表示
 
@@ -48,6 +47,3 @@ ms.locfileid: "4445400"
 リース経費トランザクションを表示するには、**リースの概要** ページでリースを選択し、**帳簿** を選択して、リース レコードに関連付けられているリース帳簿を開きます。 次に、**経費トランザクション** を選択します。
 
 **経費トランザクション** ページには、リースに対して転記されたすべての経費 (支払利息、減価償却費、履行費用など) が表示されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

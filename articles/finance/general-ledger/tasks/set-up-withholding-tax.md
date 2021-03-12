@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfa1b9e43a5745eb5b5c442998597319f196f23f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45ae7d6bb04dbf06b9b05d9f5610895fced650b0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445096"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994443"
 ---
 # <a name="set-up-withholding-tax"></a>源泉徴収税の設定
 
@@ -49,6 +48,3 @@ ms.locfileid: "4445096"
 18. **保存** を選択します。
 19. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

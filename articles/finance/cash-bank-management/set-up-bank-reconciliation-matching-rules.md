@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3302738a05852dfb37f8266074386d9f2998994d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbee870848010f2dce9b6a5e2c6179849191f9cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445186"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995268"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>口座調整照合ルールの設定
 
@@ -49,6 +48,3 @@ ms.locfileid: "4445186"
 | **銀行ドキュメントとの照合**       | 照合ルールを **口座調整ワークシート** ページから実行するときに、銀行ドキュメントと口座取引明細行をどのように照合するかを指定する基準を作成します。 トランザクション明細行は、クイック タブで設定される追加の基準に従って選択されます。                                | **ステップ 1: 照合ルールの定義** – どの口座取引明細書が Finance 銀行トランザクションと照合するかを指定する基準を選択します。 **ステップ 2 (オプション) : 照合ルールを実行する明細行の選択:** 照合ルールを実行する明細行にフィルターを適用します。                                                                                                                                                                                                                                                                                                               |
 | **取消明細行のクリア** | 照合ルールの実行時に **口座調整ワークシート** ページから、取消明細行を除去する方法を指定する基準を作成します。 このオプションは、銀行のエラーにより、インポートした口座取引明細書に 2 つの口座取引明細書行が表示されていて、これらの明細行の調整が必要なときに使用されます。 | **ステップ 1**:**取消明細行の検索**– 取消口座取引明細行を選択する基準を追加します。 たとえば、小切手のみを選択するには、[フィールド] フィールドで **銀行取引コード** を選択し、**オペレーター** フィールドでプラス記号 (+) を選択してから、[値] フィールドに **小切手** と入力します。 **ステップ 2: 元の明細行の検索** – 銀行ドキュメント明細行を口座取引明細行に対して照合するための選択基準を追加できます。 **ステップ 3: Finance 銀行トランザクションの検索** – Finance 銀行トランザクションを口座取引明細行に対して照合するための選択基準を追加できます。 |
 | **新しいトランザクションのマーク**          | 照合ルールの実行時に **口座調整ワークシート** ページから、新しいトランザクションをマークする方法を指定する基準を作成します。                                                                                                                                                                 | **ステップ 1: 明細行の検索**– 選択フィールドを追加して、どの口座取引明細行を **口座調整のワークシート** ページから選択するかを指定します。 **ステップ 2: Finance and Operations の検索** – 銀行ドキュメント明細行を検索するための選択基準を追加できます。 銀行ドキュメントがない場合、明細行は新しいトランザクションとしてマークされます。                                                                                                                                                                                                                                             |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
