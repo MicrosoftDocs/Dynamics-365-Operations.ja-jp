@@ -11,68 +11,67 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a033ac521349803832e4415d4950edc21912aa4e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 33d33f73e3ffa03dc3c45edac46052980d02828a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408190"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964491"
 ---
-# <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations"></a><span data-ttu-id="f930b-103">資産除去責務の支払利子の減価償却および見越計上</span><span class="sxs-lookup"><span data-stu-id="f930b-103">Depreciate and accrue the interest expense for asset retirement obligations</span></span>
+# <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations"></a><span data-ttu-id="49f34-103">資産除去責務の支払利子の減価償却および見越計上</span><span class="sxs-lookup"><span data-stu-id="49f34-103">Depreciate and accrue the interest expense for asset retirement obligations</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f930b-104">日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。</span><span class="sxs-lookup"><span data-stu-id="f930b-104">For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset.</span></span> <span data-ttu-id="f930b-105">また、ARO の総額を認識するためには、支払利子を見越計上する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f930b-105">In addition, interest expenses need to be accrued to recognize the full amount of the ARO.</span></span>
+<span data-ttu-id="49f34-104">日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。</span><span class="sxs-lookup"><span data-stu-id="49f34-104">For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset.</span></span> <span data-ttu-id="49f34-105">また、ARO の総額を認識するためには、支払利子を見越計上する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49f34-105">In addition, interest expenses need to be accrued to recognize the full amount of the ARO.</span></span>
 
 
 
-<span data-ttu-id="f930b-106">このタスクを使用して、ARO を減価償却し支払利子を見越計上します。</span><span class="sxs-lookup"><span data-stu-id="f930b-106">Use this task to depreciate the ARO and accrue the interest expense.</span></span> 
+<span data-ttu-id="49f34-106">このタスクを使用して、ARO を減価償却し支払利子を見越計上します。</span><span class="sxs-lookup"><span data-stu-id="49f34-106">Use this task to depreciate the ARO and accrue the interest expense.</span></span> 
 
 
 
-<span data-ttu-id="f930b-107">このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f930b-107">In order to complete this task, the Fixed Assets configuration key must be selected.</span></span>
+<span data-ttu-id="49f34-107">このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49f34-107">In order to complete this task, the Fixed Assets configuration key must be selected.</span></span>
 
 
 
-<span data-ttu-id="f930b-108">このタスクはデモ会社 JPMF のデータを使用して完了しました。</span><span class="sxs-lookup"><span data-stu-id="f930b-108">This task was completed using the JPMF demo company data.</span></span>
+<span data-ttu-id="49f34-108">このタスクはデモ会社 JPMF のデータを使用して完了しました。</span><span class="sxs-lookup"><span data-stu-id="49f34-108">This task was completed using the JPMF demo company data.</span></span>
 
 
-## <a name="depreciate-a-fixed-asset-with-asset-retirement-obligation"></a><span data-ttu-id="f930b-109">資産除去責務がある固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="f930b-109">Depreciate a fixed asset with asset retirement obligation</span></span>
-1. <span data-ttu-id="f930b-110">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f930b-110">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="f930b-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-111">Click New.</span></span>
-3. <span data-ttu-id="f930b-112">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="f930b-112">In the Name field, select a value.</span></span>
-4. <span data-ttu-id="f930b-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-113">Click Save.</span></span>
-5. <span data-ttu-id="f930b-114">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-114">Click Lines.</span></span>
-6. <span data-ttu-id="f930b-115">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-115">Click Proposals.</span></span>
-7. <span data-ttu-id="f930b-116">[償却提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-116">Click Depreciation proposal.</span></span>
-8. <span data-ttu-id="f930b-117">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="f930b-117">In the To date field, enter a date.</span></span>
-9. <span data-ttu-id="f930b-118">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-118">Click Filter.</span></span>
-10. <span data-ttu-id="f930b-119">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f930b-119">In the Criteria field, type a value.</span></span>
-11. <span data-ttu-id="f930b-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-120">Click OK.</span></span>
-12. <span data-ttu-id="f930b-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-121">Click OK.</span></span>
-    * <span data-ttu-id="f930b-122">資産除去責務の減価償却は、[ドキュメント タイプ] フィールドごとに示されます。</span><span class="sxs-lookup"><span data-stu-id="f930b-122">The depreciation of asset retirement obligation is indicated by Document type field.</span></span>  
-13. <span data-ttu-id="f930b-123">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-123">Click Post.</span></span>
+## <a name="depreciate-a-fixed-asset-with-asset-retirement-obligation"></a><span data-ttu-id="49f34-109">資産除去責務がある固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="49f34-109">Depreciate a fixed asset with asset retirement obligation</span></span>
+1. <span data-ttu-id="49f34-110">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="49f34-110">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="49f34-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-111">Click New.</span></span>
+3. <span data-ttu-id="49f34-112">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="49f34-112">In the Name field, select a value.</span></span>
+4. <span data-ttu-id="49f34-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-113">Click Save.</span></span>
+5. <span data-ttu-id="49f34-114">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-114">Click Lines.</span></span>
+6. <span data-ttu-id="49f34-115">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-115">Click Proposals.</span></span>
+7. <span data-ttu-id="49f34-116">[償却提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-116">Click Depreciation proposal.</span></span>
+8. <span data-ttu-id="49f34-117">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="49f34-117">In the To date field, enter a date.</span></span>
+9. <span data-ttu-id="49f34-118">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-118">Click Filter.</span></span>
+10. <span data-ttu-id="49f34-119">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="49f34-119">In the Criteria field, type a value.</span></span>
+11. <span data-ttu-id="49f34-120">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-120">Click OK.</span></span>
+12. <span data-ttu-id="49f34-121">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-121">Click OK.</span></span>
+    * <span data-ttu-id="49f34-122">資産除去責務の減価償却は、[ドキュメント タイプ] フィールドごとに示されます。</span><span class="sxs-lookup"><span data-stu-id="49f34-122">The depreciation of asset retirement obligation is indicated by Document type field.</span></span>  
+13. <span data-ttu-id="49f34-123">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-123">Click Post.</span></span>
 
-## <a name="accrue-the-interest-expense"></a><span data-ttu-id="f930b-124">支払利子の計上</span><span class="sxs-lookup"><span data-stu-id="f930b-124">Accrue the interest expense</span></span>
-1. <span data-ttu-id="f930b-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f930b-125">Close the page.</span></span>
-2. <span data-ttu-id="f930b-126">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f930b-126">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-3. <span data-ttu-id="f930b-127">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-127">Click New.</span></span>
-4. <span data-ttu-id="f930b-128">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="f930b-128">In the Name field, select a value.</span></span>
-5. <span data-ttu-id="f930b-129">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-129">Click Save.</span></span>
-6. <span data-ttu-id="f930b-130">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-130">Click Lines.</span></span>
-7. <span data-ttu-id="f930b-131">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-131">Click Proposals.</span></span>
-8. <span data-ttu-id="f930b-132">[除去費用の費用配分] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-132">Click Asset retirement obligation - accretion expense.</span></span>
-9. <span data-ttu-id="f930b-133">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="f930b-133">In the To date field, enter a date.</span></span>
-10. <span data-ttu-id="f930b-134">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-134">Click Filter.</span></span>
-11. <span data-ttu-id="f930b-135">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f930b-135">In the Criteria field, type a value.</span></span>
-12. <span data-ttu-id="f930b-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-136">Click OK.</span></span>
-13. <span data-ttu-id="f930b-137">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-137">Click OK.</span></span>
-    * <span data-ttu-id="f930b-138">支払利子のレコードが提案されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f930b-138">Confirm that the records for interest expenses are proposed.</span></span>  
-    * <span data-ttu-id="f930b-139">支払利子は、トランザクション タイプごとに示されます。</span><span class="sxs-lookup"><span data-stu-id="f930b-139">The interest expenses are indicated by Transaction type</span></span>  
-14. <span data-ttu-id="f930b-140">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f930b-140">Click Post.</span></span>
+## <a name="accrue-the-interest-expense"></a><span data-ttu-id="49f34-124">支払利子の計上</span><span class="sxs-lookup"><span data-stu-id="49f34-124">Accrue the interest expense</span></span>
+1. <span data-ttu-id="49f34-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="49f34-125">Close the page.</span></span>
+2. <span data-ttu-id="49f34-126">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="49f34-126">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+3. <span data-ttu-id="49f34-127">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-127">Click New.</span></span>
+4. <span data-ttu-id="49f34-128">[名前] フィールドで値を選択します。</span><span class="sxs-lookup"><span data-stu-id="49f34-128">In the Name field, select a value.</span></span>
+5. <span data-ttu-id="49f34-129">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-129">Click Save.</span></span>
+6. <span data-ttu-id="49f34-130">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-130">Click Lines.</span></span>
+7. <span data-ttu-id="49f34-131">[提案] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-131">Click Proposals.</span></span>
+8. <span data-ttu-id="49f34-132">[除去費用の費用配分] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-132">Click Asset retirement obligation - accretion expense.</span></span>
+9. <span data-ttu-id="49f34-133">[終了日] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="49f34-133">In the To date field, enter a date.</span></span>
+10. <span data-ttu-id="49f34-134">[フィルター] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-134">Click Filter.</span></span>
+11. <span data-ttu-id="49f34-135">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="49f34-135">In the Criteria field, type a value.</span></span>
+12. <span data-ttu-id="49f34-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-136">Click OK.</span></span>
+13. <span data-ttu-id="49f34-137">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-137">Click OK.</span></span>
+    * <span data-ttu-id="49f34-138">支払利子のレコードが提案されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="49f34-138">Confirm that the records for interest expenses are proposed.</span></span>  
+    * <span data-ttu-id="49f34-139">支払利子は、トランザクション タイプごとに示されます。</span><span class="sxs-lookup"><span data-stu-id="49f34-139">The interest expenses are indicated by Transaction type</span></span>  
+14. <span data-ttu-id="49f34-140">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="49f34-140">Click Post.</span></span>
 
