@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 64cf58da5307c4e4e8d340518ac59bef9bf63f5f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 79ce5b8cff87c9c534c87f7905da373efac21bab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408139"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982144"
 ---
 # <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 
@@ -98,6 +97,3 @@ ms.locfileid: "4408139"
 | 9214               | 非課税売上に関連する課税対象購買 - 訂正票                           | 項目 8                                                        | 項目 4                     | 品目 22- 品目 23 (税率)         |
 | 9215               | 共通の一般課税購入 - 訂正票                                       | 品目 8、品目 15 (比率 \<0.95 & 個別対応メソッド)         | 項目 4                     | 品目 22- 品目 23 (税率)         |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1bb96d117eb3bb2b54be1a376c8789ad73d5fec8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431999"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983369"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>危険物の照会とレポート
 
@@ -110,6 +109,3 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 ## <a name="packing-list-report"></a>梱包リスト レポート
 
 危険物機能がシステムで有効になっている場合、梱包リストには、品目の出荷印刷テキストに関連する追加情報が含まれます。 このレポートは、通常どおり **すべての積荷** ページから使用できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

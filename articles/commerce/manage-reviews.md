@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a70d0526fb2443605a6b11df3ee281d4dd12f1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413775"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982569"
 ---
 # <a name="manage-ratings-and-reviews"></a>評価とレビューの管理
 
@@ -132,6 +131,3 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

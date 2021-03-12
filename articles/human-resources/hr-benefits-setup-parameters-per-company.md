@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 2943d0095e4c9421725b90e579b7cbb841038ab7
-ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692748"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4984603"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>会社ごとに給付金管理パラメータを構成する
 
@@ -42,5 +42,3 @@ ms.locfileid: "4692748"
    | **既定のメール送信者アドレス** | 確認メールを送信するときに使用するメール アドレス。 |
 
 3. **保存** を選択します。
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

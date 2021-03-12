@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 118e7689e5d37aae18d3823b957301ddfa89369a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413757"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982644"
 ---
 # <a name="show-discounts-in-pos"></a>POS に割引を表示
 
@@ -69,6 +68,3 @@ ms.locfileid: "4413757"
 次の図は、割引同時実行管理時に使用するロジックが **優先順位内のみの最良価格、常に優先順位間で組み入れ** に設定を表示しています。
 
 ![優先順位内のみの最良価格、常に優先順位間で組み入れロジック](./media/Model_2.png "優先順位内のみの最良価格、常に優先順位間で組み入れロジック")。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

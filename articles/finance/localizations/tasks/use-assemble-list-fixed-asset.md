@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bb18f8576bd58a910d83c89400b560aeccdba2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b4f892e05a9f8c9bb8d8c5cd968e19d0472810cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408161"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982087"
 ---
 # <a name="use-assemble-list-of-a-fixed-asset"></a>固定資産の組み立て一覧の使用
 
@@ -62,6 +61,3 @@ ms.locfileid: "4408161"
     * 在庫品目の原価を入力します。  
 9. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

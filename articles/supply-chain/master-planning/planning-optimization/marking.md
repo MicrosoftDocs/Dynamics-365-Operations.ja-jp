@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 99a52c03e519384955d68d7101a7b73b7e9a7af6
-ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
+ms.openlocfilehash: 236e1955dd80564e748aab1c595b017cb78e9418
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672195"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983494"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>計画最適化を使用した在庫マーキング
 
@@ -49,6 +48,3 @@ ms.locfileid: "4672195"
 - **いいえ** – 在庫のマーキングは適用されません。
 - **標準** – ペギングに従って在庫のマーキングが更新されます。 要求注文 (需要) は、フルフィルメント オーダー (供給) と照らしてマークされます。 フルフィルメント オーダーに一部の数量が残っている場合は、マークされていないため、参照情報は空白のままになっています。 たとえば、100 ea の販売注文が 150 ea の発注書に対してペギングされていない場合、参照情報は販売注文にのみ割り当てられます。
 - **拡張** – フルフィルメント オーダーの残余数量に関係なく、要求注文 (需要) とフルフィルメント オーダー (供給) の両方がマークされます。 たとえば、100 ea の販売注文が 150 ea の発注書に対してペギングされていない場合、参照情報は販売注文と発注書の両方に割り当てられます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

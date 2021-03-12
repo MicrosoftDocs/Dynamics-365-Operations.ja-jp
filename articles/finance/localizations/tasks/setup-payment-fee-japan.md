@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankGroup,  VendPaymFeeGroup_JP, VendTable, PaymFeeBankRule_JP, SysFieldLookUp, VendPaymFee, VendPaymModeFee, TaxGroupLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62bcaff3f118f59c74bc1b1236c3fc9e5420eb04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e432f54aaad5bdd73c3c10c387f1a24650e1414a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408185"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982084"
 ---
 # <a name="setup-payment-fee-for-japan"></a>日本の支払手数料の設定
 
@@ -127,6 +126,3 @@ ms.locfileid: "4408185"
     * 例: 「課税対象」 を選択します。  
 30. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

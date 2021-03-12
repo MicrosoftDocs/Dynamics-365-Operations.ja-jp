@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a0c8dabc91d4d69d3f7098672611610a4ec73ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09f7efbfa0b4b96b52350afb961710057d6a2f92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445292"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984912"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Dynamics 365 Finance を使用する実装プロジェクト マネージャー向けラーニング カタログ
 
@@ -95,6 +94,3 @@ ms.locfileid: "4445292"
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる | |
 | [試験 MB-310: Microsoft Dynamics 365 for Finance and Operations、財務](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる | |
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft 認定: Dynamics 365 for Finance and Operations、財務機能コンサルタントは、グローバルな財務と運用を統一し、タスクとワークフローを自動化し、顧客の注文、販売、請求、および報告を効率化します。 | 証明書、費用は地域によって異なる |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

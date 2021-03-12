@@ -1,5 +1,5 @@
 ---
-title: '[買掛金勘定] および [売掛金勘定] の外貨再評価'
+title: 買掛金勘定と売掛金勘定の通貨再評価
 description: 為替レートの変動は、外貨での未処理トランザクションの計算上の金額 (簿価額) が時間の経過と共に変化する原因になります。 この記事は、[買掛金勘定] および [売掛金勘定] の未処理トランザクションの値を更新するために実行する外貨再評価プロセスに関する情報を提供します。
 author: kweekley
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb7a101fa9ef84ec3873bcd8054b8198db8d58c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445325"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985240"
 ---
-# <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>[買掛金勘定] および [売掛金勘定] の外貨再評価
+# <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>買掛金勘定と売掛金勘定の通貨再評価
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,6 +65,3 @@ ms.locfileid: "4445325"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

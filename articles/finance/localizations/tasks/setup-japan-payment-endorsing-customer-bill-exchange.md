@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPosting,  CustParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4980466c146850b7c52507230fac3d6087f2a18
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 250dd9bb2427dad1a6166e80141e93f204551f7f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408138"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982147"
 ---
 # <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a>顧客の為替手形の裏書きによって日本の支払を設定します
 
@@ -53,6 +52,3 @@ ms.locfileid: "4408138"
 5. 一覧で、選択された行のリンクをクリックします。
 6. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

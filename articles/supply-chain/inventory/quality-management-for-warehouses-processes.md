@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd6b4b0c30a8a4cb36955e9b131c937c4db80772
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432239"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983728"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>倉庫プロセスに対する品質管理
 
@@ -622,6 +621,3 @@ _倉庫プロセスの品質管理_ 機能により、新しい品目のサン�
 
 > [!NOTE]
 > 品質-アウト エントリを、活動コードが *オープン作業のリストを表示* であるモバイル デバイス メニュー項目に追加することを検討してください。 例については、デモ データで、**作業一覧** という名前のモバイル デバイス メニュー項目を参照してください。 作業を作業一覧に表示するには、まず *品質指示* 作業クラスをユーザーの指示に従ったメニュー項目に追加します。 その後、*品質指示* 作業クラスを **作業一覧** メニュー項目に追加します。 作業一覧へのアクセス権を持つユーザーは、品質指示の検証によって自動的に生成された作業を選択および処理できるようになります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6073a04814adf8237b4caa952b31b011f4b34bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982743"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>POS サインインの Azure Active Directory 認証を有効にする
 [!include [banner](includes/banner.md)]
@@ -60,7 +59,7 @@ Azure AD アカウントを作業者に関連付けるには、次の手順に�
 1. 作業者の詳細ページを開きます。
 1. アクション ウィンドウ、**Commerce** タブの、**外部 ID** グループで、**既存の ID の関連付け** を選択します。
 1. **既存の外部 ID を使用する** ダイアログ ボックスで、**電子メールで検索** を選択し、Azure AD 電子メール アドレスを入力して、**検索** を選択します。
-1. 返された Azure AD アカウントをを選択し、**OK** を選択します。
+1. 返された Azure AD アカウントを選択し、**OK** を選択します。
 
 **Commerce** タブの **エイリアス**、**UPN**、および **外部サブ ID** フィールドが入力されます。
 
@@ -74,6 +73,3 @@ Azure AD アカウントを作業者に関連付けるには、次の手順に�
 [小売機能プロファイルの作成](retail-functionality-profile.md)
 
 [作業者のコンフィギュレーション](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
+ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983547"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>需要予測を伴うマスター プラン
 
@@ -274,6 +273,3 @@ ms.locfileid: "4666725"
 ### <a name="reduce-a-forecast-by-transactions"></a>トランザクションによる予測の削減
 
 予測要求の削減のメソッドとして **トランザクション - 下方修正キー** または **トランザクション - 動的期間** を選択すると、予測を削減するトランザクションを指定できます。 **補充グループ** ページの、**その他** クイック タブにある、**予測の削減方法** フィールドで、すべてのトランザクションで予測を削減する必要がある場合は **すべてのトランザクション** を、または販売注文のみで予測を削減する必要がある場合は **販売注文** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

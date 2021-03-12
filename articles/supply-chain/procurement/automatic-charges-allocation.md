@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432263"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983171"
 ---
 # <a name="automatic-allocation-of-charges"></a>請求金額の自動配賦
 
@@ -177,6 +176,3 @@ ms.locfileid: "4432263"
         > **配賦から除外する明細行の選択** グリッドを使用する場合は、**配賦** を選択するまで、グリッドを開いたままにしておいてください。 **配賦** を選択する前にグリッドを閉じると、グリッドの設定が失われます。 したがって、諸費用は以前に定義した基準に基づいて配賦されます。
 
 1. **配賦** を選択して設定を適用し、ダイアログ ボックスを閉じます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

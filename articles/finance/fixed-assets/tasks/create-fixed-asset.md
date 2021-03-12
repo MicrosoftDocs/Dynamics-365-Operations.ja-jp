@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
-ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
+ms.openlocfilehash: ab330c604b2485687544a7d8b3eef3a652fa2069
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4445415"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985140"
 ---
 # <a name="create-a-fixed-asset"></a>固定資産の作成
 
@@ -55,6 +54,3 @@ Excel アドインのテンプレートに固定資産番号を定義してい�
 
 > [!WARNING]
 > トランザクションが関連付けられた帳簿に転記されている場合や、新たに作成された固定資産が仕訳帳明細行に入力済で転記されていない場合、固定資産レコードは削除されません。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
